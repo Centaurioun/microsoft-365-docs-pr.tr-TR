@@ -1,13 +1,27 @@
 - name: Microsoft Whiteboard
   href: index.md
-- name: Erişimi yönetin
-  href: manage-whiteboard-access-organizations.md
-- name: Verileri yönetin
-  href: manage-data-organizations.md
-- name: Paylaşımı yönetin
-  href: manage-sharing-organizations.md
-- name: Windows cihazlarda dağıtın
-  href: deploy-on-windows-organizations.md
+- name: Beyaz Tahta'yı ayarlama
+  items:
+    - name: Ayarlama ve kullanma
+      href: /surface-hub/whiteboard-collaboration
+    - name: Windows cihazlarda dağıtın
+      href: deploy-on-windows-organizations.md
+- name: Beyaz Tahtayı yönetme
+  items:
+    - name: Erişimi yönetin
+      href: manage-whiteboard-access-organizations.md
+    - name: Verileri yönetin
+      href: manage-data-organizations.md
+    - name: Paylaşımı yönetin
+      href: manage-sharing-organizations.md
+    - name: Windows cihazlarda dağıtın
+      href: deploy-on-windows-organizations.md
+- name: Gizlilik ve uyumluluk
+  items:
+    - name: Gizlilik ayarlarını yapılandırma
+      href: configure-privacy-settings.md
+    - name: GDPR istekleri
+      href: gdpr-requests.md
 - name: Kamu için Whiteboard
   items:
     - name: Erişimi yönetme - GCC High
