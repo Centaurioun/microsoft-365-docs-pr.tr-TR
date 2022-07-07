@@ -17,12 +17,12 @@ ms.collection:
 description: Yöneticiler iyi ve kötü iletileri, URL'leri, e-posta eklerini ve yöneticileri analiz için Microsoft'a bildirmenin farklı yollarını öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 071e6329e16ecfce0e55649869d93ff31dfc9664
-ms.sourcegitcommit: 4a1efedd15146744511378a44a307d44b16f3fb5
+ms.openlocfilehash: 29fd6b74901c6ad85d1ece759245f1b85e672a23
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66644017"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663426"
 ---
 # <a name="report-items-to-microsoft"></a>Öğeleri Microsoft'a bildirme
 
@@ -34,16 +34,19 @@ ms.locfileid: "66644017"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarında, kullanıcılar ve yöneticiler e-posta iletilerini, URL'leri ve e-posta eklerini Microsoft'a raporlamak için birkaç farklı yönteme sahiptir. 
-
+ 
 Ayrıca, Uç Nokta için Microsoft Defender yöneticileri olan Microsoft 365 kuruluşları da dosyaları raporlamak için çeşitli yöntemlere sahiptir.
+
+Birleşik gönderim deneyimi hakkında daha fazla bilgi gösteren bu videoyu izleyin.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50HhM]
 
 |Yöntem|Açıklama|
 |---|---|
-|[Şüpheli istenmeyen postaları, kimlik avı, URL'leri ve dosyaları Microsoft'a göndermek için Gönderimler portalını kullanın](admin-submission.md)|Exchange Online posta kutuları olan kuruluşlardaki yöneticiler için önerilen raporlama yöntemi (tek başına EOP'de kullanılamaz).|
+|[Şüpheli istenmeyen posta, kimlik avı, URL'ler ve e-posta eklerini Microsoft'a göndermek için Gönderimler portalını kullanın](admin-submission.md)|Exchange Online posta kutuları olan kuruluşlardaki yöneticiler için önerilen raporlama yöntemi (tek başına EOP'de kullanılamaz).|
 |[Rapor İletisini veya Rapor Kimlik Avı eklentilerini etkinleştirme](enable-the-report-message-add-in.md)|Outlook ve Web üzerinde Outlook (eski adıyla Outlook Web App) ile çalışır. <br/><br/> Aboneliğinize bağlı olarak, kullanıcıların eklentilerle bildirdiği iletiler [Yönetici Gönderimler portalında](admin-submission.md), [Otomatik araştırma ve yanıt (AIR) sonuçlarında](air-view-investigation-results.md), [Kullanıcı tarafından bildirilen iletiler raporunda](view-email-security-reports.md#user-reported-messages-report) ve [Gezgin'de](threat-explorer-views.md#email--submissions) kullanılabilir. <br/><br/> Bildirilen iletileri, belirttiğiniz bir posta kutusuna kopyalanacak veya yeniden yönlendirilecek şekilde yapılandırabilirsiniz. Daha fazla bilgi için bkz. [Kullanıcı gönderim ilkeleri](user-submission.md).
 |[Outlook'ta yanlış pozitifleri ve yanlış negatifleri bildirme](report-false-positives-and-false-negatives.md)|Rapor İletisi özelliğini kullanarak hatalı pozitif sonuçları (engellenmiş veya gereksiz klasöre gönderilmiş iyi e-posta) ve hatalı negatifleri (gelen kutusuna teslim edilen istenmeyen e-posta veya kimlik avı) Exchange Online Protection (EOP) adresine gönderin.|
 |[Kullanıcıların Microsoft'a ne bildirdiğini görmek için posta akışı kurallarını kullanma](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Kullanıcılar analiz için Microsoft'a ileti bildirdiğinde size bildirimde bulunmanızı sağlayan bir posta akışı kuralı (taşıma kuralı olarak da bilinir) oluşturmayı öğrenin.|
-|[Kötü amaçlı yazılımları ve kötü amaçlı olmayan yazılımları analiz için Microsoft'a gönderme](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Ekleri ve diğer dosyaları göndermek için Microsoft Güvenlik Zekası sitesini kullanın.|
+|[Şüpheli dosyaları analiz için Microsoft'a gönderme](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Ekleri ve diğer dosyaları göndermek için Microsoft Güvenlik Zekası sitesini kullanın.|
 
 > [!NOTE]
 > Bir e-posta varlığını Microsoft'a bildirdiğinizde, sürekli algoritma incelemelerimize dahil etmek için e-postayla ilişkili her şeyin bir kopyasını oluştururuz. Bu kopya e-posta içeriğini, e-posta üst bilgilerini ve e-posta yönlendirmeyle ilgili verileri içerir. İletideki ekler de eklenir.

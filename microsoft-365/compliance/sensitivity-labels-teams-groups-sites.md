@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint ve Microsoft Teams sitelerindeki ve Microsoft 365 gruplarındaki içeriği korumak için duyarlılık etiketlerini kullanın.
-ms.openlocfilehash: 17b1a2aab1da0e2c901aac14b3bf675cbbabe740
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 53278feccc7b2741453c20d37bbd995226a21dbe
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628693"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662542"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Microsoft Teams, Microsoft 365 grupları ve SharePoint sitelerindeki içeriği korumak için duyarlılık etiketlerini kullanma
 
@@ -50,7 +50,7 @@ Ancak bu kapsayıcılardaki içerik, görsel işaretler ve şifreleme gibi dosya
 
 Kapsayıcılar için duyarlılık etiketlerini etkinleştirmeden ve yeni ayarlar için duyarlılık etiketlerini yapılandırmadan önce, kullanıcılar kendi uygulamalarında duyarlılık etiketlerini görebilir ve uygulayabilir. Örneğin, Word'den:
 
-![Word masaüstü uygulamasında görüntülenen duyarlılık etiketi.](../media/sensitivity-label-word.png)
+:::image type="content" source=".. /media/sensitivity-label-word.png" alt-text="Word masaüstü uygulamasında görüntülenen duyarlılık etiketi." lightbox=".. /media/sensitivity-label-word.png"
 
 Kapsayıcılar için duyarlılık etiketlerini etkinleştirip yapılandırdıktan sonra, kullanıcılar ayrıca Microsoft ekip sitelerine, Microsoft 365 gruplarına ve SharePoint sitelerine duyarlılık etiketlerini görebilir ve uygulayabilir. Örneğin, SharePoint'ten yeni bir ekip sitesi oluşturduğunuzda:
 
@@ -301,7 +301,7 @@ Açılan kutuda seçimin etiket adları görüntülenir ve yardım simgesi tüm 
 
 Etiket uygulandığında ve kullanıcılar siteye göz attığında, etiketin adını ve uygulanan ilkeleri görürler. Örneğin, bu site **Gizli** olarak etiketlenmiş ve gizlilik ayarı **Özel** olarak ayarlanmıştır:
 
-![Duyarlılık etiketi uygulanmış bir site.](../media/sensitivity-label-site.png)
+:::image type ="content" source="../media/sensitivity-label-site.png" alt-text="Duyarlılık etiketi uygulanmış bir site." lightbox="../media/sensitivity-label-site.png":::
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>Birden çok siteye duyarlılık etiketi uygulamak için PowerShell kullanma
 
@@ -341,7 +341,7 @@ Bu komut serisi, kiracınızdaki birden çok siteyi aynı duyarlılık etiketiyl
 
 Uygulanan duyarlılık etiketlerini görüntülemek, sıralamak ve aramak için yeni SharePoint yönetim merkezinde <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Etkin siteleri**</a> kullanın. Önce **Duyarlılık** sütununu eklemeniz gerekebilir:
 
-![Etkin siteler sayfasındaki Duyarlılık sütunu.](../media/manage-site-sensitivity-labels.png)
+:::image type="content" source=".. /media/manage-site-sensitivity-labels.png" alt-text="Etkin siteler sayfasındaki Duyarlılık sütunu." lightbox=".. /media/manage-site-sensitivity-labels.png"
 
 Etkin siteler sayfasından siteleri yönetme hakkında daha fazla bilgi ve sütun ekleme hakkında daha fazla bilgi için bkz. [Yeni SharePoint yönetim merkezinde siteleri yönetme](/sharepoint/manage-sites-in-new-admin-center).
 
@@ -451,7 +451,7 @@ Siteler ve gruplar için duyarlılık etiketlerinin ve Azure AD sınıflandırma
 ## <a name="auditing-sensitivity-label-activities"></a>Duyarlılık etiketi etkinliklerini denetleme
 
 > [!IMPORTANT]
-> Kapsayıcıları koruyan etiketler için yalnızca **Gruplar & siteleri** kapsamını seçerek etiket ayrımı kullanıyorsanız: Bu bölümde açıklanan **Algılanan belge duyarlılığı uyuşmazlığı** denetim olayı ve e-posta nedeniyle, **etiketlerden önce Dosyalar & e-postaları** kapsamına sahip etiketlerden önce [sıralamayı](sensitivity-labels.md#label-priority-order-matters) göz önünde bulundurun. 
+> Kapsayıcıları koruyan etiketler için yalnızca **Gruplar & siteleri** kapsamını seçerek etiket ayrımı kullanıyorsanız: **Algılanan belge duyarlılığı uyuşmazlığı** denetim olayı ve bu bölümde açıklanan e-posta nedeniyle, **Öğeler** kapsamına sahip [etiketlerden önce etiketleri sıralamayı](sensitivity-labels.md#label-priority-order-matters) göz önünde bulundurun. 
 
 Birisi duyarlılık etiketiyle korunan bir siteye belge yüklerse ve belgenin öncelik duyarlılık etiketi siteye uygulanan duyarlılık etiketinden [daha yüksekse](sensitivity-labels.md#label-priority-order-matters) , bu eylem engellenmez. Örneğin, Bir SharePoint sitesine **Genel** etiketini uyguladınız ve birisi bu siteye **Gizli** etiketli bir belge yükler. Daha yüksek önceliğe sahip bir duyarlılık etiketi, daha düşük öncelik sırasına sahip içerikten daha duyarlı içeriği tanımladığından, bu durum bir güvenlik sorunu olabilir.
 

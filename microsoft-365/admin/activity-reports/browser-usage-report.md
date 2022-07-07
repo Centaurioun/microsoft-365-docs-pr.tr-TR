@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Microsoft 365 yönetim merkezi Microsoft 365 Raporları panosunu kullanarak Microsoft tarayıcı kullanım raporu almayı öğrenin.
-ms.openlocfilehash: 67abf461102fe56f8515db0b0a73a8c852a2224e
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: bd247e839c69726039fb80531444eb7b4b650346
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601553"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662177"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Yönetim merkezinde Microsoft 365 Raporları - Microsoft tarayıcı kullanımı
 
@@ -44,14 +44,14 @@ Microsoft 365 Raporları panosu, kuruluşunuzdaki ürünler genelinde bir etkinl
 
 **Günlük etkin kullanıcılar** grafiği, Microsoft 365 hizmetlerine erişmek için kullanıldığında Microsoft Edge için günlük kullanıcı sayısını gösterir.
 
-**Etkin Kullanıcılar** grafiği, seçilen zaman aralığında Microsoft 365 hizmetlerine erişmek için kullanıldığında Microsoft Edge kullanan toplam kullanıcı sayısını gösterir.
+**Etkin Kullanıcılar** grafiği, seçilen zaman aralığında Microsoft Edge kullanırken Microsoft 365 hizmetlerine erişen toplam kullanıcı sayısını gösterir.
 
 Tablo, kullanıcı başına verilerin dökümünü gösterir. Tablodaki sütunları ekleyebilir veya kaldırabilirsiniz.
 
 |Öğe|Açıklama|
 |:-----|:-----|
 |**Kullanıcı Adı** | Microsoft Edge kullanarak Microsoft 365 hizmetlerine bağlanan kullanıcının e-posta adresi.|
-| **Kullanılan Microsoft Edge**| Kullanıcı Microsoft 365 hizmetlerine bağlanmak için Microsoft Edge'i kullandıysa onay işareti görüntüler.|
+| **Kullanılan Microsoft Edge**| Microsoft 365 hizmetleri kullanıcısı Microsoft Edge ile bağlıysa DDisplays bir onay işareti.|
 
 **Rapora sütun** eklemek veya rapordan sütun kaldırmak için Sütunları seç simgesini seçin.
 

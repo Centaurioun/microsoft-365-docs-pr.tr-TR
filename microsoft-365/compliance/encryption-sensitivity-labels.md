@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Erişimi ve kullanımı kısıtlayarak verilerinizi koruyan şifreleme için duyarlılık etiketlerini yapılandırın.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2f41fbec0018008d2a59ad8960a7a0cd89f1a556
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ef00ca10ca932322e51d71449e42f45842ce4c97
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625401"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663794"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Şifreleme uygulamak için hassasiyet etiketleri kullanarak içeriğe erişimi kısıtlama
 
@@ -81,13 +81,13 @@ Bu şifreleme çözümünü kullandığınızda **süper kullanıcı** özelliğ
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>Şifreleme için etiket yapılandırma
 
-1. [Duyarlılık etiketi oluşturmak veya düzenlemek](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) için genel yönergeleri izleyin ve etiketin kapsamı için **Dosyalar & e-postalarının** seçildiğinden emin olun: 
+1. [Duyarlılık etiketi oluşturmak veya düzenlemek](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) için genel yönergeleri izleyin ve etiketin kapsamı için **Öğeler'in** seçili olduğundan emin olun: 
     
     ![Dosyalar ve e-postalar için duyarlılık etiketi kapsam seçenekleri.](../media/filesandemails-scope-options-sensitivity-label.png)
 
-2. Ardından, **Dosyalar ve e-postalar için koruma ayarlarını seçin sayfasında Dosyaları ve e-postaları** **şifrele'yi** seçtiğinizden emin olun
+2. Ardından **Etiketli öğeler için koruma ayarlarını seçin** sayfasında **Öğeleri şifrele'yi** seçtiğinizden emin olun
     
-    ![Dosyalar ve e-postalar için duyarlılık etiketi koruma seçenekleri.](../media/protection-options-sensitivity-label.png)
+    :::image type="content" source="../media/protection-options-sensitivity-label.png" alt-text="Öğeler için duyarlılık etiketi koruma seçenekleri." Lightbox="../media/protection-options-sensitivity-label.png":::
 
 4.  **Şifreleme** sayfasında aşağıdaki seçeneklerden birini belirleyin:
     
@@ -97,7 +97,7 @@ Bu şifreleme çözümünü kullandığınızda **süper kullanıcı** özelliğ
     
     - **Şifreleme ayarlarını yapılandırma**: Şifrelemeyi açar ve şifreleme ayarlarını görünür hale getirir:
         
-        ![Şifreleme için duyarlılık etiketi seçenekleri.](../media/encrytion-options-sensitivity-label.png)
+        :::image type="content" source="../media/encrytion-options-sensitivity-label.png" alt-text="Şifreleme için duyarlılık etiketi seçenekleri. "lightbox="../media/encrytion-options-sensitivity-label.png":::
         
         Bu ayarların yönergeleri aşağıdaki [Şifreleme ayarlarını yapılandırma](#configure-encryption-settings) bölümündedir.
 
@@ -412,7 +412,7 @@ Eklediğiniz yeni kullanıcılar, bu etiketle zaten korunan belgeleri ve e-posta
 
 Bu yapılandırma, e-postayı veya belgeyi şifrelemek için kullanıcıları, grupları veya etki alanlarını belirtmeniz gerekmeyen bir avantaja sahiptir. İçerik yine şifrelenir ve yine de kullanım haklarını, süre sonu tarihini ve çevrimdışı erişimi belirtebilirsiniz.
 
-Bu yapılandırmayı yalnızca korumalı belgeyi veya e-postayı kimlerin açabileceğini kısıtlamanız gerekmeyen durumlarda kullanın. [Bu ayar hakkında daha fazla bilgi](#requirements-and-limitations-for-add-any-authenticated-users)
+Bu yapılandırmayı yalnızca korumalı belgeyi veya e-postayı kimlerin açabileceğini kısıtlamanız gerekmeyen durumlarda kullanın. [Bu ayar hakkında daha fazla bilgi](#requirements-and-limitations-for-add-any-authenticated-users) edinin.
 
 1. **Şifreleme** sayfasında: **İzinleri şimdi ata veya kullanıcıların karar vermesine izin ver?** **için İzinleri şimdi ata'nın** seçili olduğundan emin olun.
 

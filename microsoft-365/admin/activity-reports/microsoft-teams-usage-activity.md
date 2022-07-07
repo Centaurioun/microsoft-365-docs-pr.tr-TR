@@ -1,5 +1,5 @@
 ---
-title: kullanım etkinliği raporlarını Microsoft 365 yönetim merkezi Teams
+title: Teams kullanım etkinliği raporlarını Microsoft 365 yönetim merkezi
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -18,34 +18,34 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Teams kullanım raporu, etkin kullanıcı, kanal ve ileti sayısı dahil olmak üzere kullanıcıların Teams nasıl iletişim kurup işbirliği yaptığı gösterilir.
-ms.openlocfilehash: fc720f9e164e2c9d20fb8b03e78b520102a0c021
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Teams kullanım raporu, etkin kullanıcıların, kanalların ve iletilerin sayısı da dahil olmak üzere kullanıcıların Teams'de nasıl iletişim kurup işbirliği içinde olduğunu gösterir.
+ms.openlocfilehash: 700ceb8396224b27a29d34b9a84eb527a1dce956
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467568"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662832"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-usage-activity"></a>Yönetim merkezinde raporları Microsoft 365 - kullanım etkinliği Microsoft Teams
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-usage-activity"></a>Yönetim merkezinde Microsoft 365 Raporları - Microsoft Teams kullanım etkinliği
 
 Microsoft 365 Raporları panosu, kuruluşunuzdaki ürünler genelindeki etkinliğe genel bakışı gösterir. Bu pano sayesinde her bir üründeki etkinliklerle ilgili daha ayrıntılı bilgi edinmek için ürün düzeyinde raporları ayrıntılı olarak inceleyebilirsiniz. [Raporlara genel bakış konusuna](activity-reports.md) göz atın.
 
-Yepyeni **Teams kullanım raporu**, kuruluşunuz genelinde kaç kullanıcının iletişim kurmak ve işbirliği yapmak için Teams kullandığını hızla görebilmeniz için etkin kullanıcı, kanal ve ileti sayısı dahil olmak üzere Teams'daki kullanım etkinliğine genel bir bakış sağlar.  Ayrıca etkin konuk sayısı, toplantılar ve iletiler gibi diğer Teams belirli etkinlikleri de içerir.
+Yepyeni **Teams kullanım raporu** etkin kullanıcı, kanal ve ileti sayısı dahil olmak üzere Teams'deki kullanım etkinliğine genel bir bakış sunar. Böylece kuruluşunuzdaki kaç kullanıcının iletişim kurmak ve işbirliği yapmak için Teams kullandığını hızlıca görebilirsiniz.  Etkin konuk, toplantı ve mesaj sayısı gibi Teams'e özgü diğer etkinlikleri de içerir.
 
-![Microsoft 365 raporları - etkinlik raporu Microsoft Teams.](../../media/teams-usage.png)
+![Microsoft 365 raporları - Microsoft Teams etkinlik raporu.](../../media/teams-usage.png)
 
 ## <a name="how-to-get-to-the-microsoft-teams-usage-activity-report"></a>Microsoft Teams kullanım etkinliği raporuna erişme
 
-1. Yönetim merkezinde, **Raporlar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Kullanımı</a> sayfasına gidin.
-2. Pano giriş sayfasında, **Microsoft Teams etkinlik** kartındaki **Daha fazla görüntüle** düğmesine tıklayın.
+1. Yönetim merkezinde **Raporlar'a** gidin ve **Kullanım'ı** seçin.
+2. Pano giriş sayfasında **Microsoft Teams etkinlik** kartındaki **Daha fazla görüntüle** düğmesine tıklayın.
 
-   ![Microsoft 365 raporları - etkinlik kartı Microsoft Teams.](../../media/teams-usage-card.png)<br/>
+   ![Microsoft 365 raporları - Microsoft Teams etkinlik kartı.](../../media/teams-usage-card.png)<br/>
 
-3. **Microsoft Teams** raporlar sayfasında **, Teams Kullanımı** sekmesini seçin.
+3. **Microsoft Teams** raporları sayfasında **Teams Kullanımı** sekmesini seçin.
 
 ## <a name="interpret-the-microsoft-teams-usage-activity-report"></a>Microsoft Teams kullanım etkinliği raporunu yorumlama
 
-Teams **Kullanımı** sekmesini seçerek Teams raporundaki kullanıcı etkinliğini görüntüleyebilirsiniz. Bu, aşağıdaki grafikleri görüntüler:
+**Teams Kullanımı** sekmesini seçerek Teams raporunda kullanıcı etkinliğini görüntüleyebilirsiniz. Bu, aşağıdaki grafikleri görüntüler:
 
 - **Kanal kullanımı**: Zaman içinde etkinlik türüne göre kanal kullanım sayısını izler.
 
@@ -57,13 +57,13 @@ Teams **Kullanımı** sekmesini seçerek Teams raporundaki kullanıcı etkinliğ
 
 Ayrıca grafikte son etkinlik tarihi, etkin kullanıcılar, etkin kanallar ve diğer veriler gibi tek tek ekiplerin kullanım ayrıntıları yer alır.
 
-![Microsoft 365 raporları - kullanım etkinliği tablosu Microsoft Teams.](../../media/teams-usage-table.png)
+![Microsoft 365 raporları - Microsoft Teams kullanım etkinliği tablosu.](../../media/teams-usage-table.png)
 
 Raporda sütun eklemek veya rapordan sütun kaldırmak için tabloda Sütunları **seç'i** seçin.
 
-![Kullanım etkinliği raporunu Teams - sütunları seçin.](../../media/teams-usage-columns.png)
+![Teams kullanım etkinliği raporu - sütunları seçin.](../../media/teams-usage-columns.png)
 
-Dışarı **Aktar bağlantısını** seçerek rapor verilerini bir Excel .csv dosyasına da aktarabilirsiniz. Bu işlem tüm kullanıcıların verilerini dışarı aktarır ve daha fazla çözümleme yapmak için basit sıralama ve filtreleme işlemlerini kullanmanıza olanak tanır. 2000'den az kullanıcınız varsa, raporun kendi içindeki tabloda sıralama ve filtreleme yapabilirsiniz. 2000'den çok kullanıcınız varsa, filtrelemek ve sıralamak için verileri dışarı aktarmanız gerekir. **Ses süresi**, **video süresi** ve **ekran paylaşım süresi** için dışarı aktarılan biçim ISO8601 süre biçimini izler.
+Dışarı **Aktar** bağlantısını seçerek rapor verilerini bir Excel .csv dosyasına da aktarabilirsiniz. Bu işlem tüm kullanıcıların verilerini dışarı aktarır ve daha fazla çözümleme yapmak için basit sıralama ve filtreleme işlemlerini kullanmanıza olanak tanır.  **Ses süresi**, **video süresi** ve **ekran paylaşım süresi** için dışarı aktarılan biçim ISO8601 süre biçimini izler.
 
 **Microsoft Teams kullanım etkinliği** raporu son 7 gün, 30 gün, 90 gün veya 180 günlük eğilimler için görüntülenebilir. Ancak raporda belirli bir gün seçerseniz, tablo geçerli tarihten itibaren (raporun oluşturulduğu tarihten değil) 28 güne kadar olan verileri gösterir.
 
@@ -85,7 +85,7 @@ Kanal kullanım grafiğinde aşağıdaki ölçümlerle ilgili veriler gösterili
 
 ### <a name="team-usage-metrics"></a>Ekip kullanım ölçümleri
 
-Teams kullanım grafiğinde aşağıdaki ölçümlerle ilgili veriler gösterilir.
+Teams kullanım grafiği aşağıdaki ölçümlerle ilgili verileri gösterir.
 
 |Öğe|Açıklama|
 |:-----|:-----|
@@ -119,9 +119,9 @@ Aşağıdaki ölçümlere ilişkin veriler tek tek ekipler tarafından kullanıl
 
 ## <a name="make-the-user-specific-data-anonymous"></a>Kullanıcıya özgü verileri anonim hale getirme
 
-Teams kullanıcı etkinlik raporundaki verileri anonim hale getirmek için genel yönetici olmanız gerekir. Bu, rapordaki görünen ad, e-posta ve Azure Active Directory Nesne Kimliği gibi tanımlanabilir bilgileri (MD5 karmalarını kullanarak) ve bunların dışarı aktarmasını gizler.
+Teams kullanıcı etkinliği raporundaki verileri anonim hale getirmek için genel yönetici olmanız gerekir. Bu, rapordaki görünen ad, e-posta ve Azure Active Directory Nesne Kimliği ve bunların dışarı aktarması gibi tanımlanabilir bilgileri (MD5 karmalarını kullanarak) gizler.
 
-1. Microsoft 365 yönetim merkezi **Ayarlar** **Org Ayarlar** >  gidin ve **Hizmetler** sekmesinin altında **Raporlar'ı** seçin.
+1. Microsoft 365 yönetim merkezi Ayarlar **Kuruluş Ayarları'na** gidin ve **Hizmetler** sekmesinin  >  altında **Raporlar'ı** seçin.
 
 2. **Raporlar'ı** ve ardından **Anonim tanımlayıcıları görüntüle'yi** seçin. Bu ayar hem Microsoft 365 yönetim merkezi hem de Teams yönetim merkezindeki kullanım raporlarına uygulanır.
 
@@ -129,6 +129,6 @@ Teams kullanıcı etkinlik raporundaki verileri anonim hale getirmek için genel
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[cihaz kullanım raporunu Microsoft Teams](../activity-reports/microsoft-teams-device-usage-preview.md)
+[Microsoft Teams cihaz kullanım raporu](../activity-reports/microsoft-teams-device-usage-preview.md)
 
-[kullanıcı etkinlik raporunu Microsoft Teams](../activity-reports/microsoft-teams-user-activity-preview.md)
+[Microsoft Teams kullanıcı etkinliği raporu](../activity-reports/microsoft-teams-user-activity-preview.md)

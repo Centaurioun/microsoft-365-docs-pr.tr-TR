@@ -18,12 +18,12 @@ ms.collection:
 description: Kuruluşunuzdan gönderilen iletileri doğrulamak için Etki Alanı Tabanlı İleti Kimlik Doğrulaması, Raporlama ve Uyumluluk (DMARC) yapılandırmayı öğrenin.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3e5cc711aef4e81833540572027b8d06087c510
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 55fd24a033526053e8006c3d70f3abeeef1c94d2
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486939"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663404"
 ---
 # <a name="use-dmarc-to-validate-email"></a>E-postayı doğrulamak için DMARC kullanma
 
@@ -100,7 +100,7 @@ Microsoft 365'te aldığınız postalar için DMARC'yi ayarlamak için hiçbir �
 
 ## <a name="set-up-dmarc-for-outbound-mail-from-microsoft-365"></a>Microsoft 365'ten giden postalar için DMARC'i ayarlama
 
-Microsoft 365 kullanıyorsanız ancak özel etki alanı kullanmıyorsanız (onmicrosoft.com kullanıyorsanız) başka bir şey yapmanız gerekmez. SPF sizin için zaten ayarlanmıştır ve Microsoft 365 giden postanız için otomatik olarak bir DKIM imzası oluşturur. Kuruluşunuz için DMARC'yi yapılandırmak için yapılacak başka bir şey yoktur. Bu imza hakkında daha fazla bilgi için bkz. [DKIM ve Microsoft 365 için varsayılan davranış](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
+Microsoft 365 kullanıyorsanız ancak özel bir etki alanı kullanmıyorsanız (onmicrosoft.com kullanıyorsanız), SPF sizin için zaten ayarlanmıştır ve Microsoft 365 giden postanız için otomatik olarak bir DKIM imzası oluşturur (bu imza hakkında daha fazla bilgi için bkz. [DKIM ve Microsoft 365 için varsayılan davranış](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)). Kuruluşunuz için DMARC'yi ayarlamak için, onmicrosoft.com etki alanı için [DMARC TXT kaydını oluşturmanız](#step-4-form-the-dmarc-txt-record-for-your-domain) ve Office 365 Admin [Center >](https://admin.microsoft.com) Ayarlar > Etki Alanları aracılığıyla DNS'de yayımlamanız > onmicrosoft.com etki alanı > Kayıt ekle'ye tıklamanız gerekir.
 
  Özel bir etki alanınız varsa veya Microsoft 365 ile birlikte şirket içi Exchange sunucuları kullanıyorsanız, giden postanız için DMARC'yi el ile ayarlamanız gerekir. Özel etki alanınız için DMARC'nin ayarlanması şu adımları içerir:
 
@@ -281,4 +281,4 @@ DMARC hakkında daha fazla bilgi mi istiyorsunuz? Bu kaynaklar yardımcı olabil
 
 [**Microsoft 365'te özel etki alanınızdan gönderilen giden e-postayı doğrulamak için DKIM kullanma**](use-dkim-to-validate-outbound-email.md)
 
-[Güvenilir ARC Gönderenleri'ni geçerli posta akışları için kullanma](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)
+[Güvenilir ARC Gönderenleri'ni geçerli posta akışları için kullanma](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet)

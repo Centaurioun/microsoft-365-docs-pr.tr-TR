@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Kuruluşunuzdaki grupların etkinliği hakkında içgörüler elde etmek ve kaç grubun oluşturulup kullanıldığını görmek için bir Microsoft 365 Grupları raporu alın.
-ms.openlocfilehash: ec9f544214345de0cacd00580772867bd1e5312d
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: dce585ddb496be67b1045baa4b7cea0dc3b7fc24
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486285"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662690"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Yönetim merkezinde Microsoft 365 Raporları - Microsoft 365 grupları
 
@@ -48,7 +48,7 @@ Rapora sütun eklemek veya rapordan sütun kaldırmak için Sütunları **seç'i
 
 :::image type="content" alt-text="Office 365 grupları etkinlik raporu - sütunları seçin." source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
 
-Dışarı **Aktar** bağlantısını seçerek rapor verilerini bir Excel .csv dosyasına da aktarabilirsiniz. Bu işlem tüm kullanıcıların verilerini dışarı aktarır ve daha fazla çözümleme yapmak için basit sıralama ve filtreleme işlemlerini kullanmanıza olanak tanır. 2000'den az kullanıcınız varsa, raporun kendi içindeki tabloda sıralama ve filtreleme yapabilirsiniz. 2000'den fazla kullanıcınız varsa, filtrelemek ve sıralamak için verileri dışarı aktarmanız gerekir.
+Dışarı **Aktar** bağlantısını seçerek rapor verilerini bir Excel .csv dosyasına da aktarabilirsiniz. Bu işlem tüm kullanıcıların verilerini dışarı aktarır ve daha fazla çözümleme yapmak için basit sıralama ve filtreleme işlemlerini kullanmanıza olanak tanır. 
 
 **Gruplar** raporu son 7 gün, 30 gün, 90 gün veya 180 günlük eğilimler için görüntülenebilir. Ancak raporda belirli bir gün seçerseniz, tablo geçerli tarihten itibaren (raporun oluşturulduğu tarihten değil) 28 güne kadar olan verileri gösterir.
 

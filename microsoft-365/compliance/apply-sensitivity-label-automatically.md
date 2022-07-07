@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Duyarlılık etiketi oluşturduğunuzda, dosyalara ve e-postalara otomatik olarak bir etiket atayabilir veya kullanıcılardan önerdiğiniz etiketi seçmelerini isteyebilirsiniz.
-ms.openlocfilehash: 48affe223db5f2c1a63246b7d4ff473188cabd63
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 06e769f3e6aa616d8b725ec37c52e2a24289ceb2
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640930"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662350"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>İçeriğe otomatik olarak bir hassasiyet etiketi uygulama
 
@@ -148,7 +148,7 @@ Office uygulamalarında yerleşik etiketleme için, Office uygulamalarında otom
 
 Azure Information Protection birleşik etiketleme istemcisi yalnızca yerleşik ve özel hassas bilgi türleri için otomatik etiketlemeyi destekler ve Tam Veri Eşleştirme (EDM) veya adlandırılmış varlıkları kullanan eğitilebilir sınıflandırıcıları veya hassas bilgi türlerini desteklemez.
 
-Duyarlılık [etiketi oluşturduğunuzda veya düzenlediğinizde](create-sensitivity-labels.md), Office uygulamaları için otomatik etiketleme ayarları kullanılabilir. Etiketin kapsamı için **Dosyalar & e-postalarının** seçildiğinden emin olun:
+Duyarlılık [etiketi oluşturduğunuzda veya düzenlediğinizde](create-sensitivity-labels.md), Office uygulamaları için otomatik etiketleme ayarları kullanılabilir. Etiketin kapsamı için **Öğeler'in** seçili olduğundan emin olun:
 
 ![Dosyalar ve e-postalar için duyarlılık etiketi kapsam seçenekleri.](../media/filesandemails-scope-options-sensitivity-label.png)
 

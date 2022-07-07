@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint ve OneDrive'daki siteler ve belgeler için varsayılan paylaşım bağlantı türünü yapılandırmak için duyarlılık etiketlerini kullanın.
-ms.openlocfilehash: ca4b74c2fb25c4f1f1ef96b8ae0241481358797d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0e2fbe762483ff3997484b32448ce96711147e43
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628583"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663184"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>SharePoint ve OneDrive'da siteler ve belgeler için varsayılan paylaşım bağlantı türünü yapılandırmak için duyarlılık etiketlerini kullanma
 
@@ -92,11 +92,11 @@ Duyarlılık etiketi **GUID'sinin 8faca7b8-8d20-48a3-8ea2-0f96310a848e** olduğu
 
 PowerShell gelişmiş ayarlarını belirtme konusunda daha fazla yardım için bkz. [Gelişmiş ayarları belirtmek için PowerShell ipuçları](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
 
-Bir sitenin varsayılan paylaşım bağlantı türünün ayarlarını yapılandırmak için, [duyarlılık etiketinin kapsamı](sensitivity-labels.md#label-scopes), duyarlılık etiketini Microsoft Purview uyumluluk portalı oluştururken **Gruplar & sitelerini** içermelidir. Oluşturulduktan sonra, bunu **Etiketler** sayfasındaki **Kapsam** sütununda **Site, UnifiedGroup** olarak ve PowerShell *ContentType* ayarı da aynı değeri görüntüler. Belgeler için kapsam, **Dosya, E-posta olarak görüntülenen Dosyalar & e-postalarını** içermelidir. Sonra:
+Bir sitenin varsayılan paylaşım bağlantı türünün ayarlarını yapılandırmak için, [duyarlılık etiketinin kapsamı](sensitivity-labels.md#label-scopes), duyarlılık etiketini Microsoft Purview uyumluluk portalı oluştururken **Gruplar & sitelerini** içermelidir. Oluşturulduktan sonra, bunu **Etiketler** sayfasındaki **Kapsam** sütununda **Site, UnifiedGroup** olarak ve PowerShell *ContentType* ayarı da aynı değeri görüntüler. Belgeler için kapsam, **Dosya, E-posta** olarak görüntülenen **Öğeler'i** içermelidir. Sonra:
 
 - Kapsam **Gruplar & siteleri** içerdiğinde, etiketi bir siteye uygulayarak bu site için varsayılan paylaşım bağlantı türünü ayarlayabilirsiniz. Siteye duyarlılık etiketi uygulama hakkında bilgi için bkz. [Kapsayıcılara duyarlılık etiketleri uygulama](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
 
-- Duyarlılık etiketinin kapsamı **Dosyalar & e-postalar** içerdiğinde, etiketi belgelere uygulayabilirsiniz ve bu da bu belge için varsayılan paylaşım bağlantı türünü ayarlar. Etiket [el ile](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) veya [otomatik olarak](apply-sensitivity-label-automatically.md) uygulanabilir.
+- Duyarlılık etiketinin kapsamı **Öğeler'i** içerdiğinde, etiketi belgelere uygulayabilirsiniz ve bu da bu belge için varsayılan paylaşım bağlantı türünü ayarlar. Etiket [el ile](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) veya [otomatik olarak](apply-sensitivity-label-automatically.md) uygulanabilir.
 
 > [!TIP]
 > Etiketin, etiket [ilkesi ayarı](sensitivity-labels.md#what-label-policies-can-do) olarak yeni siteler veya yeni belgeler için uygulanacak varsayılan duyarlılık etiketi olduğunu da belirtebilirsiniz.

@@ -22,12 +22,12 @@ description: Hassas içeriği sınıflandırmak ve korumak için Microsoft Purvi
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: db050d3e26f19901e98052be5051b9eebce21990
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b7deebb8f745c3b43f82093412e291ab304b4794
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637959"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663492"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Duyarlılık etiketleri hakkında bilgi edinin
 
@@ -134,13 +134,13 @@ Bu kapsam yapılandırması, yalnızca belgeler ve e-postalar için olan ve kaps
 
 ![Duyarlılık etiketleri için kapsam seçenekleri.](../media/sensitivity-labels-scopes.png)
 
-Varsayılan olarak, **Dosyalar & e-posta** kapsamı her zaman seçilidir. Kiracınız için özellikler etkinleştirildiğinde diğer kapsamlar varsayılan olarak seçilir:
+Varsayılan olarak **, Öğeler** kapsamı her zaman seçilidir. Kiracınız için özellikler etkinleştirildiğinde diğer kapsamlar varsayılan olarak seçilir:
 
 - **Gruplar & siteleri**: [Kapsayıcılar için duyarlılık etiketlerini etkinleştirme ve etiketleri eşitleme](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
 - **Şema haline getirilmiş veri varlıkları**: [İçeriğinizi otomatik olarak Microsoft Purview Veri Eşlemesi](/azure/purview/create-sensitivity-label)
 
-Tüm kapsamların seçilmemesi için varsayılanları değiştirirseniz, seçmediğiniz kapsamlar için yapılandırma ayarlarının ilk sayfasını görürsünüz, ancak ayarları yapılandıramazsınız. Örneğin, dosyaların ve e-postaların kapsamı seçili değilse, sonraki sayfadaki seçenekleri belirleyemezsiniz:
+Tüm kapsamların seçilmemesi için varsayılanları değiştirirseniz, seçmediğiniz kapsamlar için yapılandırma ayarlarının ilk sayfasını görürsünüz, ancak ayarları yapılandıramazsınız. Örneğin, öğelerin kapsamı seçili değilse, sonraki sayfadaki seçenekleri belirleyemezsiniz:
 
 ![Duyarlılık etiketleri için kullanılamayan seçenekler.](../media/sensitivity-labels-unavailable-settings.png)
 
@@ -148,7 +148,7 @@ Kullanılamayan seçeneklere sahip bu sayfalar için devam etmek için **İleri'
 
 ### <a name="label-priority-order-matters"></a>Etiket önceliği (sıralamanın önemi)
 
-Yönetim merkezinizde duyarlılık etiketlerinizi oluşturduğunuzda, bunlar **Etiketler** sayfasındaki **Duyarlılık** sekmesindeki bir listede görünür. Bu listede etiketlerin sırası, önceliklerini yansıttığı için önemlidir. Listenin **en altında** Çok Gizli gibi en kısıtlayıcı duyarlılık etiketinizin ve Genel gibi en az kısıtlayıcı duyarlılık etiketinizin **en üstte** görünmesini istiyorsunuz.
+Microsoft Purview uyumluluk merkezinde duyarlılık etiketlerinizi oluşturduğunuzda, **bunlar Etiketler** sayfasındaki **Duyarlılık** sekmesindeki bir listede görünür. Bu listede etiketlerin sırası, önceliklerini yansıttığı için önemlidir. Listenin **en altında** Çok Gizli gibi en kısıtlayıcı duyarlılık etiketinizin ve Genel gibi en az kısıtlayıcı duyarlılık etiketinizin **en üstte** görünmesini istiyorsunuz.
 
 Belge, e-posta veya kapsayıcı gibi bir öğeye yalnızca bir duyarlılık etiketi uygulayabilirsiniz. Kullanıcılarınızın bir etiketin sınıflandırmasını düşürürken bunun nedenini belirtmesini gerektiren bir seçenek ayarlarsanız bu listedeki sıra daha düşük sınıflandırmaları tanımlar. Ancak bu seçenek, üst etiketlerinin önceliğini paylaşan alt etiketler için geçerli değildir.
 

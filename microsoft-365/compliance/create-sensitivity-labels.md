@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Tüm Microsoft Purview Bilgi Koruması çözümleri için bir gereksinim: Kuruluşunuzun verilerini sınıflandırmak ve korumak için duyarlılık etiketleri oluşturun, yapılandırın ve yayımlayın.'
-ms.openlocfilehash: ad7e9c9aeea0a1ef05f79214afd60ac479ba2e66
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 486cc10888ebb66a657aa21930fe306073ac1868
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625533"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663536"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Duyarlılık etiketleri ve ilkeleri oluşturma ve yapılandırma
 
@@ -50,7 +50,7 @@ Kuruluşunuzun genel yöneticisi duyarlılık etiketlerinin tüm yönlerini olu�
 
 2. **Etiketler** sayfasında **+ Etiket oluştur'u** seçerek yeni duyarlılık etiketi yapılandırmasını başlatın: 
     
-    ![Duyarlılık etiketi oluşturun.](../media/create-sensitivity-label-full.png)
+    :::image type="content" source="../media/create-sensitivity-label-full.png" alt-text="Duyarlılık etiketi oluşturun." lightbox="../media/create-sensitivity-label-full.png":::
 
     > [!NOTE]
     > Varsayılan olarak, kiracılarda herhangi bir etiket yoktur ve bunları oluşturmanız gerekir. Örnek resimdeki etiketler[, Azure Information Protection'dan geçirilen](/azure/information-protection/configure-policy-migrate-labels) varsayılan etiketleri gösterir.
@@ -59,7 +59,7 @@ Kuruluşunuzun genel yöneticisi duyarlılık etiketlerinin tüm yönlerini olu�
 
     ![Duyarlılık etiketlerinin kapsamları.](../media/sensitivity-labels-scopes.png)
 
-    - **Dosyalar & e-postalar** seçiliyse, Office Word ve Outlook gibi duyarlılık etiketlerini destekleyen uygulamalar için geçerli ayarları yapılandırabilirsiniz. Bu seçenek belirlenmezse, bu ayarların ilk sayfasını görürsünüz, ancak bunları yapılandıramazsınız ve etiketler kullanıcıların bu uygulamalarda seçebileceği şekilde kullanılamaz.
+    - **Öğeler** seçiliyse, Office Word ve Outlook gibi duyarlılık etiketlerini destekleyen uygulamalara uygulanan ayarları yapılandırabilirsiniz. Bu seçenek belirlenmezse, bu ayarların ilk sayfasını görürsünüz, ancak bunları yapılandıramazsınız ve etiketler kullanıcıların bu uygulamalarda seçebileceği şekilde kullanılamaz.
 
     - **Gruplar & siteleri** seçiliyse, Microsoft 365 gruplarına ve Teams ile SharePoint sitelerine uygulanan ayarları yapılandırabilirsiniz. Bu seçenek belirtilmemişse, bu ayarların ilk sayfasını görürsünüz, ancak bunları yapılandıramazsınız ve etiketler kullanıcıların gruplar ve site için seçmesi için kullanılamaz.
 
@@ -153,7 +153,7 @@ Gelişmiş ayarlar da dahil olmak üzere etiketinizin yapılandırmasını denet
 
 2. **Etiket ilkeleri sayfasında Etiketi** **yayımla'yı** seçerek **İlke oluşturma** yapılandırmasını başlatın:
     
-    ![Etiketleri yayımlama.](../media/publish-sensitivity-labels-full.png)
+   :::image type="content" source="../media/publish-sensitivity-labels-full.png" alt-text="Etiketleri yayımlama." lightbox="../media/publish-sensitivity-labels-full.png":::
     
     > [!NOTE]
     > Varsayılan olarak, kiracıların herhangi bir etiket ilkesi yoktur ve bunları oluşturmanız gerekir. 
@@ -167,7 +167,7 @@ Gelişmiş ayarlar da dahil olmak üzere etiketinizin yapılandırmasını denet
 
 5. İlke ayarlarını yapılandırmak için istemleri izleyin.
 
-    Gördüğünüz ilke ayarları, seçtiğiniz etiketlerin kapsamıyla eşleşer. Örneğin, yalnızca **Dosyalar & e-posta** kapsamına sahip etiketleri seçtiyseniz, İlke ayarlarını Görmezsiniz **Bu etiketi varsayılan olarak gruplara ve sitelere uygula ve Kullanıcıların gruplarına ve sitelerine** **etiket uygulamasını gerektir**.
+    Gördüğünüz ilke ayarları, seçtiğiniz etiketlerin kapsamıyla eşleşer. Örneğin, yalnızca **Öğeler** kapsamına sahip etiketleri seçtiyseniz, İlke ayarlarını Görmezsiniz **Bu etiketi varsayılan olarak gruplara ve sitelere uygula ve Kullanıcıların gruplarına ve sitelerine** **etiket uygulamasını gerektir**.
 
     Bu ayarlar hakkında daha fazla bilgi için genel bakış bilgilerinden [etiket ilkelerinin yapabilecekleri](sensitivity-labels.md#what-label-policies-can-do) bölümüne bakın ve tek tek ayarlar için kullanıcı arabirimindeki yardımı kullanın.
 
