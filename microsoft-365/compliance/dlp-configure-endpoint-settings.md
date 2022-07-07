@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Uç nokta veri kaybı önleme (DLP) merkezi ayarlarını yapılandırmayı öğrenin.
-ms.openlocfilehash: 99598880515dd14bc453ebd61a633be7eb66a9fc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6265cb39c496a75ebc1bebed494a27798552417b
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629959"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686239"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Uç noktada veri kaybı önleme ayarlarını yapılandırma
 
@@ -251,9 +251,12 @@ Hizmet etki alanının FQDN biçimini bitiş olmadan kullanın `.`
 
 Örneğin:
 
- `www.contoso.com` 
 
-Joker karakterler desteklenmez.
+| Giriş | URL eşleştirme davranışı |
+|---|---|
+| **CONTOSO.COM** |**Belirtilen etki alanı adıyla ve herhangi bir alt siteyle eşleşir**: <p>*://contoso.com<p>*:/ /contoso.com/ <p>*://contoso.com/anysubsite1 <p>*:/ /contoso.com/anysubsite1/anysubsite2 (vb.) <p>**Alt etki alanları veya belirtilmemiş etki alanlarıyla eşleşmiyor**: <p>*://anysubdomain.contoso.com <p>*:/ /anysubdomain.contoso.com.AU |
+| ***.CONTOSO.COM** |**Belirtilen etki alanı adı, herhangi bir alt etki alanı ve herhangi bir siteyle eşleşir**: <p>*://contoso.com <p>*:/ /contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*:/ /anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*:/ /anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (vb) <p>**Belirtilmemiş etki alanlarıyla eşleşmiyor** <p>*://anysubdomain.contoso.com.AU/ |
+| **`www.contoso.com`** |**Belirtilen etki alanı adıyla eşleşir**: <p>`www.contoso.com` <p>**Belirtilmemiş etki alanları veya alt etki alanlarıyla eşleşmiyor** <p>*://anysubdomain.contoso.com/, bu durumda FQDN etki alanı adının kendisini koymanız gerekir `www.contoso.com`|
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>Uç nokta DLP'leri için ek ayarlar
 

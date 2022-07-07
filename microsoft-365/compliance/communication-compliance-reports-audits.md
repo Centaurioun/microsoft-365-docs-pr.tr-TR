@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 27c166f3c9df0dead57f977b00cab41eb82347ad
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4810f76d2d0fc7446c15c3c52fd6577e763918fe
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630503"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686407"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>İletişim uyumluluk raporlarını ve denetimlerini kullanma
 
@@ -141,7 +141,7 @@ Rapordaki öğe sayısına bağlı olarak, raporun indirilmeye hazır olması bi
 Bazı durumlarda, kullanıcı etkinliklerinin ve iletişimlerinin denetimini kanıtlamak için mevzuat veya uyumluluk denetçilerine bilgi sağlamanız gerekir. Bu bilgiler, tanımlı bir kuruluş ilkesiyle ilişkili tüm etkinliklerin özeti veya iletişim uyumluluk ilkesi her değiştiğinde olabilir. İletişim uyumluluk ilkeleri, iç veya dış denetimler için tam hazırlık için yerleşik denetim izlerine sahiptir. Her oluşturma, düzenleme ve silme eyleminin ayrıntılı denetim geçmişleri, denetim yordamlarının kanıtını sağlamak için iletişim ilkeleriniz tarafından yakalanır.
 
 > [!IMPORTANT]
-> İletişim uyumluluk olayları kaydedilmeden önce kuruluşunuz için denetimin etkinleştirilmesi gerekir. Denetimi etkinleştirmek için bkz [. Denetim günlüğünü etkinleştirme](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Etkinlikler Microsoft 365 Denetim günlüğünde yakalanan olayları tetiklediğinde, bu olayların iletişim uyumluluk ilkelerinde görüntülenebilmesi 48 saat kadar sürebilir.
+> İletişim uyumluluk olayları kaydedilmeden önce kuruluşunuz için denetimin etkinleştirilmesi gerekir. Denetimi etkinleştirmek için bkz [. Denetim günlüğünü etkinleştirme](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log). Etkinlikler Microsoft 365 Denetim günlüğünde yakalanan olayları tetiklediğinde, bu olayların iletişim uyumluluk ilkelerinde görüntülenebilmesi 48 saat kadar sürebilir.
 
 İletişim uyumluluk ilkesi güncelleştirme etkinliklerini görüntülemek için, herhangi bir **ilkenin ana sayfasında İlke güncelleştirmelerini dışarı aktar** denetimini seçin. Güncelleştirme etkinliklerini dışarı aktarmak için *Genel Yönetici* veya *İletişim Uyumluluğu Yönetici* rolleri atanmış olmalıdır. Bu eylem, aşağıdaki bilgileri içeren .csv biçiminde bir denetim dosyası oluşturur:
 
@@ -161,7 +161,7 @@ bir ilkenin iletişim uyumluluğu gözden geçirme etkinliklerini görüntüleme
 | **Operasyonlar** | İlke üzerinde gerçekleştirilen gözden geçirme işlemleri. |
 | **AuditData** | Bu alan, tüm ilke gözden geçirme etkinlikleri için ana veri kaynağıdır. Tüm gözden geçirme etkinlikleri kaydedilir ve virgülle ayrılmıştır. |
 
-Denetim etkinliklerini birleşik denetim günlüğünde veya [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet'iyle de görüntüleyebilirsiniz. Denetim günlüğü saklama ilkeleri hakkında daha fazla bilgi edinmek için bkz. [Denetim günlüğü saklama ilkelerini yönetme](audit-log-retention-policies.md).
+Denetim etkinliklerini birleşik denetim günlüğünde veya [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet'iyle de görüntüleyebilirsiniz. Denetim günlüğü saklama ilkeleri hakkında daha fazla bilgi edinmek için bkz. [Denetim günlüğü saklama ilkelerini yönetme](/microsoft-365/compliance/audit-log-retention-policies).
 
 Örneğin, aşağıdaki örnek tüm denetim gözden geçirme etkinlikleri (ilkeler ve kurallar) için etkinlikleri döndürür:
 

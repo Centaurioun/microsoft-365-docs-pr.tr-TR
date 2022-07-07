@@ -1,6 +1,6 @@
 ---
-title: İletişim uyumluluk ilkeleri
-description: İletişim uyumluluk ilkeleri hakkında daha fazla bilgi edinin.
+title: İletişim uyumluluğu ilkeleri oluşturma ve yönetme
+description: İletişim uyumluluk ilkeleri oluşturma ve yönetme hakkında daha fazla bilgi edinin.
 keywords: Microsoft 365, Microsoft Purview, uyumluluk, iletişim uyumluluğu
 f1.keywords:
 - NOCSH
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c371de57ab6fdd4b7869b676680bb8f922798438
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a865cec3ed136dcde84aa5ed0d93754fbbf6ac22
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626479"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686385"
 ---
-# <a name="communication-compliance-policies"></a>İletişim uyumluluk ilkeleri
+# <a name="create-and-manage-communication-compliance-policies"></a>İletişim uyumluluğu ilkeleri oluşturma ve yönetme
 
 ## <a name="policies"></a>İlkeler
 
@@ -167,7 +167,7 @@ Varsayılan olarak **Direction koşulu** görüntülenir ve kaldırılamaz. İlk
 
 ### <a name="sensitive-information-types"></a>Hassas bilgi türleri
 
-hassas bilgi türlerini iletişim uyumluluk ilkenizin bir parçası olarak dahil edebilirsiniz. Hassas bilgi türleri kredi kartı numaralarını, banka hesap numaralarını, pasaport numaralarını ve daha fazlasını tanımlamaya ve korumaya yardımcı olabilecek önceden tanımlanmış veya özel veri türleridir. [Microsoft Purview Veri Kaybı Önleme hakkında bilgi edinin'in](dlp-learn-about-dlp.md) bir parçası olarak, hassas bilgi yapılandırması hassas olabilecek içeriği tanımlamaya ve işaretlemeye yardımcı olmak için desenleri, karakter yakınlığı, güvenilirlik düzeylerini ve hatta özel veri türlerini kullanabilir. Varsayılan hassas bilgi türleri şunlardır:
+hassas bilgi türlerini iletişim uyumluluk ilkenizin bir parçası olarak dahil edebilirsiniz. Hassas bilgi türleri kredi kartı numaralarını, banka hesap numaralarını, pasaport numaralarını ve daha fazlasını tanımlamaya ve korumaya yardımcı olabilecek önceden tanımlanmış veya özel veri türleridir. [Microsoft Purview Veri Kaybı Önleme hakkında bilgi edinin'in](/microsoft-365/compliance/dlp-learn-about-dlp) bir parçası olarak, hassas bilgi yapılandırması hassas olabilecek içeriği tanımlamaya ve işaretlemeye yardımcı olmak için desenleri, karakter yakınlığı, güvenilirlik düzeylerini ve hatta özel veri türlerini kullanabilir. Varsayılan hassas bilgi türleri şunlardır:
 
 - Finansal
 - Tıbbi ve sağlık
@@ -175,13 +175,13 @@ hassas bilgi türlerini iletişim uyumluluk ilkenizin bir parçası olarak dahil
 - Özel bilgi türü
 
 > [!IMPORTANT]
-> SID'lerin, en fazla benzersiz örnek sayısı parametresini tanımlamanın iki farklı yolu vardır. Daha fazla bilgi edinmek için bkz [. SIT için örnek sayısı desteklenen değerler](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> SID'lerin, en fazla benzersiz örnek sayısı parametresini tanımlamanın iki farklı yolu vardır. Daha fazla bilgi edinmek için bkz [. SIT için örnek sayısı desteklenen değerler](/microsoft-365/compliance/create-a-custom-sensitive-information-type#instance-count-supported-values-for-sit).
 
-Hassas bilgi ayrıntıları ve varsayılan türlerde yer alan desenler hakkında daha fazla bilgi edinmek için bkz [. Hassas bilgi türü varlık tanımları](sensitive-information-type-entity-definitions.md).
+Hassas bilgi ayrıntıları ve varsayılan türlerde yer alan desenler hakkında daha fazla bilgi edinmek için bkz [. Hassas bilgi türü varlık tanımları](/microsoft-365/compliance/sensitive-information-type-entity-definitions).
 
 ### <a name="custom-keyword-dictionaries"></a>Özel anahtar sözcük sözlükleri
 
-Kuruluşunuza veya sektörünüze özgü anahtar sözcüklerin basit yönetimini sağlamak için özel anahtar sözcük sözlüklerini (veya sözcük sözcüklerini) yapılandırın. Anahtar sözcük sözlükleri sözlükte 100 KB'a kadar terimleri (sıkıştırma sonrası) destekler ve herhangi bir dili destekler. Sıkıştırmadan sonra kiracı sınırı da 100 KB'tır. Gerekirse, tek bir ilkeye birden çok özel anahtar sözcük sözlükleri uygulayabilir veya ilke başına tek bir anahtar sözcük sözlüğüne sahip olabilirsiniz. Bu sözlükler bir iletişim uyumluluk ilkesinde atanır ve bir dosyadan (.csv veya .txt listesi gibi) veya [uyumluluk portalında içeri aktarabileceğiniz bir listeden](create-a-keyword-dictionary.md) kaynaklanabilir. Kuruluşunuza ve ilkelerinize özgü terimleri veya dilleri desteklemeniz gerektiğinde özel sözlükleri kullanın.
+Kuruluşunuza veya sektörünüze özgü anahtar sözcüklerin basit yönetimini sağlamak için özel anahtar sözcük sözlüklerini (veya sözcük sözcüklerini) yapılandırın. Anahtar sözcük sözlükleri sözlükte 100 KB'a kadar terimleri (sıkıştırma sonrası) destekler ve herhangi bir dili destekler. Sıkıştırmadan sonra kiracı sınırı da 100 KB'tır. Gerekirse, tek bir ilkeye birden çok özel anahtar sözcük sözlükleri uygulayabilir veya ilke başına tek bir anahtar sözcük sözlüğüne sahip olabilirsiniz. Bu sözlükler bir iletişim uyumluluk ilkesinde atanır ve bir dosyadan (.csv veya .txt listesi gibi) veya [uyumluluk portalında içeri aktarabileceğiniz bir listeden](/microsoft-365/compliance/create-a-keyword-dictionary) kaynaklanabilir. Kuruluşunuza ve ilkelerinize özgü terimleri veya dilleri desteklemeniz gerektiğinde özel sözlükleri kullanın.
 
 ### <a name="classifiers"></a>Sınıflandırıcı
 
@@ -221,7 +221,6 @@ Aşağıdaki görüntü biçimlerinde 50 KB ile 4 MB arasındaki görüntüler t
 OCR etkin ilkeler için bekleyen uyarılar gözden geçirilirken, ilke koşullarıyla tanımlanan ve eşleşen görüntüler ilişkili uyarılar için alt öğe olarak görüntülenir. Tanımlanan metni özgün iletiyle bağlamda değerlendirmek için özgün görüntüyü görüntüleyebilirsiniz. Algılanan görüntülerin uyarılarla kullanılabilir olması 48 saat kadar sürebilir.
 
 ### <a name="conditional-settings"></a>Koşullu ayarlar
-<a name="ConditionalSettings"> </a>
 
 İlke için seçtiğiniz koşullar, hem e-posta hem de kuruluşunuzdaki üçüncü taraf kaynaklardan (Instant Bloomberg gibi) gelen iletişimler için geçerlidir.
 
@@ -229,19 +228,18 @@ Aşağıdaki tabloda her koşul hakkında daha fazla bilgi ve bulabilirsiniz.
 
 |**Durum**|**Bu koşulu kullanma**|
 |:-----|:-----|
-| **İçerik bu sınıflandırıcılardan herhangi biri ile eşleşir** | İletiye sınıflandırıcılar eklendiğinde veya dışlandığında ilkeye uygulayın. Bazı sınıflandırıcılar kuruluşunuzda önceden tanımlanmıştır ve özel sınıflandırıcıların bu koşul için kullanılabilir hale gelmeden önce ayrı olarak yapılandırılması gerekir. Bir ilkede koşul olarak yalnızca bir sınıflandırıcı tanımlanabilir. Sınıflandırıcıları yapılandırma hakkında daha fazla bilgi için bkz. [Eğitilebilir sınıflandırıcılar (önizleme) hakkında bilgi edinin](classifier-learn-about.md). |
-| **İçerik bu hassas bilgi türlerinden herhangi birini içerir** | İletiye herhangi bir hassas bilgi türü eklendiğinde veya dışlandığında ilkeye uygulayın. Bazı sınıflandırıcılar kiracınızda önceden tanımlanmıştır ve özel sınıflandırıcılar ayrı olarak veya koşul atama işleminin bir parçası olarak yapılandırılabilir. Seçtiğiniz her hassas bilgi türü ayrı ayrı uygulanır ve ilkenin iletiye uygulanması için bu hassas bilgi türlerinden yalnızca birinin geçerli olması gerekir. Özel hassas bilgi türleri hakkında daha fazla bilgi için bkz. [Hassas bilgi türleri hakkında bilgi edinin](sensitive-information-type-learn-about.md). |
+| **İçerik bu sınıflandırıcılardan herhangi biri ile eşleşir** | İletiye sınıflandırıcılar eklendiğinde veya dışlandığında ilkeye uygulayın. Bazı sınıflandırıcılar kuruluşunuzda önceden tanımlanmıştır ve özel sınıflandırıcıların bu koşul için kullanılabilir hale gelmeden önce ayrı olarak yapılandırılması gerekir. Bir ilkede koşul olarak yalnızca bir sınıflandırıcı tanımlanabilir. Sınıflandırıcıları yapılandırma hakkında daha fazla bilgi için bkz. [Eğitilebilir sınıflandırıcılar (önizleme) hakkında bilgi edinin](/microsoft-365/compliance/classifier-learn-about). |
+| **İçerik bu hassas bilgi türlerinden herhangi birini içerir** | İletiye herhangi bir hassas bilgi türü eklendiğinde veya dışlandığında ilkeye uygulayın. Bazı sınıflandırıcılar kiracınızda önceden tanımlanmıştır ve özel sınıflandırıcılar ayrı olarak veya koşul atama işleminin bir parçası olarak yapılandırılabilir. Seçtiğiniz her hassas bilgi türü ayrı ayrı uygulanır ve ilkenin iletiye uygulanması için bu hassas bilgi türlerinden yalnızca birinin geçerli olması gerekir. Özel hassas bilgi türleri hakkında daha fazla bilgi için bkz. [Hassas bilgi türleri hakkında bilgi edinin](/microsoft-365/compliance/sensitive-information-type-learn-about). |
 | **İleti bu etki alanlarından herhangi birinden alınır**  <br><br> **İleti bu etki alanlarının hiçbirinden alınmaz** | Alınan iletilere belirli etki alanlarını veya e-posta adreslerini dahil etmek veya dışlamak için ilkeyi uygulayın. Her etki alanını veya e-posta adresini girin ve birden çok etki alanını veya e-posta adresini virgülle ayırın. Girilen her etki alanı veya e-posta adresi ayrı ayrı uygulanır, ilkenin iletiye uygulanması için yalnızca bir etki alanı veya e-posta adresi uygulanmalıdır. <br><br> Belirli bir etki alanındaki tüm e-postaları taramak, ancak gözden geçirilmesi gerekmeyen iletileri (bültenler, duyurular vb.) dışlamak istiyorsanız, e-posta adresini dışlayan **bu etki alanları koşulundan bir İleti alınmaz** (örneğin "newsletter@contoso.com") yapılandırmanız gerekir. |
 | **İleti bu etki alanlarından herhangi birine gönderilir**  <br><br> **İleti bu etki alanlarından hiçbirine gönderilmez** | Gönderilen iletilere belirli etki alanlarını dahil etmek veya dışlamak için ilkeyi uygulayın. Her etki alanını girin ve birden çok etki alanını virgülle ayırın. Her etki alanı ayrı ayrı uygulanır, ilkenin iletiye uygulanması için yalnızca bir etki alanı uygulanmalıdır. <br><br> belirli iki etki alanına gönderilen tüm e-postaları dışlamak istiyorsanız, **İletinin bu etki alanları koşulundan hiçbirine gönderilmemesini iki etki alanıyla** (örneğin, 'contoso.com,wingtiptoys.com') yapılandırabilirsiniz. |
-| **İleti bu etiketlerden herhangi biriyle sınıflandırılır**  <br><br> **İleti bu etiketlerden herhangi biriyle sınıflandırılmadı** | İletiye belirli bekletme etiketleri eklendiğinde veya hariç tutulduğunda ilkeyi uygulamak için. Bekletme etiketleri ayrı olarak yapılandırılmalıdır ve bu koşulun bir parçası olarak yapılandırılmış etiketler seçilir. Seçtiğiniz her etiket ayrı ayrı uygulanır (ilkenin iletiye uygulanması için bu etiketlerden yalnızca birinin geçerli olması gerekir). Bekletme etiketleri hakkında daha fazla bilgi için bkz. [Bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin](retention.md).|
-| **İleti bu sözcüklerden herhangi birini içerir**  <br><br> **İleti bu sözcüklerden hiçbirini içermiyor** | İletiye belirli sözcükler veya tümcecikler eklendiğinde veya hariç tutulduğunda ilkeyi uygulamak için, her sözcüğü virgülle ayırarak girin. İki veya daha fazla sözcüğün tümcecikleri için, tümceciği tırnak içine alın. Girdiğiniz her sözcük veya tümcecik ayrı ayrı uygulanır (ilkenin iletiye uygulanması için yalnızca bir sözcük geçerli olmalıdır). Sözcük veya tümcecik girme hakkında daha fazla bilgi için, [e-postalarla veya eklerle sözcükleri ve tümcecikleri eşleştirme](communication-compliance-policies.md#Matchwords) bölümüne bakın.|
-| **Ek bu sözcüklerden herhangi birini içerir**  <br><br> **Ek bu sözcüklerden hiçbirini içermiyor** | İleti ekine (word belgesi gibi) belirli sözcükler veya tümcecikler eklendiğinde veya dışlandığında ilkeyi uygulamak için, her sözcüğü virgülle ayırarak girin. İki veya daha fazla sözcüğün tümcecikleri için, tümceciği tırnak içine alın. Girdiğiniz her sözcük veya tümcecik ayrı ayrı uygulanır (ilkenin eke uygulanması için yalnızca bir sözcük geçerli olmalıdır). Sözcük veya tümcecik girme hakkında daha fazla bilgi için, [e-postalarla veya eklerle sözcükleri ve tümcecikleri eşleştirme](communication-compliance-policies.md#Matchwords) bölümüne bakın.|
+| **İleti bu etiketlerden herhangi biriyle sınıflandırılır**  <br><br> **İleti bu etiketlerden herhangi biriyle sınıflandırılmadı** | İletiye belirli bekletme etiketleri eklendiğinde veya hariç tutulduğunda ilkeyi uygulamak için. Bekletme etiketleri ayrı olarak yapılandırılmalıdır ve bu koşulun bir parçası olarak yapılandırılmış etiketler seçilir. Seçtiğiniz her etiket ayrı ayrı uygulanır (ilkenin iletiye uygulanması için bu etiketlerden yalnızca birinin geçerli olması gerekir). Bekletme etiketleri hakkında daha fazla bilgi için bkz. [Bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin](/microsoft-365/compliance/retention).|
+| **İleti bu sözcüklerden herhangi birini içerir**  <br><br> **İleti bu sözcüklerden hiçbirini içermiyor** | İletiye belirli sözcükler veya tümcecikler eklendiğinde veya hariç tutulduğunda ilkeyi uygulamak için, her sözcüğü virgülle ayırarak girin. İki veya daha fazla sözcüğün tümcecikleri için, tümceciği tırnak içine alın. Girdiğiniz her sözcük veya tümcecik ayrı ayrı uygulanır (ilkenin iletiye uygulanması için yalnızca bir sözcük geçerli olmalıdır). Sözcük veya tümcecik girme hakkında daha fazla bilgi için, [e-postalarla veya eklerle sözcükleri ve tümcecikleri eşleştirme](#matching-words-and-phrases-to-emails-or-attachments) bölümüne bakın.|
+| **Ek bu sözcüklerden herhangi birini içerir**  <br><br> **Ek bu sözcüklerden hiçbirini içermiyor** | İleti ekine (word belgesi gibi) belirli sözcükler veya tümcecikler eklendiğinde veya dışlandığında ilkeyi uygulamak için, her sözcüğü virgülle ayırarak girin. İki veya daha fazla sözcüğün tümcecikleri için, tümceciği tırnak içine alın. Girdiğiniz her sözcük veya tümcecik ayrı ayrı uygulanır (ilkenin eke uygulanması için yalnızca bir sözcük geçerli olmalıdır). Sözcük veya tümcecik girme hakkında daha fazla bilgi için, [e-postalarla veya eklerle sözcükleri ve tümcecikleri eşleştirme](#matching-words-and-phrases-to-emails-or-attachments) bölümüne bakın.|
 | **Ek bu dosya türlerinden herhangi biridir**  <br><br> **Ek bu dosya türlerinden hiçbiri değildir** | Belirli ek türlerini içeren veya dışlayan iletişimleri denetlemek için dosya uzantılarını (.exe veya .pdf gibi) girin. Birden çok dosya uzantısını dahil etmek veya hariç tutmak istiyorsanız, virgülle ayrılmış dosya türlerini girin (örnek *.exe,.pdf,.zip*). İlkenin uygulanması için yalnızca bir ek uzantısı eşleşmelidir.|
 | **İleti boyutu şundan büyük**  <br><br> **İleti boyutu şundan büyük değil:** | İletileri belirli bir boyuta göre gözden geçirmek için, bir iletinin gözden geçirilmeden önce olabileceği en büyük veya en düşük boyutu belirtmek için bu koşulları kullanın. Örneğin, **İleti boyutunun** **1,0 MB'tan**\> büyük olduğunu belirtirseniz, 1,01 MB ve daha büyük olan tüm iletiler gözden geçirilir. Bu koşul için bayt, kilobayt, megabayt veya gigabayt seçebilirsiniz.|
 | **Ek,**  <br><br> **Ek şundan büyük değil:** | İletileri eklerinin boyutuna göre gözden geçirmek için, ileti ve ekleri gözden geçirilmeden önce bir ekin olabileceği en büyük veya en düşük boyutu belirtin. Örneğin, **Ekin 2,0 MB'tan**\> **büyük olduğunu** belirtirseniz, ekleri 2,01 MB ve üzeri olan tüm iletiler gözden geçirilir. Bu koşul için bayt, kilobayt, megabayt veya gigabayt seçebilirsiniz.|
 
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Sözcükleri ve tümcecikleri e-postalarla veya eklerle eşleştirme
-<a name="Matchwords"> </a>
 
 Girdiğiniz ve virgülle ayırdığınız her sözcük ayrı ayrı uygulanır (ilke koşulunun e-postaya veya eke uygulanması için yalnızca bir sözcük geçerli olmalıdır). Örneğin, **Message bu sözcüklerden herhangi birini ve** "banker", "gizli" ve "insider trading" anahtar sözcüklerini virgülle ayırarak (banker, gizli, "insider trading") koşulunu kullanalım. İlke "bankacı", "gizli" veya "insider trading" ifadesini içeren tüm iletiler için geçerlidir. Bu ilke koşulunun uygulanabilmesi için bu sözcüklerden veya tümceciklerden yalnızca biri gerçekleşmelidir. İletideki veya ekteki sözcükler girdiğiniz sözcüklerle tam olarak eşleşmelidir.
 
@@ -253,7 +251,7 @@ Girdiğiniz ve virgülle ayırdığınız her sözcük ayrı ayrı uygulanır (i
 > *Gizli* <br>
 > *insider trading*
 
-Aynı anahtar sözcükler için hem e-posta iletilerini hem de ekleri taramak için, iletilerde taramak istediğiniz terimler için [özel bir anahtar sözcük sözlüğü](create-a-keyword-dictionary.md) oluşturun. Bu ilke yapılandırması, e-posta iletisinde **VEYA** e-posta ekinde görünen tanımlı anahtar sözcükleri tanımlar. İletilerdeki ve eklerdeki terimleri tanımlamak için standart koşullu ilke ayarlarını (*İleti bu sözcüklerden herhangi birini içerir* ve *Ek bu sözcüklerden herhangi birini içerir*) kullanmak, koşulların hem iletide **hem de** ekte bulunmasını gerektirir.
+Aynı anahtar sözcükler için hem e-posta iletilerini hem de ekleri taramak için, iletilerde taramak istediğiniz terimler için [özel bir anahtar sözcük sözlüğü](/microsoft-365/compliance/create-a-keyword-dictionary) oluşturun. Bu ilke yapılandırması, e-posta iletisinde **VEYA** e-posta ekinde görünen tanımlı anahtar sözcükleri tanımlar. İletilerdeki ve eklerdeki terimleri tanımlamak için standart koşullu ilke ayarlarını (*İleti bu sözcüklerden herhangi birini içerir* ve *Ek bu sözcüklerden herhangi birini içerir*) kullanmak, koşulların hem iletide **hem de** ekte bulunmasını gerektirir.
 
 #### <a name="enter-multiple-conditions"></a>Birden çok koşul girin
 

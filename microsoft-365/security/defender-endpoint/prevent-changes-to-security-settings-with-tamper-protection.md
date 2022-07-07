@@ -20,12 +20,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f8d44cd032e658e28242c89f3fbd938bfd1fb320
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: f668efd6c205d67d5aaf4ffa86fae6933f9a257a
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490563"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686151"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Değişiklik korumasıyla güvenlik ayarlarını koruyun
 
@@ -53,7 +53,7 @@ Kurcalama koruması, Windows'un aşağıdaki sürümlerinden birini çalıştır
 > [!NOTE]
 > Windows Server 2012 R2'de kurcalama koruması, modern birleşik çözüm paketi kullanılarak eklenen cihazlar için kullanılabilir. Daha fazla bilgi için bkz. [Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
-## <a name="overview"></a>Genel bakış
+## <a name="overview"></a>Genel Bakış
 
 Bazı siber saldırılar sırasında kötü aktörler, makinelerinizde virüsten koruma gibi güvenlik özelliklerini devre dışı bırakmaya çalışır. Kötü aktörler verilerinize daha kolay erişim elde etmek, kötü amaçlı yazılım yüklemek veya verilerinizi, kimliğinizi ve cihazlarınızı başka bir şekilde kullanmak için güvenlik özelliklerinizi devre dışı bırakmak ister. Kurcalama koruması, bu tür şeylerin oluşmasını önlemeye yardımcı olur. Kurcalama koruması ile kötü amaçlı uygulamaların aşağıdaki gibi eylemler gerçekleştirmesi engellenir:
 
@@ -65,6 +65,7 @@ Bazı siber saldırılar sırasında kötü aktörler, makinelerinizde virüsten
 - Güvenlik bilgileri güncelleştirmelerini kaldırma
 - Algılanan tehditlerde otomatik eylemleri devre dışı bırakma
 - Windows Güvenliği uygulamasında bildirimleri gizleme
+- Arşivlerin ve ağ dosyalarının taranmalarını devre dışı bırakma
 
 ### <a name="how-it-works"></a>Nasıl çalışır?
 

@@ -1,7 +1,7 @@
 ---
-title: Uç nokta istemci çözümleyicisi için Microsoft Defender'ı indirme
-description: Windows, macOS veya Linux'a Uç Nokta İstemcisi Çözümleyicisi için Microsoft Defender'ı indirmeyi öğrenin.
-keywords: download, istemci çözümleyicisi, algılayıcı, çözümleyici, mdeanalyzer sorunlarını giderme
+title: Uç Nokta için Microsoft Defender istemci çözümleyicisini indirme
+description: windows, macOS veya Linux'ta Uç Nokta için Microsoft Defender İstemci Çözümleyicisi'ni indirmeyi öğrenin.
+keywords: download, client analyzer, troubleshoot sensor, analyzer, mdeanalyzer
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,27 +16,28 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a2763cdd670ee3916dfe4e9d3cbd42df21709f41
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f209f3b91c0b11c72f12195c2d376116ceedef95
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316023"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686451"
 ---
-# <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Uç nokta istemci çözümleyicisi için Microsoft Defender'ı indirme
+# <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Uç Nokta için Microsoft Defender istemci çözümleyicisini indirme
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Desteklenen Sistem, macOS ve Linux İşletim Sistemlerinde Uç Nokta istemci çözümleyicisi Windows Microsoft Defender'ı indirmeyi öğrenin.
+Desteklenen Windows, macOS ve Linux İşletim Sistemleri'ne Uç Nokta için Microsoft Defender istemci çözümleyicisini indirmeyi öğrenin.
 
-## <a name="download-client-analyzer-for-windows-os"></a>Sistem işletim sistemi için istemci çözümleyicisini Windows indirme
+## <a name="download-client-analyzer-for-windows-os"></a>Windows işletim sistemi için istemci çözümleyicisini indirme
 
 1. En son kararlı sürüm aşağıdaki URL'den indirilebilir: <https://aka.ms/MDEAnalyzer>
 2. En son önizleme sürümü aşağıdaki URL'den indirilebilir: <https://aka.ms/BetaMDEAnalyzer>
 
 ## <a name="download-client-analyzer-for-macos-or-linux"></a>macOS veya Linux için istemci çözümleyicisini indirme
 
-1. En son kararlı sürüm, Uç nokta aracısı için MDE ile tümleştirildi. MacOS veya Linux için en son sürümü [çalıştırmayı](mac-whatsnew.md) [sağlar](linux-whatsnew.md).
+1. En son kararlı sürüm, Uç Nokta aracısı için MDE ile tümleştirilecektir. [macOS](mac-whatsnew.md) veya [Linux](linux-whatsnew.md) için en son sürümü çalıştırdığınızdan emin olun.
 
 2. En son önizleme sürümü aşağıdaki URL'den doğrudan indirilebilir: <https://aka.ms/XMDEClientAnalyzer>

@@ -20,20 +20,20 @@ ms.custom:
 search.appverid: MET150
 description: Faturalama profillerinin faturaları nasıl desteklediğini öğrenin.
 ms.date: 04/02/2021
-ms.openlocfilehash: 92c8bd302d65bc9f7c9376ac148fd49a0ac18e04
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 18e1eb23d0fcbdfd6eb374032f780a4f89a48cee
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102558"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685887"
 ---
 # <a name="understand-billing-profiles"></a>Faturalama profillerini anlama
 
-Faturalama profili bir ödeme yöntemi, Fatura adresi bilgileri ve satın alma siparişi numarası ve e-posta fatura tercihi gibi diğer fatura ayarlarını içerir. Microsoft'tan satın alınan ürünlerin ödemesini yapmak için bir faturalama profili kullanırsınız. Kullanıcı self servis satın alma işlemi yaptığında faturalama profili otomatik olarak oluşturulur. Her faturalama profili ayrı olarak faturalanır.
+Faturalama profili bir ödeme yöntemi, Fatura adresi bilgileri ve satın alma siparişi numarası ve e-posta fatura tercihi gibi diğer fatura ayarlarını içerir. Microsoft'tan satın alınan ürünlerin ödemesini yapmak için bir faturalama profili kullanırsınız. Faturalama profilleri otomatik olarak oluşturulur ve her biri ayrı olarak fatura edilir. 
 
 > [!NOTE]
 >
-> Faturalama profilleri, Microsoft.com veya Microsoft 365 yönetim merkezi **Hizmetleri satın al** sayfasından ürün ve hizmet satın alan müşteriler tarafından kullanılamaz.
+> Tüm hesapların faturalama profili yoktur. Bir profiliniz olup olmadığından emin değilseniz [faturalama profillerinizin listesini görüntüleyebilirsiniz] (manage-billing-profiles.md#view-my-billing-profiles).
 
 ## <a name="what-are-billing-profile-roles"></a>Faturalama profili rolleri nelerdir?
 

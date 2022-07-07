@@ -15,12 +15,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 6edfd60b5f5a3d10200191cd676fb66fa72ec1ba
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: b76735130d768edfa9c71b25081040a7f4b6718c
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556778"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686019"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'yı ayarlama
 
@@ -38,7 +38,7 @@ Kurulum işleminize başlamadan önce aşağıdaki gereksinimleri karşıladığ
 | Abonelik | kampanyalar için Microsoft 365 İş Ekstra veya Microsoft 365 <br/><br/> Deneme sürümü başlatmak veya aboneliğinizi satın almak için aşağıdaki makalelere bakın: <br/>- [Microsoft 365 İş Ekstra alın](get-microsoft-365-business-premium.md)<br/>- [Kampanyalar için Microsoft 365'i edinin](get-microsoft-365-campaigns.md) |
 | İzinler  | İlk kurulum işlemini tamamlamak için Genel Yönetici olmanız gerekir. [Yönetici rolleri hakkında daha fazla bilgi edinin](../admin/add-users/about-admin-roles.md). |
 | Tarayıcı gereksinimleri | Microsoft Edge, Safari, Chrome veya Firefox. [Tarayıcı gereksinimleri hakkında daha fazla bilgi edinin](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| İşletim sistemi | **Windows**: Windows 11, Windows 10, Windows 8.1, Windows Server 2019 veya üzeri veya Windows Server 2016<br/><br/>**macOS: macOS'un** en son üç sürümünden biri |
+| İşletim sistemi | **Windows**: Windows 11, Windows 10, Windows 8.1<br/>**macOS: macOS'un** en son üç sürümünden biri <br/>Şu anda Microsoft 365 İş Ekstra ve İş için Microsoft Defender tek başına sürümü sunucuları desteklemez.  |
 
 > [!TIP]
 > Microsoft 365, Office ve sistem gereksinimleri hakkında daha ayrıntılı bilgi için bkz. [Microsoft 365 ve Office Kaynakları](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).

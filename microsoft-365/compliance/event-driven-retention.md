@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Genellikle kayıt yönetimi çözümünün bir parçası olarak, tanımladığınız bir olaya göre bekletme süresini başlatmak için bir bekletme etiketi yapılandırabilirsiniz.
-ms.openlocfilehash: 953661a63c961273d54fde1041e4d85c5d786c26
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ac4e80872cbe377025e213a387c7be7f89a208b7
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622997"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685953"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Bir olay meydana geldiğinde saklamayı başlatma
 
@@ -34,14 +34,14 @@ ms.locfileid: "66622997"
 İçeriği koruduğunuzda saklama süresi genellikle içeriğin yaşına bağlıdır. Örneğin, oluşturulduktan sonra belgeleri yedi yıl saklayabilir ve sonra silebilirsiniz. Ancak [bekletme etiketlerini](retention.md#retention-labels) yapılandırırken, belirli bir olay türünün gerçekleştiği bir saklama süresini de temel alabilirsiniz. Olay, bekletme süresinin başlangıcını tetikler ve bu tür bir olay için bir bekletme etiketi uygulanmış olan tüm içerik, etiketin bekletme eylemlerinin bunlar üzerinde zorunlu tutulmasını sağlar.
   
 Olay tabanlı saklamayı kullanma örnekleri:
-  
+
 - **Kuruluştan ayrılan çalışanlar** Çalışan kayıtlarının, bir çalışanın kuruluştan ayrıldığı zamandan itibaren 10 yıl boyunca saklanması gerektiğini varsayalım. 10 yıl geçtikten sonra, o çalışanın işe alınması, performansı ve sonlandırılmasıyla ilgili tüm belgeler elden çıkarılmalıdır. 10 yıllık saklama süresini tetikleyen olay, çalışanın kuruluştan ayrılmasıdır. 
-    
+
 - **Sözleşmenin sona erme tarihi** Sözleşmelerle ilgili tüm kayıtların, sözleşmenin süresi dolduğundan itibaren beş yıl boyunca saklanması gerektiğini varsayalım. Beş yıllık saklama süresini tetikleyen olay, sözleşmenin sona ermesidir. 
-    
+
 - **Ürün ömrü** Kuruluşunuzun teknik belirtimler gibi içerikler için ürünlerin son üretim tarihiyle ilgili saklama gereksinimleri olabilir. Bu durumda, son üretim tarihi saklama süresini tetikleyen olaydır. 
-    
-Olay tabanlı saklama genellikle kayıt yönetimi sürecinin bir parçası olarak kullanılır. Bu, şu anlama gelir:
+
+Bazen "olay temelli saklama" olarak da adlandırılan olay tabanlı saklama, genellikle kayıt yönetimi işlemleriyle birlikte kullanılır. Bu, şu anlama gelir:
 
 - Olaylara dayalı bekletme etiketleri de genellikle öğeleri kayıt yönetimi çözümünün bir parçası olarak bir kayıt olarak işaretler. Daha fazla bilgi için bkz. [Kayıt yönetimi hakkında bilgi edinin](records-management.md).
 
@@ -49,7 +49,7 @@ Olay tabanlı saklama genellikle kayıt yönetimi sürecinin bir parçası olara
 
 - Olaylara dayalı bekletme etiketleri genellikle saklama süresinin sonunda bir değerlendirme gözden geçirmesi tetikler, böylece kayıt yöneticisi içeriği el ile gözden geçirebilir ve atabilir. Daha fazla bilgi için bkz. [İçeriğin konumu](disposition.md).
 
-Bir olayı temel alan bekletme etiketi, Microsoft 365'teki tüm bekletme etiketleriyle aynı özelliklere sahiptir. Daha fazla bilgi için bkz. [Bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin](retention.md).
+Bir olayı temel alan bekletme etiketi, Microsoft Purview'daki tüm bekletme etiketleriyle aynı özelliklere sahiptir. Daha fazla bilgi için bkz. [Bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin](retention.md).
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Olay türleri, etiketler, olaylar ve varlık kimlikleri arasındaki ilişkiyi anlama
 
@@ -77,14 +77,14 @@ Bir olay için varlık kimliği veya anahtar sözcükler belirtmezseniz, bu olay
 
 Son olarak, her bekletme etiketinin kendi bekletme ayarları olduğunu unutmayın. Bu örnekte, hepsi 10 yıl belirtir, ancak bir olayın her etiketin farklı bir bekletme süresine sahip olduğu bekletme etiketlerini tetikleyebilmiştir.
   
-## <a name="how-to-set-up-event-driven-retention"></a>Olay temelli saklamayı ayarlama
+## <a name="how-to-set-up-event-based-retention"></a>Olay tabanlı saklamayı ayarlama
 
-Olay temelli saklama için üst düzey iş akışı:
+Olay tabanlı saklama için üst düzey iş akışı:
   
-![Olay temelli saklamayı ayarlamaya yönelik iş akışı diyagramı.](../media/event-based-retention-process.png)
+![Olay tabanlı saklamayı ayarlamaya yönelik iş akışı diyagramı.](../media/event-based-retention-process.png)
   
 > [!TIP]
-> Bekletme etiketlerini otomatik olarak uygulamak ve olay temelli [bekletme uygulamak için SharePoint'te](auto-apply-retention-labels-scenario.md) yönetilen özellikleri kullanma hakkında ayrıntılı bir senaryo için bkz. SharePoint'te depolanan belgelerin yaşam döngüsünü yönetmek için bekletme etiketlerini kullanma.
+> Bekletme etiketlerini otomatik olarak uygulamak ve olay tabanlı [bekletme uygulamak için SharePoint'te](auto-apply-retention-labels-scenario.md) yönetilen özellikleri kullanma hakkında ayrıntılı bir senaryo için bkz. SharePoint'te depolanan belgelerin yaşam döngüsünü yönetmek için bekletme etiketlerini kullanma.
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>1. Adım: Bekletme süresi bir olayı temel alan bir etiket oluşturma
 

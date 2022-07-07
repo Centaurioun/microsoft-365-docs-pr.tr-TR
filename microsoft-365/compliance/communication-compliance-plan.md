@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1efb3a1f4ea0f699e5dbb92c0ef2f4c6c56f8398
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 71364ebf68d6167666ec993fd15e0288f7ab30b2
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630575"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686195"
 ---
 # <a name="plan-for-communication-compliance"></a>İletişim uyumluluğu planı
 
-Kuruluşunuzda [iletişim uyumluluğunu](communication-compliance.md) kullanmaya başlamadan önce, bilgi teknolojisi ve uyumluluk yönetimi ekipleriniz tarafından gözden geçirilmesi gereken önemli planlama etkinlikleri ve dikkat edilmesi gereken noktalar vardır. Aşağıdaki alanlarda dağıtımı ayrıntılı bir şekilde anlamak ve planlamak, iletişim uyumluluk özelliklerini uygulama ve kullanımınızın sorunsuz bir şekilde ilerlemesini ve çözüm için en iyi yöntemlerle uyumlu olmasını sağlamaya yardımcı olur.
+Kuruluşunuzda [iletişim uyumluluğunu](/microsoft-365/compliance/communication-compliance) kullanmaya başlamadan önce, bilgi teknolojisi ve uyumluluk yönetimi ekipleriniz tarafından gözden geçirilmesi gereken önemli planlama etkinlikleri ve dikkat edilmesi gereken noktalar vardır. Aşağıdaki alanlarda dağıtımı ayrıntılı bir şekilde anlamak ve planlamak, iletişim uyumluluk özelliklerini uygulama ve kullanımınızın sorunsuz bir şekilde ilerlemesini ve çözüm için en iyi yöntemlerle uyumlu olmasını sağlamaya yardımcı olur.
 
 Daha fazla bilgi edinmek ve kuruluşunuzdaki uyumluluk ve riskli etkinlikleri ele almak için planlama sürecine genel bakış için bkz. [Insider risk yönetimi programı başlatma](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
 
@@ -49,7 +49,7 @@ Office 365'da denetim için kullanımdan kaldırma bilgileri için ayrıntılar 
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>Kuruluşunuzdaki paydaşlarla çalışma
 
-İletişim uyumluluğu uyarılarında eylem gerçekleştirmeye yönelik işbirliği yapmak için kuruluşunuzdaki uygun paydaşları belirleyin. İlk planlama ve uçtan uca [iletişim uyumluluğu iş akışı](communication-compliance.md#workflow) dahil olmak üzere dikkate alınması önerilen bazı paydaşlar, kuruluşunuzun aşağıdaki alanlarından kişilerdir:
+İletişim uyumluluğu uyarılarında eylem gerçekleştirmeye yönelik işbirliği yapmak için kuruluşunuzdaki uygun paydaşları belirleyin. İlk planlama ve uçtan uca [iletişim uyumluluğu iş akışı](/microsoft-365/compliance/communication-compliance#workflow) dahil olmak üzere dikkate alınması önerilen bazı paydaşlar, kuruluşunuzun aşağıdaki alanlarından kişilerdir:
 
 - Bilgi teknolojisi
 - Uyumluluk
@@ -100,7 +100,7 @@ Aşağıdaki rollerin üyeleri *İletişim Uyumluluğu Yönetici* rol grubuna da
 
 ### <a name="supervised-users"></a>Denetimli kullanıcılar
 
-İletişim uyumluluğunu kullanmaya başlamadan önce kimlerin iletişimlerinin gözden geçirilmesi gerektiğini belirlemeniz gerekir. İlkede, kullanıcı e-posta adresleri denetlenecek kişileri veya kişi gruplarını tanımlar. Bu gruplara örnek olarak Microsoft 365 Grupları, Exchange tabanlı dağıtım listeleri, Yammer toplulukları ve Microsoft Teams kanalları verilebilir. Ayrıca belirli kullanıcıları veya grupları belirli bir dışlama grubu veya grup listesiyle taramanın dışında tutabilirsiniz. İletişim uyumluluk ilkelerinde desteklenen grup türleri hakkında daha fazla bilgi için bkz. [İletişim uyumluluğunu kullanmaya başlama](communication-compliance-configure.md#step-3-optional-set-up-groups-for-communication-compliance).
+İletişim uyumluluğunu kullanmaya başlamadan önce kimlerin iletişimlerinin gözden geçirilmesi gerektiğini belirlemeniz gerekir. İlkede, kullanıcı e-posta adresleri denetlenecek kişileri veya kişi gruplarını tanımlar. Bu gruplara örnek olarak Microsoft 365 Grupları, Exchange tabanlı dağıtım listeleri, Yammer toplulukları ve Microsoft Teams kanalları verilebilir. Ayrıca belirli kullanıcıları veya grupları belirli bir dışlama grubu veya grup listesiyle taramanın dışında tutabilirsiniz. İletişim uyumluluk ilkelerinde desteklenen grup türleri hakkında daha fazla bilgi için bkz. [İletişim uyumluluğunu kullanmaya başlama](/microsoft-365/compliance/communication-compliance-configure#step-3-optional-set-up-groups-for-communication-compliance).
 
 > [!IMPORTANT]
 > İletişim uyumluluk ilkeleri kapsamındaki kullanıcıların Microsoft 365 E5 Uyumluluk lisansına, Gelişmiş Uyumluluk eklentisine sahip bir Office 365 Kurumsal E3 lisansına sahip olması veya Office 365 Kurumsal E5 aboneliğine dahil edilmesi gerekir. Mevcut bir Kurumsal E5 planınız yoksa ve iletişim uyumluluğunu denemek istiyorsanız [E5 Office 365 Kurumsal deneme sürümüne kaydolabilirsiniz](https://go.microsoft.com/fwlink/p/?LinkID=698279).
@@ -133,15 +133,15 @@ Kuruluşunuzdaki grupları iletişim uyumluluk ilkeleri için yapılandırmanız
 
 ## <a name="plan-for-policies"></a>İlkeleri planlama
 
-Uygunsuz içerik, hassas bilgiler ve mevzuat uyumluluğu için [önceden tanımlanmış şablonlarla](communication-compliance-policies.md#policy-templates) iletişim uyumluluk ilkeleri oluşturmak hızlı ve kolaydır. Özel iletişim uyumluluk ilkeleri, kuruluşunuza ve gereksinimlerinize özgü sorunları algılama ve araştırma esnekliği sağlar.
+Uygunsuz içerik, hassas bilgiler ve mevzuat uyumluluğu için [önceden tanımlanmış şablonlarla](/microsoft-365/compliance/communication-compliance-policies#policy-templates) iletişim uyumluluk ilkeleri oluşturmak hızlı ve kolaydır. Özel iletişim uyumluluk ilkeleri, kuruluşunuza ve gereksinimlerinize özgü sorunları algılama ve araştırma esnekliği sağlar.
 
 İletişim uyumluluk ilkelerini planlarken aşağıdaki alanları göz önünde bulundurun:
 
 - kuruluşunuzdaki tüm kullanıcıları iletişim uyumluluk ilkelerinizin kapsamına eklemeyi göz önünde bulundurun. Belirli kullanıcıları tek tek ilkeler için kapsam dahilinde belirlemek bazı durumlarda yararlıdır, ancak çoğu kuruluş tüm kullanıcıları taciz veya ayrımcılık algılama için iyileştirilmiş iletişim uyumluluk ilkelerine dahil etmelidir.
 - İlkelerin kuruluşunuza yönelik iletişimlerdeki tüm sorunları yakalamasını sağlamak için iletişim yüzdesini %100'de gözden geçirecek şekilde yapılandırın.
-- Microsoft 365 kuruluşunuzdaki posta kutularına aktarılan veriler için [üçüncü taraf kaynaklardan gelen iletişimleri](communication-compliance-channels.md#third-party-sources) tarayabilirsiniz. Bu platformlardaki iletişimlerin gözden geçirilmesini eklemek için, ilke koşullarını karşılayan iletiler iletişim ilkesi tarafından izlenmeden önce bu hizmetlere bir bağlayıcı yapılandırmanız gerekir.
-- İlkeler, özel iletişim uyumluluk ilkelerinde İngilizce dışındaki izleme dillerini destekleyebilir. Microsoft 365'te [eğitilebilir sınıflandırıcıları](classifier-get-started-with.md) kullanarak dilediğiniz dilde rahatsız edici sözcüklerden oluşan [özel bir anahtar sözcük sözlüğü](communication-compliance-policies.md#custom-keyword-dictionaries) oluşturun veya kendi makine öğrenmesi modelinizi oluşturun.
-- Tüm kuruluşların farklı iletişim standartları ve ilke gereksinimleri vardır. İletişim uyumluluk [ilkesi koşullarını](communication-compliance-policies.md#conditional-settings) kullanarak belirli anahtar sözcükleri algılama veya [özel hassas bilgi türleriyle belirli bilgi türlerini](create-a-custom-sensitive-information-type.md) algılama.
+- Microsoft 365 kuruluşunuzdaki posta kutularına aktarılan veriler için [üçüncü taraf kaynaklardan gelen iletişimleri](/microsoft-365/compliance/communication-compliance-channels#third-party-sources) tarayabilirsiniz. Bu platformlardaki iletişimlerin gözden geçirilmesini eklemek için, ilke koşullarını karşılayan iletiler iletişim ilkesi tarafından izlenmeden önce bu hizmetlere bir bağlayıcı yapılandırmanız gerekir.
+- İlkeler, özel iletişim uyumluluk ilkelerinde İngilizce dışındaki izleme dillerini destekleyebilir. Microsoft 365'te [eğitilebilir sınıflandırıcıları](/microsoft-365/compliance/classifier-get-started-with) kullanarak dilediğiniz dilde rahatsız edici sözcüklerden oluşan [özel bir anahtar sözcük sözlüğü](/microsoft-365/compliance/communication-compliance-policies#custom-keyword-dictionaries) oluşturun veya kendi makine öğrenmesi modelinizi oluşturun.
+- Tüm kuruluşların farklı iletişim standartları ve ilke gereksinimleri vardır. İletişim uyumluluk [ilkesi koşullarını](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) kullanarak belirli anahtar sözcükleri algılama veya [özel hassas bilgi türleriyle belirli bilgi türlerini](/microsoft-365/compliance/create-a-custom-sensitive-information-type) algılama.
 
 ## <a name="creating-a-communication-compliance-policy-walkthrough"></a>İletişim uyumluluk ilkesi oluşturma kılavuzu
 
@@ -154,4 +154,4 @@ Yeni bir iletişim uyumluluk ilkesi ayarlama ve uyarıyı düzeltme konusunda ay
 
 ## <a name="ready-to-get-started"></a>Başlamaya hazır mısınız?
 
-Microsoft 365 kuruluşunuz için iletişim uyumluluğunu yapılandırmak için bkz. [İletişim uyumluluğunu yapılandırma](communication-compliance-configure.md) veya [Contoso için örnek olay incelemesine](communication-compliance-case-study.md) ve Microsoft Teams, Exchange Online ve Yammer iletişimlerindeki uygunsuz içeriği algılamak için iletişim uyumluluk ilkesini nasıl hızlı bir şekilde yapılandırdıklarını gözden geçirin.
+Microsoft 365 kuruluşunuz için iletişim uyumluluğunu yapılandırmak için bkz. [İletişim uyumluluğunu yapılandırma](/microsoft-365/compliance/communication-compliance-configure) veya [Contoso için örnek olay incelemesine](/microsoft-365/compliance/communication-compliance-case-study) ve Microsoft Teams, Exchange Online ve Yammer iletişimlerindeki uygunsuz içeriği algılamak için iletişim uyumluluk ilkesini nasıl hızlı bir şekilde yapılandırdıklarını gözden geçirin.

@@ -20,12 +20,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 ms.date: 05/26/2022
-ms.openlocfilehash: a20b576a5ce988bc23bd3be0ede1961a008085ca
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: cb7d4bec9ae41d05be5b588f78a5197ed9ccbac0
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754642"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685645"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Faturalama profiliyle aboneliğiniz için ödeme
 
@@ -41,11 +41,11 @@ Faturalama profili için yinelenen faturalama kapalıysa, faturalama profiline b
 
 ## <a name="new-regulations-from-the-reserve-bank-of-india"></a>Hindistan Rezerv Bankası'ndan yeni düzenlemeler
 
-1 Ekim 2021 itibarıyla Hindistan'daki otomatik ödemeler, özellikle 5.000 INR'yi aşan işlemler olmak üzere bazı kredi kartı işlemlerini engelleyebilir. Bu düzenleme nedeniyle, Microsoft 365 yönetim merkezi el ile ödeme yapmanız gerekebilir. Bu düzenlemeler, kullanımınız için ücretlendirildiğiniz toplam tutarı etkilemez.
+1 Ekim 2021 itibarıyla Hindistan'daki otomatik ödemeler, özellikle 5.000 INR'yi aşan işlemler olmak üzere bazı kredi kartı işlemlerini engelleyebilir. Bu düzenleme nedeniyle, Microsoft 365 yönetim merkezinde el ile ödeme yapmanız gerekebilir. Bu düzenlemeler, kullanımınız için ücretlendirildiğiniz toplam tutarı etkilemez.
 
 [Yinelenen ödemeler için Hindistan Rezerv Bankası yönetmeliği hakkında daha fazla bilgi edinin](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
-1 Temmuz 2022'de Microsoft ve diğer çevrimiçi satıcılar artık kredi kartı bilgilerini depolamayacaktır. Microsoft, bu düzenlemeye uymak için tüm depolanan kart bilgilerini Microsoft 365 yönetim merkezi kaldırır. Hizmet kesintisini önlemek için bir ödeme yöntemi eklemeniz ve tüm abonelikler ve faturalama profilleri için tek seferlik ödeme yapmanız gerekir.
+30 Eylül 2022'de Microsoft ve diğer çevrimiçi satıcılar artık kredi kartı bilgilerini depolamayacaktır. Microsoft, bu düzenlemeye uymak için tüm depolanan kart bilgilerini Microsoft 365 yönetim merkezinden kaldıracaktır. Hizmet kesintisini önlemek için bir ödeme yöntemi eklemeniz ve tüm abonelikler ve faturalama profilleri için tek seferlik ödeme yapmanız gerekir.
 
 [Kart depolama için Hindistan Rezerv Bankası yönetmeliği hakkında bilgi edinin](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 

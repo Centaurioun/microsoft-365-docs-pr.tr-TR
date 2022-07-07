@@ -22,12 +22,12 @@ description: Hassas içeriği sınıflandırmak ve korumak için Microsoft Purvi
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b7deebb8f745c3b43f82093412e291ab304b4794
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 879b412ff6efa743756a6c41b322516952dec93c
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663492"
+ms.locfileid: "66685975"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Duyarlılık etiketleri hakkında bilgi edinin
 
@@ -71,7 +71,7 @@ Duyarlılık etiketlerini şu amaçlarla kullanabilirsiniz:
 
 - **Herhangi bir koruma ayarı kullanmadan içeriği sınıflandırmak.** Ayrıca, içeriği sınıflandırmanın bir sonucu olarak bir etiket atayabilirsiniz. Bu, kullanıcılara kuruluşunuzun etiket adlarıyla sınıflandırmanın görsel bir eşlemesini sağlar ve etiketleri kullanarak kullanım raporları oluşturabilir ve hassas içeriğiniz için etkinlik verilerini görebilir. Bu bilgilere bağlı olarak, koruma ayarlarını daha sonra uygulamayı istediğiniz zaman seçebilirsiniz.
 
-Tüm bu durumlarda, Microsoft 365'teki duyarlılık etiketleri doğru içerik üzerinde doğru eylemleri gerçekleştirmenize yardımcı olabilir. Duyarlılık etiketleriyle, kuruluşunuz genelinde verileri sınıflandırabilir ve bu sınıflandırmaya göre koruma ayarlarını zorunlu kılabilirsiniz.
+Tüm bu durumlarda, Microsoft Purview'un duyarlılık etiketleri doğru içerik üzerinde doğru eylemleri gerçekleştirmenize yardımcı olabilir. Duyarlılık etiketleriyle, kuruluşunuz genelinde verileri sınıflandırabilir ve bu sınıflandırmaya göre koruma ayarlarını zorunlu kılabilirsiniz. Bu koruma daha sonra içerikle birlikte kalır.
 
 Bunlar ve duyarlılık etiketleri tarafından desteklenen diğer senaryolar hakkında daha fazla bilgi için bkz. [Duyarlılık etiketleri için yaygın senaryolar](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). Duyarlılık etiketlerini destekleyen her zaman yeni özellikler geliştirilmektedir, bu nedenle [Microsoft 365 yol haritasına](https://aka.ms/MIPC/Roadmap) başvurmayı da yararlı bulabilirsiniz.
 
@@ -83,9 +83,9 @@ Bunlar ve duyarlılık etiketleri tarafından desteklenen diğer senaryolar hakk
 
 - **Metni temizleyin.** Bir etiket, dosyalar ve e-postalar için meta verilerde düz metinde depolandığından, üçüncü taraf uygulamalar ve hizmetler bunu okuyabilir ve gerekirse kendi koruyucu eylemlerini uygulayabilir.
 
-- **Kalıcı.** Etiket dosyalar ve e-postalar için meta verilerde depolandığından, etiket nerede kaydedilir veya depolanırsa depolansın içerikle birlikte dolaşır. Benzersiz etiket tanımlaması, yapılandırdığınız ilkeleri uygulamak ve zorunlu tutmanın temeli haline gelir.
+- **Kalıcı.** Etiket dosyalar ve e-postalar için meta verilerde depolandığından, etiket nerede kaydedilir veya depolanırsa depolansın içerikte kalır. Benzersiz etiket tanımlaması, yapılandırdığınız ilkeleri uygulamak ve zorunlu tutmanın temeli haline gelir.
 
-Kullanıcılar tarafından görüntülendiğinde duyarlılık etiketi, kullandıkları uygulamalardaki bir etiket gibi görünür ve mevcut iş akışlarıyla kolayca tümleştirilebilir.
+Kuruluşunuzdaki kullanıcılar tarafından görüntülendiğinde duyarlılık etiketi, kullandıkları uygulamalardaki bir etiket gibi görünür ve mevcut iş akışlarıyla kolayca tümleştirilebilir.
 
 Duyarlılık etiketlerini destekleyen her öğeye tek bir duyarlılık etiketi uygulanabilir. Belgelerde ve e-postalarda hem duyarlılık etiketi hem de [bekletme etiketi](retention.md#retention-labels) uygulanabilir.
 
@@ -247,8 +247,7 @@ AIP istemcisini kullanıyorsanız bkz. Windows bilgisayarlar için etiketleme se
 
 ### <a name="azure-information-protection-labels"></a>Azure Information Protection etiketleri
 
-> [!NOTE]
-> Azure portal Azure Information Protection etiketleri için etiket yönetimi **31 Mart 2021'de** kullanım dışı bırakılmıştır. Resmi [kullanımdan kaldırma bildiriminden](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179) daha fazla bilgi edinin.
+Azure portal Azure Information Protection etiketleri için etiket yönetimi **31 Mart 2021'de** kullanım dışı bırakılmıştır. Resmi [kullanımdan kaldırma bildiriminden](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179) daha fazla bilgi edinin.
 
 Kiracınız henüz [birleşik etiketleme platformunda](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform) değilse duyarlılık etiketlerini kullanabilmek için önce birleşik etiketlemeyi etkinleştirmeniz gerekir. Yönergeler için bkz. [Azure Information Protection etiketlerini birleşik duyarlılık etiketlerine geçirme](/azure/information-protection/configure-policy-migrate-labels).
 
@@ -262,4 +261,4 @@ ayrıca [Microsoft Purview Bilgi Koruması ile tümleştirilmiş iş ortağı ç
 
 Lisans bilgilerini, izinleri, dağıtım stratejisini, desteklenen senaryoların listesini ve son kullanıcı belgelerini içeren dağıtım planlaması ve yönergeleri için bkz. [Duyarlılık etiketlerini kullanmaya başlama](get-started-with-sensitivity-labels.md).
 
-Veri gizliliği düzenlemelerine uymak için duyarlılık etiketlerini kullanmayı öğrenmek için bkz. [Microsoft 365 (aka.ms/m365dataprivacy) ile veri gizliliği düzenlemeleri için bilgi koruması dağıtma](../solutions/information-protection-deploy.md)  .
+Veri gizliliği düzenlemelerine uymak için duyarlılık etiketlerini kullanmayı öğrenmek için bkz. [Microsoft 365 ile veri gizliliği düzenlemeleri için bilgi koruması dağıtma](../solutions/information-protection-deploy.md).

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için çok faktörlü kimlik doğrulamasını yönetmeyi öğrenin.
-ms.openlocfilehash: 6db13adbce775ea276352b715cf25f0da7324b87
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: d7874988f4316015afb58a40651bc6e85cf88f2a
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017730"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686217"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de çok faktörlü kimlik doğrulamasını yönetme
 
@@ -40,29 +40,32 @@ Kiracı listede görünmeden önce aşağıdaki koşulların karşılanması ger
 
 ## <a name="enable-mfa-for-a-tenant"></a>Kiracı için MFA'yı etkinleştirme
 
-1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar'ı** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Çok Faktörlü Kimlik Doğrulaması'nı** seçin.
 
-2. **Çok Faktörlü Kimlik Doğrulaması** sekmesini seçin.
+2. **Çok Faktörlü Kimlik Doğrulaması** sekmesinde, şu anda MFA kullanmayan bir kiracıyı arayın ve kiracı ayrıntıları bölmesini açmak için bu kiracıyı seçin.
 
-3. Kiracı listesinden bir kiracı seçerek ayrıntılar bölmesini açın.
+3. **MFA etkinleştirme** sekmesinde, **Güvenlik varsayılanlarıyla MFA'nın altında Güvenlik Varsayılanlarını** **Etkinleştir'i** seçin.
 
-4. **MFA etkinleştirme** sekmesinde, **Güvenlik varsayılanlarıyla MFA'nın altında Güvenlik Varsayılanlarını** **Etkinleştir'i** seçin.
-
-5. **Değişiklikleri kaydet'i** seçin.
+4. **Değişiklikleri kaydet'i** seçin.
 
 Koşullu Erişim aracılığıyla MFA'yı etkinleştirmek için bkz[. Öğretici: Azure AD Multi-Factor Authentication ile kullanıcı oturum açma olaylarının güvenliğini](/azure/active-directory/authentication/tutorial-enable-azure-mfa) sağlama.
 
 ## <a name="notify-users-who-arent-registered-for-mfa"></a>MFA'ya kayıtlı olmayan kullanıcılara bildirme
 
-1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar'ı** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Çok Faktörlü Kimlik Doğrulaması'nı** seçin.
 
-2. **Çok Faktörlü Kimlik Doğrulaması** sekmesini seçin.
+2. **Çok Faktörlü Kimlik Doğrulaması** sekmesinde, MFA için kayıtlı olmayan kullanıcıları olan kiracıları arayın ve kiracıyı seçerek kiracı ayrıntıları bölmesini açın.
 
-3. Kiracı listesinden bir kiracı seçerek ayrıntılar bölmesini açın.
+3. **MFA sekmesine kayıtlı olmayan kullanıcılar'ı** seçin.
 
-4. **MFA için kayıtlı olmayan kullanıcı** sekmesinde, bildirmek istediğiniz kullanıcıları seçin.
+4. Listede MFA'ya kaydolması gereken diğer tüm kullanıcıları seçin ve ardından **E-posta oluştur'u** seçin.
 
-5. **E-posta oluştur'u** seçin.
+> [!TIP]
+> Listedeki kullanıcı hesaplarından herhangi biri, MFA gerektirmek istemediğiniz acil durum erişim hesapları veya hizmet hesaplarıysa, bu kullanıcı hesaplarını seçin ve ardından **Kullanıcıları dışla'yı** seçin. Dışlanan kullanıcı hesapları artık MFA'ya kayıtlı olmayan kullanıcılar listesinde görünmez.
+
+> [!NOTE]
+> Paylaşılan posta kutusu hesapları veya etkin olmayan kullanıcı hesapları MFA'ya kayıtlı olmayan kullanıcılar listesinde görünüyorsa, bu hesapların artık bu listede görünmemesi için oturum açmayı engellemenizi öneririz.
+
 
 Lighthouse varsayılan e-posta istemcinizi açar ve MFA'ya kaydolma yönergeleriyle birlikte e-posta iletisini önceden doldurulur. Seçilen tüm kullanıcılar Gizli satırına eklenir. Kullanıcılara tek tek e-posta göndermeyi tercih ederseniz, kullanıcı adının yanındaki e-posta simgesini seçebilirsiniz.
 
@@ -70,7 +73,7 @@ Farklı bir e-posta hesabı kullanmak istiyorsanız, kullanıcı listesini bir d
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-MFA etkinleştirildikten sonra, Azure Active Directory (Azure AD) self servis parola sıfırlamayı etkinleştirebilirsiniz. Bu özellik, kullanıcılara yönetici veya yardım masası katılımı olmadan parolalarını değiştirme veya sıfırlama olanağı sağlar. Daha fazla bilgi için bkz. [Microsoft 365 Lighthouse'de self servis parola sıfırlamayı yönetme](m365-lighthouse-manage-sspr.md).
+MFA etkinleştirildikten sonra Azure Active Directory (Azure AD) self servis parola sıfırlamayı etkinleştirebilirsiniz. Bu özellik, kullanıcılara yönetici veya yardım masası katılımı olmadan parolalarını değiştirme veya sıfırlama olanağı sağlar. Daha fazla bilgi için bkz. [Microsoft 365 Lighthouse'de self servis parola sıfırlamayı yönetme](m365-lighthouse-manage-sspr.md).
 
 ## <a name="related-content"></a>İlgili içerik
 

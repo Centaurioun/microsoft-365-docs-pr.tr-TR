@@ -13,12 +13,12 @@ ms.collection:
 description: Rapor İletisi özelliğini kullanarak Outlook'ta hatalı pozitif ve hatalı negatifleri bildirmeyi öğrenin.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 60f9a9eff9694752630170991b7a800f52a2952d
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 5955f6b5c4e376f296dcdad2d54a627bbcce04c3
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602148"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685689"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Outlook'ta yanlış pozitifleri ve yanlış negatifleri bildirme
 
@@ -50,6 +50,9 @@ Karma modern kimlik doğrulaması kullanarak Exchange Online veya şirket içi p
 
 bir iletinin içeriğini belirlemek için kullanıcı gönderimlerini kolayca araştırmak ve uygun düzeltme eylemini uygulayarak gönderime yanıt vermek için Office 365 için Microsoft Defender nasıl kullanabileceğinizi öğrenmek için bu kısa videoyu izleyin. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
+
+> [!IMPORTANT]
+> Microsoft'a bildirilen iletileri, **üzerindeki Kullanıcı tarafından bildirilen iletiler** sekmesinde <https://security.microsoft.com/reportsubmission>görüntülemek için yerleşik raporlama deneyimini kapatmayın.
 
 ## <a name="use-the-report-message-feature"></a>Rapor İletisi özelliğini kullanma
 

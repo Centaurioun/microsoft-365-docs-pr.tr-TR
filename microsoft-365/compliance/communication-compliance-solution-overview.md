@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: e24401762906f66592d12efa42c5305a2c3d6d2e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0d0e99442ac11a92ce99d922ac170dc6939d56e1
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626457"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686327"
 ---
 # <a name="communication-compliance"></a>İletişim uyumluluğu
 
@@ -33,12 +33,12 @@ Kuruluşunuz için iletişim uyumluluğunu yapılandırmak için aşağıdaki ad
 
 ![Insider risk çözümü iletişim uyumluluk adımları.](../media/ir-solution-cc-steps.png)
 
-1. [İletişim uyumluluğu](communication-compliance.md) hakkında bilgi edinin
-2. [İletişim uyumluluğunu](communication-compliance-plan.md) planlama ve [lisanslama doğrulama](communication-compliance-configure.md#subscriptions-and-licensing)
-3. [Önkoşulları](communication-compliance-configure.md#step-2-required-enable-the-audit-log) ve [izinleri](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) yapılandırma
-4. [İletişim uyumluluk ilkeleri](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) oluşturma ve yapılandırma
+1. [İletişim uyumluluğu](/microsoft-365/compliance/communication-compliance) hakkında bilgi edinin
+2. [İletişim uyumluluğunu](/microsoft-365/compliance/communication-compliance-plan) planlama ve [lisanslama doğrulama](/microsoft-365/compliance/communication-compliance-configure#subscriptions-and-licensing)
+3. [Önkoşulları](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log) ve [izinleri](/microsoft-365/compliance/communication-compliance-configure#step-1-required-enable-permissions-for-communication-compliance) yapılandırma
+4. [İletişim uyumluluk ilkeleri](/microsoft-365/compliance/communication-compliance-configure#step-5-required-create-a-communication-compliance-policy) oluşturma ve yapılandırma
 
 ## <a name="more-information-about-communication-compliance"></a>İletişim uyumluluğu hakkında daha fazla bilgi
 
-- [Uyarıları araştırma ve düzeltme](communication-compliance-investigate-remediate.md)
-- [Örnek olay incelemesi - Contoso Microsoft Teams, Exchange ve Yammer iletişimleri için uygunsuz bir içerik ilkesini hızla yapılandırır](communication-compliance-case-study.md)
+- [Uyarıları araştırma ve düzeltme](/microsoft-365/compliance/communication-compliance-investigate-remediate)
+- [Örnek olay incelemesi - Contoso Microsoft Teams, Exchange ve Yammer iletişimleri için uygunsuz bir içerik ilkesini hızla yapılandırır](/microsoft-365/compliance/communication-compliance-case-study)

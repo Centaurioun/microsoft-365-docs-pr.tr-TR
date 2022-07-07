@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0769dd3cfd64f611162803952a1e39b9241ac2ad
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 21897bcfc21cac7e6eb2ceeff3e20280595c539b
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638686"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686473"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>İletişim uyumluluğu ile kanal sinyallerini tespit etme
 
@@ -59,7 +59,7 @@ Teams'de bireysel kullanıcı sohbetlerini ve kanal iletişimlerini denetlemek i
 
 - **Teams sohbet iletişimleri için:** İletişim uyumluluk ilkesine tek tek kullanıcılar atayın veya bir [dağıtım grubu](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) atayın. Bu ayar, bire bir veya bire çok kullanıcı/sohbet ilişkileri içindir.
 - **Teams Channel iletişimleri için:** Belirli bir kullanıcıyı içeren taramak istediğiniz her Microsoft Teams kanalını veya Microsoft 365 grubunu iletişim uyumluluk ilkesine atayın. Aynı kullanıcıyı diğer Microsoft Teams kanallarına veya Microsoft 365 gruplarına eklerseniz, bu yeni kanalları ve grupları iletişim uyumluluk ilkesine eklediğinizden emin olun. Kanalın herhangi bir üyesi bir ilke içinde denetimli bir kullanıcıysa ve *Gelen* yönü bir ilkede yapılandırılmışsa, kanal içinde gönderilen tüm iletiler gözden geçirilebilir ve olası ilke eşleşmeleri (kanaldaki kullanıcılar için bile açıkça denetlenmeyenler için). Örneğin, A Kullanıcısı bir kanalın sahibi veya üyesidir. B ve C Kullanıcısı aynı kanalın üyeleridir ve yalnızca A Kullanıcısını denetleyen uygunsuz içerik ilkesiyle eşleşen dili kullanır. Kullanıcı B ve C Kullanıcısı, uygunsuz içerik ilkesinde doğrudan denetlenmese bile kanal içindeki konuşmalar için ilke eşleşmeleri oluşturur. A Kullanıcısını içeren kanalın dışında yer alan B kullanıcısı ile C Kullanıcısı arasındaki teams konuşmaları, A Kullanıcısını içeren uygunsuz içerik ilkesine tabi olmaz. Kanalın diğer üyeleri açıkça denetlendiğinde kanal üyelerini denetimden çıkarmak için, ilgili iletişim uyumluluk ilkesinde *Gelen* iletişim yönü ayarını kapatın.
-- **Karma e-posta ortamlarıyla Teams sohbet iletişimleri** için: İletişim uyumluluğu, şirket içi Exchange dağıtımına veya Microsoft Teams'i etkinleştirmiş bir dış e-posta sağlayıcısına sahip kuruluşlar için kullanıcılara yönelik sohbet iletilerini algılayabilir. İzlemesi için şirket içi veya dış posta kutuları olan kullanıcılar için bir dağıtım grubu oluşturmanız gerekir. İletişim uyumluluk ilkesi oluştururken, bu dağıtım grubunu ilke sihirbazında **Denetimli kullanıcılar ve gruplar** seçimi olarak atayacaksınız. Bulut tabanlı depolamayı etkinleştirme gereksinimleri ve sınırlamaları ve şirket içi kullanıcılar için Teams desteği hakkında daha fazla bilgi için bkz. [Şirket içi kullanıcılar için Teams sohbet verilerini arama](search-cloud-based-mailboxes-for-on-premises-users.md).
+- **Karma e-posta ortamlarıyla Teams sohbet iletişimleri** için: İletişim uyumluluğu, şirket içi Exchange dağıtımına veya Microsoft Teams'i etkinleştirmiş bir dış e-posta sağlayıcısına sahip kuruluşlar için kullanıcılara yönelik sohbet iletilerini algılayabilir. İzlemesi için şirket içi veya dış posta kutuları olan kullanıcılar için bir dağıtım grubu oluşturmanız gerekir. İletişim uyumluluk ilkesi oluştururken, bu dağıtım grubunu ilke sihirbazında **Denetimli kullanıcılar ve gruplar** seçimi olarak atayacaksınız. Bulut tabanlı depolamayı etkinleştirme gereksinimleri ve sınırlamaları ve şirket içi kullanıcılar için Teams desteği hakkında daha fazla bilgi için bkz. [Şirket içi kullanıcılar için Teams sohbet verilerini arama](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
 ## <a name="exchange-email"></a>Exchange e-postası
 
@@ -73,6 +73,6 @@ Yammer iletişimlerini ve eklerini izlemek için iletişim uyumluluk ilkeleri i�
 
 ## <a name="third-party-sources"></a>Üçüncü taraf kaynaklar
 
-Microsoft 365 kuruluşunuzdaki posta kutularına aktarılan verilerin iletişimlerini [Instant Bloomberg](archive-instant-bloomberg-data.md), [Slack](archive-slack-data.md), [Zoom](archive-zoommeetings-data.md), SMS ve diğerleri gibi üçüncü taraf kaynaklardan tarayabilirsiniz. İletişim uyumluluğunda desteklenen bağlayıcıların tam listesi için bkz. [Üçüncü taraf verilerini arşivle](archiving-third-party-data.md).
+Microsoft 365 kuruluşunuzdaki posta kutularına aktarılan verilerin iletişimlerini [Instant Bloomberg](/microsoft-365/compliance/archive-instant-bloomberg-data), [Slack](/microsoft-365/compliance/archive-slack-data), [Zoom](/microsoft-365/compliance/archive-zoommeetings-data), SMS ve diğerleri gibi üçüncü taraf kaynaklardan tarayabilirsiniz. İletişim uyumluluğunda desteklenen bağlayıcıların tam listesi için bkz. [Üçüncü taraf verilerini arşivle](/microsoft-365/compliance/archiving-third-party-data).
 
 Bağlayıcıyı bir iletişim uyumluluk ilkesine atayabilmeniz için önce Microsoft 365 kuruluşunuz için bir üçüncü taraf bağlayıcı yapılandırmanız gerekir. İletişim uyumluluk ilkesi sihirbazının **Üçüncü Taraf Kaynaklar** bölümü yalnızca şu anda yapılandırılmış olan üçüncü taraf bağlayıcılarını görüntüler.
