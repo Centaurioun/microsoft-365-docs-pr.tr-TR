@@ -20,7 +20,7 @@
   items:
     - name: Gizlilik ayarlarını yapılandırma
       href: configure-privacy-settings.md
-    - name: GDPR istekleri
+    - name: GDPR isteklerini yönetme
       href: gdpr-requests.md
 - name: Kamu için Whiteboard
   items:
