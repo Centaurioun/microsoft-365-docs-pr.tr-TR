@@ -23,12 +23,12 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 ms.date: 05/26/2022
-ms.openlocfilehash: 05edb03d34644d1f09acaad22bbcff01b3654ac3
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 113905d76864fecdc4fc38d46e4dc6f3e625348f
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753858"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663822"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Aboneliğiniz için ödeme yapma
 
@@ -53,7 +53,7 @@ Aboneliğinizi ödemek için kredi kartı, ATM kartı veya banka hesabı kullana
 
 [Yinelenen ödemeler için Hindistan Rezerv Bankası yönetmeliği hakkında daha fazla bilgi edinin](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
-1 Temmuz 2022'de Microsoft ve diğer çevrimiçi satıcılar artık kredi kartı bilgilerini depolamayacaktır. Microsoft, bu düzenlemeye uymak için tüm depolanan kart bilgilerini Microsoft 365 yönetim merkezinden kaldıracaktır. Hizmet kesintisini önlemek için bir ödeme yöntemi eklemeniz ve tüm abonelikler ve faturalama profilleri için tek seferlik ödeme yapmanız gerekir.
+30 Eylül 2022'den itibaren Microsoft ve diğer çevrimiçi satıcılar artık kredi kartı bilgilerini depolamayacaktır. Microsoft, bu düzenlemeye uymak için tüm depolanan kart bilgilerini Microsoft 365 yönetim merkezinden kaldıracaktır. Hizmet kesintisini önlemek için bir ödeme yöntemi eklemeniz ve tüm abonelikler ve faturalama profilleri için tek seferlik ödeme yapmanız gerekir.
 
 [Kart depolama için Hindistan Rezerv Bankası yönetmeliği hakkında bilgi edinin](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 

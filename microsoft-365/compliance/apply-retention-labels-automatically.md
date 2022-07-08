@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: İhtiyacınız olanı korumak ve istemediğinizleri silmek için etiketleri otomatik olarak uygulayabilmeniz için otomatik etiketleme bekletme ilkeleri oluşturun
-ms.openlocfilehash: 570f2a6e684dbe160f8de2f43817fde996f0b92c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f3af46b59134a815f3ba3a02154f9ecfd6f95627
+ms.sourcegitcommit: 019e8a62ab07a42d4ede4a87ccfaed527914412d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640908"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66689200"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>İçeriği korumak veya silmek için otomatik olarak bekletme etiketi uygulama
 
@@ -272,9 +272,6 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 Eğitilebilir sınıflandırıcı seçeneğini belirlediğinizde, önceden eğitilmiş veya özel eğitilebilir sınıflandırıcılardan birini veya daha fazlasını seçebilirsiniz:
 
 ![Eğitilebilir sınıflandırıcıyı seçin.](../media/retention-label-classifers.png)
-
-> [!CAUTION]
-> Çok sayıda hatalı pozitif sonuç ürettiğinden **, Rahatsız Edici Dil** önceden eğitilmiş sınıflandırıcıyı kullanım dışı bırakıyoruz. Bu sınıflandırıcıyı kullanmayın ve şu anda kullanıyorsanız iş süreçlerinizi bundan çıkarmanızı ve bunun yerine **Hedeflenen Taciz**, **Küfür** ve **Tehdit** önceden eğitilmiş sınıflandırıcıları kullanmanızı öneririz.
 
 Bu seçeneği kullanarak otomatik olarak etiket uygulamak için, SharePoint sitelerinin ve posta kutularının en az 10 MB veriye sahip olması gerekir.
 
