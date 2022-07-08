@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da önceden oluşturulmuş modeller hakkında bilgi edinin.
-ms.openlocfilehash: d43a608885864f5c81a8938010a0a52a2c4998a6
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 47579f640e02874545177946534d81f1350104cd
+ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916237"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66687684"
 ---
 # <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da önceden oluşturulmuş modellere genel bakış
 
@@ -31,7 +31,7 @@ SharePoint Syntex, [belgeleri anlama modellerine](document-understanding-overvie
 
 Belge anlama modelleri gibi, önceden oluşturulmuş modeller [de içerik merkezinde](create-a-content-center.md) oluşturulur ve yönetilir. SharePoint belge kitaplığına uygulandığında, model bir içerik türüyle ilişkilendirilir ve ayıklanan bilgilerin depolandığı sütunlara sahiptir. 
 
-Modelinizi yayımladıktan sonra, erişiminiz olan herhangi bir SharePoint belge kitaplığına uygulamak için içerik merkezini kullanın.  
+Modelinizi yayımladıktan sonra, içerik merkezini kullanarak erişiminiz olan herhangi bir SharePoint belge kitaplığına uygulayın.  
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -53,7 +53,7 @@ Modelinizi yayımladıktan sonra, erişiminiz olan herhangi bir SharePoint belge
 
 ### <a name="file-limitations"></a>Dosya sınırlamaları
 
-metin tabanlı dosyalar ve OCR ile taranan dosyalar (PDF, görüntü veya TIFF) Microsoft Office aşağıdaki farklara dikkat edin:
+Microsoft Office metin tabanlı dosyalar ve OCR ile taranan dosyalar (PDF, resim veya TIFF) hakkında aşağıdaki farklara dikkat edin:
 
 - Office dosyaları: 64.000 karakterde kesilir (belge kitaplığındaki dosyalarda çalıştırıldığında).
 
@@ -63,12 +63,9 @@ metin tabanlı dosyalar ve OCR ile taranan dosyalar (PDF, görüntü veya TIFF) 
 
 - Aynı kitaplığa önceden oluşturulmuş iki veya daha fazla model uygulanırsa, dosya en yüksek ortalama güvenilirlik puanına sahip model kullanılarak sınıflandırılır. Ayıklanan varlıklar yalnızca uygulanan modelden olacaktır.
 
-- Belge anlama modeline sahip bir kitaplığa önceden oluşturulmuş bir model uygulanırsa, dosya belge anlama modeli ve bu model için eğitilen ayıklayıcılar kullanılarak sınıflandırılır. Önceden oluşturulmuş modelle eşleşen boş sütunlar varsa, sütunlar ayıklanan bu değerler kullanılarak doldurulur.
-
 - Özel form işleme modeline sahip bir kitaplığa önceden oluşturulmuş bir model uygulanırsa, dosya önceden oluşturulmuş model ve bu model için algılanan ayıklayıcılar kullanılarak sınıflandırılır. Form işleme modeliyle eşleşen boş sütunlar varsa, bu ayıklanan değerler kullanılarak sütunlar doldurulur.
 
 - Kitaplığa birden fazla özel form işleme modeli uygulanması desteklenmez.
-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

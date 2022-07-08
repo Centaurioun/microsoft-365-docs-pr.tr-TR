@@ -22,12 +22,12 @@ description: Hassas içeriği sınıflandırmak ve korumak için Microsoft Purvi
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 879b412ff6efa743756a6c41b322516952dec93c
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: f06b4a2f40987481c3870ee512e60497f57d851a
+ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685975"
+ms.locfileid: "66687816"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Duyarlılık etiketleri hakkında bilgi edinin
 
@@ -134,11 +134,11 @@ Bu kapsam yapılandırması, yalnızca belgeler ve e-postalar için olan ve kaps
 
 ![Duyarlılık etiketleri için kapsam seçenekleri.](../media/sensitivity-labels-scopes.png)
 
-Varsayılan olarak **, Öğeler** kapsamı her zaman seçilidir. Kiracınız için özellikler etkinleştirildiğinde diğer kapsamlar varsayılan olarak seçilir:
+Varsayılan olarak, **Öğeler** kapsamı (önceden **Dosyalar & e-postalar** olarak adlandırılır) her zaman seçilir. Kiracınız için özellikler etkinleştirildiğinde diğer kapsamlar varsayılan olarak seçilir:
 
-- **Gruplar & siteleri**: [Kapsayıcılar için duyarlılık etiketlerini etkinleştirme ve etiketleri eşitleme](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
+- **Gruplar & siteleri**: Bkz. [Kapsayıcılar için duyarlılık etiketlerini etkinleştirme ve etiketleri eşitleme](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Şema haline getirilmiş veri varlıkları**: [İçeriğinizi otomatik olarak Microsoft Purview Veri Eşlemesi](/azure/purview/create-sensitivity-label)
+- **Şema haline getirilmiş veri varlıkları**: bkz. [Microsoft Purview Veri Eşlemesi'de içeriğinizi otomatik olarak etiketleme](/azure/purview/create-sensitivity-label)
 
 Tüm kapsamların seçilmemesi için varsayılanları değiştirirseniz, seçmediğiniz kapsamlar için yapılandırma ayarlarının ilk sayfasını görürsünüz, ancak ayarları yapılandıramazsınız. Örneğin, öğelerin kapsamı seçili değilse, sonraki sayfadaki seçenekleri belirleyemezsiniz:
 
