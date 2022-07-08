@@ -238,9 +238,9 @@
           href: communication-compliance-policies.md
         - name: İletişim uyumluluğu uyarılarını araştırma ve çözümleme
           href: communication-compliance-investigate-remediate.md
-        - name: İletişim uygunluğu raporları ve denetimleri hakkında daha fazla bilgi edinme
+        - name: İletişim uyumluluğu raporlarını ve denetimlerini kullanma
           href: communication-compliance-reports-audits.md
-        - name: SIEM çözümleri ile iletişim uyumluluğu
+        - name: SIEM çözümleriyle iletişim uyumluluğunu kullanma
           href: communication-compliance-siem.md
         - name: Örnek olay incelemesi - Contoso uygun olmayan bir metin ilkesini hızlı bir şekilde yapılandırır
           href: communication-compliance-case-study.md
