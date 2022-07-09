@@ -9,12 +9,12 @@ audience: Developer
 ms.date: 3/7/2022
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.openlocfilehash: 65b0ffd5d605302dd62369471b65c1ac10aacd40
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d5390c97c097bdbf52e496336e3a239d975a88aa
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641778"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696238"
 ---
 # <a name="office-tls-certificate-changes"></a>Ofis TLS Sertifika Değişiklikleri
 
@@ -143,7 +143,8 @@ Geçerli Kök CA, Ara CA ve yaprak sertifikalar iptal edilmeyecek. Mevcut CA Ort
 Çok nadir durumlarda, kuruluş kullanıcıları Kök CA "DigiCert Genel Kök G2" iptal edilmiş olarak göründüğü sertifika doğrulama hataları görebilir. Bunun nedeni, aşağıdaki koşulların her ikisinde de bilinen bir Windows hatasıdır:
 
 - Kök CA [CurrentUser\Root sertifika deposunda](/windows/win32/seccrypto/system-store-locations#cert_system_store_current_user) ve özellikleri eksik `NotBeforeFileTime` `NotBeforeEKU`
-- Kök CA da [LocalMachine\AuthRoot sertifika deposundadır](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine), ancak hem hem `NotBeforeEKU` de özelliklerine `NotBeforeFileTime` sahiptir
+- Kök CA [LocalMachine\AuthRoot sertifika deposundadır](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine) ancak hem ve `NotBeforeEKU` özelliklerine `NotBeforeFileTime` sahiptir
+- Kök CA [LocalMachine\Root sertifika deposunda](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine) YOK
 
 bu Kök CA'dan `NotBeforeFileTime` verilen tüm yaprak sertifikalar iptal edilmiş olarak görünür. 
 
@@ -182,7 +183,12 @@ certutil -store -v authroot DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 certutil -user -store -v root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 ```
 
-Kullanıcı, sertifika deposundaki Kök CA'nın `CurrentUser\Root` kopyasını silerek sorunu çözebilir:
+Kullanıcı, sertifika deposundaki Kök CA'nın `CurrentUser\Root` kopyasını silerek şu işlemleri yaparak sorunu çözebilir:
 ```
 certutil -user -delstore root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 ```
+veya 
+```
+reg delete HKCU\SOFTWARE\Microsoft\SystemCertificates\Root\Certificates\DF3C24F9BFD666761B268073FE06D1CC8D4F82A4 /f
+```
+İlk yaklaşım, ikinci yaklaşım tıklamazken kullanıcının tıklaması gereken bir Windows iletişim kutusu oluşturur. 

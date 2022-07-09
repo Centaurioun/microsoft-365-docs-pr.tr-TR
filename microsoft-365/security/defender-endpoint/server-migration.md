@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 461a3e4ebb97d809bf61c11591f40448ef97f8cb
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: dca4745b5058ed7b98bf0821e2b715393f7bf77f
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490541"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695976"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Önceki MMA tabanlı Uç Nokta için Microsoft Defender çözümünden sunucu geçişi senaryoları
 
@@ -39,14 +39,13 @@ ms.locfileid: "66490541"
 
 Bu yönergeler, Windows Server 2012 R2 ve Windows Server 2016 için Uç Nokta için Microsoft Defender yeni birleşik çözüm ve yükleyici (MSI) paketi için geçerlidir. Bu makale, öncekinden geçerli çözüme çeşitli olası geçiş senaryoları için üst düzey yönergeler içerir. Bu üst düzey adımlar, ortamınızda bulunan dağıtım ve yapılandırma araçlarına ayarlanacak yönergeler olarak tasarlanmıştır. 
 
-**Dağıtım gerçekleştirmek için Bulut için Microsoft Defender kullanıyorsanız, yüklemeyi ve yükseltmeyi otomatikleştirebilirsiniz. Bkz. [Sunucular için Defender Plan 2 artık MDE birleşik çözümüyle tümleşiyor] (https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)**
+**Dağıtım gerçekleştirmek için Bulut için Microsoft Defender kullanıyorsanız, yüklemeyi ve yükseltmeyi otomatikleştirebilirsiniz. Bkz [. Sunucular için Defender Plan 2 artık MDE birleşik çözümüyle tümleşiyor](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)**
 
 > [!NOTE]
 > Uç Nokta için Microsoft Defender yüklü işletim sistemi yükseltmeleri desteklenmez. Yükseltmeye devam etmeden önce lütfen uygulamayı kapatın ve kaldırın.
 
 > [!NOTE]
 > Otomatik yükseltme gerçekleştirmek için tam Microsoft Endpoint Configuration Manager otomasyonu ve tümleştirmesi, MECM'nin sonraki bir sürümünde kullanıma sunulacaktır. En son düzeltme paketine sahip 2107 sürümünden, yapılandırmanın yanı sıra grup ilkesi, PowerShell, Microsoft Endpoint Manager kiracı ekleme veya yerel yapılandırma için Endpoint Protection düğümünü kullanabilirsiniz. Ayrıca, el ile yükseltme adımlarını otomatikleştirmek için Microsoft Endpoint Configuration Manager'daki mevcut işlevlerden yararlanabilirsiniz; yöntemleri aşağıda açıklanmıştır.
-
 
 ## <a name="installer-script"></a>Yükleyici betiği
 
@@ -107,6 +106,7 @@ Bir makineyi pasif moddan çıkarmak için aşağıdaki anahtarı 0 olarak ayarl
 
 Yol: HKLM\SOFTWARE\Policies\Microsoft\Windows Gelişmiş Tehdit Koruması Adı: ForceDefenderPassiveMode Türü: REG_DWORD Değer: 0
 
+Sunucuları MMA'dan birleşik çözüme geçirme hakkında daha fazla bilgi için bkz. [Sunucuları Microsoft Monitoring Agent'tan birleşik çözüme](application-deployment-via-mecm.md) geçirme.
 
 ## <a name="other-migration-scenarios"></a>Diğer geçiş senaryoları
 

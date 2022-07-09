@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: İhtiyacınız olanı korumak ve istemediğinizleri silmek için etiketleri otomatik olarak uygulayabilmeniz için otomatik etiketleme bekletme ilkeleri oluşturun
-ms.openlocfilehash: f3af46b59134a815f3ba3a02154f9ecfd6f95627
-ms.sourcegitcommit: 019e8a62ab07a42d4ede4a87ccfaed527914412d
+ms.openlocfilehash: 7530b50aca1ed50ad5735f12f12b48b06d539b2e
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "66689200"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695998"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>İçeriği korumak veya silmek için otomatik olarak bekletme etiketi uygulama
 
@@ -273,9 +273,11 @@ Eğitilebilir sınıflandırıcı seçeneğini belirlediğinizde, önceden eğit
 
 ![Eğitilebilir sınıflandırıcıyı seçin.](../media/retention-label-classifers.png)
 
-Bu seçeneği kullanarak otomatik olarak etiket uygulamak için, SharePoint sitelerinin ve posta kutularının en az 10 MB veriye sahip olması gerekir.
+Önceden eğitilmiş kullanılabilir sınıflandırıcılar genellikle güncelleştirilir, bu nedenle bu ekran görüntüsünde görüntülenenlerden daha fazla giriş seçilebilir.
 
 Eğitilebilir sınıflandırıcılar hakkında daha fazla bilgi için bkz. [Eğitilebilir sınıflandırıcılar hakkında bilgi edinin](classifier-learn-about.md).
+
+Bu seçeneği kullanarak otomatik olarak etiket uygulamak için, SharePoint sitelerinin ve posta kutularının en az 10 MB veriye sahip olması gerekir.
 
 > [!TIP]
 > Exchange için eğitilebilir sınıflandırıcılar kullanıyorsanız bkz. [İçerik gezgininde sınıflandırıcıyı yeniden eğitme](classifier-how-to-retrain-content-explorer.md).

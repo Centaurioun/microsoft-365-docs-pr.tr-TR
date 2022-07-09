@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft ürünleri ve hizmetleri hakkında ne hissettiklerini görmek için son kullanıcılarınızın Net promoter puanlarını (NPS) kullanın.
-ms.openlocfilehash: ec261553a5713d9e12205cbf4c88611a128bc48b
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: c7afd214359922c7946e3cb972ec6aced90857e0
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217364"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696216"
 ---
 # <a name="microsoft-product-nps-feedback-and-insights-for-your-organization"></a>Kuruluşunuz için Microsoft ürünü NPS geri bildirimi ve içgörüleri
 
-Microsoft 365 kuruluşun yöneticisi olarak, Microsoft tarafından gönderilen NPS ürün anketlerine erişebilir ve bu anketlerden içgörü elde edebilirsiniz.  
+Microsoft 365 kuruluşunun yöneticisi olarak, Microsoft tarafından gönderilen NPS ürün anketlerine erişebilir ve bu anketlerden içgörü elde edebilirsiniz.  
 
-Net Promoter Score (NPS) anketleri, kullanıcı geri bildirimlerini toplar ve kullanıcıların arkadaşlarınıza ve iş arkadaşlarınıza ürün ve hizmet önerme olasılıklarını ölçer. Bu veriler kuruluşunuzda Microsoft 365 ürün ve hizmetlerini benimseme ve dağıtma stratejilerini belirlemek için kullanılabilir.
+Net Promoter Score (NPS) anketleri, kullanıcı geri bildirimlerini toplar ve kullanıcıların arkadaşlarınıza ve iş arkadaşlarınıza ürün ve hizmet önerme olasılıklarını ölçer. Bu veriler, Microsoft 365 ürün ve hizmetlerini benimseme ve kullanıma sunma stratejilerini belirlemek için kuruluşunuzda kullanılabilir.
 
 Size Microsoft ürünleri ve hizmetleri hakkında içgörüler sağlamak için son kullanıcılarınızdan gelen NPS anketlerini ve geri bildirimlerini kullanırız. Bu bilgiler, kuruluşunuzdaki son kullanıcıların hangi ürün ve hizmetleri kullandığını bulmanıza ve sorunları belirlemenize ve bunları hızlı bir şekilde çözmenize yardımcı olabilir. Bu bilgilerle:
 
@@ -49,16 +49,16 @@ Anket raporlarını görüntülemek ve okumak için [yönetici](../add-users/abo
 
 ## <a name="nps-survey-insights"></a>NPS anket içgörüleri
 
-1. Yönetim merkezinde **HealthProduct** >  feedbackNPS  > **anket içgörüleri'ne** gidin.
+1. [Microsoft 365 yönetim merkezi](https://admin.microsoft.com/) **Sistem Sağlığı** > **Ürünü geri bildirimi** > **NPS anket içgörüleri'ne** gidin.
 2. **NPS anket içgörüleri** sayfasından, kuruluşunuz için NPS ile ilgili anket içgörülerini görmek için sayfaya gidin.
 
-:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="Ekran görüntüsü: Net Promoter Score (NPS) ana grafiği":::
+:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="Ekran görüntüsü: Net Promoter Score (NPS) ana grafiği" lightbox="../../media/product-feedback-main-page.png":::
 
 ### <a name="top-topic-filters"></a>En önemli konu filtreleri
 
 Kullanıcı geri bildirimlerinden ortak temaları belirledik. Ardından veri kümelerini eğiten ve geri bildirimi otomatik olarak **En Önemli Konular'a** düzenleyen makine öğrenmesi modellerini kullandık. Daha sonra en çok ayrıntılı geri bildirim içeren ilk beş konuyu belirleyebilirsiniz.  
 
-:::image type="content" source="../../media/top-topics-filter.png" alt-text="Ekran görüntüsü: En ayrıntılı geri bildirim içeren ilk beş konu":::
+:::image type="content" source="../../media/top-topics-filter.png" alt-text="Ekran görüntüsü: En ayrıntılı geri bildirim içeren ilk beş konu" lightbox="../../media/top-topics-filter.png":::
 
 > [!NOTE]
 > Akıllı bir konuyu yalnızca konu uzmanlarıyla ortaklaşa ayarlanmış minimum kalite çıtası karşıladıktan sonra yayımlarız. Duyarlık ve geri çağırma ölçümleri aynı değeri belirlemek için kullanılır.
@@ -84,7 +84,7 @@ Kullanıcı geri bildirimlerinden ortak temaları belirledik. Ardından veri kü
 - Ayrıntılı Duyarlık- %92
 - Tam Geri Çağırma- %89
 
-**Genel Takdir**, olumlu bir yaklaşıma sahip olan ve başka bir konuya sığmayan müşteri açıklamalarını ifade eder.
+**Genel Takdir** , olumlu bir yaklaşıma sahip olan ve başka bir konuya uymayan müşteri yorumlarını ifade eder.
 
 - Ayrıntılı Duyarlık- %93
 - Tam Geri Çağırma- %98
@@ -138,7 +138,7 @@ Grafikler aşağıdaki gibi NPS derecelendirmesine göre filtrelenir:
 - Pasifler, hizmetlerden memnun olan ancak ürününüzü veya hizmetinizi önermek için yeterli olmayan müşterilerdir.
 - Yükseltenler- Sadık, hevesli ve ürününüzü veya hizmetinizi önerme olasılığı yüksek olan mutlu müşteriler.
 
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Ekran görüntüsü: Bir uygulamayı bir arkadaşınıza veya meslektaşınıza önerme olasılığını gösteren grafik":::
+:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Ekran görüntüsü: Bir uygulamayı bir arkadaşınıza veya meslektaşınıza önerme olasılığını gösteren grafik" lightbox="../../media/how-likely-recommend.png":::
 
 ### <a name="export-to-csv-and-search"></a>CSV'ye aktar ve Ara
 
@@ -149,19 +149,19 @@ CSV'ye Aktar işlevini kullanarak ham verileri daha fazla analiz için dışarı
 > [!NOTE]
 > Ham veriler, NPS olmayan geri bildirimler de dahil olmak üzere tüm geri bildirim türlerini içerir.
 
-### <a name="filters"></a>Filtre
+### <a name="filters"></a>Filtreler
 
 **Kanallara**, **Ürünlere**, **Platformlara** ve **Geri Bildirim Türlerine** göre filtreleyebilirsiniz.
 
-**Kanallar**, kuruluşların Office için özellik güncelleştirmelerini ne sıklıkta aldıklarını seçmelerinin bir yoludur. daha fazla bilgi için bkz. [Microsoft 365 Uygulamaları için güncelleştirme kanallarına genel bakış](/deployoffice/overview-update-channels). Bu filtre, belirli bir kanaldaki bir kullanıcıdan gönderilen geri bildirimlere göre filtrelemenizi sağlar.
+**Kanallar** , kuruluşların Office için özellik güncelleştirmelerini ne sıklıkta aldıklarını seçmelerinin bir yoludur. daha fazla bilgi için bkz. [Microsoft 365 Uygulamaları için güncelleştirme kanallarına genel bakış](/deployoffice/overview-update-channels). Bu filtre, belirli bir kanaldaki bir kullanıcıdan gönderilen geri bildirimlere göre filtrelemenizi sağlar.
 
 Android, iOS, Mac ve Windows gibi çeşitli **Platformlarda** geri bildirim gönderilebilir. Bu filtre, geri bildirimleri gönderildiği platforma göre filtrelemenize olanak tanır.
 
-İş **ürünleri** için Microsoft 365 çoğunluğu bu filtrenin altında bulunabilir. Geri bildirim gönderilen ürünleri seçmek için bu filtreyi kullanın.
+İş için Microsoft 365 **Ürünleri'nin** çoğu bu filtre altında bulunabilir. Geri bildirim gönderilen ürünleri seçmek için bu filtreyi kullanın.
 
 Topladığımız geri bildirimleri filtrelemek için **Geri Bildirim Türlerini** (yalnızca NPS geri bildirim türleri olarak ayarlayın) kullanın.
 
-:::image type="content" source="../../media/feedback-filters.png" alt-text="Ekran görüntüsü: Geri bildirim türlerini gösteren grafik":::
+:::image type="content" source="../../media/feedback-filters.png" alt-text="Ekran görüntüsü: Geri bildirim türlerini gösteren grafik" lightbox="../../media/feedback-filters.png":::
 
 ### <a name="we-want-to-hear-from-you"></a>Sizden haber almak istiyoruz
 

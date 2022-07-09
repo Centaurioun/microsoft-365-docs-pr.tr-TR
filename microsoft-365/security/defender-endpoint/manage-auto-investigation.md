@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.technology: mde
-ms.openlocfilehash: 06e2c6c5269b32b29be87f44635d65b9c610c344
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 122b216a07bdd70ab5619903ba049b4fb507179e
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535878"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695626"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Otomatik bir araştırmanın ardından düzeltme eylemlerini gözden geçirin
 
@@ -102,7 +102,7 @@ Bir cihazın veya dosyanın bir tehdit olmadığını belirlediyseniz, bu eyleml
 > - Dosyayı durdurma ve karantinaya al
 > - Bir dosyayı engellemek veya dosyaya izin vermek için gösterge ekleme
 >
-> Daha fazla bilgi için bkz. [Uç Nokta için Microsoft Defender planlarını karşılaştırma](defender-endpoint-plan-1-2.md) ve [Küçük ve orta ölçekli işletmeler için Microsoft 365 planlarında güvenlik özelliklerini karşılaştırma](../defender-business/compare-mdb-m365-plans.md).
+> Daha fazla bilgi için bkz[. Uç Nokta için Microsoft Defender planlarını karşılaştırma](defender-endpoint-plan-1-2.md) ve [Küçük ve orta ölçekli işletmeler için Microsoft 365 planlarındaki güvenlik özelliklerini karşılaştırma](../defender-business/compare-mdb-m365-plans.md).
 
 ### <a name="to-undo-multiple-actions-at-one-time"></a>Aynı anda birden çok eylemi geri almak için
 
@@ -127,7 +127,7 @@ Otomasyon düzeyleri, belirli düzeltme eylemlerinin otomatik olarak mı yoksa y
 |Cihaz grubu ayarı|Otomatik araştırma sonuçları|Yapılması gerekenler|
 |---|---|---|
 |**Tam - tehditleri otomatik olarak düzeltme**<br/>(önerilir)|Bir kanıt parçası için *Kötü Amaçlı* kararına ulaşıldı. <p> Uygun düzeltme eylemleri otomatik olarak gerçekleştirilen.|[Tamamlanan eylemleri gözden geçirme](#review-completed-actions)|
-|**Tam - tehditleri otomatik olarak düzeltme**|Bir kanıt için *Şüpheli* kararına ulaşıldı. <p> Düzeltme eylemleri devam etmek için onay bekliyor.|[Bekleyen eylemleri onaylama (veya reddetme)](#review-pending-actions)|
+|**Tam - tehditleri otomatik olarak düzeltme**|Bir kanıt için *Şüpheli* kararına ulaşıldı. <p> Uygun düzeltme eylemleri otomatik olarak gerçekleştirilen.|[Bekleyen eylemleri onaylama (veya reddetme)](#review-pending-actions)|
 |**Yarı - herhangi bir düzeltme için onay gerektir**|Bir kanıt parçası için *Kötü Amaçlı* veya *Şüpheli* kararına ulaşılır. <p> Düzeltme eylemleri devam etmek için onay bekliyor.|[Bekleyen eylemleri onaylama (veya reddetme)](#review-pending-actions)|
 |**Yarı - çekirdek klasörlerin düzeltilmesi için onay gerektir**|Bir kanıt parçası için *Kötü Amaçlı* kararına ulaşıldı. <p> Yapıt bir dosya veya yürütülebilir dosyaysa ve Windows klasörü veya Program dosyaları klasörü gibi bir işletim sistemi dizinindeyse, düzeltme eylemleri onay bekliyor demektir. <p> Yapıt bir işletim sistemi dizininde *değilse* , düzeltme eylemleri otomatik olarak gerçekleştirilen işlemlerdir.|<ol><li>[Bekleyen eylemleri onaylama (veya reddetme)](#review-pending-actions)</li><li>[Tamamlanan eylemleri gözden geçirme](#review-completed-actions)</li></ol>|
 |**Yarı - çekirdek klasörlerin düzeltilmesi için onay gerektir**|Bir kanıt için *Şüpheli* kararına ulaşıldı. <p> Düzeltme eylemleri onay bekliyor.|[Bekleyen eylemleri onaylayın (veya reddedin](#review-pending-actions)).|

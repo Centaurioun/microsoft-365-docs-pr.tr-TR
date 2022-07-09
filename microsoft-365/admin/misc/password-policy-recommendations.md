@@ -22,20 +22,20 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Kuruluşunuzu parola saldırılarına karşı daha güvenli hale getirin ve yaygın parolaları yasaklayın ve risk tabanlı çok faktörlü kimlik doğrulamasını etkinleştirin.
-ms.openlocfilehash: bd33d98a33d136f06bfe8e7741bb14c79f0a6160
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 474dbaf6877c3b4da9cd9d345e53cd95b2f42452
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043220"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695582"
 ---
-# <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Microsoft 365 parolalar için parola ilkesi önerileri
+# <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Microsoft 365 parolaları için parola ilkesi önerileri
 
 Bir kuruluşun yöneticisi olarak, kuruluşunuzdaki kullanıcılar için parola ilkesini ayarlamak sizin sorumluluğunuzdadır. Parola ilkesini ayarlamak karmaşık ve kafa karıştırıcı olabilir ve bu makalede kuruluşunuzun parola saldırılarına karşı daha güvenli olmasını sağlamak için öneriler sağlanır.
 
 Yalnızca buluta özel Microsoft hesapları, değiştirilemeyen önceden tanımlanmış bir parola ilkesine sahiptir. Değiştirebileceğiniz tek öğeler, parolanın süresinin dolmasına kadar olan gün sayısı ve parolaların süresinin dolup dolmayacağıdır. 
   
-Kuruluşunuzda Microsoft 365 parolaların süresinin ne sıklıkta doldığını belirlemek için bkz. [Microsoft 365 için parola süre sonu ilkesini ayarlama](../manage/set-password-expiration-policy.md).
+Kuruluşunuzda Microsoft 365 parolalarının süresinin ne sıklıkta doldığını belirlemek için bkz. [Microsoft 365 için parola süre sonu ilkesi ayarlama](../manage/set-password-expiration-policy.md).
 
 Microsoft 365 parolaları hakkında daha fazla bilgi için bkz:
 
@@ -45,7 +45,7 @@ Microsoft 365 parolaları hakkında daha fazla bilgi için bkz:
 
 [Kullanıcıların kendi parolalarını sıfırlamasına izin verme](../add-users/let-users-reset-passwords.md) (makale)
 
-[Kullanıcının parolasını yeniden gönderme - Yönetici Yardımı](../add-users/resend-user-password.md) (makale)
+[Kullanıcının parolasını yeniden gönderme - yardım Yönetici](../add-users/resend-user-password.md) (makale)
   
 ## <a name="understanding-password-recommendations"></a>Parola önerilerini anlama
 
@@ -61,7 +61,7 @@ Microsoft 365 parolaları hakkında daha fazla bilgi için bkz:
 
 Daha güvenli bir parola sisteminin birincil hedefi, parola çeşitliliğidir. Parola ilkenizin birçok farklı ve tahmin etmesi zor parolalar içermesi gerekir. Aşağıda, kuruluşunuzun mümkün olduğunca güvenli tutulması için bazı öneriler bulabilirsiniz.
   
-- 14 karakterlik minimum uzunluk gereksinimini koruma
+- Sekiz karakterlik minimum uzunluk gereksinimini koruma
 
 - Karakter derlemesi gerektirmeyin. Örneğin, \*&amp;(^%$ gibi
 
@@ -156,4 +156,4 @@ Parolaları yönetme hakkında daha fazla bilgi edinmek ister misiniz? Önerilen
 [Parolaları sıfırlama](../add-users/reset-passwords.md) (makale)\
 [Tek bir kullanıcının parolasını hiçbir zaman sona ermeyecek şekilde ayarlama](../add-users/set-password-to-never-expire.md) (makale)\
 [Kullanıcıların kendi parolalarını sıfırlamasına izin ver](../add-users/let-users-reset-passwords.md) (makale)\
-[Kullanıcının parolasını yeniden gönderme - Yönetici Yardımı](../add-users/resend-user-password.md) (makale)
+[Kullanıcının parolasını yeniden gönderme - yardım Yönetici](../add-users/resend-user-password.md) (makale)

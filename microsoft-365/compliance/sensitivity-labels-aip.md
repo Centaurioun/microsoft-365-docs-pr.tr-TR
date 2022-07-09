@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Azure Information Protection (AIP) birleşik etiketleme istemcisini kullandığınızda, AIP eklentisi yerine Office uygulamaları için yerleşik etiketleme kullanmanın avantajlarını anlayın.
-ms.openlocfilehash: 0a521dbabd6a9db52dd8405beabab29400d38d82
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 69bef8c18398a371f53fc88e17d261790b3ab16f
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628627"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696172"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office uygulamaları için AIP eklentisi yerine neden yerleşik etiketlemeyi seçmelisiniz?
 
@@ -109,6 +109,8 @@ bu ayarı grup ilkesi veya [Office bulut ilkesi hizmetini](/DeployOffice/overvie
 Alternatif olarak, **Microsoft Azure Information Protection** Office Eklentisini Word, Excel, PowerPoint ve Outlook'tan etkileşimli olarak devre dışı bırakabilir veya kaldırabilirsiniz. Bu yöntem tek bir bilgisayar ve geçici test için uygundur. Yönergeler için bkz. [Office programlarında eklentileri görüntüleme, yönetme ve yükleme](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d).
 
 Hangi yöntemi seçerseniz seçin, Office uygulamaları yeniden başlatıldığında değişiklikler geçerli olur.
+
+Bu değişiklikleri yaptıktan sonra **, Duyarlılık** düğmesi Office şeridinde görüntülenmiyorsa, duyarlılık etiketlemesinin [kapalı](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows) olup olmadığını denetleyin.  Bu varsayılan yapılandırma olmasa da, bir yönetici grup ilkesi kullanarak veya doğrudan kayıt defterini düzenleyerek bu yapılandırmayı açıkça ayarlamış olabilir.
 
 > [!NOTE]
 > Yerleşik etiketler, Office uygulamalarının abonelik sürümünü gerektirir. Office'in bazen "Office Perpetual" olarak da adlandırılan tek başına sürümleriniz varsa[, en son etiketleme özelliklerinden](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) yararlanmak için Kurumsal için Microsoft 365 Uygulamaları yükseltmenizi öneririz.

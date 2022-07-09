@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Microsoft Purview çözümleri deneme playbook'u.
 ms.custom: trial-playbook
-ms.openlocfilehash: 2b84a3e5636edad78a9d221a0d088b84392cf49e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1ab54e60dbb127ac5f5cdffc835d0d00dc423d38
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633795"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696260"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Deneme playbook'u: Microsoft Purview çözümleri
 
@@ -184,7 +184,7 @@ Uyarlamalı ilke kapsamları, bir ilkeyi AD özniteliklerine göre belirli kulla
 
 Uyarlamalı ilke kapsamlarını kullanan ilkeler, yeni çalışanların katılması veya ayrılmasıyla kuruluş değiştikçe güncel kalır. Ayrıca, ilkeye dahil edilen 100/1.000 konumun önceki sınırlarına tabi değildir.
 
-- Uyarlamalı İlke Kapsamı oluşturma ve bunu bekletme ilkesiyle kullanma
+- [Uyarlamalı İlke Kapsamı](retention.md#adaptive-or-static-policy-scopes-for-retention) oluşturma ve bunu bekletme ilkesiyle kullanma
 
 ### <a name="step-2-automate-labeling-to-apply-a-label-to-all-items-by-default"></a>2. Adım: Varsayılan olarak tüm öğelere etiket uygulamak için etiketlemeyi otomatikleştirme
 
@@ -193,7 +193,7 @@ Uyarlamalı ilke kapsamlarını kullanan ilkeler, yeni çalışanların katılma
 
 Varsayılan etiketler, SharePoint'te belirtilen kitaplık, klasör veya belge kümesi içindeki tüm öğelere otomatik olarak bekletme etiketi uygulamanıza olanak sağlar.
 
-- SharePoint'te etiketi yayımlama ve varsayılan olarak uygulama
+- [SharePoint'te](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) etiketi yayımlama ve varsayılan olarak uygulama
 
 ## <a name="data-loss-prevention"></a>Veri Kaybı Önleme
 
@@ -384,7 +384,7 @@ Insider Risk Analytics'i etkinleştirmek için Insider Risk Management veya Insi
 
 **İş, yasal veya mevzuat kaydı tutma gereksinimleri için yüksek değerli öğeleri yönetin**:
 
-Kuruluş düzenleme, yasal ve iş açısından kritik kayıtların bekletme zamanlamasını otomatikleştirmek için Microsoft Purview Kayıt Yönetimi özelliklerini kullanın. Kayıtları bildirmek, içeriği saklamak ve bunları en sonda atmak için işbirliği aracılığıyla oluşturmadan otomasyon özelliklerinden yararlanın.
+Kurumsal düzenleme, yasal ve iş açısından kritik kayıtların bekletme zamanlamasını otomatikleştirmek için tümleşik Microsoft Purview Kayıt Yönetimi özelliklerini kullanın. Kayıtları bildirmek, içeriği saklamak ve bunları en sonda atmak için işbirliği aracılığıyla oluşturmadan otomasyon özelliklerinden yararlanın.
 
 ### <a name="step-1-mark-contents-as-records"></a>1. Adım: İçeriği kayıt olarak işaretleme  
 
@@ -393,7 +393,7 @@ Kuruluş düzenleme, yasal ve iş açısından kritik kayıtların bekletme zama
 
 İçerik kayıt olarak bildirildiğinde, öğeye izin verilen veya engellenen eylemlere göre kısıtlamalar uygulanır, öğelerle ilgili ek etkinlikler günlüğe kaydedilir ve öğelerin saklama süresinin sonunda silinmesi durumunda değerlendirme kanıtınız olur.
 
-- İçerikleri kayıt veya mevzuat kaydı olarak bildiren bir bekletme etiketi oluşturma
+- [İçerikleri kayıt veya mevzuat kaydı olarak bildiren bir](declare-records.md) bekletme etiketi oluşturma
 
 ### <a name="step-2-review-content-to-approve-before-its-permanently-deleted"></a>2. Adım: Kalıcı olarak silinmeden önce onaylayacak içeriği gözden geçirme
 
@@ -402,7 +402,7 @@ Kuruluş düzenleme, yasal ve iş açısından kritik kayıtların bekletme zama
 
 Saklama süresinin sonunda, belirttiğiniz kullanıcılara ("gözden geçirenler") içeriği gözden geçirmeleri ve kalıcı elden çıkarma eylemini onaylamaları bildirilebilir. Bu, silme işleminden farklı bir eylemin içeriğe farklı bir saklama süresi atama veya bir denetim için silme işlemini askıya alma gibi daha uygun olup olmadığını destekler.
 
-- Değerlendirme gözden geçirmesini kullanan bir bekletme etiketi oluşturma
+- [Değerlendirme gözden geçirmesini kullanan bir bekletme etiketi oluşturma](disposition.md#disposition-reviews)
 
 ### <a name="step-3-apply-labels-automatically-to-content-that-matches-specific-conditions"></a>3. Adım: Etiketleri belirli koşullarla eşleşen içeriğe otomatik olarak uygulama
 
@@ -411,9 +411,9 @@ Saklama süresinin sonunda, belirttiğiniz kullanıcılara ("gözden geçirenler
 
 Etiketlerin otomatik uygulanması, kullanıcıların etiketleme etkinliklerini el ile gerçekleştirme gereksinimini ortadan kaldırır. Bu içerikte henüz bir bekletme etiketi uygulanmamışsa ve hassas bilgiler, anahtar sözcükler veya aranabilir özellikler ya da eğitilebilir sınıflandırıcılar için eşleşme içerdiğinde içeriğe otomatik olarak bekletme etiketleri uygulayabilirsiniz.
 
-- Belirli türde hassas bilgilere sahip içeriğe bekletme etiketlerini otomatik uygulama
-- Eğitilebilir sınıflandırıcıları kullanarak içeriğe bekletme etiketlerini otomatik uygulama
-- Anahtar sözcükler veya aranabilir özelliklerle bekletme etiketlerini otomatik uygulama
+- [Belirli türde hassas bilgilere sahip içeriğe bekletme etiketlerini otomatik uygulama](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
+- [Eğitilebilir sınıflandırıcıları kullanarak içeriğe bekletme etiketlerini otomatik uygulama](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
+- [Anahtar sözcükler veya aranabilir özelliklerle bekletme etiketlerini otomatik uygulama](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
 ## <a name="additional-trials-and-add-ons"></a>Ek denemeler ve eklentiler
 

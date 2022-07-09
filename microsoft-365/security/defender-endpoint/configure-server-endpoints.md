@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4c21d0bdf8a96347e60b79d998c0b8c64fd507a1
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 547b41deceae01045baf119aeba1c15b8573a23f
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531110"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695877"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme
 
@@ -53,7 +53,7 @@ Sunucuları başarıyla eklemek için aşağıdaki genel adımları tamamlamanı
 
 :::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="Windows Sunucuları ve Windows 10 cihazları için ekleme akışının çizimi" lightbox="images/server-onboarding-tools-methods.png":::
 
-## <a name="integration-with-microsoft-defender-for-cloud"></a>Bulut için Microsoft Defender ile tümleştirme
+## <a name="integration-with-microsoft-defender-for-servers"></a>Sunucular için Microsoft Defender ile tümleştirme
 
 Uç Nokta için Microsoft Defender Sunucular için Microsoft Defender ile sorunsuz bir şekilde tümleşir. Sunucuları otomatik olarak ekleyebilir, Bulut için Microsoft Defender tarafından izlenen sunucuların Uç Nokta için Defender'da görünmesini sağlayabilir ve Bulut için Microsoft Defender müşterisi olarak ayrıntılı araştırma yapabilirsiniz.
 
@@ -196,6 +196,9 @@ Windows Server Update Services (WSUS) ve/veya Microsoft Endpoint Configuration M
 ### <a name="step-1-download-installation-and-onboarding-packages"></a>ADIM 1: Yükleme ve ekleme paketlerini indirme
 
 Portaldan hem **yükleme** hem de **ekleme** paketlerini indirmeniz gerekir.
+
+> [!NOTE]
+> Yükleme paketi aylık olarak güncelleştirilir. Kullanımdan önce en son paketi indirdiğinizden emin olun.
 
 > [!div class="mx-imgBorder"]
 > ![Ekleme panosunun resmi](images/install-agent-onboard.png)

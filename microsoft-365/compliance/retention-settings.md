@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: İstediğinizi korumak ve istemediğinizden kurtulmak için bekletme ilkesinde veya bekletme etiketi ilkesinde yapılandırabileceğiniz ayarları anlayın.
-ms.openlocfilehash: 87ecdc932932befc24441a59fb0dd8c023e982c2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 34d71c0ae96c09dc2ac4569ae1de5fe386509550
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639654"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695758"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Bekletme ilkeleri ve bekletme etiketi ilkeleri için yaygın ayarlar
 
@@ -407,7 +407,7 @@ Bekletmeyi yapılandırmadan önce, önce ilgili iş yükleri için kapasite ve 
 #### <a name="relabeling-at-the-end-of-the-retention-period"></a>Saklama süresinin sonunda yeniden etiketleme
 
 > [!NOTE]
-> Bu seçenek şu anda önizleme aşamasında kullanıma sunulmuştur ve değiştirilebilir.
+> Bu seçenek önizleme aşamasındadır ve değiştirilebilir.
 
 Bekletme süresinin sonunda otomatik olarak farklı bir bekletme etiketi uygulayacak şekilde bir bekletme etiketi yapılandırdığınızda, öğe yeni seçilen bekletme etiketinin bekletme ayarlarına tabi olur. Bu seçenek, öğenin bekletme ayarlarını otomatik olarak değiştirmenize olanak tanır.
 

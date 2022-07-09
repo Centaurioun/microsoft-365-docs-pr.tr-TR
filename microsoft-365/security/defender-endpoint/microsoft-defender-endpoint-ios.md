@@ -17,19 +17,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dcc67b2d2a9ad03dc1235eebd577e3525ab07a03
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ac2c34359686da45998fab1076b7501357651318
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665942"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695889"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS'ta Uç Nokta için Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Şunlar için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,7 +40,7 @@ ms.locfileid: "64665942"
 > [!CAUTION]
 > iOS'ta Uç Nokta için Defender'ın yanı sıra diğer üçüncü taraf uç nokta koruma ürünlerini çalıştırmak, performans sorunlarına ve öngörülemeyen sistem hatalarına neden olabilir.
 
-## <a name="pre-requisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Önkoşullar
 
 **Son Kullanıcılar için**
 
@@ -52,10 +52,11 @@ ms.locfileid: "64665942"
     
     >[!NOTE]
     >Apple, kullanıcıların uygulama mağazasından diğer uygulamaları indirmesine izin vermez, bu nedenle bu adımın Uç Nokta için Microsoft Defender uygulamaya eklemeden önce kullanıcı tarafından yapılması gerekir.)
-    
-    - Cihazlar Azure Active Directory kaydedilir. Bunun için son kullanıcının [Microsoft Authenticator uygulama](https://apps.apple.com/app/microsoft-authenticator/id983156458) üzerinden oturum açması gerekir.
 
-- **Kayıtlı olmayan cihazlar için**: Cihazlar Azure Active Directory kaydedilir. Bunun için son kullanıcının [Microsoft Authenticator uygulama](https://apps.apple.com/app/microsoft-authenticator/id983156458) üzerinden oturum açması gerekir.
+
+    - Cihazlar Azure Active Directory'ye kaydedilir. Bunun için son kullanıcının [Microsoft Authenticator uygulaması aracılığıyla oturum açması](https://apps.apple.com/app/microsoft-authenticator/id983156458) gerekir.
+
+- **Kaydı kaldırılan cihazlar için**: Cihazlar Azure Active Directory'ye kaydedilir. Bunun için son kullanıcının [Microsoft Authenticator uygulaması aracılığıyla oturum açması](https://apps.apple.com/app/microsoft-authenticator/id983156458) gerekir.
 
 - Lisans atama hakkında daha fazla bilgi için bkz. [Kullanıcılara lisans atama](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
@@ -76,7 +77,10 @@ ms.locfileid: "64665942"
 
 - iOS 12.0 ve üzerini çalıştıran iOS cihazı. iPad'ler de desteklenir. *31-Mart 2022'den itibaren, Uç Nokta için Microsoft Defender tarafından desteklenen en düşük iOS sürümünün iOS 13.0 olacağını unutmayın.*
 
-- Cihaz[, Intune Şirket Portalı uygulamasına](https://apps.apple.com/us/app/intune-company-portal/id719171358) kaydedilir veya aynı hesapla [Microsoft Authenticator aracılığıyla Azure Active Directory](https://apps.apple.com/app/microsoft-authenticator/id983156458) ile kaydedilir.
+- Cihaz[, Intune Şirket Portalı uygulamasına](https://apps.apple.com/us/app/intune-company-portal/id719171358) kaydedilir veya aynı hesapla [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) aracılığıyla Azure Active Directory'ye kaydedilir.
+
+ > [!NOTE]
+ > iOS'ta Uç Nokta için Microsoft Defender şu anda iOS Kullanıcı Kaydı kullanılırken desteklenmiyor.
 
 ## <a name="installation-instructions"></a>Yükleme yönergeleri
 
@@ -95,6 +99,6 @@ iOS'ta Uç Nokta için Microsoft Defender dağıtımı Microsoft Endpoint Manage
 
 - [Kayıtlı cihazlar için Intune aracılığıyla iOS'ta Uç Nokta için Microsoft Defender dağıtma](ios-install.md)
 - [Uygulama koruma ilkesini Uç Nokta için Defender risk sinyallerini (MAM) içerecek şekilde yapılandırma](ios-install-unmanaged.md)
-- [iOS özelliklerinde Uç Nokta için Microsoft Defender yapılandırma](ios-configure-features.md)
+- [iOS özelliklerinde Uç Nokta için Microsoft Defender’ı yapılandırın](ios-configure-features.md)
 - [koşullu erişim ilkesini Uç Nokta için Microsoft Defender cihaz risk puanına göre yapılandırma](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
 - [Mobil Uygulama Yönetimi (MAM) ile ilgili temel bilgiler](/mem/intune/apps/app-management#mobile-application-management-mam-basics)
