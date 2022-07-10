@@ -18,6 +18,8 @@
           href: duplicate-a-model.md
         - name: Modeli yeniden adlandır
           href: rename-a-model.md
+        - name: Modeli sil
+          href: delete-a-model.md
         - name: Ayıklayıcı oluştur
           href: create-an-extractor.md
         - name: Ayıklayıcıyı yeniden adlandır

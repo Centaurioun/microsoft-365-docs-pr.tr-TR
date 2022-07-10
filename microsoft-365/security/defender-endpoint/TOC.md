@@ -43,6 +43,7 @@
 #### [Grup İlkesi’ni kullanın](manage-mde-post-migration-group-policy-objects.md)
 #### [ WMI, MPCmdRun.exe veya PowerShell kullanın](manage-mde-post-migration-other-tools.md)
 #### [Sunucu geçişi senaryoları](server-migration.md)
+##### [Sunucuları Microsoft Monitoring Agent'tan birleşik çözüme geçirme](application-deployment-via-mecm.md)
 
 ## [Cihazları ekleyin ve yapılandırın]()
 ### [Cihazları ekleyin ve Uç Nokta için Microsoft Defender işlevlerini yapılandırın](onboard-configure.md)

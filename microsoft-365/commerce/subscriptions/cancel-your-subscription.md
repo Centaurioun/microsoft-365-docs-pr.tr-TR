@@ -20,24 +20,24 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Microsoft 365 yönetim merkezinde Dynamics 365, Intune, Power Platform ve İş için Microsoft 365 deneme veya ücretli aboneliklerinizi nasıl iptal edebileceğinizi öğrenin.
-ms.date: 06/02/2022
-ms.openlocfilehash: 962553d620b9cc3477f5eb7c91fa0b822dc5de07
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.date: 07/07/2022
+ms.openlocfilehash: f7d967d14f7f0e23e3d422318bddf25eb6772dcf
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490375"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695714"
 ---
 # <a name="cancel-your-microsoft-subscription"></a>Microsoft aboneliğinizi iptal etme
 
 Aboneliğinizi iptal etmek istiyorsanız, bunu yapmanın en kolay yolu [yinelenen faturalandırmayı kapatmaktır](renew-your-subscription.md). Yinelenen faturalandırmayı kapattığınızda, abonelik döneminin sonunda süresi dolana kadar aboneliğinizi kullanmaya devam edebilirsiniz. Hemen iptal etmek istiyorsanız, bunu yapmak için bu makaledeki bilgileri ve adımları kullanın.
 
+Gelecekteki ücretleri durdurmak için ücretsiz denemenizi istediğiniz zaman iptal edebilirsiniz. 1 aylık ücretsiz deneme süreniz sona erdikten sonra, geçerli abonelik ücreti tahsil edilecektir.
+
 > [!IMPORTANT]
-> - Bu makale yalnızca Dynamics 365, Intune, Power Platform ve İş için Microsoft 365 aboneliklerine yöneliktir. Microsoft 365 Aile veya Bireysel kullanıyorsanız, bkz. [Microsoft 365 aboneliğini iptal etme](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
+> - Bu makale yalnızca Dynamics 365, Intune, Power Platform, Windows 365 ve İş için Microsoft 365 abonelikleri için geçerlidir. Microsoft 365 Aile veya Bireysel kullanıyorsanız, bkz. [Microsoft 365 aboneliğini iptal etme](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
 > - Aboneliğinizi bir Microsoft temsilcisi veya bir satıcı ortağı aracılığıyla satın aldıysanız, eşit olarak bölünmüş bir para iadesi alarak iptal etmek için yedi gün süreniz vardır. Aboneliğinizi iptal etmenize yardımcı olması için temsilcinize veya satıcı ortağınız başvurun. [İş ortakları hakkında daha fazla bilgi edinin](../manage-partners.md#what-can-a-partner-do-for-my-organization-or-school).
 > - Kuruluşunuz Şili'de bulunuyorsa ve aboneliğinizi Şili'deki bir iş ortağı aracılığıyla satın aldıysanız, eşit olarak bölünmüş bir para iadesi alarak iptal etmek için 10 gününüz vardır.
-
-Aboneliğinizi iptal etmek istiyorsanız, bunu yapmanın en kolay yolu [yinelenen faturalandırmayı kapatmaktır](renew-your-subscription.md). Yinelenen faturalandırmayı kapattığınızda, abonelik döneminin sonunda süresi dolana kadar aboneliğinizi kullanmaya devam edebilirsiniz. Hemen iptal etmek istiyorsanız, bunu yapmak için bu makaledeki bilgileri ve adımları kullanın.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -58,9 +58,6 @@ Aboneliğinizi iptal etmek ve eşit dağıtılmış bir kredi veya para iadesi a
 Aboneliğinizin başlangıcından veya yenilenmesinden sonraki yedi gün içinde iptal etmeniz gerekiyorsa, bu makalenin devamındaki [Aboneliğinizi iptal etme adımları](#steps-to-cancel-your-subscription) bölümüne gidin.
 
 Yedi günden daha uzun bir süre geçtiyse [yinelenen faturalandırmayı kapatın](renew-your-subscription.md). Bu, aboneliğinizin süresinin sonunda yenilenmesini önler.  Bu işlem aboneliğinizin kalan bölümünde ürünlerinize ve hizmetlerinize erişimi sürdürmenize olanak tanır. Yıllık aboneliğiniz varsa ve aylık ödeme yapıyorsanız, abonelik döneminizin geri kalanı için her ay ücretlendirilirsiniz.
-
-> [!NOTE]
-> Gelecekteki ücretleri durdurmak için ücretsiz denemenizi istediğiniz zaman iptal edin. 1 aylık ücretsiz denemenizden sonra, ilgili abonelik ücreti tahsil edilir.
 
 ### <a name="if-you-dont-have-a-billing-profile"></a>Faturalama profiliniz yoksa
 
