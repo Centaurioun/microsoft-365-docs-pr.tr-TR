@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365'teki eBulma arama araçlarını kullanarak arama yapabileceğiniz e-posta ve belge özellikleri hakkında bilgi edinin.
-ms.openlocfilehash: 3ff2143a170531b527850b4805cb9a79f10afb5e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4de131ea9dc8b1f7df486dd5c6ead7eee677869e
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623881"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714563"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>eBulma için anahtar sözcük sorguları ve arama koşulları
 
@@ -140,27 +140,27 @@ Aşağıdaki tabloda, dizine alınan ve eBulma arama araçlarını kullanarak ar
 |Soyadı|**Soyadı** özelliğindeki ad.|
 |Başlık|İş başlığı özelliğindeki **başlık** .|
 
-## <a name="searchable-sensitive-data-types"></a>Aranabilir hassas veri türleri
+<!--## Searchable sensitive data types
 
-SharePoint ve OneDrive İş sitelerindeki belgelerde depolanan kredi kartı numaraları veya sosyal güvenlik numaraları gibi hassas verileri aramak için uyumluluk portalındaki eBulma arama araçlarını kullanabilirsiniz. Bunu yapmak için anahtar sözcük sorgusundaki `SensitiveType` hassas bilgi türünün özelliğini ve adını (veya kimliğini) kullanabilirsiniz. Örneğin, sorgu `SensitiveType:"Credit Card Number"` kredi kartı numarası içeren belgeleri döndürür. Sorgu  `SensitiveType:"U.S. Social Security Number (SSN)"` , ABD sosyal güvenlik numarası içeren belgeleri döndürür.
+You can use eDiscovery search tools in the compliance portal to search for sensitive data, such as credit card numbers or social security numbers, that is stored in documents on SharePoint and OneDrive for Business sites. You can do this by using the `SensitiveType` property and the name (or ID) of a sensitive information type in a keyword query. For example, the query `SensitiveType:"Credit Card Number"` returns documents that contain a credit card number. The query  `SensitiveType:"U.S. Social Security Number (SSN)"` returns documents that contain a U.S. social security number.
 
-Arayabileceğiniz hassas bilgi türlerinin listesini görmek için uyumluluk portalında **Veri sınıflandırmaları** \> **Hassas bilgi türleri'ne** gidin. Hassas bilgi türlerinin listesini görüntülemek için Güvenlik & Uyumluluk PowerShell'deki **Get-DlpSensitiveInformationType** cmdlet'ini de kullanabilirsiniz.
+To see a list of the sensitive information types that you can search for, go to **Data classifications** \> **Sensitive info types** in the compliance portal. Or you can use the **Get-DlpSensitiveInformationType** cmdlet in Security & Compliance PowerShell to display a list of sensitive information types.
 
-özelliğini kullanarak `SensitiveType` sorgu oluşturma hakkında daha fazla bilgi için bkz. [Sitelerde depolanan hassas verileri bulmak için sorgu oluşturma](form-a-query-to-find-sensitive-data-stored-on-sites.md).
+For more information about creating queries using the `SensitiveType` property, see [Form a query to find sensitive data stored on sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
 
-### <a name="limitations-for-searching-sensitive-data-types"></a>Hassas veri türlerini arama sınırlamaları
+<!--### Limitations for searching sensitive data types
 
-- Özel hassas bilgi türlerini aramak için özelliğinde hassas bilgi türünün `SensitiveType` kimliğini belirtmeniz gerekir. Özel bir hassas bilgi türünün adını kullanmak (önceki bölümde yerleşik hassas bilgi türleri örneğinde gösterildiği gibi) hiçbir sonuç döndürmez. Yerleşik **ve özel hassas bilgi türleri** arasında ayrım yapmak için uyumluluk merkezindeki (veya PowerShell'deki Publisher özelliğindeki) Hassas bilgi türleri sayfasındaki **Publisher** **sütununu** kullanın. Yerleşik hassas veri türlerinin `Microsoft Corporation` **Publisher** özelliği için değeri vardır.
+- To search for custom sensitive information types, you have to specify the ID of the sensitive information type in the `SensitiveType` property. Using the name of a custom sensitive information type (as shown in the example for built-in sensitive information types in the previous section) will return no results. Use the **Publisher** column on the **Sensitive info types** page in the compliance center (or the **Publisher** property in PowerShell) to differentiate between built-in and custom sensitive information types. Built-in sensitive data types have a value of `Microsoft Corporation` for the **Publisher** property.
 
-  Kuruluşunuzdaki özel hassas veri türlerinin adını ve kimliğini görüntülemek için Güvenlik & Uyumluluk PowerShell'de aşağıdaki komutu çalıştırın:
+  To display the name and ID for the custom sensitive data types in your organization, run the following command in Security & Compliance PowerShell:
 
   ```powershell
   Get-DlpSensitiveInformationType | Where-Object {$_.Publisher -ne "Microsoft Corporation"} | FT Name,Id
   ```
 
-  Ardından arama özelliğindeki `SensitiveType` kimliği kullanarak özel hassas veri türünü içeren belgeleri döndürebilirsiniz; örneğin, `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
+  Then you can use the ID in the `SensitiveType` search property to return documents that contain the custom sensitive data type; for example, `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
 
-- Exchange Online posta kutularında bekleyen hassas verileri aramak için hassas bilgi türlerini ve `SensitiveType` arama özelliğini kullanamazsınız. Bu içeriğin tümü posta kutularında depolandığından 1:1 sohbet iletilerini, 1:N grup sohbet iletilerini ve Microsoft Teams'deki ekip kanalı konuşmalarını içerir. Ancak, aktarım sırasındaki hassas e-posta verilerini korumak için veri kaybı önleme (DLP) ilkelerini kullanabilirsiniz. Daha fazla bilgi için bkz. [Veri kaybını önleme hakkında bilgi edinme](dlp-learn-about-dlp.md) ve [Kişisel verileri arama ve bulma](/compliance/regulatory/gdpr).
+- You can't use sensitive information types and the `SensitiveType` search property to search for sensitive data at-rest in Exchange Online mailboxes. This includes 1:1 chat messages, 1:N group chat messages, and team channel conversations in Microsoft Teams because all of this content is stored in mailboxes. However, you can use data loss prevention (DLP) policies to protect sensitive email data in transit. For more information, see [Learn about data loss prevention](dlp-learn-about-dlp.md) and [Search for and find personal data](/compliance/regulatory/gdpr).-->
 
 ## <a name="search-operators"></a>Arama işleçleri
 

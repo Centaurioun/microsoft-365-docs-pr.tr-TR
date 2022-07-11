@@ -18,12 +18,12 @@ ms.custom: ''
 description: Yöneticiler, Exchange Online Protection (EOP) içinde istenmeyen posta önleme ilkelerini görüntülemeyi, oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d72b99b73a7c399147360364fc2de0a6cee6435b
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 780b7bc788cb38578e3729fac88a7c9d081f6732
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128733"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714760"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP'de istenmeyen posta önleme ilkelerini yapılandırma
 
@@ -34,11 +34,11 @@ ms.locfileid: "66128733"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları Exchange Online olmayan Microsoft 365 kuruluşlarda, gelen e-posta iletileri EOP tarafından istenmeyen postalara karşı otomatik olarak korunur. EOP, kuruluşunuzun istenmeyen postalara karşı genel savunmasının bir parçası olarak istenmeyen posta önleme ilkelerini (istenmeyen posta filtresi ilkeleri veya içerik filtresi ilkeleri olarak da bilinir) kullanır. Daha fazla bilgi için bkz [. İstenmeyen posta önleme koruması](anti-spam-protection.md).
+posta kutuları Exchange Online olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarında, gelen e-posta iletileri EOP tarafından istenmeyen postalara karşı otomatik olarak korunur. EOP, kuruluşunuzun istenmeyen postalara karşı genel savunmasının bir parçası olarak istenmeyen posta önleme ilkelerini (istenmeyen posta filtresi ilkeleri veya içerik filtresi ilkeleri olarak da bilinir) kullanır. Daha fazla bilgi için bkz [. İstenmeyen posta önleme koruması](anti-spam-protection.md).
 
 Yöneticiler varsayılan istenmeyen posta önleme ilkesini görüntüleyebilir, düzenleyebilir ve yapılandırabilir (ancak silemez). Daha fazla ayrıntı düzeyi için, kuruluşunuzdaki belirli kullanıcılar, gruplar veya etki alanları için geçerli olan özel istenmeyen posta önleme ilkeleri de oluşturabilirsiniz. Özel ilkeler her zaman varsayılan ilkeden önceliklidir, ancak özel ilkelerinizin önceliğini (çalıştırma sırasını) değiştirebilirsiniz.
 
-İstenmeyen posta önleme ilkelerini Microsoft 365 Defender portalında veya PowerShell'de (Exchange Online posta kutuları olan Microsoft 365 kuruluşlar için PowerShell Exchange Online de yapılandırabilirsiniz; Exchange Online olmayan kuruluşlar için tek başına EOP PowerShell  posta kutuları).
+İstenmeyen posta önleme ilkelerini Microsoft 365 Defender portalında veya PowerShell'de yapılandırabilirsiniz (Exchange Online posta kutuları olan Microsoft 365 kuruluşları için PowerShell Exchange Online; Exchange Online posta kutusu olmayan kuruluşlar için tek başına EOP PowerShell).
 
 İstenmeyen posta önleme ilkesinin temel öğeleri şunlardır:
 
@@ -65,7 +65,7 @@ Her kuruluşun Şu özelliklere sahip Varsayılan adlı yerleşik bir istenmeyen
 
 - Microsoft 365 Defender portalını adresinde <https://security.microsoft.com>açarsınız. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
 
-- Exchange Online PowerShell'e bağlanmak için bkz. [PowerShell'Exchange Online Bağlan](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [PowerShell'i Exchange Online Protection için Bağlan](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [Exchange Online Protection PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bu makaledeki yordamları gerçekleştirebilmeniz için **önce Exchange Online'de** izinlerin atanmış olması gerekir:
   - İstenmeyen posta önleme ilkelerini eklemek, değiştirmek ve silmek için **Kuruluş Yönetimi** veya **Güvenlik Yöneticisi** rol gruplarının üyesi olmanız gerekir.
@@ -75,12 +75,12 @@ Her kuruluşun Şu özelliklere sahip Varsayılan adlı yerleşik bir istenmeyen
 
   **Notlar**:
 
-  - kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'deki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+  - kullanıcıları Microsoft 365 yönetim merkezi ilgili Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'teki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
   - [Exchange Online'daki](/Exchange/permissions-exo/permissions-exo#role-groups) **Yalnızca Görüntüleme Kuruluş Yönetimi** rol grubu da özelliğe salt okunur erişim sağlar.
 
 - İstenmeyen posta önleme ilkeleri için önerilen ayarlarımız için bkz. [EOP istenmeyen posta önleme ilkesi ayarları](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-- İstenmeyen posta filtrelemeyi tamamen kapatamazsınız, ancak gelen iletideki çoğu istenmeyen posta filtrelemesini atlamak için bir posta akışı kuralı (aktarım kuralı olarak da bilinir) kullanabilirsiniz (örneğin, e-postayı Microsoft 365 teslim etmeden önce üçüncü taraf koruma hizmeti veya cihazı üzerinden yönlendiriyorsanız). Daha fazla bilgi için bkz. [İletilerde istenmeyen posta güvenilirlik düzeyini (SCL) ayarlamak için posta akışı kurallarını kullanma](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+- İstenmeyen posta filtrelemeyi tamamen kapatamazsınız, ancak gelen iletideki çoğu istenmeyen posta filtrelemesini atlamak için bir posta akışı kuralı (taşıma kuralı olarak da bilinir) kullanabilirsiniz (örneğin, e-postayı Microsoft 365'e teslim etmeden önce bir üçüncü taraf koruma hizmeti veya cihazı üzerinden yönlendiriyorsanız). Daha fazla bilgi için bkz. [İletilerde istenmeyen posta güvenilirlik düzeyini (SCL) ayarlamak için posta akışı kurallarını kullanma](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
   - Yüksek güvenilirlikli kimlik avı iletileri hala filtrelenir. EOP'deki diğer özellikler etkilenmez (örneğin, iletiler her zaman kötü amaçlı yazılım için taranır).
   - SecOps posta kutuları veya kimlik avı simülasyonları için istenmeyen posta filtrelemeyi atlamanız gerekiyorsa, posta akışı kurallarını kullanmayın. Daha fazla bilgi için bkz. [Üçüncü taraf kimlik avı simülasyonlarının kullanıcılara ve filtrelenmemiş iletilerin SecOps posta kutularına teslimini yapılandırma](configure-advanced-delivery.md).
 
@@ -172,7 +172,7 @@ Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi olu
 
      > <sup>1</sup> EOP artık gereksiz e-posta kuralını kullanmak yerine iletileri Gereksiz E-posta klasörüne yönlendirmek için kendi posta akışı teslim aracısını kullanıyor. **Set-MailboxJunkEmailConfiguration** cmdlet'indeki _Enabled_ parametresinin artık posta akışı üzerinde hiçbir etkisi yoktur. Daha fazla bilgi için bkz[. Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md).
      >
-     > EOP'nin şirket içi Exchange posta kutularını koruduğu karma ortamlarda, şirket içi Exchange posta akışı kurallarını (aktarım kuralları olarak da bilinir) yapılandırmanız gerekir. Bu posta akışı kuralları, posta kutusunda gereksiz e-posta kuralının iletiyi Gereksiz E-posta klasörüne taşıyabilmesi için EOP istenmeyen posta filtreleme kararını çevirir. Ayrıntılar için bkz. [Karma ortamlarda Gereksiz E-posta klasörüne istenmeyen posta göndermek için EOP'yi yapılandırma](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+     > EOP'nin şirket içi Exchange posta kutularını koruduğu karma ortamlarda, şirket içi Exchange'de posta akışı kurallarını (aktarım kuralları olarak da bilinir) yapılandırmanız gerekir. Bu posta akışı kuralları, posta kutusunda gereksiz e-posta kuralının iletiyi Gereksiz E-posta klasörüne taşıyabilmesi için EOP istenmeyen posta filtreleme kararını çevirir. Ayrıntılar için bkz. [Karma ortamlarda Gereksiz E-posta klasörüne istenmeyen posta göndermek için EOP'yi yapılandırma](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
      >
      > <sup>2</sup> Bu değeri, iletiyi filtrelemek veya yönlendirmek için posta akışı kurallarında koşul olarak kullanabilirsiniz.
      >
@@ -199,7 +199,7 @@ Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi olu
 
    - **Bu e-posta adresine yeniden yönlendir**: Bu kutu gereklidir ve yalnızca istenmeyen posta filtreleme kararı için eylem olarak **E-posta adresine yeniden yönlendirme iletisini** seçtiyseniz kullanılabilir. İletiyi iletmek istediğiniz e-posta adresini girin. Noktalı virgülle ayrılmış birden çok değer girebilirsiniz (;).
 
-   - **Güvenlik İpuçları etkinleştir**: Güvenlik İpuçları varsayılan olarak etkindir, ancak onay kutusunu temizleyerek bunları devre dışı bırakabilirsiniz.
+   - **Güvenlik İpuçlarını Etkinleştir**: Güvenlik İpuçları varsayılan olarak etkindir, ancak onay kutusunu temizleyerek bunları devre dışı bırakabilirsiniz.
 
    - **Sıfır saatlik otomatik temizlemeyi (ZAP) etkinleştirme**: ZAP, Exchange Online posta kutularına zaten teslim edilmiş iletileri algılar ve üzerinde işlem uygular. Daha fazla bilgi için bkz. [Sıfır saatlik otomatik temizleme - istenmeyen postalara ve kötü amaçlı yazılımlara karşı koruma](zero-hour-auto-purge.md).
 
@@ -225,7 +225,7 @@ Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi olu
    >
    > Engellenen etki alanları listesine etki alanlarını ekleyerek etki alanlarını el ile engellemek tehlikeli değildir, ancak yönetim iş yükünüzü artırabilir. Daha fazla bilgi için bkz. [EOP'de engelleyici gönderen listeleri oluşturma](create-block-sender-lists-in-office-365.md).
    >
-   > Filtrelerimizin bir iletiyi kaçıracağı, filtreleme kararına katılmadığınız veya sistemlerimizin bu iletiyi yakalaması zaman alan zamanlar olacaktır. Bu gibi durumlarda, geçerli filtreleme kararlarını geçersiz kılmak için izin verilenler listesi ve blok listesi kullanılabilir. Ancak, bu listeleri düzenli ve geçici olarak kullanmanız gerekir: longs listeleri yönetilemez hale gelebilir ve filtreleme yığınımız yapması gereken şeyi yapmalıdır. İzin verilen bir etki alanını uzun süre tutacaksanız, gönderene etki alanının kimliğinin doğrulandığını doğrulamasını ve değilse DMARC reddetme olarak ayarlanmasını söylemeniz gerekir.
+   > Filtrelerimizin bir iletiyi kaçıracağı, filtreleme kararına katılmadığınız veya sistemlerimizin bu iletiyi yakalaması zaman alan zamanlar olacaktır. Bu gibi durumlarda, geçerli filtreleme kararlarını geçersiz kılmak için izin verilenler listesi ve blok listesi kullanılabilir. Ancak, bu listeleri düzenli ve geçici olarak kullanmanız gerekir: longs listeleri yönetilemez hale gelebilir ve filtreleme yığınımız yapması gereken şeyi yapmalıdır. İzin verilen bir etki alanını uzun süre tutacaksanız, gönderene etki alanının kimliğinin doğrulandığını doğrulamasını ve uygun şekilde DMARC reddetme olarak ayarlanmasını söylemeniz gerekir.
 
    Listelerden herhangi birine girdi ekleme adımları aynıdır:
 

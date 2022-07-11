@@ -21,12 +21,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0b8b285573c9a2f78037e2d29ea3a57ddfa2b306
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 1cb523725eee6f8eec2330dee3ccd8bb8d6ab0f7
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686305"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714475"
 ---
 # <a name="learn-about-communication-compliance"></a>İletişim uyumluluğu hakkında daha fazla bilgi edinme
 
@@ -104,7 +104,6 @@ Yerleşik düzeltme iş akışları, kuruluşunuzda ilke eşleşmeleri olan ilet
 - **Esnek düzeltme iş akışı**: Yeni düzeltme iş akışı, iletileri diğer gözden geçirenlere iletme ve ilke eşleşmeleri olan kullanıcılara e-posta bildirimleri gönderme gibi yeni seçenekler de dahil olmak üzere ilke eşleşmeleri üzerinde hızla işlem yapmanıza yardımcı olur.
 - **Konuşma ilkesi eşleştirme**: Konuşmalardaki iletiler, konuşmaların iletişim ilkelerinizle ilişkisi hakkında daha fazla görünürlük sağlamak için ilke eşleşmelerine göre gruplandırılır. Örneğin, *Bekleyen Uyarılar* görünümünde eşleşen konuşma ilkesi, Teams kanalında Uygunsuz İçerik ilkenizle eşleşen tüm iletileri otomatik olarak gösterir. Konuşmadaki Uygunsuz İçerik ilkesiyle eşleşmeyen diğer iletiler görüntülenmez.
 - **Anahtar sözcük vurgulama**: Terim eşleştirme ilkesi koşulları, gözden geçirenlerin ilke uyarılarını hızla bulmasına ve düzeltmesine yardımcı olmak için ileti metni görünümünde vurgulanır.
-- **Tam ve neredeyse yinelenen algılama**: İletişim uyumluluk ilkeleriyle eşleşen tam terimleri taramaya ek olarak, yakın yinelenen algılama grupları gözden geçirme sürecinizi hızlandırmaya yardımcı olmak için kısa süre içinde benzer terimler ve iletiler oluşturur.
 - **Optik karakter tanıma (OCR) (önizleme)**: E-postaya veya Microsoft Teams sohbet iletilerine eklenmiş veya eklenmiş görüntülerdeki basılı ve el yazısı metinleri tarayın, algılayın ve araştırın.
 - **Yeni filtreler**: Gönderen, alıcı, tarih, etki alanları ve daha birçok alan için ileti filtreleri ile ilke uyarılarını daha hızlı araştırın ve düzeltin.
 - **geliştirilmiş ileti görünümleri**: Araştırma ve düzeltme eylemleri artık yeni ileti kaynağı ve metin görünümleri ile daha hızlıdır. Düzeltme eylemleri yapılırken tam bağlam sağlamak için artık ileti ekleri görüntülenebilir.

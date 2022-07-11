@@ -1,5 +1,5 @@
 ---
-title: İstenmeyen posta, istenmeyen posta olmayan ve kimlik avı iletilerini Microsoft'a bildirme
+title: İstenmeyen posta, istenmeyen posta olmayan, kimlik avı ve şüpheli e-postaları Microsoft'a bildirme
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -14,17 +14,17 @@ search.appverid:
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
-description: Yöneticiler iyi ve kötü iletileri, URL'leri, e-posta eklerini ve yöneticileri analiz için Microsoft'a bildirmenin farklı yollarını öğrenebilir.
+description: Şüpheli bir e-postayı Microsoft'a Nasıl yaparım? bildirdiniz? İletileri, URL'leri, e-posta eklerini analiz için Microsoft'a bildirin. İstenmeyen posta ve kimlik avı e-postalarını bildirmeyi öğrenin.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 29fd6b74901c6ad85d1ece759245f1b85e672a23
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 67b4d0a2dc3f52c66c1fea406a51005daa43093a
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663426"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714453"
 ---
-# <a name="report-items-to-microsoft"></a>Öğeleri Microsoft'a bildirme
+# <a name="how-do-i-report-a-suspicious-email-to-microsoft"></a>Şüpheli bir e-postayı Microsoft'a Nasıl yaparım? bildirdiniz?
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -33,12 +33,14 @@ ms.locfileid: "66663426"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarında, kullanıcılar ve yöneticiler e-posta iletilerini, URL'leri ve e-posta eklerini Microsoft'a raporlamak için birkaç farklı yönteme sahiptir. 
- 
+Şüpheli e-postalarla ne yapacağız merak mı ediyorsunuz? Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarında, *kullanıcıların* ve *yöneticilerin* şüpheli bir e-posta iletisini, URL'yi veya e-posta eklerini Microsoft'a bildirmenin farklı yolları vardır.
+
 Ayrıca, Uç Nokta için Microsoft Defender yöneticileri olan Microsoft 365 kuruluşları da dosyaları raporlamak için çeşitli yöntemlere sahiptir.
 
 Birleşik gönderim deneyimi hakkında daha fazla bilgi gösteren bu videoyu izleyin.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50HhM]
+
+## <a name="report-a-suspicious-email-to-microsoft"></a>Şüpheli bir e-postayı Microsoft'a bildirme
 
 |Yöntem|Açıklama|
 |---|---|

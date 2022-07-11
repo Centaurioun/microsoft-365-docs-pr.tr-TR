@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4dc790b780b6c066eda635b081d412654468b52f
-ms.sourcegitcommit: 244ab1b8fe98363f2bfeec337bf68e88ab31d789
+ms.openlocfilehash: daa8eeab7f62b760b45e6c1571972dcd0ee83ae6
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687136"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714497"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>İletişim uyumluluğu uyarılarını araştırma ve çözümleme
 
@@ -87,28 +87,6 @@ Aşağıdaki tabloda filtre ayrıntıları özetlenmiştir:
 8. Seçili filtreleri filtre sorgusu olarak kaydetmek isterseniz, en az bir filtre değeri yapılandırdıktan sonra **sorgu denetimini kaydet'i** seçin. Filtre sorgusu için bir ad girin ve **Kaydet'i** seçin. Bu filtre yalnızca bu ilke için kullanılabilir ve **Filtreler** ayrıntıları sayfasının **Kayıtlı filtre sorguları** bölümünde listelenir.
 
     ![İletişim uyumluluk filtresi ayrıntı denetimleri.](../media/communication-compliance-filter-detail-controls.png)
-
-### <a name="using-near-and-exact-duplicate-analysis"></a>Yakın ve tam yinelenen analizi kullanma
-
-İletişim uyumluluk ilkeleri, ek yapılandırma adımları olmadan iletinin yakın ve tam yinelemelerini otomatik olarak tarar ve önceden gruplandırılır. Bu görünüm, benzer iletiler üzerinde tek tek veya grup olarak hızlı bir şekilde işlem yapmanızı sağlayarak gözden geçirenlerin ileti araştırma yükünü azaltır. Yinelemeler algılandıkçe, Düzeltme eylemi araç çubuğunda **Yakın Yinelemeler** ve/veya **Tam Yinelemeler** denetimleri görüntülenir. Yakın veya tam yinelemeler bulunamazsa bu görünüm kullanılamaz.
-
-#### <a name="to-remediate-duplicates"></a>Yinelenenleri düzeltmek için
-
-1. Microsoft 365 kuruluşunuzdaki bir yönetici hesabının kimlik bilgilerini kullanarak [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) oturum açın.
-
-2. Microsoft Purview uyumluluk portalı **İletişim uyumluluğu'na** gidin.
-
-3. **İlkeler** sekmesini seçin ve araştırmak üzere bir ilke seçin, **İlke** sayfasını açmak için çift tıklayın.
-
-4. yinelenen iletileri görüntülemek için **İlke** sayfasında **Bekleyen** veya **Çözümlendi** sekmesini seçin.
-
-5. Yineleme ayrıntıları sayfasını açmak için **Yakın Yinelemeler** veya **Tam Yinelemeler** denetimlerini seçin.
-
-6. Bu iletiler için düzeltme eylemi denetimleri için bir veya daha fazla ileti seçin.
-
-7. Eylemi varsayılan filtre olarak seçili yinelenen **iletilere** uygulamak için **Çözümle**, **Bildir**, Yükselt veya **İndir'i** seçin.
-
-8. İletilerde düzeltme eylemlerini tamamladıktan sonra **Kapat'ı** seçin.
 
 ## <a name="remediate-alerts"></a>Uyarıları düzeltme
 

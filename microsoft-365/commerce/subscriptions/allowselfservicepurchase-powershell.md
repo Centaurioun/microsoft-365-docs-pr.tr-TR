@@ -21,12 +21,12 @@ search.appverid:
 description: Self servis satın alma özelliğini açmak veya kapatmak için AllowSelfServicePurchase PowerShell cmdlet'ini kullanmayı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 4/7/2022
-ms.openlocfilehash: 7c9ac6a1e58049d188d4cd29441d8e0689f2c787
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: d9be7179ed26a35b2e04af8386f161de935b1ae1
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530848"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714716"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell modülü için AllowSelfServicePurchase kullanma
 
@@ -108,6 +108,10 @@ Aşağıdaki tabloda, kullanılabilir ürünler ve **bunların ProductId'leri** 
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows Hibrit Avantajı ile Windows 365 Business | CFQ7TTC0HX99 |
 | Microsoft 365 F3 | CFQ7TTC0LH05 |
+| Dynamics 365 Marketing | CFQ7TTC0LH3N |
+| Dynamics 365 Marketing Attach | CFQ7TTC0LHWP | 
+| Dynamics 365 Marketing Ek Uygulaması | CFQ7TTC0LHVK |
+| Dynamics 365 Marketing Ek Üretim Dışı Uygulama | CFQ7TTC0LHWM |
 
 *Bu kimlikler değişti. Eski kimlikleri kullanan ürünleri daha önce engellediyseniz, yeni kimlikler kullanılarak otomatik olarak engellenir. Ek çalışma gerekmez.
 

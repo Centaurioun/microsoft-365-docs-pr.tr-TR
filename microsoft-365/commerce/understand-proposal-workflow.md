@@ -19,21 +19,21 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft ürün ve hizmetlerini satın almanıza yardımcı olacak teklifler hakkında bilgi edinin.
 ROBOTS: NOINDEX
-ms.date: 04/28/2022
-ms.openlocfilehash: e54b68b5090287d7a61e9dea70726b7ec9e83c72
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.date: 07/11/2022
+ms.openlocfilehash: e6e24d56346f67c40f114cf7ab23345d4511b026
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485989"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714081"
 ---
 # <a name="understand-the-microsoft-proposal-workflow"></a>Microsoft teklif iş akışını anlama
 
-Teklif, kuruluşunuzun Microsoft ürün ve hizmetlerini satın alması için Microsoft tarafından sunulan resmi bir tekliftir. Teklifinizin belirli ürünlerini, hizmetlerini ve koşullarını belirlemek için doğrudan bir Microsoft temsilcisiyle birlikte çalışırsınız.
+Teklif, kuruluşunuzun Microsoft ürün ve hizmetlerini satın alması için Microsoft tarafından sunulan resmi bir tekliftir. Teklifler, kuruluşunuzun tedariki veya BT departmanının Microsoft'a verdiği büyük siparişleri temsil eder.
 
-Microsoft temsilcisi, sizin ve temsilcinizin tartıştığı öğeleri içeren bir teklif taslağı hazırlar. Temsilci, Azure market portalının bağlantısını içeren bir e-posta gönderir. Site, siz ve kuruluşunuz için özel olarak hazırlanmış teklifi içerir.
+Teklif iş akışı başlamadan önce tedarik departmanınız, kuruluşunuzun ihtiyaç duyduğu belirli ürün ve hizmetleri belirlemek için doğrudan belirli bir Microsoft temsilcisiyle birlikte çalışır. Ardından Microsoft temsilciniz bir teklif taslağı hazırlar ve tedarik departmanınıza Teklifi Azure Market portalında kabul etme bağlantısını içeren bir e-posta gönderir. Site, siz ve kuruluşunuz için özel olarak hazırlanmış teklifi içerir.
 
-Bildirim e-postasını aldıktan sonra teklif sitesinin bağlantısını izleyin. Sitede oturum açtığınızda teklif gözden geçirme işlemini başlatabilirsiniz.
+Bağlantıyı izledikten ve teklif sitesinde oturum açtığınızda teklif gözden geçirme işlemini başlatabilirsiniz. Teklif incelemesini ve kullanıma almayı tamamladıktan sonra, seçtiğiniz faturalama planına göre satın alınan ürünler için bir fatura alırsınız. Tekliflerde faturalamanın nasıl çalıştığını öğrenmek için aşağıdaki [Faturalamayı anlama](#understand-invoicing) bölümüne bakın.
 
 ## <a name="prerequisites-for-buying-items-with-a-proposal"></a>Teklifle ürün satın almak için önkoşullar
 
@@ -75,7 +75,7 @@ Bir sözleşmeyi başarıyla imzalamak veya ürün ve hizmet satın almak için 
 
 Bu yeni bir ödeme hesabıysa ve kimse sözleşmeyi kabul etmediyse, aşağıdakiler koşuluyla otomatik olarak ödeme hesabı sahibi olursunuz:
 
-- Teklifte adı geçen kişi **mi yoksa**
+- Teklifte adı geçen kişi mi yoksa
 - Kuruluşunuz için zaten [bir Azure Active Directory genel yöneticisi](/azure/active-directory/roles/permissions-reference#global-administrator) misiniz?
 
 ## <a name="what-is-the-overall-workflow"></a>Genel iş akışı nedir?
@@ -88,7 +88,7 @@ Genel teklif iş akışı şöyle görünür:
 - Teklifi gözden geçirir, gerekirse MCA'yı kabul edip ödeme işlemini tamamlarsınız.
   > [!IMPORTANT]
   > Kuruluşunuz adına bir MCA imzalama yetkiniz olmalıdır. Bu yetkiye sahip değilseniz, bunu yapan birinin bu adımı gerçekleştirmesi gerekir.
-- Ödeme tamamlandıktan sonra ürün ve hizmetlerinizi ayarlamak için size ek bağlantılar verilir.
+- Ödeme tamamlandıktan sonra ürün ve hizmetlerinizi ayarlamak için size daha fazla bağlantı verilir.
 
 ## <a name="proposal-terms"></a>Teklif koşulları
 
@@ -98,7 +98,7 @@ Aşağıdaki tabloda, teklifinizde ve teklif sitesinde görünen terimler ve tan
 |---|---|
 | Ödeme hesabı | Hesap ayarlarınızı, faturalarınızı, ödeme yöntemlerinizi ve ürünlerinizi yönetmek için kullanılan bir hesap. |
 | Faturalama profili | Kuruluşunuz hakkında, faturanıza hangi öğelerin dahil olduğunu ve faturalarınız için ödeme yönteminizi özelleştirmenize olanak tanıyan bilgiler. Faturalama profili faturalama hesabı adını, belirli faturalama profili için kullanılan ödeme yöntemlerini, iletişim bilgilerini, fatura ayarlarını ve faturalama profilini değiştirmenize, faturaları ödemenize ve ürün ve hizmet satın almanıza olanak sağlayan izinleri içerir. |
-| Mevcut sözleşmeler | Kuruluşunuzun Microsoft ile önceden var olan tüm sözleşmeleri. Bu, bir Kurumsal Anlaşma, Microsoft Ürün & Hizmet Sözleşmesi veya Microsoft Müşteri Sözleşmesi içerebilir ancak bunlarla sınırlı değildir. |
+| Mevcut sözleşmeler | Kuruluşunuzun Microsoft ile önceden var olan tüm sözleşmeleri. Sözleşmeler bir Kurumsal Anlaşma, Microsoft Ürün & Hizmet Sözleşmesi veya Microsoft Müşteri Sözleşmesi içerebilir ancak bunlarla sınırlı değildir. |
 | Microsoft Müşteri Sözleşmesi (MCA) | Kuruluşunuz tarafından Microsoft ile tutulan hesabın hüküm ve koşullarını özetleyen bir sözleşme. |
 | Microsoft temsilcisi | Siz ve kuruluşunuz için bir teklif hazırlayan yetkili bir Microsoft temsilcisi. |
 | Organizasyon | Microsoft ürünlerini, teknolojilerini veya hizmetlerini kullanan bir tüzel kişilik. |
@@ -113,7 +113,7 @@ Oturum açdıktan sonra, ilk yapmanız gereken kuruluşunuzun bilgilerini gözde
 
 **Kuruluşunuz** bölümünde kendisiyle ilişkilendirilmiş ödeme hesabı görüntülenir. Ödeme hesabı bilgileri mevcut bir ödeme hesabından çekilir veya Microsoft temsilcisi tarafından sizin için oluşturulur. Kuruluşunuz başka bir kuruluşun bağlı kuruluşuysa, söz konusu kuruluşun adını ve adresini içeren bir **Müşteri Adayı kuruluşu** bölümü de görürsünüz.
 
-Kuruluşunuz Microsoft ile ilk kez ticari bir ilişki kuruyorsa ve henüz bir MCA **imzalamadıysanız, Kuruluşunuz** veya **Müşteri Adayı kuruluşunuz** altındaki bilgiler yanlışsa, sizin için değişiklik yapmak için temsilciye başvurun. MCA'yı kabul ettikten sonra, Microsoft 365 yönetim merkezi ödeme [hesapları](https://go.microsoft.com/fwlink/p/?linkid=2084771) sayfasında kuruluşunuzun adresini ve iletişim bilgilerini gözden geçirebilir ve değiştirebilirsiniz. Kuruluşunuzun adı değişirse, güncelleştirilmiş olması için bir hizmet isteği açın. [Hizmet isteğini açmayı öğrenin](../admin/get-help-support.md).
+Bu sipariş, kuruluşunuz microsoft ile ilk kez ticari ilişki kuruyorsa ve henüz bir MCA **imzalamadıysanız, Kuruluşunuz** veya **Müşteri Adayı kuruluşunuz** altındaki bilgiler yanlışsa, sizin için değişiklik yapmak için temsilciye başvurun. MCA'yı kabul ettikten sonra, Microsoft 365 yönetim merkezi ödeme [hesapları](https://go.microsoft.com/fwlink/p/?linkid=2084771) sayfasında kuruluşunuzun adresini ve iletişim bilgilerini gözden geçirebilir ve değiştirebilirsiniz. Kuruluşunuzun adı değişirse, güncelleştirilmiş olması için bir destek isteği açın. [Destek isteği açmayı öğrenin](../admin/get-help-support.md).
 
 ### <a name="your-information"></a>Bilgileriniz
 
@@ -154,7 +154,7 @@ Kullanıma alma sayfasında aşağıdaki bölümler yer alır:
 
 Bu bölümde teklif için kullanılan ödeme hesabı gösterilir. Herhangi bir bilgiyi değiştirmeniz gerekiyorsa **Düzenle** bağlantısını seçin. Kuruluşunuzun Vergi Kimliğini eklemek için **Düzenle** bağlantısını da kullanabilirsiniz. Vergi Kimliği **, Alıcı** bölümünde listelenen ülkeyle ilgili olmalıdır. Vergi muafiyetiniz varsa, vergi muafiyeti durumunu istemek için bir destek bileti açmanız gerekir.
 
-Vergi kimlikleri ve vergi muafiyeti durumuna başvurma hakkında daha fazla bilgi edinmek için bkz. [Vergi bilgileri](billing-and-payments/tax-information.md).
+Vergi kimlikleri ve vergi muafiyeti durumuna başvurma hakkında daha fazla bilgi edinmek için bkz. [Microsoft 365 vergi bilgileri](billing-and-payments/tax-information.md).
 
 ### <a name="billed-to"></a>Faturalanan
 
@@ -164,12 +164,12 @@ Faturalama profilleri hakkında bilgi için bkz. [Faturalama profillerini yönet
 
 ### <a name="proposal-items-in-this-order"></a>Bu siparişteki teklif öğeleri
 
-Bu bölümde teklife dahil edilen tüm öğelerin listesi gösterilir. Liste aşağıdaki kategorilerden birini veya daha fazlasını içerebilir:
+Bu bölümde, teklife dahil edilen ve aşağıdaki kategorilerden birini veya daha fazlasını içerebilen tüm öğelerin listesi gösterilir:
 
 - **Ek koşullar** MCA'da kuruluşunuza ait koşulları içeren değişikliklerin listesi. Örneğin, bu liste HIPAA veya GDPR koşullarını içerebilir.
 - **Şimdi satın alın** Teklif kabul iş akışının sonundaki ödeme sırasında ödeme yaptığınız öğelerin listesi.
 - **İndirimler (gelecekteki ücretlere uygulanır)** Teklifin bir parçası olarak aldığınız indirimlerin listesi.
-- **Dahil** Teklif paketine ek ücret ödemeden dahil edilen öğelerin listesi. Bu öğelerden bazılarının gelecekte bunlarla ilişkili bir maliyeti olabilir.
+- **Dahil** Teklif paketinin bir parçası olarak ek ücret ödemeden dahil edilen öğelerin listesi. Bu öğelerden bazılarının gelecekte bunlarla ilişkili bir maliyeti olabilir.
 
 > [!NOTE]
 > Teklifiniz, gelecekteki başlangıç tarihine sahip abonelikleri içerebilir. Daha fazla bilgi için bkz. [Gelecekteki başlangıç tarihleri için faturalamayı anlama](billing-and-payments/future-start-date.md).
@@ -190,6 +190,6 @@ Kurumsal Anlaşma olan mevcut bir Azure müşterisiyseniz ve ilk kez bir MCA imz
 
 ## <a name="understand-invoicing"></a>Faturalamayı anlama
 
-Siparişinizi kullanıma alıp tamamladıktan sonra 24-48 saat içinde ilk fatura gönderilir. Bundan sonra, her ayın 5'inde fatura alırsınız. Aylık fatura, önceki aya ait ücretleri içerir. Hesabınız için kredileriniz varsa, bunlar faturalama profilinizin para kredilerinden düşülür ve fatura bakiyenize uygulanır. Krediler uygulandıktan sonra kalan bakiye vadesi geçmiş bakiyedir. Faturayı ödemek için faturalama tarihinden itibaren 30 gününüz vardır.
+Siparişinizi kullanıma alıp tamamladıktan sonra 24-48 saat içinde ilk fatura gönderilir. Bundan sonra, her ayın beşinde fatura alırsınız. Aylık fatura, önceki aya ait ücretleri içerir. Hesabınız için kredileriniz varsa, bunlar faturalama profilinizin para kredilerinden düşülür ve fatura bakiyenize uygulanır. Krediler uygulandıktan sonra kalan bakiye vadesi geçmiş bakiyedir. Faturayı ödemek için faturalama tarihinden itibaren 30 gününüz vardır.
 
 Çek veya havalelerin nereye gönderileceğine ilişkin ödeme yönergeleri faturanızın PDF kopyasına eklenir. Faturanızı görüntülemek veya indirmek için bkz. [Faturanızı veya faturanızı görüntüleme](billing-and-payments/view-your-bill-or-invoice.md).

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 04/08/2022
+ms.date: 07/08/2022
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Microsoft Purview'da eBulma (Premium) çözümü hakkında bilgi edinin. Bu makalede, iç ve dış araştırmalarını yönetmenize yardımcı olacak bir araç olan Microsoft Purview'daki eKeşif (Premium) konusuna genel bir bakış sağlanır. Ayrıca, yasal araştırmalarınızı yönetmek için eKeşif (Premium) kullanmanın iş nedenlerini de çerçeveler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5331ada9baf364f62c44c63a5e2e5b2b4d060292
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 95dbeb33ad054845b7d2a7a5bc019ce0cd727093
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639852"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714585"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Microsoft Purview eKeşif genel bakış (Premium)
 
@@ -93,38 +93,9 @@ Microsoft 365'teki yerleşik eBulma (Premium) iş akışı, Elektronik Bulma Ba�
 
 ## <a name="subscriptions-and-licensing"></a>Abonelikler ve lisanslama
 
-eKeşif (Premium) için lisanslama için uygun kuruluş aboneliği ve kullanıcı başına lisanslama gerekir.
+Kullanıcının eBulma (Premium) hizmetinden yararlanma haklarını sağladığı lisanslarla ilgili bilgi için lütfen [güvenlik & uyumluluğu için Microsoft 365 kılavuzuna](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) bakın ve [Microsoft 365 Karşılaştırma tablosundaki](https://go.microsoft.com/fwlink/?linkid=2139145) "eBulma ve denetim" bölümüne bakın. 
 
-- **Kuruluş aboneliği:** Microsoft Purview uyumluluk portalı eBulma'ya (Premium) erişmek için kuruluşunuzun aşağıdakilerden birine sahip olması gerekir:
-
-  - Microsoft 365 E5 veya Office 365 E5 aboneliği
-  
-  - E5 Uyumluluk eklentisini içeren Microsoft 365 E3 aboneliği
-
-  - E5 eKeşif ve Denetim eklentisi ile aboneliği Microsoft 365 E3
-
-  - A5 veya Office 365 Eğitim A5 aboneliğini Microsoft 365 Eğitim
-
-   Mevcut bir Microsoft 365 E5 planınız yoksa ve eKeşif 'i (Premium) denemek istiyorsanız[, microsoft 365'i](/office365/admin/try-or-buy-microsoft-365) mevcut aboneliğinize ekleyebilir veya Microsoft 365 E5 [deneme sürümüne kaydolabilirsiniz](https://www.microsoft.com/microsoft-365/enterprise).
-
-- **Kullanıcı başına lisanslama:** Bir kullanıcıyı Advance eDiscovery olayına koruyucu olarak eklemek için, kuruluş aboneliğinize bağlı olarak bu kullanıcıya aşağıdaki lisanslardan birinin atanması gerekir:
-
-  - Microsoft 365: Kullanıcılara aşağıdakilerden biri atanmalıdır:
-  
-    - Microsoft 365 E5 lisansı, E5 Uyumluluk eklentisi lisansı veya E5 eKeşif ve Denetim eklentisi
-
-    - Microsoft 365 Ön Hat kullanıcılarına bir F5 Uyumluluğu veya F5 Güvenlik & Uyumluluğu eklentisi atanmalıdır
-
-    - Microsoft 365 Eğitim kullanıcılara A5 lisansı atanmalıdır
-
-  - Office 365: Kullanıcılara Office 365 E5 veya Office 365 Eğitim A5 lisansı atanmalıdır.
-
-Lisanslama hakkında bilgi için [Microsoft 365 Karşılaştırma tablosundaki](https://go.microsoft.com/fwlink/?linkid=2139145) "eBulma ve denetim" bölümüne bakın.
-
-Lisans atama hakkında bilgi için bkz. [Kullanıcılara lisans atama](/microsoft-365/admin/manage/assign-licenses-to-users).
-
-> [!NOTE]
-> Kullanıcıların eBulma (Premium) olayına koruyucu olarak eklenmesi için yalnızca E5 veya A5 lisansına (veya uygun eklenti lisansına) ihtiyacı vardır. Bt yöneticileri, eBulma yöneticileri, avukatlar, yardımcılar veya vakaları yönetmek ve olay verilerini gözden geçirmek için eKeşif (Premium) kullanan araştırmacıların E5, A5 veya eklenti lisansına ihtiyacı yoktur.
+Lisans atama hakkında bilgi için bkz. [Kullanıcılara lisans atama](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## <a name="get-started-with-ediscovery-premium"></a>eKeşif'i kullanmaya başlama (Premium)
 

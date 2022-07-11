@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9cc85dc768696169c8da164975278a661c755f94
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 0949e979bfc2f0e2f784342e2a7c2f326908b49d
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492435"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714629"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender’daki yenilikler
 
@@ -60,13 +60,19 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 - [iOS'ta Uç Nokta için Defender'daki yenilikler](ios-whatsnew.md)
 - [Linux'ta Uç Nokta için Defender'daki yenilikler](linux-whatsnew.md)
 
+
+## <a name="july-2022"></a>Temmuz 2022
+- - [Etki alanı denetleyicisi cihazları ekleme - Değerlendirme laboratuvarı geliştirmesi](evaluation-lab.md#add-a-domain-controller)<br>Genel kullanıma sunuldu - Birden çok cihazda yanal hareket ve çok aşamalı saldırılar gibi karmaşık senaryoları çalıştırmak için bir etki alanı denetleyicisi ekleyin.
+
+
+
 ## <a name="june-2022"></a>Haziran 2022
 - [Sunucular için Defender Plan 2 artık MDE birleşik çözümüyle tümleşiyor](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)<br>Artık tek bir düğme kullanarak Windows Server 2012 R2 ve 2016 için modern, birleşik çözümü Sunucular için Defender Plan 2 kapsamındaki sunuculara dağıtmaya başlayabilirsiniz.
 
 ## <a name="may-2022"></a>Mayıs 2022
 - [macOS için kurcalama koruması (önizleme)](tamperprotection-macos.md)<br>Kurcalama koruması, macOS'ta Uç Nokta için Microsoft Defender yetkisiz olarak kaldırılmasını önlemeye yardımcı olur.
 
-- [Etki alanı denetleyicisi cihazları ekleme - Değerlendirme laboratuvarı geliştirmesi (önizleme)](evaluation-lab.md#add-a-domain-controller-preview)<br>Birden çok cihazda yanal hareket ve çok aşamalı saldırılar gibi karmaşık senaryoları çalıştırmak için bir etki alanı denetleyicisi ekleyin.
+- [Etki alanı denetleyicisi cihazları ekleme - Değerlendirme laboratuvarı geliştirmesi (önizleme)](evaluation-lab.md#add-a-domain-controller)<br>Birden çok cihazda yanal hareket ve çok aşamalı saldırılar gibi karmaşık senaryoları çalıştırmak için bir etki alanı denetleyicisi ekleyin.
 
 ## <a name="april-2022"></a>Nisan 2022
 - [Windows Server 2012 R2 ve Windows Server 2016) için ekleme ve özellik eşlikleri güncelleştirildi](configure-server-endpoints.md)<br/> Yeni birleşik çözüm paketi genel kullanıma sunuldu ve bağımlılıkları ve yükleme adımlarını kaldırarak sunucuları eklemeyi kolaylaştırıyor. Ayrıca, bu birleşik çözüm paketi birçok yeni özellik geliştirmesi ile birlikte gelir.

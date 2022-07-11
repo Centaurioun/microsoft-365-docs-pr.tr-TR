@@ -1,8 +1,8 @@
 ---
-title: Olaylar kuyruğu görüntüleme ve düzenleme
+title: Olay sırasını görüntüleyin ve düzenleyin
 ms.reviewer: ''
-description: Olay listesine bakın ve listeyi sınırlandıracak filtreler uygulayarak daha odaklanmış bir görünüm elde etmeyi öğrenin.
-keywords: görüntüleme, düzenleme, olaylar, toplama, soruşturmalar, kuyruk, ttp
+description: Olay listesine bakın ve listeyi sınırlamak ve daha odaklanmış bir görünüm elde etmek için filtre uygulamayı öğrenin.
+keywords: görüntüleme, düzenleme, olaylar, toplama, araştırma, kuyruk, ttp
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,60 +15,61 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: df5cbf5297a17dafb80a93ed49c7f7d81bc49d68
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: a2d75b935c19a20c37ecdbdb77feff73bbed4a79
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474387"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714651"
 ---
-# <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Olay kuyruğu Uç Nokta için Microsoft Defender ve düzenleme
+# <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Uç Nokta için Microsoft Defender Olayları sırasını görüntüleme ve düzenleme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-Olaylar **sırası,** ağ bağlantısında yer alan cihazlardan bayrakla işaretlenmiş olay koleksiyonunu gösterir. Bilgili bir siber güvenlik yanıtı kararı önceliklerini belirlemek ve oluşturmak için olaylarda sıralamanıza yardımcı olur.
+**Olaylar kuyruğu**, ağınızdaki cihazlardan bayrak eklenmiş bir olay koleksiyonunu gösterir. Bilinçli bir siber güvenlik yanıtı kararını önceliklendirmek ve oluşturmak için olayları sıralamanıza yardımcı olur.
 
-Varsayılan olarak, kuyrukta son 30 günde görülen olaylar görüntülenir ve en son olay listenin en üstünde yer alıyor ve en son olayları önce görmene yardımcı olur.
+Kuyruk varsayılan olarak son 30 gün içinde görülen olayları görüntüler ve en son olay listenin en üstünde gösterilir ve en son olayları ilk olarak görmenize yardımcı olur.
 
-Olaylar sırası görünümünü özelleştirmek için seçebileceğiniz çeşitli seçenekler vardır. 
+Olaylar kuyruğu görünümünü özelleştirmek için aralarından seçim yapabileceğiniz çeşitli seçenekler vardır. 
 
-Üst gezintiden şunlarıabilirsiniz:
+Üst gezintide aşağıdakileri yapabilirsiniz:
 - Sütunları eklemek veya kaldırmak için sütunları özelleştirme 
-- Sayfa başına görüntülemek istediğiniz öğe sayısını değiştirme
-- Sayfa başına gösterecek öğeleri seçme
-- Batch-select the incidents to assign 
+- Sayfa başına görüntüleyebileceğiniz öğe sayısını değiştirme
+- Sayfa başına gösterilecek öğeleri seçin
+- Batch-atanacak olayları seçin 
 - Sayfalar arasında gezinme
 - Filtre uygulama
+- Tarih aralıklarını özelleştirme ve uygulama
 
-:::image type="content" source="images/atp-incident-queue.png" alt-text="Olaylar sırası" lightbox="images/atp-incident-queue.png":::
+:::image type="content" source="images/atp-incident-queue.png" alt-text="Olaylar kuyruğu" lightbox="images/atp-incident-queue.png":::
 
-## <a name="sort-and-filter-the-incidents-queue"></a>Olayları sırala ve filtrele
-Olay listesini sınırlandırarak daha odaklanmış bir görünüm elde etmek için aşağıdaki filtreleri uygulayabilirsiniz.
+## <a name="sort-and-filter-the-incidents-queue"></a>Olaylar sırasını sıralama ve filtreleme
+Olay listesini sınırlamak ve daha odaklanmış bir görünüm elde etmek için aşağıdaki filtreleri uygulayabilirsiniz.
 
-### <a name="severity"></a>Önem Derecesi
+### <a name="severity"></a>Önem derecesi
 
 Olay önem derecesi | Açıklama
 :---|:---
-Yüksek </br>(Red) | Çoğunlukla gelişmiş kalıcı tehditlerle (APT) ilişkili tehditlerdir. Bu olaylar cihazlara iyi bir zarar verebilir ve önem derecesine bağlı olarak yüksek risklidir.
-Orta </br>(Orange) | Kuruluşta anormal kayıt defteri değişikliği, şüpheli dosyaların yürütülmesi ve saldırı aşamalarına özgü gözlemlenen davranışlar gibi nadiren gözlenen tehdit.
-Düşük </br>(Sarı) | Yaygın kötü amaçlı yazılımla ve bilgisayar korsanlığı araçlarıyla ilişkilendirilmiş olan ve kuruluşa yönelik gelişmiş bir tehdit anlamına gelmez.
-Bilgilendirme </br>(Gri) | Bilgilendirme olayları, ağa zarar verir gibi kabul edilir ancak takip etmek iyi olabilir.
+Yüksek </br>(Kırmızı) | Genellikle gelişmiş kalıcı tehditlerle (APT) ilişkili tehditler. Bu olaylar, cihazlara verebilecekleri hasarın önem derecesine bağlı olarak yüksek risk olduğunu gösterir.
+Orta </br>(Turuncu) | Anormal kayıt defteri değişikliği, şüpheli dosyaların yürütülmesi ve saldırı aşamalarının tipik gözlemlenen davranışları gibi kuruluşta nadiren görülen tehditler.
+Düşük </br>(Sarı) | Yaygın kötü amaçlı yazılımlarla ve hack araçlarıyla ilişkili tehditler, kuruluşu hedefleyen gelişmiş bir tehdidi belirtmez.
+Bilgi </br>(Gri) | Bilgilendirici olaylar ağa zararlı olarak kabul edilmeyebilir, ancak takip etmek iyi olabilir.
 
 ## <a name="assigned-to"></a>Atanan
-Herkese veya size atananları seçerek listeyi filtrelemeyi seçebilirsiniz.
+Size atanan herkese veya kişilere atanmış olanları seçerek listeyi filtrelemeyi seçebilirsiniz.
 
 ### <a name="category"></a>Kategori
-Olaylar, siber güvenlikle ilgili kill zincirinin içinde olduğu evrenin açıklamasına göre kategorilere ayrılmıştır. Bu görünüm, tehdit analistini bağlama göre dağıtım için öncelik, aciliyet ve karşılık gelen yanıt stratejisini belirlemeye yardımcı olur.
+Olaylar, siber güvenlik sonlandırma zincirinin bulunduğu aşamanın açıklamasına göre kategorilere ayrılmıştır. Bu görünüm, tehdit analistinin bağlama göre dağıtılacak öncelik, aciliyet ve karşılık gelen yanıt stratejisini belirlemesine yardımcı olur.
 
 ### <a name="status"></a>Durum
-Hangilerinin etkin veya çözümlenmiş olduğunu görmek için, gösterilen olay listesini durumlarına göre sınırlandırabilirsiniz.
+Hangilerinin etkin veya çözümlenmiş olduğunu görmek için durumlarına göre gösterilen olayların listesini sınırlamayı seçebilirsiniz.
 
 ### <a name="data-sensitivity"></a>Veri duyarlılığı
 Duyarlılık etiketleri içeren olayları göstermek için bu filtreyi kullanın.
@@ -80,7 +81,7 @@ Olayın kapsamını bir bakışta anlamak için, olay adları etkilenen uç nokt
 Örneğin: *Birden çok kaynak tarafından bildirilen birden çok uç noktada çok aşamalı olay.*
 
 > [!NOTE]
-> Otomatik olay adlandırmanın daha önce var olan olayları, adını korur.
+> Otomatik olay adlandırmanın dağıtımından önce var olan olaylar adlarını korur.
 
 
 ## <a name="see-also"></a>Ayrıca bkz.

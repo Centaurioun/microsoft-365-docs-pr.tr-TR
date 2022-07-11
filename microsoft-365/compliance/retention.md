@@ -1,5 +1,5 @@
 ---
-title: İçeriği otomatik olarak saklamak veya silmek için bekletme ilkeleri & etiketleri hakkında bilgi edinin
+title: Saklama ilkeleri & tutulacak veya silinecek etiketler hakkında bilgi edinin
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: İhtiyaç duyduklarınızı korumanıza ve saklamadığınız şeyleri silmenize yardımcı olan bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin.
-ms.openlocfilehash: c78bcae040ae1c210c58923b924f099a5ec396bc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: İhtiyaç duyduklarınızı korumak ve saklamadığınız şeyleri silmek için bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin.
+ms.openlocfilehash: 2fd1d2e792a7b1d0635ff59ad5e63ce963e38ccc
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622535"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714541"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin
 

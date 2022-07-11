@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams için geçerli olan bekletme ilkeleri hakkında bilgi edinin.
-ms.openlocfilehash: c7f60dbb29d2755ba41661ab3aea6b20b97cef06
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6935f82830aa8a6700d4088ee4954cf11f67adef
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640532"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714694"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams için bekletme hakkında bilgi edinin
 
@@ -93,7 +93,7 @@ Bekletme ilkesi korunup silinecekse:
 
 Diyagramdaki iki yol için:
 
-1. Bekletme süresi boyunca **bir sohbet veya kanal iletisi bir kullanıcı tarafından düzenlenir veya silinirse**, özgün ileti kopyalanır (düzenlenirse) veya SubstrateHolds klasörüne taşınır (silinirse). İleti en az 1 gün boyunca orada depolanır. Bekletme süresi dolduğunda, zamanlayıcı işi bir sonraki çalıştırıldığında (genellikle 1-7 gün arasında) ileti kalıcı olarak silinir.
+1. Bekletme süresi boyunca **bir sohbet veya kanal iletisi bir kullanıcı tarafından düzenlenir veya silinirse**, özgün ileti kopyalanır (düzenlenirse) veya SubstrateHolds klasörüne taşınır (silinirse). Bir kullanıcı Teams iletisini sildiğinde, ileti Teams uygulamasından kaybolsa da, ileti 21 gün boyunca SubstrateHolds klasörüne gitmez. İleti en az 1 gün boyunca SubstrateHolds klasöründe depolanır. Bekletme süresi dolduğunda, zamanlayıcı işi bir sonraki çalıştırıldığında (genellikle 1-7 gün arasında) ileti kalıcı olarak silinir.
 
 2. **Bir sohbet veya kanal iletisi kullanıcı tarafından silinmezse** ve düzenleme sonrasında geçerli iletiler için, saklama süresi dolduktan sonra ileti SubstrateHolds klasörüne taşınır. Bu eylem genellikle bitiş tarihinden itibaren 1-7 gün arasında sürer. İleti SubstrateHolds klasöründe olduğunda, en az 1 gün boyunca orada depolanır ve zamanlayıcı işinin bir sonraki çalışmasında (genellikle 1-7 gün arasında) ileti kalıcı olarak silinir. 
 
@@ -111,13 +111,13 @@ Bekletme ilkesi yalnızca saklama veya yalnızca silme olduğunda, içeriğin yo
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Yalnızca saklama bekletme ilkesi için içerik yolları
 
-1. Bekletme süresi boyunca **bir sohbet veya kanal iletisi bir kullanıcı tarafından düzenlenir veya silinirse**: Özgün ileti kopyalanır (düzenlenirse) veya SubstrateHolds klasörüne taşınır (silinirse) ve en az 1 gün boyunca orada tutulur. Bekletme ilkesi sonsuza kadar korunacak şekilde yapılandırılmışsa, öğe orada kalır. Bekletme ilkesinin bekletme süresi için bir bitiş tarihi varsa ve süresi dolarsa, zamanlayıcı işi bir sonraki çalıştırıldığında (genellikle 1-7 gün arasında) ileti kalıcı olarak silinir.
+1. Bekletme süresi boyunca **bir sohbet veya kanal iletisi bir kullanıcı tarafından düzenlenir veya silinirse**: Özgün ileti kopyalanır (düzenlenirse) veya SubstrateHolds klasörüne taşınır (silinirse). Bir kullanıcı Teams iletisini sildiğinde, ileti Teams uygulamasından kaybolsa da, ileti 21 gün boyunca SubstrateHolds klasörüne gitmez. İleti en az 1 gün boyunca SubstrateHolds klasöründe depolanır. Bekletme ilkesi sonsuza kadar korunacak şekilde yapılandırılmışsa, öğe orada kalır. Bekletme ilkesinin bekletme süresi için bir bitiş tarihi varsa ve süresi dolarsa, zamanlayıcı işi bir sonraki çalıştırıldığında (genellikle 1-7 gün arasında) ileti kalıcı olarak silinir.
 
 2. **Sohbet veya kanal iletisi bir kullanıcı tarafından değiştirilmez veya silinmezse** ve bekletme süresi boyunca düzenlemeden sonra geçerli iletiler için: Bekletme süresinden önce ve sonra hiçbir şey olmaz; ileti özgün konumunda kalır.
 
 ### <a name="content-paths-for-delete-only-retention-policy"></a>Yalnızca silme bekletme ilkesi için içerik yolları
 
-1. **Sohbet veya kanal iletisi** saklama süresi boyunca bir kullanıcı tarafından düzenlenir veya silinirse: Özgün ileti kopyalanır (düzenlenirse) veya SubstrateHolds klasörüne taşınır (silinirse). İleti en az 1 gün boyunca orada tutulur ve zamanlayıcı işi bir sonraki çalıştırıldığında (genellikle 1-7 gün arasında) kalıcı olarak silinir.
+1. **Sohbet veya kanal iletisi** saklama süresi boyunca bir kullanıcı tarafından düzenlenir veya silinirse: Özgün ileti kopyalanır (düzenlenirse) veya SubstrateHolds klasörüne taşınır (silinirse).  Bir kullanıcı Teams iletisini sildiğinde, ileti Teams uygulamasından kaybolsa da, ileti 21 gün boyunca SubstrateHolds klasörüne gitmez. İleti en az 1 gün boyunca SubstrateHolds klasöründe depolanır ve zamanlayıcı işinin bir sonraki çalışmasında (genellikle 1-7 gün arasında) kalıcı olarak silinir.
 
 2. Bekletme süresi boyunca **bir sohbet veya kanal iletisi kullanıcı tarafından silinmezse**: Saklama süresinin sonunda ileti SubstrateHolds klasörüne taşınır. Bu eylem genellikle bitiş tarihinden itibaren 1-7 gün arasında sürer. İleti en az 1 gün boyunca orada tutulur ve zamanlayıcı işi bir sonraki çalıştırıldığında (genellikle 1-7 gün arasında) kalıcı olarak silinir.
 
@@ -145,9 +145,9 @@ Bekletme sonuçları:
     - 5. günde, ileti SubstrateHolds klasörüne kopyalanır ve burada eBulma araçlarıyla 1. günden itibaren en az 7 yıl boyunca (saklama süresi) aranabilir.
 
 - Geçerli (düzenlenmiş) ileti için:
-    - 30. günde, ileti SubstrateHolds klasörüne taşınır ve burada eBulma araçlarıyla 1. günden itibaren en az 7 yıl boyunca (saklama süresi) aranabilir.
+    - 30. günde, ileti artık Teams uygulamasında görüntülenmez ve 21 gün sonra SubstrateHolds klasörüne taşınır ve 1. günden itibaren en az 7 yıl boyunca eBulma araçlarıyla aranabilir olmaya devam eder (saklama süresi).
 
-Kullanıcı belirtilen saklama süresinden sonra geçerli iletiyi silmişse, saklama süresi yerine yine de SubstrateHolds klasörüne taşınır. Ancak, artık saklama süresi doldu, ileti en az 1 gün sonra ve daha sonra genellikle 1-7 gün içinde kalıcı olarak silinir.
+Kullanıcı belirtilen saklama süresinden sonra geçerli iletiyi silmişse, saklama süresi yerine 21 gün sonra da SubstrateHolds klasörüne taşınır. Ancak artık saklama süresinin dolması durumunda ileti en az 1 gün sonra ve genellikle 1-7 gün içinde kalıcı olarak silinir.
 
 ##### <a name="example-2-retain-for-30-days-and-then-delete"></a>Örnek 2: 30 gün boyunca saklama ve ardından silme
 

@@ -22,12 +22,12 @@ description: Hassas içeriği sınıflandırmak ve korumak için Microsoft Purvi
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: f06b4a2f40987481c3870ee512e60497f57d851a
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
+ms.openlocfilehash: 4d1c0f590535691f0ac7c10fdff8c67261753577
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687816"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714146"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Duyarlılık etiketleri hakkında bilgi edinin
 
@@ -130,7 +130,7 @@ Duyarlılık etiketi oluşturduğunuzda, iki şeyi belirleyen etiketin kapsamın
 - Bu etiket için yapılandırabileceğiniz etiket ayarları
 - Etiketin kullanıcılar tarafından görüleceği yer
 
-Bu kapsam yapılandırması, yalnızca belgeler ve e-postalar için olan ve kapsayıcılar için seçilmeyecek duyarlılık etiketlerine sahip olmanıza olanak tanır. Benzer şekilde, yalnızca kapsayıcılara yönelik olan ve belgeler ve e-postalar için seçilebilen duyarlılık etiketleri. Ayrıca Microsoft Purview Veri Eşlemesi varlıkların kapsamını da seçebilirsiniz:
+Bu kapsam yapılandırması, yalnızca belgeler ve e-postalar gibi öğeler için olan ve kapsayıcılar için seçilmeyecek duyarlılık etiketlerine sahip olmanıza olanak tanır. Benzer şekilde, yalnızca kapsayıcılara yönelik olan ve belgeler ve e-postalar için seçilebilen duyarlılık etiketleri. Ayrıca, Microsoft Purview Veri Eşlemesi için şemalaştırılmış veri varlıklarının kapsamını da seçebilirsiniz:
 
 ![Duyarlılık etiketleri için kapsam seçenekleri.](../media/sensitivity-labels-scopes.png)
 

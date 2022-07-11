@@ -1,5 +1,5 @@
 ---
-title: Güvenli bir konuk paylaşım ortamı oluşturma
+title: Daha güvenli bir konuk paylaşım ortamı oluşturma
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -18,17 +18,17 @@ ms.custom:
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
-description: Microsoft 365'te gelişmiş işbirliği için konuk erişimi sağlayan güvenli bir konuk paylaşım ortamı oluşturmaya yönelik kullanılabilir seçenekler hakkında bilgi edinin.
-ms.openlocfilehash: 26daea8795084a87a2891a5dd04da172692990cb
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+description: Microsoft 365'te gelişmiş işbirliği için konuk erişimi sağlayan daha güvenli bir konuk paylaşım ortamı oluşturma seçenekleri hakkında bilgi edinin.
+ms.openlocfilehash: ce635d96cf793b0c655b02ccdb9e7077cd245bb4
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490929"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714738"
 ---
-# <a name="create-a-secure-guest-sharing-environment"></a>Güvenli bir konuk paylaşım ortamı oluşturma
+# <a name="create-a-more-secure-guest-sharing-environment"></a>Daha güvenli bir konuk paylaşım ortamı oluşturma
 
-Bu makalede, Microsoft 365'te güvenli bir konuk paylaşım ortamı oluşturmaya yönelik çeşitli seçenekleri inceleyeceğiz. Bunlar, kullanılabilir seçenekler hakkında fikir vermek için örneklerdir. Kuruluşunuzun güvenlik ve uyumluluk gereksinimlerini karşılamak için bu yordamları farklı birleşimlerde kullanabilirsiniz.
+Bu makalede, Microsoft 365'te daha güvenli bir konuk paylaşım ortamı oluşturmaya yönelik çeşitli seçenekleri inceleyeceğiz. Bunlar, kullanılabilir seçenekler hakkında fikir vermek için örneklerdir. Kuruluşunuzun güvenlik ve uyumluluk gereksinimlerini karşılamak için bu yordamları farklı birleşimlerde kullanabilirsiniz.
 
 Bu makale şunları içerir:
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3d13c3b126f4aae75ff775ac3170049dfc9c0a2e
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 8a369aba012d7de23f72501ef1ce042750c57f7d
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679450"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714607"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Uç Nokta için Microsoft Defender değerlendirme laboratuvarı
 
@@ -43,7 +43,7 @@ Basitleştirilmiş kurulum deneyimiyle, Uç Nokta için Defender'ın nasıl perf
 
 Platformun otomatik araştırma, gelişmiş tehdit analizi ve tehdit analizi gibi güçlü özelliklerine tam erişiminiz olacak ve bu sayede Uç Nokta için Defender'ın sunduğu kapsamlı koruma yığınını test edebilirsiniz.
 
-En son işletim sistemi sürümlerinin ve doğru güvenlik bileşenlerinin yanı sıra Office 2019 Standard'ın yüklü olması için önceden yapılandırılmış olarak gelen Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 ve Linux (Ubuntu) cihazları ekleyebilirsiniz.
+En son işletim sistemi sürümlerini ve doğru güvenlik bileşenlerinin yanı sıra Office 2019 Standard'ın yüklü olması için önceden yapılandırılmış olarak gelen Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 ve Linux (Ubuntu) cihazları ekleyebilirsiniz.
 
 Tehdit simülatörlerini de yükleyebilirsiniz. Uç Nokta için Defender, portaldan çıkmak zorunda kalmadan Uç Nokta için Defender özelliklerini test etmeye yardımcı olmak için sektör lideri tehdit simülasyonu platformlarıyla iş ortaklığı yaptı.
 
@@ -66,7 +66,7 @@ Daha fazla bilgi için bkz. [Rolleri oluşturma ve yönetme](user-roles.md).
 
 Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink)
 
-## <a name="get-started-with-the-lab"></a>Laboratuvarla Kullanmaya başlayın
+## <a name="get-started-with-the-lab"></a>Laboratuvarı kullanmaya başlama
 
 Laboratuvara menüden erişebilirsiniz. Gezinti menüsünde **Değerlendirme ve öğreticiler > Değerlendirme laboratuvarı'nı** seçin.
 
@@ -107,7 +107,7 @@ Laboratuvar kurulum işlemi tamamlandıktan sonra cihaz ekleyebilir ve benzetimi
 
 Ortamınıza bir cihaz eklediğinizde, Uç Nokta için Defender bağlantı ayrıntılarıyla iyi yapılandırılmış bir cihaz ayarlar. Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 ve Linux (Ubuntu) ekleyebilirsiniz.
 
-Cihaz, java, Python ve SysIntenals gibi diğer uygulamaların yanı sıra işletim sisteminin ve Office 2019 Standard'ın en güncel sürümüyle yapılandırılır.
+Cihaz, işletim sistemi ve Office 2019 Standard'ın en güncel sürümünün yanı sıra Java, Python ve SysIntenals gibi diğer uygulamalarla yapılandırılır.
 
 Laboratuvar kurulumu sırasında bir tehdit simülatörü eklemeyi seçerseniz, eklediğiniz cihazlarda tüm cihazlarda tehdit simülatörü aracısı yüklü olur.
 
@@ -159,10 +159,7 @@ Otomatik araştırma ayarları kiracı ayarlarına bağımlı olacaktır. Varsay
    > **Simülatör durumu** sütununda, aracının yükleme durumunu öğrenmek için bilgi simgesinin üzerine gelebilirsiniz.
 
 
-## <a name="add-a-domain-controller-preview"></a>Etki alanı denetleyicisi ekleme (Önizleme)
-
-> [!IMPORTANT]
-> Bazı bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
+## <a name="add-a-domain-controller"></a>Etki alanı denetleyicisi ekleme 
 
 Birden çok cihazda yanal hareket ve çok aşamalı saldırılar gibi karmaşık senaryoları çalıştırmak için bir etki alanı denetleyicisi ekleyin.
 
@@ -219,7 +216,7 @@ Ayrıca, yeni ortaya çıkan tehditlerle ilgili raporları görüntülemek üzer
 > [!NOTE]
 > Test cihazlarına bağlantı RDP kullanılarak yapılır. Güvenlik duvarı ayarlarınızın RDP bağlantılarına izin verin.
 
-1. cihazınıza Bağlan ve **Bağlan'ı** seçerek bir saldırı simülasyonu çalıştırın.
+1. Bağlan'ı seçerek cihazınıza bağlanın ve bir saldırı **simülasyonu çalıştırın**.
 
     :::image type="content" source="images/test-machine-table.png" alt-text="Test cihazları için Bağlan düğmesi" lightbox="images/test-machine-table.png":::
 

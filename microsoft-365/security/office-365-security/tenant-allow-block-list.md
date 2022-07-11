@@ -17,12 +17,12 @@ ms.custom: ''
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde izin ve blokları yönetmeyi öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ea60746554c9ad52c3e8b6d23989b2b7659cd0ad
-ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
+ms.openlocfilehash: ad8920ae83b99528c47b00d375affb0fbfa6c330
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66060948"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714519"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Kiracı İzin Verilenler/Engellenenler Listesini Yönetme
 
@@ -33,7 +33,7 @@ ms.locfileid: "66060948"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarda, EOP filtreleme kararına katılamayabilirsiniz. Örneğin, iyi bir ileti kötü (hatalı pozitif) olarak işaretlenebilir veya hatalı bir iletiye (hatalı negatif) izin verilir.
+posta kutuları olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarında, Exchange Online EOP filtreleme kararına katılamayabilirsiniz. Örneğin, iyi bir ileti kötü (hatalı pozitif) olarak işaretlenebilir veya hatalı bir iletiye (hatalı negatif) izin verilir.
 
 Microsoft 365 Defender portalındaki Kiracı İzin Ver/Engelle Listesi, Microsoft 365 filtreleme kararlarını el ile geçersiz kılmanın bir yolunu sunar. Kiracı İzin Ver/Engelle Listesi, gelen iletiler için posta akışı sırasında (kuruluş içi iletiler için geçerli değildir) ve kullanıcı tıklamaları sırasında kullanılır. Aşağıdaki geçersiz kılma türlerini belirtebilirsiniz:
 
@@ -45,7 +45,10 @@ Microsoft 365 Defender portalındaki Kiracı İzin Ver/Engelle Listesi, Microsof
 - İzin verecek dosyalar.
 - İzin vermek için gönderen e-postaları veya etki alanları.
 
-Bu makalede, Microsoft 365 Defender portalında veya PowerShell'de (Exchange Online posta kutuları olan Microsoft 365 kuruluşlar için PowerShell Exchange Online olmayan kuruluşlar için tek başına EOP PowerShell'de Kiracı İzin Ver/Engelle Listesi'nde girdilerin nasıl yapılandırıldığı açıklanır Exchange Online posta kutuları).
+Bu makalede, Microsoft 365 Defender portalında veya Exchange Online'de posta kutuları olan Microsoft 365 kuruluşları için PowerShell'de (Exchange Online Exchange Online olmayan kuruluşlar için tek başına EOP PowerShell) Kiracı İzin Verme/Engelleme Listesi'nde girişlerin nasıl yapılandırıldığı açıklanır  posta kutuları).
+
+> [!NOTE]
+> [Güvenli Bağlantılar ilkelerindeki "Aşağıdaki URL'leri engelle" listesi](safe-links.md#block-the-following-urls-list-for-safe-links) kullanım dışı bırakılıyor. Artık Kiracı İzin Ver/Engelle Listesi'nde blok URL'si girdilerini yönetebilirsiniz. Kiracı İzin Ver/Engelle Listesindeki URL girdilerini engellemek için "Aşağıdaki URL'leri engelle" listesinden mevcut girdileri geçirmeyi deneyeceğiz. Engellenen URL'yi içeren iletiler karantinaya alınır.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
@@ -71,7 +74,7 @@ Bu makalede, Microsoft 365 Defender portalında veya PowerShell'de (Exchange Onl
 
 - Varsayılan olarak, Kiracı İzin Ver/Engelle Listesindeki girdilerin süresi 30 gün sonra dolar. Bir tarih belirtebilir veya bunların süresi hiç dolmak üzere ayarlayabilirsiniz.
 
-- Exchange Online PowerShell'e bağlanmak için bkz. [PowerShell'Exchange Online Bağlan](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [PowerShell'i Exchange Online Protection için Bağlan](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [Exchange Online Protection PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bu makaledeki yordamları gerçekleştirebilmeniz için **önce Exchange Online'de** izinlerin atanmış olması gerekir:
   - Kiracı İzin Ver/Engelle Listesinden girdi eklemek ve kaldırmak için aşağıdaki rol gruplarından birinin üyesi olmanız gerekir:
@@ -88,7 +91,7 @@ Bu makalede, Microsoft 365 Defender portalında veya PowerShell'de (Exchange Onl
 
   > [!NOTE]
   >
-  > - kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'deki diğer özellikler için gerekli izinleri *ve* izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+  > - kullanıcıları Microsoft 365 yönetim merkezi ilgili Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'teki diğer özellikler için gerekli izinleri *ve* izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
   > - [Exchange Online'daki](/Exchange/permissions-exo/permissions-exo#role-groups) **Yalnızca Görüntüleme Kuruluş Yönetimi** rol grubu da özelliğe salt okunur erişim sağlar.
 
 ## <a name="configure-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini Yapılandırma
