@@ -21,20 +21,45 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 9acc7cd4147f2fdf29b82ecb2d211ef30ea4e6dc
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 8c2472456feb21662e48a5b377a16a1c539569cc
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617052"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717194"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Güvenli Puan'daki yenilikler
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Güvenli Puan'ı güvenlik duruşunuzun daha iyi bir temsilcisi yapmak için bazı değişiklikler yaptık. Planlı değişiklikler hakkında bilgi edinmek için bkz. [Microsoft Güvenli Puanı'nda neler geliyor?](microsoft-secure-score-whats-coming.md)
+Microsoft Secure Score'u güvenlik duruşunuzun daha iyi bir temsilcisi yapmak için yeni özellikler ve iyileştirme eylemleri eklemeye devam ediyoruz.
+
+Ne kadar çok geliştirme eylemi gerçekleştirirseniz, Güvenli Puanınız o kadar yüksek olur. Daha fazla bilgi için bkz. [Microsoft Güvenli Puanı](microsoft-secure-score.md).
 
 Microsoft Güvenli Puanı'na [Microsoft 365 Defender portalından](microsoft-365-defender-portal.md) ulaşabilirsinizhttps://security.microsoft.com/securescore.
+
+## <a name="june-2022"></a>Haziran 2022
+
+- Yeni Uç Nokta için Microsoft Defender ve Microsoft Defender Güvenlik Açığı Yönetimi önerileri artık Güvenli Puan geliştirme eylemleri olarak kullanılabilir:
+
+  - Paylaşımlara çevrimdışı erişime izin verme
+  - **Herkes** olarak ayarlanmış paylaşım yazma iznini kaldırma
+  - Kök klasörden paylaşımları kaldırma
+  - Paylaşımlar için klasör erişimi tabanlı sabit listesi ayarlama
+  - Uç Nokta için Microsoft Defender temel bileşenlerini güncelleştirme
+
+- Güvenli Puan geliştirme eylemi olarak yeni bir Kimlik için Microsoft Defender önerisi sağlanır:
+
+  - Güvenli olmayan etki alanı yapılandırmalarını çözme
+
+- Yeni [bir uygulama idaresi](/defender-cloud-apps/app-governance-manage-app-governance) önerisi artık Güvenli Puan geliştirme eylemi olarak kullanılabilir:
+
+  - Öncelikli hesaplardan alınan onay ile uygulamaları düzenleme
+
+- Yeni Salesforce ve ServiceNow önerileri artık Microsoft Defender for Cloud Apps müşterileri için Güvenli Puan geliştirme eylemleri olarak kullanılabilir. Daha fazla bilgi için bkz. [SaaS Güvenlik Duruş Yönetimine genel bakış](https://aka.ms/saas_security_posture_management).
+
+>[!Note]
+>Salesforce ve ServiceNow denetimleri artık genel önizlemede kullanılabilir.
 
 ## <a name="april-2022"></a>Nisan 2022
 

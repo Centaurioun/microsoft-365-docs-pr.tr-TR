@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c330d3c8210ea0c83605a2b5e9f9f43d1c930442
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 4d8665f379683ccc113a10e6308c6fa4026616c6
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554433"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717226"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Windows'un önceki sürümlerini ekleyin
 
@@ -73,20 +73,20 @@ Bu tümleştirmeyi etkinleştirmek için aşağıdaki adımlar gereklidir:
 
 En düşük sistem gereksinimlerini doğrulamak için aşağıdaki ayrıntıları gözden geçirin:
 
-- [Şubat 2018 aylık güncelleştirme paketini](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598) yükleme
+- [Şubat 2018 aylık güncelleştirme toplamasını](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598) yükleme - Windows Update kataloğundan doğrudan indirme [bağlantısına buradan](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4074598) ulaşabilirsiniz
+
+- [12 Mart 2019 (veya üzeri) Hizmet yığını güncelleştirmesini](https://support.microsoft.com/topic/servicing-stack-update-for-windows-7-sp1-and-windows-server-2008-r2-sp1-march-12-2019-b4dc0cff-d4f2-a408-0cb1-cb8e918feeba) yükleme - Windows Update kataloğundan doğrudan indirme [bağlantısına buradan](https://www.catalog.update.microsoft.com/search.aspx?q=4490628) ulaşabilirsiniz
+
+- [SHA-2 kod imzalama desteği güncelleştirmesini](https://support.microsoft.com/topic/sha-2-code-signing-support-update-for-windows-server-2008-r2-windows-7-and-windows-server-2008-september-23-2019-84a8aad5-d8d9-2d5c-6d78-34f9aa5f8339) yükleme - Windows Update kataloğundan doğrudan indirme [bağlantısına buradan](https://www.catalog.update.microsoft.com/search.aspx?q=kb4474419) ulaşabilirsiniz
 
   > [!NOTE]
   > Yalnızca Windows Server 2008 R2, Windows 7 SP1 Enterprise ve Windows 7 SP1 Pro için geçerlidir.
 
 - [Müşteri deneyimi ve tanılama telemetrisi için Güncelleştirme'yi](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) yükleme
 
-- [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (veya üzeri) veya [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework) yükleme
+- [Microsoft .Net Framework 4.5.2 veya üzerini](https://www.microsoft.com/en-US/download/details.aspx?id=42642) yükleme
 
     > [!NOTE]
-    > Yalnızca Windows Server 2008 R2, Windows 7 SP1 Enterprise ve Windows 7 SP1 Pro için geçerlidir.
-    >
-    > Yukarıdaki yüklemeyi .NET Framework 4.0.x'i yüklemeyin.
-    >
     > .NET 4.5 yüklemesi, yüklemeden sonra bilgisayarınızı yeniden başlatmanızı gerektirebilir.
 
 - Azure Log Analytics aracısı minimum sistem gereksinimlerini karşılayın. Daha fazla bilgi için bkz. [Log Analytics ile ortamınızdaki bilgisayarlardan veri toplama](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)

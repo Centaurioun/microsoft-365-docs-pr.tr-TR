@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 4ccb91f0a8c181697eb525dd8f5576e6f6cdc0d1
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8e251222d71ad9559084ec39d7fa65a18b9e2c1a
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789832"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717172"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Denetimli klasör erişimini değerlendirin
 
@@ -34,20 +34,14 @@ ms.locfileid: "64789832"
 **Platform**
 - Windows
 
-> Pertahanan Microsoft untuk Titik Akhir mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
-[Denetimli klasör erişimi](controlled-folders.md) , belgelerinizi ve dosyalarınızın şüpheli veya kötü amaçlı uygulamalar tarafından değiştirilmesine karşı korunmasına yardımcı olan bir özelliktir. Windows Server 2019, Windows Server 2022, Windows 10 ve Windows 11 istemcilerinde denetimli klasör erişimi desteklenir.
+[Denetimli klasör erişimi](controlled-folders.md) , belgelerinizi ve dosyalarınızın şüpheli veya kötü amaçlı uygulamalar tarafından değiştirilmesine karşı korunmasına yardımcı olan bir özelliktir. Denetimli klasör erişimi Windows Server 2019, Windows Server 2022, Windows 10 ve Windows 11 istemcilerinde desteklenir.
 
 Dosyalarınızı şifrelemeye ve onları rehin tutmaya çalışan [fidye yazılımlarına](https://www.microsoft.com/wdsi/threats/ransomware) karşı korunmaya yardımcı olmak için özellikle yararlıdır.
 
 Bu makale, denetimli klasör erişimini değerlendirmenize yardımcı olur. Özelliği doğrudan kuruluşunuzda test edebilmeniz için denetim modunun nasıl etkinleştirileceği açıklanır.
-
-> [!TIP]
-> Ayrıca [demo.wd.microsoft.com Pertahanan Microsoft untuk Titik Akhir tanıtım](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) senaryosu web sitesini ziyaret ederek özelliğin çalıştığını onaylayabilir ve nasıl çalıştığını görebilirsiniz.
-
-> [!NOTE]
-> demo.wd.microsoft.com'daki Uç Nokta için Defender tanıtım sitesi kullanım dışıdır ve gelecekte kaldırılacaktır.
 
 ## <a name="use-audit-mode-to-measure-impact"></a>Etkiyi ölçmek için denetim modunu kullanma
 
@@ -63,9 +57,9 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 > Kuruluşunuzda denetimli klasör erişiminin nasıl çalışacağını tam olarak denetlemek istiyorsanız, bu ayarı ağınızdaki cihazlara dağıtmak için bir yönetim aracı kullanmanız gerekir.
 Ayrıca, ana [denetimli klasör erişimi konusunda](controlled-folders.md) açıklandığı gibi ayarı yapılandırmak ve dağıtmak için grup ilkesi, Intune, mobil cihaz yönetimi (MDM) veya Microsoft Endpoint Manager kullanabilirsiniz.
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Windows Olay Görüntüleyicisi'de denetimli klasör erişimi olaylarını gözden geçirme
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Windows Olay Görüntüleyicisi'da denetimli klasör erişimi olaylarını gözden geçirme
 
-Aşağıdaki denetimli klasör erişimi olayları, Microsoft/Windows/Windows Defender/Operasyonel klasörünün altındaki Windows Olay Görüntüleyicisi görüntülenir.
+Aşağıdaki denetimli klasör erişimi olayları Windows Olay Görüntüleyicisi'da Microsoft/Windows/Windows Defender/Operasyonel klasörü altında görünür.
 
 Olay Kimliği | Açıklama
 -|-

@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 02017a614544cfb10eb43d375212fc7e37124ad3
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 00c2f6f490a09e76e097a20419f8d8137b32a467
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840397"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717304"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Denetimli klasör erişimiyle önemli klasörleri koruma
 
@@ -42,7 +42,7 @@ ms.locfileid: "65840397"
 
 ## <a name="what-is-controlled-folder-access"></a>Denetimli klasör erişimi nedir?
 
-Denetimli klasör erişimi değerli verilerinizi fidye yazılımı gibi kötü amaçlı uygulamalardan ve tehditlerden korumaya yardımcı olur. Denetimli klasör erişimi, uygulamaları bilinen, güvenilen uygulamalar listesine karşı denetleyerek verilerinizi korur. Windows Server 2019, Windows Server 2022, Windows 10 ve Windows 11 istemcilerinde desteklenen denetimli klasör erişimi, Windows Güvenliği Uygulaması kullanılarak açılabilir. Microsoft Endpoint Configuration Manager veya Intune (yönetilen cihazlar için).
+Denetimli klasör erişimi değerli verilerinizi fidye yazılımı gibi kötü amaçlı uygulamalardan ve tehditlerden korumaya yardımcı olur. Denetimli klasör erişimi, uygulamaları bilinen, güvenilen uygulamalar listesine karşı denetleyerek verilerinizi korur. Windows Server 2019, Windows Server 2022, Windows 10 ve Windows 11 istemcilerinde desteklenen denetimli klasör erişimi Windows Güvenliği Uygulaması, Microsoft Endpoint Configuration Manager veya Intune (yönetilen cihazlar için) kullanılarak açılabilir.
 
 > [!NOTE]
 > Betik altyapılarına güvenilmez ve denetimli korumalı klasörlere erişmelerine izin veremezsiniz. Örneğin, [sertifika ve dosya göstergeleriyle](/microsoft-365/security/defender-endpoint/indicator-certificates) izin verseniz bile PowerShell'e denetimli klasör erişimi tarafından güvenilmez.
@@ -68,10 +68,7 @@ Denetimli klasör erişimi, belgelerinizi ve bilgilerinizi [fidye yazılımları
 
 [Korumalı klasörler](#review-controlled-folder-access-events-in-windows-event-viewer) ortak sistem klasörlerini (önyükleme kesimleri dahil) içerir ve [daha fazla klasör ekleyebilirsiniz](customize-controlled-folders.md#protect-additional-folders). [Ayrıca uygulamaların](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) korumalı klasörlere erişmesine izin verebilirsiniz.
 
-Denetim [modunu](audit-windows-defender.md) kullanarak denetimli klasör erişiminin kuruluşunuz etkinse nasıl etkilendiğini değerlendirebilirsiniz. Ayrıca Windows Defender Test zemini web sitesini [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) ziyaret ederek özelliğin çalıştığını onaylayabilir ve nasıl çalıştığını görebilirsiniz.
-
-> [!NOTE]
-> demo.wd.microsoft.com'daki Uç Nokta için Defender tanıtım sitesi kullanım dışıdır ve gelecekte kaldırılacaktır.
+Denetim [modunu](audit-windows-defender.md) kullanarak denetimli klasör erişiminin kuruluşunuz etkinse nasıl etkilendiğini değerlendirebilirsiniz.
 
 Denetimli klasör erişimi aşağıdaki Windows sürümlerinde desteklenir:
 
@@ -103,11 +100,11 @@ Varsayılan klasörler kullanıcının profilinde **, Bu Bilgisayar** altında g
    > ![Korumalı Windows varsayılan sistem klasörleri](images/defaultfolders.png)
 
 > [!NOTE]
-> Ek klasörleri korumalı olarak yapılandırabilirsiniz, ancak varsayılan olarak korunan Windows sistem klasörlerini kaldıramazsınız.
+> Korumalı olarak ek klasörler yapılandırabilirsiniz, ancak varsayılan olarak korunan Windows sistem klasörlerini kaldıramazsınız.
 
 ## <a name="requirements-for-controlled-folder-access"></a>Denetimli klasör erişimi gereksinimleri
 
-Denetimli klasör erişimi Microsoft Defender Virüsten Koruma [gerçek zamanlı korumayı](configure-real-time-protection-microsoft-defender-antivirus.md) etkinleştirmeyi gerektirir.
+Denetimli klasör erişimi, [Microsoft Defender Virüsten Koruma'nın gerçek zamanlı korumasını](configure-real-time-protection-microsoft-defender-antivirus.md) etkinleştirmeyi gerektirir.
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında denetimli klasör erişimi olaylarını gözden geçirme
 
@@ -122,12 +119,12 @@ DeviceEvents
 | where ActionType in ('ControlledFolderAccessViolationAudited','ControlledFolderAccessViolationBlocked')
 ```
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Windows Olay Görüntüleyicisi'de denetimli klasör erişimi olaylarını gözden geçirme
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Windows Olay Görüntüleyicisi'da denetimli klasör erişimi olaylarını gözden geçirme
 
 Denetimli klasör erişim blokları (veya denetimler) bir uygulama olduğunda oluşturulan olayları görmek için Windows olay günlüğünü gözden geçirebilirsiniz:
 
 1. [Değerlendirme Paketi'ni](https://aka.ms/mp7z2w) indirin *vecfa-events.xmldosyayı* cihazda kolayca erişilebilen bir konuma ayıklayın.
-2. Windows Olay Görüntüleyicisi açmak için Başlat menüsü **Olay görüntüleyicisi** yazın.
+2. Windows Olay Görüntüleyicisi açmak için Başlat menüsüne **Olay görüntüleyicisi** yazın.
 3. Sol paneldeki **Eylemler'in** altında **Özel görünümü içeri aktar...** öğesini seçin.
 4. *cfa-events.xml* ayıkladığınız yere gidin ve seçin. Alternatif olarak [, XML'yi doğrudan kopyalayın](event-views.md).
 5. **Tamam**'ı seçin.

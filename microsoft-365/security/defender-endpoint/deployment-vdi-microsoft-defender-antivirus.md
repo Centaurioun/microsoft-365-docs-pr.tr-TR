@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Virüsten Koruma Sanal Masaüstü Altyapısı dağıtım kılavuzu
-description: Koruma ve performans arasında en iyi dengeyi sağlamak için sanal masaüstü ortamında Microsoft Defender Virüsten Koruma dağıtmayı öğrenin.
+description: Koruma ve performans arasında en iyi dengeyi sağlamak için Microsoft Defender Virüsten Koruma'nın bir sanal masaüstü ortamında nasıl dağıtılacağı hakkında bilgi edinin.
 keywords: vdi, hyper-v, vm, sanal makine, windows defender, virüsten koruma, av, sanal masaüstü, rds, uzak masaüstü
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -14,12 +14,12 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f788c72c9b437dba7528c59adedb3ced21539ada
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 61f0e265e0a375aaff4d1ad445ac6e1bbeb05b1d
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66129129"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717524"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Sanal Masaüstü Altyapısı (VDI) ortamında Microsoft Defender Virüsten Koruma için dağıtım klavuzu
 
@@ -31,10 +31,7 @@ ms.locfileid: "66129129"
 **Platform**
 - Windows
 
-Standart şirket içi veya donanım yapılandırmalarına ek olarak, Microsoft Defender Virüsten Koruma uzak masaüstü (RDS) veya kalıcı olmayan sanal masaüstü altyapısı (VDI) ortamında kullanabilirsiniz. Güncelleştirmeleri VDI'lerde çalışan VM'lere kolayca dağıtma özelliğiyle, makinelerinizde güncelleştirmeleri hızlı ve kolay bir şekilde alabilirsiniz. Güncelleştirmeler konak sunucusundaki bileşen bitlerine genişletildiğinden ve açıldığında doğrudan VM'ye indirildiğinden, artık düzenli aralıklarla altın renkli görüntüler oluşturmanız ve mühürlemeniz gerekmez.
-
-> [!NOTE]
-> konumundaki `demo.wd.microsoft.com` Uç Nokta için Defender tanıtım sitesi kullanım dışıdır ve gelecekte kaldırılacaktır.
+Standart şirket içi veya donanım yapılandırmalarına ek olarak, Microsoft Defender Virüsten Koruma'yı uzak masaüstü (RDS) veya kalıcı olmayan sanal masaüstü altyapısı (VDI) ortamında kullanabilirsiniz. Güncelleştirmeleri VDI'lerde çalışan VM'lere kolayca dağıtma özelliğiyle, makinelerinizde güncelleştirmeleri hızlı ve kolay bir şekilde alabilirsiniz. Güncelleştirmeler konak sunucusundaki bileşen bitlerine genişletildiğinden ve açıldığında doğrudan VM'ye indirildiğinden, artık düzenli aralıklarla altın renkli görüntüler oluşturmanız ve mühürlemeniz gerekmez.
 
 Bu kılavuzda, aşağıdakiler de dahil olmak üzere VM'lerinizi en iyi koruma ve performans için yapılandırma işlemleri açıklanmaktadır:
 
@@ -46,14 +43,12 @@ Bu kılavuzda, aşağıdakiler de dahil olmak üzere VM'lerinizi en iyi koruma v
 - [Bir süredir çevrimdışı olan eski makineleri veya makineleri tarama](#scan-vms-that-have-been-offline)
 - [Dışlamaları uygulama](#exclusions)
 
-Ayrıca, performans testi ve virüsten koruma performansını kendi VDI'nizde nasıl test edebileceğinize ilişkin yönergelerle birlikte yeni paylaşılan güvenlik zekası güncelleştirme özelliğine bakan [teknik inceleme Microsoft Defender Virüsten Koruma](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf) Sanal Masaüstü Altyapısı'a indirebilirsiniz.
-
 Microsoft Uzak Masaüstü Hizmetleri ve VDI desteği hakkında daha fazla bilgi için bkz. [Azure Sanal Masaüstü Belgeleri](/azure/virtual-desktop).
 
-Azure tabanlı sanal makineler için bkz[. Bulut için Microsoft Defender'de Endpoint Protection yükleme](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
+Azure tabanlı sanal makineler için bkz. [Bulut için Microsoft Defender'da Endpoint Protection'ı yükleme](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
 
 > [!IMPORTANT]
-> VDI Windows Server 2012 veya Windows Server 2016 üzerinde barındırılsa da, Windows önceki sürümlerinde kullanılamayan artan koruma teknolojileri ve özellikleri nedeniyle sanal makinelerin (VM) en az 1607 Windows 10 çalışıyor olması gerekir.
+> VDI Windows Server 2012 veya Windows Server 2016 üzerinde barındırılsa da, windows'un önceki sürümlerinde kullanılamayan artan koruma teknolojileri ve özellikleri nedeniyle sanal makinelerin (VM) en az 1607 Windows 10 çalışıyor olması gerekir.
 > Microsoft Defender AV'nin Windows 10 Insider Preview, derleme 18323 (ve üzeri) içinde sanal makinelerde çalışma yönteminde performans ve özellik iyileştirmeleri vardır. Insider Preview derlemesi kullanmanız gerekiyorsa bu kılavuzda bunu belirleyeceğiz; belirtilmezse, en iyi koruma ve performans için gereken en düşük sürüm 1607 Windows 10.
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>Ayrılmış bir VDI dosya paylaşımı ayarlama
@@ -68,7 +63,7 @@ Windows 10, sürüm 1903'te, indirilen güvenlik zekası güncelleştirmelerinin
 
 3. **Yönetim şablonları'nı** tıklatın.
 
-4. **Güvenlik Bilgileri Güncelleştirmeleri** **Microsoft Defender Virüsten Koruma bileşenleri** \> **Windows** \> için ağacı genişletin.
+4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Güvenlik Bilgileri Güncelleştirmeler** genişletin.
 
 5. **VDI istemcileri için güvenlik zekası konumunu tanımla'ya** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. Otomatik olarak bir alan görüntülenir.
 
@@ -134,7 +129,7 @@ Bu, cihazların güncelleştirmeleri alabilmesi için paylaşıma okuma erişimi
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>PowerShell betiğini çalıştırmak için zamanlanmış görev ayarlama
 
-1. Yönetim makinesinde Başlat menüsü açın ve **Görev Zamanlayıcı** yazın. Bunu açın ve yan panelde **Görev oluştur...** öğesini seçin.
+1. Yönetim makinesinde Başlat menüsünü açın ve **Görev Zamanlayıcı** yazın. Bunu açın ve yan panelde **Görev oluştur...** öğesini seçin.
 
 2. Adı **Güvenlik bilgileri paketten çıkarıcı** olarak girin. **Tetikleyici** sekmesine gidin. **Yeni... öğesini seçin.** \> **Günlük'e** gidin ve **Tamam'ı** seçin.
 
@@ -170,7 +165,7 @@ Her şeyi el ile yapmayı tercih ederseniz betiğin davranışını çoğaltmak 
 
 Zamanlanmış taramalar [, gerçek zamanlı koruma ve taramaya](configure-real-time-protection-microsoft-defender-antivirus.md) ek olarak çalışır.
 
-Taramanın başlangıç zamanı hala zamanlanmış tarama ilkesini (**ScheduleDay, ScheduleTime** ve **ScheduleQuickScanTime**) temel alır.  Rastgele belirleme, Microsoft Defender Virüsten Koruma zamanlanan tarama için ayarlanan süreden itibaren dört saatlik bir süre içinde her makinede tarama başlatmasına neden olur.
+Taramanın başlangıç zamanı hala zamanlanmış tarama ilkesini (**ScheduleDay, ScheduleTime** ve **ScheduleQuickScanTime**) temel alır.  Rastgele belirleme, Microsoft Defender Virüsten Koruma'nın zamanlanan tarama için ayarlanan süreden itibaren dört saatlik bir süre içinde her makinede tarama başlatmasına neden olur.
 
 Bkz [. Zamanlanmış taramalar](scheduled-catch-up-scans-microsoft-defender-antivirus.md) için kullanılabilen diğer yapılandırma seçenekleri için taramaları zamanlama.
 
@@ -178,7 +173,7 @@ Bkz [. Zamanlanmış taramalar](scheduled-catch-up-scans-microsoft-defender-anti
 
 Zamanlanmış tarama sırasında gerçekleştirilecek tarama türünü belirtebilirsiniz. Hızlı taramalar, kötü amaçlı yazılımların etkin olması için bulunması gereken tüm yerlere bakmak üzere tasarlandıklarından tercih edilen yaklaşımdır. Aşağıdaki yordamda grup ilkesi kullanarak hızlı taramaların nasıl ayarlanacağı açıklanmaktadır.
 
-1. grup ilkesi Düzenleyicinizde, **Tarama** Microsoft Defender Virüsten Koruma Yönetim **şablonları** \> **Windows bileşenleri'ne** \>  \> gidin.
+1. grup ilkesi Düzenleyicinizde **Yönetim şablonları** \> **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Taraması'na** gidin.
 
 2. **Zamanlanmış tarama için kullanılacak tarama türünü belirtin'i** seçin ve ilke ayarını düzenleyin.
 
@@ -192,7 +187,7 @@ Zamanlanmış tarama sırasında gerçekleştirilecek tarama türünü belirtebi
 
 Bazen Microsoft Defender Virüsten Koruma bildirimleri birden çok oturuma gönderilebilir veya kalıcı hale gelebilir. Bu sorunu en aza indirmek için Microsoft Defender Virüsten Koruma kullanıcı arabirimini kilitleyebilirsiniz. Aşağıdaki yordamda, grup ilkesi bildirimlerin nasıl gizlendiği açıklanır.
 
-1. grup ilkesi Düzenleyicinizde **İstemci Arabirimi** **Microsoft Defender Virüsten Koruma bileşenleri** \> **Windows** \> gidin.
+1. grup ilkesi Düzenleyicinizde **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **İstemci Arabirimi'ne** gidin.
 
 2. **Tüm bildirimleri gizle'yi** seçin ve ilke ayarlarını düzenleyin.
 
@@ -200,7 +195,7 @@ Bazen Microsoft Defender Virüsten Koruma bildirimleri birden çok oturuma gönd
 
 4. grup ilkesi nesnenizi her zamanki gibi dağıtın.
 
-Bildirimlerin gizlenmesi, taramalar yapıldığında veya düzeltme eylemleri gerçekleştirildiğinde Microsoft Defender Virüsten Koruma bildirimlerin Windows 10 İşlem Merkezi'nde gösterilmesini önler. Ancak, güvenlik operasyonları ekibiniz saldırı algılanıp durdurulurken taramanın sonuçlarını görür; "İlk erişim uyarısı" gibi uyarılar tetiklenir ve [Microsoft 365 Defender portalında](/microsoft-365/security/defender/microsoft-365-defender) görüntülenir.
+Bildirimlerin gizlenmesi, taramalar yapıldığında veya düzeltme eylemleri gerçekleştirildiğinde Microsoft Defender Virüsten Koruma'dan gelen bildirimlerin Windows 10 İşlem Merkezi'nde gösterilmesini önler. Ancak, güvenlik operasyonları ekibiniz saldırı algılanıp durdurulurken taramanın sonuçlarını görür; "İlk erişim uyarısı" gibi uyarılar tetiklenir ve [Microsoft 365 Defender portalında](/microsoft-365/security/defender/microsoft-365-defender) görüntülenir.
 
 > [!TIP]
 > İşlem Merkezi'ni Windows 10 veya Windows 11 açmak için aşağıdaki adımlardan birini uygulayın:
@@ -215,7 +210,7 @@ Güncelleştirmeden sonra taramanın devre dışı bırakılması, bir güncelle
 > [!IMPORTANT]
 > Güncelleştirmeden sonra taramaların çalıştırılması, VM'lerinizin en son Güvenlik bilgileri güncelleştirmeleriyle korunmasına yardımcı olur. Bu seçeneğin devre dışı bırakılması VM'lerinizin koruma düzeyini azaltır ve yalnızca temel görüntüyü ilk oluştururken veya dağıtırken kullanılmalıdır.
 
-1. grup ilkesi Düzenleyicinizde **Güvenlik Bilgileri Güncelleştirmeleri** **Microsoft Defender Virüsten Koruma bileşenleri** \> **Windows** \> gidin.
+1. grup ilkesi Düzenleyicinizde **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Güvenlik Bilgileri Güncelleştirmeler** gidin.
 
 2. **Güvenlik bilgileri güncelleştirmesinin ardından taramayı aç'ı** seçin ve ilke ayarını düzenleyin.
 
@@ -235,13 +230,13 @@ Pasif moddaysa cihaz boşta kaldığında hızlı veya zamanlanmış taramayı d
 Set-MpPreference -ScanOnlyIfIdleEnabled $false
 ```
 
-Yerel veya etki alanı grup ilkesi aracılığıyla yapılandırmaya göre Microsoft Defender Virüsten Koruma seçeneğini de devre dışı bırakabilirsiniz`ScanOnlyIfIdle`. Bu, yüksek yoğunluklu ortamlarda önemli CPU çekişmesini önler.
+Microsoft Defender Virüsten `ScanOnlyIfIdle` Koruma'daki seçeneği yerel veya etki alanı grup ilkesi aracılığıyla yapılandırmaya göre de devre dışı bırakabilirsiniz. Bu, yüksek yoğunluklu ortamlarda önemli CPU çekişmesini önler.
 
 Daha fazla bilgi için bkz. [Zamanlanmış taramayı yalnızca bilgisayar açıkken ancak kullanımda değilken başlatma](https://admx.help/?Category=SystemCenterEndpointProtection&Policy=Microsoft.Policies.Antimalware::scan_scanonlyifidle).
 
 ## <a name="scan-vms-that-have-been-offline"></a>Çevrimdışı olan VM'leri tarama
 
-1. grup ilkesi Düzenleyicinizde **Tarama** Microsoft Defender Virüsten Koruma **Windows** \> **bileşenleri'ne** \> gidin.
+1. grup ilkesi Düzenleyicinizde **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Taraması'na** gidin.
 
 2. **Yakalama hızlı taramasını aç'ı** seçin ve ilke ayarını düzenleyin.
 
@@ -255,7 +250,7 @@ Vm ardışık olarak zamanlanmış iki veya daha fazla taramayı kaçırdıysa, 
 
 ## <a name="enable-headless-ui-mode"></a>Başsız kullanıcı arabirimi modunu etkinleştirme
 
-1. grup ilkesi Düzenleyicinizde **İstemci Arabirimi** **Microsoft Defender Virüsten Koruma bileşenleri** \> **Windows** \> gidin.
+1. grup ilkesi Düzenleyicinizde **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **İstemci Arabirimi'ne** gidin.
 
 2. **Başsız kullanıcı arabirimi modunu etkinleştir'i** seçin ve ilkeyi düzenleyin.
 
@@ -271,7 +266,7 @@ Bu ilke, Microsoft Defender Virüsten Koruma kullanıcı arabiriminin tamamını
 
 Dışlamalar gereksinimlerinize uyacak şekilde eklenebilir, kaldırılabilir veya özelleştirilebilir.
 
-Daha fazla bilgi için bkz[. Windows Server'da Microsoft Defender Virüsten Koruma dışlamalarını yapılandırma](configure-exclusions-microsoft-defender-antivirus.md).
+Daha fazla bilgi için bkz [. Windows Server'da Microsoft Defender Virüsten Koruma dışlamalarını yapılandırma](configure-exclusions-microsoft-defender-antivirus.md).
 
 > [!TIP]
 > Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
@@ -285,6 +280,6 @@ Daha fazla bilgi için bkz[. Windows Server'da Microsoft Defender Virüsten Koru
 
 ## <a name="additional-resources"></a>Ek kaynaklar
 
-- [Teknik Community Blogu: Kalıcı olmayan VDI makineleri için Microsoft Defender Virüsten Koruma yapılandırma](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
+- [Teknoloji Topluluğu Blogu: Microsoft Defender Virüsten Koruma'nın kalıcı olmayan VDI makineleri için yapılandırılması](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
 - [Uzak Masaüstü Hizmetleri ve VDI'de TechNet forumları](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)
 - [SignatureDownloadCustomTask PowerShell betiği](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)

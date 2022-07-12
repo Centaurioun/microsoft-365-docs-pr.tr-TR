@@ -17,20 +17,20 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Kullanıcılar sayfası hakkında bilgi edinin.
-ms.openlocfilehash: d817ab74d6dd24e644561684073189e68cf7e072
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 05c889167cc7359900c0dea3396e657c0aa93fba
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007294"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717602"
 ---
 # <a name="overview-of-the-users-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Kullanıcılar sayfasına genel bakış 
 
-Microsoft 365 Lighthouse, sol gezinti bölmesinde **Kullanıcılar'ı** seçerek kullanıcılar sayfasını açarak müşteri kiracı hesapları genelinde kullanıcıları yönetmenize olanak tanır. Bu sayfadan kullanıcıları arayabilir ve kullanıcı hesaplarınızın güvenlik durumunu değerlendirip işlem yapabilirsiniz. Ayrıca riskli kullanıcılarla ilgili içgörüleri ve çok faktörlü kimlik doğrulaması ile self servis parola sıfırlamanın durumunu da görüntüleyebilirsiniz.  
+Microsoft 365 Lighthouse, sol gezinti bölmesindeki **Kullanıcılar'ın** altındaki bağlantılardan herhangi birini seçerek müşteri kiracı hesapları genelinde kullanıcıları yönetmenize olanak tanır. Kullanıcılar sayfasından kullanıcıları arayabilir ve kullanıcı hesaplarınızın güvenlik durumunu değerlendirip işlem yapabilirsiniz. Ayrıca riskli kullanıcılarla ilgili içgörüleri ve çok faktörlü kimlik doğrulaması ile self servis parola sıfırlamanın durumunu da görüntüleyebilirsiniz.  
   
 ## <a name="search-users-tab"></a>Kullanıcı ara sekmesi  
   
-Kullanıcıları ara sekmesinden, kiracılarda belirli kullanıcıları hızla arayabilir ve hesap parolasını sıfırlama gibi temel kullanıcı yönetimi eylemleri gerçekleştirebilirsiniz.
+Kullanıcıları ara sekmesinden belirli kullanıcıları hızla arayabilir ve kullanıcı hesabı bilgilerini güncelleştirme, parolaları sıfırlama, lisans atama ve kullanıcının gruplarını, posta kutusunu veya OneDrive'ı yönetme gibi yaygın kullanıcı yönetim görevlerini gerçekleştirebilirsiniz.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" alt-text="Kullanıcı ara sekmesinin ekran görüntüsü.":::
 
@@ -39,7 +39,7 @@ Kullanıcıları ara sekmesinden, kiracılarda belirli kullanıcıları hızla a
 Riskli Kullanıcılar sekmesi, kiracılarınızda riskli davranış için bayrak eklenmiş kullanıcı hesaplarını gösterir. Algılanan risk hakkında daha fazla bilgi görüntülemek veya kullanıcının parolasını sıfırlayarak veya oturum açmayı engelleyerek riski azaltmak için kullanıcılardan herhangi birini seçin. Risk türleri ve algılama hakkında daha fazla bilgi için bkz. [Risk nedir?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
 
 Riskli Kullanıcılar sekmesi aşağıdaki seçenekleri de içerir:
-- **Ihracat:** Cihaz uyumluluk verilerini virgülle ayrılmış Excel değerler (.csv) dosyasına aktarmak için seçin.
+- **Ihracat:** Cihaz uyumluluk verilerini Excel virgülle ayrılmış değerler (.csv) dosyasına dışarı aktarmak için seçin.
 - **Yenileme:** En güncel cihaz uyumluluk verilerini almak için öğesini seçin.
 - **Güvenliği ihlal edilen kullanıcıları onaylayın:** Kullanıcının gizliliğinin ihlal edildiğini onaylamak için öğesini seçin.
 - **Kullanıcı riskini kapat:** Kullanıcı riskini kapatmak için öğesini seçin.  

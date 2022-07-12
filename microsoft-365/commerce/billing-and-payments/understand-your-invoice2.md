@@ -20,25 +20,25 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: İş faturası veya faturası için Microsoft 365 ücretleri, faturalamayı ve ödeme bilgilerini yorumlamayı öğrenin.
+description: İş için Microsoft 365 faturanızda veya faturanızda ücretleri, faturalamayı ve ödeme bilgilerini yorumlamayı öğrenin.
 ms.date: 05/24/2022
-ms.openlocfilehash: 594ad923c186410ad17085425fc0702d1a245ef9
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 57120632cfe0b3543b228dfaca5955dfa31e4358
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670256"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717878"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>İş için Microsoft 365 faturanızı veya faturanızı anlama
 
 Faturanız veya faturanız, aboneliğiniz için ücretlerin özetini sağlar ve ödeme yapma yönergelerini içerir.
 
 > [!NOTE]
-> Microsoft 365 yerine veya ek olarak başka abonelikleriniz varsa bkz. [Faturanızı veya faturanızı anlama](understand-your-invoice.md).
+> Microsoft 365 yerine veya buna ek olarak başka abonelikleriniz varsa bkz. [Faturanızı veya faturanızı anlama](understand-your-invoice.md).
 
 ## <a name="how-often-and-when-am-i-billed"></a>Ne sıklıkta ve ne zaman faturalandırılırım?
 
-Aboneliğinizi satın alırken seçtiğiniz faturalama sıklığına bağlı olarak aylık, üç aylık, altı aylık veya yıllık olarak bir fatura alırsınız. Son fatura tarihinden bu yana geçen süre *Faturalama Dönemi* olarak adlandırılır ve faturanın birinci sayfasındadır. Bu süre, geçerli fatura için ücretlerin tahakkuk ettiği tarih aralığını temsil eder. Aboneliğinizde bu tarih aralığının dışında lisans ekleme veya kaldırma gibi bir değişiklik yaptıysanız, ilişkili ücretler sonraki faturalama dönemine ait faturada görünür.
+Aboneliğinizi satın alırken seçtiğiniz faturalama sıklığına bağlı olarak aylık veya yıllık olarak bir fatura alırsınız. Son fatura tarihinden bu yana geçen süre *Faturalama Dönemi* olarak adlandırılır ve faturanın birinci sayfasındadır. Bu süre, geçerli fatura için ücretlerin tahakkuk ettiği tarih aralığını temsil eder. Aboneliğinizde bu tarih aralığının dışında lisans ekleme veya kaldırma gibi bir değişiklik yaptıysanız, ilişkili ücretler sonraki faturalama dönemine ait faturada görünür.
 
 Faturanın ikinci sayfasından başlayarak, ücretleri *Hizmet Dönemlerine* göre gruplandırılmış olarak görürsünüz. Hizmet dönemi, hizmeti kullanmak için ücretlendirildiğiniz tarih aralığıdır.
 
@@ -162,7 +162,7 @@ Faturayla ödeme yapıyorsanız aboneliğinize ait satın alma siparişi (SAS) n
 
 ## <a name="run-the-unknown-charge-diagnostic"></a>Bilinmeyen Ücret Tanılamasını Çalıştırma
 
-Microsoft 365 Genel yöneticisi olarak, bankanızda veya kredi kartı ekstrenizde görünen beklenmeyen Microsoft ücretlerini araştırmak için Microsoft 365 yönetim merkezi içinde çalışan bir tanılama aracı kullanabilirsiniz.
+Microsoft 365 Genel yöneticisi olarak, banka veya kredi kartı ekstrenizde görünen Beklenmeyen Microsoft ücretlerini araştırmak için Microsoft 365 yönetim merkezi içinde çalışan bir tanılama aracı kullanabilirsiniz.
 
 > [!NOTE]
 > Bilinmeyen Ücret Tanılaması yalnızca Microsoft 365 Kurumsal, Eğitim ve Kar Amacı Gütmeyen Kuruluş dahil olmak üzere ürünlerini ve hizmetlerini Microsoft.com satın alan müşteriler tarafından kullanılabilir.
@@ -175,7 +175,7 @@ Tanılama aracını Microsoft 365 yönetim merkezi açmak için aşağıdaki **T
 ## <a name="related-content"></a>İlgili içerik
 
 [Fatura ekstrenizi veya faturanızı görüntüleme](view-your-bill-or-invoice.md) (makale)\
-[İş için Microsoft 365 aboneliğiniz için ödeme (](pay-for-your-subscription.md)makale)\
+[İş için Microsoft 365 aboneliğiniz için ödeme (](pay-for-your-subscription.md) makale)\
 [Ödeme yöntemlerini yönetme](manage-payment-methods.md) (makale)\
-[Meksika'daki Microsoft 365 için faturalama bilgileri](mexico-billing-info.md) (makale) \
+[Meksika'da işletmeler için Microsoft 365 faturalama bilgileri](mexico-billing-info.md) (makale) \
 [Minecraft: Education Edition ödeme seçenekleri](/education/windows/school-get-minecraft) (makale)

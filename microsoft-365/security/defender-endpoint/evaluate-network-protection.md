@@ -16,12 +16,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 2826c623437760d86aad54e4aa36900bdad68082
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 4c9c0618db34df38168dca881117288832abf4a5
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603956"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717856"
 ---
 # <a name="evaluate-network-protection"></a>Ağ korumasını değerlendirin
 
@@ -35,12 +35,6 @@ ms.locfileid: "66603956"
 [Ağ koruması](network-protection.md) , çalışanların İnternet'te kimlik avı dolandırıcılığı, açıklardan yararlanma ve diğer kötü amaçlı içeriğe ev sahipliği yapabilen tehlikeli etki alanlarına erişmek için herhangi bir uygulama kullanmasını önlemeye yardımcı olur.
 
 Bu makale, özelliği etkinleştirerek ve bir test sitesine yönlendirerek ağ korumasını değerlendirmenize yardımcı olur. Bu değerlendirme makalesindeki siteler kötü amaçlı değildir. Bunlar, kötü amaçlıymış gibi davranan özel olarak oluşturulmuş web siteleridir. Site, bir kullanıcı kötü amaçlı bir siteyi veya etki alanını ziyaret ederse gerçekleşecek davranışı yineler.
-
-> [!TIP]
-> Diğer koruma özelliklerinin nasıl çalıştığını görmek için [demo.wd.microsoft.com'daki](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) Microsoft Defender tanıtım senaryoları web sitesini de ziyaret edebilirsiniz.
-
-> [!NOTE]
-> demo.wd.microsoft.com'daki Uç Nokta için Defender tanıtım sitesi kullanım dışıdır ve gelecekte kaldırılacaktır.
 
 ## <a name="enable-network-protection-in-audit-mode"></a>Denetim modunda ağ korumasını etkinleştirme
 
