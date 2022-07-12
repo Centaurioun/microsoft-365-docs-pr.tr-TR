@@ -11,12 +11,12 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
 description: Kullanıcının oturumlarının zaman aşımına uğramadan önce Microsoft 365'te ne kadar süreceğini ayarlayın.
-ms.openlocfilehash: 611541ebc16c3ee8c187b8fc1a5b33661b221897
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 3dd845d5488d2385297a87908253740ef774eb5d
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487487"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720423"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>Microsoft 365 için boşta oturum zaman aşımı
 
@@ -31,7 +31,7 @@ Bir kullanıcı ayarladığınız boşta kalma zaman aşımı oturumuna ulaştı
 
 ## <a name="turn-on-idle-session-timeout"></a>Boşta oturumu zaman aşımını açma
 
-Microsoft 365 veya Office 365 genel yönetici değilseniz **Güvenlik & gizlilik** sekmesini görmezsiniz.
+Boşta oturum zaman aşımı ayarını görmek için Genel yönetici, Güvenlik yöneticisi, Uygulama yöneticisi veya Bulut Uygulaması yöneticisi rollerinin üyesi olmanız gerekir.
 
 1. Microsoft 365 yönetim merkezi **Kuruluş Ayarları** **->**[Güvenlik & gizlilik](https://go.microsoft.com/fwlink/p/?linkid=2072756) sekmesini ve **Boşta oturum zaman aşımı'nı** seçin.  
 

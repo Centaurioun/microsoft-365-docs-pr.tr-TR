@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 06/17/2022
+ms.date: 07/11/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 34a5bd740b50eba561e2e138366ac05e732b016f
-ms.sourcegitcommit: ad30b6bfccb402a338a198cb13e250b6ea21d545
+ms.openlocfilehash: d90e39028f563c7b3913f6fd0dbf97222d1068d2
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66612785"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720445"
 ---
 # <a name="compare-microsoft-defender-for-endpoint-plans"></a>Uç Nokta için Microsoft Defender planlarını karşılaştırma
 
@@ -48,6 +48,16 @@ Aşağıdaki tabloda her Uç Nokta için Defender planına nelerin dahil olduğu
 
 > [!IMPORTANT]
 > Uç Nokta Plan 1 ve Plan 2 için Defender'ın tek başına sürümleri sunucu lisanslarını içermez. Windows Server veya Linux çalıştıran uç noktalar gibi sunucuları eklemek için Bulut için [Defender teklifinin](/azure/defender-for-cloud/defender-for-cloud-introduction) bir parçası olarak Sunucular için Defender Plan 1 veya Plan 2 gerekir. Daha fazla bilgi edinmek için. Bkz [. Sunucular için Microsoft Defender'a genel bakış](/azure/defender-for-cloud/defender-for-servers-introduction).
+
+Uç Nokta için Microsoft Defender Plan 1, ticari ve eğitim müşterileri için tek başına kullanıcı aboneliği lisansı olarak kullanılabilir. Ayrıca Microsoft 365 E3/A3'ün bir parçası olarak da dahildir.
+
+Daha önce Uç Nokta için Microsoft Defender olarak adlandırılan Uç Nokta için Microsoft Defender Plan 2, tek başına lisans olarak ve aşağıdaki planların bir parçası olarak kullanılabilir:
+
+- Windows 11 Enterprise E5/A5
+- E5/A5 Windows 10 Enterprise
+- Microsoft 365 E5/A5/G5 (Windows 10 veya Windows 11 Enterprise E5 içerir)
+- Microsoft 365 E5/A5/G5/F5 Güvenliği
+- Microsoft 365 F5 Güvenlik & Uyumluluğu
 
 ## <a name="mixed-licensing-scenarios"></a>Karma lisanslama senaryoları
 

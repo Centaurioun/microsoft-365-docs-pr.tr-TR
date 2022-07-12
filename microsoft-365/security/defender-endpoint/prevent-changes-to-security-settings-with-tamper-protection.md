@@ -20,12 +20,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f668efd6c205d67d5aaf4ffa86fae6933f9a257a
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: e5ab7630ad0e749eedb6ced8b9895c0a632a527f
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686151"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720511"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Değişiklik korumasıyla güvenlik ayarlarını koruyun
 
@@ -53,7 +53,7 @@ Kurcalama koruması, Windows'un aşağıdaki sürümlerinden birini çalıştır
 > [!NOTE]
 > Windows Server 2012 R2'de kurcalama koruması, modern birleşik çözüm paketi kullanılarak eklenen cihazlar için kullanılabilir. Daha fazla bilgi için bkz. [Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
-## <a name="overview"></a>Genel Bakış
+## <a name="overview"></a>Genel bakış
 
 Bazı siber saldırılar sırasında kötü aktörler, makinelerinizde virüsten koruma gibi güvenlik özelliklerini devre dışı bırakmaya çalışır. Kötü aktörler verilerinize daha kolay erişim elde etmek, kötü amaçlı yazılım yüklemek veya verilerinizi, kimliğinizi ve cihazlarınızı başka bir şekilde kullanmak için güvenlik özelliklerinizi devre dışı bırakmak ister. Kurcalama koruması, bu tür şeylerin oluşmasını önlemeye yardımcı olur. Kurcalama koruması ile kötü amaçlı uygulamaların aşağıdaki gibi eylemler gerçekleştirmesi engellenir:
 
@@ -152,7 +152,6 @@ Kuruluşunuz Microsoft Endpoint Manager (MEM) kullanıyorsa, Microsoft Endpoint 
 
 ### <a name="requirements-for-managing-tamper-protection-in-endpoint-manager"></a>Endpoint Manager'de kurcalama korumasını yönetme gereksinimleri
 
-- Cihazlarınız [Uç Nokta için Microsoft Defender](/microsoft-365/security/defender-endpoint/onboarding) eklenmelidir.
 - Genel yönetici, güvenlik yöneticisi veya güvenlik işlemleri gibi uygun [izinlere](/microsoft-365/security/defender-endpoint/assign-portal-access) sahip olmanız gerekir.
 - Kuruluşunuz [cihazları yönetmek için Microsoft Endpoint Manager](/mem/endpoint-manager-getting-started) kullanıyor. (Microsoft Endpoint Manager (MEM) lisansları gereklidir; MEM, Microsoft 365 E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 İş Ekstra, Microsoft 365 F1/F3, Microsoft 365 Kamu G3/G5 ve ilgili eğitim lisanslarına dahildir.)
 - Windows cihazlarınız Windows 11 veya Windows 10 [1709, 1803](/lifecycle/announcements/revised-end-of-service-windows-10-1709), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) veya üzerini çalıştırıyor olmalıdır. [](/lifecycle/announcements/windows-server-1803-end-of-servicing) (Sürümler hakkında daha fazla bilgi için bkz. [Windows 10 sürüm bilgileri](/windows/release-health/release-information).)
