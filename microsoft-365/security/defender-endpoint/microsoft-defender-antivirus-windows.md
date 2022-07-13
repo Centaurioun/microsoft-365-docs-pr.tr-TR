@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e344c98fd136569015a032bcc83569bc38e06621
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 0efacb67cb3ba6b5126bbe5de327fa0b9f2092cf
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438805"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720401"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows’da Microsoft Defender Virüsten Koruma
 
@@ -47,8 +47,6 @@ Aygıtınızda Microsoft dışı virüsten koruma/kötü amaçlı yazılımlarda
 
 Aşağıdaki tabloda, Microsoft Defender Virüsten Koruma etkin, pasif veya devre dışı modda olduğunda neler beklenebileceği açıklanmıştır.
 
-<br/><br/>
-
 | Mod | Neler olur? |
 |---|---|
 | Etkin mod | Etkin modda, Microsoft Defender Virüsten Koruma, cihazda virüsten birincil koruma uygulaması olarak kullanılır. Dosyalar taranır, tehditler düzeltilir ve algılanan tehditler, kuruluşunuzun güvenlik raporlarında ve Windows Güvenliği uygulamanıza listelenir. |
@@ -61,19 +59,19 @@ Daha fazla bilgi edinmek için [Microsoft Defender Virüsten Koruma uyumluluğun
 
 Cihazınızın Microsoft Defender Virüsten Koruma durumunu kontrol etmek için Windows Güvenliği uygulaması veya Windows PowerShell gibi çeşitli yöntemlerden birini kullanabilirsiniz.
 
-### <a name="use-the-windows-security-app-to-check-status-of-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma durumunu kontrol etmek için Windows Güvenliği uygulamasını kullanma
+### <a name="use-the-windows-security-app-to-check-the-status-of-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma durumunu kontrol etmek için Windows Güvenliği uygulamasını kullanma
 
-1. Windows cihazınızda Başlat menüsü seçip yazmaya başlayın`Security`. Ardından, sonuçlarda Windows Güvenliği uygulamasını açın.
+1. Windows cihazınızda **Başlat** menüsünü seçip `Security` yazın. Ardından, sonuçlarda Windows Güvenliği uygulamasını açın.
 
 2. **Virüs ve tehdit koruması**’nı seçin.
 
-3. **Virüs ve tehdit koruması ayarları**’nda **Ayarları yönet**’i seçin.
+3. **Beni kim koruyor?** altında, **Sağlayıcıları Yönet**’i seçin.
 
-Ayarlar sayfasında virüsten koruma/kötü amaçlı yazılımdan koruma çözümünün adını görürsünüz.
+Güvenlik sağlayıcıları sayfasında virüsten koruma/kötü amaçlı yazılımdan koruma çözümünüzün adını görürsünüz.
 
-### <a name="use-powershell-to-check-status-of-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma durumunu kontrol etmek için PowerShell’i kullanma
+### <a name="use-powershell-to-check-the-status-of-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma durumunu kontrol etmek için PowerShell’i kullanma
 
-1. Başlat menüsünü seçip yazmaya başlayın`PowerShell`. Ardından, sonuçlarda Windows PowerShell’i açın.
+1. **Başlat** menüsünü seçip `PowerShell` yazın. Ardından, sonuçlarda Windows PowerShell’i açın.
 
 2. `Get-MpComputerStatus` yazın.
 
@@ -92,7 +90,7 @@ Ayarlar sayfasında virüsten koruma/kötü amaçlı yazılımdan koruma çözü
 
 ## <a name="get-your-antivirusantimalware-platform-updates"></a>Virüsten koruma/kötü amaçlı yazılımdan koruma platform güncellemelerinizi alın
 
-Microsoft Defender Virüsten Koruma programını ve tüm virüsten koruma/kötü amaçlı yazılımdan koruma çözümlerini güncel tutmanız önemlidir. Microsoft, cihazlarınızın kötü amaçlı yeni yazılımlara ve saldırı tekniklerine karşı korunması için en son teknolojiye sahip olmalarını sağlamak amacıyla düzenli güncelleştirmeler yayımlar. Daha fazla bilgi için [Microsoft Defender Virüsten Koruma güncelleştirmelerine bakın ve temelleri uygulayın](manage-updates-baselines-microsoft-defender-antivirus.md).
+Microsoft Defender Virüsten Koruma programını (veya diğer virüsten koruma/kötü amaçlı yazılımdan koruma çözümlerini) güncel tutmanız önemlidir. Microsoft, cihazlarınızın kötü amaçlı yeni yazılımlara ve saldırı tekniklerine karşı korunması için en son teknolojiye sahip olmalarını sağlamak amacıyla düzenli güncelleştirmeler yayımlar. Daha fazla bilgi için [Microsoft Defender Virüsten Koruma güncelleştirmelerine bakın ve temelleri uygulayın](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 > [!TIP]
 > Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
