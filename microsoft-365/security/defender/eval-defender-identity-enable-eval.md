@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Identity için değerlendirme ortamını etkinleştirme
-description: Algılayıcıyı yapılandırarak ve diğer Microsoft 365 Defender bilgisayarlardaki yerel yöneticileri keşfederek deneme laboratuvarında veya pilot ortamında Kimlik için Microsoft Defender'ı & ayarlayın.
+title: Kimlik için Microsoft Defender için değerlendirme ortamını etkinleştirme
+description: Algılayıcıyı yapılandırmaya & yükleyerek ve diğer bilgisayarlardaki yerel yöneticileri bularak Microsoft 365 Defender deneme laboratuvarında veya pilot ortamda Kimlik için Microsoft Defender ayarlayın.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,72 +19,73 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1be194035348bb8d414b37f16399fdcffe406063
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 84b893b6689385e4137778d0d787f42428843d26
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755036"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750198"
 ---
-# <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identity için değerlendirme ortamını etkinleştirme
+# <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Kimlik için Microsoft Defender için değerlendirme ortamını etkinleştirme
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-Bu makale [, Kimlik için](eval-defender-identity-overview.md) Microsoft Defender değerlendirme ortamını ayarlama işleminin 2. adımıdır. Bu işlem hakkında daha fazla bilgi için genel bakış [makalesine bakın](eval-defender-identity-overview.md).
+Bu makale, Kimlik için Microsoft Defender için değerlendirme ortamını ayarlama işleminin [2. adımıdır](eval-defender-identity-overview.md). Bu işlem hakkında daha fazla bilgi için [genel bakış makalesine](eval-defender-identity-overview.md) bakın.
 
-Kimlik için Microsoft Defender ortamınızı ayarlamak üzere aşağıdaki adımları kullanın. 
+Kimlik için Microsoft Defender ortamınızı ayarlamak için aşağıdaki adımları kullanın. 
 
-:::image type="content" source="../../media/defender/m365-defender-identity-eval-enable-steps.png" alt-text="Microsoft Defender değerlendirme ortamında Identity için Microsoft Defender'ı etkinleştirme adımları" lightbox="../../media/defender/m365-defender-identity-eval-enable-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-identity-eval-enable-steps.png" alt-text="Microsoft Defender değerlendirme ortamında Kimlik için Microsoft Defender etkinleştirme adımları" lightbox="../../media/defender/m365-defender-identity-eval-enable-steps.png":::
 
-- [1. Adım. Kimlik Örneği için Defender'ı ayarlama](#step-1-set-up-the-defender-for-identity-instance)
-- [2. Adım. Algılayıcıyı yükleyin ve yapılandıryın](#step-2-install-and-configure-the-sensor)
-- [3. Adım. Makinelerde algılayıcıya göre olay günlüğü ve ara sunucu ayarlarını yapılandırma](#step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor)
-- [Adım 4. Diğer bilgisayarlardaki yerel yöneticilerin Kimlik için Defender'a izin verme](#step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers)
+- [1. Adım. Kimlik için Defender Örneğini ayarlama](#step-1-set-up-the-defender-for-identity-instance)
+- [2. Adım. Algılayıcıyı yükleme ve yapılandırma](#step-2-install-and-configure-the-sensor)
+- [3. Adım. Algılayıcı ile makinelerde olay günlüğü ve ara sunucu ayarlarını yapılandırma](#step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor)
+- [4. Adım. Kimlik için Defender'ın diğer bilgisayarlardaki yerel yöneticileri tanımlamasına izin ver](#step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers)
 
-## <a name="step-1-set-up-the-defender-for-identity-instance"></a>Adım 1. Kimlik Örneği için Defender'ı ayarlama
+## <a name="step-1-set-up-the-defender-for-identity-instance"></a>Adım 1. Kimlik için Defender Örneğini ayarlama
 
 Örneğinizi oluşturmak ve ardından bu örneği Active Directory ortamınıza bağlamak için Kimlik için Defender portalında oturum açın. 
 
 |  Adım | Açıklama     |Daha fazla bilgi  |
 |---------|---------|---------|
-|1     | Identity için Defender örneğini oluşturma        | [Hızlı Başlangıç: Kimlik örneği için Microsoft Defender'nızı oluşturma](/defender-for-identity/install-step1)        |
-|2     | Bağlan için Defender örneğini Active Directory ormanınıza geri yükleme   | [Hızlı Başlangıç: Bağlan Ormanınıza göz atabilirsiniz](/defender-for-identity/install-step2)  |
+|1     | Kimlik için Defender örneğini oluşturma        | [Hızlı Başlangıç: Kimlik için Microsoft Defender örneğinizi oluşturma](/defender-for-identity/install-step1)        |
+|2     | Kimlik için Defender örneğini Active Directory ormanınıza bağlama   | [Hızlı Başlangıç: Active Directory Ormanınıza bağlanma](/defender-for-identity/install-step2)  |
 
-## <a name="step-2-install-and-configure-the-sensor"></a>Adım 2. Algılayıcıyı yükleyin ve yapılandıryın
+## <a name="step-2-install-and-configure-the-sensor"></a>Adım 2. Algılayıcıyı yükleme ve yapılandırma
 
-Ardından, şirket içi ortamınıza etki alanı denetleyicilerinde ve AD FS sunucularında Identity algılayıcısı için Defender'ı indirin, yükleyin ve yapılandırın.
-
-|  Adım | Açıklama     |Daha fazla bilgi  |
-|---------|---------|---------|
-|1     | Identity algılayıcıları için kaç Microsoft Defender'a ihtiyacınız olduğunu tespit edin.        | [Kimlik için Microsoft Defender kapasitesini planlama](/defender-for-identity/capacity-planning)   |
-|2     | Algılayıcı kurulum paketini indirin  |  [Hızlı Başlangıç: Kimlik algılayıcısı kurulum paketi için Microsoft Defender'ı indirin](/defender-for-identity/install-step3)   |
-|3     | Kimlik algılayıcısı için Defender'ı yükleme    |  [Hızlı Başlangıç: Kimlik algılayıcısı için Microsoft Defender'ı yükleme](/defender-for-identity/install-step4)       |
-|4     | Algılayıcıyı yapılandırma       |  [Kimlik algılayıcısı ayarları için Microsoft Defender'ı yapılandırma ](/defender-for-identity/install-step5)   |
-
-## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>Adım 3. Makinelerde algılayıcıya göre olay günlüğü ve ara sunucu ayarlarını yapılandırma
-
-Algılayıcıyı yüklemiş olduğunuz makinelerde, algılama Windows etkinleştirmek ve geliştirmek için etkinlik günlüğü koleksiyonu ve İnternet ara sunucusu ayarlarını yapılandırabilirsiniz.
+Ardından, şirket içi ortamınızdaki etki alanı denetleyicilerinde ve AD FS sunucularında Kimlik için Defender algılayıcısını indirin, yükleyin ve yapılandırın.
 
 |  Adım | Açıklama     |Daha fazla bilgi  |
 |---------|---------|---------|
-|1     | Olay Windows koleksiyonunu yapılandırma         | [Etkinlik Windows yapılandırma](/defender-for-identity/configure-windows-event-collection)        |
-|2     | İnternet ara sunucusu ayarlarını yapılandırma        | [Kimlik Algılayıcısı için Microsoft Defender'nız için uç nokta ara sunucu ve İnternet bağlantı ayarlarını yapılandırma](/defender-for-identity/configure-proxy)        |
+|1     | Kaç Kimlik için Microsoft Defender algılayıcıya ihtiyacınız olduğunu belirleyin.        | [Kimlik için Microsoft Defender için kapasite planlama](/defender-for-identity/capacity-planning)   |
+|2     | Algılayıcı kurulum paketini indirme  |  [Hızlı Başlangıç: Kimlik için Microsoft Defender algılayıcı kurulum paketini indirme](/defender-for-identity/install-step3)   |
+|3     | Kimlik için Defender algılayıcısını yükleme    |  [Hızlı Başlangıç: Kimlik için Microsoft Defender algılayıcısını yükleme](/defender-for-identity/install-step4)       |
+|4     | Algılayıcıyı yapılandırma       |  [Kimlik için Microsoft Defender algılayıcı ayarlarını yapılandırma](/defender-for-identity/install-step5)   |
 
-## <a name="step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers"></a>Adım 4. Diğer bilgisayarlardaki yerel yöneticilerin Kimlik için Defender'a izin verme
+## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>Adım 3. Algılayıcı ile makinelerde olay günlüğü ve ara sunucu ayarlarını yapılandırma
 
-Identity lateral movement path algılaması için Microsoft Defender, belirli makinelerde yerel yöneticilerin tanımlanmasında yapılan sorguları kullanır. Bu sorgular, Kimlik Hizmeti hesabı için Defender kullanılarak SAM-R protokolüyle gerçekleştirilir. 
+Algılayıcıyı yüklediğiniz makinelerde algılama özelliklerini etkinleştirmek ve geliştirmek için Windows olay günlüğü toplama ve İnternet proxy ayarlarını yapılandırın.
 
-Bu Windows ve sunucuların Identity için Defender hesabının SAM-R gerçekleştirmesine izin olduğundan emin olmak için, Ağ erişim ilkesinde listelenen yapılandırılmış hesapların yanı sıra Kimlik için Defender hizmet hesabını eklemek için Grup İlkesinde değişiklik yapılması gerekir. Etki alanı denetleyicileri dışında tüm bilgisayarlara grup ilkeleri **uygulamayı unutmayın**.
+|  Adım | Açıklama     |Daha fazla bilgi  |
+|---------|---------|---------|
+|1     | Windows olay günlüğü koleksiyonunu yapılandırma         | [Windows Olay koleksiyonunu yapılandırma](/defender-for-identity/configure-windows-event-collection)        |
+|2     | İnternet proxy ayarlarını yapılandırma        | [Kimlik için Microsoft Defender Algılayıcınız için uç nokta ara sunucusu ve İnternet bağlantı ayarlarını yapılandırma](/defender-for-identity/configure-proxy)        |
 
-Bunun nasıl yapılır yönergeleri için bkz. [SAM'ye uzaktan arama yapmak üzere Identity için Microsoft Defender'ı yapılandırma](/defender-for-identity/install-step8-samr). 
+## <a name="step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers"></a>Adım 4. Kimlik için Defender'ın diğer bilgisayarlardaki yerel yöneticileri tanımlamasına izin ver
+
+Kimlik için Microsoft Defender yanal hareket yolu algılama, belirli makinelerdeki yerel yöneticileri tanımlayan sorgulara dayanır. Bu sorgular, Kimlik için Defender Hizmeti hesabı kullanılarak SAM-R protokolüyle gerçekleştirilir. 
+
+Windows istemcilerinin ve sunucularının Kimlik için Defender hesabınızın SAM-R gerçekleştirmesine izin vermesini sağlamak için, Ağ erişim ilkesinde listelenen yapılandırılmış hesaplara ek olarak Kimlik için Defender hizmet hesabını eklemek için grup ilkesi bir değişiklik yapılmalıdır. **Etki alanı denetleyicileri dışındaki** tüm bilgisayarlara grup ilkeleri uyguladığıdan emin olun.
+
+Bunun nasıl yapılacağını açıklayan yönergeler için bkz[. SAM'ye uzaktan çağrı yapmak için Kimlik için Microsoft Defender yapılandırma](/defender-for-identity/install-step8-samr). 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Adım 3/ 3: [Kimlik için Pilot Microsoft Defender](eval-defender-identity-pilot.md)
+Adım 3 /3: [Pilot Kimlik için Microsoft Defender](eval-defender-identity-pilot.md)
 
-Kimlik için [Microsoft Defender'ı Değerlendirme'ye genel bakış](eval-defender-identity-overview.md)
+[Değerlendirme Kimlik için Microsoft Defender](eval-defender-identity-overview.md) için genel bakışa dönün
 
-Değerlendirme ve pilot uygulama için [genel bakış Microsoft 365 Defender](eval-overview.md)
+[Değerlendirme ve pilot Microsoft 365 Defender](eval-overview.md) genel bakışa dönün

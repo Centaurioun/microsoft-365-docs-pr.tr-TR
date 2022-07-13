@@ -8,7 +8,7 @@ f1.keywords:
 - customize configuration profiles
 manager: dougeby
 audience: ITPro
-description: Bu güvenlik denetimlerini buluta geçiş yapmak için Intune kullanarak cihazlarda güvenli ayarları zorunlu kılmak için yapılandırma profilleriyle Kullanmaya başlayın.
+description: Bu güvenlik denetimlerini buluta geçiş yapmak için Intune kullanarak cihazlarda güvenli ayarları zorunlu kılmak için yapılandırma profillerini kullanmaya başlayın.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
@@ -16,18 +16,19 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: fe137e626d5199f1709504d025411586965ae9fd
-ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
+ms.openlocfilehash: 3b8993c02ce6a5c1885997f6c56c40c22ee85321
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64737418"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749319"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Adım 5. Microsoft Intune'de cihaz profillerini dağıtma
 
-Microsoft Intune, kuruluşunuzdaki farklı cihazlarda etkinleştirebileceğiniz veya devre dışı bırakabileceğiniz ayarlar ve özellikler içerir. Bu ayarlar ve özellikler "yapılandırma profillerine" eklenir. iOS/iPadOS, Android cihaz yöneticisi, Android Enterprise ve Windows gibi farklı cihazlar ve farklı platformlar için profiller oluşturabilirsiniz. Ardından, profili cihazlara uygulamak veya "atamak" için Intune kullanın.
+Microsoft Intune, kuruluşunuzdaki farklı cihazlarda etkinleştirebileceğiniz veya devre dışı bırakabileceğiniz ayarlar ve özellikler içerir. Bu ayarlar ve özellikler "yapılandırma profillerine" eklenir. iOS/iPadOS, Android cihaz yöneticisi, Android Kurumsal ve Windows gibi farklı cihazlar ve farklı platformlar için profiller oluşturabilirsiniz. Ardından, profili cihazlara uygulamak veya "atamak" için Intune kullanın.
 
 Bu makale, yapılandırma profillerini kullanmaya başlama konusunda rehberlik sağlar. 
 
@@ -42,13 +43,13 @@ Oluşturabileceğiniz yapılandırma profilleri hakkında fikir vermek için bkz
 
 Başlangıç noktası olarak, cihaz yapılandırmalarınızı Microsoft güvenlik temelleriyle hizalamak istiyorsanız, Microsoft Endpoint Manager içindeki güvenlik temellerini öneririz. Bu yaklaşımın avantajı, Windows 10 ve 11 özellik yayımlandıkçe temelleri güncel tutmak için Microsoft'a güvenebilmenizdir. 
 
-Windows 10 ve Windows 11 için kullanılabilen Intune Windows güvenlik temellerini dağıtmak için. Kullanılabilir taban çizgileri hakkında bilgi edinmek için bkz. [Intune'da Windows cihazları yapılandırmak için güvenlik](/mem/intune/protect/security-baselines) temellerini kullanma.
+Windows 10 ve Windows 11 için kullanılabilen Intune için Windows güvenlik temellerini dağıtmak için. Kullanılabilir taban çizgileri hakkında bilgi edinmek için bkz. [Intune'da Windows cihazlarını yapılandırmak için güvenlik](/mem/intune/protect/security-baselines) temellerini kullanma.
 
 Şimdilik en uygun MDM güvenlik temelini dağıtmanız gerekir. Profili oluşturmak ve temel sürümü seçmek için [bkz. Microsoft Intune güvenlik temeli profillerini yönetme](/mem/intune/protect/security-baselines-configure).
 
 Daha sonra Uç Nokta için Microsoft Defender ayarlandığında ve Intune bağladığınızda Uç Nokta için Defender temellerini dağıtın. Bu konu başlığı, bu serinin sonraki makalesinde ele alınmıştır: [6. Adım. Cihaz riskini ve güvenlik temellerine uyumluluğunu izleyin](manage-devices-with-intune-monitor-risk.md).
 
-Bu güvenlik temellerinin CIS veya NIST uyumlu olmadığını ancak önerilerini yakından yansıttığını anlamak önemlidir. Daha fazla bilgi için bkz. [Intune güvenlik temelleri CIS veya NIST uyumlu mu?](https://docs.microsoft.com/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)
+Bu güvenlik temellerinin CIS veya NIST uyumlu olmadığını ancak önerilerini yakından yansıttığını anlamak önemlidir. Daha fazla bilgi için bkz. [Intune güvenlik temelleri CIS veya NIST uyumlu mu?](/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)
 
 ## <a name="customize-configuration-profiles-for-your-organization"></a>Kuruluşunuz için yapılandırma profillerini özelleştirme
 
@@ -65,7 +66,7 @@ Aşağıdaki tabloda çizim açıklanmaktadır.
 |---------|---------|---------|
 |Cihaz özellikleri     | Cihazdaki özellikleri denetler. Bu kategori yalnızca iOS/iPadOS ve macOS cihazları için geçerlidir.        | Airprint, bildirimler, kilit ekranı iletileri        |
 |Cihaz kısıtlamaları     | Cihazlarda güvenliği, donanımı, veri paylaşımını ve daha fazla ayarı denetler        | PIN gerektirme, veri şifrelemesi        |
-|Erişim yapılandırması     |  Bir cihazı kuruluşunuzun kaynaklarına erişecek şekilde yapılandırıyor        | E-posta profilleri, VPN profilleri, Wi-Fi ayarları, sertifikaları        |
+|Erişim yapılandırması     |  Bir cihazı kuruluşunuzun kaynaklarına erişecek şekilde yapılandırıyor        | Email profilleri, VPN profilleri, Wi-Fi ayarları, sertifikaları        |
 |Özel     | Özel yapılandırma ayarlama veya özel yapılandırma eylemlerini yürütme       | OEM ayarlarını yapın, PowerShell betiklerini yürütün        |
 |    |         |         |
 
@@ -73,7 +74,7 @@ Kuruluşunuz için yapılandırma profillerini özelleştirirken aşağıdaki k�
 - İlkelerin genel sayısını küçük tutarak güvenlik idaresi stratejinizi basitleştirin.
 - Ayarları yukarıda listelenen kategorilere veya kuruluşunuz için anlamlı kategorilere gruplandırın.
 - Güvenlik denetimlerini grup ilkesi Nesnelerinden (GPO) Intune yapılandırma profillerine taşırken, her GPO tarafından yapılandırılan ayarların hala uygun olup olmadığını ve genel bulut güvenlik stratejinize katkıda bulunmak için gerekli olup olmadığını göz önünde bulundurun. Koşullu erişim ve Intune dahil olmak üzere bulut hizmetleri genelinde yapılandırılabilir birçok ilke, özel GPO'ların ilk tasarlandığı şirket içi ortamda yapılandırılabilenden daha gelişmiş bir koruma sağlar.
-- Geçerli GPO ayarlarınızı Microsoft Endpoint Manager içindeki özelliklerle karşılaştırmak ve eşlemek için grup ilkesi Analytics'i kullanın. Bkz. [Microsoft Endpoint Manager'da grup ilkesi analizi kullanarak şirket içi grup ilkesi nesnelerinizi (GPO) analiz](/mem/intune/configuration/group-policy-analytics) etme.
+- Geçerli GPO ayarlarınızı Karşılaştırmak ve Microsoft Endpoint Manager içindeki özelliklerle eşlemek için grup ilkesi Analytics'i kullanın. Bkz. Microsoft [Endpoint Manager'da grup ilkesi analizini kullanarak şirket içi grup ilkesi nesnelerinizi (GPO) analiz](/mem/intune/configuration/group-policy-analytics) etme.
 - Özel yapılandırma profillerini kullanırken buradaki yönergeleri kullandığınızdan emin olun: [Intune'de özel ayarlarla bir profil oluşturun](/mem/intune/configuration/custom-settings-configure).
 
 ## <a name="additional-resources"></a>Ek kaynaklar

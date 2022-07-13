@@ -22,22 +22,22 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Ürün lisanslarının atamasını kaldırmak için kullandığınız yöntem, lisansları belirli kullanıcılardan mı yoksa belirli bir üründen mi kaldırdığınıza bağlıdır.
-ms.date: 06/23/2022
-ms.openlocfilehash: 956391e8eeda1d17fdba76cf406a0291d1850b6f
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.date: 07/12/2022
+ms.openlocfilehash: b6459030c376bb891ea32b9cb096d26449dfa0d1
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663514"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748395"
 ---
 # <a name="unassign-microsoft-365-licenses-from-users"></a>Kullanıcılardan Microsoft 365 lisanslarının atamasını kaldırma
 
 Kullanıcılardan lisans atamalarını **Etkin kullanıcılar** sayfasından veya **Lisanslar** sayfasından kaldırabilirsiniz. Kullandığınız yöntem, belirli kullanıcıların ürün lisanslarını kaldırmak mı yoksa belirli bir üründen kullanıcı lisanslarının atamasını kaldırmak mı istediğinize bağlıdır.
 
 > [!NOTE]
-> 
+>
 > - Yönetici olarak, kuruluşunuzdaki bir kullanıcı tarafından satın alınan self servis satın alma aboneliği için lisans atayamaz veya lisansı kaldıramazsınız. [Self servis satın alma aboneliğini devralabilir](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription) ve lisansları atayabilir veya atamasını kaldırabilirsiniz.
-> 
+>
 > - Bazı abonelikler için yalnızca aboneliğinizi satın aldıktan veya yeniledikten sonra sınırlı bir süre içinde iptal edebilirsiniz. İptal penceresi geçtiyse, süresi sonunda aboneliği iptal etmek için yinelenen ödemeyi kapatın.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
@@ -48,9 +48,9 @@ Kullanıcılardan lisans atamalarını **Etkin kullanıcılar** sayfasından vey
 
 ## <a name="use-the-licenses-page-to-unassign-licenses"></a>Lisans atamalarını silmek için Lisanslar sayfasını kullanma
 
-**Lisanslar** sayfası, aynı anda en fazla 20 kullanıcı için lisans atamanızı veya atamasını kaldırmanızı sağlar. Sayfa, sahip olduğunuz ürünleri, her ürün için kullanılabilir lisans sayısını ve kullanılabilir toplam lisansların dışında atanan lisans sayısını gösterir. Lisans sayısı, aynı ürün adına ait tüm aboneliklerin toplam lisans toplamıdır.
+**Lisanslar** sayfası, aynı anda en fazla 20 kullanıcı için lisans atamanızı veya atamasını kaldırmanızı sağlar. Sayfa, sahip olduğunuz ürünleri, her ürün için kullanılabilir lisans sayısını ve kullanılabilir toplam lisansların dışında atanan lisans sayısını gösterir.
 
-Örneğin, Microsoft 365 İş Ekstra için 5 lisansı olan bir aboneliğiniz ve aynı ürün için 8 lisansı olan başka bir aboneliğiniz olabilir. **Lisanslar** sayfasında, tüm abonelikleriniz genelinde Microsoft 365 İş Ekstra için toplam 13 lisansınız olduğu gösterilir. Bu, aynı ürün için olsalar bile sahip olduğunuz her abonelik için bir satır görüntüleyen **Ürünleriniz** sayfasında gördüklerinizden farklıdır.
+**Lisanslar** sayfasında, aynı ürün adına ait tüm aboneliklerin toplam lisans toplamı gösterilir. Örneğin, Microsoft 365 İş Ekstra için 5 lisansı olan bir aboneliğiniz ve aynı ürün için 8 lisansı olan başka bir aboneliğiniz olabilir. **Lisanslar** sayfasında, tüm abonelikleriniz genelinde Microsoft 365 İş Ekstra için toplam 13 lisansınız olduğu gösterilir. Bu, aynı ürün için olsalar bile sahip olduğunuz her abonelik için bir satır görüntüleyen **Ürünleriniz** sayfasında gördüklerinizden farklıdır.
 
 ::: moniker range="o365-worldwide"
 
@@ -64,13 +64,13 @@ Kullanıcılardan lisans atamalarını **Etkin kullanıcılar** sayfasından vey
 
 ::: moniker-end
 
-1. Bir ürün seçin.
+2. Bir ürün seçin.
 
-2. Lisans atamalarını silmek istediğiniz kullanıcıların onay kutularını seçin.
+3. Lisans atamalarını silmek istediğiniz kullanıcıların onay kutularını seçin.
 
-3. **Lisansların atamasını kaldır'ı** seçin.
+4. **Lisansların atamasını kaldır'ı** seçin.
 
-4. **Lisansların Atamasını Kaldır** kutusunda Atamayı **Kaldır'ı** seçin.
+5. **Lisansların Atamasını Kaldır** kutusunda Atamayı **Kaldır'ı** seçin.
 
 ## <a name="use-the-active-users-page-to-unassign-licenses"></a>Lisans atamalarını silmek için Etkin kullanıcılar sayfasını kullanma
 

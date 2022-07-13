@@ -1,7 +1,7 @@
 ---
-title: Pilot Microsoft 365 Defender olay yanıtı özelliklerini deneyin
-description: Olaylarda öncelikleri belirlemek Microsoft 365 Defender yönetmek, soruşturmaları otomatikleştirmek ve tehdit algılamada gelişmiş arama kullanmak için olay yanıtı özelliklerini deneyin.
-keywords: Microsoft 365 Defender deneyin, Microsoft 365 Defender deneyin, Microsoft 365 Defender, Microsoft 365 Defender laboratuvarına veya Microsoft 365 Defender  pilot, siber güvenlik, gelişmiş kalıcı tehdit, kurumsal güvenlik, cihazlar, cihaz, kimlik, kullanıcılar, veri, uygulamalar, olaylar, otomatik araştırma ve düzeltme, gelişmiş tarama
+title: Pilot ortamda olay yanıtı özelliklerini Microsoft 365 Defender deneyin
+description: Olayları önceliklendirmek ve yönetmek, araştırmaları otomatikleştirmek ve tehdit algılamada gelişmiş avcılığı kullanmak için Microsoft 365 Defender olay yanıtı özelliklerini deneyin.
+keywords: Deneme Microsoft 365 Defender, Microsoft 365 Defender deneyin, Microsoft 365 Defender değerlendirin, değerlendirme laboratuvarı Microsoft 365 Defender Microsoft 365 Defender  pilot, siber güvenlik, gelişmiş kalıcı tehdit, kurumsal güvenlik, cihazlar, cihaz, kimlik, kullanıcılar, veriler, uygulamalar, olaylar, otomatik araştırma ve düzeltme, gelişmiş avcılık
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,203 +20,204 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0ad2fc9a1566e7816b3ff806b7d07ac29347cc89
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 01a263569da09807c96160c32fda719bd2575994
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754769"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748485"
 ---
-# <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pilot Microsoft 365 Defender olay yanıtı özelliklerini deneyin
+# <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pilot ortamda olay yanıtı özelliklerini Microsoft 365 Defender deneyin
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-Bu makale, pilot ortam kullanarak olayla ilgili bir soruşturma ve yanıtını gerçekleştirme sürecindeki Microsoft 365 Defender [Adım 2'dir](eval-defender-investigate-respond.md). Bu işlem hakkında daha fazla bilgi için genel bakış [makalesine](eval-defender-investigate-respond.md) bakın.
+Bu makale, pilot ortam kullanarak Microsoft 365 Defender bir olayın araştırılması ve yanıtlanması sürecinde [2. Adımdır](eval-defender-investigate-respond.md). Bu işlem hakkında daha fazla bilgi için [genel bakış](eval-defender-investigate-respond.md) makalesine bakın.
 
-Benzetimi yapılan bir [saldırı için bir olay yanıtı gerçekleştirin](eval-defender-investigate-respond-simulate-attack.md), keşfetmeniz Microsoft 365 Defender özelliklerden bazıları:
+[Simülasyon saldırısı için bir olay yanıtı](eval-defender-investigate-respond-simulate-attack.md) gerçekleştirdikten sonra keşfedebileceğiniz bazı Microsoft 365 Defender özellikleri şunlardır:
 
-|Özellik |Açıklama |
+|Yeteneği |Açıklama |
 |:-------|:-----|
-| [Olayları önceliklendirme](#prioritize-incidents) | Bundan sonra hangi olayları ele alamayacaklarını belirlemek için, olayları sırasına göre filtreleme ve sıralama kullanın. |
+| [Olayların önceliklerini belirleme](#prioritize-incidents) | Bundan sonra hangi olayların ele alındığını belirlemek için olay kuyruğunun filtresini ve sıralamasını kullanın. |
 | [Olayları yönetme](#manage-incidents) | Doğru atamayı sağlamak, etiketler ve açıklamalar eklemek ve bir olayı çözmek için olay özelliklerini değiştirin. |
-| [Otomatik araştırma ve yanıt](#examine-automated-investigation-and-response-with-the-action-center) | Güvenlik işlemleri ekibinin tehditlere daha verimli ve etkili bir şekilde müdahale edebilirim. İşlem merkezi, bekleyen düzeltme eylemlerini onaylama gibi olay ve uyarı görevleri için "tek bir cam bölmesi" deneyimidir. |
-| [Gelişmiş avcılık örneği](#use-advanced-hunting) | Ağ'daki olayları önceden incelemek ve tehdit göstergeleriyle varlıkları bulmak için sorguları kullanın. Ayrıca, bir olayın soruşturması ve düzeltmesi sırasında gelişmiş avlar da kullanırsiniz. |
+| [Otomatik araştırma ve yanıt](#examine-automated-investigation-and-response-with-the-action-center) | Güvenlik operasyonları ekibinizin tehditleri daha verimli ve etkili bir şekilde ele almasına yardımcı olmak için otomatik araştırma ve yanıt (AIR) özelliklerini kullanın. İşlem merkezi, bekleyen düzeltme eylemlerini onaylama gibi olay ve uyarı görevleri için "tek bir cam bölmesi" deneyimidir. |
+| [Gelişmiş avcılık örneği](#use-advanced-hunting) | Ağınızdaki olayları proaktif olarak incelemek ve tehdit göstergelerini ve varlıklarını bulmak için sorguları kullanın. Ayrıca, bir olayın araştırılması ve düzeltilmesi sırasında gelişmiş avcılık kullanırsınız. |
 
 
 ## <a name="prioritize-incidents"></a>Olaylara öncelik belirleyin
 
-Microsoft 365 Defender portalının hızlı **başlatılmasında Olaylar & veya >'den** olay <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">sırasına Microsoft 365 Defender</a>. İşte bir örnek.
+**olaylar & uyarıları > Microsoft 365 Defender** <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalının</a> hızlı başlatılması sırasında olaylar bölümünden olay kuyruğuna ulaşabilirsiniz. İşte bir örnek.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Olaylar & portalında Uyarılar Microsoft 365 Defender." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Microsoft 365 Defender portalındaki Olaylar & uyarıları bölümü" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 
-En **son olaylar ve uyarılar** bölümünde, alınan uyarı sayısının ve son 24 saat içinde oluşturulan olay sayısının grafiği gösterilir.
+**En son olaylar ve uyarılar** bölümü, alınan uyarı sayısının ve son 24 saat içinde oluşturulan olayların grafiğini gösterir.
 
-Olay listesini incelemek ve bunların atama ve soruşturmaya önemlerini önceliklendirmek için şunları şunlarıabilirsiniz: 
+Olayların listesini incelemek ve bunların atama ve araştırma açısından önemini önceliklendirmek için şunları yapabilirsiniz: 
 
-- Olayın farklı karakteristiklerini veya **etkileyen** varlıkları daha kolay şekilde takip etmek için özelleştirilebilir sütunları yapılandırabilirsiniz (Sütunları seç'i seçin). Bu, çözümleme için olayları önceliklendirme konusunda bilinçli bir karar alamanıza yardımcı olur.
+- Olayın veya etkilenen varlıkların farklı özelliklerine görünürlük sağlamak için özelleştirilebilir sütunları yapılandırın ( **Sütunları seç'i** seçin). Bu, analiz için olayların önceliklendirilmesiyle ilgili bilinçli bir karar vermenize yardımcı olur.
 
-- Belirli bir senaryoya veya tehdite odaklanmak için filtrelemeyi kullanın. Olay sırasında filtre uygulamak, acil dikkat gerektiren olayları belirlemeye yardımcı olabilir. 
+- Belirli bir senaryoya veya tehdide odaklanmak için filtrelemeyi kullanın. Olay kuyruğuna filtre uygulamak, hangi olayların hemen ilgilenilmesi gerektiğini belirlemeye yardımcı olabilir. 
 
-Varsayılan olay kuyruğundan **Filtreler'i** seçerek, belirli  bir olay kümesi belirtebilirsiniz. Filtreler bölmesini görüntüleyin. İşte bir örnek.
+Varsayılan olay kuyruğundan **Filtreler'i** seçerek belirli bir olay kümesini belirtebileceğiniz **filtreler** bölmesini görebilirsiniz. İşte bir örnek.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Microsoft 365 Defender portalında Olaylar & Filtreler bölmesi" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Microsoft 365 Defender portalındaki Olaylar & uyarıları bölümünün Filtreler bölmesi" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
-Daha fazla bilgi için bkz [. Olayları önceliklendirme](incident-queue.md).
+Daha fazla bilgi için bkz. [Olayları önceliklendirme](incident-queue.md).
 
 ## <a name="manage-incidents"></a>Olayları yönetin
 
-Olayları, Bir olayın Olay yönetme **bölmesinden** yönetebilirsiniz. İşte bir örnek.
+Olayları bir olayın **Olay yönetme** bölmesinden yönetebilirsiniz. İşte bir örnek.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Yeni portalda Olaylar ve &'nin Olayları yönet bölmesi Microsoft 365 Defender." lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Microsoft 365 Defender portalındaki Olaylar & uyarıları bölümünün Olay yönetme bölmesi" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
-Bu bölmeyi, şu bölmede **yer alan Olayı** yönet bağlantısından görüntüleyebilirsiniz:
+Bu bölmeyi aşağıdaki olay **yönet** bağlantısından görüntüleyebilirsiniz:
 
-- Olay sırasındaki bir olayın Özellikler bölmesi.
-- **Bir** olayın özet sayfası.
+- Olay kuyruğundaki bir olayın Özellikler bölmesi.
+- Bir olayın **özet** sayfası.
 
-Olaylarınızı şöyle yönetebilirsiniz:
+Olaylarınızı yönetmek için kullanabileceğiniz yöntemler şunlardır:
 
 - Olay adını düzenleme
 
-  Otomatik olarak atanan adı, güvenlik ekibinin en iyi yöntemlerine göre değiştirebilirsiniz.
+  Güvenlik ekibinizin en iyi yöntemlerine göre otomatik olarak atanan adı değiştirin.
   
 - Olay etiketleri ekleme
 
-  Güvenlik ekibimizin olayları sınıflandırmak için kullandığı etiketleri ekleyin. Daha sonra filtrelendirebilirsiniz.
+  Güvenlik ekibinizin olayları sınıflandırmak için kullandığı ve daha sonra filtrelenebilen etiketler ekleyin.
   
-- Olayı ata
+- Olayı atama
 
-  Bunu daha sonra filtrelilen bir kullanıcı hesabı adına attayabilirsiniz.
+  Daha sonra filtrelenebilen bir kullanıcı hesabı adına atayın.
   
 - Bir olayı çözme
 
-  Düzeltilen olayı kapatın.
+  Düzeltildikten sonra olayı kapatın.
   
-- Sınıflandırmasını ve belirlemesini ayarlama
+- Sınıflandırmasını ve belirlenmesini ayarlama
 
-  Bir olayı çözümken tehdit türünü sınıflandırarak seçin.
+  Bir olayı çözümlerken tehdit türünü sınıflandırın ve seçin.
   
 - Açıklama ekleme
 
-  Güvenlik ekibinin en iyi yöntemlerine dayalı olarak ilerleme durumu, notlar veya diğer bilgiler için yorumları kullanın. Tüm açıklama geçmişini, bir olayın **ayrıntılar sayfasındaki** Açıklamalar ve geçmiş seçeneğiyle bulabilirsiniz.
+  Güvenlik ekibinizin en iyi yöntemlerini temel alan ilerleme durumu, notlar veya diğer bilgiler için açıklamaları kullanın. Açıklama geçmişinin tamamı, bir olayın ayrıntılar sayfasındaki **Açıklamalar ve geçmiş** seçeneğinden kullanılabilir.
 
-Daha fazla bilgi için bkz [. Olayları yönetme](manage-incidents.md).
+Daha fazla bilgi için bkz. [Olayları yönetme](manage-incidents.md).
 
-## <a name="examine-automated-investigation-and-response-with-the-action-center"></a>İşlem Merkezi ile otomatik araştırmayı ve yanıtı inceleme
+## <a name="examine-automated-investigation-and-response-with-the-action-center"></a>İşlem merkezi ile otomatik araştırmayı ve yanıtı inceleme
 
-Otomatik araştırma ve yanıt yeteneklerinizin, sizin için nasıl yapılandırıldığına bağlı olarak, düzeltme eylemleri otomatik olarak veya yalnızca güvenlik işlemleri ekibinin onayı üzerine alınır. Bekleyen veya tamamlanmış olan tüm eylemler İşlem Merkezinde listelenir. [Burada cihazlarınız](m365d-action-center.md) için bekleyen ve tamamlanmış düzeltme eylemleri, e-posta & işbirliği içeriği ve tek bir konumda kimlikler listelenir.
+Kuruluşunuz için otomatik araştırma ve yanıt özelliklerinin nasıl yapılandırıldığına bağlı olarak, düzeltme eylemleri otomatik olarak veya yalnızca güvenlik operasyonları ekibinizin onayıyla gerçekleştirilen işlemlerdir. Bekleyen veya tamamlanan tüm eylemler, cihazlarınız, e-posta & işbirliği içeriği ve kimlikleri tek bir konumda bekleyen ve tamamlanan düzeltme eylemlerini listeleyen [İşlem merkezinde](m365d-action-center.md) listelenir.
 
 İşte bir örnek.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Portalda Birleşik Microsoft 365 Defender merkezi" lightbox="../../media/m3d-action-center-unified.png":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Microsoft 365 Defender portalındaki Birleşik İşlem merkezi" lightbox="../../media/m3d-action-center-unified.png":::
 
-İşlem merkezinde, bekleyen eylemleri seçerek çıkış bölmesinde onayabilir veya reddedebilirsiniz. İşte bir örnek.
+İşlem merkezinden bekleyen eylemleri seçebilir ve ardından açılır bölmede bunları onaylayabilir veya reddedebilirsiniz. İşte bir örnek.
 
-:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Portalda bir eylemi onaylama veya reddetme seçeneklerinin görüntü Microsoft 365 Defender görüntülenir" lightbox="../../media/air-actioncenter-itemselected.png":::
+:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Microsoft 365 Defender portalında bir eylemi onaylama veya reddetme seçeneklerinin görüntülendiği bölme" lightbox="../../media/air-actioncenter-itemselected.png":::
 
 
-Otomatik araştırmalarınızı zamanında devam etmek ve tamamlamak için beklemedeki eylemleri en kısa zamanda onaylayın (veya reddedin).
+Otomatik araştırmalarınızın zamanında devam edebilmesi ve tamamlayabilmesi için bekleyen eylemleri en kısa sürede onaylayın (veya reddedin).
 
-Daha fazla bilgi için bkz [. Otomatik araştırma ve yanıt](m365d-autoir.md) ve [İşlem merkezi](m365d-action-center.md).
+Daha fazla bilgi için bkz [. Otomatik araştırma ve yanıt ve](m365d-autoir.md) [İşlem merkezi](m365d-action-center.md).
 
-## <a name="use-advanced-hunting"></a>Gelişmiş av kullanma
+## <a name="use-advanced-hunting"></a>Gelişmiş avcılığı kullanma
 
 > [!NOTE]
-> Gelişmiş arama benzetimini takip edene kadar gelişmiş av benzetimini anlamadan önce gelişmiş av kavramlarını anlamak için aşağıdaki videoyu izleyin, portalda bu özellikleri nerede bulamaya ulaşabilirsiniz ve güvenlik işlemleriniz için size nasıl yardımcı olduğunu bilebilirsiniz.
+> Gelişmiş tehdit avcılığı simülasyonunda size yol gösterirken, gelişmiş avlanma kavramlarını anlamak, portalda nerede bulabileceğinizi görmek ve güvenlik operasyonlarınızda size nasıl yardımcı olabileceğini öğrenmek için aşağıdaki videoyu izleyin.
 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
 
-İsteğe bağlı dosyasız [PowerShell](eval-defender-investigate-respond-simulate-attack.md#simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional) saldırı benzetimi, kimlik bilgileri erişim aşamasına zaten ulaşmış olan gerçek bir saldırı ise, oluşturulan uyarılardan ve etkilenen varlıklardan önceden biliyorsanız, ağdaki etkinlikleri ve kayıtları önceden aramak için araştırmanın herhangi bir noktasında gelişmiş avdan kullanabilirsiniz. 
+[İsteğe bağlı dosyasız PowerShell saldırı benzetimi](eval-defender-investigate-respond-simulate-attack.md#simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional) kimlik bilgisi erişim aşamasına ulaşmış gerçek bir saldırıysa, oluşturulan uyarılardan ve etkilenen varlıklardan zaten bildiklerinizi kullanarak ağdaki olayları ve kayıtları proaktif olarak aramak için araştırmanın herhangi bir noktasında gelişmiş avcılığı kullanabilirsiniz. 
 
-Örneğin, Kullanıcı ve IP adresi üzerinde mutabıklık [(SMB)](eval-defender-investigate-respond-simulate-attack.md#alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity) uyarıdaki bilgilere dayanarak, `IdentityDirectoryEvents` tabloyu kullanarak tüm SMB oturumu numaralama olaylarını bulabilir veya tabloyu kullanarak Kimlik verileri için Microsoft Defender'daki `IdentityQueryEvents` diğer çeşitli protokollerde daha fazla keşif etkinlikleri bulabilirsiniz.
+Örneğin, [Kullanıcı ve IP adresi keşfi (SMB)](eval-defender-investigate-respond-simulate-attack.md#alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity) uyarısında yer alan bilgilere dayanarak, tabloyu kullanarak `IdentityDirectoryEvents` tüm SMB oturum numaralandırma olaylarını bulabilir veya tabloyu kullanarak `IdentityQueryEvents` Kimlik için Microsoft Defender verilerdeki diğer çeşitli protokollerde daha fazla bulma etkinliği bulabilirsiniz.
 
 
-### <a name="hunting-environment-requirements"></a>Av ortamı gereksinimleri
+### <a name="hunting-environment-requirements"></a>Avlanma ortamı gereksinimleri
 
-Bu benzetim için tek bir iç posta kutusu ve cihaz gereklidir. Test iletisi göndermek için bir dış e-posta hesabına da ihtiyacınız vardır.
+Bu benzetim için tek bir iç posta kutusu ve cihaz gereklidir. Test iletisini göndermek için bir dış e-posta hesabına da ihtiyacınız olacaktır.
 
-1. Kiracınız etkiyi [etkinleştirmiş Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
-2. E-posta almak için kullanılacak hedef posta kutusunu tanımlama.
+1. Kiracınızın [Microsoft 365 Defender etkinleştirdiğini](m365d-enable.md#confirm-that-the-service-is-on) doğrulayın.
+2. E-posta almak için kullanılacak hedef posta kutusunu belirleyin.
 
-   - Bu posta kutusu, Windows için Microsoft Defender tarafından izlen Office 365
+   - Bu posta kutusu Office 365 için Microsoft Defender tarafından izlenmelidir
 
-   - 3. gereksinime sahip cihazın bu posta kutusuna erişmesi gerekiyor
+   - Gereksinim 3'ten gelen cihazın bu posta kutusuna erişmesi gerekiyor
 
-3. Bir test aygıtını yapılandırma:
+3. Test cihazını yapılandırma:
 
-    a. 1903 veya Windows 10 sürümünü kullanmaya devam edin.
+    a. Windows 10 sürüm 1903 veya sonraki bir sürümü kullandığınızdan emin olun.
 
-    b. Test cihazına test etki alanına katılın.
+    b. Test cihazını test etki alanına ekleyin.
 
-    c. [Aç'Windows Defender Virüsten Koruma](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). E-bilgileri etkinleştirmede sorun Windows Defender Virüsten Koruma, bu [sorun giderme başlığına bakın](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+    c. [Windows Defender Virüsten Koruma açın](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Windows Defender Virüsten Koruma etkinleştirme konusunda sorun yaşıyorsanız [bu sorun giderme konusuna bakın](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
     d. [Uç Nokta için Microsoft Defender'a ekleme](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
-### <a name="run-the-simulation"></a>Benzetimi çalıştırma
+### <a name="run-the-simulation"></a>Simülasyonu çalıştırma
 
-1. Dış e-posta hesabından, av ortamı gereksinimleri bölümünün 2. adım bölümünde tanımlanan posta kutusuna bir e-posta gönderin. Var olan herhangi bir e-posta filtresi ilkeleri aracılığıyla izin verilen bir ek iliştirin. Bu dosyanın kötü amaçlı veya yürütülebilir bir dosya olması gerekir. Önerilen dosya <i> türleri.pdf, </i><i>.exe</i> ( izin verilmiyorsa) veya Word Office gibi bir belge türünde olabilir.
+1. Dış e-posta hesabından, tehdit avcılığı ortamı gereksinimleri bölümünün 2. adımında tanımlanan posta kutusuna bir e-posta gönderin. Mevcut e-posta filtresi ilkeleri aracılığıyla izin verilecek bir ek ekleyin. Bu dosyanın kötü amaçlı veya yürütülebilir olması gerekmez. Önerilen dosya türleri <i>.pdf</i>, <i>.exe</i> (izin veriliyorsa) veya Word dosyası gibi bir Office belge türüdür.
 
-2. Gönderilen e-postayı, av ortamı gereksinimleri bölümünün 3. adımda tanımlandığı şekilde yapılandırılan cihazdan açın. Eki açın veya dosyayı cihaza kaydedin.
+2. Tehdit avcılığı ortamı gereksinimleri bölümünün 3. adımında tanımlandığı şekilde yapılandırılan cihazdan gönderilen e-postayı açın. Eki açın veya dosyayı cihaza kaydedin.
 
-#### <a name="go-hunting"></a>Go hunting
+#### <a name="go-hunting"></a>Avlanmaya git
 
-1. Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">açın</a>.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalını</a> açın.
 
-2. Gezinti bölmesinde, Avla ve **Gelişmiş >'ı seçin**.
+2. Gezinti **bölmesinden Tehdit Avcılığı > Gelişmiş avcılık'ı** seçin.
 
-3. E-posta olaylarını toparak başlayan bir sorgu oluşturun.
+3. E-posta olaylarını toplayarak başlayan bir sorgu oluşturun.
 
-   1. Sorgu Yeni **'> seçin**.
+   1. **Sorgu > Yeni'yi** seçin.
 
-   1. Gelişmiş av **altındaki E-posta** **gruplarında**, E-posta **Olayları'nın altına çift tıklayın**. Bunu sorgu penceresinde görüyor olması gerekir.
+   1. **Gelişmiş avcılık** altındaki **Email** gruplarında **EmailEvents'e** çift tıklayın. Bunu sorgu penceresinde görmeniz gerekir.
 
       ```console
       EmailEvents
       ```
 
-   1. Sorgunun zaman çerçevesini son 24 saat olarak değiştirme. Yukarıdaki benzetimi çalıştırarak gönderilen e-postanın son 24 saat içinde olduğunu varsayarak, aksi takdirde zaman dilimini gereken şekilde değiştirin.
+   1. Sorgunun zaman çerçevesini son 24 saat olarak değiştirin. Yukarıdaki simülasyonu çalıştırdığınızda gönderdiğiniz e-postanın son 24 saat içinde olduğunu varsayarsak, aksi takdirde zaman dilimini gerektiği gibi değiştirin.
 
-   1. Sorguyu **çalıştır'ı seçin**. Pilot ortamınıza bağlı olarak farklı sonuçlar elde ediyor olabilirsiniz.
+   1. **Sorguyu çalıştır'ı** seçin. Pilot ortamınıza bağlı olarak farklı sonuçlar elde edebilirsiniz.
 
       > [!NOTE]
-      > Veri dönüşlerini sınırlamak için sonraki adıma bakın.
+      > Veri dönüşünü sınırlamak için filtreleme seçenekleri için sonraki adıma bakın.
 
-      :::image type="content" source="../../media/advanced-hunting-incident-response-try-1.png" alt-text="Microsoft 365 Defender portalında Gelişmiş Microsoft 365 Defender sayfası" lightbox="../../media/advanced-hunting-incident-response-try-1.png":::
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-1.png" alt-text="Microsoft 365 Defender portalındaki Gelişmiş Avcılık sayfası" lightbox="../../media/advanced-hunting-incident-response-try-1.png":::
 
         > [!NOTE]
-        > Gelişmiş arama, sorgu sonuçlarını tablo verileri olarak görüntüler. Ayrıca, verileri grafik gibi başka biçim türlerinde görüntülemeyi de tercihebilirsiniz.
+        > Gelişmiş tehdit avcılığı sorgu sonuçlarını tablo verileri olarak görüntüler. Ayrıca, verileri grafikler gibi diğer biçim türlerinde de görüntülemeyi tercih edebilirsiniz.
 
-   1. Sonuçlara bakın ve açtığınız e-postayı belirley olup görene bir bakın. İletinin gelişmiş avda iletiyi göstermesi iki saat kadar sürebilir. Sonuçları daraltmak için, sorgunuza koşul koşula göre yalnızca SenderMailFromDomain olarak "yahoo.com" olan e-postaları aramanız gerekir. İşte bir örnek.
+   1. Sonuçlara bakın ve açtığınız e-postayı tanımlayıp tanımlayabildiğinize bakın. İletinin gelişmiş avcılıkta görünmesi iki saat kadar sürebilir. Sonuçları daraltmak için sorgunuza **where** koşulunu ekleyerek yalnızca SenderMailFromDomain olarak "yahoo.com" olan e-postaları arayabilirsiniz. İşte bir örnek.
 
       ```console
       EmailEvents
       | where SenderMailFromDomain == "yahoo.com"
       ```
 
-   1. Kaydı incelerken sorgudan sonuç satırlarına tıklayın.
+   1. Kaydı inceleyebilmeniz için sorgudan elde edilen satırlara tıklayın.
 
-      :::image type="content" source="../../media/advanced-hunting-incident-response-try-2.png" alt-text="Microsoft 365 Defender portalında Gelişmiş Av sayfasının Kaydı incele bölümü" lightbox="../../media/advanced-hunting-incident-response-try-2.png":::
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-2.png" alt-text="Microsoft 365 Defender portalındaki Gelişmiş Avcılık sayfasının Kaydı incele bölümü" lightbox="../../media/advanced-hunting-incident-response-try-2.png":::
 
-4. Artık e-postayı gördüğünüze göre, eklere filtre ekleyin. Ortamda ekleri olan tüm e-postalara odaklanın. Bu benzetim için, ortamından gönderilen e-postalara değil, gelen e-postalara odaklanın. İletinizi bulmak için, eklediklerinizi kaldırın ve "Filtre" | burada **AttachmentCount > 0** ve **EmailDirection** == **"Inbound""**
+4. Artık e-postayı görebildiğinizi doğruladığınıza göre ekler için bir filtre ekleyin. Ortamda ekleri olan tüm e-postalara odaklanın. Bu simülasyon için, ortamınızdan gönderilen e-postalara değil, gelen e-postalara odaklanın. İletinizi bulmak için eklediğiniz filtreleri kaldırın ve "| burada **AttachmentCount > 0** ve **EmailDirection** == **"Gelen""**
 
-   Aşağıdaki sorgu, tüm e-posta olaylarını ilk sorgunuza göre daha kısa bir listeyle size gösterir:
+   Aşağıdaki sorgu, tüm e-posta olayları için ilk sorgunuzdan daha kısa bir liste içeren sonucu gösterir:
 
    ```console
    EmailEvents
    | where AttachmentCount > 0 and EmailDirection == "Inbound"
    ```
 
-5. Ardından, sonuç kümenize ek hakkında bilgileri (örneğin, dosya adı, karmalar) girin. Bunu yapmak için **EmailAttachmentInfo tablosuna** katılın. Bu durumda, katılmak için kullanılan ortak alanlar **NetworkMessageId** ve **RecipientObjectId'dir**.
+5. Ardından, sonuç kümenize ek hakkındaki bilgileri (örneğin: dosya adı, karmalar) ekleyin. Bunu yapmak için **EmailAttachmentInfo** tablosuna katılın. Bu örnekte, birleştirme için kullanılacak ortak alanlar **NetworkMessageId** ve **RecipientObjectId'dir**.
 
-   Aşağıdaki sorgu, bir de "Özel" satırı | **project-rename EmailTimestamp=Timestamp", e-postayla** hangi zaman damgasının ilişkili olduğunu ve bir sonraki adımda ekley o eylemleriyle ilgili zaman damgasını tanımlamanıza yardımcı olur.
+   Aşağıdaki sorgu ayrıca ek bir "| satırı içerir **project-rename EmailTimestamp=Timestamp**", bir sonraki adımda ekleyeceğiniz dosya eylemleriyle ilgili zaman damgaları yerine e-postayla hangi zaman damgasının ilişkili olduğunu belirlemenize yardımcı olur.
 
    ```console
    EmailEvents
@@ -225,9 +226,9 @@ Bu benzetim için tek bir iç posta kutusu ve cihaz gereklidir. Test iletisi gö
    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
    ```
 
-6. Ardından, **EmailAttachmentInfo** **tablosundan SHA256** değerini kullanarak bu karmanın **DeviceFileEvents'in** (uç noktada olan dosya eylemleri) adını bulun. Buradaki ortak alan, ekin SHA256 karması olur.
+6. Ardından, **e-postaAttachmentInfo** tablosundaki **SHA256** değerini kullanarak bu karma için **DeviceFileEvents'i** (uç noktada gerçekleşen dosya eylemleri) bulun. Buradaki ortak alan ekin SHA256 karması olacaktır.
 
-   Sonuçta elde edilen tablo artık cihaz adı, yapılan eylem (bu durumda yalnızca FileCreated olaylarını içerecek şekilde filtrelenmiş) ve dosyanın depolandığı yer gibi uç noktadan (Uç nokta için Microsoft Defender) ayrıntıları içerir. İşlemle ilişkili hesap adı da dahil edilir.
+   Sonuçta elde edilen tablo artık uç noktadan (Uç Nokta için Microsoft Defender) cihaz adı, hangi eylemin yapıldığı (bu durumda yalnızca DosyaOluşturan olayları içerecek şekilde filtrelenmiş) ve dosyanın depolandığı yer gibi ayrıntıları içerir. İşlemle ilişkili hesap adı da eklenir.
 
    ```console
    EmailEvents
@@ -238,9 +239,9 @@ Bu benzetim için tek bir iç posta kutusu ve cihaz gereklidir. Test iletisi gö
    | where ActionType == "FileCreated"
    ```
 
-   Artık kullanıcının eki açtığı veya kayded olduğu tüm gelen e-postaları belirleyen bir sorgu oluşturdunuz. Ayrıca, belirli gönderen etki alanlarını, dosya boyutlarını, dosya türlerini ve diğer özellikleri filtrelemek için de bu sorguyu daraltabilirsiniz.
+   Şimdi kullanıcının eki açtığı veya kaydettiği tüm gelen e-postaları tanımlayan bir sorgu oluşturdunuz. Ayrıca bu sorguyu belirli gönderen etki alanları, dosya boyutları, dosya türleri vb. için filtrelemek üzere daraltabilirsiniz.
 
-7. İşlevler, yaygın kullanımı, imzacı ve imzalayanın bilgileri vb. bir dosya hakkında daha fazla TI verisi çekmene izin verir. Dosya hakkında daha fazla ayrıntı almak için **, FileProfile() işlevini** zenginleştirmeyi kullanın:
+7. İşlevler, bir dosya hakkında yaygınlığı, imzalayan ve veren bilgileri gibi daha fazla TI verisi çekmenizi sağlayan özel bir birleştirme türüdür. Dosya hakkında daha fazla ayrıntı almak için **FileProfile()** işlevi zenginleştirmesini kullanın:
 
     ```console
     EmailEvents
@@ -255,55 +256,55 @@ Bu benzetim için tek bir iç posta kutusu ve cihaz gereklidir. Test iletisi gö
 
 #### <a name="create-a-detection"></a>Algılama oluşturma
 
-Daha sonra uyarı almak istediğiniz bilgileri tanımlayan bir sorgu oluşturduktan sonra, sorgudan  özel bir algılama oluşturabilirsiniz.
+Gelecekte olup olmadığı konusunda **uyarı almak** istediğiniz bilgileri tanımlayan bir sorgu oluşturduktan sonra, sorgudan özel bir algılama oluşturabilirsiniz.
 
-Özel algılamalar, sorguyu ayar aralığına göre çalıştıracak ve sorguların sonuçları, seçtiğiniz etkiyi etkileyen varlıklara bağlı olarak güvenlik uyarıları oluşturur. Bu uyarılar olaylarla bağlantılıdır ve ürünlerden biri tarafından oluşturulan diğer güvenlik uyarılarından biri olarak triyaktı oluşturulacak.
+Özel algılamalar, ayarladığınız sıklığa göre sorguyu çalıştırır ve sorguların sonuçları, seçtiğiniz etkilenen varlıklara göre güvenlik uyarıları oluşturur. Bu uyarılar olaylarla ilişkilendirilecek ve ürünlerden biri tarafından oluşturulan diğer güvenlik uyarıları olarak önceliklendirilebilir.
 
-1. Sorgu sayfasında, 7. adımda eklenen 7. ve 8. satırları kaldırın, sonra da Avlamaya git yönergelerine tıklayın ve Algılama kuralı **oluştur'a tıklayın**.
+1. Sorgu sayfasında, Go tehdit avcılığı yönergelerinin 7. adımına eklenen 7. ve 8. satırları kaldırın ve **Algılama kuralı oluştur'a** tıklayın.
 
-   :::image type="content" source="../../media/advanced-hunting-incident-response-try-3.png" alt-text="Microsoft 365 Defender portalında Gelişmiş Av sayfasının Sorgu düzenleme bölümü" lightbox="../../media/advanced-hunting-incident-response-try-3.png":::
+   :::image type="content" source="../../media/advanced-hunting-incident-response-try-3.png" alt-text="Microsoft 365 Defender portalındaki Gelişmiş Tehdit Avcılığı sayfasının Sorgu düzenleme bölümü" lightbox="../../media/advanced-hunting-incident-response-try-3.png":::
 
    > [!NOTE]
-   > Algılama kuralı **oluştur'a tıklarsanız** ve sorgunuzda söz dizimi hataları varsa, algılama kuralınız kaydedilemiyor. Hata olmadığını kontrol etmek için sorguyu bir kez daha denetleyin.
+   > **Algılama kuralı oluştur'a** tıklarsanız ve sorgunuzda söz dizimi hataları varsa, algılama kuralınız kaydedilmez. Hata olmadığından emin olmak için sorgunuzu bir kez daha denetleyin.
 
-2. Gerekli alanları, güvenlik ekibinin uyarıyı, neden oluşturulmuş olduğunu ve hangi eylemleri gerçekleştireceklerini anlamalarına olanak sağlayacak bilgilerle doldurun.
+2. Güvenlik ekibinin uyarıyı, neden oluşturulduğunu ve hangi eylemleri gerçekleştirmesini beklediğinizi anlamasını sağlayacak bilgilerle gerekli alanları doldurun.
 
-   :::image type="content" source="../../media/mtp/fig23.png" alt-text="Microsoft 365 Defender portalında Uyarı ayrıntıları sayfası" lightbox="../../media/mtp/fig23.png":::
+   :::image type="content" source="../../media/mtp/fig23.png" alt-text="Microsoft 365 Defender portalındaki Uyarı ayrıntıları sayfası" lightbox="../../media/mtp/fig23.png":::
 
-   Sonraki kullanıcıya bu algılama kuralı uyarısı hakkında bilinçli bir karar vermeye yardımcı olmak için alanları açık bir şekilde doldurmanıza dikkat edin
+   Bir sonraki kullanıcıya bu algılama kuralı uyarısı hakkında bilinçli bir karar vermeye yardımcı olmak için alanları net bir şekilde doldurduğunuzdan emin olun
 
-3. Bu uyarıda hangi varlıkların etkile ilgili olduğunu seçin. Bu durumda Cihaz ve Posta **Kutusu'seçin****.**
+3. Bu uyarıda hangi varlıkların etkilendiğini seçin. Bu durumda **Cihaz** ve **Posta Kutusu'ni** seçin.
 
-   :::image type="content" source="../../media/mtp/fig24.png" alt-text="Microsoft 365 Defender portalında Etki Microsoft 365 Defender ayrıntıları sayfası" lightbox="../../media/mtp/fig24.png":::
+   :::image type="content" source="../../media/mtp/fig24.png" alt-text="Microsoft 365 Defender portalındaki Etkilenen varlıklar ayrıntıları sayfası" lightbox="../../media/mtp/fig24.png":::
 
-4. Uyarı tetiklenirse hangi eylemlerin gerçekleştir dikkatli olması gerektiğini belirleme. Bu durumda, başka eylemler de gerçekleştirese de bir virüsten koruma taraması çalıştırın.
+4. Uyarı tetiklendiğinde gerçekleştirilecek eylemleri belirleyin. Bu durumda, başka eylemler gerçekleştirilebilse de bir virüsten koruma taraması çalıştırın.
 
-   :::image type="content" source="../../media/mtp/fig25.png" alt-text="Microsoft 365 Defender portalında Eylemler sayfası" lightbox="../../media/mtp/fig25.png":::
+   :::image type="content" source="../../media/mtp/fig25.png" alt-text="Microsoft 365 Defender portalındaki Eylemler sayfası" lightbox="../../media/mtp/fig25.png":::
 
-5. Uyarı kuralının kapsamını seçin. Bu sorgu cihazlar içerdiği için, cihaz grupları Uç nokta için Microsoft Defender bağlamına göre bu özel algılamada çok uygun olur. Etkilenmek istediğiniz cihazlar dışında bir özel algılama oluşturulurken kapsam geçerli olmaz.
+5. Uyarı kuralının kapsamını seçin. Bu sorgu cihazları içerdiğinden, cihaz grupları Uç Nokta için Microsoft Defender bağlama göre bu özel algılamayla ilgilidir. Etkilenen varlıklar olarak cihaz içermeyen bir özel algılama oluştururken kapsam uygulanmaz.
 
-   :::image type="content" source="../../media/mtp/fig26.png" alt-text="Microsoft 365 Defender portalında Kapsam sayfası" lightbox="../../media/mtp/fig26.png":::
-
-
-   Bu pilot için, bu kuralı üretim ortamınızı test cihazlarının bir alt kümesiyle sınırlandırabilirsiniz.
-
-6. **Oluştur**’u seçin. Ardından, gezinti **bölmesinden Özel algılama** kuralları'nı seçin.
-
-   :::image type="content" source="../../media/mtp/fig27a.png" alt-text="Microsoft 365 Defender portalında Özel Microsoft 365 Defender seçeneği" lightbox="../../media/mtp/fig27a.png":::
-
-   :::image type="content" source="../../media/mtp/fig27b.png" alt-text="Microsoft 365 Defender portalında algılama kurallarını ve yürütme ayrıntılarını görüntüleyen sayfa" lightbox="../../media/mtp/fig27b.png":::
-
-   Bu sayfadan, algılama kuralını seçerek ayrıntılar sayfasını açabilirsiniz.
-
-   :::image type="content" source="../../media/mtp/fig28.png" alt-text="Portalda tetiklenen uyarıların ayrıntılarını görüntüleyen Microsoft 365 Defender sayfası" lightbox="../../media/mtp/fig28.png":::
+   :::image type="content" source="../../media/mtp/fig26.png" alt-text="Microsoft 365 Defender portalındaki Kapsam sayfası" lightbox="../../media/mtp/fig26.png":::
 
 
-### <a name="expert-training-on-advanced-hunting"></a>Gelişmiş avla ilgili uzman eğitimi
+   Bu pilot için, bu kuralı üretim ortamınızdaki test cihazlarının bir alt kümesiyle sınırlamak isteyebilirsiniz.
 
-**Hasımları takip etmek,** yeni güvenlik analistleri ve uzman tehdit avcıları için bir web yayını serisidir. Kendi gelişmiş sorgularınızı oluşturmanın tüm yollarında, gelişmiş aramanın temelleri konusunda size yol sağlar. 
+6. **Oluştur**’u seçin. Ardından gezinti **panelinden Özel algılama kuralları'nı** seçin.
 
-Bkz [. Gelişmiş avla ilgili uzman eğitimi](advanced-hunting-expert-training.md) almak için başlama.
+   :::image type="content" source="../../media/mtp/fig27a.png" alt-text="Microsoft 365 Defender portalında Özel algılama kuralları kuralları seçeneği" lightbox="../../media/mtp/fig27a.png":::
 
-### <a name="navigation-you-may-need"></a>Gezintiye ihtiyacınız olabilir
+   :::image type="content" source="../../media/mtp/fig27b.png" alt-text="Microsoft 365 Defender portalında algılama kurallarını ve yürütme ayrıntılarını gösteren sayfa" lightbox="../../media/mtp/fig27b.png":::
 
-[Değerlendirme Microsoft 365 Defender Oluşturma](eval-create-eval-environment.md)
+   Bu sayfadan, ayrıntılar sayfasını açacak algılama kuralını seçebilirsiniz.
+
+   :::image type="content" source="../../media/mtp/fig28.png" alt-text="Microsoft 365 Defender portalında tetiklenen uyarıların ayrıntılarını gösteren sayfa" lightbox="../../media/mtp/fig28.png":::
+
+
+### <a name="expert-training-on-advanced-hunting"></a>Gelişmiş avcılık konusunda uzman eğitimi
+
+**Saldırganı izlemek** , yeni güvenlik analistleri ve deneyimli tehdit avcıları için bir web yayını serisidir. Gelişmiş avcılık ile ilgili temel bilgileri kullanarak kendi gelişmiş sorgularınızı oluşturma konusunda size yol gösterir. 
+
+Başlamak için bkz. [Gelişmiş avcılık konusunda uzman eğitimi alma](advanced-hunting-expert-training.md) .
+
+### <a name="navigation-you-may-need"></a>İhtiyaç duyabileceğiniz gezinti
+
+[Microsoft 365 Defender Değerlendirme Ortamı Oluşturma](eval-create-eval-environment.md)

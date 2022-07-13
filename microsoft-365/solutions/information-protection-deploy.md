@@ -15,35 +15,36 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-overview
+- zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
-description: Microsoft Teams, SharePoint ve e-posta da dahil olmak üzere GDPR ve California Tüketici Gizliliği Yasası (CCPA) gibi veri gizliliği düzenlemeleri için Microsoft 365 bilgi korumasını yapılandırın.
-ms.openlocfilehash: ece8483773d3e2f5cdafe90bd93e11c52e2ba838
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: Microsoft Teams, SharePoint ve e-posta da dahil olmak üzere GDPR ve California Tüketici Gizliliği Yasası (CCPA) gibi veri gizliliği düzenlemeleri için Microsoft 365'te bilgi korumayı yapılandırın.
+ms.openlocfilehash: bd2e1a580794a59bf2364b3b4a1d1c157e5eab56
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939026"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748901"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Microsoft 365 ile veri gizliliği düzenlemeleri için bilgi koruma dağıtma
 
 Kuruluşunuz hem şirket içinde hem de bulutta olmak üzere BT altyapınızda depolanan kişisel bilgileri korumanızı, yönetmenizi ve bunlar üzerinde hak ve denetim sağlamanızı gerektiren bölgesel veri gizliliği düzenlemelerine tabi olabilir. Veri gizliliği düzenlemesinin en iyi örneği, Avrupa Birliği Genel Veri Koruma Yönetmeliği'dir (GDPR). Veri gizliliği düzenlemelerine uyulmaması önemli para cezalarına neden olabilir.
 
-Microsoft 365'daki veri türlerine örnek olarak Microsoft Teams sohbet oturumları, Exchange e-postalar ve SharePoint ile OneDrive'deki dosyalar verilebilir. Bu çözüm, riskleri değerlendirme ve Microsoft 365 kişisel verileri korumak için uygun eylemleri gerçekleştirme konusunda rehberlik sağlar. Bu, veri gizliliği olaylarını koruyabilmeniz, yönetebilmeniz ve yanıt verebilmeniz için kişisel bilgileri tanımlamayı içerir.
+Microsoft 365'teki veri türlerine örnek olarak Microsoft Teams'deki sohbet oturumları, Exchange'deki e-postalar ve SharePoint ile OneDrive'daki dosyalar verilebilir. Bu çözüm, Microsoft 365'te kişisel verileri korumak için riskleri değerlendirme ve uygun eylemleri gerçekleştirme konusunda rehberlik sağlar. Bu, veri gizliliği olaylarını koruyabilmeniz, yönetebilmeniz ve yanıt verebilmeniz için kişisel bilgileri tanımlamayı içerir.
 
 ![Veri gizliliği düzenlemeleri için bilgi koruması nedir?](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
-Veri gizliliği gereksinimleriniz için Microsoft 365 kimlik, cihaz ve tehdit koruma denetimlerinin kullanımı hakkında ek bilgiler de sağlanır.
+Ayrıca, veri gizliliği gereksinimleriniz için Microsoft 365 kimlik, cihaz ve tehdit koruma denetimlerinin kullanımıyla ilgili ek bilgiler de sağlanır.
 
 Dağıtım işlemine genel bir bakış için bu videoyu izleyin.
 <br>
 <br>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4NHCQ]
 
-Bu Microsoft 365 özellikleri ve özellikleri, bilgileri korumaya yönelik ölçütleri karşılamanıza yardımcı olur.
+Bu Microsoft 365 özellikleri ve özellikleri, bilgileri koruma ölçütlerini karşılamanıza yardımcı olur.
 
 | Yetenek veya özellik | Açıklama | Lisanslama |
 |:-------|:-----|:-------|
-| Uyumluluk Yöneticisi | Mevzuat uyumluluğu etkinliklerini yönetin, geçerli uyumluluk yapılandırmanızın genel puanını alın ve iyileştirme önerileri bulun. Bu, Microsoft Purview uyumluluk portalındaki iş akışı tabanlı bir risk değerlendirme aracıdır. | Microsoft 365 E3 ve E5 |
+| Uyumluluk Yöneticisi | Mevzuat uyumluluğu etkinliklerini yönetin, geçerli uyumluluk yapılandırmanızın genel puanını alın ve iyileştirme önerileri bulun. Bu, Microsoft Purview uyumluluk portalı iş akışı tabanlı bir risk değerlendirme aracıdır. | Microsoft 365 E3 ve E5 |
 | Office 365 için Microsoft Defender | Microsoft 365 uygulamalarınızı ve e-posta iletileri, Office belgeleri ve işbirliği araçları gibi verilerinizi saldırılara karşı koruyun. | Microsoft 365 E3 ve E5 |
 | Duyarlılık etiketleri | Kullanıcıların üretkenliğini ve işbirliği yapma becerilerini engellemeden kuruluşunuzun verilerini sınıflandırın ve koruyun. E-postaya, dosyalara veya sitelere çeşitli koruma düzeylerine sahip etiketler yerleştirin. | Microsoft 365 E3 ve E5 |
 | Veri Kaybı Koruması (DLP) | Hem şirket içinde hem de dışarıdan kişisel bilgiler içeren verilerin riskli, yanlışlıkla veya uygunsuz bir şekilde paylaşılması algılayın, uyarın ve engelleyin. | Microsoft 365 E3 ve E5 |
@@ -67,13 +68,13 @@ Bu bölümlerin her biri, bu çözümdeki ayrı bir makaleye karşılık gelir.
 
 ## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>Plan: Veri gizliliği risklerini değerlendirme ve hassas öğeleri belirleme
 
-Kuruluşunuzun tabi olduğu veri gizliliği düzenlemelerini ve risklerini değerlendirmek, Microsoft 365 özelliklerini yapılandırma da dahil olmak üzere iyileştirmeleri uygulamaya başlamadan önce atılması gereken önemli bir ilk adımdır. Bu çalışma, genel hazırlık değerlendirmesi veya kuruluşunuzun uyması gereken yasal denetimlere tabi olan belirli hassas bilgi türlerinin tanımlanmasını içerebilir.
+Kuruluşunuzun tabi olduğu veri gizliliği düzenlemelerini ve risklerini değerlendirmek, Microsoft 365'te özellikleri yapılandırma da dahil olmak üzere iyileştirmeleri uygulamaya başlamadan önce atılması gereken önemli bir ilk adımdır. Bu çalışma, genel hazırlık değerlendirmesi veya kuruluşunuzun uyması gereken yasal denetimlere tabi olan belirli hassas bilgi türlerinin tanımlanmasını içerebilir.
 
 Daha fazla bilgi için bkz [. Veri gizliliği risklerini değerlendirme ve hassas öğeleri tanımlama](information-protection-deploy-assess.md).
 
 ## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>İzleme: Risk değerlendirmeleri çalıştırma ve uyumluluk puanınızı denetleme
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview uyumluluk portalında</a> bulunan Uyumluluk Yöneticisi, geliştirme eylemlerini ve sizin için geçerli olan birden çok veri gizliliği düzenlemesiyle ilgili olanları izlemenizi ve yönetmenizi sağlayan yerleşik bir özellik sunar.
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview uyumluluk portalı</a> bulunan Uyumluluk Yöneticisi, geliştirme eylemlerini ve sizin için geçerli olan birden çok veri gizliliği düzenlemesiyle ilgili olanları izlemenizi ve yönetmenizi sağlayan yerleşik bir özellik sağlar.
 
 Her düzenlemeye özgü yerleşik değerlendirme şablonlarını kullanabilir, burada seçilen her değerlendirme şablonu için eylem öğelerini izleyebilir, ayrıca belirli mevzuat denetimlerini görüntüleyebilir ve bunları belirli eylemlerle ilişkilendirebilirsiniz.
 
@@ -85,7 +86,7 @@ Microsoft 365, veri gizliliği mevzuat uyumluluğuna uymaya yardımcı olmak iç
 
 Daha fazla bilgi için bkz. [Veri gizliliği düzenlemesi için kimlik, cihaz ve tehdit koruma](information-protection-deploy-identity-device-threat.md) kullanma.
 
-Bu makalede, veri gizliliği düzenlemelerinin bu alanlarda genel olarak nelere çağrıldığı kısaca açıklanır ve uygulama gereksinimlerini karşılamanıza yardımcı olacak daha fazla bilgi için bağlantılar içeren ilgili Microsoft 365 çözümlerinin bir listesi sağlanır.
+Bu makalede, veri gizliliği düzenlemelerinin bu alanlarda genel olarak nelere çağrıldığı kısaca açıklanır ve ilgili Microsoft 365 çözümlerinin bir listesi ve tüm uygulama gereksinimlerini karşılamanıza yardımcı olacak daha fazla bilgi için bağlantılar sağlanır.
 
 ## <a name="protect-information-subject-to-data-privacy-regulation"></a>Veri gizliliği düzenlemesine tabi bilgileri koruma
 
@@ -101,11 +102,11 @@ Veri gizliliği düzenlemeleri, GDPR, CCPA, HIPAA-HITECH ve LGPD örnek kümemiz
 
 Daha fazla bilgi için bkz. [Kuruluşunuzdaki veri gizliliği düzenlemesine tabi olan bilgileri yönetme](information-protection-deploy-govern.md).
 
-Veri gizliliği düzenlemeleri, bilgi idareleriyle&mdash; ilgili belirsiz olabilir, ancak bu makalenin silinmesi ve arşivlenmesi&mdash;, kuruluşunuzda veri gizliliği için adres bilgileri idaresi gereksinimlerini kullanabileceğiniz birincil denetim şemalarını düzenler.
+Veri gizliliği düzenlemeleri, amaçlı saklama, silme ve arşivleme&mdash;gibi bilgi idaresi&mdash;ile ilgili belirsiz olabilir ancak bu makale, kuruluşunuzda veri gizliliği için adres bilgileri idaresi gereksinimlerini kullanabileceğiniz birincil denetim şemalarını düzenler.
 
 ## <a name="investigate-monitor-investigate-and-respond-to-data-privacy-incidents"></a>Araştırma: Veri gizliliği olaylarını izleme, araştırma ve yanıtlama
 
-kuruluşunuzdaki veri gizliliği olaylarını izlemenize, araştırmanıza ve yanıtlamanıza yardımcı olacak Microsoft 365 özellik vardır.
+İlgili özellikleri kullanıma hazır hale getirmeniz durumunda kuruluşunuzdaki veri gizliliği olaylarını izlemenize, araştırmanıza ve yanıtlamanıza yardımcı olacak Microsoft 365 özellikleri vardır.
 
 Bu özelliklerin kullanımına yönelik süreçlere, yordamlara ve diğer belgelere sahip olmak, düzenleyici kurumlara uyumluluğu göstermek için önemli olabilir.
 
@@ -118,9 +119,9 @@ Microsoft Learn'den alınan bu eğitim modülleri, bilgi koruması için önemli
 
 #### <a name="information-protection"></a>Bilgi koruması
 
-|Eğitim:|Kurumsal bilgileri Microsoft 365 ile koruma|
+|Eğitim:|Microsoft 365 ile kurumsal bilgileri koruma|
 |:---|:---|
-|![Teams bilgi koruma eğitimi simgesi.](../media/protect-enterprise-information-microsoft-365.svg)|Kuruluşunuzun bilgilerini korumak ve güvenliğini sağlamak her zamankinden daha zordur. Kurumsal bilgileri Microsoft 365 ile koruma öğrenme yolu, hassas bilgilerinizi yanlışlıkla aşırı paylaşıma veya kötüye kullanmaya karşı korumayı, verileri bulmayı ve sınıflandırmayı, duyarlılık etiketleriyle korumayı ve kaybına karşı koruma sağlamak için hassas bilgilerinizi hem izleme hem de analiz etme konularını açıklar. Bu öğrenme yolu, Microsoft 365 Sertifikalı: Güvenlik Yöneticisi İş Ortağı ve Microsoft 365 Sertifikalı: Enterprise Yönetim Uzmanı sertifikaları için hazırlanmanıza yardımcı olabilir.<br><br>1 sa - Learning Yolu - 5 Modül|
+|![Teams bilgi koruma eğitimi simgesi.](../media/protect-enterprise-information-microsoft-365.svg)|Kuruluşunuzun bilgilerini korumak ve güvenliğini sağlamak her zamankinden daha zordur. Microsoft 365 ile kurumsal bilgileri koruma öğrenme yolu, hassas bilgilerinizi yanlışlıkla aşırı paylaşıma veya kötüye kullanmaya karşı korumayı, verileri bulmayı ve sınıflandırmayı, duyarlılık etiketleriyle korumayı ve kaybına karşı korumak için hassas bilgilerinizi izleme ve analiz etme konularını açıklar. Bu öğrenme yolu, Microsoft 365 Sertifikalı: Güvenlik Yöneticisi İş Ortağı ve Microsoft 365 Sertifikalı: Kurumsal Yönetim Uzmanı sertifikaları için hazırlanmanıza yardımcı olabilir.<br><br>1 sa - Öğrenme Yolu - 5 Modül|
 
 > [!div class="nextstepaction"]
 > [Başlangıç >](/learn/modules/m365-security-info-overview/introduction/)
@@ -129,7 +130,7 @@ Microsoft Learn'den alınan bu eğitim modülleri, bilgi koruması için önemli
 
 |Eğitim:|Azure Active Directory ile kimliği ve erişimi koruma|
 |:---|:---|
-|![Kimlik ve erişim eğitimi simgesi.](../media/protect-identity-and-access-with-microsoft-365.svg)|Kimlik ve Erişim öğrenme yolu, en son kimlik ve erişim teknolojilerini, kimlik doğrulamasını güçlendirmeye yönelik araçları ve kuruluşunuzdaki kimlik korumasına yönelik yönergeleri kapsar. Microsoft erişim ve kimlik teknolojileri, ister şirket içinde ister bulutta olsun kuruluşunuzun kimliğinin güvenliğini sağlamanızı ve kullanıcılarınızın herhangi bir konumdan güvenli bir şekilde çalışmasını sağlamanızı sağlar. Bu öğrenme yolu, Microsoft 365 Sertifikalı: Güvenlik Yöneticisi İş Ortağı ve Microsoft 365 Sertifikalı: Enterprise Yönetim Uzmanı sertifikalarına hazırlanmanıza yardımcı olabilir.<br><br>2 sa 52 dk - Learning Yolu - 6 Modül|
+|![Kimlik ve erişim eğitimi simgesi.](../media/protect-identity-and-access-with-microsoft-365.svg)|Kimlik ve Erişim öğrenme yolu, en son kimlik ve erişim teknolojilerini, kimlik doğrulamasını güçlendirmeye yönelik araçları ve kuruluşunuzdaki kimlik korumasına yönelik yönergeleri kapsar. Microsoft erişim ve kimlik teknolojileri, ister şirket içinde ister bulutta olsun kuruluşunuzun kimliğinin güvenliğini sağlamanızı ve kullanıcılarınızın herhangi bir konumdan güvenli bir şekilde çalışmasını sağlamanızı sağlar. Bu öğrenme yolu, Microsoft 365 Sertifikalı: Güvenlik Yöneticisi İş Ortağı ve Microsoft 365 Sertifikalı: Kurumsal Yönetim Uzmanı sertifikaları için hazırlanmanıza yardımcı olabilir.<br><br>2 sa 52 dk - Öğrenme Yolu - 6 Modül|
 
 > [!div class="nextstepaction"]
 > [Başlangıç >](/learn/modules/m365-identity-overview/introduction/)

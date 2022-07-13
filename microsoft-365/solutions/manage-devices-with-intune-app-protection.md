@@ -18,14 +18,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: e421a62d3b1fa60df7a64a5b9a94e6e46b0a139f
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: 829d650b6d815a84203e43e7256442bfee6bac0d
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651521"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749297"
 ---
 # <a name="step-1-implement-app-protection-policies"></a>Adım 1. Uygulama Koruma İlkeleri Uygulama
 
@@ -38,19 +39,19 @@ Bu çizimde:
 - Kullanıcı kuruluş kimlik bilgileriyle oturum açarsa, Intune kuruluş verilerinizin kişisel uygulamalara kopyalanıp yapıştırılmasını önlemek ve bu verilere PIN erişimi gerektirmek için uygulama katmanında bir ilke uygular.
 - Uygulama Koruma ilkesi oluşturduktan sonra, koşullu erişim ilkesiyle veri korumayı zorunlu kılmanız gerekir. 
 
-Bu yapılandırma, kullanıcı deneyimini neredeyse hiç etkilemeden güvenlik duruşunuzu büyük ölçüde artırır.  Çalışanlar, bildikleri ve sevdikleri Office ve Microsoft Teams gibi uygulamaları kullanabilirken, kuruluşunuz da uygulama ve cihazlarda bulunan verileri koruyabilir.
+Bu yapılandırma, kullanıcı deneyimini neredeyse hiç etkilemeden güvenlik duruşunuzu büyük ölçüde artırır.  Çalışanlar, Office ve Microsoft Teams gibi bildikleri ve sevdikleri uygulamaları kullanabilirken, kuruluşunuz da uygulamalar ve cihazlarda yer alan verileri koruyabilir.
 
 Koruma gerektiren özel İş Kolu uygulamalarınız varsa, şu anda bu uygulamalarla APP'i etkinleştirmek için uygulama sarmalama aracını kullanabilirsiniz. Veya Intune Uygulama SDK'sını kullanarak tümleştirebilirsiniz. Uygulamanıza uygulama koruma ilkeleri uygulandığında, uygulama Intune tarafından yönetilebilir ve Intune tarafından yönetilen uygulama olarak tanınır. Intune kullanarak İş Kolu uygulamalarınızı koruma hakkında daha fazla bilgi için bkz. [uygulamaları Microsoft Intune ile mobil uygulama yönetimi için hazırlama](/mem/intune/developer/apps-prepare-mobile-application-management).
 
 ## <a name="configuring-mobile-app-protection"></a>Mobil uygulama korumasını yapılandırma
 
-Bu kılavuz, önerilen [Sıfır Güven kimlik ve cihaz erişim ilkeleriyle](../security/office-365-security/microsoft-365-policies-configurations.md) sıkı bir şekilde koordine edilir. Intune'da Mobil Uygulama koruması ilkelerini oluşturduktan sonra, Azure AD'de mobil uygulama korumasını zorunlu kılan koşullu erişim ilkesini yapılandırmak için kimlik ekibinizle birlikte çalışın. 
+Bu kılavuz, önerilen [Sıfır Güven kimlik ve cihaz erişim ilkeleriyle](../security/office-365-security/microsoft-365-policies-configurations.md) sıkı bir şekilde koordine edilir. Intune'da Mobil Uygulama koruması ilkelerini oluşturduktan sonra, mobil uygulama korumasını zorunlu kılan Azure AD'da koşullu erişim ilkesini yapılandırmak için kimlik ekibinizle birlikte çalışın. 
 
 Bu çizimde iki ilke vurgulanır (çizimin altındaki tabloda da açıklanmıştır).
 
 [![kimlik ve cihaz erişim ilkelerini Sıfır Güven](../media/devices/identity-device-starting-point.png#lightbox)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/devices/identity-device-starting-point.png)
 
-Bu ilkeleri yapılandırmak için kimlik ve [cihaz erişim ilkeleri Sıfır Güven](../security/office-365-security/microsoft-365-policies-configurations.md) önerilen kılavuzu ve ayarları kullanın. Aşağıdaki tablo, Intune ve Azure AD'de bu ilkeleri yapılandırma yönergelerine doğrudan bağlanır.
+Bu ilkeleri yapılandırmak için kimlik ve [cihaz erişim ilkeleri Sıfır Güven](../security/office-365-security/microsoft-365-policies-configurations.md) önerilen kılavuzu ve ayarları kullanın. Aşağıdaki tablo, bu ilkeleri Intune ve Azure AD yapılandırma yönergelerine doğrudan bağlanır.
 
 
 |Adım  |İlkeler  |Daha fazla bilgi  |Lisanslama  |

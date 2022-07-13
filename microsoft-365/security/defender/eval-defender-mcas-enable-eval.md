@@ -1,6 +1,6 @@
 ---
-title: Değerlendirme ortamını belirli bir Microsoft Defender for Cloud Apps
-description: Farklı bir uygulamanın içindeki Bulut için Defender mimarisini Office 365 için Microsoft Defender ve bu ürünler arasındaki Microsoft 365 Defender öğrenin.
+title: Microsoft Defender for Cloud Apps için değerlendirme ortamını etkinleştirme
+description: Office 365 için Microsoft Defender içinde Bulut Uygulamaları için Defender mimarisini öğrenin ve Microsoft 365 Defender ürünleri arasındaki etkileşimleri anlayın.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,88 +18,89 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a66a3563d01e8e4239a0f4815fec9234fd46e1fc
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 0c9f4687cf36d4db5f22cd6e1b95f55eebc84cf9
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498989"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749934"
 ---
-# <a name="enable-the-evaluation-environment-for-microsoft-defender-for-cloud-apps"></a>Değerlendirme ortamını belirli bir Microsoft Defender for Cloud Apps
+# <a name="enable-the-evaluation-environment-for-microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps için değerlendirme ortamını etkinleştirme
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
 - Microsoft 365 Defender
 
-Bu makale, [değerlendirme ortamını ayarlama sürecindeki Adım 2/ 2'ye](eval-defender-mcas-overview.md), Microsoft Defender for Cloud Apps. Bu işlem hakkında daha fazla bilgi için genel bakış [makalesine bakın](eval-defender-mcas-overview.md).
+Bu makale, Microsoft Defender for Cloud Apps için değerlendirme ortamını ayarlama işleminin [2. Adımıdır](eval-defender-mcas-overview.md). Bu işlem hakkında daha fazla bilgi için [genel bakış makalesine](eval-defender-mcas-overview.md) bakın.
 
-Bu makale, Bulut için Defender Uygulamaları portalına erişme ve bulut uygulaması trafik verilerini toplamak için gerekli tümleştirmeyi yapılandırma sürecinde size yol sunar.
+Bu makale, Bulut Uygulamaları için Defender portalına erişme ve bulut uygulaması trafik verilerini toplamak için gerekli tümleştirmeyi yapılandırma işleminde size yol gösterir.
 
-Ortamınıza kullanılan bulut uygulamalarını keşfetmek için, aşağıdaki yöntemlerden birini veya her ikisini de uygulayabilirsiniz:
+Ortamınızda kullanılan bulut uygulamalarını bulmak için aşağıdaki yöntemlerden birini veya ikisini birden uygulayabilirsiniz:
 
-- Bulut Bulma ile tümleştirerek Bulut Bulma ile hızlı bir şekilde Uç Nokta için Microsoft Defender. Bu yerel tümleştirme sayesinde hem cihazlarınız hem de cihazlarınız arasında bulut trafiği Windows 10 ağ üzerinde veya Windows 11 veri toplamaya başlayabilirsiniz.
-- Ağınıza bağlı tüm cihazlardan erişilen tüm bulut uygulamalarını keşfetmek için güvenlik duvarlarınız ve diğer Bulut için Defender uygulama günlüğü toplayıcısı dağıtın. Bu dağıtım uç noktalarından veri toplamanıza yardımcı olur ve bunları çözümleme için Bulut için Defender Uygulamalar'a gönderir. Bulut için Defender Uygulamalar, daha fazla özellik için bazı üçüncü taraf taraflarla yerel olarak tümleştirilmiştir.
+- Uç Nokta için Microsoft Defender ile tümleştirerek Cloud Discovery ile hızla çalışmaya başlayın. Bu yerel tümleştirme, ağınızdaki ve ağınızdaki Windows 10 ve Windows 11 cihazlarınızda bulut trafiğiyle ilgili verileri hemen toplamaya başlamanızı sağlar.
+- Ağınıza bağlı tüm cihazlar tarafından erişilen tüm bulut uygulamalarını bulmak için, güvenlik duvarlarınıza ve diğer proxy'lerinize Cloud Apps için Defender günlük toplayıcısını dağıtın. Bu dağıtım uç noktalarınızdan veri toplamaya yardımcı olur ve analiz için Bulut Uygulamaları için Defender'a gönderir. Cloud Apps için Defender, daha da fazla özellik için bazı üçüncü taraf proxy'lerle yerel olarak tümleşir.
 
-Bu makalede her iki yönteme de yönelik kılavuz bilgiler yer almaktadır.
+Bu makale her iki yöntem için de rehberlik içerir.
 
-Bu sorunu ayarlamak için aşağıdaki Microsoft Defender for Cloud Apps.
+Microsoft Defender for Cloud Apps ayarlamak için aşağıdaki adımları kullanın.
 
-:::image type="content" source="../../media/defender/m365-defender-mcas-eval-enable-steps.png" alt-text="Microsoft Defender değerlendirme Microsoft Defender for Cloud Apps Microsoft güvenlik yazılımlarını etkinleştirme adımları" lightbox="../../media/defender/m365-defender-mcas-eval-enable-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-mcas-eval-enable-steps.png" alt-text="Microsoft Defender değerlendirme ortamında Microsoft Microsoft Defender for Cloud Apps etkinleştirme adımları" lightbox="../../media/defender/m365-defender-mcas-eval-enable-steps.png":::
 
-- [1. Adım. Bağlan uygulamaları Bulut için Defender portalına](#step-1)
-- [2. Adım. E-Uç Nokta için Microsoft Defender](#step-2)
-- [3. Adım. Güvenlik Bulut için Defender ve diğer artımlarda Uygulama Günlüğü toplayıcıyı dağıtma](#step-3)
-- [Adım 4. Bulutta hangi uygulamaların kullanılıyor olduğunu görmek için Bulut Keşif panosuna bakın](#step-4)
+- [1. Adım. Cloud Apps için Defender portalına bağlanma](#step-1)
+- [2. Adım. Uç Nokta için Microsoft Defender ile tümleştirme](#step-2)
+- [3. Adım. Güvenlik duvarlarınızda ve diğer proxy'lerde Cloud Apps için Defender günlük toplayıcısını dağıtma](#step-3)
+- [4. Adım. Kuruluşunuzda hangi uygulamaların kullanıldığını görmek için Cloud Discovery panosunu görüntüleyin](#step-4)
 
 <a name="step-1"></a>
 
-## <a name="step-1-connect-to-the-defender-for-cloud-apps-portal"></a>Adım 1. Bağlan uygulamaları Bulut için Defender portalına
+## <a name="step-1-connect-to-the-defender-for-cloud-apps-portal"></a>Adım 1. Cloud Apps için Defender portalına bağlanma
 
-Lisansı doğrulamak ve Bulut için Defender Uygulamaları portalına bağlanmak için bkz. [Hızlı Başlangıç: Kullanmaya başlayın'i Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
+Lisanslama işlemini doğrulamak ve Cloud Apps için Defender portalına bağlanmak için bkz[. Hızlı Başlangıç: Microsoft Defender for Cloud Apps kullanmaya başlama](/cloud-app-security/getting-started-with-cloud-app-security).
 
-Portala hemen bağlanamıyorsanız IP adresini güvenlik duvarının izin listesine eklemeniz gerekebilir. Bkz[. Bulut için Defender için temel kurulum](/cloud-app-security/general-setup).
+Portala hemen bağlanamıyorsanız IP adresini güvenlik duvarınızın izin verilenler listesine eklemeniz gerekebilir. Bkz. [Cloud Apps için Defender için temel kurulum](/cloud-app-security/general-setup).
 
-Hala sorun yaşıyorsanız Ağ gereksinimlerini [gözden geçirin](/cloud-app-security/network-requirements).
+Sorun yaşamaya devam ediyorsanız [Ağ gereksinimleri'ne](/cloud-app-security/network-requirements) bakın.
 
 <a name="step-2"></a>
 
-## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>Adım 2. E-Uç Nokta için Microsoft Defender
+## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>Adım 2. Uç Nokta için Microsoft Defender ile tümleştirme
 
-Microsoft Defender for Cloud Apps, verilerle Uç Nokta için Microsoft Defender olarak tümleştirilmiştir. Tümleştirme, Bulut Keşif'in daha kolay kullanılabilir olması için, Bulut Keşif özelliklerini şirket ağınız dışında da genişletiyor ve cihaz tabanlı soruşturmaya olanakıyor. Bu tümleştirme, bulut uygulamalarına ve hizmetlere IT tarafından yönetilen Windows 10 cihazlardan Windows 11 ortaya çıkar.
+Microsoft Defender for Cloud Apps Uç Nokta için Microsoft Defender ile yerel olarak tümleşir. Tümleştirme, Cloud Discovery'nin kullanıma alınmasını kolaylaştırır, Cloud Discovery özelliklerini kurumsal ağınızın ötesine genişletir ve cihaz tabanlı araştırmayı etkinleştirir. Bu tümleştirme, BT tarafından yönetilen Windows 10 ve Windows 11 cihazlardan erişilen bulut uygulamalarını ve hizmetlerini gösterir.
 
-Mobil cihaz ayarlarını zaten Uç Nokta için Microsoft Defender, Bulut için Defender uygulamalarıyla tümleştirmeyi yapılandırma, Microsoft 365 Defender. Tümleştirme açık olduktan sonra, Bulut için Defender Uygulamaları portalına geri dönebilirsiniz ve zengin verileri Bulut Bulma Panosu'nda görüntüleyebilirsiniz.
+Uç Nokta için Microsoft Defender zaten ayarladıysanız, Cloud Apps için Defender ile tümleştirmeyi yapılandırmak, Microsoft 365 Defender bir geçiş düğmesidir. Tümleştirme açıldıktan sonra Cloud Apps için Defender portalına dönebilir ve Cloud Discovery Panosu'nda zengin verileri görüntüleyebilirsiniz.
 
-Bu görevleri gerçekleştirmek için bkz. [Uç Nokta için Microsoft Defender tümleştirmeyi Microsoft Defender for Cloud Apps](/cloud-app-security/mde-integration).
+Bu görevleri gerçekleştirmek için bkz. [Microsoft Defender for Cloud Apps ile tümleştirme Uç Nokta için Microsoft Defender](/cloud-app-security/mde-integration).
 
 <a name="step-3"></a>
 
-## <a name="step-3-deploy-the-defender-for-cloud-apps-log-collector-on-your-firewalls-and-other-proxies"></a>Adım 3. Güvenlik Bulut için Defender ve diğer artımlarda Uygulama Günlüğü toplayıcıyı dağıtma
+## <a name="step-3-deploy-the-defender-for-cloud-apps-log-collector-on-your-firewalls-and-other-proxies"></a>Adım 3. Güvenlik duvarlarınızda ve diğer proxy'lerde Cloud Apps için Defender günlük toplayıcısını dağıtma
 
-Ağınıza bağlı tüm cihazlarda kapsam için, güvenlik duvarlarınız ve diğer aracılarda Bulut için Defender Uygulamaları günlük toplayıcıyı dağıtarak uç noktalardan veri toplayın ve çözümleme için Bulut için Defender Uygulamalarına gönderin.
+Ağınıza bağlı tüm cihazların kapsamı için, uç noktalarınızdan veri toplamak ve analiz için Cloud Apps için Defender'a göndermek üzere güvenlik duvarlarınızda ve diğer proxy'lerde Cloud Apps için Defender günlük toplayıcısını dağıtın.
 
-Aşağıdaki Güvenli Web Ağ Geçidi'ni (SWG) kullanıyorsanız, Bulut için Defender Uygulamaları sorunsuz dağıtım ve tümleştirme sağlar:
+Aşağıdaki Güvenli Web Ağ Geçitlerinden (SWG) birini kullanıyorsanız, Bulut Uygulamaları için Defender sorunsuz dağıtım ve tümleştirme sağlar:
 
 - Zscaler
 - iboss
 - Corrata
-- Menlo Security
+- Menlo Güvenliği
 
-Bu ağ cihazlarıyla tümleştirme hakkında daha fazla bilgi için bkz. [Bulut Keşif'i ayarlama](/cloud-app-security/set-up-cloud-discovery).
+Bu ağ cihazlarıyla tümleştirme hakkında daha fazla bilgi için bkz. [Cloud Discovery'yi ayarlama](/cloud-app-security/set-up-cloud-discovery).
 
 <a name="step-4"></a>
 
-## <a name="step-4-view-the-cloud-discovery-dashboard-to-see-what-apps-are-being-used-in-your-organization"></a>Adım 4. Bulutta hangi uygulamaların kullanılıyor olduğunu görmek için Bulut Keşif panosuna bakın
+## <a name="step-4-view-the-cloud-discovery-dashboard-to-see-what-apps-are-being-used-in-your-organization"></a>Adım 4. Kuruluşunuzda hangi uygulamaların kullanıldığını görmek için Cloud Discovery panosunu görüntüleyin
 
-Bulut Keşif panosu, bulut uygulamalarının organizasyonda nasıl kullanıldıklarına dair daha fazla fikir vermek üzere tasarlanmıştır. Bu uygulama türleri için kullanılan uygulamalar, açık uyarılarınız ve kuruluşta uygulamaların risk düzeylerine bir bakışta göz atmanızı sağlar.
+Cloud Discovery panosu, bulut uygulamalarının kuruluşunuzda nasıl kullanıldığı hakkında daha fazla içgörü sağlamak üzere tasarlanmıştır. Ne tür uygulamaların kullanıldığına, açık uyarılarınıza ve kuruluşunuzdaki uygulamaların risk düzeylerine bir bakışta genel bakış sağlar.
 
-Bulut Keşif panosuyu kullanmaya başlamak için bkz. [Bulunan uygulamalarla çalışma](/cloud-app-security/discovered-apps).
+Cloud Discovery panosunu kullanmaya başlamak için bkz. [Bulunan uygulamalarla çalışma](/cloud-app-security/discovered-apps).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Adım 3 / 3: [Pilot Microsoft Defender for Cloud Apps](eval-defender-mcas-pilot.md)
+Adım 3 /3: [Pilot Microsoft Defender for Cloud Apps](eval-defender-mcas-pilot.md)
 
-Değerlendirme görünümüne genel [bakış Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
+[Değerlendirme Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md) için genel bakışa dönün
 
-Değerlendirme ve pilot uygulama için [genel bakış Microsoft 365 Defender](eval-overview.md)
+[Değerlendirme ve pilot Microsoft 365 Defender](eval-overview.md) genel bakışa dönün

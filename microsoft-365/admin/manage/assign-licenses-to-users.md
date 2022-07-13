@@ -25,13 +25,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Belirli kullanıcılara ürün lisansları atamak veya belirli bir ürüne kullanıcı lisansları atamak isteyip istemediğinize bağlı olarak lisans atayın.
-ms.date: 06/23/2022
-ms.openlocfilehash: ecca89deaadd55182875e8d3a5d8d74e2aec17eb
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.date: 07/12/2022
+ms.openlocfilehash: bf315b0a13bdf0eebb2e38afa3eafb35d4a0361c
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487531"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748417"
 ---
 # <a name="assign-microsoft-365-licenses-to-users"></a>Kullanıcılara Microsoft 365 lisansları atama
 
@@ -54,12 +54,11 @@ ms.locfileid: "66487531"
 - Grup tabanlı lisanslama kullanmak için bkz. [Azure Active Directory'de kullanıcılara grup üyeliğine göre lisans atama](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - Sway gibi bazı hizmetler, kullanıcılara otomatik olarak atanır ve tek tek atanması gerekmez.
 
-
 ## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a>Kullanıcılara lisans atamak için Lisanslar sayfasını kullanma
 
-**Lisanslar** sayfası, aynı anda en fazla 20 kullanıcı için lisans atamanızı veya atamasını kaldırmanızı sağlar. Sayfa, sahip olduğunuz ürünleri, her ürün için kullanılabilir lisans sayısını ve kullanılabilir toplam lisansların dışında atanan lisans sayısını gösterir. Lisans sayısı, aynı ürün adına ait tüm aboneliklerin toplam lisans toplamıdır.
+**Lisanslar** sayfası, aynı anda en fazla 20 kullanıcı için lisans atamanızı veya atamasını kaldırmanızı sağlar. Sayfa, sahip olduğunuz ürünleri, her ürün için kullanılabilir lisans sayısını ve kullanılabilir toplam lisansların dışında atanan lisans sayısını gösterir.
 
-Örneğin, Microsoft 365 İş Ekstra için 5 lisansı olan bir aboneliğiniz ve aynı ürün için 8 lisansı olan başka bir aboneliğiniz olabilir. **Lisanslar** sayfasında, tüm abonelikleriniz genelinde Microsoft 365 İş Ekstra için toplam 13 lisansınız olduğu gösterilir. Bu, aynı ürün için olsalar bile sahip olduğunuz her abonelik için bir satır görüntüleyen **Ürünleriniz** sayfasında gördüklerinizden farklıdır.
+**Lisanslar** sayfasında, aynı ürün adına ait tüm aboneliklerin toplam lisans toplamı gösterilir. Örneğin, Microsoft 365 İş Ekstra için 5 lisansı olan bir aboneliğiniz ve aynı ürün için 8 lisansı olan başka bir aboneliğiniz olabilir. **Lisanslar** sayfasında, tüm abonelikleriniz genelinde Microsoft 365 İş Ekstra için toplam 13 lisansınız olduğu gösterilir. Bu, aynı ürün için olsalar bile sahip olduğunuz her abonelik için bir satır görüntüleyen **Ürünleriniz** sayfasında gördüklerinizden farklıdır.
 
 ::: moniker range="o365-worldwide"
 
@@ -79,7 +78,7 @@ ms.locfileid: "66487531"
 
 4. **Kullanıcılara lisans ata** bölmesinde bir ad yazmaya başlayın ve ardından sonuçlar arasından seçerek listeye ekleyin. Tek seferde en fazla 20 kullanıcı ekleyebilirsiniz.
 
-4. Belirli öğelere erişim atamak veya kaldırmak için **Uygulamaları ve hizmetleri aç veya kapat'ı** seçin.
+5. Belirli öğelere erişim atamak veya kaldırmak için **Uygulamaları ve hizmetleri aç veya kapat'ı** seçin.
 
 6. İşiniz bittiğinde **Ata'yı** seçin ve sağ bölmeyi kapatın.
 

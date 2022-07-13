@@ -15,18 +15,19 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 description: Kişisel veri olaylarını izlemek ve yanıtlamak için denetim ve uyarı ilkelerini ve veri sahibi isteklerini kullanın.
-ms.openlocfilehash: 5954fc193f6071dbf94277ff57f599e3bb98f7d2
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 2a19154b9b0602eded09e6521dc285c00fd56a10
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013276"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748296"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Kuruluşunuzdaki veri gizliliği olaylarını izleme ve yanıtlama
 
-Microsoft 365 özellikleri, kuruluşunuzdaki veri gizliliği olaylarını izlemenize, araştırmanıza ve yanıtlamanıza yardımcı olmak için kullanılabilir. Bunların her biri için süreçlere, yordamlara ve diğer belgelere sahip olmak, düzenleyici kurumlara uyumluluğu göstermek için de önemli olabilir.
+microsoft 365 özellikleri, kuruluşunuzdaki veri gizliliği olaylarını izlemenize, araştırmanıza ve yanıtlamanıza yardımcı olur ve ilgili özellikleri kullanıma hazır hale getirmenize yardımcı olur. Bunların her biri için süreçlere, yordamlara ve diğer belgelere sahip olmak, düzenleyici kurumlara uyumluluğu göstermek için de önemli olabilir.
 
 Şunlar dahildir: 
 
@@ -56,12 +57,12 @@ Veri gizliliği düzenlemeleri genellikle izleme ve yanıt için aşağıdakiler
 
 Kuruluşunuz ayrıca diğer uyumluluk gereksinimleri veya iş nedeniyle başka amaçlarla izleme ve yanıt etkinlikleri gerçekleştirmek isteyebilir. Veri gizliliği için izleme ve yanıt şemanızı oluşturma işlemi genel izleme ve yanıt planlaması, uygulaması ve yönetimi kapsamında yapılmalıdır.
 
-Veri gizliliği düzenlemelerine yönelik Microsoft 365'de izleme ve yanıt şemasını kullanmaya başlamanıza yardımcı olmak için, bu makalede Microsoft 365 aşağıdaki gibi soruları yanıtlamaya yönelik yararlı özellikler listelenmektedir: 
+Microsoft 365'te veri gizliliği düzenlemelerine yönelik izleme ve yanıt şemasını kullanmaya başlamanıza yardımcı olmak için, bu makalede Microsoft 365'te aşağıdaki gibi soruları yanıtlamaya yönelik yararlı özellikler listelenmektedir: 
 
 - Farklı veri türleri ve kaynakları için günlük izleme, araştırma ve raporlama teknikleri ne tür kullanılabilir?
 - Veri sahibi isteklerini (DSR) ve anonimleştirme, yeniden düzenleme ve silme gibi tüm düzeltme eylemlerini işlemek için hangi mekanizmaların gerekli olacağı.
 
-## <a name="auditing-and-alert-policies-in-the-microsoft-purview-compliance-portal"></a>Microsoft Purview uyumluluk portalında Denetim ve Uyarı İlkeleri
+## <a name="auditing-and-alert-policies-in-the-microsoft-purview-compliance-portal"></a>Microsoft Purview uyumluluk portalı Denetim ve Uyarı İlkeleri
 
 Denetim, gelişmiş denetim ve uyarı ilkelerini ayarlamak için şu makalelere bakın:
 
@@ -72,7 +73,7 @@ Denetim, gelişmiş denetim ve uyarı ilkelerini ayarlamak için şu makalelere 
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR ve CCPA için veri sahibi istekleri
 
-Microsoft 365'da DSR'ye yanıt verme hakkında bilgi için bkz[. GDPR ve CCPA için Veri Sahibi İstekleri](/compliance/regulatory/gdpr-dsr-Office365).
+Microsoft 365'te DSR'ye yanıt verme hakkında bilgi için bkz. [GDPR ve CCPA için Veri Sahibi İstekleri](/compliance/regulatory/gdpr-dsr-Office365) .
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Microsoft Stream'de silinen kullanıcıları yönetme
 
@@ -80,4 +81,4 @@ Microsoft Stream için, bir kullanıcı Azure Active Directory'den (Azure AD) si
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>Araştırma aracı olarak Insider risk yönetimi
 
-[Insider risk yönetimi](../compliance/insider-risk-management.md) , kuruluşunuzdaki riskli etkinlikleri algılamanıza, araştırmanıza ve işlem yapmanıza olanak tanıyarak iç riski en aza indirmenize yardımcı olmak için Microsoft Purview uyumluluk portalının bir özelliğidir.
+[Insider risk yönetimi](../compliance/insider-risk-management.md), kuruluşunuzdaki riskli etkinlikleri algılamanıza, araştırmanıza ve üzerinde işlem yapmanıza olanak tanıyarak iç riski en aza indirmenize yardımcı olmak için Microsoft Purview uyumluluk portalı bir özelliğidir.

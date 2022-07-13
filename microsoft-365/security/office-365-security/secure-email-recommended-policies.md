@@ -1,5 +1,5 @@
 ---
-title: Güvenli e-posta önerilen ilkeler - kurumsal | için Microsoft 365 Microsoft Docs
+title: Güvenli e-posta önerilen ilkeler - Kurumsal | için Microsoft 365 Microsoft Docs
 description: E-posta ilkelerinin ve yapılandırmalarının nasıl uygulanacağı hakkında Microsoft önerilerine yönelik ilkeleri açıklar.
 ms.author: dansimp
 author: dansimp
@@ -19,13 +19,14 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
+- zerotrust-solution
 ms.technology: mdo
-ms.openlocfilehash: 592b5733844dc6a3df1a1d207e3a2c3deda7d7b7
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 1b3afc4988dc5d20a1c6c3e0b1a51c1ef1cf9987
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015224"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750176"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>E-postanın güvenliğini sağlamaya yönelik ilke önerileri
 
@@ -33,7 +34,7 @@ Bu makalede, modern kimlik doğrulaması ve koşullu erişimi destekleyen kurums
 
 Bu öneriler, gereksinimlerinizin ayrıntı düzeyine göre uygulanabilecek üç farklı güvenlik ve koruma katmanını temel alır: **başlangıç noktası**, **kuruluş** ve **özel güvenlik**. Bu güvenlik katmanları ve önerilen istemci işletim sistemleri hakkında daha fazla bilgi edinmek için önerilen [güvenlik ilkeleri ve yapılandırmalarına giriş](microsoft-365-policies-configurations.md) bölümünde bu önerilere başvurabilirsiniz.
 
-Bu öneriler, kullanıcılarınızın mobil cihazlarda iOS ve Android için Outlook de dahil olmak üzere modern e-posta istemcilerini kullanmasını gerektirir. iOS ve Android için Outlook, Office 365 en iyi özellikleri için destek sağlar. Bu mobil Outlook uygulamaları, mobil kullanımı destekleyen ve diğer Microsoft bulut güvenliği özellikleriyle birlikte çalışan güvenlik özellikleriyle de tasarlanır. Daha fazla bilgi için bkz[. iOS ve Android SSS için Outlook](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
+Bu öneriler, kullanıcılarınızın mobil cihazlarda iOS ve Android için Outlook da dahil olmak üzere modern e-posta istemcilerini kullanmasını gerektirir. iOS ve Android için Outlook, Office 365 en iyi özellikleri için destek sağlar. Bu mobil Outlook uygulamaları, mobil kullanımı destekleyen ve diğer Microsoft bulut güvenliği özellikleriyle birlikte çalışan güvenlik özellikleriyle de tasarlanır. Daha fazla bilgi için bkz. [iOS ve Android için Outlook SSS](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
 
 ## <a name="update-common-policies-to-include-email"></a>Ortak ilkeleri e-posta içerecek şekilde güncelleştirme
 
@@ -41,15 +42,15 @@ Aşağıdaki diyagramda e-postayı korumak için ortak kimlik ve cihaz erişim i
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="Microsoft Exchange erişimini korumaya yönelik ilke güncelleştirmelerinin özeti" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
 
-ActiveSync istemcilerini engellemek için Exchange Online için yeni bir ilke ekli olduğunu unutmayın. Bu, mobil Outlook kullanımını zorlar.
+ActiveSync istemcilerini engellemek için Exchange Online için yeni bir ilke ekli olduğunu unutmayın. Bu, Outlook Mobile'ın kullanımını zorlar.
 
-İlkeleri ayarlarken ilkelerin kapsamına Exchange Online ve Outlook eklediyseniz, yalnızca ActiveSync istemcilerini engellemek için yeni ilke oluşturmanız gerekir. Aşağıdaki tabloda listelenen ilkeleri gözden geçirin ve önerilen eklemeleri yapın veya bunların zaten dahil olduğunu onaylayın. Her ilke [, Ortak kimlik ve cihaz erişim ilkelerindeki](identity-access-policies.md) ilişkili yapılandırma yönergelerine bağlanır.
+Exchange Online ve Outlook'u ayarlarken ilkelerin kapsamına eklediyseniz, yalnızca ActiveSync istemcilerini engellemek için yeni ilke oluşturmanız gerekir. Aşağıdaki tabloda listelenen ilkeleri gözden geçirin ve önerilen eklemeleri yapın veya bunların zaten dahil olduğunu onaylayın. Her ilke [, Ortak kimlik ve cihaz erişim ilkelerindeki](identity-access-policies.md) ilişkili yapılandırma yönergelerine bağlanır.
 
 |Koruma düzeyi|İlkeler|Daha fazla bilgi|
 |---|---|---|
 |**Başlangıç noktası**|[Oturum açma riski *orta* veya *yüksek* olduğunda MFA gerektirme](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Bulut uygulamalarının atamasında Exchange Online ekleme|
 ||[Modern kimlik doğrulamayı desteklemeyen istemcileri engelleme](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Bulut uygulamalarının atamasında Exchange Online ekleme|
-||[APP veri koruma ilkelerini uygulama](identity-access-policies.md#apply-app-data-protection-policies)|uygulama listesine Outlook eklendiğinden emin olun. Her platform için ilkeyi güncelleştirin (iOS, Android, Windows)|
+||[APP veri koruma ilkelerini uygulama](identity-access-policies.md#apply-app-data-protection-policies)|Outlook'un uygulama listesine eklendiğinden emin olun. Her platform (iOS, Android, Windows) için ilkeyi güncelleştirin|
 ||[Onaylı uygulamalar ve APP koruması gerektirme](identity-access-policies.md#require-approved-apps-and-app-protection)|Bulut uygulamaları listesine Exchange Online ekleme|
 ||[ActiveSync istemcilerini engelleme](#block-activesync-clients)|Bu yeni ilkeyi ekle|
 |**Enterprise**|[Oturum açma riski *düşük*, *orta* veya *yüksek* olduğunda MFA gerektirme](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Bulut uygulamalarının atamasında Exchange Online ekleme|
@@ -68,11 +69,11 @@ Ayrıca, tüm istemci erişim isteklerini modern kimlik doğrulaması kullanmaya
 
 ## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>Web üzerinde Outlook'den Exchange Online erişimini sınırlama
 
-Kullanıcıların yönetilmeyen cihazlardaki ekleri Web üzerinde Outlook indirme özelliğini kısıtlayabilirsiniz. Bu cihazlardaki kullanıcılar, Office Online'ı kullanarak dosyaları sızdırıp cihaza depolamadan görüntüleyebilir ve düzenleyebilir. Ayrıca, kullanıcıların yönetilmeyen bir cihazda ekleri görmesini de engelleyebilirsiniz.
+Kullanıcıların yönetilmeyen cihazlardaki ekleri Web üzerinde Outlook indirme özelliğini kısıtlayabilirsiniz. Bu cihazlardaki kullanıcılar, dosyaları cihaza sızdırıp depolamadan Office Online'ı kullanarak bu dosyaları görüntüleyebilir ve düzenleyebilir. Ayrıca, kullanıcıların yönetilmeyen bir cihazda ekleri görmesini de engelleyebilirsiniz.
 
 Adımlar şunlardır:
 
-1. [PowerShell'i Exchange Online Bağlan](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [Exchange Online PowerShell’e bağlanma](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 2. Henüz bir OWA posta kutusu ilkeniz yoksa [, New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy) cmdlet'iyle bir tane oluşturun.
 3. Eklerin görüntülenmesine izin vermek ancak indirilmek istemiyorsanız şu komutu kullanın:
 
@@ -96,9 +97,9 @@ Adımlar şunlardır:
 
 ## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>iOS ve Android cihazlarının Outlook kullanmasını gerektir
 
-iOS ve Android cihaz kullanıcılarının yalnızca iOS ve Android için Outlook kullanarak iş veya okul içeriğine erişebildiğinden emin olmak için, bu olası kullanıcıları hedefleyen bir Koşullu Erişim ilkesine ihtiyacınız vardır.
+iOS ve Android cihaz kullanıcılarının yalnızca iOS ve Android için Outlook'u kullanarak iş veya okul içeriğine erişebilmesini sağlamak için, bu olası kullanıcıları hedefleyen bir Koşullu Erişim ilkesine ihtiyacınız vardır.
 
-iOS [ve Android için Outlook kullanarak mesajlaşma işbirliği erişimini yönetme](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access) bölümünde bu ilkeyi yapılandırma adımlarına bakın.
+[iOS ve Android için Outlook'u kullanarak mesajlaşma işbirliği erişimini yönetme](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access) başlığında bu ilkeyi yapılandırma adımlarına bakın.
 
 ## <a name="set-up-message-encryption"></a>İleti şifrelemeyi ayarlama
 

@@ -15,14 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: Kişisel veriler için koruma düzeyinizi geliştirmek için Uyumluluk Puanı ve Uyumluluk Yöneticisi'ni kullanmayı öğrenin.
-ms.openlocfilehash: 469584abbf784fe6c556aab14a49a5ed44280a69
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bd0ae7f748a2a3cd5ff52b6363780032033ead44
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947461"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748703"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>İyileştirme eylemlerini yönetmek için Uyumluluk Yöneticisi'ni kullanma
 
@@ -31,13 +32,13 @@ Microsoft Purview Uyumluluk Yöneticisi, Avrupa Birliği [Genel Veri Koruma Yön
 Bu makale, veri gizliliği amacıyla bu aracın kullanımı hakkında rehberlik sağlar.
 
 > [!NOTE]
-> Uyumluluk Yöneticisi'nden gelen Öneriler, uyumluluk garantisi olarak yorumlanmamalıdır. Yasal ortamınıza göre müşteri denetimlerinin etkinliğini değerlendirmek ve doğrulamak size aittir. Bu hizmetler [, Çevrimiçi Hizmet Koşulları'ndaki](https://go.microsoft.com/fwlink/?linkid=2108910) hüküm ve koşullara tabidir. Ayrıca bkz[. Microsoft 365 güvenlik ve uyumluluk için lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+> Uyumluluk Yöneticisi'nden gelen öneriler, uyumluluk garantisi olarak yorumlanmamalıdır. Yasal ortamınıza göre müşteri denetimlerinin etkinliğini değerlendirmek ve doğrulamak size aittir. Bu hizmetler [, Çevrimiçi Hizmet Koşulları'ndaki](https://go.microsoft.com/fwlink/?linkid=2108910) hüküm ve koşullara tabidir. Ayrıca bkz. [Güvenlik ve uyumluluk için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 ## <a name="getting-started-with-compliance-manager"></a>Uyumluluk Yöneticisi ile çalışmaya başlama
 
 #### <a name="what-is-compliance-manager"></a>Uyumluluk Yöneticisi nedir?
 
-[Uyumluluk Yöneticisi](../compliance/compliance-manager.md) , Microsoft bulut hizmetleriyle ilgili mevzuat uyumluluğu etkinliklerini yönetmek için Microsoft Purview uyumluluk portalında bulunan iş akışı tabanlı bir risk değerlendirme aracıdır. Microsoft 365 veya Azure Active Directory (Azure AD) aboneliğinizin bir parçası olarak Uyumluluk Yöneticisi, Microsoft bulut hizmetleri için paylaşılan sorumluluk modeli içinde mevzuat uyumluluğunu yönetmenize yardımcı olur.
+[Uyumluluk Yöneticisi](../compliance/compliance-manager.md), Microsoft bulut hizmetleriyle ilgili mevzuat uyumluluğu etkinliklerini yönetmek için Microsoft Purview uyumluluk portalı iş akışı tabanlı bir risk değerlendirme aracıdır. Microsoft 365 veya Azure Active Directory (Azure AD) aboneliğinizin bir parçası olarak Uyumluluk Yöneticisi, Microsoft bulut hizmetleri için paylaşılan sorumluluk modelinde mevzuat uyumluluğunu yönetmenize yardımcı olur.
 
 **Kullanıma hazır değerlendirmeler**
 
@@ -58,14 +59,14 @@ Uyumluluk Yöneticisi, denetimler içinde önerilen iyileştirme eylemlerini tam
 - [İlk ziyaret: Uyumluluk Yöneticisi'ne alışma](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - Uyumluluk Yöneticisi panonuzla çalışma
     - Uyumluluk puanınızı anlama
-    - İyileştirme eylemleri hakkında Learning
+    - İyileştirme eylemleri hakkında bilgi edinme
     - Değerlendirmeleri ve şablonları anlama
 - [Yükseltme: Uyumluluk Yöneticisi'ne uyumluluk etkinliklerinizi yönetecek şekilde yapılandırma](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - İlk değerlendirmenizi oluşturma ve yönetme
     - Değerlendirmelerinizdeki denetimleri tamamlamak için iyileştirme eylemleri üzerinde uygulama ve test çalışması gerçekleştirme
     - Farklı eylemlerin uyumluluk puanınızı nasıl etkilediğini anlama
 - [Ölçeği artırma: Özel gereksinimlerinizi karşılamak için gelişmiş işlevleri kullanın](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - Microsoft 365 olmayan ürünleri izlemek için özel değerlendirmelerinizi oluşturma
+    - Microsoft 365 dışı ürünleri izlemek için özel değerlendirmelerinizi oluşturma
     - Denetimleri eklemek veya kaldırmak için mevcut şablonları değiştirme
     - İyileştirme eylemlerinin otomatik testini ayarlama
 
@@ -79,9 +80,9 @@ Uyumluluk puanı hesaplama makalesinde gösterildiği gibi, önleyici denetimler
 
 Uyumluluk Puanı yönetici kullanıcı arabirimi bu parametreleri listelemez ve bunlara göre filtreleme olanağı sağlamaz. Ancak, ilişkili şablonu Uyumluluk Yöneticisi'nden indirirseniz, sonuçta elde edilen veri kümesi çoğu düzenleme için bu parametreleri listeler.
 
-Teknik denetimler için, eylem başarıyla uygulanıp test edildikten sonra Uyumluluk Yöneticisi iyileştirme eylem puanını otomatik olarak güncelleştirir. Diğer, teknik olmayan denetim eylemleri, puan puanınıza doğru sayılmadan önce el ile uygulanması gereken operasyonel veya belgelerle&mdash; ilgili olan eylemlerdir&mdash;.
+Teknik denetimler için, eylem başarıyla uygulanıp test edildikten sonra Uyumluluk Yöneticisi iyileştirme eylem puanını otomatik olarak güncelleştirir. Operasyonel veya belgelerle&mdash;ilgili olanlar gibi diğer teknik olmayan denetim eylemlerinin&mdash;puan puanınıza doğru sayılmadan önce el ile uygulanması gerekir.
 
-Ayrıca, veri gizliliği düzenleme uyumluluğu&mdash; dışında nedenlerle&mdash; bekletme etiketleri kullanmak gibi başka amaçlarla bazı iyileştirme eylemleri de uyguluyorsunuz. Bu özellik, kasıtlı bir uyumluluk eyleminin parçası değil, başka amaçlarla kullanılıyor olsa bile bu özelliği kullanmak için kredi alırsınız.
+Ayrıca, veri gizliliği düzenleme uyumluluğu&mdash;dışında nedenlerle&mdash;bekletme etiketleri kullanmak gibi başka amaçlarla da belirli iyileştirme eylemleri uyguluyorsunuz. Bu nedenle, böyle bir özellik, kasıtlı bir uyumluluk eyleminin parçası değil, başka amaçlarla kullanılıyor olsa bile bu özelliği kullanmak için kredi alırsınız.
 
 Uyumluluk puanınız, geliştirmeyi geniş ölçekte izlemek için göreli bir ölçü olarak kabul edilmelidir. Mükemmel bir skor peşinde koşmamalısın.
 

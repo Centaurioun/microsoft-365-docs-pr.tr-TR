@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: SharePoint ve OneDrive'da etiketlenmiş ve şifrelenmiş belgeler için masaüstü uygulamalarında birlikte yazma ve Otomatik Kaydetme'yi etkinleştiren bir ayarı açın.
-ms.openlocfilehash: e82249f3d42eb71345bb998d16a6c2a24e11130c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f2a1bffdc156d5c3ae35ac38fb92f1f88c3af3ea
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628649"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749209"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Duyarlılık etiketleriyle şifrelenmiş dosyalar için birlikte yazmayı etkinleştirme
 
@@ -74,9 +74,9 @@ Bu özelliği açmadan önce aşağıdaki önkoşulları anladığınızdan emin
 - Kiracı [için SharePoint ve OneDrive'daki Office dosyaları](sensitivity-labels-sharepoint-onedrive-files.md) için duyarlılık etiketleri etkinleştirilmelidir. Bu özellik henüz etkinleştirilmemişse, duyarlılık etiketlerine sahip dosyalar için birlikte yazmayı açma ayarını seçtiğinizde otomatik olarak etkinleştirilir.
 
 - Kurumlar için Microsoft 365 Uygulamaları:
-    - **Windows**: Geçerli Kanal veya Aylık Kurumsal Kanal'dan en düşük sürüm 2107 veya Semi-Annual Enterprise Channel'dan en düşük sürüm 2202 (Önizleme)
+    - **Windows**: Geçerli Kanal veya Aylık Kurumsal Kanal'dan en düşük sürüm 2107 veya Semi-Annual Enterprise Channel'dan en düşük sürüm 2202
     - **macOS**: En düşük sürüm 16.51
-    - **iOS**: En düşük sürüm 2.58'i [kabul](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) ettiğinizde önizlemede
+    - **iOS**: En düşük sürüm 2.58'i [kabul ettiğinizde önizlemede](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)
     - **Android**: En düşük sürüm 16.0.14931'i [kabul](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) ettiğinizde önizlemede
 
 - Kiracınızdaki tüm uygulamalar, hizmetler ve işletimsel araçlar yeni [etiketleme meta verilerini](#metadata-changes-for-sensitivity-labels) desteklemelidir. Aşağıdakilerden birini kullanıyorsanız gereken en düşük sürümleri denetleyin:

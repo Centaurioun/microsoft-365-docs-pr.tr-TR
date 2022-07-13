@@ -1,6 +1,6 @@
 ---
-title: Uç Nokta için Pilot Microsoft Defender
-description: Pilot grubu doğrulama ve özellikleri çalıştırma da dahil olmak üzere, Endpoint (MDE) için Microsoft Defender için bir pilot çalıştırmayı öğrenin.
+title: Pilot Uç Nokta için Microsoft Defender
+description: Pilot grubu doğrulama ve özellikleri deneme de dahil olmak üzere Uç Nokta için Microsoft Defender(MDE) için pilot çalıştırmayı öğrenin.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,73 +19,74 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4fff094b06dfa265f9fc44c568216582083ce1d9
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: c12d1bca36884a7b43580b0685f38df99e51ba1d
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755464"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750417"
 ---
-# <a name="pilot-microsoft-defender-for-endpoint"></a>Uç Nokta için Pilot Microsoft Defender
+# <a name="pilot-microsoft-defender-for-endpoint"></a>Pilot Uç Nokta için Microsoft Defender
 
-Bu makale, Uç Nokta için Microsoft Defender'da pilot çalıştırma sürecinde size yol sağlar. 
+Bu makale, Uç Nokta için Microsoft Defender için pilot çalıştırma sürecinde size yol gösterir. 
 
-Uç Nokta için Microsoft Defender'da pilot ayarlama ve yapılandırma için aşağıdaki adımları kullanın. 
+Uç Nokta için Microsoft Defender için pilotu ayarlamak ve yapılandırmak için aşağıdaki adımları kullanın. 
 
-:::image type="content" source="../../media/defender/m365-defender-endpoint-pilot-steps.png" alt-text="Microsoft Defender değerlendirme ortamına Identity için Microsoft Defender ekleme adımları" lightbox="../../media/defender/m365-defender-endpoint-pilot-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-endpoint-pilot-steps.png" alt-text="Microsoft Defender değerlendirme ortamına Kimlik için Microsoft Defender ekleme adımları" lightbox="../../media/defender/m365-defender-endpoint-pilot-steps.png":::
 
 - Adım 1. Pilot grubu doğrulama
 - Adım 2. Özellikleri deneyin
 
-Uç Nokta için Microsoft Defender'ı pilot olarak sunarken, tüm kuruluşu eklemeden önce hizmete birkaç cihaz eklemeyi seçebilirsiniz.  
+Uç Nokta için Microsoft Defender pilot Uç Nokta için Microsoft Defender, kuruluşunuzun tamamını eklemeden önce birkaç cihazı hizmete eklemeyi seçebilirsiniz.  
 
-Ardından saldırı benzetimlerini çalıştırma ve Uç nokta için Defender'ın kötü amaçlı etkinlikleri nasıl ortaya çıkararak etkili bir yanıt yürütmene olanak verdiği gibi özellikleri deneyebilirsiniz. 
+Ardından, saldırı simülasyonlarını çalıştırma ve Uç Nokta için Defender'ın kötü amaçlı etkinlikleri nasıl ortaya çıkardığını ve verimli bir yanıt vermenizi nasıl sağladığını görme gibi kullanılabilir özellikleri deneyebilirsiniz. 
 
 ## <a name="step-1-verify-pilot-group"></a>Adım 1. Pilot grubu doğrulama
-Değerlendirmeyi etkinleştir bölümünde açıklanan ekleme adımlarını tamamladıktan sonra[](eval-defender-endpoint-enable-eval.md), cihaz envanteri listesinde yaklaşık bir saat sonra cihazları görmeniz gerekir. 
+[Değerlendirmeyi etkinleştir](eval-defender-endpoint-enable-eval.md) bölümünde özetlenen ekleme adımlarını tamamladıktan sonra cihazları yaklaşık bir saat sonra Cihaz envanteri listesinde görmeniz gerekir. 
 
-Ekli cihazlarınızı gördüğünüzde, özellikleri deniyorum. 
+Eklenen cihazlarınızı gördüğünüzde, özellikleri denemeye devam edebilirsiniz. 
 
 ## <a name="step-2-try-out-capabilities"></a>Adım 2. Özellikleri deneyin
-Artık bazı cihazları eklemeyi tamamladıktan ve hizmete rapor yaptıklarına göre, hemen hazır bulunan güçlü özellikleri denerek ürünü tanımaya hazır olun.
+Artık bazı cihazları eklemeyi tamamladığınıza ve bunların hizmete bildirildiğini doğruladığınıza göre, hemen kullanıma sunulan güçlü özellikleri deneyerek ürünü tanıyın.
 
-Pilot çalışma sırasında, karmaşık yapılandırma adımlarını atmadan ürünü çalışırken görmek için bazı özellikleri kolayca çalışmaya başlatabilirsiniz.
+Pilot sırasında, karmaşık yapılandırma adımlarından geçmeden ürünü çalışır durumda görmek için bazı özellikleri denemeye kolayca başlayabilirsiniz.
 
-Panoları kontrol ederek başlayalım.
+Panolara göz atarak başlayalım.
 
 ### <a name="view-the-device-inventory"></a>Cihaz envanterini görüntüleme
-Cihaz envanteri, ağ ağınız için uç noktaların, ağ cihazlarının ve IoT cihazlarının listesini göreceğiniz yerdir. Ağ ağınız için yalnızca cihazları görüntülemenizi sağlamakla aynı zamanda etki alanı, risk düzeyi, işletim sistemi platformu ve en çok risk altında olan cihazların kolayca tanımlanmasını sağlayacak diğer ayrıntılar gibi bu cihazlar hakkında derinlemesine bilgi sağlar.
+Cihaz envanteri, ağınızdaki uç noktaların, ağ cihazlarının ve IoT cihazlarının listesini göreceğiniz yerdir. Ağınızdaki cihazların görünümünü sağlamakla kalmaz, aynı zamanda etki alanı, risk düzeyi, işletim sistemi platformu ve en riskli cihazların kolay tanımlanması için diğer ayrıntılar gibi bunlar hakkında ayrıntılı bilgi verir.
 
-### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>Tehdit ve Güvenlik güvenlik açığı yönetimi görüntüleme 
-Tehdit ve güvenlik açığı yönetimi, kuruluşa en acil ve en yüksek riski veren zayıf noktaların üzerine odaklanmanıza yardımcı olur. Panodan, kuruluşun pozlama puanının üst düzey bir görünümünü, Cihazlar için Microsoft Güvenli Puanı, cihaz açığa çıkarma dağılımını, en iyi güvenlik önerilerini, en korumasız yazılımları, en iyi düzeltme etkinliklerini ve en iyi şekilde açığa çıkaran cihaz verilerini elde edin. 
+### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>Tehdit ve güvenlik açığı yönetimi panosunu görüntüleme 
+Tehdit ve güvenlik açığı yönetimi, kuruluş için en acil ve en yüksek riski oluşturan zayıflıklara odaklanmanıza yardımcı olur. Panodan kuruluşun maruz kalma puanı, Cihazlar için Microsoft Güvenli Puanı, cihaz açığa çıkarma dağıtımı, en iyi güvenlik önerileri, en savunmasız yazılımlar, en iyi düzeltme etkinlikleri ve en çok kullanıma sunulan cihaz verilerinin üst düzey bir görünümünü elde edin. 
 
-### <a name="run-a-simulation"></a>Benzetim çalıştırma
-Uç Nokta için Microsoft Defender, pilot [cihazlarında çalıştırabilirsiniz "Do It Yourself"](https://securitycenter.windows.com/tutorials) saldırı senaryolarıyla birlikte gelir.  Her belgede işletim sistemi ve uygulama gereksinimlerinin yanı sıra saldırı senaryosuna özgü ayrıntılı yönergeler de yer almaktadır. Bu betikler güvenli, belgelenmiş ve kullanımı kolaydır. Bu senaryolar, Uç Nokta için Defender özelliklerini yansıtacak ve araştırma deneyimi boyunca size yol sunar.
+### <a name="run-a-simulation"></a>Simülasyon çalıştırma
+Uç Nokta için Microsoft Defender, pilot cihazlarınızda çalıştırabileceğiniz ["Kendiniz Yapın" saldırı senaryolarıyla](https://securitycenter.windows.com/tutorials) birlikte gelir.  Her belgede işletim sistemi ve uygulama gereksinimlerinin yanı sıra bir saldırı senaryosuna özgü ayrıntılı yönergeler bulunur. Bu betikler güvenlidir, belgelenir ve kullanımı kolaydır. Bu senaryolar Uç Nokta için Defender özelliklerini yansıtır ve araştırma deneyiminde size yol gösterir.
 
-Sağlanan benzetimleri çalıştırmak için, en az bir yerleşik [cihaza ihtiyacınız vardır](../defender-endpoint/onboard-configure.md).
+Sağlanan simülasyonlardan herhangi birini çalıştırmak için en az [bir yerleşik cihaza](../defender-endpoint/onboard-configure.md) ihtiyacınız vardır.
 
-1.  > **YardımSimulations & içinde**, benzetim yapmak istediğiniz mevcut saldırı senaryolarını seçin:
+1. **Yardım** > **Benzetimleri & öğreticilerinde**, kullanılabilir saldırı senaryolarından hangisinin benzetimini yapmak istediğinizi seçin:
 
-   - **Senaryo 1: Belge geri dönmez- sosyal** olarak mühendislik yapılan bir belge teslimini benzetimler. Belge, saldırganlara denetim veren özel olarak hazırlanmış bir arka kapı başlatıyor.
+   - **Senaryo 1: Belge arka kapı bırakma** - sosyal olarak tasarlanmış bir yem belgesinin teslimini simüle eder. Belge, saldırganlara denetim sağlayan özel olarak hazırlanmış bir arka kapı başlatır.
 
-   - **Senaryo 2:** Dosyasız saldırıdaki PowerShell betiği, PowerShell'e dayanan dosyasız bir saldırının benzetimini yaptı, saldırı yüzeyini azaltmayı ve kötü amaçlı bellek etkinliğini algıla ile ilgili cihaz öğrenmeyi gösterir.
+   - **Senaryo 2: Dosyasız saldırıda PowerShell betiği** - PowerShell'i kullanan, saldırı yüzeyini azaltmayı ve kötü amaçlı bellek etkinliğinin cihaz öğrenmesi algılamasını gösteren dosyasız bir saldırının benzetimini sağlar.
 
-   - **Senaryo 3: Otomatik olay** yanıtı - Olay yanıt kapasitenizi ölçeklendirmek için ihlal yapıtlarını otomatik olarak uyaran otomatik soruşturmayı tetikler.
+   - **Senaryo 3: Otomatik olay yanıtı - güvenlik olayı yanıt** kapasitenizi ölçeklendirmek için ihlal yapıtlarını otomatik olarak avlayan ve düzelten otomatik araştırmayı tetikler.
 
-2. Seçtiğiniz senaryoyla birlikte verilen ilgili adım adım belgeyi indirin ve okuyun.
+2. Seçtiğiniz senaryoyla birlikte sağlanan ilgili izlenecek yol belgesini indirin ve okuyun.
 
-3. Benzetim dosyasını indirin veya öğreticilerde **YardımSimulations'a** >  giderek benzetim & kopyalayın. Dosyayı veya betiği test cihazına indirmeyi seçebilirsiniz, ancak bu zorunlu değildir.
+3. **Yardım** > **Simülasyonları & öğreticilerine** giderek simülasyon dosyasını indirin veya simülasyon betiğini kopyalayın. Dosyayı veya betiği test cihazına indirmeyi seçebilirsiniz, ancak zorunlu değildir.
 
-4. Benzetim dosyasını veya betiği, adım adım belgede anlatımlı olarak test cihazında çalıştırın.
+4. Simülasyon dosyasını veya betiği, izlenecek yol belgesinde açıklandığı gibi test cihazında çalıştırın.
 
 > [!NOTE]
-> Benzetim dosyaları veya betikler saldırı etkinliğini taklit ediyor ancak aslında bu, test cihazına zarar vermeyecek veya tehlikeye atmayacak.
+> Simülasyon dosyaları veya betikler saldırı etkinliğini taklit eder ancak aslında zararsızdır ve test cihazına zarar vermez veya tehlikeye atmaz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Bulut Uygulamaları için Microsoft Defender'ı Değerlendirme](eval-defender-mcas-overview.md)
+[değerlendirme Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 
-Uç Nokta için [Microsoft Defender'ı Değerlendir'e genel bakış](eval-defender-endpoint-overview.md)
+[Değerlendirme Uç Nokta için Microsoft Defender](eval-defender-endpoint-overview.md) için genel bakışa dönün
 
-Değerlendirme ve pilot uygulama için [genel bakış Microsoft 365 Defender](eval-overview.md)
+[Değerlendirme ve pilot Microsoft 365 Defender](eval-overview.md) genel bakışa dönün

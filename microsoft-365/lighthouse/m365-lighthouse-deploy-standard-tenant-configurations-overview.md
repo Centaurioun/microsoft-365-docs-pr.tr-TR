@@ -17,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için standart kiracı yapılandırmalarını dağıtmak için temelleri kullanma hakkında bilgi edinin.
-ms.openlocfilehash: dab183f644031ec764208cf6b2bb636933eaba38
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 064968cd75804167493e696f08c3bec764598c94
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017086"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749165"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Standart kiracı yapılandırmalarını dağıtmak için Microsoft 365 Lighthouse temellerini kullanmaya genel bakış 
 
-Microsoft 365 Lighthouse temelleri, birden çok müşteri kiracısı arasında Microsoft 365 güvenlik ayarlarını yönetmeniz için yinelenebilir ve ölçeklenebilir bir yol sağlar. Temeller, kiracılarınızın kullanıcılarını, cihazlarını ve verilerini güvenli tutan temel güvenlik ilkelerini ve uyumluluk standartlarını dağıtan standart kiracı yapılandırmaları sağlar.
+Microsoft 365 Lighthouse temelleri, microsoft 365 güvenlik ayarlarını birden çok müşteri kiracısı arasında yönetmeniz için yinelenebilir ve ölçeklenebilir bir yol sağlar. Temeller, kiracılarınızın kullanıcılarını, cihazlarını ve verilerini güvenli tutan temel güvenlik ilkelerini ve uyumluluk standartlarını dağıtan standart kiracı yapılandırmaları sağlar.
 
 Varsayılan temeli ve dağıtım adımlarını Lighthouse'un içinden görüntüleyebilirsiniz. Kiracıya taban çizgisi uygulamak için sol gezinti bölmesinde **Kiracılar'ı** seçin ve ardından bir kiracı seçin. Ardından dağıtıma başlamak için **Dağıtım planları** sekmesine gidin.
 
@@ -43,9 +43,10 @@ Lighthouse temel yapılandırmaları, tüm yönetilen kiracıların güvenli ve 
 | Yöneticiler için MFA gerektir | Tüm yöneticiler için çok faktörlü kimlik doğrulaması gerektiren bir Koşullu Erişim ilkesi. Tüm bulut uygulamaları için gereklidir. Bu temel hakkında daha fazla bilgi için bkz [. Koşullu Erişim: Tüm yöneticiler için MFA gerektirme](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa).|
 | Son kullanıcılar için MFA gerektir | Tüm kullanıcılar için çok faktörlü kimlik doğrulaması gerektiren bir Koşullu Erişim ilkesi.  Tüm bulut uygulamaları için gereklidir. Bu temel hakkında daha fazla bilgi için bkz [. Koşullu Erişim: Tüm kullanıcılar için MFA gerektirme](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). |
 | Eski kimlik doğrulamasını engelle | Eski istemci kimlik doğrulamasını engelleyen bir Koşullu Erişim ilkesi. Bu temel hakkında daha fazla bilgi için bkz[. Koşullu Erişim ile Azure AD için eski kimlik doğrulamasını engelleme](/azure/active-directory/conditional-access/block-legacy-authentication).|
-| Cihaz kaydını ayarlama | Kiracı cihazlarınızın Microsoft Endpoint Manager kaydolmasına izin vermek için cihaz kaydı. Bu, Azure Active Directory ve Microsoft Endpoint Manager arasında Otomatik Kayıt ayarlanarak yapılır. Bu temel hakkında daha fazla bilgi için bkz. [Windows cihazlar için kaydı ayarlama](/mem/intune/enrollment/windows-enroll). |
+| Cihaz kaydını ayarlama | Kiracı cihazlarınızın Microsoft Endpoint Manager'a kaydolmasına izin vermek için cihaz kaydı. Bu, Azure Active Directory ile Microsoft Endpoint Manager arasında Otomatik Kayıt ayarlanarak gerçekleştirilir. Bu temel hakkında daha fazla bilgi için bkz. [Windows cihazları için kaydı ayarlama](/mem/intune/enrollment/windows-enroll). |
+| İş için Microsoft Defender ayarlama | kiracıyı İş için Microsoft Defender için sağlar ve Microsoft Endpoint Manager'a kayıtlı cihazları İş için Microsoft Defender ekler. Daha fazla bilgi için bkz. [İş için Microsoft Defender nedir?](../security/defender-business/mdb-overview.md) |
 | Exchange Online Protection ve Office 365 için Microsoft Defender ayarlama | Önerilen istenmeyen posta önleme, kötü amaçlı yazılımdan koruma, kimlik avı önleme, güvenli bağlantılar ve güvenli ek ilkelerini kiracılarınıza Exchange Online posta kutularına uygulama ilkesi. |
-| Windows 10 ve üzeri için Microsoft Defender Virüsten Koruma yapılandırma | Önceden yapılandırılmış Microsoft Defender Virüsten Koruma ayarlarına sahip Windows cihazlar için bir cihaz yapılandırma profili. Bu temel hakkında daha fazla bilgi için bkz[. Intune'da Uç Nokta için Microsoft Defender yapılandırma](/mem/intune/protect/advanced-threat-protection-configure).|
+| microsoft defender virüsten korumayı Windows 10 ve üzeri için yapılandırma | Önceden yapılandırılmış Microsoft Defender Virüsten Koruma ayarlarına sahip Windows cihazları için bir cihaz yapılandırma profili. Bu temel hakkında daha fazla bilgi için bkz[. Intune'da Uç Nokta için Microsoft Defender yapılandırma](/mem/intune/protect/advanced-threat-protection-configure).|
 | Windows 10 ve üzeri için Microsoft Defender Güvenlik Duvarı yapılandırma | İstenmeyen ve yetkisiz ağ trafiğini engelleyerek cihazların güvenliğini sağlamaya yardımcı olan bir güvenlik duvarı ilkesi. Bu temel hakkında daha fazla bilgi için bkz. [Windows Defender Güvenlik Duvarı yapılandırmaya yönelik en iyi yöntemler](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
 | Windows 10 ve üzeri için cihaz uyumluluk ilkesi yapılandırma | Temel uyumluluk gereksinimlerini karşılamak için önceden yapılandırılmış ayarlara sahip bir Windows cihaz ilkesi. Bu temel hakkında daha fazla bilgi için bkz[. Koşullu Erişim: Uyumlu veya karma Azure AD birleştirilmiş cihaz gerektirme](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
 
@@ -69,7 +70,7 @@ Dağıtım Planı sekmesi aşağıdaki bilgileri içerir:
 
 Dağıtım Planı sekmesi aşağıdaki seçenekleri de içerir:
 
-- **Ihracat:** Dağıtım adımı verilerini virgülle ayrılmış Excel değerler (.csv) dosyasına aktarmak için seçin.
+- **Ihracat:** Dağıtım adımı verilerini Excel virgülle ayrılmış değerler (.csv) dosyasına aktarmak için seçin.
 - **Yenileme:** En güncel dağıtım adımı verilerini almak için öğesini seçin.
 - **Arama:** Listede belirli bir dağıtım adımını hızla bulmak için anahtar sözcükler girin.
 

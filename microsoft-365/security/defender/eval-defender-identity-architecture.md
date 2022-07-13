@@ -1,6 +1,6 @@
 ---
-title: Kimlik için Microsoft Defender'ın mimari gereksinimlerini ve teknik çerçeveyi gözden geçirme
-description: Microsoft 365 Defender'daki Identity için Microsoft Defender'a yönelik teknik diyagram, deneme laboratuvarınızı veya pilot ortamınızı oluşturmadan önce Microsoft 365'de kimliğinizi anlamanıza yardımcı olur.
+title: Kimlik için Microsoft Defender için mimari gereksinimlerini ve teknik çerçeveyi gözden geçirin
+description: Microsoft 365 Defender'daki Kimlik için Microsoft Defender için teknik diyagram, deneme laboratuvarınızı veya pilot ortamınızı oluşturmadan önce Microsoft 365'teki kimliği anlamanıza yardımcı olur.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,74 +19,75 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: de49205fe20cd5685279c0a5f9d138147f24bb8d
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: e92fa629b49664b6f87c8e72c23a2f9cae74afe6
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754162"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750242"
 ---
-# <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Kimlik için Microsoft Defender'da mimari gereksinimlerini ve temel kavramları gözden geçirin
+# <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Kimlik için Microsoft Defender için mimari gereksinimlerini ve temel kavramları gözden geçirin
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-Bu makale [, Kimlik için](eval-defender-identity-overview.md) Microsoft Defender değerlendirme ortamını ayarlama işleminin 1/ 3. adımıdır. Bu işlem hakkında daha fazla bilgi için genel bakış [makalesine bakın](eval-defender-identity-overview.md).
+Bu makale, Kimlik için Microsoft Defender için değerlendirme ortamını ayarlama sürecindeki [Adım 1/3'tür](eval-defender-identity-overview.md). Bu işlem hakkında daha fazla bilgi için [genel bakış makalesine](eval-defender-identity-overview.md) bakın.
 
-Kimlik için Microsoft Defender'ı etkinleştirmeden önce mimariyi anlıyoruz ve gereksinimleri karşılaya hazır olduğundan emin olun.
+Kimlik için Microsoft Defender etkinleştirmeden önce mimariyi anladığınızdan ve gereksinimleri karşılayabildiğinize emin olun.
 
-Identity için Microsoft Defender, bulut kimlikleriyle ilişkili kullanıcı oturum açma risklerini algılama ve önceden engellemenin yanı sıra şirket içi ağınız genelindeki saldırıları belirlemek için makine öğrenme ve davranış çözümlemelerini kullanır. Daha fazla bilgi için bkz [. Kimlik için Microsoft Defender nedir?](/defender-for-identity/what-is)
+Kimlik için Microsoft Defender, şirket içi ağınızdaki saldırıları belirlemek ve bulut kimlikleriyle ilişkili kullanıcı oturum açma risklerini algılamak ve proaktif olarak önlemek için makine öğrenmesi ve davranış analizi kullanır. Daha fazla bilgi için bkz. [Kimlik için Microsoft Defender nedir?](/defender-for-identity/what-is)
 
-Identity için Defender, şirket içi Active Directory kullanıcılarınızı ve/veya kullanıcılarınızı etki alanınıza (Azure AD) Azure Active Directory korur. Yalnızca Azure AD kullanıcılarının neden olduğu bir ortamı korumak için bkz. [Azure AD Kimlik Koruması](/azure/active-directory/identity-protection/overview-identity-protection).
+Kimlik için Defender, Şirket içi Active Directory kullanıcılarınızı ve/veya Azure Active Directory 'nizle eşitlenen kullanıcılarınızı (Azure AD) korur. Yalnızca Azure AD kullanıcılardan oluşan bir ortamı korumak için bkz. [kimlik koruması Azure AD](/azure/active-directory/identity-protection/overview-identity-protection).
 
 ## <a name="understand-the-architecture"></a>Mimariyi anlama
 
-Aşağıdaki diyagramda, Kimlik için Defender'ın temel mimarisini gösterir. 
+Aşağıdaki diyagramda Kimlik için Defender'ın temel mimarisi gösterilmektedir. 
 
-:::image type="content" source="../../media/defender/m365-defender-identity-architecture.png" alt-text="Identity için Microsoft Defender'ın kimlik mimarisi" lightbox="../../media/defender/m365-defender-identity-architecture.png":::
+:::image type="content" source="../../media/defender/m365-defender-identity-architecture.png" alt-text="Kimlik için Microsoft Defender için kimlik mimarisi" lightbox="../../media/defender/m365-defender-identity-architecture.png":::
 
-Bu şekilde:
+Bu çizimde:
 
-- AD etki alanı denetleyicilerinde yüklü algılayıcılar günlükleri ve ağ trafiğini ayrıştırarak analiz ve raporlama için Identity için Microsoft Defender'a gönderir.
--  Azure AD, federasyon kimlik doğrulaması kullanmak üzere yapılandırıldığında (çizimde noktalı çizgi) algılayıcılar da Active Directory Federasyon Hizmetleri'nin (AD FS) ayrıştırmasını sağlar. 
-- Kimlik için Microsoft Defender, genişletilmiş algılama ve Microsoft 365 Defender (XDR) için sinyaller gönderir.
+- AD etki alanı denetleyicilerine yüklenen algılayıcılar günlükleri ve ağ trafiğini ayrıştırarak analiz ve raporlama için Kimlik için Microsoft Defender gönderir.
+-  Algılayıcılar, Azure AD federasyon kimlik doğrulamasını kullanacak şekilde yapılandırıldığında da Active Directory Federasyon Hizmetleri (AD FS) (AD FS) ayrıştırabilir (çizimde noktalı çizgi). 
+- Kimlik için Microsoft Defender, genişletilmiş algılama ve yanıt (XDR) için sinyalleri Microsoft 365 Defender paylaşır.
 
-Identity algılayıcıları için Defender doğrudan aşağıdaki sunuculara yükleyebilir:
+Kimlik için Defender algılayıcıları doğrudan aşağıdaki sunuculara yüklenebilir:
 
-- Etki alanı denetleyicileri: Algılayıcı doğrudan etki alanı denetleyicisi trafiğini, özel bir sunucuya veya bağlantı noktası yansıtma yapılandırmasına gerek kalmadan izler.
-- AD FS: Algılayıcı doğrudan ağ trafiğini ve kimlik doğrulama olaylarını izler.
+- Etki alanı denetleyicileri: Algılayıcı, ayrılmış sunucuya veya bağlantı noktası yansıtma yapılandırmasına gerek kalmadan etki alanı denetleyicisi trafiğini doğrudan izler.
+- AD FS: Algılayıcı ağ trafiğini ve kimlik doğrulama olaylarını doğrudan izler.
 
-Bulut Uygulamaları için Defender ile tümleştirme de dahil olmak üzere Identity için Defender'ın mimarisine daha derinlemesine bakmak için bkz. Kimlik mimarisi için [Microsoft Defender](/defender-for-identity/architecture).
+Cloud Apps için Defender ile tümleştirme de dahil olmak üzere Kimlik için Defender mimarisine daha ayrıntılı bir bakış için bkz. [Kimlik için Microsoft Defender mimarisi](/defender-for-identity/architecture).
 
 
-## <a name="understand-key-concepts"></a>Önemli kavramları anlama
+## <a name="understand-key-concepts"></a>Temel kavramları anlama
 
-Aşağıdaki tabloda, Identity için Microsoft Defender'ı değerlendirirken, yapılandırarak ve dağıtırken anlamanın önemli olduğu önemli kavramlar tanımlandı.
+Aşağıdaki tabloda, Kimlik için Microsoft Defender değerlendirilirken, yapılandırılırken ve dağıtılırken anlaşılması gereken önemli kavramlar tanımlanmıştır.
 
 |Kavram  |Açıklama |Daha fazla bilgi  |
 |---------|---------|---------|
-| Izlenen etkinlikler | Kimlik için Defender, şüpheli veya kötü amaçlı etkinlikleri saptamak için kuruluş içinde oluşturulan sinyalleri izler ve her olası tehdidin geçerliliğini belirlemenize yardımcı olarak, etkili bir belirleme belirleme ve yanıt vermenizi sağlar.  |  [Kimlik tarafından izlenen etkinlikler için Microsoft Defender](/defender-for-identity/monitored-activities)       |
-| Güvenlik uyarıları    | Kimlik güvenlik uyarıları için Defender, ağınızdaki algılayıcılar tarafından algılanan şüpheli etkinliklerin yanı sıra her tehditte yer alan istemci ve bilgisayarlara da açıklama sağlar.   | [Kimlik Güvenliği Uyarıları için Microsoft Defender](/defender-for-identity/suspicious-activity-guide?tabs=external)    |
-| Varlık profilleri    | Varlık profilleri, erişim geçmişiyle birlikte kullanıcılar, bilgisayarlar, cihazlar ve kaynaklar hakkında kapsamlı bir inceleme sağlar.   | [Varlık profillerini anlama](/defender-for-identity/entity-profiles)  |
-| Lateral movement paths    | MDI güvenlik içgörülerinin önemli bir bileşeni, bir saldırganın ağ genelinde hassas hesaplara veya makinelere erişmek için hassas olmayan hesapları kullandığı ikigen hareket yollarını belirlemektir.  | [Kimlik  Önemli Hareket Yolları (LMP) için Microsoft Defender](/defender-for-identity/use-case-lateral-movement-path)  |
-| Ağ Adı Çözümlemesi    |  Ağ Adı Çözümlemesi (NNR), MDI işlevselliğinin ağ trafiği, Windows etkinlikleri, ETW vb. temel alınan etkinliklerini yakalayan ve bu ham verileri her etkinlikte yer alan ilgili bilgisayarlarla ilişkili olarak bir bütün olarak ifade eden bir bileşenidir.       | [Ağ Adı Çözümlemesi nedir?](/defender-for-identity/nnr-policy)      |
-| Raporlar    | Kimlik raporları için Defender, sistem ve varlık durumu bilgilerini sağlayan raporları zamanlamanız veya hemen indirmeniz için olanak sağlar.  Ortamınıza algılanan sistem durumu, güvenlik uyarıları ve olası lateral movement paths hakkında raporlar oluşturabilirsiniz.   | [Kimlik Raporları için Microsoft Defender ](/defender-for-identity/reports)       |
-| Rol grupları    | Kimlik için Defender, yöneticiler, Kullanıcılar ve Görüntüleyiciler'i de içeren, kuruluşa özgü güvenlik ve uyumluluk ihtiyaçlarına göre verileri korumak için rol tabanlı gruplar ve temsilci erişimi sağlar.        |  [Kimlik rol grupları için Microsoft Defender](/defender-for-identity/role-groups)       |
-| Yönetim portalı    |  Şüpheli etkinlikleri izlemek Microsoft 365 Defender bu portala ek olarak Kimlik için Defender portalı da kullanılabilir.      | [Kimlik için Microsoft Defender portalıyla çalışma](/defender-for-identity/workspace-portal)        |
-| Bulut Uygulamaları tümleştirmesi için Microsoft Defender   | Bulut Uygulamaları için Microsoft Defender, kullanıcı varlık davranış analizini (UEBA) karma bir ortamda (hem bulut uygulaması hem de şirket içi) sağlamak için Identity için Microsoft Defender ile tümleştirilmiştir   | Identity tümleştirmesi için Microsoft Defender  |
+| İzlenen etkinlikler | Kimlik için Defender, şüpheli veya kötü amaçlı etkinlikleri algılamak için kuruluşunuzun içinden oluşturulan sinyalleri izler ve etkili bir şekilde önceliklendirmek ve yanıt vermek için her olası tehdidin geçerliliğini belirlemenize yardımcı olur.  |  [İzlenen etkinlikleri Kimlik için Microsoft Defender](/defender-for-identity/monitored-activities)       |
+| Güvenlik uyarıları    | Kimlik için Defender güvenlik uyarıları, ağınızdaki algılayıcılar tarafından algılanan şüpheli etkinlikleri ve her tehditte yer alan aktörleri ve bilgisayarları açıklar.   | [güvenlik uyarılarını Kimlik için Microsoft Defender](/defender-for-identity/suspicious-activity-guide?tabs=external)    |
+| Varlık profilleri    | Varlık profilleri kullanıcıların, bilgisayarların, cihazların ve kaynakların yanı sıra erişim geçmişine yönelik kapsamlı bir ayrıntılı araştırma sağlar.   | [Varlık profillerini anlama](/defender-for-identity/entity-profiles)  |
+| Yanal hareket yolları    | MDI güvenlik içgörülerinin önemli bir bileşeni, bir saldırganın ağınızdaki hassas hesaplara veya makinelere erişim kazanmak için hassas olmayan hesapları kullandığı yanal hareket yollarını belirlemektir.  | [Kimlik için Microsoft Defender YanAl Hareket Yolları (LMP' ler)](/defender-for-identity/use-case-lateral-movement-path)  |
+| Ağ Adı Çözümlemesi    |  Ağ Adı Çözümlemesi (NNR), ağ trafiğine, Windows olaylarına, ETW'ye vb. dayalı etkinlikleri yakalayan ve bu ham verileri her etkinlikte yer alan ilgili bilgisayarlarla ilişkilendiren MDI işlevselliğinin bir bileşenidir.       | [Ağ Adı Çözümleme nedir?](/defender-for-identity/nnr-policy)      |
+| Raporlar    | Kimlik için Defender raporları, sistem ve varlık durumu bilgilerini sağlayan raporları zamanlamanıza veya hemen oluşturmanıza ve indirmenize olanak sağlar.  Ortamınızda algılanan sistem durumu, güvenlik uyarıları ve olası yanal hareket yolları hakkında raporlar oluşturabilirsiniz.   | [raporları Kimlik için Microsoft Defender](/defender-for-identity/reports)       |
+| Rol grupları    | Kimlik için Defender, kuruluşunuzun Yöneticiler, Kullanıcılar ve Görüntüleyiciler dahil olmak üzere özel güvenlik ve uyumluluk gereksinimlerine göre verileri korumak için rol tabanlı gruplar ve temsilci erişimi sunar.        |  [rol gruplarını Kimlik için Microsoft Defender](/defender-for-identity/role-groups)       |
+| Yönetim portalı    |  Microsoft 365 Defender portalına ek olarak, Kimlik için Defender portalı şüpheli etkinlikleri izlemek ve yanıtlamak için kullanılabilir.      | [Kimlik için Microsoft Defender portalıyla çalışma](/defender-for-identity/workspace-portal)        |
+| Microsoft Defender for Cloud Apps tümleştirmesi   | Microsoft Defender for Cloud Apps, karma bir ortamda kullanıcı varlığı davranış analizi (UEBA) sağlamak için hem bulut uygulaması hem de şirket içi Kimlik için Microsoft Defender tümleştirir   | Kimlik için Microsoft Defender tümleştirmesi  |
 
 ## <a name="review-prerequisites"></a>Önkoşulları gözden geçirme
 
-Şirket içi kimlik ve ağ bileşenlerinizin en düşük gereksinimleri karşılaması için Kimlik için Defender'ın bazı önkoşullar çalışması gerekir. Ortamının hazır olduğundan emin olmak için denetim listesi olarak bu makaleyi kullanın: [Kimlik için Microsoft Defender önkoşulları](/defender-for-identity/prerequisites).
+Kimlik için Defender, şirket içi kimlik ve ağ bileşenlerinizin en düşük gereksinimleri karşıladığından emin olmak için bazı önkoşul çalışmalarını gerektirir. Ortamınızın hazır olduğundan emin olmak için bu makaleyi denetim listesi olarak kullanın: [önkoşulları Kimlik için Microsoft Defender](/defender-for-identity/prerequisites).
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Adım 2 / 3: [Kimlik için değerlendirme ortamı Defender'ı etkinleştirme](eval-defender-identity-enable-eval.md)
+Adım 2 / 3: [Kimlik için Defender değerlendirme ortamını etkinleştirme](eval-defender-identity-enable-eval.md)
 
-Kimlik için [Microsoft Defender'ı Değerlendirme'ye genel bakış](eval-defender-identity-overview.md)
+[Değerlendirme Kimlik için Microsoft Defender](eval-defender-identity-overview.md) için genel bakışa dönün
 
-Değerlendirme ve pilot uygulama için [genel bakış Microsoft 365 Defender](eval-overview.md) 
+[Değerlendirme ve pilot Microsoft 365 Defender](eval-overview.md) genel bakışa dönün 

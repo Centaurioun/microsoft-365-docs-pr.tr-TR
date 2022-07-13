@@ -1,5 +1,5 @@
 ---
-title: Kimlik ve cihaz erişim ilkelerini uygulamak için önkoşul çalışması - kurumsal | için Microsoft 365 Microsoft Docs
+title: Kimlik ve cihaz erişim ilkelerini uygulamak için önkoşul çalışması - Kurumsal | için Microsoft 365 Microsoft Docs
 description: Bu makalede, Sıfır Güven kimlik ve cihaz erişim ilkelerini ve yapılandırmalarını kullanmak için karşılamanız gereken önkoşullar açıklanmaktadır.
 ms.author: dansimp
 author: dansimp
@@ -18,13 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
+- zerotrust-solution
 ms.technology: mdo
-ms.openlocfilehash: 2c2902e7e61428d9c60423f83ed637d6d22a0570
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 6883782a942b7fda8e2dedc721756b59a3e7ede6
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131250"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750000"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Sıfır Güven kimlik ve cihaz erişim ilkelerini uygulamak için önkoşul çalışması
 
@@ -46,10 +47,10 @@ Aşağıdaki tabloda, belirtilen durumlar dışında tüm kimlik modelleri için
 |[PHS'yi yapılandırın](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Bu, sızdırılan kimlik bilgilerini algılamak ve risk tabanlı Koşullu Erişim için bunlar üzerinde işlem yapmak için etkinleştirilmelidir. **Not:** Kuruluşunuzun federasyon kimlik doğrulaması kullanıp kullanmadığına bakılmaksızın bu gereklidir.|Yalnızca bulut|Microsoft 365 E3 veya E5|
 |Kullanıcıların kuruluş ağınıza bağlı kuruluş cihazlarındayken otomatik olarak oturum açması için [sorunsuz çoklu oturum açmayı etkinleştirin](/azure/active-directory/connect/active-directory-aadconnect-sso).|Yalnızca bulutta ve federasyonda|Microsoft 365 E3 veya E5|
 |[Adlandırılmış konumları yapılandırın](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations). Azure AD Kimlik Koruması, bir risk puanı oluşturmak için tüm kullanılabilir oturum verilerini toplar ve analiz eder. Kuruluşunuzun ağınız için genel IP aralıklarını Azure AD adlandırılmış konumlar yapılandırmasında belirtmenizi öneririz. Bu aralıklardan gelen trafiğe düşük risk puanı, kuruluş ortamı dışından gelen trafiğe ise daha yüksek bir risk puanı verilir.||Microsoft 365 E3 veya E5|
-|[Tüm kullanıcıları self servis parola sıfırlama (SSPR) ve çok faktörlü kimlik doğrulaması (MFA) için kaydedin](/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Kullanıcıları önceden Azure AD Çok Faktörlü Kimlik Doğrulamasına kaydetmenizi öneririz. Azure AD Kimlik Koruması, ek güvenlik doğrulaması gerçekleştirmek için Azure AD Çok Faktörlü Kimlik Doğrulamasını kullanır. Ayrıca, en iyi oturum açma deneyimi için kullanıcıların [cihazlarına Microsoft Authenticator uygulamasını](/azure/active-directory/user-help/microsoft-authenticator-app-how-to) ve Microsoft Şirket Portalı uygulamasını yüklemelerini öneririz. Bunlar her platform için uygulama mağazasından yüklenebilir.||Microsoft 365 E3 veya E5|
-|[Etki alanına katılmış Windows bilgisayarların otomatik cihaz kaydını etkinleştirin](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup). Koşullu Erişim, uygulamalara bağlanan cihazların etki alanına katılmış veya uyumlu olduğundan emin olur. Bunu Windows bilgisayarlarda desteklemek için cihazın Azure AD'a kayıtlı olması gerekir.  Bu makalede otomatik cihaz kaydının nasıl yapılandırılacağı açıklanır.|Yalnızca bulut|Microsoft 365 E3 veya E5|
+|[Tüm kullanıcıları self servis parola sıfırlama (SSPR) ve çok faktörlü kimlik doğrulaması (MFA) için kaydedin](/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Kullanıcıları önceden Azure AD Çok Faktörlü Kimlik Doğrulamasına kaydetmenizi öneririz. Azure AD Kimlik Koruması, ek güvenlik doğrulaması gerçekleştirmek için Azure AD Çok Faktörlü Kimlik Doğrulamasını kullanır. Ayrıca, en iyi oturum açma deneyimi için kullanıcıların cihazlarına [Microsoft Authenticator uygulamasını](/azure/active-directory/user-help/microsoft-authenticator-app-how-to) ve Microsoft Şirket Portalı uygulamasını yüklemelerini öneririz. Bunlar her platform için uygulama mağazasından yüklenebilir.||Microsoft 365 E3 veya E5|
+|[Etki alanına katılmış Windows bilgisayarlarının otomatik cihaz kaydını etkinleştirin](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup). Koşullu Erişim, uygulamalara bağlanan cihazların etki alanına katılmış veya uyumlu olduğundan emin olur. Windows bilgisayarlarda bunu desteklemek için cihazın Azure AD kaydedilmesi gerekir.  Bu makalede otomatik cihaz kaydının nasıl yapılandırılacağı açıklanır.|Yalnızca bulut|Microsoft 365 E3 veya E5|
 |**Destek ekibinizi hazırlayın**. MFA'yı tamamlayamayan kullanıcılar için bir planınız var. Bu, bunları bir ilke dışlama grubuna eklemek veya bunlar için yeni MFA bilgileri kaydetmek olabilir. Bu güvenlik açısından hassas değişikliklerden birini yapmadan önce, isteği gerçek kullanıcının gerçekleştirdiğinden emin olmanız gerekir. Kullanıcıların yöneticilerinin onay konusunda yardımcı olmasını gerektirmek etkili bir adımdır.||Microsoft 365 E3 veya E5|
-|[Şirket içi AD'ye parola geri yazmayı yapılandırın](/azure/active-directory/active-directory-passwords-getting-started). Parola geri yazma, Azure AD yüksek riskli hesap güvenliği ihlalleri algılandığında kullanıcıların şirket içi parolalarını değiştirmelerini gerektirmesini sağlar. Azure AD Bağlan kullanarak bu özelliği iki yoldan biriyle etkinleştirebilirsiniz: Azure AD Bağlan kurulumun isteğe bağlı özellikler ekranında **Parola Geri Yazma'yı** etkinleştirin veya Windows PowerShell aracılığıyla etkinleştirin.|Yalnızca bulut|Microsoft 365 E3 veya E5|
+|[Şirket içi AD'ye parola geri yazmayı yapılandırın](/azure/active-directory/active-directory-passwords-getting-started). Parola geri yazma, Azure AD yüksek riskli hesap güvenliği ihlalleri algılandığında kullanıcıların şirket içi parolalarını değiştirmelerini gerektirmesini sağlar. Bu özelliği Azure AD Connect kullanarak iki yoldan birini kullanarak etkinleştirebilirsiniz: Azure AD Connect kurulumunun isteğe bağlı özellikler ekranında **Parola Geri Yazma'yı** etkinleştirin veya Windows PowerShell aracılığıyla etkinleştirin.|Yalnızca bulut|Microsoft 365 E3 veya E5|
 |[Azure AD parola korumasını yapılandırın](/azure/active-directory/authentication/concept-password-ban-bad). Azure AD Parola Koruması bilinen zayıf parolaları ve bunların çeşitlemelerini algılar ve engeller ve ayrıca kuruluşunuza özgü ek zayıf terimleri engelleyebilir. Varsayılan genel yasaklanmış parola listeleri, Azure AD kiracıdaki tüm kullanıcılara otomatik olarak uygulanır. Özel yasaklanmış parola listesinde ek girdiler tanımlayabilirsiniz. Kullanıcılar parolalarını değiştirdiğinde veya sıfırladığında, bu yasaklanmış parola listeleri güçlü parolaların kullanımını zorunlu kılmak için denetlenir.||Microsoft 365 E3 veya E5|
 |[Azure Active Directory Kimlik Koruması'nı etkinleştirin](/azure/active-directory/identity-protection/overview-identity-protection). Azure AD Kimlik Koruması, kuruluşunuzun kimliklerini etkileyen olası güvenlik açıklarını algılamanıza ve otomatik düzeltme ilkesini düşük, orta ve yüksek oturum açma riski ile kullanıcı riskine yapılandırmanıza olanak tanır.||E5 Güvenliği eklentisiyle Microsoft 365 E5 veya Microsoft 365 E3|
 |[Exchange Online ve Skype Kurumsal](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) [Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) için **modern kimlik doğrulamasını etkinleştirin**. Modern kimlik doğrulaması, MFA'nın kullanılması için bir önkoşuldur. Modern kimlik doğrulaması Office 2016 ve 2019 istemcileri, SharePoint ve OneDrive İş için varsayılan olarak etkindir.||Microsoft 365 E3 veya E5|
@@ -59,15 +60,15 @@ Aşağıdaki tabloda, belirtilen durumlar dışında tüm kimlik modelleri için
 
 Bu bölümde, kullanıcılarınıza en iyi SSO deneyimini ve Koşullu Erişim için teknik önkoşulları sağlamanızı önerdiğimiz varsayılan platform istemci yapılandırmaları açıklanmaktadır.
 
-### <a name="windows-devices"></a>cihazları Windows
+### <a name="windows-devices"></a>Windows cihazları
 
 Azure hem şirket içi hem de Azure AD için mümkün olan en sorunsuz SSO deneyimini sağlamak üzere tasarlandığından Windows 11 veya Windows 10 (sürüm 2004 veya üzeri) öneririz. İş veya okul tarafından verilen cihazlar Azure AD doğrudan katılmak üzere yapılandırılmalıdır veya kuruluş şirket içi AD etki alanına katılmayı kullanıyorsa, bu cihazlar [Azure AD otomatik ve sessiz bir şekilde kaydedilecek şekilde yapılandırılmalıdır](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup).
 
-KCG Windows cihazlarda kullanıcılar **İş veya okul hesabı ekle'yi** kullanabilir. Windows 11 veya Windows 10 cihazlarda Google Chrome tarayıcısı kullanıcılarının, Microsoft Edge kullanıcılarla aynı sorunsuz oturum açma deneyimini elde etmek için [bir uzantı yüklemeleri](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) gerektiğini unutmayın. Ayrıca, kuruluşunuzun etki alanına katılmış Windows 8 veya 8.1 cihazları varsa, Windows 10 olmayan bilgisayarlar için Microsoft Workplace Join'i yükleyebilirsiniz. Cihazları Azure AD [kaydetmek için paketi indirin](https://www.microsoft.com/download/details.aspx?id=53554).
+KCG Windows cihazları için kullanıcılar **İş veya okul hesabı ekle'yi** kullanabilir. Windows 11 veya Windows 10 cihazlarda Google Chrome tarayıcısı kullanıcılarının, Microsoft Edge kullanıcıları ile aynı sorunsuz oturum açma deneyimini elde etmek için [bir uzantı yüklemeleri](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) gerektiğini unutmayın. Ayrıca, kuruluşunuzun etki alanına katılmış Windows 8 veya 8.1 cihazları varsa, Windows 10 olmayan bilgisayarlar için Microsoft Workplace Join'i yükleyebilirsiniz. Cihazları Azure AD [kaydetmek için paketi indirin](https://www.microsoft.com/download/details.aspx?id=53554).
 
 ### <a name="ios-devices"></a>iOS cihazları
 
-Koşullu Erişim veya MFA ilkelerini dağıtmadan önce [Microsoft Authenticator uygulamasını](/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) kullanıcı cihazlarına yüklemenizi öneririz. Kullanıcılardan iş veya okul hesabı ekleyerek cihazlarını Azure AD kaydetmeleri istendiğinde veya cihazlarını yönetime kaydetmek için Intune şirket portalı uygulamasını yüklediklerinde uygulama en azından yüklenmelidir. Bu, yapılandırılmış Koşullu Erişim ilkesine bağlıdır.
+Koşullu Erişim veya MFA ilkelerini dağıtmadan önce kullanıcı cihazlarına [Microsoft Authenticator uygulamasını](/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) yüklemenizi öneririz. Kullanıcılardan iş veya okul hesabı ekleyerek cihazlarını Azure AD kaydetmeleri istendiğinde veya cihazlarını yönetime kaydetmek için Intune şirket portalı uygulamasını yüklediklerinde uygulama en azından yüklenmelidir. Bu, yapılandırılmış Koşullu Erişim ilkesine bağlıdır.
 
 ### <a name="android-devices"></a>Android cihazlar
 
@@ -100,9 +101,9 @@ Güvenli belge ilkesi uygulandığında aşağıdaki istemciler önerilir.
 |macOS|Destekleniyor|Destekleniyor|Yok|Yok|Desteklenmiyor|
 |Linux|Desteklenmiyor|Desteklenmiyor|Desteklenmiyor|Desteklenmiyor|Desteklenmiyor|
 
-### <a name="microsoft-365-client-support"></a>İstemci desteğini Microsoft 365
+### <a name="microsoft-365-client-support"></a>Microsoft 365 istemci desteği
 
-Microsoft 365'da istemci desteği hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
+Microsoft 365'teki istemci desteği hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
 - [Microsoft 365 İstemci Uygulaması Desteği - Koşullu Erişim](../../enterprise/microsoft-365-client-support-conditional-access.md)
 - [Microsoft 365 İstemci Uygulaması Desteği - Çok faktörlü kimlik doğrulaması](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
@@ -117,7 +118,7 @@ Bazı ek öneriler şunlardır:
 
 - Kalıcı yönetim hesaplarının sayısını azaltmak için [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-getting-started) kullanın.
 - Kuruluşunuzu hassas verilere veya kritik yapılandırma ayarlarına erişimi olan mevcut ayrıcalıklı yönetici hesaplarını kullanabilecek ihlallere karşı korumak için [ayrıcalıklı erişim yönetimini kullanın](../../compliance/privileged-access-management-overview.md).
-- *Yalnızca yönetim için* [yönetici rolleri Microsoft 365](../../admin/add-users/about-admin-roles.md) atanan ayrı hesaplar oluşturun ve kullanın. Yöneticilerin düzenli yönetim dışı kullanım için kendi kullanıcı hesapları olmalıdır ve yalnızca rol veya iş işleviyle ilişkili bir görevi tamamlamak için gerektiğinde bir yönetim hesabı kullanmalıdır.
+- *Yalnızca yönetim için* [Microsoft 365 yönetici rollerine](../../admin/add-users/about-admin-roles.md) atanmış ayrı hesaplar oluşturun ve kullanın. Yöneticilerin düzenli yönetim dışı kullanım için kendi kullanıcı hesapları olmalıdır ve yalnızca rol veya iş işleviyle ilişkili bir görevi tamamlamak için gerektiğinde bir yönetim hesabı kullanmalıdır.
 - Azure AD'da ayrıcalıklı hesapların güvenliğini sağlamak için [en iyi yöntemleri](/azure/active-directory/admin-roles-best-practices) izleyin.
 
 ## <a name="next-step"></a>Sonraki adım

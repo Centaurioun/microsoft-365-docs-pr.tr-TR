@@ -1,5 +1,5 @@
 ---
-title: veri gizliliği risklerini değerlendirme ve Microsoft 365 ile hassas öğeleri tanımlama
+title: Microsoft 365 ile veri gizliliği risklerini değerlendirme ve hassas öğeleri belirleme
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -15,16 +15,17 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 description: Veri gizliliği düzenlemelerini, ilgili senaryoları, hazır olma durumunuzu ve Microsoft 365 ortamınızdaki hassas bilgi türlerini belirleyin.
-ms.openlocfilehash: a09e447733baa352a5302490b88e95a08a2775a4
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: e881ff4eb9561525fed42775d8f56b6842dc1719
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66129063"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748318"
 ---
-# <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>veri gizliliği risklerini değerlendirme ve Microsoft 365 ile hassas öğeleri tanımlama
+# <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Microsoft 365 ile veri gizliliği risklerini değerlendirme ve hassas öğeleri belirleme
 
 Kuruluşunuzun tabi olduğu veri gizliliği düzenlemelerini ve risklerini değerlendirmek, Microsoft 365 özellikleri ve hizmetleriyle ulaşılabilir eylemler de dahil olmak üzere ilgili iyileştirme eylemlerini uygulamadan önce ilk adımdır.
 
@@ -118,9 +119,9 @@ Burada, bir kuruluşun tipik bölümleri için farklı veri türlerinin bir örn
 
 ![Kişisel veri türleri.](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
-Veri gizliliği düzenlemesine tabi olan kişisel verilerin çoğu genellikle Microsoft 365 dışında toplanır ve depolanır. Tüketiciye yönelik web veya mobil uygulamalardan gelen tüm kişisel verilerin Microsoft 365 içinde veri gizliliği incelemesine tabi olması için bu tür uygulamalardan Microsoft 365'a aktarılmış olması gerekir.
+Veri gizliliği düzenlemesine tabi olan kişisel verilerin çoğu genellikle Microsoft 365 dışında toplanır ve depolanır. Tüketiciye yönelik web veya mobil uygulamalardan gelen tüm kişisel verilerin Microsoft 365'te veri gizliliği incelemesine tabi olması için bu tür uygulamalardan Microsoft 365'e aktarılmış olması gerekir.
 
-Microsoft 365'de verilerinizin gizliliğine maruz kalmanız web uygulamalarınıza ve CRM sistemlerinize göre daha sınırlı olabilir ve bu çözüm bu çözümle ilgili değildir.
+Microsoft 365'te verilerinizin gizliliğine maruz kalmanız, web uygulamalarınıza ve CRM sistemlerinize göre daha sınırlı olabilir ve bu çözüm bu çözümle ilgili değildir.
 
 Risk profilinizi değerlendirirken aşağıdaki yaygın veri gizliliği uyumluluk güçlükleri hakkında düşünmek de önemlidir:
 
@@ -141,7 +142,7 @@ Bir kişi şirketten ayrılırsa kuruluşların genellikle kullanıcı hesaplar�
 Kuruluşların bu tür ihtiyaçları karşılamak için, bu tür istekleri kolaylaştırmaya yönelik önleyici, dedektif ve düzeltici ihtiyaçları ele alan süreçler ve yordamlar olması gerekir ve bir çalışan hakkındaki bazı bilgilerin iş sürekliliği açısından makul bir şekilde önemli olarak değerlendirilebileceğini unutmayın. Örneğin, bir kişinin bir dosya yazdığını veya bir işlev gerçekleştirdiğini gösteren bilgiler.
 
 > [!NOTE]
-> Microsoft 365'daki kişisel verilere yönelik araştırma ve düzeltme teknikleri için [izleme ve yanıtlama makalesine](information-protection-deploy-monitor-respond.md) bakın. Ayrıca, kişisel verilerin kuruluş içindeyken denetlendiğinden emin olmak ve kötü amaçlı aktör durumlarında kuruluştan ayrılmasını önlemek için otomatik sınıflandırma ve koruma şemaları kullanmak isteyebilirsiniz. Daha fazla [bilgi için bilgileri koruma makalesine](information-protection-deploy-protect-information.md) bakın.
+> Microsoft 365'teki kişisel verilere yönelik araştırma ve düzeltme teknikleri için [izleme ve yanıtlama makalesine bakın](information-protection-deploy-monitor-respond.md). Ayrıca, kişisel verilerin kuruluş içindeyken denetlendiğinden emin olmak ve kötü amaçlı aktör durumlarında kuruluştan ayrılmasını önlemek için otomatik sınıflandırma ve koruma şemaları kullanmak isteyebilirsiniz. Daha fazla [bilgi için bilgileri koruma makalesine](information-protection-deploy-protect-information.md) bakın.
 
 ### <a name="data-the-organization-has-about-its-business-customers-in-the-b2b-scenario"></a>B2B senaryosunda kuruluşun işletme müşterileri hakkında sahip olduğu veriler
 
@@ -164,9 +165,9 @@ Kuruluşunuz çok fazla doğrudan tüketiciden veri toplama işlemi gerçekleşt
 
 Risk ve veri gizliliği düzenlemelerine maruz kalma durumunuzu anlamak, kuruluşunuzun kişisel veri senaryolarını temel alan önemli bir ilk adımdır.
 
-Microsoft 365 ortamınızda tüketicilerden gelen kişisel verileriniz yoksa veya ortamın belirli bölümleriyle sınırlıysa ve teknik denetim gereksinimi, tüketici türündeki verilerin açığa çıkarıldığına göre önceden belirtiliyorsa, bu teknik denetimin her yerde değil, yalnızca ortamın yüksek riskli bölümlerinde çalıştırılması gerekebilir.
+Microsoft 365 ortamınızda tüketicilerden gelen kişisel verileriniz yoksa veya ortamın belirli bölümleriyle sınırlıysa ve teknik denetim gereksinimi tüketici türündeki verilerin açığa çıkarıldığına bağlıysa, bu teknik denetimin her yerde değil yalnızca ortamın yüksek riskli bölümlerinde çalıştırılması gerekebilir.
 
-Microsoft 365'daki Uyumluluk Yöneticisi gibi bir dış kuruluş veya standart denetim kümesi önerisi denetim stratejinizi bilgilendirmeye yardımcı olabilir ancak gerçek risk kapsamınızı belirlemek için uygulama seçiminiz veri envanteri farkındalığı tarafından yönlendirilmelidir.
+Microsoft 365'teki Uyumluluk Yöneticisi gibi bir dış kuruluş veya standart denetim kümesi önerisi denetim stratejinizi bilgilendirmeye yardımcı olabilir ancak gerçek risk kapsamınızı belirlemek için uygulama seçiminiz veri envanteri farkındalığı tarafından yönlendirilmelidir.
 
 Çoğu kuruluş, yukarıdaki senaryolardan birine maruz kalacaktır. Değerlendirmeye bütüncül bir yaklaşım benimsemek önemlidir.
 
@@ -186,11 +187,11 @@ GDPR değerlendirmesi şu bölümlerden oluşur:
 |İlke yönetimi|<ol><li>Bağlama Şirket Kurallarınızı (BCR) nasıl yönetirsiniz? </li><li>Veriler için onayı izliyor musunuz? </li><li> Tamamen kapsanan 1 ile 5 arasında bir ölçekte sözleşmeleriniz veri sınıflandırmalarını ve işleme gereksinimlerini kapsıyor mu? </li><li>Bir olay yanıt planınız var mı ve düzenli olarak test mi edindiniz? </li><li>Erişimi yönetmek için hangi ilkeyi kullanırsınız? </li></ol>|
 |||
 
-## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>3. Adım: Microsoft 365 ortamınızda gerçekleşen hassas bilgi türlerini belirleme
+## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>3. Adım: Microsoft 365 ortamınızda gerçekleşen hassas bilgi türlerini tanımlama
 
-Bu adım, belirli yasal denetimlere tabi olan belirli hassas bilgi türlerinin tanımlanmasını ve bunların Microsoft 365 ortamınızda oluşumunu içerir.
+Bu adım, belirli yasal denetimlere tabi olan belirli hassas bilgi türlerinin belirlenmesini ve bunların Microsoft 365 ortamınızda ortaya çıkmasını içerir.
 
-Ortamınızda kişisel içerik içeren içerik bulmak, daha önce Uyumluluk Arama, eBulma, eBulma (Premium), DLP ve denetim kullanmanın bir birleşimini içeren önemli bir görev olabilir.
+Ortamınızda kişisel içerik içeren içerik bulmak, daha önce Uyumluluk Arama, eBulma, eBulma (Premium), DLP ve denetim kullanmanın bir bileşimini içeren önemli bir görev olabilir.
 
 Microsoft Purview uyumluluk portalı yeni **Veri Sınıflandırma** çözümüyle bu, kişisel verilerle ilgili olanlar da dahil olmak üzere yerleşik veya özel hassas bilgi türleriyle çalışan [İçerik Gezgini](../compliance/data-classification-content-explorer.md) özelliğiyle çok daha kolay hale gelmiştir.
 
@@ -216,7 +217,7 @@ Daha fazla bilgi için şu makalelere bakın:
 
 ### <a name="content-explorer"></a>İçerik Gezgini
 
-Ortamınızda hassas öğelerin oluşumunu belirlemek için Microsoft Purview yönetim merkezindeki yeni [İçerik Gezgini'nin](../compliance/data-classification-content-explorer.md) önemli bir aracıdır. Hassas bilgi türlerinin ortaya çıkması ve sonuçların görüntülenmesi için Microsoft 365 aboneliğinizin tamamının ilk ve devam eden taraması için otomatikleştirilmiş bir araçtır.
+Ortamınızda hassas öğelerin oluşumunu belirlemek için microsoft Purview yönetim merkezindeki yeni [İçerik Gezgini'nin](../compliance/data-classification-content-explorer.md) önemli bir aracıdır. Hassas bilgi türlerinin ortaya çıkması ve sonuçların görüntülenmesi için Microsoft 365 aboneliğinizin tamamının ilk ve devam eden taraması için otomatikleştirilmiş bir araçtır.
 
 Yeni İçerik Gezgini aracı, yerleşik hassas bilgi türlerini veya özel bilgileri kullanarak ortamınızdaki hassas öğelerin konumlarını hızla tanımlamanızı sağlar. Bu, hassas öğelerin varlığını ve konumunu düzenli olarak araştırmak için bir süreç oluşturmayı ve sorumluluk atamayı içerebilir.
 
@@ -228,7 +229,7 @@ kuruluşlar İçerik Gezgini'ne ek olarak, ortamlarında gelişmiş arama ölç�
 
 Bu [makalede](/compliance/regulatory/gdpr) kişisel verileri bulmak için İçerik Arama'nın kullanımıyla ilgili ayrıntılı yönergeler sağlanmıştır. İçerik Arama ve diğer bulma teknikleri de [GDPR ve CCPA için DSR'lerde](/compliance/regulatory/gdpr-dsr-Office365#introduction-to-dsrs) incelenir.
 
-Microsoft 365'daki kişisel veriler için araştırma ve düzeltme teknikleri hakkında ek içgörüler [izleyici ve yanıt makalesinde](information-protection-deploy-monitor-respond.md) sağlanır.
+Microsoft 365'teki kişisel veriler için araştırma ve düzeltme teknikleri hakkında ek içgörüler [, izleme ve yanıt makalesinde](information-protection-deploy-monitor-respond.md) sağlanır.
 
 > [!NOTE]
 > Şirket içinde depolanan dosyalarda hangi hassas bilgilere sahip olduğunuzu bulmak için bkz. [Azure Information Protection](/azure/information-protection/quickstart-findsensitiveinfo).

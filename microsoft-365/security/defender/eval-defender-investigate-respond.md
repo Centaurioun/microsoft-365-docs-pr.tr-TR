@@ -1,6 +1,6 @@
 ---
-title: Pilot ortamdaki bir Microsoft 365 Defender kullanarak inceleme ve yanıtlama
-description: Kullanıcılara cihazları, kimlik Microsoft 365 Defender leri, verileri ve uygulamaları korumayı öğretecek şekilde tasarlanmış güvenlik çözümünü denemek için deneme laboratuvarında veya pilot ortamında saldırı benzetimleri ayarlayın.
+title: Pilot ortamda Microsoft 365 Defender kullanarak araştırma ve yanıtlama
+description: Kullanıcılara cihazları, kimlikleri, verileri ve uygulamaları korumayı öğretmek için tasarlanmış güvenlik çözümünü denemek için Microsoft 365 Defender deneme laboratuvarında veya pilot ortamda saldırı simülasyonları ayarlayın.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,34 +19,35 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b382b1cd096f57f5667db7661b1ef4b69acc1451
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 71ba536b3d93a4bff003e9094a1e6fab83660253
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499913"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748021"
 ---
-# <a name="step-6-investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>6. Adım. Pilot ortamdaki bir Microsoft 365 Defender kullanarak inceleme ve yanıtlama
+# <a name="step-6-investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>6. Adım. Pilot ortamda Microsoft 365 Defender kullanarak araştırma ve yanıtlama
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-Bu makalede saldırı benzetimleri ve öğreticileriyle olay oluşturma ve olayları araştırma ve yanıtlamak için Microsoft 365 Defender'i kullanma süreci ana hatlarıyla açıklanmıştır. Bu işleme başlamadan önce, değerlendirme sürecini gözden geçirmeyi Microsoft 365 Defender değerlendirme ortamını [oluşturduğunuzdan Microsoft 365 Defender gerekir](eval-create-eval-environment.md).[](eval-overview.md)
+Bu makalede saldırı benzetimleri ve öğreticilerle olay oluşturma ve araştırmak ve yanıtlamak için Microsoft 365 Defender kullanma işlemi özetlenmiştir. Bu işleme başlamadan önce, [Microsoft 365 Defender değerlendirmeye](eval-overview.md) yönelik genel süreci gözden [geçirdiğinizden ve Microsoft 365 Defender değerlendirme ortamını oluşturduğunuzdan](eval-create-eval-environment.md) emin olun.
 
 Aşağıdaki adımları kullanın.
 
-:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png" alt-text="Değerlendirme ortamında benzetimi yapılan olay Microsoft 365 Defender adımları" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png":::
+:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png" alt-text="Microsoft 365 Defender değerlendirme ortamında sanal olay yanıtı gerçekleştirme adımları" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png":::
 
-Aşağıdaki tabloda, çizimde yer alan adımlar açık gösterilmiştir.
+Aşağıdaki tabloda çizimdeki adımlar açıklanmaktadır.
 
 |Adım  |Açıklama  |
 |---------|---------|
-| 1. [Saldırıyı benzetin](eval-defender-investigate-respond-simulate-attack.md)     |   Değerlendirme ortamınıza saldırıların benzetimini gerçekleştirin ve Microsoft 365 Defender yanıtını gerçekleştirmek için değerlendirme portalını kullanın.      |
-| 2. [Olay yanıtı özelliklerini deneyin ](eval-defender-investigate-respond-additional.md)    |    Destek için ek olay yanıtı özelliklerini ve özelliklerini Microsoft 365 Defender.     |
+| 1. [Saldırıları simüle edin](eval-defender-investigate-respond-simulate-attack.md)     |   Değerlendirme ortamınızda saldırıların benzetimini yapın ve olay yanıtı gerçekleştirmek için Microsoft 365 Defender portalını kullanın.      |
+| 2. [Olay yanıtı özelliklerini deneyin ](eval-defender-investigate-respond-additional.md)    |    Microsoft 365 Defender ek olay yanıtı özelliklerini ve özelliklerini deneyin.     |
 |||
 
-### <a name="navigation-you-may-need"></a>Gezintiye ihtiyacınız olabilir
+### <a name="navigation-you-may-need"></a>İhtiyaç duyabileceğiniz gezinti
 
-[Değerlendirme Microsoft 365 Defender Oluşturma](eval-create-eval-environment.md)
+[Microsoft 365 Defender Değerlendirme Ortamı Oluşturma](eval-create-eval-environment.md)

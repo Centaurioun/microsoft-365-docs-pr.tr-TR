@@ -1,5 +1,5 @@
 ---
-title: Önerilen güvenli belge ilkeleri - kurumsal | için Microsoft 365 Microsoft Docs
+title: Önerilen güvenli belge ilkeleri - Kurumsal | için Microsoft 365 Microsoft Docs
 description: SharePoint dosya erişiminin güvenliğini sağlama hakkında Microsoft önerilerine yönelik ilkeleri açıklar.
 ms.author: dansimp
 author: dansimp
@@ -18,57 +18,58 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
+- zerotrust-solution
 ms.technology: mdo
-ms.openlocfilehash: 3a2a8e5be8fb78824e8670f94a2e087da9538329
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: e0ca69eb4a330c4ebb067d657d0fdef8a4d09d8b
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972155"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750028"
 ---
-# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>SharePoint sitelerin ve dosyaların güvenliğini sağlamaya yönelik ilke önerileri
+# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>SharePoint sitelerinin ve dosyalarının güvenliğini sağlamaya yönelik ilke önerileri
 
 Bu makalede, SharePoint ve OneDrive İş korumak için önerilen Sıfır Güven kimlik ve cihaz erişim ilkelerinin nasıl uygulandığı açıklanır. Bu kılavuz [, ortak kimlik ve cihaz erişim ilkelerine](identity-access-policies.md) dayalıdır.
 
 Bu öneriler, gereksinimlerinizin ayrıntı düzeyine göre uygulanabilen SharePoint dosyaları için üç farklı güvenlik ve koruma katmanını temel alır: **başlangıç noktası**, **kuruluş** ve **özel güvenlik**. Bu güvenlik katmanları ve önerilen istemci işletim sistemleri hakkında daha fazla bilgi edinmek için [genel bakış](microsoft-365-policies-configurations.md) bölümünde bu önerilere başvurabilirsiniz.
 
-Bu kılavuzu uygulamaya ek olarak, kurumsal ve özel güvenlik içeriği için uygun izinleri ayarlama da dahil olmak üzere SharePoint siteleri doğru koruma miktarıyla yapılandırırken emin olun.
+Bu kılavuzu uygulamaya ek olarak, SharePoint sitelerini kurumsal ve özel güvenlik içeriği için uygun izinleri ayarlama da dahil olmak üzere doğru koruma miktarıyla yapılandırırken emin olun.
 
-## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Yaygın ilkeleri SharePoint ve OneDrive İş içerecek şekilde güncelleştirme
+## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Ortak ilkeleri SharePoint ve OneDrive İş içerecek şekilde güncelleştirme
 
-SharePoint ve OneDrive dosyaları korumak için, aşağıdaki diyagramda ortak kimlik ve cihaz erişim ilkelerinden hangi ilkelerin güncelleştirildiği gösterilmektedir.
+SharePoint ve OneDrive'daki dosyaları korumak için, aşağıdaki diyagramda ortak kimlik ve cihaz erişim ilkelerinden hangi ilkelerin güncelleştirildiği gösterilmektedir.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="SharePoint erişimini korumaya yönelik ilke güncelleştirmelerinin özeti" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
 
-Ortak ilkeleri oluştururken SharePoint eklediyseniz, yalnızca yeni ilkeleri oluşturmanız gerekir. Koşullu Erişim ilkeleri için SharePoint OneDrive içerir.
+Ortak ilkeleri oluştururken SharePoint'i eklediyseniz, yalnızca yeni ilkeleri oluşturmanız gerekir. Koşullu Erişim ilkeleri için SharePoint, OneDrive'ı içerir.
 
-Yeni ilkeler, belirttiğiniz SharePoint sitelere belirli erişim gereksinimlerini uygulayarak kurumsal ve özel güvenlik içeriği için cihaz korumasını uygular.
+Yeni ilkeler, belirttiğiniz SharePoint sitelerine belirli erişim gereksinimlerini uygulayarak kurumsal ve özel güvenlik içeriği için cihaz korumasını uygular.
 
 Aşağıdaki tabloda, SharePoint için gözden geçirmeniz ve güncelleştirmeniz veya yeni oluşturmanız gereken ilkeler listelenir. Ortak ilkeler, [Ortak kimlik ve cihaz erişim ilkeleri](identity-access-policies.md) makalesindeki ilişkili yapılandırma yönergelerine bağlanır.
 
 |Koruma düzeyi|İlkeler|Daha fazla bilgi|
 |---|---|---|
-|**Başlangıç noktası**|[Oturum açma riski *orta* veya *yüksek* olduğunda MFA gerektirme](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Bulut uygulamalarının atanma aşamasına SharePoint ekleyin.|
-||[Modern kimlik doğrulamayı desteklemeyen istemcileri engelleme](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Bulut uygulamalarının atanma aşamasına SharePoint ekleyin.|
+|**Başlangıç noktası**|[Oturum açma riski *orta* veya *yüksek* olduğunda MFA gerektirme](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Bulut uygulamalarının atamasında SharePoint'i dahil edin.|
+||[Modern kimlik doğrulamayı desteklemeyen istemcileri engelleme](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Bulut uygulamalarının atamasında SharePoint'i dahil edin.|
 ||[APP veri koruma ilkelerini uygulama](identity-access-policies.md#apply-app-data-protection-policies)|Önerilen tüm uygulamaların uygulama listesine eklendiğinden emin olun. Her platform (iOS, Android, Windows) için ilkeyi güncelleştirin.|
-||[SharePoint'da uygulama tarafından zorunlu kılınan kısıtlamaları kullanma](#use-app-enforced-restrictions-in-sharepoint)|Bu yeni ilkeyi ekleyin. Bu, Azure Active Directory 'a (Azure AD) SharePoint'de belirtilen ayarları kullanmasını bildirir. Bu ilke tüm kullanıcılar için geçerlidir, ancak yalnızca SharePoint erişim ilkelerine dahil edilen sitelere erişimi etkiler.|
-|**Enterprise**|[Oturum açma riski *düşük*, *orta* veya *yüksek* olduğunda MFA gerektirme](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Bulut uygulamalarının atamalarına SharePoint ekleyin.|
-||[Uyumlu bilgisayarlar *ve* mobil cihazlar gerektirme](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Bulut uygulamaları listesine SharePoint ekleyin.|
+||[SharePoint'te uygulama tarafından zorlanan kısıtlamaları kullanma](#use-app-enforced-restrictions-in-sharepoint)|Bu yeni ilkeyi ekleyin. Bu, Azure Active Directory'ye (Azure AD) SharePoint'te belirtilen ayarları kullanmasını söyler. Bu ilke tüm kullanıcılar için geçerlidir, ancak yalnızca SharePoint erişim ilkelerine dahil edilen sitelere erişimi etkiler.|
+|**Enterprise**|[Oturum açma riski *düşük*, *orta* veya *yüksek* olduğunda MFA gerektirme](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|SharePoint'i bulut uygulamalarının atamalarına ekleyin.|
+||[Uyumlu bilgisayarlar *ve* mobil cihazlar gerektirme](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Bulut uygulamaları listesine SharePoint'i ekleyin.|
 ||[SharePoint erişim denetimi ilkesi](#sharepoint-access-control-policies): Yönetilmeyen cihazlardan belirli SharePoint sitelerine yalnızca tarayıcı erişimine izin verin.|Bu, dosyaların düzenlenmesini ve indirilmesini engeller. Siteleri belirtmek için PowerShell'i kullanın.|
-|**Özel güvenlik**|[*Her zaman* MFA iste](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Bulut uygulamalarının atanma aşamasına SharePoint ekleyin.|
+|**Özel güvenlik**|[*Her zaman* MFA iste](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Bulut uygulamalarının atamasında SharePoint'i dahil edin.|
 ||[SharePoint erişim denetimi ilkesi](#use-app-enforced-restrictions-in-sharepoint): Yönetilmeyen cihazlardan belirli SharePoint sitelerine erişimi engelleyin.|Siteleri belirtmek için PowerShell'i kullanın.|
 
-## <a name="use-app-enforced-restrictions-in-sharepoint"></a>SharePoint'de uygulama tarafından zorunlu kılınan kısıtlamaları kullanma
+## <a name="use-app-enforced-restrictions-in-sharepoint"></a>SharePoint'te uygulama tarafından zorlanan kısıtlamaları kullanma
 
-SharePoint'de erişim denetimleri uygularsanız, Azure AD'ye SharePoint yapılandırdığınız ilkeleri zorlamasını bildirmek için Azure AD'de Koşullu Erişim ilkeleri oluşturulur. Varsayılan olarak, bu ilke tüm kullanıcılar için geçerlidir, ancak yalnızca SharePoint'de erişim denetimlerini oluşturduğunuzda PowerShell kullanarak belirttiğiniz sitelere erişimi etkiler. İlkenin kapsamı belirli kullanıcılar, gruplar veya siteler için de değiştirilebilir.
+SharePoint'te erişim denetimleri uygularsanız, Azure AD SharePoint'te yapılandırdığınız ilkeleri zorlamasını bildirmek için koşullu erişim ilkeleri Azure AD oluşturulur. Varsayılan olarak, bu ilke tüm kullanıcılar için geçerlidir, ancak yalnızca SharePoint'te erişim denetimleri oluşturduğunuzda PowerShell kullanarak belirttiğiniz sitelere erişimi etkiler. İlkenin kapsamı belirli kullanıcılar, gruplar veya siteler için de değiştirilebilir.
 
 Bu ilkeyi yapılandırmak için [Yönetilmeyen cihazlardan erişimi denetleme](/sharepoint/control-access-from-unmanaged-devices) bölümünde "Belirli SharePoint site koleksiyonlarına veya OneDrive hesaplarına erişimi engelleme veya sınırlama" konusuna bakın.
 
-## <a name="sharepoint-access-control-policies"></a>Erişim denetimi ilkelerini SharePoint
+## <a name="sharepoint-access-control-policies"></a>SharePoint erişim denetimi ilkeleri
 
-Microsoft, SharePoint sitelerdeki içeriği cihaz erişim denetimleriyle kurumsal ve özel güvenlik içeriğiyle korumanızı önerir. Bunu, koruma düzeyini ve korumanın uygulanacağı siteleri belirten bir ilke oluşturarak yaparsınız.
+Microsoft, SharePoint sitelerindeki içeriği, cihaz erişim denetimleriyle kurumsal ve özelleştirilmiş güvenlik içeriğiyle korumanızı önerir. Bunu, koruma düzeyini ve korumanın uygulanacağı siteleri belirten bir ilke oluşturarak yaparsınız.
 
-- Enterprise siteler: Yalnızca tarayıcı erişimine izin ver. Bu, kullanıcıların dosyaları düzenlemesini ve indirmesini engeller.
+- Kurumsal siteler: Yalnızca tarayıcı erişimine izin verin. Bu, kullanıcıların dosyaları düzenlemesini ve indirmesini engeller.
 - Özel güvenlik siteleri: Yönetilmeyen cihazlardan erişimi engelleyin.
 
 [Yönetilmeyen cihazlardan erişimi denetleme](/sharepoint/control-access-from-unmanaged-devices) bölümünde "Belirli SharePoint site koleksiyonlarına veya OneDrive hesaplarına erişimi engelleme veya sınırlama" bölümüne bakın.
@@ -81,7 +82,7 @@ Aşağıdaki çizimde, SharePoint cihaz erişim ilkelerinin bir kullanıcı içi
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="SharePoint cihaz erişim ilkelerinin siteleri nasıl koruduğuna bir örnek" lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
 
-James'in başlangıç noktası Koşullu Erişim ilkeleri atanmıştır, ancak kurumsal veya özel güvenlik korumasına sahip SharePoint sitelerine erişim verilebilir.
+James'in başlangıç noktası Koşullu Erişim ilkeleri atanmıştır, ancak kurumsal veya özel güvenlik koruması olan SharePoint sitelerine erişim izni verilebilir.
 
 - James üyesi olduğu bir siteye bilgisayarını kullanarak kurumsal veya özel güvenlik koruması ile erişirse, erişimi verilir.
 - James, başlangıç noktası kullanıcıları için izin verilen yönetilmeyen telefonunu kullanarak üyesi olduğu bir kurumsal koruma sitesine erişirse, bu site için yapılandırılan cihaz erişim ilkesi nedeniyle kuruluş sitesine yalnızca tarayıcı erişimi alır.

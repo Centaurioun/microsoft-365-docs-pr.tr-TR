@@ -15,14 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: f93642984ecb2439ab6e4ad484ea4f6f3303c0ce
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: ae2866d2cabf21616b7aea74220dcf5ce8e4d4eb
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651377"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750308"
 ---
 # <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>Adım 3. Intune olan cihazlar için uyumluluk ilkelerini ayarlama
 
@@ -30,7 +31,7 @@ Cihazları Intune kaydetmek, ortamınızdaki veriler için daha da fazla güvenl
 
 ![Cihazları yönetme adımları](../media/devices/intune-mdm-step-2.png#lightbox)
 
-Uygulamalarınıza ve verilerinize erişen cihazların parola veya pin korumalı olması ve işletim sisteminin güncel olması gibi en düşük gereksinimleri karşıladığından emin olmak istiyorsunuz. Uyumluluk ilkeleri, cihazların karşılaması gereken gereksinimleri tanımlamanın yoludur. MEM, bir cihazı uyumlu veya uyumlu değil olarak işaretlemek için bu uyumluluk ilkelerini kullanır Bu ikili durum Azure AD'ye geçirilir. Bu durum, bir cihazın kaynaklara erişmesine izin vermek veya bunları engellemek için koşullu erişim kurallarında bu durumu kullanabilir. 
+Uygulamalarınıza ve verilerinize erişen cihazların parola veya pin korumalı olması ve işletim sisteminin güncel olması gibi en düşük gereksinimleri karşıladığından emin olmak istiyorsunuz. Uyumluluk ilkeleri, cihazların karşılaması gereken gereksinimleri tanımlamanın yoludur. MEM, bir cihazı uyumlu veya uyumlu değil olarak işaretlemek için bu uyumluluk ilkelerini kullanır Bu ikili durum, bir cihazın kaynaklara erişmesine izin vermek veya bunları engellemek için koşullu erişim kurallarında bu durumu kullanabilen Azure AD geçirilir. 
 
 ## <a name="configuring-device-compliance-policies"></a>Cihaz uyumluluk ilkelerini yapılandırma
 
@@ -52,4 +53,4 @@ Cihaz uyumluluk ilkelerini yapılandırmak için kimlik ve [cihaz erişim ilkele
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[4. Adım'a gidin. Azure AD'de koşullu erişim kuralı oluşturma yönergeleri için iyi durumda ve uyumlu cihazlar gerektirme](manage-devices-with-intune-require-compliance.md).
+[4. Adım'a gidin. Azure AD'da koşullu erişim kuralı oluşturma yönergeleri için iyi durumda ve uyumlu cihazlar gerektir](manage-devices-with-intune-require-compliance.md).

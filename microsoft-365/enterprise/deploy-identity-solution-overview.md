@@ -15,15 +15,16 @@ ms.collection:
 - m365initiative-coredeploy
 - m365solution-m365-identity
 - m365solution-overview
+- zerotrust-solution
 ms.custom:
 - intro-overview
 description: Microsoft 365 için kimlik altyapınızı dağıtın.
-ms.openlocfilehash: 9f0956b0c131fb4cf90ce462fcfca0b9e124578e
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 7140fc9a34855c39487474f160856bf671666f24
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603692"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748439"
 ---
 # <a name="deploy-your-identity-infrastructure-for-microsoft-365"></a>Microsoft 365 için kimlik altyapınızı dağıtma
 

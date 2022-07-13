@@ -19,17 +19,18 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
+- zerotrust-solution
 ms.technology: mdo
-ms.openlocfilehash: 25f70d3ccdf11daa6a52d16b66d612c04ab8876a
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 0e26923925416db48b0547bd9d044e367b56cef7
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131184"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750044"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Teams sohbetlerinin, gruplarının ve dosyalarının güvenliğini sağlamaya yönelik ilke önerileri
 
-Bu makalede, Microsoft Teams sohbetlerini, gruplarını ve dosyalar ve takvimler gibi içerikleri korumak için önerilen Sıfır Güven kimlik ve cihaz erişim ilkelerinin nasıl uygulandığı açıklanmaktadır. Bu kılavuz, Teams'e özgü ek bilgilerle [birlikte ortak kimlik ve cihaz erişim ilkelerine](identity-access-policies.md) dayalıdır. Teams diğer ürünlerimizle tümleştirdiğinden bkz. [SharePoint sitelerini ve dosyalarını güvenli hale getirmek için ilke önerileri ve](sharepoint-file-access-policies.md) [e-postanın güvenliğini sağlamaya yönelik ilke önerileri](secure-email-recommended-policies.md).
+Bu makalede, Microsoft Teams sohbetlerini, gruplarını ve dosyalar ve takvimler gibi içerikleri korumak için önerilen Sıfır Güven kimlik ve cihaz erişim ilkelerinin nasıl uygulandığı açıklanır. Bu kılavuz, Teams'e özgü ek bilgilerle [birlikte ortak kimlik ve cihaz erişim ilkelerine](identity-access-policies.md) dayalıdır. Teams diğer ürünlerimizle tümleştirdiğinden bkz. [SharePoint sitelerini ve dosyalarını güvenli hale getirmek için ilke önerileri ve](sharepoint-file-access-policies.md) [e-postanın güvenliğini sağlamaya yönelik ilke önerileri](secure-email-recommended-policies.md).
 
 Bu öneriler, Teams için gereksinimlerinizin ayrıntı düzeyine göre uygulanabilen üç farklı güvenlik ve koruma katmanını temel alır: başlangıç noktası, kuruluş ve özel güvenlik. [Kimlik ve cihaz erişim yapılandırmalarında](microsoft-365-policies-configurations.md) bu güvenlik katmanları ve bu öneriler tarafından başvurulan önerilen ilkeler hakkında daha fazla bilgi edinebilirsiniz.
 
@@ -83,11 +84,11 @@ Başvuru için aşağıdaki diyagramda Teams'in bağlı olduğu hizmetler göste
 
 Microsoft Teams aşağıdaki erişim türlerini tanımlar:
 
-- **Konuk erişimi** , bir ekibin üyesi olarak eklenebilen ve ekibin iletişimine ve kaynaklarına tüm izinlere sahip olan bir konuk veya dış kullanıcı için Azure AD B2B hesabı kullanır.
+- **Konuk erişimi**, bir ekibin üyesi olarak eklenebilen ve ekibin iletişimine ve kaynaklarına tüm izinli erişimi olan bir konuk veya dış kullanıcı için Azure AD B2B hesabı kullanır.
 
-- **Dış erişim** , Azure AD B2B hesabı olmayan bir dış kullanıcıya yöneliktir. Dış erişim davetleri ve aramalara, sohbetlere ve toplantılara katılmayı içerebilir, ancak ekip üyeliğini ve ekibin kaynaklarına erişimi içermez.
+- **Dış erişim**, Azure AD B2B hesabı olmayan bir dış kullanıcıya yöneliktir. Dış erişim davetleri ve aramalara, sohbetlere ve toplantılara katılmayı içerebilir, ancak ekip üyeliğini ve ekibin kaynaklarına erişimi içermez.
 
-Koşullu Erişim ilkeleri yalnızca Teams'deki konuk erişimi için geçerlidir çünkü buna karşılık gelen bir Azure AD B2B hesabı vardır.
+Koşullu Erişim ilkeleri yalnızca Teams'de konuk erişimi için geçerlidir çünkü buna karşılık gelen bir B2B hesabı Azure AD.
 
 <!--
 In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both.
@@ -110,7 +111,7 @@ Dış erişim, bir dış etki alanının tamamından Teams kullanıcılarının 
 
 Dış erişim kullanıcıları, konuk erişimi aracılığıyla eklenen bir kişiye göre daha az erişime ve işlevselliğe sahiptir. Örneğin, dış erişim kullanıcıları Teams ile iç kullanıcılarınızla sohbet edebilir ancak ekip kanallarına, dosyalarına veya diğer kaynaklara erişemez.
 
-Dış erişim, Azure AD B2B kullanıcı hesaplarını kullanmaz ve bu nedenle Koşullu Erişim ilkelerini kullanmaz.
+Dış erişim Azure AD B2B kullanıcı hesaplarını kullanmaz ve bu nedenle Koşullu Erişim ilkelerini kullanmaz.
 
 ## <a name="teams-policies"></a>Teams ilkeleri
 
@@ -122,9 +123,9 @@ Teams ve kanallar, Microsoft Teams'de yaygın olarak kullanılan iki öğedir ve
 
 Varsayılan ilkenin değiştirilmesi veya özel ilkeler oluşturulması önerilir ve ilkelerinizi yönetme hakkında daha fazla bilgiyi şu bağlantıdan öğrenebilirsiniz: [Microsoft Teams'de ekip ilkelerini yönetme](/microsoftteams/teams-policies).
 
-### <a name="messaging-policies"></a>Mesajlaşma ilkeleri
+### <a name="messaging-policies"></a>Microsoft Mesajlaşma ilkeleri
 
-Mesajlaşma veya sohbet, varsayılan genel ilke veya özel ilkeler aracılığıyla da yönetilebilir ve bu, kullanıcılarınızın kuruluşunuza uygun bir şekilde birbirleriyle iletişim kurmasını sağlayabilir. Bu bilgiler [Teams'de mesajlaşma ilkelerini yönetme](/microsoftteams/messaging-policies-in-teams) bölümünde gözden geçirilebilir.
+Microsoft Mesajlaşma veya sohbet, varsayılan genel ilke veya özel ilkeler aracılığıyla da yönetilebilir ve bu, kullanıcılarınızın kuruluşunuza uygun bir şekilde birbirleriyle iletişim kurmasını sağlayabilir. Bu bilgiler [Teams'de mesajlaşma ilkelerini yönetme](/microsoftteams/messaging-policies-in-teams) bölümünde gözden geçirilebilir.
 
 ### <a name="meeting-policies"></a>Toplantı ilkeleri
 

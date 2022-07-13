@@ -262,6 +262,12 @@
 ##### [Denetimli klasör erişimini değerlendirin](evaluate-controlled-folder-access.md)
 ##### [Denetimli klasör erişimini etkinleştirin](enable-controlled-folders.md)
 ##### [Denetimli klasör erişimini özelleştirin](customize-controlled-folders.md)
+#### [Cihaz Denetimi]()
+##### [Çıkarılabilir Depolama Koruması](device-control-removable-storage-protection.md)
+##### [Çıkarılabilir Depolama Erişim Denetimi](device-control-removable-storage-access-control.md)
+##### [Cihaz Yüklemesi](mde-device-control-device-installation.md)
+##### [Cihaz Denetimi Yazıcı Koruması](printer-protection.md)
+##### [Cihaz Denetimi Raporları](device-control-report.md)
 #### [Exploit Protection]()
 ##### [Cihazları açıklardan koruyun](exploit-protection.md)
 ##### [Exploit Protection değerlendirmesi](evaluate-exploit-protection.md)
@@ -273,6 +279,14 @@
 ##### [Ağınızı koruyun](network-protection.md)
 ##### [Ağ korumasını değerlendirin](evaluate-network-protection.md)
 ##### [Ağ korumasını açın](enable-network-protection.md)
+#### [Web koruması]()
+##### [Web korumasına genel bakış](web-protection-overview.md)
+##### [Web tehdit koruması]()
+###### [Web tehdit korumasına genel bakış](web-threat-protection.md)
+###### [Web güvenliğini izleyin](web-protection-monitoring.md)
+###### [Web tehditlerine yanıt verin](web-protection-response.md)
+##### [Web içeriği filtreleme](web-content-filtering.md)
+
 
 ### Yeni nesil koruma
 #### [Yeni nesil korumaya genel bakış](next-generation-protection.md)
@@ -353,21 +367,6 @@
 ##### [Microsoft Defender Virüsten Koruma ile ilgili sorunları gidermek için olay günlüklerini ve hata kodlarını inceleyin](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Üçüncü taraf bir çözümden geçirirken Microsoft Defender Virüsten Koruma sorunlarını giderin](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
-#### [Web koruması]()
-##### [Web korumasına genel bakış](web-protection-overview.md)
-##### [Web tehdit koruması]()
-###### [Web tehdit korumasına genel bakış](web-threat-protection.md)
-###### [Web güvenliğini izleyin](web-protection-monitoring.md)
-###### [Web tehditlerine yanıt verin](web-protection-response.md)
-##### [Web içeriği filtreleme](web-content-filtering.md)
-
-#### [Cihaz Denetimi]()
-##### [Çıkarılabilir Depolama Koruması](device-control-removable-storage-protection.md)
-##### [Çıkarılabilir Depolama Erişim Denetimi](device-control-removable-storage-access-control.md)
-##### [Cihaz Yüklemesi](mde-device-control-device-installation.md)
-##### [Cihaz Denetimi Yazıcı Koruması](printer-protection.md)
-##### [Cihaz Denetimi Raporları](device-control-report.md)
-
 #### [Davranışsal engelleme ve kapsama]()
 ##### [Davranışsal engelleme ve kapsama](behavioral-blocking-containment.md)
 ##### [İstemci davranışsal engelleme](client-behavioral-blocking.md)
@@ -379,9 +378,6 @@
 
 #### [Güvenlik temel hattına uyumluluğu artırın](configure-machines-security-baseline.md)
 #### [Saldırı yüzeyini azaltma kuralı dağıtımını ve algılamalarını en iyi duruma getirin](configure-machines-asr.md)
-
-## [Etkin tehditler ve saldırı kampanyaları için rehber]()
-### [Log4Shell güvenlik açığını yönetin](tvm-manage-log4shell-guidance.md)
 
 ## [Tehditleri araştırın ve karşı yanıt verin]()
 ### [Uç nokta algılama ve yanıt]()

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
-ms.openlocfilehash: 0bcc45907cc5d57b592f96296282f65cc3e3d772
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 7c09db2138502ee8c1b491028308c56f23687a0d
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717160"
+ms.locfileid: "66749011"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Saldırı yüzeyi azaltma özelliklerini anlama ve kullanma
 
@@ -53,21 +53,25 @@ Ortamınızda saldırı yüzeyi azaltmayı yapılandırmak için şu adımları 
 
 1. [Microsoft Edge için donanım tabanlı yalıtımı etkinleştirin](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard).
 
-2. Uygulama denetimini etkinleştirin.
+2. [Saldırı yüzeyi azaltma kurallarını etkinleştirme](attack-surface-reduction-rules-deployment.md)
+
+3. Uygulama denetimini etkinleştirin.
 
    1. Windows'ta temel ilkeleri gözden geçirin. Bkz [. Örnek Temel İlkeler](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies).
    2. [Uygulama Denetimi tasarım kılavuzuna Windows Defender](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide) bakın.
    3. Bkz[. Windows Defender Uygulama Denetimi (WDAC) ilkelerini dağıtma](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
-3. [Denetimli klasör erişimini etkinleştirin](enable-controlled-folders.md).
+4. [Denetimli klasör erişimini etkinleştirin](enable-controlled-folders.md).
 
-4. [Ağ koruması'nı açın](enable-network-protection.md).
+5. [Çıkarılabilir Depolama Koruması](device-control-removable-storage-protection.md)
 
-5. [Yararlanma korumasını etkinleştirin](enable-exploit-protection.md).
+6. [Ağ koruması'nı açın](enable-network-protection.md).
 
-6. [Saldırı yüzeyi azaltma kurallarını dağıtın](attack-surface-reduction-rules-deployment.md).
+7. [Web korumasını etkinleştirmeye genel bakış](web-protection-overview.md)
 
-7. Ağ güvenlik duvarınızı ayarlayın.
+8. [Yararlanma korumasını etkinleştirin](enable-exploit-protection.md).
+
+9. Ağ güvenlik duvarınızı ayarlayın.
 
    1. [Gelişmiş güvenlikle Windows Defender Güvenlik Duvarı](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) genel bakış elde edin.
    2. Güvenlik duvarı ilkelerinizi nasıl tasarlamak istediğinize karar vermek için [Windows Defender Güvenlik Duvarı tasarım kılavuzunu](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) kullanın.
@@ -296,7 +300,7 @@ Videoda belirtildiği gibi, Uç Nokta için Defender çeşitli saldırı yüzeyi
 | [Ağ koruması](network-protection.md) | Kuruluşunuzun cihazlarında ağ trafiğinize ve bağlantınıza yönelik korumayı genişletin. (Microsoft Defender Virüsten Koruma gerektirir). |
 | [Exploit Protection](exploit-protection.md) | Kuruluşunuzun kullandığı işletim sistemlerinin ve uygulamaların kötüye kullanılmaktan korunmasına yardımcı olun. Yararlanma koruması, üçüncü taraf virüsten koruma çözümleriyle de çalışır. |
 | [Cihaz denetimi](device-control-report.md) | Kuruluşunuzdaki çıkarılabilir depolama birimi ve USB sürücüleri gibi cihazlarda kullanılan medyayı izleyerek ve denetleyerek veri kaybına karşı koruma sağlar. |
-| [Saldırı yüzeyini azaltma (ASR) kuralları dağıtım kılavuzu](attack-surface-reduction-rules-deployment.md) | Saldırı yüzeyi azaltma kurallarını dağıtmaya yönelik genel bakış bilgilerini ve önkoşullarını sunar. |
+| [Saldırı yüzeyini azaltma (ASR) kuralları dağıtım kılavuzu](attack-surface-reduction-rules-deployment.md) | Saldırı yüzeyi azaltma kurallarını dağıtmaya yönelik genel bakış bilgilerini ve önkoşullarını ve ardından test, etkinleştirme ve izleme için adım adım yönergeleri sunar. |
 | [Saldırı yüzeyini azaltma (ASR) kuralları dağıtım planı](attack-surface-reduction-rules-deployment-plan.md) | Saldırı yüzeyi azaltma kuralları dağıtımı için önerilen adımları listeler. |
 | [Saldırı yüzeyini azaltma (ASR) kuralları testi](attack-surface-reduction-rules-deployment-test.md) | Saldırı yüzeyi azaltma kurallarını test etmek için denetim modunu kullanma adımlarını sağlar. |
 | [Saldırı yüzeyini azaltma (ASR) kurallarını etkinleştirme](attack-surface-reduction-rules-deployment-implement.md) | Saldırı yüzeyi azaltma kurallarını test (denetim) modundan etkin, etkin (Engelle) moduna geçiş adımlarını gösterir. |

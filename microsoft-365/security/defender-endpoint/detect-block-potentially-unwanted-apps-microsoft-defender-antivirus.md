@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: defccd8d570ec54cd033dcf7fbe29df8254661c8
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 43cb2c4230bd48260ecd1cf4e4f6f92518a47b43
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717768"
+ms.locfileid: "66747933"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>İstenmeyen olası uygulamaları tespit edin ve engelleyin
 
@@ -44,7 +44,9 @@ ms.locfileid: "66717768"
 > [!TIP]
 > Daha fazla örnek ve uygulamaları güvenlik özelliklerine özel dikkat çekmek üzere etiketlemek için kullandığımız ölçütlerin tartışması için bkz. [Microsoft kötü amaçlı yazılımları ve istenmeyebilecek uygulamaları nasıl tanımlar](/windows/security/threat-protection/intelligence/criteria)?
 
-İstenmeyebilecek uygulamalar ağınıza gerçek kötü amaçlı yazılım bulaşması riskini artırabilir, kötü amaçlı yazılım bulaşmalarının tanımlanmasını zorlaştırır veya temizlemede BT kaynaklarını boşa harcar. PUA koruması Windows 10, Windows 11, Windows Server 2019, Windows Server 2022 ve Windows Server 2016 desteklenir. Windows 10 'de (sürüm 2004 ve üzeri), Microsoft Defender Virüsten Koruma varsayılan olarak Kurumsal (E5) cihazlar için PUA olarak kabul edilen uygulamaları engeller.
+İstenmeyebilecek uygulamalar ağınıza gerçek kötü amaçlı yazılım bulaşma riskini artırabilir, kötü amaçlı yazılım bulaşmalarının tanımlanmasını zorlaştırabilir veya BT ve güvenlik ekiplerinizin bunları temizlemeye zaman ve çaba harcamasına neden olabilir. PUA koruması Windows 11, Windows 10, Windows Server 2022, Windows Server 2019 ve Windows Server 2016 desteklenir. Kuruluşunuzun aboneliği [Uç Nokta için Microsoft Defender](microsoft-defender-endpoint.md) içeriyorsa Microsoft Defender Virüsten Koruma, Windows cihazlarında varsayılan olarak PUA olarak kabul edilen uygulamaları engeller. 
+
+[Windows Enterprise abonelikleri hakkında daha fazla bilgi edinin](https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise).
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -76,7 +78,7 @@ Uç Nokta için Microsoft Defender, Microsoft tarafından yönetilen bir veri k�
 Microsoft Defender Virüsten Koruma'daki istenmeyebilecek uygulama (PUA) koruma özelliği, ağınızdaki uç noktalarda PUA'yi algılayabilir ve engelleyebilir.
 
 > [!NOTE]
-> Bu özellik Windows 10, Windows 11, Windows Server 2019, Windows Server 2022 ve Windows Server 2016 kullanılabilir.
+> Bu özellik Windows 11, Windows 10, Windows Server 2022, Windows Server 2019 ve Windows Server 2016 kullanılabilir.
 
 Microsoft Defender Virüsten Koruma algılanan PUA dosyalarını ve bunları indirme, taşıma, çalıştırma veya yükleme girişimlerini engeller. Engellenen PUA dosyaları karantinaya taşınır. Bir uç noktada PUA dosyası algılandığında, Microsoft Defender Virüsten Koruma kullanıcıya bir bildirim gönderir (bildirimler diğer tehdit [algılamalarıyla aynı biçimde devre dışı bırakılmadığı sürece](configure-notifications-microsoft-defender-antivirus.md) ). Bildirimin içeriği belirtilmesi için ile `PUA:` önsözü oluşturulur.
 
@@ -86,9 +88,7 @@ Bildirim, [Windows Güvenliği uygulamasındaki normal karantina listesinde](mic
 
 PUA korumasını [Microsoft Intune](/mem/intune/protect/device-protect), [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection), [grup ilkesi](/azure/active-directory-domain-services/manage-group-policy) veya [PowerShell cmdlet'leri](/powershell/module/defender/?preserve-view=true&view=win10-ps) aracılığıyla etkinleştirebilirsiniz.
 
-İstenmeyebilecek uygulamaları engellemeden algılamak için pua korumasını denetim modunda da kullanabilirsiniz. Algılamalar Windows olay günlüğünde yakalanır.
-
-Şirketiniz bir iç yazılım güvenliği uyumluluk denetimi gerçekleştiriyorsa ve hatalı pozitif sonuçları önlemek istiyorsanız, denetim modunda PUA koruması yararlıdır.
+İstenmeyebilecek uygulamaları engellemeden algılamak için pua korumasını denetim modunda da kullanabilirsiniz. Algılamalar Windows olay günlüğünde yakalanır. Şirketiniz bir iç yazılım güvenliği uyumluluk denetimi gerçekleştiriyorsa ve hatalı pozitif sonuçları önlemek istiyorsanız, denetim modunda PUA koruması yararlıdır.
 
 ### <a name="use-intune-to-configure-pua-protection"></a>PUA korumasını yapılandırmak için Intune kullanma
 

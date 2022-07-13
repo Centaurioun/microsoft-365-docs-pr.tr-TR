@@ -1,5 +1,5 @@
 ---
-title: Yaygın Sıfır Güven kimlik ve cihaz erişim ilkeleri - kurumsal | için Microsoft 365 Microsoft Docs
+title: Yaygın Sıfır Güven kimlik ve cihaz erişim ilkeleri - Kurumsal | için Microsoft 365 Microsoft Docs
 description: Önerilen yaygın Sıfır Güven kimlik ve cihaz erişim ilkelerini ve yapılandırmalarını açıklar.
 ms.author: dansimp
 author: dansimp
@@ -19,13 +19,14 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
+- zerotrust-solution
 ms.technology: mdo
-ms.openlocfilehash: 0c7facc2ac5a20b21a6862b115b62c576ebaeb1f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 35acb32c9a27ec32c78f4f247257d589a9fefc04
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972199"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750066"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Yaygın Sıfır Güven kimlik ve cihaz erişim ilkeleri
 
@@ -50,7 +51,7 @@ Here's a one-page PDF summary:
 Bu makalenin geri kalanında bu ilkelerin nasıl yapılandırıldığı açıklanmaktadır.
 
 > [!NOTE]
-> Cihazın istenen kullanıcıya sahip olduğundan emin olmak için cihazları Intune'a kaydetmeden önce çok faktörlü kimlik doğrulamasının (MFA) kullanılmasının zorunlu olması önerilir. Cihaz uyumluluk ilkelerini zorunlu kılmadan önce cihazları Intune'a kaydetmeniz gerekir.
+> Cihazın istenen kullanıcıya sahip olduğundan emin olmak için cihazları Intune kaydetmeden önce çok faktörlü kimlik doğrulamasının (MFA) kullanılmasının zorunlu olması önerilir. Cihaz uyumluluk ilkelerini zorunlu kılmadan önce cihazları Intune kaydetmeniz gerekir.
 
 Bu görevleri yerine getirmeniz için size zaman vermek için başlangıç noktası ilkelerini bu tabloda listelenen sırayla uygulamanızı öneririz. Ancak, kurumsal ve özel güvenlik koruma düzeyleri için MFA ilkeleri her zaman uygulanabilir.
 
@@ -70,7 +71,7 @@ Bu görevleri yerine getirmeniz için size zaman vermek için başlangıç nokta
 
 İlkeleri yapılandırmadan önce, her koruma katmanı için kullandığınız Azure AD gruplarını belirleyin. Genellikle, başlangıç noktası koruması kuruluştaki herkes için geçerlidir. Hem başlangıç noktası hem de kurumsal koruma için dahil edilen bir kullanıcının tüm başlangıç noktası ilkeleri ve kurumsal ilkeler uygulanır. Koruma kümülatiftir ve en kısıtlayıcı ilke uygulanır.
 
-Önerilen bir uygulama, Koşullu Erişim dışlaması için bir Azure AD grubu oluşturmaktır. **Atamalar** bölümündeki **Kullanıcılar ve gruplar** ayarının **Dışla** değerine bu grubu tüm Koşullu Erişim ilkelerinize ekleyin. Bu, siz erişim sorunlarını giderirken kullanıcıya erişim sağlamak için bir yöntem sağlar. Bu yalnızca geçici bir çözüm olarak önerilir. Değişiklikler için bu grubu izleyin ve dışlama grubunun yalnızca amaçlandığı gibi kullanıldığından emin olun.
+Koşullu Erişim dışlaması için bir Azure AD grubu oluşturmak önerilen bir uygulamadır. **Atamalar** bölümündeki **Kullanıcılar ve gruplar** ayarının **Dışla** değerine bu grubu tüm Koşullu Erişim ilkelerinize ekleyin. Bu, siz erişim sorunlarını giderirken kullanıcıya erişim sağlamak için bir yöntem sağlar. Bu yalnızca geçici bir çözüm olarak önerilir. Değişiklikler için bu grubu izleyin ve dışlama grubunun yalnızca amaçlandığı gibi kullanıldığından emin olun.
 
 Aşağıda, MFA gerektirmeye yönelik grup ataması ve dışlama örnekleri verilmiştir.
 
@@ -84,19 +85,19 @@ Sonuçlar şunlardır:
 
   Bu durumda, Yönetim Personeli grubunun üyeleri hem başlangıç noktası hem de kurumsal Koşullu Erişim ilkeleriyle eşleştir. Her iki ilkenin erişim denetimleri birleştirilir ve bu durumda kurumsal Koşullu Erişim ilkesine eşdeğerdir.
 
-- Çok Gizli Project X grubunun üyelerinin her zaman MFA kullanması gerekir
+- Çok Gizli Proje X grubunun üyeleri her zaman MFA kullanmak için gereklidir
 
-  Bu durumda, Çok Gizli Project X grubunun üyeleri hem başlangıç noktası hem de özel güvenlik Koşullu Erişim ilkeleriyle eşleşer. Her iki ilke için erişim denetimleri birleştirilir. Özelleştirilmiş güvenlik Koşullu Erişim ilkesinin erişim denetimi daha kısıtlayıcı olduğundan kullanılır.
+  Bu durumda, Çok Gizli Proje X grubunun üyeleri hem başlangıç noktası hem de özel güvenlik Koşullu Erişim ilkeleriyle eşleşer. Her iki ilke için erişim denetimleri birleştirilir. Özelleştirilmiş güvenlik Koşullu Erişim ilkesinin erişim denetimi daha kısıtlayıcı olduğundan kullanılır.
 
-Gruplara ve kullanıcılara daha yüksek koruma düzeyleri uygularken dikkatli olun. Örneğin, Project X için özel güvenlik içeriği üzerinde çalışmasalar bile, Çok Gizli Project X grubunun üyelerinin her oturum açtıklarında MFA kullanmaları gerekir.
+Gruplara ve kullanıcılara daha yüksek koruma düzeyleri uygularken dikkatli olun. Örneğin, Çok Gizli Proje X grubunun üyelerinin, Project X için özelleştirilmiş güvenlik içeriği üzerinde çalışmasalar bile, her oturum açtıklarında MFA kullanmaları gerekir.
 
-Bu önerilerin bir parçası olarak oluşturulan tüm Azure AD gruplarının Microsoft 365 grupları olarak oluşturulması gerekir. Bu, Microsoft Teams ve SharePoint belgelerin güvenliğini sağlarken duyarlılık etiketlerinin dağıtımı için önemlidir.
+Bu önerilerin bir parçası olarak oluşturulan tüm Azure AD grupları Microsoft 365 grupları olarak oluşturulmalıdır. Bu, Microsoft Teams ve SharePoint'te belgelerin güvenliğini sağlarken duyarlılık etiketlerinin dağıtımı için önemlidir.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png" alt-text="Microsoft 365 grubu oluşturma" lightbox="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png":::
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Oturum açma riskine göre MFA gerektirme
 
-Kullanıcılarınızın kullanımını gerektirmeden önce MFA'ya kaydolmasını sağlayın. E5 Güvenliği eklentisiyle Microsoft 365 E3 Microsoft 365 E5, EMS E5 ile Office 365 veya tek tek Azure AD Premium P2 lisanslarınız varsa, kullanıcıların MFA'ya kaydolmasını istemek için Azure AD Kimlik Koruması ile MFA kayıt ilkesini kullanabilirsiniz. [Önkoşul çalışması](identity-access-prerequisites.md), tüm kullanıcıları MFA'ya kaydetmeyi içerir.
+Kullanıcılarınızın kullanımını gerektirmeden önce MFA'ya kaydolmasını sağlayın. E5 Güvenliği eklentisiyle Microsoft 365 E5, Microsoft 365 E3, EMS E5 ile Office 365 veya tek tek Azure AD Premium P2 lisanslarınız varsa, kullanıcıların MFA'ya kaydolmasını istemek için Azure AD Kimlik Koruması ile MFA kayıt ilkesini kullanabilirsiniz. [Önkoşul çalışması](identity-access-prerequisites.md), tüm kullanıcıları MFA'ya kaydetmeyi içerir.
 
 Kullanıcılarınız kaydedildikten sonra, yeni bir Koşullu Erişim ilkesiyle oturum açmak için MFA gerektirebilirsiniz.
 
@@ -109,7 +110,7 @@ Aşağıdaki tablolarda, oturum açma riski temelinde MFA gerektirmek için Koş
 
 **Atamalar** bölümünde:
 
-|Ayar|Özellikler|Değerler|Notlar|
+|Ayar|Özellikler|Değer|Notlar|
 |---|---|---|---|
 |Kullanıcılar ve gruplar|Içerir|**Kullanıcılar ve gruplar > kullanıcıları ve grupları seçin**: Hedeflenen kullanıcı hesaplarını içeren belirli grupları seçin.|Pilot kullanıcı hesaplarını içeren grupla başlayın.|
 ||Dışlamak|**Kullanıcılar ve gruplar**: Koşullu Erişim özel durum grubunuzu seçin; hizmet hesapları (uygulama kimlikleri).|Üyelik, gerektiğinde geçici olarak değiştirilmelidir.|
@@ -129,7 +130,7 @@ Risk düzeyi ayarlarını hedeflediğiniz koruma düzeyine göre uygulayın.
 
 **Erişim denetimleri** bölümünde:
 
-|Ayar|Özellikler|Değerler|Eylem|
+|Ayar|Özellikler|Değer|Eylem|
 |---|---|---|---|
 |Grant|**Grant access**||Seç|
 |||**Çok faktörlü kimlik doğrulaması gerektir**|Çek|
@@ -145,11 +146,11 @@ Ayrıca ilkeyi test etmek için [Durum](/azure/active-directory/active-directory
 
 Çok faktörlü kimlik doğrulamasını desteklemeyen istemcileri engellemek için koşullu erişim ilkesi için bu tablolardaki ayarları kullanın.
 
-çok faktörlü kimlik doğrulamasını destekleyen Microsoft 365 istemcilerin listesi için [bu makaleye](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md) bakın.
+Microsoft 365'te çok faktörlü kimlik doğrulamasını destekleyen istemcilerin listesi için [bu makaleye](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md) bakın.
 
 **Atamalar** bölümünde:
 
-|Ayar|Özellikler|Değerler|Notlar|
+|Ayar|Özellikler|Değer|Notlar|
 |---|---|---|---|
 |Kullanıcılar ve gruplar|Içerir|**Kullanıcılar ve gruplar > kullanıcıları ve grupları seçin**: Hedeflenen kullanıcı hesaplarını içeren belirli grupları seçin.|Pilot kullanıcı hesaplarını içeren grupla başlayın.|
 ||Dışlamak|**Kullanıcılar ve gruplar**: Koşullu Erişim özel durum grubunuzu seçin; hizmet hesapları (uygulama kimlikleri).|Üyelik, gerektiğinde geçici olarak değiştirilmelidir.|
@@ -158,7 +159,7 @@ Ayrıca ilkeyi test etmek için [Durum](/azure/active-directory/active-directory
 
 **Erişim denetimleri** bölümünde:
 
-|Ayar|Özellikler|Değerler|Eylem|
+|Ayar|Özellikler|Değer|Eylem|
 |---|---|---|---|
 |Grant|**Erişimi engelle**||Seç|
 ||**Tüm seçili denetimleri gerektir**||Seç|
@@ -175,18 +176,18 @@ Exchange Online için, tüm istemci erişim isteklerini modern kimlik doğrulama
 
 Tüm yüksek riskli kullanıcıların güvenliği aşılmış hesaplarının oturum açarken parola değişikliği yapmaya zorlandığından emin olmak için aşağıdaki ilkeyi uygulamanız gerekir.
 
-[Microsoft Azure portalında (yönetici kimlik bilgilerinizle)https://portal.azure.com)](https://portal.azure.com/) oturum açın ve ardından **Azure AD Kimlik Koruması > Kullanıcı Risk İlkesi'ne** gidin.
+Microsoft Azure portal (yönetici kimlik bilgilerinizle [)https://portal.azure.com)](https://portal.azure.com/) oturum açın ve **Azure AD Kimlik Koruması > Kullanıcı Risk İlkesi'ne** gidin.
 
 **Atamalar** bölümünde:
 
-|Tür|Özellikler|Değerler|Eylem|
+|Tür|Özellikler|Değer|Eylem|
 |---|---|---|---|
 |Kullanıcılar|Içerir|**Tüm kullanıcılar**|Seç|
 |Kullanıcı riski|**Yüksek**||Seç|
 
 İkinci **Ödevler** bölümünde:
 
-|Tür|Özellikler|Değerler|Eylem|
+|Tür|Özellikler|Değer|Eylem|
 |---|---|---|---|
 |Access|**Erişime izin ver**||Seç|
 |||**Parola değişikliği gerektir**|Çek|
@@ -197,7 +198,7 @@ Son olarak **İlkeyi zorla** için **Açık'ı** ve ardından **Kaydet'i** seçi
 
 İlkeyi test etmek için [Durum](/azure/active-directory/active-directory-conditional-access-whatif) aracını kullanmayı göz önünde bulundurun.
 
-Bu ilkeyi, bilinen zayıf parolaları ve bunların değişkenlerini ve kuruluşunuza özgü ek zayıf terimleri algılayıp engelleyen [Azure AD parola korumasını yapılandırma](/azure/active-directory/authentication/concept-password-ban-bad) ile birlikte kullanın. Azure AD parola korumasının kullanılması, değiştirilen parolaların güçlü parolalar olmasını sağlar.
+Bu ilkeyi, bilinen zayıf parolaları ve bunların değişkenlerini ve kuruluşunuza özgü ek zayıf terimleri algılayıp engelleyen Azure AD [parola korumasını yapılandırma](/azure/active-directory/authentication/concept-password-ban-bad) ile birlikte kullanın. Azure AD parola korumasının kullanılması, değiştirilen parolaların güçlü parolalar olmasını sağlar.
 
 ## <a name="apply-app-data-protection-policies"></a>APP veri koruma ilkelerini uygulama
 
@@ -205,13 +206,13 @@ APP'ler, izin verilen uygulamaları ve kuruluşunuzun verileriyle gerçekleştir
 
 APP veri koruma çerçevesi üç farklı yapılandırma düzeyi halinde düzenlenmiştir ve her düzey önceki düzeyin dışında oluşturulur:
 
-- **Düzey 1: Enterprise temel veri koruması**, uygulamaların BIR PIN ile korunmasını ve şifrelenmesini sağlar ve seçmeli temizleme işlemleri gerçekleştirir. Android cihazlar için bu düzey Android cihaz kanıtlamasını doğrular. Bu, Exchange Online posta kutusu ilkelerinde benzer veri koruma denetimi sağlayan ve BT'yi ve kullanıcı popülasyonunu APP'e tanıtır.
-- **Düzey 2: gelişmiş Enterprise veri koruması**, UYGULAMA veri sızıntısı önleme mekanizmaları ve en düşük işletim sistemi gereksinimlerini getirir. Bu, iş veya okul verilerine erişen çoğu mobil kullanıcı için geçerli olan yapılandırmadır.
-- **Düzey 3: Enterprise yüksek veri koruması** gelişmiş veri koruma mekanizmaları, gelişmiş PIN yapılandırması ve APP Mobile Threat Defense'i tanıtır. Bu yapılandırma, yüksek riskli verilere erişen kullanıcılar için tercih edilir.
+- **Düzey 1: Kurumsal temel veri koruması** , uygulamaların PIN ile korunmasını ve şifrelenmesini sağlar ve seçmeli silme işlemleri gerçekleştirir. Android cihazlar için bu düzey Android cihaz kanıtlamasını doğrular. Bu, Exchange Online posta kutusu ilkelerinde benzer veri koruma denetimi sağlayan ve BT'yi ve kullanıcı popülasyonunu APP'e tanıtır.
+- **Düzey 2: Kurumsal gelişmiş veri koruması** , APP veri sızıntısı önleme mekanizmaları ve en düşük işletim sistemi gereksinimlerini sunar. Bu, iş veya okul verilerine erişen çoğu mobil kullanıcı için geçerli olan yapılandırmadır.
+- **Düzey 3: Kurumsal yüksek veri koruması** gelişmiş veri koruma mekanizmaları, gelişmiş PIN yapılandırması ve APP Mobile Threat Defense'i tanıtır. Bu yapılandırma, yüksek riskli verilere erişen kullanıcılar için tercih edilir.
 
 Her yapılandırma düzeyine özgü önerileri ve korunması gereken en düşük uygulamaları görmek için [uygulama koruma ilkelerini kullanarak Veri koruma çerçevesi'ni](/mem/intune/apps/app-protection-framework) gözden geçirin.
 
-[Sıfır Güven kimlik ve cihaz erişim yapılandırmalarında](microsoft-365-policies-configurations.md) belirtilen ilkeleri kullanarak Başlangıç noktası ve Enterprise koruma katmanları Düzey 2 kurumsal gelişmiş veri koruma ayarlarıyla yakından eşlenmiştir. Özelleştirilmiş güvenlik koruma katmanı, Düzey 3 kurumsal yüksek veri koruma ayarlarına yakından eşler.
+[Sıfır Güven kimlik ve cihaz erişim yapılandırmalarında](microsoft-365-policies-configurations.md) belirtilen ilkeleri kullanan Başlangıç noktası ve Kurumsal koruma katmanları, Düzey 2 kurumsal gelişmiş veri koruma ayarlarıyla yakından eşlenmiştir. Özelleştirilmiş güvenlik koruma katmanı, Düzey 3 kurumsal yüksek veri koruma ayarlarına yakından eşler.
 
 |Koruma düzeyi|Uygulama Koruma İlkesi|Daha fazla bilgi|
 |---|---|---|
@@ -222,15 +223,15 @@ Her yapılandırma düzeyine özgü önerileri ve korunması gereken en düşük
 Veri koruma çerçevesi ayarlarını kullanarak Microsoft Endpoint Manager içindeki her platform (iOS ve Android) için yeni bir uygulama koruma ilkesi oluşturmak için şunları yapabilirsiniz:
 
 1. [Microsoft Intune ile uygulama koruma ilkeleri oluşturma ve dağıtma](/mem/intune/apps/app-protection-policies) bölümündeki adımları izleyerek ilkeleri el ile oluşturun.
-2. Intune'un [PowerShell betikleriyle](https://github.com/microsoftgraph/powershell-intune-samples) örnek [Intune Uygulama Koruma İlkesi Yapılandırma Çerçevesi JSON şablonlarını](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) içeri aktarın.
+2. Intune [PowerShell betikleriyle](https://github.com/microsoftgraph/powershell-intune-samples) [örnek Intune Uygulama Koruma İlkesi Yapılandırma Çerçevesi JSON şablonlarını](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) içeri aktarın.
 
 ## <a name="require-approved-apps-and-app-protection"></a>Onaylı uygulamalar ve APP koruması gerektirme
 
-Intune'da uyguladığınız Uygulama koruması ilkelerini zorunlu kılmak için, onaylı istemci uygulamalarını ve APP koruma ilkelerinde ayarlanan koşulları zorunlu kılmak için bir Koşullu Erişim ilkesi oluşturmanız gerekir.
+Intune uyguladığınız Uygulama koruması ilkelerini zorunlu kılmak için, onaylı istemci uygulamalarını ve APP koruma ilkelerinde ayarlanan koşulları gerektirecek bir Koşullu Erişim ilkesi oluşturmanız gerekir.
 
 Uygulama koruması ilkelerini zorunlu tutma, [Koşullu Erişim ile bulut uygulaması erişimi için uygulama koruma ilkesi gerektirme](/azure/active-directory/conditional-access/app-protection-based-conditional-access) bölümünde açıklanan bir dizi ilke gerektirir. Bu ilkelerin her biri, bu önerilen kimlik ve erişim yapılandırma ilkeleri kümesine dahildir.
 
-Onaylanan uygulamalar ve APP koruması gerektiren Koşullu Erişim ilkesini oluşturmak için, Yalnızca Uygulama koruması ilkeleriyle korunan mobil uygulamalardaki hesapların Microsoft 365 uç noktalarına erişmesine izin veren [Onaylı istemci uygulamaları veya mobil cihazlarla uygulama koruma ilkesi gerektirme](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#require-approved-client-apps-or-app-protection-policy-with-mobile-devices) bölümündeki adımları izleyin.
+Onaylı uygulamalar ve APP koruması gerektiren Koşullu Erişim ilkesi oluşturmak için, Yalnızca Uygulama koruması ilkeleriyle korunan mobil uygulamalardaki hesapların Microsoft 365 uç noktalarına erişmesine izin veren [Onaylı istemci uygulamaları veya mobil cihazlarla uygulama koruma ilkesi gerektirme](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#require-approved-client-apps-or-app-protection-policy-with-mobile-devices) bölümündeki adımları izleyin.
 
    > [!NOTE]
    > Bu ilke, mobil kullanıcıların geçerli uygulamaları kullanarak tüm Microsoft 365 uç noktalarına erişebilmesini sağlar.
@@ -258,7 +259,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 ## <a name="define-device-compliance-policies"></a>Cihaz uyumluluk ilkelerini tanımlama
 
-Cihaz uyumluluk ilkeleri, cihazların uyumlu olarak belirlenmesi için karşılaması gereken gereksinimleri tanımlar. Intune cihaz uyumluluk ilkelerini Microsoft Endpoint Manager yönetim merkezinden oluşturursunuz.
+Cihaz uyumluluk ilkeleri, cihazların uyumlu olarak belirlenmesi için karşılaması gereken gereksinimleri tanımlar. Microsoft Endpoint Manager yönetim merkezinden Intune cihaz uyumluluk ilkeleri oluşturursunuz.
 
 Her bilgisayar, telefon veya tablet platformu için bir ilke oluşturmanız gerekir:
 
@@ -269,11 +270,11 @@ Her bilgisayar, telefon veya tablet platformu için bir ilke oluşturmanız gere
 - Windows 8.1 ve üzeri
 - Windows 10 ve üzeri
 
-Cihaz uyumluluk ilkeleri oluşturmak için yönetici kimlik bilgilerinizle [Microsoft Endpoint Manager Yönetim Merkezi'nde](https://endpoint.microsoft.com) oturum açın ve ardından **Cihaz** \> **Uyumluluk ilkeleri** **İlkeleri'ne**\> gidin. **İlke Oluştur'u** seçin.
+Cihaz uyumluluk ilkeleri oluşturmak için, yönetici kimlik bilgilerinizle [Microsoft Endpoint Manager Yönetici Merkezi'nde](https://endpoint.microsoft.com) oturum açın ve ardından **Cihaz** \> **Uyumluluk ilkeleri** **İlkeleri'ne**\> gidin. **İlke Oluştur'u** seçin.
 
 Cihaz uyumluluk ilkelerinin dağıtılabilmesi için kullanıcı gruplarına atanması gerekir. İlkeyi oluşturduktan ve kaydettikten sonra atarsınız. Yönetim merkezinde ilkeyi ve ardından **Atamalar'ı** seçin. İlkeyi almak istediğiniz grupları seçtikten sonra **Kaydet'i** seçerek bu grup atamasını kaydedin ve ilkeyi dağıtın.
 
-Intune'da uyumluluk ilkeleri oluşturmaya ilişkin adım adım yönergeler için Intune [belgelerindeki Microsoft Intune'da uyumluluk ilkesi oluşturma](/mem/intune/protect/create-compliance-policy) bölümüne bakın.
+Intune'da uyumluluk ilkeleri oluşturmaya ilişkin adım adım yönergeler için, Intune [belgelerindeki Microsoft Intune uyumluluk ilkesi oluşturma](/mem/intune/protect/create-compliance-policy) bölümüne bakın.
 
 ### <a name="recommended-settings-for-ios"></a>iOS için önerilen ayarlar
 
@@ -296,7 +297,7 @@ Denetimli cihazlar için:
 - Gelişmiş güvenlik (Düzey 2) – Microsoft, kullanıcıların hassas veya gizli bilgilere eriştiği cihazlar için bu yapılandırmayı önerir. Bu yapılandırma, veri paylaşımı denetimlerini yürürlüğe koyar ve USB cihazlarına erişimi engeller. Bu yapılandırma, bir cihazdaki iş veya okul verilerine erişen çoğu mobil kullanıcı için geçerlidir.
 - Yüksek güvenlik (Düzey 3) – Microsoft, benzersiz olarak yüksek riskli belirli kullanıcılar veya gruplar tarafından kullanılan cihazlar için bu yapılandırmayı önerir (yetkisiz ifşanın kuruluşta önemli ölçüde maddi kayıplara neden olduğu son derece hassas verileri işleyen kullanıcılar). Bu yapılandırma daha güçlü parola ilkeleri uygular, bazı cihaz işlevlerini devre dışı bırakır, ek veri aktarımı kısıtlamaları uygular ve uygulamaların Apple'ın toplu satın alma programı aracılığıyla yüklenmesini gerektirir.
 
-[Sıfır Güven kimlik ve cihaz erişim yapılandırmalarında](microsoft-365-policies-configurations.md) belirtilen ilkeleri kullanarak Başlangıç noktası ve Enterprise koruma katmanları Düzey 2 gelişmiş güvenlik ayarlarıyla yakından eşlenmiştir. Özelleştirilmiş güvenlik koruma katmanı, Düzey 3 yüksek güvenlik ayarlarına yakından eşler.
+[Sıfır Güven kimlik ve cihaz erişim yapılandırmalarında](microsoft-365-policies-configurations.md) belirtilen ilkeleri kullanarak Başlangıç noktası ve Kurumsal koruma katmanları Düzey 2 gelişmiş güvenlik ayarlarıyla yakından eşlenmiştir. Özelleştirilmiş güvenlik koruma katmanı, Düzey 3 yüksek güvenlik ayarlarına yakından eşler.
 
 |Koruma düzeyi  |Cihaz ilkesi |Daha fazla bilgi  |
 |---------|---------|---------|
@@ -310,25 +311,25 @@ Her yapılandırma düzeyi için belirli cihaz uyumluluğu ve cihaz kısıtlama 
 
 Android Enterprise, ikisi bu çerçevenin bir parçası olarak ele alınan çeşitli kayıt senaryolarını destekler:
 
-- [Android Enterprise iş profili](/intune/android-work-profile-enroll) – Bu kayıt modeli genellikle BT'nin iş ve kişisel veriler arasında net bir ayrım sınırı sağlamak istediği kişisel cihazlar için kullanılır. BT tarafından denetlenen ilkeler, iş verilerinin kişisel profile aktarılmamasını sağlar.
-- [Android Enterprise tam olarak yönetilen cihazlar](/intune/android-fully-managed-enroll) – bu cihazlar şirkete aittir, tek bir kullanıcıyla ilişkilendirilir ve kişisel kullanım için değil yalnızca iş için kullanılır.
+- [Android Kurumsal iş profili](/intune/android-work-profile-enroll) – Bu kayıt modeli genellikle kişisel cihazlar için kullanılır ve BURADA BT iş ve kişisel veriler arasında net bir ayrım sınırı sağlamak ister. BT tarafından denetlenen ilkeler, iş verilerinin kişisel profile aktarılmamasını sağlar.
+- [Android Kurumsal tam olarak yönetilen cihazlar](/intune/android-fully-managed-enroll) – bu cihazlar şirkete aittir, tek bir kullanıcıyla ilişkilendirilir ve kişisel kullanım için değil yalnızca iş için kullanılır.
 
-Android Enterprise güvenlik yapılandırma çerçevesi, iş profili ve tam olarak yönetilen senaryolar için rehberlik sağlayan birkaç farklı yapılandırma senaryosu halinde düzenlenmiştir.
+Android Kurumsal güvenlik yapılandırma çerçevesi, iş profili ve tam olarak yönetilen senaryolar için rehberlik sağlayan birkaç farklı yapılandırma senaryosu halinde düzenlenmiştir.
 
-Android Enterprise iş profili cihazları için:
+Android Kurumsal iş profili cihazları için:
 
 - İş profili artırılmış güvenlik (Düzey 2) – Microsoft, kullanıcıların iş veya okul verilerine eriştiği kişisel cihazlar için en düşük güvenlik yapılandırması olarak bu yapılandırmayı önerir. Bu yapılandırma parola gereksinimlerini tanıtır, iş ve kişisel verileri ayırır ve Android cihaz kanıtlamasını doğrular.
 - İş profili yüksek güvenlik (Düzey 3) – Microsoft, benzersiz olarak yüksek riskli belirli kullanıcılar veya gruplar tarafından kullanılan cihazlar için bu yapılandırmayı önerir (yetkisiz ifşanın kuruluşta önemli ölçüde maddi kayıplara neden olduğu yüksek oranda hassas verileri işleyen kullanıcılar). Bu yapılandırma mobil tehdit savunmasını veya Uç Nokta için Microsoft Defender tanıtır, en düşük Android sürümünü ayarlar, daha güçlü parola ilkeleri oluşturur ve iş ile kişisel ayrımı daha da kısıtlar.
 
-Android Enterprise tam olarak yönetilen cihazlar için:
+Android Kurumsal tam olarak yönetilen cihazlar için:
 
 - Tam olarak yönetilen temel güvenlik (Düzey 1) – Microsoft bu yapılandırmayı kurumsal bir cihaz için en düşük güvenlik yapılandırması olarak önerir. Bu yapılandırma, iş veya okul verilerine erişen çoğu mobil kullanıcı için geçerlidir. Bu yapılandırma parola gereksinimlerini tanıtır, en düşük Android sürümünü ayarlar ve belirli cihaz kısıtlamalarını belirler.
 - Tam olarak yönetilen gelişmiş güvenlik (Düzey 2) – Microsoft, kullanıcıların hassas veya gizli bilgilere eriştiği cihazlar için bu yapılandırmayı önerir. Bu yapılandırma daha güçlü parola ilkeleri oluşturur ve kullanıcı/hesap özelliklerini devre dışı bırakır.
 - Tam olarak yönetilen yüksek güvenlik (Düzey 3) - Microsoft, bu yapılandırmayı benzersiz olarak yüksek riskli belirli kullanıcılar veya gruplar tarafından kullanılan cihazlar için önerir (yetkisiz ifşanın kuruluşta önemli ölçüde maddi kayıplara neden olduğu yüksek oranda hassas verileri işleyen kullanıcılar). Bu yapılandırma en düşük Android sürümünü artırır, mobil tehdit savunması veya Uç Nokta için Microsoft Defender ekler ve ek cihaz kısıtlamaları uygular.
 
-[Sıfır Güven kimlik ve cihaz erişim yapılandırmalarında](microsoft-365-policies-configurations.md) belirtilen ilkeleri kullanarak Başlangıç noktası ve Enterprise koruma katmanları, kişisel cihazlar için Düzey 1 temel güvenliği ve tam olarak yönetilen cihazlar için Düzey 2 gelişmiş güvenlik ayarlarıyla yakından eşlenmiştir. Özelleştirilmiş güvenlik koruma katmanı, Düzey 3 yüksek güvenlik ayarlarına yakından eşler.
+[Sıfır Güven kimlik ve cihaz erişim yapılandırmalarında](microsoft-365-policies-configurations.md) belirtilen ilkeleri kullanan Başlangıç noktası ve Kurumsal koruma katmanları, kişisel cihazlar için Düzey 1 temel güvenliği ve tam olarak yönetilen cihazlar için Düzey 2 gelişmiş güvenlik ayarlarıyla yakından eşlenmiştir. Özelleştirilmiş güvenlik koruma katmanı, Düzey 3 yüksek güvenlik ayarlarına yakından eşler.
 
-Android Enterprise iş profili cihazları için:
+Android Kurumsal iş profili cihazları için:
 
 |Koruma düzeyi  |Cihaz ilkesi |Daha fazla bilgi  |
 |---------|---------|---------|
@@ -338,13 +339,13 @@ Android Enterprise iş profili cihazları için:
 |Enterprise     |Tam Olarak Yönetilen: Gelişmiş Güvenlik (Düzey 2)         |Düzey 2'de zorunlu kılınan ilke ayarları, düzey 1 için önerilen tüm ilke ayarlarını içerir ve yalnızca düzey 1'den daha fazla denetim ve daha karmaşık bir yapılandırma uygulamak için aşağıdaki ilke ayarlarını ekler veya güncelleştirir.         |
 |Özel güvenlik     |Yüksek güvenlik (Düzey 3)         |Düzey 3'te zorunlu kılınan ilke ayarları, düzey 1 ve 2 için önerilen tüm ilke ayarlarını içerir ve yalnızca düzey 2'den daha fazla denetim ve daha karmaşık bir yapılandırma uygulamak için aşağıdaki ilke ayarlarını ekler veya güncelleştirir.         |
 
-Her yapılandırma düzeyi için belirli cihaz uyumluluğu ve cihaz kısıtlama önerilerini görmek için [Android Enterprise Güvenlik Yapılandırma Çerçevesi'ni](/mem/intune/enrollment/android-configuration-framework) gözden geçirin.
+Her yapılandırma düzeyi için belirli cihaz uyumluluğu ve cihaz kısıtlama önerilerini görmek için [Android Kurumsal Güvenlik Yapılandırma Çerçevesi'ni](/mem/intune/enrollment/android-configuration-framework) gözden geçirin.
 
 ### <a name="recommended-settings-for-windows-10-and-later"></a>Windows 10 ve üzeri için önerilen ayarlar
 
 İlke oluşturma işleminin **2. Adımı: Uyumluluk ayarları** bölümünde yapılandırıldığı gibi, Windows 10 ve üzerini çalıştıran bilgisayarlar için aşağıdaki ayarlar önerilir.
 
-**Cihaz durumu > Windows Sistem Durumu Kanıtlama Hizmeti değerlendirme kuralları** için bu tabloya bakın.
+**Windows Sistem Durumu Kanıtlama Hizmeti değerlendirme kuralları > Cihaz** durumu için bu tabloya bakın.
 
 |Özellikler|Değer|Eylem|
 |---|---|---|

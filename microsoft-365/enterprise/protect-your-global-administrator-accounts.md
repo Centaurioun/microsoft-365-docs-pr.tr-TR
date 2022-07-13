@@ -11,6 +11,9 @@ ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - m365initiative-coredeploy
+- m365solution-m365-identity
+- m365solution-scenario
+- zerotrust-solution
 search.appverid:
 - MET150
 - MOE150
@@ -22,12 +25,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Bu makalede, Microsoft 365 kiracınıza ayrıcalıklı erişimi koruma hakkında bilgi sağlanır.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3da8a6279d122a056a168485145c171f9d3d7f5f
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: 6aebdd79f2870ca25ab866bccb66c1d1f680f701
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930207"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749341"
 ---
 # <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>Adım 2. Microsoft 365 ayrıcalıklı hesaplarınızı koruma
 
@@ -45,23 +48,23 @@ Microsoft, kuruluşunuzu korumaya yardımcı olacak özellikler sağlar, ancak y
     
 2. Ayrılmış Microsoft 365 ayrıcalıklı hesaplarınız için çok faktörlü kimlik doğrulamasını (MFA) yapılandırın ve en güçlü ikincil kimlik doğrulama biçimini kullanın.
 
-3. Sıfır Güven kimliği ve cihaz erişim önerileriyle ayrıcalıklı hesapları koruyun.
+3. Ayrıcalıklı hesapları Sıfır Güven kimlik ve cihaz erişim önerileriyle koruyun.
 
 > [!NOTE]
-> Ayrıcalıklı rollerinizin güvenliğini sağlamak için kiracınıza ayrıcalıklı erişimin güvenliğini sağlamak [için Azure AD rollerine yönelik en iyi yöntemler'e](/azure/active-directory/roles/best-practices) göz atın.
+> Ayrıcalıklı rollerinizin güvenliğini sağlamak için kiracınıza ayrıcalıklı erişimin güvenliğini sağlamak [için Azure AD rolleri için en iyi yöntemler'e](/azure/active-directory/roles/best-practices) göz atın.
 
 ## <a name="1-create-dedicated-privileged-cloud-based-user-accounts-and-use-them-only-when-necessary"></a>1. Ayrılmış, ayrıcalıklı, bulut tabanlı kullanıcı hesapları oluşturun ve bunları yalnızca gerektiğinde kullanın
 
-Yönetici rolleri atanmış günlük kullanıcı hesaplarını kullanmak yerine, Azure AD'de yönetici rollerine sahip ayrılmış kullanıcı hesapları oluşturun. 
+Yönetici rolleri atanmış günlük kullanıcı hesaplarını kullanmak yerine, Azure AD yönetici rollerine sahip ayrılmış kullanıcı hesapları oluşturun. 
 
 Şu andan itibaren, yalnızca yönetici ayrıcalıkları gerektiren görevler için ayrılmış ayrıcalıklı hesaplarla oturum açarsınız. Diğer tüm Microsoft 365 yönetimi, kullanıcı hesaplarına başka yönetim rolleri atanarak yapılmalıdır.
   
 > [!NOTE]
 > Bunun için günlük kullanıcı hesabınız olarak oturumu kapatmak ve ayrılmış bir yönetici hesabıyla oturum açmak için ek adımlar gerekir. Ancak bunun yalnızca yönetici işlemleri için zaman zaman yapılması gerekir. Yönetici hesabı ihlalinden sonra Microsoft 365 aboneliğinizi kurtarmanın çok daha fazla adım gerektirdiğini göz önünde bulundurun.
 
-Azure AD'nin yanlışlıkla kilitlenmesini önlemek için [acil durum erişim hesapları](/azure/active-directory/roles/security-emergency-access) da oluşturmanız gerekir.
+Ayrıca, yanlışlıkla Azure AD kilitlenmesini önlemek için [acil durum erişim hesapları](/azure/active-directory/roles/security-emergency-access) oluşturmanız gerekir.
 
-Yönetici rollerinin isteğe bağlı, tam zamanında atanması için Azure AD Privileged Identity Management (PIM) ile ayrıcalıklı hesaplarınızı daha da koruyabilirsiniz. 
+Yönetici rollerinin isteğe bağlı, tam zamanında atanması için ayrıcalıklı hesaplarınızı Azure AD Privileged Identity Management (PIM) ile daha da koruyabilirsiniz. 
  
 ## <a name="2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-privileged-accounts"></a>2. Ayrılmış Microsoft 365 ayrıcalıklı hesaplarınız için çok faktörlü kimlik doğrulamasını yapılandırma
 
@@ -86,7 +89,7 @@ Microsoft 365 karma kimlik modeli kullanan daha büyük bir kuruluşsanız daha 
   
 Daha fazla bilgi için bkz. [Microsoft 365 için MFA](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
   
-## <a name="3-protect-administrator-accounts-with-zero-trust-identity-and-device-access-recommendations"></a>3. Sıfır Güven kimliği ve cihaz erişim önerileriyle yönetici hesaplarını koruma
+## <a name="3-protect-administrator-accounts-with-zero-trust-identity-and-device-access-recommendations"></a>3. yönetici hesaplarını Sıfır Güven kimlik ve cihaz erişim önerileriyle koruma
 
 Microsoft, güvenli ve üretken bir iş gücü sağlamaya yardımcı olmak için [kimlik ve cihaz erişimine](../security/office-365-security/microsoft-365-policies-configurations.md) yönelik bir dizi öneri sunar. Kimlik için şu makalelerdeki önerileri ve ayarları kullanın:
 
@@ -103,9 +106,9 @@ Yüksek ayrıcalıklı görevlerin yürütülmesinin mümkün olduğunca güvenl
   
 PAW'ı ayarlama yönergeleri için bkz [https://aka.ms/cyberpaw](/security/compass/privileged-access-devices). .
 
-Azure AD kiracınız ve yönetici hesaplarınız için Azure PIM'i etkinleştirmek [için PIM'i yapılandırma adımlarına](/azure/active-directory/active-directory-privileged-identity-management-configure) bakın.
+Azure AD kiracı ve yönetici hesaplarınız için Azure PIM'i etkinleştirmek [için PIM'i yapılandırma adımlarına](/azure/active-directory/active-directory-privileged-identity-management-configure) bakın.
 
-Siber saldırganlara karşı ayrıcalıklı erişimi güvenli hale getirmek için kapsamlı bir yol haritası geliştirmek için bkz. [Azure AD'de hibrit ve bulut dağıtımları için ayrıcalıklı erişimin güvenliğini sağlama](/azure/active-directory/admin-roles-best-practices).
+Siber saldırganlara karşı ayrıcalıklı erişimin güvenliğini sağlamaya yönelik kapsamlı bir yol haritası geliştirmek için bkz. [Azure AD'de hibrit ve bulut dağıtımları için ayrıcalıklı erişimin güvenliğini sağlama](/azure/active-directory/admin-roles-best-practices).
 
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
@@ -115,7 +118,7 @@ Yönetici hesaplarınız kalıcı yönetici olmaktan çıkar ve uygun yöneticil
   
 PIM'i kullanmak ve bu işlem, ayrıcalıklı hesaplarınızın saldırılara ve kötü amaçlı kullanıcıların kullanımına karşı savunmasız olduğu süreyi önemli ölçüde azaltır.
 
-PIM, Microsoft 365 E5'e dahil olan Azure Active Directory Premium P2 ile kullanılabilir. Alternatif olarak, yönetici hesaplarınız için tek tek Azure Active Directory Premium P2 lisansları satın alabilirsiniz.
+PIM, Microsoft 365 E5 dahil Azure Active Directory Premium P2 ile kullanılabilir. Alternatif olarak, yönetici hesaplarınız için tek tek Azure Active Directory Premium P2 lisansları satın alabilirsiniz.
   
 Daha fazla bilgi için bkz.:
 
@@ -141,7 +144,7 @@ Daha fazla bilgi için bkz [. Ayrıcalıklı erişim yönetimi](/office365/secur
 
 ### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Microsoft 365 günlüğü için güvenlik bilgileri ve olay yönetimi (SIEM) yazılımı
 
-Bir sunucuda çalıştırılan SIEM yazılımı, uygulamalar ve ağ donanımı tarafından oluşturulan güvenlik uyarılarının ve olaylarının gerçek zamanlı analizini gerçekleştirir. SIEM sunucunuzun analiz ve raporlama işlevlerine Microsoft 365 güvenlik uyarılarını ve olaylarını eklemesine izin vermek için Azure AD'yi SEIM'inizle tümleştirin. Bkz. [Azure Günlük Tümleştirmesine Giriş](/azure/security/security-azure-log-integration-overview).
+Bir sunucuda çalıştırılan SIEM yazılımı, uygulamalar ve ağ donanımı tarafından oluşturulan güvenlik uyarılarının ve olaylarının gerçek zamanlı analizini gerçekleştirir. SIEM sunucunuzun analiz ve raporlama işlevlerine Microsoft 365 güvenlik uyarılarını ve olaylarını eklemesine izin vermek için Azure AD SEIM'inizle tümleştirin. Bkz[. Azure Günlük Tümleştirmesi giriş](/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Sonraki adım
 

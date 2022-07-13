@@ -18,18 +18,19 @@ ms.collection:
 - deploy security baselines
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 68ce5f263f24d4ab3271425815834870c71f2a4a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: eab30a8a0801dcbdf95bee3c33f54a920850a6db
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938982"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749253"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>6. Adım. Cihaz riskini ve güvenlik temel hatlarına uyumluluğu izleyin
 
-Kuruluşunuz Uç Nokta için Microsoft Defender dağıttıktan sonra, Microsoft Intune Uç Nokta için Defender ile tümleştirerek cihazlarınız hakkında daha fazla içgörü ve koruma elde edebilirsiniz. Mobil cihazlar için bu, erişim koşulu olarak cihaz riskini izleme özelliğini içerir. Windows cihazlarda bu cihazların güvenlik temellerine uyumluluğunu izleyebilirsiniz. 
+Kuruluşunuz Uç Nokta için Microsoft Defender dağıttıktan sonra, Microsoft Intune Uç Nokta için Defender ile tümleştirerek cihazlarınız hakkında daha fazla içgörü ve koruma elde edebilirsiniz. Mobil cihazlar için bu, erişim koşulu olarak cihaz riskini izleme özelliğini içerir. Windows cihazları için bu cihazların güvenlik temellerine uyumluluğunu izleyebilirsiniz. 
 
 Uç Nokta için Microsoft Defender dağıtımı, ekleme uç noktalarını içerir. Uç noktaları eklemek için Intune kullandıysanız (önerilir), Microsoft Intune Zaten Uç Nokta için Defender'a bağlamışsınızdır. Uç Nokta için Defender'a uç noktaları eklemek için farklı bir yöntem kullandıysanız, [Intune ile Uç Nokta için Microsoft Defender](/mem/intune/protect/advanced-threat-protection-configure) arasında hizmet-hizmet bağlantısını ayarladığınızdan emin olmak için bkz. Intune'de Uç Nokta için Microsoft Defender yapılandırma. 
 
@@ -59,9 +60,9 @@ Tüm platformlar için mevcut cihaz uyumluluk ilkelerinde risk düzeyini ayarlay
 
 Şunlar için geçerlidir: Windows 10, Windows 11
 
-[5. Adım makalesi. Yapılandırma profillerini dağıtın](manage-devices-with-intune-configuration-profiles.md), Windows 10 ve Windows 11 için kullanılabilen güvenlik temellerini kullanarak yapılandırma profillerini kullanmaya başlamanızı önerir. Uç Nokta için Microsoft Defender ayrıca, uç nokta için Defender yığınındaki tüm güvenlik denetimlerini en iyi duruma getiren ayarlar sağlayan güvenlik temelleri de içerir; uç noktada algılama ve yanıtlama (EDR) ayarları da buna dahildir. Bunlar Microsoft Intune kullanılarak da dağıtılır.
+[5. Adım makalesi. Yapılandırma profillerini dağıtın](manage-devices-with-intune-configuration-profiles.md), Windows 10 ve Windows 11 için kullanılabilen güvenlik temellerini kullanarak yapılandırma profillerini kullanmaya başlamanızı önerir. Uç Nokta için Microsoft Defender ayrıca uç nokta algılama ve yanıt (EDR) ayarları da dahil olmak üzere Uç Nokta için Defender yığınındaki tüm güvenlik denetimlerini iyileştirici ayarlar sağlayan güvenlik temelleri içerir. Bunlar Microsoft Intune kullanılarak da dağıtılır.
 
-İdeal olarak, Uç Nokta için Defender'a eklenen cihazlar her iki temeli de dağıtılır: başlangıçta Windows güvenli hale getirmek için Windows Intune güvenlik temeli ve ardından Uç Nokta için Defender güvenlik denetimlerini en iyi şekilde yapılandırmak için üst katmanda yer alan Uç Nokta için Defender güvenlik temeli.
+İdeal olarak, Uç Nokta için Defender'a eklenen cihazlar her iki taban çizgisine de dağıtılır: Başlangıçta Windows'un güvenliğini sağlamak için Windows Intune güvenlik temeli ve ardından Uç Nokta için Defender güvenlik denetimlerini en iyi şekilde yapılandırmak için üst katmanda yer alan Uç Nokta için Defender güvenlik temeli.
 
 Riskler ve tehditlerle ilgili en son verilerden yararlanmak ve temeller geliştikçe çakışmaları en aza indirmek için, kullanıma sunuldukları anda her zaman temellerin en son sürümlerini tüm ürünlere uygulayın. 
 
@@ -74,7 +75,7 @@ Güvenlik temellerini dağıtmak ve bu ayarlara uyumluluğu izlemek için bu tab
 
 |Adım  |Açıklama  |
 |---------|---------|
-|1     |Temel kavramları gözden geçirin ve Uç Nokta için Microsoft Defender ile Windows Intune güvenlik temellerini karşılaştırın. <br><br>Önerileri öğrenmek için bkz. [Uç Nokta için Microsoft Defender güvenlik temeline uyumluluğu artırma](../security/defender-endpoint/configure-machines-security-baseline.md).<br><br>Kullanılabilir [güvenlik temelleri listesini ve çakışmaları nasıl önleyeceklerini gözden geçirmek için bkz. Intune'da Windows cihazları yapılandırmak ](/mem/intune/protect/security-baselines) için güvenlik temellerini kullanma.         |
+|1     |Temel kavramları gözden geçirin ve Uç Nokta için Microsoft Defender ve Windows Intune güvenlik temellerini karşılaştırın. <br><br>Önerileri öğrenmek için bkz. [Uç Nokta için Microsoft Defender güvenlik temeline uyumluluğu artırma](../security/defender-endpoint/configure-machines-security-baseline.md).<br><br>Kullanılabilir güvenlik temelleri listesini ve çakışmaları nasıl önleyeceklerini gözden geçirmek için bkz. [Intune'da Windows cihazlarını yapılandırmak ](/mem/intune/protect/security-baselines) için güvenlik temellerini kullanma.         |
 |2     |  Intune için Windows güvenlik temeli ayarlarını dağıtın. 5. Adım'daki yönergeleri izlediyseniz bunu zaten başarmış olabilirsiniz [. Yapılandırma profillerini dağıtma](manage-devices-with-intune-configuration-profiles.md).        |
 |3    |  Intune için Uç Nokta için Defender temel ayarlarını dağıtın. Profili oluşturmak ve temel sürümü seçmek için bkz. [Microsoft Intune güvenlik temeli profillerini yönetme](/mem/intune/protect/security-baselines-configure).<br><br>Buradaki yönergeleri de izleyebilirsiniz: [Uç Nokta için Microsoft Defender güvenlik temelini gözden geçirin ve atayın](../security/defender-endpoint/configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline).     |
 |4     | Uç Nokta için Defender'da [cihaz yapılandırma yönetiminde Güvenlik temeli kartını](../security/defender-endpoint/configure-machines.md) gözden geçirin.          |
