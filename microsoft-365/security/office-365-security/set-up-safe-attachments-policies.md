@@ -1,5 +1,5 @@
 ---
-title: Office 365 için Microsoft Defender Kasa Ekler ilkelerini ayarlama
+title: Office 365 için Microsoft Defender'de Güvenli Ekler ilkelerini ayarlama
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,18 +14,18 @@ search.appverid:
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
-description: Kuruluşunuzu e-postadaki kötü amaçlı dosyalardan korumak için Kasa Ekler ilkelerini tanımlama hakkında bilgi edinin.
+description: Kuruluşunuzu e-postadaki kötü amaçlı dosyalardan korumak için Güvenli Ekler ilkelerini tanımlama hakkında bilgi edinin.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 46b69c1bea0f967fe22c031397a8887f3399c99b
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: f93f264ac22be594bfb34601c3f243a2c7c145b4
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115575"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773169"
 ---
-# <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender Kasa Ekler ilkelerini ayarlama
+# <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de Güvenli Ekler ilkelerini ayarlama
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -34,58 +34,58 @@ ms.locfileid: "66115575"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Bu makale, [Office 365 için Microsoft Defender](whats-new-in-defender-for-office-365.md) sahip iş müşterilerine yöneliktir. Outlook'da ek taraması hakkında bilgi arayan bir ev kullanıcısıysanız bkz. [Gelişmiş Outlook.com güvenliği](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Bu makale, [Office 365 için Microsoft Defender](whats-new-in-defender-for-office-365.md) sahip iş müşterilerine yöneliktir. Outlook'ta ek tarama hakkında bilgi arayan bir ev kullanıcısıysanız bkz. [Gelişmiş Outlook.com güvenliği](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Kasa Ekler[, Exchange Online Protection'da](whats-new-in-defender-for-office-365.md) [(EOP) kötü amaçlı yazılımdan koruma](anti-malware-protection.md) tarafından tarandıktan sonra gelen e-posta iletilerindeki ekleri denetlemek için, ancak alıcılara teslim etmeden önce sanal bir ortam kullanan Office 365 için Microsoft Defender bir özelliktir. Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender Kasa Ekler](safe-attachments.md).
+Güvenli Ekler[, Exchange Online Protection](whats-new-in-defender-for-office-365.md) 'de [(EOP) kötü amaçlı yazılımdan koruma](anti-malware-protection.md) tarafından tarandıktan sonra gelen e-posta iletilerindeki ekleri denetlemek için, ancak alıcılara teslim etmeden önce sanal bir ortam kullanan Office 365 için Microsoft Defender bir özelliktir. Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender Güvenli Ekler](safe-attachments.md).
 
-Varsayılan Kasa Ekler ilkesi olmasa **da, Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi tüm alıcılara Kasa Ekler koruması sağlar (özel Kasa Ekler ilkelerinde tanımlanmayan kullanıcılar). Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Belirli kullanıcılar, gruplar veya etki alanları için geçerli Kasa Ekler ilkeleri oluşturmak için bu makaledeki yordamları da kullanabilirsiniz.
+Varsayılan Güvenli Ekler ilkesi olmasa **da, Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi tüm alıcılara (özel Güvenli Ekler ilkelerinde tanımlanmayan kullanıcılar) Güvenli Ekler koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Belirli kullanıcılar, gruplar veya etki alanları için geçerli olan Güvenli Ekler ilkeleri oluşturmak için bu makaledeki yordamları da kullanabilirsiniz.
 
-Kasa Ekler ilkelerini Microsoft 365 Defender portalında veya PowerShell'de (Exchange Online Exchange Online'de posta kutuları olan uygun Microsoft 365 kuruluşlar için PowerShell' de yapılandırabilirsiniz; tek başına EOP PowerShell posta kutularını Exchange Online, ancak Office 365 için Defender eklenti abonelikleriyle).
+Güvenli Ekler ilkelerini Microsoft 365 Defender portalında veya PowerShell'de (Exchange Online Exchange Online posta kutuları olan uygun Microsoft 365 kuruluşları için PowerShell'de; Exchange Online posta kutusu olmayan kuruluşlar için tek başına EOP PowerShell'de yapılandırabilirsiniz , ancak Office 365 için Defender eklenti abonelikleri ile).
 
-Kasa Ekler ilkesinin temel öğeleri şunlardır:
+Güvenli Ekler ilkesinin temel öğeleri şunlardır:
 
-- **Güvenli ek ilkesi**: Bilinmeyen kötü amaçlı yazılım algılamaları için eylemleri, belirli bir e-posta adresine kötü amaçlı yazılım ekleri içeren iletilerin gönderilip gönderilmeyebileceğini ve Kasa Ekler taraması tamamlanamadıysa iletilerin teslim edilip edilmeyeceğini belirtir.
+- **Güvenli ek ilkesi**: Bilinmeyen kötü amaçlı yazılım algılamaları için eylemleri, belirli bir e-posta adresine kötü amaçlı yazılım ekleri içeren iletilerin gönderilip gönderilmeyebileceğini ve Güvenli Ekler taraması tamamlanamadıysa iletilerin teslim edilip edilmeyeceğini belirtir.
 - **Güvenli ek kuralı**: Öncelik ve alıcı filtrelerini (ilkenin uygulandığı kişiler) belirtir.
 
-Microsoft 365 Defender portalında Kasa Ekler ilkelerini yönetirken bu iki öğe arasındaki fark belirgin değildir:
+Microsoft 365 Defender portalında Güvenli Ekler ilkelerini yönetirken bu iki öğe arasındaki fark belirgin değildir:
 
-- Kasa Ekler ilkesi oluşturduğunuzda, her ikisi için de aynı adı kullanarak aynı anda güvenli bir ek kuralı ve ilişkili güvenli ek ilkesi oluşturursunuz.
-- Kasa Ekler ilkesini değiştirdiğinizde ad, öncelik, etkin veya devre dışı ile ilgili ayarlar ve alıcı filtreleri güvenli ek kuralını değiştirir. Diğer tüm ayarlar ilişkili güvenli ek ilkesini değiştirir.
-- Kasa Ekler ilkesini kaldırdığınızda, güvenli ek kuralı ve ilişkili güvenli ek ilkesi kaldırılır.
+- Güvenli Ekler ilkesi oluşturduğunuzda, her ikisi için de aynı adı kullanarak aynı anda güvenli bir ek kuralı ve ilişkili güvenli ek ilkesi oluşturursunuz.
+- Güvenli Ekler ilkesini değiştirdiğinizde ad, öncelik, etkin veya devre dışı ile ilgili ayarlar ve alıcı filtreleri güvenli ek kuralını değiştirir. Diğer tüm ayarlar ilişkili güvenli ek ilkesini değiştirir.
+- Güvenli Ekler ilkesini kaldırdığınızda, güvenli ek kuralı ve ilişkili güvenli ek ilkesi kaldırılır.
 
-Exchange Online PowerShell veya tek başına EOP PowerShell'de ilkeyi ve kuralı ayrı ayrı yönetirsiniz. Daha fazla bilgi için, bu makalenin [devamında yer alan Kasa Ekler ilkelerini yapılandırmak için PowerShell veya tek başına EOP PowerShell Exchange Online kullanma](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) bölümüne bakın.
+Exchange Online PowerShell veya tek başına EOP PowerShell'de ilkeyi ve kuralı ayrı ayrı yönetirsiniz. Daha fazla bilgi için, bu makalenin devamında Yer alan [Güvenli Ekler ilkelerini yapılandırmak için PowerShell veya tek başına EOP PowerShell Exchange Online kullanma](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) bölümüne bakın.
 
 > [!NOTE]
-> Kasa Ekler ayarlarının genel ayarlar alanında, Kasa Ekler ilkelerine bağımlı olmayan özellikleri yapılandırabilirsiniz. Yönergeler için bkz[. Microsoft 365 E5'da SharePoint, OneDrive, Microsoft Teams ve Kasa Belgeleri için](turn-on-mdo-for-spo-odb-and-teams.md) [Kasa Eklerini](safe-docs.md) Açma.
+> Güvenli Ekler ayarlarının genel ayarlar alanında, Güvenli Ekler ilkelerine bağımlı olmayan özellikleri yapılandırabilirsiniz. Yönergeler için bkz. [Microsoft 365 E5'da SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekleri](turn-on-mdo-for-spo-odb-and-teams.md) ve [Güvenli Belgeler'i](safe-docs.md) açma.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
-- Microsoft 365 Defender portalını adresinde <https://security.microsoft.com>açarsınız. **Doğrudan Kasa Ekler** sayfasına gitmek için kullanın<https://security.microsoft.com/safeattachmentv2>.
+- Microsoft 365 Defender portalını adresinde <https://security.microsoft.com>açarsınız. Doğrudan **Güvenli Ekler** sayfasına gitmek için kullanın <https://security.microsoft.com/safeattachmentv2>.
 
-- Exchange Online PowerShell'e bağlanmak için bkz. [PowerShell'Exchange Online Bağlan](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [PowerShell'i Exchange Online Protection için Bağlan](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [Exchange Online Protection PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bu makaledeki yordamları gerçekleştirmeden önce izinlere ihtiyacınız vardır:
-  - Kasa Ekler ilkelerini oluşturmak, değiştirmek ve silmek için, Microsoft 365 Defender portalında **Kuruluş Yönetimi** veya **Güvenlik Yöneticisi** rol gruplarının üyesi **ve** **Exchange Online'da Kuruluş Yönetimi** rol grubunun üyesi olmanız gerekir.
-  - Kasa Ekler ilkelerine salt okunur erişim için, Microsoft 365 Defender portalında **Genel Okuyucu** veya **Güvenlik Okuyucusu** rol gruplarının üyesi olmanız gerekir.
+  - Güvenli Ekler ilkelerini oluşturmak, değiştirmek ve silmek için, Microsoft 365 Defender portalında **Kuruluş Yönetimi** veya **Güvenlik Yöneticisi** rol gruplarının üyesi **ve** **Exchange Online'da Kuruluş Yönetimi** rol grubunun üyesi olmanız gerekir.
+  - Güvenli Ekler ilkelerine salt okunur erişim için, Microsoft 365 Defender portalında **Genel Okuyucu** veya **Güvenlik Okuyucusu** rol gruplarının üyesi olmanız gerekir.
 
   Daha fazla bilgi için bkz[. Microsoft 365 Defender portalındaki İzinler](permissions-microsoft-365-security-center.md) ve [Exchange Online'deki İzinler](/exchange/permissions-exo/permissions-exo).
 
   **Notlar**:
 
-  - kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365 Defender portalında gerekli izinleri _ve_ Microsoft 365'deki diğer özellikler için izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+  - kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365 Defender portalında gerekli izinleri _ve_ Microsoft 365'teki diğer özellikler için izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
   - [Exchange Online'daki](/Exchange/permissions-exo/permissions-exo#role-groups) **Yalnızca Görüntüleme Kuruluş Yönetimi** rol grubu da özelliğe salt okunur erişim sağlar.
 
-- Kasa Ekler ilkeleri için önerilen ayarlarımız için bkz. [Ek ayarları Kasa](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
+- Güvenli Ekler ilkeleri için önerilen ayarlarımız için bkz. [Güvenli Ekler ayarları](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
 - Yeni veya güncelleştirilmiş bir ilkenin uygulanması için 30 dakikaya kadar bekleyin.
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies"></a>Kasa Ek ilkeleri oluşturmak için Microsoft 365 Defender portalını kullanma
+## <a name="use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies"></a>Güvenli Ekler ilkeleri oluşturmak için Microsoft 365 Defender portalını kullanma
 
-Microsoft 365 Defender portalında özel Kasa Ekleri ilkesi oluşturmak, her ikisi için de aynı adı kullanarak güvenli ek kuralını ve ilişkili güvenli ek ilkesini aynı anda oluşturur.
+Microsoft 365 Defender portalında özel Güvenli Ekler ilkesi oluşturmak, her ikisi için de aynı adı kullanarak güvenli ek kuralını ve ilişkili güvenli ek ilkesini aynı anda oluşturur.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümündeki** **E-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kasa Ekler'e** gidin. **Doğrudan Kasa Ekler** sayfasına gitmek için kullanın<https://security.microsoft.com/safeattachmentv2>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Ekler'e** gidin. Doğrudan **Güvenli Ekler** sayfasına gitmek için kullanın <https://security.microsoft.com/safeattachmentv2>.
 
-2. **Kasa Ekler** sayfasında Oluştur simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Oluştur'u seçin**.
+2. **Güvenli Ekler** sayfasında Oluştur simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Oluştur'u seçin**.
 
 3. İlke sihirbazı açılır. **İlkenizi adlandırın** sayfasında aşağıdaki ayarları yapılandırın:
    - **Ad**: İlke için benzersiz, açıklayıcı bir ad girin.
@@ -114,32 +114,32 @@ Microsoft 365 Defender portalında özel Kasa Ekleri ilkesi oluşturmak, her iki
    > - Alıcı: romain@contoso.com
    > - Alıcı şu üyelerin üyesidir: Yöneticiler
    >
-   > İlke, _romain@contoso.com yalnızca_ Yönetici gruplarının da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
+   > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
    >
-   > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler gruplarının da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
+   > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
 
    İşiniz bittiğinde **İleri'ye** tıklayın.
 
 5. **Ayarlar** sayfasında aşağıdaki ayarları yapılandırın:
 
-   - **Kasa Ekler bilinmeyen kötü amaçlı yazılım yanıtı**: Aşağıdaki değerlerden birini seçin:
+   - **Güvenli Ekler bilinmeyen kötü amaçlı yazılım yanıtı**: Aşağıdaki değerlerden birini seçin:
      - **Kapalı**: Genellikle bu değeri önermeyiz.
      - **Monitör**
      - **Engelle**: Bu varsayılan değerdir ve Standart ve Katı [önceden ayarlanmış güvenlik ilkelerinde](preset-security-policies.md) önerilen değerdir.
      - **Değiştirmek**
      - **Dinamik Teslim (Önizleme özelliği)**
 
-     Bu değerler [Kasa Ekler ilke ayarlarında](safe-attachments.md#safe-attachments-policy-settings) açıklanmıştır.
+     Bu değerler [Güvenli Ekler ilke ayarlarında](safe-attachments.md#safe-attachments-policy-settings) açıklanmıştır.
 
-   - **Karantina ilkesi**: Kasa Ekleri (**Engelle**, **Değiştir** veya **Dinamik Teslim**) tarafından karantinaya alınan iletilere uygulanan karantina ilkesini seçin. Karantina ilkeleri, kullanıcıların karantinaya alınan iletilere neler yapabileceğini ve kullanıcıların karantina bildirimleri alıp almayacağını tanımlar. Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md).
+   - **Karantina ilkesi**: Güvenli Ekler (**Engelle**, **Değiştir** veya **Dinamik Teslim**) tarafından karantinaya alınan iletilere uygulanan karantina ilkesini seçin. Karantina ilkeleri, kullanıcıların karantinaya alınan iletilere neler yapabileceğini ve kullanıcıların karantina bildirimleri alıp almayacağını tanımlar. Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md).
 
-     Boş değer, varsayılan karantina ilkesinin kullanıldığı anlamına gelir (Kasa Ekler tarafından e-posta algılamaları için AdminOnlyAccessPolicy). Daha sonra Kasa Ekler ilkesini düzenlediğinizde veya ayarları görüntülediğinizde varsayılan karantina ilkesi adı gösterilir.
+     Boş değer, varsayılan karantina ilkesinin kullanıldığı anlamına gelir (Güvenli Ekler tarafından e-posta algılamaları için AdminOnlyAccessPolicy). Daha sonra Güvenli Ekler ilkesini düzenlediğinizde veya ayarları görüntülediğinizde, varsayılan karantina ilkesi adı gösterilir.
 
    - **Algılanan ekleri olan iletileri yeniden yönlendirme**: **Yeniden yönlendirmeyi etkinleştir'i** seçerseniz, Analiz ve araştırma amacıyla kötü amaçlı yazılım **ekleri içeren iletiler göndermek üzere Belirtilen e-posta adresine engellenen, izlenen veya değiştirilen ekler içeren iletileri gönder kutusunda bir e-posta** adresi belirtebilirsiniz.
 
-     Standart ve Katı ilke ayarları için öneri, yeniden yönlendirmeyi etkinleştirmektir. Daha fazla bilgi için bkz. [Kasa Ekler ayarları](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
+     Standart ve Katı ilke ayarları için öneri, yeniden yönlendirmeyi etkinleştirmektir. Daha fazla bilgi için bkz [. Güvenli Ekler ayarları](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
-   - **Tarama tamamlanamadıysa Kasa Ekler algılama yanıtını uygulayın (zaman aşımı veya hatalar)**: **Kasa Ekler bilinmeyen kötü amaçlı yazılım yanıtı** tarafından belirtilen eylem, Kasa Ekler taraması tamamlanamadıklarında bile iletilerde gerçekleştirilen işlemdir. Bu seçeneği belirlediyseniz, her zaman **Yeniden yönlendirmeyi etkinleştir'i** seçin ve kötü amaçlı yazılım ekleri içeren iletiler göndermek için bir e-posta adresi belirtin. Aksi takdirde iletiler kaybolabilir.
+   - **Tarama tamamlanamadıysa Güvenli Ekler algılama yanıtını uygulayın (zaman aşımı veya hatalar)**: **Güvenli Ekler bilinmeyen kötü amaçlı yazılım yanıtı** tarafından belirtilen eylem, Güvenli Ekler taraması tamamlanamadıklarında bile iletilere uygulanır. Bu seçeneği belirlediyseniz, her zaman **Yeniden yönlendirmeyi etkinleştir'i** seçin ve kötü amaçlı yazılım ekleri içeren iletiler göndermek için bir e-posta adresi belirtin. Aksi takdirde iletiler kaybolabilir.
 
    İşiniz bittiğinde **İleri'ye** tıklayın.
 
@@ -149,32 +149,32 @@ Microsoft 365 Defender portalında özel Kasa Ekleri ilkesi oluşturmak, her iki
 
 7. Görüntülenen onay sayfasında **Bitti'ye** tıklayın.
 
-## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>Kasa Ekler ilkelerini görüntülemek için Microsoft 365 Defender portalını kullanma
+## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>Güvenli Ekler ilkelerini görüntülemek için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümündeki** **E-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kasa Ekler'e** gidin. **Doğrudan Kasa Ekler** sayfasına gitmek için kullanın<https://security.microsoft.com/safeattachmentv2>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Ekler'e** gidin. Doğrudan **Güvenli Ekler** sayfasına gitmek için kullanın <https://security.microsoft.com/safeattachmentv2>.
 
-2. **Kasa Ekler** sayfasında, ilke listesinde aşağıdaki özellikler görüntülenir:
+2. **Güvenli Ekler** sayfasında, ilkeler listesinde aşağıdaki özellikler görüntülenir:
    - **Ad**
    - **Durum**
    - **Öncelik**
 
 3. Ada tıklayarak bir ilke seçtiğinizde, ilke ayarları açılır öğede görüntülenir.
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>Kasa Ekler ilkelerini değiştirmek için Microsoft 365 Defender portalını kullanma
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>Güvenli Ekler ilkelerini değiştirmek için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kasa Ekler'e** gidin. **Doğrudan Kasa Ekler** sayfasına gitmek için kullanın<https://security.microsoft.com/safeattachmentv2>.
+1. I Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Ekler'e** gidin. Doğrudan **Güvenli Ekler** sayfasına gitmek için kullanın <https://security.microsoft.com/safeattachmentv2>.
 
-2. **Kasa Ekler** sayfasında, ada tıklayarak listeden bir ilke seçin.
+2. **Güvenli Ekler** sayfasında, ada tıklayarak listeden bir ilke seçin.
 
-3. Görüntülenen ilke ayrıntıları açılır öğesinde, bölümdeki ayarları değiştirmek için her bölümde **Düzenle'yi** seçin. Ayarlar hakkında daha fazla bilgi için, bu [makalenin önceki bölümlerinde yer alan Kasa Ekler ilkeleri oluşturmak için Microsoft 365 Defender portalını kullanma](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies) bölümüne bakın.
+3. Görüntülenen ilke ayrıntıları açılır öğesinde, bölümdeki ayarları değiştirmek için her bölümde **Düzenle'yi** seçin. Ayarlar hakkında daha fazla bilgi için bu [makalenin önceki bölümlerinde yer alan Güvenli Ekler ilkeleri oluşturmak için Microsoft 365 Defender portalını kullanma](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies) bölümüne bakın.
 
 bir ilkeyi etkinleştirmek veya devre dışı bırakmak ya da ilke öncelik sırasını ayarlamak için aşağıdaki bölümlere bakın.
 
-### <a name="enable-or-disable-safe-attachments-policies"></a>Kasa Ek ilkelerini etkinleştirme veya devre dışı bırakma
+### <a name="enable-or-disable-safe-attachments-policies"></a>Güvenli Ekler ilkelerini etkinleştirme veya devre dışı bırakma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümündeki** **E-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kasa Ekler'e** gidin. **Doğrudan Kasa Ekler** sayfasına gitmek için kullanın<https://security.microsoft.com/safeattachmentv2>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Ekler'e** gidin. Doğrudan **Güvenli Ekler** sayfasına gitmek için kullanın <https://security.microsoft.com/safeattachmentv2>.
 
-2. **Kasa Ekler** sayfasında, ada tıklayarak listeden bir ilke seçin.
+2. **Güvenli Ekler** sayfasında, ada tıklayarak listeden bir ilke seçin.
 
 3. Görüntülenen ilke ayrıntıları açılır öğesinin en üstünde aşağıdaki değerlerden birini görürsünüz:
    - **İlke kapalı**: İlkeyi açmak için Aç simgesine tıklayın ![.](../../media/m365-cc-sc-turn-on-off-icon.png) **seçeneğini açın** .
@@ -186,21 +186,21 @@ bir ilkeyi etkinleştirmek veya devre dışı bırakmak ya da ilke öncelik sır
 
 Ana ilke sayfasına döndüğünüzde, ilkenin **Durum** değeri **Açık** veya **Kapalı** olur.
 
-### <a name="set-the-priority-of-safe-attachments-policies"></a>Kasa Ek ilkelerinin önceliğini ayarlama
+### <a name="set-the-priority-of-safe-attachments-policies"></a>Güvenli Ekler ilkelerinin önceliğini ayarlama
 
-Varsayılan olarak, Kasa Ekler ilkelerine oluşturuldukları sırayı temel alan bir öncelik verilir (daha yeni ilkeler eski ilkelerden daha düşük önceliklidir). Düşük öncelik numarası, ilke için daha yüksek bir önceliği gösterir (0 en yüksek önceliktir) ve ilkeler öncelik sırasına göre işlenir (yüksek öncelikli ilkeler düşük öncelikli ilkelerden önce işlenir). hiçbir iki ilke aynı önceliğe sahip olamaz ve ilke işleme ilk ilke uygulandıktan sonra durur.
+Varsayılan olarak, Güvenli Ekler ilkelerine oluşturuldukları sırayı temel alan bir öncelik verilir (daha yeni ilkeler eski ilkelere göre daha düşük önceliklidir). Düşük öncelik numarası, ilke için daha yüksek bir önceliği gösterir (0 en yüksek önceliktir) ve ilkeler öncelik sırasına göre işlenir (yüksek öncelikli ilkeler düşük öncelikli ilkelerden önce işlenir). hiçbir iki ilke aynı önceliğe sahip olamaz ve ilke işleme ilk ilke uygulandıktan sonra durur.
 
 Öncelik sırası ve birden çok ilkenin nasıl değerlendirilip uygulandığı hakkında daha fazla bilgi için bkz [. E-posta korumasının sırası ve önceliği](how-policies-and-protections-are-combined.md).
 
-Kasa Ekler ilkeleri işlendikleri sırayla görüntülenir (ilk **ilkenin Öncelik** değeri 0'dır).
+Güvenli Ekler ilkeleri, işlendikleri sırayla görüntülenir (ilk ilkenin **Öncelik** değeri 0'dır).
 
-**Not**: Microsoft 365 Defender portalında, Kasa Ekler ilkesini oluşturduktan sonra önceliğini değiştirebilirsiniz. PowerShell'de, güvenli ek kuralını oluştururken varsayılan önceliği geçersiz kılabilirsiniz (bu, mevcut kuralların önceliğini etkileyebilir).
+**Not**: Microsoft 365 Defender portalında, Güvenli Ekler ilkesini oluşturduktan sonra yalnızca önceliğini değiştirebilirsiniz. PowerShell'de, güvenli ek kuralını oluştururken varsayılan önceliği geçersiz kılabilirsiniz (bu, mevcut kuralların önceliğini etkileyebilir).
 
 İlkenin önceliğini değiştirmek için, ilkenin özelliklerinde **Önceliği artır** veya **Önceliği azalt'a** tıklayın (Microsoft 365 Defender portalında **Öncelik** numarasını doğrudan değiştiremezsiniz). İlkenin önceliğini değiştirmek yalnızca birden çok ilkeniz varsa mantıklıdır.
 
-1. Microsoft 365 Defender portalında, İlkeler **bölümündeki** **E-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kasa Ekler'e** gidin.
+1. Microsoft 365 Defender portalında, **İlkeler** bölümünde **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Ekler'e** gidin.
 
-2. **Kasa Ekler** sayfasında, ada tıklayarak listeden bir ilke seçin.
+2. **Güvenli Ekler** sayfasında, ada tıklayarak listeden bir ilke seçin.
 
 3. Görüntülenen ilke ayrıntıları açılır öğesinin en üstünde, Geçerli öncelik değerine ve ilke sayısına göre **Önceliği artır** veya **Önceliği azalt** seçeneğini görürsünüz:
    - **Öncelik** değeri **0** olan ilkede yalnızca **Önceliği azalt** seçeneği kullanılabilir.
@@ -211,19 +211,19 @@ Kasa Ekler ilkeleri işlendikleri sırayla görüntülenir (ilk **ilkenin Öncel
 
 4. İşiniz bittiğinde ilke ayrıntıları açılır öğesinde **Kapat'a** tıklayın.
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>Kasa Ekler ilkelerini kaldırmak için Microsoft 365 Defender portalını kullanma
+## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>Güvenli Ekler ilkelerini kaldırmak için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümündeki** **E-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kasa Ekler'e** gidin. **Doğrudan Kasa Ekler** sayfasına gitmek için kullanın<https://security.microsoft.com/safeattachmentv2>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Ekler'e** gidin. Doğrudan **Güvenli Ekler** sayfasına gitmek için kullanın <https://security.microsoft.com/safeattachmentv2>.
 
-2. **Kasa Ekler** sayfasında, ilkenin adına tıklayarak listeden özel bir ilke seçin.
+2. **Güvenli Ekler** sayfasında, ilkenin adına tıklayarak listeden özel bir ilke seçin.
 
 3. Görüntülenen ilke ayrıntıları açılır öğesinin üst kısmında Diğer eylemler simgesine tıklayın ![.](../../media/m365-cc-sc-more-actions-icon.png) **Diğer eylemler** \> ![İlkeyi sil simgesi **İlkeyi**](../../media/m365-cc-sc-delete-icon.png) sil.
 
 4. Görüntülenen onay iletişim kutusunda **Evet'e** tıklayın.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies"></a>Exchange Online PowerShell veya tek başına EOP PowerShell kullanarak Kasa Ekler ilkelerini yapılandırma
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies"></a>Güvenli Ekler ilkelerini yapılandırmak için Exchange Online PowerShell veya tek başına EOP PowerShell kullanma
 
-Daha önce açıklandığı gibi, Kasa Ekler ilkesi güvenli bir ek ilkesinden ve güvenli bir ek kuralından oluşur.
+Daha önce açıklandığı gibi, Güvenli Ekler ilkesi güvenli bir ek ilkesinden ve güvenli bir ek kuralından oluşur.
 
 PowerShell'de, güvenli ek ilkeleriyle güvenli ek kuralları arasındaki fark belirgindir. Güvenli ek ilkelerini **-SafeAttachmentPolicy cmdlet'lerini kullanarak\*** yönetirsiniz ve **-SafeAttachmentRule cmdlet'lerini kullanarak\*** güvenli ek kurallarını yönetirsiniz.
 
@@ -231,9 +231,9 @@ PowerShell'de, güvenli ek ilkeleriyle güvenli ek kuralları arasındaki fark b
 - PowerShell'de, güvenli ek ilkesindeki ayarları ve güvenli ek kuralını ayrı ayrı değiştirirsiniz.
 - PowerShell'den güvenli bir ek ilkesini kaldırdığınızda, buna karşılık gelen güvenli ek kuralı otomatik olarak kaldırılmaz ve tam tersi de geçerlidir.
 
-### <a name="use-powershell-to-create-safe-attachments-policies"></a>Kasa Ek ilkeleri oluşturmak için PowerShell kullanma
+### <a name="use-powershell-to-create-safe-attachments-policies"></a>Güvenli Ekler ilkeleri oluşturmak için PowerShell kullanma
 
-PowerShell'de Kasa Ekleri ilkesi oluşturmak iki adımlı bir işlemdir:
+PowerShell'de Güvenli Ekler ilkesi oluşturmak iki adımlı bir işlemdir:
 
 1. Güvenli ek ilkesini oluşturun.
 2. Kuralın geçerli olduğu güvenli ek ilkesini belirten güvenli ek kuralını oluşturun.
@@ -258,10 +258,10 @@ New-SafeAttachmentPolicy -Name "<PolicyName>" -Enable $true [-AdminDisplayName "
 
 Bu örnek, aşağıdaki değerlerle Contoso All adlı güvenli bir ek ilkesi oluşturur:
 
-- Kasa Belgeler taramasıyla kötü amaçlı yazılım içerdiği belirlenen iletileri engelleyin (_Eylem_ parametresini kullanmıyoruz ve varsayılan değer ).`Block`
+- Güvenli Belgeler taramasıyla kötü amaçlı yazılım içerdiği tespit edilen iletileri engelleyin ( _Eylem_ parametresini kullanmıyoruz ve varsayılan değer olur `Block`).
 - _QuarantineTag_ parametresini kullanmadığımız için varsayılan [karantina ilkesi](quarantine-policies.md) kullanılır (AdminOnlyAccessPolicy).
 - Yeniden yönlendirme etkinleştirilir ve kötü amaçlı yazılım içerdiği bulunan iletiler analiz ve araştırma için sec-ops@contoso.com gönderilir.
-- Kasa Ekler taraması kullanılamıyorsa veya hatalarla karşılaşıyorsa, iletiyi teslim etmeyin (_ActionOnError_ parametresini kullanmıyoruz ve varsayılan değer olur`$true`).
+- Güvenli Ekler taraması kullanılamıyorsa veya hatalarla karşılaşıyorsa, iletiyi teslim etmeyin ( _ActionOnError_ parametresini kullanmıyoruz ve varsayılan değerdir `$true`).
 
 ```PowerShell
 New-SafeAttachmentPolicy -Name "Contoso All" -Enable $true -Redirect $true -RedirectAddress sec-ops@contoso.com
@@ -270,7 +270,7 @@ New-SafeAttachmentPolicy -Name "Contoso All" -Enable $true -Redirect $true -Redi
 Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy).
 
 > [!NOTE]
-> Güvenli bir ek [ilkesinde kullanılacak karantina ilkesini](quarantine-policies.md) belirtmeye yönelik ayrıntılı yönergeler için bkz. [Kasa Ekler ilkeleri'nde karantina ilkesini belirtmek için PowerShell kullanma](quarantine-policies.md#safe-attachments-policies-in-powershell).
+> Güvenli ek [ilkesinde kullanılacak karantina ilkesini](quarantine-policies.md) belirtmeye yönelik ayrıntılı yönergeler için bkz. [Güvenli Ekler ilkeleri'nde karantina ilkesini belirtmek için PowerShell kullanma](quarantine-policies.md#safe-attachments-policies-in-powershell).
 
 #### <a name="step-2-use-powershell-to-create-a-safe-attachment-rule"></a>2. Adım: Güvenli bir ek kuralı oluşturmak için PowerShell kullanma
 
@@ -349,7 +349,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-SafeAttachmentRu
 
 ### <a name="use-powershell-to-modify-safe-attachment-policies"></a>Güvenli ek ilkelerini değiştirmek için PowerShell kullanma
 
-PowerShell'de güvenli bir ek ilkesini yeniden adlandıramazsınız ( **Set-SafeAttachmentPolicy** cmdlet'inde _Name_ parametresi yoktur). Microsoft 365 Defender portalında Kasa Ekler ilkesini yeniden adlandırdığınızda, yalnızca güvenli ek _kuralını_ yeniden adlandırırsınız.
+PowerShell'de güvenli bir ek ilkesini yeniden adlandıramazsınız ( **Set-SafeAttachmentPolicy** cmdlet'inde _Name_ parametresi yoktur). Microsoft 365 Defender portalında Güvenli Ekler ilkesini yeniden adlandırdığınızda, yalnızca güvenli ek _kuralını_ yeniden adlandırırsınız.
 
 Aksi takdirde, bu makalenin önceki bölümlerinde yer alan [1. Adım: PowerShell kullanarak güvenli ek ilkesi oluşturma bölümünde açıklandığı gibi güvenli bir ek ilkesi](#step-1-use-powershell-to-create-a-safe-attachment-policy) oluşturduğunuzda da aynı ayarlar kullanılabilir.
 
@@ -362,7 +362,7 @@ Set-SafeAttachmentPolicy -Identity "<PolicyName>" <Settings>
 Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safeattachmentpolicy).
 
 > [!NOTE]
-> Güvenli bir ek [ilkesinde kullanılacak karantina ilkesini](quarantine-policies.md) belirtmeye yönelik ayrıntılı yönergeler için bkz. [Kasa Ekler ilkeleri'nde karantina ilkesini belirtmek için PowerShell kullanma](quarantine-policies.md#safe-attachments-policies-in-powershell).
+> Güvenli ek [ilkesinde kullanılacak karantina ilkesini](quarantine-policies.md) belirtmeye yönelik ayrıntılı yönergeler için bkz. [Güvenli Ekler ilkeleri'nde karantina ilkesini belirtmek için PowerShell kullanma](quarantine-policies.md#safe-attachments-policies-in-powershell).
 
 ### <a name="use-powershell-to-modify-safe-attachment-rules"></a>Güvenli ek kurallarını değiştirmek için PowerShell kullanma
 
@@ -380,7 +380,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-SafeAttachmentRu
 
 ### <a name="use-powershell-to-enable-or-disable-safe-attachment-rules"></a>Güvenli ek kurallarını etkinleştirmek veya devre dışı bırakmak için PowerShell kullanma
 
-PowerShell'de güvenli bir ek kuralının etkinleştirilmesi veya devre dışı bırakılması, Kasa Ekler ilkesinin tamamını (güvenli ek kuralı ve atanan güvenli ek ilkesi) etkinleştirir veya devre dışı bırakır.
+PowerShell'de güvenli bir ek kuralının etkinleştirilmesi veya devre dışı bırakılması, Güvenli Ekler ilkesinin tamamını (güvenli ek kuralı ve atanan güvenli ek ilkesi) etkinleştirir veya devre dışı bırakır.
 
 PowerShell'de güvenli bir ek kuralını etkinleştirmek veya devre dışı bırakmak için şu sözdizimini kullanın:
 
@@ -460,9 +460,9 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz [. Remove-SafeAttachme
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Bu yordamların işe yaramış olduğunu nasıl anlarsınız?
 
-Kasa Ekler ilkelerini başarıyla oluşturduğunuzu, değiştirdiğinizde veya kaldırdığınızdan emin olmak için aşağıdaki adımlardan herhangi birini yapın:
+Güvenli Ekler ilkelerini başarıyla oluşturduğunuzu, değiştirdiğinizde veya kaldırdığınızdan emin olmak için aşağıdaki adımlardan birini yapın:
 
-- konumundaki **Microsoft 365 Defender** portalının <https://security.microsoft.com/safeattachmentv2>Kasa Ekler sayfasında, ilkelerin listesini, **Durum** değerlerini ve **Öncelik** değerlerini doğrulayın. Daha fazla ayrıntı görüntülemek için, ada tıklayarak listeden ilkeyi seçin ve açılır listede ayrıntıları görüntüleyin.
+- konumundaki Microsoft 365 Defender portalındaki <https://security.microsoft.com/safeattachmentv2>**Güvenli Ekler** sayfasında, ilkelerin listesini, **Durum** değerlerini ve **Öncelik** değerlerini doğrulayın. Daha fazla ayrıntı görüntülemek için, ada tıklayarak listeden ilkeyi seçin ve açılır listede ayrıntıları görüntüleyin.
 
 - Exchange Online PowerShell'de veya PowerShell'Exchange Online Protection değerini ilkenin veya kuralın adıyla değiştirin\<Name\>, aşağıdaki komutu çalıştırın ve ayarları doğrulayın:
 
@@ -474,4 +474,4 @@ Kasa Ekler ilkelerini başarıyla oluşturduğunuzu, değiştirdiğinizde veya k
   Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
-Kasa Eklerinin iletileri taradığını doğrulamak için kullanılabilir Office 365 için Defender raporlarını denetleyin. Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında Office 365 için Defender](threat-explorer.md) [için raporları görüntüleme](view-reports-for-mdo.md) ve Gezgini Kullanma.
+Güvenli Eklerin iletileri taradığını doğrulamak için kullanılabilir Office 365 için Defender raporları denetleyin. Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında Office 365 için Defender](threat-explorer.md) [için raporları görüntüleme](view-reports-for-mdo.md) ve Gezgini Kullanma.

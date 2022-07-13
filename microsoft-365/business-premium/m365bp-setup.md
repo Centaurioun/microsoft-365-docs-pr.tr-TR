@@ -15,12 +15,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: b76735130d768edfa9c71b25081040a7f4b6718c
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: f769d79baa2dc17abe179f09af3bdb6f4571440c
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686019"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771339"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'yı ayarlama
 
@@ -45,12 +45,13 @@ Kurulum işleminize başlamadan önce aşağıdaki gereksinimleri karşıladığ
 
 ## <a name="guided-setup-process"></a>Destekli kurulum işlemi
 
-Microsoft 365 İş Ekstra destekli bir işlem içerir. Aşağıdaki videoda, Microsoft 365 İş Ekstra için de geçerli olan Microsoft 365 İş Standart için kılavuzlu kurulum işlemi gösterilmektedir.<br/><br/>
+Microsoft 365 İş Ekstra destekli bir işlem içerir. Aşağıdaki videoda, Microsoft 365 İş Ekstra için de geçerli olan Microsoft 365 İş Standart için kılavuzlu kurulum işlemi gösterilmektedir. Kılavuzlu kurulum işlemini tamamladıktan sonra [güvenliği artırmaya](m365bp-security-overview.md) devam ettiğinizden emin olun.<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
 > Kullanıcıları ekledikten sonra, onlara [Çalışan hızlı kurulum kılavuzunun](../admin/setup/employee-quick-setup.md) bağlantısını verin. Kılavuz, oturum açma, Office uygulamalarını alma ve dosyaları kaydetme, kopyalama ve paylaşma işlemlerinde onlara yol gösterir.
+> [Güvenliği artırma'ya](m365bp-security-overview.md) devam edin.
 
 ## <a name="work-with-a-microsoft-partner"></a>Bir Microsoft iş ortağıyla çalışma
 

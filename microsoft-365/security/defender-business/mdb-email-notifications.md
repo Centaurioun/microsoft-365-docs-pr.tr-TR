@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b6ffc1325eb71bf366761545c8e21bfe5da3b4fa
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 62f21a13578850b1d66f7ff26b0b360adecb7875
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090112"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66770931"
 ---
 # <a name="set-up-email-notifications"></a>E-posta bildirimlerini ayarlama
 
@@ -42,11 +42,11 @@ E-posta bildirimlerini ayarlarken, aşağıdaki tabloda açıklandığı gibi ik
 | Uyarılar & güvenlik açıkları  | Cihazlarda tehditler algılandığından uyarılar oluşturulduğunda veya yeni açıklardan yararlanma veya güvenlik açığı olayları algılandığında alıcılar bir e-posta alır. |
 
 > [!TIP]
-> **Güvenlik ekibinizin yeni uyarılar veya güvenlik açıkları hakkında bilgi edinmesi için tek yol e-posta bildirimleri değildir**.
+> **Email bildirimleri, güvenlik ekibinizin yeni uyarılar veya güvenlik açıkları hakkında bilgi edinebileceği tek yol değildir**.
 > 
-> E-posta bildirimleri, güvenlik ekibinizin gerçek zamanlı olarak bilgilendirilmesine yardımcı olmak için kullanışlı bir yoldur. Ama başkaları da var! Örneğin, güvenlik ekibiniz Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) her oturum açtığında yeni tehditleri, uyarıları ve güvenlik açıklarını vurgulayan kartlar görür. İş için Defender, güvenlik ekibinizin oturum açar açmaz önem verdiği önemli bilgileri vurgulamak üzere tasarlanmıştır.
+> Email bildirimleri, güvenlik ekibinizin gerçek zamanlı olarak bilgilendirilmesine yardımcı olmak için kullanışlı bir yoldur. Ama başkaları da var! Örneğin, güvenlik ekibiniz Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) her oturum açtığında yeni tehditleri, uyarıları ve güvenlik açıklarını vurgulayan kartlar görür. İş için Defender, güvenlik ekibinizin oturum açar açmaz önem verdiği önemli bilgileri vurgulamak üzere tasarlanmıştır.
 > 
-> Güvenlik ekibiniz bilgileri görüntülemek için gezinti bölmesinde **Olaylar'ı** da seçebilir. Daha fazla bilgi için bkz. [İş için Microsoft Defender olayları görüntüleme ve yönetme](mdb-view-manage-incidents.md).
+> Güvenlik ekibiniz bilgileri görüntülemek için gezinti bölmesinde **Olaylar'ı** da seçebilir. Daha fazla bilgi için bkz. [İş için Defender'da olayları görüntüleme ve yönetme](mdb-view-manage-incidents.md).
 
 ## <a name="view-and-edit-email-notifications"></a>E-posta bildirimlerini görüntüleme ve düzenleme
 
@@ -54,7 +54,7 @@ E-posta bildirimlerini ayarlarken, aşağıdaki tabloda açıklandığı gibi ik
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın.
 
-2. Gezinti bölmesinde **Ayarlar** ve ardından **Uç Noktalar'ı** seçin. Ardından **Genel'in** altında **E-posta bildirimleri'ni** seçin. 
+2. Gezinti bölmesinde **Ayarlar'ı** ve ardından **Uç Noktalar'ı** seçin. Ardından **, Genel'in** altında **Email bildirimleri'ni** seçin. 
 
 3. Uyarılar ve **Güvenlik Açıkları** sekmelerindeki bilgileri gözden geçirin.
 
@@ -71,4 +71,4 @@ E-posta bildirimlerini ayarlarken, aşağıdaki tabloda açıklandığı gibi ik
 
 Devam et:
 
-- [4. Adım: Cihazları İş için Microsoft Defender ekleme](mdb-onboard-devices.md)
+- [4. Adım: Cihazları İş için Defender'a ekleme](mdb-onboard-devices.md)

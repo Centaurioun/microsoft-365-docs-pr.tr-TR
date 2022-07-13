@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 6b0c67aeac244b214e5c017511192225be05d454
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 6c7fdf4c7c2a2311d0a7651de4adb428d9c456cd
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663206"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772367"
 ---
 # <a name="use-your-vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'de güvenlik açığı yönetimi panonuzu kullanma
 
-İş için Microsoft Defender, güvenlik ekibinize zaman ve çaba kazandırmak için tasarlanmış bir güvenlik açığı yönetim panosu içerir. Maruz kalma puanı sağlamaya ek olarak, kullanıma sunulan cihazlar ve güvenlik önerileri hakkındaki bilgileri de görüntüleyebilirsiniz. Tehdit & güvenlik açığı yönetim panonuzu kullanarak:
+İş için Defender, güvenlik ekibinize zaman ve çaba kazandırmak için tasarlanmış bir güvenlik açığı yönetim panosu içerir. Maruz kalma puanı sağlamaya ek olarak, kullanıma sunulan cihazlar ve güvenlik önerileri hakkındaki bilgileri de görüntüleyebilirsiniz. Tehdit & güvenlik açığı yönetim panonuzu kullanarak:
 
 - Şirketinizdeki cihazlarla ilişkili pozlama puanınızı görüntüleme
 - Cihazlarla ilgili engelli iletişimleri ele alma, güvenlik duvarı korumasını açma veya Microsoft Defender Virüsten Koruma tanımlarını güncelleştirme gibi en önemli güvenlik önerilerinizi görüntüleyin
@@ -35,6 +35,6 @@ ms.locfileid: "66663206"
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [İş için Microsoft Defender'deki öğreticiler ve simülasyonlar](mdb-tutorials.md)
-- [Cihazları İş için Microsoft Defender ekleme](mdb-onboard-devices.md)
-- [İş için Microsoft Defender'de ilkeleri görüntüleme veya düzenleme](mdb-view-edit-create-policies.md)
+- [İş için Defender'da öğreticiler ve simülasyonlar](mdb-tutorials.md)
+- [Cihazları İş için Defender'a ekleme](mdb-onboard-devices.md)
+- [İş için Defender'da ilkeleri görüntüleme veya düzenleme](mdb-view-edit-create-policies.md)

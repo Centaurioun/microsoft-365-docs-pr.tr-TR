@@ -17,14 +17,14 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection (EOP) ve Office 365 için Microsoft Defender'de kullanılabilen kimlik avı önleme ilkeleri hakkında bilgi edinebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a1265e70c0d22182e8ee4db865eeb53ac8168b7
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: cb33af08174890565994ffc253cf2332c01c31eb
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115905"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771009"
 ---
-# <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365'de kimlik avı önleme ilkeleri
+# <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365'te kimlik avı önleme ilkeleri
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "66115905"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Kimlik avı koruması ayarlarını yapılandırma ilkeleri, Exchange Online posta kutuları, Exchange Online posta kutusu olmayan tek başına Exchange Online Protection (EOP) kuruluşları ve Microsoft 365 kuruluşlarda kullanılabilir ve Office 365 için Microsoft Defender kuruluşlar.
+Kimlik avı koruması ayarlarını yapılandırma ilkeleri Exchange Online posta kutuları, Exchange Online posta kutusu olmayan tek başına Exchange Online Protection (EOP) kuruluşlar ve Office 365 için Microsoft Defender kuruluşlar.
 
 Office 365 için Microsoft Defender kuruluş örnekleri şunlardır:
 
@@ -50,7 +50,7 @@ EOP'deki kimlik avı önleme ilkeleri ile Office 365 için Defender'deki kimlik 
 |Özel ilkeler oluşturma|![Onay işareti.](../../media/checkmark.png)|![Onay işareti.](../../media/checkmark.png)|
 |Ortak ilke ayarları<sup>\*</sup>|![Onay işareti.](../../media/checkmark.png)|![Onay işareti.](../../media/checkmark.png)|
 |Kimlik sahtekarı ayarları|![Onay işareti.](../../media/checkmark.png)|![Onay işareti.](../../media/checkmark.png)|
-|İlk kişi güvenlik ipucu|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|
+|İlk temas emniyet ipucu|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|
 |Kimliğe bürünme ayarları||![Onay işareti](../../media/checkmark.png)|
 |Gelişmiş kimlik avı eşikleri||![Onay işareti](../../media/checkmark.png)|
 
@@ -77,7 +77,7 @@ Aşağıdaki ilke ayarları EOP ve Office 365 için Defender kimlik avı önleme
 
   - **Kullanıcılar**: Kuruluşunuzdaki bir veya daha fazla posta kutusu, posta kullanıcısı veya posta kişisi.
   - **Gruplar**: Kuruluşunuzdaki bir veya daha fazla grup.
-  - **Etki alanları**: Microsoft 365'da yapılandırılmış [kabul edilen etki alanlarından](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) biri veya daha fazlası.
+  - **Etki alanları**: Microsoft 365'te yapılandırılmış [kabul edilen etki alanlarından](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) biri veya daha fazlası.
 
   - **Bu kullanıcıları, grupları ve etki alanlarını dışlayın**: İlke için özel durumlar. Ayarlar ve davranış, koşullarla tam olarak benzerdir:
     - **Kullanıcılar**
@@ -92,13 +92,13 @@ Aşağıdaki ilke ayarları EOP ve Office 365 için Defender kimlik avı önleme
   > - Alıcı: romain@contoso.com
   > - Alıcı şu üyelerin üyesidir: Yöneticiler
   >
-  > İlke, _romain@contoso.com yalnızca_ Yönetici gruplarının da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
+  > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
   >
-  > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler gruplarının da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
+  > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
 
 ## <a name="spoof-settings"></a>Kimlik sahtekarı ayarları
 
-Kimlik sahtekarlığına, e-posta iletisindeki Kimden adresi (e-posta istemcilerinde gösterilen gönderen adresi) e-posta kaynağının etki alanıyla eşleşmediğinde kullanılır. Kimlik sahtekarlığı hakkında daha fazla bilgi için bkz. [Microsoft 365'de kimlik sahtekarlığı önleme koruması](anti-spoofing-protection.md).
+Kimlik sahtekarlığına, e-posta iletisindeki Kimden adresi (e-posta istemcilerinde gösterilen gönderen adresi) e-posta kaynağının etki alanıyla eşleşmediğinde kullanılır. Kimlik sahtekarlığı hakkında daha fazla bilgi için bkz. [Microsoft 365'te kimlik sahtekarlığı önleme koruması](anti-spoofing-protection.md).
 
 Aşağıdaki kimlik sahtekarlığı ayarları EOP ve Office 365 için Defender kimlik avı önleme ilkelerinde kullanılabilir:
 
@@ -112,16 +112,16 @@ Aşağıdaki kimlik sahtekarlığı ayarları EOP ve Office 365 için Defender k
   > [!NOTE]
   >
   > - Kimlik sahtekarlığı önleme koruması varsayılan kimlik avı önleme ilkesinde ve oluşturduğunuz yeni özel kimlik avı önleme ilkelerinde varsayılan olarak etkindir.
-  > - MX kaydınız Microsoft 365 işaret etmiyorsa kimlik sahtekarlığı önleme korumasını devre dışı bırakmanız gerekmez; bunun yerine Bağlayıcılar için Gelişmiş Filtreleme'yi etkinleştirirsiniz. Yönergeler için bkz. [Exchange Online'da Bağlayıcılar için Gelişmiş Filtreleme](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > - MX kaydınız Microsoft 365'e işaret etmiyorsa kimlik sahtekarlığı önleme korumasını devre dışı bırakmanız gerekmez; Bunun yerine Bağlayıcılar için Gelişmiş Filtreleme'yi etkinleştirirsiniz. Yönergeler için bkz. [Exchange Online'da Bağlayıcılar için Gelişmiş Filtreleme](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
   > - Kimlik sahtekarlığı önleme korumasını devre dışı bırakmak yalnızca [bileşik kimlik doğrulama](email-validation-and-authentication.md#composite-authentication) denetimlerinden _örtük_ kimlik sahtekarlığı korumasını devre dışı bırakır. Gönderen _açık_ [DMARC](use-dmarc-to-validate-email.md) başarısız olursa ilkenin karantinaya alınacağı veya reddedileceği yeri denetler, ileti yine de karantinaya alınır veya reddedilir.
 
 - **Kimliği doğrulanmamış gönderen göstergeleri**: **Güvenlik ipuçları & göstergeler** bölümünde yalnızca kimlik sahtekarı zekası açıkken kullanılabilir. Sonraki bölümdeki ayrıntılara bakın.
 - **Eylemler**: Engellenen kimlik sahtekarlığı gönderenlerden gelen iletiler için (kimlik sahtekarlığı zekası tarafından otomatik olarak engellenir veya Kiracı İzin Ver/Engelle listesinde el ile engellenir), iletiler üzerinde gerçekleştireceğiniz eylemi de belirtebilirsiniz:
-  - **İletileri alıcıların Gereksiz E-posta klasörlerine taşıma**: Bu varsayılan değerdir. İleti posta kutusuna teslim edilir ve Gereksiz E-posta klasörüne taşınır. Daha fazla bilgi için bkz[. Microsoft 365'da Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **İletileri alıcıların Gereksiz Email klasörlerine taşıma**: Bu varsayılan değerdir. İleti posta kutusuna teslim edilir ve Gereksiz Email klasörüne taşınır. Daha fazla bilgi için bkz[. Microsoft 365'te Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md).
   - **İletiyi karantinaya** al: İletiyi hedeflenen alıcılar yerine karantinaya gönderir. Karantina hakkında bilgi için aşağıdaki makalelere bakın:
-    - [Microsoft 365'de karantinaya alın](quarantine-email-messages.md)
-    - [karantinaya alınan iletileri ve dosyaları Microsoft 365'da yönetici olarak yönetme](manage-quarantined-messages-and-files.md)
-    - [karantinaya alınan iletileri Microsoft 365'de kullanıcı olarak bulma ve bırakma](find-and-release-quarantined-messages-as-a-user.md)
+    - [Microsoft 365'te karantinaya alın](quarantine-email-messages.md)
+    - [Microsoft 365'te karantinaya alınan iletileri ve dosyaları yönetici olarak yönetme](manage-quarantined-messages-and-files.md)
+    - [Microsoft 365'te karantinaya alınan iletileri kullanıcı olarak bulma ve bırakma](find-and-release-quarantined-messages-as-a-user.md)
 
     **İletiyi karantinaya al'ı** seçerseniz, kimlik sahtekarlığına karşı koruma tarafından karantinaya alınan iletilere uygulanan karantina ilkesini de seçebilirsiniz. Karantina ilkeleri, kullanıcıların karantinaya alınan iletilere neler yapabileceğini ve kullanıcıların karantina bildirimleri alıp almayacağını tanımlar. Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md).
 
@@ -140,25 +140,25 @@ Soru işaretinin veya etiketin belirli gönderenlerden gelen iletilere eklenmesi
   - Gönderenin fotoğrafındaki soru işareti için SPF veya DKIM en önemlileridir.
   - via etiketi için DKIM imzasında etki alanını onaylayın veya **MAIL FROM** adresi, Kimden adresindeki etki alanıyla eşleşir (veya bir alt etki alanıdır).
 
-Daha fazla bilgi için bkz. [Outlook.com'da şüpheli iletileri tanımlama ve Web üzerinde Outlook](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
+Daha fazla bilgi için bkz. [Outlook.com ve Web üzerinde Outlook şüpheli iletileri tanımlama](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
-## <a name="first-contact-safety-tip"></a>İlk kişi güvenlik ipucu
+## <a name="first-contact-safety-tip"></a>İlk temas emniyet ipucu
 
-**İlk kişi güvenlik ipucu ayarlarını göster** EOP ve Office 365 için Defender kuruluşlarında kullanılabilir ve kimlik sahtekarlığı zekası veya kimliğe bürünme koruma ayarlarına bağımlılığı yoktur. güvenlik ipucu aşağıdaki senaryolarda alıcılara gösterilir:
+**İlk kişi güvenliğini göster ipucu** ayarları EOP ve Office 365 için Defender kuruluşlarında kullanılabilir ve kimlik sahtekarlığı zekası veya kimliğe bürünme koruması ayarlarına bağımlılığı yoktur. Güvenlik ipucu aşağıdaki senaryolarda alıcılara gösterilir:
 
 - Gönderenden ilk kez ileti aldıkları zaman
 - Genellikle gönderenden ileti alamazlar.
 
-:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="İlk kişi, bir alıcısı olan iletiler için güvenlik ipucu" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
+:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="Bir alıcısı olan iletiler için ilk kişi güvenliği ipucu" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
 
-:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="İlk kişi, birden çok alıcısı olan iletiler için güvenlik ipucu" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
+:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Birden çok alıcısı olan iletiler için İlk kişi güvenliği ipucu" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
 
 Bu özellik olası kimliğe bürünme saldırılarına karşı ek bir güvenlik koruması katmanı ekler, bu nedenle etkinleştirmenizi öneririz.
 
-İlk kişi güvenlik ipucu ayrıca iletilerde **etkinleştir** (bu özellik hala kullanılabilse de) değeriyle **X-MS-Exchange-EnableFirstContactSafetyTip** adlı üst bilgiyi ekleyen posta akışı kuralları (aktarım kuralları olarak da bilinir) oluşturma gereksiniminin yerini alır.
+İlk kişi güvenliği ipucu, **X-MS-Exchange-EnableFirstContactSafetyTip** adlı üst bilgiyi iletilere **etkinleştir** (bu özellik hala kullanılabilse de) değeriyle ekleyen posta akışı kuralları (taşıma kuralları olarak da bilinir) oluşturma gereksiniminin yerini alır.
 
 > [!NOTE]
-> İletinin birden çok alıcısı varsa, ipucunun gösterilip gösterilmediği ve kime çoğunluk modelini temel aldığı. Alıcıların çoğu gönderenden hiçbir zaman ileti almadıysa veya sık sık ileti almıyorsa, etkilenen alıcılar **bu iletiyi alan bazı kişiler...** ipucunu alır. Bu davranışın bir alıcının iletişim alışkanlıklarını başka bir alıcıyla açığa çıkardığından endişeleniyorsanız, ilk kişi güvenlik ipucu etkinleştirmemeli ve bunun yerine posta akışı kurallarını kullanmaya devam etmemelisiniz.
+> İletinin birden çok alıcısı varsa, ipucunun gösterilip gösterilmediği ve kime çoğunluk modelini temel aldığı. Alıcıların çoğu gönderenden hiçbir zaman ileti almadıysa veya sık sık ileti almıyorsa, etkilenen alıcılar **bu iletiyi alan bazı kişiler...** ipucunu alır. Bu davranışın bir alıcının iletişim alışkanlıklarını başka bir alıcıya göstermesinden endişe ediyorsanız, ilk iletişim güvenlik ipucunu etkinleştirmemeli ve bunun yerine posta akışı kurallarını kullanmaya devam etmemelisiniz.
 
 ## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de kimlik avı önleme ilkelerindeki özel ayarlar
 
@@ -206,11 +206,11 @@ Aşağıdaki kimliğe bürünme ayarları yalnızca Office 365 için Defender ki
 - **Eylemler**: İlkedeki korumalı kullanıcılara ve korumalı etki alanlarına karşı kimliğe bürünme girişimleri içeren gelen iletilerde gerçekleştirilen eylemi seçin. Korumalı kullanıcıların kimliğe bürünülmesi ve korumalı etki alanlarının kimliğe bürünülmesi için farklı eylemler belirtebilirsiniz:
   - **Hiçbir eylem uygulama**
   - **İletiyi diğer e-posta adreslerine yeniden yönlendirme**: İletiyi hedeflenen alıcılar yerine belirtilen alıcılara gönderir.
-  - **İletileri alıcıların Gereksiz E-posta klasörlerine taşıma**: İleti posta kutusuna teslim edilir ve Gereksiz E-posta klasörüne taşınır. Daha fazla bilgi için bkz[. Microsoft 365'da Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **İletileri alıcıların Gereksiz Email klasörlerine taşıma**: İleti posta kutusuna teslim edilir ve Gereksiz Email klasörüne taşınır. Daha fazla bilgi için bkz[. Microsoft 365'te Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md).
   - **İletiyi karantinaya** al: İletiyi hedeflenen alıcılar yerine karantinaya gönderir. Karantina hakkında bilgi için aşağıdaki makalelere bakın:
-    - [Microsoft 365'de karantinaya alın](quarantine-email-messages.md)
-    - [karantinaya alınan iletileri ve dosyaları Microsoft 365'da yönetici olarak yönetme](manage-quarantined-messages-and-files.md)
-    - [karantinaya alınan iletileri Microsoft 365'de kullanıcı olarak bulma ve bırakma](find-and-release-quarantined-messages-as-a-user.md)
+    - [Microsoft 365'te karantinaya alın](quarantine-email-messages.md)
+    - [Microsoft 365'te karantinaya alınan iletileri ve dosyaları yönetici olarak yönetme](manage-quarantined-messages-and-files.md)
+    - [Microsoft 365'te karantinaya alınan iletileri kullanıcı olarak bulma ve bırakma](find-and-release-quarantined-messages-as-a-user.md)
 
     **İletiyi karantinaya al'ı** seçerseniz, kullanıcı kimliğe bürünme veya etki alanı kimliğe bürünme koruması tarafından karantinaya alınan iletilere uygulanan karantina ilkesini de seçebilirsiniz. Karantina ilkeleri, kullanıcıların karantinaya alınan iletilere neler yapabileceğini tanımlar. Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md).
 
@@ -231,7 +231,7 @@ Aşağıdaki kimliğe bürünme ayarları yalnızca Office 365 için Defender ki
 - **Akıllı zeka kimliğe bürünme korumasını etkinleştirme**: Posta kutusu yönetim bilgileri sonuçlarından kimliğe bürünme algılamaları için iletilerde gerçekleştirilen eylemi belirtmek için bu ayarı açın:
   - **Herhangi bir eylem uygulamayın**: Bu değerin **, Posta kutusu zekasını** açmakla ancak **Akıllı zeka kimliğe bürünme korumasını etkinleştir'i** kapatmakla aynı sonucu aldığına dikkat edin.
   - **İletiyi diğer e-posta adreslerine yeniden yönlendirme**
-  - **İletiyi alıcıların Gereksiz E-posta klasörlerine taşıma**
+  - **İletiyi alıcıların Gereksiz Email klasörlerine taşıma**
   - **İletiyi karantinaya al**: Bu eylemi seçerseniz, posta kutusu yönetim bilgileri koruması tarafından karantinaya alınan iletilere uygulanan karantina ilkesini de seçebilirsiniz. Karantina ilkeleri, kullanıcıların karantinaya alınan iletilere neler yapabileceğini ve kullanıcıların karantina bildirimleri alıp almayacağını tanımlar. Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md).
   - **İletiyi teslim etme ve Gizli satırına başka adresler ekleme**
   - **İleti teslim etmeden önce silme**

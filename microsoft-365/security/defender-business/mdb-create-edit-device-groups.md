@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 9d788ee4dac2e922898204fdd13e977c50e66b2e
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 84029946abe064219622fdd1b9ce0dd9a6dfc048
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090442"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773223"
 ---
 # <a name="device-groups-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'da cihaz grupları
 
-İş için Microsoft Defender ilkeler, cihaz grupları olarak adlandırılan belirli koleksiyonlar aracılığıyla cihazlara uygulanır. 
+İş için Defender'da ilkeler, cihaz grupları olarak adlandırılan belirli koleksiyonlar aracılığıyla cihazlara uygulanır. 
 
 **Bu makalede şunlar açıklanmaktadır**:  
 
@@ -37,16 +37,16 @@ ms.locfileid: "66090442"
 
 ## <a name="what-is-a-device-group"></a>Cihaz grubu nedir?
 
-Cihaz grubu, işletim sistemi sürümü gibi belirli ölçütler nedeniyle birlikte gruplandırılmış bir cihaz koleksiyonudur. Ölçütleri karşılayan cihazlar, siz hariç tutmadığınız sürece bu cihaz grubuna dahil edilir. İş için Microsoft Defender ilkeler, cihaz grupları kullanılarak cihazlara uygulanır.
+Cihaz grubu, işletim sistemi sürümü gibi belirli ölçütler nedeniyle birlikte gruplandırılmış bir cihaz koleksiyonudur. Ölçütleri karşılayan cihazlar, siz hariç tutmadığınız sürece bu cihaz grubuna dahil edilir. İş için Defender'da ilkeler cihazlara cihaz grupları kullanılarak uygulanır.
 
-İş için Defender, kullanabileceğiniz varsayılan cihaz gruplarını içerir. Varsayılan cihaz grupları, İş için Defender'a eklenen tüm cihazları içerir. Örneğin, Windows cihazlar için varsayılan bir cihaz grubu vardır. Windows cihazları her eklediğinizde, bunlar otomatik olarak varsayılan cihaz grubuna eklenir.
+İş için Defender, kullanabileceğiniz varsayılan cihaz gruplarını içerir. Varsayılan cihaz grupları, İş için Defender'a eklenen tüm cihazları içerir. Örneğin, Windows cihazları için varsayılan bir cihaz grubu vardır. Windows cihazlarını her eklediğinizde, bunlar otomatik olarak varsayılan cihaz grubuna eklenir.
 
-Belirli cihazlara belirli ayarlarla ilke atamak için yeni cihaz grupları da oluşturabilirsiniz. Örneğin, bir Windows cihaz kümesine atanmış bir güvenlik duvarı ilkeniz ve başka bir Windows cihazı kümesine atanmış farklı bir güvenlik duvarı ilkeniz olabilir. İlkelerinizle kullanılacak belirli cihaz gruplarını tanımlayabilirsiniz.
+Belirli cihazlara belirli ayarlarla ilke atamak için yeni cihaz grupları da oluşturabilirsiniz. Örneğin, bir Windows cihaz kümesine atanmış bir güvenlik duvarı ilkeniz ve başka bir Windows cihaz kümesine atanmış farklı bir güvenlik duvarı ilkeniz olabilir. İlkelerinizle kullanılacak belirli cihaz gruplarını tanımlayabilirsiniz.
 
 > [!NOTE]
-> İş için Defender'da ilkeler oluştururken bir öncelik sırası atanır. Belirli bir cihaz kümesine birden çok ilke uygularsanız, bu cihazlar yalnızca ilk uygulanan ilkeyi alır. Daha fazla bilgi için bkz. [İş için Microsoft Defender ilke sırasını anlama](mdb-policy-order.md).
+> İş için Defender'da ilkeler oluştururken bir öncelik sırası atanır. Belirli bir cihaz kümesine birden çok ilke uygularsanız, bu cihazlar yalnızca ilk uygulanan ilkeyi alır. Daha fazla bilgi için bkz. [İş için Defender'da ilke sırasını anlama](mdb-policy-order.md).
 
-Varsayılan cihaz gruplarınız ve tanımladığınız tüm özel cihaz grupları dahil olmak üzere tüm cihaz grupları [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) içinde depolanır.
+Varsayılan cihaz gruplarınız ve tanımladığınız tüm özel cihaz grupları dahil olmak üzere tüm cihaz grupları [Azure Active Directory'de](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) depolanır.
 
 ## <a name="create-a-new-device-group"></a>Yeni cihaz grubu oluşturma
 
@@ -62,7 +62,7 @@ Varsayılan cihaz gruplarınız ve tanımladığınız tüm özel cihaz gruplar�
     2. Yeni bir ilke oluşturmak için **+ Ekle'yi** seçin.
 
     > [!TIP]
-    > İlke oluşturma veya düzenleme konusunda yardım almak için bkz. [İş için Microsoft Defender'da ilkeleri görüntüleme veya düzenleme](mdb-view-edit-policies.md).
+    > İlke oluşturma veya düzenleme konusunda yardım almak için bkz. [İş için Defender'da ilkeleri görüntüleme veya düzenleme](mdb-view-edit-policies.md).
 
 4. **Genel bilgiler** adımında bilgileri gözden geçirin, gerekirse düzenleyin ve ardından **İleri'yi** seçin.
 
@@ -92,7 +92,7 @@ Varsayılan cihaz gruplarınız ve tanımladığınız tüm özel cihaz gruplar�
     2. Yeni bir ilke oluşturmak için **+ Ekle'yi** seçin.
 
     > [!TIP]
-    > İlke oluşturma veya düzenleme konusunda yardım almak için bkz. [İş için Microsoft Defender'da ilkeleri görüntüleme veya düzenleme](mdb-view-edit-policies.md).
+    > İlke oluşturma veya düzenleme konusunda yardım almak için bkz. [İş için Defender'da ilkeleri görüntüleme veya düzenleme](mdb-view-edit-policies.md).
 
 4. **Genel bilgiler** adımında bilgileri gözden geçirin, gerekirse düzenleyin ve ardından **İleri'yi** seçin.
 
@@ -112,6 +112,6 @@ Aşağıdaki görevlerden birini veya daha fazlasını seçin:
 
 - [İlkeleri görüntüleme veya düzenleme](mdb-view-edit-policies.md)
 - [Yeni ilke oluşturma](mdb-create-new-policy.md)
-- [İş için Microsoft Defender'da olayları görüntüleme ve yönetme](mdb-view-manage-incidents.md)
-- [İş için Microsoft Defender'da tehditlere yanıt verme ve tehditleri azaltma](mdb-respond-mitigate-threats.md)
+- [İş için Defender'da olayları görüntüleme ve yönetme](mdb-view-manage-incidents.md)
+- [İş için Defender'da tehditlere yanıt verme ve tehditleri azaltma](mdb-respond-mitigate-threats.md)
 - [İşlem merkezindeki düzeltme eylemlerini gözden geçirme](mdb-review-remediation-actions.md)

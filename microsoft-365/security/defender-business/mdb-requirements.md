@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ab24e3898d897df6813338fd0d2131c3787f0a09
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 1114bebe4b57f89989b0e21a3d73a72fd1b3e99e
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089594"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772893"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>İş için Microsoft Defender gereksinimleri
 
-Bu makalede İş için Microsoft Defender gereksinimleri açıklanmaktadır.
+Bu makalede, İş için Defender gereksinimleri açıklanmaktadır.
 
 ## <a name="what-to-do"></a>Yapılması gerekenler
 
@@ -35,24 +35,25 @@ Bu makalede İş için Microsoft Defender gereksinimleri açıklanmaktadır.
 
 ## <a name="review-the-requirements"></a>Gereksinimleri gözden geçirin
 
-Aşağıdaki tabloda, İş için Microsoft Defender yapılandırmak ve kullanmak için temel gereksinimler listelemektedir.
+Aşağıdaki tabloda, İş için Defender'ı yapılandırmak ve kullanmak için ihtiyacınız olan temel gereksinimler listeleniyor.
 
 | Gereksinim | Açıklama |
 |:---|:---|
-| Abonelik | Microsoft 365 İş Ekstra veya İş için Microsoft Defender (tek başına). Bkz[. İş için Microsoft Defender alma](get-defender-business.md).<br/><br/>Birden çok aboneliğiniz varsa en yüksek aboneliğin öncelikli olduğunu unutmayın. Örneğin, Uç Nokta için Microsoft Defender Plan 2 'niz (satın alınmış veya deneme aboneliği) varsa ve İş için Microsoft Defender alırsanız, Uç Nokta Için Defender Plan 2 önceliklidir. Bu durumda, İş için Defender deneyimini görmezsiniz.  |
-| Datacenter | Aşağıdaki veri merkezi konumlarından biri: <br/>- Avrupa Birliği <br/>- Birleşik Krallık <br/>- Birleşik Devletler |
-| Kullanıcı hesapları | - Kullanıcı hesapları Microsoft 365 yönetim merkezi oluşturulur ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>- İş için Microsoft Defender lisansları Microsoft 365 yönetim merkezi<br/><br/>Bu görevle ilgili yardım almak için bkz. [Kullanıcı ekleme ve lisans atama](mdb-add-users.md). |
-| İzinler  | İş için Microsoft Defender kaydolmak için Genel Yönetici olmanız gerekir.<br/><br/>Microsoft 365 Defender portalına erişmek için kullanıcıların [Azure AD'da aşağıdaki rollerden](mdb-roles-permissions.md) birine atanmış olması gerekir: <br/>- Güvenlik Okuyucusu<br/>- Güvenlik Yönetici<br/>- Genel Yönetici<br/><br/>Daha fazla bilgi için bkz. [İş için Microsoft Defender'de roller ve izinler](mdb-roles-permissions.md). |
+| Abonelik | Microsoft 365 İş Ekstra veya İş için Defender (tek başına). Bkz. [İş için Defender'ı edinme](get-defender-business.md).<p>Birden çok aboneliğiniz varsa en yüksek aboneliğin öncelikli olduğunu unutmayın. Örneğin, Uç Nokta için Microsoft Defender Plan 2'niz (satın alınan veya deneme aboneliği) varsa ve İş için Defender'ı alırsanız, Uç Nokta Için Defender Plan 2 önceliklidir. Bu durumda, İş için Defender deneyimini görmezsiniz. Bkz. [Microsoft 365 Defender abonelikleri bir karışımım varsa ne olur](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?  |
+| Datacenter | Aşağıdaki veri merkezi konumlarından biri: <ul><li>Avrupa Birliği</li><li>Birleşik Krallık</li><li>Amerika Birleşik Devletleri</li></ul> |
+| Kullanıcı hesapları |<ul><li>Kullanıcı hesapları Microsoft 365 yönetim merkezi ([https://admin.microsoft.com](https://admin.microsoft.com)) içinde oluşturulur.</li><li>İş için Defender (veya Microsoft 365 İş Ekstra) lisansları Microsoft 365 yönetim merkezi atanır.</li></ul>Bu görevle ilgili yardım almak için bkz. [Kullanıcı ekleme ve lisans atama](mdb-add-users.md). |
+| İzinler  | İş için Defender'a kaydolmak için Genel Yönetici olmanız gerekir.<p>Microsoft 365 Defender portalına erişmek için kullanıcıların [Azure AD'da aşağıdaki rollerden](mdb-roles-permissions.md) birine atanmış olması gerekir:<ul><li>Güvenlik Okuyucusu</li><li>Güvenlik Yönetici</li><li>Genel Yönetici</li></ul>Daha fazla bilgi için bkz. [İş için Defender'da roller ve izinler](mdb-roles-permissions.md). |
 | Tarayıcı gereksinimleri | Microsoft Edge veya Google Chrome |
-| İşletim sistemi | Microsoft 365 Defender portalındaki cihazları yönetmek için cihazlarınız aşağıdaki işletim sistemlerinden birini çalıştırıyor olmalıdır: <br/>- Windows 10 Business veya üzeri <br/>- Windows 10 Professional veya üzeri <br/>- Windows 10 Enterprise veya üzeri <br/>- macOS (en güncel üç sürüm desteklenir)<br/><br/>[Windows cihazlarda KB5006738'in](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) yüklü olduğundan emin olun. <br/><br/>Cihazları zaten Microsoft Intune yönetiyorsanız, Microsoft Endpoint Manager yönetim merkezini kullanmaya devam edebilirsiniz. |
+| İstemci cihazı işletim sistemi | Microsoft 365 Defender portalındaki cihazları yönetmek için cihazlarınız aşağıdaki işletim sistemlerinden birini çalıştırıyor olmalıdır: <ul><li>Windows 10 veya 11 İş</li><li>Windows 10 veya 11 Professional</li><li>Windows 10 veya 11 Enterprise</li><li>Mac (en güncel üç sürüm desteklenir)</li></ul><p>Windows cihazlarında [KB5006738'in](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) yüklü olduğundan emin olun. <p>Cihazları zaten Microsoft Intune yönetiyorsanız Microsoft Endpoint Manager yönetim merkezini kullanmaya devam edebilirsiniz. Bu durumda, aşağıdaki diğer işletim sistemleri desteklenir: <ul><li>iOS ve iPadOS</li><li>Android işletim sistemi</li></ul> |
+| Sunucu gereksinimleri | Windows Server veya Linux Server örneğini eklemeyi planlıyorsanız aşağıdaki gereksinimleri karşılamanız gerekir: <ul><li>**Önizleme özellikleri** ayarı açıktır. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ), **Ayarlar** > **Uç Noktaları** > **Genel** > **Gelişmiş özellikler****Önizleme özellikleri'ne** >  gidin.</li><li>Windows Server için zorlama kapsamı açık. Microsoft 365 Defender portalında **Ayarlar** > **Uç Noktaları** > **Yapılandırma yönetimi** > **Zorlama kapsamı'na** gidin. **MEM'den güvenlik yapılandırma ayarlarını zorunlu kılmak için MDE kullan'ı** seçin, **Windows Server'ı** ve ardından **Kaydet'i** seçin.</li><li>Linux Server uç noktaları, [Linux'ta Uç Nokta için Microsoft Defender önkoşullarını karşılar](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites).</li></ul> |
 
 > [!NOTE]
-> [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) kullanıcı izinlerini ve cihaz gruplarını yönetmek için kullanılır. Azure AD, İş için Defender aboneliğinize dahildir. 
+> Kullanıcı izinlerini ve cihaz gruplarını yönetmek için [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) kullanılır. Azure AD, İş için Defender aboneliğinize dahildir. 
 > - Deneme sürümüne başlamadan önce Microsoft 365 aboneliğiniz yoksa etkinleştirme işlemi sırasında sizin için Azure AD sağlanır. 
 > - İş için Defender deneme sürümünüzü başlattığınızda başka bir Microsoft 365 aboneliğiniz varsa, mevcut Azure AD hizmetinizi kullanabilirsiniz. 
-> - İş için Defender deneme sürümünüzü başlattığınızda [Microsoft 365 İş Ekstra](../../business/index.yml) kullanıyorsanız cihazlarınızı Intune kullanarak yönetme seçeneğiniz olur. 
+> - İş için Defender denemenizi başlatırken [Microsoft 365 İş Ekstra](../../business/index.yml) kullanıyorsanız cihazlarınızı Intune kullanarak yönetme seçeneğiniz vardır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-2. [Adım: İş için Microsoft Defender rol ve izin atama](mdb-roles-permissions.md) bölümüne geçin.
+[İş için Defender'da 2. Adım: Rol ve izin atama](mdb-roles-permissions.md) bölümüne gidin.
  

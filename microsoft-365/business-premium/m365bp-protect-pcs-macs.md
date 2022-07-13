@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: yönetilmeyen veya kendi cihazını getir (KCG) Microsoft 365 İş Ekstra ile siber saldırılara karşı koruyun. Windows bilgisayarlar ve Mac'ler için siber güvenliği ayarlama.
-ms.openlocfilehash: 5a1239f84e801c6327eb18c1049e410cc0859bdb
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 033fdd41c8df09f983e1abc296bd0b33de20a61a
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631782"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773091"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'da yönetilmeyen Windows bilgisayarlarını ve Mac'leri koruma
 
@@ -66,9 +66,9 @@ Başka bir güvenlik duvarı açık olsa bile her zaman Windows Defender Güvenl
 
 Tamam, görev tamamlandı! Şimdi [e-posta sisteminin](m365bp-protect-email-overview.md) kimlik avına ve diğer saldırılara karşı güvenliğini sağlamaya çalışalım.
 
-## <a name="macos"></a>[macOS](#tab/macOS)
+## <a name="mac"></a>[Mac](#tab/Mac)
 
-## <a name="macos"></a>macOS
+## <a name="mac"></a>Mac
 
 ### <a name="use-filevault-to-encrypt-your-mac-disk"></a>Mac diskinizi şifrelemek için FileVault kullanma
 

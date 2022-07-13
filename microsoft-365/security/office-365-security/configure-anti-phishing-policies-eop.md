@@ -16,12 +16,12 @@ ms.custom: ''
 description: Yöneticiler, Exchange Online posta kutuları olan veya olmayan Exchange Online Protection (EOP) kuruluşlarında kullanılabilen kimlik avı önleme ilkelerini oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 384494fdd625fe050079ecd99f59b68d1ba87cad
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 8545eed078a676055206870e5c55ed3ca2e82a9a
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115707"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773245"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>EOP'de kimlik avı önleme ilkelerini yapılandırma
 
@@ -30,7 +30,7 @@ ms.locfileid: "66115707"
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 
-Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarda, etkinleştirilmiş sınırlı sayıda kimlik sahtekarlığı önleme özelliği içeren varsayılan bir kimlik avı önleme ilkesi vardır varsayılan olarak. Daha fazla bilgi için bkz. [Kimlik avı önleme ilkelerindeki kimlik sahtekarlığı ayarları](set-up-anti-phishing-policies.md#spoof-settings).
+Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarında, varsayılan olarak etkinleştirilen sınırlı sayıda kimlik sahtekarlığı önleme özelliği içeren varsayılan bir kimlik avı önleme ilkesi vardır. Daha fazla bilgi için bkz. [Kimlik avı önleme ilkelerindeki kimlik sahtekarlığı ayarları](set-up-anti-phishing-policies.md#spoof-settings).
 
 Yöneticiler varsayılan kimlik avı önleme ilkesini görüntüleyebilir, düzenleyebilir ve yapılandırabilir (ancak silemez). Daha fazla ayrıntı düzeyi için, kuruluşunuzdaki belirli kullanıcılar, gruplar veya etki alanları için geçerli olan özel kimlik avı önleme ilkeleri de oluşturabilirsiniz. Özel ilkeler her zaman varsayılan ilkeden önceliklidir, ancak özel ilkelerinizin önceliğini (çalıştırma sırasını) değiştirebilirsiniz.
 
@@ -63,7 +63,7 @@ Kimlik avı korumasının verimliliğini artırmak için, belirli kullanıcılar
 
 - Microsoft 365 Defender portalını adresinde <https://security.microsoft.com>açarsınız. Doğrudan **Kimlik avı** önleme sayfasına gitmek için kullanın <https://security.microsoft.com/antiphishing>.
 
-- Exchange Online PowerShell'e bağlanmak için bkz. [PowerShell'Exchange Online Bağlan](/powershell/exchange/connect-to-exchange-online-powershell).
+- Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
 
   Tek başına EOP PowerShell'de kimlik avı önleme ilkelerini yönetemezsiniz.
 
@@ -75,7 +75,7 @@ Kimlik avı korumasının verimliliğini artırmak için, belirli kullanıcılar
 
   **Notlar**:
 
-  - kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'deki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+  - kullanıcıları Microsoft 365 yönetim merkezi ilgili Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'teki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
   - [Exchange Online'deki](/Exchange/permissions-exo/permissions-exo#role-groups) **Salt Okunur Kuruluş Yönetimi** rol grubu da özelliğe <sup>\*</sup> salt okunur erişim sağlar.
 
 - Kimlik avı önleme ilkeleri için önerilen ayarlarımız için bkz. [EOP kimlik avı önleme ilkesi ayarları](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
@@ -88,7 +88,7 @@ Kimlik avı korumasının verimliliğini artırmak için, belirli kullanıcılar
 
 Microsoft 365 Defender portalında özel kimlik avı önleme ilkesi oluşturmak, her ikisi için de aynı adı kullanarak kimlik avı önleme kuralını ve ilişkili kimlik avı önleme ilkesini aynı anda oluşturur.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin. Doğrudan **Kimlik avı** önleme sayfasına gitmek için kullanın <https://security.microsoft.com/antiphishing>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin. Doğrudan **Kimlik avı** önleme sayfasına gitmek için kullanın <https://security.microsoft.com/antiphishing>.
 
 2. **Kimlik avı önleme** sayfasında Oluştur simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Oluştur'u seçin**.
 
@@ -119,9 +119,9 @@ Microsoft 365 Defender portalında özel kimlik avı önleme ilkesi oluşturmak,
    > - Alıcı: romain@contoso.com
    > - Alıcı şu üyelerin üyesidir: Yöneticiler
    >
-   > İlke, _romain@contoso.com yalnızca_ Yönetici gruplarının da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
+   > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
    >
-   > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler gruplarının da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
+   > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
 
    İşiniz bittiğinde **İleri'ye** tıklayın.
 
@@ -130,20 +130,20 @@ Microsoft 365 Defender portalında özel kimlik avı önleme ilkesi oluşturmak,
    Kimlik sahtekarlık zekasını kapatmak için onay kutusunu temizleyin.
 
    > [!NOTE]
-   > MX kaydınız Microsoft 365 işaret etmiyorsa kimlik sahtekarlığı önleme korumasını kapatmanız gerekmez; bunun yerine Bağlayıcılar için Gelişmiş Filtreleme'yi etkinleştirirsiniz. Yönergeler için bkz. [Exchange Online'da Bağlayıcılar için Gelişmiş Filtreleme](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+   > MX kaydınız Microsoft 365'e işaret etmiyorsa kimlik sahtekarlığı önleme korumasını kapatmanız gerekmez; Bunun yerine Bağlayıcılar için Gelişmiş Filtreleme'yi etkinleştirirsiniz. Yönergeler için bkz. [Exchange Online'da Bağlayıcılar için Gelişmiş Filtreleme](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
    İşiniz bittiğinde **İleri'ye** tıklayın.
 
 6. Görüntülenen **Eylemler** sayfasında aşağıdaki ayarları yapılandırın:
    - **İleti sahte olarak algılanırsa**: Bu ayar yalnızca önceki sayfada **Kimlik sahtekarlığına izin verin'i** seçtiğinizde kullanılabilir. Engellenen sahte gönderenlerden gelen iletiler için açılan listede aşağıdaki eylemlerden birini seçin:
-     - **İletiyi alıcıların Gereksiz E-posta klasörlerine taşıma**
+     - **İletiyi alıcıların Gereksiz Email klasörlerine taşıma**
      - **İletiyi karantinaya alma**: Bu eylemi seçerseniz, **kimlik sahtekarlığına karşı koruma tarafından karantinaya** alınan iletilere uygulanan karantina ilkesini seçtiğiniz bir Karantina ilkesi uygula kutusu görüntülenir. Karantina ilkeleri, kullanıcıların karantinaya alınan iletilere neler yapabileceğini ve kullanıcıların karantina bildirimleri alıp almayacağını tanımlar. Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md).
 
        Boş **Bir Karantina ilkesi değeri uygula** , varsayılan karantina ilkesinin kullanıldığı anlamına gelir (kimlik sahtekarlığı zekası algılamaları için DefaultFullAccessPolicy). Daha sonra kimlik avı önleme ilkesini düzenlediğinizde veya ayarları görüntülediğinizde varsayılan karantina ilkesi adı gösterilir. Desteklenen koruma filtreleme kararları için kullanılan varsayılan karantina ilkeleri hakkında daha fazla bilgi için [bu tabloya](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) bakın.
 
    - **Güvenlik ipuçları & göstergeler**:
-     - **İlk kişi güvenlik ipucu göster**: Daha fazla bilgi için bkz. [İlk kişi güvenlik ipucu](set-up-anti-phishing-policies.md#first-contact-safety-tip).
-     - Kimlik **sahtekarlığına yönelik kimliği doğrulanmamış gönderenler**<sup>\*</sup> için göster (?) : İleti SPF veya DKIM denetimlerini geçmezse **ve** ileti DMARC veya [bileşik kimlik doğrulamasını](email-validation-and-authentication.md#composite-authentication) geçmezse Outlook Kimden kutusunda gönderenin fotoğrafına soru işareti (?) ekler.
+     - **İlk iletişim güvenliği ipucunu göster**: Daha fazla bilgi için bkz. [İlk temas güvenliği ipucu](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+     - Kimlik **sahtekarlığına yönelik kimliği doğrulanmamış gönderenler için**<sup>\*</sup> göster (?): İleti SPF veya DKIM denetimlerini geçmezse **ve** ileti DMARC veya [bileşik kimlik doğrulamasını](email-validation-and-authentication.md#composite-authentication) geçmezse Outlook'taki Kimden kutusunda gönderenin fotoğrafına soru işareti (?) ekler.
      - **"via" etiketini**<sup>\*</sup> göster: DKIM imzasında etki alanından veya **MAIL FROM** adresinden farklıysa Kimden adresine bir via etiketi (fabrikam.com aracılığıyla chris@contoso.com) ekler.
 
      Bir ayarı açmak için onay kutusunu seçin. Kapatmak için onay kutusunu temizleyin.
@@ -160,7 +160,7 @@ Microsoft 365 Defender portalında özel kimlik avı önleme ilkesi oluşturmak,
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-phishing-policies"></a>Kimlik avı önleme ilkelerini görüntülemek için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin. Doğrudan **Kimlik avı** önleme sayfasına gitmek için kullanın <https://security.microsoft.com/antiphishing>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin. Doğrudan **Kimlik avı** önleme sayfasına gitmek için kullanın <https://security.microsoft.com/antiphishing>.
 
 2. **Kimlik avı önleme** sayfasında, ilkeler listesinde aşağıdaki özellikler görüntülenir:
 
@@ -173,7 +173,7 @@ Microsoft 365 Defender portalında özel kimlik avı önleme ilkesi oluşturmak,
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies"></a>Kimlik avı önleme ilkelerini değiştirmek için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin. Doğrudan **Kimlik avı** önleme sayfasına gitmek için kullanın <https://security.microsoft.com/antiphishing>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin. Doğrudan **Kimlik avı** önleme sayfasına gitmek için kullanın <https://security.microsoft.com/antiphishing>.
 
 2. **Kimlik avı önleme** sayfasında, ada tıklayarak listeden bir ilke seçin.
 
@@ -187,7 +187,7 @@ bir ilkeyi etkinleştirmek veya devre dışı bırakmak ya da ilke öncelik sır
 
 Varsayılan kimlik avı önleme ilkesini devre dışı bırakamazsınız.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin. Doğrudan **Kimlik avı** önleme sayfasına gitmek için kullanın <https://security.microsoft.com/antiphishing>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin. Doğrudan **Kimlik avı** önleme sayfasına gitmek için kullanın <https://security.microsoft.com/antiphishing>.
 
 2. **Kimlik avı önleme** sayfasında, ada tıklayarak listeden özel bir ilke seçin.
 
@@ -212,7 +212,7 @@ Varsayılan olarak, kimlik avı önleme ilkelerine oluşturuldukları sırayı t
 - Microsoft 365 Defender portalında, kimlik avı önleme ilkesinin önceliğini yalnızca oluşturduktan sonra değiştirebilirsiniz. PowerShell'de, kimlik avı önleme kuralını oluştururken varsayılan önceliği geçersiz kılabilirsiniz (bu, mevcut kuralların önceliğini etkileyebilir).
 - Kimlik avı önleme ilkeleri, görüntülendikleri sırayla işlenir (ilk **ilkenin Öncelik** değeri 0'dır). Varsayılan kimlik avı önleme ilkesi **En düşük** öncelik değerine sahiptir ve bunu değiştiremezsiniz.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin. Doğrudan **Kimlik avı** önleme sayfasına gitmek için kullanın <https://security.microsoft.com/antiphishing>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin. Doğrudan **Kimlik avı** önleme sayfasına gitmek için kullanın <https://security.microsoft.com/antiphishing>.
 
 2. **Kimlik avı önleme** sayfasında, ada tıklayarak listeden özel bir ilke seçin.
 
@@ -229,7 +229,7 @@ Varsayılan olarak, kimlik avı önleme ilkelerine oluşturuldukları sırayı t
 
 Özel bir kimlik avı önleme ilkesini kaldırmak için Microsoft 365 Defender portalını kullandığınızda, kimlik avı önleme kuralı ve buna karşılık gelen kimlik avı önleme ilkesi silinir. Varsayılan kimlik avı önleme ilkesini kaldıramazsınız.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin. Doğrudan **Kimlik avı** önleme sayfasına gitmek için kullanın <https://security.microsoft.com/antiphishing>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin. Doğrudan **Kimlik avı** önleme sayfasına gitmek için kullanın <https://security.microsoft.com/antiphishing>.
 
 2. **Kimlik avı önleme** sayfasında, ada tıklayarak listeden özel bir ilke seçin.
 

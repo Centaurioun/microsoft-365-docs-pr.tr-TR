@@ -14,12 +14,12 @@ description: Office 365 için Microsoft Defender'daki tehdit filtreleme yığın
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4548beaf8d3071006114a65fd95c16b06e8a875d
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: d6697652754792b3beb87b7bcafc0846ca51c53d
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648183"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772050"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da adım adım tehdit koruması
 
@@ -62,7 +62,7 @@ Gönderen bilgilerindeki özellikler istenmeyen posta, toplu, kimliğe bürünme
 
 1. **Hesap güvenliğinin aşılmasına yönelik algılama** tetikleyicileri ve uyarılar, bir hesabın anormal davranışı olduğunda ve gizliliğin tehlikeye girerek tutarlı olması durumunda tetiklenir. Bazı durumlarda, kullanıcı hesabı engellenir ve sorun kuruluşun güvenlik operasyonları ekibi tarafından çözülene kadar başka e-posta iletileri göndermesi engellenir.
 
-2. **E-posta Kimlik Doğrulaması** , hem müşterinin yapılandırmış olduğu yöntemleri hem de gönderenlerin yetkili, gerçek posta gönderenler olduğundan emin olmak için Bulutta ayarlanan yöntemleri içerir. Bu yöntemler sahtekarlık için direnmektedir.
+2. **Email Kimlik Doğrulaması**, hem müşteri tarafından yapılandırılan yöntemleri hem de gönderenlerin yetkilendirilmiş, gerçek posta gönderenler olduğundan emin olmak için Bulutta ayarlanan yöntemleri içerir. Bu yöntemler sahtekarlık için direnmektedir.
     - **SPF** , KURULUŞ adına posta göndermesine izin verilen IP adreslerini ve sunucuları listeleyen DNS TXT kayıtlarına göre postaları reddedebilir.
     - **DKIM** , gönderenin kimliğini doğrulayan şifreli bir imza sağlar.
     - **DMARC** , yöneticilerin etki alanında SPF ve DKIM'i gerekli olarak işaretlemesine olanak tanır ve bu iki teknolojinin sonuçları arasında hizalamayı zorlar.
@@ -92,7 +92,7 @@ Bu aşamada filtreleme yığını, köprüleri ve ekleri de dahil olmak üzere p
 
 1. **Aktarım kuralları** (posta akışı kuralları veya Exchange aktarım kuralları olarak da bilinir), bir yöneticinin bir ileti için eşit derecede geniş bir koşul aralığı karşılandığında çok çeşitli eylemler gerçekleştirmesine olanak tanır. Kuruluşunuzda akan tüm iletiler, etkin posta akışı kuralları/aktarım kurallarıyla değerlendirilir.
 
-2. **eklerdeki** bilinen tüm kötü amaçlı yazılımları algılamak için Microsoft Defender Virüsten Koruma ve iki *üçüncü taraf Virüsten Koruma altyapısı* kullanılır.
+2. **Microsoft Defender Virüsten Koruma** ve iki *üçüncü taraf Virüsten Koruma altyapısı* , eklerdeki bilinen tüm kötü amaçlı yazılımları algılamak için kullanılır.
 
 3. Virüsten koruma (AV) altyapıları tüm ekleri doğru yazmak için de kullanılır, böylece **Tür engelleme** , yöneticinin belirttiği türlerdeki tüm ekleri engelleyebilir.
 
@@ -106,7 +106,7 @@ Bu aşamada filtreleme yığını, köprüleri ve ekleri de dahil olmak üzere p
 
 8. **İçerik buluşsal yöntemleri** , makine öğrenmesi modellerini kullanarak iletinin gövdesindeki yapıya ve sözcük sıklığına göre şüpheli iletileri algılayabilir.
 
-9. **Kasa Ekler**, daha önce hiç görülmemiş tehditleri algılamak için dinamik analiz kullanarak Office 365 için Defender müşteriler için her eki korumalı alanlara ekler.
+9. **Güvenli Ekler**, daha önce hiç görülmemiş tehditleri algılamak için dinamik analiz kullanarak Office 365 için Defender müşteriler için tüm ekleri korumalı alanlara ekler.
 
 10. **Bağlantılı içerik patlama** , e-postadaki bir dosyaya bağlanan her URL'yi ek olarak ele alır ve teslim sırasında dosyayı zaman uyumsuz olarak korumalı alana alır.
 
@@ -114,11 +114,11 @@ Bu aşamada filtreleme yığını, köprüleri ve ekleri de dahil olmak üzere p
 
 ## <a name="phase-4---post-delivery-protection"></a>4. Aşama - Teslim Sonrası Koruma
 
-Son aşama, posta veya dosya tesliminin ardından, çeşitli posta kutularında ve dosyalarda ve Microsoft Teams gibi istemcilerde görünen bağlantılarda bulunan postalar üzerinde hareket ederek gerçekleşir.
+Son aşama, microsoft Teams gibi istemcilerde görünen çeşitli posta kutularında ve dosyalarda ve bağlantılarda bulunan postalar üzerinde hareket ederek posta veya dosya teslimi sonrasında gerçekleşir.
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Office 365 için Defender'da 4. Aşama filtrelemesi teslim sonrası korumadır" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png":::
 
-1. **Kasa Bağlantıları**, Office 365 için Defender tıklama zamanı korumasıdır. Her iletideki her URL, Microsoft Kasa Bağlantıları sunucularına işaret etmek için sarmalanır. Bir URL'ye tıklandığında, kullanıcı hedef siteye yeniden yönlendirilmeden önce en son saygınlığa karşı denetlenebilir. URL, itibarını güncelleştirmek için zaman uyumsuz olarak korumalıdır.
+1. **Güvenli Bağlantılar** Office 365 için Defender tıklama zamanı korumasıdır. Her iletideki her URL, Microsoft Güvenli Bağlantılar sunucularına işaret etmek için sarmalanır. Bir URL'ye tıklandığında, kullanıcı hedef siteye yeniden yönlendirilmeden önce en son saygınlığa karşı denetlenebilir. URL, itibarını güncelleştirmek için zaman uyumsuz olarak korumalıdır.
 
 2. **Kimlik avı için sıfır saatlik otomatik temizleme (ZAP),** zaten Exchange Online posta kutularına teslim edilmiş kötü amaçlı kimlik avı iletilerini geriye dönük olarak algılar ve etkisiz hale getirmektedir.
 
@@ -130,9 +130,9 @@ Son aşama, posta veya dosya tesliminin ardından, çeşitli posta kutularında 
 
 6. **Rapor İletisi eklentileri** , daha fazla analiz için kişilerin hatalı pozitifleri (iyi e-posta, yanlışlıkla *kötü* olarak işaretlenmiş) veya hatalı negatifleri ( *iyi* olarak işaretlenmiş hatalı e-postalar) kolayca Microsoft'a bildirmesini sağlar.
 
-7. **Office istemcileri için Kasa Bağlantıları**, Word, PowerPoint ve Excel gibi Office istemcilerin içinde yerel olarak aynı Kasa Bağlantılar tıklama zamanı koruması sunar.
+7. **Office istemcileri için Güvenli Bağlantılar** , Word, PowerPoint ve Excel gibi desteklenen Office uygulamalarının içinde yerel olarak aynı Güvenli Bağlantılar tıklama zamanı korumasını sunar.
 
-8. **OneDrive, SharePoint ve Teams için** koruma, OneDrive, SharePoint ve Microsoft Teams içinde, yerel olarak kötü amaçlı dosyalara karşı aynı Kasa Ekler koruması sunar.
+8. **OneDrive, SharePoint ve Teams için koruma, OneDrive, SharePoint ve Microsoft Teams'in** içinde yerel olarak kötü amaçlı dosyalara karşı aynı Güvenli Ekler koruması sunar.
 
 9. Teslim sonrasında dosyaya işaret eden bir URL seçildiğinde, dosyanın korumalı alanı tamamlanana ve URL'nin güvenli olduğu bulunana kadar **bağlantılı içerik patlama** bir uyarı sayfası görüntüler.
 

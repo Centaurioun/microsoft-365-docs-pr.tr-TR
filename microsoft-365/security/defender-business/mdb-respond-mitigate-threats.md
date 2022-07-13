@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: b7a911991935407f9d512213c9d76c92106b74c8
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 9330584979bc6c47204809a0408be7950c0d5612
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089572"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772827"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'da tehditlere yanıt verme ve tehditleri azaltma
 
@@ -50,10 +50,10 @@ Microsoft 365 Defender portalı, güvenlik ekibinizin algılanan tehditlere yan�
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="Seçili cihaz için kullanılabilir eylemlerin ekran görüntüsü":::
 
-6. Kullanılabilir bir eylem seçin. Örneğin **Virüsten koruma taraması çalıştır'ı** seçebilirsiniz ve bu da Microsoft Defender Virüsten Koruma cihazda hızlı bir tarama başlatmasına neden olur. Alternatif olarak, cihazda otomatik bir araştırma tetikleme için **Otomatik Araştırma Başlat'ı** da seçebilirsiniz.
+6. Kullanılabilir bir eylem seçin. Örneğin, Microsoft Defender Virüsten Koruma'nın cihazda hızlı bir tarama başlatmasına neden olacak **virüsten koruma taraması çalıştır'ı** seçebilirsiniz. Alternatif olarak, cihazda otomatik bir araştırma tetikleme için **Otomatik Araştırma Başlat'ı** da seçebilirsiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [İşlem merkezindeki düzeltme eylemlerini gözden geçirme](mdb-review-remediation-actions.md)
-- [İş için Microsoft Defender'de cihazları yönetme](mdb-manage-devices.md)
-- [İş için Microsoft Defender'da olayları görüntüleme ve yönetme](mdb-view-manage-incidents.md)
+- [İş için Defender'da cihazları yönetme](mdb-manage-devices.md)
+- [İş için Defender'da olayları görüntüleme ve yönetme](mdb-view-manage-incidents.md)

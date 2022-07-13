@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Bir kuruluşu kimlik avına ve kötü amaçlı URL kullanan diğer saldırılara karşı korumak için Office 365 için Defender'de Güvenli Bağlantılar koruması hakkında bilgi edinin. Teams Güvenli Bağlantılar'ı keşfedin ve Güvenli Bağlantılar iletilerinin grafiklerini görün.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b3eb2ee76beb106d26d5b7b65d13c7aa0a0d5c1e
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 64fd5ec3086647c3cfa8a5719becc2e92af9867f
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487059"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772160"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Bağlantılar
 
@@ -48,32 +48,34 @@ ms.locfileid: "66487059"
 
 Güvenli Bağlantılar[, Office 365 için Defender'de](defender-for-office-365.md) posta akışında gelen e-posta iletilerinin URL taramasını ve yeniden yazılmasını ve e-posta iletilerindeki ve diğer konumlardaki URL'lerin ve bağlantıların tıklama zamanında doğrulanmasını sağlayan bir özelliktir. Güvenli Bağlantılar taraması, Exchange Online Protection (EOP) içindeki gelen [e-posta](anti-spam-protection.md) iletilerinde normal istenmeyen posta önleme ve [kötü amaçlı yazılımdan koruma](anti-malware-protection.md) özelliklerine ek olarak gerçekleşir. Güvenli Bağlantılar taraması, kuruluşunuzun kimlik avı ve diğer saldırılarda kullanılan kötü amaçlı bağlantılardan korunmasına yardımcı olabilir.
 
-Office 365 için Microsoft Defender'da Güvenli Bağlantılar ile kötü amaçlı bağlantılara karşı koruma hakkında bu kısa videoyu izleyin.  
+Office 365 için Microsoft Defender'da Güvenli Bağlantılar ile kötü amaçlı bağlantılara karşı koruma hakkında bu kısa videoyu izleyin.
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
+
+> [!NOTE]
+> Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, yerleşik koruma** ön ayarı güvenlik ilkesi, Office 365 için Defender lisansına sahip tüm alıcılara (özel Güvenli Bağlantılar ilkelerinde tanımlanmamış kullanıcılar veya Standart veya Katı önceden ayarlanmış güvenlik ilkeleri) e-posta iletilerinde, Microsoft Teams'de ve desteklenen Office uygulamalarındaki dosyalarda Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Ayrıca, belirli kullanıcılar, gruplar veya etki alanları için geçerli olan Güvenli Bağlantılar ilkeleri de oluşturabilirsiniz. Yönergeler için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).
 
 Güvenli Bağlantılar koruması aşağıdaki konumlarda kullanılabilir:
 
-- **E-posta iletileri**: Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, yerleşik koruma** önceden ayarlanmış güvenlik ilkesi tüm alıcılara (özel Güvenli Bağlantılar ilkelerinde tanımlanmayan kullanıcılar) Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Ayrıca, belirli kullanıcılar, gruplar veya etki alanları için geçerli olan Güvenli Bağlantılar ilkeleri de oluşturabilirsiniz. Yönergeler için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).
+- **Email iletileri**: E-posta iletilerindeki bağlantılar için Güvenli Bağlantılar korumaları, Güvenli Bağlantılar ilkeleri tarafından denetlenmektedir.
 
   E-posta iletileri için Güvenli Bağlantılar koruması hakkında daha fazla bilgi için, bu makalenin devamında yer alan [e-posta iletileri için Güvenli Bağlantılar ayarları](#safe-links-settings-for-email-messages) bölümüne bakın.
-  
+
   > [!NOTE]
   > Güvenli Bağlantılar posta etkin ortak klasörlerde çalışmaz.
   >
   > Güvenli Bağlantılar yalnızca HTTP(S) ve FTP biçimlerini destekler.
 
-- **Microsoft Teams**: Teams konuşmalarındaki, grup sohbetlerindeki veya kanallardaki bağlantılar için Güvenli Bağlantılar koruması da Güvenli Bağlantılar ilkeleri tarafından denetlenmektedir.
+- **Microsoft Teams**: Teams konuşmalarındaki, grup sohbetlerindeki veya kanallardaki bağlantılar için Güvenli Bağlantılar koruması Güvenli Bağlantılar ilkeleri tarafından denetlenmektedir.
 
   Teams'de Güvenli Bağlantılar koruması hakkında daha fazla bilgi için, bu makalenin devamında yer alan [Microsoft Teams için Güvenli Bağlantılar ayarları](#safe-links-settings-for-microsoft-teams) bölümüne bakın.
 
   > [!NOTE]
   > Şu anda Microsoft Teams için Güvenli Bağlantılar koruması Microsoft 365 GCC High veya Microsoft 365 DoD'da kullanılamaz.
 
-- **Office 365 uygulamaları**: Office 365 uygulamaları için Güvenli Bağlantılar koruması desteklenen masaüstü, mobil ve web uygulamalarında kullanılabilir. Güvenli Bağlantılar ilkelerinin **dışındaki** genel ayarda Office 365 uygulamalar için Güvenli Bağlantılar korumasını **yapılandırabilirsiniz**. Yönergeler için bkz[. Office 365 için Microsoft Defender'da Güvenli Bağlantılar ayarları için genel ayarları yapılandırma](configure-global-settings-for-safe-links.md).
+- **Office uygulamaları**: Desteklenen Office masaüstü, mobil ve web uygulamaları için Güvenli Bağlantılar koruması, Güvenli Bağlantılar ilkeleri tarafından denetlenebilir.
 
-  Office 365 uygulamaları için Güvenli Bağlantılar koruması, kullanıcıların etkin Güvenli Bağlantılar ilkelerine dahil olup olmamasına bakılmaksızın kuruluştaki Office 365 için Defender lisansına sahip tüm kullanıcılara uygulanır.
-
-  Office 365 uygulamalarında Güvenli Bağlantılar koruması hakkında daha fazla bilgi için, bu makalenin devamında [yer alan Office 365 uygulamalar için Güvenli Bağlantılar ayarları](#safe-links-settings-for-office-365-apps) bölümüne bakın.
+  Office uygulamalarında Güvenli Bağlantılar koruması hakkında daha fazla bilgi için, bu makalenin devamında yer alan [Office uygulamaları için Güvenli Bağlantılar ayarları](#safe-links-settings-for-office-apps) bölümüne bakın.
 
 Bu makale, aşağıdaki Güvenli Bağlantılar ayarları türlerinin ayrıntılı açıklamalarını içerir:
 
@@ -81,80 +83,71 @@ Bu makale, aşağıdaki Güvenli Bağlantılar ayarları türlerinin ayrıntıl�
 
   - [E-posta iletileri için Güvenli Bağlantılar ayarları](#safe-links-settings-for-email-messages)
   - [Microsoft Teams için Güvenli Bağlantılar ayarları](#safe-links-settings-for-microsoft-teams)
+  - [Office uygulamaları için Güvenli Bağlantılar ayarları](#safe-links-settings-for-office-apps)
   - [Güvenli Bağlantılar ilkelerindeki "Aşağıdaki URL'leri yeniden yazmayın" listeleri](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
 - **Genel Güvenli Bağlantılar ayarları**: Bu ayarlar Güvenli Bağlantılar ilkelerinde değil genel olarak yapılandırılır. Bu ayarlar şunlardır:
 
-  - [Office 365 uygulamaları için Güvenli Bağlantılar ayarları](#safe-links-settings-for-office-365-apps)
   - [Güvenli Bağlantılar için "Aşağıdaki URL'leri engelle" listesi](#block-the-following-urls-list-for-safe-links)
 
 Aşağıdaki tabloda, Office 365 için Defender içeren Microsoft 365 ve Office 365 kuruluşlarında Güvenli Bağlantılar senaryoları açıklanmaktadır (örneklerde lisans eksikliğinin hiçbir zaman sorun oluşturmadığını unutmayın).
 
 |Senaryo|Sonuç|
 |---|---|
-|Jean pazarlama departmanının bir üyesidir. Office 365 uygulamaları için Güvenli Bağlantılar koruması, Güvenli Bağlantılar'ın genel ayarlarında açılır ve pazarlama departmanı üyeleri için geçerli olan bir Güvenli Bağlantılar ilkesi vardır. Jean, e-posta iletisinde bir PowerPoint sunusu açar ve ardından sunudaki bir URL'ye tıklar.|Jean, Güvenli Bağlantılar tarafından korunuyor. <p> Jean bir Güvenli Bağlantılar ilkesine dahil edilir ve Office 365 uygulamalar için Güvenli Bağlantılar koruması açılır. <p> Office 365 uygulamalarında Güvenli Bağlantılar koruması gereksinimleri hakkında daha fazla bilgi için, bu makalenin devamında yer alan [Office 365 uygulamalar için Güvenli Bağlantılar ayarları](#safe-links-settings-for-office-365-apps) bölümüne bakın.|
-|Chris'in Microsoft 365 E5 kuruluşunda Yapılandırılmış Güvenli Bağlantılar ilkesi yok. Chris, dış gönderenden, sonunda tıkladığı kötü amaçlı bir web sitesinin URL'sini içeren bir e-posta alır.|Chris, Güvenli Bağlantılar tarafından korunmuyor. <p> Bir yöneticinin gelen e-posta iletilerinde Güvenli Bağlantılar koruması alabilmesi için en az bir Güvenli Bağlantılar ilkesi oluşturması gerekir. Güvenli Bağlantılar korumasını almak için Chris'in ilke koşullarına dahil edilmesi gerekir.|
-|Pat'in kuruluşunda hiçbir yönetici Herhangi bir Güvenli Bağlantı ilkesi oluşturmamıştır, ancak Office 365 uygulamalar için Güvenli Bağlantılar koruması açıktır. Pat bir Word belgesi açar ve dosyadaki bir URL'ye tıklar.|Pat, Güvenli Bağlantılar tarafından korunmaz. <p> Office 365 uygulamaları için Güvenli Bağlantılar koruması genel olarak açık olsa da Pat etkin Güvenli Bağlantılar ilkelerine dahil edilmediğinden koruma uygulanamaz.|
+|Jean pazarlama departmanının bir üyesidir. Office uygulamaları için Güvenli Bağlantılar koruması, pazarlama departmanı üyeleri için geçerli olan Güvenli Bağlantılar ilkesinde açıktır. Jean, e-posta iletisinde bir PowerPoint sunusu açar ve ardından sunudaki bir URL'ye tıklar.|Jean, Güvenli Bağlantılar tarafından korunuyor. <p> Jean, Office uygulamaları için Güvenli Bağlantılar korumasının açık olduğu Güvenli Bağlantılar ilkesine dahildir. <p> Office uygulamalarında Güvenli Bağlantılar koruması gereksinimleri hakkında daha fazla bilgi için, bu makalenin devamında yer alan [Office uygulamaları için Güvenli Bağlantılar ayarları](#safe-links-settings-for-office-apps) bölümüne bakın.|
+|Chris'in Microsoft 365 E5 kuruluşunda Yapılandırılmış Güvenli Bağlantılar ilkesi yok. Chris, dış gönderenden, sonunda tıkladığı kötü amaçlı bir web sitesinin URL'sini içeren bir e-posta alır.|Chris, Güvenli Bağlantılar tarafından korunuyor. <p> **Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi, tüm alıcılara (özel Güvenli Bağlantılar ilkeleri veya Standart veya Katı önceden belirlenmiş güvenlik ilkeleri içinde tanımlanmayan kullanıcılar) Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).|
+|Pat'in kuruluşunda yöneticiler Pat'i uygulayan bir Güvenli Bağlantılar ilkesi oluşturmuştur, ancak Office uygulamaları için Güvenli Bağlantılar koruması kapalıdır. Pat bir Word belgesi açar ve dosyadaki bir URL'ye tıklar.|Pat, Güvenli Bağlantılar tarafından korunmaz. <p> Pat etkin bir Güvenli Bağlantılar ilkesine dahil olsa da, bu ilkede Office uygulamaları için Güvenli Bağlantılar koruması kapatıldığından koruma uygulanamaz.|
 |Lee'nin kuruluşunda, `https://tailspintoys.com` Güvenli Bağlantılar için genel ayarlardaki **Aşağıdaki URL'leri engelle** listesinde yapılandırılır. Lee'yi içeren bir Güvenli Bağlantılar ilkesi zaten var. Lee, URL'sini `https://tailspintoys.com/aboutus/trythispage`içeren bir e-posta iletisi alır. Lee URL'ye tıklar.|URL Lee için otomatik olarak engellenebilir; listedeki URL girdisine ve Lee'nin kullandığı e-posta istemcisine bağlıdır. Daha fazla bilgi için, bu [makalenin devamında yer alan Güvenli Bağlantılar için "Aşağıdaki URL'leri engelle" listesine](#block-the-following-urls-list-for-safe-links) bakın.|
 |Jamie ve Julia contoso.com için çalışıyor. Uzun zaman önce, yöneticiler Hem Jamie hem de Julia için geçerli olan Güvenli Bağlantılar ilkeleri yapılandırdı. Jamie, e-postanın kötü amaçlı bir URL içerdiğini bilmeden Julia'ya bir e-posta gönderir.|Julia, kendisine uygulanan Güvenli Bağlantılar ilkesi iç alıcılar arasındaki iletilere uygulanacak şekilde **yapılandırılmışsa** Güvenli Bağlantılar tarafından korunur. Daha fazla bilgi için, bu makalenin devamında yer alan [e-posta iletileri için Güvenli Bağlantılar ayarları](#safe-links-settings-for-email-messages) bölümüne bakın.|
+
+## <a name="recipient-filters-in-safe-links-policies"></a>Güvenli Bağlantılar ilkelerindeki alıcı filtreleri
+
+İlkenin kime uygulanacağını belirleyen alıcı koşullarını ve özel durumlarını belirtmeniz gerekir. Koşullar ve özel durumlar için şu özellikleri kullanabilirsiniz:
+
+- **Alıcı**
+- **Alıcı etki alanı**
+- **Alıcı,**
+
+Bir koşulu veya özel durumu yalnızca bir kez kullanabilirsiniz, ancak koşul veya özel durum birden çok değer içerebilir. Aynı koşula veya özel duruma ait birden çok değer OR mantığını kullanır (örneğin, _\<recipient1\>_ veya _\<recipient2\>_). Farklı koşullar veya özel durumlar AND mantığını kullanır (örneğin, _\<recipient1\>_ ve _\<member of group 1\>_).
+
+> [!IMPORTANT]
+> Birden çok farklı koşul veya özel durum ek değildir; Onlar kapsayıcı. İlke _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
+>
+> - Alıcı: romain@contoso.com
+> - Alıcı şu üyelerin üyesidir: Yöneticiler
+>
+> İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
+>
+> Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
 
 ## <a name="safe-links-settings-for-email-messages"></a>E-posta iletileri için Güvenli Bağlantılar ayarları
 
 Güvenli Bağlantılar, bilinen kötü amaçlı köprüler için gelen e-postayı tarar. Taranan URL'ler, Microsoft standart URL ön eki kullanılarak yeniden yazılır: `https://nam01.safelinks.protection.outlook.com`. Bağlantı yeniden yazıldıktan sonra, kötü amaçlı olabilecek içerik için analiz edilir.
 
-Güvenli Bağlantılar bir URL'yi yeniden yazdıktan sonra, ileti _el ile_ iletilmiş veya yanıtlanmış olsa bile URL yeniden yazılır (hem iç hem de dış alıcılara). İletilen veya yanıtlanan iletiye eklenen ek bağlantılar yeniden yazılmaz. Ancak, Gelen Kutusu kuralları veya SMTP iletme tarafından _otomatik_ iletme durumunda, alıcı Güvenli Bağlantılar tarafından _korunmadığı veya_ URL önceki bir iletişimde zaten yeniden yazılmamışsa, URL son alıcı için hedeflenen iletide yeniden yazılmaz. Güvenli Bağlantılar etkinleştirildiği sürece, URL'ler yeniden yazılsa da yazılmasa da teslim öncesinde taranmaya devam eder. Sarmalanmamış URL'ler, Masaüstü için Outlook sürüm 16.0.12513 veya sonraki bir sürüme tıklanması sırasında güvenli bağlantılar için istemci tarafı API çağrısı tarafından da denetlenir.
+Güvenli Bağlantılar bir URL'yi yeniden yazdıktan sonra, ileti _el ile_ iletilmiş veya yanıtlanmış olsa bile URL yeniden yazılır (hem iç hem de dış alıcılara). İletilen veya yanıtlanan iletiye eklenen ek bağlantılar yeniden yazılmaz. Ancak, Gelen Kutusu kuralları veya SMTP iletme tarafından _otomatik_ iletme durumunda, alıcı Güvenli Bağlantılar tarafından _korunmadığı veya_ URL önceki bir iletişimde zaten yeniden yazılmamışsa, URL son alıcı için hedeflenen iletide yeniden yazılmaz. Güvenli Bağlantılar açık olduğu sürece URL'ler, yeniden yazılıp yazılmadıklarına bakılmaksızın teslim öncesinde taranmaya devam eder. Sarmalanmamış URL'ler, Masaüstü için Outlook sürüm 16.0.12513 veya sonraki bir sürüme tıklanması sırasında güvenli bağlantılar için istemci tarafı API çağrısı tarafından da denetlenir.
 
 E-posta iletilerine uygulanan Güvenli Bağlantılar ilkelerindeki ayarlar aşağıdaki listede açıklanmıştır:
 
-- **Açık: Güvenli Bağlantılar, kullanıcılar e-postadaki bağlantılara tıkladığında bilinen, kötü amaçlı bağlantıların listesini denetler: E-posta iletilerinde** Güvenli Bağlantılar taramasını etkinleştirir veya devre dışı bırakır. Önerilen değer seçilidir (açık) ve aşağıdaki eylemlerle sonuçlanır:
-  - Windows üzerinde Outlook'ta (C2R) Güvenli Bağlantılar taraması etkinleştirilir.
+- **Açık: Güvenli Bağlantılar, kullanıcılar e-postadaki bağlantılara tıkladığında bilinen, kötü amaçlı bağlantıların listesini denetler: E-posta iletilerinde** Güvenli Bağlantılar taramasını açma veya kapatma. Önerilen değer seçilidir (açık) ve aşağıdaki eylemlerle sonuçlanır:
+  - Windows'da Outlook'ta (C2R) Güvenli Bağlantılar taraması açıktır.
   - URL'ler yeniden yazılır ve kullanıcılar iletilerdeki URL'lere tıkladığında Güvenli Bağlantılar koruması üzerinden yönlendirilir.
   - Tıklandığında, URL'ler bilinen kötü amaçlı URL'ler listesinde ve ["Aşağıdaki URL'leri engelle" listesinde](#block-the-following-urls-list-for-safe-links) denetlenir.
   - Geçerli bir saygınlığı olmayan URL'ler arka planda zaman uyumsuz olarak patlatılır.
 
   Aşağıdaki ayarlar yalnızca e-posta iletilerinde Güvenli Bağlantılar taraması açıksa kullanılabilir:
 
-  - **Kuruluş içinde gönderilen e-posta iletilerine Güvenli Bağlantılar uygulama**: Aynı Exchange Online kuruluştaki iç gönderenler ve iç alıcılar arasında gönderilen iletilerde Güvenli Bağlantılar taramasını etkinleştirir veya devre dışı bırakır. Önerilen değer seçilidir (açık).
+  - **Kuruluş içinde gönderilen e-posta iletilerine Güvenli Bağlantılar uygulama: Aynı Exchange Online kuruluştaki** iç gönderenler ve iç alıcılar arasında gönderilen iletilerde Güvenli Bağlantılar taramasını açın veya kapatın. Önerilen değer seçilidir (açık).
 
-  - **Şüpheli bağlantılar ve dosyalara işaret eden bağlantılar için gerçek zamanlı URL taraması uygulayın: İndirilebilir içeriğe işaret eden** e-posta iletilerindeki bağlantılar da dahil olmak üzere bağlantıların gerçek zamanlı olarak taranmalarını sağlar. Önerilen değer seçilidir (açık).
+  - **Şüpheli bağlantılar ve dosyalara işaret eden bağlantılar için gerçek zamanlı URL taraması uygulayın: İndirilebilir içeriğe işaret eden** e-posta iletilerindeki bağlantılar da dahil olmak üzere bağlantıların gerçek zamanlı taramasını açar. Önerilen değer seçilidir (açık).
 
-  - **İletiyi teslim etmeden önce URL taramasının tamamlanmasını bekleyin**:
-    - Seçili (açık): URL içeren iletiler tarama tamamlanana kadar tutulur. İletiler yalnızca URL'lerin güvenli olduğu onaylandıktan sonra teslim edilir. Bu, önerilen değerdir.
-    - Seçili değil (kapalı): URL taraması tamamlanamadıysa iletiyi yine de teslim edin.
+    - **İletiyi teslim etmeden önce URL taramasının tamamlanmasını bekleyin**:
+      - Seçili (açık): URL içeren iletiler tarama tamamlanana kadar tutulur. İletiler yalnızca URL'lerin güvenli olduğu onaylandıktan sonra teslim edilir. Bu, önerilen değerdir.
+      - Seçili değil (kapalı): URL taraması tamamlanamadıysa iletiyi yine de teslim edin.
 
-  - **URL'leri yeniden yazmayın, yalnızca SafeLinks API'si aracılığıyla denetimler yapın**: Bu ayar etkinleştirilirse, URL sarmalama işlemi gerçekleşmez. Güvenli Bağlantılar, yalnızca URL'yi destekleyen Outlook istemcileri tarafından URL tıklatılırken API'ler aracılığıyla çağrılır. Önerilen değer devre dışı bırakıldı.
-
-- **Kullanıcı tıklamalarını izleme**: E-posta iletilerinde tıklanan URL'ler için Güvenli Bağlantılar tıklama verilerinin depolanmasını etkinleştirir veya devre dışı bırakır. Önerilen değer, bu ayarı seçili bırakmaktır (kullanıcı tıklamalarını izleme).
-
-  İç gönderenler ve iç alıcılar arasında gönderilen e-posta iletilerindeki bağlantılar için URL tıklama izlemesi şu anda desteklenmemektedir.
-
-- **Kullanıcıların özgün URL'ye tıklamasına izin ver**: Kullanıcıların [uyarı sayfasından](#warning-pages-from-safe-links) özgün URL'ye tıklamasına izin verir veya bunu engeller. Önerilen değer devre dışı bırakıldı.
-
-- **Bildirim ve uyarı sayfalarında kuruluş markasını görüntüleme**: Bu seçenek, kuruluşunuzun markasını uyarı sayfalarında gösterir. Varsayılan Microsoft uyarı sayfaları genellikle saldırganlar tarafından kullanıldığından, markalama kullanıcıların geçerli uyarıları tanımlamalarına yardımcı olur. Özelleştirilmiş markalama hakkında daha fazla bilgi için bkz. [Kuruluşunuz için Microsoft 365 temasını özelleştirme](../../admin/setup/customize-your-organization-theme.md).
+  - **URL'leri yeniden yazmayın, yalnızca SafeLinks API'si aracılığıyla denetimler yapın**: Bu ayar seçiliyse (açık), URL sarmalama gerçekleşmez. Güvenli Bağlantılar, yalnızca URL'yi destekleyen Outlook istemcileri tarafından URL tıklatılırken API'ler aracılığıyla çağrılır. Önerilen değer seçilidir (açık).
 
   Güvenli Bağlantılar ilkeleri için Standart ve Katı ilke ayarları için önerilen değerler hakkında daha fazla bilgi için bkz. [Güvenli Bağlantılar ilke ayarları](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
-- **Alıcı filtreleri**: İlkenin kime uygulanacağını belirleyen alıcı koşullarını ve özel durumlarını belirtmeniz gerekir. Koşullar ve özel durumlar için şu özellikleri kullanabilirsiniz:
-  - **Alıcı**
-  - **Alıcı etki alanı**
-  - **Alıcı,**
-
-  Bir koşulu veya özel durumu yalnızca bir kez kullanabilirsiniz, ancak koşul veya özel durum birden çok değer içerebilir. Aynı koşula veya özel duruma ait birden çok değer OR mantığını kullanır (örneğin, _\<recipient1\>_ veya _\<recipient2\>_). Farklı koşullar veya özel durumlar AND mantığını kullanır (örneğin, _\<recipient1\>_ ve _\<member of group 1\>_).
-
-  > [!IMPORTANT]
-  > Birden çok farklı koşul veya özel durum ek değildir; Onlar kapsayıcı. İlke _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
-  >
-  > - Alıcı: romain@contoso.com
-  > - Alıcı şu üyelerin üyesidir: Yöneticiler
-  >
-  > İlke, _romain@contoso.com yalnızca_ Yönetici gruplarının da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
-  >
-  > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler gruplarının da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
-
-- **Öncelik**: Birden çok ilke oluşturursanız, bunların uygulanacağı sırayı belirtebilirsiniz. hiçbir iki ilke aynı önceliğe sahip olamaz ve ilke işleme ilk ilke uygulandıktan sonra durur.
-
-  Öncelik sırası ve birden çok ilkenin nasıl değerlendirilip uygulandığı hakkında daha fazla bilgi için bkz [. E-posta korumasının sırası ve önceliği](how-policies-and-protections-are-combined.md).
-  
 ### <a name="how-safe-links-works-in-email-messages"></a>Güvenli Bağlantılar e-posta iletilerinde nasıl çalışır?
 
 Yüksek düzeyde, Güvenli Bağlantılar koruması e-posta iletilerindeki URL'lerde şu şekilde çalışır:
@@ -169,34 +162,26 @@ Yüksek düzeyde, Güvenli Bağlantılar koruması e-posta iletilerindeki URL'le
 
    - URL, kötü amaçlı olduğu belirlenen bir web sitesine işaret ederse, [kötü amaçlı bir web sitesi uyarı](#malicious-website-warning) sayfası (veya farklı bir uyarı sayfası) açılır.
 
-   - URL indirilebilir bir dosyaya işaret ederse ve kullanıcıya uygulanan ilkede **Şüpheli bağlantılar ve dosyalara işaret eden bağlantılar için gerçek zamanlı URL taraması uygula** ayarı etkinse, indirilebilir dosya denetlenir.
+   - URL indirilebilir bir dosyayı işaret ederse ve kullanıcıya uygulanan ilkede **Şüpheli bağlantılar ve dosyalara işaret eden bağlantılar için gerçek zamanlı URL taraması uygula** ayarı açıksa, indirilebilir dosya denetlenir.
 
    - URL'nin güvenli olduğu belirlenirse web sitesi açılır.
 
 ## <a name="safe-links-settings-for-microsoft-teams"></a>Microsoft Teams için Güvenli Bağlantılar ayarları
 
-Güvenli Bağlantılar ilkelerinde Microsoft Teams için Güvenli Bağlantılar korumasını etkinleştirir veya devre dışı bırakırsınız. Özellikle, **Microsoft Teams'de bilinmeyen veya kötü amaçlı olabilecek URL'ler için eylemi seçin** ayarını kullanırsınız. Önerilen değer **Açık'tır**.
+Güvenli Bağlantılar ilkelerinde Microsoft Teams için Güvenli Bağlantılar korumasını açar veya kapatırsınız. Özellikle Açık **: Güvenli Bağlantılar, kullanıcılar Microsoft Teams'de bağlantılara tıkladığında bilinen, kötü amaçlı bağlantıların listesini denetler** ayarını kullanırsınız. Önerilen değer açık (seçili).
 
 > [!NOTE]
 > Teams için Güvenli Bağlantılar korumasını açtığınızda veya kapattığınızda, değişikliğin geçerli olması 24 saat kadar sürebilir.
 >
 > Şu anda Microsoft Teams için Güvenli Bağlantılar koruması Microsoft 365 GCC High veya Microsoft 365 DoD'da kullanılamaz.
 
-E-posta iletilerindeki bağlantılara uygulanan Güvenli Bağlantılar ilkelerindeki aşağıdaki ayarlar Teams'deki bağlantılara da uygulanır:
-
-- **Şüpheli bağlantılar ve dosyalara işaret eden bağlantılar için gerçek zamanlı URL taraması uygulama**
-- **Kullanıcı tıklamalarını izleme**
-- **Kullanıcıların özgün URL'ye tıklamasına izin verme**
-
-Bu ayarlar daha önce [e-posta iletileri için Güvenli Bağlantılar ayarlarında](#safe-links-settings-for-email-messages) açıklanmıştır.
-
 Microsoft Teams için Güvenli Bağlantılar korumasını açtıktan sonra, korumalı kullanıcı bağlantıya tıkladığında (tıklama süresi koruması) Teams'deki URL'ler bilinen kötü amaçlı bağlantıların listesiyle karşılaştırılır. URL'ler yeniden yazılmaz. Bir bağlantının kötü amaçlı olduğu tespit edilirse, kullanıcılar aşağıdaki deneyimlere sahip olur:
 
 - Bir Teams konuşmasında, grup sohbetinde veya kanallardan bağlantıya tıklandıysa, aşağıdaki ekran görüntüsünde gösterildiği gibi uyarı sayfası varsayılan web tarayıcısında görünür.
 - Sabitlenmiş bir sekmeden bağlantıya tıklandıysa, uyarı sayfası bu sekmedeki Teams arabiriminde görünür. Bağlantıyı bir web tarayıcısında açma seçeneği güvenlik nedeniyle devre dışı bırakılır.
-- İlkedeki **kullanıcıların özgün URL'ye tıklamasına izin verme** ayarının nasıl yapılandırıldığına bağlı olarak, kullanıcının özgün URL'ye tıklamasına izin verilir veya verilmez (Ekran görüntüsünde **yine de devam edin (önerilmez** ). **Kullanıcıların özgün URL'ye tıklayamamaları için Kullanıcıların özgün URL'ye tıklamasına izin verme** ayarını etkinleştirmenizi öneririz.
+- **İlkedeki kullanıcıların özgün URL'ye tıklamasına izin ver** ayarının nasıl yapılandırıldığına bağlı olarak, kullanıcının özgün URL'ye tıklamasına izin verilir veya izin verilmez (Ekran görüntüsünde **yine de devam edin (önerilmez**). **Kullanıcıların özgün URL'ye tıklayamamaları için Kullanıcıların özgün URL'ye tıklamasına izin ver** ayarını seçmemenizi öneririz.
 
-Bağlantıyı gönderen kullanıcı, Teams korumasının etkinleştirildiği Güvenli Bağlantılar ilkesine dahil değilse, kullanıcı kendi bilgisayarında veya cihazında özgün URL'ye tıklayabilirsiniz.
+Bağlantıyı gönderen kullanıcı, Teams korumasının açık olduğu Güvenli Bağlantılar ilkesi tarafından korunmuyorsa, kullanıcı kendi bilgisayarında veya cihazında özgün URL'ye tıklamakta serbesttir.
 
 :::image type="content" source="../../media/tp-safe-links-for-teams-malicious.png" alt-text="Kötü amaçlı bir bağlantı bildiren Teams için Güvenli Bağlantılar sayfası" lightbox="../../media/tp-safe-links-for-teams-malicious.png":::
 
@@ -208,15 +193,17 @@ Yüksek düzeyde, Microsoft Teams'deki URL'ler için Güvenli Bağlantılar koru
 
 1. Bir kullanıcı Teams uygulamasını başlatır.
 
-2. Microsoft 365, kullanıcının kuruluşunun Office 365 için Microsoft Defender içerdiğini ve kullanıcının Microsoft Teams için korumanın etkinleştirildiği etkin bir Güvenli Bağlantılar ilkesine dahil olduğunu doğrular.
+2. Microsoft 365, kullanıcının kuruluşunun Office 365 için Microsoft Defender içerdiğini ve kullanıcının Microsoft Teams için korumanın açık olduğu etkin bir Güvenli Bağlantılar ilkesine dahil olduğunu doğrular.
 
 3. URL'ler sohbetlerde, grup sohbetlerinde, kanallarda ve sekmelerde kullanıcı için tıklandığında doğrulanır.
 
-## <a name="safe-links-settings-for-office-365-apps"></a>Office 365 uygulamaları için Güvenli Bağlantılar ayarları
+## <a name="safe-links-settings-for-office-apps"></a>Office uygulamaları için Güvenli Bağlantılar ayarları
 
-Office 365 uygulamaları için Güvenli Bağlantılar koruması, e-posta iletilerindeki bağlantıları değil Office belgelerindeki bağlantıları denetler (ancak belge açıldıktan sonra e-posta iletilerinde ekli Office belgelerindeki bağlantıları denetleyebilir).
+Office uygulamaları için Güvenli Bağlantılar koruması, e-posta iletilerindeki bağlantıları değil, Office belgelerindeki bağlantıları denetler. Ancak, belge açıldıktan sonra e-posta iletilerinde ekli Office belgelerindeki bağlantıları denetleyebiliyor.
 
-Office 365 uygulamaları için Güvenli Bağlantılar koruması aşağıdaki istemci gereksinimlerine sahiptir:
+Güvenli Bağlantılar ilkelerinde Office uygulamaları için Güvenli Bağlantılar korumasını açar veya kapatırsınız. Özellikle Açık **: Güvenli Bağlantılar, kullanıcılar Microsoft Office uygulamalarında bağlantılara tıkladığında bilinen, kötü amaçlı bağlantıların listesini denetler** ayarını kullanırsınız. Önerilen değer açık (seçili).
+
+Office uygulamaları için Güvenli Bağlantılar koruması aşağıdaki istemci gereksinimlerine sahiptir:
 
 - Microsoft 365 Uygulamaları veya Microsoft 365 İş Ekstra.
   - Windows, Mac veya bir web tarayıcısında Word, Excel ve PowerPoint'in geçerli sürümleri.
@@ -225,27 +212,15 @@ Office 365 uygulamaları için Güvenli Bağlantılar koruması aşağıdaki ist
   - Web tarayıcısında OneNote.
   - Kaydedilen EML veya MSG dosyalarını açarken Windows için Outlook.
 
-- Office 365 uygulamalar modern kimlik doğrulaması kullanacak şekilde yapılandırılmıştır. Daha fazla bilgi için bkz. [Office 2013, Office 2016 ve Office 2019 istemci uygulamaları için modern kimlik doğrulaması nasıl çalışır](../../enterprise/modern-auth-for-office-2013-and-2016.md)?
+- Office uygulamaları modern kimlik doğrulaması kullanacak şekilde yapılandırılmıştır. Daha fazla bilgi için bkz. [Office 2013, Office 2016 ve Office 2019 istemci uygulamaları için modern kimlik doğrulaması nasıl çalışır](../../enterprise/modern-auth-for-office-2013-and-2016.md)?
 
 - Kullanıcılar iş veya okul hesaplarını kullanarak oturum açmışlardır. Daha fazla bilgi için bkz. [Office'te oturum açma](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).
 
-Office 365 uygulamalar için Güvenli Bağlantılar korumasını Güvenli Bağlantılar ilkelerinde değil, Güvenli Bağlantılar için genel ayarlarda yapılandırabilirsiniz. Koruma, kullanıcıların etkin Güvenli Bağlantılar ilkelerine dahil edilip edilmediğine bakılmaksızın kuruluştaki Office 365 için Defender lisansına sahip tüm kullanıcılara uygulanır.
-
-Office 365 uygulamaları için aşağıdaki Güvenli Bağlantılar ayarları kullanılabilir:
-
-- **Office 365 uygulamaları**: Desteklenen Office 365 uygulamalarında Güvenli Bağlantılar taramasını etkinleştirir veya devre dışı bırakır. Varsayılan ve önerilen değer **Açık'tır**.
-
-- **Kullanıcıların Güvenli Bağlantılar'a ne zaman tıkladığını izlemeyin**: Word, Excel, PowerPoint ve Visio masaüstü sürümlerinde tıklanan URL'ler için Güvenli Bağlantılar tıklama verilerinin depolanmasını etkinleştirir veya devre dışı bırakır. Önerilen değer **Kapalı'dır** ve bu da kullanıcı tıklamalarının izlendiği anlamına gelir.
-
-- **Kullanıcıların özgün URL'ye güvenli bağlantılara tıklamasına izin verme**: Kullanıcıların Word, Excel, PowerPoint ve Visio masaüstü sürümlerinde [uyarı sayfasından](#warning-pages-from-safe-links) özgün URL'ye tıklamasına izin verir veya bunu engeller. Varsayılan ve önerilen değer **Açık'tır**.
-
-Office 365 uygulamalar için Güvenli Bağlantılar ayarlarını yapılandırmak için bkz. [Office 365 uygulamalar için Güvenli Bağlantılar korumasını yapılandırma](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
-
 Standart ve Katı ilke ayarları için önerilen değerler hakkında daha fazla bilgi için bkz. [Güvenli Bağlantılar için genel ayarlar](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links).
 
-### <a name="how-safe-links-works-in-office-365-apps"></a>Güvenli Bağlantılar Office 365 uygulamalarında nasıl çalışır?
+### <a name="how-safe-links-works-in-office-apps"></a>Güvenli Bağlantılar Office uygulamalarında nasıl çalışır?
 
-Güvenli Bağlantılar koruması, Office 365 uygulamalarındaki URL'ler için yüksek düzeyde şu şekilde çalışır. Desteklenen Office 365 uygulamaları önceki bölümde açıklanmıştır.
+Yüksek düzeyde, Office uygulamalarında URL'ler için Güvenli Bağlantılar koruması şu şekilde çalışır. Desteklenen Office uygulamaları önceki bölümde açıklanmıştır.
 
 1. Kullanıcı, Microsoft 365 Uygulamaları veya Microsoft 365 İş Ekstra içeren bir kuruluşta iş veya okul hesabını kullanarak oturum açar.
 
@@ -264,7 +239,31 @@ Güvenli Bağlantılar koruması, Office 365 uygulamalarındaki URL'ler için y�
    - Güvenli Bağlantılar taraması tamamlanamıyorsa, Güvenli Bağlantılar koruması tetiklenmez. Office masaüstü istemcilerinde, hedef web sitesine geçmeden önce kullanıcı uyarılır.
 
 > [!NOTE]
-> Kullanıcının Office için Güvenli Bağlantılar'ın etkin olduğunu doğrulamak her oturumun başında birkaç saniye sürebilir.
+> Office uygulamaları için Güvenli Bağlantılar'ın kullanıcının kullanımına sunulduğunun doğrulanması her oturumun başında birkaç saniye sürebilir.
+
+## <a name="click-protection-settings-in-safe-links-policies"></a>Güvenli Bağlantılar ilkelerinde koruma ayarlarına tıklayın
+
+Bu ayarlar e-posta, Teams ve Office uygulamalarında Güvenli Bağlantılar için geçerlidir:
+
+- **Kullanıcı tıklamalarını izleme**: Tıklanan URL'ler için Güvenli Bağlantılar tıklama verilerinin depolanmasını açın veya kapatın. Bu ayarı seçili (açık) bırakmanızı öneririz.
+
+  Office uygulamaları için Güvenli Bağlantılar'da bu ayar Word, Excel, PowerPoint ve Visio masaüstü sürümleri için geçerlidir.
+
+  İç gönderenler ve iç alıcılar arasında gönderilen e-posta iletilerindeki bağlantılar için URL tıklama izlemesi şu anda desteklenmemektedir.
+
+  Bu ayarı seçerseniz aşağıdaki ayarlar kullanılabilir:
+
+  - **Kullanıcıların özgün URL'ye tıklamasına izin ver**: Kullanıcıların [uyarı sayfasından](#warning-pages-from-safe-links) özgün URL'ye tıklayıp tıklayamayacağını denetler. Önerilen değer seçili değil (kapalı).
+
+    Office uygulamaları için Güvenli Bağlantılar'da bu ayar Word, Excel, PowerPoint ve Visio masaüstü sürümlerindeki özgün URL için geçerlidir.
+
+  - **Bildirim ve uyarı sayfalarında kuruluş markasını görüntüleme**: Bu seçenek, kuruluşunuzun markasını uyarı sayfalarında gösterir. Varsayılan Microsoft uyarı sayfaları genellikle saldırganlar tarafından kullanıldığından, markalama kullanıcıların geçerli uyarıları tanımlamalarına yardımcı olur. Özelleştirilmiş markalama hakkında daha fazla bilgi için bkz. [Kuruluşunuz için Microsoft 365 temasını özelleştirme](../../admin/setup/customize-your-organization-theme.md).
+
+## <a name="priority-of-safe-links-policies"></a>Güvenli Bağlantılar ilkelerinin önceliği
+
+Birden çok ilke oluşturduktan sonra, uygulanacağı sırayı belirtebilirsiniz. hiçbir iki ilke aynı önceliğe sahip olamaz ve ilke işleme ilk ilke uygulandıktan sonra durur. **Yerleşik koruma** ilkesi her zaman en son uygulanır. İlişkili Güvenli Bağlantılar ilkeleri **Standart** ve **Katı** önceden ayarlanmış güvenlik ilkeleri her zaman özel Güvenli Bağlantılar ilkeleri öncesinde uygulanır.
+
+Öncelik sırası ve birden çok ilkenin nasıl değerlendirilip uygulandığı hakkında daha fazla bilgi için bkz. [Önceden ayarlanmış güvenlik ilkeleri ve diğer ilkeler için öncelik sırası ve](preset-security-policies.md#order-of-precedence-for-preset-security-policies-and-other-policies) [E-posta korumasının sırası ve önceliği](how-policies-and-protections-are-combined.md).
 
 ## <a name="block-the-following-urls-list-for-safe-links"></a>Güvenli Bağlantılar için "Aşağıdaki URL'leri engelle" listesi
 
@@ -273,8 +272,8 @@ Güvenli Bağlantılar koruması, Office 365 uygulamalarındaki URL'ler için y�
 
 **Aşağıdaki URL'leri engelle** listesi, aşağıdaki konumlarda Güvenli Bağlantılar taraması tarafından her zaman engellenen bağlantıları tanımlar:
 
-- E-posta iletileri.
-- Windows ve Mac'teki Office 365 uygulamalarındaki belgeler.
+- İletileri Email.
+- Windows ve Mac'teki Office uygulamalarındaki belgeler.
 - iOS ve Android için Office'teki belgeler.
 
 Etkin bir Güvenli Bağlantılar ilkesindeki bir kullanıcı desteklenen bir uygulamada engellenen bağlantıya tıkladığında [Engellenen URL uyarı](#blocked-url-warning) sayfasına yönlendirilir.

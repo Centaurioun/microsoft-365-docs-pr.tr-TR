@@ -15,16 +15,16 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5b321b15e608c96a18e756c2f6634b5fb4f69e6f
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: a21c3b1779c3a8ffa32ca4bbd777b377536ec870
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089472"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772631"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'de rol ve izin atama
 
-Microsoft 365 Defender portalında İş için Microsoft Defender yapılandırma, raporları görüntüleme veya algılanan tehditlerle ilgili yanıt eylemleri gerçekleştirme gibi görevleri gerçekleştirmek için güvenlik ekibinize uygun izinlerin atanması gerekir. İzinler, Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com)) veya Azure Active Directory atanan roller aracılığıyla [verilir.](/azure/active-directory/roles/manage-roles-portal) 
+Microsoft 365 Defender portalında İş için Defender'ı yapılandırma, raporları görüntüleme veya algılanan tehditlerle ilgili yanıt eylemleri gerçekleştirme gibi görevleri gerçekleştirmek için güvenlik ekibinize uygun izinlerin atanması gerekir. İzinler, Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com)) veya [Azure Active Directory'de](/azure/active-directory/roles/manage-roles-portal) atanan roller aracılığıyla verilir. 
 
 ## <a name="what-to-do"></a>Yapılması gerekenler
 
@@ -39,9 +39,9 @@ Aşağıdaki tabloda, İş için Defender'da atanabilecek üç rol açıklanmakt
 
 | İzin düzeyi | Açıklama |
 |:---|:---|
-| **Genel yöneticiler** (genel yöneticiler olarak da adlandırılır) <br/><br/> *En iyi yöntem olarak genel yönetici sayısını sınırlayın.* | Genel yöneticiler her türlü görevi gerçekleştirebilir. Şirketinizi Microsoft 365 veya İş için Microsoft Defender için kaydolan kişi varsayılan olarak genel yöneticidir. <br/><br/> Genel yöneticiler aşağıdakiler gibi tüm Microsoft 365 portallarında ayarlara erişebilir/ayarları değiştirebilir: <br/>- Microsoft 365 yönetim merkezi ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portalı ([https://security.microsoft.com](https://security.microsoft.com)) |
-| **Güvenlik yöneticileri** (güvenlik yöneticileri olarak da adlandırılır) | Güvenlik yöneticileri aşağıdaki görevleri gerçekleştirebilir: <br/>- Güvenlik ilkelerini görüntüleme ve yönetme <br/>- Güvenlik tehditlerini ve uyarılarını görüntüleme ve yönetme (bu etkinlikler uç noktalarda yanıt eylemleri gerçekleştirmeyi içerir) <br/>- Güvenlik bilgilerini ve raporlarını görüntüleme |
-| **Güvenlik gözetmeni** | Güvenlik okuyucuları aşağıdaki görevleri gerçekleştirebilir: <br/>- Güvenlik ilkelerini görüntüleme <br/>- Güvenlik tehditlerini ve uyarılarını görüntüleme <br/>- Güvenlik bilgilerini ve raporlarını görüntüleme  |
+| **Genel yöneticiler** (genel yöneticiler olarak da adlandırılır) <p> *En iyi yöntem olarak genel yönetici sayısını sınırlayın.* | Genel yöneticiler her türlü görevi gerçekleştirebilir. Şirketinizi Microsoft 365 veya İş için Defender'a kaydolan kişi varsayılan olarak genel yöneticidir. <p> Genel yöneticiler, aşağıdakiler gibi tüm Microsoft 365 portallarında ayarları değiştirebilir: <ul><li>Microsoft 365 yönetim merkezi ([https://admin.microsoft.com](https://admin.microsoft.com))</li><li>Microsoft 365 Defender portalı ([https://security.microsoft.com](https://security.microsoft.com))</li></ul> |
+| **Güvenlik yöneticileri** (güvenlik yöneticileri olarak da adlandırılır) | Güvenlik yöneticileri aşağıdaki görevleri gerçekleştirebilir: <ul><li>Güvenlik ilkelerini görüntüleme ve yönetme</li><li>Güvenlik tehditlerini ve uyarılarını görüntüleme ve yönetme (bu etkinlikler uç noktalarda yanıt eylemleri gerçekleştirmeyi içerir)</li><li>Güvenlik bilgilerini ve raporlarını görüntüleme</li></ul> |
+| **Güvenlik gözetmeni** | Güvenlik okuyucuları aşağıdaki görevleri gerçekleştirebilir:<ul><li>Güvenlik ilkelerini görüntüleme</li><li>Güvenlik tehditlerini ve uyarılarını görüntüleme</li><li>Güvenlik bilgilerini ve raporlarını görüntüleme</li></ul>  |
 
 
 ## <a name="view-or-edit-role-assignments"></a>Rol atamalarını görüntüleme veya düzenleme
@@ -57,9 +57,9 @@ Aşağıdaki tabloda, İş için Defender'da atanabilecek üç rol açıklanmakt
    - Güvenlik gözetmeni
 
    > [!IMPORTANT]
-   > Microsoft, kişilere yalnızca görevlerini gerçekleştirmek için ihtiyaç duydukları şeylere erişim verilmesini önerir. Bu kavramı izinler için *en az ayrıcalık* olarak adlandırıyoruz. Daha fazla bilgi edinmek için bkz. [Uygulamalar için en az ayrıcalıklı erişim için en iyi yöntemler](/azure/active-directory/develop/secure-least-privileged-access). 
+   > Microsoft, kişilere yalnızca görevlerini gerçekleştirmeleri için gerekenlere erişim vermenizi önerir. Bu kavramı izinler için *en az ayrıcalık* olarak adlandırıyoruz. Daha fazla bilgi edinmek için bkz. [Uygulamalar için en az ayrıcalıklı erişim için en iyi yöntemler](/azure/active-directory/develop/secure-least-privileged-access). 
 
-4. Yan bölmede **üyeleri Azure AD yönet** bağlantısını seçin. Bu eylem sizi rol atamalarınızı görüntüleyip yönetebileceğiniz Azure Active Directory (Azure AD) götürür.
+4. Yan bölmede **üyeleri Azure AD yönet** bağlantısını seçin. Bu eylem sizi rol atamalarınızı görüntüleyip yönetebileceğiniz Azure Active Directory'ye (Azure AD) götürür.
 
 5. Profilini açmak için bir kullanıcı seçin ve ardından **Atanan roller'i** seçin.
 
@@ -72,7 +72,7 @@ Aboneliğinize henüz kullanıcı eklemediyseniz bkz. [Aynı anda kullanıcı ek
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Devam et:
+Git:
 
 - [3. Adım: E-posta bildirimlerini ayarlama](mdb-email-notifications.md)
-- [4. Adım: Cihazları İş için Microsoft Defender ekleme](mdb-onboard-devices.md)
+- [4. Adım: Cihazları İş için Defender'a ekleme](mdb-onboard-devices.md)

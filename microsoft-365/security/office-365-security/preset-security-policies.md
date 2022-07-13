@@ -16,12 +16,12 @@ ms.custom: ''
 description: Yöneticiler, Exchange Online Protection (EOP) ve Office 365 için Microsoft Defender koruma özellikleri arasında Standart ve Katı ilke ayarlarının nasıl uygulanacağını öğrenebilir
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ffce562fbcbdf8ca9d6c19265166400163be7acf
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: ce4113b06c27cb288bcecce6a668a7da4bd46615
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607663"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772072"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP ve Office 365 için Microsoft Defender'da önceden ayarlanmış güvenlik ilkeleri
 
@@ -71,9 +71,9 @@ Profil, koruma düzeyini belirler. Aşağıdaki profiller kullanılabilir:
   > - Alıcı: romain@contoso.com
   > - Alıcı şu üyelerin üyesidir: Yöneticiler
   >
-  > İlke, _romain@contoso.com yalnızca_ Yönetici gruplarının da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
+  > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
   >
-  > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler gruplarının da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
+  > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
 
 - **Yerleşik koruma** (yalnızca Office 365 için Defender): Yalnızca Güvenli Bağlantılar ve Güvenli Ekler korumasını etkinleştiren bir profil. Bu profil, hiçbir zaman varsayılan ilkeleri olmayan Güvenli Bağlantılar ve Güvenli Ekler için varsayılan ilkeler sağlar.
 
@@ -148,7 +148,7 @@ Başka bir deyişle, **Katı koruma** ilkesinin ayarları Standart **koruma** il
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>Kullanıcılara Standart ve Katı önceden ayarlanmış güvenlik ilkeleri atamak için Microsoft 365 Defender portalını kullanın
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, Şablonlu ilkeler** bölümündeki **E-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Önceden Ayarlanmış Güvenlik İlkeleri'ne** gidin. **Önceden ayarlanmış güvenlik ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/presetSecurityPolicies>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, Şablonlu ilkeler** bölümündeki **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Önceden Ayarlanmış Güvenlik İlkeleri'ne** gidin. **Önceden ayarlanmış güvenlik ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/presetSecurityPolicies>.
 
 2. **Önceden ayarlanmış güvenlik ilkeleri** sayfasında **, Standart koruma** veya **Katı koruma** bölümlerinde **Yönet'e** tıklayın.
 
@@ -234,7 +234,7 @@ Mevcut koşulları ve özel durumları korurken **Standart koruma** veya **Katı
 
 Bu nedenle, **genellikle Yerleşik koruma** önayarlı güvenlik ilkesi için özel durumlar önermeyiz.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, Şablonlu ilkeler** bölümündeki **E-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Önceden Ayarlanmış Güvenlik İlkeleri'ne** gidin. **Önceden ayarlanmış güvenlik ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/presetSecurityPolicies>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, Şablonlu ilkeler** bölümündeki **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Önceden Ayarlanmış Güvenlik İlkeleri'ne** gidin. **Önceden ayarlanmış güvenlik ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/presetSecurityPolicies>.
 
 2. **Önceden ayarlanmış güvenlik ilkeleri** sayfasında **Yerleşik koruma** bölümünde **Dışlama ekle (önerilmez)** seçeneğini belirleyin.
 
@@ -253,6 +253,6 @@ Bu nedenle, **genellikle Yerleşik koruma** önayarlı güvenlik ilkesi için ö
 
 Kullanıcıya **Standart koruma** veya **Katı koruma** güvenlik ilkesini başarıyla atadığınızdan emin olmak için, varsayılan değerin **Standart koruma** ayarından farklı olduğu ve **Katı koruma** ayarından farklı olduğu bir koruma ayarı kullanın.
 
-Örneğin, istenmeyen posta (yüksek güvenilir istenmeyen posta değil) olarak algılanan e-postalar için, iletinin **Standart koruma** kullanıcıları için Gereksiz E-posta klasörüne teslim edilmiş ve **Katı koruma** kullanıcıları için karantinaya alınmış olduğunu doğrulayın.
+Örneğin, istenmeyen posta (yüksek güvenilir istenmeyen posta değil) olarak algılanan e-postalar için, iletinin **Standart koruma** kullanıcıları için Gereksiz Email klasörüne teslim edilmiş ve **Katı koruma** kullanıcıları için karantinaya alınmış olduğunu doğrulayın.
 
-Ya da [toplu posta](bulk-complaint-level-values.md) için, BCL değerinin 6 veya üzerinin iletiyi **Standart koruma** kullanıcıları için Gereksiz E-posta klasörüne teslim ettiğini ve BCL değerinin 4 veya üzerinin iletiyi **Katı koruma** kullanıcıları için karantinaya alındığını doğrulayın.
+Ya da [toplu posta](bulk-complaint-level-values.md) için, BCL değerinin 6 veya üzerinin iletiyi **Standart koruma** kullanıcıları için Gereksiz Email klasörüne teslim ettiğini ve BCL değeri 4 veya üzerinin iletiyi **Katı koruma** kullanıcıları için karantinaya alındığını doğrulayın.

@@ -18,12 +18,12 @@ ms.custom: ''
 description: Yöneticiler, Exchange Online Protection (EOP) içinde istenmeyen posta önleme ilkelerini görüntülemeyi, oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 780b7bc788cb38578e3729fac88a7c9d081f6732
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 6e62b4f2f0dc5eaf106c689a3eb05f78508ef1b0
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714760"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771295"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP'de istenmeyen posta önleme ilkelerini yapılandırma
 
@@ -88,7 +88,7 @@ Her kuruluşun Şu özelliklere sahip Varsayılan adlı yerleşik bir istenmeyen
 
 Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi oluşturmak, her ikisi için de aynı adı kullanarak istenmeyen posta filtresi kuralını ve ilişkili istenmeyen posta filtresi ilkesini aynı anda oluşturur.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
 
 2. **İstenmeyen posta önleme ilkeleri** sayfasında Oluştur simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **İlke oluşturun** ve açılan listeden **Gelen'i** seçin.
 
@@ -119,9 +119,9 @@ Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi olu
    > - Alıcı: romain@contoso.com
    > - Alıcı şu üyelerin üyesidir: Yöneticiler
    >
-   > İlke, _romain@contoso.com yalnızca_ Yönetici gruplarının da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
+   > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
    >
-   > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler gruplarının da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
+   > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
 
    İşiniz bittiğinde **İleri'ye** tıklayın.
 
@@ -162,17 +162,17 @@ Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi olu
 
      |Eylem|Spam|Yüksek<br>Güven<br>istenmeyen posta|Kimlik Avı|Yüksek<br>Güven<br>Kimlik avı|Toplu|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**İletiyi Gereksiz E-posta klasörüne taşıma**: İleti posta kutusuna teslim edilir ve Gereksiz E-posta klasörüne taşınır. <sup>1</sup>|![Onay işareti.](../../media/checkmark.png)<sup>\*</sup>|![Onay işareti.](../../media/checkmark.png)<sup>\*</sup>|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)<sup>\*</sup>|
-     |**X üst bilgisi ekle**: İleti üst bilgisine bir X üst bilgisi ekler ve iletiyi posta kutusuna teslim eder. <p> Bu X üst bilgisini ekle metin kutusuna daha sonra **X üst bilgisi** alan adını (değeri değil) girersiniz. <p> **İstenmeyen posta** ve **Yüksek güvenilirlikli istenmeyen posta** kararları için ileti Gereksiz E-posta klasörüne taşınır. <sup>1,2</sup>|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)||![Onay işareti](../../media/checkmark.png)|
+     |**İletiyi Gereksiz Email klasörüne taşıma**: İleti posta kutusuna teslim edilir ve Gereksiz Email klasörüne taşınır.<sup> 1</sup>|![Onay işareti.](../../media/checkmark.png)<sup>\*</sup>|![Onay işareti.](../../media/checkmark.png)<sup>\*</sup>|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)<sup>\*</sup>|
+     |**X üst bilgisi ekle**: İleti üst bilgisine bir X üst bilgisi ekler ve iletiyi posta kutusuna teslim eder. <p> Bu X üst bilgisini ekle metin kutusuna daha sonra **X üst bilgisi** alan adını (değeri değil) girersiniz. <p> **İstenmeyen posta** ve **Yüksek güvenilirlikli istenmeyen posta** kararları için ileti Gereksiz Email klasörüne taşınır.<sup> 1,2</sup>|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)||![Onay işareti](../../media/checkmark.png)|
      |**Metinle önceden eklenen konu satırı**: İletinin konu satırının başına metin ekler. İleti posta kutusuna teslim edilir ve Gereksiz e-posta klasörüne taşınır. <sup>1,2</sup> <p> Metni daha sonra **Konu ön eki satırına bu metin kutusuyla** girersiniz.|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)||![Onay işareti](../../media/checkmark.png)|
      |**İletiyi e-posta adresine yeniden yönlendirme**: İletiyi hedeflenen alıcılar yerine diğer alıcılara gönderir. <p> Alıcıları daha sonra **Bu e-posta adresine yeniden yönlendir** kutusunda belirtirsiniz.|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|
      |**İletiyi sil**: Tüm ekler dahil olmak üzere iletinin tamamını sessizce siler.|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)||![Onay işareti](../../media/checkmark.png)|
      |**Karantina iletisi**: İletiyi hedeflenen alıcılar yerine karantinaya gönderir. <p> İletinin ne kadar süreyle karantinada tutulacağını **Daha sonra Karantina** kutusunda belirtirsiniz. <p> Görüntülenen [İlke](quarantine-policies.md) seçin kutusunda istenmeyen posta filtresi kararı için karantinaya alınan iletilere uygulanan karantina **ilkesini belirtirsiniz** . Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md). <sup>3</sup>|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../../media/checkmark.png)|
      |**Eylem yok**|||||![Onay işareti](../../media/checkmark.png)|
 
-     > <sup>1</sup> EOP artık gereksiz e-posta kuralını kullanmak yerine iletileri Gereksiz E-posta klasörüne yönlendirmek için kendi posta akışı teslim aracısını kullanıyor. **Set-MailboxJunkEmailConfiguration** cmdlet'indeki _Enabled_ parametresinin artık posta akışı üzerinde hiçbir etkisi yoktur. Daha fazla bilgi için bkz[. Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md).
+     > <sup>1</sup> EOP artık gereksiz e-posta kuralını kullanmak yerine iletileri Gereksiz Email klasörüne yönlendirmek için kendi posta akışı teslim aracısını kullanıyor. **Set-MailboxJunkEmailConfiguration** cmdlet'indeki _Enabled_ parametresinin artık posta akışı üzerinde hiçbir etkisi yoktur. Daha fazla bilgi için bkz[. Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md).
      >
-     > EOP'nin şirket içi Exchange posta kutularını koruduğu karma ortamlarda, şirket içi Exchange'de posta akışı kurallarını (aktarım kuralları olarak da bilinir) yapılandırmanız gerekir. Bu posta akışı kuralları, posta kutusunda gereksiz e-posta kuralının iletiyi Gereksiz E-posta klasörüne taşıyabilmesi için EOP istenmeyen posta filtreleme kararını çevirir. Ayrıntılar için bkz. [Karma ortamlarda Gereksiz E-posta klasörüne istenmeyen posta göndermek için EOP'yi yapılandırma](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+     > EOP'nin şirket içi Exchange posta kutularını koruduğu karma ortamlarda, şirket içi Exchange'de posta akışı kurallarını (aktarım kuralları olarak da bilinir) yapılandırmanız gerekir. Bu posta akışı kuralları, posta kutusunda gereksiz e-posta kuralının iletiyi Gereksiz Email klasörüne taşıyabilmesi için EOP istenmeyen posta filtreleme kararını çevirir. Ayrıntılar için bkz. [Karma ortamlarda gereksiz Email klasörüne istenmeyen posta göndermek için EOP'yi yapılandırma](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
      >
      > <sup>2</sup> Bu değeri, iletiyi filtrelemek veya yönlendirmek için posta akışı kurallarında koşul olarak kullanabilirsiniz.
      >
@@ -260,7 +260,7 @@ Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi olu
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-spam-policies"></a>İstenmeyen posta önleme ilkelerini görüntülemek için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
 
 2. **İstenmeyen posta önleme ilkeleri** sayfasında aşağıdaki değerlerden birini arayın:
    - **Tür** değeri **Özel istenmeyen posta önleme ilkesidir**
@@ -277,7 +277,7 @@ Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi olu
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>İstenmeyen posta önleme ilkelerini değiştirmek için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
 
 2. **İstenmeyen posta önleme ilkeleri** sayfasında, ada tıklayarak listeden bir istenmeyen posta önleme ilkesi seçin:
    - **Tür** sütunundaki değerin **Özel istenmeyen posta önleme ilkesi** olduğu, oluşturduğunuz özel bir ilkedir.
@@ -293,7 +293,7 @@ bir ilkeyi etkinleştirmek veya devre dışı bırakmak ya da ilke öncelik sır
 
 Varsayılan istenmeyen posta önleme ilkesini devre dışı bırakamazsınız.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
 
 2. **İstenmeyen posta önleme ilkeleri** sayfasında, ada tıklayarak listeden Tür **değeri** **Özel istenmeyen posta önleme ilkesi** olan bir ilke seçin.
 
@@ -318,7 +318,7 @@ Varsayılan olarak, istenmeyen posta önleme ilkelerine oluşturuldukları sıra
 - Microsoft 365 Defender portalında, istenmeyen posta önleme ilkesinin önceliğini yalnızca oluşturduktan sonra değiştirebilirsiniz. PowerShell'de, istenmeyen posta filtresi kuralını oluştururken varsayılan önceliği geçersiz kılabilirsiniz (bu, mevcut kuralların önceliğini etkileyebilir).
 - İstenmeyen posta önleme ilkeleri, görüntülenme sırasına göre işlenir (ilk **ilkenin Öncelik** değeri 0'dır). Varsayılan istenmeyen posta önleme ilkesi **En düşük** öncelik değerine sahiptir ve bunu değiştiremezsiniz.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
 
 2. **İstenmeyen posta önleme ilkeleri** sayfasında, ada tıklayarak listeden **Özel istenmeyen posta önleme ilkesi** **Tür değerine** sahip bir ilke seçin.
 
@@ -335,7 +335,7 @@ Varsayılan olarak, istenmeyen posta önleme ilkelerine oluşturuldukları sıra
 
 Özel bir istenmeyen posta önleme ilkesini kaldırmak için Microsoft 365 Defender portalını kullandığınızda, istenmeyen posta filtresi kuralı ve ilgili istenmeyen posta filtresi ilkesi silinir. Varsayılan istenmeyen posta önleme ilkesini kaldıramazsınız.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
 
 2. **İstenmeyen posta önleme ilkeleri** sayfasında, ada tıklayarak listeden Tür **değeri** **Özel istenmeyen posta önleme ilkesi** olan bir ilke seçin. Görüntülenen ilke ayrıntıları açılır öğesinin üst kısmında Diğer eylemler simgesine tıklayın ![.](../../media/m365-cc-sc-more-actions-icon.png) **Diğer eylemler** \> ![İlkeyi sil simgesi **İlkeyi**](../../media/m365-cc-sc-delete-icon.png) sil.
 
@@ -355,7 +355,7 @@ Aşağıdaki istenmeyen posta önleme ilkesi ayarları yalnızca PowerShell'de k
 
 - Varsayılan olarak _MarkAsSpamBulkMail_ parametresidir `On` . Bu ayarın etkileri, bu makalenin önceki bölümlerinde [yer alan İstenmeyen posta önleme ilkeleri oluşturmak için Microsoft 365 Defender portalını kullanma](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) bölümünde açıklanmıştır.
 - Son kullanıcı istenmeyen posta karantina bildirimleri için aşağıdaki ayarlar:
-  - Outlook için Gereksiz E-posta Raporlama Aracı bağlantısını gösteren veya gizleyen _DownloadLink_ parametresi.
+  - Outlook için Gereksiz Email Raporlama Aracı bağlantısını gösteren veya gizleyen _DownloadLink_ parametresi.
   - Bildirimin konu satırını özelleştirmek için kullanabileceğiniz _EndUserSpamNotificationCustomSubject_ parametresi.
 
 ### <a name="use-powershell-to-create-anti-spam-policies"></a>İstenmeyen posta önleme ilkeleri oluşturmak için PowerShell kullanma
@@ -601,7 +601,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz [. Remove-HostedConten
 > [!NOTE]
 > Bu adımlar yalnızca GTUBE iletisini gönderdiğiniz e-posta kuruluşu giden istenmeyen postaları taramazsa çalışır. Varsa, test iletisini gönderemezsiniz.
 
-İstenmeyen Toplu E-posta için Genel Test (GTUBE), kuruluşunuzun istenmeyen posta önleme ayarlarını doğrulamak için bir test iletisine eklediğiniz bir metin dizesidir. GTUBE iletisi, kötü amaçlı yazılım ayarlarını test etmek için Avrupa Bilgisayar Virüsten Koruma Araştırma Enstitüsü (EICAR) metin dosyasına benzer.
+İstenmeyen Toplu Email için Genel Test (GTUBE), kuruluşunuzun istenmeyen posta önleme ayarlarını doğrulamak için bir test iletisine eklediğiniz bir metin dizesidir. GTUBE iletisi, kötü amaçlı yazılım ayarlarını test etmek için Avrupa Bilgisayar Virüsten Koruma Araştırma Enstitüsü (EICAR) metin dosyasına benzer.
 
 E-posta iletisine boşluk veya satır sonu olmadan aşağıdaki GTUBE metnini tek bir satıra ekleyin:
 

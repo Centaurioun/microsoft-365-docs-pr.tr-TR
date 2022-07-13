@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) ve Office 365 için Defender güvenlik ayarları için en iyi yöntemler nelerdir? Standart koruma için geçerli öneriler neleri içerir? Daha katı olmak istiyorsanız ne kullanılmalıdır? Ayrıca Office 365 için Defender kullanıyorsanız ne kadar ekstra alırsınız?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4abfee62caea6e11b525f558bb4e6e8408655c17
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: f182b27c4d50ea16a289ac05adceb22c7fc9fd8d
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756837"
+ms.locfileid: "66770965"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP ve Office 365 için Microsoft Defender güvenliği için önerilen ayarlar
 
@@ -267,7 +267,7 @@ PowerShell'de, bu ayarlar için [New-SafeAttachmentPolicy](/powershell/module/ex
 
 Office 365 için Defender'deki Güvenli Bağlantılar, etkin Güvenli Bağlantılar ilkelerine dahil edilen tüm kullanıcılar için geçerli olan genel ayarları ve her Güvenli Bağlantı ilkesine özgü ayarları içerir. Daha fazla bilgi için bkz. [Office 365 için Defender'de Güvenli Bağlantılar](safe-links.md).
 
-Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, yerleşik koruma** önceden ayarlanmış güvenlik ilkesi tüm alıcılara (özel Güvenli Bağlantılar ilkelerinde tanımlanmayan kullanıcılar) Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).
+Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, yerleşik koruma** ön ayarı güvenlik ilkesi tüm alıcılara Güvenli Bağlantılar koruması sağlar (özel Güvenli Bağlantılar ilkelerinde veya Standart veya Katı ön ayarlı güvenlik ilkelerinde tanımlanmayan kullanıcılar). Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).
 
 #### <a name="global-settings-for-safe-links"></a>Güvenli Bağlantılar için genel ayarlar
 
@@ -307,9 +307,8 @@ PowerShell'de, bu ayarlar için [New-SafeLinksPolicy](/powershell/module/exchang
 |**E-postada aşağıdaki URL'leri yeniden yazmayın** <p> _DoNotRewriteUrls_|Seçili değil <p> Boş|Seçili değil <p> Boş|Seçili değil <p> Boş|Seçili değil <p> Boş|Bu ayar için belirli bir önerimiz yok. <p> **Not**: "Aşağıdaki URL'leri yeniden yazmayın" listesinin amacı, belirtilen URL'lerin Güvenli Bağlantılar sarmalama işlemini atlamaktır. Bu listeyi kullanmak yerine artık [Kiracı İzin Ver/Engelle Listesinde izin ver URL girişleri oluşturabilirsiniz](allow-block-urls.md#create-allow-url-entries).|
 |**Microsoft Teams'de kötü amaçlı olabilecek URL'ler için eylem**||||||
 |**Açık: Güvenli Bağlantılar, kullanıcılar Microsoft Teams'de bağlantılara tıkladığında bilinen, kötü amaçlı bağlantıların listesini denetler** <p> _EnableSafeLinksForTeams_|Seçili değil <p> `$false`|Seçili <p> `$true`|Seçili <p> `$true`|Seçili <p> `$true`||
-|**Office 365 uygulamalarında Güvenli Bağlantıları kullanma** <p> _EnableSafeLinksForO365Clients_|-Inı <p> `$true`|-Inı <p> `$true`|Desteklenen Office 365 masaüstü ve mobil (iOS ve Android) uygulamalarında Güvenli Bağlantılar'ı kullanın. Daha fazla bilgi için bkz. [Office 365 uygulamaları için Güvenli Bağlantılar ayarları](safe-links.md#safe-links-settings-for-office-365-apps).|
-|**Kullanıcıların Office 365 uygulamalarda korumalı bağlantılara ne zaman tıkladığını izlemeyin** <p> _TrackClicks_|-Inı <p> `$false`|Devre Dışı <p> `$true`|Bu ayarı kapatmak (_TrackClicks_ ayarı`$true`) desteklenen Office 365 uygulamalarında kullanıcı tıklamalarını izler.|
-|**Kullanıcıların Office 365 uygulamalarında özgün URL'ye tıklamasına izin verme** <p> _AllowClickThrough_|-Inı <p> `$false`|-Inı <p> `$false`|Bu ayarın (_AllowClickThrough_ `$false`olarak ayarlı) etkinleştirilmesi, desteklenen Office 365 uygulamalarında özgün URL'ye tıklamayı engeller.|
+|**Microsoft Office uygulamalarında kötü amaçlı olabilecek URL'ler için eylem**||||||
+|**Açık: Güvenli Bağlantılar, kullanıcılar Microsoft Office uygulamalarında bağlantılara tıkladığında bilinen, kötü amaçlı bağlantıların listesini denetler** <p> _EnableSafeLinksForO365Clients_|Seçili değil <p> `$false`|Seçili <p> `$true`|Seçili <p> `$true`|Seçili <p> `$true`|Desteklenen Office 365 masaüstü ve mobil (iOS ve Android) uygulamalarında Güvenli Bağlantılar'ı kullanın. Daha fazla bilgi için bkz. [Office uygulamaları için Güvenli Bağlantılar ayarları](safe-links.md#safe-links-settings-for-office-apps).|
 |**Koruma ayarları'nı tıklatın**||||||
 |**Kullanıcı tıklamalarını izleme** <p> _TrackUserClicks_|Seçili <p> `$true`|Seçili <p> `$true`|Seçili <p> `$true`|Seçili <p> `$true`||
 |**Kullanıcıların özgün URL'ye tıklamasına izin ver** <p> _AllowClickThrough_|Seçili <p> `$true`|Seçili <p> `$true`|Seçili değil <p> `$false`|Seçili değil <p> `$false`|Bu ayarı kapatmak ( _AllowClickThrough_ `$false`ayarı) özgün URL'ye tıklamayı engeller.|

@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Üçüncü taraf koruma hizmetinden veya cihazından Office 365 için Microsoft Defender korumasına geçişe başlamak için adımları uygulayın.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34e975be9a937177706fd7db6605d2ef25edcad3
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 899cf3894936ac154e61ef56204294d526aab33e
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043555"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772028"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Office 365 için Microsoft Defender Geçiş - 2. Aşama: Kurulum
 
@@ -47,15 +47,15 @@ ms.locfileid: "66043555"
 
 ## <a name="step-1-create-distribution-groups-for-pilot-users"></a>1. Adım: Pilot kullanıcılar için dağıtım grupları oluşturma
 
-Geçişinizin aşağıdaki yönleri için dağıtım grupları Microsoft 365 gereklidir:
+Geçişinizin aşağıdaki yönleri için Microsoft 365'te dağıtım grupları gereklidir:
 
-- **SCL=-1 posta akışı kuralı için özel durumlar**: Pilot kullanıcıların Office 365 için Defender korumanın tüm etkisini elde etmelerini istiyorsunuz, bu nedenle gelen iletilerinin Office 365 için Defender tarafından taranması gerekir. Bunu yapmak için pilot kullanıcılarınızı Microsoft 365'deki uygun dağıtım gruplarında tanımlayıp bu grupları SCL=-1 posta akışı kuralına özel durumlar olarak yapılandırabilirsiniz.
+- **SCL=-1 posta akışı kuralı için özel durumlar**: Pilot kullanıcıların Office 365 için Defender korumanın tüm etkisini elde etmelerini istiyorsunuz, bu nedenle gelen iletilerinin Office 365 için Defender tarafından taranması gerekir. Bunu, pilot kullanıcılarınızı Microsoft 365'teki uygun dağıtım gruplarında tanımlayarak ve bu grupları SCL=-1 posta akışı kuralının özel durumları olarak yapılandırarak yaparsınız.
 
   [Ekleme 2. Adım: (İsteğe bağlı) Pilot kullanıcıları mevcut koruma hizmetinize göre filtrelemeden](migrate-to-defender-for-office-365-onboard.md#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service) muaf tutma bölümünde açıklandığı gibi, aynı pilot kullanıcıları mevcut koruma hizmetiniz tarafından taramaktan muaf tutmanız gerekir. Mevcut koruma hizmetinize göre filtreleme olasılığını ortadan kaldırmak ve yalnızca Office 365 için Defender güvenmek, geçişiniz tamamlandıktan sonra gerçekleşeceklerin en iyi ve en yakın gösterimidir.
 
 - **Belirli Office 365 için Defender koruma özelliklerini test** etme: Pilot kullanıcılar için bile her şeyi aynı anda açmak istemezsiniz. Pilot kullanıcılarınız için geçerli olan koruma özellikleri için aşamalı bir yaklaşım kullanmak sorun gidermeyi ve ayarlamayı çok daha kolay hale getirir. Bu yaklaşımı göz önünde bulundurarak aşağıdaki dağıtım gruplarını öneririz:
-  - **Kasa Ekler pilot grubu**: Örneğin, **MDOPilot\_SafeAttachments**
-  - **Kasa Bağlantıları pilot grubu**: Örneğin, **MDOPilot\_SafeLinks**
+  - **Güvenli Ekler pilot grubu**: Örneğin, **MDOPilot\_SafeAttachments**
+  - **Güvenli Bağlantılar pilot grubu**: Örneğin, **MDOPilot\_SafeLinks**
   - **Standart istenmeyen posta önleme ve kimlik avı önleme ilkesi ayarları için bir pilot grup**: Örneğin, **MDOPilot\_İstenmeyen PostaPhish\_Standard**
   - **Katı istenmeyen posta önleme ve kimlik avı önleme ilkesi ayarları için bir pilot grup**: Örneğin, **MDOPilot\_İstenmeyen Posta Katı\_**
 
@@ -71,7 +71,7 @@ Test etmeye hazır olduğunuzda, bu grupları [SCL=-1 posta akışı kuralına](
 
 - Standart veya Katı önerilen değerlerimizden **önemli ölçüde** farklı ayarlarla denemeler yapmak istiyorsanız, bu senaryolarda pilot kullanıcılar için ek ve belirli dağıtım grupları oluşturmayı ve kullanmayı göz önünde bulundurmalısınız. Ayarlarınızın ne kadar güvenli olduğunu görmek için Yapılandırma Çözümleyicisi'ni kullanabilirsiniz. Yönergeler için bkz[. EOP ve Office 365 için Microsoft Defender koruma ilkeleri için yapılandırma çözümleyicisi](configuration-analyzer-for-security-policies.md).
 
-  Çoğu kuruluş için en iyi yaklaşım, önerilen Standart ayarlarımızla yakından uyumlu ilkelerle başlamaktır. Kullanılabilir zaman diliminizde yapabileceğiniz kadar fazla gözlem ve geri bildirimden sonra, daha sonra daha agresif ayarlara geçebilirsiniz. Kimliğe bürünme koruması ve Gereksiz E-posta klasörüne teslim ile karantinaya teslim için özelleştirme gerekebilir.
+  Çoğu kuruluş için en iyi yaklaşım, önerilen Standart ayarlarımızla yakından uyumlu ilkelerle başlamaktır. Kullanılabilir zaman diliminizde yapabileceğiniz kadar fazla gözlem ve geri bildirimden sonra, daha sonra daha agresif ayarlara geçebilirsiniz. Kimliğe bürünme koruması ve Gereksiz Email klasörüne teslim ile karantinaya teslim için özelleştirme gerekebilir.
 
   Özelleştirilmiş ilkeler kullanıyorsanız, geçiş için önerilen ayarları içeren ilkeler _öncesinde_ uygulandığından emin olmanız yeterlidir. Bir kullanıcı aynı türdeki birden çok ilkede (örneğin, kimlik avından koruma) tanımlanırsa, kullanıcıya yalnızca bir ilke uygulanır (ilkenin öncelik değerine göre). Daha fazla bilgi için bkz [. E-posta korumasının sırası ve önceliği](how-policies-and-protections-are-combined.md).
 
@@ -81,7 +81,7 @@ Kullanıcıların Office 365 için Defender hatalı pozitifleri veya hatalı neg
 
 Kullanıcıların kötü amaçlı veya kötü amaçlı olarak bildirdiği iletileri almak için bir Exchange Online posta kutusu belirtebilirsiniz. Daha fazla yönerge için bkz. [Kullanıcı tarafından bildirilen ileti ayarları](user-submission.md). Bu posta kutusu, kullanıcılarınızın Microsoft'a gönderdiği iletilerin kopyalarını alabilir veya posta kutusu iletileri Microsoft'a bildirmeden kesebilir (güvenlik ekibiniz iletileri el ile analiz edebilir ve gönderebilir). Ancak, bu kesme yaklaşımı hizmetin otomatik olarak ayarlayıp öğrenmesine izin vermez.
 
-Ayrıca pilottaki tüm kullanıcıların, kullanıcı gönderimiyle uyumlu Outlook'da desteklenen bir ileti raporlama uygulaması yüklü olduğunu da onaylamanız gerekir. Bu uygulamalar şunlardır:
+Ayrıca, pilottaki tüm kullanıcıların Outlook'ta kullanıcı gönderimiyle uyumlu bir desteklenen ileti raporlama uygulaması yüklü olduğunu da onaylamanız gerekir. Bu uygulamalar şunlardır:
 
 - [Rapor İletisi eklentisi](enable-the-report-message-add-in.md)
 - [Rapor Kimlik Avı eklentisi](enable-the-report-phish-add-in.md)
@@ -93,37 +93,37 @@ Tüm kuruluşun deneyimi tarafından yedeklenen verilere güvenmek yerine birden
 
 ## <a name="step-3-maintain-or-create-the-scl-1-mail-flow-rule"></a>3. Adım: SCL=-1 posta akışı kuralını koruma veya oluşturma
 
-Gelen e-postanız Microsoft 365 önünde duran başka bir koruma hizmeti aracılığıyla yönlendirildiğinden, Exchange Online tüm gelen postaların istenmeyen posta güvenilirlik düzeyini (SCL) -1 değerine ayarlayan (istenmeyen posta filtrelemeyi atla) bir posta akışı kuralınız (aktarım kuralı olarak da bilinir) büyük olasılıkla vardır. Üçüncü taraf koruma hizmetlerinin çoğu, hizmetlerini kullanmak isteyen Microsoft 365 müşteriler için bu SCL=-1 posta akışı kuralını teşvik edin.
+Gelen e-postanız Microsoft 365'in önünde yer alan başka bir koruma hizmeti aracılığıyla yönlendirildiğinden, Exchange Online tüm gelen postaların istenmeyen posta güvenilirlik düzeyini (SCL) -1 değerine ayarlayan (istenmeyen posta filtrelemeyi atla) bir posta akışı kuralınız (aktarım kuralı olarak da bilinir) büyük olasılıkla vardır. Üçüncü taraf koruma hizmetlerinin çoğu, hizmetlerini kullanmak isteyen Microsoft 365 müşterileri için bu SCL=-1 posta akışı kuralını teşvik edebilir.
 
-Microsoft filtreleme yığınını geçersiz kılmak için başka bir mekanizma (örneğin, ip izin listesi) kullanıyorsanız, Microsoft 365 gelen tüm internet postaları üçüncü taraf koruma hizmetinden geldiği **sürece** (doğrudan İnternet'ten Microsoft 365'a posta akışı yapılmaz) SCL=-1 posta akışı kuralına geçmenizi öneririz.
+Microsoft filtreleme yığınını geçersiz kılmak için başka bir mekanizma (örneğin, ip izin listesi) kullanıyorsanız, Microsoft 365'e gelen tüm internet postaları üçüncü taraf koruma hizmetinden geldiği **sürece** (doğrudan İnternet'ten Microsoft 365'e posta akışı yapılmaz) SCL=-1 posta akışı kuralına geçmenizi öneririz.
 
 Geçiş sırasında SCL=-1 posta akışı kuralı aşağıdaki nedenlerle önemlidir:
 
 - Microsoft *yığınındaki* hangi özelliklerin mevcut koruma hizmetinizin sonuçlarını etkilemeden iletiler üzerinde işlem yapacağını görmek için [Tehdit Gezgini'ni](email-security-in-microsoft-defender.md) kullanabilirsiniz.
-- SCL=-1 posta akışı kuralına özel durumlar yapılandırarak kimlerin Microsoft 365 filtreleme yığını tarafından korunduğunu aşamalı olarak ayarlayabilirsiniz. Özel durumlar, bu makalenin ilerleyen bölümlerinde önerdiğimiz pilot dağıtım gruplarının üyeleri olacaktır.
+- SCL=-1 posta akışı kuralına özel durumlar yapılandırarak Microsoft 365 filtreleme yığını tarafından kimlerin korunduğunu aşamalı olarak ayarlayabilirsiniz. Özel durumlar, bu makalenin ilerleyen bölümlerinde önerdiğimiz pilot dağıtım gruplarının üyeleri olacaktır.
 
-  MX kaydınızın Microsoft 365 tam geçişi öncesinde veya sırasında, kuruluşunuzdaki tüm alıcılar için Microsoft 365 koruma yığınının tam korumasını açmak için bu kuralı devre dışı bırakacaksınız.
+  MX kaydınızın Microsoft 365'e tam geçişi öncesinde veya sırasında, kuruluşunuzdaki tüm alıcılar için Microsoft 365 koruma yığınının tam korumasını açmak için bu kuralı devre dışı bırakacaksınız.
 
 Daha fazla bilgi için bkz. [Exchange Online iletilerde istenmeyen posta güvenilirlik düzeyini (SCL) ayarlamak için posta akışı kurallarını kullanma](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 **Notlar**:
 
-- İnternet postasının mevcut koruma hizmetiniz üzerinden **ve** doğrudan Microsoft 365 aynı anda akmasına izin vermek istiyorsanız, SCL=-1 posta akışı kuralını (istenmeyen posta filtrelemeyi atlayan posta) yalnızca mevcut koruma hizmetinizden geçen postalarla kısıtlamanız gerekir. Microsoft 365'da kullanıcı posta kutularına filtrelenmemiş internet postası girişini istemezsiniz.
+- İnternet postasının mevcut koruma hizmetiniz üzerinden **ve** doğrudan Microsoft 365'e aynı anda akmasına izin vermek istiyorsanız, SCL=-1 posta akışı kuralını (istenmeyen posta filtrelemeyi atlayan postalar) yalnızca mevcut koruma hizmetinizden geçen postalarla kısıtlamanız gerekir. Microsoft 365'te kullanıcı posta kutularına filtrelenmemiş internet postası girişini istemezsiniz.
 
   Mevcut koruma hizmetiniz tarafından zaten taranmış postaları doğru şekilde tanımlamak için, SCL=-1 posta akışı kuralına bir koşul ekleyebilirsiniz. Örneğin:
 
   - **Bulut tabanlı koruma hizmetleri için**: Kuruluşunuza özgü bir üst bilgi ve üst bilgi değeri kullanabilirsiniz. Üst bilgi içeren iletiler Microsoft 365 tarafından taranmıyor. Üst bilgi içermeyen iletiler Microsoft 365 tarafından taranır
   - **Şirket içi koruma hizmetleri veya cihazları için**: Kaynak IP adreslerini kullanabilirsiniz. Kaynak IP adreslerinden gelen iletiler Microsoft 365 tarafından taranmıyor. Kaynak IP adreslerinden olmayan iletiler Microsoft 365 tarafından taranır.
 
-- Postanın filtrelenip filtrelenmediğini denetlemek için yalnızca MX kayıtlarına güvenmeyin. Gönderenler MX kaydını kolayca yoksayabilir ve doğrudan Microsoft 365 e-posta gönderebilir.
+- Postanın filtrelenip filtrelenmediğini denetlemek için yalnızca MX kayıtlarına güvenmeyin. Gönderenler MX kaydını kolayca yoksayabilir ve doğrudan Microsoft 365'e e-posta gönderebilir.
 
 ## <a name="step-4-configure-enhanced-filtering-for-connectors"></a>4. Adım: Bağlayıcılar için Gelişmiş Filtrelemeyi Yapılandırma
 
-İlk yapmanız gereken, var olan koruma hizmetinizden Microsoft 365'a posta akışı için kullanılan bağlayıcıda [Bağlayıcılar için Gelişmiş Filtreleme](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) 'yi (*listelemeyi atlama* olarak da bilinir) yapılandırmaktır. Bağlayıcıyı tanımlamaya yardımcı olması için [Gelen iletiler raporunu](/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports) kullanabilirsiniz.
+İlk yapmanız gereken, mevcut koruma hizmetinizden Microsoft 365'e posta akışı için kullanılan bağlayıcıda [Bağlayıcılar için Gelişmiş Filtreleme](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) 'yi ( *listelemeyi atlama* olarak da bilinir) yapılandırmaktır. Bağlayıcıyı tanımlamaya yardımcı olması için [Gelen iletiler raporunu](/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports) kullanabilirsiniz.
 
 Office 365 için Defender tarafından İnternet iletilerinin nereden geldiğini görmek için Bağlayıcılar için Gelişmiş Filtreleme gereklidir. Bağlayıcılar için İyileştirilmiş Filtreleme, Microsoft filtreleme yığınının (özellikle [kimlik sahtekarlığı zekasının](anti-spoofing-protection.md) yanı sıra [Tehdit Gezgini](threat-explorer.md) ve [Otomatik Araştırma & Yanıtı (AIR)](automated-investigation-response-office.md)'daki ihlal sonrası özelliklerin doğruluğunu büyük ölçüde artırır.
 
-Bağlayıcılar için Gelişmiş Filtreleme'yi doğru bir şekilde etkinleştirmek için, gelen postaları \*\* Microsoft 365 yönlendiren **tüm\*\*** üçüncü taraf hizmetlerin ve/veya şirket içi e-posta sistemi konaklarının **genel** IP adreslerini eklemeniz gerekir.
+Bağlayıcılar için Gelişmiş Filtreleme'yi doğru şekilde etkinleştirmek için, gelen postaları \*\* Microsoft 365'e yönlendiren **tüm\*\*** üçüncü taraf hizmetlerin ve/veya şirket içi e-posta sistemi konaklarının **genel** IP adreslerini eklemeniz gerekir.
 
 Bağlayıcılar için Gelişmiş Filtreleme'nin çalıştığını onaylamak için, gelen iletilerin aşağıdaki üst bilgilerden birini veya her ikisini birden içerdiğini doğrulayın:
 
@@ -137,34 +137,32 @@ Tüm kullanıcılara uygulanmamış olsalar bile üretim ilkeleri oluşturarak [
 > [!IMPORTANT]
 > İlkelerin kapsamı kullanıcılar, gruplar veya etki alanları olabilir. Yalnızca üçüyle eşleşen kullanıcılar ilkenin kapsamına gireceği için üçünün de tek bir ilkede karıştırılması önerilmez. Pilot ilkeler için grupları veya kullanıcıları kullanmanızı öneririz. Üretim ilkeleri için etki alanlarını kullanmanızı öneririz. Kullanıcının ilke kapsamında olup olmadığını **yalnızca** kullanıcının birincil e-posta etki alanının belirlediğini anlamak son derece önemlidir. Bu nedenle, kullanıcının ikincil etki alanı için MX kaydını değiştirirseniz, birincil etki alanının da bir ilke kapsamında olduğundan emin olun.
 
-### <a name="create-pilot-safe-attachments-policies"></a>Pilot Kasa Ekler ilkeleri oluşturma
+### <a name="create-pilot-safe-attachments-policies"></a>Pilot Güvenli Ekler ilkeleri oluşturma
 
-[Kasa Ekler](safe-attachments.md), MX kaydınızı değiştirmeden önce etkinleştirmek ve test etmek için en kolay Office 365 için Defender özelliktir. Kasa Ekler aşağıdaki avantajlara sahiptir:
+[Güvenli Ekler](safe-attachments.md), MX kaydınızı değiştirmeden önce etkinleştirmek ve test etmek için en kolay Office 365 için Defender özelliktir. Güvenli Ekler aşağıdaki avantajlara sahiptir:
 
 - Minimum yapılandırma.
 - Hatalı pozitiflerin son derece düşük olma olasılığı.
 - Her zaman açık olan ve SCL=-1 posta akışı kuralından etkilenmeyen kötü amaçlı yazılımdan koruma davranışına benzer.
 
-Pilot kullanıcılarınız için bir Kasa Ekler ilkesi oluşturun.
+Pilot kullanıcılarınız için Güvenli Ekler ilkesi oluşturun.
 
-Önerilen ayarlar için bkz. [Önerilen Kasa Ekler ilkesi ayarları](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings). Standart ve Katı önerilerin aynı olduğunu unutmayın. İlkeyi oluşturmak için bkz. [Kasa Ekler ilkelerini ayarlama](set-up-safe-attachments-policies.md). İlkenin koşulu olarak (ilkenin uygulandığı kişiler) **MDOPilot\_SafeAttachments** grubunu kullandığınızdan emin olun.
-
-> [!IMPORTANT]
-> Bugün, Varsayılan Kasa Ekler ilkesi yoktur. MX kayıtlarını değiştirmeden önce, kuruluşun tamamını koruyan bir Kasa Ekleri ilkeniz olmasını öneririz.
-
-### <a name="create-pilot-safe-links-policies"></a>Pilot Kasa Bağlantıları ilkeleri oluşturma
+Önerilen ayarlar için bkz. [Önerilen Güvenli Ekler ilke ayarları](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings). Standart ve Katı önerilerin aynı olduğunu unutmayın. İlkeyi oluşturmak için bkz. [Güvenli Ekler ilkelerini ayarlama](set-up-safe-attachments-policies.md). İlkenin koşulu olarak (ilkenin uygulandığı kişiler) **MDOPilot\_SafeAttachments** grubunu kullandığınızdan emin olun.
 
 > [!NOTE]
-> Zaten sarmalanmış veya yeniden yazılmış bağlantıları sarmalama veya yeniden yazma desteğimiz yok. Geçerli koruma hizmetiniz e-posta iletilerindeki bağlantıları zaten sarmalar veya yeniden yazarsa, pilot kullanıcılarınız için bu özelliği kapatmanız gerekir. Bunun olmamasını sağlamanın bir yolu, Kasa Bağlantıları ilkesinde diğer hizmetin URL etki alanını dışlamaktır.
->
-> Kasa Desteklenen Office uygulamaları için bağlantı koruması, tüm lisanslı kullanıcılar için geçerli olan genel bir ayardır. Belirli kullanıcılar için değil, genel olarak açabilir veya kapatabilirsiniz. Daha fazla bilgi için bkz[. Office 365 uygulamalar için Kasa Bağlantıları korumasını yapılandırma](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
+> **Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi, Güvenli Ekler ilkesinde tanımlanmayan tüm alıcılara Güvenli Ekler koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).
 
-Pilot kullanıcılarınız için bir Kasa Bağlantıları ilkesi oluşturun. Kasa Bağlantılarında hatalı pozitif sonuç olasılığı da oldukça düşüktür, ancak özelliği Kasa Ekler'e göre daha az sayıda pilot kullanıcıda test etmeyi düşünmelisiniz. Özellik kullanıcı deneyimini etkilediğinden, kullanıcıları eğitmek için bir plan düşünmelisiniz.
+### <a name="create-pilot-safe-links-policies"></a>Pilot Güvenli Bağlantılar ilkeleri oluşturma
 
-Önerilen ayarlar için bkz. [Önerilen Kasa Bağlantılar ilke ayarları](recommended-settings-for-eop-and-office365.md#safe-links-settings). Standart ve Katı önerilerin aynı olduğunu unutmayın. İlkeyi oluşturmak için bkz. [Kasa Bağlantıları ilkelerini ayarlama](set-up-safe-links-policies.md). İlkenin koşulu olarak (ilkenin uygulandığı kişiler) **MDOPilot\_SafeLinks** grubunu kullandığınızdan emin olun.
+> [!NOTE]
+> Zaten sarmalanmış veya yeniden yazılmış bağlantıları sarmalama veya yeniden yazma desteğimiz yok. Geçerli koruma hizmetiniz e-posta iletilerindeki bağlantıları zaten sarmalar veya yeniden yazarsa, pilot kullanıcılarınız için bu özelliği kapatmanız gerekir. Bunun olmamasını sağlamanın bir yolu, Diğer hizmetin URL etki alanını Güvenli Bağlantılar ilkesinde dışlamaktır.
 
-> [!IMPORTANT]
-> Bugün, Varsayılan Kasa Bağlantıları ilkesi yoktur. MX kayıtlarını değiştirmeden önce, kuruluşun tamamını koruyan bir Kasa Bağlantıları ilkeniz olmasını öneririz.
+Pilot kullanıcılarınız için güvenli bağlantılar ilkesi oluşturun. Güvenli Bağlantılar'da hatalı pozitif sonuç olasılığı da oldukça düşüktür, ancak özelliği Güvenli Ekler'den daha az sayıda pilot kullanıcı üzerinde test etmeyi düşünmelisiniz. Özellik kullanıcı deneyimini etkilediğinden, kullanıcıları eğitmek için bir plan düşünmelisiniz.
+
+Önerilen ayarlar için bkz. [Önerilen Güvenli Bağlantılar ilke ayarları](recommended-settings-for-eop-and-office365.md#safe-links-settings). Standart ve Katı önerilerin aynı olduğunu unutmayın. İlkeyi oluşturmak için bkz. [Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md). İlkenin koşulu olarak (ilkenin uygulandığı kişiler) **MDOPilot\_SafeLinks** grubunu kullandığınızdan emin olun.
+
+> [!NOTE]
+> **Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi, Güvenli Bağlantılar ilkelerinde tanımlanmayan tüm alıcılara Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).
 
 ### <a name="create-pilot-anti-spam-policies"></a>Pilot istenmeyen posta önleme ilkeleri oluşturma
 
@@ -182,7 +180,7 @@ Pilot kullanıcılar için iki kimlik avı önleme ilkesi oluşturun:
 - Aşağıda açıklandığı gibi kimliğe bürünme algılama eylemleri dışında Standart ayarları kullanan bir ilke. İlkenin koşulu olarak (ilkenin uygulandığı kişiler) **MDOPilot\_SpamPhish\_Standard** grubunu kullanın.
 - Aşağıda açıklandığı gibi kimliğe bürünme algılama eylemleri dışında Katı ayarları kullanan bir ilke. İlkenin koşulu olarak (ilkenin uygulandığı kişiler) **MDOPilot\_SpamPhish\_Strict** grubunu kullanın. Bu ilke, Standart ayarlara sahip ilkeden daha yüksek önceliğe (daha düşük sayıya) sahip olmalıdır.
 
-Sahtekarlık algılamaları için önerilen Standart eylem, **İletiyi alıcıların Gereksiz E-posta klasörlerine taşı** eylemidir ve önerilen Katı eylem **iletiyi karantinaya al'dır**. Sonuçları gözlemlemek için sahte zeka içgörülerini kullanın. Geçersiz kılmalar sonraki bölümde açıklanmıştır. Daha fazla bilgi için bkz [. EOP'de sahte zeka içgörüleri](learn-about-spoof-intelligence.md).
+Sahtekarlık algılamaları için önerilen Standart eylem, **İletiyi alıcıların Gereksiz Email klasörlerine taşı** eylemidir ve önerilen Katı eylem **iletiyi karantinaya al'dır**. Sonuçları gözlemlemek için sahte zeka içgörülerini kullanın. Geçersiz kılmalar sonraki bölümde açıklanmıştır. Daha fazla bilgi için bkz [. EOP'de sahte zeka içgörüleri](learn-about-spoof-intelligence.md).
 
 Kimliğe bürünme algılamaları için pilot ilkeler için önerilen Standart ve Katı eylemleri yoksayın. Bunun yerine, aşağıdaki ayarlar için **Hiçbir eylem uygulama** değerini kullanın:
 
@@ -192,7 +190,7 @@ Kimliğe bürünme algılamaları için pilot ilkeler için önerilen Standart v
 
 Sonuçları gözlemlemek için kimliğe bürünme içgörülerini kullanın. Daha fazla bilgi için bkz[. Office 365 için Defender'de Kimliğe Bürünme içgörüleri](impersonation-insight.md).
 
-Kimlik sahtekarlığı korumasını ayarlayacak (izin ve blokları ayarla) ve iletileri karantinaya almak veya Gereksiz E-posta klasörüne taşımak için her kimliğe bürünme koruma eylemini açacaksınız (Standart veya Katı önerilere göre). Sonuçları gözlemleyebilir ve ayarlarını gerektiği gibi ayarlayabilirsiniz.
+Kimlik sahtekarlığı korumasını ayarlayacak (izin ve blokları ayarla) ve iletileri karantinaya almak veya Gereksiz Email klasörüne taşımak için her kimliğe bürünme koruma eylemini açacaksınız (Standart veya Katı önerilere göre). Sonuçları gözlemleyebilir ve ayarlarını gerektiği gibi ayarlayabilirsiniz.
 
 Daha fazla bilgi için, aşağıdaki konulara bakın:
 

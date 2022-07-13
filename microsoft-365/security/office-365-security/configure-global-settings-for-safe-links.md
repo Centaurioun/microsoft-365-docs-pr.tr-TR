@@ -19,12 +19,12 @@ ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender'da Güvenli Bağlantılar için genel ayarları ('Aşağıdaki URL'leri engelle' listesi ve Office 365 uygulamaları için koruma) görüntülemeyi ve yapılandırmayı öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c8b40109f20215b86a2264ed1a9f69c8db43bda
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 8914430808a5829732a7ea5ca86081774f7cb121
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487575"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771273"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Bağlantılar için genel ayarları yapılandırma
 
@@ -39,19 +39,17 @@ ms.locfileid: "66487575"
 
 Güvenli Bağlantılar[, Office 365 için Microsoft Defender'de](defender-for-office-365.md) gelen e-posta iletilerinin posta akışında URL taraması ve e-posta iletilerinde ve diğer konumlardaki URL'lerin ve bağlantıların tıklamayla doğrulanmasını sağlayan bir özelliktir. Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar](safe-links.md).
 
-Güvenli Bağlantılar ayarlarının çoğunu Güvenli Bağlantılar ilkelerinde yapılandırabilirsiniz. Yönergeler için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).
+Güvenli Bağlantılar ayarlarının çoğunu, [desteklenen Office Uygulamaları için Güvenli Bağlantılar ayarları](safe-links.md#safe-links-settings-for-office-apps) da dahil olmak üzere Güvenli Bağlantılar ilkelerinde yapılandırabilirsiniz. Yönergeler için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).
 
 Ancak Güvenli Bağlantılar, Güvenli Bağlantılar ilkelerinin dışında yapılandırdığınız aşağıdaki genel ayarları da kullanır:
 
 - **Aşağıdaki URL'leri engelle** listesi. Bu ayar, etkin Güvenli Bağlantılar ilkelerine dahil olan tüm kullanıcılar için geçerlidir. Daha fazla bilgi için Güvenli [Bağlantılar için "Aşağıdaki URL'leri engelle" listesine](safe-links.md#block-the-following-urls-list-for-safe-links) bakın
 
-- Office 365 uygulamaları için Güvenli Bağlantılar koruması. Bu ayarlar, kullanıcıların etkin Güvenli Bağlantılar ilkelerine dahil edilip edilmediğine bakılmaksızın kuruluştaki Office 365 için Defender lisansına sahip olan tüm kullanıcılar için geçerlidir. Daha fazla bilgi için bkz. [Office 365 uygulamaları için Güvenli Bağlantılar ayarları](safe-links.md#safe-links-settings-for-office-365-apps).
-
 Genel Güvenli Bağlantılar ayarlarını Microsoft 365 Defender portalında veya PowerShell'de (Exchange Online PowerShell'de Exchange Online posta kutuları olan uygun Microsoft 365 kuruluşları için PowerShell'de yapılandırabilirsiniz; Exchange Online olmayan kuruluşlar için tek başına EOP PowerShell posta kutuları, ancak Office 365 için Microsoft Defender eklenti abonelikleri ile).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
-- Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, yerleşik koruma** önceden ayarlanmış güvenlik ilkesi tüm alıcılara (özel Güvenli Bağlantılar ilkelerinde tanımlanmayan kullanıcılar) Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Belirli kullanıcılara, gruplara veya etki alanlarına uygulamak için Güvenli Bağlantılar ilkeleri de oluşturabilirsiniz. Yönergeler için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).
+- Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, yerleşik koruma** ön ayarı güvenlik ilkesi tüm alıcılara Güvenli Bağlantılar koruması sağlar (özel Güvenli Bağlantılar ilkelerinde veya Standart veya Katı ön ayarlı güvenlik ilkelerinde tanımlanmayan kullanıcılar). Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Belirli kullanıcılara, gruplara veya etki alanlarına uygulamak için Güvenli Bağlantılar ilkeleri de oluşturabilirsiniz. Yönergeler için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).
 
 - Microsoft 365 Defender portalını adresinde <https://security.microsoft.com>açarsınız. Doğrudan **Güvenli Bağlantılar** sayfasına gitmek için kullanın <https://security.microsoft.com/safelinksv2>.
 
@@ -81,7 +79,7 @@ Genel Güvenli Bağlantılar ayarlarını Microsoft 365 Defender portalında vey
 
 **Aşağıdaki URL'leri engelle** listesi, desteklenen uygulamalarda Güvenli Bağlantılar taraması tarafından her zaman engellenmesi gereken bağlantıları tanımlar. Daha fazla bilgi [için Güvenli Bağlantılar için "Aşağıdaki URL'leri engelle" listesine](safe-links.md#block-the-following-urls-list-for-safe-links) bakın.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümündeki **E-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Bağlantılar'a** gidin. Doğrudan **Güvenli Bağlantılar** sayfasına gitmek için kullanın <https://security.microsoft.com/safelinksv2>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümündeki** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Bağlantılar'a** gidin. Doğrudan **Güvenli Bağlantılar** sayfasına gitmek için kullanın <https://security.microsoft.com/safelinksv2>.
 
 2. **Güvenli Bağlantılar** sayfasında **Genel ayarlar'a** tıklayın. **Kuruluşunuzun Güvenli Bağlantılar ilkesinde** görüntülenen açılır öğede **Aşağıdaki URL'leri engelle** kutusuna gidin.
 
@@ -121,42 +119,6 @@ _BlockURLs_ özelliğindeki mevcut girişleri görüntülemek için **Get-AtpPol
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls @{Add="adatum.com"; Remove="fabrikam"}
   ```
-
-## <a name="configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında Office 365 uygulamalar için Güvenli Bağlantılar korumasını yapılandırma
-
-Office 365 uygulamaları için Güvenli Bağlantılar koruması, desteklenen Office masaüstü, mobil ve web uygulamalarındaki belgeler için geçerlidir. Daha fazla bilgi için bkz. [Office 365 uygulamaları için Güvenli Bağlantılar ayarları](safe-links.md#safe-links-settings-for-office-365-apps).
-
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümündeki **E-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Bağlantılar'a** gidin. Doğrudan **Güvenli Bağlantılar** sayfasına gitmek için kullanın <https://security.microsoft.com/safelinksv2>.
-
-2. **Güvenli Bağlantılar** sayfasında **Genel ayarlar'a** tıklayın. **Kuruluşunuz için Güvenli Bağlantılar ilkesi** açılır penceresinde, **desteklenen Office 365 uygulamalarındaki içeriğe uygulanan ayarlar** bölümünde aşağıdaki ayarları yapılandırın:
-
-   - **Office 365 uygulamalarında Güvenli Bağlantılar'ı kullanma**: Desteklenen Office 365 uygulamaları için Güvenli Bağlantılar'ı etkinleştirmek için iki durumlu düğmenin sağ tarafta olduğunu doğrulayın: ![Açık..](../../media/scc-toggle-on.png).
-
-   - **Kullanıcıların Office 365 uygulamalarda korumalı bağlantılara ne zaman tıkladığını izlemeyin**: Desteklenen Office 365 uygulamalarında engellenen URL'lerle ilgili kullanıcı tıklamalarını izlemek için iki durumlu düğmeyi sola taşıyın: ![Geçiş kapat.](../../media/scc-toggle-off.png).
-
-   - **Kullanıcıların Office 365 uygulamalarda özgün URL'ye tıklamasına izin verme**: Kullanıcıların desteklenen Office 365 uygulamalarında engellenen özgün URL'ye tıklamasını önlemek için iki durumlu düğmenin sağ tarafta olduğunu doğrulayın: ![Açık..](../../media/scc-toggle-on.png).
-
-   Bitirdiğinizde, **Kaydet**'i tıklatın.
-
-### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>PowerShell'de Office 365 uygulamaları için Güvenli Bağlantılar korumasını yapılandırma
-
-Office 365 uygulamalar için Güvenli Bağlantılar korumasını yapılandırmak için PowerShell'i kullanmayı tercih ediyorsanız, PowerShell'Exchange Online veya PowerShell'i Exchange Online Protection aşağıdaki söz dizimini kullanın:
-
-```powershell
-Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowClickThrough <$true | $false>] [-TrackClicks <$true | $false>]
-```
-
-Bu örnekte, Office 365 uygulamalarında Güvenli Bağlantılar koruması için aşağıdaki ayarlar yapılandırılır:
-
-- Office 365 uygulamaları için Güvenli Bağlantılar açık (_EnableSafeLinksForO365Clients_ parametresini kullanmıyoruz ve varsayılan değer $true).
-- Desteklenen Office 365 uygulamalarda engellenen URL'lerle ilgili kullanıcı tıklamaları izlenir.
-- Desteklenen Office 365 uygulamalarında kullanıcıların özgün engellenen URL'ye tıklamasına izin verilmez (_AllowClickThrough_ parametresini kullanmıyoruz ve varsayılan değer $false).
-
-```powershell
-Set-AtpPolicyForO365 -TrackClicks $true
-```
-
-Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Bu yordamların işe yaramış olduğunu nasıl anlarsınız?
 

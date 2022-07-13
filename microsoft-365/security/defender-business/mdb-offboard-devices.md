@@ -16,25 +16,25 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 00b9b8b9a4ac1cfad07741de84bd99db5403ef1a
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: bd6ea78daa1a19d84efc23c34bdb58704484c0d1
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174452"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772421"
 ---
 # <a name="offboard-a-device-from-microsoft-defender-for-business"></a>cihazı İş için Microsoft Defender'dan çıkarma
 
 Bir cihazı boşaltmak istiyorsanız aşağıdaki yordamlardan birini kullanın:
 
-- [Windows cihazı çıkarma](#offboard-a-windows-device)
-- [macOS bilgisayarı çıkarma](#offboard-a-macos-computer)
+- [Windows cihazını çıkarma](#offboard-a-windows-device)
+- [Mac'i çıkarma](#offboard-a-mac)
 
-## <a name="offboard-a-windows-device"></a>Windows cihazı çıkarma
+## <a name="offboard-a-windows-device"></a>Windows cihazını çıkarma
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın.
 
-2. Gezinti bölmesinde **Ayarlar** ve ardından **Uç Noktalar'ı** seçin.
+2. Gezinti bölmesinde **Ayarlar'ı** ve ardından **Uç Noktalar'ı** seçin.
 
 3. **Cihaz yönetimi'nin** altında **Çıkarma'yı** seçin.
 
@@ -46,11 +46,11 @@ Bir cihazı boşaltmak istiyorsanız aşağıdaki yordamlardan birini kullanın:
 
 7. Betiği, gemiden çıkarmak istediğiniz her cihazda çalıştırın.
 
-## <a name="offboard-a-macos-computer"></a>macOS bilgisayarı çıkarma
+## <a name="offboard-a-mac"></a>Mac'i çıkarma
 
-1. **BulucuUygulamalar'a** >  gidin. 
+1. **Bulucu** > **Uygulamaları'na** gidin. 
 
-2. İş için Microsoft Defender sağ tıklayın ve ardından **Çöp Kutusuna Taşı'yı** seçin. <br/>--- veya --- <br/> Şu komutu kullanın: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
+2. **İş için Microsoft Defender** sağ tıklayın ve ardından **Çöp Kutusuna Taşı'yı** seçin. <br/>--- veya --- <br/> Şu komutu kullanın: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
 
 > [!IMPORTANT]
 > Cihazı kullanıma almak, cihazların İş için Defender'a veri göndermeyi durdurmasına neden olur. Ancak, çıkarmadan önce alınan veriler altı (6) aya kadar saklanır.

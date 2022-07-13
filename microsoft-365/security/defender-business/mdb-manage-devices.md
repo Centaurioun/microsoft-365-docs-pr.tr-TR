@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 099cddf662b58f918af5aa3b8cc2cb1fea26b0f8
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 735f9e04a9176ce1b6626a050429c0b7323a7c0b
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090024"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772937"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'de cihazları yönetme
 
-İş için Microsoft Defender cihazları aşağıdaki gibi yönetebilirsiniz:
+İş için Defender'da cihazları aşağıdaki gibi yönetebilirsiniz:
 
 - Risk düzeylerini, maruz kalma düzeylerini ve sistem durumunu görmek için [eklenen cihazların listesini görüntüleme](#view-the-list-of-onboarded-devices)
 - Tehdit algılamaları olan [bir cihazda işlem gerçekleştirme](#take-action-on-a-device-that-has-threat-detections)
@@ -43,7 +43,7 @@ ms.locfileid: "66090024"
 
 3. Durumu hakkında daha fazla bilgi edinebileceğiniz ve eylem gerçekleştirebileceğiniz açılır panelini açmak için bir cihaz seçin. 
 
-   Henüz listelenen herhangi bir cihazınız yoksa cihazları [İş için Microsoft Defender](mdb-onboard-devices.md)
+   Henüz listelenen herhangi bir cihazınız yoksa, [Cihazları İş için Defender'a ekleme](mdb-onboard-devices.md)
 
 ## <a name="take-action-on-a-device-that-has-threat-detections"></a>Tehdit algılamaları olan bir cihazda işlem gerçekleştirme
 
@@ -59,7 +59,7 @@ ms.locfileid: "66090024"
 
 ## <a name="onboard-a-device"></a>Cihaz ekleme
 
-Bkz[. cihazları İş için Microsoft Defender ekleme](mdb-onboard-devices.md).
+Bkz [. Cihazları İş için Defender'a ekleme](mdb-onboard-devices.md).
 
 ## <a name="offboard-a-device"></a>Cihazı çıkarma
 
@@ -67,7 +67,7 @@ Bkz. [Cihazı çıkarma](mdb-offboard-devices.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [İş için Microsoft Defender'da olayları görüntüleme ve yönetme](mdb-view-manage-incidents.md)
-- [İş için Microsoft Defender'da tehditlere yanıt verme ve tehditleri azaltma](mdb-respond-mitigate-threats.md)
+- [İş için Defender'da olayları görüntüleme ve yönetme](mdb-view-manage-incidents.md)
+- [İş için Defender'da tehditlere yanıt verme ve tehditleri azaltma](mdb-respond-mitigate-threats.md)
 - [İşlem merkezindeki düzeltme eylemlerini gözden geçirme](mdb-review-remediation-actions.md)
 - [Cihaz gruplarını oluşturma veya düzenleme](mdb-create-edit-device-groups.md)

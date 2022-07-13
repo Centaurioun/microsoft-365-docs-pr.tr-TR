@@ -15,20 +15,22 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: daa32cf5b20d62a9574ed90660bfc705ad7ed5e5
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 2fd10eb56eec1c35015bff2f63163ee9394f8d42
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090552"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771317"
 ---
 # <a name="get-microsoft-defender-for-business"></a>İş için Microsoft Defender alma
 
+İş için Defender, özellikle küçük ve orta ölçekli işletmeler (en fazla 300 çalışan) için tasarlanmış yeni bir uç nokta güvenlik çözümüdür. Bu makalede, İş için Defender'ın nasıl alındığı açıklanır.
+
 Henüz İş için Microsoft Defender yoksa, çeşitli seçenekler arasından seçim yapabilirsiniz:
 
-- [İş için Defender'ın tek başına sürümünü deneyin veya satın alın](#try-or-buy-microsoft-defender-for-business)
-- artık İş için Defender'ı da içeren [Microsoft 365 İş Ekstra edinin](#get-microsoft-365-business-premium)
-- Her şeyi ayarlamanıza ve yapılandırmanıza yardımcı olabilecek [bir Microsoft çözüm sağlayıcısıyla çalışma](#work-with-a-microsoft-solution-provider)
+- [İş için Defender'ın tek başına sürümünü deneyin veya satın alın](#try-or-buy-microsoft-defender-for-business).
+- artık İş için Defender'ı da içeren [Microsoft 365 İş Ekstra edinin](#get-microsoft-365-business-premium).
+- Her şeyi ayarlamanıza ve yapılandırmanıza yardımcı olabilecek [bir Microsoft çözüm sağlayıcısıyla çalışın](#work-with-a-microsoft-solution-provider).
 
 Deneme sürümüne kaydolmuşsanız, kabul e-postanızı aldıktan sonra [denemenizi etkinleştirebilir ve kullanıcı lisansları atayabilir](#how-to-activate-your-trial) ve [sonraki adımlarınıza](#next-steps) geçebilirsiniz.
 
@@ -50,7 +52,7 @@ Deneme sürümüne kaydolmuşsanız, kabul e-postanızı aldıktan sonra [deneme
 
 1. [Microsoft 365 İş Ekstra ürün sayfasını ziyaret edin](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
-2. Aboneliğinizi denemeyi veya satın almayı seçin. Bkz[. İş için Microsoft 365 aboneliğini deneme veya satın alma](../../commerce/try-or-buy-microsoft-365.md). [Microsoft 365 Ürünler sitesinde](https://www.aka.ms/office365signup) **Microsoft 365 İş Ekstra'ı** seçin.
+2. Aboneliğinizi denemeyi veya satın almayı seçin. Bkz [. İş için Microsoft 365 aboneliğini deneme veya satın alma](../../commerce/try-or-buy-microsoft-365.md). [Microsoft 365 Ürünleri sitesinde](https://www.aka.ms/office365signup) **Microsoft 365 İş Ekstra'ı** seçin.
 
 3. Microsoft 365 İş Ekstra kaydoldıktan sonra, oturum açmak ve kullanmaya başlamak için bir bağlantı içeren bir e-posta alırsınız. [Microsoft 365 İş Ekstra Ayarlama'ya](../../business-premium/m365bp-setup.md) geçin.
 
@@ -76,7 +78,7 @@ Kabul e-postanızı aldığınızda deneme aboneliğinizi şu şekilde etkinleş
 
 3. İlk kez oturum açtığınızda Microsoft 365 yönetim merkezi ([https://admin.microsoft.com/](https://admin.microsoft.com/)) bölümüne gidersiniz. Bkz. [Microsoft 365 yönetim merkezi genel bakış](../../admin/admin-overview/admin-center-overview.md).
 
-4. Aşağıdaki yordamlardan birini kullanın:<br/>
+4. Senaryonuza bağlı olarak aşağıdaki yordamlardan birini kullanın:<br/>
 
    | Senaryo | Yordam |
    |:---|:---|
@@ -90,7 +92,7 @@ Başlamaya hazır olduğunuzda iki ana portalla çalışırsınız: Microsoft 36
 |Portal  |Açıklama  |
 |---------|---------|
 | Microsoft 365 yönetim merkezi ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Deneme sürümünüzü etkinleştirmek ve ilk kez oturum açmak için Microsoft 365 yönetim merkezi kullanın.<p> Ayrıca Microsoft 365 yönetim merkezi kullanarak şunları da yapacaksınız: <ul><li>Kullanıcı ekleme veya kaldırma.</li><li>Kullanıcı lisansları atayın.</li><li>Ürün ve hizmetlerinizi görüntüleyin.</li><li>Microsoft 365 aboneliğiniz için kurulum görevlerini tamamlayın.</li></ul><p>Daha fazla bilgi edinmek için bkz. [Microsoft 365 yönetim merkezi genel bakış](../../admin/admin-overview/admin-center-overview.md).      |
-| Microsoft 365 Defender portalı ([https://security.microsoft.com](https://security.microsoft.com))     | İş için Defender'ı ayarlamak ve yapılandırmak için Microsoft 365 Defender portalını kullanın.<p>Microsoft 365 Defender portalını kullanarak: <ul><li>Cihazlarınızı ve cihaz koruma ilkelerinizi görüntüleyin.</li><li>Algılanan tehditleri görüntüleyin ve harekete geçin.</li><li>Güvenlik önerilerini görüntüleyin ve güvenlik ayarlarınızı yönetin.</li></ul><p>Daha fazla bilgi için bkz. [Microsoft 365 Defender portalını kullanarak Kullanmaya başlayın](mdb-get-started.md).        |
+| Microsoft 365 Defender portalı ([https://security.microsoft.com](https://security.microsoft.com))     | İş için Defender'ı ayarlamak ve yapılandırmak için Microsoft 365 Defender portalını kullanın.<p>Microsoft 365 Defender portalını kullanarak: <ul><li>Cihazlarınızı ve cihaz koruma ilkelerinizi görüntüleyin.</li><li>Algılanan tehditleri görüntüleyin ve harekete geçin.</li><li>Güvenlik önerilerini görüntüleyin ve güvenlik ayarlarınızı yönetin.</li></ul><p>Daha fazla bilgi için bkz. [Microsoft 365 Defender portalını kullanmaya başlama](mdb-get-started.md).        |
 
 > [!TIP]
 > Microsoft 365 İş Ekstra varsa, Microsoft Intune de vardır. Cihazları yönetmek ve güvenlik ayarlarını yapılandırmak için Microsoft Endpoint Manager yönetim merkezini ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) kullanabilirsiniz. Intune hakkında daha fazla bilgi edinmek için bkz. [Microsoft Intune cihazlarınız için bir MDM ve MAM sağlayıcısıdır](/mem/intune/fundamentals/what-is-intune).

@@ -14,25 +14,26 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 70be4a5b7991d038dd1e34c00778de6bb3a67b84
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 044f81ddaa3ddf1cb0ddaf6c96e05f9d186e36ce
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573979"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772280"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Kayıtlı cihazları İş için Microsoft Defender ekleme
 
-Microsoft 365 İş Ekstra küçük ve orta ölçekli işletmeler için bir uç nokta güvenlik çözümü olan İş için Microsoft Defender içerir. İş için Defender, şirketinizin cihazları için yeni nesil koruma (virüsten koruma, kötü amaçlı yazılımdan koruma ve bulut tabanlı koruma), güvenlik duvarı koruması, web içeriği filtreleme ve daha fazlasını sağlar. Cihazları eklediğinizde koruma uygulanır. 
+Microsoft 365 İş Ekstra küçük ve orta ölçekli işletmeler için bir uç nokta güvenlik çözümü olan [İş için Microsoft Defender](../security/defender-business/mdb-overview.md) içerir. İş için Defender, şirketinizin cihazları için yeni nesil koruma (virüsten koruma, kötü amaçlı yazılımdan koruma ve bulut tabanlı koruma), güvenlik duvarı koruması, web içeriği filtreleme ve daha fazlasını sağlar. Cihazları eklediğinizde ve bu cihazlara güvenlik ilkeleri uyguladığınızda koruma uygulanır.
 
-Cihazları eklemek için çeşitli seçenekler arasından seçim yapabilirsiniz:
+Cihazları İş için Defender'a eklemek için çeşitli seçenekler arasından seçim yapabilirsiniz:
 
-- [Microsoft Intune kayıtlı Windows cihazları için otomatik ekleme](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune)
-- [Windows ve macOS cihazlarını İş için Defender'a eklemek için yerel bir betik](#use-a-local-script-to-onboard-windows-and-macos-devices-to-defender-for-business)
-- Mobil cihazlar (Windows, macOS, iOS ve Android) [dahil olmak üzere cihazları kaydetmek için Intune](#use-intune-to-enroll-devices) ve ardından bu cihazlara İş için Defender ilkelerini uygulama
+- [zaten Microsoft Intune kayıtlı Windows cihazları için otomatik ekleme](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune)
+- [Windows ve Mac cihazlarını İş için Defender'a eklemeye yönelik yerel betik](#use-a-local-script-to-onboard-windows-and-mac-devices-to-defender-for-business) (Intune henüz kaydedilmemiş cihazlar için)
+- Mobil cihazlar (Windows, Mac, iOS ve Android) [dahil olmak üzere yeni cihazları kaydetmek için Intune](#use-intune-to-enroll-devices) ve ardından bu cihazlara İş için Defender ilkelerini uygulama
 
 Bu makale şunları da içerir:
 
+- [Sunucular ne olacak?](#what-about-servers) (YENİ!)
 - [Windows cihazında algılama testi çalıştırma](#run-a-detection-test-on-a-windows-device)
 - [Cihazları aşamalı olarak ekleme](#onboard-devices-gradually)
 - Bir [cihaz](#offboard-a-device) değiştirilirse veya biri kuruluştan ayrılırsa cihazı çıkarma
@@ -42,40 +43,41 @@ Bu makale şunları da içerir:
 
 ## <a name="use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune"></a>Zaten Intune kayıtlı Windows cihazları için otomatik ekleme kullanma
 
-Bu cihazlar zaten Intune kayıtlıysa Windows cihazlarını İş için Defender'a otomatik olarak ekleyebilirsiniz. İş için Defender, Intune kayıtlı Windows istemci cihazlarını algılar ve bu cihazların otomatik olarak eklenip eklenmeyeceğini seçmenizi ister. Daha sonra İş için Defender'daki güvenlik ilkeleri ve ayarları bu cihazlara uygulanır. Bu işlemi *otomatik ekleme* olarak adlandırıyoruz. Otomatik ekleme seçeneğinin yalnızca Windows cihazları için geçerli olduğunu unutmayın. Aşağıdaki koşullar karşılanırsa otomatik ekleme kullanılabilir:
+Bu cihazlar zaten Intune kayıtlıysa Windows istemci cihazlarını İş için Defender'a otomatik olarak ekleyebilirsiniz. İş için Defender, zaten Intune kayıtlı Windows istemci cihazlarını algılar ve bu cihazların otomatik olarak eklenip eklenmeyeceğini seçmenizi ister. Daha sonra İş için Defender'daki güvenlik ilkeleri ve ayarları bu cihazlara uygulanır. Bu işlemi *otomatik ekleme* olarak adlandırıyoruz. 
 
-- Kuruluşunuz, İş için Defender'ı (Microsoft 365 İş Ekstra müşterileri zaten Microsoft 365 İş Ekstra) almadan önce Intune'da Microsoft Endpoint Manager, Microsoft Intune veya Mobil Cihaz Yönetimi (MDM) kullanıyormuş Microsoft Intune).
-- Intune kayıtlı Windows cihazlarınız zaten var.
+Otomatik ekleme, cihazlarınızın hemen korunmasına yardımcı olur. Otomatik ekleme seçeneğinin yalnızca aşağıdaki koşulların karşılanması durumunda Windows istemci cihazları için geçerli olduğunu unutmayın:
+
+- Kuruluşunuz, İş için Defender'ı almadan önce Intune'da zaten Intune veya Mobil Cihaz Yönetimi (MDM) kullanıyordu (Microsoft 365 İş Ekstra müşterilerin zaten Microsoft Intune ve MDM'leri var).
+- Intune kayıtlı Windows istemci cihazlarınız zaten var.
 
 > [!TIP]
-> Otomatik ekleme kullanmanız istendiğinde "tüm cihazlar kaydedildi" seçeneğini belirlemenizi öneririz. Bu şekilde, Windows cihazları daha sonra Intune kaydedildiğinde otomatik olarak İş için Defender'a eklenir.
+> Otomatik ekleme kullanmanız istenirse "tüm cihazlar kaydedildi" seçeneğini belirlemenizi öneririz. Bu şekilde, Windows cihazları daha sonra Intune kaydedildiğinde otomatik olarak İş için Defender'a eklenir.
 
 Otomatik ekleme hakkında daha fazla bilgi edinmek için bkz. [İş için Microsoft Defender ayarlamak için sihirbazı kullanma](../security/defender-business/mdb-use-wizard.md).
 
-## <a name="use-a-local-script-to-onboard-windows-and-macos-devices-to-defender-for-business"></a>Windows ve macOS cihazlarını İş için Defender'a eklemek için yerel betik kullanma
+## <a name="use-a-local-script-to-onboard-windows-and-mac-devices-to-defender-for-business"></a>Windows ve Mac cihazlarını İş için Defender'a eklemek için yerel betik kullanma
 
 Windows ve Mac cihazlarını eklemek için yerel bir betik kullanabilirsiniz. Ekleme betiğini bir cihazda çalıştırdığınızda, Azure Active Directory ile bir güven oluşturur (bu güven yoksa), cihazı Intune kaydeder (henüz kaydedilmediyse) ve ardından cihazı İş için Defender'a ekler. Yerel betiği kullanarak aynı anda en fazla 10 cihaz ekleyebilirsiniz.
 
-1. Microsoft 365 Defender portalına ()[https://security.microsoft.com](https://security.microsoft.com) gidin ve oturum açın.
-
-2. Gezinti bölmesinde **Ayarlar** > **Uç Noktaları'nı** seçin ve ardından **Cihaz yönetimi'nin** altında **Ekleme'yi** seçin.
-
-3. **Windows 10 ve 11** veya **macOS** gibi bir işletim sistemi seçin ve ardından **Dağıtım yöntemi** bölümünde **Yerel betik'i** seçin. 
-
-4. **Ekleme paketini indir'i** seçin. Ekleme paketini çıkarılabilir bir sürücüye kaydetmenizi öneririz. ( **macOS'yi** seçtiyseniz **yükleme paketini indir'i** de seçin ve çıkarılabilir cihazınıza kaydedin.)
-
-5. Aşağıdaki kılavuzu kullanın:
-
-   - Windows cihazları: [Yerel betik kullanarak Windows cihazları ekleme](../security/defender-endpoint/configure-endpoints-script.md#onboard-windows-devices-using-a-local-script)
-   - macOS cihazları: [macOS'ta Uç Nokta için Microsoft Defender için el ile dağıtım](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
+Ayrıntılı yönergeler için bkz. [İş için Microsoft Defender cihazları ekleme](../security/defender-business/mdb-onboard-devices.md).
 
 ## <a name="use-intune-to-enroll-devices"></a>Cihazları kaydetmek için Intune kullanma
 
-Bir cihazı kaydetmek için, cihazı kendiniz kaydedin veya kullanıcılarınızın şirket portalında oturum açmasını ve gerekli uygulamaları kaydedip yüklemesini sağlayın. 
+Bir cihazı kaydetmek için cihazı kendiniz kaydedebilir veya kullanıcıların şirket portalı uygulamasında oturum açmasını, cihazlarını kaydetmesini ve ardından gerekli uygulamaları yüklemesini sağlayabilirsiniz. 
 
-İş için Defender'ı almadan önce zaten Intune veya Mobil Cihaz Yönetimi kullanıyorsanız kuruluşunuzun cihazlarını eklemek için Intune kullanmaya devam edebilirsiniz. Intune kullanarak, iOS ve Android cihazlar dahil olmak üzere bilgisayarları, tabletleri ve telefonları ekleyebilirsiniz.
+İş için Defender'ı almadan önce zaten Intune veya Mobil Cihaz Yönetimi kullanıyorsanız kuruluşunuzun cihazlarını eklemek için Intune kullanmaya devam edebilirsiniz. Intune ile, iOS ve Android cihazlar da dahil olmak üzere bilgisayarları, tabletleri ve telefonları ekleyebilirsiniz.
 
 Bkz[. Microsoft Intune'da cihaz kaydı](/mem/intune/enrollment/device-enrollment). 
+
+## <a name="what-about-servers"></a>Sunucular ne olacak?
+
+sunucular Microsoft 365 İş Ekstra ve İş için Defender'da varsayılan olarak desteklenmez. Ancak, Windows Server veya Linux Server çalıştıran bir uç nokta gibi bir sunucuyu ekleme özelliği artık önizleme aşamasındadır. Sunucu eklemeden önce gereksinimleri gözden geçirmeyi unutmayın:
+
+- Microsoft 365 İş Ekstra veya İş için Defender'da (tek başına) her sunucu örneği için bir sunucu lisansınız vardır.
+- **Önizleme özellikleri** ayarı açıktır. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ), **Ayarlar** > **Uç Noktaları** > **Genel** > **Gelişmiş özellikler****Önizleme özellikleri'ne** >  gidin.
+- Windows Server için zorlama kapsamı açık. **Ayarlar** > **Uç Noktaları** > **Yapılandırma yönetimi** > **Zorlama kapsamı'na** gidin. **MEM'den güvenlik yapılandırma ayarlarını zorunlu kılmak için MDE kullan'ı** seçin, **Windows Server'ı** ve ardından **Kaydet'i** seçin.
+
+Ayrıntılı yönergeler için [İş için Microsoft Defender için Cihazları ekleme](../security/defender-business/mdb-onboard-devices.md) bölümünde **sunucular** sekmesine bakın.
 
 ## <a name="run-a-detection-test-on-a-windows-device"></a>Windows cihazında algılama testi çalıştırma
 
@@ -127,7 +129,7 @@ Bir cihazı boşaltmak istiyorsanız aşağıdaki yordamlardan birini kullanın:
 6. Betiği, gemiden çıkarmak istediğiniz her cihazda çalıştırın. Bu görevle ilgili yardıma mı ihtiyacınız var? Aşağıdaki kaynaklara bakın:   
 
    - Windows cihazları: [Yerel betik kullanarak Windows cihazlarını](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script) çıkarma 
-   - macOS cihazları: [macOS'ta kaldırma](../security/defender-endpoint/mac-resources.md#uninstalling)
+   - Mac: [Mac'te kaldırma](../security/defender-endpoint/mac-resources.md#uninstalling)
 
 > [!IMPORTANT]
 > Cihazı kullanıma almak, cihazların İş için Defender'a veri göndermeyi durdurmasına neden olur. Ancak, çıkarmadan önce alınan veriler altı (6) aya kadar saklanır.

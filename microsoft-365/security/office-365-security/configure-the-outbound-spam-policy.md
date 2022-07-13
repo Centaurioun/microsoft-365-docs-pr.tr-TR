@@ -19,12 +19,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection (EOP) içinde giden istenmeyen posta ilkelerini görüntülemeyi, oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 690d4def4081812653cb533765f6c61cca7d1e90
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 3c3c6fd32d03e5df84d35d399d963c28c3d745a6
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115839"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772094"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP'de giden istenmeyen posta filtrelemeyi yapılandırma
 
@@ -35,15 +35,15 @@ ms.locfileid: "66115839"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarda, EOP aracılığıyla gönderilen giden e-posta iletileri istenmeyen posta ve olağan dışı gönderme etkinliği için otomatik olarak denetlenir.
+Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarında, EOP aracılığıyla gönderilen giden e-posta iletileri istenmeyen posta ve olağan dışı gönderme etkinliği için otomatik olarak denetlenir.
 
-Kuruluşunuzdaki bir kullanıcıdan gelen istenmeyen postalar genellikle güvenliği aşılmış bir hesabı gösterir. Şüpheli giden iletiler istenmeyen posta olarak işaretlenir (istenmeyen posta güvenilirlik düzeyine veya SCL'ye bakılmaksızın) ve hizmetin itibarını korumaya yardımcı olmak için [yüksek riskli teslim havuzu](high-risk-delivery-pool-for-outbound-messages.md) üzerinden yönlendirilir (yani, kaynak e-posta sunucularını IP blok listelerinin dışında Microsoft 365). Yöneticilere şüpheli giden e-posta etkinliği otomatik olarak bildirilir ve [uyarı ilkeleri](../../compliance/alert-policies.md) aracılığıyla kullanıcılar engellenir.
+Kuruluşunuzdaki bir kullanıcıdan gelen istenmeyen postalar genellikle güvenliği aşılmış bir hesabı gösterir. Şüpheli giden iletiler istenmeyen posta olarak işaretlenir (istenmeyen posta güvenilirlik düzeyine veya SCL'ye bakılmaksızın) ve hizmetin itibarını korumaya yardımcı olmak için [yüksek riskli teslim havuzu](high-risk-delivery-pool-for-outbound-messages.md) üzerinden yönlendirilir (yani, Microsoft 365 kaynak e-posta sunucularını IP engelleme listelerinden uzak tutun). Yöneticilere şüpheli giden e-posta etkinliği otomatik olarak bildirilir ve [uyarı ilkeleri](../../compliance/alert-policies.md) aracılığıyla kullanıcılar engellenir.
 
 EOP, kuruluşunuzun istenmeyen postalara karşı genel savunmasının bir parçası olarak giden istenmeyen posta ilkelerini kullanır. Daha fazla bilgi için bkz [. İstenmeyen posta önleme koruması](anti-spam-protection.md).
 
 Yöneticiler varsayılan giden istenmeyen posta ilkesini görüntüleyebilir, düzenleyebilir ve yapılandırabilir (ancak silemez). Daha fazla ayrıntı düzeyi için, kuruluşunuzdaki belirli kullanıcılar, gruplar veya etki alanları için geçerli olan özel giden istenmeyen posta ilkeleri de oluşturabilirsiniz. Özel ilkeler her zaman varsayılan ilkeden önceliklidir, ancak özel ilkelerinizin önceliğini (çalıştırma sırasını) değiştirebilirsiniz.
 
-Giden istenmeyen posta ilkelerini Microsoft 365 Microsoft 365 Defender portalında veya PowerShell'de (Exchange Online posta kutuları olan Microsoft 365 kuruluşlar için PowerShell Exchange Online de yapılandırabilirsiniz; için tek başına EOP PowerShell Exchange Online posta kutusu olmayan kuruluşlar).
+Giden istenmeyen posta ilkelerini Microsoft 365 Microsoft 365 Defender portalında veya Exchange Online'de posta kutuları olan Microsoft 365 kuruluşları için PowerShell'de (Exchange Online PowerShell' de; Exchange Online olmayan kuruluşlar için tek başına EOP PowerShell'de yapılandırabilirsiniz posta kutuları).
 
 EOP'de giden istenmeyen posta ilkesinin temel öğeleri şunlardır:
 
@@ -70,7 +70,7 @@ Giden istenmeyen posta filtrelemenin verimliliğini artırmak için, belirli kul
 
 - Microsoft 365 Defender portalını adresinde <https://security.microsoft.com>açarsınız. **İstenmeyen posta önleme ayarları** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
 
-- Exchange Online PowerShell'e bağlanmak için bkz. [PowerShell'Exchange Online Bağlan](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [PowerShell'i Exchange Online Protection için Bağlan](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [Exchange Online Protection PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bu makaledeki yordamları gerçekleştirebilmeniz için **önce Exchange Online'de** izinlerin atanmış olması gerekir:
   - Giden istenmeyen posta ilkelerini eklemek, değiştirmek ve silmek için **Kuruluş Yönetimi** veya **Güvenlik Yöneticisi** rol gruplarının üyesi olmanız gerekir.
@@ -80,18 +80,18 @@ Giden istenmeyen posta filtrelemenin verimliliğini artırmak için, belirli kul
 
   **Notlar**:
 
-  - kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'deki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+  - kullanıcıları Microsoft 365 yönetim merkezi ilgili Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'teki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
   - [Exchange Online'daki](/Exchange/permissions-exo/permissions-exo#role-groups) **Yalnızca Görüntüleme Kuruluş Yönetimi** rol grubu da özelliğe salt okunur erişim sağlar.
 
 - Giden istenmeyen posta ilkeleri için önerilen ayarlarımız için bkz. [EOP giden istenmeyen posta filtresi ilke ayarları](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings).
 
-- **E-posta gönderme sınırı aşıldı**, **Şüpheli e-posta gönderme desenleri algılandı** ve **Kullanıcının e-posta göndermesi kısıtlandı** adlı varsayılan [uyarı ilkeleri](../../compliance/alert-policies.md), olağan dışı giden e-posta etkinliği ve giden istenmeyen posta nedeniyle engellenen kullanıcılar hakkında **TenantAdmins** (**Genel yöneticiler**) grubunun üyelerine zaten e-posta bildirimleri gönderir. Daha fazla bilgi için bkz [. Kısıtlı kullanıcılar için uyarı ayarlarını doğrulama](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Giden istenmeyen posta ilkelerindeki bildirim seçenekleri yerine bu uyarı ilkelerini kullanmanızı öneririz.
+- **gönderme sınırı Email** adlı varsayılan [uyarı ilkeleri](../../compliance/alert-policies.md) aşıldı, **Şüpheli e-posta gönderme desenleri algılandı** ve **Kullanıcının e-posta göndermesi kısıtlandı****, kiracıyıldız** giden e-posta etkinliği ve giden istenmeyen posta nedeniyle engellenen kullanıcılar hakkında TenantAdmins (**Genel yöneticiler**) grubunun üyelerine zaten e-posta bildirimleri gönderiyor. Daha fazla bilgi için bkz [. Kısıtlı kullanıcılar için uyarı ayarlarını doğrulama](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Giden istenmeyen posta ilkelerindeki bildirim seçenekleri yerine bu uyarı ilkelerini kullanmanızı öneririz.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies"></a>Giden istenmeyen posta ilkeleri oluşturmak için Microsoft 365 Defender portalını kullanma
 
 Microsoft 365 Defender portalında özel bir giden istenmeyen posta ilkesi oluşturmak, her ikisi için de aynı adı kullanarak istenmeyen posta filtresi kuralını ve ilişkili istenmeyen posta filtresi ilkesini aynı anda oluşturur.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ayarları** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ayarları** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
 
 2. **İstenmeyen posta önleme ilkeleri** sayfasında Oluştur simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **İlke oluşturun** ve açılan listeden **Giden'i** seçin.
 
@@ -122,9 +122,9 @@ Microsoft 365 Defender portalında özel bir giden istenmeyen posta ilkesi oluş
    > - Alıcı: romain@contoso.com
    > - Alıcı şu üyelerin üyesidir: Yöneticiler
    >
-   > İlke, _romain@contoso.com yalnızca_ Yönetici gruplarının da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
+   > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
    >
-   > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler gruplarının da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
+   > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
 
    İşiniz bittiğinde **İleri'ye** tıklayın.
 
@@ -142,14 +142,14 @@ Microsoft 365 Defender portalında özel bir giden istenmeyen posta ilkesi oluş
 
      Tüm eylemler için, Kullanıcı'da belirtilen gönderenlerin **e-posta uyarısı göndermesi kısıtlandı** (ve bu sayfanın ilerleyen bölümlerinde giden **istenmeyen posta gönderme nedeniyle bir gönderen engellendiyse bu kullanıcılara ve gruplara artık bildir** ayarında) e-posta bildirimleri alır.
 
-     - **Kullanıcının posta göndermesini şu güne kadar kısıtlayın**: Bu varsayılan değerdir. E-posta bildirimleri gönderilir ve kullanıcı UTC saati temelinde sonraki güne kadar başka ileti gönderemez. Yöneticinin bu bloğu geçersiz kılmasının hiçbir yolu yoktur.
+     - **Kullanıcının posta göndermesini şu güne kadar kısıtlayın**: Bu varsayılan değerdir. Email bildirimleri gönderilir ve kullanıcı UTC saatine göre sonraki güne kadar başka ileti gönderemez. Yöneticinin bu bloğu geçersiz kılmasının hiçbir yolu yoktur.
        - Kullanıcı adlı uyarı ilkesi **, e-posta göndermesi kısıtlanmış** olarak yöneticilere bildirim gönderir (e-posta yoluyla ve **Olaylar & uyarıları** \> **görüntüleme** sayfasında).
        - İlkedeki **Giden istenmeyen posta gönderme nedeniyle bir gönderenin engellenmesi durumunda belirli kişilere bildir** ayarında belirtilen tüm alıcılar da bildirilir.
        - Kullanıcı UTC saatine göre sonraki güne kadar başka ileti gönderemeyecektir. Yöneticinin bu bloğu geçersiz kılmasının hiçbir yolu yoktur.
-     - **Kullanıcının posta göndermesini kısıtlama**: E-posta bildirimleri gönderilir, kullanıcı Microsoft 365 Defender portalında **Kısıtlı kullanıcılar'a** <https://security.microsoft.com/restrictedusers> eklenir ve kullanıcı, bir yönetici tarafından **Kısıtlanmış kullanıcılardan kaldırılana** kadar e-posta gönderemez. Yönetici kullanıcıyı listeden kaldırdıktan sonra, o gün için kullanıcı yeniden kısıtlanmaz. Yönergeler için bkz. [İstenmeyen posta gönderdikten sonra Kısıtlı Kullanıcılar portalından kullanıcı kaldırma](removing-user-from-restricted-users-portal-after-spam.md).
-     - **Eylem yok, yalnızca uyarı**: E-posta bildirimleri gönderilir.
+     - **Kullanıcının posta göndermesini kısıtlama**: Email bildirimler gönderilir, kullanıcı Microsoft 365 Defender portalında **Kısıtlı kullanıcılar'a** <https://security.microsoft.com/restrictedusers> eklenir ve kullanıcı, bir yönetici tarafından **Kısıtlanmış kullanıcılardan kaldırılana** kadar e-posta gönderemez. Yönetici kullanıcıyı listeden kaldırdıktan sonra, o gün için kullanıcı yeniden kısıtlanmaz. Yönergeler için bkz. [İstenmeyen posta gönderdikten sonra Kısıtlı Kullanıcılar portalından kullanıcı kaldırma](removing-user-from-restricted-users-portal-after-spam.md).
+     - **Eylem yok, yalnızca uyarı**: Email bildirimleri gönderilir.
 
-   - **İletme kuralları**: **Posta kutularını** dış gönderenlere Exchange Online otomatik e-posta iletmeyi denetlemek için bu bölümdeki ayarları kullanın. Daha fazla bilgi için bkz. [Microsoft 365'de otomatik dış e-posta iletmeyi denetleme](external-email-forwarding.md).
+   - **İletme kuralları**: **Posta kutularını** dış gönderenlere Exchange Online otomatik e-posta iletmeyi denetlemek için bu bölümdeki ayarları kullanın. Daha fazla bilgi için bkz. [Microsoft 365'te otomatik dış e-posta iletmeyi denetleme](external-email-forwarding.md).
 
      > [!NOTE]
      > Otomatik iletme devre dışı bırakıldığında, dış gönderenler iletim uygulanmış bir posta kutusuna e-posta gönderirse, alıcı teslim edilemez bir rapor (NDR veya geri dönen ileti olarak da bilinir) alır. İleti bir iç gönderen tarafından gönderiliyorsa **ve** iletme yöntemi [posta kutusu iletme](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) ise ( _SMTP iletme_ olarak da bilinir), iç gönderen NDR'yi alır. İletme bir gelen kutusu kuralı nedeniyle gerçekleştiyse, iç gönderen NDR almaz.
@@ -189,7 +189,7 @@ Microsoft 365 Defender portalında özel bir giden istenmeyen posta ilkesi oluş
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-outbound-spam-policies"></a>Giden istenmeyen posta ilkelerini görüntülemek için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ayarları** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ayarları** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
 
 2. **İstenmeyen posta önleme ilkeleri** sayfasında aşağıdaki değerlerden birini arayın:
    - **Tür** değeri **Özel giden istenmeyen posta ilkesidir**
@@ -206,7 +206,7 @@ Microsoft 365 Defender portalında özel bir giden istenmeyen posta ilkesi oluş
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-outbound-spam-policies"></a>Giden istenmeyen posta ilkelerini değiştirmek için Microsoft 365 Defender portalını kullanma
 
-1. Microsoft 365 Defender portalında, İlkeler **bölümünde** **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin.
+1. Microsoft 365 Defender portalında, **İlkeler bölümünde Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin.
 
 2. **İstenmeyen posta önleme ilkeleri** sayfasında, ada tıklayarak listeden bir giden istenmeyen posta ilkesi seçin:
    - **Tür** sütunundaki değerin **Özel giden istenmeyen posta ilkesi** olduğu, oluşturduğunuz özel bir ilkedir.
@@ -222,7 +222,7 @@ bir ilkeyi etkinleştirmek veya devre dışı bırakmak, ilke öncelik sırasın
 
 Varsayılan giden istenmeyen posta ilkesini devre dışı bırakamazsınız.
 
-1. Microsoft 365 Defender portalında, İlkeler **bölümünde** **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin.
+1. Microsoft 365 Defender portalında, **İlkeler bölümünde Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin.
 
 2. **İstenmeyen posta önleme ilkeleri** sayfasında, ada tıklayarak listeden Tür **değeri** **Özel giden istenmeyen posta ilkesi** olan bir ilke seçin.
 
@@ -247,7 +247,7 @@ Varsayılan olarak, giden istenmeyen posta ilkelerine oluşturuldukları sıray�
 - Microsoft 365 Defender portalında, giden istenmeyen posta ilkesinin önceliğini yalnızca oluşturduktan sonra değiştirebilirsiniz. PowerShell'de, istenmeyen posta filtresi kuralını oluştururken varsayılan önceliği geçersiz kılabilirsiniz (bu, mevcut kuralların önceliğini etkileyebilir).
 - Giden istenmeyen posta ilkeleri, görüntülenme sırasına göre işlenir (ilk **ilkenin Öncelik** değeri 0'dır). Varsayılan giden istenmeyen posta ilkesi **En düşük** öncelik değerine sahiptir ve bunu değiştiremezsiniz.
 
-1. Microsoft 365 Defender portalında, İlkeler **bölümünde** **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin.
+1. Microsoft 365 Defender portalında, **İlkeler bölümünde Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin.
 
 2. **İstenmeyen posta önleme ilkeleri** sayfasında, ada tıklayarak listeden **Özel giden istenmeyen posta ilkesi** **Tür değeriyle** bir ilke seçin.
 
@@ -264,7 +264,7 @@ Varsayılan olarak, giden istenmeyen posta ilkelerine oluşturuldukları sıray�
 
 Özel bir giden istenmeyen posta ilkesini kaldırmak için Microsoft 365 Defender portalını kullandığınızda, istenmeyen posta filtresi kuralı ve ilgili istenmeyen posta filtresi ilkesi silinir. Varsayılan giden istenmeyen posta ilkesini kaldıramazsınız.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ayarları** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ayarları** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
 
 2. **İstenmeyen posta önleme ilkeleri** sayfasında, ada tıklayarak listeden Tür **değeri** **Özel giden istenmeyen posta ilkesi** olan bir ilke seçin. Görüntülenen ilke ayrıntıları açılır öğesinin üst kısmında Diğer eylemler simgesine tıklayın ![.](../../media/m365-cc-sc-more-actions-icon.png) **Diğer eylemler** \> ![İlkeyi sil simgesi **İlkeyi**](../../media/m365-cc-sc-delete-icon.png) sil.
 
@@ -305,7 +305,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 Bu örnek, aşağıdaki ayarlarla Contoso Executives adlı yeni bir giden istenmeyen posta filtresi ilkesi oluşturur:
 
-- Alıcı oranı sınırları, varsayılan değerlerden daha küçük değerlerle sınırlıdır. Daha fazla bilgi için bkz[. Microsoft 365 seçenekleri arasında sınır gönderme](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
+- Alıcı oranı sınırları, varsayılan değerlerden daha küçük değerlerle sınırlıdır. Daha fazla bilgi için bkz. [Microsoft 365 seçenekleri arasında sınır gönderme](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
 
 - Sınırlardan birine ulaşıldıktan sonra kullanıcının ileti göndermesi engellenir.
 

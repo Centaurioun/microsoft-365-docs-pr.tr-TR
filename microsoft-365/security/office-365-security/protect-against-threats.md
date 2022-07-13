@@ -1,5 +1,5 @@
 ---
-title: Office 365 için Microsoft Defender, Kötü Amaçlı Yazılımdan Koruma, Kimlik Avı önleme, İstenmeyen posta önleme, Kasa bağlantıları, Kasa ekleri, Sıfır saat otomatik temizleme (ZAP), MDO güvenlik yapılandırmasındaki tehditlere karşı koruma
+title: Office 365 için Microsoft Defender tehditlere karşı koruma, Kötü amaçlı yazılımdan koruma, Kimlik Avı Önleme, İstenmeyen posta önleme, Güvenli bağlantılar, Güvenli ekler, Sıfır saatlik otomatik temizleme (ZAP), MDO güvenlik yapılandırması
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,20 +16,20 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Yöneticiler Microsoft 365'de tehdit koruması hakkında bilgi edinebilir ve bunu kuruluşunuz için nasıl kullanacağınızı yapılandırabilir.
+description: Yöneticiler Microsoft 365'te tehdit koruması hakkında bilgi edinebilir ve bunu kuruluşunuz için nasıl kullanacağınızı yapılandırabilir.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d067035d5eaf3c7a4febac6feeab0c56cd707728
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4a7dd91dde78e816ed579d2f16744ec90b67675
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941445"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772138"
 ---
 # <a name="protect-against-threats"></a>Tehditlere karşı korunun
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -58,7 +58,7 @@ Tehdit koruması özellikleri *tüm* Microsoft veya Office 365 aboneliklerine da
 |Kötü amaçlı yazılımdan koruma|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Kimlik avından koruma|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |İstenmeyen posta önleme koruma|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|E-posta ve Office belgelerindeki kötü amaçlı URL'lere ve dosyalara karşı koruma (bağlantılar ve Kasa Ekleri Kasa)|[Office 365 için Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|E-posta ve Office belgelerindeki kötü amaçlı URL'lere ve dosyalara karşı koruma (Güvenli Bağlantılar ve Güvenli Ekler)|[Office 365 için Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Roller ve izinler
 
@@ -67,7 +67,7 @@ Office 365 için Defender ilkelerini yapılandırmak için size uygun bir rol at
 |Rol veya rol grubu|Daha fazla bilgi nereden edinilir?|
 |---|---|
 |genel yönetici|[Microsoft 365 yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md)|
-|Güvenlik Yöneticisi|[Azure AD yerleşik rolleri](/azure/active-directory/roles/permissions-reference#security-administrator)
+|Güvenlik Yöneticisi|[Yerleşik rolleri Azure AD](/azure/active-directory/roles/permissions-reference#security-administrator)
 |Exchange Online Kuruluş Yönetimi|[Exchange Online'de izinler](/exchange/permissions-exo/permissions-exo)|
 
 Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında İzinler](permissions-microsoft-365-security-center.md).
@@ -103,7 +103,7 @@ Kötü amaçlı yazılımdan koruma ilkelerini yapılandırmaya yönelik ayrınt
 
 Kimlik avı önleme ilkeleri için önerilen ayarlar hakkında daha fazla bilgi için bkz. [Office 365 için Microsoft Defender'da EOP kimlik avı önleme ilkesi ayarları](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) ve [Kimlik avı önleme ilkesi ayarları](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
-Aşağıdaki yordamda varsayılan kimlik avı önleme ilkesinin nasıl yapılandırıldığı açıklanmaktadır. Yalnızca Office 365 için Defender'de kullanılabilen Ayarlar açıkça işaretlenir.
+Aşağıdaki yordamda varsayılan kimlik avı önleme ilkesinin nasıl yapılandırıldığı açıklanmaktadır. Yalnızca Office 365 için Defender'de kullanılabilen ayarlar açıkça işaretlenir.
 
 1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com/antiphishing>**Kimlik avı önleme** sayfasını açın.
 
@@ -127,13 +127,13 @@ Aşağıdaki yordamda varsayılan kimlik avı önleme ilkesinin nasıl yapıland
      - **İleti eylemleri** bölümü: Aşağıdaki ayarları yapılandırın:
        - **İleti kimliğine bürünülen bir kullanıcı**<sup>\*</sup> olarak algılanırsa: **İletiyi karantinaya al'ı** seçin. Kullanıcı kimliğe bürünme koruması tarafından karantinaya alınan iletilere uygulanan [karantina ilkesini](quarantine-policies.md) seçtiğiniz bir Karantina **ilkesi uygula** kutusu görüntülenir.
        - **İleti kimliğine bürünülen bir etki alanı**<sup>\*</sup> olarak algılanırsa: **İletiyi karantinaya al'ı** seçin. Etki alanı kimliğe bürünme koruması tarafından karantinaya alınan iletilere uygulanan [karantina ilkesini](quarantine-policies.md) seçtiğiniz karantina **ilkesini uygula** kutusu görüntülenir.
-       - **Posta kutusu zekası kimliğine bürünülen bir kullanıcı**<sup>\*</sup> algılarsa: **İletiyi alıcıların Gereksiz E-posta klasörlerine taşı** (Standart) veya **İletiyi karantinaya al** (Katı) seçeneğini belirleyin. **İletiyi karantinaya al'ı** seçerseniz, posta kutusu yönetim bilgileri koruması tarafından **karantinaya** alınan iletilere uygulanan [karantina ilkesini](quarantine-policies.md) seçtiğiniz bir Karantina ilkesi uygula kutusu görüntülenir.
-       - **İleti sahte olarak algılanırsa**: **İletiyi alıcıların Gereksiz E-posta klasörlerine taşı** (Standart) veya **İletiyi karantinaya** al (Katı) seçeneğini belirleyin.  **İletiyi karantinaya al'ı** seçerseniz, **kimlik sahtekarlığına karşı koruma ile karantinaya** alınan iletilere uygulanan [karantina ilkesini](quarantine-policies.md) seçtiğiniz bir Karantina ilkesi uygula kutusu görüntülenir.
+       - **Posta kutusu zekası kimliğine bürünülen bir kullanıcı**<sup>\*</sup> algılarsa: **İletiyi alıcıların Gereksiz Email klasörlerine taşı** (Standart) veya **İletiyi karantinaya al** (Katı) seçeneğini belirleyin. **İletiyi karantinaya al'ı** seçerseniz, posta kutusu yönetim bilgileri koruması tarafından **karantinaya** alınan iletilere uygulanan [karantina ilkesini](quarantine-policies.md) seçtiğiniz bir Karantina ilkesi uygula kutusu görüntülenir.
+       - **İleti sahte olarak algılanırsa**: **İletiyi alıcıların Gereksiz Email klasörlerine taşı** (Standart) veya **İletiyi karantinaya** al (Katı) seçeneğini belirleyin.  **İletiyi karantinaya al'ı** seçerseniz, **kimlik sahtekarlığına karşı koruma ile karantinaya** alınan iletilere uygulanan [karantina ilkesini](quarantine-policies.md) seçtiğiniz bir Karantina ilkesi uygula kutusu görüntülenir.
      - **Güvenlik ipuçları & göstergeler** bölümü: Aşağıdaki ayarları yapılandırın:
-       - **İlk kişiyi göster güvenlik ipucu**: Seç (aç).
-       - **Kullanıcı kimliğe bürünme güvenlik ipucu**<sup>\*</sup> göster: Seç (aç).
-       - **Etki alanı kimliğe bürünme güvenlik ipucu**<sup>\*</sup> göster: Seç (aç).
-       - **Kullanıcı kimliğine bürünme olağan dışı karakterleri güvenlik ipucu**<sup>\*</sup> göster: Seç (aç).
+       - **İlk kişi güvenlik ipucunu göster**: Seçin (açın).
+       - **Kullanıcı kimliğe bürünme güvenlik ipucunu**<sup>\*</sup> göster: Seçin (açın).
+       - **Etki alanı kimliğe bürünme güvenlik ipucunu**<sup>\*</sup> göster: Seçin (açın).
+       - **Kullanıcı kimliğe bürünme olağan dışı karakterler güvenlik ipucunu**<sup>\*</sup> göster: Seçin (açın).
        - Kimlik **sahtekarlığına yönelik kimliği doğrulanmamış gönderenler için göster (?)** : Seç (aç).
        - **"via" etiketini göster**: Seçin (açın).
 
@@ -162,11 +162,11 @@ Kimlik avı önleme ilkelerini yapılandırmaya yönelik ayrıntılı yönergele
 
    - **Eylemler** bölümü: **Eylemleri düzenle'ye** tıklayın. Görüntülenen açılır öğede aşağıdaki ayarları yapılandırın:
      - **İleti eylemleri** bölümü:
-       - **İstenmeyen posta**: **İletiyi Gereksiz E-posta klasörüne taşı'nın** seçili olduğunu doğrulayın (Standart) veya **İletiyi karantinaya al** (Katı) seçeneğini belirleyin.
+       - **İstenmeyen posta**: **İletiyi Gereksiz Email klasörüne taşı'nın** seçili olduğunu doğrulayın (Standart) veya **Karantina iletisi** (Katı) seçeneğini belirleyin.
        - **Yüksek güvenilirlikli istenmeyen posta**: **İletiyi karantinaya al'ı** seçin.
        - **Kimlik avı**: **İletiyi karantinaya al'ı** seçin.
        - **Yüksek güvenilirlikli kimlik avı**: **Karantina iletilerinin** seçili olduğunu doğrulayın.
-       - **Toplu**: **İletiyi Gereksiz E-posta klasörüne taşı'nın** seçili olduğunu doğrulayın (Standart) veya **Karantina iletisi** (Katı) seçeneğini belirleyin.
+       - **Toplu**: **İletiyi Gereksiz Email klasörüne taşı'nın** seçili olduğunu doğrulayın (Standart) veya **İletiyi karantinaya al** (Katı) seçeneğini belirleyin.
 
        **İletiyi karantinaya al'ı** seçtiğiniz her eylem için, istenmeyen posta önleme koruması tarafından **karantinaya** alınan iletilere uygulanan [karantina ilkesini](quarantine-policies.md) seçtiğiniz karantina ilkesi seçin kutusu görüntülenir.
 
@@ -186,104 +186,91 @@ Kimlik avı önleme ilkelerini yapılandırmaya yönelik ayrıntılı yönergele
 
 İstenmeyen posta önleme ilkelerini yapılandırmaya yönelik ayrıntılı yönergeler için bkz. [EOP'de istenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md).
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Bölüm 4 - Kötü amaçlı URL'lere ve dosyalara karşı koruma (Kasa Bağlantılar ve Kasa ekleri Office 365 için Defender)
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Bölüm 4 - Kötü amaçlı URL'lere ve dosyalara karşı koruma (Office 365 için Defender Güvenli Bağlantılar ve Güvenli Ekler)
 
-Office 365 için Microsoft Defender [içeren](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) aboneliklerde kötü amaçlı URL'lerden ve dosyalardan tıklama zamanı koruması sağlanır. [Kasa Ekler](safe-attachments.md) ve [Kasa Bağlantıları](safe-links.md) ilkeleri aracılığıyla ayarlanır.
+Office 365 için Microsoft Defender [içeren](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) aboneliklerde kötü amaçlı URL'lerden ve dosyalardan tıklama zamanı koruması sağlanır. [Güvenli Ekler](safe-attachments.md) ve [Güvenli Bağlantılar](safe-links.md) ilkeleri aracılığıyla ayarlanır.
 
-### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da ek ilkelerini Kasa
+### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Ekler ilkeleri
 
-Kasa Ekleri için önerilen ayarlar hakkında daha fazla bilgi için bkz. .[ Ekler ayarlarını Kasa](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
+Güvenli Ekler için önerilen ayarlar hakkında daha fazla bilgi için bkz. . [Güvenli Ekler ayarları](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
-1. **Microsoft 365 Defender** portalında <https://security.microsoft.com/safeattachmentv2>Kasa Ekler sayfasını açın.
+1. Microsoft 365 Defender portalında <https://security.microsoft.com/safeattachmentv2>**Güvenli Ekler** sayfasını açın.
 
-2. **Kasa Ekler** sayfasında **Genel ayarlar'a** tıklayın ve görüntülenen açılır listede aşağıdaki ayarları yapılandırın:
-   - **SharePoint, OneDrive ve Microsoft Teams için Office 365 için Defender açın**: Bu ayarı açın (![Aç.](../../media/scc-toggle-on.png))
+2. **Güvenli Ekler** sayfasında **Genel ayarlar'a** tıklayın ve görüntülenen açılır listede aşağıdaki ayarları yapılandırın:
+   - **SharePoint, OneDrive ve Microsoft Teams için Office 365 için Defender açın**: Bu ayarı açın (![Aç/kapat).](../../media/scc-toggle-on.png)
 
      > [!IMPORTANT]
-     > **SharePoint, OneDrive ve Microsoft Teams için Kasa Eklerini açmadan önce, kuruluşunuzda denetim günlüğünün açık olduğunu doğrulayın**. Bu eylem genellikle Exchange Online'de Denetim Günlükleri rolü atanmış biri tarafından gerçekleştirilir. Daha fazla bilgi için bkz [. Denetim günlüğü aramasını açma veya kapatma](../../compliance/turn-audit-log-search-on-or-off.md)!
+     > **SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler'i açmadan önce, kuruluşunuzda denetim günlüğünün açık olduğunu doğrulayın**. Bu eylem genellikle Exchange Online'de Denetim Günlükleri rolü atanmış biri tarafından gerçekleştirilir. Daha fazla bilgi için bkz [. Denetim günlüğü aramasını açma veya kapatma](../../compliance/turn-audit-log-search-on-or-off.md)!
 
-   - **Office istemcileri için Kasa Belgeleri açın**: Bu ayarı açın (![Aç/kapat).](../../media/scc-toggle-on.png)). Bu özelliğin yalnızca gerekli lisans türleriyle kullanılabilir ve anlamlı olduğunu unutmayın. Daha fazla bilgi için bkz. [Microsoft 365 E5 belgeleri Kasa](safe-docs.md).
-   - **Kasa Belgeler dosyayı kötü amaçlı olarak tanımlasa bile, kişilerin Korumalı Görünüm'e tıklamasına izin verin: Bu ayarın** kapalı olduğunu doğrulayın (![Kapat.](../../media/scc-toggle-off.png))
+   - **Office istemcileri için Güvenli Belgeler'i açın**: Bu ayarı açın (![Aç/kapat).](../../media/scc-toggle-on.png)). Bu özelliğin yalnızca gerekli lisans türleriyle kullanılabilir ve anlamlı olduğunu unutmayın. Daha fazla bilgi için bkz. [Microsoft 365 E5'de Güvenli Belgeler](safe-docs.md).
+   - **Güvenli Belgeler dosyayı kötü amaçlı olarak tanımlasa bile kişilerin Korumalı Görünüm'e tıklamasına izin verin: Bu ayarın** kapalı olduğunu doğrulayın (![Kapat.](../../media/scc-toggle-off.png))
 
    İşiniz bittiğinde **Kaydet'e** tıklayın
 
-3. **Kasa Ekler** sayfasına dönün, Oluştur simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png).
+3. **Güvenli Ekler** sayfasına geri dönüp Oluştur simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png).
 
-4. Açılan **Kasa Ekleri Oluşturma ilkesi** sihirbazında aşağıdaki ayarları yapılandırın:
+4. Açılan **Güvenli Ekler Oluşturma ilkesi** sihirbazında aşağıdaki ayarları yapılandırın:
    - **İlke sayfanızı adlandır** :
      - **Ad**: Benzersiz ve açıklayıcı bir şey girin.
      - **Açıklama**: İsteğe bağlı bir açıklama girin.
    - **Kullanıcılar ve etki alanları** sayfası: Bu ilk ilkeniz olduğundan ve kapsamı en üst düzeye çıkarmak istediğinizden, [Kabul edilen etki alanlarınızı](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) **Etki Alanları** kutusuna girmeyi göz önünde bulundurun. Aksi takdirde, daha ayrıntılı denetim için **Kullanıcılar** ve **Gruplar** kutularını kullanabilirsiniz. **Bu kullanıcıları, grupları ve etki alanlarını dışla'yı** seçip değerler girerek özel durumlar belirtebilirsiniz.
    - **Ayarlar** sayfası:
-     - **Kasa Ekler bilinmeyen kötü amaçlı yazılım yanıtı**: **Engelle'yi** seçin.
+     - **Güvenli Ekler bilinmeyen kötü amaçlı yazılım yanıtı**: **Engelle'yi** seçin.
      - **Karantina ilkesi**: Varsayılan değer boş olduğundan AdminOnlyAccessPolicy ilkesi kullanılır. Karantina ilkeleri, kullanıcıların karantinaya alınan iletilere neler yapabileceğini ve kullanıcıların karantina bildirimleri alıp almayacağını tanımlar. Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md).
      - **Algılanan eklerle eki yeniden yönlendirme** : **Yeniden yönlendirmeyi etkinleştir**: Bu ayarı açın (seçin) ve algılanan iletileri almak için bir e-posta adresi girin.
-     - **Tarama tamamlanamadıysa Kasa Ekler algılama yanıtını uygulayın (zaman aşımı veya hatalar)**: Bu ayarın seçili olduğunu doğrulayın.
+     - **Tarama tamamlanamadıysa Güvenli Ekler algılama yanıtını uygulayın (zaman aşımı veya hatalar)**: Bu ayarın seçili olduğunu doğrulayın.
 
 5. İşiniz bittiğinde **Gönder'e** ve ardından **Bitti'ye** tıklayın.
 
-6. (Önerilen) Genel yönetici veya SharePoint Online yöneticisi olarak, SharePoint Online PowerShell'de _DisallowInfectedFileDownload_ parametresi olarak `$true` ayarlanmış **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet'ini çalıştırın.
+6. (Önerilen) Genel yönetici veya SharePoint Online yöneticisi olarak, SharePoint Online PowerShell'de _DisallowInfectedFileDownload_ parametresi olarak ayarlanmış `$true` **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet'ini çalıştırın.
    - `$true` algılanan dosyalar için tüm eylemleri (Sil hariç) engeller. Kişiler algılanan dosyaları açamaz, taşıyamaz, kopyalayamaz veya paylaşamaz.
    - `$false` Sil ve İndir dışındaki tüm eylemleri engeller. Kişiler riski kabul etmeyi ve algılanan bir dosyayı indirmeyi seçebilir.
 
 7. Değişikliklerinizin tüm Microsoft 365 veri merkezlerine yayılması için 30 dakikaya kadar bekleyin.
 
-Kasa Ekleri için Kasa Ekler ilkelerini ve genel ayarları yapılandırmaya yönelik ayrıntılı yönergeler için aşağıdaki konulara bakın:
+Güvenli Ekler ilkelerini ve Güvenli Ekler için genel ayarları yapılandırmaya yönelik ayrıntılı yönergeler için aşağıdaki konulara bakın:
 
-- [Office 365 için Microsoft Defender Kasa Ekler ilkelerini ayarlama](set-up-safe-attachments-policies.md)
+- [Office 365 için Microsoft Defender'de Güvenli Ekler ilkelerini ayarlama](set-up-safe-attachments-policies.md)
 - [SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekleri açma](turn-on-mdo-for-spo-odb-and-teams.md)
 - [Microsoft 365 E5 aboneliğinde Güvenli Belgeler](safe-docs.md)
 
-### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Kasa Bağlantıları ilkeleri
+### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Bağlantılar ilkeleri
 
-Kasa Bağlantıları için önerilen ayarlar hakkında daha fazla bilgi için bkz. [Kasa Bağlantılar ayarları](recommended-settings-for-eop-and-office365.md#safe-links-settings).
+Güvenli Bağlantılar için önerilen ayarlar hakkında daha fazla bilgi için bkz. [Güvenli Bağlantılar ayarları](recommended-settings-for-eop-and-office365.md#safe-links-settings).
 
-1. **Microsoft 365 Defender** portalında <https://security.microsoft.com/safelinksv2>Kasa Bağlantılar sayfasını açın.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com/safelinksv2>**Güvenli Bağlantılar** sayfasını açın ve ardından Oluştur simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png).
 
-2. **Kasa Bağlantılar** sayfasında **Genel ayarlar'a** tıklayın ve görüntülenen açılır listede aşağıdaki ayarları yapılandırın:
-   - **Desteklenen Office 365 uygulamaları bölümündeki içeriğe uygulanan Ayarlar**:
-     - **Office 365 uygulamalarında Kasa Bağlantıları kullan**: Bu ayarın açık olduğunu doğrulayın (![Açık.](../../media/scc-toggle-on.png))
-     - **Kullanıcıların Office 365 uygulamalarda korumalı bağlantılara ne zaman tıkladığını izlemeyin**: Bu ayarı kapatın (![Kapat.](../../media/scc-toggle-off.png))
-     - **Kullanıcıların Office 365 uygulamalarda özgün URL'ye tıklamasına izin vermeyin**: Bu ayarın açık olduğunu doğrulayın (![Açık.](../../media/scc-toggle-on.png)).
-
-   İşiniz bittiğinde **Kaydet'e** tıklayın
-
-3. **Kasa Bağlantılar** sayfasına dönün, Oluştur simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png).
-
-4. Açılan **Kasa Bağlantıları oluştur ilke** sihirbazında aşağıdaki ayarları yapılandırın:
+2. Açılan **Güvenli Bağlantılar Oluştur ilke** sihirbazında aşağıdaki ayarları yapılandırın:
    - **İlke sayfanızı adlandır** :
      - **Ad**: Benzersiz ve açıklayıcı bir şey girin.
      - **Açıklama**: İsteğe bağlı bir açıklama girin.
    - **Kullanıcılar ve etki alanları** sayfası: Bu ilk ilkeniz olduğundan ve kapsamı en üst düzeye çıkarmak istediğinizden, [Kabul edilen etki alanlarınızı](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) **Etki Alanları** kutusuna girmeyi göz önünde bulundurun. Aksi takdirde, daha ayrıntılı denetim için **Kullanıcılar** ve **Gruplar** kutularını kullanabilirsiniz. **Bu kullanıcıları, grupları ve etki alanlarını dışla'yı** seçip değerler girerek özel durumlar belirtebilirsiniz.
    - **Url & koruma ayarları sayfasına tıklayın** :
      - **E-postalar bölümündeki kötü amaçlı olabilecek URL'ler üzerinde eylem** :
-       - **Açık: Kasa Bağlantılar, kullanıcılar e-postadaki bağlantılara tıkladığında bilinen, kötü amaçlı bağlantıların listesini denetler**: Ayarını seçin (açın).
-       - **Kuruluş içinde gönderilen e-posta iletilerine Kasa Bağlantıları uygula**: Bu ayarı seçin (açın).
+       - **Açık: Güvenli Bağlantılar, kullanıcılar e-postadaki bağlantılara tıkladığında bilinen, kötü amaçlı bağlantıların listesini denetler**: Ayarını seçin (açın).
+       - **Kuruluş içinde gönderilen e-posta iletilerine Güvenli Bağlantılar uygula**: Bu ayarı seçin (açın).
        - **Şüpheli bağlantılar ve dosyalara işaret eden bağlantılar için gerçek zamanlı URL taraması uygulayın**: Bu ayarı seçin (açın).
-       - **İletiyi göndermeden önce URL taramasının tamamlanmasını bekleyin**: Bu ayarı seçin (açın).
-       - **URL'leri yeniden yazmayın, yalnızca Kasa Bağlantılar API'si aracılığıyla denetimler yapın**: Bu ayarın seçili olmadığını doğrulayın (kapatın).
-     - **E-postada aşağıdaki URL'leri yeniden yazmayın**: Bu ayar için belirli bir önerimiz yok. Daha fazla bilgi için Kasa [Bağlantıları ilkelerindeki "Aşağıdaki URL'leri yeniden yazmayın" listelerine](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) bakın.
-     - **Microsoft Teams bölümde kötü amaçlı olabilecek URL'ler için eylem**:
-       - ***Açık: Kasa Bağlantılar, kullanıcılar Microsoft Teams bağlantılara tıkladığında bilinen, kötü amaçlı bağlantıların listesini denetler**: Bu ayarı seçin (aç).
+         - **İletiyi göndermeden önce URL taramasının tamamlanmasını bekleyin**: Bu ayarı seçin (açın).
+       - **URL'leri yeniden yazmayın, yalnızca Güvenli Bağlantılar API'si aracılığıyla denetimler yapın**: Bu ayarın seçili olmadığını doğrulayın (kapatın).
+     - **E-postada aşağıdaki URL'leri yeniden yazmayın**: Bu ayar için belirli bir önerimiz yok. Daha fazla bilgi için [Güvenli Bağlantılar ilkelerindeki "Aşağıdaki URL'leri yeniden yazmayın" listelerine](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) bakın.
+     - **Microsoft Teams'de kötü amaçlı olabilecek URL'ler için eylem** bölümü:
+       - ***Açık: Güvenli Bağlantılar, kullanıcılar Microsoft Teams'de bağlantılara tıkladığında bilinen, kötü amaçlı bağlantıların listesini denetler**: Bu ayarı seçin (açın).
      - **Koruma ayarları bölümüne tıklayın** :
        - **Kullanıcı tıklamalarını izleme**: Bu ayarın seçili (açık) olduğunu doğrulayın.
-       - **Kullanıcıların özgün URL'ye tıklamasına izin ver**: Bu ayarı kapat (seçili değil).
-       - **Bildirim ve uyarı sayfalarında kuruluş markasını görüntüleme**: Bu ayarı seçmek (açmak) ancak kuruluşunuzun şirket logonuzu karşıya yüklemek [için Microsoft 365 temasını özelleştirme başlığı altındaki](../../admin/setup/customize-your-organization-theme.md) yönergeleri izledikten sonra anlamlıdır.
+         - **Kullanıcıların özgün URL'ye tıklamasına izin ver**: Bu ayarı kapat (seçili değil).
+         - **Bildirim ve uyarı sayfalarında kuruluş markasını görüntüleme**: Bu ayarı seçmek (açmak) ancak kuruluşunuzun şirket logosunu karşıya yüklemek [için Microsoft 365 temasını özelleştirme başlığı altındaki](../../admin/setup/customize-your-organization-theme.md) yönergeleri izledikten sonra anlamlıdır.
    - **Bildirim** sayfası:
-     - **Kullanıcıları nasıl bilgilendirmek istiyorsunuz?** bölüm: İsteğe bağlı olarak, **kullanılacak özelleştirilmiş bildirim metnini girmek için Özel bildirim metnini kullan'ı** seçebilirsiniz. Özel bildirim metnini kullanıcının diline çevirmek **için Otomatik yerelleştirme için Microsoft Çeviri kullan'ı** da seçebilirsiniz. Aksi takdirde **Varsayılan bildirim metnini kullan'ı** seçili bırakın.
+     - **Kullanıcıları nasıl bilgilendirmek istiyorsunuz?** bölüm: İsteğe bağlı olarak, **kullanılacak özelleştirilmiş bildirim metnini girmek için Özel bildirim metnini kullan'ı** seçebilirsiniz. Özel bildirim metnini kullanıcının diline çevirmek **için Otomatik yerelleştirme için Microsoft Translator kullan'ı** da seçebilirsiniz. Aksi takdirde **Varsayılan bildirim metnini kullan'ı** seçili bırakın.
 
-5. İşiniz bittiğinde **Gönder'e** ve ardından **Bitti'ye** tıklayın.
+3. İşiniz bittiğinde **Gönder'e** ve ardından **Bitti'ye** tıklayın.
 
-Kasa Bağlantıları için Kasa Bağlantıları ilkelerini ve genel ayarları yapılandırmaya yönelik ayrıntılı yönergeler için aşağıdaki konulara bakın:
+Güvenli Bağlantılar ilkelerini ve Güvenli Bağlantılar için genel ayarları yapılandırmaya yönelik ayrıntılı yönergeler için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).
 
-- [Office 365 için Microsoft Defender'da Kasa Bağlantıları ilkelerini ayarlama](set-up-safe-links-policies.md)
-- [Office 365 için Microsoft Defender'da Kasa Bağlantıları için genel ayarları yapılandırma](configure-global-settings-for-safe-links.md)
-
-### <a name="now-set-up-alerts-for-detected-files-in-sharepoint-online-or-onedrive-for-business"></a>Şimdi SharePoint Online veya OneDrive İş'da algılanan dosyalar için uyarılar ayarlayın
+### <a name="now-set-up-alerts-for-detected-files-in-sharepoint-online-or-onedrive-for-business"></a>Şimdi SharePoint Online'da veya OneDrive İş algılanan dosyalar için uyarılar ayarlayın
 
 SharePoint Online veya OneDrive İş'daki bir dosya kötü amaçlı olarak tanımlandığında bildirim almak için, bu bölümde açıklandığı gibi bir uyarı ayarlayabilirsiniz.
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**E-posta & işbirliği** \> **Ilkeleri & kuralları** \> **Uyarı ilkesi'ne** gidin.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Email & işbirliği** \> **ilkeleri & kuralları** \> **Uyarı ilkesi'ne** gidin.
 
 2. **Uyarı ilkesi** sayfasında **Yeni uyarı ilkesi'ne** tıklayın.
 
@@ -303,22 +290,22 @@ SharePoint Online veya OneDrive İş'daki bir dosya kötü amaçlı olarak tanı
 
 5. **Alıcılarınızı ayarlayın** sayfasında aşağıdaki ayarları yapılandırın:
    - **E-posta bildirimleri gönder**: Bu ayarın seçili olduğunu doğrulayın.
-   - **E-posta alıcıları**: Kötü amaçlı bir dosya algılandığında bildirim alması gereken bir veya daha fazla genel yönetici, güvenlik yöneticisi veya güvenlik okuyucu seçin.
+   - **alıcıları Email**: Kötü amaçlı bir dosya algılandığında bildirim alması gereken bir veya daha fazla genel yönetici, güvenlik yöneticisi veya güvenlik okuyucu seçin.
    - **Günlük bildirim sınırı**: **Sınır** seçilmedi öğesini doğrulayın.
 
    İşiniz bittiğinde **İleri'ye** tıklayın
 
 6. **Ayarlarınızı gözden geçirin** sayfasında ayarlarınızı gözden geçirin, **Evet, hemen aç'ın** seçili olduğunu doğrulayın ve **son'a** tıklayın
 
-Uyarı ilkeleri hakkında daha fazla bilgi edinmek için [Bkz. Microsoft Purview uyumluluk portalında uyarı ilkeleri](../../compliance/alert-policies.md).
+Uyarı ilkeleri hakkında daha fazla bilgi edinmek için [Microsoft Purview uyumluluk portalı uyarı ilkeleri bölümüne](../../compliance/alert-policies.md) bakın.
 
 > [!NOTE]
 > Yapılandırmayı bitirdiğinizde iş yükü araştırmalarını başlatmak için şu bağlantıları kullanın:
 >
 > - [Tehdit koruması durum raporu](view-email-security-reports.md#threat-protection-status-report)
 > - [Office 365 için Defender'de karantinaya alınan dosyaları yönetmek için Microsoft 365 Defender portalını kullanma](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
-> - [SharePoint Online, OneDrive veya Microsoft Teams'da kötü amaçlı bir dosya bulunduğunda yapılması gerekenler](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
-> - [karantinaya alınan iletileri ve dosyaları Microsoft 365'da yönetici olarak yönetme](manage-quarantined-messages-and-files.md)
+> - [SharePoint Online, OneDrive veya Microsoft Teams'de kötü amaçlı bir dosya bulunduğunda yapılması gerekenler](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+> - [Microsoft 365'te karantinaya alınan iletileri ve dosyaları yönetici olarak yönetme](manage-quarantined-messages-and-files.md)
 
 ## <a name="post-setup-tasks-and-next-steps"></a>Kurulum sonrası görevler ve sonraki adımlar
 
@@ -326,6 +313,6 @@ Tehdit koruması özelliklerini yapılandırdıktan sonra bu özelliklerin nası
 
 |Yapılması gerekenler|Daha fazla bilgi edinmek için kaynaklar|
 |---|---|
-|Raporları görüntüleyerek tehdit koruması özelliklerinin kuruluşunuz için nasıl çalıştığını görün|[E-posta güvenlik raporları](view-email-security-reports.md) <p> [Office 365 için Microsoft Defender raporları](view-reports-for-mdo.md) <p> [Tehdit Gezgini](threat-explorer.md)|
+|Raporları görüntüleyerek tehdit koruması özelliklerinin kuruluşunuz için nasıl çalıştığını görün|[güvenlik raporlarını Email](view-email-security-reports.md) <p> [Office 365 için Microsoft Defender raporları](view-reports-for-mdo.md) <p> [Tehdit Gezgini](threat-explorer.md)|
 |Tehdit koruma ilkelerinizi gerektiği gibi düzenli aralıklarla gözden geçirin ve düzeltin|[Güvenli Puan](../defender/microsoft-secure-score.md) <p> [Microsoft 365 tehdit araştırması ve yanıt özellikleri](./office-365-ti.md)|
 |Yeni özellikleri ve hizmet güncelleştirmelerini izleyin|[Standart ve Hedefli sürüm seçenekleri](../../admin/manage/release-options-in-office-365.md) <p> [İleti Merkezi](../../admin/manage/message-center.md) <p> [Microsoft 365 Yol Haritası](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Hizmet Açıklamaları](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Yöneticiler Office 365 için Microsoft Defender deneme modu hakkında bilgi edinebilir
-ms.openlocfilehash: 086ea200b6f8519c487622d02ba2d2fc8347f68a
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 9cce1e910f5497ce2dfe265923f66e87306fb90e
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554213"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773267"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Office 365 için Microsoft Defender deneme sürümü hakkında
 
@@ -62,9 +62,9 @@ Deneme, kuruluşların Office 365 için Defender özelliklerini kolayca ayarlama
 Varsayılan olarak, bu ilkelerin kapsamı kuruluştaki tüm kullanıcılara yöneliktir, ancak denemenin kurulumu sırasında veya sonrasında ilke atamasını belirli kullanıcılarla değiştirebilirsiniz.
 
 > [!NOTE]
-> Mevcut istenmeyen posta önleme ilkeleriniz, istenmeyen posta önleme ilkelerinde yüksek güvenilirlikli istenmeyen posta kararı için **iletiyi Gereksiz E-posta klasörüne taşı** eylemiyle yapılandırılmış olabilir. Önceden ayarlanmış güvenlik ilkeleri için Standart şablon, yüksek güvenilirlikli istenmeyen postalar için **Karantina iletisi eylemini** kullanır ve önceden ayarlanmış güvenlik ilkeleri her zaman özel istenmeyen posta önleme ilkeleri veya varsayılan istenmeyen posta önleme ilkesinden önce uygulanır. Varsayılan, Standart ve Katı ayarlar hakkında daha fazla bilgi için bkz. [EOP ve Office 365 için Microsoft Defender güvenliği için önerilen ayarlar](recommended-settings-for-eop-and-office365.md).
+> Mevcut istenmeyen posta önleme ilkeleriniz, istenmeyen posta önleme ilkelerindeki yüksek güvenilirlikli istenmeyen posta kararı için **büyük olasılıkla İletiyi Gereksiz Email klasörüne taşı** eylemiyle yapılandırılır. Önceden ayarlanmış güvenlik ilkeleri için Standart şablon, yüksek güvenilirlikli istenmeyen postalar için **Karantina iletisi eylemini** kullanır ve önceden ayarlanmış güvenlik ilkeleri her zaman özel istenmeyen posta önleme ilkeleri veya varsayılan istenmeyen posta önleme ilkesinden önce uygulanır. Varsayılan, Standart ve Katı ayarlar hakkında daha fazla bilgi için bkz. [EOP ve Office 365 için Microsoft Defender güvenliği için önerilen ayarlar](recommended-settings-for-eop-and-office365.md).
 
-Diğer iş yükleri de koruma için kullanılabilir (örneğin, [SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler](mdo-for-spo-odb-and-teams.md) ve [desteklenen Office 365 uygulamaları için Güvenli Bağlantılar](safe-links.md#safe-links-settings-for-office-365-apps)).
+Diğer iş yükleri de koruma için kullanılabilir (örneğin, [SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler](mdo-for-spo-odb-and-teams.md) ve [desteklenen Office uygulamaları için Güvenli Bağlantılar](safe-links.md#safe-links-settings-for-office-apps)).
 
 Deneme sürümünün kurulumu sırasında, Office 365 için Defender Plan 2'ye özel yanıt işlevselliği (örneğin, [AIR](office-365-air.md) ve [Tehdit Gezgini](threat-explorer.md) de kuruluşun tamamı için ayarlanır. İlke kapsamını belirlemeye gerek yoktur.
 

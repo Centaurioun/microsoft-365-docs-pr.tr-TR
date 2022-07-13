@@ -19,12 +19,12 @@ ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender'da Güvenli Bağlantılar ilkelerini ve genel Güvenli Bağlantılar ayarlarını görüntülemeyi, oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d006cd49392b80c826e23ef0d63f954d81249c0
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 7151099b44947bf71f181802ea57ef732ec26858
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487037"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771405"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama
 
@@ -39,13 +39,13 @@ ms.locfileid: "66487037"
 
 [Office 365 için Microsoft Defender'deki](defender-for-office-365.md) Güvenli Bağlantılar, gelen e-posta iletilerinin posta akışında URL taramasına ve e-posta iletilerindeki ve diğer konumlardaki URL'lerin ve bağlantıların tıklamayla doğrulanmasını sağlar. Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar](safe-links.md).
 
-Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, yerleşik koruma** önceden ayarlanmış güvenlik ilkesi tüm alıcılara (özel Güvenli Bağlantılar ilkelerinde tanımlanmayan kullanıcılar) Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).
+Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, Yerleşik koruma** ön ayarı güvenlik ilkesi tüm alıcılara Güvenli Bağlantılar koruması sağlar (özel Güvenli Bağlantılar veya Standart veya Katı ön ayarlı güvenlik ilkeleri içinde tanımlanmayan kullanıcılar). Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).
 
 Belirli kullanıcılar, gruplar veya etki alanları için geçerli olan Güvenli Bağlantılar ilkeleri oluşturmak için bu makaledeki yordamları da kullanabilirsiniz.
 
 > [!NOTE]
 >
-> Güvenli Bağlantılar koruması için genel ayarları Güvenli Bağlantılar ilkelerinin **dışında** yapılandırabilirsiniz. Yönergeler için bkz[. Office 365 için Microsoft Defender'da Güvenli Bağlantılar için genel ayarları yapılandırma](configure-global-settings-for-safe-links.md).
+> Güvenli Bağlantılar ilkelerinin **dışında** Güvenli Bağlantılar koruması için genel ayarlarda "Aşağıdaki URL'leri engelle" listesini yapılandırabilirsiniz. Yönergeler için bkz[. Office 365 için Microsoft Defender'da Güvenli Bağlantılar için genel ayarları yapılandırma](configure-global-settings-for-safe-links.md).
 >
 > Yöneticiler, Güvenli Bağlantılar için farklı yapılandırma ayarlarını dikkate almalıdır. Kullanılabilir seçeneklerden biri, Güvenli Bağlantılar'a kullanıcı tanımlanabilir bilgileri eklemektir. Bu özellik, güvenlik operasyonları (SecOps) ekiplerinin olası kullanıcı güvenliğinin aşılmasını araştırmasına, düzeltici eylem gerçekleştirmesine ve yüksek maliyetli ihlalleri sınırlamasına olanak tanır.
 
@@ -91,7 +91,7 @@ Exchange Online PowerShell veya tek başına EOP PowerShell'de ilkeyi ve kuralı
 
 Microsoft 365 Defender portalında özel bir Güvenli Bağlantılar ilkesi oluşturmak, her ikisi için de aynı adı kullanarak güvenli bağlantılar kuralını ve ilişkili güvenli bağlantılar ilkesini aynı anda oluşturur.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümündeki **E-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Bağlantılar'a** gidin. Doğrudan **Güvenli Bağlantılar** sayfasına gitmek için kullanın <https://security.microsoft.com/safelinksv2>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümündeki** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Bağlantılar'a** gidin. Doğrudan **Güvenli Bağlantılar** sayfasına gitmek için kullanın <https://security.microsoft.com/safelinksv2>.
 
 2. **Güvenli Bağlantılar** sayfasında Oluştur simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Oluştur'u seçin**.
 
@@ -123,36 +123,69 @@ Microsoft 365 Defender portalında özel bir Güvenli Bağlantılar ilkesi oluş
    > - Alıcı: romain@contoso.com
    > - Alıcı şu üyelerin üyesidir: Yöneticiler
    >
-   > İlke, _romain@contoso.com yalnızca_ Yönetici gruplarının da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
+   > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
    >
-   > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler gruplarının da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
+   > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
 
    İşiniz bittiğinde **İleri'ye** tıklayın.
 
-5. Görüntülenen **Koruma ayarları** sayfasında aşağıdaki ayarları yapılandırın:
-   - **İletilerde bilinmeyen kötü amaçlı olabilecek URL'ler için eylemi seçin**: E-posta iletilerindeki bağlantılar için Güvenli Bağlantılar korumasını etkinleştirmek için **Açık'ı** seçin. Bu ayarı açarsanız aşağıdaki ayarlar kullanılabilir:
-     - **Şüpheli bağlantılar ve dosyalara işaret eden bağlantılar için gerçek zamanlı URL taraması uygulayın**: E-posta iletilerindeki bağlantıların gerçek zamanlı olarak taranmasını etkinleştirmek için bu seçeneği belirleyin. Bu ayarı açarsanız aşağıdaki ayar kullanılabilir:
-       - **İletiyi teslim etmeden önce URL taramasının tamamlanmasını bekleyin: İletiyi teslim** etmeden önce gerçek zamanlı URL taramasının tamamlanmasını beklemek için bu seçeneği belirleyin.
-     - **Kuruluş içinde gönderilen e-posta iletilerine Güvenli Bağlantılar Uygula**: İç gönderenler ve iç alıcılar arasındaki iletilere Güvenli Bağlantılar ilkesini uygulamak için bu seçeneği belirleyin.
-   - **Microsoft Teams'de bilinmeyen veya kötü amaçlı olabilecek URL'ler için eylemi seçin**: Teams'deki bağlantılar için Güvenli Bağlantılar korumasını etkinleştirmek için **Açık'ı** seçin. Bu ayarın etkili olması 24 saat kadar sürebilir.
+5. Görüntülenen **URL & koruma ayarları'na tıklayın** sayfasında aşağıdaki ayarları yapılandırın:
+
+   - **E-postalar bölümündeki kötü amaçlı olabilecek URL'ler üzerinde eylem** :
+     - **Açık: Güvenli Bağlantılar, kullanıcılar e-postadaki bağlantılara tıkladığında bilinen, kötü amaçlı bağlantıların listesini denetler: E-posta iletilerindeki** bağlantılar için Güvenli Bağlantılar korumasını açmak için bu seçeneği belirleyin. Bu seçeneği seçerseniz aşağıdaki ayarlar kullanılabilir:
+       - **Kuruluş içinde gönderilen e-posta iletilerine Güvenli Bağlantılar Uygula**: İç gönderenler ve iç alıcılar arasındaki iletilere Güvenli Bağlantılar ilkesini uygulamak için bu seçeneği belirleyin.
+       - **Şüpheli bağlantılar ve dosyalara işaret eden bağlantılar için gerçek zamanlı URL taraması uygulayın**: E-posta iletilerindeki bağlantıların gerçek zamanlı taramasını açmak için bu seçeneği belirleyin. Bu seçeneği belirlerseniz aşağıdaki ayar kullanılabilir:
+         - **İletiyi teslim etmeden önce URL taramasının tamamlanmasını bekleyin: İletiyi teslim** etmeden önce gerçek zamanlı URL taramasının tamamlanmasını beklemek için bu seçeneği belirleyin.
+       - **URL'leri yeniden yazmayın, denetimleri yalnızca SafeLinks API'si aracılığıyla yapın**: URL kaydırmayı önlemek için bu seçeneği belirleyin. Güvenli Bağlantılar, yalnızca URL'yi destekleyen Outlook istemcileri tarafından URL tıklatılırken API'ler aracılığıyla çağrılır.
+
+       - **E-posta bölümünde aşağıdaki URL'leri yeniden yazmayın** : Güvenli Bağlantılar tarafından engellenecek belirli URL'lere erişime izin vermek için **Yönet (nn)** URL'lerini tıklatın.
+
+     > [!NOTE]
+     > "Aşağıdaki URL'leri yeniden yazmayın" listesinin amacı, bu URL'lerin Güvenli Bağlantılar sarmalama işlemini atlamaktır. Bu listeyi kullanmak yerine artık [Kiracı İzin Ver/Engelle Listesinde izin ver URL girişleri oluşturabilirsiniz](allow-block-urls.md#create-allow-url-entries).
+
+     1. Görüntülenen **URL'leri yeniden yazmamak için yönet** açılır öğesinde URL Ekle simgesine tıklayın ![.](../../media/m365-cc-sc-create-icon.png) **URL'ler ekleyin**.
+     2. Görüntülenen **URL ekle** açılır penceresinde, istediğiniz URL'yi veya değeri yazın, kutunun altında görünen girdiyi seçin ve **kaydet'e** tıklayın. Bu adımı gerektiği kadar tekrarlayın.
+
+        Giriş söz dizimi için bkz. ["Aşağıdaki URL'leri yeniden yazma" listesi için giriş söz dizimi](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
+
+        Bir girdiyi kaldırmak için ![Kaldır simgesi.](../../media/m365-cc-sc-remove-selection-icon.png) öğesini seçin.
+
+        Bitirdiğinizde, **Kaydet**'i tıklatın.
+
+     3. **Url'leri yönet açılır öğesini yeniden yazmamak için** geri dönün, girdi listesinde **Bitti** veya bakım yap'a tıklayın:
+
+        Listeden girdileri kaldırmak için Ara simgesini kullanabilirsiniz ![.](../../media/m365-cc-sc-search-icon.png) Girdiyi bulmak için **arama** kutusu.
+
+        Tek bir girdi seçmek için **URL'ler** sütunundaki değere tıklayın.
+
+        Tek tek birden çok girdi seçmek için, değerin sol tarafındaki boş alana tıklayın.
+
+        Bir sütundaki tüm girişleri seçmek için **URL'ler** sütun başlığının sol tarafındaki boş alana tıklayın.
+
+        Bir veya daha fazla girdi seçili durumdayken ![URL ekle simgesi.](../../media/m365-cc-sc-create-icon.png) veya ![Sil simgesi.](../../media/m365-cc-sc-delete-icon.png) simgesini seçin.
+
+        İşiniz bittiğinde **Bitti'ye** tıklayın.
+
+   - **Microsoft Teams'de kötü amaçlı olabilecek URL'ler için eylemler** bölümü:
+     - **Açık: Güvenli Bağlantılar, kullanıcılar Microsoft Teams'deki bağlantılara tıkladığında bilinen, kötü amaçlı bağlantıların listesini denetler: Teams'deki** bağlantılar için Güvenli Bağlantılar korumasını etkinleştirmek için bu seçeneği belirleyin. Bu ayarın etkili olması 24 saat kadar sürebilir.
 
      > [!NOTE]
      > Şu anda Microsoft Teams için Güvenli Bağlantılar koruması Microsoft 365 GCC High veya Microsoft 365 DoD'da kullanılamaz.
 
-   - **Kullanıcı tıklamalarını izleme**: Kullanıcının e-posta iletilerindeki URL'leri izlemesini sağlamak için bu seçeneği seçili bırakın.
-   - **Kullanıcıların özgün URL'ye tıklamasına izin ver**: Kullanıcıların [uyarı sayfalarında](safe-links.md#warning-pages-from-safe-links) özgün URL'ye tıklamasını engellemek için bu seçeneği temizleyin.
-   - **Aşağıdaki URL'leri yeniden yazmayın**: Aksi takdirde Güvenli Bağlantılar tarafından engellenecek belirtilen URL'lere erişime izin verir.
+   - **Microsoft Office uygulamalarında kötü amaçlı olabilecek URL'ler için eylemler** bölümü:
+     - **Açık: Güvenli Bağlantılar, kullanıcılar Microsoft Office uygulamalarında bağlantılara tıkladığında bilinen, kötü amaçlı bağlantıların listesini denetler**: Desteklenen Office masaüstü, mobil ve web uygulamalarındaki dosyalardaki bağlantılar için Güvenli Bağlantılar korumasını etkinleştirmek için bu seçeneği belirleyin.
 
-     > [!NOTE]
-     > "Aşağıdaki URL'leri yeniden yazmayın" listesinin amacı, belirtilen URL'lerin Güvenli Bağlantılar sarmalama işlemini atlamaktır. Bu listeyi kullanmak yerine artık [Kiracı İzin Ver/Engelle Listesinde izin ver URL girişleri oluşturabilirsiniz](allow-block-urls.md#create-allow-url-entries).
+   - **Koruma ayarları bölümüne tıklayın** :
+     - **Kullanıcı tıklamalarını izleme**: Kullanıcının URL'leri izlemesini sağlamak için bu seçeneği seçili bırakın. Bu seçeneği seçerseniz, aşağıdaki seçenekler kullanılabilir:
+       - **Kullanıcıların özgün URL'ye tıklamasına izin ver**: Kullanıcıların [uyarı sayfalarında](safe-links.md#warning-pages-from-safe-links) özgün URL'ye tıklamasını engellemek için bu seçeneği temizleyin.
+       - **Bildirim ve uyarı sayfalarında kuruluş markasını görüntüleme**: Özelleştirilmiş markalama hakkında daha fazla bilgi için bkz. [Kuruluşunuz için Microsoft 365 temasını özelleştirme](../../admin/setup/customize-your-organization-theme.md).
 
-     Kutuya, istediğiniz URL'yi veya değeri yazın ve **Ekle'ye** tıklayın. Bu adımı gerektiği kadar tekrarlayın.
+   Bu ayarlar hakkında ayrıntılı bilgi için bkz:
 
-     Var olan bir girdiyi kaldırmak için ![Kaldır simgesi.](../../media/m365-cc-sc-remove-selection-icon.png) öğesini seçin.
-
-     Giriş söz dizimi için bkz. ["Aşağıdaki URL'leri yeniden yazma" listesi için giriş söz dizimi](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
-
-   Bu ayarlar hakkında ayrıntılı bilgi için bkz. [E-posta iletileri için Güvenli Bağlantılar ayarları](safe-links.md#safe-links-settings-for-email-messages) ve [Microsoft Teams için Güvenli Bağlantılar ayarları](safe-links.md#safe-links-settings-for-microsoft-teams).
+   - [E-posta iletileri için Güvenli Bağlantılar ayarları](safe-links.md#safe-links-settings-for-email-messages).
+   - [Microsoft Teams için Güvenli Bağlantılar ayarları](safe-links.md#safe-links-settings-for-microsoft-teams).
+   - [Office uygulamaları için Güvenli Bağlantılar ayarları](safe-links.md#safe-links-settings-for-office-apps).
+   - [Güvenli Bağlantılar ilkelerinde koruma ayarlarına tıklayın](safe-links.md#click-protection-settings-in-safe-links-policies)
 
    Standart ve Katı ilke ayarları için önerilen değerler için bkz. [Güvenli Bağlantılar ilke ayarları](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
@@ -160,9 +193,9 @@ Microsoft 365 Defender portalında özel bir Güvenli Bağlantılar ilkesi oluş
 
 6. Görüntülenen **Bildirim** sayfasında **, kullanıcılarınıza nasıl bildirim göndermek istersiniz?** için aşağıdaki değerlerden birini seçin:
    - **Varsayılan bildirim metnini kullanma**
-   - **Özel bildirim metni kullan**: Bu değeri seçerseniz (uzunluk 200 karakteri aşamaz), aşağıdaki ayarlar görüntülenir:
+   - **Özel bildirim metnini kullanın**: Bu değeri seçerseniz aşağıdaki ayarlar görüntülenir:
      - **Otomatik yerelleştirme için Microsoft Translator kullanma**
-     - **Özel bildirim metni**: Bu kutuya özel bildirim metnini girin.
+     - **Özel bildirim metni**: Bu kutuya özel bildirim metnini girin (uzunluk 200 karakteri aşamaz).
 
    İşiniz bittiğinde **İleri'ye** tıklayın.
 
@@ -174,7 +207,7 @@ Microsoft 365 Defender portalında özel bir Güvenli Bağlantılar ilkesi oluş
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Güvenli Bağlantılar ilkelerini görüntülemek için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümündeki **E-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Bağlantılar'a** gidin. Doğrudan **Güvenli Bağlantılar** sayfasına gitmek için kullanın <https://security.microsoft.com/safelinksv2>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümündeki** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Bağlantılar'a** gidin. Doğrudan **Güvenli Bağlantılar** sayfasına gitmek için kullanın <https://security.microsoft.com/safelinksv2>.
 
 2. **Güvenli Bağlantılar** sayfasında, Güvenli Bağlantılar ilkeleri listesinde aşağıdaki özellikler görüntülenir:
    - **Ad**
@@ -195,7 +228,7 @@ bir ilkeyi etkinleştirmek veya devre dışı bırakmak ya da ilke öncelik sır
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Güvenli Bağlantılar ilkelerini etkinleştirme veya devre dışı bırakma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümündeki **E-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Bağlantılar'a** gidin. Doğrudan **Güvenli Bağlantılar** sayfasına gitmek için kullanın <https://security.microsoft.com/safelinksv2>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümündeki** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Bağlantılar'a** gidin. Doğrudan **Güvenli Bağlantılar** sayfasına gitmek için kullanın <https://security.microsoft.com/safelinksv2>.
 
 2. **Güvenli Bağlantılar** sayfasında, ada tıklayarak listeden bir ilke seçin.
 
@@ -220,7 +253,7 @@ Varsayılan olarak, Güvenli Bağlantılar'a oluşturuldukları sırayı temel a
 - Microsoft 365 Defender portalında, Güvenli Bağlantılar ilkesinin önceliğini yalnızca oluşturduktan sonra değiştirebilirsiniz. PowerShell'de, güvenli bağlantılar kuralı oluşturduğunuzda (mevcut kuralların önceliğini etkileyebilecek) varsayılan önceliği geçersiz kılabilirsiniz.
 - Güvenli Bağlantılar ilkeleri, görüntülenme sırasına göre işlenir (ilk ilkenin **Öncelik** değeri 0'dır). Öncelik sırası ve birden çok ilkenin nasıl değerlendirilip uygulandığı hakkında daha fazla bilgi için bkz [. E-posta korumasının sırası ve önceliği](how-policies-and-protections-are-combined.md).
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümündeki **E-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Bağlantılar'a** gidin. Doğrudan **Güvenli Bağlantılar** sayfasına gitmek için kullanın <https://security.microsoft.com/safelinksv2>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümündeki** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Bağlantılar'a** gidin. Doğrudan **Güvenli Bağlantılar** sayfasına gitmek için kullanın <https://security.microsoft.com/safelinksv2>.
 
 2. **Güvenli Bağlantılar** sayfasında, ada tıklayarak listeden bir ilke seçin.
 
@@ -235,7 +268,7 @@ Varsayılan olarak, Güvenli Bağlantılar'a oluşturuldukları sırayı temel a
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Güvenli Bağlantılar ilkelerini kaldırmak için Microsoft 365 Defender portalını kullanma
 
-1. Microsoft 365 Defender portalında, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Bağlantılar'a** gidin.
+1. Microsoft 365 Defender portalında, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Güvenli Bağlantılar'a** gidin.
 
 2. **Güvenli Bağlantılar** sayfasında, ada tıklayarak listeden bir ilke seçin. Görüntülenen ilke ayrıntıları açılır öğesinin üst kısmında Diğer eylemler simgesine tıklayın ![.](../../media/m365-cc-sc-more-actions-icon.png) **Diğer eylemler** \> ![İlkeyi sil simgesi **İlkeyi**](../../media/m365-cc-sc-delete-icon.png) sil.
 
@@ -273,7 +306,7 @@ PowerShell'de Güvenli Bağlantılar ilkesi oluşturmak iki adımlı bir işlemd
 Güvenli bağlantılar ilkesi oluşturmak için şu söz dizimlerini kullanın:
 
 ```PowerShell
-New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSafeLinksForEmail <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-AllowClickThrough <$true | $false>] [-TrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
+New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSafeLinksForEmail <$true | $false>] [-EnableSafeLinksForOffice <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-AllowClickThrough <$true | $false>] [-TrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
 > [!NOTE]
@@ -284,16 +317,17 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Enab
 
 Bu örnek, aşağıdaki değerlerle Contoso All adlı bir güvenli bağlantı ilkesi oluşturur:
 
-- E-posta iletilerinde URL taramasını ve yeniden yazmayı açın.
+- E-posta iletilerinde URL taramasını ve URL yeniden yazmayı açın.
+  - İç iletiler için URL taramasını ve yeniden yazmayı açın.
+  - Dosyalara işaret eden tıklanan bağlantılar da dahil olmak üzere tıklanan URL'lerin gerçek zamanlı taramasını açın.
+    - İletiyi teslim etmeden önce URL taramasının tamamlanmasını bekleyin.
 - Teams'de URL taramayı açın.
-- Dosyalara işaret eden tıklanan bağlantılar da dahil olmak üzere tıklanan URL'lerin gerçek zamanlı taramasını açın.
-- İletiyi teslim etmeden önce URL taramasının tamamlanmasını bekleyin.
-- İç iletiler için URL taramasını ve yeniden yazmayı açın.
+- Desteklenen Office uygulamalarında URL taramayı açın.
 - Güvenli Bağlantılar korumasıyla ilgili kullanıcı tıklamalarını izleyin ( _TrackUserClicks_ parametresini kullanmıyoruz ve varsayılan değer $true).
 - Kullanıcıların özgün URL'ye tıklamasına izin verme.
 
 ```PowerShell
-New-SafeLinksPolicy -Name "Contoso All" -EnableSafeLinksForEmail $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -AllowClickThrough $false
+New-SafeLinksPolicy -Name "Contoso All" -EnableSafeLinksForEmail $true -EnableSafeLinksForOffice $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -AllowClickThrough $false
 ```
 
 Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy).
