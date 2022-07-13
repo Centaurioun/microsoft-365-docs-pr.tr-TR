@@ -20,12 +20,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection (EOP) içindeki kimlik sahtekarlığına ilişkin zeka içgörüleri hakkında bilgi edinebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9455ddf17d26e33ed5b2669a27ee93cf5f56b8f9
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 3be83ee7174934439643320f2ac9d0db72d745bd
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016064"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756659"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP'de sahte zeka içgörüleri
 
@@ -36,7 +36,7 @@ ms.locfileid: "66016064"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları Exchange Online olmayan Microsoft 365 kuruluşlarda, gelen e-posta iletileri kimlik sahtekarlığına karşı otomatik olarak korunur. EOP, kuruluşunuzun kimlik avına karşı genel savunmasının bir parçası olarak kimlik **sahtekarlığı zekasını** kullanır. Daha fazla bilgi için bkz. [EOP'de kimlik sahtekarlığı koruması](anti-spoofing-protection.md).
+posta kutuları olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 Exchange Online kuruluşlarında, gelen e-posta iletileri kimlik sahtekarlığına karşı otomatik olarak korunur. EOP, kuruluşunuzun kimlik avına karşı genel savunmasının bir parçası olarak kimlik **sahtekarlığı zekasını** kullanır. Daha fazla bilgi için bkz. [EOP'de kimlik sahtekarlığı koruması](anti-spoofing-protection.md).
 
 Gönderen bir e-posta adresini sahtekarlık ettiğinde, kuruluşunuzun etki alanlarından birinde veya kuruluşunuza e-posta gönderen bir dış etki alanındaki kullanıcı olarak görünür. Gönderenleri istenmeyen posta veya kimlik avı e-postası göndermek üzere sahtekarlık yapan saldırganların engellenmesi gerekir. Ancak, yasal gönderenlerin sahtekarlık yaptığı senaryolar vardır. Örneğin:
 
@@ -56,7 +56,7 @@ Bilinen gönderenlerin bilinen konumlardan sahte iletiler göndermesine izin ver
 
 Benzer şekilde, kimlik sahtekarlığına izin verilen sahte gönderenleri gözden geçirebilir ve bu gönderenleri sahte zeka içgörülerinden el ile engelleyebilirsiniz.
 
-Bu makalenin geri kalanında, Microsoft 365 Defender portalında ve PowerShell'de (Exchange Online PowerShell'de Exchange Online posta kutuları olan Microsoft 365 kuruluşlar için PowerShell; tek başına EOP PowerShell olmadan kuruluşlar için tek başına EOP PowerShell'in nasıl kullanılacağı açıklanmaktadır Exchange Online posta kutuları).
+Bu makalenin geri kalanında, Microsoft 365 Defender portalında ve PowerShell'de (Exchange Online posta kutuları olan Microsoft 365 kuruluşları için PowerShell'de Exchange Online, Exchange Online olmayan kuruluşlar için tek başına EOP PowerShell)'de kimlik sahtekarı zeka içgörülerinin nasıl kullanılacağı açıklanmaktadır  posta kutuları).
 
 > [!NOTE]
 >
@@ -64,25 +64,27 @@ Bu makalenin geri kalanında, Microsoft 365 Defender portalında ve PowerShell'd
 >
 > - Kiracı İzin Ver/Engelle listesindeki kimlik sahtekarlığı bilgileri içgörüleri ve Kimlik **Sahtekarlığı** sekmesi, Güvenlik & Uyumluluk Merkezi'ndeki istenmeyen posta önleme ilkesi sayfasında bulunan kimlik sahtekarlığı zekası ilkesinin işlevselliğinin yerini alır.
 >
->- Sahte zeka içgörüleri 7 günlük verileri gösterir. **Get-SpoofIntelligenceInsight** cmdlet'i 30 günlük verileri gösterir.
+> - Sahte zeka içgörüleri 7 günlük verileri gösterir. **Get-SpoofIntelligenceInsight** cmdlet'i 30 günlük verileri gösterir.
+>
+> - En son kullanılabilir veriler 3 ile 4 gün arasıdır.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
 - Microsoft 365 Defender portalını adresinde <https://security.microsoft.com>açarsınız. **Kiracı İzin Ver/Engelle Listesi** sayfasındaki Kimlik **Sahtekarlık** sekmesine doğrudan gitmek için kullanın<https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. **Doğrudan Spoof intelligence içgörü** sayfasına gitmek için kullanın<https://security.microsoft.com/spoofintelligence>.
 
-- Exchange Online PowerShell'e bağlanmak için bkz. [PowerShell'Exchange Online Bağlan](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [PowerShell'i Exchange Online Protection için Bağlan](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [Exchange Online Protection PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bu makaledeki yordamları gerçekleştirebilmeniz için **önce Exchange Online'de** izinlerin atanmış olması gerekir:
-  - Kimlik sahtekarlık zekası ilkesini değiştirmek veya kimlik sahtekarlık zekasını etkinleştirmek veya devre dışı bırakmak için 
-    -   **Kuruluş Yönetimi**
-    -   **Güvenlik Yöneticisi** <u>ve</u> **Yalnızca Görüntüleme Yapılandırması** veya **Yalnızca Görüntüleme Kuruluş Yönetimi**.
+  - Kimlik sahtekarlık zekası ilkesini değiştirmek veya kimlik sahtekarlık zekasını etkinleştirmek veya devre dışı bırakmak için aşağıdaki rol gruplarından birinin üyesi olmanız gerekir:
+    - **Kuruluş Yönetimi**
+    - **Güvenlik Yöneticisi** <u>ve</u> **Yalnızca Görüntüleme Yapılandırması** veya **Yalnızca Görüntüleme Kuruluş Yönetimi**.
   - Kimlik sahtekarı zeka ilkesine salt okunur erişim için **Genel Okuyucu** veya **Güvenlik Okuyucusu** rol gruplarının üyesi olmanız gerekir.
 
   Daha fazla bilgi için bkz. [Exchange Online'de İzinler](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   >
-  > - kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'deki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+  > - kullanıcıları Microsoft 365 yönetim merkezi ilgili Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'teki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
   > - [Exchange Online'daki](/Exchange/permissions-exo/permissions-exo#role-groups) **Yalnızca Görüntüleme Kuruluş Yönetimi** rol grubu da özelliğe salt okunur erişim sağlar.
 
 - EOP ve Office 365 için Microsoft Defender kimlik avı önleme ilkelerinde kimlik sahtekarlığı zekasını etkinleştirir ve devre dışı bırakırsınız. Kimlik sahtekarlık zekası varsayılan olarak etkindir. Daha fazla bilgi için bkz. [EOP'de kimlik avı önleme ilkelerini yapılandırma](configure-anti-phishing-policies-eop.md) veya [Office 365 için Microsoft Defender'de kimlik avı önleme ilkelerini yapılandırma](configure-mdo-anti-phishing-policies.md).
@@ -91,7 +93,7 @@ Bu makalenin geri kalanında, Microsoft 365 Defender portalında ve PowerShell'd
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında sahte zeka içgörülerini açma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **Kurallar** bölümündeki **E-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kiracı İzin Ver/Engelle Listeleri'ne** gidin. **Kiracı İzin Ver/Engelle Listesi** sayfasındaki Kimlik **Sahtekarlık** sekmesine doğrudan gitmek için kullanın<https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **Kurallar** bölümündeki **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kiracı İzin Ver/Listeleri Engelle'ye** gidin. **Kiracı İzin Ver/Engelle Listesi** sayfasındaki Kimlik **Sahtekarlık** sekmesine doğrudan gitmek için kullanın<https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
 
 2. **Kiracı İzin Ver/Engelle Listeleri** sayfasında kimlik sahtekarlığına ilişkin bilgi sahtekarlık içgörüleri şöyle görünür:
 
@@ -122,7 +124,7 @@ Kimlik sahtekarı zekası algılamalarıyla ilgili bilgileri görüntülemek iç
   - **Dış**: Sahte gönderen bir dış etki alanında.
 - **Eylem**: Bu değer **İzin Verildi** veya **Engellendi**:
   - **İzin verildi**: Etki alanı başarısız olan açık e-posta kimlik doğrulaması [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md) ve [DMARC'yi](use-dmarc-to-validate-email.md) denetler. Ancak, etki alanı örtük e-posta kimlik doğrulaması denetimlerimizi ([bileşik kimlik doğrulaması](email-validation-and-authentication.md#composite-authentication)) geçti. Sonuç olarak, iletide kimlik sahtekarlığı önleme eylemi yapılmadı.
-  - **Engellendi**: Kimlik sahtekarlığına neden olan etki alanı _ile_ gönderme altyapısının birleşiminden gelen iletiler, kimlik sahtekarı zekası tarafından hatalı olarak işaretlenir. Kimlik sahtekarlığı yapılan iletilerde gerçekleştirilen eylem, varsayılan kimlik avı önleme ilkesi veya özel kimlik avı önleme ilkeleri tarafından denetlenmektedir (varsayılan değer, **İletiyi Gereksiz E-posta klasörüne taşı'dır**). Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender'de kimlik avı önleme ilkelerini yapılandırma](configure-mdo-anti-phishing-policies.md).
+  - **Engellendi**: Kimlik sahtekarlığına neden olan etki alanı _ile_ gönderme altyapısının birleşiminden gelen iletiler, kimlik sahtekarı zekası tarafından hatalı olarak işaretlenir. Kimlik sahtekarlığı yapılan iletilerde gerçekleştirilen eylem varsayılan kimlik avı önleme ilkesi veya özel kimlik avı önleme ilkeleri tarafından denetlenmektedir (varsayılan değer **İletiyi Gereksiz Email klasörüne taşı'dır**). Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender'de kimlik avı önleme ilkelerini yapılandırma](configure-mdo-anti-phishing-policies.md).
 
 Sonuçları sıralamak için seçili sütun başlıklarına tıklayabilirsiniz.
 
@@ -174,7 +176,7 @@ Kimlik sahtekarlığı ve kimlik avı koruması konusunda dikkatli olun. Etki al
 
 - **Kimlik Sahtekarı Posta Raporu'na bakın**. Sahte gönderenleri görüntülemek ve yönetmeye yardımcı olmak için bu raporu sık sık kullanabilirsiniz. Bilgi için bkz. [Kimlik Sahtekarlık Algılamaları raporu](view-email-security-reports.md#spoof-detections-report).
 
-- Sender Policy Framework (SPF) yapılandırmanızı gözden geçirin. SPF'ye hızlı bir giriş yapmak ve hızla yapılandırılmasını sağlamak için, kimlik [sahtekarlıklarını önlemeye yardımcı olmak için bkz. Microsoft 365'de SPF'yi ayarlama](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Office 365 SPF'yi nasıl kullandığı hakkında daha ayrıntılı bilgi edinmek veya karma dağıtımlar gibi sorun giderme veya standart olmayan dağıtımlar için Office 365 kimlik [sahtekarlığına engel olmak için Sender Policy Framework'ün (SPF) nasıl kullanıldığı](how-office-365-uses-spf-to-prevent-spoofing.md) konusuyla başlayın.
+- Sender Policy Framework (SPF) yapılandırmanızı gözden geçirin. SPF'ye hızlı bir giriş yapmak ve hızla yapılandırılmasını sağlamak için, kimlik [sahtekarlıklarını önlemeye yardımcı olmak için bkz. Microsoft 365'te SPF'yi ayarlama](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Office 365 SPF'yi nasıl kullandığı hakkında daha ayrıntılı bilgi edinmek veya karma dağıtımlar gibi sorun giderme veya standart olmayan dağıtımlar için Office 365 kimlik [sahtekarlığına engel olmak için Sender Policy Framework'ün (SPF) nasıl kullanıldığı](how-office-365-uses-spf-to-prevent-spoofing.md) konusuyla başlayın.
 
 - DomainKeys Identified Mail (DKIM) yapılandırmanızı gözden geçirin. Saldırganların etki alanınızdan geliyormuş gibi görünen iletiler göndermesini önlemeye yardımcı olmak için SPF ve DMARC'ye ek olarak DKIM kullanmalısınız. DKIM, ileti üst bilgisindeki e-posta iletilerine dijital imza eklemenizi sağlar. Bilgi için bkz. [Office 365'da özel etki alanınızdan gönderilen giden e-postayı doğrulamak için DKIM kullanma](use-dkim-to-validate-outbound-email.md).
 

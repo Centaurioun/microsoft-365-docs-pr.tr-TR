@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Azure Information Protection (AIP) birleşik etiketleme istemcisini kullandığınızda, AIP eklentisi yerine Office uygulamaları için yerleşik etiketleme kullanmanın avantajlarını anlayın.
-ms.openlocfilehash: 69bef8c18398a371f53fc88e17d261790b3ab16f
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 79d4ed4f81c3768ec85c17699257a18678ef82d1
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66696172"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756687"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office uygulamaları için AIP eklentisi yerine neden yerleşik etiketlemeyi seçmelisiniz?
 
@@ -176,6 +176,7 @@ AIP eklentisinden gelen aşağıdaki yapılandırmalar henüz yerleşik etiketle
 Yerleşik etiketlemeye yönelik yeni özellikler her zaman eklense de, AIP Office Eklentisi, yerleşik etiketleme için gelecek sürümlerde kullanıma sunulması planlanmayan aşağıdaki özellikleri destekler:
 
 - Etiketlerin .doc dosyaları gibi Microsoft Office 97-2003 biçimlerine uygulanması
+- Windows olay günlüğüne yerel kullanım günlüğü
 - Kalıcı olarak bağlantısı kesilmiş bilgisayarlar
 - Abonelik tabanlı değil, Office'in tek başına sürümleri ("Office Kalıcı" olarak da adlandırılır)
 

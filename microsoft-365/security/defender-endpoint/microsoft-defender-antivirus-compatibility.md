@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d3b6cee3212ea7d98782a9e073343321c31c8990
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 860c1cd36568705b2646cf14b6fea071af4a19a5
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750330"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756615"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender Virüsten Koruma'nın diğer güvenlik ürünleriyle uyumluluğu
 
@@ -107,6 +107,8 @@ Aşağıdaki tabloda Çeşitli senaryolarda Microsoft Defender Virüsten Koruma'
 - Türü: `REG_DWORD`
 - Değer: `1`
 
+[Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) komutunu kullanarak PowerShell'de koruma durumunuzu görüntüleyebilirsiniz. değerini `AMRunningMode`denetleyin. Uç noktada Microsoft Defender Virüsten Koruma etkinse **Normal**, **Pasif** veya **EDR Blok Modu'nu** görmeniz gerekir. 
+
  > [!NOTE]
  > Pasif modun Windows Server 2016 ve Windows Server 2012 R2 çalıştıran uç noktalarda çalışması için, bu uç noktaların [Windows sunucularını ekleme](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) bölümünde açıklanan modern, birleşik çözümle eklenmesi gerekir. 
 
@@ -176,9 +178,14 @@ Uç Nokta için Defender, Microsoft Defender Virüsten Koruma'nın pasif modda �
 
 ## <a name="how-to-confirm-the-state-of-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'nın durumunu onaylama
 
-Microsoft Defender Virüsten Koruma'nın durumunu onaylamak için çeşitli yöntemlerden birini kullanabilirsiniz:
+Microsoft Defender Virüsten Koruma'nın durumunu onaylamak için çeşitli yöntemlerden birini kullanabilirsiniz. Şunları yapabilirsiniz:
 
-### <a name="use-the-windows-security-app"></a>Windows Güvenliği uygulamasını kullanma
+- [Virüsten koruma uygulamanızı tanımlamak için Windows Güvenliği uygulamasını kullanın](#use-the-windows-security-app-to-identify-your-antivirus-app).
+- [Microsoft Defender Virüsten Koruma'nın çalıştığını onaylamak için Görev Yöneticisi'ni kullanın](#use-task-manager-to-confirm-that-microsoft-defender-antivirus-is-running).
+- [Microsoft Defender Virüsten Koruma'nın çalıştığını onaylamak için Windows PowerShell kullanın](#use-windows-powershell-to-confirm-that-microsoft-defender-antivirus-is-running).
+- [Virüsten korumanın çalıştığını onaylamak için Windows PowerShell kullanın](#use-windows-powershell-to-confirm-that-antivirus-protection-is-running).
+
+### <a name="use-the-windows-security-app-to-identify-your-antivirus-app"></a>Virüsten koruma uygulamanızı tanımlamak için Windows Güvenliği uygulamasını kullanma
 
 1. Windows cihazında Windows Güvenliği uygulamasını açın.
 
@@ -188,7 +195,7 @@ Microsoft Defender Virüsten Koruma'nın durumunu onaylamak için çeşitli yön
 
 4. **Güvenlik sağlayıcıları** sayfasındaki **Virüsten Koruma'nın** altında **Microsoft Defender Virüsten Koruma'nın açık olduğunu** görmeniz gerekir.
 
-### <a name="use-task-manager"></a>Görev Yöneticisi'ni kullanma
+### <a name="use-task-manager-to-confirm-that-microsoft-defender-antivirus-is-running"></a>Microsoft Defender Virüsten Koruma'nın çalıştığını onaylamak için Görev Yöneticisi'ni kullanma
 
 1. Windows cihazında Görev Yöneticisi uygulamasını açın.
 

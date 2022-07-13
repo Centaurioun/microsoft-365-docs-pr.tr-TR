@@ -2,7 +2,7 @@
 title: Microsoft Tehdit Uzmanları
 ms.reviewer: ''
 description: Microsoft Tehdit Uzmanları, Uç Nokta için Microsoft Defender için ek bir uzmanlık katmanı sağlar.
-keywords: yönetilen tehdit avcılığı hizmeti, yönetilen tehdit avcılığı, yönetilen algılama ve yanıt (MDR) hizmeti, MTE, Microsoft Tehdit Uzmanları, MTE-TAN, hedefli saldırı bildirimi, Hedefli Saldırı Bildirimi
+keywords: yönetilen tehdit avcılığı hizmeti, yönetilen tehdit avcılığı, yönetilen algılama ve yanıt (MDR) hizmeti, MTE, Microsoft Tehdit Uzmanları, uç nokta saldırı bildirimi, Uç Nokta Saldırısı Bildirimi
 search.product: Windows 10
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 38e0145d1df971d651aab0be02c08e46ea70fe70
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b301a0bd62e0826a9ae089f51f591f575a918e0f
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490332"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756781"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft Tehdit Uzmanları
 
@@ -37,7 +37,7 @@ ms.locfileid: "66490332"
 
 Microsoft Tehdit Uzmanları, güvenlik operasyon merkezlerinize (SOC) benzersiz ortamlarınızdaki kritik tehditlerin kaçırılmamasını sağlamaya yardımcı olmak için uzman düzeyinde izleme ve analiz sağlayan bir yönetilen tehdit avcılığı hizmetidir.
 
-Bu yönetilen tehdit avcılığı hizmeti, şu iki özellik aracılığıyla uzman odaklı içgörüler ve veriler sağlar: hedefli saldırı bildirimi ve isteğe bağlı uzmanlara erişim.
+Bu yönetilen tehdit avcılığı hizmeti, şu iki özellik aracılığıyla uzman odaklı içgörüler ve veriler sağlar: uç nokta saldırısı bildirimi ve isteğe bağlı uzmanlara erişim.
 
 Microsoft Tehdit Uzmanları güvenlik operasyon merkezlerine (SOC) uzman düzeyinde izleme ve analiz sağlamayı ve kritik bir tehdidin kaçırılmamasını sağlamayı öğrenmek için bu videoyu izleyin. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qZ0B]
@@ -48,17 +48,17 @@ Microsoft Tehdit Uzmanları güvenlik operasyon merkezlerine (SOC) uzman düzeyi
 > Yönetilen tehdit avcılığı hizmetine başvurmadan önce Microsoft Teknik Hizmet sağlayıcınız ve hesap ekibinizle uygunluk gereksinimlerini tartışın.
 > Tehdit Uzmanları şu anda ABD Kamu bulutları için Microsoft 365'te kullanılamaz.
 
-Uç Nokta için Microsoft Defender müşterisiyseniz, ortamınızdaki en kritik tehditleri hızla yanıtlamanıza yardımcı olan özel içgörüler ve analizler elde etmek için **Microsoft Tehdit Uzmanları - Hedefli Saldırı Bildirimleri'ne** başvurmanız gerekir.
+Uç Nokta için Microsoft Defender müşterisiyseniz, ortamınızdaki en kritik tehditleri hızla yanıtlamanıza yardımcı olan özel içgörüler ve analizler elde etmek için **Uç Nokta Saldırısı Bildirimleri'ne** başvurmanız gerekir.
 
-Microsoft Tehdit Uzmanları - Hedefli Saldırı Bildirimleri avantajlarına kaydolmak için, uygulanacak **Ayarlar** \> **Uç Noktaları** \> **Genel** \> **Gelişmiş özellikler** \> **Microsoft Tehdit Uzmanları - Hedefli Saldırı Bildirimleri'ne** gidin. Kabul edildikten sonra, Hedefli Saldırı Bildirimleri'nin avantajlarından yararlanırsınız.
+Endpoint Attack Notifications avantajlarına kaydolmak için, uygulanacak **Ayarlar** \> **Uç Noktaları** \> **Genel** \> **Gelişmiş özellikler** \> **Uç Nokta Saldırısı Bildirimleri'ne** gidin. Kabul edildikten sonra Uç Nokta Saldırısı Bildirimleri'nin avantajlarından yararlanırsınız.
 
 kuruluşunuzun karşılaştığı ilgili algılamalar ve saldırganlar hakkında tehdit uzmanlarımıza danışmak üzere **Microsoft Tehdit Uzmanları - İsteğe Bağlı Uzmanlar'a** abone olmak için hesap ekibinize veya Microsoft temsilcinize başvurun.
 
 Ayrıntılar için bkz[. Microsoft Tehdit Uzmanları özelliklerini yapılandırma](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin).
 
-## <a name="microsoft-threat-experts---targeted-attack-notification"></a>Microsoft Tehdit Uzmanları - Hedefli saldırı bildirimi
+## <a name="endpoint-attack-notification"></a>Uç nokta saldırısı bildirimi
 
-Microsoft Tehdit Uzmanları - Hedefli saldırı bildirimi, ağınıza yönelik insan saldırgan saldırıları, uygulamalı klavye saldırıları veya siber casusluk gibi gelişmiş saldırılar da dahil olmak üzere ağınıza yönelik en önemli tehditler için proaktif avcılık sağlar. Bu bildirimler yeni bir uyarı olarak gösterilir. Yönetilen tehdit avcılığı hizmeti şunları içerir:
+Uç nokta saldırı bildirimi, ağınıza yönelik insan saldırgan saldırıları, el ile klavye saldırıları veya siber casusluk gibi gelişmiş saldırılar da dahil olmak üzere ağınıza yönelik en önemli tehditler için proaktif avcılık sağlar. Bu bildirimler yeni bir uyarı olarak gösterilir. Yönetilen tehdit avcılığı hizmeti şunları içerir:
 
 - Tehdit izleme ve analiz, işletme için bekleme süresini ve riski azaltma
 - Hem bilinen hem de bilinmeyen saldırıları keşfetmek ve önceliklerini belirlemeye yönelik avcı tarafından eğitilmiş yapay zeka
@@ -67,9 +67,9 @@ Microsoft Tehdit Uzmanları - Hedefli saldırı bildirimi, ağınıza yönelik i
 
 ## <a name="microsoft-threat-experts---experts-on-demand"></a>Microsoft Tehdit Uzmanları - İsteğe Bağlı Uzmanlar
 
-Müşteriler, yanıtlarını almak için doğrudan Microsoft 365 Defender portalından güvenlik uzmanlarımızla etkileşime geçebilir. Uzmanlar, uyarı sorgularından, risk altındaki cihazlardan, şüpheli ağ bağlantısının kök nedenlerinden devam eden gelişmiş kalıcı tehdit kampanyalarıyla ilgili ek tehdit bilgilerine kadar kuruluşunuzu etkileyen karmaşık tehditleri daha iyi anlamak için gereken içgörüleri sağlar. Bu özellik ile şunları yapabilirsiniz:
+Müşteriler, yanıtlarını almak için doğrudan Microsoft 365 Defender portalından güvenlik uzmanlarımızla etkileşime geçebilir. Uzmanlar, uyarı sorgularından, risk altındaki cihazlardan, şüpheli ağ bağlantısının kök nedenlerinden devam eden gelişmiş kalıcı tehdit kampanyalarıyla ilgili daha fazla tehdit zekasına kadar kuruluşunuzu etkileyen karmaşık tehditleri daha iyi anlamak için gereken içgörüleri sağlar. Bu özellik ile şunları yapabilirsiniz:
 
-- Olayın kök nedeni veya kapsamı da dahil olmak üzere uyarılarla ilgili ek açıklama alın
+- Olayın kök nedeni veya kapsamı da dahil olmak üzere uyarılar hakkında daha fazla açıklama alın
 - Şüpheli cihaz davranışına ve gelişmiş bir saldırganla karşılaşılması durumunda sonraki adımlara açıklık kazandırma
 - Tehdit aktörleri, kampanyalar veya yeni ortaya çıkan saldırgan teknikleri ile ilgili risk ve korumayı belirleme
 
@@ -98,6 +98,6 @@ Microsoft Services Hub'a hızlı bir genel bakış için bu videoyu izleyin.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f]
 
-## <a name="related-topic"></a>İlgili konu
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Microsoft Tehdit Uzmanları özelliklerini yapılandırma](configure-microsoft-threat-experts.md)

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft 365, uyumluluk merkezine yeni çözümler ekleme, mevcut özellikleri geri bildiriminize göre güncelleştirme veya yeni ve güncelleştirilmiş belgeleri kullanıma sunarken sürekli değişen uyumluluk ortamını takip etme konusunda size yardımcı olur. Bu ay neler yaptığımıza bakın.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 828389ded4e62b7cc7f7bbb1a0da8ef3534b6a58
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fc553b60132da31dbcc6e131ddb29bcbfa99548b
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637793"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756759"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview risk ve uyumluluk çözümlerindeki yenilikler
 
@@ -40,6 +40,47 @@ microsoft 365, [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-c
 > - [Microsoft 365 Defender'daki yenilikler](../security/defender/whats-new.md)
 >
 > Ayrıca başlatılan, kullanıma sunulan, geliştirilen, iptal edilen veya daha önce yayımlanan Microsoft 365 özellikleri hakkında bilgi edinmek için Microsoft 365 [Yol Haritası'nı](https://www.microsoft.com/microsoft-365/roadmap) ziyaret edin.
+
+## <a name="june-2022"></a>Haziran 2022
+
+### <a name="compliance-manager"></a>Uyumluluk Yöneticisi
+
+- [Microsoft Purview Uyumluluk Yöneticisi uyarıları ve uyarı ilkeleri](compliance-manager-alert-policies.md) - uyarı ilkeleri oluşturma veya düzenleme izinlerine sahip üç ADD rolü eklendi.
+- [Microsoft Purview için Yapılandırma Çözümleyicisi](compliance-manager-mcca.md) - Daha önce 'Microsoft Uyumluluk Yapılandırma Çözümleyicisi' olarak adlandırılan Bu Kullanmaya Başlama aracı için yeni ad ve güncelleştirilmiş başvuru bağlantıları.
+
+### <a name="data-loss-prevention"></a>Veri Kaybı Önleme
+
+- Microsoft Purview markalı ekran görüntüleri için çok sayıda sayfa güncelleştirmesi.
+
+### <a name="data-lifecycle-management-and-records-management"></a>Veri yaşam döngüsü yönetimi ve kayıt yönetimi
+
+- Önizlemede: [Kayıt yönetimi için Microsoft Graph API](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview)
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- [Konu Hakları İstekleri - önemli güncelleştirmeler](/privacy/priva/subject-rights-requests) ve her ilerleme adımında kullanıcılara daha iyi yardımcı olmak için SRR içeriğinin yeniden yapılandırılması; aşağıdaki ayrıntılara bakın.
+  - [Priva Konu Hakkı Talepleri hakkında bilgi edinin](/privacy/priva/subject-rights-requests)- müşteri değeri dağılımının daha net bir şekilde ifade edilmesi ve SRR işleminin genel ana hattı.
+  - [İş akışını ve ayrıntı sayfalarını anlama](/privacy/priva/subject-rights-requests-workflow) - bir isteği tamamlama adımlarını ifade eder, el ile otomatik ilerlemeyi belirtir ve ayrıntılı içeriğe bağlanır; bölümünde, yeni "Geçmiş" sekmesi de dahil olmak üzere bir isteğin ayrıntılar sayfasının nasıl yorumlanıp çalışılıp çalışıla çalıştığı açıklanır.
+  - [İstek oluşturma ve arama ayarlarını tanımlama](/privacy/priva/subject-rights-requests-create) - Artık istek oluşturmanın iki yolu olduğunu açıklayan alt başlıklarla yeni çerçeveleme: kılavuzlu bir işlem kullanarak özel bir yöntem aracılığıyla ve arama parametreleri duruma en uygun içeriği almayı hedefleyen bir şablon kullanmanın yeni özelliğiyle.
+  - [Veri tahmini ve alma](/privacy/priva/subject-rights-requests-data-retrieval) - bazı isteklerin neden veri tahmini aşamasında durakladığını ve sonuç olarak aramayı nasıl ayarlayabileceğinizi açıklar; ayrıca, otomatik olarak veri alma işlemine geçmeden önce duraklatmak için bir isteğin nasıl ayarlanacağı da açıklanmaktadır.
+  - [Konu hakları isteğinin verilerini gözden geçirme](/privacy/priva/subject-rights-requests-data-review) - yeni içeri aktarma dosyası özellikleri, kullanıcıların Microsoft olmayan 365 konumlarından veya arama tarafından alınmayan dosyaları Toplanan veriler sekmesine getirmesine olanak tanır.
+  - [Raporlar oluşturma ve kapatma istekleri](/privacy/priva/subject-rights-requests-reports) - son veri paketleri oluşturulduğunda ve bunların ne tür dosyalar içerdiğini açıklar.
+  - [Microsoft Graph API ve Power Automate aracılığıyla tümleştirin ve genişletin](/privacy/priva/subject-rights-requests-automate). Bu önceki Power Automate sayfasının başlığını ve genişletilmiş sayfa içeriğini daha önce başka bir sayfada yaşayan Graph API içerik ve başvuru bağlantılarını içerecek şekilde düzeltti.
+
+### <a name="sensitive-information-types"></a>Hassas Bilgi Türleri
+
+- [Tam veri eşleşmesi tabanlı hassas bilgi türleri hakkında bilgi edinin](sit-learn-about-exact-data-match-based-sits.md) . EDM'nin desteklediği hizmetlere ilişkin bölüm eklendi.
+
+### <a name="sensitivity-labels"></a>Duyarlılık etiketleri
+
+- Önizlemede: Belgeleri PDF biçimine dönüştürmeyi, etiketi herhangi bir görsel işaretle ve şifrelemeyle devralmayı içeren [Office uygulamaları için PDF desteği](sensitivity-labels-office-apps.md#pdf-support). PDF'ye yazdır desteklenmez ve etiket ilkeleri zorunlu etiketleme için yapılandırılmışsa bu seçenek kullanıcılar için kullanılamaz duruma gelir.
+- Önizlemede: Kullanıcıların etiket ilkelerinin etiketi kaldırmak veya düşürmek için gerekçe gerektirecek şekilde yapılandırıldığında gördüğü iletişim kutusu, kullanıcıları yazılan yanıtlarının hassas veriler içermemesi gerektiği konusunda uyaracak şekilde güncelleştirilir. [Etiket ilkelerinin yapabilecekleri](sensitivity-labels.md#what-label-policies-can-do) bölümündeki ekran görüntüsü, üretim kullanımı için Office dağıtım kanallarına giden bu güncelleştirilmiş iletişim kutusunu gösterir.
+- Önizlemede: [Outlook'un S/MIME koruması uygulama desteği](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) istemci platformlarında kullanıma sunulmaya yeni başlıyor.
+- [Otomatik etiketleme ilkeleri](apply-sensitivity-label-automatically.md#creating-an-auto-labeling-policy) için, belirli bir gün içinde düzenlenmezse ilkeyi otomatik olarak açabilen yeni bir ayardır.
+
+### <a name="trainable-classifiers"></a>Eğitilebilir Sınıflandırıcılar
+
+- [Eğitilebilir sınıflandırıcılar hakkında bilgi edinin](classifier-learn-about.md) : Adult, Racy, Gory images trainable classifier eklendi.
 
 ## <a name="may-2022"></a>Mayıs 2022
 
@@ -293,32 +334,3 @@ Günümüzün merkezi olmayan, veri açısından zengin çalışma alanının zo
 - Otomatik etiketleme ilkeleri için yeni [izleme özellikleri](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) .
 - Şimdi kullanıma sunulacak: mevcut belgeler için varsayılan etiket ve Web üzerinde Office için gerekçe metni.
 - Temmuz Semi-Annual Enterprise Channel için sürüm 2202+ ile duyuruldu: Outlook için birlikte yazma ve denetim.
-
-## <a name="december-2021"></a>Aralık 2021
-
-### <a name="compliance-and-service-assurance"></a>Uyumluluk ve hizmet güvencesi
-
-- [GDPR kapsamında Azure, Dynamics 365 ve Windows ihlal bildirimi](/compliance/regulatory/gdpr-breach-notification) - müşterilerin güvenlik ve gizlilik bildirimleri almak için Bulut için Defender gibi bir ödeme hizmetini kullanmasına gerek olmadığını netleştirmek için güncelleştirildi
-
-### <a name="ediscovery"></a>Ediscovery
-
-- [Microsoft Teams'de içerik için eKeşif (Premium) iş akışı](teams-workflow-in-advanced-ediscovery.md#reference-guide) - eBulma'da (Premium) Teams içeriğini yönetmek için yeni bir indirilebilir hızlı başvuru kılavuzuyla güncelleştirildi
-
-### <a name="data-lifecycle-management"></a>Veri yaşam döngüsü yönetimi
-
-- [Uyumluluk merkezinde arşiv posta kutularını etkinleştirme - arşiv posta kutuları](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) için yeni tanılama aracı hakkında bölüm eklendi
-- [Kuruluşunuzun PST dosyalarını Microsoft 365'e aktarmak için ağ yüklemeyi kullanma](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) - PST içeri aktarma artık AzCopy v10'u destekliyor
-- [Etkin olmayan posta kutusunu geri yükleme](restore-an-inactive-mailbox.md) - önce etkin olmayan posta kutusunun LegacyExchangeDN'sini hedef posta kutusuna ekleyerek etkin olmayan posta kutusunu geri yüklemek için düzeltilmiş yordam
-
-### <a name="information-protection"></a>Bilgi koruması
-
-- [Microsoft Purview ile bilgi koruma çözümü dağıtma](information-protection-solution.md) - Microsoft Purview Bilgi Koruması dağıtmak için açıklayıcı bir yol haritası arayan müşteriler için yeni adım adım yönergeler
-
-### <a name="retention-and-records-management"></a>Bekletme ve kayıt yönetimi
-
-- [Bekletme ilkelerinin geçerli olması ne kadar sürer](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)? için yeni kılavuz
-- Yeni kiracı ayarları dağıtılıyor: Kayıt olarak işaretlenen ve kilitlenen etiketli SharePoint öğelerinin özelliklerinin düzenlenmesini engelleyen kayıt yönetimi ayarı ve kullanıcıların kayıt olarak işaretlenmiş öğelerin kilidini açmasını engelleyen diğer ayarlar
-
-### <a name="sensitivity-labels"></a>Duyarlılık etiketleri
-
-- Zorunlu etiketleme ve Power BI için varsayılan etiket artık genel kullanıma sunuldu (GA)
