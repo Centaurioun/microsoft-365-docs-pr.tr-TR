@@ -1,9 +1,9 @@
 ---
-title: Veri konumlarını Microsoft 365
+title: Microsoft 365 veri konumları
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/02/2022
+ms.date: 07/13/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,26 +18,26 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 müşteri verilerinizin dünya çapında nerede depolandığını belirleme
-ms.openlocfilehash: 07d137c6eda243a1ffa33b486d7cdbea5b37f9d9
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 6652d9076a5b2ecd11b0793104924690d14a1f98
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874084"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787638"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 müşteri verilerinizin depolandığı yer
 
-Aşağıdaki tablolarda, Microsoft'un tüm küresel bulut konumlarındaki Microsoft 365 hizmetleri için bekleyen müşteri verilerinin nerede depolandığı gösterilmektedir. Her hizmet için müşteri verilerinin nerede depolandığını öğrenmek için fatura adresi ülkenizin konumunu genişletin.
+Aşağıdaki tablolarda, Microsoft 365 hizmetlerinin tüm genel bulut konumlarında bekleyen müşteri verilerinin nerede depolandığı gösterilmektedir. Her hizmet için müşteri verilerinin nerede depolandığını öğrenmek için fatura adresi ülkenizin konumunu genişletin.
 
 İşletmeniz Avrupa Birliği'nde bulunuyorsa daha fazla bilgi için bkz. [Avrupa Birliği için veri konumları](EU-data-storage-locations.md) .
 
-Müşteriler, Microsoft 365 yönetim merkezi kiracınıza özgü veri konumu bilgilerini **Ayarlar** >  **Org ayarları** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Kuruluş profili** sekmesi</a> > **Veri konumu'nda** görüntülemelidir. [Yeni bir Coğrafi Bölgeye geçme isteğinde bulunduysanız](request-your-data-move.md), geçiş sırasında bazı veriler geçici olarak önceki Coğrafi Bölgenizde depolansa bile Microsoft 365 yönetim merkezi veri konumu bilgileri yalnızca yeni Coğrafi Bölgenizi gösterebilir.
+Müşteriler **, ayarlar** > **Kuruluş ayarları** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Kuruluş profili** sekmesi</a> >  Veri konumu'ndaki Microsoft 365 yönetim merkezi kiracınıza özgü veri **konumu** bilgilerini görüntülemelidir. [Yeni bir Coğrafi Bölgeye geçme isteğinde bulunduysanız](request-your-data-move.md), geçiş sırasında bazı veriler geçici olarak önceki Coğrafi Bölgenizde depolansa bile Microsoft 365 yönetim merkezi veri konumu bilgileri yalnızca yeni Coğrafi Bölgenizi gösterebilir.
 
 Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili işlemin ülkesine göre varsayılan olarak Coğrafi olarak ayarlanır.
 
 Bekleyen müşteri verilerinin depolama konumuna ilişkin sözleşmeye bağlı taahhütler hakkında bilgi edinmek için [Microsoft Ürün ve Hizmetleri Veri Koruma Eki'nde (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) bilgi bulabilirsiniz.
 
-Azure Active Directory veri konumları için lütfen [AAD Veri Haritası](https://go.microsoft.com/fwlink/p/?linkid=2092972) sayfasını ziyaret edin.
+Azure Active Directory veri konumları için lütfen [Azure'da veri yerleşimi](https://azure.microsoft.com/global-infrastructure/data-residency/#overview) sayfasını ziyaret edin.
 
 Müşterinin fatura adresi Avrupa dışındaysa ve Müşterinin Office 365 Eğitim bir aboneliği varsa, OST'nin "Çekirdek Çevrimiçi Hizmetler için Bekleyen Müşteri Verilerinin Konumu" bölümüne bakılmaksızın, Microsoft Müşterinin Office 365 kiracısını avrupa veya Kuzey Amerika içinde herhangi bir yerde sunabilir, Müşteri Verilerini'ne aktarabilir ve bekleyen müşteri verilerini depolar.  Müşterinin faturalama adresi Avrupa'daysa ve Müşterinin Office 365 Eğitim bir aboneliği varsa, OST'nin "Çekirdek Çevrimiçi Hizmetler için Bekleyen Müşteri Verilerinin Konumu" bölümüne bakılmaksızın, Microsoft Müşterinin Office 365 kiracısını avrupa birliği içinde herhangi bir yerde sunabilir, Müşteri Verilerini bu kiracıya aktarabilir ve bekleyen müşteri verilerini depolar.
 
@@ -61,18 +61,18 @@ Microsoft, veri merkezlerinin tam adreslerini açıklamaz. Veri merkezi tesisler
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>Müşteri verilerinizin konumunun son kullanıcılarınızın deneyimi üzerinde doğrudan bir etkisi var mı?
 <details><summary>Genişletmek için tıklayın</summary>
 
-Microsoft 365 performansı, kullanıcının veri merkezi konumlarına olan uzaklığıyla orantılı değildir. Microsoft'un küresel bulut ağına, küresel bulut altyapısına ve Microsoft 365 hizmetleri mimarisine yaptığı yatırımlar, kullanıcılara müşteri verilerinin bekleyen konumda depolandığı konumdan bağımsız olarak tekil ve tutarlı bir deneyim sağlamaya yardımcı olur. Kullanıcılarınız performans sorunlarıyla karşılaşıyorsa, bunları ayrıntılı olarak gidermeniz gerekir. Microsoft, Office [Desteği web sitesinde](./network-planning-and-performance.md) son kullanıcı performansını planlamak ve iyileştirmek için Microsoft 365 müşterilerine yönelik yönergeler yayımladı.
+Microsoft 365'in performansı, kullanıcının veri merkezi konumlarına olan uzaklığıyla orantılı değildir. Microsoft'un küresel bulut ağına, küresel bulut altyapısına ve Microsoft 365 hizmetleri mimarisine yaptığı yatırımlar, kullanıcılara bekleyen müşteri verilerinin depolandığı konumdan bağımsız olarak tekil ve tutarlı bir deneyim sağlamaya yardımcı olur. Kullanıcılarınız performans sorunlarıyla karşılaşıyorsa, bunları ayrıntılı olarak gidermeniz gerekir. Microsoft, [Office Desteği web sitesinde](./network-planning-and-performance.md) son kullanıcı performansını planlamak ve iyileştirmek için Microsoft 365 müşterilerine yönelik yönergeler yayımladı.
 
 </details>
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>Microsoft ulusal, bölgesel ve sektöre özgü düzenlemelerime uymama nasıl yardımcı olur?
 <details><summary>Genişletmek için tıklayın</summary>
 
-Kişilerin verilerinin toplanması ve kullanılmasını yöneten ulusal, bölgesel ve sektöre özgü gereksinimlere uymanıza yardımcı olmak için Microsoft 365 tüm küresel bulut üretkenlik sağlayıcılarının en kapsamlı uyumluluk tekliflerini sunar. Microsoft Güven Merkezi'ndeki [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) bölümünde [uyumluluk tekliflerimizi](/compliance/regulatory/offering-home) ve diğer ayrıntıları gözden geçirin. Ayrıca, bazı Microsoft 365 planları verilerinizi yönetmenize, yasal ve yasal gereksinimlere uymanıza ve verileriniz üzerinde gerçekleştirilen eylemleri izlemenize yardımcı olacak daha fazla uyumluluk çözümü sunar.
+Microsoft 365, kişilerin verilerinin toplanması ve kullanılmasını yöneten ulusal, bölgesel ve sektöre özgü gereksinimlere uymanıza yardımcı olmak için tüm küresel bulut üretkenlik sağlayıcılarının en kapsamlı uyumluluk tekliflerini sunar. Microsoft Güven Merkezi'ndeki [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) bölümünde [uyumluluk tekliflerimizi](/compliance/regulatory/offering-home) ve diğer ayrıntıları gözden geçirin. Ayrıca, bazı Microsoft 365 planları verilerinizi yönetmenize, yasal ve mevzuat gereksinimlerine uymanıza ve verileriniz üzerinde gerçekleştirilen eylemleri izlemenize yardımcı olacak daha fazla uyumluluk çözümü sunar.
 
 </details>
 
-### <a name="who-can-access-your-data-and-according-to-what-rules"></a>verilerinize ve hangi kurallara göre Who erişebilirsiniz?
+### <a name="who-can-access-your-data-and-according-to-what-rules"></a>Verilerinize kimler erişebilir ve hangi kurallara göre erişebilir?
 <details><summary>Genişletmek için tıklayın</summary>
 
  Microsoft, müşteri verilerinizin yetkisiz kişiler tarafından uygunsuz erişime veya kullanıma karşı korunmasına yardımcı olmak için güçlü önlemler uygular. Bu, Microsoft personeli ve alt yüklenicilerinin erişimini kısıtlamayı ve kamu tarafından müşteri verilerine yönelik istekleri yanıtlamaya yönelik gereksinimleri dikkatle tanımlamayı içerir. Ancak, istediğiniz zaman ve herhangi bir nedenle kendi müşteri verilerinize erişebilirsiniz. [Diğer ayrıntılar Microsoft Güven Merkezi'nden](https://go.microsoft.com/fwlink/p/?linkid=864392) edinilebilir.
@@ -82,35 +82,35 @@ Kişilerin verilerinin toplanması ve kullanılmasını yöneten ulusal, bölges
 ### <a name="does-microsoft-access-your-data"></a>Microsoft verilerinize erişıyor mu?
 <details><summary>Genişletmek için tıklayın</summary>
 
-Microsoft, Microsoft 365 işlemlerinin çoğunu otomatikleştirirken kendi müşteri verilerine erişimini kasıtlı olarak sınırlar. Bu, Microsoft 365 büyük ölçekte yönetmemize ve müşteri verilerine yönelik iç tehdit risklerini ele almamıza yardımcı olur. Varsayılan olarak, Microsoft mühendislerinin yönetim ayrıcalıkları yoktur ve Microsoft 365'daki müşteri verilerine erişimi yoktur. Bir Microsoft mühendisinin müşteri verilerine sınırlı bir süre için sınırlı ve günlüğe kaydedilmiş erişimi olabilir, ancak yalnızca normal hizmet işlemleri için gerekli olduğunda ve yalnızca Microsoft'taki üst düzey bir yönetim üyesi tarafından onaylandığında (ve müşteri tarafından Müşteri Kasası özelliği için lisanslanan müşteriler için).
+Microsoft, microsoft 365 işlemlerinin çoğunu otomatikleştirirken kendi müşteri verilerine erişimini kasıtlı olarak sınırlar. Bu, Microsoft 365'i büyük ölçekte yönetmemize ve müşteri verilerine yönelik iç tehdit risklerini ele almamıza yardımcı olur. Varsayılan olarak Microsoft mühendislerinin, Microsoft 365'teki müşteri verilerine yönelik yönetim ayrıcalıkları ve ayakta erişimleri yoktur. Bir Microsoft mühendisinin müşteri verilerine sınırlı bir süre için sınırlı ve günlüğe kaydedilmiş erişimi olabilir, ancak yalnızca normal hizmet işlemleri için gerekli olduğunda ve yalnızca Microsoft'taki üst düzey bir yönetim üyesi tarafından onaylandığında (ve müşteri tarafından Müşteri Kasası özelliği için lisanslanan müşteriler için).
 
 </details>
 
 ### <a name="how-does-microsoft-secure-your-data"></a>Microsoft verilerinizin güvenliğini nasıl sağlar?
 <details><summary>Genişletmek için tıklayın</summary>
 
-Microsoft, bilgilerinizin güvende kalmasına yardımcı olmak için Microsoft 365 yerleşik olarak sağlam ilkelere, denetimlere ve sistemlere sahiptir. Daha fazla bilgi edinmek için Microsoft Güven Merkezi'nin [Microsoft 365 güvenlik bölümünü](https://go.microsoft.com/fwlink/p/?linkid=864393) gözden geçirin.
+Microsoft, bilgilerinizin güvende kalmasına yardımcı olmak için Microsoft 365'e yerleşik olarak sağlam ilkeler, denetimler ve sistemler sunar. Daha fazla bilgi edinmek için Microsoft Güven Merkezi'nin Microsoft [365 güvenlik bölümünü](https://go.microsoft.com/fwlink/p/?linkid=864393) gözden geçirin.
 
 </details>
 
-### <a name="does-microsoft-365-encrypt-your-data"></a>verilerinizi Microsoft 365 şifreler mi?
+### <a name="does-microsoft-365-encrypt-your-data"></a>Microsoft 365 verilerinizi şifreler mi?
 <details><summary>Genişletmek için tıklayın</summary>
 
-Microsoft 365 bekleyen ve aktarılan müşteri verilerini şifreleyen hizmet tarafı teknolojileri kullanır. bekleyen müşteri verileri için Microsoft 365 birim düzeyinde ve dosya düzeyinde şifreleme kullanır. Aktarımdaki müşteri verileri için Microsoft 365, veri merkezleri ile istemciler ve sunucular arasındaki iletişim için Aktarım Katmanı Güvenliği (TLS) ve İnternet Protokolü Güvenliği (IPsec) gibi birden çok şifreleme teknolojisi kullanır. Microsoft 365 müşteri tarafından yönetilen şifreleme özelliklerini de içerir.
+Microsoft 365, bekleyen ve aktarılan müşteri verilerini şifreleyen hizmet tarafı teknolojileri kullanır. Bekleyen müşteri verileri için Microsoft 365, birim düzeyinde ve dosya düzeyinde şifreleme kullanır. Aktarımdaki müşteri verileri için Microsoft 365, veri merkezleri ile istemciler ve sunucular arasındaki iletişimler için Aktarım Katmanı Güvenliği (TLS) ve İnternet Protokolü Güvenliği (IPsec) gibi birden çok şifreleme teknolojisi kullanır. Microsoft 365, müşteri tarafından yönetilen şifreleme özelliklerini de içerir.
 
 </details>
 
 ### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>Microsoft Azure için veri yerleşimi bilgilerini nerede bulabilirim?
 <details><summary>Genişletmek için tıklayın</summary>
 
-Microsoft Azure veri yerleşimi bilgilerini bulmak için lütfen [Bölgeye göre kullanılabilir ürünler](https://go.microsoft.com/fwlink/p/?linkid=2093451) sayfasını gözden geçirin.
+Microsoft Azure'a ilişkin veri yerleşimi bilgilerini bulmak için [bölgeye göre kullanılabilir ürünler](https://go.microsoft.com/fwlink/p/?linkid=2093451) sayfasını gözden geçirin.
 
 </details>
 
-### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Microsoft 365'daki Multi-Geo Özellikleri nelerdir?
+### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Microsoft 365'teki Multi-Geo Özellikleri nelerdir?
 <details><summary>Genişletmek için tıklayın</summary>
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033), müşterilere bekleyen temel müşteri verilerini Microsoft 365 buluttaki kullanılabilir konumlarımıza ayırma olanağı sağlar.
+[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) , müşterilere bekleyen temel müşteri verilerini Microsoft 365 bulutundaki kullanılabilir konumlarımıza ayırma olanağı sağlar.
 
 </details>  
 
@@ -135,8 +135,8 @@ Microsoft, aşağıdaki durumlar dışında Intune müşteri verilerini belirtil
 
 - Microsoft'un müşteri desteği sağlaması, hizmetle ilgili sorunları gidermesi veya yasal gereksinimlere uyması gerekir.
 - Müşteri, aşağıdakilerin kullanımı da dahil olmak üzere müşteri verilerinin böyle bir şekilde depolanmasını etkinleştirmek için bir hesap yapılandırıyor:
-  - Genel önbelleğe alma hizmeti sağlayan ve müşteri verilerini dünyanın dört bir yanındaki uç konumlarda depolayan Content Delivery Network (CDN) gibi genel olarak çalışacak şekilde tasarlanmış özellikler.
-  - dizin verilerini genel olarak depolayan Azure Active Directory (Azure AD). Bu, Birleşik Devletler (Azure AD verilerinin yalnızca Birleşik Devletler depolandığı) veya Avrupa'daki (Azure AD verilerin Avrupa'da veya Birleşik Devletler depolandığı) Azure AD dağıtımları için geçerli değildir.
+  - Küresel önbelleğe alma hizmeti sağlayan ve müşteri verilerini dünyanın dört bir yanındaki uç konumlarda depolayan Content Delivery Network (CDN) gibi genel olarak çalışacak şekilde tasarlanmış özellikler.
+  - Dizin verilerini genel olarak depolayan Azure Active Directory (Azure AD). Bu, Birleşik Devletler (Azure AD verilerinin yalnızca Birleşik Devletler depolandığı) veya Avrupa'daki (Azure AD verilerin Avrupa'da veya Birleşik Devletler depolandığı) Azure AD dağıtımları için geçerli değildir.
   - Müşteri verilerini genellikle Birleşik Devletler depolayan ancak genel olarak depolayan önizleme, beta veya diğer yayın öncesi hizmetler.
 
 Ne olursa olsun, Microsoft müşterilerin veya son kullanıcılarının müşteri verilerine erişebileceği Coğrafi verileri denetlemez veya sınırlamaz. Benzer şekilde, diğer hizmetlerdeki müşteri verileri daha sonra Intune tümleştirildiğinde, kaynak müşteri verileri diğer hizmetin kendi Coğrafi taahhütlerine (varsa) bağlı olarak depolanmaya devam eder; yalnızca Intune tümleştirilmiş müşteri verilerinin kopyası Intune için belirtilen Coğrafi Bölgede depolanır.
@@ -148,7 +148,7 @@ Ne olursa olsun, Microsoft müşterilerin veya son kullanıcılarının müşter
 
 - Viva Bağlantılar
   - Pano, Kaynaklar ve masaüstü uygulamasının verileri SharePoint Online'da depolanır.
-  - Akış, SharePoint Online (Haberler), Stream (SharePoint Online'da bekleyenler) ve Yammer (Yammer'da bekleyenler bölümünde depolanır) içerik içerir.
+  - Akış, SharePoint Online (Haberler), Stream (SharePoint Online'da bekleyen konumda depolanır) ve Yammer 'dan (bekleyenler Yammer'da depolanır) içerik içerir.
 - Viva Analizler
   - Kişisel uygulamasının veri yerleşimi, kullanıcının posta kutusu konumunu temel alır.
   - Yönetici/Öncü ve Gelişmiş için veri bölgesi, tek tek kullanıcılara değil kiracının birincil bölgesine göre belirlenir.
@@ -192,7 +192,7 @@ Aşağıdaki küresel coğrafyalar bekleyen verileri depolayabilir. Müşteri ve
 | Birleşik Krallık | Durham, Londra, Cardiff |
 | Amerika Birleşik Devletleri |  Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San Jose |
 
-Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatura adresinin bulunduğu ülkeye göre varsayılan olarak Coğrafi olarak ayarlanır. Mevcut Office 365 hizmetlerinde müşteri verilerinin nerede depolandığını onaylamak için lütfen Ayarlar |'daki Office 365 Admin Merkezinizde kiracıya özgü veri konumu bilgilerini görüntüleyin Kuruluş ayarları | Kuruluş profili | Veri konumu kartı. Alternatif olarak, bugün bir Microsoft 365 Hizmeti kullanmaya başlamanız durumunda müşteri verilerinin nerede depolandığını öğrenmek için aşağıdaki listeden işletmenizin bulunduğu ülkeyi genişletin.
+Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili faturalama adresinin bulunduğu ülkeye göre varsayılan olarak Coğrafi olarak ayarlanır. Mevcut Office 365 hizmetlerinde müşteri verilerinin nerede depolandığını onaylamak için lütfen ayarlar | Office 365 Admin Merkezinizde kiracıya özgü veri konumu bilgilerini görüntüleyin Kuruluş ayarları | Kuruluş profili | Veri konumu kartı. Alternatif olarak, microsoft 365 hizmetini kullanmaya hemen başlayacaksanız müşteri verilerinin nerede depolanacağını öğrenmek için aşağıdaki listeden işletmenizin dayandığı ülkeyi genişletin.
 
 ## <a name="afghanistan"></a>Afganistan
 <details><summary>Genişletmek için tıklayın</summary><p>
@@ -203,7 +203,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -231,7 +231,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -259,7 +259,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -287,7 +287,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -315,7 +315,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -343,7 +343,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -371,7 +371,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -399,7 +399,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -427,7 +427,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -455,7 +455,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -483,7 +483,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 3 – Amerika |
 | SharePoint Online | Küresel Coğrafya 3 – Amerika |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Küresel Coğrafya 3 – Amerika |
+| Office Online &amp; Mobile | Küresel Coğrafya 3 – Amerika |
 | EOP | Küresel Coğrafya 3 – Amerika |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -511,7 +511,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -539,7 +539,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -567,7 +567,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avustralya |
 | SharePoint Online | Avustralya |
 | Microsoft Teams | Avustralya |
-| Office Online &amp; Mobil | Avustralya |
+| Office Online &amp; Mobile | Avustralya |
 | EOP | Avustralya |
 | Intune | Avustralya |
 | Planner | Avustralya |
@@ -595,7 +595,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -623,7 +623,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -651,7 +651,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -679,7 +679,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -707,7 +707,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -735,7 +735,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -763,7 +763,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -791,7 +791,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -819,7 +819,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -847,7 +847,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -875,7 +875,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -903,7 +903,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -931,7 +931,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 3 – Amerika |
 | SharePoint Online | Küresel Coğrafya 3 – Amerika |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Küresel Coğrafya 3 – Amerika |
+| Office Online &amp; Mobile | Küresel Coğrafya 3 – Amerika |
 | EOP | Küresel Coğrafya 3 – Amerika |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -959,7 +959,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 3 – Amerika |
 | SharePoint Online | Küresel Coğrafya 3 – Amerika |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Küresel Coğrafya 3 – Amerika |
+| Office Online &amp; Mobile | Küresel Coğrafya 3 – Amerika |
 | EOP | Küresel Coğrafya 3 – Amerika |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -987,7 +987,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -1015,7 +1015,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -1043,7 +1043,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -1071,7 +1071,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Brezilya |
 | SharePoint Online | Brezilya |
 | Microsoft Teams | Brezilya |
-| Office Online &amp; Mobil | Brezilya |
+| Office Online &amp; Mobile | Brezilya |
 | EOP | Brezilya |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -1099,7 +1099,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -1127,7 +1127,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -1155,7 +1155,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -1183,7 +1183,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -1211,7 +1211,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -1239,7 +1239,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -1267,7 +1267,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -1295,7 +1295,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -1323,7 +1323,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Kanada |
 | SharePoint Online | Kanada |
 | Microsoft Teams | Kanada |
-| Office Online &amp; Mobil | Kanada |
+| Office Online &amp; Mobile | Kanada |
 | EOP | Kanada |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Kanada |
@@ -1351,7 +1351,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -1379,7 +1379,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -1407,7 +1407,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -1435,7 +1435,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -1463,7 +1463,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 3 – Amerika |
 | SharePoint Online | Küresel Coğrafya 3 – Amerika |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Küresel Coğrafya 3 – Amerika |
+| Office Online &amp; Mobile | Küresel Coğrafya 3 – Amerika |
 | EOP | Küresel Coğrafya 3 – Amerika |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -1491,7 +1491,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -1519,7 +1519,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -1547,7 +1547,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -1575,7 +1575,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -1603,7 +1603,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -1631,7 +1631,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -1659,7 +1659,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -1687,7 +1687,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -1715,7 +1715,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -1743,7 +1743,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -1771,7 +1771,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -1799,7 +1799,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 3 – Amerika |
 | SharePoint Online | Küresel Coğrafya 3 – Amerika |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Küresel Coğrafya 3 – Amerika |
+| Office Online &amp; Mobile | Küresel Coğrafya 3 – Amerika |
 | EOP | Küresel Coğrafya 3 – Amerika |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -1827,7 +1827,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -1855,7 +1855,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -1883,7 +1883,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -1911,7 +1911,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -1939,7 +1939,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -1967,7 +1967,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -1995,7 +1995,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 3 – Amerika |
 | SharePoint Online | Küresel Coğrafya 3 – Amerika |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Küresel Coğrafya 3 – Amerika |
+| Office Online &amp; Mobile | Küresel Coğrafya 3 – Amerika |
 | EOP | Küresel Coğrafya 3 – Amerika |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -2023,7 +2023,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -2051,7 +2051,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -2079,7 +2079,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -2107,7 +2107,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -2135,7 +2135,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -2163,7 +2163,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -2191,7 +2191,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 3 – Amerika |
 | SharePoint Online | Küresel Coğrafya 3 – Amerika |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Küresel Coğrafya 3 – Amerika |
+| Office Online &amp; Mobile | Küresel Coğrafya 3 – Amerika |
 | EOP | Küresel Coğrafya 3 – Amerika |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -2219,7 +2219,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -2247,7 +2247,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -2275,7 +2275,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avustralya |
 | SharePoint Online | Avustralya |
 | Microsoft Teams | Avustralya |
-| Office Online &amp; Mobil | Avustralya |
+| Office Online &amp; Mobile | Avustralya |
 | EOP | Avustralya |
 | Intune | Avustralya |
 | Planner | Avustralya |
@@ -2303,7 +2303,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -2331,7 +2331,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Fransa |
 | SharePoint Online | Fransa |
 | Microsoft Teams | Fransa |
-| Office Online &amp; Mobil | Fransa |
+| Office Online &amp; Mobile | Fransa |
 | EOP | Fransa |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -2359,7 +2359,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 3 – Amerika |
 | SharePoint Online | Küresel Coğrafya 3 – Amerika |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Küresel Coğrafya 3 – Amerika |
+| Office Online &amp; Mobile | Küresel Coğrafya 3 – Amerika |
 | EOP | Küresel Coğrafya 3 – Amerika |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -2387,7 +2387,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -2415,7 +2415,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -2443,7 +2443,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -2471,7 +2471,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -2499,7 +2499,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -2527,7 +2527,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Almanya |
 | SharePoint Online | Almanya |
 | Microsoft Teams | Almanya |
-| Office Online &amp; Mobil | Almanya |
+| Office Online &amp; Mobile | Almanya |
 | EOP | Almanya |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -2555,7 +2555,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -2583,7 +2583,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -2611,7 +2611,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -2639,7 +2639,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -2667,7 +2667,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -2695,7 +2695,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -2723,7 +2723,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -2751,7 +2751,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -2779,7 +2779,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -2807,7 +2807,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -2835,7 +2835,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -2863,7 +2863,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 3 – Amerika |
 | SharePoint Online | Küresel Coğrafya 3 – Amerika |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Küresel Coğrafya 3 – Amerika |
+| Office Online &amp; Mobile | Küresel Coğrafya 3 – Amerika |
 | EOP | Küresel Coğrafya 3 – Amerika |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -2891,7 +2891,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -2919,7 +2919,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -2947,7 +2947,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -2975,7 +2975,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3003,7 +3003,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -3031,7 +3031,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3059,7 +3059,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -3087,7 +3087,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3115,7 +3115,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Hindistan |
 | SharePoint Online | Hindistan |
 | Microsoft Teams | Hindistan |
-| Office Online &amp; Mobil | Hindistan |
+| Office Online &amp; Mobile | Hindistan |
 | EOP | Hindistan |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3143,7 +3143,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3171,7 +3171,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3199,7 +3199,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -3227,7 +3227,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3255,7 +3255,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3283,7 +3283,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -3311,7 +3311,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -3339,7 +3339,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Japonya |
 | SharePoint Online | Japonya |
 | Microsoft Teams | Japonya |
-| Office Online &amp; Mobil | Japonya |
+| Office Online &amp; Mobile | Japonya |
 | EOP | Japonya |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Japonya |
@@ -3367,7 +3367,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3395,7 +3395,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3423,7 +3423,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3451,7 +3451,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3479,7 +3479,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3507,7 +3507,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Güney Kore |
 | SharePoint Online | Güney Kore |
 | Microsoft Teams | Güney Kore |
-| Office Online &amp; Mobil | Güney Kore |
+| Office Online &amp; Mobile | Güney Kore |
 | EOP | Güney Kore |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3535,7 +3535,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3563,7 +3563,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3591,7 +3591,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3619,7 +3619,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3647,7 +3647,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -3675,7 +3675,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3703,7 +3703,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3731,7 +3731,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3759,7 +3759,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3787,7 +3787,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | İsviçre |
 | SharePoint Online | İsviçre |
 | Microsoft Teams | İsviçre |
-| Office Online &amp; Mobil | İsviçre |
+| Office Online &amp; Mobile | İsviçre |
 | EOP | İsviçre |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -3815,7 +3815,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -3843,7 +3843,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -3871,7 +3871,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3899,7 +3899,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -3927,7 +3927,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3955,7 +3955,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -3983,7 +3983,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4011,7 +4011,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -4039,7 +4039,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4067,7 +4067,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -4095,7 +4095,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4123,7 +4123,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4151,7 +4151,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4179,7 +4179,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -4207,7 +4207,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4235,7 +4235,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4263,7 +4263,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4291,7 +4291,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4319,7 +4319,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -4347,7 +4347,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4375,7 +4375,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4403,7 +4403,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4431,7 +4431,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4459,7 +4459,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4487,7 +4487,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4515,7 +4515,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -4543,7 +4543,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -4571,7 +4571,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4599,7 +4599,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avustralya |
 | SharePoint Online | Avustralya |
 | Microsoft Teams | Avustralya |
-| Office Online &amp; Mobil | Avustralya |
+| Office Online &amp; Mobile | Avustralya |
 | EOP | Avustralya |
 | Intune | Avustralya |
 | Planner | Avustralya |
@@ -4627,7 +4627,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -4655,7 +4655,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4683,7 +4683,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4711,7 +4711,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4739,7 +4739,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4767,7 +4767,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4795,7 +4795,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Norveç |
 | SharePoint Online | Norveç |
 | Microsoft Teams | Norveç |
-| Office Online &amp; Mobil | Norveç |
+| Office Online &amp; Mobile | Norveç |
 | EOP | Norveç |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4824,7 +4824,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4852,7 +4852,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -4880,7 +4880,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4908,7 +4908,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4936,7 +4936,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -4964,7 +4964,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -4992,7 +4992,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 3 – Amerika |
 | SharePoint Online | Küresel Coğrafya 3 – Amerika |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Küresel Coğrafya 3 – Amerika |
+| Office Online &amp; Mobile | Küresel Coğrafya 3 – Amerika |
 | EOP | Küresel Coğrafya 3 – Amerika |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -5020,7 +5020,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 3 – Amerika |
 | SharePoint Online | Küresel Coğrafya 3 – Amerika |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Küresel Coğrafya 3 – Amerika |
+| Office Online &amp; Mobile | Küresel Coğrafya 3 – Amerika |
 | EOP | Küresel Coğrafya 3 – Amerika |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -5048,7 +5048,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -5076,7 +5076,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -5104,7 +5104,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -5132,7 +5132,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -5160,7 +5160,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -5188,7 +5188,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -5216,7 +5216,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -5244,7 +5244,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -5272,7 +5272,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -5300,7 +5300,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -5328,7 +5328,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -5356,7 +5356,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -5384,7 +5384,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -5412,7 +5412,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -5440,7 +5440,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -5468,7 +5468,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -5496,7 +5496,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -5524,7 +5524,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -5552,7 +5552,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -5580,7 +5580,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -5608,7 +5608,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -5636,7 +5636,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -5664,7 +5664,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -5692,7 +5692,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -5720,7 +5720,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -5748,7 +5748,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -5776,7 +5776,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -5804,7 +5804,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -5832,7 +5832,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -5860,7 +5860,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -5888,7 +5888,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -5916,7 +5916,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -5944,7 +5944,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | South Africa |
 | SharePoint Online | South Africa |
 | Microsoft Teams | South Africa |
-| Office Online &amp; Mobil | South Africa |
+| Office Online &amp; Mobile | South Africa |
 | EOP | South Africa |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Amerika Birleşik Devletleri |
@@ -5972,7 +5972,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -6000,7 +6000,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Avrupa Birliği |
 | SharePoint Online | Avrupa Birliği |
 | Microsoft Teams | Avrupa Birliği |
-| Office Online &amp; Mobil | Avrupa Birliği |
+| Office Online &amp; Mobile | Avrupa Birliği |
 | EOP | Avrupa Birliği |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -6028,7 +6028,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6056,7 +6056,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -6084,7 +6084,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -6112,7 +6112,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -6140,7 +6140,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | İsveç |
 | SharePoint Online | İsveç |
 | Microsoft Teams | İsveç |
-| Office Online &amp; Mobil | İsveç |
+| Office Online &amp; Mobile | İsveç |
 | EOP | İsveç |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -6168,7 +6168,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | İsviçre |
 | SharePoint Online | İsviçre |
 | Microsoft Teams | İsviçre |
-| Office Online &amp; Mobil | İsviçre |
+| Office Online &amp; Mobile | İsviçre |
 | EOP | İsviçre |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -6196,7 +6196,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6224,7 +6224,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -6252,7 +6252,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -6280,7 +6280,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6308,7 +6308,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6336,7 +6336,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -6364,7 +6364,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6392,7 +6392,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6420,7 +6420,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -6448,7 +6448,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -6476,7 +6476,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -6504,7 +6504,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -6532,7 +6532,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -6560,7 +6560,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6588,7 +6588,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -6616,7 +6616,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -6644,7 +6644,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -6672,7 +6672,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Birleşik Arap Emirlikleri |
 | SharePoint Online | Birleşik Arap Emirlikleri |
 | Microsoft Teams | Birleşik Arap Emirlikleri |
-| Office Online &amp; Mobil | Birleşik Arap Emirlikleri |
+| Office Online &amp; Mobile | Birleşik Arap Emirlikleri |
 | EOP | Birleşik Arap Emirlikleri |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -6700,7 +6700,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Birleşik Krallık |
 | SharePoint Online | Birleşik Krallık |
 | Microsoft Teams | Birleşik Krallık |
-| Office Online &amp; Mobil | Birleşik Krallık |
+| Office Online &amp; Mobile | Birleşik Krallık |
 | EOP | Birleşik Krallık |
 | Intune | Avrupa Birliği |
 | Planner | Avrupa Birliği |
@@ -6728,7 +6728,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -6756,7 +6756,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 3 – Amerika |
 | SharePoint Online | Küresel Coğrafya 3 – Amerika |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Küresel Coğrafya 3 – Amerika |
+| Office Online &amp; Mobile | Küresel Coğrafya 3 – Amerika |
 | EOP | Küresel Coğrafya 3 – Amerika |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -6784,7 +6784,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6812,7 +6812,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -6840,7 +6840,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6867,7 +6867,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Amerika Birleşik Devletleri |
 | SharePoint Online | Amerika Birleşik Devletleri |
 | Microsoft Teams | Amerika Birleşik Devletleri |
-| Office Online &amp; Mobil | Amerika Birleşik Devletleri |
+| Office Online &amp; Mobile | Amerika Birleşik Devletleri |
 | EOP | Amerika Birleşik Devletleri |
 | Intune | Amerika Birleşik Devletleri |
 | Planner | Amerika Birleşik Devletleri |
@@ -6895,7 +6895,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6923,7 +6923,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 2 – Asya Pasifik |
 | SharePoint Online | Küresel Coğrafya 2 – Asya Pasifik |
 | Microsoft Teams | Küresel Coğrafya 2 – Asya Pasifik |
-| Office Online &amp; Mobil | Küresel Coğrafya 2 – Asya Pasifik |
+| Office Online &amp; Mobile | Küresel Coğrafya 2 – Asya Pasifik |
 | EOP | Küresel Coğrafya 2 – Asya Pasifik |
 | Intune | Küresel Coğrafya 2 – Asya Pasifik |
 | Planner | Küresel Coğrafya 2 – Asya Pasifik |
@@ -6951,7 +6951,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -6979,7 +6979,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -7007,7 +7007,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |
@@ -7035,7 +7035,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneDrive İş | Küresel Coğrafya 1 – EMEA |
 | SharePoint Online | Küresel Coğrafya 1 – EMEA |
 | Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobil | Küresel Coğrafya 1 – EMEA |
+| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
 | EOP | Küresel Coğrafya 1 – EMEA |
 | Intune | Küresel Coğrafya 1 – EMEA |
 | Planner | Küresel Coğrafya 1 – EMEA |

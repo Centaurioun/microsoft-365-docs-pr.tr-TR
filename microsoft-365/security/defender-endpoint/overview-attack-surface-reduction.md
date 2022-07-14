@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
-ms.openlocfilehash: 7c09db2138502ee8c1b491028308c56f23687a0d
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: bbed1512f5d51860f8f24ea29c2b0f73cbe7d9eb
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749011"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787204"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Saldırı yüzeyi azaltma özelliklerini anlama ve kullanma
 
@@ -63,11 +63,11 @@ Ortamınızda saldırı yüzeyi azaltmayı yapılandırmak için şu adımları 
 
 4. [Denetimli klasör erişimini etkinleştirin](enable-controlled-folders.md).
 
-5. [Çıkarılabilir Depolama Koruması](device-control-removable-storage-protection.md)
+5. [Çıkarılabilir depolama birimi korumasını](device-control-removable-storage-protection.md) etkinleştirme
 
-6. [Ağ koruması'nı açın](enable-network-protection.md).
+6. [Ağ korumasını açın](enable-network-protection.md).
 
-7. [Web korumasını etkinleştirmeye genel bakış](web-protection-overview.md)
+7. [Web korumasını](web-protection-overview.md) etkinleştirme
 
 8. [Yararlanma korumasını etkinleştirin](enable-exploit-protection.md).
 
@@ -91,7 +91,8 @@ Kuruluşunuzun güvenlik ekibinin bir parçası olarak, nasıl çalışacakları
 - Saldırı yüzeyini azaltma kuralları
 - Exploit Protection
 - Ağ koruması
-- Ve denetimli klasör erişimi
+- Denetimli klasör erişimi
+- Cihaz denetimi
 
 Denetim modu, özelliği etkinleştirmiş olsaydınız neler *olacağının* kaydını görmenizi sağlar.
 
@@ -112,9 +113,7 @@ grup ilkesi, PowerShell ve yapılandırma hizmeti sağlayıcılarını (CSP) kul
 | Denetim tüm olaylar için geçerlidir | [Ağ korumasını etkinleştirme](enable-network-protection.md) | [Ağ koruma olayları](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | Denetim, tek tek risk azaltmaları için geçerlidir | [Exploit Protection'i etkinleştirin](enable-exploit-protection.md) | [Güvenlik açığından yararlanma koruma olayları](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 
-### <a name="attack-surface-reduction-asr-rules"></a>Saldırı yüzeyini azaltma (ASR) kuralları
-
-Saldırı yüzeyi azaltma (ASR) kuralları yaygın, bilinen saldırı yüzeylerini sağlamlaştırmak için önceden tanımlanmıştır. Saldırı yüzeyi azaltma kurallarını uygulamak için kullanabileceğiniz çeşitli yöntemler vardır. Tercih edilen yöntem aşağıdaki saldırı yüzeyi azaltma (ASR) kuralları dağıtım konularında belgelenmiştir:
+Örneğin, saldırı yüzeyi azaltma kurallarını etkinleştirmeden (blok modu) önce denetim modunda test edebilirsiniz. Saldırı yüzeyi azaltma (ASR) kuralları yaygın, bilinen saldırı yüzeylerini sağlamlaştırmak için önceden tanımlanmıştır. Saldırı yüzeyi azaltma kurallarını uygulamak için kullanabileceğiniz çeşitli yöntemler vardır. Tercih edilen yöntem aşağıdaki saldırı yüzeyi azaltma (ASR) kuralları dağıtım konularında belgelenmiştir:
 
 - [Saldırı yüzeyini azaltma (ASR) kuralları dağıtımına genel bakış](attack-surface-reduction-rules-deployment.md)
 - [Saldırı yüzeyini azaltma (ASR) kuralları dağıtım planı](attack-surface-reduction-rules-deployment-plan.md)
@@ -294,16 +293,13 @@ Videoda belirtildiği gibi, Uç Nokta için Defender çeşitli saldırı yüzeyi
 
 | Makale | Açıklama |
 |:---|:---|
-| [Donanım tabanlı yalıtım](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Sistem başlatılırken ve çalışırken sistemin bütünlüğünü koruyun ve koruyun. Yerel ve uzak kanıtlama aracılığıyla sistem bütünlüğünü doğrulayın. Kötü amaçlı web sitelerine karşı korunmaya yardımcı olmak için Microsoft Edge için kapsayıcı yalıtımını kullanın. |
 | [Uygulama denetimi](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Uygulamalarınızın çalışması için güven kazanmaları için uygulama denetimini kullanın. |
-| [Denetimli klasör erişimi](controlled-folders.md) | Kötü amaçlı veya şüpheli uygulamaların (dosya şifreleyen fidye yazılımı kötü amaçlı yazılımları dahil) anahtar sistem klasörlerinizdeki dosyalarda değişiklik yapmasını önlemeye yardımcı olun (Microsoft Defender Virüsten Koruma gerektirir). |
-| [Ağ koruması](network-protection.md) | Kuruluşunuzun cihazlarında ağ trafiğinize ve bağlantınıza yönelik korumayı genişletin. (Microsoft Defender Virüsten Koruma gerektirir). |
-| [Exploit Protection](exploit-protection.md) | Kuruluşunuzun kullandığı işletim sistemlerinin ve uygulamaların kötüye kullanılmaktan korunmasına yardımcı olun. Yararlanma koruması, üçüncü taraf virüsten koruma çözümleriyle de çalışır. |
-| [Cihaz denetimi](device-control-report.md) | Kuruluşunuzdaki çıkarılabilir depolama birimi ve USB sürücüleri gibi cihazlarda kullanılan medyayı izleyerek ve denetleyerek veri kaybına karşı koruma sağlar. |
-| [Saldırı yüzeyini azaltma (ASR) kuralları dağıtım kılavuzu](attack-surface-reduction-rules-deployment.md) | Saldırı yüzeyi azaltma kurallarını dağıtmaya yönelik genel bakış bilgilerini ve önkoşullarını ve ardından test, etkinleştirme ve izleme için adım adım yönergeleri sunar. |
-| [Saldırı yüzeyini azaltma (ASR) kuralları dağıtım planı](attack-surface-reduction-rules-deployment-plan.md) | Saldırı yüzeyi azaltma kuralları dağıtımı için önerilen adımları listeler. |
-| [Saldırı yüzeyini azaltma (ASR) kuralları testi](attack-surface-reduction-rules-deployment-test.md) | Saldırı yüzeyi azaltma kurallarını test etmek için denetim modunu kullanma adımlarını sağlar. |
-| [Saldırı yüzeyini azaltma (ASR) kurallarını etkinleştirme](attack-surface-reduction-rules-deployment-implement.md) | Saldırı yüzeyi azaltma kurallarını test (denetim) modundan etkin, etkin (Engelle) moduna geçiş adımlarını gösterir. |
-| [Saldırı yüzeyini azaltma (ASR) kurallarını kullanıma hazır hale getirme](attack-surface-reduction-rules-deployment-operationalize.md) | Günlük gözden geçirme ve bakım etkinlikleri hakkında bilgi sağlar. |
 | [Saldırı yüzeyini azaltma (ASR) kuralları başvurusu](attack-surface-reduction-rules-reference.md) | Her saldırı yüzeyi azaltma kuralı hakkında ayrıntılı bilgi sağlar. |
-| [Saldırı yüzeyini azaltma kuralları](attack-surface-reduction.md) | Kötü amaçlı yazılımları durdurmaya yardımcı olan akıllı kurallarla uygulamalarınızdaki güvenlik açıklarını (saldırı yüzeyleri) azaltın. (Microsoft Defender Virüsten Koruma gerektirir). |
+| [Saldırı yüzeyini azaltma (ASR) kuralları dağıtım kılavuzu](attack-surface-reduction-rules-deployment.md) | Saldırı yüzeyi azaltma kurallarını dağıtmaya yönelik genel bakış bilgilerini ve önkoşulları, ardından test (denetim modu), etkinleştirme (blok modu) ve izleme için adım adım yönergeler sunar. |
+| [Denetimli klasör erişimi](controlled-folders.md) | Kötü amaçlı veya şüpheli uygulamaların (dosya şifreleyen fidye yazılımı kötü amaçlı yazılımları dahil) anahtar sistem klasörlerinizdeki dosyalarda değişiklik yapmasını önlemeye yardımcı olun (Microsoft Defender Virüsten Koruma gerektirir). |
+| [Cihaz denetimi](device-control-report.md) | Kuruluşunuzdaki çıkarılabilir depolama birimi ve USB sürücüleri gibi cihazlarda kullanılan medyayı izleyerek ve denetleyerek veri kaybına karşı koruma sağlar. |
+| [Exploit Protection](exploit-protection.md) | Kuruluşunuzun kullandığı işletim sistemlerinin ve uygulamaların kötüye kullanılmaktan korunmasına yardımcı olun. Yararlanma koruması, üçüncü taraf virüsten koruma çözümleriyle de çalışır. |
+| [Donanım tabanlı yalıtım](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Sistem başlatılırken ve çalışırken sistemin bütünlüğünü koruyun ve koruyun. Yerel ve uzak kanıtlama aracılığıyla sistem bütünlüğünü doğrulayın. Kötü amaçlı web sitelerine karşı korunmaya yardımcı olmak için Microsoft Edge için kapsayıcı yalıtımını kullanın. |
+| [Ağ koruması](network-protection.md) | Kuruluşunuzun cihazlarında ağ trafiğinize ve bağlantınıza yönelik korumayı genişletin. (Microsoft Defender Virüsten Koruma gerektirir). |
+| [Saldırı yüzeyini azaltma (ASR) kuralları testi](attack-surface-reduction-rules-deployment-test.md) | Saldırı yüzeyi azaltma kurallarını test etmek için denetim modunu kullanma adımlarını sağlar. |
+| [Web koruması](web-protection-overview.md) | Web koruması, cihazlarınızı web tehditlerine karşı korumanıza olanak tanır ve istenmeyen içeriği düzenlemenize yardımcı olur. |

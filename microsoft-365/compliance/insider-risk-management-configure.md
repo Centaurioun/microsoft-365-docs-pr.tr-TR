@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 8afb59606f4d13e96db5d4f03ffd8126c6ee9ba2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fc812b399cb6c80dfd41cc5ff4840a8288daac1f
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642579"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787484"
 ---
 # <a name="get-started-with-insider-risk-management"></a>İçeriden risk yönetimini kullanmaya başlama
 
@@ -231,7 +231,7 @@ Güvenlik ihlali ilkeleri oluşturursanız, kuruluşunuzda Uç Nokta için Micro
 
 ## <a name="step-5-required-configure-insider-risk-settings"></a>5. Adım (gerekli): Insider risk ayarlarını yapılandırma
 
-[Insider risk ayarları](insider-risk-management-settings.md) , ilke oluştururken seçtiğiniz şablondan bağımsız olarak tüm insider risk yönetimi ilkeleri için geçerlidir. Ayarlar, tüm **insider risk** yönetimi sekmelerinin en üstünde bulunan Insider risk ayarları denetimi kullanılarak yapılandırılır. Bu ayarlar gizliliği, göstergeleri, izleme pencerelerini ve akıllı algılamaları denetler.
+[Insider risk ayarları](insider-risk-management-settings.md) , ilke oluştururken seçtiğiniz şablondan bağımsız olarak tüm insider risk yönetimi ilkeleri için geçerlidir. Ayarlar, tüm **insider risk** yönetimi sekmelerinin en üstünde bulunan Insider risk ayarları denetimi kullanılarak yapılandırılır. Bu ayarlar gizliliği, göstergeleri, akıllı algılamaları ve daha fazlasını denetler.
 
 İlkeyi yapılandırmadan önce aşağıdaki insider risk ayarlarını tanımlayın:
 

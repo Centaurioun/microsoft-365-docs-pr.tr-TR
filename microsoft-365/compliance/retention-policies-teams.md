@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams için geçerli olan bekletme ilkeleri hakkında bilgi edinin.
-ms.openlocfilehash: 6935f82830aa8a6700d4088ee4954cf11f67adef
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 08385988da41d633d864a28637f9667887e6269e
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714694"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787110"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams için bekletme hakkında bilgi edinin
 
@@ -102,7 +102,7 @@ Diyagramdaki iki yol için:
 
 Saklama süresinin süresi dolduğunda ve bir iletiyi SubstrateHolds klasörüne taşıdığınızda, arka uç Azure sohbet hizmetine bir silme işlemi iletilir ve bu işlem aynı işlemi Teams istemci uygulamasına geçirir. Bu iletişim veya önbelleğe almadaki gecikmeler, kullanıcıların kısa bir süre boyunca bu iletileri Teams uygulamasında görmeye devam etmelerini açıklayabilir.
 
-Azure sohbet hizmetinin bekletme ilkesi nedeniyle silme komutu aldığı bu senaryoda, Teams istemci uygulamasındaki ilgili ileti konuşmadaki tüm kullanıcılar için silinir. Bu kullanıcılardan bazıları başka bir kuruluştan olabilir, saklama süresi daha uzun olan bir bekletme ilkesine sahip olabilir veya bu kullanıcılara hiçbir bekletme ilkesi atanmamış olabilir. Bu kullanıcılar için, iletilerin kopyaları posta kutularında depolanmaya devam eder ve iletiler başka bir bekletme ilkesi tarafından kalıcı olarak silinene kadar eBulma için aranabilir durumda kalır.
+Azure sohbet hizmetinin bekletme ilkesi nedeniyle silme komutu aldığı bu senaryoda, Teams istemci uygulamasındaki ilgili ileti konuşmadaki tüm kullanıcılar için silinir. Bazen bu kullanıcıların bazıları başka bir kuruluştan olabileceği, daha uzun saklama süresine sahip bir bekletme ilkesine sahip olabileceği veya kendilerine hiçbir bekletme ilkesi atanmadığı için bu [davranış beklenmedik görünebilir](/microsoftteams/troubleshoot/teams-im-presence/messages-unexpectedly-deleted-retention-policy) . Bu kullanıcılar için, iletilerin kopyaları posta kutularında depolanmaya devam eder ve iletiler başka bir bekletme ilkesi tarafından kalıcı olarak silinene kadar eBulma için aranabilir durumda kalır.
 
 > [!IMPORTANT]
 > Teams uygulamasında görünen iletiler, uyumluluk gereksinimleri için tutulup tutulmadıklarını veya kalıcı olarak silindiklerinin doğru bir yansıması değildir.

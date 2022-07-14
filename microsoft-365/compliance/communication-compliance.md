@@ -21,12 +21,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1cb523725eee6f8eec2330dee3ccd8bb8d6ab0f7
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 42e7b179fe958b93e7ba3064cce55cb0add715ef
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714475"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787176"
 ---
 # <a name="learn-about-communication-compliance"></a>İletişim uyumluluğu hakkında daha fazla bilgi edinme
 
@@ -125,7 +125,7 @@ Uyarılar, ilke eşleşmeleri, eylemler ve eğilimler için yeni etkileşimli pa
 İletişim uyumluluk ilkeleri, uyumluluk sorunlarını hızla gözden geçirmenize ve düzeltmenize yardımcı olmak için çeşitli iletişim kanallarında iletileri tarar ve yakalar:
 
 - **Microsoft Teams**: Genel ve özel [Microsoft Teams](/MicrosoftTeams/Teams-overview) kanalları ve tek tek sohbetler için sohbet iletişimleri, tek başına bir kanal kaynağı olarak veya diğer Microsoft 365 hizmetleriyle iletişim uyumluluğunda desteklenir. İletişim uyumluluk ilkesinde denetlemek üzere kullanıcıları ve grupları seçtiğinizde tek tek kullanıcıları, dağıtım gruplarını veya belirli Microsoft Teams kanallarını el ile eklemeniz gerekir. Teams kullanıcıları ayrıca gözden geçirme ve düzeltme amacıyla özel ve grup kanallarında ve sohbetlerde uygunsuz iletileri kendi kendilerine bildirebilir.
-- **Exchange Online**: Microsoft 365 kuruluşunuzdaki [Exchange Online](/Exchange/exchange-online) barındırılan tüm posta kutuları tarama için uygundur. İletişim uyumluluk ilkesi koşullarıyla eşleşen e-postalar ve ekler, izleme ve uyumluluk raporlarında anında kullanılabilir. Exchange Online artık isteğe bağlı bir kaynak kanalıdır ve iletişim uyumluluk ilkelerinde artık gerekli değildir.
+- **Exchange Online**: Microsoft 365 kuruluşunuzdaki [Exchange Online](/Exchange/exchange-online) barındırılan tüm posta kutuları tarama için uygundur. İletişim uyumluluk ilkesi koşullarıyla eşleşen e-postalar ve ekler, araştırma ve uyumluluk raporlarında anında kullanılabilir. Exchange Online artık isteğe bağlı bir kaynak kanalıdır ve iletişim uyumluluk ilkelerinde artık gerekli değildir.
 - **Yammer**: [Yammer'daki](/yammer/yammer-landing-page) özel iletiler ve genel topluluk konuşmaları, iletişim uyumluluk ilkelerinde desteklenir. Yammer isteğe bağlı bir kanaldır ve iletilerin ve eklerin taranması için [yerel modda](/yammer/configure-your-yammer-network/overview-native-mode) olmalıdır.
 - **Üçüncü taraf kaynaklar**: Microsoft 365 kuruluşunuzdaki posta kutularına aktarılan veriler için [üçüncü taraf kaynaklardan](/microsoft-365/compliance/archiving-third-party-data) gelen iletileri tarayabilirsiniz. İletişim uyumluluğu, Instant Bloomberg ve diğerleri dahil olmak üzere çeşitli popüler platformlarla bağlantıları destekler.
 
@@ -152,8 +152,8 @@ Microsoft Purview uyumluluk portalı aşağıdaki ilke şablonları arasından s
 - **Uygunsuz görüntüleri izleme**: Kuruluşunuzda uygunsuz olarak kabul edilebilecek yetişkinlere yönelik ve müstehcen görüntüler içeren içeriği otomatik olarak algılamak için yerleşik sınıflandırıcıları kullanan bir ilkeyi hızla oluşturmak için bu şablonu kullanın.
 - **Hassas bilgileri izleme**: Bu şablonu kullanarak, önemli verilerin erişimi olmaması gereken kişilerle paylaşılmadığından emin olmak için tanımlı hassas bilgi türleri veya anahtar sözcükler içeren iletişimleri taramaya yönelik bir ilke oluşturun.
 - **Finansal mevzuat uyumluluğunu izleme**: Mevzuat standartlarıyla ilişkili standart finansal terimlere başvurular için iletişimleri taramak üzere hızla bir ilke oluşturmak için bu şablonu kullanın.
-- **İlgi çakışmasını izleme: İlgi çakışmalarını** önlemeye yardımcı olmak için iki grup veya iki kullanıcı arasındaki iletişimi izlemek üzere hızla bir ilke oluşturmak için bu şablonu kullanın.
-- **Özel ilke**: Belirli iletişim kanallarını, bireysel algılama koşullarını ve kuruluşunuzda izlenecek ve gözden geçirecek içerik miktarını yapılandırmak için bu şablonu kullanın.
+- **İlgi alanı çakışmasını izleme: İlgi çakışmalarını** önlemeye yardımcı olmak üzere iki grup veya iki kullanıcı arasındaki iletişimi algılamak üzere hızla bir ilke oluşturmak için bu şablonu kullanın.
+- **Özel ilke**: Belirli iletişim kanallarını, bireysel algılama koşullarını ve kuruluşunuzda algılayıp gözden geçirecek içerik miktarını yapılandırmak için bu şablonu kullanın.
 - **Kullanıcı tarafından bildirilen iletiler ilkesi**: Bu sistem ilkesi kanal, grup ve özel sohbet iletilerinden kullanıcı tarafından bildirilen iletileri destekler. Teams yönetim merkezinde varsayılan olarak etkindir.
 
 >[!TIP]
@@ -181,14 +181,14 @@ Sonraki adım, aşağıdaki seçenekleri kullanarak araştırdığınız iletiş
 - **Teams'de iletiyi kaldırma (önizleme)**: Uygunsuz iletilerin Microsoft Teams kanallarında veya kişisel ve grup sohbeti iletilerinde görüntülenmesi kaldırılabilir. Kaldırılan uygunsuz iletiler, ilke ihlali için iletinin kaldırıldığını belirten bir bildirimle değiştirilir.
 - **Araştırma için yükseltme**: En ciddi durumlarda, iletişim uyumluluk bilgilerini kuruluşunuzdaki diğer gözden geçirenlerle paylaşmanız gerekebilir. İletişim uyumluluğu, uçtan uca risk çözümünde size yardımcı olmak için diğer Microsoft Purview özellikleriyle sıkı bir şekilde tümleşiktir. Bir araştırma olayının yükseltilmesi, verilerin ve servis talebinin yönetiminin Microsoft Purview eKeşif (Premium) olarak aktarılmasını sağlar. eBulma (Premium), kuruluşunuzun iç ve dış araştırmalarına yanıt veren içeriği korumak, toplamak, gözden geçirmek, analiz etmek ve dışarı aktarmak için uçtan uca bir iş akışı sağlar. Yasal ekiplerin yasal tutma bildirimi iş akışının tamamını yönetmesine olanak tanır. eBulma (Premium) durumları hakkında daha fazla bilgi edinmek için bkz. [Microsoft Purview eKeşif genel bakış (Premium)](/microsoft-365/compliance/overview-ediscovery-20).
 
-### <a name="monitor"></a>Monitör
+### <a name="maintain"></a>Korumak
 
 İletişim uyumluluk ilkeleri tarafından tanımlanan uyumluluk sorunlarının izlenmesi ve yönetilmesi, iş akışı sürecinin tamamına yayılmıştır. Uyarılar oluşturulduktan ve araştırma ve düzeltme eylemleri uygulandıkça, mevcut ilkelerin gözden geçirilmesi ve güncelleştirilmesi ve yeni ilkelerin oluşturulması gerekebilir.
 
-- **İzleme ve rapor**: Uyumluluk duruşunuzu sürekli değerlendirmek ve iyileştirmek için iletişim uyumluluk panosu pencere öğelerini, dışarı aktarma günlüklerini ve birleşik denetim günlüklerine kaydedilen olayları kullanın.
+- **Gözden geçirme ve raporlama**: Uyumluluk duruşunuzu sürekli değerlendirmek ve iyileştirmek için iletişim uyumluluk panosu pencere öğelerini, dışarı aktarma günlüklerini ve birleşik denetim günlüklerine kaydedilen olayları kullanın.
 
 ## <a name="ready-to-get-started"></a>Başlamaya hazır mısınız?
 
 - Planlama bilgileri için bkz. [İletişim uyumluluğunu planlama](/microsoft-365/compliance/communication-compliance-plan).
-- [Contoso için örnek olay incelemesine](/microsoft-365/compliance/communication-compliance-case-study) göz atın ve Microsoft Teams, Exchange Online ve Yammer iletişimlerindeki uygunsuz içerikleri izlemek için iletişim uyumluluk ilkesini nasıl hızlı bir şekilde yapılandırdıklarını görün.
+- [Contoso için örnek olay incelemesine](/microsoft-365/compliance/communication-compliance-case-study) göz atın ve Microsoft Teams, Exchange Online ve Yammer iletişimlerindeki uygunsuz içeriği algılamak için iletişim uyumluluk ilkesini nasıl hızlı bir şekilde yapılandırdıklarını görün.
 - Microsoft 365 kuruluşunuz için iletişim uyumluluğunu yapılandırmak için bkz. [İletişim uyumluluğunu yapılandırma](/microsoft-365/compliance/communication-compliance-configure).

@@ -16,12 +16,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fde4db2d646ccb9c7535096ec001c0371e78da8f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d2f2eb77dd143f82ced98f8fce424cc729e26df7
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632277"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787814"
 ---
 # <a name="get-started-with-information-barriers"></a>Bilgi engellerini kullanmaya başlama
 
@@ -403,7 +403,8 @@ Aşağıdaki IB modları Microsoft 365 kaynaklarında desteklenir:
 | **Açık** | Microsoft 365 kaynağıyla ilişkilendirilmiş IB ilkeleri veya segmentleri yoktur. Herkes kaynağın üyesi olmaya davet edilebilir. | Kuruluşunuz için piknik etkinliği için oluşturulmuş bir ekip sitesi. |
 | **Sahip Denetimli (önizleme)** | Microsoft 365 kaynağının IB ilkesi, kaynak sahibinin IB ilkesinden belirlenir. Kaynak sahipleri, IB ilkelerine göre herhangi bir kullanıcıyı kaynağa davet edebilir. Şirketiniz, sahibi tarafından denetlenen uyumsuz segment kullanıcıları arasında işbirliğine izin vermek istediğinde bu mod kullanışlıdır. IB ilkesine göre yalnızca kaynak sahibi yeni üyeler ekleyebilir. | İk Başkan Yardımcısı, Satış ve Araştırma VM'leri ile işbirliği yapmak istiyor. Hem Satış hem de Araştırma segmenti kullanıcılarını aynı siteye eklemek için IB modu *Sahibi Moded* ile ayarlanan yeni bir SharePoint sitesi. Kaynağa uygun üyelerin eklendiğinden emin olmak sahibin sorumluluğundadır. |
 | **Örtülü** | Microsoft 365 kaynağının IB ilkesi veya kesimleri, kaynak üyeleri IB ilkesinden devralınır. Sahibi, kaynağın mevcut üyeleriyle uyumlu olduğu sürece üye ekleyebilir. Bu mod, Microsoft Teams için varsayılan IB modudur. | Satış segmenti kullanıcısı, kuruluştaki diğer uyumlu segmentlerle işbirliği yapmak için bir Microsoft Teams ekibi oluşturur. |
-| **Açık** | Microsoft 365 kaynağının IB ilkesi, kaynakla ilişkili segmentlere göredir. Kaynak sahibi veya SharePoint yöneticisi, kaynak üzerindeki segmentleri yönetebilir.  | Yalnızca Satış segmenti üyelerinin, Satış segmentini siteyle ilişkilendirerek işbirliği yapmaları için oluşturulmuş bir site.   |
+| **Açık** | Microsoft 365 kaynağının IB ilkesi, kaynakla ilişkili segmentlere göredir. Kaynak sahibi veya SharePoint yöneticisi, kaynak üzerindeki segmentleri yönetebilir. | Yalnızca Satış segmenti üyelerinin, Satış segmentini siteyle ilişkilendirerek işbirliği yapmaları için oluşturulmuş bir site. |
+| **Karma (önizleme)** | Yalnızca OneDrive için geçerlidir. OneDrive'ın IB ilkesi, OneDrive ile ilişkili segmentlere göredir. Kaynak sahibi veya OneDrive yöneticisi, kaynak üzerindeki segmentleri yönetebilir. | Satış segmenti üyelerinin işbirliği için oluşturulmuş bir OneDrive'ın, ayrıştırılmamış kullanıcılarla paylaşılmasına izin verilir. |
 
 IB modları ve hizmetler arasında nasıl yapılandırıldıkları hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
@@ -419,8 +420,8 @@ Bir kuruluşun segmentleri ve ilkeleri tanımlamaya nasıl yaklaşabileceğini g
 
 Contoso'nun beş bölümü vardır: *İk*, *Satış*, *Pazarlama*, *Araştırma* ve *Üretim*. Sektör düzenlemeleriyle uyumlu kalmak için, bazı departmanlardaki kullanıcıların aşağıdaki tabloda listelendiği gibi diğer departmanlarla iletişim kurmaması gerekir:
 
-| Segment | ile iletişim kurabilir | ile iletişim kuramıyorum |
-|:----------|:--------------|:-----------------|
+| **Segment** | **ile iletişim kurabilir** | **ile iletişim kuramıyorum** |
+|:------------|:-------------------------|:---------------------------|
 | HR | Herkes | (kısıtlama yok) |
 | Satış | İk, Pazarlama, Üretim | Araştırma |
 | Pazarlama | Herkes | (kısıtlama yok) |

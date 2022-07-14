@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: d830da841eb67db19e81cdf6a0e079c2161ae9d9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5e9f9eb04d2fb239c69aacd8927cde7f295c7716
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625203"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787550"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Insider risk yönetimi ayarlarını kullanmaya başlama
 
@@ -85,7 +85,7 @@ Tüm insider risk ilkelerinde etkinleştirilen insider risk ilkesi göstergeleri
 ### <a name="enable-device-indicators-and-onboard-windows-devices"></a>Cihaz göstergelerini etkinleştirme ve Windows cihazlarını ekleme
 <a name="OnboardDevices"> </a>
 
-Windows cihazlarında risk etkinliklerinin izlenmesini etkinleştirmek ve bu etkinlikler için ilke göstergeleri eklemek için Windows cihazlarınız aşağıdaki gereksinimleri karşılamalı ve aşağıdaki ekleme adımlarını tamamlamanız gerekir.
+Windows cihazlarında risk etkinliklerinin algılanmasını etkinleştirmek ve bu etkinliklere yönelik ilke göstergeleri eklemek için Windows cihazlarınız aşağıdaki gereksinimleri karşılamalı ve aşağıdaki ekleme adımlarını tamamlamanız gerekir.
 
 #### <a name="step-1-prepare-your-endpoints"></a>1. Adım: Uç noktalarınızı hazırlama
 
@@ -228,7 +228,7 @@ Aşağıdaki etki alanı ayarlarının her biri için en fazla 500 etki alanı g
 - **İzin verilmeyen etki alanları:** İzin verilmeyen etki alanları belirtildiğinde, bu etki alanlarıyla gerçekleştirilir etkinliğin risk puanları *daha yüksek* olur. Bazı örnekler, bir kişiyle içerik paylaşma (gmail.com adresi olan birine e-posta gönderme gibi) ve kullanıcılar bu izin verilmeyen etki alanlarından birinden cihaza içerik indirdiğinde gerçekleştirilir.
 - **İzin verilen etki alanları:** İzin verilen etki alanlarıyla ilgili bazı etkinlikler ilkeleriniz tarafından yoksayılır ve uyarı oluşturmaz. Bu etkinlikler şunlardır:
 
-    - Dış etki alanlarına gönderilen e-posta
+    - dış etki alanlarına gönderilen Email
     - Dış etki alanlarıyla paylaşılan dosyalar, klasörler, siteler
     - Dış etki alanlarına yüklenen dosyalar (Microsoft Edge tarayıcısı kullanılarak)
 
@@ -348,7 +348,7 @@ Mevcut öncelikli kullanıcı grubunu silmek için, Microsoft Purview uyumluluk 
 
 Öncelikli fiziksel varlıklar etkinleştirildiğinde ve [Fiziksel badging veri bağlayıcısı](import-physical-badging-data.md) yapılandırıldığında, insider risk yönetimi fiziksel denetim ve erişim sistemlerinizden gelen sinyalleri diğer kullanıcı riski etkinlikleriyle tümleştirir. Fiziksel erişim sistemleri genelindeki davranış düzenlerini inceleyerek ve bu etkinlikleri diğer iç risk olaylarıyla ilişkilendirerek, iç risk yönetimi uyumluluk araştırmacılarının ve analistlerin uyarılar için daha bilinçli yanıt kararları almasına yardımcı olabilir. Öncelikli fiziksel varlıklara erişim puanlanmış ve öncelikli olmayan varlıklara erişimden farklı içgörülerde tanımlanmıştır.
 
-Örneğin, kuruluşunuzun normal çalışma ve hassas proje alanlarına fiziksel erişimi izleyen ve onaylayan kullanıcılar için bir badging sistemi vardır. Hassas bir proje üzerinde çalışan birkaç kullanıcınız var ve bu kullanıcılar proje tamamlandığında kuruluşunuzun diğer alanlarına geri dönecektir. Hassas proje tamamlanmaya yaklaştığından, proje çalışmasının gizli kaldığından ve proje alanlarına erişimin sıkı bir şekilde denetlendiğinden emin olmak istiyorsunuz.
+Örneğin, kuruluşunuzun normal çalışma ve hassas proje alanlarına fiziksel erişimi yöneten ve onaylayan kullanıcılar için bir badging sistemi vardır. Hassas bir proje üzerinde çalışan birkaç kullanıcınız var ve bu kullanıcılar proje tamamlandığında kuruluşunuzun diğer alanlarına geri dönecektir. Hassas proje tamamlanmaya yaklaştığından, proje çalışmasının gizli kaldığından ve proje alanlarına erişimin sıkı bir şekilde denetlendiğinden emin olmak istiyorsunuz.
 
 Microsoft 365'te Fiziksel badging veri bağlayıcısını etkinleştirerek erişim bilgilerini fiziksel badging sisteminizden içeri aktarmayı ve şirket içi risk yönetiminde öncelikli fiziksel varlıkları belirtmeyi seçersiniz. Kimlik doğrulama sisteminizden bilgileri içeri aktararak ve fiziksel erişim bilgilerini şirket içi risk yönetiminde tanımlanan diğer risk etkinlikleriyle ilişkilendirerek, projedeki kullanıcılardan birinin normal çalışma saatlerinden sonra proje ofislerine eriştiğini ve aynı zamanda normal çalışma alanlarından kişisel bulut depolama hizmetine büyük miktarda veri aktardığını fark ediyorsunuz. Çevrimiçi etkinlikle ilişkili bu fiziksel erişim etkinliği olası veri hırsızlığına işaret edebilir ve uyumluluk araştırmacıları ve analistleri bu kullanıcının koşulları tarafından belirlenen uygun eylemleri gerçekleştirebilir.
 
@@ -548,7 +548,7 @@ Insider risk analizini etkinleştirmek için aşağıdaki adımları tamamlayın
 
 ### <a name="viewing-analytics-insights-and-creating-new-policies"></a>Analiz içgörülerini görüntüleme ve yeni ilkeler oluşturma
 
-Kuruluşunuz için ilk analiz taraması tamamlandıktan sonra *, Insider Risk Management Yönetici* rol grubunun üyeleri otomatik olarak bir e-posta bildirimi alır ve kullanıcılarınız tarafından riskli olabilecek etkinliklere yönelik ilk içgörüleri ve önerileri görüntüleyebilir. Kuruluşunuz için analizi kapatmadığınız sürece günlük taramalar devam eder. Kuruluşunuzdaki ilk etkinlik örneğinden sonra analiz (veri sızıntıları, hırsızlık ve sızdırma) için üç kapsam içi kategorinin her biri için yöneticilere e-posta bildirimleri sağlanır. E-posta bildirimleri, günlük taramalardan kaynaklanan izleme etkinliği algılama için yöneticilere gönderilmez. **Insider risk yönetimi** > **Ayarları** > **Analizlerindeki** analizler devre dışı bırakılır ve ardından kuruluşunuzda yeniden etkinleştirilirse, otomatik e-posta bildirimleri sıfırlanır ve yeni tarama içgörüleri için *Insider Risk Management Yönetici* rol grubunun üyelerine e-postalar gönderilir.
+Kuruluşunuz için ilk analiz taraması tamamlandıktan sonra *, Insider Risk Management Yönetici* rol grubunun üyeleri otomatik olarak bir e-posta bildirimi alır ve kullanıcılarınız tarafından riskli olabilecek etkinliklere yönelik ilk içgörüleri ve önerileri görüntüleyebilir. Kuruluşunuz için analizi kapatmadığınız sürece günlük taramalar devam eder. Kuruluşunuzdaki ilk etkinlik örneğinden sonra analiz (veri sızıntıları, hırsızlık ve sızdırma) için üç kapsam içi kategorinin her biri için yöneticilere Email bildirimler sağlanır. Email bildirimleri, günlük taramalardan kaynaklanan izleme etkinliği algılama için yöneticilere gönderilmez. **Insider risk yönetimi** > **Ayarları** > **Analizlerindeki** analizler devre dışı bırakılır ve ardından kuruluşunuzda yeniden etkinleştirilirse, otomatik e-posta bildirimleri sıfırlanır ve yeni tarama içgörüleri için *Insider Risk Management Yönetici* rol grubunun üyelerine e-postalar gönderilir.
 
 Kuruluşunuzun olası risklerini görüntülemek için **Genel Bakış** sekmesine gidin ve **Insider risk analizi** kartında **Sonuçları görüntüle'yi** seçin. Kuruluşunuz için tarama tamamlanamadıysa taramanın hala etkin olduğunu belirten bir ileti görürsünüz.
 

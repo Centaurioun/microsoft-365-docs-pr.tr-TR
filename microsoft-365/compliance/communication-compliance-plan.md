@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 71364ebf68d6167666ec993fd15e0288f7ab30b2
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 71537e949d68d2171d3c3fb0f6dff5d55fe5b3bf
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686195"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787088"
 ---
 # <a name="plan-for-communication-compliance"></a>İletişim uyumluluğu planı
 
@@ -62,7 +62,7 @@ Office 365'da denetim için kullanımdan kaldırma bilgileri için ayrıntılar 
 
 ### <a name="permissions"></a>İzinler
 
-[Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) düzenli aralıklarla uyarıları ve servis taleplerini izlemek ve gözden geçirmek için ayrılmış paydaşları seçin. Kullanıcıları ve paydaşları kuruluşunuzdaki farklı iletişim uyumluluğu rol gruplarına nasıl atayabileceğinizi anladığınızdan emin olun.
+[Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) düzenli aralıklarla uyarıları ve servis taleplerini araştırmak ve gözden geçirmek için ayrılmış paydaşları seçin. Kullanıcıları ve paydaşları kuruluşunuzdaki farklı iletişim uyumluluğu rol gruplarına nasıl atayabileceğinizi anladığınızdan emin olun.
 
 > [!IMPORTANT]
 > Rol gruplarınızı yapılandırdıktan sonra, rol grubu izinlerinin kuruluşunuz genelinde atanan kullanıcılara uygulanması 30 dakika kadar sürebilir.
@@ -111,7 +111,7 @@ Aşağıdaki rollerin üyeleri *İletişim Uyumluluğu Yönetici* rol grubuna da
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Denetimli kullanıcılar ve gözden geçirenler için gruplar
 
-Kurulumunuzu basitleştirmek için, iletişimlerinin gözden geçirilmesi gereken kişiler için gruplar ve bu iletişimleri gözden geçiren kişiler için gruplar oluşturun. Grupları kullanıyorsanız, birkaç gruba ihtiyacınız olabilir. Örneğin, iki ayrı kişi grubu arasındaki iletişimleri taramak veya denetimli olmayan bir grup belirtmek istiyorsanız. İlkede bir Dağıtım grubu atadığınızda, ilke Dağıtım grubundaki her kullanıcıdan gelen tüm e-postaları izler. İlkeye bir Microsoft 365 grubu atadığınızda, ilke her grup üyesi tarafından alınan tek tek e-postaları değil, o gruba gönderilen tüm e-postaları izler.
+Kurulumunuzu basitleştirmek için, iletişimlerinin gözden geçirilmesi gereken kişiler için gruplar ve bu iletişimleri gözden geçiren kişiler için gruplar oluşturun. Grupları kullanıyorsanız, birkaç gruba ihtiyacınız olabilir. Örneğin, iki ayrı kişi grubu arasındaki iletişimleri taramak veya denetimli olmayan bir grup belirtmek istiyorsanız. İlkede bir Dağıtım grubu atadığınızda, ilke Dağıtım grubundaki her kullanıcıdan gelen tüm e-postaları algılar. İlkeye bir Microsoft 365 grubu atadığınızda, ilke her grup üyesi tarafından alınan tek tek e-postaları değil, o gruba gönderilen tüm e-postaları algılar.
 
 İletişim uyumluluk ilkelerine grup ve dağıtım listeleri eklemek, genel koşulların ve kuralların bir parçasıdır, bu nedenle bir ilkenin desteklediği en fazla grup ve dağıtım listesi sayısı, ilkeye eklenen koşulların sayısına bağlı olarak değişir. her ilke, ilkede bulunan ek koşulların sayısına bağlı olarak yaklaşık 20 grubu veya dağıtım listesini desteklemelidir.
 
@@ -139,8 +139,8 @@ Uygunsuz içerik, hassas bilgiler ve mevzuat uyumluluğu için [önceden tanıml
 
 - kuruluşunuzdaki tüm kullanıcıları iletişim uyumluluk ilkelerinizin kapsamına eklemeyi göz önünde bulundurun. Belirli kullanıcıları tek tek ilkeler için kapsam dahilinde belirlemek bazı durumlarda yararlıdır, ancak çoğu kuruluş tüm kullanıcıları taciz veya ayrımcılık algılama için iyileştirilmiş iletişim uyumluluk ilkelerine dahil etmelidir.
 - İlkelerin kuruluşunuza yönelik iletişimlerdeki tüm sorunları yakalamasını sağlamak için iletişim yüzdesini %100'de gözden geçirecek şekilde yapılandırın.
-- Microsoft 365 kuruluşunuzdaki posta kutularına aktarılan veriler için [üçüncü taraf kaynaklardan gelen iletişimleri](/microsoft-365/compliance/communication-compliance-channels#third-party-sources) tarayabilirsiniz. Bu platformlardaki iletişimlerin gözden geçirilmesini eklemek için, ilke koşullarını karşılayan iletiler iletişim ilkesi tarafından izlenmeden önce bu hizmetlere bir bağlayıcı yapılandırmanız gerekir.
-- İlkeler, özel iletişim uyumluluk ilkelerinde İngilizce dışındaki izleme dillerini destekleyebilir. Microsoft 365'te [eğitilebilir sınıflandırıcıları](/microsoft-365/compliance/classifier-get-started-with) kullanarak dilediğiniz dilde rahatsız edici sözcüklerden oluşan [özel bir anahtar sözcük sözlüğü](/microsoft-365/compliance/communication-compliance-policies#custom-keyword-dictionaries) oluşturun veya kendi makine öğrenmesi modelinizi oluşturun.
+- Microsoft 365 kuruluşunuzdaki posta kutularına aktarılan veriler için [üçüncü taraf kaynaklardan gelen iletişimleri](/microsoft-365/compliance/communication-compliance-channels#third-party-sources) tarayabilirsiniz. Bu platformlardaki iletişimlerin gözden geçirilmesini eklemek için, iletişim ilkesi tarafından ilke koşullarını karşılayan iletilerin algılanması için önce bu hizmetlere bir bağlayıcı yapılandırmanız gerekir.
+- İlkeler, özel iletişim uyumluluk ilkelerinde İngilizce dışındaki dilleri algılamayı destekleyebilir. Microsoft 365'te [eğitilebilir sınıflandırıcıları](/microsoft-365/compliance/classifier-get-started-with) kullanarak dilediğiniz dilde rahatsız edici sözcüklerden oluşan [özel bir anahtar sözcük sözlüğü](/microsoft-365/compliance/communication-compliance-policies#custom-keyword-dictionaries) oluşturun veya kendi makine öğrenmesi modelinizi oluşturun.
 - Tüm kuruluşların farklı iletişim standartları ve ilke gereksinimleri vardır. İletişim uyumluluk [ilkesi koşullarını](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) kullanarak belirli anahtar sözcükleri algılama veya [özel hassas bilgi türleriyle belirli bilgi türlerini](/microsoft-365/compliance/create-a-custom-sensitive-information-type) algılama.
 
 ## <a name="creating-a-communication-compliance-policy-walkthrough"></a>İletişim uyumluluk ilkesi oluşturma kılavuzu

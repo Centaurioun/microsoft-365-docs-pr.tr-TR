@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 544c31205469bcb810bd3f05d9f686d650df6269
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a671e25dabf5dc9c526e6e3a931a71035b908cc3
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638201"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787836"
 ---
 # <a name="insider-risk-management-audit-log"></a>Insider risk yönetimi denetim günlüğü
 
@@ -25,9 +25,9 @@ Insider risk yönetimi denetim günlüğü, insider risk yönetimi özelliklerin
 
 ![Insider risk yönetimi denetim günlüğü.](../media/insider-risk-audit-log.png)
 
-denetim günlüğü, izlenen etkinlikler gerçekleştiğinde otomatik olarak ve hemen güncelleştirilir ve günlük, etkinlik hakkındaki bilgileri 180 gün boyunca (yaklaşık altı ay) tutar. 180 gün sonra etkinlik verileri günlükten kalıcı olarak silinir.
+Denetim günlüğü, algılanan etkinlikler gerçekleştiğinde otomatik olarak ve hemen güncelleştirilir ve günlük etkinlik hakkındaki bilgileri 180 gün boyunca (yaklaşık altı ay) tutar. 180 gün sonra etkinlik verileri günlükten kalıcı olarak silinir.
 
-Etkinlik izlemede yer alan alanlar şunlardır:
+Etkinlik algılamaya dahil edilen alanlar şunlardır:
 
 - İlkeler
 - Durumda
@@ -43,7 +43,7 @@ Denetim günlüğündeki verileri görüntülemek ve dışarı aktarmak için ku
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>Insider risk denetim günlüğünde etkinliği görüntüleme
 
-Insider risk yönetimi için izlenen özellik etkinliğini görüntülemek için, herhangi bir insider risk yönetimi sekmesinin sağ üst kısmındaki **Insider risk denetim günlüğü** bağlantısına gidin ve seçin. Varsayılan olarak, insider risk yönetimi etkinlikleri için aşağıdaki bilgileri görürsünüz:
+Insider risk yönetimi için algılanan özellik etkinliğini görüntülemek için, herhangi bir insider risk yönetimi sekmesinin sağ üst kısmındaki **Insider risk denetim günlüğü** bağlantısına gidin ve seçin. Varsayılan olarak, insider risk yönetimi etkinlikleri için aşağıdaki bilgileri görürsünüz:
 
 - **Etkinlik:** Bir kullanıcı tarafından insider risk yönetimi çözümünde gerçekleştirilen etkinliğin açıklaması.
 - **Kategori:** Etkinliğin gerçekleştirildiği alan veya öğe. Örneğin, ilke değişikliği etkinlikleri gerçekleştirildiğinde  kategori olarak İlkeler'i görürsünüz.
