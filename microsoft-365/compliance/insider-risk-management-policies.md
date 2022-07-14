@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 22682a801123d4f8c24cbc11e2d0e35d42228bba
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5eb528db1199ab637634fefb5a31ff1344276051
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627293"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787880"
 ---
 # <a name="insider-risk-management-policies"></a>Insider risk yönetimi ilkeleri
 
@@ -340,7 +340,7 @@ Mevcut bir ilkeyi yönetmek için aşağıdaki adımları tamamlayın:
 2. İlke panosunda yönetmek istediğiniz ilkeyi seçin.
 3. İlke ayrıntıları sayfasında **İlkeyi düzenle'yi** seçin
 4. İlke sihirbazında aşağıdakileri düzenleyemezsiniz:
-    - **İlke şablonu**: İlke tarafından izlenen risk göstergesi türlerini tanımlamak için kullanılan şablon.
+    - **İlke şablonu**: İlke tarafından algılanan risk göstergesi türlerini tanımlamak için kullanılan şablon.
     - **Ad**: İlkenin kolay adı
 5. **Ad ve açıklama** sayfasında, **Açıklama** alanındaki ilkenin açıklamasını güncelleştirin.
 6. Devam etmek için **İleri'yi** seçin.

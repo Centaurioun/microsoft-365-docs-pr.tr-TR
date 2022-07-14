@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: daa8eeab7f62b760b45e6c1571972dcd0ee83ae6
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 8db03cbae752481166055a7b84a0dc248a1b3e84
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714497"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787858"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>İletişim uyumluluğu uyarılarını araştırma ve çözümleme
 
@@ -120,7 +120,7 @@ Uyarının iletisinin ayrıntılarını gözden geçirdiyseniz, birkaç düzeltm
 - **Etiket olarak**: İletiyi *uyumlu*, *uyumsuz* veya kuruluşunuzun ilkeleri ve standartlarıyla ilgili olarak *sorgulanabilir* olarak etiketleyin. Etiketleri ve etiketleme açıklamalarını eklemek, yükseltmeler için veya diğer iç gözden geçirme işlemlerinin bir parçası olarak ilke uyarılarını mikro filtrelemenize yardımcı olur. Etiketleme tamamlandıktan sonra, iletiyi bekleyen gözden geçirme kuyruğundan taşımak için çözmeyi de seçebilirsiniz.
 - **Bildirim**: **Uyarıya** özel bir bildirim şablonu atamak ve kullanıcıya uyarı bildirimi göndermek için Bildirim denetimini kullanabilirsiniz. **İletişim uyumluluk ayarları** alanında yapılandırılan uygun bildirim şablonunu seçin ve iletiyi gönderen kullanıcıya e-postayla anımsatıcı **gönder'i** seçerek sorunu çözün.
 - **Yükseltme**: **Yükseltme** denetimini kullanarak, kuruluşunuzda başka kimlerin iletiyi gözden geçirmesi gerektiğini seçebilirsiniz. İleti uyarısının ek gözden geçirilmesini isteyen bir e-posta bildirimi göndermek için iletişim uyumluluk ilkesinde yapılandırılan gözden geçirenler listesinden seçim yapın. Seçilen gözden geçiren, doğrudan gözden geçirilecek öğelere gitmek için e-posta bildirimindeki bir bağlantıyı kullanabilir.
-- **Araştırma için yükseltme**: **Araştırma için Yükseltme** denetimini kullanarak, tek veya birden çok ileti için yeni bir [eBulma (Premium) olayı](/microsoft-365/compliance/overview-ediscovery-20) oluşturabilirsiniz. Yeni servis talebi için bir ad ve notlar sağlayacaksınız ve ilkeyle eşleşen iletiyi gönderen kullanıcı otomatik olarak servis talebi koruyucu olarak atanır. Olayı yönetmek için ek izinlere ihtiyacınız yoktur. Servis talebi oluşturma, ileti için çözümlenmiyor veya yeni bir etiket oluşturmuyor. Düzeltme işlemi sırasında eBulma (Premium) olayı oluştururken toplam 100 ileti seçebilirsiniz. İletişim uyumluluğu tarafından izlenen tüm iletişim kanallarındaki iletiler desteklenir. Örneğin, bir kullanıcı için yeni bir eBulma (Premium) servis talebi açtığınızda 50 Microsoft Teams sohbeti, 25 Exchange Online e-posta iletisi ve 25 Yammer iletisi seçebilirsiniz.
+- **Araştırma için yükseltme**: **Araştırma için Yükseltme** denetimini kullanarak, tek veya birden çok ileti için yeni bir [eBulma (Premium) olayı](/microsoft-365/compliance/overview-ediscovery-20) oluşturabilirsiniz. Yeni servis talebi için bir ad ve notlar sağlayacaksınız ve ilkeyle eşleşen iletiyi gönderen kullanıcı otomatik olarak servis talebi koruyucu olarak atanır. Olayı yönetmek için ek izinlere ihtiyacınız yoktur. Servis talebi oluşturma, ileti için çözümlenmiyor veya yeni bir etiket oluşturmuyor. Düzeltme işlemi sırasında eBulma (Premium) olayı oluştururken toplam 100 ileti seçebilirsiniz. İletişim uyumluluğuna dahil edilen tüm iletişim kanallarındaki iletiler desteklenir. Örneğin, bir kullanıcı için yeni bir eBulma (Premium) servis talebi açtığınızda 50 Microsoft Teams sohbeti, 25 Exchange Online e-posta iletisi ve 25 Yammer iletisi seçebilirsiniz.
 - **Teams'de iletiyi kaldırma**: **Teams'de iletiyi kaldır** denetimini kullanarak, Microsoft Teams kanallarından ve 1:1 ve grup sohbetlerinden gelen uyarılarda tanımlanan uygunsuz iletileri ve içeriği engelleyebilirsiniz. Bu, kullanıcılar tarafından bildirilen Teams sohbet iletilerini ve makine öğrenmesi ve sınıflandırıcı tabanlı iletişim uyumluluk ilkeleri kullanılarak algılanan sohbet iletilerini içerir. Kaldırılan iletiler ve içerik, engellendiğini ve görünümden kaldırılması için geçerli olan ilkeyi açıklayan bir ilke ipucuyla değiştirilir. İlgili ilke ve gözden geçirme işlemi hakkında daha fazla bilgi edinmek için alıcılara ilke ipucunda bir bağlantı sağlanır. Gönderen, engellenen ileti ve içerik için bir ilke ipucu alır, ancak engellenen iletinin ayrıntılarını ve kaldırmayla ilgili bağlam için içeriği gözden geçirebilir.
 
 ### <a name="step-4-determine-if-message-details-should-be-archived-outside-of-communication-compliance"></a>4. Adım: İleti ayrıntılarının iletişim uyumluluğu dışında arşivlenip arşivlenmemesi gerektiğini belirleme

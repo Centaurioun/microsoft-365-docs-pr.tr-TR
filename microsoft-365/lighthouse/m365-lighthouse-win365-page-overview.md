@@ -17,23 +17,23 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Windows 365 (Bulut bilgisayarları) sayfası hakkında bilgi edinin.
-ms.openlocfilehash: b96660f2666d7edce383a1d2e222e23d9b17a5b3
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: dded3bc455a66a77ae325f1d6a54660a88846c1e
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017476"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787242"
 ---
 # <a name="overview-of-the-windows-365-cloud-pcs-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'daki Windows 365 (Bulut Bilgisayarlar) sayfasına genel bakış  
   
-Windows 365, Microsoft Endpoint Manager (MEM) yöneticilerinin Windows 365 lisansına sahip kullanıcıları için Bulut bilgisayarları sağlamasına ve yönetmesine olanak tanıyan bulut tabanlı bir hizmettir. Windows 365, cihaz yönetimi için MEM ile ve tüm müşteri kiracılarında Bulut bilgisayarların iş ortağı yönetimine yönelik Microsoft 365 Lighthouse ile tamamen tümleşiktir.
+Windows 365, Microsoft Endpoint Manager (MEM) yöneticilerinin Windows 365 lisansı olan kullanıcıları için Bulut bilgisayarları sağlamasına ve yönetmesine olanak tanıyan bulut tabanlı bir hizmettir. Windows 365, cihaz yönetimi için MEM ile ve tüm müşteri kiracılarında Bulut bilgisayarların iş ortağı yönetimine yönelik Microsoft 365 Lighthouse ile tamamen tümleşiktir.
 
 Windows 365 hakkında daha fazla bilgi için bkz[. Windows 365 nedir?](/windows-365/overview) Windows 365 gereksinimlerinin listesi için bkz[. Windows 365 gereksinimleri](/windows-365/enterprise/requirements).
 
 > [!IMPORTANT]
 > Lighthouse'da yönetebilmeniz için önce her müşteri kiracısı için Bulut bilgisayarları sağlamak için [MEM'e](https://go.microsoft.com/fwlink/p/?linkid=2150463) gitmeniz gerekir. Lighthouse'un içinden sağlayamazsınız.
 
-Müşteri kiracınız için Bulut bilgisayarları sağladıktan sonra, Microsoft 365 Giriş sayfasındaki Windows 365 kartı, sağlanması başarısız olan Bulut bilgisayarlarının sayısı ve Azure ağ bağlantısı hataları gibi eyleme ihtiyacı olan Bulut bilgisayarları hakkında kısa bir uyarı sağlar. Ayrıntılı bir durum elde etmek için Windows 365 kartındaki düğmeyi seçin (veya sol gezinti bölmesinde **Windows 365** seçin) ve Windows 365 sayfasını açın. Bu sayfadan, müşteri kiracılarınıza atanan Bulut bilgisayarlarının durum genel bakışını alabilir, yönettiğiniz tüm Bulut bilgisayarlarının ve bunların atandığı kiracıların listesini görüntüleyebilir ve müşteri kiracılarınız ile Azure Active Directory (Azure AD) arasındaki Azure ağ bağlantılarını ve durumlarını görüntüleyebilirsiniz.
+Müşteri kiracınız için Bulut bilgisayarları sağladıktan sonra, Microsoft 365 Giriş sayfasındaki Windows 365 kartı, sağlanması başarısız olan Bulut bilgisayarlarının sayısı ve Azure ağ bağlantısı hataları gibi işlem gerektiren Bulut bilgisayarları hakkında kısa bir uyarı sağlar. Ayrıntılı bir durum elde etmek için Windows 365 kartındaki düğmeyi seçin (veya sol gezinti bölmesinde **Windows 365** seçin) ve Windows 365 sayfasını açın. Bu sayfadan, müşteri kiracılarınıza atanan Bulut bilgisayarlarının durum genel bakışını alabilir, yönettiğiniz tüm Bulut bilgisayarlarının ve bunların atandığı kiracıların listesini görüntüleyebilir ve müşteri kiracılarınızla Azure Active Directory (Azure AD) arasındaki Azure ağ bağlantılarını ve durumlarını görüntüleyebilirsiniz.
 
 ## <a name="overview-tab"></a>Genel Bakış sekmesi
 
@@ -46,7 +46,7 @@ Belirli bir müşteri kiracısının ayrıntılı durum bilgilerini almak için,
 Genel Bakış sekmesi aşağıdaki seçenekleri de içerir:
 
 - **Yenileme:** En güncel Cloud PC verilerini almak için öğesini seçin.
-- **Ihracat:** Cloud PC verilerini virgülle ayrılmış Excel değerler (.csv) dosyasına dışarı aktarmak için seçin.
+- **Ihracat:** Cloud PC verilerini Excel virgülle ayrılmış değerler (.csv) dosyasına dışarı aktarmak için seçin.
 - **Arama:** Listede belirli bir Bulut bilgisayarı hızla bulmak için anahtar sözcükler girin.
 
 :::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="Windows 365 Genel Bakış sekmesinin ekran görüntüsü." lightbox="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png":::
@@ -62,7 +62,7 @@ Tüm Bulut bilgisayarlarını ve sağlama durumlarını ek açıklama çubuğunu
 - **Cihaz adı:** Intune cihaz adı; Bulut bilgisayarın benzersiz tanımlayıcısı.
 - **Kiracı:** Bulut bilgisayarın sağlandığı müşteri kiracısı.
 - **Durum:** Bulut bilgisayarın sağlama durumu.
-- **Lisans türü:** Enterprise veya İş.
+- **Lisans türü:** Kurumsal veya İş.
 - **Özellikler:** Bulut bilgisayar donanım yapılandırması.
 
 Hangi kiracıların belirli bir sağlama durumuna sahip Bulut bilgisayarlarına sahip olduğunu görmek için, listeyi filtrelemek için count-annotation çubuğundan bu durumu seçin. Bir veya daha fazla belirli müşteri kiracısının Bulut Bilgisayar sağlama durumlarını görmek için **Kiracılar** açılan menüsünü kullanarak listeyi filtreleyin.
@@ -71,10 +71,11 @@ Daha fazla ayrıntı görüntülemek ve aşağıdaki gibi yönetim eylemlerini y
 - **Yeni -den başlatın:** Cihazı yeniden başlatmak için öğesini seçin. 
 - **Yeniden sağlama:** Cihazı sıfırlamak için öğesini seçin. Sağlama ilkesini Microsoft Endpoint Manager bağlantısında da görüntüleyebilirsiniz.
 - **Yeni -den adlandırmak:** Kullanıcıya atanan cihazı yeniden adlandırmak için öğesini seçin.
+- **Hesap türünü değiştir:** Kullanıcının hesap türünü seçin: Standart kullanıcı (önerilen) veya Yerel yönetici.
 
 Tüm Bulut Bilgisayarları sekmesi aşağıdaki seçenekleri de içerir:
 
-- **Ihracat:** Cloud PC verilerini virgülle ayrılmış Excel değerler (.csv) dosyasına dışarı aktarmak için seçin.
+- **Ihracat:** Cloud PC verilerini Excel virgülle ayrılmış değerler (.csv) dosyasına dışarı aktarmak için seçin.
 - **Yenileme:** En güncel Cloud PC verilerini almak için öğesini seçin.
 - **Arama:** Listede belirli bir Bulut bilgisayarı hızla bulmak için anahtar sözcükler girin.
 
@@ -90,11 +91,11 @@ Ek açıklama ekleme çubuğunun altındaki listede tüm Azure ağ bağlantılar
 
 Belirli bir sağlama durumuna sahip bağlantıları görmek için, listeyi filtrelemek için count-annotation çubuğundan bu durumu seçin. Belirli bir veya daha fazla müşteri kiracısının bağlantı durumlarını görmek için **Kiracılar** açılan menüsünü kullanarak listeyi filtreleyin.
 
-Listede bir işlem yapmanız veya bağlantı sorunlarını gidermeniz gerekiyorsa **, Microsoft Endpoint Manager bağlantı ayrıntılarını görüntüle'yi** seçin.
+Listede işlem yapmanız veya bağlantı sorunlarını gidermeniz gerekiyorsa **Microsoft Endpoint Manager bağlantı ayrıntılarını görüntüle'yi** seçin.
 
 Azure ağ bağlantıları sekmesi aşağıdaki seçenekleri de içerir:
 
-- **Ihracat:** Bağlantı verilerini virgülle ayrılmış Excel değerler (.csv) dosyasına aktarmak için seçin.
+- **Ihracat:** Bağlantı verilerini Excel virgülle ayrılmış değerler (.csv) dosyasına aktarmak için seçin.
 - **Yenileme:** En güncel bağlantı verilerini almak için öğesini seçin.
 - **Arama:** Belirli bir bağlantıyı hızla bulmak için anahtar sözcükler girin.
 

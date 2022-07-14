@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 05adeb86c5e4da5119a5aae184721ec667564b49
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 14c0d5127f4b370d78b54512d8780d1cc7dfbf67
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629497"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787660"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Insider risk yönetimi Kullanıcılar panosu
 
@@ -44,7 +44,7 @@ Aşağıdaki senaryolarda Kullanıcılar panosunun kullanıcıları nasıl gör�
 
 **Kullanıcılar panosu**, insider risk yönetimi iş akışının dışında olağan dışı bir olay sonrasında insider risk yönetimi ilkelerine eklenen kullanıcıları içerir. Kullanıcıları geçici olarak eklemek (İlkeler panosundan), gerekli bağlayıcı yapılandırılmamış olsa bile ilkeyi test etmek için bir iç risk yönetimi ilkesi için kullanıcı etkinliğini puanlamaya başlamanın bir yoludur.
 
-Kullanıcı bir ilkeye el ile eklendiğinde, önceki 90 güne ilişkin kullanıcı etkinlikleri puanlanır ve **Kullanıcı etkinliği** zaman çizelgesine eklenir. Örneğin, şu anda bir iç risk ilkesi için risk puanları atanmayan bir kullanıcınız var ve kullanıcının kuruluşunuzdaki hukuk departmanına bildirilen veri sızıntısı etkinlikleri var. Hukuk departmanı, kullanıcı için yeni kısa vadeli izleme gereksinimlerini yapılandırmanızı önerir. Kullanıcıyı belirlenen bir süre boyunca (etkinleştirme penceresi) *Veri sızıntıları* ilkenize geçici olarak atayabilirsiniz. Olay gereksinimleri tetiklendiğinden geçici olarak eklenen tüm kullanıcılar **Kullanıcılar panosunda** görüntülenir.
+Kullanıcı bir ilkeye el ile eklendiğinde, önceki 90 güne ilişkin kullanıcı etkinlikleri puanlanır ve **Kullanıcı etkinliği** zaman çizelgesine eklenir. Örneğin, şu anda bir iç risk ilkesi için risk puanları atanmayan bir kullanıcınız var ve kullanıcının kuruluşunuzdaki hukuk departmanına bildirilen veri sızıntısı etkinlikleri var. Hukuk departmanı, kullanıcı için yeni kısa vadeli algılama gereksinimlerini yapılandırmanızı önerir. Kullanıcıyı belirlenen bir süre boyunca (etkinleştirme penceresi) *Veri sızıntıları* ilkenize geçici olarak atayabilirsiniz. Olay gereksinimleri tetiklendiğinden geçici olarak eklenen tüm kullanıcılar **Kullanıcılar panosunda** görüntülenir.
 
 > [!NOTE]
 > El ile eklenen yeni kullanıcıların **Kullanıcılar panosunda** görünmesi birkaç saat sürebilir. Bu kullanıcılar için önceki 90 güne ilişkin etkinliklerin görüntülenmesi 24 saat kadar sürebilir. El ile eklenen kullanıcıların etkinliklerini görüntülemek için **Kullanıcılar panosunda** kullanıcıyı seçin ve ayrıntılar bölmesindeki **Kullanıcı etkinliği** sekmesini açın.

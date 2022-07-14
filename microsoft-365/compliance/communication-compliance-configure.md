@@ -22,12 +22,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8030a842f36f30fdc267a81e4736abdf8f4328f5
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: c641a8699f59454bcc756cb0910f18a125d953e6
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685909"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787682"
 ---
 # <a name="get-started-with-communication-compliance"></a>İletişim uyumluluğunu kullanmaya başlama
 
@@ -159,11 +159,11 @@ Kuruluşunuzdaki grupları iletişim uyumluluk ilkeleri için yapılandırmanız
 |Denetimli kullanıcılar <br> Dışlanan kullanıcılar | Dağıtım grupları <br> Microsoft 365 Grupları | Dinamik dağıtım grupları <br> İç içe dağıtım grupları <br> Posta özellikli güvenlik grupları <br> Dinamik üyeliği olan Microsoft 365 grupları |
 | Yorumcu -lar | Yok | Dağıtım grupları <br> Dinamik dağıtım grupları <br> İç içe dağıtım grupları <br> Posta özellikli güvenlik grupları |
 
-İlkeye bir *dağıtım grubu* atadığınızda, ilke *dağıtım grubundaki* her kullanıcıdan gelen tüm e-postaları ve Teams sohbetlerini izler. İlkeye bir *Microsoft 365 grubu* atadığınızda, ilke microsoft *365 grubuna* gönderilen tüm e-postaları ve Teams sohbetlerini algılar,* her grup üyesi tarafından alınan e-postaları ve sohbetleri algılamaz. Her kullanıcıdan gelen tek tek e-postaların ve Teams sohbetlerinin otomatik olarak izlenmesi için iletişim uyumluluk ilkelerindeki dağıtım gruplarının kullanılması önerilir.
+İlkeye bir *dağıtım grubu* atadığınızda, ilke *dağıtım grubundaki* her kullanıcıdan gelen tüm e-postaları ve Teams sohbetlerini algılar. İlkeye bir *Microsoft 365 grubu* atadığınızda, ilke microsoft *365 grubuna* gönderilen tüm e-postaları ve Teams sohbetlerini algılar,* her grup üyesi tarafından alınan e-postaları ve sohbetleri algılamaz. İletişim uyumluluk ilkelerinde dağıtım gruplarının kullanılması önerilir, böylece her kullanıcıdan gelen tek tek e-postalar ve Teams sohbetleri otomatik olarak algılanır.
 
-Exchange şirket içi dağıtımına veya dış e-posta sağlayıcısına sahip bir kuruluşsanız ve kullanıcılarınız için Microsoft Teams sohbetlerini algılamak istiyorsanız, şirket içi veya dış posta kutuları olan kullanıcılar için izlemesi gereken bir dağıtım grubu oluşturmanız gerekir. Bu adımların ilerleyen bölümlerinde, ilke sihirbazında bu dağıtım grubunu **Denetimli kullanıcılar ve gruplar** seçimi olarak atayacaksınız. Bulut tabanlı depolamayı etkinleştirme gereksinimleri ve sınırlamaları ve şirket içi kullanıcılar için Teams desteği hakkında daha fazla bilgi için bkz. [Şirket içi kullanıcılar için Teams sohbet verilerini arama](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
+Şirket içi Exchange dağıtımına veya dış e-posta sağlayıcısına sahip bir kuruluşsanız ve kullanıcılarınız için Microsoft Teams sohbetlerini algılamak istiyorsanız, şirket içi veya dış posta kutuları olan kullanıcılar için bir dağıtım grubu oluşturmanız gerekir. Bu adımların ilerleyen bölümlerinde, ilke sihirbazında bu dağıtım grubunu **Denetimli kullanıcılar ve gruplar** seçimi olarak atayacaksınız. Bulut tabanlı depolamayı etkinleştirme gereksinimleri ve sınırlamaları ve şirket içi kullanıcılar için Teams desteği hakkında daha fazla bilgi için bkz. [Şirket içi kullanıcılar için Teams sohbet verilerini arama](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
-Büyük kurumsal kuruluşlardaki denetimli kullanıcıları yönetmek için büyük gruplardaki tüm kullanıcıları izlemeniz gerekebilir. PowerShell'i kullanarak, atanan grup için genel iletişim uyumluluk ilkesi için bir dağıtım grubu yapılandırabilirsiniz. Bu, tek bir ilkeyle binlerce kullanıcıyı izlemenize ve kuruluşunuza yeni çalışanlar katıldığında iletişim uyumluluk ilkesini güncel tutmanıza olanak tanır.
+Büyük kurumsal kuruluşlardaki denetimli kullanıcıları yönetmek için büyük gruplardaki tüm kullanıcılara yönelik iletileri algılamanız gerekebilir. PowerShell'i kullanarak, atanan grup için genel iletişim uyumluluk ilkesi için bir dağıtım grubu yapılandırabilirsiniz. Bu, tek bir ilkeye sahip binlerce kullanıcının iletilerini algılamanıza ve kuruluşunuza yeni çalışanlar katıldığında iletişim uyumluluk ilkesini güncel tutmanıza olanak tanır.
 
 1. Aşağıdaki özelliklerle genel iletişim uyumluluk ilkeniz için ayrılmış bir [dağıtım grubu](/powershell/module/exchange/new-distributiongroup) oluşturun: Bu dağıtım grubunun başka amaçlar veya diğer Office 365 hizmetleri için kullanılmadığından emin olun.
 
@@ -226,7 +226,7 @@ Yammer'ı Yerel Modda yapılandırma hakkında daha fazla bilgi için bkz:
 
     - İlke adını onaylayın veya güncelleştirin. İlke oluşturulduktan sonra ilke adları değiştirilemez.
 
-    - Dışlamak istediğiniz kullanıcıları veya grupları seçmek de dahil olmak üzere denetlenecek kullanıcıları veya grupları seçin. İlgi alanı çakışması şablonunu kullanırken, iç iletişimleri izlemek için iki grup veya iki kullanıcı seçersiniz.
+    - Dışlamak istediğiniz kullanıcıları veya grupları seçmek de dahil olmak üzere denetlenecek kullanıcıları veya grupları seçin. İlgi alanı çakışması şablonunu kullanırken iç iletişimi algılamak için iki veya iki kullanıcı seçersiniz.
 
     - İlke için gözden geçirenleri seçin. Gözden geçirenler tek tek kullanıcılardır ve tüm gözden geçirenlerin Exchange Online'da barındırılan posta kutuları olmalıdır. Buraya eklenen gözden geçirenler, araştırma ve düzeltme iş akışında uyarıyı yükseltirken aralarından seçim yapabileceğiniz gözden geçirenlerdir. Gözden geçirenler bir ilkeye eklendiğinde, ilkeye atamayı bildiren ve gözden geçirme işlemiyle ilgili bilgilerin bağlantılarını sağlayan bir e-posta iletisini otomatik olarak alır.
 
@@ -319,7 +319,7 @@ Cmdlet söz dizimi hakkında daha fazla bilgi için bkz. [New-ComplianceSecurity
 2. İletişim uyumluluk ilkesinde tanımladığınız ölçütlere uyan bir e-posta, Microsoft Teams sohbeti veya Yammer iletisi gönderin. Bu test anahtar sözcük, ek boyutu, etki alanı vb. olabilir. İlkedeki yapılandırdığınız koşullu ayarların çok kısıtlayıcı mı yoksa çok mu yumuşak olduğunu saptadığınızdan emin olun.
 
     > [!NOTE]
-    > E-posta iletilerinin bir ilkede tam olarak işlenmesi yaklaşık 24 saat sürebilir. Microsoft Teams, Yammer ve üçüncü taraf platformlarındaki iletişimlerin bir ilkede tam olarak işlenmesi yaklaşık 48 saat sürebilir.
+    > Email iletilerin bir ilkede tam olarak işlenmesi yaklaşık 24 saat sürebilir. Microsoft Teams, Yammer ve üçüncü taraf platformlarındaki iletişimlerin bir ilkede tam olarak işlenmesi yaklaşık 48 saat sürebilir.
 
 3. İletişim uyumluluk ilkesinde belirlenen gözden geçiren olarak Microsoft 365'te oturum açın. İlkelerinizin **uyarılarını** görüntülemek için **İletişim uyumluluğu** >  Uyarıları'na gidin.
 

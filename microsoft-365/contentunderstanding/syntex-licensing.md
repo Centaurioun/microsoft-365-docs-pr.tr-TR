@@ -13,16 +13,16 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: SharePoint Syntex için lisanslama hakkında bilgi edinin
-ms.openlocfilehash: 7a7f310cb9c925fdb98a38ee12335abde91ea1db
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 31b10c0107bf871f827244889ac7ec77f7958e1f
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839340"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787506"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>SharePoint Syntex lisansı
 
-SharePoint Syntex kullanmak için kuruluşunuzun bir SharePoint Syntex aboneliği ve her SharePoint Syntex kullanıcının bir lisansı olmalıdır. SharePoint Syntex aboneliğinizi gelecekteki bir tarihte iptal ederseniz (veya deneme süreniz dolarsa), kullanıcılar artık belge anlama veya form işleme modelleri oluşturamaz, yayımlayamaz veya çalıştıramaz. Ayrıca terim deposu raporları, SKOS taksonomisi içeri aktarma ve içerik türü gönderimi artık kullanılamaz. Hiçbir model, içerik veya meta veri silinmez ve site izinleri değiştirilmez.
+SharePoint Syntex kullanmak için her Syntex kullanıcısına bir lisans gerekir. SharePoint Syntex lisanslarınızı gelecekteki bir tarihte iptal ederseniz (veya deneme süreniz dolarsa), kullanıcılar artık belge anlama veya form işleme modelleri oluşturamaz, yayımlayamaz veya çalıştıramaz. Ayrıca terim deposu raporları, SKOS taksonomisi içeri aktarma ve içerik türü gönderimi artık kullanılamaz. Hiçbir model, içerik veya meta veri silinmez ve site izinleri değiştirilmez.
  
 > [!NOTE] 
 > SharePoint Syntex bir eklenti lisansıdır ve kullanıcıların da Microsoft 365 lisansına sahip olmasını gerektirir.
