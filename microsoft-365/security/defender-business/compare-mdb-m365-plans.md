@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 9c3c4cf2914e268abeabc199e72ef28dac81a0f1
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: be57910a1f6b2387a1b826e6cff17e418ec3da2b
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772006"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795388"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Küçük ve orta ölçekli işletmeler için Microsoft 365 planlarındaki güvenlik özelliklerini karşılaştırma
 
@@ -48,7 +48,7 @@ Microsoft, küçük ve orta ölçekli işletmelere yönelik planlar da dahil olm
 |Email koruması|Evet <br/>[Microsoft Defender Virüsten Koruma ile Email tarama](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|Evet <ul><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>[Microsoft Defender Virüsten Koruma ile Email tarama](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)</li></ul>|
 |Antispam koruması|Evet<br/>Cihazlar için|Evet <ul><li>Cihazlar için</li><li>İletiler ve ekler gibi Microsoft 365 e-posta içeriği için</li></ul>|
 |Kötü amaçlı yazılımdan koruma|Evet<br/>Cihazlar için|Evet<ul><li>Cihazlar için</li><li>İletiler ve ekler gibi Microsoft 365 e-posta içeriği için</li></ul>|
-|[Yeni nesil koruma](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (virüsten koruma ve kötü amaçlı yazılımdan koruma)|Evet<br/>Microsoft Defender Virüsten Koruma Windows 10 ve sonraki sürümlere dahildir|Evet <ul><li>Microsoft Defender Virüsten Koruma Windows 10 ve sonraki sürümlere dahildir</li><li>Eklenen cihazlar için yeni nesil koruma ilkeleri</li></ul>|
+|[Yeni nesil koruma](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (eklenen cihazlar için virüsten koruma ve kötü amaçlı yazılımdan koruma)|Evet |Evet |
 |[Saldırı yüzeyini azaltma](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(Windows 10 veya sonraki sürümlerde ASR kuralları ve güvenlik duvarı koruması)|Evet|Evet|
 |[Uç nokta algılama ve yanıt](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(davranış tabanlı algılama ve el ile yanıt eylemleri)|Evet|Evet|
 |[Otomatik araştırma ve yanıt](../defender-endpoint/automated-investigations.md)|Evet|Evet|

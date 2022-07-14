@@ -16,12 +16,12 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 3b11cd3fa74d822baf0d4662fea43e53c6e5ef3e
-  ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+  ms.openlocfilehash: 405f96858ece26d624ad53db5a49b27bf538dbe4
+  ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 07/13/2022
-  ms.locfileid: "66772204"
+  ms.lasthandoff: 07/14/2022
+  ms.locfileid: "66795366"
 title: İş için Microsoft Defender - Sık sorulan sorular ve yanıtlar
 summary: >
   İş için Defender hakkında sorularınıza yanıt almak için bu makaleyi kullanın.
@@ -49,10 +49,12 @@ sections:
   - question: İş için Defender ile kaç cihaz ekleyebilir ve bunların güvenliğini sağlayabilirim?
     answer: >
       Kullanıcı lisansı başına en fazla beş istemci cihazı ekleyebilir ve güvenliğini sağlayabilirsiniz.
-  - question: İş için Defender sunucuları destekliyor mu?
-    answer: "Sunucu desteği artık önizleme aşamasında! Bkz. [İş için Microsoft Defender sunucuları alma (önizleme)](get-defender-business-servers.md).  \n"
   - question: İş için Defender Mac, Android ve iOS/iPadOS istemci cihazlarını koruyor mu?
     answer: "Evet. İş için Defender Mac, Android ve iOS/iPadOS cihazları için korumayı destekler. Bkz [. Cihazları ekleme](mdb-onboard-devices.md).\n\n- Mac cihazlarını Microsoft 365 Defender portalında yerel bir betik kullanarak ekleyebilirsiniz. \n- Android ve iOS/iPadOS cihazlarını eklemek için [Microsoft Intune](/mem/intune/) lisansına sahip olmanız gerekir. Intune Microsoft 365 İş Ekstra dahildir ve İş için Defender (tek başına) için satın alınabilir.\n\nMac, iOS/iPadOS ve Android cihazlar için daha basitleştirme yol haritasındadır. \n"
+  - question: İş için Defender sunucuları destekliyor mu?
+    answer: "Sunucu desteği artık önizleme aşamasında! Bkz. [İş için Microsoft Defender sunucuları alma (önizleme)](get-defender-business-servers.md).  \n\nİş için Microsoft Defender sunucuları lisansı genel kullanıma sunulduğunda (GA), Microsoft 365 İş Ekstra ve İş için Defender'ın tek başına sürümü için bir eklenti olarak sunulur. GA'da İş için Microsoft Defender sunucuların fiyatı sunucu örneği başına 3 ABD doları olacaktır. Bu noktada, eklenen her sunucu için bir lisans satın alabilir veya İş için Defender'dan sunucuları kullanıma almayı seçebilirsiniz.\n"
+  - question: İş için Microsoft Defender sunucuları ile Sunucular için Microsoft Defender Plan 1 ve Plan 2 arasındaki fark nedir?
+    answer: "İş için Defender sunucuları, İş için Defender'ın bir eklentisidir ve yalnızca Microsoft 365 İş Ekstra. 300'e kadar çalışanı olan işletmeler için Microsoft 365 Defender portalındaki ([https://security.microsoft.com](https://security.microsoft.com)) hem istemciler hem de sunucular için tek bir uç nokta güvenlik deneyimi sağlar. Basitleştirilmiş bir yapılandırma işlemi ve cihaz ekleme seçenekleriyle, İş için Defender, şirket cihazlarını korumak için Sunucular için Defender'ı veya Bulut için Defender'ı ayarlamak, yapılandırmak ve kullanmak için güvenlik arka planına sahip olması gerekmeyen müşterilere olanak tanır. \n\nSunucular için Defender Plan 1/Plan 2, diğer Microsoft bulut planlarıyla satın alınabilen kurumsal odaklı bir tekliftir. Sunucular için Defender Plan 1 ve Plan 2, [Bulut için Microsoft Defender'ın](/azure/defender-for-cloud/defender-for-cloud-introduction) bir parçasıdır. Altı aylık veri saklama ve Microsoft Tehdit Uzmanları hizmeti ile gelişmiş tehdit avcılığı, Sunucular için Defender Plan 1 veya Plan 2 ile kullanılabilir.\n\nBulut için Defender, tüm Azure, şirket içi ve çoklu bulut (Amazon AWS ve Google GCP) kaynaklarınız için bir Bulut Güvenliği Duruş Yönetimi (CSPM) ve Bulut İş Yükü Koruma Platformu (CWPP) hizmetidir. Bulut için Defender yönetici deneyimi, Azure portal ([https://portal.azure.com](https://portal.azure.com) ) içinde yer alır.\n"
   - question: İş için Defender'da birden fazla web içeriği filtreleme ilkesi yapılandırabilir miyim?
     answer: "Şu anda, İş için Defender, İş için Defender kiracısı başına yalnızca bir tekdüzen web filtreleme ilkesini destekler. \n\nBkz. [Web içeriği filtrelemeyi ayarlama](mdb-configure-security-settings.md#set-up-web-content-filtering).\n"
   - question: İş için Defender ile Microsoft dışı virüsten koruma/kötü amaçlı yazılımdan koruma yazılımı kullanabilir miyim?

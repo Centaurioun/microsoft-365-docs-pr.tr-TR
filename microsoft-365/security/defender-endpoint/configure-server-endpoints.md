@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 547b41deceae01045baf119aeba1c15b8573a23f
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: ac40dcc986dfb4c66b9030cdf8c22ebabe1bd3d2
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695877"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795432"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme
 
@@ -298,11 +298,10 @@ Yükleme, kaldırma ve ekleme işlemini otomatikleştirmeye yardımcı olması i
     ```
 
     > [!NOTE]
-    > Aracı yükleme sorunlarını gidermeniz gerekiyorsa, install.ps1 betik parametrelerine '-etl -log' ekleyin.
-    >
+
     > Önerilen yürütme ilkesi ayarıdır `Allsigned`. Betik uç noktada SYSTEM olarak çalışıyorsa bu, betiğin imzalama sertifikasının Yerel Bilgisayar Güvenilen Yayımcılar deposuna aktarılmasını gerektirir.
 
-    paylaşılan *install.ps1* dosyasının tam etki alanı adını (FQDN) kullanarak sunucuadı-veya-dfs-space\share-name yerine UNC yolunu yazın\\. Yükleyici paketi md4ws.msi aynı dizine yerleştirilmelidir.  Ayrıca, UNC yolunun izinlerinin platformu yükleyen bilgisayar hesabına okuma erişimine izin verdiğinden emin olun.
+    paylaşılan *install.ps1* dosyasının tam etki alanı adını (FQDN) kullanarak sunucuadı-veya-dfs-space\share-name yerine UNC yolunu yazın\\. Yükleyici paketi md4ws.msi aynı dizine yerleştirilmelidir.  UNC yolunun izinlerinin, günlük dosyalarının oluşturulmasını desteklemek için paketi yükleyen bilgisayar hesabına yazma erişimine izin verdiğinden emin olun. Günlük dosyalarının oluşturulmasını devre dışı bırakmak istiyorsanız (önerilmez), -noETL -noETW parametrelerini kullanabilirsiniz.
 
     Microsoft Defender Virüsten Koruma'nın Microsoft dışı kötü amaçlı yazılımdan koruma çözümleriyle birlikte var olmasını istediğiniz senaryolar için yükleme sırasında pasif modu ayarlamak için $Passive parametresini ekleyin.
 

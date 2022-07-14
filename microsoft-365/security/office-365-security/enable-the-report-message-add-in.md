@@ -17,12 +17,12 @@ ms.collection:
 description: Outlook ve Web üzerinde Outlook, tek tek kullanıcılar veya kuruluşunuzun tamamı için Rapor İletisi veya Rapor Kimlik Avı eklentilerini etkinleştirmeyi öğrenin.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 636effd1f3d9f0fd824ead4ed59e48fdee26ef20
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: f1d51499558780f1b20fa5f6955e7c4a7c2ff5e8
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685711"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795454"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Rapor İletisini veya Rapor Kimlik Avı eklentilerini etkinleştirme
 
@@ -205,3 +205,24 @@ Eklenti yüklenip etkinleştirildikten sonra aşağıdaki simgeleri görürsün�
     > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="Rapor Kimlik Avı açılır öğesi." lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
 3. Eklentiyi kaldırmak için aynı açılır öğedeki **Eylemler'in** altında **Uygulamayı kaldır'ı** seçin.
+
+## <a name="get-the-report-message-or-the-report-phishing-add-ins-for-the-gcc-and-gcch-users"></a>GCC ve GCCH kullanıcıları için Rapor İletisi veya Rapor Kimlik Avı eklentilerini alma
+
+Kamu Topluluğu Bulutu Yüksek (GCCH) veya Kamu Topluluk Bulutu (GCC) yöneticisiyseniz, kuruluşunuz için Rapor İletisi veya Rapor Kimlik Avı eklentilerini almak için aşağıdaki adımları kullanın. Bireysel bir kullanıcıysanız, Microsoft AppSource kullanarak eklentiyi alamazsınız.
+
+> [!NOTE]
+> Eklentinin kuruluşunuzda görünmesi 24 saat kadar sürebilir. 
+
+1. Microsoft 365 yönetim merkezi **Ayarlar** \> **Eklentileri'ne** gidin ve **Eklenti dağıt'ı** seçin. 
+
+2. **Yeni eklenti dağıtma** açılır öğesi açılır. **İleri'ye** tıklayın ve **ardından Özel uygulamaları karşıya yükle'yi** seçin.  
+
+3. **Bildirim dosyası için URL'm var'ı** seçin. [Rapor İletisi ve Rapor](https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml) [Kimlik Avı](https://ipagave.azurewebsites.net/ReportMessageManifest/ReportPhishingAzure.xml) eklentilerini almak için aşağıdaki URL'leri kullanın. 
+
+4. Eklentiye erişecek kullanıcıları seçin, bir dağıtım yöntemi seçin ve ardından **Dağıt'ı** seçin. 
+
+5. Ayarları tam olarak yapılandırmak için bkz. [Kullanıcı tarafından bildirilen ileti ayarları](user-submission.md). 
+
+## <a name="use-the-report-message-or-the-report-phishing-add-ins"></a>Rapor İletisini veya Rapor Kimlik Avı eklentilerini kullanma
+
+Outlook'ta hatalı pozitif (engellenmiş veya gereksiz klasöre gönderilmiş iyi e-posta) ve hatalı negatifler (gelen kutusuna teslim edilen istenmeyen e-posta veya kimlik avı) göndermek için Rapor İletisi veya Rapor Kimlik Avı eklentilerini kullanabilirsiniz. Daha fazla bilgi için bkz. [Outlook'ta hatalı pozitif ve hatalı negatifleri raporlama](report-false-positives-and-false-negatives.md).
