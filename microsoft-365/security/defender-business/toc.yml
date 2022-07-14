@@ -11,10 +11,12 @@
           href: trial-playbook-defender-business.md
         - name: Küçük ve orta ölçekli işletmeler için planları karşılaştırın
           href: compare-mdb-m365-plans.md
-        - name: Microsoft 365 Lighthouse ile tümleştirme
-          href: mdb-lighthouse-integration.md
+        - name: Özellikleri önizleyin
+          href: mdb-preview.md
         - name: İş ortakları için kaynaklar
           href: mdb-partners.md
+        - name: Microsoft 365 Lighthouse ile tümleştirme
+          href: mdb-lighthouse-integration.md
     - name: Kullanmaya başlayın
       items:
         - name: İş için Defender'ı edinin
@@ -75,6 +77,8 @@
           href: mdb-offboard-devices.md
     - name: Başvuru bilgileri
       items:
+        - name: İş için Microsoft Defender sunucuları nasıl alınır (önizleme)
+          href: get-defender-business-servers.md
         - name: Yardım almak veya de destek ile iletişim kurma
           href: mdb-get-help.md
         - name: Sık sorulan sorular
