@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 eKeşif araçlarının e-posta iletilerine ekli ve SharePoint Online ile OneDrive İş depolanan şifrelenmiş belgeleri nasıl işlediği hakkında bilgi edinin.
-ms.openlocfilehash: 5e94c7b09745d017d5fa91d39a58c9d5351e911a
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: bec0b4c600f3bb7b08d10f2b32b00edb627a1165
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66770865"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66798093"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Microsoft 365 eBulma araçlarında şifre çözme
 
@@ -35,7 +35,7 @@ Bu yeni özellik öncesinde, yalnızca hak yönetimi (ekli dosyalar değil) tara
 
 ## <a name="supported-encryption-technologies"></a>Desteklenen şifreleme teknolojileri
 
-Exchange için, Microsoft eBulma araçları Microsoft şifreleme teknolojileriyle şifrelenmiş öğeleri destekler. Bu teknolojiler Azure Rights Management (Azure RMS)<sup>3</sup> ve Microsoft Purview Bilgi Koruması (özellikle duyarlılık etiketleri) teknolojileridir. Microsoft şifreleme teknolojileri hakkında daha fazla bilgi için bkz [. Şifreleme](encryption.md). S/MIME veya üçüncü taraf şifreleme teknolojileri tarafından şifrelenen içerik desteklenmez. Örneğin, Microsoft dışı teknolojilerle şifrelenmiş içeriklerin önizlemesini görüntüleme veya dışarı aktarma desteklenmez.
+Exchange için, Microsoft eBulma araçları Microsoft şifreleme teknolojileriyle şifrelenmiş öğeleri destekler. Bu teknolojiler Azure Rights Management (Azure RMS)<sup>3</sup> ve Microsoft Purview Bilgi Koruması (özellikle duyarlılık etiketleri) teknolojileridir. Microsoft şifreleme teknolojileri hakkında daha fazla bilgi için bkz [. Şifreleme](encryption.md) ve kullanılabilen çeşitli [e-posta şifreleme](email-encryption.md#comparing-email-encryption-options-available-in-office-365) seçenekleri. S/MIME veya üçüncü taraf şifreleme teknolojileri tarafından şifrelenen içerik desteklenmez. Örneğin, Microsoft dışı teknolojilerle şifrelenmiş içeriklerin önizlemesini görüntüleme veya dışarı aktarma desteklenmez.
 
 > [!NOTE]
 > [Microsoft Purview İleti Şifrelemesi özel markalama şablonuyla](add-your-organization-brand-to-encrypted-messages.md) gönderilen e-posta iletilerinin şifre çözmesi Microsoft eKeşif araçları tarafından desteklenmez. OME özel markalama şablonu kullanılırken, e-posta iletileri alıcının posta kutusu yerine OME portalına teslim edilir. Bu nedenle, şifrelenmiş iletileri aramak için eBulma araçlarını kullanamazsınız çünkü bu iletiler alıcının posta kutusu tarafından hiçbir zaman alınmaz.
@@ -91,7 +91,7 @@ Bu rol varsayılan olarak Microsoft Purview uyumluluk portalı **İzinler** sayf
 
 ## <a name="notes"></a>Notlar
 
-<sup>1</sup> Yerel bir bilgisayarda bulunan şifrelenmiş dosyaların ve e-posta iletisine kopyalanan bulut eklerinin şifresi çözülmez ve eBulma için dizine eklenmez. 
+<sup>1</sup> Yerel bir bilgisayarda bulunan ve e-posta iletisine kopyalanan şifrelenmiş dosyaların şifresi çözülmez ve eBulma için dizine eklenmez. eBulma (Premium) için, alıcı posta kutusunda şifrelenmiş e-posta ve eklerin şifresinin çözülmesi için gelişmiş dizine alınması gerekir. Gelişmiş dizin oluşturma hakkında daha fazla bilgi için bkz. [Koruyucu verilerin gelişmiş dizinlenmesi](indexing-custodian-data.md).
 
 <sup>2</sup> Yalnızca SharePoint online hizmetinde etiketlenen öğelerin şifresi çözülür, karşıya yüklemeden önce istemcide etiketleme veya şifreleme, eski belge kitaplığı RMS şablonları veya ayarları, SMIME veya başka herhangi bir standart vb. dahil olmak üzere diğer her şey desteklenmez. Bkz [. Office dosyaları için duyarlılık etiketlerini etkinleştirme](sensitivity-labels-sharepoint-onedrive-files.md).
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Yöneticiler, karantinaya alınan iletilere kullanıcıların yapabileceklerini denetlemek için karantina ilkelerini kullanmayı öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 780d2bade0713bac295cf9597662c5ef2313a093
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9d23083927d50d226692afe19223ed93aceb0b7b
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490110"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66798180"
 ---
 # <a name="quarantine-policies"></a>Karantina ilkeleri
 
@@ -98,7 +98,9 @@ DefaultFullAccessPolicy izinlerini sağlamak ancak karantina bildirimleri açık
 
 ## <a name="step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal"></a>1. Adım: Microsoft 365 Defender portalında karantina ilkeleri oluşturma
 
-1. [Microsoft 365 Defender portalında](https://security.microsoft.com), **Kurallar** bölümündeki **E-posta & işbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** **Karantina ilkeleri'ne** \> gidin. Veya doğrudan **Karantina ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantinePolicies>.
+1. [Microsoft 365 Defender portalında](https://security.microsoft.com), **Kurallar** bölümündeki **Email & işbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** **Karantina ilkeleri'ne** \> gidin. Veya doğrudan **Karantina ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantinePolicies>.
+
+   :::image type="content" source="../../media/mdo-quarantine-policy-page.png" alt-text="Microsoft 365 Defender portalında karantina ilkesi sayfası." lightbox="../../media/mdo-quarantine-policy-page.png":::
 
 2. **Karantina ilkeleri** sayfasında Özel ilke ekle simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Özel ilke ekleyin**.
 
@@ -203,7 +205,7 @@ E-posta iletilerini karantinaya alan _desteklenen_ koruma özelliklerinde, kulla
 |[İstenmeyen posta önleme ilkeleri](configure-your-spam-filter-policies.md): <ul><li>**İstenmeyen Posta** (_İstenmeyen Posta)_</li><li>**Yüksek güvenilirlikli istenmeyen posta** (_HighConfidenceSpamAction_)</li><li>**Kimlik Avı** (_PhishSpamAction_)</li><li>**Yüksek güvenilirlikli kimlik avı** (_HighConfidencePhishAction_)</li><li>**Toplu** (_BulkSpamAction_)</li></ul>|Evet|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Tam erişim)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Tam erişim)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Tam erişim)</li><li>AdminOnlyAccessPolicy (Erişim yok)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Tam erişim)</li></ul>|
 |Kimlik avı önleme ilkeleri: <ul><li>[Kimlik sahtekarlığına karşı koruma](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Office 365 için Defender kimliğe bürünme koruması](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**İleti kimliğine bürünülmüş bir kullanıcı olarak algılanırsa** (_TargetedUserProtectionAction_)</li><li>**İleti kimliğine bürünülen bir etki alanı olarak algılanırsa** (_TargetedDomainProtectionAction_)</li><li>**Posta kutusu zekası kullanıcı algılarsa ve kimliğine bürünüldüyse** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Evet|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Tam erişim)</li><li>Kimliğe bürünme koruması:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Tam erişim)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Tam erişim)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Tam erişim)</li></ul></li></ul>|
 |[Kötü amaçlı yazılımdan koruma ilkeleri](configure-anti-malware-policies.md): Algılanan tüm iletiler her zaman karantinaya alınır.|Evet|AdminOnlyAccessPolicy (Erişim yok)|
-|[Güvenli Ekler koruması](safe-attachments.md): <ul><li>Güvenli Ekler ilkeleri (_Etkinleştir_ ve _Eylem_) tarafından kötü amaçlı yazılım olarak karantinaya alınan ekleri içeren e-posta iletileri</li><li>[SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler](mdo-for-spo-odb-and-teams.md) tarafından kötü amaçlı yazılım olarak karantinaya alınan dosyalar</li></ul>|<ul><li>Evet</li><li>Hayır</li></ul>|<ul><li>AdminOnlyAccessPolicy (Erişim yok)</li><li>yok</li></ul>|
+|[Güvenli Ekler koruması](safe-attachments.md): <ul><li>Güvenli Ekler ilkeleri (_Etkinleştir_ ve _Eylem_) tarafından kötü amaçlı yazılım olarak karantinaya alınan ekleri olan iletileri Email</li><li>[SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler](mdo-for-spo-odb-and-teams.md) tarafından kötü amaçlı yazılım olarak karantinaya alınan dosyalar</li></ul>|<ul><li>Evet</li><li>Hayır</li></ul>|<ul><li>AdminOnlyAccessPolicy (Erişim yok)</li><li>yok</li></ul>|
 |[Posta akışı kuralları](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (taşıma kuralları olarak da bilinir) eylemiyle birlikte: **İletiyi barındırılan karantinaya (** Karantina) teslim _edin_.|Hayır|yok|
 
 <sup>\*</sup>[Bu makalede daha önce açıklandığı](#full-access-permissions-and-quarantine-notifications) gibi, kuruluşunuz DefaultFullAccessPolicy yerine NotificationEnabledPolicy kullanabilir. Bu iki karantina ilkesi arasındaki tek fark, karantina bildirimlerinin NotificationEnabledPolicy'de açılması ve DefaultFullAccessPolicy'de kapatılmasıdır.
@@ -220,7 +222,7 @@ Varsayılan karantina ilkeleri, önceden ayarlanmış izin grupları ve izinler 
 
 ### <a name="anti-spam-policies"></a>İstenmeyen posta önleme ilkeleri
 
-1. [Microsoft 365 Defender portalında](https://security.microsoft.com), **İlkeler** bölümünde **e-posta & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin.
+1. [Microsoft 365 Defender portalında](https://security.microsoft.com), İlkeler **bölümünde** **Email & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin.
 
    Veya doğrudan **Ant-istenmeyen posta ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/antispam>.
 
@@ -289,7 +291,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-HostedContentFil
 
 Kimlik sahtekarlık zekası EOP ve Office 365 için Defender kullanılabilir. Kullanıcı kimliğe bürünme koruması, etki alanı kimliğe bürünme koruması ve posta kutusu zekası yalnızca Office 365 için Defender kullanılabilir. Daha fazla bilgi için bkz. [Microsoft 365'te kimlik avı önleme ilkeleri](set-up-anti-phishing-policies.md).
 
-1. [Microsoft 365 Defender portalında](https://security.microsoft.com), İlkeler **bölümünde** **e-posta & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin.
+1. [Microsoft 365 Defender portalında](https://security.microsoft.com), İlkeler **bölümünde** **Email & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin.
 
    Veya doğrudan **Ant-istenmeyen posta ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/antiphishing>.
 
@@ -372,7 +374,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-AntiPhishPolicy]
 
 ### <a name="anti-malware-policies"></a>Kötü amaçlı yazılımdan koruma ilkeleri
 
-1. [Microsoft 365 Defender portalında](https://security.microsoft.com), **İlkeler** bölümünde **e-posta & işbirliği** \> **İlkeleri & kurallar** \> **Tehdit ilkeleri** \> **Kötü amaçlı yazılımdan koruma** bölümüne gidin.
+1. [Microsoft 365 Defender portalında](https://security.microsoft.com), İlkeler **bölümünde** **Email & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kötü amaçlı yazılımdan koruma** bölümüne gidin.
 
    Ya da doğrudan **Kötü amaçlı yazılımdan koruma** sayfasına gitmek için kullanın <https://security.microsoft.com/antimalwarev2>.
 
@@ -428,7 +430,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-MalwareFilterPol
 
 ### <a name="safe-attachments-policies-in-defender-for-office-365"></a>Office 365 için Defender'da Güvenli Ekler ilkeleri
 
-1. [Microsoft 365 Defender portalında](https://security.microsoft.com), **İlkeler** bölümünde **e-posta & işbirliği** \> **İlkeleri & kurallar** \> **Tehdit ilkeleri** \> **Güvenli Ekler'e** gidin.
+1. [Microsoft 365 Defender portalında](https://security.microsoft.com), İlkeler **bölümündeki** **Email & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Güvenli Ekler'e** gidin.
 
    Ya da doğrudan **Güvenli Ekler** sayfasına gitmek için kullanın <https://security.microsoft.com/safeattachmentv2>.
 
@@ -492,7 +494,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-MalwareFilterPol
 
 Karantina ilkeleri için genel ayarlar, karantinaya alınan iletilerin alıcılarına gönderilen karantina bildirimlerini, karantina ilkesinde karantina bildirimleri açıksa özelleştirmenize olanak sağlar. Bu bildirimler hakkında daha fazla bilgi için bkz [. Karantina bildirimleri](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. Microsoft 365 Defender portalında **Kurallar bölümündeki** **E-posta & işbirliği** \> **İlkeleri & kurallar** \> **Tehdit ilkeleri** **Karantina ilkeleri'ne** \> gidin. Veya doğrudan **Karantina ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantinePolicies>.
+1. Microsoft 365 Defender portalında, **Kurallar** bölümündeki **Email & işbirliği** \> **İlkeleri & kurallar** \> **Tehdit ilkeleri** **Karantina ilkeleri'ne** \> gidin. Veya doğrudan **Karantina ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantinePolicies>.
 
 2. **Karantina ilkeleri** sayfasında **Genel ayarlar'ı** seçin.
 
@@ -531,9 +533,11 @@ Karantina ilkeleri için genel ayarlar, karantinaya alınan iletilerin alıcıla
 
 4. Bitirdiğinizde, **Kaydet**'i tıklatın.
 
+   :::image type="content" source="../../media/mdo-quarantine-policy-quarantine-notification-settings.png" alt-text="Microsoft 365 Defender portalında karantina bildirim ayarları açılır öğesi." lightbox="../../media/mdo-quarantine-policy-quarantine-notification-settings.png":::
+
 ## <a name="view-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında karantina ilkelerini görüntüleme
 
-1. Microsoft 365 Defender portalında **Kurallar bölümündeki** **E-posta & işbirliği** \> **İlkeleri & kurallar** \> **Tehdit ilkeleri** **Karantina ilkeleri'ne** \> gidin. Veya doğrudan **Karantina ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantinePolicies>.
+1. Microsoft 365 Defender portalında, **Kurallar** bölümündeki **Email & işbirliği** \> **İlkeleri & kurallar** \> **Tehdit ilkeleri** **Karantina ilkeleri'ne** \> gidin. Veya doğrudan **Karantina ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantinePolicies>.
 
 2. **Karantina ilkeleri** sayfası, **ad** ve **son güncelleştirme** tarihine göre ilkelerin listesini gösterir.
 
@@ -569,7 +573,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-HostedContentFil
 
 AdminOnlyAccessPolicy veya DefaultFullAccessPolicy adlı yerleşik karantina ilkelerini değiştiremezsiniz. NotificationEnabledPolicy adlı yerleşik ilkeyi (varsa) ve özel karantina ilkelerini [değiştirebilirsiniz](#full-access-permissions-and-quarantine-notifications).
 
-1. Microsoft 365 Defender portalında **Kurallar bölümündeki** **E-posta & işbirliği** \> **İlkeleri & kurallar** \> **Tehdit ilkeleri** **Karantina ilkeleri'ne** \> gidin. Veya doğrudan **Karantina ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantinePolicies>.
+1. Microsoft 365 Defender portalında, **Kurallar** bölümündeki **Email & işbirliği** \> **İlkeleri & kurallar** \> **Tehdit ilkeleri** **Karantina ilkeleri'ne** \> gidin. Veya doğrudan **Karantina ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantinePolicies>.
 
 2. **Karantina ilkeleri** sayfasında, ada tıklayarak ilkeyi seçin.
 
@@ -606,7 +610,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-QuarantinePolicy
 
   Karantina ilkesi kullanılıyorsa, kaldırmadan önce [atanan karantina ilkesini değiştirin](#step-2-assign-a-quarantine-policy-to-supported-features) .
 
-1. Microsoft 365 Defender portalında **Kurallar bölümündeki** **E-posta & işbirliği** \> **İlkeleri & kurallar** \> **Tehdit ilkeleri** **Karantina ilkeleri'ne** \> gidin. Veya doğrudan **Karantina ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantinePolicies>.
+1. Microsoft 365 Defender portalında, **Kurallar** bölümündeki **Email & işbirliği** \> **İlkeleri & kurallar** \> **Tehdit ilkeleri** **Karantina ilkeleri'ne** \> gidin. Veya doğrudan **Karantina ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantinePolicies>.
 
 2. **Karantina ilkeleri** sayfasında, ada tıklayarak kaldırmak istediğiniz özel karantina ilkesini seçin.
 
