@@ -23,12 +23,12 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 ms.date: 05/26/2022
-ms.openlocfilehash: 113905d76864fecdc4fc38d46e4dc6f3e625348f
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: c8847915fdf9ed587fea410670f5b37194dfa8ae
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663822"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787132"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Aboneliğiniz için ödeme yapma
 
@@ -47,15 +47,15 @@ Aboneliğinizi ödemek için kredi kartı, ATM kartı veya banka hesabı kullana
 - Bu makalede açıklanan adımları gerçekleştirmek için Genel yönetici veya Faturalandırma yöneticisi olmanız gerekir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
 - Ödeme sırasında seçtiğiniz ödeme yöntemi, gelecekteki tüm faturalama dönemleri için kullanacağımız ödeme yöntemidir. İstediğiniz zaman değiştirebilirsiniz.
 
-## <a name="new-regulations-from-the-reserve-bank-of-india"></a>Hindistan Rezerv Bankası'ndan yeni düzenlemeler
+## <a name="directives-from-the-reserve-bank-of-india"></a>Hindistan Merkez Bankası yönergeleri
 
-1 Ekim 2021 itibarıyla Hindistan'daki otomatik ödemeler, özellikle 5.000 INR'yi aşan işlemler olmak üzere bazı kredi kartı işlemlerini engelleyebilir. Bu düzenleme nedeniyle, Microsoft 365 yönetim merkezinde el ile ödeme yapmanız gerekebilir. Bu düzenlemeler, kullanımınız için ücretlendirildiğiniz toplam tutarı etkilemez.
+Şu anda, özellikle 5.000 INR'yi aşan bazı kredi kartı işlemleri, bir Hindistan Merkez Bankası yönergesi nedeniyle engellendi. Bu durum otomatik ödemeleri etkileyebilir, bu nedenle ödemelerinizi Microsoft 365 yönetim merkezinde el ile yapmanız gerekebilir. Bu yönerge kullanım ücretlerini etkilemez. 
 
-[Yinelenen ödemeler için Hindistan Rezerv Bankası yönetmeliği hakkında daha fazla bilgi edinin](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
+[Yinelenen ödemeler için Hindistan Merkez Bankası yönergesi hakkında daha fazla bilgi edinin](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
-30 Eylül 2022'den itibaren Microsoft ve diğer çevrimiçi satıcılar artık kredi kartı bilgilerini depolamayacaktır. Microsoft, bu düzenlemeye uymak için tüm depolanan kart bilgilerini Microsoft 365 yönetim merkezinden kaldıracaktır. Hizmet kesintisini önlemek için bir ödeme yöntemi eklemeniz ve tüm abonelikler ve faturalama profilleri için tek seferlik ödeme yapmanız gerekir.
+30 Eylül 2022 itibariyle Microsoft ve diğer çevrimiçi satıcılar artık kredi kartı bilgilerini depolamayacak. Microsoft, bu düzenlemeye uymak amacıyla tüm depolanan kart bilgilerini Microsoft 365 yönetim merkezinden kaldıracak. Hizmet kesintisini önlemek amacıyla tüm abonelikler ve faturalama profilleri için bir ödeme yöntemi eklemeniz ve doğrulamanız gerekir.
 
-[Kart depolama için Hindistan Rezerv Bankası yönetmeliği hakkında bilgi edinin](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
+[Kart depolama için Hindistan Merkez Bankası yönergesi hakkında bilgi edinin](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Kredi kartı, ATM kartı veya banka hesabıyla ödeme
 
