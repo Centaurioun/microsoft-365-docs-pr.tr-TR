@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b960141b8f6da710b7ef3cbbf812ac0f00f1ce5
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 35358ec572fbb6ed0a7256e9af6be73db04e5f59
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634081"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822079"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux'ta Uç Nokta için Microsoft Defender el ile dağıtma
 
@@ -77,8 +77,9 @@ Yeni özellikleri önizlemek ve erken geri bildirim sağlamak için kuruluşunuz
 
     |Dağıtım & sürümü|Paket|
     |---|---|
-    |RHEL/Centos/Oracle 8.0-8.5 için|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
-    |RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 için|</azure/cognitive-services/speech-service/how-to-configure-rhel-centos-7>|
+    |RHEL/Centos/Oracle 8.0-8.5 için|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
+    |RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 için |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
+    <!--|RHEL/Centos 6.7-6.10 için|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
     |Fedora için 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |Fedora için 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 

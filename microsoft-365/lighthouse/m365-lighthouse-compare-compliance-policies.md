@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için cihaz uyumluluk ilkesi ayarlarını karşılaştırmayı öğrenin.
-ms.openlocfilehash: 5b82067f7d06ddd599a0e8da73825e536cf2d3fd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0a0c5127a86832637a16449e06c3df70299b49a3
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008429"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822911"
 ---
 # <a name="compare-device-compliance-policy-settings-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de cihaz uyumluluk ilkesi ayarlarını karşılaştırma
 
@@ -30,11 +30,11 @@ Microsoft 365 Lighthouse, kiracılarınız genelinde uyumluluk ilkelerini tek bi
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Cihazların Microsoft Intune lisansına sahip olduğundan ve Microsoft Endpoint Manager(MEM)'e kayıtlı olduğundan emin olun.
+Cihazların Microsoft Intune lisansı olduğundan ve Microsoft Endpoint Manager'a (MEM) kayıtlı olduğundan emin olun.
 
 ## <a name="compare-policy-settings"></a>İlke ayarlarını karşılaştırma
 
-1. Lighthouse'un sol gezinti bölmesinde **Cihazlar'ı** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Cihazlar Cihaz** > **Uyumluluğu'nu** seçin.
 
 2. **İlkeler** sekmesini seçin.
 
@@ -47,17 +47,17 @@ Cihazların Microsoft Intune lisansına sahip olduğundan ve Microsoft Endpoint 
 
 5. **Karşılaştır'ı** seçin.
 
-Farklı **Ayarlar**, **eşleşen Ayarlar** veya **Yapılandırılmış ayarları** görmek için sonuçları filtreleyebilirsiniz.
+**Farklı ayarlar**, **Eşleşen Ayarlar** veya **Yapılandırılan ayarlar'ı** görmek için sonuçları filtreleyebilirsiniz.
 
 ## <a name="configure-a-policy-setting"></a>İlke ayarını yapılandırma
 
-1. Lighthouse'un sol gezinti bölmesinde **Cihazlar'ı** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Cihazlar Cihaz** > **Uyumluluğu'nu** seçin.
 
 2. **İlkeler** sekmesini seçin.
 
 3. Listeden bir ilke adı seçin.
 
-4. İlke ayrıntıları bölmesinde **Bu ilkeyi Microsoft Endpoint Manager görüntüle'yi** seçin.
+4. İlke ayrıntıları bölmesinde **Bu ilkeyi Microsoft Endpoint Manager'de görüntüle'yi** seçin.
 
 5. MEM'de ilke ayarlarını gerektiği gibi düzenleyin.
 

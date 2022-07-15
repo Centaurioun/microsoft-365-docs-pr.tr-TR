@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Tehdit yönetimi sayfası hakkında bilgi edinin.
-ms.openlocfilehash: 3d7376b2438ca24cdcf9b6e73d8bfb2cc7daa6de
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 2bf9a778e5a8c9c22ea290356bb5e16d6553b009
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012570"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823495"
 ---
 # <a name="overview-of-the-threat-management-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'deki Tehdit yönetimi sayfasına genel bakış 
 
@@ -30,9 +30,9 @@ ms.locfileid: "66012570"
 
 - Windows
 
-Microsoft Defender Virüsten Koruma kiracıları, kullanıcıları ve cihazları virüs, kötü amaçlı yazılım ve casus yazılım gibi yazılım tehditlerine karşı korur. Windows yerleşik olarak sağlam ve sürekli koruma sağlar.  
+Microsoft Defender Virüsten Koruma, kiracıları, kullanıcıları ve cihazları virüs, kötü amaçlı yazılım ve casus yazılım gibi yazılım tehditlerine karşı korur. Windows'ta yerleşik olarak yerleşik olarak sağlam ve sürekli koruma sağlar.  
   
-Microsoft 365 Lighthouse'daki Tehdit yönetimi sayfasına erişmek için sol gezinti bölmesinde **Tehdit Yönetimi'ni** seçerek müşteri kiracılarınızın tehditlere karşı güvenlik duruşunu görüntüleyin. Riski azaltmanıza yardımcı olacak dikkatinizi ve önerilerinizi gerektiren kiracıları, kullanıcıları ve cihazları görürsünüz.  
+Microsoft 365 Lighthouse'daki Tehdit yönetimi sayfasına erişmek için sol gezinti **bölmesinden Cihazlar** > **Tehdit Yönetimi'ni** seçerek müşteri kiracılarınızın tehditlere karşı güvenlik duruşunu görüntüleyin. Riski azaltmanıza yardımcı olacak dikkatinizi ve önerilerinizi gerektiren kiracıları, kullanıcıları ve cihazları görürsünüz.  
   
 ## <a name="overview-tab"></a>Genel Bakış sekmesi  
   
@@ -58,7 +58,7 @@ Aşağıdaki tabloda farklı tehdit durumları ve tanımları listeleniyor:<br><
 | Tehdit durumu | Tanım |
 |---|---|
 | Etkin | Tehdit cihazda etkindir. |
-| Durum yok | Tehdit durumu kullanılamıyor. Tehdidi yeniden Microsoft Defender Virüsten Koruma için cihazda tam tarama çalıştırın. |
+| Durum yok | Tehdit durumu kullanılamıyor. Microsoft Defender Virüsten Koruma'nın tehdidi yeniden algılamasını sağlamak için cihazda tam tarama çalıştırın. |
 | Eylem başarısız oldu | Cihaz risk altında değil. Bir eylem başarısız oldu, ancak olası bir tehdit durduruldu ve cihazda etkin değil. Cihazda tam tarama çalıştırın. |
 | El ile gerekli adımlar | Tehdit durduruldu, ancak tam tarama veya cihazın yeniden başlatılması gibi el ile bir adımın tamamlanması gerekiyor. |
 | Tam tarama gerekiyor | Cihazın tam taraması gereklidir. |
@@ -71,7 +71,7 @@ Aşağıdaki tabloda farklı tehdit durumları ve tanımları listeleniyor:<br><
 
 ## <a name="antivirus-protection-tab"></a>Virüsten koruma sekmesi
 
-Tehdit yönetimi sayfasındaki Virüsten koruma sekmesi, tüm kiracılarınız genelindeki cihazları ve Microsoft Defender Virüsten Koruma koruma durumlarını gösterir. Durumu değerlendirebilir ve güvenlik açığı olabilecek bir veya daha fazla cihaz için işlem yapabilirsiniz. Ayrıca bir cihazı seçerek Cihaza Genel Bakış, Geçerli Tehditler ve Cihaz Eylemi durumları gibi daha fazla bilgi görüntüleyebilirsiniz.
+Tehdit yönetimi sayfasındaki Virüsten Koruma sekmesi, tüm kiracılarınız genelindeki cihazları ve Microsoft Defender Virüsten Koruma koruma durumlarını gösterir. Durumu değerlendirebilir ve güvenlik açığı olabilecek bir veya daha fazla cihaz için işlem yapabilirsiniz. Ayrıca bir cihazı seçerek Cihaza Genel Bakış, Geçerli Tehditler ve Cihaz Eylemi durumları gibi daha fazla bilgi görüntüleyebilirsiniz.
 
 :::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-antivirus-tab.png" alt-text="Virüsten Koruma sekmesinin ekran görüntüsü.":::
 

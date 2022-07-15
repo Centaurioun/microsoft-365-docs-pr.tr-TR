@@ -55,7 +55,6 @@
 #### [Yerel betik kullanarak Windows İstemcisi'ni ekleyin](configure-endpoints-script.md)
 #### [Kalıcı olmayan sanal masaüstü altyapısı (VDI) cihazlarının katılımı](configure-endpoints-vdi.md)
 #### [Sanal Windows masaüstüne çok oturumlu Windows 10 cihazlarını ekleyin](onboard-windows-multi-session-device.md)
-#### [İnternet erişimi olmayan cihazları ekleyin](onboard-offline-machines.md)
 #### [Windows'un önceki sürümlerini ekleyin](onboard-downlevel.md)
 
 
@@ -182,6 +181,7 @@
 ### [Bulut için Microsoft Defender ile tümleştirme](azure-server-integration.md)
 ### [Yeni eklenen bir cihazda algılama testi çalıştırın](run-detection-test.md)
 ### [Cihazlarda simülasyon saldırılar çalıştırın](attack-simulations.md)
+### [İnternet erişimi olmayan cihazları ekleyin](onboard-offline-machines.md)
 ### [Ara sunucu ve internet bağlantısı ayarlarını yapılandırın](configure-proxy-internet.md)
 ### [Katılım veya çıkarma bildirim kuralı oluşturun](onboarding-notification.md)
 

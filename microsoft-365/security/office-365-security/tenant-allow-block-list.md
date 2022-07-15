@@ -17,12 +17,12 @@ ms.custom: ''
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde izin ve blokları yönetmeyi öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad8920ae83b99528c47b00d375affb0fbfa6c330
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 1267c0316150f36562b145b14633d9d6562ad196
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714519"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822235"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Kiracı İzin Verilenler/Engellenenler Listesini Yönetme
 
@@ -72,7 +72,7 @@ Bu makalede, Microsoft 365 Defender portalında veya Exchange Online'de posta ku
 
 - Bir girdi 30 dakika içinde etkin olmalıdır.
 
-- Varsayılan olarak, Kiracı İzin Ver/Engelle Listesindeki girdilerin süresi 30 gün sonra dolar. Bir tarih belirtebilir veya bunların süresi hiç dolmak üzere ayarlayabilirsiniz.
+- Varsayılan olarak, Kiracı İzin Ver/Engelle Listesindeki girdilerin süresi 30 gün sonra dolar. Bir tarih belirtebilir veya bunların süresi hiçbir zaman dolmak üzere ayarlayabilirsiniz (yalnızca bloklar için).
 
 - Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [Exchange Online Protection PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -490,6 +490,6 @@ Yalnızca bu etki alanından gelen *ve* altyapı çifti gönderen iletilerin kim
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>İzin ver veya engelle girdisi ekledikten sonra beklenmesi gerekenler
 
-Gönderimler portalı aracılığıyla bir izin girişi veya Kiracı İzin Ver/Engelle Listesi'ne bir blok girişi ekledikten sonra, girdi hemen çalışmaya başlamalıdır.
+Gönderimler portalı aracılığıyla bir izin verme girdisi veya Kiracı İzin Ver/Engelle Listesi'ne bir blok girdisi ekledikten sonra, girdi etkin olduğunda hemen çalışmaya başlamalıdır. Giriş çoğunlukla 30 dakika içinde etkin olur, ancak bazen 24 saate kadar sürebilir.
 
 Sistemin izin verme veya engelleme hakkında bilgi edinip öğrenmediğini görmek için girişlerin 30 gün sonra otomatik olarak süresinin dolmasına izin vermenizi öneririz. Aksi takdirde, sisteme öğrenmesi için 30 gün daha vermek için başka bir giriş yapmanız gerekir.

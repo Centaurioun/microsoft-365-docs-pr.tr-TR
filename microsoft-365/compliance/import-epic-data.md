@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Yöneticiler, elektronik sağlık kayıtlarını (EHR) kuruluşunuzun Epic sisteminden Microsoft 365'e aktarmak için bir veri bağlayıcısı ayarlayabilir. Bu, çalışanlarınız tarafından hasta verilerine yetkisiz erişim etkinliğini algılamanıza yardımcı olmak için iç risk yönetimi ilkelerinde Epic EHR verilerini kullanmanıza olanak tanır.
-ms.openlocfilehash: c2caef93a8bb1c5cb272e0420b0c3ab8cfe4499b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d12dd85fb084813e730c4c1e02e8e440d3acc16f
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624057"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822789"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Epic EHR denetim verilerini içeri aktarmak için bağlayıcı ayarlama (önizleme)
 
@@ -36,6 +36,8 @@ Epic bağlayıcısının ayarlanması aşağıdaki görevlerden oluşur:
 - Epic EHR denetim kayıtlarını API uç noktasına göndermek için bir betik çalıştırma.
 
 - İsteğe bağlı olarak, denetim kayıtlarını içeri aktarmak için betiği otomatik olarak çalışacak şekilde zamanlama.
+
+Önizlemeye katılmak isterseniz lütfen dcfeedback@microsoft.com ekibine ulaşın.
 
 ## <a name="before-you-set-up-the-connector"></a>Bağlayıcıyı ayarlamadan önce
 

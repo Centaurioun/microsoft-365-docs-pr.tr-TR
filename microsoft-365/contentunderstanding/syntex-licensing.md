@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: SharePoint Syntex için lisanslama hakkında bilgi edinin
-ms.openlocfilehash: 31b10c0107bf871f827244889ac7ec77f7958e1f
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 86776af3184e44cb88f17e0164859f0ba0e2f334
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787506"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822279"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>SharePoint Syntex lisansı
 
@@ -52,8 +52,8 @@ AI Builder hesaplayıcısı ile size en uygun [AI Builder](https://powerapps.mic
 Kredilerinizi ve kullanımınızı denetlemek için [Power Platform yönetim merkezine](https://admin.powerplatform.microsoft.com/resources/capacity) gidin.
   
 ## <a name="additional-term-store-features"></a>Ek terim deposu özellikleri
- 
-SharePoint Syntex aboneliği aşağıdaki ek terim deposu özelliklerine sahiptir:
+
+Kuruluşunuzda bir veya daha fazla SharePoint Syntex lisansına sahip olmak, SharePoint yöneticileri için aşağıdaki ek terim deposu özelliklerini etkinleştirir:
  
 - SKOS tabanlı terim kümesi içeri aktarma
 - Kurumsal içerik türlerini bir merkez sitesine gönderme, bunları ilişkili sitelere ve yeni oluşturulan listelere veya kitaplıklara da ekler

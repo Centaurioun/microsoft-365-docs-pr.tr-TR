@@ -17,46 +17,42 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP' ler) için, kullanıcıların oturum açamamaları için güvenliğin ihlal edilmiş olduğunu düşünüyorsanız bir kullanıcı hesabını engellemeyi öğrenin.
-ms.openlocfilehash: 210e854c438a252e160a3a3e966a34e079f3e952
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: feb683c93da25580e41f36a81a89c2be35f8cc85
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012262"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822013"
 ---
 # <a name="block-user-sign-in-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse kullanıcı oturum açmasını engelleme
 
-Gizliliği tehlikeye girdiğini düşünüyorsanız bir kullanıcı hesabını engelleyebilirsiniz. Bir kullanıcı hesabını engellediğinizde, bu hesapta herkesin oturum açmasını hemen engeller. Bir kullanıcı oturum açmayı denerse, 60 dakika içinde tüm Microsoft 365 hizmetleri otomatik olarak kapattır. Kullanıcı hesabının engellenmesi hiçbir veriyi silmez ve hesabın posta almasını engellemez.
+Gizliliği tehlikeye girdiğini düşünüyorsanız bir kullanıcı hesabını engelleyebilirsiniz. Bir kullanıcı hesabını engellediğinizde, bu hesapta herkesin oturum açmasını hemen engeller. Bir kullanıcı oturum açmaya çalışırsa, 60 dakika içinde tüm Microsoft 365 hizmetlerinin oturumunu otomatik olarak kapatmış olur. Kullanıcı hesabının engellenmesi hiçbir veriyi silmez ve hesabın posta almasını engellemez.
 
 ## <a name="block-sign-in-for-a-user"></a>Kullanıcı için oturum açmayı engelleme
 
-1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar'ı** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar****Arama kullanıcıları'nı** >  seçin.
 
-2. **Kullanıcı ara** sekmesini seçin.
+2. **Kullanıcıları ara** sekmesinde, arama kutusuna bir kullanıcı adı girin.
 
-3. Arama kutusuna bir kullanıcı adı girin.
-
-4. Arama sonuçları listesinden kullanıcıyı seçin.
-
-5. Kullanıcı ayrıntıları bölmesinde **Oturum açmayı engelle'yi** seçin.
-
-6. Oturum açma durumunu yönet bölmesinde **Kullanıcıların oturum açmasını engelle'yi** seçin.
-
-7. **Kaydet**'i seçin.
-
-## <a name="block-sign-in-for-risky-users"></a>Riskli kullanıcılar için oturum açmayı engelleme
-
-1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar'ı** seçin.
-
-2. **Riskli kullanıcılar** sekmesini seçin.
-
-3. Listeden riskli bir kullanıcı seçin.
+3. Arama sonuçları listesinden kullanıcıyı seçin.
 
 4. Kullanıcı ayrıntıları bölmesinde **Oturum açmayı engelle'yi** seçin.
 
 5. Oturum açma durumunu yönet bölmesinde **Kullanıcıların oturum açmasını engelle'yi** seçin.
 
 6. **Kaydet**'i seçin.
+
+## <a name="block-sign-in-for-risky-users"></a>Riskli kullanıcılar için oturum açmayı engelleme
+
+1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar****Riskli Kullanıcılar'ı** >  seçin.
+
+2. **Riskli Kullanıcılar** sekmesinde, üzerinde işlem yapmak istediğiniz kullanıcı kümesini seçin.
+
+3. **Oturum açmayı engelle'yi** seçin.
+
+4. Oturum açma durumunu yönet bölmesinde **Kullanıcıların oturum açmasını engelle'yi** seçin.
+
+5. **Kaydet**'i seçin.
 
 ## <a name="related-content"></a>İlgili içerik
 

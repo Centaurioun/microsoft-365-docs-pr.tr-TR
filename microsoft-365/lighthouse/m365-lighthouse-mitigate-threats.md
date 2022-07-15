@@ -16,13 +16,13 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Microsoft Defender Virüsten Koruma tehditleri azaltma hakkında bilgi edinin.
-ms.openlocfilehash: 3c600c8119ba3d4a252efcf5675ab58138a69b83
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Microsoft Defender Virüsten Koruma ile tehditleri azaltma hakkında bilgi edinin.
+ms.openlocfilehash: 13583b66ab1251ae5cb5db1122813783ff3b861e
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016690"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822057"
 ---
 # <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma ile Microsoft 365 Lighthouse tehditleri azaltma
 
@@ -32,7 +32,7 @@ Microsoft 365 Lighthouse, iş ortaklarının tüm kiracılarınızda tehditleri 
 
 - Microsoft 365 Lighthouse yalnızca iş ortağı kiracısında dağıtılır; müşteri kiracılarında dağıtılmaz, ancak sizin ve müşteri kiracılarınızın [Microsoft 365 Lighthouse gereksinimlerinde listelenen gereksinimleri](m365-lighthouse-requirements.md) karşıladığından emin olun.
 
-- Kullanıcıların Microsoft Defender Virüsten Koruma çalıştırıyor olması gerekir (Windows dahil). Lighthouse, Microsoft dışı virüsten koruma yazılımlarını desteklemez. Daha fazla bilgi için bkz[. Microsoft Defender Virüsten Koruma açma](/mem/intune/user-help/turn-on-defender-windows).
+- Kullanıcıların Microsoft Defender Virüsten Koruma (Windows'a dahil) çalıştırıyor olması gerekir. Lighthouse, Microsoft dışı virüsten koruma yazılımlarını desteklemez. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma'yı açma](/mem/intune/user-help/turn-on-defender-windows).
 
 - Oturum açmakta olduğunuz iş ortağı kiracısında Genel Yönetici olmanız gerekir.
 
@@ -40,7 +40,7 @@ Microsoft 365 Lighthouse, iş ortaklarının tüm kiracılarınızda tehditleri 
 
 Belirli bir tehdidi araştırmak için:
 
-1. Lighthouse'un sol gezinti bölmesinde **Tehdit yönetimi'ni** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Cihazlar** > **Tehdit yönetimi'ni** seçin.
 
 2. **Tehditler** sekmesini seçin.
 
@@ -62,7 +62,7 @@ Tehdit ayrıntıları bölmesi aşağıdaki bilgileri sağlar:
 
 Belirli bir cihazdaki tehditleri araştırmak için:
 
-1. Lighthouse'un sol gezinti bölmesinde **Tehdit yönetimi'ni** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Cihazlar** > **Tehdit yönetimi'ni** seçin.
 
 2. **Virüsten koruma** sekmesini seçin.
 
@@ -76,7 +76,7 @@ Lighthouse, cihazda bulunan tüm tehditleri görüntüler. Ayrıntıları görme
 
 Hızlı tarama, kayıt defteri anahtarları ve bilinen başlangıç klasörleri gibi kötü amaçlı yazılımların bulunabileceği yaygın konumları arar. Tam tarama, cihazın tamamını arar. Çoğu durumda hızlı tarama yeterlidir ve zamanlanmış taramalar için önerilen seçenektir.
 
-1. Lighthouse'un sol gezinti bölmesinde **Tehdit yönetimi'ni** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Cihazlar** > **Tehdit yönetimi'ni** seçin.
 
 2. **Virüsten koruma** sekmesini seçin.
 
@@ -88,9 +88,9 @@ Ayrıca, listedeki her cihaz adının yanındaki onay kutusunu seçip **Tam tara
 
 ## <a name="get-updates-for-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma güncelleştirmelerini alma
 
-Microsoft Defender Virüsten Koruma tek bir cihazda güncelleştirmek için:
+Microsoft Defender Virüsten Koruma'yi tek bir cihazda güncelleştirmek için:
 
-1. Lighthouse'un sol gezinti bölmesinde **Tehdit yönetimi'ni** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Cihazlar** > **Tehdit yönetimi'ni** seçin.
 
 2. **Virüsten koruma** sekmesini seçin.
 
@@ -100,13 +100,13 @@ Microsoft Defender Virüsten Koruma tek bir cihazda güncelleştirmek için:
 
 Listedeki her cihaz adının yanındaki onay kutusunu ve ardından **Virüsten korumayı güncelleştir'i** seçerek birden çok cihaz için güncelleştirmeler alabilirsiniz.
 
-Yeni bir ilke oluşturmanız gerekiyorsa cihaz ayrıntıları **bölmesinden İlkeyi güncelleştir'i** seçin. Lighthouse sizi Microsoft Endpoint Manager(MEM) sayfasına yönlendirecektir. İlke oluşturma hakkında daha fazla bilgi için bkz. [Microsoft Intune'de uyumluluk ilkesi oluşturma](/mem/intune/protect/create-compliance-policy).
+Yeni bir ilke oluşturmanız gerekiyorsa cihaz ayrıntıları **bölmesinden İlkeyi güncelleştir'i** seçin. Lighthouse sizi Microsoft Endpoint Manager'e (MEM) yönlendirecektir. İlke oluşturma hakkında daha fazla bilgi için bkz. [Microsoft Intune'de uyumluluk ilkesi oluşturma](/mem/intune/protect/create-compliance-policy).
 
 ## <a name="check-pending-antivirus-actions-on-a-device"></a>Cihazda bekleyen virüsten koruma eylemlerini denetleme
 
 Bir cihaza ardışık eylemler uygulandığında bekleyen bir eylem iletisi alırsınız. Bir cihazda hangi eylemlerin beklemede olduğunu denetlemek için:
 
-1. Lighthouse'un sol gezinti bölmesinde **Tehdit yönetimi'ni** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Cihazlar** > **Tehdit yönetimi'ni** seçin.
 
 2. **Virüsten koruma** sekmesini seçin.
 
@@ -118,7 +118,7 @@ Bir cihaza ardışık eylemler uygulandığında bekleyen bir eylem iletisi alı
 
 Bazı güncelleştirmelerin doğru yüklenmesi için cihazın yeniden başlatılması gerekebilir.
 
-1. Lighthouse'un sol gezinti bölmesinde **Tehdit yönetimi'ni** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Cihazlar** > **Tehdit yönetimi'ni** seçin.
 
 2. **Virüsten koruma** sekmesini seçin.
 
@@ -133,5 +133,5 @@ Ayrıca, listedeki her cihaz adının yanındaki onay kutusunu seçip **Cihazı 
 [Microsoft 365 Lighthouse gereksinimleri](m365-lighthouse-requirements.md) (makale)\
 [Microsoft 365 Lighthouse'daki Tehdit yönetimi sayfasına genel bakış](m365-lighthouse-threat-management-page-overview.md) (makale)\
 [Microsoft Intune'de uyumluluk ilkesi oluşturma](/mem/intune/protect/create-compliance-policy) (makale)\
-[Microsoft Defender Virüsten Koruma aç](/mem/intune/user-help/turn-on-defender-windows) (makale)\
+[Microsoft Defender Virüsten Koruma'yi açın](/mem/intune/user-help/turn-on-defender-windows) (makale)\
 [Microsoft Güvenlik Zekası](https://www.microsoft.com/wdsi/threats) (web sayfası)

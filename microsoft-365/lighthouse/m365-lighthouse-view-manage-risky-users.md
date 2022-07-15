@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için riskli kullanıcıları görüntülemeyi ve yönetmeyi öğrenin.
-ms.openlocfilehash: 45c91ec0871393f69e7a166cc8582f149479ad1b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b4f34ccfafa1a002a9c798924641eaeeebdb04fe
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011848"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823429"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de riskli kullanıcıları görüntüleme ve yönetme
 
@@ -51,15 +51,13 @@ Kullanıcıların riskli kullanıcılar listesinde görünebilmesi için aşağ�
 
 Azure AD Kimlik Koruması'nda risk algılamaları, Azure AD kullanıcı hesaplarıyla ilgili olarak tanımlanan şüpheli eylemleri içerir.
 
-1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar'ı** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar****Riskli Kullanıcılar'ı** >  seçin.
 
-2. **Riskli Kullanıcılar** sekmesini seçin.
+2. **Riskli Kullanıcılar** sekmesinde, risk durumu **Risk** altında olan listedeki kullanıcıları gözden geçirin.
 
-3. Risk durumu **Risk** altında olan kullanıcıları listede gözden geçirin.
+3. Her kullanıcı için algılanan riskler hakkında ayrıntılı bilgi almak için **Risk algılamalarını görüntüle'yi** seçin. Risk türleri ve algılama hakkında daha fazla bilgi için bkz. [Risk nedir?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
 
-4. Her kullanıcı için algılanan riskler hakkında ayrıntılı bilgi almak için **Risk algılamalarını görüntüle'yi** seçin. Risk türleri ve algılama hakkında daha fazla bilgi için bkz. [Risk nedir?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
-
-5. Her kullanıcı için risk algılamalarını değerlendirin ve aşağıdaki eylemlerden birini uygun şekilde seçin:
+4. Her kullanıcı için risk algılamalarını değerlendirin ve aşağıdaki eylemlerden birini uygun şekilde seçin:
 
     - Parolayı sıfırla – kullanıcı parolasını değiştirin veya sıfırlayın.
 
@@ -73,9 +71,11 @@ Azure AD Kimlik Koruması'nda risk algılamaları, Azure AD kullanıcı hesaplar
 
 Aynı anda birden çok etkilenen kullanıcı üzerinde işlem yapmak için:
 
-1. **Riskli Kullanıcılar** sekmesinde, üzerinde işlem yapmak istediğiniz kullanıcı kümesini seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar****Riskli Kullanıcılar'ı** >  seçin.
 
-2. Gerçekleştirilecek aşağıdaki eylemlerden birini seçin:
+2. **Riskli Kullanıcılar** sekmesinde, üzerinde işlem yapmak istediğiniz kullanıcı kümesini seçin.
+
+3. Gerçekleştirilecek aşağıdaki eylemlerden birini seçin:
 
     - Parolayı sıfırlayın
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Yöneticiler, elektronik sağlık kayıtlarını (EHR) sağlık sisteminden Microsoft 365'e aktarmak için bir veri bağlayıcısı ayarlayabilir. Bu, çalışanlarınız tarafından hasta verilerine yetkisiz erişim etkinliğini algılamanıza yardımcı olmak için iç risk yönetimi ilkelerinde EHR verilerini kullanmanıza olanak tanır.
-ms.openlocfilehash: be5429ea1a5fb4e2e2be6a7029f2401fcbdab94e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: dd34fc1e14680a5189c74443211f50fa51b87132
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641394"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822967"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Sağlık EHR denetim verilerini içeri aktarmak için bağlayıcı ayarlama (önizleme)
 
@@ -36,6 +36,8 @@ Healthcare bağlayıcısının ayarlanması aşağıdaki görevlerden oluşur:
 - Sağlık EHR denetim verilerini API uç noktasına göndermek için bir betik çalıştırma.
 
 - İsteğe bağlı olarak, denetim verilerini içeri aktarmak için betiği otomatik olarak çalışacak şekilde zamanlama.
+
+Önizlemeye katılmak isterseniz lütfen dcfeedback@microsoft.com ekibine ulaşın.
 
 ## <a name="before-you-set-up-the-connector"></a>Bağlayıcıyı ayarlamadan önce
 
@@ -71,7 +73,7 @@ Aşağıdaki tabloda, insider risk yönetimi senaryolarını etkinleştirmek iç
 | Oluşturma Zamanı *<br/>Olay Adı*<br/>İş İstasyonu Kimliği<br/>Olay Bölümü<br/>Olay Kategorisi |Bu alanlar, sağlık EHR sisteminizdeki erişim etkinliği olaylarını tanımlamak için kullanılır.|
 | Hasta Kayıt Defteri Kimliği<br/>Hasta Adı *<br/>Hasta İkinci Adı <br/>Hastanın Soyadı* <br/>Hasta Adres Satırı 1* <br/>Hasta Adres Satırı 2<br/>Patient City* <br/>Hasta Posta Kodu*  <br/>Hasta Durumu <br/>Hasta Ülke <br/>Hasta Bölümü              | Bu alanlar hasta profili bilgilerini tanımlamak için kullanılır.|
 | Kısıtlı Erişim Nedeni*<br/> Kısıtlı Erişim Açıklaması | Bu alanlar kısıtlı kayıtlara erişimi tanımlamak için kullanılır.|
-| E-posta Adresi (UPN) veya SamAccountName*<br/>Çalışan Kullanıcı Adı <br/> Çalışan Kimliği <br/> Çalışan Soyadı <sup>1</sup> <br/> Çalışan Adı <sup>1</sup> | Bu alanlar, Aile/Komşu/Çalışan kayıtlarına erişimi belirlemek için gereken adres ve ad eşleştirme için çalışan profili bilgilerini tanımlamak için kullanılır. |
+| Email Adresi (UPN) veya SamAccountName*<br/>Çalışan Kullanıcı Adı <br/> Çalışan Kimliği <br/> Çalışan Soyadı <sup>1</sup> <br/> Çalışan Adı <sup>1</sup> | Bu alanlar, Aile/Komşu/Çalışan kayıtlarına erişimi belirlemek için gereken adres ve ad eşleştirme için çalışan profili bilgilerini tanımlamak için kullanılır. |
 |||
 
 > [!NOTE] 

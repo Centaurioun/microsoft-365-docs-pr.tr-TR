@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 91a9cc3e7a9fdc38a05deaf04f2124819f41d1ae
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 63966b84fc2d5a57f9c8b405a97d61ba17450dfb
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607443"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822145"
 ---
 # <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>Azure Sanal Masaüstü'ne Windows cihazları ekleme
 
@@ -70,7 +70,7 @@ Her cihaz için tek bir giriş için yönergeleri izleyin.
 
 Bu senaryo merkezi olarak bulunan bir betik kullanır ve bunu etki alanı tabanlı bir grup ilkesi kullanarak çalıştırır. Ayrıca betiği altın görüntüye yerleştirebilir ve aynı şekilde çalıştırabilirsiniz.
 
-##### <a name="download-the-windowsdefenderatponboardingpackagezip-file-from-the-windows-365-defender-portal"></a>Windows 365 Defender portalından WindowsDefenderATPOnboardingPackage.zip dosyasını indirme
+##### <a name="download-the-windowsdefenderatponboardingpackagezip-file-from-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalından WindowsDefenderATPOnboardingPackage.zip dosyasını indirme
 
 1. VDI yapılandırma paketini .zip dosyasını açın (WindowsDefenderATPOnboardingPackage.zip)
 

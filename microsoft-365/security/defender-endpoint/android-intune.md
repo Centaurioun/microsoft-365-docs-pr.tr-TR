@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c743b54e27bc9caa60bb6b4e24191d626ece6fcf
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9c00ea16bddb7aa9094b41b30692493b530acbb3
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490519"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823174"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Android’de Uç Nokta için Defender’ı Microsoft Intune ile dağıtın
 
@@ -154,7 +154,14 @@ Yönetilen Google Play'inize Uç Nokta için Microsoft Defender uygulama eklemek
         - **Yalnızca Profil Türü olarak İş Profili'ni** seçin.
         - **Uygulama Seç'e** tıklayın, **Microsoft Defender ATP'yi** seçin, **Tamam'ı** ve ardından **İleri'yi** seçin.
 
-        :::image type="content" source="images/android-create-app.png" alt-text=" İlişkili uygulama ayrıntıları bölmesi" lightbox="images/android-create-app.png":::
+        :::image type="content" source="images/android-create-app.png" alt-text=" İlişkili uygulama ayrıntıları bölmesinin ekran görüntüsü." lightbox="images/android-create-app.png":::
+     
+    1. **ekle > İzinler'i** seçin. Listeden **Tamam** > kullanılabilir uygulama izinlerini seçin.
+    2. Bu ilkeyle vermek istediğiniz her izin için bir seçenek belirleyin:
+
+       - **İstem** - Kullanıcıdan kabul veya reddetmesini ister.
+       - **Otomatik verme** - Kullanıcıya bildirmeden otomatik olarak onaylar.
+       - **Otomatik reddetme** - Kullanıcıya bildirmeden otomatik olarak reddeder. 
 
     1. **Ayarlar** sayfasında Yapılandırma ayarları bölümüne gidin ve **Yapılandırma ayarları** biçiminde **'Yapılandırma tasarımcısını kullan'ı** seçin. 
 
@@ -231,7 +238,7 @@ Uç Nokta için Defender, Intune aracılığıyla yönetilen cihazlar için Ciha
 
    **Atamalar** sayfasında, bu uygulama yapılandırma ilkesinin atanacağı kullanıcı grubunu seçin. Dahil etmek istediğiniz **grupları seçin** ve uygun grubu seçin ve ardından **İleri'yi** seçin. Burada seçilen grup genellikle Android uygulaması Uç Nokta için Microsoft Defender atayacağınız grupla aynıdır.
 
-   :::image type="content" source="images/4autosetupofvpn.png" alt-text="Cihaz kısıtlamalarındaki cihazlar yapılandırma profili Atama bölmesi" lightbox="images/4autosetupofvpn.png":::
+   :::image type="content" source="images/4autosetupofvpn.png" alt-text="Cihaz kısıtlamalarındaki cihaz yapılandırma profili Atama bölmesinin ekran görüntüsü." lightbox="images/4autosetupofvpn.png":::
 
 5. Ardından gelen **Gözden Geçir + Oluştur** sayfasında tüm bilgileri gözden geçirin ve **Oluştur'u** seçin.
 Cihaz yapılandırma profili artık seçili kullanıcı grubuna atanır.

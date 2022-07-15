@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Yöneticilerin Twitter verilerini Microsoft 365'e aktarmak için yerel bağlayıcıyı nasıl ayarlayıp kullanabileceğini öğrenin.
-ms.openlocfilehash: 1dd5de91484d04411b5216f6801589b32ef381ce
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 83558b4a2f188853b4deac31cf636476480a2557
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625567"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822257"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Twitter verilerini arşivleme (önizleme) için Bir Microsoft bağlayıcısı ayarlama
 
@@ -29,6 +29,8 @@ Twitter'dan Microsoft 365'e verileri içeri aktarmak ve arşivlemek için Micros
 Twitter verileri içeri aktarıldıktan sonra, Twitter verilerine Dava Tutma, İçerik Arama, In-Place Arşivleme, Denetim ve Microsoft 365 bekletme ilkeleri gibi Microsoft Purview özelliklerini uygulayabilirsiniz. Örneğin, bir posta kutusu Dava Tutma'ya yerleştirildiğinde veya bir bekletme ilkesine atandığında Twitter verileri korunur. İçerik Arama'yı kullanarak üçüncü taraf verilerinde arama yapabilir veya Twitter verilerinin depolandığı posta kutusunu Microsoft Purview eKeşif (Premium) durumdaki bir koruyucuyla ilişkilendirebilirsiniz. Microsoft 365'te Twitter verilerini içeri aktarmak ve arşivlerken bağlayıcı kullanmak, kuruluşunuzun kamu ve mevzuat ilkeleriyle uyumlu kalmasına yardımcı olabilir.
 
 Twitter verileri içeri aktarıldıktan sonra, posta kutusunda depolanan verilere Dava Tutma, İçerik Arama, In-Place Arşivleme, Denetim, İletişim uyumluluğu ve Microsoft 365 bekletme ilkeleri gibi Microsoft Purview özelliklerini uygulayabilirsiniz. Örneğin, İçerik Arama'yı kullanarak Twitter verilerinde arama yapabilir veya verilerin depolandığı posta kutusunu eBulma (Premium) durumundaki bir koruyucuyla ilişkilendirebilirsiniz. Microsoft 365'te Twitter verilerini içeri aktarmak ve arşivlerken bağlayıcı kullanmak, kuruluşunuzun kamu ve mevzuat ilkeleriyle uyumlu kalmasına yardımcı olabilir.
+
+Önizlemeye katılmak isterseniz lütfen dcfeedback@microsoft.com ekibine ulaşın.
 
 ## <a name="before-you-set-up-a-connector"></a>Bağlayıcıyı ayarlamadan önce
 

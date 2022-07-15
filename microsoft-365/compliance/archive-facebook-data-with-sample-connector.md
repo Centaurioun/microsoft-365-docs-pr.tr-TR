@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -15,18 +15,20 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Facebook İş sayfalarından Microsoft 365'e & arşiv verilerini içeri aktarmak için Microsoft Purview uyumluluk portalı bağlayıcıyı ayarlamayı & kullanmayı öğrenin.
-ms.openlocfilehash: d8b951e7f0b9733dacca7cfd16eed1042d84c460
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 79238bbbdcea71cf83342894d3b61e8047f5897a
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623363"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822889"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Facebook verilerini arşivleme (önizleme) için bağlayıcı ayarlama
 
 Facebook business sayfalarından Microsoft 365'e verileri içeri aktarmak ve arşiv etmek için Microsoft Purview uyumluluk portalı bir bağlayıcı kullanın. Bağlayıcıyı ayarlayıp yapılandırdıktan sonra, Facebook İş sayfasına bağlanır (zamanlanmış olarak), Facebook öğelerinin içeriğini e-posta iletisi biçimine dönüştürür ve ardından bu öğeleri Microsoft 365'teki bir posta kutusuna aktarır.
 
 Facebook verileri içeri aktarıldıktan sonra, Dava Tutma, İçerik Arama, In-Place Arşivleme, Denetim, İletişim uyumluluğu ve Microsoft 365 saklama ilkeleri gibi Microsoft Purview özelliklerini Facebook verilerine uygulayabilirsiniz. Örneğin, bir posta kutusu Dava Tutma'ya yerleştirildiğinde veya bir saklama ilkesine atandığında, Facebook verileri korunur. İçerik Arama'yı kullanarak üçüncü taraf verilerinde arama yapabilir veya Facebook verilerinin depolandığı posta kutusunu Microsoft Purview eKeşif (Premium) durumdaki bir koruyucuyla ilişkilendirebilirsiniz. Microsoft 365'te Facebook verilerini içeri aktarmak ve arşivlerken bağlayıcı kullanmak, kuruluşunuzun kamu ve mevzuat ilkeleriyle uyumlu kalmasına yardımcı olabilir.
+
+Önizlemeye katılmak isterseniz lütfen dcfeedback@microsoft.com ekibine ulaşın.
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Facebook business sayfaları için bağlayıcı ayarlama önkoşulları
 

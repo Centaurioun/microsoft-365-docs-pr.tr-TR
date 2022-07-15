@@ -17,16 +17,16 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b302231d7dbdcc92ee2e8e2e0564cedb27a4218e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4b2a45a667aa654a8ff3111313b542433e692f1f
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621127"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823399"
 ---
 # <a name="learn-about-information-barriers"></a>Bilgi engelleri hakkında daha fazla bilgi edinme
 
-Microsoft Purview Information Barriers (IB), Microsoft Teams, SharePoint Online ve OneDrive İş gruplar ve kullanıcılar arasında iki yönlü iletişimi ve işbirliğini kısıtlamanıza olanak tanıyan bir uyumluluk çözümüdür. IB, genellikle yüksek oranda düzenlenmiş sektörlerde kullanılır ve çıkar çatışmalarını önlemeye ve kullanıcılarla kuruluş alanları arasındaki iç bilgileri korumaya yardımcı olabilir.
+Microsoft Purview Information Barriers (IB), Microsoft Teams, SharePoint ve OneDrive'daki gruplar ve kullanıcılar arasında iki yönlü iletişimi ve işbirliğini kısıtlamanıza olanak tanıyan bir uyumluluk çözümüdür. IB, genellikle yüksek oranda düzenlenmiş sektörlerde kullanılır ve çıkar çatışmalarını önlemeye ve kullanıcılarla kuruluş alanları arasındaki iç bilgileri korumaya yardımcı olabilir.
 
 IB ilkeleri geçerli olduğunda, diğer belirli kullanıcılarla iletişim kurmaması veya dosya paylaşmaması gereken kullanıcılar bu kullanıcıları bulamaz, seçemez, sohbet etmez veya arayamazsınız. IB ilkeleri, tanımlı gruplar ve kullanıcılar arasındaki yetkisiz iletişimi ve işbirliğini algılamak ve önlemek için otomatik olarak denetimler gerçekleştirir. IB ilkeleri, eBulma yöneticilerinin arayabileceği kullanıcı içerik konumlarını denetleen eBulma araştırmalarına yönelik [uyumluluk sınırlarından](/microsoft-365/compliance/set-up-compliance-boundaries) bağımsızdır.
 
@@ -61,7 +61,7 @@ Daha fazla bilgi için bkz. [Microsoft Teams'deki bilgi engelleri](/MicrosoftTea
 
 ## <a name="information-barriers-and-sharepoint-and-onedrive"></a>Bilgi engelleri ve SharePoint ve OneDrive
 
-SharePoint Online ve OneDrive'da, IB ilkeleri aşağıdaki tür yetkisiz işbirliğini algılar ve önler:
+SharePoint ve OneDrive'da, IB ilkeleri aşağıdaki yetkisiz işbirliği türlerini algılar ve önler:
 
 - Siteye üye ekleme
 - Bir kullanıcı tarafından siteye veya içeriğe erişme

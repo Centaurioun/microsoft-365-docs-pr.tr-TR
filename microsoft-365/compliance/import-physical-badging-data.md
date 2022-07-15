@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Yöneticiler, kuruluşlarının fiziksel badging sisteminden Microsoft 365'e veri aktarmak için bir veri bağlayıcısı ayarlayabilir. Bu, bu verileri, kuruluşunuz için olası bir iç tehdit oluşturabilecek belirli kullanıcılar tarafından fiziksel binalarınıza erişimi algılamanıza yardımcı olmak için şirket içi risk yönetimi ilkelerinde kullanmanıza olanak tanır.
-ms.openlocfilehash: 90e0a421397683fe05161b27b1743354713de516
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e34706e7fc6be5d813d718e0d927859ca91d9ee8
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641438"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823119"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Fiziksel badging verilerini içeri aktarmak için bağlayıcı ayarlama (önizleme)
 
@@ -37,6 +37,8 @@ Fiziksel bir badging bağlayıcısı ayarlamak aşağıdaki görevlerden oluşur
 - Fiziksel badging verilerini API uç noktasına göndermek için bir betik çalıştırma.
 
 - İsteğe bağlı olarak, şu anda fiziksel badging verilerini içeri aktarmak için betiği otomatik olarak çalışacak şekilde zamanlama.
+
+Önizlemeye katılmak isterseniz lütfen dcfeedback@microsoft.com ekibine ulaşın.
 
 ## <a name="before-you-set-up-the-connector"></a>Bağlayıcıyı ayarlamadan önce
 
@@ -231,7 +233,7 @@ Fiziksel badging bağlayıcısını oluşturduktan ve fiziksel badging verilerin
 
    ![Fiziksel badging bağlayıcısı günlük dosyası, JSON dosyasından karşıya yüklenen nesne sayısını görüntüler.](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   **RecordsSaved** alanı, JSON dosyasında karşıya yüklenen kayıt sayısını gösterir. Örneğin, JSON dosyası dört kayıt içeriyorsa, betik JSON dosyasındaki tüm kayıtları başarıyla karşıya yüklediyse **RecordsSaved** alanlarının değeri 4 olur. **RecordsSkipped** alanı, JSON dosyasında atlanan kayıt sayısını gösterir. JSON dosyasına kayıt yüklemeden önce kayıtların E-posta kimlikleri doğrulanır. Geçersiz e-posta kimliğine sahip tüm kayıtlar atlanır ve e-posta kimliği **EmailIdsNotSaved** alanında görüntülenir
+   **RecordsSaved** alanı, JSON dosyasında karşıya yüklenen kayıt sayısını gösterir. Örneğin, JSON dosyası dört kayıt içeriyorsa, betik JSON dosyasındaki tüm kayıtları başarıyla karşıya yüklediyse **RecordsSaved** alanlarının değeri 4 olur. **RecordsSkipped** alanı, JSON dosyasında atlanan kayıt sayısını gösterir. JSON dosyasına kayıt yüklemeden önce kayıtların Email kimlikleri doğrulanır. Geçersiz Email kimliğine sahip tüm kayıtlar atlanır ve **emailIdsNotSaved** alanında ilgili Email kimliği görüntülenir
 
 4. Adımda betiği çalıştırmadıysanız, **Son içeri aktarma** altında betiği indirme bağlantısı görüntülenir. Betiği indirebilir ve ardından çalıştırmak için 4. Adım'daki adımları izleyebilirsiniz.
 
