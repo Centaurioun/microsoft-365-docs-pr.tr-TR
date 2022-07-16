@@ -1,0 +1,149 @@
+- name: Ön saf çalışanları için Microsoft 365
+  href: index.yml
+  items:
+    - name: Ön saf çalışanları için Microsoft 365'i kullanmaya başlama
+      href: flw-overview.md
+    - name: Senaryolarınızı seçin
+      href: flw-choose-scenarios.md
+    - name: Ön saf çalışanları için Microsoft 365'i deneyin
+      href: flw-trial.md
+    - name: Ayarlama ve yapılandırma
+      items:
+        - name: Genel bakış
+          href: flw-deploy-overview.md
+        - name: Yöneticiler - ekibinizi başlatın
+          href: get-up-and-running.md
+        - name: Pilot dağıtımla başlayın
+          href: flw-pilot.md
+        - name: Microsoft 365 ve Teams'i ayarlama
+          items:
+            - name: Microsoft 365 ve ilgili hizmetleri ayarlama
+              href: flw-setup-microsoft-365.md
+            - name: Ekipleri uygun ölçekte dağıtma
+              href: deploy-teams-at-scale.md
+            - name: Katılım sihirbazı ile kullanıcılarınızın katılımını sağlayın
+              href: flw-onboarding-wizard.md
+        - name: Cihazları yönetme
+          items:
+            - name: Paylaşılan ve kişisel cihazları yönetme
+              href: flw-devices.md
+            - name: Teams'de oturum açma
+              href: /microsoftteams/sign-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+            - name: Teams oturumunu kapatma
+              href: /microsoftteams/sign-out-of-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Ön saf çalışanları için Teams ayarlarını yapılandırma
+          items:
+            - name: Teams uygulamalarını ön saf çalışanları için uyarlama
+              href: pin-teams-apps-based-on-license.md
+            - name: Ön saf yöneticileri ve çalışanları için Teams ilke paketleri
+              href: /microsoftteams/policy-packages-flw?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+            - name: Güvenli mesajlaşma
+              href: messaging-policies-hc.md
+            - name: İleti temsilcisi
+              href: hc-delegates.md
+        - name: Kurumsaldan ön saf çalışana geçiş yapma
+          items:
+            - name: Ön saf çalışanları için lisanslama seçenekleri
+              href: flw-licensing-options.md
+            - name: E'den F'ye geçişle ilgili dikkat edilmesi gerekenler
+              href: switch-from-enterprise-to-frontline.md
+    - name: İletişim
+      items:
+        - name: Ön saf ekip işbirliği
+          href: flw-team-collaboration.md
+        - name: Ön saf çalışanları ile kurumsal iletişim
+          href: flw-corp-comms.md
+    - name: Dengeli yaşam ve katılım
+      items:
+        - name: Çalışanlarınızın katılımını sağlayın ve dengeli yaşama odaklanın
+          href: flw-wellbeing-engagement.md
+    - name: Eğitim ve işe alım
+      items:
+        - name: Çalışanları işe alma ve eğitme
+          href: flw-onboarding-training.md
+    - name: Zamanlama yönetimi
+      items:
+        - name: Teams için Vardiyalar'ı kullanmaya başlama
+          href: shifts-for-teams-landing-page.md
+        - name: Vardiya yönetimi için zamanlama sahiplerini yönetme
+          href: schedule-owner-for-shift-management.md
+        - name: Teams'de vardiya tabanlı erişimi yönetme
+          href: manage-shift-based-access-flw.md
+        - name: Vardiya bağlayıcıları
+          items:
+            - name: Genel bakış
+              href: shifts-connectors.md
+            - name: Blue Yonder WFM ile bağlantı kurmak için Vardiya bağlayıcı sihirbazını kullanma
+              href: shifts-connector-wizard.md
+            - name: Blue Yonder WFM ile bağlantı kurmak için PowerShell'i kullanma
+              href: shifts-connector-blue-yonder-powershell-setup.md
+            - name: Vardiyalar'dan Blue Yonder WFM'e olan bağlantınızı yönetmek için PowerShell'i kullanma
+              href: shifts-connector-powershell-manage.md
+    - name: Dijitalleştirilmiş süreçler
+      items:
+        - name: İş süreçlerini basitleştirme
+          href: simplify-business-processes.md
+    - name: Sanal randevular
+      items:
+        - name: Genel bakış
+          href: virtual-appointments.md
+        - name: Teams ve Bookings ile sanal randevular
+          href: bookings-virtual-visits.md
+        - name: Teams ve Cerner EHR ile sanal randevular
+          href: ehr-admin-cerner.md
+        - name: Teams ve Epic EHR ile sanal randevular
+          href: ehr-admin-epic.md
+        - name: EHR bağlayıcısı Sanal Randevular raporu
+          href: ehr-connector-report.md
+        - name: Sanal Ziyaretler kullanım raporu
+          href: virtual-visits-usage-report.md
+        - name: Tarayıcılarda katılma deneyimini yönetme
+          href: browser-join.md
+        - name: İstemcilerinizin ve müşterilerinizin sanal randevuları kullanmasına yardımcı olma
+          href: virtual-appointments-toolkit.md
+    - name: Sektöre özgü çözümler
+      items:
+        - name: Finansal hizmetler
+          href: teams-for-financial-services.md
+        - name: Sağlık Hizmetleri
+          items:
+            - name: Genel bakış
+              href: teams-in-hc.md
+            - name: Sağlık ekibi şablonları
+              href: /microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+            - name: Sağlık hizmetleri için Teams ilke paketleri
+              href: /microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Perakende
+          items:
+            - name: Genel bakış
+              href: teams-for-retail-landing-page.md
+            - name: Perakende ekip şablonlarını kullanma
+              href: /microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Üretim
+          href: teams-for-manufacturing.md
+    - name: Ön saf çalışanları için uygulamalar
+      items:
+        - name: Microsoft Teams'deki uygulamalar hakkında
+          href: /microsoftteams/deploy-apps-microsoft-teams-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Microsoft Teams'de uygulama yönetimine genel bakış
+          href: /microsoftteams/manage-apps?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Onaylar uygulamasını yönetme
+          href: /microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Bookings uygulamasını yönetme
+          href: /microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Güncelleştirmeler uygulamasını yönetme
+          href: /microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Listeler uygulamasını yönetme
+          href: /microsoftteams/manage-lists-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Takdir uygulamasını yönetme
+          href: /microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: RealWear için Microsoft Teams
+          href: /microsoftteams/flw-realwear?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Vardiyalar uygulamasını yönetme
+          href: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Vardiya verileri SSS
+          href: /microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Görevler uygulamasını yönetme
+          href: /microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Walkie Talkie uygulamasını yönetme
+          href: /microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
