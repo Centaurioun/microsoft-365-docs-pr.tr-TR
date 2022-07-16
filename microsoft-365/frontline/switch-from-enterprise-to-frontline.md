@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 E planından Microsoft F planına geçiş
+title: Microsoft 365 E planından Microsoft 365 F planına geçiş
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: ''
@@ -17,14 +17,14 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 496cb1b80cedf48cf24bdd49aae792275417f367
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 90e29a5ec2ddf70afb299398113be034580eda85
+ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824652"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "66827158"
 ---
-# <a name="changing-from-a-microsoft-365-e-plan-to-a-microsoft-f-plan"></a>Microsoft 365 E planından Microsoft F planına geçiş
+# <a name="changing-from-a-microsoft-365-e-plan-to-a-microsoft-365-f-plan"></a>Microsoft 365 E planından Microsoft 365 F planına geçiş
 
 Kullanıcılarınızdan bazılarını bir Microsoft 365 E planından Microsoft 365 [F3](https://www.microsoft.com/microsoft-365/enterprise/f3) veya [F1](https://www.microsoft.com/microsoft-365/enterprise/f1) planına geçirmeyi düşünüyorsanız, bu makalede kuruluşunuzu değişikliğe hazırlamanıza yardımcı olacak yönergeler sağlanır. E planından F planına geçmek, kullanıcıların erişimi olan hizmetleri ve özellikleri etkiler.
 

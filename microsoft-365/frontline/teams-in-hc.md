@@ -20,7 +20,6 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-overview
 - m365-frontline
-- m365solution-frontline
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
@@ -29,12 +28,12 @@ description: Microsoft 365 ve Microsoft Teams'deki teletıp özellikleri ve bunl
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 01bd5b5c9386869e78b23da81d6e7cc48ecc16c8
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 0ce08e71a2bec105b2c9f2efe59cc7f440225b4e
+ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824696"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "66827168"
 ---
 # <a name="get-started-with-microsoft-365-for-healthcare-organizations"></a>Sağlık kuruluşları için Microsoft 365'i kullanmaya başlama
 

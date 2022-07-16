@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac40dcc986dfb4c66b9030cdf8c22ebabe1bd3d2
-ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
+ms.openlocfilehash: 3d742733903faf876257e42a9ea9d15a648f9984
+ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66795432"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "66827212"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme
 
@@ -150,7 +150,7 @@ PowerShell komutunu kullanabilirsiniz: Import-Certificate -FilePath .\InterCA.ce
 
 Uç Nokta için Microsoft Defender, Bulut için Microsoft Defender ile sorunsuz bir şekilde tümleşir. Sunucuları otomatik olarak ekleyebilir, Bulut için Microsoft Defender tarafından izlenen sunucuların Uç Nokta için Defender'da görünmesini sağlayabilir ve Bulut için Microsoft Defender müşterisi olarak ayrıntılı araştırma yapabilirsiniz. 
 
-Daha fazla bilgi için bkz. [Bulut için Microsoft Defender ile tümleştirme](azure-server-integration.md). Bulut için Microsoft Defender aracılığıyla eklenen sunucuların ilk yapılandırmaları Defender Virüsten Koruma'yı [pasif modda](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions) çalıştıracak şekilde ayarlanır.
+Daha fazla bilgi için bkz. [Bulut için Microsoft Defender ile tümleştirme](azure-server-integration.md). Bulut için Microsoft Defender aracılığıyla eklenen Linux sunucularının ilk yapılandırmaları Defender Virüsten Koruma'yı [pasif modda](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions) çalıştıracak şekilde ayarlanır.
 
 > [!NOTE]
 > - Sunucular için Microsoft Defender ile Uç Nokta için Microsoft Defender arasındaki tümleştirme Windows Server 2022, [Windows Server 2019 ve Windows Sanal Masaüstü'nü (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview) destekleyecek şekilde genişletildi.
