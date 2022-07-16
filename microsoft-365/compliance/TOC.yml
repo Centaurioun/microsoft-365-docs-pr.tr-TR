@@ -66,7 +66,7 @@
           href: archive-bloomberg-message-data.md
         - name: Epic EHR sağlık hizmetleri verileri (önizleme)
           href: import-epic-data.md
-        - name: Facebook Business
+        - name: Facebook Business (önizleme)
           href: archive-facebook-data-with-sample-connector.md
         - name: Genel EHR sağlık hizmetleri verileri (önizleme)
           href: import-healthcare-data.md
@@ -78,11 +78,11 @@
           href: archive-instant-bloomberg-data.md
         - name: LinkedIn
           href: archive-linkedin-data.md
-        - name: Fiziksel rozet verileri
+        - name: Fiziksel rozet verileri (önizleme)
           href: import-physical-badging-data.md
         - name: Slack eKeşif (önizleme)
           href: archive-slack-data-microsoft.md
-        - name: Twitter
+        - name: Twitter (önizleme)
           href: archive-twitter-data-with-sample-connector.md
     - name: Veritas veri bağlayıcıları
       items:
