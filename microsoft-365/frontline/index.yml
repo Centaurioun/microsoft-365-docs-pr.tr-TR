@@ -1,0 +1,88 @@
+### YamlMime:Hub
+title: Ön saf çalışanları için Microsoft 365
+summary: Ön cephe çalışanları için Microsoft 365, işiniz için önemli olan ön cephe çalışanlarını desteklemek için dağıtabileceğiniz basit, sezgisel ve güvenli çözümler sağlar.
+brand: m365
+metadata:
+  title: Ön saf çalışanları için Microsoft 365
+  description: Ön cephe çalışanları için Microsoft 365 ile temel ön cephe çalışanlarınız için basit, sezgisel ve güvenli çözümler dağıtın ve yönetin.
+  ms.service: microsoft-365-frontline
+  ms.topic: hub-page
+  author: samanro
+  ms.author: samanro
+  manager: pamgreen
+  audience: Admin
+  ms.date: 04/07/2022
+  ms.collection:
+  - m365-frontline
+  ms.openlocfilehash: 068032c38215dfbfbef0d77d25ccf097ee233dd2
+  ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+  ms.translationtype: MT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 07/15/2022
+  ms.locfileid: "66862441"
+highlightedContent:
+  items:
+  - title: Ön cephe çalışanları için Microsoft 365 nedir?
+    itemType: overview
+    url: flw-overview.md
+  - title: Ön cephe çalışanları için Microsoft 365 senaryolarınızı seçin
+    itemType: get-started
+    url: flw-choose-scenarios.md
+  - title: Ön cephe çalışanları için Microsoft 365'i deneyin (ücretsiz deneme sürümü başlatın)
+    itemType: whats-new
+    url: flw-trial.md
+productDirectory:
+  items:
+  - title: İşletmenizi dönüştürmeye yönelik çözümler
+    imageSrc: https://docs.microsoft.com/office/media/icons/lightbulb-idea-capture-blue.svg
+    links:
+    - url: flw-team-collaboration.md
+      text: İletişim
+    - url: flw-wellbeing-engagement.md
+      text: Dengeli yaşam ve katılım
+    - url: flw-onboarding-training.md
+      text: Eğitim ve işe alım
+    - url: shifts-for-teams-landing-page.md
+      text: Zamanlama yönetimi
+    - url: simplify-business-processes.md
+      text: Dijitalleştirilmiş süreçler
+    - url: virtual-appointments.md
+      text: Sanal randevular
+  - title: Sektörünüz için çözümler
+    imageSrc: https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg
+    links:
+    - url: teams-in-hc.md
+      text: Sağlık Hizmetleri
+    - url: teams-for-retail-landing-page.md
+      text: Perakende
+    - url: teams-for-financial-services.md
+      text: Finansal hizmetler
+    - url: teams-for-manufacturing.md
+      text: Üretim
+  - title: Uygulamaları yönetme
+    imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
+    links:
+    - url: /microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      text: Onaylar
+    - url: /microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      text: Rezervasyon
+    - url: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      text: Vardiya
+    - url: /microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      text: Görevler
+    - url: /microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      text: Güncelleştirmeler
+    - url: /microsoftteams/deploy-apps-microsoft-teams-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      text: Daha fazla >
+  - title: Ön cephe çalışanları için Microsoft 365'i ayarlama ve yapılandırma
+    imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
+    summary: Bu kılavuzla bir deneme ekibi oluşturun, pilot dağıtımla başlayın veya uygun ölçekte dağıtın.
+    url: flw-deploy-overview.md
+  - title: Benimseme kaynakları
+    imageSrc: https://docs.microsoft.com/office/media/icons/users-group.svg
+    summary: Bu benimseme kaynaklarıyla ilhamdan yürütmeye geçin.
+    url: https://adoption.microsoft.com/microsoft-teams/frontline-workers/
+  - title: Son kullanıcı eğitimi
+    imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
+    summary: Bu eğitim videolarıyla ön cephe iş gücünüzü hızla çalışır duruma getirin.
+    url: https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7#bkmk_flwscenarios

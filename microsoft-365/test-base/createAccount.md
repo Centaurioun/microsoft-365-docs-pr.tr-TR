@@ -1,9 +1,9 @@
 ---
-title: Yeni test tabanı hesabı oluşturma
-description: Test Temel'de yeni hesap oluşturma hakkında ayrıntılar
+title: Test Temel Hesabı Oluşturma
+description: Test Tabanı'nda yeni hesap oluşturma ayrıntıları
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
@@ -14,47 +14,73 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: ba2625f94411dbb00a7e56cde991957242fc2486
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: bf1830e1f166a3ecef1c7d50cf1f54f4c5b39dec
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63014325"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66861865"
 ---
-# <a name="step-1-create-a-test-base-account"></a>1. Adım: Test Bankası hesabı oluşturma
+# <a name="creating-a-test-base-account"></a>Test Temel Hesabı Oluşturma
 
-Azure aboneliğiniz yoksa, başlamadan önce ücretsiz [bir](https://azure.microsoft.com/free/) hesap oluşturun.
+**Test Temeli** hesabı oluşturmak için aşağıdaki adımları uygulayın. 
 
-## <a name="enter-details-for-test-base-account"></a>Test temel hesabı için ayrıntıları girin
+> [!IMPORTANT]
+> **Test Temeli** hesabına kaydolmak için bir aboneliğe ihtiyacınız vardır. Azure aboneliğiniz yoksa, nasıl oluşturulacağını öğrenmek için [Azure giriş](https://ms.portal.azure.com/#home) sayfasındaki **Abonelikler** bölümüne bakın. 
+
+## <a name="to-create-a-test-base-account"></a>Test Temeli hesabı oluşturmak için
  
-1. Azure **portalda 'Test Tabanı'** araması.
+1. [Azure portal](https://ms.portal.azure.com/#home) giriş sayfasında, Test Temeli hesabı oluşturma denetimlerini görüntülemek için Azure markette **Microsoft 365** **için Test Tabanı'nda arama yapın**. 
 
-![Test Bankası Hesabı arama resmi oluşturun.](Media/CreateTestAccount1.png)
+   > [!div class="mx-imgBorder"]
+   > [![Arama Test Tabanı](Media/creatingaccount01-search.png) ](Media/creatingaccount01-search.png#lightbox)
 
-2. Test **Tabanı hesabı oluşturmak için 'Oluştur'u** tıklatın.
+2. **Microsoft 365 için Test Tabanı** sayfasının denetimler alanında, Aşağıdaki gibi **Oluştur** düğmesini seçerek **Test Temel Hesabı Oluştur** sayfasını açın. 
 
-![Hesabı oluşturmak için ekle'ye tıklayın.](Media/CreateTestAccount2.png)
+   > [!div class="mx-imgBorder"]
+   > [![Test Temeli sayfası](Media/creatingaccount02-testbase.png) ](Media/creatingaccount02-testbase.png#lightbox)
 
-3.  ile memnuniyetinizi ```Terms of Use``` onaylamak için onay kutusunu okuyun ve ardından onay kutusunu seçin ```Terms of Use```.
+3. **Test Temel Hesabı Oluştur** sayfasında, bilgilerinizi **Test Temel Hesabı Oluştur** sayfasında aşağıdaki gerekli giriş alanlarına ekleyin: 
 
-![Kullanım koşullarını gözden geçirme.](Media/CreateTestAccount3.png)
+   - **Abonelik**— açılan listeden Azure abonelik kimliğinizi bulun ve seçin. 
+   - **Kaynak grubu**— Yeni **oluştur'u** seçerek ve görüntülenen **Ad** giriş metin kutusunda seçili bir ad belirterek yeni bir Kaynak grubu oluşturun. İşiniz bittiğinde **Tamam'ı** seçin. Zaten bir **Kaynak grubunuz** varsa, açılan listede adını bulun ve seçin. 
+   - **Test Temeli hesabı**— **Hesap Ayrıntıları'nın** altında, aşağıdaki şekilde gösterildiği gibi, giriş metin alanına yazarak **Test Temeli** hesabınız için seçilen bir ad belirtin. 
 
-4.  Aşağıdaki gereksinimler altında doğru bilgileri doldurun: 
-    -   Abonelik: Kaynak Grubu
-    -   Örnek Ayrıntıları: Ad.
+   > [!NOTE]
+   > Tüm gerekli alanlar (*) için giriş sağlamanız gerekir. 
 
-**Şu anda, Test Tabanı yalnızca Standart Fiyatlandırma katmanını destekler.**
+   > [!div class="mx-imgBorder"]
+   > [![Temel bilgiler](Media/creatingaccount03-basics.png) ](Media/creatingaccount03-basics.png#lightbox)
 
-![Abonelik, kaynak grubunu seçin ve ayrıntıları yazın.](Media/CreateTestAccount4.png)
+   > [!NOTE]
+   > Nisan 2022 itibarıyla **Test Tabanı** yalnızca **Standart** fiyatlandırma katmanını destekler. **Fiyatlandırma katmanı**, Azure aboneliğinize ücretlendirilen kaynak ve saatlik hizmet maliyetini belirler. 
 
-5.  Son olarak, doğrulamak ```Review + Create``` ve yeni oluşturulan hesabı etkinleştirmek için üzerine tıklayın.
+   > [!div class="mx-imgBorder"]
+   > ![Fiyatlandırma katmanı](Media/creatingaccount04-pricing-tier.png)
 
-## <a name="next-steps"></a>Sonraki adımlar
+4. **Kullanım Koşulları'nı** okuyun. Koşullar kabul edilebilirse, kullanım koşullarını okuduğunuzdan emin olmak ve kabul etmek için onay kutusunu seçin. 
 
-Sonraki makaleye ilerleyin ve 2. Adım: Paketinizin **nasıl karşıya yük olduğunu öğrenin.**
-> [!div class="nextstepaction"]
-> [Sonraki adım](uploadApplication.md)
+   > [!div class="mx-imgBorder"]
+   > ![Kullanım koşulları](Media/creatingaccount05-terms.png)
 
-<!---
-Add button for next page
--->
+5. Belirttiğiniz giriş verilerini doğrulamak için **Test Temel Hesabı Oluştur** sayfasının alt kesiminde **Gözden Geçir + oluştur'u** seçin. 
+
+   Doğrulama işlemi başarılı olursa, **Test Temel Hesabı Oluştur** sayfasında giriş verileri yapılandırmanızı gözden geçirebilirsiniz. 
+
+   > [!div class="mx-imgBorder"]
+   > [![Oluşturma işlemini](Media/creatingaccount06-review.png) gözden geçirme ](Media/creatingaccount06-review.png#lightbox)
+
+6. Önceki **Test Temel Hesabı Oluştur** sayfasının alt kesiminde gösterilen **Oluştur** düğmesini seçin. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Oluştur düğmesi](Media/creatingaccount07-create.png)
+
+7. Kullanıcı **Dağıtımı** sayfanızda Kaynağa **git'i** seçerek yeni **Test Temeli** hesabına genel bakış sayfanızı açın ve **Test Temeli** araştırmanıza, yapılandırmanıza ve yolculuğunuza başlayın. 
+
+   > [!div class="mx-imgBorder"]
+   > [![](Media/creatingaccount08-complete.png) Oluşturma işlemini tamamlama ](Media/creatingaccount08-complete.png#lightbox)
+
+
+
+
+

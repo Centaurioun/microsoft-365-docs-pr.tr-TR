@@ -29,19 +29,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: Microsoft 365 İş Ekstra kullanıcılar için Windows 10 Pro çalıştıran Windows cihazları ayarlayarak merkezi yönetim ve güvenlik denetimlerini etkinleştirme.
+description: Microsoft 365 İş Ekstra kullanıcılar için Windows 10 Pro çalıştıran Windows cihazlarını ayarlayarak merkezi yönetim ve güvenlik denetimlerini etkinleştirin.
 ms.openlocfilehash: b9c8a5eb724a74959983e86dcdcb8f2f8f96b540
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318590"
+ms.lasthandoff: 06/05/2022
+ms.locfileid: "66861799"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Microsoft 365 İş Ekstra kullanıcılar için Windows cihazları ayarlama
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Microsoft 365 İş Ekstra kullanıcılar için Windows cihazları ayarlamadan önce tüm Windows cihazların Windows 10 Pro, sürüm 1703 (Creators Update) veya Windows 11 Pro çalıştığından emin olun. 
+windows cihazlarını Microsoft 365 İş Ekstra kullanıcılar için ayarlamadan önce tüm Windows cihazlarının Windows 10 Pro, sürüm 1703 (Creators Update) veya Windows 11 Pro çalıştığından emin olun. 
 
 Windows 10 Pro (veya Windows 11 Pro), Windows 10 Pro ve Windows 11 Pro tamamlayan bir dizi bulut hizmeti ve cihaz yönetimi özelliği olan Windows 10 Business dağıtmak için önkoşuldur ve Microsoft 365 İş Ekstra merkezi yönetim ve güvenlik denetimlerini etkinleştirin.
 
@@ -49,22 +49,22 @@ Windows 10 Pro (veya Windows 11 Pro), Windows 10 Pro ve Windows 11 Pro tamamlaya
 
 ## <a name="windows-10-pro-and-windows-11-pro"></a>Windows 10 Pro ve Windows 11 Pro
 
-Windows 7 Pro, Windows 8 Pro veya Windows 8.1 Pro gibi Windows önceki sürümlerini çalıştıran Windows cihazlarınız varsa, Microsoft 365 İş Ekstra aboneliğiniz bunları yükseltmenizi sağlar Windows 10 Pro veya Windows 11 Pro cihazlar.
+Windows 7 Pro, Windows 8 Pro veya Windows 8.1 Pro gibi Windows'un önceki sürümlerini çalıştıran Windows cihazlarınız varsa, Microsoft 365 İş Ekstra aboneliğiniz bu cihazları Windows 10 Pro veya Windows 11 Pro.
   
-Windows cihazları yükseltme hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
+Windows cihazlarını yükseltme hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- [giriş Windows Windows Pro yükseltme](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
+- [Windows Home'ı Windows Pro'ya yükseltme](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
 - [Windows 10 Pro'ye yükseltme](https://support.microsoft.com/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796)
   
 Yükselttikten sonra, [yükseltmeye sahip olduğunuzu doğrulamak veya yükseltmenin çalıştığından emin olmak için cihazın Azure AD bağlı olduğunu](#verify-the-device-is-connected-to-azure-ad) doğrulama konusuna bakın.
 
-## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>Windows cihazları kuruluşunuzun Azure AD katılma
+## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>Windows cihazlarını kuruluşunuzun Azure AD katılma
 
-Şirketinizin tüm Windows cihazları Windows 10 Pro veya Windows 11 Pro çalıştırıyorsa, bu cihazları kuruluşunuzun Azure Active Directory (Azure AD) ile birleştirebilirsiniz. 
+Şirketinizin tüm Windows cihazları Windows 10 Pro veya Windows 11 Pro çalıştırıyorsa, bu cihazları kuruluşunuzun Azure Active Directory'sine (Azure AD) birleştirebilirsiniz. 
 
-1. Windows bir cihazda Windows logosunu ve ardından Ayarlar simgesini seçin.
+1. Bir Windows cihazında Windows logosunu ve ardından Ayarlar simgesini seçin.
   
-2. **Ayarlar'de** **AccountsAccess** >  **iş veya okul** \> **Bağlan** gidin.
+2. **Ayarlar'da** **Hesaplar** > **İş veya okula** \> erişim **Bağlantısı'na** gidin.
   
 3. E-posta adresinizi yazın ve **İleri'yi** seçin.
 
@@ -72,7 +72,7 @@ Yükselttikten sonra, [yükseltmeye sahip olduğunuzu doğrulamak veya yükseltm
 
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Cihazın Azure AD'ye bağlı olduğunu doğrulama
 
-Eşitleme durumunuzu doğrulamak için, **Ayarlar'daki İşe veya okula erişim** sayfasında, **Bilgi** ve **Bağlantıyı Kes** düğmelerini kullanıma açmak **için _** _ \<organization name\> konumuna bağlı alanını seçin. Eşitleme durumunuzu almak için **Bilgi'yi** seçin. 
+Eşitleme durumunuzu doğrulamak için **Ayarlar'daki** **İşe veya okula erişim** sayfasında, **Bilgi** ve **Bağlantıyı Kes** düğmelerini kullanıma açmak için _ _ \<organization name\> **konumuna bağlı** alanını seçin. Eşitleme durumunuzu almak için **Bilgi'yi** seçin. 
   
 **Eşitleme durumu** sayfasında **Eşitle'yi** seçerek bilgisayara en son mobil cihaz yönetimi ilkelerini alın.  
   
@@ -80,6 +80,6 @@ Eşitleme durumunuzu doğrulamak için, **Ayarlar'daki İşe veya okula erişim*
 
 Mobil cihazlarınızı ayarlamak için bkz[. Microsoft 365 İş Ekstra kullanıcılar için mobil cihazları ayarlama](set-up-mobile-devices.md), 
 
-Korumayı artırmak için bkz. [İş planlarına yönelik Microsoft 365 güvenliğini sağlamaya yönelik en iyi yöntemler](../security-and-compliance/secure-your-business-data.md).
+Korumayı artırmak için bkz. [İş için Microsoft 365 planlarının güvenliğini sağlamaya yönelik en iyi yöntemler](../security-and-compliance/secure-your-business-data.md).
   
 

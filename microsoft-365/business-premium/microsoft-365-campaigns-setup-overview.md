@@ -1,5 +1,5 @@
 ---
-title: Kampanyalar için Microsoft 365 kuruluma genel bakış
+title: Kampanyalar için Microsoft 365 kurulumuna genel bakış
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -26,13 +26,13 @@ search.appverid:
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Kampanyalar veya diğer işletmeler için Microsoft 365 İş Ekstra kuruluma genel bakış
 ms.openlocfilehash: 0dc5fcda0d2f3ece91e294fea3a59d5e536c8088
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65086985"
+ms.lasthandoff: 06/05/2022
+ms.locfileid: "66861793"
 ---
-# <a name="set-up-microsoft-365-for-campaigns"></a>Kampanyalar için Microsoft 365 ayarlama
+# <a name="set-up-microsoft-365-for-campaigns"></a>Kampanyalar için Microsoft 365’i ayarlama
 
 ## <a name="overview"></a>Genel bakış
 
@@ -51,4 +51,4 @@ Bu hedeflere ulaştıktan sonra [bir sonraki göreve](m365bp-security-overview.m
 
  **Desteğe başvurmanız gerekiyorsa:**
   
-Microsoft 365 yöneticisi olarak müşteri destek ekibimize erişebilirsiniz, **[İş ürünleri için desteğe başvurun - Yönetici Yardımı](../business-video/get-help-support.md)**
+Microsoft 365 yöneticisi olarak müşteri destek ekibimize erişebilirsiniz, **[İş ürünleri için desteğe başvurun - yardım Yönetici](../business-video/get-help-support.md)**
