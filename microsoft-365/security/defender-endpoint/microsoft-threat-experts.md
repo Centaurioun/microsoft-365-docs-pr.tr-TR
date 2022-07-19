@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b301a0bd62e0826a9ae089f51f591f575a918e0f
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 4fe66987f9b8ea5c2f0b27ae9fb594a198da2e9b
+ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756781"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855053"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft Tehdit Uzmanları
 
@@ -58,7 +58,7 @@ Ayrıntılar için bkz[. Microsoft Tehdit Uzmanları özelliklerini yapılandır
 
 ## <a name="endpoint-attack-notification"></a>Uç nokta saldırısı bildirimi
 
-Uç nokta saldırı bildirimi, ağınıza yönelik insan saldırgan saldırıları, el ile klavye saldırıları veya siber casusluk gibi gelişmiş saldırılar da dahil olmak üzere ağınıza yönelik en önemli tehditler için proaktif avcılık sağlar. Bu bildirimler yeni bir uyarı olarak gösterilir. Yönetilen tehdit avcılığı hizmeti şunları içerir:
+Endpoint Attack Notifications (daha önce Microsoft Tehdit Uzmanları - Hedefli Saldırı Bildirimi olarak adlandırılıyordu), insan saldırgan saldırılar, uygulamalı klavye saldırıları veya siber casusluk gibi gelişmiş saldırılar da dahil olmak üzere ağınıza yönelik en önemli tehditler için proaktif avcılık sağlar. Bu bildirimler yeni bir uyarı olarak gösterilir. Yönetilen tehdit avcılığı hizmeti şunları içerir:
 
 - Tehdit izleme ve analiz, işletme için bekleme süresini ve riski azaltma
 - Hem bilinen hem de bilinmeyen saldırıları keşfetmek ve önceliklerini belirlemeye yönelik avcı tarafından eğitilmiş yapay zeka

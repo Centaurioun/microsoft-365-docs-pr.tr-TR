@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 25860b27ee5d677f3349f82f63f64983255d2d32
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: e869317a8a88545c058075909a95ead02177ff10
+ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750220"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855031"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Güvenli Puan'daki yenilikler
 
@@ -36,7 +36,7 @@ Microsoft Secure Score'u güvenlik duruşunuzun daha iyi bir temsilcisi yapmak i
 
 Ne kadar çok geliştirme eylemi gerçekleştirirseniz, Güvenli Puanınız o kadar yüksek olur. Daha fazla bilgi için bkz. [Microsoft Güvenli Puanı](microsoft-secure-score.md).
 
-Microsoft Güvenli Puanı'na [Microsoft 365 Defender portalından](microsoft-365-defender-portal.md) ulaşabilirsinizhttps://security.microsoft.com/securescore.
+Microsoft Güvenli Puanı'na [Microsoft 365 Defender portalından](microsoft-365-defender-portal.md) ulaşabilirsiniz<https://security.microsoft.com/securescore>.
 
 ## <a name="june-2022"></a>Haziran 2022
 
@@ -58,8 +58,8 @@ Microsoft Güvenli Puanı'na [Microsoft 365 Defender portalından](microsoft-365
 
 - Yeni Salesforce ve ServiceNow önerileri artık Microsoft Defender for Cloud Apps müşterileri için Güvenli Puan geliştirme eylemleri olarak kullanılabilir. Daha fazla bilgi için bkz. [SaaS Güvenlik Duruş Yönetimine genel bakış](https://aka.ms/saas_security_posture_management).
 
->[!Note]
->Salesforce ve ServiceNow denetimleri artık genel önizlemede kullanılabilir.
+> [!NOTE]
+> Salesforce ve ServiceNow denetimleri artık genel önizlemede kullanılabilir.
 
 ## <a name="april-2022"></a>Nisan 2022
 

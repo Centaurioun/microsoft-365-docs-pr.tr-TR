@@ -969,6 +969,8 @@
               href: permissions-filtering-for-content-search.md
             - name: eKeşif için posta kutularında saklanan içerik
               href: what-is-stored-in-exo-mailbox.md
+            - name: eKeşif Grafik bağlayıcısı
+              href: ediscovery-graph-connector.md
             - name: eKeşif araçlarında şifre çözme
               href: ediscovery-decryption.md
             - name: Konuşma inceleme setleri

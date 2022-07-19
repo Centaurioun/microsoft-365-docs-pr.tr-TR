@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Microsoft Purview'da eBulma (Premium) çözümü hakkında bilgi edinin. Bu makalede, iç ve dış araştırmalarını yönetmenize yardımcı olacak bir araç olan Microsoft Purview'daki eKeşif (Premium) konusuna genel bir bakış sağlanır. Ayrıca, yasal araştırmalarınızı yönetmek için eKeşif (Premium) kullanmanın iş nedenlerini de çerçeveler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95dbeb33ad054845b7d2a7a5bc019ce0cd727093
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 7d534012466300675a7143cdada0b43468027104
+ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714585"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855097"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Microsoft Purview eKeşif genel bakış (Premium)
 
@@ -83,7 +83,7 @@ Microsoft 365'teki yerleşik eBulma (Premium) iş akışı, Elektronik Bulma Ba�
 
 - **Koleksiyon.** Araştırmayla ilgili veri kaynaklarını tanımladıktan (ve koruduktan) sonra, eBulma'daki yerleşik arama aracını (Premium) kullanarak olayla ilgili olabilecek gözetim veri kaynakları (ve varsa gözetim dışı veri kaynakları) için canlı veri arayabilir ve toplayabilirsiniz.
 
-- **Işleme.** Servis talebiyle ilgili tüm verileri topladıktan sonra, sonraki adım daha fazla inceleme ve analiz için bu verileri işlemektir. eBulma 'da (Premium) toplama aşamasında tanımladığınız yerinde veriler, servis talebi verilerinin statik bir görünümünü sağlayan bir Azure Depolama konumuna ( *inceleme kümesi* olarak adlandırılır) kopyalanır. 
+- **Işleme.** Servis talebiyle ilgili tüm verileri topladıktan sonra, sonraki adım daha fazla inceleme ve analiz için bu verileri işlemektir. eBulma 'da (Premium) toplama aşamasında tanımladığınız yerinde veriler, servis talebi verilerinin statik bir görünümünü sağlayan bir Azure Depolama konumuna ( *inceleme kümesi* olarak adlandırılır) kopyalanır.
 
 - **Inceleme.** Veriler bir gözden geçirme kümesine eklendikten sonra, belirli belgeleri görüntüleyebilir ve verileri servis talebiyle en alakalı duruma düşürmek için ek sorgular çalıştırabilirsiniz. Ayrıca, belirli belgelere açıklama ekleyebilir ve bunları etiketleyebilir.
 
@@ -93,9 +93,9 @@ Microsoft 365'teki yerleşik eBulma (Premium) iş akışı, Elektronik Bulma Ba�
 
 ## <a name="subscriptions-and-licensing"></a>Abonelikler ve lisanslama
 
-Kullanıcının eBulma (Premium) hizmetinden yararlanma haklarını sağladığı lisanslarla ilgili bilgi için lütfen [güvenlik & uyumluluğu için Microsoft 365 kılavuzuna](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) bakın ve [Microsoft 365 Karşılaştırma tablosundaki](https://go.microsoft.com/fwlink/?linkid=2139145) "eBulma ve denetim" bölümüne bakın. 
+Kullanıcının eBulma (Premium) hizmetinden yararlanma haklarını sağladığı lisanslarla ilgili bilgi için lütfen [güvenlik & uyumluluğu için Microsoft 365 kılavuzuna](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) bakın ve [Microsoft 365 Karşılaştırma tablosundaki](https://go.microsoft.com/fwlink/?linkid=2139145) "eBulma ve denetim" bölümüne bakın.
 
-Lisans atama hakkında bilgi için bkz. [Kullanıcılara lisans atama](/microsoft-365/admin/manage/assign-licenses-to-users).
+Lisans atama hakkında bilgi için bkz. [Kullanıcılara lisans atama](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## <a name="get-started-with-ediscovery-premium"></a>eKeşif'i kullanmaya başlama (Premium)
 

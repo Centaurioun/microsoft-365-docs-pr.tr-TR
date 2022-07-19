@@ -3,7 +3,7 @@
 ## [Genel Bakış]()
 ### [Uç Nokta için Microsoft Defender nedir?](microsoft-defender-endpoint.md)
 ### [Deneme akış planı: Denemenizden en iyi şekilde yararlanın](defender-endpoint-trial-playbook.md)
-### [Uç Nokta için Defender planlarını karşılaştırın](defender-endpoint-plan-1-2.md)
+### [Microsoft uç nokta güvenlik planlarını karşılaştırma](defender-endpoint-plan-1-2.md)
 ### [Minimum gereksinimler](minimum-requirements.md)
 ### [Uç nokta için Microsoft Defender’daki yenilikler](whats-new-in-microsoft-defender-endpoint.md)
 ### [Özellikleri önizleyin](preview.md)

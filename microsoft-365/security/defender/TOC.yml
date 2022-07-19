@@ -348,6 +348,8 @@
           items:
             - name: Genel Bakış
               href: defenderexpertsforhuntingprev.md
+            - name: Tehdit Avcılığı için Defender Uzmanları raporlarını anlama
+              href: defender-experts-report.md
         - name: Fidye yazılımı taktik defterleri
           items:
             - name: Microsoft 365 Defender ile insan tarafından işletilen fidye yazılımı saldırılarını algılama
