@@ -17,12 +17,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: e61a59e769052d69494d327b2e1770f643375ab9
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: d8938c06e42a546b4cf28bf55fc2b6ba49269492
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772116"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843467"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Microsoft 365 Defender aracılığıyla Microsoft Tehdit Uzmanları özelliklerini yapılandırma ve yönetme
 
@@ -51,8 +51,6 @@ Zaten Uç Nokta için Microsoft Defender ve Microsoft 365 Defender varsa, Micros
 1. Gezinti bölmesinden **Ayarlar > Uç Noktalar > Genel > Gelişmiş özellikler > Uç Nokta Saldırı Bildirimleri'ne** gidin.
 
 2. **Uygula'yı** seçin.
-
-    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="Microsoft 365 Defender portalındaki Microsoft Tehdit Uzmanları ayarları sayfası" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
 3. Microsoft'un uygulamanız hakkında sizinle iletişim kurabilmesi için e-posta adresinizi girin.
 
@@ -94,7 +92,7 @@ Zaten Uç Nokta için Microsoft Defender bir müşteriyseniz, Microsoft Tehdit U
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>Kuruluşunuzdaki şüpheli siber güvenlik etkinlikleri hakkında bir Microsoft tehdit uzmanına başvurun
 
-Microsoft Tehdit Uzmanları Microsoft 365 Defender portalından iletişime geçebilirsiniz. Uzmanlar karmaşık tehditleri ve hedeflenen saldırı bildirimlerini anlamanıza yardımcı olabilir. Uyarılar ve olaylar hakkında daha fazla ayrıntı için uzmanlarla iş ortaklığı veya güvenliğin aşılmasına ilişkin öneriler. Portal panonuz tarafından açıklanan tehdit bilgileri bağlamı hakkında içgörü elde edin.
+Microsoft Tehdit Uzmanları Microsoft 365 Defender portalından iletişime geçebilirsiniz. Uzmanlar karmaşık tehditleri ve Uç Nokta Saldırısı Bildirimlerini anlamanıza yardımcı olabilir. Uyarılar ve olaylar hakkında daha fazla ayrıntı için uzmanlarla iş ortaklığı veya güvenliğin aşılmasına ilişkin öneriler. Portal panonuz tarafından açıklanan tehdit bilgileri bağlamı hakkında içgörü elde edin.
 
 > [!NOTE]
 >

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4f2ab696b728244e495ec04933b83eaafeeb3db0
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: b9689cb0a3470a19e4ceeeb80cd3e77f2d2d8edf
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617026"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843575"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender'daki yenilikler
 
@@ -44,6 +44,9 @@ Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında da
 - [Microsoft Defender for Cloud Apps'deki yenilikler](/cloud-app-security/release-notes)
 
 Ayrıca, ürün güncelleştirmelerini ve önemli bildirimleri [ileti merkezi](https://admin.microsoft.com/Adminportal/Home#/MessageCenter) üzerinden de alabilirsiniz. 
+
+## <a name="july-2022"></a>Temmuz 2022
+- (Önizleme) Tehdit Avcılığı için Microsoft Defender Uzmanları genel önizlemesi katılımcıları artık, av hizmetinin ortamlarında ortaya çıkan tehditleri ve Microsoft 365 Defender ürünleri tarafından oluşturulan uyarıları anlamalarına yardımcı olmak için aylık raporlar almayı dört gözle bekliyor. Ayrıntılar için bkz. [Microsoft 365 Defender'da Avcılık için Defender Uzmanlarını Anlama raporu](defender-experts-report.md).
 
 ## <a name="june-2022"></a>Haziran 2022
 - (Önizleme) [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) ve [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) tabloları artık gelişmiş tehdit avcılığı şemasında kullanılabilir. Çeşitli yapılandırmaların durumu ve cihazların saldırı yüzeyi alanı durumları dahil olmak üzere Defender Güvenlik Açığı Yönetimi'ndeki değerlendirme olaylarını aramak için bu tabloları kullanın.

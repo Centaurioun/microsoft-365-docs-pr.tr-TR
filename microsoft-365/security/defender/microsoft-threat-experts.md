@@ -18,12 +18,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: bf40aa8ede1f65d22bd319b3a2fcfe82c778e754
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 3d60edd7747bddf6afd9d075c051a29a11594edb
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756715"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843445"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 365'te Microsoft Tehdit Uzmanları genel bakış
 
@@ -45,8 +45,6 @@ Microsoft Tehdit Uzmanları – İsteğe Bağlı Uzmanlar, kuruluşunuzun karş�
 > Başvurmadan önce, Uç Nokta Saldırısı Bildirimleri için uygunluk gereksinimlerini Microsoft Teknik Hizmet sağlayıcınız ve hesap ekibinizle tartıştığınızdan emin olun.
 
 Zaten Uç Nokta için Microsoft Defender ve Microsoft 365 Defender varsa, uç nokta saldırısı bildirimlerine Microsoft 365 Defender portalı üzerinden başvurabilirsiniz. **Uç Nokta Saldırısı Bildirimleri > Genel > Gelişmiş özellikler > Ayarlar > Uç Noktalar'a** gidin ve **Uygula'yı** seçin. Tam açıklama için bkz[. Microsoft Tehdit Uzmanları özelliklerini yapılandırma](./configure-microsoft-threat-experts.md).
-
-:::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="Microsoft 365 Defender portalındaki Uç Noktalar sayfasının sol gezinti bölmesindeki Gelişmiş özellikler seçeneği" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
 Uygulamanız onaylandıktan sonra Tehdit Uzmanları ortamınıza yönelik bir tehdit algıladığı her durumda uç nokta saldırı bildirimleri almaya başlarsınız.
 
@@ -74,24 +72,10 @@ Ayrıca, hızlı ve doğru bir tehdit yanıtı için doğrudan Microsoft 365 gü
 **Tehdit uzmanına danışma** seçeneği portal genelinde çeşitli yerlerde kullanılabilir:
 
 - <i>**Cihaz sayfası eylemleri menüsü**</i><BR>
-
-:::image type="content" source="../../media/mte/device-actions-mte-highlighted.png" alt-text="Microsoft 365 Defender portalındaki Cihaz sayfası eylem menüsündeki MTE-EOD menü seçeneği" lightbox="../../media/mte/device-actions-mte-highlighted.png":::
-
 - <i>**Cihaz envanteri sayfası açılır menüsü**</i><BR>
-
-:::image type="content" source="../../media/mte/device-inventory-mte-highlighted.png" alt-text="Microsoft 365 Defender portalındaki Cihaz envanteri sayfasındaki MTE-EOD menü seçeneği" lightbox="../../media/mte/device-inventory-mte-highlighted.png":::
-
 - <i>**Uyarılar sayfası açılır menüsü**</i><BR>
-
-:::image type="content" source="../../media/mte/alerts-actions-mte-highlighted.png" alt-text="Microsoft 365 Defender portalındaki Uyarılar sayfasındaki MTE-EOD menü seçeneği" lightbox="../../media/mte/alerts-actions-mte-highlighted.png":::
-
 - <i>**Olaylar sayfası eylemleri menüsü**</i><BR>
-
-:::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="Microsoft 365 Defender portalının Olaylar sayfasındaki MTE-EOD menü seçeneği" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
-
 - <i>**Olay envanter sayfası**</i><BR>
-
-:::image type="content" source="../../media/mte/incidents-inventory-mte-highlighted.png" alt-text="Microsoft 365 Defender portalındaki olay envanteri sayfasındaki MTE-EOD menü seçeneği" lightbox="../../media/mte/incidents-inventory-mte-highlighted.png":::
 
 > [!NOTE]
 > Office 365 için Microsoft Defender lisansınıza eşlenmiş Premier Destek aboneliğiniz varsa İsteğe Bağlı Uzmanlar durumlarınızı Microsoft Services Hub aracılığıyla izleyebilirsiniz.

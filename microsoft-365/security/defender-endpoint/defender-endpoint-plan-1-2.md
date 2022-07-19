@@ -1,7 +1,7 @@
 ---
-title: Uç Nokta için Microsoft Defender planlarını karşılaştırma
-description: Uç Nokta Planı 1 için Defender'ı Plan 2 ile karşılaştırın. Planlar arasındaki farklar hakkında bilgi edinin ve kuruluşunuzun gereksinimlerine uygun planı seçin.
-keywords: Uç Nokta için Defender, gelişmiş tehdit koruması, uç nokta koruması
+title: Microsoft uç nokta güvenlik planlarını karşılaştırma
+description: Uç Nokta Için Defender Plan 1 gibi Microsoft uç nokta güvenlik planlarını Uç Nokta Için Defender Plan 2 ile karşılaştırın. Planlar arasındaki farklar hakkında bilgi edinin ve kuruluşunuzun gereksinimlerine uygun planı seçin.
+keywords: Uç Nokta için Defender, gelişmiş tehdit koruması, uç nokta koruması, uç nokta güvenliği, cihaz güvenliği, siber güvenlik
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d41c228ceeae0dcd373f98c6dcd89bf88b0feacd
-ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
+ms.openlocfilehash: 1b18bc6ed3f7992a774bfd90fd2913cfe4e9c050
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66795410"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843489"
 ---
 # <a name="compare-microsoft-endpoint-security-plans"></a>Microsoft uç nokta güvenlik planlarını karşılaştırma
 
@@ -68,8 +68,7 @@ Aşağıdaki tabloda, Microsoft uç nokta güvenlik planlarına dahil edilenler 
 
 İş için Defender, Uç Nokta Için Defender Plan 1 ve 2 ve Microsoft 365 İş Ekstra tek başına sürümleri sunucu lisanslarını içermez. Sunucuları eklemek için aşağıdaki seçeneklerden birini belirleyin:
 
-- [Bulut](/azure/defender-for-cloud/defender-for-cloud-introduction) için Defender teklifinin bir parçası olarak **Sunucular için Defender Plan 1 veya Plan 2**. Daha fazla bilgi edinmek için. Bkz [. Sunucular için Microsoft Defender'a genel bakış](/azure/defender-for-cloud/defender-for-servers-introduction).
-
+- [Bulut](/azure/defender-for-cloud/defender-for-cloud-introduction) için Defender teklifinin bir parçası olarak **Sunucular için Microsoft Defender Plan 1 veya Plan 2**. Daha fazla bilgi edinmek için. Bkz [. Sunucular için Microsoft Defender'a genel bakış](/azure/defender-for-cloud/defender-for-servers-introduction).
 - Küçük ve orta ölçekli işletmeler için **İş için Microsoft Defender sunucuları (önizleme).** Bkz. [İş için Microsoft Defender sunucuları alma (önizleme)](../defender-business/get-defender-business-servers.md).
 
 ## <a name="mixed-licensing-scenarios"></a>Karma lisanslama senaryoları
@@ -94,5 +93,5 @@ Ancak, **destek birimine başvurabilir ve kiracı deneyiminiz için geçersiz k�
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Microsoft Security'yi kullanmaya başlama (deneme teklifleri)](https://www.microsoft.com/security/business/get-started/start-free-trial)
-
+- [Uç Nokta için Microsoft Defender](microsoft-defender-endpoint.md)
 - [İş için Microsoft Defender](../defender-business/mdb-overview.md) (küçük ve orta ölçekli işletmeler için uç nokta koruması)

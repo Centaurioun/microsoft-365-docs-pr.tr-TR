@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da ayıklayıcı oluşturmayı öğrenin.
-ms.openlocfilehash: f1e50b7eaeaaf669c682741c0e02df883523d888
-ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
+ms.openlocfilehash: 20edce834ee9a55a9c748d59751a2f38ed08f85f
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/19/2022
-ms.locfileid: "66842132"
+ms.locfileid: "66843532"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de ayıklayıcı oluşturma
 
@@ -47,9 +47,9 @@ Belgede ayıklamak istediğiniz her varlık için bir ayıklayıcı oluşturman�
     ![Sütun türü seçeneğini gösteren Yeni varlık ayıklayıcı panelinin Gelişmiş ayarlar bölümünün ekran görüntüsü.](../media/content-understanding/advanced-settings-column-type.png)
 
     > [!NOTE]
-    > **Tek satırlık metin** sütun türüne sahip ayıklayıcılar için en fazla karakter sınırı 255'tir. Seçtiğiniz ve sınırı aşan karakterler kesilir. 255 karakterden büyük bir karakter seçmek için ayıklayıcıyı oluştururken **Birden Çok Metin Satırı** sütun türünü seçin.
+    > **Tek satırlık metin** sütun türüne sahip ayıklayıcılar için en fazla karakter sınırı 255'tir. Seçtiğiniz ve sınırı aşan karakterler kesilir. 255 karakterden büyük bir karakter seçmek için ayıklayıcıyı oluştururken **Birden çok metin satırı** sütun türünü seçin.
     >
-    >Varsayılan olarak, eklenebilecek metin miktarı sınırıyla **Birden Çok Metin Satırı** sütunu oluşturulur. Bu durumda, ayıklanan metin kesilmiş görünebilir. Bu durumda, **belge kitaplıklarında sınırsız uzunluğa izin ver** sütun ayarı sınırı kaldırmak için kullanılabilir.
+    >Varsayılan olarak, eklenebilecek metin miktarı sınırıyla **birden çok** metin sütunu satırı oluşturulur. Bu durumda, ayıklanan metin kesilmiş görünebilir. Bu durumda, **belge kitaplıklarında sınırsız uzunluğa izin ver** sütun ayarı sınırı kaldırmak için kullanılabilir.
 
 3. İşiniz bittiğinde **Oluştur'u** seçin.
 
