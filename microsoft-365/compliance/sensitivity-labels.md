@@ -22,12 +22,12 @@ description: Hassas içeriği sınıflandırmak ve korumak için Microsoft Purvi
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4d1c0f590535691f0ac7c10fdff8c67261753577
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 57dcda57c29c15d8bf3896e983a95f358fd6ac1c
+ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714146"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66842165"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Duyarlılık etiketleri hakkında bilgi edinin
 
@@ -148,7 +148,7 @@ Kullanılamayan seçeneklere sahip bu sayfalar için devam etmek için **İleri'
 
 ### <a name="label-priority-order-matters"></a>Etiket önceliği (sıralamanın önemi)
 
-Microsoft Purview uyumluluk merkezinde duyarlılık etiketlerinizi oluşturduğunuzda, **bunlar Etiketler** sayfasındaki **Duyarlılık** sekmesindeki bir listede görünür. Bu listede etiketlerin sırası, önceliklerini yansıttığı için önemlidir. Listenin **en altında** Çok Gizli gibi en kısıtlayıcı duyarlılık etiketinizin ve Genel gibi en az kısıtlayıcı duyarlılık etiketinizin **en üstte** görünmesini istiyorsunuz.
+duyarlılık etiketlerinizi Microsoft Purview uyumluluk portalı oluşturduğunuzda, **bunlar Etiketler** sayfasındaki **Duyarlılık** sekmesindeki bir listede görünür. Bu listede etiketlerin sırası, önceliklerini yansıttığı için önemlidir. Listenin **en altında** Çok Gizli gibi en kısıtlayıcı duyarlılık etiketinizin ve Genel gibi en az kısıtlayıcı duyarlılık etiketinizin **en üstte** görünmesini istiyorsunuz.
 
 Belge, e-posta veya kapsayıcı gibi bir öğeye yalnızca bir duyarlılık etiketi uygulayabilirsiniz. Kullanıcılarınızın bir etiketin sınıflandırmasını düşürürken bunun nedenini belirtmesini gerektiren bir seçenek ayarlarsanız bu listedeki sıra daha düşük sınıflandırmaları tanımlar. Ancak bu seçenek, üst etiketlerinin önceliğini paylaşan alt etiketler için geçerli değildir.
 
@@ -222,7 +222,7 @@ Oluşturabileceğiniz ve yayımlayabileceğiniz duyarlılık etiketlerinin sayı
 
 ### <a name="label-policy-priority-order-matters"></a>Etiket ilkesi önceliği (sipariş önemlidir)
 
-Duyarlılık etiketlerinizi, **Etiket** **ilkeleri sayfasındaki Duyarlılık ilkeleri** sekmesindeki bir listede görünen duyarlılık etiketi ilkesinde yayımlayarak kullanıcıların kullanımına sunabilirsiniz. Duyarlılık etiketleri gibi (bkz [. Etiket önceliği (sıra önemlidir)](#label-priority-order-matters)), duyarlılık etiketi ilkelerinin sırası da önceliklerini yansıttığı için önemlidir. En düşük önceliğe sahip etiket ilkesi **en üstte**, en yüksek önceliğe sahip etiket ilkesi ise **en altta** gösterilir.
+Duyarlılık etiketlerinizi, **Etiket ilkeleri** sayfasındaki bir listede görünen duyarlılık etiketi ilkesinde yayımlayarak kullanıcılara sunabilirsiniz. Duyarlılık etiketleri gibi (bkz [. Etiket önceliği (sıra önemlidir)](#label-priority-order-matters)) duyarlılık etiketi ilkelerinin sırası da önceliklerini yansıttığı için önemlidir: En düşük önceliğe sahip etiket ilkesi listenin en **üst kısmında en düşük** sipariş numarasıyla gösterilir ve en yüksek önceliğe sahip etiket ilkesi listenin en altında **en yüksek** sipariş numarasıyla gösterilir.
 
 Etiket ilkesi şunlardan oluşur:
 
@@ -230,14 +230,18 @@ Etiket ilkesi şunlardan oluşur:
 - İlkeye etiketlerle atanacak kullanıcılar ve gruplar.
 - Bu kapsamın ilke ve ilke ayarlarının kapsamı (dosyalar ve e-postalar için varsayılan etiket gibi).
 
-Bir kullanıcıyı birden çok etiket ilkesine dahil edebilirsiniz ve kullanıcı bu ilkelerden tüm duyarlılık etiketlerini ve ayarlarını alır. Birden çok ilkenin ayarlarında çakışma varsa, ilkenin en yüksek öncelikli (en düşük konum) ayarları uygulanır. Başka bir deyişle, en yüksek öncelik her ayar için kazanır.
+Bir kullanıcıyı birden çok etiket ilkesine dahil edebilirsiniz ve kullanıcı bu ilkelerden tüm duyarlılık etiketlerini ve ayarlarını alır. Birden çok ilkenin ayarlarında çakışma varsa, ilkenin en yüksek öncelikli (en yüksek sipariş numarası) ayarları uygulanır. Başka bir deyişle, en yüksek öncelik her ayar için kazanır.
 
-Bir kullanıcı veya grup için beklediğiniz etiket veya etiket ilkesi ayarı davranışını görmüyorsanız duyarlılık etiketi ilkelerinin sırasını denetleyin. İlkeyi aşağı taşımanız gerekebilir. Etiket ilkelerini yeniden sıralamak için bir duyarlılık etiketi ilkesi seçin > sağ taraftaki üç noktayı > **Aşağı taşı** veya **Yukarı taşı'yı** seçin.
+Bir kullanıcı veya grup için beklediğiniz etiket ilkesi ayarı davranışını görmüyorsanız duyarlılık etiketi ilkelerinin sırasını denetleyin. İlkeyi aşağı taşımanız gerekebilir. Etiket ilkelerini yeniden sıralamak için bir duyarlılık etiketi ilkesi seçin > bu girdinin Eylemler üç noktasını > **Aşağı taşı** veya **Yukarı taşı'yı** seçin. Örneğin:
 
 ![Duyarlılık etiketi ilkeleri için sayfadaki taşıma seçeneği.](../media/sensitivity-label-policy-priority.png)
 
+Üç etiket ilkesini gösteren ekran görüntüsü örneğimizde, tüm kullanıcılara standart etiket ilkesi atanır, bu nedenle en düşük önceliğe (en düşük sipariş numarası 0) sahip olması uygundur. Yalnızca BT departmanındaki kullanıcılara 1 numaralı siparişe sahip ikinci ilke atanır. Bu kullanıcılar için, ilkeleriyle standart ilke arasında ayarlarda herhangi bir çakışma varsa, daha yüksek bir sıra numarasına sahip olduğundan, ilkelerinden gelen ayarlar kazanır. 
+
+Benzer şekilde, üçüncü ilkeye ayrı ayarlarla atanan hukuk departmanındaki kullanıcılar için de. Bu kullanıcıların daha sıkı ayarları olması muhtemeldir, bu nedenle ilkelerinin en yüksek sipariş numarasına sahip olması uygundur. Hukuk departmanından bir kullanıcının BT departmanı için ilkeye atanmış bir grupta olması olası değildir. Ancak varsa, 2 numaralı sipariş numarası (en yüksek sipariş numarası), çakışma olması durumunda hukuk departmanının ayarlarının her zaman öncelik almasını sağlar.
+
 > [!NOTE]
-> Unutmayın: Birden çok ilke atanmış bir kullanıcı için ayarlar çakışması olduğunda, ilkeden en yüksek önceliğe (en düşük konuma) sahip ayar uygulanır.
+> Unutmayın: Kendisine birden çok ilke atanmış olan bir kullanıcı için ayarlar çakışması varsa, atanan ilkeden en yüksek sipariş numarasına sahip ayar uygulanır.
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Duyarlılık etiketleri ve Azure Information Protection
 

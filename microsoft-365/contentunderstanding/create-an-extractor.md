@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da ayıklayıcı oluşturmayı öğrenin.
-ms.openlocfilehash: 5bfca45442386c15fb8418e306a5631795204c5f
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: f1e50b7eaeaaf669c682741c0e02df883523d888
+ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679624"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66842132"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de ayıklayıcı oluşturma
 
@@ -48,6 +48,8 @@ Belgede ayıklamak istediğiniz her varlık için bir ayıklayıcı oluşturman�
 
     > [!NOTE]
     > **Tek satırlık metin** sütun türüne sahip ayıklayıcılar için en fazla karakter sınırı 255'tir. Seçtiğiniz ve sınırı aşan karakterler kesilir. 255 karakterden büyük bir karakter seçmek için ayıklayıcıyı oluştururken **Birden Çok Metin Satırı** sütun türünü seçin.
+    >
+    >Varsayılan olarak, eklenebilecek metin miktarı sınırıyla **Birden Çok Metin Satırı** sütunu oluşturulur. Bu durumda, ayıklanan metin kesilmiş görünebilir. Bu durumda, **belge kitaplıklarında sınırsız uzunluğa izin ver** sütun ayarı sınırı kaldırmak için kullanılabilir.
 
 3. İşiniz bittiğinde **Oluştur'u** seçin.
 
