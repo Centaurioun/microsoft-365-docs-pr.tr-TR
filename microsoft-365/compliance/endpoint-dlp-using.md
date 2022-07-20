@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Uç nokta veri kaybı önleme konumlarını kullanmak için veri kaybı önleme (DLP) ilkelerini yapılandırmayı öğrenin.
-ms.openlocfilehash: 9107759e137d7b8dd86253f9c6567b76686d2518
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f58c7aec00a91ebc63b410abdd4c6342eef47a0e
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632387"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882005"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uç noktada veri kaybı önlemeyi kullanma
 
@@ -77,7 +77,7 @@ Bu senaryolar, etkinlik gezginine eklenen ve raporlayan cihazlarınız olmasın�
 
 4. **Gelişmiş DLP kuralları** sayfasına gidin ve **Algılanan düşük hacimli abd kişisel bilgi kaynağını** düzenleyin.
 
-5. **Olay raporları** bölümüne gidin ve **Kural eşleşmesi gerçekleştiğinde Yöneticilere uyarı gönder** seçeneğini **Açık** olarak ayarlayın. E-posta uyarıları otomatik olarak yöneticiye ve alıcı listesine eklediğiniz diğer kişilere gönderilir. 
+5. **Olay raporları** bölümüne gidin ve **Kural eşleşmesi gerçekleştiğinde Yöneticilere uyarı gönder** seçeneğini **Açık** olarak ayarlayın. Email uyarıları otomatik olarak yöneticiye ve alıcı listesine eklediğiniz diğer kişilere gönderilir. 
 
 ![olay raporlarını açın.](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
@@ -128,7 +128,6 @@ Bu senaryolar, etkinlik gezginine eklenen ve raporlayan cihazlarınız olmasın�
 Bu senaryoda, dosyaları **Son Derece Gizli** duyarlılık etiketiyle OneDrive ile eşitleme engellenir. Bu, birden çok bileşen ve yordam içeren karmaşık bir senaryodur. Size gerekenler:
 
 - Yerel OneDrive klasörünü OneDrive bulut depolama alanıyla zaten eşitleyen, hedeflenecek bir AAD kullanıcı hesabı ve eklenen bir Windows 10 bilgisayar.
-- Hedef Windows 10 bilgisayarda yüklü Microsoft Word
 - Duyarlılık etiketleri yapılandırılır ve yayımlanır; bkz. [Duyarlılık etiketlerini kullanmaya başlama](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) ve [Duyarlılık etiketleri ve ilkeleri oluşturma ve yapılandırma](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies).
 
 Üç prosedür vardır.
@@ -234,7 +233,7 @@ Bu senaryoda, dosyaları **Son Derece Gizli** duyarlılık etiketiyle OneDrive i
 
 ## <a name="scenario-5-restrict-unintentional-sharing-to-unallowed-cloud-apps-and-services"></a>Senaryo 5: İstenmeyen paylaşımı izin verilmeyen bulut uygulamaları ve hizmetleriyle kısıtlama
 
-Uç Nokta DLP ve Edge Web tarayıcısı ile hassas öğelerin yanlışlıkla paylaşılmalarını izin verilmeyen bulut uygulamaları ve hizmetleriyle kısıtlayabilirsiniz. Edge, bir öğenin Bir Uç Nokta DLP ilkesi tarafından ne zaman kısıtlandığını anlar ve erişim kısıtlamalarını zorlar.
+Endpoint DLP ve Microisoft Edge Web tarayıcısı ile hassas öğelerin yanlışlıkla paylaşılmasıyla izin verilmeyen bulut uygulamaları ve hizmetleri kısıtlayabilirsiniz. Edge, bir öğenin Bir Uç Nokta DLP ilkesi tarafından ne zaman kısıtlandığını anlar ve erişim kısıtlamalarını zorlar.
 
 Düzgün yapılandırılmış bir DLP ilkesinde konum olarak **Cihazlar'ı** seçip Microsoft Edge tarayıcısını kullandığınızda, bu ayarlarda tanımladığınız izin verilmeyen tarayıcıların DLP ilke denetimlerinizle eşleşen hassas öğelere erişmesi engellenir. Bunun yerine kullanıcılar, DLP tarafından uygulanan kısıtlamaları anlayarak DLP ilkesindeki koşullar karşılandığında etkinlikleri engelleyebilecek veya kısıtlayan Microsoft Edge'i kullanmaya yönlendirilecektir.
 
@@ -249,6 +248,58 @@ Bu kısıtlamayı kullanmak için üç önemli parça yapılandırmanız gerekir
 İş gereksinimlerinizi karşılamak ve hassas verileri korumak için kısıtlamalarınızı genişletmek ve genişletmek için yeni hizmetler, uygulamalar ve ilkeler eklemeye devam edebilirsiniz. 
 
 Bu yapılandırma, verilerinizin güvende kalmasını sağlarken kullanıcıların hassas olmayan öğelere erişmesini ve bunları paylaşmasını engelleyen veya kısıtlayan gereksiz kısıtlamaları da önler.
+
+## <a name="scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview"></a>Senaryo 6 Hassas hizmet etki alanlarında kullanıcı etkinliklerini izleme veya kısıtlama (önizleme)
+
+Bir web sitesinde bu kullanıcı etkinliklerini denetlemek, geçersiz kılmayla engellemek veya engellemek istediğinizde bu senaryoyı kullanın.
+
+- web sitesinden yazdırma
+- web sitesinden veri kopyalama
+- web sitesini yerel dosyalar olarak kaydetme
+
+Kullanıcının Web sitesine Microsoft Edge üzerinden erişmesi gerekir.
+
+### <a name="supported-syntax-for-designating-websites-in-a-website-group"></a>Web sitesi grubundaki web sitelerini belirlemeye yönelik desteklenen söz dizimi
+
+Web sitesi gruplarınızdaki etki alanlarını, alt etki alanlarını, web sitelerini ve alt siteleri dahil etmek ve dışlamak için esnek bir söz dizimi kullanabilirsiniz.
+
+- tüm etki alanlarını veya tüm alt etki alanlarını belirtmek için joker karakter olarak kullanın `*`
+- yalnızca belirli bir sitenin kapsamını bulmak için URL'nin sonunda sonlandırıcı olarak kullanın `/` .
+
+Sonlandırma `/`olmadan bir URL eklediğinizde, bu URL'nin kapsamı bu site ve tüm alt siteler olarak belirlenmiştir.
+
+Bu söz dizimi tüm http/https web siteleri için geçerlidir.
+
+İşte birkaç örnek:
+
+
+|Web sitesi grubuna eklediğiniz URL  |URL eşleşecek  | URL eşleşmiyor|
+|---------|---------|---------|
+|contoso.com  | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/ </br> //<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2|        //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com.au    |
+|contoso.com/     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/         |//<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/au   |
+|*.contoso.com   | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/allsubsites </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/allsubsites </br> //<!--nourl-->allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | //<!--nourl-->allsubdomains.contoso.com.au|
+|*.contoso.com/xyz     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->contoso.con/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/|
+|*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
+
+
+### <a name="configure-sensitive-service-domains"></a>Hassas hizmet etki alanlarını yapılandırma
+
+1. Microsoft Purview uyumluluk portalı **Veri kaybı önleme** > **Uç Noktası DLP ayarlarını** >  açın **Hassas verilere** >  yönelik tarayıcı ve etki alanı kısıtlamaları **Hassas hizmet etki alanları**.
+1. **Yeni bir hassas hizmet etki alanı grubu ekle'yi** seçin.
+1. Grubu adlandırın.
+1. İstediğiniz **Eşleşme türünü** seçin. **URL**, **IP adresi**, **IP adresi aralığı** arasından seçim yapabilirsiniz.
+1. **Bu gruba yeni hizmet etki alanları ekle** bölümüne uygun değeri yazın. Gruba birden çok web sitesi ekleyebilir ve alt etki alanları için joker karakterler kullanabilirsiniz.  Örneğin, yalnızca en üst düzey web sitesi için www.contoso.com veya corp.contoso.com, hr.contoso.com fin.contoso.com için *.contoso.com
+1. **Kaydet**'i seçin.
+1. **İlkeler'i** seçin.
+1. Yalnızca **Cihazlara** uygulanan bir ilke oluşturun ve kapsamına girin. İlke oluşturma hakkında daha fazla bilgi için bkz. [DLP ilkesi oluşturma, test etme ve ayarlama](create-test-tune-dlp-policy.md) .
+1. **Kullanıcının Edge'den hassas bir siteye eriştiği** bir kural ve **Kullanıcılar Windows cihazlarında Microsoft Edge tarayıcısında hassas sitelere eriştiğinde etkinlikleri denetle veya kısıtla** eylemini oluşturun.
+1. Eylemde **Hassas site grupları ekle veya kaldır'ı** seçin.
+1. İstediğiniz **Hassas site gruplarını** seçin.
+1. **Ekle**'yi seçin.
+1. İzlemek veya kısıtlamak istediğiniz kullanıcı etkinliklerini ve bu etkinliklere yanıt olarak DLP'nizde gerçekleştirdiğiniz eylemleri seçin.
+1. Kuralı ve ilkeyi yapılandırmayı tamamlayın ve uygulayın.
+
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Uç nokta veri kaybı önleme hakkında daha fazla bilgi edinme](endpoint-dlp-learn-about.md)

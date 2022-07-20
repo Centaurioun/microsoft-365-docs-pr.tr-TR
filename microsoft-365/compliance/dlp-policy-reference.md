@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ilkesi bileşeni ve yapılandırma başvurusu
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 0d49cb1287453cb815bf1fe1ea01b6312c26d879
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ac809f5a976da1d6c83d36f24e93c3aacd997850
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626589"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882027"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Veri Kaybı Önleme ilkesi başvurusu
 
@@ -309,6 +309,9 @@ Kullanılabilir bağlam seçenekleri, seçtiğiniz konuma bağlı olarak değiş
 ##### <a name="conditions-devices-supports"></a>Cihazların desteklediği koşullar
 
 - İçerik içeriği
+- (önizleme) Kullanıcı Edge'den hassas bir web sitesine erişmiş. Daha fazla bilgi için bkz[. Senaryo 6 Hassas hizmet etki alanlarındaki kullanıcı etkinliklerini izleme veya kısıtlama (önizleme).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview)
+- Dosya uzantısı
+- Dosya türü:
 - Bkz [. üzerinde izleyebileceğiniz ve eylem gerçekleştirebileceğiniz uç nokta etkinlikleri](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
 ##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Microsoft Defender for Cloud Apps desteklediği koşullar
@@ -391,8 +394,8 @@ Bir kuralda kullanılabilen eylemler, seçilen konumlara bağlıdır. İlkenin u
 - Gizli kutusuna alıcı ekleme
 - Gönderenin yöneticisini alıcı olarak ekleme
 - O365 İleti Şifrelemesi ve hak koruması kaldırıldı
-- Önceden Ekli E-posta Konusu
-- E-posta Konusunu Değiştir
+- Email Konusu
+- Email Konusunu Değiştir
 - HTML Bildirimi Ekle
 
 #### <a name="sharepoint-sites-location-actions"></a>SharePoint siteleri konum eylemleri
@@ -409,9 +412,11 @@ Bir kuralda kullanılabilen eylemler, seçilen konumlara bağlıdır. İlkenin u
 
 #### <a name="devices-actions"></a>Cihaz eylemleri
 
+<!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
+- (önizleme) Kullanıcılar Windows cihazlarında Microsoft Edge tarayıcısında hassas web sitelerini kullandıklarında etkinlikleri denetle veya kısıtla. Daha fazla bilgi için bkz[. Senaryo 6 Hassas hizmet etki alanlarındaki kullanıcı etkinliklerini izleme veya kısıtlama (önizleme).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview)
 - Windows cihazlarında etkinlikleri denetleme veya kısıtlama
 
-Bu ayarları kullanmak için **, DLP ayarlarında** ve bunları kullanmak istediğiniz ilkede seçenekleri yapılandırmanız gerekir. Daha fazla bilgi için bkz [. Kısıtlı uygulamalar ve uygulama grupları](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) .
+kullanmak `Audit or restrict activities on Windows devices`için **, DLP ayarlarında** ve bunları kullanmak istediğiniz ilkede seçenekleri yapılandırmanız gerekir. Daha fazla bilgi için bkz [. Kısıtlı uygulamalar ve uygulama grupları](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) .
 
 Cihazların konumu birçok alt etkinlik (koşul) ve eylem sağlar. Daha fazla bilgi edinmek için bkz [. İzleyebileceğiniz ve üzerinde işlem yapabileceğiniz uç nokta etkinlikleri](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
@@ -525,11 +530,11 @@ Kullanıcı, bir kuralın koşullarını ve özel durumlarını karşılayan bir
 
 > [!IMPORTANT]
 > - Bildirim e-postaları korumasız gönderilir.
-> - E-posta bildirimleri yalnızca Microsoft 365 hizmetleri için desteklenir.
+> - Email bildirimleri yalnızca Microsoft 365 hizmetleri için desteklenir.
 
-#### <a name="email-notifications-support-by-selected-location"></a>Seçili konuma göre e-posta bildirimleri desteği
+#### <a name="email-notifications-support-by-selected-location"></a>Seçilen konuma göre bildirim desteği Email
 
-|Seçili konum  |Desteklenen e-posta bildirimleri  |
+|Seçili konum  |desteklenen Email bildirimleri  |
 |---------|---------|
 |Aygıtları     |- Desteklenmez         |
 |Exchange + Cihazlar     |- Exchange için desteklenir </br>- Cihazlar için desteklenmez  |

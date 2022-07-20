@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/24/2022
-ms.openlocfilehash: d9ff97aa50a03c1a75f073328a250a9acc3faf54
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 1900487e4249c344981630d7a11aafd02862f863
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490763"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882129"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama birimi Access Control
 
@@ -155,6 +155,8 @@ Intune'da ilke dağıtımı için hesabın cihaz yapılandırma profillerini olu
 - Genel yönetici
 
 ### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>Intune OMA-URI kullanarak Çıkarılabilir Depolama birimi Access Control dağıtma
+
+Belirli bir çıkarılabilir depolama sınıfını engellemek ancak belirli bir medyaya izin vermek için 'Bir grubu PrimaryId aracılığıyla IncludedIdListe ve DeviceId/HardwareId/etc aracılığıyla bir grubu ExcludedIDListle' kullanabilirsiniz.
 
 Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com/>) **> Cihazlar'a gidin > Platform: Windows 10 ve üzeri profil oluşturma >, Profil türü: Şablonlar > Özel**
 

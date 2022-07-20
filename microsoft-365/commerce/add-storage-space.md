@@ -1,11 +1,11 @@
 ---
-title: Aboneliğinize daha fazla SharePoint depolama alanı ekleyin
+title: Aboneliğinize daha fazla SharePoint depolama alanı ekleme
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinms, jmueller
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,29 +23,29 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkSPO
 search.appverid: MET150
-description: Microsoft 365 aboneliğinize dosya depolama alanı ekleyin. Ek dosya depolama alanıyla, SharePoint daha fazla içerik depolayabilirsiniz.
+description: Microsoft 365 aboneliğinize dosya depolama alanı ekleyin. Ek dosya depolama alanıyla SharePoint'te daha fazla içerik depolayabilirsiniz.
 ms.date: 05/24/2022
-ms.openlocfilehash: bd0edd85718acc51559f5e409de4661a756cd787
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: a8029f9b51c678b80e4a8fde77d02663da6e89af
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043982"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882506"
 ---
-# <a name="add-more-sharepoint-storage-to-your-subscription"></a>Aboneliğinize daha fazla SharePoint depolama alanı ekleyin
+# <a name="add-more-sharepoint-storage-to-your-subscription"></a>Aboneliğinize daha fazla SharePoint depolama alanı ekleme
 
-SharePoint sitelerinizde depolama alanınız tükenirse, planınız uygunsa aboneliğinize depolama alanı ekleyebilirsiniz. Kullanılabilir eklentiler listesinde **Office 365 Ek Dosya Depolama** görmüyorsanız, planınız uygun değildir. Daha fazla bilgi için bkz. [Planım uygun mu?](#is-my-plan-eligible-for-office-365-extra-file-storage)
+SharePoint sitelerinizin depolama alanı tükenirse, planınız uygunsa aboneliğinize depolama alanı ekleyebilirsiniz. Kullanılabilir eklentiler listesinde **Office 365 Ek Dosya Depolama'yı** görmüyorsanız, planınız uygun değildir. Daha fazla bilgi için bkz. [Planım uygun mu?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
-> Aboneliğinizi Toplu Lisanslama veya CSP aracılığıyla satın aldıysanız, doğrudan Microsoft'tan kuruluşunuz için **Office 365 Ek Dosya Depolama** satın alamazsınız. Yardım için temsilcinize veya iş ortağınıza başvurun.
-> OneDrive depolama hakkında bilgi için bkz. [OneDrive kullanıcılar için varsayılan depolama alanını ayarlama](/onedrive/set-default-storage-space).
+> Aboneliğinizi Toplu Lisanslama veya CSP aracılığıyla satın aldıysanız, doğrudan Microsoft'tan kuruluşunuz için **Office 365 Ek Dosya Depolama** alanı satın alamazsınız. Yardım için temsilcinize veya iş ortağınıza başvurun.
+> OneDrive depolama hakkında bilgi için bkz. [OneDrive kullanıcıları için varsayılan depolama alanını ayarlama](/onedrive/set-default-storage-space).
 
 > [!TIP]
 > Bu konuda verilen adımlarla ilgili yardıma ihtiyacınız varsa[bir Microsoft küçük işletme uzmanıyla çalışmayı](https://go.microsoft.com/fwlink/?linkid=2186871) göz önünde bulundurun. İşletme Yardımı ile, işletmenizi büyütürken katılımdan gündelik kullanıma kadar her aşamada siz ve çalışanlarınız günün 24 saati küçük işletme uzmanlarına erişebilirsiniz.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Bu makaledeki görevleri yerine getirmek için Genel veya SharePoint yöneticisi olmanız gerekir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../admin/add-users/about-admin-roles.md).
+Bu makaledeki görevleri yerine getirmek için Genel yönetici veya SharePoint yöneticisi olmanız gerekir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>Kullanılabilir depolama alanını görüntüleme
 
@@ -65,12 +65,12 @@ Site koleksiyonu depolama alanı sınırlarını ayarlama hakkında bilgi için 
 Aboneliğiniz için henüz ek depolama alanı satın almadıysanız bunu yapabilirsiniz.
 
 1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Satın Alma hizmetleri</a> sayfasına gidin.
-2. **Hizmetleri satın al** sayfasının alt kısmındaki **Eklentiler** bölümünde **Ek Dosya Depolama Office 365** bulun ve **Ayrıntılar'ı** seçin.
+2. **Hizmetleri satın alma** sayfasının alt kısmındaki **Eklentiler** bölümünde **Office 365 Ek Dosya Depolama alanı'nı** bulun ve **Ayrıntılar'ı** seçin.
 3. Ürün ayrıntıları sayfasında **İleri'yi** seçin.
 4. Gerekirse temel aboneliği seçin ve eklemek istediğiniz gigabayt depolama alanı sayısını girin.
 5. **Şimdi kullanıma alma'ya** tıklayın.
 6. **Bu nasıl görünüyor?** sayfasında, seçtiğiniz gigabayt depolama alanı sayısını doğrulayın, fiyatlandırma bilgilerini gözden geçirin ve **İleri'yi** seçin.
-7. **Siparişi tamamla** sayfasında toplamı doğrulayın. Herhangi bir değişiklik yapmanız gerekiyorsa **Siparişi düzenle'yi** seçin. Sipariş için kredi denetimi gerekiyorsa onay kutusunu seçin. İşiniz bittiğinde **Sipariş** \> ver **Yönetici Giriş Sayfasına Git'i** seçin.
+7. **Siparişi tamamla** sayfasında toplamı doğrulayın. Herhangi bir değişiklik yapmanız gerekiyorsa **Siparişi düzenle'yi** seçin. Sipariş için kredi denetimi gerekiyorsa onay kutusunu seçin. İşiniz bittiğinde **Siparişi** \> ver **Giriş Yönetici git'i** seçin.
 
 ## <a name="increase-or-decrease-your-extra-storage"></a>Ek depolama alanınızı artırma veya azaltma
 
@@ -107,7 +107,7 @@ Office 365 Ek Dosya Depolama Alanı aşağıdaki aboneliklere sağlanır:
 - Microsoft 365 F3
 
 > [!NOTE]
-> Office 365 Ek Dosya Depolama GCC, yüksek GCC ve DOD planları için de kullanılabilir.
+> Office 365 Ek Dosya Depolama GCC, GCC High ve DOD planları için de kullanılabilir.
 
 ## <a name="related-content"></a>İlgili içerik
 

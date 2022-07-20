@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint ve Microsoft Teams sitelerindeki ve Microsoft 365 gruplarındaki içeriği korumak için duyarlılık etiketlerini kullanın.
-ms.openlocfilehash: 53278feccc7b2741453c20d37bbd995226a21dbe
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 820ed3e8c629056165661c90ec9cd612222cdbbf
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662542"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882285"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Microsoft Teams, Microsoft 365 grupları ve SharePoint sitelerindeki içeriği korumak için duyarlılık etiketlerini kullanma
 
 >*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Belge ve e-postaları sınıflandırmak ve korumak için [duyarlılık etiketlerini](sensitivity-labels.md) kullanmanın yanı sıra, şu kapsayıcılardaki içeriği korumak için duyarlılık etiketlerini de kullanabilirsiniz: Microsoft Teams siteleri, Microsoft 365 grupları ([eski adıyla Office 365 grupları](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) ve SharePoint siteleri. Bu kapsayıcı düzeyinde sınıflandırma ve koruma için aşağıdaki etiket ayarlarını kullanın:
+Belge ve e-postaları korumak için [duyarlılık etiketlerini](sensitivity-labels.md) kullanmanın yanı sıra, şu kapsayıcılardaki içeriği korumak için duyarlılık etiketlerini de kullanabilirsiniz: Microsoft Teams siteleri, Microsoft 365 grupları ([eski adıyla Office 365 grupları](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) ve SharePoint siteleri. Bu kapsayıcı düzeyinde koruma için aşağıdaki etiket ayarlarını kullanın:
 
 - Ekip sitelerinin ve Microsoft 365 gruplarının gizliliği (genel veya özel)
 - Dış kullanıcı erişimi
@@ -42,9 +42,11 @@ Belge ve e-postaları sınıflandırmak ve korumak için [duyarlılık etiketler
 > [!IMPORTANT]
 > Yönetilmeyen cihazlar ve kimlik doğrulama bağlamları için ayarlar, Azure Active Directory Koşullu Erişim ile birlikte çalışır. Bu ayarlar için duyarlılık etiketi kullanmak istiyorsanız bu bağımlı özelliği yapılandırmanız gerekir. Aşağıdaki yönergelere ek bilgiler eklenmiştir.
 
-Bu duyarlılık etiketini desteklenen bir kapsayıcıya uyguladığınızda, etiket otomatik olarak site veya gruba sınıflandırma ve yapılandırılmış koruma ayarlarını uygular.
+Bu duyarlılık etiketini desteklenen bir kapsayıcıya uyguladığınızda, etiket otomatik olarak duyarlılık kategorisini ve yapılandırılan koruma ayarlarını siteye veya gruba uygular.
 
-Ancak bu kapsayıcılardaki içerik, görsel işaretler ve şifreleme gibi dosya ve e-postalar için sınıflandırma veya ayarların etiketlerini devralmaz. Kullanıcıların belgelerini SharePoint sitelerinde veya ekip sitelerinde etiketleyebilmesi [için, SharePoint ve OneDrive'da Office dosyaları için duyarlılık etiketlerini etkinleştirdiğinizden](sensitivity-labels-sharepoint-onedrive-files.md) emin olun.
+Ancak bu kapsayıcılardaki içerik, duyarlılık kategorisinin etiketlerini veya içerik işaretleri ve şifreleme gibi dosya ve e-posta ayarlarını devralmaz. Kullanıcıların belgelerini SharePoint sitelerinde veya ekip sitelerinde etiketleyebilmesi [için, SharePoint ve OneDrive'da Office dosyaları için duyarlılık etiketlerini etkinleştirdiğinizden](sensitivity-labels-sharepoint-onedrive-files.md) emin olun.
+
+Kapsayıcı etiketleri [, diğer dillerin](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) görüntülenmesini ve özgün dilin yalnızca etiket adı ve açıklaması için görüntülenmesini desteklemez.
 
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Microsoft Teams, Microsoft 365 grupları ve SharePoint siteleri için duyarlılık etiketlerini kullanma
 

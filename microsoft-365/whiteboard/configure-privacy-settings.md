@@ -13,17 +13,17 @@ ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard'da uyumluluk ve gizlilik ayarlarını yapılandırma hakkında bilgi edinin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fcdd5a61e772d273fc9620219e7772afcdcc4312
-ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
+ms.openlocfilehash: a2708d3eda92f3d29ea9ad6ee15e518d32d93a22
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/19/2022
-ms.locfileid: "66862582"
+ms.locfileid: "66882794"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>Microsoft Whiteboard'da gizlilik ayarlarını yapılandırma
 
 >[!NOTE]
-> Kullanıcılarınız varsayılan gizlilik ayarları ve tanılama verilerinin nasıl toplandığı hakkında daha fazla bilgi edinmek istiyorsa, onları [Microsoft Whiteboard gizlilik ve uyumluluğuna](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1) yönlendirin.
+> Siz veya kullanıcılarınız varsayılan gizlilik ayarları, isteğe bağlı bağlı deneyimler ve tanılama verilerinin nasıl toplandığı hakkında daha fazla bilgi edinmek istiyorsanız, bunları [Microsoft Whiteboard gizlilik ve uyumluluğuna](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1) yönlendirin.
 
 Kuruluşunuzun Microsoft Whiteboard yöneticisiyseniz aşağıdakileri denetleyebilirsiniz:
 
@@ -31,13 +31,13 @@ Kuruluşunuzun Microsoft Whiteboard yöneticisiyseniz aşağıdakileri denetleye
 
 - Beyaz Tahta'daki isteğe bağlı bağlı deneyimlerin kullanıcılarınız tarafından kullanılıp kullanılamadığı.
 
-Tanılama verilerinin düzeyini yapılandırmak için yönetici hesabınızla [Microsoft 365 yönetim merkezi](https://docs.microsoft.com/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) oturum açın. Yönetim merkezi giriş sayfasında Tüm **> Ayarlarını göster > Kuruluş ayarları > Whiteboard'a** gidin.
+Tanılama verilerinin düzeyini yapılandırmak için yönetici hesabınızla [Microsoft 365 yönetim merkezi](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) oturum açın. Yönetim merkezi giriş sayfasında Tüm **> Ayarlarını göster > Kuruluş ayarları > Whiteboard'a** gidin.
 
-İsteğe bağlı bağlı deneyimlerin kullanılabilirliğini yapılandırmak için [Microsoft 365 Uygulamaları yönetim merkezindeki](https://config.office.com) [Office bulut ilkesi hizmetini](https://docs.microsoft.com/deployoffice/admincenter/overview-office-cloud-policy-service) kullanın. Yönetici hesabınızla oturum açın ve **Özelleştirme > İlke Yönetimi'ne** gidin. Yapılandırmak istediğiniz ilkenin adı: **Office'te isteğe bağlı ek bağlı deneyimlerin kullanılmasına izin verin**.
+İsteğe bağlı bağlı deneyimlerin kullanılabilirliğini yapılandırmak için [Microsoft 365 Uygulamaları yönetim merkezindeki](https://config.office.com) [Office bulut ilkesi hizmetini](/deployoffice/admincenter/overview-office-cloud-policy-service) kullanın. Yönetici hesabınızla oturum açın ve **Özelleştirme > İlke Yönetimi'ne** gidin. Yapılandırmak istediğiniz ilkenin adı: **Office'te isteğe bağlı ek bağlı deneyimlerin kullanılmasına izin verin**.
 
 ## <a name="diagnostic-data-setting-for-your-organization"></a>Kuruluşunuz için tanılama verileri ayarı
 
-Kuruluşunuzdaki cihazlarda çalışan Whiteboard istemci yazılımı hakkında toplanan ve Microsoft'a gönderilen [tanılama verilerinin](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1#diagnostic_data)düzeyini seçebilirsiniz. Microsoft 365 yönetim merkezi ayarını değiştirmediğiniz sürece isteğe bağlı tanılama verileri Microsoft'a gönderilir. Bize isteğe bağlı tanılama verilerini göndermeyi seçerseniz, bu durum gerekli tanılama verilerini de içerir.
+Kuruluşunuzdaki cihazlarda çalışan Whiteboard istemci yazılımı hakkında toplanan ve Microsoft'a gönderilen tanılama verilerinin düzeyini seçebilirsiniz. Microsoft 365 yönetim merkezi ayarını değiştirmediğiniz sürece isteğe bağlı tanılama verileri Microsoft'a gönderilir. Bize isteğe bağlı tanılama verilerini göndermeyi seçerseniz, bu durum gerekli tanılama verilerini de içerir.
 
 **Gerekli** veya **İsteğe Bağlı'ya** ek olarak **, Hiçbiri** seçeneği de vardır. Bu seçeneği belirlerseniz kullanıcının cihazında çalışan Whiteboard istemci yazılımıyla ilgili tanılama verileri Microsoft'a gönderilmez. Ancak bu seçenek, Microsoft'un Whiteboard kullanırken kullanıcılarınızın karşılaşabileceği sorunları algılama, tanılama ve düzeltme becerisini önemli ölçüde sınırlar.
 
@@ -45,7 +45,7 @@ Kurumsal kimlik bilgileriyle (bazen iş veya okul hesabı olarak da adlandırıl
 
 ## <a name="optional-connected-experiences-setting-for-your-organization"></a>Kuruluşunuz için isteğe bağlı bağlı deneyimler ayarı
 
-Whiteboard'da [isteğe bağlı bağlı deneyimlerin](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1?storagetype=live#optional) kullanıcılarınız için kullanılabilir olup olmayacağını seçebilirsiniz. Bu bağlı deneyimler, Microsoft 365 yönetim merkezi ayarını değiştirmediğiniz sürece kullanıcılarınız tarafından kullanılabilir.
+Whiteboard'da isteğe bağlı bağlı deneyimlerin kullanıcılarınız için kullanılabilir olup olmayacağını seçebilirsiniz. Bu bağlı deneyimler, Microsoft 365 yönetim merkezi ayarını değiştirmediğiniz sürece kullanıcılarınız tarafından kullanılabilir. 
 
 Bu bağlı deneyimler farklıdır, çünkü kuruluşunuzun Microsoft ile yapmış olduğu ticari anlaşma kapsamında değildir. İsteğe bağlı bağlı deneyimler Microsoft tarafından kullanıcılarınıza doğrudan sunulur ve [Çevrimiçi Hizmet Sözleşmesi](https://www.microsoft.com/licensing/product-licensing/products) yerine [Microsoft Hizmet Sözleşmesi](https://www.microsoft.com/servicesagreement)’ne tabidir.
 

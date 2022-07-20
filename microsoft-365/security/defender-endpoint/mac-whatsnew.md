@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 32145a10aa908bb5395f0129f307ac3837a92d42
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: e2c90fce172a1b7f9d3cbf9a16b105e56402ec49
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798071"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882639"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac'te Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -37,7 +37,7 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 - [iOS'ta Uç Nokta için Microsoft Defender'deki yenilikler](ios-whatsnew.md)</br>
 
 <details>
-  <summary>Haziran 2022 (Derleme: 101.71.18 | Sürüm: 20.122052.17118.0)</summary>
+  <summary>Temmuz 2022 (Derleme: 101.71.18 | Sürüm: 20.122052.17118.0)</summary>
 
 &ensp;Yayın tarihi: **7 Temmuz 2022**<br/>
 &ensp;Yayımlanma Tarihi: **7 Temmuz 2022**<br/>

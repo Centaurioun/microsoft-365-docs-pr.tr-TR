@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Uç nokta veri kaybı önleme (DLP) merkezi ayarlarını yapılandırmayı öğrenin.
-ms.openlocfilehash: 6265cb39c496a75ebc1bebed494a27798552417b
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 91460c63b2286a8c2be4e5fe1aa94ea5ee31fec7
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686239"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882400"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Uç noktada veri kaybı önleme ayarlarını yapılandırma
 
@@ -257,6 +257,17 @@ Hizmet etki alanının FQDN biçimini bitiş olmadan kullanın `.`
 | **CONTOSO.COM** |**Belirtilen etki alanı adıyla ve herhangi bir alt siteyle eşleşir**: <p>*://contoso.com<p>*:/ /contoso.com/ <p>*://contoso.com/anysubsite1 <p>*:/ /contoso.com/anysubsite1/anysubsite2 (vb.) <p>**Alt etki alanları veya belirtilmemiş etki alanlarıyla eşleşmiyor**: <p>*://anysubdomain.contoso.com <p>*:/ /anysubdomain.contoso.com.AU |
 | ***.CONTOSO.COM** |**Belirtilen etki alanı adı, herhangi bir alt etki alanı ve herhangi bir siteyle eşleşir**: <p>*://contoso.com <p>*:/ /contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*:/ /anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*:/ /anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (vb) <p>**Belirtilmemiş etki alanlarıyla eşleşmiyor** <p>*://anysubdomain.contoso.com.AU/ |
 | **`www.contoso.com`** |**Belirtilen etki alanı adıyla eşleşir**: <p>`www.contoso.com` <p>**Belirtilmemiş etki alanları veya alt etki alanlarıyla eşleşmiyor** <p>*://anysubdomain.contoso.com/, bu durumda FQDN etki alanı adının kendisini koymanız gerekir `www.contoso.com`|
+
+#### <a name="sensitive-service-domains-preview"></a>Hassas hizmet etki alanları (önizleme)
+
+Hassas hizmetler etki alanlarında bir web sitesini listelediğinizde şunları yapmaya çalışan kullanıcıları denetleyebilir, geçersiz kılmayla engelleyebilir veya engelleyebilirsiniz:
+
+- web sitesinden yazdırma
+- web sitesinden veri kopyalama
+- web sitesini yerel dosyalar olarak kaydetme
+
+Her web sitesinin bir web sitesi grubunda listelenmiş olması ve kullanıcının Microsoft Edge üzerinden web sitesine erişmesi gerekir. Hassas hizmet etki alanları (önizleme), Cihazlar için bir DLP ilkesiyle birlikte kullanılır. Daha fazla bilgi için bkz[. Senaryo 6 Hassas hizmet etki alanlarındaki kullanıcı etkinliklerini izleme veya kısıtlama (önizleme).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview)
+
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>Uç nokta DLP'leri için ek ayarlar
 
