@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- SMB
+ms.date: 07/19/2022
 search.appverid:
 - MET150
 - MOE150
 description: Windows cihazlarınızı Microsoft 365 İş Ekstra ile Windows 10 Pro yükseltmeyi öğrenin.
-ms.openlocfilehash: 5440dcd91ac32dcc11f9f7c44c404b81d57a0c73
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 5ea7b107512722118e6fe872ebe48836e0fe70f6
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66862375"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66892671"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Windows cihazlarını Windows 10 Pro yükseltme
 

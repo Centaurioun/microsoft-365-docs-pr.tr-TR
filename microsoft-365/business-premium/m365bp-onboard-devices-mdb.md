@@ -9,17 +9,18 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 044f81ddaa3ddf1cb0ddaf6c96e05f9d186e36ce
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 0578aa2e672a0d485057ac983ed85d10828c952d
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772280"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893999"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Kayıtlı cihazları İş için Microsoft Defender ekleme
 
@@ -71,13 +72,9 @@ Bkz[. Microsoft Intune'da cihaz kaydı](/mem/intune/enrollment/device-enrollment
 
 ## <a name="what-about-servers"></a>Sunucular ne olacak?
 
-sunucular Microsoft 365 İş Ekstra ve İş için Defender'da varsayılan olarak desteklenmez. Ancak, Windows Server veya Linux Server çalıştıran bir uç nokta gibi bir sunucuyu ekleme özelliği artık önizleme aşamasındadır. Sunucu eklemeden önce gereksinimleri gözden geçirmeyi unutmayın:
+Varsayılan olarak, sunucular Microsoft 365 İş Ekstra ve İş için Defender'ın tek başına sürümünde desteklenmez. Ancak **, Windows Server veya Linux Server çalıştıran bir uç nokta gibi bir sunucuyu ekleme özelliği artık önizleme aşamasında!** 
 
-- Microsoft 365 İş Ekstra veya İş için Defender'da (tek başına) her sunucu örneği için bir sunucu lisansınız vardır.
-- **Önizleme özellikleri** ayarı açıktır. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ), **Ayarlar** > **Uç Noktaları** > **Genel** > **Gelişmiş özellikler****Önizleme özellikleri'ne** >  gidin.
-- Windows Server için zorlama kapsamı açık. **Ayarlar** > **Uç Noktaları** > **Yapılandırma yönetimi** > **Zorlama kapsamı'na** gidin. **MEM'den güvenlik yapılandırma ayarlarını zorunlu kılmak için MDE kullan'ı** seçin, **Windows Server'ı** ve ardından **Kaydet'i** seçin.
-
-Ayrıntılı yönergeler için [İş için Microsoft Defender için Cihazları ekleme](../security/defender-business/mdb-onboard-devices.md) bölümünde **sunucular** sekmesine bakın.
+Bkz. [İş için Microsoft Defender sunucuları alma (önizleme)](../security/defender-business/get-defender-business-servers.md).
 
 ## <a name="run-a-detection-test-on-a-windows-device"></a>Windows cihazında algılama testi çalıştırma
 

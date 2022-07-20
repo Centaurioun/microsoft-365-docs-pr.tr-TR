@@ -9,28 +9,22 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Outlook kullanarak şifrelenmiş e-posta göndermeyi öğrenin.
-ms.openlocfilehash: e4a25cc59d0d92c1905507b1e5db1253f120849c
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5e0698db0a17e24df358fc873b0a419b13c17dad
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489568"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893133"
 ---
 # <a name="encrypt-or-label-your-sensitive-email-in-microsoft-365"></a>Microsoft 365'te hassas e-postanızı şifreleme veya etiketleme
 
@@ -52,7 +46,7 @@ Kişiler gizli veya hassas bilgiler içeren e-posta göndermeden önce şunları
 
 ## <a name="admin-settings"></a>Yönetici ayarları
 
-E-posta şifrelemesini ayarlama hakkında her şeyi [Microsoft 365'te e-posta şifrelemesi](../compliance/email-encryption.md) bölümünden öğrenebilirsiniz.
+[Microsoft 365'te](../compliance/email-encryption.md) e-posta şifrelemesini ayarlama hakkında her şeyi Email şifreleme bölümünden öğrenebilirsiniz.
 
 ### <a name="automatically-encrypt-email-messages"></a>E-posta iletilerini otomatik olarak şifreleme
 

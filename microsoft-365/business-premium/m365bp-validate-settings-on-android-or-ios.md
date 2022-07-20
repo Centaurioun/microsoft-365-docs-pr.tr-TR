@@ -9,27 +9,19 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: medium
-ms.collection:
-- M365-subscription-management
-- M365-identity-device-management
-- Adm_TOC
+ms.date: 07/19/2022
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MSB365
-- OKR_SMB_M365
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Android veya iOS cihazlarınızda Microsoft 365 İş Ekstra uygulama koruma ayarlarını doğrulamayı öğrenin. Uygulamalarınız için güvenlik ayarlarının yapılması, mobil uygulamalarınızdaki ve cihazlarınızdaki dosyaları her türlü güvenlik tehdidine karşı korumak için kritik öneme sahiptir.
-ms.openlocfilehash: c1a4868b7139735571e4e873fa2ff1a7aff199b1
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 36a67f999cb9b4476f3757daa6033e6409b49c1a
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66862030"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893825"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Android veya iOS cihazlarda uygulama koruma ayarlarını doğrulama
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 İş Ekstra işletmenize nasıl yardımcı olur?
+title: Microsoft 365 İş Ekstra işinize nasıl yardımcı olur?
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,26 +9,25 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 İş Ekstra işletmenize üretkenlik ve güvenlik konusunda nasıl yardımcı olduğunu öğrenin.
-ms.openlocfilehash: c8620bd687e297151fd6ccabac7f8d01a66457ad
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9d4faf1f954b750d2710a946ad1632e4913809fe
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631760"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66892803"
 ---
-# <a name="how-microsoft-365-business-premium-helps-your-business"></a>Microsoft 365 İş Ekstra işletmenize nasıl yardımcı olur?
+# <a name="how-microsoft-365-business-premium-helps-your-business"></a>Microsoft 365 İş Ekstra işinize nasıl yardımcı olur?
 
 Microsoft 365 İş Ekstra, küçük ve orta ölçekli işletmelere eskisinden daha verimli ve daha güvenli çalışma gücü veren uygun maliyetli bir çözümdür. Bu makalede, Microsoft 365 İş Ekstra işletmenize veya kampanyanıza nasıl yardımcı olabileceği açıklanır. Bu makale aşağıdaki bölümleri içerir:
 

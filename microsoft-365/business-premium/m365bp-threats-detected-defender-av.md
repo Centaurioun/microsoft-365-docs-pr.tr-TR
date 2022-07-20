@@ -8,19 +8,15 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
-ms.collection:
-- M365-subscription-management
-- Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.date: 07/19/2022
 search.appverid: MET150
 description: Microsoft Defender Virüsten Koruma'nın Windows cihazlarınızı virüs, kötü amaçlı yazılım ve casus yazılım gibi yazılım tehditlerine karşı nasıl koruyup korumayacağınızı öğrenin.
-ms.openlocfilehash: 4f8c023bee4605e5ed0da9268688c25b551174dd
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 293ea476783e81f34856a3c7cc80d40ed254e4ac
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66861991"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893089"
 ---
 # <a name="overview-of-threat-protection-by-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'nın tehdit korumasına genel bakış
 

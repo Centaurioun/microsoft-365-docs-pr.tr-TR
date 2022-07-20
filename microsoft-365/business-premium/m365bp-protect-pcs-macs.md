@@ -9,34 +9,30 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: yönetilmeyen veya kendi cihazını getir (KCG) Microsoft 365 İş Ekstra ile siber saldırılara karşı koruyun. Windows bilgisayarlar ve Mac'ler için siber güvenliği ayarlama.
-ms.openlocfilehash: 033fdd41c8df09f983e1abc296bd0b33de20a61a
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: c6010661d11be2af064ddd3d5250f1cf9baacc09
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773091"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894371"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'da yönetilmeyen Windows bilgisayarlarını ve Mac'leri koruma
 
 Bu amaç, Microsoft Intune kayıtlı olmayan yönetilmeyen Windows 10 bilgisayarlar ve Mac'ler için koruma oluşturmaya odaklanmıştır. Büyük olasılıkla küçük işletmeniz veya kampanyanızda kendi cihazlarını (KCG) getiren personel olabilir ve bu cihazlar yönetilmiyor olabilir. KCG kişisel telefonları, tabletleri ve bilgisayarları içerir.
 
->[!NOTE]
->KCG kullanıcılarının bu cihazları kaydetmek ve şirket kaynaklarına erişim almak için Şirket Portalı uygulamasını yüklemesi ve çalıştırması gerekir.
+> [!NOTE]
+> KCG kullanıcılarının bu cihazları kaydetmek ve şirket kaynaklarına erişim almak için Şirket Portalı uygulamasını yüklemesi ve çalıştırması gerekir.
 
 Ön cephe kullanıcılarınızın tüm KCG cihazlarında en düşük güvenlik özelliklerinin yapılandırılması için bu yönergeleri izlemeniz kritik önem taşır.
 
@@ -86,4 +82,4 @@ Mac'inizi İnternet'e veya ağa bağlı olduğunuzda diğer bilgisayarlar taraf�
 
 ## <a name="next-mission"></a>Sonraki görev
 
-Tamam, görev tamamlandı! Şimdi [e-posta sisteminin](m365bp-protect-email-overview.md) kimlik avına ve diğer saldırılara karşı güvenliğini sağlamaya çalışalım.
+Tamam, görev tamamlandı! Şimdi kimlik avı ve diğer [saldırılara karşı e-posta kullanımını güvenli hale getirme](m365bp-protect-email-overview.md) üzerinde çalışalım.

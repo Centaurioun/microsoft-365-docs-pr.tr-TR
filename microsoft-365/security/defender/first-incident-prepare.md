@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0dbff9e88ed00dd8aa08fd64543266c3aef75d79
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 690e1c48a452cfa00f0ae8d4fd87849b1c2e79dc
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664094"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893529"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>İlk olayınız için güvenlik duruşunuzu hazırlama
 
@@ -71,7 +71,7 @@ Yazılım düzeltme eki uygulama ilerleme durumunuzu denetlemek için Uç Nokta 
 
 ## <a name="4-understand-emerging-threats"></a>4. Yeni ortaya çıkan tehditleri anlama
 
-Geçerli güvenlik tehdidi ortamını takip etmek için Microsoft 365 Defender portalında tehdit [analizini](threat-analytics.md) kullanın. Uzman Microsoft güvenlik araştırmacıları, Microsoft 365 aboneliğinizi, cihazlarınızı ve kullanıcılarınızı nasıl etkileyebileceğini anlamanız için en son siber tehditleri ayrıntılı olarak açıklayan raporlar oluşturur. Bu raporlar şunları içerebilir:
+Geçerli güvenlik tehdidi ortamını takip etmek için Microsoft 365 Defender portalında tehdit [analizini](threat-analytics.md) kullanın. Uzman Microsoft güvenlik araştırmacıları, Microsoft 365 aboneliğinizi, cihazlarınızı ve kullanıcılarınızı nasıl etkileyebileceğini anlayabilmeleri için en son siber tehditleri ayrıntılı olarak açıklayan raporlar oluşturur. Bu raporlar şunları içerebilir:
 
 - Etkin tehdit aktörleri ve kampanyaları
 - Popüler ve yeni saldırı teknikleri

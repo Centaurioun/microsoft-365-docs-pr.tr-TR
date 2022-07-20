@@ -9,27 +9,23 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft Business Premium'da telefonlar için çok faktörlü kimlik doğrulamasını ayarlayın. Microsoft Business Premium'un telefonunuz için MFA özelliklerini kullanarak güvenliğinizi artırın.
-ms.openlocfilehash: a01c829d961c1941e1910b5f7068f3cc66732db8
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: a0f4c5cf7099f27cade90e8c62aa1072fce3fd66
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893273"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894021"
 ---
 # <a name="set-up-mfa"></a>MFA'yı ayarlama
 
@@ -37,7 +33,7 @@ ms.locfileid: "65893273"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-Daha fazla bilgi için bkz. [Microsoft 365 İş Ekstra'da çok faktörlü kimlik doğrulamasını ayarlama](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+daha fazla bilgi için bkz. [Microsoft 365 İş Ekstra'de çok faktörlü kimlik doğrulamasını ayarlama](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
 ## <a name="use-the-outlook-app-on-your-devices"></a>Cihazlarınızda Outlook uygulamasını kullanma
 

@@ -16,16 +16,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-getstarted
 ms.custom: intro-get-started
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d4b17e0b8a57c5f3778eff15d8961713c642409e
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 7cc3a28062ffa052d42172adabb72443eb5b10bb
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739981"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893507"
 ---
 # <a name="get-started-with-microsoft-365-defender"></a>Microsoft 365 Defender’ı kullanmaya başlayın
 
@@ -36,7 +36,7 @@ ms.locfileid: "65739981"
 
 Microsoft 365 Defender, kuruluşunuz genelinde güvenliği izleyip yönetebileceğiniz birleşik bir deneyimdir. Kimlikler, uç noktalar, veriler, uygulamalar, e-posta ve işbirliği araçları arasındaki tümleşik uyarılar sayesinde tehditleri araştırma ve yanıtlama artık merkezi bir konumda gerçekleşir. 
 
-Microsoft 365 Defender'ın Microsoft 365 genelinde tehditleri önlemeye, algılamaya, araştırmaya ve düzeltmeye nasıl yardımcı olduğunu öğrenmek için bu kısa videoyu izleyin.  
+Microsoft 365 Defender'ın Microsoft 365'te tehditleri önlemeye, algılamaya, araştırmaya ve düzeltmeye nasıl yardımcı olduğunu öğrenmek için bu kısa videoyu izleyin.  
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4FTDg]
 
 Microsoft güvenlik ürünleri paketinde yeniyseniz veya tek tek iş akışlarını biliyor olun, bu konu Microsoft 365 Defender kullanmaya başlamak için uygulamanız gereken basit adımlarda size yol gösterir.

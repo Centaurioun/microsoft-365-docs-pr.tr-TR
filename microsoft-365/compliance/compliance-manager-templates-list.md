@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Uyumluluk Yöneticisi ulusal, bölgesel ve sektör düzenlemelerine, standartlarına ve yasalarına uygun değerlendirmeler oluşturmak için şablonlar sağlar.
-ms.openlocfilehash: bfac79126f167b6ec8faaacb0134f97aaea0fe4d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2870378d25a66661cdc720c8073e5bbab283790b
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631215"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66895107"
 ---
 # <a name="compliance-manager-templates-list"></a>Uyumluluk Yöneticisi şablonları listesi
 
@@ -31,7 +31,7 @@ ms.locfileid: "66631215"
 > [!IMPORTANT]
 > Kuruluşunuzun kullanabileceği değerlendirme şablonları lisans sözleşmenize bağlıdır. [Ayrıntıları gözden geçirin](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
-## <a name="overview"></a>Genel Bakış
+## <a name="overview"></a>Genel bakış
 
 [Microsoft Purview Uyumluluk Yöneticisi](compliance-manager.md) , değerlendirme oluşturmak için kapsamlı bir şablon kümesi sağlar. Bu şablonlar, kuruluşunuzun verilerin toplanması ve kullanımını yöneten ulusal, bölgesel ve sektöre özgü gereksinimlere uymasına yardımcı olabilir.
 
@@ -295,7 +295,8 @@ Aşağıda listelenen şablonlar kuruluşunuz tarafından satın alınabilir.
 - Victoria Koruyucu Veri Güvenliği Standartları V2.0 (VPDSS 2.0)  
 - Avustralya Hükümeti için Bilgi Yönetimi Standardı - Avustralya Ulusal Arşivleri (NAA)  
 - Çin - Kişisel Bilgi Güvenliği Belirtimi  
-- Çin Halk Cumhuriyeti Siber Güvenlik Yasası  
+- Çin Halk Cumhuriyeti Siber Güvenlik Yasası
+- Hong Kong - Bankacılık Uygulaması ve Ödeme Kartı Kodu
 - Hong Kong - Kişisel Veri (Gizlilik) Sıralı  
 - Hindistan Bilgi Teknolojisi (Makul Güvenlik Uygulamaları ve Yordamları ve Hassas Kişisel Veriler veya Bilgiler) Kuralları
 - Hindistan - Bilgi Teknolojisi Yasası  

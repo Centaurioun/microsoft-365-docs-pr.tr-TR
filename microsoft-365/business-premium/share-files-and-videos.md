@@ -9,6 +9,7 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -18,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams ve SharePoint ile kampanyanızın içindeki dosyaları ve videoları paylaşın. Microsoft 365 İş Ekstra, dosyaları ve videoları güvenli bir şekilde paylaşmanın harika bir yolu olan Teams'i içerir.
-ms.openlocfilehash: a09edb2ae1865bbc9e574bc8c28dd6388f442a98
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c00f458d1364a451a913ecc8deaf5a79dbf3650f
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634885"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893155"
 ---
 # <a name="share-files-and-videos-in-a-safe-environment"></a>Dosyaları ve videoları güvenli bir ortamda paylaşma
 
@@ -32,8 +33,6 @@ Dikkat edilmesi gereken bir diğer konu da, kuruluştaki tüm üyelerin dosyalar
 ![Menüde Dosyalar sekmesini ve Bağlantı al'ı gösteren bir Microsoft Teams penceresinin diyagramı.](../media/m365-democracy-teams-sharefiles.png)
 
 Microsoft Teams ve SharePoint'teki dosyalar sayesinde dosyalar üzerinde de çalışılabilir ve birlikte gözden geçirilebilir, hatta değişiklikleri gerektiği gibi izleyebilirsiniz. Teams'de dosyalar bir firma, uygulama veya kampanya içinde paylaşılır. Bunları kuruluşunuzun dışındaki kişilerle harici olarak paylaşmanız gerekiyorsa, bunları bir ekise konuk olarak ekleyebilir veya güvenli bir SharePoint bağlantısı gönderebilirsiniz.
-
-Videoları dahili olarak depolamak ve paylaşmak için Microsoft Stream de kullanabilirsiniz. Bu videolar genel kullanıma açık olmadığından şirket içi veya kampanya mesajlaşması için idealdir.
 
 ## <a name="best-practices"></a>En iyi uygulamalar
 

@@ -9,27 +9,23 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Güvenlik varsayılanlarının, Microsoft 365 İş Ekstra için önceden yapılandırılmış güvenlik ayarları sağlayarak kuruluşunuzun kimlikle ilgili saldırılara karşı korunmasına nasıl yardımcı olabileceğini öğrenin.
-ms.openlocfilehash: 24f4cbc8feda3689a3a6f7ee49a876cd205939f3
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: ec7e132f2f7a8a98f5950682165c05dba83cbc8f
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489178"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66892737"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Güvenlik varsayılanları ve çok faktörlü kimlik doğrulaması
 
@@ -39,8 +35,8 @@ Güvenlik varsayılanları ve uyguladıkları ilkeler hakkında daha fazla bilgi
 
 Bu makalede aşağıdakiler hakkında bilgi sağlanır:
 
-- [Güvenlik varsayılanları](#security-defaults) (çoğu işletme için uygundur)
-- [Koşullu Erişim](#conditional-access) (daha sıkı güvenlik gereksinimleri olan işletmeler için)
+- **[Güvenlik varsayılanları](#security-defaults)** (çoğu işletme için uygundur)
+- **[Koşullu Erişim](#conditional-access)** (daha sıkı güvenlik gereksinimleri olan işletmeler için)
 
 > [!NOTE]
 > Koşullu Erişim ilkelerini kullanıyorsanız, güvenlik varsayılanlarını kullanmadan önce bunları kapatmanız gerekir. Güvenlik varsayılanlarını veya Koşullu Erişim ilkelerini kullanabilirsiniz, ancak ikisini de aynı anda kullanamazsınız.

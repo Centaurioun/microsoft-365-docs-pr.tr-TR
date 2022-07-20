@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-getstarted
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4ac6186f3ec8ca7d4888a995b2352ec50529e4f1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: cf2e95a4d129280537f1d7a9d7dcf1b76b492ead
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664908"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893781"
 ---
 # <a name="deploy-supported-services"></a>Desteklenen hizmetleri dağıtın
 
@@ -73,7 +73,7 @@ Aşağıdaki tabloda desteklenen her hizmetin ek verileri nasıl sağladığı, 
 | Hizmet | Veriler (ilişkili bilgiler & sinyaller) | Düzeltme & yanıt kapsamı |
 | ------ | ------ | ------ |
 | Uç Nokta için Microsoft Defender |<ul><li>Uç nokta durumları ve ham olaylar</li><li>Virüsten koruma, EDR, saldırı yüzeyini azaltma dahil olmak üzere uç nokta algılamaları ve uyarıları</li><li>Uç noktalarda gözlemlenen dosyalar ve diğer varlıklar hakkında bilgi</li></ul> |  Uç Noktaları |
-|Office 365 için Microsoft Defender |<ul><li>Posta ve posta kutusu durumları ve ham olaylar</li><li>E-posta, ek ve bağlantı algılamaları</li></ul> | <ul><li>Posta kutu -ları</li><li>hesapları Microsoft 365</li></ul> |
+|Office 365 için Microsoft Defender |<ul><li>Posta ve posta kutusu durumları ve ham olaylar</li><li>Email, ek ve bağlantı algılamaları</li></ul> | <ul><li>Posta kutu -ları</li><li>Microsoft 365 hesapları</li></ul> |
 | Kimlik için Microsoft Defender |<ul><li>Kimlik doğrulama olayları da dahil olmak üzere Active Directory sinyalleri</li><li>Kimlikle ilgili davranış algılamaları</li></ul> | Kimlik |
 | Bulut Uygulamaları için Microsoft Defender |<ul><li>Tasdik edilmemiş bulut uygulamalarının ve hizmetlerinin (gölge BT) algılanması</li><li>Verilerin bulut uygulamalarına açık olması</li><li>Bulut uygulamalarıyla ilişkili tehdit etkinliği</li></ul> | Bulut uygulamaları |
 
@@ -86,7 +86,7 @@ Her hizmetin dağıtılması için genellikle kiracınıza sağlama ve bazı ilk
 | Uç Nokta için Microsoft Defender | [Uç Nokta için Microsoft Defender dağıtım kılavuzu](../defender-endpoint/deployment-phases.md) | *Bkz. sağlama yönergeleri* |
 |Office 365 için Microsoft Defender | *Yok, Office 365 ile sağlandı* | [Office 365 için Microsoft Defender ilkelerini yapılandırma](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
 | Kimlik için Microsoft Defender | [Hızlı Başlangıç: Kimlik için Microsoft Defender örneğinizi oluşturma](/azure-advanced-threat-protection/install-atp-step1) | *Bkz. sağlama yönergeleri* |
-| Bulut Uygulamaları için Microsoft Defender | *Yok* | [Hızlı Başlangıç: Microsoft Defender for Cloud Apps ile Kullanmaya başlayın](/cloud-app-security/getting-started-with-cloud-app-security) |
+| Bulut Uygulamaları için Microsoft Defender | *Yok* | [Hızlı Başlangıç: Microsoft Defender for Cloud Apps kullanmaya başlama](/cloud-app-security/getting-started-with-cloud-app-security) |
 
 Desteklenen hizmetleri dağıttıktan sonra [Microsoft 365 Defender açın](m365d-enable.md).
 

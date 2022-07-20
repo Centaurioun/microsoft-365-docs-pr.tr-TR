@@ -9,27 +9,23 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: office'i Microsoft 365 İş Ekstra'deki tüm cihazlara yükleme.
-ms.openlocfilehash: b06edb2ee6e4427e61ba25f1149c3a2ee0fcf034
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 112e83a0473dc9c0e8019c2b0a63a04fb7b72f7c
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66862288"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894591"
 ---
 # <a name="install-office-apps-on-all-devices"></a>Office uygulamalarını tüm cihazlara yükleme
 
@@ -43,10 +39,10 @@ Kuruluşun tüm üyeleri için Microsoft Office uygulamaları **Başlat** menüs
 
 Aşağıdaki işlemleri gerçekleştirmelerini sağlayın:
 
-1. office.com gidin. İş hesabınızla oturum açmanız gerekebilir.
+1. adresine [https://office.com](https://office.com)gidin ve iş hesabınızı kullanarak oturum açın.
 2. **Office**  >  **Microsoft 365 uygulamalarını**  >   yükle **Çalıştır'ı** ve ardından **Evet'i** seçin.
 3. Office uygulamaları yüklenir. İşlem birkaç dakika sürebilir. Tamamlandığında  **Kapat'ı** seçin.
-4. Microsoft Teams'i yüklemek için office.com sayfasına gidin ve  **Teams'i** seçin.
+4. Microsoft Teams'i yüklemek için [office.com sayfasına](https://office.com) gidin ve  **Teams'i** seçin.
 5. Windows uygulamasını alın ve  **çalıştır'ı** seçin. Teams, yükleme tamamlandığında bir istem görüntüler.
 
 ## <a name="set-up-mobile-devices-for-microsoft-365-business-premium-users"></a>Microsoft 365 İş Ekstra kullanıcılar için mobil cihazları ayarlama

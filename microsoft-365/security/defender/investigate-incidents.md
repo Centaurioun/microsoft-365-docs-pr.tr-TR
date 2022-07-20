@@ -15,20 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
-- incidentresponse
-- m365solution-incidentresponse
-- m365solution-overview
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 8138c07ab871ab1a6a8d89df980c914983bbb58e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 441f9ce5824c1de82a5629e4c0ba9192ed89a529
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666954"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66895085"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender'daki olayları araştırma
 
@@ -82,7 +78,7 @@ Olayın göreli önemini değerlendirmek ve ilişkili uyarılara ve etkilenen va
 
 - Önem.
 - Uyarıya katılan varlıklar.
-- Uyarıların kaynağı (Kimlik için Microsoft Defender, Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Bulut için Defender Uygulamalar ve uygulama idare eklentisi).
+- Uyarıların kaynağı (Kimlik için Microsoft Defender, Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Bulut Uygulamaları için Defender ve uygulama idare eklentisi).
 - Bu yüzden birbirlerine bağlandılar.
 
 İşte bir örnek.
@@ -177,9 +173,9 @@ Analiz edilen varlıkların her biri bir karar (Kötü Amaçlı, Şüpheli, Temi
 
 ## <a name="graph-preview"></a>Graph (Önizleme)
 
-**Graph** sekmesi saldırının tam kapsamını, saldırının zaman içinde ağınız üzerinden nasıl yayıldığını, nereden başladığını ve saldırganın ne kadar ileri gittiğini gösterir. Saldırının parçası olan farklı şüpheli varlıkları kullanıcılar, cihazlar ve posta kutuları gibi ilgili varlıklarına bağlar. 
+**Graf** sekmesinde saldırının tam kapsamı, saldırının ağınız üzerinden zaman içinde nasıl yayıldığı, nereden başladığı ve saldırganın ne kadar ileri gittiği gösterilir. Saldırının parçası olan farklı şüpheli varlıkları kullanıcılar, cihazlar ve posta kutuları gibi ilgili varlıklarına bağlar. 
 
-**Graph** sekmesinde şunları yapabilirsiniz:
+**Graf** sekmesinde şunları yapabilirsiniz:
 
 1. Saldırının kronolojisini anlamak için zaman içinde gerçekleşen uyarıları ve düğümleri grafikte oynatın.
 
@@ -189,11 +185,11 @@ Analiz edilen varlıkların her biri bir karar (Kötü Amaçlı, Şüpheli, Temi
 
 2. Varlık bölmesini açarak varlık ayrıntılarını gözden geçirmenizi ve dosyayı silme veya cihazı yalıtma gibi düzeltme eylemleri üzerinde işlem yapmanızı sağlar.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Microsoft 365 Defender portalındaki Graph sayfasındaki varlık bölmesi" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Microsoft 365 Defender portalındaki Grafik sayfasındaki varlık bölmesi" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
 
 3. İlgili oldukları varlığa göre uyarıları vurgulayın.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Graph sayfasında bir uyarı vurgusu" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Grafik sayfasında bir uyarı vurgusu" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
