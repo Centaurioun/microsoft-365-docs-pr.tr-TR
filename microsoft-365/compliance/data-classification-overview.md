@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Veri sınıflandırma panosu, kuruluşunuzda ne kadar hassas veri bulunduğunu ve sınıflandırıldığını size gösterir.
-ms.openlocfilehash: 828a5c5d61c1b662f42e34ae95825dbc5994c816
-ms.sourcegitcommit: 019e8a62ab07a42d4ede4a87ccfaed527914412d
+ms.openlocfilehash: dccc33715b2a3cd489d7fd65fa47773952cf8727
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "66689162"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917595"
 ---
 # <a name="learn-about-data-classification"></a>Veri sınıflandırması hakkında daha fazla bilgi edinme
 
-Microsoft 365 yöneticisi veya uyumluluk yöneticisi olarak, kuruluşunuzdaki içeriği değerlendirip etiketleyebilir, böylece içeriği nerede olursa olsun denetleyebilir, nerede olursa olsun koruyabilir ve kuruluşunuzun ihtiyaçlarına göre korunup silindiğinden emin olabilirsiniz. Bunu [duyarlılık etiketleri](sensitivity-labels.md), [bekletme etiketleri](retention.md#retention-labels) ve hassas bilgi türü sınıflandırması uygulaması aracılığıyla yaparsınız. Bulma, değerlendirme ve etiketlemenin çeşitli yolları vardır, ancak sonuç olarak etiketlenmiş ve bu etiketlerden biriyle veya her ikisiyle de sınıflandırılmış çok sayıda belgeniz ve e-postanız olabilir. Bekletme etiketlerinizi ve duyarlılık etiketlerinizi uyguladıktan sonra, etiketlerin kiracınızda nasıl kullanıldığını ve bu öğelerle ne yapıldığını görmek istersiniz. Veri sınıflandırma sayfası, özellikle de bu içerik gövdesine görünürlük sağlar:
+Microsoft 365 yöneticisi veya uyumluluk yöneticisi olarak, kuruluşunuzdaki içeriği değerlendirip etiketleyebilir ve ardından içeriği denetleyebilmek, nerede olursa olsun koruyabilir ve kuruluşunuzun ihtiyaçlarına göre korunup silindiğinden emin olabilirsiniz. Bunu [duyarlılık etiketleri](sensitivity-labels.md), [bekletme etiketleri](retention.md#retention-labels) ve hassas bilgi türü sınıflandırması uygulaması aracılığıyla yaparsınız. Bulma, değerlendirme ve etiketlemenin çeşitli yolları vardır, ancak sonuç olarak bu etiketlerden biriyle veya her ikisiyle etiketlenmiş ve sınıflandırılmış çok fazla sayıda belgeniz ve e-postanız olabilir. Bekletme etiketlerinizi ve duyarlılık etiketlerinizi uyguladıktan sonra, etiketlerin kiracınızda nasıl kullanıldığını ve bu öğelerle ne yapıldığını görmek istersiniz. Veri sınıflandırma sayfası, özellikle de bu içerik gövdesine görünürlük sağlar:
 
 - hassas bilgi türü olarak sınıflandırılmış olan sayı öğeleri ve bu sınıflandırmaların ne olduğu
 - Hem Microsoft 365 hem de Azure Information Protection'da en çok uygulanan duyarlılık etiketleri

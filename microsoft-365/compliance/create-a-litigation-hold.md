@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/20/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,16 +17,16 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ddc55ef097a02c4005e2dcae2ca19fd673cc4c62
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4a1c7992952e10939aaa1029888455bb05fc4986
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631083"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918056"
 ---
 # <a name="create-a-litigation-hold"></a>Yasal askıya alma oluşturma
 
-Silinen öğeler ve değiştirilen öğelerin özgün sürümleri de dahil olmak üzere tüm posta kutusu içeriğini korumak için bir posta kutusunu Dava Tutma'ya yerleştirebilirsiniz. Bir kullanıcı posta kutusunu Dava Tutma'ya yerleştirdiğinizde, kullanıcının arşiv posta kutusunda (etkinse) içerik de korunur. Ayrı tutma oluşturduğunuzda, silinen ve değiştirilen öğelerin belirli bir süre boyunca saklanması ve ardından posta kutusundan kalıcı olarak silinmesi için bir *ayrı tutma süresi (zamana bağlı saklama* olarak da adlandırılır) belirtebilirsiniz. Ya da içeriği süresiz olarak ( *sonsuz ayrı tutma* olarak adlandırılır) veya Dava ayrılığı kaldırılana kadar saklayabilirsiniz. Ayrı tutma süresi belirtirseniz, iletinin alındığı veya posta kutusu öğesinin oluşturulduğu tarihten hesaplanır. 
+Silinen öğeler ve değiştirilen öğelerin özgün sürümleri de dahil olmak üzere tüm posta kutusu içeriğini korumak için bir posta kutusunu Dava Tutma'ya yerleştirebilirsiniz. Bir kullanıcı posta kutusunu Dava Tutma'ya yerleştirdiğinizde, kullanıcının arşiv posta kutusunda (etkinse) içerik de korunur. Ayrı tutma oluşturduğunuzda, silinen ve değiştirilen öğelerin belirli bir süre boyunca saklanması ve ardından posta kutusundan kalıcı olarak silinmesi için bir *ayrı tutma süresi (zamana bağlı saklama* olarak da adlandırılır) belirtebilirsiniz. Ya da içeriği süresiz olarak ( *sonsuz ayrı tutma* olarak adlandırılır) veya Dava ayrılığı kaldırılana kadar saklayabilirsiniz. Ayrı tutma süresi belirtirseniz, iletinin alındığı veya posta kutusu öğesinin oluşturulduğu tarihten hesaplanır.
   
 Dava ayrılığı oluşturduğunuzda şunlar olur.
   
@@ -43,7 +43,7 @@ Dava ayrılığı oluşturduğunuzda şunlar olur.
 Bir Exchange Online posta kutusunu Dava bekletmeye yerleştirmek için, Exchange Online Plan 2 lisansı atanmış olmalıdır. Bir posta kutusuna Exchange Online Plan 1 lisansı atanırsa, ayrı bir Exchange Online Arşivleme lisansı atayarak saklamanız gerekir.
 
 > [!NOTE]
-> Office 365 Eğitim kuruluşlar için, ek özelliklere sahip Exchange Online Plan 1 lisansı içeren Office 365 A1 aboneliklerde dava tutma desteklenir. Daha fazla bilgi için Office 365 Eğitim [hizmet açıklamasındaki "Exchange Online](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features) özellikler" bölümüne bakın.
+> Office 365 Eğitim kuruluşlar için, ek özelliklere sahip Exchange Online Plan 2 lisansı içeren Office 365 A1 aboneliklerde dava tutma desteklenir. Daha fazla bilgi için Office 365 Eğitim [hizmet açıklamasındaki "Exchange Online](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features) özellikler" bölümüne bakın.
 
 ## <a name="place-a-mailbox-on-litigation-hold"></a>Dava bekletmeye posta kutusu yerleştirme
 

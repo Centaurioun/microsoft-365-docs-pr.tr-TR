@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Etkinlik gezgini, kullanıcıların etiketlenmiş içeriğinizde yaptıkları eylemleri görmenizi ve filtrelemenizi sağlar.
-ms.openlocfilehash: fc74e8c5e11834b14c6aa8a3f80d43e20c43ec11
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c33ff2653eef6813caf9b9281903b7248af12359
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642030"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918012"
 ---
 # <a name="get-started-with-activity-explorer"></a>Etkinlik gezginini kullanmaya başlama
 
@@ -99,7 +99,7 @@ Aşağıda, önizleme aşamasında olan geçerli rol gruplarının listesi yer a
 
 Etkinlik gezgini, birden çok etkinlik kaynağındaki denetim günlüklerinden etkinlik bilgilerini toplar. Etkinlik gezginine hangi etiketleme etkinliğinin neden olduğu hakkında daha ayrıntılı bilgi için bkz. [Etkinlik gezgininde kullanılabilen etiketleme olayları](data-classification-activity-explorer-available-events.md).
 
-Office yerel uygulamaları, Azure Information Protection eklentisi, SharePoint Online, Exchange Online (yalnızca duyarlılık etiketleri) ve OneDrive'dan **duyarlılık etiketi etkinlikleri** ve **Bekletme etiketleme etkinlikleri**. Bazı örnekler şunlardır:
+**Duyarlılık etiketi etkinlikleri** ve Office yerel **uygulamalarından elde tutma etiketleme etkinlikleri**, Azure Information Protection (AIP) birleşik etiketleme istemcisi ve tarayıcısı, SharePoint Online, Exchange Online (yalnızca duyarlılık etiketleri) ve OneDrive. Bazı örnekler şunlardır:
 
 - Etiket uygulandı
 - Etiket değiştirildi (yükseltildi, düşürüldü veya kaldırıldı)

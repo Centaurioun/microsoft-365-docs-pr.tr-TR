@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Veri kaybı önleme ilkeleri için uyarıları tanımlamayı ve yönetmeyi öğrenin.
-ms.openlocfilehash: 60d5188b9288b1e131e36e145f7abb98a34d5ead
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d4e520a236c3658106a8311df0beed7f6c54ac4e
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627657"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918034"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>Veri kaybı önleme ilkeleri için uyarıları yapılandırma ve görüntüleme
 
 Microsoft Purview Veri Kaybı Önleme (DLP) ilkeleri, hassas öğelerin yanlışlıkla paylaşılmasını önlemek için koruyucu eylemler gerçekleştirebilir. Hassas bir öğe üzerinde eylem yapıldığında, DLP için uyarılar yapılandırılarak bildirim alabilirsiniz. Bu makalede, veri kaybı önleme (DLP) ilkelerinize bağlı zengin uyarı ilkelerinin nasıl tanımlanacağı gösterilmektedir. DLP ilke ihlallerine yönelik uyarıları, olayları ve ilişkili meta verileri görüntülemek için <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview uyumluluk portalı</a> yeni DLP uyarı yönetimi panosunu nasıl kullanacağınızı göreceksiniz.
 
-## <a name="features"></a>Özellik
+## <a name="features"></a>Özellikler
 
 Aşağıdaki özellikler bunun bir parçasıdır:
 
@@ -63,6 +63,7 @@ Office 365 DLP için uygun tüm kiracılar yeni DLP uyarı yönetimi panosuna er
 
 - **Tek olaylı uyarı yapılandırması**: E1, F1 veya G1 aboneliği ya da E3 ya da G3 aboneliği olan kuruluşlar, yalnızca her etkinlik gerçekleştiğinde bir uyarının tetiklendiği durumlarda uyarı ilkeleri oluşturabilir.
 - **Toplu uyarı yapılandırması**: Bir eşiğe göre toplu uyarı ilkelerini yapılandırmak için aşağıdaki yapılandırmalardan herhangi birini kullanmanız gerekir:
+  - A5 aboneliği
   - E5 veya G5 aboneliği
   - Aşağıdaki özelliklerden birini içeren bir E1, F1 veya G1 aboneliği ya da E3 veya G3 aboneliği:
     - Office 365 Gelişmiş Tehdit Koruması Planı 2
@@ -133,9 +134,9 @@ DLP uyarı yönetimi panosuyla çalışmak için:
     |                   | Ana bilgisayar adı                      | DLP ihlalinin algılandığı makinenin ana bilgisayar adı              | Cihaz olayları                           |
     |                   | IP adresi                    | Makinenin IP adresi                                                  | Cihaz olayları                           |
     |                   | Dosya yolu                     | İhlale katılan dosyanın mutlak yolu                        | SharePoint, OneDrive ve Cihazlar olayları |
-    |                   | E-posta alıcıları              | DLP ilkesini ihlal eden e-postanın alıcıları                       | Exchange olayları                          |
-    |                   | E-posta konusu                 | DLP ilkesini ihlal eden e-postanın konusu                          | Exchange olayları                          |
-    |                   | E-posta ekleri             | E-postadaki DLP ilkesini ihlal eden eklerin adları         | Exchange olayları                          |
+    |                   | alıcıları Email              | DLP ilkesini ihlal eden e-postanın alıcıları                       | Exchange olayları                          |
+    |                   | Email konu                 | DLP ilkesini ihlal eden e-postanın konusu                          | Exchange olayları                          |
+    |                   | Ekleri Email             | E-postadaki DLP ilkesini ihlal eden eklerin adları         | Exchange olayları                          |
     |                   | Site sahibi                    | Site sahibinin adı                                                     | SharePoint ve OneDrive olayları           |
     |                   | Site URL'si                      | SharePoint veya OneDrive sitesinin tam URL'si                                | SharePoint ve OneDrive olayları           |
     |                   | Dosya oluşturuldu                  | Dosya oluşturma zamanı                                                      | SharePoint ve OneDrive olayları           |

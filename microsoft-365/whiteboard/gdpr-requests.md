@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard'dan kişisel bilgileri dışarı aktarmayı, aktarmayı veya silmeyi öğrenin.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7ac0eb5270e377565840ad2d7ff40cab7546d692
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 53498dfc3309ab001bf4e1265f08c050ae464e61
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66862330"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917221"
 ---
 # <a name="manage-gdpr-data-subject-requests-in-microsoft-whiteboard"></a>Microsoft Whiteboard'da GDPR veri sahibi isteklerini yönetme
 

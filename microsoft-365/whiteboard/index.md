@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard'u ayarlama ve yönetme hakkında kaynakları bulun.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 70f1252d8a583fc317af30a6eaaa6ccaf0df7a1e
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 1b76b829d0db173257243b49076bf5938121fb3d
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66862153"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917332"
 ---
 # <a name="introduction-to-microsoft-whiteboard"></a>Microsoft Whiteboard'a giriş
 
@@ -43,10 +42,13 @@ Bu bölümdeki kaynaklar, kuruluşunuzdaki yöneticinin Microsoft 365 ortamını
 
 | Bu bilgileri arıyorsanız | Bu kaynağa git |
 |:-----|:-----|
-|Kuruluşunuz için Whiteboard erişimini ayarlamayı ve yönetmeyi öğrenin|[Whiteboard'a erişimi yönetme](manage-whiteboard-access-organizations.md)|
+|Kuruluşunuz için Beyaz Tahta'yı ayarlamayı öğrenin|[Whiteboard'ı ayarlama ve kullanma](/surface-hub/whiteboard-collaboration)|
+|Microsoft Intune veya Microsoft Configuration Manager kullanarak Windows 10 veya üzerini çalıştıran cihazlara Whiteboard dağıtma|[Windows cihazlarda Microsoft Whiteboard'u dağıtma](deploy-on-windows-organizations.md)|
+|Kuruluşunuz için Whiteboard erişimini yönetmeyi öğrenin|[Whiteboard'a erişimi yönetme](manage-whiteboard-access-organizations.md)|
 |Whiteboard içeriğinizin ve verilerinizin Azure'da nerede depolandığını bulma ve OneDrive İş  |[Whiteboard için verileri yönetme](manage-data-organizations.md)  |
 |Teams'de paylaşım deneyimi ve belirli kullanıcılarla bağlantı paylaşma hakkında bilgi edinin  |[Whiteboard için paylaşımı yönetme](manage-sharing-organizations.md)  |
-|Microsoft Intune veya Microsoft Configuration Manager kullanarak Windows 10 veya üzerini çalıştıran cihazlara Whiteboard dağıtma  |[Windows'da Whiteboard'ı dağıtma](deploy-on-windows-organizations.md)  |
+|Whiteboard için gizlilik ayarlarını ve tanılama verilerini yapılandırmayı öğrenin |[Whiteboard'da gizlilik ayarlarını yapılandırma](configure-privacy-settings.md)  |
+|Whiteboard'da toplanan kişisel veriler için Genel Veri Koruma Yönetmeliği (GDPR) gereksinimlerini yönetmeyi öğrenin |[Whiteboard'da GDPR veri sahibi isteklerini yönetme](gdpr-requests.md)  |
 
 ### <a name="for-government"></a>Kamu için
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Hassas bilgi türüne göre tam veri eşleşmesi için kaynak verileri dışarı aktarmayı öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 913870afeef443c5b346172099b0cd47db13e52e
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 644c62dce3069899aba33737dd1e6452c81fee24
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760701"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918078"
 ---
 # <a name="export-source-data-for-exact-data-match-based-sensitive-information-type"></a>Tam veri eşleşmesine dayalı hassas bilgi türleri için kaynak verilerini dışa aktarma
 
@@ -33,7 +33,7 @@ Veriler desteklenen biçimlerden birinde dışarı aktarıldıktan sonra EDM şe
 
 ## <a name="defining-your-edm-sensitive-type"></a>EDM Hassas türünüzü tanımlama
 
-EDM hassas türünüzü tanımlarken en kritik kararlardan biri hangi alanların birincil alanlar olacağıdır. Birincil alanların algılanabilir bir deseni izlemesi ve EDM şemanızda aranabilir alanlar (sütunlar) olarak tanımlanması gerekir. Birincil alanlarla eşleşen tüm metinlerle karşılaştırılacağından, ikincil alanların herhangi bir deseni izlemesi gerekmez.
+EDM hassas türünüzü tanımlarken, en kritik kararlardan biri birincil alanlar olacak alanları tanımlamaktır. Birincil alanların algılanabilir bir deseni izlemesi ve EDM şemanızda aranabilir alanlar (sütunlar) olarak tanımlanması gerekir. Birincil alanlarla eşleşen tüm metinlerle karşılaştırılacağından, ikincil alanların herhangi bir deseni izlemesi gerekmez.
 
 Birincil alan olarak hangi sütunları kullanmanız gerektiğine karar vermenize yardımcı olması için bu kuralları kullanın:
 
@@ -53,7 +53,7 @@ Veri dosyası en fazla şunları içerebilir:
 
 2. .csv veya .tsv dosyasındaki hassas verileri, ilk satırda EDM tabanlı sınıflandırma için kullanılan alanların adlarının yer aldığı şekilde yapılandırın. Dosyanızda "ssn", "birthdate", "firstname", "lastname" gibi alan adları olabilir. Sütun başlığı adları boşluk veya alt çizgi içeremez. Örneğin, bu makalede kullandığımız örnek .csv dosyası *PatientRecords.csv* olarak adlandırılır ve sütunları *PatientID*, *MRN*, *LastName, FirstName*, *SSN* ve daha fazlasını içerir. 
 
-3. Hassas veri alanlarının biçimine dikkat edin. Özellikle, içeriğinde virgül içerebilen alanlar( örneğin, "Seattle,WA" değerini içeren bir sokak adresi, .csv biçimi seçiliyse ayrıştırıldığında iki ayrı alan olarak ayrıştırılır. Bunu önlemek için .tsv biçimini kullanın veya hassas veri tablosunda değerleri içeren virgülleri çift tırnak içine alın. Değer içeren virgül de boşluk içeriyorsa, karşılık gelen biçimle eşleşen özel bir SIT oluşturmanız gerekir. Örneğin, içinde virgül ve boşluk bulunan çok sözcüklü dizeyi algılayan bir SIT.
+3. Hassas veri alanlarının biçimine dikkat edin; özellikle, içeriklerinde virgül içerebilecek alanlar. Örneğin, "Seattle,WA" değerini içeren bir sokak adresi, .csv biçimi seçilirse ayrıştırıldığında iki ayrı alan olarak ayrıştırılır. Bunu önlemek için .tsv biçimini kullanın veya hassas veri tablosunda değerleri içeren virgülleri çift tırnak içine alın. Değer içeren virgül de boşluk içeriyorsa, karşılık gelen biçimle eşleşen özel bir SIT oluşturmanız gerekir. Örneğin, içinde virgül ve boşluk bulunan çok sözcüklü dizeyi algılayan bir SIT.
 
 ## <a name="next-step"></a>Sonraki adım
 

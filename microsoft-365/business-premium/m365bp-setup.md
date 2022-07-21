@@ -9,26 +9,26 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 07/20/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: f20f0e918c7bb0d45a7e8319e9883373a112d7c5
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 43d6bfe9ef385f7c9b197af75a25bd2544996840
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893111"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917990"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'yı ayarlama
 
 [Deneme sürümü başlattıktan veya Microsoft 365 İş Ekstra satın](get-microsoft-365-business-premium.md) aldıktan sonra, bir sonraki adımınız her şeyi ayarlamaktır. Kullanabileceğiniz çeşitli seçenekler vardır. Şunları yapabilirsiniz:
 
-- Temel kurulum ve yapılandırma için [kılavuzlu kurulum deneyimiyle](m365bp-setup.md#guided-setup-process) başlayın; Veya
-- Microsoft Bulut Çözümü Sağlayıcısı (CSP) gibi bir [iş ortağıyla çalışın](m365bp-setup.md#work-with-a-microsoft-partner).
+- Temel kurulum ve yapılandırma için [destekli kurulum deneyimiyle](m365bp-setup.md#guided-setup-process) başlayın ve ardından [Güvenliği artırma](m365bp-security-overview.md) bölümüne geçin; Veya
+- Her şeyi ayarlamanıza ve yapılandırmanıza yardımcı olabilecek [bir Microsoft iş ortağıyla çalışın](m365bp-setup.md#work-with-a-microsoft-partner).
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -41,7 +41,7 @@ Kurulum işleminize başlamadan önce aşağıdaki gereksinimleri karşıladığ
 | Tarayıcı gereksinimleri | Microsoft Edge, Safari, Chrome veya Firefox. [Tarayıcı gereksinimleri hakkında daha fazla bilgi edinin](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
 | İşletim sistemi | **Windows**: Windows 11, Windows 10, Windows 8.1<br/>**macOS: macOS'un** en son üç sürümünden biri <br/>Şu anda Microsoft 365 İş Ekstra ve İş için Microsoft Defender tek başına sürümü sunucuları desteklemez.  |
 
-> [!TIP]
+> [!NOTE]
 > Microsoft 365, Office ve sistem gereksinimleri hakkında daha ayrıntılı bilgi için bkz. [Microsoft 365 ve Office Kaynakları](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## <a name="guided-setup-process"></a>Destekli kurulum işlemi
@@ -51,27 +51,30 @@ Microsoft 365 İş Ekstra destekli bir işlem içerir. Aşağıdaki videoda, Mic
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
-> Kullanıcıları ekledikten sonra, onlara [Çalışan hızlı kurulum kılavuzunun](../admin/setup/employee-quick-setup.md) bağlantısını verin. Kılavuz, oturum açma, Office uygulamalarını alma ve dosyaları kaydetme, kopyalama ve paylaşma işlemlerinde onlara yol gösterir.
-> [Güvenliği artırma'ya](m365bp-security-overview.md) devam edin.
+> - Kullanıcıları ekledikten sonra, onlara [Çalışan hızlı kurulum kılavuzunun](../admin/setup/employee-quick-setup.md) bağlantısını verin. Kılavuz, oturum açma, Office uygulamalarını alma ve dosyaları kaydetme, kopyalama ve paylaşma işlemlerinde onlara yol gösterir.
+> - [Güvenliği artır'a](m365bp-security-overview.md) geçin.
 
 ## <a name="work-with-a-microsoft-partner"></a>Bir Microsoft iş ortağıyla çalışma
 
 Microsoft 365'i edinme ve ayarlama konusunda bir Microsoft iş ortağı yardımı almayı tercih ederseniz şu adımları izleyin:
 
-1. **Microsoft Çözüm Sağlayıcıları** sayfasına ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers) ) gidin.
+1. [İş Ortaklarına Gözat'a](https://appsource.microsoft.com/marketplace/partner-dir) gidin.
 
-2. Arama kutusunda konumunuzu ve şirketinizin boyutunu doldurun.
+2. **Filtreler** bölmesinde arama ölçütlerini belirtin, örneğin:
 
-3. **Ürün, hizmet, beceri, endüstri ara** kutusuna yazın `Microsoft 365`ve **ardından Git'i** seçin.
+   - Konumunuz
+   - Kuruluşunuzun boyutu
+   - **Güvenlik** ve/veya **Tehdit Koruması** gibi **odak alanları** 
+   - **Lisanslama** veya **Yönetilen Hizmetler (MSP) gibi hizmetler**
 
-4. Sonuç listesini gözden geçirin. Uzmanlığı ve sağladığı hizmetler hakkında daha fazla bilgi edinmek için bir sağlayıcı seçin.
+   Bir veya daha fazla ölçüt seçtiğinizde iş ortağı listesi güncelleştirilir.
+
+3. Sonuç listesini gözden geçirin. Uzmanlığı ve sağladığı hizmetler hakkında daha fazla bilgi edinmek için bir sağlayıcı seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İş ortağınızı veya yetkili satıcınızı bulma](../admin/manage/find-your-partner-or-reseller.md)
-
+- [Microsoft iş ortağı veya kurumsal bayi bulma](../admin/manage/find-your-partner-or-reseller.md)
 - [Self servis parolaları ayarlama](../admin/add-users/let-users-reset-passwords.md)
-
 - [Self servis grup yönetimini ayarlama](/azure/active-directory/enterprise-users/groups-self-service-management)
 
 ### <a name="next-objective"></a>Sonraki hedef

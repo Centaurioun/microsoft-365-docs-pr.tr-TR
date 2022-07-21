@@ -17,12 +17,12 @@ ms.custom: ''
 description: Yöneticiler, desteklenen belirli senaryolarda (üçüncü taraf kimlik avı simülasyonları ve güvenlik işlemleri (SecOps) posta kutularına teslim edilen iletiler) filtrelenmemesi gereken iletileri belirlemek için Exchange Online Protection (EOP) içinde gelişmiş teslim ilkesini kullanmayı öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 109d711623d2a0355851414af3ef0cb1beadf6af
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9fbfa8f79698d053fe60388eec54ebe90f6501ff
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490453"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917573"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Üçüncü taraf kimlik avı simülasyonlarının kullanıcılara ve filtrelenmemiş iletilerin SecOps posta kutularına teslimini yapılandırma
 
@@ -57,7 +57,7 @@ _Bu belirli senaryolardaki_ gelen iletilerin filtrelenmesini önlemek için Micr
 Gelişmiş teslim ilkesi tarafından tanımlanan iletiler güvenlik tehditleri olmadığından, iletiler sistem geçersiz kılmalarıyla işaretlenir. Yönetici deneyimler, **kimlik avı simülasyon** sistemi geçersiz kılma veya **SecOps posta kutusu** sistemi geçersiz kılma nedeniyle bu iletileri gösterir. Yöneticiler aşağıdaki deneyimlerde bu sistem geçersiz kılmalarını filtreleyebilir ve analiz edebilir:
 
 - [Office 365 için Defender plan 2'deki Tehdit Gezgini/Gerçek zamanlı algılamalar](threat-explorer.md): Yönetici **Sistem geçersiz kılma kaynağında** filtreleyebilir ve **Kimlik Avı simülasyonu** veya **SecOps Posta Kutusu'nda** seçim yapabilir.
-- [Tehdit Gezgini'ndeki E-posta varlığı Sayfası/Gerçek zamanlı algılamalar](mdo-email-entity-page.md): Yönetici, **Geçersiz Kılmalar** bölümündeki **Kiracı geçersiz kılma** altında **SecOps posta kutusu** veya **Kimlik Avı benzetimi** tarafından kuruluş ilkesi tarafından izin verilen bir iletiyi görüntüleyebilir.
+- [Tehdit Gezgini'ndeki Email varlık Sayfası/Gerçek zamanlı algılamalar](mdo-email-entity-page.md): Yönetici, **Geçersiz Kılmalar** bölümündeki **Kiracı geçersiz kılma** altında **SecOps posta kutusu** veya **Kimlik avı benzetimi** tarafından kuruluş ilkesi tarafından izin verilen bir iletiyi görüntüleyebilir.
 - [Tehdit koruması durum raporu](view-email-security-reports.md#threat-protection-status-report): Yönetici, açılan menüde **Sistem geçersiz kılmaya göre verileri görüntüleyebilir** ve kimlik avı simülasyon sistemi geçersiz kılma nedeniyle izin verilen iletileri görmeyi seçebilir. SecOps posta kutusu geçersiz kılma işleminin izin verdiği iletileri görmek için, **nedene göre grafik dökümü açılan menüsünde teslim konumuna göre** **grafik dökümünü** seçebilirsiniz.
 - [Uç Nokta için Microsoft Defender gelişmiş avcılık](../defender-endpoint/advanced-hunting-overview.md): Kimlik avı simülasyonu ve SecOps posta kutusu sistemi geçersiz kılmaları, EmailEvents'teki OrgLevelPolicy içinde seçenekler olarak gösterilir.
 - [Kampanya Görünümleri](campaigns.md): Yönetici **Sistem geçersiz kılma kaynağında** filtreleyebilir ve **Kimlik Avı benzetimi** veya **SecOps Posta Kutusu'nı** seçebilir.
@@ -79,11 +79,11 @@ Gelişmiş teslim ilkesi tarafından tanımlanan iletiler güvenlik tehditleri o
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Gelişmiş teslim ilkesinde SecOps posta kutularını yapılandırmak için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **Kurallar** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Gelişmiş teslim** bölümüne gidin. Doğrudan **Gelişmiş teslim** sayfasına gitmek için kullanın <https://security.microsoft.com/advanceddelivery>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **Kurallar** bölümünde **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Gelişmiş teslim** bölümüne gidin. Doğrudan **Gelişmiş teslim** sayfasına gitmek için kullanın <https://security.microsoft.com/advanceddelivery>.
 
 2. **Gelişmiş teslim** sayfasında **SecOps posta kutusu** sekmesinin seçili olduğunu doğrulayın ve aşağıdaki adımlardan birini yapın:
    - Düzenle simgesine tıklayın ![.](../../media/m365-cc-sc-edit-icon.png) **Düzenle'yi seçin**.
-   - Yapılandırılmış kimlik avı benzetimi yoksa **Ekle'ye** tıklayın.
+   - Yapılandırılmış SecOps posta kutusu yoksa **Ekle'ye** tıklayın.
 
 3. Açılan **SecOps posta kutularını düzenle** açılır öğesinde, aşağıdaki adımlardan birini yaparak SecOps posta kutusu olarak ayarlamak istediğiniz mevcut bir Exchange Online posta kutusu girin:
    - Kutuya tıklayın, posta kutusu listesinin çözümlenmesine izin verin ve ardından posta kutusunu seçin.
@@ -99,7 +99,7 @@ Yapılandırdığınız SecOps posta kutusu girişleri **SecOps posta kutusu** s
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Gelişmiş teslim ilkesinde üçüncü taraf kimlik avı simülasyonlarını yapılandırmak için Microsoft 365 Defender portalını kullanın
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **Kurallar** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Gelişmiş teslim** bölümüne gidin. Doğrudan **Gelişmiş teslim** sayfasına gitmek için kullanın <https://security.microsoft.com/advanceddelivery>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **Kurallar** bölümünde **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Gelişmiş teslim** bölümüne gidin. Doğrudan **Gelişmiş teslim** sayfasına gitmek için kullanın <https://security.microsoft.com/advanceddelivery>.
 
 2. **Gelişmiş teslim** sayfasında **Kimlik avı simülasyonu** sekmesini seçin ve aşağıdaki adımlardan birini yapın:
    - Düzenle simgesine tıklayın ![.](../../media/m365-cc-sc-edit-icon.png) **Düzenle'yi seçin**.
@@ -116,6 +116,7 @@ Yapılandırdığınız SecOps posta kutusu girişleri **SecOps posta kutusu** s
      - Tek IP: Örneğin, 192.168.1.1.
      - IP aralığı: Örneğin, 192.168.0.1-192.168.0.254.
      - CIDR IP: Örneğin, 192.168.0.1/25.
+
    - **İzin vermek için simülasyon URL'leri**: Bu ayarı genişletin ve isteğe bağlı olarak kutuya tıklayıp bir değer girip Enter tuşuna basarak veya kutunun altında görüntülenen değeri seçerek engellenmemesi veya patlatılmaması gereken kimlik avı simülasyonu kampanyanızın parçası olan belirli URL'leri girin. En fazla 10 giriş ekleyebilirsiniz. URL söz dizimi biçimi için bkz. [Kiracı İzin Ver/Engelle Listesi için URL söz dizimi](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list). Bu URL'ler tıklandığında kaydırılır, ancak engellenmez.
 
    Mevcut bir değeri kaldırmak için Kaldır'a tıklayın ![Kaldır simgesi.](../../media/m365-cc-sc-remove-selection-icon.png) öğesini seçin.

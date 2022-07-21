@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 37cea2e88afacb14285e10960fba81989ffb387f
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 67c7648238ecc3a46188b36f3ab61525739d53d4
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686429"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917683"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS ve Linux üzerinde istemci çözümleyicisini çalıştırma
 
@@ -69,7 +69,7 @@ ms.locfileid: "66686429"
 > 
 > - Ayrıca aracın şu anda Python sürüm 3 veya üzerinin yüklü olması gerekir.
 >
-> - Python 3 kullanamayan veya lxml bileşenini getiremeyen bir makinede çalışıyorsanız, çözümleyicinin gereksinimlerinden herhangi birine sahip olmayan ikili tabanlı bir sürümünü indirebilirsiniz: [XMDE İstemci Çözümleyicisi İkili](https://aka.ms/XMDEClientAnalyzerBinary)
+> - Python 3 kullanamayan veya lxml bileşenini getiremeyen bir makinede çalışıyorsanız, çözümleyicinin gereksinimlerinin hiçbirini içermeyen ikili tabanlı bir sürümünü indirebilirsiniz: [XMDE İstemci Çözümleyicisi İkili](https://aka.ms/XMDEClientAnalyzerBinary). <br> İkili dosyanın şu anda imzasız olduğunu unutmayın. Paketin MacOS üzerinde çalıştırılmasına izin vermek için şu söz dizimini kullanmanız gerekir: "spctl --add /Path/To/Application.app".
 >
 > - Cihazınız bir ara sunucunun arkasındaysa, proxy sunucusunu mde_support_tool.sh betiğine ortam değişkeni olarak geçirebilirsiniz. Örneğin: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 

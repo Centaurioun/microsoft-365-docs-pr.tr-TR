@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard'da uyumluluk ve gizlilik ayarlarını yapılandırma hakkında bilgi edinin.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a2708d3eda92f3d29ea9ad6ee15e518d32d93a22
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: 38c7d3fc80b825a8b701f84d729e9bb9a7cc1b63
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882794"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917243"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>Microsoft Whiteboard'da gizlilik ayarlarını yapılandırma
 
@@ -31,7 +30,7 @@ Kuruluşunuzun Microsoft Whiteboard yöneticisiyseniz aşağıdakileri denetleye
 
 - Beyaz Tahta'daki isteğe bağlı bağlı deneyimlerin kullanıcılarınız tarafından kullanılıp kullanılamadığı.
 
-Tanılama verilerinin düzeyini yapılandırmak için yönetici hesabınızla [Microsoft 365 yönetim merkezi](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) oturum açın. Yönetim merkezi giriş sayfasında Tüm **> Ayarlarını göster > Kuruluş ayarları > Whiteboard'a** gidin.
+Tanılama verilerinin düzeyini yapılandırmak için yönetici hesabınızla [Microsoft 365 yönetim merkezi](/microsoft-365/admin/admin-overview/admin-center-overview) oturum açın. Yönetim merkezi giriş sayfasında Tüm **> Ayarlarını göster > Kuruluş ayarları > Whiteboard'a** gidin.
 
 İsteğe bağlı bağlı deneyimlerin kullanılabilirliğini yapılandırmak için [Microsoft 365 Uygulamaları yönetim merkezindeki](https://config.office.com) [Office bulut ilkesi hizmetini](/deployoffice/admincenter/overview-office-cloud-policy-service) kullanın. Yönetici hesabınızla oturum açın ve **Özelleştirme > İlke Yönetimi'ne** gidin. Yapılandırmak istediğiniz ilkenin adı: **Office'te isteğe bağlı ek bağlı deneyimlerin kullanılmasına izin verin**.
 

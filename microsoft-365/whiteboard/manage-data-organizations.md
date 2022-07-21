@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Azure ve OneDrive İş'de Microsoft Whiteboard için veri saklama hakkında bilgi edinin.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2537750a43b10617251ee1da670f6ebd78e5ce82
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 103a48b01aa7ad87d0e3f84e6093344ea9cce0f0
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66862123"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917639"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Microsoft Whiteboard için verileri yönetme
 

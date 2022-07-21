@@ -10,17 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 07/20/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 2fd10eb56eec1c35015bff2f63163ee9394f8d42
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 5f0c1f63223498995d04814434bbf4000e55d918
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771317"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917902"
 ---
 # <a name="get-microsoft-defender-for-business"></a>İş için Microsoft Defender alma
 
@@ -30,7 +31,7 @@ Henüz İş için Microsoft Defender yoksa, çeşitli seçenekler arasından se�
 
 - [İş için Defender'ın tek başına sürümünü deneyin veya satın alın](#try-or-buy-microsoft-defender-for-business).
 - artık İş için Defender'ı da içeren [Microsoft 365 İş Ekstra edinin](#get-microsoft-365-business-premium).
-- Her şeyi ayarlamanıza ve yapılandırmanıza yardımcı olabilecek [bir Microsoft çözüm sağlayıcısıyla çalışın](#work-with-a-microsoft-solution-provider).
+- Her şeyi ayarlamanıza ve yapılandırmanıza yardımcı olabilecek [bir Microsoft iş ortağıyla çalışın](#work-with-a-microsoft-partner).
 
 Deneme sürümüne kaydolmuşsanız, kabul e-postanızı aldıktan sonra [denemenizi etkinleştirebilir ve kullanıcı lisansları atayabilir](#how-to-activate-your-trial) ve [sonraki adımlarınıza](#next-steps) geçebilirsiniz.
 
@@ -56,17 +57,22 @@ Deneme sürümüne kaydolmuşsanız, kabul e-postanızı aldıktan sonra [deneme
 
 3. Microsoft 365 İş Ekstra kaydoldıktan sonra, oturum açmak ve kullanmaya başlamak için bir bağlantı içeren bir e-posta alırsınız. [Microsoft 365 İş Ekstra Ayarlama'ya](../../business-premium/m365bp-setup.md) geçin.
 
-## <a name="work-with-a-microsoft-solution-provider"></a>Microsoft Çözüm Sağlayıcısı ile çalışma
+## <a name="work-with-a-microsoft-partner"></a>Bir Microsoft iş ortağıyla çalışma
 
 Microsoft, Microsoft 365 İş Ekstra ve İş için Microsoft Defender dahil olmak üzere teklif satma yetkisine sahip çözüm sağlayıcılarının bir listesine sahiptir. Bölgenizde bir çözüm sağlayıcısı bulmak için aşağıdaki adımları izleyin:
 
-1. **Microsoft Çözüm Sağlayıcıları** sayfasına ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers) ) gidin.
- 
-2. Arama kutusunda konumunuzu ve şirketinizin boyutunu doldurun. 
+1. [İş Ortaklarına Gözat'a](https://appsource.microsoft.com/marketplace/partner-dir) gidin.
 
-3. **Ürün, hizmet, beceri, endüstri ara** kutusuna yazın `Microsoft 365`ve **ardından Git'i** seçin.
+2. **Filtreler** bölmesinde arama ölçütlerini belirtin, örneğin:
 
-4. Sonuç listesini gözden geçirin. Uzmanlığı ve sağladığı hizmetler hakkında daha fazla bilgi edinmek için bir sağlayıcı seçin. Sağlayıcınız İş için Defender'a kaydolmanıza yardımcı olabilir.
+   - Konumunuz
+   - Kuruluşunuzun boyutu
+   - **Güvenlik** ve/veya **Tehdit Koruması** gibi **odak alanları** 
+   - **Lisanslama** veya **Yönetilen Hizmetler (MSP) gibi hizmetler**
+
+   Bir veya daha fazla ölçüt seçtiğinizde iş ortağı listesi güncelleştirilir.
+
+3. Sonuç listesini gözden geçirin. Uzmanlığı ve sağladığı hizmetler hakkında daha fazla bilgi edinmek için bir sağlayıcı seçin.
 
 ## <a name="how-to-activate-your-trial"></a>Deneme sürümünüzü etkinleştirme
 

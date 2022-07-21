@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Veri kaybı önleme (DLP) ilkesine bir ilke ipucu eklemeyi öğrenin ve kullanıcıya DLP ilkesiyle çakişen içerikle çalıştığını bildirin.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 04743bdabba4089a7cfdbb46fbb25d427927f6c0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 074283fbdf22d4a7ed645539f706a7b292c20485
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638355"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917287"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Veri Kaybı Önleme ilkesi ipuçları referansı
 
@@ -404,4 +404,5 @@ Yukarıdaki kullanıma açık hassas bilgi türlerine ek olarak özel hassas bil
 |**Üçüncü taraf bulut uygulamaları**|:::image type="icon" source="../media/crsmrk.png" border="false":::|yok|yok|Veri Kaybı Önleme ilkesi ipuçları üçüncü taraf bulut uygulamalarında desteklenmez|
 |**Şirket içi**|:::image type="icon" source="../media/crsmrk.png" border="false":::|yok|yok||
 |**Word, Excel, PowerPoint Win32 İstemcisi**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Alt küme -sini|Alt küme -sini|Desteklenen [hassas bilgi türleri listesi için yalnızca bazı hassas bilgi türlerine yönelik ilke ipuçlarını gösteren Outlook 2013 ve sonraki sürümlerine ve Masaüstü'nde Office uygulamalarına](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) bakın</br></br>WXP istemci uygulamalarına yönelik ilke ipuçları, DLP ilkesindeki koşulların veya eylemlerin tam olarak aşağıda veya bir alt kümesine sahip olan tüm DLP ilkeleri için SharePoint Online'da veya OneDrive İş Sitelerinde depolanan belgeler için çalışır:</br> <ul><li>İçerik hassas bilgi türleri içeriyor</li><li>Erişim Kapsamı (İçerik dahili/harici olarak paylaşılır)</li><li>Kullanıcıya Bildir (ilke ipuçları/kullanıcı bildirimleri)</li><li>Herkesi engelle</li><li>Olay raporları</li></ul></br> Başka bir koşul veya eylem varsa, söz konusu ilkenin DLP ilke ipucu Word, Excel veya PowerPoint'in masaüstü uygulamalarında görünmez.</br>Diğer ayrıntılar için bkz. [Excel, PowerPoint ve Word'de ilke ipuçları](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word)|
+|**Power BI**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Alt küme -sini|Alt küme -sini|Power BI'daki veri kaybı önleme ilkeleri Genel Önizleme aşamasındadır. </br></br> İlke ipuçları ve yönetici uyarıları desteklenir. |
 ||||||

@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/20/2022
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,19 +24,19 @@ search.appverid:
 - BCS160
 - MET150
 description: Şirketinizi cihazlara, e-postalara, verilere ve iletişimlere yönelik siber güvenlik tehditlerinden koruyabilmeniz için Microsoft 365 İş Ekstra alın.
-ms.openlocfilehash: ad58a0578872cf7fcf38bec09cc383450c76a5ff
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 2307f6476ee2cf9c27b4b3785c29f35991d30d91
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493752"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917951"
 ---
 # <a name="how-to-sign-up-for-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra için kaydolma
 
 Microsoft 365 İş Ekstra kaydolmaya hazır olduğunuzda çeşitli seçenekleriniz vardır. Şunları yapabilirsiniz:
 
 - [Microsoft 365 İş Ekstra kendiniz deneyin veya satın alın](#sign-up-for-microsoft-365-business-premium-on-your-own)
-- [Çözüm sağlayıcısıyla çalışma](#work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium)
+- [Bir Microsoft iş ortağıyla çalışma](#work-with-a-microsoft-partner-to-get-microsoft-365-business-premium)
 
 > [!TIP]
 > Kampanyalar için Microsoft 365'i arıyorsanız bkz. [Kampanyalar için Microsoft 365'i edinme](get-microsoft-365-campaigns.md).
@@ -48,17 +49,22 @@ Microsoft 365 İş Ekstra kaydolmaya hazır olduğunuzda çeşitli seçeneklerin
 
 3. Microsoft 365 İş Ekstra kaydoldıktan sonra, oturum açmak ve kullanmaya başlamak için bir bağlantı içeren bir e-posta alırsınız. [Microsoft 365 İş Ekstra Ayarlama'ya](m365bp-setup.md) geçin.
 
-## <a name="work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra almak için Bir Microsoft Çözüm Sağlayıcısı ile çalışma
+## <a name="work-with-a-microsoft-partner-to-get-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra almak için bir Microsoft iş ortağıyla çalışma
 
 Microsoft, Microsoft 365 İş Ekstra dahil olmak üzere teklif satma yetkisine sahip çözüm sağlayıcılarının bir listesine sahiptir. Henüz bir çözüm sağlayıcısıyla çalışmıyorsanız aşağıdaki adımları izleyerek bir çözüm bulabilirsiniz: 
 
-1. **Microsoft Çözüm Sağlayıcıları** sayfasına ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers) ) gidin.
- 
-2. Arama kutusunda konumunuzu ve şirketinizin boyutunu doldurun. 
+1. [İş Ortaklarına Gözat'a](https://appsource.microsoft.com/marketplace/partner-dir) gidin.
 
-3. **Ürün, hizmet, beceri, endüstri ara** kutusuna yazın `Microsoft 365`ve **ardından Git'i** seçin.
+2. **Filtreler** bölmesinde arama ölçütlerini belirtin, örneğin:
 
-4. Sonuç listesini gözden geçirin. Uzmanlığı ve sağladığı hizmetler hakkında daha fazla bilgi edinmek için bir sağlayıcı seçin.
+   - Konumunuz
+   - Kuruluşunuzun boyutu
+   - **Güvenlik** ve/veya **Tehdit Koruması** gibi **odak alanları** 
+   - **Lisanslama** veya **Yönetilen Hizmetler (MSP) gibi hizmetler**
+
+   Bir veya daha fazla ölçüt seçtiğinizde iş ortağı listesi güncelleştirilir.
+
+3. Sonuç listesini gözden geçirin. Uzmanlığı ve sağladığı hizmetler hakkında daha fazla bilgi edinmek için bir sağlayıcı seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
