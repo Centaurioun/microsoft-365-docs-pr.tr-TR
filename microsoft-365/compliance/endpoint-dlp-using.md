@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Uç nokta veri kaybı önleme konumlarını kullanmak için veri kaybı önleme (DLP) ilkelerini yapılandırmayı öğrenin.
-ms.openlocfilehash: f58c7aec00a91ebc63b410abdd4c6342eef47a0e
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: 2fef9c2d89d741c70f3d2d903f41fa8a354d4a79
+ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882005"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66912640"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uç noktada veri kaybı önlemeyi kullanma
 
@@ -36,6 +36,13 @@ Uç Nokta DLP özelliklerini ve DLP ilkelerinde nasıl ortaya çıkardıkların�
 >- [Varsayılan DLP ilkesini kullanmaya başlama](get-started-with-the-default-dlp-policy.md)
 >- [Bir şablondan DLP ilkesi oluşturma](create-a-dlp-policy-from-a-template.md)
 >- [Bir DLP ilkesi oluşturma, test etme ve ayarlama](create-test-tune-dlp-policy.md)
+
+
+## <a name="before-you-begin"></a>Başlamadan önce
+
+### <a name="skusubscriptions-licensing"></a>SKU/abonelik lisanslama
+
+Tam lisanslama ayrıntıları için bkz. [Bilgi koruması için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
 ## <a name="scenario-1-create-a-policy-from-a-template-audit-only"></a>Senaryo 1: Şablondan ilke oluşturma, yalnızca denetim
 

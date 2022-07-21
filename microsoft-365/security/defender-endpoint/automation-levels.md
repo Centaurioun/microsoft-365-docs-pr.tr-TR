@@ -10,6 +10,7 @@ ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: e36bcdd5851b64ec035eaf8e4e3961c14df5c535
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: fb7c4ee03c5391b12beb3d716b7817a880878af5
+ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535834"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66912586"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Otomatik araştırma ve düzeltme özelliklerindeki otomasyon düzeyleri
 
@@ -46,9 +47,9 @@ ms.locfileid: "65535834"
 
 |Otomasyon düzeyi|Açıklama|
 |---|---|
-|**Tam - tehditleri otomatik olarak düzeltme** <br> ( *tam otomasyon* olarak da adlandırılır)|Tam otomasyon ile düzeltme eylemleri otomatik olarak gerçekleştirilir. Gerçekleştirilen tüm düzeltme eylemleri **Geçmiş** sekmesindeki [İşlem Merkezi'nde](auto-investigation-action-center.md) görüntülenebilir. Gerekirse, bir düzeltme eylemi geri alınabilir. <p> **_Tam otomasyon önerilir_* ve 16 Ağustos 2020 tarihinde veya sonrasında oluşturulan uç nokta için Defender'a sahip kiracılar için varsayılan olarak seçilidir ve henüz cihaz grubu tanımlanmamıştır.*<p>*İş için Defender'da tam otomasyon varsayılan olarak ayarlanır.*|
+|**Tam - tehditleri otomatik olarak düzeltme** <br> ( *tam otomasyon* olarak da adlandırılır)|Tam otomasyon ile, düzeltme eylemleri kötü amaçlı olarak kabul edilen varlıklarda otomatik olarak gerçekleştirilir. Gerçekleştirilen tüm düzeltme eylemleri **Geçmiş** sekmesindeki [İşlem Merkezi'nde](auto-investigation-action-center.md) görüntülenebilir. Gerekirse, bir düzeltme eylemi geri alınabilir. <p> **_Tam otomasyon önerilir_* ve 16 Ağustos 2020 tarihinde veya sonrasında oluşturulan uç nokta için Defender'a sahip kiracılar için varsayılan olarak seçilidir ve henüz cihaz grubu tanımlanmamıştır.*<p>*İş için Defender'da tam otomasyon varsayılan olarak ayarlanır.*|
 |**Yarı - herhangi bir düzeltme için onay gerektir** <br> ( *yarı otomasyon* olarak da adlandırılır)|Bu yarı otomasyon düzeyiyle, *herhangi bir* düzeltme eylemi için onay gerekir. Bu tür bekleyen eylemler [İşlem Merkezi'nde](auto-investigation-action-center.md)**, Beklemede** sekmesinde görüntülenebilir ve onaylanabilir. <p> *Bu yarı otomasyon düzeyi, 16 Ağustos 2020'den önce Uç Nokta için Microsoft Defender ile oluşturulan ve hiçbir cihaz grubu tanımlanmamış kiracılar için varsayılan olarak seçilir.*|
-|**Yarı - çekirdek klasörlerin düzeltilmesi için onay gerektir** <br> (aynı zamanda bir *tür yarı otomasyon*)|Bu yarı otomasyon düzeyiyle, çekirdek klasörlerdeki dosyalarda veya yürütülebilir dosyalarda gereken düzeltme eylemleri için onay gerekir. Çekirdek klasörler, **Windows** (`\windows\*` gibi) işletim sistemi dizinlerini içerir. <p> Düzeltme eylemleri, diğer (çekirdek olmayan) klasörlerdeki dosyalarda veya yürütülebilir dosyalarda otomatik olarak yapılabilir. <p> Çekirdek klasörlerdeki dosyalar veya yürütülebilir dosyalar için bekleyen eylemler [İşlem Merkezi'nde](auto-investigation-action-center.md) **Beklemede** sekmesinde görüntülenebilir ve onaylanabilir. <p> Diğer klasörlerdeki dosyalarda veya yürütülebilir dosyalarda gerçekleştirilen eylemler [İşlem Merkezi'nde](auto-investigation-action-center.md)**, Geçmiş** sekmesinde görüntülenebilir.|
+|**Yarı - çekirdek klasörlerin düzeltilmesi için onay gerektir** <br> (aynı zamanda bir *tür yarı otomasyon*)|Bu yarı otomasyon düzeyiyle, çekirdek klasörlerdeki dosyalarda veya yürütülebilir dosyalarda gereken düzeltme eylemleri için onay gerekir. Çekirdek klasörler **, Windows** (`\windows\*`) gibi işletim sistemi dizinlerini içerir. <p> Düzeltme eylemleri, diğer (çekirdek olmayan) klasörlerdeki dosyalarda veya yürütülebilir dosyalarda otomatik olarak yapılabilir. <p> Çekirdek klasörlerdeki dosyalar veya yürütülebilir dosyalar için bekleyen eylemler [İşlem Merkezi'nde](auto-investigation-action-center.md) **Beklemede** sekmesinde görüntülenebilir ve onaylanabilir. <p> Diğer klasörlerdeki dosyalarda veya yürütülebilir dosyalarda gerçekleştirilen eylemler [İşlem Merkezi'nde](auto-investigation-action-center.md)**, Geçmiş** sekmesinde görüntülenebilir.|
 |**Yarı - geçici olmayan klasörlerin düzeltilmesi için onay gerektir** <br> (aynı zamanda bir *tür yarı otomasyon*)|Bu yarı otomasyon düzeyiyle, geçici klasörlerde *olmayan* dosyalarda veya yürütülebilir dosyalarda gerekli olan düzeltme eylemleri için onay gerekir. <p> Geçici klasörler aşağıdaki örnekleri içerebilir: <ul><li>`\users\*\appdata\local\temp\*`</li><li>`\documents and settings\*\local settings\temp\*`</li><li>`\documents and settings\*\local settings\temporary\*`</li><li>`\windows\temp\*`</li><li>`\users\*\downloads\*`</li><li>`\program files\`</li><li>`\program files (x86)\*`</li><li>`\documents and settings\*\users\*`</li></ul> <p> Düzeltme eylemleri, geçici klasörlerdeki dosyalarda veya yürütülebilir dosyalarda otomatik olarak yapılabilir. <p> Geçici klasörlerde bulunmayan dosyalar veya yürütülebilir dosyalar için bekleyen eylemler [İşlem Merkezi'nde](auto-investigation-action-center.md)**, Beklemede** sekmesinde görüntülenebilir ve onaylanabilir. <p> Geçici klasörlerdeki dosyalar veya yürütülebilir dosyalar üzerinde gerçekleştirilen eylemler [İşlem Merkezi'nde](auto-investigation-action-center.md) **Geçmiş** sekmesinde görüntülenebilir ve onaylanabilir.|
 |**Otomatik yanıt yok** <br> ( *otomasyon yok* olarak da adlandırılır)|Otomasyon olmadan, otomatik araştırma kuruluşunuzun cihazlarında çalışmaz. Sonuç olarak, otomatik araştırma sonucunda hiçbir düzeltme eylemi gerçekleştirilmedi veya beklemede değil. Ancak, virüsten koruma ve yeni nesil koruma özelliklerinizin nasıl yapılandırıldığına bağlı olarak, [istenmeyebilecek uygulamalardan koruma](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) gibi diğer tehdit koruma özellikleri etkin olabilir. <p> *Kuruluşunuzun cihazlarının güvenlik duruşunu azalttığı için ***otomasyon* yok seçeneğinin kullanılması önerilmez**. [Otomasyon düzeyinizi tam otomasyona (veya en azından yarı otomasyona) ayarlamayı göz önünde bulundurun](/microsoft-365/security/defender-endpoint/machine-groups).|
 

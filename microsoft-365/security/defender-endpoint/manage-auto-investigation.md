@@ -9,6 +9,7 @@ ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +18,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.technology: mde
-ms.openlocfilehash: 122b216a07bdd70ab5619903ba049b4fb507179e
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 696787189ca14b4609681fb77308c38be206e269
+ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695626"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66912618"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Otomatik bir araştırmanın ardından düzeltme eylemlerini gözden geçirin
 
@@ -126,8 +127,7 @@ Otomasyon düzeyleri, belirli düzeltme eylemlerinin otomatik olarak mı yoksa y
 
 |Cihaz grubu ayarı|Otomatik araştırma sonuçları|Yapılması gerekenler|
 |---|---|---|
-|**Tam - tehditleri otomatik olarak düzeltme**<br/>(önerilir)|Bir kanıt parçası için *Kötü Amaçlı* kararına ulaşıldı. <p> Uygun düzeltme eylemleri otomatik olarak gerçekleştirilen.|[Tamamlanan eylemleri gözden geçirme](#review-completed-actions)|
-|**Tam - tehditleri otomatik olarak düzeltme**|Bir kanıt için *Şüpheli* kararına ulaşıldı. <p> Uygun düzeltme eylemleri otomatik olarak gerçekleştirilen.|[Bekleyen eylemleri onaylama (veya reddetme)](#review-pending-actions)|
+|**Tam - tehditleri otomatik olarak düzeltme**<br/>(önerilir)|Bir kanıt parçası için *Kötü Amaçlı* kararına ulaşıldı. <p> Uygun düzeltme eylemleri otomatik olarak gerçekleştirilen.|[Tamamlanan eylemleri gözden geçirme](#review-completed-actions) |
 |**Yarı - herhangi bir düzeltme için onay gerektir**|Bir kanıt parçası için *Kötü Amaçlı* veya *Şüpheli* kararına ulaşılır. <p> Düzeltme eylemleri devam etmek için onay bekliyor.|[Bekleyen eylemleri onaylama (veya reddetme)](#review-pending-actions)|
 |**Yarı - çekirdek klasörlerin düzeltilmesi için onay gerektir**|Bir kanıt parçası için *Kötü Amaçlı* kararına ulaşıldı. <p> Yapıt bir dosya veya yürütülebilir dosyaysa ve Windows klasörü veya Program dosyaları klasörü gibi bir işletim sistemi dizinindeyse, düzeltme eylemleri onay bekliyor demektir. <p> Yapıt bir işletim sistemi dizininde *değilse* , düzeltme eylemleri otomatik olarak gerçekleştirilen işlemlerdir.|<ol><li>[Bekleyen eylemleri onaylama (veya reddetme)](#review-pending-actions)</li><li>[Tamamlanan eylemleri gözden geçirme](#review-completed-actions)</li></ol>|
 |**Yarı - çekirdek klasörlerin düzeltilmesi için onay gerektir**|Bir kanıt için *Şüpheli* kararına ulaşıldı. <p> Düzeltme eylemleri onay bekliyor.|[Bekleyen eylemleri onaylayın (veya reddedin](#review-pending-actions)).|

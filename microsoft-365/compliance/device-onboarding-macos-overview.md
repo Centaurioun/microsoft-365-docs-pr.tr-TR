@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: macOS cihazlarını Uyumluluk çözümlerine ekleme hakkında bilgi edinin
-ms.openlocfilehash: 59ccb78060c7749f5690015dc4bab948a88e5222
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b697b805b8a4c65a0528054ca301f16d203e5a64
+ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630048"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66912769"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview"></a>macOS cihazlarının Microsoft 365'e katılımına genel bakış
 
@@ -67,7 +67,7 @@ Uç nokta DLP, macOS Catalina 10.15 veya üzeri sürümlerde şu tarayıcıları
 
 [Bilgi koruması için bkz. Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
-## <a name="activities-that-can-be-restricted-on-macos"></a>macOS'ta kısıtlanabilir etkinlikler 
+## <a name="activities-that-can-be-audited-and-restricted-on-macos"></a>macOS üzerinde denetlenebilen ve kısıtlanabilir etkinlikler 
 
 Bir macOS cihazı Microsoft Purview çözümlerine eklendikten sonra, veri kaybı önleme (DLP) ilkeleriyle bu eylemleri izleyebilir ve kısıtlayabilirsiniz.
 
