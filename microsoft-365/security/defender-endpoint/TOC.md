@@ -138,6 +138,7 @@
 ###### [RHEL 6 yükleme sorunlarını giderin](linux-support-rhel.md)
 ###### [Performans sorunlarını giderin](linux-support-perf.md)
 ###### [Eksik olay sorunlarını giderin](linux-support-events.md)
+###### [AuditD performance sorunlarını giderin](troubleshoot-auditd-performance-issues.md)
 
 ##### [Gizlilik](linux-privacy.md)
 ##### [Kaynaklar](linux-resources.md)
