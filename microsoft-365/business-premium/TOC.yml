@@ -104,16 +104,16 @@
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Ortamınızı koruma
   items:
-    - name: Genel Bakış
+    - name: Genel bakış
       href: m365bp-maintain-environment.md
     - name: Güvenlik işlemleri kılavuzu
       href: m365bp-security-incident-quick-start.md
-    - name: Kullanıcıları kaldırma
-      href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Kullanıcıları ekleme
       href: m365bp-add-users.md
     - name: Parolaları sıfırlama
       href: m365bp-reset-passwords.md
+    - name: Ayrılan kullanıcıları kaldırma
+      href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Verileri cihazlardan kaldırma
       href: m365bp-remove-company-data.md
     - name: Cihazları fabrika ayarlarına sıfırlama
