@@ -322,7 +322,7 @@
               href: mfi-domain-mail-flow-status-insight.md
         - name: İletileri ve dosyaları Microsoft'a bildirme
           items:
-            - name: İletileri ve dosyaları Microsoft'a bildirme
+            - name: Şüpheli bir e-postayı veya dosyayı Microsoft'a nasıl bildiririm?
               href: report-junk-email-messages-to-microsoft.md
             - name: Yönetici gönderimleri
               href: admin-submission.md
