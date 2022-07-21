@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c104b7fefae6ad02c9fb46b7d21522c21a2f6895
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: fe312e24a6d6acf174739f2ef45358ed136ec939
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014618"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942618"
 ---
 # <a name="take-response-actions-on-a-device"></a>Cihazda yanıt eylemleri gerçekleştirin
 
@@ -65,7 +65,7 @@ Yanıt eylemleri belirli bir cihaz sayfasının üst kısmında çalışır ve �
 
 > [!IMPORTANT]
 > - Bu yanıt eylemleri yalnızca Windows 10, sürüm 1703 veya üzeri, Windows 11, Windows Server 2019 ve Windows Server 2022'de bulunan cihazlarda kullanılabilir.
-> - Windows olmayan platformlar için yanıt özellikleri (Cihaz yalıtımı gibi) üçüncü taraf özelliklerine bağlıdır.
+> - Windows dışı platformlar için yanıt özellikleri (Cihaz yalıtımı gibi) üçüncü taraf özelliklerine bağlıdır.
 > - Microsoft birinci taraf aracıları için, en düşük işletim sistemi gereksinimleri için her bir özelliğin altındaki "daha fazla bilgi" bağlantısına bakın.
 
 ## <a name="manage-tags"></a>Etiketleri yönetin
@@ -125,7 +125,7 @@ Paket aşağıdaki klasörleri içerir:
 |Zamanlanmış görevler|Otomatik olarak çalışacak şekilde ayarlanmış şüpheli kodu aramak üzere seçilen bir cihazda otomatik olarak gerçekleştirilen yordamları tanımlamak için kullanılabilen zamanlanmış görevlerin listelendiği .CSV bir dosya içerir.|
 |Güvenlik olay günlüğü|Oturum açma veya oturumu kapatma etkinliğinin kayıtlarını veya sistemin denetim ilkesi tarafından belirtilen güvenlikle ilgili diğer olayları içeren güvenlik olay günlüğünü içerir. <p><div class="alert"><b>NOT:</b> Olay görüntüleyicisini kullanarak olay günlüğü dosyasını açın.</div>|
 |Hizmetleri|Hizmetleri ve durumlarını listeleyen bir .CSV dosyası içerir.|
-|Windows Sunucu İleti Bloğu (SMB) oturumları|Dosyalara, yazıcılara ve seri bağlantı noktalarına paylaşılan erişimi ve ağdaki düğümler arasındaki çeşitli iletişimleri listeler. Bu, veri sızdırmayı veya yanal hareketi tanımlamaya yardımcı olabilir. <p> SMBInboundSessions ve SMBOutboundSession dosyalarını içerir. <p> <div class="alert"><b>NOT:</b> Hiçbir oturum (gelen veya giden) yoksa, hiçbir SMB oturumu bulunamadığını belirten bir metin dosyası alırsınız.</div>|
+|Windows Server İleti Bloğu (SMB) oturumları|Dosyalara, yazıcılara ve seri bağlantı noktalarına paylaşılan erişimi ve ağdaki düğümler arasındaki çeşitli iletişimleri listeler. Bu, veri sızdırmayı veya yanal hareketi tanımlamaya yardımcı olabilir. <p> SMBInboundSessions ve SMBOutboundSession dosyalarını içerir. <p> <div class="alert"><b>NOT:</b> Hiçbir oturum (gelen veya giden) yoksa, hiçbir SMB oturumu bulunamadığını belirten bir metin dosyası alırsınız.</div>|
 |Sistem Bilgileri|İşletim sistemi sürümü ve ağ kartları gibi sistem bilgilerini listeleyen bir SystemInformation.txt dosyası içerir.|
 |Geçici Dizinler|Sistemdeki her kullanıcı için %Temp% içinde bulunan dosyaları listeleyen bir dizi metin dosyası içerir. <p> Bu, saldırganın sisteme düşürmüş olabileceği şüpheli dosyaları izlemeye yardımcı olabilir. <p> <div class="alert"><b>NOT:</b> Dosya şu iletiyi içeriyorsa: "Sistem belirtilen yolu bulamıyor", bu kullanıcı için geçici dizin olmadığı anlamına gelir ve bunun nedeni kullanıcının sistemde oturum açmamış olması olabilir.</div>|
 |Kullanıcılar ve Gruplar|Her birinin bir grubu ve üyelerini temsil eden dosyaların listesini sağlar.|
@@ -139,7 +139,7 @@ Araştırma veya yanıt sürecinin bir parçası olarak, güvenliği aşılmış
 
 > [!IMPORTANT]
 > - Bu eylem şu anda macOS ve Linux için desteklenmiyor. Eylemi çalıştırmak için canlı yanıtı kullanın. Canlı yanıt hakkında daha fazla bilgi için bkz [. Canlı yanıt kullanarak cihazlarda varlıkları araştırma](live-response.md)
-> - Microsoft Defender Virüsten Koruma (Microsoft Defender AV) taraması, Microsoft Defender AV'nin etkin virüsten koruma çözümü olup olmadığı fark etmeksizin diğer virüsten koruma çözümleriyle birlikte çalıştırılabilir. Microsoft Defender AV Pasif modda olabilir. Daha fazla bilgi için bkz. [uyumluluk Microsoft Defender Virüsten Koruma](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Microsoft Defender AV etkin virüsten koruma çözümü olsa da olmasa da microsoft defender virüsten koruma (Microsoft Defender AV) taraması diğer virüsten koruma çözümleriyle birlikte çalıştırılabilir. Microsoft Defender AV Pasif modda olabilir. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma uyumluluğu](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 **Virüsten koruma taraması çalıştır'ı** seçtikten sonra, çalıştırmak istediğiniz tarama türünü seçin (hızlı veya tam) ve taramayı onaylamadan önce bir açıklama ekleyin.
 
@@ -157,7 +157,7 @@ Araştırma veya yanıt sürecinin bir parçası olarak, güvenliği aşılmış
 Kötü amaçlı işlemleri durdurarak bir saldırı içermenin yanı sıra, bir cihazı kilitleyebilir ve kötü amaçlı olabilecek programların sonraki denemelerinin çalışmasını engelleyebilirsiniz.
 
 > [!IMPORTANT]
-> - Bu eylem Windows 10, sürüm 1709 veya üzeri, Windows 11 ve Windows Server 2019 veya sonraki sürümlerde bulunan cihazlarda kullanılabilir. 
+> - Bu eylem Windows 10, sürüm 1709 veya üzeri, Windows 11 ve Windows Server 2019 veya sonraki sürümlerde bulunan cihazlar için kullanılabilir. 
 > - Kuruluşunuz Microsoft Defender Virüsten Koruma kullanıyorsa bu özellik kullanılabilir.
 > - Bu eylemin Windows Defender Uygulama Denetimi kod bütünlüğü ilkesi biçimlerini ve imzalama gereksinimlerini karşılaması gerekir. Daha fazla bilgi için bkz [. Kod bütünlüğü ilkesi biçimleri ve imzalama](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
@@ -184,10 +184,10 @@ Bir uygulama kısıtlandığında, kullanıcıya bir uygulamanın çalışmasın
 Saldırının önem derecesine ve cihazın duyarlılığına bağlı olarak, cihazı ağdan yalıtmak isteyebilirsiniz. Bu eylem, saldırganın güvenliği aşılmış cihazı denetlemesini ve veri sızdırma ve yanal hareket gibi başka etkinlikler gerçekleştirmesini önlemeye yardımcı olabilir.
 
 > [!IMPORTANT]
-> - Cihazları ağdan yalıtma şu anda macOS veya Linux çalıştıran cihazlar için desteklenmiyor. Eylemi çalıştırmak için canlı yanıtı kullanın. Canlı yanıt hakkında daha fazla bilgi için bkz [. Canlı yanıt kullanarak cihazlarda varlıkları araştırma](live-response.md).
-> - Windows 11, Windows 10, sürüm 1703 veya üzeri, Windows Server 2022, Windows Server 2019 ve Windows Server 2016 çalıştıran cihazlarda tam yalıtım kullanılabilir.
+> - Cihazları ağdan yalıtmak şu anda macOS veya Linux çalıştıran cihazlar için desteklenmiyor. Eylemi çalıştırmak için canlı yanıtı kullanın. Canlı yanıt hakkında daha fazla bilgi için bkz [. Canlı yanıt kullanarak cihazlarda varlıkları araştırma](live-response.md).
+> - Windows 11, Windows 10, sürüm 1703 veya üzeri, Windows Server 2022, Windows Server 2019 ve Windows Server 2016 çalıştıran cihazlar için tam yalıtım kullanılabilir.
 > - Seçmeli yalıtım, Windows 10, sürüm 1709 veya üzeri ve Windows 11 çalıştıran cihazlar için kullanılabilir.
-> - Bir cihazı yalıtırken yalnızca belirli işlemlere ve hedeflere izin verilir. Bu nedenle, tam VPN tünelinin arkasındaki cihazlar, cihaz yalıtıldıktan sonra Uç Nokta için Microsoft Defender bulut hizmetine erişemez. bulut tabanlı korumayla ilgili trafiği Uç Nokta için Microsoft Defender ve Microsoft Defender Virüsten Koruma için bölünmüş tünel VPN kullanmanızı öneririz.
+> - Bir cihazı yalıtırken yalnızca belirli işlemlere ve hedeflere izin verilir. Bu nedenle, tam VPN tünelinin arkasındaki cihazlar, cihaz yalıtıldıktan sonra Uç Nokta için Microsoft Defender bulut hizmetine erişemez. Uç Nokta için Microsoft Defender ve Microsoft Defender Virüsten Koruma bulut tabanlı korumayla ilgili trafik için bölünmüş tünel VPN kullanmanızı öneririz.
 
 Bu cihaz yalıtımı özelliği, cihazı izlemeye devam eden Uç Nokta için Defender hizmetine bağlantıyı korurken güvenliği aşılmış cihazın ağ bağlantısını keser.
 
@@ -201,7 +201,7 @@ Windows 10, sürüm 1709 veya sonraki sürümlerde ağ yalıtım düzeyi üzerin
 :::image type="content" source="images/isolate-device.png" alt-text="Yalıtılmış cihaz ayrıntıları sayfası" lightbox="images/isolate-device.png":::
 
 > [!NOTE]
-> Cihaz ağdan yalıtılmış olsa bile Uç Nokta için Defender hizmetine bağlı kalır. Outlook ve Skype Kurumsal iletişimi etkinleştirmeyi seçtiyseniz cihaz yalıtılmış durumdayken kullanıcıyla iletişim kurabilirsiniz.
+> Cihaz ağdan yalıtılmış olsa bile Uç Nokta için Defender hizmetine bağlı kalır. Outlook'u etkinleştirmeyi ve iletişimi Skype Kurumsal seçtiyseniz, cihaz yalıtılmış durumdayken kullanıcıyla iletişim kurabilirsiniz.
 
 ### <a name="notification-on-device-user"></a>Cihaz kullanıcıda bildirim
 
@@ -210,14 +210,17 @@ Bir cihaz yalıtılırken, kullanıcıya cihazın ağdan yalıtıldığını bil
 :::image type="content" source="images/atp-notification-isolate.png" alt-text="Ağ bağlantısı yok iletisi" lightbox="images/atp-notification-isolate.png":::
 
 ## <a name="contain-devices-from-the-network"></a>Ağdaki cihazları içerin
+ 
+> [!NOTE]
+> İçeren özellikler şu anda genel önizleme aşamasındadır. Microsoft 365 Defender önizleme sürümündeki yeni özellikler hakkında bilgi edinmek ve önizleme deneyimini açarak yaklaşan özellikleri ilk deneyenler arasında yer almak için bkz. [Micrsoft 365 Defender'daki önizleme özellikleri](../defender/preview.md).
 
 Gizliliği tehlikeye girmiş veya risk altında olabilecek yönetilmeyen bir cihaz tanımladığınızda, bu cihazı ağdan içermek isteyebilirsiniz. Bir cihaz içerdiğinizde eklenen Uç Nokta için Microsoft Defender cihaz, bu cihazla gelen ve giden iletişimi engeller. Bu eylem, güvenlik operasyonları analisti güvenliği aşılmış cihazdaki tehdidi bulur, tanımlar ve düzeltirken komşu cihazların gizliliğinin tehlikeye girmesini önlemeye yardımcı olabilir.
 
 > [!NOTE]
-> Eklenen Uç Nokta için Microsoft Defender Windows 10 ve Windows Server 2019+ cihazlarda 'kapsanan' bir cihazla gelen ve giden iletişimi engelleme desteklenir.
+> Eklenen Uç Nokta için Microsoft Defender Windows 10 ve Windows Server 2019+ cihazlarda 'kapsanan' bir cihazla gelen ve giden iletişimin engellenmesi desteklenir.
 
 ### <a name="how-to-contain-a-device"></a>Cihaz içerme
-
+ 
 1. **Cihaz envanteri** sayfasına gidin ve içerecek cihazı seçin.
 
 2. Cihaz açılır öğesindeki eylemler menüsünden Cihazı **içer'i** seçin.

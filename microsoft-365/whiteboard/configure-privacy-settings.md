@@ -1,7 +1,7 @@
 ---
 title: Microsoft Whiteboard'da gizlilik ayarlarını yapılandırma
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard'da uyumluluk ve gizlilik ayarlarını yapılandırma hakkında bilgi edinin.
-ms.openlocfilehash: 38c7d3fc80b825a8b701f84d729e9bb9a7cc1b63
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 7f5026115b1d15b05dcf5dbb57293b22bf573c61
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917243"
+ms.locfileid: "66942482"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>Microsoft Whiteboard'da gizlilik ayarlarını yapılandırma
 

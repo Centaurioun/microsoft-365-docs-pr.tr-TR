@@ -1,7 +1,7 @@
 ---
 title: Microsoft Whiteboard için verileri yönetme
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Azure ve OneDrive İş'de Microsoft Whiteboard için veri saklama hakkında bilgi edinin.
-ms.openlocfilehash: 103a48b01aa7ad87d0e3f84e6093344ea9cce0f0
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 88ebe6de6983823e6f782f006ac2aa58cfe9af93
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917639"
+ms.locfileid: "66943056"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Microsoft Whiteboard için verileri yönetme
 

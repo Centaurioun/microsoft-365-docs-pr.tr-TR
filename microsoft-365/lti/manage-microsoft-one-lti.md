@@ -12,16 +12,16 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Görüntüleme, silme, düzenleme ve sorun giderme gibi önemli Microsoft LMS Ağ Geçidi yönetim görevlerini yürütmeyi öğrenin.
-ms.openlocfilehash: 769670a710e24d89dd3e201ac433ac8ccbcffd1a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 77f89927a7beb7cd045c2325bd805efdf45996a0
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "66861602"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944119"
 ---
 # <a name="manage-microsoft-lms-gateway-for-any-lms"></a>Tüm LMS'ler için Microsoft LMS Ağ Geçidi'ni yönetme
 
-Microsoft LMS Gateway, Canvas, Blackboard ve Moodle gibi çeşitli LMS'lerle tümleşir.
+Microsoft LMS Gateway, Canvas, Blackboard, Moodle ve Brightspace gibi çeşitli LMS'lerle tümleşir.
 
 Bu makalede, BT yöneticileri önemli Microsoft LMS Ağ Geçidi yönetim görevleriyle ilgili yönergeleri bulur.
 

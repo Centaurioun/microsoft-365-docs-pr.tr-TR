@@ -9,21 +9,21 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 05/12/2022
+ms.date: 07/21/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Erişim günlükleri, şifrelenmiş ileti portalı aracılığıyla alınan şifrelenmiş iletiler için kullanılabilir.
-ms.openlocfilehash: 50656d1695d8fc3d6e81de6afc03b3f4e3c5ccee
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 0877463ce317f4d38a3251f75b349fb8abb5a027
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "66861598"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942640"
 ---
-# <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption-preview"></a>Microsoft Purview Gelişmiş İleti Şifrelemesi (Önizleme) tarafından şifrelenmiş ileti portalı etkinlik günlüğü
+# <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption"></a>Microsoft Purview Gelişmiş İleti Şifrelemesi tarafından şifrelenmiş ileti portalı etkinlik günlüğü
 
 Erişim günlükleri, kuruluşunuzun iletilerin ne zaman okunduğunu ve dış alıcılarınız tarafından iletileceğini belirlemesini sağlayan şifrelenmiş ileti portalı aracılığıyla şifrelenmiş iletiler için kullanılabilir. Günlüklerin tüm dış alıcılar için kullanılabilir olduğundan emin olmak için, kuruluşunuz tarafından portal deneyimini zorlayan dış alıcılara gönderilen korumalı e-postalara özel bir markalama şablonu uygulamanız gerekir. Bkz. [Şifrelenmiş iletilerinize kuruluşunuzun markasını ekleme](add-your-organization-brand-to-encrypted-messages.md).
 

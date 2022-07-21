@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Exchange'de bekletmenin nasıl çalıştığını öğrenin.
-ms.openlocfilehash: 1b4c255e2a228801ece0c98d0ac8686b3582ab30
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Microsoft 365 saklamanın Exchange'de nasıl çalıştığını, kuruluşunuz için verilerin otomatik olarak elde tutulmasını veya silinmesini yönetmek için bekletme ilkelerini ve bekletme etiketlerini kullanmayı öğrenin.
+ms.openlocfilehash: 6337c1e23bf2d78ca1bd2c11ebbe8340e2045b5b
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626017"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942154"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Exchange için bekletme hakkında bilgi edinin
 

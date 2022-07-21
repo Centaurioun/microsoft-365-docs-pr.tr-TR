@@ -1,7 +1,7 @@
 ---
 title: Kuruluşunuz için Microsoft Whiteboard erişimini yönetme
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft 365 yönetim merkezi kuruluşunuz için Microsoft Whiteboard'u ayarlamayı öğrenin.
-ms.openlocfilehash: 3c75bbfe6b2babf130f8980fe627ec05a8b431e3
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: cbffaaf0573ce5763c200b96630af3fbb2f73218
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917661"
+ms.locfileid: "66942946"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-your-organization"></a>Kuruluşunuz için Microsoft Whiteboard erişimini yönetme
 

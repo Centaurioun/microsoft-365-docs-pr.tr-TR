@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: e2c90fce172a1b7f9d3cbf9a16b105e56402ec49
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: f49132b67f51872cf9b5f07e6cca4c659d955b80
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882639"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943496"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac'te Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -35,6 +35,26 @@ ms.locfileid: "66882639"
 Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkında daha fazla bilgi için: 
 - [Linux'ta Uç Nokta için Microsoft Defender'deki yenilikler](linux-whatsnew.md) 
 - [iOS'ta Uç Nokta için Microsoft Defender'deki yenilikler](ios-whatsnew.md)</br>
+
+<details>
+  <summary>Temmuz 2022 (Derleme: 101.73.77 | Sürüm: 20.122062.17377.0)</summary>
+
+&ensp;Yayın tarihi: **21 Temmuz 2022**<br/>
+&ensp;Yayımlanma Tarihi: **21 Temmuz 2022**<br/>
+&ensp;Derleme: **101.73.77**<br/>
+&ensp;Sürüm: **20.122062.17377.0**<br/>
+&ensp;Altyapı sürümü: **1.1.19200.3**<br/>
+&ensp;İmza sürümü: **1.367.1011.0**<br/>
+
+**Yenilikler**
+
+- [Dosya karması hesaplamasını yapılandırma](mac-preferences.md#configure-file-hash-computation-feature) seçeneği eklendi
+- Bu derlemeden itibaren, ürün varsayılan olarak yeni kötü amaçlı yazılımdan koruma altyapısına sahip olacaktır
+- Dosya kopyalama işlemleri için performans geliştirmeleri
+- Hata düzeltmeleri
+
+<br/>
+</details>
 
 <details>
   <summary>Temmuz 2022 (Derleme: 101.71.18 | Sürüm: 20.122052.17118.0)</summary>

@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Bir kuruluşu kimlik avına ve kötü amaçlı URL kullanan diğer saldırılara karşı korumak için Office 365 için Defender'de Güvenli Bağlantılar koruması hakkında bilgi edinin. Teams Güvenli Bağlantılar'ı keşfedin ve Güvenli Bağlantılar iletilerinin grafiklerini görün.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64fd5ec3086647c3cfa8a5719becc2e92af9867f
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 27c9f6c36959394eadea727e81fe0dde35e66993
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772160"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943943"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Bağlantılar
 
@@ -122,9 +122,16 @@ Bir koşulu veya özel durumu yalnızca bir kez kullanabilirsiniz, ancak koşul 
 
 ## <a name="safe-links-settings-for-email-messages"></a>E-posta iletileri için Güvenli Bağlantılar ayarları
 
-Güvenli Bağlantılar, bilinen kötü amaçlı köprüler için gelen e-postayı tarar. Taranan URL'ler, Microsoft standart URL ön eki kullanılarak yeniden yazılır: `https://nam01.safelinks.protection.outlook.com`. Bağlantı yeniden yazıldıktan sonra, kötü amaçlı olabilecek içerik için analiz edilir.
+Güvenli Bağlantılar, bilinen kötü amaçlı köprüler için gelen e-postayı tarar. Taranan URL'ler, Microsoft standart URL ön eki kullanılarak yeniden yazılır veya _sarmalanmıştır_ : `https://nam01.safelinks.protection.outlook.com`. Bağlantı yeniden yazıldıktan sonra, kötü amaçlı olabilecek içerik için analiz edilir.
 
-Güvenli Bağlantılar bir URL'yi yeniden yazdıktan sonra, ileti _el ile_ iletilmiş veya yanıtlanmış olsa bile URL yeniden yazılır (hem iç hem de dış alıcılara). İletilen veya yanıtlanan iletiye eklenen ek bağlantılar yeniden yazılmaz. Ancak, Gelen Kutusu kuralları veya SMTP iletme tarafından _otomatik_ iletme durumunda, alıcı Güvenli Bağlantılar tarafından _korunmadığı veya_ URL önceki bir iletişimde zaten yeniden yazılmamışsa, URL son alıcı için hedeflenen iletide yeniden yazılmaz. Güvenli Bağlantılar açık olduğu sürece URL'ler, yeniden yazılıp yazılmadıklarına bakılmaksızın teslim öncesinde taranmaya devam eder. Sarmalanmamış URL'ler, Masaüstü için Outlook sürüm 16.0.12513 veya sonraki bir sürüme tıklanması sırasında güvenli bağlantılar için istemci tarafı API çağrısı tarafından da denetlenir.
+Güvenli Bağlantılar bir URL'yi yeniden yazdıktan sonra, ileti _el ile_ iletilmiş veya yanıtlanmış olsa bile URL yeniden yazılır (hem iç hem de dış alıcılara). İletilen veya yanıtlanan iletiye eklenen ek bağlantılar yeniden yazılmaz.
+
+Gelen Kutusu kuralları veya SMTP iletme tarafından _otomatik_ iletme söz konusu olduğunda, aşağıdaki deyimlerden biri doğru _olmadığı sürece_ URL son alıcıya yönelik iletide yeniden yazılmaz:
+
+- Alıcı, Güvenli Bağlantılar tarafından da korunur.
+- URL önceki bir iletişimde zaten yeniden yazılmıştı.
+
+Güvenli Bağlantılar koruması açık olduğu sürece, URL'lerin yeniden yazılıp yazılmadığına bakılmaksızın, ileti teslimi öncesinde URL'ler taranır. Outlook'un desteklenen sürümlerinde (Masaüstü için Outlook sürüm 16.0.12513 veya üzeri), eşleşmeyen URL'ler tıklandığında güvenli bağlantılar için istemci tarafı API çağrısı tarafından denetlenir.
 
 E-posta iletilerine uygulanan Güvenli Bağlantılar ilkelerindeki ayarlar aşağıdaki listede açıklanmıştır:
 
@@ -144,7 +151,7 @@ E-posta iletilerine uygulanan Güvenli Bağlantılar ilkelerindeki ayarlar aşa�
       - Seçili (açık): URL içeren iletiler tarama tamamlanana kadar tutulur. İletiler yalnızca URL'lerin güvenli olduğu onaylandıktan sonra teslim edilir. Bu, önerilen değerdir.
       - Seçili değil (kapalı): URL taraması tamamlanamadıysa iletiyi yine de teslim edin.
 
-  - **URL'leri yeniden yazmayın, yalnızca SafeLinks API'si aracılığıyla denetimler yapın**: Bu ayar seçiliyse (açık), URL sarmalama gerçekleşmez. Güvenli Bağlantılar, yalnızca URL'yi destekleyen Outlook istemcileri tarafından URL tıklatılırken API'ler aracılığıyla çağrılır. Önerilen değer seçilidir (açık).
+  - **URL'leri yeniden yazmayın, yalnızca SafeLinks API'si aracılığıyla denetimler yapın**: Bu ayar seçiliyse (açık), URL sarmalama gerçekleşmez. Outlook'un desteklenen sürümlerinde (Masaüstü için Outlook sürüm 16.0.12513 veya üzeri), Güvenli Bağlantılar yalnızca URL tıklaması sırasında API'ler aracılığıyla çağrılır.
 
   Güvenli Bağlantılar ilkeleri için Standart ve Katı ilke ayarları için önerilen değerler hakkında daha fazla bilgi için bkz. [Güvenli Bağlantılar ilke ayarları](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
@@ -306,7 +313,7 @@ Girebileceğiniz değerlerin ve sonuçlarının örnekleri aşağıdaki tabloda 
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>Güvenli Bağlantılar ilkelerindeki "Aşağıdaki URL'leri yeniden yazmayın" listeleri
 
 > [!NOTE]
-> "Aşağıdaki URL'leri yeniden yazmayın" listesinin amacı, belirtilen URL'lerin Güvenli Bağlantılar sarmalama işlemini atlamaktır. Bu listeyi kullanmak yerine artık [Kiracı İzin Ver/Engelle Listesinde izin ver URL girişleri oluşturabilirsiniz](allow-block-urls.md#create-allow-url-entries).
+> "Aşağıdaki URL'leri yeniden yazmayın" listesindeki girdiler, posta akışı sırasında Güvenli Bağlantılar tarafından taranmıyor veya sarmalanmıyor. Posta akışı sırasında _ve_ tıklandığında URL'lerin Güvenli Bağlantılar tarafından taranmaması veya sarmalanmaması için [Kiracı İzin Ver/Engelle Listesi'ndeki İzin Ver URL girişlerini](allow-block-urls.md#create-allow-url-entries) kullanın.
 
 Her Güvenli Bağlantılar ilkesi, Güvenli Bağlantılar taraması tarafından **yeniden yazılmayan URL'leri belirtmek için kullanabileceğiniz aşağıdaki URL'leri yeniden yazma** listesini içerir. Başka bir deyişle, liste ilkeye dahil edilen kullanıcıların, aksi takdirde Güvenli Bağlantılar tarafından engellenecek belirtilen URL'lere erişmesine izin verir. Farklı Güvenli Bağlantılar ilkelerinde farklı listeler yapılandırabilirsiniz. İlke işleme, kullanıcıya ilk (büyük olasılıkla en yüksek öncelikli) ilke uygulandıktan sonra durur. Bu nedenle, birden çok etkin Güvenli Bağlantı ilkesine dahil edilen bir kullanıcıya **yalnızca bir Tane Aşağıdaki URL'leri yeniden yazma** listesi uygulanır.
 

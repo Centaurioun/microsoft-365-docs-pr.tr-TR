@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) ve Office 365 için Defender güvenlik ayarları için en iyi yöntemler nelerdir? Standart koruma için geçerli öneriler neleri içerir? Daha katı olmak istiyorsanız ne kullanılmalıdır? Ayrıca Office 365 için Defender kullanıyorsanız ne kadar ekstra alırsınız?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bc9fd823bac4bd3dca3ba9234c3d7fb6c15a6fc4
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 4653ac9212ef20d7baecdbfa11885e25b514a067
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787154"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943877"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP ve Office 365 için Microsoft Defender güvenliği için önerilen ayarlar
 
@@ -304,7 +304,7 @@ PowerShell'de, bu ayarlar için [New-SafeLinksPolicy](/powershell/module/exchang
 |**Şüpheli bağlantılar ve dosyalara işaret eden bağlantılar için gerçek zamanlı URL taraması uygulama** <br><br> _ScanUrls_|Seçili değil <br><br> `$false`|Seçili <br><br> `$true`|Seçili <br><br> `$true`|Seçili <br><br> `$true`||
 |**İletiyi teslim etmeden önce URL taramasının tamamlanmasını bekleyin** <br><br> _DeliverMessageAfterScan_|Seçili değil <br><br> `$false`|Seçili <br><br> `$true`|Seçili <br><br> `$true`|Seçili <br><br> `$true`||
 |**URL'leri yeniden yazmayın, denetimleri yalnızca Güvenli Bağlantılar API'si aracılığıyla yapın** <br><br> _DisableURLRewrite_|Seçili değil <br><br> `$false`|Seçili <br><br> `$true`|Seçili değil <br><br> `$false`|Seçili değil <br><br> `$false`||
-|**E-postada aşağıdaki URL'leri yeniden yazmayın** <br><br> _DoNotRewriteUrls_|Boş <br><br> `$null`|Boş <br><br> `$null`|Boş <br><br> `$null`|Boş <br><br> `$null`|Bu ayar için belirli bir önerimiz yok. <br><br> **Not**: "Aşağıdaki URL'leri yeniden yazmayın" listesinin amacı, belirtilen URL'lerin Güvenli Bağlantılar sarmalama işlemini atlamaktır. Bu listeyi kullanmak yerine artık [Kiracı İzin Ver/Engelle Listesinde izin ver URL girişleri oluşturabilirsiniz](allow-block-urls.md#create-allow-url-entries).|
+|**E-postada aşağıdaki URL'leri yeniden yazmayın** <br><br> _DoNotRewriteUrls_|Boş <br><br> `$null`|Boş <br><br> `$null`|Boş <br><br> `$null`|Boş <br><br> `$null`|Bu ayar için belirli bir önerimiz yok. <br><br> **Not**: "Aşağıdaki URL'leri yeniden yazmayın" listesindeki girişler, posta akışı sırasında Güvenli Bağlantılar tarafından taranmıyor veya sarmalanmıyor. Posta akışı sırasında _ve_ tıklandığında URL'lerin Güvenli Bağlantılar tarafından taranmaması veya sarmalanmaması için [Kiracı İzin Ver/Engelle Listesi'ndeki İzin Ver URL girişlerini](allow-block-urls.md#create-allow-url-entries) kullanın.|
 |**Microsoft Teams'de kötü amaçlı olabilecek URL'ler için eylem**||||||
 |**Açık: Güvenli Bağlantılar, kullanıcılar Microsoft Teams'de bağlantılara tıkladığında bilinen, kötü amaçlı bağlantıların listesini denetler** <br><br> _EnableSafeLinksForTeams_|Seçili değil <br><br> `$false`|Seçili <br><br> `$true`|Seçili <br><br> `$true`|Seçili <br><br> `$true`||
 |**Microsoft Office uygulamalarında kötü amaçlı olabilecek URL'ler için eylem**||||||

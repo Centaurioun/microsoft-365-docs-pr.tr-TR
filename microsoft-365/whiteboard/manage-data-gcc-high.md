@@ -1,7 +1,7 @@
 ---
 title: GCC High ortamlarında Microsoft Whiteboard için verileri yönetme
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Whiteboard erişimini etkinleştirmeyi, devre dışı bırakmayı ve yönetmeyi öğrenin.
-ms.openlocfilehash: 72da71d7d2c57fca9b4f006326e2d4bf506fe8bf
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: aee248c37ce9c65dcf79cfe600e456a17cddbd57
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917309"
+ms.locfileid: "66943430"
 ---
 # <a name="manage-data-for-microsoft-whiteboard-in-gcc-high-environments"></a>GCC High ortamlarında Microsoft Whiteboard için verileri yönetme
 

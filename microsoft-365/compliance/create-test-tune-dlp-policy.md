@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Bu makalede, kuruluş gereksinimlerinize göre bir DLP ilkesi oluşturmayı, test etmeyi ve ayarlamayı öğreneceksiniz.
-ms.openlocfilehash: dff47d07a582be807d877471fb7621960b776f24
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 231c055fb9a67b921e3e6796f82e5c1a8161593d
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624741"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943320"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Bir DLP ilkesi oluşturma, test etme ve ayarlama
 
@@ -204,7 +204,7 @@ DLP ilke şablonları hemen kullanıma hazır değildir. Büyük olasılıkla or
 
 Burada hatalı pozitif bir örnek verilmiştir. Bu e-posta zararsızdır. Kullanıcı, cep telefonu numarasını bir kişiye sağlıyor ve e-posta imzasını dahil ediyor.
 
-![Hatalı pozitif bilgileri gösteren e-posta.](../media/DLP-create-test-tune-false-positive-email.png)
+![Email hatalı pozitif bilgiler gösteriyor.](../media/DLP-create-test-tune-false-positive-email.png)
  
 Ancak kullanıcı, e-postanın hassas bilgiler (özellikle avustralyalı bir sürücü lisans numarası) içerdiği konusunda uyarı veren bir ilke ipucu görür.
 
@@ -225,7 +225,7 @@ Başka bir seçenek de örnek sayısını artırmaktır; böylece düşük hacim
 
 Örnek sayısını değiştirmeye ek olarak, eşleşme doğruluğunu (veya güvenilirlik düzeyini) de ayarlayabilirsiniz. Hassas bilgi türünüzün birden çok deseni varsa kuralınızdaki eşleşme doğruluğunu ayarlayarak kuralınızın yalnızca belirli desenlerle eşleşmesini sağlayabilirsiniz. Örneğin, hatalı pozitif sonuçları azaltmaya yardımcı olmak için kuralınızın eşleşme doğruluğunu yalnızca en yüksek güvenilirlik düzeyine sahip desenle eşleşecek şekilde ayarlayabilirsiniz. Güvenilirlik düzeyleri hakkında daha fazla bilgi için bkz. [Kurallarınızı ayarlamak için güvenilirlik düzeyini kullanma](data-loss-prevention-policies.md#match-accuracy).
 
-Son olarak, biraz daha gelişmiş hale getirmek istiyorsanız, herhangi bir hassas bilgi türünü özelleştirebilirsiniz; örneğin, yukarıda tetiklenen hatalı pozitif sonucu ortadan kaldırmak için [Avustralya sürücü numarasının](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) anahtar sözcükleri listesinden "Sidney NSW" öğesini kaldırabilirsiniz. XML ve PowerShell kullanarak bunun nasıl yapılacağını öğrenmek için bkz. [Yerleşik hassas bilgi türünü özelleştirme](customize-a-built-in-sensitive-information-type.md).
+Son olarak, biraz daha gelişmiş hale getirmek istiyorsanız, herhangi bir hassas bilgi türünü özelleştirebilirsiniz; örneğin, yukarıda tetiklenen hatalı pozitif sonucu ortadan kaldırmak için [Avustralya sürücüleri lisans numarası](sit-defn-australia-drivers-license-number.md) anahtar sözcükleri listesinden "Sidney NSW" öğesini kaldırabilirsiniz. XML ve PowerShell kullanarak bunun nasıl yapılacağını öğrenmek için bkz. [Yerleşik hassas bilgi türünü özelleştirme](customize-a-built-in-sensitive-information-type.md).
 
 ## <a name="turn-on-a-dlp-policy"></a>DLP ilkesini açma
 

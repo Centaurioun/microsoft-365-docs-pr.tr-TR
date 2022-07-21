@@ -17,13 +17,13 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 için yasal, iş veya mevzuat yükümlülükleri için yüksek değerli içeriği yöneten ancak nereden başlayacağınız emin olmayan bir kayıt yönetimi çözümüne mi ihtiyacınız var? Başlamak için bazı pratik kılavuzları okuyun.
-ms.openlocfilehash: 1c64559500d2edc0d440f0632a39de616d89c434
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Yasal, iş veya mevzuat yükümlülükleriniz için Microsoft 365'te yüksek değerli içeriği yöneten yöneticiler, lisans gereksinimleri ve yaygın senaryolar için açıklayıcı adımlar.
+ms.openlocfilehash: f5387ce7ee2094113a12a7074449a05311a79083
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629695"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944207"
 ---
 # <a name="get-started-with-records-management"></a>Kayıt yönetimini kullanmaya başlama
 

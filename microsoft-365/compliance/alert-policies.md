@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Olası tehditleri, veri kaybını ve izin sorunlarını izlemek için Microsoft Purview uyumluluk portalı veya Microsoft 365 Defender portalında uyarı ilkeleri oluşturun.
-ms.openlocfilehash: bf896a5c6b801631a96779ad2b1c099c6b89c6a8
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 39ccf62716cae357709ddcd1d44928b40dbe237e
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798005"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942089"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365'te uyarı ilkeleri
 
@@ -155,7 +155,6 @@ Tabloda ayrıca her biri için gereken Office 365 Kurumsal ve Office 365 ABD Kam
 |**Kötü amaçlı yazılım kampanyası algılandı ve engellendi**|Birisi kuruluşunuzdaki kullanıcılara belirli bir tür kötü amaçlı yazılım içeren olağan dışı derecede çok sayıda e-posta iletisi göndermeye çalıştığında bir uyarı oluşturur. Bu olay oluşursa, virüslü iletiler Microsoft tarafından engellenir ve posta kutularına teslim edilmez. Bu ilke **düşük önem** derecesine sahiptir.|Tehdit yönetimi|Hayır|E5/G5 veya Office 365 için Defender P2 eklenti aboneliği|
 |**SharePoint ve OneDrive'da kötü amaçlı yazılım kampanyası algılandı**|SharePoint sitelerinde veya kuruluşunuzdaki OneDrive hesaplarında bulunan dosyalarda olağan dışı derecede yüksek miktarda kötü amaçlı yazılım veya virüs algılandığında bir uyarı oluşturur. Bu ilkenin **Yüksek** önem derecesi ayarı vardır.|Tehdit yönetimi|Hayır|E5/G5 veya Office 365 için Defender P2 eklenti aboneliği|
 |**ZAP devre dışı bırakıldığından kötü amaçlı yazılım engellenmedi**| Kimlik Avı iletileri için Otomatik Temizleme devre dışı bırakıldığından, Microsoft bir kötü amaçlı yazılım iletisini Zero-Hour n posta kutusuna teslimini algıladığında bir uyarı oluşturur. Bu ilkenin **Bilgilendirici** önem derecesi ayarı vardır. |Tehdit yönetimi|Hayır|E5/G5 veya Office 365 için Defender P2 eklenti aboneliği|
-|**Kullanıcının Gereksiz Posta klasörü devre dışı bırakıldığından kimlik avı teslim edildi**|Microsoft bir kullanıcının Gereksiz Posta klasörünün devre dışı bırakıldığında bir uyarı oluşturur ve bu sayede posta kutusuna yüksek güvenilirlikli kimlik avı iletisinin teslim edilmesine olanak tanır. Bu ilkenin **Bilgilendirici** önem derecesi ayarı vardır.|Tehdit yönetimi|Hayır|E1/F1/G1, E3/F3/G3 veya E5/G5|
 |**ETR geçersiz kılma nedeniyle kimlik avı teslim edildi**|Microsoft, yüksek güvenilirlikli kimlik avı iletisinin posta kutusuna teslim edilmesine izin veren bir Exchange Aktarım Kuralı (ETR) algıladığında bir uyarı oluşturur. Bu ilkenin **Bilgilendirici** önem derecesi ayarı vardır. Exchange Aktarım Kuralları (Posta akışı kuralları) hakkında daha fazla bilgi için bkz. [Exchange Online'de Posta akışı kuralları (aktarım kuralları).](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|Tehdit yönetimi|Hayır|E1/F1/G1, E3/F3/G3 veya E5/G5|
 |**IP izin verme ilkesi nedeniyle kimlik avı teslim edildi**|Microsoft, yüksek güvenilirlikli kimlik avı iletisinin bir posta kutusuna teslim edilmesine izin veren bir IP izin ilkesi algıladığında bir uyarı oluşturur. Bu ilkenin **Bilgilendirici** önem derecesi ayarı vardır. IP izin verme ilkesi (bağlantı filtreleme) hakkında daha fazla bilgi için bkz[. Varsayılan bağlantı filtresi ilkesini yapılandırma - Office 365](../security/office-365-security/configure-the-connection-filter-policy.md).|Tehdit yönetimi|Hayır|E1/F1/G1, E3/F3/G3 veya E5/G5|
 |**ZAP devre dışı bırakıldığından kimlik avı engellenmedi**| Zero-Hour Kimlik Avı iletileri için Otomatik Temizleme devre dışı bırakıldığından, Microsoft yüksek güvenilirlikli bir kimlik avı iletisinin posta kutusuna teslimini algıladığında bir uyarı oluşturur. Bu ilkenin **Bilgilendirici** önem derecesi ayarı vardır.|Tehdit yönetimi|Hayır|E5/G5 veya Office 365 için Defender P2 eklenti aboneliği|

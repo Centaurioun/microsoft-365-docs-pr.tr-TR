@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Microsoft 365 yönetim merkezi Microsoft 365 Raporları panosunu kullanarak Microsoft tarayıcı kullanım raporu almayı öğrenin.
-ms.openlocfilehash: bd247e839c69726039fb80531444eb7b4b650346
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 3eff031f4f621764a6713c34d3dbe8fc8009aced
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662177"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942067"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Yönetim merkezinde Microsoft 365 Raporları - Microsoft tarayıcı kullanımı
 
@@ -51,7 +51,7 @@ Tablo, kullanıcı başına verilerin dökümünü gösterir. Tablodaki sütunla
 |Öğe|Açıklama|
 |:-----|:-----|
 |**Kullanıcı Adı** | Microsoft Edge kullanarak Microsoft 365 hizmetlerine bağlanan kullanıcının e-posta adresi.|
-| **Kullanılan Microsoft Edge**| Microsoft 365 hizmetleri kullanıcısı Microsoft Edge ile bağlıysa DDisplays bir onay işareti.|
+| **Kullanılan Microsoft Edge**| Microsoft 365 hizmetleri kullanıcısı Microsoft Edge ile bağlıysa bir onay işareti görüntüler.|
 
 **Rapora sütun** eklemek veya rapordan sütun kaldırmak için Sütunları seç simgesini seçin.
 

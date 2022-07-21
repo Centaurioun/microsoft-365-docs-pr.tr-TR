@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 23d216e4fb831ef6425bff93bf3fc0063a263852
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: d810ac3a8a314307d2526397bf34200ef0eeeeda
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089726"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943584"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın
 
@@ -93,6 +93,17 @@ Cihazda davranış izleme ve engelleme özelliğinin etkinleştirilip etkinleşt
 |**Veri türü**|Dize|
 |**Olası değerler**|devre dışı (varsayılan) <p> Etkin|
 |**Açıklamalar**|Uç Nokta için Defender sürüm 101.45.00 veya üzeri sürümlerde kullanılabilir.|
+
+#### <a name="configure-file-hash-computation-feature"></a>Dosya karması hesaplama özelliğini yapılandırma
+
+Dosya karması hesaplama özelliğini etkinleştirir veya devre dışı bırakır. Bu özellik etkinleştirildiğinde, Uç Nokta için Defender taramış olduğu dosyalar için karmaları hesaplar. Bu özelliğin etkinleştirilmesi cihaz performansını etkileyebilir. Daha fazla ayrıntı için bkz. [Dosyalar için gösterge oluşturma](indicator-file.md).
+
+|Açıklama|Değer|
+|---|---|
+|**Anahtar**|enableFileHashComputation|
+|**Veri türü**|Dize|
+|**Olası değerler**|devre dışı (varsayılan) <p> Etkin|
+|**Açıklamalar**|Uç Nokta için Defender sürüm 101.73.77 veya sonraki sürümlerde kullanılabilir.|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>Tanımlar güncelleştirildikten sonra tarama çalıştırma
 
@@ -320,13 +331,30 @@ Tanılama verileri Uç Nokta için Defender'ı güvenli ve güncel tutmak, sorun
 |**Veri türü**|Dize|
 |**Olası değerler**|Isteğe bağlı <p> gerekli (varsayılan)|
 |
+
+#### <a name="configure-cloud-block-level"></a>Bulut bloğu düzeyini yapılandırma
+
+Bu ayar, Uç Nokta için Defender'ın şüpheli dosyaları engelleme ve tarama konusunda ne kadar agresif olacağını belirler. Bu ayar açıksa, engellenecek ve taranacak şüpheli dosyaları tanımlarken Uç Nokta için Defender daha agresif olacaktır; aksi takdirde, daha az agresif olur ve bu nedenle daha az sıklıkta blok ve tarama olur. Bulut bloğu düzeyini ayarlamak için beş değer vardır:
+
+- Normal (`normal`): Varsayılan engelleme düzeyi.
+- Orta (`moderate`): Yalnızca yüksek güvenilirlik algılamaları için karar verir.
+- Yüksek (`high`): Performansı iyileştirirken bilinmeyen dosyaları agresif bir şekilde engeller (zararlı olmayan dosyaları engelleme olasılığı daha yüksektir).
+- High Plus (`high_plus`): Bilinmeyen dosyaları agresif bir şekilde engeller ve ek koruma önlemleri uygular (istemci cihaz performansını etkileyebilir).
+- Sıfır Tolerans (`zero_tolerance`): Tüm bilinmeyen programları engeller.
+
+|Açıklama|Değer|
+|---|---|
+|**Anahtar**|cloudBlockLevel|
+|**Veri türü**|Dize|
+|**Olası değerler**|normal (varsayılan) <p> Orta <p> Yüksek <p> high_plus <p> zero_tolerance|
+|**Açıklamalar**|Uç Nokta için Defender sürüm 101.56.62 veya sonraki sürümlerde kullanılabilir.|
   
 #### <a name="enable--disable-automatic-sample-submissions"></a>Otomatik örnek gönderimlerini etkinleştirme/devre dışı bırakma
 
 Şüpheli örneklerin (tehdit içerme olasılığı yüksek) Microsoft'a gönderilip gönderilmeyeceğini belirler. Örnek gönderimini denetlemek için üç düzey vardır:
 
 - **Hiçbiri**: Microsoft'a şüpheli örnek gönderilmez.
-- **Kasa**: Yalnızca kişisel bilgiler (PII) içermeyen şüpheli örnekler otomatik olarak gönderilir. Bu ayar için varsayılan değer budur.
+- **Güvenli**: Yalnızca kişisel bilgiler (PII) içermeyen şüpheli örnekler otomatik olarak gönderilir. Bu ayar için varsayılan değer budur.
 - **Tümü**: Tüm şüpheli örnekler Microsoft'a gönderilir.
 
 |Açıklama|Değer|

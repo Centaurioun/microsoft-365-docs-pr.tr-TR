@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 629d475c160d5836d155ca0374630ad64b0928b4
-ms.sourcegitcommit: 3226bdf213b290ec5262670873c3a75f17b66ddd
+ms.openlocfilehash: 1a9e899c1f3292dd0a665c7cbf7ccfd5e561c2aa
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65372031"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943290"
 ---
 # <a name="enable-corelight-data-integration"></a>Corelight veri tümleştirmesini etkinleştirin
 
@@ -40,6 +40,13 @@ Microsoft, kuruluşunuz genelinde IoT/OT cihazlarını keşfetmenize yardımcı 
 
 Bu veri kaynağı etkinleştirildiğinde Corelight ağ gereçlerinden gelen tüm olaylar Microsoft 365 Defender gönderilir. Bu etkinlikleri, Uç Nokta için Microsoft Defender cihaz envanterinde bulunan yönetilmeyen cihazlar zaman çizelgesinde görüntüleyebilirsiniz. Daha fazla bilgi için bkz [. Cihaz bulma](device-discovery.md).
 
+## <a name="prerequisites"></a>Önkoşullar
+
+1. Corelight veri tümleştirmesini ayarlamak için kullanıcının aşağıdaki rollere sahip olması gerekir:
+   - Azure Active Directory'de Kiracı Genel Yöneticisi
+   - IoT için Microsoft Defender tümleştirmesi için kullanılacak Azure aboneliğinin Güvenlik Yöneticisi
+2. Eklenen IoT için Defender planı. Daha fazla bilgi için bkz. [Uç Nokta için Microsoft Defender ile IoT için Microsoft Defender'ı ekleme](enable-microsoft-defender-for-iot-integration.md).
+
 ## <a name="enabling-the-corelight-integration"></a>Corelight tümleştirmesini etkinleştirme
 
 Corelight tümleştirmesini etkinleştirmek için aşağıdaki adımları uygulamanız gerekir:
@@ -50,9 +57,9 @@ Corelight tümleştirmesini etkinleştirmek için aşağıdaki adımları uygula
 
 ### <a name="step-1-turn-on-corelight-as-a-data-source"></a>1. Adım: Corelight'ı veri kaynağı olarak açma
 
-1. Portalın gezinti bölmesinde [https://security.microsoft.com](https://security.microsoft.com/) **Cihaz bulma** \> **Veri** **kaynakları'nı Ayarlar** \> seçin.
+1. Portalın gezinti bölmesinde [https://security.microsoft.com](https://security.microsoft.com/) **Ayarlar** \> **Cihaz bulma** \> **Veri kaynakları'nı** seçin.
 
-   :::image type="content" source="images/enable-corelight.png" alt-text="Microsoft 365 Defender portalındaki veri kaynakları sayfası" lightbox="images/enable-corelight.png":::
+   :::image type="content" source="../../media/defender-endpoint/enable-corelight.png" alt-text="Microsoft 365 Defender portalındaki veri kaynakları sayfası" lightbox="../../media/defender-endpoint/enable-corelight.png":::
 
 2. **Corelight verilerini M365D'ye gönder'i** ve **ardından Kaydet'i** seçin.
 
@@ -62,7 +69,7 @@ Corelight tümleştirmesini etkinleştirmek için aşağıdaki adımları uygula
 > Corelight'a kuruluşunuzdaki kaynaklara erişim izni vermek için genel yönetici olmanız gerekir.
 
 1. Kiracı Genel Yöneticisi olarak, izin vermek için bu [bağlantıya](<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true>) gidin.
-2. Portala [https://security.microsoft.com](https://security.microsoft.com/) gidin, **Ayarlar Microsoft 365 Defender** \> seçin ve **Kiracı Kimliğini** not alın. Corelight gerecinizi yapılandırırken bu bilgilere ihtiyacınız olacaktır.
+2. Portala [https://security.microsoft.com](https://security.microsoft.com/) gidin, **Ayarlar** \> **Microsoft 365 Defender'ı** seçin ve **Kiracı Kimliğini** not alın. Corelight gerecinizi yapılandırırken bu bilgilere ihtiyacınız olacaktır.
 
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>3. Adım: Corelight gerecinizi Microsoft 365 Defender'a veri gönderecek şekilde yapılandırma
 

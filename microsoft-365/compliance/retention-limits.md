@@ -1,5 +1,5 @@
 ---
-title: Bekletme ilkeleri ve bekletme etiketi ilkeleri için sınırlar
+title: Microsoft 365 bekletme ilkeleri ve bekletme etiketi ilkeleri için sınırlar
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,13 +17,13 @@ search.appverid:
 - MOE150
 - MET150
 hideEdit: true
-description: Bekletme ilkeleri ve bekletme etiketi ilkeleri için ilke başına en fazla ilke ve öğe sayısını anlama
-ms.openlocfilehash: fba8d0385831b4f05bbf0a967072d64eead5644a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Microsoft 365 bekletme ilkeleri ve bekletme etiketi ilkeleri için ilke başına en fazla ilke ve öğe sayısını anlama
+ms.openlocfilehash: 768f2711c873696aabfc71df8817b0be6beec891
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633421"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942372"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Bekletme ilkeleri ve bekletme etiketi ilkeleri için sınırlar
 

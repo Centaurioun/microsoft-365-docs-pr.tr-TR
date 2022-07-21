@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Teams için geçerli olan bekletme ilkeleri hakkında bilgi edinin.
-ms.openlocfilehash: 08385988da41d633d864a28637f9667887e6269e
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+description: Kuruluşunuz için Teams iletilerinin otomatik olarak tutulmasını veya silinmesini yönetebilmeniz için Microsoft Teams için geçerli olan Microsoft 365 bekletme ilkeleri hakkında bilgi edinin.
+ms.openlocfilehash: d3a405735ece7cdfd453a946d2350b15cfab6978
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787110"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943408"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams için bekletme hakkında bilgi edinin
 

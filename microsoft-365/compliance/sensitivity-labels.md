@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Hassas içeriği sınıflandırmak ve korumak için Microsoft Purview Bilgi Koruması duyarlılık etiketlerini kullanın.
+description: Microsoft Purview Bilgi Koruması duyarlılık etiketlerinin, depolandığı her yerde kuruluşunuzun hassas içeriğini nasıl koruyabileceğini öğrenin.
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 57dcda57c29c15d8bf3896e983a95f358fd6ac1c
-ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
+ms.openlocfilehash: 5a525e96529416aca0670873921eea7703506af4
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66842165"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942792"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Duyarlılık etiketleri hakkında bilgi edinin
 

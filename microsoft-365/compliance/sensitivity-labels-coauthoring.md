@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: SharePoint ve OneDrive'da etiketlenmiş ve şifrelenmiş belgeler için masaüstü uygulamalarında birlikte yazma ve Otomatik Kaydetme'yi etkinleştiren bir ayarı açın.
-ms.openlocfilehash: f2a1bffdc156d5c3ae35ac38fb92f1f88c3af3ea
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 80fbc8b598f07efec761e9222612345601f1994e
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749209"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944229"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Duyarlılık etiketleriyle şifrelenmiş dosyalar için birlikte yazmayı etkinleştirme
 
@@ -83,6 +83,7 @@ Bu özelliği açmadan önce aşağıdaki önkoşulları anladığınızdan emin
     
     - **Azure Information Protection birleşik etiketleme istemcisi ve tarayıcısı:**
         - [Microsoft İndirme Merkezi'nden](https://www.microsoft.com/en-us/download/details.aspx?id=53018) yükleyebileceğiniz en düşük sürüm [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620)
+        - Office uygulamaları için, Kurumlar için Microsoft 365 Uygulamaları için listelenen en düşük sürümler gerekir
     
     - **Windows veya macOS için OneDrive eşitleme uygulaması:**
         - En düşük 19.002.0121.0008 sürümü

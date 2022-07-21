@@ -1,5 +1,5 @@
 ---
-title: İçeriği otomatik olarak saklamak veya silmek için bekletme ayarlarını yapılandırma
+title: microsoft 365 bekletme ayarlarını içeriği otomatik olarak saklamak veya silmek için yapılandırma
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: İstediğinizi korumak ve istemediğinizden kurtulmak için bekletme ilkesinde veya bekletme etiketi ilkesinde yapılandırabileceğiniz ayarları anlayın.
-ms.openlocfilehash: 34d71c0ae96c09dc2ac4569ae1de5fe386509550
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+description: Kuruluşunuzun verilerini tutmak veya silmek için Microsoft 365 bekletme ilkeleri ve bekletme etiketleri için yapılandırabileceğiniz ayarları anlayın.
+ms.openlocfilehash: b329b7f2ebb73e791c4fc2330d66faf35d67a960
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695758"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943342"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Bekletme ilkeleri ve bekletme etiketi ilkeleri için yaygın ayarlar
 
@@ -57,16 +57,16 @@ Uyarlamalı kapsamları kullanmayı seçtiğinizde, istediğiniz uyarlamalı kap
 
 | Uyarlamalı kapsam türü | Desteklenen öznitelikler veya özellikler şunlardır: |
 |:-----|:-----|
-|**Kullanıcılar** - şunlar için geçerlidir:  <br/> - Exchange e-postası <br/> - OneDrive hesapları <br/> - Teams sohbetleri <br/> - Teams özel kanal iletileri <br/> - Yammer kullanıcı iletileri| Ad <br/> Soyadı    <br/>Görünen ad <br/> İş unvanı <br/> Bölüm <br/> Office <br/>Sokak adresi    <br/> Şehir <br/>Eyalet veya bölge <br/>Posta kodu <br/> Ülke veya bölge <br/> E-posta adresleri <br/> Diğer ad <br/> Exchange özel öznitelikleri: CustomAttribute1 - CustomAttribute15|
+|**Kullanıcılar** - şunlar için geçerlidir:  <br/> - Exchange e-postası <br/> - OneDrive hesapları <br/> - Teams sohbetleri <br/> - Teams özel kanal iletileri <br/> - Yammer kullanıcı iletileri| Ad <br/> Soyadı    <br/>Görünen ad <br/> İş unvanı <br/> Bölüm <br/> Office <br/>Sokak adresi    <br/> Şehir <br/>Eyalet veya bölge <br/>Posta kodu <br/> Ülke veya bölge <br/> adresleri Email <br/> Diğer ad <br/> Exchange özel öznitelikleri: CustomAttribute1 - CustomAttribute15|
 |**SharePoint siteleri** - şunlar için geçerlidir:  <br/> - SharePoint siteleri <br/> - OneDrive hesapları |Site URL'si <br/>Site adı <br/> SharePoint özel özellikleri: RefinableString00 - RefinableString99 |
-|**Microsoft 365 Grupları** - şunlar için geçerlidir:  <br/> - Microsoft 365 Grupları <br/> - Teams kanal iletileri (standart ve paylaşılan) <br/> - Yammer topluluk iletileri |Name <br/> Görünen ad <br/> Açıklama <br/> E-posta adresleri <br/> Diğer ad <br/> Exchange özel öznitelikleri: CustomAttribute1 - CustomAttribute15 |
+|**Microsoft 365 Grupları** - şunlar için geçerlidir:  <br/> - Microsoft 365 Grupları <br/> - Teams kanal iletileri (standart ve paylaşılan) <br/> - Yammer topluluk iletileri |Name <br/> Görünen ad <br/> Açıklama <br/> adresleri Email <br/> Diğer ad <br/> Exchange özel öznitelikleri: CustomAttribute1 - CustomAttribute15 |
 
 Sitelerin özellik adları, SharePoint sitesi tarafından yönetilen özellikleri temel alır. Özel öznitelikler hakkında bilgi için bkz. [Uyarlamalı İlke Kapsamlarıyla Microsoft 365 Bekletme uygulamak için Özel SharePoint Site Özelliklerini Kullanma](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
 Kullanıcıların ve grupların öznitelik adları, Azure AD öznitelikleriyle [eşlenebilen filtrelenebilir alıcı özelliklerini](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) temel alır. Örneğin:
 
-- **Diğer ad**, Azure AD yönetim merkezinde **E-posta** olarak görüntülenen **mailNickname** LDAP adıyla eşler.
-- **E-posta adresleri**, Azure AD yönetim merkezinde **Proxy adresi** olarak görüntülenen LDAP adı **proxyAddresses ile eşlenir**.
+- **Diğer ad**, Azure AD yönetim merkezinde **Email** olarak görüntülenen **mailNickname** LDAP adıyla eşler.
+- **Email adresleri**, Azure AD yönetim merkezinde **Proxy adresi** olarak görüntülenen PROXY adı **proxyAddresses ile eşlenir**.
 
 Basit sorgu oluşturucusu kullanılarak uyarlamalı bir kapsam yapılandırdığınızda tabloda listelenen öznitelikler ve özellikler kolayca belirtilebilir. Aşağıdaki bölümde açıklandığı gibi gelişmiş sorgu oluşturucusu ile ek öznitelikler ve özellikler desteklenir.
 
@@ -247,7 +247,7 @@ Bekletme ilkelerindeki konumlar, Exchange e-postası ve SharePoint siteleri gibi
 
 **Exchange e-posta** konumu, bir posta kutusu düzeyinde bekletme ayarları uygulayarak kullanıcıların e-posta, takvim ve diğer posta kutusu öğeleri için bekletmeyi destekler. Donanım ve odalar için paylaşılan posta kutuları ve kaynak posta kutuları da desteklenir.
 
-Exchange e-postası için e-posta kişileri ve Microsoft 365 grup posta kutuları desteklenmez. Microsoft 365 grup posta kutuları için bunun yerine **Microsoft 365 Grupları** konumu seçin. Exchange konumu başlangıçta statik kapsam için bir grup posta kutusunun seçilmesine izin veriyor olsa da, bekletme ilkesini kaydetmeye çalıştığınızda "RemoteGroupMailbox" bu konum için geçerli bir seçim değil hatasını alırsınız.
+Email kişiler ve Microsoft 365 grup posta kutuları Exchange e-postası için desteklenmez. Microsoft 365 grup posta kutuları için bunun yerine **Microsoft 365 Grupları** konumu seçin. Exchange konumu başlangıçta statik kapsam için bir grup posta kutusunun seçilmesine izin veriyor olsa da, bekletme ilkesini kaydetmeye çalıştığınızda "RemoteGroupMailbox" bu konum için geçerli bir seçim değil hatasını alırsınız.
 
 İlke yapılandırmanıza bağlı olarak [, etkin olmayan posta kutuları](inactive-mailboxes-in-office-365.md) dahil edilebilir veya eklenmeyebilir:
 

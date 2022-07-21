@@ -18,19 +18,19 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Kuruluşunuzun verilerini yönetmeye başlamaya hazırsınız, ancak nereden başlayacağınızdan emin değil misiniz? Başlamak için bazı açıklayıcı yönergeleri okuyun.
-ms.openlocfilehash: 97890f7d873cf19ddc1050cc77f20aa2408c18af
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Yöneticiler, lisans gereksinimleri ve kuruluşunuzun verilerinin yaşam döngüsünü yöneten yaygın senaryolar için açıklayıcı adımlar.
+ms.openlocfilehash: f07d83a26f874fe9f4572ab0656b542beb9b8a91
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629686"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942394"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>Veri yaşam döngüsü yönetimini kullanmaya başlama
 
 >*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Tutmanız gereken içeriği koruyarak ve tutmadığınız içeriği silerek kuruluşunuzun verilerini yönetmeye başlamaya hazır mısınız? Başlamak için Microsoft Purview Veri Yaşam Döngüsü Yönetimi (eski adıyla Microsoft Information Governance) için aşağıdaki kılavuzu kullanın:
+Tutmanız gereken içeriği koruyarak ve tutmadığınız içeriği silerek kuruluşunuzun verilerinin yaşam döngüsünü yönetmeye başlamaya hazır mısınız? Başlamak için Microsoft Purview Veri Yaşam Döngüsü Yönetimi (eski adıyla Microsoft Information Governance) için aşağıdaki kılavuzu kullanın:
 
 1. Microsoft 365'te **bekletme ve silmenin nasıl çalıştığını anlayın** ve ardından bekletme ilkesi gerektiren iş yüklerini ve özel durumlar için bekletme etiketleri oluşturmanız gerekip gerekmediğini belirleyin: [Bekletme hakkında bilgi edinin](retention.md)
     

@@ -19,12 +19,12 @@ ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender'da Güvenli Bağlantılar ilkelerini ve genel Güvenli Bağlantılar ayarlarını görüntülemeyi, oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7151099b44947bf71f181802ea57ef732ec26858
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 5b6d69614adcc34f24450e51c3067a13922493c5
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771405"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943855"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama
 
@@ -140,8 +140,8 @@ Microsoft 365 Defender portalında özel bir Güvenli Bağlantılar ilkesi oluş
 
        - **E-posta bölümünde aşağıdaki URL'leri yeniden yazmayın** : Güvenli Bağlantılar tarafından engellenecek belirli URL'lere erişime izin vermek için **Yönet (nn)** URL'lerini tıklatın.
 
-     > [!NOTE]
-     > "Aşağıdaki URL'leri yeniden yazmayın" listesinin amacı, bu URL'lerin Güvenli Bağlantılar sarmalama işlemini atlamaktır. Bu listeyi kullanmak yerine artık [Kiracı İzin Ver/Engelle Listesinde izin ver URL girişleri oluşturabilirsiniz](allow-block-urls.md#create-allow-url-entries).
+         > [!NOTE]
+         > "Aşağıdaki URL'leri yeniden yazmayın" listesindeki girdiler, posta akışı sırasında Güvenli Bağlantılar tarafından taranmıyor veya sarmalanmıyor. Posta akışı sırasında _ve_ tıklandığında URL'lerin Güvenli Bağlantılar tarafından taranmaması veya sarmalanmaması için [Kiracı İzin Ver/Engelle Listesi'ndeki İzin Ver URL girişlerini](allow-block-urls.md#create-allow-url-entries) kullanın.
 
      1. Görüntülenen **URL'leri yeniden yazmamak için yönet** açılır öğesinde URL Ekle simgesine tıklayın ![.](../../media/m365-cc-sc-create-icon.png) **URL'ler ekleyin**.
      2. Görüntülenen **URL ekle** açılır penceresinde, istediğiniz URL'yi veya değeri yazın, kutunun altında görünen girdiyi seçin ve **kaydet'e** tıklayın. Bu adımı gerektiği kadar tekrarlayın.

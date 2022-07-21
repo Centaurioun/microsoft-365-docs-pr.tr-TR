@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Bu makale hassas bilgi türlerine ve hassas öğeleri tanımlamak için sosyal güvenlik, kredi kartı veya banka hesabı numaraları gibi hassas bilgileri nasıl algıladıklarına genel bakış sağlar
-ms.openlocfilehash: 34c40c99cf759341ece1948164a5f7d904996b44
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2a7f639097203f06795945dbd08fa64db3a1f0df
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639390"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944053"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Hassas bilgi türleri hakkında daha fazla bilgi edinme
 
@@ -44,6 +44,8 @@ Microsoft çok sayıda önceden yapılandırılmış SID sağlar veya kendiniz o
 - [İletişim uyumluluğu](communication-compliance.md)
 - [Otomatik etiketleme ilkeleri](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
+
+
 
 ## <a name="categories-of-sensitive-information-types"></a>Hassas bilgi türleri kategorileri
 

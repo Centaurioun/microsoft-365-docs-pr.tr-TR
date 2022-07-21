@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Yammer için geçerli olan bekletme ilkeleri hakkında bilgi edinin.
-ms.openlocfilehash: d2703947d2cebc5818793362e55b8eae9cec2ed8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Kuruluşunuzda Yammer iletilerinin otomatik olarak tutulmasını veya silinmesini yönetebilmeniz için Yammer için geçerli olan Microsoft 365 bekletme ilkeleri hakkında bilgi edinin.
+ms.openlocfilehash: c449dd7a562d770eea38e955897cb7bf977cd91e
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639632"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944031"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Yammer için bekletme hakkında bilgi edinin
 

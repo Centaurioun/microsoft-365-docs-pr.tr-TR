@@ -11,13 +11,13 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-description: Açık LMS için Microsoft OneDrive Öğrenme Araçları Birlikte Çalışabilirliği ile Teams sınıflarını ve toplantılarını oluşturun ve yönetin.
-ms.openlocfilehash: 108852bf32e63e7d5b8722ef1ee178abf7ea85c3
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+description: Açık LMS için Microsoft Öğrenme Araçları Birlikte Çalışabilirliği ile Teams sınıflarını ve toplantılarını oluşturun ve yönetin.
+ms.openlocfilehash: 25babbafb4a8640b389fd655ddf63b23665d8c9d
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66861904"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943254"
 ---
 # <a name="integrate-microsoft-teams-classes-and-meetings-within-open-lms"></a>Microsoft Teams sınıflarını ve toplantılarını Open LMS ile tümleştirme
 
@@ -56,7 +56,7 @@ Open LMS ile Teams arasındaki tümleştirmenin düzgün çalışması için Ope
 
 10. **Araç ayarları'nın** altında **Microsoft Teams Sınıfları** gibi bir **Araç adı** girin. **LTI sürümü** için **LTI 1.3'i** seçin. **Ortak anahtar türü için** **Anahtar Kümesi URL'sini** seçin.
 
-11. Ardından, **Microsoft LTI anahtarlarından** ilgili araç girişlerine anahtarları kopyalayın.
+11. Ardından, **Anahtarları Microsoft LTI anahtarlarından** ilgili araç girişlerine kopyalayın.
     1. Microsoft'un **Hedef bağlantı URL** anahtarı, Açık LMS'nin **Araç URL'si** alanına gider.
     1. Microsoft'un **Açık Kimlik bağlantı URL** anahtarı, Open LMS'nin **Oturum açma URL'sini başlat** alanına gider.
     1. Microsoft'un **Yeniden Yönlendirme URL** anahtarı, Open LMS'nin **Yeniden Yönlendirme URI'leri** alanına gider.
@@ -69,18 +69,18 @@ Open LMS ile Teams arasındaki tümleştirmenin düzgün çalışması için Ope
 
 15. LMS'nin **Araç yapılandırma ayrıntılarını** aç'taki değerleri kopyalayıp Microsoft'un **LMS tarafından sağlanan kayıt anahtarları** adımına yapıştırın.
 
-  Değerleri aşağıdaki gibi yapıştırın:
+    Değerleri aşağıdaki gibi yapıştırın:
 
-  | Açık LMS'de | Microsoft LTI kayıt portalında |
-  | --------- | ------------------------------------ |
-  | Platform Kimliği | Veren Kimliği URL'si |
-  | İstemci Kimliği | İstemci Kimliği |
-  | Dağıtım Kimliği | Dağıtım Kimliği |
-  | Ortak anahtar kümesi URL'si | Anahtar Kümesi URL'si |
-  | Erişim belirteci URL'si | Erişim belirteci URL'si |
-  | Kimlik doğrulama isteği URL'si | Platform kimlik doğrulaması URL'si |
+    | Açık LMS'de | Microsoft LTI kayıt portalında |
+    | --------- | ------------------------------------ |
+    | Platform Kimliği | Veren Kimliği URL'si |
+    | İstemci Kimliği | İstemci Kimliği |
+    | Dağıtım Kimliği | Dağıtım Kimliği |
+    | Ortak anahtar kümesi URL'si | Anahtar Kümesi URL'si |
+    | Erişim belirteci URL'si | Erişim belirteci URL'si |
+    | Kimlik doğrulama isteği URL'si | Platform kimlik doğrulaması URL'si |
 
-  **İleri**'yi seçin.
+    **İleri**'yi seçin.
 
 16. **Gözden geçir ve ekle** sayfasını gözden geçirin. Hata yoksa **Kaydet ve çık'ı** seçin. Kaydın başarılı olduğunu belirten bir ileti görmeniz gerekir.
 

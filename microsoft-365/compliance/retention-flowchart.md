@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Bir öğenin birden çok bekletme ilkesi veya bekletme etiketi ve bekletme ilkesi olduğunda sonucu belirlemek için akış çizelgesi kullanma
-ms.openlocfilehash: 4e5c1cf887144f89764e88a39ba14a95a2df576c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Microsoft 365'teki bir öğenin birden çok bekletme ilkesine veya bekletme etiketine ve bekletme ilkesine sahip olduğu sonucu belirlemek için akış çizelgesi kullanma
+ms.openlocfilehash: 96c92dc8c0e9d87a152605dbe1dd74a220f20cc6
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633465"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942748"
 ---
 # <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>Bir öğenin ne zaman tutulacağını veya kalıcı olarak silineceğini saptamak için akış çizelgesi
 
