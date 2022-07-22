@@ -17,22 +17,22 @@ search.appverid:
 - MET150
 description: Tam veri eşleştirme etkinlikleri için nasıl bildirim oluşturacağınızı öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a9c629e5258efd096ce1412a7a42bc7bc672008
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 09bb41de09b6f44a9f556446c5a566322b44ad0d
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641350"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949139"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Tam veri eşleşme etkinlikleri için bildirimler oluşturma
 
 [Tam veri eşleşmesi (EDM) ile özel hassas bilgi türleri](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) oluşturduğunuzda, [denetim günlüğünde](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log) oluşturulan bir dizi etkinlik vardır. Bu etkinlikler gerçekleştiğinde sizi bilgilendiren bildirimler oluşturmak için [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell cmdlet'ini kullanabilirsiniz:
 
-- CreateSchema
-- EditSchema
-- RemoveSchema
-- UploadDataFailed
-- UploadDataCompleted
+- `CreateSchema`
+- `EditSchema`
+- `RemoveSchema`
+- `UploadDataFailed`
+- `UploadDataCompleted`
 
 > [!NOTE]
  EDM etkinlikleri için bildirim oluşturma özelliği yalnızca World Wide ve GCC bulutlarında kullanılabilir.
@@ -60,13 +60,13 @@ DLP lisansı hakkında daha fazla bilgi edinmek için bkz. [Güvenlik & uyumlulu
 
 1. [Güvenlik & Uyumluluğu PowerShell'e bağlanın](/powershell/exchange/connect-to-scc-powershell).
 
-2. Bildirimi oluşturmak `New-ProtectionAlert` istediğiniz etkinliği kullanarak cmdlet'ini çalıştırın.  Örneğin, **UploadDataCompleted** eylemi gerçekleştiğinde bildirim almak istiyorsanız şunu çalıştırın:
+2. Bildirimi oluşturmak `New-ProtectionAlert` istediğiniz etkinliği kullanarak cmdlet'ini çalıştırın.  Örneğin, eylem gerçekleştiğinde `UploadDataCompleted` bildirim almak istiyorsanız şunu çalıştırın:
 
     ```powershell
     New-ProtectionAlert -Name "EdmUploadCompleteAlertPolicy" -Category Others -NotifyUser <address to send notification to> -ThreatType Activity -Operation UploadDataCompleted -Description "Custom alert policy to track when EDM upload Completed" -AggregationType None
     ```
     
-    **UploadDataFailed** için şunu çalıştırabilirsiniz:
+    `UploadDataFailed` için şunu çalıştırabilirsiniz:
     
     ```powershell
     New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUser <SMTP address to send notification to> -ThreatType Activity -Operation UploadDataFailed -Description "Custom alert policy to track when EDM upload Failed" -AggregationType None -Severity High

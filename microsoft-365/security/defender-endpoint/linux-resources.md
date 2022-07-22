@@ -1,8 +1,8 @@
 ---
-title: Linux kaynakları üzerinde Uç Nokta için Microsoft Defender
+title: Linux kaynaklarında Uç Nokta için Microsoft Defender
 ms.reviewer: ''
-description: Linux'ta Uç Nokta için Microsoft Defender kaynaklarını açıklar. Bunun nasıl kaldıracağız, tanılama günlüklerinin nasıl topla ilgili olduğu, CLI komutları ve ürünle ilgili bilinen sorunlar da buna dahil.
-keywords: microsoft, defender, Endpoint için Microsoft Defender, linux, yükleme, dağıtma, kaldırma, ssible, linux, redhat, ubuntu, debian, sles, suse, centos
+description: Linux'ta Uç Nokta için Microsoft Defender nasıl kaldırıldığı, tanılama günlüklerinin nasıl toplandığı, CLI komutları ve ürünle ilgili bilinen sorunlar gibi kaynakları açıklar.
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,30 +16,30 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a32c8c91350218da619de18e0b1b398a93bf7fda
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0971933f1099192b1cb8b7a844793f264ef2aa15
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312684"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949491"
 ---
 # <a name="resources"></a>Kaynaklar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="collect-diagnostic-information"></a>Tanılama bilgilerini toplama
 
-Bir sorunu yeniden üreteceksanız, önce günlüğe kaydetme düzeyini artırabilir, sistemi bir süre için çalıştırın ve sonra günlük düzeyini varsayılan değere geri yüklenin.
+Bir sorunu yeniden oluşturabiliyorsanız, önce günlüğe kaydetme düzeyini artırın, sistemi bir süre çalıştırın ve ardından günlük düzeyini varsayılana geri yükleyin.
 
-1. Günlüğe kaydetme düzeyini artırma:
+1. Günlük düzeyini artırın:
 
    ```bash
    mdatp log level set --level debug
@@ -49,21 +49,21 @@ Bir sorunu yeniden üreteceksanız, önce günlüğe kaydetme düzeyini artırab
    Log level configured successfully
    ```
 
-2. Sorunu yeniden üretin.
+2. Sorunu yeniden oluşturun.
 
-3. Defender for Endpoint'ın günlüklerini back up için aşağıdaki komutu çalıştırın. Dosyalar bir arşivinde .zip.
+3. Uç Nokta için Defender günlüklerini yedeklemek için aşağıdaki komutu çalıştırın. Dosyalar bir .zip arşivinde depolanır.
 
    ```bash
    sudo mdatp diagnostic create
    ```
 
-    Bu komut, işlem başarılı olduktan sonra yedek dosya yolunu da yazdırır:
+    Bu komut, işlem başarılı olduktan sonra yedeklemenin dosya yolunu da yazdırır:
 
    ```Output
    Diagnostic file created: <path to file>
    ```
 
-4. Günlüğe kaydetme düzeyini geri yükleme:
+4. Günlük düzeyini geri yükleme:
 
    ```bash
    mdatp log level set --level info
@@ -75,32 +75,32 @@ Bir sorunu yeniden üreteceksanız, önce günlüğe kaydetme düzeyini artırab
 
 ## <a name="log-installation-issues"></a>Günlük yükleme sorunları
 
-Yükleme sırasında bir hata oluşursa, yükleyici yalnızca genel bir hata verir.
+Yükleme sırasında bir hata oluşursa, yükleyici yalnızca genel bir hata bildirir.
 
-Ayrıntılı günlük 'a kaydedilir `/var/log/microsoft/mdatp/install.log`.
-Yükleme sırasında sorun edersiniz, nedenini tanılamaya yardımcı olmak için bu dosyayı bize gönderin.
+Ayrıntılı günlük öğesine `/var/log/microsoft/mdatp/install.log`kaydedilir.
+Yükleme sırasında sorunlarla karşılaşırsanız, nedenini tanılamamıza yardımcı olabilmemiz için bu dosyayı bize gönderin.
 
 ## <a name="uninstall"></a>Kaldır
 
-Linux'ta Uç Nokta için Defender'ı kaldırmanın çeşitli yolları vardır. Yalı gibi bir yapılandırma aracı kullanıyorsanız, yapılandırma aracı için paket kaldırma yönergelerini izleyin.
+Linux'ta Uç Nokta için Defender'ı kaldırmanın çeşitli yolları vardır. Puppet gibi bir yapılandırma aracı kullanıyorsanız yapılandırma aracının paket kaldırma yönergelerini izleyin.
 
 ### <a name="manual-uninstallation"></a>El ile kaldırma
 
-- `sudo yum remove mdatp` RHEL ve çeşitlemeler için (CentOS ve Oracle Linux).
-- `sudo zypper remove mdatp` SLES ve çeşitlemeler için.
+- `sudo yum remove mdatp` RHEL ve varyantlar için (CentOS ve Oracle Linux).
+- `sudo zypper remove mdatp` SLES ve varyantlar için.
 - `sudo apt-get purge mdatp` Ubuntu ve Debian sistemleri için.
 
-## <a name="configure-from-the-command-line"></a>Komut satırına göre yapılandırma
+## <a name="configure-from-the-command-line"></a>Komut satırından yapılandırma
 
-Ürün ayarlarını denetleme ve isteğe bağlı taramaları tetikleme gibi önemli görevler komut satırına göre yapılabilir.
+Ürün ayarlarını denetleme ve isteğe bağlı taramaları tetikleme gibi önemli görevler komut satırından gerçekleştirilebilir.
 
 ### <a name="global-options"></a>Genel seçenekler
 
-Varsayılan olarak, komut satırı aracı sonucun çıkışını insanlar tarafından okunabilir biçimde verir. Buna ek olarak, araç sonuçların JSON olarak çıkışını da destekler ve bu, otomasyon senaryolarında kullanışlı olur. Çıkışı JSON olarak değiştirmek için aşağıdaki komutlardan `--output json` herhangi birini seçin.
+Varsayılan olarak, komut satırı aracı sonucu insan tarafından okunabilir biçimde döndürür. Ayrıca araç, otomasyon senaryoları için yararlı olan sonucuN JSON olarak çıkışını da destekler. Çıktıyı JSON olarak değiştirmek için aşağıdaki komutlardan herhangi birine geçirin `--output json` .
 
 ### <a name="supported-commands"></a>Desteklenen komutlar
 
-Aşağıdaki tabloda, en yaygın senaryolardan bazılarının komutları listeledir. Desteklenen `mdatp help` komutların tam listesini görüntülemek için Terminal'den çalıştırın.
+Aşağıdaki tabloda, en yaygın senaryolardan bazılarına yönelik komutlar listelemektedir. Desteklenen komutların tam listesini görüntülemek için Terminal'den komutunu çalıştırın `mdatp help` .
 
 <br>
 
@@ -111,40 +111,41 @@ Aşağıdaki tabloda, en yaygın senaryolardan bazılarının komutları listele
 |Yapılandırma|Gerçek zamanlı korumayı açma/kapatma|`mdatp config real-time-protection --value [enabled\|disabled]`|
 |Yapılandırma|Davranış izlemeyi açma/kapatma|`mdatp config behavior-monitoring --value [enabled\|disabled]`
 |Yapılandırma|Bulut korumasını açma/kapatma|`mdatp config cloud --value [enabled\|disabled]`|
-|Yapılandırma|Ürün tanılamayı açma/kapatma|`mdatp config cloud-diagnostic --value [enabled\|disabled]`|
-|Yapılandırma|Otomatik örnek gönderimi açma/kapatma|`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`|
+|Yapılandırma|Ürün tanılamasını açma/kapatma|`mdatp config cloud-diagnostic --value [enabled\|disabled]`|
+|Yapılandırma|Otomatik örnek göndermeyi açma/kapatma|`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`|
 |Yapılandırma|AV pasif modunu açma/kapatma|`mdatp config passive-mode --value [enabled\|disabled]`|
-|Yapılandırma|Dosya uzantısı için virüsten koruma dışlama ekleme/kaldırma|`mdatp exclusion extension [add\|remove] --name [extension]`|
-|Yapılandırma|Dosya için virüsten koruma dışlama ekleme/kaldırma|`mdatp exclusion file [add\|remove] --path [path-to-file]`|
-|Yapılandırma|Dizin için virüsten koruma dışlama ekleme/kaldırma|`mdatp exclusion folder [add\|remove] --path [path-to-directory]`|
-|Yapılandırma|İşlem için virüsten koruma dışlama ekleme/kaldırma|`mdatp exclusion process [add\|remove] --path [path-to-process]` <p> `mdatp exclusion process [add\|remove] --name [process-name]`|
-|Yapılandırma|Tüm virüsten koruma dışlamalarını listele|`mdatp exclusion list`|
+|Yapılandırma|Dosya uzantısı için virüsten koruma dışlaması ekleme/kaldırma|`mdatp exclusion extension [add\|remove] --name [extension]`|
+|Yapılandırma|Dosya için virüsten koruma dışlaması ekleme/kaldırma|`mdatp exclusion file [add\|remove] --path [path-to-file]`|
+|Yapılandırma|Dizin için virüsten koruma dışlaması ekleme/kaldırma|`mdatp exclusion folder [add\|remove] --path [path-to-directory]`|
+|Yapılandırma|Bir işlem için virüsten koruma dışlaması ekleme/kaldırma|`mdatp exclusion process [add\|remove] --path [path-to-process]` <p> `mdatp exclusion process [add\|remove] --name [process-name]`|
+|Yapılandırma|Tüm virüsten koruma dışlamalarını listeleme|`mdatp exclusion list`|
 |Yapılandırma|İzin verilenler listesine tehdit adı ekleme|`mdatp threat allowed add --name [threat-name]`|
-|Yapılandırma|Tehdit adını izin verilenler listesinden kaldırma|`mdatp threat allowed remove --name [threat-name]`|
-|Yapılandırma|İzin verilen tüm tehdit adlarını listele|`mdatp threat allowed list`|
+|Yapılandırma|İzin verilenler listesinden bir tehdit adını kaldırma|`mdatp threat allowed remove --name [threat-name]`|
+|Yapılandırma|İzin verilen tüm tehdit adlarını listeleme|`mdatp threat allowed list`|
 |Yapılandırma|PUA korumasını açma|`mdatp threat policy set --type potentially_unwanted_application --action block`|
 |Yapılandırma|PUA korumasını kapatma|`mdatp threat policy set --type potentially_unwanted_application --action off`|
 |Yapılandırma|PUA koruması için denetim modunu açma|`mdatp threat policy set --type potentially_unwanted_application --action audit`|
-|Yapılandırma|Isteğe bağlı taramalar için paralellik derecesini yapılandırma|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
-|Yapılandırma|Güvenlik zekası güncelleştirmeleri sonrasında taramaları açma/kapatma|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
-|Yapılandırma|Arşiv taramayı açma/kapatma (yalnızca isteğe bağlı taramalar)|`mdatp config scan-archives --value [enabled/disabled]`|
+|Yapılandırma|İsteğe bağlı taramalar için paralellik derecesini yapılandırma|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
+|Yapılandırma|Güvenlik bilgileri güncelleştirmelerinden sonra taramaları açma/kapatma|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|Yapılandırma|Arşiv taramasını açma/kapatma (yalnızca isteğe bağlı taramalar)|`mdatp config scan-archives --value [enabled/disabled]`|
+|Yapılandırma|Dosya karması hesaplamasını açma/kapatma|`mdatp config enable-file-hash-computation --value [enabled/disabled]`|
 |Tanılama|Günlük düzeyini değiştirme|`mdatp log level set --level verbose [error|warning|info|verbose]`|
 |Tanılama|Tanılama günlükleri oluşturma|`mdatp diagnostic create --path [directory]`|
-|Hizmet Durumu|Ürünün durumunu denetleme|`mdatp health`|
+|Hizmet Durumu|Ürünün durumunu kontrol edin|`mdatp health`|
 |Koruma|Yolu tarama|`mdatp scan custom --path [path] [--ignore-exclusions]`|
 |Koruma|Hızlı tarama yapma|`mdatp scan quick`|
 |Koruma|Tam tarama yapma|`mdatp scan full`|
-|Koruma|Sürekli isteğe bağlı taramayı iptal etme|`mdatp scan cancel`|
-|Koruma|Güvenlik zekası güncelleştirmesi talep edin|`mdatp definitions update`|
+|Koruma|Devam eden isteğe bağlı taramayı iptal etme|`mdatp scan cancel`|
+|Koruma|Güvenlik bilgileri güncelleştirmesi isteme|`mdatp definitions update`|
 |Koruma geçmişi|Tam koruma geçmişini yazdırma|`mdatp threat list`|
-|Koruma geçmişi|Tehdit ayrıntılarını al|`mdatp threat get --id [threat-id]`|
-|Karantina yönetimi|Tüm karantinaya alınmış dosyaları listele|`mdatp threat quarantine list`|
+|Koruma geçmişi|Tehdit ayrıntılarını alma|`mdatp threat get --id [threat-id]`|
+|Karantina yönetimi|Karantinaya alınan tüm dosyaları listeleme|`mdatp threat quarantine list`|
 |Karantina yönetimi|Tüm dosyaları karantinadan kaldırma|`mdatp threat quarantine remove-all`|
-|Karantina yönetimi|Karantina için tehdit olarak algılanan bir dosyayı ekleme|`mdatp threat quarantine add --id [threat-id]`|
-|Karantina yönetimi|Tehdit olarak algılanan dosyayı karantinadan kaldırma|`mdatp threat quarantine remove --id [threat-id]`|
+|Karantina yönetimi|Karantinaya tehdit olarak algılanan bir dosya ekleme|`mdatp threat quarantine add --id [threat-id]`|
+|Karantina yönetimi|Tehdit olarak algılanan bir dosyayı karantinadan kaldırma|`mdatp threat quarantine remove --id [threat-id]`|
 |Karantina yönetimi|Dosyayı karantinadan geri yükleme|`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`|
 |Uç Nokta Algılama ve Yanıt|Erken önizlemeyi ayarlama (kullanılmayan)|`mdatp edr early-preview [enable|disable]`|
 |Uç Nokta Algılama ve Yanıt|Grup kimliğini ayarlama|`mdatp edr group-ids --group-id [group-id]`|
-|Uç Nokta Algılama ve Yanıt|Yalnızca desteklenen etiket ayarlama `GROUP` / kaldırma|`mdatp edr tag set --name GROUP --value [tag]`|
-|Uç Nokta Algılama ve Yanıt|Liste dışlamaları (kök)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
+|Uç Nokta Algılama ve Yanıt|Etiketi ayarlama /kaldırma, yalnızca `GROUP` desteklenir|`mdatp edr tag set --name GROUP --value [tag]`|
+|Uç Nokta Algılama ve Yanıt|Dışlamaları listeleme (kök)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
 |

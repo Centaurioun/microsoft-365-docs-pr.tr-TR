@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: İhtiyaç duyduklarınızı korumak ve saklamadığınız şeyleri silmek için bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin.
-ms.openlocfilehash: 2fd1d2e792a7b1d0635ff59ad5e63ce963e38ccc
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+description: İhtiyacınız olanı korumak ve kuruluşunuzun verilerini yönetmek için olmayanları silmek için Microsoft 365 bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin.
+ms.openlocfilehash: 24750145bb1361ede8d7519a1d08c74baafdf10d
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714541"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949315"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin
 
@@ -292,13 +292,13 @@ Senaryo: Varsayılan olarak, kullanıcıların OneDrive hesaplarındaki içerik 
 
 2. İçeriği sonsuza kadar saklayan bir bekletme etiketi oluşturup yapılandırıp bunu tüm OneDrive hesaplarında yayımladığınız bir etiket ilkesine eklersiniz. Kullanıcılara bu etiketin beş yıl sonra değiştirilmemesi durumunda otomatik silmenin dışında tutulması gereken belirli belgelere nasıl el ile uygulanacağını açıklarsınız.
 
-Öğeleri daha uzun süre saklama örneği**
+#### <a name="example-to-retain-items-for-longer"></a>Öğeleri daha uzun süre saklama örneği
 
 Senaryo: Varsayılan olarak, SharePoint öğeleri beş yıl sonra otomatik olarak korunur ve silinir, ancak belirli kitaplıklardaki belgelerin on yıl boyunca saklanması gerekir.
 
 1. Beş yıl sonra içeriği otomatik olarak saklayan ve silip silen bir bekletme ilkesi oluşturup yapılandırabilir ve ilkeyi tüm SharePoint ve Microsoft 365 Grupları örneklerine uygulayabilirsiniz.
 
-2. İçeriği otomatik olarak on yıl boyunca saklayan bir bekletme etiketi oluşturup yapılandırabilirsiniz. Bu etiketi, belirli belge kitaplıklarındaki tüm öğeler tarafından devralınacak varsayılan etiket olarak uygulayabilmeleri için SharePoint site yöneticilerine yayımlarsınız.
+2. İçeriği otomatik olarak on yıl boyunca saklayan bir bekletme etiketi oluşturup yapılandırabilirsiniz. Bu etiketi, SharePoint yöneticilerinin belirli belge kitaplıklarındaki tüm öğeler tarafından devralınacak varsayılan etiket olarak uygulayabilmesi için, tüm SharePoint'te yayımladığınız bir etiket ilkesine ve Microsoft 365 Grupları örneklerine eklersiniz.
 
 #### <a name="example-to-delete-items-in-a-shorter-time-period"></a>Daha kısa bir zaman aralığındaki öğeleri silme örneği
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c8fd4be82e9ff778db136db314faa6c100240856
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: d283876f8e68943d45ab2dbca4ef8455a5dce038
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607509"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949065"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Microsoft 365 Defender ile olay yanıtı
 
@@ -145,7 +145,7 @@ Kendi olay yanıtı iş akışınız için şu adımları göz önünde bulundur
    - Olayı çözmek için kullandığınız iş akışını hatırlayın ve standart iş akışlarınızı, süreçlerinizi, ilkelerinizi ve playbook'larınızı gerektiği gibi güncelleştirin.
    - Güvenlik yapılandırmanızdaki değişikliklerin gerekli olup olmadığını belirleyin ve bunları uygulayın.
 
-Güvenlik analizine yeni başlıyorsanız ek bilgi edinmek ve örnek [bir olayda adım adım ilerleyebilmek için ilk olayınıza yanıt vermeye giriş](incidents-overview.md) bölümüne bakın.
+Güvenlik analizi konusunda yeniyseniz ek bilgi edinmek ve örnek [bir olayda adım adım ilerletmek için ilk olayınıza yanıt vermeye giriş](incidents-overview.md) bölümüne bakın.
 
 Microsoft ürünleri genelinde olay yanıtı hakkında daha fazla bilgi için [bu makaleye](/security/compass/incident-response-overview) bakın.
 
@@ -188,9 +188,15 @@ Microsoft'un ürünleri arasında SecOps hakkında daha fazla bilgi için şu ka
 
 Personelinize yeni olaylar veya mevcut olaylarla ilgili güncelleştirmeler hakkında e-postayla bildirim göndermek için Microsoft 365 Defender ayarlayabilirsiniz. Bildirimleri şu temel alarak almayı seçebilirsiniz:
 
-- Olay önem derecesi.
-- Cihaz grubu.
-- Yalnızca olay başına ilk güncelleştirmede.
+- Uyarı önem derecesi
+- Uyarı kaynakları 
+- Cihaz grubu
+
+**Yalnızca belirli hizmet kaynağı için e-posta bildirimleri almayı seçin: E-posta** bildirimleri almak istediğiniz belirli hizmet kaynaklarını kolayca seçebilirsiniz.
+ 
+**Belirli algılama kaynaklarıyla daha ayrıntılı bilgi edinin**: Yalnızca belirli bir algılama kaynağı için bildirim alabilirsiniz. 
+
+**Algılama veya hizmet kaynağı başına önem derecesini ayarlayın**: E-posta bildirimlerini yalnızca kaynak başına belirli önem derecelerinde almayı seçebilirsiniz. Örneğin, EDR için Orta ve Yüksek uyarılar ve Microsoft Defender Uzmanları için tüm önem dereceleri hakkında bildirim alabilirsiniz.  
 
 E-posta bildirimi olayla ilgili olay adı, önem derecesi ve kategoriler gibi önemli ayrıntıları içerir. Ayrıca doğrudan olaya gidip analizinizi hemen başlatabilirsiniz. Daha fazla bilgi için bkz [. Olayları araştırma](investigate-incidents.md).
 
@@ -204,17 +210,17 @@ Benzer şekilde, kuruluşunuz rol tabanlı erişim denetimi (RBAC) kullanıyorsa
 
 Yeni bir kural oluşturmak ve e-posta bildirim ayarlarını özelleştirmek için bu adımları izleyin.
 
-1. Gezinti bölmesinde **Ayarlar > Microsoft 365 Defender > Olay e-posta bildirimleri'ni** seçin.
+1. Gezinti bölmesinde [Microsoft 365 Defender](https://security.microsoft.com) gidin, **Ayarlar > Microsoft 365 Defender > Olay e-posta bildirimleri'ni** seçin.
 2. **Öğe ekle'yi** seçin.
 3. **Temel Bilgiler** sayfasında kural adını ve açıklamayı yazın ve **İleri'yi** seçin.
 4. **Bildirim ayarları** sayfasında şunları yapılandırın:
     - **Uyarı önem derecesi** - Olay bildirimini tetikleyecek uyarı önem derecelerini seçin. Örneğin, yalnızca yüksek önem dereceli olaylar hakkında bilgi almak istiyorsanız **Yüksek'i** seçin.
     - **Cihaz grubu kapsamı** - Tüm cihaz gruplarını belirtebilir veya kiracınızdaki cihaz grupları listesinden seçim yapabilirsiniz.
-    - **Olay başına yalnızca ilk geçtiğinde bildir** - Yalnızca diğer seçimlerinizle eşleşen ilk uyarıda bildirim almak isteyip istemediğinizi seçin. Daha sonraki güncelleştirmeler veya olayla ilgili uyarılar ek bildirim göndermez.
+    - **Olay başına yalnızca bir bildirim gönder - Olay başına** bir bildirim isteyip istemediğinizi seçin.
     - **E-postaya kuruluş adını ekle - Kuruluşunuzun adının e-posta** bildiriminde görünmesini isteyip istemediğinizi seçin.
     - **Kiracıya özgü portal bağlantısını ekle** - Belirli bir Microsoft 365 kiracısına erişim için e-posta bildiriminde kiracı kimliğine sahip bir bağlantı eklemek isteyip istemediğinizi seçin.
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Microsoft 365 Defender portalında olay e-posta bildirimleri için Bildirim ayarları sayfası." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-email-notification-settings.png" alt-text="Microsoft 365 Defender portalında olay e-posta bildirimleri için Bildirim ayarları sayfasının ekran görüntüsü." lightbox="../../media/get-incident-notifications/incidents-email-notification-settings.png":::
 
 5. **İleri**'yi seçin. **Alıcılar** sayfasında, olay bildirimlerini alacak e-posta adreslerini ekleyin. Her yeni e-posta adresini yazdıktan sonra **Ekle'yi** seçin. Bildirimleri test etmek ve alıcıların gelen kutularına aldığından emin olmak için **Test e-postası gönder'i** seçin.
 6. **İleri**'yi seçin. **Kuralı gözden geçir** sayfasında kuralın ayarlarını gözden geçirin ve kural **oluştur'u** seçin. Alıcılar, ayarlara göre e-posta aracılığıyla olay bildirimleri almaya başlar.
@@ -222,6 +228,8 @@ Yeni bir kural oluşturmak ve e-posta bildirim ayarlarını özelleştirmek içi
 Mevcut bir kuralı düzenlemek için kural listesinden bu kuralı seçin. Kural adının yer aldığı bölmede **Kuralı düzenle'yi** seçin ve **Temel Bilgiler**, **Bildirim ayarları** ve **Alıcılar** sayfalarında değişikliklerinizi yapın.
 
 Kuralı silmek için kural listesinden bu kuralı seçin. Kural adının olduğu bölmede **Sil'i** seçin.
+
+Bildirimi aldıktan sonra doğrudan olaya gidebilir ve araştırmanıza hemen başlayabilirsiniz. Olayları araştırma hakkında daha fazla bilgi için bkz[. Microsoft 365 Defender'de olayları araştırma](investigate-incidents.md).
 
 ## <a name="training-for-security-analysts"></a>Güvenlik analistleri için eğitim
 

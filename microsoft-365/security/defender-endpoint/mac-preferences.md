@@ -1,7 +1,7 @@
 ---
 title: Mac'te Uç Nokta için Microsoft Defender tercihlerini ayarlama
-description: Büyük kuruluşlarda Mac'te Uç Nokta için Microsoft Defender'ı yapılandırma.
-keywords: microsoft, defender, Endpoint için Microsoft Defender, mac, yönetim, tercihler, kurumsal, intune, jamf, macos, catalina, mojave, high sierra
+description: Kurumsal kuruluşlarda Mac'te Uç Nokta için Microsoft Defender yapılandırın.
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, management, tercihler, enterprise, intune, jamf, macos, catalina, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,43 +15,43 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb3f38b861f85849165be330e03fe1d96a9c708c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ca619bbc2dd81dfe2f7de09186d748a0abb54e4c
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326713"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949227"
 ---
-# <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlama
+# <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [macOS'ta Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [macOS üzerinde Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!IMPORTANT]
-> Bu makalede, kurumsal kuruluşlarda macOS üzerinde Uç Nokta için Microsoft Defender tercihlerini ayarlama ile ilgili yönergeler yer almaktadır. Komut satırı arabirimini kullanarak macOS'ta Uç Nokta için Microsoft Defender'ı yapılandırmak için bkz. [Kaynaklar](mac-resources.md#configuring-from-the-command-line).
+> Bu makale, kurumsal kuruluşlarda macOS'ta Uç Nokta için Microsoft Defender için tercihleri ayarlama yönergelerini içerir. komut satırı arabirimini kullanarak macOS'ta Uç Nokta için Microsoft Defender yapılandırmak için bkz[. Kaynaklar](mac-resources.md#configuring-from-the-command-line).
 
 ## <a name="summary"></a>Özet
 
-Kurumsal kuruluşlarda, macOS üzerinde Uç Nokta için Microsoft Defender çeşitli yönetim araçlarından biri kullanılarak dağıtılan bir yapılandırma profili aracılığıyla yönetilebilir. Güvenlik işlemleri ekipleri tarafından yönetilen tercihler, cihazda yerel olarak ayarlanmış tercihlere göre önceliklidir. Yapılandırma profili aracılığıyla ayarlanmış tercihlerin değiştirilmesi için, yükseltme ayrıcalıkları gerekir ve yönetici izinleri olmayan kullanıcılar için kullanılamaz.
+Kurumsal kuruluşlarda, macOS üzerindeki Uç Nokta için Microsoft Defender çeşitli yönetim araçlarından biri kullanılarak dağıtılan bir yapılandırma profili aracılığıyla yönetilebilir. Güvenlik operasyonları ekibiniz tarafından yönetilen tercihler, cihazda yerel olarak ayarlanan tercihlerden önceliklidir. Yapılandırma profili aracılığıyla ayarlanan tercihlerin değiştirilmesi, yükseltilmiş ayrıcalıklar gerektirir ve yönetici izinleri olmayan kullanıcılar için kullanılamaz.
 
-Bu makalede yapılandırma profilinin yapısı açıklanmıştır, kullanmaya başlamanız için kullanabileceğiniz önerilen bir profil ve profilin dağıtımıyla ilgili yönergeler yer almaktadır.
+Bu makalede yapılandırma profilinin yapısı açıklanır, başlamak için kullanabileceğiniz önerilen bir profil bulunur ve profilin nasıl dağıtılacağına ilişkin yönergeler sağlanır.
 
 ## <a name="configuration-profile-structure"></a>Yapılandırma profili yapısı
 
-Yapılandırma profili, bir anahtarla tanımlanan (tercihin adını belirtir) girdilerden ve ardından tercihin yapısına bağlı olarak bir değerden oluşan *bir .plist* dosyasıdır. Değerler basit (sayısal değer gibi) veya iç içe geçmiş tercih listesi gibi karmaşık olabilir.
+Yapılandırma profili, bir anahtar tarafından tanımlanan girdilerden (tercihin adını belirtir) ve ardından tercihin yapısına bağlı olarak bir değerden oluşan bir *.plist* dosyasıdır. Değerler basit (sayısal değer gibi) veya iç içe yerleştirilmiş tercih listesi gibi karmaşık olabilir.
 
 > [!CAUTION]
->Yapılandırma profilinin düzeni, kullandığınız yönetim konsoluna bağlıdır. Aşağıdaki bölümlerde JAMF ve Intune için yapılandırma profili örnekleri verilmiştir.
+>Yapılandırma profilinin düzeni, kullandığınız yönetim konsoluna bağlıdır. Aşağıdaki bölümlerde JAMF ve Intune için yapılandırma profilleri örnekleri yer almaktadır.
 
-Yapılandırma profilinin en üst düzeyi, sonraki bölümlerde daha ayrıntılı olarak açıklanan Uç Nokta için Microsoft Defender'ın alt bölümlerine yapılan ürün genelinde tercihler ve girdileri içerir.
+Yapılandırma profilinin en üst düzeyi, ürün genelindeki tercihleri ve Uç Nokta için Microsoft Defender alt alanları için girişleri içerir ve bunlar sonraki bölümlerde daha ayrıntılı olarak açıklanmıştır.
 
 ### <a name="antivirus-engine-preferences"></a>Virüsten koruma altyapısı tercihleri
 
-Yapılandırma *profilinin virüsten* koruma bölümü, Uç Nokta için Microsoft Defender'ın virüsten koruma bileşeninin tercihlerini yönetmek için kullanılır.
+Yapılandırma profilinin *antivirusEngine* bölümü, Uç Nokta için Microsoft Defender virüsten koruma bileşeninin tercihlerini yönetmek için kullanılır.
 
 <br>
 
@@ -67,17 +67,17 @@ Yapılandırma *profilinin virüsten* koruma bölümü, Uç Nokta için Microsof
 
 #### <a name="enforcement-level-for-antivirus-engine"></a>Virüsten koruma altyapısı için zorlama düzeyi
 
-Virüsten koruma altyapısının zorlama tercihini belirtir. Zorlama düzeyini ayarlama için üç değer vardır:
+Virüsten koruma altyapısının zorlama tercihini belirtir. Zorlama düzeyini ayarlamak için üç değer vardır:
 
-- Gerçek zamanlı (`real_time`): Gerçek zamanlı koruma (dosyalara erişildikten sonra tarama) etkinleştirilir.
+- Gerçek zamanlı (`real_time`): Gerçek zamanlı koruma (erişilen dosyaları tara) etkinleştirilir.
 - İsteğe bağlı (`on_demand`): Dosyalar yalnızca isteğe bağlı olarak taranır. Burada:
   - Gerçek zamanlı koruma kapalıdır.
-- Edilgen (`passive`): Virüsten koruma altyapısını pasif modunda çalıştırır. Burada:
+- Pasif (`passive`): Virüsten koruma altyapısını pasif modda çalıştırır. Burada:
   - Gerçek zamanlı koruma kapalıdır.
-  - Üzerine tarama özelliği açık.
-  - Otomatik tehdit düzeltmesi kapalı.
-  - Güvenlik zekası güncelleştirmeleri açık.
-  - Durum menüsü simgesi gizlenmiş.
+  - İsteğe bağlı tarama açıktır.
+  - Otomatik tehdit düzeltme kapalı.
+  - Güvenlik bilgileri güncelleştirmeleri açıktır.
+  - Durum menüsü simgesi gizlenir.
 
 <br>
 
@@ -88,13 +88,25 @@ Virüsten koruma altyapısının zorlama tercihini belirtir. Zorlama düzeyini a
 |**Etki alanı**|`com.microsoft.wdav`|
 |**Anahtar**|enforcementLevel|
 |**Veri türü**|Dize|
-|**Olası değerler**|real_time (varsayılan) <p> on_demand <p> edilgen|
-|**Açıklamalar**|Uç nokta sürüm 101.10.72 veya üzerinde Microsoft Defender'da kullanılabilir.|
+|**Olası değerler**|real_time (varsayılan) <p> on_demand <p> Pasif|
+|**Açıklamalar**|Uç Nokta için Microsoft Defender sürüm 101.10.72 veya üzeri sürümlerde kullanılabilir.|
 |||
 
-#### <a name="run-a-scan-after-definitions-are-updated"></a>Tanımlar güncelleştirildikten sonra taramayı çalıştırma
+#### <a name="configure-file-hash-computation-feature"></a>Dosya karması hesaplama özelliğini yapılandırma
 
-Cihaza yeni güvenlik zekası güncelleştirmeleri indirildikten sonra bir işlem taraması başlatıp başlatmayacağız belirtir. Bu ayarın etkinleştirilmesi, cihazın çalışan işlemlerinin virüsten koruma taramasını tetikler.
+Dosya karması hesaplama özelliğini etkinleştirir veya devre dışı bırakır. Bu özellik etkinleştirildiğinde, Uç Nokta için Defender taramış olduğu dosyalar için karmaları hesaplar. Bu özelliğin etkinleştirilmesi cihaz performansını etkileyebilir. Daha fazla ayrıntı için bkz. [Dosyalar için gösterge oluşturma](indicator-file.md).
+
+|Bölüm|Değer|
+|---|---|
+|**Etki alanı**|`com.microsoft.wdav`|
+|**Anahtar**|enableFileHashComputation|
+|**Veri türü**|Dize|
+|**Olası değerler**|devre dışı (varsayılan) <p> Etkin|
+|**Açıklamalar**|Uç Nokta için Defender sürüm 101.73.77 veya sonraki sürümlerde kullanılabilir.|
+
+#### <a name="run-a-scan-after-definitions-are-updated"></a>Tanımlar güncelleştirildikten sonra tarama çalıştırma
+
+Cihaza yeni güvenlik bilgileri güncelleştirmeleri indirildikten sonra işlem taraması başlatılıp başlatılmayacağını belirtir. Bu ayarın etkinleştirilmesi, cihazın çalışan işlemlerinde virüsten koruma taraması tetikler.
 
 <br>
 
@@ -105,13 +117,13 @@ Cihaza yeni güvenlik zekası güncelleştirmeleri indirildikten sonra bir işle
 |**Etki alanı**|`com.microsoft.wdav`|
 |**Anahtar**|scanAfterDefinitionUpdate|
 |**Veri türü**|Boole|
-|**Olası değerler**|true (varsayılan) <p> false|
-|**Açıklamalar**|Uç nokta sürüm 101.41.10 veya üzerinde Microsoft Defender'da kullanılabilir.|
+|**Olası değerler**|true (varsayılan) <p> False|
+|**Açıklamalar**|Uç Nokta için Microsoft Defender sürüm 101.41.10 veya üzeri sürümlerde kullanılabilir.|
 |||
 
-#### <a name="scan-archives-on-demand-antivirus-scans-only"></a>Arşivleri tarama (yalnızca isteğe bağlı virüsten koruma taramaları)
+#### <a name="scan-archives-on-demand-antivirus-scans-only"></a>Arşivleri tara (yalnızca isteğe bağlı virüsten koruma taramaları)
 
-isteğe bağlı virüsten koruma taramaları sırasında arşivlerin taranıp taranmasının gerekip gerek olmadığını belirtir.
+İsteğe bağlı virüsten koruma taramaları sırasında arşivlerin taranıp taranmayacağını belirtir.
 
 <br>
 
@@ -122,13 +134,13 @@ isteğe bağlı virüsten koruma taramaları sırasında arşivlerin taranıp ta
 |**Etki alanı**|`com.microsoft.wdav`|
 |**Anahtar**|scanArchives|
 |**Veri türü**|Boole|
-|**Olası değerler**|true (varsayılan) <p> false|
-|**Açıklamalar**|Uç nokta sürüm 101.41.10 veya üzerinde Microsoft Defender'da kullanılabilir.|
+|**Olası değerler**|true (varsayılan) <p> False|
+|**Açıklamalar**|Uç Nokta için Microsoft Defender sürüm 101.41.10 veya üzeri sürümlerde kullanılabilir.|
 |||
 
-#### <a name="degree-of-parallelism-for-on-demand-scans"></a>Isteğe bağlı taramalar için paralellik derecesi
+#### <a name="degree-of-parallelism-for-on-demand-scans"></a>İsteğe bağlı taramalar için paralellik derecesi
 
-Isteğe bağlı taramalar için paralellik derecesini belirtir. Bu, taramayı gerçekleştirmek için kullanılan iş parçacığı sayısına karşılık gelen CPU kullanımını ve isteğe bağlı tarama süresini etkiler.
+İsteğe bağlı taramalar için paralellik derecesini belirtir. Bu, taramayı gerçekleştirmek için kullanılan iş parçacığı sayısına karşılık gelir ve CPU kullanımını ve isteğe bağlı tarama süresini etkiler.
 
 <br>
 
@@ -140,12 +152,12 @@ Isteğe bağlı taramalar için paralellik derecesini belirtir. Bu, taramayı ge
 |**Anahtar**|maximumOnDemandScanThreads|
 |**Veri türü**|Tamsayı|
 |**Olası değerler**|2 (varsayılan). İzin verilen değerler 1 ile 64 arasındaki tamsayılardır.|
-|**Açıklamalar**|Uç nokta sürüm 101.41.10 veya üzerinde Microsoft Defender'da kullanılabilir.|
+|**Açıklamalar**|Uç Nokta için Microsoft Defender sürüm 101.41.10 veya üzeri sürümlerde kullanılabilir.|
 |||
 
 #### <a name="exclusion-merge-policy"></a>Dışlama birleştirme ilkesi
 
-Dışlamalar için birleştirme ilkesi belirtin. Bu, yönetici tanımlı ve kullanıcı tanımlı dışlamaların ()`merge` veya yalnızca yönetici tanımlı dışlamaların ()`admin_only` bir bileşimi olabilir. Bu ayar, yerel kullanıcıların kendi dışlamalarını tanımlamalarını kısıtlamak için kullanılabilir.
+Dışlamalar için birleştirme ilkesini belirtin. Bu, yönetici tanımlı ve kullanıcı tanımlı dışlamaların (`merge`) veya yalnızca yönetici tanımlı dışlamaların (`admin_only`) birleşimi olabilir. Bu ayar, yerel kullanıcıların kendi dışlamalarını tanımlamasını kısıtlamak için kullanılabilir.
 
 <br>
 
@@ -156,14 +168,14 @@ Dışlamalar için birleştirme ilkesi belirtin. Bu, yönetici tanımlı ve kull
 |**Etki alanı**|`com.microsoft.wdav`|
 |**Anahtar**|exclusionsMergePolicy|
 |**Veri türü**|Dize|
-|**Olası değerler**|birleştirme (varsayılan) <p> admin_only|
-|**Açıklamalar**|Uç nokta sürüm 100.83.73 veya üzerinde Microsoft Defender'da kullanılabilir.|
+|**Olası değerler**|merge (varsayılan) <p> admin_only|
+|**Açıklamalar**|Uç Nokta için Microsoft Defender sürüm 100.83.73 veya üzeri sürümlerde kullanılabilir.|
 |||
 
 #### <a name="scan-exclusions"></a>Tarama dışlamaları
 
-Taranma dışında bırakılan varlıkları belirtin. Dışlamalar tam yollar, uzantılar veya dosya adlarla belirtilebilir.
-(Dışlamalar bir öğe dizisi olarak belirtilir, yönetici herhangi bir sırada, gereken sayıda öğe belirtilebilir.)
+Taranmayan varlıkları belirtin. Dışlamalar tam yollar, uzantılar veya dosya adlarıyla belirtilebilir.
+(Dışlamalar bir öğe dizisi olarak belirtilir, yönetici gerektiği kadar öğeyi herhangi bir sırada belirtebilir.)
 
 <br>
 
@@ -172,14 +184,14 @@ Taranma dışında bırakılan varlıkları belirtin. Dışlamalar tam yollar, u
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|dışlamalar|
+|**Anahtar**|Dışlamalar|
 |**Veri türü**|Sözlük (iç içe tercih)|
 |**Açıklamalar**|Sözlük içeriğinin açıklaması için aşağıdaki bölümlere bakın.|
 |||
 
 ##### <a name="type-of-exclusion"></a>Dışlama türü
 
-Türe göre taranma dışında bırakılan içeriği belirtin.
+Türe göre taranmayan içeriği belirtin.
 
 <br>
 
@@ -193,9 +205,9 @@ Türe göre taranma dışında bırakılan içeriği belirtin.
 |**Olası değerler**|excludedPath <p> excludedFileExtension <p> excludedFileName|
 |||
 
-##### <a name="path-to-excluded-content"></a>Dışarıda bırakılan içeriğin yolu
+##### <a name="path-to-excluded-content"></a>Dışlanan içeriğin yolu
 
-Tam dosya yolu ile taranma dışında bırakılan içeriği belirtin.
+Tam dosya yolu tarafından taranmayan içeriği belirtin.
 
 <br>
 
@@ -204,15 +216,15 @@ Tam dosya yolu ile taranma dışında bırakılan içeriği belirtin.
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|yol|
+|**Anahtar**|Yolu|
 |**Veri türü**|Dize|
 |**Olası değerler**|geçerli yollar|
-|**Açıklamalar**|Yalnızca *dışlanan* *$type Path olduğunda uygulanabilir*|
+|**Açıklamalar**|Yalnızca *$type* *excludedPath* olduğunda uygulanabilir|
 |||
 
 ## <a name="supported-exclusion-types"></a>Desteklenen dışlama türleri
 
-Aşağıdaki tablo Mac'te Uç Nokta için Defender tarafından desteklenen dışlama türlerini gösterir.
+Aşağıdaki tabloda, Mac'te Uç Nokta için Defender tarafından desteklenen dışlama türleri gösterilmektedir.
 
 <br>
 
@@ -221,29 +233,29 @@ Aşağıdaki tablo Mac'te Uç Nokta için Defender tarafından desteklenen dış
 |Dışlama|Tanım|Örnekler|
 |---|---|---|
 |Dosya uzantısı|Uzantılı tüm dosyalar, cihazın herhangi bir yerinde|`.test`|
-|Dosya|Tam yoldan tanımlanan belirli bir dosya|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
-|Klasör|Belirtilen klasörün altındaki tüm dosyalar (tekrarlı bir şekilde)|`/var/log/` <p> `/var/*/`|
-|İşlem|Belirli bir işlem (tam yol veya dosya adı ile belirtilen işlem) ve bu dosya tarafından açılan tüm dosyalar|`/bin/cat` <p> `cat` <p> `c?t`|
+|Dosya|Tam yol tarafından tanımlanan belirli bir dosya|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
+|Klasör|Belirtilen klasör altındaki tüm dosyalar (özyinelemeli olarak)|`/var/log/` <p> `/var/*/`|
+|Işlem|Belirli bir işlem (tam yol veya dosya adıyla belirtilir) ve tarafından açılan tüm dosyalar|`/bin/cat` <p> `cat` <p> `c?t`|
 ||||
 
 > [!IMPORTANT]
-> Başarıyla dışlamak için yukarıdaki yollar sembolik bağlantı değil, sabit bağlantılar olmalı. 'i çalıştırarak yolun sembolik bir bağlantı olup olduğunu kontrol edin `file <path-name>`.
+> Yukarıdaki yolların başarıyla dışlanması için sembolik bağlantılar değil sabit bağlantılar olması gerekir. komutunu çalıştırarak `file <path-name>`yolun sembolik bir bağlantı olup olmadığını de kontrol edebilirsiniz.
 
-Dosya, klasör ve süreç dışlamaları aşağıdaki joker karakterleri destekler:
+Dosya, klasör ve işlem dışlamaları aşağıdaki joker karakterleri destekler:
 
 <br>
 
 ****
 
-|Joker karakter|Açıklama|Örnek|Eşleşmeler|Eşmser değil|
+|Joker|Açıklama|Örnek|Eşleşen|Eşleşmiyor|
 |---|---|---|---|---|
-|\*|Hiçbiri dahil herhangi bir sayıda karakterle eşler (bu joker karakterin yol içinde kullanılırken tek bir klasörün yerini alamayacaktır)|`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`|
-|?|Herhangi bir tek karakterle eşler|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`|
+|\*|Hiçbiri dahil olmak üzere herhangi bir sayıda karakterle eşleşir (bu joker karakter bir yolun içinde kullanıldığında yalnızca bir klasörü değiştireceğini unutmayın)|`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`|
+|?|Herhangi bir tek karakterle eşleşir|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`|
 ||||||
 
 ### <a name="path-type-file--directory"></a>Yol türü (dosya / dizin)
 
-Yol özelliğinin *bir* dosyaya veya dizine başvurup başvurduğuna işaret eder.
+*path* özelliğinin bir dosyaya veya dizine başvurup başvurmadığını belirtin.
 
 <br>
 
@@ -254,13 +266,13 @@ Yol özelliğinin *bir* dosyaya veya dizine başvurup başvurduğuna işaret ede
 |**Etki alanı**|`com.microsoft.wdav`|
 |**Anahtar**|isDirectory|
 |**Veri türü**|Boole|
-|**Olası değerler**|false (varsayılan) <p> true|
-|**Açıklamalar**|Yalnızca *dışlanan* *$type Path olduğunda uygulanabilir*|
+|**Olası değerler**|false (varsayılan) <p> True|
+|**Açıklamalar**|Yalnızca *$type* *excludedPath* olduğunda uygulanabilir|
 |||
 
-### <a name="file-extension-excluded-from-the-scan"></a>Tarama dışında bırakılan dosya uzantısı
+### <a name="file-extension-excluded-from-the-scan"></a>Dosya uzantısı taramanın dışında bırakıldı
 
-Dosya uzantısıyla taranma dışında bırakılan içeriği belirtin.
+Dosya uzantısı tarafından taranmayan içeriği belirtin.
 
 <br>
 
@@ -269,15 +281,15 @@ Dosya uzantısıyla taranma dışında bırakılan içeriği belirtin.
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|uzantı|
+|**Anahtar**|Uzantısı|
 |**Veri türü**|Dize|
 |**Olası değerler**|geçerli dosya uzantıları|
-|**Açıklamalar**|Yalnızca $type *excludedFileExtension olduğunda uygulanabilir* |
+|**Açıklamalar**|Yalnızca *$type* *excludedFileExtension* olduğunda geçerlidir|
 |||
 
-### <a name="process-excluded-from-the-scan"></a>Tarama dışında bırakılan işlem
+### <a name="process-excluded-from-the-scan"></a>Taramanın dışında tutulan işlem
 
-Tüm dosya etkinliğinin tarama dışında tutulacak bir işlem belirtme. İşlem, adına (örneğin, ) veya tam yola (örneğin, `cat`) göre belirtilebilir `/bin/cat`.
+Tüm dosya etkinliğinin taramanın dışında tutulacağını bir işlem belirtin. İşlem adıyla (örneğin, `cat`) veya tam yoluyla (örneğin, `/bin/cat`) belirtilebilir.
 
 <br>
 
@@ -286,15 +298,15 @@ Tüm dosya etkinliğinin tarama dışında tutulacak bir işlem belirtme. İşle
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|ad|
+|**Anahtar**|Adı|
 |**Veri türü**|Dize|
 |**Olası değerler**|herhangi bir dize|
-|**Açıklamalar**|Yalnızca $type *DosyaAdı dışlanmışsa uygulanabilir* |
+|**Açıklamalar**|Yalnızca *$type* *excludedFileName* olduğunda geçerlidir|
 |||
 
-#### <a name="allowed-threats"></a>İzin verilen tehdit
+#### <a name="allowed-threats"></a>İzin verilen tehditler
 
-Mac'te Uç Nokta için Defender tarafından engel tehdit olarak belirtebilirsiniz. Bu tehditlerin çalışmasına izin verilir.
+Tehditleri Mac'te Uç Nokta için Defender tarafından engellenmeyen ada göre belirtin. Bu tehditlerin çalışmasına izin verilir.
 
 <br>
 
@@ -307,9 +319,9 @@ Mac'te Uç Nokta için Defender tarafından engel tehdit olarak belirtebilirsini
 |**Veri türü**|Dize dizisi|
 |||
 
-#### <a name="disallowed-threat-actions"></a>Tehdit eylemlerine izin verilmedi
+#### <a name="disallowed-threat-actions"></a>İzin verilmeyen tehdit eylemleri
 
-Bir cihazın yerel kullanıcılarının tehdit algılandığında gerçekleştire eylemleri kısıtlar. Bu listede yer alan eylemler kullanıcı arabiriminde görüntülenmez.
+Bir cihazın yerel kullanıcısının tehdit algılandığında gerçekleştirebileceği eylemleri kısıtlar. Bu listede yer alan eylemler kullanıcı arabiriminde görüntülenmez.
 
 <br>
 
@@ -320,13 +332,13 @@ Bir cihazın yerel kullanıcılarının tehdit algılandığında gerçekleştir
 |**Etki alanı**|`com.microsoft.wdav`|
 |**Anahtar**|disallowedThreatActions|
 |**Veri türü**|Dize dizisi|
-|**Olası değerler**|izin ver (kullanıcıların tehditlere izin vermelerini kısıtlar) <p> geri yükleme (kullanıcıların karantinadan tehditleri geri yüklemesini kısıtlar)|
-|**Açıklamalar**|Uç nokta sürüm 100.83.73 veya üzerinde Microsoft Defender'da kullanılabilir.|
+|**Olası değerler**|allow (kullanıcıların tehditlere izin vermelerini kısıtlar) <p> geri yükleme (kullanıcıların karantinadan tehditleri geri yüklemesini kısıtlar)|
+|**Açıklamalar**|Uç Nokta için Microsoft Defender sürüm 100.83.73 veya üzeri sürümlerde kullanılabilir.|
 |||
 
 #### <a name="threat-type-settings"></a>Tehdit türü ayarları
 
-MacOS'ta Uç Nokta için Microsoft Defender tarafından bazı tehdit türlerinin nasıl ele alıl olduğunu belirtin.
+MacOS'ta belirli tehdit türlerinin Uç Nokta için Microsoft Defender tarafından nasıl işleneceğini belirtin.
 
 <br>
 
@@ -351,17 +363,17 @@ Tehdit türlerini belirtin.
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|anahtar|
+|**Anahtar**|Anahtar|
 |**Veri türü**|Dize|
 |**Olası değerler**|potentially_unwanted_application <p> archive_bomb|
 |||
 
-##### <a name="action-to-take"></a>Alacak eylem
+##### <a name="action-to-take"></a>Gerçekleştirecek eylem
 
-Önceki bölümde belirtilen türde bir tehdit algılandığında hangi eylemin geçerli olduğunu belirtin. Aşağıdaki seçeneklerden birini belirleyin:
+Önceki bölümde belirtilen türde bir tehdit algılandığında hangi eylemin gerçekleştirileceğini belirtin. Aşağıdaki seçeneklerden birini belirleyin:
 
 - **Denetim**: Cihazınız bu tür tehditlere karşı korunmaz, ancak tehditle ilgili bir giriş günlüğe kaydedilir.
-- **Engelle**: Cihazınız bu tür tehditlere karşı korunmaktadır ve kullanıcı arabirimi ve güvenlik konsolunda bu durum size bildirilecek.
+- **Engelle**: Cihazınız bu tür tehditlere karşı korunur ve kullanıcı arabiriminde ve güvenlik konsolunda size bildirilir.
 - **Kapalı**: Cihazınız bu tür tehditlere karşı korunmaz ve hiçbir şey günlüğe kaydedilmez.
 
 <br>
@@ -371,14 +383,14 @@ Tehdit türlerini belirtin.
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|değer|
+|**Anahtar**|Değer|
 |**Veri türü**|Dize|
-|**Olası değerler**|denetim (varsayılan) <p> engelle <p> Kapalı|
+|**Olası değerler**|denetim (varsayılan) <p> Blok <p> kapalı|
 |||
 
 #### <a name="threat-type-settings-merge-policy"></a>Tehdit türü ayarları birleştirme ilkesi
 
-Tehdit türü ayarları için birleştirme ilkesi belirtin. Bu, yönetici tanımlı ve kullanıcı tanımlı ayarların (`merge`) veya yalnızca yönetici tanımlı ayarların () bir bileşimi olabilir`admin_only`. Bu ayar, yerel kullanıcıların farklı tehdit türleri için kendi ayarlarını tanımlamalarını kısıtlamak için kullanılabilir.
+Tehdit türü ayarları için birleştirme ilkesini belirtin. Bu, yönetici tanımlı ve kullanıcı tanımlı ayarların () veya yalnızca yönetici tanımlı ayarların (`merge``admin_only`) birleşimi olabilir. Bu ayar, yerel kullanıcıların farklı tehdit türleri için kendi ayarlarını tanımlamasını kısıtlamak için kullanılabilir.
 
 <br>
 
@@ -389,13 +401,13 @@ Tehdit türü ayarları için birleştirme ilkesi belirtin. Bu, yönetici tanım
 |**Etki alanı**|`com.microsoft.wdav`|
 |**Anahtar**|threatTypeSettingsMergePolicy|
 |**Veri türü**|Dize|
-|**Olası değerler**|birleştirme (varsayılan) <p> admin_only|
-|**Açıklamalar**|Uç nokta sürüm 100.83.73 veya üzerinde Microsoft Defender'da kullanılabilir.|
+|**Olası değerler**|merge (varsayılan) <p> admin_only|
+|**Açıklamalar**|Uç Nokta için Microsoft Defender sürüm 100.83.73 veya üzeri sürümlerde kullanılabilir.|
 |||
 
-#### <a name="antivirus-scan-history-retention-in-days"></a>Virüsten koruma tarama geçmişi bekletme (gün içinde)
+#### <a name="antivirus-scan-history-retention-in-days"></a>Virüsten koruma tarama geçmişi saklama (gün olarak)
 
-Sonuçların cihaz tarama geçmişinde kaç gün korunacaklarını belirtin. Eski tarama sonuçları geçmişten kaldırılır. Diskten de kaldırılan eski karantinaya alınmış dosyalar.
+Sonuçların cihazdaki tarama geçmişinde tutulacağını gün sayısını belirtin. Eski tarama sonuçları geçmişten kaldırılır. Diskten de kaldırılan eski karantinaya alınan dosyalar.
 
 <br>
 
@@ -407,12 +419,12 @@ Sonuçların cihaz tarama geçmişinde kaç gün korunacaklarını belirtin. Esk
 |**Anahtar**|scanResultsRetentionDays|
 |**Veri türü**|Dize|
 |**Olası değerler**|90 (varsayılan). İzin verilen değerler 1 günden 180 güne kadardır.|
-|**Açıklamalar**|Uç nokta sürüm 101.07.23 veya üzerinde Microsoft Defender'da kullanılabilir.|
+|**Açıklamalar**|Uç Nokta için Microsoft Defender sürüm 101.07.23 veya üzeri sürümlerde kullanılabilir.|
 |||
 
-#### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Virüsten koruma tarama geçmişinde en fazla öğe sayısı
+#### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Virüsten koruma tarama geçmişindeki en fazla öğe sayısı
 
-Tarama geçmişinde tutmak istediğiniz girdi sayısı üst sayısını belirtin. Girdiler, geçmişte gerçekleştirilen tüm isteğe bağlı taramaları ve tüm virüsten koruma algılamalarını içerir.
+Tarama geçmişinde tutulacak en fazla girdi sayısını belirtin. Girişler, geçmişte gerçekleştirilen tüm isteğe bağlı taramaları ve tüm virüsten koruma algılamalarını içerir.
 
 <br>
 
@@ -424,12 +436,12 @@ Tarama geçmişinde tutmak istediğiniz girdi sayısı üst sayısını belirtin
 |**Anahtar**|scanHistoryMaximumItems|
 |**Veri türü**|Dize|
 |**Olası değerler**|10000 (varsayılan). İzin verilen değerler 5000 öğeden 15000 öğeye kadardır.|
-|**Açıklamalar**|Uç nokta sürüm 101.07.23 veya üzerinde Microsoft Defender'da kullanılabilir.|
+|**Açıklamalar**|Uç Nokta için Microsoft Defender sürüm 101.07.23 veya üzeri sürümlerde kullanılabilir.|
 |||
 
-### <a name="cloud-delivered-protection-preferences"></a>Bulut teslimi koruma tercihleri
+### <a name="cloud-delivered-protection-preferences"></a>Bulut tabanlı koruma tercihleri
 
-macOS'ta Uç Nokta için Microsoft Defender'ın bulut tabanlı koruma özelliklerini yapılandırın.
+macOS üzerinde Uç Nokta için Microsoft Defender bulut tabanlı koruma özelliklerini yapılandırın.
 
 <br>
 
@@ -443,9 +455,9 @@ macOS'ta Uç Nokta için Microsoft Defender'ın bulut tabanlı koruma özellikle
 |**Açıklamalar**|Sözlük içeriğinin açıklaması için aşağıdaki bölümlere bakın.|
 |||
 
-#### <a name="enable--disable-cloud-delivered-protection"></a>Bulut teslimi korumasını etkinleştirme / devre dışı bırakma
+#### <a name="enable--disable-cloud-delivered-protection"></a>Bulut tabanlı korumayı etkinleştirme/devre dışı bırakma
 
-Cihazda bulut teslimi korumasını etkinleştirip etkinleştirmeymezseniz belirtin. Hizmetlerinizin güvenliğini geliştirmek için bu özelliği açık tutmanızı öneririz.
+Cihazda bulut tabanlı korumanın etkinleştirilip etkinleştirilmeyeceğini belirtin. Hizmetlerinizin güvenliğini artırmak için bu özelliği açık tutmanızı öneririz.
 
 <br>
 
@@ -454,14 +466,14 @@ Cihazda bulut teslimi korumasını etkinleştirip etkinleştirmeymezseniz belirt
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|etkin|
+|**Anahtar**|Etkin|
 |**Veri türü**|Boole|
-|**Olası değerler**|true (varsayılan) <p> false|
+|**Olası değerler**|true (varsayılan) <p> False|
 |||
 
-#### <a name="diagnostic-collection-level"></a>Tanılama koleksiyonu düzeyi
+#### <a name="diagnostic-collection-level"></a>Tanılama toplama düzeyi
 
-Tanılama verileri, Uç nokta için Microsoft Defender'ı güvenli ve güncel tutmak, sorunları algılamak, tanılamak ve düzeltmek ve ürün geliştirmeleri yapmak için kullanılır. Bu ayar, Uç Nokta için Microsoft Defender tarafından Microsoft'a gönderilen tanılama düzeyini belirler.
+Tanılama verileri, Uç Nokta için Microsoft Defender güvenli ve güncel tutmak, sorunları algılamak, tanılamak ve düzeltmek ve ürün geliştirmeleri yapmak için kullanılır. Bu ayar, Uç Nokta için Microsoft Defender tarafından Microsoft'a gönderilen tanılama düzeyini belirler.
 
 <br>
 
@@ -475,9 +487,27 @@ Tanılama verileri, Uç nokta için Microsoft Defender'ı güvenli ve güncel tu
 |**Olası değerler**|isteğe bağlı (varsayılan) <p> Gerekli|
 |||
 
-#### <a name="enable--disable-automatic-sample-submissions"></a>Otomatik örnek gönderimleri etkinleştirme / devre dışı bırakma
+#### <a name="configure-cloud-block-level"></a>Bulut bloğu düzeyini yapılandırma
 
-Şüpheli örneklerin (tehdit içerme olasılığı olan) Microsoft'a gönder olup olmadığını belirler. Gönderilen dosyanın büyük olasılıkla kişisel bilgi içermesi istenir.
+Bu ayar, Uç Nokta için Defender'ın şüpheli dosyaları engelleme ve tarama konusunda ne kadar agresif olacağını belirler. Bu ayar açıksa, engellenecek ve taranacak şüpheli dosyaları tanımlarken Uç Nokta için Defender daha agresif olacaktır; aksi takdirde, daha az agresif olur ve bu nedenle daha az sıklıkta blok ve tarama olur. Bulut bloğu düzeyini ayarlamak için beş değer vardır:
+
+- Normal (`normal`): Varsayılan engelleme düzeyi.
+- Orta (`moderate`): Yalnızca yüksek güvenilirlik algılamaları için karar verir.
+- Yüksek (`high`): Performansı iyileştirirken bilinmeyen dosyaları agresif bir şekilde engeller (zararlı olmayan dosyaları engelleme olasılığı daha yüksektir).
+- High Plus (`high_plus`): Bilinmeyen dosyaları agresif bir şekilde engeller ve ek koruma önlemleri uygular (istemci cihaz performansını etkileyebilir).
+- Sıfır Tolerans (`zero_tolerance`): Tüm bilinmeyen programları engeller.
+
+|Bölüm|Değer|
+|---|---|
+|**Etki alanı**|`com.microsoft.wdav`|
+|**Anahtar**|cloudBlockLevel|
+|**Veri türü**|Dize|
+|**Olası değerler**|normal (varsayılan) <p> Orta <p> Yüksek <p> high_plus <p> zero_tolerance|
+|**Açıklamalar**|Uç Nokta için Defender sürüm 101.56.62 veya sonraki sürümlerde kullanılabilir.|
+
+#### <a name="enable--disable-automatic-sample-submissions"></a>Otomatik örnek gönderimlerini etkinleştirme/devre dışı bırakma
+
+Şüpheli örneklerin (tehdit içerme olasılığı yüksek) Microsoft'a gönderilip gönderilmeyeceğini belirler. Gönderilen dosyanın kişisel bilgiler içerme olasılığı olup olmadığını sorarsınız.
 
 <br>
 
@@ -488,12 +518,12 @@ Tanılama verileri, Uç nokta için Microsoft Defender'ı güvenli ve güncel tu
 |**Etki alanı**|`com.microsoft.wdav`|
 |**Anahtar**|automaticSampleSubmission|
 |**Veri türü**|Boole|
-|**Olası değerler**|true (varsayılan) <p> false|
+|**Olası değerler**|true (varsayılan) <p> False|
 |||
 
-#### <a name="enable--disable-automatic-security-intelligence-updates"></a>Otomatik güvenlik zekası güncelleştirmelerini etkinleştirme / devre dışı bırakma
+#### <a name="enable--disable-automatic-security-intelligence-updates"></a>Otomatik güvenlik bilgileri güncelleştirmelerini etkinleştirme/devre dışı bırakma
 
-Güvenlik zekası güncelleştirmelerinin otomatik olarak yük olup olmadığını belirler:
+Güvenlik zekası güncelleştirmelerinin otomatik olarak yüklenip yüklenmediğini belirler:
 
 <br>
 
@@ -503,12 +533,12 @@ Güvenlik zekası güncelleştirmelerinin otomatik olarak yük olup olmadığın
 |---|---|
 |**Anahtar**|automaticDefinitionUpdateEnabled|
 |**Veri türü**|Boole|
-|**Olası değerler**|true (varsayılan) <p> false|
+|**Olası değerler**|true (varsayılan) <p> False|
 |||
 
 ### <a name="user-interface-preferences"></a>Kullanıcı arabirimi tercihleri
 
-macOS'ta Uç Nokta için Microsoft Defender kullanıcı arabirimi tercihlerini yönetin.
+macOS'ta Uç Nokta için Microsoft Defender kullanıcı arabiriminin tercihlerini yönetin.
 
 <br>
 
@@ -522,9 +552,9 @@ macOS'ta Uç Nokta için Microsoft Defender kullanıcı arabirimi tercihlerini y
 |**Açıklamalar**|Sözlük içeriğinin açıklaması için aşağıdaki bölümlere bakın.|
 |||
 
-#### <a name="show--hide-status-menu-icon"></a>Durum menüsünü göster / gizle simgesi
+#### <a name="show--hide-status-menu-icon"></a>Durum menüsü simgesini göster / gizle
 
-Ekranın sağ üst köşesindeki durum menüsü simgesinin göster mi yoksa gizleyip gizlenmezseniz belirtin.
+Ekranın sağ üst köşesindeki durum menüsü simgesinin gösterilip gösterilmeyeceğini veya gizleneceğini belirtin.
 
 <br>
 
@@ -535,12 +565,12 @@ Ekranın sağ üst köşesindeki durum menüsü simgesinin göster mi yoksa gizl
 |**Etki alanı**|`com.microsoft.wdav`|
 |**Anahtar**|hideStatusMenuIcon|
 |**Veri türü**|Boole|
-|**Olası değerler**|false (varsayılan) <p> true|
+|**Olası değerler**|false (varsayılan) <p> True|
 |||
 
-#### <a name="show--hide-option-to-send-feedback"></a>Geri bildirim göndermek için göster / gizle seçeneği
+#### <a name="show--hide-option-to-send-feedback"></a>Geri bildirim göndermek için göster /gizle seçeneği
 
-Kullanıcıların Microsoft'a geri bildirim gönderip gönderemezseniz, 'a gidip bunu belirtme `Help` > `Send Feedback`.
+Kullanıcıların adresine giderek `Help` > `Send Feedback`Microsoft'a geri bildirim gönderip gönderemeyeceğini belirtin.
 
 <br>
 
@@ -551,15 +581,15 @@ Kullanıcıların Microsoft'a geri bildirim gönderip gönderemezseniz, 'a gidip
 |**Etki alanı**|`com.microsoft.wdav`|
 |**Anahtar**|userInitiatedFeedback|
 |**Veri türü**|Dize|
-|**Olası değerler**|etkin (varsayılan) <p> devre dışı|
-|**Açıklamalar**|Uç nokta sürüm 101.19.61 veya üzerinde Microsoft Defender'da kullanılabilir.|
+|**Olası değerler**|etkin (varsayılan) <p> Devre dışı|
+|**Açıklamalar**|Uç Nokta için Microsoft Defender sürüm 101.19.61 veya üzeri sürümlerde kullanılabilir.|
 |||
 
 
 
-#### <a name="control-sign-in-to-consumer-version-of-microsoft-defender"></a>Microsoft Defender'ın tüketici sürümünde oturum açma denetimi
+#### <a name="control-sign-in-to-consumer-version-of-microsoft-defender"></a>Microsoft Defender'ın tüketici sürümünde oturum açmayı denetleme
 
-Kullanıcıların Microsoft Defender'ın tüketici sürümünde oturum açmasını isteyip istemeyebilirsiniz.
+Kullanıcıların Microsoft Defender'ın tüketici sürümünde oturum açıp açamayacağını belirtin.
 
 <br>
 
@@ -570,14 +600,14 @@ Kullanıcıların Microsoft Defender'ın tüketici sürümünde oturum açmasın
 |**Etki alanı**|`com.microsoft.wdav`|
 |**Anahtar**|consumerExperience|
 |**Veri türü**|Dize|
-|**Olası değerler**|etkin (varsayılan) <p> devre dışı|
-|**Açıklamalar**|Uç nokta sürüm 101.60.18 veya üzerinde Microsoft Defender'da kullanılabilir.|
+|**Olası değerler**|etkin (varsayılan) <p> Devre dışı|
+|**Açıklamalar**|Uç Nokta için Microsoft Defender sürüm 101.60.18 veya üzeri sürümlerde kullanılabilir.|
 |||
 
 
 ### <a name="endpoint-detection-and-response-preferences"></a>Uç nokta algılama ve yanıt tercihleri
 
-macOS'ta Uç uç noktada algılama ve yanıtlama için Microsoft Defender'EDR Uç Nokta(EDR) bileşeninin tercihlerini yönetin.
+macOS üzerinde Uç Nokta için Microsoft Defender uç nokta algılama ve yanıt (EDR) bileşeninin tercihlerini yönetin.
 
 <br>
 
@@ -586,16 +616,16 @@ macOS'ta Uç uç noktada algılama ve yanıtlama için Microsoft Defender'EDR U�
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|edr|
+|**Anahtar**|Edr|
 |**Veri türü**|Sözlük (iç içe tercih)|
 |**Açıklamalar**|Sözlük içeriğinin açıklaması için aşağıdaki bölümlere bakın.|
 |||
 
 #### <a name="device-tags"></a>Cihaz etiketleri
 
-Etiket adını ve değerini belirtin.
+Bir etiket adı ve değerini belirtin.
 
-- GROUP etiketi, cihazı belirtilen değerle etiketler. Etiket, cihaz sayfasının altındaki portala yansıtılmaktadır ve filtreleme ve gruplama cihazları için kullanılabilir.
+- GROUP etiketi, cihazı belirtilen değerle etiketler. Etiket portalda cihaz sayfasının altında yansıtılır ve cihazları filtrelemek ve gruplandırma için kullanılabilir.
 
 <br>
 
@@ -604,14 +634,14 @@ Etiket adını ve değerini belirtin.
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|etiketler|
+|**Anahtar**|Etiketler|
 |**Veri türü**|Sözlük (iç içe tercih)|
 |**Açıklamalar**|Sözlük içeriğinin açıklaması için aşağıdaki bölümlere bakın.|
 |||
 
 ##### <a name="type-of-tag"></a>Etiket türü
 
-Etiketin türünü belirtir
+Etiket türünü belirtir
 
 <br>
 
@@ -620,12 +650,12 @@ Etiketin türünü belirtir
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|anahtar|
+|**Anahtar**|Anahtar|
 |**Veri türü**|Dize|
 |**Olası değerler**|`GROUP`|
 |||
 
-##### <a name="value-of-tag"></a>Etiket değeri
+##### <a name="value-of-tag"></a>Etiketin değeri
 
 Etiketin değerini belirtir
 
@@ -636,29 +666,29 @@ Etiketin değerini belirtir
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|değer|
+|**Anahtar**|Değer|
 |**Veri türü**|Dize|
 |**Olası değerler**|herhangi bir dize|
 |||
 
 > [!IMPORTANT]
 >
-> - Etiket türü başına yalnızca bir değer ayarlanabilirsiniz.
-> - Etiketlerin türü benzersizdir ve aynı yapılandırma profilinde yinelenene kadar yinelenir.
+> - Etiket türü başına yalnızca bir değer ayarlanabilir.
+> - Etiketlerin türü benzersizdir ve aynı yapılandırma profilinde tekrarlanmamalıdır.
 
 ## <a name="recommended-configuration-profile"></a>Önerilen yapılandırma profili
 
-Çalışmaya başlamanız için, aşağıdaki yapılandırmanın kurum için Microsoft Defender for Endpoint'ın sağladığı tüm koruma özelliklerinden yararlanmasını öneririz.
+Başlamak için, kuruluşunuzun Uç Nokta için Microsoft Defender sağladığı tüm koruma özelliklerinden yararlanması için aşağıdaki yapılandırmayı öneririz.
 
-Aşağıdaki yapılandırma profili (veya JAMF durumunda, özel ayarlar yapılandırma profiline yüklen listeden bir özellik listesi) şu şekilde olur:
+Aşağıdaki yapılandırma profili (veya JAMF durumunda, özel ayarlar yapılandırma profiline yüklenebilecek bir özellik listesi) şunları yapar:
 
-- Gerçek zamanlı korumayı (RTP) etkinleştirme
-- Aşağıdaki tehdit türlerinin nasıl iş idaresi olduğunu belirtin:
-  - **İstenmeyen olabilecek uygulamalar (PUA)** engellenmiş
-  - **Arşiv arşiv** (yüksek sıkıştırma hızı olan dosya) Uç nokta günlükleri için Microsoft Defender'da denetlendi
-- Otomatik güvenlik zekası güncelleştirmelerini etkinleştirme
-- Bulut teslimi korumasını etkinleştirme
-- Otomatik örnek gönderimi etkinleştirme
+- Gerçek zamanlı korumayı etkinleştirme (RTP)
+- Aşağıdaki tehdit türlerinin nasıl işleneceğini belirtin:
+  - **İstenmeyebilecek uygulamalar (PUA)** engellendi
+  - **Arşiv bombaları** (yüksek sıkıştırma oranına sahip dosya) Uç Nokta için Microsoft Defender günlüklerde denetleniyor
+- Otomatik güvenlik bilgileri güncelleştirmelerini etkinleştirme
+- Bulut tabanlı korumayı etkinleştirme
+- Otomatik örnek göndermeyi etkinleştirme
 
 ### <a name="property-list-for-jamf-recommended-configuration-profile"></a>JAMF önerilen yapılandırma profili için özellik listesi
 
@@ -700,7 +730,7 @@ Aşağıdaki yapılandırma profili (veya JAMF durumunda, özel ayarlar yapılan
 </plist>
 ```
 
-### <a name="intune-recommended-profile"></a>Intune önerilen profil
+### <a name="intune-recommended-profile"></a>Önerilen profili Intune
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -783,7 +813,7 @@ Aşağıdaki yapılandırma profili (veya JAMF durumunda, özel ayarlar yapılan
 
 ## <a name="full-configuration-profile-example"></a>Tam yapılandırma profili örneği
 
-Aşağıdaki şablonlar, bu belgede açıklanan tüm ayarlar için girdiler içerir ve macOS'ta Uç Nokta için Microsoft Defender üzerinde daha fazla denetime sahip olmak istediğiniz daha gelişmiş senaryolarda kullanılabilir.
+Aşağıdaki şablonlar, bu belgede açıklanan tüm ayarların girdilerini içerir ve macOS'ta Uç Nokta için Microsoft Defender üzerinde daha fazla denetime ihtiyacınız olan daha gelişmiş senaryolar için kullanılabilir.
 
 ### <a name="property-list-for-jamf-full-configuration-profile"></a>JAMF tam yapılandırma profili için özellik listesi
 
@@ -904,7 +934,7 @@ Aşağıdaki şablonlar, bu belgede açıklanan tüm ayarlar için girdiler içe
 </plist>
 ```
 
-### <a name="intune-full-profile"></a>Intune tam profili
+### <a name="intune-full-profile"></a>Tam profil Intune
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -1064,9 +1094,9 @@ Aşağıdaki şablonlar, bu belgede açıklanan tüm ayarlar için girdiler içe
 </plist>
 ```
 
-## <a name="property-list-validation"></a>Özellik listesi doğrulaması
+## <a name="property-list-validation"></a>Özellik listesi doğrulama
 
-Özellik listesi geçerli bir *.plist dosyası* olmalıdır. Bunu yürütmekle denetlenir:
+Özellik listesi geçerli bir *.plist* dosyası olmalıdır. Bu, yürütülerek denetlenebilir:
 
 ```bash
 plutil -lint com.microsoft.wdav.plist
@@ -1076,37 +1106,37 @@ plutil -lint com.microsoft.wdav.plist
 com.microsoft.wdav.plist: OK
 ```
 
-Dosya iyi düz ise, yukarıdaki komut çıktısını verir `OK` ve 'ın çıkış kodunu verir `0`. Aksi takdirde, sorunu açıklayan bir hata görüntülenir ve komut bir çıkış kodu verir `1`.
+Dosya iyi biçimlendirilmişse, yukarıdaki komut çıkışını alır `OK` ve çıkış kodunu `0`döndürür. Aksi takdirde, sorunu açıklayan bir hata görüntülenir ve komutu çıkış `1`kodunu döndürür.
 
 ## <a name="configuration-profile-deployment"></a>Yapılandırma profili dağıtımı
 
-Kurumunuzun yapılandırma profilini hazır bulunduktan sonra, bu profili kurumunuzun kullanmakta olduğu yönetim konsolu aracılığıyla dağıtabilirsiniz. Aşağıdaki bölümlerde, JAMF ve Intune kullanarak bu profilin dağıtımıyla ilgili yönergeler sağlanmıştır.
+Kuruluşunuz için yapılandırma profilini derledikten sonra, kuruluşunuzun kullandığı yönetim konsolu aracılığıyla dağıtabilirsiniz. Aşağıdaki bölümlerde JAMF ve Intune kullanarak bu profilin nasıl dağıtılacağına ilişkin yönergeler sağlanmaktadır.
 
 ### <a name="jamf-deployment"></a>JAMF dağıtımı
 
-JAMF konsolundan Bilgisayarlar  \> Yapılandırma Profilleri'ne **gidin, kullanmak** istediğiniz yapılandırma profiline gidin ve Özel Yapılandırma **Profilleri'Ayarlar**. Tercih etki alanı olarak `com.microsoft.wdav` bir girdi oluşturun ve daha önce üretilen *.plisti* karşıya yükleyin.
+JAMF konsolundan **Bilgisayar** \> **Yapılandırma Profilleri'ni** açın, kullanmak istediğiniz yapılandırma profiline gidin ve **Özel Ayarlar'ı** seçin. tercih etki alanı olarak ile `com.microsoft.wdav` bir giriş oluşturun ve daha önce üretilen *.plist* dosyasını karşıya yükleyin.
 
 > [!CAUTION]
-> Doğru tercih etki alanını girmeniz gerekir (`com.microsoft.wdav`); aksi takdirde, tercihler Uç Nokta için Microsoft Defender tarafından tanınmayacaktır.
+> Doğru tercih etki alanını (`com.microsoft.wdav`) girmeniz gerekir; aksi takdirde, tercihler Uç Nokta için Microsoft Defender tarafından tanınmaz.
 
 ### <a name="intune-deployment"></a>Intune dağıtımı
 
-1. Cihaz **yapılandırmasını** \> **yönet'i açın**. Profilleri **Yönet** \> **Profil** **Oluştur'a**\> tıklayın.
+1. **Cihaz yapılandırmasını yönet'i** \> açın. Profilleri **Yönet** \> **Profil Oluştur'u** \> seçin.
 
-2. Profil için bir ad seçin. **Platform=macOS'u Profil** türü **=Özel olarak değiştirme**. Yapılandır'ı seçin.
+2. Profil için bir ad seçin. **Platform=macOS** **değerini Profil türü=Özel** olarak değiştirin. Yapılandır'ı seçin.
 
-3. Daha önce 'olarak üretilen .plist'i kaydedin `com.microsoft.wdav.xml`.
+3. Daha önce üretilen .plist dosyasını olarak `com.microsoft.wdav.xml`kaydedin.
 
-4. Özel `com.microsoft.wdav` yapılandırma **profili adı olarak girin**.
+4. **Özel yapılandırma profili adı** olarak girin`com.microsoft.wdav`.
 
-5. Yapılandırma profilini açın ve dosyayı karşıya `com.microsoft.wdav.xml` yükleyin. (Bu dosya 3. adımda oluşturulmuş.
+5. Yapılandırma profilini açın ve dosyayı karşıya yükleyin `com.microsoft.wdav.xml` . (Bu dosya 3. adımda oluşturulmuştur.)
 
 6. **Tamam**'ı seçin.
 
-7. Ödevleri **Yönet'i** \> seçin. Ekle sekmesinde **Tüm** Cihazlarda Tüm **Kullanıcılara Ata'& seçin**.
+7. **Atamaları** **Yönet'i** \> seçin. **Ekle** sekmesinde **Tüm Kullanıcılara Ata & Tüm cihazlar'ı** seçin.
 
 > [!CAUTION]
-> Doğru özel yapılandırma profili adını girmeniz gerekir; aksi takdirde, bu tercihler Uç Nokta için Microsoft Defender tarafından tanınamaz.
+> Doğru özel yapılandırma profili adını girmeniz gerekir; aksi takdirde, bu tercihler Uç Nokta için Microsoft Defender tarafından tanınmaz.
 
 ## <a name="resources"></a>Kaynaklar
 

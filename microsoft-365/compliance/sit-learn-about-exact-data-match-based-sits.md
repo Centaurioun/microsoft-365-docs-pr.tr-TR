@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Tam veri eşleşmesi tabanlı hassas bilgi türleri hakkında bilgi edinin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d4a45e7ecdb143187b9d90fdedbaf1f235c7d52
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 25a48a13e66803dec592680c0ad0e9c01b611dc0
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622007"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949293"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>Tam veri eşleşmesine dayalı hassas bilgi türleri hakkında daha fazla bilgi edinme
 
@@ -97,7 +97,7 @@ Microsoft Purview önceden tanımlanmış şemalar, regex desenleri, anahtar sö
 
 ### <a name="primary-and-secondary-support-elements"></a>Birincil ve ikincil destek öğeleri
 
-EDM SIT oluşturduğunuzda, kural paketinde *bir birincil öğe* alanı tanımlarsınız. Birincil alanlar, tüm içeriğinizin aranacağı ve tanımlanabilmesi için tanımlı bir deseni izlemesi gereken öğelerdir. Taranan öğelerde birincil öğe bulunduğunda, EDM bir deseni izlemesi gerekmeyen *ikincil* veya destekleyici öğeleri ve bunların birincil öğeye yakınlıklarını arar. EDM, birincil öğenin önce var olan bir SIT aracılığıyla bulunabilir olmasını gerektirir. Kullanılabilir SID'lerin tam listesi için [bkz. Hassas bilgi türü varlık tanımları](sensitive-information-type-entity-definitions.md) . EDM SIT'inizin algılamasını istediğiniz sınıfı algılayanlardan birini bulmanız gerekir. Örneğin, EDM SIT şemanızda birincil öğe olarak ABD sosyal güvenlik numarası varsa, EDM şemanızı oluşturduğunuzda, bunu [ABD sosyal güvenlik numarası (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT ile ilişkilendirmiş olursunuz.
+EDM SIT oluşturduğunuzda, kural paketinde *bir birincil öğe* alanı tanımlarsınız. Birincil alanlar, tüm içeriğinizin aranacağı ve tanımlanabilmesi için tanımlı bir deseni izlemesi gereken öğelerdir. Taranan öğelerde birincil öğe bulunduğunda, EDM bir deseni izlemesi gerekmeyen *ikincil* veya destekleyici öğeleri ve bunların birincil öğeye yakınlıklarını arar. EDM, birincil öğenin önce var olan bir SIT aracılığıyla bulunabilir olmasını gerektirir. Kullanılabilir SID'lerin tam listesi için [bkz. Hassas bilgi türü varlık tanımları](sensitive-information-type-entity-definitions.md) . EDM SIT'inizin algılamasını istediğiniz sınıfı algılayanlardan birini bulmanız gerekir. Örneğin, EDM SIT şemanızda birincil öğe olarak ABD sosyal güvenlik numarası varsa, EDM şemanızı oluşturduğunuzda, bunu [ABD sosyal güvenlik numarası (SSN)](sit-defn-us-social-security-number.md) SIT ile ilişkilendirmiş olursunuz.
 
 ## <a name="how-matching-works"></a>Eşleştirme nasıl çalışır?
 

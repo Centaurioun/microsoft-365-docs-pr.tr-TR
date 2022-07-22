@@ -18,13 +18,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Kuruluşunuzun verilerini korumaya yardımcı olmak için duyarlılık etiketlerini dağıtmaya hazırsınız, ancak nereden başlayacağınızdan emin değil misiniz? Etiketleme yolculuğunuza başlamanıza yardımcı olacak bazı pratik kılavuzları okuyun.
-ms.openlocfilehash: 0161071c1dbfb8941c4f89a45ac2de52d58a2236
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Kuruluşunuzun verilerini korumaya yardımcı olmak için duyarlılık etiketlerini kullanan yöneticiler, lisans gereksinimleri ve yaygın senaryolar için açıklayıcı adımlar.
+ms.openlocfilehash: 84e111bbcc6b0d12f1f209993b9c9a0404fa7a77
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641526"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949337"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Hassasiyet etiketlerini kullanmaya başlama
 

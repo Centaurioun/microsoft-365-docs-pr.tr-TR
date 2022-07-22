@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft 365, uyumluluk merkezine yeni çözümler ekleme, mevcut özellikleri geri bildiriminize göre güncelleştirme veya yeni ve güncelleştirilmiş belgeleri kullanıma sunarken sürekli değişen uyumluluk ortamını takip etme konusunda size yardımcı olur. Bu ay neler yaptığımıza bakın.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fc553b60132da31dbcc6e131ddb29bcbfa99548b
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 0b2a55b686c310fc8d864229655c6815e7afef38
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756759"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949161"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview risk ve uyumluluk çözümlerindeki yenilikler
 
@@ -45,7 +45,7 @@ microsoft 365, [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-c
 
 ### <a name="compliance-manager"></a>Uyumluluk Yöneticisi
 
-- [Microsoft Purview Uyumluluk Yöneticisi uyarıları ve uyarı ilkeleri](compliance-manager-alert-policies.md) - uyarı ilkeleri oluşturma veya düzenleme izinlerine sahip üç ADD rolü eklendi.
+- [Microsoft Purview Uyumluluk Yöneticisi uyarıları ve uyarı ilkeleri](compliance-manager-alert-policies.md) - uyarı ilkeleri oluşturma veya düzenleme izinlerine sahip üç AAD rolü eklendi.
 - [Microsoft Purview için Yapılandırma Çözümleyicisi](compliance-manager-mcca.md) - Daha önce 'Microsoft Uyumluluk Yapılandırma Çözümleyicisi' olarak adlandırılan Bu Kullanmaya Başlama aracı için yeni ad ve güncelleştirilmiş başvuru bağlantıları.
 
 ### <a name="data-loss-prevention"></a>Veri Kaybı Önleme
