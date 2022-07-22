@@ -11,14 +11,14 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - M365-modern-desktop
-ms.localizationpriority: ''
+ms.localizationpriority: medium
 description: Öğrenme Araçları Birlikte Çalışabilirliği (LTI) Microsoft uygulamaları hakkında bilgi edinin ve Microsoft uygulamalarını Öğrenme Yönetim Sistemine (LMS) ile tümleştirirken eğitimcilere nasıl yardımcı olacaklarını öğrenin.
-ms.openlocfilehash: 994abf0351a3694e1eeb534a328745691cb6a379
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 7431b9a48ae7f0fec7199583592a515a6aadd772
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044301"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943540"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Microsoft ürünlerini Öğrenme Yönetim Sisteminizle (LMS) tümleştirme
 
@@ -73,23 +73,25 @@ Yapılandırma adımları için bkz:
 
 ## <a name="teams-lti-apps"></a>Teams LTI uygulamaları
 
-### <a name="teams-meetings-lti"></a>Teams toplantıları LTI
+### <a name="teams-meetings-lti"></a>Teams Meetings LTI
 
-Microsoft Teams toplantıları LTI uygulaması, Teams toplantılarını LMS kurslarına dahil eder. Eğitimciler ve öğrenciler, geçmiş ve gelecek toplantıları görüntüleyebilir, bireysel veya yinelenen toplantıları planlayabilir ve kursla ilgili ekip toplantılarına tamamen kendi LMS'lerinden katılabilir.
+Microsoft Teams Toplantıları LTI uygulaması, Teams toplantılarını LMS kurslarıyla bir araya getirir. Eğitimciler ve öğrenciler, LMS'leri üzerinden geçmiş ve yaklaşan toplantıları görüntüleyebilir, tek veya yinelenen toplantılar programlayabilir ve kursla ilgili ekip toplantılarına katılabilir.
 
 Yapılandırma adımları için bkz:
 
 - [Tuval ile Microsoft Teams Toplantıları](teams-meetings-with-canvas.md).
 - [Moodle ile Microsoft Teams Toplantıları](teams-classes-meetings-with-moodle.md).
 - [Open LMS ile Microsoft Teams Toplantıları](open-lms-teams-classes-and-meetings.md).
+- [Desire2Learn Brightspace ile Microsoft Teams Toplantıları](teams-classes-meetings-with-brightspace.md).
 
-### <a name="teams-classes-lti"></a>Teams sınıflar LTI
+### <a name="teams-classes-lti"></a>Teams Classes LTI
 
-Microsoft Teams sınıflar LTI uygulaması, eğitimcilerin ve öğrencilerin LMS ile Teams arasında gezinmelerine yardımcı olur. Kullanıcılar, LMS'leri içinde kendi kurslarıyla ilişkili sınıf ekiplerine erişebilir.
+Microsoft Teams Sınıflar LTI uygulaması, eğitimcilerin ve öğrencilerin LMS ile Teams arasında gezinmelerine yardımcı olur. Kullanıcılar, LMS'leri içinde kendi kurslarıyla ilişkili sınıf ekiplerine erişebilir.
 
 Yapılandırma adımları için bkz:
 
-- [Tuval ile Microsoft Teams Sınıflar LTI](teams-classes-with-canvas.md).
-- [Blackboard ile Microsoft Teams Sınıflar LTI](teams-classes-with-blackboard.md).
-- [Moodle ile Microsoft Teams Sınıflar LTI](teams-classes-meetings-with-moodle.md).
-- [Open LMS ile Microsoft Teams Sınıflar LTI](open-lms-teams-classes-and-meetings.md).
+- [Canvas ile Microsoft Teams Sınıfları](teams-classes-with-canvas.md).
+- [Blackboard ile Microsoft Teams Sınıfları](teams-classes-with-blackboard.md).
+- [Moodle ile Microsoft Teams Sınıfları](teams-classes-meetings-with-moodle.md).
+- [Open LMS ile Microsoft Teams Sınıfları](open-lms-teams-classes-and-meetings.md).
+- [Desire2Learn Brightspace ile Microsoft Teams Sınıfları](teams-classes-meetings-with-brightspace.md).

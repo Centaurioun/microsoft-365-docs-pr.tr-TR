@@ -364,6 +364,8 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Öncelikli hesapları yönetme ve izleme
           href: setup/priority-accounts.md
+        - name: İş için Microsoft 365 için tehdit korumasını artırma
+          href: security-and-compliance/increase-threat-protection.md
         - name: Boşta oturumu zaman aşımını açma
           href: manage/idle-session-timeout-web-apps.md
         - name: Office 2013 için Modern Kimlik Doğrulamasını Etkinleştirme
