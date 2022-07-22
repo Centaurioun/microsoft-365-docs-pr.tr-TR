@@ -17,16 +17,16 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Kuruluşunuzun dışındaki kişilerle işbirliği yapmak için Microsoft Teams'de paylaşılan kanalları etkinleştirmeyi öğrenin.
-ms.openlocfilehash: ae076b5bfb653fd1a90d9260d699d454246200a0
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 0e8d4ab09509e801fc54a4bb435dc78d2bdee516
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66862336"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969802"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Paylaşılan kanalda dış katılımcılarla işbirliği yapma
 
-Kullanıcılarınızın [paylaşılan kanallarda](/MicrosoftTeams/shared-channels) kuruluşunuzun dışındaki kişilerle işbirliği yapmasını sağlamak istiyorsanız, işbirliği yapmak istediğiniz her kuruluş için B2B doğrudan bağlanmayı yapılandırmanız gerekir. (Alternatif olarak, [Paylaşılan kanalları tüm dış kuruluşlarla etkinleştirebilirsiniz](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
+Kullanıcılarınızın [paylaşılan kanallarda](/MicrosoftTeams/shared-channels) diğer Microsoft 365 kuruluşlarındaki kişilerle işbirliği yapmasını sağlamak istiyorsanız, işbirliği yapmak istediğiniz her kuruluş için B2B doğrudan bağlanmayı yapılandırmanız gerekir. (Alternatif olarak, [Paylaşılan kanalları tüm dış kuruluşlarla etkinleştirebilirsiniz](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
 
 Teams'de paylaşılan kanalları başka bir kuruluşla etkinleştirdiğinizde:
 

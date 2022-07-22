@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-defender-office365
+- m365solution-mdo-migration
 ms.custom: migrationguides
 description: Üçüncü taraf koruma hizmetinden veya cihazından Office 365 için Microsoft Defender korumasına geçiş adımlarını tamamlayın.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2358103b3ab6bfee34e88d23f4b3de0d774e34e
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d9691eb3baebadee70d7467c2073497d04c6e12e
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492136"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969418"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Office 365 için Microsoft Defender Geçiş - 3. Aşama: Ekleme
 
@@ -79,9 +79,9 @@ Kuruluşunuzun bir güvenlik yanıt ekibi veya mevcut işlem akışları yoksa, 
 Office 365 için Defender'deki izinler rol tabanlı erişim denetimini (RBAC) temel alır ve [Microsoft 365 Defender portalındaki](permissions-microsoft-365-security-center.md) İzinler bölümünde açıklanmıştır. Göz önünde bulundurulması gereken önemli noktalar şunlardır:
 
 - Azure AD rolleri, Microsoft 365'teki **tüm** iş yüklerine izin verir. Örneğin, Azure portal Güvenlik Yöneticisi'ne bir kullanıcı eklerseniz, her yerde Güvenlik Yöneticisi izinleri olur.
-- Microsoft 365 Defender portalındaki e-posta & işbirliği rolleri, Microsoft 365 Defender Portalı, Microsoft Purview uyumluluk portalı ve eski Güvenlik & Uyumluluk Merkezi'ne izin verir. Örneğin, Microsoft 365 Defender portalında Güvenlik Yöneticisi'ne bir kullanıcı eklerseniz, bu kullanıcının **yalnızca** Microsoft 365 Defender Portalı, Microsoft Purview uyumluluk portalı ve Güvenlik & Uyumluluk Merkezi'nde Güvenlik Yöneticisi erişimi olur.
+- Microsoft 365 Defender portalındaki işbirliği rollerini Email & Microsoft 365 Defender Portalına, Microsoft Purview uyumluluk portalı ve eski Güvenlik & Uyumluluk Merkezi'ne izin verir. Örneğin, Microsoft 365 Defender portalında Güvenlik Yöneticisi'ne bir kullanıcı eklerseniz, bu kullanıcının **yalnızca** Microsoft 365 Defender Portalı, Microsoft Purview uyumluluk portalı ve Güvenlik & Uyumluluk Merkezi'nde Güvenlik Yöneticisi erişimi olur.
 - Microsoft 365 Defender portalındaki birçok özellik Exchange Online PowerShell cmdlet'lerini temel alır ve bu nedenle Exchange Online karşılık gelen rollerde (teknik olarak rol grupları) rol grubu üyeliği gerektirir (özellikle ilgili Exchange Online  PowerShell cmdlet'leri).
-- Microsoft 365 Defender portalında Azure AD rolleriyle eşdeğer olmayan ve güvenlik işlemleri için önemli olan E-posta & işbirliği rolleri vardır (örneğin Önizleme rolü ve Arama ve Temizleme rolü).
+- Microsoft 365 Defender portalında Azure AD rollerine eşdeğer olmayan ve güvenlik işlemleri için önemli olan Email & işbirliği rolü vardır (örneğin Önizleme rolü ve Arama ve Temizleme rolü).
 
 Genellikle yalnızca bir güvenlik personeli alt kümesi, iletileri doğrudan kullanıcı posta kutularından indirmek için ek haklara ihtiyaç duyar. Bu, Güvenlik Okuyucusu'nın varsayılan olarak sahip olmadığı ek bir izin gerektirir.
 
@@ -110,7 +110,7 @@ Herhangi **bir eylem modu uygulama** bölümünde kimliğe bürünme korumasın�
 
 - Kullanıcı kimliğe bürünme koruması: İletiyi hem Standart hem de Katı için **karantinaya alın** .
 - Etki alanı kimliğe bürünme koruması: İletiyi hem Standart hem de Katı için **karantinaya alın** .
-- Posta kutusu yönetim bilgileri koruması: **İletiyi Standart için alıcıların Gereksiz E-posta klasörlerine taşıyın** ; **İletiyi Strict için karantinaya alın** .
+- Posta kutusu yönetim bilgileri koruması: **İletiyi Standart için alıcıların Gereksiz Email klasörlerine taşıma**; **İletiyi Strict için karantinaya alın**.
 
 İletiler üzerinde işlem yapmadan kimliğe bürünme koruması sonuçlarını ne kadar uzun süre izlerseniz, gerekli olabilecek izinler veya bloklar için o kadar fazla veri tanımlamanız gerekir. Gözlem ve ayarlamaya izin verecek kadar önemli olan her korumayı açmak arasında bir gecikme kullanmayı göz önünde bulundurun.
 
@@ -123,7 +123,7 @@ Posta kutusu zekası [kimliğe bürünme girişimleri olduğu belirlenen iletile
 
 Hazır olduğunuzda, posta kutusu zekasının kimliğe bürünme girişimi olarak algılanan iletiler üzerinde işlem gerçekleştirmesine izin vermek için aşağıdaki adımları uygulayın:
 
-- Standart koruma ayarlarıyla kimlik avı önleme ilkesinde, **Posta kutusu zekası kimliğine bürünülen bir kullanıcı algılarsa** iletisini **alıcıların Gereksiz E-posta klasörlerine taşı** olarak değerini değiştirin.
+- Standart koruma ayarlarıyla kimlik avı önleme ilkesinde, **Posta kutusu zekası kimliğine bürünülen bir kullanıcı algılarsa** **iletisini alıcıların Önemsiz Email klasörlerine taşı** olarak değerini değiştirin.
 
 - Katı koruma ayarlarıyla kimlik avı önleme ilkesinde, **Posta kutusu zekası tarafından algılanan ve kimliğine bürünülen kullanıcıyı algılarsa** değerini **Karantinaya** al olarak değiştirin.
 
@@ -159,7 +159,7 @@ Office 365 için Defender koruma ayarlarını izlemek ve yinelemek için aşağ�
 
 - [Karantina](manage-quarantined-messages-and-files.md)
 - [Tehdit Gezgini](email-security-in-microsoft-defender.md)
-- [E-posta güvenlik raporları](view-email-security-reports.md)
+- [güvenlik raporlarını Email](view-email-security-reports.md)
 - [raporları Office 365 için Defender](view-reports-for-mdo.md)
 - [Posta akışı içgörüleri](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
 - [Posta akışı raporları](/exchange/monitoring/mail-flow-reports/mail-flow-reports)

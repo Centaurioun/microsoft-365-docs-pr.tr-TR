@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f5f404df8d8cbf5d4ac755c17c2a6c07717d8360
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 3161a26a8b22304e9343e9e16a1dd1e313d47df9
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66797983"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970110"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -70,13 +70,14 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 |[İçeriği işaretleme](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Değişkenlerle dinamik işaretler](#dynamic-markings-with-variables)                                              | Güncel Kanal: 2010+ <br /><br> Aylık Kurumsal Kanal: 2010+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[İzinleri şimdi atayın](encryption-sensitivity-labels.md#assign-permissions-now)                                 | Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Kullanıcıların izin atamasına izin ver: <br /> - Kullanıcılara sor](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Güncel Kanal: 2004+ <br /><br> Aylık Kurumsal Kanal: 2004+ <br /><br> Semi-Annual Enterprise Channel: 2008+ | 16.35+   | İnceleme altında   | İnceleme altında         | İnceleme altında                                                        |
+|[Kullanıcıların izin atamasına izin ver: <br /> - Kullanıcılardan özel izinler (kullanıcılar ve gruplar) isteme](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Güncel Kanal: 2004+ <br /><br> Aylık Kurumsal Kanal: 2004+ <br /><br> Semi-Annual Enterprise Channel: 2008+ | 16.35+   | İnceleme altında   | İnceleme altında         | İnceleme altında                                                        |
+|[Kullanıcıların izin atamasına izin ver: <br /> - Kullanıcılardan özel izinler (kullanıcılar, gruplar ve kuruluşlar) isteme](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım  | İnceleme altında   | İnceleme altında   | İnceleme altında         | İnceleme altında                                                        |
 |[Etiketle ilgili kullanıcı etkinliğini denetleme](#auditing-labeling-activities)                      | Güncel Kanal: 2011+ <br /><br> Aylık Kurumsal Kanal: 2011+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | Evet |
 |[Kullanıcıların e-postalarına ve belgelerine etiket uygulamasını gerektirme](#require-users-to-apply-a-label-to-their-email-and-documents)   | Güncel Kanal: 2101+ <br /><br> Aylık Kurumsal Kanal: 2101+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Hassas bilgi türlerini kullanma                    | Güncel Kanal: 2009+ <br /><br> Aylık Kurumsal Kanal: 2009+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.44+ | İnceleme altında | İnceleme altında | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Eğitilebilir sınıflandırıcıları kullanma                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | İnceleme altında | İnceleme altında | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Etiketlenmiş ve şifrelenmiş belgeler için [birlikte yazma ve Otomatik Kaydetme](sensitivity-labels-coauthoring.md) desteği | Güncel Kanal: 2107+ <br /><br> Aylık Kurumsal Kanal: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | Önizleme: [Kabul ettiğinizde](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) 2,58+ | Önizleme: [Kabul ettiğinizde](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) 16.0.14931+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[PDF desteği](#pdf-support)| Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım |  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
+|[PDF desteği](#pdf-support)| Önizleme: [Beta Kanalı](https://office.com/insider) |  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
 
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook'ta duyarlılık etiketi özellikleri

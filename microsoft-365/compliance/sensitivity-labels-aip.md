@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Azure Information Protection (AIP) birleşik etiketleme istemcisini kullandığınızda, AIP eklentisi yerine Office uygulamaları için yerleşik etiketleme kullanmanın avantajlarını anlayın.
-ms.openlocfilehash: 79d4ed4f81c3768ec85c17699257a18678ef82d1
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 01f75905dc5fea76613393828d42f23ea1d3ff79
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756687"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970176"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office uygulamaları için AIP eklentisi yerine neden yerleşik etiketlemeyi seçmelisiniz?
 
@@ -110,7 +110,7 @@ Alternatif olarak, **Microsoft Azure Information Protection** Office Eklentisini
 
 Hangi yöntemi seçerseniz seçin, Office uygulamaları yeniden başlatıldığında değişiklikler geçerli olur.
 
-Bu değişiklikleri yaptıktan sonra **, Duyarlılık** düğmesi Office şeridinde görüntülenmiyorsa, duyarlılık etiketlemesinin [kapalı](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows) olup olmadığını denetleyin.  Bu varsayılan yapılandırma olmasa da, bir yönetici grup ilkesi kullanarak veya doğrudan kayıt defterini düzenleyerek bu yapılandırmayı açıkça ayarlamış olabilir.
+Bu değişiklikleri yaptıktan sonra **Duyarlılık** düğmesi Office şeridinde görüntülenmiyorsa duyarlılık etiketlemesinin [kapalı](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows) olup olmadığını denetleyin. Bu varsayılan yapılandırma olmasa da, bir yönetici grup ilkesi kullanarak veya doğrudan kayıt defterini düzenleyerek bu yapılandırmayı açıkça ayarlamış olabilir.
 
 > [!NOTE]
 > Yerleşik etiketler, Office uygulamalarının abonelik sürümünü gerektirir. Office'in bazen "Office Perpetual" olarak da adlandırılan tek başına sürümleriniz varsa[, en son etiketleme özelliklerinden](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) yararlanmak için Kurumsal için Microsoft 365 Uygulamaları yükseltmenizi öneririz.
@@ -150,7 +150,7 @@ AIP eklentisinden henüz yerleşik etiketleme tarafından desteklenmeyen bir öz
 | **Kategori: Şifreleme** | |
 |Yönetici tanımlı izinler | ![Desteklenen.](../media/yes-icon.png) <br>[Daha fazla bilgi edinin](encryption-sensitivity-labels.md#assign-permissions-now) |
 |Kullanıcı tanımlı izinler <br> - Outlook için İletme <br> - Word, Excel, PowerPoint için kullanıcı ve grup özel izinleri| ![Desteklenen.](../media/yes-icon.png) <br>[Daha fazla bilgi edinin](encryption-sensitivity-labels.md#let-users-assign-permissions)|
-|Kullanıcı tanımlı izinler <br> - Word, Excel, PowerPoint için etki alanları belirterek kuruluş genelindeki özel izinler | Planlama veya geliştirme aşamasında |
+|Kullanıcı tanımlı izinler <br> - Word, Excel, PowerPoint için etki alanları belirterek kuruluş genelindeki özel izinler | [Önizlemede](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) |
 |Birlikte yazma ve Otomatik Kaydetme | ![Desteklenen.](../media/yes-icon.png) <br>[Daha fazla bilgi edinin](sensitivity-labels-coauthoring.md) |
 |Çift anahtarlı şifreleme | Planlama veya geliştirme aşamasında |
 |Kullanıcılar için belge iptali | İnceleme altında |

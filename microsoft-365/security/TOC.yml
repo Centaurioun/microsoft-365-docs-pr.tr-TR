@@ -44,8 +44,6 @@
           href: ./defender-business/index.yml
     - name: Microsoft 365 Kurumsal
       href: ../enterprise/index.yml
-    - name: İş için Microsoft 365
-      href: ./index.yml
     - name: Microsoft Purview
       href: ../compliance/index.yml
     - name: Office belgelerinde etkin içeriği yönetme

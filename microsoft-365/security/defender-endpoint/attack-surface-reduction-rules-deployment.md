@@ -18,13 +18,14 @@ ms.technology: mde
 ms.topic: article
 ms.collection:
 - M365-security-compliance
+- m365solution-asr-rules
 ms.date: 1/18/2022
-ms.openlocfilehash: 10ae1829f632492afdfd515d080b6be7c335b898
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: c503af0931b60b6ef54ae070a377c2ffda5a9f50
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601212"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969320"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Saldırı yüzeyini azaltma (ASR) kuralları dağıtımına genel bakış
 
@@ -55,7 +56,7 @@ ASR kuralları, Uç Nokta için Microsoft Defender içindeki saldırı yüzeyi a
 
 <br/>
 
-| Çok biçimli tehditler | Yanal hareket & kimlik bilgisi hırsızlığı | Üretkenlik uygulamaları kuralları |  E-posta kuralları | Betik kuralları | Çeşitli kurallar |
+| Çok biçimli tehditler | Yanal hareket & kimlik bilgisi hırsızlığı | Üretkenlik uygulamaları kuralları |  Email kuralları | Betik kuralları | Çeşitli kurallar |
 |:---|:---|:---|:---|:---|:---|
 | Bir yaygınlık (1000 makine), yaş (24 saat) veya güvenilir liste ölçütlerini karşılamadığı sürece yürütülebilir dosyaların çalışmasını engelleyin | PSExec ve WMI komutlarından kaynaklanan işlem oluşturma işlemlerini engelleme | Office uygulamalarının yürütülebilir içerik oluşturmalarını engelleme | E-posta istemcisinden ve web postasından yürütülebilir içeriği engelleme | Karartılmış JS/VBS/PS/makro kodunu engelleme | Güvenlik açığı bulunan imzalı sürücülerin <sup>kötüye kullanımı engellendi [[1](#fn1)]<sup></sup>  |
 | USB'den çalıştırılan güvenilmeyen ve imzalanmamış işlemleri engelleme | Windows yerel güvenlik yetkilisi alt sisteminden (lsass.exe)<sup>[[2](#fn1)] kimlik bilgilerini çalmayı engelle<sup></sup>   | Office uygulamalarının alt işlemler oluşturmalarını engelleme |  Yalnızca Office iletişim uygulamalarının alt işlemler oluşturmalarını engelle | JS/VBS'nin indirilen yürütülebilir içeriği başlatmasını engelleme | |
@@ -93,7 +94,7 @@ Microsoft Defender Virüsten Koruma aşağıdaki modlardan hiçbirinde olmamalı
 - Pasif
 - Blok Modunda Uç Nokta algılama ve yanıt (EDR) ile Pasif Mod
 - Sınırlı düzenli tarama (LPS)
-- Kapalı
+- Devre Dışı
 
 Bkz. [Bulut tabanlı koruma ve Microsoft Defender Virüsten Koruma](cloud-protection-microsoft-defender-antivirus.md).
 

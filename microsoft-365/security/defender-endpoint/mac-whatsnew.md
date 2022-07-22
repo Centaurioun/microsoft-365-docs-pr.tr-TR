@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f49132b67f51872cf9b5f07e6cca4c659d955b80
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 3ea2822adabcd0a747d34fbdb8c6d8d2c944afdf
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943496"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969550"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac'te Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -48,6 +48,7 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 
 **Yenilikler**
 
+- Ağ uzantısı nedeniyle yazdırmanın başarıyla tamamlanamadığına ilişkin bir sorun giderildi
 - [Dosya karması hesaplamasını yapılandırma](mac-preferences.md#configure-file-hash-computation-feature) seçeneği eklendi
 - Bu derlemeden itibaren, ürün varsayılan olarak yeni kötü amaçlı yazılımdan koruma altyapısına sahip olacaktır
 - Dosya kopyalama işlemleri için performans geliştirmeleri

@@ -1,6 +1,6 @@
 ---
-title: macOS'ta Uç Nokta için Microsoft Defender sorunları giderme
-description: macOS'ta Uç Nokta için Microsoft Defender sorunlarını giderin.
+title: macOS'ta Uç Nokta için Microsoft Defender performans sorunlarını giderme
+description: macOS'ta Uç Nokta için Microsoft Defender performans sorunlarını giderme.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, performans
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,73 +15,73 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e83400e444d4c8c733bea5552a31954bb019e358
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 7c60a61ca1a0a1179abd27c0f6d59970a0c09866
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474057"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969562"
 ---
-# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender sorunları giderme
+# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender performans sorunlarını giderme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
-- [macOS Uç Nokta için Microsoft Defender üzerinde Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [macOS üzerinde Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Bu deneyimi Uç Nokta için Microsoft Defender? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Bu konu başlığında, macOS'ta karşılaşılan performans sorunlarıyla ilgili performans sorunlarını daraltmak Uç Nokta için Microsoft Defender adımlarını sağlar.
+Bu konu, macOS'ta Uç Nokta için Microsoft Defender ile ilgili performans sorunlarını daraltmak için kullanılabilecek bazı genel adımlar sağlar.
 
-Gerçek zamanlı koruma (RTP), macOS üzerinde cihazınızı sürekli izleyen Uç Nokta için Microsoft Defender tehditlere karşı koruyan bir özelliktir. Dosya ve süreç izleme ve diğer üç taraftan oluşur.
+Gerçek zamanlı koruma (RTP), macOS'ta cihazınızı sürekli izleyen ve tehditlere karşı koruyan bir Uç Nokta için Microsoft Defender özelliğidir. Dosya ve süreç izleme ve diğer buluşsal yöntemlerden oluşur.
 
-Çalıştırıyorsanız uygulamalara ve cihaz özelliklerinize bağlı olarak, macOS'ta çalışan uygulamalarınız ve cihaz özelliklerinize bağlı olarak, Uç Nokta için Microsoft Defender performansıyla deneyimleebilirsiniz. Özel olarak, kısa bir zaman süresinde birçok kaynaklara erişen uygulamalar veya sistem süreçleri, macOS'ta Uç Nokta için Microsoft Defender sorunlarına yol açabilirsiniz.
+Çalıştırdığınız uygulamalara ve cihazınızın özelliklerine bağlı olarak, macOS üzerinde Uç Nokta için Microsoft Defender çalıştırırken en iyi performansla karşılaşabilirsiniz. Özellikle, kısa bir zaman aralığı boyunca birçok kaynağa erişen uygulamalar veya sistem işlemleri macOS'ta Uç Nokta için Microsoft Defender performans sorunlarına yol açabilir.
 
-Aşağıdaki adımlar, bu sorunları gidermek ve azaltmak için kullanılabilir:
+Bu sorunları gidermek ve azaltmak için aşağıdaki adımlar kullanılabilir:
 
-1. Aşağıdaki yöntemlerden birini kullanarak gerçek zamanlı korumayı devre dışı bırakın ve performansın geliştirip geliştiri olmadığınızı gözlemin. Bu yaklaşım, macOS'Uç Nokta için Microsoft Defender performans sorunlarına katkıda bulunmak isteyip olmadığını daraltmanıza yardımcı olur.
+1. Aşağıdaki yöntemlerden birini kullanarak gerçek zamanlı korumayı devre dışı bırakın ve performansın iyileşip iyileşmediğini gözlemleyin. Bu yaklaşım, macOS'ta Uç Nokta için Microsoft Defender performans sorunlarına katkıda bulunup bulunmadığını daraltmaya yardımcı olur.
 
-      Cihazınız organizasyonu tarafından yönetilmiyorsa, gerçek zamanlı koruma aşağıdaki seçeneklerden biri kullanılarak devre dışı bırakılabilir:
+      Cihazınız kuruluşunuz tarafından yönetilmiyorsa, gerçek zamanlı koruma aşağıdaki seçeneklerden biri kullanılarak devre dışı bırakılabilir:
 
-    - Kullanıcı arabiriminden. MacOS Uç Nokta için Microsoft Defender da ayarları açın ve Ayarları **yönet'e gidin**.
+    - Kullanıcı arabiriminden. macOS'ta Uç Nokta için Microsoft Defender açın ve **Ayarları yönet'e** gidin.
 
       :::image type="content" source="images/mdatp-36-rtp.png" alt-text=" Gerçek zamanlı korumayı yönet sayfası" lightbox="images/mdatp-36-rtp.png":::
       
 
-    - Terminal'den. Güvenlik nedeniyle bu işlem için yükseltme gerekir.
+    - Terminalden. Güvenlik amacıyla, bu işlem yükseltme gerektirir.
 
       ```bash
       mdatp config real-time-protection --value disabled
       ```
 
-      Cihazınız organizasyonu tarafından yönetiliyorsa, macOS'ta mobil cihaz için tercihleri ayarlama konusunda verilen yönergeler kullanılarak gerçek zamanlı koruma [Uç Nokta için Microsoft Defender devre dışı bırakılabilir](mac-preferences.md).
+      Cihazınız kuruluşunuz tarafından yönetiliyorsa, [macOS'ta Uç Nokta için Microsoft Defender için tercihleri ayarlama](mac-preferences.md) başlığı altında yer alan yönergeler kullanılarak gerçek zamanlı koruma yöneticiniz tarafından devre dışı bırakılabilir.
 
-      Gerçek zamanlı koruma kapalıyken performans sorunu devam ederse sorunun kaynağı ana bileşen uç noktada algılama ve yanıtlama olabilir. Bu durumda, diğer yönergeler ve risk azaltma için lütfen müşteri desteğine başvurun.
+      Gerçek zamanlı koruma kapalıyken performans sorunu devam ederse, sorunun kaynağı uç nokta algılama ve yanıt bileşeni olabilir. Bu durumda, daha fazla yönerge ve risk azaltma için lütfen müşteri desteğine başvurun.
 
-2. Finder'ı açın ve Uygulamalar Yardımcı **Programları'nı** \> **bulun**. Etkinlik **İzleyicisi'ne** açın ve sisteminiz için hangi uygulamaların kaynakları kullananları çözümlenin. Tipik örnekler yazılım güncelleştirenleri ve derleyicileridir.
+2. Bulucu'yı açın ve **Uygulamalar** \> **Yardımcı Programları'na** gidin. **Etkinlik İzleyicisi'ni** açın ve sisteminizdeki kaynakları hangi uygulamaların kullandığını analiz edin. Tipik örnekler arasında yazılım güncelleştirenler ve derleyiciler yer alır.
 
-3. En çok taramaları tetikleyen uygulamaları bulmak için, Mac'te Uç Nokta için Defender tarafından toplanan gerçek zamanlı istatistikleri kullanabilirsiniz.
+3. En çok taramayı tetikleyen uygulamaları bulmak için Mac'te Uç Nokta için Defender tarafından toplanan gerçek zamanlı istatistikleri kullanabilirsiniz.
 
       > [!NOTE]
       > Bu özellik 100.90.70 veya daha yeni sürümlerde kullanılabilir.
-      Bu özellik **Dogfood** ve **InsiderFast kanallarında varsayılan olarak etkindir** . Farklı bir güncelleştirme kanalı kullanıyorsanız, bu özellik komut satırdan etkinleştirilebilir:
+      Bu özellik **Dogfood** ve **InsiderFast** kanallarında varsayılan olarak etkindir. Farklı bir güncelleştirme kanalı kullanıyorsanız, bu özellik komut satırından etkinleştirilebilir:
 
       ```bash
       mdatp config real-time-protection-statistics  --value enabled
       ```
 
-      Bu özelliğin etkinleştirilmesi için gerçek zamanlı koruma gerekir. Gerçek zamanlı korumanın durumunu kontrol etmek için aşağıdaki komutu çalıştırın:
+      Bu özelliğin etkinleştirilmesi için gerçek zamanlı koruma gerekir. Gerçek zamanlı korumanın durumunu denetlemek için aşağıdaki komutu çalıştırın:
 
       ```bash
       mdatp health --field real_time_protection_enabled
       ```
 
-    Yeni **girdinin real_time_protection_enabled** doğru olduğunu doğrulayın. Aksi takdirde, etkinleştirmek için aşağıdaki komutu çalıştırın:
+    **real_time_protection_enabled** girdisinin doğru olduğunu doğrulayın. Aksi takdirde, etkinleştirmek için aşağıdaki komutu çalıştırın:
 
       ```bash
       mdatp config real-time-protection --value enabled
@@ -91,23 +91,23 @@ Aşağıdaki adımlar, bu sorunları gidermek ve azaltmak için kullanılabilir:
       Configuration property updated
       ```
 
-      Geçerli istatistikleri toplamak için çalıştırın:
+      Geçerli istatistikleri toplamak için şunu çalıştırın:
 
       ```bash
       mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
       ```
 
       > [!NOTE]
-      > **--output json kullanarak** (çift çizgiye dikkat olun) çıkış biçiminin ayrıştırmaya hazır olduğunu unutmayın.
-      Bu komutun çıktısı tüm işlemleri ve ilişkili tarama etkinliklerini gösterir.
+      > **--output json** (çift çizgiye dikkat edin) kullanıldığında çıkış biçimi ayrıştırma için hazır olur.
+      Bu komutun çıkışı tüm işlemleri ve bunların ilişkili tarama etkinliğini gösterir.
 
-4. Mac sisteminiz üzerinde, aşağıdaki komutu kullanarak örnek Python ayrıştırıcı high_cpu_parser.py'yi indirin:
+4. Mac sisteminizde komutunu kullanarak örnek Python ayrıştırıcısını high_cpu_parser.py indirin:
 
     ```bash
     curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
 
-    Bu komutun çıkışı aşağıdakine benzer olması gerekir:
+    Bu komutun çıkışı aşağıdakine benzer olmalıdır:
 
     ```Output
     --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.
@@ -121,7 +121,7 @@ Aşağıdaki adımlar, bu sorunları gidermek ve azaltmak için kullanılabilir:
     0s
     ```
 
-5. Ardından aşağıdaki komutları yazın:
+5. Ardından, aşağıdaki komutları yazın:
 
       ```bash
         chmod +x high_cpu_parser.py
@@ -131,9 +131,9 @@ Aşağıdaki adımlar, bu sorunları gidermek ve azaltmak için kullanılabilir:
         cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
       ```
 
-      Yukarıdakinin çıktısı, performans sorunlarına en çok katkıda bulunanların listesidir. İlk sütun süreç tanımlayıcısıdır (PID), ikinci sütun süreç adı ve son sütun da etkiye göre sıralanmış taranmış dosyaların sayısıdır.
+      Yukarıdaki çıkışı, performans sorunlarına en çok katkıda bulunanların listesidir. İlk sütun işlem tanımlayıcısı (PID), ikinci sütun te işlem adı ve son sütun ise etkilenen öğeye göre sıralanmış taranan dosyaların sayısıdır.
 
-      Örneğin, komutun çıkışı aşağıdakine benzer olur:
+      Örneğin, komutun çıkışı aşağıdakine benzer olacaktır:
 
       ```output
         ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
@@ -149,11 +149,11 @@ Aşağıdaki adımlar, bu sorunları gidermek ve azaltmak için kullanılabilir:
         125  CrashPlanService 164
       ```
 
-      Mac'te Uç Nokta için Defender'ın performansını artırmak için taranan toplam dosya satırı altında en yüksek sayıya sahip satırı bulun ve dışlama ekleyin. Daha fazla bilgi için bkz [. Linux'ta Uç Nokta için Defender için dışlamaları yapılandırma ve doğrulama](linux-exclusions.md).
+      Mac'te Uç Nokta için Defender'ın performansını geliştirmek için Taranan toplam dosya satırı altında en yüksek sayıya sahip olanı bulun ve bunun için bir dışlama ekleyin. Daha fazla bilgi için bkz. [macOS'ta Uç Nokta için Defender dışlamalarını yapılandırma ve doğrulama](mac-exclusions.md).
 
       > [!NOTE]
-      > Uygulama, istatistikleri bellekte depolar ve yalnızca dosyanın başlatılıyor olduğu ve gerçek zamanlı koruma etkinleştirildiğinden bu yana etkinliklerini takip ediyor. Gerçek zamanlı korumanın kapalı olduğu dönemlerden önce veya bu süre içinde başlatılan süreçler sayılmaz. Buna ek olarak, yalnızca taramaları tetikleyen olaylar sayılır.
+      > Uygulama istatistiği bellekte depolar ve yalnızca başlatıldığından ve gerçek zamanlı koruma etkinleştirildiğinden beri dosya etkinliğini izler. Gerçek zamanlı korumanın kapalı olduğu dönemlerde veya öncesinde başlatılan işlemler sayılmaz. Ayrıca, yalnızca taramaları tetikleyen olaylar sayılır.
       >
-6. MacOS Uç Nokta için Microsoft Defender performans sorunlarına katkıda bulunan işlemler veya disk konumlarının dışlamaları ile ilgili sorunları yapılandırın ve gerçek zamanlı korumayı yeniden etkinleştirin.
+6. performans sorunlarına katkıda bulunan işlemler veya disk konumları için dışlamalarla macOS'ta Uç Nokta için Microsoft Defender yapılandırın ve gerçek zamanlı korumayı yeniden etkinleştirin.
 
-     Ayrıntılar [için bkz. macOS'ta Uç Nokta için Microsoft Defender dışlamaları yapılandırma ve](mac-exclusions.md) doğrulama.
+     Ayrıntılar için bkz[. macOS'ta Uç Nokta için Microsoft Defender için dışlamaları yapılandırma ve doğrulama](mac-exclusions.md).

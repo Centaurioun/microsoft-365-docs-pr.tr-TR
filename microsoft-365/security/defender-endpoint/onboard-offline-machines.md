@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 33b539018f479c1b023a656ab056ca892d27e526
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 9c3dc16904672d32ab8399e693c2066b8e04c187
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822191"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969824"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender İnternet erişimi olmayan cihazları ekleme
 
@@ -61,6 +61,19 @@ Doğrudan İnternet bağlantısı olmayan cihazlar için önerilen yaklaşım ar
 
 [Windows'un önceki sürümlerini ekleyin](onboard-downlevel.md)
 
-### <a name="microsoft-defender-for-cloud"></a>Bulut için Microsoft Defender
+### <a name="azure-virtual-machines"></a>Azure sanal makineleri
 
-- [Bulut için Defender'ın tümleşik EDR çözümüyle uç noktalarınızı koruma bölümündeki önkoşullar](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#prerequisites) bölümünü gözden geçirin: Uç Nokta için Microsoft Defender
+- Önceki MMA tabanlı çözümü çalıştıran cihazlar için, Azure Log Analytics Ağ Geçidi'ni (eski adıyla OMS Ağ Geçidi) ara sunucu veya hub olarak davranacak şekilde ayarlayın:
+    - [Azure Log Analytics Ağ Geçidi](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+    - [Microsoft Monitoring Agent'ı (MMA) yükleme ve yapılandırma](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) , Uç Nokta çalışma alanı anahtarı & kimliği için Defender'ı işaret ediyor
+- Aynı OMS Ağ Geçidi ağındaki çevrimdışı Azure VM'leri
+    - Azure Log Analytics IP'sini ara sunucu olarak yapılandırma
+    - Azure Log Analytics Çalışma Alanı Anahtarı & Kimliği
+- Bulut için Microsoft Defender
+    - [Güvenlik İlkesi \> Log Analytics Çalışma Alanı](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+    - [Tehdit Algılama \> Uç Nokta için Defender'ın verilerime erişmesine izin ver](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+
+    Daha fazla bilgi için bkz [. Güvenlik ilkeleriyle çalışma](/azure/security-center/tutorial-security-policy).
+
+> [!NOTE]
+> İnternet erişimi olmayan istemciler Microsoft Defender Uç Noktasına eklenemez. İstemcinin gerekli URL'lere doğrudan erişmesi veya bir ara sunucu üzerinden erişimi olması gerekir.

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Erişimi ve kullanımı kısıtlayarak verilerinizi koruyan şifreleme için duyarlılık etiketlerini yapılandırın.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef00ca10ca932322e51d71449e42f45842ce4c97
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: ab08f733be374710674bfae65f4a0b56e952a199
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663794"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970236"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Şifreleme uygulamak için hassasiyet etiketleri kullanarak içeriğe erişimi kısıtlama
 
@@ -132,7 +132,7 @@ Kullanıcı bu haklardan veya rollerden birine sahip değilse etiket uygulanamaz
 
 Örneğin, bir e-posta iletisine İletme'yi uygulayan kişi, e-postanın Rights Management sahibi olduğundan şifrelemeyi değiştirmek veya kaldırmak için iş parçacığını yeniden etiketleyebilir. Ancak süper kullanıcılar dışında, bu e-postanın alıcıları gerekli kullanım haklarına sahip olmadıklarından e-postayı yeniden etiketleyemez.
 
-#### <a name="email-attachments-for-encrypted-email-messages"></a>Şifrelenmiş e-posta iletileri için e-posta ekleri
+#### <a name="email-attachments-for-encrypted-email-messages"></a>Şifrelenmiş e-posta iletileri için ekleri Email
 
 E-posta iletisi herhangi bir yöntemle şifrelendiğinde, e-postaya eklenen şifrelenmemiş Office belgeleri otomatik olarak aynı şifreleme ayarlarını devralır.
 
@@ -288,7 +288,7 @@ Kullanıcıların içeriğe el ile duyarlılık etiketi uyguladığında izin at
 
     Bu seçenek, Azure Information Protection birleşik etiketleme istemcisi ve yerleşik etiketleme kullanan bazı uygulamalar tarafından desteklenir. Bu özelliği desteklemeyen uygulamalar için etiket kullanıcılar için görünmez veya tutarlılık açısından görünür ancak kullanıcılara açıklama iletisiyle uygulanamaz.
     
-    Yerleşik etiketleme kullanan uygulamaların bu seçeneği desteklediğini denetlemek [için Word, Excel ve PowerPoint için yetenekler tablosunu](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) ve **Kullanıcıların izin atamasına izin ver: - Kullanıcılara sor** satırını kullanın.
+    Yerleşik etiketleme kullanan uygulamaların bu seçeneği desteklediğini denetlemek [için Word, Excel ve PowerPoint için yetenekler tablosunu](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) ve **Kullanıcıların izin atamasına izin ver satırlarını** kullanın.
 
 Seçenekler desteklendiğinde, kullanıcıların duyarlılık etiketini ne zaman göreceğini belirlemek için aşağıdaki tabloyu kullanın:
 
@@ -343,6 +343,16 @@ Yerleşik etiketleme ve [birlikte yazma etkinleştirildiğinde](sensitivity-labe
 
 > [!TIP]
 > Kullanıcılar [birlikte yazma etkinleştirilmeden](sensitivity-labels-coauthoring.md) önce Azure Information Protection birleşik etiketleme istemcisiyle özel izinler yapılandırma konusunda bilgi sahibiyse, izin düzeylerinin bireysel kullanım haklarıyla eşlemesini gözden geçirmeyi yararlı bulabilirsiniz: [İzin düzeylerine dahil edilen haklar](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels).
+
+#### <a name="support-for-organization-wide-custom-permissions"></a>Kuruluş genelindeki özel izinler için destek
+
+Artık Windows'da yerleşik etiketleme için önizlemede kullanıma sunulan kullanıcılar, etki alanının sahibi olan ve Azure Active Directory'de bulunan bir kuruluştaki tüm kullanıcılara uygulanacak bir etki alanı adı belirtebilir. Bu özellik[, Azure Information Protection birleşik etiketleme istemcisiyle eşlik](sensitivity-labels-aip.md#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps) sağlar:
+
+![Kuruluş genelindeki özel izinleri desteklemek için iletişim kutusu güncelleştirildi.](../media/org-wide-custom-permissions-dialog.png)
+
+Örneğin, bir kullanıcı "@contoso.com" (veya "contoso.com") yazar ve okuma erişimi verir. Contoso Corporation contoso.com etki alanına sahip olduğundan, bu etki alanındaki tüm kullanıcılara ve kuruluşun Azure Active Directory'de sahip olduğu diğer tüm etki alanlarına okuma erişimi verilir.
+
+Kullanıcılara erişimin yalnızca belirtilen etki alanındaki kullanıcılarla sınırlı olmadığını bildirmek önemlidir. Örneğin, "@sales.contoso.com" yalnızca satış alt etki alanındaki kullanıcılara erişimi kısıtlamaz, aynı zamanda marketing.contoso.com etki alanındaki kullanıcılara ve hatta aynı Azure Active Directory kiracısında kopuk ad alanına sahip kullanıcılara erişim izni verir.
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>Şifreleme ayarları için örnek yapılandırmalar
 
