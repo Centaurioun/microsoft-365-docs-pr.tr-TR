@@ -372,8 +372,614 @@
               href: sit-common-scenarios.md
         - name: Hassas bilgi türü referansı
           items:
-            - name: Hassas bilgi türü varlık tanımları
-              href: sensitive-information-type-entity-definitions.md
+            - name: Tüm hassas bilgi türü varlık tanımları
+              items:
+                - name: Hassas bilgi türü varlık tanımları
+                  href: sensitive-information-type-entity-definitions.md
+                - name: ABA yönlendirme numarası
+                  href: sit-defn-aba-routing.md
+                - name: Tüm tam adlar
+                  href: sit-defn-all-full-names.md
+                - name: Tüm tıbbi hüküm ve koşullar
+                  href: sit-defn-all-medical-terms-conditions.md
+                - name: Tüm Fiziksel Adresler
+                  href: sit-defn-all-physical-addresses.md
+                - name: Amazon S3 istemcisi gizli erişim anahtarı
+                  href: sit-defn-amazon-s3-client-secret-access-key.md
+                - name: Arjantin ulusal kimlik (DNI) numarası
+                  href: sit-defn-argentina-national-identity-numbers.md
+                - name: Arjantin Benzersiz Vergi Tanımlama Anahtarı
+                  href: sit-defn-argentina-unique-tax-identification-key.md
+                - name: ASP.NET Makine Anahtarı
+                  href: sit-defn-asp-net-machine-key.md
+                - name: Avustralya banka hesap numarası
+                  href: sit-defn-australia-bank-account-number.md
+                - name: Avustralya iş numarası
+                  href: sit-defn-australia-business-number.md
+                - name: Avustralya şirket numarası
+                  href: sit-defn-australia-company-number.md
+                - name: Avustralya ehliyet numarası
+                  href: sit-defn-australia-drivers-license-number.md
+                - name: Avustralya tıbbi hesap numarası
+                  href: sit-defn-australia-medical-account-number.md
+                - name: Avustralya pasaport numarası
+                  href: sit-defn-australia-passport-number.md
+                - name: Avustralya fiziksel adresleri
+                  href: sit-defn-australia-physical-addresses.md
+                - name: Avustralya vergi dosyası numarası
+                  href: sit-defn-australia-tax-file-number.md
+                - name: Avusturya ehliyet numarası
+                  href: sit-defn-austria-drivers-license-number.md
+                - name: Avusturya kimlik kartı
+                  href: sit-defn-austria-identity-card.md
+                - name: Avusturya pasaport numarası
+                  href: sit-defn-austria-passport-number.md
+                - name: Avusturya fiziksel adresleri
+                  href: sit-defn-austria-physical-addresses.md
+                - name: Avusturya sosyal güvenlik numarası
+                  href: sit-defn-austria-social-security-number.md
+                - name: Avusturya vergi kimlik numarası
+                  href: sit-defn-austria-tax-identification-number.md
+                - name: Avusturya katma değer vergisi
+                  href: sit-defn-austria-value-added-tax.md
+                - name: Azure AD istemci erişim belirteci
+                  href: sit-defn-azure-ad-client-access-token.md
+                - name: Azure AD gizli anahtarı
+                  href: sit-defn-azure-ad-client-secret.md
+                - name: Azure AD kullanıcı kimlik bilgileri
+                  href: sit-defn-azure-ad-user-credentials.md
+                - name: Azure App Service Dağıtım parolası
+                  href: sit-defn-azure-app-service-deployment-password.md
+                - name: Azure Batch Paylaşılan Erişim Anahtarı
+                  href: sit-defn-azure-batch-shared-access-key.md
+                - name: Azure Bot Framework gizli anahtarı
+                  href: sit-defn-azure-bot-framework-secret-key.md
+                - name: Azure Bot hizmeti uygulama gizli dizisi
+                  href: sit-defn-azure-bot-service-app-secret.md
+                - name: Azure Bilişsel Arama API anahtarı
+                  href: sit-defn-azure-cognitive-search-api-key.md
+                - name: Azure Bilişsel Hizmet anahtarı
+                  href: sit-defn-azure-cognitive-service-key.md
+                - name: Azure Container Registry erişim anahtarı
+                  href: sit-defn-azure-container-registry-access-key.md
+                - name: Azure COSMOS DB hesabı erişim anahtarı
+                  href: sit-defn-azure-cosmos-db-account-access-key.md
+                - name: Azure Databricks kişisel erişim belirteci
+                  href: sit-defn-azure-databricks-personal-access-token.md
+                - name: Azure DevOps uygulama gizli dizisi
+                  href: sit-defn-azure-devops-app-secret.md
+                - name: Azure DevOps kişisel erişim belirteci
+                  href: sit-defn-azure-devops-personal-access-token.md
+                - name: Azure DocumentDB kimlik doğrulaması anahtarı
+                  href: sit-defn-azure-document-db-auth-key.md
+                - name: Azure EventGrid erişim anahtarı
+                  href: sit-defn-azure-eventgrid-access-key.md
+                - name: Azure İşlev Yöneticisi / API anahtarı
+                  href: sit-defn-azure-function-master-api-key.md
+                - name: Azure IAAS veritabanı bağlantısı dizesi ve Azure SQL bağlantısı dizesi
+                  href: sit-defn-azure-iaas-database-connection-string-azure-sql-connection-string.md
+                - name: Azure IoT bağlantı dizesi
+                  href: sit-defn-azure-iot-connection-string.md
+                - name: Azure IoT paylaşılan erişim anahtarı
+                  href: sit-defn-azure-iot-shared-access-key.md
+                - name: Azure Logic Uygulaması paylaşılan erişim imzası
+                  href: sit-defn-azure-logic-app-shared-access-signature.md
+                - name: Azure Machine Learning web hizmeti API anahtarı
+                  href: sit-defn-azure-machine-learning-web-service-api-key.md
+                - name: Azure Haritalar abonelik anahtarı
+                  href: sit-defn-azure-maps-subscription-key.md
+                - name: Azure yayımlama ayarı parolası
+                  href: sit-defn-azure-publish-setting-password.md
+                - name: Azure Redis önbellek bağlantı dizesi
+                  href: sit-defn-azure-redis-cache-connection-string.md
+                - name: Azure Redis önbellek bağlantı dizesi parolası
+                  href: sit-defn-azure-redis-cache-connection-string-password.md
+                - name: Azure SAS
+                  href: sit-defn-azure-sas.md
+                - name: Azure service bus bağlantı dizesi
+                  href: sit-defn-azure-service-bus-connection-string.md
+                - name: Azure service bus paylaşılan erişim imzası
+                  href: sit-defn-azure-service-bus-shared-access-signature.md
+                - name: Azure Paylaşılan Erişim anahtarı / Web Kancası belirteci
+                  href: sit-defn-azure-shared-access-key-web-hook-token.md
+                - name: Azure SignalR erişim anahtarı
+                  href: sit-defn-azure-signalr-access-key.md
+                - name: Azure SQL bağlantı dizesi
+                  href: sit-defn-azure-sql-connection-string.md
+                - name: Azure depolama hesabı erişim anahtarı
+                  href: sit-defn-azure-storage-account-access-key.md
+                - name: Azure depolama hesabı anahtarı
+                  href: sit-defn-azure-storage-account-key.md
+                - name: Azure Depolama hesabı anahtarı (genel)
+                  href: sit-defn-azure-storage-account-key-generic.md
+                - name: Azure Depolama hesabı paylaşılan erişim imzası
+                  href: sit-defn-azure-storage-account-shared-access-signature.md
+                - name: Yüksek riskli kaynaklar için Azure Depolama hesabı paylaşılan erişim imzası
+                  href: sit-defn-azure-storage-account-shared-access-signature-high-risk-resources.md
+                - name: Azure abonelik yönetimi sertifikası
+                  href: sit-defn-azure-subscription-management-certificate.md
+                - name: Belçika ehliyet numarası
+                  href: sit-defn-belgium-drivers-license-number.md
+                - name: Belçika ulusal numarası
+                  href: sit-defn-belgium-national-number.md
+                - name: Belçika pasaport numarası
+                  href: sit-defn-belgium-passport-number.md
+                - name: Belçika fiziksel adresleri
+                  href: sit-defn-belgium-physical-addresses.md
+                - name: Belçika katma değer vergisi numarası
+                  href: sit-defn-belgium-value-added-tax-number.md
+                - name: Kan testi terimleri
+                  href: sit-defn-blood-test-terms.md
+                - name: Marka ilaç adları
+                  href: sit-defn-brand-medication-names.md
+                - name: Brezilya CPF numarası
+                  href: sit-defn-brazil-cpf-number.md
+                - name: Brezilya tüzel kişilik numarası (CNPJ)
+                  href: sit-defn-brazil-legal-entity-number.md
+                - name: Brezilya ulusal kimlik kartı (RG)
+                  href: sit-defn-brazil-national-identification-card.md
+                - name: Brezilya fiziksel adresleri
+                  href: sit-defn-brazil-physical-addresses.md
+                - name: Bulgaristan ehliyet numarası
+                  href: sit-defn-bulgaria-drivers-license-number.md
+                - name: Bulgaristan pasaport numarası
+                  href: sit-defn-bulgaria-passport-number.md
+                - name: Bulgaristan fiziksel adresleri
+                  href: sit-defn-bulgaria-physical-addresses.md
+                - name: Bulgaristan üniforma sivil numarası
+                  href: sit-defn-bulgaria-uniform-civil-number.md
+                - name: Kanada banka hesap numarası
+                  href: sit-defn-canada-bank-account-number.md
+                - name: Kanada ehliyet numarası
+                  href: sit-defn-canada-drivers-license-number.md
+                - name: Kanada sağlık hizmeti numarası
+                  href: sit-defn-canada-health-service-number.md
+                - name: Kanada pasaport numarası
+                  href: sit-defn-canada-passport-number.md
+                - name: Kanada kişisel sağlık kimlik numarası (PHIN)
+                  href: sit-defn-canada-personal-health-identification-number.md
+                - name: Kanada fiziksel adresleri
+                  href: sit-defn-canada-physical-addresses.md
+                - name: Kanada sosyal sigorta numarası
+                  href: sit-defn-canada-social-insurance-number.md
+                - name: Şili kimlik kartı numarası
+                  href: sit-defn-chile-identity-card-number.md
+                - name: Çin yerleşik kimlik kartı (PRC) numarası
+                  href: sit-defn-china-resident-identity-card-number.md
+                - name: Gizli anahtar / API anahtarı
+                  href: sit-defn-client-secret-api-key.md
+                - name: URL'deki kimlik bilgileri
+                  href: sit-defn-credentials-in-url.md
+                - name: Kredi kartı numarası
+                  href: sit-defn-credit-card-number.md
+                - name: Hırvatistan ehliyet numarası
+                  href: sit-defn-croatia-drivers-license-number.md
+                - name: Hırvatistan kimlik kartı numarası
+                  href: sit-defn-croatia-identity-card-number.md
+                - name: Hırvatistan pasaport numarası
+                  href: sit-defn-croatia-passport-number.md
+                - name: Hırvatistan kişisel kimlik (OIB) numarası
+                  href: sit-defn-croatia-personal-identification-number.md
+                - name: Hırvatistan fiziksel adresleri
+                  href: sit-defn-croatia-physical-addresses.md
+                - name: Kıbrıs ehliyet numarası
+                  href: sit-defn-cyprus-drivers-license-number.md
+                - name: Kıbrıs kimlik kartı
+                  href: sit-defn-cyprus-identity-card.md
+                - name: Kıbrıs pasaport numarası
+                  href: sit-defn-cyprus-passport-number.md
+                - name: Kıbrıs fiziksel adresleri
+                  href: sit-defn-cyprus-physical-addresses.md
+                - name: Kıbrıs vergi kimlik numarası
+                  href: sit-defn-cyprus-tax-identification-number.md
+                - name: Çek ehliyet numarası
+                  href: sit-defn-czech-drivers-license-number.md
+                - name: Çek pasaport numarası
+                  href: sit-defn-czech-passport-number.md
+                - name: Çek kişisel kimlik numarası
+                  href: sit-defn-czech-personal-identity-number.md
+                - name: Çek Cumhuriyeti fiziksel adresleri
+                  href: sit-defn-czech-republic-physical-addresses.md
+                - name: Danimarka ehliyet numarası
+                  href: sit-defn-denmark-drivers-license-number.md
+                - name: Danimarka pasaport numarası
+                  href: sit-defn-denmark-passport-number.md
+                - name: Danimarka kişisel kimlik numarası
+                  href: sit-defn-denmark-personal-identification-number.md
+                - name: Danimarka fiziksel adresleri
+                  href: sit-defn-denmark-physical-addresses.md
+                - name: Hastalıklar
+                  href: sit-defn-diseases.md
+                - name: Uyuşturucuyla Mücadele Kurumu (DEA) numarası
+                  href: sit-defn-drug-enforcement-agency-number.md
+                - name: Estonya ehliyet numarası
+                  href: sit-defn-estonia-drivers-license-number.md
+                - name: Estonya pasaport numarası
+                  href: sit-defn-estonia-passport-number.md
+                - name: Estonya kişisel kimlik kodu
+                  href: sit-defn-estonia-personal-identification-code.md
+                - name: Estonya fiziksel adresleri
+                  href: sit-defn-estonia-physical-addresses.md
+                - name: AB banka kartı numarası
+                  href: sit-defn-eu-debit-card-number.md
+                - name: AB ehliyet numarası
+                  href: sit-defn-eu-drivers-license-number.md
+                - name: AB ulusal kimlik numarası
+                  href: sit-defn-eu-national-identification-number.md
+                - name: AB pasaport numarası
+                  href: sit-defn-eu-passport-number.md
+                - name: AB sosyal güvenlik numarası veya eşdeğer kimlik
+                  href: sit-defn-eu-social-security-number-equivalent-identification.md
+                - name: AB Vergi kimlik numarası
+                  href: sit-defn-eu-tax-identification-number.md
+                - name: Finlandiya ehliyet numarası
+                  href: sit-defn-finland-drivers-license-number.md
+                - name: Finlandiya Avrupa sağlık sigortası numarası
+                  href: sit-defn-finland-european-health-insurance-number.md
+                - name: Finlandiya ulusal kimliği
+                  href: sit-defn-finland-national-id.md
+                - name: Finlandiya pasaport numarası
+                  href: sit-defn-finland-passport-number.md
+                - name: Finlandiya fiziksel adresleri
+                  href: sit-defn-finland-physical-addresses.md
+                - name: Fransa ehliyet numarası
+                  href: sit-defn-france-drivers-license-number.md
+                - name: Fransa sağlık sigortası numarası
+                  href: sit-defn-france-health-insurance-number.md
+                - name: Fransa ulusal kimlik kartı (CNI)
+                  href: sit-defn-france-national-id-card.md
+                - name: Fransa pasaport numarası
+                  href: sit-defn-france-passport-number.md
+                - name: Fransa fiziksel adresleri
+                  href: sit-defn-france-physical-addresses.md
+                - name: Fransa sosyal güvenlik numarası (INSEE)
+                  href: sit-defn-france-social-security-number.md
+                - name: Fransa vergi kimlik numarası
+                  href: sit-defn-france-tax-identification-number.md
+                - name: Fransa katma değer vergisi numarası
+                  href: sit-defn-france-value-added-tax-number.md
+                - name: Genel parola
+                  href: sit-defn-general-password.md
+                - name: Genel Simetrik anahtar
+                  href: sit-defn-general-symmetric-key.md
+                - name: Genel ilaç adları
+                  href: sit-defn-generic-medication-names.md
+                - name: Almanya ehliyet numarası
+                  href: sit-defn-germany-drivers-license-number.md
+                - name: Almanya kimlik kartı numarası
+                  href: sit-defn-germany-identity-card-number.md
+                - name: Almanya pasaport numarası
+                  href: sit-defn-germany-passport-number.md
+                - name: Almanya fiziksel adresleri
+                  href: sit-defn-germany-physical-addresses.md
+                - name: Almanya vergi kimlik numarası
+                  href: sit-defn-germany-tax-identification-number.md
+                - name: Almanya katma değer vergisi numarası
+                  href: sit-defn-germany-value-added-tax-number.md
+                - name: GitHub kişisel erişim belirteci
+                  href: sit-defn-github-personal-access-token.md
+                - name: Google API anahtarı
+                  href: sit-defn-google-api-key.md
+                - name: Yunanistan ehliyet numarası
+                  href: sit-defn-greece-drivers-license-number.md
+                - name: Yunanistan ulusal kimlik kartı
+                  href: sit-defn-greece-national-id-card.md
+                - name: Yunanistan pasaport numarası
+                  href: sit-defn-greece-passport-number.md
+                - name: Yunanistan fiziksel adresleri
+                  href: sit-defn-greece-physical-addresses.md
+                - name: Yunanistan Sosyal Güvenlik Numarasını (AMKA)
+                  href: sit-defn-greece-social-security-number.md
+                - name: Yunanistan vergi kimlik numarası
+                  href: sit-defn-greece-tax-identification-number.md
+                - name: Hong Kong kimlik kartı (HKID) numarası
+                  href: sit-defn-hong-kong-identity-card-number.md
+                - name: Http yetkilendirme üst bilgisi
+                  href: sit-defn-http-authorization-header.md
+                - name: Macaristan ehliyet numarası
+                  href: sit-defn-hungary-drivers-license-number.md
+                - name: Macaristan pasaport numarası
+                  href: sit-defn-hungary-passport-number.md
+                - name: Macaristan kişisel kimlik numarası
+                  href: sit-defn-hungary-personal-identification-number.md
+                - name: Macaristan fiziksel adresleri
+                  href: sit-defn-hungary-physical-addresses.md
+                - name: Macaristan sosyal güvenlik numarası (TAJ)
+                  href: sit-defn-hungary-social-security-number.md
+                - name: Macaristan vergi kimlik numarası
+                  href: sit-defn-hungary-tax-identification-number.md
+                - name: Macaristan katma değer vergisi numarası
+                  href: sit-defn-hungary-value-added-tax-number.md
+                - name: İzlanda fiziksel adresleri
+                  href: sit-defn-iceland-physical-addresses.md
+                - name: ABD Sosyal Güvenlik Kapsamında Engellilik Değerlendirmesinde Listelenen Engellilikler
+                  href: sit-defn-impairments-us-disability-evaluation-under-social-security.md
+                - name: Hindistan Ehliyet Numarası
+                  href: sit-defn-india-drivers-license-number.md
+                - name: Hindistan GST Numarası
+                  href: sit-defn-india-gst-number.md
+                - name: Hindistan kalıcı hesap numarası (PAN)
+                  href: sit-defn-india-permanent-account-number.md
+                - name: Hindistan benzersiz kimlik (Aadhaar) numarası
+                  href: sit-defn-india-unique-identification-number.md
+                - name: Hindistan Seçmen Kimlik Kartı
+                  href: sit-defn-india-voter-id-card.md
+                - name: Endonezya kimlik kartı (KTP) numarası
+                  href: sit-defn-indonesia-identity-card-number.md
+                - name: Uluslararası bankacılık hesap numarası (IBAN)
+                  href: sit-defn-international-banking-account-number.md
+                - name: Uluslararası hastalık sınıflandırması (ICD-10-CM)
+                  href: sit-defn-international-classification-of-diseases-icd-10-cm.md
+                - name: Uluslararası hastalık sınıflandırması (ICD-9-CM)
+                  href: sit-defn-international-classification-of-diseases-icd-9-cm.md
+                - name: IP adresi
+                  href: sit-defn-ip-address.md
+                - name: IP adresi v4
+                  href: sit-defn-ip-address-v4.md
+                - name: IP adresi v6
+                  href: sit-defn-ip-address-v6.md
+                - name: İrlanda ehliyet numarası
+                  href: sit-defn-ireland-drivers-license-number.md
+                - name: İrlanda pasaport numarası
+                  href: sit-defn-ireland-passport-number.md
+                - name: İrlanda kişisel kamu hizmeti (PPS) numarası
+                  href: sit-defn-ireland-personal-public-service-number.md
+                - name: İrlanda fiziksel adresleri
+                  href: sit-defn-ireland-physical-addresses.md
+                - name: İsrail banka hesap numarası
+                  href: sit-defn-israel-bank-account-number.md
+                - name: İsrail ulusal kimlik numarası
+                  href: sit-defn-israel-national-identification-number.md
+                - name: İtalya ehliyet numarası
+                  href: sit-defn-italy-drivers-license-number.md
+                - name: İtalya mali kodu
+                  href: sit-defn-italy-fiscal-code.md
+                - name: İtalya pasaport numarası
+                  href: sit-defn-italy-passport-number.md
+                - name: İtalya fiziksel adresleri
+                  href: sit-defn-italy-physical-addresses.md
+                - name: İtalya katma değer vergisi numarası
+                  href: sit-defn-italy-value-added-tax-number.md
+                - name: Japonya banka hesap numarası
+                  href: sit-defn-japan-bank-account-number.md
+                - name: Japonya ehliyet numarası
+                  href: sit-defn-japan-drivers-license-number.md
+                - name: Japonya Numaram - Kurumsal
+                  href: sit-defn-japan-my-number-corporate.md
+                - name: Japonya Numaram - Kişisel
+                  href: sit-defn-japan-my-number-personal.md
+                - name: Japonya pasaport numarası
+                  href: sit-defn-japan-passport-number.md
+                - name: Japonya konut kartı numarası
+                  href: sit-defn-japan-residence-card-number.md
+                - name: Japonya'da ikamet eden kayıt numarası
+                  href: sit-defn-japan-resident-registration-number.md
+                - name: Japonya sosyal sigorta numarası (SIN)
+                  href: sit-defn-japan-social-insurance-number.md
+                - name: Laboratuvar test terimleri
+                  href: sit-defn-lab-test-terms.md
+                - name: Letonya ehliyet numarası
+                  href: sit-defn-latvia-drivers-license-number.md
+                - name: Letonya pasaport numarası
+                  href: sit-defn-latvia-passport-number.md
+                - name: Letonya kişisel kodu
+                  href: sit-defn-latvia-personal-code.md
+                - name: Letonya fiziksel adresleri
+                  href: sit-defn-latvia-physical-addresses.md
+                - name: Liechtenstein fiziksel adresleri
+                  href: sit-defn-liechtenstein-physical-addresses.md
+                - name: Tıbbi koşullarla ilgili yaşam tarzları
+                  href: sit-defn-lifestyles-relate-to-medical-conditions.md
+                - name: Litvanya ehliyet numarası
+                  href: sit-defn-lithuania-drivers-license-number.md
+                - name: Litvanya pasaport numarası
+                  href: sit-defn-lithuania-passport-number.md
+                - name: Litvanya kişisel kodu
+                  href: sit-defn-lithuania-personal-code.md
+                - name: Litvanya fiziksel adresleri
+                  href: sit-defn-lithuania-physical-addresses.md
+                - name: Luxemburg ehliyet numarası
+                  href: sit-defn-luxemburg-drivers-license-number.md
+                - name: Lüksemburg ulusal kimlik numarası (gerçek kişiler)
+                  href: sit-defn-luxemburg-national-identification-number-natural-persons.md
+                - name: Lüksemburg ulusal kimlik numarası (gerçek olmayan kişiler)
+                  href: sit-defn-luxemburg-national-identification-number-non-natural-persons.md
+                - name: Lüksemburg pasaport numarası
+                  href: sit-defn-luxemburg-passport-number.md
+                - name: Luxemburg fiziksel adresleri
+                  href: sit-defn-luxemburg-physical-addresses.md
+                - name: Malezya kimlik kartı numarası
+                  href: sit-defn-malaysia-identification-card-number.md
+                - name: Malta ehliyet numarası
+                  href: sit-defn-malta-drivers-license-number.md
+                - name: Malta kimlik kartı numarası
+                  href: sit-defn-malta-identity-card-number.md
+                - name: Malta pasaport numarası
+                  href: sit-defn-malta-passport-number.md
+                - name: Malta fiziksel adresleri
+                  href: sit-defn-malta-physical-addresses.md
+                - name: Malta vergi kimlik numarası
+                  href: sit-defn-malta-tax-identification-number.md
+                - name: Tıbbi uzmanlıklar
+                  href: sit-defn-medical-specialities.md
+                - name: Medicare (Tıbbi Bakım Sigortası) Faydalanıcı Kimlik (MBI) kartı
+                  href: sit-defn-medicare-beneficiary-Identifier-card.md
+                - name: Meksika Benzersiz Nüfus Kayıt Defteri Kodu (CURP)
+                  href: sit-defn-mexico-unique-population-registry-code.md
+                - name: Microsoft Bing haritalar anahtarı
+                  href: sit-defn-microsoft-bing-maps-key.md
+                - name: Hollanda vatandaşlık hizmeti (BSN) numarası
+                  href: sit-defn-netherlands-citizens-service-number.md
+                - name: Hollanda ehliyet numarası
+                  href: sit-defn-netherlands-drivers-license-number.md
+                - name: Hollanda pasaport numarası
+                  href: sit-defn-netherlands-passport-number.md
+                - name: Hollanda fiziksel adresleri
+                  href: sit-defn-netherlands-physical-addresses.md
+                - name: Hollanda vergi kimlik numarası
+                  href: sit-defn-netherlands-tax-identification-number.md
+                - name: Hollanda katma değer vergisi numarası
+                  href: sit-defn-netherlands-value-added-tax-number.md
+                - name: Yeni Zelanda banka hesap numarası
+                  href: sit-defn-new-zealand-bank-account-number.md
+                - name: Yeni Zelanda ehliyet numarası
+                  href: sit-defn-new-zealand-drivers-license-number.md
+                - name: Yeni Zelanda iç gelir numarası
+                  href: sit-defn-new-zealand-inland-revenue-number.md
+                - name: Yeni Zelanda sağlık bakanlığı numarası
+                  href: sit-defn-new-zealand-ministry-of-health-number.md
+                - name: Yeni Zelanda fiziksel adresleri
+                  href: sit-defn-new-zealand-physical-addresses.md
+                - name: Yeni Zelanda sosyal yardım numarası
+                  href: sit-defn-new-zealand-social-welfare-number.md
+                - name: Norveç kimlik numarası
+                  href: sit-defn-norway-identification-number.md
+                - name: Norveç fiziksel adresleri
+                  href: sit-defn-norway-physical-addresses.md
+                - name: Filipinler birleşik çok amaçlı kimlik numarası
+                  href: sit-defn-philippines-unified-multi-purpose-identification-number.md
+                - name: Polonya ehliyet numarası
+                  href: sit-defn-poland-drivers-license-number.md
+                - name: Polonya kimlik kartı
+                  href: sit-defn-poland-identity-card.md
+                - name: Polonya ulusal kimliği (PESEL)
+                  href: sit-defn-poland-national-id.md
+                - name: Polonya pasaport numarası
+                  href: sit-defn-poland-passport-number.md
+                - name: Polonya fiziksel adresleri
+                  href: sit-defn-poland-physical-addresses.md
+                - name: Polonya REGON numarası
+                  href: sit-defn-poland-regon-number.md
+                - name: Polonya vergi kimlik numarası
+                  href: sit-defn-poland-tax-identification-number.md
+                - name: Portekiz vatandaşı kart numarası
+                  href: sit-defn-portugal-citizen-card-number.md
+                - name: Portekiz ehliyet numarası
+                  href: sit-defn-portugal-drivers-license-number.md
+                - name: Portekiz pasaport numarası
+                  href: sit-defn-portugal-passport-number.md
+                - name: Portekiz fiziksel adresleri
+                  href: sit-defn-portugal-physical-addresses.md
+                - name: Portekiz vergi kimlik numarası
+                  href: sit-defn-portugal-tax-identification-number.md
+                - name: Romanya ehliyet numarası
+                  href: sit-defn-romania-drivers-license-number.md
+                - name: Romanya pasaport numarası
+                  href: sit-defn-romania-passport-number.md
+                - name: Romanya kişisel sayısal kodu (CNP)
+                  href: sit-defn-romania-personal-numeric-code.md
+                - name: Romanya fiziksel adresleri
+                  href: sit-defn-romania-physical-addresses.md
+                - name: Rusya pasaport numarası yurt içi
+                  href: sit-defn-russia-passport-number-domestic.md
+                - name: Rusya pasaport numarası uluslararası
+                  href: sit-defn-russia-passport-number-international.md
+                - name: Suudi Arabistan Ulusal Kimliği
+                  href: sit-defn-saudi-arabia-national-id.md
+                - name: Singapur ulusal kayıt kimlik kartı (NRIC) numarası
+                  href: sit-defn-singapore-national-registration-identity-card-number.md
+                - name: Slack erişim belirteci
+                  href: sit-defn-slack-access-token.md
+                - name: Slovakya ehliyet numarası
+                  href: sit-defn-slovakia-drivers-license-number.md
+                - name: Slovakya pasaport numarası
+                  href: sit-defn-slovakia-passport-number.md
+                - name: Slovakya kişisel numarası
+                  href: sit-defn-slovakia-personal-number.md
+                - name: Slovakya fiziksel adresleri
+                  href: sit-defn-slovakia-physical-addresses.md
+                - name: Slovenya ehliyet numarası
+                  href: sit-defn-slovenia-drivers-license-number.md
+                - name: Slovenya pasaport numarası
+                  href: sit-defn-slovenia-passport-number.md
+                - name: Slovenya fiziksel adresleri
+                  href: sit-defn-slovenia-physical-addresses.md
+                - name: Slovenya vergi kimlik numarası
+                  href: sit-defn-slovenia-tax-identification-number.md
+                - name: Slovenya Benzersiz Birincil Vatandaş Numarası
+                  href: sit-defn-slovenia-unique-master-citizen-number.md
+                - name: Güney Afrika kimlik numarası
+                  href: sit-defn-south-africa-identification-number.md
+                - name: Güney Kore ikamet kayıt numarası
+                  href: sit-defn-south-korea-resident-registration-number.md
+                - name: İspanya DNI
+                  href: sit-defn-spain-dni.md
+                - name: İspanya ehliyet numarası
+                  href: sit-defn-spain-drivers-license-number.md
+                - name: İspanya pasaport numarası
+                  href: sit-defn-spain-passport-number.md
+                - name: İspanya fiziksel adresleri
+                  href: sit-defn-spain-physical-addresses.md
+                - name: İspanya sosyal güvenlik numarası (SSN)
+                  href: sit-defn-spain-social-security-number.md
+                - name: İspanya vergi kimlik numarası
+                  href: sit-defn-spain-tax-identification-number.md
+                - name: SQL Server bağlantı dizesi
+                  href: sit-defn-sql-server-connection-string.md
+                - name: Cerrahi prosedürler
+                  href: sit-defn-surgical-procedures.md
+                - name: İsveç ehliyet numarası
+                  href: sit-defn-sweden-drivers-license-number.md
+                - name: İsveç ulusal kimliği
+                  href: sit-defn-sweden-national-id.md
+                - name: İsveç pasaport numarası
+                  href: sit-defn-sweden-passport-number.md
+                - name: İsveç fiziksel adresleri
+                  href: sit-defn-sweden-physical-addresses.md
+                - name: İsveç vergi kimlik numarası
+                  href: sit-defn-sweden-tax-identification-number.md
+                - name: SWIFT kodu
+                  href: sit-defn-swift-code.md
+                - name: İsviçre fiziksel adresleri
+                  href: sit-defn-switzerland-physical-addresses.md
+                - name: İsviçre SSN AHV numarası
+                  href: sit-defn-switzerland-ssn-ahv-number.md
+                - name: Tayvan ulusal kimlik numarası
+                  href: sit-defn-taiwan-national-identification-number.md
+                - name: Tayvan pasaport numarası
+                  href: sit-defn-taiwan-passport-number.md
+                - name: Tayvan'da yerleşik sertifika (ARC/TARC) numarası
+                  href: sit-defn-taiwan-resident-certificate-number.md
+                - name: Tay nüfus kimlik kodu
+                  href: sit-defn-thai-population-identification-code.md
+                - name: Türkiye ulusal kimlik numarası
+                  href: sit-defn-turkey-national-identification-number.md
+                - name: Türkiye fiziksel adresleri
+                  href: sit-defn-turkey-physical-addresses.md
+                - name: İlaç türleri
+                  href: sit-defn-types-of-medication.md
+                - name: BK ehliyet numarası
+                  href: sit-defn-uk-drivers-license-number.md
+                - name: BK seçim rulosu numarası
+                  href: sit-defn-uk-electoral-roll-number.md
+                - name: BK ulusal sağlık hizmeti numarası
+                  href: sit-defn-uk-national-health-service-number.md
+                - name: BK ulusal sigorta numarası (NINO)
+                  href: sit-defn-uk-national-insurance-number.md
+                - name: BK fiziksel adresler
+                  href: sit-defn-uk-physical-addresses.md
+                - name: BK Benzersiz Vergi Mükellefi Başvuru Numarası
+                  href: sit-defn-uk-unique-taxpayer-reference-number.md
+                - name: ABD banka hesap numarası
+                  href: sit-defn-us-bank-account-number.md
+                - name: ABD ehliyet numarası
+                  href: sit-defn-us-drivers-license-number.md
+                - name: ABD bireysel vergi mükellefi kimlik numarası (ITIN)
+                  href: sit-defn-us-individual-taxpayer-identification-number.md
+                - name: ABD fiziksel adresleri
+                  href: sit-defn-us-physical-addresses.md
+                - name: ABD sosyal güvenlik numarası (SSN)
+                  href: sit-defn-us-social-security-number.md
+                - name: ABD / BK pasaport numarası
+                  href: sit-defn-us-uk-passport-number.md
+                - name: Ukrayna pasaportu yurt içi
+                  href: sit-defn-ukraine-passport-domestic.md
+                - name: Ukrayna pasaportu uluslararası
+                  href: sit-defn-ukraine-passport-international.md
+                - name: Kullanıcı oturum açma kimlik bilgileri
+                  href: sit-defn-user-login-credentials.md
+                - name: X.509 sertifikası özel anahtarı
+                  href: sit-defn-x-509-certificate-private-key.md
             - name: Hassas bilgi türü işlevleri
               href: sit-functions.md
             - name: Özel hassas bilgi türü filtreleri referansı
