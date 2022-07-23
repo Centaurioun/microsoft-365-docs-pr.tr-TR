@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 72509f7480d54819fc29f40bab0e2bf65dcd8660
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 4619b24d06af4cdb80916fb9eacbc52b2fa55c21
+ms.sourcegitcommit: 0a67e239549752fcdbcff660189f34b51ec273f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622023"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "66983971"
 ---
 # <a name="manage-indicators"></a>Göstergeleri yönetin
 
@@ -35,7 +35,7 @@ ms.locfileid: "65622023"
 
 > Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-1. Gezinti bölmesinde uç **nokta göstergelerini** \> **Ayarlar** \> seçin (**Kurallar'ın** altında).
+1. Gezinti bölmesinde **Ayarlar** \> **Uç Noktaları** \> **Göstergeleri'ni** seçin ( **Kurallar'ın** altında).
 
 2. Yönetmek istediğiniz varlık türünün sekmesini seçin.
 
@@ -47,7 +47,7 @@ Ayrıca göstergelerin özniteliklerini, gerçekleştirilecek eylemi ve diğer a
 
 Desteklenen sütun özniteliklerini öğrenmek için örnek CSV dosyasını indirin.
 
-1. Gezinti bölmesinde uç **nokta göstergelerini** \> **Ayarlar** \> seçin (**Kurallar'ın** altında).
+1. Gezinti bölmesinde **Ayarlar** \> **Uç Noktaları** \> **Göstergeleri'ni** seçin ( **Kurallar'ın** altında).
 
 2. Göstergelerini içeri aktarmak istediğiniz varlık türünün sekmesini seçin.
 
@@ -69,13 +69,13 @@ indicatorValue|Dize|[Gösterge](ti-indicator.md) varlığının kimliği. **Gere
 Eylem|Enum|Gösterge kuruluşta bulunursa gerçekleştirilecek eylem. Olası değerler şunlardır: "Alert", "AlertAndBlock" ve "Allowed". **Gerekli**
 Başlık|Dize|Gösterge uyarı başlığı. **Gerekli**
 Açıklama|Dize| Göstergenin açıklaması. **Gerekli**
-expirationTime|Datetimeoffset|Göstergenin YYYY-AA-GGTHH:AA:SS.0Z biçiminde sona erme zamanı. Süre sonu süresi geçtiğinde ve süre sonu sırasında ne olursa olsun saniye (SS) değerinde gerçekleşirse gösterge silinir. **İsteğe bağlı**
-Önem|Enum|Göstergenin önem derecesi. Olası değerler şunlardır: "Bilgilendirici", "Düşük", "Orta" ve "Yüksek". **İsteğe bağlı**
-recommendedActions|Dize|TI göstergesi uyarısı önerilen eylemler. **İsteğe bağlı**
-rbacGroupNames|Dize|Göstergenin uygulanacağı RBAC grup adlarının virgülle ayrılmış listesi. **İsteğe bağlı**
-Kategori|Dize|Uyarı kategorisi. Örnekler şunlardır: Yürütme ve kimlik bilgileri erişimi. **İsteğe bağlı**
-mitretechniques|Dize|MITRE teknikleri kod/kimlik (virgülle ayrılmış). Daha fazla bilgi için bkz. [Enterprise taktikleri](https://attack.mitre.org/tactics/enterprise/). **Isteğe bağlı** MITRE tekniğinde kategoriye değer eklemeniz önerilir.
-GenerateAlert|Dize|Uyarının oluşturulup oluşturulmayacağı. Olası Değerler şunlardır: True veya False. **İsteğe bağlı**
+expirationTime|Datetimeoffset|Göstergenin YYYY-AA-GGTHH:AA:SS.0Z biçiminde sona erme zamanı. Süre sonu süresi geçtiğinde ve süre sonu sırasında ne olursa olsun saniye (SS) değerinde gerçekleşirse gösterge silinir. **Isteğe bağlı**
+Önem|Enum|Göstergenin önem derecesi. Olası değerler şunlardır: "Bilgilendirici", "Düşük", "Orta" ve "Yüksek". **Isteğe bağlı**
+recommendedActions|Dize|TI göstergesi uyarısı önerilen eylemler. **Isteğe bağlı**
+rbacGroups|Dize|Göstergenin uygulanacağı RBAC gruplarının virgülle ayrılmış listesi. **Isteğe bağlı**
+Kategori|Dize|Uyarı kategorisi. Örnekler şunlardır: Yürütme ve kimlik bilgileri erişimi. **Isteğe bağlı**
+mitretechniques|Dize|MITRE teknikleri kod/kimlik (virgülle ayrılmış). Daha fazla bilgi için bkz [. Kurumsal taktikler](https://attack.mitre.org/tactics/enterprise/). **Isteğe bağlı** MITRE tekniğinde kategoriye değer eklemeniz önerilir.
+GenerateAlert|Dize|Uyarının oluşturulup oluşturulmayacağı. Olası Değerler şunlardır: True veya False. **Isteğe bağlı**
 
 > [!NOTE]
 > IP adresleri için sınıfsız Inter-Domain Yönlendirme (CIDR) gösterimi desteklenmez.
