@@ -372,7 +372,7 @@
               href: sit-common-scenarios.md
         - name: Hassas bilgi türü referansı
           items:
-            - name: Tüm hassas bilgi türü varlık tanımları
+            - name: Tüm Hassas bilgi türü varlık tanımları
               items:
                 - name: Hassas bilgi türü varlık tanımları
                   href: sensitive-information-type-entity-definitions.md
@@ -388,7 +388,7 @@
                   href: sit-defn-amazon-s3-client-secret-access-key.md
                 - name: Arjantin ulusal kimlik (DNI) numarası
                   href: sit-defn-argentina-national-identity-numbers.md
-                - name: Arjantin Benzersiz Vergi Tanımlama Anahtarı
+                - name: Arjantin Benzersiz Vergi Kimlik Anahtarı
                   href: sit-defn-argentina-unique-tax-identification-key.md
                 - name: ASP.NET Makine Anahtarı
                   href: sit-defn-asp-net-machine-key.md
@@ -506,9 +506,9 @@
                   href: sit-defn-belgium-passport-number.md
                 - name: Belçika fiziksel adresleri
                   href: sit-defn-belgium-physical-addresses.md
-                - name: Belçika katma değer vergisi numarası
+                - name: Belçika katma değer vergi numarası
                   href: sit-defn-belgium-value-added-tax-number.md
-                - name: Kan testi terimleri
+                - name: Kan testi koşulları
                   href: sit-defn-blood-test-terms.md
                 - name: Marka ilaç adları
                   href: sit-defn-brand-medication-names.md
@@ -544,7 +544,7 @@
                   href: sit-defn-canada-social-insurance-number.md
                 - name: Şili kimlik kartı numarası
                   href: sit-defn-chile-identity-card-number.md
-                - name: Çin yerleşik kimlik kartı (PRC) numarası
+                - name: Çin mukim kimlik kartı (PRC) numarası
                   href: sit-defn-china-resident-identity-card-number.md
                 - name: Gizli anahtar / API anahtarı
                   href: sit-defn-client-secret-api-key.md
@@ -590,7 +590,7 @@
                   href: sit-defn-denmark-physical-addresses.md
                 - name: Hastalıklar
                   href: sit-defn-diseases.md
-                - name: Uyuşturucuyla Mücadele Kurumu (DEA) numarası
+                - name: 'Uyuşturucuyla Mücadele Ajansı (DEA) numarası '
                   href: sit-defn-drug-enforcement-agency-number.md
                 - name: Estonya ehliyet numarası
                   href: sit-defn-estonia-drivers-license-number.md
@@ -636,7 +636,7 @@
                   href: sit-defn-france-social-security-number.md
                 - name: Fransa vergi kimlik numarası
                   href: sit-defn-france-tax-identification-number.md
-                - name: Fransa katma değer vergisi numarası
+                - name: Fransa katma değer vergi numarası
                   href: sit-defn-france-value-added-tax-number.md
                 - name: Genel parola
                   href: sit-defn-general-password.md
@@ -654,7 +654,7 @@
                   href: sit-defn-germany-physical-addresses.md
                 - name: Almanya vergi kimlik numarası
                   href: sit-defn-germany-tax-identification-number.md
-                - name: Almanya katma değer vergisi numarası
+                - name: Almanya katma değer vergi numarası
                   href: sit-defn-germany-value-added-tax-number.md
                 - name: GitHub kişisel erişim belirteci
                   href: sit-defn-github-personal-access-token.md
@@ -688,11 +688,11 @@
                   href: sit-defn-hungary-social-security-number.md
                 - name: Macaristan vergi kimlik numarası
                   href: sit-defn-hungary-tax-identification-number.md
-                - name: Macaristan katma değer vergisi numarası
+                - name: Macaristan katma değer vergi numarası
                   href: sit-defn-hungary-value-added-tax-number.md
                 - name: İzlanda fiziksel adresleri
                   href: sit-defn-iceland-physical-addresses.md
-                - name: ABD Sosyal Güvenlik Kapsamında Engellilik Değerlendirmesinde Listelenen Engellilikler
+                - name: Sosyal Güvenlik Kapsamında ABD Engellilik Değerlendirmesinde Listelenen Bozukluklar
                   href: sit-defn-impairments-us-disability-evaluation-under-social-security.md
                 - name: Hindistan Ehliyet Numarası
                   href: sit-defn-india-drivers-license-number.md
@@ -700,7 +700,7 @@
                   href: sit-defn-india-gst-number.md
                 - name: Hindistan kalıcı hesap numarası (PAN)
                   href: sit-defn-india-permanent-account-number.md
-                - name: Hindistan benzersiz kimlik (Aadhaar) numarası
+                - name: Hindistan benzersiz tanımlama (Aadhaar) numarası
                   href: sit-defn-india-unique-identification-number.md
                 - name: Hindistan Seçmen Kimlik Kartı
                   href: sit-defn-india-voter-id-card.md
@@ -738,7 +738,7 @@
                   href: sit-defn-italy-passport-number.md
                 - name: İtalya fiziksel adresleri
                   href: sit-defn-italy-physical-addresses.md
-                - name: İtalya katma değer vergisi numarası
+                - name: İtalya katma değer vergi numarası
                   href: sit-defn-italy-value-added-tax-number.md
                 - name: Japonya banka hesap numarası
                   href: sit-defn-japan-bank-account-number.md
@@ -752,11 +752,11 @@
                   href: sit-defn-japan-passport-number.md
                 - name: Japonya konut kartı numarası
                   href: sit-defn-japan-residence-card-number.md
-                - name: Japonya'da ikamet eden kayıt numarası
+                - name: Japonya mukim kayıt numarası
                   href: sit-defn-japan-resident-registration-number.md
                 - name: Japonya sosyal sigorta numarası (SIN)
                   href: sit-defn-japan-social-insurance-number.md
-                - name: Laboratuvar test terimleri
+                - name: Laboratuvar testi koşulları
                   href: sit-defn-lab-test-terms.md
                 - name: Letonya ehliyet numarası
                   href: sit-defn-latvia-drivers-license-number.md
@@ -778,7 +778,7 @@
                   href: sit-defn-lithuania-personal-code.md
                 - name: Litvanya fiziksel adresleri
                   href: sit-defn-lithuania-physical-addresses.md
-                - name: Luxemburg ehliyet numarası
+                - name: Lüksemburg ehliyet numarası
                   href: sit-defn-luxemburg-drivers-license-number.md
                 - name: Lüksemburg ulusal kimlik numarası (gerçek kişiler)
                   href: sit-defn-luxemburg-national-identification-number-natural-persons.md
@@ -786,7 +786,7 @@
                   href: sit-defn-luxemburg-national-identification-number-non-natural-persons.md
                 - name: Lüksemburg pasaport numarası
                   href: sit-defn-luxemburg-passport-number.md
-                - name: Luxemburg fiziksel adresleri
+                - name: Lüksemburg fiziksel adresleri
                   href: sit-defn-luxemburg-physical-addresses.md
                 - name: Malezya kimlik kartı numarası
                   href: sit-defn-malaysia-identification-card-number.md
@@ -818,7 +818,7 @@
                   href: sit-defn-netherlands-physical-addresses.md
                 - name: Hollanda vergi kimlik numarası
                   href: sit-defn-netherlands-tax-identification-number.md
-                - name: Hollanda katma değer vergisi numarası
+                - name: Hollanda katma değer vergi numarası
                   href: sit-defn-netherlands-value-added-tax-number.md
                 - name: Yeni Zelanda banka hesap numarası
                   href: sit-defn-new-zealand-bank-account-number.md
@@ -852,7 +852,7 @@
                   href: sit-defn-poland-regon-number.md
                 - name: Polonya vergi kimlik numarası
                   href: sit-defn-poland-tax-identification-number.md
-                - name: Portekiz vatandaşı kart numarası
+                - name: Portekiz vatandaşlık kart numarası
                   href: sit-defn-portugal-citizen-card-number.md
                 - name: Portekiz ehliyet numarası
                   href: sit-defn-portugal-drivers-license-number.md
@@ -896,11 +896,11 @@
                   href: sit-defn-slovenia-physical-addresses.md
                 - name: Slovenya vergi kimlik numarası
                   href: sit-defn-slovenia-tax-identification-number.md
-                - name: Slovenya Benzersiz Birincil Vatandaş Numarası
+                - name: Slovenya Benzersiz Birincil Vatandaşlık Numarası
                   href: sit-defn-slovenia-unique-master-citizen-number.md
                 - name: Güney Afrika kimlik numarası
                   href: sit-defn-south-africa-identification-number.md
-                - name: Güney Kore ikamet kayıt numarası
+                - name: Güney Kore mukim kayıt numarası
                   href: sit-defn-south-korea-resident-registration-number.md
                 - name: İspanya DNI
                   href: sit-defn-spain-dni.md
@@ -938,7 +938,7 @@
                   href: sit-defn-taiwan-national-identification-number.md
                 - name: Tayvan pasaport numarası
                   href: sit-defn-taiwan-passport-number.md
-                - name: Tayvan'da yerleşik sertifika (ARC/TARC) numarası
+                - name: Tayvan mukim sertifikası (ARC/TARC) numarası
                   href: sit-defn-taiwan-resident-certificate-number.md
                 - name: Tay nüfus kimlik kodu
                   href: sit-defn-thai-population-identification-code.md
@@ -1575,7 +1575,7 @@
               href: permissions-filtering-for-content-search.md
             - name: eKeşif için posta kutularında saklanan içerik
               href: what-is-stored-in-exo-mailbox.md
-            - name: eKeşif Grafik bağlayıcısı
+            - name: Graph bağlayıcıları için eKeşif
               href: ediscovery-graph-connector.md
             - name: eKeşif araçlarında şifre çözme
               href: ediscovery-decryption.md
