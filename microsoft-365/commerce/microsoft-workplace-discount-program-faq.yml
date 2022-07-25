@@ -1,0 +1,119 @@
+### YamlMime:FAQ
+metadata:
+  title: Microsoft Workplace Discount Program SSS
+  author: cmcatee-MSFT
+  ms.author: cmcatee
+  manager: scotv
+  ms.reviewer: tugu, jmueller
+  audience: Admin
+  ms.topic: faq
+  ms.service: o365-administration
+  ms.localizationpriority: medium
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  ms.custom:
+  - commerce_subscriptions
+  - okr_SMB
+  - AdminSurgePortfolio
+  search.appverid: MET150
+  description: Microsoft Workplace Discount Program hakkında sık sorulan sorular (SSS).
+  ms.date: 07/19/2022
+  ms.openlocfilehash: 79420d82f778de953be436609140ba7a9cf6709d
+  ms.sourcegitcommit: 08ad8636b029ffd19130e2da0de72f37f67e412e
+  ms.translationtype: MT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66989273"
+title: Microsoft Workplace Discount Program hakkında sık sorulan sorular (SSS)
+summary: >
+  Toplu Lisanslama müşterileri, [İş İçin Microsoft Store web sitesinde veya Microsoft 365 yönetim merkezi](https://go.microsoft.com/fwlink/?linkid=2139192) Microsoft Workplace Discount Program 'ı (eski adıyla Evde Kullanım Programı veya HUP) [kullanır.](https://go.microsoft.com/fwlink/p/?linkid=2024339)
+
+
+  Diğer tüm müşteriler bu adımı kullanarak Workplace Discount Program'a erişmektedir:
+
+
+  - Microsoft yönetim merkezinde [**Ürünlerinizi**](https://go.microsoft.com/fwlink/p/?linkid=842054) **Faturalama** >  sayfasına gidin, **Avantajlar** sekmesini ve ardından Microsoft Workplace Discount Program için **Avantaj adını** seçin.
+sections:
+- name: Yok sayıldı
+  questions:
+  - question: >
+      Microsoft Workplace Discount Program nedir?
+    answer: >
+      Microsoft Workplace Discount Program, uygun şirketlerdeki çalışanların Microsoft tüketici ürünlerini indirimli olarak satın almasını sağlar. [Çalışma Alanı İndirim Programı ürün sayfasını](https://www.microsoft.com/workplace-discount-program) ziyaret ederek her ürün teklifi için geçerli indirimleri de kontrol edebilirsiniz.
+  - question: >
+      İşyeri İndirim Programı hangi pazarlarda sunulmaktadır?
+    answer: "Microsoft 365 Aile ve Kişisel aboneliklerdeki indirimler, şu istisnalar dışında dünya çapında uygun şirketlere sunulur:\n\n- Lübnan, Makao, Rusya ve Venezuela: Bu teklif bu pazarlarda mevcut değildir.\n- Çin ve Hong Kong: Bu pazarlarda bir yıllık abonelik mevcuttur. Çin için, [Çin'de Microsoft 365'i](https://www.microsoftstore.com.cn/home-use-program/invite) ziyaret edin. Hong Kong için [Microsoft 365'i indirimli fiyatla satın alma](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK) sayfasını ziyaret edin.\n- Belirli Surface cihaz ve aksesuarlarındaki indirimler, belirli pazarlardaki uygun şirketlere sunulur. \n"
+  - question: >
+      Bir kuruluş Microsoft Workplace Discount Program avantajlarına nasıl hak kazanmaktadır?
+    answer: "Çalışanların Microsoft Workplace Discount Program avantajından yararlanması için geçerli bir kurumsal e-posta adresine ve etkin bir Microsoft Hesabına sahip olmaları ve kuruluşunuzun aşağıdaki ölçütlerden birini karşılaması gerekir:\n\n- Uygun Office uygulamaları için etkin Yazılım Güvencesi olan müşteriler\n- Yazılım Güvencesinden Microsoft 365/Microsoft 365 E3/E5 kullanan müşteriler\n- Microsoft 365 E3/E5'in bir veya bir karışımından 2.000 veya daha fazla lisans satın alan ticari ve kamu müşterileri\n- Eğitim ve kar amacı gütmeyen müşteriler\n- Son 12 ay içinde uygun Power BI, Office, Surface cihazları & donatıları, Windows ve Enterprise Mobility için 250.000 ABD doları veya daha fazla harcama yapan ticari ve kamu müşterileri \n"
+  - question: >
+      Evde Kullanım Programı'na ne oldu?
+    answer: >
+      Microsoft Evde Kullanım Programı hala kullanılabilir. Programın adı Microsoft Workplace Discount Program olarak değiştirildi. Daha önce satın alınan indirimli ürünler, program adındaki değişiklikten etkilenmez.  Otomatik yenilemeyi açık tutmanız koşuluyla, uygun aboneliklerde indirimli fiyatlar almaya devam edersiniz.
+  - question: >
+      Çalışma Alanı İndirim Programı'nı kullanmak için neden bir Azure Active Directory (AAD) hesabı oluşturmam gerekiyor?
+    answer: >
+      Çalışma Alanı İndirim Programı'nı daha geniş bir lisans ve ürün avantajları yelpazesine güncelleştirmek ve modernleştirmek için programı gerçekleştirme şeklimizi değiştirdik. İş İçin Microsoft Store uygunluk doğrulaması ve avantajları atamak için kullanılır ve VLSC'den bilgileri bağlamak ve kuruluşunuzun çalışanlarının üzerinde olduğu e-posta etki alanlarını doğrulamak için AAD'ye dayanır. Daha fazla bilgi için bkz. [İş İçin Microsoft Store veya Eğitim İçin Microsoft Store için kaydolma](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome). Alternatif olarak, program **avantajlarını** yönetmek için [Microsoft 365 yönetim merkezi](https://go.microsoft.com/fwlink/p/?linkid=2024339) **Ürünleriniz** sayfasındaki Avantajlar sekmesini kullanabilirsiniz.
+  - question: >
+      yönetilen bir kiracının atanmış BT Yönetici Nasıl yaparım??
+    answer: >
+      Şirket etki alanınızın sahibi olduğunuzu kanıtlamak için DNS'de özel bir kayıt oluşturmanız gerekir, örneğin contoso.com.
+
+
+      Yönetilen kiracı olmaya yönelik adım adım bir işlem için bkz. [Azure Active'de yönetilmeyen bir dizini yönetici olarak devralma](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+  - question: >
+      Çalışma Alanı İndirim Programı avantajını çalışanlara tanıtmaya yardımcı olmak için hangi kaynaklar kullanılabilir?
+    answer: >
+      Programı çalışanlarınıza tanıtmanıza yardımcı olması için [Çalışma Alanı İndirim Programı](http://www.microsoft.com/workplace-discount-program/employer-resources) giriş sayfasında bulunan kaynakları kullanın. Dijital ve yazdırılabilir el ilanları, e-postalarda ve bültenlerde kullanım için bilgi ve Workplace Discount Program'ı en iyi şekilde tanıtma yönergelerini bulacaksınız.
+  - question: >
+      Uygun bir çalışanın Microsoft Workplace Discount Program satın almasına yönelik adımlar nelerdir?
+    answer: >
+      1. **Kaydol** [Microsoft Workplace Discount Program sayfasına](http://www.microsoft.com/workplace-discount-program) gidin ve **Başlarken** düğmesini seçin. Çalışanlar kurumsal e-posta adreslerini girer.
+
+      2. **Onaylamak**  Şirket e-posta adresi gelen kutusuna, program için uygunluklarını doğrulayan bir bağlantı içeren bir e-posta gönderilir.
+
+      3. **Oturum Aç** Kimlikleri doğrulandıktan sonra, kişisel e-posta adresleriyle ilişkili Microsoft hesabını sağlayarak satın alma işlemine başlarlar ve bu sayede kuruluşun Workplace Discount Program avantajına göre kendilerine sağlanan ürünlerdeki indirimleri görüntüleyebilirler. Daha fazla bilgi için bkz. [Microsoft hesabınızda oturum açma](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
+
+      4. **Dükkanı** Satın alma işlemi Microsoft Store'da işlenir ve tamamlanır.
+  - question: >
+      Bir çalışan Microsoft Workplace Discount Program aracılığıyla Microsoft 365'e abone olursa, bu durum kuruluşumuzun Microsoft 365 iş aboneliğini ve cihaz sınırını nasıl etkiler?
+    answer: >
+      Workplace Discount Program aracılığıyla yapılan yüklemeler, kuruluşunuzun Microsoft 365 iş aboneliğini etkilemez. Çalışanlar Microsoft 365'i kişisel cihazlarında etkinleştirdiğinde, iş hesabını değil kişisel Microsoft hesabını kullanır. Kuruluşunuzun BT yöneticileri, Workplace Discount Program aracılığıyla yapılan satın almaları yönetmez veya desteklemez.
+  - question: >
+      Kuruluşumun Microsoft Workplace Discount Program avantajını yönetirken sorun yaşıyorum. Nereden destek alabilirim?
+    answer: >
+      Toplu Lisanslama Hizmet Merkezi'nden geçiş veya İş İçin Microsoft Store erişim sorunları için bkz. [VLSC Desteği](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0).
+
+
+      İş İçin Microsoft Store erişildikten sonra avantajı görüntüleme sorunları için bkz[. İş İçin Mağaza Yönetici desteği](/microsoft-store/)
+  - question: >
+      Çalışanlarımın bu program hakkında soruları varsa veya satın alma ve yükleme konusunda desteğe ihtiyaç duyuyorsa ne olur?
+    answer: >
+      Çalışanların soruları varsa aşağıdaki kaynaklara başvurun:
+
+
+      - [Satın alma ve yükleme sonrası SSS](https://www.microsoft.com/microsoft-365/microsoft-365-for-home-and-school-faq?rtc=1)
+
+      - [Çalışma Alanı İndirim Programı Çalışanı SSS](http://www.microsoft.com/workplace-discount-program/faq)
+
+       Teknik sorunlarla ilgili yardım için bkz. [Microsoft Desteği](https://support.microsoft.com/). Şu yardımlar için bulabilirsiniz:
+
+      - Sipariş durumu
+
+      - Faturalama
+
+      - Office'i yükleme
+
+      - Office'te oturum açma
+  - question: >
+      Şirketim neden çalışma alanı indirim programına katılmalı?
+    answer: "Workplace Discount Program, şirketinizin Microsoft yatırımlarından elde ettikleri getiriyi en üst düzeye çıkarmalarına yardımcı olur. Programa katılmanın avantajları şunlardır: \n\n- BT eğitimi gereksinimini azaltma \n- Yardım masası ve eğitim maliyetlerini düşürme \n- Çalışanların evde Microsoft 365'i tanımasına izin verme \n- Üretkenliği artırabilecek yazılım yeterliliğini artırma \n"
+  - question: >
+      Microsoft Workplace Discount Program çalışanlara nasıl fayda sağlar?
+    answer: >
+      Çalışanlar Microsoft 365 ürünlerini önemli bir indirimle satın aldıklarında, ofiste kullandıkları yazılımları evde de kullanabilirler. Bu, üretkenliklerini artırmaya, becerilerini geliştirmeye ve iş memnuniyetini artırmaya yardımcı olur.
+  - question: >
+      Bir çalışan şirketten ayrıldığında ne olur?
+    answer: "Microsoft 365 abonelik teklifine hak kazanan ve program aracılığıyla satın almış çalışanlar için, kuruluşunuzdaki çalışma durumlarına bakılmaksızın, çalışanın aboneliği etkin kaldığı sürece indirimli fiyat uygulanır. \n"
+additionalContent: "\n## <a name=\"related-content\"></a>İlgili içerik\n  [Microsoft Workplace Discount Program hakkında SSS](http://www.microsoft.com/workplace-discount-program/faq). (makale)\\\n  [Microsoft Toplu Lisanslama Hizmet Merkezi](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (bağlantı sayfası)\\\n  [İş İçin Microsoft Store Yönetici desteği](/microsoft-store/) (bağlantı sayfası)\\\n  [İş İçin Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2139192) (bağlantı sayfası)\\\n  [Workplace Discount Program çalışan mağazası](http://www.microsoft.com/workplace-discount-program/faq) (bağlantı sayfası)\\\n  [Microsoft Lisanslama: Workplace Discount Program'a genel bakış](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (bağlantı sayfası)"
