@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 07/14/2022
+ms.date: 07/25/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 1b18bc6ed3f7992a774bfd90fd2913cfe4e9c050
-ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
+ms.openlocfilehash: 78d5e0c8b3b8405dcd4e0a33b315e000d661b7f4
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66843489"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004485"
 ---
 # <a name="compare-microsoft-endpoint-security-plans"></a>Microsoft uç nokta güvenlik planlarını karşılaştırma
 
@@ -32,10 +32,8 @@ Bu makale, aşağıdaki planlara nelerin dahil olduğunu netleştirmeye yardımc
 
 - [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender Güvenlik Açığı Yönetimi](../defender-vulnerability-management/index.yml)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [İş için Microsoft Defender](../defender-business/mdb-overview.md)
-- [Microsoft 365 Business Premium](../../business-premium/index.md)
+- [eklentiyi Microsoft Defender Güvenlik Açığı Yönetimi](../defender-vulnerability-management/index.yml)
+- [İş için Microsoft Defender](../defender-business/mdb-overview.md) ve [Microsoft 365 İş Ekstra](../../business-premium/index.md)
 
 > [!IMPORTANT]
 > Bu makale, Microsoft uç nokta güvenlik planlarındaki tehdit koruma özelliklerinin özetini sağlar; ancak hizmet açıklaması veya lisans sözleşmesi belgesi olarak tasarlanmamıştır. Daha ayrıntılı bilgi için bkz. [Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
@@ -46,10 +44,9 @@ Aşağıdaki tabloda, Microsoft uç nokta güvenlik planlarına dahil edilenler 
 
 | Plan | Dahil olanlar |
 |:---|:---|
-| [Microsoft 365 Defender](../defender/microsoft-365-defender.md) | Hizmetler şunlardır: <ul><li>[Uç Nokta için Defender Plan 2](microsoft-defender-endpoint.md)</li><li>[Microsoft Defender Güvenlik Açığı Yönetimi](../defender-vulnerability-management/defender-vulnerability-management.md)</li><li>[Office 365 için Microsoft Defender](../office-365-security/overview.md)</li><li>[Kimlik için Microsoft Defender](/defender-for-identity/)</li><li>[Bulut Uygulamaları için Microsoft Defender](/cloud-app-security/)</li></ul>|
 | [Uç Nokta Için Defender Plan 1](defender-endpoint-plan-1.md) <sup>[[1](#fn1)]</sup> | <ul><li>[Yeni nesil koruma](defender-endpoint-plan-1.md#next-generation-protection) (kötü amaçlı yazılımdan koruma ve virüsten koruma içerir)</li><li>[Saldırı yüzeyini azaltma](defender-endpoint-plan-1.md#attack-surface-reduction)</li><li> [El ile yanıt eylemleri](defender-endpoint-plan-1.md#manual-response-actions)</li><li>[Merkezi yönetim](defender-endpoint-plan-1.md#centralized-management)</li><li>[Güvenlik raporları](defender-endpoint-plan-1.md#reporting)</li><li>[Apı 'leri](defender-endpoint-plan-1.md#apis)</li><li>[Windows 10, iOS, Android işletim sistemi ve macOS cihazları için destek](defender-endpoint-plan-1.md#cross-platform-support)</li></ul>|
 | [Uç Nokta Için Defender Plan 2](microsoft-defender-endpoint.md) <sup>[[2](#fn2)]</sup> | Uç Nokta için Defender Plan 1 özelliklerinin tümüne ek olarak:<ul><li>[cihaz keşfi](device-discovery.md)</li><li>[Cihaz envanteri](machines-view-overview.md)</li><li>[Core Defender Güvenlik Açığı Yönetimi özellikleri](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)</li><li>[Tehdit Analizi](threat-analytics.md)</li><li>[Otomatik araştırma ve yanıt](automated-investigations.md)</li><li>[Gelişmiş avcılık örneği](advanced-hunting-overview.md)</li><li>[Uç nokta algılama ve yanıt](overview-endpoint-detection-response.md)</li><li>[Microsoft Tehdit Uzmanları](microsoft-threat-experts.md)</li><li>[Windows](configure-endpoints.md) (istemci ve sunucu) ve [Windows dışı platformlar](configure-endpoints-non-windows.md) (macOS, iOS, Android ve Linux) desteği</li></ul> |
-| [Defender Güvenlik Açığı Yönetimi eklentisi](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) | Uç Nokta Planı 2 için Defender için ek Defender Güvenlik Açığı Yönetimi özellikleri:<ul><li>[Güvenlik temelleri değerlendirmesi](../defender-vulnerability-management/tvm-security-baselines.md)</li><li>[Güvenlik açığı bulunan uygulamaları engelleyin](../defender-vulnerability-management/tvm-block-vuln-apps.md)</li><li>[Tarayıcı uzantıları](../defender-vulnerability-management/tvm-browser-extensions.md)</li><li>[Dijital sertifika değerlendirmesi](../defender-vulnerability-management/tvm-certificate-inventory.md)</li><li>[Ağ paylaşımı analizi](../defender-vulnerability-management/tvm-network-share-assessment.md)</li><li>[Windows](configure-endpoints.md) (istemci ve sunucu) ve [Windows dışı platformlar](configure-endpoints-non-windows.md) (macOS, iOS, Android ve Linux) desteği</li></ul> |
+| [Defender Güvenlik Açığı Yönetimi eklentisi](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) | Uç Nokta Için Defender Plan 2 için diğer Defender Güvenlik Açığı Yönetimi özellikleri:<ul><li>[Güvenlik temelleri değerlendirmesi](../defender-vulnerability-management/tvm-security-baselines.md)</li><li>[Güvenlik açığı bulunan uygulamaları engelleyin](../defender-vulnerability-management/tvm-block-vuln-apps.md)</li><li>[Tarayıcı uzantıları](../defender-vulnerability-management/tvm-browser-extensions.md)</li><li>[Dijital sertifika değerlendirmesi](../defender-vulnerability-management/tvm-certificate-inventory.md)</li><li>[Ağ paylaşımı analizi](../defender-vulnerability-management/tvm-network-share-assessment.md)</li><li>[Windows](configure-endpoints.md) (istemci ve sunucu) ve [Windows dışı platformlar](configure-endpoints-non-windows.md) (macOS, iOS, Android ve Linux) desteği</li></ul> |
 | [İş için Defender](../defender-business/mdb-overview.md) <sup>[[3](#fn3)]</sup> <br/>ve<br/>[Microsoft 365 Business Premium](../../business-premium/index.md) | [Küçük ve orta ölçekli işletmeler için iyileştirilmiş hizmetler](../defender-business/compare-mdb-m365-plans.md) şunlardır: <ul><li>Email koruması</li><li>Antispam koruması</li><li>Kötü amaçlı yazılımdan koruma</li><li>Yeni nesil koruma</li><li>Saldırı yüzeyini azaltma</li><li>Uç nokta algılama ve yanıt</li><li>Otomatik araştırma ve yanıt </li><li>Tehdit ve güvenlik açığı yönetimi</li><li>Merkezi raporlama</li><li>API'ler (özel uygulamalar veya raporlama çözümleriyle tümleştirme için)</li><li>[Microsoft 365 Lighthouse ile tümleştirme](../defender-business/mdb-lighthouse-integration.md)</li></ul> |
 
 (<a id="fn1">1</a>) Uç Nokta için Microsoft Defender Plan 1, ticari ve eğitim müşterileri için tek başına abonelik olarak kullanılabilir. Ayrıca Microsoft 365 E3/A3'ün bir parçası olarak da dahildir.
@@ -66,7 +63,7 @@ Aşağıdaki tabloda, Microsoft uç nokta güvenlik planlarına dahil edilenler 
 
 ## <a name="options-for-onboarding-servers"></a>Sunucuları ekleme seçenekleri
 
-İş için Defender, Uç Nokta Için Defender Plan 1 ve 2 ve Microsoft 365 İş Ekstra tek başına sürümleri sunucu lisanslarını içermez. Sunucuları eklemek için aşağıdaki seçeneklerden birini belirleyin:
+Uç Nokta Için Defender Plan 1 ve 2 (tek başına), İş için Defender (tek başına) ve Microsoft 365 İş Ekstra sunucu lisansları içermez. Sunucuları eklemek için aşağıdaki seçeneklerden birini belirleyin:
 
 - [Bulut](/azure/defender-for-cloud/defender-for-cloud-introduction) için Defender teklifinin bir parçası olarak **Sunucular için Microsoft Defender Plan 1 veya Plan 2**. Daha fazla bilgi edinmek için. Bkz [. Sunucular için Microsoft Defender'a genel bakış](/azure/defender-for-cloud/defender-for-servers-introduction).
 - Küçük ve orta ölçekli işletmeler için **İş için Microsoft Defender sunucuları (önizleme).** Bkz. [İş için Microsoft Defender sunucuları alma (önizleme)](../defender-business/get-defender-business-servers.md).

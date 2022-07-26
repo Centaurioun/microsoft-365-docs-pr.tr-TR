@@ -17,26 +17,26 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - intro-overview
-description: Office 365 için Microsoft Defender Kasa Ekleri, Kasa Bağlantıları, gelişmiş kimlik avı önleme araçları, raporlama araçları ve tehdit bilgileri özelliklerini içerir.
+description: Office 365 için Microsoft Defender Güvenli Ekler, Güvenli Bağlantılar, gelişmiş kimlik avı önleme araçları, raporlama araçları ve tehdit bilgileri özelliklerini içerir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9be72102f9813394cb2d9eab1e4d163c6d87bd4b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: fe021a2ba40f6e5e4d2bb9221ef0e2bef70a2371
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417830"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004334"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Bu makale, [Office 365 için Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) sahip iş müşterilerine yöneliktir. Outlook.com, Microsoft 365 Aile veya Microsoft 365 Bireysel kullanıyorsanız ve Outlook Kasa Bağlantıları veya Kasa Ekleri hakkında bilgi arıyorsanız bkz. [Gelişmiş Outlook.com güvenliği aboneleri Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Bu makale, [Office 365 için Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) sahip iş müşterilerine yöneliktir. Outlook.com, Microsoft 365 Aile veya Microsoft 365 Bireysel kullanıyorsanız ve Outlook'ta Güvenli Bağlantılar veya Güvenli Ekler hakkında bilgi arıyorsanız bkz. [Microsoft 365 aboneleri için gelişmiş Outlook.com güvenliği](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Office 365 için Microsoft Defender, kuruluşunuzu e-posta iletileri, bağlantılar (URL'ler) ve işbirliği araçları tarafından ortaya konan kötü amaçlı tehditlere karşı korur. Office 365 için Defender şunları içerir:
 
@@ -64,7 +64,7 @@ Office 365 için Microsoft Defender yeniyseniz veya *bunu yaparak* en iyi şekil
   - Antispam
 - Adında "*güvenli*" olan her şeyi ayarlayın.
   - Güvenli Bağlantılar
-  - ekleri Kasa
+  - Güvenli Ekleri Kaydetme
 - İş yüklerini savunma (ör. SharePoint Online, OneDrive ve Teams)
 - Sıfır saatlik otomatik temizleme (ZAP) ile koruyun.
 
@@ -87,7 +87,7 @@ Aşağıdaki tabloda her plana neler dahil olduğu özetlenmiştir.
 
 - Office 365 için Microsoft Defender Plan 1 ve Office 365 için Defender Plan 2, belirli abonelikler için eklenti olarak kullanılabilir. Daha fazla bilgi edinmek için, [Office 365 planları için Microsoft Defender genelinde Özellik kullanılabilirliği](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans) bağlantısını burada bulabilirsiniz.
 
-- [Güvenli Belgeler](safe-docs.md) özelliği yalnızca Microsoft 365 E5 veya Microsoft 365 E5 Güvenlik lisanslarına sahip kullanıcılar tarafından kullanılabilir (Office 365 için Microsoft Defender planlarına dahil değildir).
+- [Güvenli Belgeler](safe-docs.md) özelliği yalnızca Microsoft 365 A5 veya Microsoft 365 E5 Güvenlik lisanslarına sahip kullanıcılar tarafından kullanılabilir (Office 365 için Microsoft Defender planlarına dahil değildir).
 
 - Mevcut aboneliğiniz Office 365 için Microsoft Defender'ı içermiyorsa ve bunu istiyorsanız, [bir deneme başlatmak için satış ekibiyle iletişime geçin](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html) ve Office 365 için Microsoft Defender'ın kuruluşunuzda nasıl çalışabileceğini öğrenin.
 
@@ -99,7 +99,7 @@ Microsoft 365 Defender portalına taşınan Office 365 için Microsoft Defender 
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Office 365 için Microsoft Defender ilkelerini yapılandırma
 
-kuruluşunuzun güvenlik ekibi, Office 365 için Microsoft Defender ile **e-posta & işbirliği** \> **İlkeleri'ndeki** Microsoft 365 Defender portalında <https://security.microsoft.com> ilkeleri tanımlayarak korumayı yapılandırabilir & **Tehdit ilkelerini** kurallar\>. Veya kullanarak <https://security.microsoft.com/threatpolicy>doğrudan **Tehdit ilkeleri** sayfasına gidebilirsiniz.
+Office 365 için Microsoft Defender ile kuruluşunuzun güvenlik ekibi, Microsoft 365 Defender portalında Email & **işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri'nde**<https://security.microsoft.com> ilkeler tanımlayarak korumayı yapılandırabilir. Veya kullanarak <https://security.microsoft.com/threatpolicy>doğrudan **Tehdit ilkeleri** sayfasına gidebilirsiniz.
 
 [Bu videoyu](https://www.youtube.com/watch?v=vivvTmWJ_3c) izleyerek daha fazla bilgi edinin.
 
@@ -110,17 +110,17 @@ kuruluşunuzun güvenlik ekibi, Office 365 için Microsoft Defender ile **e-post
 
 Kuruluşunuz için tanımlanan ilkeler, önceden tanımlanmış tehditler için davranış ve koruma düzeyini belirler. İlke seçenekleri son derece esnek. Örneğin, kuruluşunuzun güvenlik ekibi kullanıcı, kuruluş, alıcı ve etki alanı düzeyinde ayrıntılı tehdit koruması ayarlayabilir. Her gün yeni tehditler ve zorluklar ortaya çıktığı için ilkelerinizi düzenli olarak gözden geçirmeniz önemlidir.
 
-- **[Kasa Ekler](safe-attachments.md)**: Kötü amaçlı içerik için e-posta eklerini denetleyerek mesajlaşma sisteminizi korumak için sıfır gün koruma sağlar. Virüs/kötü amaçlı yazılım imzası olmayan tüm iletileri ve ekleri özel bir ortama yönlendirir ve ardından kötü amaçlı amacı algılamak için makine öğrenmesi ve analiz tekniklerini kullanır. Şüpheli etkinlik bulunmazsa, ileti posta kutusuna iletilir. Daha fazla bilgi için bkz. [Kasa Ekler ilkelerini ayarlama](set-up-safe-attachments-policies.md).
+- **[Güvenli Ekler](safe-attachments.md)**: Kötü amaçlı içerik için e-posta eklerini denetleyerek mesajlaşma sisteminizi korumak için sıfır gün koruması sağlar. Virüs/kötü amaçlı yazılım imzası olmayan tüm iletileri ve ekleri özel bir ortama yönlendirir ve ardından kötü amaçlı amacı algılamak için makine öğrenmesi ve analiz tekniklerini kullanır. Şüpheli etkinlik bulunmazsa, ileti posta kutusuna iletilir. Daha fazla bilgi için bkz. [Güvenli Ekler ilkelerini ayarlama](set-up-safe-attachments-policies.md).
 
-- **[Kasa Bağlantıları](safe-links.md)**: URL'lerin tıklama zamanı doğrulaması sağlar; örneğin, e-posta iletilerinde ve Office dosyalarında. Koruma devam eder ve mesajlaşma ve Office ortamınız genelinde geçerlidir. Bağlantılar her tıklama için taranır: güvenli bağlantılar erişilebilir kalır ve kötü amaçlı bağlantılar dinamik olarak engellenir. Daha fazla bilgi için bkz. [Kasa Bağlantıları ilkelerini ayarlama](set-up-safe-links-policies.md).
+- **[Güvenli Bağlantılar](safe-links.md)**: URL'lerin tıklama zamanında doğrulanmasını sağlar, örneğin e-posta iletilerinde ve Office dosyalarında. Koruma devam eder ve mesajlaşma ve Office ortamınızda geçerlidir. Bağlantılar her tıklama için taranır: güvenli bağlantılar erişilebilir kalır ve kötü amaçlı bağlantılar dinamik olarak engellenir. Daha fazla bilgi için bkz. [Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).
 
-- **[SharePoint, OneDrive ve Microsoft Teams için ekleri Kasa](mdo-for-spo-odb-and-teams.md)**: Ekip sitelerindeki ve belge kitaplıklarındaki kötü amaçlı dosyaları tanımlayıp engelleyerek, kullanıcılar işbirliği yaparken ve dosya paylaştığında kuruluşunuzu korur. Daha fazla bilgi edinmek için bkz[. SharePoint, OneDrive ve Microsoft Teams için Office 365 için Defender açma](turn-on-mdo-for-spo-odb-and-teams.md).
+- **[SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler](mdo-for-spo-odb-and-teams.md)**: Ekip sitelerindeki ve belge kitaplıklarındaki kötü amaçlı dosyaları tanımlayıp engelleyerek, kullanıcılar işbirliği yaparken ve dosya paylaştığında kuruluşunuzu korur. Daha fazla bilgi edinmek için bkz[. SharePoint, OneDrive ve Microsoft Teams için Office 365 için Defender açma](turn-on-mdo-for-spo-odb-and-teams.md).
 
 - **[Office 365 için Defender'de kimlik avı koruması](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**: Kullanıcılarınızın ve iç veya özel etki alanlarınızın kimliğine bürünme girişimlerini algılar. Kimlik avı saldırılarını önlemeye yönelik makine öğrenmesi modellerini ve gelişmiş kimliğe bürünme algılama algoritmalarını uygular. Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender'da kimlik avı önleme ilkelerini yapılandırma](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>Office 365 için Microsoft Defender raporlarını görüntüleme
 
-Office 365 için Microsoft Defender, Office 365 için Defender izlemek için [raporlar](view-reports-for-mdo.md) içerir. Raporlara Microsoft 365 Defender portalında <https://security.microsoft.com> **Raporlar** \> **E-posta & işbirliği** \> **E-posta & işbirliği raporları** bölümünden erişebilirsiniz. İsterseniz, kullanarak <https://security.microsoft.com/securityreports>doğrudan **E-posta ve işbirliği raporları** sayfasına gidebilirsiniz.
+Office 365 için Microsoft Defender, Office 365 için Defender izlemek için [raporlar](view-reports-for-mdo.md) içerir. Raporlara Microsoft 365 Defender portalında <https://security.microsoft.com> **Raporlar** \> **Email & işbirliği** \> **Email & işbirliği raporlarında** erişebilirsiniz. İsterseniz kullanarak **doğrudan Email ve işbirliği raporları** sayfasına <https://security.microsoft.com/securityreports>gidebilirsiniz.
 
 Raporlar gerçek zamanlı olarak güncelleştirilerek size en son içgörüleri sağlar. Bu raporlar ayrıca öneriler sağlar ve sizi yakın tehditler konusunda uyarır. Önceden tanımlanmış raporlar aşağıdakileri içerir:
 
@@ -148,8 +148,8 @@ Office 365 için Microsoft Defender özelliklere erişmek için size uygun bir r
 
 |Rol veya rol grubu|Daha fazla bilgi edinmek için kaynaklar|
 |---|---|
-|genel yönetici (Kuruluş Yönetimi)|Bu rolü Azure Active Directory veya Microsoft 365 Defender portalında atayabilirsiniz. Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında İzinler](permissions-microsoft-365-security-center.md).|
-|Güvenlik Yöneticisi|Bu rolü Azure Active Directory veya Microsoft 365 Defender portalında atayabilirsiniz. Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında İzinler](permissions-microsoft-365-security-center.md).|
+|genel yönetici (Kuruluş Yönetimi)|Bu rolü Azure Active Directory'de veya Microsoft 365 Defender portalında atayabilirsiniz. Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında İzinler](permissions-microsoft-365-security-center.md).|
+|Güvenlik Yöneticisi|Bu rolü Azure Active Directory'de veya Microsoft 365 Defender portalında atayabilirsiniz. Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında İzinler](permissions-microsoft-365-security-center.md).|
 |Exchange Online'da Kuruluş Yönetimi|[Exchange Online'de izinler](/exchange/permissions-exo/permissions-exo) <p> [PowerShell'i Exchange Online](/powershell/exchange/exchange-online-powershell)|
 |Arama ve Temizleme|Bu rol yalnızca Microsoft 365 Defender portalında veya Microsoft Purview uyumluluk portalı kullanılabilir. Daha fazla bilgi için bkz[. Microsoft 365 Defender portalındaki İzinler](permissions-microsoft-365-security-center.md) ve [Microsoft Purview uyumluluk portalı İzinler](../../compliance/microsoft-365-compliance-center-permissions.md).|
 |||
@@ -170,7 +170,7 @@ Office 365 için Microsoft Defender Microsoft 365 E5, Office 365 E5, Office 365 
 
 Office 365 için Microsoft Defender sürekli olarak yeni özellikler eklenir. Daha fazla bilgi edinmek için aşağıdaki kaynaklara bakın:
 
-- [Microsoft 365 Yol Haritası](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365), geliştirme ve dağıtım aşamasındaki yeni özelliklerin bir listesini sağlar.
+- [Microsoft 365 Yol Haritası](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365) , geliştirme ve dağıtım aşamasındaki yeni özelliklerin bir listesini sağlar.
 
 - [Office 365 için Microsoft Defender Hizmet Açıklaması](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp), Office 365 için Defender planlardaki özellikleri ve kullanılabilirliği açıklar.
 

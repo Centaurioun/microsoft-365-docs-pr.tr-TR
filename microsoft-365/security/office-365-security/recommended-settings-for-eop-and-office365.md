@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) ve Office 365 için Defender güvenlik ayarları için en iyi yöntemler nelerdir? Standart koruma için geçerli öneriler neleri içerir? Daha katı olmak istiyorsanız ne kullanılmalıdır? Ayrıca Office 365 için Defender kullanıyorsanız ne kadar ekstra alırsınız?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4653ac9212ef20d7baecdbfa11885e25b514a067
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6d1c7486f3ead422e6daafbedacd59c34b34963b
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943877"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004377"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP ve Office 365 için Microsoft Defender güvenliği için önerilen ayarlar
 
@@ -242,7 +242,7 @@ PowerShell'de, bu ayarlar için [Set-AtpPolicyForO365](/powershell/module/exchan
 |Güvenlik özelliği adı|Varsayılan|Yerleşik koruma|Açıklama ekleme|
 |---|:---:|:---:|---|
 |**SharePoint, OneDrive ve Microsoft Teams için Office 365 için Defender açma** <br><br> _EnableATPForSPOTeamsODB_|Devre Dışı <br><br> `$false`|-Inı <br><br> `$true`|Kullanıcıların kötü amaçlı dosyaları indirmesini önlemek için bkz. [Kullanıcıların kötü amaçlı dosyaları indirmesini önlemek için SharePoint Online PowerShell'i kullanma](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).|
-|**Office istemcileri için Güvenli Belgeler'i açma** <br><br> _EnableSafeDocs_|Devre Dışı <br><br> `$false`|-Inı <br><br> `$true`|Bu özellik yalnızca Office 365 için Defender (örneğin, Microsoft 365 E5 veya Microsoft 365 E5 Güvenlik) dahil olmayan lisanslarla kullanılabilir ve anlamlıdır. Daha fazla bilgi için bkz. [Microsoft 365 E5'de Güvenli Belgeler](safe-docs.md).|
+|**Office istemcileri için Güvenli Belgeler'i açma** <br><br> _EnableSafeDocs_|Devre Dışı <br><br> `$false`|-Inı <br><br> `$true`|Bu özellik yalnızca Office 365 için Defender (örneğin, Microsoft 365 A5 veya Microsoft 365 E5 Güvenlik) dahil olmayan lisanslarla kullanılabilir ve anlamlıdır. Daha fazla bilgi için bkz. [Microsoft 365 A5 veya E5 Güvenliğinde Güvenli Belgeler](safe-docs.md).|
 |**Güvenli Belgeler dosyayı kötü amaçlı olarak tanımlasa bile kişilerin Korumalı Görünüm'e tıklamasına izin ver** <br><br> _AllowSafeDocsOpen_|Devre Dışı <br><br> `$false`|Devre Dışı <br><br> `$false`|Bu ayar Güvenli Belgeler ile ilgilidir.|
 
 #### <a name="safe-attachments-policy-settings"></a>Güvenli Ekler ilke ayarları

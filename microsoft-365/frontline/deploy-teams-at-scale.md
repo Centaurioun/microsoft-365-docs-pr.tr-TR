@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 6bc62a4179ba712cbf74e3205fd372727db03182
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 28232f888b925b6a0f930d464b1dcdfca00b2c3b
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824748"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004246"
 ---
 # <a name="deploy-teams-at-scale-for-frontline-workers-in-microsoft-teams"></a>Microsoft Teams'de ön cephe çalışanları için uygun ölçekte ekip dağıtma
 
@@ -127,7 +127,7 @@ Oluşturmak üzere bir grup ekip göndermek için cmdlet'ini kullanırsınız ``
     ```
 
     Hata iletisi alırsanız, zaten hazırsınız demektir. Sonraki adıma geçin.
-1. [Teams PowerShell modülünün en son sürümünü](https://www.powershellgallery.com/packages/MicrosoftTeams) indirin ve yükleyin.
+1. [Teams PowerShell modülünün en son önizleme sürümünü](https://www.powershellgallery.com/packages/MicrosoftTeams) indirin ve yükleyin. Sürüm 4.3.1 (önizleme) veya sonraki bir önizleme sürümünü çalıştırıyor olmanız gerekir.  
 
 1. Teams'e bağlanmak için aşağıdakileri çalıştırın.
 
