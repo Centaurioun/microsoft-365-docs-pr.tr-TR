@@ -17,12 +17,12 @@ description: Office 365'te güvenlik, EOP’den Office 365 için Defender Plan 1
 ms.technology: mdo
 ms.prod: m365-security
 adobe-target: true
-ms.openlocfilehash: a5a7a4e78ae3b160b565e253d315d94fc5b6b53a
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 2b141e50ab3db79dfd0a072c6738d1894e27e0ad
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940920"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004549"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Office 365 için Microsoft Defender güvenliğine genel bakış
 
@@ -134,7 +134,7 @@ Bu hızlı başvuru, her Office 365 için Microsoft Defender aboneliğiyle hangi
 
 - Office 365 için Microsoft Defender Plan 1 ve Office 365 için Defender Plan 2, belirli abonelikler için eklenti olarak kullanılabilir. Daha fazla bilgi edinmek için, [Office 365 planları için Microsoft Defender genelinde Özellik kullanılabilirliği](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans) bağlantısını burada bulabilirsiniz.
 
-- [Güvenli Belgeler](safe-docs.md) özelliği yalnızca Microsoft 365 E5 veya Microsoft 365 E5 Güvenlik lisanslarına sahip kullanıcılar tarafından kullanılabilir (Office 365 için Microsoft Defender planlarına dahil değildir).
+- [Güvenli Belgeler](safe-docs.md) özelliği yalnızca Microsoft 365 A5 veya Microsoft 365 E5 Güvenlik lisanslarına sahip kullanıcılar tarafından kullanılabilir (Office 365 için Microsoft Defender planlarına dâhil değildir).
 
 - Mevcut aboneliğiniz Office 365 için Microsoft Defender'ı içermiyorsa ve bunu istiyorsanız, [bir deneme başlatmak için satış ekibiyle iletişime geçin](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html) ve Office 365 için Microsoft Defender'ın kuruluşunuzda nasıl çalışabileceğini öğrenin.
 

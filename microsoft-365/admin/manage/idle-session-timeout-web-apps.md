@@ -11,16 +11,19 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
 description: Kullanıcının oturumlarının zaman aşımına uğramadan önce Microsoft 365'te ne kadar süreceğini ayarlayın.
-ms.openlocfilehash: 15de72fef4dc45705b78dc83941faff1d835d6ae
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 527862e77f8fdfba3c418ba13607bc1389875cab
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756637"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67019933"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>Microsoft 365 için boşta oturum zaman aşımı
 
 <!-- Add metadata: localization, AdminSurgePortfolio, admindeeplinkMAC. remove robots nofollow -->
+
+> [!IMPORTANT]
+> 21Vianet veya Microsoft 365 Germany tarafından sağlanan Microsoft 365 için boşta oturum zaman aşımı kullanılamaz.
 
 Microsoft 365 web uygulamalarının oturumunun kapatılmadan önce kuruluşunuzda etkin olmayan kullanıcılarla ilgili bir ilke yapılandırmak için boşta oturum zaman aşımını kullanın. Bu, hassas şirket verilerini korumaya yardımcı olur ve şirket dışı veya paylaşılan cihazlarda çalışan son kullanıcılar için başka bir güvenlik katmanı ekler.
 
@@ -74,10 +77,7 @@ Bir kullanıcı seçtiğiniz süre boyunca Microsoft 365 web uygulamalarında et
 
 - Bu durumlarda kullanıcıların oturumları kapatılamaz.
     - Cihaza katılmış hesaptan web uygulamasında çoklu oturum açma (SSO) alıyorsa veya oturum açma sırasında **Oturum açık kalsın'ı** seçtiyse. Kuruluşunuzda bu seçeneği gizleme hakkında daha fazla bilgi için bkz. [Kuruluşunuzun oturum açma sayfasına marka ekleme](/azure/active-directory/fundamentals/customize-branding).
-    - Yönetilen bir cihazdaysa (uyumlu veya bir etki alanına katılmış bir cihaz) ve Microsoft Edge veya Google Chrome gibi desteklenen bir tarayıcı kullanıyorsa ( [Windows Hesapları uzantısıyla](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). Bu özelliğin yönetilen bir cihazda tetiklenmemesi için uygun bir Azure AD Premium P1 veya P2 aboneliği ve belirli bir Koşullu Erişim ilkesi gerekir. Diğer ayrıntılar için aşağıya bakın.
-
-> [!IMPORTANT]
-> Boşta oturum zaman aşımı, 21Vianet veya Microsoft 365 Germany tarafından sağlanan Microsoft 365 için kullanılamaz.
+    - Yönetilen bir cihazdaysa (uyumlu veya bir etki alanına katılmış bir cihaz) ve Microsoft Edge veya Google Chrome gibi desteklenen bir tarayıcı kullanıyorsa ( [Windows Hesapları uzantısıyla](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). Bu özelliğin yönetilmeyen bir cihazda tetiklemesi için uygun bir Azure AD Premium P1 veya P2 aboneliği ve belirli bir Koşullu Erişim ilkesi gerekir. Diğer ayrıntılar için aşağıya bakın.
 
 ## <a name="idle-session-timeout-on-unmanaged-devices"></a>Yönetilmeyen cihazlarda boşta oturum zaman aşımı  
 

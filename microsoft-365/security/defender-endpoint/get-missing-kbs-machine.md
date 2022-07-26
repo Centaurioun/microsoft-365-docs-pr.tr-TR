@@ -1,7 +1,7 @@
 ---
 title: Cihaz kimliğine göre eksik KB'leri alma
 description: Cihaz kimliğine göre eksik güvenlik güncelleştirmelerini alır
-keywords: apis, graph api, desteklenen API'ler, get, list, file, information, device id, threat & güvenlik açığı yönetimi api, Uç Nokta için Microsoft Defender tvm api
+keywords: apis, graph api, desteklenen API'ler, get, list, file, information, device id, threat & vulnerability management api, Uç Nokta için Microsoft Defender tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a570851263b6a52193353e2c229e2df47b677e3
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 2d8200d93b3cab7acff237113a2c98d8571be1a7
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840331"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020131"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>Cihaz kimliğine göre eksik KB'leri alma
 
@@ -31,7 +31,9 @@ ms.locfileid: "65840331"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender Güvenlik Açığı Yönetimi](../defender-vulnerability-management/index.yml)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> Microsoft Defender Güvenlik Açığı Yönetimi mı yaşamak istiyorsunuz? [Microsoft Defender Güvenlik Açığı Yönetimi genel önizleme denemesine](../defender-vulnerability-management/get-defender-vulnerability-management.md) nasıl kaydolabileceğiniz hakkında daha fazla bilgi edinin.
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

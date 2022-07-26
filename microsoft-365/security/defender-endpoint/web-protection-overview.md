@@ -10,17 +10,18 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/25/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4184948316e683a59b45b9397aaea74260e290ee
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: e54b3c1c696d05bb0f3815b532a4f0e7e92c6331
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664182"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020659"
 ---
 # <a name="web-protection"></a>Web koruması
 
@@ -28,12 +29,12 @@ ms.locfileid: "64664182"
 
 **Şunlar için geçerlidir:**
 
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 
 ## <a name="about-web-protection"></a>Web koruması hakkında
@@ -80,7 +81,7 @@ Daha fazla bilgi için bkz [. Web içeriği filtreleme](web-content-filtering.md
 
 ## <a name="order-of-precedence"></a>Öncelik sırası
 
-Web koruması, öncelik sırasına göre listelenen aşağıdaki bileşenlerden oluşur. Bu bileşenlerin her biri Microsoft Edge'daki SmartScreen istemcisi ve diğer tüm tarayıcılarda ve işlemlerde Ağ Koruması istemcisi tarafından zorlanır.
+Web koruması, öncelik sırasına göre listelenen aşağıdaki bileşenlerden oluşur. Bu bileşenlerin her biri Microsoft Edge'deki SmartScreen istemcisi ve diğer tüm tarayıcılarda ve işlemlerde Ağ Koruması istemcisi tarafından zorlanır.
 
 - Özel göstergeler (IP/URL, Microsoft Defender for Cloud Apps ilkeleri)
   - İzin ver
@@ -106,18 +107,18 @@ Aşağıdaki tabloda, web koruma yığını içinde çakışmalar ortaya koyabil
 
 ****
 
-|Özel Gösterge ilkesi|Web tehdit ilkesi|WCF ilkesi|Bulut için Defender Uygulamaları ilkesi|Sonuç|
+|Özel Gösterge ilkesi|Web tehdit ilkesi|WCF ilkesi|Cloud Apps için Defender ilkesi|Sonuç|
 |---|---|---|---|---|
 |İzin ver|Engelle|Engelle|Engelle|İzin Ver (Web koruması geçersiz kılma)|
 |İzin ver|İzin ver|Engelle|Engelle|İzin Ver (WCF özel durumu)|
 |Uyarmak|Engelle|Engelle|Engelle|Uyar (geçersiz kıl)|
 |
 
-İç IP adresleri özel göstergeler tarafından desteklenmez. Son kullanıcı tarafından atlanan bir uyarı ilkesi için sitenin engeli varsayılan olarak 24 saat boyunca kaldırılır. Bu zaman dilimi Yönetici tarafından değiştirilebilir ve SmartScreen bulut hizmeti tarafından geçirilir. Web tehdit blokları (kötü amaçlı yazılım/kimlik avı) için CSP kullanılarak Microsoft Edge bir uyarıyı atlama özelliği de devre dışı bırakılabilir. Daha fazla bilgi için bkz. [SmartScreen Ayarlar Microsoft Edge](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies).
+İç IP adresleri özel göstergeler tarafından desteklenmez. Son kullanıcı tarafından atlanan bir uyarı ilkesi için sitenin engeli varsayılan olarak 24 saat boyunca kaldırılır. Bu zaman dilimi Yönetici tarafından değiştirilebilir ve SmartScreen bulut hizmeti tarafından geçirilir. Microsoft Edge'de web tehdit blokları (kötü amaçlı yazılım/kimlik avı) için CSP kullanılarak bir uyarıyı atlama özelliği de devre dışı bırakılabilir. Daha fazla bilgi için bkz. [Microsoft Edge SmartScreen Ayarları](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies).
 
 ## <a name="protect-browsers"></a>Tarayıcıları koruma
 
-Tüm web koruma senaryolarında, SmartScreen ve Ağ Koruması hem birinci hem de üçüncü taraf tarayıcılarda ve işlemlerde koruma sağlamak için birlikte kullanılabilir. SmartScreen doğrudan Microsoft Edge yerleşik olarak bulunurken, Ağ Koruması üçüncü taraf tarayıcılarda ve işlemlerde trafiği izler. Aşağıdaki diyagramda bu kavram gösterilmektedir. Birden çok tarayıcı/uygulama kapsamı sağlamak için birlikte çalışan iki istemcinin bu diyagramı, Web Koruması'nın tüm özellikleri (Göstergeler, Web Tehditleri, İçerik Filtreleme) için doğrudur.
+Tüm web koruma senaryolarında, SmartScreen ve Ağ Koruması hem birinci hem de üçüncü taraf tarayıcılarda ve işlemlerde koruma sağlamak için birlikte kullanılabilir. SmartScreen doğrudan Microsoft Edge'de yerleşik olarak bulunurken, Ağ Koruması üçüncü taraf tarayıcılarda ve işlemlerde trafiği izler. Aşağıdaki diyagramda bu kavram gösterilmektedir. Birden çok tarayıcı/uygulama kapsamı sağlamak için birlikte çalışan iki istemcinin bu diyagramı, Web Koruması'nın tüm özellikleri (Göstergeler, Web Tehditleri, İçerik Filtreleme) için doğrudur.
 
 :::image type="content" source="../../media/web-protection-protect-browsers.png" alt-text="smartScreen ve Ağ Koruması'nın birlikte kullanımı" lightbox="../../media/web-protection-protect-browsers.png":::
 
@@ -125,7 +126,7 @@ Tüm web koruma senaryolarında, SmartScreen ve Ağ Koruması hem birinci hem de
 
 SmartScreen bulutundan gelen yanıtlar standartlaştırılmıştır. Fiddler gibi araçlar bulut hizmetinden gelen yanıtı incelemek için kullanılabilir ve bu da bloğun kaynağını belirlemeye yardımcı olur.
 
-SmartScreen bulut hizmeti bir izin verme, engelleme veya uyarı yanıtıyla yanıt verdiği zaman, yanıt kategorisi ve sunucu bağlamı istemciye geri iletilir. Microsoft Edge'da yanıt kategorisi, gösterilecek uygun blok sayfasını belirlemek için kullanılan kategoridir (kötü amaçlı, kimlik avı, kuruluş ilkesi).
+SmartScreen bulut hizmeti bir izin verme, engelleme veya uyarı yanıtıyla yanıt verdiği zaman, yanıt kategorisi ve sunucu bağlamı istemciye geri iletilir. Microsoft Edge'de yanıt kategorisi, gösterilecek uygun blok sayfasını belirlemek için kullanılan kategoridir (kötü amaçlı, kimlik avı, kuruluş ilkesi).
 
 Aşağıdaki tabloda yanıtlar ve bunların bağıntılı özellikleri gösterilmektedir.
 
@@ -144,14 +145,14 @@ Aşağıdaki tabloda yanıtlar ve bunların bağıntılı özellikleri gösteril
 
 ## <a name="advanced-hunting-for-web-protection"></a>Web koruması için gelişmiş avcılık
 
-Gelişmiş avcılıktaki Kusto sorguları, kuruluşunuzdaki web koruma bloklarını 30 güne kadar özetlemek için kullanılabilir. Bu sorgular, çeşitli blok kaynaklarını ayırt etmek ve bunları kullanıcı dostu bir şekilde özetlemek için yukarıda listelenen bilgileri kullanır. Örneğin, aşağıdaki sorguda Microsoft Edge kaynaklı tüm WCF blokları listelenmiştir.
+Gelişmiş avcılıktaki Kusto sorguları, kuruluşunuzdaki web koruma bloklarını 30 güne kadar özetlemek için kullanılabilir. Bu sorgular, çeşitli blok kaynaklarını ayırt etmek ve bunları kullanıcı dostu bir şekilde özetlemek için yukarıda listelenen bilgileri kullanır. Örneğin, aşağıdaki sorgu Microsoft Edge'den kaynaklanan tüm WCF bloklarını listeler.
 
 ```kusto
 DeviceEvents
 | where ActionType == "SmartScreenUrlWarning"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomBlockList"
+| where Experience == "CustomPolicy"
 ```
 
 Benzer şekilde, Ağ Koruması'ndan kaynaklanan tüm WCF bloklarını listelemek için aşağıdaki sorguyu kullanabilirsiniz (örneğin, üçüncü taraf tarayıcıdaki bir WCF bloğu). ActionType'ın güncelleştirildiğini ve 'Experience' öğesinin 'ResponseCategory' olarak değiştirildiğini unutmayın.
@@ -168,12 +169,12 @@ Diğer özelliklerden (Özel Göstergeler gibi) kaynaklanan blokları listelemek
 
 ## <a name="user-experience"></a>Kullanıcı deneyimi
 
-Kullanıcı kötü amaçlı yazılım, kimlik avı veya diğer web tehditleri riski olan bir web sayfasını ziyaret ederse, Microsoft Edge tehditle ilgili bilgilerle birlikte "Bu site güvenli değil olarak bildirildi" yazan bir blok sayfası tetikler.
+Kullanıcı kötü amaçlı yazılım, kimlik avı veya diğer web tehditleri riski oluşturan bir web sayfasını ziyaret ederse Microsoft Edge, tehditle ilgili bilgilerle birlikte "Bu site güvenli değil olarak bildirildi" yazan bir blok sayfası tetikler.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="Microsoft Edge tarafından engellenen sayfa" lightbox="../../media/web-protection-malicious-block.png":::
 
-WCF veya özel bir gösterge tarafından engellenirse, Microsoft Edge kullanıcıya bu sitenin kendi kuruluşu tarafından engellendiğini bildiren bir blok sayfası gösterilir.
+WCF veya özel bir gösterge tarafından engellenirse, Microsoft Edge'de kullanıcıya bu sitenin kendi kuruluşu tarafından engellendiğini bildiren bir blok sayfası gösterilir.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-indicator-blockpage.png" alt-text="Kuruluşunuz tarafından engellenen sayfa" lightbox="../../media/web-protection-indicator-blockpage.png":::
@@ -185,7 +186,7 @@ Her durumda, üçüncü taraf tarayıcılarda hiçbir blok sayfası gösterilmez
 
 ## <a name="report-false-positives"></a>Hatalı pozitif sonuçları bildirme
 
-SmartScreen tarafından tehlikeli kabul edilen sitelerde hatalı pozitif rapor vermek için, Microsoft Edge'deki blok sayfasında görünen bağlantıyı kullanın (yukarıda gösterildiği gibi).
+SmartScreen tarafından tehlikeli sayılan sitelerde hatalı pozitiflik bildirmek için Microsoft Edge'de blok sayfasında görünen bağlantıyı kullanın (yukarıda gösterildiği gibi).
 
 WCF için, bir etki alanının kategorisine itiraz edebilirsiniz. WCF raporlarının **Etki Alanları** sekmesine gidin ve Rapor **Yanlışlığı'na** tıklayın. Açılır öğe açılır. Olayın önceliğini ayarlayın ve önerilen kategori gibi bazı ek ayrıntıları sağlayın. WCF'yi açma ve anlaşmazlık kategorileri hakkında daha fazla bilgi için bkz. [Web içeriği filtreleme](web-content-filtering.md).
 

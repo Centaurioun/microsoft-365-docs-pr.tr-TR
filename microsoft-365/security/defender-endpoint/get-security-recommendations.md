@@ -1,7 +1,7 @@
 ---
 title: Güvenlik önerileri al
 description: Belirli bir cihaz kimliğiyle ilgili güvenlik önerileri koleksiyonunu alır.
-keywords: apis, graph api, desteklenen API'ler, get, list, file, information, security recommendation per device, threat & güvenlik açığı yönetimi API, Uç Nokta için Microsoft Defender tvm api
+keywords: apis, graph api, desteklenen API'ler, get, list, file, information, security recommendation per device, threat & vulnerability management API, Uç Nokta için Microsoft Defender tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,23 +15,25 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ebe07abd4e7f87e7abfe4d4a8ccd131e20dc4958
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: e00937145cfff6eb9a0996683eacfb424b68091b
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839722"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020065"
 ---
 # <a name="get-security-recommendations"></a>Güvenlik önerileri al
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Şunlar için geçerlidir:** 
+**Şunlar için geçerlidir:**
 
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Güvenlik Açığı Yönetimi](../defender-vulnerability-management/index.yml)
 
 > Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> Microsoft Defender Güvenlik Açığı Yönetimi mı yaşamak istiyorsunuz? [Microsoft Defender Güvenlik Açığı Yönetimi genel önizleme denemesine](../defender-vulnerability-management/get-defender-vulnerability-management.md) nasıl kaydolabileceğiniz hakkında daha fazla bilgi edinin.
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

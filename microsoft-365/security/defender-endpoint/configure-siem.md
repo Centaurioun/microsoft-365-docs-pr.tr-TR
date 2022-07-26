@@ -15,19 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d679ac0d01a7e922e49b72b574a43e6f684179f9
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 3bdb35b4251725dc4b2e69fc077d0edf29693cef
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664512"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020593"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>SIEM araçlarınızı Uç Nokta için Microsoft Defender ile tümleştirme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Şunlar için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,13 +38,13 @@ ms.locfileid: "64664512"
 >
 > [Uç Nokta için Microsoft Defender Uyarısı](alerts.md), cihazda gerçekleşen bir veya daha fazla şüpheli veya kötü amaçlı olaydan ve bunların ilgili ayrıntılarından oluşur. Uç Nokta için Microsoft Defender Uyarı API'si, uyarı tüketimi için en son API'dir ve her uyarı için ilgili kanıtların ayrıntılı bir listesini içerir. Daha fazla bilgi için bkz [. Uyarı yöntemleri ve özellikleri ve](alerts.md) [Liste uyarıları](get-alerts.md).
 
-Uç Nokta için Microsoft Defender, kayıtlı bir AAD için OAuth 2.0 kimlik doğrulama protokolunu kullanarak Azure Active Directory 'da (AAD) kurumsal kiracınızdan bilgi alan güvenlik bilgileri ve olay yönetimi (SIEM) araçlarını destekler AAD  ortamınızda yüklü olan belirli SIEM çözümünü veya bağlayıcısını temsil eden uygulama.
+Uç Nokta için Microsoft Defender, ortamınızda yüklü olan belirli bir SIEM çözümünü veya bağlayıcısını temsil eden kayıtlı bir AAD uygulaması için OAuth 2.0 kimlik doğrulama protokolü kullanılarak Azure Active Directory'de (AAD) kurumsal kiracınızdan bilgi alan güvenlik bilgileri ve olay yönetimi (SIEM) araçlarını destekler.
 
 Daha fazla bilgi için bkz.:
 
 - [api lisansını ve kullanım koşullarını Uç Nokta için Microsoft Defender](api-terms-of-use.md) 
 - [Uç Nokta için Microsoft Defender API’lere erişin](apis-intro.md)
-- [Merhaba Dünya örnek (bir uygulamanın Azure Active Directory'ye nasıl kaydedildiği açıklanır)](api-hello-world.md)
+- [Merhaba Dünya örnek (Azure Active Directory'de bir uygulamanın nasıl kaydedildiği açıklanır)](api-hello-world.md)
 - [Uygulama bağlamıyla erişim alın](exposed-apis-create-app-webapp.md)
 
 
@@ -73,6 +73,15 @@ Splunk için aşağıdakileri destekleyen Microsoft 365 Defender Eklentisini kul
 - Splunk içinden Uç Nokta için Microsoft Defender uyarıları güncelleştirme
 
 Splunk için Microsoft 365 Defender Eklentisi hakkında daha fazla bilgi için bkz. [splunkbase](https://splunkbase.splunk.com/app/4959/).
+
+### <a name="datadog"></a>Datadog
+
+Datadog ile Uç Nokta tümleştirmesi için Microsoft 365 Defender destekler:
+
+- Uç Nokta için Microsoft Defender uyarıları ve olayları alma
+- Uç noktalar, tehditler ve güvenlik açıkları ile yazılım genelinde izleme ölçümlerini etkinleştiren panolar
+
+Tümleştirme hakkında daha fazla bilgi için bkz. [Datadog Marketi](https://app.datadoghq.com/marketplace/app/crest-data-systems-microsoft-defender/support).
 
 ### <a name="micro-focus-arcsight"></a>Mikro Odak ArcSight
 

@@ -1,8 +1,8 @@
 ---
-title: Gelişmiş Av API'si
+title: Gelişmiş Avcılık API'si
 ms.reviewer: ''
-description: Uç nokta için Microsoft Defender'da gelişmiş sorgular çalıştırmak için gelişmiş av API'sini kullanmayı öğrenin. Sınırlamalar hakkında bilgi edinin ve bir örnek bakın.
-keywords: api'ler, desteklenen api'ler, gelişmiş av, sorgu
+description: Uç Nokta için Microsoft Defender üzerinde gelişmiş sorgular çalıştırmak için gelişmiş tehdit avcılığı API'sini kullanmayı öğrenin. Sınırlamalar hakkında bilgi edinin ve bir örne bakın.
+keywords: api'ler, desteklenen API'ler, gelişmiş avcılık, sorgu
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,57 +16,60 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2e5898c0227128c099c7f0fe1ca99a6d9c8001ef
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 9f361a404ec3f8893ff4573fdc4db29904a5e766
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62997124"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020637"
 ---
-# <a name="advanced-hunting-api"></a>Gelişmiş av API'si
+# <a name="advanced-hunting-api"></a>Gelişmiş tehdit avcılığı API'si
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:** 
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:** 
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
+> [!NOTE]
+> Bu API yalnızca Uç Nokta için Microsoft Defender ait tabloları sorgulayabilir. Diğer Microsoft 365 Defender hizmetlerine ait tablolar [için Microsoft 365 Defender Gelişmiş tehdit avcılığı API'sinin](/microsoft-365/security/defender/api-advanced-hunting) kullanılması gerekir.
+
 ## <a name="limitations"></a>Sınırlamalar
 
-1. Sorguyu yalnızca son 30 gün içinde çalıştırabilirsiniz.
+1. Sorguyu yalnızca son 30 güne ait veriler üzerinde çalıştırabilirsiniz.
 
-2. Sonuçlar en çok 100.000 satır içerir.
+2. Sonuçlar en fazla 100.000 satır içerir.
 
-3. Kiracı başına yürütme sayısı sınırlıdır:
-   - API çağrıları: Dakikada 45 çağrıya kadar, saatte 1500 çağrıya kadar.
-   - Yürütme süresi: Her saat için 10 dakika çalışma süresi ve günde 3 çalışma saati.
+3. Yürütme sayısı kiracı başına sınırlıdır:
+   - API çağrıları: Dakikada en fazla 45 çağrı, saatte en fazla 1500 çağrı.
+   - Yürütme süresi: Saatte 10 dakika çalışma süresi ve günde 3 saatlik çalışma süresi.
 
 4. Tek bir isteğin en yüksek yürütme süresi 10 dakikadır.
 
-5. 429 yanıtı istek sayısına veya CPU'ya göre kota sınırına ulaşacak sınırı temsil edecek. Hangi sınıra ulaşıldı olduğunu anlamak için yanıt gövdesini okuyun.
+5. 429 yanıtı, istek sayısına veya CPU'ya göre kota sınırına ulaşmayı temsil eder. Hangi sınıra ulaşıldığını anlamak için yanıt gövdesini okuyun.
 
-6. Tek bir isteğin en büyük sorgu sonucu boyutu 124 MB'yi aşmaz. Aşılırsa, HTTP 400 Hatalı İstek ve "Sorgu yürütme izin verilen sonuç boyutunu aştı. Sonuçların miktarını sınırlaarak sorguyu en iyi duruma getirmek ve yeniden denemek" görüntülenir.
+6. Tek bir isteğin sorgu sonucu boyutu üst sınırı 124 MB'ı aşamaz. Aşılırsa, "Sorgu yürütme izin verilen sonuç boyutunu aştı. Sonuç miktarını sınırlayarak sorgunuzu iyileştirin ve yeniden deneyin" ifadesi görüntülenir.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
-Uygulama|AdvancedQuery.Read.All|'Gelişmiş sorguları çalıştır'
-Temsilcili (iş veya okul hesabı)|AdvancedQuery.Read|'Gelişmiş sorguları çalıştır'
+Uygulama|AdvancedQuery.Read.All|'Gelişmiş sorgular çalıştır'
+Temsilci (iş veya okul hesabı)|AdvancedQuery.Read|'Gelişmiş sorgular çalıştır'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
 > - Kullanıcının 'Verileri Görüntüle' AD rolüne sahip olması gerekir
-> - Kullanıcının, cihaz grubu ayarlarına göre cihaza erişimi olması gerekir (Daha fazla bilgi için bkz. Cihaz [gruplarını oluşturma](machine-groups.md) ve yönetme)
+> - Kullanıcının cihaz grubu ayarlarına göre cihaza erişimi olmalıdır (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -74,30 +77,30 @@ Temsilcili (iş veya okul hesabı)|AdvancedQuery.Read|'Gelişmiş sorguları ça
 POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
-Üst bilgi|Değer
+Üstbilgi|Değer
 :---|:---
 Yetkilendirme|Taşıyıcı {token}. **Gerekli**.
 İçerik Türü|application/json
 
 ## <a name="request-body"></a>İstek gövdesi
 
-İstek gövdesinde, aşağıdaki parametreleri olan bir JSON nesnesi girin:
+İstek gövdesinde aşağıdaki parametreleri içeren bir JSON nesnesi sağlayın:
 
 Parametre|Tür|Açıklama
 :---|:---|:---
-Sorgu|Metin|Çalıştıracak sorgu. **Gerekli**.
+Sorgu|Metin|Çalıştırılacak sorgu. **Gerekli**.
 
 ## <a name="response"></a>Yanıt
 
-Bu yöntem başarılı olursa, yanıt gövdesinde 200 _Tamam ve QueryResponse_ nesnesi döndürür.
+Başarılı olursa, bu yöntem yanıt gövdesinde 200 Tamam ve _QueryResponse_ nesnesi döndürür.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
@@ -115,10 +118,10 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 
 ### <a name="response-example"></a>Yanıt örneği
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 > [!NOTE]
-> Burada gösterilen yanıt nesnesi kısalma için kesilmiş olabilir. Tüm özellikler gerçek bir aramadan döndürülür.
+> Burada gösterilen yanıt nesnesi kısa bir süre için kesilebilir. Tüm özellikler gerçek bir çağrıdan döndürülür.
 
 ```json
 {
@@ -159,6 +162,6 @@ Yanıtın bir örneği:
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Uç Nokta API'leri için Microsoft Defender'a giriş](apis-intro.md)
-- [Portaldan Gelişmiş Av](advanced-hunting-query-language.md)
-- [PowerShell kullanarak Gelişmiş Av](run-advanced-query-sample-powershell.md)
+- [Uç Nokta için Microsoft Defender API'lere giriş](apis-intro.md)
+- [Portaldan Gelişmiş Avcılık](advanced-hunting-query-language.md)
+- [PowerShell ile Gelişmiş Av](run-advanced-query-sample-powershell.md)

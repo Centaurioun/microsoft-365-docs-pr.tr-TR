@@ -1,7 +1,7 @@
 ---
 title: Keşfedilen güvenlik açıklarını al
 description: Belirli bir cihaz kimliğiyle ilgili bulunan güvenlik açıkları koleksiyonunu alır.
-keywords: apis, graph api, desteklenen API'ler, get, list, file, information, discovered vulnerabilities, threat & güvenlik açığı yönetimi api, Uç Nokta için Microsoft Defender tvm api
+keywords: apis, graph api, desteklenen API'ler, get, list, file, information, discovered vulnerabilities, threat & vulnerability management api, Uç Nokta için Microsoft Defender tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6b3271637b1b275fe26d07975d0592bf1e7ae672
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 95e350a6288ecefabe86aaa7b802deae0ffafaa1
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840485"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020021"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Keşfedilen güvenlik açıklarını al
 
@@ -32,7 +32,9 @@ ms.locfileid: "65840485"
 - [Microsoft Defender Güvenlik Açığı Yönetimi](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> Microsoft Defender Güvenlik Açığı Yönetimi mı yaşamak istiyorsunuz? [Microsoft Defender Güvenlik Açığı Yönetimi genel önizleme denemesine](../defender-vulnerability-management/get-defender-vulnerability-management.md) nasıl kaydolabileceğiniz hakkında daha fazla bilgi edinin.
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

@@ -18,19 +18,19 @@ ms.custom:
 - PowerShell
 - admindeeplinkMAC
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: Microsoft 365 kiracınızdaki tek veya birden çok kullanıcı hesabının özelliklerini yapılandırmak için Microsoft 365 için PowerShell kullanın.
-ms.openlocfilehash: 3a1aa77a6af3995d7cd4d072b6b6c6047bf89942
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft 365 kiracınızdaki bireysel veya birden çok kullanıcı hesabının özelliklerini yapılandırmak için Microsoft 365 için PowerShell'i kullanın.
+ms.openlocfilehash: 14d302bca030b8310c4956c44cccab91d357233f
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091357"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67019955"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>PowerShell ile Microsoft 365 kullanıcı hesabı özelliklerini yapılandırma
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365</a> kiracınızın kullanıcı hesaplarının özelliklerini yapılandırmak için Microsoft 365 yönetim merkezi kullanabilirsiniz. PowerShell'de bunu ve yönetim merkezinde gerçekleştiremezseniz yapabileceğiniz diğer bazı şeyleri de yapabilirsiniz.
+microsoft 365 kiracınızın kullanıcı hesaplarının özelliklerini yapılandırmak için <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a> kullanabilirsiniz. PowerShell'de bunu ve yönetim merkezinde gerçekleştiremezseniz yapabileceğiniz diğer bazı şeyleri de yapabilirsiniz.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph için Azure Active Directory PowerShell modülünü kullanma
 
@@ -114,7 +114,7 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 ```powershell
 $userName="Belinda Newman"
 $upn=(Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
-Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
+Set-AzureADUser -ObjectID $upn -UsageLocation FR
 ```
 
 ### <a name="change-properties-for-all-user-accounts"></a>Tüm kullanıcı hesaplarının özelliklerini değiştirme
@@ -122,21 +122,21 @@ Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
 Tüm kullanıcıların özelliklerini değiştirmek için **Get-AzureADUser** ve **Set-AzureADUser** cmdlet'lerinin bir bileşimini kullanabilirsiniz. Aşağıdaki örnek, tüm kullanıcıların kullanım konumunu *Fransa* olarak değiştirir:
   
 ```powershell
-Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
+Get-AzureADUser -All $true | Set-AzureADUser -UsageLocation FR
 ```
 
 Bu komut PowerShell'e şunları yönerge eder:
   
 1. Kullanıcı hesaplarıyla ilgili tüm bilgileri alın (**Get-AzureADUser**) ve sonraki komuta (**|**) gönderin.
 
-1. Kullanıcı konumunu Fransa olarak ayarlayın (**Set-AzureADUser -UsageLocation "FR"**).
+1. Kullanıcı konumunu Fransa olarak ayarlayın (**Set-AzureADUser -UsageLocation FR**).
 
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>Belirli bir kullanıcı hesabı kümesinin özelliklerini değiştirme
 
 Belirli bir kullanıcı hesabı kümesinin özelliklerini değiştirmek için **Get-AzureADUser**, **Where** ve **Set-AzureADUser** cmdlet'lerinin bir bileşimini kullanabilirsiniz. Aşağıdaki örnek, Muhasebe departmanındaki tüm kullanıcıların kullanım konumunu *Fransa* olarak değiştirir:
   
 ```powershell
-Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
+Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation FR
 ```
 
 Bu komut PowerShell'e şunları yönerge eder:
@@ -145,7 +145,7 @@ Bu komut PowerShell'e şunları yönerge eder:
 
 1.  *Department* özelliği "Accounting" (**Burada {$_) olarak ayarlanmış tüm kullanıcı hesaplarını bulun. Department -eq "Accounting"}**) ve elde edilen bilgileri bir sonraki komuta (**|**) gönderin.
 
-1. Kullanıcı konumunu Fransa olarak ayarlayın (**Set-AzureADUser -UsageLocation "FR"**).
+1. Kullanıcı konumunu Fransa olarak ayarlayın (**Set-AzureADUser -UsageLocation FR**).
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell için Microsoft Azure Active Directory Modülünü kullanma
 
@@ -233,7 +233,7 @@ Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalNa
 ```powershell
 $userName="<display name>"
 $upn=(Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
-Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
+Set-MsolUser -UserPrincipalName $upn -UsageLocation FR
 ```
 
 ### <a name="change-properties-for-all-user-accounts"></a>Tüm kullanıcı hesaplarının özelliklerini değiştirme
@@ -241,21 +241,21 @@ Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
 Tüm kullanıcıların özelliklerini değiştirmek için **Get-MsolUser** ve **Set-MsolUser** cmdlet'lerinin bir bileşimini kullanın. Aşağıdaki örnek, tüm kullanıcıların kullanım konumunu *Fransa* olarak değiştirir:
   
 ```powershell
-Get-MsolUser | Set-MsolUser -UsageLocation "FR"
+Get-MsolUser | Set-MsolUser -UsageLocation FR
 ```
 
 Bu komut PowerShell'e şunları yönerge eder:
   
 1. Kullanıcı hesapları (**Get-MsolUser**) için tüm bilgileri alın ve sonraki komuta (**|**) gönderin.
 
-1. Kullanıcı konumunu Fransa olarak ayarlayın (**Set-MsolUser -UsageLocation "FR"**).
+1. Kullanıcı konumunu Fransa (**Set-MsolUser -UsageLocation FR**) olarak ayarlayın.
 
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>Belirli bir kullanıcı hesabı kümesinin özelliklerini değiştirme
 
 Belirli bir kullanıcı hesabı kümesinin özelliklerini değiştirmek için **Get-MsolUser**, **Where** ve **Set-MsolUser** cmdlet'lerinin bir bileşimini kullanabilirsiniz. Aşağıdaki örnek, Muhasebe departmanındaki tüm kullanıcıların kullanım konumunu *Fransa* olarak değiştirir:
   
 ```powershell
-Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
+Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation FR
 ```
 
 Bu komut PowerShell'e şunları yönerge eder:
@@ -264,7 +264,7 @@ Bu komut PowerShell'e şunları yönerge eder:
 
 1. *Department* özelliği "Accounting" (**Burada {$_) olarak ayarlanmış tüm kullanıcı hesaplarını bulun. Department -eq "Accounting"}**) ve elde edilen bilgileri sonraki komuta (**|**) gönderin.
 
-1. Kullanıcı konumunu Fransa olarak ayarlayın (**Set-MsolUser -UsageLocation "FR"**).
+1. Kullanıcı konumunu Fransa (**Set-MsolUser -UsageLocation FR**) olarak ayarlayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -272,4 +272,4 @@ Bu komut PowerShell'e şunları yönerge eder:
   
 [PowerShell ile Microsoft 365’i yönetme](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Microsoft 365 için PowerShell ile Kullanmaya başlayın](getting-started-with-microsoft-365-powershell.md)
+[Microsoft 365 için PowerShell'i kullanmaya başlama](getting-started-with-microsoft-365-powershell.md)

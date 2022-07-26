@@ -7,19 +7,20 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 07/25/2022
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.reviewer: ''
+ms.reviewer: thdoucet
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8e9c153f55b38871ebf6af7a4511af2e637fad68
-ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
+ms.openlocfilehash: 5976d09bfbfd42798dda38d2479ac9535ae3b68b
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66720489"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020433"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Dosya uzantısına ve klasör konumuna göre dışlamaları yapılandırma ve doğrulama
 
@@ -30,15 +31,16 @@ ms.locfileid: "66720489"
 - Microsoft Defender Virüsten Koruma
 
 **Platform**
+
 - Windows
 
-Microsoft Defender Virüsten Koruma için [zamanlanmış taramalar](schedule-antivirus-scans.md), [isteğe bağlı taramalar](run-scan-microsoft-defender-antivirus.md) ve [her zaman açık, gerçek zamanlı koruma ve izleme](configure-real-time-protection-microsoft-defender-antivirus.md) için geçerli olan dışlamalar tanımlayabilirsiniz. **Genel olarak, dışlamaları uygulamanız gerekmez**. Dışlamaları uygulamanız gerekiyorsa, çeşitli türlerden birini seçebilirsiniz:
+Microsoft Defender Virüsten Koruma için [zamanlanmış taramalar](schedule-antivirus-scans.md), [isteğe bağlı taramalar](run-scan-microsoft-defender-antivirus.md) ve [her zaman açık, gerçek zamanlı koruma ve izleme](configure-real-time-protection-microsoft-defender-antivirus.md) için geçerli olan dışlamalar tanımlayabilirsiniz. **Genel olarak, dışlamaları uygulamanız gerekmez**. Dışlamaları uygulamanız gerekiyorsa aşağıdakilerden birini seçebilirsiniz:
 
 - Dosya uzantılarına ve klasör konumlarına dayalı dışlamalar (bu makalede açıklanmıştır)
 - [İşlemler tarafından açılan dosyalar için dışlamalar](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Microsoft Defender Virüsten Koruma dışlamaları[, saldırı yüzeyi azaltma (ASR) kuralları](attack-surface-reduction.md) ve [denetimli klasör erişimi](controlled-folders.md) gibi diğer Uç Nokta için Microsoft Defender özellikleri için geçerli değildir. Bu makalede açıklanan yöntemleri kullanarak dışladığınız dosyalar, uç nokta algılama ve yanıt (EDR) uyarılarını ve diğer algılamaları tetikleyebilir.
+> Microsoft Defender Virüsten Koruma dışlamaları[, saldırı yüzeyi azaltma (ASR) kuralları](attack-surface-reduction.md) ve [denetimli klasör erişimi](controlled-folders.md) gibi diğer Uç Nokta için Microsoft Defender özellikleri için geçerli değildir. Bu makalede açıklanan yöntemleri kullanarak dışladığınız dosyalar, Uç Nokta Algılama ve Yanıt (EDR) uyarılarını ve diğer algılamaları tetikleyebilir.
 > Dosyaları geniş kapsamlı bir şekilde dışlamak için bunları Uç Nokta için Microsoft Defender [özel göstergelerine](manage-indicators.md) ekleyin.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
@@ -47,7 +49,7 @@ Dışlama listelerinizi [tanımlamadan önce dışlamaları tanımlama öneriler
 
 ## <a name="exclusion-lists"></a>Dışlama listeleri
 
-Bazı dosyaları Microsoft Defender Virüsten Koruma taramalarının dışında tutmak için dışlama listelerinizi değiştirirsiniz. Microsoft Defender Virüsten Koruma, kuruluş yönetiminde, veritabanı yönetiminde ve diğer kurumsal senaryolarda ve durumlarda kullanılanlar gibi bilinen işletim sistemi davranışlarına ve tipik yönetim dosyalarına dayalı birçok otomatik dışlama içerir.
+Belirli dosyaları Microsoft Defender Virüsten Koruma taramalarının dışında tutmak için dışlama listelerinizi değiştirin. Microsoft Defender Virüsten Koruma, kuruluş yönetiminde, veritabanı yönetiminde ve diğer kurumsal senaryolarda ve durumlarda kullanılanlar gibi bilinen işletim sistemi davranışlarına ve tipik yönetim dosyalarına dayalı birçok otomatik dışlama içerir.
 
 > [!NOTE]
 > Dışlamalar [, istenmeyebilecek uygulamalar (PUA) algılamaları](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) için de geçerlidir.
@@ -73,9 +75,9 @@ Aşağıdaki tabloda dosya uzantısına ve klasör konumuna göre bazı dışlam
 
 - Eşlenen ağ sürücülerini dışlama. Gerçek ağ yolunu belirtin.
 
-- Microsoft Defender Virüsten Koruma hizmeti başlatıldıktan sonra oluşturulan ve dışlama listesine eklenen yeniden ayrıştırma noktaları olan klasörler dahil edilmeyecektir. Yeni yeniden ayrıştırma noktalarının geçerli bir dışlama hedefi olarak tanınması için hizmeti yeniden başlatın (Windows'ı yeniden başlatarak).
+- Yeniden ayrıştırma noktaları olan klasörler, Microsoft Defender Virüsten Koruma hizmeti başlatıldıktan sonra oluşturulur ve dışlama listesine eklenenler dahil edilmeyecektir. Yeni yeniden ayrıştırma noktalarının geçerli bir dışlama hedefi olarak tanınması için Windows'ı yeniden başlatarak hizmeti yeniden başlatın.
 
-- Dışlamalar [zamanlanmış taramalar](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [isteğe bağlı taramalar](run-scan-microsoft-defender-antivirus.md) ve [gerçek zamanlı koruma](configure-real-time-protection-microsoft-defender-antivirus.md) için geçerlidir ancak Uç Nokta için Defender genelinde geçerli değildir. Uç Nokta için Defender'da dışlamaları tanımlamak için [özel göstergeler](manage-indicators.md) kullanın.
+- Dışlamalar [zamanlanmış taramalar](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [isteğe bağlı taramalar](run-scan-microsoft-defender-antivirus.md) ve [gerçek zamanlı koruma](configure-real-time-protection-microsoft-defender-antivirus.md) için geçerlidir ancak tüm Uç Nokta için Defender özelliklerinde geçerli değildir. Uç Nokta için Defender'da dışlamaları tanımlamak için [özel göstergeler](manage-indicators.md) kullanın.
 
 - Varsayılan olarak, listelerde yapılan yerel değişiklikler (PowerShell ve WMI ile yapılan değişiklikler de dahil olmak üzere yönetici ayrıcalıklarına sahip kullanıcılar tarafından), grup ilkesi, Configuration Manager veya Intune tarafından tanımlandığı (ve dağıtıldığı) listelerle birleştirilir. çakışmalar olduğunda grup ilkesi listeleri önceliklidir. Ayrıca, grup ilkesi ile yapılan dışlama listesi değişiklikleri [Windows Güvenliği uygulamasında](microsoft-defender-security-center-antivirus.md) görünür.
 
@@ -101,9 +103,9 @@ Bkz. [Kötü amaçlı yazılımdan koruma ilkeleri oluşturma ve dağıtma:](/co
 > [!NOTE]
 > Bir dosyanın tam yolunu belirtirseniz, yalnızca bu dosya dışlanır. Dışlamada bir klasör tanımlanmışsa, bu klasörün altındaki tüm dosyalar ve alt dizinler dışlanır.
 
-1. grup ilkesi yönetim bilgisayarınızda [grup ilkesi Yönetim Konsolu'nu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) açın, yapılandırmak istediğiniz grup ilkesi Nesnesine sağ tıklayın ve **Düzenle'yi** seçin.
+1. grup ilkesi yönetim bilgisayarınızda [grup ilkesi Yönetim Konsolu'nu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) açın, yapılandırmak istediğiniz grup ilkesi Nesnesine sağ tıklayın ve düzenle'yi seçin.
 
-2. **Grup İlkesi Yönetimi Düzenleyicisi**'nde **Bilgisayar yapılandırması**'na gidin ve **Yönetim şablonları**'nı seçin.
+2. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na** gidin ve **Yönetim şablonları'nı** seçin.
 
 3. Ağacı **Dışlamalar**\> **Windows Defender Virüsten Koruma** \> **Windows bileşenlerine** genişletin.
 
@@ -130,7 +132,7 @@ Bkz. [Kötü amaçlı yazılımdan koruma ilkeleri oluşturma ve dağıtma:](/co
 
 ### <a name="use-powershell-cmdlets-to-configure-file-name-folder-or-file-extension-exclusions"></a>Dosya adı, klasör veya dosya uzantısı dışlamalarını yapılandırmak için PowerShell cmdlet'lerini kullanma
 
-Uzantıya, konuma veya dosya adına göre dosyalar için dışlama eklemek veya kaldırmak için PowerShell kullanmak için üç cmdlet'in ve uygun dışlama listesi parametresinin kullanılması gerekir. Cmdlet'lerin tümü [Defender modülündedir](/powershell/module/defender/).
+Uzantı, konum veya dosya adına göre dosyalar için dışlama eklemek veya kaldırmak için PowerShell kullanmak için üç cmdlet'in ve uygun dışlama listesi parametresinin bir birleşimini kullanmak gerekir. Cmdlet'lerin tümü [Defender modülündedir](/powershell/module/defender/).
 
 Cmdlet'lerin biçimi aşağıdaki gibidir:
 
@@ -151,7 +153,7 @@ Aşağıdaki tabloda, PowerShell cmdlet'inin `<exclusion list>` bölümünde kul
 |Dışlama türü|PowerShell parametresi|
 |---|---|
 |Belirtilen dosya uzantısına sahip tüm dosyalar|`-ExclusionExtension`|
-|Klasör altındaki tüm dosyalar (alt dizinlerdeki dosyalar dahil) veya belirli bir dosya|`-ExclusionPath`|
+|Bir klasörün altındaki tüm dosyalar (alt dizinlerdeki dosyalar dahil) veya belirli bir dosya|`-ExclusionPath`|
 
 > [!IMPORTANT]
 > veya `Add-MpPreference`ile `Set-MpPreference` bir liste oluşturduysanız, cmdlet'ini `Set-MpPreference` yeniden kullanmak varolan listenin üzerine yazar.
@@ -202,7 +204,7 @@ Aşağıdaki tabloda joker karakterlerin nasıl kullanılabildiği açıklanır 
 
 |Joker|Örnekler|
 |---|---|
-|`*` (yıldız işareti) <p> **Dosya adı ve dosya uzantısı eklemelerinde**, yıldız işareti herhangi bir sayıda karakterin yerini alır ve yalnızca bağımsız değişkende tanımlanan son klasördeki dosyalara uygulanır. <p> **Klasör dışlamalarında** yıldız işareti tek bir klasörün yerini alır. Birden çok `*` iç içe klasörü belirtmek için klasör eğik çizgileriyle `\` birden çok kullanın. Joker karakterli ve adlandırılmış klasörlerin sayısı eşleştirildikten sonra tüm alt klasörler de eklenir.|`C:\MyData\*.txt` Içerir `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` içindeki herhangi bir dosyayı `C:\somepath\Archives\Data` ve alt klasörlerini ve `C:\somepath\Authorized\Data` alt klasörlerini içerir <p> `C:\Serv\*\*\Backup` içindeki `C:\Serv\Primary\Denied\Backup` herhangi bir dosyayı ve alt klasörlerini ve `C:\Serv\Secondary\Allowed\Backup` alt klasörlerini içerir|
+|`*` (yıldız işareti) <p> **Dosya adı ve dosya uzantısı eklemelerinde**, yıldız işareti herhangi bir sayıda karakterin yerini alır ve yalnızca bağımsız değişkende tanımlanan son klasördeki dosyalara uygulanır. <p> **Klasör dışlamalarında** yıldız işareti tek bir klasörün yerini alır. Birden çok `*` iç içe klasörü belirtmek için klasör eğik çizgileriyle `\` birden çok kullanın. Joker karakterli ve adlandırılmış klasörlerin sayısı eşleştirildikten sonra tüm alt klasörler de eklenir.|`C:\MyData\*.txt` Içerir `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` içindeki herhangi bir dosyayı `C:\somepath\Archives\Data` ve alt klasörlerini ve `C:\somepath\Authorized\Data` alt klasörlerini içerir <p> `C:\Serv\*\*\Backup` içindeki herhangi bir dosyayı `C:\Serv\Primary\Denied\Backup` ve alt klasörlerini ve `C:\Serv\Secondary\Allowed\Backup` alt klasörlerini içerir|
 |`?` (soru işareti)  <p> **Dosya adı ve dosya uzantısı eklemelerinde**, soru işareti tek bir karakterin yerini alır ve yalnızca bağımsız değişkende tanımlanan son klasördeki dosyalara uygulanır. <p> **Klasör dışlamalarında**, soru işareti bir klasör adındaki tek bir karakterin yerini alır. Joker karakterli ve adlandırılmış klasörlerin sayısı eşleştirildikten sonra tüm alt klasörler de eklenir.|`C:\MyData\my?.zip` Içerir `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` içindeki herhangi bir dosyayı `C:\somepath\P\Data` ve alt klasörlerini içerir  <p> `C:\somepath\test0?\Data` içindeki herhangi bir dosyayı `C:\somepath\test01\Data` ve alt klasörlerini içerebilir|
 |Ortam değişkenleri <p> Tanımlı değişken, dışlama değerlendirildiğinde bir yol olarak doldurulur.|`%ALLUSERSPROFILE%\CustomLogFiles` şunları içerir: `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
 
@@ -219,7 +221,7 @@ Aşağıdaki tabloda sistem hesabı ortam değişkenleri listelenip açıklanmak
 
 |Bu sistem ortamı değişkeni...|Buna yeniden yönlendirir|
 |---|---|
-|`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
+|`%APPDATA%`|`C:\Windows\system32\config\systemprofile\Appdata\Roaming`|
 |`%APPDATA%\Microsoft\Internet Explorer\Quick Launch`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch`|
 |`%APPDATA%\Microsoft\Windows\Start Menu`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu`|
 |`%APPDATA%\Microsoft\Windows\Start Menu\Programs`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`|
@@ -275,10 +277,10 @@ Aşağıdaki tabloda sistem hesabı ortam değişkenleri listelenip açıklanmak
 |`%PUBLIC%\RecordedTV.library-ms`|`C:\Users\Public\RecordedTV.library-ms`|
 |`%PUBLIC%\Videos`|`C:\Users\Public\Videos`|
 |`%PUBLIC%\Videos\Sample Videos`|`C:\Users\Public\Videos\Sample Videos`|
-|`%USERPROFILE%`|`C:\Users\UserName`|
-|`%USERPROFILE%\AppData\Local`|`C:\Users\UserName\AppData\Local`|
-|`%USERPROFILE%\AppData\LocalLow`|`C:\Users\UserName\AppData\LocalLow`|
-|`%USERPROFILE%\AppData\Roaming`|`C:\Users\UserName\AppData\Roaming`|
+|`%USERPROFILE%`|`C:\Windows\system32\config\systemprofile`|
+|`%USERPROFILE%\AppData\Local`|`C:\Windows\system32\config\systemprofile\AppData\Local`|
+|`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\system32\config\systemprofile\AppData\LocalLow`|
+|`%USERPROFILE%\AppData\Roaming`|`C:\Windows\system32\config\systemprofile\AppData\Roaming`|
 
 ## <a name="review-the-list-of-exclusions"></a>Dışlama listesini gözden geçirin
 
@@ -291,10 +293,10 @@ Aşağıdaki yöntemlerden birini kullanarak dışlama listesindeki öğeleri al
 - [Windows Güvenliği uygulaması](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
-> grup ilkesi ile yapılan dışlama listesi değişiklikleri [Windows Güvenliği uygulamasındaki](microsoft-defender-security-center-antivirus.md) listelerde **gösterilir**.
+> grup ilkesi ile yapılan dışlama listesi değişiklikleri [, Windows Güvenliği uygulama](microsoft-defender-security-center-antivirus.md) listelerinde **gösterilir**.
 > Windows Güvenliği uygulamasında yapılan değişiklikler grup ilkesi listelerinde **gösterilmez**.
 
-PowerShell kullanıyorsanız, listeyi iki yolla alabilirsiniz:
+PowerShell kullanıyorsanız, listeyi aşağıdaki iki yolla alabilirsiniz:
 
 - Tüm Microsoft Defender Virüsten Koruma tercihlerinin durumunu alın. Her liste ayrı satırlarda görüntülenir, ancak her liste içindeki öğeler aynı satırda birleştirilir.
 - Tüm tercihlerin durumunu bir değişkene yazın ve bu değişkeni yalnızca ilgilendiğiniz listeyi çağırmak için kullanın. her kullanımı `Add-MpPreference` yeni bir satıra yazılır.

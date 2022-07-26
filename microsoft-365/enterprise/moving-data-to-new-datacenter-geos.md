@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Yeni Office 365 veri merkezi coğrafi alanları ve çekirdek verilerinizin yeni bir coğrafi bölgeye taşınmasını istemek için veri yerleşimi seçeneğini kullanmayı öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c70d59edba9cd35710b315adc8f93d6139fd2595
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: f93ba661f723a3f26473a8a08b81d408fd1b99d0
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873588"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020395"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Temel verileri yeni Microsoft 365 veri merkezi coğrafi bölgelerine taşıma
 
@@ -29,9 +29,9 @@ Microsoft 365 hizmetleri için yeni veri merkezi coğrafi alanları açmaya deva
 Temel müşteri verileri, aşağıdakiler de dahil olmak üzere müşteri verilerinin bir alt kümesini ifade eden bir terimdir:
 
 - posta kutusu içeriğini (e-posta gövdesi, takvim girdileri ve e-posta eklerinin içeriği) Exchange Online
-- çevrimiçi site içeriğini ve bu sitede depolanan dosyaları SharePoint
+- SharePoint Online site içeriği ve bu site içinde depolanan dosyalar
 - OneDrive İş karşıya yüklenen dosyalar
-- Özel iletiler, kanal iletileri ve sohbetlerde kullanılan görüntüler dahil olmak üzere sohbet iletilerini Teams
+- Özel iletiler, kanal iletileri ve sohbetlerde kullanılan görüntüler de dahil olmak üzere Teams sohbet iletileri
   
 Çekirdek müşteri verilerinin zaten var olan bir veri merkezi coğrafi alanında depolandığı mevcut müşteriler, yeni bir veri merkezi coğrafi alanının başlatılmasından etkilenmez. Yeni veri merkezi coğrafi konumuyla benzersiz özellikler, özellikler veya uyumluluk sertifikaları sunmayız. Bu iki coğrafi bölgeden herhangi birinde müşteri olarak, daha önce yaşadığınız hizmet kalitesi, performans ve güvenlik denetimleriyle aynı deneyime sahip olacaksınız. Aşağıdaki tabloda listelenen mevcut müşterilere, bekleyen kuruluşlarının temel müşteri verilerinin yeni veri merkezi coğrafi bölgelerine erken geçişini isteme seçeneği sunuyoruz.
   
@@ -51,6 +51,7 @@ Temel müşteri verileri, aşağıdakiler de dahil olmak üzere müşteri verile
 |**Norveç**| Avrupa Birliği | Norveç | Nisan 2020 |
 |**Brezilya**| Amerika | Brezilya | Kasım 2020 |
 |**İsveç**| Avrupa Birliği | İsveç | Kasım 2021 |
+|**Katar**| Avrupa Birliği | Katar | Ağustos 2022 |
 
 1 Ekim 2020 itibarıyla kiracıya dahil Office 365 Eğitim aboneliği olan müşteriler geçiş için uygun değildir.
 
@@ -58,7 +59,7 @@ Tüm veri merkezi coğrafi bölgelerinin, veri merkezlerinin ve bekleyen müşte
   
 ## <a name="data-residency-option"></a>Veri yerleşimi seçeneği
 
-Yukarıdaki tabloda listelenen veri merkezi coğrafi bölgelerinin kapsamına giren Microsoft 365 müşterileri uygun hale getirmek için bir veri yerleşimi seçeneği sunuyoruz. Bu seçenekle, veri yerleşimi gereksinimleri olan uygun müşteriler, bekleyen kuruluşlarının temel müşteri verilerinin yeni veri merkezi coğrafi bölgelerine geçirilmesini isteyebilir.  Microsoft, kayıt penceresi sırasında geçiş isteyen tüm uygun müşterilere taahhüt edilen bir son tarih sunar.  Veri merkezi [coğrafi bölgenizin](request-your-data-move.md) açık kayıt penceresi ve programa kaydolma adımları hakkında daha fazla bilgi için Verilerinizi taşıma isteğinde bulunma sayfasını gözden geçirin.  Veri taşıma işleminin tamamlanması, istek süresinin sona ermesi 24 aya kadar sürebilir.
+Yukarıdaki tabloda listelenen veri merkezi coğrafi bölgelerinin kapsamına giren uygun Microsoft 365 müşterilerine bir veri yerleşimi seçeneği sunuyoruz. Bu seçenekle, veri yerleşimi gereksinimleri olan uygun müşteriler, bekleyen kuruluşlarının temel müşteri verilerinin yeni veri merkezi coğrafi bölgelerine geçirilmesini isteyebilir.  Microsoft, kayıt penceresi sırasında geçiş isteyen tüm uygun müşterilere taahhüt edilen bir son tarih sunar.  Veri merkezi [coğrafi bölgenizin](request-your-data-move.md) açık kayıt penceresi ve programa kaydolma adımları hakkında daha fazla bilgi için Verilerinizi taşıma isteğinde bulunma sayfasını gözden geçirin.  Veri taşıma işleminin tamamlanması, istek süresinin sona ermesi 24 aya kadar sürebilir.
 
 Yeni veri merkezi coğrafi konumuyla benzersiz özellikler, özellikler veya uyumluluk sertifikaları sunmayız.
 
@@ -78,4 +79,4 @@ Yeni veri merkezine taşınan veriler müşteriye ek ücret ödemeden tamamlanı
   
 [Bölgeye göre Azure hizmetleri](https://azure.microsoft.com/regions/)
 
-[Microsoft 365 Çok Coğrafi Özellikli kiracıda Teams deneyimi](/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[Microsoft 365 Multi-Geo özellikli kiracıda Teams deneyimi](/microsoftteams/teams-experience-o365odb-spo-multi-geo)
