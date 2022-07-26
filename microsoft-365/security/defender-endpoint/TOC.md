@@ -16,6 +16,7 @@
 #### [Bakım ve işlemler](mde-p1-maintenance-operations.md)
 ### [Kamu görevlisi müşterilere yönelik Uç Nokta için Microsoft Defender](gov.md)
 ### [Uç Nokta için Microsoft Defender'ı Windows dışı diğer platformlarda kullanın](non-windows.md)
+### [Uç Nokta için Defender ile virüsten koruma çözümü uyumluluğu](defender-compatibility.md)
 
 
 ## [Özellikleri değerlendirin](evaluation-lab.md)
@@ -203,6 +204,7 @@
 
 #### [İzinler]()
 ##### [Portala erişmek için temel izinleri kullanın](basic-permissions.md)
+##### [Microsoft Defender Güvenlik Merkezi'ne kullanıcı erişimi atama](assign-portal-access.md)
 ##### [RBAC kullanarak portal erişimini yönetin](rbac.md)
 ###### [Rolleri oluşturun ve yönetin](user-roles.md)
 ###### [Cihaz grupları oluşturun ve yönetin](machine-groups.md)
@@ -256,8 +258,9 @@
 ###### [Saldırı yüzeyini azaltma (ASR) kurallarını etkinleştirme](attack-surface-reduction-rules-deployment-implement.md)
 ###### [Saldırı yüzeyini azaltma (ASR) kurallarını kullanıma hazır hale getirme](attack-surface-reduction-rules-deployment-operationalize.md)
 ##### [Saldırı yüzeyini azaltma (ASR) kuralları başvurusu](attack-surface-reduction-rules-reference.md)
+##### [Saldırı yüzeyi azaltma (ASR) kurallarında sorun giderme](troubleshoot-asr-rules.md)
 ##### [ASR kurallarına alternatif yapılandırma yöntemlerini etkinleştirin](enable-attack-surface-reduction.md)
-##### [Saldırı yüzeyini azaltma ile ilgili SSS](attack-surface-reduction-faq.yml)
+#### [Saldırı yüzeyini azaltma ile ilgili SSS](attack-surface-reduction-faq.yml)
 #### [Denetimli klasör erişimi]()
 ##### [Klasörleri koruyun](controlled-folders.md)
 ##### [Denetimli klasör erişimini değerlendirin](evaluate-controlled-folder-access.md)
@@ -292,6 +295,7 @@
 ### Yeni nesil koruma
 #### [Yeni nesil korumaya genel bakış](next-generation-protection.md)
 ##### [Microsoft Defender Virüsten Koruma’ya Genel Bakış](microsoft-defender-antivirus-windows.md)
+##### [Windows’da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-windows.md)
 ##### [Birlikte daha iyi: Microsoft Defender Virüsten Koruma ve Uç Nokta için Microsoft Defender](why-use-microsoft-defender-antivirus.md)
 ##### [Birlikte daha iyi: Microsoft Defender Virüsten Koruma ve Office 365](office-365-microsoft-defender-antivirus.md)
 #### [Microsoft Defender Virüsten Koruma’yı değerlendirin](evaluate-microsoft-defender-antivirus.md)
@@ -302,6 +306,7 @@
 ##### [Bulut koruma düzeyini belirleyin](specify-cloud-protection-level-microsoft-defender-antivirus.md)
 ##### [Bulut koruması ve örnek gönderimi](cloud-protection-microsoft-antivirus-sample-submission.md)
 #### [Microsoft Defender Virüsten Koruma ağ bağlantılarını yapılandırın ve doğrulayın](configure-network-connections-microsoft-defender-antivirus.md)
+#### [Ağ trafiği denetimi için ek tanım kümeleri belirtin](specify-additional-definitions-network-traffic-inspection-mdav.md)
 #### [Değişiklik korumasıyla güvenlik ayarlarını koruyun](prevent-changes-to-security-settings-with-tamper-protection.md)
 #### [İlk görüşte engellemeyi etkinleştirin](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 #### [Bulut engelleme zaman aşımı dönemini yapılandırın](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
@@ -335,6 +340,7 @@
 ##### [Uç noktalarda görünen bildirimleri yapılandırın](configure-notifications-microsoft-defender-antivirus.md)
 ##### [Kullanıcıların Microsoft Defender Virüsten Koruma ilke ayarlarını yerel olarak değiştirme yetkilerini tanımlayın](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 ##### [Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görüntüleme veya etkileşimde bulunma yetkilerini tanımlayın](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+##### [Tanım kullanımdan kaldırılmasını aç](turn-on-definition-retirement.md)
 
 #### [Microsoft Defender Virüsten Koruma’yı dağıtın ve raporlayın](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [Microsoft Defender Virüsten Koruma’yı dağıtın ve etkinleştirin](deploy-microsoft-defender-antivirus.md)
@@ -362,6 +368,8 @@
 ##### [Cihaz durumu ve uyumluluk raporları](machine-reports.md)
 ##### [Gerçek zamanlı korumayla ilgili performans sorunlarını giderin](troubleshoot-performance-issues.md) 
 ##### [Güncelleştirme Uyumluluğunda Microsoft Defender Virüsten Koruma raporlama sorunlarını giderin](troubleshoot-reporting.md)
+##### [Microsoft Defender Antivirus'ün tanılama verilerini toplayın](collect-diagnostic-data.md)
+##### [Güncelleştirme Uyumluluğu ve Microsoft Defender Antivirus için tanılama verilerini toplayın](collect-diagnostic-data-update-compliance.md)
 ##### [Microsoft Defender Virüsten Koruma performansını ayarlayın](tune-performance-defender-antivirus.md)
 
 #### Microsoft Defender Virüsten Koruma sorunlarının giderilmesi
@@ -454,12 +462,14 @@
 #### [AIR'e Genel Bakış](automated-investigations.md)
 #### [AIR'de otomasyon düzeyleri](automation-levels.md)
 #### [AIR özelliklerini yapılandırın](configure-automated-investigations-remediation.md)
+#### [Otomatik bir soruşturmanın ayrıntılarını ve sonuçlarını görüntüleyin](autoir-investigation-results.md)
 
 ### [Microsoft Tehdit Uzmanları]()
 #### [Microsoft Tehdit Uzmanlarına genel bakış](microsoft-threat-experts.md)
 #### [Microsoft Tehdit Uzmanları özelliklerini yapılandırın ve yönetin](configure-microsoft-threat-experts.md)
 
-
+### [Yeni nesil koruma]()
+#### [Zamanlanmış ve isteğe bağlı taramaları çalıştırın ve özelleştirin](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
 ## Başvuru
 ### [Tehdit bilgileri kavramlarını anlayın](threat-indicator-concepts.md)
@@ -547,11 +557,13 @@
 ####### [Makineyi kimlikle al](get-machine-by-id.md)
 ####### [Kullanıcıların bilgisayar günlüğünü al](get-machine-log-on-users.md)
 ####### [Makineyle ilgili uyarıları al](get-machine-related-alerts.md)
+####### [Makinelerin güvenlik durumları toplama API'sini al](get-machinesecuritystates-collection.md)
 ####### [Yüklü yazılımı al](get-installed-software.md)
 ####### [Keşfedilen güvenlik açıklarını al](get-discovered-vulnerabilities.md)
 ####### [Güvenlik önerileri al](get-security-recommendations.md)
 ####### [Makine etiketlerini ekle veya kaldır](add-or-remove-machine-tags.md)
 ####### [IP'ye göre makineleri bul](find-machines-by-ip.md)
+####### [Dahili IP'ye göre cihaz bilgilerini bul](find-machine-info-by-ip.md)
 ####### [Makineleri etikete göre bul](find-machines-by-tag.md)
 ####### [Eksik KB'leri al](get-missing-kbs-machine.md)
 ####### [Cihaz değerini ayarla](set-device-value.md)
@@ -607,6 +619,7 @@
 ####### [Yazılıma göre makineleri listele](get-machines-by-software.md)
 ####### [Yazılıma göre güvenlik açıklarını listele](get-vuln-by-software.md)
 ####### [Eksik KB'leri al](get-missing-kbs-software.md)
+####### [KB toplama API'sini al](get-machinegroups-collection.md)
 
 ###### [Kullanıcı]()
 ####### [Kullanıcı yöntemleri](user.md)
@@ -618,6 +631,8 @@
 ####### [Güvenlik açıklarını listele](get-all-vulnerabilities.md)
 ####### [Makine ve yazılıma göre güvenlik açıklarını listele](get-all-vulnerabilities-by-machines.md)
 ####### [Kimlik ile güvenlik açığı al](get-vulnerability-by-id.md)
+####### [CVE-KB harita API'sini al](get-cvekbmap-collection.md)
+####### [KB toplama API'sini al](get-kbinfo-collection.md)
 ####### [Güvenlik açığına göre makineleri listele](get-machines-by-vulnerability.md)
 
 ##### [API kullanımı - Örnekler]()
@@ -626,6 +641,7 @@
 ###### [Python ile Gelişmiş Avcılık](run-advanced-query-sample-python.md)
 ###### [PowerShell ile Gelişmiş Av](run-advanced-query-sample-powershell.md)
 ###### [OData Sorgularını Kullanma](exposed-apis-odata-samples.md)
+###### [PowerShell API Kılavuzu ile Gelişmiş Tehdit Avcılığı](exposed-apis-full-sample-powershell.md)
 
 
 #### [Ham veri akışı API'si]()
