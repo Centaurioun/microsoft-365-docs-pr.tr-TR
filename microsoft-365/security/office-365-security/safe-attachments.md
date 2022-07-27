@@ -1,5 +1,5 @@
 ---
-title: Güvenli Ekler
+title: Güvenli Ekleri Kaydetme
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ ms.collection:
 description: Yöneticiler, Office 365 için Microsoft Defender'daki Güvenli Ekler özelliği hakkında bilgi edinebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd2a037ee8ffc87f64bf01b794b468242976fa0b
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 6ba76616e931810aadaeded61a30386c84e46029
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772609"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037544"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Ekler
 
@@ -39,6 +39,8 @@ ms.locfileid: "66772609"
 
 E-posta iletileri için Güvenli Ekler koruması, Güvenli Ekler ilkeleri tarafından denetlenmektedir. Varsayılan Güvenli Ekler ilkesi olmasa **da, Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi tüm alıcılara (özel Güvenli Ekler ilkelerinde tanımlanmayan kullanıcılar) Güvenli Ekler koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Ayrıca belirli kullanıcılar, gruplar veya etki alanları için geçerli olan Güvenli Ekler ilkeleri de oluşturabilirsiniz. Yönergeler için bkz. [Office 365 için Microsoft Defender'da Güvenli Ekler ilkelerini ayarlama](set-up-safe-attachments-policies.md).
 
+Dosya eki şifrelenmişse veya parola korumalıysa, Güvenli Ekler tarafından incelenemez. Eki içeren ileti teslim edilecek ve alıcı dosyanın Güvenli Ekler tarafından taranmadığına dair bir uyarı almaz.
+
 Aşağıdaki tabloda, Office 365 için Microsoft Defender içeren Microsoft 365 ve Office 365 kuruluşlarında Güvenli Ekler senaryoları açıklanmaktadır (başka bir deyişle, lisans eksikliği örneklerde hiçbir zaman sorun oluşturmaz).
 
 |Senaryo|Sonuç|
@@ -46,7 +48,7 @@ Aşağıdaki tabloda, Office 365 için Microsoft Defender içeren Microsoft 365 
 |Pat'in Microsoft 365 E5 kuruluşunda Yapılandırılmış Güvenli Ekler ilkesi yok.|Pat, Güvenli Ekler ilkelerinde aksi tanımlanmayan tüm alıcılar için geçerli olan **Yerleşik koruma** önayarlı güvenlik ilkesi nedeniyle Güvenli Ekler tarafından korunur.|
 |Lee'nin kuruluşu, yalnızca finans çalışanları için geçerli olan bir Güvenli Ekler ilkesine sahiptir. Lee satış departmanının bir üyesi.|Lee ve satış departmanının geri kalanı, Güvenli Ekler ilkelerinde aksi şekilde tanımlanmayan tüm alıcılar için geçerli olan **Yerleşik koruma** ön ayarı güvenlik ilkesi nedeniyle Güvenli Ekler tarafından korunur.|
 |Dün Jean'in kuruluşundaki bir yönetici, tüm çalışanlar için geçerli olan bir Güvenli Ekler ilkesi oluşturdu. Bugün erken saatlerde Jean ek içeren bir e-posta iletisi aldı.|Jean, bu özel Güvenli Ekler ilkesi nedeniyle Güvenli Ekler tarafından korunur. <br/><br/> Genellikle yeni bir ilkenin geçerlilik kazanması yaklaşık 30 dakika sürer.|
-|Chris'in kuruluşu, kuruluştaki herkes için uzun süredir devam eden Güvenli Ekler ilkelerine sahiptir. Chris eki olan bir e-posta alır ve ardından iletiyi dış alıcılara iletir.|Chis, Güvenli Ekler tarafından korunur. <br/><br/> Bir Microsoft 365 kuruluşundaki dış alıcılar varsa, iletilen iletiler de Güvenli Ekler tarafından korunur.|
+|Chris'in kuruluşu, kuruluştaki herkes için uzun süredir devam eden Güvenli Ekler ilkelerine sahiptir. Chris eki olan bir e-posta alır ve ardından iletiyi dış alıcılara iletir.|Chis, Güvenli Ekler tarafından korunur. <br/><br/> Dış alıcılar bir Microsoft 365 kuruluşundaysa, iletilen iletiler de Güvenli Ekler tarafından korunur.|
 
 Güvenli Ekler taraması, Microsoft 365 verilerinizin bulunduğu bölgede gerçekleşir. Veri merkezi coğrafyası hakkında daha fazla bilgi için bkz. [Verileriniz nerede bulunur?](https://products.office.com/where-is-your-data-located?geo=All)
 

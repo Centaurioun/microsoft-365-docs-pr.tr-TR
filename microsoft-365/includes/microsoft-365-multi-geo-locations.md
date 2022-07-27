@@ -1,18 +1,18 @@
 
-|  Coğrafi konum               |  Kod  |  eBulma veri konumu        |
+|  Coğrafi konum               |  Kod  |  eKeşif veri konumu        |
 |:----------------------------|:-------|:---------------------------------|
-|Asia-Pacific                 |APC     |Güneydoğu veya Doğu Asya veri merkezleri|
+|Asya Pasifik                 |APC     |Güneydoğu veya Doğu Asya veri merkezleri|
 |Avustralya                    |AUS     |Güneydoğu veya Doğu Asya veri merkezleri|
-|Brezilya                       |SUTYEN     |(eBulma veri konumu yakında sunulacak)|
-|Kanada                       |-BİLİRSİNİZ     |ABD veri merkezleri                    |
+|Brezilya                       |BRA     |(eKeşif veri konumu yakında kullanıma sunulacak)|
+|Kanada                       |CAN     |ABD veri merkezleri                    |
 |Avrupa / Orta Doğu / Afrika|EUR     |Avrupa veri merkezleri                |
 |Fransa                       |FRA     |Avrupa veri merkezleri                |
 |Almanya                      |DEU     |Avrupa veri merkezleri                |
-|Hindistan                        |SANAYİ     |Güneydoğu veya Doğu Asya veri merkezleri|
+|Hindistan                        |IND     |Güneydoğu veya Doğu Asya veri merkezleri|
 |Japonya                        |JPN     |Güneydoğu veya Doğu Asya veri merkezleri|
 |Kore                        |KOR     |Güneydoğu veya Doğu Asya veri merkezleri|
 |Kuzey Amerika                |NAM     |ABD veri merkezleri                    |
-|Norveç                       |NOR     |(eBulma veri konumu yakında sunulacak)|
+|Norveç                       |NOR     |(eKeşif veri konumu yakında kullanıma sunulacak)|
 |South Africa                 |ZAF     |Avrupa veri merkezleri                |
 |İsveç                       |SWE     |Avrupa veri merkezleri                |
 |İsviçre                  |CHE     |Avrupa veri merkezleri                |

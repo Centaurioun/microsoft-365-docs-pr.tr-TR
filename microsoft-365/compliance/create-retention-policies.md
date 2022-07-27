@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kullanıcıların e-posta, belgeler ve konuşmalarla oluşturduğu içeriğin denetimini verimli bir şekilde korumak için bekletme ilkesi kullanın. İstediğinizi koruyun ve istemediğinizden kurtulun.
-ms.openlocfilehash: 0f0fa2da9c41700216b0142827897980870f006d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 39405a14fcde6ff41821d3b30c933f5ac226019e
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627679"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037742"
 ---
 # <a name="create-and-configure-retention-policies"></a>Bekletme ilkeleri oluşturma ve yapılandırma
 
@@ -74,7 +74,7 @@ Birden fazla bekletme ilkeniz varsa ve bekletme etiketlerini de kullandığını
 ### <a name="retention-policy-for-teams-locations"></a>Teams konumları için bekletme ilkesi
 
 > [!NOTE]
-> Bekletme ilkeleri artık şu anda önizleme aşamasında olan [paylaşılan kanalları](/MicrosoftTeams/shared-channels) destekliyor. **Teams kanalı ileti** konumu için bekletme ayarlarını yapılandırdığınızda, bir ekibin paylaşılan kanalları varsa, bu kişiler bekletme ayarlarını üst ekibinden devralır.
+> Bekletme ilkeleri [paylaşılan kanalları destekler](/MicrosoftTeams/shared-channels). **Teams kanalı ileti** konumu için bekletme ayarlarını yapılandırdığınızda, bir ekibin paylaşılan kanalları varsa, bu kişiler bekletme ayarlarını üst ekibinden devralır.
 
 1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) **Veri yaşam döngüsü yönetimi** > **Bekletme İlkeleri'ni** seçin.
 
@@ -170,7 +170,7 @@ SharePoint sitelerine uygulanan bir bekletme ilkesi, bu iletiler silinmeden önc
 
 Bu hizmetlerden herhangi biri için geçerli olan bekletme ilkeleri için aşağıdaki yönergeleri kullanın:
 
-- Exchange: E-posta ve ortak klasörler
+- Exchange: Email ve ortak klasörler
 - SharePoint: Siteler
 - OneDrive: Hesaplar
 - Microsoft 365 grupları

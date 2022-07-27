@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuz için Teams iletilerinin otomatik olarak tutulmasını veya silinmesini yönetebilmeniz için Microsoft Teams için geçerli olan Microsoft 365 bekletme ilkeleri hakkında bilgi edinin.
-ms.openlocfilehash: d3a405735ece7cdfd453a946d2350b15cfab6978
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 00b8932c1d529a236a0d70f15443d1afa74c3213
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943408"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037526"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams için bekletme hakkında bilgi edinin
 
@@ -44,7 +44,7 @@ Diğer iş yükleri için bkz:
 ## <a name="whats-included-for-retention-and-deletion"></a>Saklama ve silmeye dahil olanlar
 
 > [!NOTE]
-> Bekletme ilkeleri artık şu anda önizleme aşamasında olan [paylaşılan kanalları](/MicrosoftTeams/shared-channels) destekliyor. Paylaşılan kanallar, saklama ayarlarını üst kanaldan devralır.
+> Bekletme ilkeleri [paylaşılan kanalları destekler](/MicrosoftTeams/shared-channels). Paylaşılan kanallar, saklama ayarlarını üst kanaldan devralır.
 
 Teams sohbetleri iletileri, kanal iletileri ve özel kanal iletileri Teams için bekletme ilkeleri kullanılarak silinebilir ve iletilerdeki metinlere ek olarak, uyumluluk nedenleriyle aşağıdaki öğeler korunabilir: Ekli resimler, tablolar, köprü metni bağlantıları, diğer Teams iletilerine ve dosyalarına bağlantılar ve [kart içeriği](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Sohbet iletileri ve özel kanal iletileri konuşmadaki kişilerin tüm adlarını, kanal iletileri ise ekip adını ve ileti başlığını (varsa) içerir. 
 

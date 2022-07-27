@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
-description: Office Eklentileri dağıtmak için Merkezi Dağıtım'ı kullanabilmek için kiracınızın ve kullanıcılarınızın gereksinimleri karşılayıp karşılamadığını belirleyin.
-ms.openlocfilehash: 3b6517724a89572f971710b8c455866ac44f587e
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+description: Office Eklentilerini dağıtmak için Merkezi Dağıtım'ı kullanabilmeniz için kiracınızın ve kullanıcılarınızın gereksinimleri karşılayıp karşılamadığını belirleyin.
+ms.openlocfilehash: f6dd5972dedebfa21d5770a789ae9477c8263801
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043318"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037610"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Eklentilerin Merkezi Dağıtımının kuruluşunuz için çalışıp çalışmadığını belirleme
 
@@ -35,45 +35,45 @@ Merkezi Dağıtım, çoğu müşterinin kuruluşunuzdaki kullanıcılara ve grup
 
 Merkezi Dağıtım şu avantajları sağlar:
 
-- Yönetici bir eklentiyi doğrudan bir kullanıcıya, bir grup aracılığıyla birden çok kullanıcıya veya kuruluştaki herkese dağıtabilir ve atayabilir (bilgi için yönetici gereksinimi bölümüne bakın).
+- Yönetici bir eklentiyi doğrudan bir kullanıcıya, bir grup aracılığıyla birden çok kullanıcıya veya kuruluştaki herkese dağıtabilir ve atayabilir (bilgi için Yönetici gereksinim bölümüne bakın).
 - İlgili Office uygulaması başlatıldığında eklenti otomatik olarak indirilir. Eklenti eklenti komutlarını destekliyorsa, eklenti otomatik olarak Office uygulamasının içindeki şeritte görünür.
-- Yönetici eklentiyi kapatır veya silerse veya kullanıcı Azure Active Directory veya eklentinin atandığı bir gruptan kaldırılırsa, eklentiler artık kullanıcılar için görünmez.
+- Yönetici eklentiyi kapatır veya silerse ya da kullanıcı Azure Active Directory'den veya eklentinin atandığı bir gruptan kaldırılırsa eklentiler artık kullanıcılar için görünmez.
 
-Merkezi Dağıtım, Mac ve Çevrimiçi Office uygulamaları Windows üç masaüstü platformlarını destekler. Merkezi Dağıtım ayrıca iOS ve Android (Yalnızca Mobil Eklentiler Outlook) destekler.
+Merkezi Dağıtım üç masaüstü platformlarını destekler Windows, Mac ve Çevrimiçi Office uygulamaları. Merkezi Dağıtım, iOS ve Android'i de destekler (Yalnızca Outlook Mobile Eklentileri).
 
 Tüm kullanıcılar için eklentinin istemcide görünmesi 24 saati bulabilir.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Eklentilerin merkezi dağıtımı için kullanıcıların Microsoft 365 İş lisansları (Business Basic, Business Standard, Business Premium), Office 365 Kurumsal lisansları (E1/E3/E5/F3) veya Microsoft 365 Kurumsal lisansları (E3/E5/F3) kullanmaları (ve Office  Office 365 Eğitim lisanslarını (A1/A3/A5) veya Microsoft 365 Eğitim lisanslarını (A3/A5) kullanarak ve Exchange Online ve etkin Exchange Online posta kutularına sahip olur. Abonelik dizininizin Azure Active Directory içinde veya federasyonda olması gerekir.
-Aşağıda Office ve Exchange için belirli gereksinimleri görüntüleyebilir veya [Merkezi Dağıtım Uyumluluk Denetleyicisi'ni](#centralized-deployment-compatibility-checker) kullanabilirsiniz.
+Eklentilerin merkezi dağıtımı, kullanıcıların Microsoft 365 İş lisanslarını (business basic, business standard, business premium), Office 365 Kurumsal lisanslarını (E1/E3/E5/F3) veya Microsoft 365 Kurumsal lisanslarını (E3/E5/F3) (ve kuruluş kimliklerini kullanarak Office'te oturum açmalarını) kullanmasını gerektirir, Office 365 Eğitim  lisanslar (A1/A3/A5) veya Microsoft 365 Eğitim lisansları (A3/A5) ve Exchange Online ve etkin Exchange Online posta kutularına sahiptir. Abonelik dizininizin Azure Active Directory'de veya federasyonda olması gerekir.
+Office ve Exchange için belirli gereksinimleri aşağıda görüntüleyebilir veya [Merkezi Dağıtım Uyumluluk Denetleyicisi'ni](#centralized-deployment-compatibility-checker) kullanabilirsiniz.
 
 Merkezi Dağıtım şunları desteklemez:
 
 - Office MSI sürümünü hedefleyen eklentiler (Outlook 2016 hariç)
 - Şirket içi dizin hizmeti
-- Exchange Şirket İçi Posta Kutusuna eklenti dağıtımı
+- Şirket İçi Exchange Posta Kutusuna eklenti dağıtımı
 - SharePoint'e eklenti dağıtımı
-- uygulamaları Teams
+- Teams uygulamaları
 - Bileşen Nesne Modeli (COM) veya Office için Visual Studio Araçları (VSTO) eklentilerinin dağıtımı.
-- SKU'lar gibi Exchange Online içermeyen Microsoft 365 dağıtımları: İş için Microsoft 365 Uygulamaları ve Enterprise için Microsoft 365 Uygulamaları.
+- SKU'lar: İş için Microsoft 365 Uygulamaları ve Kurumsal için Microsoft 365 Uygulamaları gibi Exchange Online içermeyen Microsoft 365 dağıtımları.
 
 ### <a name="office-requirements"></a>Office Gereksinimleri
 
 - Word, Excel ve PowerPoint eklentileri için kullanıcılarınızın aşağıdakilerden birini kullanıyor olması gerekir:
-  - Windows bir cihazda, Microsoft 365 İş lisanslarının Sürüm 1704 veya üzeri (Business Basic, Business Standard, Business Premium), Office 365 Kurumsal lisansları (E1/E3/E5/F3) veya Microsoft 365 Kurumsal lisansları (E3/E5/F3).
+  - Bir Windows cihazında, Microsoft 365 İş lisanslarının Sürüm 1704 veya üzeri (business basic, business standard, business premium), Office 365 Kurumsal lisansları (E1/E3/E5/F3) veya Microsoft 365 Kurumsal lisansları (E3/E5/F3).
   - Mac'te Sürüm 15.34 veya üzeri.
 
-- Outlook için kullanıcılarınızın aşağıdakilerden birini kullanıyor olması gerekir:
-  - Microsoft 365 business lisanslarının (Business Basic, Business Standard, Business Premium), Office 365 Kurumsal lisanslarının (E1/E3/E5/F3) veya Microsoft 365 Kurumsal lisanslarının (E3/E5/F3) 1701 veya sonraki sürümleri.
+- Outlook için, kullanıcılarınızın aşağıdakilerden birini kullanıyor olması gerekir:
+  - Microsoft 365 İş lisanslarının (business basic, business standard, business premium), Office 365 Kurumsal lisanslarının (E1/E3/E5/F3) veya Microsoft 365 Kurumsal lisanslarının (E3/E5/F3) 1701 veya sonraki sürümleri.
   - Office Professional Plus 2019 veya Office Standard 2019 sürümü 1808 veya üzeri.
   - Office Professional Plus 2016 (MSI) veya Office Standard 2016 (MSI) sürüm 16.0.4494.1000 veya üzeri\*
   - Office Professional Plus 2013 (MSI) veya Office Standard 2013 (MSI) sürümü 15.0.4937.1000 veya üzeri\*
   - Office Mac 2016 Sürüm 16.0.9318.1000 veya üzeri
-- iOS için Outlook mobil sürüm 2.75.0 veya üzeri
-- Android için Outlook mobil sürüm 2.2.145 veya üzeri
+- iOS için Outlook Mobile'ın 2.75.0 veya üzeri sürümü
+- Android için Outlook Mobile'ın 2.2.145 veya üzeri sürümü
 
-    *Outlook MSI sürümleri, yönetici tarafından yüklenen eklentileri "Eklentilerim" bölümünde değil uygun Outlook şeridinde gösterir.
+    *Outlook'un MSI sürümleri, yönetici tarafından yüklenen eklentileri "Eklentilerim" bölümünde değil, uygun Outlook şeridinde gösterir.
 
 ### <a name="exchange-online-requirements"></a>Exchange Online gereksinimleri
 
@@ -86,7 +86,7 @@ Kullanılan mevcut yapılandırmanın hangisi olduğunu öğrenmek için kurulu�
 Bir eklentiyi Merkezi Dağıtım aracılığıyla dağıtmak için, kuruluşta Genel yönetici veya Exchange yöneticisi olmanız gerekir.
 
 > [!NOTE]
-> Uygulama **Yöneticisi** rolü eklendiğinde veya **Uygulama Kayıtları** özelliği aşağıdaki görüntüde gösterildiği gibi Azure Active Directory yönetim merkezinde true olarak ayarlandıysa Exchange yöneticisi bir eklenti dağıtabilir:
+> **Uygulama Yöneticisi** rolü eklendiğinde veya Uygulama **Kayıtları** özelliği aşağıdaki görüntüde gösterildiği gibi Azure Active Directory yönetim merkezinde true olarak ayarlandıysa Exchange yöneticisi bir eklenti dağıtabilir:
 >
 > ![Görüntü](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
@@ -124,14 +124,14 @@ Aracın çalışması bittiğinde, virgülle ayrılmış dosya (.csv) biçiminde
 - Office Etkinleştirildi - Office'i etkinleştirdiyse
 - Desteklenen Posta Kutusu - OAuth özellikli bir posta kutusu kullanıyorsa
 
-Microsoft 365 raporlarınızda gerçek kullanıcı adları yerine anonim kullanıcı adları gösteriliyorsa, Microsoft 365 yönetim merkezi raporlar ayarını değiştirerek bu sorunu düzeltin. Ayrıntılı adımlar için bkz. [Microsoft 365 raporlar gerçek kullanıcı adları yerine anonim kullanıcı adlarını gösterir](/office365/troubleshoot/miscellaneous/reports-show-anonymous-user-name).
+Microsoft 365 raporlarınızda gerçek kullanıcı adları yerine anonim kullanıcı adları gösteriliyorsa, Microsoft 365 yönetim merkezi raporlar ayarını değiştirerek bu sorunu düzeltin. Ayrıntılı adımlar için bkz. [Microsoft 365 raporları gerçek kullanıcı adları yerine anonim kullanıcı adlarını gösteriyor](/office365/troubleshoot/miscellaneous/reports-show-anonymous-user-name).
 
 > [!NOTE]
 > Merkezi Dağıtım PowerShell modülü kullanılırken çok faktörlü kimlik doğrulaması desteklenmez. Modül yalnızca Temel kimlik doğrulaması ile çalışır.
 
 ## <a name="user-and-group-assignments"></a>Kullanıcı ve grup atamaları
 
-Merkezi Dağıtım özelliği şu anda Microsoft 365 grupları, dağıtım listeleri ve güvenlik grupları dahil olmak üzere Azure Active Directory tarafından desteklenen grupların çoğunu destekler.
+Merkezi Dağıtım özelliği şu anda Microsoft 365 grupları, dağıtım listeleri, dinamik gruplar ve güvenlik grupları dahil olmak üzere Azure Active Directory tarafından desteklenen grupların çoğunu destekler.
 
 > [!NOTE]
 > Posta hesabı etkin olmayan güvenlik grupları şu anda desteklenmemektedir.
@@ -152,11 +152,11 @@ Grubun, herhangi bir grubun üyesi olup olmadığını öğrenmek için grubu ç
 
 ![Outlook kişi kartının Üyelik sekmesi.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
-Alternatif olarak, bir grup içindeki grupların listesini bulmak için sorguları çalıştırmak için Azure Active Directory Graph API kullanabilirsiniz. Daha fazla bilgi için bkz[. Gruplarda işlemler| başvuru Graph API](/previous-versions/azure/ad/graph/api/groups-operations).
+Alternatif olarak, bir grup içindeki grupların listesini bulmak üzere sorgu çalıştırmak için Azure Active Directory Graph API kullanabilirsiniz. Daha fazla bilgi için bkz[. Gruplarda işlemler| başvuru Graph API](/previous-versions/azure/ad/graph/api/groups-operations).
 
 ### <a name="contacting-microsoft-for-support"></a>Destek için Microsoft'a başvurma
 
-Siz veya kullanıcılarınız, merkezi olarak dağıtılan web için Office uygulamaları (Word, Excel vb.) kullanırken eklentiyi yüklerken sorunlarla karşılaşırsanız Microsoft desteğine başvurmanız gerekebilir ([nasıl yapılacağını öğrenin](../../business-video/get-help-support.md)). Destek biletinde Microsoft 365 ortamınız hakkında aşağıdaki bilgileri sağlayın.
+Siz veya kullanıcılarınız, merkezi olarak dağıtılan Web için Office uygulamalarını (Word, Excel vb.) kullanırken eklentiyi yüklerken sorunlarla karşılaşırsanız Microsoft desteğine başvurmanız gerekebilir ([nasıl yapılacağını öğrenin](../../business-video/get-help-support.md). Destek biletinde Microsoft 365 ortamınız hakkında aşağıdaki bilgileri sağlayın.
 
 |Ortam|Hata ayıklama bilgisi|
 |---|---|
@@ -168,4 +168,4 @@ Siz veya kullanıcılarınız, merkezi olarak dağıtılan web için Office uygu
 [Yönetim merkezinde eklentileri dağıtma](../manage/manage-deployment-of-add-ins.md) (makale)\
 [Yönetim merkezinde eklentileri yönetme](manage-addins-in-the-admin-center.md) (makale)\
 [Merkezi Dağıtım SSS](../manage/centralized-deployment-faq.yml) (makale)\
-[İş kullanıcıları için Microsoft 365 en son Office istemcisine](../setup/upgrade-users-to-latest-office-client.md) yükseltme (makale)
+[İş için Microsoft 365 kullanıcılarınızı en son Office istemcisine yükseltin](../setup/upgrade-users-to-latest-office-client.md) (makale)

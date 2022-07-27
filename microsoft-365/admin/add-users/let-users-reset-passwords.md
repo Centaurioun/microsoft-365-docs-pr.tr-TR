@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Kullanıcıların self servis parola sıfırlama aracını kullanarak kendi parolalarını sıfırlamasına izin vermek için Microsoft 365 yönetim merkezi bir ilke ayarlamayı öğrenin.
-ms.openlocfilehash: 44cbcc5404727e22c62fc6345e03682ff0961543
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 917f04b7472204be4228d802975902c42ab8fce0
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601960"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037237"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Kullanıcıların kendi parolalarını sıfırlamasına izin verme
 
@@ -51,9 +51,10 @@ Microsoft 365 yöneticisi olarak, kullanıcıların [self servis parola sıfırl
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
 1. Microsoft 365 yönetim merkezi sol gezinti bölmesinde **Ayarlar** > **Kuruluş ayarları'nı** ve ardından <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Güvenlik & gizlilik'i**</a> seçin.
-1. **Kişilerinizin kendi parolalarını sıfırlamasına izin ver'in** altında **Azure AD yönetim merkezi'ni** seçin.
+1. **Self servis parola sıfırlama'nın** altında **, self servis parola sıfırlamayı açmak için Azure portal git'i** seçin.
 1. Sol gezinti bölmesinde **Kullanıcılar'ı** seçin ve ardından **Kullanıcılar - tüm kullanıcılar** sayfasında **Parola sıfırlama'yı** seçin.
 1. Self servis parola sıfırlamayı etkinleştirmek için **Tümü'ne** ve ardından **Kaydet'e** tıklayın.
+1. Sol gezinti bölmesinde **Kimlik doğrulama yöntemleri'ni** seçin, **sıfırlamak için gereken yöntem sayısı'nı** ve **kullanıcıların kullanabilecekleri istenen Yöntemler'i** ve ardından **Kaydet'i** seçin. 
 
 Bu videoyu faydalı bulduysanız, [küçük işletmelere ve Microsoft 365’i ilk kez kullananlara yönelik eğitim serisinin tamamına göz atın](../../business-video/index.yml).
  
@@ -82,8 +83,10 @@ Bu adımlar, işletmenizdeki herkes için self servis parola sıfırlamayı aça
 4. **Self servis parola sıfırlama'nın** altında **, self servis parola sıfırlamayı açmak için Azure portal git'i** seçin.
 
 5. **Özellikler** sayfasında **Tümü'ne** tıklayarak işletmenizdeki herkes için etkinleştirin ve ardından **Kaydet'i** seçin.
+
+6. Sol gezinti bölmesinde **Kimlik doğrulama yöntemleri'ni** seçin, **sıfırlamak için gereken yöntem sayısı'nı** ve **kullanıcıların kullanabilecekleri istenen Yöntemler'i** ve ardından **Kaydet'i** seçin. 
   
-6. Kullanıcılarınız oturum açtıklarında, gelecekte parolalarını sıfırlamalarına yardımcı olacak ek kişi bilgilerini girmeleri istenir.
+7. Kullanıcılarınız oturum açtıklarında, gelecekte parolalarını sıfırlamalarına yardımcı olacak ek kişi bilgilerini girmeleri istenir.
 
 ## <a name="related-content"></a>İlgili içerik
 

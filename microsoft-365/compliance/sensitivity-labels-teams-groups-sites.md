@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint ve Microsoft Teams sitelerindeki ve Microsoft 365 gruplarındaki içeriği korumak için duyarlılık etiketlerini kullanın.
-ms.openlocfilehash: 820ed3e8c629056165661c90ec9cd612222cdbbf
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: d05c2e5a7dfb1fc0c7da1bcaced640bf7c20d3e7
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882285"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037654"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Microsoft Teams, Microsoft 365 grupları ve SharePoint sitelerindeki içeriği korumak için duyarlılık etiketlerini kullanma
 
@@ -59,7 +59,7 @@ Kapsayıcılar için duyarlılık etiketlerini etkinleştirip yapılandırdıkta
 ![SharePoint'ten ekip sitesi oluştururken duyarlılık etiketi.](../media/sensitivity-labels-new-team-site.png)
 
 > [!NOTE]
-> Kapsayıcılar için duyarlılık etiketleri, şu anda önizleme aşamasında olan [Teams paylaşılan kanallarını](/MicrosoftTeams/shared-channels) destekler. Bir ekibin paylaşılan kanalları varsa, duyarlılık etiketi ayarlarını üst ekibinden otomatik olarak devralır ve bu etiket kaldırılamaz veya başka bir etiketle değiştirilemez.
+> Kapsayıcılar için duyarlılık etiketleri [, Teams paylaşılan kanallarını destekler](/MicrosoftTeams/shared-channels). Bir ekibin paylaşılan kanalları varsa, duyarlılık etiketi ayarlarını üst ekibinden otomatik olarak devralır ve bu etiket kaldırılamaz veya başka bir etiketle değiştirilemez.
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>Kapsayıcılar için duyarlılık etiketlerini etkinleştirme ve etiketleri eşitleme
 

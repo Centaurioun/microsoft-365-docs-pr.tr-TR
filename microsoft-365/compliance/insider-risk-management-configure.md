@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: fc812b399cb6c80dfd41cc5ff4840a8288daac1f
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 334e94844c16a386d2b96cd34627877c7584a6bc
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787484"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037720"
 ---
 # <a name="get-started-with-insider-risk-management"></a>İçeriden risk yönetimini kullanmaya başlama
 
@@ -101,7 +101,7 @@ Insider risk yönetimiyle çalışırken bu rol grubu seçenekleri ve çözüm e
 |Denetim günlüklerini görüntüleme & dışarı aktarma|Evet|Hayır|Hayır|Hayır|Evet|
 
 > [!IMPORTANT]
-> *Insider Risk Management* veya *Insider Risk Management Yönetici* rol gruplarında her zaman en az bir kullanıcınız olduğundan emin olun (seçtiğiniz seçeneğe bağlı olarak), kuruluşunuzdan ayrılan belirli kullanıcılar için insider risk yönetimi yapılandırmanızın 'sıfır yönetici' senaryosuna girmemesini sağlayın.
+> Yerleşik *Insider Risk Yönetimi* veya *Insider Risk Yönetimi Yönetici* rol gruplarında her zaman en az bir kullanıcınız olduğundan emin olun (seçtiğiniz seçeneğe bağlı olarak), kuruluşunuzdan ayrılan belirli kullanıcılar için insider risk yönetimi yapılandırmanızın 'sıfır yönetici' senaryosuna girmemesi için.
 
 Aşağıdaki rollerin üyeleri kullanıcıları insider risk yönetimi rol gruplarına atayabilir ve *Insider Risk Management Yönetici* rol grubuna dahil olan çözüm izinlerine sahip olabilir:
 

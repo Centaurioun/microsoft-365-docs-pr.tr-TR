@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Kuruluşunuzu parola saldırılarına karşı daha güvenli hale getirin ve yaygın parolaları yasaklayın ve risk tabanlı çok faktörlü kimlik doğrulamasını etkinleştirin.
-ms.openlocfilehash: 474dbaf6877c3b4da9cd9d345e53cd95b2f42452
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: e99ca9a878ef6a37b2a50dbf27c565661d52ad0e
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695582"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037500"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Microsoft 365 parolaları için parola ilkesi önerileri
 
@@ -61,6 +61,7 @@ Microsoft 365 parolaları hakkında daha fazla bilgi için bkz:
 
 Daha güvenli bir parola sisteminin birincil hedefi, parola çeşitliliğidir. Parola ilkenizin birçok farklı ve tahmin etmesi zor parolalar içermesi gerekir. Aşağıda, kuruluşunuzun mümkün olduğunca güvenli tutulması için bazı öneriler bulabilirsiniz.
   
+
 - Sekiz karakterlik minimum uzunluk gereksinimini koruma
 
 - Karakter derlemesi gerektirmeyin. Örneğin, \*&amp;(^%$ gibi

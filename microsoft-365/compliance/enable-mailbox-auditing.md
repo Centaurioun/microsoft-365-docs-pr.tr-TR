@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Posta kutusu denetim günlüğü Microsoft 365'te varsayılan olarak açıktır ('varsayılan posta kutusu denetimi' veya 'posta kutusu denetimi varsayılan olarak açık' olarak da adlandırılır). Bu yapılandırma, posta kutusu sahipleri, temsilciler ve yöneticiler tarafından gerçekleştirilen belirli eylemlerin otomatik olarak posta kutusu denetim günlüğüne kaydedildiği ve burada posta kutusunda gerçekleştirilen etkinlikleri arayabileceğiniz anlamına gelir.
-ms.openlocfilehash: c59e1e552f6598287c10adfb2661ec4d358529f9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: edf73e41d5f8f2f977d9f1256ac9a2299be182d6
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627403"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037215"
 ---
 # <a name="manage-mailbox-auditing"></a>Posta kutusu denetimini yönetme
 
@@ -116,7 +116,6 @@ Aşağıdaki tabloda, kullanıcı posta kutuları ve paylaşılan posta kutular�
 |**SoftDelete**|İleti kalıcı olarak silinmiş veya Silinmiş Öğeler klasöründen silinmiş. Geçici olarak silinen öğeler Kurtarılabilir Öğeler klasörüne taşınır.|![Onay işareti.](../media/checkmark.png)<sup>\*</sup>|![Onay işareti.](../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../media/checkmark.png)<sup>\*</sup>|
 |**Güncelleştirme**|İleti veya özelliklerinden herhangi biri değiştirildi.|![Onay işareti.](../media/checkmark.png)<sup>\*</sup>|![Onay işareti.](../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|Posta kutusuna takvim temsilcisi atandı. Takvim temsilcisi, aynı kuruluştaki başka birine posta kutusu sahibinin takvimini yönetme izni verir.|![Onay işareti.](../media/checkmark.png)<sup>\*</sup>||![Onay işareti](../media/checkmark.png)<sup>\*</sup>|
-|**UpdateComplianceTag**|Posta öğesine farklı bir bekletme etiketi uygulanır (öğeye yalnızca bir bekletme etiketi atanabilir).|![Onay işareti.](../media/checkmark.png)|![Onay işareti](../media/checkmark.png)|![Onay işareti](../media/checkmark.png)|
 |**UpdateFolderPermissions**|Klasör izni değiştirildi. Klasör izinleri, kuruluşunuzdaki hangi kullanıcıların bir posta kutusundaki klasörlere ve bu klasörlerde bulunan iletilere erişebileceğini denetler.|![Onay işareti.](../media/checkmark.png)<sup>\*</sup>|![Onay işareti.](../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateInboxRules**|Gelen kutusu kuralı eklendi, kaldırıldı veya değiştirildi. Gelen Kutusu kuralları, belirtilen koşullara göre kullanıcının Gelen Kutusu'ndaki iletileri işlemek ve bir kuralın koşulları karşılandığında iletiyi belirtilen klasöre taşıma veya iletiyi silme gibi eylemler yapmak için kullanılır.|![Onay işareti.](../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../media/checkmark.png)<sup>\*</sup>|
 
@@ -139,7 +138,7 @@ Microsoft 365 Grubu posta kutusuna Tam Erişim izni olan bir yöneticinin temsil
 |**GöndermeLer**|SendAs izni kullanılarak bir ileti gönderildi.|![Onay işareti](../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|SendOnBehalf izni kullanılarak bir ileti gönderildi.|![Onay işareti](../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|İleti kalıcı olarak silinmiş veya Silinmiş Öğeler klasöründen silinmiş. Geçici olarak silinen öğeler Kurtarılabilir Öğeler klasörüne taşınır.|![Onay işareti.](../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../media/checkmark.png)<sup>\*</sup>|
-|**Güncelleştirme**|İleti veya özelliğinden herhangi biri değiştirildi.|![Onay işareti.](../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../media/checkmark.png)<sup>\*</sup>|
+|**Güncelleştirme**|İleti veya özelliklerinden herhangi biri değiştirildi.|![Onay işareti.](../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../media/checkmark.png)<sup>\*</sup>|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>Her oturum açma türü için varsayılan posta kutusu eylemlerinin günlüğe kaydedildiğini doğrulayın
 

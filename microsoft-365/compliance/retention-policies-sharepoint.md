@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 saklamanın SharePoint ve OneDrive'da nasıl çalıştığını, kuruluşunuz için verilerin otomatik olarak elde tutulmasını veya silinmesini yönetmek için bekletme ilkelerini ve bekletme etiketlerini kullanmayı öğrenin.
-ms.openlocfilehash: 2acfeb8dd370bc3e87f3efb25290434edc2a0152
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d3648fd7ce86fbf9c3c81a8c0609598dbe2a2067
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942924"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037172"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint ve OneDrive için bekletme hakkında bilgi edinin
 
@@ -144,11 +144,15 @@ Yalnızca sayfalar ve bölümler belirttiğiniz bekletme ayarlarından etkilenir
 
 Sürüm oluşturma, SharePoint ve OneDrive'daki tüm belge listelerinin ve kitaplıklarının bir özelliğidir. Varsayılan olarak, sürüm oluşturma en az 500 ana sürümü korur, ancak bu sınırı artırabilirsiniz. Daha fazla bilgi için bkz [. Liste veya kitaplık için sürüm oluşturmayı etkinleştirme ve yapılandırma](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) ve [Listelerde ve kitaplıklarda sürüm oluşturma nasıl çalışır](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247)?
   
-Sürümleri olan bir belge bu içeriği korumak için bekletme ayarlarına tabi olduğunda, Koruma Bekletme kitaplığına kopyalanan sürümler ayrı bir öğe olarak bulunur. Bekletme ayarları saklama süresinin sonunda silinecek şekilde yapılandırıldıysa:
+Sürümleri olan bir belge bu içeriği korumak için bekletme ayarlarına tabi olduğunda, performansı artırmak için Temmuz 2022'de sürümlerin Koruma Bekletme kitaplığında nasıl depolandığı değişti. Şu anda kiracılara dağıtılan dosyanın tüm sürümleri, Koruma Bekletme kitaplığındaki tek bir dosyada tutulur. Değişiklik öncesinde sürümler Koruma Saklama kitaplığına ayrı dosyalar olarak kopyalandı ve değişiklik sonrasında ayrı dosyalar olarak kaldı.
+
+Bekletme ayarları saklama süresinin sonunda silinecek şekilde yapılandırıldıysa:
 
 - Bekletme süresi içeriğin oluşturulduğu zamana bağlıysa, her sürüm özgün belgeyle aynı sona erme tarihine sahiptir. Özgün belgenin ve sürümlerinin tümü aynı anda sona erer.
 
-- Saklama süresi içeriğin en son ne zaman değiştirildiğine bağlıysa, özgün belgenin bu sürümü oluşturmak için ne zaman değiştirildiğine bağlı olarak her sürümün kendi sona erme tarihi vardır. Özgün belgenin ve sürümlerinin süresi birbirinden bağımsız olarak dolar.
+- Saklama süresi, içeriğin en son ne zaman değiştirildiğine bağlıysa:
+    - **Dosyanın tüm sürümlerinin Koruma Bekletme kitaplığındaki tek bir dosyada tutulduğu değişiklik** sonrasında: Her sürüm, belgenin son sürümüyle aynı son kullanma tarihine sahiptir. Belgenin son sürümünün ve sürümlerinin tümü aynı anda sona erer.
+    - **Sürümlerin Koruma Bekletme kitaplığına ayrı dosyalar olarak kopyalandığı değişiklik öncesinde**: Her sürümün, özgün belgenin o sürümü oluşturmak için ne zaman değiştirildiğine bağlı olarak kendi sona erme tarihi vardır. Özgün belgenin ve sürümlerinin süresi birbirinden bağımsız olarak dolar.
 
 Bekletme eylemi belgeyi silmek olduğunda, Koruma Bekletme kitaplığında bulunmayan tüm sürümler geçerli sürüme göre aynı anda silinir.
 
