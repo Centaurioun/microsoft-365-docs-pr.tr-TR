@@ -21,7 +21,7 @@ recommendations: false
 description: AB banka kartı numarası hassas bilgi türü varlık tanımı.
 ms.openlocfilehash: 53e7ea3475786032d2871092e3c7e6c39697958c
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66949021"
@@ -36,22 +36,22 @@ ms.locfileid: "66949021"
 
 Karmaşık ve sağlam desen
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_eu_debit_card` , desenle eşleşen içeriği bulur.
+- İşlev `Func_eu_debit_card`, desenle eşleşen içeriği bulur.
 - Aşağıdakilerden en az biri doğrudur:
-    - 'den `Keyword_eu_debit_card` bir anahtar sözcük bulunur.
-    - 'den `Keyword_card_terms_dict` bir anahtar sözcük bulunur.
-    - 'den `Keyword_card_security_terms_dict` bir anahtar sözcük bulunur.
-    - 'den `Keyword_card_expiration_terms_dict` bir anahtar sözcük bulunur.
-    - İşlev `Func_expiration_date` doğru tarih biçiminde bir tarih bulur.
-- Sağlama toplamı geçer.
+    - `Keyword_eu_debit_card` içinden bir anahtar sözcük bulundu.
+    - `Keyword_card_terms_dict` içinden bir anahtar sözcük bulundu.
+    - `Keyword_card_security_terms_dict` içinden bir anahtar sözcük bulundu.
+    - `Keyword_card_expiration_terms_dict` içinden bir anahtar sözcük bulundu.
+    - İşlev `Func_expiration_date`, doğru tarih biçiminde bir tarih bulur.
+- Sağlama toplamı başarılı.
 
 ```xml
     <!-- EU Debit Card Number -->
@@ -77,17 +77,17 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamı�
 - kart numarası
 - kart no.
 - güvenlik numarası
-- Cc #
+- cc#
 
 ### <a name="keyword_card_terms_dict"></a>Keyword_card_terms_dict
 
-- acct nbr
-- acct num
-- acct no
+- hesap numarası
+- hesap numarası
+- hesap numarası
 - american express
 - americanexpress
 - americano espresso
-- Amex
+- amex
 - atm kartı
 - atm kartları
 - atm kaart
@@ -98,17 +98,17 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamı�
 - bancontact
 - banka kartı
 - bankkaart
-- kart tutucu
-- kart tutucular
+- kart sahibi
+- kart sahipleri
 - kart numarası
 - kart numarası
 - kart numaraları
 - kart türü
 - cardano numerico
-- Kart
-- Kart
-- kartsayısı
-- kartsayıları
+- cardholder
+- cardholders
+- cardnumber
+- cardnumbers
 - carta bianca
 - carta credito
 - carta di credito
@@ -127,45 +127,45 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamı�
 - cartão de crédito
 - cartão de debito
 - cartão de débito
-- Cb
-- Ccn
-- onay kartı
-- onay kartları
-- onay kartı
-- onay kartları
+- cb
+- ccn
+- çek kartı
+- çek kartları
+- checkcard
+- checkcards
 - chequekaart
-- Cirrus
+- cirrus
 - cirrus-edc-maestro
 - controlekaart
 - controlekaarten
 - kredi kartı
 - kredi kartları
-- kredi kartı
-- kredi kartları
+- creditcard
+- creditcards
 - debetkaart
 - debetkaarten
 - banka kartı
 - banka kartları
-- banka kartı
-- banka kartları
+- debitcard
+- debitcards
 - debito automatico
 - diners club
 - dinersclub
-- Keşfetmek
-- kartı bulma
-- kartları bulma
+- discover
+- discover card
+- discover cards
 - discovercard
-- keşif kartları
+- discovercards
 - débito automático
-- Edc
+- edc
 - eigentümername
 - avrupa banka kartı
 - hoofdkaart
 - hoofdkaarten
-- viaggio'da
-- japon kart bürosu
+- in viaggio
+- japanese card bureau
 - japanse kaartdienst
-- Jcb
+- jcb
 - kaart
 - kaart num
 - kaartaantal
@@ -183,25 +183,25 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamı�
 - kreditkarteninstitut
 - kreditkartennummer
 - kreditkartentyp
-- Maestro
-- ana kart
-- ana kartlar
-- Mastercard
-- Mastercard
-- Mc
-- bay nakit
+- maestro
+- master card
+- master cards
+- mastercard
+- mastercards
+- mc
+- mister cash
 - n carta
-- Carta
+- carta
 - no de tarjeta
-- hayır cartao
+- no do cartao
 - no do cartão
-- No. de tarjeta
-- No. cartao yapma
-- No. do cartão
+- no. de tarjeta
+- no. do cartao
+- no. do cartão
 - nr carta
-- Nr. Carta
+- nr. carta
 - numeri di scheda
-- çok sayıda carta
+- numero carta
 - numero de cartao
 - numero de carte
 - numero de cartão
@@ -209,7 +209,7 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamı�
 - numero della carta
 - numero di carta
 - numero di scheda
-- çok sayıda do cartao
+- numero do cartao
 - numero do cartão
 - numéro de carte
 - nº carta
@@ -236,14 +236,14 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamı�
 - schede matrici
 - scoprono la scheda
 - scoprono le schede
-- Solo
+- solo
 - supporti di scheda
 - supporto di scheda
-- Anahtarı
+- switch
 - tarjeta atm
 - tarjeta credito
 - tarjeta de atm
-- tarjeta de credito
+- scoprono le schede
 - tarjeta de debito
 - tarjeta debito
 - tarjeta no
@@ -253,27 +253,27 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamı�
 - scheda
 - v pay
 - v-pay
-- Vize
+- visa
 - visa plus
-- visa elektron
-- Visto
+- visa electron
+- visto
 - visum
 - vpay
 
 ### <a name="keyword_card_security_terms_dict"></a>Keyword_card_security_terms_dict
 
 - kart kimlik numarası
-- kart doğrulama
+- kart doğrulaması
 - cardi la verifica
-- Cid
+- cid
 - cod seg
 - cod seguranca
 - cod segurança
 - cod sicurezza
-- Cod. Sönmez
-- Cod. seguranca
-- Cod. segurança
-- Cod. sicurezza
+- cod. seg
+- cod. seguranca
+- cod. segurança
+- cod. sicurezza
 - codice di sicurezza
 - codice di verifica
 - codigo
@@ -283,10 +283,10 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamı�
 - cryptogram
 - cryptogramme
 - cv2
-- Cvc
+- cvc
 - cvc2
-- Cvn
-- Cvv
+- cvn
+- cvv
 - cvv2
 - cód seguranca
 - cód segurança
@@ -297,14 +297,14 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamı�
 - código de segurança
 - de kaart controle
 - geeft nr uit
-- sorun yok
-- sorun numarası
+- düzenleme no
+- düzenleme numarası
 - kaartidentificatienummer
 - kreditkartenprufnummer
 - kreditkartenprüfnummer
 - kwestieaantal
-- No. dell'edizione
-- No. di sicurezza
+- no. dell'edizione
+- no. di sicurezza
 - numero de securite
 - numero de verificacao
 - numero dell'edizione
@@ -316,7 +316,7 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamı�
 - nº autorizzazione
 - número de verificação
 - perno il blocco
-- raptiye bloğu
+- pin engeli
 - prufziffer
 - prüfziffer
 - güvenlik kodu
@@ -349,13 +349,13 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamı�
 - de afloop
 - espira
 - espira
-- exp tarihi
+- son kullanma tarihi
 - exp datum
-- Sona erme
-- Sona er
-- Sona eri -yor
-- Bitiş
-- fecha de süre sonu
+- son kullanma
+- son kullanma
+- son kullanma
+- son kullanma
+- fecha de expiracion
 - fecha de venc
 - gultig bis
 - gultigkeitsdatum
@@ -363,10 +363,10 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamı�
 - gültigkeitsdatum
 - la scadenza
 - scadenza
-- değerli
+- valable
 - validade
 - valido hasta
-- Cesaret
+- valor
 - venc
 - vencimento
 - vencimiento

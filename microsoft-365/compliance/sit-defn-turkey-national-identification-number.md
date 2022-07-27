@@ -21,7 +21,7 @@ recommendations: false
 description: Türkiye ulusal kimlik numarası hassas bilgi türü varlık tanımı.
 ms.openlocfilehash: abc0dd10d1426763424fdd14bb56b9ea7d31da1b
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66989297"
@@ -36,20 +36,20 @@ ms.locfileid: "66989297"
 
 11 basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_Turkish_National_Id` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_Turkish_National_Id` bir anahtar sözcük bulunur.
+- İşlev `Func_Turkish_National_Id`, desenle eşleşen içeriği bulur.
+- `Keyword_Turkish_National_Id` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_Turkish_National_Id` , desenle eşleşen içeriği bulur.
+- İşlev `Func_Turkish_National_Id`, desenle eşleşen içeriği bulur.
 
 ```xml
 <!-- Turkish National Identity -->
@@ -69,6 +69,6 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 ### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
 - TC Kimlik No
-- TC Kimlik sn.
-- Vatandaşlık sn.
+- TC Kimlik numarası
+- Vatandaşlık numarası
 - Vatandaşlık no
