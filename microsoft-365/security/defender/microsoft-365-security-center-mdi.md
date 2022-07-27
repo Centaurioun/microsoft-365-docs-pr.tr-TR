@@ -2,7 +2,7 @@
 title: Microsoft 365 Defender'da Kimlik için Microsoft Defender
 description: Kimlik için Microsoft Defender Microsoft 365 Defender değişiklikleri hakkında bilgi edinin
 keywords: Microsoft 365 Defender, Kimlik için Microsoft Defender, NDI ile çalışmaya başlama
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 53c43c3196a22a97b2f11105f5145bd62229b137
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: efcb57a8ecc1b323f35f7b4fde9f4ebcee99e851
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66862324"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051129"
 ---
 # <a name="microsoft-defender-for-identity-in-microsoft-365-defender"></a>Microsoft 365 Defender'da Kimlik için Microsoft Defender
 

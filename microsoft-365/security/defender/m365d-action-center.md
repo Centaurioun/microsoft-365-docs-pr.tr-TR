@@ -12,6 +12,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,17 +23,14 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 631849997fffc0e4f90a9aa9d1850646b764a52a
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b82d40a1bc12b480851de3ecaec639717b3c00c7
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493497"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051810"
 ---
 # <a name="the-action-center"></a>İşlem merkezi
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **Şunlar için geçerlidir:**
 - Microsoft 365 Defender
@@ -68,28 +66,34 @@ Uygun izinlere ve aşağıdaki aboneliklerden birine veya daha fazlasına sahips
 > [!TIP]
 > Daha fazla bilgi için bkz [. Gereksinimler](./prerequisites.md).
 
+Onay bekleyen eylemler listesine iki farklı yolla gidebilirsiniz:
+
+- [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)adresine gidin veya
+- Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) Otomatik araştırma & yanıt **kartında İşlem Merkezi'nde Onayla'yı** seçin.
+
 ## <a name="using-the-action-center"></a>İşlem merkezini kullanma
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalına</a> gidin ve oturum açın. 
-2. Gezinti bölmesinde **İşlem merkezi'ni** seçin. 
 
-İşlem merkezini ziyaret ettiğinizde iki sekme görürsünüz: **Bekleyen eylemler** ve **Geçmiş**. Aşağıdaki tabloda, her sekmede görecekleri özetlemektedir:
+2. Gezinti bölmesinde **İşlem merkezi'ni** seçin. Alternatif olarak, Otomatik araştırma & yanıt **kartında İşlem Merkezi'nde Onayla'yı** seçin.
 
-|Sekme  |Açıklama  |
-|---------|---------|
-|**Bekleyen**     | Dikkat gerektiren eylemlerin listesini görüntüler. Eylemleri birer birer onaylayabilir veya reddedebilir ya da aynı eylem türüne sahipse (Karantina dosyası gibi) birden çok eylem seçebilirsiniz. <p>**İpucu**: Otomatik araştırmalarınızın zamanında tamamlayabilmesi için bekleyen eylemleri en kısa sürede gözden geçirip onayladığınızdan (veya reddettiğinizden) emin olun.       |
-|**Geçmiş**     | Aşağıdakiler gibi gerçekleştirilen eylemler için bir denetim günlüğü görevi görür: <br/>- Otomatik araştırmalar sonucunda gerçekleştirilen düzeltme eylemleri <br/>- Şüpheli veya kötü amaçlı e-posta iletileri, dosyaları veya URL'leri üzerinde gerçekleştirilen düzeltme eylemleri<br/>- Güvenlik operasyonları ekibiniz tarafından onaylanan düzeltme eylemleri <br/>- Canlı Yanıt oturumları sırasında uygulanan çalıştırılan komutlar ve düzeltme eylemleri<br/>- Virüsten korumanız tarafından gerçekleştirilen düzeltme eylemleri <p>Belirli eylemleri geri almak için bir yol sağlar (bkz. [Tamamlanan eylemleri geri alma](m365d-autoir-actions.md#undo-completed-actions)).        |
+3. **Bekleyen eylemler** ve **Geçmiş** sekmelerini kullanın. Aşağıdaki tabloda, her sekmede görecekleri özetlemektedir:
 
-İşlem merkezinde verileri özelleştirebilir, sıralayabilir, filtreleyebilir ve dışarı aktarabilirsiniz.
+   |Sekme  |Açıklama  |
+   |---------|---------|
+   |**Bekleyen**     | Dikkat gerektiren eylemlerin listesini görüntüler. Eylemleri birer birer onaylayabilir veya reddedebilir ya da aynı eylem türüne sahipse (Karantina dosyası gibi) birden çok eylem seçebilirsiniz. <br/><br/>Otomatik araştırmalarınızın zamanında tamamlayabilmesi için bekleyen eylemleri en kısa sürede gözden geçirip onayladığınızdan (veya reddettiğinizden) emin olun.       |
+   |**Geçmiş**     | Aşağıdakiler gibi gerçekleştirilen eylemler için bir denetim günlüğü görevi görür: <br/>- Otomatik araştırmalar sonucunda gerçekleştirilen düzeltme eylemleri <br/>- Şüpheli veya kötü amaçlı e-posta iletileri, dosyaları veya URL'leri üzerinde gerçekleştirilen düzeltme eylemleri<br/>- Güvenlik operasyonları ekibiniz tarafından onaylanan düzeltme eylemleri <br/>- Canlı Yanıt oturumları sırasında uygulanan çalıştırılan komutlar ve düzeltme eylemleri<br/>- Virüsten korumanız tarafından gerçekleştirilen düzeltme eylemleri<br/><br/>Belirli eylemleri geri almak için bir yol sağlar (bkz. [Tamamlanan eylemleri geri alma](m365d-autoir-actions.md#undo-completed-actions)).        |
 
-:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="İşlem merkezinin sıralama, filtreleme ve özelleştirme özellikleri" lightbox="../../media/m3d-action-center-columnsfilters.png":::
+4. İşlem merkezinde verileri özelleştirebilir, sıralayabilir, filtreleyebilir ve dışarı aktarabilirsiniz.
 
-- Öğeleri artan veya azalan düzende sıralamak için bir sütun başlığı seçin.
-- Geçen gün, hafta, 30 gün veya 6 aya ait verileri görüntülemek için zaman aralığı filtresini kullanın.
-- Görüntülemek istediğiniz sütunları seçin.
-- Her veri sayfasına eklenecek öğe sayısını belirtin.
-- Yalnızca görmek istediğiniz öğeleri görüntülemek için filtreleri kullanın.
-- Sonuçları bir .csv dosyasına aktarmak için **Dışarı Aktar'ı** seçin.
+   :::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="İşlem merkezinin sıralama, filtreleme ve özelleştirme özelliklerini gösteren ekran görüntüsü." lightbox="../../media/m3d-action-center-columnsfilters.png":::
+
+   - Öğeleri artan veya azalan düzende sıralamak için bir sütun başlığı seçin.
+   - Geçen gün, hafta, 30 gün veya 6 aya ait verileri görüntülemek için zaman aralığı filtresini kullanın.
+   - Görüntülemek istediğiniz sütunları seçin.
+   - Her veri sayfasına eklenecek öğe sayısını belirtin.
+   - Yalnızca görmek istediğiniz öğeleri görüntülemek için filtreleri kullanın.
+   - Sonuçları bir .csv dosyasına aktarmak için **Dışarı Aktar'ı** seçin.
 
 ## <a name="actions-tracked-in-the-action-center"></a>İşlem merkezinde izlenen eylemler
 

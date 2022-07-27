@@ -17,21 +17,21 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: dd4dfa5bf173f0109eb9da993a18930c5b67f667
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: e4210c2540e3d6d85dae38134148b5564d18fcf4
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771383"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051590"
 ---
 # <a name="what-is-microsoft-defender-for-business"></a>İş için Microsoft Defender nedir?
 
-İş için Defender, özellikle küçük ve orta ölçekli işletmeler (300 çalışana kadar) için tasarlanmış yeni bir uç nokta güvenlik çözümüdür. Bu uç nokta güvenlik çözümüyle, şirketinizin cihazları fidye yazılımlarına, kötü amaçlı yazılımlara, kimlik avına ve diğer tehditlere karşı daha iyi korunur. 
+İş için Defender, özellikle küçük ve orta ölçekli işletmeler (en fazla 300 çalışan) için tasarlanmış yeni bir uç nokta güvenlik çözümüdür. Bu uç nokta güvenlik çözümüyle, şirketinizin cihazları fidye yazılımlarına, kötü amaçlı yazılımlara, kimlik avına ve diğer tehditlere karşı daha iyi korunur. 
 
 Bu makalede, bu özellikler ve özellikler hakkında daha fazla bilgi edinmek için bağlantılar içeren İş için Defender'a nelerin dahil olduğu açıklanır.
 
 
-## <a name="video-enterprise-grade-protection-for-small-and-medium-sized-businesses"></a>Video: Küçük ve orta ölçekli işletmeler için kurumsal düzeyde koruma
+## <a name="video-enterprise-grade-protection-for-small--and-medium-sized-businesses"></a>Video: Küçük ve orta ölçekli işletmeler için kurumsal düzeyde koruma
 
 İş için Defender hakkında daha fazla bilgi edinmek için aşağıdaki videoyu izleyin: <br/><br/>
 

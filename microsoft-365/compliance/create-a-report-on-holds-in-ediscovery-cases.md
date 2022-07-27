@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: eBulma servis talepleri ile ilişkili tüm ayrı tutmalar hakkında bilgi içeren bir rapor oluşturmayı öğrenin.
-ms.openlocfilehash: 8f3c3d56e59508c061776643e743a1ff5c2fe2db
-ms.sourcegitcommit: 0a67e239549752fcdbcff660189f34b51ec273f5
+ms.openlocfilehash: 260dc24d0cdc2ef6cb21c1a3e6dada56e37722d2
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "66984057"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051106"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>eBulma durumlarında ayrı tutmalar hakkında rapor oluşturmak için betik kullanma
 
@@ -128,7 +128,7 @@ Güvenlik & Uyumluluğu PowerShell'e bağlandıktan sonra, bir sonraki adım kur
    }
    }
    else{
-   write-host "No hold policies found in case:" $cc.name -foregroundColor 'Yellow'
+    "No hold policies found in case:" $cc.name -foregroundColor 'Yellow'
    " "
    [string]$cc.name | out-file -filepath $noholdsfilepath -append
    }

@@ -4,7 +4,7 @@ description: Uç Nokta için Microsoft Defender'da RBAC cihaz gruplarının kole
 keywords: apis, graph api, desteklenen API'ler, get, RBAC, group
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,23 +17,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
 ms.custom: api
-ms.openlocfilehash: 528b80b3c40fd7df853190788abb347ed90a82e4
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: d1f4fd7af4161315b9b15fd5dd15be91d3713932
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825178"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051172"
 ---
-# <a name="get-kb-collection-api"></a>KB koleksiyonu API'sine sahip olun
+# <a name="get-kb-collection-api"></a>KB toplama API'sini al
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Şunlar için geçerlidir:** 
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Microsoft 365 grupları süre sonu ilkeleri hakkında bilgi edinin.
-ms.openlocfilehash: 41a179dc714063a66ba34aeb676321badfc5f947
-ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
+ms.openlocfilehash: 3fd7d5269d755d6b48429b425616d42157e3294c
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66720467"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050666"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 grup süre sonu ilkesi
 
@@ -64,7 +64,9 @@ Grup ömrü gün cinsinden belirtilir ve 180, 365 veya belirttiğiniz özel bir 
 
 Grubun sahibi yoksa, süre sonu e-postaları belirtilen yöneticiye gider.
 
-İlkeyi tüm gruplarınız için, yalnızca seçili gruplar için (en fazla 500) ayarlayabilir veya **Hiçbiri'ni** seçerek tamamen kapatabilirsiniz. Şu anda farklı gruplar için farklı ilkelere sahip olamazsınız.
+İlkeyi tüm gruplarınız için, yalnızca seçili gruplar için (en fazla 500) ayarlayabilir veya **Hiçbiri'ni** seçerek tamamen kapatabilirsiniz. **Hiçbiri'ni** seçtiğinizde etkin olan ve doğrulama için bekleyen tüm grupların son kullanma tarihi olmaz. Ancak, süresi dolmuş olan gruplar etkilenmez.
+
+Şu anda farklı gruplar için farklı ilkelere sahip olamazsınız.
 
 ![Azure Active Directory'de Grupların süre sonu ayarlarının ekran görüntüsü.](../media/azure-groups-expiration-settings.png)
 

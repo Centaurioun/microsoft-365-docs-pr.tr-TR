@@ -12,6 +12,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/19/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +22,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 332802150235ec6f47c4bdea34b34edb94ea1b90
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: deb0a7be8dcf359c901d714006ea3b46862586fb
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731339"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050771"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender'de otomatik araştırma ve yanıt
 
@@ -54,7 +55,7 @@ Microsoft 365 Defender otomatik araştırma ve kendi kendini iyileştirme özell
 
 ## <a name="your-own-virtual-analyst"></a>Kendi sanal analistiniz
 
-Katman 1 veya Katman 2 güvenlik operasyonları ekibinizde sanal analiste sahip Imagine. Sanal analist, güvenlik işlemlerinin tehditleri araştırmak ve düzeltmek için atacağı ideal adımları taklit eder. Sanal analist, sınırsız kapasiteyle 7/24 çalışabilir ve önemli bir araştırma ve tehdit düzeltme yükü üstlenebilir. Böyle bir sanal analist, yanıt verme süresini önemli ölçüde azaltarak güvenlik operasyonları ekibinizin diğer önemli tehditlere veya stratejik projelere serbest olmasını sağlayabilir. Bu senaryo bilim kurgu gibi görünüyorsa, değil! Böyle bir sanal analist, Microsoft 365 Defender paketinizin bir parçasıdır ve adı *otomatik araştırma ve yanıttır*.
+Katman 1 veya Katman 2 güvenlik operasyonları ekibinizde bir sanal analist olduğunu düşünün. Sanal analist, güvenlik işlemlerinin tehditleri araştırmak ve düzeltmek için atacağı ideal adımları taklit eder. Sanal analist, sınırsız kapasiteyle 7/24 çalışabilir ve önemli bir araştırma ve tehdit düzeltme yükü üstlenebilir. Böyle bir sanal analist, yanıt verme süresini önemli ölçüde azaltarak güvenlik operasyonları ekibinizin diğer önemli tehditlere veya stratejik projelere serbest olmasını sağlayabilir. Bu senaryo bilim kurgu gibi görünüyorsa, değil! Böyle bir sanal analist, Microsoft 365 Defender paketinizin bir parçasıdır ve adı *otomatik araştırma ve yanıttır*.
 
 Otomatik araştırma ve yanıt özellikleri, güvenlik operasyonları ekibinizin kuruluşunuzun güvenlik uyarılarıyla ve olaylarıyla başa çıkma kapasitesini önemli ölçüde artırmasına olanak tanır. Otomatik araştırma ve yanıt ile araştırma ve yanıt etkinlikleriyle ilgilenme maliyetini azaltabilir ve tehdit koruması paketinizden en iyi şekilde yararlanın. Otomatik araştırma ve yanıt özellikleri güvenlik operasyonları ekibinize şu şekilde yardımcı olur:
 
@@ -90,7 +91,7 @@ Microsoft 365 Defender her otomatik araştırma sinyalleri Kimlik için Microsof
 |:---------|:---------|
 |Cihazlar (uç nokta veya makine olarak da adlandırılır) |[Uç Nokta için Defender](../defender-endpoint/automated-investigations.md) |      
 |Şirket içi Active Directory kullanıcıları, varlık davranışı ve etkinlikleri     |[Kimlik için Microsoft Defender](/azure-advanced-threat-protection/what-is-atp) |      
-|E-posta içeriği (dosya ve URL içerebilen e-posta iletileri)     |[Office 365 için Defender](../office-365-security/defender-for-office-365.md) |
+|Email içeriği (dosya ve URL içerebilen e-posta iletileri)     |[Office 365 için Defender](../office-365-security/defender-for-office-365.md) |
 
 > [!NOTE]
 > Her uyarı otomatik bir araştırma tetiklemez ve her araştırma otomatik düzeltme eylemleriyle sonuçlanmaz. Bu, kuruluşunuz için otomatik araştırma ve yanıtın nasıl yapılandırıldığına bağlıdır. Bkz [. Otomatik araştırma ve yanıt özelliklerini yapılandırma](m365d-configure-auto-investigation-response.md).
@@ -98,6 +99,15 @@ Microsoft 365 Defender her otomatik araştırma sinyalleri Kimlik için Microsof
 ## <a name="viewing-a-list-of-investigations"></a>Araştırma listesini görüntüleme
 
 Araştırmaları görüntülemek için **Olaylar** sayfasına gidin. Bir olay seçin ve ardından **Araştırmalar** sekmesini seçin. Daha fazla bilgi için bkz. [Otomatik araştırmanın ayrıntıları ve sonuçları](m365d-autoir-results.md).
+
+## <a name="automated-investigation--response-card"></a>Otomatik araştırma & yanıt kartı 
+
+Yeni Otomatik araştırma & yanıt kartı Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) kullanılabilir. Bu yeni kart görünürlüğü, kullanılabilir düzeltme eylemlerinin toplam sayısını gösterir. Kart ayrıca tüm uyarılara ve her uyarı için gerekli onay süresine genel bir bakış sağlar.
+
+:::image type="content" source="../../media/automated-investigation-response-card.png" alt-text="Otomatik araştırma & yanıt kartını gösteren ekran görüntüsü.":::
+
+Otomatik araştırma & yanıt kartını kullanarak güvenlik operasyonları ekibiniz İşlem **Merkezi'nde Onayla** bağlantısını seçip uygun eylemleri gerçekleştirerek İşlem merkezine hızla gidebilir. Kart, güvenlik operasyonları ekibinizin onay bekleyen eylemleri daha etkili bir şekilde yönetmesini sağlar. 
+
 
 ## <a name="training-for-security-analysts"></a>Güvenlik analistleri için eğitim
 

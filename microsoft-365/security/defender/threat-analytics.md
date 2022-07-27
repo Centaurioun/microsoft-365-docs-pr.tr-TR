@@ -3,7 +3,7 @@ title: Microsoft 365 Defender'de tehdit analizi
 ms.reviewer: ''
 description: Yeni ortaya çıkan tehditler ve saldırı teknikleri ve bunların nasıl durdurulacağını öğrenin. Kuruluşunuz üzerindeki etkilerini değerlendirin ve kuruluşunuzun dayanıklılığını değerlendirin.
 keywords: tehdit analizi, risk değerlendirmesi, Microsoft 365 Defender, M365D, risk azaltma durumu, güvenli yapılandırma, Office 365 için Microsoft Defender, Office 365 için Microsoft Defender  tehdit analizi, MDO tehdit analizi, tümleşik MDE ve MDO tehdit analizi verileri, tehdit analizi veri tümleştirmesi, tümleşik Microsoft 365 Defender tehdit analizi
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b034445951a0b8f52e995ff3372a2b0404f8cbfb
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: a24b887edefa21807ca544a68b0721e70b6b512c
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731031"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050798"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Microsoft 365 Defender'de tehdit analizi
 
@@ -48,7 +48,7 @@ Tehdit analizinin en son tehditleri izlemenize ve durdurmanıza nasıl yardımc�
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-Tehdit analizine Microsoft 365 güvenlik portalının gezinti çubuğunun sol üst tarafından veya kuruluşunuza yönelik en önemli tehditleri hem etki açısından hem de açığa çıkarma açısından gösteren ayrılmış bir pano kartından erişebilirsiniz.
+Tehdit analizine Microsoft 365 güvenlik portalının gezinti çubuğunun sol üst kısmından veya kuruluşunuza yönelik en önemli tehditleri hem etki açısından hem de açığa çıkarma açısından gösteren özel bir pano kartından erişebilirsiniz.
 
 :::image type="content" source="../../media/threat-analytics/ta_inlandingpage_mtp.png" alt-text="Tehdit analizi giriş sayfası" lightbox="../../media/threat-analytics/ta_inlandingpage_mtp.png":::
 
@@ -84,7 +84,7 @@ _Tehdit analizi panosu. Ayrıca, okumak istediğiniz tehdit analizi raporuyla il
 
 Her tehdit analizi raporu çeşitli bölümlerde bilgi sağlar:
 
-- [**Genel bakış**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses)
+- [**Genel Bakış**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses)
 - [**Analist raporu**](#analyst-report-get-expert-insight-from-microsoft-security-researchers)
 - [**İlgili olaylar**](#related-incidents-view-and-manage-related-incidents)
 - [**Etkilenen varlıklar**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
@@ -205,11 +205,11 @@ Tehdit analizi raporlarında size güncelleştirmeler gönderecek e-posta bildir
 
 Tehdit analizi raporlarına yönelik e-posta bildirimlerini ayarlamak için aşağıdaki adımları uygulayın:
 
-1. Microsoft 365 Defender kenar çubuğunda **Ayarlar** seçin. Ayarlar listesinden **Microsoft 365 Defender'ı** seçin.
+1. Microsoft 365 Defender kenar çubuğunda **Ayarlar'ı** seçin. Ayarlar listesinden **Microsoft 365 Defender'ı** seçin.
  
 ![Her ikisi de kırmızıyla vurgulanmış "Ayarlar" ve "Microsoft 365 Defender" ekran görüntüsü](../../media/threat-analytics/ta_create_notification_0.png)
 
-2. **E-posta** **bildirimleriDevre** >  analizi'ni seçin ve **+ Bildirim kuralı oluştur** düğmesini seçin. Bir açılır pencere görünür.
+2. **Email bildirimleri** > **Tehdit analizi'ni** seçin ve **+ Bildirim kuralı oluştur** düğmesini seçin. Bir açılır pencere görünür.
 
 !["+ Bildirim kuralı oluştur" seçeneğinin kırmızıyla vurgulandığı ekran görüntüsü](../../media/threat-analytics/ta_create_notification_1.png)
 
@@ -243,14 +243,14 @@ Tehdit analizi raporlarına yönelik e-posta bildirimlerini ayarlamak için aşa
 ## <a name="additional-report-details-and-limitations"></a>Ek rapor ayrıntıları ve sınırlamaları
 
 > [!NOTE]
-> Birleşik güvenlik deneyiminin bir parçası olarak tehdit analizi artık yalnızca Uç Nokta için Microsoft Defender için değil, Office E5 lisans sahipleri için Microsoft Defender için de kullanılabilir.
+> Birleşik güvenlik deneyiminin bir parçası olarak tehdit analizi artık yalnızca Uç Nokta için Microsoft Defender için değil, Office E5 için Microsoft Defender lisans sahipleri için de kullanılabilir.
 >
-> Microsoft 365 güvenlik portalını (Microsoft 365 Defender) kullanmıyorsanız, rapor ayrıntılarını (Office veriler için Microsoft Defender olmadan) Microsoft Defender Güvenlik Merkezi portalında da görebilirsiniz ( Uç Nokta için Microsoft Defender).
+> Microsoft 365 güvenlik portalını (Microsoft 365 Defender) kullanmıyorsanız, rapor ayrıntılarını (Office için Microsoft Defender verileri olmadan) Microsoft Defender Güvenlik Merkezi portalında da görebilirsiniz (Uç Nokta için Microsoft Defender).
 
 Tehdit analizi raporlarına erişmek için belirli rollere ve izinlere ihtiyacınız vardır. Ayrıntılar için Microsoft 365 Defender için bkz. [Rol tabanlı erişim denetiminde özel roller](custom-roles.md).
 
-- Uyarıları, olayları veya etkilenen varlık verilerini görüntülemek için, Office veya Uç Nokta için Microsoft Defender uyarı verileri için Microsoft Defender izinlerine veya her ikisine de sahip olmanız gerekir.
-- Engellenen e-posta girişimlerini görüntülemek için, Office tehdit avcılığı verileri için Microsoft Defender izinlerine sahip olmanız gerekir.
+- Uyarıları, olayları veya etkilenen varlık verilerini görüntülemek için, Office için Microsoft Defender veya Uç Nokta için Microsoft Defender uyarı verilerini ya da her ikisini birden görüntüleme izinlerine sahip olmanız gerekir.
+- Engellenen e-posta girişimlerini görüntülemek için Office için Microsoft Defender tehdit avcılığı verilerine yönelik izinlere sahip olmanız gerekir.
 - Azaltmaları görüntülemek için Uç Nokta için Microsoft Defender'da verileri Tehdit ve Güvenlik Açığı Yönetimi izinleriniz olmalıdır.
 
 Tehdit analizi verilerine bakarken aşağıdaki faktörleri unutmayın:
@@ -258,7 +258,7 @@ Tehdit analizi verilerine bakarken aşağıdaki faktörleri unutmayın:
 - Grafikler yalnızca izlenen azaltmaları yansıtır. Grafiklerde gösterilmeyen ek risk azaltmaları için rapora genel bakış'a bakın.
 - Risk azaltmalar tam dayanıklılığı garanti etmez. Sağlanan azaltmalar, dayanıklılığı artırmak için gereken mümkün olan en iyi eylemleri yansıtır.
 - Cihazlar hizmete veri iletmediyse "kullanılamaz" olarak sayılır.
-- Virüsten korumayla ilgili istatistikler Microsoft Defender Virüsten Koruma ayarlarına bağlıdır. Üçüncü taraf virüsten koruma çözümlerine sahip cihazlar "kullanıma sunuldu" olarak görünebilir.
+- Virüsten korumayla ilgili istatistikler Microsoft Defender Virüsten Koruma ayarlarını temel alır. Üçüncü taraf virüsten koruma çözümlerine sahip cihazlar "kullanıma sunuldu" olarak görünebilir.
 
 ## <a name="related-articles"></a>İlgili makaleler
 

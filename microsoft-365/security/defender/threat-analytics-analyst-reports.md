@@ -5,7 +5,7 @@ description: Her tehdit analizi raporunun analist raporu bölümü hakkında bil
 keywords: analist raporu, tehdit analizi, algılamalar, gelişmiş tehdit avcılığı sorguları, azaltmalar,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 396be53e4c238a8de21082f025762a1a4243b57c
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 9f699be27f3ad0bee522a3e9d0f5550428aacc91
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731152"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051502"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Microsoft 365 Defender'de tehdit analizinde analist raporunu anlama
 
@@ -52,7 +52,7 @@ Analist raporunun her bölümü eyleme dönüştürülebilir bilgiler sağlamak 
 | Yönetici özeti | İlk görüldüğü zaman, motivasyonları, dikkate değer olaylar, ana hedefler ve farklı araçlar ve teknikler de dahil olmak üzere, tehdide genel bakış. Bu bilgileri, sektörünüz, coğrafi konumunuz ve ağınız bağlamında tehdidi nasıl önceliklendirebileceğinizi daha fazla değerlendirmek için kullanabilirsiniz. |
 | Analysis | Bir saldırının ayrıntıları ve saldırganların yeni bir teknik veya saldırı yüzeyini nasıl kullanabileceği dahil olmak üzere tehditler hakkında teknik bilgiler |
 | GÖZLEMLENEN MITRE ATT&CK teknikleri | Gözlemlenen teknikler [MITRE ATT&CK saldırı çerçevesiyle nasıl eşlenir?](https://attack.mitre.org/) |
-| [Azaltıcı etken](#apply-additional-mitigations) | tehdidin etkisini azaltmaya yardımcı olabilecek veya durdurabilecek Öneriler. Bu bölüm, tehdit analizi raporunun bir parçası olarak dinamik olarak izlenmemiş risk azaltmaları da içerir. |
+| [Azaltıcı etken](#apply-additional-mitigations) | Tehdidi durdurabilecek veya tehdidin etkisini azaltmaya yardımcı olabilecek öneriler. Bu bölüm, tehdit analizi raporunun bir parçası olarak dinamik olarak izlenmemiş risk azaltmaları da içerir. |
 | [Algılama ayrıntıları](#understand-how-each-threat-can-be-detected) | Microsoft güvenlik çözümleri tarafından sağlanan ve tehditle ilişkili etkinlikleri veya bileşenleri ortaya çıkarabilen belirli ve genel algılamalar. |
 | [Gelişmiş avcılık örneği](#find-subtle-threat-artifacts-using-advanced-hunting) | Olası tehdit etkinliğini proaktif olarak tanımlamak için [gelişmiş tehdit avcılığı sorguları](advanced-hunting-overview.md). Sorguların çoğu, özellikle kötü amaçlı olabilecek bileşenleri veya kötü amaçlı olduğu dinamik olarak değerlendirilemeyen davranışları bulmak için ek algılamalar için sağlanır. |
 | Başvurular | Raporun oluşturulması sırasında analistler tarafından başvuruda bulunan Microsoft ve üçüncü taraf yayınları. Tehdit analizi içeriği, Microsoft araştırmacıları tarafından doğrulanan verileri temel alır. Genel kullanıma açık, üçüncü taraf kaynaklardan gelen bilgiler bu şekilde net bir şekilde tanımlanır. |
@@ -73,24 +73,24 @@ Güvenlik duruşunuzu bir tehdide karşı değerlendirmek için **Pozlama & risk
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Her tehdidin nasıl algılanabilir olduğunu anlama
 
-Analist raporu ayrıca Microsoft Defender Virüsten Koruma ve _uç noktada algılama ve yanıtlama (EDR_) özelliklerinden algılamalar sağlar.
+Analist raporu ayrıca Microsoft Defender Virüsten Koruma ile _uç nokta algılama ve yanıt_ (EDR) özelliklerinden algılamalar sağlar.
 
 ### <a name="antivirus-detections"></a>Virüsten koruma algılamaları
 
-Bu algılamalar[, Microsoft Defender Virüsten Koruma](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) açık cihazlarda kullanılabilir. Bu algılamalar, Uç Nokta için Microsoft Defender eklenen cihazlarda gerçekleştiğinde, rapordaki grafikleri aydınlatan uyarılar da tetikler.
+Bu algılamalar [, Microsoft Defender Virüsten Koruma'nın](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) açık olduğu cihazlarda kullanılabilir. Bu algılamalar, Uç Nokta için Microsoft Defender eklenen cihazlarda gerçekleştiğinde, rapordaki grafikleri aydınlatan uyarılar da tetikler.
 
 >[!NOTE]
 >Analist raporu, izlenen tehdide özgü bileşenlere veya davranışlara ek olarak çok çeşitli tehditleri belirleyebilen **genel algılamaları** da listeler. Bu genel algılamalar grafiklere yansıtılamaz.
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>Uç nokta algılama ve yanıt (EDR) uyarıları
 
-Uç Nokta için Microsoft Defender [eklenen cihazlar için EDR](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure) uyarılar oluşturulur. Bu uyarılar genellikle Uç Nokta için Microsoft Defender algılayıcısı tarafından toplanan güvenlik sinyallerini ve güçlü sinyal kaynakları olarak görev yapan virüsten koruma, ağ koruması, kurcalama koruması gibi diğer uç nokta özelliklerini kullanır.
+[Uç Nokta için Microsoft Defender eklenen cihazlar](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure) için EDR uyarıları oluşturulur. Bu uyarılar genellikle Uç Nokta için Microsoft Defender algılayıcısı tarafından toplanan güvenlik sinyallerini ve güçlü sinyal kaynakları olarak görev yapan virüsten koruma, ağ koruması, kurcalama koruması gibi diğer uç nokta özelliklerini kullanır.
 
-Virüsten koruma algılamalarının listesi gibi, bazı EDR uyarıları da izlenen tehditle ilişkilendirilmeyebilecek şüpheli davranışları genel olarak işaretleyebilecek şekilde tasarlanmıştır. Bu gibi durumlarda rapor, uyarıyı açıkça "genel" olarak tanımlar ve rapordaki grafiklerin hiçbirini etkilemez.
+Virüsten koruma algılamaları listesinde olduğu gibi, bazı EDR uyarıları da izlenen tehditle ilişkilendirilmeyebilecek şüpheli davranışlara genel olarak bayrak eklemek için tasarlanmıştır. Bu gibi durumlarda rapor, uyarıyı açıkça "genel" olarak tanımlar ve rapordaki grafiklerin hiçbirini etkilemez.
 
-### <a name="email-related-detections-and-mitigations"></a>E-postayla ilgili algılamalar ve risk azaltmalar
+### <a name="email-related-detections-and-mitigations"></a>Email ile ilgili algılamalar ve risk azaltmalar
 
-Office 365 için Microsoft Defender gelen e-postayla ilgili algılamalar ve risk azaltmaları, Uç Nokta için Microsoft Defender'dan mevcut olan uç nokta verilerine ek olarak analist raporlarına da eklenir.
+Office 365 için Microsoft Defender Email ilgili algılamalar ve risk azaltmaları, Uç Nokta için Microsoft Defender'de zaten mevcut olan uç nokta verilerine ek olarak analist raporlarına da eklenir.
 
 Engellenen e-posta girişimi bilgileri, saldırı teslim edilmeden önce etkin bir şekilde engellenmiş veya gereksiz posta klasörüne teslim edilmiş olsa bile kuruluşunuzun analist raporunda ele alınan tehdidin hedefi olup olmadığına ilişkin içgörüler sağlar.
 
@@ -103,7 +103,7 @@ Algılamalar izlenen tehdidi otomatik olarak tanımlamanıza ve durdurmanıza ol
 Analist raporlarındaki gelişmiş tehdit avcılığı sorguları Microsoft analistleri tarafından izlendi ve [gelişmiş tehdit avcılığı sorgu düzenleyicisinde](https://security.microsoft.com/advanced-hunting) çalıştırmaya hazır. Gelecekteki eşleşmeler için uyarıları tetikleyen [özel algılama kuralları](custom-detection-rules.md) oluşturmak için sorguları da kullanabilirsiniz.
 
 >[!NOTE]
-> Tehdit analizi [Uç Nokta için Microsoft Defender'de](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) de kullanılabilir. Ancak Office için Microsoft Defender ile Uç Nokta için Microsoft Defender arasında veri tümleştirmesi yoktur.
+> Tehdit analizi [Uç Nokta için Microsoft Defender'de](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) de kullanılabilir. Ancak, Office için Microsoft Defender ile Uç Nokta için Microsoft Defender arasında veri tümleştirmesine sahip değildir.
 
 ## <a name="related-topics"></a>İlgili konular
 

@@ -1,9 +1,9 @@
 ---
-title: Cihaz bilgilerini iç IP API'sini kullanarak bulma
-description: İç IP ile belirli bir zaman damgası etrafında bir cihaz girdisi bulma ile ilgili aramalar oluşturmak için bu API'yi kullanın.
-keywords: ip, api'ler, grafik api'leri, desteklenen api'ler, cihaz bul, cihaz bilgileri
+title: Dahili IP API'lerine göre cihaz bilgilerini bulma
+description: İç IP'ye göre belirli bir zaman damgası çevresinde bir cihaz girişi bulmayla ilgili çağrılar oluşturmak için bu API'yi kullanın.
+keywords: ip, API'ler, graf api'leri, desteklenen API'ler, cihaz bulma, cihaz bilgileri
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,38 +15,38 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: 4c4666f70b27c3bb06f6d486ab8fe1c20c56d53c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a641784e632574d8b5ba50c59bbc5b987d9375de
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62998041"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051876"
 ---
-# <a name="find-device-information-by-internal-ip-api"></a>Cihaz bilgilerini iç IP API'sini kullanarak bulma
+# <a name="find-device-information-by-internal-ip-api"></a>Dahili IP API'lerine göre cihaz bilgilerini bulma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:** 
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:** 
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-İç IP'ye göre bir cihaz bulun.
+Dahili IP'ye göre bir cihaz bulun.
 
 > [!NOTE]
-> Zaman damgası, son 30 gün içinde olur.
+> Zaman damgası son 30 gün içinde olmalıdır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
 Uygulama|Machine.Read.All|'Tüm makine profillerini oku'
 Uygulama|Machine.ReadWrite.All|'Tüm makine bilgilerini okuma ve yazma'
@@ -57,7 +57,7 @@ Uygulama|Machine.ReadWrite.All|'Tüm makine bilgilerini okuma ve yazma'
 GET /api/machines/find(timestamp={time},key={IP})
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -69,14 +69,14 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı bir makine varsa - 200 Tamam.
-Hiçbir makine bulunamadı - 404 Bulunamadı.
+Başarılıysa ve makine varsa - 200 Tamam.
+Makine bulunamadıysa - 404 Bulunamadı.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiş.
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp=2018-06-19T10:00:00Z,key='10.166.93.61')
@@ -85,9 +85,9 @@ Content-type: application/json
 
 ### <a name="response-example"></a>Yanıt örneği
 
-Yanıtın bir örneği:
+Yanıtın bir örneğini aşağıda bulabilirsiniz.
 
-Yanıt, zaman damgasından birkaç dakika önce ve sonra bu IP adresini bildiren tüm cihazların listesini verir.
+Yanıt, zaman damgasından önceki ve sonraki 16 dakika içinde bu IP adresini bildiren tüm cihazların listesini döndürür.
 
 ```json
 HTTP/1.1 200 OK

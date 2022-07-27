@@ -1,6 +1,6 @@
 ---
 title: iOS özelliklerinde Uç Nokta için Microsoft Defender’ı yapılandırın
-description: Uç Nokta için Microsoft Defender iOS özelliklerine nasıl dağıtılacağı açıklanır.
+description: iOS özelliklerinde Uç Nokta için Microsoft Defender nasıl dağıtılacağı açıklanır.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, ios, configure, features, ios
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,79 +15,112 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8defbb5d1a72afd13110d3c76a4770e40ac1c469
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 7712b1b65db62625b853567f2d739d5f16787eb9
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089317"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051832"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS özelliklerinde Uç Nokta için Microsoft Defender’ı yapılandırın
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Şunlar için geçerlidir:**
+
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
-> iOS'da Uç Nokta için Defender, Web Koruması özelliğini sağlamak için bir VPN kullanır. Bu normal bir VPN değildir ve cihazın dışına trafiği almayan yerel/kendi kendini döngüye alan bir VPN'dir.
+> iOS üzerinde Uç Nokta için Defender, Web Koruması özelliğini sağlamak için bir VPN kullanır. Bu normal bir VPN değildir ve cihazın dışına trafiği almayan yerel/kendi kendini döngüye alan bir VPN'dir.
 
-## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>iOS'de Uç Nokta için Defender ile Koşullu Erişim
+## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>iOS'ta Uç Nokta için Defender ile Koşullu Erişim
 
-Microsoft Intune ve Azure Active Directory ile birlikte iOS Uç Nokta için Microsoft Defender, cihaz risk puanına göre Cihaz uyumluluğu ve Koşullu Erişim ilkelerinin zorunlu tutmasını sağlar. Uç Nokta için Defender, Intune aracılığıyla bu özelliği kullanmak için dağıtabileceğiniz bir Mobile Threat Defense (MTD) çözümüdür.
+Microsoft Intune ve Azure Active Directory ile birlikte iOS'ta Uç Nokta için Microsoft Defender, cihaz risk puanına göre Cihaz uyumluluğu ve Koşullu Erişim ilkelerinin zorunlu tutmasını sağlar. Uç Nokta için Defender, Intune aracılığıyla bu özelliği kullanmak için dağıtabileceğiniz bir Mobile Threat Defense (MTD) çözümüdür.
 
-iOS'da Uç Nokta için Defender ile Koşullu Erişim ayarlama hakkında daha fazla bilgi için bkz. [Uç Nokta için Defender ve Intune](/mem/intune/protect/advanced-threat-protection).
+iOS'ta Uç Nokta için Defender ile Koşullu Erişim'i ayarlama hakkında daha fazla bilgi için bkz. [Uç Nokta için Defender ve Intune](/mem/intune/protect/advanced-threat-protection).
 
 ### <a name="jailbreak-detection-by-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender tarafından jailbreak algılama
 
-Uç Nokta için Microsoft Defender, jailbreak uygulanmış yönetilmeyen ve yönetilen cihazları algılama özelliğine sahiptir. Bir cihazın jailbreak gerçekleştirildiği algılanırsa, Microsoft 365 Defender portalına **yüksek** riskli bir uyarı bildirilir ve Koşullu Erişim cihaz risk puanına göre ayarlanırsa cihazın şirket verilerine erişimi engellenir.
+Uç Nokta için Microsoft Defender, jailbreak uygulanmış yönetilmeyen ve yönetilen cihazları algılama özelliğine sahiptir. Bir cihazın jailbreak işlemi gerçekleştirildiği algılanırsa, Microsoft 365 Defender portalına **yüksek** riskli bir uyarı bildirilir ve Cihaz risk puanına göre Koşullu Erişim ayarlanırsa cihazın şirket verilerine erişimi engellenir.
 
 ## <a name="web-protection-and-vpn"></a>Web Koruması ve VPN
 
-Varsayılan olarak, iOS'da Uç Nokta için Defender web koruma özelliğini içerir ve etkinleştirir. [Web koruması](web-protection-overview.md) , cihazların web tehditlerine karşı korunmasına ve kullanıcıların kimlik avı saldırılarına karşı korunmasına yardımcı olur. Web Koruması'nın bir parçası olarak kimlik avı önleme ve özel göstergelerin (URL ve IP adresleri) desteklendiğini unutmayın. Web İçeriği Filtreleme şu anda iOS'da desteklenmiyor.
+Varsayılan olarak, iOS'ta Uç Nokta için Defender web koruma özelliğini içerir ve etkinleştirir. [Web koruması](web-protection-overview.md) , cihazların web tehditlerine karşı korunmasına ve kullanıcıların kimlik avı saldırılarına karşı korunmasına yardımcı olur. Web Koruması'nın bir parçası olarak kimlik avı önleme ve özel göstergelerin (URL ve IP adresleri) desteklendiğini unutmayın. Web İçeriği Filtreleme şu anda mobil platformlarda desteklenmiyor.
 
-iOS'de Uç Nokta için Defender bu özelliği sağlamak için bir VPN kullanır. Bunun yerel bir VPN olduğunu ve geleneksel VPN'nin aksine ağ trafiğinin cihazın dışına gönderilmediğini lütfen unutmayın.
+iOS'ta Uç Nokta için Defender bu özelliği sağlamak için bir VPN kullanır. Bunun yerel bir VPN olduğunu ve geleneksel VPN'nin aksine ağ trafiğinin cihazın dışına gönderilmediğini lütfen unutmayın.
 
 Varsayılan olarak etkinleştirildiğinde VPN'yi devre dışı bırakmanızı gerektiren bazı durumlar olabilir. Örneğin, VPN yapılandırıldığında çalışmayan bazı uygulamaları çalıştırmak istiyorsunuz. Bu gibi durumlarda, aşağıdaki adımları izleyerek cihazdaki uygulamadan VPN'i devre dışı bırakabilirsiniz:
 
-1. iOS cihazınızda **Ayarlar** uygulamasını açın, **Genel'e** ve ardından **VPN'e** tıklayın veya dokunun.
+1. iOS cihazınızda **Ayarlar** uygulamasını açın, **Genel'e** ve ardından **VPN'ye** tıklayın veya dokunun.
 
 2. Uç Nokta için Microsoft Defender için "i" düğmesine tıklayın veya dokunun.
 
-3. VPN'yi devre dışı bırakmak için **İsteğe Bağlı Bağlan** kapatın. 
+3. VPN'yi devre dışı bırakmak için **İsteğe Bağlı Bağlan'ı** kapatın. 
 
-   :::image type="content" source="images/ios-vpn-config.png" alt-text="VPN yapılandırmasının iki durumlu düğmesi isteğe bağlı olarak Bağlan seçeneği" lightbox="images/ios-vpn-config.png":::
+   :::image type="content" source="images/ios-vpn-config.png" alt-text="VPN yapılandırması İsteğe bağlı bağlan seçeneği için iki durumlu düğme" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
 > VPN devre dışı bırakıldığında Web Koruması kullanılamaz. Web Koruması'nı yeniden etkinleştirmek için cihazda Uç Nokta için Microsoft Defender uygulamasını açın ve **VPN Başlat'a** tıklayın veya dokunun.
 
+## <a name="disable-web-protection"></a>Web Korumasını Devre Dışı Bırak
+
+Web Koruması, Uç Nokta için Defender'ın temel özelliklerinden biridir ve bu özelliği sağlamak için bir VPN gerektirir. Kullanılan VPN, geleneksel bir VPN değil yerel/geri döngü VPN'dir, ancak müşterilerin VPN'yi tercih etmemelerinin çeşitli nedenleri vardır. VPN ayarlamak istemeyen müşteriler, Bu özellik olmadan **Web Koruması'nın** devre dışı bırakılması ve Uç Nokta için Defender'ın dağıtılması seçeneği vardır. Diğer Uç Nokta için Defender özellikleri çalışmaya devam edecektir.
+
+Bu yapılandırma hem kayıtlı (MDM) cihazlar hem de kayıtlı olmayan (MAM) cihazlar için kullanılabilir. MDM'ye sahip müşteriler için yöneticiler Web **Koruması'nı** Uygulama Yapılandırması'ndaki Yönetilen cihazlar aracılığıyla yapılandırabilir. Yöneticiler, MAM kullanarak kaydı olmayan müşteriler için **Web Koruması'nı** Uygulama Yapılandırması'ndaki Yönetilen uygulamalar aracılığıyla yapılandırabilir.
+
+### <a name="configure-web-protection"></a>Web Korumasını Yapılandırma
+
+1. **Web Korumasını Devre Dışı Bırak (MDM)** Kayıtlı cihazlar için **Web Koruması'nı** devre dışı bırakmak için aşağıdaki adımları kullanın.
+
+    - [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
+    - İlkeye **iOS/iPadOS > Platform** adını verin.
+    - Hedef uygulama olarak Uç Nokta için Microsoft Defender seçin.
+    - Ayarlar sayfasında Yapılandırma tasarımcısını kullan'ı seçin ve anahtar ve değer türü olarak  **WebProtection** **değerini Boole** olarak ekleyin.
+        - Varsayılan olarak **, WebProtection= true**.
+        - Yönetici web korumasını kapatmak için **WebProtection = false** yapması gerekir.
+        - Defender, kullanıcı uygulamayı her açtığında sinyali Microsoft 365 Defender portalına gönderir.
+        - İleri'ye tıklayın ve bu profili hedeflenen cihazlara/kullanıcılara atayın.
+
+1. **Web Korumasını Devre Dışı Bırakma (MAM)** Kaydı kaldırılan cihazlarda **Web Koruması'nı** devre dışı bırakmak için aşağıdaki adımları kullanın.
+
+    - [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar Uygulama** > **yapılandırma ilkeleri** > **Yönetilen uygulamalar** **ekle'ye** >  gidin.
+    - İlkeye bir ad verin.
+    - Genel Uygulamaları Seç'in altında hedef uygulama olarak Uç Nokta için Microsoft Defender'ı seçin.
+    - Ayarlar sayfasında, Genel Yapılandırma Ayarları'nın altında anahtar olarak  **WebProtection** ve **false** olarak değer ekleyin.
+        - Varsayılan olarak **, WebProtection= true**.
+        - Yönetici web korumasını kapatmak için **WebProtection = false** yapması gerekir.
+        - Defender, kullanıcı uygulamayı her açtığında sinyali Microsoft 365 Defender portalına gönderir.
+        - İleri'ye tıklayın ve bu profili hedeflenen cihazlara/kullanıcılara atayın.
+
 ## <a name="configure-network-protection"></a>Ağ Korumasını Yapılandırma
->[!NOTE] 
+
+>[!NOTE]
 >Uç Nokta için Microsoft Defender'da Ağ Koruması artık genel önizleme aşamasındadır. Aşağıdaki bilgiler, ürünün ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen ön sürümüyle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
 
-Uç nokta için Microsoft Defender'da ağ koruması varsayılan olarak etkindir. Yöneticiler, iOS cihazlarda Ağ koruması için MAM desteğini yapılandırmak için aşağıdaki adımları kullanabilir.
+Uç nokta için Microsoft Defender'da ağ koruması varsayılan olarak etkindir. Yöneticiler, iOS cihazlarında Ağ koruması için MAM desteğini yapılandırmak için aşağıdaki adımları kullanabilir.
 
 1. Microsoft Endpoint Manager Yönetici'da Uygulamalar > Uygulama yapılandırma ilkeleri'ne gidin. Yeni bir Uygulama yapılandırma ilkesi oluşturun.
    :::image type="content" source="images/addiosconfig.png" alt-text="Yapılandırma ilkesi ekleyin." lightbox="images/addiosconfig.png":::
-   
-2. İlkeyi benzersiz olarak tanımlamak için bir ad ve açıklama sağlayın. Ardından 'Genel uygulamaları seç'e tıklayın ve Platform iOS/IPadOS için 'Microsoft Defender'ı seçin:::image type="content" source="images/nameiosconfig.png" alt-text=". Yapılandırmayı adlandırın." lightbox="images/nameiosconfig.png":::
-   
-3. Ayarlar sayfasında, Ağ Koruması'nı devre dışı bırakmak için anahtar olarak 'DefenderNetworkProtectionEnable' değerini ve 'false' olarak değeri ekleyin. (Ağ koruması varsayılan olarak etkindir) :::image type="content" source="images/addiosconfigvalue.png" alt-text="Yapılandırma değeri ekleyin." lightbox="images/addiosconfigvalue.png":::
-   
+
+2. İlkeyi benzersiz olarak tanımlamak için bir ad ve açıklama sağlayın. Ardından 'Genel uygulamaları seç'e tıklayın ve Platform iOS/IPadOS için 'Microsoft Defender'ı seçin :::image type="content" source="images/nameiosconfig.png" alt-text="Yapılandırmayı adlandırın." lightbox="images/nameiosconfig.png":::
+
+3. Ayarlar sayfasında, Ağ Koruması'nı devre dışı bırakmak için anahtar olarak 'DefenderNetworkProtectionEnable' değerini ve 'false' olarak değerini ekleyin. (Ağ koruması varsayılan olarak etkindir) :::image type="content" source="images/addiosconfigvalue.png" alt-text="Yapılandırma değeri ekleyin." lightbox="images/addiosconfigvalue.png":::
+
 4. Ağ korumasıyla ilgili diğer yapılandırmalar için aşağıdaki anahtarları ve uygun değeri ekleyin.
 
     |Tuş| Varsayılan (true-enable, false-disable)|Açıklama|
     |---|---|---|
     |DefenderEndUserTrustFlowEnable| False | Kullanıcıların Ağlara ve Sertifikalara Güvenmesini Sağlama|
-    |DefenderNetworkProtectionAutoRemediation| True |Bu ayar, bir kullanıcı daha güvenli bir WIFI erişim noktasına geçme veya Defender tarafından algılanan şüpheli sertifikaları silme gibi düzeltme etkinlikleri gerçekleştirdiğinde gönderilen düzeltme uyarılarını etkinleştirmek veya devre dışı bırakmak için BT yöneticisi tarafından kullanılır|
+    |DefenderNetworkProtectionAutoRemediation| True |Bu ayar, bir kullanıcı daha güvenli WIFI erişim noktalarına geçme veya Defender tarafından algılanan şüpheli sertifikaları silme gibi düzeltme etkinlikleri gerçekleştirdiğinde gönderilen düzeltme uyarılarını etkinleştirmek veya devre dışı bırakmak için BT yöneticisi tarafından kullanılır|
     |DefenderNetworkProtectionPrivacy| True |Bu ayar, ağ korumasında gizliliği etkinleştirmek veya devre dışı bırakmak için BT yöneticisi tarafından yönetilir|
   
 5. Atamalar bölümünde yönetici, ilkeye dahil etmek ve ilkeden dışlamak için kullanıcı gruplarını seçebilir.
    :::image type="content" source="images/assigniosconfig.png" alt-text="Yapılandırmayı atayın." lightbox="images/assigniosconfig.png":::
-   
+
 6. Yapılandırma ilkesini gözden geçirin ve oluşturun.
 
 ## <a name="co-existence-of-multiple-vpn-profiles"></a>Birden çok VPN profilinin birlikte bulunması
@@ -100,7 +133,7 @@ Uç Nokta için Microsoft Defender, iOS/iPadOS'ta Uygulama Koruma İlkeleri'nde 
 
 Uç Nokta için Microsoft Defender ile uygulama koruma ilkelerini ayarlama adımları aşağıdadır:
 
-1. Microsoft Endpoint Manager kiracınızdan Uç Nokta için Microsoft Defender bağlantısını ayarlayın. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Kiracı Yönetim** \> **Bağlayıcıları ve belirteçleri Uç Nokta için Microsoft Defender (Platformlar** \> arası altında) veya **Endpoint Security** \> **Uç Nokta için Microsoft Defender** (Kurulum altında) bölümüne gidin ve  **iOS için Uygulama Koruma İlkesi Ayarlar**.
+1. Microsoft Endpoint Manager kiracınızdan Uç Nokta için Microsoft Defender bağlantısını ayarlayın. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Kiracı Yönetim** \> **Bağlayıcıları ve belirteçleri Uç Nokta için Microsoft Defender (Platformlar** \> arası altında) veya **Endpoint Security** \> **Uç Nokta için Microsoft Defender** (Kurulum altında) bölümüne gidin ve  **iOS için Uygulama Koruma İlkesi Ayarları**.
 
 2. Kaydet'i seçin. **Bağlantı durumunun** artık **Etkin** olarak ayarlandığını görmeniz gerekir.
 
@@ -112,45 +145,99 @@ Uç Nokta için Microsoft Defender ile uygulama koruma ilkelerini ayarlama adım
 
 6. Ödevler ile bitirin ve ilkenizi kaydedin.
 
-MAM veya uygulama koruma ilkesi hakkında daha fazla bilgi için bkz. [uygulama koruma ilkesi ayarlarını iOS](/mem/intune/apps/app-protection-policy-settings-ios).
+MAM veya uygulama koruma ilkesi hakkında daha fazla ayrıntı için bkz. [iOS uygulama koruma ilkesi ayarları](/mem/intune/apps/app-protection-policy-settings-ios).
 
 ### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>MAM için veya kaydı kaldırılmış cihazlarda Uç Nokta için Microsoft Defender dağıtma
 
-iOS'da Uç Nokta için Microsoft Defender, Uygulama Koruma İlkesi senaryosuna olanak tanır ve Apple uygulama mağazasında kullanılabilir. Son kullanıcılar uygulamanın en son sürümünü doğrudan Apple uygulama mağazasından yüklemelidir.
+iOS'ta Uç Nokta için Microsoft Defender, Uygulama Koruma İlkesi senaryosuna olanak tanır ve Apple uygulama mağazasında kullanılabilir. Son kullanıcılar uygulamanın en son sürümünü doğrudan Apple uygulama mağazasından yüklemelidir.
 
 ## <a name="privacy-controls"></a>Gizlilik Denetimleri
 
-> [!IMPORTANT]
-> iOS'da Uç Nokta için Microsoft Defender için Gizlilik Denetimleri önizleme aşamasındadır. Aşağıdaki bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
+iOS'ta Uç Nokta için Microsoft Defender, hem Yöneticiler hem de Son Kullanıcılar için Gizlilik Denetimleri'ni etkinleştirir. Bu, kayıtlı (MDM) ve kaydı kaldırılmış (MAM) cihazlar için denetimleri içerir.
+MDM'ye sahip müşteriler için yöneticiler, Uygulama Yapılandırması'ndaki Yönetilen cihazlar aracılığıyla Gizlilik Denetimlerini yapılandırabilir. Mam kullanarak kayıt olmayan müşteriler için yöneticiler, Uygulama Yapılandırması'ndaki Yönetilen uygulamalar aracılığıyla Gizlilik Denetimlerini yapılandırabilir. Son Kullanıcılar, Defender Uygulama ayarlarından Gizlilik Ayarlarını da yapılandırabilirsiniz.
 
 ### <a name="configure-privacy-in-phish-alert-report"></a>Kimlik avı uyarısı raporunda gizliliği yapılandırma
 
-Müşteriler artık iOS Uç Nokta için Microsoft Defender tarafından gönderilen kimlik avı raporu için gizlilik denetimini etkinleştirebilir. Bu, bir kimlik avı web sitesi algılandığında ve Uç Nokta için Microsoft Defender tarafından engellendiğinde etki alanı adının kimlik avı uyarısının bir parçası olarak gönderilmemesini sağlar.
+Müşteriler artık iOS'ta Uç Nokta için Microsoft Defender tarafından gönderilen kimlik avı raporu için gizlilik denetimini etkinleştirebilir. Bu, bir kimlik avı web sitesi algılandığında ve Uç Nokta için Microsoft Defender tarafından engellendiğinde etki alanı adının kimlik avı uyarısının bir parçası olarak gönderilmemesini sağlar.
 
-Gizliliği etkinleştirmek ve kimlik avı uyarısı raporunun bir parçası olarak etki alanı adını toplamamak için aşağıdaki adımları kullanın.
+1. **Yönetici Gizlilik Denetimleri (MDM)** Kayıtlı cihazlar için kimlik avı uyarısı raporunun bir parçası olarak etki alanı adını toplamamak ve gizliliği etkinleştirmek için aşağıdaki adımları kullanın.
 
-1. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
+    - [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
 
-2. İlkeye **Platform > iOS/iPadOS** adını verin, profil türünü seçin.
+    - İlkeye **iOS/iPadOS > Platform** adını verin, profil türünü seçin.
 
-3. Hedef uygulama olarak **Uç Nokta için Microsoft Defender'ı** seçin.
+    - Hedef uygulama olarak **Uç Nokta için Microsoft Defender'ı** seçin.
 
-4. Ayarlar sayfasında **Yapılandırma tasarımcısını kullan'ı** seçin ve anahtar ve değer türü olarak **DefenderExcludeURLInReport** değerini **Boole olarak** ekleyin.
+    - Ayarlar sayfasında **Yapılandırma tasarımcısını kullan'ı** seçin ve anahtar ve değer türü Olarak **DefenderExcludeURLInReport** değerini **Boole olarak** ekleyin.
 
-   - Gizliliği etkinleştirmek ve etki alanı adını toplamamak için olarak `true` değer girin ve bu ilkeyi kullanıcılara atayın. Varsayılan olarak, bu değer olarak `false`ayarlanır.
+      - Gizliliği etkinleştirmek ve etki alanı adını toplamamak için olarak `true` değer girin ve bu ilkeyi kullanıcılara atayın. Varsayılan olarak, bu değer olarak `false`ayarlanır.
 
-   - olarak ayarlanmış `true`anahtara sahip kullanıcılar için, kötü amaçlı bir site algılandığında ve Uç Nokta için Defender tarafından engellendiğinde kimlik avı uyarısı etki alanı adı bilgilerini içermez.
+      - olarak ayarlanmış `true`anahtara sahip kullanıcılar için, kötü amaçlı bir site algılandığında ve Uç Nokta için Defender tarafından engellendiğinde kimlik avı uyarısı etki alanı adı bilgilerini içermez.
 
-5. **İleri'ye** tıklayın ve bu profili hedeflenen cihazlara/kullanıcılara atayın.
+    - **İleri'ye** tıklayın ve bu profili hedeflenen cihazlara/kullanıcılara atayın.
+
+1. **Yönetici Gizlilik Denetimleri (MAM)** Gizliliği etkinleştirmek ve kaydı kaldırılan cihazlar için kimlik avı uyarısı raporunun bir parçası olarak etki alanı adını toplamamak için aşağıdaki adımları kullanın.
+
+    - [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar Uygulama** > **yapılandırma ilkeleri** > **Yönetilen uygulamalar** **ekle'ye** >  gidin.
+
+    - İlkeye bir ad verin.
+
+    - Genel Uygulamaları Seç'in altında hedef uygulama olarak **Uç Nokta için Microsoft Defender'ı** seçin.
+
+    - Ayarlar sayfasında,  **Genel Yapılandırma Ayarları** altında **Anahtar olarak DefenderExcludeURLInReport** değerini ve **true** değerini ekleyin.
+
+      - Gizliliği etkinleştirmek ve etki alanı adını toplamamak için olarak `true` değer girin ve bu ilkeyi kullanıcılara atayın. Varsayılan olarak, bu değer olarak `false`ayarlanır.
+
+      - olarak ayarlanmış `true`anahtara sahip kullanıcılar için, kötü amaçlı bir site algılandığında ve Uç Nokta için Defender tarafından engellendiğinde kimlik avı uyarısı etki alanı adı bilgilerini içermez.
+
+    - **İleri'ye** tıklayın ve bu profili hedeflenen cihazlara/kullanıcılara atayın.
+
+1. **Son Kullanıcı Gizlilik Denetimleri** Bu denetimler, son kullanıcının kendi kuruluşuyla paylaşılan bilgileri yapılandırmasına yardımcı olur.
+    - Denetimli cihazlar için Son Kullanıcı denetimleri görünmez. Yönetici ayarlara karar verir ve ayarları denetler.
+    - Ancak Denetimsiz cihazlar için denetim **Ayarlar-> Gizlilik** altında görüntülenir
+        - Kullanıcılar **Güvenli Olmayan Site Bilgileri** için bir geçiş düğmesi görür.
+        - Bu iki durumlu düğme yalnızca Yönetici **DefenderExcludeURLInReport = true** olarak ayarlamışsa görünür
+        - kullanıcılar, Yönetici tarafından etkinleştirilirse, güvenli olmayan site bilgilerini Kuruluşlarına göndermek isteyip istemediklerine karar verebilir.
+        - Varsayılan olarak olarak olarak ayarlanır `true`, güvenli olmayan site bilgileri gönderilir.
+        - Kullanıcı bunu `false`olarak değiştirirse, güvenli olmayan site ayrıntıları gönderilmez.
 
 Yukarıdaki gizlilik denetimlerini açmak veya kapatmak, cihaz uyumluluk denetimini veya koşullu erişimi etkilemez.
 
-## <a name="configure-compliance-policy-against-jailbroken-devices"></a>Jailbreak uygulanmış cihazlara karşı uyumluluk ilkesini yapılandırma
+## <a name="optional-permissions"></a>İsteğe Bağlı İzinler
 
-Şirket verilerinin jailbreak uygulanmış iOS cihazlarda erişilmeye karşı korunması için Intune'de aşağıdaki uyumluluk ilkesini ayarlamanızı öneririz.
+iOS'ta Uç Nokta için Microsoft Defender, ekleme akışında **İsteğe Bağlı İzinler'i** etkinleştirir. Şu anda ekleme akışında MDE için gereken izinler zorunlu. Bu özellik sayesinde yönetici, ekleme sırasında zorunlu **VPN İznini** zorunlu tutmadan KCG cihazlarına MDE dağıtabilir. Son Kullanıcılar zorunlu izinler olmadan uygulamayı ekleyebilir ve daha sonra bu izinleri gözden geçirebilir. Bu özellik şu anda yalnızca kayıtlı cihazlar (MDM) için mevcuttur.
+
+### <a name="configure-optional-permission"></a>İsteğe Bağlı İzni Yapılandırma
+
+1. **Yönetici akışı (MDM)** Kayıtlı cihazlar için **İsteğe bağlı VPN** iznini etkinleştirmek için aşağıdaki adımları kullanın.
+
+    - [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
+
+    - İlkeye bir ad verin, **iOS/iPadOS > Platform'u** seçin.
+
+    - Hedef uygulama olarak **Uç Nokta için Microsoft Defender'ı** seçin.
+
+    - Ayarlar sayfasında **Yapılandırma tasarımcısını kullan'ı** seçin ve anahtar ve değer türü olarak **DefenderOptionalVPN'i** **Boole olarak** ekleyin.
+
+      - İsteğe bağlı VPN iznini etkinleştirmek için olarak `true` değer girin ve bu ilkeyi kullanıcılara atayın. Varsayılan olarak, bu değer olarak `false`ayarlanır.
+      - anahtar ayarı olarak `true`ayarlanmış kullanıcılar için kullanıcılar, VPN izni vermeden uygulamayı ekleyebilecektir.
+
+    - **İleri'ye** tıklayın ve bu profili hedeflenen cihazlara/kullanıcılara atayın.
+1. **Son Kullanıcı akışı** - Kullanıcı, ekleme işlemini başlatmak için uygulamayı yükleyip açar.
+    - Yöneticinin kurulumu İsteğe bağlı izinler varsa, kullanıcı VPN iznini **atlayabilir** ve ekleme işlemini tamamlayabilir.
+    - Kullanıcı VPN'yi atlamış olsa bile cihaz eklenebilir ve sinyal gönderilir.
+    - Devre dışı bırakıldığından `VPN` etkin `Web Protection` olmaz.
+    - Daha sonra Kullanıcı, uygulamasını Uygulamanın içinden etkinleştirebilir `Web Protection` . Bu, cihaza VPN yapılandırmasını yükler.
 
 > [!NOTE]
-> Jailbreak algılama, iOS Uç Nokta için Microsoft Defender tarafından sağlanan bir özelliktir. Ancak, bu ilkeyi jailbreak senaryolarına karşı ek bir savunma katmanı olarak ayarlamanızı öneririz.
+>**İsteğe bağlı İzin****, Web Korumasını Devre Dışı Bırak'tan** farklıdır. İsteğe bağlı VPN İzni yalnızca ekleme sırasında iznin atlanmasına yardımcı olur, ancak son kullanıcının daha sonra gözden geçirip etkinleştirmesi için kullanılabilir. **Web Korumasını Devre Dışı Bırak** özelliği kullanıcıların Web Koruması olmadan MDE uygulamasını eklemesine olanak tanır. Daha sonra etkinleştirilemez.
+
+## <a name="configure-compliance-policy-against-jailbroken-devices"></a>Jailbreak uygulanmış cihazlara karşı uyumluluk ilkesini yapılandırma
+
+Şirket verilerinin jailbreak uygulanmış iOS cihazlarında erişilmeye karşı korunması için, Intune'de aşağıdaki uyumluluk ilkesini ayarlamanızı öneririz.
+
+> [!NOTE]
+> Jailbreak algılama, iOS'ta Uç Nokta için Microsoft Defender tarafından sağlanan bir özelliktir. Ancak, bu ilkeyi jailbreak senaryolarına karşı ek bir savunma katmanı olarak ayarlamanızı öneririz.
 
 Jailbreak uygulanmış cihazlara karşı uyumluluk ilkesi oluşturmak için aşağıdaki adımları izleyin.
 
@@ -174,23 +261,23 @@ Jailbreak uygulanmış cihazlara karşı uyumluluk ilkesi oluşturmak için aşa
 
 ## <a name="configure-custom-indicators"></a>Özel göstergeleri yapılandırma
 
-iOS'de Uç Nokta için Defender, yöneticilerin iOS cihazlarda da özel göstergeler yapılandırmasına olanak tanır. Özel göstergeleri yapılandırma hakkında daha fazla bilgi için bkz. [Göstergeleri yönetme](/microsoft-365/security/defender-endpoint/manage-indicators).
+iOS'ta Uç Nokta için Defender, yöneticilerin iOS cihazlarında da özel göstergeler yapılandırmasına olanak tanır. Özel göstergeleri yapılandırma hakkında daha fazla bilgi için bkz. [Göstergeleri yönetme](/microsoft-365/security/defender-endpoint/manage-indicators).
 
 > [!NOTE]
-> iOS'de Uç Nokta için Defender, yalnızca IP adresleri ve URL'ler/etki alanları için özel göstergeler oluşturmayı destekler.
+> iOS üzerinde Uç Nokta için Defender yalnızca IP adresleri ve URL'ler/etki alanları için özel göstergeler oluşturmayı destekler.
 
-## <a name="configure-option-to-send-in-app-feedback"></a>Uygulama içi geri bildirim gönderme seçeneğini yapılandırma 
+## <a name="configure-option-to-send-in-app-feedback"></a>Uygulama içi geri bildirim gönderme seçeneğini yapılandırma
 
 Müşteriler artık Uç Nokta için Defender uygulamasında Microsoft'a geri bildirim verileri gönderme özelliğini yapılandırma seçeneğine sahiptir. Geri bildirim verileri, Microsoft'un ürünleri geliştirmelerine ve sorunları gidermelerine yardımcı olur.
 
 > [!NOTE]
-> ABD Kamu bulut müşterileri için geri bildirim veri toplama varsayılan olarak **devre dışıdır** . 
+> ABD Kamu bulut müşterileri için geri bildirim veri toplama varsayılan olarak **devre dışıdır** .
 
 Microsoft'a geri bildirim verileri gönderme seçeneğini yapılandırmak için aşağıdaki adımları kullanın:
 
 1. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
 
-1. İlkeye **Platform > iOS/iPadOS** adını verin, profil türünü seçin.
+1. İlkeye **iOS/iPadOS > Platform** adını verin, profil türünü seçin.
 
 1. Hedef uygulama olarak **Uç Nokta için Microsoft Defender'ı** seçin.
 

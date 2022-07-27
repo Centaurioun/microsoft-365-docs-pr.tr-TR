@@ -12,6 +12,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -23,17 +24,14 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 43c48081a86e33cd918bc4de8f01859bc1107583
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 1dc09357f2b16a0d00dc995ff2a9e10285ccb81b
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666844"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050688"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>İşlem merkezinde eylemleri görüntüleme ve yönetme
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **Şunlar için geçerlidir:**
 - Microsoft 365 Defender
@@ -46,6 +44,11 @@ Microsoft 365 Defender'deki tehdit koruma özellikleri belirli düzeltme eylemle
 
 > [!NOTE]
 > Düzeltme eylemlerini onaylamak veya reddetmek için [uygun izinlere](m365d-action-center.md#required-permissions-for-action-center-tasks) sahip olmanız gerekir. Daha fazla bilgi için [önkoşullara](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender) bakın.
+
+İşlem merkezine gitmek için aşağıdaki adımlardan birini uygulayın:
+
+- [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)adresine gidin veya
+- Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) Otomatik araştırma & yanıt **kartında İşlem Merkezi'nde Onayla'yı** seçin.
 
 ## <a name="review-pending-actions-in-the-action-center"></a>İşlem merkezinde bekleyen eylemleri gözden geçirme
 
@@ -99,5 +102,5 @@ Bir cihazın veya dosyanın bir tehdit olmadığını belirlediyseniz, bu eyleml
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Otomatik araştırmanın ayrıntılarını ve sonuçlarını görüntüleme](m365d-autoir-results.md)
+- [Otomatik bir soruşturmanın ayrıntılarını ve sonuçlarını görüntüleyin](m365d-autoir-results.md)
 - [Hatalı pozitif sonuçları veya hatalı negatifleri ele alın](m365d-autoir-report-false-positives-negatives.md)

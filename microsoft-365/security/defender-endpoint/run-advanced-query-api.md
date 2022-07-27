@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9f361a404ec3f8893ff4573fdc4db29904a5e766
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 3a916f3fe15e979f6d432e3a834453b04afe5a63
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020637"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051788"
 ---
 # <a name="advanced-hunting-api"></a>Gelişmiş tehdit avcılığı API'si
 
@@ -50,11 +50,11 @@ ms.locfileid: "67020637"
    - API çağrıları: Dakikada en fazla 45 çağrı, saatte en fazla 1500 çağrı.
    - Yürütme süresi: Saatte 10 dakika çalışma süresi ve günde 3 saatlik çalışma süresi.
 
-4. Tek bir isteğin en yüksek yürütme süresi 10 dakikadır.
+4. Tek bir isteğin en yüksek yürütme süresi 200 saniyedir.
 
 5. 429 yanıtı, istek sayısına veya CPU'ya göre kota sınırına ulaşmayı temsil eder. Hangi sınıra ulaşıldığını anlamak için yanıt gövdesini okuyun.
 
-6. Tek bir isteğin sorgu sonucu boyutu üst sınırı 124 MB'ı aşamaz. Aşılırsa, "Sorgu yürütme izin verilen sonuç boyutunu aştı. Sonuç miktarını sınırlayarak sorgunuzu iyileştirin ve yeniden deneyin" ifadesi görüntülenir.
+6. Tek bir isteğin sorgu sonucu boyutu üst sınırı 124 MB'ı aşamaz. Aşılırsa, "Sorgu yürütme izin verilen sonuç boyutunu aştı. Sonuç sayısını sınırlayarak sorgunuzu iyileştirin ve yeniden deneyin" ifadesi görüntülenir.
 
 ## <a name="permissions"></a>İzinler
 

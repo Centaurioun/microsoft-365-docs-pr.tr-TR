@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Üçüncü taraf koruma hizmetinden veya cihazından Office 365 için Microsoft Defender korumasına geçişe başlamak için adımları uygulayın.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9fc63db0c51c4e8478b426cc37002fbfcb23f6d1
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 69af51bbd39339b07af8f0832a113184afaf725b
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969485"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051700"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Office 365 için Microsoft Defender Geçiş - 2. Aşama: Kurulum
 
@@ -85,7 +85,7 @@ Ayrıca, pilottaki tüm kullanıcıların Outlook'ta kullanıcı gönderimiyle u
 
 - [Rapor İletisi eklentisi](enable-the-report-message-add-in.md)
 - [Rapor Kimlik Avı eklentisi](enable-the-report-phish-add-in.md)
-- [Burada](user-submission.md#third-party-email-reporting-tools) açıklandığı gibi desteklenen üçüncü taraf raporlama araçları
+- [Burada](user-submission.md#third-party-reporting-tools-options) açıklandığı gibi desteklenen üçüncü taraf raporlama araçları.
 
 Bu adımın önemini hafife almayın. Kullanıcı gönderimlerinden alınan veriler, geçiş öncesinde ve sonrasında iyi ve tutarlı bir son kullanıcı deneyimini doğrulamanız için gereken geri bildirim döngüsünü sağlar. Bu geri bildirim, bilinçli ilke yapılandırma kararları vermenize ve yönetiminize geçişin sorunsuz bir şekilde gittiğine ilişkin veri destekli raporlar sağlamanıza yardımcı olur.
 

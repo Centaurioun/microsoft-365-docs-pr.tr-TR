@@ -17,12 +17,12 @@ ms.custom: ''
 description: Yöneticiler, desteklenen belirli senaryolarda (üçüncü taraf kimlik avı simülasyonları ve güvenlik işlemleri (SecOps) posta kutularına teslim edilen iletiler) filtrelenmemesi gereken iletileri belirlemek için Exchange Online Protection (EOP) içinde gelişmiş teslim ilkesini kullanmayı öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9fbfa8f79698d053fe60388eec54ebe90f6501ff
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: b69e143ecae2974db249a64d32d18cb5ead32aa6
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917573"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051194"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Üçüncü taraf kimlik avı simülasyonlarının kullanıcılara ve filtrelenmemiş iletilerin SecOps posta kutularına teslimini yapılandırma
 
@@ -38,10 +38,10 @@ ms.locfileid: "66917573"
 - **Üçüncü taraf kimlik avı simülasyonları: Sanal saldırılar**, kuruluşunuzu gerçek bir saldırı etkilemeden önce savunmasız kullanıcıları belirlemenize yardımcı olabilir.
 - **Güvenlik işlemleri (SecOps) posta kutuları**: Güvenlik ekipleri tarafından filtrelenmemiş iletileri (hem iyi hem de kötü) toplamak ve çözümlemek için kullanılan ayrılmış posta kutuları.
 
-_Bu belirli senaryolardaki_ gelen iletilerin filtrelenmesini önlemek için Microsoft 365'teki _gelişmiş teslim ilkesini_ kullanırsınız.<sup>\*</sup> Gelişmiş teslim ilkesi, bu senaryolardaki iletilerin aşağıdaki sonuçları elde etmesini sağlar:
+_Bu belirli senaryolardaki_ gelen iletilerin filtrelenmesini <sup>\*</sup> önlemek için Microsoft 365'teki _gelişmiş teslim ilkesini_ kullanırsınız. Gelişmiş teslim ilkesi, bu senaryolardaki iletilerin aşağıdaki sonuçları elde etmesini sağlar:
 
 - EOP ve Office 365 için Microsoft Defender filtreler bu iletilerde hiçbir işlem gerçekleştirmez.<sup>\*</sup>
-- İstenmeyen posta ve kimlik avı için [sıfır saatlik Temizleme (ZAP)](zero-hour-auto-purge.md) bu iletilerde hiçbir işlem gerçekleştirmez.<sup>\*\*</sup>
+- İstenmeyen posta ve kimlik avı için [sıfır saatlik Temizleme (ZAP)](zero-hour-auto-purge.md) bu iletilerde<sup>\*\*</sup> hiçbir işlem gerçekleştirmez.
 - [Bu senaryolar için varsayılan sistem uyarıları](/microsoft-365/compliance/alert-policies#default-alert-policies) tetiklenmez.
 - [Office 365 için Defender'da AIR ve kümeleme](office-365-air.md) bu iletileri yoksayar.
 - Özellikle üçüncü taraf kimlik avı simülasyonları için:

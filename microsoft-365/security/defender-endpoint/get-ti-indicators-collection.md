@@ -1,8 +1,8 @@
 ---
 title: Liste Göstergeleri API'si
-description: Uç Nokta için Microsoft Defender'da tüm etkin Göstergeler koleksiyonunu almak için Liste Göstergeleri API'sini kullanmayı öğrenin.
-keywords: api'ler, genel api, desteklenen api'ler, Göstergeler koleksiyonu
-ms.prod: w10
+description: Uç Nokta için Microsoft Defender'daki tüm etkin Göstergelerin koleksiyonunu almak için Liste Göstergeleri API'sini kullanmayı öğrenin.
+keywords: apis, genel API, desteklenen API'ler, Göstergeler koleksiyonu
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,22 +15,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: adc3cfecba10431a909b72f875442d80b6638f03
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 1679f5f1b38ac3857b07625a883e267229eda8c6
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62997171"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051062"
 ---
 # <a name="list-indicators-api"></a>Liste Göstergeleri API'si
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,29 +38,29 @@ ms.locfileid: "62997171"
 
 ## <a name="api-description"></a>API açıklaması
 
-Tüm etkin Göstergeler koleksiyonunu [alınır](ti-indicator.md).
+Tüm etkin [Göstergelerin](ti-indicator.md) koleksiyonunu alır.
 
-[OData V4 sorgularını destekler](https://www.odata.org/documentation/).
+[OData V4 sorgularını](https://www.odata.org/documentation/) destekler.
 
-OData'nın `$filter` sorgusu şu şekilde destekler: `application`, `createdByDisplayName`, `expirationTime`, `generateAlert``title`, , `rbacGroupNames`, `rbacGroupIds`, `indicatorValue`, `indicatorType`, `creationTimeDateTimeUtc``createdBy`ve `action``severity` özellikleri.
-<br>```$stop``` maksimum değeri 10.000' olur. 
+OData'nın `$filter` sorgusu şu sürümlerde desteklenir: `application`, `createdByDisplayName`, `expirationTime`, `generateAlert`, `title`, , `rbacGroupIds``creationTimeDateTimeUtc``rbacGroupNames``indicatorType``createdBy``indicatorValue``action`ve `severity` özellikleri.
+<br>```$stop``` 10.000 maksimum değere sahip. 
 <br>```$skip```.
 
-Uç Nokta için [Microsoft Defender ile OData sorguları ile ilgili örneklere bakın](exposed-apis-odata-samples.md)
+[Uç Nokta için Microsoft Defender ile OData sorgularında](exposed-apis-odata-samples.md) örneklere bakın
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır. 
+1. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır. 
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Başlama](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Başlarken](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
-Uygulama|Ti.ReadWrite|'Okuma ve yazma Göstergeleri'
-Uygulama|Ti.ReadWrite.All|'Tüm Göstergeleri okuma ve yazma'
-Temsilcili (iş veya okul hesabı)|Ti.ReadWrite|'Okuma ve yazma Göstergeleri'
+Uygulama|Ti.ReadWrite|'Gösterge okuma ve yazma'
+Uygulama|Ti.ReadWrite.All|'Tüm Göstergeleri Okuma ve Yazma'
+Temsilci (iş veya okul hesabı)|Ti.ReadWrite|'Gösterge okuma ve yazma'
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -68,7 +68,7 @@ Temsilcili (iş veya okul hesabı)|Ti.ReadWrite|'Okuma ve yazma Göstergeleri'
 GET https://api.securitycenter.microsoft.com/api/indicators
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -80,16 +80,16 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem Gösterge varlıkları koleksiyonuyla birlikte 200, Tamam yanıt [kodu](ti-indicator.md) döndürür.
+Başarılı olursa, bu yöntem [Bir Gösterge](ti-indicator.md) varlıkları koleksiyonuyla 200 Tamam yanıt kodu döndürür.
 
 > [!NOTE]
-> Uygulamanın 'Ti.ReadWrite.All' izni varsa, tüm Göstergelere açık olur. Aksi takdirde, yalnızca oluşturduğu Göstergelere maruz kaldığında ortaya çıkar.
+> Uygulama 'Ti.ReadWrite.All' iznine sahipse, tüm Göstergelere gösterilir. Aksi takdirde, yalnızca oluşturduğu Göstergelere maruz kalır.
 
 ## <a name="example-1"></a>Örnek 1
 
 ### <a name="example-1-request"></a>Örnek 1 istek
 
-Tüm Göstergeleri alan bir isteğin örneği:
+Tüm Göstergeleri alan bir istek örneği aşağıda verilmiştir
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/indicators
@@ -97,7 +97,7 @@ GET https://api.securitycenter.microsoft.com/api/indicators
 
 ### <a name="example-1-response"></a>Örnek 1 yanıt
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 ```json
 HTTP/1.1 200 Ok
@@ -152,7 +152,7 @@ Content-type: application/json
 
 ### <a name="example-2-request"></a>Örnek 2 istek
 
-Burada, 'AlertAndBlock' eylemiyle tüm Göstergeler'i alan bir istek örneği ve 
+'AlertAndBlock' eylemiyle tüm Göstergeleri alan bir istek örneği aşağıda verilmiştir 
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'AlertAndBlock'
@@ -160,7 +160,7 @@ GET https://api.securitycenter.microsoft.com/api/indicators?$filter=action+eq+'A
 
 ### <a name="example-2-response"></a>Örnek 2 yanıt
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 ```json
 HTTP/1.1 200 Ok

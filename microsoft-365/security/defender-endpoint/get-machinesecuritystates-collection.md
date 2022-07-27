@@ -1,10 +1,10 @@
 ---
-title: Makine güvenliği durumları koleksiyonu API'sini edinin
-description: Uç Nokta için Microsoft Defender'ı kullanarak cihaz güvenlik durumları koleksiyonunu alın.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, get, cihaz, güvenlik, durum
+title: Makinelerin güvenlik durumları toplama API'sini al
+description: Uç Nokta için Microsoft Defender kullanarak cihaz güvenlik durumlarından oluşan bir koleksiyon alın.
+keywords: api'ler, graf api'leri, desteklenen API'ler, alma, cihaz, güvenlik, durum
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,33 +16,33 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: 91df2aab70b2bb8edb46700feefdae59df4ac68b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c7750868c557ba4ebb4c37584b69e710ae1a449b
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62998263"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051458"
 ---
-# <a name="get-machines-security-states-collection-api"></a>Makine güvenliği durumları koleksiyonu API'sini edinin
+# <a name="get-machines-security-states-collection-api"></a>Makine güvenlik durumları toplama API'lerini alma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:** 
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:** 
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Bir cihaz güvenlik durumları koleksiyonunu verir.
+Cihaz güvenlik durumlarının bir koleksiyonunu alır.
 
 ## <a name="permissions"></a>İzinler
 
-Kullanıcı için okuma izinleri gerekir.
+Kullanıcının okuma izinlerine sahip olması gerekir.
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -50,9 +50,9 @@ Kullanıcı için okuma izinleri gerekir.
 GET /testwdatppreview/machinesecuritystates
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
-Üst bilgi|Değer
+Üstbilgi|Değer
 :---|:---
 Yetkilendirme|Taşıyıcı {token}. **Gerekli**.
 İçerik türü|application/json
@@ -69,7 +69,7 @@ Başarılı olursa - 200 Tamam.
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiş.
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/machinesecuritystates
@@ -78,9 +78,9 @@ Content-type: application/json
 
 ### <a name="response-example"></a>Yanıt örneği
 
-İşte yanıtın bir örneği.
+Yanıtın bir örneğini aşağıda bulabilirsiniz.
 
-Alan *kimliği* , cihaz kimliğini ve cihaz bilgilerinde *alan kimliği** alanına eşittir.
+Alan *kimliği* cihaz kimliğini içerir ve cihaz bilgilerinde alan *kimliğine** eşittir.
 
 ```json
 HTTP/1.1 200 OK

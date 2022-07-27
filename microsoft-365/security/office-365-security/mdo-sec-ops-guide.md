@@ -18,12 +18,12 @@ ms.custom: ''
 description: SecOps personelinin Office 365 için Microsoft Defender yönetmesi için açıklayıcı bir playbook.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 389d48f5b7952f3d89a0bb75746babaa9430e7c5
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 97d7a03843fd9c4059bbaa99fa6a406919133026
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "66861679"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051084"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>Office 365 için Microsoft Defender Güvenlik İşlemleri Kılavuzu
 
@@ -295,7 +295,7 @@ Kullanıcı tarafından bildirilen iletilerin Microsoft 365 Defender portalında
 >
 > - Özel posta kutusu bir Exchange Online posta kutusudur.
 > - Üçüncü taraf raporlama aracı, bildirilen özgün iletiyi sıkıştırılmamış olarak içermelidir. EML veya . Özel posta kutusuna gönderilen iletideki MSG eki (özgün iletiyi özel posta kutusuna iletmeyin).
-> - Özel posta kutusu, olası hatalı iletilerin teslim edilmesine izin vermek için belirli önkoşullar gerektirir. Daha fazla bilgi için bkz [. Özel posta kutusu önkoşulları](user-submission.md#custom-mailbox-prerequisites).
+> - Özel posta kutusu, olası hatalı iletilerin teslim edilmesine izin vermek için belirli önkoşullar gerektirir. Daha fazla bilgi için bkz [. Kullanıcı gönderimleri posta kutusu için yapılandırma gereksinimleri](user-submission.md#configuration-requirements-for-the-user-submissions-mailbox).
 
 Kullanıcı tarafından bildirilen e-posta özel posta kutusuna ulaştığında, Office 365 için Defender kullanıcı **tarafından kötü amaçlı yazılım veya kimlik avı olarak bildirilen Email** adlı uyarıyı otomatik olarak oluşturur. Bu uyarı bir [AIR playbook'u](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook) başlatır. Playbook, bir dizi otomatik araştırma adımı gerçekleştirir:
 

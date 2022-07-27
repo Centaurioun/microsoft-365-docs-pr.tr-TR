@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: b94c52feb88703ac28f9cd72267d7fa8c952a741
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 03538b93115d28ed033097f99f446def673c5cdb
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489979"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050985"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS'ta Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -31,16 +31,28 @@ ms.locfileid: "66489979"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="network-protection"></a>Ağ koruması
+
 Uç Nokta için Microsoft Defender'da Ağ Koruması artık genel önizleme aşamasındadır. Ağ koruması, sahte Wi-Fi ilgili tehditlere, ananas cihazları gibi sahte donanımlara karşı koruma sağlar ve ilgili bir tehdit algılandığında kullanıcıya bildirir. Kullanıcılar güvenli olmayan bir bağlantıya bağlandıklarında güvenli ağlara bağlanmak ve ağları değiştirmek için kılavuzlu bir deneyim de görür.
 
 Özelliği Microsoft Endpoint Manager Yönetici merkezinden yapılandırma gibi esneklik sunmak için çeşitli yönetici denetimleri içerir. Yöneticiler, iOS cihazlarından Uç Nokta için Defender tarafından gönderilen verileri yapılandırmak için gizlilik denetimlerini de etkinleştirebilir. Daha fazla bilgi için [Bkz. Ağ Korumasını Yapılandırma](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection).
 
 iOS için ağ koruması kiracınız için zaten etkin. Ağ koruması özelliğini test eden son kullanıcılar TestFlight aracılığıyla uygulamanın önizleme sürümünü yükleyebilir. https://aka.ms/mdeiospp iOS cihazında adresine gidin. Bu, cihazınıza TestFlight uygulamasını yüklemenizi veya zaten yüklü olması durumunda TestFlight'ı açmanızı ister. TestFlight uygulamasında, Microsoft Defender Uç Noktasını yüklemek için ekrandaki yönergeleri izleyin. Lütfen MDE sürüm numarasının 1.1.29270104 olduğunu doğrulayın.
 
+## <a name="privacy-controls"></a>Gizlilik Denetimleri
+
+iOS'ta Uç Nokta için Microsoft Defender, hem Yöneticiler hem de Son Kullanıcılar için Gizlilik Denetimleri'ni etkinleştirir. Bu, kayıtlı (MDM) ve kaydı kaldırılmış (MAM) cihazlar için denetimleri içerir. Yöneticiler kimlik avı uyarısı raporunda gizliliği yapılandırırken, Son Kullanıcılar da kendi kuruluşlarıyla paylaşılan bilgileri yapılandırabilir.
+
+## <a name="optional-permissions-and-disable-web-protection"></a>İsteğe Bağlı İzinler ve Web Korumasını Devre Dışı Bırakma
+
+iOS'ta Uç Nokta için Microsoft Defender, ekleme akışında **İsteğe Bağlı İzinler'i** etkinleştirir. Şu anda ekleme akışında MDE için gereken izinler zorunlu. Bu özellik sayesinde yönetici, ekleme sırasında zorunlu **VPN İznini** zorunlu tutmadan KCG cihazlarına MDE dağıtabilir. Son Kullanıcılar zorunlu izinler olmadan uygulamayı ekleyebilir ve daha sonra bu izinleri gözden geçirebilir. Bu özellik şu anda yalnızca kayıtlı cihazlar (MDM) için mevcuttur.
+
+**Web Korumasını Devre Dışı Bırak** ile VPN ayarlamak istemeyen müşteriler, **Web Koruması'nın** devre dışı bırakılmasını ve bu özellik olmadan MDE'nin dağıtılmasını yapılandırabilir. Diğer MDE özellikleri çalışmaya devam edecektir. Bu yapılandırma hem kayıtlı (MDM) cihazlar hem de kayıtlı olmayan (MAM) cihazlar için kullanılabilir.
+
 ## <a name="integration-with-tunnel"></a>Tunnel ile tümleştirme
+
 iOS'ta Uç Nokta için Microsoft Defender artık tek bir uygulamada güvenliği ve bağlantıyı etkinleştirmek için bir VPN ağ geçidi çözümü olan Microsoft Tunnel ile tümleştirilebilir.  Tunnel ile tümleştirme, tek bir uygulamayla iOS'ta daha basit ve güvenli bir VPN deneyimi sağlar. Bu özellik daha önce yalnızca Android'de kullanılabilirdi. Daha fazla ayrıntı için [buradaki techcommunity gönderisine bakın](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
 
 ## <a name="improved-experience-on-supervised-ios-devices"></a>Denetimli iOS cihazlarında geliştirilmiş deneyim
@@ -49,7 +61,7 @@ iOS'ta Uç Nokta için Microsoft Defender artık bu tür cihazlarda platform tar
 
 ## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-app-store"></a>Uç Nokta için Microsoft Defender artık Uygulama mağazasında Microsoft Defender
 
-Uç Nokta için Microsoft Defender artık uygulama mağazasında **Microsoft Defender** olarak kullanılabilir. Bu güncelleştirmeyle, uygulama **ABD bölgesindeki Tüketiciler** için önizleme olarak kullanıma sunulacaktır. uygulamada iş veya kişisel hesabınızla nasıl oturum açtığınıza bağlı olarak, Uç Nokta için Microsoft Defender veya kişiler için Microsoft Defender özelliklerine erişebilirsiniz. Daha fazla bilgi için [bu bloga](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) bakın.
+Uç Nokta için Microsoft Defender artık uygulama mağazasında **Microsoft Defender** olarak kullanılabilir. Bu güncelleştirmeyle, uygulama **ABD bölgesindeki Tüketiciler** için önizleme olarak kullanıma sunulacaktır. uygulamada iş veya kişisel hesabınızla nasıl oturum açtığınıza bağlı olarak, Uç Nokta için Microsoft Defender veya kişiler için Microsoft Defender özelliklerine erişebilirsiniz. Daha fazla bilgi için [bu blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) yazısına bakın.
 
 ## <a name="threat-and-vulnerability-management"></a>Tehdit ve Güvenlik Açığı Yönetimi
 
@@ -59,7 +71,6 @@ Uç Nokta için Microsoft Defender artık uygulama mağazasında **Microsoft Def
 - **Tunnel ile tümleştirme** - iOS'taki Uç Nokta için Microsoft Defender artık tek bir uygulamada güvenliği ve bağlantıyı etkinleştirmek için bir VPN ağ geçidi çözümü olan Microsoft Tunnel ile tümleştirilebilir. Daha fazla bilgi için bkz. [Microsoft Tunnel'a Genel Bakış](/mem/intune/protect/microsoft-tunnel-overview).
 - Microsoft Endpoint Manager (Intune) aracılığıyla kaydedilen **kayıtlı iOS cihazları için sıfır dokunmayla ekleme** genel kullanıma sunulmuştur. Daha fazla bilgi için bkz. [Uç Nokta için Microsoft Defender sıfır dokunma ekleme](/microsoft-365/security/defender-endpoint/ios-install#zero-touch-onboarding-of-microsoft-defender-for-endpoint).
 - Hata düzeltmeleri.
-
 
 ## <a name="1124210103"></a>1.1.24210103
 

@@ -11,22 +11,21 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b9689cb0a3470a19e4ceeeb80cd3e77f2d2d8edf
-ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
+ms.openlocfilehash: 5c9adadb46ce040c6c98f2551c14c41fdda333e1
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66843575"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051546"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender'daki yenilikler
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 Microsoft 365 Defender'deki yeni özellikleri ve işlevleri listeler. 
 
@@ -50,6 +49,10 @@ Ayrıca, ürün güncelleştirmelerini ve önemli bildirimleri [ileti merkezi](h
 
 ## <a name="june-2022"></a>Haziran 2022
 - (Önizleme) [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) ve [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) tabloları artık gelişmiş tehdit avcılığı şemasında kullanılabilir. Çeşitli yapılandırmaların durumu ve cihazların saldırı yüzeyi alanı durumları dahil olmak üzere Defender Güvenlik Açığı Yönetimi'ndeki değerlendirme olaylarını aramak için bu tabloları kullanın.
+
+- Microsoft 365 Defender portalında yeni kullanıma sunulan Otomatik araştırma & yanıt kartı, bekleyen düzeltme eylemlerine genel bir bakış sağlar.
+Güvenlik operasyonları ekibi onay bekleyen tüm eylemleri ve bu eylemlerin kartın kendisinde onaylanması için gereken süreyi görüntüleyebilir. Güvenlik ekibi hızla İşlem merkezine gidebilir ve uygun düzeltme eylemlerini gerçekleştirebilir. Otomatik araştırma & yanıt kartında Tam Otomasyon sayfasının bağlantısı da bulunur. Bu, güvenlik operasyonları ekibinin uyarıları etkili bir şekilde yönetmesine ve düzeltme eylemlerini zamanında tamamlamasına olanak tanır.
+
 
 ## <a name="may-2022"></a>Mayıs 2022
 - (Önizleme) Yakın zamanda duyurulan [Microsoft Güvenlik Uzmanları](https://aka.ms/MicrosoftSecurityExperts) adlı yeni bir hizmet kategorisine genişletilmesine uygun olarak, genel önizleme [için Microsoft Defender Experts for Hunting (Avcılık](defenderexpertsforhuntingprev.md) için Defender Uzmanları) kullanıma sunulmuştur. Tehdit Avcılığı için Defender Uzmanları, güçlü bir güvenlik operasyonları merkezine sahip olan ancak Microsoft'un uç noktalar, Office 365, bulut uygulamaları ve kimlik gibi Microsoft Defender verilerinde tehditleri proaktif olarak avlamalarına yardımcı olmasını isteyen müşterilere yöneliktir. 

@@ -2,7 +2,7 @@
 title: Microsoft 365 Defender'da Uç Nokta için Microsoft Defender
 description: Microsoft Defender Güvenlik Merkezi Microsoft 365 Defender değişiklikleri hakkında bilgi edinin
 keywords: Microsoft 365 Defender, Office 365 için Microsoft Defender, Uç Nokta için Microsoft Defender, MDO, MDE, güvenlik portalı, defender güvenlik portalı ile çalışmaya başlama
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: dd8721bd8c62a99180f9e8cf34b05c5ec6c8b4c8
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 9d0bff0caec40fa0f4503508643f9aae95a27389
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617204"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051524"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft 365 Defender'da Uç Nokta için Microsoft Defender
 
@@ -66,7 +66,7 @@ Tarihsel olarak[, Microsoft Defender Güvenlik Merkezi](/windows/security/threat
 Microsoft 365 Defender'daki Uç Nokta için Microsoft Defender, [yönetilen güvenlik hizmeti sağlayıcılarına (MSSP) Microsoft Defender Güvenlik Merkezi](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) [aynı şekilde erişim verilmesini](mssp-access.md) destekler.
 
 > [!IMPORTANT]
-> Microsoft 365 Defender'da gördükleriniz geçerli aboneliklerinize bağlıdır. Örneğin, Office 365 için Microsoft Defender lisansınız yoksa E-posta & İşbirliği bölümü gösterilmez.
+> Microsoft 365 Defender'da gördükleriniz geçerli aboneliklerinize bağlıdır. Örneğin, Office 365 için Microsoft Defender lisansınız yoksa Email & İşbirliği bölümü gösterilmez.
 
 > [!Note]
 > Microsoft 365 Defender şu şekilde kullanılamaz:
@@ -116,7 +116,7 @@ Bu tablo, Microsoft Defender Güvenlik Merkezi ile Microsoft 365 Defender arası
 |---------|---------|
 | Raporlar  | Tehdit koruması, Cihaz durumu ve uyumluluğu ve Güvenlik açığı bulunan cihazlar dahil olmak üzere uç noktalar ve e-posta & işbirliği raporlarına bakın. |
 | Hizmet Durumu  |  Şu anda [Microsoft 365 yönetim merkezi](https://admin.microsoft.com/) "Hizmet durumu" sayfasına bağlanır. |
-| Ayarlar |  Microsoft 365 Defender, Uç Noktalar, E-posta & işbirliği, Kimlikler ve Cihaz bulma ayarlarınızı yönetin.   |
+| Ayarlar |  Microsoft 365 Defender, Uç Noktalar, Email & işbirliği, Kimlikler ve Cihaz bulma ayarlarınızı yönetin.   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365 güvenlik gezintisi ve özellikleri
 
@@ -148,7 +148,7 @@ Olay ve uyarı yönetimini e-postanız, cihazlarınız ve kimlikleriniz arasınd
 
 Uzman Microsoft güvenlik araştırmacılarından tehdit bilgileri alın. Tehdit Analizi, güvenlik ekiplerinin yeni ortaya çıkan tehditlerle karşılaştığında daha verimli olmasını sağlar. Tehdit Analizi şunları içerir:
 
-- Office 365 için Microsoft Defender e-postayla ilgili algılamalar ve azaltmalar. Bu, Uç Nokta için Microsoft Defender'dan sağlanan uç nokta verilerine ek olarak sağlanır.
+- Office 365 için Microsoft Defender Email ilgili algılamalar ve risk azaltmaları. Bu, Uç Nokta için Microsoft Defender'dan sağlanan uç nokta verilerine ek olarak sağlanır.
 - Tehditlerle ilgili olaylar görünümü.
 - Raporlarda eyleme dönüştürülebilir bilgileri hızla tanımlamak ve kullanmak için gelişmiş deneyim.
 
@@ -172,7 +172,7 @@ Raporları görüntüleyin, ayarlarınızı değiştirin ve kullanıcı rollerin
 
 [Uç Nokta için Defender SIEM API'sini](../defender-endpoint/enable-siem-integration.md) kullanıyorsanız, bunu yapmaya devam edebilirsiniz. API yüküne Uyarı sayfasına veya Microsoft 365 güvenlik portalındaki olay sayfasına işaret eden yeni bağlantılar ekledik. Yeni API alanları LinkToMTP ve IncidentLinkToMTP'i içerir. Daha fazla bilgi için bkz. [Hesapları Uç Nokta için Microsoft Defender Microsoft 365 Defender yeniden yönlendirme](./microsoft-365-security-mde-redirection.md).
 
-### <a name="email-alerts"></a>E-posta uyarıları
+### <a name="email-alerts"></a>uyarıları Email
 
 Uç Nokta için Defender için e-posta uyarılarını kullanmaya devam edebilirsiniz. E-postalara uyarı sayfasına veya Microsoft 365 Defender'daki olay sayfasına işaret eden yeni bağlantılar ekledik. Daha fazla bilgi için bkz. [Hesapları Uç Nokta için Microsoft Defender Microsoft 365 Defender yeniden yönlendirme](./microsoft-365-security-mde-redirection.md).
 

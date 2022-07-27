@@ -2,7 +2,7 @@
 title: Yönetilen güvenlik hizmeti sağlayıcısı (MSSP) erişimi sağlama
 description: Microsoft Defender Güvenlik Merkezi Microsoft 365 Defender portalındaki değişiklikler hakkında bilgi edinin
 keywords: Microsoft 365 Defender portalı, Office 365 için Microsoft Defender, Uç Nokta için Microsoft Defender, MDO, MDE, tek bölmeli cam, yakınsanmış portal, güvenlik portalı, defender güvenlik portalı ile çalışmaya başlama
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 4eccd4d6140810bae4caef5e194082aeb3054217
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 3df43fd4de6bd040db0acd13678434c7302aff5d
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102382"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050765"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Yönetilen güvenlik hizmeti sağlayıcısı (MSSP) erişimi sağlama 
 
