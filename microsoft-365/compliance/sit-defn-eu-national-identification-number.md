@@ -21,14 +21,14 @@ recommendations: false
 description: AB ulusal kimlik numarası hassas bilgi türü varlık tanımı.
 ms.openlocfilehash: 77f1bf94ae68a93071d25ed4610704111468d0ae
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66949009"
 ---
 # <a name="eu-national-identification-number"></a>AB ulusal kimlik numarası
 
-Bu varlıklar AB Ulusal Kimlik Numarası'ndadır ve hassas bilgi türleridir.
+Bu varlıklar, AB Ulusal Kimlik Numarasında bulunur ve hassas bilgi türü kapsamındadır.
 
 - [Avusturya](sit-defn-austria-identity-card.md)
 - [Belçika](sit-defn-belgium-national-number.md)
@@ -47,7 +47,7 @@ Bu varlıklar AB Ulusal Kimlik Numarası'ndadır ve hassas bilgi türleridir.
 - [İtalya](sit-defn-italy-fiscal-code.md)
 - [Letonya](sit-defn-latvia-personal-code.md)
 - [Litvanya](sit-defn-lithuania-personal-code.md)
-- [Luxemburg](sit-defn-luxemburg-national-identification-number-natural-persons.md)
+- [Lüksemburg](sit-defn-luxemburg-national-identification-number-natural-persons.md)
 - [Malta](sit-defn-malta-identity-card-number.md)
 - [Hollanda](sit-defn-netherlands-citizens-service-number.md)
 - [Polonya](sit-defn-poland-national-id.md)
@@ -56,4 +56,4 @@ Bu varlıklar AB Ulusal Kimlik Numarası'ndadır ve hassas bilgi türleridir.
 - [Slovakya](sit-defn-slovakia-personal-number.md)
 - [Slovenya](sit-defn-slovenia-unique-master-citizen-number.md)
 - [İspanya](sit-defn-spain-dni.md)
-- [INGİLTERE.](sit-defn-uk-national-insurance-number.md)
+- [BK](sit-defn-uk-national-insurance-number.md)
