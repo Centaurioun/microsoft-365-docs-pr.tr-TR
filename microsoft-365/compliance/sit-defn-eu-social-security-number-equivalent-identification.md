@@ -1,5 +1,5 @@
 ---
-title: AB sosyal güvenlik numarası veya eşdeğer kimlik varlığı tanımı
+title: AB sosyal güvenlik numarası veya eşdeğer kimlik varlık tanımı
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,17 +18,17 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: AB sosyal güvenlik numarası veya eşdeğer tanımlama hassas bilgi türü varlık tanımı.
+description: AB sosyal güvenlik numarası veya eşdeğer kimlik hassas bilgi türü varlık tanımı.
 ms.openlocfilehash: 70fb539042aa7abbbb1089de7387cb5d3db1df5d
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66949005"
 ---
 # <a name="eu-social-security-number-or-equivalent-identification"></a>AB sosyal güvenlik numarası veya eşdeğer kimlik
 
-Bu varlıklar AB Sosyal Güvenlik Numarası'nda veya eşdeğer kimliktedir ve hassas bilgi türleridir.
+Bu varlıklar, AB Sosyal Güvenlik Numarasında veya eşdeğer kimlikte bulunur ve hassas bilgi türü kapsamındadır.
 
 - [Avusturya](sit-defn-austria-social-security-number.md)
 - [Belçika](sit-defn-belgium-national-number.md)
