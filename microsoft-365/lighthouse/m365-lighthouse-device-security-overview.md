@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için güvenlik risklerini görüntülemeyi öğrenin.
-ms.openlocfilehash: 52378e088b6b131008efa3bd8c2d480e8a871df7
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: f4c33552c71ada14d11e309cc2d7328f203e066c
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66494079"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055976"
 ---
 # <a name="overview-of-the-microsoft-defender-for-endpoint-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Uç Nokta için Microsoft Defender sayfasına genel bakış
 
 Uç Nokta için Microsoft Defender, müşterilerinizin cihazlarını fidye yazılımlarından, kötü amaçlı yazılımlardan, kimlik avından ve diğer tehditlerden koruma altına almak için uç nokta güvenliği sağlar. Microsoft 365 Lighthouse, tüm müşteri kiracılarınız için uç nokta güvenlik içgörülerini ve bilgilerini görüntülemenizi sağlar.
 
-Microsoft 365 Lighthouse Uç Nokta için Microsoft Defender sayfasına **Güvenlik Olayları** kartı altındaki **Giriş** sayfasından veya sol gezinti bölmesindeki **Cihazlar \> Cihaz Güvenliği sekmesinden** erişebilirsiniz. Kiracılarınızda dikkat etmeniz gereken güvenlik olaylarını ve uyarılarını ve Uç Nokta için Microsoft Defender eklenmiş cihazları görürsünüz.
+Microsoft 365 Lighthouse'daki Uç Nokta için Microsoft Defender sayfasına Giriş sayfasındaki **Güvenlik olayları** kartından veya **Cihazlar Cihaz** > **güvenliği'ni** seçerek sol gezinti bölmesinden erişebilirsiniz. Kiracılarınızda dikkat etmeniz gereken güvenlik olaylarını ve uyarılarını ve Uç Nokta için Microsoft Defender eklenmiş cihazları görürsünüz.
 
 ## <a name="incidents-and-alerts-tab"></a>Olaylar ve uyarılar sekmesi
 
@@ -38,7 +38,7 @@ Olaylar ve uyarılar sekmesi, müşterilerinizin ağındaki cihazlardan bayrak e
 
 ## <a name="devices-tab"></a>Cihazlar sekmesi
 
-Müşteri kiracılarınızdaki Uç Nokta için Microsoft Defender eklenen tüm cihazların Cihazlar sekmesi listesi. Bu liste, Microsoft Endpoint Manager ve Uç Nokta için Microsoft Defender tarafından yönetilen cihazları içerir.
+Cihazlar sekmesi, müşteri kiracılarınızdaki Uç Nokta için Microsoft Defender eklenen tüm cihazları listeler. Bu liste, Microsoft Endpoint Manager ve Uç Nokta için Microsoft Defender tarafından yönetilen cihazları içerir.
 
 Cihazlar sekmesi aşağıdaki seçenekleri de içerir:
 

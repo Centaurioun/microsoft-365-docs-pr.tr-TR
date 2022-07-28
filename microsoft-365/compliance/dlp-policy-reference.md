@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ilkesi bileşeni ve yapılandırma başvurusu
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 0185b214d0b566fd387d753988e76fef0ee675b8
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9184bf848a1bf23bde639767c09a66e681d5553f
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943833"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056580"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Veri Kaybı Önleme ilkesi başvurusu
 
@@ -64,7 +64,7 @@ güncelleştirme: 23.06.2021
 |Tıbbi ve sağlık| Kanada Sağlık Bilgileri Yasası (HIA) |- [Kanada pasaport numarası](sit-defn-canada-passport-number.md) </br> - [Kanada sosyal sigorta numarası](sit-defn-canada-social-insurance-number.md) </br> - [Kanada sağlık hizmeti numarası](sit-defn-canada-health-service-number.md) </br> - [Kanada Kişisel Sağlık Kimlik Numarası](sit-defn-canada-personal-health-identification-number.md)|
 |Tıbbi ve sağlık| Kanada Kişisel Sağlık Bilgileri Yasası (PHIA) Manitoba|- [Kanada sosyal sigorta numarası](sit-defn-canada-social-insurance-number.md) </br> - [Kanada sağlık hizmeti numarası](sit-defn-canada-health-service-number.md) </br> - [Kanada Kişisel Sağlık Kimlik Numarası](sit-defn-canada-personal-health-identification-number.md)|
 |Tıbbi ve sağlık| Kanada Kişisel Sağlık Yasası (PHIPA) Ontario |- [Kanada pasaport numarası](sit-defn-canada-passport-number.md) </br> - [Kanada sosyal sigorta numarası](sit-defn-canada-social-insurance-number.md) </br> - [Kanada sağlık hizmeti numarası](sit-defn-canada-health-service-number.md) </br> - [Kanada Kişisel Sağlık Kimlik Numarası](sit-defn-canada-personal-health-identification-number.md)|
-|Tıbbi ve sağlık| INGİLTERE. Tıbbi Raporlara Erişim Yasası|- [Birleşik Krallık ulusal sağlık hizmeti numarası](sit-defn-uk-national-health-service-number.md) </br> - [Birleşik Krallık ulusal sigorta numarası (NINO)](sit-defn-uk-national-insurance-number.md)|
+|Tıbbi ve sağlık| BK Tıbbi Raporlara Erişim Yasası|- [Birleşik Krallık ulusal sağlık hizmeti numarası](sit-defn-uk-national-health-service-number.md) </br> - [Birleşik Krallık ulusal sigorta numarası (NINO)](sit-defn-uk-national-insurance-number.md)|
 |Tıbbi ve sağlık| ABD Sağlık Sigortası Yasası (HIPAA) Geliştirildi|</br> - [Uluslararası hastalık sınıflandırması (ICD-9-CM)](sit-defn-international-classification-of-diseases-icd-9-cm.md) </br> - [Uluslararası hastalık sınıflandırması (ICD-10-CM)](sit-defn-international-classification-of-diseases-icd-10-cm.md) </br> - [Tüm Tam Adlar](sit-defn-all-full-names.md) </br> - [Tüm Tıbbi Hüküm ve Koşullar](sit-defn-all-medical-terms-conditions.md) </br> - [ABD Fiziksel Adresleri](sit-defn-us-physical-addresses.md)|
 |Tıbbi ve sağlık| ABD Sağlık Sigortası Yasası (HIPAA)| - [Uluslararası hastalık sınıflandırması (ICD-9-CM)](sit-defn-international-classification-of-diseases-icd-9-cm.md) </br> - [Uluslararası hastalık sınıflandırması (ICD-10-CM)](sit-defn-international-classification-of-diseases-icd-10-cm.md)|
 |Gizlilik| Gelişmiş Avustralya Gizlilik Yasası|- [Avustralya ehliyet numarası](sit-defn-australia-drivers-license-number.md) </br> - [Avustralya pasaport numarası](sit-defn-australia-passport-number.md) </br> - [Tüm Tam Adlar](sit-defn-all-full-names.md) </br> - [Tüm Tıbbi Hüküm ve Koşullar](sit-defn-all-medical-terms-conditions.md) </br> - [Avustralya Fiziksel Adresleri](sit-defn-australia-physical-addresses.md)|
@@ -85,10 +85,10 @@ güncelleştirme: 23.06.2021
 |Gizlilik| Japonya Kişisel Bilgilerin Korunması Geliştirildi|- [Japonya Sosyal Sigorta Numarası (SIN)](sit-defn-japan-social-insurance-number.md) </br> - [Japonya Numaram - Kişisel](sit-defn-japan-my-number-personal.md)</br> - [Japonya pasaport numarası](sit-defn-japan-passport-number.md) </br> - [Japonya ehliyet numarası](sit-defn-japan-drivers-license-number.md)</br> - [Tüm Tam Adlar](sit-defn-all-full-names.md)</br> - [Japonya Fiziksel Adresleri](sit-defn-all-physical-addresses.md)|
 |Gizlilik| Japonya Kişisel Bilgilerin Korunması|- [Japonya'da ikamet eden kayıt numarası](sit-defn-japan-resident-registration-number.md)</br> - [Japonya Sosyal Sigorta Numarası (SIN)](sit-defn-japan-social-insurance-number.md)|
 |Gizlilik| Suudi Arabistan Kişisel Olarak Tanımlanabilir (PII) Verileri|- [Suudi Arabistan Ulusal Kimliği](sit-defn-saudi-arabia-national-id.md)|
-|Gizlilik| INGİLTERE. Veri Koruma Yasası|- [Birleşik Krallık ulusal sigorta numarası (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [ABD/Birleşik Krallık pasaport numarası](sit-defn-us-uk-passport-number.md) </br> - [SWIFT kodu](sit-defn-swift-code.md)|
-|Gizlilik| INGİLTERE. Gizlilik ve Elektronik İletişim Düzenlemeleri|- [SWIFT kodu](sit-defn-swift-code.md)|
-|Gizlilik| INGİLTERE. Kişisel Bilgiler (PII) Verileri|- [Birleşik Krallık ulusal sigorta numarası (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [ABD/Birleşik Krallık pasaport numarası](sit-defn-us-uk-passport-number.md)|
-|Gizlilik| INGİLTERE. Kişisel Bilgiler Çevrimiçi Uygulama Kodu (PIOCP)|- [Birleşik Krallık ulusal sigorta numarası (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [Birleşik Krallık ulusal sağlık hizmeti numarası](sit-defn-uk-national-health-service-number.md) </br> - [SWIFT kodu](sit-defn-swift-code.md)|
+|Gizlilik| BK Veri Koruma Yasası|- [Birleşik Krallık ulusal sigorta numarası (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [ABD/Birleşik Krallık pasaport numarası](sit-defn-us-uk-passport-number.md) </br> - [SWIFT kodu](sit-defn-swift-code.md)|
+|Gizlilik| BK Gizlilik ve Elektronik İletişim Düzenlemeleri|- [SWIFT kodu](sit-defn-swift-code.md)|
+|Gizlilik| BK Kişisel Bilgiler (PII) Verileri|- [Birleşik Krallık ulusal sigorta numarası (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [ABD/Birleşik Krallık pasaport numarası](sit-defn-us-uk-passport-number.md)|
+|Gizlilik| BK Kişisel Bilgiler Çevrimiçi Uygulama Kodu (PIOCP)|- [Birleşik Krallık ulusal sigorta numarası (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [Birleşik Krallık ulusal sağlık hizmeti numarası](sit-defn-uk-national-health-service-number.md) </br> - [SWIFT kodu](sit-defn-swift-code.md)|
 |Gizlilik| ABD Vatanseverlik Yasası Geliştirildi|- [Kredi kartı numarası](sit-defn-credit-card-number.md) </br> - [ABD banka hesap numarası](sit-defn-us-bank-account-number.md)</br> - [ABD Bireysel Vergi Mükellefi Kimlik Numarası (ITIN)](sit-defn-us-individual-taxpayer-identification-number.md)  </br> - [ABD sosyal güvenlik numarası (SSN)](sit-defn-us-social-security-number.md)</br> - [Tüm Tam Adlar](sit-defn-all-full-names.md)</br> - [ABD Fiziksel Adresleri](sit-defn-us-physical-addresses.md)|
 |Gizlilik| ABD Vatanseverlik Yasası|- [Kredi kartı numarası](sit-defn-credit-card-number.md) </br> - [ABD banka hesap numarası](sit-defn-us-bank-account-number.md)</br> - [ABD Bireysel Vergi Mükellefi Kimlik Numarası (ITIN)](sit-defn-us-individual-taxpayer-identification-number.md)  </br> - [ABD sosyal güvenlik numarası (SSN)](sit-defn-us-social-security-number.md)|
 |Gizlilik| ABD Kişisel Bilgiler (PII) Verileri İyileştirilmiş|- [ABD Bireysel Vergi Mükellefi Kimlik Numarası (ITIN)](sit-defn-us-individual-taxpayer-identification-number.md)  </br> - [ABD sosyal güvenlik numarası (SSN)](sit-defn-us-social-security-number.md)</br> - [ABD/Birleşik Krallık pasaport numarası](sit-defn-us-uk-passport-number.md)</br> - [Tüm Tam Adlar](sit-defn-all-full-names.md)</br> - [ABD Fiziksel Adresleri](sit-defn-us-physical-addresses.md)|
@@ -110,7 +110,7 @@ DLP ilkesi, birden çok konumda hassas bilgiler içeren öğeleri bulabilir ve k
 |Bulut Uygulamaları için Microsoft Defender   | bulut uygulaması örneği       |bekleyen veriler         | - [Microsoft dışı bulut uygulamaları için veri kaybı önleme ilkelerini kullanma](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |Aygıtları  |kullanıcı veya grup         |bekleyen veriler </br>  kullanımdaki veriler </br>  hareket halindeki veriler         |- [Uç nokta veri kaybını önleme hakkında bilgi edinin](endpoint-dlp-learn-about.md) </br>- [Uç nokta veri kaybı önlemeyi kullanmaya başlama](endpoint-dlp-getting-started.md) </br>- [Information Protection için cihaz ara sunucusu ve internet bağlantısı ayarlarını yapılandırma](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |Şirket içi depolar (dosya paylaşımları ve SharePoint)    |Depo         | bekleyen veriler         | - [Şirket içi veri kaybı önleme tarayıcısı hakkında bilgi edinin](dlp-on-premises-scanner-learn.md) </br> - [Şirket içi veri kaybı önleme tarayıcısını kullanmaya başlama](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
-|PowerBI| Çalışma alanları | kullanımdaki veriler | Hayır|
+|Power BI| Çalışma alanları | kullanımdaki veriler | Hayır|
 
 Exchange'e belirli dağıtım gruplarını dahil etmeyi seçerseniz, DLP ilkesinin kapsamı yalnızca bu grubun üyeleriyle tamamlanır. Benzer şekilde bir dağıtım grubunu dışlamak, bu dağıtım grubunun tüm üyelerini ilke değerlendirmesinin dışında tutar. İlkenin kapsamını dağıtım listelerinin, dinamik dağıtım gruplarının ve güvenlik gruplarının üyelerine göre belirleyebilirsiniz. DLP ilkesi bu tür 50'den fazla ekleme ve dışlama içeremez.
 
@@ -134,10 +134,13 @@ DLP ilkeleri hassas öğeleri hassas bilgi türüyle (SIT) veya duyarlılık eti
 |Aygıtları |Evet | Evet|  Hayır|
 |Bulut Uygulamaları için Microsoft Defender | Evet| Evet| Evet|
 |Şirket içi depolar| Evet| Evet| Hayır|
-|PowerBI|Evet | Evet| Hayır|
+|Power BI|Evet | Evet| Hayır|
 
 > [!NOTE]
-> DLP, e-postalardaki ve eklerdeki duyarlılık etiketlerini algılamayı destekler Bkz. [DLP ilkelerinde duyarlılık etiketlerini koşullar olarak kullanma](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
+> DLP, hassas belgeleri algılamak için bir koşul olarak eğitilebilir sınıflandırıcıların kullanılmasını (önizlemede) destekler. İçerik Exchange Online, Sharepoint Online siteleri, OneDrive İş hesapları, Teams Sohbeti ve Kanalları ve Cihazlar'daki eğitilebilir sınıflandırıcılar tarafından tanımlanabilir. Daha fazla bilgi için bkz [. Eğitilebilir Sınıflandırıcılar](classifier-learn-about.md).
+
+> [!NOTE]
+> DLP, e-postalarda ve eklerde duyarlılık etiketlerini algılamayı destekler. Daha fazla bilgi için bkz. [DLP ilkelerinde koşul olarak duyarlılık etiketlerini kullanma](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
 
 ## <a name="rules"></a>Kurallar
 
@@ -154,7 +157,7 @@ Kurallar, DLP ilkelerinin iş mantığıdır. Şunlardan oluşur:
 - Eşleştirildiğinde ilkeyi tetikleyen [**koşullar**](#conditions)
 - [**Koşulların özel durumları**](#exceptions)
 - [**İlke**](#actions) tetiklendiğinde yapılması gereken eylemler
-- [**Kullanıcılarınızı**](#user-notifications-and-policy-tips) ilkeyi tetikleyen bir işlem yaparken bilgilendirmek ve kuruluşunuzun hassas bilgilerin nasıl ele alındığını öğrenmek için eğitmeye yardımcı olan kullanıcı bildirimleri
+- [**Bir**](#user-notifications-and-policy-tips) ilkeyi tetikleyen bir işlem yaparken kullanıcılarınızı bilgilendirmek ve kuruluşunuzun hassas bilgilerin nasıl ele alındığını öğrenmek için onları eğitmeye yardımcı olan kullanıcı bildirimleri
 - Yönetici tarafından yapılandırıldığında [**Kullanıcı Geçersiz Kılmaları**](#user-overrides), kullanıcıların bir engelleme eylemini seçmeli olarak geçersiz kılmasına izin verir
 - Kural eşleşmesi gerçekleştiğinde yöneticileri ve diğer önemli paydaşları bilgilendiren [**Olay Raporları**](#incident-reports)
 - Kural değerlendirmesinin önceliğini tanımlayan ve daha fazla kural ve ilke işlemeyi durdurabilen [**Ek Seçenekler**](#additional-options).
@@ -165,7 +168,7 @@ Kurallar, DLP ilkelerinin iş mantığıdır. Şunlardan oluşur:
 
 #### <a name="hosted-service-workloads"></a>Barındırılan hizmet iş yükleri
 
-Exchange Online, SharePoint Online ve OneDrive İş gibi barındırılan hizmet iş yükleri için her kurala oluşturulduğu sırada bir öncelik atanır. Bu, ilk oluşturulan kuralın ilk önceliğe sahip olduğu, ikinci oluşturulan kuralın ikinci önceliğe sahip olduğu vb. anlamına gelir. 
+Exchange Online, SharePoint Online ve OneDrive İş gibi barındırılan hizmet iş yükleri için her kurala oluşturulduğu sırada bir öncelik atanır. Bu, ilk oluşturulan kuralın ilk önceliğe sahip olduğu, ikinci oluşturulan kuralın ikinci önceliğe sahip olduğu vb. anlamına gelir.
   
 ![Öncelik sırasına göre kurallar](../media/dlp-rules-in-priority-order.png)
 
@@ -190,18 +193,18 @@ Uç noktalardaki kuralların önceliği, oluşturulduğu sıraya göre de atanı
 
 Uç nokta üzerindeki bir dosya birden çok DLP ilkesiyle eşleştiğinde, [uç nokta etkinliklerinde](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) en kısıtlayıcı zorlamayla etkinleştirilen ilk kural, içeriğe uygulanan kuraldır. Örneğin, içerik aşağıdaki kuralların tümüyle eşleşiyorsa, en kısıtlayıcı olduğu için 2. kural diğer kurallardan önceliklidir.
 
-- Kural 1: Yalnızca tüm etkinlikleri denetler 
+- Kural 1: Yalnızca tüm etkinlikleri denetler
 - *Kural 2: tüm etkinlikleri engeller*
 - Kural 3: Son kullanıcının geçersiz kılma seçeneğiyle tüm etkinlikleri engeller
 
 Aşağıdaki örnekte Kural 1, en kısıtlayıcı olduğu için diğer eşleşen kurallardan önceliklidir.
 
-- *Kural 1: etkinliği engeller ve kullanıcının geçersiz kılınmasına izin vermez*
+- *Kural 1: etkinliği engeller ve kullanıcı geçersiz kılmaya izin vermez*
 - Kural 2: etkinliği engeller ve kullanıcı geçersiz kılmalarına izin verir
 - Kural 3: Yalnızca tüm etkinlikleri denetler
 - Kural 4: zorlama yok
 
-Diğer tüm kurallar değerlendirilir ancak eylemleri uygulanmaz. Denetim günlükleri, dosyaya uygulanan en kısıtlayıcı kuralı gösterir. Eşleşen birden fazla kural varsa ve bunlar eşit derecede kısıtlayıcıysa, ilke ve kural önceliği dosyaya hangi kuralın uygulanacağını yönetir.
+Diğer tüm kurallar değerlendirilir ancak eylemleri uygulanmaz. Denetim günlükleri, dosyaya uygulanan en kısıtlayıcı kuralı gösterir. Eşleşen birden fazla kural varsa ve bunlar eşit derecede kısıtlayıcıysa, dosyaya hangi kuralın uygulanacağını ilke ve kural önceliği yönetir.
 
 ### <a name="conditions"></a>Koşul -ları
 
@@ -217,12 +220,13 @@ Koşullar kapsayıcıdır ve kuralın ne aramasını istediğinizi ve bu öğele
 - [hassas bilgi türleri](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [duyarlılık etiketleri](sensitivity-labels.md)
 - [bekletme etiketleri](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
+- [Eğitilebilir Sınıflandırıcılar](classifier-learn-about.md) (önizlemede) 
 
-ilkeyi uygulamayı seçtiğiniz [konumlara](#location-support-for-how-content-can-be-defined) bağlı olarak. 
+ilkeyi uygulamayı seçtiğiniz [konumlara](#location-support-for-how-content-can-be-defined) bağlı olarak.
 
-Kural yalnızca seçtiğiniz **duyarlılık etiketlerinin** ve **bekletme etiketlerinin** varlığını arar. 
+Kural yalnızca seçtiğiniz **duyarlılık etiketlerinin** ve **bekletme etiketlerinin** varlığını arar.
 
-SID'ler, gerekirse değiştirebileceğiniz önceden tanımlanmış bir [**güvenilirlik düzeyine**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) sahiptir. Daha fazla bilgi için bkz. [Güvenilirlik düzeyleri hakkında daha fazla bilgi](sensitive-information-type-learn-about.md#more-on-confidence-levels). 
+SID'ler, gerekirse değiştirebileceğiniz önceden tanımlanmış bir [**güvenilirlik düzeyine**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) sahiptir. Daha fazla bilgi için bkz. [Güvenilirlik düzeyleri hakkında daha fazla bilgi](sensitive-information-type-learn-about.md#more-on-confidence-levels).
 
 > [!IMPORTANT]
 > SID'lerin, en fazla benzersiz örnek sayısı parametresini tanımlamanın iki farklı yolu vardır. Daha fazla bilgi edinmek için bkz [. SIT için örnek sayısı desteklenen değerler](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
@@ -413,7 +417,7 @@ Bir kuralda kullanılabilen eylemler, seçilen konumlara bağlıdır. İlkenin u
 #### <a name="devices-actions"></a>Cihaz eylemleri
 
 <!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
-- (önizleme) Kullanıcılar Windows cihazlarında Microsoft Edge tarayıcısında hassas web sitelerini kullandıklarında etkinlikleri denetle veya kısıtla. Daha fazla bilgi için bkz[. Senaryo 6 Hassas hizmet etki alanlarındaki kullanıcı etkinliklerini izleme veya kısıtlama (önizleme).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview)
+- (önizleme) Kullanıcılar Windows cihazlarında Microsoft Edge tarayıcısında hassas web sitelerine eriştiğinde etkinlikleri denetle veya kısıtla. Daha fazla bilgi için bkz[. Senaryo 6 Hassas hizmet etki alanlarındaki kullanıcı etkinliklerini izleme veya kısıtlama (önizleme).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview)
 - Windows cihazlarında etkinlikleri denetleme veya kısıtlama
 
 kullanmak `Audit or restrict activities on Windows devices`için **, DLP ayarlarında** ve bunları kullanmak istediğiniz ilkede seçenekleri yapılandırmanız gerekir. Daha fazla bilgi için bkz [. Kısıtlı uygulamalar ve uygulama grupları](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) .
@@ -650,8 +654,8 @@ Bu tabloda, Kapsamı SharePoint Online ve OneDrive İş olan ilkeler için DLP e
 |---------|---------|---------|---------|---------|
 |- **İçerik Microsoft 365'ten paylaşılır** </br>- **kuruluşum dışındaki kişilerle**     |Hiçbir eylem yapılandırılmadı         |- **Kullanıcı bildirimleri** **Açık** olarak ayarlandı </br>- **İlke ipucu seçiliyken Office 365 hizmetindeki kullanıcılara bildirme** </br>- **İçeriği gönderen, paylaşan veya en son değiştiren kullanıcıyı bilgilendirin**         |- **Kural eşleşmesi açık olarak ayarlandığında yöneticilere uyarı gönderme**  </br>- **Bir etkinlik, açık olarak ayarlanan kuralla her eşleştiğinde uyarı gönder**  </br>- **İlke eşleşmesi Açık olarak ayarlandığında sizi bilgilendirmek için e-posta olay raporlarını kullanın**          |- Bildirimler yalnızca bir dosya bir dış kullanıcıyla paylaşıldığında ve bir dış kullanıcı dosyaya eriştiğinde gönderilir.  |
 |- **İçerik Microsoft 365'ten paylaşılır** </br>- **yalnızca kuruluşumdaki kişilerle**        | Hiçbir eylem yapılandırılmadı         |-  **Kullanıcı bildirimleri** **Açık** olarak ayarlandı   </br>- **İlke ipucu seçiliyken Office 365 hizmetindeki kullanıcılara bildirme**  </br>- **İçeriği gönderen, paylaşan veya en son değiştiren kullanıcıyı bilgilendirin**    |  - **Kural eşleşmesi açık olarak ayarlandığında yöneticilere uyarı gönderme**  </br>- **Bir etkinlik kuralla her eşleştiğinde uyarı gönder** seçili durumda </br>- **İlke eşleşmesi Açık olarak ayarlandığında sizi bilgilendirmek için e-posta olay raporlarını kullanın**        |- Bir dosya karşıya yüklendiğinde bildirimler gönderilir |
-|- **İçerik Microsoft 365'ten paylaşılır** </br>- **kuruluşum dışındaki kişilerle**    | - **Microsoft 365 konumlarındaki içeriği kısıtlama veya içeriği şifreleme** seçili </br>- **Kullanıcıların e-posta almasını veya paylaşılan SharePoint, OndeDrive ve Teams dosyalarına erişmesini engelle** seçili </br>- **Yalnızca kuruluşunuz dışındaki kişilerin seçilmesini engelle**          |- **Kullanıcı bildirimleri** **Açık** olarak ayarlandı </br>- **İlke ipucu seçiliyken Office 365 hizmetindeki kullanıcılara bildirme** </br>- **İçeriği gönderen, paylaşan veya en son değiştiren kullanıcıyı bilgilendirin**  |  - **Kural eşleşmesi açık olarak ayarlandığında yöneticilere uyarı gönderme**  </br>- **Bir etkinlik kuralla her eşleştiğinde uyarı gönder** seçili durumda </br>- **İlke eşleşmesi Açık olarak ayarlandığında sizi bilgilendirmek için e-posta olay raporlarını kullanın**              | - Karşıya yüklenir yüklenmez hassas bir dosyaya erişim engellenir </br>- İçerik Microsoft 365'ten kuruluşum dışındaki kişilerle paylaşıldığında gönderilen bildirimler         |
-|- **İçerik Microsoft 365'ten paylaşılır** </br>- **kuruluşum dışındaki kişilerle** |  - **Microsoft 365 konumlarındaki içeriği kısıtlama veya içeriği şifreleme** seçili </br>- **Kullanıcıların e-posta almasını veya paylaşılan SharePoint, OndeDrive ve Teams dosyalarına erişmesini engelle** seçili </br>- **Herkesin** seçilmesini engelle        | - **Kullanıcı bildirimleri** **Açık** olarak ayarlandı </br>- **İlke ipucu seçiliyken Office 365 hizmetindeki kullanıcılara bildirme** </br>- **İçeriği gönderen, paylaşan veya en son değiştiren kullanıcıyı bilgilendirin**         | - **Kural eşleşmesi açık olarak ayarlandığında yöneticilere uyarı gönderme**  </br>- **Bir etkinlik kuralla her eşleştiğinde uyarı gönder** seçili durumda </br>- **İlke eşleşmesi Açık olarak ayarlandığında sizi bilgilendirmek için e-posta olay raporlarını kullanın**         |Bir dosya bir dış kullanıcıyla paylaşıldığında ve bir dış kullanıcı bu dosyaya eriştiğinde bildirimler gönderilir.         |
+|- **İçerik Microsoft 365'ten paylaşılır** </br>- **kuruluşum dışındaki kişilerle**    | - **Microsoft 365 konumlarındaki içeriği kısıtlama veya içeriği şifreleme** seçili </br>- **Kullanıcıların e-posta almasını veya paylaşılan SharePoint, OneDrive ve Teams dosyalarına erişmesini engelle** seçili </br>- **Yalnızca kuruluşunuz dışındaki kişilerin seçilmesini engelle**          |- **Kullanıcı bildirimleri** **Açık** olarak ayarlandı </br>- **İlke ipucu seçiliyken Office 365 hizmetindeki kullanıcılara bildirme** </br>- **İçeriği gönderen, paylaşan veya en son değiştiren kullanıcıyı bilgilendirin**  |  - **Kural eşleşmesi açık olarak ayarlandığında yöneticilere uyarı gönderme**  </br>- **Bir etkinlik kuralla her eşleştiğinde uyarı gönder** seçili durumda </br>- **İlke eşleşmesi Açık olarak ayarlandığında sizi bilgilendirmek için e-posta olay raporlarını kullanın**              | - Karşıya yüklenir yüklenmez hassas bir dosyaya erişim engellenir </br>- İçerik Microsoft 365'ten kuruluşum dışındaki kişilerle paylaşıldığında gönderilen bildirimler         |
+|- **İçerik Microsoft 365'ten paylaşılır** </br>- **kuruluşum dışındaki kişilerle** |  - **Microsoft 365 konumlarındaki içeriği kısıtlama veya içeriği şifreleme** seçili </br>- **Kullanıcıların e-posta almasını veya paylaşılan SharePoint, OneDrive ve Teams dosyalarına erişmesini engelle** seçili </br>- **Herkesin** seçilmesini engelle        | - **Kullanıcı bildirimleri** **Açık** olarak ayarlandı </br>- **İlke ipucu seçiliyken Office 365 hizmetindeki kullanıcılara bildirme** </br>- **İçeriği gönderen, paylaşan veya en son değiştiren kullanıcıyı bilgilendirin**         | - **Kural eşleşmesi açık olarak ayarlandığında yöneticilere uyarı gönderme**  </br>- **Bir etkinlik kuralla her eşleştiğinde uyarı gönder** seçili durumda </br>- **İlke eşleşmesi Açık olarak ayarlandığında sizi bilgilendirmek için e-posta olay raporlarını kullanın**         |Bir dosya bir dış kullanıcıyla paylaşıldığında ve bir dış kullanıcı bu dosyaya eriştiğinde bildirimler gönderilir.         |
 |- **İçerik Microsoft 365'ten paylaşılır** </br>- **kuruluşum dışındaki kişilerle**     |- **Microsoft 365 konumlarındaki içeriği kısıtlama veya içeriği şifreleme** seçili </br>- **Yalnızca "Bağlantıya sahip herkes" seçeneğiyle içeriğe erişim izni verilen kişileri engelle** seçeneği belirlenir.         |  - **Kullanıcı bildirimleri** **Açık** olarak ayarlandı </br>- **Office 365 hizmetindeki kullanıcılara bir ilke ipucu** seçildiğini bildirin.  </br>- **İçeriği gönderen, paylaşan veya en son değiştiren kullanıcıyı bilgilendirin**     |- **Kural eşleşmesi açık olarak ayarlandığında yöneticilere uyarı gönderme**    </br>- **Bir etkinlik kuralla her eşleştiğinde uyarı gönder** seçili durumda </br>- **İlke eşleşmesi Açık olarak ayarlandığında sizi bilgilendirmek için e-posta olay raporlarını kullanın**        |Bir dosya karşıya yüklenir yüklenmez bildirimler gönderilir         |
 
 

@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Özet: Microsoft Office 365 veri dayanıklılığını anlama.'
-ms.openlocfilehash: 66899a337e9349a78178df67aa83e44b580c7148
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f6967905c97f83fda2f73fc61ddf96a4a02fbec8
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629389"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055998"
 ---
 # <a name="service-encryption"></a>Hizmet Şifrelemesi
 
 Birim düzeyinde şifrelemenin yanı sıra Exchange Online, Microsoft Teams, SharePoint Online ve OneDrive İş de müşteri verilerini şifrelemek için Hizmet Şifrelemesi'ni kullanır. Hizmet Şifrelemesi iki anahtar yönetimi seçeneğine olanak tanır:
 
 ## <a name="microsoft-managed-keys"></a>Microsoft tarafından yönetilen anahtarlar
-Microsoft, hizmet şifrelemesi için kök anahtarlar da dahil olmak üzere tüm şifreleme anahtarlarını yönetir. Bu seçenek şu anda Exchange Online, SharePoint Online OneDrive İş için varsayılan olarak etkindir. Microsoft tarafından yönetilen anahtarlar, Müşteri Anahtarı'nı kullanmaya karar vermediğiniz sürece varsayılan hizmet şifrelemesi sağlar. Daha sonraki bir tarihte veri temizleme yolunu izlemeden Müşteri Anahtarı'nı kullanmayı durdurmaya karar verirseniz verileriniz Microsoft tarafından yönetilen anahtarlar kullanılarak şifrelenir. Verileriniz her zaman en az bu varsayılan düzeyde şifrelenir. 
+Microsoft, hizmet şifrelemesi için kök anahtarlar da dahil olmak üzere tüm şifreleme anahtarlarını yönetir. Bu seçenek şu anda Exchange Online, SharePoint Online OneDrive İş için varsayılan olarak etkindir. Microsoft tarafından yönetilen anahtarlar, Müşteri Anahtarı'nı kullanmaya karar vermediğiniz sürece varsayılan hizmet şifrelemesi sağlar. Daha sonraki bir tarihte veri temizleme yolunu izlemeden Müşteri Anahtarı'nı kullanmayı durdurmaya karar verirseniz verileriniz Microsoft tarafından yönetilen anahtarlar kullanılarak şifrelenir. Verileriniz her zaman en az bu varsayılan düzeyde şifrelenir.
 
 ## <a name="customer-key"></a>Müşteri Anahtarı
 Hizmet şifrelemesi ile kullanılan kök anahtarları tedarik eder ve bu anahtarları Azure Key Vault kullanarak yönetirsiniz. Microsoft diğer tüm anahtarları yönetir. Bu seçenek Müşteri Anahtarı olarak adlandırılır ve şu anda Exchange Online, SharePoint Online ve OneDrive İş için kullanılabilir. (Daha önce BYOK ile Gelişmiş Şifreleme olarak adlandırılır. Özgün duyuru için bkz[. Office 365 müşterileri için saydamlığı ve denetimi geliştirme](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/).)

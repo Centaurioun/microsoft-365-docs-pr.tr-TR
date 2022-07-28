@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için çok faktörlü kimlik doğrulamasını yönetmeyi öğrenin.
-ms.openlocfilehash: 79690fb052c611fd9d89cf0cdbde8fc8b3f37832
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: aa9d25ce633088d840a38e1927c4ebf3baef56b3
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695648"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056478"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de çok faktörlü kimlik doğrulamasını yönetme
 
@@ -40,11 +40,11 @@ Kiracı listede görünmeden önce aşağıdaki koşulların karşılanması ger
 
 ## <a name="enable-mfa-for-a-tenant"></a>Kiracı için MFA'yı etkinleştirme
 
-1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Çok Faktörlü Kimlik Doğrulaması'nı** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Çok Faktörlü kimlik doğrulaması'nı** seçin.
 
 2. **Çok Faktörlü Kimlik Doğrulaması** sekmesinde, şu anda MFA kullanmayan bir kiracıyı arayın ve kiracı ayrıntıları bölmesini açmak için bu kiracıyı seçin.
 
-3. **MFA etkinleştirme** sekmesinde, **Güvenlik varsayılanlarıyla MFA'nın altında Güvenlik Varsayılanlarını** **Etkinleştir'i** seçin.
+3. **MFA etkinleştirme** sekmesinde, **Güvenlik varsayılanlarıyla MFA'nın altında Güvenlik varsayılanlarını** **etkinleştir'i** seçin.
 
 4. **Değişiklikleri kaydet'i** seçin.
 
@@ -52,7 +52,7 @@ Koşullu Erişim aracılığıyla MFA'yı etkinleştirmek için bkz[. Öğretici
 
 ## <a name="notify-users-who-arent-registered-for-mfa"></a>MFA'ya kayıtlı olmayan kullanıcılara bildirme
 
-1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Çok Faktörlü Kimlik Doğrulaması'nı** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Çok Faktörlü kimlik doğrulaması'nı** seçin.
 
 2. **Çok Faktörlü Kimlik Doğrulaması** sekmesinde, MFA için kayıtlı olmayan kullanıcıları olan kiracıları arayın ve kiracıyı seçerek kiracı ayrıntıları bölmesini açın.
 

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Tehdit yönetimi sayfası hakkında bilgi edinin.
-ms.openlocfilehash: 2bf9a778e5a8c9c22ea290356bb5e16d6553b009
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: a9e87d533c3693040bf2bea59f9d45a52863af34
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823495"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056679"
 ---
 # <a name="overview-of-the-threat-management-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'deki Tehdit yönetimi sayfasına genel bakış 
 
@@ -32,7 +32,7 @@ ms.locfileid: "66823495"
 
 Microsoft Defender Virüsten Koruma, kiracıları, kullanıcıları ve cihazları virüs, kötü amaçlı yazılım ve casus yazılım gibi yazılım tehditlerine karşı korur. Windows'ta yerleşik olarak yerleşik olarak sağlam ve sürekli koruma sağlar.  
   
-Microsoft 365 Lighthouse'daki Tehdit yönetimi sayfasına erişmek için sol gezinti **bölmesinden Cihazlar** > **Tehdit Yönetimi'ni** seçerek müşteri kiracılarınızın tehditlere karşı güvenlik duruşunu görüntüleyin. Riski azaltmanıza yardımcı olacak dikkatinizi ve önerilerinizi gerektiren kiracıları, kullanıcıları ve cihazları görürsünüz.  
+Microsoft 365 Lighthouse'deki Tehdit yönetimi sayfasına erişmek için sol gezinti bölmesinde **Cihazlar** > **Tehdit yönetimi'ni** seçerek müşteri kiracılarınızın tehditlere karşı güvenlik duruşunu görüntüleyin. Riski azaltmanıza yardımcı olacak dikkatinizi ve önerilerinizi gerektiren kiracıları, kullanıcıları ve cihazları görürsünüz.  
   
 ## <a name="overview-tab"></a>Genel Bakış sekmesi  
   

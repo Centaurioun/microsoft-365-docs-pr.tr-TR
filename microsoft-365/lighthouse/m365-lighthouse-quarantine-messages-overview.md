@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için karantinaya alınan iletileri yönetmeyi öğrenin.
-ms.openlocfilehash: 3a295802ba806c48f01f6f64c8b148169fe28102
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: fcf9978ccbc72e1913e9015a8de40aa6da498394
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66862174"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055910"
 ---
 # <a name="overview-of-quarantined-messages-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Karantinaya Alınan İletilere Genel Bakış
 
 Microsoft 365 Lighthouse, tüm müşteri kiracılarınızda karantinaya alınan e-postalarla ilgili içgörüleri ve bilgileri görmenizi sağlar. Tek bir görünümden, karantinaya alınmış e-postaları önceliklendileyebilir ve uygun eylemleri gerçekleştirebilirsiniz. Kiracı Exchange Online Protection (EOP) ve Office365 Plan 1 (MDO) için Microsoft Defender'ı uyguladıysa veriler kullanılabilir.
 
-Sol gezinti bölmesinden veya **Giriş** **sayfasından Veri Koruması'nı** seçerek bilgilere erişebilirsiniz.
+Sol gezinti bölmesinde **Giriş'i** seçerek veya karantinaya alınan iletiler sayfasını açmak için sol gezinti bölmesinde **Veri Koruması'nı** seçerek bilgilere erişebilirsiniz.
 
 ## <a name="quarantined-messages-page"></a>Karantinaya alınan iletiler sayfası
 
@@ -44,7 +44,7 @@ Bu sayfadan, müşteri kiracılarınız genelinde birleştirilmiş istatistikler
 
 Veriler son 30 günü yansıtır; ancak, görünümü değiştirmek için **Zaman aralığı** filtresini kullanabilirsiniz.
 
-**Karantina** **nedeni** grafiği, Exchange Online Protection (EOP) ve Office365 Için Microsoft Defender Plan 1 (MDO) ilke türüne göre karantina sayılarının dökümünü içerir. Bu türler şunlardır:
+**Karantina nedeni** bölümü, Exchange Online Protection (EOP) ve Office365 için Microsoft Defender Plan 1 (MDO) ilke türüne göre karantina sayılarının dökümünü içerir. Bu türler şunlardır:
 
 - Malware
 - Kimlik Avı
@@ -54,9 +54,9 @@ Veriler son 30 günü yansıtır; ancak, görünümü değiştirmek için **Zama
 
 Karantina listesi, kiracıya göre karantina bilgilerinin sıralanabilir bir görünümüdür. Bu görünümde, aşağıdaki bilgilere göre filtreleyebilirsiniz:
 
-- **Karantina Nedeni:** Any, Malware, Phish, High confidence phish, Spam, Bulk Email
-- **İlke Türü:** Any, Anti-malware, Anti-phishing, Anti-spam, Safe Attachments, Transport Rule, Unknown
-- **Süresi Dolmak Üzere:** Herhangi biri, Bugün, iki gün içinde, yedi gün içinde
+- **Karantina nedeni:** Any, Malware, Phish, High confidence phish, Spam, Bulk Email
+- **İlke türü:** Any, Anti-malware, Anti-phishing, Anti-spam, Safe Attachments, Transport Rule, Unknown
+- **Süresi dolmak üzere:** Herhangi biri, Bugün, iki gün içinde, yedi gün içinde
 
 Ayrıca sütunları ayarlayabilir ve verileri kiracı, ileti durumu ve son kullanma tarihlerine göre sıralayabilirsiniz.
 

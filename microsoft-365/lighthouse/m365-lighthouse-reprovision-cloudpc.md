@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Windows 365 Bulut PC Microsoft 365 Lighthouse'da yeniden sağlamayı öğrenin.
-ms.openlocfilehash: 9ce402d1db83b07653c3e93a5e1e1c25406ae3e9
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: b4e4c4596718ccb09c490d582396de3494eeabf7
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66862561"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056493"
 ---
 # <a name="reprovision-a-windows-365-cloud-pc-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Windows 365 Bulut PC yeniden sağlama
 

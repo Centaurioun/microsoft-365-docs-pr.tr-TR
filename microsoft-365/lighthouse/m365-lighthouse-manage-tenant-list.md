@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için kiracı listenizi yönetmeyi öğrenin.
-ms.openlocfilehash: deba0800ee422982e7379d7797d23a977602bbb9
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: f8d1c47dc5fc349cd78b7a5f364b80244900554b
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839787"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056537"
 ---
 # <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de kiracı listenizi yönetme
 
@@ -46,7 +46,7 @@ Kiracı etiketlerini yönetmek için şunları gerçekleştirmelisiniz:
 
 2. **Etiketleri Yönet'i** seçin.
 
-3. **Etiketleri yönet** bölmesinde **Etiket ekle'yi** seçin.
+3. **Etiketleri yönet** bölmesinde **Etiket oluştur'u** seçin.
 
 4. Bir ad ve açıklama girin.
 
@@ -68,13 +68,13 @@ Kiracı etiketlerini yönetmek için şunları gerçekleştirmelisiniz:
 
 1. Lighthouse'un sol gezinti bölmesinde **Kiracılar'ı** seçin.
 
-2. Kiracı listesinden, etiketlemek istediğiniz kiracının yanındaki üç noktayı (diğer eylemler) seçin.
+2. Kiracı listesinden, etiketlemek istediğiniz kiracının yanındaki üç noktayı (daha fazla eylem) seçin.
 
 3. **Etiketler'i** seçin.
 
 4. Listeden bir etiket seçin. Aynı anda yalnızca bir etiket seçebilirsiniz.
 
-Kiracıya zaten atanmış etiketler, etiket adının sağındaki onay işaretine sahip olur. Ayrıca, listedeki her kiracının yanındaki onay kutusunu seçip **Etiket Ata'yı** seçip listeden bir etiket seçerek birden çok kiracıya etiket atayabilirsiniz.
+Kiracıya zaten atanmış etiketler, etiket adının sağındaki onay işaretine sahiptir. Ayrıca, listedeki her kiracının yanındaki onay kutusunu seçip **Etiket Ata'yı** seçip listeden bir etiket seçerek birden çok kiracıya etiket atayabilirsiniz.
 
 > [!NOTE]
 > En fazla 30 benzersiz Etiket oluşturabilir ve bunları gerektiği kadar kiracıya atayabilirsiniz.
@@ -87,13 +87,15 @@ Kiracıya zaten atanmış etiketler, etiket adının sağındaki onay işaretine
 
 3. **Etiketleri yönet** bölmesinde, silmek istediğiniz etiketi seçin.
 
-4. **Etiketi sil'i** seçin.
+4. **Sil**’i seçin.
+
+5. Onay iletişim kutusunda **Onayla'yı** seçin.
 
 ## <a name="remove-a-tag"></a>Etiketi kaldırma
 
 1. Lighthouse'un sol gezinti bölmesinde **Kiracılar'ı** seçin.
 
-2. Kiracı listesinden, düzenlemek istediğiniz kiracının yanındaki üç noktayı (diğer eylemler) seçin.
+2. Kiracı listesinden, düzenlemek istediğiniz kiracının yanındaki üç noktayı (daha fazla eylem) seçin.
 
 3. **Etiketler'i** seçin.
 

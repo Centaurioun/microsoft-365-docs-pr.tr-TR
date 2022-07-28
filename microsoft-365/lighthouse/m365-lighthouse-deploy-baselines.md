@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Microsoft 365 Lighthouse temellerini dağıtmayı öğrenin.
-ms.openlocfilehash: 17eda86e80b928fb8b4f56b0e5c719574e4741f5
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0f31a4ef985eb6cbaf58f2f2d65b8269b25d83b2
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012604"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056822"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Microsoft 365 Lighthouse temellerini dağıtma
 
@@ -50,13 +50,13 @@ Sizin ve müşteri kiracılarınızın [Microsoft 365 Lighthouse](m365-lighthous
     | Kategori        | Dağıtım adımının Cihazları, Kimliği veya Verileri yönetmeyle ilişkili olup olmadığı. |
     | Son güncelleştirme    | Dağıtım adımının son güncelleştirildiği tarih.                             |
 
-4. Listeden gözden geçirmek istediğiniz dağıtım adımını seçin.
+4. Dağıtım adımları listesinden gözden geçirmek istediğiniz dağıtım adımını seçin.
 
-    Dağıtım Adımı sayfası aşağıdaki bilgileri sağlar:
+    Dağıtım adımı ayrıntıları sayfası aşağıdaki bilgileri sağlar:
 
     | Sütun            | Açıklama |
     |-------------------|-----------------------------------------------------------------------------------------------|
-    | Özet        | Dağıtım Adımı'nın amacının özeti.                                         |
+    | Özet        | Dağıtım adımının amacının özeti.                                         |
     | Temel       | Dağıtım adımının türetildiği temel.                             |
     | Kategori       | Dağıtım adımının Cihazları, Kimliği veya Verileri yönetmeyle ilişkili olup olmadığı. |
     | Gerekli SKU   | Dağıtım adımını tamamlamak için gereken SKU'lar.                                      |
@@ -64,12 +64,12 @@ Sizin ve müşteri kiracılarınızın [Microsoft 365 Lighthouse](m365-lighthous
     | Kullanıcılarınız için | Kiracının kullanıcılarının yararlı bulabileceği kaynaklara bağlantılar.                             |
     | Sonraki adımlar     | Geçerli sonraki adımlarla ilgili bağlantılar ve yönergeler.                                |
 
-    Dağıtım adımları, tamamlanması gereken bir veya daha fazla işlem içerir. Dağıtım Adımı sayfası, dağıtım adımına dahil edilen her işlemi listeleyen ve aşağıdaki bilgileri sağlayan bir tablo içerir:
+    Dağıtım adımları, tamamlanması gereken bir veya daha fazla işlem içerir. Dağıtım adımı ayrıntıları sayfası, dağıtım adımına dahil edilen her işlemi listeleyen ve aşağıdaki bilgileri sağlayan bir tablo içerir:
 
     | Sütun            | Açıklama |
     |-------------------|-------------------------------------------------------------|
-    | İşlem adı      | seçildiğinde ilgili İşlem sekmesini açan işlemin adı.          |
-    | Durum            | Dağıtım işlemine dahil edilen bu ayar yapılandırmalarının durumu algılandı.           |
+    | İşlem adı      | seçildiğinde ilgili işlem sekmesini açan işlemin adı.          |
+    | Durum            | Dağıtım işlemine dahil edilen ayar yapılandırmalarının durumu algılandı.           |
     | Yönetim portalı | İşlemle ilişkili yapılandırma ayarlarının yönetildiği portal. |
 
 ## <a name="deploy-a-deployment-step"></a>Dağıtım adımı dağıtma
@@ -80,11 +80,11 @@ Sizin ve müşteri kiracılarınızın [Microsoft 365 Lighthouse](m365-lighthous
 
 3. **Dağıtım Planı** sekmesini seçin.
 
-4. Dağıtım Adımı listesinden dağıtmak istediğiniz dağıtım adımını seçin.
+4. Dağıtım adımları listesinden, dağıtmak istediğiniz dağıtım adımını seçin.
 
 5. **Gözden geçir ve dağıt'ı** seçin.
 
-6. **Yapılandırmaları Onayla** bölmesinde **Dağıt'ı** seçin.
+6. **Yapılandırmayı onayla** bölmesinde **Dağıt'ı** seçin.
 
 ## <a name="test-a-deployment-step"></a>Dağıtım adımlarını test edin
 
@@ -96,17 +96,17 @@ Koşullu Erişim ilkeleri aracılığıyla dağıtılan dağıtım adımları i�
 
 3. **Dağıtım Planı** sekmesini seçin.
 
-4. Dağıtım Adımı listesinden dağıtmak istediğiniz dağıtım adımını seçin.
+4. Dağıtım adımları listesinden, dağıtmak istediğiniz dağıtım adımını seçin.
 
 5. **Gözden geçir ve dağıt'ı** seçin.
 
-6. **Yapılandırmaları Onayla** bölmesinde **Bu ayarları dağıtım olmadan test et'i** seçin.
+6. **Yapılandırmayı onayla** bölmesinde **Bu ayarları dağıtım olmadan test et'i** seçin.
 
 7. **Test'i** seçin.
 
-Yapılandırmaları Onayla bölmesi kapatılır ve ilke karşılaştırması görüntülenir. Mevcut kiracıdaki her ilke Algılanan ayarlar tablosunda listelenir.
+**Yapılandırmayı onayla** bölmesi kapanır ve ilke karşılaştırmasını görüntüler. Mevcut kiracıdaki her ilke Algılanan ayarlar tablosunda listelenir.
 
-Algılanan ayarlar tablosu, mevcut her ilkeyi listeler ve ayarların sayısını ve parantez içinde aşağıdaki durumlardan birinde yer alan kullanıcı sayısını özetler:
+Algılanan ayarlar tablosu, var olan her ilkeyi listeler ve ayarların sayısını ve parantez içinde aşağıdaki durumlardan birine sahip kullanıcı sayısını özetler:
 
 | Durum         | Açıklama
 |-------------|------------------------------------------------------------|
@@ -114,7 +114,7 @@ Algılanan ayarlar tablosu, mevcut her ilkeyi listeler ve ayarların sayısını
 | Eksik ayarlar     | Dağıtım planında kiracıda bir değer eksik olan yapılandırma ayarlarının toplam sayısı.      |
 | Çakışan ayarlar | Dağıtım planındaki kiracıda çakışan bir değere sahip olan yapılandırma ayarlarının toplam sayısı. |
 
-Algılanan ayarlar, ayar ve kullanıcı düzeyinde her ilke için yapılandırma ayarı ayrıntıları sağlayan modüler bir tabloda görüntülenebilir ve aşağıdaki ayarlar durumlarının her birine göre sıralanabilir:
+Algılanan ayarları, ayar ve kullanıcı düzeyinde her ilke için yapılandırma ayarı ayrıntılarını sağlayan modüler bir tabloda görüntüleyebilir ve tabloyu aşağıdaki ayar durumlarına göre sıralayabilirsiniz:
 
 | Durum         | Açıklama
 |-------------|------------------------------------------------------------|
@@ -124,13 +124,13 @@ Algılanan ayarlar, ayar ve kullanıcı düzeyinde her ilke için yapılandırma
 | Çakışan ayarlar | Dağıtım planındaki kiracıda çakışan bir değere sahip olan yapılandırma ayarlarının toplam sayısı. |
 | Ek ayarlar       | Kiracıda değeri olan ancak dağıtım planında değeri olmayan toplam yapılandırma ayarları sayısı.     |
 
-Bu karşılaştırma yapıldığında Lighthouse Algılanan durumu, Dağıtım durumu ve Dağıtım Adımı durumunu otomatik olarak güncelleştirir.
+Bu karşılaştırma yapıldığında Lighthouse Algılanan durum, Dağıtım durumu ve Dağıtım Adımı durumunu otomatik olarak güncelleştirir.
 
-Karşılaştırılacak ilke yoksa Gözden geçir ve dağıt'ı seçerek Yapılandırmaları onayla bölmesini yeniden açın ve Dağıt'ı seçin.
+Karşılaştırılacak ilke yoksa **Gözden geçir ve dağıt'ı** seçerek **Yapılandırmayı onayla** bölmesini yeniden açın ve ardından **Dağıt'ı** seçin.
 
 Karşılaştırabileceğiniz mevcut ilkeler varsa şunlardan birini yapabilirsiniz:
 
-- Dağıtım planının yapılandırma ayarlarını düzenleyin ve mevcut ilkelerde yeniden test edin, Yapılandırmaları onayla bölmesini yeniden açmak için **Gözden geçir ve dağıt'ı** seçin, istenen yapılandırma ayarlarını ayarlayın, onay kutusunu yeniden seçin ve bölmenin alt kısmındaki **Test'i** seçin.
+- Dağıtım planının yapılandırma ayarlarını düzenleyin ve mevcut ilkelerde yeniden test edin, **Gözden geçir ve dağıt'ı** seçerek **Yapılandırmayı onayla** bölmesini yeniden açın, istenen yapılandırma ayarlarını yapın, onay kutusunu yeniden seçin ve bölmenin alt kısmındaki **Test'i** seçin.
 
 - Farkları şunlardan biriyle mutabık hale getirmek için geçerli yönetim portalındaki mevcut ilkeleri düzenleyin:
   - Eksik ayarları uygulama
@@ -142,7 +142,7 @@ Lighthouse aracılığıyla otomatikleştirilebilir her dağıtım işlemi için
 - Algılanan durum, bu işlemdeki ayarların şu anda ne ölçüde dağıtıldı olduğunu gösterir.
 - Dağıtım durumu, kiracıya yapılan son dağıtımın durumudur.
 
-Dağıtım adımları mevcut ilkelerden bağımsız olarak dağıtılabilir, ancak çakışan ayarlar olmadan tamamlanmış olarak kabul edilmez. Çakışan bu ayarların çözümlenememesi kullanıcı deneyimini etkileyebilir. 
+Mevcut ilkelerden bağımsız olarak dağıtım adımlarını dağıtabilirsiniz, ancak çakışan ayarlar olmadan bunlar tamamlanmış olarak kabul edilmez. Çakışan bu ayarların çözümlenememesi kullanıcı deneyimini etkileyebilir. 
 
 Mevcut bir ilkeden kiracıda eşit ayarlar bulunduğunda örneklerde dağıtım adımının dağıtımı, kiracı içindeki mevcut ayarların yinelenmesine neden olur, ancak kullanıcı deneyimini etkilemez. 
 
@@ -152,24 +152,24 @@ Farkındalığınız için ek ayarlar sağlanır ancak işlem yapmanız gerekmez
 
 ## <a name="update-deployment-step-status"></a>Dağıtım adımı durumunu güncelleştirme
 
-1. Sol gezinti sayfasında **Kiracılar'ı** seçin.
+1. Lighthouse'un sol gezinti sayfasında **Kiracılar'ı** seçin.
 
 2. Kiracı listesinden, görüntülemek istediğiniz kiracıyı seçin.
 
 3. **Dağıtım Planı** sekmesini seçin.
 
-4. Dağıtım adımı listesinden güncelleştirmek istediğiniz dağıtım adımını seçin.
+4. Dağıtım adımları listesinden güncelleştirmek istediğiniz dağıtım adımını seçin.
 
-5. **To address** açılan listesinden bir eylem durumu seçin.
+5. **Son adres** açılan listesinden bir eylem durumu seçin.
 
-    | Eylem durumu                        | Açıklama      |
-    |---------------------------------------|----------------------------------------|
-    | Son adres                        | Birden çok dağıtım adımı işlemi içermeyen tüm dağıtım adımlarının varsayılan durumu.      |
-    | Planlanan                           | Dağıtım adımı planlandı ancak henüz tamamlanmadı.                                      |
-    | Risk kabul edildi                     | Kullanıcı, dağıtım adımı uygulanarak aksi takdirde engellenen riski kabul etti. |
-    | Risk Üçüncü Taraf Aracılığıyla Çözümlendi | Risk, üçüncü taraf bir uygulamanın veya yazılımın uygulanmasıyla çözülmüştür.             |
-    | Alternatif yollarla çözümlendi  | Risk, bir iç aracın uygulanması gibi alternatif yollarla çözülmüştür.    |
-    | El ile yapılandırma uygulandı      | Dağıtım planında belirtilen yapılandırma el ile uygulandı.                         |
+    | Eylem durumu | Açıklama |
+    |--|--|
+    | Son adres | Birden çok dağıtım adımı işlemi içermeyen tüm dağıtım adımlarının varsayılan durumu. |
+    | Planlanan | Dağıtım adımı planlandı ancak henüz tamamlanmadı. |
+    | Risk kabul edildi | Kullanıcı, dağıtım adımı uygulanarak aksi takdirde engellenen riski kabul etti. |
+    | Risk Üçüncü Taraf Aracılığıyla Çözümlendi | Risk, üçüncü taraf bir uygulamanın veya yazılımın uygulanmasıyla çözülmüştür. |
+    | Alternatif yollarla çözümlendi | Risk, bir iç aracın uygulanması gibi alternatif yollarla çözülmüştür. |
+    | El ile yapılandırma uygulandı | Dağıtım planında belirtilen yapılandırma el ile uygulandı. |
 
 ## <a name="share-deployment-step"></a>Dağıtım paylaşma adımı
 
@@ -179,7 +179,7 @@ Farkındalığınız için ek ayarlar sağlanır ancak işlem yapmanız gerekmez
 
 3. **Dağıtım Planı** sekmesini seçin.
 
-4. Dağıtım Adımı listesinden paylaşmak istediğiniz dağıtım adımını seçin.
+4. Dağıtım adımları listesinden, paylaşmak istediğiniz dağıtım adımını seçin.
 
 5. **Paylaş** açılan listesinden aşağıdaki seçeneklerden birini seçin.
 
@@ -188,7 +188,7 @@ Farkındalığınız için ek ayarlar sağlanır ancak işlem yapmanız gerekmez
     | Kopya  | Dağıtım adımının bağlantısını panonuza kopyalar.                                     |
     | E-posta | Yerel makinenizde yeni e-posta iletinizi açar ve dağıtım adımının bağlantısını ekler. |
 
-    Bağlantı, kuruluşunuzda izinleri olan herkesin kiracının dağıtım planını görüntülemesine olanak sağlar.
+    Bağlantı, kuruluşunuzda izinleri olan herkesin kiracının dağıtım planını görüntülemesine olanak tanır.
 
 
 ## <a name="related-content"></a>İlgili içerik

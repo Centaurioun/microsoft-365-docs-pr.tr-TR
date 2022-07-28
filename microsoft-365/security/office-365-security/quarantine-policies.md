@@ -17,12 +17,12 @@ ms.custom: ''
 description: Yöneticiler, karantinaya alınan iletilere kullanıcıların yapabileceklerini denetlemek için karantina ilkelerini kullanmayı öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d23083927d50d226692afe19223ed93aceb0b7b
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: d5b95ca3b763bafe2689caf4ab77df9eea9df6d8
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798180"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056888"
 ---
 # <a name="quarantine-policies"></a>Karantina ilkeleri
 
@@ -516,7 +516,7 @@ Karantina ilkeleri için genel ayarlar, karantinaya alınan iletilerin alıcıla
 
      Karantina bildirimlerini alıcının diline göre özelleştirmek için şu adımları izleyin:
 
-     1. **Dil seç kutusundan dili seçin**. Varsayılan değer **Varsayılan'dır** ve İngilizce anlamına gelir.
+     1. **Dil seç kutusundan dili seçin**. Varsayılan değer **Varsayılan'dır**, yani Microsoft 365 kuruluşu için varsayılan dildir. Daha fazla bilgi için bkz. [Microsoft 365 için dil ve bölge ayarlarını ayarlama](/office365/troubleshoot/access-management/set-language-and-region).
      2. **Görünen ad** ve **Yasal Uyarı** değerlerini girin. Değerler her dil için benzersiz olmalıdır. **Bir Görünen adı** veya **Yasal Uyarı** değerini birden çok dil için yeniden kullanmayı denerseniz **Kaydet'e** tıkladığınızda bir hata alırsınız.
      3. **Ekle** düğmesine tıklayın.
      4. Alıcının diline göre en fazla üç özelleştirilmiş karantina bildirimi oluşturmak için önceki adımları yineleyin. Etiketsiz kutu yapılandırdığınız dilleri gösterir:

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP' ler) için her ay Microsoft 365 Lighthouse eklenen, değiştirilen ve düzeltilmiş olanlara bakın.
-ms.openlocfilehash: 927e063abfb806e44c4888ee09d788cfa2bd7f5e
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 6eaba1fd4cbffb8121801318bbf8b7ee5b1f7ce2
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66862198"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056624"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'daki yenilikler
 
@@ -41,13 +41,13 @@ Gereksinimlerin tam listesi için bkz[. Microsoft 365 Lighthouse gereksinimleri]
 
 ### <a name="microsoft-defender-for-business-integration"></a>İş için Microsoft Defender tümleştirmesi
 
-Microsoft 365 Lighthouse artık İş için Microsoft Defender ile tümleştirerek İş için Microsoft Defender sahip tüm müşteri kiracılarınız için ilgili içgörüler ve yönetim özellikleri sunar. İş için Microsoft Defender eklenen müşteri cihazlarının listesini görmek için Microsoft 365 Lighthouse sol gezinti **bölmesinden Cihazlar'ı** seçin. Müşteri kiracılarınızda bayrak eklenmiş olayların ve uyarıların listesini görmek için **Cihazlar** > **Cihaz Güvenliği'ne** gidin ve **Olaylar ve uyarılar** sekmesini seçin.  
+Microsoft 365 Lighthouse artık İş için Microsoft Defender ile tümleştirerek İş için Microsoft Defender sahip tüm müşteri kiracılarınız için ilgili içgörüler ve yönetim özellikleri sunar. İş için Microsoft Defender eklenen müşteri cihazlarının listesini görmek için Microsoft 365 Lighthouse sol gezinti bölmesinde **Cihazlar'ı** seçin. Müşteri kiracılarınızda bayrak eklenmiş olayların ve uyarıların listesini görmek için **Cihazlar** > **Cihaz Güvenliği'ne** gidin ve **Olaylar ve uyarılar** sekmesini seçin.  
 
-Ayrıca, müşteri kiracılarınız için İş için Microsoft Defender ayarlamanıza yardımcı olması için varsayılan taban çizgisine bir adım ekledik. Bu adımı görmek için, Microsoft 365 Lighthouse sol gezinti **bölmesinden Temeller'i** seçin veya müşteri kiracılarınızdan herhangi birinin dağıtım planını görüntüleyin.
+Ayrıca, müşteri kiracılarınız için İş için Microsoft Defender ayarlamanıza yardımcı olması için varsayılan taban çizgisine bir adım ekledik. Bu adımı görmek için, Microsoft 365 Lighthouse sol gezinti bölmesinde **Temeller'i** seçin veya müşteri kiracılarınızdan herhangi birinin dağıtım planını görüntüleyin.
 
 ### <a name="status-of-quarantined-email-messages"></a>Karantinaya alınan e-posta iletilerinin durumu
 
-Yönetilen kiracılarınız için e-posta karantina verilerine yeni işlevler ekledik. Microsoft 365 Lighthouse sol gezinti **bölmesinden Veri koruması'nı** seçerek erişilebilen bu özellik, müşteri kiracılarınız genelinde karantinaya alınan e-posta iletilerinin durumunu görünür hale getirmenizi sağlar. Eylem gerektirebilecek tüm kiracıları önceliklendirmenize yardımcı olmak için toplam karantina birimlerine ilişkin birleştirilmiş bilgileri ve her yönetilen kiracı için ayrıntılı bilgileri görebilirsiniz.
+Yönetilen kiracılarınız için e-posta karantina verilerine yeni işlevler ekledik. Microsoft 365 Lighthouse sol gezinti bölmesinde **Veri koruması'nı** seçerek erişilebilen bu özellik, müşteri kiracılarınız genelinde karantinaya alınan e-posta iletilerinin durumunu görünür hale getirmenizi sağlar. Eylem gerektirebilecek tüm kiracıları önceliklendirmenize yardımcı olmak için toplam karantina birimlerine ilişkin birleştirilmiş bilgileri ve her yönetilen kiracı için ayrıntılı bilgileri görebilirsiniz.
 
 ### <a name="increase-in-maximum-license-limit"></a>En yüksek lisans sınırında artış
 
@@ -63,7 +63,7 @@ Sol gezinti bölmesine yeni bir görünüm Microsoft 365 Lighthouse verdik. Risk
 
 ### <a name="enriched-user-details-pane"></a>Zenginleştirilmiş kullanıcı ayrıntıları bölmesi
 
-Daha fazla kullanıcı bilgisi ve kullanıcıları daha iyi yönetmek için gerçekleştirebileceğiniz daha fazla eylem eklemek için kullanıcı ayrıntıları bölmesini yeniden tasarladık. Artık Microsoft 365 yönetim merkezi kullanıcı ayrıntıları bölmesiyle aynı genel görünüme sahiptir. Microsoft 365 Lighthouse'daki kullanıcı ayrıntıları bölmesine erişmek için sol gezinti **bölmesinden Kullanıcılar'ı** ve ardından **Kullanıcıları ara** veya **Riskli kullanıcılar'ı** seçin. Ayrıntılar bölmesini açmak için herhangi bir kullanıcıyı seçin.
+Daha fazla kullanıcı bilgisi ve kullanıcıları daha iyi yönetmek için gerçekleştirebileceğiniz daha fazla eylem eklemek için kullanıcı ayrıntıları bölmesini yeniden tasarladık. Artık Microsoft 365 yönetim merkezi kullanıcı ayrıntıları bölmesiyle aynı genel görünüme sahiptir. Microsoft 365 Lighthouse'daki kullanıcı ayrıntıları bölmesine erişmek için sol gezinti bölmesinde **Kullanıcılar'ı** seçin ve ardından **Kullanıcıları ara** veya **Riskli kullanıcılar'ı** seçin. Ayrıntılar bölmesini açmak için herhangi bir kullanıcıyı seçin.
 
 ## <a name="april-2022"></a>Nisan 2022
 
@@ -152,7 +152,7 @@ Artık microsoft 365 hizmetlerinin kullanım verilerini Microsoft 365 Lighthouse
 
 Bu içgörüler, kullanıcılarının etkin olarak hangi hizmetleri kullandığını ve güvenliklerini veya üretkenliğini artırma fırsatlarının nerede olabileceğini anlamalarına yardımcı olmak için sizi güçlendirerek müşteri etkileşimlerinizi bilgilendirmenize ve müşterilerinize daha fazla değer sunmanıza yardımcı olabilir. 
 
-Daha fazla bilgi için bkz[. Microsoft 365 Lighthouse: Microsoft 365 kullanım kartındaki Kiracılar sayfasına genel bakış](m365-lighthouse-tenants-page-overview.md#microsoft-365-usage-card).
+Daha fazla bilgi için Microsoft 365 Lighthouse[: Microsoft 365 hizmetleri kullanımı bölümündeki Kiracılar sayfasına genel bakış bölümüne bakın](m365-lighthouse-tenants-page-overview.md#microsoft-365-services-usage-section).
 
 ### <a name="exchange-online-protection-and-microsoft-365-defender-for-office-365-default-baseline-step"></a>Varsayılan Office 365 temel adım için Exchange Online Protection ve Microsoft 365 Defender
 
@@ -194,7 +194,7 @@ Müşteri kiracılarınızdaki kullanıcılarla gerçekleştirmeleri gereken eyl
 
 ### <a name="capability-to-take-action-on-noncompliant-devices"></a>Uyumsuz cihazlarda eylem gerçekleştirme özelliği
 
-Birden çok müşteri kiracısı arasında bir veya daha fazla cihazı eşitleme veya yeniden başlatma özelliği ekledik. Bu işlev, müşterilerinizin cihazlarının riskten korunmasına yardımcı olur. Bu işlevi kullanıma almak için, Microsoft 365 Lighthouse sol gezinti **bölmesinden Cihazlar'ı** seçin ve ardından Cihazlar sekmesini seçin. **Cihazlar** listesinin üst kısmındaki **Eşitle** ve **Yeniden Başlat** seçeneklerini arayın. Bu seçeneklere herhangi bir cihazın cihaz ayrıntıları bölmesinden de erişebilirsiniz.
+Birden çok müşteri kiracısı arasında bir veya daha fazla cihazı eşitleme veya yeniden başlatma özelliği ekledik. Bu işlev, müşterilerinizin cihazlarının riskten korunmasına yardımcı olur. Bu işlevi kullanıma almak için, Microsoft 365 Lighthouse sol gezinti bölmesinde **Cihazlar'ı** seçin ve ardından **Cihazlar** sekmesini seçin. Cihazlar listesinin üst kısmındaki **Eşitle** ve **Yeniden Başlat** seçeneklerini arayın. Bu seçeneklere herhangi bir cihazın cihaz ayrıntıları bölmesinden de erişebilirsiniz.
 
 ### <a name="capability-to-monitor-and-manage-windows-365-cloud-pcs"></a>Windows 365 Bulut bilgisayarlarını izleme ve yönetme özelliği
 
@@ -227,7 +227,7 @@ Yeni temeller özelliğiyle artık müşteri kiracılarındaki kullanıcıların
 - Windows cihazları için Defender AV ilkesini yapılandırma 
 - Windows cihazları için Uyumluluk İlkesi'ni yapılandırma 
 
-Bu dağıtım adımlarını uygulamak için Microsoft 365 lighthouse'un sol gezinti **bölmesinden Kiracılar'ı** seçin, kiracılar listesinden bir kiracı seçin ve ardından **Dağıtım planı** sekmesini seçin. 
+Bu dağıtım adımlarını uygulamak için Microsoft 365 lighthouse'un sol gezinti bölmesinde **Kiracılar'ı** seçin, kiracı listesinden bir kiracı seçin ve ardından **Dağıtım planı** sekmesini seçin. 
 
 ## <a name="may-2021"></a>Mayıs 2021
 

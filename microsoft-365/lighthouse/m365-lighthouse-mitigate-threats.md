@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Microsoft Defender Virüsten Koruma ile tehditleri azaltma hakkında bilgi edinin.
-ms.openlocfilehash: 13583b66ab1251ae5cb5db1122813783ff3b861e
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 005e1c527b8989b7689740e54229768decaebbc3
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822057"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055954"
 ---
 # <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma ile Microsoft 365 Lighthouse tehditleri azaltma
 
@@ -100,7 +100,7 @@ Microsoft Defender Virüsten Koruma'yi tek bir cihazda güncelleştirmek için:
 
 Listedeki her cihaz adının yanındaki onay kutusunu ve ardından **Virüsten korumayı güncelleştir'i** seçerek birden çok cihaz için güncelleştirmeler alabilirsiniz.
 
-Yeni bir ilke oluşturmanız gerekiyorsa cihaz ayrıntıları **bölmesinden İlkeyi güncelleştir'i** seçin. Lighthouse sizi Microsoft Endpoint Manager'e (MEM) yönlendirecektir. İlke oluşturma hakkında daha fazla bilgi için bkz. [Microsoft Intune'de uyumluluk ilkesi oluşturma](/mem/intune/protect/create-compliance-policy).
+Yeni bir ilke oluşturmanız gerekiyorsa cihaz ayrıntıları bölmesinde **İlkeyi güncelleştir'i** seçin. Lighthouse sizi Microsoft Endpoint Manager'e (MEM) yönlendirecektir. İlke oluşturma hakkında daha fazla bilgi için bkz. [Microsoft Intune'de uyumluluk ilkesi oluşturma](/mem/intune/protect/create-compliance-policy).
 
 ## <a name="check-pending-antivirus-actions-on-a-device"></a>Cihazda bekleyen virüsten koruma eylemlerini denetleme
 

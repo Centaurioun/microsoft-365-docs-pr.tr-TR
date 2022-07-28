@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Kiracılar sayfası hakkında bilgi edinin.
-ms.openlocfilehash: 28ca99b32021be0ad5efbf29a858df7bad253078
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: e6da14bb6ad87b54f33b2c0a6bf612c2ba025725
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016531"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056756"
 ---
 # <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Kiracılar sayfasına genel bakış
 
@@ -30,7 +30,7 @@ Microsoft 365 Lighthouse, kiracılar sayfasını açmak için sol gezinti bölme
 
 Kiracılar sayfası aşağıdaki seçenekleri de içerir:
 
-- **Ihracat:** Kiracı verilerini virgülle ayrılmış Excel değerler (.csv) dosyasına aktarmak için seçin.
+- **Ihracat:** Kiracı verilerini Excel virgülle ayrılmış değerler (.csv) dosyasına dışarı aktarmak için seçin.
 - **Etiketleri Yönet:** Etiket eklemek, düzenlemek veya silmek için seçin.
 - **Etiketleri Ata:** Kiracıya etiket atamak için öğesini seçin.
 - **Arama:** Listede belirli bir kiracıyı hızla bulmak için anahtar sözcükler girin.
@@ -88,11 +88,11 @@ Ayrıntılı kiracı bilgilerini görüntülemek için kiracı listesinden bir k
 
 Genel Bakış sekmesinde kiracıya genel bakış, kişi bilgileri ve Microsoft 365 hizmet kullanımını görüntüleyebilirsiniz.
 
-#### <a name="tenant-overview-card"></a>Kiracıya genel bakış kartı
+#### <a name="tenant-overview-section"></a>Kiracıya genel bakış bölümü
 
-Kiracıya genel bakış kartı, Microsoft 365 hesabından kiracı hakkında bilgi sağlar.<br><br>
+Kiracıya genel bakış bölümü, Microsoft 365 hesabından kiracı hakkında bilgi sağlar.<br><br>
 
-| Kiracı Bilgileri    | Açıklama|
+| Kiracı bilgileri    | Açıklama|
 |-----------------------|------------------|
 | Genel Müdürlük    | Kiracının bulunduğu yer.|
 | Sanayi    |Kuruluşun sektörü.|
@@ -101,9 +101,9 @@ Kiracıya genel bakış kartı, Microsoft 365 hesabından kiracı hakkında bilg
 | Toplam kullanıcı sayısı    |Kiracıda atanan kullanıcı sayısı. Bu kiracının Kullanıcılar sayfasını açmak için bu numarayı seçebilirsiniz.|
 | Toplam cihaz sayısı|Kiracıya kaydedilen cihaz sayısı. Bu kiracının Cihazlar sayfasını açmak için bu numarayı seçebilirsiniz.|
 
-#### <a name="contacts-card"></a>Kişiler kartı
+#### <a name="contacts-section"></a>Kişiler bölümü
 
-Kişiler kartı, yönettiğiniz kiracıların içindeki önemli kişilerin bilgilerini girmenize olanak tanır; örneğin:
+Kişiler bölümü, yönettiğiniz kiracıların içindeki önemli kişiler için aşağıdakiler gibi bilgiler sağlar:
 
 - Name
 - Başlık
@@ -111,26 +111,26 @@ Kişiler kartı, yönettiğiniz kiracıların içindeki önemli kişilerin bilgi
 - E-posta
 - Notlar
 
-Notlar bölümü, kiracının görevlendirme tercihleri, konum, saat dilimi ve kuruluştaki rolüyle ilgili ayrıntılar gibi önemli bilgileri kaydetmek için kullanabileceğiniz bir metin alanıdır.
+**Notlar** sütunu kiracıya ilişkin katılım tercihleri, konum, saat dilimi ve kuruluştaki rolüyle ilgili ayrıntılar gibi bilgileri gösterir.
 
-Ayrıntıları düzenlemek veya mevcut bir kişiyi silmek için listeden kişi adını seçin. **Kişiyi düzenle** bölmesinde, kişiyi düzenleyin veya silin. Başka bir kişi eklemek için **+Kişi ekle'yi** seçin.
+Ayrıntıları düzenlemek, not eklemek veya var olan bir kişiyi silmek için listeden kişi adını seçin. **Kişiyi düzenle** bölmesinde, kişiyi düzenleyin veya silin. Başka bir kişi eklemek için **+Kişi ekle'yi** seçin.
 
-#### <a name="microsoft-365-usage-card"></a>Microsoft 365 kullanım kartı
+#### <a name="microsoft-365-services-usage-section"></a>Microsoft 365 hizmetleri kullanımı bölümü
 
-Lighthouse, kiracı içindeki kaç kullanıcının lisanslı olduğu ve her hizmeti etkin bir şekilde kullandığı da dahil olmak üzere Microsoft 365 hizmet kullanımıyla ilgili içgörüler sağlar. Etkin, son 28 gün içinde hizmette en az bir kez oturum açmış olan kullanıcı veya cihaz sayısını gösterir. Değişiklik, geçen aydan bu yana etkin kullanıcı ve cihazlardaki değişikliği gösterir.
+Lighthouse, bir kiracıdaki kaç kullanıcının lisanslı olduğu ve her hizmeti etkin bir şekilde kullandığı dahil olmak üzere Microsoft 365 hizmet kullanımıyla ilgili içgörüler sağlar. **Etkin kullanıcılar & cihazlar** sütunu, son 28 gün içinde hizmette en az bir kez oturum açmış olan kullanıcı veya cihaz sayısını gösterir. **Etkinlikte değişiklik** sütunu, geçen aydan bu yana etkin kullanıcılar ve cihazlardaki değişikliği gösterir.
 
-Microsoft 365 Kullanımı kartı iki bölüm içerir:
+**Microsoft 365 hizmetleri kullanımı** bölümünde iki alt bölüm bulunur:
 
 - **Microsoft 365 Lighthouse etkin hizmetler:** Lighthouse portalında yönetilebilen hizmetler.
 - **Ek Microsoft 365 hizmetleri:** Microsoft 365 paketine dahil edilen ancak şu anda Microsoft 365 Lighthouse portalında yönetilebilen hizmetler.
 
-### <a name="deployment-plans-tab"></a>Dağıtım Planları sekmesi
+### <a name="deployment-plan-tab"></a>Dağıtım Planı sekmesi
 
 Dağıtım Planları sekmesi, kiracının dağıtım planında durum sağlar. Listedeki dağıtım adımları, kiracıya uygulanan temeli temel alır. Dağıtım adımı ayrıntılarını görmek için listeden bir dağıtım adımı seçin.
 
-Dağıtım Planları sekmesi aşağıdaki seçenekleri de içerir:
+Dağıtım Planı sekmesi aşağıdaki seçenekleri de içerir:
 
-- **Ihracat:** Dağıtım adımı verilerini virgülle ayrılmış Excel değerler (.csv) dosyasına aktarmak için seçin.
+- **Ihracat:** Dağıtım adımı verilerini Excel virgülle ayrılmış değerler (.csv) dosyasına aktarmak için seçin.
 - **Yenileme:** En güncel dağıtım adımı verilerini almak için öğesini seçin.
 - **Arama:** Listede belirli bir dağıtım adımını hızla bulmak için anahtar sözcükler girin.
 

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için cihaz uyumluluk ilkesi ayarlarını karşılaştırmayı öğrenin.
-ms.openlocfilehash: 0a0c5127a86832637a16449e06c3df70299b49a3
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 9640fcb1438de70c6283c177e64c12fb6da57349
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822911"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056602"
 ---
 # <a name="compare-device-compliance-policy-settings-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de cihaz uyumluluk ilkesi ayarlarını karşılaştırma
 
@@ -34,7 +34,7 @@ Cihazların Microsoft Intune lisansı olduğundan ve Microsoft Endpoint Manager'
 
 ## <a name="compare-policy-settings"></a>İlke ayarlarını karşılaştırma
 
-1. Lighthouse'un sol gezinti bölmesinde **Cihazlar Cihaz** > **Uyumluluğu'nu** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Cihazlar Cihaz** > **uyumluluğu'nu** seçin.
 
 2. **İlkeler** sekmesini seçin.
 
@@ -51,13 +51,13 @@ Cihazların Microsoft Intune lisansı olduğundan ve Microsoft Endpoint Manager'
 
 ## <a name="configure-a-policy-setting"></a>İlke ayarını yapılandırma
 
-1. Lighthouse'un sol gezinti bölmesinde **Cihazlar Cihaz** > **Uyumluluğu'nu** seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Cihazlar Cihaz** > **uyumluluğu'nu** seçin.
 
 2. **İlkeler** sekmesini seçin.
 
-3. Listeden bir ilke adı seçin.
+3. İlke listesinden, görüntülemek istediğiniz ilkeyi seçin.
 
-4. İlke ayrıntıları bölmesinde **Bu ilkeyi Microsoft Endpoint Manager'de görüntüle'yi** seçin.
+4. İlke ayrıntıları bölmesinde **Bu ilkeyi Microsoft Endpoint Manager'da görüntüle'yi** seçin.
 
 5. MEM'de ilke ayarlarını gerektiği gibi düzenleyin.
 

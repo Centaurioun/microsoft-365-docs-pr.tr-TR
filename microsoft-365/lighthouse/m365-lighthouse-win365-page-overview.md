@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Windows 365 (Bulut bilgisayarları) sayfası hakkında bilgi edinin.
-ms.openlocfilehash: 1698c9298981778cb01e01715b794dd43a4daf3c
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: f1f385032c33a2e7a9740e8bd6b363c5f135da23
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823485"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056690"
 ---
 # <a name="overview-of-the-windows-365-cloud-pcs-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'daki Windows 365 (Bulut Bilgisayarlar) sayfasına genel bakış  
   
@@ -39,9 +39,9 @@ Müşteri kiracınız için Bulut bilgisayarları sağladıktan sonra, Microsoft
 
 Genel Bakış sekmesinde, renkli count-annotation çubuğu aşağıdaki durumlara sahip tüm müşteri kiracılarınız genelinde bulut bilgisayarlarının veya Azure ağ bağlantılarının toplam sayısını görüntüler: Başarısız ağ bağlantıları, Sağlanmadı, Sağlama başarısız oldu ve Sağlama yakında kaldırıldı.
 
-Ek açıklama çubuğunun altındaki listede her müşteri kiracısı için Bulut Bilgisayarı durumlarının dökümünü görebilirsiniz. Hangi kiracıların belirli bir duruma sahip Bulut bilgisayarlarına sahip olduğunu görmek için, listeyi filtrelemek için count-annotation çubuğundan bu durumu seçin. Bir veya daha fazla belirli müşteri kiracısının Bulut Bilgisayar durumlarını görmek için, Listeyi filtrelemek için **Kiracılar** açılan menüsünü kullanın.
+Her müşteri kiracısı için Bulut Bilgisayarı durumlarının dökümünü, count-annotation çubuğunun altındaki listede görebilirsiniz. Hangi kiracıların belirli bir duruma sahip Bulut bilgisayarlarına sahip olduğunu görmek için, listeyi filtrelemek için count-annotation çubuğundan bu durumu seçin. Bir veya daha fazla belirli müşteri kiracısının Bulut Bilgisayar durumlarını görmek için, Listeyi filtrelemek için **Kiracılar** açılan menüsünü kullanın.
 
-Belirli bir müşteri kiracısının ayrıntılı durum bilgilerini almak için, söz konusu kiracının durum sütunlarından herhangi birinin altında bir değer seçin. Değerin hangi sütunda olduğuna bağlı olarak **Azure ağ bağlantıları** veya **Tüm bulut bilgisayarları** sekmesi açılır ve daha fazla bilgi gösterilir.
+Belirli bir müşteri kiracısının ayrıntılı durum bilgilerini almak için, söz konusu kiracının durum sütunlarından herhangi birinin altında bir değer seçin. Değerin hangi sütunda olduğuna bağlı olarak **, Azure ağ bağlantıları** veya **Tüm Bulut Bilgisayarları** sekmesi açılır ve daha fazla bilgi gösterilir.
 
 Genel Bakış sekmesi aşağıdaki seçenekleri de içerir:
 
@@ -55,7 +55,7 @@ Genel Bakış sekmesi aşağıdaki seçenekleri de içerir:
 
 Tüm Bulut Bilgisayarları sekmesinde, renkli count-annotation çubuğu tüm müşteri kiracılarınızda şu durumlara sahip bulut bilgisayarlarının toplam sayısını görüntüler: Sağlandı, Sağlanmadı, Sağlama başarısız oldu ve Sağlama yakında kaldırıldı.
 
-Tüm Bulut bilgisayarlarını ve sağlama durumlarını ek açıklama çubuğunun altındaki listede görüntüleyebilirsiniz. Aşağıdaki bilgiler sağlanır:
+Tüm Bulut bilgisayarlarını ve sağlama durumlarını count-annotation çubuğunun altındaki listede görüntüleyebilirsiniz. Aşağıdaki bilgiler sağlanır:
 
 - **Bulut bilgisayar adı:** Bulut bilgisayara atanan ad.
 - **Kullanıcı:** Bulut bilgisayarının sağlandığı veya sağlanmaya çalışıldığı kullanıcı.

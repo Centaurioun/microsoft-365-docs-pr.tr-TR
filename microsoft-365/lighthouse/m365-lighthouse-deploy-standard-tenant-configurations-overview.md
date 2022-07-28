@@ -17,22 +17,22 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için standart kiracı yapılandırmalarını dağıtmak için temelleri kullanma hakkında bilgi edinin.
-ms.openlocfilehash: 064968cd75804167493e696f08c3bec764598c94
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 9261be531db428c3d081e87c6717dfc8710a5026
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749165"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056646"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Standart kiracı yapılandırmalarını dağıtmak için Microsoft 365 Lighthouse temellerini kullanmaya genel bakış 
 
 Microsoft 365 Lighthouse temelleri, microsoft 365 güvenlik ayarlarını birden çok müşteri kiracısı arasında yönetmeniz için yinelenebilir ve ölçeklenebilir bir yol sağlar. Temeller, kiracılarınızın kullanıcılarını, cihazlarını ve verilerini güvenli tutan temel güvenlik ilkelerini ve uyumluluk standartlarını dağıtan standart kiracı yapılandırmaları sağlar.
 
-Varsayılan temeli ve dağıtım adımlarını Lighthouse'un içinden görüntüleyebilirsiniz. Kiracıya taban çizgisi uygulamak için sol gezinti bölmesinde **Kiracılar'ı** seçin ve ardından bir kiracı seçin. Ardından dağıtıma başlamak için **Dağıtım planları** sekmesine gidin.
+Varsayılan temeli ve dağıtım adımlarını Lighthouse'un içinden görüntüleyebilirsiniz. Kiracıya taban çizgisi uygulamak için sol gezinti bölmesinde **Kiracılar'ı** seçin ve ardından bir kiracı seçin. Ardından dağıtıma başlamak için **Dağıtım Planı** sekmesine gidin.
 
 ## <a name="lighthouse-baseline"></a>Deniz feneri temeli
 
-Lighthouse temel yapılandırmaları, tüm yönetilen kiracıların güvenli ve uyumlu olduğundan emin olmak için tasarlanmıştır. Tüm **kiracılar** için geçerli olan varsayılan temeli görüntülemek için sol gezinti bölmesinden Temeller'i seçin.  Varsayılan taban çizgisine dahil edilen dağıtım adımlarını görüntülemek için **Temeli görüntüle'yi** seçerek **Varsayılan temel** sayfasını açın. Dağıtım ayrıntılarını ve kullanıcı etkisini görüntülemek için dağıtım adımlarından herhangi birini seçin.
+Lighthouse temel yapılandırmaları, tüm yönetilen kiracıların güvenli ve uyumlu olduğundan emin olmak için tasarlanmıştır. Tüm **kiracılar** için geçerli olan varsayılan temeli görüntülemek için sol gezinti bölmesinde Temeller'i seçin. Varsayılan taban çizgisine dahil edilen dağıtım adımlarını görüntülemek için **Temeli görüntüle'yi** seçerek **Varsayılan temel** sayfasını açın. Dağıtım ayrıntılarını ve kullanıcı etkisini görüntülemek için dağıtım adımlarından herhangi birini seçin.
 
 :::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Varsayılan temel sayfasının ekran görüntüsü.":::
 

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP' ler) için, tek bir kullanıcı veya farklı kiracılardaki birden çok riskli kullanıcı için parola sıfırlamayı öğrenin.
-ms.openlocfilehash: 9fd748a3ed79a0f22a9ea4360b9a9a2c90dfb0e0
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: c46f7e744e06118eb3a8cf8dc48bf5dcf1b36e31
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822035"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055888"
 ---
 # <a name="reset-a-user-password-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de kullanıcı parolasını sıfırlama
 
@@ -38,7 +38,7 @@ Microsoft 365 Lighthouse, kullanıcı parolalarını değiştirmenize veya sıf�
 
 4. Kullanıcı ayrıntıları bölmesinde **Parolayı sıfırla'yı** seçin.
 
-5. Parolayı sıfırla bölmesinde **Parolayı otomatik olarak oluştur'u** veya **Parola oluşturmama izin ver'i** seçin.
+5. **Parolayı sıfırla** bölmesinde **Parolayı otomatik olarak oluştur'u** veya **Parola oluşturmama izin ver'i** seçin.
 
     - Parola oluşturmayı seçerseniz bir parola girin.
 
@@ -48,13 +48,13 @@ Microsoft 365 Lighthouse, kullanıcı parolalarını değiştirmenize veya sıf�
 
 ## <a name="reset-a-password-for-a-risky-user"></a>Riskli bir kullanıcı için parola sıfırlama
 
-1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar****Riskli Kullanıcılar'ı** >  seçin.
+1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Riskli kullanıcılar'ı** seçin.
 
 2. **Riskli Kullanıcılar** sekmesinde, listeden riskli bir kullanıcı seçin.
 
 3. **Parolayı sıfırla'yı** seçin.
 
-4. Parolayı sıfırla bölmesinde **Parolayı otomatik olarak oluştur'u** veya **Parola oluşturmama izin ver'i** seçin.
+4. **Parolayı sıfırla** bölmesinde **Parolayı otomatik olarak oluştur'u** veya **Parola oluşturmama izin ver'i** seçin.
 
    - Parola oluşturmayı seçerseniz bir parola girin.
 

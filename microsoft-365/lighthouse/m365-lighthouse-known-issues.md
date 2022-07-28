@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için, Özellik alanına göre Lighthouse ile ilgili bilinen sorunların listesine bakın.
-ms.openlocfilehash: 61073729b9589033ab361973c1c87bac2b28959a
-ms.sourcegitcommit: 04a93269fbbbdb5513335422cabdc1b269ead5ac
+ms.openlocfilehash: ce2ad15e6b4863546693175c509c0220f1383406
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66160830"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056866"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse ile ilgili bilinen sorunlar
 
@@ -32,7 +32,7 @@ Bu makalede, özellik alanına göre Microsoft 365 Lighthouse ile ilgili bilinen
 
 | Sorun | Açıklama | Çözüm |
 | ---------------- | ---------------- | ---------------- |
-| **Yardım Masası Aracısı kullanıcı parolasını sıfırlayamıyor** | Yardım Masası Aracısı grubunun üyesi olan Yönetilen Hizmet Sağlayıcısı (MSP) teknisyenleri, müşteri kiracılarındaki kullanıcıların parolalarını sıfırlayamaz. Kullanıcı parolasını sıfırlamaya çalıştığında şu hata iletisini alır: "Bunu yapma izniniz yok. [Daha fazla bilgi edinin](m365-lighthouse-configure-portal-security.md)" | İzin sorununu geçici olarak çözmek için Yardım Masası Aracıları Microsoft 365 yönetim merkezi veya Azure Active Directory kullanarak parolaları sıfırlamalıdır. |
+| **Yardım Masası Aracısı kullanıcı parolasını sıfırlayamıyor** | Yardım Masası Aracısı grubunun üyesi olan Yönetilen Hizmet Sağlayıcısı (MSP) teknisyenleri, müşteri kiracılarındaki kullanıcıların parolalarını sıfırlayamaz. Kullanıcı parolasını sıfırlamaya çalıştığında şu hata iletisini alır: "Bunu yapma izniniz yok. [Daha fazla bilgi edinin](m365-lighthouse-configure-portal-security.md)" | İzin sorununu geçici olarak çözmek için Yardım Masası Aracılarının Microsoft 365 yönetim merkezi veya Azure Active Directory kullanarak parolaları sıfırlaması gerekir. |
 
 ## <a name="devices"></a>Aygıtları
 
@@ -44,7 +44,7 @@ Bu makalede, özellik alanına göre Microsoft 365 Lighthouse ile ilgili bilinen
 
 | Sorun | Açıklama | Çözüm |
 | ---------------- | ---------------- | ---------------- |
-| **Tehdit adı eksik** | MSP teknisyenleri Tehdit Yönetimi sayfasından tehdit listesini görüntülediğinde, bazı tehditlerde tehdidin adı eksik olabilir. Tehdit algılanan cihaz yakın zamanda Intune'dan kaldırıldığında bu durum ortaya çıkar. | Sorun 48 saat içinde çözülecektir. Ek adım gerekmez. |
+| **Tehdit adı eksik** | MSP teknisyenleri Tehdit yönetimi sayfasından tehdit listesini görüntülediğinde, bazı tehditlerde tehdidin adı eksik olabilir. Tehdit algılanan cihaz yakın zamanda Intune'dan kaldırıldığında bu durum ortaya çıkar. | Sorun 48 saat içinde çözülecektir. Ek adım gerekmez. |
 
 ## <a name="baselines"></a>Temel
 
