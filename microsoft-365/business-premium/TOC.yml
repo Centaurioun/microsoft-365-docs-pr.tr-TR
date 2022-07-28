@@ -2,7 +2,7 @@
   items:
     - name: Genel bakış
       href: index.md
-    - name: Microsoft 365 işletmenize nasıl yardımcı olur?
+    - name: İşinizi daha güvenli bir şekilde yürütün
       href: m365bp-secure-users.md
     - name: Microsoft 365 İş Ekstra deneme akış planı
       href: m365bp-trial-playbook-microsoft-business-premium.md
