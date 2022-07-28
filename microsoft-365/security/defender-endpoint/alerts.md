@@ -1,7 +1,7 @@
 ---
-title: Uyarı API'sini edinin
-description: Uç Nokta için Microsoft Defender'da Uyarı kaynak türünün yöntemleri ve özellikleri hakkında bilgi öğrenin.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, get, alerts, recent
+title: Uyarı alma API'si
+description: Uç Nokta için Microsoft Defender'da Uyarı kaynak türünün yöntemleri ve özellikleri hakkında bilgi edinin.
+keywords: api'ler, graf api'leri, desteklenen API'ler, alma, uyarılar, son kullanılanlar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,21 +15,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3344bb13d785739f7957c3b0d000b04ae7fea95b
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: e03de336dbbcdad5b9e18730936a507bf1d627bc
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62974111"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059842"
 ---
 # <a name="alert-resource-type"></a>Uyarı kaynak türü
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -41,18 +41,18 @@ ms.locfileid: "62974111"
 
 ****
 
-|Yöntem|İade Türü|Açıklama|
+|Yöntem|Dönüş Türü|Açıklama|
 |---|---|---|
-|[Uyarı al](get-alert-info-by-id.md)|[Uyarı](alerts.md)|Tek bir uyarı [nesnesine](alerts.md) sahip olun.|
-|[Liste uyarıları](get-alerts.md)|[Uyarı](alerts.md) koleksiyonu|Liste [uyarısı](alerts.md) koleksiyonu.|
-|[Uyarıyı güncelleştir](update-alert.md)|[Uyarı](alerts.md)|Belirli bir [uyarıyı güncelleştirin](alerts.md).|
-|[Toplu güncelleştirme uyarıları](batch-update-alerts.md)||Bir grup [uyarıyı güncelleştirme](alerts.md).|
-|[Uyarı oluştur](create-alert-by-reference.md)|[Uyarı](alerts.md)|Gelişmiş Av'dan alınan olay verilerine dayalı olarak [uyarı oluşturun](run-advanced-query-api.md).|
-|[İlgili etki alanlarını listele](get-alert-related-domain-info.md)|Etki alanı koleksiyonu|Uyarıyla ilişkilendirilmiş URL'leri listele.|
-|[İlgili dosyaları listele](get-alert-related-files-info.md)|[Dosya](files.md) koleksiyonu|Uyarıyla [](files.md) ilişkilendirilmiş dosya varlıklarını [listele](alerts.md).|
-|[İlgili IP'leri listele](get-alert-related-ip-info.md)|IP koleksiyonu|Uyarıyla ilişkilendirilmiş liste IP'leri.|
-|[İlgili makineler al](get-alert-related-machine-info.md)|[Makine](machine.md)|[Uyarıyla](machine.md) ilişkilendirilmiş [makine](alerts.md).|
-|[İlgili kullanıcıları al](get-alert-related-user-info.md)|[Kullanıcı](user.md)|[Uyarıyla](user.md) ilişkilendirilmiş [kullanıcı](alerts.md).|
+|[Uyarı alma](get-alert-info-by-id.md)|[Uyarı](alerts.md)|Tek bir [uyarı](alerts.md) nesnesi alın.|
+|[Uyarıları listele](get-alerts.md)|[Uyarı](alerts.md) koleksiyonu|[Uyarı](alerts.md) koleksiyonunu listeleme.|
+|[Uyarıyı güncelleştirme](update-alert.md)|[Uyarı](alerts.md)|Belirli [bir uyarıyı](alerts.md) güncelleştirin.|
+|[Grup güncelleştirme uyarıları](batch-update-alerts.md)||Bir grup [uyarıyı](alerts.md) güncelleştirin.|
+|[Uyarı oluştur](create-alert-by-reference.md)|[Uyarı](alerts.md)|[Gelişmiş Tehdit Avcılığı'ndan](run-advanced-query-api.md) alınan olay verilerini temel alan bir uyarı oluşturun.|
+|[İlgili etki alanlarını listeleme](get-alert-related-domain-info.md)|Etki alanı koleksiyonu|Uyarıyla ilişkili URL'leri listeleyin.|
+|[İlgili dosyaları listeleme](get-alert-related-files-info.md)|[Dosya](files.md) koleksiyonu|[Uyarıyla](alerts.md) ilişkili [dosya](files.md) varlıklarını listeleyin.|
+|[İlgili IP'leri listeleme](get-alert-related-ip-info.md)|IP koleksiyonu|Uyarıyla ilişkili IP'leri listeleyin.|
+|[İlgili makineleri alma](get-alert-related-machine-info.md)|[Makine](machine.md)|[Uyarıyla](alerts.md) ilişkili [makine](machine.md).|
+|[İlgili kullanıcıları alma](get-alert-related-user-info.md)|[Kullanıcı](user.md)|[Uyarıyla](alerts.md) ilişkili [kullanıcı](user.md).|
 |
 
 ## <a name="properties"></a>Özellikler
@@ -63,38 +63,41 @@ ms.locfileid: "62974111"
 
 |Özellik|Tür|Açıklama|
 |---|---|---|
-|id|Dize|Uyarı Kimliği.|
-|başlık|Dize|Uyarı başlığı.|
-|açıklama|Dize|Uyarı açıklaması.|
-|alertCreationTime|Nullable DateTimeOffset|Uyarının oluşturulmuş olduğu tarih ve saat (UTC).|
-|lastEventTime|Nullable DateTimeOffset|Aynı cihazda uyarıyı tetikleyen etkinliğin son oluşumu.|
-|firstEventTime|Nullable DateTimeOffset|Bu cihazda uyarıyı tetikleyen ilk olay.|
-|lastUpdateTime|Nullable DateTimeOffset|Uyarının son güncelleştirme tarihi ve saati (UTC).|
-|resolvedTime|Nullable DateTimeOffset|Uyarının durumunun 'Çözümlendi' olarak değiştir bitiş tarihi ve saati.|
-|olaykimlikkim|Nullable Long|[Uyarının](view-incidents-queue.md) Olay Kimliği.|
-|investigationId|Nullable Long|[Uyarıyla](automated-investigations.md) ilgili Araştırma Kimliği.|
-|investigationState|Nullable Enum|Araştırma'nın geçerli [durumu](automated-investigations.md). Olası değerler şöyledir: 'Bilinmiyor', 'Sonlandırıldı', 'Başarıyla Gönderildi', 'Silindi', 'Başarısız', 'Kısmen Kuyruğa Alındı', 'Çalışıyor', 'PendingApproval', 'PendingResource', 'PartialLyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Kuyruğa Alındı', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
-|atanan|Dize|Uyarının sahibi.|
-|rbacGroupName|Dize|RBAC cihaz grup adı.|
-|mitreTechniques|Dize|Geri Enterprise teknik kimliği.|
-|relatedUser|Dize|Belirli bir uyarıyla ilgili kullanıcı ayrıntıları.|
-|önem derecesi|Enum|Uyarının önem derecesi. Olası değerler şöyledir: 'Belirtilmemiş', 'Bilgilendirme', 'Düşük', 'Orta' ve 'Yüksek'.|
-|durum|Enum|Uyarının geçerli durumunu belirtir. Olası değerler şöyledir: 'Bilinmiyor', 'Yeni', 'Çıkış' ve 'Çözümlendi'.|
-|sınıflandırma|Nullable Enum|Uyarının belirtimi. Olası değerler şöyledir: 'Bilinmiyor', 'YanlışPositive', 'DoğruPositive'.|
-|karartma|Nullable Enum|Uyarıyı belirlemeyi belirtir. Olası değerler şöyledir: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.|
-|kategori|Dize|Uyarının kategorisi.|
-|algılamaKaynağı|Dize|Algılama kaynağı.|
+|Kimliği|Dize|Uyarı Kimliği.|
+|Başlık|Dize|Uyarı başlığı.|
+|Açıklama|Dize|Uyarı açıklaması.|
+|alertCreationTime|Null Atanabilir DateTimeOffset|Uyarının oluşturulduğu tarih ve saat (UTC olarak).|
+|lastEventTime|Null Atanabilir DateTimeOffset|Aynı cihazda uyarıyı tetikleyen olayın son oluşumu.|
+|firstEventTime|Null Atanabilir DateTimeOffset|Bu cihazda uyarıyı tetikleyen olayın ilk oluşumu.|
+|lastUpdateTime|Null Atanabilir DateTimeOffset|Uyarının son güncelleştirildiği tarih ve saat (UTC olarak).|
+|resolvedTime|Null Atanabilir DateTimeOffset|Uyarının durumunun 'Çözüldü' olarak değiştirildiği tarih ve saat.|
+|incidentId|Boş Değer Atanabilir Uzun|Uyarının [Olay](view-incidents-queue.md) Kimliği.|
+|investigationId|Boş Değer Atanabilir Uzun|Uyarı ile ilgili [Araştırma](automated-investigations.md) Kimliği.|
+|investigationState|Null Atanabilir Sabit Listesi|[Araştırmanın](automated-investigations.md) geçerli durumu. Olası değerler şunlardır: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
+|Atanan|Dize|Uyarının sahibi.|
+|rbacGroupName|Dize|RBAC cihaz grubu adı.|
+|mitreTechniques|Dize|Mitre Enterprise teknik kimliği.|
+|relatedUser|Dize|Belirli bir uyarıyla ilgili kullanıcının ayrıntıları.|
+|Önem|Enum|Uyarının önem derecesi. Olası değerler şunlardır: 'Belirtilmemiş', 'Bilgilendirici', 'Düşük', 'Orta' ve 'Yüksek'.|
+|Durum|Enum|Uyarının geçerli durumunu belirtir. Olası değerler şunlardır: 'Unknown', 'New', 'InProgress' ve 'Resolved'.|
+|Sınıflandırma|Null Atanabilir Sabit Listesi|Uyarının belirtimi. Olası değerler şunlardır: 'Unknown', 'FalsePositive', 'TruePositive'.|
+|Belirlenmesi|Null Atanabilir Sabit Listesi|Uyarının belirlenmesini belirtir. Olası değerler şunlardır: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'İstenmeyenSoftware', 'Diğer'.|
+|Kategori|Dize|Uyarı kategorisi.|
+|detectionSource|Dize|Algılama kaynağı.|
 |threatFamilyName|Dize|Tehdit ailesi.|
 |threatName|Dize|Tehdit adı.|
-|machineId|Dize|Uyarıyla [ilişkilendirilmiş](machine.md) makine varlığının kimliği.|
-|computerDnsName|Dize|[makinede](machine.md) tam ad.|
-|aadTenantId|Dize|Kimlik Azure Active Directory.|
-|12013'e|Dize|Uyarıyı tetikleyen uyarının kimliği.|
-|açıklamalar|Uyarı açıklamalarının listesi|Uyarı Açıklaması nesnesi şunları içerir: açıklama dizesi, createdBy dizesi ve createTime tarih saati.|
-|Kanıt|Uyarı kanıtı listesi|Uyarıyla ilgili kanıt. Aşağıdaki örneğine bakın.|
+|machineId|Dize|Uyarıyla ilişkilendirilmiş bir [makine](machine.md) varlığının kimliği.|
+|computerDnsName|Dize|[makine](machine.md) tam adı.|
+|aadTenantId|Dize|Azure Active Directory Kimliği.|
+|detectorId|Dize|Uyarıyı tetikleyen algılayıcının kimliği.|
+|Yorum|Uyarı açıklamalarının listesi|Uyarı Açıklaması nesnesi şunları içerir: açıklama dizesi, createdBy dizesi ve createTime tarih saati.|
+|Kanıt|Uyarı kanıtı listesi|Uyarıyla ilgili kanıt. Aşağıdaki örniğe bakın.|
 |
 
-### <a name="response-example-for-getting-single-alert"></a>Tek uyarı almak için yanıt örneği:
+>[!NOTE]
+>29 Ağustos 2022'de daha önce desteklenen uyarı belirleme değerleri ('Apt' ve 'SecurityPersonnel') kullanım dışı bırakılacak ve artık API aracılığıyla kullanılamayacak.
+
+### <a name="response-example-for-getting-single-alert"></a>Tek bir uyarı almak için yanıt örneği:
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/da637472900382838869_1364969609

@@ -1,5 +1,5 @@
 ---
-title: Güvenilir ARC gönderenlerini gönderen ve alıcı arasındaki geçerli cihazlar ve hizmetler için kullanma
+title: Gönderen ve alıcı arasındaki güvenilen cihazlar ve hizmetler için Güvenilen ARC gönderenlerini kullan
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,12 +18,12 @@ ms.custom:
 description: Kimliği Doğrulanmış Alınan Zincir (ARC), cihazlarda ve gönderen ile alıcı arasında gelen dolaylı posta akışlarında kimlik doğrulama sonuçlarını korumaya çalışan e-posta kimlik doğrulamasıdır. Güvenilir ARC Gönderenleriniz için şu şekilde özel durumlar yapabilirsiniz.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6b3057350f8b1a652a08da8c878a47e191af04d0
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 30b4f57b89ff8eaa61cf82c45a7d2b0af02d8241
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772346"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059655"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>*Meşru* dolaylı posta akışlarına güvenmek için güvenilir ARC Gönderenlerinin listesini oluşturma
 
@@ -33,7 +33,7 @@ ms.locfileid: "65772346"
 - Office 365 için Microsoft Defender plan 1 ve plan 2
 - Microsoft 365 Defender
 
-[SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md) gibi e-posta kimlik doğrulama mekanizmaları, e-posta alıcılarının *güvenliği* için e-posta gönderenleri doğrulamak için kullanılır, ancak bazı meşru hizmetler gönderen ile alıcı arasında e-postada değişiklik yapabilir. **Microsoft 365 Defender'da ARC, *meşru* dolaylı posta akışlarından kaynaklanan SPF, DKIM ve DMARC teslim hatalarını azaltmaya yardımcı olacaktır.**
+[SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md) gibi Email kimlik doğrulama mekanizmaları, e-posta alıcılarının *güvenliği* için e-posta gönderenleri doğrulamak için kullanılır, ancak bazı meşru hizmetler gönderen ile alıcı arasında e-postada değişiklik yapabilir. **Microsoft 365 Defender'da ARC, *meşru* dolaylı posta akışlarından kaynaklanan SPF, DKIM ve DMARC teslim hatalarını azaltmaya yardımcı olacaktır.**
 
 ## <a name="authenticated-received-chain-arc-in-microsoft-365-defender-for-office"></a>Office için Microsoft 365 Defender Kimliği Doğrulanmış Alınan Zincir (ARC)
 
@@ -67,7 +67,7 @@ Microsoft 365 Defender portalındaki güvenilir ARC mühürleyicileri, kiracın�
 3. Gösterilen metin kutusuna güvenilir ARC sızdırmazlık elemanları ekleyin.
     1. Etki alanlarını eklediğinize dikkat edin (örnek fabrikam.com).
     1. Buraya girdiğiniz etki alanı adı, ARC-Seal ve ARC-Message-Signature üst bilgilerinde (iletinin e-posta üst bilgilerinde) 'd' etki alanı etiketinde gösterilen etki alanıyla *eşleşmelidir* .
-    1. Bunları Outlook'daki iletinin özelliklerinde görebilirsiniz.
+    1. Bunları Outlook'taki iletinin özelliklerinde görebilirsiniz.
 
 ## <a name="steps-to-validate-your-trusted-arc-sealer"></a>Güvenilir ARC sealer'ınızı doğrulama adımları
 
@@ -107,8 +107,8 @@ header.from=contoso.com;compauth=pass reason=130
 
 **Yöneticiler Exchange Online PowerShell ile ARC yapılandırmaları da ayarlayabilir.**
 
-1. Çevrimiçi powershell'i Exchange Bağlan.
-2. Bağlan-ExchangeOnline.
+1. Exchange Online PowerShell’e bağlanın.
+2. Connect-ExchangeOnline.
 3. Etki alanını güvenilir bir ARC sealer'a eklemek veya güncelleştirmek için:
 </br>
 ``
@@ -138,8 +138,8 @@ Burada, **güvenilir bir ARC sealer oluşturma özelliğinden yararlandıktan so
 
 :::image type="content" source="../../media/m365d-indirect-traffic-flow-with-trusted-arc-sealer.PNG" alt-text="İkinci grafikte Contoso şirketi güvenilir ARC sızdırmazlık elemanlarının listesini oluşturmuştur. Aynı kullanıcı contoso.com fabrikam.com ikinci bir posta gönderir. Contoso tarafından işe alınan üçüncü taraf hizmeti, postanın üst bilgisindeki gönderenin IP adresini değiştirir. Ancak bu kez hizmet ARC sızdırmazlık uyguladı ve kiracı yöneticisi üçüncü tarafın etki alanını güvenilir ARC mühürleyicilerine zaten eklediğinden, değişiklik kabul edilir. SPF yeni IP adresi için başarısız oluyor. DKIM, içerik değişikliği nedeniyle başarısız oluyor. DMARC, önceki hatalar nedeniyle başarısız oluyor. Ancak ARC değişiklikleri tanır, bir Geçiş yayınlar ve değişiklikleri kabul eder. Spoof ayrıca bir geçiş alır. İleti Gelen Kutusu'na gönderilir.":::
 
-## <a name="next-steps-after-you-set-up-arc-for-microsoft-365-defender-for-office"></a>Sonraki adımlar: Office için Microsoft 365 Defender için ARC'i ayarladıktan sonra
+## <a name="next-steps-after-you-set-up-arc-for-microsoft-365-defender-for-office"></a>Sonraki adımlar: Office için Microsoft 365 Defender için ARC'ı ayarladıktan sonra
 
-Kurulumdan sonra ARC Üst Bilgilerinizi [İleti Üst Bilgisi Çözümleyicisi](/connectivity-analyzer/message-header-analyzer) ile denetleyin.
+Kurulumdan sonra ARC Üst Bilgilerinizi [İleti Üst Bilgisi Çözümleyicisi](https://mha.azurewebsites.net) ile denetleyin.
 
 [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md), yapılandırma adımlarını gözden geçirin.

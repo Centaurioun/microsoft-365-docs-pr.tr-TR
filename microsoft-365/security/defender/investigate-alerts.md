@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: b0c9e5793ec0ffc97cbbac0308a7e362da279e1b
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 9b2e3e540538c3757d49264d93929b1dc9c836ca
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663721"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059787"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender'da uyarıları araştırma
 
@@ -121,7 +121,7 @@ Microsoft 365 Defender uyarılar Uç Nokta için Microsoft Defender, Office 365 
 
 **Gerçekleştirilen eylemler** bölümünde posta kutuları, cihazlar ve bu uyarıdan etkilenen kullanıcılar gibi etkilenen varlıkların listesi bulunur. 
 
-ayrıca **, Microsoft 365 Defender portalında İşlem merkezinin** **Geçmiş** sekmesini görüntülemek için **İşlem merkezinde** görüntüle'yi de seçebilirsiniz. 
+ayrıca **, Microsoft 365 Defender portalında İşlem merkezinin** **Geçmiş** sekmesini görüntülemek için **İşlem merkezinde** görüntüle'yi de seçebilirsiniz.
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>Uyarı yazısında uyarının rolünü izleme
 
@@ -147,16 +147,14 @@ Uyarıyı yönetmek için uyarı sayfasının özet ayrıntıları bölümünde 
 - Uyarı durumu (Yeni, Çözüldü, Sürüyor).
 - Uyarıya atanan kullanıcı hesabı.
 - Uyarının sınıflandırması:
-
-   - **Ayarlanmadı** (varsayılan).
-
-   - Bir tehdit türüyle **gerçek pozitif**. Gerçek bir tehdidi doğru şekilde gösteren uyarılar için bu sınıflandırmayı kullanın. Tehdit türünü belirtmek, güvenlik ekibinizin tehdit desenlerini görmesine ve kuruluşunuzu onlardan korumak için harekete geçilmesine yardımcı olur.
-
-   - Bir etkinlik türüyle **bilgilendirici, beklenen** etkinlik. Güvenlik testlerine, kırmızı ekip etkinliğine ve güvenilen uygulama ve kullanıcılardan beklenen olağan dışı davranışlara yönelik uyarıları sınıflandırmak için bu kategorideki seçenekleri kullanın.
-
-   - Kötü amaçlı etkinlik olmadığında bile oluşturulan uyarı türleri için **hatalı pozitif**. Uyarıları hatalı pozitif olarak sınıflandırmak Microsoft 365 Defender algılama kalitesini artırmaya yardımcı olur.
-
+     - **Ayarlanmadı** (varsayılan).
+     - Bir tehdit türüyle **gerçek pozitif**. Gerçek bir tehdidi doğru şekilde gösteren uyarılar için bu sınıflandırmayı kullanın. Bu tehdit türünü belirterek güvenlik ekibiniz tehdit desenlerini görür ve kuruluşunuzu onlardan korumak için harekete geçebilirsiniz.
+     - Bir etkinlik türüyle **bilgilendirici, beklenen** etkinlik. Teknik olarak doğru olan ancak normal davranışı veya sanal tehdit etkinliğini temsil eden uyarılar için bu seçeneği kullanın. Genellikle bu uyarıları yoksaymak istersiniz ancak gelecekte etkinliklerin gerçek saldırganlar veya kötü amaçlı yazılımlar tarafından tetiklendiği benzer etkinlikler için beklemeniz gerekir. Güvenlik testlerine, kırmızı ekip etkinliğine ve güvenilen uygulama ve kullanıcılardan beklenen olağan dışı davranışlara yönelik uyarıları sınıflandırmak için bu kategorideki seçenekleri kullanın.
+     - **Kötü** amaçlı bir etkinlik olmadığında bile oluşturulan uyarı türleri veya yanlış alarm için hatalı pozitif. Yanlışlıkla normal olaylar veya etkinlikler olarak tanımlanan uyarıları kötü amaçlı veya şüpheli olarak sınıflandırmak için bu kategorideki seçenekleri kullanın. Gerçek tehditleri yakalamak için de yararlı olabilecek 'Bilgilendirici, beklenen etkinlik' uyarılarından farklı olarak, genellikle bu uyarıları yeniden görmek istemezsiniz. Uyarıları hatalı pozitif olarak sınıflandırmak Microsoft 365 Defender algılama kalitesini artırmaya yardımcı olur.
 - Uyarıyla ilgili bir açıklama.
+
+>[!NOTE]
+> 29 Ağustos 2022'de daha önce desteklenen uyarı belirleme değerleri ('Apt' ve 'SecurityPersonnel') kullanım dışı bırakılacak ve artık API aracılığıyla kullanılamayacak.
 
 > [!NOTE]
 > Etiketleri kullanarak uyarıları yönetmenin bir yolu. Office 365 için Microsoft Defender etiketleme özelliği artımlı olarak kullanıma sunulmuştur ve şu anda önizleme aşamasındadır. <br>

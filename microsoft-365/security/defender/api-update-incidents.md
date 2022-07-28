@@ -1,7 +1,7 @@
 ---
-title: Olay API'sini güncelleştir
-description: Microsoft 365 Defender API kullanarak olayları Microsoft 365 Defender öğrenin
-keywords: güncelleştirme, API, olay
+title: Olay API'sini güncelleştirme
+description: Microsoft 365 Defender API kullanarak olayları güncelleştirme hakkında bilgi edinin
+keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,46 +21,46 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 447a4b5eb3f4eb521e7cc3bd2df23a42f16d2ef1
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: c7350059bdd5006cf57ccf35f71b67e371e75708
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63014155"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059754"
 ---
-# <a name="update-incidents-api"></a>Olayları güncelleştirme API'si
+# <a name="update-incidents-api"></a>Güvenlik olayları API'sini güncelleştirme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
-> Bazı bilgiler, ticari olarak piyasaya sürmeden önce önemli ölçüde değiştirilmiş olabilir, önceden satın alınan ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
+> Bazı bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
 
 ## <a name="api-description"></a>API açıklaması
 
-Var olan olayın özelliklerini güncelleştirme. En iyi özellikler: `status`, `determination`, `classification`, `assignedTo`ve `tags``comments`.
+Mevcut olayın özelliklerini Güncelleştirmeler. Güncelleştirilebilir özellikler şunlardır: `status`, `determination`, `classification`, `assignedTo`, `tags`, ve `comments`.
 
 ### <a name="quotas-resource-allocation-and-other-constraints"></a>Kotalar, kaynak ayırma ve diğer kısıtlamalar
 
-1. Azaltma eşiğine gelmeden önce, dakikada 50 veya saatte 1500 çağrı yapmalarını sebilirsiniz.
-2. Özelliği yalnızca `determination` TruePositive `classification` olarak ayarlanmışsa ayarlayabilirsiniz.
+1. Azaltma eşiğine ulaşmadan önce dakikada en fazla 50 veya saatte 1500 çağrı yapabilirsiniz.
+2. Özelliğini yalnızca TruePositive olarak ayarlanmışsa `classification` ayarlayabilirsiniz`determination`.
 
-İsteğiniz kısıtlandı ise, bir yanıt kodu `429` döner. Yanıt gövdesi, yeni arama yapmaya baş İlke süreyi belirtecek.
+İsteğiniz kısıtlanırsa bir `429` yanıt kodu döndürür. Yanıt gövdesi, yeni çağrılar yapmaya başlayabileceğiniz zamanı belirtir.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi için bkz. Microsoft 365 Defender [erişme](api-access.md).
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz. [Microsoft 365 Defender API'lerine erişme](api-access.md).
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 ---|---|---
 Uygulama|Incident.ReadWrite.All|Tüm olayları okuma ve yazma
-Temsilcili (iş veya okul hesabı)|Olay.Okuma|Olayları okuma ve yazma
+Temsilci (iş veya okul hesabı)|Incident.ReadWrite|Olayları okuma ve yazma
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç edinilende, kullanıcının portalda olayı güncelleştirme izni olması gerekir.
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken, kullanıcının portalda olayı güncelleştirme iznine sahip olması gerekir.
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -68,7 +68,7 @@ Temsilcili (iş veya okul hesabı)|Olay.Okuma|Olayları okuma ve yazma
 PATCH /api/incidents/{id}
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 ---|---|---
@@ -77,26 +77,29 @@ Yetkilendirme|Dize|Taşıyıcı {token}. **Gerekli**.
 
 ## <a name="request-body"></a>İstek gövdesi
 
-İstek gövdesinde güncelleştirilacak alanlar için değerleri girin. İlgili değerlerde yapılan değişiklikler nedeniyle yeniden hesaplanması gerektirlenmedikçe, istek gövdesine dahil olmayan mevcut özelliklerde yer alan değerleri korunur. En iyi performans için, değişmemiş olan mevcut değerleri atla should.
+İstek gövdesinde, güncelleştirilmesi gereken alanların değerlerini sağlayın. İstek gövdesinde yer almayan mevcut özellikler, ilgili değerlerde yapılan değişiklikler nedeniyle yeniden hesaplanmaları gerekmediği sürece değerlerini korur. En iyi performans için değişmemiş mevcut değerleri atlamalısınız.
 
 Özellik|Tür|Açıklama
 ---|---|---
-durum|Enum|Olayın geçerli durumunu belirtir. Olası değerler: `Active`, `Resolved`ve `Redirected`.
-atanan|dize|Olayın sahibi.
-sınıflandırma|Enum|Olayın belirtimi. Olası değerler: `Unknown`, `FalsePositive`, . `TruePositive`
-karartma|Enum|Olayın belirlenmesini belirtir. Olası değerler şöyledir: `NotAvailable`, `Malware``Apt`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`. `Other`
-etiketler|dize Listesi|Olay etiketlerinin listesi.
-açıklama|dize|Olayla eklenecek açıklama.
+Durum|Enum|Olayın geçerli durumunu belirtir. Olası değerler şunlardır: `Active`, `Resolved`ve `Redirected`.
+Atanan|Dize|Olayın sahibi.
+Sınıflandırma|Enum|Olayın belirtimi. Olası değerler şunlardır: `Unknown`, `FalsePositive`, `TruePositive`.
+Belirlenmesi|Enum|Olayın belirlenmesini belirtir. Olası değerler şunlardır: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, , `UnwantedSoftware`. `Other`
+Etiketler|dize Listesi|Olay etiketlerinin listesi.
+Yorum|Dize|Olaya eklenecek açıklama.
+
+>[!NOTE]
+>29 Ağustos 2022'de daha önce desteklenen uyarı belirleme değerleri ('Apt' ve 'SecurityPersonnel') kullanım dışı bırakılacak ve artık API aracılığıyla kullanılamayacak.
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem döndürür `200 OK`. Yanıt gövdesi, güncelleştirilmiş özelliklere sahip olay varlığı içerir. Belirtilen kimliğin bulunduğu bir olay bulunamasa, yöntem döndürür `404 Not Found`.
+Başarılı olursa, bu yöntem döndürür `200 OK`. Yanıt gövdesi, güncelleştirilmiş özelliklere sahip olay varlığını içerir. Belirtilen kimlikle bir olay bulunamazsa, yöntemi döndürür `404 Not Found`.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiş.
 
 ```HTTP
  PATCH https://api.security.microsoft.com/api/incidents/{id}
@@ -128,9 +131,9 @@ burada isteğin bir örneği ve sağlanmaktadır.
 
 ## <a name="related-articles"></a>İlgili makaleler
 
-- [Api'lere Microsoft 365 Defender erişme](api-access.md)
+- [Microsoft 365 Defender API'lerine erişme](api-access.md)
 - [API sınırları ve lisanslama hakkında bilgi edinin](api-terms.md)
 - [Hata kodlarını anlama](api-error-codes.md)
 - [Olay API'leri](api-incident.md)
-- [Olayları listele](api-list-incidents.md)
+- [Olayları listeleyin](api-list-incidents.md)
 - [Olaylara genel bakış](incidents-overview.md)

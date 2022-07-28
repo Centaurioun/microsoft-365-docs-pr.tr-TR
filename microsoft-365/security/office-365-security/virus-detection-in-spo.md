@@ -1,5 +1,5 @@
 ---
-title: SharePoint Online, OneDrive ve Microsoft Teams'te yerleşik virüs koruması
+title: SharePoint Online, OneDrive ve Microsoft Teams'de yerleşik virüs koruması
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,66 +16,68 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: SharePoint Online'ın, kullanıcıların karşıya yükledikten sonra dosyalarda virüsleri nasıl algılayanı ve kullanıcıların dosyaları indirmesini veya eşitlemesini nasıl önley olduğunu öğrenin.
+description: SharePoint Online'ın kullanıcıların karşıya yüklediği dosyalarda virüsleri nasıl algılayıp kullanıcıların dosyaları indirmesini veya eşitlemesini nasıl önlediği hakkında bilgi edinin.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ddb424458e991becefb98efbad5b2a86c5f9441c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b04e9a1ca2e722a2f581441f44716c22be7a1635
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988721"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059699"
 ---
-# <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online, OneDrive ve Microsoft Teams'te yerleşik virüs koruması
+# <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online, OneDrive ve Microsoft Teams'de yerleşik virüs koruması
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Geçerli olduğu yer:**
+**Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [1. plan Office 365 plan 2 için Microsoft Defender](defender-for-office-365.md)
+- [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 
-Microsoft 365 kullanıcıların SharePoint Online, dosya ve klasörlerine yükledikten sonra karşıya yükledikten sonra OneDrive algılama Microsoft Teams. Bu koruma, SharePoint Online, OneDrive ve diğer abonelikleri Microsoft Teams.
+Microsoft 365, kullanıcıların SharePoint Online, OneDrive ve Microsoft Teams'e yüklediği dosyaları taramak için yaygın bir virüs algılama altyapısı kullanır. Bu koruma SharePoint Online, OneDrive ve Microsoft Teams içeren tüm aboneliklere dahildir.
 
 > [!IMPORTANT]
-> Yerleşik virüsten koruma özellikleri virüs içermeye yardımcı olur. Bunlar ortamınız için kötü amaçlı yazılımlara karşı tek bir savunma noktası olarak hedefli değil. Tüm müşterilerin çeşitli katmanlar üzerinde kötü amaçlı yazılımdan korumayı araştırmalarını ve uygulamalarını ve kurumsal altyapılarının güvenliğini sağlamak için en iyi uygulamaları uygulamalarını teşvik ediyoruz. Stratejiler ve en iyi yöntemler hakkında daha fazla bilgi için bkz. [Güvenlik yol haritası](security-roadmap.md).
+> Yerleşik virüsten koruma özellikleri, virüsleri kapsamaya yardımcı olmak için bir yoldur. Bunlar ortamınız için kötü amaçlı yazılımlara karşı tek bir savunma noktası olarak tasarlanmamıştır. Tüm müşterilerin çeşitli katmanlarda kötü amaçlı yazılımdan korumayı araştırmalarını ve uygulamalarını ve kurumsal altyapılarının güvenliğini sağlamak için en iyi yöntemleri uygulamalarını öneririz. Stratejiler ve en iyi yöntemler hakkında daha fazla bilgi için bkz [. Güvenlik yol haritası](security-roadmap.md).
 
-## <a name="what-happens-if-an-infected-file-is-uploaded-to-sharepoint-online"></a>Virüs bulaşmış bir dosya SharePoint Online'a yüklerse ne olur?
+## <a name="what-happens-if-an-infected-file-is-uploaded-to-sharepoint-online"></a>Virüslü bir dosya SharePoint Online'a yüklenirse ne olur?
 
-En Microsoft 365 algılama altyapısı, SharePoint Online'da zaman uyumsuz çalışır (dosya yüklemelerinden bağımsız olarak). **Tüm dosyalar otomatik olarak taranmaz**. Heuristics determine the files to scan. Virüs içeren bir dosya bulunduğu zaman, dosya bayrakla işaretlenir. Nisan 2018'de taranan dosyalar için 25 MB sınırını kaldırdık.
+Microsoft 365 virüs algılama altyapısı, SharePoint Online'da zaman uyumsuz (dosya yüklemelerinden bağımsız) çalışır. **Tüm dosyalar otomatik olarak taranmıyor**. Buluşsal yöntemler, taranacak dosyaları belirler. Bir dosyanın virüs içerdiği bulunduğunda, dosyaya bayrak eklenir. Nisan 2018'de taranan dosyalar için 25 MB sınırını kaldırdık.
 
-Neler olduğunu buradalarız:
+Şöyle olur:
 
-1. Kullanıcı dosyayı SharePoint Online'a yükledi.
-2. SharePoint Online, virüs tarama işlemlerinin bir parçası olarak dosyanın tarama ölçütüne uygun olup olmadığını belirler.
-3. Dosya tarama ölçütüne uygunsa, virüs algılama altyapısı dosyayı tarar.
-4. Taranan dosyanın içinde bir virüs bulunursa, virüs altyapısı dosyada virüs bulaştığını belirten bir özellik ayarlar.
+1. Kullanıcı SharePoint Online'a bir dosya yükler.
+2. SharePoint Online, virüs tarama işlemlerinin bir parçası olarak daha sonra dosyanın tarama ölçütlerini karşılayıp karşılamadığını belirler.
+3. Dosya tarama ölçütlerini karşılıyorsa, virüs algılama altyapısı dosyayı tarar.
+4. Taranan dosyanın içinde bir virüs bulunursa, virüs altyapısı dosyada dosyaya virüs bulaştığını belirten bir özellik ayarlar.
 
-## <a name="what-happens-when-a-user-tries-to-download-an-infected-file-by-using-the-browser"></a>Kullanıcı tarayıcıyı kullanarak virüslü bir dosya indirmeye çalıştığında ne olur?
+## <a name="what-happens-when-a-user-tries-to-download-an-infected-file-by-using-the-browser"></a>Kullanıcı tarayıcıyı kullanarak virüslü bir dosyayı indirmeye çalıştığında ne olur?
 
-Bir dosyanın virüsü bulaşırsa, kullanıcılar tarayıcı kullanarak SharePoint Online'dan dosyayı indirer.
+Varsayılan olarak, kullanıcılar SharePoint Online'dan virüslü dosyaları indirebilir. Şöyle olur:
 
-Neler olduğunu buradalarız:
+1. Bir web tarayıcısında, kullanıcı SharePoint Online'dan virüs bulaşmış bir dosyayı indirmeye çalışır.
+2. Kullanıcıya dosyada bir virüs algılandığını belirten bir uyarı gösterilir. Kullanıcıya indirme işlemine devam etme ve cihazında virüsten koruma yazılımı kullanarak temizlemeye çalışma seçeneği verilir.
 
-1. Bir kullanıcı web tarayıcısını açar ve SharePoint Online'dan virüs bulaşmış bir dosyayı indirmeye çalışır.
-2. Kullanıcıya virüs algılandı uyarısı verilir. Varsayılan olarak, kullanıcıya dosyayı indirme ve kendi cihazında virüsten koruma yazılımını kullanarak temizlemeyi deneme seçeneği vardır.
+Bu davranışı, virüs koruması uyarı penceresinden bile kullanıcıların virüslü dosyaları indirememelerini sağlamak için yöneticiler SharePoint Online **[PowerShell'deki Set-SPOTenant cmdlet'indeki](/powershell/module/sharepoint-online/Set-SPOTenant)** *DisallowInfectedFileDownload* parametresini kullanabilir. *DisallowInfectedFileDownload* parametresi için $true değeri, kullanıcılar için algılanan/bocked dosyalara erişimi tamamen engeller.
 
-> [!NOTE]
->
-> Yöneticiler, kullanıcıların virüs önleme uyarı penceresinde bile virüs bulan dosyaları indirmelerini önlemek için SharePoint Online PowerShell'de [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet'inde *DisallowInfectedFileDownload* parametresini kullanabilir. Yönergeler için bkz. [SharePoint kötü amaçlı dosyaları indirmelerini engellemek için SharePoint Online PowerShell kullanma](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
->
-> *DisallowInfectedFileDownload* parametresini etkinleştirir etkinleştirmez, kullanıcılar ve yöneticiler için algılanan/engellenen dosyalara erişim tamamen engellenir.
+Yönergeler için bkz. [Kullanıcıların kötü amaçlı dosyaları indirmesini önlemek için SharePoint Online PowerShell kullanma](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 
-## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>İstemci bulaşarak OneDrive eşitleme bir dosyayı eşitlemeye çalıştığında ne olur?
+## <a name="can-admins-bypass-disallowinfectedfiledownload-and-extract-infected-files"></a>Yöneticiler *DisallowInfectedFileDownload'u* atlayabilir ve virüslü dosyaları ayıklayabilir mi?
 
-Kötü amaçlı bir dosya karşıya OneDrive, kötü amaçlı yazılım olarak işaretlenene kadar yerel makineyle eşitlenir. Kötü amaçlı yazılım olarak işaretlendikten sonra, kullanıcı eşitlenen dosyayı artık yerel makineden açamaz.
+SharePoint yöneticilerinin ve genel yöneticilerin [Get-SPOMalwareFileContent](/powershell/module/sharepoint-online/get-spomalwarefilecontent) cmdlet'iyle SharePoint Online PowerShell'de kötü amaçlı yazılımdan etkilenen dosyaların adli dosya ayıklamalarını yapmalarına izin verilir. Yöneticilerin virüslü içeriği barındıran siteye erişmesi gerekmez. Dosya kötü amaçlı yazılım olarak işaretlendiği sürece, yöneticiler **get-SPOMalwareFileContent** kullanarak dosyayı ayıklayabilir. 
 
-## <a name="extended-capabilities-with-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender ile genişletilmiş Office 365
+Bulaşmış dosya hakkında daha fazla bilgi için, yöneticiler algılanan kötü amaçlı yazılım türünü ve bulaşma durumunu görmek için **[Get-SPOMalwareFile](/powershell/module/sharepoint-online/get-spomalwarefile)** cmdlet'ini kullanabilir. 
 
-Microsoft 365 için [Microsoft Office 365 Defender'ı](defender-for-office-365.md) aboneliğe dahil olan veya eklenti olarak satın alan Kasa kuruluşları, gelişmiş raporlama ve koruma için SharePoint, OneDrive ve Microsoft Teams eklerini etkinleştirebilirsiniz. Daha fazla bilgi için bkz[. Kasa, Dosya ve SharePoint OneDrive Ekleri'Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>OneDrive eşitleme istemcisi virüslü bir dosyayı eşitlemeye çalıştığında ne olur?
 
-## <a name="related-articles"></a>İlgili Makaleler
+Kötü amaçlı bir dosya OneDrive'a yüklendiğinde, kötü amaçlı yazılım olarak işaretlenmeden önce yerel makineyle eşitlenir. Kötü amaçlı yazılım olarak işaretlendikten sonra, kullanıcı artık eşitlenen dosyayı yerel makinesinden açamaz.
 
-[Microsoft 365'te kötü amaçlı yazılım ve fidye yazılımına Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)
+## <a name="extended-capabilities-with-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender ile genişletilmiş özellikler
 
-SharePoint Online, OneDrive ve Microsoft Teams'de virüsten koruma hakkında daha fazla bilgi için bkz. Tehditlere karşı koruma ve SharePoint, [](protect-against-threats.md) OneDrive ve diğer Kasa [eklerini Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+Aboneliğine [Office 365 için Microsoft Defender](defender-for-office-365.md) dahil edilmiş veya eklenti olarak satın alınmış Microsoft 365 kuruluşları, gelişmiş raporlama ve koruma için SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler'i etkinleştirebilir. Daha fazla bilgi için bkz. [SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler](mdo-for-spo-odb-and-teams.md).
+
+## <a name="related-articles"></a>İlgili makaleler
+
+[Microsoft 365'te kötü amaçlı yazılım ve fidye yazılımı koruması](/compliance/assurance/assurance-malware-and-ransomware-protection)
+
+SharePoint Online, OneDrive ve Microsoft Teams'de virüsten koruma hakkında daha fazla bilgi için bkz. [Tehditlere karşı koruma](protect-against-threats.md) ve [SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler'i açma](turn-on-mdo-for-spo-odb-and-teams.md).
