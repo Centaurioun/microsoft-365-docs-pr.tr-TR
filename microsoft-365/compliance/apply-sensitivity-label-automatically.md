@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Duyarlılık etiketi oluşturduğunuzda, dosyalara ve e-postalara otomatik olarak bir etiket atayabilir veya kullanıcılardan önerdiğiniz etiketi seçmelerini isteyebilirsiniz.
-ms.openlocfilehash: bdf45f614434c5097a9c5ce656c94cab01a462b6
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 8c7ffa9ca56806daecb086dc828002eff3ccd663
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66696057"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069613"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>İçeriğe otomatik olarak bir hassasiyet etiketi uygulama
 
@@ -73,7 +73,7 @@ Microsoft 365'te içeriğe otomatik olarak duyarlılık etiketi uygulamak için 
         - PDF dosyaları için, etiket şifreleme uygularsa, bu dosyalar şifrelenmemişse, kiracınız [PDF ekleri için etkinleştirildiğinde](ome-faq.yml#are-pdf-file-attachments-supported-) [İleti şifrelemesi](ome.md) kullanılarak şifrelenir. Uygulanan şifreleme ayarları e-postadan devralınır.
         - Bu Office dosyaları için Word, PowerPoint ve Excel desteklenir. Etiket şifreleme uyguluyorsa ve bu dosyalar şifrelenmemişse, artık [İleti şifrelemesi](ome.md) kullanılarak şifrelenir. Şifreleme ayarları e-postadan devralınır.
     - IRM şifrelemesi uygulayan Exchange posta akışı kurallarınız veya Microsoft Purview Veri Kaybı Önleme (DLP) ilkeleriniz varsa: İçerik bu kurallar veya ilkeler ve otomatik etiketleme ilkesi tarafından tanımlandığında etiket uygulanır. Bu etiket şifreleme uygularsa, Exchange posta akışı kurallarından veya DLP ilkelerinden gelen IRM ayarları yoksayılır. Ancak bu etiket şifreleme uygulamazsa, etikete ek olarak posta akışı kurallarından veya DLP ilkelerinden gelen IRM ayarları da uygulanır.
-    - Etiketi olmayan IRM şifrelemesi olan e-posta, otomatik etiketleme kullanılarak eşleşme olduğunda herhangi bir şifreleme ayarına sahip bir etiketle değiştirilir.
+    - Etiketi olmayan IRM şifrelemesi olan Email, otomatik etiketleme kullanılarak eşleşme olduğunda herhangi bir şifreleme ayarına sahip bir etiketle değiştirilir.
     - Otomatik etiketleme koşullarınızla eşleşme olduğunda gelen e-posta etiketlenmiştir. Bu etiket [şifreleme](encryption-sensitivity-labels.md) için yapılandırılmışsa, gönderen kuruluşunuzdan geldiğinde bu şifreleme her zaman uygulanır. Varsayılan olarak, gönderen kuruluşunuzun dışındayken bu şifreleme uygulanmaz, ancak **e-posta için Ek ayarlar** yapılandırılarak ve bir Rights Management sahibi belirtilerek uygulanabilir.
     - Etiket şifreleme uyguladığında, gönderen kendi kuruluşunuzdan olduğunda e-postayı gönderen kişi [Rights Management veren ve Rights Management sahibidir](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) . Gönderen kuruluşunuzun dışındayken, ilkeniz tarafından etiketlenen ve şifrelenen gelen e-posta için bir Rights Management sahibi belirtebilirsiniz.
     - Etiket [dinamik işaretler](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) uygulamak üzere yapılandırılmışsa, gelen e-posta için bu yapılandırmanın kuruluşunuz dışındaki kişilerin adlarının görüntülenmesine neden olabileceğini unutmayın.
@@ -457,7 +457,9 @@ Otomatik etiketleme ilkelerini destekleyen PowerShell cmdlet'leri, bunların kul
 
 Otomatik etiketleme, kuruluşunuzun sahip olduğu Office dosyalarını sınıflandırmanın, etiketlemenin ve korumanın en verimli yollarından biri olsa da, etiketleme erişiminizi artırmak için aşağıdaki yöntemlerden herhangi biriyle destekleyip tamamlayamadığını denetleyin:
 
-- SharePoint Syntex ile belge [anlama modeline duyarlılık etiketi uygulayarak](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model) SharePoint kitaplığındaki tanımlanan belgelerin otomatik olarak etiketlenmiş olmasını sağlayabilirsiniz.
+- SharePoint belge kitaplıkları için, yeni ve düzenlenmiş dosyalar için varsayılan bir duyarlılık etiketi uygulayabilirsiniz. Daha fazla bilgi için bkz [. SharePoint belge kitaplığı için varsayılan duyarlılık etiketi yapılandırma](sensitivity-labels-sharepoint-default-label.md).
+
+- SharePoint Syntex, [belge anlama modeline duyarlılık etiketi uygulayarak](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model) SharePoint belge kitaplığındaki tanımlanan belgelerin otomatik olarak etiketlenmiş olmasını sağlayabilirsiniz.
 
 - [Azure Information Protection birleşik etiketleme istemcisini](/azure/information-protection/rms-client/aip-clientv2) kullandığınızda:
 

@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Yöneticiler, elektronik sağlık kayıtlarını (EHR) sağlık sisteminden Microsoft 365'e aktarmak için bir veri bağlayıcısı ayarlayabilir. Bu, çalışanlarınız tarafından hasta verilerine yetkisiz erişim etkinliğini algılamanıza yardımcı olmak için iç risk yönetimi ilkelerinde EHR verilerini kullanmanıza olanak tanır.
-ms.openlocfilehash: dd34fc1e14680a5189c74443211f50fa51b87132
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 00d0419a2db39642b87797254f89dc1c721b69e2
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822967"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071535"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Sağlık EHR denetim verilerini içeri aktarmak için bağlayıcı ayarlama (önizleme)
 
-Kuruluşunuzun Elektronik Sağlık Kayıtları (EHR) sisteminde kullanıcı etkinliği için denetim verilerini içeri aktarmak için Microsoft Purview uyumluluk portalı bir veri bağlayıcısı ayarlayabilirsiniz. Sağlık EHR sisteminizdeki denetim verileri, hastanın sağlık kayıtlarına erişmeyle ilgili olaylara ilişkin verileri içerir. Healthcare EHR denetim verileri, kuruluşunuzun hasta bilgilerine yetkisiz erişimden korunmasına yardımcı olmak için Microsoft 365 [insider risk yönetimi çözümü](insider-risk-management.md) tarafından kullanılabilir.
+Kuruluşunuzun Elektronik Sağlık Kayıtları (EHR) sisteminde kullanıcı etkinliği için denetim verilerini içeri aktarmak için Microsoft Purview uyumluluk portalı bir veri bağlayıcısı ayarlayabilirsiniz. Sağlık EHR sisteminizdeki denetim verileri, hastanın sağlık kayıtlarına erişmeyle ilgili olaylara ilişkin verileri içerir. Healthcare EHR denetim verileri, kuruluşunuzun hasta bilgilerine yetkisiz erişimden korunmasına yardımcı olmak için Microsoft Purview [Insider Risk Management çözümü](insider-risk-management.md) tarafından kullanılabilir.
 
 Healthcare bağlayıcısının ayarlanması aşağıdaki görevlerden oluşur:
 

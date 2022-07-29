@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Yöneticiler, elektronik sağlık kayıtlarını (EHR) kuruluşunuzun Epic sisteminden Microsoft 365'e aktarmak için bir veri bağlayıcısı ayarlayabilir. Bu, çalışanlarınız tarafından hasta verilerine yetkisiz erişim etkinliğini algılamanıza yardımcı olmak için iç risk yönetimi ilkelerinde Epic EHR verilerini kullanmanıza olanak tanır.
-ms.openlocfilehash: d12dd85fb084813e730c4c1e02e8e440d3acc16f
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 6ff5719e61e754ba907daef36bb927cb2ad71d50
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822789"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071601"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Epic EHR denetim verilerini içeri aktarmak için bağlayıcı ayarlama (önizleme)
 
-Kuruluşunuzun Epic Elektronik Sağlık Kayıtları (EHR) sistemindeki kullanıcı etkinliği için denetim kayıtlarını içeri aktarmak için Microsoft Purview uyumluluk portalı bir veri bağlayıcısı ayarlayabilirsiniz. Epic EHR sisteminizdeki denetim kayıtları, hastanın sağlık kayıtlarına erişmeyle ilgili olayların kayıtlarını içerir. Epic EHR denetim kayıtları, kuruluşunuzun hasta bilgilerine yetkisiz erişimden korunmasına yardımcı olmak için Microsoft 365 [insider risk yönetimi çözümü](insider-risk-management.md) tarafından kullanılabilir.
+Kuruluşunuzun Epic Elektronik Sağlık Kayıtları (EHR) sistemindeki kullanıcı etkinliği için denetim kayıtlarını içeri aktarmak için Microsoft Purview uyumluluk portalı bir veri bağlayıcısı ayarlayabilirsiniz. Epic EHR sisteminizdeki denetim kayıtları, hastanın sağlık kayıtlarına erişmeyle ilgili olayların kayıtlarını içerir. Epic EHR denetim kayıtları, kuruluşunuzun hasta bilgilerine yetkisiz erişimden korunmasına yardımcı olmak için Microsoft Purview [Insider Risk Management çözümü](insider-risk-management.md) tarafından kullanılabilir.
 
 Epic bağlayıcısının ayarlanması aşağıdaki görevlerden oluşur:
 
@@ -100,7 +100,7 @@ Sonraki adım, uyumluluk portalında bir Epic bağlayıcısı oluşturmaktır. 4
 
    Bağlayıcının oluşturulduğunu onaylayan bir durum sayfası görüntülenir. Bu sayfa, Epic EHR denetim kayıtları verilerinizi karşıya yüklemek için örnek betiği çalıştırmak için bir sonraki adımı tamamlamanız gereken iki önemli öğe içerir.
 
-    örnek betik için iş kimliğini ve github bağlantısını içeren gözden geçirme sayfası
+    örnek betik için iş kimliğini ve GitHub bağlantısını içeren gözden geçirme sayfası
 
     1. **İş Kimliği.** Sonraki adımda betiği çalıştırmak için bu iş kimliğine ihtiyacınız olacaktır. Bu sayfadan veya bağlayıcı açılır sayfasından kopyalayabilirsiniz.
 

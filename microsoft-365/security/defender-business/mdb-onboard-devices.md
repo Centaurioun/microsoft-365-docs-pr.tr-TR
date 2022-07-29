@@ -10,18 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 07/28/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 6894b4a936af81cbd51dad34bbf6edf704e910a7
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: a692a82af0329c991ca153323552fd2a16c16547
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969430"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071469"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Cihazları İş için Microsoft Defender ekleme
 
@@ -344,6 +345,10 @@ Bu cihazları Intune kaydetme konusunda yardım almak için aşağıdaki kaynakl
 - [iOS veya iPadOS cihazlarını kaydetme](/mem/intune/enrollment/ios-enroll)
 
 Bir cihaz Intune kaydedildikten sonra cihaz grubuna ekleyebilirsiniz. [İş için Defender'da cihaz grupları hakkında daha fazla bilgi edinin](mdb-create-edit-device-groups.md).
+
+## <a name="view-a-list-of-onboarded-devices"></a>Eklenen cihazların listesini görüntüleme
+
+İş için Defender'a eklenen cihazların listesini görüntülemek için Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com) ) gidin. Gezinti bölmesindeki **Uç Noktalar'ın** altında **Cihaz envanteri'ni** seçin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

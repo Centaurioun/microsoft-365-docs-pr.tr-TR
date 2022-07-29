@@ -1,6 +1,6 @@
 ---
 title: Kiracılar arası posta kutusu geçişi
-description: Posta kutularını Microsoft 365 veya Office 365 kiracılar arasında taşıma.
+description: Posta kutularını Microsoft 365 veya Office 365 kiracıları arasında taşıma.
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: fc0c9186f506cdead968668959c401517551a4d3
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: 60e79a0b4b8aff7785bca24bbd974492b3a1e795
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185401"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071645"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Kiracılar arası posta kutusu geçişi (önizleme)
 
@@ -48,7 +48,7 @@ Başlamadan önce, Azure'da Posta Kutusunu Taşı uygulamasını, EXO Geçiş U�
 
 Ayrıca, kaynak kiracıda en az bir posta etkin güvenlik grubu gereklidir. Bu gruplar, kaynak kiracıdan (veya bazen kaynak olarak da adlandırılır) hedef kiracıya taşınabilen posta kutularının listesinin kapsamını bulmak için kullanılır. Bu, kaynak kiracı yöneticisinin taşınması gereken belirli posta kutusu kümesini kısıtlamasına veya kapsamını belirlemesine olanak tanır ve istenmeyen kullanıcıların geçirilmesini önler. İç içe gruplar desteklenmez.
 
-Ayrıca, Microsoft 365 kiracı kimliğini almak için güvenilir iş ortağı şirketinizle (posta kutularını taşıyacağınız şirketle) iletişim kurmanız gerekir. Bu kiracı kimliği, Kuruluş İlişkisi Etki AlanıAdı alanında kullanılır.
+Microsoft 365 kiracı kimliğini almak için güvenilir iş ortağı şirketinizle (posta kutularını taşıyacağınız şirketle) de iletişim kurmanız gerekir. Bu kiracı kimliği, Kuruluş İlişkisi Etki AlanıAdı alanında kullanılır.
 
 Aboneliğin kiracı kimliğini almak için [Microsoft 365 yönetim merkezi](https://go.microsoft.com/fwlink/p/?linkid=2024339) oturum açın ve adresine [https://aad.portal.azure.com/\#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)gidin. Kiracı Kimliği özelliğini panoya kopyalamak için kopyala simgesine tıklayın.
 
@@ -63,7 +63,7 @@ Aboneliğin kiracı kimliğini almak için [Microsoft 365 yönetim merkezi](http
 
    ![Azure Oturum Açma](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
-2. Yönet Azure Active Directory altında görünüm'e tıklayın.
+2. Azure Active Directory'yi Yönet'in altında görünüm'e tıklayın.
 
    ![Azure Active Directory Düğmesi](../media/tenant-to-tenant-mailbox-move/109ac3dfbac2403fb288f085767f393b.png)
 
@@ -79,7 +79,7 @@ Aboneliğin kiracı kimliğini almak için [Microsoft 365 yönetim merkezi](http
 
 6. Sayfanın sağ üst köşesinde uygulamanın başarıyla oluşturulduğunu belirten bir bildirim açılır penceresi görürsünüz.
 
-7. Giriş'e Geri dön Azure Active Directory ve Uygulama kayıtları tıklayın.
+7. Giriş, Azure Active Directory'ye Geri dön ve Uygulama kayıtları tıklayın.
 
 8. Sahip olunan uygulamalar altında, oluşturduğunuz uygulamayı bulun ve üzerine tıklayın.
 
@@ -99,7 +99,7 @@ Aboneliğin kiracı kimliğini almak için [Microsoft 365 yönetim merkezi](http
 
 14. Ardından Uygulama izinleri'ne tıklayın
 
-15. Ardından İzinleri seçin'in altında Posta Kutusu'nı genişletin ve Mailbox.Migration'ı işaretleyin ve ekranın alt kısmındaki İzin ekle'yi seçin.
+15. Ardından İzinleri seçin'in altında Posta Kutusu'nı genişletin, Mailbox.Migration'ı işaretleyin ve ekranın alt kısmındaki İzin ekle'yi seçin.
 
     ![API'leri ayarlama](../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png)
 
@@ -114,7 +114,7 @@ Aboneliğin kiracı kimliğini almak için [Microsoft 365 yönetim merkezi](http
       > [!NOTE]
       > Bu, geçiş uç noktanızı oluştururken kullanılacak paroladır. Bu parolayı panonuza kopyalamanız veya bu parolayı güvenli/gizli parola güvenli konumuna kopyalamanız son derece önemlidir. Bu parolayı yalnızca bu kez görebilirsiniz! Bir şekilde kaybederseniz veya sıfırlamanız gerekiyorsa Azure portal yeniden oturum açabilir, Uygulama kayıtları gidebilir, geçiş uygulamanızı bulabilir, Gizli diziler & sertifikalar'ı seçebilir ve uygulamanız için yeni bir gizli dizi oluşturabilirsiniz.
 
-19. Geçiş uygulamasını ve gizli diziyi başarıyla oluşturduğunuza göre, uygulamaya onay vermeniz gerekir. Uygulamaya onay vermek için Azure Active Directory giriş sayfasına dönün, sol gezinti bölmesinde Enterprise uygulamalara tıklayın, oluşturduğunuz geçiş uygulamanızı bulun, uygulamayı seçin ve sol gezinti bölmesinde İzinler'i seçin.
+19. Geçiş uygulamasını ve gizli diziyi başarıyla oluşturduğunuza göre, uygulamaya onay vermeniz gerekir. Uygulamaya onay vermek için Azure Active Directory giriş sayfasına dönün, sol gezinti bölmesinde Kurumsal uygulamalar'a tıklayın, oluşturduğunuz geçiş uygulamanızı bulun, uygulamayı seçin ve sol gezinti bölmesinde İzinler'i seçin.
 
 20. [Kiracınız] için yönetici onayı ver düğmesine tıklayın.
 
@@ -137,12 +137,12 @@ Aboneliğin kiracı kimliğini almak için [Microsoft 365 yönetim merkezi](http
 
 ### <a name="prepare-the-target-tenant-by-creating-the-exchange-online-migration-endpoint-and-organization-relationship"></a>Exchange Online geçiş uç noktası ve kuruluş ilişkisi oluşturarak hedef kiracıyı hazırlama
 
-1. Hedef Exchange Online kiracısında [PowerShell'i](/powershell/exchange/connect-to-exchange-online-powershell) Exchange Online Bağlan.
+1. Hedef Exchange Online kiracıdaki [Exchange Online PowerShell'e bağlanın](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Kiracılar arası posta kutusu taşımaları için yeni bir geçiş uç noktası oluşturma
 
    > [!NOTE]
-   > Yeni oluşturduğunuz posta kutusu geçiş uygulamasının uygulama kimliğine ve bu işlem sırasında yapılandırdığınız parolaya (gizli dizi) ihtiyacınız olacaktır. Ayrıca uç noktanızı kullandığınız Microsoft 365 Bulut Örneğine bağlı olarak farklı olabilir. Lütfen [Microsoft 365 uç noktaları](/microsoft-365/enterprise/microsoft-365-endpoints) sayfasına bakın ve kiracınız için doğru örneği seçin ve gerekli adresi en iyi duruma getirme ve uygun şekilde değiştirme Exchange Online gözden geçirin.
+   > Yeni oluşturduğunuz posta kutusu geçiş uygulamasının uygulama kimliğine ve bu işlem sırasında yapılandırdığınız parolaya (gizli dizi) ihtiyacınız olacaktır. Ayrıca Microsoft 365 Bulut Örneğine bağlı olarak uç noktanızı kullanmanız farklı olabilir. Lütfen [Microsoft 365 uç noktaları](/microsoft-365/enterprise/microsoft-365-endpoints) sayfasına bakın ve kiracınız için doğru örneği seçin ve Gerekli adresi iyileştir ve uygun şekilde değiştir Exchange Online gözden geçirin.
 
    ```powershell
 
@@ -183,7 +183,7 @@ Aboneliğin kiracı kimliğini almak için [Microsoft 365 yönetim merkezi](http
    > Yukarıdaki örnekteki sourcetenant.onmicrosoft.com kaynak kiracılarınızın doğru onmicrosoft.com adıyla değiştirmeniz gerekir.
    > [application_id_of_the_app_you_just_created] öğesini yeni oluşturduğunuz posta kutusu geçiş uygulamasının uygulama kimliğiyle de değiştirmeniz gerekir.
 
-2. Açılır pencere göründüğünde uygulamayı kabul edin. Ayrıca Azure Active Directory portalınızda oturum açabilir ve uygulamayı Enterprise uygulamalar altında bulabilirsiniz.
+2. Açılır pencere göründüğünde uygulamayı kabul edin. Ayrıca Azure Active Directory portalınızda oturum açabilir ve uygulamayı Kurumsal uygulamalar altında bulabilirsiniz.
 
 3. Exchange Online PowerShell'de yeni bir kuruluş ilişkisi oluşturun veya mevcut kuruluş ilişkisi nesnenizi hedef (hedef) kiracınızla düzenleyin:
 
@@ -270,12 +270,12 @@ Hedef kuruluşta aşağıdaki nesnelerin ve özniteliklerin ayarlandığından e
      | EmailAddresses       | smtp:LaraN@contoso.onmicrosoft.com                                      |
      |                      | SMTP:Lara.Newton@contoso.com                                            |
 
-   - Karma geri yazma Exchange ek öznitelikler eklenmiş olabilir. Aksi takdirde, bunlar dahil edilmelidir.
+   - Exchange karma geri yazma özelliğine ek öznitelikler eklenmiş olabilir. Aksi takdirde, bunlar dahil edilmelidir.
    - msExchBlockedSendersHash – İstemcilerden gelen güvenli ve engellenen gönderen verilerini şirket içi Active Directory geri yazar.
    - msExchSafeRecipientsHash – İstemcilerden gelen güvenli ve engellenen gönderen verilerini şirket içi Active Directory'a geri yazar.
    - msExchSafeSendersHash – İstemcilerden gelen çevrimiçi güvenli ve engellenen gönderen verilerini şirket içi Active Directory yazar.
 
-2. Kaynak posta kutusu LitigationHold üzerindeyse ve kaynak posta kutusu Kurtarılabilir Öğeler boyutu veritabanı varsayılanımızdan (30 GB) büyükse, hedef kota kaynak posta kutusu boyutundan küçük olduğundan taşıma işlemi devam etmeyecektir. Hedef MailUser nesnesini, ELC posta kutusu bayraklarını kaynak ortamdan hedefe geçirerek hedef sistemi tetikleyerek MailUser kotasını 100 GB'a genişleterek hedefe taşınmasını sağlayabilirsiniz. ELC bayraklarını damgalama komutları kiracı yöneticilerine gösterilmediğinden, bu yönergeler yalnızca Azure AD Bağlan çalıştıran karma kimlik için çalışır.
+2. Kaynak posta kutusu LitigationHold üzerindeyse ve kaynak posta kutusu Kurtarılabilir Öğeler boyutu veritabanı varsayılanımızdan (30 GB) büyükse, hedef kota kaynak posta kutusu boyutundan küçük olduğundan taşıma işlemi devam etmeyecektir. Hedef MailUser nesnesini, ELC posta kutusu bayraklarını kaynak ortamdan hedefe geçirerek hedef sistemi tetikleyerek MailUser kotasını 100 GB'a genişleterek hedefe taşınmasını sağlayabilirsiniz. ELC bayraklarını damgalama komutları kiracı yöneticilerine gösterilmediğinden, bu yönergeler yalnızca Azure AD Connect çalıştıran karma kimlik için çalışır.
 
     > [!NOTE]
     > ÖRNEK – OLDUĞU GIBI, GARANTİ YOK
@@ -340,7 +340,7 @@ Hedef kuruluşta aşağıdaki nesnelerin ve özniteliklerin ayarlandığından e
 
 ### <a name="perform-mailbox-migrations"></a>Posta kutusu geçişlerini gerçekleştirme
 
-Kiracılar arası Exchange posta kutusu geçişleri, geçiş toplu işlemleri olarak hedef kiracıdan başlatılır. Bu, şirket içi Exchange Microsoft 365 geçiş yaparken şirket içi geçiş toplu işlemlerinin çalışması gibidir.
+Kiracılar arası Exchange posta kutusu geçişleri, geçiş toplu işlemleri olarak hedef kiracıdan başlatılır. Bu, şirket içi Exchange'den Microsoft 365'e geçiş sırasında şirket içi geçiş toplu işlemlerinin çalışması gibidir.
 
 ### <a name="create-migration-batches"></a>Geçiş toplu işleri oluşturma
 
@@ -373,9 +373,9 @@ Posta kutusu kaynaktan hedefe geçtikten sonra, hem kaynak hem de hedefteki şir
 
 Evet, kaynak kiracı posta kutusu hedef kiracıya geçtiğinde kaynak şirket içi kullanıcıların targetAddress (RemoteRoutingAddress/ExternalEmailAddress) güncelleştirmeniz gerekir.  Posta yönlendirme, farklı targetAddresses'e sahip birden çok posta kullanıcısı arasındaki başvuruları izleyebilirken, posta kullanıcıları için Serbest/Meşgul aramaları posta kutusu kullanıcısının konumunu hedeflemeLIDIR. Serbest/Meşgul aramaları birden çok yeniden yönlendirmeyi kovalamaz.
 
-### <a name="do-teams-meetings-migrate-cross-tenant"></a>Teams toplantılar kiracılar arası geçiş yapar mı?
+### <a name="do-teams-meetings-migrate-cross-tenant"></a>Teams toplantıları kiracılar arası geçiş yapar mı?
 
-Toplantılar taşınır, ancak öğeler kiracılar arası geçiş yaparken Teams toplantı URL'si güncelleştirilmez. HEDEF kiracıda URL geçersiz olacağından, Teams toplantılarını kaldırmanız ve yeniden oluşturmanız gerekir.
+Toplantılar taşınır, ancak öğeler kiracılar arası geçiş yaparken Teams toplantı URL'si güncelleştirilmez. HEDEF kiracıda URL geçersiz olacağından Teams toplantılarını kaldırıp yeniden oluşturmanız gerekir.
 
 ### <a name="does-the-teams-chat-folder-content-migrate-cross-tenant"></a>Teams sohbet klasörü içeriği kiracılar arası geçiş yapar mı?
 
@@ -426,14 +426,14 @@ Get-MoveRequest -Flags "CrossTenant"
    Start-ADSyncSyncCycle
    ```
 
-### <a name="how-do-we-access-outlook-on-day-1-after-the-use-mailbox-is-moved"></a>Kullanım posta kutusu taşındıktan sonra 1. Günde Outlook nasıl erişebiliriz?
+### <a name="how-do-we-access-outlook-on-day-1-after-the-use-mailbox-is-moved"></a>Kullanım posta kutusu taşındıktan sonra 1. Günde Outlook'a nasıl erişebiliriz?
 
-Bir etki alanına yalnızca bir kiracı sahip olabileceğinden, posta kutusu taşıma işlemi tamamlandığında eski birincil SMTPAddress hedef kiracıdaki kullanıcıyla ilişkilendirilmez; yalnızca yeni kiracıyla ilişkili etki alanları. Outlook, hizmette kimlik doğrulaması yapmak için yeni UPN kullanıcılarını kullanır ve Outlook profili, hedef sistemdeki posta kutusuyla eşleşecek eski birincil SMTPAddress'i bulmayı bekler. Eski adres hedef Sistemde olmadığından, outlook profili yeni taşınan posta kutusunu bulmak için bağlanmayacak.
+Bir etki alanına yalnızca bir kiracı sahip olabileceğinden, posta kutusu taşıma işlemi tamamlandığında eski birincil SMTPAddress hedef kiracıdaki kullanıcıyla ilişkilendirilmez; yalnızca yeni kiracıyla ilişkili etki alanları. Outlook, hizmette kimlik doğrulaması yapmak için kullanıcıların yeni UPN'sini kullanır ve Outlook profili, hedef sistemdeki posta kutusuyla eşleşecek eski birincil SMTPAddress'i bulmayı bekler. Eski adres hedef Sistemde olmadığından, outlook profili yeni taşınan posta kutusunu bulmak için bağlanmayacak.
 
 Bu ilk dağıtım için kullanıcıların profillerini yeni UPN, birincil SMTP adresleri ve yeniden eşitleme OST içeriğiyle yeniden oluşturmaları gerekir.
 
 > [!NOTE]
-> Tamamlama için kullanıcılarınızı toplu iş olarak planlayın. Outlook istemci profilleri oluşturulduğunda ve izleyen OST ve OAB dosyaları istemcilere indirildiğinde ağ kullanımını ve kapasitesini dikkate almanız gerekir.
+> Tamamlama için kullanıcılarınızı toplu iş olarak planlayın. Outlook istemci profilleri oluşturulduğunda ve izleyen OST ve OAB dosyaları istemcilere indirildiğinde ağ kullanımını ve kapasitesini hesaba katmalısınız.
 
 ### <a name="what-exchange-rbac-roles-do-i-need-to-be-member-of-to-set-up-or-complete-a-cross-tenant-move"></a>Kiracılar arası taşımayı ayarlamak veya tamamlamak için hangi Exchange RBAC rollerine üye olmak istiyorum?
 
@@ -445,7 +445,7 @@ Posta kutusu taşıma işlemi yürütülürken temsilci görevleri varsayımın�
 
 ### <a name="how-do-we-target-which-smtp-address-is-selected-for-targetaddress-targetdeliverydomain-on-the-converted-mailbox-to-mailuser-conversion"></a>Dönüştürülen posta kutusunda (MailUser dönüştürmesine) targetAddress (TargetDeliveryDomain) için hangi SMTP adresinin seçildiğini nasıl hedefleyeceğiz?
 
-Exchange posta kutusu, hedef nesnedeki bir e-posta adresiyle (proxyAddress) eşleşerek bir MailUser'a dönüştürülürken özgün kaynak posta kutusunda TARGETAddress'i MRS oluşturarak taşınır. İşlem, taşıma komutuna geçirilen -TargetDeliveryDomain değerini alır ve ardından hedef taraftaki etki alanı için eşleşen bir ara sunucuyu denetler. Bir eşleşme bulduğumuzda, dönüştürülen posta kutusu (şimdi MailUser) nesnesinde ExternalEmailAddress (targetAddress) ayarlamak için eşleşen proxyAddress kullanılır.
+Exchange posta kutusu, hedef nesnedeki bir e-posta adresiyle (proxyAddress) eşleşerek bir MailUser'a dönüştürülürken özgün kaynak posta kutusunda TARGETAddress değerini MRS oluşturarak taşınır. İşlem, taşıma komutuna geçirilen -TargetDeliveryDomain değerini alır ve ardından hedef taraftaki etki alanı için eşleşen bir ara sunucuyu denetler. Bir eşleşme bulduğumuzda, dönüştürülen posta kutusu (şimdi MailUser) nesnesinde ExternalEmailAddress (targetAddress) ayarlamak için eşleşen proxyAddress kullanılır.
 
 ### <a name="how-do-mailbox-permissions-transition"></a>Posta kutusu izinleri nasıl geçiş yapar?
 
@@ -453,7 +453,7 @@ Posta kutusu izinleri, Adına Gönder ve Posta Kutusu Erişimi'ni içerir:
 
 - Adına Gönder (AD:publicDelegates), kullanıcının posta kutusuna temsilci olarak erişimi olan alıcıların DN'sini depolar. Bu değer Active Directory'de depolanır ve şu anda posta kutusu geçişinin bir parçası olarak taşınmaz. Kaynak posta kutusunda publicDelegates ayarlandıysa, MEU'nun posta kutusuna dönüştürme işlemi çalıştırılarak `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>`hedef ortamda tamamlandıktan sonra hedef Posta Kutusu'nda publicDelegates'i yeniden örneklemeniz gerekir.
 
-- Posta kutusunda depolanan Posta Kutusu İzinleri, hem sorumlu hem de temsilci hedef sisteme taşındığında posta kutusuyla birlikte taşınır. Örneğin, kullanıcıya TestUser_7 kiracı SourceCompany.onmicrosoft.com posta kutusu TestUser_8 FullAccess verilir. Posta kutusu TargetCompany.onmicrosoft.com taşındıktan sonra hedef dizinde aynı izinler ayarlanır. Hem kaynak hem de hedef kiracılarda TestUser_7 için _Get-MailboxPermission_ kullanan örnekler aşağıda gösterilmiştir. Exchange cmdlet'lere kaynak ve hedef eklenmiştir.
+- Posta kutusunda depolanan Posta Kutusu İzinleri, hem sorumlu hem de temsilci hedef sisteme taşındığında posta kutusuyla birlikte taşınır. Örneğin, kullanıcıya TestUser_7 kiracı SourceCompany.onmicrosoft.com posta kutusu TestUser_8 FullAccess verilir. Posta kutusu TargetCompany.onmicrosoft.com taşındıktan sonra hedef dizinde aynı izinler ayarlanır. Hem kaynak hem de hedef kiracılarda TestUser_7 için _Get-MailboxPermission_ kullanan örnekler aşağıda gösterilmiştir. Exchange cmdlet'lerine kaynak ve hedef eklenmiştir.
 
 Taşımadan önce posta kutusu izni çıkışının bir örneği aşağıda verilmiştir.
 
@@ -507,7 +507,7 @@ Evet, ancak mağaza izinlerini yalnızca şu makalelerde açıklandığı gibi s
 
 - [Microsoft Docs | Exchange Online'de alıcılar için izinleri yönetme](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
 
-- [Microsoft Desteği | ayrılmış Office 365 Exchange ve Outlook posta kutusu izinleri verme](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
+- [Microsoft Desteği | Ayrılmış Office 365 Exchange ve Outlook posta kutusu izinleri verme](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
 ### <a name="do-you-have-any-recommendations-for-batches"></a>Toplu iş önerileriniz var mı?
 
@@ -549,13 +549,13 @@ Geçiş tamamlanmadan önce bu yapılabilir, ancak _ExchangeGuid_ özniteliğini
 
 ## <a name="known-issues"></a>Bilinen sorunlar
 
-- **Sorun: Geçiş sonrası Teams kaynak kiracıdaki işlevsellik sınırlı olacaktır.** Posta kutusu hedef kiracıya geçirildikten sonra, kaynak kiracıdaki Teams artık kullanıcının posta kutusuna erişimi olmaz. Bu nedenle, bir kullanıcı kaynak kiracı kimlik bilgileriyle Teams oturum açarsa, profil resminizi güncelleştirememe, takvim uygulaması olmaması ve genel ekiplerde arama ve katılma gibi işlevler kaybı olur.
+- **Sorun: Geçiş sonrası kaynak kiracıdaki Teams işlevselliği sınırlı olacaktır.** Posta kutusu hedef kiracıya geçirildikten sonra, kaynak kiracıdaki Teams artık kullanıcının posta kutusuna erişemeyecektir. Bu nedenle, bir kullanıcı kaynak kiracı kimlik bilgileriyle Teams'de oturum açarsa profil resminizi güncelleştirememe, takvim uygulamasının olmaması ve genel ekiplerde arama ve katılma gibi işlevlerde bir kayıp yaşanacaktır.
 
 - **Sorun: Otomatik Genişletilmiş arşivler geçirilemiyor.** Kiracılar arası geçiş özelliği, belirli bir kullanıcı için birincil posta kutusunun ve arşiv posta kutusunun geçişlerini destekler. Ancak kaynaktaki kullanıcının otomatik olarak genişletilmiş bir arşivi varsa (yani birden fazla arşiv posta kutusu varsa, özellik ek arşivleri geçiremez ve başarısız olmalıdır).
 
 - **Sorun: Sahip olunmayan smtp proxy'si olan Cloud MailUsersAddress block MRS arka planı taşır.** Hedef kiracı MailUser nesneleri oluştururken, tüm SMTP proxy adreslerinin hedef kiracı kuruluşuna ait olduğundan emin olmanız gerekir. Hedef posta kullanıcısı üzerinde yerel kiracıya ait olmayan bir SMTP proxyAddress varsa, MailUser'ın Posta Kutusu'na dönüştürülmesi engellenir. Bunun nedeni, posta kutusu nesnelerinin yalnızca kiracının yetkili olduğu etki alanlarından (kiracı tarafından talep edilen etki alanları) posta gönderebileceği güvencemizden kaynaklanır:
 
-  - Azure AD Bağlan kullanarak şirket içindeki kullanıcıları eşitlerken, şirket içi MailUser nesnelerini ExternalEmailAddress ile posta kutusunun bulunduğu kaynak kiracıya işaret eden (LaraN@contoso.onmicrosoft.com) sağlar ve PrimarySMTPAddress'i hedef kiracıda (Lara.Newton@northwind.com) bulunan bir etki alanı olarak damgalarsınız. Bu değerler kiracıyla eşitlenir ve uygun bir posta kullanıcısı sağlanır ve geçiş için hazır olur. Burada örnek bir nesne gösterilmiştir.
+  - Azure AD Connect kullanarak şirket içinden kullanıcıları eşitlerken, şirket içi MailUser nesnelerini ExternalEmailAddress ile posta kutusunun bulunduğu kaynak kiracıya işaret eden (LaraN@contoso.onmicrosoft.com) sağlar ve PrimarySMTPAddress'i hedef kiracıda (Lara.Newton@northwind.com) bulunan bir etki alanı olarak damgalarsınız. Bu değerler kiracıyla eşitlenir ve uygun bir posta kullanıcısı sağlanır ve geçiş için hazır olur. Burada örnek bir nesne gösterilmiştir.
 
     ```powershell
     Get-MailUser LaraN | select ExternalEmailAddress, EmailAddresses
@@ -572,7 +572,7 @@ Geçiş tamamlanmadan önce bu yapılabilir, ancak _ExchangeGuid_ özniteliğini
 
   MailUser nesneleri, yerel olmayan posta kutularının işaretçileridir. Kiracılar arası posta kutusu geçişleri söz konusu olduğunda, kaynak posta kutusunu (hedef kuruluşun perspektifinden) veya hedef posta kutusunu (kaynak kuruluşun perspektifinden) temsil etmek için MailUser nesnelerini kullanırız. MailUsers, gerçek posta kutusunun smtp adresine (ProxyTest@fabrikam.onmicrosoft.com) ve dizinde posta kutusu kullanıcısının görüntülenen SMTP adresini temsil eden primarySMTP adresine işaret eden bir ExternalEmailAddress (targetAddress) içerir. Bazı kuruluşlar, birincil SMTP adresini yerel kiracının sahip olduğu/doğruladığı bir adres olarak değil dış SMTP adresi olarak (contoso.com yerine fabrikam.com gibi) görüntülemeyi tercih eder.  Ancak, lisanslama işlemleri aracılığıyla MailUser'a bir Exchange hizmet planı nesnesi uygulandıktan sonra, birincil SMTP adresi yerel kuruluş (contoso.com) tarafından doğrulanmış bir etki alanı olarak gösterilecek şekilde değiştirilir. İki olası neden vardır:
 
-  - MailUser'a herhangi bir Exchange hizmet planı uygulandığında, Azure AD işlemi yerel kuruluşun başka bir kiracıdan posta gönderemediğinden, kimlik sahtekarlığına veya posta gönderemediğinden emin olmak için ara sunucu temizlemeyi zorlamaya başlar. Bu hizmet planlarına sahip bir alıcı nesnesi üzerindeki tüm SMTP adresleri, adres yerel kuruluş tarafından doğrulanmazsa kaldırılır. Örnekte olduğu gibi, Fabikam.com etki alanı contoso.onmicrosoft.com kiracı tarafından doğrulanmaz, bu nedenle temizleme işlemi bu fabrikam.com etki alanını kaldırır. Geçiş öncesinde veya geçiş sonrasında bu dış etki alanlarını MailUser'da kalıcı hale getirmek istiyorsanız, geçiş işlemlerinizi taşıma tamamlandıktan sonra veya taşımadan önce kullanıcıların beklenen dış markanın uygulandığından emin olmak için lisansları kaldıracak şekilde değiştirmeniz gerekir. Posta kutusu nesnesinin posta hizmetini etkilemeyecek şekilde düzgün lisanslandığından emin olmanız gerekir.
+  - MailUser'a herhangi bir Exchange hizmet planı uygulandığında, yerel kuruluşun başka bir kiracıdan posta gönderemediğinden, kimlik sahtekarlığına veya posta gönderemediğinden emin olmak için Azure AD işlemi ara sunucu temizlemeyi zorlamaya başlar. Bu hizmet planlarına sahip bir alıcı nesnesi üzerindeki tüm SMTP adresleri, adres yerel kuruluş tarafından doğrulanmazsa kaldırılır. Örnekte olduğu gibi, Fabikam.com etki alanı contoso.onmicrosoft.com kiracı tarafından doğrulanmaz, bu nedenle temizleme işlemi bu fabrikam.com etki alanını kaldırır. Geçiş öncesinde veya geçiş sonrasında bu dış etki alanlarını MailUser'da kalıcı hale getirmek istiyorsanız, geçiş işlemlerinizi taşıma tamamlandıktan sonra veya taşımadan önce kullanıcıların beklenen dış markanın uygulandığından emin olmak için lisansları kaldıracak şekilde değiştirmeniz gerekir. Posta kutusu nesnesinin posta hizmetini etkilemeyecek şekilde düzgün lisanslandığından emin olmanız gerekir.
   - contoso.onmicrosoft.com kiracısında MailUser'daki hizmet planlarını kaldırmaya yönelik örnek betik burada gösterilmiştir.
 
     ```powershell
@@ -644,9 +644,9 @@ Geçiş tamamlanmadan önce bu yapılabilir, ancak _ExchangeGuid_ özniteliğini
       | eBulma (Premium) Depolama (500 GB)             |
       | Müşteri Kasası                                 |
       | Veri Kaybı Önleme                             |
-      | Exchange Enterprise CAL Hizmetleri (EOP, DLP)      |
-      | Exchange Temel Parçalar                              |
-      | Exchange Vakfı                              |
+      | Exchange Enterprise CAL Services (EOP, DLP)      |
+      | Exchange Essentials                              |
+      | Exchange Foundation                              |
       | Exchange Online (P1)                             |
       | Exchange Online (Plan 1)                         |
       | Exchange Online (Plan 2)                         |
@@ -661,13 +661,13 @@ Geçiş tamamlanmadan önce bu yapılabilir, ancak _ExchangeGuid_ özniteliğini
       | Bilgi Engelleri                             |
       | Office 365 için Information Protection - Premium  |
       | Office 365 için Information Protection - Standart |
-      | MyAnalytics tarafından Analizler                          |
-      | gelişmiş denetim Microsoft 365                  |
+      | MyAnalytics İçgörüleri                          |
+      | Microsoft Purview Denetim (Premium)                  |
       | Microsoft Kayıtları                               |
       | Microsoft İş Merkezi                        |
       | Microsoft MyAnalytics (Tam)                     |
-      | Office 365 eBulma (Premium)                   |
+      | Office 365 eKeşif (Premium)                   |
       | Office 365 için Microsoft Defender (Plan 1)       |
       | Office 365 için Microsoft Defender (Plan 2)       |
       | Ayrıcalıklı Erişim Yönetimi'ni Office 365          |
-      | Office 365'da şifrelemeyi Premium                 |
+      | Office 365'de Premium Şifreleme                 |

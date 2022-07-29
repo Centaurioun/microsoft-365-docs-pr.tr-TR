@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuzun verilerini korumaya yardımcı olmak için duyarlılık etiketlerini kullanan yöneticiler, lisans gereksinimleri ve yaygın senaryolar için açıklayıcı adımlar.
-ms.openlocfilehash: 84e111bbcc6b0d12f1f209993b9c9a0404fa7a77
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 2a82a788ae766050c663d3d35332470aa48d9a20
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949337"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069657"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Hassasiyet etiketlerini kullanmaya başlama
 
@@ -94,6 +94,7 @@ Tüm senaryolarda [duyarlılık etiketleri ve ilkeleri oluşturup yapılandırma
 |Windows'da Office uygulamalarına yönelik ek özelliklerle etiketlemeyi Dosya Gezgini ve PowerShell'e genişletme (gerekirse)|[Windows için Azure Information Protection birleşik etiketleme istemcisi](/azure/information-protection/rms-client/aip-clientv2)|
 |Duyarlılık etiketleriyle belgeleri ve e-postaları şifreleyin ve bu içeriğe kimlerin erişebileceğini ve nasıl kullanılabileceğini kısıtlayın |[Şifreleme uygulamak için hassasiyet etiketleri kullanarak içeriğe erişimi kısıtlama](encryption-sensitivity-labels.md)|
 |Belgeler şifrelendiğinde bile birlikte yazma, eBulma, veri kaybı önleme, arama desteğiyle Web üzerinde Office için duyarlılık etiketlerini etkinleştirin | [SharePoint ve OneDrive'daki Office dosyaları için hassasiyet etiketlerini etkinleştirme](sensitivity-labels-sharepoint-onedrive-files.md)
+|SharePoint'teki dosyalar otomatik olarak varsayılan duyarlılık etiketiyle etiketlenecek | [SharePoint belge kitaplığı için varsayılan duyarlılık etiketini yapılandırma](sensitivity-labels-sharepoint-default-label.md)
 |Belgeler şifrelendiğinde Office masaüstü uygulamalarında birlikte yazma ve Otomatik Kaydetme kullanma | [Duyarlılık etiketleriyle şifrelenmiş dosyalar için birlikte yazmayı etkinleştirme](sensitivity-labels-coauthoring.md)
 |Belgelere ve e-postalara duyarlılık etiketlerini otomatik olarak uygulama | [İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md)|
 |Teams ve SharePoint'te içeriği korumak için duyarlılık etiketlerini kullanma |[Microsoft Teams, Microsoft 365 grupları ve SharePoint siteleriyle duyarlılık etiketlerini kullanma](sensitivity-labels-teams-groups-sites.md)|

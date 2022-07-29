@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Yasal, iş veya mevzuat yükümlülükleriniz için Microsoft 365'te yüksek değerli içeriği yöneten yöneticiler, lisans gereksinimleri ve yaygın senaryolar için açıklayıcı adımlar.
-ms.openlocfilehash: f5387ce7ee2094113a12a7074449a05311a79083
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: ed2e3735de6e7689d8abf238a491bac766f4e8f1
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944207"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069548"
 ---
 # <a name="get-started-with-records-management"></a>Kayıt yönetimini kullanmaya başlama
 
@@ -43,6 +43,9 @@ Microsoft 365'te kayıt yönetimi çözümünü kullanarak kuruluşunuzun yasal,
 
     - [Bekletme etiketlerini yayımlama ve uygulamalarda uygulama](create-apply-retention-labels.md)
     - [İçeriğe otomatik olarak bekletme etiketi uygulama](apply-retention-labels-automatically.md)
+
+> [!TIP]
+> Kayıtları Microsoft 365'e geçiriyorsanız ve bunların değiştirilmediğini doğrulamanız gerekiyorsa bkz. [Geçirilen kayıtları doğrulama](records-management.md#validating-migrated-records).
 
 ## <a name="subscription-and-licensing-requirements"></a>Abonelik ve lisans gereksinimleri
 

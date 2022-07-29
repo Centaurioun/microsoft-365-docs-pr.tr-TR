@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Üçüncü taraf veri bağlayıcılarını ve Microsoft Graph API'lerini kullanarak Microsoft Purview çözümlerini genişletme hakkında bilgi edinin.
-ms.openlocfilehash: 8cda9ea3a5ef69af69ab802ca21aa8c4c0e716b9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7082f98cce61dce8130de6de69d2a52f827dcd13
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621193"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071557"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Microsoft Purview ve Microsoft Priva genişletilebilirliği
 
@@ -41,7 +41,7 @@ Uyumluluk genişletilebilirliği için iki temel yapı taşları vardır:
 
 Microsoft, Microsoft Purview uyumluluk portalı yapılandırılabilir üçüncü taraf veri bağlayıcıları sağlar. Microsoft tarafından sağlanan veri bağlayıcılarının listesi için [Üçüncü taraf veri bağlayıcıları tablosuna](archiving-third-party-data.md#third-party-data-connectors) bakın. Üçüncü taraf veri bağlayıcıları tablosu, Microsoft 365'te verileri içeri aktarıp arşivledikten sonra üçüncü taraf verilerine uygulayabileceğiniz uyumluluk çözümlerini ve her bağlayıcı için adım adım yönergelerin bağlantılarını da özetler.
 
-Microsoft 365 veri bağlayıcıları hakkında daha fazla bilgi edinmek için bkz. [Üçüncü taraf verileri arşivleme](archiving-third-party-data.md). Uyumluluk portalında bulunan veri bağlayıcıları üçüncü taraf veri türü desteklenmiyorsa, size özel bağlayıcı sağlayabilen bir iş ortağıyla çalışabilirsiniz. Birlikte çalışabileceğiniz iş ortaklarının listesi ve bu yöntemin adım adım işlemi için bkz. [Üçüncü taraf verilerini arşivlemek için bir iş ortağıyla çalışma](work-with-partner-to-archive-third-party-data.md).
+Microsoft Purview Veri Bağlayıcıları hakkında daha fazla bilgi edinmek için bkz. [Üçüncü taraf verilerini arşivleme](archiving-third-party-data.md). Uyumluluk portalında bulunan veri bağlayıcıları üçüncü taraf veri türü desteklenmiyorsa, size özel bağlayıcı sağlayabilen bir iş ortağıyla çalışabilirsiniz. Birlikte çalışabileceğiniz iş ortaklarının listesi ve bu yöntemin adım adım işlemi için bkz. [Üçüncü taraf verilerini arşivlemek için bir iş ortağıyla çalışma](work-with-partner-to-archive-third-party-data.md).
 
 ### <a name="prerequisites-for-data-connectors"></a>Veri bağlayıcıları için önkoşullar
 

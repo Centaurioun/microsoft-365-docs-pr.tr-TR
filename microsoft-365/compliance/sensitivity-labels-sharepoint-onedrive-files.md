@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Yöneticiler SharePoint ve OneDrive'da Word, Excel ve PowerPoint dosyaları için duyarlılık etiketi desteğini etkinleştirebilir.
-ms.openlocfilehash: 15985ea95c3e4a562a4cbc51f84a10af2592d53f
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
+ms.openlocfilehash: b995d1b97676eb3251c33069ed20f9ce382a61bb
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687706"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069679"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint ve OneDrive'daki Office dosyaları için hassasiyet etiketlerini etkinleştirme
 
@@ -274,6 +274,9 @@ Microsoft 365 Multi-Geo'nuz varsa, coğrafi konumlarınızın her biri için bu 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-SharePoint ve OneDrive'da Office dosyaları için duyarlılık etiketlerini etkinleştirdikten sonra, otomatik etiketleme ilkelerini kullanarak bu dosyaları otomatik olarak etiketlemeyi göz önünde bulundurun. Daha fazla bilgi için bkz. [İçeriğe otomatik olarak duyarlılık etiketi uygulama](apply-sensitivity-label-automatically.md).
+SharePoint ve OneDrive'da Office dosyaları için duyarlılık etiketlerini etkinleştirdikten sonra, aşağıdaki etiketleme yöntemlerinden birini veya her ikisini kullanarak dosyaları otomatik olarak etiketlemeyi göz önünde bulundurun:
+
+- SharePoint'teki yeni ve düzenlenmiş dosyalar için belge kitaplıkları için varsayılan duyarlılık etiketi uygulama. Daha fazla bilgi için bkz [. SharePoint belge kitaplığı için varsayılan duyarlılık etiketi yapılandırma](sensitivity-labels-sharepoint-default-label.md).
+- SharePoint ve OneDrive'daki dosyalar için içerik denetimini kullanan otomatik etiketleme ilkeleri. Daha fazla bilgi için bkz. [İçeriğe otomatik olarak duyarlılık etiketi uygulama](apply-sensitivity-label-automatically.md).
 
 Etiketli ve şifrelenmiş belgelerinizi kuruluşunuzun dışındaki kişilerle paylaşmanız mı gerekiyor?  Bkz. [Şifrelenmiş belgeleri dış kullanıcılarla paylaşma](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).

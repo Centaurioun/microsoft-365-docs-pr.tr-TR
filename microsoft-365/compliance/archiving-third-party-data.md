@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Sosyal medya platformlarından, anlık ileti platformlarından ve belge işbirliği platformlarından üçüncü taraf verilerini Microsoft 365 posta kutularına aktarmayı ve arşivlemeyi öğrenin.
-ms.openlocfilehash: b27d45577b98c1eef0f3dab11412f048adff6bcd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 41a7b37980919e28ecb4dbfd6e28b5d08b905a3d
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637559"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071667"
 ---
 # <a name="learn-about-connectors-for-third-party-data"></a>Üçüncü taraf verileri için bağlayıcılar hakkında daha fazla bilgi edinme
 
@@ -48,7 +48,7 @@ Microsoft Purview uyumluluk portalı LinkedIn, Instant Bloomberg ve Twitter gibi
 
 - [CellTrust](#celltrust-data-connectors)
 
-Sonraki bölümlerde listelenen üçüncü taraf verileri (İk verileri ve Microsoft 365 Insider risk yönetimi çözümü için kullanılan fiziksel badging verileri hariç) kullanıcı posta kutularına aktarılır. Üçüncü taraf verilerini destekleyen Microsoft Purview çözümleri, verilerin depolandığı kullanıcı posta kutusuna uygulanır.
+Sonraki bölümlerde listelenen üçüncü taraf verileri (İk verileri ve Microsoft Purview İçeriden Risk Yönetimi çözümü için kullanılan fiziksel badging verileri hariç) kullanıcı posta kutularına aktarılır. Üçüncü taraf verilerini destekleyen Microsoft Purview çözümleri, verilerin depolandığı kullanıcı posta kutusuna uygulanır.
 
 ### <a name="microsoft-data-connectors"></a>Microsoft veri bağlayıcıları
 

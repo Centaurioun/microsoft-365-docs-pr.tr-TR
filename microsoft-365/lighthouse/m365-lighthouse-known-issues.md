@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için, Özellik alanına göre Lighthouse ile ilgili bilinen sorunların listesine bakın.
-ms.openlocfilehash: ce2ad15e6b4863546693175c509c0220f1383406
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 8ad247917a8dfdad7362576079edd9bdec7302ba
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056866"
+ms.locfileid: "67069570"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse ile ilgili bilinen sorunlar
 
@@ -33,6 +33,8 @@ Bu makalede, özellik alanına göre Microsoft 365 Lighthouse ile ilgili bilinen
 | Sorun | Açıklama | Çözüm |
 | ---------------- | ---------------- | ---------------- |
 | **Yardım Masası Aracısı kullanıcı parolasını sıfırlayamıyor** | Yardım Masası Aracısı grubunun üyesi olan Yönetilen Hizmet Sağlayıcısı (MSP) teknisyenleri, müşteri kiracılarındaki kullanıcıların parolalarını sıfırlayamaz. Kullanıcı parolasını sıfırlamaya çalıştığında şu hata iletisini alır: "Bunu yapma izniniz yok. [Daha fazla bilgi edinin](m365-lighthouse-configure-portal-security.md)" | İzin sorununu geçici olarak çözmek için Yardım Masası Aracılarının Microsoft 365 yönetim merkezi veya Azure Active Directory kullanarak parolaları sıfırlaması gerekir. |
+| **Kullanıcı ayrıntıları bölmesindeki OneDrive sekmesinde veri görüntü yok** | MSP teknisyeni, kullanıcı ayrıntıları bölmesindeki OneDrive sekmesinde OneDrive verilerini görüntülemeye çalıştığında şu iletiyi görür: "OneDrive bu kullanıcı için ayarlanmadı. Kişiden ayarlamak için portal.office.com/onedrive gitmesini isteyin. Biraz zaman alabilir. Bu iletiyi 24 saat sonra hala görüyorsanız desteğe başvurun." | OneDrive sekmesi şu anda temsilci kimlik doğrulamasını desteklemez. Sorunu geçici olarak çözmek için MSP teknisyenlerinin müşterinin kimlik bilgilerini kullanarak oturum açarak Microsoft 365 yönetim merkezi OneDrive verilerini görüntülemesi gerekir. |
+
 
 ## <a name="devices"></a>Aygıtları
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Microsoft Purview Kayıt Yönetimi işletme, yasal veya mevzuat kaydı tutma gereksinimleri için yüksek değerli öğeleri nasıl desteklediğini öğrenin.
-ms.openlocfilehash: 1a9d37f138647a36fb7440f15fd74851957b542f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 326731a80659b58368c41bff7894567e14e2d000
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642338"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069547"
 ---
 # <a name="learn-about-records-management"></a>Kayıt yönetimi hakkında daha fazla bilgi edinme
 
@@ -114,6 +114,21 @@ Belge eki olan bir liste öğesine bekletme etiketi uyguladığınızda, bu belg
 > Ayrıca, SharePoint'te kullanıma alınmış bir belgeye mevzuat etiketi uygulanamaz.
 >
 > Kısıtlamalar ve geri alınamaz eylemler nedeniyle, bekletme etiketleriniz için bu seçeneği belirlemeden önce mevzuat kayıtlarını kullanmanız gerektiğinden emin olun. Yanlışlıkla yapılandırmayı önlemeye yardımcı olmak için bu seçenek varsayılan olarak kullanılamaz, ancak önce PowerShell kullanılarak etkinleştirilmesi gerekir. Yönergeler [, Bekletme etiketlerini kullanarak kayıtları bildirme](declare-records.md) bölümüne eklenir.
+
+## <a name="validating-migrated-records"></a>Geçirilen kayıtları doğrulama
+
+Kayıtları SharePoint veya OneDrive'a geçiriyorsanız, bu kayıtların değiştirilmediğini doğrulamanız ve değiştirilemezlik durumlarını korumanız gerekebilir. Örneğin, bir geçiş çözümü kullanıyorsunuz ve kayıtlarınız için gözetim zinciri gereksinimlerini karşılamanız gerekiyor. SharePoint karşıya yüklendiğinde dosyanın meta verilerini otomatik olarak güncelleştirdiğinden, genellikle bu tür bir doğrulama için kullanılan dosya boyutu veya dosya karması gibi tipik dosya özellikleri ve yöntemleri yeterli olmayabilir.
+
+Bunun yerine, geçirilen kayıtlarınızı doğrulamak için, SharePoint tarafından değiştirilmeden önce dosyanın base64 kodlu XOR karması olan özelliğinin değerini `vti_writevalidationtoken` kullanabilirsiniz. Aşağıdaki adımları izleyin:
+
+1. QuickXorHash algoritmasını kullanarak özgün dosyanın XOR karması oluşturun. Daha fazla bilgi için bkz. [QuickXorHash Algoritması kod parçacığı](/onedrive/developer/code-snippets/quickxorhash).
+
+2. Base64 ile XOR karması kodlanır. Daha fazla bilgi için [Base64Encode yöntemi belgelerine bakın](/windows/win32/seccrypto/utilities-base64encode).
+
+3. Dosya geçirildikten sonra, karşıya yüklenen dosyadan özelliğin değerini `vti_writevalidationtoken` alın.
+
+4. 2. adımda oluşturulan değeri 3. adımda alınan değerle karşılaştırın. Bu iki değer eşleşmelidir. Varsa, kaydın değişmediğini doğrulamış olursunuz.
+
 
 ## <a name="configuration-guidance"></a>Yapılandırma kılavuzu
 

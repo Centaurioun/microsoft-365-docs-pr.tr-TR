@@ -21,14 +21,14 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra ile küçük veya orta ölçekli işletmeler için siber güvenliği nasıl uygulayacağınızı öğrenin. Siber güvenlik işlevleri ve özellikleri, siber saldırıları ve güvenlik ihlallerini önlemek ve üst düzey siber savunmalarla verileri, cihazları ve bilgileri korumaya yardımcı olmak için iyileştirilmiştir.
-ms.openlocfilehash: cd21390c144d6a175edd2091fb531fe881a9b65e
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 798a5f6ee02ff0b949cb57d818cb40e3221e4a35
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894295"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037763"
 ---
-# <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 İş Ekstra &mdash; küçük işletmeler için siber güvenlik
+# <a name="microsoft-365-business-premium--cybersecurity-for-small-business"></a>Microsoft 365 İş Ekstra - küçük işletmeler için siber güvenlik
 
 İlk olarak, Microsoft 365 İş Ekstra ve onun birinci sınıf üretkenlik araçlarını benimsemekle akıllıca bir seçim yaptığınızı söyleyerek başlayalım. Siber güvenlik göz önünde bulundurularak tasarlanan Microsoft 365 İş Ekstra, verilerinizi, cihazlarınızı ve bilgilerinizi korur. Rastgele bireyler, organize suçlar veya son derece gelişmiş ulus devletler dahil olmak üzere bilgisayar korsanlarına ve siber saldırganlara karşı kuruluşunuzun ilk ve en iyi savunması sizsiniz.
 

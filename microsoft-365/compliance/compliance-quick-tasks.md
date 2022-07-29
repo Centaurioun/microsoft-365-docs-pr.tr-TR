@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: 5e5b0aa9efb5d00602bba39ca18ef582cf34271a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 39af52a0c2b402a007899c0f13e718d4b90eada1
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632651"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071513"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>Microsoft Purview'da uyumlulukla çalışmaya başlamaya yönelik hızlı görevler
 
@@ -37,7 +37,7 @@ kuruluşunuzda kimlerin içeriği görüntülemek ve yönetim görevlerini gerç
 
 Kuruluşunuzdaki kişilere bu görevleri gerçekleştirebilmeleri ve yetkisiz kişilerin sorumlulukları dışındaki alanlara erişmesini önlemek için uyumluluk izinleri atayarak başlayın. Microsoft 365'e dahil edilen uyumluluk çözümlerini yapılandırmaya ve uygulamaya başlamadan önce uygun kişileri **Uyumluluk veri yöneticisine** ve **Uyumluluk yöneticisi** yönetici rollerine atadığınızdan emin olmak istersiniz. Ayrıca, Uyumluluk Yöneticisi'nde verileri görüntülemek için kullanıcıları Azure Active Directory genel okuyucu rolüne atamanız gerekir.
 
-İzinleri yapılandırmaya ve kişileri yönetici rollerine atamaya yönelik adım adım yönergeler için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki İzinler](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+İzinleri yapılandırmaya ve yönetici rollerine kişi atamaya yönelik adım adım yönergeler için bkz. [Microsoft Purview uyumluluk portalı İzinler](/microsoft-365/compliance/microsoft-365-compliance-center-permissions).
 
 ## <a name="task-2-know-your-state-of-compliance"></a>Görev 2: Uyumluluk durumunuzu bilin
 
