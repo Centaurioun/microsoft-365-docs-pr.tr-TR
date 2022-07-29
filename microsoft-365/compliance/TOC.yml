@@ -326,7 +326,7 @@
               href: named-entities-learn.md
         - name: Hassas bilgi türünü kullanmaya başlama
           items:
-            - name: Özel bir hassas bilgi türleri oluşturma - Uyumluluk Merkezi
+            - name: Özel bir hassas bilgi türü oluşturma - Uyumluluk Merkezi
               href: create-a-custom-sensitive-information-type.md
             - name: Tam veri eşleşmesine dayalı hassas bilgi türlerini kullanmaya başlama
               href: sit-get-started-exact-data-match-based-sits-overview.md
@@ -1020,6 +1020,8 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: SharePoint ve OneDrive'daki Office dosyaları için hassasiyet etiketlerini etkinleştirme
           href: sensitivity-labels-sharepoint-onedrive-files.md
+        - name: SharePoint kitaplıkları için varsayılan bir duyarlılık etiketi yapılandırma
+          href: sensitivity-labels-sharepoint-default-label.md
         - name: Hassasiyet etiketleri ile şifrelenen belgeler için birlikte yazmayı etkinleştirme
           href: sensitivity-labels-coauthoring.md
         - name: Hassasiyet etiketlerini kullanarak varsayılan paylaşım bağlantı türünü ayarlama
