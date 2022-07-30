@@ -16,6 +16,7 @@ ms.collection:
 search.appverid: MET150
 description: İş için Microsoft 365 aboneliğinizin ödemesini yapmak için kredi kartı, ATM kartı veya banka hesabı kullanın. Bazı durumlarda faturayla da ödeme yapabilirsiniz.
 ms.custom:
+- VSBFY23
 - commerce_billing
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
@@ -23,12 +24,12 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 ms.date: 05/26/2022
-ms.openlocfilehash: c8847915fdf9ed587fea410670f5b37194dfa8ae
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: ba6703be593f05c651c76b02e2fb1e8630f59355
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787132"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67083915"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Aboneliğiniz için ödeme yapma
 

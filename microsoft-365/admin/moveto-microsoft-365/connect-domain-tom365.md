@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Etki alanınızı Microsoft 365'e bağlamayı öğrenin.
-ms.openlocfilehash: 2b02687e8d62a40272ffa5dad8ccabec4fbde368
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: b03f7fa149ed4abddeecb5ab3b89372a9f0e008f
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603894"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085607"
 ---
 # <a name="connect-your-domain-to-microsoft-365-for-business"></a>Etki alanınızı İş için Microsoft 365'e bağlama
 

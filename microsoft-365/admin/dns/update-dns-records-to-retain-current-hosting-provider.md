@@ -13,35 +13,37 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- VSBFY23
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: Microsoft'u özel etki alanınız için DNS kayıtlarını yönetecek şekilde ayarladıysanız, trafiği Microsoft dışında barındırılan mevcut bir genel web sitesine nasıl yönlendirileceğini öğrenin.
-ms.openlocfilehash: 9bb12d4f73e8d95717ddd90492fb9cb97c73eec9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Microsoft'u özel etki alanınız için DNS kayıtlarını yönetecek şekilde ayarladıysanız trafiği Microsoft dışında barındırılan mevcut bir genel web sitesine yönlendirmeyi öğrenin.
+ms.openlocfilehash: 914c2374bd15d4a94769203142021db86c689427
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314828"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084157"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>DNS kayıtlarını güncelleştirerek web sitenizi geçerli barındırma sağlayıcınızla koruma
 
- **Etki alanınıza göre Microsoft kayıtlarını DNS barındırma** sağlayıcınızda yönetirsiniz, bu konudaki adımları düşünmenize gerek yok. Web siteniz olduğu yerde kalır ve herkes sitenize erişmeye devam edebilir. 
+ **Etki alanınızın Microsoft kayıtlarını DNS barındırma sağlayıcınızda yönetiyorsanız**, bu konudaki adımlarla ilgilenmeniz gerekmez. Web siteniz olduğu yerde kalır ve herkes sitenize erişmeye devam edebilir. 
   
- **DNS kayıtlarınızı Microsoft yönetecekse**, trafiği Microsoft dışında barındırılan mevcut bir genel web sitesine yönlendirecek şekilde etki alanınızı Microsoft'a ekledikten sonra şunları yapın: 
+ **DNS kayıtlarınızı Microsoft yönetiyorsa, etki alanınızı** Microsoft'a ekledikten sonra trafiği Microsoft dışında barındırılan mevcut bir genel web sitesine yönlendirmek için aşağıdakileri yapın: 
   
-## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Kayıtlarda DNS kayıtlarını Microsoft 365 yönetim merkezi
-1. Yönetim merkezinde Etki Alanları'Ayarlar  \> gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
+## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi DNS kayıtlarını güncelleştirme
+1. Yönetim merkezinde **Ayarlar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Etki Alanları</a> sayfasına gidin.
 
-1. Etki Alanları **sayfasında** etki alanını seçin ve sonra da **DNS Kayıtları'ı seçin**.
+1. **Etki Alanları** sayfasında etki alanını ve ardından **DNS Kayıtları'nı** seçin.
 
-1. **+ Kayıt ekle'yi** seçin ve şunları girin: 
+1. **+ Kayıt ekle'yi** seçin ve aşağıdakileri girin: 
     
-   - Tür **olarak** şunları girin: **A (Adres)**
+   - **Tür için** şunu girin: **A (Adres)**
     
    - **Ana bilgisayar adı veya Diğer ad** olarak şunu yazın: **@**
     
@@ -53,9 +55,9 @@ ms.locfileid: "63314828"
     
 Buna ek olarak, müşterilerin web sitenizi bulmalarına yardım etmek için bir CNAME kaydı da oluşturabilirsiniz.
   
-1. **+ Kayıt ekle'yi** seçin ve şunları girin: 
+1. **+ Kayıt ekle'yi** seçin ve aşağıdakileri girin: 
     
-   - Tür **olarak** şunları girin: **CNAME (Diğer ad)**
+   - **Tür için** şunu girin: **CNAME (Diğer ad)**
     
    - **Ana bilgisayar adı veya Diğer ad** olarak şunu yazın: **www**
     
@@ -65,6 +67,6 @@ Buna ek olarak, müşterilerin web sitenizi bulmalarına yardım etmek için bir
     
 Son olarak da aşağıdakileri yapın:
   
-[Etki alanınıza göre NS kayıtlarını Microsoft'a](../setup/add-domain.md) işaret ediyor şekilde güncelleştirin. 
+[Etki alanınızın NS kayıtlarını Microsoft'a](../setup/add-domain.md) işaret etmek için güncelleştirin. 
   
-NS kayıtları Microsoft'u işaret etmek için güncelleştirildiğinde, etki alanınız ayarlanır. E-posta Microsoft'a yönlendirilen ve web sitenizin adresine giden trafik geçerli web sitesi barındırma hizmetinize yönlendirilene kadar devam edecektir.
+NS kayıtları Microsoft'a işaret etmek üzere güncelleştirildiğinde, etki alanınızın tümü ayarlanır. Email Microsoft'a yönlendirilir ve web sitesi adresinize giden trafik geçerli web sitesi barındırma sağlayıcınıza gitmeye devam eder.

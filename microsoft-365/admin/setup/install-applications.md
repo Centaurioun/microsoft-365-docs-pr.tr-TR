@@ -18,18 +18,19 @@ search.appverid:
 - MOE150
 ms.assetid: d0653266-31db-4f6a-a804-d34b667c16bf
 ms.custom:
+- VSBFY23
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
 - adminvideo
 description: Microsoft 365'i ayarladığınıza göre, Mac, PC veya mobil cihazlarınıza tek tek Office uygulamalarını yüklemeyi öğrenin.
-ms.openlocfilehash: 008fc46482df96f93af75b245aa7de94b8affdfb
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: ad99f8f0ba6ab4c5bcc7d157d46f9c071a15df96
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603945"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086901"
 ---
 # <a name="install-office-applications"></a>Office uygulamalarını yükleme
 

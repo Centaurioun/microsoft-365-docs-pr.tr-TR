@@ -1,5 +1,5 @@
 ---
-title: Bağlan'e Microsoft 365
+title: Etki alanınızı Microsoft 365'e bağlayın
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -16,55 +16,56 @@ ms.collection:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: Etki alanınızı doğrulamayı ve diğer adlarla DNS Microsoft 365.
+description: Microsoft 365 ile etki alanınızı doğrulamayı ve DNS kayıtları oluşturmayı öğrenin.
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
-ms.openlocfilehash: 3aa43cd798c26dde8eb064754ae3fb74bd520c29
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d4c2ee05b90ed890b9a1630d6e0911b6cab34cdd
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312509"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085125"
 ---
-# <a name="connect-your-domain-to-microsoft-365"></a>Bağlan'e Microsoft 365
+# <a name="connect-your-domain-to-microsoft-365"></a>Etki alanınızı Microsoft 365'e bağlayın
 
 > [!NOTE]
-> Etki alanı ekley adresiniz yoksa, siz ekleyene kadar, onmicrosoft.com e-posta adresleri için etki alanınız bu etki alanını kullanır. Kullanıcıları eklemeden önce etki alanınızı eklemeniz önemlidir, böylece onları iki kez ayarlamak zorunda değildir.
+> Etki alanı eklemezseniz, siz ekleyene kadar kuruluşunuzdaki kişiler e-posta adresleri için onmicrosoft.com etki alanını kullanır. Kullanıcıları eklemeden önce etki alanınızı eklemek önemlidir; böylelikle onları iki kez ayarlamanız gerekmez.
 
-[Aşağıda, ne](../setup/domains-faq.yml) arayabilirsiniz?
+Aradığınızı aşağıda bulamazsanız, [Etki Alanları SSS sayfasını inceleyin](../setup/domains-faq.yml).
 
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Etki alanınıza gelen e-postanın Microsoft'a göndernsin için MX kaydı ekleme
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Etki alanınız için e-postanın Microsoft'a gelmesi için bir MX kaydı ekleyin
 
-Yönetim merkezi etki alanı kurulum sihirbazından MX kaydıyla ilgili bilgileri edinebilirsiniz.
+MX kaydına yönelik bilgileri, yönetim merkezi etki alanı kurulum sihirbazından alırsınız.
 
 Barındırma sağlayıcınızın web sitesinde yeni bir MX kaydı ekleyin.
-Alanların aşağıdaki değerlere ayarlanmış olduğundan emin olun:
+Alanların aşağıdaki değerlere ayarlandığından emin olun:
 
 - Kayıt Türü: `MX`
-- Öncelik: Normalde, kullanılabilen en yüksek değere ayarlanır `0`.
+- Öncelik: Kullanılabilir en yüksek değere ayarlayın; genellikle `0` olur.
 - Ana Bilgisayar Adı: `@`
-- Points to address: Değeri yönetim merkezinden kopyalayıp buraya yapıştırın.
+- İşaret edilen adres: Yönetim merkezindeki değeri kopyalayın ve buraya yapıştırın.
 - TTL: `3600` (veya varsayılan sağlayıcınız)
 
-Kaydı kaydedin ve sonra tüm diğer MX kayıtlarını kaldırın.
+Kaydı kaydedin ve ardından diğer tüm MX kayıtlarını kaldırın.
 
 ## <a name="add-a-cname-record-to-connect-users-to-their-mailboxes"></a>Kullanıcıları posta kutularına bağlamak için CNAME kaydı ekleme
 
-CNAME kayıtlarıyla ilgili bilgileri yönetim merkezi etki alanı kurulum sihirbazından edinebilirsiniz.
+CNAME kayıtlarına yönelik bilgileri, yönetim merkezi etki alanı kurulum sihirbazından alırsınız.
 
-Barındırma sağlayıcınızın web sitesine aşağıdaki CNAME kaydını ekleyin. Alanların her biri için aşağıdaki değerlere ayarlanmış olduğundan emin olun:
+Barındırma sağlayıcınızın web sitesine aşağıdaki CNAME kaydını ekleyin. Her birinde alanların aşağıdaki değerlere ayarlandığından emin olun:
 
 - Kayıt Türü: `CNAME (Alias)`
-- Ana Bilgisayar: Kopyalayıp yönetim merkezinden değerleri buraya yapıştırın.
-- Points to address: Değeri yönetim merkezinden kopyalayıp buraya yapıştırın.
+- Ana Bilgisayar: Yönetim merkezinden kopyaladığınız değerleri buraya yapıştırın.
+- İşaret edilen adres: Yönetim merkezindeki değeri kopyalayın ve buraya yapıştırın.
 - TTL: `3600` (veya varsayılan sağlayıcınız)
 
-## <a name="add-a-txt-record-to-help-prevent-spam"></a>İstenmeyen postayı önlemeye yardımcı olmak için TXT kaydı ekleme
+## <a name="add-a-txt-record-to-help-prevent-spam"></a>İstenmeyen postaları önlemeye yardımcı olmak için TXT kaydı ekleme
 
-**Başlamadan önce:** Etki alanınız için zaten bir SPF kaydınız varsa, etki alanınız için yeni bir SPF Microsoft 365. Bunun yerine, Microsoft 365 her iki değer kümesi de içeren tek *bir SPF* kaydına sahip olmak için gerekli kayıt değerlerini barındırma sağlayıcıları web sitenize ekleyin.
+**Başlamadan önce:** Etki alanınız için zaten bir SPF kaydınız varsa Microsoft 365 için yeni SPF kaydı oluşturmayın. Bunun yerine, her iki değer kümesini de içeren *tek bir* SPF kaydınız olacak şekilde gerekli Microsoft 365 değerlerini barındırma sağlayıcılarınızın web sitesindeki geçerli kayda ekleyin.
 
-Barındırma sağlayıcınızın web sitesinde, var olan SPF kaydını düzenleyin veya bir SPF kaydı oluşturun.
-Alanların aşağıdaki değerlere ayarlanmış olduğundan emin olun:
+Barındırma sağlayıcınızın web sitesinde, mevcut SPF kaydını düzenleyin veya bir SPF kaydı oluşturun.
+Alanların aşağıdaki değerlere ayarlandığından emin olun:
 
 - Kayıt Türü: `TXT (Text)`
 - Ana Bilgisayar: `@`
@@ -73,10 +74,10 @@ Alanların aşağıdaki değerlere ayarlanmış olduğundan emin olun:
 
 Kaydı kaydedin.
 
-Bu SPF doğrulama araçlarından birini kullanarak [SPF kaydınızı doğrulama](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+Şu [SPF doğrulama araçlarından](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) birini kullanarak SPF kaydınızı doğrulayın.
 
-SPF, ifadeyi önlemeye yardımcı olmak için tasarlanmıştır ancak SPF'nin koruyamaz olduğu sanallık tekniklerini vardır. Bunlara karşı korunmak için, SPF'yi bir kez ayar verdiktan sonra bu alan için DKIM ve DMARC'yi de Microsoft 365.
+SPF kimlik sahtekarlığını önlemeye yardımcı olmak için tasarlanmıştır, ancak SPF’nin koruma sağlayamayacağı bazı kimlik sahtekarlığı yöntemleri vardır. Bunlara karşı korunmak için, SPF’yi ayarladıktan sonra Microsoft 365 için DKIM ve DMARC’yi de ayarlamanız gerekir.
 
-Kullanmaya başlamak için bkz[. MICROSOFT 365'ta](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) etki alanınıza gönderilen giden e-postayı doğrulamak için DKIM kullanma ve [DMARC](../../security/office-365-security/use-dmarc-to-validate-email.md) kullanarak e-postayı Microsoft 365.
+Başlamak için bkz. [Microsoft 365’te etki alanınızdan gönderilen giden e-postayı doğrulamak için DKIM kullanma](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) ve [Microsoft 365’te e-postayı doğrulamak için DMARC kullanma](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
-Son olarak, kurulum işlemini tamamlamak için yönetim merkezi etki alanı kurulum sihirbazına geri gidin.
+Son olarak, kurulumunuzu tamamlamak için yönetim merkezi etki alanı kurulum sihirbazına dönün.

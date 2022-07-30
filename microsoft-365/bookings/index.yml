@@ -9,27 +9,33 @@ metadata:
   ms.topic: hub-page
   author: dmaguire
   ms.author: dmaguire
-  manager: serdars
+  manager: scotv
   audience: Admin
   ms.date: 09/04/2020
+  ms.openlocfilehash: f8d05950fbe00dedff8f924893d202ffb9013b33
+  ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+  ms.translationtype: HT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 07/30/2022
+  ms.locfileid: "67085497"
 additionalContent:
   sections:
-    - items:
-        - title: Microsoft Bookings nedir?
-          summary: Personeliniz için Outlook tümleştirmesi ve otomatik bildirim e-postaları dahil olmak üzere web tabanlı bir rezervasyon takvimi ve uygulamasıyla randevuları planlayın ve yönetin.
-          url: bookings-overview.md
-        - title: İş bilgilerinizi girin
-          summary: 'Microsoft Bookings''de işletme adı, adres, telefon numarası, web sitesi URL''si, logo ve çalışma saatleri dahil olmak üzere Hakkımızda sayfanızı oluşturun.'
-          url: enter-business-information.md
-        - title: Bookings uygulamasını edinin
-          summary: Renk temasını değiştirin ve dış müşteriye yönelik rezervasyon sayfanızın nasıl görüneceğini ayarlayın.
-          url: customize-booking-page.md
-        - title: Bookings'e personel ekleyin
-          summary: 'Personel listenizi oluşturun ve ad, telefon numarası ve e-posta adresi gibi personel ayrıntılarını yönetin.'
-          url: add-staff.md
-        - title: 'İş bitiş, mesai dışı saatlerini ve tatil zamanlarını planlayın'
-          summary: 'Çalışanların belirtilen zamanlarda rezervasyon için uygun değil olarak işaretlenmesi için, Bookings takviminden ofis kapanışlarını ve çalışan izinlerini planlayın.'
-          url: schedule-closures-time-off-vacation.md
-        - title: Microsoft Bookings’de çalışanların çalışma saatleri
-          summary: Microsoft Bookings'de çalışanların çalışma saatlerini ve uygunluk durumunu ayarlayın.
-          url: employee-hours.md
+  - items:
+    - title: Microsoft Bookings nedir?
+      summary: Personeliniz için Outlook tümleştirmesi ve otomatik bildirim e-postaları dahil olmak üzere web tabanlı bir rezervasyon takvimi ve uygulamasıyla randevuları planlayın ve yönetin.
+      url: bookings-overview.md
+    - title: İş bilgilerinizi girin
+      summary: Microsoft Bookings'de işletme adı, adres, telefon numarası, web sitesi URL'si, logo ve çalışma saatleri dahil olmak üzere Hakkımızda sayfanızı oluşturun.
+      url: enter-business-information.md
+    - title: Bookings uygulamasını edinin
+      summary: Renk temasını değiştirin ve dış müşteriye yönelik rezervasyon sayfanızın nasıl görüneceğini ayarlayın.
+      url: customize-booking-page.md
+    - title: Bookings'e personel ekleyin
+      summary: Personel listenizi oluşturun ve ad, telefon numarası ve e-posta adresi gibi personel ayrıntılarını yönetin.
+      url: add-staff.md
+    - title: İş bitiş, mesai dışı saatlerini ve tatil zamanlarını planlayın
+      summary: Çalışanların belirtilen zamanlarda rezervasyon için uygun değil olarak işaretlenmesi için, Bookings takviminden ofis kapanışlarını ve çalışan izinlerini planlayın.
+      url: schedule-closures-time-off-vacation.md
+    - title: Microsoft Bookings’de çalışanların çalışma saatleri
+      summary: Microsoft Bookings'de çalışanların çalışma saatlerini ve uygunluk durumunu ayarlayın.
+      url: employee-hours.md

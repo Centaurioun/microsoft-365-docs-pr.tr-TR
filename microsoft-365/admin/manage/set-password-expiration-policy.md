@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Bir yöneticinin Microsoft 365 yönetim merkezi'da işletmeniz, okuluniz veya kar amacı gütmeyen kuruluşunuz için parola süre sonu ilkesi ayarlamayı öğrenin.
-ms.openlocfilehash: b7f7691d0c1c0e6177d5414bc7802b62bb07a3b3
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 48dfd933cad12d309a6c00ec15a7226ae918e79d
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468788"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084018"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Kuruluşunuzun parola süre sonu ilkesini belirleyin
 
@@ -48,7 +49,7 @@ Bu adımları gerçekleştirmek için [genel yönetici](../add-users/about-admin
 Kullanıcıysanız, parolanızı süresi hiç dolmayacak şekilde ayarlamak için gereken izinleriniz yoktur. İş veya okulunuzun teknik desteğinden, bu makaledeki adımları sizin için uygulamalarını isteyin.
 
 > [!TIP]
-> Bu konuda verilen adımlarla ilgili yardıma ihtiyacınız varsa[bir Microsoft küçük işletme uzmanıyla çalışmayı](https://go.microsoft.com/fwlink/?linkid=2186871) göz önünde bulundurun. İşletme Yardımı ile, işletmenizi büyütürken işe alımdan gündelik kullanıma kadar her aşamada siz ve çalışanlarınız günün 24 saati küçük işletme uzmanlarına erişebilirsiniz.
+> Bu konuda verilen adımlarla ilgili yardıma ihtiyacınız varsa[bir Microsoft küçük işletme uzmanıyla çalışmayı](https://go.microsoft.com/fwlink/?linkid=2186871) göz önünde bulundurun. İşletme Yardımı ile, işletmenizi büyütürken katılımdan gündelik kullanıma kadar her aşamada siz ve çalışanlarınız günün 24 saati küçük işletme uzmanlarına erişebilirsiniz.
 
 ## <a name="set-password-expiration-policy"></a>Parola süre sonu ilkesini ayarlama
 
@@ -65,7 +66,7 @@ Belirli bir süre sonra kullanıcı parolalarının süresinin dolmasını ayarl
 1. Parolaların ne sıklıkla süre sonunun geleceğini tuşlayın. 14 ile 730 arasında bir gün sayısı seçin.
  
 > [!IMPORTANT]
-> Parola süre sonu bildirimleri artık Office web uygulamalarında veya [yönetim merkezinde desteklenmemektedir](https://portal.office.com).
+> Parola süre sonu bildirimleri artık Office web uygulamalarında veya [yönetim merkezinde](https://portal.office.com) desteklenmiyor.
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>Parola süre sonu özelliği hakkında bilmeniz gereken önemli noktalar
   
@@ -83,9 +84,9 @@ Bu makale, yalnızca bulut kullanan kullanıcıların (Azure AD) süre sonu ilke
   
 Kullanıcı parola karmalarını şirket içi AD'den Azure AD'ye eşitlemeyi öğrenmek için bkz. [Azure AD Connect eşitlemesiyle parola karması eşitlemesi gerçekleştirme](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
 
-## <a name="password-policies-and-account-restrictions-in-azure-active-directory"></a>Azure Active Directory'da parola ilkeleri ve hesap kısıtlamaları
+## <a name="password-policies-and-account-restrictions-in-azure-active-directory"></a>Azure Active Directory'de parola ilkeleri ve hesap kısıtlamaları
 
-Azure Active Directory'de daha fazla parola ilkesi ve kısıtlama ayarlayabilirsiniz. Daha fazla bilgi için [Azure Active Directory'daki Parola ilkeleri ve hesap kısıtlamaları'ne](/azure/active-directory/authentication/concept-sspr-policy) göz atın.
+Azure Active Directory'de daha fazla parola ilkesi ve kısıtlama ayarlayabilirsiniz. Daha fazla bilgi için [Bkz. Azure Active Directory'de parola ilkeleri ve hesap kısıtlamaları](/azure/active-directory/authentication/concept-sspr-policy) .
 
 ## <a name="update-password-policy"></a>Parola İlkesini güncelleştirme
 

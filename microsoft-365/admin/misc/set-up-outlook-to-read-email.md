@@ -1,5 +1,5 @@
 ---
-title: E-Outlook okumak için e-postayı ayarlama
+title: Outlook'u e-posta okuyacak şekilde ayarlama
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.custom:
+- VSBFY23
 - Core_O365Admin_Migration
 - GSTips
 - MiniMaven
@@ -19,62 +20,62 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
-description: hem mac hem de Windows için Outlook'de e-posta hesabı ayarlamayı ve Office e-postalara çevrimiçi olarak erişmeyi öğrenin.
-ms.openlocfilehash: 4afa2c18346dd83006754e90096a2abec9fc7c35
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Hem Windows hem de Mac için Outlook'ta e-posta hesabı ayarlamayı ve Office uygulamalarını yükleme ve çevrimiçi e-postalara erişme hakkında bilgi edinin.
+ms.openlocfilehash: 6355b34f41e7345bd5668c5ed820db9127ee7d85
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984032"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084069"
 ---
-# <a name="set-up-outlook-to-read-email"></a>E-Outlook okumak için e-postayı ayarlama
+# <a name="set-up-outlook-to-read-email"></a>Outlook'u e-posta okuyacak şekilde ayarlama
 
-Microsoft 365 aboneliğiniz web tabanlı bir Outlook ile gelir, ancak aboneliğiniz Office istemci uygulamaları içerirse, kişisel Outlook veya cihazlarınıza da yük yüklemeniz gerekir.
+Microsoft 365 aboneliğiniz web tabanlı bir Outlook ile birlikte gelir, ancak aboneliğiniz Office istemci uygulamaları içeriyorsa, kişisel bilgisayarınıza veya cihazlarınıza yükleyebileceğiniz Outlook'u da alırsınız.
   
-## <a name="set-up-an-email-account-in-outlook"></a>E-posta hesabını E-posta Outlook
+## <a name="set-up-an-email-account-in-outlook"></a>Outlook'ta e-posta hesabı ayarlama
 
-bir hesabı ilk kez Outlook Otomatik Hesap Sihirbazı açılır. Yoksa, Dosya'ya **ve ardından** Hesap **Ekle'ye tıklayın**.
+Outlook'u ilk kez açtığınızda, bir Otomatik Hesap Sihirbazı açılır. Aksi takdirde **Dosya'yı** ve ardından **Hesap Ekle'yi** seçin.
   
-1. **E-posta Hesapları sayfasında Sonraki** Hesap **Ekle'yi** \> **seçin**.
+1. **E-posta Hesapları** sayfasında **Sonraki** \> **Hesap Ekle'yi** seçin.
     
-2. Otomatik Hesap **Kurulumu sayfasında,** adınız, e-posta adresinizi ve parolanızı girin, ardından Sonraki **Son'u** \> **seçin**.
+2. **Otomatik Hesap Kurulumu** sayfasında adınızı, e-posta adresinizi ve parolanızı girin ve **ardından Sonraki** \> **Son'u** seçin.
     
-[Makalenin tamamını okuyun](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
+[Makalenin tamamını](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) okuyun.
   
-## <a name="how-do-i-install-the-office-apps-including-outlook"></a>Bu uygulamalar dahil Office uygulamaları nasıl Outlook?
+## <a name="how-do-i-install-the-office-apps-including-outlook"></a>Outlook da dahil olmak üzere Office uygulamalarını Nasıl yaparım? yükleyebilirsiniz?
 
-1. [Diğer'e admin.microsoft.com/OLS/MySoftware](https://admin.microsoft.com/OLS/MySoftware.aspx).
+1. [admin.microsoft.com/OLS/MySoftware](https://admin.microsoft.com/OLS/MySoftware.aspx) gidin.
     
 2. İş veya okul hesabınızla oturum açın.
     
-3. Yüklemeleri yönet'de Yükle'yi **seçin**.
+3. Yüklemeleri yönet'te **Yükle'yi** seçin.
     
 ## <a name="set-up-an-email-account-in-outlook-2016-for-mac"></a>Mac için Outlook 2016'da e-posta hesabı kurulumu
 
-bu uygulamayı ilk kez Outlook, Gelen Kutum ayarla sihirbazı açılır. Sihirbazda: 
+Outlook uygulamasını ilk kez açtığınızda Gelen Kutumu Ayarla sihirbazı açılır. Sihirbazda: 
   
-1. Gelen **Kutum';;da Hesap** **Ekle'yi seçin**.
+1. **Gelen Kutumu Ayarla** sayfasında **Hesap Ekle'yi** seçin.
     
-2. Hesaplar **sayfasında, Hesap** veya **Exchange'Office 365**.
+2. **Hesaplar** sayfasında **Exchange'i veya Office 365'ı** seçin.
     
-3. Hesap **bilgilerini girin Exchange, e-posta** adresinizi ve parolanızı girin, ardından Hesap Ekle'yi **seçin**.
+3. **Exchange hesabı bilgilerinizi girin** sayfasında adınızı, e-posta adresinizi ve parolanızı girip **Hesap Ekle'yi** seçin.
     
-[Makalenin tamamını okuyun](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac). 
+[Makalenin tamamını](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac) okuyun. 
   
-## <a name="how-do-i-access-my-mail-online"></a>Postama çevrimiçi olarak nasıl erişim?
+## <a name="how-do-i-access-my-mail-online"></a>Postalarıma çevrimiçi erişim Nasıl yaparım??
 
-E-Microsoft 365 oturum **Outlook.**
+Microsoft 365'te oturum açtığınızda **Outlook'u** seçin.
   
-![Uygulama Microsoft 365 vurgulanmış şekilde Outlook sayfası.](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![Outlook uygulamasının vurgulandığı Microsoft 365 giriş sayfası.](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
-Aradığınız uygulamayı bulamıyor musunuz? Size uygun uygulama listesinin **alfabetik sıralanmış** listesini görmek için uygulama başlatıcıdan Tüm Microsoft 365'yi seçin. Buradan belirli bir uygulama için arama yapabilirsiniz. 
+Aradığınız uygulamayı bulamıyor musunuz? Kullanabileceğiniz Microsoft 365 **uygulamalarının** alfabetik listesini görmek için uygulama başlatıcıdan Tüm uygulamalar'ı seçin. Buradan belirli bir uygulama için arama yapabilirsiniz. 
   
-## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a>Aboneliğimin birden çok uygulama dahil olduğunu Office?
+## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a>Aboneliğimin Office uygulamalarını içerip içermediğini Nasıl yaparım? biliyor musunuz?
 
-Microsoft 365 İş Standart ve İş için Microsoft 365 Uygulamaları uygulamalar Office içerir. Ayrıntılar için bkz[. Microsoft 365 planlarına veya planlara](https://go.microsoft.com/fwlink/p/?LinkId=723731) [yönelik Office 365 Kurumsal.](https://go.microsoft.com/fwlink/p/?LinkId=800029)
+Microsoft 365 İş Standart ve İş için Microsoft 365 Uygulamaları Office uygulamalarını içerir. Ayrıntılar için bkz. [İş için Microsoft 365 planları](https://go.microsoft.com/fwlink/p/?LinkId=723731) veya [Office 365 Kurumsal planları](https://go.microsoft.com/fwlink/p/?LinkId=800029).
   
-## <a name="how-do-i-determine-what-subscription-i-have"></a>Hangi aboneliğe sahip olduğunu nasıl belirlerim?
+## <a name="how-do-i-determine-what-subscription-i-have"></a>Hangi aboneliğim olduğunu belirlemek Nasıl yaparım??
 
-Aboneliğinizi belirlemek için bkz. [Hangi aboneliğe sahipim?](../admin-overview/what-subscription-do-i-have.md)
+Aboneliğinizi belirlemek için bkz [. Hangi aboneliğe sahibim?](../admin-overview/what-subscription-do-i-have.md)
   
 
