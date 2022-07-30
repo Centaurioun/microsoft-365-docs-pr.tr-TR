@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7712b1b65db62625b853567f2d739d5f16787eb9
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 0e1971ba9b2c65dd02411d237ab3886c58fa7003
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051832"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099293"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS özelliklerinde Uç Nokta için Microsoft Defender’ı yapılandırın
 
@@ -79,7 +79,7 @@ Bu yapılandırma hem kayıtlı (MDM) cihazlar hem de kayıtlı olmayan (MAM) ci
     - [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
     - İlkeye **iOS/iPadOS > Platform** adını verin.
     - Hedef uygulama olarak Uç Nokta için Microsoft Defender seçin.
-    - Ayarlar sayfasında Yapılandırma tasarımcısını kullan'ı seçin ve anahtar ve değer türü olarak  **WebProtection** **değerini Boole** olarak ekleyin.
+    - Ayarlar sayfasında Yapılandırma tasarımcısını kullan'ı seçin ve anahtar ve değer türü olarak **WebProtection** **değerini Boole** olarak ekleyin.
         - Varsayılan olarak **, WebProtection= true**.
         - Yönetici web korumasını kapatmak için **WebProtection = false** yapması gerekir.
         - Defender, kullanıcı uygulamayı her açtığında sinyali Microsoft 365 Defender portalına gönderir.
@@ -90,7 +90,7 @@ Bu yapılandırma hem kayıtlı (MDM) cihazlar hem de kayıtlı olmayan (MAM) ci
     - [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Uygulamalar Uygulama** > **yapılandırma ilkeleri** > **Yönetilen uygulamalar** **ekle'ye** >  gidin.
     - İlkeye bir ad verin.
     - Genel Uygulamaları Seç'in altında hedef uygulama olarak Uç Nokta için Microsoft Defender'ı seçin.
-    - Ayarlar sayfasında, Genel Yapılandırma Ayarları'nın altında anahtar olarak  **WebProtection** ve **false** olarak değer ekleyin.
+    - Ayarlar sayfasında, Genel Yapılandırma Ayarları'nın altında anahtar olarak **WebProtection** ve **false** olarak değer ekleyin.
         - Varsayılan olarak **, WebProtection= true**.
         - Yönetici web korumasını kapatmak için **WebProtection = false** yapması gerekir.
         - Defender, kullanıcı uygulamayı her açtığında sinyali Microsoft 365 Defender portalına gönderir.
@@ -114,9 +114,9 @@ Uç nokta için Microsoft Defender'da ağ koruması varsayılan olarak etkindir.
 
     |Tuş| Varsayılan (true-enable, false-disable)|Açıklama|
     |---|---|---|
-    |DefenderEndUserTrustFlowEnable| False | Kullanıcıların Ağlara ve Sertifikalara Güvenmesini Sağlama|
-    |DefenderNetworkProtectionAutoRemediation| True |Bu ayar, bir kullanıcı daha güvenli WIFI erişim noktalarına geçme veya Defender tarafından algılanan şüpheli sertifikaları silme gibi düzeltme etkinlikleri gerçekleştirdiğinde gönderilen düzeltme uyarılarını etkinleştirmek veya devre dışı bırakmak için BT yöneticisi tarafından kullanılır|
-    |DefenderNetworkProtectionPrivacy| True |Bu ayar, ağ korumasında gizliliği etkinleştirmek veya devre dışı bırakmak için BT yöneticisi tarafından yönetilir|
+    |DefenderEndUserTrustFlowEnable| false | Kullanıcıların Ağlara ve Sertifikalara Güvenmesini Sağlama|
+    |DefenderNetworkProtectionAutoRemediation| doğru |Bu ayar, bir kullanıcı daha güvenli WIFI erişim noktalarına geçme veya Defender tarafından algılanan şüpheli sertifikaları silme gibi düzeltme etkinlikleri gerçekleştirdiğinde gönderilen düzeltme uyarılarını etkinleştirmek veya devre dışı bırakmak için BT yöneticisi tarafından kullanılır|
+    |DefenderNetworkProtectionPrivacy| doğru |Bu ayar, ağ korumasında gizliliği etkinleştirmek veya devre dışı bırakmak için BT yöneticisi tarafından yönetilir|
   
 5. Atamalar bölümünde yönetici, ilkeye dahil etmek ve ilkeden dışlamak için kullanıcı gruplarını seçebilir.
    :::image type="content" source="images/assigniosconfig.png" alt-text="Yapılandırmayı atayın." lightbox="images/assigniosconfig.png":::

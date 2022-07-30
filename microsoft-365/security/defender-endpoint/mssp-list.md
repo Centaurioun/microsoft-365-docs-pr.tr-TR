@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0ef0cd210b405440c4dd16f9b8ea7a707d8f6197
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 9a4ea838092c379ff3d58f78b5622083f7dcbfa7
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66970280"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099271"
 ---
 # <a name="supported-managed-security-service-providers"></a>Desteklenen güvenlik hizmeti sağlayıcıları
 
@@ -29,7 +29,7 @@ ms.locfileid: "66970280"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Aşağıdaki yönetilen güvenlik hizmeti sağlayıcılarına portal üzerinden erişilebilir.
 
@@ -38,7 +38,7 @@ Logo |İş ortağı adı   | Açıklama
 ![Accenture logosunun resmi.](images/accenture-logo.png)|[Accenture Yönetilen Algılama & Yanıtı (MDR)](https://go.microsoft.com/fwlink/?linkid=2164353) | Bulutta ve şirket içinde bulunan BT ve OT ortamlarında gelişmiş siber saldırıları algılayan, proaktif olarak avlayan ve buna yanıt veren genişletilmiş özelliklerle küresel siber güvenlik operasyonlarını yönetin, koruyun ve geliştirin.
 ![Aujas logosunun resmi.](images/aujas-logo.png) | [Aujas yönetilen MDE Hizmeti](https://go.microsoft.com/fwlink/?linkid=2162429) | Aujas siber güvenlik, Siber Savunma Merkezleri aracılığıyla Uç Nokta için Microsoft Defender kullanarak tüm kurumsal spektrumda 24*7 yönetilen güvenlik hizmetleri sağlar.
 ![BDO Digital logosunun resmi.](images/bdo-logo.png)| [BDO Digital](/openspecs/ie_standards/ms-html401/ad459f6f-5219-4f68-829c-a58f7397a11f) | BDO Digital'in Yönetilen Savunması 7/24/365 kimlik koruması için en iyi uygulama araçlarını, yapay zekayı ve şirket içi güvenlik uzmanlarını kullanır
-![BlueVoyant logosunun resmi.](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | Uç Nokta için Microsoft Defender için MDR, uç noktalara yönelik gelişmiş saldırıları izleme, araştırma ve azaltma desteği sağlar
+![BlueVoyant logosunun resmi.](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | Ortamınızda 7/24 uzaktan izleme ve XDR olay düzeltmesi ile kapsamlı tehdit veri analizi ve ileri teknoloji çözümleri sunan MDR hizmetleri.
 :::image type="content" source="images/bt-logo.png" alt-text="! BT logosunun resmi.":::|[BT'den Yönetilen Uç Nokta Microsoft](https://www.globalservices.bt.com/en/solutions/solution/endpoint-security-and-protection-solutions)| Yıllardır kendimizi koruyoruz, bu uzmanlık Microsoft müşterilerini korumak için kullandığımız benzersiz ticari araçları geliştirmemize olanak sağladı. Küresel güvenlik operasyon merkezlerimizde Uç Nokta için Microsoft Defender varlığınızın 24x7x365 izlenmesini sağlayacağız.
 ![Bulut için Cloud Defender logosunun görüntüsü.](images/cloudsecuritycenter-logo.png)| [Bulut için Cloud Defender](https://go.microsoft.com/fwlink/?linkid=2099315) | InSpark'ın Bulut için Bulut Defender'ı, koruma, algılama & yanıt özellikleri sunan 7/24 yönetilen bir hizmettir
 ![Bulut SOC logosunun resmi.](images/cloudsoc-logo.png)| [Bulut SOC](https://go.microsoft.com/fwlink/?linkid=2104265) | Cloud SOC, Microsoft bulutunu temel alan 7/24 güvenlik izleme hizmetleri sağlar ve güvenlik duruşunuzu sürekli olarak geliştirmenize yardımcı olur

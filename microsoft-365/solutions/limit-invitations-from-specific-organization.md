@@ -16,19 +16,19 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Kullanıcılarınızdan hangilerinin belirli bir kuruluşa konuk veya paylaşılan kanal katılımcısı olarak davet edilebileceğini sınırlamayı öğrenin.
-ms.openlocfilehash: 599f83a4464498f7a964f02a955f802cb8545432
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 9298d0f6cb251d9734a8cfb4036e305bb603b680
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "66861394"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099799"
 ---
 # <a name="limit-who-can-be-invited-by-an-organization"></a>Kuruluş tarafından kimlerin davet edilebileceğini sınırlayın
 
 Başka bir kuruluşla işbirliği yaparsanız ve Teams'de konuk veya paylaşılan kanal üyesi olarak kimlerin davet edilebileceğini sınırlamak istiyorsanız, Azure Active Directory'deki kiracılar arası erişim ayarlarında kimlerin davet edilebileceğini belirtebilirsiniz.
 
 > [!NOTE]
-> Kiracılar arası erişim ayarlarında yapılan değişikliklerin etkili olması iki saat sürebilir.
+> Kiracılar arası erişim ayarlarında yapılan değişikliklerin etkili olması altı saat sürebilir.
 
 ## <a name="create-a-security-group"></a>Güvenlik grubu oluşturma
 

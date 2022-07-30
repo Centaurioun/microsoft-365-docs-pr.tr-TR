@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 141f57f50b8400c0fdf2b40e9d8190be96b0fe1b
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: c015372c9f0fcf6cf0e25af1902af970e11156d0
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059831"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099148"
 ---
 # <a name="update-alert"></a>Uyarıyı güncelleştirme
 
@@ -53,7 +53,7 @@ Güncelleştirilebilir özellikler şunlardır: `status`, `determination`, `clas
 
 Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|Izni|İzin görünen adı
+İzin türü|İzin|İzin görünen adı
 :---|:---|:---
 Uygulama|Alerts.ReadWrite.All|'Tüm uyarıları okuma ve yazma'
 Temsilci (iş veya okul hesabı)|Alert.ReadWrite|'Uyarıları okuma ve yazma'
@@ -74,7 +74,7 @@ PATCH /api/alerts/{id}
 
 Name|Tür|Açıklama
 :---|:---|:---
-Yetkilendirme|Dize|Taşıyıcı {token}. **Gerekli**.
+İzin|Dize|Taşıyıcı {token}. **Gerekli**.
 İçerik Türü|Dize|application/json. **Gerekli**.
 
 ## <a name="request-body"></a>İstek gövdesi
@@ -85,12 +85,12 @@ Yetkilendirme|Dize|Taşıyıcı {token}. **Gerekli**.
 
 En iyi performans için değişmemiş mevcut değerleri eklememelisiniz.
 
-Özellik|Tür|Açıklama
+Mülk|Tür|Açıklama
 :---|:---|:---
 Durum|Dize|Uyarının geçerli durumunu belirtir. Özellik değerleri şunlardır: 'New', 'InProgress' ve 'Resolved'.
-Atanan|Dize|Uyarının sahibi
+assignedTo|Dize|Uyarının sahibi
 Sınıflandırma|Dize|Uyarının belirtimini belirtir. Özellik değerleri şunlardır: 'Unknown', 'FalsePositive', 'TruePositive'.
-Belirlenmesi|Dize|Uyarının belirlenmesini belirtir. Özellik değerleri şunlardır: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'İstenmeyenSoftware', 'Diğer'
+Sebat|Dize|Uyarının belirlenmesini belirtir. Özellik değerleri şunlardır: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'İstenmeyenSoftware', 'Diğer'
 Açıklama ekleme|Dize|Uyarıya eklenecek açıklama.
 
 >[!NOTE]
@@ -102,7 +102,7 @@ Başarılı olursa, bu yöntem 200 Tamam döndürür ve güncelleştirilmiş öz
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>Istek
+### <a name="request"></a>İstek
 
 burada isteğin bir örneği verilmiş.
 

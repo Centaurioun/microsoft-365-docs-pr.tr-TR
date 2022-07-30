@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a2dfcd6372398f92ba401a109302ef541de88565
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6fa5ebe413baef991b412cd44d90239bfb72b0e2
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66494092"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099051"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>Bağlamsal dosya ve klasör dışlamaları
 
@@ -43,12 +43,12 @@ Bir dışlamanın uygulanabilirliğini sınırlamak için uygulayabileceğiniz d
 
 Kısıtlamalar genellikle dosya veya klasör dışlama yoluna kısıtlama türü eklenerek uygulanır.  
 
-| Kısıtlama | Typename | Değer |
+| Kısıtlama | TypeName | değer |
 |:---|:---|:---|
-| Dosya/klasör  | PathType  | Dosya <br> Klasör |
-| Tarama türü | ScanType | Hızlı <br> Tam |
-| Tarama tetikleyicisi | ScanTrigger | Ondemand <br> OnAccess <br> BM |
-| Işlem | Işlem | "<image_path>" |
+| Dosya/klasör  | PathType  | dosya <br> klasör |
+| Tarama türü | ScanType | çabuk <br> dolu |
+| Tarama tetikleyicisi | ScanTrigger | OnDemand <br> OnAccess <br> BM |
+| İşlem | İşlem | "<image_path>" |
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -73,11 +73,11 @@ Aşağıdaki dize yalnızca bir dosyaysa ve yalnızca erişim içi taramalarda "
 
 Aşağıdaki dize, yalnızca "winword.exe" görüntü adına sahip bir işlem tarafından erişildiği için taranmışsa (erişimde) "c:\documents\design.doc" öğesini dışlar:
 
-`c:\documents\design.doc\:{Process:”winword.exe”}`
+`c:\documents\design.doc\:{Process:"winword.exe"}`
 
 İşlem görüntüsü yolu, aşağıdaki örnekte olduğu gibi joker karakterler içerebilir:
 
-`c:\documents\design.doc\:{Process:”C:\Program Files*\Microsoft Office\root\Office??\winword.exe”}`
+`c:\documents\design.doc\:{Process:"C:\Program Files*\Microsoft Office\root\Office??\winword.exe"}`
 
 ### <a name="filefolder-restriction"></a>Dosya/klasör kısıtlaması
 
@@ -146,7 +146,7 @@ Bu kısıtlama, dışlamanın yalnızca belirli bir işlem tarafından bir dosya
 
 Bir dosya veya klasörü yalnızca belirli bir işlem tarafından erişildiğinde dışlamak için normal bir dosya veya klasör dışlaması oluşturun ve dışlama işlemini şu şekilde kısıtlayın:  
 
-`c:\documents\design.doc\:{Process:”winword.exe”, Process:”msaccess.exe”}`
+`c:\documents\design.doc\:{Process:"winword.exe", Process:"msaccess.exe"}`
 
 ### <a name="how-to-configure"></a>Yapılandırma
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Uç nokta veri kaybını önleme, dosya etkinliklerinin ve bu dosyalar için koruyucu eylemlerin izlenmesini uç noktalara genişletir. Dosyalar Uyumluluk çözümlerinde görünür hale getiriliyor '
-ms.openlocfilehash: 2adc24b4809689137ae067ce09cda8caebea2a0e
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 37992558c1621ab476fa3a481776f0d3a7e55df4
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917155"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099491"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>Uç nokta veri kaybı önleme hakkında daha fazla bilgi edinme
 
@@ -44,15 +44,15 @@ Uç nokta DLP, kullanıcıların fiziksel olarak Windows 10, Windows 11 veya mac
 
 |Etkinlik |Açıklama  |Windows 10 1809 ve üzeri/ Windows 11| macOS Catalina 10.15 ve üzeri | Denetlenebilir/kısıtlanabilir|
 |---------|---------|---------|---------|---------|
-|bulut hizmetine yükleme veya izin verilmeyen tarayıcılarla erişim    | Bir kullanıcının kısıtlanmış bir hizmet etki alanına öğe yüklemeyi veya bir öğeye tarayıcı üzerinden erişmeyi denediğinde algılar.  DLP'de izin verilmeyen bir tarayıcı olarak listelenen bir tarayıcı kullanıyorlarsa, karşıya yükleme etkinliği engellenir ve kullanıcı Microsoft Edge'i kullanmaya yönlendirilir. Microsoft Edge daha sonra DLP ilke yapılandırmasına göre karşıya yükleme veya erişime izin verir veya erişimi engeller         |Desteklenen | Desteklenen|denetlenebilir ve kısıtlanabilir|
-|başka bir uygulamaya kopyalama    |Kullanıcı korumalı bir öğeden bilgi kopyalamaya çalıştığında bunu algılar ve ardından başka bir uygulama, işlem veya öğeye yapıştırır. Aynı uygulama, işlem veya öğe içindeki bilgilerin kopyalanması ve yapıştırılması bu etkinlik tarafından algılanmaz.|Desteklenen|Desteklenen         | denetlenebilir ve kısıtlanabilir|
-|USB çıkarılabilir medyaya kopyalama |Kullanıcının bir öğeyi veya bilgileri çıkarılabilir medyaya veya USB cihazına kopyalamaya çalıştığında algılar.|Desteklenen|Desteklenen         | denetlenebilir ve kısıtlanabilir|
-|ağ paylaşımına kopyalama    |Kullanıcının bir öğeyi bir ağ paylaşımına veya eşlenmiş ağ sürücüsüne kopyalamaya çalıştığında algılar |Desteklenen|Desteklenen         |denetlenebilir ve kısıtlanabilir|
-|belge yazdırma    |Kullanıcının korumalı bir öğeyi yerel veya ağ yazıcısına yazdırmaya çalıştığında algılar.|Desteklenen|Desteklenen|denetlenebilir ve kısıtlanabilir         |
-|uzak oturuma kopyalama|Kullanıcının bir öğeyi uzak masaüstü oturumuna kopyalamaya çalıştığında algılar |Desteklenen|desteklenmiyor|  denetlenebilir ve kısıtlanabilir|
-|Bluetooth cihazına kopyalama|Kullanıcının bir öğeyi izin verilmeyen bir Bluetooth uygulamasına kopyalamaya çalıştığında algılar (Uç Nokta DLP ayarlarındaki izin verilmeyen Bluetooth ap'leri listesinde tanımlandığı gibi).|Desteklenen|desteklenmiyor| denetlenebilir ve kısıtlanabilir|
-|öğe oluşturma|Kullanıcı öğe oluşturduğunda algılar|Desteklenen |Desteklenen |Denetlene -bilir|
-|öğeyi yeniden adlandırma|Kullanıcının bir öğeyi yeniden adlandırdığında algılar|Desteklenen |Desteklenen |Denetlene -bilir|
+|bulut hizmetine yükleme veya izin verilmeyen tarayıcılarla erişim    | Bir kullanıcının kısıtlanmış bir hizmet etki alanına öğe yüklemeyi veya bir öğeye tarayıcı üzerinden erişmeyi denediğinde algılar.  DLP'de izin verilmeyen bir tarayıcı olarak listelenen bir tarayıcı kullanıyorlarsa, karşıya yükleme etkinliği engellenir ve kullanıcı Microsoft Edge'i kullanmaya yönlendirilir. Microsoft Edge daha sonra DLP ilke yapılandırmasına göre karşıya yükleme veya erişime izin verir veya erişimi engeller         |destekli | destekli|denetlenebilir ve kısıtlanabilir|
+|başka bir uygulamaya kopyalama    |Kullanıcı korumalı bir öğeden bilgi kopyalamaya çalıştığında bunu algılar ve ardından başka bir uygulama, işlem veya öğeye yapıştırır. Aynı uygulama, işlem veya öğe içindeki bilgilerin kopyalanması ve yapıştırılması bu etkinlik tarafından algılanmaz.|destekli|destekli         | denetlenebilir ve kısıtlanabilir|
+|USB çıkarılabilir medyaya kopyalama |Kullanıcının bir öğeyi veya bilgileri çıkarılabilir medyaya veya USB cihazına kopyalamaya çalıştığında algılar.|destekli|destekli         | denetlenebilir ve kısıtlanabilir|
+|ağ paylaşımına kopyalama    |Kullanıcının bir öğeyi bir ağ paylaşımına veya eşlenmiş ağ sürücüsüne kopyalamaya çalıştığında algılar |destekli|destekli         |denetlenebilir ve kısıtlanabilir|
+|belge yazdırma    |Kullanıcının korumalı bir öğeyi yerel veya ağ yazıcısına yazdırmaya çalıştığında algılar.|destekli|destekli|denetlenebilir ve kısıtlanabilir         |
+|uzak oturuma kopyalama|Kullanıcının bir öğeyi uzak masaüstü oturumuna kopyalamaya çalıştığında algılar |destekli|desteklenmiyor|  denetlenebilir ve kısıtlanabilir|
+|Bluetooth cihazına kopyalama|Kullanıcının bir öğeyi izin verilmeyen bir Bluetooth uygulamasına kopyalamaya çalıştığında algılar (Uç Nokta DLP ayarlarındaki izin verilmeyen Bluetooth ap'leri listesinde tanımlandığı gibi).|destekli|desteklenmiyor| denetlenebilir ve kısıtlanabilir|
+|öğe oluşturma|Kullanıcı öğe oluşturduğunda algılar|destekli |destekli |Denetlene -bilir|
+|öğeyi yeniden adlandırma|Kullanıcının bir öğeyi yeniden adlandırdığında algılar|destekli |destekli |Denetlene -bilir|
 
 ## <a name="best-practice-for-endpoint-dlp-policies"></a>Uç nokta DLP ilkeleri için en iyi yöntem
 
@@ -75,13 +75,13 @@ Uç nokta DLP, bu dosya türlerinin izlenmesini destekler. DLP, ilke eşleşmesi
 - dosyaları .csv
 - .tsv dosyaları
 - dosyaları .txt
-- .rtf dosyaları
+- dosyaları .rtf
 - .c dosyaları
-- .class dosyaları
-- .cpp dosyaları
-- .cs dosyaları
+- dosyaları .class
+- dosyaları .cpp
+- dosyaları .cs
 - .h dosyaları
-- .java dosyaları
+- dosyaları .java
  
 Yalnızca ilke eşleşmelerindeki izleme verilerini istiyorsanız, uç nokta DLP genel ayarlarındaki **cihazlar için dosya etkinliğini her zaman denetle** seçeneğini kapatabilirsiniz.
 
@@ -100,9 +100,9 @@ Dosya Türleri, belirli iş akışlarını veya iş alanlarını korumak için k
 |Dosya Türü |Uygulama  |izlenen dosya uzantıları  |
 |---------|---------|---------|
 |sözcük işleme |Word, PDF | .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .pdf |
-|Elektronik tablo    |Excel, CSV, TSV |.xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .csv, .tsv         |
-|Sunum |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
-|Arşiv  |dosya arşiv ve sıkıştırma araçları | .zip, .zipx, .rar, .7z, .tar, .gz        |
+|elektronik tablo    |Excel, CSV, TSV |.xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .csv, .tsv         |
+|sunum |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
+|arşiv  |dosya arşiv ve sıkıştırma araçları | .zip, .zipx, .rar, .7z, .tar, .gz        |
 |E-posta    |Outlook |.pst, .ost, .msg         |
 
 ### <a name="file-extensions"></a>Dosya uzantıları
@@ -143,7 +143,7 @@ Ekleme ve çıkarma işlemleri, Cihaz yönetim merkezinden indirdiğiniz betikle
 
  Cihazları eklemek için [Microsoft 365 Uç Nokta DLP ile çalışmaya başlama'daki](endpoint-dlp-getting-started.md) yordamları kullanın.
 
-[Cihazları Uç Nokta için Microsoft Defender](../security/defender-endpoint/configure-machines-onboarding.md) aracılığıyla eklediyseniz, bu cihazlar otomatik olarak cihaz listesinde gösterilir. Bunun nedeni, Defender'a eklemenin cihazları da DLP'ye eklemesidir. Yalnızca uç nokta DLP'sini kullanmak için **cihaz izlemeyi** açmanız gerekir. .
+[Cihazları Uç Nokta için Microsoft Defender](../security/defender-endpoint/configure-machines-onboarding.md) aracılığıyla eklediyseniz, bu cihazlar otomatik olarak cihaz listesinde gösterilir. Bunun nedeni, Defender'a eklemenin cihazları da DLP'ye eklemesidir. Yalnızca uç nokta DLP'sini kullanmak için **cihaz izlemeyi açmanız** gerekir. .
 
 > [!div class="mx-imgBorder"]
 > ![yönetilen cihazlar listesi.](../media/endpoint-dlp-learn-about-2-device-list.png)
@@ -174,18 +174,18 @@ Uç nokta DLP, denetlenen etkinlik hakkında kapsamlı bilgiler toplar.
 - hedef dosya yolu
 - oldu zaman damgası
 - dosya adı
-- Kullanıcı
+- kullanıcı
 - dosya uzantısı
 - dosya boyutu
 - hassas bilgi türü (varsa)
 - sha1 değeri
 - sha256 değeri
 - önceki dosya adı
-- Konum
-- Üst
-- Filepath
+- yer
+- ebeveyn
+- dosya yolu
 - kaynak konum türü
-- Platform
+- peron
 - cihaz adı
 - hedef konum türü
 - kopyalamayı gerçekleştiren uygulama

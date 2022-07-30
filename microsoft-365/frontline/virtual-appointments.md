@@ -19,12 +19,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: f36d79aa4902991e07355fc6bfd3a6add1ae0fe0
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: e4047d051a12c34f18cf8d13de2f5827cdc5c426
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824858"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100107"
 ---
 # <a name="virtual-appointments-with-microsoft-teams"></a>Microsoft Teams ile sanal randevular
 
@@ -51,7 +51,7 @@ Daha fazla bilgi için şu makalelere bakın:
 
 - [Bookings uygulamasını yönetme](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Teams ve Bookings uygulamasıyla sanal randevular](bookings-virtual-visits.md)
-- [İstemcilerinizin ve müşterilerinizin sanal randevuları kullanmalarına yardımcı olun](virtual-appointments-toolkit.md)
+- [İstemcilerinizin ve müşterilerinizin sanal randevuları kullanmasına yardımcı olma](virtual-appointments-toolkit.md)
 
 ## <a name="teams-electronic-health-record-ehr-connector"></a>Teams Elektronik Sistem Durumu Kaydı (EHR) bağlayıcısı
 

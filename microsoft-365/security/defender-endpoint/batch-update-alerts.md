@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4837bde82ad11545e17a7432cc701be7c14a28f7
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 7bda1310178759def39b6ba9baedb25de875fb11
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059853"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099161"
 ---
 # <a name="batch-update-alerts"></a>Grup güncelleştirme uyarıları
 
@@ -55,7 +55,7 @@ Güncelleştirilebilir özellikler şunlardır: `status`, `determination`ve `cla
 
 Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü | Izni | İzin görünen adı
+İzin türü | İzin | İzin görünen adı
 :---|:---|:---
 Uygulama | Alert.ReadWrite.All | 'Tüm uyarıları okuma ve yazma'
 Temsilci (iş veya okul hesabı) | Alert.ReadWrite | 'Uyarıları okuma ve yazma'
@@ -76,7 +76,7 @@ POST /api/alerts/batchUpdate
 
 Name|Tür|Açıklama
 :---|:---|:---
-Yetkilendirme | Dize | Taşıyıcı {token}. **Gerekli**.
+İzin | Dize | Taşıyıcı {token}. **Gerekli**.
 İçerik Türü | Dize | application/json. **Gerekli**.
 
 ## <a name="request-body"></a>İstek gövdesi
@@ -87,14 +87,14 @@ Yetkilendirme | Dize | Taşıyıcı {token}. **Gerekli**.
 
 En iyi performans için değişmemiş mevcut değerleri eklememelisiniz.
 
-Özellik | Tür | Açıklama
+Mülk | Tür | Açıklama
 :---|:---|:---
 alertId'ler | Liste&lt;Dizesi&gt;| Güncelleştirilecek uyarıların kimliklerinin listesi. **Gerekli**
-Durum | Dize | Belirtilen uyarıların güncelleştirilmiş durumunu belirtir. Özellik değerleri şunlardır: 'New', 'InProgress' ve 'Resolved'.
-Atanan | Dize | Belirtilen uyarıların sahibi
-Sınıflandırma | Dize | Belirtilen uyarıların belirtimini belirtir. Özellik değerleri şunlardır: 'True positive', 'Informational, expected activity' ve 'False positive'.
-Belirlenmesi | Dize | Belirtilen uyarıların belirlenmesini belirtir. Özellik değerleri şunlardır: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'İstenmeyenSoftware', 'Diğer'
-Yorum | Dize | Belirtilen uyarılara eklenecek açıklama.
+durum | Dize | Belirtilen uyarıların güncelleştirilmiş durumunu belirtir. Özellik değerleri şunlardır: 'New', 'InProgress' ve 'Resolved'.
+assignedTo | Dize | Belirtilen uyarıların sahibi
+sınıflandırma | Dize | Belirtilen uyarıların belirtimini belirtir. Özellik değerleri şunlardır: 'True positive', 'Informational, expected activity' ve 'False positive'.
+sebat | Dize | Belirtilen uyarıların belirlenmesini belirtir. Özellik değerleri şunlardır: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'İstenmeyenSoftware', 'Diğer'
+yorum | Dize | Belirtilen uyarılara eklenecek açıklama.
 
 >[!NOTE]
 >29 Ağustos 2022'de daha önce desteklenen uyarı belirleme değerleri ('Apt' ve 'SecurityPersonnel') kullanım dışı bırakılacak ve artık API aracılığıyla kullanılamayacak.
@@ -105,7 +105,7 @@ Başarılı olursa, bu yöntem boş yanıt gövdesiyle 200 Tamam döndürür.
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>Istek
+### <a name="request"></a>İstek
 
 burada isteğin bir örneği verilmiştir.
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 31aaf297fd3622eede2e1532ad60a20666d1bd07
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: 840961a39f2e298bfc11eecdbb1344fc9c252c3a
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66989253"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099073"
 ---
 # <a name="troubleshoot-auditd-performance-issues-with-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender ile ilgili Denetimli performans sorunlarını giderme 
 
@@ -32,7 +32,7 @@ Bu makale, Linux'ta Uç Nokta için Microsoft Defender karşılaşabileceğiniz 
 
 - Linux işletim sistemi dağıtımlarında Uç Nokta için Microsoft Defender, belirli türlerdeki telemetri olaylarını toplamak için AuditD çerçevesini kullanır. 
 
-- 'a `/etc/audit/rules.d/` eklenen kurallar tarafından yakalanan sistem olayları audit.log'lara eklenir ve konak denetimini ve yukarı akış koleksiyonunu etkileyebilir.  
+- 'a `/etc/audit/rules.d/` eklenen kurallar tarafından yakalanan sistem olayları denetim.log'lere eklenir ve konak denetimini ve yukarı akış toplamayı etkileyebilir.  
 
 - Linux'ta Uç Nokta için Microsoft Defender tarafından eklenen olaylar anahtarla `mdatp` etiketlenir. 
 
@@ -42,7 +42,7 @@ Bazı sunucu iş yüklerinde iki sorun gözlemlenebilir:
 
 - **_mdatp_audisp_plugin_** işlemden **yüksek CPU** kaynak tüketimi. 
 
-- ***/var/log/audit/audit.log*** büyük veya sık sık dönüyor. 
+- ***/var/log/audit/audit.log*** büyük veya sık dönen hale geliyor. 
 
 Bu sorunlar, AuditD'yi basan birçok olayı olan sunucularda oluşabilir.  
 

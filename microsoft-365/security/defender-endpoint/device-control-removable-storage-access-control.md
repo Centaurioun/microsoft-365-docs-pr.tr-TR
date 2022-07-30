@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/24/2022
-ms.openlocfilehash: 508bb081d2f5bfcc83538141d6abb28f857bda6e
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
+ms.openlocfilehash: 7b16821f1e4e7b8829615d836bde52dd71a43a96
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912812"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099381"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama birimi Access Control
 
@@ -34,7 +34,7 @@ ms.locfileid: "66912812"
 
 Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama Birimi Access Control özelliği, dışlamayla veya dışlamadan çıkarılabilir depolama birimine okuma, yazma veya yürütme erişimini denetlemenizi, izin vermenizi veya engellemenizi sağlar.
 
-|Ayrıcalık|Izni|
+|Ayrıcalık|İzin|
 |---|---|
 |Access|Okuma, Yazma, Yürütme|
 |Eylem Modu|Denetim, İzin Ver, Engelle|
@@ -45,7 +45,7 @@ Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama Biri
 
 Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama Birimi Access Control özelliği size aşağıdaki özellikleri sağlar:
 
-|Yeteneği|Açıklama|Intune aracılığıyla dağıtma|grup ilkesi aracılığıyla dağıtma|
+|Yetenek|Açıklama|Intune aracılığıyla dağıtma|grup ilkesi aracılığıyla dağıtma|
 |---|---|---|---|
 |Çıkarılabilir Medya Grubu Oluşturma|Yeniden kullanılabilir çıkarılabilir medya grubu oluşturmanıza olanak tanır|Intune [OMA-URI kullanarak Çıkarılabilir Depolama Birimi Access Control Dağıtma](#deploying-removable-storage-access-control-by-using-intune-oma-uri) bölümündeki 4. ve 6. adım| Grup ilkesi [kullanarak Çıkarılabilir Depolama Birimi Dağıtma bölümünde](#deploying-removable-storage-access-control-by-using-group-policy) 4. ve 6. adım Access Control|
 |İlke Oluşturma|Her çıkarılabilir medya grubunu zorunlu kılmak için ilke oluşturmanıza olanak tanır|Intune [OMA-URI kullanarak Çıkarılabilir Depolama Birimi Access Control Dağıtma](#deploying-removable-storage-access-control-by-using-intune-oma-uri) bölümündeki 5. ve 7. adım| Grup ilkesi [kullanarak Çıkarılabilir Depolama Birimi dağıtma Access Control](#deploying-removable-storage-access-control-by-using-group-policy) bölümündeki 5. ve 7. adımlar|
@@ -81,9 +81,9 @@ Kötü amaçlı yazılımdan koruma istemcisi sürümü **4.18.2103.3 veya** üz
 
 |Özellik Adı|Açıklama|Seçenekler|
 |---|---|---|
-|**Groupıd**|Benzersiz bir kimlik olan GUID, grubu temsil eder ve ilkede kullanılır.||
-|**DescriptorIdList**|Grupta ele almak için kullanmak istediğiniz cihaz özelliklerini listeleyin. Her cihaz özelliği için daha fazla ayrıntı için bkz [. Cihaz Özellikleri](device-control-removable-storage-protection.md) . Tüm özellikler büyük/küçük harfe duyarlıdır. |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`<p>**BusId**: Örneğin, USB, SCSI<p>**Deviceıd**<p>**HardwareId**<p>**InstancePathId**: InstancePathId, sistemdeki cihazı benzersiz olarak tanımlayan bir dizedir; örneğin, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. Sonundaki sayı (örneğin &0) kullanılabilir yuvayı temsil eder ve cihazdan cihaza değişebilir. En iyi sonuçları elde için sonunda joker karakter kullanın. Örneğin, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VİD**<p>**PID**<p>**VID_PID**<p>`0751_55E0`: bu tam VID/PID çifti eşleştir<p>`_55E0`: HERHANGI bir medyayı PID=55E0 ile eşleştirme <p>`0751_`: VID=0751 ile herhangi bir medyayı eşleştirme|
-|**Matchtype**|içinde `DescriptorIDList`kullanılan birden çok cihaz özelliği olduğunda, MatchType ilişkiyi tanımlar.|**MatchAll**: altındaki `DescriptorIdList` tüm öznitelikler **And** ilişkisi olur; örneğin, yönetici bağlı her USB için ve `InstancePathID`eklerse `DeviceID` sistem USB'nin her iki değeri de karşılayıp karşılamadığını denetler. <p> **MatchAny**: DescriptorIdList altındaki öznitelikler **Or** ilişkisi olacaktır; örneğin, yönetici bağlı her USB için ve `InstancePathID`koyarsa`DeviceID`, USB'de aynı **DeviceID** veya **InstanceID** değeri olduğu sürece sistem uygulamayı yapar.|
+|**GroupId**|Benzersiz bir kimlik olan GUID, grubu temsil eder ve ilkede kullanılır.||
+|**DescriptorIdList**|Grupta ele almak için kullanmak istediğiniz cihaz özelliklerini listeleyin. Her cihaz özelliği için daha fazla ayrıntı için bkz [. Cihaz Özellikleri](device-control-removable-storage-protection.md) . Tüm özellikler büyük/küçük harfe duyarlıdır. |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`<p>**BusId**: Örneğin, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId, sistemdeki cihazı benzersiz olarak tanımlayan bir dizedir; örneğin, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. Sonundaki sayı (örneğin &0) kullanılabilir yuvayı temsil eder ve cihazdan cihaza değişebilir. En iyi sonuçları elde için sonunda joker karakter kullanın. Örneğin, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**Pıd**<p>**VID_PID**<p>`0751_55E0`: bu tam VID/PID çifti eşleştir<p>`_55E0`: HERHANGI bir medyayı PID=55E0 ile eşleştirme <p>`0751_`: VID=0751 ile herhangi bir medyayı eşleştirme|
+|**MatchType**|içinde `DescriptorIDList`kullanılan birden çok cihaz özelliği olduğunda, MatchType ilişkiyi tanımlar.|**MatchAll**: altındaki `DescriptorIdList` tüm öznitelikler **And** ilişkisi olur; örneğin, yönetici bağlı her USB için ve `InstancePathID`eklerse `DeviceID` sistem USB'nin her iki değeri de karşılayıp karşılamadığını denetler. <p> **MatchAny**: DescriptorIdList altındaki öznitelikler **Or** ilişkisi olacaktır; örneğin, yönetici bağlı her USB için ve `InstancePathID`koyarsa`DeviceID`, USB'de aynı **DeviceID** veya **InstanceID** değeri olduğu sürece sistem uygulamayı yapar.|
 
 ### <a name="access-control-policy"></a>Access Control İlkesi
 Erişim denetimi ilkesini oluşturmak için aşağıdaki özellikleri kullanabilirsiniz:
@@ -94,11 +94,11 @@ Erişim denetimi ilkesini oluşturmak için aşağıdaki özellikleri kullanabil
 | **IncludedIdList** | İlkenin uygulanacağı gruplar. Birden çok grup eklenirse, ilke tüm bu gruplardaki herhangi bir medyaya uygulanır.|Bu örnekte Grup Kimliği/GUID kullanılmalıdır. <p> Aşağıdaki örnekte GroupID kullanımı gösterilmektedir: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | **ExcludedIDList** | İlkenin uygulanacağı gruplar. | Bu örnekte Grup Kimliği/GUID kullanılmalıdır. |
 | **Giriş Kimliği** | Bir PolicyRule birden çok girdiye sahip olabilir; benzersiz GUID'ye sahip her giriş, Cihaz Denetimi'ne bir kısıtlama bildirir.| |
-| **Tür** | IncludedIDList içindeki çıkarılabilir depolama grupları için eylemi tanımlar. <p>Zorlama: İzin Ver veya Reddet <p>Denetim: AuditAllowed veya AuditDenied<p> | İzin ver<p>Inkar <p>AuditAllowed: Erişime izin verildiğinde bildirim ve olayı tanımlar <p>AuditDenied: Erişim reddedildiğinde bildirimi ve olayı tanımlar; **Deny** girdisiyle birlikte çalışması gerekir.<p> Aynı medya için çakışma türleri olduğunda, sistem ilkedeki ilki uygular. Çakışma türüne örnek olarak **İzin Ver** ve **Reddet** yer alır. |
-| **Sid** | Yerel kullanıcı Sid veya kullanıcı Sid grubu veya AD nesnesinin Sid'i, bu ilkenin belirli bir kullanıcı veya kullanıcı grubuna uygulanıp uygulanmayacağını tanımlar; bir girdi en fazla bir Sid'ye ve Sid içermeyen bir girdi ise ilkenin makineye uygulanması anlamına gelir. |  |
+| **Tür** | IncludedIDList içindeki çıkarılabilir depolama grupları için eylemi tanımlar. <p>Zorlama: İzin Ver veya Reddet <p>Denetim: AuditAllowed veya AuditDenied<p> | İzin ver<p>Reddetmek <p>AuditAllowed: Erişime izin verildiğinde bildirim ve olayı tanımlar <p>AuditDenied: Erişim reddedildiğinde bildirimi ve olayı tanımlar; **Deny** girdisiyle birlikte çalışması gerekir.<p> Aynı medya için çakışma türleri olduğunda, sistem ilkedeki ilki uygular. Çakışma türüne örnek olarak **İzin Ver** ve **Reddet** yer alır. |
+| **Sıd** | Yerel kullanıcı Sid veya kullanıcı Sid grubu veya AD nesnesinin Sid'i, bu ilkenin belirli bir kullanıcı veya kullanıcı grubuna uygulanıp uygulanmayacağını tanımlar; bir girdi en fazla bir Sid'ye ve Sid içermeyen bir girdi ise ilkenin makineye uygulanması anlamına gelir. |  |
 | **ComputerSid** | Yerel bilgisayar Sid veya bilgisayar Sid grubu veya AD nesnesinin Sid'si, bu ilkenin belirli bir makine veya makine grubuna uygulanıp uygulanmayacağını tanımlar; Bir girdi en fazla bir ComputerSid'e ve ComputerSid içermeyen bir girişe sahip olabilir, bu da ilkenin makineye uygulanması anlamına gelir. Belirli bir kullanıcıya ve belirli bir makineye bir Girdi uygulamak istiyorsanız, aynı Girdiye hem Sid hem de ComputerSid ekleyin. |  |
 | **Seçenekler** | Bildirimin görüntülenip görüntülenmeyeceğini tanımlar |**İzin Ver Türü seçildiğinde**: <p>0: hiçbir şey<p>4: Bu Giriş için **AuditAllowed** ve **AuditDenied'i** devre dışı bırakın. **Allow** gerçekleşse ve AuditAllowed ayarı yapılandırılmış olsa bile sistem olay göndermez. <p>8: Dosya bilgilerini yakalayın ve Yazma erişimi için kanıt olarak dosyanın bir kopyasını alın. <p>16: Yazma erişimi için dosya bilgilerini yakalayın. <p>**Tür Reddetme seçildiğinde**: <p>0: hiçbir şey<p>4: Bu Giriş için **AuditDenied'i** devre dışı bırakın. **Engelle** gerçekleşse ve AuditDenied ayarı yapılandırılmış olsa bile sistem bildirim göstermez. <p>****AuditAllowed** Türü seçildiğinde**: <p>0: hiçbir şey <p>1: hiçbir şey <p>2: olay gönderme<p> ****AuditDenied** Türü seçildiğinde**: <p>0: hiçbir şey <p>1: bildirimi göster <p>2: olay gönderme<p>3: bildirim gösterme ve olay gönderme |
-|Accessmask|Erişimi tanımlar. | **Disk düzeyinde erişim**: <p>1: Okuma <p>2: Yazma <p>4: Yürütme <p>**Dosya sistemi düzeyinde erişim**: <p>8: Dosya sistemi Okuma <p>16: Dosya sistemi Yazma <p>32: Dosya sistemi yürütme <p><p>İkili VEYA işlemi gerçekleştirerek birden çok erişiminiz olabilir; örneğin Okuma ve Yazma ve Yürütme için AccessMask değeri 7 olur; Okuma ve Yazma için AccessMask 3 olacaktır.|
+|AccessMask|Erişimi tanımlar. | **Disk düzeyinde erişim**: <p>1: Okuma <p>2: Yazma <p>4: Yürütme <p>**Dosya sistemi düzeyinde erişim**: <p>8: Dosya sistemi Okuma <p>16: Dosya sistemi Yazma <p>32: Dosya sistemi yürütme <p><p>İkili VEYA işlemi gerçekleştirerek birden çok erişiminiz olabilir; örneğin Okuma ve Yazma ve Yürütme için AccessMask değeri 7 olur; Okuma ve Yazma için AccessMask 3 olacaktır.|
 
 ## <a name="device-control-removable-storage-access-control-scenarios"></a>Cihaz Denetimi Çıkarılabilir Depolama Access Control Senaryoları
 
@@ -146,7 +146,7 @@ Erişim denetimi ilkesini oluşturmak için aşağıdaki özellikleri kullanabil
 
 Çıkarılabilir Depolama birimi Access Control kullanmaya başlamadan önce [Microsoft 365 aboneliğinizi](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) onaylamanız gerekir. Çıkarılabilir Depolama birimi Access Control erişmek ve kullanmak için Microsoft 365 E3 veya Microsoft 365 E5 sahip olmanız gerekir.
 
-### <a name="permission"></a>Izni
+### <a name="permission"></a>İzin
 
 Intune'da ilke dağıtımı için hesabın cihaz yapılandırma profillerini oluşturma, düzenleme, güncelleştirme veya silme izinleri olmalıdır. Bu izinlerle özel roller oluşturabilir veya yerleşik rollerden herhangi birini kullanabilirsiniz.
 
@@ -460,7 +460,7 @@ DeviceEvents
 
 GUID'yi çevrimiçi açık kaynak veya PowerShell aracılığıyla oluşturabilirsiniz - [PowerShell aracılığıyla GUID oluşturma](/powershell/module/microsoft.powershell.utility/new-guid)
 
-![Görüntü](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
+![resim](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
 
 ### <a name="what-are-the-removable-storage-media-and-policy-limitations"></a>Çıkarılabilir depolama ortamı ve ilke sınırlamaları nelerdir?
 

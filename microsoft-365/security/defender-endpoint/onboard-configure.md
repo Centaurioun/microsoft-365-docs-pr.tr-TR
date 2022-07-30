@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 309baa41f217cbac9a865317084f284b3d22961b
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: f52dd982c9a418af9184389e8e83e6077326ee80
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554235"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100019"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Cihazları ekleyin ve Uç Nokta için Microsoft Defender işlevlerini yapılandırın
 
@@ -41,6 +41,18 @@ Uç Nokta için Microsoft Defender dağıtmak iki adımlı bir işlemdir.
 - Hizmetin özelliklerini yapılandırma
 
 :::image type="content" source="images/deployment-steps.png" alt-text="Ekleme ve yapılandırma işlemi" lightbox="images/deployment-steps.png":::
+
+## <a name="role-based-access-control"></a>Rol tabanlı erişim denetimi
+
+Dizin izinlerine sahip kullanıcılar için ek denetim, denetim ve erişim gözden geçirmesi sağlamak üzere rollerinizi yönetmek üzere Privileged Identity Management kullanmanızı öneririz.
+
+Uç Nokta için Defender izinleri yönetmek için iki yolu destekler:
+
+- **Temel izin yönetimi**: İzinleri tam erişim veya salt okunur olarak ayarlar. Azure Active Directory'de (Azure AD) genel yönetici veya güvenlik yöneticisi rollerine sahip kullanıcılar tam erişime sahiptir. Güvenlik okuyucusu rolü salt okunur erişime sahiptir ve makineleri/cihaz envanterini görüntüleme erişimi vermez.
+
+- **Rol tabanlı erişim denetimi (RBAC)**: Rolleri tanımlayarak, rollere Azure AD kullanıcı grupları atayarak ve kullanıcı gruplarına cihaz gruplarına erişim vererek ayrıntılı izinleri ayarlar. Daha fazla bilgi için. Bkz. [Rol tabanlı erişim denetimini kullanarak portal erişimini yönetme](rbac.md).
+
+Yalnızca iş gerekçesi olan kullanıcıların Uç Nokta için Defender'a erişebildiğinden emin olmak için RBAC'yi kullanmanızı öneririz.
 
 ## <a name="onboard-devices-to-the-service"></a>Cihazları hizmete ekleme
 Desteklenen cihazlardan herhangi birini eklemek için Uç Nokta için Defender portalının ekleme bölümüne gitmeniz gerekir. Cihaza bağlı olarak, uygun adımlarla yönlendirilirsiniz ve cihaza uygun yönetim ve dağıtım aracı seçenekleri sağlanır. 
@@ -77,7 +89,7 @@ Cihazları ekleme, Uç Nokta için Microsoft Defender uç nokta algılama ve yan
 
 Cihazları ekledikten sonra hizmetin diğer özelliklerini yapılandırmanız gerekir. Aşağıdaki tabloda, ortamınız için en iyi korumayı elde etmek için yapılandırabileceğiniz özellikler listelemektedir.
 
-| Yeteneği | Açıklama |
+| Yetenek | Açıklama |
 |-|-|
 | [Tehdit & Güvenlik Açığı Yönetimini Yapılandırma (TVM)](tvm-prerequisites.md) | Tehdit & Güvenlik Açığı Yönetimi, Uç Nokta için Microsoft Defender bir bileşenidir ve hem güvenlik yöneticilerine hem de güvenlik operasyonları ekiplerine aşağıdakiler gibi benzersiz bir değer sağlar: <br><br> - Uç nokta güvenlik açıklarıyla ilişkili gerçek zamanlı uç nokta algılama ve yanıt (EDR) içgörüleri. <br><br> - Olay araştırmaları sırasında çok değerli cihaz güvenlik açığı bağlamı. <br><br> - Microsoft Intune ve Microsoft System Center Configuration Manager aracılığıyla yerleşik düzeltme işlemleri.  |
 | [Yeni nesil korumayı (NGP) yapılandırma](configure-microsoft-defender-antivirus-features.md) | Microsoft Defender Virüsten Koruma, masaüstü bilgisayarlar, taşınabilir bilgisayarlar ve sunucular için yeni nesil koruma sağlayan yerleşik bir kötü amaçlı yazılımdan koruma çözümüdür. Microsoft Defender Virüsten Koruma şunları içerir:<br> <br>-Yeni ve yeni tehditlerin neredeyse anında algılanması ve engellenmesi için bulut tabanlı koruma. Bulut tabanlı koruma, makine öğrenmesi ve Akıllı Güvenlik Grafı ile birlikte Microsoft Defender Virüsten Koruma'yı destekleyen yeni nesil teknolojilerin bir parçasıdır.<br> <br> - Gelişmiş dosya ve işlem davranışı izleme ve diğer buluşsal yöntemler kullanılarak her zaman açık tarama ("gerçek zamanlı koruma" olarak da bilinir).<br><br> - Makine öğrenmesi, insan ve otomatik büyük veri analizi ve derinlemesine tehdit direnci araştırmalarına dayalı ayrılmış koruma güncelleştirmeleri. |
@@ -90,7 +102,7 @@ Cihazları ekledikten sonra hizmetin diğer özelliklerini yapılandırmanız ge
 
 |İşletim Sistemi  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>  |<sup>Windows Server 2016[[1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
 |---------|---------|---------|---------|---------|---------|
-|**Önleme**    |         |         |         |         |         |
+|**Korunma**    |         |         |         |         |         |
 |Saldırı Yüzeyi Azaltma kuralları     |    E     |   E      |    E     |    E     |    E     |
 |Cihaz Denetimi     |     E    |    N     |    N     |    N     |    N     |  
 |Güvenlik duvarı     |      E   |    E     |     E    |    E    |    E   |
@@ -100,7 +112,7 @@ Cihazları ekledikten sonra hizmetin diğer özelliklerini yapılandırmanız ge
 |Web Koruması     |       E   |    E     |     E    |    E    |    E   |
 |||||||
 |**Algılama**     |         |         |         |||
-|Gelişmiş Avcılık     |      E   |    E     |     E    |    E    |    E   |
+|Gelişmiş avcılık     |      E   |    E     |     E    |    E    |    E   |
 |Özel dosya göstergeleri     |      E   |    E     |     E    |    E    |    E   |
 |Özel ağ göstergeleri     |      E   |    E     |     E    |    E    |    E   |
 |Pasif Mod & EDR Bloğu     |      E   |    E     |     E    |    E    |    E   |

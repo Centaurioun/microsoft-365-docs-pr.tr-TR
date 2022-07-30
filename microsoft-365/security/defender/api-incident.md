@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: bd8c98d533fd5186285a099b4991d527a6302274
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 45a6e14d6c3514a63869cc9d7229cda8dd511334
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059765"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100085"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender olayları API'si ve olaylar kaynak türü
 
@@ -65,18 +65,18 @@ Yöntem | Dönüş Türü | Açıklama
 
 ## <a name="common-properties"></a>Ortak özellikler
 
-Özellik | Tür | Açıklama
+Mülk | Tür | Açıklama
 -|-|-
-incidentId | Uzun | Olay benzersiz kimliği.
+incidentId | uzun | Olay benzersiz kimliği.
 redirectIncidentId | null atanabilir uzun | Geçerli Olayın birleştirildiği Olay Kimliği.
-incidentName | Dize | Olayın adı.
-createdTime | Datetimeoffset | Olayın oluşturulduğu tarih ve saat (UTC olarak).
-lastUpdateTime | Datetimeoffset | Olayın son güncelleştirildiği tarih ve saat (UTC olarak).
-Atanan | Dize | Olayın Sahibi.
-Önem | Enum | Olayın önem derecesi. Olası değerler şunlardır: ```UnSpecified```, ```Informational```, ```Low```, ```Medium```ve ```High```.
-Durum | Enum | Olayın geçerli durumunu belirtir. Olası değerler şunlardır: ```Active```, ```InProgress```, ```Resolved```ve ```Redirected```.
-Sınıflandırma | Enum | Olayın belirtimi. Olası değerler şunlardır: ```Unknown```, ```FalsePositive```, ```TruePositive```.
-Belirlenmesi | Enum | Olayın belirlenmesini belirtir. Olası değerler şunlardır: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, , ```UnwantedSoftware```. ```Other```
+incidentName | dizgi | Olayın adı.
+createdTime | DateTimeOffset | Olayın oluşturulduğu tarih ve saat (UTC olarak).
+lastUpdateTime | DateTimeOffset | Olayın son güncelleştirildiği tarih ve saat (UTC olarak).
+assignedTo | dizgi | Olayın Sahibi.
+şiddet | Sabit Listesi | Olayın önem derecesi. Olası değerler şunlardır: ```UnSpecified```, ```Informational```, ```Low```, ```Medium```ve ```High```.
+durum | Sabit Listesi | Olayın geçerli durumunu belirtir. Olası değerler şunlardır: ```Active```, ```InProgress```, ```Resolved```ve ```Redirected```.
+sınıflandırma | Sabit Listesi | Olayın belirtimi. Olası değerler şunlardır: ```Unknown```, ```FalsePositive```, ```TruePositive```.
+sebat | Sabit Listesi | Olayın belirlenmesini belirtir. Olası değerler şunlardır: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, , ```UnwantedSoftware```. ```Other```
 Etiketler | dize Listesi | Olay etiketlerinin listesi.
 Yorum | Olay açıklamalarının listesi | Olay Açıklaması nesnesi şunları içerir: açıklama dizesi, createdBy dizesi ve createTime tarih saati.
 Uyarı | Uyarı Listesi | İlgili uyarıların listesi. [Olayları listeleme API'leri belgelerindeki](api-list-incidents.md) örneklere bakın.

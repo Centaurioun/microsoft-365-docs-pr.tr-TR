@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: a77dcb557901f8a159e0c82a084dd02255193c72
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 4b47296ec6e445df20a0694e5cff7ed5b2216852
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66797961"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099469"
 ---
 # <a name="set-up-message-encryption"></a>İleti Şifrelemeyi Ayarlama
 
@@ -60,7 +60,7 @@ Yönergeler için bkz. [Koruma hizmetinin durumunu etkinleştirme veya onaylama]
 
 Bu, isteğe bağlı bir adımdır. Microsoft'un Azure Information Protection kök anahtarını yönetmesine izin vermek varsayılan ayardır ve çoğu kuruluş için önerilen en iyi yöntemdir. Böyle bir durum söz konusuysa, hiçbir şey yapmanız gerekmez.
 
-Uyumluluk gereksinimleri gibi kendi kök anahtarınızı oluşturmanızı ve yönetmenizi gerektirebilecek birçok neden vardır (kendi anahtarını getir (BYOK) olarak da bilinir). Bu durumda, Microsoft Purview İleti Şifrelemesi ayarlamadan önce gerekli adımları tamamlamanızı öneririz. Daha fazla bilgi için bkz. [Azure Information Protection kiracı anahtarınızı planlama ve uygulama](/information-protection/plan-design/plan-implement-tenant-key).
+Uyumluluk gereksinimleri gibi, "kendi anahtarını getir" (BYOK) olarak da bilinen kendi kök anahtarınızı oluşturmanızı ve yönetmenizi gerektirebilecek birçok neden vardır. Bu durumda, Microsoft Purview İleti Şifrelemesi ayarlamadan önce gerekli adımları tamamlamanızı öneririz. Daha fazla bilgi için bkz. [Azure Information Protection kiracı anahtarınızı planlama ve uygulama](/information-protection/plan-design/plan-implement-tenant-key).
 
 ## <a name="verify-microsoft-purview-message-encryption-configuration-in-exchange-online-powershell"></a>Exchange Online PowerShell'de Microsoft Purview İleti Şifrelemesi yapılandırmasını doğrulama
 
@@ -70,7 +70,7 @@ Microsoft 365 kiracınızın [Exchange Online PowerShell'de](/powershell/exchang
 
 2. Get-IRMConfiguration cmdlet'ini çalıştırın.
 
-     Kiracınızda Microsoft Purview İleti Şifrelemesi yapılandırıldığını gösteren AzureRMSLicensingEnabled parametresi için $True değerini görmeniz gerekir. Değilse, Microsoft Purview İleti Şifrelemesi etkinleştirmek için Set-IRMConfiguration kullanarak AzureRMSLicensingEnabled değerini $True olarak ayarlayın.
+     Kiracınızda Microsoft Purview İleti Şifrelemesi yapılandırıldığını gösteren AzureRMSLicensingEnabled parametresinin değerini `$True` görmeniz gerekir. Değilse, Microsoft Purview İleti Şifrelemesi etkinleştirmek üzere AzureRMSLicensingEnabled değerini olarak ayarlamak için `$True` Set-IRMConfiguration kullanın.
 
 3. Aşağıdaki söz dizimini kullanarak Test-IRMConfiguration cmdlet'ini çalıştırın:
 
@@ -106,10 +106,10 @@ Microsoft 365 kiracınızın [Exchange Online PowerShell'de](/powershell/exchang
 
    - Varsayılan şablon adları yukarıda görüntülenenlerden farklı olabilir. Daha fazla bilgi için bkz. [Azure Information Protection için şablonları yapılandırma ve yönetme](/azure/information-protection/configure-policy-templates).
 
-4. Test **, RMS şablonları alınamadı** hata iletisiyle başarısız olursa aşağıdaki komutları yürütün ve geçtiğini doğrulamak için Test-IRMConfiguration cmdlet'ini çalıştırın.
+4. Test **, RMS şablonları alınamadı** hata iletisiyle başarısız olursa aşağıdaki komutları yürütün ve geçtiğini doğrulamak için Test-IRMConfiguration cmdlet'ini çalıştırın. Cmdlet'ini çalıştırmak için [AIPService modülüne](/powershell/module/aipservice/?view=azureipps) bağlanın.
 
    ```powershell
-   $RMSConfig = Get-AadrmConfiguration
+   $RMSConfig = Get-AipServiceConfiguration
    $LicenseUri = $RMSConfig.LicensingIntranetDistributionPointUrl
    Set-IRMConfiguration -LicensingLocation $LicenseUri
    Set-IRMConfiguration -InternalLicensingEnabled $true

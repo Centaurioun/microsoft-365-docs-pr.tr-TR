@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e03de336dbbcdad5b9e18730936a507bf1d627bc
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 67d9ca5cbab765f1c195214e89be11f318eca7cd
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059842"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100011"
 ---
 # <a name="alert-resource-type"></a>Uyarı kaynak türü
 
@@ -61,11 +61,11 @@ ms.locfileid: "67059842"
 
 ****
 
-|Özellik|Tür|Açıklama|
+|Mülk|Tür|Açıklama|
 |---|---|---|
 |Kimliği|Dize|Uyarı Kimliği.|
-|Başlık|Dize|Uyarı başlığı.|
-|Açıklama|Dize|Uyarı açıklaması.|
+|başlık|Dize|Uyarı başlığı.|
+|tarif|Dize|Uyarı açıklaması.|
 |alertCreationTime|Null Atanabilir DateTimeOffset|Uyarının oluşturulduğu tarih ve saat (UTC olarak).|
 |lastEventTime|Null Atanabilir DateTimeOffset|Aynı cihazda uyarıyı tetikleyen olayın son oluşumu.|
 |firstEventTime|Null Atanabilir DateTimeOffset|Bu cihazda uyarıyı tetikleyen olayın ilk oluşumu.|
@@ -74,15 +74,15 @@ ms.locfileid: "67059842"
 |incidentId|Boş Değer Atanabilir Uzun|Uyarının [Olay](view-incidents-queue.md) Kimliği.|
 |investigationId|Boş Değer Atanabilir Uzun|Uyarı ile ilgili [Araştırma](automated-investigations.md) Kimliği.|
 |investigationState|Null Atanabilir Sabit Listesi|[Araştırmanın](automated-investigations.md) geçerli durumu. Olası değerler şunlardır: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
-|Atanan|Dize|Uyarının sahibi.|
+|assignedTo|Dize|Uyarının sahibi.|
 |rbacGroupName|Dize|RBAC cihaz grubu adı.|
 |mitreTechniques|Dize|Mitre Enterprise teknik kimliği.|
 |relatedUser|Dize|Belirli bir uyarıyla ilgili kullanıcının ayrıntıları.|
-|Önem|Enum|Uyarının önem derecesi. Olası değerler şunlardır: 'Belirtilmemiş', 'Bilgilendirici', 'Düşük', 'Orta' ve 'Yüksek'.|
-|Durum|Enum|Uyarının geçerli durumunu belirtir. Olası değerler şunlardır: 'Unknown', 'New', 'InProgress' ve 'Resolved'.|
-|Sınıflandırma|Null Atanabilir Sabit Listesi|Uyarının belirtimi. Olası değerler şunlardır: 'Unknown', 'FalsePositive', 'TruePositive'.|
-|Belirlenmesi|Null Atanabilir Sabit Listesi|Uyarının belirlenmesini belirtir. Olası değerler şunlardır: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'İstenmeyenSoftware', 'Diğer'.|
-|Kategori|Dize|Uyarı kategorisi.|
+|şiddet|Sabit Listesi|Uyarının önem derecesi. Olası değerler şunlardır: 'Belirtilmemiş', 'Bilgilendirici', 'Düşük', 'Orta' ve 'Yüksek'.|
+|durum|Sabit Listesi|Uyarının geçerli durumunu belirtir. Olası değerler şunlardır: 'Unknown', 'New', 'InProgress' ve 'Resolved'.|
+|sınıflandırma|Null Atanabilir Sabit Listesi|Uyarının belirtimi. Olası değerler şunlardır: 'Unknown', 'FalsePositive', 'TruePositive'.|
+|sebat|Null Atanabilir Sabit Listesi|Uyarının belirlenmesini belirtir. Olası değerler şunlardır: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'İstenmeyenSoftware', 'Diğer'.|
+|kategori|Dize|Uyarı kategorisi.|
 |detectionSource|Dize|Algılama kaynağı.|
 |threatFamilyName|Dize|Tehdit ailesi.|
 |threatName|Dize|Tehdit adı.|

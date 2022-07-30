@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e083a9b0edd4895a2349d6508a30528bd86db5b
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 46130f6534dd08895b317dda826a7f450a21ac45
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050754"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099933"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Microsoft 365 Defender'da Avcılık için Defender Uzmanları raporunu anlama
 
@@ -78,7 +78,7 @@ MITRE ATT&CK taktikleri, her saldırı aşamasında ulaşmaya çalıştıkları 
 2.  Kaynak Geliştirme
 3.  İlk erişim
 4.  Yürütme   
-3.  Kalıcılık 
+3.  Devamlılık 
 4.  Ayrıcalık yükseltme    
 5.  Savunma kaçamak 
 6.  Kimlik bilgisi erişimi
@@ -98,7 +98,7 @@ Tehdit kategorileri, ortamınıza yönelik bu tehditleri önlemek veya azaltmak 
 Kullanılabilir çeşitli tehdit kategorileri arasında, MITRE ATT&CK çerçevesinin kapsamına alınmadığından aşağıdaki kategoriler dikkatle seçilir:
 
 - Fidye Yazılımı
-- Malware
+- Kötü amaçlı yazılım
 - Silahlaştırma
 - Istismar
 - Teslim

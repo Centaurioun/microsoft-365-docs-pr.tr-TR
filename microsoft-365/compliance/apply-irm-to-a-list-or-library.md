@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: Listelerden veya kitaplıklardan indirilen dosyaları denetlemeye ve korumaya yardımcı olmak için Bilgi Hakları Yönetimi'ni (IRM) kullanabilirsiniz.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf677fc81a20b7e86d9b66505dd8968c0a31272b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 08514bd1637a9619274bc45951af2dc2762881f5
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633135"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099909"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Bir liste veya kitaplığa Bilgi Hakları Yönetimi (IRM) uygulama
 
@@ -73,7 +73,7 @@ Listelerden veya kitaplıklardan indirilen dosyaları denetlemeye ve korumaya ya
 |İçeriğe erişimi belirli bir süreyle kısıtlamak istiyorsanız bu seçeneği belirleyin. Bu seçeneği belirtirseniz, kişilerin içeriğe erişim izni verme lisansları belirtilen gün sayısından sonra sona erer ve kişilerin kimlik bilgilerini doğrulamak ve yeni bir kopya indirmek için sunucuya geri dönmeleri gerekir.|**İndirmeden sonra, belge erişim haklarının süresi bu kadar gün (1-365) sonra dolacak** onay kutusunu seçin ve belgenin görüntülenebilen gün sayısını belirtin.|
 | Kişilerin IRM'yi desteklemeyen belgeleri bu listeye veya kitaplığa yüklemesini engelleyin. Bu seçeneği seçerseniz, kişiler aşağıdaki dosya türlerinden hiçbirini karşıya yükleyemez: Ön uç web sunucularının tümüne karşılık gelen IRM koruyucuları yüklü olmayan dosya türleri. SharePoint Server 2010'un şifresini çözemediği dosya türleri. IRM korumalı dosya türleri başka bir programda.|**Kullanıcıların IRM'yi desteklemeyen belgeleri karşıya yüklemesine izin verme** onay kutusunu seçin.|
 |Belirli bir tarihte bu listeden veya kitaplıktan kısıtlanmış izinleri kaldırın.|**Kitaplık erişimini kısıtlamayı durdur** onay kutusunu ve ardından istediğiniz tarihi seçin.|
-|Belgeyi açmak üzere lisanslanan program için kimlik bilgilerinin önbelleğe alınma aralığını denetleyin.|**Kullanıcılar bu aralığı (gün) kullanarak kimlik bilgilerini doğrulamalıdır** onay kutusunu seçin, ardından kimlik bilgilerini gün sayısı olarak önbelleğe alma aralığını girin.|
+|Belgeyi açmak için lisanslanan program için Azure RMS kimlik bilgilerinin önbelleğe alınma aralığını denetleyin.|**Kullanıcılar bu aralığı (gün) kullanarak kimlik bilgilerini doğrulamalıdır** onay kutusunu seçin, ardından kimlik bilgilerini gün sayısı olarak önbelleğe alma aralığını girin.|
 |Kullanıcıların aynı grubun üyeleriyle paylaşabilmesi için grup korumasına izin verin.|**Grup korumasına izin ver'i** seçin ve paylaşım için grubun adını girin.|
 
 8. İstediğiniz seçenekleri belirlemeyi tamamladıktan sonra **Tamam'ı** seçin.
