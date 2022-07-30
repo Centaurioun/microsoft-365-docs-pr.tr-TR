@@ -477,6 +477,8 @@
                   href: ../intelligence/macro-malware.md
                 - name: Kimlik Avı
                   href: ../intelligence/phishing.md
+                - name: Kimlik avı eğilimleri ve teknikleri
+                  href: ../intelligence/phishing-trends.md
                 - name: Fidye Yazılımı
                   href: /security/compass/human-operated-ransomware
                 - name: Rootkits
@@ -487,6 +489,8 @@
                   href: ../intelligence/support-scams.md
                 - name: Trojan
                   href: ../intelligence/trojans-malware.md
+                - name: Yönetici bloğunun neden olduğu MSI portal hatalarını giderme
+                  href: ../intelligence/portal-submission-troubleshooting.md
                 - name: İstenmeyen yazılım
                   href: ../intelligence/unwanted-software.md
                 - name: Solucanlar

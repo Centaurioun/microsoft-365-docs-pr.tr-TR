@@ -278,6 +278,7 @@
 ##### [Exploit Protection'i etkinleştirin](enable-exploit-protection.md)
 ##### [Exploit Protection'i özelleştirin](customize-exploit-protection.md)
 ##### [Exploit Protection yapılandırmalarını içeri aktarma, dışarı aktarma ve dağıtma](import-export-exploit-protection-emet-xml.md)
+##### [Açıklardan yararlanma koruması risk azaltma sorunlarını giderme](troubleshoot-exploit-protection-mitigations.md)
 ##### [Exploit Protection başvurusu](exploit-protection-reference.md)
 #### [Ağ koruması]()
 ##### [Ağınızı koruyun](network-protection.md)
