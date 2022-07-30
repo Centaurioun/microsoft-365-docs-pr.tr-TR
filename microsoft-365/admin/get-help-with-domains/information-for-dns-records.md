@@ -1,5 +1,5 @@
 ---
-title: DNS kayıtlarını oluşturmak için ihtiyacınız olan bilgileri toplama
+title: DNS kayıtları oluşturmak için ihtiyacınız olan bilgileri toplayın
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -23,72 +24,72 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: Etki alanınızı Microsoft 365 aboneliğinize bağlamak için DNS kayıtları oluşturmak için ihtiyacınız olan değerleri/Microsoft 365 toplayın.
-ms.openlocfilehash: 672d57babb1b26e42b3fd24da8c9dc841223e41f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Etki alanınızı Microsoft 365 aboneliğinize bağlamak için DNS kayıtları oluşturmak için ihtiyacınız olan değerleri/bilgileri toplayın.
+ms.openlocfilehash: 653161734a8b0a2f188c8f8a54909ed86bf3fd5f
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316807"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084026"
 ---
-# <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS kayıtlarını oluşturmak için ihtiyacınız olan bilgileri toplama
+# <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS kayıtları oluşturmak için ihtiyacınız olan bilgileri toplayın
 
  Aradığınızı bulamazsanız, **[Etki Alanları SSS sayfasını inceleyin](../setup/domains-faq.yml)**. 
   
-### <a name="step-1-find-the-txt-record-value-and-verify"></a>1. Adım: TXT kaydı değerini bulma ve doğrulama
+### <a name="step-1-find-the-txt-record-value-and-verify"></a>1. Adım: TXT kayıt değerini bulma ve doğrulama
 
 ::: moniker range="o365-worldwide"
 
-1. Etki Microsoft 365 yönetim merkezi, Etki Alanları **Ayarlar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">gidin.</a>
+1. Microsoft 365 yönetim merkezi **Ayarlar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Etki Alanları</a> sayfasına gidin.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Yönetim merkezinde Etki Alanları'Ayarlar  > gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a>
+1. Yönetim merkezinde **Ayarlar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Etki Alanları</a> sayfasına gidin.
 
 ::: moniker-end
     
-2. Etki Alanları **sayfasında** etki alanınızı seçin ve sonra da Kurulumu **başlat'ı seçin**. Eklemeniz gereken değeri görmek için etki alanları kurulum sihirbazına dönersiniz.
+2. **Etki alanları** sayfasında etki alanınızı seçin ve ardından **Kurulumu başlat'ı** seçin. Eklemeniz gereken değeri görmek için etki alanları kurulum sihirbazına dönersiniz.
     
-3. Etki Alanı **Doğrulama sayfasında** , etki **alanının DNS kayıtlarına TXT kaydı ekle'yi seçin ve sonra da** Devam'ı **seçin**.
+3. **Etki Alanı Doğrulama** sayfasında Etki **alanının DNS kayıtlarına TXT kaydı ekle'yi** ve ardından **Devam'ı** seçin.
     
-4. Gösterilen **TXT değerini** kopyalayın. Şöyle görünüyor: **MS=msXXXXXXXX**. 
+4. Gösterilen **TXT değerini** kopyalayın. Şuna benzer: **MS=msXXXXXXXX**. 
     
-5. Etki [alanınıza bağlanmak için DNS kayıtları ekleme'ye](create-dns-records-at-any-dns-hosting-provider.md) gidin ve DNS barındırma sitenizin web sitesinde kayıtları ekleme adımlarını izleyin.
+5. [Etki alanınızı bağlamak için DNS kayıtları ekleme'ye](create-dns-records-at-any-dns-hosting-provider.md) gidin ve DNS barındırma sağlayıcınızın web sitesinde kayıt ekleme adımlarını izleyin.
     
-6. DNS ana ekleyebilirsiniz ve sonra etki alanını yeniden DOĞRULA'da TXT kaydı (veya MX kaydı) oluşturma adımlarını Microsoft 365.
+6. DNS ana bilgisayarınızda TXT kaydı (veya MX kaydı) oluşturma adımlarını izleyin ve ardından etki alanını Microsoft 365'te yeniden doğrulayın.
 
-7. Etki alanı doğrulandıktan sonra DNS ana ekleyebilirsiniz TXT kaydını (veya MX kaydını) Microsoft 365.
+7. Etki alanı Microsoft 365'te doğrulandıktan sonra TXT kaydını (veya MX kaydını) DNS ana bilgisayarınızdan kaldırın.
     
-### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>2. Adım: E-posta ve daha fazlası için MX kaydı değerini bulma
+### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>2. Adım: E-posta ve daha fazlası için MX kayıt değerini bulma
 
 ::: moniker range="o365-worldwide"
 
-1. Etki Microsoft 365 yönetim merkezi, Etki Alanları **Ayarlar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">gidin.</a>
+1. Microsoft 365 yönetim merkezi **Ayarlar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Etki Alanları</a> sayfasına gidin.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Yönetim merkezinde Etki Alanları'Ayarlar  > gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a>
+1. Yönetim merkezinde **Ayarlar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Etki Alanları</a> sayfasına gidin.
 
 ::: moniker-end
     
 2. **Etki Alanları** sayfasında etki alanınızı seçin.
     
-3.  **DNS'yi Yönet'i** seçin, **Diğer SeçeneklerKendi** >  **DNS'nizi** ekleyin ve eklemek istediğiniz DNS kayıtlarını görmek için Devam'ı seçin.
+3. **DNS'yi Yönet'i** seçin, **Diğer Seçenekler** > **Kendi DNS'nizi ekleyin'i** seçin ve eklenecek DNS kayıtlarını görmek için **Devam'ı** seçin.
     
     DNS barındırma sağlayıcınızda değişiklikleri yaparken bu bilgilerin kullanılabilir durumda olmasını istersiniz, çünkü böylelikle değerleri kopyalayıp yapıştırabilirsiniz.
     
     Sayfada listelenen DNS kayıtları grubu **Etki alanı amacı**'nın altında listelenen seçimlerinize bağlıdır.
     
-4. Etki [alanınıza bağlanmak için DNS kayıtları ekleme'ye](create-dns-records-at-any-dns-hosting-provider.md) gidin ve DNS barındırma sitenizin web sitesinde kayıtları ekleme adımlarını izleyin.
+4. [Etki alanınızı bağlamak için DNS kayıtları ekleme'ye](create-dns-records-at-any-dns-hosting-provider.md) gidin ve DNS barındırma sağlayıcınızın web sitesinde kayıt ekleme adımlarını izleyin.
 
 5. DNS ana bilgisayarınızda kayıtları oluşturma adımlarını izleyin.
 
 ## <a name="related-content"></a>İlgili içerik
 
 [Etki Alanları SSS](../setup/domains-faq.yml) (makale)\
-[Etki alanınızı veya DNS kayıtlarınızı ekledikten sonra sorunları bulma](find-and-fix-issues.md) ve düzeltme (makale)\
-[Etki alanlarını yönetme](/admin) (bağlantı sayfası)
+[Kendi etki alanınızı veya DNS kayıtlarınızı ekledikten sonra sorunları bulma ve düzeltme](find-and-fix-issues.md) (makale)\
+[Etki alanlarını yönetme](/admin) (sayfa bağlantısı)

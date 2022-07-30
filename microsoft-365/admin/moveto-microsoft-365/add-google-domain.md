@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Etki alanınızı Google Workspace'ten Microsoft 365 İş'e taşımayı öğrenin.
-ms.openlocfilehash: 06129811ea1d97b0ffb770843c58373427228559
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 896de05a70d67ce6ad6e5eadcdb4f0e0bfa95a58
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601146"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086813"
 ---
 # <a name="add-your-google-workspace-domain-to-microsoft-365"></a>Google Workspace etki alanınızı Microsoft 365'e ekleme
 

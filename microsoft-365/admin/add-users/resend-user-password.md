@@ -1,5 +1,5 @@
 ---
-title: Kullanıcının parolasını yeniden gönderme - Yönetici Yardımı
+title: Kullanıcının parolasını yeniden gönderme - Yardım Yönetici
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,21 +13,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- VSBFY23
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: "Yeni parolasıyla özgün e-postayı almadıysa kullanıcının parolasını sıfırlayarak bildirim e-postasını Microsoft 365'da yeni bir kullanıcıya yeniden gönderin. "
-ms.openlocfilehash: b6b8aab70cb48bb288485d52efd3a958c4df0888
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+description: "Yeni parolasıyla özgün e-postayı almadıysa kullanıcının parolasını sıfırlayarak microsoft 365'te yeni bir kullanıcıya bildirim e-postasını yeniden gönderin. "
+ms.openlocfilehash: a735f02000fade93f0d2824352f48abb01a27f61
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636162"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084707"
 ---
-# <a name="resend-a-microsoft-365-users-password---admin-help"></a>Microsoft 365 kullanıcı parolasını yeniden gönderme - Yönetici yardımı
+# <a name="resend-a-microsoft-365-users-password---admin-help"></a>Microsoft 365 kullanıcı parolasını yeniden gönderme - yardım Yönetici
 
 Bu makalede, bildirim e-postasının Office 365'da yeni bir kullanıcıya nasıl yeniden gönderilmesi açıklanır. Bu durum, yeni bir kullanıcı oluşturduğunuzda ve yeni parolalarını içeren bir e-posta almadığında oluşabilir. Bunu yapmak için kullanıcının parolasını sıfırlarsınız.
 

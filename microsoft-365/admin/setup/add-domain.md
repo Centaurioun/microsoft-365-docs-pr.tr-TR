@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - adminvideo
 - TopSMBIssues
 - SaRA
@@ -29,12 +30,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: DNS ana bilgisayarınızda bir DNS kaydı ekleyerek etki alanınızı Microsoft 365 yönetim merkezi Microsoft 365'e eklemek için kurulum sihirbazını kullanın.
-ms.openlocfilehash: be72f10727a5d4ed168740d80eb04078584137d9
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 13699b4a565c0762baa6f383330ed2e87517ac6d
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602910"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087363"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365'e etki alanı ekleme
 
@@ -137,7 +138,7 @@ Sihirbazda yalnızca etki alanının sahibi olduğunuzu onaylayacak ve ardından
 - [1&amp;1 IONOS](https://www.1and1.com/)
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
-- [Godaddy](https://www.godaddy.com/)
+- [GoDaddy](https://www.godaddy.com/)
 - [WordPress.com](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)

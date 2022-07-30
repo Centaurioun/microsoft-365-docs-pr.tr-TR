@@ -1,5 +1,5 @@
 ---
-title: Exchange Online'da dağıtım listelerini Microsoft 365 Gruplarına yükseltme
+title: Dağıtım listelerini Exchange Online'de Microsoft 365 Grupları yükseltme
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,32 +21,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: Exchange Online'da bir veya birden çok dağıtım listesini Microsoft 365 Gruplarına yükseltmeyi ve aynı anda çeşitli dağıtım listelerini yükseltmek için PowerShell'i kullanmayı öğrenin.
-ms.openlocfilehash: 6f27c4a7df345a25f4b5ca7d2a9f2979a97e7c6a
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+description: Exchange Online'da bir veya birden çok dağıtım listesini Microsoft 365 Grupları yükseltmeyi ve aynı anda çeşitli dağıtım listelerini yükseltmek için PowerShell'i kullanmayı öğrenin.
+ms.openlocfilehash: e1ea8b16f36eee9cfde8eb968be0f1ed388913ab
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922185"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085235"
 ---
-# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-exchange-online"></a>Exchange Online'da dağıtım listelerini Microsoft 365 Gruplarına yükseltme
+# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-exchange-online"></a>Dağıtım listelerini Exchange Online'de Microsoft 365 Grupları yükseltme
 
 Dağıtım listesini Microsoft 365 Grubuna yükseltmek, kuruluşunuzdaki grupların özelliklerini ve özelliklerini geliştirmenin harika bir yoludur. Daha fazla bilgi için bkz. [Dağıtım listelerinizi neden Outlook'ta gruplara yükseltmeniz gerekir](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)?
 
-Dağıtım listelerini birer birer veya aynı anda birkaç tane yükseltebilirsiniz. Exchange yönetim merkezini (EAC) veya Exchange Online PowerShell'i kullanabilirsiniz.
+Dağıtım listelerini birer birer veya aynı anda birkaç tane yükseltebilirsiniz. Exchange yönetim merkezini (EAC) veya PowerShell'i Exchange Online kullanabilirsiniz.
 
-## <a name="upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups"></a>Bir veya birden çok dağıtım listesi grubunu Microsoft 365 Gruplarına yükseltme
+## <a name="upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups"></a>Bir veya birden çok dağıtım listesi grubunu Microsoft 365 Grupları yükseltme
 
-Dağıtım listesini yükseltmek için genel yönetici veya Exchange yöneticisi olmanız gerekir. Microsoft 365 Grupları'na yükseltmek için dağıtım listesinin atanmış bir sahibi ve bu sahibin bir posta kutusu olması gerekir.
+Dağıtım listesini yükseltmek için genel yönetici veya Exchange yöneticisi olmanız gerekir. Microsoft 365 Grupları'e yükseltmek için dağıtım listesinin atanmış bir sahibi ve bu sahibin bir posta kutusu olması gerekir.
 
-### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Outlook'ta bir veya birden çok dağıtım listesi grubunu Microsoft 365 Gruplarına yükseltmek için Klasik EAC'yi kullanma
+### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>Outlook'ta bir veya birden çok dağıtım listesi grubunu Microsoft 365 Grupları yükseltmek için Klasik EAC'yi kullanma
 
 > [!NOTE]
 > Bu bölümdeki yordamlar yeni EAC'de kullanılamaz.
 
 1. Exchange yönetim merkezine > **Alıcı Grupları'na** \> gidin.<a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a>
 
-   Microsoft 365 Gruplarına yükseltilmeye uygun dağıtım listeleriniz ( **dağıtım grupları** olarak da adlandırılır) olduğunu belirten bir bildirim görürsünüz.
+   Microsoft 365 Grupları yükseltilmeye uygun dağıtım listeleriniz (**dağıtım grupları** olarak da adlandırılır) olduğunu belirten bir bildirim görürsünüz.
    
    ![Başlarken düğmesini seçin.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
@@ -82,9 +82,9 @@ Bir veya daha fazla **uygun** dağıtım listesi yükseltilemiyorsa aşağıdaki
 
 2. Betik işe yaramazsa bir [Destek bileti](../../business-video/get-help-support.md) açın. Sorunun Gruplar Mühendisliği ekibine yükseltilmesi gerekir.
 
-## <a name="how-to-use-exchange-online-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>Aynı anda çeşitli dağıtım listelerini yükseltmek için Exchange Online PowerShell'i kullanma
+## <a name="how-to-use-exchange-online-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>Exchange Online PowerShell kullanarak aynı anda çeşitli dağıtım listelerini yükseltme
 
-Exchange Online PowerShell'e bağlanmak için bkz. [Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
+Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ### <a name="upgrade-a-single-distribution-list"></a>Tek bir dağıtım listesini yükseltme
 
@@ -113,7 +113,7 @@ Aynı anda birden çok dağıtım listesini yükseltmek için aşağıdaki söz 
 Upgrade-DistributionGroup -DLIdentities <EmailAddress1>,<EmailAddress2>,...
 ```
 
-Bu örnek, belirtilen dağıtım listelerini Microsoft 365 Gruplarına yükseltmektedir.
+Bu örnek, belirtilen dağıtım listelerini Microsoft 365 Grupları yükseltmektedir.
 
 ```powershell
 Upgrade-DistributionGroup -DLIdentities marketing@contoso.com,finanace@contoso.com,hr@contoso.com
@@ -123,7 +123,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz [. Upgrade-Distributio
 
 ### <a name="upgrade-all-eligible-distribution-lists"></a>Tüm uygun dağıtım listelerini yükseltme
 
-Tüm uygun dağıtım listelerini Microsoft 365 Gruplarına yükseltmek için aşağıdaki yöntemlerden birini kullanın:
+Tüm uygun dağıtım listelerini Microsoft 365 Grupları yükseltmek için aşağıdaki yöntemlerden birini kullanın:
 
 - Tüm uygun dağıtım listelerini yükseltin:
 
@@ -139,13 +139,13 @@ Tüm uygun dağıtım listelerini Microsoft 365 Gruplarına yükseltmek için a�
    $All | Foreach-Object {Upgrade-DistributionGroup -DLIdentities $_.PrimarySMTPAddress}
    ```
 
-## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Outlook'ta dağıtım listelerini Microsoft 365 Gruplarına yükseltme hakkında SSS
+## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Outlook'ta dağıtım listelerini Microsoft 365 Grupları yükseltme hakkında SSS
 
 ### <a name="which-distribution-lists-cant-be-upgraded"></a>Hangi dağıtım listeleri yükseltilemiyor?
 
 Yalnızca bulut tarafından yönetilen, basit, iç içe olmayan dağıtım listelerini yükseltebilirsiniz. Aşağıdaki tabloda **yükseltilemeyen** dağıtım listeleri listelenmiştir.
 
-|Özellik|Uygun?|
+|Mülk|Uygun?|
 |---|:---:|
 |Şirket içi yönetilen dağıtım listesi.|Hayır|
 |İç içe dağıtım listeleri. Dağıtım listesi alt gruplara sahiptir veya başka bir grubun üyesidir.|Hayır|
@@ -196,7 +196,7 @@ Hayır. Karşılama iletilerini etkinleştirme ayarı varsayılan olarak false o
 
 Uygun dağıtım listelerinin yükseltilememe durumları vardır. Örneğin:
 
-- Yönetici bir **Grup E-posta Adresi İlkesi** uyguladı ve dağıtım listesi ilkenin gereksinimlerini karşılamıyor.
+- Yönetici bir **Grup Email Adres İlkesi** uygulamıştır ve dağıtım listesi ilkenin gereksinimlerini karşılamaz.
 
 - Dağıtım listesinde **MemberJoinRestriction** veya **MemberDepartRestriction** **değeri Kapalı** olarak ayarlanmıştır.
 
@@ -219,5 +219,5 @@ Yükseltme yalnızca çağrı sunucuya gönderildiğinde gerçekleşir. Yükselt
 ## <a name="related-content"></a>İlgili içerik
 
 [Grupları karşılaştırma](../create-groups/compare-groups.md) (makale)\
-[Microsoft 365 Gruplarını kullanıcılarınıza açıklama](../create-groups/explain-groups-knowledge-worker.md) (makale)\
+[Kullanıcılarınıza Microsoft 365 Grupları açıklama](../create-groups/explain-groups-knowledge-worker.md) (makale)\
 [Yönetim merkezini kullanarak Microsoft 365 gruplarına üye ekleme veya gruptan üye kaldırma](../create-groups/add-or-remove-members-from-groups.md)

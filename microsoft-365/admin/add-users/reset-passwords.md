@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - MSStore_Link
 - TRN_M365B
@@ -30,12 +31,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: İş için Microsoft 365 aboneliğiniz olduğunda kullanıcıların parolalarını sıfırlamak için Microsoft 365 yönetici hesabınızla oturum açın.
-ms.openlocfilehash: c7d3d70e2c286fbf35c4d2ae2e3eb8b812fd7e31
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 39dc2dfdc4a50e8e55ef919a438895c4cefd0ed7
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601684"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084663"
 ---
 # <a name="reset-passwords-in-microsoft-365-for-business"></a>İş için Microsoft 365'te parolaları sıfırlama
 

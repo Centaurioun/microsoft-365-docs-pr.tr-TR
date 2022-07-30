@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - adminvideo
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: İş için Microsoft 365'e geçiş yapma gereksinimleri ve dikkat edilmesi gerekenler hakkında bilgi edinin.
-ms.openlocfilehash: 356d4cc1f696c871badcdceeb392c74b510cb49c
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 384d0573237104609937ad7627de1784a21a6158
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601168"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086483"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>İş için Microsoft 365 kurulumunuzu planlama
 

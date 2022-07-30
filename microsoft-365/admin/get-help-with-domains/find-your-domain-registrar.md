@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- VSBFY23
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: InterNIC aramasını kullanarak etki alanı kayıt şirketinizi ve DNS barındırma sağlayıcınızı bulmayı öğrenin.
-ms.openlocfilehash: c7802067bc3d8397d9f7b7ddf0f6cda4dd57c38b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2bfb4fc831d23751ab558dd833c49f84cb17c4c5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316877"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086418"
 ---
 # <a name="find-your-domain-registrar"></a>Etki alanı kayıt şirketinizi bulma
 
@@ -39,7 +41,7 @@ ms.locfileid: "63316877"
 > [!NOTE]
 > Yalnızca *.COM*, *.NET*, and *.EDU* ile biten etki alanları bu araçla kullanılabilir.
 
-1. [InterNIC arama sayfasında](https://go.microsoft.com/fwlink/p/?LinkId=402770), **Whois Search** kutusuna etki alanınızı yazın. Örneğin,  *contoso.com.*
+1. [InterNIC arama sayfası](https://go.microsoft.com/fwlink/p/?LinkId=402770)’nda, **Whois arama** kutusuna, etki alanınızı yazın. Örneğin,  *contoso.com.*
 
 2. **Etki Alanı** seçimini yapın ve sonra **Gönder**'i tıklatın.
 

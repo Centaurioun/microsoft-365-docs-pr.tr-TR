@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,38 +23,38 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: Grup oluşturma ve silmeyi Microsoft 365, grup üyelerini ekp kaldırmayı ve grubun çalışma görünümünü özelleştirmeyi öğrenin.
-ms.openlocfilehash: 1e7100ead1d149edbef710c1ea183776170c261a
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+description: Microsoft 365 gruplarını oluşturmayı ve silmeyi, grup üyelerini ekleyip kaldırmayı ve grubun nasıl çalıştığını özelleştirmeyi öğrenin.
+ms.openlocfilehash: c5faae3eb4234cfbc883a34f19f12e2d85b403bb
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "63014081"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084311"
 ---
-# <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Grup içinde grup Microsoft 365 yönetim merkezi
+# <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi grup oluşturma
   
-Kullanıcılar Microsoft 365 veya diğer Outlook bir grup oluştursa da, yönetici olarak grupları oluşturmanız veya silmeniz, üye ekleme veya kaldırmanız ve çalışmalarını özelleştirmeniz gerekir. Bunun <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 yönetim merkezi</a> en iyi yer burasıdır. 
+Kullanıcılar Outlook'tan veya diğer uygulamalardan bir Microsoft 365 grubu oluşturabilirken, yönetici olarak grupları oluşturmanız veya silmeniz, üye eklemeniz veya kaldırmanız ve çalışma şeklini özelleştirmeniz gerekebilir. <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">bunu yapmak için Microsoft 365 yönetim merkezi</a> yerdir. 
 
 > [!TIP]
-> Microsoft 365 bağlı Yammer grupları Yammer içinde oluşturulsa da, aynı diğer Microsoft 365 yönetim merkezi grupları gibi Microsoft 365 yönetilebilir. Daha fazla bilgi edinmek için [gruplara Yammer ve Microsoft 365 bakın](/yammer/manage-yammer-groups/yammer-and-office-365-groups). 
+> Microsoft 365 bağlantılı Yammer grupları Yammer'da oluşturulmalıdır, ancak diğer Microsoft 365 grupları gibi Microsoft 365 yönetim merkezi yönetilebilir. Daha fazla bilgi için bkz. [Yammer ve Microsoft 365 grupları](/yammer/manage-yammer-groups/yammer-and-office-365-groups). 
 
-## <a name="create-a-microsoft-365-group"></a>Grup Microsoft 365 oluşturma
+## <a name="create-a-microsoft-365-group"></a>Microsoft 365 grubu oluşturma
 
-1. Yönetim merkezinde Gruplar'ı **genişletin ve** Gruplar'a <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**tıklayın**</a>.
+1. Yönetim merkezinde **Gruplar'ı** genişletin ve ardından <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Gruplar'a**</a> tıklayın.
 
-2. Grup **ekle'yi seçin**.
+2. **Grup ekle'yi** seçin.
   
-3. Grup **türü seçin sayfasında, Grup** **türü'Microsoft 365** ve sonra da Sonraki'yi **seçin**.
+3. **Grup türü seçin** sayfasında **Microsoft 365'i** ve **ardından İleri'yi** seçin.
 
-4. Temel **Bilgiler sayfasında** , grup için bir ad ve isteğe bağlı olarak bir açıklama yazın. **İleri**'yi seçin.
+4. **Temel Bilgiler** sayfasında, grup için bir ad ve isteğe bağlı olarak bir açıklama yazın. **İleri**'yi seçin.
 
-5.  Sahipler  sayfasında, grubu yönetmek için belirlenen bir veya birden çok kişinin adını seçin. Grup sahibi olan herkes Grup gelen kutusundaki e-postaları silebilir. Diğer üyeler Grup gelen kutusundaki e-postaları silemez. **İleri**'yi seçin.
+5.  **Sahipler** sayfasında, grubu yönetmek üzere atanacak bir veya daha fazla kişinin adını seçin. Grup sahibi olan herkes Grup gelen kutusundaki e-postaları silebilir. Diğer üyeler Grup gelen kutusundaki e-postaları silemez. **İleri**'yi seçin.
 
-6.  Üyeler **sayfasında** , grubun üyesi olarak belirlenecek bir veya birden çok kişinin adını seçin. **İleri**'yi seçin.
+6.  **Üyeler** sayfasında, gruba üye olarak atanacak bir veya daha fazla kişinin adını seçin. **İleri**'yi seçin.
 
-7. Yeni **Ayarlar**, grup için benzersiz bir e-posta adresi yazın, gizlilik seçeneğini belirtin ve E-posta eklemek isteyip Microsoft Teams ardından Sonraki'yi **seçin**.
+7. **Ayarlar** sayfasında grup için benzersiz bir e-posta adresi yazın, bir gizlilik seçeneği belirleyin ve Microsoft Teams'i eklemek isteyip istemediğinizi belirleyin ve **ardından İleri'yi** seçin.
     
-8. Ayarlarınızı gözden geçirdikten ve değişiklikler yaparak Grup **oluştur'a tıklayın**.
+8. Ayarlarınızı gözden geçirdikten ve değişiklik yaptıktan sonra **Grup oluştur'u** seçin.
 
 9. **Kapat**'ı seçin.
     
@@ -62,34 +62,34 @@ Kullanıcılar Microsoft 365 veya diğer Outlook bir grup oluştursa da, yöneti
 
 Grup oluşturulduktan sonra üye ekleyebilir ve ek ayarları yapılandırabilirsiniz.
 
-Kullanıcılar kendi [kendilerini ekleyebilir veya onay](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d) talep edilebilir ya da onları şimdi eklersiniz.
+Kullanıcılar [kendilerini ekleyebilir veya onay isteyebilir](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d) ya da bunları şimdi ekleyebilirsiniz.
 
-1. Yönetim merkezinde sayfayı yenileyin, böylece yeni grubunuz görünür ve ardından üye eklemek istediğiniz grubun adını seçin.
+1. Yönetim merkezinde sayfayı yeni grubunuzun görünmesi için yenileyin ve üye eklemek istediğiniz grubun adını seçin.
     
-2. Üyeler sekmesinde **,** Tüm üyeleri görüntüle **ve yönet'i seçin**.
+2. **Üyeler** sekmesinde **Tümünü görüntüle ve üyeleri yönet'i** seçin.
 
-3. Üye **ekle'yi seçin**.
+3. **Üye ekle'yi** seçin.
     
-4. Eklemek istediğiniz kullanıcıları seçin ve ardından Kaydet'i **seçin**.
+4. Eklemek istediğiniz kullanıcıları seçin ve ardından **Kaydet'i** seçin.
     
-5. Üç **kez Kapat'ı** seçin. 
+5. Üç kez **Kapat'ı** seçin. 
     
-Grup, atanan Outlook Grup grubunda görüntülenir.
+Grup, üyelerin atandığı Outlook'ta görünür.
 
-## <a name="who-can-delete-email-from-the-group-inbox"></a>Who gelen kutusundan e-posta silebilir mi?
+## <a name="who-can-delete-email-from-the-group-inbox"></a>Grup gelen kutusundan e-postayı kim silebilir?
 
 Grup sahibi, ilk yazarı olup olmadığına bakılmaksızın Grup Gelen Kutusu'ndaki tüm e-postaları silebilir.
   
-E-posta konuşmalarını başlatan ve yalnızca E-postayı (e-postaya sağ tıklayın Web üzerinde Outlook, ardından Sil'i seçin) kullanarak bir üye Grup gelen kutusundan **silebilir**. Bu işlem Outlook uygulamasından (Outlook 2016) yapılamaz.
+Üye, bir e-posta konuşmasını başlattıysa grup gelen kutusundan silebilir ve yalnızca Web üzerinde Outlook kullanabilir (e-postaya sağ tıklayın, ardından **Sil'i** seçin). Bu işlem Outlook uygulamasından (Outlook 2016) yapılamaz.
   
-E-posta grup posta kutusundan silindiğinde, grup üyelerinin hiçbir kişisel posta kutusundan silinmez.
+Bir e-posta grup posta kutusundan silindiğinde, grup üyelerinin kişisel posta kutularından silinmez.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Yeni bir grup oluşturduktan ve üye ekledikten sonra grubu, grup adını veya açıklamasını düzenleme, sahip veya üyeleri değiştirme ve dış gönderenlerin gruba e-posta gönderip gönderemezseniz ve grup konuşmalarının kopyalarının üyelere gönderip gönderemezseniz belirtebilirsiniz. Bilgi [için Microsoft 365 Grup](manage-groups.md) yönetimi'ne bakın.
+Yeni bir grup oluşturup üye ekledikten sonra, grup adını veya açıklamasını düzenleme, sahipleri veya üyeleri değiştirme ve dış gönderenlerin gruba e-posta gönderip gönderemeyeceğini ve grup konuşmalarının kopyalarının üyelere gönderilip gönderilmeyeceğini belirtme gibi grubunuzu daha da yapılandırabilirsiniz. Bilgi için bkz. [Microsoft 365 grubunu yönetme](manage-groups.md) .
 
 ## <a name="related-content"></a>İlgili içerik
 
-[Gruplarda konuk erişimini Microsoft 365 yönetme](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (makale)\
-[Grup oluştururken kullanmak istediğiniz etki Microsoft 365 seçin](../../solutions/choose-domain-to-create-groups.md) (makale)\
-[Dağıtım listelerini grup gruplarına Microsoft 365 yükseltme](../manage/upgrade-distribution-lists.md) (makale)
+[Microsoft 365 gruplarına konuk erişimini yönetme](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (makale)\
+[Microsoft 365 grupları oluştururken kullanılacak etki alanını seçin](../../solutions/choose-domain-to-create-groups.md) (makale)\
+[Dağıtım listelerini Microsoft 365 gruplarına yükseltme](../manage/upgrade-distribution-lists.md) (makale)

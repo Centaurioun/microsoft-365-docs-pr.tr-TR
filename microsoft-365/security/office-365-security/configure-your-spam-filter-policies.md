@@ -18,12 +18,12 @@ ms.custom: ''
 description: Yöneticiler, Exchange Online Protection (EOP) içinde istenmeyen posta önleme ilkelerini görüntülemeyi, oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e62b4f2f0dc5eaf106c689a3eb05f78508ef1b0
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: f5d1b60a2fea570375f4b85170af016fdcfacf71
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771295"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087648"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP'de istenmeyen posta önleme ilkelerini yapılandırma
 
@@ -114,7 +114,7 @@ Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi olu
    - **Bu kullanıcıları, grupları ve etki alanlarını dışlayın**: İlkenin geçerli olduğu iç alıcılara özel durumlar eklemek için (alıcı özel durumları), bu seçeneği belirleyin ve özel durumları yapılandırın. Ayarlar ve davranış, koşullara tam olarak benzer.
 
    > [!IMPORTANT]
-   > Birden çok farklı koşul veya özel durum ek değildir; Onlar kapsayıcı. İlke _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
+   > Birden çok farklı koşul veya özel durum türü ek değildir; Onlar kapsayıcı. İlke _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
    >
    > - Alıcı: romain@contoso.com
    > - Alıcı şu üyelerin üyesidir: Yöneticiler
@@ -153,14 +153,14 @@ Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi olu
      - **Yüksek güvenilirlikli istenmeyen posta**
      - **Kimlik Avı**
      - **Yüksek güvenilirlikli kimlik avı**
-     - **Toplu**
+     - **Yığın**
 
      İstenmeyen posta filtreleme kararlarına yönelik kullanılabilir eylemler aşağıdaki tabloda açıklanmıştır.
 
      - Onay işareti ( ![Onay işareti.](../../media/checkmark.png)) eylemin kullanılabilir olduğunu gösterir (tüm eylemler tüm kararlarda kullanılamaz).
      - Onay işaretinden sonraki yıldız işareti ( <sup>\*</sup> ) istenmeyen posta filtreleme kararı için varsayılan eylemi gösterir.
 
-     |Eylem|Spam|Yüksek<br>Güven<br>istenmeyen posta|Kimlik Avı|Yüksek<br>Güven<br>Kimlik avı|Toplu|
+     |Eylem|Spam|Yüksek<br>güven<br>istenmeyen posta|Kimlik Avı|Yüksek<br>güven<br>kimlik avı|Yığın|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**İletiyi Gereksiz Email klasörüne taşıma**: İleti posta kutusuna teslim edilir ve Gereksiz Email klasörüne taşınır.<sup> 1</sup>|![Onay işareti.](../../media/checkmark.png)<sup>\*</sup>|![Onay işareti.](../../media/checkmark.png)<sup>\*</sup>|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)<sup>\*</sup>|
      |**X üst bilgisi ekle**: İleti üst bilgisine bir X üst bilgisi ekler ve iletiyi posta kutusuna teslim eder. <p> Bu X üst bilgisini ekle metin kutusuna daha sonra **X üst bilgisi** alan adını (değeri değil) girersiniz. <p> **İstenmeyen posta** ve **Yüksek güvenilirlikli istenmeyen posta** kararları için ileti Gereksiz Email klasörüne taşınır.<sup> 1,2</sup>|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)||![Onay işareti](../../media/checkmark.png)|
@@ -232,8 +232,8 @@ Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi olu
    1. Yapılandırmak istediğiniz listenin bağlantısına tıklayın:
       - **Izin verilen** \> **Gönderenler**: **Yönet (nn) gönderenler'e** tıklayın.
       - **Izin verilen** \> **Etki alanları**: **Etki alanlarına izin ver'e** tıklayın.
-      - **Engellenen** \> **Gönderenler**: **Yönet (nn) gönderenler'e** tıklayın.
-      - **Engellenen** \> **Etki alanları**: **Etki alanlarını engelle'ye** tıklayın.
+      - **Engellenmiş** \> **Gönderenler**: **Yönet (nn) gönderenler'e** tıklayın.
+      - **Engellenmiş** \> **Etki alanları**: **Etki alanlarını engelle'ye** tıklayın.
 
    2. Görüntülenen açılır öğede aşağıdaki adımları uygulayın:
       1. Oluştur simgesine tıklayın ![.](../../media/m365-cc-sc-create-icon.png) **Gönderenleri veya** **Etki alanı ekle'yi seçin**.

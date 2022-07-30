@@ -1,5 +1,5 @@
 ---
-title: İş için Microsoft 365'te tehdit korumasını artırma
+title: İş için Microsoft 365 için tehdit korumasını artırma
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -14,6 +14,7 @@ ms.collection:
 - M365-identity-device-management
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
@@ -24,14 +25,14 @@ search.appverid:
 - BCS160
 - MET150
 description: Office 365 için Microsoft Defender ayarlayın ve hassas verileri kimlik avına, kötü amaçlı yazılımlara ve diğer tehditlere karşı koruma altına alın.
-ms.openlocfilehash: fe7a70b8418ef4658b173611b0c940a0932736d9
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 3eee2afebdd3ffe2085029388e70b6b45de420e7
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66862204"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085543"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-for-business"></a>İş için Microsoft 365'te tehdit korumasını artırma
+# <a name="increase-threat-protection-for-microsoft-365-for-business"></a>İş için Microsoft 365 için tehdit korumasını artırma
 
 YouTube'da [Microsoft 365 küçük işletme yardımına](https://go.microsoft.com/fwlink/?linkid=2197659) göz atın.
 

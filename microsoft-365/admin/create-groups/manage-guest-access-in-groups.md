@@ -1,10 +1,10 @@
 ---
-title: Gruplarda konuk Microsoft 365 yönetme
+title: Microsoft 365 gruplarında konuk erişimini yönetme
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,58 +21,58 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
-description: Konuk erişimini kontrol etmek için grup Microsoft 365, konukları görüntüleme ve PowerShell kullanma hakkında bilgi öğrenin.
-ms.openlocfilehash: ea5986c4b9e0c5124abc581f9ed35391e0885633
-ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
+description: Bir Microsoft 365 grubuna konuk eklemeyi, konukları görüntülemeyi ve konuk erişimini denetlemek için PowerShell'i kullanmayı öğrenin.
+ms.openlocfilehash: 59ec932aea516107f08570f899987c4d619aa66b
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64637950"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084223"
 ---
-# <a name="manage-guest-access-in-microsoft-365-groups"></a>Gruplarda konuk Microsoft 365 yönetme
+# <a name="manage-guest-access-in-microsoft-365-groups"></a>Microsoft 365 gruplarında konuk erişimini yönetme
 
-Varsayılan olarak, tüm Microsoft 365 için konuk erişimi, sizin için açıktır. Yöneticiler, tüm kuruluşları için veya tek tek gruplar için konuk erişimine izin verilip izin ver vermeyeceğini kontrol ediyor.
+Varsayılan olarak, kuruluşunuzda Microsoft 365 grupları için konuk erişimi açıktır. Yöneticiler, tüm kuruluşlarında veya tek tek gruplar için gruplara konuk erişimine izin verilip verilmeyeceğini denetleyebilir.
 
-Bu açık olduğunda, grup üyeleri Web'de herhangi bir grup aracılığıyla Microsoft 365 bir Outlook davetlayabilir. Davetler onay için grup sahibine gönderilir.
+Etkinleştirildiğinde, grup üyeleri Web üzerinde Outlook aracılığıyla bir Microsoft 365 grubuna konuk davet edebilir. Davetler onay için grup sahibine gönderilir.
 
-Onaylanan konuk, dizine ve gruba eklenir.
+Onaylandıktan sonra konuk dizine ve gruba eklenir.
 
 > [!Note]
-> Yammer Enterprise Modunda veya AB Coğrafi olarak olan [ağlarda](/yammer/manage-security-and-compliance/manage-data-compliance) ağ konuklarını desteklemez.
-> Microsoft 365 Bağlı Yammer şu anda konuk erişimini desteklemez, ancak bağlı olmayan, dış grupları Yammer oluşturabilirsiniz. Yönergeler [için bkz. Dış grupları Yammer](/yammer/work-with-external-users/create-and-manage-external-groups) yönetme.
+> Yerel Modda veya [AB Coğrafi](/yammer/manage-security-and-compliance/manage-data-compliance) Olarak bulunan Yammer Kurumsal ağları ağ konuklarını desteklemez.
+> Microsoft 365 Bağlı Yammer grupları şu anda konuk erişimini desteklemez, ancak Yammer ağınızda bağlı olmayan dış gruplar oluşturabilirsiniz. Yönergeler için bkz. [Yammer'da dış gruplar oluşturma ve yönetme](/yammer/work-with-external-users/create-and-manage-external-groups) .
 
-Gruplara konuk erişimi, genellikle konuk erişimi veya özel konuk SharePoint daha kapsamlı Teams. Bu hizmetlerin kendi konuk paylaşım ayarları vardır. Gruplar, gruplar, gruplar ve gruplar arasında konuk paylaşımını ayarlamaya SharePoint tam Teams bkz.
+Gruplardaki konuk erişimi genellikle SharePoint veya Teams içeren daha geniş bir senaryonun parçası olarak kullanılır. Bu hizmetlerin kendi konuk paylaşım ayarları vardır. Gruplar, SharePoint ve Teams arasında konuk paylaşımını ayarlamaya yönelik eksiksiz yönergeler için bkz:
 
-- [Bir sitede konuklarla işbirliği yapma](../../solutions/collaborate-in-site.md)
-- [Ekipte konuklarla işbirliği yapma](../../solutions/collaborate-as-team.md)
+- [Sitedeki konuklarla işbirliği yapma](../../solutions/collaborate-in-site.md)
+- [Ekipteki konuklarla işbirliği yapma](../../solutions/collaborate-as-team.md)
 
 ## <a name="manage-groups-guest-access"></a>Grupların konuk erişimini yönetme
 
-Gruplarda konuk erişimini etkinleştirmek veya devre dışı bırakmak için, bunu Gruplar'da <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**da yapabiliriz**</a>.
+Gruplarda konuk erişimini etkinleştirmek veya devre dışı bırakmak istiyorsanız, bunu <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Gruplar'da**</a> yapabilirsiniz.
 
-1. Yönetim merkezinde Tüm Kuruluş ayarlarını **göster'Ayarlar** \>  \> **gidin ve** Hizmetler sekmesinde <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank"> Yönet'i</a> **Microsoft 365 Grupları**.
+1. Yönetim merkezinde Tüm \> **Ayarlar** \> **Kuruluş ayarlarını** **göster'e** gidin ve <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Hizmetler** sekmesinde</a> **Microsoft 365 Grupları'yi** seçin.
   
-2. Grup **Microsoft 365 Grupları**, kuruluş dışındaki kişilerin grup kaynaklarına erişmesine izin mi yoksa grup sahiplerinin kuruluş dışındaki kişilerini gruplara eklemesine izin mi etmek istediğinize karar verme.
+2. **Microsoft 365 Grupları** sayfasında, kuruluşunuzun dışındaki kişilerin grup kaynaklarına erişmesine izin vermek mi yoksa grup sahiplerinin kuruluşunuz dışındaki kişileri gruplara eklemesine izin vermek mi istediğinizi seçin.
 
-## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>Yönetim merkezinden Microsoft 365 Grup grubuna konuk ekleme
+## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>Yönetim merkezinden bir Microsoft 365 grubuna konuk ekleme
 
-Konuk zaten dizinde yer alan bir konuksa, onu dizinden gruplarınıza <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 yönetim merkezi</a>. (Dinamik üyeliği olan gruplar grup [olarak Azure Active Directory](/azure/active-directory/enterprise-users/groups-create-rule).)
+Konuk dizininizde zaten varsa, <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">bunları Microsoft 365 yönetim merkezi</a> gruplarınıza ekleyebilirsiniz. (Dinamik üyeliği olan gruplar [Azure Active Directory'de yönetilmelidir](/azure/active-directory/enterprise-users/groups-create-rule).)
   
-1. Yönetim merkezinde **GroupsGroups'a** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**gidin**</a>.
+1. Yönetim merkezinde **Gruplar Grupları'na** >  gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>
   
-2. Konuğu eklemek istediğiniz gruba tıklayın ve Üyeler sekmesinde Tüm üyeleri **görüntüle ve yönet'i** seçin. 
+2. Konuğu eklemek istediğiniz gruba tıklayın ve **Üyeler** sekmesinde **Tümünü görüntüle ve üyeleri yönet'i** seçin. 
   
-4. Üye **ekle'yi** seçin ve eklemek istediğiniz konuğun adını seçin.
+4. **Üye ekle'yi** seçin ve eklemek istediğiniz konuğun adını seçin.
     
 5. **Kaydet**'i seçin.
 
-Doğrudan dizine konuk eklemek için B2B işbirliği kullanıcılarını doğrudan Azure Active Directory [B2B işbirliği kullanıcılarını Azure portal](/azure/active-directory/b2b/add-users-administrator).
+Doğrudan dizine konuk eklemek istiyorsanız, [Azure portal Azure Active Directory B2B işbirliği kullanıcıları ekleyebilirsiniz](/azure/active-directory/b2b/add-users-administrator).
 
-Bir konuğun bilgilerini düzenlemek için Bu Kişi Ekle'yi kullanarak bir kullanıcının [profil bilgilerini ekleyebilir veya Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+Bir konuğun bilgilerini düzenlemek istiyorsanız [, Azure Active Directory'yi kullanarak kullanıcının profil bilgilerini ekleyebilir veya güncelleştirebilirsiniz](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
 ## <a name="related-content"></a>İlgili içerik
 
-[Belirli bir gruptan konukları engelleme](../../solutions/per-group-guest-access.md) (makale)\
-[Grupta grup üyeliğini Microsoft 365 yönetim merkezi](add-or-remove-members-from-groups.md) (makale)\
-[Azure Active Directory incelemeler](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (makale)\
+[Belirli bir gruptan gelen konukları engelleme](../../solutions/per-group-guest-access.md) (makale)\
+[Microsoft 365 yönetim merkezi grup üyeliğini yönetme](add-or-remove-members-from-groups.md) (makale)\
+[Azure Active Directory erişim gözden geçirmeleri](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (makale)\
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (makale)

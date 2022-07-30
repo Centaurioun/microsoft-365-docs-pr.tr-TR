@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
@@ -25,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Çevrimiçi kuruluşunuzu telefonunuzdan veya tabletinizde yönetmek için web tabanlı Microsoft 365 yönetim merkezi eşlikçiniz olan Microsoft 365 Yönetici uygulamasını edinin.
-ms.openlocfilehash: 4a10c38fcaf793c6ccb3666a16d197c95bbc753a
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 6fcc6ceec6c7dcd7f5af3cb2bf0883b0bd1170a1
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601706"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084641"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 Yönetici mobil uygulaması hakkında
 
@@ -129,7 +130,7 @@ Sol gezinti **menüsünden Ayarlar** > **Bildirimler'e** gidin. Hizmet durumu, i
 
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>Sorum yanıtlanmazsa ne yapmalıyım?
 
-Uygulamayla ilgili bir sorunu bildirmek için [e-posta feedback365@microsoft.com](mailto:feedback365@microsoft.com) . Ya da bu makalenin en altında geri bildirim sağlayabilirsiniz.
+Uygulamayla ilgili bir sorunu bildirmek için [feedback365@microsoft.com Email](mailto:feedback365@microsoft.com). Ya da bu makalenin en altında geri bildirim sağlayabilirsiniz.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

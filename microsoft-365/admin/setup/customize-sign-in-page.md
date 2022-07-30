@@ -1,5 +1,5 @@
 ---
-title: Şirket markanızı Microsoft 365 oturum açma sayfasına ekleme
+title: Microsoft 365 oturum açma sayfasına şirketinizin markasını ekleme
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
@@ -22,21 +23,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
-description: Azure Active Directory kullanarak Microsoft 365 oturum açma sayfasını özelleştirin. Oturum açma sayfasına çizim, logo ve metin ekleyebilirsiniz.
-ms.openlocfilehash: ec1fb413b8b8b3fa0100e0751a7971b6c5dd5441
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Azure Active Directory'yi kullanarak Microsoft 365 oturum açma sayfasını özelleştirin. Oturum açma sayfasına çizim, logo ve metin ekleyebilirsiniz.
+ms.openlocfilehash: 9ac46be83d9bf25ee76067e54530e75ed5769d14
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466338"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086945"
 ---
-# <a name="add-your-company-branding-to-the-microsoft-365-sign-in-page"></a>Şirket markanızı Microsoft 365 oturum açma sayfasına ekleme
+# <a name="add-your-company-branding-to-the-microsoft-365-sign-in-page"></a>Microsoft 365 oturum açma sayfasına şirketinizin markasını ekleme
 
  Artık kullanıcılarınızın gördüğü oturum açma sayfasını özelleştirmek için Microsoft 365 aboneliğinize dahil olan Azure Active Directory (AD) aboneliğini kullanabilirsiniz. 
   
 ## <a name="add-company-branding-to-your-sign-in-page-and-access-panel-pages"></a>Oturum açma sayfanıza ve Erişim Paneli sayfalarınıza şirket markası ekleme
 
-İş için Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite veya diğer Microsoft hizmetleri için ücretli aboneliğiniz varsa, Azure Active Directory. Azure Active Directory kullanarak, kullanıcı ve grup hesaplarını oluşturabilir, yönetebilir ve sayfalarınıza şirket markası ekleyebilirsiniz. Bu aboneliği etkinleştirmek ve Microsoft Azure Yönetim Portalı'na erişmek için, tek seferlik kayıt işlemini tamamlamanız gerekir. Bundan sonra, Azure Active Directory'ye onu kullanan Microsoft hizmetinizden erişebilirsiniz. Microsoft 365 aboneliğinizi kaydetme yönergeleri için [bkz. Ücretsiz Azure Active Directory aboneliğinizi kaydetme](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md) ve genel yönetim yönergeleri [için Azure'da Microsoft 365 aboneliğinizin dizinini yönetme](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory). 
+İş için Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite veya diğer Microsoft hizmetlerine ücretli aboneliğiniz varsa, Ücretsiz Azure Active Directory aboneliğiniz vardır. Azure Active Directory kullanarak, kullanıcı ve grup hesaplarını oluşturabilir, yönetebilir ve sayfalarınıza şirket markası ekleyebilirsiniz. Bu aboneliği etkinleştirmek ve Microsoft Azure Yönetim Portalı'na erişmek için, tek seferlik kayıt işlemini tamamlamanız gerekir. Bundan sonra, Azure Active Directory'ye onu kullanan Microsoft hizmetinizden erişebilirsiniz. Microsoft 365 aboneliğinizi kaydetme yönergeleri için bkz. [Ücretsiz Azure Active Directory aboneliğinizi kaydetme](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md) ve genel yönetim yönergeleri [için Azure'da Microsoft 365 aboneliğinizin dizinini yönetme](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) . 
   
 Aşağıdaki resimde, oturum açma sayfasının Azure'da değiştirilebilen bölümleri gösterilir.
   
@@ -58,4 +59,4 @@ Marka eklemeye hazırsanız, Azure içerik kümesindeki özelleştirme seçenekl
 
 [Kuruluşunuz için Microsoft 365 temasını özelleştirme](customize-your-organization-theme.md) (makale)\
 [Kurulum sihirbazı ile Kurulum sayfası arasındaki fark](o365-setup-wizard-and-setup-page.md) (makale)\
-[İş kullanıcıları için Microsoft 365 mobil cihazları ayarlama](../../business/set-up-mobile-devices.md) (video)
+[İş için Microsoft 365 kullanıcıları için mobil cihazları ayarlama](../../business/set-up-mobile-devices.md) (video)

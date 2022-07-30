@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -21,17 +22,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
-description: E-posta dağıtım grubuna çalışan, iş ortağı veya satıcı gibi bir Microsoft 365 kullanıcı veya kişi eklemeyi öğrenin.
-ms.openlocfilehash: e4054d73707d77297ae4f5e9f6f2fb406a829d55
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: E-posta dağıtım grubuna bir Microsoft 365 kullanıcısı veya çalışan, iş ortağı veya satıcı gibi bir kişi eklemeyi öğrenin.
+ms.openlocfilehash: 765380e1c8b6bd4aed94df9335d6b1dafe5bd12a
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437227"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084091"
 ---
 # <a name="add-a-user-or-contact-to-a-microsoft-365-distribution-group"></a>Microsoft 365 dağıtım grubuna kullanıcı veya kişi ekleme
 
-Bir kuruluşun yöneticisi olarak, kullanıcılarınızdan veya kişilerinden birini bir dağıtım grubuna eklemeniz gerekebilir (bkz. [Microsoft 365 dağıtım grupları oluşturma](../setup/create-distribution-lists.md). Örneğin, e-posta dağıtım grubuna çalışanları veya dış iş ortaklarını veya satıcıları ekleyebilirsiniz.
+Bir kuruluşun yöneticisi olarak, kullanıcılarınızdan veya kişilerinden birini bir dağıtım grubuna eklemeniz gerekebilir (bkz. [Microsoft 365'te dağıtım grupları oluşturma](../setup/create-distribution-lists.md). Örneğin, e-posta dağıtım grubuna çalışanları veya dış iş ortaklarını veya satıcıları ekleyebilirsiniz.
   
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>Dağıtım grubuna kullanıcı veya kişi ekleme
 
@@ -53,7 +54,7 @@ Bir kuruluşun yöneticisi olarak, kullanıcılarınızdan veya kişilerinden bi
   
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Microsoft 365'da dağıtım grubu olarak e-posta göndermeyi](../manage/send-email-as-distribution-list.md) öğrenin.
+[Microsoft 365'te dağıtım grubu olarak e-posta göndermeyi](../manage/send-email-as-distribution-list.md) öğrenin.
 
 ## <a name="related-content"></a>İlgili içerik
 

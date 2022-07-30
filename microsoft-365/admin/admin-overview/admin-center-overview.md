@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ortak görevleri yönetmek için Microsoft 365 yönetim merkezi basitleştirilmiş görünümü veya daha karmaşık ayarlar ve görevler için pano görünümünü kullanın.
-ms.openlocfilehash: c5be4c0d8fdcdbde9b8fcf6be90e616a052f2fb8
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 285769f9d7d91169dbf505ee125cab1a15d5adcd
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601662"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084685"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezine genel bakış
 
@@ -185,29 +186,29 @@ Microsoft 365 yönetim merkezi 40 dilde tamamen yerelleştirilmiştir.
 |---------|---------|
 |Arapça | Ar |
 |Bulgarian | Bg |
-|Catalan | Ca |
-|Czech | Cs |
-|Danish | Savcı |
+|Catalan | CA |
+|Czech | bilgisayar bilimi |
+|Danish | da |
 |German | de |
 |Greek | El |
 |Spanish | Es |
 |English | en |
 |Estonian | et |
-|Basque | Ab |
-|Finnish | Fi |
+|Basque | AB |
+|Finnish | fi |
 |French | Fr |
 |Galician | Gl |
-|Hebrew | Hge |
+|Hebrew | o |
 |Croatian | Hr |
 |Hungarian | Hu |
 |Indonesian  | Kimliği |
-|Italian | bu |
+|Italian | o |
 |Japanese | Ja |
 |Korean | ko |
-|Lithuanian | Teğmen |
+|Lithuanian | Lt |
 |Latvian | Lv |
 |Dutch | Nl |
-|Norveç dili | No |
+|Norveç dili | Hayır |
 |Polish | Pl |
 |Portekizce (Brezilya) | Pt |
 |Portekizce (Portekiz) | pt-pt |
@@ -218,9 +219,9 @@ Microsoft 365 yönetim merkezi 40 dilde tamamen yerelleştirilmiştir.
 |Sırpça (Kiril)  | sr-cyrl |
 |Serbian Latin | Sr |
 |Swedish | Sv |
-|Thai | th |
+|Thai | lik |
 |Turkish | tr |
-|Ukrainian | Ingiltere |
+|Ukrainian | Birleşik Krallık |
 |Vietnamese | Vı |
 |Chinese Simplified | zh-hans |
 |Chinese Traditional | zh-hant |

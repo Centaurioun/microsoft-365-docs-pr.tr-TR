@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - SaRA
 - MSStore_Link
@@ -28,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: Yeni bir onmicrosoft.com etki alanı oluşturmayı ve yeni geri dönüş etki alanınız yapmayı öğrenin.
-ms.openlocfilehash: 967cc1992b33b3a17a853954175adbf050b34f1c
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 66f5562b4a2ba46f662a54ff33d953c4e617ce3a
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "66861697"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087319"
 ---
 # <a name="add-and-replace-your-onmicrosoftcom-fallback-domain-in-microsoft-365"></a>Microsoft 365'te onmicrosoft.com geri dönüş etki alanınızı ekleme ve değiştirme
 

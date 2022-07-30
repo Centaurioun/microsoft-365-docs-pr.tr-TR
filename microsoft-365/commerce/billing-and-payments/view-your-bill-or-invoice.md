@@ -15,6 +15,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - commerce_billing
 - TopSMBIssues
 - okr_smb
@@ -25,12 +26,12 @@ ms.custom:
 - adminvideo
 description: Microsoft 365 yönetim merkezinde faturanızı veya fatura ekstrenizi bulun. Ayrıca, faturanızı kaydedebilir ve faturanızın bir kopyasını yazdırabilirsiniz.
 ms.date: 01/25/2022
-ms.openlocfilehash: 72bbf1b8c845fb462b761e44f94d0f99bcea2aba
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 8e30bb90c27edc03667f02c7d677c18514359027
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602844"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086857"
 ---
 # <a name="view-your-microsoft-365-for-business-subscription-bill-or-invoice"></a>İş için Microsoft 365 abonelik faturanızı veya faturanızı görüntüleme
 

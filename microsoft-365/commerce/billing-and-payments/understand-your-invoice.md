@@ -14,18 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - commerce_billing
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: Microsoft iş ürünleri için faturanızı veya faturanızı nasıl okuyacağınızı ve anlayacağınızı öğrenin.
 ms.date: 05/04/2021
-ms.openlocfilehash: 4d5bd00726004d0e9dce3f6d284546ba81fb7edd
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 40c278a5855bcb53808f812fc3b4383ecbea540b
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101788"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084971"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Fatura ekstrenizi veya faturanızı anlama
 
@@ -38,7 +39,7 @@ Faturanızı görüntülemek ve yazdırmak için:
 
 Daha fazla bilgi için bkz. [Faturanızı veya faturanızı görüntüleme](view-your-bill-or-invoice.md).
 
-Yalnızca Microsoft 365 aboneliğiniz varsa bkz. [İş için Microsoft 365 faturanızı veya faturanızı anlama](understand-your-invoice2.md).
+Yalnızca bir Microsoft 365 aboneliğiniz varsa bkz. [İş için Microsoft 365 faturanızı veya faturanızı anlama](understand-your-invoice2.md).
 
 ## <a name="understand-the-invoice-header"></a>Fatura üst bilgisini anlama
 
@@ -62,17 +63,17 @@ Yalnızca Microsoft 365 aboneliğiniz varsa bkz. [İş için Microsoft 365 fatur
 | Ücretler|Bu faturalama dönemi için satın alınan ürünlerin toplam sayısı ve bunların ilgili ücretleri ve vergileri. Satın alma işlemleri, faturanızın kısa bir görünümünü sağlamak için toplanır. |
 | Alacaklar |İadelerden aldığınız krediler |
 | Uygulanan Azure kredileri |Azure'a otomatik olarak uygulanan Azure kredileriniz her faturalama döneminde ücretlendirilir. Azure krediniz yoksa bu alan gizlenir. Azure kredileri hakkında daha fazla bilgi için bkz. [Azure kredi bakiyesini Microsoft Müşteri Sözleşmesi izleme](/azure/billing/billing-mca-check-azure-credits-balance). |
-| Alt toplam |Vadesi gelen vergi öncesi tutar |
+| Ara toplam |Vadesi gelen vergi öncesi tutar |
 | Vergi |Faturalama profilinizin ülkesine bağlı olarak ödediğiniz vergi türü ve tutarı. Vergi ödemeniz gerekmiyorsa faturanızda vergi gösterilmez. |
 
 ### <a name="understand-your-charges"></a>Ücretlerinizi anlama
 
-Ücretler sayfalarında maliyet ürüne göre ayrılmış olarak gösterilir. Azure müşterileri için ücretler fatura bölümüne göre düzenlenmiş olabilir. Fatura bölümlerinin Azure ürünleriyle nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [Microsoft Müşteri Sözleşmesi ödeme hesabınızla Kullanmaya başlayın fatura](/azure/billing/billing-mca-overview) [bölümleri](/azure/billing/billing-mca-overview#invoice-sections). Her ürün siparişinde maliyet, hizmet ailesine göre ayrılmıştır.
+Ücretler sayfalarında maliyet ürüne göre ayrılmış olarak gösterilir. Azure müşterileri için ücretler fatura bölümüne göre düzenlenmiş olabilir. Fatura bölümlerinin Azure ürünleriyle nasıl kullanıldığı hakkında daha fazla bilgi için [Microsoft Müşteri Sözleşmesi ödeme hesabınızı kullanmaya başlama](/azure/billing/billing-mca-overview) bölümündeki [Fatura bölümlerine](/azure/billing/billing-mca-overview#invoice-sections) bakın. Her ürün siparişinde maliyet, hizmet ailesine göre ayrılmıştır.
 
 | Terim |Açıklama |
 | --- | --- |
 | Birim fiyat | Ücreti hesaplamak için kullanılan hizmetin geçerli birim fiyatı (fiyatlandırma para birimi cinsinden). Bu fiyat bir ürün, hizmet ailesi, ölçüm ve teklif için benzersizdir. |
-| Mkt | Faturalama döneminde satın alınan veya tüketilen miktar |
+| Miktar | Faturalama döneminde satın alınan veya tüketilen miktar |
 | Ücretler/Krediler | Krediler/para iadeleri uygulandıktan sonraki net ücret miktarı |
 | Azure Kredisi | Ücretlere/Kredilere uygulanan Azure kredisi miktarı |
 | Vergi oranı | Ülkeye bağlı olarak vergi oranı |
@@ -95,7 +96,7 @@ Faturanızda daha fazla ayrıntı görmek istediğiniz Azure ücretleri varsa bk
 
 Faturanın en altında, faturanızı nasıl ödemeniz konusunda yönergeler yer alır. Havaleyle, çekle veya çevrimiçi olarak ödeme yapabilirsiniz.
 
-### <a name="publisher-information"></a>Publisher bilgileri
+### <a name="publisher-information"></a>Yayımcı bilgileri
 
 Faturanızda üçüncü taraf hizmetleri varsa, her yayıncının adı ve adresi faturanızın en altında listelenir.
 
@@ -153,4 +154,4 @@ Microsoft 365 yönetim merkezi faturanızla ilgili sorularınız varsa veya yard
 [İş için Microsoft 365 faturanızı veya faturanızı anlama](understand-your-invoice2.md) (makale)\
 [Azure kredi bakiyesi Microsoft Müşteri Sözleşmesi izleme](/azure/billing/billing-mca-check-azure-credits-balance) (makale)\
 [Microsoft Müşteri Sözleşmesi faturanızı gözden geçirin](/azure/cost-management-billing/understand/review-customer-agreement-bill) (makale)\
-[Microsoft Müşteri Sözleşmesi ödeme hesabınızla Kullanmaya başlayın](/azure/billing/billing-mca-overview) (makale)
+[Microsoft Müşteri Sözleşmesi ödeme hesabınızı kullanmaya başlama](/azure/billing/billing-mca-overview) (makale)

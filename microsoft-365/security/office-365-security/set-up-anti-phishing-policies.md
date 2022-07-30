@@ -17,12 +17,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection (EOP) ve Office 365 için Microsoft Defender'de kullanılabilen kimlik avı önleme ilkeleri hakkında bilgi edinebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb33af08174890565994ffc253cf2332c01c31eb
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 7d1352817a1bb514d12365fa81a581a92362f1b8
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771009"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087604"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365'te kimlik avı önleme ilkeleri
 
@@ -69,7 +69,7 @@ Aşağıdaki ilke ayarları EOP ve Office 365 için Defender kimlik avı önleme
 
 - **Ad**: Varsayılan kimlik avı önleme ilkesini yeniden adlandıramazsınız. Özel kimlik avı önleme ilkesi oluşturduktan sonra, ilkeyi Microsoft 365 Defender portalında yeniden adlandıramazsınız.
 
-- **Açıklama** Varsayılan kimlik avı önleme ilkesine açıklama ekleyemezsiniz, ancak oluşturduğunuz özel ilkelerin açıklamasını ekleyip değiştirebilirsiniz.
+- **Tarif** Varsayılan kimlik avı önleme ilkesine açıklama ekleyemezsiniz, ancak oluşturduğunuz özel ilkelerin açıklamasını ekleyip değiştirebilirsiniz.
 
 - **Kullanıcılar, gruplar ve etki alanları**: Kimlik avı önleme ilkesinin geçerli olduğu iç alıcıları tanımlar. Bu değer özel ilkelerde gereklidir ve varsayılan ilkede kullanılamaz (varsayılan ilke tüm alıcılar için geçerlidir).
 
@@ -87,7 +87,7 @@ Aşağıdaki ilke ayarları EOP ve Office 365 için Defender kimlik avı önleme
   > [!NOTE]
   > İlkenin <u>geçerli</u> olduğu ileti **alıcılarını** tanımlamak için özel kimlik avı önleme ilkelerinde **Kullanıcılar, gruplar ve etki alanları** ayarlarında en az bir seçim yapılması gerekir. Office 365 için Defender'deki kimlik avı önleme ilkeleri, bu makalenin devamında açıklandığı gibi <u>kimliğe bürünme koruması alacak</u> tek tek gönderen e-posta adreslerini veya gönderen etki alanlarını belirtebileceğiniz [kimliğe bürünme ayarlarına](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) da sahiptir.
   >
-  > Birden çok farklı koşul veya özel durum ek değildir; Onlar kapsayıcı. İlke _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
+  > Birden çok farklı koşul veya özel durum türü ek değildir; Onlar kapsayıcı. İlke _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
   >
   > - Alıcı: romain@contoso.com
   > - Alıcı şu üyelerin üyesidir: Yöneticiler

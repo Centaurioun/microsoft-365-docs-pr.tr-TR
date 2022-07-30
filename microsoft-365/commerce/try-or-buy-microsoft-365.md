@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - commerce_purchase
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -23,12 +24,12 @@ ms.custom:
 search.appverid: GEA150
 description: Microsoft 365 İş Standart, Microsoft 365 İş Ekstra veya İş için Microsoft 365 Uygulamaları için 30 günlük ücretsiz deneme sürümüne kaydolun.
 ms.date: 08/07/2020
-ms.openlocfilehash: b1a02ef1828e1868b83e16ad9bde16605103f851
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: a47d956b614c6464a49af33c179609eeb0e42ac9
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602546"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087692"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>İş için Microsoft 365 aboneliğini deneyin veya satın alın
 

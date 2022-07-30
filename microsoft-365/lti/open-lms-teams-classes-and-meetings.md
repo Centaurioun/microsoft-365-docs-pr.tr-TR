@@ -12,12 +12,12 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Açık LMS için Microsoft Öğrenme Araçları Birlikte Çalışabilirliği ile Teams sınıflarını ve toplantılarını oluşturun ve yönetin.
-ms.openlocfilehash: 25babbafb4a8640b389fd655ddf63b23665d8c9d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 264f9a2129d36b1d6ab3dae2afdb14973f3deac5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943254"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086461"
 ---
 # <a name="integrate-microsoft-teams-classes-and-meetings-within-open-lms"></a>Microsoft Teams sınıflarını ve toplantılarını Open LMS ile tümleştirme
 
@@ -29,7 +29,7 @@ Herhangi bir LMS için tüm LTI uygulamalarını yönetme hakkında ayrıntılı
 
 Open LMS ile Teams arasındaki tümleştirmenin düzgün çalışması için Open LMS ve Teams'in birbirleriyle iletişim kuracak şekilde ayarlanması gerekir.
 
-[Moodle eklentisini yükleme ve yapılandırma yönergelerini](open-lms-plugin-configuration.md) izleyin.
+[Moodle LMS eklentilerini yükleme ve yapılandırma yönergelerini](open-lms-plugin-configuration.md) izleyin.
 
 ## <a name="register-microsoft-teams-lti-for-use-in-open-lms"></a>Microsoft Teams LTI'sini Açık LMS'de kullanmak üzere kaydetme
 

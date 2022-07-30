@@ -16,6 +16,7 @@ ms.collection:
 - TRN_SMB
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - commerce_signup
 - TRN_M365B
 - OKR_SMB_Videos
@@ -29,12 +30,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Office 365 kaydolma işlemine geçmeden önce Office programlarının en son sürümleri hakkında bilmeniz gerekenleri anlayın.
 ms.date: 03/17/2021
-ms.openlocfilehash: 400c30fd1b6879097afe510f36582c46879c85a5
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: b8bddd621998fcebf319b2d4ed2386a78375fc70
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601190"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084575"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Kaydolma - Yönetici Yardımı
 

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Azure AD PowerShell kullanarak bazı bireysel kullanıcı parolalarının süresinin hiç dolmamasına ayarlamak için Microsoft 365 yönetici hesabınızda oturum açın.
-ms.openlocfilehash: a8357e3c72ea4bcd30234492b30e75eff8cb123a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bd9960e0da7491b5f2db14618daa17b917310450
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010200"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084619"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Tek bir kullanıcının parolasını süresi hiç dolmayacak şekilde ayarlama
 
@@ -40,7 +41,7 @@ Bu makale, bir işletme, okul veya kar amacı gütmeyen kuruluş için parola s�
 
 Bu adımları gerçekleştirmek için [genel yönetici veya parola yöneticisi](about-admin-roles.md) olmanız gerekir.
 
-Microsoft bulut hizmeti genel yöneticisi, parolaların belirli kullanıcılar için süresinin dolmaması [için Graph için Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2) kullanabilir. [AzureAD](/powershell/module/Azuread) cmdlet'lerini, süresi hiç dolmayan yapılandırmayı kaldırmak veya hangi kullanıcı parolalarının hiçbir zaman sona ermeyecek şekilde ayarlandığını görmek için de kullanabilirsiniz.
+Microsoft bulut hizmeti genel yöneticisi, belirli kullanıcılar için parolaların süresinin dolmaması [için Graph için Azure Active Directory PowerShell'i](/powershell/azure/active-directory/install-adv2) kullanabilir. [AzureAD](/powershell/module/Azuread) cmdlet'lerini, süresi hiç dolmayan yapılandırmayı kaldırmak veya hangi kullanıcı parolalarının hiçbir zaman sona ermeyecek şekilde ayarlandığını görmek için de kullanabilirsiniz.
 
 Bu kılavuz, kimlik ve dizin hizmetleri için de Azure AD kullanan Intune ve Microsoft 365 gibi diğer sağlayıcılar için geçerlidir. Parola süre sonu, ilkenin değiştirilebilen tek bölümüdür.
 

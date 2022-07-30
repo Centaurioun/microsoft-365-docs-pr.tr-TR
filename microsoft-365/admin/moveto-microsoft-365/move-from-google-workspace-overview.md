@@ -1,5 +1,5 @@
 ---
-title: Google Workspace'den Microsoft 365 İş'e geçme
+title: Google Workspace'ten İş için Microsoft 365'e geçme
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 monikerRange: o365-worldwide
@@ -20,28 +21,28 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Verilerinizi ve kullanıcılarınızı Google Workspace'den iş için Microsoft 365 öğrenin.
-ms.openlocfilehash: 555e29d40b5135d8f3a6ffd44dbb61a8cfae6843
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+description: Verilerinizi ve kullanıcılarınızı Google Workspace'ten Microsoft 365 İş'e nasıl taşıyacağınızı öğrenin.
+ms.openlocfilehash: 7e469d9cfe8fb5dd8a995050270197cd38fa7e6a
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "63015268"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087407"
 ---
-# <a name="switch-from-google-workspace---overview"></a>Google Workspace'den geçiş - Genel Bakış
+# <a name="switch-from-google-workspace---overview"></a>Google Workspace'ten geçiş yapma - Genel Bakış
 
-Verilerinizi, e-postanızı ve kullanıcılarınızı Google Workspace'den İş için Microsoft 365 kullanabilirsiniz. Her adımda, ortamınızı geçirecek şekilde hazırlamanıza ve yapılandırmanıza yardımcı olacak makaleleri ve videoları, Microsoft Yönetim merkezinde kullanabileceğiniz geçiş araçlarını kullanın.
+Verilerinizi, e-postanızı ve kullanıcılarınızı Google Çalışma Alanı'ndan İş için Microsoft 365'e taşımak için aşağıdaki adımları kullanabilirsiniz. Microsoft Yönetici merkezinde kullanabileceğiniz geçiş araçlarını geçirmek ve kullanmak üzere ortamınızı hazırlamanıza ve yapılandırmanıza yardımcı olması için her adımda yer alan makale ve videoları kullanın.
 
 
 | Adım  |Açıklama  |
 |---------|---------|
-|1. Adım | [Oturum Microsoft 365 İş Ekstra](../admin-overview/sign-up-for-office-365.md)       |
-|2. Adım | [Google Workspace Microsoft 365 için geçiş işlemini ayarlayın](set-up-microsoft-365-forgoogle.md). </br> Bu adımda Google Workspace'te kullanmakta olduğunuz etki alanının sahibi olduğunu doğrularsınız, kullanıcı eklersiniz ve cihazlar için temel güvenlik ayarlanır. |
-|3. Adım | [Mobil cihazlar için güvenlik Windows ayarlayın.](../setup/secure-win-10-pcs.md)</br> Windows ayarları, ayarların Kurulum sayfasında ayrı olarak Microsoft 365 yönetim merkezi. |
-|4. Adım | [Google Workspace etki alanlarınızı başka bir Microsoft 365](add-google-domain.md) </br> E-posta için kullanmakta olduğunuz etki alanının sahibi olduğunu doğru verdikten sonra, siz ve diğer tüm kullanıcılar Microsoft 365 için eski e-postanızı kullanmaya başlayabilirsiniz. |
-|5. Adım | [Tüm Office yükleyin ve Microsoft Teams](../setup/install-applications.md).</br> Bu lisansa sahip Microsoft 365 tüm kişiler, Office uygulamaları kendi iş cihazlarına yüklemeli.|
-|6. Adım | [Herkesin e-posta ve takvim öğelerini geçirme](migrate-email.md).</br> Bu adımda, herkesin e Exchange Online, takvim ve kişilerini Google Workspace'den taşımak için hızlı bir geçiş işlemi çalıştıracaksınız.  |
-|7. Adım | [Bağlan etki alanını Microsoft 365](connect-domain-tom365.md). </br> Etki alanı e-postası bağlandıktan sonra Microsoft 365 ve tüm Microsoft 365 hizmetleriniz çalışacaktır.|
-|Adım 8|Herkesin [verilerini Drive'dan Paylaşılan Sürücüler'den](migrate-files-migration-manager.md) Ekip sitelerine OneDrive Için Geçiş Yöneticisi'ni kullanın.</br> Bu adımda, kişisel sürücülerde ve paylaşılan Sürücüler'de bulunan tüm veriler kopyalanır ve Microsoft 365.|
-|Adım 9| [Google Workspace'i sona erdirin](cancel-google.md) , ancak etki alanınıza sahip olun. </br> Etki alanınızı Google yönetecekse, Google Workspace aboneliğinizi sona erdirdikten sonra bile orada tutabilirsiniz. Ayrıca, tercih edersiniz bunu başka bir DNS ana bilgisayara da taşımayı seçebilirsiniz.|
+|1. Adım | Microsoft 365 İş Ekstra [için kaydolun](../admin-overview/sign-up-for-office-365.md)       |
+|2. Adım | [Google Workspace geçişi için Microsoft 365'i ayarlayın](set-up-microsoft-365-forgoogle.md). </br> Bu adımda, Google Çalışma Alanı'nda kullandığınız etki alanının sahibi olduğunuzu doğrular, kullanıcılar ekler ve cihazlar için temel güvenliği ayarlarsınız. |
+|3. Adım | [Windows cihazları için güvenlik ilkelerini ayarlayın.](../setup/secure-win-10-pcs.md)</br> Windows güvenliği, Microsoft 365 yönetim merkezi Kurulum sayfasında ayrı olarak ayarlanır. |
+|4. Adım | [Google Workspace etki alanınızı Microsoft 365'e ekleme](add-google-domain.md) </br> E-posta için kullandığınız etki alanının sahibi olduğunuzu doğruladıktan sonra, siz ve diğer tüm kullanıcılar Microsoft 365 İş Ekstra'da oturum açmak için eski e-postanızı kullanmaya başlayabilirsiniz. |
+|5. Adım | [Office uygulamalarını ve Microsoft Teams'i yükleyin](../setup/install-applications.md).</br> Microsoft 365 lisanslarına sahip olan tüm kişilerin office uygulamalarını iş cihazlarına yüklemeleri gerekir.|
+|6. Adım | [Herkesin e-posta ve takvim öğelerini geçirin](migrate-email.md).</br> Bu adımda herkesin e-postasını, takvimini ve kişilerini Google Workspace'ten taşımak için bir Exchange Online geçişi çalıştıracaksınız.  |
+|7. Adım | [Etki alanını Microsoft 365'e bağlayın](connect-domain-tom365.md). </br> Etki alanını bağladıktan sonra e-posta Microsoft 365'e gider ve tüm Microsoft 365 hizmetleriniz çalışır.|
+|8. Adım|[Herkesin verilerini Drive'dan OneDrive'a](migrate-files-migration-manager.md) ve paylaşılan Sürücülerden Ekip sitelerine taşımak için Migration Manager'ı kullanın.</br> Bu adımda, kişisel ve paylaşılan Sürücülerdeki tüm veriler kopyalanır ve Microsoft 365'e taşınır.|
+|9. Adım| [Google Workspace'i sonlandırarak](cancel-google.md) etki alanınızı koruyun. </br> Google etki alanınızı yönetiyorsa, Google Workspace aboneliğinizi sonlandırdıktan sonra bile orada tutabilirsiniz. İsterseniz başka bir DNS konağına taşımayı da seçebilirsiniz.|
 

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 lisanslarına, oturum açma kimlik bilgilerine ve Microsoft 365 posta kutularına sahip olabilmeleri için her ekip üyesine bir kullanıcı hesabı vermeyi öğrenin.
 ms.date: 07/01/2020
-ms.openlocfilehash: b9662263711bb08063a9c2ff9f70767bb3ea7ce4
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: afcb3d0b3db8dbdbbd6cf870c1c148c73562c889
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602004"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084751"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Aynı anda kullanıcı ekleme ve lisans atama
 
@@ -70,8 +71,8 @@ Kullanıcı eklemek ve lisans atamak için genel yönetici, lisans veya kullanı
 
 2. **Etkin Kullanıcılar'a** >  gidin ve **Kullanıcı ekle'yi** seçin.
 3. **Temel bilgileri ayarla** bölmesinde, temel kullanıcı bilgilerini doldurun ve **İleri'yi** seçin.
-    - **Adı** Ad ve soyadını, görünen adı ve kullanıcı adını girin.
-    - **Etki alanı** Kullanıcı hesabının etki alanını seçin. Örneğin, kullanıcının kullanıcı adı Jakob ve etki alanı contoso.com ise jakob@contoso.com kullanarak oturum açar.
+    - **Ad** Ad ve soyadını, görünen adı ve kullanıcı adını girin.
+    - **Alan** Kullanıcı hesabının etki alanını seçin. Örneğin, kullanıcının kullanıcı adı Jakob ve etki alanı contoso.com ise jakob@contoso.com kullanarak oturum açar.
     - **Parola ayarları** Otomatik olarak oluşturulan parolayı kullanmayı veya kullanıcı için kendi güçlü parolanızı oluşturmayı seçin.
     - Kullanıcı 90 gün sonra parolasını değiştirmelidir. Alternatif olarak **, bu kullanıcının ilk oturum açma sırasında parolasını değiştirmesini gerektir'i** de seçebilirsiniz.
     - Kullanıcı eklendiğinde parolayı e-postayla göndermek isteyip istemediğinizi seçin.

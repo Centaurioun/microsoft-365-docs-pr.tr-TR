@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
@@ -27,12 +28,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 İş Standart satın aldığınızda, sahip olduğunuz bir etki alanını kullanma veya kayıt sırasında bir etki alanı satın alma seçeneğiniz vardır.
-ms.openlocfilehash: d5504edaff4c9d406d218d8ab8333b6d50af406e
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: e991118fd645c01e4cc733f80bde7d9424f297c1
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573901"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085147"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Yeni veya var olan bir etki alanıyla Microsoft 365 İş Standart ayarlama
 

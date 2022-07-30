@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: Microsoft 365 İleti merkezi ve yeni ve değiştirilmiş özellikleri ve diğer önemli duyuruları izlemedeki rolüne genel bakış edinin.
-ms.openlocfilehash: 498267d62dadef0ec9c0e8811708416dd138eb58
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Microsoft 365 İleti merkezi'ne ve yeni ve değiştirilmiş özellikleri ve diğer önemli duyuruları izlemedeki rolüne genel bakış edinin.
+ms.openlocfilehash: 403b16f0f1624034a1224dfe53841a81ee53d572
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466800"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085673"
 ---
 # <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>Microsoft 365 İleti merkezinde yeni ve değiştirilmiş özellikleri izleme
 
@@ -59,21 +59,21 @@ Anında iletme bildirimleriyle güncel kalmanın harika bir yolu olan İleti mer
 
 |Soru|Cevap|
 |---|---|
-|İleti merkezinde gönderileri Who görüntüleyebilir?|Microsoft 365'de herhangi bir yönetici rolü atanmış kullanıcıların çoğu İleti merkezi gönderilerini görüntüleyebilir. İleti merkezine erişimi olmayan yönetici rollerinin [listesi aşağıdadır](#admin-roles-that-dont-have-access-to-the-message-center). İleti merkezi okuyucusu rolünü, başka yönetici ayrıcalıklarına sahip olmadan İleti merkezi gönderilerini okuyup paylaşabilecek kullanıcılara da atayabilirsiniz.|
-|Microsoft'un Microsoft 365 hakkındaki değişiklikleri iletmesinin tek yolu bu mu?|Hayır, ancak İleti merkezi, Microsoft 365 tek tek değişikliklerin zamanlamasını iletmenin birincil yoludur. Ek kaynaklar hakkında daha fazla bilgi için bkz. [Microsoft 365 değişikliklerden haberdar olun](stay-on-top-of-updates.md).|
+|İleti merkezinde gönderileri kimler görüntüleyebilir?|Microsoft 365'te herhangi bir yönetici rolü atanmış kullanıcıların çoğu İleti merkezi gönderilerini görüntüleyebilir. İleti merkezine erişimi olmayan yönetici rollerinin [listesi aşağıdadır](#admin-roles-that-dont-have-access-to-the-message-center). İleti merkezi okuyucusu rolünü, başka yönetici ayrıcalıklarına sahip olmadan İleti merkezi gönderilerini okuyup paylaşabilecek kullanıcılara da atayabilirsiniz.|
+|Microsoft'un Microsoft 365 hakkındaki değişiklikleri iletmesinin tek yolu bu mu?|Hayır, ancak Microsoft 365'te tek tek değişikliklerin zamanlamasını iletmenin birincil yolu İleti merkezidir. Ek kaynaklar hakkında bilgi için bkz. [Microsoft 365 değişikliklerinden haberdar olun](stay-on-top-of-updates.md) .|
 |Gönderileri kendi dilimde nasıl görebilirim?|İleti merkezi gönderileri yalnızca İngilizce yazılır, ancak gönderilerin varsayılan olarak İngilizce mi gösterileceğini yoksa otomatik olarak tercih ettiğiniz dile makine çevirisi mi yapılıp yapılmayacağını denetleyebilirsiniz. Ayrıca gönderileri makine çevirisi olarak desteklediğimiz herhangi bir dile çevirmeyi de seçebilirsiniz. Diğer ayrıntılar için bkz. [İleti merkezi gönderileri için dil çevirisi](language-translation-for-message-center-posts.md) .|
-|Değişiklikleri veya özellikleri kuruluşuma sunulmadan önce önizleyebilir miyim?|Bazı değişiklikler ve yeni özellikler, Hedeflenen sürüm programına kabul edilerek önizlenebilir. Kabul etmek için yönetim merkezinde **Ayarlar** >  **Org** **ayarlarıGeliştirme** >  **profiliİliştirme** >  tercihleri'ne gidin. (yönetim merkezinde, **Ayarlar** görmek için sol gezinti bölmesinin alt kısmındaki **Tümünü göster'i** seçmeniz gerekebilir.) Tüm kuruluşunuz için veya yalnızca seçili kullanıcılar için Hedefli sürümü seçebilirsiniz. Program hakkında daha fazla bilgi için [Microsoft 365'daki Standart veya Hedefli sürüm seçenekleri](release-options-in-office-365.md) bölümüne bakın.|
+|Değişiklikleri veya özellikleri kuruluşuma sunulmadan önce önizleyebilir miyim?|Bazı değişiklikler ve yeni özellikler, Hedeflenen sürüm programına kabul edilerek önizlenebilir. Kabul etmek için yönetim merkezinde **Ayarlar** > **Kuruluş ayarları** > **Kuruluş profili** > **Sürüm tercihleri'ne** gidin. (**Ayarlar'ı** görmek için yönetim merkezinde sol gezinti bölmesinin alt kısmındaki **Tümünü göster'i** seçmeniz gerekebilir.) Tüm kuruluşunuz için veya yalnızca seçili kullanıcılar için Hedefli sürümü seçebilirsiniz. Program hakkında daha fazla bilgi için bkz. [Microsoft 365'te Standart veya Hedefli sürüm seçenekleri](release-options-in-office-365.md) .|
 |Bir değişikliğin kuruluşum tarafından kullanılabilmesi için tam tarihi öğrenebilir miyim?|Ne yazık ki, kuruluşunuzda bir değişikliğin yapılacağı tarihi tam olarak size söyleyemeyiz. İleti merkezi gönderimizde, güvenilirlik düzeyimize göre yayının zamanlaması hakkında olabildiğince fazla bilgi vereceğiz. Bu ayrıntı düzeyiyle daha iyiye gitmek için geliştirmeler üzerinde çalışıyoruz.|
 |Bu iletiler kuruluşuma özgü mü?|Yalnızca kuruluşunuzu etkileyen İleti merkezi gönderilerini gördüğünüzden emin olmak için elimizden geleni yapıyoruz. Microsoft 365 Yol Haritası şu anda üzerinde çalıştığımız ve sunduğumuz tüm özellikleri içerir, ancak bu özelliklerin tümü her kuruluş için geçerli değildir.|
 |Bunun yerine ileti merkezi gönderilerini e-postayla alabilir miyim?|Evet! Haftalık özetin size ve diğer iki e-posta adresine e-posta ile gönderilip gönderilemeyebileceğini seçebilirsiniz. E-postayla gelen haftalık özet varsayılan olarak açıktır. Haftalık özetlerinizi almıyorsanız istenmeyen posta klasörünüzü denetleyin. Haftalık özeti ayarlama hakkında daha fazla bilgi için bu makalenin [Tercihler](#preferences) bölümüne bakın.|
-|İleti merkezi özetini almayı durdurmak Nasıl yaparım??|Yönetim merkezinde İleti merkezi'ne gidin ve **Tercihler'i** seçin. **E-posta** sekmesinde, **İleti merkezinden bana e-posta bildirimleri gönder** seçeneğini kapatın.|
+|İleti merkezi özetini almayı durdurmak Nasıl yaparım??|Yönetim merkezinde İleti merkezi'ne gidin ve **Tercihler'i** seçin. **Email** sekmesinde, **İleti merkezinden bana e-posta bildirimleri gönder** seçeneğini kapatın.|
 |Kuruluşumdaki doğru kişiler tarafından veri gizliliği bildirimlerinin alındığından nasıl emin olabilirim?|Genel yönetici olarak kuruluşunuz için veri gizliliği iletileri alırsınız. Ayrıca, veri gizliliği iletilerini görmesi gereken kişilere İleti Merkezi Gizlilik okuyucusu rolünü atayabilirsiniz. İleti Merkezi'ne erişimi olan diğer yönetici rolleri veri gizliliği iletilerini görüntüleyemez.   <br/><br/>Daha fazla bilgi için bu makaledeki [Tercihler'e](#preferences) bakın.|
 |Daha önce orada olan bir iletiyi neden göremiyorum?|İleti merkezi içindeki ileti sayısını yönetmek için her iletinin süresi dolar ve bir süre sonra kaldırılır. Genellikle iletilerin süresi, ileti gövdesinde ana hatlarıyla belirtilen sürenin ardından 30 gün içinde sona erer.|
 |
 
 ## <a name="filter-messages"></a>İletileri filtreleme
 
-İleti merkezi, tüm etkin iletilerin bir görünümünü tablo biçiminde sunar. Varsayılan olarak, listenin en üstünde en son iletiyi gösterir. Microsoft 365 Uygulamaları, SharePoint Online gibi çeşitli hizmetlere yönelik iletileri görmek için **Hizmet'i** seçebilirsiniz.   **Etiket** altında **Yönetici etkisi**, **Veri gizliliği**, **Özellik güncelleştirmesi**, **Ana güncelleştirme**, **Yeni özellik**, **Kullanımdan kaldırma** veya **Kullanıcı etkisi** iletileri'ni seçebilirsiniz. **İleti durumu altında** **Sık Kullanılanlar**, **Okunmamış** veya **Güncelleştirilmiş** iletiler'i seçebilirsiniz.
+İleti merkezi, tüm etkin iletilerin bir görünümünü tablo biçiminde sunar. Varsayılan olarak, listenin en üstünde en son iletiyi gösterir. Microsoft 365 Uygulamaları, SharePoint Online gibi çeşitli hizmetlere yönelik iletileri görmek için **Hizmet'i** seçebilirsiniz.   **Etiket** altında **Yönetici etki**, **Veri gizliliği**, **Özellik güncelleştirmesi**, **Önemli güncelleştirme**, **Yeni özellik**, **Kullanımdan kaldırma** veya **Kullanıcı etkisi** iletilerini seçebilirsiniz. **İleti durumu altında** **Sık Kullanılanlar**, **Okunmamış** veya **Güncelleştirilmiş** iletiler'i seçebilirsiniz.
 
 Arşivle sekmesinde arşivlediğiniz iletiler gösterilir. Bir iletiyi arşivlemek için, ileti bölmesinde **Arşivle'yi** seçin.
 
@@ -83,7 +83,7 @@ Arşivle sekmesinde arşivlediğiniz iletiler gösterilir. Bir iletiyi arşivlem
 
 İletileri artan veya azalan düzende sıralamak için **Hizmet** ve **Etiket** dışında herhangi bir sütun başlığı seçebilirsiniz.
 
-:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="yönetici etkisine göre sıralanmış ileti merkezi görünümü.":::
+:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Yönetici etkisine göre sıralanmış ileti merkezi görünümü.":::
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ Yönetim kuruluşunuz genelinde dağıtılmışsa, tüm Microsoft 365 hizmetleri
 
 2. **Özel Görünüm** sekmesinde, izlemek istediğiniz her hizmet için onay kutusunun seçili olduğundan emin olun. İleti merkezi görünümünüzün dışında filtrelemek istediğiniz hizmetlerin onay kutularını temizleyin.
 
-3. Özet e-postaları varsayılan olarak açıktır ve birincil e-posta adresinize gönderilir. Haftalık özeti almayı durdurmak için, E-posta **sekmesindeki** **İleti merkezinden bana e-posta bildirimleri gönder** onay kutusunu temizleyin. 
+3. Özet e-postaları varsayılan olarak açıktır ve birincil e-posta adresinize gönderilir. Haftalık özeti almayı durdurmak için, **Email sekmesindeki** **İleti merkezinden bana e-posta bildirimleri gönder** onay kutusunu temizleyin. 
 
    Ayrıca, noktalı virgülle ayırarak en çok iki e-posta adresi girebilirsiniz.
 
@@ -142,7 +142,7 @@ Yönetim kuruluşunuz genelinde dağıtılmışsa, tüm Microsoft 365 hizmetleri
 
 2. **Özel Görünüm** sekmesinde, izlemek istediğiniz her hizmet için onay kutusunun seçili olduğundan emin olun. İleti merkezi görünümünüzün dışında filtrelemek istediğiniz hizmetlerin onay kutularını temizleyin.
 
-3. Özet e-postaları varsayılan olarak açıktır ve birincil e-posta adresinize gönderilir. Haftalık özeti almayı durdurmak için, E-posta **sekmesindeki** **İleti merkezinden bana e-posta bildirimleri gönder** onay kutusunu temizleyin.
+3. Özet e-postaları varsayılan olarak açıktır ve birincil e-posta adresinize gönderilir. Haftalık özeti almayı durdurmak için, **Email sekmesindeki** **İleti merkezinden bana e-posta bildirimleri gönder** onay kutusunu temizleyin.
 
    Ayrıca, noktalı virgülle ayırarak en çok iki e-posta adresi girebilirsiniz.
 
@@ -161,11 +161,11 @@ Yönetim kuruluşunuz genelinde dağıtılmışsa, tüm Microsoft 365 hizmetleri
 
 ## <a name="monthly-active-users"></a>Aylık etkin kullanıcılar
 
-Bir ileti merkezi gönderisini açtığınızda, **hizmet & aylık etkin kullanıcılar** bölümünde bu Microsoft 365 uygulamasını veya hizmetini kullanan kullanıcı sayısını size söyleriz. Sayılar son 28 güne yönelik. Bu bilgiler, hangi değişiklikler üzerinde çalışmanız gerektiğini önceliklendirmenize yardımcı olabilir.
+Bir ileti merkezi gönderisini açtığınızda, **Hizmet & aylık etkin kullanıcılar** bölümünde bu Microsoft 365 uygulamasını veya hizmetini kullanan kullanıcı sayısını size söyleriz. Sayılar son 28 güne yönelik. Bu bilgiler, hangi değişiklikler üzerinde çalışmanız gerektiğini önceliklendirmenize yardımcı olabilir.
 
-:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="Ekran görüntüsü: aylık etkin kullanıcı verileriyle ileti merkezi gönderisindeki Microsoft Teams Sohbet yoğunluğu sayfasını gösterme":::
+:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="Ekran görüntüsü: Aylık etkin kullanıcı verileriyle ileti merkezi gönderisindeki Microsoft Teams Sohbet yoğunluğu sayfasını gösterme":::
 
-Aylık kullanıcı sayısı, bu Microsoft 365 uygulamayı veya hizmeti herhangi bir cihazda kullanan tüm kullanıcılar için geçerlidir.
+Aylık kullanıcı sayısı, microsoft 365 uygulamasını veya hizmetini herhangi bir cihazda kullanan tüm kullanıcılar için geçerlidir.
 
 > [!NOTE]
 > Bu özellik henüz tüm Microsoft 365 uygulamaları ve hizmetleri için kullanılamamaktadır. Özellik kullanılamadığında size haber vereceğiz.
@@ -188,14 +188,14 @@ Her sütunda göreceğiniz bilgilere hızlı bir genel bakış aşağıda verilm
 |İleti başlığı|İleti başlıkları, yaklaşan değişikliklerin kısa açıklamalarıdır. Başlığın tamamı görüntülenmiyorsa imlecinizi üzerine getirin; başlığın tamamı bir açılır kutuda görünür.|
 |Hizmet|Simgeler, iletinin uygulandığı uygulamayı gösterir.|
 |Diğer seçenekler|Diğer seçenekler bir iletiyi kapatmanıza, okundu veya okunmadı olarak işaretlemenize veya başka bir yöneticiyle paylaşmanıza olanak tanır. Arşivlenmiş bir iletiyi geri yüklemek için **Arşiv** sekmesini seçin, iletinin yanındaki onay işaretini ve **ardından Geri Yükle'yi** seçin.|
-|Etiketler| İletileri filtrelemek için Etiket açılan listesinden etiketleri seçebilirsiniz. <br> <p> **Veri Gizliliği**: Veri gizliliği bildirimi (genel yönetici ve İleti merkezi Gizlilik okuyucusu rolleri ile sınırlıdır). <p> **Önemli güncelleştirme**: Değişiklikler en az 30 gün önce iletildi ([Önemli güncelleştirmeler](#major-updates)). <p> **Kullanımdan kaldırma**: Bir hizmetin veya özelliğin kullanımdan kaldırılması. <p> **Yeni özellik**: Yeni özellik veya hizmet. <p> **Özellik güncelleştirmesi**: Mevcut bir özelliğe güncelleştirin. <p> **Yönetici etkisi**: Değişiklik, yöneticiyi şu yollarla açıkça etkilediğinde: kullanıcı arabirimi değişikliği, iş akışı değişikliği, kullanılabilir denetim ve Belirli/Olası Eylem. <p> **Kullanıcı etkisi**: Hizmette yapılan değişiklik kullanıcıyı açıkça etkilediğinde - UI Değişikliği ve iş akışı değişikliği. <p> **Güncelleştirilmiş ileti**: bir ileti güncelleştirildiğinde.|
-|Kategori| Bu varsayılan olarak gösterilmez, ancak **Sütunları seçin** panelinde belirtilebilir. İletiler aşağıdaki üç kategoriden biriyle tanımlanır: <p> **Sorunları önleme veya düzeltme**: Kuruluşunuzu etkileyen bilinen sorunlar hakkında sizi bilgilendirir ve hizmette kesinti yaşanmasını önlemek için işlem yapmanız gerekebilir. Sorunları önleme veya düzeltme, sorunlardan kaçınmak için proaktif olmanız istendiği için Hizmet durumu iletilerden farklıdır. <p> **Değişiklik planı**: hizmette kesinti yaşanmasını önlemek için işlem gerçekleştirmenizi gerektirebilecek Microsoft 365 değişikliklerini size bildirir. Örneğin, sistem gereksinimlerindeki değişiklikler veya kaldırılan özellikler hakkında sizi uyaracağız. Bir yöneticinin hizmetin normal şekilde çalışmasını sağlamak için işlem yapmalarını gerektiren herhangi bir değişiklik için en az 30 günlük bildirim sağlamaya çalışıyoruz. <p> **Bilgi sahibi olun**: Kuruluşunuzda etkinleştirdiğimiz yeni veya güncelleştirilmiş özellikler hakkında bilgi sağlar. Özellikler genellikle [ilk olarak Microsoft 365 Yol Haritası'nda duyurulur](https://go.microsoft.com/fwlink/?linkid=2070821). <p> Hizmet Düzeyi Sözleşmemize uygun olarak planlı bakım hakkında da bilgi verebilir. Planlı bakım, sizin veya kullanıcılarınızın Microsoft 365, belirli bir özelliğe veya e-posta ya da OneDrive İş gibi bir hizmete erişememenize neden olabilir.|
+|Etiketler| İletileri filtrelemek için Etiket açılan listesinden etiketleri seçebilirsiniz. <br> <p> **Veri Gizliliği**: Veri gizliliği bildirimi (genel yönetici ve İleti merkezi Gizlilik okuyucusu rolleri ile sınırlıdır). <p> **Önemli güncelleştirme**: Değişiklikler en az 30 gün önce iletildi ([Önemli güncelleştirmeler](#major-updates)). <p> **Kullanımdan kaldırma**: Bir hizmetin veya özelliğin kullanımdan kaldırılması. <p> **Yeni özellik**: Yeni özellik veya hizmet. <p> **Özellik güncelleştirmesi**: Mevcut bir özelliğe güncelleştirin. <p> **Yönetici etkisi**: Değişiklik yöneticiyi şu yollarla açıkça etkilediğinde: kullanıcı arabirimi değişikliği, iş akışı değişikliği, kullanılabilir denetim ve Belirli/Olası Eylem. <p> **Kullanıcı etkisi**: Hizmette yapılan değişiklik kullanıcıyı açıkça etkilediğinde - UI Değişikliği ve iş akışı değişikliği. <p> **Güncelleştirilmiş ileti**: bir ileti güncelleştirildiğinde.|
+|Kategori| Bu varsayılan olarak gösterilmez, ancak **Sütunları seçin** panelinde belirtilebilir. İletiler aşağıdaki üç kategoriden biriyle tanımlanır: <p> **Sorunları önleme veya düzeltme**: Kuruluşunuzu etkileyen bilinen sorunlar hakkında sizi bilgilendirir ve hizmette kesinti yaşanmasını önlemek için işlem yapmanız gerekebilir. Sorunları önleme veya düzeltme, sorunlardan kaçınmak için proaktif olmanız istendiği için Hizmet durumu iletilerden farklıdır. <p> **Değişiklik planı**: Microsoft 365'te hizmet kesintilerini önlemek için işlem gerçekleştirmenizi gerektirebilecek değişiklikleri size bildirir. Örneğin, sistem gereksinimlerindeki değişiklikler veya kaldırılan özellikler hakkında sizi uyaracağız. Bir yöneticinin hizmetin normal şekilde çalışmasını sağlamak için işlem yapmalarını gerektiren herhangi bir değişiklik için en az 30 günlük bildirim sağlamaya çalışıyoruz. <p> **Bilgi sahibi olun**: Kuruluşunuzda etkinleştirdiğimiz yeni veya güncelleştirilmiş özellikler hakkında bilgi sağlar. Özellikler genellikle ilk olarak [Microsoft 365 Yol Haritası'nda duyurulur](https://go.microsoft.com/fwlink/?linkid=2070821). <p> Hizmet Düzeyi Sözleşmemize uygun olarak planlı bakım hakkında da bilgi verebilir. Planlı bakım, sizin veya kullanıcılarınızın Microsoft 365'e, belirli bir özelliğe veya e-posta veya OneDrive İş gibi bir hizmete erişememenize neden olabilir.|
 |Eylem ölçütü|Burada yalnızca belirli bir son tarihe kadar eylem gerçekleştirmenizi gerektiren bir değişiklik yaptığımızda tarihler bulunur. **Act by** sütununu nadiren kullandığımızdan, burada bir şey görürseniz, buna fazladan dikkat etmeniz gerekir.|
 |Son güncelleştirme|İletinin yayımlandığı veya son güncelleştirilildiği tarih.|
 |İleti Kimliği|Microsoft, İleti merkezi gönderilerimizi ileti kimliğine göre izler. Geri bildirimde bulunmak istiyorsanız veya belirli bir ileti hakkında Destek'i ararsanız bu kimlikle ilgili bilgi verebilirsiniz.|
 |
 
-### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>İleti merkezine erişimi olmayan yönetici rolleri
+### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>İleti merkezine erişimi olmayan rolleri Yönetici
 
 - Uyumluluk yöneticisi
 - Koşullu erişim yöneticisi
@@ -215,7 +215,7 @@ Her sütunda göreceğiniz bilgilere hızlı bir genel bakış aşağıda verilm
 İleti hakkında geri bildirim sağlamak istiyorsanız, ayrıntılar bölmesinde, ileti ayrıntıları bölmesinin altındaki **Beğen** veya **Beğenme** simgesini seçin ve görüntülenen metin kutusunda isteğe bağlı geri bildirim sağlayın. Hiçbir kişisel bilgi sağlamayın. İsteğe bağlı olarak **bu geri bildirim hakkında benimle iletişime geçmeniz sorun değil'i** ve ardından **Gönder'i** seçebilirsiniz.
 
 > [!NOTE]
-> Kamu için Microsoft 365 kullanıyorsanız - GCC, Kamu için Microsoft 365 - Yüksek GCC ve Office 365 Kamu - DoD, bir gönderi hakkında geri bildirim sağlayamazsınız.
+> Kamu için Microsoft 365 - GCC, Kamu için Microsoft 365 - GCC High ve Office 365 Kamu - DoD kullanıyorsanız, bir gönderi hakkında geri bildirim sağlayamazsınız.
 
 ## <a name="share-a-message"></a>İleti paylaşma
 
@@ -268,15 +268,15 @@ Bir iletiyi okuma bölmesinde açtığınızda, bir sonrakine veya listedeki ön
 
 ## <a name="track-your-message-center-tasks-in-planner"></a>Planner'da ileti merkezi görevlerinizi izleme
 
-Microsoft 365 hizmetlerinde yapılan değişikliklerle ilgili birçok eyleme dönüştürülebilir bilgi Microsoft 365 ileti merkezine ulaşır. Hangi değişikliklerin, görevlerin ne zaman, kim tarafından yapılmasını gerektirdiğini ve her görevin tamamlanması için izlenmesini izlemek zor olabilir. Ayrıca bir şeyi not almak ve daha sonra denetlemek için etiketlemek de isteyebilirsiniz. İletilerinizi Microsoft 365 yönetim merkezi Microsoft Planner eşitlerken tüm bunları ve daha fazlasını yapabilirsiniz. Daha fazla bilgi için bkz. [Planner'da ileti merkezi görevlerinizi izleme](/office365/planner/track-message-center-tasks-planner).
+Microsoft 365 hizmetlerindeki değişikliklerle ilgili birçok eyleme dönüştürülebilir bilgi Microsoft 365 ileti merkezine ulaşır. Hangi değişikliklerin, görevlerin ne zaman, kim tarafından yapılmasını gerektirdiğini ve her görevin tamamlanması için izlenmesini izlemek zor olabilir. Ayrıca bir şeyi not almak ve daha sonra denetlemek için etiketlemek de isteyebilirsiniz. İletilerinizi Microsoft 365 yönetim merkezi Microsoft Planner eşitlerken tüm bunları ve daha fazlasını yapabilirsiniz. Daha fazla bilgi için bkz. [Planner'da ileti merkezi görevlerinizi izleme](/office365/planner/track-message-center-tasks-planner).
 
-İleti merkezine genel bakış için bkz. [Microsoft 365'da İleti merkezi](message-center.md). Öte yandan, İleti merkezi gönderileri için makine çevirisini etkinleştirmek üzere dil tercihlerinizi nasıl ayarlayacağınızı öğrenmek için bkz. [İleti merkezi gönderileri için dil çevirisi](language-translation-for-message-center-posts.md). Gerçek zamanlı hizmet durumu bilgilerini ve İleti merkezi iletişimlerini almak için alternatif bir yol programlamak istiyorsanız bkz[. Microsoft Graph'de hizmet iletişimleri API'siyle çalışma](/graph/api/resources/service-communications-api-overview).
+İleti merkezine genel bakış için bkz. [Microsoft 365'te İleti merkezi](message-center.md). Öte yandan, İleti merkezi gönderileri için makine çevirisini etkinleştirmek üzere dil tercihlerinizi nasıl ayarlayacağınızı öğrenmek için bkz. [İleti merkezi gönderileri için dil çevirisi](language-translation-for-message-center-posts.md). Gerçek zamanlı hizmet durumu bilgilerini ve İleti merkezi iletişimlerini almak için alternatif bir yol programlamak isterseniz bkz. [Microsoft Graph'ta hizmet iletişimleri API'siyle çalışma](/graph/api/resources/service-communications-api-overview).
 
 ## <a name="unsubscribe-from-message-center-emails"></a>İleti merkezi e-postalarının aboneliğini kaldırma
 
-1. Özet e-postaları varsayılan olarak açıktır ve birincil e-posta adresinize gönderilir. Haftalık özeti almayı durdurmak için **Tercihler'i** ve ardından **E-posta'yı** seçin.
+1. Özet e-postaları varsayılan olarak açıktır ve birincil e-posta adresinize gönderilir. Haftalık özeti almayı durdurmak için **Tercihler'i** seçin ve **Email**.
     - **İletilerimin haftalık özetini gönder** onay kutusunun işaretini kaldırın.
-    - Önemli güncelleştirmeler için e-posta bildirimi ayrı bir denetimdir. Büyük güncelleştirmelerle ilgili e-posta bildirimleri almak istemiyorsanız, Büyük güncelleştirmeler **için bana e-posta gönder** onay kutusunun seçili olmadığını doğrulayın.
+    - Büyük güncelleştirmeler için Email bildirim ayrı bir denetimdir. Büyük güncelleştirmelerle ilgili e-posta bildirimleri almak istemiyorsanız, Büyük güncelleştirmeler **için bana e-posta gönder** onay kutusunun seçili olmadığını doğrulayın.
     - Veri gizliliği iletileriyle ilgili e-posta bildirimlerini almayı durdurmak **için Veri gizliliği iletileri için bana e-posta gönder** onay kutusunun seçili olmadığını doğrulayın.  (Veri gizliliği iletileri haftalık özete dahil değildir.)
 
 2. Değişikliklerinizi korumak için **Kaydet'i** seçin.
@@ -284,5 +284,5 @@ Microsoft 365 hizmetlerinde yapılan değişikliklerle ilgili birçok eyleme dö
 ## <a name="related-content"></a>İlgili içerik
 
 [Standart veya Hedefli sürüm seçeneklerini ayarlama](../manage/release-options-in-office-365.md) (makale)\
-Yenilikler (makale) [bölümünde hangi Office özelliklerinin görüneceğini yönetme](../manage/show-hide-new-features.md)\
+[Yenilikler bölümünde hangi Office özelliklerinin görüneceğini yönetme](../manage/show-hide-new-features.md) (makale)\
 [İş abonelikleri ve faturalama belgeleri](../../commerce/index.yml) (bağlantı sayfası)

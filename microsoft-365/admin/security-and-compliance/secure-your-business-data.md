@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: deniseb
 author: denisebmsft
-manager: dansimp
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
@@ -28,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: İş e-postanızı ve verilerinizi fidye yazılımı, kimlik avı ve kötü amaçlı ekler gibi siber tehditlere karşı koruyun.
-ms.openlocfilehash: 347d88a95d8ed55116655980560eb3d9cf925213
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: db9822a87c180577afe4040e7828471b993bd0d5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602944"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087451"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>İş için Microsoft 365'i güvenli hale getirmek için en iyi yöntemler
 
@@ -145,7 +146,7 @@ Microsoft 365 ortamınız kötü amaçlı yazılımlara karşı koruma içerir. 
 
 Kötü amaçlı yazılım için yaygın olarak kullanılan dosya türlerine sahip ekleri engelleyerek kötü amaçlı yazılım korumanızı artırabilirsiniz. E-postada kötü amaçlı yazılım korumasını artırmak için [İzleyin: Postada kötü amaçlı yazılımlara karşı koruma düzeyini yükseltin](increase-threat-protection.md#watch-raise-the-level-of-protection-against-malware-in-mail) veya aşağıdaki adımları tamamlayın:
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a>, **İlkeler** bölümünde **e-posta & işbirliği** \> **İlkeleri & kurallar** \> **Tehdit ilkeleri** \> **Kötü amaçlı yazılımdan koruma** bölümüne gidin.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a>, İlkeler **bölümünde** **Email & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kötü amaçlı yazılımdan koruma** bölümüne gidin.
 2. **Kötü amaçlı yazılımdan koruma** sayfasında **Varsayılan'a** çift tıklayın. Açılır öğe görüntülenir.
 3. Açılır pencerenin alt kısmındaki **Koruma ayarlarını düzenle'yi** seçin.
 4. Sonraki sayfada, **Koruma ayarları'nın** altında **Ortak ekler filtresini etkinleştir'in** yanındaki onay kutusunu seçin. Engellenen dosya türleri bu seçeneğin hemen altında listelenir. Dosya türleri eklemek veya silmek için listenin sonundaki **Dosya türlerini özelleştir'i** seçin.
@@ -229,7 +230,7 @@ E-postanızı şifrelemek için:
 1. Yeni bir e-posta açıkken **Seçenekler** menüsünü seçin.
 1. **Şifrele** açılan listesinden uygun izin düzeyini seçin.
 
-:::image type="content" source="../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png" alt-text="Outlook'ta e-posta iletisi şifrelemesi":::
+:::image type="content" source="../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png" alt-text="Outlook'ta ileti şifrelemeyi Email":::
 
 ### <a name="receive-encrypted-email"></a>Şifrelenmiş e-posta alma
 
@@ -251,7 +252,7 @@ En önemli kullanıcılarınız ve özel etki alanınız için bir ilke oluştur
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalına</a> gidin.
 
-2. **İlkeler bölümünde e-posta & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin.
+2. İlkeler **bölümünde** **Email & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin.
 
 3. Kimlik avı önleme sayfasında **+ Oluştur'u** seçin. Kimlik avı önleme ilkenizi tanımlama işleminde size yol gösteren bir sihirbaz başlatılır.
 
@@ -283,7 +284,7 @@ Kişiler belgeler, sunular, elektronik tablolar ve daha fazlası gibi ekleri dü
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalına</a> gidin ve yönetici hesabınızla oturum açın.
 
-2. **İlkeler** bölümünde **e-posta & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kötü amaçlı yazılımdan koruma** bölümüne gidin.
+2. **İlkeler bölümünde Email & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kötü amaçlı yazılımdan koruma** bölümüne gidin.
 
 3. Yeni bir ilke oluşturmak için **+ Oluştur'u** seçin.
 
@@ -316,7 +317,7 @@ Güvenli Bağlantılar'a ulaşmak için [İzleme: E-postanızı kimlik avı sald
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalına</a> gidin ve yönetici hesabınızla oturum açın.
 
-2. **İlkeler** bölümünde **e-posta & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kötü amaçlı yazılımdan koruma** bölümüne gidin.
+2. **İlkeler bölümünde Email & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kötü amaçlı yazılımdan koruma** bölümüne gidin.
 
 3. Yeni bir ilke oluşturmak veya varsayılan ilkeyi değiştirmek için **+ Oluştur'u** seçin.
 

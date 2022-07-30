@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 monikerRange: o365-worldwide
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: SharePoint Geçiş Yöneticisi'ni kullanarak Google dosyalarını İş için Microsoft 365'e geçirmeyi öğrenin.
-ms.openlocfilehash: 68b3a0455a2bf57e35308c428bf2b5de3e4b5983
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 55dd5740192914b89e7be1da070b97b4f6983c97
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602126"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085580"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business-with-migration-manager"></a>Migration Manager ile Google dosyalarını İş için Microsoft 365'e geçirme
 

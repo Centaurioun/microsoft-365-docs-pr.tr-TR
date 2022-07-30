@@ -1,10 +1,10 @@
 ---
-title: Silinmiş bir grup Microsoft 365 geri yükleme
+title: Silinen bir Microsoft 365 grubunu geri yükleme
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,25 +21,25 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
-description: Silinen bir grup 30 gün boyunca korunur ve grubu yine de geri yükleyebilirsiniz. 30 gün sonra, grup ve içeriği kalıcı olarak silinir.
-ms.openlocfilehash: 926cfa18972a7ca72009258b02b565bd28a183be
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Silinen bir grup 30 gün boyunca saklanır ve yine de grubu geri yükleyebilirsiniz. 30 gün sonra grup ve içeriği kalıcı olarak silinir.
+ms.openlocfilehash: f16d8b13ad020aec48d39a61e2429b088cc5f2d1
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983978"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084201"
 ---
-# <a name="restore-a-deleted-microsoft-365-group"></a>Silinmiş bir grup Microsoft 365 geri yükleme
+# <a name="restore-a-deleted-microsoft-365-group"></a>Silinen bir Microsoft 365 grubunu geri yükleme
 
-Grubu sildikten sonra, grup varsayılan olarak 30 gün boyunca korunur. Bu 30 günlük süre "yumuşak silme" olarak kabul edilir, çünkü grubu yine de geri yükleyebilirsiniz. 30 gün sonra, grup ve ilişkili içeriği kalıcı olarak silinir ve geri yüklenir.
+Bir grubu sildiyseniz, grup varsayılan olarak 30 gün boyunca korunur. Grubu geri yükleyebildiğiniz için bu 30 günlük süre "geçici silme" olarak kabul edilir. 30 gün sonra grup ve ilişkili içeriği kalıcı olarak silinir ve geri yüklenemez.
 
 Grup geri yüklendiğinde, aşağıdaki içerikler geri yüklenir:
   
-- Azure Active Directory (AD) Microsoft 365 Groups nesnesi, özellikleri ve üyelerini görüntüler.
+- Azure Active Directory (AD) nesnesi, özellikleri ve üyeleri Microsoft 365 Grupları.
     
 - Grubun e-posta adresleri.
     
-- Exchange Online Kutusu'na ve takvime tıklayın.
+- Paylaşılan Gelen Kutusu'nu ve takvimi Exchange Online.
     
 - SharePoint Online ekip sitesi ve dosyaları.
     
@@ -49,45 +49,45 @@ Grup geri yüklendiğinde, aşağıdaki içerikler geri yüklenir:
     
 - Teams
 
-- Yammer ve grup içeriğinin nasıl oluşturulacaklarını seçin (Microsoft 365 grup, gruptan Yammer)
+- Yammer grubu ve grup içeriği (Microsoft 365 grubu Yammer'dan oluşturulduysa)
 
 - Power BI [Klasik çalışma alanı](/power-bi/collaborate-share/service-create-workspaces)
 
 > [!NOTE]
-> Bu makalede yalnızca kullanıcı gruplarının geri Microsoft 365 açıklanmıştır. Diğer tüm gruplar bir kez silindikten sonra geri yüklenebilir.
+> Bu makalede yalnızca Microsoft 365 gruplarının geri yüklenmesi açıklanmaktadır. Diğer tüm gruplar silindikten sonra geri yüklenemez.
 
 ## <a name="restore-a-group"></a>Grubu geri yükleme
 
 # <a name="outlook"></a>[Outlook](#tab/outlook)
 
-Bir grup sahibiyseniz, Microsoft 365 aşağıdaki adımları kullanarak grubu kendiniz Web üzerinde Outlook geri yükleyebilirsiniz:
+Bir Microsoft 365 grubunun sahibiyseniz, aşağıdaki adımları izleyerek grubu Web üzerinde Outlook'da kendiniz geri yükleyebilirsiniz:
 
-1. Silinmiş gruplar [sayfasında Gruplar düğümünün](https://outlook.office.com/people/group/deleted) **altındaki Grupları yönet** seçeneğini belirleyin **ve** ardından Silinmiş'i **seçin**.
+1. [Silinen gruplar sayfasında](https://outlook.office.com/people/group/deleted), **Gruplar** düğümü altındaki **Grupları yönet** seçeneğini ve ardından **Silinmiş'i** seçin.
 
-2. Geri yüklemek **istediğiniz** grubun yanındaki Geri Yükle sekmesine tıklayın.
+2. Geri yüklemek istediğiniz grubun yanındaki **Geri Yükle** sekmesine tıklayın.
 
-Silinen grup burada görünmüyorsa, yöneticiye başvurun.
+Silinen grup burada görünmüyorsa bir yöneticiye başvurun.
 
-# <a name="admin-center"></a>[Yönetim merkezi](#tab/admin-center)
+# <a name="admin-center"></a>[Yönetici merkezi](#tab/admin-center)
 
-Genel yönetici veya grup yöneticisiyseniz, silinmiş bir grubu aşağıdaki çalışma grubunda geri Microsoft 365 yönetim merkezi:
+Genel yönetici veya grup yöneticisiyseniz, silinen bir grubu Microsoft 365 yönetim merkezi geri yükleyebilirsiniz:
 
-1. Yönetim merkezine [gidin](https://admin.microsoft.com).
-2. **Gruplar'ı** genişletin ve Ardından Silinmiş **gruplar'ı tıklatın**.
-3. Geri yüklemek istediğiniz grubu seçin ve grubu geri **yükle'ye tıklayın**.
+1. [Yönetim merkezine](https://admin.microsoft.com) gidin.
+2. **Gruplar'ı** genişletin ve **ardından Silinmiş gruplar'a** tıklayın.
+3. Geri yüklemek istediğiniz grubu seçin ve ardından **Grubu geri yükle'ye** tıklayın.
 
 > [!NOTE]
-> Bazı durumlarda, grubun ve tüm verilerin geri yüklenebilir olması 24 saat kadar sürebilir. 
+> Bazı durumlarda, grubun ve tüm verilerinin geri yüklenmesi 24 saat kadar sürebilir. 
 
 ---
 
-## <a name="got-questions-about-microsoft-365-groups"></a>Gruplarla ilgili sorularınız Microsoft 365 mi var?
+## <a name="got-questions-about-microsoft-365-groups"></a>Microsoft 365 Grupları hakkında sorularınız mı var?
 
-Gruplarla [ilgili soru Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) ve konuşmalara katılmak için Microsoft Tech Microsoft 365 ziyaret edin. 
+Microsoft 365 gruplarıyla ilgili sorular göndermek ve konuşmalara katılmak için [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) ziyaret edin. 
   
 ## <a name="related-content"></a>İlgili içerik
 
-[PowerShell Microsoft 365 Grupları Yönetme](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (makale)\
-[Remove-UnifiedGroup cmdlet'ini](/powershell/module/exchange/remove-unifiedgroup) kullanarak grupları silme (makale)\
-[Grup bağlantılı ekip sitesi ayarlarınızı yönetme](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) (makale)\
-[Grup silme Outlook](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f) (makale)
+[PowerShell ile Microsoft 365 Grupları yönetme](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (makale)\
+[Remove-UnifiedGroup cmdlet'ini kullanarak grupları silme](/powershell/module/exchange/remove-unifiedgroup) (makale)\
+[Gruba bağlı ekip sitesi ayarlarınızı yönetme](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) (makale)\
+[Outlook'ta grubu silme](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f) (makale)

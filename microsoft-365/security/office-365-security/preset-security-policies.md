@@ -16,12 +16,12 @@ ms.custom: ''
 description: Yöneticiler, Exchange Online Protection (EOP) ve Office 365 için Microsoft Defender koruma özellikleri arasında Standart ve Katı ilke ayarlarının nasıl uygulanacağını öğrenebilir
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce4113b06c27cb288bcecce6a668a7da4bd46615
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: bd5fd696a9e22f0e30d18b3b785761847166a5b3
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772072"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085257"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP ve Office 365 için Microsoft Defender'da önceden ayarlanmış güvenlik ilkeleri
 
@@ -66,7 +66,7 @@ Profil, koruma düzeyini belirler. Aşağıdaki profiller kullanılabilir:
   Bir koşulu veya özel durumu yalnızca bir kez kullanabilirsiniz, ancak koşul veya özel durum için birden çok değer belirtebilirsiniz. Aynı koşula veya özel duruma ait birden çok değer OR mantığını kullanır (örneğin, _\<recipient1\>_ veya _\<recipient2\>_). Farklı koşullar veya özel durumlar AND mantığını kullanır (örneğin, _\<recipient1\>_ ve _\<member of group 1\>_).
 
   > [!IMPORTANT]
-  > Birden çok farklı koşul veya özel durum ek değildir; Onlar kapsayıcı. İlke _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
+  > Birden çok farklı koşul veya özel durum türü ek değildir; Onlar kapsayıcı. Önceden ayarlanmış güvenlik ilkesi _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
   >
   > - Alıcı: romain@contoso.com
   > - Alıcı şu üyelerin üyesidir: Yöneticiler
@@ -76,6 +76,9 @@ Profil, koruma düzeyini belirler. Aşağıdaki profiller kullanılabilir:
   > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
 
 - **Yerleşik koruma** (yalnızca Office 365 için Defender): Yalnızca Güvenli Bağlantılar ve Güvenli Ekler korumasını etkinleştiren bir profil. Bu profil, hiçbir zaman varsayılan ilkeleri olmayan Güvenli Bağlantılar ve Güvenli Ekler için varsayılan ilkeler sağlar.
+
+  > [!NOTE]
+  > Yerleşik koruma önayarlı güvenlik ilkesi dağıtılıyor ve kuruluşunuzda kullanılamayabilir.
 
   **Yerleşik koruma** için, tüm Office 365 için Defender müşteriler için önceden ayarlanmış güvenlik ilkesi varsayılan olarak açıktır. Bunu önermesek de, korumanın belirli kullanıcılara uygulanmaması için **Kullanıcılar**, **Gruplar** ve **Etki Alanları** temelinde özel durumlar da yapılandırabilirsiniz.
 
@@ -119,14 +122,19 @@ Koruma profillerindeki ilke ayarlarını değiştiremezsiniz. **Standart**, **Ka
 
 Kullanıcıya birden çok ilke uygulandığında, aşağıdaki sıra en yüksek öncelikliden en düşük önceliğe uygulanır:
 
-1. **Katı koruma** önceden ayarlanmış güvenlik ilkesi
-2. **Standart koruma** önceden ayarlanmış güvenlik ilkesi
-3. Özel güvenlik ilkeleri
-4. Güvenli Bağlantılar ve Güvenli Ekler için **yerleşik koruma** önceden ayarlanmış güvenlik ilkesi ve kötü amaçlı yazılımdan koruma, istenmeyen posta önleme ve kimlik avı önleme için varsayılan ilkeler.
+1. Kesin önceden ayarlanmış güvenlik ilkesi.
+2. Standart önceden ayarlanmış güvenlik ilkesi.
+3. Özel ilkeler. Özel ilkeler, ilkenin öncelik değerine göre uygulanır.
+4. Güvenli Bağlantılar ve Güvenli Ekler için yerleşik koruma önceden ayarlanmış güvenlik ilkesi; kötü amaçlı yazılımdan koruma, istenmeyen posta önleme ve kimlik avı önleme için varsayılan ilkeler.
 
-Başka bir deyişle, **Katı koruma** ilkesinin ayarları Standart **koruma** ilkesinin ayarlarını geçersiz kılar. Bu ilke, **yerleşik koruma** ön ayarı güvenlik ilkesinden (Güvenli Bağlantılar ve Güvenli Ekler) ve varsayılan ilkeden (istenmeyen posta, kötü amaçlı yazılımdan koruma ve kimlik avı önleme) ayarları geçersiz kılar.
+Başka bir deyişle, **Katı** önceden ayarlanmış güvenlik ilkesinin ayarları **Standart önceden ayarlanmış** güvenlik ilkesinin ayarlarını geçersiz kılar. Bu ilkeler, Güvenli Bağlantılar ve Güvenli Ekler için **yerleşik koruma** önceden ayarlanmış güvenlik ilkesinin ayarlarını ve istenmeyen posta, kötü amaçlı yazılımdan koruma ve kimlik avı önleme için varsayılan ilkeleri geçersiz kılar.
 
-Örneğin, **Standart korumada** bir güvenlik ayarı varsa ve yönetici bir kullanıcı için **Standart korumayı** etkinleştirmişse, bu ayar için özel ilkede veya varsayılan ilkede (aynı kullanıcı için) yapılandırılan ayar yerine **Standart koruma** ayarı uygulanır. Belirli gereksinimleri karşılamak için kuruluşunuzdaki diğer kullanıcılara özel bir ilke uygularken yalnızca **Standart** veya **Katı koruma** ilkesini uygulamak istediğiniz kuruluşunuzun bir bölümüne sahip olabileceğini unutmayın.
+Örneğin, **Standart korumada** bir güvenlik ayarı vardır ve yönetici **Standart koruma** için bir kullanıcı belirtir. **Standart koruma** ayarı, özel bir ilkede veya aynı kullanıcı için varsayılan ilkede bu ayar için yapılandırılan ayar yerine kullanıcıya uygulanır.
+
+**Standart** veya **Katı** ön ayarlı güvenlik ilkelerini kullanıcıların bir alt kümesine uygulamak ve belirli gereksinimleri karşılamak için kuruluşunuzdaki diğer kullanıcılara özel ilkeler uygulamak isteyebilirsiniz. Bu gereksinimi karşılamak için aşağıdaki adımları uygulayın:
+
+- **Standart** önceden ayarlanmış güvenlik ilkesinin ve özel ilkelerin ayarlarını alması gereken kullanıcıları **Katı** ön ayarlı güvenlik ilkesinde özel durumlar olarak yapılandırın.
+- Özel ilkelerin ayarlarını alması gereken kullanıcıları **Standart** önceden ayarlanmış güvenlik ilkesinde özel durumlar olarak yapılandırın.
 
 **Yerleşik koruma** , mevcut Güvenli Bağlantılar veya Güvenli Ekler ilkelerindeki alıcıları etkilemez. **Standart koruma**, **Katı koruma** veya özel Güvenli Bağlantılar veya Güvenli Ekler ilkelerini zaten yapılandırdıysanız, bu ilkeler _her zaman_ **Yerleşik korumadan** _önce_ uygulanır, bu nedenle bu önceden ayarlanmış veya özel ilkelerde zaten tanımlanmış olan alıcıları etkilemez.
 
@@ -256,3 +264,293 @@ Kullanıcıya **Standart koruma** veya **Katı koruma** güvenlik ilkesini başa
 Örneğin, istenmeyen posta (yüksek güvenilir istenmeyen posta değil) olarak algılanan e-postalar için, iletinin **Standart koruma** kullanıcıları için Gereksiz Email klasörüne teslim edilmiş ve **Katı koruma** kullanıcıları için karantinaya alınmış olduğunu doğrulayın.
 
 Ya da [toplu posta](bulk-complaint-level-values.md) için, BCL değerinin 6 veya üzerinin iletiyi **Standart koruma** kullanıcıları için Gereksiz Email klasörüne teslim ettiğini ve BCL değeri 4 veya üzerinin iletiyi **Katı koruma** kullanıcıları için karantinaya alındığını doğrulayın.
+
+## <a name="preset-security-policies-in-exchange-online-powershell"></a>Exchange Online PowerShell'de önceden ayarlanmış güvenlik ilkeleri
+
+PowerShell'de önceden ayarlanmış güvenlik ilkeleri aşağıdaki öğelerden oluşur:
+
+- **Bireysel güvenlik ilkeleri**: Örneğin kötü amaçlı yazılımdan koruma ilkeleri, istenmeyen posta önleme ilkeleri, kimlik avı önleme ilkeleri, Güvenli Bağlantılar ilkeleri ve Güvenli Ekler ilkeleri.
+
+  > [!WARNING]
+  > Önceden ayarlanmış güvenlik ilkeleriyle ilişkili tek tek güvenlik ilkelerini oluşturmayı, değiştirmeyi veya kaldırmayı denemeyin. Standart veya Katı önceden belirlenmiş güvenlik ilkeleri için tek tek güvenlik ilkeleri oluşturmak için desteklenen tek yöntem, Microsoft 365 Defender portalında önceden ayarlanmış güvenlik ilkesini ilk kez açmaktır.
+
+- **Kurallar**: Standart önceden ayarlanmış güvenlik ilkesi, Katı önceden ayarlanmış güvenlik ilkesi ve Yerleşik koruma önayarlı güvenlik ilkesi için ayrı kurallar, ilkeler için alıcı koşullarını ve özel durumlarını tanımlar (ilke korumalarının uygulandığı alıcıları belirleyin).
+
+  Standart ve Katı önceden belirlenmiş güvenlik ilkeleri için bu kurallar, Microsoft 365 Defender portalında önceden ayarlanmış güvenlik ilkesini ilk kez açtığınızda oluşturulur. Önceden ayarlanmış güvenlik ilkesini hiç açmıyorsanız ilişkili kurallar mevcut değildir. Daha sonra önceden ayarlanmış güvenlik ilkesini kapatmak ilişkili kuralları silmez.
+
+  Yerleşik koruma önceden ayarlanmış güvenlik ilkesi, ilkenin varsayılan Güvenli Bağlantılar ve Güvenli Ekler koruması özel durumlarını denetleen tek bir kurala sahiptir.
+
+  Standart ve Katı önceden ayarlanmış güvenlik ilkeleri aşağıdaki kurallara sahiptir:
+
+  - **Exchange Online Protection (EOP) korumaları için kurallar**: Standart Ön Ayar güvenlik ilkesi kuralı ve Katı önceden ayarlanmış güvenlik ilkesi kuralı, ilkedeki EOP korumalarının (kötü amaçlı yazılımdan koruma, istenmeyen posta ve kimlik avı önleme) kime uygulanacağını denetler (EOP korumaları için alıcı koşulları ve özel durumları).
+  - **Office 365 için Defender koruma kuralları**: Standart Önceden Ayarlanmış güvenlik ilkesi kuralı ve Katı önceden ayarlanmış güvenlik ilkesi kuralı, ilkedeki Office 365 için Defender korumalarının (Güvenli Bağlantılar ve Güvenli Ekler) kime uygulanacağını denetler (alıcı koşulları ve özel durumları Office 365 için Defender korumalar).
+
+  Standart ve Katı önceden belirlenmiş güvenlik ilkeleri kuralları, ilkelerle ilişkili kuralları etkinleştirerek veya devre dışı bırakarak önceden ayarlanmış güvenlik ilkesini açmanıza veya açmanıza da olanak tanır.
+
+  Önceden ayarlanmış güvenlik ilkelerine yönelik kurallar, tek tek güvenlik ilkeleri için çalışan normal kural cmdlet'lerinde kullanılamaz (örneğin, **Get-AntiPhishRule**). Bunun yerine aşağıdaki cmdlet'ler gereklidir:
+
+  - Yerleşik koruma önceden ayarlanmış güvenlik ilkesi: **\*-ATPBuiltInProtectionRule** cmdlet'leri.
+  - Standart ve katı önceden ayarlanmış güvenlik ilkeleri: **\*-EOPProtectionPolicyRule** ve **\*-ATPProtectionPolicyRule** cmdlet'leri.
+
+Aşağıdaki bölümlerde, **desteklenen senaryolarda** bu cmdlet'lerin nasıl kullanılacağı açıklanmaktadır.
+
+Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
+
+### <a name="use-powershell-to-view-individual-security-policies-for-preset-security-policies"></a>Önceden ayarlanmış güvenlik ilkeleri için tek tek güvenlik ilkelerini görüntülemek için PowerShell kullanma
+
+Microsoft 365 Defender portalında Standart önceden ayarlanmış güvenlik ilkesini veya Katı ön ayarlı güvenlik ilkesini hiç etkinleştirmediyseniz, önceden ayarlanmış güvenlik ilkesi için ilişkili güvenlik ilkelerinin mevcut olmadığını unutmayın.
+
+> [!WARNING]
+> Önceden ayarlanmış güvenlik ilkeleriyle ilişkili tek tek güvenlik ilkelerini oluşturmayı, değiştirmeyi veya kaldırmayı denemeyin. Standart veya Katı önceden belirlenmiş güvenlik ilkeleri için tek tek güvenlik ilkeleri oluşturmak için desteklenen tek yöntem, Microsoft 365 Defender portalında önceden ayarlanmış güvenlik ilkesini ilk kez açmaktır.
+
+- **Yerleşik koruma önceden ayarlanmış güvenlik ilkesi**: İlişkili ilkeler Built-In Koruma İlkesi olarak adlandırılır. Bu ilkeler için IsBuiltInProtection özellik değeri True değeridir.
+
+  Yerleşik koruma önceden ayarlanmış güvenlik ilkesinin tek tek güvenlik ilkelerini görüntülemek için aşağıdaki komutu çalıştırın:
+
+  ```powershell
+  Write-Output -InputObject ("`r`n"*3),"Built-in protection Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy -Identity "Built-In Protection Policy" | Format-List; Write-Output -InputObject ("`r`n"*3),"Built-in protection Safe Links policy",("-"*79);Get-SafeLinksPolicy -Identity "Built-In Protection Policy" | Format-List
+  ```
+
+- **Standart önceden ayarlanmış güvenlik ilkesi**: İlişkili ilkeler olarak adlandırılır `Standard Preset Security Policy<13-digit number>`. Örneğin, `Standard Preset Security Policy1622650008019`. RecommendPolicyType özellik değeri Standart'tır.
+
+  - **Microsoft 365 için Defender içermeyen kuruluşlar**:
+
+    Microsoft 365 için Defender olmayan kuruluşlarda Standart önceden ayarlanmış güvenlik ilkesinin tek tek güvenlik ilkelerini görüntülemek için aşağıdaki komutu çalıştırın:
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"Standard anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"
+    ```
+
+  - **Microsoft 365 için Defender'a sahip kuruluşlar**:
+
+    Microsoft 365 için Defender'a sahip kuruluşlarda Standart önceden ayarlanmış güvenlik ilkesinin tek tek güvenlik ilkelerini görüntülemek için aşağıdaki komutu çalıştırın:
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"Standard anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard Safe Links policy",("-"*79);Get-SafeLinksPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"
+    ```
+
+- **Kesin önceden ayarlanmış güvenlik ilkesi**: İlişkili ilkeler olarak adlandırılır `Strict Preset Security Policy<13-digit number>`. Örneğin, `Strict Preset Security Policy1642034872546`. RecommendPolicyType özellik değeri Strict değeridir.
+
+  - **Microsoft 365 için Defender içermeyen kuruluşlar**:
+
+    - Microsoft 365 için Defender olmayan kuruluşlarda Katı önceden ayarlanmış güvenlik ilkesinin tek tek güvenlik ilkelerini görüntülemek için aşağıdaki komutu çalıştırın:
+
+      ```powershell
+      Write-Output -InputObject ("`r`n"*3),"Strict anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"
+      ```
+
+  - **Microsoft 365 için Defender'a sahip kuruluşlar**:
+
+    - Microsoft 365 için Defender'a sahip kuruluşlarda Katı önceden ayarlanmış güvenlik ilkesinin tek tek güvenlik ilkelerini görüntülemek için aşağıdaki komutu çalıştırın:
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"Strict anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict Safe Links policy",("-"*79);Get-SafeLinksPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"
+    ```
+
+### <a name="use-powershell-to-view-rules-for-preset-security-policies"></a>Önceden ayarlanmış güvenlik ilkelerine yönelik kuralları görüntülemek için PowerShell kullanma
+
+Microsoft 365 Defender portalında Standart önceden ayarlanmış güvenlik ilkesini veya Katı ön ayarlı güvenlik ilkesini hiç etkinleştirmediyseniz, bu ilkelerle ilişkili kuralların mevcut olmadığını unutmayın.
+
+- **Yerleşik koruma önceden ayarlanmış güvenlik ilkesi**: İlişkili kural ATP Built-In Koruma Kuralı olarak adlandırılır.
+
+  Yerleşik koruma önceden ayarlanmış güvenlik ilkesiyle ilişkili kuralı görüntülemek için aşağıdaki komutu çalıştırın:
+
+  ```powershell
+  Get-ATPBuiltInProtectionRule
+  ```
+
+  Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-ATPBuiltInProtectionRule](/powershell/module/exchange/get-atpbuiltinprotectionrule).
+
+- **Standart önceden ayarlanmış güvenlik ilkesi**: İlişkili kurallar Standart Önceden Ayarlanmış Güvenlik İlkesi olarak adlandırılır.
+
+  Standart önceden ayarlanmış güvenlik ilkesiyle ilişkili kuralları görüntülemek için aşağıdaki komutları kullanın:
+
+  - Standart önceden ayarlanmış güvenlik ilkesinde EOP korumalarıyla ilişkili kuralı görüntülemek için aşağıdaki komutu çalıştırın:
+
+    ```powershell
+    Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+    ```
+
+  - Standart önceden ayarlanmış güvenlik ilkesinde Office 365 için Defender korumalarıyla ilişkili kuralı görüntülemek için aşağıdaki komutu çalıştırın:
+
+    ```powershell
+    Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+    ```
+
+  - Her iki kuralı da aynı anda görüntülemek için aşağıdaki komutu çalıştırın:
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"EOP rule - Standard preset security policy",("-"*79);Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"; Write-Output -InputObject ("`r`n"*3),"Defender for Office 365 rule - Standard preset security policy",("-"*79);Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+    ```
+
+- **Katı önceden ayarlanmış güvenlik ilkesi**: İlişkili kurallar Katı Önceden Belirlenmiş Güvenlik İlkesi olarak adlandırılır.
+
+  Katı önceden ayarlanmış güvenlik ilkesiyle ilişkili kuralları görüntülemek için aşağıdaki komutları kullanın:
+
+  - Katı önceden ayarlanmış güvenlik ilkesinde EOP korumalarıyla ilişkili kuralı görüntülemek için aşağıdaki komutu çalıştırın:
+
+    ```powershell
+    Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+    ```
+
+  - Katı önceden ayarlanmış güvenlik ilkesinde Office 365 için Defender korumalarıyla ilişkili kuralı görüntülemek için aşağıdaki komutu çalıştırın:
+
+    ```powershell
+    Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+    ```
+
+  - Her iki kuralı da aynı anda görüntülemek için aşağıdaki komutu çalıştırın:
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"EOP rule - Strict preset security policy",("-"*79);Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"; Write-Output -InputObject ("`r`n"*3),"Defender for Office 365 rule - Strict preset security policy",("-"*79);Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+    ```
+
+Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-EOPProtectionPolicyRule](/powershell/module/exchange/get-eopprotectionpolicyrule) ve [Get-ATPProtectionPolicyRule](/powershell/module/exchange/get-atpprotectionpolicyrule).
+
+### <a name="use-powershell-to-turn-on-or-turn-off-preset-security-policies"></a>Önceden ayarlanmış güvenlik ilkelerini açmak veya kapatmak için PowerShell kullanma
+
+Daha önce açıklandığı gibi, Standart veya Katı önceden ayarlanmış güvenlik ilkelerini açmak veya kapatmak için, ilkeyle ilişkili kuralları etkinleştirir veya devre dışı bırakırsınız. Kuralın State özellik değeri, kuralın Etkin mi yoksa Devre Dışı mı olduğunu gösterir.
+
+Kuruluşunuzun Office 365 için Defender sahip olup olmamasına bağlı olarak, önceden ayarlanmış güvenlik ilkesini açmak veya kapatmak için bir kuralı (EOP korumaları kuralı) veya iki kuralı (EOP korumaları için bir kural ve Office 365 için Defender korumalar için bir kural) etkinleştirmeniz veya devre dışı bırakmanız gerekebilir.
+
+- **Standart önceden ayarlanmış güvenlik ilkesi**:
+
+  - **Office 365 için Defender olmayan kuruluşlar**:
+
+    - Office 365 için Defender olmayan kuruluşlarda, Standart önayar ilkesi kuralının şu anda etkin mi yoksa devre dışı mı olduğunu belirlemek için aşağıdaki komutu çalıştırın:
+
+      ```powershell
+      Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - Açıksa Standart önceden ayarlanmış güvenlik ilkesini kapatmak için aşağıdaki komutu çalıştırın:
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+    - Kapalıysa Standart önceden ayarlanmış güvenlik ilkesini açmak için aşağıdaki komutu çalıştırın:
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+  - **Office 365 için Defender olan kuruluşlar**:
+
+    - Office 365 için Defender olan kuruluşlarda, Standart önayar ilkesi kurallarının şu anda etkin mi yoksa devre dışı mı olduğunu belirlemek için aşağıdaki komutu çalıştırın:
+
+      ```powershell
+      Write-Output -InputObject ("`r`n"*3),"EOP rule - Standard preset security policy",("-"*63);Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject `r`n,"Defender for Office 365 rule - Standard preset security policy",("-"*63);Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - Açıksa Standart önceden ayarlanmış güvenlik ilkesini kapatmak için aşağıdaki komutu çalıştırın:
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"; Disable-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+    - Kapalıysa Standart önceden ayarlanmış güvenlik ilkesini açmak için aşağıdaki komutu çalıştırın:
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"; Enable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+- **Kesin önceden ayarlanmış güvenlik ilkesi**:
+
+  - **Office 365 için Defender olmayan kuruluşlar**:
+
+    - Office 365 için Defender olan kuruluşlarda, Katı önayar ilkesi kuralının şu anda etkin mi yoksa devre dışı mı olduğunu belirlemek için aşağıdaki komutu çalıştırın:
+
+      ```powershell
+      Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - Açıksa Katı önceden ayarlanmış güvenlik ilkesini kapatmak için aşağıdaki komutu çalıştırın:
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+    - Kapalıysa Katı önceden ayarlanmış güvenlik ilkesini açmak için aşağıdaki komutu çalıştırın:
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+  - **Office 365 için Defender olan kuruluşlar**:
+
+    - Office 365 için Defender olan kuruluşlarda, Katı önceden ayarlanmış ilke kurallarının şu anda etkin mi yoksa devre dışı mı olduğunu belirlemek için aşağıdaki komutu çalıştırın:
+
+      ```powershell
+      Write-Output -InputObject ("`r`n"*3),"EOP rule - Strict preset security policy",("-"*63);Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject `r`n,"Defender for Office 365 rule - Strict preset security policy",("-"*63);Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - Açıksa Katı önceden ayarlanmış güvenlik ilkesini kapatmak için aşağıdaki komutu çalıştırın:
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"; Disable-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+    - Kapalıysa Katı önceden ayarlanmış güvenlik ilkesini açmak için aşağıdaki komutu çalıştırın:
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"; Enable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+Ayrıntılı söz dizimi ve parametre bilgileri için bkz [. Enable-EOPProtectionPolicyRule](/powershell/module/exchange/enable-eopprotectionpolicyrule), [Enable-ATPProtectionPolicyRule](/powershell/module/exchange/enable-atpprotectionpolicyrule), [Disable-EOPProtectionPolicyRule](/powershell/module/exchange/disable-eopprotectionpolicyrule) ve [Disable-ATPProtectionPolicyRule](/powershell/module/exchange/disable-atpprotectionpolicyrule).
+
+### <a name="use-powershell-to-specify-recipient-conditions-and-exceptions-for-preset-security-policies"></a>Önceden ayarlanmış güvenlik ilkeleri için alıcı koşullarını ve özel durumlarını belirtmek için PowerShell kullanma
+
+> [!IMPORTANT]
+  > Birden çok farklı koşul veya özel durum türü ek değildir; Onlar kapsayıcı. Önceden ayarlanmış güvenlik ilkesi _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
+  >
+  > - Alıcı: romain@contoso.com
+  > - Alıcı şu üyelerin üyesidir: Yöneticiler
+  >
+  > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
+  >
+  > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
+
+Yerleşik koruma önceden ayarlanmış güvenlik ilkesi için yalnızca alıcı özel durumlarını belirtebilirsiniz. Tüm özel durum parametresi değerleri boşsa (`$null` ), ilkede özel durum yoktur.
+
+Standart ve Katı önceden ayarlanmış güvenlik ilkeleri için, EOP korumaları ve Office 365 için Defender korumaları için alıcı koşullarını ve özel durumlarını belirtebilirsiniz. Tüm koşullar ve özel durum parametresi değerleri boşsa (`$null` ), Standart veya Katı önceden ayarlanmış güvenlik ilkelerinin alıcı koşulları veya özel durumları yoktur.
+
+Önceden ayarlanmış bir güvenlik ilkesine hiçbir alıcı koşulu veya özel durum uygulanmamış olsa bile, ilkenin tüm alıcılara uygulanıp uygulanmadığı, bu makalede daha önce açıklandığı gibi [ilkelerin öncelik sırasına](#order-of-precedence-for-preset-security-policies-and-other-policies) bağlıdır.
+
+- **Yerleşik koruma önceden ayarlanmış güvenlik ilkesi**:
+
+  Aşağıdaki sözdizimini kullanın:
+
+  ```powershell
+  Set-ATPBuiltInProtectionRule -Identity "ATP Built-In Protection Rule" -ExceptIfRecipientDomainIs <"domain1","domain2",... | $null> -ExceptIfSentTo <"user1","user2",... | $null> -ExceptIfSentToMemberOf <"group1","group2",... | $null>
+  ```
+
+  Bu örnek, yerleşik koruma önceden ayarlanmış güvenlik ilkesinden tüm alıcı özel durumlarını kaldırır.
+
+  ```powershell
+  Set-ATPBuiltInProtectionRule -Identity "ATP Built-In Protection Rule" -ExceptIfRecipientDomainIs $null -ExceptIfSentTo $null -ExceptIfSentToMemberOf $null
+  ```
+
+  Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-ATPBuiltInProtectionRule](/powershell/module/exchange/set-atpbuiltinprotectionrule).
+
+- **Standart veya Katı önceden ayarlanmış güvenlik ilkeleri**
+
+  Aşağıdaki sözdizimini kullanın:
+
+  ```powershell
+  <Set-EOPProtectionPolicyRule | SetAtpProtectionPolicyRule> -Identity "<Standard Preset Security Policy | Strict Preset Security Policy>" -SentTo <"user1","user2",... | $null> -ExceptIfSentTo <"user1","user2",... | $null> -SentToMemberOf <"group1","group2",... | $null> -ExceptIfSentToMemberOf <"group1","group2",... | $null> -RecipientDomainIs <"domain1","domain2",... | $null> -ExceptIfRecipientDomainIs <"domain1","domain2",... | $null>
+  ```
+
+  Bu örnekte, Yöneticiler adlı dağıtım grubunun üyeleri için Standart önceden ayarlanmış güvenlik ilkesindeki EOP korumalarından özel durumlar yapılandırılır.
+
+  ```powershell
+  Set-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" -ExceptIfSentToMemberOf Executives
+  ```
+
+  Bu örnek, belirtilen güvenlik işlemleri (SecOps) posta kutuları için Katı önceden ayarlanmış güvenlik içindeki Office 365 için Defender korumalarından özel durumları yapılandırmaktadır.
+
+  ```powershell
+  Set-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" -ExceptIfSentTo "SecOps1","SecOps2"
+  ```
+
+  Ayrıntılı söz dizimi ve parametre bilgileri için bkz [. Set-EOPProtectionPolicyRule](/powershell/module/exchange/set-eopprotectionpolicyrule) ve [Set-ATPProtectionPolicyRule](/powershell/module/exchange/Set-atpprotectionpolicyrule).

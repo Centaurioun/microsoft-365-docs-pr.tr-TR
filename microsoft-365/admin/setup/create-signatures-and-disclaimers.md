@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-may2020
@@ -27,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Kuruluşunuza giren veya kuruluşunuzdan ayrılan tüm e-posta iletileri için yasal uyarılar veya açıklama bildirimleri de dahil olmak üzere e-posta imzalarını yönetin.
-ms.openlocfilehash: 47e6a862441b5c2725a48cae20669541b8a69f87
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 22cc27b48482bb6deb658a215d40eff2541be0a2
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602822"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087297"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Kuruluş genelinde imzalar ve sorumluluk reddi oluşturma
 

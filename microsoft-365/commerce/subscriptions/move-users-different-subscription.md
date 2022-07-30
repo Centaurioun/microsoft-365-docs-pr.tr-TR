@@ -14,18 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - commerce_subscriptions
 - AdminSurgePortfolio
 - manage_licenses
 search.appverid: MET150
 description: Kullanıcıları abonelikler arasında taşımayı öğrenin.
 ms.date: 05/12/2022
-ms.openlocfilehash: 06d9c6f2ef76ed317705c1e519822db3a8706062
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: b8427e383e40a4061e92e4d02b64a6a16a4412db
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044333"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67083981"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Kullanıcıları farklı bir aboneliğe taşıma
 
@@ -66,5 +67,5 @@ Lisansları atamak için Genel, Lisans veya Kullanıcı yöneticisi olmanız ger
 [Kullanıcılara lisans atama](../../admin/manage/assign-licenses-to-users.md) (makale)\
 [Aboneliğinizden lisansları kaldırma](../licenses/buy-licenses.md) (makale)\
 [Planları el ile değiştirme](change-plans-manually.md) (makale)\
-[İş için Microsoft 365 abonelikleri ve lisansları anlama](../licenses/subscriptions-and-licenses.md) (makale)\
-[İş için başka bir Microsoft 365 aboneliği satın alma](../try-or-buy-microsoft-365.md) (makale)
+[İş için Microsoft 365'teki abonelikleri ve lisansları anlama](../licenses/subscriptions-and-licenses.md) (makale)\
+[Başka bir iş için Microsoft 365 aboneliği satın alma](../try-or-buy-microsoft-365.md) (makale)

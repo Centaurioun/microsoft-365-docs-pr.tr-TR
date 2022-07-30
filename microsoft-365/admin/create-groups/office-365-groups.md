@@ -1,10 +1,10 @@
 ---
-title: Yöneticiler için Microsoft 365 Gruplarına genel bakış
+title: Yöneticiler için Microsoft 365 Grupları genel bakış
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,107 +22,107 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Grup Microsoft 365 kullanarak, bir grup kişinin paylaşılan kaynaklar koleksiyonuna erişmesi Microsoft 365 ekip çalışması boyunca ekip çalışmasına yolabilirsiniz.
-ms.openlocfilehash: 5aaf7598f3591efb330618f0be98ea3376816eca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Microsoft 365 Grupları ile, bir grup kişiye paylaşılan kaynak koleksiyonuna erişim vererek Microsoft 365 genelinde ekip çalışmasını yönlendirebilirsiniz.
+ms.openlocfilehash: 4e0668ea1204dd9aa3fd9891574f3fe17a1b5e15
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983980"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084179"
 ---
-# <a name="overview-of-microsoft-365-groups-for-administrators"></a>Yöneticiler için Microsoft 365 Gruplarına genel bakış
+# <a name="overview-of-microsoft-365-groups-for-administrators"></a>Yöneticiler için Microsoft 365 Grupları genel bakış
 
-Microsoft 365 Grupları, farklı ekip çalışması boyunca tüm ekip çalışmasına yol alan temel Microsoft 365. En Microsoft 365 gruplarıyla, bir grup kişinin bir paylaşılan kaynak koleksiyonuna erişme izni veebilirsiniz. Bu kaynaklar şunlardır:
+Microsoft 365 Grupları, Microsoft 365'te tüm ekip çalışmasını yönlendiren temel üyelik hizmetidir. Microsoft 365 Grupları ile, bir grup kişiye paylaşılan kaynaklar koleksiyonuna erişim verebilirsiniz. Bu kaynaklar şunlardır:
 
-- Paylaşılan bir Outlook kutusu
+- Paylaşılan bir Outlook gelen kutusu
 - Paylaşılan takvim
 - SharePoint belge kitaplığı
-- Bir Planner
+- A Planner
 - OneNote not defteri
 - Power BI
-- Yammer (grup başka bir gruptan Yammer)
-- Ekip (grup bir ekip üyesinden Teams)
-- Yol Haritası (web Project varsa)
+- Yammer (grup Yammer'dan oluşturulduysa)
+- Ekip (grup Teams'den oluşturulduysa)
+- Yol haritası (Web için Project'iniz varsa)
 - Stream
 
-Grup Microsoft 365, bu kaynakların her biri için izinleri el ile atamanız gerekmez. Gruba kişi eklemek, onlara gereken izinleri otomatik olarak verir.
+Bir Microsoft 365 grubuyla, bu kaynakların her birine el ile izin atamanız gerekmez. Kişileri gruba eklemek, onlara otomatik olarak ihtiyaç duydukları izinleri verir.
 
-Grup oluşturma belirli bir kişi grubuyla [sınırlandırmadıkça, tüm kullanıcılar grup oluşturabilir](../../solutions/manage-creation-of-groups.md). Grup oluşturma işleminizi sınırlandırdıysanız grup oluşturamazsanız, grup oluşturamaz olan kullanıcılar SharePoint siteleri, Planner'lar, ekipler, Outlook grup takvimleri, Akış grupları, Yammer grupları, OneDrive'daki paylaşılan kitaplıklar veya paylaşılan Power BI çalışma alanları oluşturamaz. Bu hizmetler, onları oluşturan kişilerin grup oluşturamalarını gerektirir. Grubun üyesi olan kullanıcılar, Planner'da görev oluşturma veya Teams sohbeti kullanma gibi grup etkinliklerine yine katılabilir.
+Grup [oluşturmayı belirli bir kişi kümesiyle sınırlamadığınız sürece herhangi bir kullanıcı grup](../../solutions/manage-creation-of-groups.md) oluşturabilir. Grup oluşturmayı sınırlandırırsanız, grup oluşturamayan kullanıcılar SharePoint siteleri, Planlayıcılar, ekipler, Outlook grup takvimleri, Akış grupları, Yammer grupları, OneDrive'da Paylaşılan kitaplıklar veya paylaşılan Power BI çalışma alanları oluşturamaz. Bu hizmetler, bunları oluşturan kişilerin grup oluşturabilmesini gerektirir. Kullanıcılar, grubun üyesi olmaları koşuluyla Planner'da görev oluşturma veya Teams sohbetini kullanma gibi grup etkinliklerine katılmaya devam edebilir.
 
-Grupların rolleri şöyledir:
+Gruplar aşağıdaki rollere sahiptir:
 
-- **Sahipler** - Grup sahipleri üye ekleyebilir veya kaldırabilir ve paylaşılan gelen kutusundan konuşmaları silme veya grupla ilgili farklı ayarları değiştirme gibi benzersiz izinlere sahip olabilir. Grup sahipleri grubu yeniden adlandırarak açıklamayı veya resmi güncelleştirer ve daha fazlasını ister.
-- **Üyeler** - Üyeler gruptaki her şeye erişim sağlar ancak grup ayarlarını değiştiremezler. Varsayılan olarak grup üyeleri konukları grubunuza katılmaya davetlayabilir, ancak bu [ayarı değiştirebilirsiniz](manage-guest-access-in-groups.md).
-- **Konuklar** - Grup konukları, kurum dışından gelen üyelerdir.
+- **Sahipler** - Grup sahipleri üyeleri ekleyebilir veya kaldırabilir ve paylaşılan gelen kutusundan konuşmaları silme veya grupla ilgili farklı ayarları değiştirme gibi benzersiz izinlere sahip olabilir. Grup sahipleri grubu yeniden adlandırabilir, açıklamayı veya resmi güncelleştirebilir ve daha fazlasını yapabilir.
+- **Üyeler** - Üyeler gruptaki her şeye erişebilir, ancak grup ayarlarını değiştiremez. Varsayılan olarak grup üyeleri konukları grubunuzla katılmaları için davet edebilir, ancak [bu ayarı denetleyebilirsiniz](manage-guest-access-in-groups.md).
+- **Konuklar** - Grup konukları, kuruluşunuzun dışından gelen üyelerdir.
 
-Yalnızca genel yöneticiler, kullanıcı yöneticileri ve grup yöneticileri aynı grupta grup oluşturabilir ve <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 yönetim merkezi</a>. Yönetici temsilcisi olamazsınız (örneğin, başka birinin adına yönetici olan bir danışman).
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 yönetim merkezi</a> grupları yalnızca genel yöneticiler, kullanıcı yöneticileri ve grup yöneticileri oluşturabilir ve yönetebilir. Yönetici temsilcisi olamazsınız (örneğin, başka birinin adına yönetici olan bir danışman).
 
-Yönetici olarak şunları şunları ssunuz:
+Yönetici olarak şunları yapabilirsiniz:
 
-- [Kimlerin grup oluştura kişi oluştura kişilerini belirtme](../../solutions/manage-creation-of-groups.md)
-- [Kuruluşta gruplar için adlandırma ilkesi oluşturma](../../solutions/groups-naming-policy.md)
-- [Grup oluştururken hangi etki alanını kullanıcaz?](../../solutions/choose-domain-to-create-groups.md)
+- [Kimlerin grup oluşturabileceğini belirtme](../../solutions/manage-creation-of-groups.md)
+- [Kuruluşunuzdaki gruplar için adlandırma ilkesi oluşturma](../../solutions/groups-naming-policy.md)
+- [Grup oluştururken hangi etki alanının kullanılacağını seçme](../../solutions/choose-domain-to-create-groups.md)
 - [Gruplara konuk erişimini yönetme](manage-guest-access-in-groups.md)
-- [Silinen grubu kurtarma](restore-deleted-group.md) (silme işleminin son 30 günü içinde)
+- [Silinen bir grubu kurtarma](restore-deleted-group.md) (silme işleminden sonra 30 gün içinde)
 
-Gruplarınızı yaşam döngüsünü yönetmek için daha otomatik bir yol Microsoft 365, grupların süresinin belirli bir zaman aralığında dolması için süre sonu ilkelerini kullanabilirsiniz. Grubun sahipleri, grubun süresi dolmadan 30, 15 ve 1 gün önce bir e-posta alırlar ve bu e-posta hala gerekirse grubun yenilenmesine olanak sağlar. Bkz. [Microsoft 365 Süre Sonu İlkesi](../../solutions/microsoft-365-groups-expiration-policy.md).
+Microsoft 365 gruplarınızın yaşam döngüsünü yönetmek için daha otomatik bir yol tercih ediyorsanız, grupları belirli bir zaman aralığında sona erdirmek için süre sonu ilkelerini kullanabilirsiniz. Grubun sahipleri, grubun sona erme tarihinden 30, 15 ve 1 gün önce bir e-posta alır ve gerekirse grubu yenilemelerine olanak tanır. Bkz. [Microsoft 365 grup Süre Sonu İlkesi](../../solutions/microsoft-365-groups-expiration-policy.md).
 
-Gruplarınızı gruplardan veya Microsoft 365 yönetim merkezi [PowerShell kullanarak yönetabilirsiniz](../../enterprise/manage-microsoft-365-groups-with-powershell.md).
+Gruplarınızı Microsoft 365 yönetim merkezi veya [PowerShell kullanarak](../../enterprise/manage-microsoft-365-groups-with-powershell.md) yönetebilirsiniz.
 
-Büyük bir şirket veya kuruluş gibi çok sayıda kullanıcınız varsa, çeşitli amaçlarla grup oluşturan birçok kullanıcınız olabilir. En iyi uygulamalar için gruplarda [yönetim planı'Microsoft 365 gözden](../../solutions/collaboration-governance-overview.md) geçirmenizi kesinlikle öneririz.
+Büyük bir şirket veya kuruluş gibi birçok kullanıcınız varsa, çeşitli amaçlarla grup oluşturan birçok kullanıcınız olabilir. En iyi yöntemler [için Microsoft 365 gruplarında idare planı'nın](../../solutions/collaboration-governance-overview.md) gözden geçirilmesini kesinlikle öneririz.
 
 ## <a name="group-limits"></a>Grup sınırları
 
-Kullanıcı Grupları için aşağıdaki Microsoft 365 geçerlidir:
+Microsoft 365 Grupları için aşağıdaki sınırlar geçerlidir:
 
-|En fazla...|Değer|
+|Maksimum...|Değer|
 |:---------|:----|
 |Grup başına sahipler|100|
-|Bir kullanıcının oluştura etki alanı oluşturması|250|
-|Bir yöneticinin oluştur olduğu gruplar|Varsayılan kiracı sınırı olan 500 K'ye kadar|
-|Üye sayısı|1.000'den fazla, ancak yalnızca 1.000 eşzamanlı olarak Grup konuşmalarına erişim sağlar. <br>Kullanıcılar, grup gruplarında yer alan büyük gruplarda takvim ve konuşmalara erişirken gecikmeler Outlook.|
-|Bir kullanıcının üyesi olduğu Grup sayısı|7,000|
-|Dosya depolama|Abone olan kullanıcı başına 1 Terabayt + 10 GB + satın alınan diğer depolama alanı. Sınırsız miktarda ek depolama alanı satın alabilirsiniz.|
+|Bir kullanıcının oluşturabileceği gruplar|250|
+|Bir yöneticinin oluşturabileceği gruplar|Varsayılan kiracı sınırı 500 K'ye kadar|
+|Üye sayısı|1.000'den fazla, ancak grup konuşmalarını eşzamanlı olarak yalnızca 1.000 erişebilir. <br>Kullanıcılar, Outlook'taki büyük gruplarda takvime ve konuşmalara erişirken gecikmeler yaşayabilir.|
+|Bir kullanıcının üye olabileceği Grup sayısı|7,000|
+|Dosya depolama|Abone olan kullanıcı başına 1 Terabayt + 10 GB + satın alınan diğer depolama alanları. Sınırsız miktarda ek depolama alanı satın alabilirsiniz.|
 |Grup Posta Kutusu boyutu|50 GB|
 
-Bir kuruluşun sahip Microsoft 365 grup sayısı için varsayılan üst sayı 500.000'tir. Varsayılan sınırı aşan bir sınıra gitmek için Microsoft Desteği'ne başvurun. Gruplar sınırlarının nasıl Microsoft 365 için bkz. [Gruplar - Microsoft 365 yardımı](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+Bir kuruluşun sahip olabileceği varsayılan en fazla Microsoft 365 grubu sayısı 500.000'dir. Varsayılan sınırın ötesine geçmek için Microsoft Desteği ile iletişime geçmeniz gerekir. Microsoft 365 Grupları sınırları hakkında daha fazla bilgi için yardım [Yönetici Microsoft 365 Grupları bölümüne bakın](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
-Grup kullanımı hakkında işlem Microsoft 365 olduğunda, grup gruplarınızı daha etkili bir şekilde yönetebilirsiniz. Rapor Microsoft 365 yönetim merkezi, depolama kullanımını, sahip olduğu etkin grupları ve kullanıcıların grupları nasıl kullananları görmenizi sağlayan bir raporlama aracı vardır. Daha [Microsoft 365 için Bkz. Yönetim merkezinde Raporlar'a](../activity-reports/office-365-groups.md) bakın.
+Grup kullanımı hakkında eyleme dönüştürülebilir bilgilere sahip olduğunuzda Microsoft 365 gruplarınızı yönetmek daha etkilidir. Microsoft 365 yönetim merkezi depolama kullanımını, kaç etkin grubunuz olduğunu ve kullanıcıların grupları nasıl kullandığını görmenizi sağlayan bir raporlama aracı vardır. Daha fazla bilgi için bkz. [Yönetim merkezinde Microsoft 365 Raporları](../activity-reports/office-365-groups.md) .
 
 ## <a name="sensitivity-labels"></a>Duyarlılık etiketleri
 
-Bir kullanıcı grubu oluşturduklarında, kuruluşta yer alan kullanıcıların ayarlarından duyarlılık Microsoft 365 oluşturabilirsiniz. Duyarlılık etiketleriyle şunları yapılandırabilirsiniz: 
+Kuruluşunuzdaki kullanıcıların bir Microsoft 365 grubu oluştururken ayarlayabileceğiniz duyarlılık etiketleri oluşturabilirsiniz. Duyarlılık etiketleriyle şunları yapılandırabilirsiniz: 
 
 - Gizlilik (genel veya özel)
 - Dış kullanıcılara erişim
-- Unmanaged device access
+- Yönetilmeyen cihaz erişimi
 
-Örneğin, Çok Gizli adlı bir etiket oluşturabilir ve  bu etiketle oluşturulan her grubun özel olacağını ve dış kullanıcılara izin ver vermeyeceğini belirtebilirsiniz. Kuruluşta kullanıcılar grup oluşturma sırasında bu etiketi seçerken, grup özel olarak ayarlanır ve grup üyelerinin gruba dış kullanıcı eklemesine izin verilmez.
+Örneğin, *Çok Gizli* adlı bir etiket oluşturabilir ve bu etiketle oluşturulan tüm grupların özel olacağını ve dış kullanıcılara izin vermeyeceğini belirtebilirsiniz. Kuruluşunuzdaki kullanıcılar grup oluşturma sırasında bu etiketi seçtiğinde, grup özel olarak ayarlanır ve grup üyelerinin gruba dış kullanıcı eklemesine izin verilmez.
 
 > [!IMPORTANT]
-> Şu anda sınıflandırma etiketleri kullanıyorsanız, duyarlılık etiketleri etkinleştirildikten sonra grup oluşturan kullanıcılar artık bu etiketleri kullanmayacak. 
+> Şu anda sınıflandırma etiketleri kullanıyorsanız, duyarlılık etiketleri etkinleştirildikten sonra grup oluşturan kullanıcılar artık bu etiketleri kullanamayacaktır. 
 
-Duyarlılık etiketlerini oluşturma, yönetme ve kullanma hakkında bilgi için bkz. Microsoft Teams, Microsoft 365 grupları ve sitelerde içeriği korumak [için SharePoint kullanma](../../compliance/sensitivity-labels-teams-groups-sites.md).
+Duyarlılık etiketleri oluşturma, yönetme ve kullanma hakkında bilgi için bkz. [Microsoft Teams, Microsoft 365 grupları ve SharePoint sitelerindeki içeriği korumak için duyarlılık etiketlerini kullanma](../../compliance/sensitivity-labels-teams-groups-sites.md).
 
-## <a name="which-microsoft-365-plans-include-groups"></a>Hangi Microsoft 365 grupları içerir?
+## <a name="which-microsoft-365-plans-include-groups"></a>Hangi Microsoft 365 planları grupları içerir?
 
-Exchange Online Online Microsoft 365 tüm SharePoint grupları destekleyecektir. Buna İş Temel Bilgiler ve İş Plan Premium ve E1, E3 Enterprise E5 planları dahildir. Grup, grubu oluşturan kişinin lisansını alır (grubun "düzenleyicisi" olarak da bilinir). Düzenleyici, grubun sahip olması istediğiniz özellikler için uygun lisansa sahip olduğu sürece, bu lisans gruba iletecek.
+Exchange Online ve SharePoint Online'a sahip tüm Microsoft 365 abonelikleri grupları destekler. Buna business essentials ve business premium planları ile Kurumsal E1, E3 ve E5 planları dahildir. Grup, grubu oluşturan kişinin lisansını alır (grubun "düzenleyicisi" olarak da bilinir). Düzenleyici, grubun sahip olmasını istediğiniz özellikler için uygun lisansa sahip olduğu sürece bu lisans gruba iletilecektir.
 
 > [!NOTE]
-> Hizmet aileleri ve planları Microsoft 365 daha ayrıntılı bilgi için bkz. [Microsoft 365 seçeneklerine bakın](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
+> Microsoft 365 hizmet aileleri ve planları hakkında daha fazla bilgi için bkz. [Microsoft 365 plan seçenekleri](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
-Yalnızca Exchange bir planınız varsa, Outlook'te grupların paylaşılan gelen kutusu ve paylaşılan takvim özelliklerine yine de sahip olursanız, belge kitaplığı, Planner veya diğer özelliklerden herhangi birini elde etmeyebilirsiniz.
+Yalnızca Exchange planınız varsa, Outlook'ta grupların paylaşılan gelen kutusunu ve paylaşılan takvim özelliklerini almaya devam edebilirsiniz, ancak belge kitaplığını, Planner'ı veya diğer özellikleri almazsınız.
 
-Microsoft 365 gruplar gruplarla birlikte Azure Active Directory. Edinilen grup özellikleri, hangi Azure Active Directory sahip olduğunu ve grubun düzenleyicisine hangi lisansların atandığına bağlıdır.
+Microsoft 365 grupları Azure Active Directory ile çalışır. Elde ettiğiniz grup özellikleri, sahip olduğunuz Azure Active Directory aboneliğine ve grubun düzenleyicisine hangi lisansların atandığına bağlıdır.
 
 > [!IMPORTANT]
-> Tüm grup özellikleri için, Azure AD Premium aboneliğiniz varsa, kullanıcılar onlara atanmış bir AAD P1 lisansına sahip olsalar da gruba katılabilirler. Lisans zorunlu kılınmaz.
-> Düzenli aralıklarla, hangi kullanıcıların lisansın eksik olduğunu ve lisans gereksinimlerine uyumlu olması için onlara bir lisans atanmamış olması gerektiren kullanım raporları oluşturacağız. Örneğin, bir kullanıcının lisansı olmadığını ve adlandırma ilkesi zorunlu kılınan bir gruba ekli olduğunu kabul etmek var. Rapor, lisansa ihtiyaç olduğunu size bayrakla haber veerer.
+> Tüm grup özellikleri için, Azure AD Premium aboneliğiniz varsa, kullanıcılar kendilerine atanmış bir AAD P1 lisansı olup olmadığına bakılmaksızın gruba katılabilir. Lisanslama zorunlu tutulmaz.
+> Belirli aralıklarla hangi kullanıcıların lisansının eksik olduğunu ve lisans gereksinimleriyle uyumlu olması için bu kullanıcılara atanmış bir kullanıcı olması gerektiğini bildiren kullanım raporları oluştururuz. Örneğin, bir kullanıcının lisansı olmadığını ve adlandırma ilkesinin zorunlu olduğu bir gruba eklendiğini varsayalım. Rapor sizin için lisansa ihtiyaç duyduğuna işaret eder.
 
 ## <a name="related-content"></a>İlgili içerik
 
-[Gruplar hakkında bilgi Microsoft 365 (](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)makale)\
-[Dağıtım listelerini Gruplara yükseltme Microsoft 365 (](../manage/upgrade-distribution-lists.md)makale)\
-[PowerShell Microsoft 365 Grupları Yönetme](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (makale)\
-[SharePoint Çevrimiçi Sınırlar](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (makale)\
-[Microsoft Stream'de grupları ve kanalları düzenleme](/stream/groups-channels-organization) (makale)
+[Microsoft 365 Grupları hakkında bilgi edinin](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (makale)\
+[Dağıtım listelerini Microsoft 365 Grupları](../manage/upgrade-distribution-lists.md) yükseltme (makale)\
+[PowerShell ile Microsoft 365 Grupları yönetme](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (makale)\
+[SharePoint Online Sınırları](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (makale)\
+[grupları ve kanalları Microsoft Stream'de düzenleme](/stream/groups-channels-organization) (makale)

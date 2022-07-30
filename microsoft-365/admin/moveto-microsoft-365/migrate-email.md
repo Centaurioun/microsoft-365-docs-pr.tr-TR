@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: E-postayı, kişileri ve takvimi Google Çalışma Alanı'ndan İş için Microsoft 365'e geçirmeyi öğrenin.
-ms.openlocfilehash: be7637816f80ecba3c56db644114d5ddb00caeb7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: aeb369ce41863fe4556544e314f10b347eaa6b05
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602048"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087385"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Google Workspace'ten iş e-postası ve takvimini geçirme
 

@@ -1,5 +1,5 @@
 ---
-title: İş için Microsoft 365 yenileme
+title: İş için Microsoft 365'i yenileme
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -14,26 +14,27 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - commerce_subscriptions
 - SaRA
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: Yinelenen faturalamayı kapatarak veya açarak iş abonelikleri için Microsoft 365 çoğunu yenilemeyi öğrenin.
+description: Yinelenen faturalamayı kapatarak veya açarak iş için Microsoft 365 aboneliklerinin çoğunu yenilemeyi öğrenin.
 ms.date: 05/04/2021
-ms.openlocfilehash: 5a0b9550df77c7482173e378f4d367af8f363887
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 74eb33f058081d4cd7d9bf7cb741324272a6a46a
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102268"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084905"
 ---
-# <a name="renew-microsoft-365-for-business"></a>İş için Microsoft 365 yenileme
+# <a name="renew-microsoft-365-for-business"></a>İş için Microsoft 365'i yenileme
 
 > [!IMPORTANT]
 > 26 Ocak 2021'den itibaren artık Belçika, Fransa, İtalya, Lüksemburg, Portekiz, İspanya, Hollanda ve Amerika Birleşik Devletleri'ndeki müşteriler için yeni banka hesapları desteklenmemektedir. Bu ülkelerden birinde müşteriniz varsa, aboneliğiniz için mevcut banka hesabıyla ödeme yapmaya devam edebilirsiniz ve yeni abonelikler ekleyebilirsiniz. Ancak bunu banka hesabı iyi durumda olduğu sürece yapabilirsiniz.
 
-Bu makale, iş abonelikleri için çoğu ücretli Microsoft 365 için geçerlidir.
+Bu makale, çoğu ücretli iş için Microsoft 365 abonelikleri için geçerlidir.
   
 Perakende satış mağazasından veya Microsoft iş ortağından satın aldığınız bir ürün anahtarını kullanarak yenilemek için bkz. [Ürün anahtarınızı bulma ve girme](../enter-your-product-key.md).
 
