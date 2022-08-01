@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 234ce1ecb486c01b95c91aa51a0c5fd6b46e7a3c
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 4b0b5f09e97127aa2270a1fd088f6ab3b339d77e
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043533"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106415"
 ---
 # <a name="prioritize-and-manage-automated-investigations-and-response-air"></a>Otomatik Araştırmalara ve Yanıtlara Öncelik Ver ve Yönet (AIR)
 
@@ -37,7 +37,7 @@ Araştırma eylemlerine (ve araştırmalara) Microsoft Güvenlik portalındaki �
 
 ## <a name="why-use-the-action-center-workflow"></a>İşlem Merkezi iş akışını neden kullanmalısınız?
 
-*E-posta & işbirliği* içeriğiyle ilgili otomatik araştırmalar Kötü *Amaçlı* veya *Şüpheli* gibi kararlara neden olduğundan, bazı düzeltme eylemleri oluşturulur. Önerilen düzeltme eylemleri otomatik olarak gerçekleştirilmiyor. Önerilen eylemleri *onaylamak* için SecOps'un her araştırmaya gitmeleri gerekir. *İşlem Merkezi'nde* bekleyen tüm eylemler hızlı onay için toplanır.
+*Email & işbirliği* içeriğiyle ilgili otomatik araştırmalar *Kötü Amaçlı* veya *Şüpheli* gibi kararlara neden olduğundan, bazı düzeltme eylemleri oluşturulur. Önerilen düzeltme eylemleri otomatik olarak gerçekleştirilmiyor. Önerilen eylemleri *onaylamak* için SecOps'un her araştırmaya gitmeleri gerekir. *İşlem Merkezi'nde* bekleyen tüm eylemler hızlı onay için toplanır.
 
 ## <a name="what-youll-need"></a>İhtiyacınız olan şey
 
@@ -62,6 +62,6 @@ Araştırma eylemlerine (ve araştırmalara) Microsoft Güvenlik portalındaki �
 
 ## <a name="more-information"></a>Daha Fazla Bilgi
 
-[otomatik araştırmanın sonuçlarını Microsoft 365 - Office 365 | Microsoft Docs](../air-view-investigation-results.md)
+[Microsoft 365 - Office 365 |'da otomatik araştırmanın sonuçlarını görüntüleme Microsoft Docs](../air-view-investigation-results.md)
 
 [Araştırma sayfasından bekleyen eylemleri onaylama ve reddetme hakkında bilgi edinin](../air-review-approve-pending-completed-actions.md)

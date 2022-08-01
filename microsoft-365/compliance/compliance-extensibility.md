@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Üçüncü taraf veri bağlayıcılarını ve Microsoft Graph API'lerini kullanarak Microsoft Purview çözümlerini genişletme hakkında bilgi edinin.
-ms.openlocfilehash: 7082f98cce61dce8130de6de69d2a52f827dcd13
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 7fc3bf0fb177e07011d0e6388109deec7df14c05
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071557"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106437"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Microsoft Purview ve Microsoft Priva genişletilebilirliği
 
@@ -129,4 +129,4 @@ Kayıt yönetimi çözümü, büyük birimlerdeki kuruluşlar tarafından verile
 
 Kayıt yönetimi için Graph API'leri hakkında daha fazla bilgi için bkz. [Microsoft Graph Kayıt Yönetimi API'sini kullanma](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true).
 
-Bu API'leri kullanmak için lisans gereksinimleri için [, güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzunun](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) kayıt yönetimi bölümüne bakın.
+Bu API'leri kullanmak için lisans gereksinimleri için Güvenlik & uyumluluğu için Microsoft 365 kılavuzunun kayıt yönetimi bilgileri [Microsoft Purview Veri Yaşam Döngüsü Yönetimi & Microsoft Purview Kayıt Yönetimi](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) bölümüne bakın.

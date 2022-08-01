@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 534e548dbd0950b387e757bfb81ebb446f617086
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: 383023ea03e9b1634664b3311e7f698ce946608b
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139462"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107359"
 ---
 # <a name="ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies"></a>Önceden ayarlanmış güvenlik ilkeleriyle her zaman en uygun güvenlik denetimlerine sahip olmanızı sağlayarak
 
@@ -54,7 +54,7 @@ Kullanıcılarınız için Standart ve Katı güvenlik önayar ilkeleri arasınd
 
 1. Standart ve Katı güvenlik ön ayarlarına eklemek istediğiniz kullanıcıları, grupları veya etki alanlarını belirleyin.
 1. adresinden Microsoft Güvenlik portalında https://security.microsoft.comoturum açın.
-1. Sol gezinti bölmesindeki **E-posta & işbirliği** bölümünde **İlkeler & kuralları'nı** seçin.
+1. Sol gezinti bölmesinde, **işbirliği Email &** altında **İlkeler & kuralları'nı** seçin.
 1. **Tehdit ilkeleri'ne tıklayın**.
 1. Şablonlu ilkeler başlığının altında **Önceden Ayarlanmış Güvenlik** **İlkeleri'ni** seçin
 1. Standart koruma ön ayarının altında **Yönet'i** seçin.

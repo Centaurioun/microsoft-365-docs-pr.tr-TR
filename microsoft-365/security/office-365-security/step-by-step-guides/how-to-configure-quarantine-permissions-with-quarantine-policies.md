@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: c8f739a82223a9315e5082377b4951a88b1ea1df
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 709656cafc15333559ac8abe50e21ccde690d09a
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043675"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106963"
 ---
 # <a name="how-to-configure-quarantine-permissions-and-policies"></a>Karantina izinleri ve ilkeleri nasıl yapılandırılır?
 
@@ -50,19 +50,19 @@ Karma çalışmanın evrimi ile daha agresif bir güvenlik duruşu talebi arttı
 
 Kullanıcıların önceliklendirebileceği veya önceliklendirmeyebileceği öğe kategorilerine karar verildikten ve karşılık gelen karantina ilkelerini oluşturduktan sonra, yöneticilerin bu ilkeleri ilgili kullanıcılara ataması ve bildirimleri etkinleştirmesi gerekir.
 
-1. *Tam erişim* kategorisine eklemek istediğiniz kullanıcıları, grupları veya etki alanlarını, *sınırlı erişim* kategorisiyle *Yalnızca Yönetici* kategorisi karşılaştırmasını belirleyin.
+1. *Tam erişim* kategorisine dahil etmek istediğiniz kullanıcıları, grupları veya etki alanlarını ve *sınırlı erişim* kategorisini ve *Yalnızca Yönetici* kategorisini belirleyin.
 1. [Microsoft Güvenlik portalında](https://security.microsoft.com) oturum açın.
-1. **E-posta & işbirliği** > **İlkeleri & kurallarını** seçin.
+1. **İşbirliği** > **İlkeleri & kuralları Email &** seçin.
 1. **Tehdit ilkeleri'ne tıklayın**.
 1. Aşağıdakilerden her birini seçin: **İstenmeyen posta önleme ilkeleri**, **Kimlik avı önleme ilkesi**, **Kötü Amaçlı Yazılımdan Koruma ilkesi**.
 1. **İlke oluştur'u** ve **ardından Gelen'i** seçin.
 1. İlkenin uygulanacağı ilke Adı, kullanıcılar, gruplar veya etki alanları ve **İleri'yi** ekleyin.
 1. **Eylemler** sekmesinde kategoriler için **İletiyi karantinaya al'ı** seçin. *Karantina ilkesini seçme* için ek bir panel olduğunu fark edeceksiniz. Daha önce oluşturduğunuz karantina ilkesini seçmek için bu açılan listeyi kullanın.
 1. **Gözden Geçir** bölümüne gidin ve **onayla** düğmesine tıklayarak yeni ilkeyi oluşturun.
-1. Diğer ilkeler için de aynı adımları yineleyin: **Kimlik avı önleme ilkesi**, **Kötü Amaçlı Yazılımdan Koruma ilkesi** ve **ek ilkesi Kasa**.
+1. Diğer ilkeler için de aynı adımları yineleyin: **Kimlik avı önleme ilkesi**, **Kötü Amaçlı Yazılımdan Koruma ilkesi** ve **Güvenli Ek ilkesi**.
 
 > [!TIP]
-> Şimdiye kadar öğrendiklerin hakkında daha ayrıntılı bilgi için bkz[. İstenmeyen posta filtresi ilkelerini yapılandırma - Office 365 | ](../../office-365-security/configure-your-spam-filter-policies.md)|  Microsoft Docs [EOP'de kimlik avı önleme ilkelerini yapılandırma - Office 365 | ](../../office-365-security/configure-anti-phishing-policies-eop.md) |  Microsoft Docs [Kötü amaçlı yazılımdan koruma ilkelerini yapılandırma - Office 365 | ](../../office-365-security/configure-anti-malware-policies.md)|  Microsoft Docs [Office 365 için Microsoft Defender Kasa Ekler ilkelerini ayarlama - Office 365 | Microsoft Docs](../../office-365-security/set-up-safe-attachments-policies.md)
+> Şimdiye kadar öğrendiklerin hakkında daha ayrıntılı bilgi için bkz[. İstenmeyen posta filtresi ilkelerini yapılandırma - Office 365 | ](../../office-365-security/configure-your-spam-filter-policies.md)|  Microsoft Docs [EOP'de kimlik avı önleme ilkelerini yapılandırma - Office 365 | ](../../office-365-security/configure-anti-phishing-policies-eop.md) |  Microsoft Docs [Kötü amaçlı yazılımdan koruma ilkelerini yapılandırma - Office 365 | ](../../office-365-security/configure-anti-malware-policies.md)|  Microsoft Docs [Office 365 için Microsoft Defender Güvenli Ekler ilkelerini ayarlama - Office 365 | Microsoft Docs](../../office-365-security/set-up-safe-attachments-policies.md)
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 765eaffd2f57687c0ee16ace30aff97ddd91462c
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 2c1318d685b38332f011d1e56dfb0dd394cc990c
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042166"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106371"
 ---
 # <a name="optimize-and-correct-security-policies-with-configuration-analyzer"></a>Yapılandırma çözümleyicisi ile güvenlik ilkelerini iyileştirin ve düzeltin
 
@@ -36,7 +36,7 @@ Yapılandırma çözümleyicisi, kiracınızda yapılandırdığınız e-posta g
 ## <a name="compare-settings-and-apply-recommendations"></a>Ayarları karşılaştırma ve önerileri uygulama
 1. adresine [https://security.microsoft.com/configurationAnalyzer](https://security.microsoft.com/configurationAnalyzer)gidin.
 1. Yapmak istediğiniz yan yana karşılaştırmaya göre üstteki menüden **Standart öneriler'i** veya **Katı öneriler'i** seçin.
-1. İlke değişiklikleri için Öneriler görüntülenir. (Varsa)
+1. İlke değişikliklerine yönelik öneriler görüntülenir. (Varsa)
 1. Ardından bir öneri seçebilir, önerilen eylemi, önerinin uygulanabileceği ilkeyi, geçerli yapılandırmayı & adı ayarlayabilirsiniz.
 1. Bir öneri seçiliyken, Görüntülenen onay iletisinde **Öneriyi uygula'ya** ve ardından **Tamam'a** basabilirsiniz.
 1. bir ilkeyi el ile düzenlemek veya ayarları doğrudan ilke içinde onaylamak isterseniz, yeni bir sekme yükleyecek ve sizi doğrudan etkilenen ilkeye kolayca götürecek **öneriyi uygula** yerine **İlkeyi görüntüle'ye** basabilirsiniz.

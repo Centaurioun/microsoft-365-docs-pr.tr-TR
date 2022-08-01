@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f32d521fe83c9e72566228bb10efb37b851b6e05
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 460988f063eb23c53ce76359da6ba7875ab3bc62
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748087"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107139"
 ---
 # <a name="onboard-with-microsoft-defender-for-iot"></a>IoT için Microsoft Defender ile ekleme
 
@@ -34,7 +34,7 @@ ms.locfileid: "66748087"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Uç Nokta için Microsoft Defender artık IoT için Microsoft Defender ile sorunsuz bir şekilde tümleştirildi. Bu tümleştirme, IoT için Defender tarafından sağlanan aracısız izleme özellikleriyle cihaz bulma özelliklerinizi genişletir. Bu, İnternet Üzerinden Ses Protokolü (VoIP) cihazları, yazıcılar ve kameralar gibi BT ağlarına bağlı kurumsal IoT cihazlarının güvenliğini sağlamaya yardımcı olur. Kuruluşların tüm IoT ve Operasyonel Teknoloji (OT) altyapılarının güvenliğini sağlayan tek bir tümleşik çözümden yararlanmasına olanak tanır. Daha fazla bilgi için bkz [. Kurumsal IoT ağ koruması](/azure/defender-for-iot/organizations/overview-eiot).
 
@@ -67,7 +67,7 @@ Uç Nokta için Defender tümleştirmenizin ayarlarını değiştirmek için kul
 
 ## <a name="set-up-a-network-sensor"></a>Ağ algılayıcısı ayarlama
 
-Ağ algılayıcısı ayarlamak için Azure aboneliğinizin, Kurumsal IoT cihazları eklenmiş bir IoT için Defender planına sahip olması gerekir. Daha fazla bilgi için bkz. [IoT için Defender'ı kullanmaya başlama](/azure/defender-for-iot/organizations/getting-started).
+Bir ağ algılayıcısı ayarlamak için Azure aboneliğinizin [yukarıda](#onboard-a-defender-for-iot-plan) açıklandığı gibi Kurumsal IoT cihazları eklenmiş bir IoT için Defender planına sahip olması gerekir.
 
 Ağ algılayıcısı eklemek için **Ağ algılayıcılarını ayarlama** altında **IoT için Microsoft Defender** bağlantısını seçin. Bu sizi Azure portal algılayıcı kurulum işlemine getirir. Daha fazla bilgi için bkz. [Kurumsal IoT'yi kullanmaya başlama](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor).
 
@@ -89,7 +89,7 @@ Daha fazla bilgi [için Bkz. IoT için Defender fiyatlandırma sayfası](https:/
 
 ## <a name="cancel-your-defender-for-iot-plan"></a>IoT için Defender planınızı iptal etme
 
-IoT için Defender planınızı portaldaki Uç Nokta için Defender ayarları sayfasından [https://security.microsoft.com](https://security.microsoft.com/) iptal edebilirsiniz. Planınızı iptal ettikten sonra tümleştirme durdurulur ve artık Uç Nokta için Defender'da güvenlik değerlendirmesi değeri alamaz veya IoT için Defender'da yeni cihazları algılamazsınız.
+Portaldaki Uç Nokta için Defender ayarları sayfasından [https://security.microsoft.com](https://security.microsoft.com/) IoT için Defender planınızı iptal edin. Planınızı iptal ettikten sonra tümleştirme durdurulur ve artık Uç Nokta için Defender'da güvenlik değerlendirmesi değeri alamaz veya IoT için Defender'da yeni cihazları algılamazsınız.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

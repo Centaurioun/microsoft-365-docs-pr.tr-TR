@@ -17,16 +17,16 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: acc3f81c789722a460a43df56a3e2794855dad0c
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: c6d887e7b50c3bfeddb967340045f6b2dbf96b0c
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043523"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107337"
 ---
 # <a name="steps-to-use-manual-email-remediation-in-threat-explorer"></a>Tehdit Gezgini'nde el ile e-posta düzeltmeyi kullanma adımları
 
-E-posta düzeltme, yöneticilerin tehdit olan e-postalar üzerinde işlem yapmalarına yardımcı olan zaten mevcut bir özelliktir.
+Email düzeltme, yöneticilerin tehdit olan e-postalar üzerinde işlem yapmalarına yardımcı olan mevcut bir özelliktir.
 
 ## <a name="what-youll-need"></a>İhtiyacınız olan şey
 - Office 365 için Microsoft Defender Plan 2 (E5 planlarında bulunur)
@@ -38,8 +38,8 @@ E-posta düzeltme, yöneticilerin tehdit olan e-postalar üzerinde işlem yapmal
 1. Yan bölme açılır ve düzeltme, önem derecesi ve açıklama için ad gibi ayrıntılar istenir. Bilgiler gözden geçirildikten sonra **Gönder'e** basın.
 1. Yönetici bu eylemi onaylar onaylamaz Onay Kimliği'ni ve [burada](https://security.microsoft.com/action-center/history) Microsoft 365 Defender İşlem Merkezi'nin bağlantısını görür. Bu sayfa **, eylemlerin izlenebileceği** yerdir.
 
-    1. **Yönetici eylemi uyarısı** - Uyarı kuyruğunda 'Yönetici tarafından gönderilen yönetim eylemi' adlı bir sistem uyarısı gösterilir. Bu, bir yöneticinin varlığı düzeltme eylemini aldığını gösterir. Eylemi gerçekleştiren yöneticinin adı, araştırma bağlantısı ve zamanı gibi ayrıntılar sağlar. Bu, yöneticilerin varlıklar üzerinde gerçekleştirilen düzeltme gibi her önemli eylemi fark etmelerini sağlar.
-    1. **Yönetici eylemi araştırması** - Varlıklardaki analiz yönetici tarafından zaten yapıldığından ve gerçekleştirilen eyleme bu neden olduğundan, sistem tarafından ek analiz yapılmaz. İlgili uyarı, düzeltme için seçilen varlık, gerçekleştirilen eylem, düzeltme durumu, varlık sayısı ve eylemi onaylayan gibi ayrıntıları gösterir. Bu, yöneticilerin *el ile* gerçekleştirilen araştırmayı ve eylemleri (yönetici eylemi araştırması) izlemesine olanak tanır.
+    1. **eylem uyarısı Yönetici** - Uyarı kuyruğunda 'Yönetici tarafından gönderilen yönetim eylemi' adlı bir sistem uyarısı gösterilir. Bu, bir yöneticinin varlığı düzeltme eylemini aldığını gösterir. Eylemi gerçekleştiren yöneticinin adı, araştırma bağlantısı ve zamanı gibi ayrıntılar sağlar. Bu, yöneticilerin varlıklar üzerinde gerçekleştirilen düzeltme gibi her önemli eylemi fark etmelerini sağlar.
+    1. **eylem araştırması Yönetici** - Varlıklardaki analiz yönetici tarafından zaten yapıldığından ve gerçekleştirilen eyleme bu neden olduğundan, sistem tarafından ek analiz yapılmaz. İlgili uyarı, düzeltme için seçilen varlık, gerçekleştirilen eylem, düzeltme durumu, varlık sayısı ve eylemi onaylayan gibi ayrıntıları gösterir. Bu, yöneticilerin *el ile* gerçekleştirilen araştırmayı ve eylemleri (yönetici eylemi araştırması) izlemesine olanak tanır.
 1. **Birleşik işlem merkezindeki eylem günlükleri** - Geçici silme ve silinmiş öğeler klasörüne taşıma gibi e-posta eylemlerine yönelik geçmiş ve eylem günlüklerinin tümü, birleşik **İşlem Merkezi** > **Geçmişi sekmesinin** altındaki *merkezi bir görünümde kullanılabilir*. 
 1. **Birleşik işlem merkezindeki filtreler** - Düzeltme adı, onay kimliği, Araştırma Kimliği, durum, eylem kaynağı ve eylem türü gibi birden çok filtre vardır. Bunlar, birleşik İşlem merkezinde e-posta eylemlerini bulmak ve izlemek için kullanışlıdır.
 
@@ -56,7 +56,7 @@ E-posta düzeltme senaryoları şunlardır:
 İki el ile e-posta düzeltme senaryosu:
 
 1. Ana senaryo:
-    1. E-postalarda el ile gerçekleştirilen eylemler (örneğin, Tehdit Gezgini veya Gelişmiş Tehdit Avcılığı kullanarak) yalnızca eski Office 365 için Defender İşlem Merkezi'nde görünür (E-posta ve İşbirliği > İşlem merkezinde > İşlem Merkezi'ni gözden geçirme - Microsoft 365 güvenlik).  
+    1. E-postalarda el ile gerçekleştirilen eylemler (örneğin, Tehdit Gezgini veya Gelişmiş Tehdit Avcılığı kullanarak) yalnızca eski Office 365 için Defender İşlem Merkezi'nde görünür (Email ve İşbirliği > İşlem merkezinde > İşlem Merkezi'ni gözden geçirme - Microsoft 365 güvenliği).  
 1. İki aşamalı onay senaryosu:
     1. İki aşamalı onay işlemini kullanarak onay bekleyen el ile eylemler (1. E-posta bir analist tarafından düzeltmeye eklendi, 2. E-posta başka bir analist tarafından incelendi ve onaylandı).
 

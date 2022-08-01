@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Yönetilen Hizmet Sağlayıcıları (MSP' ler) için Microsoft 365 Lighthouse kullanmak için gereksinimlerin listesini alın.
-ms.openlocfilehash: 27d5440b70916ebdb3b761ac4308d3b97ccb27da
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: 4cea971227f13bf5cf7a59cffa08465e9ed63391
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057784"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67105977"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse için gereksinimler
 
 Microsoft 365 Lighthouse, Yönetilen Hizmet Sağlayıcılarının (MSP' ler) küçük ve orta ölçekli işletme (SMB) müşterileri için cihazları, verileri ve kullanıcıları uygun ölçekte güvenli hale gelip yönetmelerine yardımcı olan bir yönetici portalıdır.
 
-MSP'lerin Lighthouse kullanmak için Bulut Çözümü Sağlayıcısı (CSP) programına Dolaylı Bayi veya Doğrudan Fatura iş ortağı olarak kaydedilmesi gerekir.
+MSP'lerin Lighthouse'un kullanılabilmesi için Bulut Çözümü Sağlayıcısı (CSP) programına Dolaylı Bayi veya Doğrudan Fatura iş ortağı olarak kaydedilmesi gerekir.
 
 Ayrıca, her MSP müşteri kiracısının aşağıdaki gereksinimleri karşılayarak Lighthouse'a uygun olması gerekir:
 
@@ -36,7 +36,7 @@ Ayrıca, her MSP müşteri kiracısının aşağıdaki gereksinimleri karşılay
 - En az bir Microsoft 365 İş Ekstra, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business veya İş için Microsoft Defender lisansı olmalıdır
 - En fazla 2500 lisanslı kullanıcı olmalıdır
 
-Müşterileri Lighthouse'a eklemek için Ayrıntılı Yönetici Ayrıcalıkları (GDAP) ve dolaylı bayi ilişkisi ya da Temsilci Yönetici Ayrıcalıkları (DAP) ilişkisi gerekir. MÜŞTERI kiracısında DAP ve GDAP birlikte varsa, GDAP özellikli güvenlik gruplarındaki MSP teknisyenleri için GDAP izinleri önceliklidir. Yakında yalnızca GDAP ilişkilerine (dolaylı kurumsal bayi ilişkileri olmadan) sahip müşteriler Lighthouse'a eklenecek.
+ \*Müşterileri Lighthouse'a eklemek için Ayrıntılı Temsilcili Yönetici Ayrıcalıkları (GDAP veya Temsilci Yönetici Ayrıcalıkları (DAP) ilişkisi gereklidir. Lighthouse'a eklemek için dolaylı kurumsal bayi ilişkisi artık gerekli değildir. MÜŞTERI kiracısında DAP ve GDAP birlikte varsa, GDAP özellikli güvenlik gruplarındaki MSP teknisyenleri için GDAP izinleri önceliklidir.
 
 ## <a name="requirements-for-enabling-device-management"></a>Cihaz yönetimini etkinleştirme gereksinimleri
 
@@ -51,14 +51,14 @@ Müşteri verilerinin Riskli kullanıcılar, Çok Faktörlü kimlik doğrulamas�
 
 ## <a name="requirements-for-enabling-threat-management"></a>Tehdit yönetimini etkinleştirme gereksinimleri
 
-Müşteri kiracı cihazlarını ve tehditlerini tehdit yönetimi sayfalarında görüntülemek için tüm müşteri kiracı cihazlarını Microsoft Endpoint Manager'a (MEM) kaydetmeniz ve Microsoft Defender Virüsten Koruma çalıştırarak korumanız gerekir.
+Müşteri kiracı cihazlarını ve tehditlerini tehdit yönetimi sayfalarında görüntülemek için tüm müşteri kiracı cihazlarını Microsoft Endpoint Manager'a (MEM) kaydetmeniz ve Microsoft Defender Virüsten Koruma'yı çalıştırarak korumanız gerekir.
 
 Daha fazla bilgi için bkz[. Cihazları Microsoft Intune kaydetme](/mem/intune/enrollment/).
 
-Microsoft Defender Virüsten Koruma Windows işletim sisteminin bir parçasıdır ve Windows 10 çalıştıran cihazlarda varsayılan olarak etkinleştirilir.
+Microsoft Defender Virüsten Koruma, Windows işletim sisteminin bir parçasıdır ve Windows 10 çalıştıran cihazlarda varsayılan olarak etkindir.
 
 > [!NOTE]
-> Microsoft dışı bir virüsten koruma çözümü kullanıyorsanız ve Microsoft Defender Virüsten Koruma kullanmıyorsanız, Microsoft Defender Virüsten Koruma otomatik olarak devre dışı bırakılır. Microsoft dışı virüsten koruma çözümünü kaldırdığınızda, Windows cihazlarınızı tehditlere karşı korumak için Microsoft Defender Virüsten Koruma otomatik olarak etkinleştirilir.
+> Microsoft Defender Virüsten Koruma değil de Microsoft dışı bir virüsten koruma çözümü kullanıyorsanız, Microsoft Defender Virüsten Koruma otomatik olarak devre dışı bırakılır. Microsoft dışı virüsten koruma çözümünü kaldırdığınızda Microsoft Defender Virüsten Koruma, Windows cihazlarınızı tehditlere karşı korumak için otomatik olarak etkinleştirilir.
 
 ## <a name="related-content"></a>İlgili içerik
 

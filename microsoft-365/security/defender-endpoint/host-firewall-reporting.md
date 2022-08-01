@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 0dcb03a5398b38e05c3c7c867306444b17b8c720
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 4903a5f5560b6997dbca32e2f7183515868f51a5
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490242"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106765"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender’da güvenlik duvarı raporlama oturumu düzenleyin
 
@@ -36,7 +36,7 @@ Genel yönetici veya güvenlik yöneticisiyseniz artık güvenlik duvarı raporl
 
 - Windows 10 veya Windows 11 ya da Windows Server 2019 ya da Windows Server 2022 çalıştırıyor olmanız gerekir.
 - Cihazları Uç Nokta için Microsoft Defender hizmetine eklemek için [buraya](onboard-configure.md) bakın.
-- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalın</a> verileri almaya başlaması için Gelişmiş Güvenlik ile Windows Defender Güvenlik Duvarı için **Denetim Olaylarını** etkinleştirmeniz gerekir:
+- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalın</a> verileri almaya başlaması için Gelişmiş Güvenlik özellikli Windows Defender Güvenlik Duvarı için **Denetim Olaylarını** etkinleştirmeniz gerekir:
   - [Denetim Filtreleme Platformu Paket Bırakma](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [Filtre Platformu Bağlantısını Denetle](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - grup ilkesi Nesne Düzenleyicisi, Yerel Güvenlik İlkesi veya auditpol.exe komutlarını kullanarak bu olayları etkinleştirin. Daha fazla bilgi için [buraya](/windows/win32/fwp/auditing-and-logging) bakın.
@@ -95,8 +95,6 @@ catch {
 
 ## <a name="supported-scenarios"></a>Desteklenen senaryolar
 
-Ring0 Preview sırasında aşağıdaki senaryolar desteklenir:
-
 - [Güvenlik duvarı raporlama](#firewall-reporting)
 - ["Bağlantısı engellenen bilgisayarlar"dan cihaza](#from-computers-with-a-blocked-connection-to-device)
 - [Gelişmiş avcılık (önizleme yenilemesi) detayına gitme](#drill-into-advanced-hunting-preview-refresh)
@@ -129,4 +127,4 @@ Güvenlik duvarı raporları, Gelişmiş **Avcılığı Aç** düğmesine tıkla
 
 Sorgu artık yürütülebilir ve son 30 güne ait tüm ilgili Güvenlik Duvarı olayları incelenebilir.
 
-Daha fazla raporlama veya özel değişiklik için sorgu, daha fazla analiz için Power BI'a aktarılabilir. Özel raporlama, Power BI kullanarak Windows Defender Güvenlik Duvarı etkinliklerini izlemek için [Özel Raporlama betiğini](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) indirerek kolaylaştırılabilir.
+Daha fazla raporlama veya özel değişiklik için sorgu, daha fazla analiz için Power BI'a aktarılabilir. Power BI kullanarak Windows Defender Güvenlik Duvarı etkinliklerini izlemek için [Özel Raporlama betiği](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) indirilerek özel raporlama kolaylaştırılabilir.

@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3d742733903faf876257e42a9ea9d15a648f9984
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
+ms.openlocfilehash: 7d83a5a3eba765099e58ff0f5086cb985697333d
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66827212"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107403"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme
 
@@ -102,7 +102,7 @@ Yeni birleşik çözüm paketi, bağımlılıkları ve yükleme adımlarını ka
 
 Eklediğiniz sunucuya bağlı olarak, birleşik çözüm Microsoft Defender Virüsten Koruma'yı ve/veya EDR algılayıcısını yükler. Aşağıdaki tabloda hangi bileşenin yüklü olduğu ve varsayılan olarak nelerin yerleşik olduğu gösterilir.
 
-|Sunucu sürümü|AV|EDR|
+|Sunucu sürümü|Av|EDR|
 |----|----|----|
 |Windows Server 2012 R2 SP1|![Evet.](images/svg/check-yes.svg)|![Evet.](images/svg/check-yes.svg)|
 |Windows Server 2016|Yerleşik|![Evet.](images/svg/check-yes.svg)|
@@ -140,7 +140,7 @@ Sorun açıklaması: Sertifika İptal Listesi (CRL) URL'sine erişmek için baş
 
 Etkilenen senaryo: Windows Server 2012 R2'de çalışan Akıllı sürüm numarası 10.8048.22439.1065 veya önceki önizleme sürümleriyle -Uç Nokta için Microsoft Defender -TelemetryProxyServer proxy yapılandırmasını kullanma; diğer yöntemler etkilenmez
 
-Geçi -ci çözüm:
+Geçici çözüm:
 1. Ekleme sayfasında bulunan en son paketi kullanarak veya KB5005292 uygulayarak makinenin Akıllı sürüm 10.8048.22439.1065 veya üzerini çalıştırdığından emin olun.
 2. Sertifikayı indirme ve sıkıştırmasını açma https://github.com/microsoft/mdefordownlevelserver/blob/main/InterCA.zip
 3. Sertifikayı Yerel Bilgisayar güvenilen "Ara Sertifika Yetkilileri" deposuna aktarın.
@@ -273,7 +273,11 @@ Windows Server desteği sunucu etkinlikleri, çekirdek ve bellek saldırısı al
 
 ##### <a name="install-microsoft-defender-for-endpoint-using-a-script"></a>Betik kullanarak Uç Nokta için Microsoft Defender yükleme
 
-Yükleme, kaldırma ve ekleme işlemini otomatikleştirmeye yardımcı olması için [yükleyici betiğini](server-migration.md#installer-script) kullanabilirsiniz. Daha fazla bilgi için, betiği grup ilkesi ile kullanmak için aşağıdaki bölümdeki yönergelere bakın.
+Yükleme, kaldırma ve ekleme işlemini otomatikleştirmeye yardımcı olması için [yükleyici betiğini](server-migration.md#installer-script) kullanabilirsiniz. 
+> [!NOTE]
+> Yükleme betiği imzalandı. Betikte yapılan değişiklikler imzayı geçersiz kılacak. Betiği GitHub'dan indirdiğinizde, yanlışlıkla değiştirilmesini önlemek için önerilen yaklaşım, kaynak dosyaları zip arşivi olarak indirmek ve ardından install.ps1 dosyasını almak için ayıklamaktır (ana Kod sayfasında Kod açılan menüsüne tıklayın ve "ZIP'i İndir"i seçin).
+
+Bu betik, [önceki MMA tabanlı Uç Nokta için Microsoft Defender çözümünden sunucu geçişi senaryoları](/microsoft-365/security/defender-endpoint/server-migration) ve aşağıda açıklandığı gibi grup ilkesi kullanılarak dağıtım için açıklananlar da dahil olmak üzere çeşitli senaryolarda kullanılabilir.
 
 ##### <a name="apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy"></a>Grup ilkesini kullanarak Uç Nokta için Microsoft Defender yükleme ve ekleme paketlerini uygulama
 
@@ -316,9 +320,9 @@ Ek yapılandırma ayarları için bkz [. Örnek koleksiyon ayarlarını](configu
 Aşağıdaki adımlar yalnızca üçüncü taraf kötü amaçlı yazılımdan koruma çözümü kullanıyorsanız geçerlidir. Aşağıdaki Microsoft Defender Virüsten Koruma pasif mod ayarını uygulamanız gerekir. Doğru yapılandırıldığını doğrulayın:
 
 1. Aşağıdaki kayıt defteri girdisini ayarlayın:
-    - Yolu: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
+    - Yol: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
     - Ad: `ForceDefenderPassiveMode`
-    - Türü: `REG_DWORD`
+    - Tür: `REG_DWORD`
     - Değer: `1`
 
    :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="Pasif mod doğrulama sonucu" lightbox="images/atp-verify-passive-mode.png":::

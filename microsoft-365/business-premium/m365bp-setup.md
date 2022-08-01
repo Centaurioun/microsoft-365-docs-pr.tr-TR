@@ -9,25 +9,24 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/20/2022
+ms.date: 08/01/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
-- SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 43d6bfe9ef385f7c9b197af75a25bd2544996840
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 8c5e3436c4055b466ab9e17fd5d4a958a5a25edc
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917990"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112471"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'yı ayarlama
 
 [Deneme sürümü başlattıktan veya Microsoft 365 İş Ekstra satın](get-microsoft-365-business-premium.md) aldıktan sonra, bir sonraki adımınız her şeyi ayarlamaktır. Kullanabileceğiniz çeşitli seçenekler vardır. Şunları yapabilirsiniz:
 
-- Temel kurulum ve yapılandırma için [destekli kurulum deneyimiyle](m365bp-setup.md#guided-setup-process) başlayın ve ardından [Güvenliği artırma](m365bp-security-overview.md) bölümüne geçin; Veya
+- Temel kurulum ve yapılandırma için [destekli kurulum deneyimiyle](m365bp-setup.md#guided-setup-process) başlayın ve ardından [Güvenliği artırma](m365bp-security-overview.md) bölümüne geçin; veya
 - Her şeyi ayarlamanıza ve yapılandırmanıza yardımcı olabilecek [bir Microsoft iş ortağıyla çalışın](m365bp-setup.md#work-with-a-microsoft-partner).
 
 ## <a name="before-you-begin"></a>Başlamadan önce
@@ -52,13 +51,13 @@ Microsoft 365 İş Ekstra destekli bir işlem içerir. Aşağıdaki videoda, Mic
 
 > [!TIP]
 > - Kullanıcıları ekledikten sonra, onlara [Çalışan hızlı kurulum kılavuzunun](../admin/setup/employee-quick-setup.md) bağlantısını verin. Kılavuz, oturum açma, Office uygulamalarını alma ve dosyaları kaydetme, kopyalama ve paylaşma işlemlerinde onlara yol gösterir.
-> - [Güvenliği artır'a](m365bp-security-overview.md) geçin.
+> - [Güvenliği artırma'ya](m365bp-security-overview.md) devam edin.
 
 ## <a name="work-with-a-microsoft-partner"></a>Bir Microsoft iş ortağıyla çalışma
 
 Microsoft 365'i edinme ve ayarlama konusunda bir Microsoft iş ortağı yardımı almayı tercih ederseniz şu adımları izleyin:
 
-1. [İş Ortaklarına Gözat'a](https://appsource.microsoft.com/marketplace/partner-dir) gidin.
+1. [İş Ortaklarına Gözat](https://appsource.microsoft.com/marketplace/partner-dir) sayfasına gidin.
 
 2. **Filtreler** bölmesinde arama ölçütlerini belirtin, örneğin:
 
@@ -79,4 +78,4 @@ Microsoft 365'i edinme ve ayarlama konusunda bir Microsoft iş ortağı yardım�
 
 ### <a name="next-objective"></a>Sonraki hedef
 
-Bu hedeflere ulaştıktan sonra [güvenlik korumalarını artırın](m365bp-security-overview.md).
+Bu hedeflere ulaştıktan sonra [Güvenliği artırma](m365bp-security-overview.md) bölümüne geçin.

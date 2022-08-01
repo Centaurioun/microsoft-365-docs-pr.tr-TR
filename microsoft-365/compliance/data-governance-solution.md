@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Uyumluluk veya mevzuat gereksinimleri için verilerinizi yönetmek üzere kuruluşunuz için Microsoft Purview'u dağıtmaya yönelik açıklayıcı kılavuz.
-ms.openlocfilehash: fbfc208a860b8f062b424912207718ece2055b3b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 90832541bf202f062b44c1ec375fb20d3db654c3
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66862231"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106021"
 ---
 # <a name="deploy-a-data-governance-solution-with-microsoft-purview"></a>Microsoft Purview ile veri idaresi çözümü dağıtma
 
@@ -38,11 +38,7 @@ Veri koruma çözümü için bkz. [Microsoft Purview ile bilgi koruma çözümü
 
 ## <a name="licensing"></a>Lisanslama
 
-Lisans gereksinimlerinizi ve seçeneklerinizi anlamak için [Microsoft 365 lisanslama belgelerindeki](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) aşağıdaki bölümlere bakın: 
-- [Microsoft Purview Veri Yaşam Döngüsü Yönetimi](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management)
-- [Microsoft Purview Kayıt Yönetimi](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management)
-
-Tüm ek lisanslama gereksinimleri belge yönergelerine eklenecektir. Örneğin, posta kutularını yönetmeye özgü lisanslama için Exchange Online lisansları gerekebilir.
+Lisanslama gereksinimlerinizi ve seçeneklerinizi anlamak için, microsoft 365'te sunulan güvenlik & uyumluluğu kılavuzunun [Microsoft Purview Veri Yaşam Döngüsü Yönetimi & Microsoft Purview Kayıt Yönetimi](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) özellik düzeyi lisans gereksinimleri bölümüne bakın.
 
 ## <a name="keep-what-you-need-and-delete-what-you-dont"></a>İhtiyacınız olanı tutun ve istemediğinizi silin
 

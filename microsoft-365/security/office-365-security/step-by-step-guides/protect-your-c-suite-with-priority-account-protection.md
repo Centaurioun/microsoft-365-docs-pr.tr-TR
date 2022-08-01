@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 99bfcd9003d55ced96364f033080992fa4447188
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: de0de8b418036d6b8e73b9cf5ec8deafc24af6a9
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042934"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106503"
 ---
 # <a name="protect-your-c-suite-with-priority-account-protection"></a>C-paketinizi öncelikli hesap korumasıyla koruyun
 
@@ -35,15 +35,15 @@ ms.locfileid: "66042934"
 
 ## <a name="tag-priority-users"></a>Etiket Önceliği kullanıcıları
 1. Öncelik hesapları olarak etiketlemek istediğiniz kullanıcıları, grupları veya etki alanlarını belirleyin.
-1. [Microsoft Güvenlik Portalı'nda](https://security.microsoft.com/) oturum açın ve sol gezinti çubuğundaki Ayarlar gidin.
-1. Yüklenen sayfada e-posta & işbirliği'ni seçin ve ardından Kullanıcı etiketleri'ne tıklayın
+1. [Microsoft Güvenlik Portalı'nda](https://security.microsoft.com/) oturum açın ve sol gezinti çubuğunda Ayarlar'a gidin.
+1. Yüklenen sayfada işbirliği Email & seçin ve ardından Kullanıcı etiketleri'ne tıklayın
 1. Kullanıcı etiketleri sayfasında Öncelik hesabı etiketini seçin ve Etiketi düzenle'ye basın
 1. Görüntülenen açılır öğede Üye ekle'yi seçin
 1. Etiketlemek istediğiniz kullanıcıları arayın, bir veya daha fazla kullanıcı seçin ve Ekle'ye basın
 1. Seçtiğiniz üyeleri gözden geçirin ve İleri'ye basın
 1. Değişiklikleri onaylamak için Gönder'e basın
 
-Hangi öncelik hesabı etiketlerinin olduğunu öğrenmek için bkz. [Öncelik hesaplarını yönetme ve izleme - yönetici Microsoft 365 | Microsoft Docs](../../../admin/setup/priority-accounts.md).
+Öncelikli hesap etiketlerinin ne olduğunu öğrenmek için bkz. [Öncelik hesaplarını yönetme ve izleme - Microsoft 365 yönetici | Microsoft Docs](../../../admin/setup/priority-accounts.md).
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 [Öncelik hesapları olarak etiketlenen kullanıcılar için farklı korumayı gözden geçirin](../../office-365-security/configure-review-priority-account.md).

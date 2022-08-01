@@ -18,12 +18,12 @@ ms.custom:
 description: Kimliği Doğrulanmış Alınan Zincir (ARC), cihazlarda ve gönderen ile alıcı arasında gelen dolaylı posta akışlarında kimlik doğrulama sonuçlarını korumaya çalışan e-posta kimlik doğrulamasıdır. Güvenilir ARC Gönderenleriniz için şu şekilde özel durumlar yapabilirsiniz.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30b4f57b89ff8eaa61cf82c45a7d2b0af02d8241
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 7523a17eb8440d6b567d0414b63153bfc33338a2
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059655"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107315"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>*Meşru* dolaylı posta akışlarına güvenmek için güvenilir ARC Gönderenlerinin listesini oluşturma
 
@@ -124,7 +124,7 @@ Set-ArcConfig -Identity {tenant name/tenanid}\default -ArcTrustedSealers {a list
 </br>
 ``
 Get-ArcConfig
-`` Veya ``
+`` veya ``
 Get-ArcConfig - Organization {tenant name}
 ``
 

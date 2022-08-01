@@ -20,22 +20,20 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 46130f6534dd08895b317dda826a7f450a21ac45
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 179b13d31091e2c5ec60ba467bb06f2d072f6cdd
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099933"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107264"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Microsoft 365 Defender'da Avcılık için Defender Uzmanları raporunu anlama
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Şunlar için geçerlidir:**
 
-- Microsoft 365 Defender
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Avcılık için Microsoft Defender Uzmanları, Microsoft 365 Defender müşterilerin karşılaştıkları önemli tehditleri anlamasına yardımcı olmak için insan zekasını ve uzman tarafından eğitilmiş teknolojiyi katmanlar. Defender Uzman'ın tehdit avcılığı becerileri, tehdit ortamının kapsamlı bir şekilde anlaşılması ve yeni ortaya çıkan tehditlerle ilgili bilgilerin ortamınızdaki bu tehditleri belirlemenize, önceliklendirmenize ve ele almanıza nasıl yardımcı olabileceğini gösterir. 
 
@@ -57,13 +55,13 @@ Raporun her bölümü, Defender Uzmanlarımızın ortamınızda bulduğu tehditl
 
 Örnek raporun aşağıdaki ekran görüntüsüne bakın:
 
-![defender uzmanlar raporu](../../media/mte/defender-experts-report.png)
+![Microsoft 365 Defender portalında Tehdit Avcılığı için Microsoft Defender Uzmanları raporunun ekran görüntüsü.](../../media/mte/defenderexperts/defender-experts-report.png)
 
 ## <a name="view-defender-experts-notifications"></a>Defender Uzman Bildirimlerini Görüntüleme
 
 Defender Uzmanlar Bildirimi, ortamınızda gözlemlenen önemli tehdit etkinliği Defender Uzmanlar'ı açıklar ve kuruluşunuzu düzeltmek ve savunmak için öneriler sağlar.
 
-Avcılık için Defender Uzmanları raporları, Defender Uzmanlarımızın seçtiğiniz süre için gönderdiği toplam Defender Uzmanları Bildirimi sayısını sağlar. Bu bildirimleri görüntülemek için **Bildirim'in** yanındaki **Bildirimi görüntüle'ye** tıklayın.
+Avcılık için Defender Uzmanları raporları, Defender Uzmanlarımızın seçtiğiniz süre için gönderdiği toplam Defender Uzmanları Bildirimi sayısını sağlar. Bu bildirimleri görüntülemek için **Bildirim'in** yanındaki **Bildirimi görüntüle'yi** seçin.
 
 Bu bağlantı sizi Microsoft 365 Defender olaylar sayfasına yönlendirir. Avcılık uyarıları için Defender Uzmanı veya Defender Uzmanları Bildirimleri **, Defender Uzmanları** ile etiketlenmiştir.
 
@@ -77,16 +75,16 @@ MITRE ATT&CK taktikleri, her saldırı aşamasında ulaşmaya çalıştıkları 
 1.  Keşif
 2.  Kaynak Geliştirme
 3.  İlk erişim
-4.  Yürütme   
-3.  Devamlılık 
-4.  Ayrıcalık yükseltme    
-5.  Savunma kaçamak 
+4.  Yürütme
+3.  Devamlılık
+4.  Ayrıcalık yükseltme
+5.  Savunma kaçamak
 6.  Kimlik bilgisi erişimi
 7.  Keşif
-8.  Yanal hareket    
+8.  Yanal hareket
 9.  Koleksiyon
 10. Komut ve denetim
-11. Sızdırma    
+11. Sızdırma
 12. Etki
 
 Avcılık için Defender Uzmanları tarafından yapılan Microsoft 365 Defender ve araştırmalardan gelen sinyaller, çubuk grafikte gösterilen bu taktiklerin tanımlanmasına yardımcı olur. Bu grafik, dalgalanmanın nerede olduğunu görselleştirmenize yardımcı olur ve ilgili kapsama ve düzeltme eylemlerini planlamak için ihtiyacınız olan bilgileri sağlar.
@@ -95,7 +93,7 @@ Avcılık için Defender Uzmanları tarafından yapılan Microsoft 365 Defender 
 
 Tehdit kategorileri, ortamınıza yönelik bu tehditleri önlemek veya azaltmak için etkilerini değerlendirmek ve değerlendirmek ve stratejiler geliştirmek için güvenlik tehditlerini tanımlamaya ve sınıflar halinde düzenlemeye yardımcı olur. Raporun **gözlenen Tehdit kategorileri** bölümünde, ortamınızda algılanan önemli risklere ve tehditlere sahip bir çubuk grafik gösterilir ve bu da maruz kalmanızın kapsamını ve kapsamını anlamanıza yardımcı olur.
 
-Kullanılabilir çeşitli tehdit kategorileri arasında, MITRE ATT&CK çerçevesinin kapsamına alınmadığından aşağıdaki kategoriler dikkatle seçilir:
+Kullanılabilir çeşitli tehdit kategorileri arasında, MITRE ATT&CK çerçevesinin kapsamına alınmadığı için aşağıdaki kategoriler dikkatle seçilir:
 
 - Fidye Yazılımı
 - Kötü amaçlı yazılım
@@ -103,4 +101,5 @@ Kullanılabilir çeşitli tehdit kategorileri arasında, MITRE ATT&CK çerçeves
 - Istismar
 - Teslim
 
-Düzeltmeyi, çubuk grafikte gösterildiği gibi en çok etkilenen kategoriye göre önceliklendikleyebilirsiniz.
+Düzeltmeye, çubuk grafikte gösterildiği gibi en çok etkilenen kategoriye göre öncelik vekleyebilirsiniz.
+

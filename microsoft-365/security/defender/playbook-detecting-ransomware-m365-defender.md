@@ -12,12 +12,12 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance.
 f1.keywords: NOCSH
-ms.openlocfilehash: 3a3a1d48ab9876215e2034279d036705bf4e1972
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 95e916c02bc01a2e3e84d05efe4e5f5e66d3d491
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "66861706"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107095"
 ---
 # <a name="detecting-human-operated-ransomware-attacks-with-microsoft-365-defender"></a>Microsoft 365 Defender ile insan tarafından işletilen fidye yazılımı saldırılarını algılama
 
@@ -97,7 +97,7 @@ Yanal hareket:
 * Yönetim araçlarının kötüye kullanılması
 * PsExec
 
-Kalıcılık:
+Devamlılık:
 
 * Yeni hesaplar
 * GPO değişiklikleri

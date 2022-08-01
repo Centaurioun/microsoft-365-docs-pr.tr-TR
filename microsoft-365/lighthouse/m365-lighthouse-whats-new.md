@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP' ler) için her ay Microsoft 365 Lighthouse eklenen, değiştirilen ve düzeltilmiş olanlara bakın.
-ms.openlocfilehash: 6eaba1fd4cbffb8121801318bbf8b7ee5b1f7ce2
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: d7538cf55feaf4adc6d0d741f21b13c4a9e19b80
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056624"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106459"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'daki yenilikler
 
@@ -30,6 +30,20 @@ ms.locfileid: "67056624"
 
 > [!NOTE]
 > Bazı özellikler müşterilerimiz için farklı hızlarda kullanıma sunulur. Henüz bir özellik görmüyorsanız, yakında görmeniz gerekir.
+
+## <a name="july-2022"></a>Temmuz 2022
+
+### <a name="enhanced-baseline-deployment"></a>Gelişmiş temel dağıtım
+
+Microsoft 365 Lighthouse artık aşağıdakiler sayesinde tüm yönetilen kiracılarınıza taban çizgisi dağıtımını daha hızlı ve kolay hale getirir:
+
+- Atanan her görevin durumunu otomatik olarak algılama ve raporlama
+- Durum raporlamasını birleştirme ve dağıtım durumunu belirleyen mantığı basitleştirme
+- Hangi görevlerin tamamlandığı ve hangi görevlerin dikkat etmeniz gerektiğini raporlama
+- Geçerli görevler için kullanıcı düzeyinde dağıtım durumunu raporlama
+- Kiracının içinden mevcut yapılandırmaları algılama ve bunları taban çizgisiyle karşılaştırma
+- Kapatılan görevlerle ilgili ayrıntıları sağlama
+- Atanan görevi tamamlamak için ek lisanslamanın gerekli olduğu yeri belirleme
 
 ## <a name="june-2022"></a>Haziran 2022
 
@@ -109,15 +123,15 @@ Microsoft 365 Lighthouse artık Koşullu Erişim ilkeleriyle dağıtım adımlar
 
 Bu yeni işlevsellik, yönettiğiniz müşteri kiracıları içindeki mevcut ilkeleri algılar ve bunları dağıtım planınızla karşılaştırır. Microsoft 365 Lighthouse daha sonra, hangi dağıtım işlemlerinin zaten tamamlandığını, hangilerinin ele alınması gerektiğini ve dağıtım planı tarafından belirlenen ayarların eşit, eksik veya mevcut ilkelerde yer alan ayarlarla çakışan ayarları anlamanıza yardımcı olmak için dağıtım adımları ve dağıtım adımı işlemleri için durum belirlemeleri sağlar. Bu bilgilerin bilinmesi ilke çakışmalarını daha hızlı, daha kolay ve daha etkili bir şekilde tanımlamayı, önceliklendirmeyi ve çözmeyi sağlar.
 
-### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Microsoft Defender Güvenlik Duvarı yapılandırmak için dağıtım adımı
+### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Microsoft Defender Güvenlik Duvarı'nı yapılandırmak için dağıtım adımı
 
-Microsoft 365 Lighthouse, Microsoft Defender Güvenlik Duvarı dağıtımını yapılandır adımını varsayılan temeline eklemiştir. Bu adım, MSP'lerin Windows 10 (ve üzeri) cihazlar için varsayılan güvenlik duvarı yapılandırması aracılığıyla müşteri kiracı cihazlarının güvenliğini sağlamasını sağlar. Microsoft Defender Güvenlik Duvarı, müşteri kiracı cihazlarına gelen veya giden yetkisiz ağ trafiğini engeller ve ağ güvenliği tehditleri riskini azaltır. Bir Microsoft Defender Güvenlik Duvarı Kuralları özelliği şu anda geliştiriliyor.
+Microsoft 365 Lighthouse, Microsoft Defender Güvenlik Duvarı dağıtımını yapılandırma adımını varsayılan temeline eklemiştir. Bu adım, MSP'lerin Windows 10 (ve üzeri) cihazlar için varsayılan güvenlik duvarı yapılandırması aracılığıyla müşteri kiracı cihazlarının güvenliğini sağlamasını sağlar. Microsoft Defender Güvenlik Duvarı, müşteri kiracı cihazlarına gelen veya giden yetkisiz ağ trafiğini engeller ve ağ güvenlik tehditleri riskini azaltır. Microsoft Defender Güvenlik Duvarı Kuralları özelliği şu anda geliştirme aşamasındadır.
 
 Microsoft Defender Güvenlik Duvarı, Windows 10 (ve üzeri) cihazlarda varsayılan olarak açıktır. Müşteri kiracınızda bu yapılandırma yoksa şu adımları izleyin:
 
 1. Microsoft 365 Lighthouse'deki **Kiracılar** sayfasında, kiracının **Genel Bakış** sayfasını açmak için müşteri kiracısını seçin.
 2. **Dağıtım Planı** sekmesini seçin.
-3. Dağıtım adımları listesinden **Microsoft Defender Güvenlik Duvarı Yapılandır'ı** seçin.
+3. Dağıtım adımları **listesinden Microsoft Defender Güvenlik Duvarını Yapılandır'ı** seçin.
 4. Bu yapılandırmayı müşteri kiracısına dağıtmak için **Gözden geçir ve dağıt'ı** seçin. 
 
 ### <a name="increase-in-maximum-license-limit"></a>En yüksek lisans sınırında artış

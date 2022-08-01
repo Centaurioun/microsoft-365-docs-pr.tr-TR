@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Yasal, iş veya mevzuat yükümlülükleriniz için Microsoft 365'te yüksek değerli içeriği yöneten yöneticiler, lisans gereksinimleri ve yaygın senaryolar için açıklayıcı adımlar.
-ms.openlocfilehash: ed2e3735de6e7689d8abf238a491bac766f4e8f1
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: 4a0de19b7630ad89dadb071b80065ff44fde72bb
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069548"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106831"
 ---
 # <a name="get-started-with-records-management"></a>Kayıt yönetimini kullanmaya başlama
 
@@ -51,7 +51,7 @@ Microsoft 365'te kayıt yönetimi çözümünü kullanarak kuruluşunuzun yasal,
 
 Bir dizi farklı abonelik kayıt yönetimini destekler ve kullanıcıların lisans gereksinimleri kullandığınız özelliklere bağlıdır.
 
-Kullanıcılarınızın Microsoft Purview özelliklerinden yararlanması için lisanslama seçeneklerini görmek [için bkz. Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Kayıt yönetimi için özellik düzeyi lisanslama gereksinimleri için [Microsoft Purview Kayıt Yönetimi](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management) bölümüne ve ilgili PDF indirme bölümüne bakın.
+Kullanıcılarınızın Microsoft Purview özelliklerinden yararlanması için lisanslama seçeneklerini görmek [için bkz. Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Kayıt yönetimi için özellik düzeyi lisanslama gereksinimleri için [Microsoft Purview Veri Yaşam Döngüsü Yönetimi & Microsoft Purview Kayıt Yönetimi](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) bölümüne bakın.
 
 ## <a name="permissions"></a>İzinler
 

@@ -14,13 +14,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/24/2022
-ms.openlocfilehash: 7b16821f1e4e7b8829615d836bde52dd71a43a96
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.date: 08/01/2022
+ms.reviewer: tewchen
+ms.openlocfilehash: 7407b6184b700ccacd8258ecce7d7cbcf16587b2
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099381"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106590"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama birimi Access Control
 
@@ -45,13 +46,13 @@ Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama Biri
 
 Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama Birimi Access Control özelliği size aşağıdaki özellikleri sağlar:
 
-|Yetenek|Açıklama|Intune aracılığıyla dağıtma|grup ilkesi aracılığıyla dağıtma|
-|---|---|---|---|
-|Çıkarılabilir Medya Grubu Oluşturma|Yeniden kullanılabilir çıkarılabilir medya grubu oluşturmanıza olanak tanır|Intune [OMA-URI kullanarak Çıkarılabilir Depolama Birimi Access Control Dağıtma](#deploying-removable-storage-access-control-by-using-intune-oma-uri) bölümündeki 4. ve 6. adım| Grup ilkesi [kullanarak Çıkarılabilir Depolama Birimi Dağıtma bölümünde](#deploying-removable-storage-access-control-by-using-group-policy) 4. ve 6. adım Access Control|
-|İlke Oluşturma|Her çıkarılabilir medya grubunu zorunlu kılmak için ilke oluşturmanıza olanak tanır|Intune [OMA-URI kullanarak Çıkarılabilir Depolama Birimi Access Control Dağıtma](#deploying-removable-storage-access-control-by-using-intune-oma-uri) bölümündeki 5. ve 7. adım| Grup ilkesi [kullanarak Çıkarılabilir Depolama Birimi dağıtma Access Control](#deploying-removable-storage-access-control-by-using-group-policy) bölümündeki 5. ve 7. adımlar|
-|Varsayılan Zorlama|İlke yoksa çıkarılabilir medyaya varsayılan erişimi (Reddet veya İzin Ver) ayarlamanıza izin verir|Intune [OMA-URI kullanarak Çıkarılabilir Depolama Birimi Access Control Dağıtma](#deploying-removable-storage-access-control-by-using-intune-oma-uri) bölümündeki 2. adım | Grup ilkesi [kullanarak Çıkarılabilir Depolama Birimi dağıtma Access Control](#deploying-removable-storage-access-control-by-using-group-policy) bölümündeki 2. adım|
-|Çıkarılabilir Depolama birimi Access Control etkinleştirme veya devre dışı bırakma|Devre Dışı Bırak'ı ayarlarsanız, bu makinede Çıkarılabilir Depolama Birimi Access Control ilkesini devre dışı bırakır| Intune [OMA-URI kullanarak Çıkarılabilir Depolama Birimi Access Control Dağıtma](#deploying-removable-storage-access-control-by-using-intune-oma-uri) bölümündeki 1. adım| Grup ilkesi [kullanarak Çıkarılabilir Depolama Birimi dağıtma Access Control](#deploying-removable-storage-access-control-by-using-group-policy) bölümündeki 1. adım|
-|Dosya bilgilerini yakalama|Yazma erişimi gerçekleştiğinde dosya bilgilerini yakalamak için ilke oluşturmanıza olanak tanır|  | Grup ilkesi [kullanarak Çıkarılabilir Depolama Birimi Access Control Dağıtma](#deploying-removable-storage-access-control-by-using-group-policy) bölümündeki 10. adım |
+|Yetenek|Intune aracılığıyla dağıtma|grup ilkesi aracılığıyla dağıtma|
+|---|---|---|
+|Çıkarılabilir Medya Grubu Oluşturma <br/>Yeniden kullanılabilir çıkarılabilir medya grubu oluşturmanıza olanak tanır|Intune [OMA-URI kullanarak Çıkarılabilir Depolama Birimi Access Control Dağıtma](#deploying-removable-storage-access-control-by-using-intune-oma-uri) bölümündeki 4. ve 6. adım| Grup ilkesi [kullanarak Çıkarılabilir Depolama Birimi Dağıtma bölümünde](#deploying-removable-storage-access-control-by-using-group-policy) 4. ve 6. adım Access Control|
+|İlke Oluşturma<br/>Her çıkarılabilir medya grubunu zorunlu kılmak için ilke oluşturmanıza olanak tanır|Intune [OMA-URI kullanarak Çıkarılabilir Depolama Birimi Access Control Dağıtma](#deploying-removable-storage-access-control-by-using-intune-oma-uri) bölümündeki 5. ve 7. adım| Grup ilkesi [kullanarak Çıkarılabilir Depolama Birimi dağıtma Access Control](#deploying-removable-storage-access-control-by-using-group-policy) bölümündeki 5. ve 7. adımlar|
+|Varsayılan Zorlama<br/>İlke yoksa çıkarılabilir medyaya varsayılan erişimi (Reddet veya İzin Ver) ayarlamanıza izin verir|Intune [OMA-URI kullanarak Çıkarılabilir Depolama Birimi Access Control Dağıtma](#deploying-removable-storage-access-control-by-using-intune-oma-uri) bölümündeki 2. adım | Grup ilkesi [kullanarak Çıkarılabilir Depolama Birimi dağıtma Access Control](#deploying-removable-storage-access-control-by-using-group-policy) bölümündeki 2. adım|
+|Çıkarılabilir Depolama birimi Access Control etkinleştirme veya devre dışı bırakma<br/>Devre Dışı Bırak'ı ayarlarsanız, bu makinede Çıkarılabilir Depolama Birimi Access Control ilkesini devre dışı bırakır| Intune [OMA-URI kullanarak Çıkarılabilir Depolama Birimi Access Control Dağıtma](#deploying-removable-storage-access-control-by-using-intune-oma-uri) bölümündeki 1. adım| Grup ilkesi [kullanarak Çıkarılabilir Depolama Birimi dağıtma Access Control](#deploying-removable-storage-access-control-by-using-group-policy) bölümündeki 1. adım|
+|Dosya bilgilerini yakalama<br/>Yazma erişimi gerçekleştiğinde dosya bilgilerini yakalamak için ilke oluşturmanıza olanak tanır|  | Grup ilkesi [kullanarak Çıkarılabilir Depolama Birimi Access Control Dağıtma](#deploying-removable-storage-access-control-by-using-group-policy) bölümündeki 10. adım |
 
 ### <a name="prepare-your-endpoints"></a>Uç noktalarınızı hazırlama
 
@@ -82,7 +83,7 @@ Kötü amaçlı yazılımdan koruma istemcisi sürümü **4.18.2103.3 veya** üz
 |Özellik Adı|Açıklama|Seçenekler|
 |---|---|---|
 |**GroupId**|Benzersiz bir kimlik olan GUID, grubu temsil eder ve ilkede kullanılır.||
-|**DescriptorIdList**|Grupta ele almak için kullanmak istediğiniz cihaz özelliklerini listeleyin. Her cihaz özelliği için daha fazla ayrıntı için bkz [. Cihaz Özellikleri](device-control-removable-storage-protection.md) . Tüm özellikler büyük/küçük harfe duyarlıdır. |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`<p>**BusId**: Örneğin, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId, sistemdeki cihazı benzersiz olarak tanımlayan bir dizedir; örneğin, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. Sonundaki sayı (örneğin &0) kullanılabilir yuvayı temsil eder ve cihazdan cihaza değişebilir. En iyi sonuçları elde için sonunda joker karakter kullanın. Örneğin, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**Pıd**<p>**VID_PID**<p>`0751_55E0`: bu tam VID/PID çifti eşleştir<p>`_55E0`: HERHANGI bir medyayı PID=55E0 ile eşleştirme <p>`0751_`: VID=0751 ile herhangi bir medyayı eşleştirme|
+|**DescriptorIdList**|Grupta ele almak için kullanmak istediğiniz cihaz özelliklerini listeleyin. Tüm özellikler büyük/küçük harfe duyarlıdır. |**PrimaryId**: Birincil kimlik , , `CdRomDevices``WpdDevices`ve `PrinterDevices`bilgilerini içerir`RemovableMediaDevices`. <p>**InstancePathId**: InstancePathId, sistemdeki cihazı Aygıt Yöneticisi gibi `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0``Device instance path` benzersiz bir şekilde tanımlayan bir dizedir. Sonundaki sayı (örneğin &0) kullanılabilir yuvayı temsil eder ve cihazdan cihaza değişebilir. En iyi sonuçları elde için sonunda joker karakter kullanın. Örneğin, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. <p>**DeviceId**: Cihaz Kimliği biçimine dönüştürür `Device instance path` , bkz. [Standart USB Tanımlayıcıları](/windows-hardware/drivers/install/standard-usb-identifiers), örneğin USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07. <p>**HardwareId**: Sistemdeki cihazı Aygıt Yöneticisi USBSTOR\DiskGeneric_Flash_Disk___8.07 `Hardware Ids` gibi bir dize tanımladı. Not: Donanım Kimliği benzersiz değildir; farklı cihazlar aynı değeri paylaşabilir.<p>**FriendlyNameId**: Aygıt Yöneticisi genel flash disk USB cihazı `Friendly name` gibi cihaza bağlı bir dize. <p>**Veri Yolu Kimliği**: Örneğin, USB, SCSI. <p>**SerialNumberId**: SerialNumberId `Device instance path` değerini Aygıt Yöneticisi bulabilirsiniz; örneğin, `03003324080520232521` USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00&0'da\\`03003324080520232521` SerialNumberId değeridir. <p>**VID_PID**: Satıcı Kimliği, USB komitesinin satıcıya atadığını dört basamaklı satıcı kodudur. Ürün Kimliği, satıcının cihaza atadığını dört basamaklı ürün kodudur; Joker karakter desteği, Satıcı Kimliği ve Ürün Kimliği biçimine dönüştürme `Device instance path` , bkz. [Standart USB Tanımlayıcıları](/windows-hardware/drivers/install/standard-usb-identifiers). <p>`0751_55E0`: bu tam VID/PID çifti eşleştir<p>`_55E0`: HERHANGI bir medyayı PID=55E0 ile eşleştirme <p>`0751_`: VID=0751 ile herhangi bir medyayı eşleştirme <p> **Not**: 'media özelliğini Aygıt Yöneticisi nasıl bulabilirim?' Aygıt Yöneticisi'da özelliğin nasıl bulunduğunu anlamak için aşağıdaki 'Soru sorulur' bölümü altında.|
 |**MatchType**|içinde `DescriptorIDList`kullanılan birden çok cihaz özelliği olduğunda, MatchType ilişkiyi tanımlar.|**MatchAll**: altındaki `DescriptorIdList` tüm öznitelikler **And** ilişkisi olur; örneğin, yönetici bağlı her USB için ve `InstancePathID`eklerse `DeviceID` sistem USB'nin her iki değeri de karşılayıp karşılamadığını denetler. <p> **MatchAny**: DescriptorIdList altındaki öznitelikler **Or** ilişkisi olacaktır; örneğin, yönetici bağlı her USB için ve `InstancePathID`koyarsa`DeviceID`, USB'de aynı **DeviceID** veya **InstanceID** değeri olduğu sürece sistem uygulamayı yapar.|
 
 ### <a name="access-control-policy"></a>Access Control İlkesi
@@ -158,12 +159,12 @@ Intune'da ilke dağıtımı için hesabın cihaz yapılandırma profillerini olu
 
 Belirli bir çıkarılabilir depolama sınıfını engellemek ancak belirli bir medyaya izin vermek için 'Bir grubu PrimaryId aracılığıyla IncludedIdListe ve DeviceId/HardwareId/etc aracılığıyla bir grubu ExcludedIDListle' kullanabilirsiniz.
 
-Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com/>) **> Cihazlar'a gidin > Platform: Windows 10 ve üzeri profil oluşturma >, Profil türü: Şablonlar > Özel**
+Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com/>) > **Cihazlar** > **Profil Platformu Oluştur****: Windows 10 ve üzeri, Profil türü: Şablonlar** > Özel** bölümüne gidin  > 
 
 1. Cihaz denetimini aşağıdaki gibi etkinleştirin veya devre dışı bırakın:
 
-   - **Özel > Yapılandırma ayarları'nın** altında **Ekle'ye** tıklayın.
-   - **Satır Ekle** bölmesine şunu girin:
+   - **Özel** > **Yapılandırma ayarları'nın** altında **Ekle'yi** seçin.
+   - **Satır Ekle** bölmesinde aşağıdaki ayarları belirtin:
      - **Cihaz Denetimini Etkinleştir** olarak **adlandır**
      - **OMA-URI** olarak `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
      - **Tamsayı** Olarak **Veri Türü**
@@ -172,7 +173,7 @@ Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com/>
        `Disable: 0`
        `Enable: 1`
 
-     - **Kaydet**'e tıklayın.
+     - **Kaydet**'i seçin.
 
    :::image type="content" source="images/enable-rsac.png" alt-text="Çıkarılabilir Depolama Birimi Access Control ilkesini etkinleştirme işleminin ekran görüntüsü" lightbox="images/enable-rsac.png":::
 
@@ -180,9 +181,9 @@ Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com/>
 
    Tüm Cihaz Denetimi özellikleri (, `CdRomDevices`, , `PrinterDevices``WpdDevices`) için varsayılan erişimi (`RemovableMediaDevices`Reddet veya İzin Ver) ayarlayabilirsiniz.
 
-   Örneğin, için `RemovableMediaDevices`**bir Reddet** veya **İzin Ver** ilkeniz vardır, ancak veya `WpdDevices`için `CdRomDevices` bir ilkeniz yoktur. Bu ilke aracılığıyla **Varsayılan Reddetme'yi** ayarlayabilirsiniz, ardından Okuma/Yazma/Yürütme erişimi `CdRomDevices` engellenir veya `WpdDevices` engellenir. Yalnızca depolama alanını yönetmek istiyorsanız yazıcınız için **bir İzin Ver** ilkesi oluşturduğunuzdan emin olun; aksi takdirde, bu varsayılan zorlama yazıcılara da uygulanır.
+   Örneğin, için `RemovableMediaDevices`**bir Reddet** veya **İzin Ver** ilkesine sahip olabilirsiniz, ancak veya `WpdDevices`için `CdRomDevices` sahip olmayabilirsiniz. Bu ilke aracılığıyla **Varsayılan Reddetme'yi** ayarlayabilirsiniz, ardından Okuma/Yazma/Yürütme erişimi `CdRomDevices` engellenir veya `WpdDevices` engellenir. Yalnızca depolama alanını yönetmek istiyorsanız yazıcınız için **bir İzin Ver** ilkesi oluşturduğunuzdan emin olun; aksi takdirde, bu varsayılan zorlama yazıcılara da uygulanır.
 
-   - **Satır Ekle** bölmesine şunu girin:
+   - **Satır Ekle** bölmesinde aşağıdaki ayarları belirtin:
      - **Varsayılan Reddetme** Olarak **Adlandır**
      - **OMA-URI** olarak `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
      - **Tamsayı** Olarak **Veri Türü**
@@ -191,7 +192,7 @@ Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com/>
        `DefaultEnforcementAllow = 1`
        `DefaultEnforcementDeny = 2`
 
-     - **Kaydet**'e tıklayın.
+     - **Kaydet**'i seçin.
 
    :::image type="content" source="images/default-deny.png" alt-text="Varsayılan Zorlama'nın Reddet olarak ayarlanmasının ekran görüntüsü" lightbox="images/default-deny.png":::
 
@@ -203,7 +204,7 @@ Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com/>
      - **Varsayılan ReddetmeYi Denetle** Olarak **Adlandır**
      - **OMA-URI** olarak `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
 
-       :::image type="content" source="images/audit-default-deny-1.png" alt-text="Varsayılan Denetim Reddetme ilkesini oluşturma işleminin ekran görüntüsü" lightbox="images/audit-default-deny-1.png":::
+       :::image type="content" source="images/audit-default-deny-1.png" alt-text="Varsayılan Denetim Reddetme ilkesini oluşturma işleminin ekran görüntüsü." lightbox="images/audit-default-deny-1.png":::
 
      - **Dize Olarak Veri Türü** **(XML dosyası)**
      - **Denetim Varsayılanı Deny.xml** dosyası olarak **özel XML**.
@@ -212,7 +213,7 @@ Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com/>
 
        Varsayılan Reddetme için Denetim ilkenizi oluşturmak için aşağıdaki XML verilerini kullanın:
 
-       :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="Varsayılan reddetme xml dosyasını denetle ekran görüntüsü":::
+       :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="Varsayılan reddetme xml dosyasını denetle ekran görüntüsü.":::
 
 4. ReadOnly - Grup:
 
@@ -222,7 +223,7 @@ Microsoft Endpoint Manager yönetim merkezine (<https://endpoint.microsoft.com/>
      - **Herhangi Bir Çıkarılabilir Depolama Grubu** Olarak **Adlandır**
      - **OMA-URI** olarak `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
 
-       :::image type="content" source="images/any-removable-storage-group.png" alt-text="Çıkarılabilir Depolama Birimi Grubu oluşturma işleminin ekran görüntüsü" lightbox="images/any-removable-storage-group.png":::
+       :::image type="content" source="images/any-removable-storage-group.png" alt-text="Çıkarılabilir Depolama Grubu oluşturma işleminin ekran görüntüsü." lightbox="images/any-removable-storage-group.png":::
 
      - **Dize Olarak Veri Türü** **(XML dosyası)**
        - **Herhangi Bir Çıkarılabilir Depolama Birimi ve CD-DVD ve WPD Group.xml** dosyası olarak **Özel XML**
@@ -308,7 +309,7 @@ Bu özellik Microsoft Endpoint Manager yönetim merkezinde (<https://endpoint.mi
 
    Cihaz denetimini aşağıdaki gibi etkinleştirebilirsiniz:
 
-   - **Microsoft Defender Virüsten Koruma > Özellikleri > Cihaz Denetimi > Windows Bileşenleri > Bilgisayar Yapılandırması > Yönetim Şablonları'na** gidin
+   - **Bilgisayar Yapılandırması** > **Yönetim Şablonları** > **Windows Bileşenleri** > **Microsoft Defender Virüsten Koruma** > **Özellikleri** > **Cihaz Denetimi'ne** gidin
    - **Cihaz Denetimi** penceresinde **Etkin'i** seçin.
 
    :::image type="content" source="images/enable-rsac-gp.png" alt-text="grup ilkesi kullanarak RSAC'yi etkinleştirme işleminin ekran görüntüsü " lightbox="images/enable-rsac-gp.png":::
@@ -320,11 +321,11 @@ Bu özellik Microsoft Endpoint Manager yönetim merkezinde (<https://endpoint.mi
 
    Tüm Cihaz Denetimi özellikleri (RemovableMediaDevices, CdRomDevices, WpdDevices, PrinterDevices) için varsayılan erişimi (Reddet veya İzin Ver) ayarlayabilirsiniz.
 
-   Örneğin, RemovableMediaDevices için Reddet veya İzin Ver ilkeniz vardır, ancak CdRomDevices veya WpdDevices için herhangi bir ilkeniz yoktur. Bu ilke aracılığıyla Varsayılan Reddetme'yi ayarlarsınız, ardından CdRomDevices veya WpdDevices'e Okuma/Yazma/Yürütme erişimi engellenir. Yalnızca depolamayı yönetmek istiyorsanız, Yazıcı için İzin Ver ilkesi oluşturduğunuzdan emin olun; aksi takdirde, bu Varsayılan Zorlama Yazıcı'ya da uygulanır.
+   Örneğin, Bir Deny veya Allow policy for RemovableMediaDevices olabilir, ancak CdRomDevices veya WpdDevices için sahip olmayabilirsiniz. Bu ilke aracılığıyla Varsayılan Reddetme'yi ayarlarsınız, ardından CdRomDevices veya WpdDevices'e Okuma/Yazma/Yürütme erişimi engellenir. Yalnızca depolamayı yönetmek istiyorsanız, Yazıcı için İzin Ver ilkesi oluşturduğunuzdan emin olun; aksi takdirde, bu Varsayılan Zorlama Yazıcı'ya da uygulanır.
 
-   - **Windows Bileşenleri > Microsoft Defender Virüsten Koruma > Özellikleri > Cihaz Denetimi > Bilgisayar Yapılandırması > Yönetim Şablonları'na gidin > Cihaz Denetimi Varsayılan Zorlama**'>
+   - **Bilgisayar Yapılandırması** > **Yönetim Şablonları** > **Windows Bileşenleri** > **Microsoft Defender Virüsten Koruma** > **Özellikleri** > **Cihaz Denetimi** > **Seç Cihaz Denetimi Varsayılan Zorlama'ya** gidin
 
-   - **Cihaz Denetimi Varsayılan Zorlamayı Seç** penceresinde **Varsayılan Reddet'i** seçin:
+   - **Cihaz Denetimi Varsayılan Zorlamasını Seç** bölmesinde **Varsayılan Reddetme'yi** seçin:
 
    :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Varsayılan Zorlama = grup ilkesi kullanarak reddet ayarının ekran görüntüsü" lightbox="images/set-default-enforcement-deny-gp.png":::
 
@@ -344,15 +345,15 @@ Bu özellik Microsoft Endpoint Manager yönetim merkezinde (<https://endpoint.mi
 
    ReadOnly ilkesi oluşturmak ve okuma etkinliğine izin vermek için ReadOnly çıkarılabilir depolama grubuna uygulamak için aşağıdaki XML verilerini kullanın:
 
-    :::image type="content" source="images/read-only-policy-gp.png" alt-text="Salt okunur ilke xml verilerinin ekran görüntüsü" lightbox="images/read-only-policy-gp.png":::
+    :::image type="content" source="images/read-only-policy-gp.png" alt-text="Salt okunur ilke xml verilerinin ekran görüntüsü." lightbox="images/read-only-policy-gp.png":::
 
-6. İzin Verilen Medyalar için Grup Oluştur:
+6. İzin verilen Medya için bir grup oluşturun:
 
    Çıkarılabilir depolama izin verilen medya grubu oluşturmak için aşağıdaki XML verilerini kullanın:
 
    :::image type="content" source="images/create-group-allowed-medias-gp.png" alt-text="İzin verilen medyalar için grup oluşturmaya yönelik xml verilerinin ekran görüntüsü" lightbox="images/create-group-allowed-medias-gp.png":::
 
-7. Onaylanan USB Grubuna izin vermek için İlke oluşturun:
+7. Onaylanan USB Grubuna izin vermek için bir ilke oluşturun:
 
    Onaylanan USB grubuna izin verecek bir ilke oluşturmak için aşağıdaki XML verilerini kullanın:
 
@@ -372,7 +373,7 @@ Bu özellik Microsoft Endpoint Manager yönetim merkezinde (<https://endpoint.mi
 
     :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="Cihaz denetimi ilke gruplarını tanımlama ekran görüntüsü" lightbox="images/define-device-control-policy-grps-gp.png":::
 
-   - **Cihaz denetim ilkesi gruplarını tanımla** penceresinde, XML grupları verilerini içeren dosya yolunu girin.
+   - **Cihaz denetimi ilkesi gruplarını tanımla** penceresinde, XML grupları verilerini içeren dosya yolunu belirtin.
 
      XML dosya yolu: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml>
 
@@ -384,7 +385,7 @@ Bu özellik Microsoft Endpoint Manager yönetim merkezinde (<https://endpoint.mi
 
    Cihaz denetim ilkesi kurallarını tek bir XML dosyasında aşağıdaki gibi birleştirebilirsiniz:
 
-   - **Microsoft Defender Virüsten Koruma > Cihaz Denetimi > Cihaz denetimi ilke kurallarını tanımlama > Windows Bileşenleri > Bilgisayar Yapılandırması > Yönetim Şablonları'na** gidin
+   - **Bilgisayar Yapılandırması** > **Yönetim Şablonları** > **Windows Bileşenleri** > **Microsoft Defender Virüsten Koruma** > **Cihaz Denetimi** > **Cihaz denetimi ilkesi kurallarını tanımlama'ya** gidin.
 
      :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="Cihaz denetimi ilkesi kurallarını tanımlama ekran görüntüsü" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
 
@@ -398,13 +399,13 @@ Bu özellik Microsoft Endpoint Manager yönetim merkezinde (<https://endpoint.mi
 
 10. Dosyanın bir kopyası için konum ayarlayın (kanıt):
 
-    Yazma erişimi gerçekleştiğinde dosyanın bir kopyasına (kanıt) sahip olmak istiyorsanız, sistemin kopyayı kaydedebileceği konumu ayarlamanız gerekir.
+    Yazma erişimi gerçekleştiğinde dosyanın bir kopyasına (kanıt) sahip olmak istiyorsanız, sistemin kopyayı kaydedebileceği konumu belirtin.
 
-    - **Microsoft Defender Virüsten Koruma > Cihaz Denetimi > Cihaz Denetimi kanıt verilerini uzak konumu tanımlama > Windows Bileşenleri > Bilgisayar Yapılandırması > Yönetim Şablonları'na** gidin.
+    - **Bilgisayar Yapılandırması** > **Yönetim Şablonları** > **Windows Bileşenleri** > **Microsoft Defender Virüsten Koruma** > **Cihaz Denetimi****Cihaz Denetimi** >  kanıt verilerini uzak konumu tanımla'ya gidin.
 
-    - **Cihaz Denetimi kanıt verilerini uzak konumu tanımla** penceresinde **Etkin'i** seçin ve yerel veya ağ paylaşımı klasör yolunu girin.
+    - **Cihaz Denetimi kanıt verilerini uzak konum tanımla** bölmesinde **Etkin'i** seçin ve ardından yerel veya ağ paylaşımı klasör yolunu belirtin.
 
-      :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="Cihaz Denetimi kanıt verilerini uzak konumu tanımlama ekran görüntüsü" lightbox="images/evidence-data-remote-location-gp.png":::
+      :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="Cihaz Denetimi kanıt verilerini uzak konumu tanımla'nın ekran görüntüsü." lightbox="images/evidence-data-remote-location-gp.png":::
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Cihaz Denetimi Çıkarılabilir Depolama Birimi Access Control verilerini Uç Nokta için Microsoft Defender
 
@@ -460,7 +461,7 @@ DeviceEvents
 
 GUID'yi çevrimiçi açık kaynak veya PowerShell aracılığıyla oluşturabilirsiniz - [PowerShell aracılığıyla GUID oluşturma](/powershell/module/microsoft.powershell.utility/new-guid)
 
-![resim](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
+![PowerShell'de GUID'nin ekran görüntüsü.](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
 
 ### <a name="what-are-the-removable-storage-media-and-policy-limitations"></a>Çıkarılabilir depolama ortamı ve ilke sınırlamaları nelerdir?
 
@@ -468,7 +469,7 @@ Microsoft Endpoint Manager yönetim merkezinden (Intune) veya Microsoft Graph AP
 
 Örneğin, kullanıcı SID'sinde belirli kullanıcıları "İzin Ver"/"Denetime izin verildi" olarak iki giriş bloğuna ve sonunda "Reddet" tümüne iki giriş bloğuna ihtiyacınız varsa, 2.276 kullanıcıyı yönetebilirsiniz.
 
-### <a name="why-does-the-policy-not-work"></a>İlke neden çalışmıyor?
+### <a name="why-doesnt-the-policy-work"></a>İlke neden çalışmıyor?
 
 1. En yaygın neden, gerekli kötü [amaçlı yazılımdan koruma istemcisi sürümü](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints) olmamasıdır.
 
@@ -476,15 +477,17 @@ Microsoft Endpoint Manager yönetim merkezinden (Intune) veya Microsoft Graph AP
 
 3. İlkeyi grup ilkesi kullanarak dağıtıp yönetiyorsanız, lütfen tüm PolicyRule'u PolicyRules adlı bir üst düğümdeki tek bir XML dosyasında ve tüm Grup'u Gruplar adlı bir üst düğümde tek bir XML dosyasında birleştirdiğinizden emin olun; Intune aracılığıyla yönetiyorsanız, bir PolicyRule tek XML dosyası, aynı şey, bir Grup bir XML dosyası tutun.
 
-Yine de işe yaramazsa, yöneticiyle cmd çalıştırarak bizimle iletişime geçip destek kabini paylaşmak isteyebilirsiniz: "%programfiles%\Windows Defender\MpCmdRun.exe" -GetFiles
+Hala işe yaramazsa desteğe başvurun ve destek kabininizi paylaşın. Bu dosyayı almak için yönetici olarak Komut İstemi'ni kullanın: 
 
-### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>grup ilkesi 'Cihaz denetim ilkesi gruplarını tanımla' ve 'Cihaz denetim ilkesi kurallarını tanımla' için yapılandırma UX'si yok
+`"%programfiles%\Windows Defender\MpCmdRun.exe" -GetFiles`
 
-grup ilkesi yapılandırma UX'sini geri aktarmayız, ancak [WindowsDefender.adml ve WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) dosyalarında 'Raw' ve 'Farklı Kaydet' öğesine tıklayarak ilgili adml ve [admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) dosyalarını almaya devam edebilirsiniz.
+### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>**Cihaz denetim ilkesi gruplarını tanımlama** ve grup ilkesi **cihaz denetimi ilkesi kurallarını tanımlama** için yapılandırma UX'si yok
 
-### <a name="how-can-i-know-whether-the-latest-policy-has-been-deployed-to-the-target-machine"></a>En son ilkenin hedef makineye dağıtılıp dağıtılmadığını nasıl bilebilirim?
+grup ilkesi yapılandırması UX'sini geri aktarmayız, ancak [WindowsDefender.adml ve WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) dosyalarında **Ham** ve **Farklı Kaydet'i** seçerek ilgili [adml ve admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) dosyalarını almaya devam edebilirsiniz.
 
-PowerShell'de Yönetici olarak "Get-MpComputerStatus" komutunu çalıştırabilirsiniz. Aşağıdaki değer, en son ilkenin hedef makineye uygulanıp uygulanmadığını gösterir.
+### <a name="how-do-i-confirm-that-the-latest-policy-has-been-deployed-to-the-target-machine"></a>Nasıl yaparım? en son ilkenin hedef makineye dağıtıldığını onaylıyor musunuz?
+
+PowerShell cmdlet'ini `Get-MpComputerStatus` yönetici olarak çalıştırabilirsiniz. Aşağıdaki değer, en son ilkenin hedef makineye uygulanıp uygulanmadığını gösterir.
 
 :::image type="icon" source="images/148609885-bea388a9-c07d-47ef-b848-999d794d24b8.png" border="false":::
 
@@ -502,3 +505,20 @@ DeviceFileEvents
 |summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
 |order by PlatformVersion desc
 ```
+
+### <a name="how-do-i-find-the-media-property-in-the-device-manager"></a>Aygıt Yöneticisi media özelliğini Nasıl yaparım? buldunuz?
+
+1. Medyayı takın.
+
+2. Aygıt Yöneticisi açın. 
+
+   ![Aygıt Yöneticisi ekran görüntüsü.](https://user-images.githubusercontent.com/81826151/181859412-affd6aa1-09ad-44bf-9541-330499cc2c87.png)
+
+3. Aygıt Yöneticisi medyayı bulun, sağ tıklayın ve **özellikler'i** seçin.
+
+   ![Disk sürücülerinde seçilen USB'nin ve Özellikler'in vurgulandığı ekran görüntüsü.](https://user-images.githubusercontent.com/81826151/181859700-62a6f704-b12e-41e3-a048-7d63432654a4.png)
+
+4. **Ayrıntılar'ı** açın ve **Özellikler'i** seçin.
+
+   ![USB cihaz özelliklerinin ekran görüntüsü.](https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png)
+    
