@@ -349,7 +349,11 @@
         - name: Avlanma için Microsoft Defender Uzmanları ile işbirliği yapma
           items:
             - name: Genel Bakış
-              href: defenderexpertsforhuntingprev.md
+              href: defender-experts-for-hunting.md
+            - name: Başlamadan önce
+              href: before-you-begin-defender-experts.md
+            - name: Tehdit Avcılığı için Defender Uzmanları’nı kullanmaya başlama
+              href: onboarding-defender-experts-for-hunting.md
             - name: Tehdit Avcılığı için Defender Uzmanları raporlarını anlama
               href: defender-experts-report.md
         - name: Fidye yazılımı taktik defterleri

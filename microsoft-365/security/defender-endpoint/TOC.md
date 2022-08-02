@@ -34,6 +34,7 @@
 #### [Microsoft Endpoint Manager aracılığı ile katılım](onboarding-endpoint-manager.md)
 
 ## [Geçiş kılavuzları](migration-guides.md)
+### [Uç Nokta için Defender sunucularını Bulut için Defender'a geçirin](migrating-mde-server-to-cloud.md)
 ### [Uç Nokta için Defender'a Taşıyın](switch-to-mde-overview.md)
 #### [Aşama 1: Hazırlık](switch-to-mde-phase-1.md)
 #### [Aşama 2: Kurulum](switch-to-mde-phase-2.md)

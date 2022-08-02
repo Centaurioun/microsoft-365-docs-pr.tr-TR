@@ -1,2 +1,33 @@
-- name: Dizin
-  href: index.md
+- name: Genel Bakış
+  expanded: true
+  items:
+    - name: Microsoft Defender Tehdit Bilgileri (Defender TI) nedir?
+      href: what-is-microsoft-defender-threat-intelligence-defender-tI.md
+    - name: Veri kümeleri
+      href: data-sets.md
+    - name: İtibar puanlaması
+      href: reputation-scoring.md
+    - name: Çözümleyici içgörüleri
+      href: analyst-insights.md
+- name: Kavram
+  items:
+    - name: Altyapı zincirleme
+      href: infrastructure-chaining.md
+- name: Hızlı Başlangıç
+  items:
+    - name: Microsoft Defender Tehdit Bilgileri’ne erişmeyi ve portalınızda özelleştirmeler yapmayı öğrenin
+      href: learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal.md
+- name: Nasıl yapılır?
+  items:
+    - name: Arama ve özetleme
+      href: searching-and-pivoting.md
+    - name: 'Verileri sıralama, filtreleme ve indirme'
+      href: sorting-filtering-and-downloading-data.md
+    - name: Etiketleri kullanma
+      href: using-tags.md
+    - name: Projeleri kullanma
+      href: using-projects.md
+- name: Öğreticiler
+  items:
+    - name: Tehdit bilgilerini toplama ve altyapı zincirleme
+      href: gathering-threat-intelligence-and-infrastructure-chaining.md

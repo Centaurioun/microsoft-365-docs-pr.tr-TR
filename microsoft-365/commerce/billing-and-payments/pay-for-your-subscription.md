@@ -16,25 +16,25 @@ ms.collection:
 search.appverid: MET150
 description: İş için Microsoft 365 aboneliğinizin ödemesini yapmak için kredi kartı, ATM kartı veya banka hesabı kullanın. Bazı durumlarda faturayla da ödeme yapabilirsiniz.
 ms.custom:
-- VSBFY23
 - commerce_billing
+- VSBFY23
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
 ms.date: 05/26/2022
-ms.openlocfilehash: ba6703be593f05c651c76b02e2fb1e8630f59355
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: bf1da7f0813a6942241be93e26b397965070f39d
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67083915"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112361"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Aboneliğiniz için ödeme yapma
 
 > [!IMPORTANT]
-> 26 Ocak 2021'den itibaren artık Belçika, Fransa, İtalya, Lüksemburg, Portekiz, İspanya, Hollanda ve Amerika Birleşik Devletleri'ndeki müşteriler için yeni banka hesapları desteklenmemektedir. Bu ülkelerden birinde geçerli bir müşteriyseniz, aboneliğiniz için iyi durumda olan geçerli bir banka hesabıyla ödeme yapmaya devam edebilirsiniz. Ancak, banka hesabına yeni abonelikler ekleyemezsiniz.
+> 26 Ocak 2021'den itibaren artık Belçika, Fransa, İtalya, Lüksemburg, Portekiz, İspanya, Hollanda ve Amerika Birleşik Devletleri'ndeki müşteriler için yeni banka hesapları desteklenmemektedir. Bu ülkelerden birinde geçerli bir müşteriyseniz, güvenilir ve aktif bir banka hesabıyla ödeme yapmaya devam edebilirsiniz. Ancak, banka hesabına yeni abonelikler ekleyemezsiniz.
 
 Aboneliğinizi ödemek için kredi kartı, ATM kartı veya banka hesabı kullanabilirsiniz. Bazı durumlarda çek veya elektronik fon transferi (EFT) kullanarak faturayla ödeme yapabilirsiniz. Faturalama profiliniz varsa seçenekleriniz biraz farklıdır. Daha fazla bilgi için bkz. [Faturalama profiliyle aboneliğinizi ödeme](pay-for-subscription-billing-profile.md). Hesabınızın faturalama profili olup olmadığından emin değilseniz, bkz. [Faturalama profillerini anlama](manage-billing-profiles.md).
 
@@ -73,18 +73,18 @@ Bazı durumlarda aboneliğinizi faturayla ödeyebilir, bunun için çek veya EFT
 - Abonelik maliyetiniz belirli bir tutarı aşmalıdır (bu tutar hizmetin konumuna göre değişir)
 - Kredi denetiminden geçmelisiniz
 
-Kredi denetimi yapılması gerekiyorsa, aboneliklerinizi satın aldığınız sırada bu durum size bildirilir. Sizinle bağlantı kurulmasını kabul ederseniz, kredi onayına başvurma konusunda daha fazla bilgi sağlayan bir e-posta alırsınız. Kredi denetimleri genellikle iki iş günü içinde tamamlanır.
+Kredi denetimi yapılması gerekmesi durumunda, aboneliğinizi satın aldığınız sırada bu durum size bildirilir. Sizinle bağlantı kurulmasını kabul ederseniz, kredi onayına başvurma konusunda daha fazla bilgi sağlayan bir e-posta alırsınız. Kredi denetimleri genellikle iki iş günü içinde tamamlanır.
 
 > [!NOTE]
 > Brezilya’da yaşayan müşteriler aboneliği Boleto Bancario ile ödeyebilir. Bu seçeneği tercih ettiyseniz, ödeme pusulası sipariş tarihini izleyen 10 iş günü içinde aboneliği satın alma sırasında sağlanan e-postaya gönderilir. Son tarih, sipariş tarihinden 30 gün sonrasıdır. Boleto’nuzu e-postayla almazsanız, istenmeyen posta klasörünüzü gözden geçirin veya destekle iletişime geçin.
 >
 > Dilerseniz, hesaplar arasında elektronik transferle ödeyebilirsiniz. Acente ve hesap numarası, faturanızın en altında yer alır. Fatura numaranızı Transfer tanımlaması alanına girmelisiniz.
 
-Aboneliğiniz için fatura ile ödeme yapıyorsanız, fatura ekstreniz görüntülenmeye hazır olduğunda bir e-posta alırsınız. Bu e-posta, fatura ekstrenizin bir kopyasını içermez. Ancak, [kuruluşunuzun faturalarını e-posta eki olarak almayı](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments) seçebilirsiniz. Fatura ekstreniz, ödeme yapma seçenekleriniz ve nereye göndereceğinizle ilgili ayrıntıları içerir. Bir abonelik satın alırken bir satın alma siparişi (PO) numarası girerseniz, numara fatura ekstrenizde görünür. Fatura özetlerine erişim hakkında bilgi için bkz. [Faturanızı veya faturanızı görüntüleyin](view-your-bill-or-invoice.md).
+Aboneliğinizi faturayla ödüyorsanız, fatura ekstreniz görüntülenmeye hazır olduğunda bir e-posta alırsınız. Bu e-posta, fatura ekstrenizin kopyasını içermez. Ancak, [kuruluşunuzun faturalarını e-posta eki olarak almayı](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments) seçebilirsiniz. Fatura ekstreniz, ödeme yapma seçeneklerinizle ilgili ayrıntıları ve ödemenin nereye gönderileceğini içerir. Abonelik satın alırken bir satın alma siparişi (PO) numarası girdiyseniz, bu numara fatura ekstrenizde görünür. Fatura ekstrelerine erişim hakkında daha fazla bilgi için bkz. [Fatura ekstrenizi veya faturanızı görüntüleme](view-your-bill-or-invoice.md).
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>Kalan bakiyem varsa ne yapmalıyım?
 
-Kayıtlı ödeme yöntemini değiştiremezsek, size sorun olduğunu bildiren bir e-posta göndeririz. E-postada sorun kısaca açıklanır ve kalan bakiyeyi denetleyebileceğiniz bir bağlantı yer alır. İşlemi 30 gün boyunca, birkaç günde bir yeniden denemeye devam ederiz ve bu süre, abonelik için yetkisiz kullanım süresidir. İşlem her başarısız olduğunda, başarısızlık hakkında bir e-posta uyarısı alırsınız.
+Ödemenizin kayıtlı ödeme yöntemiyle alınamadığı durumlarda, size sorun olduğunu bildiren bir e-posta gönderilir. E-postada sorun kısaca açıklanır ve kalan bakiyeyi denetleyebileceğiniz bir bağlantı yer alır. İşlemi 30 gün boyunca, birkaç günde bir yeniden denemeye devam ederiz ve bu süre, abonelik için yetkisiz kullanım süresidir. İşlem her başarısız olduğunda, başarısızlık hakkında bir e-posta uyarısı alırsınız.
 
 Gecikmiş bakiyesi olan ödeme yöntemini kendiniz eklediyseniz, ödeme yapmak için **Bakiyeyi ödeyin** seçeneğini kullanabilirsiniz. Gecikmiş bakiyeyi öderken kullandığınız ödeme yöntemi, reddedilen ödeme yönteminin kullanıldığı tüm abonelikler için yeni ödeme yöntemi olur.
 
@@ -93,7 +93,7 @@ Gecikmiş bakiyesi olan ödeme yöntemini kendiniz eklediyseniz, ödeme yapmak i
 1. Sağ bölmede farklı bir ödeme yöntemi seçin veya **Yeni bir ödeme yöntemi ekle** seçeneğini belirtin.
 1. Ödeme yöntemi bilgilerini güncelleştirdikten sonra **Kaydet**'i seçin.
 
-Aboneliği öderken kullanılan ödeme yöntemini eklemediyseniz, ödeme yöntemini daha önce eklediğiniz yöntemle veya yeni bir yöntemle değiştirmelisiniz.
+Abonelik ödemesini yapmak için kullanılacak ödeme yöntemini eklemediğiniz durumlarda, ödeme yöntemini daha önce eklediğiniz yöntemle veya yeni bir yöntemle değiştirmeniz gerekir.
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>Çek veya EFT ile ödememi nereye göndermem gerekir?
 
