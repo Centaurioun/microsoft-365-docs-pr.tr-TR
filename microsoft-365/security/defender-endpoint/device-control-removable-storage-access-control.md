@@ -16,12 +16,12 @@ ms.topic: conceptual
 ms.technology: mde
 ms.date: 08/01/2022
 ms.reviewer: tewchen
-ms.openlocfilehash: 7407b6184b700ccacd8258ecce7d7cbcf16587b2
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 8c5a0dd3e2eb9f0ebeb20ed6e5ea8f323fbdcceb
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106590"
+ms.locfileid: "67112559"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama birimi Access Control
 
@@ -83,7 +83,7 @@ Kötü amaçlı yazılımdan koruma istemcisi sürümü **4.18.2103.3 veya** üz
 |Özellik Adı|Açıklama|Seçenekler|
 |---|---|---|
 |**GroupId**|Benzersiz bir kimlik olan GUID, grubu temsil eder ve ilkede kullanılır.||
-|**DescriptorIdList**|Grupta ele almak için kullanmak istediğiniz cihaz özelliklerini listeleyin. Tüm özellikler büyük/küçük harfe duyarlıdır. |**PrimaryId**: Birincil kimlik , , `CdRomDevices``WpdDevices`ve `PrinterDevices`bilgilerini içerir`RemovableMediaDevices`. <p>**InstancePathId**: InstancePathId, sistemdeki cihazı Aygıt Yöneticisi gibi `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0``Device instance path` benzersiz bir şekilde tanımlayan bir dizedir. Sonundaki sayı (örneğin &0) kullanılabilir yuvayı temsil eder ve cihazdan cihaza değişebilir. En iyi sonuçları elde için sonunda joker karakter kullanın. Örneğin, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. <p>**DeviceId**: Cihaz Kimliği biçimine dönüştürür `Device instance path` , bkz. [Standart USB Tanımlayıcıları](/windows-hardware/drivers/install/standard-usb-identifiers), örneğin USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07. <p>**HardwareId**: Sistemdeki cihazı Aygıt Yöneticisi USBSTOR\DiskGeneric_Flash_Disk___8.07 `Hardware Ids` gibi bir dize tanımladı. Not: Donanım Kimliği benzersiz değildir; farklı cihazlar aynı değeri paylaşabilir.<p>**FriendlyNameId**: Aygıt Yöneticisi genel flash disk USB cihazı `Friendly name` gibi cihaza bağlı bir dize. <p>**Veri Yolu Kimliği**: Örneğin, USB, SCSI. <p>**SerialNumberId**: SerialNumberId `Device instance path` değerini Aygıt Yöneticisi bulabilirsiniz; örneğin, `03003324080520232521` USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00&0'da\\`03003324080520232521` SerialNumberId değeridir. <p>**VID_PID**: Satıcı Kimliği, USB komitesinin satıcıya atadığını dört basamaklı satıcı kodudur. Ürün Kimliği, satıcının cihaza atadığını dört basamaklı ürün kodudur; Joker karakter desteği, Satıcı Kimliği ve Ürün Kimliği biçimine dönüştürme `Device instance path` , bkz. [Standart USB Tanımlayıcıları](/windows-hardware/drivers/install/standard-usb-identifiers). <p>`0751_55E0`: bu tam VID/PID çifti eşleştir<p>`_55E0`: HERHANGI bir medyayı PID=55E0 ile eşleştirme <p>`0751_`: VID=0751 ile herhangi bir medyayı eşleştirme <p> **Not**: 'media özelliğini Aygıt Yöneticisi nasıl bulabilirim?' Aygıt Yöneticisi'da özelliğin nasıl bulunduğunu anlamak için aşağıdaki 'Soru sorulur' bölümü altında.|
+|**DescriptorIdList**|Grupta ele almak için kullanmak istediğiniz cihaz özelliklerini listeleyin. Tüm özellikler büyük/küçük harfe duyarlıdır. |**PrimaryId**: Birincil kimlik `RemovableMediaDevices`, , `CdRomDevices`, `WpdDevices``PrinterDevices`içerir. <p>**InstancePathId**: InstancePathId, sistemdeki cihazı benzersiz olarak tanımlayan bir dizedir; örneğin, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. `Device instance path` Aygıt Yöneticisi içinde. Sonundaki sayı (örneğin &0) kullanılabilir yuvayı temsil eder ve cihazdan cihaza değişebilir. En iyi sonuçları elde için sonunda joker karakter kullanın. Örneğin, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. <p>**DeviceId**: Cihaz Kimliği biçimine dönüştürmek `Device instance path` için bkz. [Standart USB Tanımlayıcıları](/windows-hardware/drivers/install/standard-usb-identifiers), örneğin, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` <p>**HardwareId**: Sistemdeki cihazı tanımlayan bir dize, örneğin, `USBSTOR\DiskGeneric_Flash_Disk___8.07`Aygıt Yöneticisi`Hardware Ids`. <br>**Not**: Donanım Kimliği benzersiz değildir; farklı cihazlar aynı değeri paylaşabilir.<p>**FriendlyNameId**: Cihaza bağlı bir dizedir, örneğin, `Generic Flash Disk USB Device`. `Friendly name` Aygıt Yöneticisi içinde. <p>**BusId**: Örneğin, USB, SCSI <p>**SerialNumberId**: SerialNumberId `Device instance path` değerini Aygıt Yöneticisi bulabilirsiniz; örneğin, `03003324080520232521` USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00&0'da\\`03003324080520232521` SerialNumberId değeridir <p>**VID_PID**: Satıcı Kimliği, USB komitesinin satıcıya atadığını dört basamaklı satıcı kodudur. Ürün Kimliği, satıcının cihaza atadığını dört basamaklı ürün kodudur. Joker karakteri destekler. Satıcı Kimliği ve Ürün Kimliği biçimine dönüştürmek `Device instance path` için bkz. [Standart USB Tanımlayıcıları](/windows-hardware/drivers/install/standard-usb-identifiers). Örneğin: <br>`0751_55E0`: bu tam VID/PID çifti eşleştir<br>`_55E0`: HERHANGI bir medyayı PID=55E0 ile eşleştirme <br>`0751_`: VID=0751 ile herhangi bir medyayı eşleştirme <p> **Not**: [Aygıt Yöneticisi'da özelliğin nasıl buluncasını](#how-do-i-find-the-media-property-in-the-device-manager) anlamak için aşağıdaki [Sık sorulan sorular](#frequently-asked-questions) bölümünde media özelliğini Nasıl yaparım? bulmak Aygıt Yöneticisi? bölümüne bakın.|
 |**MatchType**|içinde `DescriptorIDList`kullanılan birden çok cihaz özelliği olduğunda, MatchType ilişkiyi tanımlar.|**MatchAll**: altındaki `DescriptorIdList` tüm öznitelikler **And** ilişkisi olur; örneğin, yönetici bağlı her USB için ve `InstancePathID`eklerse `DeviceID` sistem USB'nin her iki değeri de karşılayıp karşılamadığını denetler. <p> **MatchAny**: DescriptorIdList altındaki öznitelikler **Or** ilişkisi olacaktır; örneğin, yönetici bağlı her USB için ve `InstancePathID`koyarsa`DeviceID`, USB'de aynı **DeviceID** veya **InstanceID** değeri olduğu sürece sistem uygulamayı yapar.|
 
 ### <a name="access-control-policy"></a>Access Control İlkesi
@@ -516,9 +516,9 @@ DeviceFileEvents
 
 3. Aygıt Yöneticisi medyayı bulun, sağ tıklayın ve **özellikler'i** seçin.
 
-   ![Disk sürücülerinde seçilen USB'nin ve Özellikler'in vurgulandığı ekran görüntüsü.](https://user-images.githubusercontent.com/81826151/181859700-62a6f704-b12e-41e3-a048-7d63432654a4.png)
+   :::image type="content" alt-text="Aygıt Yöneticisi medyanın ekran görüntüsü." source="https://user-images.githubusercontent.com/81826151/181859700-62a6f704-b12e-41e3-a048-7d63432654a4.png":::
 
 4. **Ayrıntılar'ı** açın ve **Özellikler'i** seçin.
 
-   ![USB cihaz özelliklerinin ekran görüntüsü.](https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png)
+   :::image type="content" alt-text="Aygıt Yöneticisi'deki cihaz özelliğinin ekran görüntüsü." source="https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png":::
     

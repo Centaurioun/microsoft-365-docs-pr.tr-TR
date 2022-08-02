@@ -15,24 +15,38 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: df2ab2b2019bb76af49f00d2751cdc76848705d1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 28dfb21cb918ca5f0b99579304f3135664e11533
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663610"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112053"
 ---
 # <a name="submit-files-for-analysis"></a>Dosyaları analiz için gönderin
 
 Kötü amaçlı yazılım olabileceği veya yanlış algılandığından şüphelendiğiniz bir dosyanız varsa, dosyayı analiz için bize gönderebilirsiniz. Bu sayfada analiz için dosya göndermeyle ilgili bazı yaygın soruların yanıtları bulunur.
 
-## <a name="how-do-i-send-a-malware-file-to-microsoft"></a>Microsoft'a kötü amaçlı yazılım dosyası Nasıl yaparım? gönderebilirsiniz?
+## <a name="how-do-i-submit-a-file-to-microsoft-for-analysis"></a>Analiz için Microsoft'a dosya Nasıl yaparım? gönderebilirsiniz?
 
-Kötü amaçlı yazılım olabileceğini düşündüğünüz dosyaları veya hatalı algılanmış dosyaları [bize örnek gönderim portalı](https://www.microsoft.com/wdsi/filesubmission) üzerinden gönderebilirsiniz.
+### <a name="send-a-malware-file"></a>Kötü amaçlı yazılım dosyası gönderme
 
-Birçok kaynaktan çok sayıda örnek alırız. Analizimiz, dosya algılama sayısı ve gönderim türüne göre önceliklendirilir. Kullandığınız ürün ve dosyayı bulduğunuzda ne yaptığınız hakkında ayrıntılı bilgi vererek hızlı bir analizi tamamlamamıza yardımcı olabilirsiniz.
+Kötü amaçlı yazılım olabileceğini düşündüğünüz dosyaları veya yanlış algılanmış dosyaları [örnek gönderim portalı](https://www.microsoft.com/wdsi/filesubmission) üzerinden gönderebilirsiniz.
+
+Kullandığınız ürün ve dosyayı bulduğunuzda ne yaptığınız hakkında ayrıntılı bilgi vererek hızlı bir analizi tamamlayabilirsiniz.
 
 Oturum açtığınızda gönderimlerinizi izleyebilirsiniz.
+
+> [!NOTE]
+>
+> Uç Nokta için Microsoft Defender Plan 2 veya Office Plan 2 için Microsoft Defender'ınız olmasa bile WDSI gönderim özelliğini kullanabilirsiniz.
+
+### <a name="submit-a-suspected-email-attachment"></a>Şüpheli bir e-posta eki gönderme
+
+Şüpheli e-posta eklerini gözden geçirmek üzere Microsoft'a göndermek için [Microsoft 365 Defender portalını](https://security.microsoft.com/) kullanın. Daha fazla bilgi için bkz. [Şüpheli e-posta eklerini Microsoft'a gönderme](../office-365-security/admin-submission.md).
+
+### <a name="submit-a-file-or-file-hash"></a>Dosya veya dosya karması gönderme
+
+Dosyaları ve dosya karmalarını gözden geçirmek üzere Microsoft'a göndermek için Uç Nokta için Microsoft Defender'daki birleşik gönderimler özelliğini kullanın. Daha fazla bilgi için bkz. [dosyaları Uç Nokta için Microsoft Defender gönderme](../defender-endpoint/admin-submissions-mde.md).
 
 ## <a name="can-i-send-a-sample-by-email"></a>E-postayla örnek gönderebilir miyim?
 

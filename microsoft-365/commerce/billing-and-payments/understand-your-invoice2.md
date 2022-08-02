@@ -14,8 +14,8 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- VSBFY23
 - commerce_billing
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: İş için Microsoft 365 faturanızda veya faturanızda ücretleri, faturalamayı ve ödeme bilgilerini yorumlamayı öğrenin.
 ms.date: 05/24/2022
-ms.openlocfilehash: e0fde94ba3dd2f3d174bac44b3d53df469be9c9d
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 0c863c1398b19c0c3efdf6c8390ad4a0cd16f82c
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084949"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112031"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>İş için Microsoft 365 faturanızı veya faturanızı anlama
 

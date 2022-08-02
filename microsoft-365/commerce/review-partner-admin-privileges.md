@@ -15,15 +15,16 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_subscriptions
+- empty
 search.appverid: MET150
 description: Sahip oldukları yönetici ayrıcalıklarını belirlemek için Microsoft sertifikalı çözüm sağlayıcıları (iş ortakları) listenizi gözden geçirmeyi ve bu ayrıcalıkları kaldırmayı öğrenin.
 ms.date: 12/03/2021
-ms.openlocfilehash: eefbe2c8b70afee9c1e24e4335a73488906bf844
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 0d4bac0ed9e0657700e5ac28e8ad9b3304eee979
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490707"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111943"
 ---
 # <a name="review-microsoft-certified-cloud-solution-provider-partner-administrative-privileges"></a>Microsoft sertifikalı bulut çözümü sağlayıcısı iş ortağı yönetim ayrıcalıklarını gözden geçirin
 

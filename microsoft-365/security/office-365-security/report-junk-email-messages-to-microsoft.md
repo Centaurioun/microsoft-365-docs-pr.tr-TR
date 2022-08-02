@@ -17,12 +17,12 @@ ms.collection:
 description: Şüpheli bir e-postayı veya dosyayı Microsoft'a Nasıl yaparım? bildirdiniz? İletileri, URL'leri, e-posta eklerini ve dosyaları analiz için Microsoft'a bildirin. İstenmeyen posta ve kimlik avı e-postalarını bildirmeyi öğrenin.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3ccb01e63011b48fa341b7ce3198b05505940a01
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: e57460766864ba27cec95e584d28a22c8b2c0229
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717790"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112493"
 ---
 # <a name="how-do-i-report-a-suspicious-email-or-file-to-microsoft"></a>Şüpheli bir e-postayı veya dosyayı Microsoft'a Nasıl yaparım? bildirdiniz?
 
@@ -48,7 +48,7 @@ Birleşik gönderim deneyimi hakkında daha fazla bilgi gösteren bu videoyu izl
 |[Rapor İletisini veya Rapor Kimlik Avı eklentilerini etkinleştirme](enable-the-report-message-add-in.md)|Outlook ve Web üzerinde Outlook (eski adıyla Outlook Web App) ile çalışır. <br/><br/> Aboneliğinize bağlı olarak, kullanıcıların eklentilerle bildirdiği iletiler [Yönetici Gönderimler portalında](admin-submission.md), [Otomatik araştırma ve yanıt (AIR) sonuçlarında](air-view-investigation-results.md), [Kullanıcı tarafından bildirilen iletiler raporunda](view-email-security-reports.md#user-reported-messages-report) ve [Gezgin'de](threat-explorer-views.md#email--submissions) kullanılabilir. <br/><br/> Bildirilen iletileri, belirttiğiniz bir posta kutusuna kopyalanacak veya yeniden yönlendirilecek şekilde yapılandırabilirsiniz. Daha fazla bilgi için bkz. [Kullanıcı gönderim ilkeleri](user-submission.md).
 |[Outlook'ta yanlış pozitifleri ve yanlış negatifleri bildirme](report-false-positives-and-false-negatives.md)|Rapor İletisi özelliğini kullanarak hatalı pozitif sonuçları (engellenmiş veya gereksiz klasöre gönderilmiş iyi e-posta) ve hatalı negatifleri (gelen kutusuna teslim edilen istenmeyen e-posta veya kimlik avı) Exchange Online Protection (EOP) adresine gönderin.|
 |[Kullanıcıların Microsoft'a ne bildirdiğini görmek için posta akışı kurallarını kullanma](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Kullanıcılar analiz için Microsoft'a ileti bildirdiğinde size bildirimde bulunmanızı sağlayan bir posta akışı kuralı (taşıma kuralı olarak da bilinir) oluşturmayı öğrenin.|
-|[Şüpheli dosyaları analiz için Microsoft'a gönderme](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Ekleri ve diğer dosyaları göndermek için Microsoft Güvenlik Zekası sitesini kullanın.|
+|[Dosyaları analiz için gönderin](../intelligence/submission-guide.md)|E-posta eklerini ve diğer şüpheli dosyaları analiz için Microsoft'a gönderin.|
 
 > [!NOTE]
 > Bir e-posta varlığını Microsoft'a bildirdiğinizde, sürekli algoritma incelemelerimize dahil etmek için e-postayla ilişkili her şeyin bir kopyasını oluştururuz. Bu kopya e-posta içeriğini, e-posta üst bilgilerini ve e-posta yönlendirmeyle ilgili verileri içerir. İletideki ekler de eklenir.

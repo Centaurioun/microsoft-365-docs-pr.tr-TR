@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f927133a99e73af11c29690b1c51e3bda3a6d5a7
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 577747a28c86cb1b95640a6ae6ebe557d2340a28
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949447"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112229"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -34,6 +34,28 @@ Bu makale, Linux'ta Uç Nokta için Microsoft Defender'nin en son sürümlerinde
 
 - [macOS'ta Uç Nokta için Defender'daki yenilikler](mac-whatsnew.md)
 - [iOS'ta Uç Nokta için Defender'daki yenilikler](ios-whatsnew.md)
+
+<details>
+  <summary>Ağustos 2022 (Derleme: 101.75.43 | Sürüm: 30.122071.17543.0)</summary>
+
+&ensp;Yayın tarihi: **2 Ağustos 2022**<br/>
+&ensp;Yayımlanma Tarihi: **2 Ağustos 2022**<br/>
+&ensp;Derleme: **101.75.43**<br/>
+&ensp;Sürüm: **30.122071.17543.0**<br/>
+&ensp;Altyapı sürümü: **1.1.19300.3**<br/>
+&ensp;İmza sürümü: **1.369.395.0**<br/>
+
+**Yenilikler**
+
+- Red Hat Enterprise Linux sürüm 9.0 desteği eklendi
+- çıkışına `mdatp health` , ağ koruma özelliğinin zorlama düzeyini sorgulamak için kullanılabilecek yeni bir alan eklendi. Yeni alan çağrılır `network_protection_enforcement_level` ve şu değerlerden birini alabilir: `audit`, `block`veya `disabled`.
+- Aynı içeriğin birden çok algılamasının tehdit geçmişinde yinelenen girişlere yol açabileceği bir ürün hatası giderildi
+- Hizmet durdurulduğunda ürün (`mdatp_audisp_plugin`) tarafından oluşturulan işlemlerden birinin bazen düzgün şekilde sonlandırılmaması sorunu giderildi
+- Diğer hata düzeltmeleri
+</br>
+
+<br/><br/>
+</details>
 
 <details>
   <summary>Temmuz 2022 (Derleme: 101.73.77 | Sürüm: 30.122062.17377.0)</summary>
@@ -218,7 +240,7 @@ Sürüm: 30.121092.15257.0</b></p>
    
   <p><b> Yenilikler </b></p>
 
-   - Java uygulamaları tarafından kullanılan güvenlik açığı olan log4j jar'larını algılama özelliği eklendi. Makine, yüklü log4j jar'ları olan Java işlemlerini çalıştırmak için düzenli aralıklarla denetlenir. Bilgiler Uç Nokta için Microsoft Defender arka ucuna bildirilir ve portalın Destek Yönetimi alanında kullanıma sunulur.
+   - Java uygulamaları tarafından kullanılan güvenlik açığı olan log4j jar'larını algılama özelliği eklendi. Makine, yüklenen log4j jar'ları ile Java işlemlerini çalıştırmak için düzenli aralıklarla incelenir. Bilgiler Uç Nokta için Microsoft Defender arka ucuna bildirilir ve portalın Güvenlik Açığı Yönetimi alanında kullanıma sunulur.
    
    </details>
 

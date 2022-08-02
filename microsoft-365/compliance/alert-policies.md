@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Olası tehditleri, veri kaybını ve izin sorunlarını izlemek için Microsoft Purview uyumluluk portalı veya Microsoft 365 Defender portalında uyarı ilkeleri oluşturun.
-ms.openlocfilehash: 39ccf62716cae357709ddcd1d44928b40dbe237e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: e076aea422346bb9ace26d730897c6d90a234503
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942089"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111789"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365'te uyarı ilkeleri
 
@@ -169,7 +169,7 @@ Tabloda ayrıca her biri için gereken Office 365 Kurumsal ve Office 365 ABD Kam
 |**Olağan dışı dosya silme hacmi**|SharePoint veya OneDrive'da kısa bir süre içinde olağan dışı derecede çok sayıda dosya silindiğinde bir uyarı oluşturur. Bu ilkenin **Orta** önem derecesi ayarı vardır.|Veri yaşam döngüsü yönetimi|Hayır|E5/G5, Office 365 için Defender P2 veya Microsoft 365 E5 eklenti aboneliği|
 |**Kimlik avı olarak bildirilen e-postada olağan dışı artış**|İletileri kimlik avı postası olarak bildirmek için Outlook'taki Rapor İletisi eklentisini kullanarak kuruluşunuzdaki kişi sayısında önemli bir artış olduğunda bir uyarı oluşturur. Bu ilkenin **Orta** önem derecesi ayarı vardır. Bu eklenti hakkında daha fazla bilgi için bkz. [Rapor İletisi eklentisini kullanma](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Tehdit yönetimi|Hayır|E5/G5 veya Office 365 için Defender P2 eklenti aboneliği|
 |**Gelen kutusuna/klasöre teslim edilen kullanıcı kimliğe bürünme kimlik avı**<sup>1,2</sup><sup></sup>|Microsoft, bir yönetici veya kullanıcı geçersiz kılmasının bir kullanıcının kimliğe bürünme kimlik avı iletisinin bir posta kutusunun gelen kutusuna (veya kullanıcı tarafından erişilebilen başka bir klasöre) teslim edilmesine izin ettiğini algıladığında bir uyarı oluşturur. Geçersiz kılmalara örnek olarak, belirli bir gönderenden veya etki alanından gelen iletilere izin veren bir gelen kutusu veya posta akışı kuralı ya da belirli gönderenlerden veya etki alanlarından gelen iletilere izin veren istenmeyen posta önleme ilkesi verilebilir. Bu ilkenin **Orta** önem derecesi ayarı vardır.|Tehdit yönetimi|Hayır|E5/G5 veya Office 365 için Defender P2 eklenti aboneliği|
-|**Kullanıcı karantinaya alınmış bir iletiyi serbest bırakmak istedi**|Kullanıcı karantinaya alınmış bir iletinin yayınlanmasını istediğinde bir uyarı oluşturur. Karantinaya alınan iletilerin yayımlanmasını istemek için, karantina ilkesinde (örneğin, **Sınırlı erişim** önceden ayarlanmış izinler grubundan) **alıcıların karantinadan çıkarılacak bir ileti istemesine izin ver** (_PermissionToRequestRelease_) izni gerekir. Daha fazla bilgi için bkz. [Alıcıların karantina izninden serbest bırakılacak bir ileti istemesine izin verme](../security/office-365-security/quarantine-policies.md#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission). Bu ilkenin **Bilgilendirici** önem derecesi ayarı vardır.|Tehdit yönetimi|Hayır|E1/F1/G1, E3/F3/G3 veya E5/G5|
+|**Kullanıcı karantinaya alınmış bir iletiyi serbest bırakmak istedi**|Kullanıcı karantinaya alınmış bir iletinin yayınlanmasını istediğinde bir uyarı oluşturur. Karantinaya alınan iletilerin yayımlanmasını istemek için, karantina ilkesinde (örneğin, **Sınırlı erişim** önceden ayarlanmış izinler grubundan) **alıcıların karantinadan çıkarılacak bir ileti istemesine izin ver** (_PermissionToRequestRelease_) izni gerekir. Daha fazla bilgi için bkz. [Alıcıların karantina izninden serbest bırakılacak bir ileti istemesine izin verme](../security/office-365-security/quarantine-policies.md#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission). Bu ilkenin **Bilgilendirici** önem derecesi ayarı vardır.|Tehdit yönetimi|Hayır| Microsoft Business Basic, Microsoft Business Standard, Microsoft Business Premium, E1/F1/G1, E3/F3/G3 veya E5/G5|
 |**Kullanıcının e-posta göndermesi kısıtlandı**|Kuruluşunuzdaki birinin giden posta göndermesi kısıtlandığında bir uyarı oluşturur. Bu durum genellikle bir hesabın güvenliği aşıldığında ve kullanıcı uyumluluk portalındaki **Kısıtlı Kullanıcılar** sayfasında listelendiğinde sonuçlanır. (Bu sayfaya erişmek için **Tehdit yönetimi > Kısıtlanmış Kullanıcılar > Gözden Geçir'e** gidin). Bu ilkenin **Yüksek** önem derecesi ayarı vardır. Kısıtlanmış kullanıcılar hakkında daha fazla bilgi için bkz. [İstenmeyen e-posta gönderdikten sonra engellenenler listesinden kullanıcı, etki alanı veya IP adresini kaldırma](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Tehdit yönetimi|Evet|E1/F1/G1, E3/F3/G3 veya E5/G5|
 |**Kullanıcının formları paylaşması ve yanıt toplaması kısıtlandı**|Kuruluşunuzdaki birinin formları paylaşması ve yinelenen kimlik avı girişimi davranışı algılanması nedeniyle Microsoft Forms kullanarak yanıt toplaması kısıtlandığında bir uyarı oluşturur. Bu ilkenin **Yüksek** önem derecesi ayarı vardır.|Tehdit yönetimi|Hayır|E1, E3/F3 veya E5|
 
@@ -202,11 +202,11 @@ Uyarıları görüntülemek için:
 
 - **Durum.** Belirli bir duruma atanan uyarıları göstermek için bu filtreyi kullanın. Varsayılan durum **Etkin'dir**. Siz veya diğer yöneticiler durum değerini değiştirebilirsiniz.
 
-- **Ilkesi.** Bir veya daha fazla uyarı ilkesi ayarıyla eşleşen uyarıları göstermek için bu filtreyi kullanın. Ya da tüm uyarı ilkeleri için tüm uyarıları görüntüleyebilirsiniz.
+- **Politika.** Bir veya daha fazla uyarı ilkesi ayarıyla eşleşen uyarıları göstermek için bu filtreyi kullanın. Ya da tüm uyarı ilkeleri için tüm uyarıları görüntüleyebilirsiniz.
 
 - **Zaman aralığı.** Belirli bir tarih ve saat aralığında oluşturulan uyarıları göstermek için bu filtreyi kullanın.
 
-- **Önem.** Belirli bir önem derecesine atanan uyarıları göstermek için bu filtreyi kullanın.
+- **Şiddet.** Belirli bir önem derecesine atanan uyarıları göstermek için bu filtreyi kullanın.
 
 - **Kategori.** Bir veya daha fazla uyarı kategorisindeki uyarıları göstermek için bu filtreyi kullanın.
 
@@ -270,7 +270,7 @@ Varsayılan uyarı ilkesinin atandığı kategoriyi görmek için [Varsayılan u
 |Disposition Management|||||||
 |DLP Uyumluluk Yönetimi||![Onay işareti.](../media/checkmark.png)|||||
 |Dışarı aktarma|||||||
-|Tutun|||||||
+|Tutmak|||||||
 |Information Protection Analisti||![Onay işareti.](../media/checkmark.png)|||||
 |Information Protection Araştırmacısı||![Onay işareti.](../media/checkmark.png)|||||
 |Uyarıları Yönet||||||![Onay işareti.](../media/checkmark.png)|
