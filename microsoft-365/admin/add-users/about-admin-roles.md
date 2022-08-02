@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: Belirli işletme işlevlerine eşlenen ve yönetim merkezinde belirli görevleri yerine getirmek için izinler veren Hizmet yöneticisi gibi yönetici rolleri hakkında daha fazla bilgi edinin.
-ms.openlocfilehash: cd40eb3421abf21205aac909fa2cb1796d7f0aa2
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+description: Genel yönetici rolü veya hizmet yöneticisi rolü gibi yönetici rolleri hakkında bilgi edinin. Roller, belirli iş işlevleriyle eşlenir ve Microsoft 365 yönetim merkezinde belirli görevleri yapmak için izinler verir.
+ms.openlocfilehash: df4f980237a25ee23b9f629f2db92e908797553a
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601982"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111637"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezinde, yönetici rolleri
 
@@ -90,9 +90,10 @@ Muhtemelen kuruluşunuzda yalnızca aşağıdaki rolleri atamanız gerekecek. Va
 |Gruplar yöneticisi     |   Microsoft 365 yönetim merkezi ve Azure Active Directory portalı da dahil olmak üzere, tüm grup ayarlarını yönetici merkezlerinde yönetmesi gereken kullanıcılara gruplar yöneticisi rolünü atayın. <br><br> Grup yöneticileri şunları yapabilir:<br> - Microsoft 365 grupları oluşturma, düzenleme, silme ve geri yükleme <br> -Grup oluşturma, süre sonu ve adlandırma ilkeleri oluşturma ve güncelleştirme <br> -Azure Active Directory güvenlik gruplarını oluşturma, düzenleme, silme ve geri yükleme| 
 |Yardım Masası Yöneticisi     |   Aşağıdaki işlemi yapmasına gerek duyan kullanıcılara yardım masası yönetici rolünü atayın:<br> - Parolaları sıfırlama <br> - Kullanıcıları oturumu kapatmaya zorlama <br> - Hizmet isteklerini yönetme  <br> - Hizmet durumunu görüntüleme <br> <br> **Not**: Yardım Masası Yöneticisi yalnızca yönetici olmayan kullanıcılara ve kullanıcılara şu rollere sahip olmak için yardım edebilir: Dizin gözetmeni, Konuk davetli, Yardım masası Yöneticisi, İleti merkezi gözetmeni ve Rapor gözetmeni.      |
 |Lisans yöneticisi    |   Kullanıcılara lisans ataması, kullanıcıların lisanslarını kaldırması ve kullanım konumlarını düzenlemesi gereken kullanıcılara Lisans yöneticisi rolünü atayın. <br/><br/> Lisans yöneticileri şunları da yapabilir: <br> - Grup tabanlı lisanslama için lisans atamalarını yeniden işleme <br> - Grup tabanlı lisanslama için gruplara ürün lisansları atama  |
+|Mesaj merkezi gizlilik gözetmeni    |   Microsoft 365 İleti merkezindeki gizlilik ve güvenlik iletilerini ve güncelleştirmeleri okuması gereken kullanıcılara İleti merkezi gizlilik okuyucusu rolünü atayın. İleti merkezi gizliliği okuyucuları, tercihlerine bağlı olarak veri gizliliği ile ilgili e-posta bildirimleri alabilir ve İleti merkezi tercihlerini kullanarak abonelikten çıkabilirler. Yalnızca genel yöneticiler ve İleti merkezi gizlilik okuyucuları, veri gizliliği iletilerini okuyabilir. Bu rolün hizmet isteklerini görüntüleme, oluşturma veya yönetme izni yoktur. <br><br>İleti merkezi gizlilik okuyucuları ayrıca şunları yapabilir: <br> - Veri gizliliği iletileri de dahil olmak üzere İleti Merkezindeki tüm bildirimleri izleme <br> - Grupları, alanları ve abonelikleri görüntüleme   |
+|Message merkezi gözetmeni |   Aşağıdaki işlemleri yapması gereken kullanıcılara İleti merkezi okuyucusu rolünü atayın: <br> - İleti merkezi bildirimlerini izleme <br> - İleti merkezi gönderileri ve güncelleştirmelerinin haftalık e-posta özetlerini alma <br> - İleti merkezi gönderilerini paylaşma <br> - Kullanıcılar ve gruplar gibi Azure AD hizmetleri için salt okunur erişime sahip olma|
 |Office Uygulamaları yöneticisi    |   Aşağıdaki işlemi yapmasına gerek duyan kullanıcılara Office Uygulamaları yöneticisi rolünü atayın: <br> -Office bulut ilkesi hizmetini kullanarak Office için bulut tabanlı ilkeler oluşturma ve yönetme <br> - Hizmet istekleri oluşturma ve yönetme <br> - Kullanıcıların kendi Office uygulamalarında gördüğü Yenilikler içeriğini yönetme   <br> - Hizmet durumunu görüntüleme  |
 |Parola yöneticisi  |   - Yönetici olmayanların ve Parola Yöneticilerinin parolalarını sıfırlaması gereken bir kullanıcıya Parola yöneticisi rolünü atayın.   |
-|Message merkezi gözetmeni |   Aşağıdaki işlemleri yapması gereken kullanıcılara İleti merkezi okuyucusu rolünü atayın: <br> - İleti merkezi bildirimlerini izleme <br> - İleti merkezi gönderileri ve güncelleştirmelerinin haftalık e-posta özetlerini alma <br> - İleti merkezi gönderilerini paylaşma <br> - Kullanıcılar ve gruplar gibi Azure AD hizmetleri için salt okunur erişime sahip olma|
 |Power Platform yöneticisi |   Aşağıdaki işlemleri yapması gereken kullanıcılara Power Platform yöneticisi rolünü atayın: <br> - Power Apps, Power Automate ve Microsoft Purview Veri Kaybını Önleme için tüm yönetici özelliklerini yönetme <br> - Hizmet istekleri oluşturma ve yönetme <br> - Hizmet durumunu görüntüleme  |
 |Rapor gözetmeni |   Aşağıdaki işlemleri yapması gereken kullanıcılara Rapor okuyucusu rolünü atayın: <br> - Microsoft 365 yönetim merkezindeki kullanım verilerini ve etkinlik raporlarını görüntüleme <br> - Power BI benimseme içerik paketine erişme <br> - Azure AD'de oturum açma raporlarına ve etkinliğine erişme <br> - Microsoft Graph raporlama API'si tarafından döndürülen verileri görüntüleme|
 |Hizmet Desteği yöneticisi   |   Normal yönetici rollerine ek olarak aşağıdakileri yapması gereken yöneticilere veya kullanıcılara ek bir rol olarak Hizmet Desteği yöneticisi rolünü atayın: <br> - Hizmet isteklerini açma yönetme <br> - Mesaj Merkezi yayınlarını görüntüleyin ve paylaşma <br> - Hizmet durumunu görüntüleme   |

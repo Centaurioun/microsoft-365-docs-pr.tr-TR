@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/01/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-overview
@@ -21,18 +21,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra ile küçük veya orta ölçekli işletmeler için siber güvenliği nasıl uygulayacağınızı öğrenin. Siber güvenlik işlevleri ve özellikleri, siber saldırıları ve güvenlik ihlallerini önlemek ve üst düzey siber savunmalarla verileri, cihazları ve bilgileri korumaya yardımcı olmak için iyileştirilmiştir.
-ms.openlocfilehash: 798a5f6ee02ff0b949cb57d818cb40e3221e4a35
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 47260bbec9e874d07f5508428843aa037a47898e
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037763"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111723"
 ---
-# <a name="microsoft-365-business-premium--cybersecurity-for-small-business"></a>Microsoft 365 İş Ekstra - küçük işletmeler için siber güvenlik
+# <a name="microsoft-365-business-premium--productivity-and-cybersecurity-for-small-business"></a>Microsoft 365 İş Ekstra – küçük işletmeler için üretkenlik ve siber güvenlik
 
 İlk olarak, Microsoft 365 İş Ekstra ve onun birinci sınıf üretkenlik araçlarını benimsemekle akıllıca bir seçim yaptığınızı söyleyerek başlayalım. Siber güvenlik göz önünde bulundurularak tasarlanan Microsoft 365 İş Ekstra, verilerinizi, cihazlarınızı ve bilgilerinizi korur. Rastgele bireyler, organize suçlar veya son derece gelişmiş ulus devletler dahil olmak üzere bilgisayar korsanlarına ve siber saldırganlara karşı kuruluşunuzun ilk ve en iyi savunması sizsiniz.
 
-Göreviniz, Microsoft 365 İş Ekstra’nın kuruluşunuzun geleceğini güvenceye almaya yardımcı olmasına izin vermektir. Ortamınızı güçlendirmenize, ekibinizi eğitmenize ve yönetilen cihazları korumanıza yardımcı olacak aşağıdaki görevleri üstlenerek bu göreve yaklaşın. Görevler şu şekilde düzenlenmiştir:
+Önünüzdeki görev şu: Microsoft 365 İş Ekstra'nın kuruluşunuzun geleceğini güvence altına almasına izin verin! Ortamınızı güçlendirmenize, ekibinizi eğitmenize ve yönetilen cihazları korumanıza yardımcı olacak aşağıdaki görevleri üstlenerek bu göreve yaklaşın. Görevler şu şekilde düzenlenmiştir:
 
 - **[Ortamınızı güçlendirmek](m365bp-setup-overview.md)** (yöneticinizin gerçekleştirdiği görevler); 
 - **[Ekibinizi eğitmek](m365bp-devices-overview.md)** (tüm personelin gerçekleştirdiği görevler); ve 
@@ -89,4 +89,4 @@ Microsoft 365 İş Ekstra, küçük ve orta ölçekli işletmeler için kapsaml�
 Şimdi [ortamınızı siber saldırılara karşı güçlendirelim](m365bp-setup-overview.md)!
 
 > [!NOTE]
-> Bir terim veya yönerge belirsiz olduğunda [terimler sözlüğü](m365bp-glossary.yml)’nde tanımları bulabilirsiniz.
+> Bir koşul veya yönergeyi anlayamazsanız [terimler sözlüğüne](m365bp-glossary.yml) bakın.
