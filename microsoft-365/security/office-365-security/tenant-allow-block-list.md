@@ -17,12 +17,12 @@ ms.custom: ''
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde izin ve blokları yönetmeyi öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1267c0316150f36562b145b14633d9d6562ad196
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: ca93c64494f163c5d08243c7d797f63bcdfda54e
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822235"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175483"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Kiracı İzin Verilenler/Engellenenler Listesini Yönetme
 
@@ -39,11 +39,11 @@ Microsoft 365 Defender portalındaki Kiracı İzin Ver/Engelle Listesi, Microsof
 
 - Engelleyecek URL'ler.
 - Engellenmesi gereken dosyalar.
-- Engellenmesi gereken gönderen e-postaları veya etki alanları.
+- Engellenmesi gereken etki alanlarını veya adresleri Email.
 - İzin vermek veya engellemek için sahte gönderenler. Sahte [zeka içgörülerinde](learn-about-spoof-intelligence.md) izin verme veya engelleme kararını geçersiz kılarsanız, sahtekar gönderen yalnızca Kiracı İzin Ver/Engelle Listesi'ndeki **Kimlik Sahtekarı** sekmesinde görünen el ile izin verme veya engelleme girdisine dönüşür. Sahte gönderenler için kimlik sahtekarlık zekası tarafından algılanana kadar el ile izin verme veya engelleme girdileri de oluşturabilirsiniz.
 - İzin verecek URL'ler.
 - İzin verecek dosyalar.
-- İzin vermek için gönderen e-postaları veya etki alanları.
+- İzin vermek için etki alanlarını veya adresleri Email.
 
 Bu makalede, Microsoft 365 Defender portalında veya Exchange Online'de posta kutuları olan Microsoft 365 kuruluşları için PowerShell'de (Exchange Online Exchange Online olmayan kuruluşlar için tek başına EOP PowerShell) Kiracı İzin Verme/Engelleme Listesi'nde girişlerin nasıl yapılandırıldığı açıklanır  posta kutuları).
 
@@ -56,7 +56,7 @@ Bu makalede, Microsoft 365 Defender portalında veya Exchange Online'de posta ku
 
 - Dosyanın SHA256 karma değerini kullanarak dosyaları belirtirsiniz. Windows'da bir dosyanın SHA256 karma değerini bulmak için komut isteminde aşağıdaki komutu çalıştırın:
 
-  ```console
+  ```DOS
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
@@ -64,13 +64,17 @@ Bu makalede, Microsoft 365 Defender portalında veya Exchange Online'de posta ku
 
 - Kullanılabilir URL değerleri, bu makalenin devamında yer alan [Kiracı İzin Ver/Engelle Listesi bölümünün URL söz diziminde](#url-syntax-for-the-tenant-allowblock-list) açıklanmaktadır.
 
-- Kiracı İzin Ver/Engelle Listesi gönderenler için en fazla 500 girdi, URL'ler için 500 girdi, dosya karmaları için 500 girdi ve kimlik sahtekarlığına yönelik 1024 girdiye (sahtekar gönderenler) izin verir.
+- Kiracı İzin Ver/Engelle Listesi aşağıdaki sınırlara sahiptir:
+  - Etki alanları & adresleri için 500 girdi.
+  - URL'ler için 500 girdi.
+  - Dosya karmaları için 500 girdi.
+  - Kimlik sahtekarlığına yönelik 1024 girdileri (sahte gönderenler).
 
-- Her girdi için en fazla karakter sayısı:
-  - Dosya karmaları = 64
-  - URL = 250
+- Kiracı İzin Ver/Engelle Listesindeki girişler aşağıdaki sınırlara sahiptir:
+  - Dosya karmaları için 64 karakter.
+  - URL'ler için 250 karakter.
 
-- Bir girdi 30 dakika içinde etkin olmalıdır.
+- Girişlerin %99,99'u 30 dakika içinde etkin olmalıdır. 30 dakika içinde etkin olmayan girişler 24 saate kadar sürebilir. 
 
 - Varsayılan olarak, Kiracı İzin Ver/Engelle Listesindeki girdilerin süresi 30 gün sonra dolar. Bir tarih belirtebilir veya bunların süresi hiçbir zaman dolmak üzere ayarlayabilirsiniz (yalnızca bloklar için).
 
@@ -116,14 +120,14 @@ Tüm izin verme ve blokları yönetmek için bkz. [Kiracı İzin Ver/Engelle Lis
 
 2. İstediğiniz sekmeyi seçin. Kullanılabilir sütunlar seçtiğiniz sekmeye bağlıdır:
 
-   - **Gönderenler**:
-     - **Değer**: Gönderen etki alanı veya e-posta adresi.
+   - **Etki alanları & adresleri**:
+     - **Değer**: Etki alanı veya e-posta adresi.
      - **Eylem**: **İzin Ver** veya **Engelle** değeri.
      - **Değiştiren**
      - **Son güncelleştirme**
      - **Kaldırılacak yer**
      - **Notlar**
-   - **Sızdırma**
+   - **Sahte gönderenler**
      - **Sahte kullanıcı**
      - **Altyapı gönderme**
      - **Kimlik sahtekarı türü**: **İç** veya **Dış** değeri.
@@ -147,8 +151,8 @@ Tüm izin verme ve blokları yönetmek için bkz. [Kiracı İzin Ver/Engelle Lis
 
    Sonuçları gruplandırmak için **Gruplandır'a** tıklayabilirsiniz. Kullanılabilir değerler seçtiğiniz sekmeye bağlıdır:
 
-   - **Gönderenler**: Sonuçları **Eyleme** göre gruplandırabilirsiniz.
-   - **Kimlik sahtekarlığına:** Sonuçları **Eylem** veya **Kimlik Sahtekarı türüne** göre gruplandırabilirsiniz.
+   - **Etki alanları & adresleri**: Sonuçları **Eyleme** göre gruplandırabilirsiniz.
+   - **Sahte gönderenler**: Sonuçları **Eylem** veya **Kimlik Sahtekarı türüne** göre gruplandırabilirsiniz.
    - **URL'ler**: Sonuçları **Eyleme** göre gruplandırabilirsiniz.
    - **Dosyalar**: Sonuçları **Eyleme** göre gruplandırabilirsiniz.
 
@@ -156,15 +160,15 @@ Tüm izin verme ve blokları yönetmek için bkz. [Kiracı İzin Ver/Engelle Lis
 
    Sonuçları filtrelemek için **Filtre'ye** tıklayın. **Görüntülenen Filtre** açılır öğesinde bulunan değerler, seçtiğiniz sekmeye bağlıdır:
 
-   - **Gönderenler**
+   - **Etki alanları & adresleri**
      - **Eylem**
      - **Hiçbir zaman süresi dolmaz**
      - **Son güncelleştirme tarihi**
      - **Kaldırılacak yer**
-   - **Sızdırma**
+   - **Sahte gönderenler**
      - **Eylem**
      - **Kimlik sahtekarı türü**
-   - **Url 'leri**
+   - **URL'ler**
      - **Eylem**
      - **Hiçbir zaman süresi dolmaz**
      - **Son güncelleştirme tarihi**
@@ -179,9 +183,9 @@ Tüm izin verme ve blokları yönetmek için bkz. [Kiracı İzin Ver/Engelle Lis
 
 3. İşiniz bittiğinde **Ekle'ye** tıklayın.
 
-## <a name="view-sender-file-or-url-entries-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesinde gönderen, dosya veya URL girdilerini görüntüleme
+## <a name="view-domains--addresses-file-or-url-entries-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesinde etki alanlarını & adresleri, dosya veya URL girdilerini görüntüleme
 
-Kiracı İzin Ver/Engelle Listesi'nde blok gönderen, dosya veya URL girdilerini görüntülemek için aşağıdaki söz dizimini kullanın:
+Kiracı İzin Ver/Engelle Listesi'nde blok etki alanlarını & adresleri, dosya veya URL girdilerini görüntülemek için aşağıdaki söz dizimini kullanın:
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType <Sender | FileHash | URL> [-Entry <SenderValue | FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
@@ -424,7 +428,7 @@ Aşağıdaki girdiler geçersiz:
 
 - **Eksik veya geçersiz etki alanı değerleri**:
 
-  - Contoso
+  - contoso
   - \*.contoso.\*
   - \*.com
   - \*.pdf
@@ -490,6 +494,6 @@ Yalnızca bu etki alanından gelen *ve* altyapı çifti gönderen iletilerin kim
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>İzin ver veya engelle girdisi ekledikten sonra beklenmesi gerekenler
 
-Gönderimler portalı aracılığıyla bir izin verme girdisi veya Kiracı İzin Ver/Engelle Listesi'ne bir blok girdisi ekledikten sonra, girdi etkin olduğunda hemen çalışmaya başlamalıdır. Giriş çoğunlukla 30 dakika içinde etkin olur, ancak bazen 24 saate kadar sürebilir.
+Gönderimler portalı aracılığıyla bir izin girişi veya Kiracı İzin Ver/Engelle Listesi'ne bir blok girdisi ekledikten sonra, girdi etkin olduktan hemen sonra çalışmaya başlamalıdır. Girişlerin %99,99'u 30 dakika içinde etkin olmalıdır. 30 dakika içinde etkin olmayan girişler 24 saate kadar sürebilir.
 
 Sistemin izin verme veya engelleme hakkında bilgi edinip öğrenmediğini görmek için girişlerin 30 gün sonra otomatik olarak süresinin dolmasına izin vermenizi öneririz. Aksi takdirde, sisteme öğrenmesi için 30 gün daha vermek için başka bir giriş yapmanız gerekir.

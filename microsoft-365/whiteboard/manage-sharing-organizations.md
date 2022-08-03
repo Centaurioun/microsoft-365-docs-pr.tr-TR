@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard için paylaşımı yönetmeyi öğrenin.
-ms.openlocfilehash: 6aa0d3ba9415bba32663cd868cfc94743f354fd4
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 2cbc3f02f72fd5ca0f08199de3513c38cefe0c73
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943034"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175308"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Microsoft Whiteboard için paylaşımı yönetme
 
@@ -25,9 +25,9 @@ Paylaşım deneyimi, Teams toplantısında olmanıza, paylaşılan bir cihaz kul
 
 ## <a name="share-in-teams-meetings"></a>Teams toplantılarında paylaşma
 
-Teams toplantısında beyaz tahta paylaştığınızda Whiteboard, kuruluştaki herkes tarafından erişilebilen bir paylaşım bağlantısı oluşturur. Ardından beyaz tahtayı toplantıdaki kiracı içi kullanıcılarla otomatik olarak paylaşır.
+Teams toplantısında beyaz tahta paylaştığınızda Whiteboard, kuruluştaki herkes tarafından erişilebilen bir paylaşım bağlantısı oluşturur. Ayrıca beyaz tahtalar, toplantıdaki kiracı içi kullanıcılarla otomatik olarak paylaşılır. Beyaz tahtalar, varsayılan ayardan bağımsız olarak şirket tarafından paylaşılabilir bağlantılar kullanılarak paylaşılır. Varsayılan paylaşım bağlantı türü desteği planlandı.
 
-Toplantı sırasında dış ve paylaşılan cihaz hesapları tarafından geçici işbirliği için ek bir özellik vardır. Bu özellik, bu kullanıcıların teams toplantısında paylaşıldıklarında beyaz tahtaları PowerPoint Canlı paylaşımına benzer şekilde geçici olarak görüntülemesine ve üzerinde işbirliği yapmasına olanak tanır.
+Teams toplantısı sırasında dış ve paylaşılan cihaz hesapları tarafından geçici işbirliği için ek bir özellik vardır. Kullanıcılar, bir toplantıda paylaşılan beyaz tahtaları PowerPoint Canlı paylaşımına benzer şekilde geçici olarak görüntüleyebilir ve üzerinde işbirliği yapabilir.
 
 >[!NOTE]
 > Bu bir paylaşım bağlantısı değildir ve dosyaya erişim izni vermez. Yalnızca Teams toplantısı süresi boyunca beyaz tahta üzerinde geçici görüntüleme ve işbirliği sağlar.
@@ -47,14 +47,14 @@ OneDrive İş için dış paylaşımı kısıtlarsanız, dış ve paylaşılan c
 Bu ayar yalnızca beyaz tahtalar için geçerlidir ve önceden paylaşılan **OneDriveLoopSharingCapability** ve **CoreLoopSharingCapability ayarlarının** yerini alır. Bu ayarlar artık geçerli değildir ve göz ardı edilebilir.
 
 >[!NOTE]
-> Varsayılan olarak, **Anonim kullanıcılar toplantılardaki uygulamalarla etkileşimde bulunabilir Teams toplantı** ayarı etkindir. Devre dışı bırakdıysanız, toplantı sırasında hiçbir anonim kullanıcı (konuklar veya federasyon kullanıcıları yerine) beyaz tahtaya erişemez.
+> Bu yalnızca konuklar ve federasyon kullanıcıları için geçerlidir. Şu anda anonim toplantı kullanıcıları için geçerli değildir.
 
 Bu değişikliklerin kiracınız genelinde uygulanması yaklaşık 60 dakika sürmelidir. 
 
 |Senaryo  |Depolama ve sahiplik  |Paylaşım ayarları  |Paylaşım deneyimi  |
 |---------|---------|---------|---------|
 |Beyaz tahtayı masaüstünden veya mobil cihazdan başlatma  |Depolama: OneDrive İş<br><br>Sahip: Beyaz tahtayı oluşturan kullanıcı  |Etkin  |Kiracı içi kullanıcılar: Oluşturabilir, görüntüleyebilir ve işbirliği yapabilir<br><br>Dış kullanıcılar: Yalnızca toplantı sırasında görüntüleyebilir ve işbirliği yapabilir (beyaz tahtayı paylaşma düğmesi dış kullanıcılar için görünmez)<br><br>Paylaşılan cihaz hesapları: Yalnızca toplantı sırasında görüntüleyebilir ve işbirliği yapabilir  |
-|Beyaz tahtayı masaüstünden veya mobil cihazdan başlatma  |Depolama: OneDrive İş<br><br>Sahip: Beyaz tahtayı oluşturan kullanıcı  |Devre dışı  |Kiracı içi kullanıcılar: Başlatabilir, görüntüleyebilir ve işbirliği yapabilir<br><br>Dış kullanıcılar: Görüntülenemez veya işbirliği yapılamaz<br><br>Paylaşılan cihaz hesapları: Görüntülenemez veya işbirliği yapılamaz  |
+|Beyaz tahtayı masaüstünden veya mobil cihazdan başlatma  |Depolama: OneDrive İş<br><br>Sahip: Beyaz tahtayı oluşturan kullanıcı  |Sakat  |Kiracı içi kullanıcılar: Başlatabilir, görüntüleyebilir ve işbirliği yapabilir<br><br>Dış kullanıcılar: Görüntülenemez veya işbirliği yapılamaz<br><br>Paylaşılan cihaz hesapları: Görüntülenemez veya işbirliği yapılamaz  |
 |Beyaz tahtayı Surface Hub'dan veya Microsoft Teams Odaları başlatma  |Depolama: Azure (bu işlem gelecekte OneDrive İş taşınacaktır)<br><br>Sahip: Toplantı katılımcısı   |Geçerli değil  |Kiracı içi kullanıcılar: Başlatabilir, görüntüleyebilir ve işbirliği yapabilir<br><br>Dış kullanıcılar: Yalnızca toplantı sırasında görüntüleyebilir ve işbirliği yapabilir<br><br>Paylaşılan cihaz hesapları: Yalnızca toplantı sırasında görüntüleyebilir ve işbirliği yapabilir  |
 
 ## <a name="add-as-a-tab-in-teams-channels-and-chats"></a>Teams kanallarında ve sohbetlerinde sekme olarak ekleme

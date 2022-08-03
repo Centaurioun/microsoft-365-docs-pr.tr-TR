@@ -15,15 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Kullanıcılar tarafından bildirilen istenmeyen posta ve kimlik avı e-postalarını toplamak için posta kutusunu yapılandırma. Kullanıcıların istenmeyen posta, kimlik avı, kötü amaçlı olarak veya kötü amaçlı olarak bildirmediği iletiler için bir posta kutusu yapın.
+description: Yöneticiler, kullanıcılar tarafından bildirilen istenmeyen posta ve kimlik avı iletilerini toplamak için özel bir posta kutusunu (kullanıcı gönderimleri posta kutusu olarak da bilinir) nasıl tanımlayacağınızı öğrenebilir. Diğer ayarlar, kullanıcılar iletileri raporladığında raporlama deneyimini tamamlar.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 02356f03f60e2bfc0c6c7de992fdc0c4331f3a4c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: faba09ceb32232154211a28b283ece79228f0be8
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942526"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175498"
 ---
 # <a name="user-reported-message-settings"></a>Kullanıcı tarafından bildirilen ileti ayarları
 
@@ -34,42 +34,50 @@ ms.locfileid: "66942526"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online posta kutularına sahip Microsoft 365 kuruluşlarında, kullanıcılar istenmeyen posta, kimlik avı, kötü amaçlı ileti olarak veya hatta kötü amaçlı iletiler bildirdiğinde postaları posta kutusuna yönlendirebilirsiniz. Kullanıcılar çeşitli raporlama seçeneklerini kullanarak e-postaları raporladığında, yöneticiler bu e-posta iletilerini kesmek (yalnızca özel posta kutusuna göndermek) veya iletilerin kopyalarını almak (özel posta kutusuna ve Microsoft'a göndermek) için bu posta kutusunu kullanabilir.
+Exchange Online posta kutularına sahip Microsoft 365 kuruluşlarında, kullanıcılar kötü amaçlı veya kötü amaçlı olmayan iletiler bildirdiğinde _postayı özel posta kutusuna (kullanıcı posta kutusu göndermesi_ olarak da bilinir) yönlendirebilirsiniz. Kullanıcılar desteklenen raporlama seçeneklerini kullanarak e-posta iletilerini raporladığında, yöneticiler kuruluşlarında kullanıcı tarafından bildirilen ileti ayarlarını, bildirilen iletileri kullanıcı gönderimleri posta kutusuna gönderecek şekilde yapılandırabilir. Kullanıcı tarafından bildirilen iletileri kesmek için kullanıcı gönderimleri posta kutusunu yapılandırabilir (yalnızca kullanıcı gönderimleri posta kutusuna gönder) veya kullanıcılar iletileri Microsoft'a bildirdikçe kullanıcı tarafından bildirilen iletilerin kopyalarını alabilirsiniz. Bu ayarlar daha önce _Kullanıcı gönderimleri ilkesi_ olarak biliniyordu.
 
-Bu özellik şu ileti raporlama seçenekleriyle çalışır:
+Kullanıcı tarafından bildirilen ileti ayarları ve kullanıcı gönderimleri posta kutusu aşağıdaki ileti raporlama seçenekleriyle çalışır:
 
 - [Rapor İletisi eklentisi](enable-the-report-message-add-in.md)
 - [Rapor Kimlik Avı eklentisi](enable-the-report-phish-add-in.md)
-- [Üçüncü taraf raporlama araçları](user-submission.md#third-party-email-reporting-tools)
+- [Üçüncü taraf raporlama araçları](#third-party-reporting-tools-options)
 
-Kullanıcı tarafından bildirilen iletilerin doğrudan Microsoft yerine özel bir posta kutusuna teslim edilmesi, yöneticilerin e-posta iletilerini [Yönetici gönderimi](admin-submission.md) kullanarak seçerek ve el ile Microsoft'a bildirmesine olanak tanır. *Bu ayarlar daha önce Kullanıcı gönderimleri ilkesi olarak biliniyordu*.
+Kullanıcı tarafından bildirilen iletilerin doğrudan Microsoft yerine posta kutusuna gönderilmesi, yöneticilerin ileti **göndermeleri** sayfasında iletileri seçerek ve el ile Microsoft'a <https://security.microsoft.com/reportsubmission>bildirmesine olanak tanır. Daha fazla bilgi için bkz. [Yönetici gönderimi](admin-submission.md).
 
   > [!NOTE]
-  > [raporlama Web üzerinde Outlook devre dışı bırakıldıysa](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), burada kullanıcı tarafından bildirilen iletilerin etkinleştirilmesi bu ayarı geçersiz kılar ve kullanıcıların iletileri Web üzerinde Outlook'de yeniden raporlamasına olanak tanır.
+  > [raporlama Web üzerinde Outlook devre dışı bırakıldıysa](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), burada kullanıcı tarafından bildirilen iletilerin etkinleştirilmesi bu ayarı geçersiz kılar ve kullanıcıların Web üzerinde Outlook'da iletileri yeniden raporlamasına izin verir.
 
-## <a name="custom-mailbox-prerequisites"></a>Özel posta kutusu önkoşulları
+## <a name="configuration-requirements-for-the-user-submissions-mailbox"></a>Kullanıcı gönderme posta kutusu için yapılandırma gereksinimleri
 
-Kullanıcı tarafından bildirilen e-posta iletilerinin özel posta kutunuza gitmesinin önkoşullarını yapılandırmak için aşağıdaki makaleleri kullanın:
+Başlamadan önce yu öğesinin Exchange Online Protection ve Office 365 için Defender yapılandırarak, kullanıcı tarafından bildirilen iletilerin aşağıdaki adımlarda açıklandığı gibi filtrelenmeden kullanıcı gönderimleri posta kutusuna teslim edilmesi gerekir:
 
-- [Özel posta kutusunu SecOps posta kutusu olarak tanımlayın](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
+- Kullanıcının posta kutusunu SecOps posta kutusu olarak göndermesini belirleyin. Yönergeler için bkz. [Gelişmiş teslim ilkesinde SecOps posta kutularını yapılandırmak için Microsoft 365 Defender portalını kullanma](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
-- Aşağıdaki ayarlarla özel posta kutusu için [kötü amaçlı yazılımdan koruma ilkesi oluşturun](configure-anti-malware-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies):
-  - Kötü amaçlı yazılım için sıfır saatlik otomatik temizleme (ZAP) kapalıdır (**Koruma ayarları** bölümü \> **Kötü amaçlı yazılım için sıfır saatlik otomatik temizlemeyi etkinleştir** seçeneği seçilmez).
-  - Ortak ek filtresi seçeneği kapalıdır (**Koruma ayarları** bölümü \> **Ortak ekler filtresini etkinleştir** seçili değildir).
+- Kullanıcının posta kutusunu göndermesi için aşağıdaki ayarlarla özel bir kötü amaçlı yazılımdan koruma ilkesi oluşturun:
 
-**Office 365 için Microsoft Defender varsa**, gelişmiş filtrelememizin bildirilen e-postaları etkilememesi için aşağıdaki ayarları da yapılandırmanız gerekir:
+  - Kötü amaçlı yazılım için sıfır saat otomatik temizlemeyi (ZAP) kapatın (**Koruma ayarları** bölümü \> **Kötü amaçlı yazılım için sıfır saat otomatik temizlemeyi etkinleştirme** seçili değil veya `-ZapEnabled $false` PowerShell'de).
 
-- Özel posta kutusunun [önceden ayarlanmış güvenlik ilkelerinin](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies) bir parçası olmadığından emin olun
+  - Sık kullanılan ekler filtrelemesini kapatın (**Koruma ayarları** bölümü \> **Ortak ekler filtresini etkinleştirme filtresi** seçili değil veya `EnableFileFilter $false` PowerShell'de).
+  
+  Yönergeler için bkz. [Kötü amaçlı yazılımdan koruma ilkesi oluşturma](configure-anti-malware-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies).
 
-- Güvenli Bağlantılar taramasının kapalı olduğu özel posta kutusu için [bir Güvenli Bağlantılar ilkesi oluşturun](set-up-safe-links-policies.md) (**İletilerde bilinmeyen kötü amaçlı olabilecek URL'ler için eylemi seçin** > **Kapalı**).
+- Kullanıcı gönderimleri posta kutusunun **Standart** veya **Katı** önceden ayarlanmış güvenlik ilkelerine dahil edilmediğini doğrulayın. Yönergeler için bkz. [Önceden ayarlanmış güvenlik ilkeleri](preset-security-policies.md).
 
-- Dinamik Teslim de dahil olmak üzere Güvenli Ekler taramasının kapalı olduğu özel posta kutusu için [güvenli ekler ilkesi oluşturun](set-up-safe-attachments-policies.md) (**Güvenli Ekler bilinmeyen kötü amaçlı yazılım yanıtı** bölümü > **Kapalı**).
+- **Office 365 için Defender**: Aşağıdaki ek ayarları yapılandırın:
 
-Posta kutunuzun önkoşulları karşıladığını doğruladıktan sonra, kullanıcı gönderimleri posta kutusunu yapılandırmak için bu makalenin geri kalanını kullanabilirsiniz.
+  - Kullanıcı gönderimleri posta kutusunu **Yerleşik koruma** önayarlı güvenlik ilkesinden hariç tutun. Yönergeler için bkz. [Önceden ayarlanmış güvenlik ilkeleri](preset-security-policies.md).
+
+  - Dinamik Teslim de dahil olmak üzere Güvenli Ekler taramasının kapalı olduğu kullanıcı gönderimleri posta kutusu için Güvenli Ekler ilkesi oluşturun (**Ayarlar** \> **Güvenli Ekler bilinmeyen kötü amaçlı yazılım yanıtı** bölümü \> **Kapalı** veya `-Enable $false` PowerShell'de). Yönergeler için bkz. [Office 365 için Microsoft Defender'da Güvenli Ekler ilkelerini ayarlama](set-up-safe-attachments-policies.md).
+
+  - E-postada Güvenli Bağlantılar taramasının kapalı olduğu kullanıcı gönderimleri posta kutusu için bir Güvenli Bağlantılar ilkesi oluşturun (**URL & koruma ayarlarıNa** \> tıklayın **Açık: Güvenli Bağlantılar, kullanıcılar e-postadaki veya PowerShell'deki bağlantıları tıklattığında bilinen, kötü amaçlı bağlantıların listesini denetler**).`EnableSafeLinksForEmail $false` Yönergeler için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).
+
+Posta kutusunun bu gereksinimleri karşıladığını doğruladıktan sonra, kullanıcı gönderileri posta kutusunu ve diğer kullanıcı tarafından bildirilen ileti ayarlarını belirlemek için bu makaledeki yönergelerin geri kalanını kullanın.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
 - Microsoft 365 Defender portalını adresinde <https://security.microsoft.com>açarsınız. Doğrudan **Kullanıcı gönderimleri** sayfasına gitmek için kullanın <https://security.microsoft.com/userSubmissionsReportMessage>.
+
+- Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Kullanıcı gönderimleri yapılandırmasını değiştirmek için aşağıdaki rol gruplarından birinin üyesi olmanız gerekir:
 
@@ -84,78 +92,121 @@ Posta kutunuzun önkoşulları karşıladığını doğruladıktan sonra, kullan
   - [Exchange Online PowerShell'e erişimi etkinleştirme veya devre dışı bırakma](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Exchange Online'da İstemci Erişim Kuralları](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox-for-emails"></a>E-postalar için kullanıcı gönderimleri posta kutusunu yapılandırmak için Microsoft 365 Defender portalını kullanın
+## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox-for-email"></a>E-posta için kullanıcı gönderimleri posta kutusunu yapılandırmak için Microsoft 365 Defender portalını kullanın
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, İlkeler & kuralları** > **Tehdit ilkeleri** >  **Diğerleri** bölümünde **Kullanıcı tarafından bildirilen ileti ayarları'na** gidin. Doğrudan **Kullanıcı gönderimleri** sayfasına gitmek için kullanın <https://security.microsoft.com/userSubmissionsReportMessage>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, İlkeler & kuralları** \> **Tehdit ilkeleri** \> **Diğerleri** bölümünde **Kullanıcı tarafından bildirilen ileti ayarları'na** gidin. Doğrudan **Kullanıcı gönderimleri** sayfasına gitmek için kullanın <https://security.microsoft.com/userSubmissionsReportMessage>.
 
-2. **Kullanıcı gönderimleri** sayfasında, gördükleriniz **Microsoft Outlook Rapor İletisi düğme** ayarının **Kapalı** mı yoksa **Açık** mı olduğuna göre belirlenir:
+2. **Kullanıcı gönderimleri** sayfasında, gördükleriniz büyük ölçüde **Microsoft Outlook Rapor İletisi düğmesi** iki durumlu düğmesi tarafından belirlenir:
 
-   - **Microsoft Outlook Rapor İletisi düğmesi** >  **-Inı** ![ Açık.](../../media/scc-toggle-on.png): Web üzerinde Outlook Rapor İletisi eklentisini, Rapor Kimlik Avı eklentisini veya yerleşik raporlamayı kullanıyorsanız bu seçeneği belirleyin ve ardından aşağıdaki ayarları yapılandırın:
-     - **Bildirilen iletileri gönder**: Aşağıdaki seçeneklerden birini belirleyin:
-       - **Microsoft**: Kullanıcı gönderileri posta kutusu kullanılmaz (bildirilen tüm iletiler Microsoft'a gider).
-       - **Microsoft ve kuruluşumun posta kutusu**: Görüntülenen kutuya mevcut bir Exchange Online posta kutusunun e-posta adresini girin. Dağıtım gruplarına izin verilmez. Kullanıcı gönderimleri analiz için hem Microsoft'a hem de yöneticinizin veya güvenlik operasyonları ekibinizin analiz edeceği özel posta kutusuna gider.
-       - **Kuruluşumun posta kutusu**: Görüntülenen kutuya var olan bir Exchange Online posta kutusunun e-posta adresini girin. Dağıtım gruplarına izin verilmez. İletinin önce analiz için yalnızca bir yöneticiye veya güvenlik operasyonları ekibine gitmesini istiyorsanız bu seçeneği kullanın. Yönetici kendi iletmediği sürece iletiler Microsoft'a gitmez.
+   - **Üzerinde** ![ Açık.](../../media/scc-toggle-on.png): Rapor İletisi eklentisini, Rapor Kimlik Avı eklentisini veya Web üzerinde Outlook'deki yerleşik raporlamayı içeren Microsoft tümleşik raporlama deneyimini kullanırsınız.
 
-          > [!IMPORTANT]
-          > ABD Kamu kuruluşları (GCC, GCC High ve DoD) yalnızca **Kuruluşumun posta kutusunu** yapılandırabilir. Diğer iki seçenek devre dışı bırakılır.
-          >
-          > Kuruluşlar, kullanıcı tarafından bildirilen iletileri yalnızca özel posta kutusuna gönderecek şekilde yapılandırılmışsa, bildirilen iletiler **Kullanıcı tarafından bildirilen iletiler'de** görünür ancak sonuçları her zaman boş olur (çünkü bunlar yeniden taramazlardı).
-          >
-          > [Saldırı simülasyonu eğitimini](attack-simulation-training-get-started.md) veya üçüncü taraf bir ürünü kullanarak kimlik avı simülasyonları yapıyorsanız[, bu posta kutusunu SecOps posta kutusu olarak yapılandırmanız](configure-advanced-delivery.md) gerekir. Bunu yapmazsanız, raporlama iletileri kimlik avı simülasyonu ürününde eğitim atamalarını tetikleyebilir.
+     Bu ayar, kullanıcıların karantina portalından hatalı pozitif iletiler bildirmesine de olanak tanır.
 
-       **Bildirilen iletileri gönderme** için seçtiğiniz değerden bağımsız olarak aşağıdaki ayarlar kullanılabilir:
+   - **Kapalı** ![ Geçiş yapın.](../../media/scc-toggle-off.png): Microsoft tümleşik raporlama deneyimi yerine üçüncü taraf ileti raporlama araçlarını kullanırsınız.
 
-       - **Kullanıcıların, iletilerini Microsoft'a bildirmek isteyip istemediklerini seçmesine izin verme**
-       - **Kullanıcılar tarafından kullanılabilen raporlama seçeneklerini belirleme** bölümü: Aşağıdaki seçenekler arasından en az birini seçin:
-         - **İletiyi göndermeden önce sor**
-         - **İletiyi her zaman bildir**
-         - **İletiyi hiçbir zaman bildirmeyin**
+İlgili yapılandırma seçenekleri aşağıdaki bölümlerde açıklanmıştır.
 
-          > [!CAUTION]
-          > Web üzerinde Outlook posta kutusu ilkelerini kullanarak [Web üzerinde Outlook'de gereksiz e-posta raporlamayı devre dışı bırakmış](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) ancak iletileri Microsoft'a bildirmek için önceki ayarlardan herhangi birini yapılandırdıysanız, kullanıcılar iletileri Web üzerinde Outlook  Rapor İletisi eklentisini veya Rapor Kimlik Avı eklentisini kullanarak.
+### <a name="microsoft-integrated-reporting-experience-options"></a>Microsoft tümleşik raporlama deneyimi seçenekleri
 
-     Son kullanıcıların karantina portalından hatalı pozitif iletiler bildirmesine izin vermek için **Microsoft Outlook Rapor İletisi düğme** ayarını ![](../../media/scc-toggle-on.png) **Açık** bırakın.
+**Microsoft Outlook Rapor İletisi düğmesi**  ![Açık Durumdayken,](../../media/scc-toggle-on.png) **Kullanıcı gönderimleri** sayfasında aşağıdaki ayarlar kullanılabilir:
 
-     - **Kullanıcı raporlama deneyimi bölümü**
-       - **Raporlamadan önce** sekmesi: **Başlık** ve **İleti gövdesi** kutularına, rapor iletisi eklentisini veya Rapor Kimlik Avı eklentisini kullanarak bir iletiyi bildirmeden önce kullanıcıların gördüğü açıklayıcı metni girin. Gönderme türünü (gereksiz, gereksiz değil, kimlik avı vb.) dahil etmek için %type% değişkenini kullanabilirsiniz.
-       - **Raporlamadan sonra** sekmesi: **Başlık** ve **Onay ileti** kutularına, kullanıcıların Rapor İletisi eklentisini veya Rapor Kimlik Avı eklentisini kullanarak bir iletiyi bildirdikten sonra görecekleri açıklayıcı metni girin. Gönderim türünü eklemek için %type% değişkenini kullanabilirsiniz.
-       - **Yalnızca kullanıcı kimlik avı bildirdiğinde görüntüle**: İletiyi yalnızca bir e-posta kimlik avı olarak bildirildiğinde görüntülemek istiyorsanız bu seçeneği işaretleyin. Aksi takdirde, herhangi bir rapor türü için denetlenen iletiler gösterilir.
+- **Bildirilen iletileri bölümüne gönderme** : Aşağıdaki seçeneklerden birini belirleyin:
 
-       Sayfada gösterildiği gibi, bildirilen iletileri Microsoft'a gönderen bir seçenek seçerseniz bildirime aşağıdaki metin de eklenir:
+  - **Microsoft**: Kullanıcı raporları analiz için doğrudan Microsoft'a gider. Microsoft 365 Güvenlik Merkezi aracılığıyla kiracı yöneticisine yalnızca gönderen, alıcı, raporlayan ve kullanıcı raporlarından ileti ayrıntıları gibi meta veriler sağlanır.
 
-          > E-postanız analiz için Olduğu gibi Microsoft'a gönderilir. Bazı e-postalar kişisel veya hassas bilgiler içerebilir.
+  - **Microsoft ve kuruluşumun posta kutusu**: Görüntülenen kutuya, kullanıcı posta kutusunu gönderdiğinde kullanılacak mevcut bir Exchange Online posta kutusunun e-posta adresini girin. Dağıtım gruplarına izin verilmez. Kullanıcı gönderimleri analiz için Microsoft'a ve bir yöneticinin veya güvenlik operasyonları ekibinin analiz etmek üzere kullanıcı gönderimleri posta kutusuna gider.
 
-   - **Microsoft Outlook Rapor İletisi düğmesi** >  **Kapalı** ![ Kapalı konuma getirin.](../../media/scc-toggle-off.png): Rapor İletisi eklentisi, Rapor Kimlik Avı eklentisi veya Web üzerinde Outlook yerleşik raporlama yerine üçüncü taraf raporlama araçlarını kullanıyorsanız bu seçeneği belirleyin ve ardından aşağıdaki ayarları yapılandırın:
-     - **Kullanıcı tarafından bildirilen gönderimleri almak için Bu özel posta kutusunu kullan'ı** seçin. Görüntülenen kutuya, e-posta alabilen mevcut bir Exchange Online posta kutusunun e-posta adresini girin.
+  - **Kuruluşumun posta kutusu**: Görüntülenen kutuya var olan bir Exchange Online posta kutusunun e-posta adresini girin. Dağıtım gruplarına izin verilmez. Kullanıcı gönderimleri yalnızca bir yöneticinin veya güvenlik operasyonları ekibinin analiz etmek için kullanıcı gönderimleri posta kutusuna gider. Bir yönetici iletileri el ile göndermediği sürece iletiler analiz için Microsoft'a gitmez.
 
-   - **Rapor iletisini karantinaya al düğmesi**: Son kullanıcıların karantinadan gelen iletileri bildirmesine izin vermek istiyorsanız bu özelliği etkinleştirin.
+  > [!IMPORTANT]
+  > ABD Kamu kuruluşları (GCC, GCC High ve DoD) kuruluşlarında, **Bildirilen iletileri gönder** bölümünde sağlanan tek seçim **Kuruluşum'un posta kutusudur**. Diğer iki seçenek gri görünür.
+  >
+  > Web üzerinde Outlook'da gereksiz e-posta raporlamayı devre dışı bırakmak için Web üzerinde Outlook posta [kutusu ilkeleri](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties) kullandıysanız ancak **Microsoft'u** veya **Microsoft'u ve kuruluşumun posta kutusunu** seçerseniz, kullanıcılar Web üzerinde Outlook  Rapor İletisi eklentisini veya Rapor Kimlik Avı eklentisini kullanarak.
+  >
+  > **Kuruluşum'un posta kutusunu** seçerseniz, bildirilen iletiler konumundaki **Gönderimler** sayfasındaki <https://security.microsoft.com/reportsubmission>**Kullanıcı tarafından bildirilen iletiler** sekmesinde görünür. Ancak iletiler yeniden taranmadığı için bu iletilerin **Sonuç** değeri her zaman boş olacaktır.
+  >
+  > [Kimlik avı simülasyonları yapmak için Saldırı simülasyonu eğitimi](attack-simulation-training-get-started.md) veya üçüncü taraf bir ürün kullanıyorsanız, bu makalenin önceki bölümlerinde kullanıcı gönderimleri posta kutusu yapılandırma gereksinimleri bölümünde daha önce açıklandığı gibi [kullanıcı gönderimleri posta kutusunu SecOps posta kutusu](#configuration-requirements-for-the-user-submissions-mailbox) olarak yapılandırmanız gerekir. Bunu yapmazsanız, ileti bildiren bir kullanıcı kimlik avı simülasyonu ürününde eğitim atamasını tetikleyebilir.
 
-3. İşiniz bittiğinde **Onayla'ya** tıklayın. Bu değerleri temizlemek için **Geri Yükle'ye** tıklayın.
+  Seçiminizden bağımsız olarak, **bildirilen iletileri gönder** bölümünde aşağıdaki ayarlar da kullanılabilir:
 
-## <a name="third-party-email-reporting-tools"></a>Üçüncü taraf e-posta raporlama araçları
+  - **Kullanıcıların raporlamak isteyip istemediklerini seçmesine izin ver**: Bu ayar, **Kullanıcıların kullanabileceği raporlama seçeneklerini seçin bölümünde bulunan seçenekleri** denetler:
 
-Bildirilen iletileri özel posta kutusuna göndermek için üçüncü taraf ileti raporlama araçlarını yapılandırabilirsiniz. Bunu yapmak için **Microsoft Outlook Rapor İletisi düğmesi** ayarını **Kapalı** ve **Kuruluşum'un posta kutusunu** istediğiniz Office 365 posta kutusuna ayarlarsınız.
+    - **Kullanıcıların, rapor vermek isteyip istemediklerini seçmesine izin verin** : **Kullanıcıların kullanabileceği raporlama seçeneklerini seçin bölümünde ayarların** bazılarını, tümünü veya hiçbirini seçebilirsiniz.
+    - **Kullanıcıların rapor seçmek isteyip istemediklerini seçmesine izin verin** : **Kullanıcılar için kullanılabilir raporlama seçeneklerini belirleyin** bölümünde yalnızca bir ayar seçebilirsiniz.
 
-Tek gereksinim, özgün iletinin olarak eklenmesidir. EML veya . Özel posta kutusuna gönderilen iletideki MSG eki (sıkıştırılmaz) (özgün iletiyi özel posta kutusuna iletmeyin).
+    - **Kullanıcılar tarafından kullanılabilen raporlama seçeneklerini** belirleyin bölümü:
+      - **İletiyi göndermeden önce sor**
+      - **İletiyi her zaman bildir**
+      - **İletiyi hiçbir zaman bildirmeyin**
 
- > [!NOTE]
- > E-postada birden çok e-posta eki varsa gönderim atılır. Yalnızca bir e-posta eki olan e-postaları destekliyoruz.
+- **Kullanıcı raporlama deneyimi** bölümü: Aşağıdaki ayarlar kullanılabilir:
 
-İleti biçimlendirme gereksinimleri sonraki bölümde açıklanmıştır. Biçimlendirme isteğe bağlıdır, ancak belirtilen biçime uymuyorsa raporlar her zaman kimlik avı olarak gönderilir.
+  Sayfada gösterildiği gibi, bildirilen iletileri Microsoft'a gönderen bir seçenek seçerseniz bildirime aşağıdaki metin de eklenir:
 
-## <a name="message-submission-format"></a>İleti gönderme biçimi
+  > E-postanız analiz için Olduğu gibi Microsoft'a gönderilir. Bazı e-postalar kişisel veya hassas bilgiler içerebilir.
 
-Özgün ekli iletileri doğru şekilde tanımlamak için özel posta kutusuna gönderilen iletiler belirli bir biçimlendirme gerektirir. İletiler bu biçimi kullanmıyorsa, özgün eklenen iletiler her zaman kimlik avı gönderimleri olarak tanımlanır.
+  - **Raporlamadan önce** sekmesi: **Başlık** ve **İleti gövdesi** kutularına, rapor iletisi eklentisini veya Rapor Kimlik Avı eklentisini kullanarak bir iletiyi bildirmeden önce kullanıcıların gördüğü açıklayıcı metni girin. Gönderi türünü (gereksiz, gereksiz değil, kimlik avı vb.) dahil etmek için değişkenini `%type%` kullanabilirsiniz.
+  - **Raporlamadan sonra** sekmesi: **Başlık** ve **Onay ileti** kutularına, kullanıcıların Rapor İletisi eklentisini veya Rapor Kimlik Avı eklentisini kullanarak bir iletiyi bildirdikten sonra görecekleri açıklayıcı metni girin. Gönderim türünü eklemek için değişkenini `%type%` kullanabilirsiniz.
 
-Özgün ekli iletilerin bildirilen nedenini belirtmek istiyorsanız, özel posta kutusuna gönderilen iletilerin (eki değiştirmeyin) Konu (Zarf Başlığı) içindeki aşağıdaki ön eklerden biriyle başlaması gerekir:
+  - **Yalnızca kullanıcı kimlik avı bildirdiğinde görüntüle**: **Raporlamadan önce** ve **Raporlamadan sonra** bildirimlerini yalnızca kullanıcılar iletileri kimlik avı olarak bildirdiğinde görüntülemek için bu seçeneği belirleyin. Aksi takdirde, bildirilen tüm iletiler için bildirimler gösterilir.
 
-- 1| veya Gereksiz:
-- 2| veya Gereksiz değil:
-- 3| veya Kimlik Avı:
+- **Yönetici gözden geçirme sonuçları bölümü için Email bildirimleri**: Aşağıdaki ayarlar kullanılabilir:
 
-Örneğin:
+  - **Gönderen olarak kullanılacak Office 365 e-posta adresini belirtin**: Bu ayarı seçin ve görüntülenen kutuya e-posta adresini girin.
+  
+  - **Bildirimleri özelleştirme**: Yönetici tarafından incelenip bildirilen iletileri işaretledikten sonra gönderilen e-posta bildirimini özelleştirmek için bu bağlantıya tıklayın.
 
-`3|This part is ignored by the system` <br>
-`Not Junk:This part of the subject is ignored as well`
+    Görüntülenen **Onay iletisini özelleştir** açılır penceresinde aşağıdaki ayarları yapılandırın:
 
-Bu biçimi izlemeyen iletiler Gönderimler portalında düzgün görüntülenmez.
+    - **Kimlik avı**, **Gereksiz** ve **Tehdit bulunamadı sekmeleri** : Sekmelerden bazılarının, hiçbirinin veya tümünün **Gözden geçirme sonucu metninde** , kullanılacak özel metni girin.
+    - **Alt Bilgi** sekmesi: Aşağıdaki seçenekler kullanılabilir:
+      - **Alt bilgi metni**: Kullanılacak özel ileti alt bilgisi metnini girin.
+      - **Şirket logosunu görüntüle**: Bu seçeneği belirlemeden önce, özel logonuzu karşıya yüklemek [için Microsoft 365 temasını kuruluşunuz için özelleştirme](../../admin/setup/customize-your-organization-theme.md) başlığı altındaki yönergeleri izlemeniz gerekir.
+
+  **Onayı özelleştir iletisi** açılır öğesinde işiniz bittiğinde **Onayla'ya** tıklayın.
+
+- **Karantinadaki olası tehditleri bildirirken kuruluşunuzun deneyimini özelleştirin** bölümü:
+
+  **Rapor iletisini karantinaya al düğmesi**: Bu ayarın **Açık** ![İki Durumlu Düğme'nin açık olduğunu doğrulayın.](../../media/scc-toggle-on.png) kullanıcıların karantinadan gelen iletileri bildirmesine izin vermek için. Aksi takdirde, bu ayarı **Kapat** ![İki durumlu düğmeyi kapat..](../../media/scc-toggle-off.png).
+
+**Kullanıcı gönderimleri** sayfasında işiniz bittiğinde **Kaydet'e** tıklayın. Ayarları hemen önceki değerlerine geri yüklemek için **Geri Yükle'ye** tıklayın.
+
+### <a name="third-party-reporting-tools-options"></a>Üçüncü taraf raporlama araçları seçenekleri
+
+Bildirilen iletileri kullanıcı gönderimleri posta kutusuna göndermek için üçüncü taraf ileti raporlama araçlarını kullanmak için Microsoft tümleşik raporlama deneyimini kapatabilirsiniz.
+
+Tek gereksinim, özgün iletilerin sıkıştırılmamış olarak eklenmesidir. EML veya . Kullanıcı gönderimleri posta kutusuna gönderilen iletilerdeki MSG ekleri. Başka bir deyişle, özgün iletileri yalnızca kullanıcı gönderimleri posta kutusuna iletmeyin.
+
+> [!NOTE]
+> İletide birden çok e-posta eki varsa gönderim atılır. İletiyi yalnızca bir e-posta eki ile destekleriz.
+
+İleti biçimlendirme gereksinimleri sonraki bölümde açıklanmıştır. Biçimlendirme isteğe bağlıdır, ancak bildirilen iletiler belirtilen biçime uymaz, bildirilen iletiler her zaman kimlik avı olarak tanımlanır.
+
+**Microsoft Outlook Rapor İletisi düğmesi** **KapalıYken** ![Geçiş Düğmesi kapalıdır.](../../media/scc-toggle-off.png) Kullanıcı **gönderimleri** sayfasında aşağıdaki ayarlar kullanılabilir:
+
+- **Microsoft ve kuruluşumun posta kutusu**: Görüntülenen kutuya, kullanıcı posta kutusunu gönderdiğinde kullanılacak mevcut bir Exchange Online posta kutusunun e-posta adresini girin. Dağıtım gruplarına izin verilmez.
+
+- **Karantinadaki olası tehditleri bildirirken kuruluşunuzun deneyimini özelleştirin** bölümü:
+
+  **Rapor iletisini karantinaya al düğmesi**: Bu ayarın **Açık** ![İki Durumlu Düğme'nin açık olduğunu doğrulayın.](../../media/scc-toggle-on.png) kullanıcıların karantinadan gelen iletileri bildirmesine izin vermek için. Aksi takdirde, bu ayarı **Kapat** ![İki durumlu düğmeyi kapat..](../../media/scc-toggle-off.png).
+
+**Kullanıcı gönderimleri** sayfasında işiniz bittiğinde **Kaydet'e** tıklayın. Ayarları hemen önceki değerlerine geri yüklemek için **Geri Yükle'ye** tıklayın.
+
+#### <a name="message-submission-format"></a>İleti gönderme biçimi
+
+Özgün ekli iletileri doğru şekilde tanımlamak için özel posta kutusuna gönderilen iletiler belirli bir biçimlendirme gerektirir. İletiler bu biçimi kullanmıyorsa, özgün eklenen iletiler her zaman kimlik avı olarak tanımlanır.
+
+Özgün eklenen iletilerin bildirilme nedenini belirtmek için, kullanıcı gönderimleri posta kutusuna gönderilen iletilerin aşağıdaki ölçütlere uyması gerekir:
+
+- Özgün ileti eki değiştirilmedi.
+- Kullanıcı gönderimleri posta kutusuna gönderilen iletilerin Konu satırı (Zarf Başlığı) aşağıdaki ön ek değerlerinden biriyle başlamalıdır:
+  - `1|`veya .`Junk:`
+  - `2|`veya .`Not junk:`
+  - `3|`veya .`Phishing:`
+
+  Örneğin:
+
+  - `3|This text in the Subject line is ignored by the system`
+  - `Not Junk:This text in the Subject line is also ignored by the system`
+
+  Bu biçimi izlemeyen iletiler, konumundaki <https://security.microsoft.com/reportsubmission>**Gönderimler** sayfasında düzgün görüntülenmez.

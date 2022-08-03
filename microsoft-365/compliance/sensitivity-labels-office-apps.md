@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3161a26a8b22304e9343e9e16a1dd1e313d47df9
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: e34679c994ce75b95b5582290d2ed7c4ca726ac3
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66970110"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175322"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -59,12 +59,12 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 > [!NOTE]
 > Windows ve Semi-Annual Enterprise Channel için desteklenen en düşük sürüm numaraları henüz yayımlanmamış olabilir. [Daha fazla bilgi edinin](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
  
-|Yeteneği |Windows |Mac |iOS |Android |Web |
+|Yetenek |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
 |[Etiketi el ile uygulama, değiştirme veya kaldırma](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Çok dilli destek](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | İnceleme altında |
 |Yeni belgelere [varsayılan etiket uygulama](sensitivity-labels.md#what-label-policies-can-do)                                         | Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|Mevcut belgelere [varsayılan etiket uygulama](sensitivity-labels.md#what-label-policies-can-do) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım | Önizleme: [Geçerli Kanala Dağıtım (Önizleme)](https://office.com/insider) | İnceleme altında | İnceleme altında | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
+|Mevcut belgelere [varsayılan etiket uygulama](sensitivity-labels.md#what-label-policies-can-do) | Önizleme: [Geçerli Kanala Dağıtılıyor (Önizleme)](https://office.com/insider)) | Önizleme: [Geçerli Kanala Dağıtım (Önizleme)](https://office.com/insider) | İnceleme altında | İnceleme altında | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Etiketi değiştirmek için gerekçe gerektir](sensitivity-labels.md#what-label-policies-can-do)                     | Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+  <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Özel yardım sayfasına yardım bağlantısı sağlama](sensitivity-labels.md#what-label-policies-can-do)                       | Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[İçeriği işaretleme](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -87,7 +87,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 > [!NOTE]
 > Windows ve Semi-Annual Enterprise Channel için desteklenen en düşük sürüm numaraları henüz yayımlanmamış olabilir. [Daha fazla bilgi edinin](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
 
-|Yeteneği |Windows için Outlook |Mac için Outlook |iOS üzerinde Outlook |Android üzerinde Outlook |Web üzerinde Outlook |
+|Yetenek |Windows için Outlook |Mac için Outlook |iOS üzerinde Outlook |Android üzerinde Outlook |Web üzerinde Outlook |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
 |[Etiketi el ile uygulama, değiştirme veya kaldırma](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Evet               |
 |[Çok dilli destek](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+ | 4.7.1+ | 4.0.39+ | Evet |
@@ -140,7 +140,7 @@ Bu ayar Windows Office uygulamalarına özgü olduğundan, Windows'ta duyarlıl�
 
 ## <a name="office-file-types-supported"></a>Desteklenen Office dosya türleri
 
-Word, Excel ve PowerPoint dosyaları için yerleşik etiketlemeye sahip Office uygulamaları, Açık XML biçimini (.docx ve .xlsx gibi) destekler ancak Microsoft Office 97-2003 biçimini (.doc ve .xls gibi), Açık Belge Biçimi'ni (.odt ve .ods gibi) veya diğer biçimleri desteklemez. Yerleşik etiketleme için bir dosya türü desteklenmediğinde, **Duyarlılık** düğmesi Office uygulamasında kullanılamaz.
+Word, Excel ve PowerPoint dosyaları için yerleşik etiketlemeye sahip Office uygulamaları, Microsoft Office 97-2003 biçimini (.doc ve .xls gibi), Açık Belge Biçimi'ni (.odt ve .ods gibi) veya diğer biçimleri desteklemeden Open XML biçimini (.docx ve .xlsx gibi) destekler. Yerleşik etiketleme için bir dosya türü desteklenmediğinde, **Duyarlılık** düğmesi Office uygulamasında kullanılamaz.
 
 Azure Information Protection birleşik etiketleme istemcisi hem Open XML biçimini hem de Microsoft Office 97-2003 biçimini destekler. Daha fazla bilgi için, bu [istemcinin yönetici kılavuzundaki Azure Information Protection birleşik etiketleme istemcisi tarafından desteklenen dosya türleri](/azure/information-protection/rms-client/clientv2-admin-guide-file-types) bölümüne bakın.
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f5b4cfc38f702bf7ea5affdae13f2215c044fc89
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 93013d8b51eb16290de3b80d3c27ea0e3f07e21c
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486717"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174904"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Android'de Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -29,7 +29,13 @@ ms.locfileid: "66486717"
 - [Uç Nokta için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+>[!NOTE]
+> Uç Nokta için Microsoft Defender'ın **Kötü amaçlı yazılımdan koruma altyapısı** genel kullanıma sunuldu. Tüm kullanıcıların bu yeni kötü amaçlı yazılımdan koruma özelliğini kullanabilmesi için **1.0.3815.0000'in** üzerinde bir Uç Nokta için Microsoft Defender sürümüne sahip olması gerekir. 1.0.3815.0000'in altındaki Uç Nokta için Microsoft Defender sürümdeki kullanıcılara, Uç Nokta için Microsoft Defender uygulamalarını güncelleştirmek için bildirimler ve uygulama içi katman iletileri gönderilir. Kullanıcılar, katman iletisinde sağlanan bağlantıya tıklayarak yönetilen play store'a gidebilir ve uygulamayı güncelleştirebilir. 
+>
+> Kullanıcılar play store'a erişemiyorsa uygulama şirket portalı üzerinden güncelleştirilebilir. 
+
 
 ## <a name="microsoft-defender-on-android-enterprise-byod-personal-profile"></a>Android kurumsal KCG kişisel profilinde Microsoft Defender
 Uç Nokta için Microsoft Defender artık Android Kurumsal kişisel profilinde (yalnızca KCG) kötü amaçlı yazılım taraması, kimlik avı bağlantılarından koruma, ağ koruması ve güvenlik açığı yönetimi gibi tüm temel özelliklerle desteklenmektedir. Bu destek, kişisel profilde kullanıcı gizliliğini sağlamak için [gizlilik denetimleriyle](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) birleştirilir. Daha fazla bilgi için [duyuruyu](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979) ve [dağıtım kılavuzunu](/microsoft-365/security/defender-endpoint/android-intune#set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode) okuyun.

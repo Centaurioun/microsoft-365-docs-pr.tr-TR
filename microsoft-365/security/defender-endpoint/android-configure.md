@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 231bd79e0c825b38d44ca45c078cbe4d7aa432c0
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 596ed2681df34ef288fadd4f28f96b1a8aebee73
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100151"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175564"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Android özelliklerinde Uç Nokta için Defender’ı yapılandırın
 
@@ -91,9 +91,6 @@ Uç nokta için Microsoft Defender'da ağ koruması varsayılan olarak etkindir.
 
 ## <a name="privacy-controls"></a>Gizlilik Denetimleri
 
-> [!IMPORTANT]
-> Android'de Uç Nokta için Microsoft Defender için Gizlilik Denetimleri önizleme aşamasındadır. Aşağıdaki bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
-
 Android cihazlardan Uç Nokta için Defender tarafından gönderilen verileri yapılandırmak için aşağıdaki gizlilik denetimleri kullanılabilir:
 
 |Tehdit Raporu     |Ayrıntılar      |
@@ -102,6 +99,42 @@ Android cihazlardan Uç Nokta için Defender tarafından gönderilen verileri ya
 |Kimlik avı raporu |Yöneticiler kimlik avı raporu için gizlilik denetimi ayarlayabilir - Gizlilik etkinleştirilirse, Uç Nokta için Defender, kimlik avı uyarısı raporunun bir parçası olarak güvenli olmayan web sitesinin etki alanı adını ve ayrıntılarını göndermez |
 |Uygulamaların güvenlik açığı değerlendirmesi (yalnızca Android) |Varsayılan olarak yalnızca iş profilinde yüklü uygulamalar hakkında bilgiler güvenlik açığı değerlendirmesi için gönderilir. Yöneticiler kişisel uygulamaları dahil etmek için gizliliği devre dışı bırakabilir|
 |Ağ Koruması (önizleme)| Yöneticiler ağ korumasında gizliliği etkinleştirebilir veya devre dışı bırakabilir - Etkinleştirilirse, Defender ağ ayrıntılarını göndermez.|
+
+### <a name="configure-privacy-alert-report"></a>Gizlilik uyarısı raporunu yapılandırma
+Yöneticiler artık android'de Uç Nokta için Microsoft Defender tarafından gönderilen kimlik avı raporu, kötü amaçlı yazılım raporu ve ağ raporu için gizlilik denetimini etkinleştirebilir. Bu, ilgili tehdit algılandığında sırasıyla etki alanı adının, uygulama ayrıntılarının ve ağ ayrıntılarının uyarının bir parçası olarak gönderilmemesini sağlar.
+
+gizlilik denetimlerini (MDM) Yönetici Gizliliği etkinleştirmek için aşağıdaki adımları kullanın.
+
+1. Microsoft Endpoint Manager yönetim merkezinde **Uygulamalar > Uygulama yapılandırma ilkeleri > yönetilen > cihaz ekle'ye** gidin.
+
+2. İlkeye **bir ad verin( Platform > Android kurumsal), profil türünü seçin**.
+
+3. Hedef uygulama olarak **Uç Nokta için Microsoft Defender'ı** seçin.
+
+4. Ayarlar sayfasında **Yapılandırma tasarımcılarını kullan'ı** seçin ve **Ekle'ye** tıklayın. 
+5. Gerekli gizlilik ayarını seçin -
+    - Rapordaki URL'leri gizleme
+    - Kişisel profil için rapordaki URL'leri gizleme
+    - Rapordaki uygulama ayrıntılarını gizleme
+    - Kişisel profil için rapordaki uygulama ayrıntılarını gizleme
+    - Ağ Koruması Gizliliğini Etkinleştirme
+
+6. Gizliliği etkinleştirmek için tamsayı değerini 1 olarak girin ve bu ilkeyi kullanıcılara atayın. Varsayılan olarak, bu değer iş profilinde MDE için 0, kişisel profilde MDE için 1 olarak ayarlanır.
+
+7. Bu profili gözden geçirin ve hedeflenen cihazlara/kullanıcılara atayın.
+
+**Son kullanıcı gizlilik denetimleri**
+
+Bu denetimler, son kullanıcının kendi kuruluşuyla paylaşılan bilgileri yapılandırmasına yardımcı olur.
+
+1. **Android Kurumsal iş profili** için son kullanıcı denetimleri görünmez. Yöneticiler bu ayarları denetler.
+2. **Android Kurumsal kişisel profili** için denetim **Ayarlar> Gizlilik** altında görüntülenir.
+3. Kullanıcılar Güvenli Olmayan Site Bilgileri, kötü amaçlı uygulama ve ağ koruması için bir geçiş düğmesi görür.
+
+Bu geçişler yalnızca yönetici tarafından etkinleştirildiğinde görünür. Kullanıcılar bilgileri kendi kuruluşlarına göndermek isteyip istemediklerine karar verebilir.
+
+Yukarıdaki gizlilik denetimlerinin etkinleştirilmesi/devre dışı bırakılması, cihaz uyumluluk denetimini veya koşullu erişimi etkilemez.
+
 
 ## <a name="configure-vulnerability-assessment-of-apps-for-byod-devices"></a>KCG cihazları için uygulamaların güvenlik açığı değerlendirmesini yapılandırma
 

@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: GCC High ortamlarında Microsoft Whiteboard için paylaşımı yönetmeyi öğrenin.
-ms.openlocfilehash: 0cd4dc8e4bf39cfbaab79a0140bac544de9e9015
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b6efeac47cec8de02487bf4526891b52c9098079
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943386"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175344"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-high-environments"></a>GCC High ortamlarında Microsoft Whiteboard için paylaşımı yönetme
 
@@ -28,7 +28,9 @@ Paylaşım deneyimi, kullanılan cihaz ve istemciye göre farklılık gösterir.
 
 ## <a name="share-in-teams-meetings"></a>Teams toplantılarında paylaşma
 
-Teams toplantısında beyaz tahta paylaştığınızda Whiteboard, kuruluştaki herkes tarafından erişilebilen bir paylaşım bağlantısı oluşturur. Ardından beyaz tahtayı toplantıdaki kiracı içi kullanıcılarla otomatik olarak paylaşır.
+Teams toplantısında beyaz tahta paylaştığınızda Whiteboard, kuruluştaki herkes tarafından erişilebilen bir paylaşım bağlantısı oluşturur ve beyaz tahtayı toplantıdaki kiracı içi kullanıcılarla otomatik olarak paylaşır. Beyaz tahtalar, varsayılan ayardan bağımsız olarak şirket tarafından paylaşılabilir bağlantılar kullanılarak paylaşılır. Varsayılan paylaşım bağlantı türü desteği planlandı.
+
+Toplantı sırasında dış ve paylaşılan cihaz hesaplarının çoğu tarafından geçici işbirliği için ek özellik vardır. Bu, kullanıcıların teams toplantısında paylaşıldığında beyaz tahtaları PowerPoint Canlı paylaşımına benzer şekilde geçici olarak görüntülemesine ve üzerinde işbirliği yapmasına olanak tanır.
 
 >[!NOTE]
 > Teams toplantısı sırasında dış paylaşım henüz kullanılamamaktadır, ancak gelecek bir sürümde eklenecektir.

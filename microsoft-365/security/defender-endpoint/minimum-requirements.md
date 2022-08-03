@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2b1303fc9ab0841643536ccf5a85470243fe74e
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b4e50346c7ffe6a56950e278092e14fbb2be33da
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490585"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174947"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender için en düşük gereksinimler
 
@@ -31,7 +31,7 @@ ms.locfileid: "66490585"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-minreqs-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 Cihazları hizmete eklemek için bazı minimum gereksinimler vardır. Cihazları hizmete eklemek için lisanslama, donanım ve yazılım gereksinimleri ve diğer yapılandırma ayarları hakkında bilgi edinin.
 
@@ -97,7 +97,7 @@ Cihazlarda Uç Nokta için Defender'ın donanım gereksinimleri desteklenen sür
 
 > Çekirdekler: 2 minimum, 4 tercih edilen Bellek: 1 GB en az, 4 tercih edilir
 
-desteklenen Windows 10 sürümleri hakkında daha fazla bilgi için bkz. (/windows/release-health/release-information).
+Desteklenen Windows 10 sürümleri hakkında daha fazla bilgi için Windows 10 [sürüm bilgilerine](/windows/release-health/release-information) bakın.
 
 > [!NOTE]
 > - Windows'un mobil sürümlerini (Windows CE ve Windows 10 Mobile gibi) çalıştıran uç noktalar desteklenmez.

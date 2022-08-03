@@ -16,12 +16,12 @@ ms.collection:
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde e-postalara ve sahte gönderen girişlerine izin verme veya bunları engelleme hakkında bilgi edinebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a16a8234b1d0ff2a3647d7f66923faa66784ea72
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 107aef5dd4cc3098d6e77f45e6b95352997ef738
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66862081"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175014"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini kullanarak e-postalara izin verme veya e-postaları engelleme
 
@@ -40,10 +40,10 @@ Kiracı İzin Ver/Engelle Listesi'ni kullanarak e-postalara izin vermek veya e-p
 
 1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**İlkeler & kuralları** \> **Tehdit İlkeleri** \> **Kuralları** bölümüne **Kiracı İzin Ver/Listeleri Engelle** bölümüne \> gidin. Ya da doğrudan **Kiracı İzin Ver/Engelle Listesi** sayfasına gitmek için kullanın <https://security.microsoft.com/tenantAllowBlockList>.
 
-2. **Kiracı İzin Ver/Engelle Listesi** sayfasında **, Gönderenler** sekmesinin seçili olduğunu doğrulayın ve ardından Engelle simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Engelle'ye bakın**.
+2. **Kiracı İzin Ver/Engelle Listesi** sayfasında **, Etki Alanları & adresleri** sekmesinin seçili olduğunu doğrulayın ve ardından Engelle simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Engelle'ye bakın**.
 
-3. Görüntülenen **Gönderenleri engelle** açılır penceresinde aşağıdaki ayarları yapılandırın:
-   - **Gönderen e-posta adresleri veya etki alanları**: Satır başına en fazla 20 gönderen (e-posta adresi veya etki alanı) girin.
+3. Görüntülenen **Etki alanlarını & adresleri engelle** açılır öğesinde aşağıdaki ayarları yapılandırın:
+   - **Email adresleri veya etki alanları**: Satır başına en fazla 20 e-posta adresi veya etki alanı girin.
    - **Hiçbir zaman sona ermez**: Aşağıdaki adımlardan birini yapın:
      - Ayarın kapalı olduğunu doğrulayın (![Kapat.](../../media/scc-toggle-off.png)) ve **Girişlerin** sona erme tarihini belirtmek için Kaldır açık kutusunu kullanın.
 
@@ -56,6 +56,7 @@ Kiracı İzin Ver/Engelle Listesi'ni kullanarak e-postalara izin vermek veya e-p
 
 > [!NOTE]
 > Bu gönderenlerden gelen e-postalar _yüksek güvenilirlikli istenmeyen posta_ olarak engellenir (SCL = 9).
+> Kuruluştaki kullanıcılar bu engellenen etki alanlarına ve adreslere e-posta gönderemez. Şu ifadeyi içeren bir teslim edilemedi raporu alır: "5.7.1 Bir veya daha fazla alıcı kuruluşunuzun kiracı izin verme/engelleme listesi ilkesi tarafından engellendiği için iletiniz teslim edilemiyor."
 
 ### <a name="use-powershell"></a>PowerShell kullanma
 
@@ -184,7 +185,7 @@ Yalnızca bu etki alanından gelen _ve_ altyapı çifti gönderen iletilerin kim
 
 1. Microsoft 365 Defender portalında **İlkeler & kuralları** \> **Tehdit İlkeleri** \> **Kuralları** bölümüne **Kiracı İzin Ver/Listeleri Engelle** bölümüne \> gidin.
 
-2. **Kiracı İzin Ver/Engelle Listesi** sayfasında Kimlik **Sahtekarlık** sekmesini seçin ve ardından Engelle simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Ekle'yi seçin**.
+2. **Kiracı İzin Ver/Engelle Listesi** sayfasında Sahte **gönderenler** sekmesini seçin ve ardından Engelle simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Ekle'yi seçin**.
 
 3. Görüntülenen **Yeni etki alanı çiftleri ekle** açılır penceresinde aşağıdaki ayarları yapılandırın:
    - **Joker karakterlerle yeni etki alanı çiftleri ekleyin**: Satır başına en fazla 20 etki alanı çifti girin. Kimlik sahtekarlığına neden olan gönderen girdilerinin söz dizimi hakkında ayrıntılı bilgi için bkz. [Kiracı İzin Verme/Engelleme Listesini Yönetme](tenant-allow-block-list.md).
@@ -220,7 +221,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [New-TenantAllowBlock
 
 1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, Kurallar** bölümünde **Email & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kiracı İzin Ver/Engelle Listelerine** gidin. İsterseniz, doğrudan **Kiracı İzin Ver/Listeleri Engelle** sayfasına gitmek için kullanın <https://security.microsoft.com/tenantAllowBlockList>.
 
-2. **Kiracı İzin Ver/Engelle Listesi** sayfasında Kimlik **Sahtekarlık** sekmesini seçin ve ekle simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Ekle'yi seçin**.
+2. **Kiracı İzin Ver/Engelle Listesi** sayfasında Sahte **gönderenler** sekmesini seçin ve ekle simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Ekle'yi seçin**.
 
 3. Görüntülenen **Yeni etki alanı çiftleri ekle** açılır penceresinde aşağıdaki ayarları yapılandırın:
    - **Joker karakterlerle yeni etki alanı çiftleri ekleyin**: Satır başına en fazla 20 etki alanı çifti girin. Kimlik sahtekarlığına neden olan gönderen girdilerinin söz dizimi hakkında ayrıntılı bilgi için bkz. [Kiracı İzin Verme/Engelleme Listesini Yönetme](tenant-allow-block-list.md).
@@ -260,7 +261,7 @@ Engellenen iletiyi göndermek için [yönetici gönderimlerini](admin-submission
 
 > [!NOTE]
 >
-> - Sahte gönderen etki alanı çifti oluşturulur ve **Kiracı izin ver/engelle listesi** sayfasının altındaki **Kimlik Sahtekarı** sekmesinde görünür.
+> - Sahte gönderen etki alanı çifti oluşturulur ve **Kiracı izin ver/engelle listesi** sayfasının altındaki Sahte **gönderenler** sekmesinde görünür.
 
 
 ### <a name="use-powershell"></a>PowerShell kullanma

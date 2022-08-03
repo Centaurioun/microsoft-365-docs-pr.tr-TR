@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Olası tehditleri, veri kaybını ve izin sorunlarını izlemek için Microsoft Purview uyumluluk portalı veya Microsoft 365 Defender portalında uyarı ilkeleri oluşturun.
-ms.openlocfilehash: e076aea422346bb9ace26d730897c6d90a234503
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: d52e50726b5fa695a98d517f1b7b2e9be44d2f1d
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111789"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175234"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365'te uyarı ilkeleri
 
@@ -134,6 +134,7 @@ Tabloda ayrıca her biri için gereken Office 365 Kurumsal ve Office 365 ABD Kam
  
 | Varsayılan uyarı ilkesi | Açıklama | Kategori | Otomatik araştırma | Kurumsal abonelik |
 |:-----|:-----|:-----|:-----|:-----|
+|**Kötü amaçlı olabilecek bir URL tıklaması algılandı**|Kuruluşunuzdaki [Güvenli Bağlantılar](/microsoft-365/security/office-365-security/safe-links) tarafından korunan bir kullanıcı kötü amaçlı bir bağlantıya tıkladığında bir uyarı oluşturur. Bu uyarı, kullanıcı bir bağlantıya tıkladığında oluşturulur ve bu olay Office 365 için Microsoft Defender tarafından url kararı değişiklik tanımlaması tetikler. Bu uyarı ilkesi, Office 365 için Defender P2, E5, G5 müşterileri için **Yüksek** önem derecesine sahiptir. Bu uyarı[, Office 365 otomatik araştırma ve yanıtı](/microsoft-365/security/office-365-security/office-365-air) otomatik olarak tetikler. Bu uyarıyı tetikleyen olaylar hakkında daha fazla bilgi için bkz. [Güvenli Bağlantılar ilkelerini ayarlama](/microsoft-365/security/office-365-security/set-up-safe-links-policies).|Tehdit yönetimi|Evet|E5/G5 veya Office 365 için Defender P2 eklenti aboneliği|
 |**Kötü amaçlı olabilecek bir URL'ye tıklayan bir kullanıcı**|Kuruluşunuzdaki [Güvenli Bağlantılar](/microsoft-365/security/office-365-security/safe-links) tarafından korunan bir kullanıcı kötü amaçlı bir bağlantıya tıkladığında bir uyarı oluşturur. Bu olay, kullanıcı bir URL'ye tıkladığında (kötü amaçlı veya doğrulama bekleniyor olarak tanımlanır) ve barındırılan URL sayfasına/içeriğine devam etmek için Güvenli Bağlantılar uyarı sayfasını (kuruluşunuzun İş için Microsoft 365 Güvenli Bağlantılar ilkesine göre) geçersiz kıldığında tetiklenir. Bu uyarı ilkesinin **Yüksek** önem derecesi ayarı vardır. Office 365 için Defender P2, E5, G5 müşterileri için bu uyarı otomatik [araştırmayı ve yanıtı otomatik olarak Office 365](/microsoft-365/security/office-365-security/office-365-air) tetikler. Bu uyarıyı tetikleyen olaylar hakkında daha fazla bilgi için bkz. [Güvenli Bağlantılar ilkelerini ayarlama](/microsoft-365/security/office-365-security/set-up-safe-links-policies).|Tehdit yönetimi|Evet|E5/G5 veya Office 365 için Defender P2 eklenti aboneliği|
 |**Yönetici Gönderim sonucu tamamlandı**|[bir Yönetici Gönderimi](../security/office-365-security/admin-submission.md) gönderilen varlığın yeniden taramasını tamamladığında bir uyarı oluşturur. bir Yönetici Gönderiminden her yeniden tarama sonucu işlendiğinde bir uyarı tetiklenir. Bu uyarılar [, önceki gönderimlerin sonuçlarını gözden geçirmenizi](https://compliance.microsoft.com/reportsubmission), en son ilke denetimini almak ve kararları yeniden taramak için kullanıcı tarafından bildirilen iletileri göndermenizi ve kuruluşunuzdaki filtreleme ilkelerinin hedeflenen etkiyi sağlayıp sağlamadığını belirlemenize yardımcı olmayı anımsatmak için tasarlanmıştır. Bu ilkenin **Bilgi önem** derecesi ayarı vardır.|Tehdit yönetimi|Hayır|E1/F1, E3/F3 veya E5|
 |**Yönetici el ile e-posta araştırmasını tetikledi**|Bir yönetici Tehdit Gezgini'nden bir e-postanın el ile araştırmasını tetiklediğinde bir uyarı oluşturur. Daha fazla bilgi için bkz [. Örnek: Güvenlik yöneticisi Tehdit Gezgini'nden bir araştırma tetikler](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). Bu uyarı, kuruluşunuza araştırmanın başlatıldığını bildirir. Uyarı, bu uyarıyı kimin tetiklediği hakkında bilgi sağlar ve araştırmanın bağlantısını içerir. Bu ilkenin **Bilgilendirici** önem derecesi ayarı vardır.|Tehdit yönetimi|Evet|E5/G5 veya Office 365 için Microsoft Defender P2 eklenti aboneliği|
