@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: quickstart
 ms.date: 08/02/2022
 ms.custom: template-quickstart
-ms.openlocfilehash: af8a2fcbd82d33d1b1050fd382ad8a7f7334c9a1
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 6ef41802afd47a2e265a2617ed0eb498c7a1708a
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67172801"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174685"
 ---
 # <a name="quickstart-learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal"></a>Hızlı Başlangıç: Portalınızda Microsoft Defender Tehdit Analizi erişmeyi ve özelleştirme yapmayı öğrenin
 
@@ -76,4 +76,4 @@ Bu bölümde temizecek kaynak yok.
 
 Daha fazla bilgi için bkz.:
 
-['Microsoft Defender Tehdit Analizi (Defender TI) nedir?'](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+['Microsoft Defender Tehdit Analizi (Defender TI) nedir?'](index.md)

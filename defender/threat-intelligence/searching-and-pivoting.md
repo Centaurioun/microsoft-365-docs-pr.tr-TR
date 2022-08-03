@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 544725fcc359429fdd4d71059dd49719f7c3c601
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 3a7b5a5cba7d289faccef5e1e1c5eb7684357f25
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67172571"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175586"
 ---
 # <a name="searching-and-pivoting"></a>Arama ve özetleme
 
@@ -196,7 +196,7 @@ Daha fazla bilgi için bkz [. Analist içgörüleri](analyst-insights.md).
 
 Makaleler bölümünde, etkilenen yapıtı en iyi şekilde araştırma ve nihai olarak etkisiz hale getirmek hakkında içgörü sağlayabilen tüm makaleler görüntülenir. Bu makaleler, bilinen tehdit aktörlerinin ve altyapılarının davranışını inceleyen araştırmacılar tarafından yazılır ve diğer kişilerin kuruluşlarında riski azaltmasına yardımcı olabilecek önemli bulgular ortaya konur. Bu örnekte, arama yapılan IP Adresi makaledeki bulgularla ilgili bir IOC olarak tanımlanmıştır.
 
-Daha fazla bilgi için bkz. [Microsoft Defender Tehdit Analizi (Defender TI) nedir?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+Daha fazla bilgi için bkz. [Microsoft Defender Tehdit Analizi (Defender TI) nedir?](index.md)
 
 ![Özet Sekmesi Makaleleri](media/summaryTabArticles.png)
 
@@ -496,7 +496,7 @@ Zeka bölümü, Ister Makaleler aracılığıyla Araştırma Ekibimizden ister P
 
 Makaleler bölümünde, etkilenen yapıtı en iyi şekilde araştırma ve nihai olarak etkisiz hale getirmek hakkında içgörü sağlayabilen tüm makaleler görüntülenir. Bu makaleler, bilinen tehdit aktörlerinin ve altyapılarının davranışını inceleyen araştırmacılar tarafından yazılır ve diğer kişilerin kuruluşlarında riski azaltmasına yardımcı olabilecek önemli bulgular ortaya konur. Bu örnekte, arama yapılan IP Adresi makaledeki bulgularla ilgili bir IOC olarak tanımlanmıştır.
 
-Daha fazla bilgi için bkz. [Microsoft Defender Tehdit Analizi (Defender TI) nedir?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+Daha fazla bilgi için bkz. [Microsoft Defender Tehdit Analizi (Defender TI) nedir?](index.md)
 
 ![Veri Sekmesi Yönetim Bilgileri Makaleleri](media/dataTabIntelligenceArticles.png)
 
@@ -522,5 +522,5 @@ Daha fazla bilgi için bkz.:
 - [Veri kümeleri](data-sets.md)
 - [İtibar puanlaması](reputation-scoring.md)
 - [Çözümleyici içgörüleri](analyst-insights.md)
-- [Microsoft Defender Tehdit Bilgileri (Defender TI) nedir?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+- [Microsoft Defender Tehdit Bilgileri (Defender TI) nedir?](index.md)
 - [Projeleri kullanma](using-projects.md)

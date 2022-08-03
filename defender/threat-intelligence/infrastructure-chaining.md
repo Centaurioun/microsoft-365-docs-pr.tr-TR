@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: 5b094971d4004cb1c58dcf058af68c1182670f92
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 13433c34e6aafe8d08d377876ba53e05324da258
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67172832"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174663"
 ---
 # <a name="infrastructure-chaining"></a>Altyapı Zincirleme
 
@@ -33,7 +33,7 @@ Saldırı kampanyalarında pasif işletim sistemi parmak izi gibi karmaşık tak
 
 Bir saldırganın dışarıdan bakış açısı, güvenlik duvarınızın dışında çalışan sürekli olarak genişleyen web ve mobil iletişim durumunuzdan yararlanmalarını sağlar.
 
-Gerçek bir kullanıcı olarak web ve mobil özelliklere yaklaşmak ve bunlarla etkileşime geçmek, Microsoft'un gezinme, tarama ve makine öğrenmesi teknolojisinin kullanıcı oturumu verilerini toplayarak, kimlik avı, kötü amaçlı yazılım, sahte uygulamalar, istenmeyen içerik ve etki alanı ihlalini büyük ölçekte algılayarak saldırganların kaçınma tekniklerini etkisiz hale getirilmesini sağlar. Bu, saldırganların altyapısıyla ilişkili [tehdit bilgileri](what-is-microsoft-defender-threat-intelligence-defender-tI.md), [sistem etiketleri](using-tags.md), [analist içgörüleri](analyst-insights.md) ve [itibar puanları](reputation-scoring.md) biçiminde eyleme dönüştürülebilir, olay tabanlı tehdit uyarıları ve iş akışları sunmaya yardımcı olur.
+Gerçek bir kullanıcı olarak web ve mobil özelliklere yaklaşmak ve bunlarla etkileşime geçmek, Microsoft'un gezinme, tarama ve makine öğrenmesi teknolojisinin kullanıcı oturumu verilerini toplayarak, kimlik avı, kötü amaçlı yazılım, sahte uygulamalar, istenmeyen içerik ve etki alanı ihlalini büyük ölçekte algılayarak saldırganların kaçınma tekniklerini etkisiz hale getirilmesini sağlar. Bu, saldırganların altyapısıyla ilişkili [tehdit bilgileri](index.md), [sistem etiketleri](using-tags.md), [analist içgörüleri](analyst-insights.md) ve [itibar puanları](reputation-scoring.md) biçiminde eyleme dönüştürülebilir, olay tabanlı tehdit uyarıları ve iş akışları sunmaya yardımcı olur.
 
 Daha fazla tehdit verisi kullanıma sunuldukça analistlerin veri kümelerini ve buna karşılık gelen tehditleri anlaması için daha fazla araç, eğitim ve çaba gerekir. Microsoft Defender Tehdit Analizi (Defender TI), birden çok veri kaynağına tek bir görünüm sağlayarak bu çabaları birleştirir.
 

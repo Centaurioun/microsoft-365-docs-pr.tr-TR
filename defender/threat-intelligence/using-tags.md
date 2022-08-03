@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 7dbf52dd3d1f08d9c5321874a54db48b7ef2e835
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: d9e77b52e7f36bb0458a0638c0b0d2ee24e8bbff
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67172507"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175520"
 ---
 # <a name="using-tags"></a>Etiketleri kullanma
 Microsoft Defender Tehdit Analizi (Defender TI) etiketleri, sistem tarafından türetilen veya diğer kullanıcılar tarafından oluşturulan bir yapıt hakkında hızlı içgörü sağlamak için kullanılır. Etiketler, analistlerin mevcut olaylar ve araştırmalarla bunların geçmiş bağlamları arasındaki noktaları daha iyi analiz için bağlamalarına yardımcı oluyor.
@@ -98,7 +98,7 @@ Ortak Etiket Kullanım Örneği İş Akışı Bir önceliklendirme analisti bir 
 
 Daha fazla bilgi için bkz.:
 
-- [Microsoft Defender Tehdit Bilgileri (Defender TI) nedir?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+- [Microsoft Defender Tehdit Bilgileri (Defender TI) nedir?](index.md)
 - [Veri kümeleri](data-sets.md)
 - [Verileri sıralama, filtreleme ve indirme](sorting-filtering-and-downloading-data.md)
 - [İtibar puanlaması](reputation-scoring.md)

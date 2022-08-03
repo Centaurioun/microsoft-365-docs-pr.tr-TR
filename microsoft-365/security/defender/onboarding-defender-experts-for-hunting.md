@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aab1c0661ce039e6a9fb561c2e93f71e2c5847d6
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: bad5e4bbc21eb968a5d856653366eb3967759595
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67173322"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175542"
 ---
 # <a name="start-using-microsoft-defender-experts-for-hunting"></a>Avlanmak için Microsoft Defender Uzmanlarını kullanmaya başlama
 
@@ -110,7 +110,7 @@ Tehdit avcılığıyla ilgili tüm sorularınıza hızlı ve doğru yanıtlar al
 ### <a name="alert-information"></a>Uyarı bilgileri
 
 - Arazi dışında yaşayan ikili dosya için yeni bir uyarı türü gördük. Uyarı kimliğini sağlayabiliriz. Bu uyarı ve herhangi bir olayla ilgili olup olmadığını ve daha fazla nasıl araştırabiliriz?
-- Her ikisi de kötü amaçlı PowerShell betiklerini yürütmeye çalışan ancak farklı uyarılar oluşturan iki benzer saldırı gözlemledik. Biri "Şüpheli PowerShell komut satırı" diğeri ise "O365 tarafından sağlanan göstergeye göre kötü amaçlı bir dosya algılandı". Ne fark var?
+- Her ikisi de kötü amaçlı PowerShell betiklerini yürütmeye çalışan ancak farklı uyarılar oluşturan iki benzer saldırı gözlemledik. Biri "Şüpheli PowerShell komut satırı" diğeri ise "Office 365 tarafından sağlanan göstergeye göre kötü amaçlı bir dosya algılandı." Ne fark var?
 - Bugün, yüksek profilli bir kullanıcının cihazından olağan dışı sayıda başarısız oturum açma işlemiyle ilgili garip bir uyarı aldık. Bu girişimler için başka kanıt bulamıyoruz. Microsoft 365 Defender bu girişimleri nasıl görebilir? Ne tür oturum açma işlemleri izleniyor?
 - Uyarı ve "Bir sistem yardımcı programı tarafından şüpheli davranış gözlemlendi" ile ilgili olaylar hakkında daha fazla bağlam veya içgörü verebilir misiniz?
 - "İletme/yeniden yönlendirme kuralı oluşturma" başlıklı bir uyarı gözlemledim. Etkinliğin zararsız olduğuna inanıyorum. Neden uyarı aldığımdan bahsedebilir misiniz?
@@ -128,7 +128,7 @@ Tehdit avcılığıyla ilgili tüm sorularınıza hızlı ve doğru yanıtlar al
 
 ### <a name="microsoft-defender-experts-for-hunting-alert-communications"></a>Tehdit Avcılığı için Microsoft Defender Uzmanları uyarı iletişimleri
 
-- Olay yanıtı ekibiniz aldığımız hedeflenen saldırı bildirimini ele almamıza yardımcı olabilir mi?
+- Olay yanıtı ekibiniz, aldığımız Defender Uzmanlar Bildirimi'ni ele almamıza yardımcı olabilir mi?
 - Bu Defender Uzmanlar Bildirimini Avcılık için Microsoft Defender Uzmanlarından aldık. Kendi olay müdahale ekibimiz yok. Şimdi ne yapabiliriz ve olayı nasıl kapsayabiliriz?
 - Avcılık için Microsoft Defender Uzmanlarından Bir Defender Uzmanları Bildirimi aldık. Olay yanıtı ekibimize geçirebileceğimiz hangi verileri bize sağlayabilirsiniz?
 
