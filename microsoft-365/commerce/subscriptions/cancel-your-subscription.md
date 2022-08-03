@@ -14,20 +14,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- VSBFY23
 - commerce_subscriptions
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
 description: Microsoft 365 yönetim merkezinde Dynamics 365, Intune, Power Platform ve İş için Microsoft 365 deneme veya ücretli aboneliklerinizi nasıl iptal edebileceğinizi öğrenin.
 ms.date: 07/07/2022
-ms.openlocfilehash: 9acaaff87e649342a073e2395edb41ca07dd1485
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 7918690c20466769129875620e98fb162f3d3be5
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084817"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112119"
 ---
 # <a name="cancel-your-microsoft-subscription"></a>Microsoft aboneliğinizi iptal etme
 
@@ -71,7 +71,7 @@ Deneme veya ücretli aboneliğinizi iptal etme adımları, aboneliğinizdeki lis
 |25 veya daha az  | <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezinde</a> deneme veya ücretli aboneliğinizi çevrimiçi olarak [iptal etmek için aşağıdaki adımları kullanın](#steps-to-cancel-your-subscription).        |
 |25'ten fazla   | Lisansların sayısını 25’e veya 25’in altına düşürün ve [iptal etmek için aşağıdaki adımları kullanın](#steps-to-cancel-your-subscription).      |
 
-Lisans sayısını azaltamıyorsanız, [yinelenen faturalandırmayı](renew-your-subscription.md) kapatın. Bu işlem aboneliğiniz için yeniden ücret alınmasını önler ve aboneliğinizin kalan bölümünde ürünlerinize ve hizmetlerinize erişimi sürdürmenize olanak tanır.
+Lisansların sayısını azaltamıyorsanız [yinelenen faturalandırmayı devre dışı bırakın](renew-your-subscription.md). Bu işlem aboneliğiniz için yeniden ücretlendirilmenizi önler ve aboneliğinizin kalan bölümünde ürünlerinize ve hizmetlerinize erişimi sürdürmenize olanak tanır.
 
 Aboneliğinizi iptal edemiyorsanız, yardım için [destekle iletişime geçin](../../admin/get-help-support.md).
 
