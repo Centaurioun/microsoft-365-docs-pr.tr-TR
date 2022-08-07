@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Business Premium'da telefonlar için çok faktörlü kimlik doğrulamasını ayarlayın. Microsoft Business Premium'un telefonunuz için MFA özelliklerini kullanarak güvenliğinizi artırın.
-ms.openlocfilehash: a0f4c5cf7099f27cade90e8c62aa1072fce3fd66
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 8bf278f3dc91dfe1a9e8d5388e2868e9dddb577d
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894021"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275000"
 ---
 # <a name="set-up-mfa"></a>MFA'yı ayarlama
 
@@ -37,8 +37,8 @@ daha fazla bilgi için bkz. [Microsoft 365 İş Ekstra'de çok faktörlü kimlik
 
 ## <a name="use-the-outlook-app-on-your-devices"></a>Cihazlarınızda Outlook uygulamasını kullanma
 
-Bir yönetici ön saf kullanıcıların MFA kullanmasını zorunlu kıldıktan sonra, kimlik doğrulayıcı uygulaması ikinci bir kimlik doğrulama biçimi olarak hizmet eder. Microsoft 365 e-postalarına erişmek için Outlook uygulamasını yüklemelerini ve kullanmalarını öneririz.
+MFA uygulandığında, kimlik doğrulayıcı uygulaması ikinci bir kimlik doğrulama biçimi olarak hizmet eder. Ayrıca, herkesin cihazlarında Microsoft 365 e-postasına erişmek için Outlook uygulamasını yüklemesini ve kullanmasını öneririz. Bkz. [iOS ve Android için Microsoft Outlook'u indirme](https://www.microsoft.com/microsoft-365/outlook-mobile-for-android-and-ios).
 
 ## <a name="next-objective"></a>Sonraki hedef
 
-Sonraki hedefiniz için [Office uygulamalarını yüklemek](m365bp-install-office-apps.md) için yönergeleri izleyin.
+[Office uygulamalarını yüklemeye](m365bp-install-office-apps.md) devam edin.

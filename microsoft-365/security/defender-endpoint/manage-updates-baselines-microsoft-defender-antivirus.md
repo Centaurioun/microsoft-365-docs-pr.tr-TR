@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
+ms.date: 08/04/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -18,12 +19,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 1b8cb5b55cc0605df0040bcc6b3a75498ef1ea4a
-ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
+ms.openlocfilehash: 1c1921b368ce404d5065854ae9f71fe8713dd9d4
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66612183"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275680"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama
 
@@ -47,7 +48,7 @@ Microsoft Defender Virüsten Koruma'nın güncel tutulması, cihazlarınızın y
 
 ## <a name="security-intelligence-updates"></a>Güvenlik bilgileri güncelleştirmeleri
 
-Microsoft Defender Virüsten Koruma [, bulut tabanlı korumayı](cloud-protection-microsoft-defender-antivirus.md) (Microsoft Gelişmiş Koruma Hizmeti veya MAPS olarak da adlandırılır) kullanır ve ek koruma sağlamak için dinamik güvenlik zekası güncelleştirmelerini düzenli aralıklarla indirir. Bu dinamik güncelleştirmeler, KB2267602 güvenlik bilgileri güncelleştirmesi aracılığıyla düzenli güvenlik bilgileri güncelleştirmelerinin yerini almaz.
+Microsoft Defender Virüsten Koruma [, bulut tabanlı korumayı](cloud-protection-microsoft-defender-antivirus.md) (Microsoft Gelişmiş Koruma Hizmeti veya MAPS olarak da adlandırılır) kullanır ve daha fazla koruma sağlamak için dinamik güvenlik bilgileri güncelleştirmelerini düzenli aralıklarla indirir. Bu dinamik güncelleştirmeler, KB2267602 güvenlik bilgileri güncelleştirmesi aracılığıyla düzenli güvenlik bilgileri güncelleştirmelerinin yerini almaz.
 
 > [!NOTE]
 > Güncelleştirmeler aşağıdaki KB'ler altında yayınlanıyor:
@@ -157,7 +158,7 @@ Güvenlik bilgileri güncelleştirme sürümü: 1.361.1449.0<br/>
 - Kısa süreli işlemlerle ilgili [davranış izleme](configure-protection-features-microsoft-defender-antivirus.md) performansı sorununa yönelik düzeltme eklendi 
 - [AMSI](/windows/win32/amsi/antimalware-scan-interface-portal) dışlaması için düzeltme eklendi 
 - Geliştirilmiş [kurcalama koruması](prevent-changes-to-security-settings-with-tamper-protection.md) özellikleri 
-- Yapılandırma kullanılırken `SharedSignaturesPath` bazı durumlarda [gerçek zamanlı korumanın](configure-protection-features-microsoft-defender-antivirus.md) devre dışı bırakılmasına yönelik bir düzeltme eklendi (Parametre hakkında `SharedSignaturesPath` daha fazla ayrıntı için bkz[. Set-MpPreference](/powershell/module/defender/set-mppreference))
+- Yapılandırma kullanılırken `SharedSignaturesPath` bazı durumlarda [gerçek zamanlı korumanın](configure-protection-features-microsoft-defender-antivirus.md) devre dışı bırakılmasına yönelik bir düzeltme eklendi. Parametresi hakkında `SharedSignaturesPath` daha fazla ayrıntı için bkz. [Set-MpPreference](/powershell/module/defender/set-mppreference).
 
 ### <a name="known-issues"></a>Bilinen Sorunlar
 
@@ -748,6 +749,21 @@ Windows 10 (Enterprise, Pro ve Home sürümleri), Windows Server 2019, Windows S
 Daha fazla bilgi için bkz. [Windows işletim sistemi yükleme görüntüleri için Microsoft Defender güncelleştirmesi](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220802.1</summary>
+
+&ensp;Paket sürümü: **20220802.1**<br/>
+&ensp;Platform sürümü: **4.18.2205.7**<br/>
+&ensp;Altyapı sürümü: **1.1.19400.3**<br/>
+&ensp;İmza sürümü: **1.371.1205.0**<br/>
+
+### <a name="fixes"></a>Giderir
+- Yok
+
+### <a name="additional-information"></a>Ek bilgiler
+- Yok
+
+<br/>
+</details><details>
 <summary>20220629.5</summary>
 
 &ensp;Paket sürümü: **20220629.5**<br/>
@@ -1085,7 +1101,7 @@ Daha fazla bilgi için bkz. [Windows işletim sistemi yükleme görüntüleri i�
 |[Koruma güncelleştirmelerinin ne zaman indirileceğini ve uygulanacağını yönetme](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Koruma güncelleştirmelerinin ne zaman indirilmesi gerektiğini zamanlayabilirsiniz. |
 |[Güncel olmayan uç noktalar için güncelleştirmeleri yönetme](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Uç nokta bir güncelleştirmeyi veya zamanlanmış taramayı kaçırırsa, kullanıcı bir sonraki oturum açtığında güncelleştirmeyi zorlayabilir veya tarama yapabilirsiniz. |
 |[Olay tabanlı zorunlu güncelleştirmeleri yönetin](manage-event-based-updates-microsoft-defender-antivirus.md) | Koruma güncelleştirmelerini başlangıçta veya belirli bulut tabanlı koruma olaylarının ardından indirilecek şekilde ayarlayabilirsiniz. |
-|[Mobil cihaz ve sanal makine (VM) güncelleştirmelerini yönetin](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Güncelleştirmelerin pil gücünde gerçekleşip gerçekleşmeyeceği gibi, özellikle mobil cihazlar ve sanal makineler için yararlı olan ayarları belirtebilirsiniz. |
+|[Mobil cihaz ve sanal makine (VM) güncelleştirmelerini yönetin](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Güncelleştirmelerin, özellikle mobil cihazlar ve sanal makineler için yararlı olan pil gücünde gerçekleşip gerçekleşmeyeceği gibi ayarları belirtebilirsiniz. |
 | [EDR Algılayıcısı için Uç Nokta için Microsoft Defender güncelleştirmesi](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | 2021'de yayımlanan yeni Uç Nokta için Microsoft Defender birleşik çözüm paketinde bulunan EDR algılayıcısını (MsSense.exe) güncelleştirebilirsiniz.   |
 
 > [!TIP]

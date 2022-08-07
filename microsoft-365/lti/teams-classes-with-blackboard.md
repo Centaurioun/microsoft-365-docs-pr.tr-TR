@@ -11,14 +11,13 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Blackboard Learn Ultra ile Microsoft Teams sınıflarını kullanma
-ms.openlocfilehash: f5e53c54db893a184a5b2afe86b61c823b62f5a6
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+description: Blackboard Learn Ultra ile Microsoft Teams sınıflarını kullanın.
+ms.openlocfilehash: 6e133b01dc2c70e87812e88590055fb48b6cbb99
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923072"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275922"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Blackboard Learn Ultra ile Microsoft Teams sınıflarını kullanma
 
@@ -27,32 +26,32 @@ Ekip çalışması, her modern kuruluşun merkezinde yer alır. İşbirliğini t
 Sınıflarınız gerçek zamanlı konuşmalar, görüntülü toplantılar veya zaman uyumsuz etkileşimler içerebilir. Öğrencileriniz için dosya paylaşımı ve birlikte oluşturma deneyimlerini tek bir yerden ekleyebilirsiniz. Learn Ultra ile Microsoft Teams sınıfları, öğretimin dinamiklerini ve etkili öğrenmenin ne anlama geldiğini yeniden tanımlar.
 
 > [!IMPORTANT]
-> [Öğrenci Bilgi Sisteminizde (SIS)](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning) Kurum E-posta alanını başarıyla ayarladığınızdan emin olun
+> [Öğrenci Bilgi Sisteminizde (SIS)](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System/SIS_Planning) Kurum Email alanını başarıyla ayarladığınızdan emin olun
 >
 >Microsoft Teams sınıfları tümleştirmesi, doğru Microsoft Azure Active Directory (AAD) [Kullanıcı Asıl Adı (UPN](/azure/active-directory/hybrid/howto-troubleshoot-upn-changes)) ile eşlemek için SIS'inizdeki kurum e-posta alanına dayanır. Herhangi bir kurum e-postası sağlanmamışsa, bu varsayılan olarak mevcut e-postaya ayarlanır. Verilerinin doğru eşitlendiğinden ve AAD ile Blackboard Learn Ultra arasında e-posta verileri çakışması olmadığından emin olmak için bu alanın her kullanıcı için ayarlanması önerilir.
 >
 > SIS eşlemenizde bu alanı uygun şekilde ayarlamadıysanız tümleştirme çalışmaya devam eder, ancak kullanıcılar oluşturulan Teams sınıflarında görünmeyebilir ve hatalar oluşabilir.
 
-## <a name="supporting-institutional-data-mapping--institution-email-sis-field"></a>Kurumsal Veri Eşlemeyi Destekleme – Kurum E-posta SIS Alanı
+## <a name="supporting-institutional-data-mapping--institution-email-sis-field"></a>Kurumsal Veri Eşlemeyi Destekleme – Kurum Email SIS Alanı
 
-Bulut sağlayıcısı tümleştirmelerinin gelişimi kapsamında Blackboard Learn Ultra, hem Öğrenci Bilgi Sistemi Çerçevesi tümleştirmesinde hem de genel REST API'lerinde yeni bir **Kurum E-posta** alanı oluşturarak kurumların Blackboard Learn Ultra ile AAD arasında veri eşitleme sürecini etkili bir şekilde yönetmesine olanak sağlıyor.
+Bulut sağlayıcısı tümleştirmeleriyle yapılan evrimin bir parçası olarak Blackboard Learn Ultra, hem Öğrenci Bilgi Sistemi Çerçevesi tümleştirmesinde hem de genel REST API'lerinde yeni bir **Kurum Email** alanı oluşturarak kurumların Blackboard Learn Ultra ile AAD arasında veri eşitleme sürecini etkili bir şekilde yönetmesine olanak sağlıyor.
 
-### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>Kurum E-postası ne anlama gelir ve neleri destekler?
+### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>Kurum Email ne anlama gelir ve neleri destekler?
 
-**Kurum E-postası** alanı, bir istemcinin dışarıdan desteklenen veri kaynakları ile Blackboard Learn Ultra arasında özelleştirilmiş alan eşlemelerine olanak tanır. Veri kaynakları Microsoft gibi bulut sağlayıcılarıysa, Kullanıcı Asıl Adı (UPN), her kullanıcı için@ simgesiyle birleştirilmiş bir UPN ön eki (kullanıcının hesap adı) ve UPN soneki (DNS etki alanı adı) içeren birincil benzersiz tanımlayıcıdır. Bu, Microsoft Azure Active Directory içindeki her belirli kullanıcı için benzersiz bir e-posta adresi oluşturur.
+**Kurum Email** alanı, müşterinin dışarıdan desteklenen veri kaynakları ile Blackboard Learn Ultra arasında özelleştirilmiş alan eşlemelerine olanak tanır. Veri kaynakları Microsoft gibi bulut sağlayıcılarıysa, Kullanıcı Asıl Adı (UPN), her kullanıcı için@ simgesiyle birleştirilmiş bir UPN ön eki (kullanıcının hesap adı) ve UPN soneki (DNS etki alanı adı) içeren birincil benzersiz tanımlayıcıdır. Bu, Microsoft Azure Active Directory içindeki her belirli kullanıcı için benzersiz bir e-posta adresi oluşturur.
 
-Verilerin doğru olduğundan ve Blackboard Learn Ultra ile Microsoft Teams sınıfları arasındaki kayıtların veya üyeliklerin doğru şekilde elde edilmesini sağlamak için kullanıcının e-posta adresinin her iki sistem arasında eşleşmesi gerekir. Blackboard Learn Ultra'da kullanıcılar, kullanıcı arabiriminde mevcut e-posta adreslerini değiştirebilir veya geçersiz kılabilir ve bu da eşitleme hatalarının oluşmasına ve kullanıcının Sınıf Ekibine doğru şekilde eklenememesine neden olabilir. **Kurum E-postası** alan eşlemesi, kullanıcıların Blackboard Learn Ultra'da e-postalarını değiştirip değiştirmediklerine bakılmaksızın bu güvenlik ve doğrulama denetiminin doğru şekilde yönetilmesini sağlar.
+Verilerin doğru olduğundan ve Blackboard Learn Ultra ile Microsoft Teams sınıfları arasındaki kayıtların veya üyeliklerin doğru şekilde elde edilmesini sağlamak için kullanıcının e-posta adresinin her iki sistem arasında eşleşmesi gerekir. Blackboard Learn Ultra'da kullanıcılar, kullanıcı arabiriminde mevcut e-posta adreslerini değiştirebilir veya geçersiz kılabilir ve bu da eşitleme hatalarının oluşmasına ve kullanıcının Sınıf Ekibine doğru şekilde eklenememesine neden olabilir. **Kurum Email** alan eşlemesi, kullanıcıların Blackboard Learn Ultra'da e-postalarını değiştirip değiştirmediklerine bakılmaksızın bu güvenlik ve doğrulama denetiminin doğru şekilde yönetilmesini sağlar.
 
  İki e-posta adresi farklı olduğunda:
 
 - Hangi kaynağın öncelikli olduğu ve hem Kişi hem de Kurum E-postaları olarak alınacağı yönünde bir karar alınmalıdır.
   Veya
-- Bir kurum, Kurum E-postasında özel alan eşlemesi ayarlayabilir ve bu da olası bir çakışmayı çözebilir.
+- Bir kurum, Kurum Email özel alan eşlemesi ayarlayabilir ve bu da olası bir çakışmayı çözebilir.
 
-**Kurum E-postası** alan eşlemesi artık **Gelişmiş Yapılandırma Ayarları** > **Kullanıcılar Learn Nesne Türü** > **Alan Eşlemesi** bölümünde mevcut tüm SIS tümleştirme türleri için kullanılabilir.
+**Kurum Email** alan eşlemesi artık **Gelişmiş Yapılandırma Ayarları** > **Kullanıcılar Nesne Türü** > **Alan Eşlemesini** Öğren bölümünde mevcut tüm SIS tümleştirme türleri için kullanılabilir.
 
 > [!NOTE]
-> **Kuruluş E-postası'nın** varsayılan olarak tüm SIS biçimleri için **Kişi E-postası** olarak ayarlandığını ve her kişi için benzersiz olması gerektiğini unutmayın. Sis, e-postaları çoğaltılırsa kullanıcıları içeri aktaramayacağı için, ayarlanmış ve çalışan tümleştirmelerde bu veri eşlemesi gerçekleştirilecektir. Bir kurumun Kurum E-postası'nı **özel** olarak değiştirmesi gerekiyorsa, bunu SIS'teki **Gelişmiş Yapılandırma Ayarları** aracılığıyla yönetmesi gerekir.
+> **Kurum Email'nin** varsayılan olarak tüm SIS biçimleri için **Kişi Email** olarak ayarlandığını ve her bir kişi için benzersiz olması gerektiğini unutmayın. Sis, e-postaları çoğaltılırsa kullanıcıları içeri aktaramayacağı için, ayarlanmış ve çalışan tümleştirmelerde bu veri eşlemesi gerçekleştirilecektir. Bir kurumun Kurum Email **özel** olarak değiştirmesi gerekiyorsa, bunu SIS'teki **Gelişmiş Yapılandırma Ayarları** aracılığıyla yönetmesi gerekir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -92,7 +91,7 @@ Microsoft Teams sınıf tümleştirmesi **yalnızca Ultra Kurs Görünümü kurs
 
 4. Önceden doldurulmuş ve **Araç Durumu'nda** bulunan tüm ayarları gözden geçirin ve **Etkin'i** seçin.
 
-5. **Kurum İlkeleri'nde** Kurs, Ad ve **E-posta** **Adresi'nde Rol'e** tıklayın ve her ikisi için de **Evet'e** tıklayın.
+5. **Kurum İlkeleri'nde** **Kursta Rol, Ad** ve **Email Adresi'ne** tıklayın ve her ikisi için de **Evet'i** seçin.
 
 6. **Not hizmeti erişimine izin ver** ve **Üyelik Hizmeti Erişimine İzin Ver'i** seçin.
 
@@ -108,7 +107,7 @@ Microsoft Teams sınıf tümleştirmesi **yalnızca Ultra Kurs Görünümü kurs
 
 4. Önceden doldurulmuş ve *Araç Durumu'nda* bulunan tüm ayarları gözden geçirin ve *Etkin'i seçin.*
 
-5. **Kurum İlkeleri'nde** **Kursta Rol, Ad** ve **E-posta Adresi'ne** tıklayın. Her ikisi için **de Evet'i** seçin.
+5. **Kurum İlkeleri'nde** **Kursta Rol, Ad** ve **Email Adresi'ne** tıklayın. Her ikisi için **de Evet'i** seçin.
 
 6. **Not hizmeti erişimine izin ver** ve **Üyelik Hizmeti Erişimine İzin Ver'i** seçin.
 
@@ -146,13 +145,13 @@ Microsoft Teams sınıf tümleştirmesi **yalnızca Ultra Kurs Görünümü kurs
 
 ## <a name="configure-and-approve-microsoft-teams-classes-integration"></a>Microsoft Teams sınıf tümleştirmesini yapılandırma ve onaylama
 
-Blackboard Learn Ultra örneğinizi Microsoft Teams sınıflarıyla başarıyla tümleştirmek için, Blackboard Learn Ultra uygulamasının Microsoft Azure kiracınızda erişim için onaylandığından emin olmanız gerekir. Bu, kuruluşunuzun Microsoft 365 Genel Yöneticisi tarafından tamamlanması gereken bir süreçtir.
+Blackboard Learn Ultra örneğinizi Microsoft Teams sınıflarıyla başarıyla tümleştirmek için, Blackboard Learn Ultra uygulamasının Microsoft Azure kiracınızda erişim için onaylandığından emin olmanız gerekir. Bu, kuruluşunuzun Microsoft 365 Global Yönetici tarafından tamamlanması gereken bir süreçtir.
 
 Bu işlem, Blackboard Learn Ultra Örneğinizdeki LTI uygulamalarını yapılandırmadan önce veya sonra yapılabilir.
 
 ### <a name="before-configuring-the-lti-applications"></a>LTI Uygulamalarını Yapılandırmadan Önce
 
-LTI tümleştirmelerini yapılandırmadan önce Blackboard Learn Ultra Teams Sınıfları Azure uygulamasını onaylamayı seçerseniz **Microsoft Kimlik Platformu Yönetici Onayı Uç Noktası'na** yeniden yönlendirmeniz gerekir. URL gösterilir:
+LTI tümleştirmelerini yapılandırmadan önce Blackboard Learn Ultra Teams Sınıfları Azure uygulamasını onaylamayı seçerseniz Microsoft **Kimlik Platformu Yönetici Onay Uç Noktası'na** yeniden yönlendirmeniz gerekir. URL gösterilir:
 
 `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
@@ -165,7 +164,7 @@ Microsoft Teams'e erişmek için Blackboard Learn Ultra'ya izin verdiğini açı
 
 ### <a name="after-configuring-the-lti-applications"></a>LTI Uygulamalarını Yapılandırdıktan Sonra
 
-1. **Yönetici Paneli'nde** **Araçlar ve Yardımcı Programlar'a gidin ve** **Microsoft Teams Tümleştirme Yöneticisi'ni** seçin.
+1. **Yönetici Paneli'nde** **Araçlar ve Yardımcı Programlar'a gidin ve** **Microsoft Teams Tümleştirme Yönetici'ni** seçin.
 
 2. **Microsoft Teams'i Etkinleştir'i** seçin.
 
@@ -175,6 +174,6 @@ Microsoft Teams'e erişmek için Blackboard Learn Ultra'ya izin verdiğini açı
 
    - Uygulamanın ön onayı varsa küçük bir onay işareti gösterilir. Onay işareti görünürse **Gönder'i** seçin.
 
-   - Onay onaylanmamışsa, onay URL'sini oluşturmak ve onay için Microsoft 365 Genel Yöneticisi'ne göndermek için açıklanan adımları izleyin.
+   - Onay onaylanmamışsa, onay URL'sini oluşturmak ve onay için Microsoft 365 Genel Yönetici göndermek için açıklanan adımları izleyin.
 
 5. Onay onayını aldıktan sonra onaylamak için **Yeniden Dene'yi** ve ardından **Gönder'i** seçin.

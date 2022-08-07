@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fef1a5a7b8e47c4f97d36d4002ccf00401948d12
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: bf23036c48952991253ea3a211ebdeb571c98e5f
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66696412"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276984"
 ---
 # <a name="migrating-servers-from-microsoft-monitoring-agent-to-the-unified-solution"></a>Sunucuları Microsoft Monitoring Agent'tan birleşik çözüme geçirme
 
@@ -37,7 +37,7 @@ Bu makale, alt düzey sunucuları Microsoft Monitoring Agent'tan (MMA) birleşik
 - Microsoft Monitoring Agent ile birlikte ortamınızdaki alt düzey işletim sistemi cihazları. Onaylamak için Görev Yöneticisi'nde çalıştığını doğrulayın `MsSenseS.exe` .
 - MMA aracısının varlığı. Denetim Masası> Microsoft Monitoring Agent'ta doğru Çalışma Alanı Kimliğinin mevcut olup olmadığını denetleyerek bunu doğrulayabilirsiniz.
 - Cihazlar ekli etkin Microsoft 365 Defender portalı.
-- MECM örneğinizde MMA aracısını kullanan Windows Server 2012 R2 veya Windows Server 2016 gibi alt düzey sunucuları içeren bir Cihaz Koleksiyonu ayarlanır.
+- MECM örneğinizde MMA aracısını kullanan Windows Server 2012 R2 veya Windows Server 2016 gibi alt düzey sunucuları içeren **bir Cihaz Koleksiyonu** ayarlanır.
 
 Listelenen önkoşulları yükleme hakkında daha fazla bilgi için [ilgili konular](#related-topics) bölümüne bakın.
 
@@ -46,61 +46,74 @@ Listelenen önkoşulları yükleme hakkında daha fazla bilgi için [ilgili konu
 MeCM ile diğer uygulamaları dağıttığınız içerik kaynağına birleştirilmiş çözüm paketini, ekleme betiğini ve geçiş betiğini kopyalayın.
 
 1. [Microsoft 365 Defender ayarları sayfasından](https://sip.security.microsoft.com/preferences2/onboarding) Ekleme Betiği'ni ve birleşik çözümü indirin.
-      :::image type="content" source="images/onboarding-script.png" alt-text="Ekleme betiği ve birleşik çözüm indirme işleminin ekran görüntüsü." lightbox="images/onboarding-script.png":::
+
+   :::image type="content" source="images/onboarding-script.png" alt-text="Ekleme betiği ve birleşik çözüm indirme işleminin ekran görüntüsü." lightbox="images/onboarding-script.png":::
+      
 2. Geçiş betiğini belgeden indirin: [Önceki MMA tabanlı Uç Nokta için Microsoft Defender çözümünden sunucu geçişi senaryoları](server-migration.md). Bu betik GitHub'da da bulunabilir: [GitHub - microsoft/mdefordownlevelserver](https://github.com/microsoft/mdefordownlevelserver).
 3. Üç dosyayı da MECM tarafından kullanılan paylaşılan bir klasöre Yazılım Kaynağı olarak kaydedin.
-     :::image type="content" source="images/ua-migration.png" alt-text="MeCM tarafından paylaşılan klasörü kaydetme işleminin ekran görüntüsü.":::
+
+   :::image type="content" source="images/ua-migration.png" alt-text="MeCM tarafından paylaşılan klasörü kaydetme işleminin ekran görüntüsü.":::
 
 ## <a name="create-the-package-as-an-application"></a>Paketi uygulama olarak oluşturma
 
 1. MECM konsolunda şu adımları izleyin: **Yazılım Kitaplığı>Uygulamalar>Uygulama Oluşturma**.
 2. **Uygulama bilgilerini el ile belirtin'i** seçin.
-      :::image type="content" source="images/manual-application-information.png" alt-text="Uygulama bilgileri seçimini el ile belirtme işleminin ekran görüntüsü." lightbox="images/manual-application-information.png":::
-3. Sihirbazın Yazılım Merkezi ekranında **İleri'ye** tıklayın.
+   
+   :::image type="content" source="images/manual-application-information.png" alt-text="Uygulama bilgileri seçimini el ile belirtme işleminin ekran görüntüsü." lightbox="images/manual-application-information.png":::
+   
+3. Sihirbazın Yazılım Merkezi ekranında **İleri'yi** seçin.
 4. Dağıtım Türleri'nin üzerinde **Ekle'ye** tıklayın.
-5. **Dağıtım türü bilgilerini belirtmek için El ile'yi** seçin ve **İleri'ye** tıklayın.
-6. Betik dağıtımınıza bir ad verin ve **İleri'ye** tıklayın.
-     :::image type="content" source="images/manual-deployment-information.png" alt-text="Betik dağıtım bilgilerini belirten ekran görüntüsü.":::
+5. **Dağıtım türü bilgilerini belirtmek için El ile'yi** ve **ardından İleri'yi** seçin.
+6. Betik dağıtımınıza bir ad verin ve **İleri'yi** seçin.
+
+   :::image type="content" source="images/manual-deployment-information.png" alt-text="Betik dağıtım bilgilerini belirten ekran görüntüsü.":::
+     
 7. Bu adımda, içeriğinizin bulunduğu UNC yolunu kopyalayın. Örnek: `\\Cm1\h$\SOFTWARE_SOURCE\UAmigrate`.
-     :::image type="content" source="images/deployment-type-wizard.png" alt-text="UNC yol kopyalamayı gösteren ekran görüntüsü.":::
+
+   :::image type="content" source="images/deployment-type-wizard.png" alt-text="UNC yol kopyalamayı gösteren ekran görüntüsü.":::
+  
 8. Ayrıca, aşağıdakileri yükleme programı olarak ayarlayın:
 
      ```powershell
-       Powershell.exe -ExecutionPolicy ByPass -File install.ps1 -Log -Etl -RemoveMMA 48594f03-7e66-4e15-8b60-d9da2f92d564 -OnboardingScript .\WindowsDefenderATP.onboarding
+      Powershell.exe -ExecutionPolicy ByPass -File install.ps1 -RemoveMMA <workspace ID> -OnboardingScript .\WindowsDefenderATPOnboardingScript.cmd 
      ```
 
+      **İleri'ye** tıklayın ve bu bölümde kendi Çalışma Alanı Kimliğinizi eklediğinizden emin olun.
 9. **İleri'ye** tıklayın ve yan tümce ekle'ye tıklayın.
-10. Yan tümcesi, aşağıdaki anahtarın mevcut olup olmadığını görmek için kayıt defterinde arar:  `HKEY_LOCAL_MACHINESOFTWARE\Classes\Installer\Products\63FAD065BFFD18F1926692665F704C6D`
+10. Algılama yöntemi aşağıda gösterilen kayıt defteri anahtarını temel alır.
+      `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense\ImagePath`
 
-     Aşağıdaki girişleri sağlayın:
-     - Değer: **ProductName**
-     - Veri Türü: **Dize**
-     - Şu seçeneği işaretleyin: **Bu uygulamanın var olduğunu belirtmek için hedef sistemde bu kayıt defteri ayarının çıkması gerekir.**
+      Şu seçeneği işaretleyin: **Bu uygulamanın var olduğunu belirtmek için hedef sistemde bu kayıt defteri ayarının çıkması gerekir.**
 
-     :::image type="content" source="images/detection-rule-wizard.png" alt-text="Kayıt defteri anahtarı algılamayı gösteren ekran görüntüsü.":::
+    :::image type="content" source="images/detection-wizard.png" alt-text="Algılama türü sihirbazını gösteren ekran görüntüsü":::
 
-     >[!TIP]
-     >Bu kayıt defteri anahtarı değeri, birleşik çözümün yüklü olduğu bir cihazda aşağıdaki PowerShell komutu çalıştırılarak elde edildi. Diğer yaratıcı algılama yöntemleri de kullanılabilir. Amaç, birleşik çözümün belirli bir cihaza zaten yüklenip yüklenmediğini tanımlamaktır.
+      >[!TIP]
+      >Bu kayıt defteri anahtarı değeri, birleşik çözümün yüklü olduğu bir cihazda aşağıda gösterilen Powershell komutu çalıştırılarak elde edildi. Diğer yaratıcı algılama yöntemleri de kullanılabilir. Amaç, birleşik çözümün belirli bir cihaza önceden yüklenmiş olup olmadığını belirlemektir.
 
      ```powershell
-     PowerShell Cmd:  get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
+      get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize 
      ```
 
-11. **Kullanıcı Deneyimi** bölümünde ortamınıza uygun olanı seçebilir ve **İleri'ye** tıklayabilirsiniz. **Yükleme programı görünürlüğü** için aşama testi sırasında **Normal görünürlük** ile yüklemeniz ve ardından genel dağıtım için **simge durumuna küçültülmüş** olarak değiştirmeniz önerilir.
+11. **Kullanıcı Deneyimi** bölümünde, ekran görüntüsünde gösterilen önerilen ayarları denetleyin. Ortamınıza uygun olanı seçip **İleri'ye** tıklayabilirsiniz. **Yükleme programı görünürlüğü** için aşama testi sırasında **Normal** ile yüklemeniz ve ardından genel dağıtım için **simge durumuna küçültülmüş** olarak değiştirmeniz önerilir.
+     
      >[!TIP]
-     > İzin verilen çalışma zamanı üst sınırı (varsayılan) 120 dakikadan 30 dakikaya düşürülebilir.
+     >İzin verilen çalışma zamanı üst sınırı (varsayılan) 120 dakikadan 60 dakikaya düşürülebilir.
 
      :::image type="content" source="images/user-experience-in-deployment-type-wizard.png" alt-text="Dağıtım türü sihirbazındaki kullanıcı deneyimini gösteren ekran görüntüsü.":::
 
-12. Gereksinimler'de **İleri'ye** tıklayın.
-13. Bağımlılıklar'da **İleri'ye** tıklayın.
-14. Tamamlama ekranı açılana kadar **İleri'ye** ve ardından **Kapat'a** tıklayın.
-15. Uygulama Sihirbazı tamamlanıncaya kadar İleri'ye tıklamaya devam edin. Tümünün yeşil işaretli olduğunu doğrulayın.
-16. Sihirbazı kapatın, kısa süre önce oluşturulan uygulamaya sağ tıklayın ve alt düzey sunucu koleksiyonunuz için dağıtın.
-     :::image type="content" source="images/deploy-application.png" alt-text="Oluşturulan uygulamanın dağıtımını gösteren ekran görüntüsü." lightbox="images/deploy-application.png":::
-17. MECM>İzleme>Dağıtımlarında bu geçişin durumunu doğrulayın.
+12. Ek gereksinimler ekledikten sonra **İleri'yi** seçin. 
+13. Bağımlılıklar bölümünde **İleri'yi** seçin. 
+14. Tamamlama ekranı **açılana kadar İleri'yi** ve ardından **Kapat'ı** seçin.
+15. Uygulama Sihirbazı tamamlanıncaya kadar **İleri'yi** seçin. Tümünün yeşil işaretli olduğunu doğrulayın.
+16. Sihirbazı kapatın, kısa süre önce oluşturulan uygulamaya sağ tıklayın ve alt düzey sunucu koleksiyonunuz için dağıtın. Yerel olarak, yükleme Yazılım Merkezi'nde onaylanabilir. Ayrıntılar için konumundaki `C:\Windows\CCM\Logs\AppEnforce.log`CM günlüklerine bakın.
 
-      :::image type="content" source="images/deployment-status.png" alt-text="Dağıtım durumu denetimini gösteren ekran görüntüsü." lightbox="images/deployment-status.png":::
+    :::image type="content" source="images/deploy-application.png" alt-text="Oluşturulan uygulamanın dağıtımını gösteren ekran görüntüsü." lightbox="images/deploy-application.png":::
+     
+17. MECM > İzleme > Dağıtımları'nda geçişin durumunu doğrulayın.
+
+    :::image type="content" source="images/deployment-status.png" alt-text="Dağıtım durumu denetimini gösteren ekran görüntüsü." lightbox="images/deployment-status.png":::
+      
+18. Sorun giderme. ETL dosyaları oluşturulur ve bu konumdaki `C:\Windows\ccmcache\#\`her sunucuya otomatik olarak kaydedilir. Bu dosyalar, ekleme sorunlarını gidermek için destek tarafından kullanılabilir.
 
 ## <a name="related-topics"></a>İlgili konular
 

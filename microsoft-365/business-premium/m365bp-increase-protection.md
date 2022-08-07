@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra'de koruma düzeyini artırma konusunda yardım alın
-ms.openlocfilehash: d0bda85aaa6691a16a34dd70434fb4426ad36a09
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 01ea965f8b290b57c3df60e21c88b403b27b5cfd
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892869"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274715"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra için tehdit korumasını artırma
 
@@ -34,7 +34,7 @@ Bu hedefte, Microsoft 365 İş Ekstra ile tehdit korumanızı artırırsınız. 
 - İş gereksinimlerinize uygun olarak tanımlayabileceğiniz [özel güvenlik ilkeleri](#create-custom-security-policies).
 - [SharePoint ve OneDrive dosya ve klasörleri için paylaşım ayarlarınızı ayarlama](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - Belirli dosyaları ve bunların nasıl kullanıldığını izleyen [uyarı ilkeleri](#review-your-alert-policies).
-- [Sonraki adımlar](#next-steps) (yönetilmeyen cihazların güvenliğini sağlama gibi)
+- [Sonraki hedef](#next-objective) (yönetilmeyen cihazların güvenliğini sağlama)
 
 ## <a name="review-and-apply-preset-security-policies"></a>Önceden ayarlanmış güvenlik ilkelerini gözden geçirme ve uygulama
 
@@ -207,6 +207,6 @@ Kuruluşunuzdaki kişilerin takvimlerini paylaşmasını engelleyebilirsiniz. Pa
 
 Kullanıcılarınızın takvimlerini paylaşmasına izin veriliyorsa, Web üzerinde Outlook'dan nasıl paylaşacaklarına [ilişkin bu yönergelere](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) bakın.
 
-## <a name="next-steps"></a>Sonraki adımlar
+## <a name="next-objective"></a>Sonraki hedef
 
-Şimdi [**yönetilmeyen KCG cihazlarını ayarlayalım**](m365bp-devices-overview.md).
+Şimdi [**yönetilmeyen (KCG) cihazları ayarlayalım**](m365bp-devices-overview.md).

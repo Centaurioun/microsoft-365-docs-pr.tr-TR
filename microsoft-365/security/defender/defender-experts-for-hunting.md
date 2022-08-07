@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c3de665a941eb1f1922291b3188a6a7429b5330e
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 899e7052d5091e8ef161dc122b83b6f34532de2c
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67173361"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275878"
 ---
 # <a name="microsoft-defender-experts-for-hunting"></a>Avcılık için Microsoft Defender Uzmanları
 
@@ -45,7 +45,7 @@ Bu yönetilen tehdit avcılığı hizmetine dahil edilen aşağıdaki özellikle
 
 Avlanma için Microsoft Defender Uzmanlarının ortamınızdaki en son gelişmiş tehditleri izlemenize nasıl yardımcı olabileceği hakkında daha fazla bilgi edinmek için [bu kısa videoyu izleyin](https://youtu.be/4t1JgE0X0jc).
 
-Avcılık için Defender Uzmanları diğer Microsoft 365 Defender ürünlerden ayrı olarak satılır. Microsoft 365 Defender bir müşteriyseniz ve Avcılık için Defender Uzmanlarını satın almak istiyorsanız, müşteri ara formunu doldurun.
+Avcılık için Defender Uzmanları diğer Microsoft 365 Defender ürünlerden ayrı olarak satılır. Microsoft 365 Defender bir müşteriyseniz ve Avcılık için Defender Uzmanlar'ı satın almak istiyorsanız müşteri [ilgi alanı formunu](https://aka.ms/DEX4HuntingCustomerInterestForm) doldurun.
 
 ### <a name="next-step"></a>Sonraki adım
 

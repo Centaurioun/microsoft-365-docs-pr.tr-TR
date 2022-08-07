@@ -18,12 +18,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection (EOP) içinde gelen iletilere izin vermek için kullanılabilir ve tercih edilen seçenekler hakkında bilgi edinebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 016257a6cdc3128ba6753532bb0bed74845355d0
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 8c2ef3c1ae6485f5ebdd965aee92bafd5f63233e
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493097"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274868"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP'de güvenilir gönderen listeleri oluşturma
 
@@ -110,7 +110,7 @@ Aşağıdaki örnekte, istenmeyen posta filtrelemeyi atlamak için contoso.com e
 
 Kuruluş ayarı yerine, kullanıcılar veya yöneticiler gönderen e-posta adreslerini posta kutusunda Güvenilir Gönderenler listesine ekleyebilir. Yönergeler için bkz[. Office 365 Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md). Gönderenler filtreleme yığınının bölümlerini atlayacağı için çoğu durumda bu yöntem tercih edilmez. Gönderene güvenseniz de, gönderenin güvenliği tehlikeye girebilir ve kötü amaçlı içerik gönderebilir. Filtrelerimizin her iletiyi denetlemesine izin verdiğinizde ve yanlış [pozitif/negatifi yanlış aldıysak Microsoft'a bildirmeniz](report-junk-email-messages-to-microsoft.md) daha iyi olur. Filtreleme yığınının atlanması da [sıfır saatlik otomatik temizlemeyi (ZAP)](zero-hour-auto-purge.md) engeller.
 
-Tasarım gereği ve Exchange Online posta kutularının daha fazla güvenliği için, yalnızca güvenilir gönderenler, engellenen gönderenler ve engellenen etki alanları için gereksiz e-posta ayarları tanınır. Güvenli etki alanları ayarları yoksayılır.
+Tasarımı gereği ve Exchange Online posta kutularının daha fazla güvenliği için, yalnızca güvenli gönderenler ve güvenli etki alanları, engellenen gönderenler ve engellenen etki alanları için gereksiz e-posta ayarları tanınır. Güvenli posta listesi ayarları yoksayılır.
 
 İletiler, kullanıcının Güvenilir Gönderenler listesinden dolayı istenmeyen posta filtrelemeyi atladığında, **X-Forefront-Antispam-Report** üst bilgi alanı, istenmeyen posta, kimlik sahtekarlığı ve kimlik avı filtrelemesinin atlandığını gösteren değerini `SFV:SFE`içerir.
 

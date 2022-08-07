@@ -2,7 +2,7 @@
 title: Microsoft 365 Defender genel bakış bölümünde Microsoft Tehdit Uzmanları
 ms.reviewer: ''
 description: Microsoft Tehdit Uzmanları, Microsoft 365 Defender için ek bir uzmanlık katmanı sağlar.
-keywords: yönetilen tehdit avcılığı hizmeti, yönetilen tehdit avcılığı, yönetilen algılama ve yanıt (MDR) hizmeti, MTE, Microsoft Tehdit Uzmanları
+keywords: yönetilen tehdit avcılığı hizmeti, yönetilen tehdit avcılığı, yönetilen algılama ve yanıt (MDR) hizmeti, MTE, Microsoft Tehdit Uzmanları, uç nokta saldırı bildirimi, Uç Nokta Saldırısı Bildirimi
 search.product: Windows 10
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 3d60edd7747bddf6afd9d075c051a29a11594edb
-ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
+ms.openlocfilehash: 7c39e6010015a6b645924aec04119b4e5e9c586b
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66843445"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276208"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 365'te Microsoft Tehdit Uzmanları genel bakış
 
@@ -37,6 +37,7 @@ ms.locfileid: "66843445"
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Endpoint Attack Notifications (eski adıyla Microsoft Tehdit Uzmanları - Hedefli Saldırı Bildirimi), yönetilen bir tehdit avcılığı hizmetidir. Başvurduktan ve kabul edildikten sonra Microsoft tehdit uzmanlarından uç nokta saldırısı bildirimleri alırsınız, böylece ortamınıza yönelik kritik tehditleri kaçırmazsınız. Bu bildirimler kuruluşunuzun uç noktalarını, e-postalarını ve kimliklerini korumanıza yardımcı olur.
+
 Microsoft Tehdit Uzmanları – İsteğe Bağlı Uzmanlar, kuruluşunuzun karşılaştığı tehditler hakkında uzman tavsiyeleri almanızı sağlar. Kuruluşunuzun karşılaştığı tehditlerle ilgili yardım alabilirsiniz. Abonelik hizmeti olarak kullanılabilir.
 
 ## <a name="apply-for-endpoint-attack-notifications"></a>Uç Nokta Saldırısı Bildirimleri için Uygula
@@ -54,7 +55,7 @@ Uygulamanız onaylandıktan sonra Tehdit Uzmanları ortamınıza yönelik bir te
 
 ## <a name="receive-endpoint-attack-notification"></a>Uç nokta saldırısı bildirimi alma
 
-Endpoint Attack Notification özelliği, ağınıza yönelik en önemli tehditler için proaktif avcılık sağlar. Tehdit uzmanlarımız insan saldırgan saldırılarını, uygulamalı klavye saldırılarını ve siber saldırı gibi gelişmiş saldırıları avlar. Bu bildirimler yeni bir uyarı olarak gösterilir. Yönetilen tehdit avcılığı hizmeti şunları içerir:
+Endpoint Attack Notification özelliği, ağınıza yönelik en önemli tehditler için proaktif avcılık sağlar. Defender Uzmanlarımız insan saldırgan saldırılarını, uygulamalı klavye saldırılarını ve siber saldırı gibi gelişmiş saldırıları avlar. Bu bildirimler yeni bir uyarı olarak gösterilir. Yönetilen tehdit avcılığı hizmeti şunları içerir:
 
 - Tehdit izleme ve analiz, bekleme süresini ve işletmeniz için riski azaltma
 - Hem bilinen saldırıları hem de yeni ortaya çıkan tehditleri keşfetmek ve hedeflemek için Avcı tarafından eğitilmiş yapay zeka
@@ -63,13 +64,13 @@ Endpoint Attack Notification özelliği, ağınıza yönelik en önemli tehditle
 
 ## <a name="collaborate-with-experts-on-demand"></a>İsteğe bağlı uzmanlarla işbirliği yapma
 
-Ayrıca, hızlı ve doğru bir tehdit yanıtı için doğrudan Microsoft 365 güvenlik portalından Microsoft tehdit uzmanlarıyla iletişime geçebilirsiniz.  Uzmanlar, kuruluşunuzun karşılaşabileceği karmaşık tehditleri daha iyi anlamak için içgörü sağlayabilir.  Bir uzmana başvurarak:
+Doğrudan Microsoft 365 güvenlik portalında **Defender Uzmanlarına Sorun'u** seçin.  Uzmanlar, kuruluşunuzun karşılaşabileceği karmaşık tehditleri daha iyi anlamak için içgörü sağlayabilir.  Defender Uzmanlarından şunu istemelerini isteyin:
 
 - Uyarılar ve olaylar hakkında kök nedenler ve kapsam da dahil olmak üzere ek bilgi toplama
 - Şüpheli cihazlara, uyarılara veya olaylara açıklık getirin ve gelişmiş bir saldırganla karşılaşılması durumunda sonraki adımları izleyin
 - Tehdit aktörleri, kampanyalar veya yeni ortaya çıkan saldırgan teknikleri ile ilgili riskleri ve kullanılabilir korumaları belirleme
 
-**Tehdit uzmanına danışma** seçeneği portal genelinde çeşitli yerlerde kullanılabilir:
+**Defender Uzmanlarına Sor** seçeneği portal genelinde çeşitli yerlerde kullanılabilir:
 
 - <i>**Cihaz sayfası eylemleri menüsü**</i><BR>
 - <i>**Cihaz envanteri sayfası açılır menüsü**</i><BR>

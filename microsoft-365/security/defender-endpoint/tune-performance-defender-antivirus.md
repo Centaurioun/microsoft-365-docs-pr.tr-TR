@@ -1,47 +1,56 @@
 ---
 title: Microsoft Defender Virüsten Koruma için performans çözümleyicisi
-description: Microsoft Defender Virüsten Koruma performansını ayarlama yordamını açıklar.
+description: Microsoft Defender Virüsten Koruma'nın performansını ayarlama yordamını açıklar.
 keywords: tune, performance, uç nokta için microsoft defender, defender virüsten koruma
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
 ms.localizationpriority: medium
-manager: dansimp
 audience: ITPro
+author: jweston-1
+ms.author: v-jweston
+ms.date: 08/13/2022
+manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 558358cca679d9600f9a95c13c4fac6147764b75
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 90e116511f01f0e2a846ca32bcd21675c4b632fb
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013364"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275812"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma için performans çözümleyicisi
 
 **Uygulandığı öğe**
+
 - [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Virüsten Koruma
 
 **Platform**
+
 - Windows
 
 ## <a name="what-is-microsoft-defender-antivirus-performance-analyzer"></a>Microsoft Defender Virüsten Koruma performans çözümleyicisi nedir?
 
-Bazı durumlarda, belirli dosya ve klasörleri tararken Microsoft Defender Virüsten Koruma performansını ayarlamanız gerekebilir. Performans çözümleyicisi, hangi dosyaların, dosya uzantılarının ve işlemlerin tek tek uç noktalarda performans sorunlarına neden olabileceğini saptamaya yardımcı olan bir PowerShell komut satırı aracıdır. Bu bilgiler, performans sorunlarını daha iyi değerlendirmek ve düzeltme eylemleri uygulamak için kullanılabilir.
+Bazı durumlarda, belirli dosya ve klasörleri tararken Microsoft Defender Virüsten Koruma'nın performansını ayarlamanız gerekebilir. Performans çözümleyicisi, hangi dosyaların, dosya uzantılarının ve işlemlerin tek tek uç noktalarda performans sorunlarına neden olabileceğini saptamaya yardımcı olan bir PowerShell komut satırı aracıdır. Bu bilgiler, performans sorunlarını daha iyi değerlendirmek ve düzeltme eylemleri uygulamak için kullanılabilir.
 
 Analiz etmek için bazı seçenekler şunlardır:
 
+- Tarama süresini etkileyen en iyi yollar
 - Tarama süresini etkileyen en önemli dosyalar
 - Tarama süresini etkileyen en önemli işlemler
 - Tarama süresini etkileyen en iyi dosya uzantıları
-- Kombinasyonlar – örneğin uzantı başına en çok kullanılan dosyalar, dosya başına en fazla tarama, işlem başına dosya başına en fazla tarama
-
+- Kombinasyonlar – örneğin:
+  - uzantı başına en çok kullanılan dosyalar
+  - uzantı başına en iyi yollar
+  - yol başına en üstteki işlemler
+  - dosya başına en çok tarama
+  - işlem başına dosya başına en çok tarama
+  
 ## <a name="running-performance-analyzer"></a>Performans çözümleyicisi çalıştırma
 
 Performans çözümleyicisini çalıştırmaya yönelik üst düzey işlem aşağıdaki adımları içerir:
@@ -72,11 +81,11 @@ Sistem olaylarını kaydetmeye başlamak için PowerShell'i yönetim modunda aç
 Komut satırı parametreleri ve seçenekleri hakkında daha fazla bilgi için bkz. [New-MpPerformanceRecording](#new-mpperformancerecording) ve [Get-MpPerformanceReport](#get-mpperformancereport).
 
 > [!NOTE]
-> Kayıt çalıştırırken "Performans Kaydedicisi Windows zaten kayıt olduğundan performans kaydı başlatılamıyor" hatasını alırsanız, yeni komutla var olan izlemeyi durdurmak için aşağıdaki komutu çalıştırın: **wpr -cancel -instancename MSFT_MpPerformanceRecording**
+> Kayıt çalıştırırken "Windows Performans Kaydedicisi zaten kayıtta olduğundan performans kaydı başlatılamıyor" hatasını alırsanız, yeni komutla var olan izlemeyi durdurmak için aşağıdaki komutu çalıştırın: **wpr -cancel -instancename MSFT_MpPerformanceRecording**
 
 ## <a name="performance-tuning-data-and-information"></a>Performans ayarlama verileri ve bilgileri
 
-Sorguya bağlı olarak, kullanıcı tarama sayıları, süre (toplam/min/ortalama/maksimum/ortanca), yol, işlem ve tarama nedeni verilerini görüntüleyebilir. Aşağıdaki resimde tarama etkisi için ilk 10 dosyanın basit bir sorgusu için örnek çıktı gösterilmektedir.
+Sorguya bağlı olarak, kullanıcı tarama sayıları, süre (toplam/min/ortalama/maksimum/ortanca), yol, işlem ve **tarama nedeni verilerini** görüntüleyebilir. Aşağıdaki resimde tarama etkisi için ilk 10 dosyanın basit bir sorgusu için örnek çıktı gösterilmektedir.
 
 :::image type="content" source="images/example-output.png" alt-text="Temel topfiles sorgusu için örnek çıktı" lightbox="images/example-output.png":::
 
@@ -84,6 +93,12 @@ Sorguya bağlı olarak, kullanıcı tarama sayıları, süre (toplam/min/ortalam
 
 Performans çözümleyicisinin sonuçları da dışarı aktarılabilir ve csv veya JSON dosyasına dönüştürülebilir.
 Örnek kodlar aracılığıyla "dışarı aktarma" ve "dönüştürme" işlemini açıklayan örnekler için aşağıya bakın.
+
+Defender sürüm 4.18.2206.X'den başlayarak, kullanıcılar "SkipReason" sütunu altında tarama atlama nedeni bilgilerini görüntüleyebilir. Olası değerler:
+
+1. Atlanmamış
+1. İyileştirme (genellikle performans nedenlerinden dolayı)
+1. Kullanıcı atlandı (genellikle kullanıcı kümesi dışlamaları nedeniyle)
 
 ### <a name="for-csv"></a>CSV için
 
@@ -107,14 +122,14 @@ Microsoft Defender Virüsten Koruma performans çözümleyicisi aşağıdaki ön
 
 ## <a name="powershell-reference"></a>PowerShell başvurusu
 
-Microsoft Defender Virüsten Koruma performansını ayarlamak için kullanılan iki yeni PowerShell cmdlet'i vardır:
+Microsoft Defender Virüsten Koruma'nın performansını ayarlamak için kullanılan iki yeni PowerShell cmdlet'i vardır:
 
 - [New-MpPerformanceRecording](#new-mpperformancerecording)
 - [Get-MpPerformanceReport](#get-mpperformancereport)
 
 ### <a name="new-mpperformancerecording"></a>New-MpPerformanceRecording
 
-Aşağıdaki bölümde New-MpPerformanceRecording yeni PowerShell cmdlet'inin başvurusu açıklanmaktadır. Bu cmdlet Microsoft Defender Virüsten Koruma taramalarının performans kaydını toplar.
+Aşağıdaki bölümde New-MpPerformanceRecording yeni PowerShell cmdlet'inin başvurusu açıklanmaktadır. Bu cmdlet, Microsoft Defender Virüsten Koruma taramalarının performans kaydını toplar.
 
 #### <a name="syntax-new-mpperformancerecording"></a>Söz dizimi: New-MpPerformanceRecording
 
@@ -126,7 +141,7 @@ New-MpPerformanceRecording -RecordTo <String >
 
 Cmdlet, `New-MpPerformanceRecording` Microsoft Defender Virüsten Koruma taramalarının performans kaydını toplar. Bu performans kayıtları Microsoft-Antimalware-Engine ve NT çekirdek işlemi olaylarını içerir ve [Get-MpPerformanceReport](#get-mpperformancereport) cmdlet'i kullanılarak koleksiyondan sonra analiz edilebilir.
 
-Bu `New-MpPerformanceRecording` cmdlet, Microsoft Defender Virüsten Koruma performansında düşüşe neden olabilecek sorunlu dosyalar hakkında içgörü sağlar. Bu araç "OLDUĞU GIBI" sağlanır ve dışlamalarla ilgili öneriler sağlamak üzere tasarlanmamıştır. Dışlamalar uç noktalarınızdaki koruma düzeyini azaltabilir. Varsa dışlamalar dikkatle tanımlanmalıdır.
+Bu `New-MpPerformanceRecording` cmdlet, Microsoft Defender Virüsten Koruma'nın performansında düşüşe neden olabilecek sorunlu dosyalar hakkında içgörü sağlar. Bu araç "OLDUĞU GIBI" sağlanır ve dışlamalarla ilgili öneriler sağlamak üzere tasarlanmamıştır. Dışlamalar uç noktalarınızdaki koruma düzeyini azaltabilir. Varsa dışlamalar dikkatle tanımlanmalıdır.
 
 Performans çözümleyicisi hakkında daha fazla bilgi için bkz. [Performans Analizi](/windows-hardware/test/wpt/windows-performance-analyzer) belgeleri.
 
@@ -213,41 +228,59 @@ Aşağıdaki bölümde Get-MpPerformanceReport PowerShell cmdlet'i açıklanmakt
 
 ```powershell
 Get-MpPerformanceReport    [-Path] <String>
-[-TopScans <Int32>]
-[-TopFiles  <Int32>
-    [-TopScansPerFile <Int32>]
-    [-TopProcessesPerFile  <Int32>
-        [-TopScansPerProcessPerFile <Int32>]
-    ]
-]
-[-TopExtensions  <Int32>
-    [-TopScansPerExtension <Int32>]
-    [-TopProcessesPerExtension <Int32>
-        [-TopScansPerProcessPerExtension <Int32>]
-        ]
-    [-TopFilesPerExtension  <Int32>
-        [-TopScansPerFilePerExtension <Int32>]
-        ]
-    ]
-]
-[-TopProcesses  <Int32>
-    [-TopScansPerProcess <Int32>]
-    [-TopExtensionsPerProcess <Int32>
-        [-TopScansPerExtensionPerProcess <Int32>]
-    ]
-]
-[-TopFilesPerProcess  <Int32>
-    [-TopScansPerFilePerProcess <Int32>]
-]
-[-MinDuration <String>]
-[-Raw]
+    [-TopScans [<Int32>]]
+    [-TopPaths [<Int32>] [-TopPathsDepth [<Int32>]]]
+            [-TopScansPerPath [<Int32>]]
+            [-TopFilesPerPath [<Int32>]
+                    [-TopScansPerFilePerPath [<Int32>]]
+                    ]
+            [-TopExtensionsPerPath [<Int32>]
+                    [-TopScansPerExtensionPerPath [<Int32>]]
+                    ]
+            [-TopProcessesPerPath [<Int32>]
+                    [-TopScansPerProcessPerPath [<Int32>]]
+                    ]
+            ]
+    [-TopFiles [<Int32>]
+            [-TopScansPerFile [<Int32>]]
+            [-TopProcessesPerFile [<Int32>]
+                    [-TopScansPerProcessPerFile [<Int32>]]
+                    ]
+            ]
+    [-TopExtensions [<Int32>]
+            [-TopScansPerExtension [<Int32>]
+            [-TopPathsPerExtension [<Int32>] [-TopPathsDepth [<Int32>]]
+                    [-TopScansPerPathPerExtension [<Int32>]]
+                    ]
+            [-TopProcessesPerExtension [<Int32>]
+                    [-TopScansPerProcessPerExtension [<Int32>]]
+                    ]
+            [-TopFilesPerExtension [<Int32>]
+                    [-TopScansPerFilePerExtension [<Int32>]]
+                    ]
+            ]
+    [-TopProcesses [<Int32>]
+            [-TopScansPerProcess [<Int32>]]
+            [-TopExtensionsPerProcess [<Int32>]
+                    [-TopScansPerExtensionPerProcess [<Int32>]]
+                    ]
+            [-TopPathsPerProcess [<Int32>] [-TopPathsDepth [<Int32>]]
+                    [-TopScansPerPathPerProcess [<Int32>]]
+                    ]
+            [-TopFilesPerProcess [<Int32>]
+                    [-TopScansPerFilePerProcess [<Int32>]]
+                    ]
+            ]
+    [-MinDuration <String>]
+    [-Raw]
+
 ```
 
 #### <a name="description-get-mpperformancereport"></a>Açıklama: Get-MpPerformanceReport
 
-`Get-MpPerformanceReport` Cmdlet, daha önce toplanan Microsoft Defender Virüsten Koruma performans kaydını ([New-MpPerformanceRecording](#new-mpperformancerecording)) analiz eder ve Microsoft Defender Virüsten Koruma taramalarında en yüksek etkiye neden olan dosya yollarını, dosya uzantılarını ve işlemleri raporlar.
+Cmdlet, `Get-MpPerformanceReport` daha önce toplanan bir Microsoft Defender Virüsten Koruma performans kaydını ([New-MpPerformanceRecording](#new-mpperformancerecording)) analiz eder ve Microsoft Defender Virüsten Koruma taramaları üzerinde en yüksek etkiye neden olan dosya yollarını, dosya uzantılarını ve işlemleri bildirir.
 
-Performans çözümleyicisi, Microsoft Defender Virüsten Koruma performansında düşüşe neden olabilecek sorunlu dosyalar hakkında içgörü sağlar. Bu araç "OLDUĞU GIBI" sağlanır ve dışlamalarla ilgili öneriler sağlamak üzere tasarlanmamıştır. Dışlamalar uç noktalarınızdaki koruma düzeyini azaltabilir. Varsa dışlamalar dikkatle tanımlanmalıdır.
+Performans çözümleyicisi, Microsoft Defender Virüsten Koruma'nın performansında düşüşe neden olabilecek sorunlu dosyalar hakkında içgörü sağlar. Bu araç "OLDUĞU GIBI" sağlanır ve dışlamalarla ilgili öneriler sağlamak üzere tasarlanmamıştır. Dışlamalar uç noktalarınızdaki koruma düzeyini azaltabilir. Varsa dışlamalar dikkatle tanımlanmalıdır.
 
 Performans çözümleyicisi hakkında daha fazla bilgi için bkz. [Performans Analizi](/windows-hardware/test/wpt/windows-performance-analyzer) belgeleri.
 
@@ -290,9 +323,45 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:10
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10 -Raw | ConvertTo-Json
 ```
 
-Yukarıdaki komutta -Raw kullanılması, çıkışın makine tarafından okunabilir ve JSON gibi serileştirme biçimlerine dönüştürülebilir olması gerektiğini belirtir
+\-Yukarıdaki komutta Raw kullanılması, çıkışın makine tarafından okunabilir ve JSON gibi serileştirme biçimlerine dönüştürülebilir olması gerektiğini belirtir
 
 #### <a name="parameters-get-mpperformancereport"></a>Parametreler: Get-MpPerformanceReport
+
+##### <a name="-toppaths"></a>-TopPath'ler
+
+Bir üst yol raporu isteğinde bulunur ve çıkış için "Süre" ölçütüne göre sıralanmış en iyi yol sayısını belirtir. Taramaları yollarına ve dizinlerine göre toplar. Kullanıcı, her düzeyde kaç dizin görüntülenmesi gerektiğini ve seçimin derinliğini belirtebilir.
+
+- Tür: Int32
+- Konum: Adlandırılmış
+- Varsayılan değer: Yok
+- İşlem hattı girişini kabul et: False
+- Joker karakterleri kabul et: False
+
+##### <a name="-toppathsdepth"></a>-TopPathsDepth
+
+Toplanan yol sonuçlarını gruplandırmak ve görüntülemek için kullanılacak özyinelemeli derinliği belirtir. Örneğin, "C:\" 1 derinliğine karşılık gelir, "C:\Users\Foo" 3 derinliğe karşılık gelir.
+
+Bu bayrak, diğer tüm Üst Yol seçeneklerine eşlik edebilir. Eksikse varsayılan değer olan 3 varsayılır. Değer 0 olamaz.
+
+- Tür: Int32
+- Konum: Adlandırılmış
+- Varsayılan değer: 3
+- İşlem hattı girişini kabul et: False
+- Joker karakterleri kabul et: False
+
+| Bayrak | Tanımı |
+|:---|:---|  
+|  -**TopScansPerPath** | Her üst yol için en iyi taramaların nasıl belirtileceğini belirtir. |
+|  -**TopFilesPerPath** | Her üst yol için en çok kullanılan dosyaların nasıl belirtileceğini belirtir. |
+|  -**TopScansPerFilePerPath** | "Süre" ölçütüne göre sıralanmış her bir üst yol için her bir üst dosya için kaç tane en çok taramanın çıkışını yapılacağını belirtir |
+|  -**TopExtensionsPerPath** | Her üst yol için kaç tane üst uzantının çıkışını yapılacağını belirtir |
+|  -**TopScansPerExtensionPerPath** | Her üst yol için her üst uzantı için kaç tane ilk taramanın çıkışını yapılacağını belirtir |
+|  -**TopProcessesPerPath** | Her üst yol için kaç tane üst işlem çıkışı yapılacağını belirtir |
+|  -**TopScansPerProcessPerPath** | Her üst yol için her bir üst işlem için kaç tane ilk taramanın çıkışını yapılacağını belirtir |
+|  -**TopPathsPerExtension** | Her üst uzantı için çıkış için en çok kaç yol olduğunu belirtir |
+|  -**TopScansPerPathPerExtension** | Her üst uzantı için her üst yol için kaç tane ilk taramanın çıkışını yapılacağını belirtir |
+|  -**TopPathsPerProcess** | Her bir üst işlem için çıkış için kaç üst yol olduğunu belirtir |
+|  -**TopScansPerPathPerProcess** | Her üst işlem için her üst yol için kaç tane ilk taramanın çıkışını yapılacağını belirtir |
 
 ##### <a name="-minduration"></a>-MinDuration
 
@@ -543,4 +612,4 @@ Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz
 - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 - [Linux'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](linux-preferences.md)
 - [Linux'ta Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-linux.md)
-- [Android özelliklerinde Uç Nokta için Defender'ı](android-configure.md)[yapılandırma iOS özelliklerinde](ios-configure-features.md)-  Uç Nokta için Microsoft Defender yapılandırma
+- [Android'de Uç Nokta için Defender özelliklerini](android-configure.md)-  yapılandırma [iOS özelliklerinde Uç Nokta için Microsoft Defender yapılandırma](ios-configure-features.md)

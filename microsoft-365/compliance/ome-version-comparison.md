@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Bu makale, ileti şifrelemesinin farklı sürümleri arasındaki farkları açıklamaya yardımcı olur.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64a67ac9423463e4fcf1b5a3ff6c2262801933b0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 44eb59a160af9ecbe171e1c9b63f67e6ac608fe0
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629343"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276273"
 ---
 # <a name="compare-versions-of-message-encryption"></a>İleti şifreleme sürümlerini karşılaştırma
 
@@ -105,7 +105,7 @@ Kullanıcılar Outlook Masaüstü, Mac için Outlook ve Web üzerinde Outlook Mi
 
 ## <a name="migrate-from-legacy-ome-to-microsoft-purview-message-encryption"></a>Eski OME'den Microsoft Purview İleti Şifrelemesi geçiş
 
-Her iki sürüm de bir arada bulunabilse de, Microsoft Purview İleti Şifrelemesi kullanmak için **OME'nin önceki sürümünü uygula** kural eylemini kullanan eski posta akışı kurallarınızı düzenlemenizi kesinlikle öneririz. Posta akışı kuralı eylemini **Office 365 İleti Şifrelemesi ve hak koruması uygula** eylemini kullanacak şekilde bu kuralları güncelleştirin. Yönergeler için bkz. [E-posta iletilerini şifrelemek için posta akışı kuralları tanımlama](define-mail-flow-rules-to-encrypt-email.md).
+Her iki sürüm de bir arada bulunabilse de, Microsoft Purview İleti Şifrelemesi kullanmak için **OME'nin önceki sürümünü uygula** kural eylemini kullanan eski posta akışı kurallarınızı düzenlemenizi kesinlikle öneririz. Posta akışı kuralı eylemini kullanmak için bu kuralları **güncelleştirin İleti Şifrelemesi ve hak koruması Office 365 uygula'yı** seçin, RMS şablon listesinden "Şifrele"yi seçin. Yönergeler için bkz. [E-posta iletilerini şifrelemek için posta akışı kuralları tanımlama](define-mail-flow-rules-to-encrypt-email.md).
 
 ## <a name="get-started-with-ome"></a>OME kullanmaya başlama
 

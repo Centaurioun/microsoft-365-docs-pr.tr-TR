@@ -19,26 +19,26 @@ search.appverid:
 - BCS160
 - MET150
 description: Siber saldırıları önlemek için kullanabileceğiniz çok faktörlü kimlik doğrulaması gibi siber güvenlik araçları sağlayan Microsoft 365 İş Ekstra için güvenliğe genel bakış.
-ms.openlocfilehash: ce6bff29fec09da040ca8532d8113a994a5b6237
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: a51a49ff57458734a883ac8fa34142bd1c4bf2d3
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894065"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276503"
 ---
 # <a name="bump-up-security"></a>Güvenliği artırın
 
-Bu görevde, güvenlik savunmalarını ayarladın. Yönetici hesap erişimi, düşman bilgisayar korsanları için yüksek değerli bir hedeftir ve bu hesapların korunması kritik öneme sahiptir çünkü sağladıkları erişim ve denetim tüm sistemi etkileyebilir. E-posta içeriğinizi ve cihazlarınızı da korumanız gerekir.
+:::image type="content" source="media/mission2.png" alt-text="Microsoft 365 İş Ekstra ile güvenlik korumanızı artırın.":::
 
-Bu görevde başarılı olmak için farklı yönetici rollerini ve bunlar için belirli güvenlik düzeylerini ayarlayacaksınız. Ayrıca çok faktörlü kimlik doğrulaması (MFA) gereksinimlerini zorunlu kılıp güvenlik varsayılanlarınızı ayarlayacaksınız. Dikkatli olun - sistemin güvenliği ve güvenilirliği size dayanır.
+Bu görevde, güvenlik savunmalarınızı güçlendirirsiniz. İlk olarak güvenlik varsayılanlarını veya Koşullu Erişim'i kullanarak çok faktörlü kimlik doğrulaması (MFA) gereksinimlerini zorunlu tutmanız gerekir. Farklı yönetici rollerini ve bunlar için belirli güvenlik düzeylerini ayarlayacaksınız. Yönetici hesap erişimi, düşman bilgisayar korsanları için yüksek değerli bir hedeftir ve bu hesapların korunması kritik öneme sahiptir çünkü sağladıkları erişim ve denetim tüm sistemi etkileyebilir. Ayrıca, e-posta içeriğinizi ve cihazlarınızı korursunuz.
 
-Bu görevin hedefleri şunlardır:
+Dikkatli olun - sistemin güvenliği ve güvenilirliği size dayanır.
 
+Hedefleriniz şunlardır:
+
+- [Güvenlik varsayılanlarını](m365bp-conditional-access.md) (MFA) açın.
 - [Yönetici hesaplarınızı koruyun](m365bp-protect-admin-accounts.md).
-- [Güvenlik varsayılanlarını açın](m365bp-conditional-access.md).
 - [Kötü amaçlı yazılımlara ve diğer tehditlere karşı koruma sağlayın](m365bp-increase-protection.md).
 
-Bu hedeflere ulaşıp [bir sonraki görevinize](m365bp-devices-overview.md) başlayın.
-
-:::image type="content" source="media/m365bp-bump-up-protection.jpg" alt-text="Güvenliği yükselt.":::
+Bu hedeflere ulaştıktan sonra [Yönetilmeyen (KCG) cihazları ayarlama](m365bp-devices-overview.md) bölümüne geçin.
 

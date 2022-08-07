@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Yeni ve etiketsiz belgeler için SharePoint belge kitaplığı için varsayılan duyarlılık etiketini yapılandırın.
-ms.openlocfilehash: cbe3dab1ff70b55f85727649883beab0d2fdc456
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 4ffb0dacac36c79593a8cdfbeed0f4360e246f35
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67172436"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276447"
 ---
 # <a name="configure-a-default-sensitivity-label-for-a-sharepoint-document-library"></a>SharePoint belge kitaplığı için varsayılan duyarlılık etiketini yapılandırma
 
@@ -30,7 +30,7 @@ ms.locfileid: "67172436"
 > [!NOTE]
 > Bu özellik önizleme aşamasında aşamalı olarak kullanıma sunulmuştur ve değiştirilebilir. Ayrıca, özellik genel kullanıma sunulduğunda (GA) lisans ayrıntılarının sağlandığı premium bir özelliktir.
 > 
-> Önizleme duyurusunu okumak için [Yammer gönderisine](https://www.yammer.com/askipteam/threads/1846702701985792) bakın.
+> Önizleme duyurusunu okumak için [blog gönderisine](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/public-preview-default-label-for-a-document-library-in/ba-p/3585136) bakın.
 
 [SharePoint duyarlılık etiketleri için etkinleştirildiğinde](sensitivity-labels-sharepoint-onedrive-files.md), belge kitaplıkları için varsayılan bir etiket yapılandırabilirsiniz. Ardından, bu kitaplığa yüklenen tüm yeni dosyalar veya kitaplıkta düzenlenen mevcut dosyalar, duyarlılık etiketi yoksa veya duyarlılık etiketine sahipse ancak [daha düşük öncelikliyse](sensitivity-labels.md#label-priority-order-matters) bu etiket uygulanır.
 
@@ -79,7 +79,7 @@ Sonuçların özeti:
 
 Mevcut belge kitaplığı için:
 
-1. SharePoint'te **, Ayarlar**'> belge kitaplığına gidin.
+1. SharePoint'te, belge kitaplığı \> **Ayarlar** \> **Kitaplığı ayarlarına** gidin.
 
 2. **Kitaplık ayarları** açılır bölmesinde **Varsayılan duyarlılık etiketleri'ni** seçin ve ardından açılan kutudan bir etiket seçin. Örneğin:
     

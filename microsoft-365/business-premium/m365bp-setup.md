@@ -9,24 +9,24 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/01/2022
+ms.date: 08/05/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 8c5e3436c4055b466ab9e17fd5d4a958a5a25edc
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: b123f7e13a8a3fa3c796f3ce2ff02ea2ca125872
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112471"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275044"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'yı ayarlama
 
 [Deneme sürümü başlattıktan veya Microsoft 365 İş Ekstra satın](get-microsoft-365-business-premium.md) aldıktan sonra, bir sonraki adımınız her şeyi ayarlamaktır. Kullanabileceğiniz çeşitli seçenekler vardır. Şunları yapabilirsiniz:
 
-- Temel kurulum ve yapılandırma için [destekli kurulum deneyimiyle](m365bp-setup.md#guided-setup-process) başlayın ve ardından [Güvenliği artırma](m365bp-security-overview.md) bölümüne geçin; veya
+- Temel kurulum ve yapılandırma için [destekli kurulum deneyimiyle](m365bp-setup.md#guided-setup-process) başlayın ve ardından [Güvenliği artırma](m365bp-security-overview.md) bölümüne geçin; Veya
 - Her şeyi ayarlamanıza ve yapılandırmanıza yardımcı olabilecek [bir Microsoft iş ortağıyla çalışın](m365bp-setup.md#work-with-a-microsoft-partner).
 
 ## <a name="before-you-begin"></a>Başlamadan önce
@@ -38,20 +38,23 @@ Kurulum işleminize başlamadan önce aşağıdaki gereksinimleri karşıladığ
 | Abonelik | kampanyalar için Microsoft 365 İş Ekstra veya Microsoft 365 <br/><br/> Deneme sürümü başlatmak veya aboneliğinizi satın almak için aşağıdaki makalelere bakın: <br/>- [Microsoft 365 İş Ekstra alın](get-microsoft-365-business-premium.md)<br/>- [Kampanyalar için Microsoft 365'i edinin](get-microsoft-365-campaigns.md) |
 | İzinler  | İlk kurulum işlemini tamamlamak için Genel Yönetici olmanız gerekir. [Yönetici rolleri hakkında daha fazla bilgi edinin](../admin/add-users/about-admin-roles.md). |
 | Tarayıcı gereksinimleri | Microsoft Edge, Safari, Chrome veya Firefox. [Tarayıcı gereksinimleri hakkında daha fazla bilgi edinin](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| İşletim sistemi | **Windows**: Windows 11, Windows 10, Windows 8.1<br/>**macOS: macOS'un** en son üç sürümünden biri <br/>Şu anda Microsoft 365 İş Ekstra ve İş için Microsoft Defender tek başına sürümü sunucuları desteklemez.  |
+| İşletim sistemleri (istemci) | **Windows**: Windows 11, Windows 10, Windows 8.1<br/>**macOS: macOS'un** en son üç sürümünden biri 
+| İşletim sistemleri (sunucular) | Windows Server veya Linux Server <br/>- İş için Microsoft Defender sunucuları gerektirir (şu anda önizleme aşamasındadır)<br/>- Bkz. [İş için Microsoft Defender sunucuları alma (önizleme).](../security/defender-business/get-defender-business-servers.md)  |
 
 > [!NOTE]
 > Microsoft 365, Office ve sistem gereksinimleri hakkında daha ayrıntılı bilgi için bkz. [Microsoft 365 ve Office Kaynakları](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## <a name="guided-setup-process"></a>Destekli kurulum işlemi
 
-Microsoft 365 İş Ekstra destekli bir işlem içerir. Aşağıdaki videoda, Microsoft 365 İş Ekstra için de geçerli olan Microsoft 365 İş Standart için kılavuzlu kurulum işlemi gösterilmektedir. Kılavuzlu kurulum işlemini tamamladıktan sonra [güvenliği artırmaya](m365bp-security-overview.md) devam ettiğinizden emin olun.<br/><br/>
+Microsoft 365 İş Ekstra destekli bir işlem içerir. Aşağıdaki videoda, Microsoft 365 İş Ekstra için de geçerli olan Microsoft 365 İş Standart için kılavuzlu kurulum işlemi gösterilmektedir. <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
+Kılavuzlu kurulum işlemini tamamladıktan sonra [güvenliği artırmaya](m365bp-security-overview.md) devam ettiğinizden emin olun.
+
 > [!TIP]
 > - Kullanıcıları ekledikten sonra, onlara [Çalışan hızlı kurulum kılavuzunun](../admin/setup/employee-quick-setup.md) bağlantısını verin. Kılavuz, oturum açma, Office uygulamalarını alma ve dosyaları kaydetme, kopyalama ve paylaşma işlemlerinde onlara yol gösterir.
-> - [Güvenliği artırma'ya](m365bp-security-overview.md) devam edin.
+
 
 ## <a name="work-with-a-microsoft-partner"></a>Bir Microsoft iş ortağıyla çalışma
 
@@ -76,6 +79,6 @@ Microsoft 365'i edinme ve ayarlama konusunda bir Microsoft iş ortağı yardım�
 - [Self servis parolaları ayarlama](../admin/add-users/let-users-reset-passwords.md)
 - [Self servis grup yönetimini ayarlama](/azure/active-directory/enterprise-users/groups-self-service-management)
 
-### <a name="next-objective"></a>Sonraki hedef
+## <a name="next-objective"></a>Sonraki hedef
 
-Bu hedeflere ulaştıktan sonra [Güvenliği artırma](m365bp-security-overview.md) bölümüne geçin.
+[Güvenliği artır'a](m365bp-security-overview.md) geçin.

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 022c5854c955ed9b0faef16455be1af3a81b0997
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 574a3b1206212b627176b4d85555f6acc15ebda6
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487299"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276950"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Cihaz başına değerlendirme yöntemlerini ve özelliklerini dışarı aktarma
 
@@ -32,11 +32,11 @@ ms.locfileid: "66487299"
 - [Microsoft Defender Güvenlik Açığı Yönetimi](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="api-description"></a>API açıklaması
 
-Cihaz başına Tehdit ve Güvenlik Açığı Yönetimi verileri çeken API'ler hakkında yöntemler ve özellik ayrıntıları sağlar. Farklı veri türlerini almak için farklı API çağrıları vardır. Genel olarak, her API çağrısı kuruluşunuzdaki cihazlar için gerekli verileri içerir.
+Cihaz başına güvenlik açığı yönetim verilerini çeken API'ler hakkında yöntemler ve özellik ayrıntıları sağlar. Farklı veri türlerini almak için farklı API çağrıları vardır. Genel olarak, her API çağrısı kuruluşunuzdaki cihazlar için gerekli verileri içerir.
 
 > [!NOTE]
 > Aksi belirtilmedikçe, listelenen tüm dışarı aktarma değerlendirme yöntemleri **_tam dışarı aktarma_** ve **_cihaza göredir_** ( **_cihaz başına_** olarak da adlandırılır).
@@ -46,6 +46,7 @@ Farklı bilgi türlerini almak (dışarı aktarmak) için dışarı aktarma değ
 - [1. Güvenli yapılandırma değerlendirmeyi dışarı aktarma](#1-export-secure-configurations-assessment)
 - [2. Yazılım envanteri değerlendirmeyi dışarı aktarma](#2-export-software-inventory-assessment)
 - [3. Yazılım güvenlik açıklarını dışarı aktarma değerlendirmesi](#3-export-software-vulnerabilities-assessment)
+- [4. Ürün kodu olmayan yazılım envanteri değerlendirmeyi dışarı aktarma](#4-export-non-product-code-software-inventory-assessment)
 
 Dışarı aktarma bilgileri türlerine karşılık gelen API'ler 1, 2 ve 3. bölümlerde açıklanmıştır.
 
@@ -84,7 +85,7 @@ deviceName|Dize|Cihazın tam etki alanı adı (FQDN).
 isApplicable|Bool|Yapılandırmanın veya ilkenin geçerli olup olmadığını gösterir.
 isCompliant|Bool|Yapılandırmanın veya ilkenin düzgün yapılandırılıp yapılandırılmadığını gösterir.
 isExpectedUserImpact|Bool|Yapılandırmanın uygulanıp uygulanmayacağını kullanıcının etkilenip etkilenmediğini gösterir.
-osPlatform|Dize|Cihazda çalışan işletim sisteminin platformu. Windows 10 ve Windows 11 gibi aynı aile içinde varyasyonları olan belirli işletim sistemleri. Ayrıntılar için bkz. TVM tarafından desteklenen işletim sistemleri ve platformlar.
+osPlatform|Dize|Cihazda çalışan işletim sisteminin platformu. Windows 10 ve Windows 11 gibi aynı aile içinde varyasyonları olan belirli işletim sistemleri. Ayrıntılar için [bkz. Desteklenen işletim sistemleri, platformlar ve özellikler](../defender-vulnerability-management/tvm-supported-os.md) .
 osVersion|Dize|Cihazda çalışan işletim sisteminin belirli bir sürümü.
 rbacGroupName|Dize|Rol tabanlı erişim denetimi (RBAC) grubu. Cihaz herhangi bir RBAC grubuna atanmamışsa, değer "Atanmamış" olur. Kuruluş herhangi bir RBAC grubu içermiyorsa, değer "Yok" olur.
 rbacGroupId|Dize|Rol tabanlı erişim denetimi (RBAC) grup kimliği.
@@ -119,7 +120,7 @@ DiskPath'ler|Dizi[dize]|Ürünün cihaza yüklendiğini gösteren disk kanıtı.
 EndOfSupportDate|Dize|Bu yazılım için desteğin sona ereceği veya sona ereceği tarih.
 EndOfSupportStatus|Dize|Destek sonu durumu. Şu olası değerleri içerebilir: Yok, EOS Sürümü, Yaklaşan EOS Sürümü, EOS Yazılımı, Yaklaşan EOS Yazılımı.
 NumberOfWeaknesses|Int|Bu cihazdaki bu yazılımdaki zayıflıkların sayısı.
-OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu; Windows 10 ve Windows 11 gibi aynı aile içindeki varyasyonlara sahip belirli işletim sistemleri. Ayrıntılar için bkz. tvm tarafından desteklenen işletim sistemleri ve platformlar.
+OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu; Windows 10 ve Windows 11 gibi aynı aile içindeki varyasyonlara sahip belirli işletim sistemleri. Ayrıntılar için [bkz. Desteklenen işletim sistemleri, platformlar ve özellikler](../defender-vulnerability-management/tvm-supported-os.md) .
 RbacGroupName|Dize|Rol tabanlı erişim denetimi (RBAC) grubu. Bu cihaz herhangi bir RBAC grubuna atanmazsa, değer "Atanmamış" olur. Kuruluş herhangi bir RBAC grubu içermiyorsa, değer "Yok" olur.
 rbacGroupId|Dize|Rol tabanlı erişim denetimi (RBAC) grup kimliği.
 RegistryPaths|Dizi[dize]|Ürünün cihaza yüklendiğine dair kayıt defteri kanıtı.
@@ -160,7 +161,7 @@ ExploitabilityLevel|Dize|Bu güvenlik açığının kötüye kullanılabilirlik 
 FirstSeenTimestamp|Dize|Bu ürünün CVE'i cihazda ilk kez görüldü.
 Kimlik|Dize|Kayıt için benzersiz tanımlayıcı.
 LastSeenTimestamp|Dize|CVE'nin cihazda son görüldüğü zaman.
-OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu; Windows 10 ve Windows 11 gibi aynı aile içindeki varyasyonlara sahip belirli işletim sistemleri. Ayrıntılar için bkz. tvm tarafından desteklenen işletim sistemleri ve platformlar.
+OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu; Windows 10 ve Windows 11 gibi aynı aile içindeki varyasyonlara sahip belirli işletim sistemleri. Ayrıntılar için [bkz. Desteklenen işletim sistemleri, platformlar ve özellikler](../defender-vulnerability-management/tvm-supported-os.md) .
 RbacGroupName|Dize|Rol tabanlı erişim denetimi (RBAC) grubu. Bu cihaz herhangi bir RBAC grubuna atanmazsa, değer "Atanmamış" olur. Kuruluş herhangi bir RBAC grubu içermiyorsa, değer "Yok" olur.
 rbacGroupId|Dize|Rol tabanlı erişim denetimi (RBAC) grup kimliği.
 RecommendationReference|Dize|Bu yazılımla ilgili öneri kimliğine başvuru.
@@ -194,7 +195,7 @@ ExploitabilityLevel|Dize|Güvenlik açığının kötüye kullanılabilirlik dü
 FirstSeenTimestamp|Dize|Ürünün CVE'i cihazda ilk kez görüldü.
 Kimlik|Dize|Kayıt için benzersiz tanımlayıcı.  
 LastSeenTimestamp|Dize|CVE'nin cihazda son görüldüğü zaman.
-OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu; Windows 10 ve Windows 11 gibi aynı aile içindeki varyasyonlara sahip belirli işletim sistemleri. Ayrıntılar için bkz. tvm tarafından desteklenen işletim sistemleri ve platformlar.
+OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu; Windows 10 ve Windows 11 gibi aynı aile içindeki varyasyonlara sahip belirli işletim sistemleri. Ayrıntılar için [bkz. Desteklenen işletim sistemleri, platformlar ve özellikler](../defender-vulnerability-management/tvm-supported-os.md) .
 RbacGroupName|Dize|Rol tabanlı erişim denetimi (RBAC) grubu. Bu cihaz herhangi bir RBAC grubuna atanmazsa, değer "Atanmamış" olur. Kuruluş herhangi bir RBAC grubu içermiyorsa, değer "Yok" olur.
 RecommendationReference|Dize|Bu yazılımla ilgili öneri kimliğine başvuru.
 RecommendedSecurityUpdate |Dize|Güvenlik açığını gidermek için yazılım satıcısı tarafından sağlanan güvenlik güncelleştirmesinin adı veya açıklaması.
@@ -206,11 +207,44 @@ SoftwareVersion|Dize|Yazılım ürününün sürüm numarası.
 Durum|Dize|**Yeni** (cihazda kullanıma sunulan yeni bir güvenlik açığı için). **Düzeltildi** (cihazda artık mevcut olmayan ve düzeltildiği anlamına gelen bir güvenlik açığı için). **Güncelleştirildi** (değiştirilen bir cihazdaki güvenlik açığı için. Olası değişiklikler şunlardır: CVSS puanı, kötüye kullanılabilirlik düzeyi, önem düzeyi, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
 VulnerabilitySeverityLevel|Dize|CVSS puanına ve tehdit ortamının etkilediği dinamik faktörlere bağlı olarak güvenlik açığına atanan önem düzeyi.
 
+## <a name="4-export-non-product-code-software-inventory-assessment"></a>4. Ürün kodu olmayan yazılım envanteri değerlendirmeyi dışarı aktarma
+
+[Ortak Platform Numaralandırması (CPE)](https://nvd.nist.gov/products/cpe) olmayan yüklü yazılımların tümünü ve bunların ayrıntılarını her cihazda döndürür.
+
+### <a name="41-methods"></a>4.1 Yöntemleri
+
+|Yöntem|Veri türü|Açıklama|
+|:---|:---|:---|
+|Ürün kodu olmayan yazılım envanteri değerlendirmeyi **dışarı aktarma (JSON yanıtı)**|Cihaz koleksiyonuna göre ürün kodu olmayan yazılım envanteri. Bkz. [4.2 Özellikleri (JSON yanıtı)](#42-properties-json-response)|DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion'ın her benzersiz bileşimi için bir giriş içeren bir tablo döndürür. API, kuruluşunuzdaki tüm verileri JSON yanıtları olarak çeker. Bu yöntem, 100 K'den az cihazı olan küçük kuruluşlar için en iyisidir. Yanıt sayfalandırılır, böylece yanıttan @odata.nextLink alanını kullanarak sonraki sonuçları getirebilirsiniz. |
+| Ürün kodu olmayan yazılım envanteri değerlendirmeyi **dışarı aktarma (dosyalar aracılığıyla)**|Cihaz dosyalarına göre ürün kodu olmayan yazılım envanteri. Bkz. [4.3 Özellikleri (dosyalar aracılığıyla)](#43-properties-via-files)|DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion'ın her benzersiz bileşimi için bir giriş içeren bir tablo döndürür. Bu API çözümü, daha fazla miktarda veriyi daha hızlı ve daha güvenilir bir şekilde çekmenizi sağlar. Bu nedenle, 100 K'den fazla cihazı olan büyük kuruluşlar için önerilir. Bu API, kuruluşunuzdaki tüm verileri indirme dosyaları olarak çeker. Yanıt, Azure Depolama'dan tüm verileri indirmek için URL'ler içerir. Bu API, Azure Depolama'dan aşağıdaki gibi veri indirmenize olanak tanır: <ol><li>Kuruluş verilerinizle birlikte indirme URL'lerinin listesini almak için API'yi çağırın</li><li>İndirme URL'lerini kullanarak dosyaları indirin ve verileri istediğiniz gibi işleyin.</li></ol> |
+
+### <a name="42-properties-json-response"></a>4.2 Özellikleri (JSON yanıtı)
+
+Özellik (Kimlik)|Veri türü|Açıklama
+:---|:---|:---
+Deviceıd|Dize|Hizmetteki cihaz için benzersiz tanımlayıcı.
+DeviceName|Dize|Cihazın tam etki alanı adı (FQDN).
+OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu. Bunlar, Windows 10 ve Windows 11 gibi aynı aile içinde varyasyonları olan belirli işletim sistemleridir. Ayrıntılar için [bkz. Desteklenen işletim sistemleri, platformlar ve özellikler](../defender-vulnerability-management/tvm-supported-os.md) .
+RbacGroupName|Dize|Rol tabanlı erişim denetimi (RBAC) grubu. Bu cihaz herhangi bir RBAC grubuna atanmamışsa, değer "Atanmamış" olur. Kuruluş herhangi bir RBAC grubu içermiyorsa, değer "Yok" olur.
+RbacGroupId|Dize|Rol tabanlı erişim denetimi (RBAC) grup kimliği.
+SoftwareLastSeenTimestamp|Dize|Bu yazılımın cihazda son görüldüğü zaman.
+SoftwareName|Dize|Yazılım ürününün adı.
+SoftwareVendor|Dize|Yazılım satıcısının adı.
+SoftwareVersion|Dize|Yazılım ürününün sürüm numarası.
+
+### <a name="43-properties-via-files"></a>4.3 Özellikler (dosyalar aracılığıyla)
+
+Özellik (Kimlik)|Veri türü|Açıklama
+:---|:---|:---
+Dosyaları dışarı aktarma|dizi\[dizesi\]|Kuruluşun geçerli anlık görüntüsünü içeren dosyalar için indirme URL'lerinin listesi.
+GeneratedTime|Dize|Dışarı aktarmanın oluşturulduğu zaman.
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Cihaz başına güvenli yapılandırma değerlendirmelerini dışarı aktarma](get-assessment-secure-config.md)
 - [Cihaz başına yazılım envanteri değerlendirmeyi dışarı aktarma](get-assessment-software-inventory.md)
 - [Cihaz başına yazılım güvenlik açıkları değerlendirmesi dışarı aktarma](get-assessment-software-vulnerabilities.md)
+- [Cihaz başına cpe olmayan yazılım envanteri değerlendirmeyi dışarı aktarma](get-assessment-non-cpe-software-inventory.md)
 
 Diğer ilgililer
 

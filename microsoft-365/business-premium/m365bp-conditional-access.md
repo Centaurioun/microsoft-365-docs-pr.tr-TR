@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/05/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Güvenlik varsayılanlarının, Microsoft 365 İş Ekstra için önceden yapılandırılmış güvenlik ayarları sağlayarak kuruluşunuzun kimlikle ilgili saldırılara karşı korunmasına nasıl yardımcı olabileceğini öğrenin.
-ms.openlocfilehash: ec7e132f2f7a8a98f5950682165c05dba83cbc8f
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 7c73b40d73ec022b2047ceb3998b7d82ceab56e8
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892737"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276010"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Güvenlik varsayılanları ve çok faktörlü kimlik doğrulaması
 
@@ -102,4 +102,4 @@ Koşullu Erişim hakkında daha fazla bilgi edinmek için bkz. [Koşullu Erişim
 
 ## <a name="next-objective"></a>Sonraki hedef
 
-[Kötü amaçlı yazılımlara ve diğer tehditlere karşı korumanın](m365bp-increase-protection.md) yollarını ayarlayın.
+[Microsoft 365 İş Ekstra'de yönetici hesaplarınızı koruma](m365bp-protect-admin-accounts.md)

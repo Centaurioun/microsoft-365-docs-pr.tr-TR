@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Azure ve OneDrive İş'de Microsoft Whiteboard için veri saklama hakkında bilgi edinin.
-ms.openlocfilehash: 88ebe6de6983823e6f782f006ac2aa58cfe9af93
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: e79c0250d896d479047ec4465a81643dd2ba26d5
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943056"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276098"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Microsoft Whiteboard için verileri yönetme
 
@@ -25,7 +25,7 @@ Whiteboard içeriği hem Azure'da hem de OneDrive İş depolanır. Yeni beyaz ta
 
 ## <a name="azure-storage-overview"></a>Azure depolamaya genel bakış
 
-Whiteboard şu anda içeriği Azure'da güvenli bir şekilde depolar. Veriler ülkeye ve Whiteboard'un bu konumlarda yeni içerik depolamaya geçişine bağlı olarak farklı konumlarda depolanabilir. Yeni verilerin nerede oluşturulduğunu denetlemek için bkz. [Microsoft 365 müşteri verilerinizin depolandığı yer](/microsoft-365/enterprise/o365-data-locations). 
+Whiteboard şu anda içeriği Azure'da güvenli bir şekilde depolar. Veriler ülkeye ve Whiteboard'un bu konumlarda yeni içerik depolamaya geçişine bağlı olarak farklı konumlarda depolanabilir. Yeni verilerin nerede oluşturulduğunu denetlemek için bkz. [Microsoft 365 müşteri verilerinizin depolandığı yer](/microsoft-365/enterprise/o365-data-locations).
 
 Azure'daki içerik Veri Kaybı Önleme (DLP), eBulma, bekletme ilkeleri ve benzer özellikleri desteklemez. İçerik [Whiteboard PowerShell cmdlet'leri](/powershell/module/whiteboard/) kullanılarak yönetilebilir ve zaman içinde bu içeriğin OneDrive İş geçirilmesi veya silinmesi gerekir.
 
@@ -38,13 +38,13 @@ Kullanıcının hesabı Azure'da silindiğinde beyaz tahtaların depolanma şekl
 
 **1 Haziran 2022** itibarıyla Azure'da beyaz tahtaların davranışı değişti. Diğer kullanıcılarla paylaşılan tüm beyaz tahtalar silinir.
 
-Silinen bir kullanıcının beyaz tahtalarını korumak istiyorsanız, hesabı silmeden *önce* sahipliği aktarabilirsiniz. Tek bir beyaz tahtayı veya tümünü başka bir kullanıcıya aktarabilirsiniz. 
+Silinen bir kullanıcının beyaz tahtalarını korumak istiyorsanız, hesabı silmeden *önce* sahipliği aktarabilirsiniz. Tek bir beyaz tahtayı veya tümünü başka bir kullanıcıya aktarabilirsiniz.
 
 - [Tüm beyaz tahtaları aktarmak](/powershell/module/whiteboard/invoke-transferallwhiteboards) için bu yönergeleri izleyin.
 
 - Kullanıcı hesaplarını silme hakkında daha fazla bilgi için bkz. [Kuruluşunuzdan kullanıcı silme](/microsoft-365/admin/add-users/delete-a-user).
 
-Tüm silme işlemlerinin veya betiğin bu değişikliği işlediğini doğrulayın. Beyaz tahtaların silinmesiyle ilgili bir sorun yoksa herhangi bir işlem yapmanız gerekmez. 
+Tüm silme işlemlerinin veya betiğin bu değişikliği işlediğini doğrulayın. Beyaz tahtaların silinmesiyle ilgili bir sorun yoksa herhangi bir işlem yapmanız gerekmez.
 
 ## <a name="onedrive-for-business-storage-overview"></a>OneDrive İş depolamaya genel bakış
 
@@ -54,7 +54,7 @@ Sağlanan OneDrive İş olmayan kullanıcılar, bu değişiklik uygulandığınd
 
 Ortalama beyaz tahta boyutu 50 KB ile 1 MB arasında olabilir ve OneDrive İş içeriğinizin bulunduğu her yerde bulunabilir. Kiracınızın verilerinin nerede depolandığını denetlemek için bkz. [Microsoft 365 müşteri verilerinizin depolandığı yer](/microsoft-365/enterprise/o365-data-locations). Ardından OneDrive İş konumuna bakın.
 
-### <a name="controls-for-onedrive-for-business-storage"></a>OneDrive İş depolama denetimleri 
+### <a name="controls-for-onedrive-for-business-storage"></a>OneDrive İş depolama denetimleri
 
 Mevcut OneDrive İş denetimlerini kullanarak Whiteboard verilerini yönetebilirsiniz. Daha fazla bilgi için bkz. [Kuruluşlar için OneDrive kılavuzu](/onedrive/plan-onedrive-enterprise).
 
@@ -67,7 +67,7 @@ Bugün desteklenen veri denetimleri:
 - Bekletme ilkeleri
 - Kota
 - Yasal tutma
-- DLP
+- Dlp
 - Temel eBulma – .whiteboard dosyaları, oluşturucunun OneDrive İş dosya olarak depolanır. Anahtar sözcük ve dosya türü araması için dizine eklenmiştir, ancak önizleme veya gözden geçirme için kullanılamaz. Dışarı aktarma işleminin ardından, bir yöneticinin içeriği görüntülemek için dosyayı OneDrive İş'a geri yüklemesi gerekir. Gelecekte ek destek planlanıyor.
 
 Gelecek sürümler için planlanan veri denetimleri:
@@ -83,5 +83,3 @@ Gelecek sürümler için planlanan veri denetimleri:
 [Whiteboard için paylaşımı yönetme](manage-sharing-organizations.md)
 
 [Windows'da Whiteboard'ı dağıtma](deploy-on-windows-organizations.md)
-
-

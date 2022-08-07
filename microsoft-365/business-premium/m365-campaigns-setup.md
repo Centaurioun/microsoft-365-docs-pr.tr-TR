@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/05/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Kampanyalar veya diğer işletmeler için Microsoft 365 İş kurulumuna genel bakış
-ms.openlocfilehash: b22519c023b53a284611e7efe38f078bee70799f
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 90de3294ffb7bfe1ebc2890375433ba432cdca4c
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893045"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276842"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>Kampanyalar için Microsoft 365 İş kurulumu
 
-[Kampanyalar için Microsoft 365'e abone olduğunuza](get-microsoft-365-campaigns.md) göre, bir sonraki adımınız her şeyi ayarlamaktır.
+[Kampanyalar için Microsoft 365'e abone](get-microsoft-365-campaigns.md) olduktan sonra, sonraki adımınız her şeyi ayarlamaktır.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -40,7 +40,8 @@ Kurulum işleminize başlamadan önce aşağıdaki gereksinimleri karşıladığ
 | Abonelik | kampanyalar için Microsoft 365 İş Ekstra veya Microsoft 365 <br/><br/> Deneme sürümü başlatmak veya aboneliğinizi satın almak için aşağıdaki makalelere bakın: <br/>- [Microsoft 365 İş Ekstra alın](get-microsoft-365-business-premium.md)<br/>- [Kampanyalar için Microsoft 365'i edinin](get-microsoft-365-campaigns.md) |
 | İzinler  | İlk kurulum işlemini tamamlamak için Genel Yönetici olmanız gerekir. [Yönetici rolleri hakkında daha fazla bilgi edinin](../admin/add-users/about-admin-roles.md). |
 | Tarayıcı gereksinimleri | Microsoft Edge, Safari, Chrome veya Firefox. [Tarayıcı gereksinimleri hakkında daha fazla bilgi edinin](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| İşletim sistemi | **Windows**: Windows 11, Windows 10, Windows 8.1, Windows Server 2019 veya üzeri veya Windows Server 2016<br/><br/>**Mac**: macOS'un en son üç sürümünden biri |
+| İşletim sistemleri (istemci) | **Windows**: Windows 11, Windows 10, Windows 8.1<br/>**macOS: macOS'un** en son üç sürümünden biri 
+| İşletim sistemleri (sunucular) | Windows Server veya Linux Server <br/>- İş için Microsoft Defender sunucuları gerektirir (şu anda önizleme aşamasındadır)<br/>- Bkz. [İş için Microsoft Defender sunucuları alma (önizleme).](../security/defender-business/get-defender-business-servers.md)  |
 
 > [!TIP]
 > Microsoft 365, Office ve sistem gereksinimleri hakkında daha ayrıntılı bilgi için bkz. [Microsoft 365 ve Office Kaynakları](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
@@ -99,4 +100,4 @@ Personelinizin kampanyanızı siber tehditlere karşı koruma adımlarını öğ
 
 ## <a name="next-objective"></a>Sonraki hedef
 
-Bu hedeflere ulaştıktan sonra [güvenliği artırmaya](m365bp-security-overview.md) devam edin.
+Güvenliği [artırmaya](m365bp-security-overview.md) devam edin.

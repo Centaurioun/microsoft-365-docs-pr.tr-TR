@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e34679c994ce75b95b5582290d2ed7c4ca726ac3
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: d35555f466b1ec201185efd51f37d4111911f16d
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175322"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276469"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -39,7 +39,7 @@ Office'in abonelik sürümleri için Kurumlar için Microsoft 365 Uygulamaları 
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Uygulamalarda duyarlılık etiketi özellikleri desteği
 
-Aşağıdaki tablolarda, Office uygulamalarında yerleşik olarak bulunan duyarlılık etiketlerine yönelik belirli özelliklerin sunulduğu en düşük Office sürümü listelenir. Ya da etiket özelliği genel önizlemedeyse veya gelecekteki bir sürüm için gözden geçiriliyorsa. Gelecek sürümler için planlanan yeni özelliklerle ilgili ayrıntılar için [Microsoft 365 yol haritasını](https://aka.ms/MIPC/Roadmap) kullanın.
+Aşağıdaki tablolarda, Office uygulamalarında yerleşik olarak bulunan duyarlılık etiketlerine yönelik belirli özelliklerin sunulduğu en düşük Office sürümü listelenir. Ya da etiket özelliği genel önizlemedeyse veya gelecekteki bir sürüm için gözden geçiriliyorsa. Gelecek sürümler için planlanan yeni özelliklerle ilgili ayrıntılar için [Microsoft 365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity) kullanın.
 
 Office uygulamalarının yeni sürümleri farklı güncelleştirme kanalları için farklı zamanlarda kullanıma sunulur. Windows için yeni özellikleri daha önce Kurumsal Kanal yerine Geçerli Kanal veya Aylık Kurumsal Kanal'da Semi-Annual edineceksiniz. En düşük sürüm numaraları bir güncelleştirme kanalından diğerine de farklı olabilir. Daha fazla bilgi için bkz[. Microsoft 365 Uygulamaları güncelleştirme kanallarına genel bakış](/deployoffice/overview-update-channels) ve [Microsoft 365 Uygulamaları için Güncelleştirme geçmişi](/officeupdates/update-history-microsoft365-apps-by-date).
 
@@ -59,7 +59,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 > [!NOTE]
 > Windows ve Semi-Annual Enterprise Channel için desteklenen en düşük sürüm numaraları henüz yayımlanmamış olabilir. [Daha fazla bilgi edinin](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
  
-|Yetenek |Windows |Mac |iOS |Android |Web |
+|Yeteneği |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
 |[Etiketi el ile uygulama, değiştirme veya kaldırma](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Çok dilli destek](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | İnceleme altında |
@@ -87,7 +87,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 > [!NOTE]
 > Windows ve Semi-Annual Enterprise Channel için desteklenen en düşük sürüm numaraları henüz yayımlanmamış olabilir. [Daha fazla bilgi edinin](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
 
-|Yetenek |Windows için Outlook |Mac için Outlook |iOS üzerinde Outlook |Android üzerinde Outlook |Web üzerinde Outlook |
+|Yeteneği |Windows için Outlook |Mac için Outlook |iOS üzerinde Outlook |Android üzerinde Outlook |Web üzerinde Outlook |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
 |[Etiketi el ile uygulama, değiştirme veya kaldırma](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Evet               |
 |[Çok dilli destek](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+ | 4.7.1+ | 4.0.39+ | Evet |
@@ -104,7 +104,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Hassas bilgi türlerini kullanma                    | Güncel Kanal: 2009+ <br /><br> Aylık Kurumsal Kanal: 2009+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.44+ <sup>\*</sup>                    | İnceleme altında           | İnceleme altında               | Evet |
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Eğitilebilir sınıflandırıcıları kullanma                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | İnceleme altında           | İnceleme altında               | Evet |
 |[Varsayılan etiket ve zorunlu etiketleme için farklı ayarlar](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Evet |
-|[PDF desteği](#pdf-support) | İnceleme altında|  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
+|[PDF desteği](#pdf-support) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım|  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
 |[S/MIME koruması uygulama](#configure-a-label-to-apply-smime-protection-in-outlook)                    | İnceleme altında | Kullanıma sunulacak: 16.61+ <sup>\*</sup>                   | Kullanıma sunulacak: 4.2226+ | Kullanıma sunulacak: 4.2203+ | İnceleme altında |
 
 **Dipnot:**
@@ -140,7 +140,7 @@ Bu ayar Windows Office uygulamalarına özgü olduğundan, Windows'ta duyarlıl�
 
 ## <a name="office-file-types-supported"></a>Desteklenen Office dosya türleri
 
-Word, Excel ve PowerPoint dosyaları için yerleşik etiketlemeye sahip Office uygulamaları, Microsoft Office 97-2003 biçimini (.doc ve .xls gibi), Açık Belge Biçimi'ni (.odt ve .ods gibi) veya diğer biçimleri desteklemeden Open XML biçimini (.docx ve .xlsx gibi) destekler. Yerleşik etiketleme için bir dosya türü desteklenmediğinde, **Duyarlılık** düğmesi Office uygulamasında kullanılamaz.
+Word, Excel ve PowerPoint dosyaları için yerleşik etiketlemeye sahip Office uygulamaları, Açık XML biçimini (.docx ve .xlsx gibi) destekler ancak Microsoft Office 97-2003 biçimini (.doc ve .xls gibi), Açık Belge Biçimi'ni (.odt ve .ods gibi) veya diğer biçimleri desteklemez. Yerleşik etiketleme için bir dosya türü desteklenmediğinde, **Duyarlılık** düğmesi Office uygulamasında kullanılamaz.
 
 Azure Information Protection birleşik etiketleme istemcisi hem Open XML biçimini hem de Microsoft Office 97-2003 biçimini destekler. Daha fazla bilgi için, bu [istemcinin yönetici kılavuzundaki Azure Information Protection birleşik etiketleme istemcisi tarafından desteklenen dosya türleri](/azure/information-protection/rms-client/clientv2-admin-guide-file-types) bölümüne bakın.
 
@@ -447,11 +447,13 @@ Bu eylem, [Dosya ve sayfa etkinlikleri](search-the-audit-log-in-security-and-com
 
 PDF oluşturulduğunda, herhangi bir içerik işareti ve şifreleme içeren etiketi devralır. Şifrelenmiş PDF'ler Windows veya Mac'te Microsoft Edge ile açılabilir. Daha fazla bilgi ve alternatif [okuyucular için bkz. Korumalı PDF'ler için hangi PDF okuyucular desteklenir?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
 
+Outlook şu anda etiketli bir iletiden şifreleme devralan PDF eklerini desteklememektedir. Ancak, Outlook artık daha sonra açıklandığı gibi kullanıcıların PDF'ye yazdırmalarını uyarı veya engellemeyi destekliyor.
+
 PDF senaryoları desteklenmez:
 
 - PDF'ye yazdır
     
-    Kullanıcılar bu seçeneği belirlerse, belgenin etiketin ve şifrelemenin (uygulandıysa) korumasını kaybedeceği ve devam etmek için onaylamaları gerektiği konusunda uyarılırlar. Duyarlılık etiketi ilkeniz bir etiketi kaldırmak veya sınıflandırmasını düşürmek için gerekçe gerektiriyorsa, bu istemi görür.
+    Kullanıcılar bu seçeneği belirlerse, belgenin veya e-postanın etiketin ve şifrelemenin (uygulandıysa) korumasını kaybedeceği ve devam etmek için onaylamaları gerektiği konusunda uyarılırlar. Duyarlılık etiketi ilkeniz bir etiketi kaldırmak veya sınıflandırmasını düşürmek için gerekçe gerektiriyorsa, bu istemi görür.
     
     Bu seçenek duyarlılık etiketini kaldırdığından, zorunlu etiketleme kullanıyorsanız bu seçenek kullanıcılar tarafından kullanılamaz. Bu yapılandırma, kullanıcıların e-postalarına ve belgelerine etiket uygulamasını gerektiren duyarlılık etiketi ilkesi ayarını ifade eder.
 

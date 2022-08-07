@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f686777e32aac9bea4a9d45d365ff977bf0fb357
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 51e882c879f9365fbdc5b4a70d2ade106d061d51
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67173282"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276230"
 ---
 # <a name="before-you-begin-using-defender-experts-for-hunting"></a>Avcılık için Defender Uzmanlarını kullanmaya başlamadan önce
 
@@ -81,8 +81,8 @@ Bu hizmet şu anda yalnızca İngilizce dilinde teslim edilir.
 
 Henüz yapmadıysanız, Avcılık için Defender Uzmanları için müşteri ilgi formunu doldurabilirsiniz:
 
-1. Müşteri faiz formunu doldurun. Şirketinizden herkes başvurabilir, ancak kabul edilirseniz, SKU'yu işleme almak için Ticari Yöneticinizle birlikte çalışmanız gerekir.
-2. Şirket e-posta kimliğinizi girin.
+1. [Müşteri faiz formunu](https://aka.ms/DEX4HuntingCustomerInterestForm) doldurun. Şirketinizden herkes başvurabilir, ancak kabul edilirseniz, SKU'yu işleme almak için Ticari Yöneticinizle birlikte çalışmanız gerekir.
+2. Adınızı, şirket adınızı ve şirket e-posta kimliğinizi girin.
 3. **Gönder'i** seçin. Satış ekibimizden biri beş iş günü içinde bize ulaşacak.
 
 

@@ -10,17 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/03/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 92b47e303ec4cdbbceb39c9774c1747ca02726e5
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 52bbe2b5b4c8c595cd98d6ae3fc26e03aded9ed0
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773179"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276425"
 ---
 # <a name="microsoft-defender-for-business-and-microsoft-partner-resources"></a>İş için Microsoft Defender ve Microsoft iş ortağı kaynakları
 
@@ -31,7 +32,7 @@ Microsoft iş ortakları, müşterilerin başarılı olmasını sağlamak için 
 | Kaynak | Açıklama |
 |:---|:---|
 | [Microsoft İş Ortağı Ağı](https://partner.microsoft.com) | Microsoft iş ortağı olmayı ve Microsoft İş Ortağı Ağı'na katılmayı öğrenmek için Microsoft İş Ortağı Ağı'nı ziyaret edin. |
-| [Microsoft 365 İş Ekstra ve İş için Defender iş ortağı web semineri serisi](https://aka.ms/M365MDBseries) | Bu web semineri serisi şu bilgileri sağlar: <ul><li>Müşterilerinizle güvenlik hakkında konuşmalar yapmaya ve business Premium'a yükseltmeye yönelik pratik rehberlik. </li><li>Microsoft 365 Lighthouse ve İş için Defender için tanıtımlar ve ayrıntılı bakış yönergeleri. </li><li>Sorularınızı yanıtlamanıza yardımcı olacak bir uzman paneli.</li></ul>   |
+| [Microsoft 365 İş Ekstra ve İş için Defender iş ortağı web semineri serisi](https://aka.ms/M365MDBseries) | Bu web semineri serisi şu bilgileri sağlar: <ul><li>Müşterilerinizle güvenlik hakkında konuşmalar yapmak ve Microsoft 365 İş Ekstra yükseltme konusunda pratik rehberlik. </li><li>Microsoft 365 Lighthouse ve İş için Defender için tanıtımlar ve ayrıntılı bakış yönergeleri. </li><li>Sorularınızı yanıtlamanıza yardımcı olacak bir uzman paneli.</li></ul>   |
 | [Microsoft 365 İş Ekstra iş ortağı playbook'u ve hazırlık serisi](https://aka.ms/M365BPPartnerPlaybook) |  Aşağıdakilerle kârlı bir yönetilen hizmet uygulaması oluşturmaya yönelik pratik rehberlik: <ul><li>Sektör uzmanlarının ve meslektaşlarının başarılı yönetilen hizmet tekliflerine örnekler. </li><li>Microsoft uzmanlarının teknik etkinleştirme ve denetim listeleri. </li><li>Çözümünüzü pazarlamanıza yardımcı olmak için satış etkinleştirme ve müşteri konuşma yardımcıları. </li></ul> |
 | [İş için Defender iş ortağı seti](https://aka.ms/MDBPartnerKit) | İş için Defender iş ortağı seti size pratik rehberlik, teknik bilgiler ve küçük ve orta ölçekli işletmelere İş için Defender'ı pazarlamak ve satmak için müşteriye hazır kaynaklar sağlar.  |
 
@@ -57,4 +58,8 @@ Daha fazla bilgi edinmek için aşağıdaki kaynakları kullanın:
 
 Microsoft Bulut Çözümü Sağlayıcıları (CSP' ler), lisansları yeniden satışa sunmanın ötesine geçerek müşterilerin işlerine daha fazla dahil olabilir. Örneğin, CSP'ler küçük ve orta ölçekli işletme müşterilerinin güvenlik ayarlarını ve özelliklerini yönetmek için Microsoft 365 Lighthouse kullanabilir. CSP'ler, cihazlarda virüsten koruma taramaları çalıştırma da dahil olmak üzere algılanan tehditleri görüntüleyebilir ve yönetebilir.
 
-[Microsoft 365 Lighthouse ve İş için Microsoft Defender hakkında daha fazla bilgi edinin](mdb-lighthouse-integration.md).
+| Kaynak | Açıklama |
+|:---|:---|
+| [Microsoft 365 Lighthouse ve İş için Microsoft Defender](mdb-lighthouse-integration.md) | İş için Defender'ın Microsoft 365 Lighthouse ile nasıl tümleştirilip ek bilgilere bağlantılar içerdiğini açıklar. |
+
+

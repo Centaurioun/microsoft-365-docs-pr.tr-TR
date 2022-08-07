@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: eBulma yöneticisinin Microsoft 365'te arayabileceği kullanıcı içerik konumlarını denetleyebilen mantıksal sınırlar oluşturmak için uyumluluk sınırlarını kullanmayı öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 903992df71b82a7dc1081bb286871e0b7af72d37
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f65a1c85a4cadac646fdffee8403fb398e8c0081
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625071"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275988"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>eBulma araştırmaları için uyumluluk sınırlarını ayarlama
 
@@ -125,7 +125,7 @@ Komuttaki her parametrenin açıklaması aşağıdadır:
   
 - `FilterName`: Filtrenin adını belirtir. Filtrenin kullanıldığı ajansı tanımlayan veya tanımlayan bir ad kullanın.
 
-- `Users`: Bu filtreyi gerçekleştirdikleri arama eylemlerine uygulayan kullanıcıları veya grupları belirtir. Uyumluluk sınırları için bu parametre, filtresini oluşturduğunuz kuruluştaki rol gruplarını (3. Adımda oluşturduğunuz) belirtir. Bu çok değerli bir parametredir, bu nedenle virgülle ayrılmış bir veya daha fazla rol grubu ekleyebilirsiniz.
+- `Users`: Bu filtreyi gerçekleştirdikleri arama eylemlerine uygulayan kullanıcıları veya grupları belirtir. Uyumluluk sınırları için bu parametre, filtresini oluşturduğunuz kuruluştaki rol gruplarını (2. Adımda oluşturduğunuz) belirtir. Bu çok değerli bir parametredir, bu nedenle virgülle ayrılmış bir veya daha fazla rol grubu ekleyebilirsiniz.
 
 - `Filters`: Filtrenin arama ölçütlerini belirtir. Uyumluluk sınırları için aşağıdaki filtreleri tanımlarsınız. Her biri farklı içerik konumları için geçerlidir.
 
@@ -202,7 +202,7 @@ Arama izinleri filtreleri, dışarı aktarma için içeriğin nereye yönlendiri
     |NAM  <br/> |Kuzey Amerika (veri merkezleri ABD'dedir)  <br/> |
     |EUR  <br/> |Avrupa  <br/> |
     |APC  <br/> |Asya Pasifik  <br/> |
-    |-BİLİRSİNİZ <br/> |Kanada|
+    |CAN <br/> |Kanada|
     |||
 
 - **Yönlendirme içeriği aramaları:** SharePoint sitelerinin ve OneDrive hesaplarının içerik aramalarını bir uydu veri merkezine yönlendirebilirsiniz. Bu, aramaların çalıştırılacağı veri merkezi konumunu belirtebileceğiniz anlamına gelir.
@@ -214,15 +214,15 @@ Arama izinleri filtreleri, dışarı aktarma için içeriğin nereye yönlendiri
     |NAM  <br/> |US  <br/> |
     |EUR  <br/> |Avrupa  <br/> |
     |APC  <br/> |Asya Pasifik  <br/> |
-    |-BİLİRSİNİZ  <br/> |US  <br/> |
+    |CAN  <br/> |US  <br/> |
     |AUS  <br/> |Asya Pasifik  <br/> |
     |KOR  <br/> |Kuruluşun varsayılan veri merkezi  <br/> |
     |GBR  <br/> |Avrupa  <br/> |
     |JPN  <br/> |Asya Pasifik  <br/> |
-    |SANAYİ  <br/> |Asya Pasifik  <br/> |
-    |LAM  <br/> |US  <br/> |
+    |IND  <br/> |Asya Pasifik  <br/> |
+    |Lam  <br/> |US  <br/> |
     |NOR  <br/> |Avrupa |
-    |SUTYEN  <br/> |Kuzey Amerika veri merkezleri |
+    |BRA  <br/> |Kuzey Amerika veri merkezleri |
     |||
 
    Arama izinleri filtresi için *Region* parametresini belirtmezseniz, kuruluşun birincil SharePoint bölgesi aranacaktır. Arama sonuçları en yakın veri merkezine aktarılır.

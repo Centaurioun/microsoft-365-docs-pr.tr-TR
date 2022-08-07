@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 43d07f2ec10117232e7ac1317bec1f8216bc62ae
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: b937bff6eece4c31861eae36b3691bd632827375
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071623"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274978"
 ---
 # <a name="compare-microsoft-endpoint-security-plans"></a>Microsoft uç nokta güvenlik planlarını karşılaştırma
 
@@ -59,7 +59,7 @@ Aşağıdaki tabloda, Microsoft uç nokta güvenlik planlarına dahil edilenler 
 - Microsoft 365 E5/A5/G5/F5 Güvenliği
 - Microsoft 365 F5 Güvenlik & Uyumluluğu
 
-(<a id="fn3">3</a>) İş için Microsoft Defender küçük ve orta ölçekli işletmeler için tek başına abonelik olarak kullanılabilir. Ayrıca Microsoft 365 İş Ekstra bir parçası olarak da dahildir. Bu planlar, basitleştirilmiş kurulum ve yapılandırma deneyimiyle gelişmiş güvenlik özelliklerine sahiptir.
+(<a id="fn3">3</a>) İş için Microsoft Defender küçük ve orta ölçekli işletmeler için tek başına abonelik olarak kullanılabilir. Ayrıca [Microsoft 365 İş Ekstra](/microsoft-365/business-premium) bir parçası olarak da dahildir. Bu planlar, basitleştirilmiş kurulum ve yapılandırma deneyimiyle gelişmiş güvenlik özelliklerine sahiptir. Bkz[. İş için Microsoft Defender Microsoft 365 İş Ekstra ile karşılaştırma](/microsoft-365/security/defender-business/compare-mdb-m365-plans#compare-microsoft-defender-for-business-to-microsoft-365-business-premium).
 
 ## <a name="options-for-onboarding-servers"></a>Sunucuları ekleme seçenekleri
 

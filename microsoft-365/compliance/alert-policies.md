@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Olası tehditleri, veri kaybını ve izin sorunlarını izlemek için Microsoft Purview uyumluluk portalı veya Microsoft 365 Defender portalında uyarı ilkeleri oluşturun.
-ms.openlocfilehash: d52e50726b5fa695a98d517f1b7b2e9be44d2f1d
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 8e100f75712c3228ed58a82c4f066561bfeaa11f
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175234"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276120"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365'te uyarı ilkeleri
 
@@ -139,6 +139,7 @@ Tabloda ayrıca her biri için gereken Office 365 Kurumsal ve Office 365 ABD Kam
 |**Yönetici Gönderim sonucu tamamlandı**|[bir Yönetici Gönderimi](../security/office-365-security/admin-submission.md) gönderilen varlığın yeniden taramasını tamamladığında bir uyarı oluşturur. bir Yönetici Gönderiminden her yeniden tarama sonucu işlendiğinde bir uyarı tetiklenir. Bu uyarılar [, önceki gönderimlerin sonuçlarını gözden geçirmenizi](https://compliance.microsoft.com/reportsubmission), en son ilke denetimini almak ve kararları yeniden taramak için kullanıcı tarafından bildirilen iletileri göndermenizi ve kuruluşunuzdaki filtreleme ilkelerinin hedeflenen etkiyi sağlayıp sağlamadığını belirlemenize yardımcı olmayı anımsatmak için tasarlanmıştır. Bu ilkenin **Bilgi önem** derecesi ayarı vardır.|Tehdit yönetimi|Hayır|E1/F1, E3/F3 veya E5|
 |**Yönetici el ile e-posta araştırmasını tetikledi**|Bir yönetici Tehdit Gezgini'nden bir e-postanın el ile araştırmasını tetiklediğinde bir uyarı oluşturur. Daha fazla bilgi için bkz [. Örnek: Güvenlik yöneticisi Tehdit Gezgini'nden bir araştırma tetikler](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). Bu uyarı, kuruluşunuza araştırmanın başlatıldığını bildirir. Uyarı, bu uyarıyı kimin tetiklediği hakkında bilgi sağlar ve araştırmanın bağlantısını içerir. Bu ilkenin **Bilgilendirici** önem derecesi ayarı vardır.|Tehdit yönetimi|Evet|E5/G5 veya Office 365 için Microsoft Defender P2 eklenti aboneliği|
 |**Yönetici kullanıcı güvenliğinin aşılmasına neden olan araştırma**|Yönetici, Tehdit Gezgini'nden bir e-posta göndereni veya alıcısını el ile ele geçirerek kullanıcı güvenliğini aşma araştırmasını tetiklediğinde bir uyarı oluşturur. Daha fazla bilgi için bkz [. Örnek: Güvenlik yöneticisi Tehdit Gezgini'nden bir araştırmayı tetikler](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). Bu, e-postada bir araştırmanın ilgili el ile tetiklenmesi işlemini gösterir. Bu uyarı, kuruluşunuza kullanıcı güvenliğini aşma araştırmasının başlatıldığını bildirir. Uyarı, bu uyarıyı kimin tetiklediği hakkında bilgi sağlar ve araştırmanın bağlantısını içerir. Bu ilkenin **Orta** önem derecesi ayarı vardır.|Tehdit yönetimi|Evet|E5/G5 veya Office 365 için Microsoft Defender P2 eklenti aboneliği|
+|**Yönetici tarafından gönderilen yönetim eylemi**|Yöneticiler çeşitli yüzeyleri kullanarak e-posta varlıkları üzerinde el ile e-posta eylemleri gerçekleştirebilir. Örneğin, Tehdit Gezgini, gelişmiş avcılık veya özel algılama aracılığıyla. Düzeltme başladığında bir uyarı oluşturur. Bu uyarı, bir yöneticinin bir varlığı düzeltme eylemini gerçekleştirilen eylemi gösterdiğini belirtmek için **Yönetici tarafından gönderilen Yönetim eylemi** adıyla uyarılar kuyruğunda gösterilir. Uyarı, eylem türü, destekleyici araştırma bağlantısı, zaman vb. gibi ayrıntıları içerir. Varlıklarda düzeltme gibi hassas bir eylemin ne zaman gerçekleştirildiğini bilmek yararlı olur. Bu ilkenin **Bilgilendirici** önem derecesi ayarı vardır.|Tehdit yönetimi|Evet|E5/ Office 365 için Microsoft Defender P2 eklenti aboneliği|
 |**İletme/yeniden yönlendirme kuralı oluşturma**|Kuruluşunuzdaki bir kişi, posta kutusu için iletileri başka bir e-posta hesabına yönlendiren veya yeniden yönlendiren bir gelen kutusu kuralı oluşturduğunda bir uyarı oluşturur. Bu ilke yalnızca Web üzerinde Outlook (eski adıyla Outlook Web App) veya PowerShell Exchange Online kullanılarak oluşturulan gelen kutusu kurallarını izler. Bu ilkenin **Bilgi önem** derecesi ayarı vardır. Web üzerinde Outlook'da e-postayı iletmek ve yeniden yönlendirmek için gelen kutusu kurallarını kullanma hakkında daha fazla bilgi için bkz. [İletileri otomatik olarak başka bir hesaba iletmek için Web üzerinde Outlook kuralları kullanma](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).|Tehdit yönetimi|Hayır|E1/F1/G1, E3/F3/G3 veya E5/G5|
 |**eBulma araması başlatıldı veya dışarı aktarıldı**|Birisi Microsoft Purview portalında İçerik arama aracını kullandığında bir uyarı oluşturur. Aşağıdaki içerik arama etkinlikleri gerçekleştirildiğinde bir uyarı tetiklenir: <br><br> <li> İçerik araması başlatıldı <li> İçerik aramasının sonuçları dışarı aktarılır <li> İçerik arama raporu dışarı aktarıldı <br><br> Uyarılar, önceki içerik arama etkinlikleri bir eBulma olayıyla ilişkili olarak gerçekleştirildiğinde de tetiklenir. Bu ilkenin **Bilgi önem** derecesi ayarı vardır. İçerik arama etkinlikleri hakkında daha fazla bilgi için bkz. [Denetim günlüğünde eBulma etkinliklerini](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities) arama.|Tehdit yönetimi|Hayır|E1/F1/G1, E3/F3/G3 veya E5/G5|
 |**Exchange yönetici ayrıcalığının yükseltilmesi**|Exchange Online kuruluşunuzda birine yönetici izinleri atandığında bir uyarı oluşturur. Örneğin, bir kullanıcı Exchange Online'daki Kuruluş Yönetimi rol grubuna eklendiğinde. Bu ilke **düşük önem** derecesine sahiptir.|İzinler|Hayır|E1/F1/G1, E3/F3/G3 veya E5/G5|
@@ -203,11 +204,11 @@ Uyarıları görüntülemek için:
 
 - **Durum.** Belirli bir duruma atanan uyarıları göstermek için bu filtreyi kullanın. Varsayılan durum **Etkin'dir**. Siz veya diğer yöneticiler durum değerini değiştirebilirsiniz.
 
-- **Politika.** Bir veya daha fazla uyarı ilkesi ayarıyla eşleşen uyarıları göstermek için bu filtreyi kullanın. Ya da tüm uyarı ilkeleri için tüm uyarıları görüntüleyebilirsiniz.
+- **Ilkesi.** Bir veya daha fazla uyarı ilkesi ayarıyla eşleşen uyarıları göstermek için bu filtreyi kullanın. Ya da tüm uyarı ilkeleri için tüm uyarıları görüntüleyebilirsiniz.
 
 - **Zaman aralığı.** Belirli bir tarih ve saat aralığında oluşturulan uyarıları göstermek için bu filtreyi kullanın.
 
-- **Şiddet.** Belirli bir önem derecesine atanan uyarıları göstermek için bu filtreyi kullanın.
+- **Önem.** Belirli bir önem derecesine atanan uyarıları göstermek için bu filtreyi kullanın.
 
 - **Kategori.** Bir veya daha fazla uyarı kategorisindeki uyarıları göstermek için bu filtreyi kullanın.
 
@@ -271,7 +272,7 @@ Varsayılan uyarı ilkesinin atandığı kategoriyi görmek için [Varsayılan u
 |Disposition Management|||||||
 |DLP Uyumluluk Yönetimi||![Onay işareti.](../media/checkmark.png)|||||
 |Dışarı aktarma|||||||
-|Tutmak|||||||
+|Tutun|||||||
 |Information Protection Analisti||![Onay işareti.](../media/checkmark.png)|||||
 |Information Protection Araştırmacısı||![Onay işareti.](../media/checkmark.png)|||||
 |Uyarıları Yönet||||||![Onay işareti.](../media/checkmark.png)|

@@ -18,12 +18,12 @@ ms.custom: ''
 description: Yöneticiler, kullanıcılar tarafından bildirilen istenmeyen posta ve kimlik avı iletilerini toplamak için özel bir posta kutusunu (kullanıcı gönderimleri posta kutusu olarak da bilinir) nasıl tanımlayacağınızı öğrenebilir. Diğer ayarlar, kullanıcılar iletileri raporladığında raporlama deneyimini tamamlar.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: faba09ceb32232154211a28b283ece79228f0be8
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: e09b5f7d6f34ac1daa98430f1bc868b4ca644777
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175498"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276316"
 ---
 # <a name="user-reported-message-settings"></a>Kullanıcı tarafından bildirilen ileti ayarları
 
@@ -49,7 +49,7 @@ Kullanıcı tarafından bildirilen iletilerin doğrudan Microsoft yerine posta k
 
 ## <a name="configuration-requirements-for-the-user-submissions-mailbox"></a>Kullanıcı gönderme posta kutusu için yapılandırma gereksinimleri
 
-Başlamadan önce yu öğesinin Exchange Online Protection ve Office 365 için Defender yapılandırarak, kullanıcı tarafından bildirilen iletilerin aşağıdaki adımlarda açıklandığı gibi filtrelenmeden kullanıcı gönderimleri posta kutusuna teslim edilmesi gerekir:
+Başlamadan önce, Exchange Online Protection ve Office 365 için Defender yapılandırmanız gerekir, böylece kullanıcı tarafından bildirilen iletiler aşağıdaki adımlarda açıklandığı gibi filtrelenmeden kullanıcı gönderimleri posta kutusuna teslim edilir:
 
 - Kullanıcının posta kutusunu SecOps posta kutusu olarak göndermesini belirleyin. Yönergeler için bkz. [Gelişmiş teslim ilkesinde SecOps posta kutularını yapılandırmak için Microsoft 365 Defender portalını kullanma](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
@@ -98,7 +98,7 @@ Posta kutusunun bu gereksinimleri karşıladığını doğruladıktan sonra, kul
 
 2. **Kullanıcı gönderimleri** sayfasında, gördükleriniz büyük ölçüde **Microsoft Outlook Rapor İletisi düğmesi** iki durumlu düğmesi tarafından belirlenir:
 
-   - **Üzerinde** ![ Açık.](../../media/scc-toggle-on.png): Rapor İletisi eklentisini, Rapor Kimlik Avı eklentisini veya Web üzerinde Outlook'deki yerleşik raporlamayı içeren Microsoft tümleşik raporlama deneyimini kullanırsınız.
+   - **-Inı** ![ Açık.](../../media/scc-toggle-on.png): Rapor İletisi eklentisini, Rapor Kimlik Avı eklentisini veya Web üzerinde Outlook'deki yerleşik raporlamayı içeren Microsoft tümleşik raporlama deneyimini kullanırsınız.
 
      Bu ayar, kullanıcıların karantina portalından hatalı pozitif iletiler bildirmesine de olanak tanır.
 
@@ -112,7 +112,7 @@ Posta kutusunun bu gereksinimleri karşıladığını doğruladıktan sonra, kul
 
 - **Bildirilen iletileri bölümüne gönderme** : Aşağıdaki seçeneklerden birini belirleyin:
 
-  - **Microsoft**: Kullanıcı raporları analiz için doğrudan Microsoft'a gider. Microsoft 365 Güvenlik Merkezi aracılığıyla kiracı yöneticisine yalnızca gönderen, alıcı, raporlayan ve kullanıcı raporlarından ileti ayrıntıları gibi meta veriler sağlanır.
+  - **Microsoft**: Kullanıcı raporları analiz için doğrudan Microsoft'a gider. Yalnızca gönderen, alıcı, raporlayan ve kullanıcı raporlarından ileti ayrıntıları gibi meta veriler kiracı yöneticisine Microsoft 365 Defender portalı üzerinden sağlanır.
 
   - **Microsoft ve kuruluşumun posta kutusu**: Görüntülenen kutuya, kullanıcı posta kutusunu gönderdiğinde kullanılacak mevcut bir Exchange Online posta kutusunun e-posta adresini girin. Dağıtım gruplarına izin verilmez. Kullanıcı gönderimleri analiz için Microsoft'a ve bir yöneticinin veya güvenlik operasyonları ekibinin analiz etmek üzere kullanıcı gönderimleri posta kutusuna gider.
 

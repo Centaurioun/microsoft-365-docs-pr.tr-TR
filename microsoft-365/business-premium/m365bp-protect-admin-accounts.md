@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra'da yönetici hesaplarınızı ayarlamayı ve korumayı öğrenin.
-ms.openlocfilehash: a6a8cfdff722df6b46c9a83dfc73b429806955ea
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 6534cf3285aa08b4b9da4ea65965751a1ac14a6b
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894459"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67277037"
 ---
 # <a name="protect-your-administrator-accounts-in-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'de yönetici hesaplarınızı koruma
 
@@ -103,5 +103,4 @@ Tüm yönetici hesaplarınızı korumak için şu önerileri izlediğinizden emi
 
 ## <a name="next-objective"></a>Sonraki hedef
 
-[Güvenlik varsayılanlarını açma adımlarını](m365bp-conditional-access.md) izleyin.
-
+[Microsoft 365 İş Ekstra için tehdit korumasını artırma](m365bp-increase-protection.md)

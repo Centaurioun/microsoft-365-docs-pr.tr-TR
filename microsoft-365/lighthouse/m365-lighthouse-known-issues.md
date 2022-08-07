@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için, Özellik alanına göre Lighthouse ile ilgili bilinen sorunların listesine bakın.
-ms.openlocfilehash: 9f3c2bc86d64cbc99f280de3c668e84a402b3619
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 9f1d9c7e31c6e3a6949b753a370577f87d903fd1
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106108"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276543"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse ile ilgili bilinen sorunlar
 
@@ -52,14 +52,6 @@ Bu makalede, özellik alanına göre Microsoft 365 Lighthouse ile ilgili bilinen
 | ---------------- | ---------------- | ---------------- |
 | **Sağlamayı yeniden deneme hatası** | MSP teknisyenleri, Bulut bilgisayar sağlamayı yeniden denemeyi denerken "Bunu yapma izniniz yok" hata iletisini alır. | Bu sorunu geçici olarak çözmek için müşteri kiracısında oturum açın ve ardından Microsoft Endpoint Manger yönetim merkezinden Bulut bilgisayarları yeniden sağlayın. Yönergeler için bkz. [Bulut bilgisayarı yeniden sağlama](/windows-365/enterprise/reprovision-cloud-pc). |
 
-## <a name="audit-logs"></a>Denetim günlükleri
-
-
-| Sorun | Açıklama | Çözüm |
-|--|--|--|
-| **Devre dışı bırakma ve Yeniden etkinleştirme eylemleri denetim günlüklerinde listelenmiyor** | Aşağıdaki etkinlikler şu anda Lighthouse'un Denetim günlükleri sayfasında bildirilmiyor: <ul><li>Ad: offboardTenant \| Action: Müşteriyi devre dışı bırakma</li> <li>Ad: resetTenantOnboardingStatus \| Action: Reactive customer</li></ul> | Geçici bir çözüm yoktur, ancak bir düzeltme üzerinde çalışıyoruz. Düzeltme hizmete dağıtıldıktan sonra bu etkinlikler denetim günlüklerinde görünür. |
-| **Filtre tüm kullanıcıları göstermiyor** | MSP teknisyenleri **Tarafından Başlatılan'ı** kullanarak filtrelemeye çalıştığında, denetim günlükleri oluşturan eylemleri başlatan teknisyenlerin e-posta kimliklerine karşılık gelen tüm Kullanıcı Asıl Adlarının (UPN) listesi filtre altında tam olarak görüntülenmez.<br><br>Denetim günlüklerinin tamamen görüntüleneceğini unutmayın; yalnızca **Tarafından Başlatılarak** filtrelenebilme özelliği etkilenir. | Geçici bir çözüm yoktur, ancak bir düzeltme üzerinde çalışıyoruz. Düzeltme hizmete dağıtıldıktan sonra filtre, filtrelenecek UPN'lerin tam listesini görüntüleyerek beklenen davranışına geri döner. |
-
 ## <a name="delegated-admin-privileges-dap"></a>Temsilci Yönetici Ayrıcalıkları (DAP)
 
 | Sorun | Açıklama | Çözüm |
@@ -74,7 +66,7 @@ Müşterileri Lighthouse'a eklemek için Ayrıntılı Temsilcili Yönetici Ayrı
 | ---------------- | ---------------- | ---------------- |
 | **Lighthouse genelinde çeşitli GDAP izin sorunları** | Bazı GDAP rolleri, Lighthouse'daki müşteri verilerine tek kiracılı bir deneyimde olduğu gibi aynı düzeyde erişim vermez. Aşağıdaki rollerden herhangi biri MSP teknisyenlerine ayrı ayrı atanırsa (bu, diğer GDAP rolleriyle birlikte değil) aşağıdakiler de dahil olmak üzere hatalarla karşılaşabilir:<ul><li>GDAP Güvenlik Yöneticileri, Lighthouse'da riskli kullanıcıları görüntüleyemiyor, riskleri kapatamıyor veya güvenliği aşılmış kullanıcıları onaylayamıyor.</li><li>GDAP Güvenlik Okuyucuları Lighthouse'da riskli kullanıcıları görüntüleyemez.</li><li>GDAP Genel Yöneticileri Lighthouse'da hizmet durumunu görüntülemeye çalışırken bir hata iletisi görür.</li><li>GDAP Genel Yöneticileri Lighthouse'da dağıtım planı adımlarını dağıtırken sorunlarla karşılaşır.</li></ul> | Geçici çözüm, MSP teknisyenlerine ihtiyaç duydukları müşteri verilerine erişim düzeyine göre GDAP rollerinin bir birleşimini atamaktır. Lighthouse'un kullanılması önerilen GDAP rollerinin listesi için bkz. [Microsoft 365 Lighthouse'de izinlere genel bakış](m365-lighthouse-overview-of-permissions.md).<br><br>GDAP Genel Yönetici izinlerinin bile Lighthouse'da bir özelliğin kullanımına izin vermediği sorunlar için geçici çözüm, müşteriyi yönetmek için müşteri kiracısından uygun yönetim merkezine erişmektir (örneğin, hizmet durumunu denetlemek için müşteri kiracısından Microsoft 365 yönetim merkezi erişin). GDAP ilişkisini değiştirme yönergeleri için bkz. [Müşterinin hizmetini yönetmek için ayrıntılı yönetici izinleri alma - İş Ortağı Merkezi](/partner-center/gdap-obtain-admin-permissions-to-manage-customer). |
 
-## <a name="localization"></a>Yerelleştirme
+## <a name="localization"></a>Yerel -leştirme
 
 | Sorun | Açıklama | Çözüm |
 | ---------------- | ---------------- | ---------------- |

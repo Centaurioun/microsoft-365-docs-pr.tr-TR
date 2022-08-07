@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Bir Microsoft 365 grubuna konuk eklemeyi, konukları görüntülemeyi ve konuk erişimini denetlemek için PowerShell'i kullanmayı öğrenin.
-ms.openlocfilehash: 59ec932aea516107f08570f899987c4d619aa66b
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: c2545c4b6e0d87f3f143139887ff50126bf41d06
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084223"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274758"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Microsoft 365 gruplarında konuk erişimini yönetme
 
@@ -60,15 +60,25 @@ Konuk dizininizde zaten varsa, <a href="https://go.microsoft.com/fwlink/p/?linki
   
 1. Yönetim merkezinde **Gruplar Grupları'na** >  gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a>
   
-2. Konuğu eklemek istediğiniz gruba tıklayın ve **Üyeler** sekmesinde **Tümünü görüntüle ve üyeleri yönet'i** seçin. 
+2. Konuğu eklemek istediğiniz grubu seçin ve **Üyeler** sekmesinde **Tümünü görüntüle ve üyeleri yönet'i** seçin. 
   
-4. **Üye ekle'yi** seçin ve eklemek istediğiniz konuğun adını seçin.
-    
-5. **Kaydet**'i seçin.
+3. **Üye ekle'yi** seçin ve eklemek istediğiniz konuğun adını seçin.
+
+4. **Kaydet**'i seçin.
 
 Doğrudan dizine konuk eklemek istiyorsanız, [Azure portal Azure Active Directory B2B işbirliği kullanıcıları ekleyebilirsiniz](/azure/active-directory/b2b/add-users-administrator).
 
 Bir konuğun bilgilerini düzenlemek istiyorsanız [, Azure Active Directory'yi kullanarak kullanıcının profil bilgilerini ekleyebilir veya güncelleştirebilirsiniz](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+
+## <a name="remove-a-guest"></a>Konuk kaldırma
+
+Konuk kullanıcıyla işbirliği yaptıktan sonra, bu kullanıcıları kaldırabilirsiniz ve artık kuruluşunuza erişimi olmaz.
+
+1. Microsoft 365 yönetim merkezi **Kullanıcılar'ı** genişletin ve <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">**konuk kullanıcılar'ı**</a> seçin.
+1. **Konuk kullanıcılar** sayfasında, kaldırmak istediğiniz kullanıcıyı seçin ve ardından **Kullanıcıyı sil'i** seçin.
+
+Azure AD portalında kullanıcıları kaldırmak için bkz. [Konuk kullanıcıyı ve kaynakları kaldırma](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).
+
 
 ## <a name="related-content"></a>İlgili içerik
 

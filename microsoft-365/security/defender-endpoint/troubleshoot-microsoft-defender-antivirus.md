@@ -10,17 +10,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/02/2022
+ms.date: 08/04/2022
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: eb4551d703258c5fdfa3429b721ef3317e9d2c6d
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: af697062c7ce7a0d5f3fd4879a622970962c1083
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717292"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275864"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma ile ilgili sorunları gidermek için olay günlüklerini ve hata kodlarını inceleyin
 
@@ -2607,7 +2607,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Kurcalama koruması etkinleştirilirse, engellenirse Ve Olay Kimliği 5013 oluşturulursa Defender'ın ayarlarından herhangi birini değiştirme girişimi, hangi ayar değişikliğinin engellendiğini belirtir.
+Kurcalama koruması etkinse, Defender'ın ayarlarından herhangi birini değiştirme girişimi engellenir. Olay Kimliği 5013 oluşturulur ve hangi ayar değişikliğinin engellendiğini belirtir.
 </td>
 </tr>
 <tr>
@@ -2675,8 +2675,7 @@ Microsoft Defender Virüsten Koruma yetkisiz kullanım süresi doldu. Virüslere
 </table>
 
 <a id="error-codes"></a>
-## Microsoft Defender Virüsten Koruma istemcisi hata kodları Microsoft Defender Virüsten Koruma herhangi bir sorunla karşılaşırsa genellikle sorunu gidermenize yardımcı olacak bir hata kodu verir. Çoğu zaman hata, güncelleştirme yüklenirken bir sorun olduğu anlamına gelir.
-Bu bölümde, Microsoft Defender Virüsten Koruma istemcisi hataları hakkında aşağıdaki bilgiler sağlanır.
+## Microsoft Defender Virüsten Koruma istemcisi hata kodları Microsoft Defender Virüsten Koruma herhangi bir sorunla karşılaşırsa genellikle sorunu gidermenize yardımcı olacak bir hata kodu verir. Çoğu zaman hata, güncelleştirme yüklenirken bir sorun olduğu anlamına gelir. Bu bölümde, Microsoft Defender Virüsten Koruma istemcisi hataları hakkında aşağıdaki bilgiler sağlanır.
 - Hata kodu - Şu anda yapılması gerekenlerle ilgili hata - önerisinin olası nedeni
 
 Microsoft Defender Virüsten Koruma hata kodlarıyla ilgili sorunları gidermeye yardımcı olması için bu tablolardaki bilgileri kullanın.

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 3ea2822adabcd0a747d34fbdb8c6d8d2c944afdf
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: f617129218d9ce7f75204c45fba39109bf214680
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969550"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275850"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac'te Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -30,11 +30,30 @@ ms.locfileid: "66969550"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkında daha fazla bilgi için: 
 - [Linux'ta Uç Nokta için Microsoft Defender'deki yenilikler](linux-whatsnew.md) 
 - [iOS'ta Uç Nokta için Microsoft Defender'deki yenilikler](ios-whatsnew.md)</br>
+
+<details>
+  <summary>Ağustos 2022 (Derleme: 101.75.90 | Sürüm: 20.122071.17590.0)</summary>
+
+&ensp;Yayın tarihi: **3 Ağustos 2022**<br/>
+&ensp;Yayımlanma Tarihi: **3 Ağustos 2022**<br/>
+&ensp;Derleme: **101.75.90**<br/>
+&ensp;Sürüm: **20.122071.17590.0**<br/>
+&ensp;Altyapı sürümü: **1.1.19300.3**<br/>
+&ensp;İmza sürümü: **1.369.395.0**<br/>
+
+**Yenilikler**
+
+- çıkışına `mdatp health` , ağ koruma özelliğinin zorlama düzeyini sorgulamak için kullanılabilecek yeni bir alan eklendi. Yeni alan çağrılır `network_protection_enforcement_level` ve şu değerlerden birini alabilir: `audit`, `block`veya `disabled`.
+- Aynı içeriğin birden çok algılamasının tehdit geçmişinde yinelenen girişlere yol açabileceği bir ürün hatası giderildi.
+- Diğer hata düzeltmeleri.
+
+<br/>
+</details>
 
 <details>
   <summary>Temmuz 2022 (Derleme: 101.73.77 | Sürüm: 20.122062.17377.0)</summary>
@@ -677,7 +696,7 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 
 **Yenilikler**
 > [!CAUTION]
-> macOS cihazlarınız için en eksiksiz korumayı sağlamak ve Apple'ın macOS yerel güvenlik güncelleştirmelerinin [current - 2] sürümünden eski işletim sistemi sürümlerine teslimini durdurmasıyla uyumlu olması için Mac için MDATP dağıtımı ve güncelleştirmeleri artık macOS Sierra [10.12] tarihinde desteklenmeyecektir. Mac için MDATP güncelleştirmeleri ve geliştirmeleri Catalina [10.15], Mojave [10.14] ve High Sierra [10.13] sürümlerini çalıştıran cihazlara sunulacaktır.
+> macOS cihazlarınız için en eksiksiz korumayı sağlamak ve Apple'ın macOS yerel güvenlik güncelleştirmelerinin [current - 2] sürümünden eski işletim sistemi sürümlerine teslimini durdurmasıyla uyumlu olması için Mac için MDATP dağıtımı ve güncelleştirmeleri artık macOS Sierra'da desteklenmeyecektir [10.12]. Mac için MDATP güncelleştirmeleri ve geliştirmeleri Catalina [10.15], Mojave [10.14] ve High Sierra [10.13] sürümlerini çalıştıran cihazlara sunulacaktır.
 >
 > Sierra [10.12] cihazlarınıza zaten Mac için MDATP dağıttıysanız koruma kaybı riskini ortadan kaldırmak için lütfen en son macOS sürümüne yükseltin.
 

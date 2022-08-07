@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 296b977452802d8e1ed8949cf6a8871cac171f3a
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 07535a2dd433bee2b2d92b206efa2b964212d74d
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840004"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276776"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Cihaz başına yazılım envanteri değerlendirmeyi dışarı aktarma
 
@@ -32,8 +32,9 @@ ms.locfileid: "65840004"
 - [Microsoft Defender Güvenlik Açığı Yönetimi](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+Bu API, cihaz başına [ortak platform numaralandırması (CPE)](https://nvd.nist.gov/products/cpe) olan yüklü yazılım için tüm verileri döndürür.
 
 Farklı API çağrıları farklı veri türleri alır. Veri miktarı büyük olabileceğinden, alınabilmesinin iki yolu vardır:
 
@@ -52,7 +53,7 @@ Toplanan veriler ( _Json yanıtı_ veya _dosyalar aracılığıyla_) geçerli du
 
 ### <a name="11-api-method-description"></a>1.1 API yöntemi açıklaması
 
-Bu API yanıtı, cihaz başına yüklü yazılımların tüm verilerini içerir. DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion'ın her benzersiz bileşimi için bir giriş içeren bir tablo döndürür.
+Bu API yanıtı, cihaz başına [Ortak Platform Numaralandırması (CPE)](https://nvd.nist.gov/products/cpe) olan yüklü yazılımların tüm verilerini içerir. DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion'ın her benzersiz bileşimi için bir giriş içeren bir tablo döndürür.
 
 #### <a name="limitations"></a>Sınırlamalar
 
@@ -102,7 +103,7 @@ Kimlik|Dize|Kayıt için benzersiz tanımlayıcı.|123ABG55_573AG&mnp!
 NumberOfWeaknesses|Int|Bu cihazdaki bu yazılımdaki zayıflıkların sayısı|3
 OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu. Bunlar, Windows 10 ve Windows 11 gibi aynı aile içinde varyasyonları olan belirli işletim sistemleridir. Ayrıntılar için bkz. tvm tarafından desteklenen işletim sistemleri ve platformlar.|Windows10 ve Windows 11
 RbacGroupName|Dize|Rol tabanlı erişim denetimi (RBAC) grubu. Bu cihaz herhangi bir RBAC grubuna atanmamışsa, değer "Atanmamış" olur. Kuruluş herhangi bir RBAC grubu içermiyorsa, değer "Yok" olur.|Sunucular
-RegistryPaths|Dizi[dize]|Ürünün cihaza yüklendiğine dair kayıt defteri kanıtı.|[ "HKEY_LOCAL_MACHINE\\ SOFTWARE\\WOW6432Node\\Microsoft\\ Windows\\ CurrentVersion\\Uninstall\\Microsoft Silverlight" ]
+RegistryPaths|Dizi[dize]|Ürünün cihaza yüklendiğine dair kayıt defteri kanıtı.|[ "HKEY_LOCAL_MACHINE\\ SOFTWARE\\WOW6432Microsoft\\\\Windows\\CurrentVersion\\Uninstall\\Microsoft Silverlight" ]
 SoftwareFirstSeenTimestamp|Dize|Bu yazılım cihazda ilk kez görüldü.|2019-04-07 02:06:47
 SoftwareName|Dize|Yazılım ürününün adı.|Silverlight
 SoftwareVendor|Dize|Yazılım satıcısının adı.|Microsoft
@@ -211,6 +212,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 }
 ```
 
+> [!NOTE]
+> CPE'ye sahip olmayan yazılımlar için ürün [kodu olmayan yazılım envanteri değerlendirme](get-assessment-non-cpe-software-inventory.md) API'sinin döndürdiği bilgilerle birlikte bu API tarafından döndürülen bilgiler, kuruluşunuzda yüklü olan yazılımlar ve yüklü olduğu cihazlar hakkında tam görünürlük sağlar.
+
 ## <a name="2-export-software-inventory-assessment-via-files"></a>2. Yazılım envanteri değerlendirmeyi dışarı aktarma (dosyalar aracılığıyla)
 
 ### <a name="21-api-method-description"></a>2.1 API yöntemi açıklaması
@@ -285,6 +289,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 - [Cihaz başına değerlendirme yöntemlerini ve özelliklerini dışarı aktarma](get-assessment-methods-properties.md)
 - [Cihaz başına güvenli yapılandırma değerlendirmelerini dışarı aktarma](get-assessment-secure-config.md)
 - [Cihaz başına yazılım güvenlik açıkları değerlendirmesi dışarı aktarma](get-assessment-software-vulnerabilities.md)
+- [Ürün kodu olmayan yazılım envanteri değerlendirmeyi dışarı aktarma](get-assessment-non-cpe-software-inventory.md)
 
 Diğer ilgililer
 
