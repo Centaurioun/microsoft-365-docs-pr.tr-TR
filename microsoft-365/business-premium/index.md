@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 İş Ekstra’ya Genel Bakış
+title: +Microsoft 365 İş Ekstra’ya Genel Bakış
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -21,72 +21,47 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra ile küçük veya orta ölçekli işletmeler için siber güvenliği nasıl uygulayacağınızı öğrenin. Siber güvenlik işlevleri ve özellikleri, siber saldırıları ve güvenlik ihlallerini önlemek ve üst düzey siber savunmalarla verileri, cihazları ve bilgileri korumaya yardımcı olmak için iyileştirilmiştir.
-ms.openlocfilehash: 47260bbec9e874d07f5508428843aa037a47898e
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 06655f049e62fc04b6521b9f7e801c312cbeeeaa
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111723"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276875"
 ---
 # <a name="microsoft-365-business-premium--productivity-and-cybersecurity-for-small-business"></a>Microsoft 365 İş Ekstra – küçük işletmeler için üretkenlik ve siber güvenlik
 
 İlk olarak, Microsoft 365 İş Ekstra ve onun birinci sınıf üretkenlik araçlarını benimsemekle akıllıca bir seçim yaptığınızı söyleyerek başlayalım. Siber güvenlik göz önünde bulundurularak tasarlanan Microsoft 365 İş Ekstra, verilerinizi, cihazlarınızı ve bilgilerinizi korur. Rastgele bireyler, organize suçlar veya son derece gelişmiş ulus devletler dahil olmak üzere bilgisayar korsanlarına ve siber saldırganlara karşı kuruluşunuzun ilk ve en iyi savunması sizsiniz.
 
-Önünüzdeki görev şu: Microsoft 365 İş Ekstra'nın kuruluşunuzun geleceğini güvence altına almasına izin verin! Ortamınızı güçlendirmenize, ekibinizi eğitmenize ve yönetilen cihazları korumanıza yardımcı olacak aşağıdaki görevleri üstlenerek bu göreve yaklaşın. Görevler şu şekilde düzenlenmiştir:
+Önünüzdeki görev şu: Microsoft 365 İş Ekstra'nın kuruluşunuzun geleceğini güvence altına almasına izin verin! Bu görevi aşağıdaki altı alt görev ile ele alın: 
 
-- **[Ortamınızı güçlendirmek](m365bp-setup-overview.md)** (yöneticinizin gerçekleştirdiği görevler); 
-- **[Ekibinizi eğitmek](m365bp-devices-overview.md)** (tüm personelin gerçekleştirdiği görevler); ve 
-- **[Yönetilen cihazları korumak](m365bp-protect-devices.md)** (yöneticinizin veya güvenlik ekibinizin gerçekleştirdiği görevler).
+:::image type="content" source="media/sixmissions.png" alt-text="Altı alt görevin gösterildiği diyagram":::
 
-Tüm görevleri tamamlamak bilgisayar korsanlarını engellemenin, fidye yazılımlarına karşı koruma sağlamanın ve kuruluşunuzun en iyi siber güvenlik savunmalarıyla korunmasını sağlamanın en etkili yoludur. Haydi başlayalım.
 
-## <a name="fortify-your-environment"></a>Ortamınızı güçlendirme
+| Alt Görev  | Açıklama  |
+|---------|---------|
+| **Ortamınızı güçlendirme**  | Bunlar, yöneticinizin tamamlaması gereken görevlerdir. |
+| [**1. Oturum açma ve ortamınızı ayarlama**](m365bp-setup-overview.md).    | İşletmeniz veya kuruluşunuz için Microsoft 365 temel kurulum işlemini tamamlayın.   |
+| [**2. Güvenlik korumasını yükseltme**](m365bp-security-overview.md).   |  Siber saldırıları önlemek için kritik ön saf güvenlik önlemleri ayarlayın.   |
+| **Ekibinizi eğitme**  | Bu görevler herkesin görevidir. |
+| [**3. Yönetilmeyen (KCG) cihazları ayarlama**](m365bp-protect-pcs-macs.md). | Ekosistemin güvenli bir parçası olabilmeleri için yönetilmeyen tüm cihazları ("kendi cihazını getir" veya "KCG" olarak da adlandırılır) ayarlayın. |
+| [**4.Güvenli bir şekilde e-posta kullanma**](m365bp-protect-email-overview.md). | Nelere dikkat etmeniz gerektiğinden emin olun ve e-posta sistemleri aracılığıyla kendinizi saldırılardan korumak için gerekli adımları uygulayın. |
+| [**5. Güvenli bir şekilde işbirliği yapma ve paylaşma**](m365bp-collaborate-share-securely.md). | Microsoft Teams, SharePoint ve OneDrive ile dosyaları başkalarıyla paylaşma ve daha güvenli bir şekilde işbirliği yapma hakkında bilgi edinin. |
+| **Yönetilen cihazları koruma**   | Bunlar, yöneticinizin veya güvenlik ekibinizin görevleridir. |
+| [**6. Yönetilen cihazları ayarlama ve güvenliğini sağlama**](m365bp-protect-devices.md). | Tehditlere karşı izlenerek korunabilmeleri için şirket cihazlarını kaydedin ve güvenliklerini koruyun. |
 
-Bu görevlerle ilgili olarak ilk aşamada oturup açın ve hesap erişim korumalarından başlayarak ilk savunma duvarlarınızı ayarlayın.
+Bu altı görevi tamamlamak bilgisayar korsanlarını engellemenin, fidye yazılımlarına karşı koruma sağlamanın ve kuruluşunuzun en iyi siber güvenlik savunmalarıyla korunmasını sağlamanın en etkili yoludur. Başlayalım!
 
-1. [**Ortamınızı ayarlama**](m365bp-setup-overview.md). Şirketiniz için Microsoft 365 temel kurulum işlemini tamamlayın.
-
-2. [**Siber güvenlik korumalarını artırma**](m365bp-security-overview.md). Siber saldırıları önlemek için kritik ön saf güvenlik önlemleri ayarlayın.
-
-[:::image type="content" source="media/m365bp-fortify-environment.jpg" alt-text="Ortamınızı Güçlendirin seçiliyken görevlerinizi özetleyen diyagram.":::](m365bp-setup-overview.md)
-
-## <a name="train-your-team"></a>Ekibinizi eğitme
-
-Ekibiniz (tüm çalışanlar) tarafından tamamlanması gereken bazı hedeflerle birlikte buraya bir dizi görev ekledik. Ekibinizin cihazlarının korunduğundan ve ekibinizin e-posta ve dosya paylaşımını güvenli bir şekilde kullanmak için eğitildiğinden ve tehditleri tanıyıp bildirebildiğinden emin olmalısınız.
-
-1. [**KCG cihazlarını ayarlama**](m365bp-protect-pcs-macs.md). Bu görevde, tüm yönetilmeyen (KCG) cihazlarını güvenli bir şekilde ekosistemin bir parçası olacak şekilde ayarlarsınız.
-
-2. [**E-postayı koruma**](m365bp-protect-email-overview.md). E-posta sistemlerini saldırılara karşı korumak için gerekli adımları uygulayın.
-
-3. [**Güvenli bir şekilde işbirliği yapma ve paylaşma**](m365bp-collaborate-share-securely.md). Bu görevin hedefleri, kuruluşun tüm üyeleri için güvenli dosya paylaşımını ayarlamanızı gerektirir.
-
-[:::image type="content" source="media/m365bp-train-team.jpg" alt-text="Ekibinizi Eğitin seçiliyken görevlerinizi özetleyen diyagram.":::](m365bp-devices-overview.md)
-
-## <a name="safeguard-managed-devices"></a>Yönetilen cihazları koruma
-
-Yönetilen cihazlar tehdit algılamalarına karşı izlendiği için daha güvenlidir. Bu son kritik görevde, cihazları İş için Defender’a ekleyip kaydederek kullanılabilecek en iyi araçlarla güvenli hale gelmelerini ve korunmalarını sağlarsınız.
-
-- [**Yönetilen cihazları ayarlama ve güvenliğini sağlama**](m365bp-protect-devices.md). Kuruluş tarafından izlenmeleri ve korunmaları için bu cihazları güvence altına almak adına gerekli adımları atın.
-
-[:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="Yönetilen Cihazları Koruma seçiliyken görevlerinizi özetleyen diyagram.":::](m365bp-protect-devices.md)
+> [!TIP]
+> Siber güvenlikte yeniyseniz veya bazı terimler sizin için belirsizse bkz: [terimler sözlüğü](m365bp-glossary.yml).
 
 ## <a name="cybersecurity-playbook"></a>Siber güvenlik taktik defteri
 
-Bu görevlerdeki rehberlik, sıfır güven metodolojisini temel alır ve işletmenizin Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598)'ta açıklanan hedeflere ulaşmasına yardımcı olur. İndirmeniz için bir özet sağlanır.
+Bu görevlerdeki rehberlik, sıfır güven metodolojisini temel alır ve işletmenizin Harvard Kennedy School  [Cybersecurity Campaign Playbook](https://go.microsoft.com/fwlink/p/?linkid=2015598)'ta açıklanan hedeflere ulaşmasına yardımcı olur. Sizin için indirilebilir bir özet hazırladık ([PDF’i buradan indirin](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)).
 
-Daha büyük halini görmek için bilgi grafiğine tıklayın (veya dokunun) ya da [Siber güvenlik akış planı posterinin bir kopyasını indirin](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
-
-:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Siber güvenlik taktik defteri" lightbox="media/m365bp-cyber-security-playbook.png":::
-
-[PDF biçiminde alın](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
-
-## <a name="learn-more-about-how-microsoft-365-business-premium-helps-your-business"></a>Microsoft 365 İş Ekstra'nın işletmenize nasıl yardımcı olduğu hakkında daha fazla bilgi edinin
-
-Microsoft 365 İş Ekstra, küçük ve orta ölçekli işletmeler için kapsamlı bir güvenlik ve işbirliği çözümüdür. [Microsoft 365 İş Ekstra’nın avantajları hakkında daha fazla bilgi edinin](m365bp-secure-users.md).
+[:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Siber güvenlik akış planı. Bu kılavuzu indirin.":::](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Şimdi [ortamınızı siber saldırılara karşı güçlendirelim](m365bp-setup-overview.md)!
+[Ortamınızı güçlendirme’ye](m365bp-setup-overview.md) ilerleyin.
 
-> [!NOTE]
-> Bir koşul veya yönergeyi anlayamazsanız [terimler sözlüğüne](m365bp-glossary.yml) bakın.
+

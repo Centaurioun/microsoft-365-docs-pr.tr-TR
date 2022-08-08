@@ -23,13 +23,13 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 05/26/2022
-ms.openlocfilehash: bf1da7f0813a6942241be93e26b397965070f39d
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.date: 08/04/2022
+ms.openlocfilehash: 74b76a8719d57cfd2caabc02ace1e80583db0821
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112361"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276601"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Aboneliğiniz için ödeme yapma
 
@@ -69,9 +69,14 @@ Aboneliğinizi kredi kartıyla, banka kartıyla veya banka hesabıyla ödeyebili
 
 Bazı durumlarda aboneliğinizi faturayla ödeyebilir, bunun için çek veya EFT kullanabilirsiniz. Faturayla ödemeye uygun olmanız için gerekenler:
 
-- Köklü bir müşteri olmalısınız
-- Abonelik maliyetiniz belirli bir tutarı aşmalıdır (bu tutar hizmetin konumuna göre değişir)
+- En az altı ay boyunca kesintisiz aboneliğinizin olması ve ödenmemiş bakiyenizin olmaması gerekir.
+- Ayda en az 6.000 ABD doları harcama yapmanız veya son 12 aylık dönemin herhangi 3 ayında minimum miktarda harcama yapmanız gerekir (bu miktar hizmet konumuna göre değişim göstermektedir).
 - Kredi denetiminden geçmelisiniz
+
+Ödeme yönteminizi çek veya havale olarak değiştirmek isterseniz karşınıza çıkacak olası iki sonuç şunlardır:
+
+- Otomatik olarak onay alırsınız ve sizden şirketiniz hakkında bilgi istenir.
+- Otomatik olarak onay almazsınız, ancak bu durumda bir [destek isteği](../../admin/get-help-support.md) oluşturabilirsiniz.
 
 Kredi denetimi yapılması gerekmesi durumunda, aboneliğinizi satın aldığınız sırada bu durum size bildirilir. Sizinle bağlantı kurulmasını kabul ederseniz, kredi onayına başvurma konusunda daha fazla bilgi sağlayan bir e-posta alırsınız. Kredi denetimleri genellikle iki iş günü içinde tamamlanır.
 
@@ -102,6 +107,18 @@ Abonelik ödemesini yapmak için kullanılacak ödeme yöntemini eklemediğiniz 
 > [!NOTE]
 > - Çekle ödeme yöntemi yalnızca birkaç ülkede kullanılabilir.
 > - Microsoft İş Ortağı Ağı (MPN) programının (Eylem Paketi aboneliği, Silver veya Gold uzmanlıkları) üyelik ücretini ödemeniz gerekiyorsa, MPN ödemesini yapma hakkında bilgi için bkz. [Uzmanlık ücretlerini ödeme](/partner-center/mpn-pay-fee-silver-gold-competency?tabs=workspaces-view).
+
+## <a name="check-or-wire-transfer-payment-processing-time"></a>Çek veya havale ile ödeme işlem süresi
+
+Çek ile yapılan ödemeler, banka onayından sonra üç ile beş iş günü içinde yapılır. Çek durumunu onaylamak için bankanıza başvurabilirsiniz.
+
+Havale ile yapılan ödemelerin işlem süreleri aktarım türüne bağlı olarak değişim göstermektedir:
+
+- ACH transferleri - Beş iş günü. Ulaşım için iki veya üç gün ve gönderi için iki gün.
+- Havaleler (yerel) - Dört iş günü. Ulaşım için iki gün ve gönderi için iki gün.
+- Havaleler (uluslararası) - Yedi iş günü. Ulaşım için beş gün ve gönderi için iki gün.
+
+Hesabınız çek veya havale ile ödeme için onay aldığında ödeme yönergeleri için faturanızın üzerine bakabilirsiniz.
 
 ## <a name="can-i-pay-my-invoice-online"></a>Faturamı çevrimiçi olarak ödeyebilir miyim?
 
