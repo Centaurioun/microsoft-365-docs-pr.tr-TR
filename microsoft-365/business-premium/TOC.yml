@@ -24,10 +24,10 @@
       items:
         - name: Genel bakış
           href: m365bp-security-overview.md
-        - name: Yönetici hesaplarını koruma
-          href: m365bp-protect-admin-accounts.md
-        - name: Güvenlik varsayılanlarını açma
+        - name: Güvenlik varsayılanlarını (MFA) açma
           href: m365bp-conditional-access.md
+        - name: Yönetici hesaplarınızı koruma
+          href: m365bp-protect-admin-accounts.md
         - name: Kötü amaçlı yazılımlara ve diğer tehditlere karşı koruma
           href: m365bp-increase-protection.md
 - name: Ekibinizi eğitme

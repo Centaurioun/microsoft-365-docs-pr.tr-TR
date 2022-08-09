@@ -513,6 +513,7 @@
 ####### [Değerlendirme yöntemlerini ve özelliklerini dışarı aktar](get-assessment-methods-properties.md)
 ####### [Güvenli yapılandırma değerlendirmesini dışarı aktar](get-assessment-secure-config.md)
 ####### [Yazılım envanteri değerlendirmesini dışarı aktar](get-assessment-software-inventory.md)
+####### [Ürün kodu olmayan yazılım envanteri değerlendirmesini dışarı aktarma](get-assessment-non-cpe-software-inventory.md)
 ####### [Yazılım güvenlik açığı değerlendirmesini dışarı aktar](get-assessment-software-vulnerabilities.md)
 
 ###### [Otomatik Araştırma]()

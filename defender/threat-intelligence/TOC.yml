@@ -31,3 +31,5 @@
   items:
     - name: Tehdit bilgilerini toplama ve altyapı zincirleme
       href: gathering-threat-intelligence-and-infrastructure-chaining.md
+    - name: Güvenlik açığı tehdit bilgilerini toplama
+      href: gathering-vulnerability-intelligence.md

@@ -121,7 +121,7 @@
               href: manage/remove-licenses-from-users.md
             - name: Konuk kullanıcılar
               href: add-users/about-guest-users.md
-            - name: Microsoft 365 grubuna konuk kullanıcılar ekleme
+            - name: Microsoft 365 grubunda konuk erişimini yönetme
               href: create-groups/manage-guest-access-in-groups.md
             - name: Kullanıcı adı ve e-posta adresi değiştirme
               href: add-users/change-a-user-name-and-email-address.md
@@ -161,6 +161,8 @@
               href: create-groups/explain-groups-knowledge-worker.md
             - name: Grupları yönetme
               href: create-groups/manage-groups.md
+            - name: Microsoft 365 grubu posta kutusu boyutu yönetimi
+              href: create-groups/group-mailbox-size-management.md
             - name: Grup üyelerini ekleme veya kaldırma
               href: create-groups/add-or-remove-members-from-groups.md
             - name: Silinmiş bir grubu geri yükleme

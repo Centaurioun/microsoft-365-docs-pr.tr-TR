@@ -16,6 +16,8 @@
   items:
     - name: Blackboard ile Microsoft OneDrive LTI kullanma
       href: onedrive-lti-blackboard.md
+    - name: Blackboard Learn ile Microsoft Teams toplantılarını kullanma
+      href: teams-meetings-with-blackboard-learn.md
     - name: Blackboard Learn Ultra ile Microsoft Teams sınıflarını kullanma
       href: teams-classes-with-blackboard.md
 - name: Moodle tümleştirmeleri
