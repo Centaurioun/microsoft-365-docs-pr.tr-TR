@@ -3,7 +3,7 @@ title: 21Vianet tarafından sağlanan Office 365 için URL'ler ve IP adresi aral
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/01/2022
+ms.date: 07/28/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: Bu makalede, Çin'de 21Vianet tarafından çalıştırıldığında Office 365 için URL'ler ve IP adresi aralıkları listelenir.
 hideEdit: true
-ms.openlocfilehash: e99a89e511faef069f0856e046ea1898e896b3c1
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 11c1740ef976f616306c01e476d94883b2e836db
+ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489913"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67294445"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet tarafından sağlanan Office 365 için URL'ler ve IP adresi aralıkları
 
@@ -36,7 +36,7 @@ ms.locfileid: "66489913"
   
  **Office 365 uç noktaları:** *21 Vianet* |  [Office 365 ABD Kamu DoD](microsoft-365-u-s-government-dod-endpoints.md) |  Office 365 ABD [Kamu GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) tarafından sağlanan [dünya çapında (GCC dahil)](urls-and-ip-address-ranges.md)  |  Office 365 |
   
-**Son güncelleştirme:** 06.01.2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Günlük aboneliğini değiştir](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+**Son güncelleştirme:** 28.07.2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Günlük aboneliğini değiştir](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 **İndirin:** tüm gerekli ve isteğe bağlı hedeflerin [JSON olarak biçimlendirilmiş](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) bir listesi.
 

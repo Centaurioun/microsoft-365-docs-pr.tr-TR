@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3fc36623e6de005ba1d9f348d6a70d839acef637
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: f49055529a93d7b50f7f19c0c281f54f18c8a599
+ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106919"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67294599"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Önceki MMA tabanlı Uç Nokta için Microsoft Defender çözümünden sunucu geçişi senaryoları
 
@@ -42,7 +42,7 @@ Bu yönergeler, Windows Server 2012 R2 ve Windows Server 2016 için Uç Nokta i�
 **Dağıtım gerçekleştirmek için Bulut için Microsoft Defender kullanıyorsanız, yüklemeyi ve yükseltmeyi otomatikleştirebilirsiniz. Bkz [. Sunucular için Defender Plan 2 artık MDE birleşik çözümüyle tümleşiyor](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)**
 
 > [!NOTE]
-> Uç Nokta için Microsoft Defender yüklü işletim sistemi yükseltmeleri desteklenmez. Yükseltmeye devam etmeden önce lütfen uygulamayı kapatın ve kaldırın.
+> Uç Nokta için Microsoft Defender yüklü işletim sistemi yükseltmeleri desteklenmez. Lütfen çıkarma ve kaldırma, işletim sistemini yükseltme ve ardından yükleme işlemine devam edin.
 
 > [!NOTE]
 > Otomatik yükseltme gerçekleştirmek için tam Microsoft Endpoint Configuration Manager otomasyonu ve tümleştirmesi, MECM'nin sonraki bir sürümünde kullanıma sunulacaktır. En son düzeltme paketine sahip 2107 sürümünden, yapılandırmanın yanı sıra grup ilkesi, PowerShell, Microsoft Endpoint Manager kiracı ekleme veya yerel yapılandırma için Endpoint Protection düğümünü kullanabilirsiniz. Ayrıca, el ile yükseltme adımlarını otomatikleştirmek için Microsoft Endpoint Configuration Manager'daki mevcut işlevlerden yararlanabilirsiniz; yöntemleri aşağıda açıklanmıştır.

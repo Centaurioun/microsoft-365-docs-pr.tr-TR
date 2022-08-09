@@ -18,18 +18,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2de0a8f2864ec37aca3e447b40e1608a8b189945
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 712b8160f07ac51646dda37513c44c5ef128592e
+ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281651"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67294577"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Microsoft Tehdit Uzmanları özelliklerini yapılandırın ve yönetin
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Şunlar için geçerlidir:**
+
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -58,7 +59,7 @@ Zaten bir Uç Nokta için Defender müşterisiyseniz, Microsoft 365 Defender por
 
    :::image type="content" source="images/mte-apply.png" alt-text="Microsoft Tehdit Uzmanları uygulama sayfasındaki Ad alanı" lightbox="images/mte-apply.png":::
 
-4. [Gizlilik bildirimini](https://privacy.microsoft.com/privacystatement) okuyun ve işiniz bittiğinde **Gönder'e** tıklayın. Uygulamanız onaylandıktan sonra bir karşılama e-postası alacaksınız.
+4. [Gizlilik bildirimini](https://privacy.microsoft.com/privacystatement) okuyun ve işiniz bittiğinde **Gönder'e** tıklayın. Uygulamanız onaylandıktan sonra bir karşılama e-postası alırsınız.
 
    :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="Microsoft Tehdit Uzmanları uygulama onay iletisi" lightbox="images/mte-applicationconfirmation.png":::
 
@@ -82,17 +83,17 @@ Bildirim alıcıları için e-posta bildirimleri göndermek için kurallar oluş
 
 ## <a name="view-the-endpoint-attack-notifications"></a>Uç Nokta Saldırısı Bildirimlerini Görüntüleme
 
-Sisteminizi e-posta bildirimi alacak şekilde yapılandırdıktan sonra e-postanızdaki Microsoft Tehdit Uzmanları Uç Nokta Saldırısı Bildirimleri almaya başlarsınız.
+Sisteminizi e-posta bildirimi alacak şekilde yapılandırdıktan sonra e-postanızdaki Microsoft Tehdit Uzmanları Uç Nokta Saldırısı Bildirimleri almaya başlayacaksınız.
 
 1. **Tehdit uzmanlarıyla** etiketlenmiş panodaki ilgili uyarı bağlamını görmek için e-postadaki bağlantıya tıklayın.
 
 2. Panodan, ayrıntıları görüntülemek için e-postadan edindiğiniz uyarı konusunun aynısını seçin.
 
-
 ### <a name="filter-to-view-just-the-endpoint-attack-notifications"></a>Yalnızca Uç Nokta Saldırısı Bildirimlerini görüntülemek için filtreleyin
-Birçok uyarı arasında yalnızca Defender Uzman Bildirimleri'ni görmek istiyorsanız olaylarınızı ve uyarılarınızı filtreleyebilirsiniz. Bunu yapmak için:
 
-1. Gezinti menüsünde **Olaylar & uyarılar** > **Olaylar'a** gidin > Filtre simgesi simgesini seçin.
+Birçok uyarı arasında yalnızca Uç Nokta Saldırısı Bildirimlerini görmek istiyorsanız olaylarınızı ve uyarılarınızı filtreleyebilirsiniz. Bunu yapmak için:
+
+1. Gezinti menüsünde **Olaylar & uyarılar** > **Olay**/**Uyarıları'na** gidin > Defender Uzmanları bildirimlerini](../../media/mte/defenderexperts/filter.png) görüntülemek için filtrele simgesini seçin![.
 2. Aşağı kaydırarak Etiketler alanına gidin > **Defender Uzmanları** onay kutusunu seçin.
 3. **Uygula'yı** seçin.
 
@@ -111,7 +112,9 @@ Yanıt için doğrudan Microsoft 365 Defender portalından etkileşime geçen Mi
 
 1. Araştırmak istediğiniz ilgili bilgileri (örneğin **Olay** sayfası) içeren portal sayfasına gidin. Araştırma isteği göndermeden önce ilgili uyarı veya cihazın sayfasının görüntülendiğinden emin olun.
 
-2. Sağ üst menüden **?** simgesini seçin. Ardından ** Defender Uzmanlarına Sorun ** seçeneğini belirleyin
+2. Sağ üst menüden **?** simgesini seçin. Ardından **Defender Uzmanlarına Sorun'a** tıklayın
+
+![Microsoft Ask Defender Uzmanları deneme aboneliği sayfası](../../media/mte/flyout-screen-trial-subscription.png)
 
 Açılır ekran açılır. Aşağıdaki ekranda bir deneme aboneliğinde olduğunuzda gösterilir. Aşağıdaki ekranda tam bir Microsoft Tehdit Uzmanları - İsteğe Bağlı Uzmanlar aboneliğiniz gösterilir.
 
@@ -126,7 +129,7 @@ Açılır ekran açılır. Aşağıdaki ekranda bir deneme aboneliğinde olduğu
 
 Microsoft Services Hub'a hızlı bir genel bakış için bu videoyu izleyin.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f]
+> [!VIDEO <https://www.microsoft.com/videoplayer/embed/RE4pk9f>]
 
 ## <a name="sample-investigation-topics-that-you-can-consult-with-microsoft-threat-experts---experts-on-demand"></a>Microsoft Tehdit Uzmanları ile danışabileceğiniz örnek araştırma konuları - İsteğe Bağlı Uzmanlar
 
@@ -160,7 +163,7 @@ Microsoft Services Hub'a hızlı bir genel bakış için bu videoyu izleyin.
 
 ### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>Yönetilen tehdit avcılığı sorgunuz hakkında bir ilerleme raporu alma
 
-Microsoft Tehdit Uzmanları yanıtı sorgunuza göre değişir. Aşağıdaki kategorilerdeki araştırma durumunu bildirmek için iki gün içinde **Defender Uzmanlarına Sorun** sorgunuz hakkında size bir ilerleme raporu e-posta ile gönderilir:
+Microsoft Tehdit Uzmanları yanıtı sorgunuza göre değişir. Araştırma durumunu aşağıdaki kategorilerden iletmek için iki gün içinde **Defender Uzmanlarına Sorun** sorgunuz hakkında size bir ilerleme raporu e-posta ile gönderilir:
 
 - Araştırmaya devam etmek için daha fazla bilgi gerekiyor
 - Teknik bağlamı belirlemek için bir dosya veya birkaç dosya örneği gerekir
@@ -169,5 +172,6 @@ Microsoft Tehdit Uzmanları yanıtı sorgunuza göre değişir. Aşağıdaki kat
 
 Araştırmayı devam ettirmek için hızlı bir şekilde yanıt vermek çok önemlidir.
 
-#### <a name="to-proactively-hunt-threats-across-endpoints-office-365-cloud-applications-and-identity-refer-to"></a>Uç noktalar, Office 365, bulut uygulamaları ve kimlik genelinde tehditleri proaktif olarak avlamak için bkz:
-- [Microsoft 365'te Microsoft Defender Uzmanlarına Genel Bakış](defender-experts-for-hunting.md) 
+#### <a name="to-proactively-hunt-threats-across-endpoints-office-365-cloud-applications-and-identity-refer-to"></a>Uç noktalar, Office 365, bulut uygulamaları ve kimlik genelinde tehditleri proaktif olarak avlamak için bkz.
+
+- [Microsoft 365'te Microsoft Defender Uzmanlarına Genel Bakış](../defender/defender-experts-for-hunting.md)

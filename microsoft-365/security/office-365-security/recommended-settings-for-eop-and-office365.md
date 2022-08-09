@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) ve Office 365 için Defender güvenlik ayarları için en iyi yöntemler nelerdir? Standart koruma için geçerli öneriler neleri içerir? Daha katı olmak istiyorsanız ne kullanılmalıdır? Ayrıca Office 365 için Defender kullanıyorsanız ne kadar ekstra alırsınız?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6d1c7486f3ead422e6daafbedacd59c34b34963b
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
+ms.openlocfilehash: a48df4446ad891350fd4efee99c44dae8704ad9d
+ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004377"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67294533"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP ve Office 365 için Microsoft Defender güvenliği için önerilen ayarlar
 
@@ -65,7 +65,7 @@ Bu makalede varsayılan ayarlar ve kullanıcılarınızın korunmasına yardımc
 |Güvenlik özelliği adı|Varsayılan|Standart|Sıkı|Açıklama ekleme|
 |---|:---:|:---:|:---:|---|
 |**İstenmeyen posta özellikleri & toplu e-posta eşiği**|||||
-|**Toplu e-posta eşiği** <br><br> _BulkThreshold_|7|6|4|Ayrıntılar için bkz. [EOP'de toplu şikayet düzeyi (BCL).](bulk-complaint-level-values.md)|
+|**Toplu e-posta eşiği** <br><br> _BulkThreshold_|7|6|5|Ayrıntılar için bkz. [EOP'de toplu şikayet düzeyi (BCL).](bulk-complaint-level-values.md)|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|Bu ayar yalnızca PowerShell'de kullanılabilir.|
 |**İstenmeyen posta puanı ayarlarını artırma**|Devre Dışı|Devre Dışı|Devre Dışı|Bu ayarların tümü Gelişmiş İstenmeyen Posta Filtresi'nin (ASF) bir parçasıdır. Daha fazla bilgi için bu makalenin [istenmeyen posta önleme ilkelerindeki ASF ayarları](#asf-settings-in-anti-spam-policies) bölümüne bakın.|
 |**İstenmeyen posta ayarları olarak işaretle**|Devre Dışı|Devre Dışı|Devre Dışı|Bu ayarların çoğu ASF'nin bir parçasıdır. Daha fazla bilgi için bu makalenin [istenmeyen posta önleme ilkelerindeki ASF ayarları](#asf-settings-in-anti-spam-policies) bölümüne bakın.|
@@ -78,7 +78,7 @@ Bu makalede varsayılan ayarlar ve kullanıcılarınızın korunmasına yardımc
 |**Kimlik avı** algılama eylemi <br><br> _PhishSpamAction_|**İletiyi Gereksiz Email klasörüne taşıma**<sup>\*</sup> <br><br> `MoveToJmf`|**Karantina iletisi** <br><br> `Quarantine`|**Karantina iletisi** <br><br> `Quarantine`|<sup>\*</sup>Varsayılan değer, varsayılan istenmeyen posta önleme ilkesinde ve PowerShell'de oluşturduğunuz yeni istenmeyen posta önleme ilkelerinde **iletiyi Gereksiz Email klasörüne taşı'dır**. Varsayılan değer, Microsoft 365 Defender portalında oluşturduğunuz yeni istenmeyen posta önleme ilkelerinde **karantina iletisidir**.|
 |**Yüksek güvenilirlikli kimlik avı** algılama eylemi <br><br> _HighConfidencePhishAction_|**Karantina iletisi** <br><br> `Quarantine`|**Karantina iletisi** <br><br> `Quarantine`|**Karantina iletisi** <br><br> `Quarantine`||
 |**Toplu** algılama eylemi <br><br> _BulkSpamAction_|**İletiyi Gereksiz Email klasörüne taşıma** <br><br> `MoveToJmf`|**İletiyi Gereksiz Email klasörüne taşıma** <br><br> `MoveToJmf`|**Karantina iletisi** <br><br> `Quarantine`||
-|**İstenmeyen postaları bu kadar gün boyunca karantinada tutma** <br><br> _QuarantineRetentionPeriod_|15 gün<sup>\*</sup>|30 gün|30 gün|<sup>\*</sup> Varsayılan değer, varsayılan istenmeyen posta önleme ilkesinde ve PowerShell'de oluşturduğunuz yeni istenmeyen posta önleme ilkelerinde 15 gündür. varsayılan değer, Microsoft 365 Defender portalında oluşturduğunuz yeni istenmeyen posta önleme ilkelerinde 30 gündür. <br><br> Bu değer, kimlik avı önleme ilkeleri tarafından karantinaya alınan iletileri de etkiler. Daha fazla bilgi için bkz. [EOP'de karantinaya alınan e-posta iletileri](quarantine-email-messages.md).|
+|**İstenmeyen postaları bu kadar gün boyunca karantinada tutma** <br><br> _QuarantineRetentionPeriod_|15 gün|30 gün|30 gün|  <br><br> Bu değer, kimlik avı önleme ilkeleri tarafından karantinaya alınan iletileri de etkiler. Daha fazla bilgi için bkz. [EOP'de karantinaya alınan e-posta iletileri](quarantine-email-messages.md).|
 |**İstenmeyen posta güvenliği ipuçlarını etkinleştirme** <br><br> _InlineSafetyTipsEnabled_|Seçili <br><br> `$true`|Seçili <br><br> `$true`|Seçili <br><br> `$true`||
 |Kimlik avı iletileri için sıfır saatlik otomatik temizlemeyi (ZAP) etkinleştirme <br><br> _PhishZapEnabled_|Seçili <br><br> `$true`|Seçili <br><br> `$true`|Seçili <br><br> `$true`||
 |İstenmeyen posta iletileri için ZAP'i etkinleştirme <br><br> _SpamZapEnabled_|Seçili <br><br> `$true`|Seçili <br><br> `$true`|Seçili <br><br> `$true`||

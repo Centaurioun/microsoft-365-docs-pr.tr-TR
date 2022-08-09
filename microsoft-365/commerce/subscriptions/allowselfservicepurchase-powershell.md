@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 description: Self servis satın alma özelliğini açmak veya kapatmak için AllowSelfServicePurchase PowerShell cmdlet'ini kullanmayı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 4/7/2022
-ms.openlocfilehash: d9be7179ed26a35b2e04af8386f161de935b1ae1
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.date: 08/09/2022
+ms.openlocfilehash: 8569f9591e024ddcaf3453023a829f6aa292a46c
+ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714716"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67294467"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell modülü için AllowSelfServicePurchase kullanma
 
@@ -34,9 +34,10 @@ ms.locfileid: "66714716"
 
 **MSCommerce** PowerShell modülünü kullanarak şunları yapabilirsiniz:
 
-- **AllowSelfServicePurchase** parametre değerinin varsayılan durumunu (etkin veya devre dışı) görüntüleyin
-- Geçerli ürünlerin listesini ve self servis satın alma özelliğinin etkinleştirilip etkinleştirilmediğini görüntüleme
+- **AllowSelfServicePurchase** parametre değerinin varsayılan durumunu (etkin, devre dışı veya ödeme yöntemi olmadan denemelere izin ver) görüntüleyin
+- Geçerli ürünlerin listesini ve self servis satın alma özelliğinin etkinleştirilip etkinleştirilmediğini, devre dışı bırakılıp bırakılmadığını veya ödeme yöntemi olmadan denemelere izin verilip verilmediğini görüntüleyin
 - Belirli bir ürünü etkinleştirmek veya devre dışı bırakmak için geçerli ayarı görüntüleme veya değiştirme
+- Ödeme yöntemleri olmadan denemeler için ayarı görüntüleme veya değiştirme
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -117,7 +118,17 @@ Aşağıdaki tabloda, kullanılabilir ürünler ve **bunların ProductId'leri** 
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>AllowSelfServicePurchase durumunu görüntüleme veya ayarlama
 
-Self servis satın alma için kullanılabilen ürünlerin listesini görüntüledikten sonra, belirli bir ürünün ayarını görüntüleyebilir veya değiştirebilirsiniz.
+Kullanıcıların self servis satın alma işlemi yapmalarına izin vermek veya bunları engellemek için **AllowSelfServicePurchase** **için Value** parametresini ayarlayabilirsiniz. Kullanıcıların onaylanan ürünler listesinden ürünleri denemesine izin vermek için **OnlyTrialsWithoutPaymentMethod** değerini de kullanabilirsiniz. Kullanıcılar ürünü yalnızca **AllowSelfServicePurchase** etkinleştirildiğinde deneme süresi sona erdikten sonra satın alabilir.
+
+**OnlyTrialsWithoutPaymentMethod** değeri, satın almaları engellemeye devam ederken geçici denemelere izin verir.
+
+Aşağıdaki tabloda **Value** parametresinin ayarları açıklanmaktadır.
+
+| **Ayar** | **Etki** |
+|---|---|
+| Etkin | Kullanıcılar self servis satın alma işlemleri yapabilir ve ürün için denemeler alabilir. |
+| OnlyTrialsWithoutPaymentMethod | Kullanıcılar self servis satın alma işlemi yapamaz ancak ürün için denemeler alabilir. Deneme süresi dolduktan sonra tam sürümü satın alamıyorlar. |
+| Devre dışı | Kullanıcılar self servis satın alma işlemi yapamaz veya ürün için deneme sürümü edinemez. |
 
 Belirli bir ürünün ilke ayarını almak için aşağıdaki komutu çalıştırın:
 
@@ -128,13 +139,19 @@ Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TT
 Belirli bir ürün için ilke ayarını etkinleştirmek için aşağıdaki komutu çalıştırın:
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $True
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "Enabled"
 ```
 
 Belirli bir ürünün ilke ayarını devre dışı bırakmak için aşağıdaki komutu çalıştırın:
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $False
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "Disabled"
+```
+
+Kullanıcıların ödeme yöntemi olmadan belirli bir ürünü denemesine izin vermek için aşağıdaki komutu çalıştırın:
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "OnlyTrialsWithoutPaymentMethod" 
 ```
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>AllowSelfServicePurchase'ı devre dışı bırakmak için örnek betik
@@ -145,16 +162,15 @@ Aşağıdaki örnekte **MSCommerce** modülünü içeri aktarma, hesabınızla o
 Import-Module -Name MSCommerce
 Connect-MSCommerce #sign-in with your global or billing administrator account when prompted
 $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | where {$_.ProductName -match 'Power Automate per user'}
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Value "Disabled"
 ```
 
 Ürün için birden çok değer varsa, aşağıdaki örnekte gösterildiği gibi komutu her değer için ayrı ayrı çalıştırabilirsiniz:
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Enabled $false
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Value "Disabled"
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Value "Disabled"
 ```
-
 
 ## <a name="troubleshooting"></a>Sorun giderme
 
@@ -189,6 +205,4 @@ Uninstall-Module -Name MSCommerce
 
 ## <a name="related-content"></a>İlgili içerik
 
-[Self servis satın almaları yönetme (Yönetici)](manage-self-service-purchases-admins.md) (makale)
-
-[Self servis satın alma hakkında SSS](self-service-purchase-faq.yml) (makale)
+[Self servis satın almaları yönetme (Yönetici)](manage-self-service-purchases-admins.md) (makale) [Self servis satın alma hakkında SSS](self-service-purchase-faq.yml) (makale)
