@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 ağ bağlantısı test aracı
-ms.openlocfilehash: ac2ec12ac0da2309e1d5ac0c35bbd0462cc68a62
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 39eb2fd4bd5032ee99cd675838ad96b864d5a782
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043719"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281783"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 ağ bağlantısı test aracı
 
@@ -32,23 +32,23 @@ Microsoft 365 ağ bağlantısı test aracı konumunda <https://connectivity.offi
 > ![Bağlantı testi aracı.](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
 >[!NOTE]
->Ağ bağlantısı test aracı WW Ticari kiracılarını destekler ancak Orta, GCC Yüksek, DoD veya Çin GCC desteklemez.
+>Ağ bağlantısı test aracı WW Ticari kiracılarını destekler ancak GCC Moderate, GCC High, DoD veya Çin'de desteklemez.
 
-Microsoft 365 Yönetici Merkezi'ndeki ağ içgörüleri, her gün toplanan Microsoft 365 kiracınız için düzenli ürün içi ölçümleri temel alır. Buna karşılık, Microsoft 365 ağ bağlantı testindeki ağ içgörüleri araçta yerel olarak çalıştırılır.
+Microsoft 365 Yönetici Merkezi'ndeki ağ içgörüleri, Microsoft 365 kiracınız için her gün toplanan düzenli ürün içi ölçümleri temel alır. Buna karşılık, Microsoft 365 ağ bağlantı testindeki ağ içgörüleri araçta yerel olarak çalıştırılır.
 
 Ürün içi test sınırlıdır ve testlerin kullanıcıya yerel olarak çalıştırılması daha fazla veri toplar ve daha derin içgörüler elde edilir. Microsoft 365 Yönetici Merkezi'ndeki ağ içgörüleri, belirli bir ofis konumunda ağ sorunu olduğunu gösterir. Microsoft 365 bağlantı testi, bu sorunun kök nedenini belirlemeye ve hedeflenen bir performans geliştirme eylemi sağlamaya yardımcı olabilir.
 
-Bu içgörülerin, ağ kalitesi durumunun Microsoft 365 Yönetici Merkezi'ndeki her ofis konumu için değerlendirilebildiği ve Microsoft 365 bağlantı testini temel alan test dağıtımından sonra daha fazla detayın bulunabileceği durumlarda birlikte kullanılmasını öneririz.
+Bu içgörülerin, Microsoft 365 Yönetici Merkezi'ndeki her ofis konumu için ağ kalitesi durumunun değerlendirilebildiği ve Microsoft 365 bağlantı testini temel alan test dağıtımından sonra daha fazla detayın bulunabileceği bir yerde birlikte kullanılmasını öneririz.
 
 ## <a name="what-happens-at-each-test-step"></a>Her test adımında ne olur?
 
-### <a name="office-location-identification"></a>konum belirlemeyi Office
+### <a name="office-location-identification"></a>Office konumu belirleme
 
 *Testi çalıştır* düğmesine tıkladığınızda, çalışan test sayfasını gösterir ve ofis konumunu belirleriz. Konumunuzu şehre, eyalete ve ülkeye göre yazabilir veya sizin için algılanan bir konum seçebilirsiniz. Ofis konumunu algılarsanız, araç web tarayıcısından enlem ve boylamı talep eder ve kullanımdan önce doğruluğu 300 metre ile 300 metre ile sınırlar. Ağ performansını ölçmek için konumu binadan daha doğru bir şekilde tanımlamak gerekmez.
 
 ### <a name="javascript-tests"></a>JavaScript testleri
 
-Office konum belirlemesinden sonra JavaScript'te bir TCP gecikme süresi testi çalıştırıyoruz ve hizmetten kullanımda olan ve önerilen Microsoft 365 hizmet ön kapı sunucuları hakkında veri istiyoruz. Bu testler tamamlandığında, bunları haritada ve bir sonraki adımdan önce görüntülenebileceği ayrıntılar sekmesinde gösteririz.
+Office konum belirlemesinden sonra JavaScript'te bir TCP gecikme süresi testi çalıştırıyoruz ve kullanımda olan ve önerilen Microsoft 365 hizmeti ön kapı sunucuları hakkında hizmetten veri istiyoruz. Bu testler tamamlandığında, bunları haritada ve bir sonraki adımdan önce görüntülenebileceği ayrıntılar sekmesinde gösteririz.
 
 ### <a name="download-the-advanced-tests-client-application"></a>Gelişmiş testler istemci uygulamasını indirme
 
@@ -71,7 +71,7 @@ Testler tamamlandığında, web sayfası ve gelişmiş testler istemcisi bunu g�
 
 ## <a name="sharing-your-test-report"></a>Test raporunuzu paylaşma
 
-Test raporu, Microsoft 365 hesabınızda kimlik doğrulaması gerektirir. Yöneticiniz test raporunuzu nasıl paylaşabileceğinizi seçer. Varsayılan ayarlar, raporlarınızın kuruluşunuzdaki diğer kullanıcılarla paylaşılması için izin verir ve ReportID bağlantısı kullanılamaz. Raporların süresi varsayılan olarak 90 gün sonra dolacaktır.
+Test raporu, Microsoft 365 hesabınız için kimlik doğrulaması gerektirir. Yöneticiniz test raporunuzu nasıl paylaşabileceğinizi seçer. Varsayılan ayarlar, raporlarınızın kuruluşunuzdaki diğer kullanıcılarla paylaşılması için izin verir ve ReportID bağlantısı kullanılamaz. Raporların süresi varsayılan olarak 90 gün sonra dolacaktır.
 
 ### <a name="sharing-your-report-with-your-administrator"></a>Raporunuzu yöneticinizle paylaşma
 
@@ -81,7 +81,7 @@ Bir test raporu gerçekleştiğinde oturum açtıysanız rapor yöneticinizle pa
 
 Test raporları (herhangi bir kişisel kimlik hariç) Microsoft çalışanlarıyla paylaşılır. Bu paylaşım varsayılan olarak etkindir ve Sistem Durumu | yöneticiniz tarafından devre dışı bırakılabilir **** Microsoft 365 Yönetici Merkezi'ndeki Ağ Bağlantısı sayfası.
 
-### <a name="sharing-with-other-users-who-sign-in-to-the-same-microsoft-365-tenant"></a>Aynı Microsoft 365 kiracıda oturum açan diğer kullanıcılarla paylaşma
+### <a name="sharing-with-other-users-who-sign-in-to-the-same-microsoft-365-tenant"></a>Aynı Microsoft 365 kiracısında oturum açan diğer kullanıcılarla paylaşma
 
 Raporunuzu paylaşmak için kullanıcıları seçebilirsiniz. Seçebilmek varsayılan olarak etkindir, ancak yöneticiniz tarafından devre dışı bırakılabilir.
 
@@ -97,7 +97,7 @@ Bir ReportID bağlantısına erişim sağlayarak test raporunuzu herkesle payla�
 
 ## <a name="network-connectivity-test-results"></a>Ağ Bağlantısı Test Sonuçları
 
-Sonuçlar **Özet** ve **Ayrıntılar** sekmelerinde gösterilir. Özet sekmesinde algılanan ağ çevresinin haritası ve ağ değerlendirmesinin yakındaki diğer Microsoft 365 müşterilerle karşılaştırması gösterilir. Ayrıca test raporunun paylaşılmasına da olanak tanır. Özet sonuçları görünümü şöyle görünür:
+Sonuçlar **Özet** ve **Ayrıntılar** sekmelerinde gösterilir. Özet sekmesinde algılanan ağ çevresinin haritası ve ağ değerlendirmesinin yakındaki diğer Microsoft 365 müşterileri ile karşılaştırması gösterilir. Ayrıca test raporunun paylaşılmasına da olanak tanır. Özet sonuçları görünümü şöyle görünür:
 
 > [!div class="mx-imgBorder"]
 > ![Ağ bağlantısı test aracı özet sonuçları.](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
@@ -131,21 +131,21 @@ En iyi Microsoft 365 ağ bağlantısı için kullanıcı ofisi konumlarından İ
 
 #### <a name="proxy-server-information"></a>Ara sunucu bilgileri
 
-Ara sunucuların yerel makinede **İyileştir** kategorisindeki Microsoft 365 ağ trafiğini geçirmek üzere yapılandırılıp yapılandırılmadığını belirleriz. Kullanıcı ofisi konumundan ara sunuculara olan uzaklığı belirleriz.
+Ara sunucuların yerel makinede Microsoft 365 ağ trafiğini **En İyi Duruma Getir** kategorisinde geçirmek üzere yapılandırılıp yapılandırılmadığını belirleriz. Kullanıcı ofisi konumundan ara sunuculara olan uzaklığı belirleriz.
 
 Mesafe ilk olarak ICMP ping ile test edilir. Bu başarısız olursa, TCP ping ile test ederiz ve son olarak bir IP adresi konumu veritabanında ara sunucu IP adresini ararız. Ara sunucu, kullanıcı ofisi konumundan **500 milden** (800 kilometre) daha uzaktaysa bir ağ içgörüsü gösteririz.
 
 #### <a name="virtual-private-network-vpn-you-use-to-connect-to-your-organization"></a>Kuruluşunuza bağlanmak için kullandığınız sanal özel ağ (VPN)
 
-Bu test, Microsoft 365 bağlanmak için VPN kullanıp kullanmadığınızı algılar. Vpn'iniz yoksa veya Microsoft 365 için önerilen bölünmüş tünel yapılandırmasına sahip bir VPN'niz varsa bir geçiş sonucu gösterilir.
+Bu test, Microsoft 365'e bağlanmak için VPN kullanıp kullanmadığınızı algılar. Vpn'iniz yoksa veya Microsoft 365 için önerilen bölünmüş tünel yapılandırmasına sahip bir VPN'niz varsa bir geçiş sonucu gösterilir.
 
-#### <a name="vpn-split-tunnel"></a>VPN Split Tunnel
+#### <a name="vpn-split-tunnel"></a>VPN Bölünmüş Tüneli
 
-Exchange Online, SharePoint Online ve Microsoft Teams için her **İyileştir** kategori yolu, VPN'de tünellenip tünellenmediğini görmek için test edilir. Ayrılmış bir iş yükü VPN'i tamamen önler. VPN üzerinden tünellenmiş bir iş yükü gönderilir. Seçmeli tünelli bir iş yükünde VPN üzerinden gönderilen bazı yollar ve bazıları ayrılmıştır. Bir geçiş sonucu, tüm iş yüklerinin bölünmüş veya seçmeli tünelli olup olmadığını gösterir.
+Exchange Online, SharePoint Online ve Microsoft Teams için en **iyi duruma getirme** kategori yollarının her biri VPN'de tünellenip tünellenmediğini görmek için test edilir. Ayrılmış bir iş yükü VPN'i tamamen önler. VPN üzerinden tünellenmiş bir iş yükü gönderilir. Seçmeli tünelli bir iş yükünde VPN üzerinden gönderilen bazı yollar ve bazıları ayrılmıştır. Bir geçiş sonucu, tüm iş yüklerinin bölünmüş veya seçmeli tünelli olup olmadığını gösterir.
 
 #### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>Metropol bölgenizdeki müşteriler daha iyi performansla
 
-Kullanıcı ofisi konumu ile Exchange Online hizmeti arasındaki ağ gecikme süresi, aynı metro alanındaki diğer Microsoft 365 müşterilerle karşılaştırılır. Aynı metro alanındaki müşterilerin %10'unun veya daha fazlasının daha iyi performansa sahip olması durumunda ağ içgörüleri gösterilir. Bu, kullanıcılarının Microsoft 365 kullanıcı arabiriminde daha iyi performansa sahip olacağı anlamına gelir.
+Kullanıcı ofisi konumu ile Exchange Online hizmeti arasındaki ağ gecikme süresi, aynı metro alanındaki diğer Microsoft 365 müşterileri ile karşılaştırılır. Aynı metro alanındaki müşterilerin %10'unun veya daha fazlasının daha iyi performansa sahip olması durumunda ağ içgörüleri gösterilir. Bu, kullanıcılarının Microsoft 365 kullanıcı arabiriminde daha iyi performansa sahip olacağı anlamına gelir.
 
 Bu ağ içgörüleri, bir şehirdeki tüm kullanıcıların aynı telekomünikasyon altyapısına ve İnternet bağlantı hatlarına ve Microsoft ağına aynı yakınlığı temel alarak oluşturulur.
 
@@ -167,17 +167,17 @@ Bu ağ içgörüleri özellikle Exchange Online hizmeti ön kapı seçimini etki
 
 Bu bölümde Exchange Online ile ilgili test sonuçları gösterilir.
 
-#### <a name="exchange-service-front-door-location"></a>Exchange servis ön kapı konumu
+#### <a name="exchange-service-front-door-location"></a>Exchange hizmeti ön kapı konumu
 
-Kullanımda olan Exchange hizmeti front door, Outlook bunu yaptığı şekilde tanımlanır ve kullanıcı konumundan bu hizmete ağ TCP gecikmesini ölçeriz. TCP gecikme süresi gösterilir ve kullanımdaki Exchange hizmet ön kapısı, geçerli konum için en iyi hizmet ön kapıları listesiyle karşılaştırılır. En iyi Exchange hizmet ön kapılarından biri kullanımda değilse, bu bir ağ içgörüsü olarak gösterilir.
+Kullanımdaki Exchange hizmeti ön kapısı, Outlook'un bunu yaptığı şekilde tanımlanır ve kullanıcı konumundan bu konuma ağ TCP gecikmesini ölçeriz. TCP gecikme süresi gösterilir ve kullanımdaki Exchange hizmeti ön kapısı, geçerli konum için en iyi hizmet ön kapıları listesiyle karşılaştırılır. En iyi Exchange hizmeti ön kapılarından biri kullanımda değilse, bu bir ağ içgörüsü olarak gösterilir.
 
-En iyi Exchange hizmet ön kapılarından birinin kullanılmaması, şirket ağ çıkışından önce ağ geri sıkışması olabilir. Bu durumda yerel ve doğrudan ağ çıkışı öneririz. Bunun nedeni, uzak DNS özyinelemeli çözümleyici sunucusunun kullanılması olabilir. Bu durumda, DNS özyinelemeli çözümleyici sunucusunu ağ çıkışıyla hizalamanızı öneririz.
+En iyi Exchange hizmeti ön kapılarından birinin kullanılmaması, şirket ağ çıkışından önce ağ geri sıkışması olabilir. Bu durumda yerel ve doğrudan ağ çıkışı öneririz. Bunun nedeni, uzak DNS özyinelemeli çözümleyici sunucusunun kullanılması olabilir. Bu durumda, DNS özyinelemeli çözümleyici sunucusunu ağ çıkışıyla hizalamanızı öneririz.
 
-Exchange hizmeti ön kapısında TCP gecikme süresinde (ms) olası bir iyileştirmeyi hesaplıyoruz. Bu işlem, test edilen kullanıcı ofisi konumu ağ gecikme süresine bakarak ve ağ gecikmesini geçerli konumdan hizmet ön kapısı Exchange dolaplara çıkararak yapılır. Fark, geliştirme için olası fırsatı temsil eder.
+Exchange hizmeti ön kapısında TCP gecikme süresinde (ms) olası bir iyileştirmeyi hesaplıyoruz. Bu, test edilen kullanıcı ofisi konumu ağ gecikme süresine bakarak ve ağ gecikmesini geçerli konumdan exchange hizmeti ön kapısına çıkararak yapılır. Fark, geliştirme için olası fırsatı temsil eder.
 
-#### <a name="best-exchange-service-front-doors-for-your-location"></a>Konumunuz için en iyi Exchange hizmeti ön kapı
+#### <a name="best-exchange-service-front-doors-for-your-location"></a>Konumunuz için en iyi Exchange hizmeti ön kapı(lar)
 
-Bu, konumunuz için şehre göre en iyi Exchange hizmet ön kapı konumlarını listeler.
+Bu, konumunuz için şehre göre en iyi Exchange hizmeti ön kapı konumlarını listeler.
 
 #### <a name="service-front-door-recorded-in-the-client-dns"></a>İstemci DNS'sine kaydedilen hizmet ön kapısı
 
@@ -193,11 +193,11 @@ Kullanımda olan SharePoint hizmeti ön kapısı, OneDrive istemcisiyle aynı ş
 
 #### <a name="download-speed"></a>İndirme hızı
 
-SharePoint hizmeti ön kapısından 15 Mb'lık bir dosyanın indirme hızını ölçüyoruz. Sonuç, megabayt cinsinden hangi boyut dosyasının SharePoint veya OneDrive **bir saniyede** indirilebileceğini göstermek için saniyede megabayt cinsinden gösterilir. Sayı, saniyedeki megabit cinsinden minimum devre bant genişliğinin onda birine benzer olmalıdır. Örneğin 100 mb/sn İnternet bağlantınız varsa saniyede 10 megabayt (10 MB/sn) bekleyebilirsiniz.
+SharePoint hizmetinin ön kapısından 15 Mb'lık bir dosyanın indirme hızını ölçüyoruz. Sonuç, SharePoint veya OneDrive'dan **bir saniyede** megabayt cinsinden hangi boyut dosyasının indirilebileceğini göstermek için saniyede megabayt cinsinden gösterilir. Sayı, saniyedeki megabit cinsinden minimum devre bant genişliğinin onda birine benzer olmalıdır. Örneğin 100 mb/sn İnternet bağlantınız varsa saniyede 10 megabayt (10 MB/sn) bekleyebilirsiniz.
 
 #### <a name="buffer-bloat"></a>Arabellek şişkinliği
 
-15 Mb indirme sırasında SharePoint hizmeti ön kapısına TCP gecikmesini ölçeriz. Bu, yük altındaki gecikme süresidir ve yük altında değilken gecikme süresiyle karşılaştırılır. Yük altındayken gecikme süresindeki artış genellikle yüklenen (veya şişirilmiş) tüketici ağ cihazı arabelleklerine atf edilir. 1.000 veya daha fazla herhangi bir blob için bir ağ içgörüsü gösterilir.
+15 Mb indirme sırasında, SharePoint hizmetinin ön kapısına tcp gecikmesini ölçeriz. Bu, yük altındaki gecikme süresidir ve yük altında değilken gecikme süresiyle karşılaştırılır. Yük altındayken gecikme süresindeki artış genellikle yüklenen (veya şişirilmiş) tüketici ağ cihazı arabelleklerine atf edilir. 100ms veya daha fazla herhangi bir blob için bir ağ içgörüsü gösterilir.
 
 #### <a name="service-front-door-recorded-in-the-client-dns"></a>İstemci DNS'sine kaydedilen hizmet ön kapısı
 
@@ -209,11 +209,11 @@ Bu bölümde Microsoft Teams ile ilgili test sonuçları gösterilir.
 
 #### <a name="media-connectivity-audio-video-and-application-sharing"></a>Medya bağlantısı (ses, video ve uygulama paylaşımı)
 
-Bu, Microsoft Teams hizmeti ön kapısına UDP bağlantısını sınar. Bu engellenirse, Microsoft Teams TCP kullanarak çalışmaya devam edebilir, ancak ses ve görüntü engellenir. Skype Kurumsal [Online'da Medya Kalitesi ve Ağ Bağlantısı Performansı'ndaki Microsoft Teams](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance) için de geçerli olan bu UDP ağ ölçümleri hakkında daha fazla bilgi edinin.
+Bu, Microsoft Teams hizmeti ön kapısına UDP bağlantısını test ediyor. Bu engellenirse, Microsoft Teams TCP kullanarak çalışmaya devam edebilir, ancak ses ve görüntü engellenir. Skype Kurumsal [Online'da Medya Kalitesi ve Ağ Bağlantısı Performansı](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance) bölümünde Microsoft Teams için de geçerli olan bu UDP ağ ölçümleri hakkında daha fazla bilgi edinin.
 
 #### <a name="packet-loss"></a>Paket kaybı
 
-İstemciden Microsoft Teams hizmeti ön kapısına yapılan 10 saniyelik test sesli çağrısında ölçülen UDP paket kaybını gösterir. Bu, geçiş için **%1,00'den** düşük olmalıdır.
+İstemciden Microsoft Teams hizmeti ön kapısına yapılan 10 saniyelik bir test sesli çağrısında ölçülen UDP paket kaybını gösterir. Bu, geçiş için **%1,00'den** düşük olmalıdır.
 
 #### <a name="latency"></a>Gecikme
 
@@ -227,15 +227,15 @@ Bu, Microsoft Teams hizmeti ön kapısına UDP bağlantısını sınar. Bu engel
 
 Kullanıcı ofisi konumundan tüm gerekli Microsoft 365 ağ uç noktalarına HTTP bağlantısını test ediyoruz. Bunlar adresinde [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md)yayımlanır. Bağlanılamayan gerekli ağ uç noktaları için bir ağ içgörüsü gösterilir.
 
-Bağlantı, kurumsal ağ çevresi üzerindeki bir ara sunucu, güvenlik duvarı veya başka bir ağ güvenlik cihazı tarafından engellenebilir. TCP bağlantı noktası 80'e bağlantı bir HTTP isteğiyle test edilir ve 443 numaralı TCP bağlantı noktasına bağlantı bir HTTPS isteğiyle test edilir. Yanıt yoksa FQDN hata olarak işaretlenir. HTTP yanıt kodu 407 varsa FQDN hata olarak işaretlenir. Bir HTTP yanıt kodu 403 varsa yanıtın Sunucu özniteliğini denetleriz ve bir ara sunucu gibi görünüyorsa bunu hata olarak işaretleriz. Windows komut satırı aracı curl.exe gerçekleştirdiğimiz testlerin benzetimini yapabilirsiniz.
+Bağlantı, kurumsal ağ çevresi üzerindeki bir ara sunucu, güvenlik duvarı veya başka bir ağ güvenlik cihazı tarafından engellenebilir. TCP bağlantı noktası 80'e bağlantı bir HTTP isteğiyle test edilir ve 443 numaralı TCP bağlantı noktasına bağlantı bir HTTPS isteğiyle test edilir. Yanıt yoksa FQDN hata olarak işaretlenir. HTTP yanıt kodu 407 varsa FQDN hata olarak işaretlenir. Bir HTTP yanıt kodu 403 varsa yanıtın Sunucu özniteliğini denetleriz ve bir ara sunucu gibi görünüyorsa bunu hata olarak işaretleriz. Windows komut satırı aracı curl.exe ile gerçekleştirdiğimiz testlerin benzetimini yapabilirsiniz.
 
-SSL sertifikasını, '[https://aka.ms/o365ip](./urls-and-ip-address-ranges.md)de tanımlandığı şekilde iyileştirme veya izin verme kategorisindeki her gerekli Microsoft 365 ağ uç noktasında test ediyoruz. Herhangi bir test bir Microsoft SSL sertifikası bulamazsa, bağlanan şifrelenmiş ağın aracı bir ağ cihazı tarafından kesilmiş olması gerekir. Kesilen şifrelenmiş ağ uç noktaları üzerinde ağ içgörüleri gösterilir.
+SSL sertifikasını, ' [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md)de tanımlandığı şekilde iyileştirme veya izin verme kategorisindeki gerekli her Microsoft 365 ağ uç noktasında test ediyoruz. Herhangi bir test bir Microsoft SSL sertifikası bulamazsa, bağlanan şifrelenmiş ağın aracı bir ağ cihazı tarafından kesilmiş olması gerekir. Kesilen şifrelenmiş ağ uç noktaları üzerinde ağ içgörüleri gösterilir.
 
 Microsoft tarafından sağlanmayan bir SSL sertifikası bulunduğunda, test için FQDN'yi ve kullanımdaki SSL sertifika sahibini gösteririz. Bu SSL sertifika sahibi bir ara sunucu satıcısı veya kurumsal otomatik olarak imzalanan bir sertifika olabilir.
 
 #### <a name="network-path"></a>Ağ yolu
 
-Bu bölümde, Exchange Online hizmeti ön kapısına, SharePoint Online hizmet ön kapısına ve Microsoft Teams hizmeti ön kapısına ICMP izleme yönlendirmesinin sonuçları gösterilir. Yalnızca bilgi için sağlanır ve ilişkili ağ içgörüleri yoktur. Sağlanan üç izleme yolu vardır. _outlook.office365.com_ bir izleme yolu, ön ucu SharePoint müşterilere veya sağlanmadıysa _microsoft.sharepoint.com_ bir izleme yolu ve _world.tr.teams.microsoft.com_ bir izleme yolu.
+Bu bölümde, Exchange Online hizmeti ön kapısına, SharePoint Online hizmetinin ön kapısına ve Microsoft Teams hizmeti ön kapısına ICMP izleme yönlendirmesinin sonuçları gösterilir. Yalnızca bilgi için sağlanır ve ilişkili ağ içgörüleri yoktur. Sağlanan üç izleme yolu vardır. _outlook.office365.com_ bir izleme yolu, müşterilerin SharePoint ön ucuna veya sağlanmadıysa _microsoft.sharepoint.com_ için bir izleme yolu ve _world.tr.teams.microsoft.com_ için bir izleme yolu.
 
 ## <a name="connectivity-reports"></a>Bağlantı raporları
 
@@ -246,7 +246,7 @@ Oturum açtığınızda, çalıştırdığınız önceki raporları gözden geç
 
 ## <a name="network-health-status"></a>Ağ sistem durumu
 
-Bu, Microsoft'un küresel ağında Microsoft 365 müşterileri etkileyebilecek önemli sistem durumu sorunlarını gösterir.
+Bu, Microsoft'un küresel ağıyla ilgili ve Microsoft 365 müşterilerini etkileyebilecek önemli sistem durumu sorunlarını gösterir.
 
 > [!div class="mx-imgBorder"]
 > ![Ağ sistem durumu.](../media/m365-mac-perf/m365-mac-perf-status-page.png)
@@ -265,25 +265,25 @@ Yürütülebilir dosya aşağıdaki komut satırı parametrelerini kabul eder:
 - Bu yardım belgelerinin bağlantısını göstermek için -h
 - -testlist &lt;test&gt; Çalıştırılacak testleri belirtir. Varsayılan olarak yalnızca temel testler çalıştırılır. Geçerli test adları şunlardır: all, dnsConnectivityPerf, dnsResolverIdentification, bufferBloat, traceroute, proxy, vpn, skype, connectivity, networkInterface
 - -filepath &lt;filedir&gt; Test sonucu dosyalarının dizin yolu. İzin verilen değer, erişilebilir bir dizinin mutlak veya göreli yoludur
-- -city &lt;city&gt; Şehir, eyalet ve ülke alanları için belirtilen değer sağlanırsa kullanılır. Sağlanmazsa konum hizmetleri (WLS) Windows sorgulanır. WLS başarısız olursa, makine ağ çıkışından konum algılanır 
+- -city &lt;city&gt; Şehir, eyalet ve ülke alanları için belirtilen değer sağlanırsa kullanılır. Sağlanmazsa Windows Konum Hizmetleri (WLS) sorgulanır. WLS başarısız olursa, makine ağ çıkışından konum algılanır 
 - -state &lt;state&gt;
 - -ülke ülke &lt;&gt; 
 - -proxy &lt;hesabı&gt; &lt;parolası&gt; İnternet'e erişmek için ara sunucuya ihtiyacınız varsa Ara sunucu hesabı adı ve parolası sağlanabilir
 
 ### <a name="results"></a>Sonuç -ları
-Sonuçların çıktısı, henüz mevcut olmadığı sürece işlemin geçerli çalışma dizininde oluşturulan TestResults adlı klasördeki bir JSON dosyasına yazılır. Çıktının dosya adı biçimi connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json şeklindedir. Sonuçlar, Microsoft 365 ağ bağlantısı test aracı web sitesinin web sayfasında gösterilen çıktıyla eşleşen JSON düğümlerinde bulunur. Her çalıştırdığınızda yeni bir sonuç dosyası oluşturulur ve tek başına yürütülebilir dosya, Sonuçları Yönetim Merkezi Ağ Bağlantısı sayfalarında görüntülemek üzere Microsoft kiracınıza yüklemez. Ön kapı kodları, boylamlar ve enlemler sonuç dosyasına dahil değildir.
+Sonuçların çıktısı, henüz mevcut olmadığı sürece işlemin geçerli çalışma dizininde oluşturulan TestResults adlı klasördeki bir JSON dosyasına yazılır. Çıktının dosya adı biçimi connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json şeklindedir. Sonuçlar, Microsoft 365 ağ bağlantısı test aracı web sitesinin web sayfasında gösterilen çıktıyla eşleşen JSON düğümlerinde bulunur. Her çalıştırdığınızda yeni bir sonuç dosyası oluşturulur ve tek başına yürütülebilir dosya, Yönetici Merkezi Ağ Bağlantısı sayfalarında görüntülemek üzere sonuçları Microsoft kiracınıza yüklemez. Ön kapı kodları, boylamlar ve enlemler sonuç dosyasına dahil değildir.
 
-### <a name="launching-from-windows-file-explorer"></a>Windows Dosya Gezgini'den başlatma
+### <a name="launching-from-windows-file-explorer"></a>Windows Dosya Gezgini'dan başlatma
 Testi başlatmak için yürütülebilir dosyaya çift tıklayabilirsiniz ve bir komut istemi penceresi görüntülenir.
 
 ### <a name="launching-from-the-command-prompt"></a>Komut İsteminden Başlatma
 CMD.EXE komut istemi penceresinde çalıştırılacak yürütülebilir dosyanın yolunu ve adını yazabilirsiniz. Dosya adı Microsoft.Connectivity.Test.exe
 
 ### <a name="launching-from-windows-task-scheduler"></a>Windows Görev Zamanlayıcı'dan başlatma
-Windows Görev Zamanlayıcı'da, tek başına test yürütülebilir dosyasını başlatmak için bir görev ekleyebilirsiniz. Yürütülebilir dosya EULA kabul edilene kadar engel olacağından, eula kabul edilen dosyayı oluşturduğunuz görevin geçerli çalışma dizinini belirtmeniz gerekir. İşlem konsolu olmadan arka planda başlatılırsa EULA'yı etkileşimli olarak kabul edemezsiniz.
+Windows Görev Zamanlayıcı'da tek başına test yürütülebilir dosyasını başlatmak için bir görev ekleyebilirsiniz. Yürütülebilir dosya EULA kabul edilene kadar engel olacağından, eula kabul edilen dosyayı oluşturduğunuz görevin geçerli çalışma dizinini belirtmeniz gerekir. İşlem konsolu olmadan arka planda başlatılırsa EULA'yı etkileşimli olarak kabul edemezsiniz.
 
 ### <a name="more-details-on-the-standalone-executable"></a>Tek başına yürütülebilir dosya hakkında daha fazla ayrıntı
-Komut satırı aracı, bazı uzaklıkları belirlemek için kullanıcıların City State Country bilgilerini bulmak için Windows Konum Hizmetleri'ni kullanır. Windows Konum Hizmetleri denetim masasında devre dışı bırakılırsa, kullanıcı konumu tabanlı değerlendirmeler boş olur. Windows Ayarlar "Konum hizmetleri" açık olmalı ve "Masaüstü uygulamalarının konumunuza erişmesine izin ver" de açık olmalıdır.
+Komut satırı aracı, bazı mesafeleri belirlemek için kullanıcıların City State Country bilgilerini bulmak için Windows Konum Hizmetleri'ni kullanır. Denetim masasında Windows Konum Hizmetleri devre dışı bırakılırsa, kullanıcı konumu tabanlı değerlendirmeler boş olur. Windows Ayarları'nda "Konum hizmetleri" açık olmalı ve "Masaüstü uygulamalarının konumunuza erişmesine izin ver" de açık olmalıdır.
 
 Komut satırı aracı, henüz yüklü değilse .NET Framework yüklemeyi dener. Ayrıca Microsoft 365 ağ bağlantısı test aracından ana test yürütülebilir dosyasını indirir ve bunu başlatır.
 
@@ -295,18 +295,18 @@ Burada sık sorulan sorularımızdan bazılarının yanıtları yer alır.
 
 Gelişmiş test istemcisi .NET 6.0 Çalışma Zamanı gerektirir. Gelişmiş test istemcisini bu yükleme olmadan çalıştırırsanız [.NET 6.0 yükleyici sayfasına](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime?utm_source=getdotnetcore) yönlendirilirsiniz. Windows için Masaüstü uygulamalarını çalıştır sütunundan yüklemeyi unutmayın. .NET 6.0 Runtime'ı yüklemek için makinedeki yönetici izinleri gereklidir.
 
-Gelişmiş test istemcisi, web sayfasıyla iletişim kurmak için SignalR kullanır. Bunun için **connectivity.service.signalr.net** tcp bağlantı noktası 443 bağlantısının açık olduğundan emin olmanız gerekir. Microsoft 365 istemci uygulaması kullanıcısı için bağlantı gerekli olmadığından bu URL'de <https://aka.ms/o365ip> yayımlanmaz.
+Gelişmiş test istemcisi, web sayfasıyla iletişim kurmak için SignalR kullanır. Bunun için **connectivity.service.signalr.net** tcp bağlantı noktası 443 bağlantısının açık olduğundan emin olmanız gerekir. Bir Microsoft 365 istemci uygulaması kullanıcısı için bağlantı gerekli olmadığından bu URL'de <https://aka.ms/o365ip> yayımlanmaz.
 
-### <a name="what-is-microsoft-365-service-front-door"></a>Microsoft 365 hizmeti ön kapı nedir?
+### <a name="what-is-microsoft-365-service-front-door"></a>Microsoft 365 hizmeti ön kapısı nedir?
 
-Microsoft 365 hizmeti ön kapısı, Microsoft'un genel ağında Office istemci ve hizmetlerin ağ bağlantılarını sonlandırdığı bir giriş noktasıdır. Microsoft 365 en uygun ağ bağlantısı için, ağ bağlantınızın şehrinizdeki veya metronuzdaki en yakın Microsoft 365 ön kapıya sonlandırılması önerilir.
+Microsoft 365 hizmeti ön kapısı, Microsoft'un genel ağında Office istemcilerinin ve hizmetlerinin ağ bağlantılarını sonlandırdığı bir giriş noktasıdır. Microsoft 365'e en uygun ağ bağlantısı için, ağ bağlantınızın şehrinizdeki veya metronuzdaki en yakın Microsoft 365 ön kapısına sonlandırılması önerilir.
 
 > [!NOTE]
-> Microsoft 365 hizmeti front door' un Azure Market'te bulunan **Azure Front Door Service** ürünüyle doğrudan bir ilişkisi yoktur.
+> Microsoft 365 hizmeti Front Door'un Azure Market'te bulunan **Azure Front Door Service** ürünüyle doğrudan bir ilişkisi yoktur.
 
 ### <a name="what-is-the-best-microsoft-365-service-front-door"></a>En iyi Microsoft 365 hizmeti ön kapı hangisidir?
 
-En iyi Microsoft 365 hizmet ön kapı (eski adıyla en uygun hizmet ön kapı), genellikle şehir veya metro bölgenizde, ağ çıkışınıza en yakın olan kapıdır. Kullanımdaki Microsoft 365 hizmet ön kapınızın konumunu ve en iyi servis ön kapılarınızı belirlemek için Microsoft 365 ağ performans aracını kullanın. Araç, kullanımdaki ön kapınızın en iyilerinden biri olduğunu belirlerse, Microsoft'un küresel ağına harika bir bağlantı bekleyebilirsiniz.
+En iyi Microsoft 365 hizmet ön kapısı (eski adıyla en uygun hizmet ön kapısı), genellikle şehir veya metro bölgenizde ağ çıkışınıza en yakın olan kapıdır. Kullanımdaki Microsoft 365 hizmet ön kapınızın konumunu ve en iyi hizmet ön kapılarınızın konumunu belirlemek için Microsoft 365 ağ performans aracını kullanın. Araç, kullanımdaki ön kapınızın en iyilerinden biri olduğunu belirlerse, Microsoft'un küresel ağına harika bir bağlantı bekleyebilirsiniz.
 
 ### <a name="what-is-an-internet-egress-location"></a>İnternet çıkış konumu nedir?
 
@@ -316,8 +316,8 @@ En iyi Microsoft 365 hizmet ön kapı (eski adıyla en uygun hizmet ön kapı), 
 
 [Microsoft 365 Yönetici Merkezi'nde ağ bağlantısı](office-365-network-mac-perf-overview.md)
 
-[ağ performansı içgörülerini Microsoft 365](office-365-network-mac-perf-insights.md)
+[Microsoft 365 ağ performansı içgörüleri](office-365-network-mac-perf-insights.md)
 
-[ağ değerlendirmesi Microsoft 365](office-365-network-mac-perf-score.md)
+[Microsoft 365 ağ değerlendirmesi](office-365-network-mac-perf-score.md)
 
-[ağ bağlantısı konum hizmetlerini Microsoft 365](office-365-network-mac-location-services.md)
+[Microsoft 365 Ağ Bağlantısı Konum Hizmetleri](office-365-network-mac-location-services.md)

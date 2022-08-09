@@ -16,12 +16,12 @@ ms.custom: ''
 description: Yöneticiler, Exchange Online Protection (EOP) ve Office 365 için Microsoft Defender koruma özellikleri arasında Standart ve Katı ilke ayarlarının nasıl uygulanacağını öğrenebilir
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd5fd696a9e22f0e30d18b3b785761847166a5b3
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 2ec4a2a1bc858cbf95ad85894f1b27828a18648e
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085257"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281629"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP ve Office 365 için Microsoft Defender'da önceden ayarlanmış güvenlik ilkeleri
 
@@ -547,7 +547,7 @@ Standart ve Katı önceden ayarlanmış güvenlik ilkeleri için, EOP korumalar�
   Set-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" -ExceptIfSentToMemberOf Executives
   ```
 
-  Bu örnek, belirtilen güvenlik işlemleri (SecOps) posta kutuları için Katı önceden ayarlanmış güvenlik içindeki Office 365 için Defender korumalarından özel durumları yapılandırmaktadır.
+  Bu örnekte, belirtilen güvenlik işlemleri (SecOps) posta kutuları için Katı önceden ayarlanmış güvenlik ilkesindeki Office 365 için Defender korumalarından özel durumlar yapılandırılır.
 
   ```powershell
   Set-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" -ExceptIfSentTo "SecOps1","SecOps2"

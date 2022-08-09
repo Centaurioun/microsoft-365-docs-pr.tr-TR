@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 ms.localizationpriority: high
 description: Finansal hizmet kurumlarının Microsoft 365 ve Teams'i kullanarak finansal güvenlik uyumluluğunu nasıl koruyabileceğini ve etkili bir şekilde işbirliği yapabileceklerini öğrenin.
 f1.keywords: NOCSH
-ms.openlocfilehash: 8a9b22edb79de41ec9efe291db0192de888a3644
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 09818f0329b75379c2349fddd7246f24fa872ec0
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175036"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281871"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>ABD bankacılık ve sermaye piyasaları için temel uyumluluk ve güvenlik konuları
 
@@ -51,7 +51,7 @@ Aşağıdaki indirilebilir çizimler bu makaleyi tamamlar. Woodgrove Bank ve Con
 
 **Microsoft 365 bilgi koruma ve uyumluluk çizimleri**
 
-| Madde | Açıklama |
+| Öğe | Açıklama |
 |:-----|:-----|
 |[![Model posteri: Microsoft 365 bilgi koruma ve uyumluluk özellikleri.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>İngilizce: [PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| olarak [indirme Visio olarak indirme](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japonca: [PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| olarak [indirme Visio olarak indirme](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> Kasım 2020'de güncelleştirildi|Içerir: <ul><li>  Microsoft Purview Bilgi Koruması ve Microsoft Purview veri kaybı önleme</li><li>Bekletme ilkeleri ve bekletme etiketleri </li><li>Bilgi engelleri</li><li>İletişim uyumluluğu</li><li>Insider riski</li><li>Üçüncü taraf veri alımı</li>|
 
@@ -298,7 +298,7 @@ Finansal kurumlar genellikle kuruluşların içinde çalışanların etkinlikler
  
 ### <a name="communication-compliance"></a>İletişim uyumluluğu
 
-İletişim uyumluluğu, kuruluşların yetkili gözetmenler tarafından izleme ve gözden geçirme amacıyla çalışan iletişimlerini yakalamak üzere ilkeleri önceden yapılandırmalarına olanak tanır. İletişim uyumluluğundaki ilkeler iç/dış e-posta ve ekleri, Teams sohbeti ve kanal iletişimlerini ve Skype Kurumsal Çevrimiçi sohbet iletişimlerini ve eklerini yakalayabilir. Ayrıca, iletişim uyumluluğu üçüncü taraf hizmetlerden (Bloomberg, Thomson Reuters, LinkedIn, Twitter, Facebook, Box ve Dropbox gibi) iletişim ve verileri alabilir.
+[İletişim uyumluluğu](/microsoft-365/compliance/communication-compliance) , kuruluşların yetkili gözetmenler tarafından izleme ve gözden geçirme amacıyla çalışan iletişimlerini yakalamak üzere ilkeleri önceden yapılandırmalarına olanak tanır. İletişim uyumluluğundaki ilkeler iç/dış e-posta ve ekleri, Teams sohbeti ve kanal iletişimlerini ve Skype Kurumsal Çevrimiçi sohbet iletişimlerini ve eklerini yakalayabilir. Ayrıca, iletişim uyumluluğu üçüncü taraf hizmetlerden (Bloomberg, Thomson Reuters, LinkedIn, Twitter, Facebook, Box ve Dropbox gibi) iletişim ve verileri alabilir.
 Bir kuruluş içinde yakalanıp gözden geçirilebilen iletişimin kapsamlı yapısı ve ilkelerin yapılandırılabildiği kapsamlı koşullar, finans kurumlarının FINRA Kural 3110'a uymasına yardımcı olmak için iletişim uyumluluk ilkelerine olanak sağlar. İlkeler, kişilerin veya grupların iletişimlerini gözden geçirmek üzere yapılandırılabilir.  Atanan gözetmenler bireysel veya grup düzeyinde atanabilir. Gelen veya giden iletileri, etki alanlarını, bekletme etiketlerini, anahtar sözcükleri veya tümcecikleri, anahtar sözcük sözlüklerini, hassas veri türlerini, ekleri, ileti boyutunu veya ek boyutunu temel alan iletişimleri yakalamak için kapsamlı koşullar yapılandırılabilir. Gözden geçirenler, bayraklı iletişimleri gözden geçirebilecekleri, ilkeleri ihlal etme olasılığı olan iletişimler üzerinde işlem yapabilecekleri ve bayrak eklenmiş öğeleri çözümlendi olarak işaretleyebilecekleri bir pano alır. Ayrıca incelemelerin ve daha önce çözümlenmiş olan öğelerin sonuçlarını da gözden geçirebilirler.
   
 İletişim uyumluluğu, ilke gözden geçirme etkinliklerinin ilkeye ve gözden geçirene göre denetlenebilmesini sağlayan raporlar sağlar. Raporlar, ilkelerin kuruluşun yazılı denetim ilkeleri tarafından tanımlandığı şekilde çalıştığını doğrulamak için kullanılabilir. Bunlar, gözden geçirme gerektiren ve şirket ilkesiyle uyumlu olmayan iletişimleri tanımlamak için de kullanılabilir. Son olarak, ilkeleri yapılandırma ve iletişimleri gözden geçirmeyle ilgili tüm etkinlikler birleşik Office 365 denetim günlüğünde denetlenir. Sonuç olarak, iletişim uyumluluğu finans kurumlarının FINRA Kural 3120'ye uymasına da yardımcı olur.
@@ -319,7 +319,7 @@ Microsoft 365 kısa süre önce Microsoft 365 hizmetlerindeki sinyalleri ilişki
 
 Örneğin, insider risk yönetimi kullanıcının Windows 10 masaüstünden gelen, dosyaları USB sürücüsüne kopyalama veya kişisel e-posta hesabına e-posta gönderme gibi sinyalleri, veri sızdırmayı tanımlamak için Office 365 e-posta, SharePoint Online, Microsoft Teams veya OneDrive İş gibi çevrimiçi hizmetler etkinlikleriyle ilişkilendirebilir Desen. Ayrıca bu etkinlikleri, ortak bir veri sızdırma düzeni olan bir kuruluşta çalışanlarla ilişkilendirebilir. Zaman içinde birden çok etkinliği ve davranışı izleyebilir. Yaygın desenler ortaya çıktığında uyarılar oluşturabilir ve araştırmacıların ilke ihlalini yüksek düzeyde güvenle doğrulamak için önemli etkinliklere odaklanmasına yardımcı olabilir. Insider risk yönetimi, veri gizliliği düzenlemelerini karşılamaya yardımcı olmak için araştırmacıların verilerini anonim hale getirirken, araştırmalarını verimli bir şekilde gerçekleştirmelerine yardımcı olan önemli etkinliklere de göz atabilir. Araştırmacıların önemli etkinlik verilerini İk ve hukuk departmanlarına paketlemesine ve güvenli bir şekilde göndermesine olanak tanır ve düzeltme eylemine yönelik vakaların oluşturulmasına yönelik yaygın yükseltme iş akışlarını takip eder.
 
-Insider risk yönetimi, kuruluşların iç riskleri izleme ve araştırma özelliklerini önemli ölçüde artırırken, kuruluşların veri gizliliği düzenlemelerini karşılamasına ve vakalar daha üst düzey eylem gerektirdiğinde yerleşik yükseltme yollarını izlemesine olanak sağlar. Insider risk yönetimi hakkında daha fazla bilgi için bkz. [Modern risk sorun noktaları ve Insider risk yönetiminde iş akışı](../compliance/insider-risk-management.md).
+Insider risk yönetimi, kuruluşların iç riskleri izleme ve araştırma özelliklerini önemli ölçüde artırırken, kuruluşların veri gizliliği düzenlemelerini karşılamasına ve vakalar daha üst düzey eylem gerektirdiğinde yerleşik yükseltme yollarını izlemesine olanak sağlar. Insider risk yönetimi hakkında daha fazla bilgi için bkz. [Insider risk yönetimi hakkında bilgi edinin](/microsoft-365/compliance/insider-risk-management).
 
 ![Bir ekranı görüntülerken bir bölme türündeki bir çağrı merkezi çalışanı.](../media/clo17-call-center-006.jpg)
 
@@ -331,6 +331,6 @@ Microsoft 365, kiracı [kısıtlamalarına](/azure/active-directory/manage-apps/
 
 ![GRAFİK.](../media/clo1717-corporate-office-001.jpg)
 
-## <a name="conclusion"></a>Son
+## <a name="conclusion"></a>Sonuç
 
 Microsoft 365 ve Teams, finansal hizmetler şirketleri için tümleşik ve kapsamlı bir çözüm sunarak kuruluş genelinde basit ama güçlü bulut tabanlı işbirliği ve iletişim özellikleri sağlar. Kurumlar, Microsoft 365'in güvenlik ve uyumluluk teknolojilerini kullanarak verileri, kimlikleri, cihazları ve uygulamaları siber güvenlik ve iç riskler gibi çeşitli operasyonel risklerden korumak için sağlam güvenlik denetimleriyle daha güvenli ve uyumlu bir şekilde çalışabilir. Microsoft 365, finansal hizmet kuruluşlarının şirketlerini, çalışanlarını ve müşterilerini korurken daha fazlasını başarabilecekleri temelden güvenli bir platform sağlar.

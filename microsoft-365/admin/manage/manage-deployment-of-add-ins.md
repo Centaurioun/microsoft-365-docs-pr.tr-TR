@@ -25,25 +25,25 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Yönetim merkezindeki Merkezi Dağıtım'ı kullanarak kuruluşunuzdaki kullanıcılara ve gruplara eklenti dağıtmayı öğrenin.
-ms.openlocfilehash: a599023db47a46baa0318e026e70627320a6b1f8
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f833f5d87981f012af9584fa8fe42b409da8ebf0
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437535"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281673"
 ---
 # <a name="deploy-add-ins-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi eklentileri dağıtma
 
-Office Eklentileri, belgelerinizi kişiselleştirmenize ve web'deki bilgilere erişme şeklinizi kolaylaştırmanıza yardımcı olur (bkz. [Office Eklentinizi kullanmaya başlama](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Yönetici olarak, Microsoft 365 yönetim merkezi Merkezi Dağıtım özelliğini kullanarak kuruluşunuzdaki kullanıcılar için <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Office</a> Eklentileri dağıtabilirsiniz. Merkezi Dağıtım, çoğu yöneticinin bir kuruluştaki kullanıcılara ve gruplara eklenti dağıtması için önerilen ve özellik açısından zengin bir yoldur.
+Office Eklentileri, belgelerinizi kişiselleştirmenize ve web'deki bilgilere erişme yönteminizi kolaylaştırmanıza yardımcı olur (bkz. [Office Eklentinizi kullanmaya başlama](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Yönetici olarak, <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a> Merkezi Dağıtım özelliğini kullanarak kuruluşunuzdaki kullanıcılar için Office Eklentileri dağıtabilirsiniz. Merkezi Dağıtım, çoğu yöneticinin bir kuruluştaki kullanıcılara ve gruplara eklenti dağıtması için önerilen ve özellik açısından zengin bir yoldur.
 
 Kuruluşunuzun Merkezi Dağıtım'ı destekleyip destekleyemediğini belirleme hakkında daha fazla bilgi için bkz. [Eklentilerin Merkezi Dağıtımının kuruluşunuzda çalışıp çalışmadığını belirleme](centralized-deployment-of-add-ins.md).
 
 Dağıtımdan sonra eklentileri yönetme hakkında daha fazla bilgi edinmek için bkz. [Yönetim merkezinde eklentileri yönetme](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  Word için, Excel ve PowerPoint, Microsoft 365 bağlantısı ve/veya SharePoint eklentileri için destek gerekmeyen şirket içi bir ortamdaki kullanıcılara eklenti dağıtmak için SharePoint [Uygulama Kataloğu](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) kullanır. Outlook için Microsoft 365 bağlantısı olmadan şirket içi bir ortamda dağıtmak üzere Exchange denetim masası kullanın.
+>  Word için Excel ve PowerPoint, Microsoft 365 bağlantısı ve/veya SharePoint eklentileri için destek gerekmeyen şirket içi bir ortamda kullanıcılara eklenti dağıtmak için SharePoint [Uygulama Kataloğu](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) kullanır. Outlook için, Şirket içi ortamda Microsoft 365 bağlantısı olmadan dağıtım yapmak için Exchange denetim masası'nı kullanın.
   
-## <a name="recommended-approach-for-deploying-office-add-ins"></a>Office Eklentileri dağıtmak için önerilen yaklaşım
+## <a name="recommended-approach-for-deploying-office-add-ins"></a>Office Eklentilerini dağıtmak için önerilen yaklaşım
 
 Aşamalı bir yaklaşım kullanarak eklentilerin dağıtımını yapmak için aşağıdakileri öneririz:
   
@@ -59,21 +59,21 @@ Hedef kitlenin boyutuna bağlı olarak, dağıtım adımları ekleyebilir veya k
 
 Başlamadan önce bkz. [Eklentilerin Merkezi Dağıtımının kuruluşunuz için çalışıp çalışmadığını belirleme](centralized-deployment-of-add-ins.md).
   
-1. Yönetim merkezinde **, Ayarlar** \> **Eklentiler** sayfasına gidin. **Eklenti Sayfası'nı** görmüyorsanız tümleşik **uygulamalar** \> **Ayarlar Eklentiler** sayfasına gidin  \>.
+1. Yönetim merkezinde **Ayarlar** \> **Tümleşik uygulamalar** \> **Eklentileri** sayfasına gidin.
 
 2. Sayfanın üst kısmındaki **Eklentiyi Dağıt'ı** ve ardından **İleri'yi** seçin.
 
     > [!NOTE]
-    > Tümleşik [Uygulamalar](test-and-deploy-microsoft-365-apps.md) aracılığıyla yönetim merkezinde eklentileri de dağıtabilirsiniz. Tümleşik Uygulamalar Genel ve Exchange yöneticileri tarafından görülebilir. Yukarıdaki adımları görmüyorsanız, **Ayarlar** >  **Yenileştirilmiş uygulamalar'a** giderek Merkezi Dağıtım bölümüne gidin. **Tümleşik uygulamalar** sayfasının üst kısmında **Eklentiler'i** seçin.
+    > Tümleşik [Uygulamalar](test-and-deploy-microsoft-365-apps.md) aracılığıyla yönetim merkezinde eklentileri de dağıtabilirsiniz. Tümleşik Uygulamalar Genel ve Exchange yöneticileri tarafından görülebilir. Yukarıdaki adımları görmüyorsanız **, Ayarlar** > **Tümleşik uygulamalar'a** giderek Merkezi Dağıtım bölümüne gidin. **Tümleşik uygulamalar** sayfasının üst kısmında **Eklentiler'i** seçin.
 
 3. Bir seçenek belirleyin ve yönergeleri izleyin.
   
-4. Office Store'dan eklenti ekleme seçeneğini belirlediyseniz, eklenti seçiminizi yapın. </br>
+4. Office Mağazası'ndan eklenti ekleme seçeneğini belirlediyseniz, eklenti seçiminizi yapın. </br>
 
-    Kullanılabilir eklentileri kategorilere göre görüntüleyebilirsiniz: **Sizin için önerilen**, **Derecelendirme** veya **Ad**. Office Store'dan yalnızca ücretsiz eklentiler kullanılabilir. Şu anda ücretli eklentiler desteklenmemektedir. Bir eklentiyi seçtikten sonra devam etmek için hüküm ve koşulları kabul edin. <br/> 
+    Kullanılabilir eklentileri kategorilere göre görüntüleyebilirsiniz: **Sizin için önerilen**, **Derecelendirme** veya **Ad**. Office Mağazası'ndan yalnızca ücretsiz eklentiler kullanılabilir. Şu anda ücretli eklentiler desteklenmemektedir. Bir eklentiyi seçtikten sonra devam etmek için hüküm ve koşulları kabul edin. <br/> 
 
     > [!NOTE]
-    > Office Store seçeneğiyle güncelleştirmeler ve geliştirmeler kullanıcılara otomatik olarak dağıtılır.
+    > Office Mağazası seçeneğiyle güncelleştirmeler ve geliştirmeler kullanıcılara otomatik olarak dağıtılır.
 
 5. Sonraki sayfada, eklentinin kime dağıtılacağını belirtmek için **Herkes**, **Belirli kullanıcılar/gruplar** veya **Yalnızca ben'i** seçin. Belirli kullanıcıları veya grupları bulmak için Arama kutusunu kullanın. <br/>
 
@@ -85,7 +85,7 @@ Başlamadan önce bkz. [Eklentilerin Merkezi Dağıtımının kuruluşunuz için
 7. Eklenti dağıtıldığında yeşil bir onay işareti görünür. Eklentiyi test etmek için sayfadaki yönergeleri izleyin.
 
     > [!NOTE]
-    > Kullanıcıların uygulama şeridindeki eklenti simgesini görüntülemek için Office yeniden başlatmış olması gerekebilir. Outlook eklentilerin uygulama şeritlerinde görünmesi 24 saat kadar sürebilir.
+    > Kullanıcıların uygulama şeridindeki eklenti simgesini görüntülemek için Office'i yeniden başlatmış olması gerekebilir. Outlook eklentilerinin uygulama şeritlerinde görünmesi 24 saat kadar sürebilir.
 
 8. İşiniz bittiğinde **İleri'yi** seçin. Yalnızca kendinize dağıttıysanız, daha fazla kullanıcıya dağıtmak **için Eklentiye kimlerin erişimi olduğunu değiştir'i** seçebilirsiniz.
 
@@ -107,7 +107,7 @@ Genel yöneticiler ve Exchange yöneticileri herkese veya belirli kullanıcılar
 
 Kuruluşunuz için doğru seçenek yapılandırmanıza bağlıdır. Ancak, grupları kullanarak atamalar yapmanızı öneririz. Yönetici olarak, her seferinde tek tek kullanıcılar atamak yerine grupları kullanarak ve bu grupların üyeliğini denetleyerek eklentileri yönetmeyi daha kolay bulabilirsiniz. Bazı durumlarda, kullanıcıları el ile atayarak belirli kullanıcılara atamalar yaparak küçük bir kullanıcı kümesine erişimi kısıtlamak isteyebilirsiniz.
   
-## <a name="more-about-office-add-ins-security"></a>Office Eklentilerin güvenliği hakkında daha fazla bilgi
+## <a name="more-about-office-add-ins-security"></a>Office Eklentileri güvenliği hakkında daha fazla bilgi
 
 Office Eklentileri, eklentiyle ilgili bazı meta verileri içeren bir XML bildirim dosyasını birleştirir, ancak en önemlisi tüm kodu ve mantığı içeren bir web uygulamasına işaret eder. Eklentiler, özellikleri açısından farklılık gösterebilir. Örneğin, şu işlemleri yapabilirler:
   
@@ -117,7 +117,7 @@ Office Eklentileri, eklentiyle ilgili bazı meta verileri içeren bir XML bildir
 
 - Kullanıcıya değer sağlamak amacıyla, kullanıcının belgesini okuma veya belgeye yazma
 
-Office Eklentilerin türleri ve özellikleri hakkında daha fazla bilgi için, özellikle de "Office Eklentisinin Anatomisi" bölümü Office [Eklentiler platformuna genel bakış](/office/dev/add-ins/overview/office-add-ins) bölümüne bakın.
+Office Eklentilerinin türleri ve özellikleri hakkında daha fazla bilgi için, özellikle de "Office Eklentisinin Anatomisi" bölümü olmak üzere [Office Eklentileri platformuna genel bakış](/office/dev/add-ins/overview/office-add-ins) bölümüne bakın.
   
 Eklentilerin kullanıcının belgeleriyle etkileşim kurabilmesi için, ihtiyaç duyduğu izinleri bildirim kısmında belirtmesi gerekir. Beş düzeyli JavaScript API erişim-izinler modeli, görev bölmesi eklentilerini kullananların gizliliğini ve güvenliğini sağlar. Office Mağazası eklentilerinin çoğu, ReadWriteDocument seviyesindedir ve neredeyse tüm eklentiler en az ReadDocument düzeyini destekler. İzin düzeyleri hakkında daha fazla bilgi için bkz. [İçerikte API kullanımı ve görev bölmesi eklentileri için izin isteme](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins).
   
@@ -128,7 +128,7 @@ Eklentilerin güncelleştirmeleri aşağıdaki gibi olur:
 - **İş kolu eklentisi:** Yönetici karşıya açık olarak bir bildirim yüklediğinde, eklentinin meta veri değişikliklerini destekleyebilmesi için yeni bir bildirim dosyasının da yönetici tarafından karşıya yüklenmesi gerekir. İlgili Office uygulamalarını tekrar başlattığınızda eklenti güncelleştirilir. Web uygulaması her an değişebilir.
 
     > [!NOTE]
-    > Yöneticinin güncelleştirme yapmak için lob eklentisini kaldırması gerekmez.   Eklentiler bölümünde Yönetici, LOB Eklentisi'ne tıklayıp sağ alt köşedeki **Güncelleştir Düğmesi'ni** seçebilir. Güncelleştirme yalnızca yeni eklentinin sürümü mevcut eklentiden daha büyükse çalışır.
+    > Yönetici güncelleştirme yapmak için LOB Eklentisini kaldırması gerekmez.   Eklentiler bölümünde Yönetici LOB Eklentisi'ne tıklayıp sağ alt köşedeki **Güncelleştir Düğmesi'ni** seçebilirsiniz. Güncelleştirme yalnızca yeni eklentinin sürümü mevcut eklentiden daha büyükse çalışır.
 
 - **Office Mağazası eklentisi:** Yönetici, Office Mağazası'ndan bir eklentiyi seçtiğinde Office Mağazası üzerinde bir eklenti güncelleştirmesi yapılıyorsa, seçilen eklenti daha sonra Merkezi Dağıtımda güncelleştirilir. İlgili Office uygulamalarını tekrar başlattığınızda eklenti güncelleştirilir. Web uygulaması her an değişebilir.
   

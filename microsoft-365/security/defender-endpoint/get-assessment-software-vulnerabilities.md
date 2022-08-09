@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 52dc38d3675ffe15bd781aefaecede9d1783bac3
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: dba7f3d1512046c0788c72efb5b0ce9ac9ead1b6
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487180"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280598"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Cihaz başına yazılım güvenlik açıkları değerlendirmesi dışarı aktarma
 
@@ -32,7 +32,7 @@ ms.locfileid: "66487180"
 - [Microsoft Defender Güvenlik Açığı Yönetimi](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Bilinen tüm yazılım güvenlik açıklarını ve bunların tüm cihazlara ilişkin ayrıntılarını cihaz başına temel alarak döndürür.
 
@@ -96,8 +96,6 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 > - Aşağıdaki tabloda tanımlanan özellikler, özellik kimliğine göre alfabetik olarak listelenir. Bu API'yi çalıştırırken, sonuçta elde edilen çıktının bu tabloda listelenen sırayla döndürülmesi gerekmez.
 
 <br>
-
-****
 
 Özellik (Kimlik)|Veri türü|Açıklama|Döndürülen değer örneği
 :---|:---|:---|:---

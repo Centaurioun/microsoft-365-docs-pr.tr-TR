@@ -7,24 +7,24 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 08/04/2022
+ms.date: 08/08/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr, mkaminska
+ms.reviewer: pahuijbr, mkaminska, v-vutrieu
 manager: dansimp
 ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 1c1921b368ce404d5065854ae9f71fe8713dd9d4
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: ed20fcfe660bcc56a5756d1be0070f7a9610ee65
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275680"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280729"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama
 
@@ -91,6 +91,40 @@ Tüm güncelleştirmelerimiz
 - Tümleştirme geliştirmeleri (Bulut, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>Temmuz-2022 (Platform: 4.18.2205.TBD | Motor: 1.1.19500.2)</summary>
+
+*Bu bölüm, hala etkin geliştirme aşamasında olan yayın öncesi bilgileri içerir. Son güvenlik güncelleştirmesi sürüm numarası da dahil olmak üzere güncelleştirmelerin gerçekleşmesini bekleyin.*
+
+&ensp;Güvenlik bilgileri güncelleştirme sürümü: *çok yakında*<br/>
+&ensp;Sürüm tarihi: **8 Ağustos 2022**<br/>
+&ensp;Platform: *4.18.2205.TBD*<br/>
+&ensp;Motor: **1.1.19500.2**<br/>
+&ensp;Destek aşaması: **Güvenlik ve Kritik Güncelleştirmeler**<br/>
+
+Altyapı sürümü: 1.1.19300.2<br/>
+Güvenlik bilgileri güncelleştirme sürümü: *çok yakında*<br/>
+
+### <a name="whats-new"></a>Yenilikler
+
+- Microsoft Defender Virüsten Koruma etkin olduğunda [karma uyku](/windows-hardware/customize/power-settings/sleep-settings-hybrid-sleep) gecikmesi için performans iyileştirmesi 
+- [Güvenliğin aşılmasına ilişkin özel sertifika engelleme göstergeleriyle](indicator-certificates.md) ilgili istemci algılama davranışı düzeltildi 
+- [Kötü Amaçlı Yazılımdan Koruma Tarama Arabirimi (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal) önbelleğe alma için performans iyileştirmesi 
+- [Microsoft Visual Basic for Applications](/office/vba/language/concepts/getting-started/64-bit-visual-basic-for-applications-overview) (VBA) ile ilgili makrolar için geliştirilmiş algılama ve düzeltme 
+- AMSI dışlamalarının işlenmesi iyileştirildi 
+- Konak İzinsiz Giriş Önleme Sistemi (HIPS) kural işlemesinde kilitlenme algılama düzeltildi. (HIPS ve Uç Nokta için Defender hakkında ek bilgi için bkz. [Üçüncü taraf HIPS'den ASR kurallarına geçiş](migrating-asr-rules.md).) 
+- Özel baytların kullanıldığı `MsMpEng.exe` bellek sızıntısı düzeltildi. (Yüksek CPU kullanımı da sorun oluyorsa bkz. [Microsoft Defender Virüsten Koruma nedeniyle yüksek CPU kullanımı](troubleshooting-mode-scenarios.md)) 
+- [Davranış izleme](configure-real-time-protection-microsoft-defender-antivirus.md) ile kilitlenme düzeltildi 
+- Geliştirilmiş güven doğrulaması 
+- Eski işletim platformlarında altyapı kilitlenme sorunu düzeltildi 
+- v3 güncelleştirmelerini Performans Analizi: En üst yol desteği, tarama atlama bilgileri ve OnDemand tarama desteği eklendi. Bkz. [Microsoft Defender Virüsten Koruma için performans çözümleyicisi](tune-performance-defender-antivirus.md). 
+
+
+### <a name="known-issues"></a>Bilinen Sorunlar
+
+Bilinen sorun yok
+
+<br/><br/>
+</details><details>
 <summary>Mayıs 2022 (Platform: 4.18.2205.7 | Motor: 1.1.19300.2)</summary>
 
 &ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.369.88.0**<br/>
@@ -165,14 +199,21 @@ Güvenlik bilgileri güncelleştirme sürümü: 1.361.1449.0<br/>
 - Yüksek kaynak kullanımı olasılığı (CPU ve/veya bellek). Mart 2022 için Platform 4.18.2203.5 ve Motor 1.1.19200.5 güncelleştirmesine bakın.
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Önceki sürüm güncelleştirmeleri: Yalnızca teknik yükseltme desteği
+
+Yeni bir paket sürümü yayımlandıktan sonra, önceki iki sürüme yönelik destek yalnızca teknik desteğe indirgener. Bu bölümde listelenen sürümlerden eski sürümler ve yalnızca teknik yükseltme desteği için sağlanır.<br/><br/>
+
+<details>
 <summary>Şubat-2022 (Platform: 4.18.2202.4 | Motor: 1.1.19000.8)</summary>
 
 &ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.361.14.0**<br/>
 &ensp;Yayın tarihi: **14 Mart 2022**<br/>
 &ensp;Platform: **4.18.2202.4**<br/>
 &ensp;Motor: **1.1.19000.8**<br/>
-&ensp;Destek aşaması: **Güvenlik ve Kritik Güncelleştirmeler**<br/>
+&ensp;Destek aşaması: **Teknik yükseltme desteği (yalnızca)**<br/>
 
 Altyapı sürümü: 1.1.19000.8 <br/>
 Güvenlik bilgileri güncelleştirme sürümü: 1.361.14.0 <br/>
@@ -194,14 +235,7 @@ Güvenlik bilgileri güncelleştirme sürümü: 1.361.14.0 <br/>
 Bilinen sorun yok
 
 <br/><br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Önceki sürüm güncelleştirmeleri: Yalnızca teknik yükseltme desteği
-
-Yeni bir paket sürümü yayımlandıktan sonra, önceki iki sürüme yönelik destek yalnızca teknik desteğe indirgener. Bu bölümde listelenen sürümlerden eski sürümler ve yalnızca teknik yükseltme desteği için sağlanır.<br/><br/>
-
-<details>
+</details><details>
 <summary>Ocak-2022 (Platform: 4.18.2201.10 | Motor: 1.1.18900.2)</summary>
 
 &ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.357.8.0**<br/>

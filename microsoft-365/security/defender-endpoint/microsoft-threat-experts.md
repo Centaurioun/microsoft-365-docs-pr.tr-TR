@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4fe66987f9b8ea5c2f0b27ae9fb594a198da2e9b
-ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
+ms.openlocfilehash: 9f612e79eaed1403592668feae1144aab7f6fddf
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66855053"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280751"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft Tehdit Uzmanları
 
@@ -33,7 +33,7 @@ ms.locfileid: "66855053"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft Tehdit Uzmanları, güvenlik operasyon merkezlerinize (SOC) benzersiz ortamlarınızdaki kritik tehditlerin kaçırılmamasını sağlamaya yardımcı olmak için uzman düzeyinde izleme ve analiz sağlayan bir yönetilen tehdit avcılığı hizmetidir.
 
@@ -73,23 +73,12 @@ Müşteriler, yanıtlarını almak için doğrudan Microsoft 365 Defender portal
 - Şüpheli cihaz davranışına ve gelişmiş bir saldırganla karşılaşılması durumunda sonraki adımlara açıklık kazandırma
 - Tehdit aktörleri, kampanyalar veya yeni ortaya çıkan saldırgan teknikleri ile ilgili risk ve korumayı belirleme
 
-Araştırmanız bağlamında uzmanlarla etkileşim kurabilmeniz için portalda çeşitli yerlerde **bir tehdit uzmanına danışma** seçeneği mevcuttur:
+**Defender Uzmanlarına Sor** seçeneği, araştırmanız bağlamında uzmanlarla etkileşim kurabilmeniz için portalda çeşitli yerlerde kullanılabilir:
 
 - ***Yardım ve destek menüsü***
-
-  :::image type="content" source="images/mte-eod-menu.png" alt-text="MTE-EOD menü öğesi" lightbox="images/mte-eod-menu.png":::
-
 - ***Cihaz sayfası eylemleri menüsü***
-
-  :::image type="content" source="images/mte-eod-machines.png" alt-text="MTE-EOD cihaz sayfası eylem menüsü seçeneği" lightbox="images/mte-eod-machines.png":::
-
 - ***Uyarılar sayfası eylemleri menüsü***
-
-  :::image type="content" source="images/mte-eod-alerts.png" alt-text="MTE-EOD uyarı sayfası eylem menüsü seçeneği" lightbox="images/mte-eod-alerts.png":::
-
 - ***Dosya sayfası eylemleri menüsü***
-
-  :::image type="content" source="images/mte-eod-file.png" alt-text="MTE-EOD dosya sayfası eylem menüsü seçeneği" lightbox="images/mte-eod-file.png":::
 
 > [!NOTE]
 > İsteğe Bağlı Uzmanlar servis taleplerinizin durumunu Microsoft Services Hub aracılığıyla izlemek isterseniz Müşteri Başarısı Hesap Yöneticinize ulaşın.

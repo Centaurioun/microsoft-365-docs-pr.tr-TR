@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 İş'teki abonelikleri ve lisansları anlama
+title: İş için Microsoft 365'teki abonelikleri ve lisansları anlama
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -20,26 +20,26 @@ ms.custom:
 - manage_licenses
 - AdminTemplateSet
 search.appverid: MET150
-description: Aldığınız uygulamalar ve hizmetler, İş için Microsoft 365 Uygulamaları gibi satın aldığınız Microsoft 365 ürüne bağlıdır.
+description: Aldığınız uygulamalar ve hizmetler, İş için Microsoft 365 Uygulamaları gibi satın aldığınız Microsoft 365 ürününe bağlıdır.
 ms.date: 05/12/2022
-ms.openlocfilehash: 56b650a4690151c913855d0007a34d2e2ddcba89
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 2d5b35bd4696e25aa1372dea0ac1bdd0371f0ef5
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043425"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281322"
 ---
-# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Microsoft 365 İş'teki abonelikleri ve lisansları anlama
+# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>İş için Microsoft 365'teki abonelikleri ve lisansları anlama
 
-İşletmeler için Microsoft 365 aboneliği satın aldığınızda, aylık veya yıllık olarak ödeme yaptığınız bir dizi uygulama ve hizmet için kaydolabilirsiniz. Aboneliğinizin bir parçası olarak aldığınız uygulamalar ve hizmetler, İş için Microsoft 365 Uygulamaları veya Microsoft 365 İş Standart gibi satın aldığınız ürüne bağlıdır. [Küçük ve orta ölçekli işletmeler için Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products) sayfasında her ürünle birlikte gelenleri görebilirsiniz.
+İş için Microsoft 365 aboneliği satın aldığınızda, yinelenen olarak ödeme yaptığınız bir dizi uygulama ve hizmet için kaydolabilirsiniz. Aboneliğinizin bir parçası olarak aldığınız uygulamalar ve hizmetler, İş için Microsoft 365 Uygulamaları veya Microsoft 365 İş Standart gibi satın aldığınız ürüne bağlıdır. [Küçük ve orta ölçekli işletmeler için Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products) sayfasında her ürünle birlikte gelenleri görebilirsiniz.
 
 Abonelik satın alırken, kuruluşunuzdaki kişi sayısına bağlı olarak ihtiyacınız olan lisans sayısını belirtirsiniz. Abonelik satın aldıktan sonra, kuruluşunuzdaki kişiler için hesaplar oluşturur ve ardından her kişiye bir lisans atarsınız. Kuruluş gereksinimleriniz değiştikçe, yeni kişileri barındırmak için daha fazla lisans satın alabilir veya birisi kuruluşunuzdan ayrıldığında diğer kullanıcılara lisansları yeniden atayabilirsiniz.
 
-Birden fazla aboneliğiniz varsa, her abonelik için farklı kişilere lisans atayabilirsiniz. Örneğin, bir Microsoft 365 İş Standart aboneliğinin parçası olarak tüm kullanıcılarınızı tüm Microsoft 365 uygulamalara ve hizmetlere atayabilirsiniz. Ayrıca, ayrı bir Visio aboneliği aracılığıyla Visio Online'a kullanıcıların bir alt kümesini atayabilirsiniz.
+Birden fazla aboneliğiniz varsa, her abonelik için farklı kişilere lisans atayabilirsiniz. Örneğin, bir Microsoft 365 İş Standart aboneliğinin parçası olarak tüm kullanıcılarınızı tüm Microsoft 365 uygulamalarına ve hizmetlerine atayabilirsiniz. Ayrıca, kullanıcıların bir alt kümesini ayrı bir Visio aboneliği aracılığıyla Visio Online'a atayabilirsiniz.
 
 ## <a name="how-many-devices-can-people-install-office-on"></a>Kişiler Office'i kaç cihaza yükleyebilir?
 
-Aboneliğiniz aşağıdaki ürünlerden herhangi birini içeriyorsa, her kişi en fazla beş pc veya Mac bilgisayara, beş tablete ve beş telefona Office yükleyebilir.
+Aboneliğiniz aşağıdaki ürünlerden herhangi birini içeriyorsa, her kişi Office'i en fazla beş pc veya Mac bilgisayara, beş tablete ve beş telefona yükleyebilir.
 
 :::row:::
    :::column span="":::
@@ -59,7 +59,7 @@ Aşağıdaki tabloda birine lisans atadığınızda otomatik olarak nelerin ger�
 |Exchange Online|O kişi için bir posta kutusu oluşturulur. <br/> Bu görevin tamamlanması için SLA hakkında bilgi edinmek için bkz. ["Ayarlanıyor..." Microsoft 365 yönetim merkezi iletileri](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center).|
 |SharePoint Online|Kişiye varsayılan SharePoint Online ekip sitesi üzerinde düzenleme izinleri atanır.|
 |Microsoft Teams|Kişinin lisansla ilişkili özelliklere erişimi vardır.|
-|Kurumlar için Microsoft 365 Uygulamaları ve İş için Microsoft 365 Uygulamaları|Kişi en fazla beş Mac bilgisayara veya bilgisayara, beş tablete ve beş akıllı telefona Office uygulamaları indirebilir.|
+|Kurumlar için Microsoft 365 Uygulamaları ve İş için Microsoft 365 Uygulamaları|Kişi Office uygulamalarını en fazla beş Mac bilgisayara veya bilgisayara, beş tablete ve beş akıllı telefona indirebilir.|
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Kullanıcıya ait olmayan posta kutularına yönelik lisansları anlama
 
@@ -69,7 +69,7 @@ Kaynak posta kutuları, oda posta kutuları ve paylaşılan posta kutuları 50 g
 - [Paylaşılan posta kutusundan lisans kaldırma](../../admin/email/remove-license-from-shared-mailbox.md)
 - Diğer tüm Microsoft 365 planları için [Exchange Online paylaşılan Posta Kutuları](/exchange/collaboration-exo/shared-mailboxes).
 
-## <a name="who-can-assign-licenses"></a>Who lisans atayabilirsiniz?
+## <a name="who-can-assign-licenses"></a>Kimler lisans atayabilir?
 
 Farklı türdeki yöneticiler, rollerine bağlı olarak lisanslarla farklı şekillerde çalışabilir. Aşağıdaki tabloda en yaygın seçenekler listelenmiştir. Yönetici rollerinin ve ayrıcalıklarının tam listesi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
   

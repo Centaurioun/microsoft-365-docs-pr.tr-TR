@@ -24,12 +24,12 @@ ms.custom:
 search.appverid: GEA150
 description: Microsoft 365 İş Standart, Microsoft 365 İş Ekstra veya İş için Microsoft 365 Uygulamaları için 30 günlük ücretsiz deneme sürümüne kaydolun.
 ms.date: 08/07/2020
-ms.openlocfilehash: 0d52c85230bb00c82cb924cbfda7ae69114b8bba
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 473e93660d854f953973cbb4590aceabe0e67e36
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111602"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281827"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>İş için Microsoft 365 aboneliğini deneyin veya satın alın
 
@@ -61,7 +61,7 @@ Yeni bir müşteri misiniz ve microsoft hesabınız yok mu? Hesap oluşturmak ve
 1. <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Ürünleri sitesine</a> gidin.
 2. Microsoft 365 İş Standart **gibi** kaydolmak istediğiniz planı seçin, sayfayı aşağı kaydırın ve **1 ay boyunca ücretsiz deneyin'i** seçin.
 3. Sonraki sayfada hesabınızı ayarlama adımlarını izleyin.
-4. Kaydolma işleminin tamamlanması birkaç dakika sürebilir. Tamamlandıktan\'sonra, aboneliğiniz için kurulum sihirbazını başlatmaya hazır olursunuz. Aboneliğinizi ayarlama hakkında daha fazla bilgi için bkz. [Sonraki adımlar](#next-steps).
+4. Kaydolma işleminin tamamlanması birkaç dakika sürebilir. Tamamlandıktan sonra, aboneliğiniz için kurulum sihirbazını başlatmaya hazır olursunuz. Aboneliğinizi ayarlama hakkında daha fazla bilgi için bkz. [Sonraki adımlar](#next-steps).
 
 ## <a name="buy-a-subscription-from-your-free-trial"></a>Ücretsiz deneme sürümünüzden abonelik satın alma
 
@@ -72,7 +72,7 @@ Deneme sürümünüz bitmeden aboneliğinizi satın almak istiyorsanız şu adı
 1. Microsoft 365 yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ürünleriniz</a> sayfasına gidin.
 2. **Ürünleriniz** sayfasında satın almak istediğiniz aboneliği bulun.
 3. **Lisanslar** bölümünde **Abonelik satın al'ı** seçin.
-4. Aboneliğiniz için aylık veya yıllık taahhüt seçin ve ardından **Kullanıma Alma'yı** seçin.
+4. Aboneliğiniz için bir faturalama sıklığı seçin ve ardından **Kullanıma Alma'yı** seçin.
 5. Sonraki sayfada aboneliği doğrulayın ve **Kullanıma Alma'yı** seçin.
 6. Sonraki sayfada **, Satılacak** adres, **Faturalanan** bilgiler ve **Bu sırada bulunan Öğeler'i** doğrulayın. Herhangi bir değişiklik yapmanız gerekiyorsa, ilgili bölümün yanındaki **Değiştir'i** seçin.
 7. \'İşiniz bittiğinde, **Siparişi vermek & Sözleşmeyi kabul et'i** seçin.

@@ -14,12 +14,12 @@ ms.custom:
 - Adm_ServiceDesc_top
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: Microsoft 365 özellik açıklamaları için sağlanan bilgiler hakkında bilgi edinin.
-ms.openlocfilehash: 58643705d6fd3cd67b7be0f1aae90a9dc3c4aa66
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 40f0b9379b0a4105f1292d283de2785dc652591d
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66862342"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281278"
 ---
 # <a name="microsoft-365-feature-descriptions"></a>Microsoft 365 hizmet açıklamaları
 
@@ -167,7 +167,7 @@ Kurumsal, iş, ön hat, eğitim ve kamu için her Microsoft 365 ve Office 365 ab
 
 **Paylaşılan destek sorumlulukları:** Microsoft, nitelikli uzmanlardan zamanında teknik destek almanın bulut hizmetlerinin önemli bir yönü olduğunu anlar. Müşterinin BT bölümünün kullanıcıların desteğinde oynadığı kritik rol aynı derecede önemlidir.
 
-**Yönetici sorumlulukları:** Microsoft yönetici rollerine sahip kişiler, müşterinin kuruluşunda yönetim merkezinin **Yönetici** bölümüne erişme ve hizmet isteklerini Microsoft'a göndererek hizmet istekleri hakkında doğrudan Microsoft ile iletişim kurma yetkisine sahip kişilerdir. Kurumsal ve Microsoft 365 Uygulamaları Planı için Office 365 ile farklı işlevlere hizmet eden çeşitli yönetici türleri belirleyebilirsiniz. Bu hizmet açıklamasında, tüm yönetici kategorileri için genel olarak yönetici ifadesi kullanılır. Yönetici rolü türleri hakkında daha fazla bilgi için bkz. [Yönetici rolleri atama](/office365/admin/add-users/assign-admin-roles).
+**Yönetici sorumlulukları:** Microsoft yönetici rolleriyle Kişiler, müşterinin kuruluşunda yönetim merkezinin **Yönetici** bölümüne erişme ve hizmet istekleriyle ilgili doğrudan Microsoft ile iletişim kurarak hizmet isteklerini Microsoft'a gönderme yetkisi olan tek roldür. Kurumsal ve Microsoft 365 Uygulamaları Planı için Office 365 ile farklı işlevlere hizmet eden çeşitli yönetici türleri belirleyebilirsiniz. Bu hizmet açıklamasında, tüm yönetici kategorileri için genel olarak yönetici ifadesi kullanılır. Yönetici rolü türleri hakkında daha fazla bilgi için bkz. [Yönetici rolleri atama](/office365/admin/add-users/assign-admin-roles).
 
 **Yönetici rolü**: Yönetici, her hizmet kullanıcısını ayarlayan ve destekleyen birincil kişidir. Yönetici, hizmet yönetimi ve hesap bakımıyla sorumludur ve kullanıcıların hizmetlere erişmesine izin vermek, istemci bağlantısı, istemci yazılımı ve mobil yükleme sorunlarını gidermek, müşterinin kuruluş kapsamı içindeki hizmet kullanılabilirliği sorunlarını gidermek, destek sorunlarını çözmek için Microsoft'un self servis destek kaynaklarını kullanmak için kullanıcı hesabı kurulumu ve yapılandırması sağlar. Müşterinin kullanıcılarına yönelik ilk desteği yöneticinin sağlaması beklenir. Ancak, yönetici self servis destek kaynaklarının yardımıyla ilgili sorunları çözemezse [Teknik desteğe](/office365/servicedescriptions/office-365-platform-service-description/support#technical-support) başvurmalıdır.
 
@@ -229,7 +229,7 @@ Microsoft Office 365 aşağıdaki yardım ve eğitim kaynaklarını sağlar. Top
 
 **Sorun Giderme Dilleri:** Çince-Basitleştirilmiş, Geleneksel Çince, Fransızca, Almanca, İtalyanca, Japonca, Korece, Lehçe, Portekizce-Brezilya, Rusça ve İspanyolca.
 
-# <a name="domains-networks-partners-sc-and-sla"></a>[**Etki alanları, ağlar, iş ortakları, S&C ve SLA**](#tab/Domains)
+# <a name="domains-networking-and-partners"></a>[**Etki alanları, ağ ve iş ortakları**](#tab/Domains)
 
 ## <a name="domains"></a>Etki alanları
 
@@ -302,6 +302,8 @@ Yetkili bir Microsoft iş ortağı olarak Microsoft Office 365 size müşteri ta
 **Office 365 Market'teki müşterilerle ve diğer iş ortaklarıyla bağlantı kurma:** Office 365 Market, müşterilere iş ortağı hizmetlerini ve uzmanlığını bulma fırsatı sunar. Daha fazla bilgi için bkz. [Kayıt veya sonraki pencere öğesi aracılığıyla müşterilerle bağlantı kurma](/dynamics365/sales/connect-with-customers) ve [Diğer iş ortaklarıyla çalışma - İş Ortağı Merkezi](/partner-center/work-with-other-partners).
 
 **Microsoft iş ortağı ağı:** Microsoft İş Ortağı Ağı, iş ortaklarımızın ihtiyaçlarına hizmet etmeye kararlıdır. Ağa katılmak ve Microsoft'un iş ortaklarına nasıl hizmet verdiğine bakmak için bkz. [Microsoft İş Ortağı Ağı](https://go.microsoft.com/fwlink/?LinkID=272021&clcid=0x409).
+
+# <a name="privacy-security-rights-and-sla"></a>[**Gizlilik, güvenlik, haklar ve SLA**](#tab/Privacy)
 
 ## <a name="privacy-security-and-transparency"></a>Gizlilik, güvenlik ve saydamlık
 

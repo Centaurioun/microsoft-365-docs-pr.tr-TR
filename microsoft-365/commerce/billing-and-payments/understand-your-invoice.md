@@ -20,13 +20,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Microsoft iş ürünleri için faturanızı veya faturanızı nasıl okuyacağınızı ve anlayacağınızı öğrenin.
-ms.date: 05/04/2021
-ms.openlocfilehash: 5d905ec0b5ab9450b40c1e8be885307ce7a65a19
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.date: 08/08/2022
+ms.openlocfilehash: 258c2dc0f2dd6f10330c400f78cfadb1d9f986e5
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111570"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281300"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Fatura ekstrenizi veya faturanızı anlama
 
@@ -40,6 +40,14 @@ Faturanızı görüntülemek ve yazdırmak için:
 Daha fazla bilgi için bkz. [Faturanızı veya faturanızı görüntüleme](view-your-bill-or-invoice.md).
 
 Yalnızca bir Microsoft 365 aboneliğiniz varsa bkz. [İş için Microsoft 365 faturanızı veya faturanızı anlama](understand-your-invoice2.md).
+
+## <a name="how-often-and-when-am-i-billed"></a>Ne sıklıkta ve ne zaman faturalandırılırım?
+
+Aboneliğinizi satın alırken seçtiğiniz faturalama sıklığına bağlı olarak aylık, 3 ayda bir, 6 ayda bir veya yıllık olarak bir fatura alırsınız. Son fatura tarihinden bu yana geçen süre Faturalama Dönemi olarak adlandırılır ve Fatura Özeti bölümünün üzerinde, faturanın birinci sayfasında gösterilir. Bu süre, geçerli fatura için ücretlerin tahakkuk ettiği tarih aralığını temsil eder. Aboneliğinizde bu tarih aralığının dışında lisans ekleme veya kaldırma gibi bir değişiklik yaptıysanız, ilişkili ücretler sonraki faturalama dönemine ait faturada görünür.
+
+Faturanın ikinci sayfasından başlayarak, ücretleri ürün siparişine göre gruplandırılmış olarak görürsünüz. Azure müşterileri için ücretler fatura bölümüne göre düzenlenmiş olabilir.
+
+Her faturalama döneminin sonunda, yeni faturanızın Microsoft 365 yönetim merkezi görüntülenmeye veya indirilmeye hazır olduğunu belirten bir e-posta alırsınız. Birden fazla faturalama profiliniz varsa, her faturalama profili için bir fatura alırsınız. [Faturanızı veya faturanızı bulmayı ve görüntülemeyi](view-your-bill-or-invoice.md) öğrenin.
 
 ## <a name="understand-the-invoice-header"></a>Fatura üst bilgisini anlama
 
@@ -63,7 +71,7 @@ Yalnızca bir Microsoft 365 aboneliğiniz varsa bkz. [İş için Microsoft 365 f
 | Ücretler|Bu faturalama dönemi için satın alınan ürünlerin toplam sayısı ve bunların ilgili ücretleri ve vergileri. Satın alma işlemleri, faturanızın kısa bir görünümünü sağlamak için toplanır. |
 | Alacaklar |İadelerden aldığınız krediler |
 | Uygulanan Azure kredileri |Azure'a otomatik olarak uygulanan Azure kredileriniz her faturalama döneminde ücretlendirilir. Azure krediniz yoksa bu alan gizlenir. Azure kredileri hakkında daha fazla bilgi için bkz. [Azure kredi bakiyesini Microsoft Müşteri Sözleşmesi izleme](/azure/billing/billing-mca-check-azure-credits-balance). |
-| Ara toplam |Vadesi gelen vergi öncesi tutar |
+| Alt toplam |Vadesi gelen vergi öncesi tutar |
 | Vergi |Faturalama profilinizin ülkesine bağlı olarak ödediğiniz vergi türü ve tutarı. Vergi ödemeniz gerekmiyorsa faturanızda vergi gösterilmez. |
 
 ### <a name="understand-your-charges"></a>Ücretlerinizi anlama
@@ -73,7 +81,7 @@ Yalnızca bir Microsoft 365 aboneliğiniz varsa bkz. [İş için Microsoft 365 f
 | Terim |Açıklama |
 | --- | --- |
 | Birim fiyat | Ücreti hesaplamak için kullanılan hizmetin geçerli birim fiyatı (fiyatlandırma para birimi cinsinden). Bu fiyat bir ürün, hizmet ailesi, ölçüm ve teklif için benzersizdir. |
-| Miktar | Faturalama döneminde satın alınan veya tüketilen miktar |
+| Mkt | Faturalama döneminde satın alınan veya tüketilen miktar |
 | Ücretler/Krediler | Krediler/para iadeleri uygulandıktan sonraki net ücret miktarı |
 | Azure Kredisi | Ücretlere/Kredilere uygulanan Azure kredisi miktarı |
 | Vergi oranı | Ülkeye bağlı olarak vergi oranı |

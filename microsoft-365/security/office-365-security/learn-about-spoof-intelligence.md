@@ -20,12 +20,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection (EOP) içindeki kimlik sahtekarlığına ilişkin zeka içgörüleri hakkında bilgi edinebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3be83ee7174934439643320f2ac9d0db72d745bd
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 68d0d2e9ae61afcc69c8f297ca88554090838068
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756659"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281761"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP'de sahte zeka içgörüleri
 
@@ -117,6 +117,7 @@ Kimlik sahtekarı zekası algılamalarıyla ilgili bilgileri görüntülemek iç
 - **Altyapı gönderme**: _Altyapı_ olarak da bilinir. Gönderen altyapı aşağıdaki değerlerden biri olacaktır:
   - Kaynak e-posta sunucusunun IP adresinin ters DNS aramasında (PTR kaydı) bulunan etki alanı.
   - Kaynak IP adresinin PTR kaydı yoksa, gönderen altyapı /24 olarak \<source IP\>tanımlanır (örneğin, 192.168.100.100/24).
+  - Doğrulanmış bir DKIM etki alanı.
 - **İleti sayısı**: Son 7 gün içinde sahte etki alanı _ile_ kuruluşunuza gönderilen altyapının birleşiminden gelen iletilerin sayısı.
 - **Son görülen**: Sahte etki alanını içeren gönderen altyapıdan iletinin alındığı son tarih.
 - **Kimlik sahtekarı türü**: Aşağıdaki değerlerden biri:

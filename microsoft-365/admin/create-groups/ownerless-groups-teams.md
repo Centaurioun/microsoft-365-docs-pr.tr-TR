@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Sahipsiz bir Microsoft 365 grubunda veya Microsoft Teams'de bir ekipte sahip olmaya üyeleri otomatik olarak davet etmeyi öğrenin.
-ms.openlocfilehash: da332d32bef075c8ca6ecf45fa642ef6d944bea1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0c64aa01784e837be1f57e0ae2ad5b0db6317e9a
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66861838"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280883"
 ---
 # <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Sahipsiz Microsoft 365 gruplarını ve ekiplerini yönetme
 
@@ -55,7 +55,7 @@ Sahipsiz grup veya ekip ilkesi ayarlamak için
 
 1. Bildirmek istediğiniz etkin üye sayısını yazın ve bildirimi göndermek için hafta sayısını seçin. (Bildirim listesi ilk bildirim sırasında oluşturulur ve değişmez.) **İleri'yi** seçin.
 
-1. *Bu e-posta kimden geliyor sayfasında, e-posta* için bir gönderen seçin ve ardından **İleri'yi** seçin.
+1. *Bu e-posta kimden geliyor sayfasında, e-posta* için bir gönderen seçin ve ardından **İleri'yi** seçin. Paylaşılan posta kutularının desteklenmediğini unutmayın. Gönderen bir kullanıcı posta kutusu veya grup posta kutusu olmalıdır.
 
 1. *Konu ve ileti* sayfasında, e-postayı özelleştirin ve isteğe bağlı olarak bir **ilke kılavuzu URL'si** ekleyin ve **ardından İleri'yi** seçin.
 

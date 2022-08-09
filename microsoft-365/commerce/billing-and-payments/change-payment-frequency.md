@@ -21,16 +21,19 @@ ms.custom:
 search.appverid: MET150
 description: İş aboneliğiniz için faturalandırılan sıklığı nasıl değiştireceğinizi öğrenin.
 ms.date: 05/24/2022
-ms.openlocfilehash: 4b5c5e42f33e3ca36a89b694a4249296df6e200c
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d3d226eea1972daf7bede15b47c87dad1442530c
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493009"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280861"
 ---
 # <a name="change-your-microsoft-365-subscription-billing-frequency"></a>Microsoft 365 aboneliğinizin faturalama sıklığını değiştirme
 
 Abonelik satın aldığınızda faturalama sıklığını seçersiniz. Bir abonelik için faturalandırılan sıklıkları değiştirmek için aşağıdaki adımları kullanın.
+
+> [!NOTE]
+> Faturalama profiliniz varsa, yalnızca aboneliği satın aldığınızda veya yükseltirken faturalama sıklığını değiştirebilirsiniz. Faturalama profiliniz olup olmadığını öğrenmek için bkz. [Faturalama profillerimi görüntüleme](manage-billing-profiles.md#view-my-billing-profiles).
 
 1. Yönetim merkezinde <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ürünlerinizi</a> **Faturalama**\> sayfasına gidin.
 2. **Ürünler** sekmesinde, değiştirmek istediğiniz aboneliği seçin.

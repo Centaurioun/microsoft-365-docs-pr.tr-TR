@@ -17,12 +17,12 @@ ms.custom: ''
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde izin ve blokları yönetmeyi öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca93c64494f163c5d08243c7d797f63bcdfda54e
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 31180e2366faa8e2d5dcbab2dfd4da8ba14fbb5e
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175483"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280431"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Kiracı İzin Verilenler/Engellenenler Listesini Yönetme
 
@@ -168,7 +168,7 @@ Tüm izin verme ve blokları yönetmek için bkz. [Kiracı İzin Ver/Engelle Lis
    - **Sahte gönderenler**
      - **Eylem**
      - **Kimlik sahtekarı türü**
-   - **URL'ler**
+   - **Url 'leri**
      - **Eylem**
      - **Hiçbir zaman süresi dolmaz**
      - **Son güncelleştirme tarihi**
@@ -428,7 +428,7 @@ Aşağıdaki girdiler geçersiz:
 
 - **Eksik veya geçersiz etki alanı değerleri**:
 
-  - contoso
+  - Contoso
   - \*.contoso.\*
   - \*.com
   - \*.pdf
@@ -474,6 +474,7 @@ Kiracı İzin Ver/Engelle Listesindeki kimlik sahtekarı bir gönderen için etk
 - **Altyapı gönderiliyor**: Bu değer, sahte kullanıcıdan gelen iletilerin kaynağını gösterir. Geçerli değerler şunlardır:
   - Kaynak e-posta sunucusunun IP adresinin (örneğin, fabrikam.com) ters DNS aramasında (PTR kaydı) bulunan etki alanı.
   - Kaynak IP adresinin PTR kaydı yoksa, gönderen altyapı /24 olarak \<source IP\>tanımlanır (örneğin, 192.168.100.100/24).
+  - Doğrulanmış bir DKIM etki alanı.
 
 Sahte gönderenleri tanımlamak için geçerli etki alanı çiftlerinin bazı örnekleri aşağıda verilmiştir:
 

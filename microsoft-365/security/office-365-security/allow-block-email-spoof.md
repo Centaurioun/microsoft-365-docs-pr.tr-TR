@@ -16,12 +16,12 @@ ms.collection:
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde e-postalara ve sahte gönderen girişlerine izin verme veya bunları engelleme hakkında bilgi edinebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 107aef5dd4cc3098d6e77f45e6b95352997ef738
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: b59a59367a047019a9c397c864662bceda06c240
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175014"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281739"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini kullanarak e-postalara izin verme veya e-postaları engelleme
 
@@ -169,6 +169,9 @@ Etki alanı çifti eklemek yalnızca kimlik sahtekarlığına sahip kullanıcın
 - **Altyapı**: tms.mx.com
 
 Yalnızca bu etki alanından gelen _ve_ altyapı çifti gönderen iletilerin kimlik sahtekarlığına izin verilir. gmail.com sahtekarlık yapmaya çalışan diğer gönderenlere izin verilmez. diğer etki alanlarındaki tms.mx.com gelen gönderenlerden gelen iletiler kimlik sahtekarlığına göre denetleniyor.
+
+> [!NOTE]
+> Gönderen altyapıda joker karakter kullanamazsınız.
 
 ## <a name="create-blocked-spoofed-sender-entries"></a>Engellenen sahte gönderen girdileri oluşturma
 

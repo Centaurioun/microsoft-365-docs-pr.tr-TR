@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fe43d4df71b0801ae89149797068873577c77c38
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9b8009af5bd88c1dfd37dc7e8297e3c7e05f1356
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174694"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280773"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>Desteklenen Uç Nokta için Microsoft Defender API'leri
 
@@ -35,7 +35,7 @@ ms.locfileid: "65174694"
 > Gelişmiş avcılık özellikleri İş için Defender'a dahil değildir. Bkz[. İş için Microsoft Defender Uç Nokta için Microsoft Defender Planları 1 ve 2 ile karşılaştırma](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="endpoint-uri-and-versioning"></a>Uç nokta URI'sini ve sürüm oluşturma
 
@@ -45,7 +45,7 @@ ms.locfileid: "65174694"
 >
 > Sorgu tabanlı OData'da '/api' ön eki bulunur. Örneğin, Uyarıları almak için adresine GET isteği gönderebilirsiniz [https://api.securitycenter.microsoft.com/api/alerts](https://api.securitycenter.microsoft.com/api/alerts)
 
-### <a name="versioning"></a>Sürüm
+### <a name="versioning"></a>Sürüm oluşturma
 
 > API sürüm oluşturma işlemini destekler.
 >
@@ -65,22 +65,23 @@ API çağrılarını çalıştırabileceğiniz desteklenen tek tek varlıklar ve
 
 Konu | Açıklama
 :---|:---
-[Gelişmiş avcılık](run-advanced-query-api.md) | API'den sorgu çalıştırma.<p>*Gelişmiş avcılık özellikleri [İş için Defender'a](../defender-business/mdb-overview.md) dahil değildir*.
-[Uyarı yöntemleri ve özellikleri](alerts.md) | Uyarı alma, uyarı oluşturma, uyarıyı güncelleştirme ve daha fazlası gibi \- API çağrılarını çalıştırın.
-[Cihaz başına değerlendirme yöntemlerini ve özelliklerini dışarı aktarma](get-assessment-methods-properties.md) | Cihaz başına güvenlik açığı değerlendirmelerini toplamak için API çağrılarını çalıştırın; örneğin: \- güvenli yapılandırma değerlendirmesini dışarı aktarma, yazılım envanteri değerlendirmesini dışarı aktarma, yazılım güvenlik açıklarını dışarı aktarma ve delta dışarı aktarma yazılım güvenlik açıkları değerlendirmesi.
-[Otomatik Araştırma yöntemleri ve özellikleri](investigation.md) | Araştırma koleksiyonu alma gibi \- API çağrılarını çalıştırın.
-[Etki alanıyla ilgili uyarıları al](get-domain-related-alerts.md) | Etki alanıyla ilgili cihazları, etki alanı istatistiklerini ve daha fazlasını alma gibi \- API çağrılarını çalıştırın.
-[Dosya yöntemleri ve özellikleri](files.md) | Dosya bilgilerini alma, dosyayla ilgili uyarılar, dosyayla ilgili cihazlar ve dosya istatistikleri gibi \- API çağrılarını çalıştırın.
-[Gösterge yöntemleri ve özellikleri](ti-indicator.md) | Göstergeleri alma, Gösterge oluşturma ve Göstergeleri silme gibi \- API çağrılarını çalıştırın.
-[IP ile ilgili uyarıları al](get-ip-related-alerts.md) | IP ile ilgili uyarıları alma ve IP istatistikleri alma gibi \- API çağrılarını çalıştırın.
-[Makine yöntemleri ve özellikleri](machine.md) | Cihazları alma, kimliğe göre cihaz alma, oturum açmış kullanıcılar hakkında bilgi alma, etiketleri düzenleme ve daha fazlası gibi \- API çağrılarını çalıştırın.
-[Makine Eylemi yöntemleri ve özellikleri](machineaction.md) | Yalıtım, Virüsten koruma taraması çalıştırma ve daha fazlası gibi \- API çağrıları çalıştırın.
-[Öneri yöntemleri ve özellikleri](recommendation.md) | Kimliğe göre öneri alma gibi \- API çağrılarını çalıştırın.
-[Düzeltme etkinliği yöntemleri ve özellikleri](get-remediation-methods-properties.md) | Tüm düzeltme görevlerini alma, kullanıma sunulan cihazları düzeltme görevi alma ve kimliğe göre bir düzeltme görevi alma gibi \- API çağrısı çalıştırın.
-[Puan yöntemleri ve özellikleri](score.md) | Maruz kalma puanı alma veya cihaz güvenli puanı alma gibi \- API çağrılarını çalıştırın.
-[Yazılım yöntemleri ve özellikleri](software.md) | Yazılıma göre güvenlik açıklarını listeleme gibi \- API çağrılarını çalıştırın.
-[Kullanıcı yöntemleri](user.md) | Kullanıcıyla ilgili uyarıları ve kullanıcıyla ilgili cihazları alma gibi \- API çağrılarını çalıştırın.
-[Güvenlik açığı yöntemleri ve özellikleri](vulnerability.md) | Cihazları güvenlik açığına göre listeleme gibi \- API çağrılarını çalıştırın.
+[**Gelişmiş Avcılık** yöntemleri](run-advanced-query-api.md) | API'den sorgu çalıştırma.
+[**Uyarı** yöntemleri ve özellikleri](alerts.md) | Uyarı alma, uyarı oluşturma, uyarıyı güncelleştirme ve daha fazlası gibi \- API çağrılarını çalıştırın.
+[Cihaz başına **Değerlendirmeyi** Dışarı Aktarma yöntemleri ve özellikleri](get-assessment-methods-properties.md) | Cihaz başına güvenlik açığı değerlendirmelerini toplamak için API çağrılarını çalıştırın; örneğin: \- güvenli yapılandırma değerlendirmesini dışarı aktarma, yazılım envanteri değerlendirmesini dışarı aktarma, yazılım güvenlik açıklarını dışarı aktarma ve delta dışarı aktarma yazılım güvenlik açıkları değerlendirmesi.
+[**Otomatik araştırma** yöntemleri ve özellikleri](investigation.md) | Araştırma koleksiyonu alma gibi \- API çağrılarını çalıştırın.
+[Cihaz sistem durumu yöntemlerini ve özelliklerini dışarı aktarma](device-health-api-methods-properties.md) | - GET /api/public/avdeviceshealth gibi API Çağrıları çalıştırın.
+[**Etki alanıyla** ilgili uyarılar](get-domain-related-alerts.md) | Etki alanıyla ilgili cihazları, etki alanı istatistiklerini ve daha fazlasını alma gibi \- API çağrılarını çalıştırın.
+[**Dosya** yöntemleri ve özellikleri](files.md) | Dosya bilgilerini alma, dosyayla ilgili uyarılar, dosyayla ilgili cihazlar ve dosya istatistikleri gibi \- API çağrılarını çalıştırın.
+[**Gösterge** yöntemleri ve özellikleri](ti-indicator.md) | Göstergeleri alma, Gösterge oluşturma ve Göstergeleri silme gibi \- API çağrılarını çalıştırın.
+[**IP** ile ilgili uyarılar](get-ip-related-alerts.md) | IP ile ilgili uyarıları alma ve IP istatistikleri alma gibi \- API çağrılarını çalıştırın.
+[**Makine** yöntemleri ve özellikleri](machine.md) | Cihazları alma, kimliğe göre cihaz alma, oturum açmış kullanıcılar hakkında bilgi alma, etiketleri düzenleme ve daha fazlası gibi \- API çağrılarını çalıştırın.
+[**Makine Eylemi** yöntemleri ve özellikleri](machineaction.md) | Yalıtım, Virüsten koruma taraması çalıştırma ve daha fazlası gibi \- API çağrıları çalıştırın.
+[**Öneri** yöntemleri ve özellikleri](recommendation.md) | Kimliğe göre öneri alma gibi \- API çağrılarını çalıştırın.
+[**Düzeltme etkinliği** yöntemleri ve özellikleri](get-remediation-methods-properties.md) | Tüm düzeltme görevlerini alma, kullanıma sunulan cihazları düzeltme görevi alma ve kimliğe göre bir düzeltme görevi alma gibi \- API çağrısı çalıştırın.
+[Yöntemleri ve özellikleri **puanla**](score.md) | Maruz kalma puanı alma veya cihaz güvenli puanı alma gibi \- API çağrılarını çalıştırın.
+[**Yazılım** yöntemleri ve özellikleri](software.md) | Yazılıma göre güvenlik açıklarını listeleme gibi \- API çağrılarını çalıştırın.
+[**Kullanıcı** yöntemleri ve özellikleri](user.md) | Kullanıcıyla ilgili uyarıları ve kullanıcıyla ilgili cihazları alma gibi \- API çağrılarını çalıştırın.
+[**Güvenlik açığı** yöntemleri ve özellikleri](vulnerability.md) | Cihazları güvenlik açığına göre listeleme gibi \- API çağrılarını çalıştırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
