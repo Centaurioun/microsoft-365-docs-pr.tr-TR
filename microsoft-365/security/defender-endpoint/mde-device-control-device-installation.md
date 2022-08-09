@@ -8,24 +8,28 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/21/2022
+ms.date: 08/09/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 42e31e8194464654176de02cb9f45f11066c6d4e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 750b00bf2418765c780471356ad01208667b4d2c
+ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943672"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67294621"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Cihaz Denetimi Cihazı Yüklemesini Uç Nokta için Microsoft Defender
 
 **Uygulandığı öğe**
 - [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+
+> [!NOTE]
+> Çıkarılabilir depolamayı yönetiyorsanız bkz. [Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama Birimi Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
 
 Uç Nokta için Microsoft Defender Cihaz Denetimi Cihazı Yüklemesi aşağıdaki görevi gerçekleştirmenizi sağlar:
 
@@ -36,7 +40,7 @@ Uç Nokta için Microsoft Defender Cihaz Denetimi Cihazı Yüklemesi aşağıdak
 > Cihaz Yükleme ve Çıkarılabilir depolama erişim denetimi arasındaki farkı bulmak için bkz. [Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama Birimi Koruması](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true).
 
 |Ayrıcalık|Izni|
-|---|---|
+|:---|:---|
 |Access|Cihaz yüklemesi |
 |Eylem Modu|İzin Ver, Engelle |
 |CSP Desteği|Evet|
@@ -56,7 +60,7 @@ Aşağıdaki cihaz özellikleri Cihaz Yükleme desteği tarafından desteklenir:
 - Donanım Kimliği
 - Uyumlu Kimlik
 - Cihaz Sınıfı
-- 'Çıkarılabilir Cihaz' Cihaz türü: Bazı cihazlar Çıkarılabilir Cihaz olarak sınıflandırılabilir. Bağlı olduğu cihazın sürücüsü cihazın çıkarılabilir olduğunu gösterdiğinde bir cihaz çıkarılabilir olarak kabul edilir. Örneğin, bir USB cihazının bağlı olduğu USB hub'ına ait sürücüler tarafından çıkarılabilir olduğu bildirilir.
+- Çıkarılabilir cihaz türü: Bazı cihazlar çıkarılabilir cihaz olarak sınıflandırılabilir. Bağlı olduğu cihazın sürücüsü cihazın çıkarılabilir olduğunu gösterdiğinde bir cihaz çıkarılabilir olarak kabul edilir. Örneğin, bir USB cihazının bağlı olduğu USB hub'ına ait sürücüler tarafından çıkarılabilir olduğu bildirilir.
 
 Daha fazla bilgi için bkz. [Windows'ta Cihaz Yüklemesi](/windows/client-management/manage-device-installation-with-group-policy).
 
@@ -74,7 +78,7 @@ Bu ilke ayarı **, Tüm cihaz eşleştirme ölçütleri arasında cihaz yükleme
 **Tüm cihaz eşleştirme ölçütleri için cihaz yükleme ilkelerine izin ver ve engelle için katmanlı değerlendirme sırası uygula** ilke ayarı bu ilke ayarıyla etkinleştirilmediyse, yüklemeyi özellikle engelleyen diğer ilke ayarları öncelikli olur.
 
 > [!NOTE]
-> **Diğer ilke ayarları tarafından açıklanmamış cihazların yüklenmesini engelle** ilke ayarı, desteklenen hedef Windows 10 sürümleri **ve Windows 11 için Tüm cihaz eşleştirme ölçütleri için cihaz yükleme ilkelerine izin ver ve engelle için katmanlı değerlendirme sırası uygula** ilke ayarıyla değiştirilmiştir. Mümkün olduğunda **tüm cihaz eşleştirme ölçütleri ilkesinde cihaz yükleme ilkelerine izin ver ve engelle için Katmanlı değerlendirme sırası uygula** ayarını kullanmanız önerilir.
+> **Diğer ilke ayarları tarafından açıklanmamış cihazların yüklenmesini engelle** ilke ayarı, desteklenen hedef Windows 10 sürümleri **ve Windows 11 için Tüm cihaz eşleştirme ölçütleri için cihaz yükleme ilkelerine izin ver ve engelle için katmanlı değerlendirme sırası uygula** ilke ayarıyla değiştirilmiştir. Mümkün olduğunda **Tüm cihaz eşleştirme ölçütleri arasında cihaz yükleme ilkelerine izin ver ve engelle için Katmanlı değerlendirme sırasını uygula** ilke ayarını kullanın.
 
 ### <a name="allow-installation-of-devices-that-match-any-of-these-device-instance-ids"></a>Bu cihaz örneği kimliklerinden herhangi biriyle eşleşen cihazların yüklenmesine izin ver
 
@@ -221,7 +225,7 @@ Microsoft Endpoint Manager'da [https://endpoint.microsoft.com/](https://endpoint
 
       :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="Cihaz Denetimi sayfasındaki bir tanımlayıcı" lightbox="../../media/devicepolicy-devicecontrol.png":::
 
-    Yukarıdaki görüntüde gösterildiği gibi eklemenin `PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB` nedeni, tek bir USB başparmak sürücüsünü etkinleştirmek için yalnızca tek bir donanım kimliğini etkinleştirmenin yeterli olmamasıdır. Hedef cihazdan önceki tüm USB cihazlarının da engellenmediğinden (izin verilmediğinden) emin olmanız gerekir. PnP ağacında cihazların nasıl yüklendiğini görmek için Aygıt Yöneticisi açabilir ve görünümü **bağlantılara göre** Cihazlar olarak değiştirebilirsiniz. Bu durumda, hedef USB başparmak sürücüsüne de izin verebilmesi için aşağıdaki cihazlara izin verilmelidir:
+    Önceki görüntüde gösterildiği gibi ekledik `PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB` çünkü tek bir USB başparmak sürücüsünü etkinleştirmek için yalnızca tek bir donanım kimliğini etkinleştirmek yeterli değildir. Hedef cihazdan önceki tüm USB cihazlarının da engellenmediğinden (izin verilmediğinden) emin olmanız gerekir. PnP ağacında cihazların nasıl yüklendiğini görmek için Aygıt Yöneticisi açabilir ve görünümü **bağlantılara göre** Cihazlar olarak değiştirebilirsiniz. Bu durumda, hedef USB başparmak sürücüsüne de izin verebilmesi için aşağıdaki cihazlara izin verilmelidir:
 
     - "Intel(R) USB 3.0 eXtensible Konak Denetleyicisi – 1.0 (Microsoft)" -> PCI\CC_0C03
     - "USB Kök Hub'ı (USB 3.0)" -> USB\ROOT_HUB30
