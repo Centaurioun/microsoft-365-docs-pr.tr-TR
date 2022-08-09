@@ -12,16 +12,17 @@ ms.custom: seo-marvel-jun2020
 ms.localizationpriority: high
 description: Finansal hizmet kurumlarının Microsoft 365 ve Teams'i kullanarak finansal güvenlik uyumluluğunu nasıl koruyabileceğini ve etkili bir şekilde işbirliği yapabileceklerini öğrenin.
 f1.keywords: NOCSH
-ms.openlocfilehash: 09818f0329b75379c2349fddd7246f24fa872ec0
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: d64d5e021d7d196132198dd9ddf5ae7a9d707037
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281871"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285296"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>ABD bankacılık ve sermaye piyasaları için temel uyumluluk ve güvenlik konuları
 
 ## <a name="introduction"></a>Giriş
+
 Finansal hizmet kurumları sıkı güvenlik, uyumluluk ve idare denetimleri taleplerinde neredeyse tüm ticari işletmeleri aşıyor. Verilerin, kimliklerin, cihazların ve uygulamaların korunması yalnızca işletmeleri için kritik öneme sahip değildir, ABD Menkul Kıymetler ve Borsa Komisyonu (SEC), Finansal Endüstri Düzenleme Kurumu (FINRA), Federal Finansal Kurumlar Sınav Konseyi (FFIEC) ve Emtia Vadeli İşlemler Ticaret Komisyonu (CFTC) gibi düzenleyici kurumların uyumluluk gereksinimlerine ve yönergelerine tabidir. Ayrıca, finansal kurumlar Dodd-Frank ve 2002 Sarbanes-Oxley Yasası gibi yasalara tabidir.
 
 Günümüzün artan güvenlik ihtiyat, içeriden risk endişeleri ve kamu veri ihlalleri ikliminde müşteriler, kişisel verileri ve bankacılık varlıkları konusunda onlara güvenmek için finans kuruluşlarından yüksek düzeyde güvenlik de talep ediyor.
@@ -29,6 +30,7 @@ Günümüzün artan güvenlik ihtiyat, içeriden risk endişeleri ve kamu veri i
 Tarihsel olarak, kapsamlı denetimlere duyulan ihtiyaç, finans kurumlarının iç ve dış işbirliği sağlamak için kullandığı BT sistemlerini ve platformlarını doğrudan etkileyip kısıtlamıştı. Günümüzde finansal hizmetler çalışanlarının benimsemesi ve kullanımı kolay modern bir işbirliği platformuna ihtiyacı vardır. Ancak finansal hizmetler, kullanıcıları ve BT sistemlerini tehditlere karşı korumak için ilkeler uygulayan güvenlik ve uyumluluk denetimleriyle kullanıcılar, ekipler ve departmanlar arasında işbirliği yapma esnekliğini dengeleyemez.
 
 Finansal hizmetler sektöründe aşağıdakiler dahil olmak üzere işbirliği araçlarının ve güvenlik denetimlerinin yapılandırılması ve dağıtımı için dikkatli bir şekilde dikkat edilmesi gerekir:
+
 - Ortak kurumsal işbirliği ve iş süreci senaryolarının risk değerlendirmesi
 - Bilgi koruma ve veri idaresi gereksinimleri
 - Siber güvenlik ve içeriden tehditler
@@ -67,6 +69,7 @@ Teams, kuruluş için bir işbirliği merkezi sağlar. Ortak girişimler ve proj
 Her Microsoft Ekibi bir Microsoft 365 grubu tarafından yedeklenmiştir. Bu grup, Teams de dahil olmak üzere çok sayıda Office 365 hizmeti için üyelik hizmeti olarak kabul edilir. Microsoft 365 grupları, "sahipler" ve "üyeler" arasında güvenli bir şekilde ayrım yapmak ve Teams'in içindeki çeşitli özelliklere erişimi denetlemek için kullanılır. Uygun idare denetimleri ve düzenli olarak yönetilen erişim gözden geçirmeleriyle birleştiğinde, Teams yalnızca üyelerin ve sahiplerin yetkili kanalları ve özellikleri kullanmasına izin verir.
 
 Teams'in şirket içi projeleri veya programları çalıştırırken finansal hizmetlerden yararlandığı yaygın bir senaryodur. Örneğin bankalar, zenginlik yönetimi firmaları, kredi sendikaları ve sigorta sağlayıcıları gibi birçok finans kurumunun kara para aklama ve diğer uyumluluk programlarına sahip olması gerekir. BT'nin, perakende ve zenginlik yönetimi gibi iş hatlarının ve mali suç biriminin birbiriyle veri paylaşması ve program veya belirli soruşturmalar hakkında iletişim kurması için işlevsel bir ekip gerekebilir. Geleneksel olarak, bu programlar paylaşılan ağ sürücülerini kullanır, ancak bu yaklaşım aşağıdakiler de dahil olmak üzere çok sayıda zorluk sunabilir:
+
 * Belgeyi aynı anda yalnızca bir kişi düzenleyebilir.
 * Kişilerin eklenmesi/kaldırılması genellikle BT'yi içerdiği için güvenliği yönetmek zaman alır.
 * Veriler, paylaşılan ağ sürücülerinde gerekenden veya istenenden çok daha uzun süre yerleşik olarak kalır.
@@ -103,6 +106,7 @@ FINRA, [düzenlemeye tabi firmaların dijital iletişimlerinin, 17a-3 ve 17a-4 E
 Bir kuruluş çalışanlarının uygulama tabanlı mesajlaşma hizmeti veya işbirliği platformu gibi belirli bir uygulamayı kullanmasına izin verirse, firmanın iş kayıtlarını arşivlemesi ve söz konusu uygulamadaki çalışanların etkinliklerini ve iletişimlerini denetlemesi gerekir. Kuruluşlar, FINRA kurallarına ve menkul kıymet yasalarına uymak ve çalışanların bu uygulamaların kullanımıyla ilgili bu kuralların olası ihlallerini takip etmek için durum tespiti yürütmekle sorumludur.
   
 FINRA tarafından önerilen etkili uygulamalar şunlardır:
+
 * Dijital iletişim kanalları için kapsamlı bir idare programı oluşturun. Kuruluşun hangi dijital iletişim kanallarına izin verildiğine ilişkin kararlarını yönetin ve her dijital kanal için uyumluluk süreçlerini tanımlayın. Dijital iletişim kanallarının hızla değişen ortamını yakından izleyin ve uyumluluk süreçlerini güncel tutun.
 * İzin verilen dijital kanalları net bir şekilde tanımlayın ve kontrol edin. Hem onaylanan hem de yasaklanan dijital kanalları tanımlayın. Kuruluşun kayıt yönetimi ve denetim gereksinimlerine uyma becerisini sınırlayan, dijital kanallarda yasaklanmış dijital kanalların veya yasaklanmış özelliklerin kullanımını engelleyin veya kısıtlayın.
 * Dijital iletişimler için eğitim sağlayın. Kayıtlı temsilcilere onaylı dijital kanallara erişim vermeden önce zorunlu eğitim programları uygulayın. Eğitim, bir kuruluşun iş ve kişisel dijital iletişim beklentilerinin netleştirilmesine yardımcı olur ve her kanalın izin verilen özelliklerini uyumlu bir şekilde kullanmada personele yol gösterir.
@@ -153,6 +157,7 @@ Azure AD ve ilgili Microsoft 365 güvenlik hizmetleri, verilere ve uygulamalara 
 * E-posta kimlik avı ve fidye yazılımı saldırılarına karşı proaktif olarak koruma.
 
 #### <a name="azure-ad-identity-protection"></a>Azure AD Kimlik Koruması
+
 Koşullu Erişim kaynakları şüpheli isteklerden korurken, Kimlik Koruması şüpheli kullanıcı hesaplarının sürekli risk algılama ve düzeltmesini sağlayarak daha da ileri gider. Kimlik Koruması, ortamınızdaki şüpheli kullanıcı ve oturum açma davranışı hakkında 24 saat bilgi sahibi olmanıza neden olur. Otomatik yanıtı, güvenliği aşılmış kimliklerin kötüye kullanılmasına proaktif olarak engel olur.
  
 Kimlik Koruması, kuruluşların üç temel görevi yerine getirmesine olanak tanıyan bir araçtır:
@@ -168,6 +173,7 @@ Kimlik Koruması, kuruluşların Microsoft ekosistemi genelinde buluşsal yönte
 ![Beş bilgi çalışanı bir diğerini izlerken sunum yapıyor.](../media/win17-15021-00-n9.jpg)
  
 ## <a name="identify-sensitive-data-and-prevent-data-loss"></a>Hassas verileri tanımlama ve veri kaybını önleme
+
 Microsoft 365, aşağıdakiler dahil olmak üzere güçlü özelliklerin bir birleşimiyle tüm kuruluşların kuruluş içindeki hassas verileri tanımlamasına olanak tanır:
 
 * **Hem** kullanıcı tabanlı sınıflandırma hem de hassas verilerin otomatik sınıflandırması için Microsoft Purview Bilgi Koruması.
@@ -285,6 +291,7 @@ Bilgi engelleri Teams'de konuşmaları ve dosyaları destekler. FINRA düzenleme
 Finansal kurumlar genellikle kuruluşların içinde çalışanların etkinliklerini izlemek ve ilgili menkul kıymet yasalarına uyum sağlamasına yardımcı olmak için bir denetim işlevi kurmak ve sürdürmek için gereklidir. Özellikle, FINRA şu denetim gereksinimlerini belirlemiştir:
  
 * [FINRA Kural 3110 (Denetim),](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) firmaların çalışanlarının ve faaliyette bulunduğu işletme türlerinin faaliyetlerini denetlemek için yazılı denetim prosedürlerine (WSP) sahip olmasını gerektirir. Diğer gereksinimlere ek olarak, yordamlar şunları içermelidir:
+
    - Denetim personelinin denetimi
    - Bir firmanın yatırım bankacılığı, menkul kıymetler işletmesi, iç iletişim ve iç soruşturmalarının gözden geçirilmesi
    - Insider ticareti için işlemlerin gözden geçirilmesi
@@ -298,12 +305,11 @@ Finansal kurumlar genellikle kuruluşların içinde çalışanların etkinlikler
  
 ### <a name="communication-compliance"></a>İletişim uyumluluğu
 
-[İletişim uyumluluğu](/microsoft-365/compliance/communication-compliance) , kuruluşların yetkili gözetmenler tarafından izleme ve gözden geçirme amacıyla çalışan iletişimlerini yakalamak üzere ilkeleri önceden yapılandırmalarına olanak tanır. İletişim uyumluluğundaki ilkeler iç/dış e-posta ve ekleri, Teams sohbeti ve kanal iletişimlerini ve Skype Kurumsal Çevrimiçi sohbet iletişimlerini ve eklerini yakalayabilir. Ayrıca, iletişim uyumluluğu üçüncü taraf hizmetlerden (Bloomberg, Thomson Reuters, LinkedIn, Twitter, Facebook, Box ve Dropbox gibi) iletişim ve verileri alabilir.
-Bir kuruluş içinde yakalanıp gözden geçirilebilen iletişimin kapsamlı yapısı ve ilkelerin yapılandırılabildiği kapsamlı koşullar, finans kurumlarının FINRA Kural 3110'a uymasına yardımcı olmak için iletişim uyumluluk ilkelerine olanak sağlar. İlkeler, kişilerin veya grupların iletişimlerini gözden geçirmek üzere yapılandırılabilir.  Atanan gözetmenler bireysel veya grup düzeyinde atanabilir. Gelen veya giden iletileri, etki alanlarını, bekletme etiketlerini, anahtar sözcükleri veya tümcecikleri, anahtar sözcük sözlüklerini, hassas veri türlerini, ekleri, ileti boyutunu veya ek boyutunu temel alan iletişimleri yakalamak için kapsamlı koşullar yapılandırılabilir. Gözden geçirenler, bayraklı iletişimleri gözden geçirebilecekleri, ilkeleri ihlal etme olasılığı olan iletişimler üzerinde işlem yapabilecekleri ve bayrak eklenmiş öğeleri çözümlendi olarak işaretleyebilecekleri bir pano alır. Ayrıca incelemelerin ve daha önce çözümlenmiş olan öğelerin sonuçlarını da gözden geçirebilirler.
+[Microsoft Purview İletişim Uyumluluğu](/microsoft-365/compliance/communication-compliance), kuruluşunuzdaki uygunsuz iletileri algılamanıza, araştırmanıza ve üzerinde işlem yapmanıza yardımcı olarak iletişim risklerini en aza indirmenize yardımcı olan bir uyumluluk çözümüdür. Önceden tanımlanmış ve özel ilkeler, belirlenen gözden geçirenler tarafından incelenebilmeleri için ilke eşleşmeleri için iç ve dış iletişimleri taramanıza olanak sağlar. Gözden geçirenler kuruluşunuzdaki taranmış e-postayı, Microsoft Teams'i, Yammer'ı veya üçüncü taraf iletişimlerini araştırabilir ve kuruluşunuzun ileti standartlarıyla uyumlu olduklarından emin olmak için uygun eylemleri gerçekleştirebilir.
   
-İletişim uyumluluğu, ilke gözden geçirme etkinliklerinin ilkeye ve gözden geçirene göre denetlenebilmesini sağlayan raporlar sağlar. Raporlar, ilkelerin kuruluşun yazılı denetim ilkeleri tarafından tanımlandığı şekilde çalıştığını doğrulamak için kullanılabilir. Bunlar, gözden geçirme gerektiren ve şirket ilkesiyle uyumlu olmayan iletişimleri tanımlamak için de kullanılabilir. Son olarak, ilkeleri yapılandırma ve iletişimleri gözden geçirmeyle ilgili tüm etkinlikler birleşik Office 365 denetim günlüğünde denetlenir. Sonuç olarak, iletişim uyumluluğu finans kurumlarının FINRA Kural 3120'ye uymasına da yardımcı olur.
+İletişim uyumluluğu, ilke gözden geçirme etkinliklerinin ilkeye ve gözden geçirene göre denetlenebilmesini sağlayan raporlar sağlar. Raporlar, ilkelerin kuruluşun yazılı ilkeleri tarafından tanımlandığı şekilde çalıştığını doğrulamak için kullanılabilir. Bunlar, gözden geçirme gerektiren ve şirket ilkesiyle uyumlu olmayan iletişimleri tanımlamak için de kullanılabilir. Son olarak, ilkeleri yapılandırma ve iletişimleri gözden geçirmeyle ilgili tüm etkinlikler birleşik Office 365 denetim günlüğünde denetlenir. Sonuç olarak, iletişim uyumluluğu finans kurumlarının FINRA Kural 3120'ye uymasına da yardımcı olur.
 
-İletişim uyumluluğu, FINRA kurallarına uymanın yanı sıra kuruluşların diğer yasal gereksinimlere, şirket ilkelerine ve etik standartlara uyum için iletişimleri izlemesine olanak tanır. İletişim uyumluluğu, iletişimleri gözden geçirirken hatalı pozitif sonuçları azaltmaya yardımcı olan yerleşik tehdit, taciz ve küfür sınıflandırıcıları sağlar ve inceleme ve düzeltme işlemi sırasında gözden geçirenlere zaman kazandırır. Ayrıca kuruluşların birleşmeler, devralmalar veya liderlik değişiklikleri gibi hassas değişikliklere uğradıklarında iletişimleri izleyerek riski azaltmalarına da olanak tanır.
+İletişim uyumluluğu, FINRA kurallarına uymanın yanı sıra kuruluşların diğer yasal gereksinimlerden, şirket politikalarından ve etik standartlarından etkilenebilecek iletişimleri algılamasına ve bunlara göre hareket etmesine olanak tanır. İletişim uyumluluğu, iletişimleri gözden geçirirken hatalı pozitif sonuçları azaltmaya yardımcı olan yerleşik tehdit, taciz ve küfür sınıflandırıcıları sağlar ve inceleme ve düzeltme işlemi sırasında gözden geçirenlere zaman kazandırır. Ayrıca kuruluşların şirket birleşmeleri ve devralmalar veya liderlik değişiklikleri gibi hassas kurumsal değişikliklere uğradıklarında iletişimleri algılayarak riski azaltmalarına da olanak tanır.
 
 ![Bilgi çalışanı ekrana odaklanır.](../media/msc16-slalom-004.jpg)
  
@@ -315,11 +321,11 @@ Kuruluşlar için yaygın bir tehdit, veri sızdırma veya bir kuruluştan veri 
 
 Çalışanların doğası gereği her yerden erişilebilen çevrimiçi işbirliği araçlarıyla etkinleştirilmesi kuruluşa risk getirir. Çalışanlar yanlışlıkla veya kötü amaçlı olarak saldırganlara veya rakiplere veri sızdırabilir.  Alternatif olarak, kişisel kullanım için verileri dışarı aktarabilir veya verileri gelecekteki bir işverene götürebilirler. Bu senaryolar, finansal hizmet kurumları için hem güvenlik hem de uyumluluk açısından ciddi riskler sunar. Bu riskleri ortaya çıktığında belirlemek ve bunları hızla azaltmak için hem veri toplamaya yönelik akıllı araçlar hem de yasal, insan kaynakları ve bilgi güvenliği gibi departmanlar arasında işbirliği gerekir.
 
-Microsoft 365 kısa süre önce Microsoft 365 hizmetlerindeki sinyalleri ilişkilendiren ve gizli desenler ve iç risk işaretleri için kullanıcı davranışını analiz etmek için makine öğrenmesi modellerini kullanan bir insider risk yönetimi çözümü başlattı. Bu araç, önceden belirlenmiş iş akışlarına göre servis taleplerini kolayca düzeltebilmeleri için güvenlik operasyonları, dahili araştırmacılar ve İk arasında işbirliğine olanak tanır.  
+[Microsoft Purview İçeriden Risk Yönetimi](/microsoft-365/compliance/insider-risk-management), kuruluşunuzdaki kötü amaçlı ve yanlışlıkla etkinlikleri algılamanıza, araştırmanıza ve eyleme geçirmenize olanak tanıyarak iç riskleri en aza indirmenize yardımcı olan bir uyumluluk çözümüdür. Insider risk ilkeleri, kuruluşunuzda tanımlanması ve algılanması gereken risk türlerini tanımlamanıza olanak sağlar. Örneğin, olaylar üzerinde işlem yapmak ve gerekirse servis taleplerini Microsoft eKeşif'e (Premium) yükseltmek de buna dahildir. Kuruluşunuzdaki risk analistleri, kullanıcıların kuruluşunuzun uyumluluk standartlarıyla uyumlu olduğundan emin olmak için hızlı bir şekilde uygun eylemler gerçekleştirebilir.  
 
-Örneğin, insider risk yönetimi kullanıcının Windows 10 masaüstünden gelen, dosyaları USB sürücüsüne kopyalama veya kişisel e-posta hesabına e-posta gönderme gibi sinyalleri, veri sızdırmayı tanımlamak için Office 365 e-posta, SharePoint Online, Microsoft Teams veya OneDrive İş gibi çevrimiçi hizmetler etkinlikleriyle ilişkilendirebilir Desen. Ayrıca bu etkinlikleri, ortak bir veri sızdırma düzeni olan bir kuruluşta çalışanlarla ilişkilendirebilir. Zaman içinde birden çok etkinliği ve davranışı izleyebilir. Yaygın desenler ortaya çıktığında uyarılar oluşturabilir ve araştırmacıların ilke ihlalini yüksek düzeyde güvenle doğrulamak için önemli etkinliklere odaklanmasına yardımcı olabilir. Insider risk yönetimi, veri gizliliği düzenlemelerini karşılamaya yardımcı olmak için araştırmacıların verilerini anonim hale getirirken, araştırmalarını verimli bir şekilde gerçekleştirmelerine yardımcı olan önemli etkinliklere de göz atabilir. Araştırmacıların önemli etkinlik verilerini İk ve hukuk departmanlarına paketlemesine ve güvenli bir şekilde göndermesine olanak tanır ve düzeltme eylemine yönelik vakaların oluşturulmasına yönelik yaygın yükseltme iş akışlarını takip eder.
+Örneğin, insider risk yönetimi kullanıcının cihazlarından gelen, dosyaları USB sürücüsüne kopyalama veya kişisel e-posta hesabına e-posta gönderme gibi sinyalleri, veri sızdırma desenlerini tanımlamak için çevrimiçi hizmetler Office 365 e-posta, SharePoint Online, Microsoft Teams veya OneDrive İş gibi etkinliklerle ilişkilendirebilir. Ayrıca bu etkinlikleri, ortak bir veri sızdırma düzeni olan bir kuruluşta çalışanlarla ilişkilendirebilir. Zaman içinde riskli olabilecek birden çok etkinliği ve davranışı algılayabilir. Yaygın desenler ortaya çıktığında uyarılar oluşturabilir ve araştırmacıların ilke ihlalini yüksek düzeyde güvenle doğrulamak için önemli etkinliklere odaklanmasına yardımcı olabilir. Insider risk yönetimi, veri gizliliği düzenlemelerini karşılamaya yardımcı olmak için araştırmacıların verilerini anonim hale getirirken, araştırmalarını verimli bir şekilde gerçekleştirmelerine yardımcı olan önemli etkinliklere de göz atabilir. Araştırmacıların önemli etkinlik verilerini İk ve hukuk departmanlarına paketlemesine ve güvenli bir şekilde göndermesine olanak tanır ve düzeltme eylemine yönelik vakaların oluşturulmasına yönelik yaygın yükseltme iş akışlarını takip eder.
 
-Insider risk yönetimi, kuruluşların iç riskleri izleme ve araştırma özelliklerini önemli ölçüde artırırken, kuruluşların veri gizliliği düzenlemelerini karşılamasına ve vakalar daha üst düzey eylem gerektirdiğinde yerleşik yükseltme yollarını izlemesine olanak sağlar. Insider risk yönetimi hakkında daha fazla bilgi için bkz. [Insider risk yönetimi hakkında bilgi edinin](/microsoft-365/compliance/insider-risk-management).
+Insider risk yönetimi, kuruluşların iç riskleri algılama ve araştırma özelliklerini önemli ölçüde artırırken, kuruluşların veri gizliliği düzenlemelerini karşılamasına ve vakalar daha üst düzey eylem gerektirdiğinde yerleşik yükseltme yollarını izlemesine izin verir.
 
 ![Bir ekranı görüntülerken bir bölme türündeki bir çağrı merkezi çalışanı.](../media/clo17-call-center-006.jpg)
 

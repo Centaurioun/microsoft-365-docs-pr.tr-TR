@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Bir kullanıcıya DLP ilkesiyle çakişen içerikle çalıştığını bildirmek için veri kaybı önleme (DLP) ilkesine ilke ipucu eklemeyi öğrenin.
-ms.openlocfilehash: 19ec7b5e359b32cc38310c51c6674968aecc666f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6a02cd488b3d7a0341c042c24f58329353b94bb7
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630951"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285318"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>DLP ilkeleri için e-posta bildirimleri gönderme ve ilke ipuçlarını gösterme
 
@@ -94,11 +94,11 @@ DLP ilkesindeki her kural için şunları yapabilirsiniz:
 
 > [!NOTE]
 >
-> - E-posta bildirimleri gruplara veya dağıtım listelerine değil yalnızca tek tek alıcılara gönderilebilir.
+> - Email bildirimleri gruplara veya dağıtım listelerine değil yalnızca tek tek alıcılara gönderilebilir.
 > - Yalnızca yeni içerik bir e-posta bildirimi tetikler. Mevcut içeriğin düzenlenmesi ilke ipuçlarını tetikler, ancak e-posta bildirimlerini tetiklemez.
 > - Dış gönderenler bildirim almaz. Bildirimler yalnızca iç kullanıcılara gider.
 
-![E-posta bildirim seçenekleri.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
+![bildirim seçeneklerini Email.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 
 ### <a name="default-email-notification"></a>Varsayılan e-posta bildirimi
 
@@ -161,18 +161,18 @@ Kuralı geçersiz kılmak için ilke ipucu kullanma hakkında anlamanız gereken
 
 - En kısıtlayıcı kuraldaki ilke ipuçları kişilerin kuralı geçersiz kılmasına izin verirse, bu kuralın geçersiz kılınmış olması, içeriğin eşleştirilen diğer kuralları da geçersiz kılar.
 
-- NotifyAllowOverride eylemi, Justification veya WithJustification veya FlasePositives ile ayarlandıysa, BlockAccess'in true olarak ayarlandığından ve BlockAccessScope'un uygun değere sahip olduğundan emin olun. Aksi takdirde ilke ipucu ortaya çıkar, ancak kullanıcı e-postayı gerekçeyle geçersiz kılma seçeneği bulamaz.
+- NotifyAllowOverride eylemi, Justification, WithJustification veya FalsePositives ile ayarlandıysa, BlockAccess'in true olarak ayarlandığından ve BlockAccessScope'un uygun değere sahip olduğundan emin olun. Aksi takdirde ilke ipucu ortaya çıkar, ancak kullanıcı e-postayı gerekçeyle geçersiz kılma seçeneği bulamaz.
 
 #### <a name="availability-of-override"></a>Geçersiz Kılma Kullanılabilirliği
 
 |Bildirim Kuralı |Bildir/Engelle eylemi  |Geçersiz kılma kullanılabilir  |Gerekçe gerektir  |
 |---------|---------|---------|---------|
-|Yalnızca bildir     |Bildirmek         |Hayır         |Hayır         |
-|Notify + AllowOverride     |Bildirmek         |Hayır         |Hayır         |
-|Notify + AllowOverride + False pozitif     |Bildirmek         |Hayır         |Hayır         |
-|Notify + AllowOverride + With justification     |Bildirmek         |Hayır         |Hayır         |
-|Notify + AllowOverride + False positive + Justification olmadan    |Bildirmek         |Hayır         |Hayır         |
-|Notify + AllowOverride + False positive + With justification     |Bildirmek         |Hayır         |Hayır         |
+|Yalnızca bildir     |Bildirme         |Hayır         |Hayır         |
+|Notify + AllowOverride     |Bildirme         |Hayır         |Hayır         |
+|Notify + AllowOverride + False pozitif     |Bildirme         |Hayır         |Hayır         |
+|Notify + AllowOverride + With justification     |Bildirme         |Hayır         |Hayır         |
+|Notify + AllowOverride + False positive + Justification olmadan    |Bildirme         |Hayır         |Hayır         |
+|Notify + AllowOverride + False positive + With justification     |Bildirme         |Hayır         |Hayır         |
 |Bildirim + Engelle     |Engelle         |Hayır         |Hayır         |
 |Notify + Block + AllowOverride     |Engelle         |Evet         |Hayır         |
 |Notify + Block + AllowOverride + False pozitif     |Engelle         |Evet         |Hayır         |

@@ -11,17 +11,18 @@ ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
 localization_priority: Normal
+ms.date: 08/08/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 694e95453e8f5b022b7ec50bd2c9b027d6b0cd07
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 969a3d3f6583bef5ce60d33f00d4b2cccb56b935
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281517"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285109"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da cihaz durumu ve uyumluluk raporu
 
@@ -169,7 +170,10 @@ Açılır listede: Cihazın adına tıkladığınızda, ayrıntılı raporlara e
 
 Raporu Excel elektronik tablosuna aktarmak için _Microsoft Defender Virüsten Koruma ayrıntıları_ açılır öğesindeki **Dışarı Aktar** düğmesini kullanabilirsiniz. Dışarı aktarılan raporlar, ayrıntılar raporuna giriş noktanızı ve hangi filtreleri veya özelleştirilmiş sütunları ayarladığınızı temel alarak bilgileri yakalar.
 
-API kullanarak dışarı aktarma hakkında ek bilgi için bkz [. Cihaz virüsten koruma durumu ayrıntılarını API yöntemleri ve özellikleri dışarı aktarma ve](device-health-api-methods-properties.md)  [device-health-export-antivirus-health-report-api.md](device-health-api-methods-properties.md)
+API kullanarak dışarı aktarma hakkında ek bilgi için aşağıdaki makalelere bakın:
+
+- [Cihaz virüsten koruma sistem durumu raporunu dışarı aktarma](device-health-export-antivirus-health-report-api.md)
+- [Cihaz virüsten koruma sistem durumu ayrıntılarını API yöntemleri ve özelliklerini dışarı aktarma](device-health-api-methods-properties.md)
 
 #### <a name="microsoft-defender-antivirus-version-and-update-cards-functionality"></a>Microsoft Defender Virüsten Koruma sürümü ve güncelleştirme kartları işlevselliği
 

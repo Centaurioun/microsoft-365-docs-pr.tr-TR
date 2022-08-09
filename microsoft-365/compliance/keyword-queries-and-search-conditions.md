@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365'teki eBulma arama araçlarını kullanarak arama yapabileceğiniz e-posta ve belge özellikleri hakkında bilgi edinin.
-ms.openlocfilehash: 4de131ea9dc8b1f7df486dd5c6ead7eee677869e
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 75fc048db9ebe0dfb16f772bd899306ce619096a
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714563"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285252"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>eBulma için anahtar sözcük sorguları ve arama koşulları
 
@@ -55,8 +55,7 @@ Aşağıdaki tabloda, uyumluluk portalındaki eBulma arama araçları kullanıla
 
 |Özellik|Özellik açıklaması|Örnekler|Örnekler tarafından döndürülen arama sonuçları|
 |---|---|---|---|
-|AttachmentNames|E-posta iletisine eklenen dosyaların adları.|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*` <br/> `attachmentnames:.pptx`|annualreport.ppt adlı ekli bir dosyası olan iletiler. İkinci örnekte, joker karakter ( * ) kullanıldığında, ekin dosya adında "yıllık" sözcüğü bulunan iletiler döndürülüyor. Üçüncü örnek, pptx dosya uzantısına sahip tüm ekleri döndürür.|
-|Gizli|E-posta iletisinin Gizli alanı. <sup>1</sup>|`bcc:pilarp@contoso.com` <p> `bcc:pilarp` <p> `bcc:"Pilar Pinilla"`|Tüm örnekler Gizli alanına Pilar Pinilla eklenmiş iletileri döndürür.<br>([Bkz. Alıcı Genişletmesi](keyword-queries-and-search-conditions.md#recipient-expansion))|
+|AttachmentNames|E-posta iletisine eklenen dosyaların adları.|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*`|annualreport.ppt adlı ekli bir dosyası olan iletiler. İkinci örnekte, joker karakter ( * ) kullanıldığında, ekin dosya adında "yıllık" sözcüğü bulunan iletiler döndürülüyor. <sup>1</sup>|`bcc:pilarp@contoso.com` <p> `bcc:pilarp` <p> `bcc:"Pilar Pinilla"`|Tüm örnekler Gizli alanına Pilar Pinilla eklenmiş iletileri döndürür.<br>([Bkz. Alıcı Genişletmesi](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Kategori|Aranacak kategoriler. Kategoriler, kullanıcılar tarafından Outlook veya Web üzerinde Outlook (eski adıyla Outlook Web App) kullanılarak tanımlanabilir. Olası değerler: <ul><li>Mavi<li>Yeşil<li>Turuncu<li>Mor<li>Kırmızı<li>Sarı</li></ul>|`category:"Red Category"`|Kaynak posta kutularında kırmızı kategoriye atanmış iletiler.|
 |Cc|E-posta iletisinin Bilgi alanı. <sup>1</sup>|`cc:pilarp@contoso.com` <p> `cc:"Pilar Pinilla"`|Her iki örnekte de Bilgi alanında Pilar Pinilla'nın belirtildiği iletiler.<br>([Bkz. Alıcı Genişletmesi](keyword-queries-and-search-conditions.md#recipient-expansion))|
 |Folderid|Belirli bir posta kutusu klasörünün klasör kimliği (GUID). Bu özelliği kullanırsanız, belirtilen klasörün bulunduğu posta kutusunda arama yapmaya özen gösterin. Yalnızca belirtilen klasör aranacak. Klasördeki alt klasörler aranmayacak. Alt klasörleri aramak için, aramak istediğiniz alt klasörün Folderid özelliğini kullanmanız gerekir. <p> Folderid özelliğini arama ve belirli bir posta kutusunun klasör kimliklerini almak için betik kullanma hakkında daha fazla bilgi için bkz. [Hedeflenen koleksiyonlar için İçerik aramasını kullanma](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000` <p> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|İlk örnek, belirtilen posta kutusu klasöründeki tüm öğeleri döndürür. İkinci örnek, belirtilen posta kutusu klasöründeki garthf@contoso.com tarafından gönderilen veya alınan tüm öğeleri döndürür.|
@@ -83,7 +82,7 @@ Alıcı özelliklerinden herhangi birinde arama yaparken (Kimden, Kime, Bilgi, G
 
 Alıcının genişlemesini önlemek için e-posta adresinin sonuna joker karakter (yıldız) ekleyin ve azaltılmış bir etki alanı adı kullanın; örneğin, `participants:"ronnie@contoso*"` e-posta adresini çift tırnak işaretiyle çevrelemeye özen gösterin.
 
-Ancak, arama sorgusunda alıcının genişlemesini engellemenin, arama sonuçlarında ilgili öğelerin döndürülmemesine neden olabileceğini unutmayın. Exchange'deki e-posta iletileri, alıcı alanlarında farklı metin biçimleriyle kaydedilebilir. Alıcı genişletmesi, farklı metin biçimleri içerebilecek iletiler döndürerek bu gerçeğin azaltılmasına yardımcı olmak için tasarlanmıştır. Bu nedenle, alıcının genişlemesini önlemek, arama sorgusunun araştırmanızla ilgili olabilecek tüm öğeleri döndürmemesine neden olabilir.
+Ancak, arama sorgusunda alıcının genişlemesini engellemenin, arama sonuçlarında ilgili öğelerin döndürülmemesine neden olabileceğini unutmayın. Exchange'deki Email iletiler, alıcı alanlarında farklı metin biçimleriyle kaydedilebilir. Alıcı genişletmesi, farklı metin biçimleri içerebilecek iletiler döndürerek bu gerçeğin azaltılmasına yardımcı olmak için tasarlanmıştır. Bu nedenle, alıcının genişlemesini önlemek, arama sorgusunun araştırmanızla ilgili olabilecek tüm öğeleri döndürmemesine neden olabilir.
 
 > [!NOTE]
 > Alıcı genişletmesi nedeniyle arama sorgusu tarafından döndürülen öğeleri gözden geçirmeniz veya azaltmanız gerekiyorsa eBulma (Premium) kullanmayı göz önünde bulundurun. İletileri arayabilir (alıcı genişletme özelliğinden yararlanarak), bunları bir gözden geçirme kümesine ekleyebilir ve ardından sonuçları gözden geçirmek veya daraltmak için gözden geçirme kümesi sorgularını veya filtrelerini kullanabilirsiniz. Daha fazla bilgi için bkz. [Servis talebi için veri toplama](collecting-data-for-ediscovery.md) ve [Gözden geçirme kümesindeki verileri sorgulama](review-set-search.md).
@@ -168,12 +167,12 @@ For more information about creating queries using the `SensitiveType` property, 
 
 |Işleç|Kullanım|Açıklama|
 |---|---|---|
-|VE|anahtar sözcük1 VE anahtar sözcüğü2|Belirtilen tüm anahtar sözcükleri veya  `property:value` ifadeleri içeren öğeleri döndürür. Örneğin,  `from:"Ann Beebe" AND subject:northwind` Ann Beebe tarafından gönderilen ve konu satırında northwind sözcüğünü içeren tüm iletileri döndürür. <sup>2</sup>|
+|Ve|anahtar sözcük1 VE anahtar sözcüğü2|Belirtilen tüm anahtar sözcükleri veya  `property:value` ifadeleri içeren öğeleri döndürür. Örneğin,  `from:"Ann Beebe" AND subject:northwind` Ann Beebe tarafından gönderilen ve konu satırında northwind sözcüğünü içeren tüm iletileri döndürür. <sup>2</sup>|
 |+|anahtar sözcük1 + anahtar sözcük2 + anahtar sözcük3|veya `keyword3` *içeren*`keyword2` *ve* içeren `keyword1`öğeleri döndürür.   Bu nedenle, bu örnek sorgusuna  `(keyword2 OR keyword3) AND keyword1`eşdeğerdir. <p> Sorgu  `keyword1 + keyword2` (simgeden **+** sonra boşlukla), **AND** işlecini kullanmakla aynı değildir. Bu sorgu ile eşdeğerdir  `"keyword1 + keyword2"` ve tam aşamasına  `"keyword1 + keyword2"`sahip öğeleri döndürür.|
 |VEYA|anahtar sözcük1 VEYA anahtar sözcük2|Belirtilen anahtar sözcüklerden veya ifadelerden birini veya  `property:value` daha fazlasını içeren öğeleri döndürür. <sup>2</sup>|
-|DEĞİL|anahtar sözcük1 NOT anahtar sözcüğü2 <p> NOT from:"Ann Beebe" <p> NOT kind:im|Bir anahtar sözcük veya  `property:value` ifade tarafından belirtilen öğeleri dışlar. İkinci örnekte Ann Beebe tarafından gönderilen iletiler dışlanır. Üçüncü örnek, Konuşma Geçmişi posta kutusu klasörüne kaydedilen Skype Kurumsal konuşmalar gibi anlık ileti konuşmalarını dışlar. <sup>2</sup>|
+|Değil|anahtar sözcük1 NOT anahtar sözcüğü2 <p> NOT from:"Ann Beebe" <p> NOT kind:im|Bir anahtar sözcük veya  `property:value` ifade tarafından belirtilen öğeleri dışlar. İkinci örnekte Ann Beebe tarafından gönderilen iletiler dışlanır. Üçüncü örnek, Konuşma Geçmişi posta kutusu klasörüne kaydedilen Skype Kurumsal konuşmalar gibi anlık ileti konuşmalarını dışlar. <sup>2</sup>|
 |-|anahtar sözcük1 -anahtar sözcük2|**NOT** işleciyle aynı. Bu nedenle, bu sorgu içeren  `keyword1` öğeleri döndürür ve içeren  `keyword2`öğeleri hariç tutar.|
-|YAKIN -INDAKİ|keyword1 NEAR(n) anahtar sözcüğü2|Birbirine yakın sözcükler içeren öğeleri döndürür; burada n sözcük sayısı birbirinden ayrılır. Örneğin, `best NEAR(5) worst` "en kötü" sözcüğünün "en iyi" sözcüğünün beş sözcüğü içinde olduğu herhangi bir öğeyi döndürür. Sayı belirtilmezse, varsayılan uzaklık sekiz sözcük olur. <sup>2</sup>|
+|Yakın -ındaki|keyword1 NEAR(n) anahtar sözcüğü2|Birbirine yakın sözcükler içeren öğeleri döndürür; burada n sözcük sayısı birbirinden ayrılır. Örneğin, `best NEAR(5) worst` "en kötü" sözcüğünün "en iyi" sözcüğünün beş sözcüğü içinde olduğu herhangi bir öğeyi döndürür. Sayı belirtilmezse, varsayılan uzaklık sekiz sözcük olur. <sup>2</sup>|
 |:|property:value|İki nokta üst üste (:) söz diziminde  `property:value` , aranmakta olan özelliğin değerinin belirtilen değeri içerdiğini belirtir. Örneğin,  `recipients:garthf@contoso.com` garthf@contoso.com gönderilen tüm iletileri döndürür.|
 |=|property=value|**ile aynıdır:** işleci.|
 |\<|özellik\<değeri|Aranmakta olan özelliğin belirtilen değerden küçük olduğunu belirtir. <sup>1</sup>|

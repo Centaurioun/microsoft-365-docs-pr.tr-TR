@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/08/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Siber saldırıları önlemek için kullanabileceğiniz çok faktörlü kimlik doğrulaması gibi siber güvenlik araçları sağlayan Microsoft 365 İş Ekstra için güvenliğe genel bakış.
-ms.openlocfilehash: a51a49ff57458734a883ac8fa34142bd1c4bf2d3
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: a6302f38b70ed634237a83751d0026d2ef160695
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276503"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285175"
 ---
 # <a name="bump-up-security"></a>Güvenliği artırın
 
@@ -36,7 +36,7 @@ Dikkatli olun - sistemin güvenliği ve güvenilirliği size dayanır.
 
 Hedefleriniz şunlardır:
 
-- [Güvenlik varsayılanlarını](m365bp-conditional-access.md) (MFA) açın.
+- [Güvenlik varsayılanlarını (MFA) açın](m365bp-conditional-access.md).
 - [Yönetici hesaplarınızı koruyun](m365bp-protect-admin-accounts.md).
 - [Kötü amaçlı yazılımlara ve diğer tehditlere karşı koruma sağlayın](m365bp-increase-protection.md).
 

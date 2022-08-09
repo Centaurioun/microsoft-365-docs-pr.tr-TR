@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 İş Ekstra için tehdit korumasını artırma
+title: Microsoft 365 İş Ekstra ile kötü amaçlı yazılımlara ve diğer tehditlere karşı koruma
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/08/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,14 +19,14 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra'de koruma düzeyini artırma konusunda yardım alın
-ms.openlocfilehash: 01ea965f8b290b57c3df60e21c88b403b27b5cfd
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: e93c85348788fae6a191f2f52aebe86997468121
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67274715"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285274"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra için tehdit korumasını artırma
+# <a name="protect-against-malware-and-other-cyberthreats-with-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra ile kötü amaçlı yazılımlara ve diğer siber tehditlere karşı koruma
 
 Bu hedefte, Microsoft 365 İş Ekstra ile tehdit korumanızı artırırsınız. İşletmenizi kimlik avına, kötü amaçlı yazılımlara ve diğer tehditlere karşı korumak çok önemlidir. Bu makale aşağıdakiler hakkında bilgi içerir:
 
@@ -34,7 +34,7 @@ Bu hedefte, Microsoft 365 İş Ekstra ile tehdit korumanızı artırırsınız. 
 - İş gereksinimlerinize uygun olarak tanımlayabileceğiniz [özel güvenlik ilkeleri](#create-custom-security-policies).
 - [SharePoint ve OneDrive dosya ve klasörleri için paylaşım ayarlarınızı ayarlama](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - Belirli dosyaları ve bunların nasıl kullanıldığını izleyen [uyarı ilkeleri](#review-your-alert-policies).
-- [Sonraki hedef](#next-objective) (yönetilmeyen cihazların güvenliğini sağlama)
+- [Sonraki hedefleriniz](#next-objectives).
 
 ## <a name="review-and-apply-preset-security-policies"></a>Önceden ayarlanmış güvenlik ilkelerini gözden geçirme ve uygulama
 
@@ -207,6 +207,11 @@ Kuruluşunuzdaki kişilerin takvimlerini paylaşmasını engelleyebilirsiniz. Pa
 
 Kullanıcılarınızın takvimlerini paylaşmasına izin veriliyorsa, Web üzerinde Outlook'dan nasıl paylaşacaklarına [ilişkin bu yönergelere](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) bakın.
 
-## <a name="next-objective"></a>Sonraki hedef
+## <a name="next-objectives"></a>Sonraki hedefler
 
-Şimdi [**yönetilmeyen (KCG) cihazları ayarlayalım**](m365bp-devices-overview.md).
+Devam et:
+
+- [Yönetilmeyen (KCG) cihazları ayarlama](m365bp-devices-overview.md)
+- [Tüm e-postaları koruma](m365bp-protect-email-overview.md)
+- [Güvenli bir şekilde işbirliği yapma ve paylaşma](m365bp-collaborate-share-securely.md)
+- [Yönetilen cihazları ayarlama ve güvenliğini sağlama](m365bp-protect-devices.md)
