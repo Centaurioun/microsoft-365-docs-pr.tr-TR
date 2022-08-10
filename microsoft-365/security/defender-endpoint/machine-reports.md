@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 969a3d3f6583bef5ce60d33f00d4b2cccb56b935
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
+ms.openlocfilehash: 00a43da0c6b817c6e53ef93ae27fa8e59d7c5341
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285109"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300465"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da cihaz durumu ve uyumluluk raporu
 
@@ -67,9 +67,9 @@ Cihaz durumu ve uyumluluk panosu iki sekmede yapılandırılmıştır:
 Algılayıcı durumu ve işletim sistemi kartları algılama algılayıcısı durumu, güncel ve güncel olmayan işletim sistemleri ve Windows 10 sürümleri içeren genel işletim sistemi durumu hakkında rapor sunar.
 
 > [!div class="mx-imgBorder"]
-> ![Algılayıcı sistem durumu ve İşletim sistemi bilgilerini gösterir](images/device-health-sensor-health-os-tab.png)
+> ![Algılayıcı sistem durumu ve İşletim sistemi bilgilerini gösterir. Virüsten koruma altyapısı, virüsten koruma güvenlik bilgileri, virüsten koruma platformu ayrıntıları içeren Microsoft Defender Virüsten Koruma sistem durumu sekmesi. ](images/device-health-sensor-health-os-tab.png)
 
-**Algılayıcı sistem durumu** sekmesindeki üç kartın her birinde _Geçerli durum_ ve _cihaz eğilimleri_ olmak üzere iki raporlama bölümü vardır ve bunlar grafik olarak sunulur:
+**Algılayıcı sistem durumu** sekmesindeki üç kartın her birinde _geçerli durum_ ve _cihaz eğilimleri_ şeklinde grafik olarak sunulan iki raporlama bölümü vardır:
 
 #### <a name="current-state-graph"></a>Geçerli durum grafiği
 
@@ -294,7 +294,7 @@ Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini yönetme hakk
 ### <a name="see-also"></a>Ayrıca bkz.
 
 - [Cihaz virüsten koruma sistem durumu ayrıntılarını API yöntemleri ve özelliklerini dışarı aktarma](device-health-api-methods-properties.md)
-- [device-health-export-antivirus-health-report-api.md](device-health-api-methods-properties.md)
+- [Device-health-export-antivirus-health-report-api.md](device-health-api-methods-properties.md)
 - [Tehdit koruma raporu](threat-protection-reports.md)
 
 ## <a name="publicly-released-device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Genel kullanıma sunuldu: Uç Nokta için Microsoft Defender'de cihaz durumu ve uyumluluk raporu

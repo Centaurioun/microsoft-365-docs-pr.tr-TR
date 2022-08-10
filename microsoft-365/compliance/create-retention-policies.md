@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kullanıcıların e-posta, belgeler ve konuşmalarla oluşturduğu içeriğin denetimini verimli bir şekilde korumak için bekletme ilkesi kullanın. İstediğinizi koruyun ve istemediğinizden kurtulun.
-ms.openlocfilehash: 39405a14fcde6ff41821d3b30c933f5ac226019e
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 127d32073e05da84449e5b80eb6a507b94f9f988
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037742"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300968"
 ---
 # <a name="create-and-configure-retention-policies"></a>Bekletme ilkeleri oluşturma ve yapılandırma
 
@@ -89,7 +89,7 @@ Birden fazla bekletme ilkeniz varsa ve bekletme etiketlerini de kullandığını
     - **Statik'i** seçtiyseniz: **İlkenin uygulanacağı konumları seçin** sayfasında Teams için bir veya daha fazla konum seçin:
         - **Teams kanal iletisi**: Standart ve paylaşılan kanal sohbetlerinden, standart ve paylaşılan kanal toplantılarından gelen iletiler, ancak kendi ilke konumlarına sahip [özel kanallardan](/microsoftteams/private-channels) değil.
         - **Teams sohbetleri**: Özel 1:1 sohbetlerinden, grup sohbetlerinden ve toplantı sohbetlerinden gelen iletiler.
-        - **Teams özel kanal iletileri**: Özel kanal sohbetlerinden ve özel kanal toplantılarından gelen iletiler.
+        - **Teams özel kanal iletileri**: Özel kanal sohbetlerinden ve özel kanal toplantılarından gelen iletiler. Bu seçeneği belirlerseniz, aynı bekletme ilkesindeki diğer Teams konumlarını seçemezsiniz.
         
        Varsayılan olarak [, tüm ekipler ve tüm kullanıcılar seçilir](retention-settings.md#a-policy-that-applies-to-entire-locations), ancak [**Seç** ve **Dışla** seçeneklerini](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions) belirleyerek bunu iyileştirebilirsiniz.
 

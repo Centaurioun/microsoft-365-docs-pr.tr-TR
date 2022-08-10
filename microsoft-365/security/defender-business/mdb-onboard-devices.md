@@ -10,19 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 07/28/2022
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: a692a82af0329c991ca153323552fd2a16c16547
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: e7d884e55aa3f55106097354ce3a8acdd3dc5b17
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071469"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300770"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Cihazları İş için Microsoft Defender ekleme
 
@@ -81,10 +81,10 @@ Aboneliğiniz Intune içeriyorsa, Windows istemcilerini ve diğer cihazları Mic
 
 Cihazları Intune kaydetmek için kullanılabilecek çeşitli yöntemler vardır. Aşağıdaki yöntemlerden birini kullanmanızı öneririz:
 
-- Şirkete ait veya şirket tarafından yönetilen cihazlar için [Windows otomatik kaydını etkinleştirme](/mem/intune/enrollment/windows-enroll)
-- [Kullanıcılardan kendi Windows 10/11 cihazlarını Intune kaydetmelerini isteyin](/mem/intune/user-help/enroll-windows-10-device)
+- [Şirkete ait veya şirket tarafından yönetilen cihazlar için Windows otomatik kaydını etkinleştirme](#enable-automatic-enrollment-for-windows-10-and-11)
+- [Kullanıcılardan kendi Windows 10/11 cihazlarını Intune kaydetmelerini isteyin](#ask-users-enroll-their-own-windows-10-and-11-devices)
 
-#### <a name="to-enable-automatic-enrollment-for-windows-10-and-11"></a>Windows 10 ve 11 için otomatik kaydı etkinleştirmek için
+#### <a name="enable-automatic-enrollment-for-windows-10-and-11"></a>Windows 10 ve 11 için otomatik kaydı etkinleştirme
 
 Otomatik kaydı ayarladığınızda, kullanıcılar iş hesabını cihaza ekler. Arka planda cihaz Azure Active Directory'ye (Azure AD) kaydolup katılır ve Intune kaydedilir.
 
@@ -110,7 +110,7 @@ Otomatik kaydı ayarladığınızda, kullanıcılar iş hesabını cihaza ekler.
 > [!TIP]
 > Daha fazla bilgi için bkz. [Windows otomatik kaydını etkinleştirme](/mem/intune/enrollment/windows-enroll).
 
-#### <a name="to-have-users-enroll-their-own-windows-10-and-11-devices"></a>Kullanıcıların kendi Windows 10 ve 11 cihazlarını kaydetmesini sağlamak için
+#### <a name="ask-users-enroll-their-own-windows-10-and-11-devices"></a>Kullanıcılardan kendi Windows 10 ve 11 cihazlarını kaydetmelerini isteyin
 
 1. Kaydın nasıl çalıştığını görmek için aşağıdaki videoyu izleyin:<br/><br/>
 

@@ -10,18 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: e6489fa45e85c8c9561a29bfc7e47615a5c0ea33
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 931dfb257902e17968df2621b5b8c374f4691a25
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969737"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300792"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>İş için Microsoft Defender ayarlama ve yapılandırma
 
@@ -43,10 +44,10 @@ Aşağıdaki diyagramda, İş için Defender için genel kurulum ve yapılandır
 | Adım  | Makale | Açıklama  |
 |---------|---------|--------|
 | 1 | [Gereksinimleri gözden geçirin](mdb-requirements.md) | İş için Defender için desteklenen işletim sistemleri de dahil olmak üzere gereksinimleri gözden geçirin. Bkz. [İş için Defender gereksinimleri](mdb-requirements.md). |
-| 2 | [Rol ve izin atama](mdb-roles-permissions.md)     | Güvenlik ekibinizdeki kişilerin algılanan tehditleri & düzeltme eylemlerini gözden geçirme, & düzenleme ilkelerini görüntüleme, cihazları ekleme ve raporları kullanma gibi görevleri gerçekleştirmek için izinlere ihtiyacı vardır. Bu izinleri belirli roller aracılığıyla vekleyebilirsiniz. Bkz [. Rol ve izin atama](mdb-roles-permissions.md).        |
+| 2 | [Rol ve izin atama](mdb-roles-permissions.md)     | Güvenlik ekibinizdeki Kişiler algılanan tehditleri & düzeltme eylemlerini gözden geçirme, & düzenleme ilkelerini görüntüleme, cihazları ekleme ve raporları kullanma gibi görevleri gerçekleştirmek için izinlere ihtiyaç duyar. Bu izinleri belirli roller aracılığıyla vekleyebilirsiniz. Bkz [. Rol ve izin atama](mdb-roles-permissions.md).        |
 | 3 | [E-posta bildirimlerini ayarlama](mdb-email-notifications.md) | Uyarılar tetiklendiğinde veya yeni güvenlik açıkları bulunduğunda kimlerin e-posta bildirimleri alacağını belirtebilirsiniz. Bkz. [E-posta bildirimlerini ayarlama](mdb-email-notifications.md).| 
-| 4 | [Cihazları ekleme](mdb-onboard-devices.md)     | İş için Defender, şirketinizin cihazlarını eklemek için çeşitli seçenekler arasından seçim yapabileceğiniz şekilde ayarlanır. Bkz [. Cihazları İş için Defender'a ekleme](mdb-onboard-devices.md).         |
-| 5 | [Güvenlik ayarlarınızı ve ilkelerinizi yapılandırma](mdb-configure-security-settings.md) | İş için Defender'daki [basitleştirilmiş yapılandırma işlemi](mdb-simplified-configuration.md) veya Microsoft Endpoint Manager yönetim merkezi gibi güvenlik ayarlarınızı ve ilkelerinizi yapılandırmak için çeşitli seçenekler arasından seçim yapabilirsiniz. Bkz [. Güvenlik ayarlarınızı ve ilkelerinizi yapılandırma](mdb-configure-security-settings.md). |
+| 4 | [Cihazları ekleme](mdb-onboard-devices.md)     | şirketinizin cihazlarını eklemek için indirilebilir betik kullanma veya cihazları Microsoft Intune kaydetme gibi çeşitli seçenekler arasından seçim yapabilirsiniz. Bkz [. Cihazları İş için Defender'a ekleme](mdb-onboard-devices.md).         |
+| 5 | [Güvenlik ayarlarınızı ve ilkelerinizi yapılandırma](mdb-configure-security-settings.md) | İş için Defender'daki [basitleştirilmiş yapılandırma işlemi](mdb-simplified-configuration.md) veya Microsoft Intune gibi güvenlik ayarlarınızı ve ilkelerinizi yapılandırmak için çeşitli seçenekler arasından seçim yapabilirsiniz. Bkz [. Güvenlik ayarlarınızı ve ilkelerinizi yapılandırma](mdb-configure-security-settings.md). |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

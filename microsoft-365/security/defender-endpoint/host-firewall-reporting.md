@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 4903a5f5560b6997dbca32e2f7183515868f51a5
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 0d541fe3d129f1533c6642a0eb34547245faa489
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106765"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67301320"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender’da güvenlik duvarı raporlama oturumu düzenleyin
 
@@ -30,11 +30,13 @@ ms.locfileid: "67106765"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Genel yönetici veya güvenlik yöneticisiyseniz artık güvenlik duvarı raporlamasını [Microsoft 365 Defender portalında](https://security.microsoft.com) barındırabilirsiniz. Bu özellik Windows 10, Windows 11, Windows Server 2019 ve Windows Server 2022 güvenlik duvarı raporlarını merkezi bir konumdan görüntülemenizi sağlar.
+Genel yönetici veya güvenlik yöneticisiyseniz artık güvenlik duvarı raporlamasını [Microsoft 365 Defender portalında](https://security.microsoft.com) barındırabilirsiniz. Bu özellik, Windows güvenlik duvarı raporlamasını merkezi bir konumdan görüntülemenizi sağlar.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
-- Windows 10 veya Windows 11 ya da Windows Server 2019 ya da Windows Server 2022 çalıştırıyor olmanız gerekir.
+- R2 veya sonraki Windows Server 2012 Windows 10 veya üzerini çalıştırıyor olmanız gerekir.
+     > [!NOTE]
+     > Windows2012 R2 ve Windows Server 2016'nin Güvenlik Duvarı raporlarında görünmesi için bu cihazların modern birleşik çözüm paketi kullanılarak eklenmesi gerekir. Daha fazla bilgi için bkz. [Windows Server 2012 R2 ve 2016 için modern birleşik çözümde yeni işlevler](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 - Cihazları Uç Nokta için Microsoft Defender hizmetine eklemek için [buraya](onboard-configure.md) bakın.
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalın</a> verileri almaya başlaması için Gelişmiş Güvenlik özellikli Windows Defender Güvenlik Duvarı için **Denetim Olaylarını** etkinleştirmeniz gerekir:
   - [Denetim Filtreleme Platformu Paket Bırakma](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/08/2022
+ms.date: 08/09/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra'de koruma düzeyini artırma konusunda yardım alın
-ms.openlocfilehash: e93c85348788fae6a191f2f52aebe86997468121
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
+ms.openlocfilehash: 361ddc713a0616cd595ed2794d02db8c38707477
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285274"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300661"
 ---
 # <a name="protect-against-malware-and-other-cyberthreats-with-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra ile kötü amaçlı yazılımlara ve diğer siber tehditlere karşı koruma
 
@@ -174,7 +174,7 @@ Aşağıdaki görüntüde, Microsoft 365 İş Ekstra dahil edilen bazı varsayı
 
 ### <a name="how-to-view-alerts"></a>Uyarıları görüntüleme
 
-Belirli bir uyarıya bağlı olarak, uyarılarınızı Microsoft 365 Defender portalında veya Microsoft Purview uyumluluk portalı görüntüleyebilirsiniz.
+Uyarılarınızı Microsoft 365 Defender portalında veya Microsoft Purview uyumluluk portalı görüntüleyebilirsiniz.
 
 | Uyarı türü  | Yapılması gerekenler  |
 |---------|---------|

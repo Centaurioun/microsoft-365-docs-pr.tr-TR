@@ -1,5 +1,5 @@
 ---
-title: Organizasyonunız için Microsoft geri bildirimlerini yönetme
+title: Kuruluşunuz için Microsoft geri bildirimlerini yönetme
 f1.keywords:
 - NOCSH
 ms.author: Kwekua
@@ -20,79 +20,83 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Kullanıcılarınızı Microsoft ürünleri hakkında Microsoft'a gönderebilirsiniz geri bildirimi yönetin.
-ms.openlocfilehash: 8cd20b1a6138f389ba996bdaee8cae8ae24d2974
-ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
+description: Kullanıcılarınızın Microsoft ürünleri hakkında Microsoft'a gönderebileceği geri bildirimleri yönetin.
+ms.openlocfilehash: d32b9f1150443bc4fc4e859004949d6f27b6914d
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403577"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300814"
 ---
-# <a name="manage-microsoft-feedback-for-your-organization"></a>Organizasyonunız için Microsoft geri bildirimlerini yönetme
+# <a name="manage-microsoft-feedback-for-your-organization"></a>Kuruluşunuz için Microsoft geri bildirimlerini yönetme
 
-Bir Microsoft 365 kuruluş yöneticisi olarak, Microsoft 365 uygulamalarını kullanırken geri bildirim toplamasını ve kullanıcılarınızı müşteri katılımı deneyimini yönetmenize yardımcı olacak çeşitli Microsoft 365 vardır. Bu ilkelerden her biri için, organizasyonda mevcut Azure Active directory gruplarını oluşturabilir ve kullanabilirsiniz. Bu güvenlik güvenlikleriyle, organizasyon departmanlarının Microsoft'a geri bildirim gönderişini kontrol etmek için çeşitli departmanların ne kadar geri bildirim gönderebilirsiniz? Microsoft, müşteriler tarafından gönderilen tüm geri bildirimleri gözden kullanır ve ürünü geliştirmek için bu geri bildirimi kullanır. Geri bildirim deneyimlerini Açık tutmak **,** kullanıcılarının kullanmakta olduğu Microsoft ürünleri hakkında neler söylüyor olduklarını görmenizi sağlar. Kullanıcılarından topladığımız geri bildirim kısa süre içinde <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi.</a>
+Microsoft 365 kuruluşunun yöneticisi olarak artık Microsoft 365 uygulamalarını kullanırken kullanıcılarınızın geri bildirim toplama ve müşteri etkileşimi deneyimini yönetmenize yardımcı olacak çeşitli ilkeler vardır. Bu ilkelerin her biri için kuruluşunuzda mevcut Azure Active Directory gruplarını oluşturabilir ve kullanabilirsiniz. Bu ilkelerle, kuruluşunuzdaki farklı departmanların Microsoft'a nasıl geri bildirim gönderebileceğini denetleyebilirsiniz. Microsoft, müşteriler tarafından gönderilen tüm geri bildirimleri inceler ve ürünü geliştirmek için bu geri bildirimi kullanır. Geri bildirim deneyimlerini **Açık** durumda tutmak, kullanıcılarınızın kullandıkları Microsoft ürünleri hakkında ne söylediklerini görmenizi sağlar. Kullanıcılarınızdan topladığımız geri bildirimler <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">yakında Microsoft 365 yönetim merkezi</a>.
 
-Geri bildirim türleri ve Microsoft'un kullanıcı geri bildirimlerini nasıl kullandığı hakkında daha fazla bilgi edinmek için bkz [. Organizasyonunız için Microsoft geri bildirimleri hakkında bilgi öğrenin](../misc/feedback-user-control.md).
+Geri bildirim türleri ve Microsoft'un kullanıcı geri bildirimlerini nasıl kullandığı hakkında daha fazla bilgi edinmek için bkz. [Kuruluşunuz için Microsoft geri bildirimi hakkında bilgi edinin](../misc/feedback-user-control.md).
 
-Aşağıdaki tablo, şu anda aşağıdaki geri bildirim ilkeleri tablosunda gösterilen geri bildirim ilkelerine hangi uygulama ve hizmetlerin bağlı olduğunu gösterir. Ekran görüntüsü örnekleri için tablonun altına bakın.
+Aşağıdaki tablo, aşağıdaki geri bildirim ilkeleri tablosunda gösterilen geri bildirim ilkelerine şu anda bağlı olan uygulamaları ve hizmetleri temsil eder. Ekran görüntüsü örnekleri için aşağıdaki tabloya bakın.
 
-|**Uygulamalar & Hizmetleri**|**Ürünle ilgili geri bildirim** <br> |**Ürün içinde anketler** <br> |**Meta veri toplama** <br> |**Müşteri katılımı** <br> |
+|**Uygulamalar & Hizmetleri**|**Ürünle ilgili geri bildirim** <br> |**Ürün içi anketler** <br> |**Meta veri koleksiyonu** <br> |**Müşteri etkileşimi** <br> |
 |:-----|:-----|:-----|:-----|:-----|
 |**Erişim**|Evet|Evet|Evet|Evet|
 |**Excel**|Evet|Evet|Evet|Evet|
 |**Office.com**|Çok yakında|Çok yakında|Çok yakında|Çok yakında|
 |**OneNote**|Evet|Evet|Evet|Evet|
-|**OneDrive**|[Bazı ayarlar şu anda diğer denetimler tarafından yönetiliyor.](/onedrive/disable-contact-support-send-feedback)||||
+|**OneDrive**|[Şu anda diğer denetimler tarafından yönetilen bazı ayarlar.](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook**|Çok yakında|Çok yakında|Çok yakında|Çok yakında|
 |**PowerPoint**|Evet|Evet|Evet|Evet|
 |**Project**|Çok yakında|Çok yakında|Çok yakında|Çok yakında|
 |**Publisher**|Evet|Evet|Evet|Evet|
-|**SharePoint**|[Bazı ayarlar şu anda diğer denetimler tarafından yönetiliyor.](/powershell/module/sharepoint-online/set-spotenant)||||
-|**Teams**|[Bazı ayarlar şu anda diğer denetimler tarafından yönetiliyor.](/microsoftteams/manage-feedback-policies-in-teams)||||
+|**SharePoint**|[Şu anda diğer denetimler tarafından yönetilen bazı ayarlar.](/powershell/module/sharepoint-online/set-spotenant)||||
+|**Teams**|[Şu anda diğer denetimler tarafından yönetilen bazı ayarlar.](/microsoftteams/manage-feedback-policies-in-teams)||||
 |**Word**|Evet|Evet|Evet|Evet|
 |**Visio**|Evet|Evet|Evet|Evet|
 |**Yammer**|Evet|Evet|Evet|Evet|
 
-[Ürünle ilgili anket ve geri bildirim örneklerini görmek için buraya bakın.](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
+[Ürün içi anketler ve geri bildirim örnekleri için buraya bakın.](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
 
-**Meta veri toplama**
+**Meta veri koleksiyonu**
 
-:::image type="content" source="../../media/feedback-metadata2.png" alt-text="Ekran görüntüsü: Meta veri örneğini gösteren Geri Bildirim sayfası":::
+:::image type="content" source="../../media/feedback-metadata2.png" alt-text="Ekran görüntüsü: Meta veri örneğini gösteren geri bildirim sayfası":::
 
-**Müşteri katılımı**
+**Müşteri etkileşimi**
 
-:::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="Ekran görüntüsü: Ürün içinde müşteri araştırması sorusu örneği":::
+:::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="Ekran görüntüsü: Ürün içi müşteri araştırması soru örneği":::
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Bu ilkeleri kullanmak için cihazlarınız minimum bir derleme numarasında olmalıdır. Daha fazla bilgi için aşağıdaki tabloya bakın.
+Bu ilkeleri kullanabilmek için cihazlarınızın en düşük derleme numarasına sahip olması gerekir. Daha fazla bilgi için aşağıdaki tabloya bakın.
 
-|**Derleme #**|**Win32**|**iOS**|**Android**|**Mac**|**Web**|
+|**Oluşturmak #**|**Win32**|**iOS**|**Android**|**Mac**|**Web**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Ürünle ilgili geri bildirim|En az Sürüm 2010|En az 2,42|En az 16.0.13328|En az 16,42|Genel kullanıma açık|
-|Ürün içinde anketler|En az Sürüm 2010|En az 2,42|En az 16.0.13426|En az 16,42|Bekleyen rollout|
-|Meta veri toplama|En az Sürüm 2010|En az 2,42|En az 16.0.13328|En az 16,42|Genel kullanıma açık|
-|Müşteri katılımı|En az Sürüm 2010|En az 2,42|En az 16.0.13426|En az 16,42|Bekleyen rollout|
+|Ürün içi anketler|En az Sürüm 2010|En az 2,42|En az 16.0.13426|En az 16,42|Bekleyen dağıtım|
+|Meta veri koleksiyonu|En az Sürüm 2010|En az 2,42|En az 16.0.13328|En az 16,42|Genel kullanıma açık|
+|Müşteri etkileşimi|En az Sürüm 2010|En az 2,42|En az 16.0.13426|En az 16,42|Bekleyen dağıtım|
 
-## <a name="specific-policies-you-can-configure"></a>Yapılandırılan belirli ilkeler
+## <a name="specific-policies-you-can-configure"></a>Yapılandırabileceğiniz belirli ilkeler
 
 ### <a name="feedback-policies"></a>Geri bildirim ilkeleri
 
 |**İlke adı**|**Varsayılan durum**|**Denetim özeti**|
 |:-----|:-----|:-----|
-|Kullanıcıların Microsoft'a geri bildirim göndermesine izin verme|On|Uygulamalar arasında geri bildirim giriş noktalarını kontrol eder|
-|Kullanıcıların Microsoft'tan ürünle ilgili anketleri almalarına ve yanıtlamalarına izin verme|On|Ürün içindeki anket istemlerini kontrol eder|
-|Microsoft'a geri bildirim gönderen kullanıcıların ekran görüntüleri ve ekleri eklemesine izin verme|Kapalı|Kullanıcının hangi meta verileri geri bildirim/anket ile göndermek üzere karar ver istediğini belirler|
-|Microsoft'un kullanıcılar tarafından gönderilen geri bildirimleri izlemesine izin verme|Kapalı|Kullanıcının kişi bilgilerini geri bildirim/anketle paylaşarak paylaştır birden çok|
-|Kullanıcıların Microsoft'a gönderilen günlük dosyalarını ve içerik örneklerini içermesine izin verme|Kapalı|Kullanıcının geri bildirim/anket ile göndermek üzere karar ver sadece meta verilerini belirler|
+|Kullanıcıların geri bildirim portalına erişmesine izin ver|-Inı|Geri bildirim portalına kullanıcı erişimini yönetme|
+|Kullanıcıların Microsoft'a geri bildirim göndermesine izin verme|-Inı|Uygulamalar arasında geri bildirim giriş noktalarını denetler|
+|Kullanıcıların Microsoft'tan ürün içi anketleri almasına ve yanıtlamasına izin verme|-Inı|Ürün içindeki anket istemlerini denetler|
+|Kullanıcıların Microsoft'a geri bildirim gönderirken ekran görüntülerini ve ekleri eklemesine izin verme|Devre Dışı|Kullanıcının geri bildirim/anket ile göndermeye karar verebileceği meta verileri belirler|
+|Microsoft'un kullanıcılar tarafından gönderilen geri bildirimleri izlemesine izin ver|Devre Dışı|Kullanıcının geri bildirim/anket ile iletişim bilgilerini paylaşabileceğini belirler|
+|Microsoft'a geri bildirim gönderildiğinde kullanıcıların günlük dosyalarını ve içerik örneklerini eklemesine izin ver|Devre Dışı|Kullanıcının geri bildirim/anket ile göndermeye karar verebileceği meta verileri belirler|
+
+> [!NOTE]
+> **Kullanıcıların geri bildirim portalına erişmesine izin ver** ilkesi bir bulut ilkesidir. Bu ilke ADMX'te tanımlanmamıştır ve ilkeyi ayarlamak için uygun bir kayıt defteri anahtarı yoktur. Bunu zorunlu kılmak için bir bulut ilkesi oluşturmanız gerekir. Bu bir bulut ilkesidir çünkü geri bildirim portalı, aynı zamanda bir web uygulaması olan ve oturum açan kişi için ilkeleri isteyen bulut ilkesi hizmetine çağrı yapan bir web uygulamasıdır. Bu ilke yapılandırılırsa geri bildirim portalı, bulut ilkesi hizmetinden gelen yanıtta yapılandırılan ilke değerini alır.
 
 ## <a name="configure-policies"></a>İlkeleri yapılandırma
 
-Bu ilke ayarlarını yapılandırmak için, Office hizmetini kullanabilirsiniz. Daha fazla bilgi için bkz[. İlke bulut Office genel bakış](/deployoffice/overview-office-cloud-policy-service). İlke ayarlarını yapılandırarak bulmak için, Office bulut ilkesi hizmeti kullanıcı arabiriminin içinde "geri bildirim" veya "anket" araması yapabilirsiniz. 
+Bu ilke ayarlarını yapılandırmak için Office bulut ilkesi hizmetini kullanabilirsiniz. Daha fazla bilgi için bkz. [Office bulut ilkesi hizmetine genel bakış](/deployoffice/overview-office-cloud-policy-service). Bunları yapılandırmak için ilke ayarlarını bulmak için Office bulut ilkesi hizmeti kullanıcı arabiriminde "geri bildirim" veya "anket" araması yapabilirsiniz. 
 
-Bu ilke ayarları, İlke ve Kullanım grup ilkesi. Bu ilke ayarlarını kullanmak için, 22 Mart 2021'de yayımlanan Yönetim Şablonu dosyalarının [(ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) en az 5146.1000 sürümünü indirin.
+Bu ilke ayarları, grup ilkesi kullanıyorsanız da kullanılabilir. Bu ilke ayarlarını kullanmak için, 22 Mart 2021'de yayımlanan [Yönetim Şablonu dosyalarının (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) en az 5146.1000 sürümünü indirin.
 
-Bu ilke ayarlarını Kullanıcı Yapılandırması\İlkeler\Yönetim Şablonları\Microsoft Office 2016\Privacy\Trust Center altında bulabilirsiniz.
+Bu ilke ayarlarını Kullanıcı Yapılandırması\İlkeler\Yönetim Şablonları\Microsoft Office 2016\Gizlilik\Güven Merkezi altında bulabilirsiniz.
 
 > [!NOTE]
-> İstemci uygulamalarının güncelleştirilsi birkaç saat sürer.
+> İstemci uygulamalarının güncelleştirilmiş olması birkaç saat sürer.

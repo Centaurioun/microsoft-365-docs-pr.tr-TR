@@ -15,18 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 955f11aa44bd0defb867c25124da7c5a3769c98d
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: ab8ff3069a59c59f509396158c747cae35bccfe3
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840131"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67301298"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>URL/etki alanı ve IP’ler için göstergeler oluşturun
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -50,18 +51,18 @@ IPS, URL'ler veya etki alanları için göstergeler oluşturmadan önce aşağı
 
 - URL/IP izin verir ve engeller, Uç Nokta için Defender bileşeni Ağ Koruması'nın blok modunda etkinleştirilmesine bağlıdır. Ağ Koruması ve yapılandırma yönergeleri hakkında daha fazla bilgi için bkz. [Ağ korumasını etkinleştirme](enable-network-protection.md).
 - Kötü amaçlı yazılımdan koruma istemcisi sürümü 4.18.1906.x veya üzeri olmalıdır. 
-- Windows 10, sürüm 1709 veya üzeri, Windows 11, Windows Server 2016, Windows Server 2012 R2, Windows Server 2019, Windows Server 2022 ve Android ve cihazları iOS.
+- Windows 10, sürüm 1709 veya üzeri, Windows 11, Windows Server 2016 Windows Server 2012 R2, Windows Server 2019, Windows Server 2022 ve Android ve iOS cihazlarındaki makinelerde desteklenir.
 
     > [!NOTE]
-    > Windows Server 2016 ve Windows Server 2012 R2'nin bu özelliğin çalışması için [Windows sunucularında ekleme](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) yönergeleri kullanılarak eklenmelidir.
+    > Windows Server 2016 ve Windows Server 2012 R2'nin bu özelliğin çalışması için [Windows sunucularını ekleme](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) yönergeleri kullanılarak eklenmesi gerekir.
 
-- Microsoft 365 Defender **Ayarlar** \> **Gelişmiş özelliklerde** **Özel ağ göstergelerinin** **etkinleştirildiğinden** \> emin olun. Daha fazla bilgi için bkz [. Gelişmiş özellikler](advanced-features.md).
-- iOS gösterge desteği için bkz. [iOS'da Uç Nokta için Microsoft Defender](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
-- Android gösterge desteği için bkz. [Android Uç Nokta için Microsoft Defender](/microsoft-365/security/defender-endpoint/android-configure#configure-custom-indicators).
+- Microsoft 365 Defender **Ayarlar** \> **Gelişmiş özelliklerinde** **Özel ağ göstergelerinin** **etkinleştirildiğinden** \> emin olun. Daha fazla bilgi için bkz [. Gelişmiş özellikler](advanced-features.md).
+- iOS'ta göstergelerin desteği için bkz. [iOS'ta Uç Nokta için Microsoft Defender](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
+- Android'de gösterge desteği için bkz. [Android'de Uç Nokta için Microsoft Defender](/microsoft-365/security/defender-endpoint/android-configure#configure-custom-indicators).
 
 > [!IMPORTANT]
 > Gösterge listesine yalnızca dış IP'ler eklenebilir. İç IP'ler için göstergeler oluşturulamaz.
-> Web koruma senaryoları için Microsoft Edge'daki yerleşik özellikleri kullanmanızı öneririz. Microsoft Edge ağ trafiğini incelemek için [Ağ Koruması'na](network-protection.md) olanak tanır ve TCP, HTTP ve HTTPS (TLS) bloklarına izin verir.
+> Web koruma senaryoları için Microsoft Edge'deki yerleşik özellikleri kullanmanızı öneririz. Microsoft Edge ağ trafiğini incelemek için [Ağ Koruması'nden](network-protection.md) yararlanarak TCP, HTTP ve HTTPS (TLS) bloklarına izin verir.
 > Çakışan URL göstergesi ilkeleri varsa, daha uzun yol uygulanır. Örneğin, URL göstergesi ilkesi `https://support.microsoft.com/office` URL göstergesi ilkesinden `https://support.microsoft.com`önceliklidir.
 
 > [!NOTE]
@@ -94,7 +95,7 @@ Daha fazla bilgi için bkz. [Uç Nokta için Microsoft Defender tarafından bulu
 
 ## <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>Ayarlar sayfasından IP'ler, URL'ler veya etki alanları için bir gösterge oluşturma
 
-1. Gezinti bölmesinde uç **nokta göstergelerini** \> **Ayarlar** \> seçin (**Kurallar'ın** altında).
+1. Gezinti bölmesinde **Ayarlar** \> **Uç Noktaları** \> **Göstergeleri'ni** seçin ( **Kurallar'ın** altında).
 
 2. **IP adresleri veya URL'ler/Etki Alanları** sekmesini seçin.
 

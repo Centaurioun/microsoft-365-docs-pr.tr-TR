@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b4e50346c7ffe6a56950e278092e14fbb2be33da
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: a906a0ddebdfb96552b868587f466108d8f4dec9
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174947"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300880"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender için en düşük gereksinimler
 
@@ -43,12 +43,13 @@ Cihazları hizmete eklemek için bazı minimum gereksinimler vardır. Cihazları
 
 ## <a name="licensing-requirements"></a>Lisans gereksinimleri
 
+[Uç Nokta Plan 1 ve Plan 2 için Defender'ın](defender-endpoint-plan-1-2.md) tek başına sürümleri sunucu lisanslarını içermez. Sunucuları bu planlara eklemek için Bulut için Defender teklifinin bir parçası olarak Sunucular için [Defender](/azure/defender-for-cloud/defender-for-cloud-introduction) Plan 1 veya Plan 2 gerekir. Daha fazla bilgi edinmek için bkz [. Sunucular için Microsoft Defender'a](/azure/defender-for-cloud/defender-for-servers-introduction) genel bakış.
+
 Uç Nokta için Microsoft Defender için lisanslama gereksinimleri hakkında bilgi için bkz. [lisanslama bilgileri Uç Nokta için Microsoft Defender](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
 Ayrıntılı lisanslama bilgileri için [Ürün Koşulları sitesine](https://www.microsoft.com/licensing/terms/) bakın ve hüküm ve koşullar hakkında daha fazla bilgi edinmek için hesap ekibinizle birlikte çalışın.
 
 Windows sürümlerindeki özellikler dizisi hakkında daha fazla bilgi için bkz. [Windows sürümlerini karşılaştırma](https://www.microsoft.com/windowsforbusiness/compare).
-
 ## <a name="browser-requirements"></a>Tarayıcı gereksinimleri
 
 Uç Nokta için Defender'a erişim, aşağıdaki tarayıcıları destekleyen bir tarayıcı aracılığıyla yapılır:

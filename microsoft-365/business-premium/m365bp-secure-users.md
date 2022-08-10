@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: üretkenlik ve güvenlikle Microsoft 365 İş Ekstra işinizi daha güvenli bir şekilde çalıştırmanıza nasıl yardımcı olduğunu öğrenin.
-ms.openlocfilehash: cffab130bf64220b47a425b25824fbad2d39c540
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: b70b62790330a6e92d52a8f490eebd0b8b0efccf
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037698"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300639"
 ---
-# <a name="productivity-and-security-for-small--and-medium-sized-businesses"></a>Küçük ve orta ölçekli işletmeler için üretkenlik ve güvenlik 
+# <a name="productivity-and-security-for-small-and-medium-sized-businesses"></a>Küçük ve orta ölçekli işletmeler için üretkenlik ve güvenlik 
 
 Microsoft 365 İş Ekstra, küçük ve orta ölçekli işletmeler (1-300 çalışan) için tasarlanmış ve oluşturulmuş kapsamlı bir bulut üretkenliği ve güvenlik çözümüdür. Microsoft 365 İş Ekstra ile şunları yapabilirsiniz:
 
