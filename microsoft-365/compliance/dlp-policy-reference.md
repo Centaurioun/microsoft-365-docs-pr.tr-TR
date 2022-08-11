@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ilkesi bileşeni ve yapılandırma başvurusu
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 9184bf848a1bf23bde639767c09a66e681d5553f
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 9d0b8489c303b7786cdd7443ebc6f41507e6487e
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056580"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306712"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Veri Kaybı Önleme ilkesi başvurusu
 
@@ -43,7 +43,7 @@ Bu tabloda, tüm ilke şablonları ve bunların kapsadıkları hassas bilgi tür
 
 güncelleştirme: 23.06.2021
 
-|Kategori|Şablon | OTURUP |
+|Kategori|Şablon | Oturup |
 |---------|---------|---------|
 |Finansal| Avustralya Finansal Verileri| - [SWIFT kodu](sit-defn-swift-code.md) </br> -  [Avustralya vergi dosyası numarası](sit-defn-australia-tax-file-number.md) </br> - [Avustralya banka hesap numarası](sit-defn-australia-bank-account-number.md) </br> - [Kredi kartı numarası](sit-defn-credit-card-number.md)|
 |Finansal| Kanada Finansal verileri |- [Kredi kartı numarası](sit-defn-credit-card-number.md) </br> - [Kanada banka hesap numarası](sit-defn-canada-bank-account-number.md)|
@@ -137,7 +137,7 @@ DLP ilkeleri hassas öğeleri hassas bilgi türüyle (SIT) veya duyarlılık eti
 |Power BI|Evet | Evet| Hayır|
 
 > [!NOTE]
-> DLP, hassas belgeleri algılamak için bir koşul olarak eğitilebilir sınıflandırıcıların kullanılmasını (önizlemede) destekler. İçerik Exchange Online, Sharepoint Online siteleri, OneDrive İş hesapları, Teams Sohbeti ve Kanalları ve Cihazlar'daki eğitilebilir sınıflandırıcılar tarafından tanımlanabilir. Daha fazla bilgi için bkz [. Eğitilebilir Sınıflandırıcılar](classifier-learn-about.md).
+> DLP, hassas belgeleri algılamak için bir koşul olarak eğitilebilir sınıflandırıcıların kullanılmasını (önizlemede) destekler. İçerik Exchange Online, SharePoint Online siteleri, OneDrive İş hesapları, Teams Sohbeti ve Kanalları ve Cihazlar'daki eğitilebilir sınıflandırıcılar tarafından tanımlanabilir. Daha fazla bilgi için bkz [. Eğitilebilir Sınıflandırıcılar](classifier-learn-about.md).
 
 > [!NOTE]
 > DLP, e-postalarda ve eklerde duyarlılık etiketlerini algılamayı destekler. Daha fazla bilgi için bkz. [DLP ilkelerinde koşul olarak duyarlılık etiketlerini kullanma](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
@@ -341,7 +341,7 @@ Bazen, tek bir SIT ile tanımlanan ABD Sosyal Güvenlik Numarası içeren tüm i
   
 - ABD Sosyal Güvenlik Numarası veya Uyuşturucu Uygulama Kurumu (DEA) Numarası gibi belirli türde hassas bilgiler içeren içerik.
     
-    VE
+    Ve
     
 - Bir hastanın bakımıyla ilgili iletişim veya sağlanan tıbbi hizmetlerin açıklamaları gibi tanımlanması daha zor olan içerikler. Bu içeriğin tanımlanması için Uluslararası Hastalık Sınıflandırması (ICD-9-CM veya ICD-10-CM) gibi büyük anahtar sözcük listelerinden anahtar sözcüklerin eşleşmesi gerekir.
     
@@ -492,7 +492,7 @@ eylemler kullanılabilir olacaktır.
 
 - Microsoft 365 konumlarındaki içeriğe erişimi kısıtlama veya içeriği şifreleme
 
-VE
+Ve
 
 - Exchange olmayan konumlar için tüm eylemler 
 

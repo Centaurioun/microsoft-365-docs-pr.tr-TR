@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 01202ec2505292b57d0e6ca21984aa7f72f07fec
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 5c509c046dfb50d8fefd0843535e77dbe49bd58a
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281805"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306250"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Kamu görevlisi müşterilere yönelik Uç Nokta için Microsoft Defender
 
@@ -96,11 +96,11 @@ Aşağıdaki işletim sistemi sürümleri desteklenir:
 Windows 11|![Evet.](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)
 Windows 10, sürüm 21H1 ve üzeri|![Evet.](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)
 Windows 10, sürüm 20H2 ([KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup> ile)|![Evet.](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)
-Windows 10, sürüm 2004 ([KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup> ile)|![Evet.](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)
-Windows 10, sürüm 1909 ([KB4586819 1](https://support.microsoft.com/help/4586819) <sup></sup>ile)|![Evet.](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)
-Windows 10, sürüm 1903 ([KB4586819 1](https://support.microsoft.com/help/4586819) <sup></sup>ile)|![Evet.](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)
-Windows 10, sürüm 1809 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup> ile)|![Evet.](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)
-Windows 10, sürüm 1803 ([KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup> ile)|![Evet.](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)
+Windows 10, sürüm 2004 ([KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup> ile)|![Evet.](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-version-2004-end-of-servicing) lütfen yükseltin|![Evet](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-version-2004-end-of-servicing) lütfen yükseltin|![Evet](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-version-2004-end-of-servicing) lütfen yükseltin
+Windows 10, sürüm 1909 ([KB4586819 1](https://support.microsoft.com/help/4586819) <sup></sup>ile)|![Evet.](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-1909-end-of-servicing) lütfen yükseltin|![Evet](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-1909-end-of-servicing) lütfen yükseltin|![Evet](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-1909-end-of-servicing) lütfen yükseltin
+Windows 10, sürüm 1903 ([KB4586819 1](https://support.microsoft.com/help/4586819) <sup></sup>ile)|![Evet.](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-1903-end-of-servicing) lütfen yükseltin|![Evet](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-1903-end-of-servicing) lütfen yükseltin|![Evet](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-1903-end-of-servicing) lütfen yükseltin
+Windows 10, sürüm 1809 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup> ile)|![Evet.](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing) lütfen yükseltin|![Evet](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing) lütfen yükseltin|![Evet](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing) lütfen yükseltin
+Windows 10, sürüm 1803 ([KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup> ile)|![Evet.](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing) lütfen yükseltin|![Evet](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing) lütfen yükseltin|![Evet](images/svg/check-yes.svg) <br /> Not: [Kullanım dışı,](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing) lütfen yükseltin
 Windows 10, sürüm 1709|![Hayır.](images/svg/check-no.svg) <br /> Not: Desteklenmez|![Evet](images/svg/check-yes.svg)[, KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> ile <br /> Not: [Kullanım dışı,](/lifecycle/announcements/revised-end-of-service-windows-10-1709) lütfen yükseltin|![Hayır](images/svg/check-no.svg) <br /> Not: Desteklenmez
 Windows 10, sürüm 1703 ve öncesi|![Hayır.](images/svg/check-no.svg) <br /> Not: Desteklenmez|![Hayır](images/svg/check-no.svg) <br /> Not: Desteklenmez|![Hayır](images/svg/check-no.svg) <br /> Not: Desteklenmez
 Windows Server 2022|![Evet.](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Azure Information Protection (AIP) birleşik etiketleme istemcisini kullandığınızda, AIP eklentisi yerine Office uygulamaları için yerleşik etiketleme kullanmanın avantajlarını anlayın.
-ms.openlocfilehash: d7cb00b476e31916139d3cdcf5dd53834bc5025a
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 9f1bf7c7243ce2414c70ad3fd487ab43465b905f
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275944"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306272"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office uygulamaları için AIP eklentisi yerine neden yerleşik etiketlemeyi seçmelisiniz?
 
@@ -121,7 +121,7 @@ AIP eklentisini devre dışı bırakmak için bu yöntemi kullandığınızda, e
 
 AIP eklentisi tarafından desteklenen etiketleme özelliklerinin çoğu artık yerleşik etiketleme tarafından desteklenmektedir. Özelliklerin daha ayrıntılı listesi, gerekli olabilecek en düşük sürümler ve yapılandırma bilgileri için bkz. [Office uygulamalarında duyarlılık etiketlerini yönetme](sensitivity-labels-office-apps.md).
 
-Daha fazla özellik planlanıyor ve geliştiriliyor. İlgilendiğiniz belirli bir özellik varsa [Microsoft 365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity) gözden geçirin ve [Office Özel Önizleme'de Microsoft Bilgi Koruması](https://aka.ms/MIP/PreviewRing) katılmayı düşünün.
+Daha fazla özellik planlanıyor ve geliştiriliyor. İlgilendiğiniz belirli bir özellik varsa [Microsoft 365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) gözden geçirin ve [Office Özel Önizleme'de Microsoft Bilgi Koruması](https://aka.ms/MIP/PreviewRing) katılmayı düşünün.
 
 AIP eklentisinden henüz yerleşik etiketleme tarafından desteklenmeyen bir özellik kullanıp kullanmadığınızı belirlemenize yardımcı olması için aşağıdaki bilgileri kullanın:
 

@@ -11,17 +11,18 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f49055529a93d7b50f7f19c0c281f54f18c8a599
-ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
+ms.openlocfilehash: 1c9eff6831f08a243aad830d258c9d9277a89531
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67294599"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306448"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Önceki MMA tabanlı Uç Nokta için Microsoft Defender çözümünden sunucu geçişi senaryoları
 
@@ -73,7 +74,7 @@ Betiği kullanmak için, yükleme ve ekleme paketlerini de yerleştirdiğiniz bi
 
 ## <a name="if-you-are-running-a-non-microsoft-antivirus-solution"></a>Microsoft dışı bir virüsten koruma çözümü çalıştırıyorsanız
 
-1. [Önkoşulların](configure-server-endpoints.md#prerequisites) karşılandığından emin olmak için Microsoft Defender Virüsten Koruma (Windows Server 2016) dahil olmak üzere makineyi tam olarak güncelleştirin.
+1. [Önkoşulların](configure-server-endpoints.md#prerequisites) karşılandığından emin olmak için Microsoft Defender Virüsten Koruma (Windows Server 2016) dahil olmak üzere makineyi tam olarak güncelleştirin. Karşılanması gereken önkoşullar hakkında daha fazla bilgi için bkz. [Windows Server 2016 önkoşulları](configure-server-endpoints.md#prerequisites-for-windows-server-2016).
 2. Üçüncü taraf virüsten koruma yönetiminin artık virüsten koruma aracılarını bu makinelere göndermediğinden emin olun.*
 3. Uç Nokta için Microsoft Defender koruma özellikleri için ilkelerinizi yazın ve bunları istediğiniz araçta makineye hedefleyin.*
 4. Windows Server 2012 R2 ve 2016 paketi için Uç Nokta için Microsoft Defender yükleyin ve **pasif modu etkinleştirin**. Bkz. [Komut satırını kullanarak Microsoft Defender Virüsten Koruma yükleme](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).

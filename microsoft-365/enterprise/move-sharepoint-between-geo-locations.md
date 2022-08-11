@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: SharePoint sitesini çok coğrafi ortamınızda farklı bir coğrafi konuma taşımayı ve değişikliklerle ilgili beklentileri kullanıcılarınıza iletmeyi öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b388b3fa869e6207c72f62aa2f50b832acab43a
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: a72c98cf2c4f71c9812af5aef01adc93777d5ccf
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940832"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306316"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>SharePoint sitesini farklı bir coğrafi konuma taşıma
 
@@ -46,7 +46,7 @@ SharePoint sitesi coğrafi taşıma işlemi sırasında site içeriğine bağlı
 
 ## <a name="communicating-to-your-users"></a>Kullanıcılarınıza iletişim kurma
 
-SharePoint sitelerini coğrafi konumlar arasında taşırken, sitelerin kullanıcılarına (genellikle siteyi düzenleme yeteneği olan herkes) ne bekleyebileceğinizi bildirmek önemlidir. Bu, kullanıcı karışıklığını ve yardım masanıza yapılan aramaları azaltmaya yardımcı olabilir. Taşımadan önce sitelerinizin kullanıcılarına e-posta gönderin ve aşağıdaki bilgileri onlara bildirin:
+SharePoint sitelerini coğrafi konumlar arasında taşırken, sitelerin kullanıcılarına (genellikle siteyi düzenleme yeteneği olan herkes) ne bekleyebileceğinizi bildirmek önemlidir. Bu, kullanıcı karışıklığını ve yardım masanıza yapılan aramaları azaltmaya yardımcı olabilir. Taşımadan önce sitelerinizin kullanıcılarını Email ve aşağıdaki bilgileri onlara bildirin:
 
 - Taşıma işleminin ne zaman başlaması ve ne kadar sürmesi beklenir?
 - Sitelerinin taşındığı coğrafi konum ve yeni konuma erişim URL'si
@@ -219,9 +219,9 @@ Site taşındıktan sonra SharePoint 2013 iş akışlarının yeniden yayımlanm
 
 Uygulamaları olan bir siteyi taşıyorsanız, uygulama ve bağlantıları hedef coğrafi konumda kullanılamayabileceği için uygulamayı sitenin yeni coğrafi konumuna yeniden doğrulamalısınız.
 
-### <a name="flow"></a>Akışı
+### <a name="power-automate"></a>Power Automate
 
-Çoğu durumda, SharePoint sitesi coğrafi olarak taşındıktan sonra Akışlar çalışmaya devam eder. Taşıma tamamlandıktan sonra bunları test etmenizi öneririz.
+Çoğu durumda, SharePoint sitesi coğrafi olarak taşındıktan sonra Power Automate Akışları çalışmaya devam eder. Taşıma tamamlandıktan sonra bunları test etmenizi öneririz.
 
 ### <a name="power-apps"></a>Power Apps
 

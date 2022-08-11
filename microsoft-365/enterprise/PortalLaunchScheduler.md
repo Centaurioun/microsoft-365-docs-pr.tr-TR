@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: Bu makalede Portal başlatma zamanlayıcısını kullanarak portalınızı nasıl başlatabileceğiniz açıklanmaktadır.
-ms.openlocfilehash: 2eef7a8488db579f4ba946342213b822227229d1
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: b76a61bb06c3f2bab7f92ad97cde0630011e487c
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941074"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306536"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>SharePoint Portal başlatma zamanlayıcısını kullanarak portalınızı başlatma
 
@@ -47,8 +47,8 @@ Site izinleri fırlatmanın bir parçası olarak dalgalardan ayrı olarak ayarla
 > - Gerekli dalga sayısı, beklenen kullanıcı sayısına göre otomatik olarak belirlenir.
 > - Portal başlatmayı zamanlamadan önce, sitenin giriş sayfasının iyi durumda olduğunu doğrulamak [için SharePoint için Sayfa Tanılama aracının](https://aka.ms/perftool) çalıştırılması gerekir.
 > - Başlatmanın sonunda, siteye izinleri olan tüm kullanıcılar yeni siteye erişebilir.
-> - Kuruluşunuz [Viva Bağlantıları](https://microsoft.sharepoint.com/teams/MicrosoftViva/SitePages/Viva-Connections.aspx) kullanıyorsa, kullanıcılar Microsoft Teams uygulama çubuğunda kuruluşunuzun simgesini görebilir, ancak simge seçildiğinde kullanıcılar dalgası başlatılana kadar portala erişemez.
-> - Bu özellik Office 365 Germany, 21Vianet (Çin) tarafından sağlanan Office 365 veya Microsoft 365 ABD Kamu planlarında kullanılamaz.
+> - Kuruluşunuz [Viva Bağlantılar](https://microsoft.sharepoint.com/teams/MicrosoftViva/SitePages/Viva-Connections.aspx) kullanıyorsa, kullanıcılar Microsoft Teams uygulama çubuğunda kuruluşunuzun simgesini görebilir, ancak simge seçildiğinde kullanıcılar dalgaları başlatılana kadar portala erişemez.
+> - Bu özellik Office 365 Almanya, 21Vianet (Çin) tarafından sağlanan Office 365 veya Microsoft 365 ABD Kamu planlarında kullanılamaz.
 
 ## <a name="understand-the-differences-between-portal-launch-scheduler-options"></a>Portal başlatma zamanlayıcı seçenekleri arasındaki farkları anlayın:
 
@@ -56,7 +56,7 @@ Site izinleri fırlatmanın bir parçası olarak dalgalardan ayrı olarak ayarla
 
 **SharePoint PowerShell sürümü:**
 
-- [SharePoint PowerShell'i](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell) kullanmak için yönetici kimlik bilgileri gereklidir
+- [SharePoint PowerShell'i](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell) kullanmak için Yönetici kimlik bilgileri gereklidir
 - Bir dalganın minimum gereksinimi
 - Başlatmanızı Eşgüdümlü Evrensel Saat (UTC) saat dilimine göre zamanlama
 
@@ -99,7 +99,7 @@ Site izinleri fırlatmanın bir parçası olarak dalgalardan ayrı olarak ayarla
    **Seçenek 1: Kullanıcıları mevcut bir SharePoint sayfasına gönderme (çift yönlü) – Mevcut bir SharePoint** portalını değiştirmek için yeni bir modern SharePoint portalı başlatırken bu seçeneği kullanın. Etkin dalgalardaki kullanıcılar, eski veya yeni siteye gitmelerine bakılmaksızın yeni siteye yönlendirilir. Yeni siteye erişmeye çalışan, başlatılmamış bir dalgadaki kullanıcılar, dalga başlatılana kadar eski siteye geri yönlendirilir.
 
    > [!NOTE]
-   > Çift yönlü seçeneği kullanırken, başlatmayı zamanlayan kişinin diğer SharePoint portalında site sahibi izinleri de olmalıdır.
+   > Çift yönlü seçeneği kullanırken, başlatmayı zamanlayan kişinin hem yeni SharePoint portalı hem de mevcut SharePoint portalı üzerinde site sahibi izinleri olmalıdır. Ayrıca, uygun izinleri doğrulamak için iki site URL'sinin aynı kiracı/etki alanı içinde bulunması gerekir. 
 
    **Seçenek 2: Kullanıcıları otomatik olarak oluşturulan geçici sayfaya gönderme (geçici sayfa yeniden yönlendirme)** – Mevcut SharePoint portalı olmadığında geçici sayfa yeniden yönlendirme kullan seçeneği kullanılmalıdır. Kullanıcılar yeni bir modern SharePoint portalına yönlendirilir ve bir kullanıcı başlatılmamış bir dalgadaysa, geçici bir sayfaya yönlendirilir.
 

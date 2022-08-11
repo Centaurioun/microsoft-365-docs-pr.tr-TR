@@ -22,12 +22,12 @@ description: Microsoft Purview Bilgi Koruması duyarlılık etiketlerinin, depol
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b3b0dfb00ca8905812574cd4add6ad4aba91c5a2
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 2f1940c88700a6039bde0af088c161d33df73bdd
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276565"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306734"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Duyarlılık etiketleri hakkında bilgi edinin
 
@@ -73,7 +73,7 @@ Duyarlılık etiketlerini şu amaçlarla kullanabilirsiniz:
 
 Tüm bu durumlarda, Microsoft Purview'un duyarlılık etiketleri doğru içerik üzerinde doğru eylemleri gerçekleştirmenize yardımcı olabilir. Duyarlılık etiketleriyle, kuruluşunuz genelinde verileri sınıflandırabilir ve bu sınıflandırmaya göre koruma ayarlarını zorunlu kılabilirsiniz. Bu koruma daha sonra içerikle birlikte kalır.
 
-Bunlar ve duyarlılık etiketleri tarafından desteklenen diğer senaryolar hakkında daha fazla bilgi için bkz. [Duyarlılık etiketleri için yaygın senaryolar](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). Duyarlılık etiketlerini destekleyen her zaman yeni özellikler geliştiriliyor, bu nedenle [Microsoft 365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity) denetlemeyi de yararlı bulabilirsiniz.
+Bunlar ve duyarlılık etiketleri tarafından desteklenen diğer senaryolar hakkında daha fazla bilgi için bkz. [Duyarlılık etiketleri için yaygın senaryolar](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). Duyarlılık etiketlerini destekleyen her zaman yeni özellikler geliştiriliyor, bu nedenle [Microsoft 365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) denetlemeyi de yararlı bulabilirsiniz.
 
 ## <a name="what-a-sensitivity-label-is"></a>Duyarlılık etiketi nedir?
 
