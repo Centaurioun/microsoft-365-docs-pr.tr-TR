@@ -16,12 +16,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: da53bc682d759de976283aed6502108cd9cda350
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: b0f422175ae16bf1e3c6fb7138c235b79911e338
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106218"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306382"
 ---
 # <a name="investigate-data-loss-incidents-with-microsoft-365-defender"></a>Microsoft 365 Defender ile veri kaybı olaylarını araştırma
 
@@ -71,7 +71,7 @@ Başlamadan önce, <a href="https://purview.microsoft.com" target="_blank">Micro
 
 6. Gerekli izne sahipseniz **, Hassas bilgi türleri** sekmesinde eşleşen hassas içeriği ve **Kaynak** sekmesindeki dosya içeriğini görüntüleyin ( <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started#roles" target="_blank">Ayrıntılara buradan</a> bakın).
 
-7. Araştırmanız için kullanıcı, dosya ve site konumlarının denetim günlüklerinde arama yapmak için Gelişmiş Avcılık'ı da kullanabilirsiniz. **CloudAppEvents** tablosu Sharepoint, OneDrive, Exchange ve Cihazlar gibi tüm konumlardaki tüm denetim günlüklerini içerir.
+7. Araştırmanız için kullanıcı, dosya ve site konumlarının denetim günlüklerinde arama yapmak için Gelişmiş Avcılık'ı da kullanabilirsiniz. **CloudAppEvents** tablosu SharePoint, OneDrive, Exchange ve Cihazlar gibi tüm konumlardaki tüm denetim günlüklerini içerir.
 
 8. Ayrıca **Eylemler** \> E-postayı indir'i seçerek **de e-postayı** indirebilirsiniz. 
 

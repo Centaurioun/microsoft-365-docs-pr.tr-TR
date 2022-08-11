@@ -10,17 +10,18 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0414f85c9d461a2f676f9bc248a1ce065f7547d7
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: f8726c006bac66b18d0e8359fe391a5d6e39ad69
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949513"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306444"
 ---
 # <a name="create-indicators-for-files"></a>Dosyalar için göstergeler oluşturun
 
@@ -55,7 +56,7 @@ Dosyalar için göstergeler oluşturmadan önce aşağıdaki önkoşulları anla
 - Windows 10, sürüm 1703 veya üzeri, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 ve Windows Server 2022'ye sahip cihazlarda desteklenir.
     
    > [!NOTE]
-   > Windows Server 2016 ve Windows Server 2012 R2'nin bu özelliğin çalışması için [Windows sunucularını ekleme](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) yönergeleri kullanılarak eklenmesi gerekir. İzin Ver, Engelle ve Düzelt eylemlerine sahip özel dosya göstergeleri artık [macOS ve Linux için geliştirilmiş kötü amaçlı yazılımdan koruma altyapısı özellikleri için genel önizlemede](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003) de kullanılabilir.
+   > Windows Server 2016 ve Windows Server 2012 R2'nin bu özelliğin çalışması için [Windows sunucularını ekleme](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) yönergeleri kullanılarak eklenmesi gerekir. İzin Ver, Engelle ve Düzelt eylemlerine sahip özel dosya göstergeleri artık [macOS ve Linux için geliştirilmiş kötü amaçlı yazılımdan koruma altyapısı özelliklerinde](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003) de kullanılabilir.
 
 - Dosyaları engellemeye başlamak için önce [Ayarlar'daki "engelle veya izin ver" özelliğini açmanız](advanced-features.md) gerekir.
 
@@ -75,7 +76,7 @@ Bu özellik, şüpheli kötü amaçlı yazılımların (veya kötü amaçlı ola
 4. Aşağıdaki ayrıntıları belirtin:
     - Gösterge - Varlık ayrıntılarını belirtin ve göstergenin süre sonunu tanımlayın.
     - Eylem - Gerçekleştirilecek eylemi belirtin ve bir açıklama sağlayın.
-    - Kapsam - Cihaz grubunun kapsamını tanımlayın (kapsam belirleme [İş için Defender'da](../defender-business/mdb-overview.md) kullanılamaz).
+    - Kapsam - Cihaz grubunun kapsamını tanımlayın (kapsam belirleme [, İş için Defender'da](../defender-business/mdb-overview.md) kullanılamaz).
 
 5. Özet sekmesinde ayrıntıları gözden geçirin ve **Kaydet'i** seçin.
 
@@ -115,7 +116,7 @@ Dosya bloğu olayında uyarı oluştur seçeneğini belirleyin ve uyarı ayarlar
 >
 > EnableFileHashComputation grup ilkesi hakkında daha fazla bilgi için bkz. [Defender CSP](/windows/client-management/mdm/defender-csp).
 >
-> Bu özelliği Linux ve macOS'ta Uç Nokta için Defender'da yapılandırma hakkında daha fazla ayrıntı için bkz. [Linux'ta dosya karması hesaplama özelliğini yapılandırma](linux-preferences.md#configure-file-hash-computation-feature) ve [macOS'ta dosya karması hesaplama özelliğini yapılandırma](mac-preferences.md#configure-file-hash-computation-feature).
+> Bu özelliği Linux ve macOS üzerinde Uç Nokta için Defender'da yapılandırma hakkında daha fazla bilgi için bkz. [Linux'ta dosya karması hesaplama özelliğini yapılandırma](linux-preferences.md#configure-file-hash-computation-feature) ve [macOS'ta dosya karması hesaplama özelliğini yapılandırma](mac-preferences.md#configure-file-hash-computation-feature).
 
 ## <a name="public-preview-advanced-hunting-capabilities"></a>Genel Önizleme: Gelişmiş tehdit avcılığı özellikleri
 
@@ -132,7 +133,7 @@ Timestamp > ago(30d)
 
 Gelişmiş avcılık hakkında daha fazla bilgi için bkz. [Gelişmiş avcılık ile tehditleri proaktif olarak avlama](advanced-hunting-overview.md).
 
-Aşağıda, yukarıdan örnek sorguda kullanılabilecek ek iş parçacığı adları verilmişti:
+Aşağıda, yukarıdan örnek sorguda kullanılabilecek diğer iş parçacığı adları verilmiştır:
 
 Dosyaları:
 

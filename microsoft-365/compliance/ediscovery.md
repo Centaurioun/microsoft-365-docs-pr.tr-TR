@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview; Exchange posta kutuları, SharePoint ve OneDrive İş siteleri, Microsoft 365 Grupları, Microsoft Teams ve Skype Kurumsal konuşmaları gibi farklı konumlarda bulunan içeriği aramak ve dışarı aktarmak için kullanabileceğiniz üç eBulma aracı sunar. eBulma (Standart) ve eBulma (Premium), araştırmalarınızı yönetmenize yardımcı olacak birçok ek özellik sağlar.
-ms.openlocfilehash: 6bfc08b8f264f9bd6c1e61cdf98231f4ca8a9d9b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a94811c4f8d3ec2d3f15f99375cfee2d3e5a4a0d
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634345"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306558"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Microsoft Purview eKeşif çözümleri
 
@@ -115,7 +115,7 @@ Her eBulma özelliğinin açıklaması aşağıdadır.
 
 - **Etiketleme**. Etiketler ayrıca ilgili olmayan içeriği silmenize ve en ilgili içeriği belirlemenize yardımcı olur. Uzmanlar, avukatlar veya diğer kullanıcılar bir inceleme kümesindeki içeriği gözden geçirdiğinde, içerikle ilgili görüşleri etiketler kullanılarak yakalanabilir. Örneğin, amaç gereksiz içeriği geçersiz kılmasıysa, kullanıcı belgeleri "yanıt vermeyen" gibi bir etiketle etiketleyebilir. İçerik gözden geçirilip etiketlendikten sonra, "yanıt vermeyen" olarak etiketlenen tüm içerikleri dışlamak için bir gözden geçirme kümesi sorgusu oluşturulabilir. Bu işlem, eBulma iş akışındaki sonraki adımlardan yanıt vermeyen içeriği ortadan kaldırır.
 
-- **Analiz.** eBulma (Premium), belgeleri tutarlı bir şekilde düzenlemenize ve gözden geçirilecek belgelerin hacmini azaltmanıza yardımcı olmak için gözden geçirme kümesi belgelerini analiz etmeye yönelik araçlar sağlar. *Yakın yinelenen algılama* , inceleme sürecinizi daha verimli hale getirmenize yardımcı olmak için metin olarak benzer belgeleri gruplandırıyor. *E-posta yazışması,* bir e-posta yazışmasında konuşmanın tam bağlamını veren belirli e-posta iletilerini tanımlar. *Temalar* işlevselliği, ilgili temaya sahip belgeleri gözden geçirebilmeniz için belgeleri gözden geçirmede temaları analiz etmeye ve belgelere tema atamaya çalışır. Bu analiz özellikleri, gözden geçirenlerin toplanan belgelerin bir bölümünü gözden geçirebilmesi için gözden geçirme sürecinizi daha verimli hale getirmenize yardımcı olur.
+- **Analiz.** eBulma (Premium), belgeleri tutarlı bir şekilde düzenlemenize ve gözden geçirilecek belgelerin hacmini azaltmanıza yardımcı olmak için gözden geçirme kümesi belgelerini analiz etmeye yönelik araçlar sağlar. *Yakın yinelenen algılama* , inceleme sürecinizi daha verimli hale getirmenize yardımcı olmak için metin olarak benzer belgeleri gruplandırıyor. *Email yazışma,* bir e-posta yazışmasında konuşmanın tam bağlamını veren belirli e-posta iletilerini tanımlar. *Temalar* işlevselliği, ilgili temaya sahip belgeleri gözden geçirebilmeniz için belgeleri gözden geçirmede temaları analiz etmeye ve belgelere tema atamaya çalışır. Bu analiz özellikleri, gözden geçirenlerin toplanan belgelerin bir bölümünü gözden geçirebilmesi için gözden geçirme sürecinizi daha verimli hale getirmenize yardımcı olur.
 
 - **Tahmine dayalı kodlama modelleri**. Büyük hacimli büyük harf içeriklerini gözden geçirmek üzere önceliklendirebileceğiniz ilgili bir öğe kümesiyle azaltmak ve silmek için tahmine dayalı kodlama modellerini kullanın. Bu, bir gözden geçirme kümesindeki en ilgili öğelerin gözden geçirilmesini önceliklendirmenize yardımcı olan kendi tahmine dayalı kodlama modellerinizi oluşturup eğiterek gerçekleştirilir. Sistem, inceleme kümesindeki her öğeye tahmin puanlarını uygulamak için eğitimi kullanır. Bu, öğeleri tahmin puanına göre filtrelemenize olanak tanır ve bu sayede önce en ilgili (veya ilgili olmayan) öğeleri gözden geçirebilirsiniz.
 
@@ -143,8 +143,8 @@ Aşağıdaki bölümlerde İçerik arama, eBulma (Standart) ve eBulma (Premium) 
 
 ### <a name="ediscovery-standard"></a>eKeşif (Standart)
 
-- Exchange online Plan 2
-- Sharepoint online Plan 2
+- Exchange Online Plan 2
+- SharePoint Online Plan 2
 - aboneliği Microsoft 365 E3
 - aboneliği Microsoft 365 G3
 - aboneliği Microsoft 365 İş Ekstra

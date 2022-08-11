@@ -13,21 +13,21 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da modern bir şablon kullanarak belgeleri ve diğer içerikleri otomatik olarak oluşturmayı öğrenin.
-ms.openlocfilehash: 2ec87a1255e7bd53e03e05c53d9cfbb8e6c77be1
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: a6819afa528f197db49954945df279ea340603e1
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772500"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306690"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da içerik derlemesini kullanarak belge oluşturma
 
 sözleşmeler, iş beyanları, hizmet sözleşmeleri, onay mektupları, satış sunumları ve yazışmalar gibi standart yinelenen iş belgelerini otomatik olarak oluşturmanıza yardımcı olması için SharePoint Syntex kullanabilirsiniz. tüm bunları SharePoint Syntex içerik derlemesini kullanarak daha hızlı, daha tutarlı ve hatalara daha az eğilimli yapabilirsiniz.
 
-İçerik derlemesiyle, *modern bir şablon* oluşturmak için var olan bir belgeyi kullanabilir ve ardından bu şablonu kullanarak veri kaynağı olarak SharePoint listeleri veya kullanıcı girişlerini kullanarak otomatik olarak yeni içerik oluşturabilirsiniz.
+İçerik derlemesiyle, mevcut bir belgeyi kullanarak *modern bir şablon* oluşturabilir ve ardından sharepoint listelerini veya kullanıcı girişlerini veri kaynağı olarak kullanarak otomatik olarak yeni içerik oluşturmak için bu şablonu kullanabilirsiniz.
 
 > [!NOTE]
-> İçerik derleme özelliklerine erişmek ve bunları kullanmak için lisanslı bir SharePoint Syntex kullanıcısı olmanız gerekir. ayrıca SharePoint listelerini yönetmek için de izinleriniz olmalıdır.
+> İçerik derleme özelliklerine erişmek ve bunları kullanmak için lisanslı bir SharePoint Syntex kullanıcısı olmanız gerekir. SharePoint listelerini yönetmek için de izinleriniz olmalıdır.
 
 ## <a name="create-a-modern-template"></a>Modern şablon oluşturma
 
@@ -42,7 +42,7 @@ Modern bir şablon oluşturmak için bu adımları izleyin.
    ![Belgeyi seçtiğiniz karşıya yükleme sayfasının ekran görüntüsü.](../media/content-understanding/content-assembly-create-template-2.png)
 
    > [!NOTE]
-   > Şu anda şablon oluşturmak için yalnızca Word belgelerini (.docx uzantısı) karşıya yükleyebilirsiniz. Word belgelerini yerel depolama alanınızdan veya masaüstünüzden Upload.
+   > Şu anda şablon oluşturmak için yalnızca Word belgelerini (.docx uzantısı) karşıya yükleyebilirsiniz. Word belgelerini yerel depolama alanınızdan veya masaüstünüzden karşıya yükleyin.
 
 3. Belgeyi karşıya yükledikten sonra, belge şablon stüdyosunda görüntülenir ve burada belgeyi şablona dönüştürebilirsiniz.
 
@@ -77,9 +77,12 @@ Modern bir şablon oluşturmak için bu adımları izleyin.
 
 2. **Yazarların bu yer tutucuyu nasıl doldurduğu** bölümünde **Metin girin'i seçin veya bir tarih seçin**.
 
-3. **Bilgi türü** alanında, yer tutucuyla ilişkilendirmek istediğiniz veri türünü seçin. Şu anda altı seçenek vardır: **Tek satırlı metin**, **Birden çok metin satırı**, **Sayı**, **Tarih ve saat**, **E-posta** ve **Köprü**.
+3. **Bilgi türü** alanında, yer tutucuyla ilişkilendirmek istediğiniz veri türünü seçin. Şu anda altı seçenek vardır: **Tek satırlı metin**, **Birden çok metin satırı**, **Sayı**, **Tarih ve saat**, **Email** ve **Köprü**.
 
 4. **Ekle**'yi seçin.
+
+   > [!NOTE]
+   > AA/GG/YYYY, DD/AA/YYYY, YYYY/AA/GG ve Ay DD gibi birden çok tarih biçimlendiricisi yapılandırabilirsiniz; ayrıca saati hem 12 saat hem de 24 saatlik biçimde ayarlayabilirsiniz. 
 
 ### <a name="associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library"></a>Bir liste veya kitaplığın sütunundaki seçenekler arasından seçim yaparak yer tutucuyu ilişkilendirme
 
@@ -105,7 +108,7 @@ Modern bir şablon oluşturmak için bu adımları izleyin.
 
    ![Yer tutucuyla ilişkilendirilmiş liste alanını gösteren Tüm yer tutucular panelinin ekran görüntüsü.](../media/content-understanding/content-assembly-create-template-9.png)
 
-6. Kullanıcıların el ile giriş ekleyebilmesini istiyorsanız, listeden seçim yapmaya ek olarak **Yazarların yeni seçenekler eklemesine izin ver'i** seçin. Bu durumda, el ile giriş veri türü için varsayılan değer *Tek satır metindir*. Ayrıca, yazarların giriş yaptığı değerler yalnızca belgeyi oluşturmak için kullanılır. Bunlar SharePoint listesine eklenmez.
+6. Kullanıcıların el ile giriş ekleyebilmesini istiyorsanız, listeden seçim yapmaya ek olarak **Yazarların yeni seçenekler eklemesine izin ver'i** seçin. Bu durumda, el ile giriş veri türü için varsayılan değer *Tek satır metindir*. Ayrıca, yazarların giriş yaptığı değerler yalnızca belgeyi oluşturmak için kullanılır. SharePoint listesine eklenmez.
 
 ### <a name="associate-a-placeholder-by-selecting-from-managed-metadata-term-set-or-term"></a>Yönetilen meta veri terim kümesinden veya terimden seçim yaparak yer tutucuyu ilişkilendirme
 
@@ -179,7 +182,7 @@ Mevcut bir şablonu düzenlemeniz veya şablonu silmeniz veya yayımlamanız ger
 
 > [!NOTE]
 > **Geçerli sürüm sınırlamaları**
->- Şu anda şablon oluşturmak için yalnızca Microsoft Word belgeler (.docx uzantısı) desteklenmektedir. Word belgesini karşıya yüklemeden önce, belgenin açıklama içermediğinden veya **Değişiklikleri izle** seçeneğinin etkin olduğundan emin olun. Belgede resimler için metin yer tutucuları varsa, bunların metin sarmalı olmadığından emin olun. Word'deki içerik denetimleri şu anda desteklenmiyor. İçerik denetimleri olan bir Word belgesinden şablon oluşturmak istiyorsanız, modern bir şablon oluşturmadan önce bunları kaldırın.
+>- Şu anda şablon oluşturmak için yalnızca Microsoft Word belgeleri (.docx uzantısı) desteklenmektedir. Word belgesini karşıya yüklemeden önce, belgenin açıklama içermediğinden veya **Değişiklikleri izle** seçeneğinin etkin olduğundan emin olun. Belgede resimler için metin yer tutucuları varsa, bunların metin sarmalı olmadığından emin olun. Word'deki içerik denetimleri şu anda desteklenmiyor. İçerik denetimleri olan bir Word belgesinden şablon oluşturmak istiyorsanız, modern bir şablon oluşturmadan önce bunları kaldırın.
 >- Şablon ve belge bir belge kitaplığıyla ilişkilendirilir. Şablonu başka bir belge kitaplığında kullanmak için, şablonu bu belge kitaplığında yeniden oluşturmanız gerekir.
 >- Modern şablonu oluşturmak için kullanılan karşıya yüklenen belge ayrı bir kopya olarak kaydedilir ve belge kitaplığının /forms dizinine yerleştirilir. Disk üzerindeki özgün dosya etkilenmez.
 >- Yalnızca metin için yer tutucular oluşturabilirsiniz. Görüntüler, akıllı resim, tablolar ve madde işaretleri listeleri şu anda desteklenmiyor.

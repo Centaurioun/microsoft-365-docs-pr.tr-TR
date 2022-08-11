@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 5eb528db1199ab637634fefb5a31ff1344276051
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 08505410ecc331153f88cbf9df5ffccd7662fc3d
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787880"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306294"
 ---
 # <a name="insider-risk-management-policies"></a>Insider risk yönetimi ilkeleri
 
@@ -154,7 +154,7 @@ Insider risk yönetimi ilkeleri, nerede depolandığına, içerik türüne veya 
 
 İlke sihirbazında bir insider risk yönetimi ilkesi oluşturduğunuzda, aşağıdaki önceliklerden birini seçebilirsiniz:
 
-- **SharePoint siteleri**: Tanımlı SharePoint sitelerindeki tüm dosya türleriyle ilişkili tüm etkinliklere daha yüksek bir risk puanı atanır. İlkeyi yapılandıran ve öncelikli Share Point sitelerini seçen kullanıcılar, erişim iznine sahip oldukları SharePoint sitelerini seçebilir. SharePoint siteleri geçerli kullanıcı tarafından ilkede seçilemiyorsa, gerekli izinlere sahip başka bir kullanıcı ilkenin sitelerini daha sonra seçebilir veya geçerli kullanıcıya gerekli sitelere erişim verilmesi gerekir.
+- **SharePoint siteleri**: Tanımlı SharePoint sitelerindeki tüm dosya türleriyle ilişkili tüm etkinliklere daha yüksek bir risk puanı atanır. İlkeyi yapılandıran ve öncelikli SharePoint sitelerini seçen kullanıcılar, erişim iznine sahip oldukları SharePoint sitelerini seçebilir. SharePoint siteleri geçerli kullanıcı tarafından ilkede seçilemiyorsa, gerekli izinlere sahip başka bir kullanıcı ilkenin sitelerini daha sonra seçebilir veya geçerli kullanıcıya gerekli sitelere erişim verilmesi gerekir.
 - **Hassas bilgi türleri**: [Hassas bilgi türleri](sensitive-information-type-entity-definitions.md) içeren içerikle ilişkili tüm etkinliklere daha yüksek bir risk puanı atanır.
 - **Duyarlılık etiketleri**: Belirli [duyarlılık etiketleri](sensitivity-labels.md) uygulanmış içerikle ilişkili tüm etkinliklere daha yüksek bir risk puanı atanır.
 - **Dosya uzantıları**: Belirli dosya uzantılarına sahip içerikle ilişkili tüm etkinlikler. İlke sihirbazında **öncelik belirlemek üzere Dosya uzantıları'nı** seçen bir veri hırsızlığı/sızıntı ilkesi yapılandıran kullanıcılar, ilkede öncelik belirlemek için en fazla 50 dosya uzantısı tanımlayabilir. Girilen uzantılar, önceliklendirilmiş uzantının ilk karakteri olarak bir '.' içerebilir veya atlayabilir.
@@ -303,7 +303,7 @@ Yeni ilke oluşturmak için aşağıdaki adımları tamamlayın:
     - **Dosya uzantıları**: En fazla 50 dosya uzantısı ekleyin. '.' dosyasını dosya uzantısına ekleyebilir veya atlayabilirsiniz. Örneğin, *.py* veya *py* Python dosyalarının önceliklerini belirlemeye yöneliktir.
 
     >[!NOTE]
-    >İlkeyi yapılandıran ve öncelikli Share Point sitelerini seçen kullanıcılar, erişim iznine sahip oldukları SharePoint sitelerini seçebilir. SharePoint siteleri geçerli kullanıcı tarafından ilkede seçilemiyorsa, gerekli izinlere sahip başka bir kullanıcı ilkenin sitelerini daha sonra seçebilir veya geçerli kullanıcıya gerekli sitelere erişim verilmesi gerekir.
+    >İlkeyi yapılandıran ve öncelikli SharePoint sitelerini seçen kullanıcılar, erişim iznine sahip oldukları SharePoint sitelerini seçebilir. SharePoint siteleri geçerli kullanıcı tarafından ilkede seçilemiyorsa, gerekli izinlere sahip başka bir kullanıcı ilkenin sitelerini daha sonra seçebilir veya geçerli kullanıcıya gerekli sitelere erişim verilmesi gerekir.
 
 12. Devam etmek için **İleri'yi** seçin.
 13. *Öncelikli kullanıcılara göre* *Genel veri sızıntıları veya Veri sızıntıları* şablonlarını seçtiyseniz, özel tetikleyici olayları ve ilke göstergeleri için Bu ilkenin **tetikleyicileri** sayfasında seçenekleri görürsünüz. Etkinlik puanlaması için ilkeye atanan kullanıcıları kapsama alanlara getiren olayları tetikleme için bir DLP ilkesi veya gösterge seçme seçeneğiniz vardır. **Kullanıcı bir veri kaybı önleme (DLP) ilkesi tetikleme olayıyla eşleşir** seçeneğini belirlerseniz, bu iç risk yönetimi ilkesi için DLP İlkesi için tetikleyici göstergelerini etkinleştirmek üzere DLP ilkesi açılan listesinden bir DLP ilkesi seçmeniz gerekir. **Kullanıcı bir sızdırma etkinliği tetikleme olayı gerçekleştirir** seçeneğini belirlerseniz, ilke tetikleyici olayı için listelenen göstergelerden birini veya daha fazlasını seçmeniz gerekir.
@@ -361,7 +361,7 @@ Mevcut bir ilkeyi yönetmek için aşağıdaki adımları tamamlayın:
     - **Dosya uzantıları**: En fazla 50 dosya uzantısı ekleyin. '.' dosyasını dosya uzantısına ekleyebilir veya atlayabilirsiniz. Örneğin, *.py* veya *py* Python dosyalarının önceliklerini belirlemeye yöneliktir.
 
     >[!NOTE]
-    >İlkeyi yapılandıran ve öncelikli Share Point sitelerini seçen kullanıcılar, erişim iznine sahip oldukları SharePoint sitelerini seçebilir. SharePoint siteleri geçerli kullanıcı tarafından ilkede seçilemiyorsa, gerekli izinlere sahip başka bir kullanıcı ilkenin sitelerini daha sonra seçebilir veya geçerli kullanıcıya gerekli sitelere erişim verilmesi gerekir.
+    >İlkeyi yapılandıran ve öncelikli SharePoint sitelerini seçen kullanıcılar, erişim iznine sahip oldukları SharePoint sitelerini seçebilir. SharePoint siteleri geçerli kullanıcı tarafından ilkede seçilemiyorsa, gerekli izinlere sahip başka bir kullanıcı ilkenin sitelerini daha sonra seçebilir veya geçerli kullanıcıya gerekli sitelere erişim verilmesi gerekir.
 
 12. Devam etmek için **İleri'yi** seçin.
 13. *Öncelikli kullanıcılara göre* *Genel veri sızıntıları veya Veri sızıntıları* şablonlarını seçtiyseniz, özel tetikleyici olayları ve ilke göstergeleri için Bu ilkenin **tetikleyicileri** sayfasında seçenekleri görürsünüz. Etkinlik puanlaması için ilkeye atanan kullanıcıları kapsama alanlara getiren olayları tetikleme için bir DLP ilkesi veya gösterge seçme seçeneğiniz vardır. **Kullanıcı bir veri kaybı önleme (DLP) ilkesi tetikleme olayıyla eşleşir** seçeneğini belirlerseniz, bu iç risk yönetimi ilkesi için DLP İlkesi için tetikleyici göstergelerini etkinleştirmek üzere DLP ilkesi açılan listesinden bir DLP ilkesi seçmeniz gerekir. **Kullanıcı bir sızdırma etkinliği tetikleme olayı gerçekleştirir** seçeneğini belirlerseniz, ilke tetikleyici olayı için listelenen göstergelerden birini veya daha fazlasını seçmeniz gerekir.

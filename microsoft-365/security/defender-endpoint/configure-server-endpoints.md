@@ -11,6 +11,7 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +19,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7d83a5a3eba765099e58ff0f5086cb985697333d
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 83a311676a1b74e551817c4f0b64f024f80738c8
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107403"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306440"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme
 
@@ -102,26 +103,26 @@ Yeni birleşik çözüm paketi, bağımlılıkları ve yükleme adımlarını ka
 
 Eklediğiniz sunucuya bağlı olarak, birleşik çözüm Microsoft Defender Virüsten Koruma'yı ve/veya EDR algılayıcısını yükler. Aşağıdaki tabloda hangi bileşenin yüklü olduğu ve varsayılan olarak nelerin yerleşik olduğu gösterilir.
 
-|Sunucu sürümü|Av|EDR|
+|Sunucu sürümü|Av|Edr|
 |----|----|----|
 |Windows Server 2012 R2 SP1|![Evet.](images/svg/check-yes.svg)|![Evet.](images/svg/check-yes.svg)|
 |Windows Server 2016|Yerleşik|![Evet.](images/svg/check-yes.svg)|
 |Windows Server 2019 veya üzeri|Yerleşik|Yerleşik|
 
-Sunucularınızı daha önce MMA kullanarak yüklediyseniz, yeni çözüme geçiş yapmak için [Sunucu geçişi](server-migration.md) bölümünde sağlanan yönergeleri izleyin.
+Sunucularınızı daha önce MMA kullanarak ekleme yaptıysanız, yeni çözüme geçiş yapmak için [Sunucu geçişi](server-migration.md) bölümünde sağlanan yönergeleri izleyin.
 
 #### <a name="known-issues-and-limitations-in-the-new-unified-solution-package-for-windows-server-2012-r2-and-2016"></a>Windows Server 2012 R2 ve 2016 için yeni, birleşik çözüm paketindeki bilinen sorunlar ve sınırlamalar
 
 Aşağıdaki ayrıntılar Windows Server 2012 R2 ve 2016 için yeni birleşik çözüm paketi için geçerlidir:
 
-- [Proxy sunucusundaki Uç Nokta için Microsoft Defender hizmet URL'lerine erişimi etkinleştirme](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) bölümünde belirtildiği gibi bağlantı gereksinimlerinin karşılandığından emin olun. Bunlar Windows Server 2019'a eşdeğerdir.
+- [Proxy sunucusundaki Uç Nokta için Microsoft Defender hizmet URL'lerine erişimi etkinleştirme](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) bölümünde belirtildiği gibi bağlantı gereksinimlerinin karşılandığından emin olun. Bunlar, Windows Server 2019 için bu gereksinimlere eşdeğerdir.
 - Statik TelemetryProxyServer kullanıldığında **ve** sertifika iptal listesi (CRL) URL'lerine SYSTEM hesabı bağlamından ulaşılamadığında buluta Windows Server 2012 R2 bağlantısıyla ilgili bir sorun tespit ettik. Hemen azaltma, bu tür bir bağlantı sağlayan alternatif bir proxy seçeneği ("sistem genelinde") kullanmak veya SYSTEM hesabı bağlamında WinInet ayarı aracılığıyla aynı proxy'yi yapılandırmaktır.
 Alternatif olarak, geçici bir çözüm olarak sertifika yüklemek [için bağlantısı kesilmiş makinelerde TelemetryProxyServer ile ilgili bilinen bir sorun için Geçici Çözüm'de](#workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines) sağlanan yönergeleri kullanın.
 - Daha önce, OMS/Log Analytics ağ geçidinin Defender bulut hizmetlerine bağlantı sağlaması için Windows Server 2016 ve altında Microsoft Monitoring Agent'ın (MMA) kullanılmasına izin veriliyor. Windows Server 2019, Windows Server 2022 ve Windows 10'da Uç Nokta için Microsoft Defender gibi yeni çözüm bu ağ geçidini desteklemez.
 - Windows Server 2016,Microsoft Defender Virüsten Koruma'nın yüklü olduğunu, etkin ve güncel olduğunu doğrulayın. Windows Update kullanarak en son platform sürümünü indirip yükleyebilirsiniz. Alternatif olarak, güncelleştirme paketini [Microsoft Update Kataloğu'ndan](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) veya [MMPC'den](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64) el ile indirin.
-- Windows Server 2012 R2'de Microsoft Defender Virüsten Koruma için kullanıcı arabirimi yoktur. Ayrıca, Windows Server 2016 üzerindeki kullanıcı arabirimi yalnızca temel işlemlere izin verir. Bir cihazda yerel olarak işlem gerçekleştirmek için Bkz. [PowerShell, WMI ve MPCmdRun.exeile Uç Nokta için Microsoft Defender yönetme](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). Sonuç olarak, özellikle kullanıcı etkileşimini kullanan, kullanıcının bir karar vermesinin veya belirli bir görevi gerçekleştirmesinin istendiği yer gibi özellikler beklendiği gibi çalışmayabilir. Kullanıcı arabirimini devre dışı bırakması veya etkinleştirmemesi ya da koruma özelliğini etkileyebilecek herhangi bir yönetilen sunucuda kullanıcı etkileşimi gerektirmesi önerilir.
+- Windows Server 2012 R2'de Microsoft Defender Virüsten Koruma için kullanıcı arabirimi yoktur. Ayrıca, Windows Server 2016 üzerindeki kullanıcı arabirimi yalnızca temel işlemlere izin verir. Bir cihazda yerel olarak işlem gerçekleştirmek için Bkz. [PowerShell, WMI ve MPCmdRun.exeile Uç Nokta için Microsoft Defender yönetme](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). Sonuç olarak, özellikle kullanıcı etkileşimini kullanan, kullanıcının bir karar vermesinin veya belirli bir görevi gerçekleştirmesinin istendiği yer gibi özellikler beklendiği gibi çalışmayabilir. Kullanıcı arabirimini devre dışı bırakması veya etkinleştirmemesi veya herhangi bir yönetilen sunucuda kullanıcı etkileşimi gerektirmesi önerilir çünkü koruma özelliğini etkileyebilir.
 - Tüm Saldırı Yüzeyi Azaltma kuralları tüm işletim sistemlerinde kullanılamaz. Bkz [. Saldırı Yüzeyi Azaltma (ASR) kuralları](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules).
-- [Ağ Koruması'nı](/microsoft-365/security/defender-endpoint/network-protection) etkinleştirmek için ek yapılandırma gerekir:
+- [Ağ Koruması'nı](/microsoft-365/security/defender-endpoint/network-protection) etkinleştirmek için daha fazla yapılandırma gerekir:
   - `Set-MpPreference -EnableNetworkProtection Enabled`
   - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
   - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
@@ -131,16 +132,16 @@ Alternatif olarak, geçici bir çözüm olarak sertifika yüklemek [için bağla
 - Windows Server 2012 R2'de Ağ Olayları zaman çizelgesinde doldurulamayabilir. Bu sorun[, 12 Ekim 2021 aylık toplaması (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e) kapsamında yayımlanan bir Windows Update gerektirir.
 - İşletim sistemi yükseltmeleri desteklenmez. Ardından yükseltmeden önce kaldırın.
 - **Sunucu rolleri** için otomatik dışlamalar Windows Server 2012 R2'de desteklenmez; ancak işletim sistemi dosyaları için yerleşik dışlamalar desteklenir. Dışlama ekleme hakkında daha fazla bilgi için bkz. [Şu anda desteklenen Windows sürümlerini çalıştıran Kurumsal bilgisayarlar için virüs tarama önerileri](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
-- Önceki MMA tabanlı çözümden yükseltilen makinelerde ve EDR algılayıcısı 10.8047.22439.1056'dan eski bir (önizleme) sürümüdür. MMA tabanlı çözümün kaldırılması ve geri döndürülmesi kilitlenmelere neden olabilir. Böyle bir önizleme sürümü kullanıyorsanız lütfen KB5005292 kullanarak güncelleştirin.
-- Microsoft Endpoint Manager kullanarak yeni çözümü dağıtmak ve eklemek için şu anda bir paket oluşturulması gerekir. Configuration Manager'da program ve betik dağıtma hakkında daha fazla bilgi için bkz. [Configuration Manager'de paketler ve programlar](/configmgr/apps/deploy-use/packages-and-programs). Endpoint Protection düğümünü kullanarak ilke yapılandırma yönetimini desteklemek için düzeltme paketi veya üzerini içeren MECM 2107 gereklidir.
+- Önceki MMA tabanlı çözümden yükseltilen makinelerde ve EDR algılayıcısı 10.8047.22439.1056'dan eski bir (önizleme) sürümüdür. MMA tabanlı çözümün kaldırılması ve geri döndürülmesi kilitlenmelere neden olabilir. Böyle bir önizleme sürümü kullanıyorsanız KB5005292 kullanarak güncelleştirin.
+- Microsoft Endpoint Manager kullanarak yeni çözümü dağıtmak ve eklemek için bu işlem şu anda bir paket oluşturulmasını gerektirir. Configuration Manager'da program ve betik dağıtma hakkında daha fazla bilgi için bkz. [Configuration Manager'de paketler ve programlar](/configmgr/apps/deploy-use/packages-and-programs). Endpoint Protection düğümünü kullanarak ilke yapılandırma yönetimini desteklemek için düzeltme paketi veya üzerini içeren MECM 2107 gereklidir.
 
 ## <a name="workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines"></a>Bağlantısı kesilmiş makinelerde TelemetryProxyServer ile ilgili bilinen bir sorun için geçici çözüm
 
 Sorun açıklaması: Sertifika İptal Listesi (CRL) URL'sine erişmek için başka bir yolu olmayan makinelerde, Uç Nokta için Microsoft Defender EDR bileşeni tarafından kullanılacak bir ara sunucu belirtmek için TelemetryProxyServer ayarını kullanırken, eksik bir ara sertifika EDR algılayıcısının bulut hizmetine başarıyla bağlanmamasına neden olur.
 
-Etkilenen senaryo: Windows Server 2012 R2'de çalışan Akıllı sürüm numarası 10.8048.22439.1065 veya önceki önizleme sürümleriyle -Uç Nokta için Microsoft Defender -TelemetryProxyServer proxy yapılandırmasını kullanma; diğer yöntemler etkilenmez
+Etkilenen senaryo: Windows Server 2012 R2 üzerinde çalışan Akıllı sürüm numarası 10.8048.22439.1065 veya önceki önizleme sürümleriyle -Uç Nokta için Microsoft Defender -TelemetryProxyServer proxy yapılandırmasını kullanma; diğer yöntemler etkilenmez
 
-Geçici çözüm:
+Geçi -ci çözüm:
 1. Ekleme sayfasında bulunan en son paketi kullanarak veya KB5005292 uygulayarak makinenin Akıllı sürüm 10.8048.22439.1065 veya üzerini çalıştırdığından emin olun.
 2. Sertifikayı indirme ve sıkıştırmasını açma https://github.com/microsoft/mdefordownlevelserver/blob/main/InterCA.zip
 3. Sertifikayı Yerel Bilgisayar güvenilen "Ara Sertifika Yetkilileri" deposuna aktarın.
@@ -162,7 +163,7 @@ Daha fazla bilgi için bkz. [Bulut için Microsoft Defender ile tümleştirme](a
 
 #### <a name="prerequisites-for-windows-server-2012-r2"></a>Windows Server 2012 R2 için önkoşullar
 
-Makinelerinizi en son [aylık toplama](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e) paketiyle tamamen güncelleştirdiyseniz ek önkoşul **yoktur** .
+Makinelerinizi en son [aylık toplama](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e) paketiyle tamamen güncelleştirdiyseniz başka **bir önkoşul yoktur** .
 
 Yükleyici paketi, aşağıdaki bileşenlerin bir güncelleştirme aracılığıyla zaten yüklenip yüklenmediğini denetler:
 
@@ -172,14 +173,16 @@ Yükleyici paketi, aşağıdaki bileşenlerin bir güncelleştirme aracılığı
 #### <a name="prerequisites-for-windows-server-2016"></a>Windows Server 2016 önkoşulları
 
 - 14 Eylül 2021 veya sonraki sürümlerden hizmet yığını güncelleştirmesi (SSU) yüklenmelidir.
-- 20 Eylül 2018 veya sonraki sürümlerden en son Toplu Güncelleştirme (LCU) yüklenmelidir.  Sunucuya en son kullanılabilir SSU ve LCU'nun yüklenmesi önerilir.  - Microsoft Defender Virüsten Koruma özelliğinin etkinleştirilmesi/yüklenmesi ve güncel olması gerekir. Windows Update kullanarak en son platform sürümünü indirip yükleyebilirsiniz. Alternatif olarak, güncelleştirme paketini [Microsoft Update Kataloğu'ndan](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) veya [MMPC'den](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64) el ile indirin.
+- 20 Eylül 2018 veya sonraki sürümlerden en son Toplu Güncelleştirme (LCU) yüklenmelidir.  Sunucuya en son kullanılabilir SSU ve LCU'nun yüklenmesi önerilir
+- Microsoft Defender Virüsten Koruma (MDAV) özelliğini etkinleştirin ve güncel olduğundan emin olun. Windows Server'da Defender Virüsten Koruma'yı etkinleştirme hakkında daha fazla bilgi için bkz. [Devre dışı bırakıldıysa Windows Server'da Defender Virüsten Koruma'yı](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled) [yeniden etkinleştirme ve kaldırılmışsa Windows Server'da Defender Virüsten Koruma'yı yeniden etkinleştirme](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled).
+- Windows Update kullanarak en son platform sürümünü indirin ve yükleyin. Alternatif olarak, güncelleştirme paketini [Microsoft Update Kataloğu'ndan](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) veya [MMPC'den](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64) el ile indirin.
 
 #### <a name="prerequisites-for-running-with-third-party-security-solutions"></a>Üçüncü taraf güvenlik çözümleriyle çalışmak için önkoşullar
 
 Üçüncü taraf kötü amaçlı yazılımdan koruma çözümü kullanmak istiyorsanız Microsoft Defender Virüsten Koruma'yı pasif modda çalıştırmanız gerekir. Yükleme ve ekleme işlemi sırasında pasif moda ayarlamayı unutmayın.
 
 > [!NOTE]
-> McAfee Endpoint Security (ENS) veya VirusScan Enterprise (VSE) bulunan sunuculara Uç Nokta için Microsoft Defender yüklüyorsanız, Microsoft Defender Virüsten Koruma'nın kaldırılmadığından veya devre dışı bırakılmadığından emin olmak için McAfee platformunun sürümünün güncelleştirilmesi gerekebilir. Gereken sürüm numaraları dahil olmak üzere daha fazla bilgi için [McAfee Bilgi Merkezi makalesine bakın](https://kc.mcafee.com/corporate/index?page=content&id=KB88214).
+> McAfee Endpoint Security (ENS) veya VirusScan Enterprise (VSE) bulunan sunuculara Uç Nokta için Microsoft Defender yüklüyorsanız, Microsoft Defender Virüsten Koruma'nın kaldırılmadığından veya devre dışı bırakılmadığından emin olmak için McAfee platformunun sürümünün güncelleştirilmesi gerekebilir. Gereken sürüm numaraları dahil olmak üzere daha fazla bilgi için [McAfee Bilgi Merkezi makalesine bakın](https://kcm.trellix.com/corporate/index?page=content&id=KB88214).
 
 #### <a name="update-package-for-microsoft-defender-for-endpoint-on-windows-server-2012-r2-and-2016"></a>Windows Server 2012 R2 ve 2016'da Uç Nokta için Microsoft Defender için güncelleştirme paketi
 
@@ -229,7 +232,7 @@ Paketleri indirmek için aşağıdaki adımları kullanın:
 
 ### <a name="step-2-apply-the-installation-and-onboarding-package"></a>ADIM 2: Yükleme ve ekleme paketini uygulama
 
-Bu adımda, makineyi eklemeye hazırlamak için cihazınızı Uç Nokta için Microsoft Defender bulut ortamına eklemeden önce gerekli önleme ve algılama bileşenlerini yükleyebilirsiniz. Tüm [önkoşulların](#prerequisites) karşılandığından emin olun.
+Bu adımda, makineyi eklemeye hazırlamak için cihazınızı Uç Nokta için Microsoft Defender bulut ortamına eklemeden önce gerekli önleme ve algılama bileşenlerini yükleyeceksiniz. Tüm [önkoşulların](#prerequisites) karşılandığından emin olun.
 
    > [!NOTE]
    > Microsoft Defender Virüsten Koruma yüklenir ve pasif moda ayarlamadığınız sürece etkin olur.
@@ -277,7 +280,7 @@ Yükleme, kaldırma ve ekleme işlemini otomatikleştirmeye yardımcı olması i
 > [!NOTE]
 > Yükleme betiği imzalandı. Betikte yapılan değişiklikler imzayı geçersiz kılacak. Betiği GitHub'dan indirdiğinizde, yanlışlıkla değiştirilmesini önlemek için önerilen yaklaşım, kaynak dosyaları zip arşivi olarak indirmek ve ardından install.ps1 dosyasını almak için ayıklamaktır (ana Kod sayfasında Kod açılan menüsüne tıklayın ve "ZIP'i İndir"i seçin).
 
-Bu betik, [önceki MMA tabanlı Uç Nokta için Microsoft Defender çözümünden sunucu geçişi senaryoları](/microsoft-365/security/defender-endpoint/server-migration) ve aşağıda açıklandığı gibi grup ilkesi kullanılarak dağıtım için açıklananlar da dahil olmak üzere çeşitli senaryolarda kullanılabilir.
+Bu betik, [önceki MMA tabanlı Uç Nokta için Microsoft Defender çözümünden sunucu geçişi senaryolarında açıklanan senaryolar](/microsoft-365/security/defender-endpoint/server-migration) ve aşağıda açıklandığı gibi grup ilkesi kullanılarak dağıtım için de dahil olmak üzere çeşitli senaryolarda kullanılabilir.
 
 ##### <a name="apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy"></a>Grup ilkesini kullanarak Uç Nokta için Microsoft Defender yükleme ve ekleme paketlerini uygulama
 
@@ -313,16 +316,16 @@ Bu betik, [önceki MMA tabanlı Uç Nokta için Microsoft Defender çözümünde
 
 10. GPO'yu Bir Kuruluş Birimine (OU) bağlamak için sağ tıklayın ve **Var olan bir GPO'yu bağla'ya** tıklayın. Görüntülenen iletişim kutusunda, bağlamak istediğiniz grup ilkesi Nesnesi'ni seçin. **Tamam**'a tıklayın.
 
-Ek yapılandırma ayarları için bkz [. Örnek koleksiyon ayarlarını](configure-endpoints-gp.md#configure-sample-collection-settings) yapılandırma ve [Diğer önerilen yapılandırma ayarları](configure-endpoints-gp.md#other-recommended-configuration-settings).
+Daha fazla yapılandırma ayarı için bkz [. Örnek koleksiyon ayarlarını](configure-endpoints-gp.md#configure-sample-collection-settings) yapılandırma ve [Diğer önerilen yapılandırma ayarları](configure-endpoints-gp.md#other-recommended-configuration-settings).
 
 ### <a name="step-3-complete-the-onboarding-steps"></a>3. ADIM: Ekleme adımlarını tamamlayın
 
 Aşağıdaki adımlar yalnızca üçüncü taraf kötü amaçlı yazılımdan koruma çözümü kullanıyorsanız geçerlidir. Aşağıdaki Microsoft Defender Virüsten Koruma pasif mod ayarını uygulamanız gerekir. Doğru yapılandırıldığını doğrulayın:
 
 1. Aşağıdaki kayıt defteri girdisini ayarlayın:
-    - Yol: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
+    - Yolu: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
     - Ad: `ForceDefenderPassiveMode`
-    - Tür: `REG_DWORD`
+    - Türü: `REG_DWORD`
     - Değer: `1`
 
    :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="Pasif mod doğrulama sonucu" lightbox="images/atp-verify-passive-mode.png":::

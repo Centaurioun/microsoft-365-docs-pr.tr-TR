@@ -1,6 +1,6 @@
 ---
-title: Uç Nokta için Microsoft Defender'da Koşullu Erişimi Yapılandırma
-description: Koşullu erişim uygulamak için Intune, Microsoft 365 Defender ve Azure'da adımlar hakkında bilgi edinin
+title: Uç Nokta için Microsoft Defender'de Koşullu Erişimi Yapılandırma
+description: Koşullu erişim uygulamak için Intune, Microsoft 365 Defender ve Azure'da gerçekleştirmeniz gereken adımlar hakkında bilgi edinin
 keywords: koşullu erişim, koşullu, erişim, cihaz riski, risk düzeyi, tümleştirme, intune tümleştirmesi
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,105 +14,109 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8706f756b4e8d0ba87a747396e8f7ef71d66460c
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: b476cc6085c3ec65d638a77e34444d687a86aa11
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996461"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306470"
 ---
-# <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da Koşullu Erişimi Yapılandırma
+# <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de Koşullu Erişimi Yapılandırma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Bu bölüm, Koşullu Erişim'i düzgün bir şekilde uygulamak için ihtiyacınız olan tüm adımlarda size yol sağlar.
+Bu bölüm, Koşullu Erişimi düzgün bir şekilde uygulamak için uygulamanız gereken tüm adımlarda size yol gösterir.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
 > [!WARNING]
-> Bu senaryoda Azure AD kayıtlı cihazların desteklene olmadığını unutmayın.</br>
-> Yalnızca Intune'a kayıtlı cihazlar de desteklemektedir.
+> Kayıtlı Azure AD cihazların bu senaryoda desteklenmediğini unutmayın.</br>
+> Yalnızca Intune kayıtlı cihazlar desteklenir.
 
-Tüm cihazlarınızı Intune'a kayıtlı olduğundan emin olun. Intune'da cihazları kaydetmek için aşağıdaki seçeneklerden herhangi birini kullanabilirsiniz:
+Tüm cihazlarınızın Intune kayıtlı olduğundan emin olmanız gerekir. Cihazları Intune kaydetmek için aşağıdaki seçeneklerden herhangi birini kullanabilirsiniz:
 
-- IT Yöneticisi: Otomatik kaydı etkinleştirme hakkında daha fazla bilgi için bkz. Windows [Kaydı](/intune/windows-enroll#enable-windows-10-automatic-enrollment)
-- Son kullanıcı: Intune'da Windows 10 ve Windows 11 cihazınızı kaydetme hakkında daha fazla bilgi için bkz. [Windows 10 cihazınızı Intune'a kaydetme](/intune/quickstart-enroll-windows-device)
-- Son kullanıcı alternatifi: Azure AD etki alanına katılma hakkında daha fazla bilgi için bkz [. Nasıl yapılan: Azure AD birleştirme uygulamanızı planlama](/azure/active-directory/devices/azureadjoin-plan).
+- BT Yönetici: Otomatik kaydı etkinleştirme hakkında daha fazla bilgi için bkz. [Windows Kaydı](/intune/windows-enroll#enable-windows-10-automatic-enrollment)
+- Son kullanıcı: Windows 10 ve Windows 11 cihazınızı Intune kaydetme hakkında daha fazla bilgi için bkz[. Windows 10 cihazınızı Intune](/intune/quickstart-enroll-windows-device)
+- Son kullanıcı alternatifi: Azure AD etki alanına katılma hakkında daha fazla bilgi için bkz[. Nasıl yapılır: Azure AD katılma uygulamanızı planlama](/azure/active-directory/devices/azureadjoin-plan).
 
-Uygulama adımlarını, Intune portalını Microsoft 365 Defender Azure AD portalını kullanarak atılması gereken adımlar vardır.
+Microsoft 365 Defender, Intune portalı ve Azure AD portalında uygulamanız gereken adımlar vardır.
 
-Bu portallara erişmek ve Koşullu erişim uygulamak için gereken rolleri not etmek önemlidir:
+Bu portallara erişmek ve Koşullu erişim uygulamak için gerekli rolleri not almak önemlidir:
 
-- **Microsoft 365 Defender**- Tümleştirmeyi açmak için portalda bir genel yönetici rolüyle oturum açabilirsiniz.
-- **Intune** - Yönetim izinleri olan güvenlik yöneticisi haklarıyla portalda oturum açın.
-- **Azure AD portalı** - Genel yönetici, güvenlik yöneticisi veya Koşullu Erişim yöneticisi olarak oturum açın.
+- **Microsoft 365 Defender** - Tümleştirmeyi açmak için portalda genel yönetici rolüyle oturum açmanız gerekir.
+- **Intune** - Yönetim izinlerine sahip güvenlik yöneticisi haklarıyla portalda oturum açmanız gerekir.
+- **Azure AD portalı** - Genel yönetici, güvenlik yöneticisi veya Koşullu Erişim yöneticisi olarak oturum açmanız gerekir.
 
 > [!NOTE]
-> Intune tarafından yönetilen Microsoft Intune Azure AD'nin 11 cihazla birlikte katıldığı bir Windows 10 Windows gerekir.
+> Intune yönetilen ve Azure AD birleştirilmiş Windows 10 ve Windows 11 cihazları olan bir Microsoft Intune ortamına ihtiyacınız vardır.
 
-Koşullu Erişim'i etkinleştirmek için aşağıdaki adımları izleyin:
+Koşullu Erişimi etkinleştirmek için aşağıdaki adımları uygulayın:
 
-- 1. Adım: Bağlantı Microsoft Intune bağlantısını Microsoft 365 Defender
-- 2. Adım: Intune'da Uç Nokta tümleştirmesi için Defender'ı açma
-- 3. Adım: Intune'da uyumluluk ilkesi oluşturma
+- 1. Adım: Microsoft 365 Defender Microsoft Intune bağlantısını açma
+- 2. Adım: Intune'de Uç Nokta için Defender tümleştirmesini açma
+- 3. Adım: uyumluluk ilkesini Intune'de oluşturma
 - 4. Adım: İlkeyi atama 
 - 5. Adım: Azure AD Koşullu Erişim ilkesi oluşturma
 
-### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>1. Adım: Microsoft Intune açma
+### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>1. Adım: Microsoft Intune bağlantısını açma
 
-1. Gezinti bölmesinde, Genel Gelişmiş **Ayarlar** \> **Uç Noktaları Ve** \>  \> **Bağlantı için Microsoft Intune** \> **seçin**.
-2. Bu ayarı Microsoft Intune Açık olarak **seçin**.
-3. Kaydetme **tercihleri'ne tıklayın**.
+1. Gezinti bölmesinde **Ayarlar** \> **Uç Noktaları** \> **Genel** \> **Gelişmiş özellikler** \> **Microsoft Intune bağlantı'yı** seçin.
+2. Microsoft Intune ayarını **Açık** olarak değiştirin.
+3. **Tercihleri kaydet'e** tıklayın.
 
-### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>2. Adım: Intune'da Uç Nokta tümleştirmesi için Defender'ı açma
+### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>2. Adım: Intune'de Uç Nokta için Defender tümleştirmesini açma
 
 1. [Azure portalda](https://portal.azure.com) oturum açın.
-2. Cihaz **uyumluluğu** \> **Microsoft Defender ATP'yi seçin**.
-3. **Bağlan Windows 10.0.15063+ cihazlarını Microsoft Defender Gelişmiş Tehdit Koruması olarak Açık** olarak **ayarlayın**.
+2. **Cihaz uyumluluğu** \> **Microsoft Defender ATP'yi** seçin.
+3. **Connect Windows 10.0.15063+ cihazlarını Microsoft Defender Gelişmiş Tehdit Koruması** olarak **Açık** olarak ayarlayın.
 4. **Kaydet**'e tıklayın.
 
-### <a name="step-3-create-the-compliance-policy-in-intune"></a>3. Adım: Intune'da uyumluluk ilkesi oluşturma
+### <a name="step-3-create-the-compliance-policy-in-intune"></a>3. Adım: uyumluluk ilkesini Intune'de oluşturma
 
-1. [Azure portalında Tüm](https://portal.azure.com) **hizmetler'i seçin**, **Intune'a** göre filtre uygulama ve Tüm Hizmetler'i **Microsoft Intune**.
-2. Cihaz **Uyumluluk İlkeleri** \> **İlkeleri Oluştur'a** \> **seçin**.
-3. Ad ve **Açıklama** **girin**.
-4. **Platform'da** Seçenekler ve **Windows 10 seçin**.
-5. Cihaz **Durumu ayarlarında,** Cihazın tercih **ettiğiniz düzeye** göre Cihaz Tehdit Düzeyi'nde veya altında yer ayarlama:
+1. [Azure portal](https://portal.azure.com) **Tüm hizmetler'i** seçin, **Intune** filtreleyin ve **Microsoft Intune'ı** seçin.
+2. **Cihaz uyumluluk** \> **İlkeleri İlke** \> **oluştur'u** seçin.
+3. **Ad** ve **Açıklama** girin.
+4. **Platform'da** **Windows 10 ve üzerini** seçin.
+5. **Cihaz Durumu** ayarlarında Cihazın **Cihaz Tehdit Düzeyi'nde veya altında olmasını gerektir'i** tercih ettiğiniz düzeye ayarlayın:
 
-   - **Güvenli**: En güvenli düzeydir. Cihazın mevcut tehditlere sahip olamaz ve şirket kaynaklarına erişmeye devam edebilirsiniz. Herhangi bir tehdit bulunursa cihaz uyumlu olmayan olarak değerlendirilir.
-   - **Düşük**: Yalnızca düşük düzeyli tehdit varsa cihaz uyumludur. Orta veya yüksek tehdit düzeylerine sahip cihazlar uyumlu değildir.
-   - **Orta**: Cihazda bulunan tehditlerin düşük veya orta olması cihaza uyumludur. Yüksek düzeydeki tehditler algılanırsa cihaz uyumlu olmayan olarak değerlendirilir.
-   - **Yüksek**: Bu düzey en az güvenlidir ve tüm tehdit düzeylerine izin verir. Dolayısıyla, yüksek, orta veya düşük tehdit düzeylerine sahip cihazlar uyumlu kabul edilir.
+   - **Güvenli**: En güvenli düzeydir. Cihaz mevcut tehditlere sahip olamaz ve şirket kaynaklarına erişmeye devam edemez. Herhangi bir tehdit bulunursa cihaz uyumlu olmayan olarak değerlendirilir.
+   - **Düşük**: Cihaz yalnızca düşük düzeyli tehditler varsa uyumludur. Orta veya yüksek tehdit düzeyine sahip cihazlar uyumlu değildir.
+   - **Orta**: Cihazda bulunan tehditler düşük veya ortaysa cihaz uyumludur. Yüksek düzeydeki tehditler algılanırsa cihaz uyumlu olmayan olarak değerlendirilir.
+   - **Yüksek**: Bu düzey en az güvenlidir ve tüm tehdit düzeylerine izin verir. Bu nedenle yüksek, orta veya düşük tehdit düzeylerine sahip cihazlar uyumlu olarak kabul edilir.
 
-6. **Değişikliklerinizi kaydetmek** (**ve ilkeyi** oluşturmak) için Tamam'ı ve Oluştur'a tıklayın.
+6. **Tamam'ı** ve **Oluştur'u** seçerek değişikliklerinizi kaydedin (ve ilkeyi oluşturun).
 
 ### <a name="step-4-assign-the-policy"></a>4. Adım: İlkeyi atama
 
-1. [Azure portalında Tüm](https://portal.azure.com) **hizmetler'i seçin**, **Intune'a** göre filtre uygulama ve Tüm Hizmetler'i **Microsoft Intune**.
-2. Cihaz **Uyumluluk İlkeleri** \> **'**> Uç nokta uyumluluk ilkesi için Microsoft Defender'ı seçin.
-3. **Ödevler'i seçin**.
-4. İlkeyi atamak için Azure AD gruplarınızı dahil edin veya dışlayın.
-5. İlkeyi gruplara dağıtmak için Kaydet'i **seçin**. İlke tarafından hedef alan kullanıcı cihazları uyumluluk için değerlendirilir.
+1. [Azure portal](https://portal.azure.com) **Tüm hizmetler'i** seçin, **Intune** filtreleyin ve **Microsoft Intune'ı** seçin.
+2. **Cihaz uyumluluk** \> **İlkeleri'ni** seçin> Uç Nokta için Microsoft Defender uyumluluk ilkenizi seçin.
+3. **Ödevler'i** seçin.
+4. İlkeyi atamak için Azure AD gruplarınızı dahil edin veya hariç tutun.
+5. İlkeyi gruplara dağıtmak için **Kaydet'i** seçin. İlke tarafından hedeflenen kullanıcı cihazları uyumluluk açısından değerlendirilir.
 
 ### <a name="step-5-create-an-azure-ad-conditional-access-policy"></a>5. Adım: Azure AD Koşullu Erişim ilkesi oluşturma
 
-1. [Azure portalında,](https://portal.azure.com) Koşullu **Erişim Azure Active Directory** \> **ilkeyi** \> **açın**.
-2. bir ilke Adı **girin ve** Kullanıcılar ve **gruplar'ı seçin**. İlke için gruplarınızı eklemek üzere Ekle veya Dışarıda Bırak seçeneklerini kullanın ve Bitti'yi **seçin**.
-3. Bulut **uygulamaları'ı** seçin ve hangi uygulamaların korunmasını istediğinize seçin. Örneğin, Uygulamaları **seç'i ve ardından** **Office 365 SharePoint Online'ı ve Office 365 Exchange Online****.** **Değişikliklerinizi kaydetmek** için Bitti'yi seçin.
+1. [Azure portal](https://portal.azure.com) **Azure Active Directory** \> **Koşullu Erişim** \> **Yeni ilkesi'ni** açın.
+2. İlke **Adı** girin ve **Kullanıcılar ve gruplar'ı** seçin. İlkeye gruplarınızı eklemek için Dahil Et veya Dışla seçeneklerini kullanın ve **Bitti'yi** seçin.
+3. **Bulut uygulamaları'nı** seçin ve hangi uygulamaların korunacaklarını seçin. Örneğin, **Uygulama seç'i** seçin ve **sharepoint online ve Office 365 Exchange Online Office 365** **seçin.** Değişikliklerinizi kaydetmek için **Bitti'yi** seçin.
 
-4. **İlkeyi** \> **uygulamalara ve** tarayıcılara uygulamak için Koşullar İstemci uygulamaları'ı seçin. Örneğin, **Evet'i seçin** ve ardından **Tarayıcı ve Mobil** uygulamalar **ile masaüstü istemcilerini etkinleştirin**. **Değişikliklerinizi kaydetmek** için Bitti'yi seçin.
+4. İlkeyi uygulamalara ve tarayıcılara uygulamak için **Koşullar** \> **İstemci uygulamaları'nı** seçin. Örneğin, **Evet'i** seçip **Tarayıcı** ve **Mobil uygulamalar ile masaüstü istemcilerini** etkinleştirin. Değişikliklerinizi kaydetmek için **Bitti'yi** seçin.
 
-5. Cihaz **uyumluluğuna** bağlı olarak Koşullu Erişim uygulamak için Ver'i seçin. Örneğin, Erişim ver **Cihazın uyumlu** \> **olarak işaret verilmesini gerektir'i seçin**. **Değişikliklerinizi kaydetmek** için Seç'i seçin.
+5. Cihaz uyumluluğuna göre Koşullu Erişim uygulamak için **İzin Ver'i** seçin. Örneğin Erişim **izni ver** \> **Cihazın uyumlu olarak işaretlenmesini gerektir'i** seçin. Değişikliklerinizi kaydetmek için **Seç'i** seçin.
 
-6. **Değişikliklerinizi kaydetmek için** İlkeyi **etkinleştir'i ve** ardından Oluştur'a tıklayın.
+6. değişikliklerinizi kaydetmek için **İlkeyi etkinleştir'i** ve ardından **Oluştur'u** seçin.
 
-Daha fazla bilgi için bkz [. Intune'da Koşullu Erişim ile Uç Nokta için Microsoft Defender'da uyumluluğu zorlama](/intune/advanced-threat-protection).
+> [!NOTE]
+> Cihaz Uyumluluğu ve Koşullu Erişim ilkelerini ayarlamak için Uç Nokta için Microsoft Defender uygulamasını Intune'daki Onaylı İstemci uygulaması ilkesiyle birlikte kullanabilirsiniz. Koşullu Erişim ayarlanırken Uç Nokta için Microsoft Defender uygulaması için dışlama gerekmez. Android & iOS'ta Uç Nokta için Microsoft Defender (Uygulama Kimliği - dd47d17a-3194-4d86-bfd5-c6ae6f5651e3) onaylı bir uygulama olmasa da, cihaz güvenlik duruşu bildirme iznine sahiptir. Bu izin, Koşullu Erişim'e uyumluluk bilgileri akışı sağlar.
+> Bu değişikliğin 30 Eylül 2022'den itibaren geçerli olacağını lütfen unutmayın.
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
+Daha fazla bilgi için bkz. [Intune'da Koşullu Erişim ile Uç Nokta için Microsoft Defender uyumluluğu zorlama](/intune/advanced-threat-protection).
+
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

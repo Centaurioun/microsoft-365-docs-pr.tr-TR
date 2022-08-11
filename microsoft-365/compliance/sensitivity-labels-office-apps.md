@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d35555f466b1ec201185efd51f37d4111911f16d
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 0b8ee8f3d4a5ef1176c482aa6cb54d866fd4dd41
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276469"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306580"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -39,7 +39,7 @@ Office'in abonelik sürümleri için Kurumlar için Microsoft 365 Uygulamaları 
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Uygulamalarda duyarlılık etiketi özellikleri desteği
 
-Aşağıdaki tablolarda, Office uygulamalarında yerleşik olarak bulunan duyarlılık etiketlerine yönelik belirli özelliklerin sunulduğu en düşük Office sürümü listelenir. Ya da etiket özelliği genel önizlemedeyse veya gelecekteki bir sürüm için gözden geçiriliyorsa. Gelecek sürümler için planlanan yeni özelliklerle ilgili ayrıntılar için [Microsoft 365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity) kullanın.
+Aşağıdaki tablolarda, Office uygulamalarında yerleşik olarak bulunan duyarlılık etiketlerine yönelik belirli özelliklerin sunulduğu en düşük Office sürümü listelenir. Ya da etiket özelliği genel önizlemedeyse veya gelecekteki bir sürüm için gözden geçiriliyorsa. Gelecek sürümler için planlanan yeni özelliklerle ilgili ayrıntılar için [Microsoft 365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) kullanın.
 
 Office uygulamalarının yeni sürümleri farklı güncelleştirme kanalları için farklı zamanlarda kullanıma sunulur. Windows için yeni özellikleri daha önce Kurumsal Kanal yerine Geçerli Kanal veya Aylık Kurumsal Kanal'da Semi-Annual edineceksiniz. En düşük sürüm numaraları bir güncelleştirme kanalından diğerine de farklı olabilir. Daha fazla bilgi için bkz[. Microsoft 365 Uygulamaları güncelleştirme kanallarına genel bakış](/deployoffice/overview-update-channels) ve [Microsoft 365 Uygulamaları için Güncelleştirme geçmişi](/officeupdates/update-history-microsoft365-apps-by-date).
 

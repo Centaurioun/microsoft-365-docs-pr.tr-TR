@@ -16,13 +16,13 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.date: 02/04/2022
-ms.openlocfilehash: 593eb801505275210862d9b776c6e2dca290ef89
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.date: 08/10/2022
+ms.openlocfilehash: 363ef1fbf760d54e843994347e1e4c1ad3e40146
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493031"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306624"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Saldırı yüzeyi azaltma kuralları başvurusu
 
@@ -229,7 +229,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrAdobeReaderChildProcessAudited
 - AsrAdobeReaderChildProcessBlocked
 
-Bağımlılıklar: MDAV
+Bağımlılıklar: Microsoft Defender Virüsten Koruma
 
 ### <a name="block-all-office-applications-from-creating-child-processes"></a>Tüm Office uygulamalarının alt işlemler oluşturmalarını engelleme
 
@@ -248,7 +248,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrOfficeChildProcessAudited
 - AsrOfficeChildProcessBlocked
 
-Bağımlılıklar: MDAV
+Bağımlılıklar: Microsoft Defender Virüsten Koruma
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Windows yerel güvenlik yetkilisi alt sisteminden kimlik bilgilerinin çalınmalarını engelleme
 
@@ -273,7 +273,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrLsassCredentialTheftAudited
 - AsrLsassCredentialTheftBlocked
 
-Bağımlılıklar: MDAV
+Bağımlılıklar: Microsoft Defender Virüsten Koruma
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>E-posta istemcisinden ve web postasından yürütülebilir içeriği engelleme
 
@@ -293,7 +293,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrExecutableEmailContentAudited
 - AsrExecutableEmailContentBlocked
 
-Bağımlılıklar: MDAV
+Bağımlılıklar: Microsoft Defender Virüsten Koruma
 
 > [!NOTE]
 > **E-posta istemcisinden ve web postasından yürütülebilir içeriği engelle** kuralı, hangi uygulamayı kullandığınıza bağlı olarak aşağıdaki alternatif açıklamalara sahiptir:
@@ -324,7 +324,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrUntrustedExecutableAudited
 - AsrUntrustedExecutableBlocked
 
-Bağımlılıklar: MDAV, Bulut Koruması
+Bağımlılıklar: Microsoft Defender Virüsten Koruma, Bulut Koruması
 
 ### <a name="block-execution-of-potentially-obfuscated-scripts"></a>Karartılmış olabilecek betiklerin yürütülmesini engelleme
 
@@ -349,7 +349,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
 
-Bağımlılıklar: MDAV, AMSI
+Bağımlılıklar: Microsoft Defender Virüsten Koruma, AMSI
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>JavaScript veya VBScript'in indirilen yürütülebilir içeriği başlatmasını engelleme
 
@@ -368,7 +368,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrScriptExecutableDownloadAudited
 - AsrScriptExecutableDownloadBlocked
 
-Bağımlılıklar: MDAV, AMSI
+Bağımlılıklar: Microsoft Defender Virüsten Koruma, AMSI
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>Office uygulamalarının yürütülebilir içerik oluşturmalarını engelleme
 
@@ -387,7 +387,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrExecutableOfficeContentAudited
 - AsrExecutableOfficeContentBlocked
 
-Bağımlılıklar: MDAV, RPC
+Bağımlılıklar: Microsoft Defender Virüsten Koruma, RPC
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Office uygulamalarının diğer işlemlere kod eklemesini engelleme
 
@@ -410,7 +410,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrOfficeProcessInjectionAudited
 - AsrOfficeProcessInjectionBlocked
 
-Bağımlılıklar: MDAV
+Bağımlılıklar: Microsoft Defender Virüsten Koruma
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Office iletişim uygulamasının alt işlemler oluşturmalarını engelleme
 
@@ -432,7 +432,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrOfficeCommAppChildProcessAudited
 - AsrOfficeCommAppChildProcessBlocked
 
-Bağımlılıklar: MDAV
+Bağımlılıklar: Microsoft Defender Virüsten Koruma
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>WMI olay aboneliği aracılığıyla kalıcılığı engelleme
 
@@ -454,7 +454,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrPersistenceThroughWmiAudited
 - AsrPersistenceThroughWmiBlocked
 
-Bağımlılıklar: MDAV, RPC
+Bağımlılıklar: Microsoft Defender Virüsten Koruma, RPC
 
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>PSExec ve WMI komutlarından kaynaklanan işlem oluşturma işlemlerini engelleme
 
@@ -474,7 +474,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrPsexecWmiChildProcessAudited
 - AsrPsexecWmiChildProcessBlocked
 
-Bağımlılıklar: MDAV
+Bağımlılıklar: Microsoft Defender Virüsten Koruma
 
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>USB'den çalıştırılan güvenilmeyen ve imzalanmamış işlemleri engelleme
 
@@ -494,7 +494,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrUntrustedUsbProcessAudited
 - AsrUntrustedUsbProcessBlocked
 
-Bağımlılıklar: MDAV
+Bağımlılıklar: Microsoft Defender Virüsten Koruma
 
 ### <a name="block-win32-api-calls-from-office-macros"></a>Office makrolarından Win32 API çağrılarını engelleme
 
@@ -520,7 +520,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrOfficeMacroWin32ApiCallsAudited
 - AsrOfficeMacroWin32ApiCallsBlocked
 
-Bağımlılıklar: MDAV, AMSI
+Bağımlılıklar: Microsoft Defender Virüsten Koruma, AMSI
 
 ### <a name="use-advanced-protection-against-ransomware"></a>Fidye yazılımına karşı gelişmiş koruma kullanma
 
@@ -546,4 +546,4 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrRansomwareAudited
 - AsrRansomwareBlocked
 
-Bağımlılıklar: MDAV, Bulut Koruması
+Bağımlılıklar: Microsoft Defender Virüsten Koruma, Bulut Koruması

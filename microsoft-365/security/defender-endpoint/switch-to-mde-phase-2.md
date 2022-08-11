@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 7f22d5d1162e01afe737e6e3f25450cc22e25c76
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 376bc904fabeee9b9fe2c9c91309427f28f19c5a
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695736"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306360"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Uç Nokta için Microsoft Defender Geçiş - 2. Aşama: Kurulum
 
@@ -54,53 +55,11 @@ Uç Nokta için Defender'a geçiş yaparken, Microsoft Defender Virüsten Koruma
 
 |Uç nokta türü|Yapılması gerekenler|
 |---|---|
-|Windows istemcileri (Windows 10 ve Windows 11 çalıştıran uç noktalar gibi)|Genel olarak, Windows istemcileri için herhangi bir işlem yapmanız gerekmez (Microsoft Defender Virüsten Koruma kaldırılmadığı sürece). Genel olarak, Microsoft Defender Virüsten Koruma hala yüklü olmalıdır, ancak büyük olasılıkla geçiş işleminin bu noktasında devre dışı bırakılmıştır. <br/><br/> Microsoft dışı bir virüsten koruma/kötü amaçlı yazılımdan koruma çözümü yüklendiğinde ve istemciler henüz Uç Nokta için Defender'a eklenmediğinde, Microsoft Defender Virüsten Koruma otomatik olarak devre dışı bırakılır. Daha sonra, istemci uç noktaları Uç Nokta için Defender'a eklendiğinde, bu uç noktalar Microsoft dışı bir virüsten koruma çözümü çalıştırıyorsa, Microsoft Defender Virüsten Koruma pasif moda geçer. <br/><br/> Microsoft dışı virüsten koruma çözümü kaldırılırsa, Microsoft Defender Virüsten Koruma otomatik olarak etkin moda geçer.|
-|Windows sunucuları|Windows Server'da, Microsoft Defender Virüsten Koruma'yı yeniden yüklemeniz ve el ile pasif moda ayarlamanız gerekir. Windows sunucularında, Microsoft dışı bir virüsten koruma/kötü amaçlı yazılımdan koruma yazılımı yüklendiğinde, Microsoft Defender Virüsten Koruma, Microsoft dışı virüsten koruma çözümüyle birlikte çalışamaz. Bu gibi durumlarda, Microsoft Defender Virüsten Koruma devre dışı bırakılır veya el ile kaldırılır. <br/><br/> Windows Server'da Microsoft Defender Virüsten Koruma'yı yeniden yüklemek veya etkinleştirmek için aşağıdaki görevleri gerçekleştirin: <br/>- [Windows Server 2016'de Microsoft Defender Virüsten Koruma'nın yeniden yüklenmesi](#re-enable-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [Microsoft Defender Virüsten Koruma'yı Windows Server, sürüm 1803 veya sonraki bir sürüme yeniden yükleme](#re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [Microsoft Defender Virüsten Koruma'yı Windows Server'da pasif moda ayarlama](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Windows Server'da Microsoft Defender Virüsten Koruma'yı yeniden yükleme veya yeniden etkinleştirme sorunlarıyla karşılaşırsanız bkz [. Sorun Giderme: Windows Server'da Microsoft Defender Virüsten Koruma kaldırılıyor](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
+|Windows istemcileri (Windows 10 ve Windows 11 çalıştıran uç noktalar gibi)|Genel olarak, Windows istemcileri için herhangi bir işlem yapmanız gerekmez (Microsoft Defender Virüsten Koruma kaldırılmadığı sürece). Genel olarak, Microsoft Defender Virüsten Koruma hala yüklü olmalıdır, ancak büyük olasılıkla geçiş işleminin bu noktasında devre dışı bırakılmıştır. <br/><br/> Microsoft dışı bir virüsten koruma/kötü amaçlı yazılımdan koruma çözümü yüklüyse ve istemciler henüz Uç Nokta için Defender'a eklenmemişse, Microsoft Defender Virüsten Koruma otomatik olarak devre dışı bırakılır. Daha sonra, istemci uç noktaları Uç Nokta için Defender'a eklendiğinde, bu uç noktalar Microsoft dışı bir virüsten koruma çözümü çalıştırıyorsa, Microsoft Defender Virüsten Koruma pasif moda geçer. <br/><br/> Microsoft dışı virüsten koruma çözümü kaldırılırsa, Microsoft Defender Virüsten Koruma otomatik olarak etkin moda geçer.|
+|Windows sunucuları|Windows Server'da, Microsoft Defender Virüsten Koruma'yı yeniden yüklemeniz ve el ile pasif moda ayarlamanız gerekir. Windows sunucularında, Microsoft dışı bir virüsten koruma/kötü amaçlı yazılımdan koruma yazılımı yüklendiğinde Microsoft Defender Virüsten Koruma, Microsoft dışı virüsten koruma çözümüyle birlikte çalışamaz. Bu gibi durumlarda, Microsoft Defender Virüsten Koruma devre dışı bırakılır veya el ile kaldırılır. <br/><br/> Windows Server'da Microsoft Defender Virüsten Koruma'yı yeniden yüklemek veya etkinleştirmek için aşağıdaki görevleri gerçekleştirin: <br/>- [Devre dışı bırakıldıysa Windows Server'da Defender Virüsten Koruma'yı yeniden etkinleştirme](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled)<br/>- [Kaldırılmışsa Windows Server'da Defender Virüsten Koruma'yı yeniden etkinleştirme](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled)<br/>- [Microsoft Defender Virüsten Koruma'yı Windows Server'da pasif moda ayarlama](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Windows Server'da Microsoft Defender Antivisrus'u yeniden yükleme veya yeniden etkinleştirme sorunlarıyla karşılaşırsanız bkz [. Sorun Giderme: Windows Server'da Microsoft Defender Virüsten Koruma kaldırılıyor](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
 
 > [!TIP]
 > Microsoft dışı virüsten koruma ile Microsoft Defender Virüsten Koruma durumları hakkında daha fazla bilgi edinmek için bkz. [Microsoft Defender Virüsten Koruma uyumluluğu](microsoft-defender-antivirus-compatibility.md).
-
-### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-2016"></a>Windows Server 2016'da Microsoft Defender Virüsten Koruma'yı yeniden etkinleştirme
-
-Windows Server 2016'de Microsoft Defender Virüsten Koruma'yı yeniden etkinleştirmek için [Kötü Amaçlı YazılımDan Koruma Command-Line Yardımcı Programı'nı](command-line-arguments-microsoft-defender-antivirus.md) kullanabilirsiniz.
-
-1. Sunucuda yerel yönetici olarak Komut İstemi'ni açın.
-
-2. Aşağıdaki komutu çalıştırın: `MpCmdRun.exe -wdenable`
-
-3. Cihazı yeniden başlatın.
-
-### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later"></a>Windows Server, sürüm 1803 veya sonraki sürümlerde Microsoft Defender Virüsten Koruma'yı yeniden etkinleştirme
-
-> [!IMPORTANT]
-> Aşağıdaki yordam yalnızca aşağıdaki Windows sürümlerini çalıştıran uç noktalar veya cihazlar için geçerlidir:
-> - Windows Server 2022
-> - Windows Server 2019
-> - Windows Server, sürüm 1803 (yalnızca çekirdek modu)
-
-1. Sunucuda yerel yönetici olarak Windows PowerShell açın.
-
-2. Aşağıdaki PowerShell cmdlet'lerini çalıştırın:
-
-   ```powershell
-   # For Windows Server 2016
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Features
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Gui
-   
-   # For Windows Server 2019 and Windows Server 2022
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   ```
-
-   DISM komutunu PowerShell çalıştıran bir görev dizisi içinde kullanırken, aşağıdaki cmd.exe yolu gereklidir.
-   Örneğin:
-
-   ```powershell
-   C:\Windows\System32\cmd.exe /c Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Features
-   C:\Windows\System32\cmd.exe /c Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   ```
-
-3. Cihazı yeniden başlatın.
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Microsoft Defender Virüsten Koruma'yı Windows Server'da pasif moda ayarlama
 
@@ -145,7 +104,7 @@ Kurulum işleminin bu adımı, mevcut uç nokta koruma çözümünüz ve kurulu�
 
 Yapılandırılacak özel dışlamalar, uç noktalarınızın veya cihazlarınızın hangi Windows sürümünün çalıştığına ve aşağıdaki tabloda listelendiğine bağlıdır.
 
-| OS |Dışlamalar |
+| Os |Dışlamalar |
 |:--|:--|
 |[Windows 11](/windows/whats-new/windows-11-overview) <br/><br/>Windows 10, [sürüm 1803](/lifecycle/announcements/windows-server-1803-end-of-servicing) veya üzeri ([Windows 10 sürüm bilgilerine](/windows/release-health/release-information) bakın)<br/><br/>[kb4493441](https://support.microsoft.com/help/4493441) yüklü Windows 10, sürüm 1703 veya 1709 <br/><br/> [Windows Server 2022](/windows/release-health/status-windows-server-2022)<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server, sürüm 1803](/windows-server/get-started/whats-new-in-windows-server-1803) | `C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\DataCollection`<br/><br/> Ayrıca, modern, birleşik çözümü çalıştıran Windows Server 2012 R2 ve 2016'da[, KB5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) kullanarak Sense EDR bileşenini güncelleştirdikten sonra aşağıdaki dışlamalar gereklidir:<br/> <br/> `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe` <br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCE.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe`|
 |[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/><br/>**NOT**: Konak Geçici Dosyalarını İzleme 6\45 farklı numaralı alt klasörler olabilir.<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
@@ -169,7 +128,7 @@ Kurulum işleminin bu adımı sırasında, mevcut çözümünüzü Microsoft Def
 Aşağıdaki noktaları göz önünde bulundurun:
 
 - *Yol dışlamaları* belirli dosyaları ve bu dosyaların eriştikleri her şeyi dışlar.
-- *İşlem dışlamaları* , bir işlemin dokunduğu her şeyi dışlar, ancak işlemin kendisini dışlamaz.
+- *İşlem dışlamaları* , bir işlemin dokunduğu her şeyi dışlar, ancak sürecin kendisini dışlamaz.
 - İşlem dışlamalarınızı yalnızca adlarıyla değil tam yollarını kullanarak listeleyin. (Yalnızca ad yöntemi daha az güvenlidir.)
 - Her yürütülebilir dosyayı (.exe) hem yol dışlama hem de işlem dışlaması olarak listelerseniz, işlem ve dokunduğu her şey dışlanır.
 
@@ -179,12 +138,12 @@ Cihaz grupları, cihaz koleksiyonları ve kuruluş birimleri, güvenlik ekibiniz
 
 |Koleksiyon türü|Yapılması gerekenler|
 |---|---|
-|[Cihaz grupları](/microsoft-365/security/defender-endpoint/machine-groups) (eski adı *makine grupları*), güvenlik operasyonları ekibinizin otomatik araştırma ve düzeltme gibi güvenlik özelliklerini yapılandırmasına olanak tanır. <br/><br/> Cihaz grupları, güvenlik operasyonları ekibinizin gerekirse düzeltme eylemleri gerçekleştirebilmesi için bu cihazlara erişim atamak için de kullanışlıdır. <br/><br/> Cihaz grupları, Saldırı algılanıp durdurulurken, "ilk erişim uyarısı" gibi uyarılar tetiklenir ve [Microsoft 365 Defender portalında](/microsoft-365/security/defender/microsoft-365-defender) görüntülenir.|1. Microsoft 365 Defender portalına (<https://security.microsoft.com>) gidin.<br/><br/>2. Sol taraftaki gezinti bölmesinde **Ayarlar** \> **Uç Noktaları İzinleri** \> \> **Cihaz grupları'nı** seçin.<br/><br/>3. **+ Cihaz grubu ekle'yi** seçin.<br/><br/>4. Cihaz grubu için bir ad ve açıklama belirtin.<br/><br/>5. **Otomasyon düzeyi** listesinde bir seçenek belirleyin. ( **Tam - tehditleri otomatik olarak düzeltmenizi** öneririz.) Çeşitli otomasyon düzeyleri hakkında daha fazla bilgi edinmek için bkz. [Tehditler nasıl düzeltilir](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated)?<br/><br/>6. Hangi cihazların cihaz grubuna ait olduğunu belirlemek için eşleşen bir kural için koşulları belirtin. Örneğin, bir etki alanı, işletim sistemi sürümü seçebilir veya hatta [cihaz etiketlerini](/microsoft-365/security/defender-endpoint/machine-tags) kullanabilirsiniz.<br/><br/>7. **Kullanıcı erişimi** sekmesinde, cihaz grubuna dahil edilen cihazlara erişimi olması gereken rolleri belirtin.<br/><br/>8. **Bitti'yi** seçin.|
+|[Cihaz grupları](/microsoft-365/security/defender-endpoint/machine-groups) (eski adı *makine grupları*), güvenlik operasyonları ekibinizin otomatik araştırma ve düzeltme gibi güvenlik özelliklerini yapılandırmasına olanak tanır. <br/><br/> Cihaz grupları, güvenlik operasyonları ekibinizin gerekirse düzeltme eylemleri gerçekleştirebilmesi için bu cihazlara erişim atamak için de kullanışlıdır. <br/><br/> Saldırı algılanıp durdurulurken cihaz grupları oluşturulur, "ilk erişim uyarısı" gibi uyarılar tetiklenir ve [Microsoft 365 Defender portalında](/microsoft-365/security/defender/microsoft-365-defender) görüntülenir.|1. Microsoft 365 Defender portalına (<https://security.microsoft.com>) gidin.<br/><br/>2. Sol taraftaki gezinti bölmesinde **Ayarlar** \> **Uç Noktaları İzinleri** \> \> **Cihaz grupları'nı** seçin.<br/><br/>3. **+ Cihaz grubu ekle'yi** seçin.<br/><br/>4. Cihaz grubu için bir ad ve açıklama belirtin.<br/><br/>5. **Otomasyon düzeyi** listesinde bir seçenek belirleyin. ( **Tam - tehditleri otomatik olarak düzeltmenizi** öneririz.) Çeşitli otomasyon düzeyleri hakkında daha fazla bilgi edinmek için bkz. [Tehditler nasıl düzeltilir](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated)?<br/><br/>6. Hangi cihazların cihaz grubuna ait olduğunu belirlemek için eşleşen bir kural için koşulları belirtin. Örneğin, bir etki alanı, işletim sistemi sürümü seçebilir veya hatta [cihaz etiketlerini](/microsoft-365/security/defender-endpoint/machine-tags) kullanabilirsiniz.<br/><br/>7. **Kullanıcı erişimi** sekmesinde, cihaz grubuna dahil edilen cihazlara erişimi olması gereken rolleri belirtin.<br/><br/>8. **Bitti'yi** seçin.|
 |[Cihaz koleksiyonları](/mem/configmgr/core/clients/manage/collections/introduction-to-collections) , güvenlik operasyonları ekibinizin uygulamaları yönetmesine, uyumluluk ayarlarını dağıtmasına veya kuruluşunuzdaki cihazlara yazılım güncelleştirmeleri yüklemesine olanak tanır. <br/><br/> Cihaz koleksiyonları [Configuration Manager](/mem/configmgr/) kullanılarak oluşturulur.|[Koleksiyon oluşturma](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create) başlığındaki adımları izleyin.|
 |[Kuruluş birimleri](/azure/active-directory-domain-services/create-ou) , kullanıcı hesapları, hizmet hesapları veya bilgisayar hesapları gibi nesneleri mantıksal olarak gruplandırmanızı sağlar. <br/><br/> Ardından yöneticileri belirli kuruluş birimlerine atayabilir ve hedeflenen yapılandırma ayarlarını zorunlu kılmak için grup ilkesi uygulayabilirsiniz. <br/><br/> Kuruluş birimleri [Azure Active Directory Domain Services'de](/azure/active-directory-domain-services) tanımlanır.|[Azure Active Directory Domain Services yönetilen etki alanında Kuruluş Birimi oluşturma başlığındaki](/azure/active-directory-domain-services/create-ou) adımları izleyin.|
 
 ## <a name="next-step"></a>Sonraki adım
 
-**Tebrikler**! [Uç Nokta için Defender'a geçmenin Kurulum aşamasını](switch-to-mde-overview.md#the-migration-process) tamamladınız!
+**Tebrikler**! [Uç Nokta için Defender'a geçmenin](switch-to-mde-overview.md#the-migration-process) Kurulum aşamasını tamamladınız!
 
 - [3. Aşamaya Geçin: Uç Nokta için Defender'a ekleme](switch-to-mde-phase-3.md)

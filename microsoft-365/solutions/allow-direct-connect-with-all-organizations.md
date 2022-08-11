@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Diğer tüm Microsoft 365 ve Azure Active Directory kuruluşlarıyla paylaşılan kanalları etkinleştirmeyi öğrenin.
-ms.openlocfilehash: 601bfaa825afdaf9ec5addb4b7c7e21804b07cb7
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 41acba8e6097946d80d970a3220a61486c39def2
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "66861387"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306514"
 ---
 # <a name="enable-shared-channels-with-all-external-organizations"></a>Tüm dış kuruluşlarla paylaşılan kanalları etkinleştirme
 
@@ -33,6 +33,9 @@ Kuruluşunuzun diğer kuruluşlarla işbirliğini kısıtlama gereksinimi yoksa,
 
 > [!NOTE]
 > Kiracılar arası erişim ayarlarında yapılan değişikliklerin etkili olması iki saat sürebilir.
+
+> [!NOTE]
+> Dış katılımcılarla paylaşılan kanalları kullanmak [için Microsoft 365 Grupları konuk ayarlarının](/microsoft-365/admin/create-groups/manage-guest-access-in-groups) etkinleştirilmesi gerekir.
 
 ## <a name="allow-users-to-invite-people-in-other-organizations-to-participate-in-shared-channels"></a>Kullanıcıların diğer kuruluşlardaki kişileri paylaşılan kanallara katılmaya davet etmelerine izin verme
 

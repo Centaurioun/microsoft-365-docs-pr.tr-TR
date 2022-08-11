@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Kuruluşunuzun dışındaki kişilerle işbirliği yapmak için Microsoft Teams'de paylaşılan kanalları etkinleştirmeyi öğrenin.
-ms.openlocfilehash: 0e8d4ab09509e801fc54a4bb435dc78d2bdee516
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 61093530faad261059e68e02a496c485a765b99d
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969802"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306492"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Paylaşılan kanalda dış katılımcılarla işbirliği yapma
 
@@ -33,6 +33,9 @@ Teams'de paylaşılan kanalları başka bir kuruluşla etkinleştirdiğinizde:
 - Kuruluşunuzdaki ekip sahipleri, diğer kuruluşlardan kişileri paylaşılan kanallara katılmaya davet edebilecek.
 - Kuruluşunuzun özel (iş kolu) uygulamaları paylaşılan kanallarda kullanılabilir ve dış katılımcılar bunlara erişebilir.
 - Kuruluşunuzun uygulama listesi paylaşılan kanallarda kullanılabilir ve dış katılımcılar bunlara erişebilir.
+
+> [!NOTE]
+> Dış katılımcılarla paylaşılan kanalları kullanmak [için Microsoft 365 Grupları konuk ayarlarının](/microsoft-365/admin/create-groups/manage-guest-access-in-groups) etkinleştirilmesi gerekir.
 
 ## <a name="video-demonstration"></a>Video tanıtımı
 

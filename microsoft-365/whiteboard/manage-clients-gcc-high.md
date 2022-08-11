@@ -12,19 +12,19 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Whiteboard için şu anda hangi istemcilerin desteklendiği hakkında bilgi edinin.
-ms.openlocfilehash: 2cfd74c16dc783bd316e2a5b985c94baa2bed28c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b1e4f83a0df0f03a423d9f7e3821cc53284ddb19
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942460"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306338"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-high-environments"></a>GCC High ortamlarında Microsoft Whiteboard istemcilerini yönetme
 
->[!NOTE]
+> [!NOTE]
 > Bu kılavuz, ABD Kamu Topluluk Bulutu (GCC) Yüksek ortamları için geçerlidir.
 
-Whiteboard istemcileri şu anda One Drive for Business'ı destekleyecek şekilde güncelleştiriliyor.
+Whiteboard istemcileri şu anda OneDrive İş destekleyecek şekilde güncelleştiriliyor.
 
 ## <a name="clients-supported"></a>Desteklenen istemciler
 
@@ -44,7 +44,7 @@ Whiteboard'un gelecek sürümleri için aşağıdaki istemciler planlanıyor:
 - Surface Hub ve Teams toplantı odalarında Teams toplantılarında Beyaz Tahta
 - Teams'de 1:1 aramalarında Beyaz Tahta
 
->[!NOTE]
+> [!NOTE]
 > Kullanıcılar Windows istemcisini yükleyebildiğinden, istemci güncelleştirilene kadar oturum açamaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.

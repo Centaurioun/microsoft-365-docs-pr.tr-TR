@@ -18,12 +18,12 @@ ms.custom:
 description: Kimliği Doğrulanmış Alınan Zincir (ARC), cihazlarda ve gönderen ile alıcı arasında gelen dolaylı posta akışlarında kimlik doğrulama sonuçlarını korumaya çalışan e-posta kimlik doğrulamasıdır. Güvenilir ARC Gönderenleriniz için şu şekilde özel durumlar yapabilirsiniz.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7523a17eb8440d6b567d0414b63153bfc33338a2
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: c6c27e5913a035c892b7c3a2b2677f5cf3531d04
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107315"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306646"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>*Meşru* dolaylı posta akışlarına güvenmek için güvenilir ARC Gönderenlerinin listesini oluşturma
 
@@ -59,9 +59,9 @@ Güvenilir bir ARC sealer ekleyerek Office 365, Office 365 kiracınıza posta te
 
 Microsoft 365 Defender portalındaki güvenilir ARC mühürleyicileri, kiracınız tarafından onaylanan ve kiracınıza eklenen tüm ARC sızdırmazlık işaretlerini gösterir.
 
-**Yönetim portalına yeni bir Güvenilir ARC sealer eklemek için:**
+**Microsoft 365 Defender portalına yeni bir Güvenilir ARC sealer eklemek için:**
 
-1. [E-posta kimlik doğrulaması ayarları](https://security.microsoft.com/authentication?viewid=ARC) sayfasına gidin.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, ARC** **bölümündeki Kurallar** bölümünde \> **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Email Kimlik Doğrulama Ayarları'na** gidin. Doğrudan ARC sayfasına gitmek için [e-posta kimlik doğrulama ayarlarını](https://security.microsoft.com/authentication?viewid=ARC) kullanın.
 
 2. Güvenilir bir ARC sealer'ı ilk kez eklediyseniz Ekle düğmesine tıklayın.
 3. Gösterilen metin kutusuna güvenilir ARC sızdırmazlık elemanları ekleyin.
@@ -124,7 +124,7 @@ Set-ArcConfig -Identity {tenant name/tenanid}\default -ArcTrustedSealers {a list
 </br>
 ``
 Get-ArcConfig
-`` veya ``
+`` Veya ``
 Get-ArcConfig - Organization {tenant name}
 ``
 
