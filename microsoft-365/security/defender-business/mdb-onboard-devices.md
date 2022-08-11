@@ -10,19 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/10/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: e7d884e55aa3f55106097354ce3a8acdd3dc5b17
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 3f69c82a6a401118d50372adec03b9cdbed0f502
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300770"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309405"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Cihazları İş için Microsoft Defender ekleme
 
@@ -46,7 +46,7 @@ Windows istemci cihazlarını İş için Defender'a eklemek için aşağıdaki s
 
 - [Yerel betik](#local-script-for-windows-10-and-11) (cihazları Microsoft 365 Defender portalında el ile ekleme için)
 - [grup ilkesi](#group-policy-for-windows-10-and-11) (kuruluşunuzda zaten grup ilkesi kullanıyorsanız)
-- [Microsoft Intune](#intune-for-windows-10-and-11) ([Microsoft 365 İş Ekstra](../../business-premium/index.md) dahil)
+- [Microsoft Intune](#intune-for-windows-10-and-11)
 
 ### <a name="local-script-for-windows-10-and-11"></a>Windows 10 ve 11 için yerel betik
 
@@ -77,9 +77,7 @@ Windows istemcilerini eklemek için grup ilkesi kullanmayı tercih ediyorsanız 
 
 ### <a name="intune-for-windows-10-and-11"></a>Windows 10 ve 11 için Intune
 
-Aboneliğiniz Intune içeriyorsa, Windows istemcilerini ve diğer cihazları Microsoft Endpoint Manager yönetim merkezine ([https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) ekleyebilirsiniz. Örneğin, [Microsoft 365 İş Ekstra](../../business/index.yml) varsa aboneliğinizin bir parçası olarak zaten Intune vardır ve cihazları eklemek için Intune kullanabilirsiniz.  
-
-Cihazları Intune kaydetmek için kullanılabilecek çeşitli yöntemler vardır. Aşağıdaki yöntemlerden birini kullanmanızı öneririz:
+Microsoft Endpoint Manager yönetim merkezini ([https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) kullanarak Windows istemcilerini ve diğer cihazları Intune'a ekleyebilirsiniz. Cihazları Intune kaydetmek için kullanılabilecek çeşitli yöntemler vardır. Aşağıdaki yöntemlerden birini kullanmanızı öneririz:
 
 - [Şirkete ait veya şirket tarafından yönetilen cihazlar için Windows otomatik kaydını etkinleştirme](#enable-automatic-enrollment-for-windows-10-and-11)
 - [Kullanıcılardan kendi Windows 10/11 cihazlarını Intune kaydetmelerini isteyin](#ask-users-enroll-their-own-windows-10-and-11-devices)
@@ -160,7 +158,7 @@ Mac'i eklemek için aşağıdaki seçeneklerden birini belirleyin:
 
 ### <a name="local-script-for-mac"></a>Mac için yerel betik
 
-Mac'te yerel betiği çalıştırdığınızda, bu güven yoksa Azure Active Directory ile bir güven oluşturur; Mac'i Microsoft Intune kaydeder( henüz kaydedilmemişse) ve ardından Mac'i İş için Defender'a ekler. Şu anda Intune olmasa bile yerel betik yöntemi çalışır. Bu yöntemi kullanarak bir kerede en fazla 10 cihaz eklemenizi öneririz.
+Mac'te yerel betiği çalıştırdığınızda, bu güven yoksa Azure Active Directory ile bir güven oluşturur; Mac'i Microsoft Intune kaydeder( henüz kaydedilmemişse) ve ardından Mac'i İş için Defender'a ekler. Bu yöntemi kullanarak bir kerede en fazla 10 cihaz eklemenizi öneririz.
 
 1. Microsoft 365 Defender portalına ()[https://security.microsoft.com](https://security.microsoft.com) gidin ve oturum açın.
 
@@ -186,9 +184,7 @@ Mac Intune kaydedildikten sonra bir cihaz grubuna ekleyebilirsiniz. [İş için 
 
 ### <a name="intune-for-mac"></a>Mac için Intune
 
-Aboneliğiniz Microsoft Intune içeriyorsa, Mac'i Microsoft Endpoint Manager yönetim merkezine ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) ekleyebilirsiniz. Örneğin, [Microsoft 365 İş Ekstra](../../business/index.yml) varsa aboneliğinizin bir parçası olarak zaten Intune sahipsinizdir.  
-
-Mac'i Intune'a kaydetmek için kullanılabilecek çeşitli yöntemler vardır. Aşağıdaki yöntemlerden birini öneririz:
+Microsoft Endpoint Manager yönetim merkezini ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) kullanarak Mac bilgisayarları Intune'a kaydedebilirsiniz. Mac'i Intune'a kaydetmek için kullanılabilecek çeşitli yöntemler vardır. Aşağıdaki yöntemlerden birini öneririz:
 
 - [Şirkete ait Mac için bir seçenek belirleyin](#options-for-company-owned-mac)
 - [Kullanıcılardan kendi Mac'lerini Intune kaydetmelerini isteyin](#ask-users-to-enroll-their-own-mac-in-intune)
@@ -337,9 +333,7 @@ Bir Linux Server örneğini İş için Defender'a eklemek için aşağıdaki yö
 
 ## <a name="mobile-devices"></a>Mobil cihazlar
 
-Android ve iOS/iPadOS cihazları gibi mobil cihazları eklemek için Microsoft Intune gerekir. [Microsoft 365 İş Ekstra](../../business/index.yml) varsa, Intune. 
-
-Bu cihazları Intune kaydetme konusunda yardım almak için aşağıdaki kaynaklara bakın:
+Android ve iOS/iPadOS cihazları gibi mobil cihazları eklemek için Microsoft Intune kullanabilirsiniz. Bu cihazları Intune kaydetme konusunda yardım almak için aşağıdaki kaynaklara bakın:
 
 - [Android cihazları kaydetme](/mem/intune/enrollment/android-enroll)
 - [iOS veya iPadOS cihazlarını kaydetme](/mem/intune/enrollment/ios-enroll)

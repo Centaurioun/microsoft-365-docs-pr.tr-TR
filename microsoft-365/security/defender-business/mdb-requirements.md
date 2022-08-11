@@ -10,19 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/10/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 20de14ce0357ecb28a205d1699a8756b78e542aa
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 4968a6318138b4c3b6bd5958de195dcd1677106b
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67301282"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309427"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>İş için Microsoft Defender gereksinimleri
 
@@ -52,7 +52,6 @@ Aşağıdaki tabloda, İş için Defender'ı yapılandırmak ve kullanmak için 
 > Kullanıcı izinlerini ve cihaz gruplarını yönetmek için [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) kullanılır. Azure AD, İş için Defender aboneliğinize dahildir. 
 > - Deneme sürümüne başlamadan önce Microsoft 365 aboneliğiniz yoksa etkinleştirme işlemi sırasında sizin için Azure AD sağlanır. 
 > - İş için Defender deneme sürümünüzü başlattığınızda başka bir Microsoft 365 aboneliğiniz varsa, mevcut Azure AD hizmetinizi kullanabilirsiniz. 
-> - İş için Defender denemenizi başlatırken [Microsoft 365 İş Ekstra](../../business/index.yml) kullanıyorsanız cihazlarınızı Intune kullanarak yönetme seçeneğiniz vardır.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

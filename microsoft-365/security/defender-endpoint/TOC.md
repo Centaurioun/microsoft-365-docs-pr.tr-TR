@@ -70,9 +70,6 @@
 
 
 
-
-
-
 ### [Diğer işletim sistemlerinde Uç Nokta için Microsoft Defender]()
 #### [Windows dışı diğer cihazları ekleyin](configure-endpoints-non-windows.md)
 
@@ -521,6 +518,10 @@
 ####### [Araştırmaları Listele](get-investigation-collection.md)
 ####### [Araştırma Al](get-investigation-object.md)
 ####### [Araştırmayı Başlat](initiate-autoir-investigation.md)
+
+###### [Cihaz Durumu]()
+####### [Cihaz sistem durumu yöntemlerini ve özelliklerini dışarı aktarma](device-health-api-methods-properties.md)
+####### [Cihaz virüsten koruma sistem durumu raporunu dışarı aktarma](device-health-export-antivirus-health-report-api.md)
 
 ###### [Sertifika envanteri]()
 ####### [Sertifika envanteri değerlendirmesini dışarı aktar](export-certificate-inventory-assessment.md)

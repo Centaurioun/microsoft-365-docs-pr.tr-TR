@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: İçerik gezgininde eğitilebilir bir sınıflandırıcıya geri bildirim sağlamayı öğrenin.
-ms.openlocfilehash: bde570b8bbb104d7f89523eb12bd8b9ac9210ad7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e4cf09599d95d7e19f565a9bd0e30213e3057984
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637449"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309471"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>İçerik gezgininde bir sınıflandırıcıyı yeniden eğitme
 
 Microsoft 365 eğitilebilir sınıflandırıcı, inceleyebileceğiniz örnekler vererek çeşitli içerik türlerini tanımak için eğitebileceğiniz bir araçtır. Eğitildikten sonra, Office duyarlılık etiketlerinin, iletişim uyumluluk ilkelerinin ve bekletme etiketi ilkelerinin uygulanmasına yönelik öğeleri tanımlamak için kullanabilirsiniz.
 
-Bu makalede, özel eğitilebilir sınıflandırıcılara ek geri bildirim sağlayarak performansı nasıl artırabileceğiniz gösterilmektedir.
+Bu makalede, daha fazla geri bildirim sağlayarak özel eğitilebilir sınıflandırıcıların performansını nasıl artırabileceğiniz gösterilmektedir.
 
 Farklı sınıflandırıcı türleri hakkında daha fazla bilgi edinmek için bkz. [Eğitilebilir sınıflandırıcılar hakkında bilgi edinin](classifier-learn-about.md).
 
@@ -34,7 +34,7 @@ Ayarlama ve yeniden eğitme işleminin hızlı bir özeti için bu videoyu izley
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
+<!-- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]-->
 
 > [!NOTE]
 > Önceden eğitilmiş sınıflandırıcılar yeniden eğitilemez.
@@ -69,7 +69,7 @@ Sınıflandırıcıyı yeniden eğitme işleminin genel iş akışı hakkında d
 > [!IMPORTANT]
 > Toplu öğelerin eğitilebilir sınıflandırıcılar başlığı altında görünmesi sekiz güne kadar sürebilir.
 
-3. Bekletme etiketi ilkesini otomatik olarak uygularken kullandığınız eğitilebilir sınıflandırıcıyı seçin. Bu, geri bildirimde bulunmak için eğitilebilir sınıflandırıcıdır.
+3. Bekletme etiketi ilkesini otomatik olarak uygularken kullandığınız eğitilebilir sınıflandırıcıyı seçin. Bu, geri bildirim sağlayacağınız eğitilebilir sınıflandırıcıdır.
 
 > [!NOTE]
 > Bir öğenin **Bekletme etiketi** sütununda bir girdisi varsa, bu, öğenin olarak `match`sınıflandırıldığı anlamına gelir.  Bir öğenin **Bekletme etiketi** sütununda bir girdisi yoksa, bu öğe olarak `close match`sınıflandırıldığı anlamına gelir. Öğeler hakkında `close match` geri bildirim sağlayarak sınıflandırıcı duyarlılığını en iyi şekilde geliştirebilirsiniz. 
@@ -81,7 +81,7 @@ Sınıflandırıcıyı yeniden eğitme işleminin genel iş akışı hakkında d
 
 5. **Geri bildirim sağla'yı** seçin.
 6. **Ayrıntılı geri bildirim** bölmesinde, öğe gerçek bir pozitifse **Eşleştir'i** seçin.  Öğe hatalı pozitifse, yani yanlış kategoriye dahil edilmişse Eşleşme **değil'i** seçin.
-7. Öğeye daha uygun olacak başka bir sınıflandırıcı varsa, **Diğer eğitilebilir sınıflandırıcıları öner** listesinden bunu seçebilirsiniz. Bu, öğeyi değerlendirmek için diğer sınıflandırıcıyı tetikler.
+7. Öğe için daha uygun olabilecek başka bir sınıflandırıcı varsa, **Diğer eğitilebilir sınıflandırıcıları öner** listesinden bunu seçebilirsiniz. Bu, öğeyi değerlendirmek için diğer sınıflandırıcıyı tetikler.
 8. değerlendirmenizi `match``not a match` göndermek ve diğer eğitilebilir sınıflandırıcıları önermek için **Geri bildirim gönder'i** seçin. Sınıflandırıcıya 30 geri bildirim örneği sağladığınızda otomatik olarak yeniden eğitilecektir. Yeniden eğitme bir ila dört saat sürebilir. Sınıflandırıcılar günde yalnızca iki kez yeniden eğitilebilir.
 
 > [!IMPORTANT]
@@ -98,13 +98,13 @@ Sınıflandırıcıyı yeniden eğitme işleminin genel iş akışı hakkında d
 
 12. Önerilen eylemi ve sınıflandırıcının yeniden eğitilmiş ve şu anda yayımlanmış sürümlerinin tahmin karşılaştırmalarını gözden geçirin.
 13. Yeniden eğitme sonuçlarından memnunsanız **Yeniden yayımla'yı** seçin.
-14. Yeniden eğitme sonuçlarından memnun değilseniz, İçerik Gezgini arabiriminde sınıflandırıcıya ek geri bildirim sağlamayı ve başka bir yeniden eğitim döngüsü başlatmayı seçebilir veya hiçbir şey yapmazsanız sınıflandırıcının şu anda yayımlanmış olan sürümü kullanılmaya devam eder. 
+14. Yeniden eğitme sonuçlarından memnun değilseniz, İçerik Gezgini arabiriminde sınıflandırıcıya daha fazla geri bildirim sağlamayı ve başka bir yeniden eğitim döngüsü başlatmayı seçebilir veya herhangi bir şey yapmazsanız sınıflandırıcının şu anda yayımlanmış olan sürümü kullanılmaya devam eder. 
 
 ## <a name="details-on-republishing-recommendations"></a>Önerileri yeniden yayımlama ayrıntıları
 
-Yeniden eğitilen sınıflandırıcıyı yeniden yayımlama veya daha fazla yeniden eğitme önerme önerisini nasıl formüle ettiğimiz hakkında küçük bilgiler aşağıdadır. Bu, eğitilebilir sınıflandırıcıların nasıl çalıştığının biraz daha derin bir şekilde anlaşılmasını gerektirir.
+Burada, yeniden eğitilmiş bir sınıflandırıcıyı yeniden yayımlama önerisini nasıl formüle ettiğimiz veya daha fazla yeniden eğitme önerebileceğimiz hakkında küçük bilgiler bulabilirsiniz. Bu, eğitilebilir sınıflandırıcıların nasıl çalıştığının biraz daha derin bir şekilde anlaşılmasını gerektirir.
 
-Yeniden eğitildikten sonra sınıflandırıcının performansını hem geri bildirim içeren öğelerde hem de sınıflandırıcıyı eğitmek için kullanılan öğelerde değerlendiririz. 
+Yeniden eğitildikten sonra, sınıflandırıcının geri bildirim içeren öğeler ve sınıflandırıcıyı eğitmek için kullanılan öğeler üzerinde performansını değerlendiririz. 
 
 - Yerleşik modellerde sınıflandırıcıyı eğitmek için kullanılan öğeler, Microsoft tarafından modeli oluşturmak için kullanılan öğelerdir.
 - Özel modeller için, sınıflandırıcının özgün eğitimde kullanılan öğeler test ve gözden geçirme için eklediğiniz sitelerdendir.

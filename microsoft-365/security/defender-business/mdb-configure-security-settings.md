@@ -10,19 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: f7530cd06f2d41ed4ef3fcc12daa5f89e2903c94
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 336f253e16ab26c227001fd5a71e34c100ae97ea
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300443"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309735"
 ---
 # <a name="view-and-edit-security-policies-and-settings-in-microsoft-defender-for-business"></a>güvenlik ilkelerini ve ayarlarını İş için Microsoft Defender görüntüleme ve düzenleme
 
@@ -137,7 +137,7 @@ Aşağıdaki tabloda gelişmiş özellik ayarları açıklanmaktadır.
 | **Kullanıcı ayrıntılarını göster**<br/>(varsayılan olarak açıktır) | Kuruluşunuzdaki kişilerin çalışanların resimleri, adları, başlıkları ve departmanları gibi ayrıntıları görmesini sağlar. Bu ayrıntılar Azure Active Directory'de (Azure AD) depolanır.<br/><br/>[Azure AD'da kullanıcı profilleri hakkında daha fazla bilgi edinin](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).  |
 | **Skype Kurumsal tümleştirmesi**<br/>(varsayılan olarak açıktır) | Skype Kurumsal Temmuz 2021'de kullanımdan kaldırıldı. Henüz Microsoft Teams'e taşınmadıysanız bkz. [Küçük işletmenizde Microsoft Teams'i ayarlama](/microsoftteams/deploy-small-business). <br/><br/>Microsoft Teams (veya eski Skype Kurumsal) ile tümleştirme, işletmenizdeki kişiler arasında tek tıklamayla iletişime olanak tanır.   |
 | **Web içeriği filtreleme**<br/>(varsayılan olarak açıktır) | İstenmeyen içerik içeren web sitelerine erişimi engeller ve tüm etki alanlarındaki web etkinliğini izler. Bkz. [Web içeriği filtrelemeyi ayarlama](#set-up-web-content-filtering). |
-| **Microsoft Intune bağlantısı**<br/>(Intune varsa bu ayarı açmanızı öneririz) | Kuruluşunuzun aboneliği Microsoft Intune içeriyorsa ([Microsoft 365 İş Ekstra](../../business/index.yml) dahil), bu ayar İş için Defender'ın Intune cihazlar hakkındaki bilgileri paylaşmasına olanak tanır.  |
+| **Microsoft Intune bağlantısı**<br/>(Intune varsa bu ayarı açmanızı öneririz) | Kuruluşunuzun aboneliği Microsoft Intune içeriyorsa, bu ayar İş için Defender'ın cihazlar hakkındaki bilgileri Intune ile paylaşmasını sağlar.  |
 | **cihaz keşfi**<br/>(varsayılan olarak açıktır) | Güvenlik ekibinizin şirket ağınıza bağlı yönetilmeyen cihazları bulmasını sağlar. Bilinmeyen ve yönetilmeyen cihazlar, eşleşmeyen bir yazıcı, zayıf güvenlik yapılandırmasına sahip bir ağ cihazı veya güvenlik denetimi olmayan bir sunucu olsun ağınızda önemli riskler getirir.<br/><br/>Cihaz bulma, yönetilmeyen cihazları bulmak için eklenen cihazları kullanır, böylece güvenlik ekibiniz yönetilmeyen cihazları ekleyebilir ve güvenlik açığınızı azaltabilir. <br/><br/>[Cihaz bulma hakkında daha fazla bilgi edinin](../defender-endpoint/device-discovery.md).    |
 | **Özellikleri önizleyin** | Microsoft, yeni özellik geliştirmeleri ve özellikleri içerecek şekilde İş için Defender gibi hizmetleri sürekli güncelleştirmektedir. Önizleme özelliklerini almayı kabul ederseniz, önizleme deneyiminde yaklaşan özellikleri ilk deneyenler arasında yer alırsınız. <br/><br/>[Önizleme özellikleri hakkında daha fazla bilgi edinin](../defender-endpoint/preview.md).  |
 

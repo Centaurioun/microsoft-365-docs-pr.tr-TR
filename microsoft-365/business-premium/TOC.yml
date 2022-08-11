@@ -10,6 +10,8 @@
       href: get-microsoft-365-business-premium.md
     - name: Kampanyalar için Microsoft 365'i edinme
       href: get-microsoft-365-campaigns.md
+    - name: İş ortakları için kaynaklar
+      href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Ortamınızı güçlendirme
   items:
     - name: Oturum açma ve ayarlama

@@ -11,17 +11,18 @@ metadata:
   ms.prod: m365-security
   ms.technology: mdb
   ms.localizationpriority: medium
+  ms.date: 08/10/2022
   ms.reviewer: shlomiakirav
   f1.keywords: NOCSH
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: abcae0beafdca9aa9d25f5ea69d88bd0d6e5a6d1
-  ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+  ms.openlocfilehash: 21e85d866e9a668253e39a20e3660a34b5465740
+  ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 08/10/2022
-  ms.locfileid: "67301167"
+  ms.lasthandoff: 08/11/2022
+  ms.locfileid: "67309449"
 title: İş için Microsoft Defender - Sık sorulan sorular ve yanıtlar
 summary: >
   İş için Defender hakkında sorularınıza yanıt almak için bu makaleyi kullanın.
@@ -50,7 +51,7 @@ sections:
     answer: >
       Kullanıcı lisansı başına en fazla beş istemci cihazı ekleyebilir ve güvenliğini sağlayabilirsiniz.
   - question: İş için Defender Mac, Android ve iOS/iPadOS istemci cihazlarını koruyor mu?
-    answer: "Evet. İş için Defender Mac, Android ve iOS/iPadOS cihazları için korumayı destekler. Bkz [. Cihazları ekleme](mdb-onboard-devices.md).\n\n- Mac cihazlarını Microsoft 365 Defender portalında yerel bir betik kullanarak ekleyebilirsiniz. \n- Android ve iOS/iPadOS cihazlarını eklemek için [Microsoft Intune](/mem/intune/) lisansına sahip olmanız gerekir. Intune Microsoft 365 İş Ekstra dahildir ve İş için Defender (tek başına) için satın alınabilir.\n\nMac, iOS/iPadOS ve Android cihazlar için daha basitleştirme yol haritasındadır. \n"
+    answer: "Evet. İş için Defender Mac, Android ve iOS/iPadOS cihazları için korumayı destekler. Bkz [. Cihazları ekleme](mdb-onboard-devices.md).\n\n- Mac cihazlarını Microsoft 365 Defender portalında yerel bir betik kullanarak ekleyebilirsiniz. \n- Android ve iOS/iPadOS cihazlarını eklemek için [Microsoft Intune](/mem/intune/) kullanabilirsiniz.\n\nMac, iOS/iPadOS ve Android cihazlar için daha basitleştirme yol haritasındadır. \n"
   - question: İş için Defender sunucuları destekliyor mu?
     answer: "Sunucu desteği artık önizleme aşamasında! Bkz. [İş için Microsoft Defender sunucuları alma (önizleme)](get-defender-business-servers.md).  \n\nİş için Microsoft Defender sunucuları lisansı genel kullanıma sunulduğunda (GA), Microsoft 365 İş Ekstra ve İş için Defender'ın tek başına sürümü için bir eklenti olarak sunulur. GA'da İş için Microsoft Defender sunucuların fiyatı sunucu örneği başına 3 ABD doları olacaktır. Bu noktada, eklenen her sunucu için bir lisans satın alabilir veya İş için Defender'dan sunucuları kullanıma almayı seçebilirsiniz.\n"
   - question: İş için Microsoft Defender sunucuları ile Sunucular için Microsoft Defender Plan 1 ve Plan 2 arasındaki fark nedir?
@@ -66,9 +67,9 @@ sections:
     answer: "İş için Defender, tek bir konsolda ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)) çok kiracılı destek için Microsoft 365 Lighthouse'de etkinleştirilir. \n\nDaha fazla bilgi için bkz. [Microsoft 365 Lighthouse genel bakış](/microsoft-365/lighthouse/m365-lighthouse-overview).\n"
   - question: İş için Defender'da saldırı yüzeyi azaltma kurallarını ve özelliklerini yapılandırmak Nasıl yaparım??
     answer: >
-      Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com)) İş için Defender aracılığıyla saldırı yüzeyi azaltma kuralları ve özellikleri için basitleştirilmiş yapılandırma henüz desteklenmemektedir. Microsoft Intune varsa, saldırı yüzeyi azaltma ilkelerinizi yapılandırmak için Microsoft Endpoint Manager yönetim merkezini kullanabilirsiniz. bkz[. Intune'da uç nokta güvenliği için saldırı yüzeyi azaltma ilkesi](/mem/intune/protect/endpoint-security-asr-policy).
-  - question: Şu anda Microsoft Intune yoksa, hem İş için Defender hem de Intune dahil edilen özellikleri kullanmak için başka bir lisansa ihtiyacım var mı?
-    answer: "Tek başına bir abonelik olarak İş için Defender'a sahipseniz ve Intune yoksa, windows ve Mac cihazlarını Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) ekleyebilir ve güvenliğini sağlayabilirsiniz. \n \nAyrıca, [basitleştirilmiş bir yapılandırma deneyimiyle](mdb-simplified-configuration.md) yeni nesil koruma ve güvenlik duvarı koruma ilkelerinizi Microsoft 365 Defender portalında yönetebilirsiniz. \n \nSaldırı yüzeyi azaltma ilkeleri gibi diğer ayarları yönetmek veya Android veya iOS/iPadOS cihazları gibi diğer cihazları eklemek için Intune gerekir. Intune Microsoft 365 İş Ekstra dahildir ve İş için Defender (tek başına) abonelikleri için satın alınabilir. \n"
+      Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com)) İş için Defender aracılığıyla saldırı yüzeyi azaltma kuralları ve özellikleri için basitleştirilmiş yapılandırma henüz desteklenmemektedir. Saldırı yüzeyi azaltma ilkelerinizi yapılandırmak için Microsoft Endpoint Manager yönetim merkezini kullanabilirsiniz. bkz[. Intune'da uç nokta güvenliği için saldırı yüzeyi azaltma ilkesi](/mem/intune/protect/endpoint-security-asr-policy).
+  - question: Microsoft Intune İş için Defender ile nasıl çalışır?
+    answer: "Tek başına bir iş için Defender aboneliğiniz varsa, windows ve Mac cihazlarını Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) ekleyebilir ve güvenli bir şekilde kullanabilirsiniz. Microsoft Intune kullanarak Windows ve Mac bilgisayarlarının yanı sıra mobil cihazları da ekleyebilirsiniz.\n\nCihazları Intune kaydettiğinizde ve bu cihazları İş için Defender'a eklediğinizde, Intune ile İş için Defender arasında bir bağlantı oluşturursunuz.\n \nYeni nesil koruma ve güvenlik duvarı koruma ilkelerinizi [basitleştirilmiş bir yapılandırma deneyimiyle](mdb-simplified-configuration.md) Microsoft 365 Defender portalında yönetebilirsiniz. Bu ilkeler Intune görünür. Saldırı yüzeyi azaltma ilkeleri gibi diğer ayarları yönetmek için Intune kullanacaksınız.  \n"
   - question: Zaten Microsoft 365 İş Ekstra kullanıyorsam neden İş için Defender'a ihtiyacım var?
     answer: "Microsoft 365 İş Ekstra varsa, İş için Defender aboneliğinize dahil edilir. Daha fazla bilgi edinmek için aşağıdaki makalelere bakın:\n \n- [İş için Defender'a genel bakış](mdb-overview.md)\n- [İş için Defender ile Microsoft 365 İş Ekstra karşılaştırma](compare-mdb-m365-plans.md)\n\nİş için Defender, şirketinizin cihazları için uç nokta koruması ile Microsoft 365 İş Ekstra güvenlik özelliklerini genişletir.\n"
   - question: İş için Defender ile Uç Nokta Planları 1 ve 2 için Defender arasındaki farklar nelerdir?

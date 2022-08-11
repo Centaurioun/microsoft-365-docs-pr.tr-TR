@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
+ms.date: 08/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 search.appverid:
@@ -16,12 +17,12 @@ search.appverid:
 - MET150
 description: Bu playbook ile İş için Defender denemenizden en iyi şekilde geçin. Hızlı bir şekilde ayarlayın ve yeni güvenlik özelliklerinizi kullanmaya başlayın.
 ms.custom: trial-playbook
-ms.openlocfilehash: 16843ef3dcb2efe36f9102001fe5579e920287b4
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 3b588dba1ee1a3df5719ece9c2db50e76acf36b2
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772783"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309493"
 ---
 # <a name="trial-playbook-microsoft-defender-for-business"></a>Deneme playbook'u: İş için Microsoft Defender
 
@@ -35,7 +36,7 @@ Bu playbook, 30 günlük ücretsiz denemenizden en iyi şekilde yararlanabilirsi
 
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="İş için Defender özellikleri ve özellikleri.":::
 
-**Haydi başlayalım!**
+**Başlayalım!**
 
 ## <a name="set-up-your-trial"></a>Deneme sürümünüzü ayarlama
 
@@ -109,10 +110,10 @@ Kurulum sihirbazını kullandıysanız ancak Windows dışı cihazlar gibi daha 
 
    | Cihaz türü | Ekleme yöntemleri |
    |:---|:---|
-   | [Windows istemcileri](mdb-onboard-devices.md) | Windows istemci cihazlarını İş için Defender'a eklemek için aşağıdaki seçeneklerden birini belirleyin:<ul><li>Yerel betik (cihazları Microsoft 365 Defender portalında el ile ekleme için)</li><li>grup ilkesi (zaten grup ilkesi kullanıyorsanız ve bu yöntemi tercih ediyorsanız)</li><li>Microsoft Intune (*önerilen*; [Microsoft 365 İş Ekstra](../../business-premium/index.md) dahil)</li></ul> |
-   | [Mac](mdb-onboard-devices.md) | Mac'i eklemek için aşağıdaki seçeneklerden birini belirleyin:<ul><li>Mac için yerel betik (*önerilir*)</li><li>Mac için Microsoft Intune (Intune [Microsoft 365 İş Ekstra](../../business-premium/index.md) dahildir)</li></ul><p>Mac'i eklemek için yerel bir betik kullanmanızı öneririz. [Intune'da Mac cihazları için kayıt ayarlayabilirsiniz](/mem/intune/enrollment/macos-enroll) ancak yerel betik, Mac'i İş için Defender'a eklemek için en basit yöntemdir. |
+   | [Windows istemcileri](mdb-onboard-devices.md) | Windows istemci cihazlarını İş için Defender'a eklemek için aşağıdaki seçeneklerden birini belirleyin:<ul><li>Yerel betik (cihazları Microsoft 365 Defender portalında el ile ekleme için)</li><li>grup ilkesi (zaten grup ilkesi kullanıyorsanız ve bu yöntemi tercih ediyorsanız)</li><li>Microsoft Intune (zaten Intune kullanıyorsanız ve kullanmaya devam etmek istiyorsanız)</li></ul> |
+   | [Mac](mdb-onboard-devices.md) | Mac'i eklemek için aşağıdaki seçeneklerden birini belirleyin:<ul><li>Mac için yerel betik (*önerilir*)</li><li>Mac için Microsoft Intune </li></ul><p>Mac'i eklemek için yerel bir betik kullanmanızı öneririz. [Intune'da Mac cihazları için kayıt ayarlayabilirsiniz](/mem/intune/enrollment/macos-enroll) ancak yerel betik, Mac'i İş için Defender'a eklemek için en basit yöntemdir. |
    | Windows Server ve Linux sunucuları | *Windows Server veya Linux Server örneğini ekleme özelliği şu anda önizleme aşamasındadır ve ek lisans gerektirir*. Daha fazla bilgi edinmek için aşağıdaki makalelere bakın: <ul><li>[İş için Defender gereksinimleri](mdb-requirements.md)</li><li>[Cihazları İş için Defender'a ekleme](mdb-onboard-devices.md)</li></ul> |
-   | [Mobil cihazlar](mdb-onboard-devices.md) | Android ve iOS/iPadOS cihazları gibi mobil cihazları eklemek için Microsoft Intune gerekir. [Microsoft 365 İş Ekstra](../../business-premium/index.md) varsa Intune aboneliğinizin bir parçasıdır. Intune ayrıca satın alınabilir. Bu cihazları Intune kaydetme konusunda yardım almak için aşağıdaki kaynaklara bakın:<ul><li>[Android cihazları kaydetme](/mem/intune/enrollment/android-enroll)</li><li>[iOS veya iPadOS cihazlarını kaydetme](/mem/intune/enrollment/ios-enroll)</li></ul> |
+   | [Mobil cihazlar](mdb-onboard-devices.md) | Android ve iOS/iPadOS cihazları gibi mobil cihazları eklemek için Microsoft Intune kullanın. Bu cihazları Intune kaydetme konusunda yardım almak için aşağıdaki kaynaklara bakın:<ul><li>[Android cihazları kaydetme](/mem/intune/enrollment/android-enroll)</li><li>[iOS veya iPadOS cihazlarını kaydetme](/mem/intune/enrollment/ios-enroll)</li></ul> |
 
 5. **[Güvenlik ilkelerinizi görüntüleyin ve yapılandırın](mdb-configure-security-settings.md)**. Şirketinizin cihazlarını İş için Defender'a ekledikten sonra, sonraki adım güvenlik ilkelerinizi ve ayarlarınızı görüntülemek ve düzenlemektir. İş için Defender, önerilen ayarları kullanan önceden yapılandırılmış güvenlik ilkeleri içerir. Ancak ayarları iş gereksinimlerinize uyacak şekilde düzenleyebilirsiniz.
 

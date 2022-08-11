@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da modern bir şablon kullanarak belgeleri ve diğer içerikleri otomatik olarak oluşturmayı öğrenin.
-ms.openlocfilehash: a6819afa528f197db49954945df279ea340603e1
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: ed0b66ecf495dccd18e24ff5ef4caded17c2b234
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306690"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309845"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da içerik derlemesini kullanarak belge oluşturma
 
-sözleşmeler, iş beyanları, hizmet sözleşmeleri, onay mektupları, satış sunumları ve yazışmalar gibi standart yinelenen iş belgelerini otomatik olarak oluşturmanıza yardımcı olması için SharePoint Syntex kullanabilirsiniz. tüm bunları SharePoint Syntex içerik derlemesini kullanarak daha hızlı, daha tutarlı ve hatalara daha az eğilimli yapabilirsiniz.
+sözleşmeler, iş beyanları, hizmet sözleşmeleri, onay mektupları, satış sunumları ve yazışmalar gibi standart yinelenen iş belgelerini otomatik olarak oluşturmanıza yardımcı olması için SharePoint Syntex kullanabilirsiniz. tüm bunları daha hızlı, daha tutarlı ve daha az hatayla SharePoint Syntex içerik derlemesi kullanarak yapabilirsiniz.
 
-İçerik derlemesiyle, mevcut bir belgeyi kullanarak *modern bir şablon* oluşturabilir ve ardından sharepoint listelerini veya kullanıcı girişlerini veri kaynağı olarak kullanarak otomatik olarak yeni içerik oluşturmak için bu şablonu kullanabilirsiniz.
+İçerik derlemesiyle, mevcut bir belgeyi kullanarak *modern bir şablon* oluşturabilir ve ardından sharepoint listelerini veya el ile girdileri veri kaynağı olarak kullanarak otomatik olarak yeni içerik oluşturmak için bu şablonu kullanabilirsiniz.
 
 > [!NOTE]
 > İçerik derleme özelliklerine erişmek ve bunları kullanmak için lisanslı bir SharePoint Syntex kullanıcısı olmanız gerekir. SharePoint listelerini yönetmek için de izinleriniz olmalıdır.

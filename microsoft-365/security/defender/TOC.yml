@@ -190,6 +190,8 @@
                       href: alert-grading-playbook-inbox-forwarding-rules.md
                     - name: Şüpheli gelen kutusu işleme kuralları
                       href: alert-grading-playbook-inbox-manipulation-rules.md
+                    - name: Kötü amaçlı exchange bağlayıcıları
+                      href: alert-grading-for-malicious-exchange-connectors.md
                 - name: Kullanıcılar
                   href: investigate-users.md
             - name: Olay yanıtı taktik defterleri

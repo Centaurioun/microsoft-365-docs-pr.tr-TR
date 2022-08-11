@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Azure DevOps uygulaması gizli dizi hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 03ea2782272b961522c40a1f8e43ebf9da548cd4
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d689cb184cd329d1d5686a5dde486305b5375078
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948447"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309361"
 ---
 # <a name="azure-devops-app-secret-preview"></a>Azure DevOps uygulama gizli anahtarı (önizleme)
 
@@ -41,10 +41,10 @@ Harf, rakam ve özel karakterlerden oluşan 52 karakterden oluşan bir birleşim
 
 örneğin:
 
-`ntpi2ch67ci2vjzcohglogyygwo5fuyl365n2zdowwxhsys6jnoa`
+`abcdefghijklmnopqrstuvwxyz234567abcdefghijklmnopqrst`
 
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
@@ -54,12 +54,12 @@ Bu SIT, [Azure DevOps REST API erişimi](/azure/devops/integrate/get-started/aut
 
 Birkaç birincil kaynak kullanır:
 
-- Base32 kodlamalı 256 bit simetrik anahtarın desenleri.
+- Base32 kodlu 256 bit simetrik anahtarın desenleri.
 - CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName desenleri.
 - Mockup değerlerinin, redaction'ların ve yer tutucuların desenleri.
 - Sözlük sözlüğü
 
-Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde tasarlanmıştır. Desenler örnek olarak biçimlendirilmiş kimlik bilgileriyle eşleşmiyor. Sahte değerler, yeniden düzenlenmiş değerler ve kimlik bilgisi türü veya kullanım açıklamaları gibi yer tutucular, gerçek bir gizli dizi değerinin bulunmaması gereken konumda eşleştirilmeyecektir.
+Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde tasarlanmıştır. Desenler örnek olarak biçimlendirilmiş kimlik bilgileriyle eşleşmiyor. Gerçek bir gizli dizi değerinin bulunmaması gereken konumdaki sahte değerler, yeniden düzenlenmiş değerler ve kimlik bilgisi türü veya kullanım açıklamaları gibi yer tutucular.
 
 ## <a name="keywords"></a>Anahtar Sözcükler
 

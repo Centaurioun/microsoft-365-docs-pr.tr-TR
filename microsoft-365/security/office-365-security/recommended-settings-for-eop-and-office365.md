@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) ve Office 365 için Defender güvenlik ayarları için en iyi yöntemler nelerdir? Standart koruma için geçerli öneriler neleri içerir? Daha katı olmak istiyorsanız ne kullanılmalıdır? Ayrıca Office 365 için Defender kullanıyorsanız ne kadar ekstra alırsınız?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a48df4446ad891350fd4efee99c44dae8704ad9d
-ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
+ms.openlocfilehash: e6b0f09b9b8785ef7e471a9c5269348b131b866b
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67294533"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306602"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP ve Office 365 için Microsoft Defender güvenliği için önerilen ayarlar
 
@@ -137,7 +137,8 @@ Kötü amaçlı yazılımdan koruma ilkeleri oluşturmak ve yapılandırmak içi
 |Güvenlik özelliği adı|Varsayılan|Standart|Sıkı|Açıklama ekleme|
 |---|:---:|:---:|:---:|---|
 |**Koruma ayarları**|||||
-|**Ortak ekler filtresini etkinleştirme** <br><br> _EnableFileFilter_|Seçili değil <br><br> `$false`|Seçili <br><br> `$true`|Seçili <br><br> `$true`|Bu ayar, ek içeriğine bakılmaksızın dosya türüne göre ek içeren iletileri karantinaya alır. Dosya türlerinin listesi için bkz [. Kötü amaçlı yazılımdan koruma ilkeleri](anti-malware-protection.md#anti-malware-policies).|
+|**Ortak ekler filtresini etkinleştirme** <br><br> _EnableFileFilter_|Seçili <br><br> `$true`|Seçili <br><br> `$true`|Seçili <br><br> `$true`|Bu ayar, ek içeriğine bakılmaksızın dosya türüne göre ek içeren iletileri karantinaya alır. Dosya türlerinin listesi için bkz [. Kötü amaçlı yazılımdan koruma ilkeleri](anti-malware-protection.md#anti-malware-policies).|
+|Yaygın ek filtresi bildirimleri (**Bu dosya türleri bulunduğunda**) <br><br> _FileTypeAction_|**Teslim edilmedi bilgisi (NDR) içeren iletileri reddetme** <br><br> `Reject`|**Teslim edilmedi bilgisi (NDR) içeren iletileri reddetme** <br><br> `Reject`|**Teslim edilmedi bilgisi (NDR) içeren iletileri reddetme** <br><br> `Reject`||
 |**Kötü amaçlı yazılım için sıfır saatlik otomatik temizlemeyi etkinleştirme** <br><br> _ZapEnabled_|Seçili <br><br> `$true`|Seçili <br><br> `$true`|Seçili <br><br> `$true`||
 |**Karantina ilkesi**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|Yeni bir kötü amaçlı yazılımdan koruma ilkesi oluşturduğunuzda boş bir değer, kötü amaçlı yazılım olarak karantinaya alınan iletilerin geçmiş özelliklerini tanımlamak için varsayılan karantina ilkesinin kullanıldığı anlamına gelir (Karantina bildirimleri olmadan AdminOnlyAccessPolicy). <br><br> Standart ve Katı önceden ayarlanmış güvenlik ilkeleri [, buradaki](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) tabloda açıklandığı gibi varsayılan karantina ilkesini (Karantina bildirimleri olmadan AdminOnlyAccessPolicy) kullanır. <br><br> Yöneticiler, varsayılan veya özel kötü amaçlı yazılımdan koruma ilkelerinde kullanıcılar için daha fazla özellik tanımlayan özel karantina ilkeleri oluşturabilir ve seçebilir. Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md).|
 |**Yönetici bildirimleri**|||||

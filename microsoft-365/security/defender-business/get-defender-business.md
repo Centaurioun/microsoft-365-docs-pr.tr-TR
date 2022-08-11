@@ -10,18 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 07/20/2022
+ms.date: 08/10/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 5f0c1f63223498995d04814434bbf4000e55d918
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 1eb0e7a36e170d8e8bd01233b0ee2db42c0ec331
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917902"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309757"
 ---
 # <a name="get-microsoft-defender-for-business"></a>İş için Microsoft Defender alma
 
@@ -101,7 +101,7 @@ Başlamaya hazır olduğunuzda iki ana portalla çalışırsınız: Microsoft 36
 | Microsoft 365 Defender portalı ([https://security.microsoft.com](https://security.microsoft.com))     | İş için Defender'ı ayarlamak ve yapılandırmak için Microsoft 365 Defender portalını kullanın.<p>Microsoft 365 Defender portalını kullanarak: <ul><li>Cihazlarınızı ve cihaz koruma ilkelerinizi görüntüleyin.</li><li>Algılanan tehditleri görüntüleyin ve harekete geçin.</li><li>Güvenlik önerilerini görüntüleyin ve güvenlik ayarlarınızı yönetin.</li></ul><p>Daha fazla bilgi için bkz. [Microsoft 365 Defender portalını kullanmaya başlama](mdb-get-started.md).        |
 
 > [!TIP]
-> Microsoft 365 İş Ekstra varsa, Microsoft Intune de vardır. Cihazları yönetmek ve güvenlik ayarlarını yapılandırmak için Microsoft Endpoint Manager yönetim merkezini ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) kullanabilirsiniz. Intune hakkında daha fazla bilgi edinmek için bkz. [Microsoft Intune cihazlarınız için bir MDM ve MAM sağlayıcısıdır](/mem/intune/fundamentals/what-is-intune).
+> Cihazları eklemek ve güvenlik ayarlarını yapılandırmak için Microsoft Endpoint Manager yönetim merkezini ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) kullanabilirsiniz. Intune hakkında daha fazla bilgi edinmek için bkz. [Microsoft Intune cihazlarınız için bir MDM ve MAM sağlayıcısıdır](/mem/intune/fundamentals/what-is-intune).
 
 
 ## <a name="next-steps"></a>Sonraki adımlar

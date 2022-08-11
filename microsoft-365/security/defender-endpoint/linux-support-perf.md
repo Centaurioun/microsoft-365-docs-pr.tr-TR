@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3452f36068facc92885047184f7e00828f569cbc
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 4afe94238a98cf168015c43946194205f0e20aa0
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873016"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309383"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender performans sorunlarını giderme
 
@@ -65,7 +65,7 @@ Bu sorunları gidermek ve azaltmak için aşağıdaki adımlar kullanılabilir:
     Cihazınız kuruluşunuz tarafından yönetiliyorsa, [Linux'ta Uç Nokta için Defender tercihlerini ayarlama](linux-preferences.md) başlığı altındaki yönergeler kullanılarak gerçek zamanlı koruma yöneticiniz tarafından devre dışı bırakılabilir.
 
     > [!NOTE]
-    > Gerçek zamanlı koruma kapalıyken performans sorunu devam ederse sorunun kaynağı uç noktada algılama ve yanıtlama (EDR) bileşeni olabilir. Bu durumda lütfen bu makalenin **Uç Nokta için Microsoft Defender İstemci Çözümleyicisi'ni kullanarak performans sorunlarını giderme** bölümündeki adımları izleyin.
+    > Gerçek zamanlı koruma kapalıyken performans sorunu devam ederse, sorunun kaynağı uç nokta algılama ve yanıt (EDR) bileşeni olabilir. Bu durumda lütfen bu makalenin **Uç Nokta için Microsoft Defender İstemci Çözümleyicisi'ni kullanarak performans sorunlarını giderme** bölümündeki adımları izleyin.
 
 2. En çok taramayı tetikleyen uygulamaları bulmak için, Linux'ta Uç Nokta için Defender tarafından toplanan gerçek zamanlı istatistikleri kullanabilirsiniz.
 
@@ -162,99 +162,20 @@ Bu sorunları gidermek ve azaltmak için aşağıdaki adımlar kullanılabilir:
 
 ## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Uç Nokta için Microsoft Defender İstemci Çözümleyicisi'ni kullanarak performans sorunlarını giderme
 
+
 **Şunlar için geçerlidir:**
-- AV ve EDR gibi tüm kullanılabilir Uç Nokta için Defender bileşenlerinin performans sorunları  
+- AV ve EDR gibi kullanılabilir tüm Uç Nokta için Defender bileşenlerinin performans sorunları  
 
-Uç Nokta için Microsoft Defender İstemci Çözümleyicisi (MDECA), Linux'ta [eklenen cihazlardaki](/microsoft-365/security/defender-endpoint/onboard-configure) performans sorunlarını gidermek için izlemeleri, günlükleri ve tanılama bilgilerini toplayabilir.
-
-> [!NOTE]
-> Uç Nokta için Microsoft Defender İstemci Çözümleyicisi aracı, Microsoft Müşteri Destek Hizmetleri (CSS) tarafından ip adresleri, Uç Nokta için Microsoft Defender karşılaşabileceğiniz sorunları gidermeye yardımcı olacak bilgisayar adları gibi bilgileri toplamak için düzenli olarak kullanılır. Gizlilik bildirimimiz hakkında daha fazla bilgi için bkz. [Microsoft Gizlilik Bildirimi](https://privacy.microsoft.com/privacystatement).
-
-### <a name="requirements"></a>Gereksinimler
-
-- İstemci çözümleyicisi, Uç Nokta için Microsoft Defender eklemeden önce veya sonra [Desteklenen Linux](microsoft-defender-endpoint-linux.md#system-requirements) dağıtımlarında çalıştırılabilir.
-- Linux için istemci çözümleyicisini buradan indirilebilen en son önizleme sürümünden indirin: <https://aka.ms/XMDEClientAnalyzer>
-- Cihazınız bir ara sunucunun arkasındaysa, proxy sunucusunu mde_support_tool.sh betiğine ortam değişkeni olarak geçirebilirsiniz. Örneğin: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
-
-### <a name="run-the-client-analyzer-on-linux"></a>Linux'ta istemci çözümleyicisini çalıştırma
-
-İlgili makinede bir terminal veya SSH açın ve aşağıdaki komutları çalıştırın:
-
-1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer`
-2. `unzip -q XMDEClientAnalyzer.zip`
-3. `cd XMDEClientAnalyzer`
-4. `chmod +x mde_support_tool.sh`
-5. Gerekli pip ve lxml bileşenlerini yüklemek için kök olmayan kullanım olarak çalıştırın: `./mde_support_tool.sh`
-6. Gerçek tanılama paketini toplamak ve sonuç arşiv dosyasını oluşturmak için kök olarak yeniden çalıştırın: `./mde_support_tool.sh -d` Örnek:
-
-   ![Komut satırı örneğinin resmi.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
+Uç Nokta için Microsoft Defender İstemci Çözümleyicisi (MDECA), macOS'ta [eklenen cihazlardaki](/microsoft-365/security/defender-endpoint/onboard-configure) performans sorunlarını gidermek için izlemeleri, günlükleri ve tanılama bilgilerini toplayabilir.
 
 > [!NOTE]
-> - Çözümleyicinin sonuç çıktısını oluşturması için 'lxml' gerekir. Yüklü değilse çözümleyici aşağıdaki Python paketleri için resmi depodan getirmeye çalışır: <https://pypi.org/search/?q=lxml>
-> 
-> - Ayrıca aracın şu anda Python sürüm 3 veya üzerinin yüklü olması gerekir.
->
-> - Python 3 kullanamayan veya lxml bileşenini getiremeyen bir makinede çalışıyorsanız, çözümleyicinin gereksinimlerinden herhangi birine sahip olmayan ikili tabanlı bir sürümünü indirebilirsiniz: [XMDE İstemci Çözümleyicisi İkili](https://aka.ms/XMDEClientAnalyzerBinary)
+>- Uç Nokta için Microsoft Defender İstemci Çözümleyicisi aracı, Microsoft Müşteri Destek Hizmetleri (CSS) tarafından ip adresleri, Uç Nokta için Microsoft Defender karşılaşabileceğiniz sorunları gidermeye yardımcı olacak bilgisayar adları gibi bilgileri toplamak için düzenli olarak kullanılır. Gizlilik bildirimimiz hakkında daha fazla bilgi için bkz. [Microsoft Gizlilik Bildirimi](https://privacy.microsoft.com/privacystatement).
+>- Genel bir en iyi uygulama olarak, [Uç Nokta için Microsoft Defender aracısını  en son kullanılabilir sürüme](mac-whatsnew.md)  güncelleştirmeniz ve daha fazla araştırma yapmadan önce sorunun hala devam ettiğini onaylamanız önerilir. 
 
-### <a name="additional-syntax-help"></a>Ek söz dizimi yardımı:
+Performans sorunlarını gidermek üzere istemci çözümleyicisini çalıştırmak için bkz. [macOS ve Linux üzerinde istemci çözümleyicisini çalıştırma](run-analyzer-macos-linux.md).
 
-**-h** \# Yardım<br>
-\# Yardım iletisini göster
-
-**Performans** \# Performans<br>
-\# İsteğe bağlı olarak yeniden oluşturulabilen bir performans sorununun analizi için kapsamlı izleme toplar. Karşılaştırmanın süresini belirtmek için kullanma `--length=<seconds>` .
-
-**-o** \# Çıkış<br>
-\# Sonuç dosyası için hedef yolu belirtme
-
-**-nz** \# No-Zip<br>
-\# Ayarlanırsa, sonuçta elde edilen arşiv dosyası yerine bir dizin oluşturulur
-
-**-f** \# Kuvvet<br>
-\# Çıkış hedef yolda zaten varsa üzerine yaz
-
-### <a name="result-package-contents"></a>Sonuç paketi içeriği
-
-- report.html
-
-  Açıklama: Çözümleyici betiğinin makinede çalıştırabileceği bulguları ve yönergeleri içeren ana HTML çıkış dosyası.
-
-- mde_diagnostic.zip
-
-  Açıklama: [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information) üzerinde *mdatp tanılama oluşturma* çalıştırılırken oluşturulan tanılama çıktısı aynı
-
-- mde.xml
-
-  Açıklama: Çalıştırılırken oluşturulan ve html rapor dosyasını derlemek için kullanılan XML çıkışı.
-
-- Processes_information.txt
-
-  Açıklama: Sistemdeki çalışan Uç Nokta için Microsoft Defender ilgili işlemlerin ayrıntılarını içerir.
-
-- Log.txt
-
-  Açıklama: Veri toplama sırasında ekrana yazılan günlük iletilerinin aynısını içerir.
-
-- Health.txt
-
-  Açıklama: *mdatp* health komutu çalıştırılırken gösterilen temel sistem durumu çıktısının aynısı.
-
-- Events.xml
-
-  Açıklama: ÇÖZÜMleyici tarafından HTML raporu oluştururken kullanılan ek XML dosyası.
-
-- Audited_info.txt
-
-  Açıklama: [Linux](/microsoft-365/security/defender-endpoint/linux-resources) işletim sistemi için denetlenen hizmet ve ilgili bileşenlerle ilgili ayrıntılar
-
-- perf_benchmark.tar.gz
-
-  Açıklama: Performans testi raporları. Bunu yalnızca performans parametresini kullanıyorsanız görürsünüz.
-
-> [!NOTE]
-> Yukarıdaki adımları takip ettikten sonra performans sorununun devam etmesi durumunda, daha fazla yönerge ve risk azaltma için lütfen müşteri desteğine başvurun.
-
-
+>[!NOTE]
+>Yukarıdaki adımların ardından performans sorununun devam etmesi durumunda, daha fazla yönerge ve risk azaltma için lütfen müşteri desteğine başvurun. 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

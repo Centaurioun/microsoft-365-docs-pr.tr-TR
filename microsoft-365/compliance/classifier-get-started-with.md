@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 sınıflandırıcısı, çeşitli içerik türlerini tanımak için eğitebileceğiniz ve bakabileceği örnekler veren bir araçtır. Bu makalede, özel sınıflandırıcı oluşturma ve eğitme ve doğruluğu artırmak için bunları yeniden eğitme hakkında bilgi verilmektedir.
-ms.openlocfilehash: ff23f24145cee1b694f96e933919dddf779dfd9a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 16ae9e3d3ee7efc6d82be7b89f99b8b57cdb0845
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631391"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309823"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Eğitilebilir sınıflandırıcıları kullanmaya başlama
 
@@ -38,7 +38,7 @@ Eğitilebilir sınıflandırıcı oluşturmanın hızlı bir özeti için bu vid
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
+<!-- [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]-->
 
 
 ## <a name="prerequisites"></a>Önkoşullar

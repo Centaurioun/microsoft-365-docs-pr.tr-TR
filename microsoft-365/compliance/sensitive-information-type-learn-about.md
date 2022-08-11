@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Bu makale hassas bilgi türlerine ve hassas öğeleri tanımlamak için sosyal güvenlik, kredi kartı veya banka hesabı numaraları gibi hassas bilgileri nasıl algıladıklarına genel bakış sağlar
-ms.openlocfilehash: 2a7f639097203f06795945dbd08fa64db3a1f0df
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9cc42512109f0e939ac946b39a3cd6c060283347
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944053"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309801"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Hassas bilgi türleri hakkında daha fazla bilgi edinme
 
@@ -87,9 +87,9 @@ Her hassas bilgi türü varlığı şu alanlar tarafından tanımlanır:
 
 ![Doğrulayıcı kanıt ve yakınlık penceresinin diyagramı.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-Bu kısa videoda güvenilirlik düzeyleri hakkında daha fazla bilgi edinin.
+<!--Learn more about confidence levels in this short video.
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]-->
 
 ### <a name="example-sensitive-information-type"></a>Örnek hassas bilgi türü
 
@@ -109,13 +109,13 @@ Sekiz basamak:
 - dönem
 - üç basamak
 
-### <a name="checksum"></a>Sağlama toplamı
+### <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ### <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade Regex_argentina_national_id desenle eşleşen içeriği bulur.
 - Keyword_argentina_national_id anahtar sözcüğü bulunur.

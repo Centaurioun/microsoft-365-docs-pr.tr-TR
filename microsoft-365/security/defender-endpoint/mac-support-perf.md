@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7c60a61ca1a0a1179abd27c0f6d59970a0c09866
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: cef25147a57cf7613d22fbf393d41ecc33730955
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969562"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309559"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender performans sorunlarını giderme
 
@@ -34,13 +34,21 @@ ms.locfileid: "66969562"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Bu konu, macOS'ta Uç Nokta için Microsoft Defender ile ilgili performans sorunlarını daraltmak için kullanılabilecek bazı genel adımlar sağlar.
 
-Gerçek zamanlı koruma (RTP), macOS'ta cihazınızı sürekli izleyen ve tehditlere karşı koruyan bir Uç Nokta için Microsoft Defender özelliğidir. Dosya ve süreç izleme ve diğer buluşsal yöntemlerden oluşur.
 
 Çalıştırdığınız uygulamalara ve cihazınızın özelliklerine bağlı olarak, macOS üzerinde Uç Nokta için Microsoft Defender çalıştırırken en iyi performansla karşılaşabilirsiniz. Özellikle, kısa bir zaman aralığı boyunca birçok kaynağa erişen uygulamalar veya sistem işlemleri macOS'ta Uç Nokta için Microsoft Defender performans sorunlarına yol açabilir.
+
+>[!WARNING]
+>Başlamadan önce lütfen cihazda şu anda diğer güvenlik ürünlerinin çalışmadığından emin olun. Birden çok güvenlik ürünü çakışabilir ve konak performansını etkileyebilir. 
+
+## <a name="troubleshoot-performance-issues-using-real-time-protection-statistics"></a>Gerçek Zamanlı Koruma İstatistiklerini kullanarak performans sorunlarını giderme
+**Şunlar için geçerlidir:**
+- Yalnızca AV ile ilgili performans sorunları
+
+Gerçek zamanlı koruma (RTP), macOS'ta cihazınızı sürekli izleyen ve tehditlere karşı koruyan uç nokta için Defender özelliğidir. Dosya ve süreç izleme ve diğer buluşsal yöntemlerden oluşur.
 
 Bu sorunları gidermek ve azaltmak için aşağıdaki adımlar kullanılabilir:
 
@@ -157,3 +165,25 @@ Bu sorunları gidermek ve azaltmak için aşağıdaki adımlar kullanılabilir:
 6. performans sorunlarına katkıda bulunan işlemler veya disk konumları için dışlamalarla macOS'ta Uç Nokta için Microsoft Defender yapılandırın ve gerçek zamanlı korumayı yeniden etkinleştirin.
 
      Ayrıntılar için bkz[. macOS'ta Uç Nokta için Microsoft Defender için dışlamaları yapılandırma ve doğrulama](mac-exclusions.md).
+
+
+## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Uç Nokta için Microsoft Defender İstemci Çözümleyicisi'ni kullanarak performans sorunlarını giderme
+
+**Şunlar için geçerlidir:**
+- AV ve EDR gibi kullanılabilir tüm Uç Nokta için Defender bileşenlerinin performans sorunları  
+
+Uç Nokta için Microsoft Defender İstemci Çözümleyicisi (MDECA), macOS'ta [eklenen cihazlardaki](/microsoft-365/security/defender-endpoint/onboard-configure) performans sorunlarını gidermek için izlemeleri, günlükleri ve tanılama bilgilerini toplayabilir.
+
+> [!NOTE]
+>- Uç Nokta için Microsoft Defender İstemci Çözümleyicisi aracı, Microsoft Müşteri Destek Hizmetleri (CSS) tarafından ip adresleri, Uç Nokta için Microsoft Defender karşılaşabileceğiniz sorunları gidermeye yardımcı olacak bilgisayar adları gibi bilgileri toplamak için düzenli olarak kullanılır. Gizlilik bildirimimiz hakkında daha fazla bilgi için bkz. [Microsoft Gizlilik Bildirimi](https://privacy.microsoft.com/privacystatement).
+>- Genel bir en iyi uygulama olarak, [Uç Nokta için Microsoft Defender aracısını  en son kullanılabilir sürüme](linux-whatsnew.md)  güncelleştirmeniz ve daha fazla araştırma yapmadan önce sorunun hala devam ettiğini onaylamanız önerilir. 
+
+Performans sorunlarını gidermek üzere istemci çözümleyicisini çalıştırmak için bkz. [macOS ve Linux üzerinde istemci çözümleyicisini çalıştırma](run-analyzer-macos-linux.md).
+
+>[!NOTE]
+>Yukarıdaki adımların ardından performans sorununun devam etmesi durumunda, daha fazla yönerge ve risk azaltma için lütfen müşteri desteğine başvurun. 
+
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Sistem durumu sorunlarını araştırın](health-status.md)
