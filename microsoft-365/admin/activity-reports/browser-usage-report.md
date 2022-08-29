@@ -18,16 +18,18 @@ search.appverid:
 - MOE150
 - GEA150
 description: Microsoft 365 yönetim merkezi Microsoft 365 Raporları panosunu kullanarak Microsoft tarayıcı kullanım raporu almayı öğrenin.
-ms.openlocfilehash: 3eff031f4f621764a6713c34d3dbe8fc8009aced
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 2444a93a1a68cd994da19325a8a00af868b6ba16
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942067"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386527"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Yönetim merkezinde Microsoft 365 Raporları - Microsoft tarayıcı kullanımı
 
-Microsoft 365 Raporları panosu, kuruluşunuzdaki ürünler genelinde bir etkinliğe genel bakış sunar. Her bir üründeki etkinlikler hakkında daha ayrıntılı içgörüler elde etmek için tek tek ürün düzeyi raporlarında detaya gitmenizi sağlar. [Raporlara genel bakış konusuna](activity-reports.md) göz atın. Microsoft tarayıcı kullanım raporunda yeni Microsoft Edge kullanımı hakkında içgörüler elde edebilirsiniz. Kullanım raporlaması, kuruluşunuzda Microsoft 365 hesaplarında oturum açıp Microsoft Edge tarayıcısını kullanarak Microsoft 365 hizmetlerine erişen toplam kullanıcı sayısını temel alır.
+Microsoft 365 Raporları panosu, kuruluşunuzdaki ürünler genelinde bir etkinliğe genel bakış sunar. Her bir üründeki etkinlikler hakkında daha ayrıntılı içgörüler elde etmek için tek tek ürün düzeyi raporlarında detaya gitmenizi sağlar. [Raporlara genel bakış konusuna](activity-reports.md) göz atın. 
+
+Microsoft 365 Yönetici Merkezi'ndeki **Microsoft Tarayıcı Kullanımı raporu**, kullanıcıların Microsoft Edge aracılığıyla Microsoft 365 çevrimiçi hizmetler erişip erişmediğini görmenizi sağlar. Bu rapor içgörüleri, kuruluşunuzu Microsoft Edge'e geçirmenize yardımcı olabilir. Kullanım raporlaması, kuruluşunuzda Microsoft 365 hesaplarında oturum açıp Microsoft Edge tarayıcısını kullanarak Microsoft 365 hizmetlerine erişen toplam kullanıcı sayısını temel alır.
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>Microsoft tarayıcı kullanım raporuna erişme
 
@@ -46,7 +48,11 @@ Microsoft 365 Raporları panosu, kuruluşunuzdaki ürünler genelinde bir etkinl
 
 **Etkin Kullanıcılar** grafiği, seçilen zaman aralığında Microsoft Edge kullanırken Microsoft 365 hizmetlerine erişen toplam kullanıcı sayısını gösterir.
 
-Tablo, kullanıcı başına verilerin dökümünü gösterir. Tablodaki sütunları ekleyebilir veya kaldırabilirsiniz.
+Rapor, Microsoft 365 Yönetici Merkezi'ndeki kullanım panosundaki etkinlik raporlarına mevcut erişimi olan BT yöneticileriyle sınırlı izinlerle kuruluşunuzun içinde yer alır.
+
+> [!NOTE]
+> Toplu Microsoft tarayıcı kullanımı ve kullanıcı düzeyi raporlama kullanılabilir. [Kuruluşunuzun ilkelerine göre kullanıcı düzeyi tanımlaması kaldırılabilir](activity-reports.md#show-user-details-in-the-reports) ve rapor erişimini ayarlamak için [rol tabanlı erişim denetimleri](../../admin/add-users/assign-admin-roles.md) kullanılabilir.
+
 
 |Öğe|Açıklama|
 |:-----|:-----|

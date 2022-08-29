@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Microsoft Purview Uyumluluk Yöneticisi'nin riskleri ele almak ve uyumluluk duruşunuzu geliştirmek için gerçekleştirilen eylemlere göre kişiselleştirilmiş bir puanı nasıl hesapladığını anlayın.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a33cbe9c4ea5b12ab0fec40068ba7dcd2f561e4e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 177f3eb5a16da6541c2331d68f4d2a3b8cf215ac
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635687"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357410"
 ---
 # <a name="compliance-score-calculation"></a>Uyumluluk puanı hesaplaması
 
@@ -33,15 +33,11 @@ ms.locfileid: "66635687"
 
 Uyumluluk Yöneticisi panosu genel uyumluluk puanınızı görüntüler. Bu puan, denetimler içindeki önerilen iyileştirme eylemlerini tamamlama ilerlemenizi ölçer. Puanınız geçerli uyumluluk duruşunuzu anlamanıza yardımcı olabilir. Ayrıca riski azaltma potansiyeline göre eylemleri önceliklendirmenize de yardımcı olabilir.
 
-Puan değeri üç düzeyde atanır:
+Şu düzeylerde bir puan değeri atanır:
 
-1. **İyileştirme eylem puanı**: Her eylemin olası risklere bağlı olarak puanınız üzerinde farklı bir etkisi vardır
+1. **İyileştirme eylemi**: Her eylemin, olası risklere bağlı olarak puanınız üzerinde farklı bir etkisi vardır. Ayrıntılar için aşağıdaki [Eylem türleri ve noktalarına](#action-types-and-points) bakın.
 
-2. **Denetim puanı**: Bu puan, denetim içindeki iyileştirme eylemleri tamamlanarak kazanılan puanların toplamıdır. Bu toplam, denetim aşağıdaki koşulların ikisini de karşıladığında genel uyumluluk puanınıza tamamen uygulanır:
-    - **Uygulama Durumu** , **Uygulanan** veya **Alternatif Uygulama'ya** eşittir ve
-    - **Test Sonucu****, Başarılı'ya** eşittir.
-
-3. **Değerlendirme puanı**: Bu puan, denetim puanlarınızın toplamıdır. Eylem puanları kullanılarak hesaplanır. Kuruluşunuz tarafından yönetilen her Microsoft eylemi ve her geliştirme eylemi, denetimde ne sıklıkta başvurulduğundan bağımsız olarak bir kez sayılır.
+2. **Değerlendirme**: Bu puan, iyileştirme eylem puanları kullanılarak hesaplanır. Kuruluşunuz tarafından yönetilen her Microsoft eylemi ve her geliştirme eylemi, denetimde ne sıklıkta başvurulduğundan bağımsız olarak bir kez sayılır.
 
 Genel uyumluluk puanı, her Microsoft eyleminin bir kez sayıldığı, yönettiğiniz her teknik eylemin bir kez ve yönettiğiniz teknik olmayan her eylemin grup başına bir kez sayıldığı eylem puanları kullanılarak hesaplanır. Bu mantık, eylemlerin kuruluşunuzda nasıl uygulandığı ve test edildiğinde en doğru muhasebeyi sağlamak için tasarlanmıştır. Bunun genel uyumluluk puanınızın değerlendirme puanlarınızın ortalamasından farklı olduğuna neden olabileceğini fark edebilirsiniz. [Eylemlerin nasıl puanlanmış olduğu](#action-types-and-points) hakkında daha fazla bilgiyi aşağıda bulabilirsiniz.
 
@@ -67,8 +63,8 @@ Eylem durumunuz, değişiklik yapıldıktan sonraki 24 saat içinde panonuzda g�
 
 Uyumluluk Yöneticisi iki tür eylemi izler:
 
-1. **Geliştirme eylemleriniz**: kuruluşunuzun yönettiği eylemler.
-2. **Microsoft eylemleri**: Microsoft'un yönettiği eylemler.
+1. **Geliştirme eylemleriniz**: Kuruluşunuz tarafından yönetilir
+2. **Microsoft eylemleri**: Microsoft tarafından yönetilir
 
 Her iki eylem türü de tamamlandığında toplam puanınıza doğru sayan puanlara sahiptir.
 

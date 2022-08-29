@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/09/2022
+ms.date: 08/18/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra'de koruma düzeyini artırma konusunda yardım alın
-ms.openlocfilehash: 361ddc713a0616cd595ed2794d02db8c38707477
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 24e92f47586e9576d8cfbb0616d3b25f28f7482a
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300661"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386549"
 ---
 # <a name="protect-against-malware-and-other-cyberthreats-with-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra ile kötü amaçlı yazılımlara ve diğer siber tehditlere karşı koruma
 
@@ -34,6 +34,7 @@ Bu hedefte, Microsoft 365 İş Ekstra ile tehdit korumanızı artırırsınız. 
 - İş gereksinimlerinize uygun olarak tanımlayabileceğiniz [özel güvenlik ilkeleri](#create-custom-security-policies).
 - [SharePoint ve OneDrive dosya ve klasörleri için paylaşım ayarlarınızı ayarlama](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - Belirli dosyaları ve bunların nasıl kullanıldığını izleyen [uyarı ilkeleri](#review-your-alert-policies).
+- Kişilerin toplantıları uygun şekilde zamanlamasına olanak tanımak için [takvim paylaşımını yönetin](#manage-calendar-sharing).
 - [Sonraki hedefleriniz](#next-objectives).
 
 ## <a name="review-and-apply-preset-security-policies"></a>Önceden ayarlanmış güvenlik ilkelerini gözden geçirme ve uygulama
@@ -70,11 +71,11 @@ Kullanıcılara birden çok ilke atanırsa, ilkeleri uygulamak için bir önceli
 
 1. **Katı koruma** en yüksek önceliği alır ve diğer tüm ilkeleri geçersiz kılar.
 
-1. **Standart koruma** 
+2. **Standart koruma** 
 
-1. **Özel güvenlik ilkeleri**
+3. **Özel güvenlik ilkeleri**
 
-1. **Yerleşik koruma** en düşük önceliği alır ve katı koruma, standart koruma ve özel ilkeler tarafından geçersiz kılınabilir.
+4. **Yerleşik koruma** en düşük önceliği alır ve katı koruma, standart koruma ve özel ilkeler tarafından geçersiz kılınabilir.
 
 Katı koruma diğer tüm ilkeleri geçersiz kılar ve yerleşik koruma diğer ilkeler tarafından geçersiz kılınabilir. 
 
@@ -95,11 +96,11 @@ Katı koruma diğer tüm ilkeleri geçersiz kılar ve yerleşik koruma diğer il
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın.
 
-1. Şablonlu ilkeler bölümünde **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Önceden Ayarlanmış Güvenlik İlkeleri'ne** gidin. ( **Doğrudan Önceden Ayarlanmış güvenlik ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/presetSecurityPolicies>.)
+2. Şablonlu ilkeler bölümünde **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Önceden Ayarlanmış Güvenlik İlkeleri'ne** gidin. ( **Doğrudan Önceden Ayarlanmış güvenlik ilkeleri** sayfasına gitmek için kullanın <https://security.microsoft.com/presetSecurityPolicies>.)
 
-1. **Önceden ayarlanmış güvenlik ilkeleri** sayfasındaki **Standart koruma** veya **Katı koruma** bölümünde Devre **dışı** olan iki durumlu düğmeyi **Etkin** olarak değiştirin ve **yönet'i** seçin.
+3. **Önceden ayarlanmış güvenlik ilkeleri** sayfasındaki **Standart koruma** veya **Katı koruma** bölümünde Devre **dışı** olan iki durumlu düğmeyi **Etkin** olarak değiştirin ve **yönet'i** seçin.
 
-1. **Standart koruma uygulama** veya **Katı koruma uygulama** sihirbazı açılır öğede başlar. **EOP korumaları için geçerlidir** sayfasında, ilkelerin geçerli olduğu iç alıcıları tanımlayın (alıcı koşulları):
+4. **Standart koruma uygulama** veya **Katı koruma uygulama** sihirbazı açılır öğede başlar. **EOP korumaları için geçerlidir** sayfasında, ilkelerin geçerli olduğu iç alıcıları tanımlayın (alıcı koşulları):
    - **Kullanıcılar**
    - **Gruplar**
    - **Etki alanları**
@@ -112,11 +113,11 @@ Katı koruma diğer tüm ilkeleri geçersiz kılar ve yerleşik koruma diğer il
 
    İşiniz bittiğinde **İleri'yi** seçin.
 
-1. **İlkelerin geçerli olduğu iç alıcıları** (alıcı koşulları) tanımlamak için Office 365 için Defender korumalar sayfaya uygulanır. Önceki adımda yaptığınız gibi kullanıcıları, grupları ve etki alanlarını belirtin.
+5. **İlkelerin geçerli olduğu iç alıcıları** (alıcı koşulları) tanımlamak için Office 365 için Defender korumalar sayfaya uygulanır. Önceki adımda yaptığınız gibi kullanıcıları, grupları ve etki alanlarını belirtin.
 
    İşiniz bittiğinde **İleri'ye** tıklayın.
 
-1. **Değişikliklerinizi gözden geçirin ve onaylayın** sayfasında seçimlerinizi doğrulayın ve ardından **Onayla'yı** seçin.
+6. **Değişikliklerinizi gözden geçirin ve onaylayın** sayfasında seçimlerinizi doğrulayın ve ardından **Onayla'yı** seçin.
 
 > [!TIP]
 > Önceden ayarlanmış güvenlik ilkeleri atama hakkında daha fazla bilgi edinmek için aşağıdaki makalelere bakın:
@@ -140,13 +141,13 @@ Varsayılan olarak, paylaşım düzeyleri hem SharePoint hem de OneDrive için e
 
 1. <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">SharePoint yönetim merkezinde **Paylaşım'a**</a> gidin ve [kuruluşunuz için yönetici izinlerine](/sharepoint/sharepoint-admin-role) sahip bir hesapla oturum açın.
 
-1. **Dış paylaşım'ın** altında paylaşım düzeyini belirtin. (Dış paylaşımı önlemek için **En az izin verme** seçeneğini kullanmanızı öneririz.)
+2. **Dış paylaşım'ın** altında paylaşım düzeyini belirtin. (Dış paylaşımı önlemek için **En az izin verme** seçeneğini kullanmanızı öneririz.)
 
-1. **Dosya ve klasör bağlantıları'nın** altında bir seçenek belirleyin (**örneğin, Belirli kişiler**). Ardından, paylaşılan bağlantılar **(Görünüm gibi**) için varsayılan olarak Görünüm veya Düzenleme izinlerinin verilip verilmeyeceğini seçin.
+3. **Dosya ve klasör bağlantıları'nın** altında bir seçenek belirleyin (**örneğin, Belirli kişiler**). Ardından, paylaşılan bağlantılar **(Görünüm gibi**) için varsayılan olarak Görünüm veya Düzenleme izinlerinin verilip verilmeyeceğini seçin.
 
-1. **Diğer ayarlar'ın** altında, kullanmak istediğiniz seçenekleri belirleyin.
+4. **Diğer ayarlar'ın** altında, kullanmak istediğiniz seçenekleri belirleyin.
 
-1. Ardından **Kaydet'i** seçin.
+5. Ardından **Kaydet'i** seçin.
 
 > [!TIP]
 > Bu ayarlar hakkında daha fazla bilgi edinmek için bkz. [Paylaşım ayarlarını yönetme](/sharepoint/turn-external-sharing-on-or-off).
@@ -163,9 +164,9 @@ Aşağıdaki görüntüde, Microsoft 365 İş Ekstra dahil edilen bazı varsayı
 
 1. konumundaki Microsoft Purview uyumluluk portalı [https://compliance.microsoft.com](https://compliance.microsoft.com) gidin ve oturum açın.
 
-1. Gezinti bölmesinde **İlkeler'i** ve ardından **Uyarı ilkeleri'ni** seçin.
+2. Gezinti bölmesinde **İlkeler'i** ve ardından **Uyarı ilkeleri'ni** seçin.
 
-1. Daha fazla ayrıntı görüntülemek veya ilkeyi düzenlemek için tek bir ilke seçin. Aşağıdaki görüntüde, bir ilkenin seçili olduğu uyarı ilkelerinin listesi gösterilmektedir:
+3. Daha fazla ayrıntı görüntülemek veya ilkeyi düzenlemek için tek bir ilke seçin. Aşağıdaki görüntüde, bir ilkenin seçili olduğu uyarı ilkelerinin listesi gösterilmektedir:
 
    :::image type="content" source="media/selected-alert-policy.png" lightbox="media/selected-alert-policy.png" alt-text="Seçili uyarı ilkesinin ekran görüntüsü.":::
 
@@ -183,19 +184,15 @@ Uyarılarınızı Microsoft 365 Defender portalında veya Microsoft Purview uyum
 
 Daha fazla bilgi için bkz. [Uyarıları görüntüleme](../compliance/alert-policies.md#view-alerts).
 
-## <a name="disable-or-manage-calendar-sharing"></a>Takvim paylaşımını devre dışı bırakma veya yönetme
+## <a name="manage-calendar-sharing"></a>Takvim paylaşımını yönetme
 
-Kuruluşunuzdaki kişilerin takvimlerini paylaşmasını engelleyebilirsiniz. Paylaşabilecekleri ayrıntı düzeyini de yönetebilirsiniz. Örneğin, paylaşımı yalnızca serbest/meşgul zamanları ile kısıtlayabilirsiniz.
+Kuruluşunuzdaki kişilerin daha iyi işbirliği için takvimlerini uygun şekilde paylaşmalarına yardımcı olabilirsiniz. Paylaşabilecekleri ayrıntı düzeyini yönetebilirsiniz. Örneğin, paylaşılan ayrıntıları yalnızca serbest/meşgul zamanlarıyla sınırlandırabilirsiniz.
 
 1. [Microsoft 365 yönetim merkezi Kuruluş ayarları'na](https://go.microsoft.com/fwlink/p/?linkid=2053743) gidin ve oturum açın.
 
-1. **Takvim'i** seçin ve kuruluşunuzdaki kişilerin takvimlerini Office 365 veya Exchange'i olmayan kişilerle veya herhangi biriyle paylaşıp paylaşamayacağını seçin.
+2. **Takvim'i** seçin ve kuruluşunuzdaki kişilerin takvimlerini Office 365 veya Exchange'i olmayan kişilerle veya herhangi biriyle paylaşıp paylaşamayacağını seçin. **Dış paylaşım** seçeneğini temizlemenizi öneririz. Takvimleri herkesle paylaşmayı seçerseniz, yalnızca serbest/meşgul bilgilerini paylaşmayı da seçebilirsiniz.
 
-   **Dış paylaşım** seçeneğini temizlemenizi öneririz.
-
-   Herkesle paylaş seçeneğini belirlerseniz, yalnızca serbest/meşgul bilgilerini de paylaşmaya karar vekleyebilirsiniz.
-
-1. Sayfanın alt kısmındaki **Değişiklikleri kaydet'i** seçin.
+3. Sayfanın alt kısmındaki **Değişiklikleri kaydet'i** seçin.
 
    Aşağıdaki görüntüde takvim paylaşımına izin verilmediği gösterilmektedir.
 

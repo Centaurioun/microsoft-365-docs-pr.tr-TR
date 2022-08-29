@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Microsoft Purview uyumluluk portalı İçerik arama ve eBulma (Standart) özellikleri için geçerli olan sınırlar hakkında bilgi edinin.
-ms.openlocfilehash: 79078818ca3975dcbfee0ce72b93f1c3d6039802
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 53af013e5e247d617e88bc0600bd3c0324c7627f
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629541"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357532"
 ---
 # <a name="limits-for-ediscovery-search"></a>eBulma arama sınırları
 
@@ -41,10 +41,6 @@ Aşağıdaki tabloda, uyumluluk portalında içerik arama aracı kullanılırken
 |Sınırın açıklaması|Sınırı|
 |---|---|
 |Tek bir aramada aranabilecek en fazla posta kutusu veya site sayısı|Sınır <sup>1</sup> yok|
-|Kuruluşunuzda aynı anda çalışabilecek en fazla arama sayısı.|30|
-|Aynı anda çalıştırılabilen kuruluş genelindeki arama sayısı üst sınırı.|3|
-|Tek bir kullanıcının aynı anda başlatabileceği en fazla arama sayısı. Bu sınır, büyük olasılıkla kullanıcı Güvenlik & Uyumluluk PowerShell'de **Get-ComplianceSearch \|Start-ComplianceSearch** komutunu kullanarak birden çok arama başlatmaya çalıştığında isabet alır.|10|
-|İçerik Arama sonuçlarının önizlemesini görüntülerken önizleme sayfasında görüntülenen kullanıcı posta kutusu başına en fazla öğe sayısı.|100|
 |Arama sonuçlarının önizlemesini görüntülerken önizleme sayfasında görüntülenebilen tüm kullanıcı posta kutularında bulunan en fazla öğe sayısı. En yeni öğeler görüntülenir.|1.000 <sup>2</sup>|
 |Arama sonuçları için önizlenebilen en fazla kullanıcı posta kutusu sayısı. Arama sorgusuyla eşleşen içerik içeren 1000'den fazla posta kutusu varsa, yalnızca en fazla arama sonucuna sahip ilk 1000 posta kutusu önizleme için kullanılabilir.|1,000|
 |SharePoint ve OneDrive İş sitelerinde bulunan ve arama sonuçlarının önizlemesini görüntülerken önizleme sayfasında görüntülenen en fazla öğe sayısı. En yeni öğeler görüntülenir.|200|
@@ -97,8 +93,6 @@ Aşağıdaki tabloda, bir içerik aramasının sonuçları dışarı aktarılır
 |---|---|
 |Tek bir aramadan dışarı aktarılabilir maksimum veri miktarı  <p> **Not:** Arama sonuçları 2 TB'tan büyükse, arama sonuçlarının toplam boyutunu küçültmek için tarih aralıklarını veya diğer filtre türlerini kullanmayı göz önünde bulundurun.|2TB|
 |Bir kuruluşun tek bir günde dışarı aktarabileceği maksimum değer <p> **Not:** Bu sınır her gün saat 12:00 UTC'de sıfırlanır|2TB|
-|Kuruluşunuzda aynı anda kullanılabilecek en fazla eşzamanlı dışarı aktarma <p> **Not:** Yalnızca **Rapor** Çalıştırma, kuruluşunuz için toplam eşzamanlı dışarı aktarma sayısına karşılık gelen dışarı aktarma sayısını gösterir. Üç kullanıcı her biri 3 dışarı aktarma gerçekleştiriyorsa, yalnızca bir dışarı aktarma işlemi daha gerçekleştirilebilir. Bir raporu veya arama sonuçlarını dışarı aktarırken, tamamlanana kadar başka dışarı aktarma gerçekleştirilemez.|10|
-|Tek bir kullanıcının herhangi bir anda çalıştırabileceği maksimum dışarı aktarma sayısı|3|
 |eBulma Dışarı Aktarma Aracı kullanılarak indirilebilen arama sonuçları için en fazla posta kutusu sayısı|100,000|
 |Dışarı aktarılabilir PST dosyasının boyutu üst sınırı <p> **Not:** Kullanıcının posta kutusundan gelen arama sonuçları 10 GB'tan büyükse, posta kutusunun arama sonuçları iki (veya daha fazla) ayrı PST dosyasında dışarı aktarılır. Tüm arama sonuçlarını tek bir PST dosyasında dışarı aktarmayı seçerseniz, arama sonuçlarının toplam boyutu 10 GB'tan büyükse PST dosyası ek PST dosyalarına aktarılır. Bu varsayılan boyutu değiştirmek istiyorsanız, arama sonuçlarını dışarı aktarmak için kullandığınız bilgisayarda Windows Kayıt Defteri'ni düzenleyebilirsiniz. Bkz. [eBulma arama sonuçlarını dışarı aktarırken PST dosyalarının boyutunu değiştirme](change-the-size-of-pst-files-when-exporting-results.md). Belirli bir posta kutusunun arama sonuçları, tek bir posta kutusunun içeriği 10 GB'tan fazla olmadığı sürece birden çok PST dosyası arasında bölünemez. Arama sonuçlarını tek bir klasördeki tüm iletileri içeren bir PST dosyasında dışarı aktarmayı seçtiyseniz ve arama sonuçları 10 GB'tan büyükse, öğeler yine kronolojik sırayla düzenlenir, bu nedenle gönderilmiş tarihe göre ek PST dosyalarına aktarılırlar.|10 GB|
 |Posta kutularından ve sitelerden gelen arama sonuçlarının Microsoft tarafından sağlanan bir Azure Depolama konumuna yüklenme oranı.|Saatte en fazla 2 GB|
@@ -123,6 +117,19 @@ Aşağıdaki tabloda, bir e-posta iletisinin dizine alınmamış bir öğe veya 
 |Dizindeki en büyük gövde boyutu|67 milyon karakter|E-posta iletisinin gövdesindeki toplam karakter sayısı ve tüm ekleri. Bir e-posta iletisi dizine alındığında, iletinin gövdesindeki ve tüm eklerdeki tüm metinler tek bir dizede birleştirilir. Dizine alınan bu dizenin en büyük boyutu 67 milyon karakterdir.|
 |Gövdedeki en büyük benzersiz belirteç sayısı|1 milyon|Daha önce açıklandığı gibi belirteçler, içerikten metin ayıklamanın, noktalama işaretlerini ve boşlukları kaldırmanın ve ardından dizinde depolanan sözcüklere (belirteç olarak adlandırılır) bölünmesinin sonucu olur. Örneğin, tümcecik `"cat, mouse, bird, dog, dog"` 5 belirteç içerir. Ancak bunların yalnızca 4'ünün benzersiz belirteçleri vardır. E-posta iletisi başına 1 milyon benzersiz belirteç sınırı vardır ve bu da dizinin rastgele belirteçlerle fazla büyük olmasını önlemeye yardımcı olur.|
 |||
+
+## <a name="jobs-limits"></a>İş sınırları
+
+> [!NOTE]
+> eBulma (Premium) işleri eBulma (Standart) sınırlarına doğru sayılır. Örneğin, eBulma'da (Premium) çalışan 50 işiniz varsa, işleri eBulma'da (Standart) başlatamazsınız. eBulma (Standart) işleri eBulma (Premium) sınırlarına doğru sayılmaz.
+
+|Açıklama|Sınırı|
+|---|---|
+|Kuruluşunuzdaki eşzamanlı iş sayısı üst sınırı.|50|
+|Tek bir kullanıcının aynı anda başlatabileceği en fazla eşzamanlı iş sayısı.|25|
+|Kuruluşunuzdaki en fazla eşzamanlı kiracı genelindeki iş sayısı (örneğin, kiracı genelinde aramalar).|5|
+|Tek bir kullanıcının aynı anda başlatabileceği en fazla eşzamanlı kiracı genelindeki iş sayısı (örneğin, kiracı genelinde aramalar).|5|
+|Kuruluşunuzda günde en fazla iş sayısı. <p> **Not:** Bu sınır her gün saat 12:00 UTC'de sıfırlanır|500|
 
 ## <a name="more-information"></a>Daha fazla bilgi
 

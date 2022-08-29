@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 güvenlik portalında cihaz profili
 description: Kuruluşunuzdaki bir cihazın risk ve maruz kalma düzeylerini görüntüleyin. Geçmiş ve mevcut tehditleri analiz edin ve cihazı en son güncelleştirmelerle koruyun.
-keywords: güvenlik, kötü amaçlı yazılım, Microsoft 365, M365, Microsoft 365 Defender, güvenlik merkezi, Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Kimlik için Microsoft Defender, cihaz sayfası, cihaz profili, makine sayfası, makine profili
+keywords: güvenlik, kötü amaçlı yazılım, Microsoft 365, M365, Microsoft 365 Defender, güvenlik merkezi, Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Kimlik için Microsoft Defender , cihaz sayfası, cihaz profili, makine sayfası, makine profili
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 962ec0c5ed6b7d6934678678be9a57ebcbaabc55
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: d474b38e65c77fb75dd1472cfa6f316c9200b086
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923444"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386618"
 ---
 # <a name="device-profile-page"></a>Cihaz profili sayfası
 
@@ -28,9 +28,9 @@ ms.locfileid: "65923444"
 Microsoft 365 güvenlik portalı size cihaz profili sayfaları sağlar, böylece ağınızdaki cihazların durumunu ve durumunu hızla değerlendirebilirsiniz.
 
 > [!IMPORTANT]
-> Cihazın Uç Nokta için Microsoft Defender'a, Kimlik için Microsoft Defender'a veya her ikisine de kayıtlı olmasına bağlı olarak cihaz profili sayfası biraz farklı görünebilir.
+> Cihazın Uç Nokta için Microsoft Defender, Kimlik için Microsoft Defender veya her ikisine de kaydedilip kaydedilmediğine bağlı olarak cihaz profili sayfası biraz farklı görünebilir.
 
-Cihaz Uç Nokta için Microsoft Defender'a kaydedildiyse, bazı yaygın güvenlik görevlerini gerçekleştirmek için cihaz profili sayfasını da kullanabilirsiniz.
+Cihaz Uç Nokta için Microsoft Defender kayıtlıysa, bazı yaygın güvenlik görevlerini gerçekleştirmek için cihaz profili sayfasını da kullanabilirsiniz.
 
 ## <a name="navigating-the-device-profile-page"></a>Cihaz profili sayfasında gezinme
 
@@ -42,7 +42,7 @@ Kenar çubuğu (1) cihazla ilgili temel ayrıntıları listeler.
 
 Ana içerik alanı (2), cihazla ilgili farklı türde bilgileri görüntülemek için geçiş yapabileceğiniz sekmeler içerir.
 
-Cihaz Uç Nokta için Microsoft Defender'a kayıtlıysa, yanıt eylemlerinin listesini de görürsünüz (3). Yanıt eylemleri, güvenlikle ilgili yaygın görevleri gerçekleştirmenize olanak sağlar.
+Cihaz Uç Nokta için Microsoft Defender kayıtlıysa, yanıt eylemlerinin listesini de görürsünüz (3). Yanıt eylemleri, güvenlikle ilgili yaygın görevleri gerçekleştirmenize olanak sağlar.
 
 ## <a name="sidebar"></a>Kenar çubuğu
 
@@ -52,15 +52,15 @@ Cihaz profili sayfasının ana içerik alanının yanında kenar çubuğu bulunu
 
 Kenar çubuğunda cihazın tam adı ve pozlama düzeyi listelenir. Ayrıca küçük alt bölümlerde açık veya kapalı olarak açılabilir veya kapatılabilir bazı önemli temel bilgiler sağlar, örneğin:
 
-* **Etiketler** - Uç Nokta için Microsoft Defender, Kimlik için Microsoft Defender veya cihazla ilişkilendirilmiş özel etiketler. Kimlik için Microsoft Defender etiketleri düzenlenemez.
-* **Güvenlik bilgileri** - Açık olaylar ve etkin uyarılar. Uç Nokta için Microsoft Defender'a kaydedilen cihazlar da maruz kalma düzeyini ve risk düzeyini görüntüler.
+* **Etiketler** - Cihazla ilişkili tüm Uç Nokta için Microsoft Defender, Kimlik için Microsoft Defender veya özel etiketler. Kimlik için Microsoft Defender etiketleri düzenlenemez.
+* **Güvenlik bilgileri** - Açık olaylar ve etkin uyarılar. Uç Nokta için Microsoft Defender kaydedilen cihazlar da maruz kalma düzeyini ve risk düzeyini görüntüler.
 
 > [!TIP]
 > Maruz kalma düzeyi, cihazın güvenlik önerilerine ne kadar uyduğuyla ilgilidir, risk düzeyi ise etkin uyarıların türleri ve önem derecesi dahil olmak üzere bir dizi faktöre göre hesaplanır.
 
-* **Cihaz ayrıntıları** - Etki alanı, işletim sistemi, cihazın ilk görüldüğü zaman damgası, IP adresleri, kaynaklar. Uç Nokta için Microsoft Defender'a kaydedilen cihazlar da sistem durumunu görüntüler. Kimlik için Microsoft Defender'a kaydedilen cihazlarda SAM adı ve cihazın ilk oluşturulduğu zaman damgası görüntülenir.
+* **Cihaz ayrıntıları** - Etki alanı, işletim sistemi, cihazın ilk görüldüğü zaman damgası, IP adresleri, kaynaklar. Uç Nokta için Microsoft Defender kaydedilen cihazlar da sistem durumunu görüntüler. Kimlik için Microsoft Defender kaydedilen cihazlarda SAM adı ve cihazın ilk oluşturulduğu zaman damgası görüntülenir.
 * **Ağ etkinliği** - Cihazın ağda ilk ve son kez görüldüğü zaman damgaları.
-* **Dizin verileri** (*yalnızca Kimlik için Microsoft Defender'a kayıtlı cihazlar için*) - [UAC](/windows/security/identity-protection/user-account-control/user-account-control-overview) bayrakları, [SPN'ler](/windows/win32/ad/service-principal-names) ve grup üyelikleri.
+* **Dizin verileri** (*yalnızca Kimlik için Microsoft Defender kayıtlı cihazlar için*) - [UAC](/windows/security/identity-protection/user-account-control/user-account-control-overview) bayrakları, [SPN'ler](/windows/win32/ad/service-principal-names) ve grup üyelikleri.
 
 ## <a name="response-actions"></a>Yanıt eylemleri
 
@@ -69,16 +69,16 @@ Yanıt eylemleri, tehditlere karşı savunma yapmak ve tehditleri analiz etmek i
 :::image type="content" source="../../media/mtp-device-profile/hybrid-device-long-action-bar.png" alt-text="Microsoft 365 Defender portalında cihaz profili için Eylem çubuğu" lightbox="../../media/mtp-device-profile/hybrid-device-long-action-bar.png":::
 
 > [!IMPORTANT]
-> * [Yanıt eylemleri](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) yalnızca cihaz Uç Nokta için Microsoft Defender'a kayıtlıysa kullanılabilir.
-> * Uç Nokta için Microsoft Defender'a kayıtlı cihazlar, cihazın işletim sistemine ve sürüm numarasına göre farklı sayıda yanıt eylemi görüntüleyebilir.
+> * [Yanıt eylemleri](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) yalnızca cihaz Uç Nokta için Microsoft Defender kayıtlıysa kullanılabilir.
+> * Uç Nokta için Microsoft Defender kaydedilen cihazlar, cihazın işletim sistemi ve sürüm numarasına göre farklı sayıda yanıt eylemi görüntüleyebilir.
 
 Cihaz profili sayfasında kullanılabilen eylemler şunlardır:
 
-* **Etiketleri yönetme** - Bu cihaza uyguladığınız özel etiketleri güncelleştirir.
-* **Cihazı yalıtma** - Cihazı uç nokta için Microsoft Defender'a bağlı tutarken kuruluşunuzun ağından yalıtın. İletişim amacıyla cihaz yalıtılmış durumdayken Outlook, Teams ve Skype Kurumsal'ın çalışmasına izin vermeyi seçebilirsiniz.
+* **Etiketleri yönetme** - bu cihaza uyguladığınız özel etiketleri Güncelleştirmeler.
+* **Cihazı yalıtma** - Cihazı kuruluşunuzun ağından yalıtırken Uç Nokta için Microsoft Defender bağlı kalmasını sağlar. İletişim amacıyla cihaz yalıtılmış durumdayken Outlook, Teams ve Skype Kurumsal çalışmasına izin vermeyi seçebilirsiniz.
 * **İşlem merkezi** - Gönderilen eylemlerin durumunu görüntüleyin. Yalnızca başka bir eylem seçilmişse kullanılabilir.
 * **Uygulama yürütmeyi kısıtla** - Microsoft tarafından imzalanmayan uygulamaların çalışmasını engeller.
-* **Virüsten koruma taraması çalıştırma** - Windows Defender Virüsten Koruma tanımlarını güncelleştirir ve hemen bir virüsten koruma taraması çalıştırır. Hızlı tarama veya Tam tarama arasında seçim yapın.
+* **Virüsten koruma taraması çalıştırma** - Microsoft Defender Virüsten Koruma tanımlarını Güncelleştirmeler ve hemen bir virüsten koruma taraması çalıştırır. Hızlı tarama veya Tam tarama arasında seçim yapın.
 * **Araştırma paketi toplama** - Cihaz hakkında bilgi toplar. Araştırma tamamlandığında indirebilirsiniz.
 * **Canlı Yanıt Oturumu Başlatma** - [Ayrıntılı güvenlik araştırmaları](/microsoft-365/security/defender-endpoint/live-response) için cihaza uzak bir kabuk yükler.
 * **Otomatik araştırma başlatma** - [Tehditleri otomatik olarak araştırır ve düzelter](../office-365-security/office-365-air.md). Otomatik araştırmaların bu sayfadan çalıştırılmasını el ile tetikleyebilmenize rağmen, [bazı uyarı ilkeleri](../../compliance/alert-policies.md#default-alert-policies) otomatik araştırmaları kendi başlarına tetikler.
@@ -88,7 +88,7 @@ Cihaz profili sayfasında kullanılabilen eylemler şunlardır:
 
 Cihaz profili sekmeleri, cihaz hakkındaki güvenlik ayrıntılarına ve uyarıların listesini içeren tablolara genel bakış arasında geçiş yapmanızı sağlar.
 
-Uç Nokta için Microsoft Defender'a kaydedilen cihazlarda ayrıca zaman çizelgesi, güvenlik önerileri listesi, yazılım envanteri, bulunan güvenlik açıklarının listesi ve eksik KB'ler (güvenlik güncelleştirmeleri) içeren sekmeler görüntülenir.
+Uç Nokta için Microsoft Defender kaydedilen cihazlarda zaman çizelgesi, güvenlik önerileri listesi, yazılım envanteri, bulunan güvenlik açıklarının listesi ve eksik KB'ler (güvenlik güncelleştirmeleri) içeren sekmeler de görüntülenir.
 
 ### <a name="overview-tab"></a>Genel Bakış sekmesi
 
@@ -98,11 +98,11 @@ Varsayılan sekme **Genel Bakış'tır**. Cihazla ilgili en önemli güvenlik ge
 
 Burada, cihazın etkin uyarılarına ve şu anda oturum açmış olan kullanıcılara hızlıca göz atabilirsiniz.
 
-Cihaz Uç Nokta için Microsoft Defender'a kaydedildiyse, cihazın risk düzeyini ve güvenlik değerlendirmeleriyle ilgili kullanılabilir verileri de görürsünüz. Güvenlik değerlendirmeleri cihazın maruz kalma düzeyini açıklar, güvenlik önerileri sağlar ve etkilenen yazılımları ve bulunan güvenlik açıklarını listeler.
+Cihaz Uç Nokta için Microsoft Defender kayıtlıysa, cihazın risk düzeyini ve güvenlik değerlendirmeleriyle ilgili kullanılabilir verileri de görürsünüz. Güvenlik değerlendirmeleri cihazın maruz kalma düzeyini açıklar, güvenlik önerileri sağlar ve etkilenen yazılımları ve bulunan güvenlik açıklarını listeler.
 
 ### <a name="alerts-tab"></a>Uyarılar sekmesi
 
-**Uyarılar** sekmesi, cihazda hem Kimlik için Microsoft Defender hem de Uç Nokta için Microsoft Defender'dan alınan uyarıların listesini içerir.
+**Uyarılar** sekmesi, hem Kimlik için Microsoft Defender hem de Uç Nokta için Microsoft Defender cihazda tetiklenen uyarıların listesini içerir.
 
 :::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-alerts.png" alt-text="Microsoft 365 Defender portalında cihaz profili için Uyarılar sekmesi" lightbox="../../media/mtp-device-profile/hybrid-device-tab-alerts.png":::
 
@@ -168,7 +168,7 @@ Bu listeden bir öğe seçildiğinde CVE'yi açıklayan bir açılır liste aç�
 
 ### <a name="missing-kbs"></a>Eksik KB'ler
 
-**Eksik KB'ler** sekmesi, cihaza henüz uygulanmamış microsoft güncelleştirmelerini listeler. Söz konusu "KB", bu güncelleştirmeleri açıklayan [Bilgi Bankası makaleleridir](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) ; örneğin [, KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
+**Eksik KB'ler** sekmesi, cihaza henüz uygulanmamış microsoft Güncelleştirmeler listeler. Söz konusu "KB", bu güncelleştirmeleri açıklayan [Bilgi Bankası makaleleridir](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) ; örneğin [, KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
 :::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG" alt-text="Microsoft 365 Defender portalında cihaz profili için Eksik KB sekmesi" lightbox="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG":::
 
@@ -180,7 +180,7 @@ Bir öğe seçildiğinde güncelleştirmeye bağlanan bir açılır öğe açıl
 
 ## <a name="related-topics"></a>İlgili konular
 
-* [Microsoft 365 Defender'a genel bakış](microsoft-365-defender.md)
+* [Microsoft 365 Defender genel bakış](microsoft-365-defender.md)
 * [Microsoft 365 Defender’ı açın](m365d-enable.md)
 * [Canlı yanıt kullanarak cihazlardaki varlıkları araştırma](../defender-endpoint/live-response.md)
-* [Office 365'te otomatik araştırma ve yanıt (AIR)](../office-365-security/office-365-air.md)
+* [Office 365'de otomatik araştırma ve yanıt (AIR)](../office-365-security/office-365-air.md)

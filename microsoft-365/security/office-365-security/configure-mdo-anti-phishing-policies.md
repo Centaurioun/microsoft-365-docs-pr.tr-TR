@@ -16,12 +16,12 @@ ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender sahip kuruluşlarda kullanılabilen gelişmiş kimlik avı önleme ilkelerini oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b641fe1fb4de8dcb7d7ec299a0e8b19a064efad
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8311da9d67a9835163ee3eaa34a38a7132977055
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084135"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386592"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de kimlik avı önleme ilkelerini yapılandırma
 
@@ -188,6 +188,13 @@ Microsoft 365 Defender portalında özel kimlik avı önleme ilkesi oluşturmak,
         Görüntülenen **Güvenilen etki alanları ekle** açılır penceresinde **, Etki Alanı** kutusuna tıklayın, bir değer girin ve enter tuşuna basın veya kutunun altında görüntülenen değeri seçin. Bu adımı gerektiği kadar tekrarlayın. Varolan bir değeri kaldırmak için Kaldır ![simgesine tıklayın.](../../media/m365-cc-sc-remove-selection-icon.png) öğesini seçin.
 
         İşiniz bittiğinde **Ekle'ye** tıklayın.
+
+     > [!NOTE]
+     > Aşağıdaki gönderenlerden gelen Microsoft 365 sistem iletileri kimliğe bürünme girişimi olarak tanımlanırsa, gönderenleri güvenilen gönderenler listesine ekleyebilirsiniz:
+     >
+     > - `⁠noreply@email.teams.microsoft.com`
+     > - `noreply@emeaemail.teams.microsoft.com`
+     > - `no-reply@sharepointonline.com`
 
      **Kimliğe bürünme için özel etki alanlarını yönet** açılır listesine döndüğünüzde, listeden bir veya daha fazla girdi seçerek **Gönderen** ve **Etki Alanı** sekmelerindeki girdileri kaldırabilirsiniz. Ara simgesini kullanarak ![girdileri arayabilirsiniz.](../../media/m365-cc-sc-create-icon.png) **Arama** kutusu.
 

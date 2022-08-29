@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365'teki eBulma (Premium) çözümü için geçerli olan durum sınırları, dizin oluşturma sınırları ve arama sınırları hakkında bilgi edinin.
-ms.openlocfilehash: 5bf7e2be459f6238802b28da66650e238b2c4926
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ed00c6e508ce293a0327441c978928310157d996
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636039"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357554"
 ---
 # <a name="limits-in-ediscovery-premium"></a>eBulma sınırları (Premium)
 
@@ -35,13 +35,10 @@ Aşağıdaki tabloda, eBulma (Premium) içindeki servis talepleri ve gözden ge�
 |---|---|---|
 |Bir servis talebine eklenebilen toplam belge sayısı (bir servis talebindeki tüm inceleme kümeleri için).|3 milyon|40 milyon|
 |Yük kümesi başına toplam dosya boyutu. Bu, Office 365 olmayanların bir gözden geçirme kümesine yüklenmesini içerir.|300 GB|1TB|
-|Kuruluştaki tüm gözden geçirme kümelerine günlük yüklenen toplam veri miktarı.<br/>|2TB|2TB|
 |Olay başına en fazla yük kümesi sayısı.|200|200|
 |Servis talebi başına en fazla gözden geçirme kümesi sayısı.|20|20|
 |Servis talebi başına en fazla etiket grubu sayısı.|1,000|1,000|
 |Servis talebi başına en fazla benzersiz etiket sayısı.|1.000<sup>1</sup>|1.000<sup>1</sup>|
-|Bir gözden geçirme kümesine içerik eklemek için kuruluşunuzdaki en fazla eşzamanlı iş. Bu işler **Gözden geçirme kümesine veri ekleme** olarak adlandırılır ve bir durumda **İşler** sekmesinde görüntülenir.|10<sup>2</sup>|10<sup>2</sup>|
-|Kullanıcı başına bir gözden geçirme kümesine içerik eklemek için en fazla eşzamanlı iş. Bu işler **Gözden geçirme kümesine veri ekleme** olarak adlandırılır ve bir durumda **İşler** sekmesinde görüntülenir.|3|3|
 
 ## <a name="hold-limits"></a>Ayrı tutma sınırları
 
@@ -65,6 +62,15 @@ Aşağıdaki tabloda, eBulma(Premium) içindeki dizin oluşturma sınırları li
 |Optik Karakter Tanıma (OCR) tarafından işlenen dosyaların maksimum boyutu.|24 MB<sup>4</sup> <br/> |
 |En yüksek gelişmiş dizin oluşturma aktarım hızı | Saatte 2 GB |
 
+## <a name="jobs-limits"></a>İş sınırları
+
+|Sınırın açıklaması|Sınırı|
+|---|---|
+|Kuruluşunuzdaki eşzamanlı iş sayısı üst sınırı.|100|
+|Tek bir kullanıcının aynı anda başlatabileceği en fazla eşzamanlı iş sayısı.|50|
+|Kuruluşunuzdaki en fazla eşzamanlı kiracı genelindeki iş sayısı (örneğin, kiracı genelinde aramalar).|50|
+|Tek bir kullanıcının aynı anda başlatabileceği en fazla eşzamanlı kiracı genelindeki iş sayısı (örneğin, kiracı genelinde aramalar).|25|
+
 ## <a name="search-limits"></a>Arama sınırları
 
 Bu bölümde açıklanan sınırlar, bir servis talebi için veri toplamak için **Aramalar** sekmesindeki arama aracının kullanılmasıyla ilgilidir. Daha fazla bilgi için bkz. [eBulma 'da (Premium) bir servis talebi için veri toplama](collecting-data-for-ediscovery.md).
@@ -73,7 +79,6 @@ Bu bölümde açıklanan sınırlar, bir servis talebi için veri toplamak için
 |---|---|
 |Tek bir aramada aranabilecek en fazla posta kutusu veya site sayısı.|Sınır yok|
 |Aynı anda çalışabilecek en fazla arama sayısı.|Sınır yok|
-|Tek bir kullanıcının aynı anda başlatabileceği en fazla arama sayısı.|10|
 |Arama sorgusu için karakter sayısı üst sınırı (işleçler ve koşullar dahil).|10.000<sup>5</sup>|
 |SharePoint ve OneDrive İş siteleri için arama sorgusu için en fazla karakter sayısı (işleçler ve koşullar dahil).|10,000<br>Joker Karakterli 4.000<sup>5</sup>|
 |Ön ek joker karakterleri için en az alfa karakteri sayısı; örneğin, **one\**_ veya _* set\***.|3|
@@ -114,7 +119,6 @@ Bu bölümde açıklanan sınırlar, belgeleri gözden geçirme kümesinin dış
 |Sınırın açıklaması|Sınırı|
 |---|---|
 |Tek bir dışarı aktarmanın en büyük boyutu.|5 milyon belge veya 500 GB (hangisi daha küçükse)|
-|Gözden geçirme kümesi başına en fazla eşzamanlı dışarı aktarma.|1|
 
 ## <a name="review-set-download-limits"></a>İndirme sınırlarını ayarlama bölümünü gözden geçirin
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365'de e-posta kimlik doğrulaması
+title: Microsoft 365'te Email kimlik doğrulaması
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,14 +19,14 @@ ms.localizationpriority: high
 description: Yöneticiler, kimlik sahtekarlığı, kimlik avı ve istenmeyen postaları önlemeye yardımcı olmak için EOP'nin e-posta kimlik doğrulamasını (SPF, DKIM ve DMARC) nasıl kullandığını öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0dca070cb6d6d1b2cb26acb3604e331f27824877
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0722e586a19dab70bfe4433bd2909098dd8a3ac1
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008877"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385737"
 ---
-# <a name="email-authentication-in-eop"></a>EOP'de e-posta kimlik doğrulaması
+# <a name="email-authentication-in-eop"></a>EOP'de kimlik doğrulaması Email
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -35,13 +35,13 @@ ms.locfileid: "66008877"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-E-posta kimlik doğrulaması (e-posta doğrulaması olarak da bilinir), kimlik sahtekarlığına son vermeye çalışan bir standartlar grubudur (sahte gönderenlerden gelen e-posta iletileri). Tüm Microsoft 365 kuruluşlarda EOP, gelen e-postayı doğrulamak için şu standartları kullanır:
+Email kimlik doğrulaması (e-posta doğrulaması olarak da bilinir), kimlik sahtekarlığına son vermeye çalışan bir standartlar grubudur (sahte gönderenlerden gelen e-posta iletileri). Tüm Microsoft 365 kuruluşlarında EOP, gelen e-postayı doğrulamak için şu standartları kullanır:
 
 - [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 - [DKIM](use-dkim-to-validate-outbound-email.md)
 - [DMARC](use-dmarc-to-validate-email.md)
 
-E-posta kimlik doğrulaması, gönderenden gelen e-posta iletilerinin (örneğin, laura@contoso.com) geçerli olduğunu ve bu e-posta etki alanı için beklenen kaynaklardan (örneğin, contoso.com) geldiğini doğrular.
+Email kimlik doğrulaması, gönderenden gelen e-posta iletilerinin (örneğin, laura@contoso.com) geçerli olduğunu ve bu e-posta etki alanı için beklenen kaynaklardan (örneğin, contoso.com) geldiğini doğrular.
 
 Bu makalenin geri kalanında bu teknolojilerin nasıl çalıştığı ve EOP'nin gelen e-postayı denetlemek için bunları nasıl kullandığı açıklanmaktadır.
 
@@ -74,7 +74,7 @@ Authentication-Results:
 
 Bu değerler [Kimlik doğrulama sonuçları ileti üst bilgisinde](anti-spam-message-headers.md#authentication-results-message-header) açıklanmıştır.
 
-yöneticiler ve hatta son kullanıcılar ileti üst bilgilerini inceleyerek Microsoft 365 gönderenin sahte olduğunu nasıl saptadığını belirleyebilir.
+yöneticiler ve hatta son kullanıcılar ileti üst bilgilerini inceleyerek Microsoft 365'in gönderenin sahte olduğunu nasıl belirlediğini belirleyebilir.
 
 ## <a name="why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>E-posta kimlik doğrulaması neden sahtekarlık yapmayı durdurmak için her zaman yeterli değildir?
 
@@ -136,7 +136,7 @@ To: michelle@fabrikam.com
 
 ## <a name="solutions-for-legitimate-senders-who-are-sending-unauthenticated-email"></a>Kimliği doğrulanmamış e-posta gönderen geçerli gönderenler için çözümler
 
-Microsoft 365 kuruluşunuza kimlerin kimliği doğrulanmamış e-posta gönderdiğini izler. Hizmet, gönderenin meşru olmadığını düşünüyorsa, bu gönderenden gelen iletileri bileşik kimlik doğrulama hatası olarak işaretler. Bu kararı önlemek için bu bölümdeki önerileri kullanabilirsiniz.
+Microsoft 365, kuruluşunuza kimlerin kimliği doğrulanmamış e-posta gönderdiğini izler. Hizmet, gönderenin meşru olmadığını düşünüyorsa, bu gönderenden gelen iletileri bileşik kimlik doğrulama hatası olarak işaretler. Bu kararı önlemek için bu bölümdeki önerileri kullanabilirsiniz.
 
 ### <a name="configure-email-authentication-for-domains-you-own"></a>Sahip olduğunuz etki alanları için e-posta kimlik doğrulamasını yapılandırma
 
@@ -158,22 +158,23 @@ fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
 
 Bu örnek, kurumsal altyapınızdan gelen e-postanın e-posta kimlik doğrulamasını geçireceği, ancak bilinmeyen kaynaklardan gelen e-postaların etkisiz hale getirileceği anlamına gelir.
 
-Microsoft 365, kurumsal altyapınızdan gelen e-postaları kimliği doğrulanmış olarak kabul eder. Kimliği belirlenemeyen kaynaklardan gelen e-postalar, örtük kimlik doğrulaması başarısız olursa kimlik sahtekarı olarak işaretlenebilir. Ancak bu, Microsoft 365 tarafından sahte olarak işaretlenen tüm e-postalardan hala bir gelişmedir.
+Microsoft 365, kurumsal altyapınızdan gelen e-postaları kimliği doğrulanmış olarak kabul eder. Kimliği belirlenemeyen kaynaklardan gelen Email, örtük kimlik doğrulaması başarısız olursa kimlik sahtekarı olarak işaretlenebilir. Ancak bu, Microsoft 365 tarafından sahte olarak işaretlenen tüm e-postalar için hala bir geliştirmedir.
 
 spf geri dönüş ilkesini `?all`kullanmaya başladıktan sonra iletileriniz için daha fazla e-posta kaynağını aşamalı olarak bulabilir ve ekleyebilir ve ardından SPF kaydınızı daha katı bir ilkeyle güncelleştirebilirsiniz.
 
 ### <a name="configure-permitted-senders-of-unauthenticated-email"></a>Kimliği doğrulanmamış e-postanın izin verilen gönderenlerini yapılandırma
 
-Ayrıca, gönderenlerin kuruluşunuza kimliği doğrulanmamış iletiler iletmesine izin vermek için kimlik sahtekarlık [bilgileri içgörülerini](learn-about-spoof-intelligence.md) ve [Kiracı İzin Ver/Engelle Listesi'ni](tenant-allow-block-list.md) de kullanabilirsiniz.
+Ayrıca, gönderenlerin kuruluşunuza kimliği doğrulanmamış iletiler iletmesine izin vermek için kimlik sahtekarlık [bilgileri içgörülerini](learn-about-spoof-intelligence.md) ve [Kiracı İzin Ver/Engelle Listesi'ni](manage-tenant-allow-block-list.md) de kullanabilirsiniz.
 
 Dış etki alanları için kimlik sahtekarlığına sahip kullanıcı Kimden adresindeki etki alanıdır, gönderen altyapı ise aşağıdaki değerlerden biridir:
 
 - Kaynak IP adresi (/24 CIDR aralığına ayrılmıştır)
 - Ters DNS (PTR) kaydının kuruluş etki alanı.
+- Doğrulanmış bir DKIM etki alanı.
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Gönderen/alıcı çifti için izin verme girdisi oluşturma
 
-belirli gönderenler için kötü amaçlı yazılım filtreleme yerine kimlik avı filtrelemesinin bazı bölümleri olan istenmeyen posta filtrelemesini atlamak için bkz. [Microsoft 365'da güvenilir gönderen listeleri oluşturma](create-safe-sender-lists-in-office-365.md).
+İstenmeyen posta filtrelemesini atlamak için, belirli gönderenler için kötü amaçlı yazılım filtrelemesini değil, kimlik avı için filtrelemenin bazı bölümlerini atlamak için bkz. [Microsoft 365'te güvenilir gönderen listeleri oluşturma](create-safe-sender-lists-in-office-365.md).
 
 ### <a name="ask-the-sender-to-configure-email-authentication-for-domains-you-dont-own"></a>Sahibi olmadığınız etki alanları için gönderenden e-posta kimlik doğrulamasını yapılandırmasını isteyin
 
@@ -188,8 +189,8 @@ belirli gönderenler için kötü amaçlı yazılım filtreleme yerine kimlik av
 - SPF kaydına aşağıdaki konumların (kullanıyorlarsa) dahil olduğunu doğrulayın:
 
   - Şirket içi e-posta sunucuları.
-  - Hizmet olarak yazılım (SaaS) sağlayıcısından gönderilen e-posta.
-  - Bulut barındırma hizmetinden (Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services vb.) gönderilen e-posta.
+  - Email hizmet olarak yazılım (SaaS) sağlayıcısından gönderilir.
+  - Email bir bulut barındırma hizmetinden (Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services vb.) gönderilir.
 
 - ISS tarafından barındırılan küçük etki alanları için SPF kaydını ISS'nin yönergelerine göre yapılandırın.
 
@@ -207,7 +208,7 @@ Platformunuzdan gelen e-postaların kimliğini doğrulasanız bile Microsoft'a t
 
 ## <a name="related-links"></a>İlgili bağlantılar
 
-Hizmet sağlayıcılarının en iyi yöntemleri hakkında daha fazla bilgi için bkz. [M3AAWG Mobile Microsoft Mesajlaşma Hizmet Sağlayıcıları için En İyi Yöntemler](https://www.m3aawg.org/sites/default/files/m3aawg-mobile-messaging-best-practices-service-providers-2015-08_0.pdf).
+Hizmet sağlayıcılarının en iyi yöntemleri hakkında daha fazla bilgi için bkz. [Hizmet Sağlayıcıları için M3AAWG Mobil Mesajlaşma En İyi Yöntemleri](https://www.m3aawg.org/sites/default/files/m3aawg-mobile-messaging-best-practices-service-providers-2015-08_0.pdf).
 
 Office 365 SPF'yi nasıl kullandığını ve DKIM doğrulamasını nasıl desteklediğini öğrenin:
 

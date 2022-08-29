@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f617129218d9ce7f75204c45fba39109bf214680
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: fa357d70fb5493519b55624358a56d8c8dd28f5c
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275850"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386461"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac'te Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -35,6 +35,26 @@ ms.locfileid: "67275850"
 Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkında daha fazla bilgi için: 
 - [Linux'ta Uç Nokta için Microsoft Defender'deki yenilikler](linux-whatsnew.md) 
 - [iOS'ta Uç Nokta için Microsoft Defender'deki yenilikler](ios-whatsnew.md)</br>
+
+<details>
+  <summary>Ağustos 2022 (Derleme: 101.78.13 | Sürüm: 20.122072.17813.0)</summary>
+
+&ensp;Derleme: **101.78.13**<br/>
+&ensp;Sürüm: **20.122072.17813.0**<br/>
+&ensp;Altyapı sürümü: **1.1.19500.2**<br/>
+&ensp;İmza sürümü: **1.373.556.0**<br/>
+
+**Yenilikler**
+
+- Kaldırıcının Uygulama Desteği klasörünü düzgün silmesine yönelik düzeltme
+- Güvenlik Duvarı veya iCloud Özel Geçişi açıkken Ağ Koruması'nın Safari'yi filtrelememesi sorunu düzeltiliyor
+- Osqueryui zombi işlemleri için düzeltme
+- Ventura'da kullanıcı arabirimi kilitlenmesi için düzeltme
+- Tanımların yüklendikten hemen sonra indirilmemesiyle ilgili düzeltme
+- Diğer hata düzeltmeleri
+
+<br/>
+</details>
 
 <details>
   <summary>Ağustos 2022 (Derleme: 101.75.90 | Sürüm: 20.122071.17590.0)</summary>
@@ -425,7 +445,7 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 &ensp;Sürüm: **20.121022.12750.0** <br/> 
 
 **Yenilikler**
-- macOS Catalina ve önceki sürümlerde Apple sertifikası süre sonu için uyum sağlama düzeltmesi. Bu düzeltme, Tehdit & Güvenlik Açığı Yönetimi (TVM) işlevselliğini geri yükler.  
+- macOS Catalina ve önceki sürümlerde Apple sertifikası süre sonu için uyum sağlama düzeltmesi. Bu düzeltme, Microsoft Defender Güvenlik Açığı Yönetimi (MDVM) işlevselliğini geri yükler.  
 
 <br/>
 </details>

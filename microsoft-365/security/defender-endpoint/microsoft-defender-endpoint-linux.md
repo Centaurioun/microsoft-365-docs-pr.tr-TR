@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9207e0ad186f6a5dc5219e1a24c6ccdd8ee23fcd
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 9eb434419ab74136267be5146e450676996b4afa
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754112"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386153"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender
 
@@ -32,16 +32,16 @@ ms.locfileid: "65754112"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Bu konuda Linux'ta Uç Nokta için Microsoft Defender yükleme, yapılandırma, güncelleştirme ve kullanma işlemleri açıklanmaktadır.
 
 > [!CAUTION]
-> Linux'ta Uç Nokta için Microsoft Defender birlikte diğer üçüncü taraf uç nokta koruma ürünlerini çalıştırmak, performans sorunlarına ve öngörülemeyen yan etkilere yol açabilir. Ortamınızda Microsoft dışı uç nokta koruması mutlak bir gereksinimse, virüsten koruma işlevini [Pasif modda](linux-preferences.md#enforcement-level-for-antivirus-engine) çalışacak şekilde yapılandırdıktan sonra Linux'ta Uç Nokta için Defender EDR işlevselliğinden güvenle yararlanabilirsiniz.
+> Linux'ta Uç Nokta için Microsoft Defender birlikte diğer üçüncü taraf uç nokta koruma ürünlerini çalıştırmak, performans sorunlarına ve öngörülemeyen yan etkilere yol açabilir. Ortamınızda Microsoft dışı uç nokta koruması mutlak bir gereksinimse, virüsten koruma işlevini [Pasif modda](linux-preferences.md#enforcement-level-for-antivirus-engine) çalışacak şekilde yapılandırdıktan sonra Linux EDR'de Uç Nokta için Defender işlevinden güvenle yararlanabilirsiniz.
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender yükleme
 
-Linux için Uç Nokta için Microsoft Defender kötü amaçlı yazılımdan koruma ve uç noktada algılama ve yanıtlama (EDR) özelliklerini içerir. 
+Linux için Uç Nokta için Microsoft Defender kötü amaçlı yazılımdan koruma ve uç nokta algılama ve yanıt (EDR) özelliklerini içerir. 
 
 
 ### <a name="prerequisites"></a>Önkoşullar
@@ -93,6 +93,7 @@ Herhangi bir yükleme hatasıyla karşılaşırsanız [Bkz. Linux'ta Uç Nokta i
   - Red Hat Enterprise Linux 6.7 veya üzeri (Önizleme)
   - Red Hat Enterprise Linux 7.2 veya üzeri
   - Red Hat Enterprise Linux 8.x
+  - Red Hat Enterprise Linux 9.x
   - CentOS 6.7 veya üzeri (Önizleme)
   - CentOS 7.2 veya üzeri
   - Ubuntu 16.04 LTS veya üzeri LTS
@@ -195,7 +196,7 @@ Hizmeti etkinleştirdikten sonra, ağınızı veya güvenlik duvarınızı, bu h
 
 ### <a name="configuring-exclusions"></a>Dışlamaları Yapılandırma
 
-Microsoft Defender Virüsten Koruma'a dışlama eklerken, Microsoft Defender Virüsten Koruma [için Yaygın Dışlama Hatalarına](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) dikkat etmelisiniz
+Microsoft Defender Virüsten Koruma'ya dışlama eklerken, [Microsoft Defender Virüsten Koruma için Yaygın Dışlama Hatalarına](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) dikkat etmelisiniz
 
 ### <a name="network-connections"></a>Ağ bağlantıları
 
@@ -237,7 +238,7 @@ Microsoft, performansı, güvenliği geliştirmek ve yeni özellikler sunmak iç
 
 ## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>Uç Nokta için Microsoft Defender için Yaygın Uygulamalar etkilenebilir
 
-Belirli uygulamaların yüksek G/Ç iş yükleri, Uç Nokta için Microsoft Defender yüklendiğinde performans sorunlarıyla karşılaşabilir. Bunlar Jenkins ve Jira gibi geliştirici senaryolarına yönelik uygulamaları ve OracleDB ve Postgres gibi veritabanı iş yüklerini içerir. Performans düşüşü yaşıyorsanız, Microsoft Defender Virüsten Koruma için Yaygın Dışlama Hatalarını göz önünde bulundurarak güvenilen uygulamalar [için dışlamalar](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) ayarlamayı göz önünde bulundurun. Ek yönergeler için üçüncü taraf uygulamalardan gelen virüsten koruma dışlamalarıyla ilgili danışmanlık belgelerini göz önünde bulundurun.
+Belirli uygulamaların yüksek G/Ç iş yükleri, Uç Nokta için Microsoft Defender yüklendiğinde performans sorunlarıyla karşılaşabilir. Bunlar Jenkins ve Jira gibi geliştirici senaryolarına yönelik uygulamaları ve OracleDB ve Postgres gibi veritabanı iş yüklerini içerir. Performans düşüşü yaşıyorsanız, [Microsoft Defender Virüsten Koruma için Yaygın Dışlama Hatalarını](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) göz önünde bulundurarak güvenilen uygulamalar için dışlamalar ayarlamayı göz önünde bulundurun. Ek yönergeler için üçüncü taraf uygulamalardan gelen virüsten koruma dışlamalarıyla ilgili danışmanlık belgelerini göz önünde bulundurun.
 
 ## <a name="resources"></a>Kaynaklar
 
@@ -245,6 +246,6 @@ Belirli uygulamaların yüksek G/Ç iş yükleri, Uç Nokta için Microsoft Defe
   
 ## <a name="related-articles"></a>İlgili makaleler
   
--  [uç noktalarınızı Bulut için Defender tümleşik EDR çözümüyle koruyun: Uç Nokta için Microsoft Defender](/azure/defender-for-cloud/integration-defender-for-endpoint)
--  [Azure dışı makinelerinizi Bulut için Microsoft Defender Bağlan](/azure/defender-for-cloud/quickstart-onboard-machines)
-
+- [Bulut için Defender'ın tümleşik EDR çözümüyle uç noktalarınızı koruyun: Uç Nokta için Microsoft Defender](/azure/defender-for-cloud/integration-defender-for-endpoint)
+- [Azure dışı makinelerinizi Bulut için Microsoft Defender'a bağlama](/azure/defender-for-cloud/quickstart-onboard-machines)
+- [Linux için ağ korumasını açma](network-protection-linux.md)

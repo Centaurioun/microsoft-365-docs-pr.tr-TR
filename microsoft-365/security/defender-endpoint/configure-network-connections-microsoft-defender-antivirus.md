@@ -16,12 +16,12 @@ ms.date: 06/28/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c38136aa8d6616613968de5ef352e326c41c4137
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 163929596d826eb1f7a04af4d9baea5d6a975c3e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717834"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386483"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender Virüsten Koruma ağ bağlantılarını yapılandırın ve doğrulayın
 
@@ -56,7 +56,7 @@ Bu URL'lere erişimi reddeden güvenlik duvarı veya ağ filtreleme kuralı olma
 
 <br/><br/>
 
-|Hizmet ve açıklama|URL|
+|Hizmet ve açıklama|Url|
 |---|---|
 |Microsoft Defender Virüsten Koruma bulut tabanlı koruma hizmeti, Microsoft Active Protection Service (MAPS) olarak adlandırılır.<p> Microsoft Defender Virüsten Koruma, bulut tabanlı koruma sağlamak için MAPS hizmetini kullanır.|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
 |Microsoft Update Hizmeti (MU) ve Windows Update Hizmeti (WU) <p>Bu hizmetler güvenlik bilgilerine ve ürün güncelleştirmelerine izin verir.|`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> Daha fazla bilgi için bkz[. Windows Update için bağlantı uç noktaları](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
@@ -99,7 +99,7 @@ Microsoft Edge kullanıyorsanız bir bildirim iletisi de görürsünüz:
 
 Internet Explorer kullanıyorsanız benzer bir ileti oluşur:
 
-:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Kötü amaçlı yazılımların bulunduğuna ilişkin Microsoft Defender AV bildirimi" lightbox="../../media/wdav-bafs-ie.png":::
+:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Kötü amaçlı yazılımların bulunduğuna ilişkin Microsoft Defender Virüsten Koruma bildirimi" lightbox="../../media/wdav-bafs-ie.png":::
 
 #### <a name="view-the-fake-malware-detection-in-your-windows-security-app"></a>Windows Güvenliği uygulamanızda sahte kötü amaçlı yazılım algılamasını görüntüleme
 

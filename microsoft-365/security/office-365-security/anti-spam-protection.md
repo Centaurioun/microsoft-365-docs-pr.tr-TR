@@ -1,5 +1,5 @@
 ---
-title: İstenmeyen posta önleme koruması
+title: İstenmeyen posta önleme koruma
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,106 +18,106 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Yöneticiler, EOP'de (EOP) istenmeyen postaları önlemeye yardımcı olacak istenmeyen posta önleme ayarları Exchange Online Protection bilgi edinebilirsiniz.
+description: Yöneticiler, Exchange Online Protection (EOP) içinde istenmeyen postaları önlemeye yardımcı olacak istenmeyen posta önleme ayarları ve filtreleri hakkında bilgi edinebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1bc5d81b1221b73bcb701345b8db2f160380ba37
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 9685ca45859e842ae57d3d451a3de9e16cdc9ba6
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "62989920"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385847"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP'de istenmeyen posta önleme koruması
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Geçerli olduğu yer:**
+**Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [1. plan Office 365 plan 2 için Microsoft Defender](defender-for-office-365.md)
+- [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 > [!NOTE]
-> Bu konu yöneticilere yöneliktir. Son kullanıcı konuları için bkz. Gereksiz [E-posta Filtresine Genel Bakış ve Gereksiz](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) [e-posta ve kimlik avı hakkında bilgi alın](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31).
+> Bu konu yöneticilere yöneliktir. Son kullanıcı konuları için bkz[. Gereksiz Email Filtresine Genel Bakış](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) ve [Gereksiz e-posta ve kimlik avı hakkında bilgi edinin](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31).
 
-Microsoft 365 kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarına posta kutusu olan Exchange Online e-posta iletileri, EOP tarafından istenmeyen postalara (gereksiz e-posta) karşı otomatik olarak korunur.
+Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarında, e-posta iletileri EOP tarafından istenmeyen postalara (gereksiz e-posta) karşı otomatik olarak korunur.
 
-Microsoft'un e-posta güvenliği yol haritası eşleşmeyen bir çapraz ürün yaklaşımı içerir. Kullanıcılara ağ genelinde en son istenmeyen posta önleme, kimlik avı önleme araçları ve yenilikleri sunmak için EOP istenmeyen posta önleme ve kimlik avı önleme teknolojileri e-posta platformlarımız genelinde uygulanır. EOP'nin amacı, kullanıcıları gereksiz e-posta, sahte e-posta tehditleri (kimlik avı) ve kötü amaçlı yazılımlara karşı algılamaya ve bu tehditlere karşı korumaya yardımcı olan kapsamlı ve kullanılabilir bir e-posta hizmeti sunmaktır.
+Microsoft'un e-posta güvenliği yol haritası, benzersiz bir ürün arası yaklaşım içerir. EOP istenmeyen posta önleme ve kimlik avı önleme teknolojisi, kullanıcılara ağ genelinde en son istenmeyen posta önleme ve kimlik avı önleme araçlarını ve yeniliklerini sağlamak için e-posta platformlarımızda uygulanır. EOP'nin amacı, kullanıcıları gereksiz e-posta, sahte e-posta tehditleri (kimlik avı) ve kötü amaçlı yazılımlardan algılamaya ve korumaya yardımcı olan kapsamlı ve kullanılabilir bir e-posta hizmeti sunmaktır.
 
-E-posta kullanımı artya arttı olarak e-posta kullanımı da kötüye kullanımına neden olabilir. İstenmeyen gereksiz e-postalar gelen kutularına ve ağlara tıkar, kullanıcı memnuniyetini ve yasal e-posta iletişimlerinin etkililiğini etkiler. Microsoft bu nedenle istenmeyen posta önleme teknolojilerine yatırım yapmaya devam ediyor. Basitçe ifade gerekirse, başlangıç olarak gereksiz e-postaları içeren ve filtre uygulanmış bir e-posta var.
+E-posta kullanımı arttıkça, e-posta kötüye kullanımı da artmıştır. İzlenmeyen gereksiz e-postalar gelen kutularını ve ağları tıkar, kullanıcı memnuniyetini etkileyebilir ve meşru e-posta iletişimlerinin etkinliğini engelleyebilir. Bu nedenle Microsoft istenmeyen posta önleme teknolojilerine yatırım yapmaya devam ediyor. Basitçe söylemek gerekirse, gereksiz e-postayı içererek ve filtreleyerek başlar.
 
 > [!TIP]
-> aşağıdaki istenmeyen posta önleme teknolojileri, ileti zarfı (örneğin, gönderenin etki alanı veya iletinin kaynak IP adresi) temel alan iletilere izin vermek veya bu iletileri engellemek için kullanışlıdır. Yük tabanlı iletilere (örneğin, iletide veya ekli dosyalarda yer alan URL'ler) izin vermek veya iletileri engellemek için Kiracı İzin [Ver/Engelleme Listesi portalını kullansanız gerekir](tenant-allow-block-list.md).
+> İleti zarfı (örneğin, gönderenin etki alanı veya iletinin kaynak IP adresi) temelinde iletilere izin vermek veya iletileri engellemek istediğinizde aşağıdaki istenmeyen posta önleme teknolojileri yararlıdır. Yüke göre iletilere izin vermek veya iletileri engellemek için (örneğin, iletideki URL'ler veya ekli dosyalar) [Kiracı İzin Verme/Engelleme Listesi portalını](manage-tenant-allow-block-list.md) kullanmanız gerekir.
 
 ## <a name="anti-spam-technologies-in-eop"></a>EOP'de istenmeyen posta önleme teknolojileri
 
-Gereksiz e-postaları azaltmaya yardımcı olmak için, EOP yasal e-postaları tanımlamak ve bu e-postaları ayırmak için özel istenmeyen posta filtreleme teknolojilerini kullanan gereksiz e-posta koruması içerir. EOP istenmeyen posta filtrelemesi, bilinen istenmeyen postalardan, kimlik avı tehditlerinden ve kullanıcı geri bildirimlerinden, tüketici platformumuz Outlook.com'dan öğrenir. Gereksiz e-posta sınıflandırma programında EOP kullanıcılarından sürekli geri bildirim almak, EOP teknolojilerinin sürekli olarak eğitime alınarak iyileştirilmelerini sağlar.
+Gereksiz e-postayı azaltmaya yardımcı olmak için EOP, gereksiz e-postayı tanımlamak ve meşru e-postadan ayırmak için özel istenmeyen posta filtreleme teknolojilerini kullanan gereksiz e-posta koruması içerir. EOP istenmeyen posta filtreleme, bilinen istenmeyen posta ve kimlik avı tehditlerinden ve tüketici platformumuzdan Outlook.com kullanıcı geri bildirimlerinden öğrenir. Gereksiz e-posta sınıflandırma programındaki EOP kullanıcılarının sürekli geri bildirimleri, EOP teknolojilerinin sürekli olarak eğitilmesini ve geliştirilmesini sağlamaya yardımcı olur.
 
-EOP'de istenmeyen posta önleme ayarları aşağıdaki teknolojilerden kullanılır:
+EOP'deki istenmeyen posta önleme ayarları aşağıdaki teknolojilerden yapılmıştır:
 
-- Bağlantı **filtreleme**: IP İzin Listesi, IP Engelleme Listesi ve güvenli *liste (Microsoft* tarafından sürdürülen dinamik, ancak düzenlenilmeyen bir güvenilir gönderenler listesi) aracılığıyla, gelen e-posta bağlantısının başlarında iyi ve kötü e-posta kaynak sunucularını tanımlar. Bağlantı filtresi ilkesinde bu ayarları yapılandırabilirsiniz. Bağlantı filtrelemeyi [yapılandırma bağlantısı bağlantısında daha fazla bilgi edinebilirsiniz](configure-the-connection-filter-policy.md).
+- **Bağlantı filtreleme**: IP İzin Ver Listesi, IP Engelleme Listesi ve *güvenli* liste (Microsoft tarafından tutulan güvenilir gönderenlerin dinamik ancak düzenlenemez listesi) aracılığıyla gelen e-posta bağlantısının başındaki iyi ve kötü e-posta kaynak sunucularını tanımlar. Bu ayarları bağlantı filtresi ilkesinde yapılandırabilirsiniz. [Bağlantı filtrelemeyi yapılandırma](configure-the-connection-filter-policy.md) bölümünde daha fazla bilgi edinin.
 
-- **İstenmeyen** posta filtreleme (içerik filtreleme): EOP, iletileri sınıflandırmak için istenmeyen posta filtreleme kararlarını **İstenmeyen** **posta, Yüksek** güven istenmeyen **posta, Toplu** e-posta **, Kimlik** avı e-postası ve Yüksek güvene sahip kimlik avı e-postası kararlarını kullanır. Bu kararlara dayalı olarak eylemleri yapılandırabilirsiniz ve kullanıcıların karantinaya alınmış iletilerde neler yapmalarına izin verilmiyor ve kullanıcı karantina ilkeleri kullanılarak karantina bildirimlerinin alınıp [alınamay ayarlarını yapılandırabilirsiniz](quarantine-policies.md). Daha fazla bilgi için bkz[. Microsoft 365'de istenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md).
+- **İstenmeyen posta filtreleme (içerik filtreleme)**: EOP iletileri sınıflandırmak için **İstenmeyen** posta, **Yüksek güvenilirlikli istenmeyen posta**, **Toplu e-posta**, **Kimlik avı e-postası** ve **Yüksek güvenilirlikli kimlik avı e-postası** gibi istenmeyen posta filtreleme kararlarını kullanır. Bu kararlara göre yapılacak eylemleri yapılandırabilir ve kullanıcıların karantinaya alınan iletilere ne yapmalarına izin verilip verilmeyeceğini ve kullanıcının [karantina ilkelerini](quarantine-policies.md) kullanarak karantina bildirimleri alıp almayacağını yapılandırabilirsiniz. Daha fazla bilgi için bkz [. Microsoft 365'te istenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
-  > Varsayılan olarak, istenmeyen posta filtreleme alıcının Gereksiz E-posta klasörüne istenmeyen posta olarak işaretlenmiş iletileri gönderecek şekilde yapılandırılır. Bununla birlikte, EOP'nin şirket içi Exchange posta kutularını korumaya sahip olduğu karma ortamlarda, iletilere eklenen EOP istenmeyen posta üst bilgilerini tanımak için şirket içi Exchange kuruluş içinde iki posta akış kuralı (aktarım kuralları olarak da bilinir) yapılandırmanız gerekir. Ayrıntılar için bkz. [EOP'yi karma ortamlarda gereksiz E-posta klasörüne istenmeyen posta teslim edecek şekilde yapılandırma](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+  > Varsayılan olarak, istenmeyen posta filtreleme, istenmeyen posta olarak işaretlenmiş iletileri alıcının Gereksiz Email klasörüne gönderecek şekilde yapılandırılır. Ancak, EOP'nin şirket içi Exchange posta kutularını koruduğu karma ortamlarda, iletilere eklenen EOP istenmeyen posta üst bilgilerini tanımak için şirket içi Exchange kuruluşunuzda iki posta akışı kuralı (aktarım kuralları olarak da bilinir) yapılandırmanız gerekir. Ayrıntılar için bkz. [Karma ortamlarda gereksiz Email klasörüne istenmeyen posta göndermek için EOP'yi yapılandırma](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
-- **Giden istenmeyen posta filtreleme**: EOP ayrıca, kullanıcılarının giden ileti içeriğine veya giden ileti sınırlarını aşarak istenmeyen posta göndermeymeyeceklerinden emin olmak için de denetler. Daha fazla bilgi için, [bu bağlantıda giden istenmeyen posta filtrelemesini Microsoft 365](configure-the-outbound-spam-policy.md).
+- **Giden istenmeyen posta filtreleme**: EOP ayrıca, kullanıcılarınızın giden ileti içeriğinde veya giden ileti sınırlarını aşarak istenmeyen posta göndermediğinden emin olmak için denetler. Daha fazla bilgi için bkz [. Microsoft 365'te giden istenmeyen posta filtrelemeyi yapılandırma](configure-the-outbound-spam-policy.md).
 
-- **Spoof Intelligence**: Daha fazla bilgi için bkz [. EOP'de anti-poing protection](anti-spoofing-protection.md).
+- **Kimlik sahtekarlığı zekası**: Daha fazla bilgi için bkz. [EOP'de kimlik sahtekarlığı koruması](anti-spoofing-protection.md).
 
 ## <a name="manage-errors-in-spam-filtering"></a>İstenmeyen posta filtreleme hatalarını yönetme
 
-İyi iletiler istenmeyen posta olarak (hatalı pozitif sonuçlar olarak da bilinir) veya istenmeyen postaların Gelen Kutusu'na teslim edilebiliyor olması (hatalı negatifler olarak da bilinir) mümkündür. Ne olduğunu bulmak ve gelecekte bunun önlenmesine yardımcı olmak için aşağıdaki bölümlerdeki önerileri kullanabilirsiniz.
+İyi iletiler istenmeyen posta (hatalı pozitifler olarak da bilinir) olarak tanımlanabilir veya istenmeyen postalar Gelen Kutusu'na teslim edilebilir (hatalı negatifler olarak da bilinir). Neler olduğunu öğrenmek ve gelecekte gerçekleşmesini önlemeye yardımcı olmak için aşağıdaki bölümlerde yer alan önerileri kullanabilirsiniz.
 
-her iki senaryo için de geçerli olan bazı en iyi yöntemler:
+Her iki senaryo için de geçerli olan bazı en iyi yöntemler şunlardır:
 
-- Her zaman, sınıflandırılmamış iletileri Microsoft'a bildir. Daha fazla bilgi için bkz [. İletileri ve dosyaları Microsoft'a bildirme](report-junk-email-messages-to-microsoft.md).
+- Yanlış sınıflandırılmış iletileri her zaman Microsoft'a bildirin. Daha fazla bilgi için bkz. [İletileri ve dosyaları Microsoft'a bildirme](report-junk-email-messages-to-microsoft.md).
 
-- **İstenmeyen posta önleme ileti** üst bilgilerini inceleme: Bu değerler, bir iletinin neden istenmeyen posta olarak işaretlendiğinden veya istenmeyen posta filtrelemesini neden atladİklerini size söyler. Daha fazla bilgi için bkz [. İstenmeyen posta iletisi üstbilgileri](anti-spam-message-headers.md).
+- **İstenmeyen postadan koruma iletisi üst bilgilerini inceleyin**: Bu değerler, bir iletinin neden istenmeyen posta olarak işaretlendiğini veya neden istenmeyen posta filtrelemeyi atladığını size söyler. Daha fazla bilgi için bkz [. İstenmeyen postadan koruma iletisi üst bilgileri](anti-spam-message-headers.md).
 
-- **MX kaydınızı şu adrese Microsoft 365**: EOP'nin en iyi korumayı sağlayması için, her zaman e-postanın önce E-postayı teslim Microsoft 365 öneririz. Yönergeler için bkz[. Etki alanı için herhangi bir DNS barındırma sağlayıcısında DNS Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+- **MX kaydınızı Microsoft 365'e** yöneltin: EOP'nin en iyi korumayı sağlaması için öncelikle e-postanın Microsoft 365'e teslim edilmesi önerilir. Yönergeler için bkz. [Microsoft 365 için herhangi bir DNS barındırma sağlayıcısında DNS kayıtları oluşturma](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
-  MX kaydı başka bir konuma (örneğin, üçüncü taraf istenmeyen posta önleme çözümü veya cihaz) işaret ediyorsa, EOP'nin doğru istenmeyen posta filtrelemesi sağlamak zordur. Bu senaryoda, bağlayıcılar için Geliştirilmiş Filtreleme'yi yapılandırmaniz gerekir (liste atlama _olarak da bilinir_). Yönergeler için bkz. [Exchange Online'ta Bağlayıcılar için İyileştirilmiş Filtreleme](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  MX kaydı başka bir konuma (örneğin, üçüncü taraf istenmeyen posta önleme çözümü veya aleti) işaret ederse, EOP'nin doğru istenmeyen posta filtrelemesi sağlaması zordur. Bu senaryoda, bağlayıcılar için Gelişmiş Filtreleme 'yi yapılandırmanız gerekir ( _liste atlama_ olarak da bilinir). Yönergeler için bkz. [Exchange Online'da Bağlayıcılar için Gelişmiş Filtreleme](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- **E-posta kimlik** doğrulamasını kullanma: Bir e-posta etki alanınız varsa, bu etki alanındaki gönderenlerden gelen iletilerin yasal olduğunu doğrulamasına yardımcı olmak için DNS'i kullanabilirsiniz. EOP'de istenmeyen posta ve istenmeyen kimlik doğrulamasını önlemeye yardımcı olmak için, aşağıdaki e-posta kimlik doğrulama yöntemlerinin hepsini kullanın:
+- **E-posta kimlik doğrulamasını kullanma**: E-posta etki alanınız varsa, o etki alanındaki gönderenlerden gelen iletilerin meşru olmasını sağlamak için DNS kullanabilirsiniz. EOP'de istenmeyen posta ve istenmeyen kimlik sahtekarlıklarını önlemeye yardımcı olmak için aşağıdaki tüm e-posta kimlik doğrulama yöntemlerini kullanın:
 
-  - **SPF**: Sender Policy Framework, iletinin kaynak IP adresini gönderen etki alanının sahibiyle karşı doğrular. SPF'ye hızlı bir giriş yapmak ve SPF'yi hızla yapılandırmak için bkz Kimlik kimliklerini önlemeye yardımcı olmak için [SPF'yi ayarlama](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Microsoft 365'un SPF'yi nasıl kullandığı hakkında daha ayrıntılı bilgi için veya sorun gidermek ya da karma dağıtımlar gibi standart olmayan dağıtımlarda, Microsoft 365, spoing'yi engellemek için [Sender Policy Framework'i (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md) nasıl kullanır? ile başlayabilirsiniz.
+  - **SPF**: Sender Policy Framework, iletinin kaynak IP adresini gönderen etki alanının sahibine karşı doğrular. SPF'ye hızlı bir giriş yapmak ve hızla yapılandırılmasını sağlamak için bkz. Kimlik [sahtekarlıklarını önlemeye yardımcı olmak için SPF'yi ayarlama](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Microsoft 365'in SPF'yi nasıl kullandığını daha ayrıntılı anlamak veya karma dağıtımlar gibi sorun giderme veya standart olmayan dağıtımlar için Microsoft [365'in kimlik sahtekarlıklarını önlemek için Sender Policy Framework'ün (SPF) nasıl kullanıldığıyla](how-office-365-uses-spf-to-prevent-spoofing.md) başlayın.
 
-  - **DKIM**: DomainKeys Tanımlanan Posta, etki alanınız üzerinden gönderilen iletilerin ileti üst bilginize dijital bir imza ekler. Bilgi için bkz. [Belirli bir yıl içinde özel etki alanınıza gönderilen giden e-postayı doğrulamak için DKIM Microsoft 365](use-dkim-to-validate-outbound-email.md).
+  - **DKIM**: DomainKeys Identified Mail, etki alanınızdan gönderilen iletilerin ileti üst bilgisine dijital imza ekler. Bilgi için bkz. [Microsoft 365'te özel etki alanınızdan gönderilen giden e-postayı doğrulamak için DKIM kullanma](use-dkim-to-validate-outbound-email.md).
 
-  - **DMARC**: Etki alanı tabanlı İleti Kimlik Doğrulaması, Raporlama ve Uyumluluk, hedef e-posta sistemlerinin SPF veya DKIM'nin başarısız olan iletilerle ne yapacaklarını belirlemesine yardımcı olur ve e-posta iş ortaklarınız için başka bir güven düzeyi sağlar. Daha fazla bilgi için bkz[. DMARC kullanarak e-postayı doğrulamak için Microsoft 365](use-dmarc-to-validate-email.md).
+  - **DMARC**: Etki alanı tabanlı İleti Kimlik Doğrulaması, Raporlama ve Uyumluluk, hedef e-posta sistemlerinin SPF veya DKIM tarafından denetlenemeyen ve e-posta iş ortaklarınız için başka bir güven düzeyi sağlayan iletilerle ne yapacağını belirlemesine yardımcı olur. Daha fazla bilgi için bkz. [Microsoft 365'te e-postayı doğrulamak için DMARC kullanma](use-dmarc-to-validate-email.md).
 
-- **Toplu e-posta** ayarlarınızı doğrulama: İstenmeyen posta önleme ilkelerde yapılandırılan toplu şikayet düzeyi (BCL) eşiği, toplu e-postanın (gri _posta olarak da_ bilinir) istenmeyen posta olarak işaret isteyip olmadığını belirler. Varsayılan olarak açık olan _PowerShell ayarı MarkAsSpamBulkMail_ de sonuçlara katkıda bulunmak için kullanılır. Daha fazla bilgi için bkz[. Microsoft 365'de istenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md).
+- **Toplu e-posta ayarlarınızı doğrulayın**: İstenmeyen posta önleme ilkelerinde yapılandırdığınız toplu şikayet düzeyi (BCL) eşiği, toplu e-postanın ( _gri posta_ olarak da bilinir) istenmeyen posta olarak işaretlenip işaretlenmediğini belirler. Varsayılan olarak açık olan Yalnızca PowerShell ayarı _MarkAsSpamBulkMail_ de sonuçlara katkıda bulunur. Daha fazla bilgi için bkz [. Microsoft 365'te istenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md).
 
-### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>İstenmeyen postanın Gelen Kutusu'na teslimsini engelleme
+### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>İstenmeyen postanın Gelen Kutusu'na teslim edilmesini engelleme
 
-- **Kuruluş ayarlarınızı doğrulama**: İletilerin istenmeyen posta filtresini atlayıp atlamalarına izin verecek ayarlara dikkat edin (örneğin, istenmeyen posta önleme ilkelerde izin verilen etki alanları listesine kendi etki alanınızı eklersiniz). Önerilen ayarlarımız için bkz. [EOP ve Microsoft Defender için önerilen güvenlik Office 365 ve](recommended-settings-for-eop-and-office365.md) [Güvenilir gönderen listeleri oluşturma](create-safe-sender-lists-in-office-365.md).
+- **Kuruluş ayarlarınızı doğrulayın**: İletilerin istenmeyen posta filtrelemeyi atlayabilmesini sağlayan ayarlara dikkat edin (örneğin, istenmeyen posta önleme ilkelerindeki izin verilen etki alanları listesine kendi etki alanınızı eklerseniz). Önerilen ayarlarımız için bkz[. EOP ve Office 365 için Microsoft Defender güvenliği için önerilen ayarlar](recommended-settings-for-eop-and-office365.md) ve [Güvenilir gönderen listeleri oluşturma](create-safe-sender-lists-in-office-365.md).
 
-- **Kullanılabilir engellenen gönderen listelerini kullanma: Bilgi** için bkz. [Engellenen gönderen listeleri oluşturma](create-block-sender-lists-in-office-365.md).
+- **Kullanılabilir engellenen gönderen listelerini kullanın**: Bilgi için bkz. [Engellenen gönderen listeleri oluşturma](create-block-sender-lists-in-office-365.md).
 
-- **Toplu e-posta aboneliğinden çıkma** İleti kullanıcının kayıt olduğu bir ileti ise (bültenler, ürün duyuruları, vb.) ve güvenilir bir kaynaktan abonelikten çıkma bağlantısı içeriyorsa, bu kişiden aboneliğinizi iptal istemeyi düşünün.
+- **Toplu e-posta aboneliğini kaldırma** İleti kullanıcının kaydolduğu bir şeyse (bültenler, ürün duyuruları vb.) ve saygın bir kaynaktan abonelikten çıkma bağlantısı içeriyorsa, yalnızca aboneliği kaldırmasını isteyin.
 
-- **Tek başına EOP: EOP** istenmeyen posta filtreleme kararları için şirket içi Exchange'te posta akış kuralları oluşturma: EOP'nin şirket içi Exchange posta kutularını koruma olduğu karma ortamlarda, şirket içi posta hizmetlerde posta akış kurallarını (aktarım kuralları olarak da bilinir) yapılandırmanız Exchange. Bu posta akış kuralları EOP istenmeyen posta filtreleme kararını çevirerek, posta kutusunda gereksiz e-posta kuralının iletiyi Gereksiz E-posta klasörüne taşımasini sağlar. Ayrıntılar için bkz. [EOP'yi karma ortamlarda gereksiz E-posta klasörüne istenmeyen posta teslim edecek şekilde yapılandırma](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+- **Tek başına EOP: EOP istenmeyen posta filtreleme kararları için şirket içi Exchange'de posta akışı kuralları oluşturun: EOP'nin** şirket içi Exchange posta kutularını koruduğu karma ortamlarda, şirket içi Exchange'de posta akışı kurallarını (aktarım kuralları olarak da bilinir) yapılandırmanız gerekir. Bu posta akışı kuralları, posta kutusunda gereksiz e-posta kuralının iletiyi Gereksiz Email klasörüne taşıyabilmesi için EOP istenmeyen posta filtreleme kararını çevirir. Ayrıntılar için bkz. [Karma ortamlarda gereksiz Email klasörüne istenmeyen posta göndermek için EOP'yi yapılandırma](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
-### <a name="prevent-good-email-from-being-identified-as-spam"></a>İyi bir e-postanın istenmeyen posta olarak tanımlarını önleme
+### <a name="prevent-good-email-from-being-identified-as-spam"></a>İyi e-postanın istenmeyen posta olarak tanımlanmasını engelleme
 
-İşte hatalı pozitif sonuçlardan önlemeye yardımcı olmak için atılacak bazı adımlar:
+Hatalı pozitif sonuçları önlemeye yardımcı olmak için uygulayabileceğiniz bazı adımlar şunlardır:
 
-- **Kullanıcının gereksiz E-posta Outlook ayarlarını doğrulayın**:
+- **Kullanıcının Outlook Gereksiz Email Filtresi ayarlarını doğrulayın**:
 
-  - Outlook Gereksiz E-posta Filtresi'nin devre dışı bırakılmıştır **: Outlook** Gereksiz E-posta Filtresi varsayılan değere ayarlanmışsa **Otomatik filtreleme** yok değerine ayarlanırsa, Outlook iletileri istenmeyen posta olarak sınıflandırmaya çalışmaz.  Düşük veya Yüksek olarak ayar yukarıya **geldiğinde, Outlook** Gereksiz E-posta Filtresi istenmeyen postaları tanımlamak ve Gereksiz E-posta klasörüne taşımak için kendi SmartScreen filtre teknolojisini kullanır, böylece hatalı pozitif sonuçlar elde edersiniz. Microsoft'un, 2016'nın Kasım ayında Exchange ve Outlook için istenmeyen posta tanımlama güncelleştirmelerini üretmeyi durdurmuş olduğunu unutmayın. Mevcut SmartScreen istenmeyen posta tanımları olduğu gibi kaldı, ancak bunların etkisinin zaman içinde düşük olması olasıdır.
+  - **Outlook Önemsiz Email Filtresi'nin devre dışı bırakıldığından emin olun**: Outlook Gereksiz Email Filtresi varsayılan değere ayarlandığında **Otomatik filtreleme yok**, Outlook iletileri istenmeyen posta olarak sınıflandırmayı denemez.  **Düşük** veya **Yüksek** olarak ayarlandığında, Outlook Gereksiz Email Filtresi istenmeyen postaları belirlemek ve Gereksiz Email klasörüne taşımak için kendi SmartScreen filtre teknolojisini kullanır ve böylece hatalı pozitif sonuçları alabilirsiniz. Microsoft'un Kasım 2016'da Exchange ve Outlook'ta SmartScreen filtreleri için istenmeyen posta tanım güncelleştirmeleri üretmeyi durdurduğunu unutmayın. Mevcut SmartScreen istenmeyen posta tanımları yerinde bırakıldı, ancak zaman içinde etkinliği büyük olasılıkla azalacaktır.
 
-  - **Outlook 'Kasa Listeleri'** ayarının devre dışı bırakılmıştır: Bu ayar etkinleştirildiğinde, yalnızca kullanıcının Kasa Gönderenler listesinde veya Kasa Alıcıları listesinden gelen iletiler Gelen Kutusu'na teslim edilir; diğer herkesten gelen e-postalar otomatik olarak Gereksiz E-posta klasörüne taşınır.
+  - **Outlook 'Yalnızca Güvenli Listeler' ayarının devre dışı bırakıldığından emin olun**: Bu ayar etkinleştirildiğinde, yalnızca kullanıcının Güvenilir Gönderenler listesindeki veya Güvenilir Alıcılar listesindeki gönderenlerden gelen iletiler Gelen Kutusu'na teslim edilir; e-posta otomatik olarak Gereksiz Email klasörüne taşınır.
 
-  Bu ayarlar hakkında daha fazla bilgi için bkz. [E-posta veya posta Exchange Online gereksiz e-posta Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  Bu ayarlar hakkında daha fazla bilgi için bkz[. Microsoft 365'te Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Kullanılabilir güvenilir gönderenler listelerini kullanma**: Bilgi için bkz. [Güvenilir gönderen listeleri oluşturma](create-safe-sender-lists-in-office-365.md).
+- **Kullanılabilir güvenilir gönderen listelerini kullanın**: Bilgi için bkz. [Güvenilir gönderen listeleri oluşturma](create-safe-sender-lists-in-office-365.md).
 
-- **Kullanıcıların, aşağıdaki hizmet açıklamasında açıklanan gönderme** ve alma [sınırları içinde](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) Exchange Online doğrulayın.
+- Kullanıcıların, Exchange Online hizmet açıklamasındaki [Alma ve gönderme sınırları](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) bölümünde açıklandığı gibi **gönderme ve alma sınırları içinde olduğunu doğrulayın**.
 
-- **Tek başına EOP:** Dizin eşitlemesini kullanma: Şirket içi veya kuruluş içi ayarlarınızı korumaya yardımcı olması için tek başına E Exchange OP kullanıyorsanız, dizin eşitlemesini kullanarak kullanıcı ayarlarını hizmetle eşitlemeniz gerekir. Bunu yaparak kullanıcılarının Gönderenler listelerinin Kasa EOP tarafından kabul edildiklerine emin olur. Daha fazla bilgi için bkz [. Posta kullanıcılarını yönetmek için dizin eşitlemeyi kullanma](/exchange/standalone-eop/manage-mail-users-in-eop#synchronize-directories-with-azure-active-directory-connect-aad-connect).
+- **Tek başına EOP: dizin eşitlemesini kullanın**: Şirket içi Exchange kuruluşunuzu korumaya yardımcı olmak için tek başına EOP kullanıyorsanız, dizin eşitlemesini kullanarak kullanıcı ayarlarını hizmetle eşitlemeniz gerekir. Bunun yapılması, kullanıcılarınızın Güvenilir Gönderenler listelerine EOP tarafından uyulmasını sağlar. Daha fazla bilgi için bkz. [Posta kullanıcılarını yönetmek için dizin eşitlemesini kullanma](/exchange/standalone-eop/manage-mail-users-in-eop#synchronize-directories-with-azure-active-directory-connect-aad-connect).
 
-## <a name="anti-spam-legislation"></a>İstenmeyen posta önleme yasaları
+## <a name="anti-spam-legislation"></a>İstenmeyen posta önleme mevzuatı
 
-Microsoft'ta, yeni teknolojilerin ve otomatik düzenlemenin geliştirilmesinin, etkili bir kamu politikası ve yasal çerçeveleri desteği gerektirdiğine inanıyoruz. Dünya çapındaki istenmeyen postaların yayılması, ticari e-postaları düzenlemek için sayısız yasal gövdeye sahip. Birçok ülkede artık istenmeyen postayla mücadele yasaları vardır. ABD'de istenmeyen posta konusunda hem federal hem de eyalet yasaları vardır ve bu tamamlayıcı yaklaşım istenmeyen postaları frenlerken yasal e-ticarete de yardımcı oluyor. CAN-SPAM Yasası, sahte ve yanıltıcı e-posta iletilerini frenleyecek araçları genişlettir.
+Microsoft olarak, yeni teknolojilerin ve kendi kendine düzenlemenin geliştirilmesi için etkili kamu ilkelerinin ve yasal çerçevelerin desteklendiğini düşünüyoruz. Dünya çapında istenmeyen posta yayılması, ticari e-postayı düzenlemek için çok sayıda yasama organını teşvik etti. Birçok ülkede artık istenmeyen postayla mücadele yasaları var. Birleşik Devletler, istenmeyen postayı yöneten hem federal hem de eyalet yasalarına sahiptir ve bu tamamlayıcı yaklaşım, meşru e-ticaretin başarılı olmasını sağlarken istenmeyen postaların da kısıtlanmasında yardımcı olur. CAN-SPAM Yasası, sahte ve yanıltıcı e-posta iletilerini kısıtlamak için kullanılabilecek araçları genişletir.

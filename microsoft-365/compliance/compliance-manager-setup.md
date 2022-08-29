@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Uyumluluk Yöneticisi kullanıcı izinlerini ve rollerini ayarlayın ve eylemlerin otomatik testini yapılandırın. Kullanıcı geçmişini yönetin ve pano görünümünüzü filtreleyin.
-ms.openlocfilehash: 1053ff60416a80d88e29e8a8f4bc9ac3fdfc133b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 940396ad6334e646a37a359f4ed73345056f51ef
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634775"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357466"
 ---
 # <a name="get-started-with-compliance-manager"></a>Uyumluluk Yöneticisini kullanmaya başlama
 
@@ -88,8 +88,7 @@ Aşağıdaki tabloda, Uyumluluk Yöneticisi'ndeki her rolün izin verdiği işle
 | **Verileri okuma ama düzenlememe**| Uyumluluk Yöneticisi Okuyucusu  | Azure AD Genel okuyucu, Güvenlik okuyucusu |
 | **Verileri düzenleme**| Uyumluluk Yöneticisi Katkısı | Uyumluluk Yöneticisi |
 | **Test sonuçlarını düzenleme**| Uyumluluk Yöneticisi Değerlendiricisi | Uyumluluk Yöneticisi |
-| **Değerlendirmeleri, şablon ve kiracı verilerini yönetme**| Uyumluluk Yöneticisi Yönetimi | Uyumluluk Yöneticisi, Uyumluluk Verileri Yöneticisi, Güvenlik Yöneticisi  |
-| **Kullanıcıları atama**| Genel Yönetici | Genel Yönetici |
+| **Değerlendirmeleri, şablonları ve kiracı verilerini yönetme; geliştirme eylemleri atama**| Uyumluluk Yöneticisi Yönetimi | Uyumluluk Yöneticisi, Uyumluluk Verileri Yöneticisi, Güvenlik Yöneticisi  |
 
 ## <a name="start-a-premium-assessments-trial"></a>Premium değerlendirme denemesi başlatma
 
