@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Kullanıcılarınızın Microsoft ürünleri hakkında Microsoft'a gönderebileceği geri bildirimleri yönetin.
-ms.openlocfilehash: d32b9f1150443bc4fc4e859004949d6f27b6914d
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 24b421598815c163599932d761908b0765acea1b
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300814"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67406222"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Kuruluşunuz için Microsoft geri bildirimlerini yönetme
 
-Microsoft 365 kuruluşunun yöneticisi olarak artık Microsoft 365 uygulamalarını kullanırken kullanıcılarınızın geri bildirim toplama ve müşteri etkileşimi deneyimini yönetmenize yardımcı olacak çeşitli ilkeler vardır. Bu ilkelerin her biri için kuruluşunuzda mevcut Azure Active Directory gruplarını oluşturabilir ve kullanabilirsiniz. Bu ilkelerle, kuruluşunuzdaki farklı departmanların Microsoft'a nasıl geri bildirim gönderebileceğini denetleyebilirsiniz. Microsoft, müşteriler tarafından gönderilen tüm geri bildirimleri inceler ve ürünü geliştirmek için bu geri bildirimi kullanır. Geri bildirim deneyimlerini **Açık** durumda tutmak, kullanıcılarınızın kullandıkları Microsoft ürünleri hakkında ne söylediklerini görmenizi sağlar. Kullanıcılarınızdan topladığımız geri bildirimler <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">yakında Microsoft 365 yönetim merkezi</a>.
+Microsoft 365 kuruluşunun yöneticisi olarak artık Microsoft 365 uygulamalarını kullanırken kullanıcılarınızın geri bildirim toplama ve müşteri etkileşimi deneyimini yönetmenize yardımcı olacak çeşitli ilkeler vardır. Bu ilkelerin her biri için kuruluşunuzda mevcut Azure Active Directory gruplarını oluşturabilir ve kullanabilirsiniz. Bu ilkelerle, kuruluşunuzdaki farklı departmanların Microsoft'a nasıl geri bildirim gönderebileceğini denetleyebilirsiniz. Microsoft, müşteriler tarafından gönderilen tüm geri bildirimleri inceler ve ürünü geliştirmek için bu geri bildirimi kullanır. Geri bildirim deneyimlerini **Açık** durumda tutmak, kullanıcılarınızın kullandıkları Microsoft ürünleri hakkında ne söylediklerini görmenizi sağlar. Kullanıcılarınızdan topladığımız geri bildirimler <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a>.
 
 Geri bildirim türleri ve Microsoft'un kullanıcı geri bildirimlerini nasıl kullandığı hakkında daha fazla bilgi edinmek için bkz. [Kuruluşunuz için Microsoft geri bildirimi hakkında bilgi edinin](../misc/feedback-user-control.md).
 
@@ -40,17 +40,25 @@ Aşağıdaki tablo, aşağıdaki geri bildirim ilkeleri tablosunda gösterilen g
 |:-----|:-----|:-----|:-----|:-----|
 |**Erişim**|Evet|Evet|Evet|Evet|
 |**Excel**|Evet|Evet|Evet|Evet|
+|**Forms**|Evet|Evet|Evet|Evet|
+|**Intune Şirket Portalı (Android)**|Evet|Evet|Evet|Evet|
+|**Microsoft Stream (Android, iOS)**|Evet|Evet|Evet|Evet|
+|**Microsoft Whiteboard**|Evet|Evet|Evet|Evet|
 |**Office.com**|Çok yakında|Çok yakında|Çok yakında|Çok yakında|
 |**OneNote**|Evet|Evet|Evet|Evet|
 |**OneDrive**|[Şu anda diğer denetimler tarafından yönetilen bazı ayarlar.](/onedrive/disable-contact-support-send-feedback)||||
-|**Outlook**|Çok yakında|Çok yakında|Çok yakında|Çok yakında|
+|**Outlook (Web, iOS)**|Çok yakında|Çok yakında|Çok yakında|Çok yakında|
+|**Outlook (Masaüstü, Android, Mac)**|Çok yakında|Çok yakında|Çok yakında|Çok yakında|
 |**PowerPoint**|Evet|Evet|Evet|Evet|
 |**Project**|Çok yakında|Çok yakında|Çok yakında|Çok yakında|
 |**Publisher**|Evet|Evet|Evet|Evet|
 |**SharePoint**|[Şu anda diğer denetimler tarafından yönetilen bazı ayarlar.](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[Şu anda diğer denetimler tarafından yönetilen bazı ayarlar.](/microsoftteams/manage-feedback-policies-in-teams)||||
+|**Yapılacaklar**|Evet|Evet|Evet|Evet|
 |**Word**|Evet|Evet|Evet|Evet|
 |**Visio**|Evet|Evet|Evet|Evet|
+|**Viva Hedefleri**|Evet|Evet|Evet|Evet|
+|**Tahta**|Evet|Evet|Evet|Evet|
 |**Yammer**|Evet|Evet|Evet|Evet|
 
 [Ürün içi anketler ve geri bildirim örnekleri için buraya bakın.](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)

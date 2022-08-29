@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: E-posta ve Skype Kurumsal Online gibi hizmetlerinizin kendi etki alanı adınızı kullanması için Microsoft 365'te etki alanınızı eklemeyi ve ayarlamayı öğrenin.
-ms.openlocfilehash: e33bfad12c3785e95ca328c4f0e82ab640d549d0
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: fecd9a5171586eb61a96be7f8d4f1f6a422d212e
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085959"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67406178"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Microsoft 365'i herhangi bir etki alanı kayıt şirketiyle ayarlamak için ad sunucularını değiştirme
 
@@ -183,7 +183,7 @@ Buna ek olarak, müşterilerin web sitenizi bulmalarına yardım etmek için bir
 1. **Kayıt ekle'yi** seçin.
 2. **Özel DNS kaydı ekle** bölmesindeki **Tür** açılan **listesindeN CNAME (Diğer Ad)** öğesini seçin.
 3. **Ana bilgisayar adı veya Diğer Ad** kutusuna **www** yazın.
-4. **İşaret edilen adres** kutusuna web siteniz için tam etki alanı adını (FQDN) yazın. Örneğin, **contoso.5om**.
+4. **İşaret edilen adres** kutusuna web siteniz için tam etki alanı adını (FQDN) yazın. Örneğin **, contoso.com**.
 5. Kaydın TTL ayarını değiştirmek istiyorsanız, **TTL** açılan listesinden yeni bir süre seçin. Aksi takdirde 6. adıma geçin.
 6. **Kaydet**'i seçin.
 

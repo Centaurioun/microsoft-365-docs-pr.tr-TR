@@ -12,26 +12,31 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Azure ve OneDrive İş'de Microsoft Whiteboard için veri saklama hakkında bilgi edinin.
-ms.openlocfilehash: e79c0250d896d479047ec4465a81643dd2ba26d5
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 49189ff03774d91a855d3339c4a93702b1cbafcc
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276098"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434405"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Microsoft Whiteboard için verileri yönetme
 
-Whiteboard içeriği hem Azure'da hem de OneDrive İş depolanır. Yeni beyaz tahtalar OneDrive İş'da depolanır; tek istisna Surface Hub'dan başlatılan beyaz tahtaların Azure'da depolanmasıdır (gelecekte OneDrive İş taşınacaktır). Daha fazla bilgi için bkz. [Whiteboard'da paylaşımı yönetme](manage-sharing-organizations.md).
+Whiteboard içeriği OneDrive İş ve Azure'da depolanır. OneDrive İş, tüm yeni beyaz tahtalar için varsayılan depolama alanıdır. Başlangıçta Azure'da oluşturulan beyaz tahtalar ve Surface Hub veya Microsoft Teams Room cihazında başlatılan beyaz tahtalar Azure'da depolanır.
+
+Verileri yönetmek için önce Whiteboard'un kuruluşunuz için etkinleştirildiğinden emin olmanız gerekir. Daha fazla bilgi için bkz. [Whiteboard erişimini yönetme](manage-whiteboard-access-organizations.md).
 
 ## <a name="azure-storage-overview"></a>Azure depolamaya genel bakış
 
+>[!NOTE]
+> Aşağıdaki bilgiler Azure'da depolanan beyaz tahtalar için geçerlidir.
+
 Whiteboard şu anda içeriği Azure'da güvenli bir şekilde depolar. Veriler ülkeye ve Whiteboard'un bu konumlarda yeni içerik depolamaya geçişine bağlı olarak farklı konumlarda depolanabilir. Yeni verilerin nerede oluşturulduğunu denetlemek için bkz. [Microsoft 365 müşteri verilerinizin depolandığı yer](/microsoft-365/enterprise/o365-data-locations).
 
-Azure'daki içerik Veri Kaybı Önleme (DLP), eBulma, bekletme ilkeleri ve benzer özellikleri desteklemez. İçerik [Whiteboard PowerShell cmdlet'leri](/powershell/module/whiteboard/) kullanılarak yönetilebilir ve zaman içinde bu içeriğin OneDrive İş geçirilmesi veya silinmesi gerekir.
+Azure'daki içerik Veri Kaybı Önleme (DLP), eBulma, bekletme ilkeleri ve benzer özellikleri desteklemez. Bu içerik [Whiteboard PowerShell cmdlet'leri](/powershell/module/whiteboard/) kullanılarak yönetilebilir. Sonunda Azure'da depolanan beyaz tahtaların OneDrive İş geçirilmesi veya silinmesi gerekir.
 
 ### <a name="if-a-user-account-is-deleted-in-azure"></a>Azure'da bir kullanıcı hesabı silindiyse
 
-Kullanıcının hesabı Azure'da silindiğinde beyaz tahtaların depolanma şeklini değiştiriyoruz. Değişiklik öncesinde, bir kullanıcının hesabı silindiğinde, kullanıcının sahip olduğu beyaz tahtalar da silinir, ancak başkalarıyla paylaşılan beyaz tahtalar silinmez.
+Kullanıcının hesabı Azure'da silindiğinde beyaz tahtaların depolanma şeklini değiştiriyoruz. Değişiklik öncesinde, silinen bir kullanıcının hesabına ait olan tüm beyaz tahtalar da silinmişti. Ancak başkalarıyla paylaşılan beyaz tahtalar silinmez.
 
 >[!NOTE]
 > OneDrive İş'de depolanan beyaz tahtalar, OneDrive İş'daki diğer tüm içeriklerde olduğu gibi işlenir. Daha fazla bilgi için bkz. [Silinen kullanıcılar için OneDrive bekletmesini ayarlama](/onedrive/set-retention).
@@ -48,9 +53,9 @@ Tüm silme işlemlerinin veya betiğin bu değişikliği işlediğini doğrulay�
 
 ## <a name="onedrive-for-business-storage-overview"></a>OneDrive İş depolamaya genel bakış
 
-Beyaz tahtalar beyaz tahtayı başlatan kişinin OneDrive İş klasöründe oluşturulur (SharePoint henüz desteklenmiyor). Bu işlem, tek başına Whiteboard uygulamalarında ve Microsoft Teams toplantılarında, sohbetlerinde ve kanallarında oluşturulan tüm beyaz tahtalar için geçerlidir. Tek istisna, Surface Hub'dan başlatılan beyaz tahtaların Azure'da depolanmasıdır (gelecekte OneDrive İş taşınacaktır).
+Beyaz tahtalar beyaz tahtayı başlatan kişinin OneDrive İş klasöründe oluşturulur. SharePoint henüz desteklenmiyor. Bu işlem, tek başına Whiteboard uygulamalarında ve Microsoft Teams toplantılarında, sohbetlerinde ve kanallarında oluşturulan tüm beyaz tahtalar için geçerlidir. Tek istisna, Surface Hub'dan başlatılan beyaz tahtaların Azure'da depolanmasıdır ancak gelecekte OneDrive İş taşınacaktır.
 
-Sağlanan OneDrive İş olmayan kullanıcılar, bu değişiklik uygulandığında artık yeni beyaz tahtalar oluşturamaz. Ancak, daha önce oluşturulmuş panolarını düzenlemeye devam edebilirler. Ayrıca, OneDrive İş sahip olan diğer kişiler tarafından kendileriyle paylaşılan beyaz tahtalar üzerinde de işbirliği yapabilir.
+OneDrive İş sağlanmamış kullanıcılar, bu değişiklik uygulandığında artık yeni beyaz tahtalar oluşturamaz. Ancak, daha önce oluşturulmuş panolarını düzenlemeye devam edebilirler. Ayrıca, OneDrive İş sahip olan diğer kişiler tarafından kendileriyle paylaşılan beyaz tahtalar üzerinde de işbirliği yapabilir.
 
 Ortalama beyaz tahta boyutu 50 KB ile 1 MB arasında olabilir ve OneDrive İş içeriğinizin bulunduğu her yerde bulunabilir. Kiracınızın verilerinin nerede depolandığını denetlemek için bkz. [Microsoft 365 müşteri verilerinizin depolandığı yer](/microsoft-365/enterprise/o365-data-locations). Ardından OneDrive İş konumuna bakın.
 
@@ -68,13 +73,13 @@ Bugün desteklenen veri denetimleri:
 - Kota
 - Yasal tutma
 - Dlp
-- Temel eBulma – .whiteboard dosyaları, oluşturucunun OneDrive İş dosya olarak depolanır. Anahtar sözcük ve dosya türü araması için dizine eklenmiştir, ancak önizleme veya gözden geçirme için kullanılamaz. Dışarı aktarma işleminin ardından, bir yöneticinin içeriği görüntülemek için dosyayı OneDrive İş'a geri yüklemesi gerekir. Gelecekte ek destek planlanıyor.
+- Temel eBulma – .whiteboard dosyaları, oluşturucunun OneDrive İş dosya olarak depolanır. Anahtar sözcük ve dosya türü araması için dizine eklenmiştir, ancak önizleme veya gözden geçirme için kullanılamaz. Dışarı aktarma işleminin ardından, bir yöneticinin içeriği görüntülemek için dosyayı OneDrive İş'a geri yüklemesi gerekir. Gelecek için daha fazla destek planlanıyor.
 
 Gelecek sürümler için planlanan veri denetimleri:
 
 - Duyarlılık etiketleri
 - Analytics
-- Ek eBulma desteği
+- Daha fazla eBulma desteği
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

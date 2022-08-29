@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Romanya kişisel sayısal kodu (CNP) hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 17650dd36a674a1b4af2bc68eb92c98f7ee345ec
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: fdf0278c4d2dcfef43563285f6096b123cc4a5a5
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948517"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368333"
 ---
 # <a name="romania-personal-numeric-code-cnp"></a>Romanya kişisel sayısal kodu (CNP)
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -47,20 +39,20 @@ Boşluk ve sınırlayıcı içermeyen 13 basamak
 - 01-52 veya 99 olabilecek iki basamak
 - dört basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_romania_eu_national_id_card` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_romania_eu_national_id_card` bir anahtar sözcük bulunur.
+- İşlev `Func_romania_eu_national_id_card`, desenle eşleşen içeriği bulur.
+- `Keywords_romania_eu_national_id_card` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_romania_eu_national_id_card` , desenle eşleşen içeriği bulur.
+- İşlev `Func_romania_eu_national_id_card`, desenle eşleşen içeriği bulur.
 
 ```xml
       <!-- Romania Personal Numerical Code (CNP) -->

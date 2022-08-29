@@ -15,25 +15,29 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 9e94b164dd5c4863b792acdfdd36756ebd94347a
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 8f8f189e3cf340c0056eb6e9cbbbfefe6f4e148d
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574013"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405826"
 ---
 # <a name="turn-on-network-protection"></a>Ağ korumasını açın
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Şunlar için geçerlidir:**
+
 - [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Virüsten Koruma
 
 **Platform**
+
 - Windows
+- Linux \(Bkz. [Linux için ağ koruması](network-protection-linux.md)\)
+- macOS \(Bkz. [macOS için ağ koruması](network-protection-macos.md)\)
 
 > [!TIP]
 > Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -74,7 +78,7 @@ Aşağıdaki yöntemlerden herhangi birini kullanarak ağ korumasını etkinleş
 
 ### <a name="powershell"></a>PowerShell
 
-1. Başlat menüsüne **powershell** yazın, **Windows PowerShell** sağ tıklayın ve **Yönetici olarak çalıştır'ı** seçin.
+1. Başlat menüsüne **powershell** yazın, **Windows PowerShell**'e sağ tıklayın ve **Yönetici olarak çalıştır**'ı seçin.
 
 2. Aşağıdaki cmdlet'i girin:
 
@@ -95,7 +99,6 @@ Aşağıdaki yöntemlerden herhangi birini kullanarak ağ korumasını etkinleş
 Ağ korumasını etkinleştirmek veya devre dışı bırakmak ya da denetim modunu etkinleştirmek için [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) yapılandırma hizmet sağlayıcısını (CSP) kullanın.
 
 Ağ korumasını etkinleştirmeden veya devre dışı bırakmadan veya denetim modunu etkinleştirmeden önce [Microsoft Defender kötü amaçlı yazılımdan koruma platformunu en son sürüme güncelleştirin](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc).
-
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
@@ -147,7 +150,7 @@ Etki alanına katılmış bilgisayarlarda veya tek başına bir bilgisayarda ağ
 
     Etki alanına katılmış bir grup ilkesi yönetim bilgisayarında [grup ilkesi Yönetim Konsolu'nu](https://technet.microsoft.com/library/cc731212.aspx) açın, yapılandırmak istediğiniz grup ilkesi Nesnesine sağ tıklayın ve **Düzenle'yi** seçin.
 
-2. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na** gidin ve **Yönetim şablonları'nı** seçin.
+2. **Grup İlkesi Yönetimi Düzenleyicisi**'nde **Bilgisayar yapılandırması**'na gidin ve **Yönetim şablonları**'nı seçin.
 
 3. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Windows Defender Exploit Guard** \> **Ağ koruması** olarak genişletin.
 
@@ -180,11 +183,10 @@ Etki alanına katılmış bilgisayarlarda veya tek başına bir bilgisayarda ağ
    - **Engelle**
    - **Denetim**
    - **Devre dışı**
-   
-6. Kalan adımları tamamlayın ve ilkeyi kaydedin. 
+
+6. Kalan adımları tamamlayın ve ilkeyi kaydedin.
 
 7. İlkeyi bir koleksiyona dağıtmak için şeritten **Dağıt'ı** seçin.
-
 
 > [!IMPORTANT]
 > bir Exploit Guard ilkesini Configuration Manager dağıttığınızda, dağıtımı kaldırırsanız Exploit Guard ayarları istemcilerden kaldırılmaz. `Delete not supported`, istemcinin Exploit Guard dağıtımını kaldırırsanız Configuration Manager istemcisinin ExploitGuardHandler.log dosyasına kaydedilir. <!--CMADO8538577-->
@@ -208,6 +210,10 @@ Etki alanına katılmış bilgisayarlarda veya tek başına bir bilgisayarda ağ
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Ağ koruması](network-protection.md)
+
+- [Linux için ağ koruması](network-protection-linux.md)
+
+- [macOS için ağ koruması](network-protection-macos.md)
 
 - [Ağ koruması ve TCP üç yönlü el sıkışması](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 

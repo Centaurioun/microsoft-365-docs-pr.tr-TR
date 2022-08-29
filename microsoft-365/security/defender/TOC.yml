@@ -190,6 +190,8 @@
                       href: alert-grading-playbook-inbox-forwarding-rules.md
                     - name: Şüpheli gelen kutusu işleme kuralları
                       href: alert-grading-playbook-inbox-manipulation-rules.md
+                    - name: Şüpheli parola spreyi ile ilgili IP adresi
+                      href: alert-grading-password-spray.md
                     - name: Kötü amaçlı exchange bağlayıcıları
                       href: alert-grading-for-malicious-exchange-connectors.md
                 - name: Kullanıcılar
@@ -216,40 +218,54 @@
           items:
             - name: Genel bakış
               href: advanced-hunting-overview.md
-            - name: 'Öğrenin, eğitin ve örnek alın'
+            - name: Destekli ve gelişmiş modlar
+              href: advanced-hunting-modes.md
+            - name: Kılavuzlu modu kullanarak sorgu oluşturma
               items:
-                - name: Sorgu dilini öğrenin
-                  href: advanced-hunting-query-language.md
-                - name: Uzman eğitimi alın
-                  href: advanced-hunting-expert-training.md
-                - name: Paylaşılan sorguları kullanın
-                  href: advanced-hunting-shared-queries.md
-                - name: 'Cihazlar, e-postalar, uygulamalar ve kimlikler arasında avlayın'
-                  href: advanced-hunting-query-emails-devices.md
-                - name: Fidye yazılımı avlayın
-                  href: advanced-hunting-find-ransomware.md
-                - name: Gelişmiş avcılık örneği
-                  href: advanced-hunting-example.md
-                - name: Uç Nokta için Defender'dan geçiş yapın
-                  href: advanced-hunting-migrate-from-mde.md
-            - name: Sorgu sonuçlarıyla çalışın
-              href: advanced-hunting-query-results.md
-            - name: Sorgu sonuçları üzerinde işlem yapın
-              href: advanced-hunting-take-action.md
-            - name: Go Hunt ile hızla araştırın
-              href: advanced-hunting-go-hunt.md
-            - name: Sorgu sonuçlarını bir olayla bağlayın
-              href: advanced-hunting-link-to-incident.md
-            - name: En iyi duruma getirin ve hataları işleyin
+                - name: Sorgu oluşturucuyu kullanmaya başlama
+                  href: advanced-hunting-query-builder.md
+                - name: Sorgunuzu kılavuzlu modda daraltma
+                  href: advanced-hunting-query-builder-details.md
+                - name: Sorgu sonuçlarıyla kılavuzlu modda çalışma
+                  href: advanced-hunting-query-builder-results.md
+            - name: Gelişmiş modu kullanarak sorgu oluşturma
               items:
-                - name: Sorgu en iyi yöntemlerini uygulayın
-                  href: advanced-hunting-best-practices.md
-                - name: Hataları işleyin
-                  href: advanced-hunting-errors.md
-                - name: Kotalar ve kullanım parametreleri
-                  href: advanced-hunting-limits.md
-                - name: Veri kapsamını genişletin
-                  href: advanced-hunting-extend-data.md
+                - name: 'Öğrenin, eğitin ve örnek alın'
+                  items:
+                    - name: Sorgu dilini öğrenin
+                      href: advanced-hunting-query-language.md
+                    - name: Uzman eğitimi alın
+                      href: advanced-hunting-expert-training.md
+                    - name: Paylaşılan sorguları kullanın
+                      href: advanced-hunting-shared-queries.md
+                    - name: 'Cihazlar, e-postalar, uygulamalar ve kimlikler arasında avlayın'
+                      href: advanced-hunting-query-emails-devices.md
+                    - name: Fidye yazılımı avlayın
+                      href: advanced-hunting-find-ransomware.md
+                    - name: Gelişmiş avcılık örneği
+                      href: advanced-hunting-example.md
+                    - name: Uç Nokta için Defender'dan geçiş yapın
+                      href: advanced-hunting-migrate-from-mde.md
+                - name: Sorgu sonuçlarıyla çalışın
+                  href: advanced-hunting-query-results.md
+                - name: Go Hunt ile hızla araştırın
+                  href: advanced-hunting-go-hunt.md
+                - name: İşlevler
+                  items:
+                    - name: AssignedIPAddresses()
+                      href: advanced-hunting-assignedipaddresses-function.md
+                    - name: DeviceFromIP()
+                      href: advanced-hunting-devicefromip-function.md
+                    - name: FileProfile()
+                      href: advanced-hunting-fileprofile-function.md
+                    - name: SeenBy()
+                      href: advanced-hunting-seenby-function.md
+                - name: En iyi duruma getirin ve hataları işleyin
+                  items:
+                    - name: Sorgu en iyi yöntemlerini uygulayın
+                      href: advanced-hunting-best-practices.md
+                    - name: Hataları işleyin
+                      href: advanced-hunting-errors.md
             - name: Veri şeması
               items:
                 - name: Şemayı anlayın
@@ -320,22 +336,20 @@
                   href: advanced-hunting-identityqueryevents-table.md
                 - name: UrlClickEvents
                   href: advanced-hunting-urlclickevents-table.md
-            - name: İşlevler
-              items:
-                - name: AssignedIPAddresses()
-                  href: advanced-hunting-assignedipaddresses-function.md
-                - name: DeviceFromIP()
-                  href: advanced-hunting-devicefromip-function.md
-                - name: FileProfile()
-                  href: advanced-hunting-fileprofile-function.md
-                - name: SeenBy()
-                  href: advanced-hunting-seenby-function.md
             - name: Özel algılamalar
               items:
                 - name: Özel algılamalara genel bakış
                   href: custom-detections-overview.md
                 - name: Algılama kuralları oluşturun ve yönetin
                   href: custom-detection-rules.md
+            - name: Sorgu sonuçları üzerinde işlem yapın
+              href: advanced-hunting-take-action.md
+            - name: Sorgu sonuçlarını bir olayla bağlayın
+              href: advanced-hunting-link-to-incident.md
+            - name: Kotalar ve kullanım parametreleri
+              href: advanced-hunting-limits.md
+            - name: Veri kapsamını genişletin
+              href: advanced-hunting-extend-data.md
         - name: Ortaya çıkan tehditleri izleyin ve yanıtlayın
           items:
             - name: Tehdit analizine genel bakış

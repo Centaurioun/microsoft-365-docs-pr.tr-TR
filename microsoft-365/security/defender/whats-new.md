@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 99d11ff6de3a322ec12c51e86bcab1e6f26c6a2d
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: d7a49b76efb824160157b9bf10315562149edb02
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106985"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405630"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender'daki yenilikler
 
@@ -46,6 +46,7 @@ Ayrıca, ürün güncelleştirmelerini ve önemli bildirimleri [ileti merkezi](h
 
 ## <a name="august-2022"></a>Ağustos 2022
 - (GA) [Avlanma için Microsoft Defender Uzmanları](defender-experts-for-hunting.md) artık genel kullanıma sunulmuştur. Güçlü bir güvenlik operasyonları merkezi olan Microsoft 365 Defender müşterisiyseniz ancak Microsoft'un Microsoft Defender verilerini kullanarak uç noktalar, Office 365, bulut uygulamaları ve kimlik genelinde tehditleri proaktif olarak avlamanıza yardımcı olmasını istiyorsanız, hizmeti uygulama, ayarlama ve kullanma hakkında daha fazla bilgi edinin. Avcılık için Defender Uzmanları diğer Microsoft 365 Defender ürünlerden ayrı olarak satılır.
+- (Önizleme) [Destekli mod](advanced-hunting-modes.md#get-started-with-guided-hunting-mode) artık gelişmiş avcılıkta genel önizleme için kullanılabilir. Analistler artık *Kusto Sorgu Dili (KQL) bilmeden* uç nokta, kimlikler, e-posta & işbirliği ve bulut uygulamaları verilerini sorgulamaya başlayabilir.  Kılavuzlu mod, kullanılabilir filtreler ve koşullar içeren açılan menüler aracılığıyla sorgu oluşturmanın kolay, kullanımı kolay, yapı taşı stiline sahiptir. Bkz. [Sorgu oluşturucuyu kullanmaya başlama](advanced-hunting-query-builder.md).
 
 ## <a name="july-2022"></a>Temmuz 2022
 - (Önizleme) Tehdit Avcılığı için Microsoft Defender Uzmanları genel önizlemesi katılımcıları artık, av hizmetinin ortamlarında ortaya çıkan tehditleri ve Microsoft 365 Defender ürünleri tarafından oluşturulan uyarıları anlamalarına yardımcı olmak için aylık raporlar almayı dört gözle bekliyor. Ayrıntılar için bkz. [Microsoft 365 Defender'da Avcılık için Defender Uzmanlarını Anlama raporu](defender-experts-report.md).

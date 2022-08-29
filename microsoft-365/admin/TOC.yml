@@ -271,21 +271,21 @@
       items:
         - name: Raporları kullanarak Microsoft 365 etkinliğini izleme
           href: activity-reports/activity-reports.md
-        - name: Microsoft Üretkenlik Puanı - genel bakış
-          href: productivity/productivity-score.md
+        - name: Microsoft Benimseme Puanı - genel bakış
+          href: adoption/adoption-score.md
           items:
             - name: İçerik işbirliği
-              href: productivity/content-collaboration.md
+              href: adoption/content-collaboration.md
             - name: İletişim
-              href: productivity/communication.md
+              href: adoption/communication.md
             - name: Hareketlilik
-              href: productivity/mobility.md
+              href: adoption/mobility.md
             - name: Ekip çalışması
-              href: productivity/teamwork.md
+              href: adoption/teamwork.md
             - name: Toplantılar
-              href: productivity/meetings.md
+              href: adoption/meetings.md
             - name: Microsoft 365 Uygulamaları sistem durumu
-              href: productivity/apps-health.md
+              href: adoption/apps-health.md
             - name: Uç Nokta Analizi
               href: /mem/analytics/productivity-score
         - name: Kuruluşunuzun iletişim bilgilerini değiştirme
@@ -320,8 +320,6 @@
           href: /admin/manage/manage-feedback-ms-org.md
         - name: Sürüm seçeneklerini ayarlama
           href: manage/release-options-in-office-365.md
-        - name: Yeni özellikleri gösterme veya gizleme
-          href: manage/show-hide-new-features.md
         - name: Power BI kullanım analizi
           items:
             - name: Kullanım analizi hakkında
@@ -358,7 +356,7 @@
       href: ../commerce/index.yml
     - name: Kuruluşunuzun güvenliğini sağlayın
       items:
-        - name: Verilerinizin güvenliğini sağlamaya yönelik en iyi yöntemler
+        - name: Verilerinizin güvenliğini sağlamanın en iyi 10 yolu
           href: security-and-compliance/secure-your-business-data.md
         - name: Microsoft 365 için çok faktörlü kimlik doğrulama
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
@@ -377,7 +375,7 @@
     - name: Cihazları ve uygulama verilerini yönetme
       items:
         - name: Cihaz ve uygulama veri koruma yöntemleri
-          href: devices/choose-device-security.md
+          href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
         - name: Temel Hareketlilik ve Güvenlik
           items:
             - name: Temel Hareketlilik ve Güvenlik'e Genel Bakış

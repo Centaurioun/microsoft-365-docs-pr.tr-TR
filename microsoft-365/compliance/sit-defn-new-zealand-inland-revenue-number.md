@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Yeni Zelanda iç gelir numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 26604014771674a2177f3fee6c062e3bfcee4175
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7df444660c59bd12526d979dd93d5313814083f3
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989492"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368087"
 ---
 # <a name="new-zealand-inland-revenue-number"></a>Yeni Zelanda iç gelir numarası
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -50,20 +42,20 @@ isteğe bağlı sınırlayıcılarla sekiz veya dokuz basamak
 - isteğe bağlı bir boşluk veya kısa çizgi
 - üç basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_new_zealand_inland_revenue_number` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_new_zealand_inland_revenue_number` bir anahtar sözcük bulunur.
+- İşlev `Func_new_zealand_inland_revenue_number`, desenle eşleşen içeriği bulur.
+- `Keywords_new_zealand_inland_revenue_number` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_new_zealand_inland_revenue_number` , desenle eşleşen içeriği bulur.
+- İşlev `Func_new_zealand_inland_revenue_number`, desenle eşleşen içeriği bulur.
 
 ```xml
       <!-- New Zealand Inland Revenue Number -->

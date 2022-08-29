@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Veri kaybı önleme (DLP) ilkesine bir ilke ipucu eklemeyi öğrenin ve kullanıcıya DLP ilkesiyle çakişen içerikle çalıştığını bildirin.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 074283fbdf22d4a7ed645539f706a7b292c20485
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 3d48a51311be9bf3324399a582fbb39bc4c38b8d
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917287"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405782"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Veri Kaybı Önleme ilkesi ipuçları referansı
 
@@ -73,7 +73,7 @@ Tüm koşulların, içerikle eşleşecekleri ve içerik üzerinde koruyucu eylem
 
 ## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 ve üzeri ile Masaüstündeki Office uygulamaları yalnızca bazı hassas bilgi türlerine yönelik ilke ipuçlarını gösteren destek
 
-Masaüstünde Outlook (2013 ve üzeri) ve Masaüstündeki Office uygulamalarında (Word, Excel, PowerPoint) DLP ilkesi ipuçlarını göstermek için algılanacak kullanıma hazır hassas bilgi türlerinin listesi şunlardır:
+Masaüstünde Outlook 'ta (2013 ve üzeri) ve Office uygulamalarında (Word, Excel, PowerPoint) DLP ilkesi ipuçlarını göstermek için algılanacak kullanıma hazır hassas bilgi türlerinin listesi şunlardır:
 
 - ABA Yönlendirme Numarası
 - Arjantin Ulusal Kimlik (DNI) Numarası
@@ -165,17 +165,20 @@ Masaüstünde Outlook (2013 ve üzeri) ve Masaüstündeki Office uygulamalarınd
 - Tayvan Yerleşik Sertifikası (ARC/TARC)
 - Tay Nüfus Tanımlama Kodu
 - Türkiye Ulusal Kimlik numarası
-- INGİLTERE. Ehliyet Numarası
-- INGİLTERE. Seçim Rulosu Numarası
-- INGİLTERE. Ulusal Sağlık Hizmeti Numarası
-- INGİLTERE. Ulusal Sigorta Numarası (NINO)
+- BK Ehliyet Numarası
+- BK Seçim Rulosu Numarası
+- BK Ulusal Sağlık Hizmeti Numarası
+- BK Ulusal Sigorta Numarası (NINO)
 - Birleşik Krallık / Birleşik Krallık Pasaport Numarası
 - ABD Banka Hesap Numarası
 - ABD Ehliyet Numarası
 - ABD Bireysel Vergi Mükellefi Kimlik Numarası (ITIN)
 - ABD Sosyal Güvenlik Numarası (SSN)
 
-Özel hassas bilgi türlerinin, yukarıdaki kullanıma hazır hassas bilgi türlerine ek olarak DLP ilkesi ipuçları için de desteklendiğini lütfen unutmayın.
+Bazı özel hassas bilgi türlerinin, yukarıdaki kullanıma hazır hassas bilgi türlerine ek olarak DLP ilkesi ipuçları için de desteklendiğini unutmayın.
+
+> [!NOTE]
+> Özel hassas bilgi türlerinin tüm öğeleri Office'in her sürümüyle uyumlu değildir. İşlevler gibi Özel SID'ler için varlık öğeleri uyumsuzluğa neden olabilir.
 
 ## <a name="data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types"></a>Uç nokta cihazlarında Veri Kaybı Önleme yalnızca bazı hassas bilgi türleri için ilke ipuçlarını destekler
 
@@ -269,7 +272,7 @@ Uç nokta cihazlarında bulunan belgelerde algılanacak kullanıma açık hassas
 - Yunanistan Ehliyet Numarası 
 - Yunanistan Ulusal Kimlik Kartı 
 - Yunanistan Pasaport Numarası 
-- Yunanistan Sosyal Güvenlik Numarası (AMKA) 
+- Yunanistan Sosyal Güvenlik Numarasını (AMKA) 
 - Yunan Vergi Kimlik Numarası 
 - Hong Kong Kimlik Kartı (HKID) Numarası 
 - Macar Sosyal Güvenlik Numarası (TAJ) 
@@ -352,7 +355,7 @@ Uç nokta cihazlarında bulunan belgelerde algılanacak kullanıma açık hassas
 - Slovenya Ehliyet Numarası 
 - Slovenya Pasaport Numarası 
 - Slovenya Vergi Kimlik Numarası 
-- Slovenya Benzersiz Ana Vatandaş Numarası 
+- Slovenya Benzersiz Birincil Vatandaşlık Numarası 
 - Güney Afrika Kimlik Numarası 
 - Güney Kore Yerleşik Kayıt Numarası 
 - İspanya DNI 
@@ -372,11 +375,11 @@ Uç nokta cihazlarında bulunan belgelerde algılanacak kullanıma açık hassas
 - Tayvan Yerleşik Sertifikası (ARC/TARC) 
 - Tay Nüfus Tanımlama Kodu 
 - Türkiye Ulusal Kimlik numarası 
-- INGİLTERE. Ehliyet Numarası 
-- INGİLTERE. Seçim Rulosu Numarası 
-- INGİLTERE. Ulusal Sağlık Hizmeti Numarası 
-- INGİLTERE. Ulusal Sigorta Numarası (NINO) 
-- INGİLTERE. Benzersiz Vergi Mükellefi Başvuru Numarası 
+- BK Ehliyet Numarası 
+- BK Seçim Rulosu Numarası 
+- BK Ulusal Sağlık Hizmeti Numarası 
+- BK Ulusal Sigorta Numarası (NINO) 
+- BK Benzersiz Vergi Mükellefi Başvuru Numarası 
 - Birleşik Krallık / Birleşik Krallık Pasaport Numarası 
 - ABD Banka Hesap Numarası 
 - ABD Ehliyet Numarası 
@@ -405,4 +408,3 @@ Yukarıdaki kullanıma açık hassas bilgi türlerine ek olarak özel hassas bil
 |**Şirket içi**|:::image type="icon" source="../media/crsmrk.png" border="false":::|yok|yok||
 |**Word, Excel, PowerPoint Win32 İstemcisi**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Alt küme -sini|Alt küme -sini|Desteklenen [hassas bilgi türleri listesi için yalnızca bazı hassas bilgi türlerine yönelik ilke ipuçlarını gösteren Outlook 2013 ve sonraki sürümlerine ve Masaüstü'nde Office uygulamalarına](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) bakın</br></br>WXP istemci uygulamalarına yönelik ilke ipuçları, DLP ilkesindeki koşulların veya eylemlerin tam olarak aşağıda veya bir alt kümesine sahip olan tüm DLP ilkeleri için SharePoint Online'da veya OneDrive İş Sitelerinde depolanan belgeler için çalışır:</br> <ul><li>İçerik hassas bilgi türleri içeriyor</li><li>Erişim Kapsamı (İçerik dahili/harici olarak paylaşılır)</li><li>Kullanıcıya Bildir (ilke ipuçları/kullanıcı bildirimleri)</li><li>Herkesi engelle</li><li>Olay raporları</li></ul></br> Başka bir koşul veya eylem varsa, söz konusu ilkenin DLP ilke ipucu Word, Excel veya PowerPoint'in masaüstü uygulamalarında görünmez.</br>Diğer ayrıntılar için bkz. [Excel, PowerPoint ve Word'de ilke ipuçları](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word)|
 |**Power BI**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Alt küme -sini|Alt küme -sini|Power BI'daki veri kaybı önleme ilkeleri Genel Önizleme aşamasındadır. </br></br> İlke ipuçları ve yönetici uyarıları desteklenir. |
-||||||

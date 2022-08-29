@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Duyarlılık etiketi oluşturduğunuzda, dosyalara ve e-postalara otomatik olarak bir etiket atayabilir veya kullanıcılardan önerdiğiniz etiketi seçmelerini isteyebilirsiniz.
-ms.openlocfilehash: 8c7ffa9ca56806daecb086dc828002eff3ccd663
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: 611719819bf64918cdd4f974214d8926e59aecb3
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069613"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434536"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>İçeriğe otomatik olarak bir hassasiyet etiketi uygulama
 
@@ -173,7 +173,7 @@ DLP ilkelerini yapılandırdığınıza benzer şekilde, örnek sayısını değ
 DLP belgelerinden bu yapılandırma seçenekleri hakkında daha fazla bilgi edinebilirsiniz: [Eşleştirmeyi kolaylaştırmak veya zorlaştırmak için kuralları ayarlama](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
 > [!IMPORTANT]
-> Hassas bilgi türlerinin en fazla benzersiz örnek sayısı parametresini tanımlamanın iki farklı yolu vardır. Daha fazla bilgi edinmek için bkz [. SIT için örnek sayısı desteklenen değerler](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Hassas bilgi türlerinin en fazla benzersiz örnek sayısı parametresini tanımlamanın iki farklı yolu vardır. Daha fazla bilgi edinmek için bkz [. SIT için örnek sayısı desteklenen değerler](sit-limits.md#instance-count-supported-values-for-sit).
 
 DLP ilkesi yapılandırmasına benzer şekilde, bir koşulun tüm hassas bilgi türlerini mi yoksa yalnızca birini mi algılaması gerektiğini seçebilirsiniz. Koşullarınızı daha esnek veya karmaşık hale getirmek için [gruplar ekleyebilir ve gruplar arasında mantıksal işleçler kullanabilirsiniz](data-loss-prevention-policies.md).
 

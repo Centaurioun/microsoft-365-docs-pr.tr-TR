@@ -1,7 +1,7 @@
 ---
-title: Android'de Pertahanan Microsoft untuk Titik Akhir sorunlarını giderme
-description: Android'de Pertahanan Microsoft untuk Titik Akhir sorunlarını giderme
-keywords: microsoft, defender, Pertahanan Microsoft untuk Titik Akhir, mde, android, bulut, bağlantı, iletişim
+title: Android'de Uç Nokta için Microsoft Defender sorunlarını giderme
+description: Android'de Uç Nokta için Microsoft Defender sorunlarını giderme
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mde, android, bulut, bağlantı, iletişim
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,23 +15,23 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a6f53b0723d7f3e9b4761aa83238e618d947e55
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 53c04c70291f20ccb23ed54d1de552efb8a7619e
+ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783435"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67437778"
 ---
-# <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android'de Pertahanan Microsoft untuk Titik Akhir sorunlarını giderme
+# <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android'de Uç Nokta için Microsoft Defender sorunlarını giderme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Şunlar için geçerlidir:**
-- [Pertahanan Microsoft untuk Titik Akhir Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Pertahanan Microsoft untuk Titik Akhir mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Bir cihazı eklerken, uygulama yüklendikten sonra oturum açma sorunları görebilirsiniz.
 
@@ -55,7 +55,7 @@ Cihazınızda "Microsoft Authenticator" uygulamasının eski bir sürümü yükl
 
 **Çözüm:**
 
-Google Play Store'dan en son sürümü ve [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator) yükleyin ve yeniden deneyin.
+Google Play Store'dan en son sürümü ve [Microsoft Authenticator'ı](https://play.google.com/store/apps/details?id=com.azure.authenticator) yükleyin ve yeniden deneyin.
 
 ## <a name="sign-in-failed---invalid-license"></a>Oturum açılamadı - geçersiz lisans
 
@@ -67,7 +67,7 @@ Google Play Store'dan en son sürümü ve [Microsoft Authenticator](https://play
 
 **Neden:**
 
-Atanmış Microsoft 365 lisansınız veya kuruluşunuzun Microsoft 365 Enterprise aboneliği lisansı yok.
+Atanmış Microsoft 365 lisansınız veya kuruluşunuzun Microsoft 365 Kurumsal aboneliği lisansı yok.
 
 **Çözüm:**
 
@@ -103,9 +103,10 @@ Xiaomi cihazlarında gerekli izni etkinleştirin.
 
 ## <a name="unable-to-allow-permission-for-permanent-protection-during-onboarding-on-some-oem-devices"></a>Bazı OEM cihazlarında ekleme sırasında 'Kalıcı koruma' izni verilemiyor
 
+
 **Şunlar için geçerlidir:** Yalnızca belirli OEM cihazları.
 
-- **Android 11 ile Xiaomi**
+- **Xiaomi**
 
 Defender Uygulaması, uygulama ekleme işleminin bir parçası olarak cihazlarda Pil İyileştirme/Kalıcı Koruma izni ister ve **İzin Ver'i** seçmek iznin ayarlanamadığı bir hata döndürür. Yalnızca "Kalıcı Koruma" adlı son izni etkiler. 
 
@@ -115,30 +116,9 @@ Xiaomi, Android 11'de pil iyileştirme izinlerini değiştirdi. Uç Nokta için 
 
 **Çözüm:**
 
-Uygulama ekleme ekranından bu izni etkinleştirmek için bir çözüm bulmak için OEM ile birlikte çalışıyoruz. Bu çözümlendiğinde belgeleri güncelleştireceğiz.
-Kullanıcılar, cihaz ayarlarından aynı izinleri etkinleştirmek için şu adımları izleyebilir: 
+>[!IMPORTANT]
+>Bu sorun çözüldü. Ekleme işlemini tamamlamak için lütfen en son uygulama sürümüne güncelleştirin. Sorun devam ederse lütfen **[uygulama içi geri bildirim](/microsoft-365/security/defender-endpoint/android-support-signin#send-in-app-feedback)** gönderin.
 
-1. Cihazınızdaki **Ayarlar** gidin.
-
-2. **Pil İyileştirme'yi** arayın ve seçin.
-
-   :::image type="content" source="images/search-battery-optimisation.png" alt-text="Pil Optimizasyonu'nda arama yapabileceğiniz ve seçebileceğiniz sayfa" lightbox="images/search-battery-optimisation.png":::
-
-3. **Özel uygulama erişimi** bölümünde **Pil İyileştirme'yi** seçin.
-
-   :::image type="content" source="images/special-app-access.png" alt-text="Pil İyileştirme'yi seçebileceğiniz Özel uygulama erişim bölmesi" lightbox="images/special-app-access.png":::
-
-4. Açılan Menü'leri **Tüm Uygulamalar'ı** gösterecek şekilde değiştirin.
-
-   :::image type="content" source="images/show-all-apps-2.png" alt-text="Pil Optimizasyonu bölmesinin altındaki değeri Tüm Uygulamalar olarak değiştirebileceğiniz açılan menü" lightbox="images/show-all-apps-2.png":::
-
-   :::image type="content" source="images/show-all-apps-1.png" alt-text="Pil Optimizasyonu bölmesinin altında Tüm Uygulamalar seçeneğini gösteren açılan menü" lightbox="images/show-all-apps-1.png":::
-
-5. "Pertahanan Microsoft untuk Titik Akhir" öğesini bulun ve **İyileştirme'yi** seçin.
-
-   :::image type="content" source="images/select-dont-optimise.png" alt-text="Pertahanan Microsoft untuk Titik Akhir seçeneğinin konumunu ve İyileştirme seçeneğini etkinleştiren sayfa" lightbox="images/select-dont-optimise.png":::
-
-Pertahanan Microsoft untuk Titik Akhir ekleme ekranına dönün, **İzin Ver'i** seçin; pano ekranına yönlendirilirsiniz.
 
 ## <a name="send-in-app-feedback"></a>Uygulama içi geri bildirim gönderme
 
@@ -146,11 +126,11 @@ Bir kullanıcı yukarıdaki bölümlerde henüz ele alınmamış bir sorunla kar
 
 1. Cihazınızda **MDE uygulamasını** açın ve sol üst köşedeki **profil simgesine** tıklayın.
 
-    :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="Pertahanan Microsoft untuk Titik Akhir portalındaki profil simgesi" lightbox="images/select-profile-icon-1.jpg":::
+    :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="Uç Nokta için Microsoft Defender portalındaki profil simgesi" lightbox="images/select-profile-icon-1.jpg":::
 
 2. "Geri bildirim & yardım" öğesini seçin.
 
-    :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="Pertahanan Microsoft untuk Titik Akhir portalında seçilebilen Yardım & geri bildirim seçeneği" lightbox="images/selecthelpandfeedback2.png":::
+    :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="Uç Nokta için Microsoft Defender portalında seçilebilen Yardım & geri bildirim seçeneği" lightbox="images/selecthelpandfeedback2.png":::
 
 3. "Microsoft'a geri bildirim gönder" seçeneğini belirleyin.
 

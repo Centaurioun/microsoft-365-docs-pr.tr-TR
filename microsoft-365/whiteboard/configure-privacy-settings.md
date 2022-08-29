@@ -12,23 +12,26 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard'da uyumluluk ve gizlilik ayarlarını yapılandırma hakkında bilgi edinin.
-ms.openlocfilehash: 7f5026115b1d15b05dcf5dbb57293b22bf573c61
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 665586ed6f0e5667252fd7c1b5884aac5a116faf
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942482"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369125"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>Microsoft Whiteboard'da gizlilik ayarlarını yapılandırma
 
 >[!NOTE]
 > Siz veya kullanıcılarınız varsayılan gizlilik ayarları, isteğe bağlı bağlı deneyimler ve tanılama verilerinin nasıl toplandığı hakkında daha fazla bilgi edinmek istiyorsanız, bunları [Microsoft Whiteboard gizlilik ve uyumluluğuna](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1) yönlendirin.
 
-Kuruluşunuzun Microsoft Whiteboard yöneticisiyseniz aşağıdakileri denetleyebilirsiniz:
+Kuruluşunuzun Microsoft Whiteboard yöneticisiyseniz aşağıdaki ayarları denetleyebilirsiniz:
 
 - Kullanıcının cihazında çalışan Whiteboard istemci yazılımı hakkında toplanan ve Microsoft'a gönderilen tanılama verileri düzeyi.
 
 - Beyaz Tahta'daki isteğe bağlı bağlı deneyimlerin kullanıcılarınız tarafından kullanılıp kullanılamadığı.
+
+Gizlilik ayarlarını yapılandırmak için önce Whiteboard'un kuruluşunuz için etkinleştirildiğinden emin olmanız gerekir. Daha fazla bilgi için bkz. [Whiteboard erişimini yönetme](manage-whiteboard-access-organizations.md).
+
 
 Tanılama verilerinin düzeyini yapılandırmak için yönetici hesabınızla [Microsoft 365 yönetim merkezi](/microsoft-365/admin/admin-overview/admin-center-overview) oturum açın. Yönetim merkezi giriş sayfasında Tüm **> Ayarlarını göster > Kuruluş ayarları > Whiteboard'a** gidin.
 
@@ -38,17 +41,17 @@ Tanılama verilerinin düzeyini yapılandırmak için yönetici hesabınızla [M
 
 Kuruluşunuzdaki cihazlarda çalışan Whiteboard istemci yazılımı hakkında toplanan ve Microsoft'a gönderilen tanılama verilerinin düzeyini seçebilirsiniz. Microsoft 365 yönetim merkezi ayarını değiştirmediğiniz sürece isteğe bağlı tanılama verileri Microsoft'a gönderilir. Bize isteğe bağlı tanılama verilerini göndermeyi seçerseniz, bu durum gerekli tanılama verilerini de içerir.
 
-**Gerekli** veya **İsteğe Bağlı'ya** ek olarak **, Hiçbiri** seçeneği de vardır. Bu seçeneği belirlerseniz kullanıcının cihazında çalışan Whiteboard istemci yazılımıyla ilgili tanılama verileri Microsoft'a gönderilmez. Ancak bu seçenek, Microsoft'un Whiteboard kullanırken kullanıcılarınızın karşılaşabileceği sorunları algılama, tanılama ve düzeltme becerisini önemli ölçüde sınırlar.
+**Gerekli** veya **İsteğe Bağlı** seçeneklerine ek olarak **Hiçbiri** seçeneği de vardır. Bu seçeneği belirlerseniz kullanıcının cihazında çalışan Whiteboard istemci yazılımıyla ilgili tanılama verileri Microsoft'a gönderilmez. Ancak bu seçenek, Microsoft'un Whiteboard kullanırken kullanıcılarınızın karşılaşabileceği sorunları algılama, tanılama ve düzeltme becerisini önemli ölçüde sınırlar.
 
-Kurumsal kimlik bilgileriyle (bazen iş veya okul hesabı olarak da adlandırılır) Whiteboard'da oturum açtıklarında kullanıcılarınız cihazlarının tanılama veri düzeyini değiştiremez. Ancak Whiteboard'da kişisel outlook.com e-posta adresi gibi bir Microsoft hesabıyla oturum açtılarsa **, Ayarlar > Gizlilik ve güvenlik'e** giderek cihazlarında tanılama veri düzeyini değiştirebilirler.
+Whiteboard'da kurumsal kimlik bilgileriyle (bazen iş veya okul hesabı olarak da adlandırılır) oturum açtıklarında kullanıcılarınız cihazlarının tanılama veri düzeyini değiştiremez. Ancak Whiteboard'da kişisel outlook.com e-posta adresi gibi bir Microsoft hesabıyla oturum açmışlarsa **Ayarlar > Gizlilik ve güvenlik'e** giderek cihazlarında tanılama veri düzeyini değiştirebilirler.
 
 ## <a name="optional-connected-experiences-setting-for-your-organization"></a>Kuruluşunuz için isteğe bağlı bağlı deneyimler ayarı
 
 Whiteboard'da isteğe bağlı bağlı deneyimlerin kullanıcılarınız için kullanılabilir olup olmayacağını seçebilirsiniz. Bu bağlı deneyimler, Microsoft 365 yönetim merkezi ayarını değiştirmediğiniz sürece kullanıcılarınız tarafından kullanılabilir. 
 
-Bu bağlı deneyimler farklıdır, çünkü kuruluşunuzun Microsoft ile yapmış olduğu ticari anlaşma kapsamında değildir. İsteğe bağlı bağlı deneyimler Microsoft tarafından kullanıcılarınıza doğrudan sunulur ve [Çevrimiçi Hizmet Sözleşmesi](https://www.microsoft.com/licensing/product-licensing/products) yerine [Microsoft Hizmet Sözleşmesi](https://www.microsoft.com/servicesagreement)’ne tabidir.
+Bu bağlı deneyimler, kuruluşunuzun Microsoft ile yaptığı ticari sözleşme kapsamında olmadığından farklıdır. İsteğe bağlı bağlı deneyimler Microsoft tarafından kullanıcılarınıza doğrudan sunulur ve [Çevrimiçi Hizmet Sözleşmesi](https://www.microsoft.com/licensing/product-licensing/products) yerine [Microsoft Hizmet Sözleşmesi](https://www.microsoft.com/servicesagreement)’ne tabidir.
 
-Bu isteğe bağlı bağlı deneyimleri kullanıcılarınıza sunmayı seçseniz bile, kullanıcılarınız **Ayarlar > Gizlilik ve güvenlik'e** giderek bunları grup olarak kapatma seçeneğine sahiptir. Kullanıcılarınız, kişisel outlook.com e-posta adresi gibi bir Microsoft hesabıyla oturum açtıklarında değil, beyaz tahtada kurumsal kimlik bilgileriyle (bazen iş veya okul hesabı olarak da adlandırılır) oturum açtıklarında bu seçeneği kullanır.
+Bu isteğe bağlı bağlı deneyimleri kullanıcılarınızın kullanımına sunmayı seçseniz bile, kullanıcılarınız **Ayarlar > Gizlilik ve güvenlik'e** giderek bunları grup olarak kapatabilir. Kullanıcılarınızın bu seçeneği yalnızca whiteboard'da kurumsal kimlik bilgileriyle (iş veya okul hesabı olarak da bilinir) oturum açmış olmaları gerekir. Kullanıcılar kişisel outlook.com e-posta adresi gibi bir Microsoft hesabıyla oturum açtıklarında gizlilik ayarlarını değiştiremez.
 
 ## <a name="required-diagnostic-data-events-collected-by-whiteboard"></a>Whiteboard tarafından toplanan gerekli tanılama verileri olayları
 
@@ -71,7 +74,7 @@ Microsoft Whiteboard başka bir uygulama veya işlemden gelen bir çağrıyla ba
 
 **Intentional.Whiteboard.Init.DisplayWhiteboard**
 
-Microsoft Whiteboard'un oturum başına bir istemcide ilk kez görüntülendiği zaman toplanır. Bu bilgiler başlatma sorunlarını yakalamak için kritik öneme sahiptir. Microsoft, Microsoft Whiteboard'un beklendiği gibi çalıştığından emin olmak amacıyla sorunu tanılamak için bu verileri kullanıyor.
+Oturum başına istemcide Microsoft Whiteboard ilk kez görüntülendiğinde toplanır. Bu bilgiler başlatma sorunlarını yakalamak için kritik öneme sahiptir. Microsoft, Microsoft Whiteboard'un beklendiği gibi çalıştığından emin olmak amacıyla sorunu tanılamak için bu verileri kullanıyor.
 
 - **IsPrelaunched** – başlatma öncesi durumu
 - **IsProtocolActivation** – uygulama başlatma türü

@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Slovenya vergi tanımlama numarasına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: baf6cef29b98b2963a4d3286e68c4d10008c415c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a7a27b7f0c63b8409bdaff18513ec760d0d704f9
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989281"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368465"
 ---
 # <a name="slovenia-tax-identification-number"></a>Slovenya vergi kimlik numarası
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -46,20 +38,20 @@ boşluk veya sınırlayıcı içermeyen sekiz basamak
 - altı basamak
 - bir denetim basamalı
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_slovenia_eu_tax_file_number` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_slovenia_eu_tax_file_number` bir anahtar sözcük bulunur.
+- İşlev `Func_slovenia_eu_tax_file_number`, desenle eşleşen içeriği bulur.
+- `Keywords_slovenia_eu_tax_file_number` içinden bir anahtar sözcük bulundu.
 
 DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının güvenilirliği düşüktür:
 
-- İşlev `Func_slovenia_eu_tax_file_number` , desenle eşleşen içeriği bulur.
+- İşlev `Func_slovenia_eu_tax_file_number`, desenle eşleşen içeriği bulur.
 
 ```xml
       <!-- Slovenia Tax Identification Number -->

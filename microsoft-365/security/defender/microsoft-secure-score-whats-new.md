@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: e869317a8a88545c058075909a95ead02177ff10
-ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
+ms.openlocfilehash: 6f478959d8e6de84ad64fdc128c4f7a9eea73a62
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66855031"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369147"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Güvenli Puan'daki yenilikler
 
@@ -37,6 +37,39 @@ Microsoft Secure Score'u güvenlik duruşunuzun daha iyi bir temsilcisi yapmak i
 Ne kadar çok geliştirme eylemi gerçekleştirirseniz, Güvenli Puanınız o kadar yüksek olur. Daha fazla bilgi için bkz. [Microsoft Güvenli Puanı](microsoft-secure-score.md).
 
 Microsoft Güvenli Puanı'na [Microsoft 365 Defender portalından](microsoft-365-defender-portal.md) ulaşabilirsiniz<https://security.microsoft.com/securescore>.
+
+## <a name="august-2022"></a>Ağustos 2022
+
+Yeni Microsoft Bilgi Koruması önerileri artık Güvenli Puan geliştirme eylemleri olarak kullanılabilir:
+
+- **Etiketleme**
+  - M365 duyarlılık etiketlemesini Azure Purview veri haritasındaki varlıklara genişletme
+  - Otomatik etiketleme veri sınıflandırma ilkelerinin ayarlandığından ve kullanıldığından emin olun
+  - M365 duyarlılık etiketi veri sınıflandırma ilkelerini yayımlama
+  - Veri Kaybı Önleme (DLP) ilkeleri oluşturma
+
+Yeni Office 365 için Microsoft Defender önerileri artık Güvenli Puan geliştirme eylemleri olarak kullanılabilir:
+
+- **İstenmeyen posta önleme - Gelen ilkesi**
+  - E-posta toplu şikayet düzeyi (BCL) eşiğini 6 veya daha düşük olacak şekilde ayarlayın
+  - İstenmeyen posta algılamayı gerçekleştirecek eylemi ayarlama
+  - Yüksek güvenilirlikli istenmeyen posta algılama için eylem ayarlama
+  - Kimlik avı algılaması için eylem ayarlama
+  - Yüksek güvenilirlikli kimlik avı algılaması için eylem ayarlama
+  - Toplu istenmeyen posta algılaması için eylem ayarlama
+  - İstenmeyen postaları 30 gün boyunca karantinada tutma
+  - İstenmeyen posta güvenlik ipuçlarının etkinleştirildiğinden emin olun
+  - İstenmeyen posta önleme ilkeleri için hiçbir gönderen etki alanına izin verilmediğinden emin olun (belirli gönderenler için de işlevselliği genişletmek için "İstenmeyen posta önleme ilkeleri için gönderen etki alanlarına izin verilmediğinden emin olun" ifadesinin yerini alır)
+
+- **İstenmeyen posta önleme - Giden ilkesi**
+  - Kullanıcının saatte e-posta gönderebileceği en fazla dış alıcı sayısını ayarlama
+  - Bir kullanıcının bir saat içinde gönderebileceği en fazla iç alıcı sayısını ayarlama
+  - Günlük ileti sınırı ayarlama
+  - İleti sınırına ulaşan kullanıcıları engelleme
+  - Otomatik e-posta iletme kurallarını sistem denetimi olacak şekilde ayarlama
+
+- **İstenmeyen posta önleme - Bağlantı filtresi**
+  - Bağlantı filtresi ilkesine izin verilen IP adreslerini eklemeyin
 
 ## <a name="june-2022"></a>Haziran 2022
 

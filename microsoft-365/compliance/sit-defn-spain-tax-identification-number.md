@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: İspanya vergi tanımlama numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: de7075c6ff81c97537b9f7145fd269a671b8e1dc
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 678eeb3964cfa30676a302f879069d28351c2acc
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948742"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368245"
 ---
 # <a name="spain-tax-identification-number"></a>İspanya vergi kimlik numarası
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -71,18 +63,18 @@ Yabancı Kimlik Numarası Olmayan Yabancılar
 - yedi basamak
 - bir büyük harf (büyük/küçük harfe duyarlı)
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
 - İşlev `Func_spain_eu_tax_file_number` veya `Func_spain_eu_DL_and_NI_number_citizen` desenle eşleşen içeriği bulur.
-- 'den `Keywords_spain_eu_tax_file_number` bir anahtar sözcük bulunur.
+- `Keywords_spain_eu_tax_file_number` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - İşlev `Func_spain_eu_tax_file_number` veya `Func_spain_eu_DL_and_NI_number_citizen` desenle eşleşen içeriği bulur.
 

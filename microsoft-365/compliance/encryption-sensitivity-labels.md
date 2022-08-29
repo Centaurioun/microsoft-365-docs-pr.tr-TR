@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Erişimi ve kullanımı kısıtlayarak verilerinizi koruyan şifreleme için duyarlılık etiketlerini yapılandırın.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab08f733be374710674bfae65f4a0b56e952a199
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 72cf2196add9e6c1ee58475c492136ca9be7ce37
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66970236"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434383"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Şifreleme uygulamak için hassasiyet etiketleri kullanarak içeriğe erişimi kısıtlama
 
@@ -91,7 +91,7 @@ Bu şifreleme çözümünü kullandığınızda **süper kullanıcı** özelliğ
 
 4.  **Şifreleme** sayfasında aşağıdaki seçeneklerden birini belirleyin:
     
-    - **Dosya şifrelenmişse şifrelemeyi kaldırın**: Bu seçenek yalnızca Azure Information Protection birleşik etiketleme istemcisi tarafından desteklenir. Bu seçeneği belirlediğinizde ve yerleşik etiketleme kullandığınızda, etiket uygulamalarda görüntülenmeyebilir veya görüntülenip şifreleme değişikliği yapılmayabilir.
+    - **Dosya veya e-posta şifrelenmişse şifrelemeyi kaldırın**: Bu seçenek yalnızca Azure Information Protection birleşik etiketleme istemcisi tarafından desteklenir. Bu seçeneği belirlediğinizde ve yerleşik etiketleme kullandığınızda, etiket uygulamalarda görüntülenmeyebilir veya görüntülenip şifreleme değişikliği yapılmayabilir.
         
         Bu senaryo hakkında daha fazla bilgi [için bir etiket uygulandığında mevcut şifrelemeye ne olur](#what-happens-to-existing-encryption-when-a-labels-applied) bölümüne bakın. Bu ayarın kullanıcıların yeterli izinleri olmadığında uygulayamayacakları bir duyarlılık etiketine neden olabileceğini anlamak önemlidir.
     
@@ -102,6 +102,9 @@ Bu şifreleme çözümünü kullandığınızda **süper kullanıcı** özelliğ
         Bu ayarların yönergeleri aşağıdaki [Şifreleme ayarlarını yapılandırma](#configure-encryption-settings) bölümündedir.
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Bir etiket uygulandığında mevcut şifrelemeye ne olur?
+
+> [!NOTE]
+> **Dosya veya e-posta şifrelenmişse Şifrelemeyi kaldır** seçeneği yalnızca Azure Information Protection birleşik etiketleme istemcisi tarafından desteklenir. Bir posta [akışı kuralı yapılandırarak e-postalar](define-mail-flow-rules-to-encrypt-email.md#use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-microsoft-purview-message-encryption) için de aynı etkiyi elde edebilirsiniz.
 
 Şifrelenmemiş içeriğe duyarlılık etiketi uygulanırsa, seçebileceğiniz şifreleme seçeneklerinin sonucu açıklayıcıdır. Örneğin, **Dosyaları ve e-postaları şifrele'yi** seçmediyseniz içerik şifrelenmemiş olarak kalır.
 

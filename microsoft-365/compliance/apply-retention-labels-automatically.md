@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: İhtiyacınız olanı korumak ve istemediğinizleri silmek için etiketleri otomatik olarak uygulayabilmeniz için otomatik etiketleme bekletme ilkeleri oluşturun
-ms.openlocfilehash: 7530b50aca1ed50ad5735f12f12b48b06d539b2e
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 8653d60faaa2ae58088c8216b1286f7ff6a0a197
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695998"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434492"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>İçeriği korumak veya silmek için otomatik olarak bekletme etiketi uygulama
 
@@ -77,7 +77,7 @@ Otomatik uygulama ilkesi oluşturduğunuzda, belirttiğiniz koşullara göre iç
         - **Çözümleri** \> **Kayıt yönetimi** \> **Etiket ilkeleri** sekmesi \> **Etiketi otomatik uygulama**
 
     - Veri yaşam döngüsü yönetimi kullanıyorsanız:
-        - **Çözümleri** \> **Veri yaşam döngüsü yönetimi** \> **Etiket ilkeleri** sekmesi \> **Etiketi otomatik uygulama**
+        - **Çözümleri** \> **Veri yaşam döngüsü yönetimi** \> **Microsoft 365** \> **Etiket ilkeleri** sekmesi \> **Etiketi otomatik uygulama**
 
     Gezinti bölmesinde çözümünüzü hemen görmüyor musunuz? İlk olarak **Tümünü göster'i** seçin.
 
@@ -160,7 +160,7 @@ Duyarlılık bilgi türleri hakkında daha fazla bilgi edinmek için bkz. [Hassa
 Bu seçenekler hakkında daha fazla bilgi için DLP belgelerinin [Eşleştirmesini kolaylaştırmak veya daha zor hale getirmek için kuralları ayarlama](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match) başlığı altında yer alan aşağıdaki kılavuza bakın.
 
 > [!IMPORTANT]
-> Hassas bilgi türlerinin en fazla benzersiz örnek sayısı parametresini tanımlamanın iki farklı yolu vardır. Daha fazla bilgi edinmek için bkz [. SIT için örnek sayısı desteklenen değerler](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> Hassas bilgi türlerinin en fazla benzersiz örnek sayısı parametresini tanımlamanın iki farklı yolu vardır. Daha fazla bilgi edinmek için bkz [. SIT için örnek sayısı desteklenen değerler](sit-limits.md#instance-count-supported-values-for-sit).
 
 Bekletme etiketlerini otomatik olarak uygulamak için hassas bilgi türlerini kullanırken dikkate almak için:
 

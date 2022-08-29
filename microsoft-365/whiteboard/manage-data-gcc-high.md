@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Whiteboard erişimini etkinleştirmeyi, devre dışı bırakmayı ve yönetmeyi öğrenin.
-ms.openlocfilehash: aee248c37ce9c65dcf79cfe600e456a17cddbd57
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 934036417e0879cdec9c21bacefd51b9753336b4
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943430"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367697"
 ---
 # <a name="manage-data-for-microsoft-whiteboard-in-gcc-high-environments"></a>GCC High ortamlarında Microsoft Whiteboard için verileri yönetme
 
@@ -25,6 +25,8 @@ ms.locfileid: "66943430"
 > Bu kılavuz, ABD Kamu Topluluk Bulutu (GCC) Yüksek ortamları için geçerlidir.
 
 Veriler OneDrive İş.whiteboard dosyaları olarak depolanır. Ortalama beyaz tahta boyutu 50 KB ile 1 MB arasında olabilir ve OneDrive İş içeriğinizin bulunduğu her yerde bulunabilir. Yeni verilerin nerede oluşturulduğunu denetlemek için bkz. [Microsoft 365 müşteri verilerinizin depolandığı yer](/microsoft-365/enterprise/o365-data-locations). OneDrive İş konumuna bakın. OneDrive İş'daki genel dosyalara uygulanan tüm özellikler, dış paylaşım dışında Whiteboard için de geçerlidir.
+
+Verileri yönetmek için önce Whiteboard'un kuruluşunuz için etkinleştirildiğinden emin olmanız gerekir. Daha fazla bilgi için bkz. [GCC High ortamlarında Whiteboard erişimini yönetme](manage-whiteboard-access-gcc-high.md).
 
 Mevcut OneDrive İş denetimlerini kullanarak Whiteboard verilerini yönetebilirsiniz. Daha fazla bilgi için bkz. [Kuruluşlar için OneDrive kılavuzu](/onedrive/plan-onedrive-enterprise).
 
@@ -36,7 +38,7 @@ Genel Veri Koruma Yönetmeliği (GDPR) için veri sahibi isteklerini (DSR) karş
 
 - Bekletme ilkeleri
 - Kota
-- DLP
+- Dlp
 - Ediscovery
 - Yasal tutma
 

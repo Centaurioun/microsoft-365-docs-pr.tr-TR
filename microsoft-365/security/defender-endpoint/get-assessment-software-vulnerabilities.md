@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: dba7f3d1512046c0788c72efb5b0ce9ac9ead1b6
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: aba3078a31428e837bacaf65f0d03b3d6019521a
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280598"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405809"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Cihaz başına yazılım güvenlik açıkları değerlendirmesi dışarı aktarma
 
@@ -108,7 +108,7 @@ ExploitabilityLevel|Dize|Bu güvenlik açığının kötüye kullanılabilirlik 
 FirstSeenTimestamp|Dize|Bu ürünün CVE'i cihazda ilk kez görüldü.|2020-11-03 10:13:34.8476880
 Kimlik|Dize|Kayıt için benzersiz tanımlayıcı.|123ABG55_573AG&mnp!
 LastSeenTimestamp|Dize|CVE'nin cihazda son görüldüğü zaman.|2020-11-03 10:13:34.8476880
-OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu. Bu özellik, Windows 10 ve Windows 11 gibi aynı aile içinde varyasyonları olan belirli işletim sistemlerini gösterir. Ayrıntılar için bkz. tvm tarafından desteklenen işletim sistemleri ve platformlar.|Windows10 ve Windows 11
+OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu. Bu özellik, Windows 10 ve Windows 11 gibi aynı aile içinde varyasyonları olan belirli işletim sistemlerini gösterir. Ayrıntılar için desteklenen Microsoft Defender Güvenlik Açığı Yönetimi işletim sistemlerine ve platformlara bakın.|Windows10 ve Windows 11
 RbacGroupName|Dize|Rol tabanlı erişim denetimi (RBAC) grubu. Bu cihaz herhangi bir RBAC grubuna atanmazsa, değer "Atanmamış" olur. Kuruluş herhangi bir RBAC grubu içermiyorsa, değer "Yok" olur.|Sunucular
 RecommendationReference|Dize|Bu yazılımla ilgili öneri kimliğine başvuru.|_va-microsoft-silverlight_
 RecommendedSecurityUpdate (isteğe bağlı)|Dize|Güvenlik açığını gidermek için yazılım satıcısı tarafından sağlanan güvenlik güncelleştirmesinin adı veya açıklaması.|Nisan 2020 Güvenlik Güncelleştirmeler
@@ -118,7 +118,7 @@ SecurityUpdateAvailable|Boole|Yazılım için bir güvenlik güncelleştirmesi o
 SoftwareName|Dize|Yazılım ürününün adı.|Chrome
 SoftwareVendor|Dize|Yazılım satıcısının adı.|Google
 SoftwareVersion|Dize|Yazılım ürününün sürüm numarası.|81.0.4044.138
-VulnerabilitySeverityLevel|Dize|CVSS puanına ve tehdit ortamının etkilediği dinamik faktörlere bağlı olarak güvenlik açığına atanan önem düzeyi.|Orta
+VulnerabilitySeverityLevel|Dize|CVSS puanına göre güvenlik açığına atanan önem düzeyi.|Orta
 |
 
 ### <a name="16-examples"></a>1.6 Örnekler
@@ -399,7 +399,7 @@ ExploitabilityLevel|Dize|Bu güvenlik açığının kötüye kullanılabilirlik 
 FirstSeenTimestamp|Dize|Bu ürünün CVE'i cihazda ilk kez görüldü.|2020-11-03 10:13:34.8476880  
 Kimlik|Dize|Kayıt için benzersiz tanımlayıcı.|123ABG55_573AG&mnp!  
 LastSeenTimestamp|Dize|CVE'nin cihazda son görüldüğü zaman.|2020-11-03 10:13:34.8476880  
-OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu; Windows 10 ve Windows 11 gibi aynı aile içindeki varyasyonlara sahip belirli işletim sistemleri. Ayrıntılar için bkz. tvm tarafından desteklenen işletim sistemleri ve platformlar.|Windows10 ve Windows 11 
+OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu; Windows 10 ve Windows 11 gibi aynı aile içindeki varyasyonlara sahip belirli işletim sistemleri. Ayrıntılar için desteklenen Microsoft Defender Güvenlik Açığı Yönetimi işletim sistemlerine ve platformlara bakın.|Windows10 ve Windows 11 
 RbacGroupName|Dize|Rol tabanlı erişim denetimi (RBAC) grubu. Bu cihaz herhangi bir RBAC grubuna atanmazsa, değer "Atanmamış" olur. Kuruluş herhangi bir RBAC grubu içermiyorsa, değer "Yok" olur.|Sunucular  
 RecommendationReference|Dize|Bu yazılımla ilgili öneri kimliğine başvuru.|va--microsoft--silverlight  
 RecommendedSecurityUpdate |Dize|Güvenlik açığını gidermek için yazılım satıcısı tarafından sağlanan güvenlik güncelleştirmesinin adı veya açıklaması.|Nisan 2020 Güvenlik Güncelleştirmeler  
@@ -409,7 +409,7 @@ SoftwareName|Dize|Yazılım ürününün adı.|Chrome
 SoftwareVendor|Dize|Yazılım satıcısının adı.|Google  
 SoftwareVersion|Dize|Yazılım ürününün sürüm numarası.|81.0.4044.138  
 Durum|Dize|**Yeni** (bir cihazda sunulan yeni bir güvenlik açığı için) (1) **Düzeltildi** (bu güvenlik açığı cihazda artık yoksa, bu da düzeltildiği anlamına gelir). (2) **Güncelleştirildi** (cihazdaki bir güvenlik açığı değiştiyse. Olası değişiklikler şunlardır: CVSS puanı, kötüye kullanılabilirlik düzeyi, önem düzeyi, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Sabit
-VulnerabilitySeverityLevel|Dize|Güvenlik açığına atanan önem düzeyi. CVSS puanına ve tehdit ortamının etkilediği dinamik faktörlere dayanır.|Orta
+VulnerabilitySeverityLevel|Dize|Güvenlik açığına atanan önem düzeyi. CVSS puanını temel alır.|Orta
 |
 
 #### <a name="clarifications"></a>Açıklamalar
@@ -590,5 +590,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
 
 Diğer ilgililer
 
-- [Risk tabanlı tehdit & güvenlik açığı yönetimi](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](next-gen-threat-and-vuln-mgt.md)
 - [Kuruluşunuzdaki güvenlik açıkları](tvm-weaknesses.md)

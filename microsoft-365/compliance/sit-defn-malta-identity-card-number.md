@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Malta kimlik kartı numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: b9f728930b14bb14954e45473c1c327ad36f0aa0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 1ce156644ad4b9625a6eb1257ba54534e2d2bab0
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948555"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368091"
 ---
 # <a name="malta-identity-card-number"></a>Malta kimlik kartı numarası
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -47,16 +39,16 @@ yedi basamak ve ardından bir harf:
 - yedi basamak
 - "M, G, A, P, L, H, B, Z" içinde bir harf (büyük/küçük harfe duyarsız)
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Geçerli değil
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_malta_eu_national_id_card` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_malta_eu_national_id_card` bir anahtar sözcük bulunur.
+- `Keywords_malta_eu_national_id_card` içinden bir anahtar sözcük bulundu.
 
 DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının güvenilirliği düşüktür:
 

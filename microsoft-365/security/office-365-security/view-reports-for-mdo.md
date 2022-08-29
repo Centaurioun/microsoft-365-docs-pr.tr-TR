@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 551d2f0f2da872ff24da2bd0d691eea775894c08
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: f7a207d28fdc2afe046bc4f53e524dde2ef328a0
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102580"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67407987"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında Office 365 için Defender raporları görüntüleme
 
@@ -42,28 +42,28 @@ Office 365 için Microsoft Defender kuruluşlar (örneğin, Microsoft 365 E5 abo
 
 ### <a name="view-reports"></a>Raporları görüntüleme
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Raporlar** \> **E-posta & işbirliği** \> **E-posta & işbirliği raporları'na** gidin. **Doğrudan E-posta & işbirliği raporları** sayfasına gitmek için kullanın<https://security.microsoft.com/emailandcollabreport>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Raporlar** \> **Email & işbirliği** \> **Email & işbirliği raporları'na** gidin. **doğrudan Email & işbirliği raporları** sayfasına gitmek için kullanın<https://security.microsoft.com/emailandcollabreport>.
 
 1. Görüntülemek istediğiniz raporu seçin ve ardından **Ayrıntıları görüntüle'yi** seçin.
 
 ### <a name="download-reports"></a>Raporları indirme
 
-konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, İndirmek için** **Raporlar** > **E-posta & işbirliği** \> Raporları'na gidin. İndirme raporları sayfasına doğrudan gitmek **için** kullanın <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
+konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, indirmek için **Raporlar** >  **Email & işbirliği** \> **Raporları'na** gidin. İndirme raporları sayfasına doğrudan gitmek **için** kullanın <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
 
-:::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="Microsoft 365 Defender portalındaki E-posta & işbirliği raporları sayfası" lightbox="../../media/email-collaboration-download-reports.png":::
+:::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="Microsoft 365 Defender portalındaki Email & işbirliği raporları sayfası" lightbox="../../media/email-collaboration-download-reports.png":::
 
 > [!NOTE]
 >
-> Office 365 için Defender gerektirmeyen [e-posta güvenlik raporları, Microsoft 365 Defender portalında e-posta güvenlik raporlarını görüntüleme bölümünde](view-email-security-reports.md) açıklanmıştır.
+> Office 365 için Defender gerektirmeyen Email güvenlik raporları, Microsoft 365 Defender [portalında e-posta güvenlik raporlarını görüntüleme](view-email-security-reports.md) bölümünde açıklanmıştır.
 >
-> Posta akışıyla ilgili raporlar artık Exchange yönetim merkezindedir (EAC). Bu raporlar hakkında daha fazla bilgi için [bkz. Yeni Exchange yönetim merkezinde posta akışı raporları](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
+> Posta akışıyla ilgili raporlar artık Exchange yönetim merkezinde (EAC) yer alıyor. Bu raporlar hakkında daha fazla bilgi için bkz. [Yeni Exchange yönetim merkezindeki Posta akışı raporları](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
-## <a name="safe-attachments-file-types-report"></a>Kasa Ekler dosya türleri raporu
+## <a name="safe-attachments-file-types-report"></a>Güvenli Ekler dosya türleri raporu
 
 > [!NOTE]
 > Bu rapor kullanım dışı bırakıldı. Aynı bilgiler [Tehdit koruması durum raporunda](#threat-protection-status-report) da mevcuttur.
 
-## <a name="safe-attachments-message-disposition-report"></a>Kasa Ekler ileti bırakma raporu
+## <a name="safe-attachments-message-disposition-report"></a>Güvenli Ekler ileti bırakma raporu
 
 > [!NOTE]
 > Bu rapor kullanım dışı bırakıldı. Aynı bilgiler [Tehdit koruması durum raporunda](#threat-protection-status-report) da mevcuttur.
@@ -74,11 +74,11 @@ konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**
 
 İstemci tarafı ve ağ gecikme süresi dahil değildir.
 
-Raporu görüntülemek için adresinden Microsoft 365 Defender portalını <https://security.microsoft.com>açın. **Raporlar** \> **E-posta & işbirliği** \> **E-posta & işbirliği raporları** bölümüne gidin. **Doğrudan E-posta & işbirliği raporları** sayfasına gitmek için kullanın<https://security.microsoft.com/emailandcollabreport>.
+Raporu görüntülemek için adresinden Microsoft 365 Defender portalını <https://security.microsoft.com>açın, **raporlar** \> **Email & işbirliği Email & işbirliği** \> **raporları'na** gidin. **doğrudan Email & işbirliği raporları** sayfasına gitmek için kullanın<https://security.microsoft.com/emailandcollabreport>.
 
-**E-posta & işbirliği raporları** sayfasında **Posta gecikmesi raporunu** bulun ve **Ayrıntıları görüntüle'ye** tıklayın. Doğrudan rapora gitmek için kullanın <https://security.microsoft.com/mailLatencyReport>.
+**Email & işbirliği raporları** sayfasında **Posta gecikmesi raporunu** bulun ve **Ayrıntıları görüntüle'ye** tıklayın. Doğrudan rapora gitmek için kullanın <https://security.microsoft.com/mailLatencyReport>.
 
-:::image type="content" source="../../media/mail-latency-report-widget.png" alt-text="E-posta & işbirliği raporları sayfasındaki Posta gecikmesi raporu pencere öğesi" lightbox="../../media/mail-latency-report-widget.png":::
+:::image type="content" source="../../media/mail-latency-report-widget.png" alt-text="Email & işbirliği raporları sayfasındaki Posta gecikmesi raporu pencere öğesi" lightbox="../../media/mail-latency-report-widget.png":::
 
 **Posta gecikmesi raporu** sayfasında, **Posta gecikmesi raporu** sayfasında aşağıdaki sekmeler bulunur:
 
@@ -104,7 +104,7 @@ Grafikte bir kategorinin üzerine geldiğinizde, her kategorideki gecikme süres
     - **Satır içi patlama**: Teslimden önce tamamen test edilen iletileri içerir.
     - **Zaman uyumsuz patlama**
 
-Filtreleri yapılandırmayı bitirdiğinizde **Uygula**, **İptal veya** **Filtreleri temizle'ye** tıklayın.
+Filtreleri yapılandırmayı bitirdiğinizde **Uygula**, **İptal veya**![ Filtreleri temizle simgesi **Filtreleri temizle'ye**](../../media/m365-cc-sc-clear-filters-icon.png) tıklayın.
 
 Grafiğin altındaki ayrıntılar tablosunda aşağıdaki bilgiler bulunur:
 
@@ -127,11 +127,11 @@ Ana rapor sayfasında Dışarı ![Aktar simgesi.](../../media/m365-cc-sc-downloa
 
 ## <a name="url-protection-report"></a>URL koruma raporu
 
-**URL koruma raporu**, Kasa [Bağlantıları'nın](safe-links.md) bir parçası olarak algılanan tehditler ve URL tıklamalarında gerçekleştirilen eylemler için özet ve eğilim görünümleri sağlar. Bu rapor, **Kullanıcı tıklamalarını izle** seçeneği belirlenmediğinde Kasa Bağlantıları ilkesinin uygulandığı kullanıcılardan gelen tıklama verilerine sahip olmayacaktır.
+**URL koruma raporu**, algılanan tehditler ve URL tıklamalarında gerçekleştirilen eylemler için [Güvenli Bağlantılar'ın](safe-links.md) bir parçası olarak özet ve eğilim görünümleri sağlar. Bu rapor, **Kullanıcı tıklamalarını izle** seçeneği belirlenmediğinde Güvenli Bağlantılar ilkesinin uygulandığı kullanıcılardan gelen tıklama verilerine sahip olmayacaktır.
 
-Raporu görüntülemek için [Microsoft 365 Defender portalını](https://security.microsoft.com) açın, **Raporlar** \> **E-posta & işbirliği** \> **E-posta & işbirliği raporları'na** gidin. **E-posta & işbirliği raporları** **sayfasında URL koruma sayfasını** bulun ve **ayrıntıları görüntüle'ye** tıklayın. Doğrudan rapora gitmek için dosyasını açın <https://security.microsoft.com/reports/URLProtectionActionReport>.
+Raporu görüntülemek için [Microsoft 365 Defender portalını](https://security.microsoft.com) açın, **Raporlar** \> **Email & işbirliği** \> **Email & işbirliği raporları'na** gidin. **Email & işbirliği raporları** sayfasında **URL koruma sayfasını** bulun ve **ayrıntıları görüntüle'ye** tıklayın. Doğrudan rapora gitmek için dosyasını açın <https://security.microsoft.com/reports/URLProtectionActionReport>.
 
-:::image type="content" source="../../media/url-protection-report-widget.png" alt-text="E-posta & işbirliği raporları sayfasındaki URL koruma raporu pencere öğesi" lightbox="../../media/url-protection-report-widget.png":::
+:::image type="content" source="../../media/url-protection-report-widget.png" alt-text="Email & işbirliği raporları sayfasındaki URL koruma raporu pencere öğesi" lightbox="../../media/url-protection-report-widget.png":::
 
 **URL koruma** raporu sayfasındaki kullanılabilir görünümler aşağıdaki bölümlerde açıklanmıştır.
 
@@ -145,15 +145,15 @@ Raporu görüntülemek için [Microsoft 365 Defender portalını](https://securi
 **Verileri URL tıklaması ile görüntüle koruma eylem** görünümü, kuruluştaki kullanıcıların URL tıklamalarının sayısını ve tıklamanın sonuçlarını gösterir:
 
 - **İzin verildi**: Tıklamalara izin verilir.
-- **Kiracı yöneticisi tarafından izin verilir**: Kasa Bağlantıları ilkelerinde izin verilen tıklamalar.
+- **Kiracı yöneticisi tarafından izin verilir**: Güvenli Bağlantılar ilkelerinde izin verilen tıklamalar.
 - **Engellendi: Engellendi'ye** tıklayın.
-- **Kiracı yöneticisi tarafından engellendi**: Kasa Bağlantıları ilkelerinde engellenen tıklamalar.
+- **Kiracı yöneticisi tarafından engellendi**: Güvenli Bağlantılar ilkelerinde engellenen tıklamalar.
 - **Engellendi ve tıklandı**: Kullanıcıların engellenen URL'ye tıkladığı engellenen tıklamalar.
 - **Kiracı yöneticisi tarafından engellendi ve şu bağlantıya tıklandı**: Yönetici bağlantıyı engelledi, ancak kullanıcı bağlantıyı tıklatmış.
 - **Tarama sırasında tıklanan**: Kullanıcıların URL'ye yönelik bekleyen tarama sayfasına tıkladığı yeri tıklar.
 - **Bekleyen tarama**: Tarama kararını bekleyen URL'lere tıklar.
 
-Tıklama, kullanıcının engelleme sayfasından kötü amaçlı web sitesine tıkladığını gösterir (yöneticiler Kasa Bağlantılar ilkeleri'nde tıklamayı devre dışı bırakabilir).
+Tıklama, kullanıcının engelleme sayfasından kötü amaçlı web sitesine tıkladığını gösterir (yöneticiler Güvenli Bağlantılar ilkelerinde tıklamayı devre dışı bırakabilir).
 
 **Filtreler'e** tıklarsanız, görüntülenen açılır öğede aşağıdaki değerlerden birini veya daha fazlasını seçerek raporu ve ayrıntılar tablosunu değiştirebilirsiniz:
 
@@ -169,13 +169,13 @@ Tıklama, kullanıcının engelleme sayfasından kötü amaçlı web sitesine t�
 - **Etki alanları**: Rapor sonuçlarında listelenen URL etki alanları.
 - **Alıcı**
 
-Filtreleri yapılandırmayı bitirdiğinizde **Uygula**, **İptal veya** **Filtreleri temizle'ye** tıklayın.
+Filtreleri yapılandırmayı bitirdiğinizde **Uygula**, **İptal veya**![ Filtreleri temizle simgesi **Filtreleri temizle'ye**](../../media/m365-cc-sc-clear-filters-icon.png) tıklayın.
 
 Grafiğin altındaki ayrıntılar tablosu, kuruluş içinde son 7 gün boyunca gerçekleşen tüm tıklamaların neredeyse gerçek zamanlı görünümünü sağlar:
 
 - **Tıklama zamanı**
 - **Kullanıcı**
-- **URL**
+- **Url**
 - **Eylem**
 - **Uygulama**
 
@@ -185,10 +185,10 @@ Ana rapor sayfasında Zamanlama ![oluştur simgesi.](../../media/m365-cc-sc-crea
 
 :::image type="content" source="../../media/url-threat-protection-report-url-click-by-application-view.png" alt-text="URL koruma raporundaki URL tıklama koruması eylem görünümü" lightbox="../../media/url-threat-protection-report-url-click-by-application-view.png":::
 
-Verileri **URL'ye göre görüntüle görünümü,** Kasa Bağlantıları destekleyen uygulamalara göre URL tıklamalarının sayısını gösterir:
+**Verileri URL'ye göre görüntüle görünümü,** Güvenli Bağlantıları destekleyen uygulamalara göre URL tıklamalarının sayısını gösterir:
 
-- **E-posta istemcisi**
-- **Belgeyi Office**
+- **Email istemcisi**
+- **Office belgesi**
 - **Teams**
 
 **Filtreler'e** tıklarsanız, görüntülenen açılır öğede aşağıdaki değerlerden birini veya daha fazlasını seçerek raporu ve ayrıntılar tablosunu değiştirebilirsiniz:
@@ -198,13 +198,13 @@ Verileri **URL'ye göre görüntüle görünümü,** Kasa Bağlantıları destek
 - **Etki alanları**: Rapor sonuçlarında listelenen URL etki alanları.
 - **Alıcı**
 
-Filtreleri yapılandırmayı bitirdiğinizde **Uygula**, **İptal veya** **Filtreleri temizle'ye** tıklayın.
+Filtreleri yapılandırmayı bitirdiğinizde **Uygula**, **İptal veya**![ Filtreleri temizle simgesi **Filtreleri temizle'ye**](../../media/m365-cc-sc-clear-filters-icon.png) tıklayın.
 
 Grafiğin altındaki ayrıntılar tablosu, kuruluş içinde son 7 gün boyunca gerçekleşen tüm tıklamaların neredeyse gerçek zamanlı görünümünü sağlar:
 
 - **Tıklama zamanı**
 - **Kullanıcı**
-- **URL**
+- **Url**
 - **Eylem**
 - **Uygulama**
 
@@ -217,7 +217,7 @@ Bu makalede açıklanan raporlara ek olarak, aşağıdaki tabloda açıklandığ
 |Rapor|Konu|
 |---|---|
 |**Explorer** (Office 365 için Microsoft Defender Plan 2) veya **gerçek zamanlı algılamalar** (Office 365 için Microsoft Defender Plan 1)|[Tehdit Gezgini (ve gerçek zamanlı algılamalar)](threat-explorer.md)|
-|Office 365 için Defender gerektirmeyen e-posta güvenlik raporları|[Microsoft 365 Defender portalında e-posta güvenlik raporlarını görüntüleme](view-email-security-reports.md)|
+|Office 365 için Defender gerektirmeyen güvenlik raporlarını Email|[Microsoft 365 Defender portalında e-posta güvenlik raporlarını görüntüleme](view-email-security-reports.md)|
 |Exchange yönetim merkezinde (EAC) posta akışı raporları|[Yeni Exchange yönetim merkezinde posta akışı raporları](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 
 PowerShell raporlama cmdlet'leri:
@@ -243,11 +243,11 @@ Bu makalede açıklanan raporları görüntülemek ve kullanmak için Microsoft 
 
 Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında İzinler](permissions-microsoft-365-security-center.md).
 
-**Not**: kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365 Defender portalında gerekli izinleri _ve_ Microsoft 365. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+**Not**: kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365 Defender portalında gerekli izinleri _ve_ Microsoft 365'teki diğer özellikler için izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Raporlarda veri gösterilmiyorsa ne olur?
 
-Office 365 için Defender raporlarınızda veri görmüyorsanız ilkelerinizin doğru ayarlandığını bir kez daha denetleyin. Office 365 için Defender korumasının geçerli olması için kuruluşunuzun [Kasa Bağlantıları ilkeleri](set-up-safe-links-policies.md) ve Kasa [Ekleri ilkeleri](set-up-safe-attachments-policies.md) tanımlanmış olmalıdır. Ayrıca bkz [. istenmeyen posta önleme](anti-spam-protection.md) ve [kötü amaçlı yazılımdan koruma](anti-malware-protection.md).
+Office 365 için Defender raporlarınızda veri görmüyorsanız ilkelerinizin doğru ayarlandığını bir kez daha denetleyin. Office 365 için Defender korumasının geçerli olması için kuruluşunuzun [Güvenli Bağlantılar ilkeleri](set-up-safe-links-policies.md) ve [Güvenli Ekler ilkeleri](set-up-safe-attachments-policies.md) tanımlanmış olmalıdır. Ayrıca bkz [. istenmeyen posta önleme](anti-spam-protection.md) ve [kötü amaçlı yazılımdan koruma](anti-malware-protection.md).
 
 ## <a name="related-topics"></a>İlgili konular
 

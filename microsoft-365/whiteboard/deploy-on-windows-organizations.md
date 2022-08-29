@@ -12,16 +12,18 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard'u Windows 10 veya sonraki sürümleri çalıştıran cihazlara dağıtmayı öğrenin.
-ms.openlocfilehash: 96670b594babd8a2c61723ceab6ef826c1229764
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: bdea83d61a22ecfa3b26feecf7d7711549ace463
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943474"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367719"
 ---
 # <a name="deploy-microsoft-whiteboard-on-windows-10-devices"></a>Windows 10 cihazlarda Microsoft Whiteboard'u dağıtma
 
 Whiteboard, Microsoft Intune veya Microsoft Configuration Manager (eski adıyla System Center Configuration Manager) kullanılarak Windows 10 veya üzerini çalıştıran cihazlara dağıtılabilir. Whiteboard, Windows Server'da desteklenmez.
+
+Whiteboard'un dağıtılması için önce Whiteboard'un kuruluşunuz için etkinleştirildiğinden emin olmanız gerekir. Daha fazla bilgi için bkz. [Whiteboard erişimini yönetme](manage-whiteboard-access-organizations.md).
 
 - **çevrimiçi lisans modu kullanarak Microsoft Intune** – Bu işlem, Whiteboard uygulamasına erişim alacak kullanıcı gruplarını belirtmenize olanak tanır.
 
