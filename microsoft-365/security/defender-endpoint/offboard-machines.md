@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fec93e45fbdced0cc6c4106d24a29eb13087d02
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 4cdd61ffaf91f6ddf88825f243abba38ffe78cd9
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531055"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323671"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>cihazları Uç Nokta için Microsoft Defender hizmetinden çıkarma
 
@@ -47,7 +47,7 @@ Tercih ettiğiniz dağıtım yöntemine bağlı olarak ilgili yönergeleri izley
 >
 > Cihazın profili (veri olmadan) 180 günden uzun süre [Cihazlar Listesi'nde](machines-view-overview.md) kalır.
 >
-> Ayrıca, son 30 gün içinde etkin olmayan cihazlar, kuruluşunuzun Tehdit ve Güvenlik Açığı Yönetimi [maruz kalma puanını](tvm-exposure-score.md) ve Cihazlar için Microsoft Güvenli Puanını yansıtan veriler üzerinde dikkate alınmaz.
+> Ayrıca, son 30 gün içinde etkin olmayan cihazlar, kuruluşunuzun Defender Güvenlik Açığı Yönetimi [açığa çıkarma puanını](tvm-exposure-score.md) ve Cihazlar için Microsoft Güvenli Puanı'nı yansıtan verilere eklenmez.
 >
 > Yalnızca etkin cihazları görüntülemek için [algılayıcı sistem durumuna](machines-view-overview.md#use-filters-to-customize-the-device-inventory-views), [cihaz etiketlerine](machine-tags.md) veya [makine gruplarına](machine-groups.md) göre filtreleyebilirsiniz.
 

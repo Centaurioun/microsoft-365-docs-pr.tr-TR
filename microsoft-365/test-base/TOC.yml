@@ -26,6 +26,8 @@
       href: contentguideline.md
     - name: Kullanım maliyetinizi anlama
       href: usagecost.md
+    - name: Testinizi isteğe bağlı olarak çalıştırma
+      href: ondemandrun.md
     - name: Uygulama/Test kuralları
       href: rules.md
 - name: Nasıl Yapılır Kılavuzları

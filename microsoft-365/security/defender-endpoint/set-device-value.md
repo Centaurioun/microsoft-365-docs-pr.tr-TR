@@ -1,7 +1,7 @@
 ---
-title: Cihaz değeri API'sini ayarlama
-description: Uç Nokta API için Microsoft Defender kullanarak bir cihazın değerini nasıl belirtebilirsiniz?
-keywords: api'ler, grafik api'leri, desteklenen api'ler, etiketler, makine etiketleri
+title: Cihaz değeri API'lerini ayarlama
+description: Uç Nokta için Microsoft Defender API'sini kullanarak bir cihazın değerini belirtmeyi öğrenin.
+keywords: api'ler, graf api'leri, desteklenen API'ler, etiketler, makine etiketleri
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,26 +13,26 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: b85e7e9fc96b447c6e2528249e516c45ea3e66d1
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 940fb1a04bbef5ccc7b05097429bb6b04869e313
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996556"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331323"
 ---
-# <a name="set-device-value-api"></a>Cihaz değeri API'sini ayarlama
+# <a name="set-device-value-api"></a>Cihaz değeri API'lerini ayarlama
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,28 +40,28 @@ ms.locfileid: "62996556"
 
 ## <a name="api-description"></a>API açıklaması
 
-Belirli bir Makine için cihaz değerini [ayarlayın](machine.md).<br>
-Daha [fazla bilgi için bkz](tvm-assign-device-value.md) . cihaz değerlerini atama.
+Belirli bir [Makinenin](machine.md) cihaz değerini ayarlayın.<br>
+Daha fazla bilgi için bkz. [cihaz değerlerini atama](tvm-assign-device-value.md) .
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. Yapılandırılmış bekletme sürenize göre en son görülen cihazlara posta abilirsiniz.
-2. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+1. Yapılandırdığınız saklama süresine göre en son görülen cihazlarda gönderi gönderebilirsiniz.
+2. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
 Uygulama|Machine.ReadWrite.All|'Tüm makine bilgilerini okuma ve yazma'
-Temsilcili (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma ve yazma'
+Temsilci (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma ve yazma'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Güvenlik ayarını yönet'. Daha fazla bilgi için ( [Daha fazla bilgi için bkz. Rol](user-roles.md) oluşturma ve yönetme)
-> - Kullanıcının makine grubu ayarlarına göre makineye erişimi olması gerekir (Daha fazla bilgi için bkz [. Makine gruplarını oluşturma](machine-groups.md) ve yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Güvenlik ayarını yönet'. Daha fazla bilgi için (Daha fazla bilgi için bkz. [Rolleri oluşturma ve yönetme](user-roles.md) )
+> - Kullanıcının makine grubu ayarlarına göre makineye erişimi olmalıdır (Daha fazla bilgi için bkz [. Makine grupları oluşturma ve yönetme](machine-groups.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -69,30 +69,30 @@ Temsilcili (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma v
 POST https://api.securitycenter.microsoft.com/api/machines/{machineId}/setDeviceValue
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
 Yetkilendirme|Dize|Taşıyıcı {token}. **Gerekli**.
-İçerik Türü|dize|application/json. **Gerekli**.
+İçerik Türü|Dize|application/json. **Gerekli**.
 
 ## <a name="request-body"></a>İstek gövdesi
 
-İstek gövdesinde, aşağıdaki parametreleri olan bir JSON nesnesi girin:
+İstek gövdesinde aşağıdaki parametreleri içeren bir JSON nesnesi sağlayın:
 
 Parametre|Tür|Açıklama
 :---|:---|:---
-DeviceValue|Enum|Cihaz değeri. İzin verilen değerler: 'Normal', 'Düşük' ve 'Yüksek'. **Gerekli**.
+DeviceValue|Enum|Cihaz değeri. İzin verilen değerler şunlardır: 'Normal', 'Düşük' ve 'Yüksek'. **Gerekli**.
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem yanıt gövdesinde 200 - Tamam yanıt kodunu ve güncelleştirilmiş Makine'i döndürür.
+Başarılı olursa, bu yöntem 200 - Tamam yanıt kodunu ve yanıt gövdesindeki güncelleştirilmiş Makine'yi döndürür.
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-Burada, makine etiketi ekleyen bir istek örneği ve sağlanmaktadır.
+Makine etiketi ekleyen bir istek örneği aşağıda verilmiştir.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/setDeviceValue

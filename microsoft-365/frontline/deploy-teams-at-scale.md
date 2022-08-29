@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 28232f888b925b6a0f930d464b1dcdfca00b2c3b
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
+ms.openlocfilehash: 9a06b695d6e9cffe03ed2a42590c1489f3678056
+ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004246"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67439596"
 ---
 # <a name="deploy-teams-at-scale-for-frontline-workers-in-microsoft-teams"></a>Microsoft Teams'de ön cephe çalışanları için uygun ölçekte ekip dağıtma
 
@@ -162,7 +162,7 @@ Oluşturmak üzere bir grup ekip göndermek için cmdlet'ini kullanırsınız ``
 1. Gönderdiğiniz toplu iş durumunu denetlemek için aşağıdakileri çalıştırın.
 
     ```powershell
-    Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
+    Get-CsBatchTeamsDeployment -OrchestrationId "OrchestrationId"
     ```
 
 ## <a name="send-us-feedback"></a>Görüşlerinizi bize gönderin

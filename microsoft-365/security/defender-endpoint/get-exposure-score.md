@@ -1,7 +1,7 @@
 ---
-title: Pozlama puanı elde
-description: Kuruluş maruz kalma puanını sağlar.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, get, pozlama puanı, kurumsal pozlama puanı
+title: Hassaslık puanı al
+description: Kurumsal maruz kalma puanını alır.
+keywords: api'ler, graf api'leri, desteklenen API'ler, alma, maruz kalma puanı, kurumsal maruz kalma puanı
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,22 +15,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 478f109d1f519e8d931716ce90bdcc979fed4b33
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 2bc2ab5d622b064e22c868b46a39b1fb3c68e1a0
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996576"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345227"
 ---
-# <a name="get-exposure-score"></a>Pozlama puanı elde
+# <a name="get-exposure-score"></a>Hassaslık puanı al
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,16 +38,16 @@ ms.locfileid: "62996576"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Kuruluş maruz kalma puanını sağlar.
+Kurumsal maruz kalma puanını alır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 ---|---|---
-Uygulama|Puan.Okuma.All|'Tehdit ve Güvenlik Açığı Yönetimi puanı'
-Temsilcili (iş veya okul hesabı)|Puan.Okuma|'Tehdit ve Güvenlik Açığı Yönetimi puanı'
+Uygulama|Score.Read.All|'Tehdit ve Güvenlik Açığı Yönetimi puanını okuma'
+Temsilci (iş veya okul hesabı)|Score.Read|'Tehdit ve Güvenlik Açığı Yönetimi puanını okuma'
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -55,7 +55,7 @@ Temsilcili (iş veya okul hesabı)|Puan.Okuma|'Tehdit ve Güvenlik Açığı Yö
 GET /api/exposureScore
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 ---|---|---
@@ -67,13 +67,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem yanıt gövdesine maruz kalma verileriyle birlikte 200 Tamam döndürür.
+Başarılı olursa, bu yöntem yanıt gövdesindeki açığa çıkarma verileriyle birlikte 200 Tamam döndürür.
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/exposureScore
@@ -81,10 +81,10 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore
 
 ### <a name="response"></a>Yanıt
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 > [!NOTE]
-> Burada gösterilen yanıt listesi kısalma için kesilmiş olabilir.
+> Burada gösterilen yanıt listesi kısa bir süre için kesilebilir.
 
 ```json
 {
@@ -96,5 +96,5 @@ Yanıtın bir örneği:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Risk Tabanlı Tehdit & Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Tehdit & Güvenlik Açığının etkilenme puanı](/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender Güvenlik Açığı Yönetimi açığa çıkarma puanı](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

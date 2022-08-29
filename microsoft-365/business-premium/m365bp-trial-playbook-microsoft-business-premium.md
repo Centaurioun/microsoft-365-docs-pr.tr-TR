@@ -9,18 +9,18 @@ audience: Admin
 ms.topic: conceptual
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/24/2022
 ms.prod: m365-security
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 İş Ekstra denemenizden en iyi şekilde geçin. Temel üretkenlik ve güvenlik özelliklerinden bazılarını deneyin.
-ms.openlocfilehash: fd1871d6902fa7d39a755ea8d7d857baabff2413
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 750772357c5dda926840ba41f879a055e12d5230
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894914"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433454"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>Deneme playbook'u: Microsoft Business Premium
 
@@ -35,7 +35,7 @@ Microsoft Business Premium deneme playbook'una hoş geldiniz. Bu playbook, Micro
 
 İlk olarak [, denemenizi ayarlayın](../business-premium/m365bp-setup.md)!
 
-Deneme sürümünü başlattıktan ve kurulum işlemini tamamladıktan sonra değişikliklerin geçerli olması iki saat kadar sürebilir.
+Deneme sürümünü başlattıktan ve kurulum işlemini tamamladıktan sonra değişikliklerin geçerli olması iki saate kadar sürebilir.
 
 Microsoft 365 İş Ekstra ortamınızda kullanabileceğiniz [Önceden Ayarlanmış güvenlik ilkeleri](/security/office-365-security/preset-security-policies.md) içerir. Bu ilkeler, çoğu kullanıcı için uygun bir temel koruma profilini temsil eder. Standart koruma şunları içerir:
 
@@ -61,12 +61,11 @@ Microsoft 365 İş Ekstra denediğinizde veya satın aldığınızda, sahip oldu
 
 4. Etki alanının sahibi olduğunuzu doğrulayan [Office 365 için herhangi bir DNS barındırma sağlayıcısında DNS kayıtları oluşturmak için](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) sihirbazdaki adımları izleyin. Etki alanı konağınızı biliyorsanız bkz. [Microsoft 365'e etki alanı ekleme](/microsoft-365/admin/setup/add-domain).
 
-5. Barındırma sağlayıcınız GoDaddy veya etki alanı bağlantısı etkinleştirilmiş başka bir konaksa işlem kolaydır ve otomatik olarak oturum açmanız ve Microsoft'un sizin adınıza kimlik doğrulaması yapmasına izin vermeniz istenir.
+5. Barındırma sağlayıcınız GoDaddy veya etki alanı bağlantısı etkinleştirilmiş başka bir konaksa oturum açmanız ve Microsoft'un sizin adınıza otomatik olarak kimlik doğrulaması yapmasına izin vermeniz istenir.
 
 ## <a name="onboard-and-protect-devices"></a>Cihazları ekleme ve koruma
 
-> [!NOTE]
-> Windows Server veya Linux Server çalıştıran uç noktaları ekleme özelliği artık önizleme aşamasında! Bkz[. cihazları İş için Microsoft Defender ekleme](../security/defender-business/mdb-onboard-devices.md).
+Microsoft 365 İş Ekstra, cihazları korumaya yönelik yeni bir güvenlik çözümü olan İş için Defender'ı içerir. Bkz[. cihazları İş için Microsoft Defender ekleme](../security/defender-business/mdb-onboard-devices.md).
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın.
 
@@ -76,11 +75,11 @@ Microsoft 365 İş Ekstra denediğinizde veya satın aldığınızda, sahip oldu
 
 4. [Güvenlik ilkelerinizi gözden geçirin](../security/defender-business/mdb-configure-security-settings.md).
 
-## <a name="use-office-apps-on-devices"></a>Cihazlarda Office uygulamalarını kullanma
+## <a name="use-microsoft-365-apps-on-devices"></a>Cihazlarda Microsoft 365 Uygulamaları kullanma
 
-1. İlk olarak [, Office'i yüklemeniz](m365bp-install-office-apps.md) gerekir.
+1. İlk olarak[, Microsoft 365 Uygulamaları yüklemeniz](m365bp-install-office-apps.md) gerekir.
 
-2. office.com gidin ve [oturum açın](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).
+2. [https://office.com](https://office.com) adresine gidin ve oturum açın. (Bkz [. Office.com Başlarken](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).)
 
 3. Word belgesi gibi bir Office [belgesi](https://support.microsoft.com/office/basic-tasks-in-word-87b3243c-b0bf-4a29-82aa-09a681999fdc) oluşturun.
 
@@ -92,12 +91,13 @@ Microsoft 365 İş Ekstra denediğinizde veya satın aldığınızda, sahip oldu
 
 2. [Portal hakkında](../security/defender-business/mdb-get-started.md) bilgi sahibi olmak için biraz zaman ayırın.
 
-3. Şimdi [güvenlik duruşunuzu değerlendirin](../security/defender/microsoft-secure-score.md).
+3. Şimdi [güvenlik duruşunuzu değerlendirin](../security/defender/microsoft-secure-score.md) ve puanınızı nasıl geliştirebileceğinize bakın.
 
-4. Bir [güvenlik olayına nasıl yanıt vereceğiniz](../security/defender-business/mdb-respond-mitigate-threats.md) hakkında bilgi sahibi olun.
+4. [Bir güvenlik olayına nasıl yanıt vereceğinizi](../security/defender-business/mdb-respond-mitigate-threats.md) öğrenin.
 
 5. Son olarak düzeltme [eylemlerini gözden geçirin](../security/defender-business/mdb-review-remediation-actions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [&mdash; Küçük işletmeler için siber güvenlik Microsoft 365 İş Ekstra](index.md)
+- [Microsoft 365 İş Ekstra - küçük işletmeler için siber güvenlik](index.md)
+- [İş için Microsoft Defender nedir?](../security/defender-business/mdb-overview.md)

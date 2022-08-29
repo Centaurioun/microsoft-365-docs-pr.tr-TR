@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Uyumluluk Merkezi'nde özel hassas bilgi türlerini oluşturmayı, değiştirmeyi, kaldırmayı ve test etmeyi öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 733e043ed92e601812046dd5e50405ee28ee33da
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6f421a4bbeda0362d5b64be2cbeae70cf1b93bcf
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638620"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434340"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>Uyumluluk merkezinde özel hassas bilgi türleri oluşturma
 
@@ -45,9 +45,11 @@ Yeni bir hassas bilgi türü oluşturmanın iki yolu vardır:
   - [Hassas bilgi türü işlevleri](sit-functions.md)
   - [güvenilirlik düzeyleri](sensitive-information-type-learn-about.md#more-on-confidence-levels)
 
-- Kuruluşunuzun Microsoft Purview Veri Kaybı Önleme (DLP) içeren Office 365 Kurumsal gibi bir aboneliği olmalıdır. bkz[. Microsoft Mesajlaşma İlke ve Uyumluluk HizmetiDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
+- [Hassas bilgi türü sınırları](sit-limits.md) hakkında bilgi edinin.
 
-- Kuruluşunuzun veri kaybı önleme (DLP) içeren Office 365 Kurumsal gibi bir aboneliği olmalıdır. bkz[. Microsoft Mesajlaşma İlke ve Uyumluluk HizmetiDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc).
+- Kuruluşunuzun Microsoft Purview Veri Kaybı Önleme (DLP) içeren Office 365 Kurumsal gibi bir aboneliği olmalıdır. Bkz [. Mesajlaşma İlkesi ve Uyumluluk HizmetiDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
+
+- Kuruluşunuzun veri kaybı önleme (DLP) içeren Office 365 Kurumsal gibi bir aboneliği olmalıdır. Bkz [. Mesajlaşma İlkesi ve Uyumluluk HizmetiDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc).
 
 > [!IMPORTANT]
 > Microsoft Müşteri Hizmetleri & Desteği, özel sınıflandırmalar veya normal ifade desenleri oluşturmaya yardımcı olamaz. Destek mühendisleri, test amacıyla örnek normal ifade desenleri sağlama veya beklendiği gibi tetiklenmeyen mevcut normal ifade deseninde sorun gidermeye yardımcı olma gibi özellikler için sınırlı destek sağlayabilir, ancak herhangi bir özel içerik eşleştirme geliştirmesinin gereksinimlerinizi veya yükümlülüklerinizi yerine getireceği konusunda güvence sağlayamaz.
@@ -147,47 +149,8 @@ Listedeki herhangi bir hassas bilgi türünü test edebilirsiniz. Bir ilkede kul
 
 4. **Sonuçlarla eşleşir** sayfasında sonuçları gözden geçirin ve **Son'u** seçin.
 
-## <a name="custom-sensitive-information-types-limits"></a>Özel hassas bilgi türleri sınırları
-
-Yüksek performans ve daha düşük gecikme süresi sağlamak için özel SID yapılandırmalarında sınırlamalar vardır.
-
-|Sınırı|Değer|
-|---|---|
-|Uyumluluk merkezi aracılığıyla oluşturulan en fazla özel SID sayısı| 500 |
-|normal ifadenin maksimum uzunluğu| 1024 karakter|
-|anahtar sözcük listesindeki belirli bir terim için maksimum uzunluk| 50 karakter|
-|anahtar sözcük listesindeki en fazla terim sayısı| 2048|
-|hassas bilgi türü başına en fazla benzersiz kayıt defteri sayısı| 20|
-|anahtar sözcük sözlüğünün en büyük boyutu (sıkıştırma sonrası)| 1 MB (~1.000.000 karakter)|
-|kiracıdaki anahtar sözcük sözlüğü tabanlı SID sayısı üst sınırı|50 |
-
 > [!NOTE]
-> İşletmenin 500'den fazla özel SID oluşturması gerekiyorsa lütfen bir destek bileti oluşturun.
-
-### <a name="instance-count-supported-values-for-sit"></a>SIT için örnek sayısı desteklenen değerler
-
-SIT örneği sayısı sınırı, şu çözümlerde SID'ler kullanıldığında geçerlidir:
-
-- DLP ilkeleri
-- Information Protection
-- Veri Yaşam Döngüsü Yönetimi
-- İletişim Uyumluluğu
-- Kayıt Yönetimi
-- Bulut Uygulamaları için Microsoft Defender
-- Microsoft Priva
-
-Taranan bir öğenin kural ölçütlerini karşılaması için, tek bir öğedeki bir SIT'in benzersiz örneklerinin sayısı min ve max değerleri arasında olmalıdır. Buna **Örnek sayısı** adı verilir.
-
-- **En küçük** alan: Eşleşmeyi tetikleyebilmek için bir öğede bulunması gereken bir SIT'in benzersiz örneklerinin alt sınırı (minimum sayı). Min alanı şu değerleri destekler:
-  - 1 - 500
-- **Maksimum** alan: Bir öğede bulunabilen ve yine de eşleşme tetikleyen benzersiz sit örneği sayısı üst sınırı. Max alanı şu değerleri destekler:
-  - 1 ile 500 arası - Bir öğedeki SIT örneğinin sayısı için 500 veya daha az olan belirli bir üst sınır ayarlamak istediğinizde bunu kullanın.
-  - Herhangi Biri - Taranan bir öğede bir SIT'in tanımlanmamış sayıda benzersiz örneği bulunduğunda ve benzersiz örnek sayısı minimum benzersiz örnek değerini karşıladığında veya aştığında benzersiz örnek sayısı ölçütlerinin karşılanmasını istediğinizde kullanın `Any` . Başka bir deyişle, min değeri karşılandığı sürece benzersiz örnek sayısı ölçütleri karşılanır.
-
-Örneğin, bir SIT'in en az 500 benzersiz örneği tek bir öğede bulunduğunda kuralın eşleşme tetiklemesini istiyorsanız **, en küçük** değeri olarak `500` , **maksimum** değeri `Any`olarak ayarlayın.
-
-> [!NOTE]
-> Microsoft 365 Information Protection için çift bayt karakter kümesi dillerini destekler:
+> Microsoft Purview bilgi koruması, aşağıdakiler için çift bayt karakter kümesi dillerini destekler:
 >
 > - Çince (basitleştirilmiş)
 > - Çince (geleneksel)

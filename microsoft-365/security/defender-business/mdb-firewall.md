@@ -1,6 +1,6 @@
 ---
 title: İş için Microsoft Defender'de güvenlik duvarı
-description: İş için Defender'da Windows Defender Güvenlik Duvarı ayarları hakkında bilgi edinin. Güvenlik duvarı, istenmeyen ağ trafiğinin şirket cihazlarınıza akmasını önlemeye yardımcı olabilir.
+description: İş için Defender Windows Defender Güvenlik Duvarı ayarları hakkında bilgi edinin. Güvenlik duvarı, istenmeyen ağ trafiğinin şirket cihazlarınıza akmasını önlemeye yardımcı olabilir.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -10,17 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ce3c3ec98d45341544d146f6e614c3df048b3d90
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 40e910f9775c7c9361315d9d43d5b0f57c0ce2ce
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772915"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319593"
 ---
 # <a name="firewall-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'de güvenlik duvarı
 

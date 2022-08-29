@@ -1,7 +1,7 @@
 ---
 title: Microsoft LTI uygulamalarına genel bakış
-ms.author: heidip
-author: MicrosoftHeidi
+ms.author: danismith
+author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman, sovaish
 ms.date: 06/15/2021
@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: medium
 description: Öğrenme Araçları Birlikte Çalışabilirliği (LTI) Microsoft uygulamaları hakkında bilgi edinin ve Microsoft uygulamalarını Öğrenme Yönetim Sistemine (LMS) ile tümleştirirken eğitimcilere nasıl yardımcı olacaklarını öğrenin.
-ms.openlocfilehash: 7431b9a48ae7f0fec7199583592a515a6aadd772
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: 0dbaa7d02af0556015e8c531eeb09131cacf0ab5
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943540"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385043"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Microsoft ürünlerini Öğrenme Yönetim Sisteminizle (LMS) tümleştirme
 
@@ -70,6 +70,7 @@ Yapılandırma adımları için bkz:
 
 - [Tuval ile Microsoft OneDrive LTI](onedrive-lti.md).
 - [Blackboard ile Microsoft OneDrive LTI](onedrive-lti-blackboard.md).
+- [D2l Brightspace ile Microsoft OneDrive LTI](onedrive-lti-brightspace.md)
 
 ## <a name="teams-lti-apps"></a>Teams LTI uygulamaları
 

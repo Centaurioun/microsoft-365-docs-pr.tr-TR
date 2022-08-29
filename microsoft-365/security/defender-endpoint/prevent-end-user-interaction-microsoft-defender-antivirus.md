@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b00465fdeecddc803b52d98081689fd56fba7812
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 072207248192d158169e52a8e0ca860678b4f63f
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419824"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388539"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya bu arabirimle etkileşim kurmasını engelleme
 
@@ -29,7 +29,7 @@ ms.locfileid: "65419824"
 
 
 **Şunlar için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Virüsten Koruma
 
@@ -57,7 +57,7 @@ Windows 10 önceki sürümlerinde, ayar Windows Defender istemci arabirimini giz
 
 :::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="1703'ten önceki Windows 10 sürümlerde başsız mod etkinleştirildiğinde uyarı iletisi" lightbox="../../media/wdav-headless-mode-1607.png":::
 
-## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>Microsoft Defender AV arabirimini kullanıcılardan gizlemek için grup ilkesi kullanma
+## <a name="use-group-policy-to-hide-the-microsoft-defender-antivirus-interface-from-users"></a>Microsoft Defender Virüsten Koruma arabirimini kullanıcılardan gizlemek için grup ilkesi kullanma
 
 1. grup ilkesi yönetim makinenizde [grup ilkesi Yönetim Konsolu'nu](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) açın, yapılandırmak istediğiniz grup ilkesi Nesnesine sağ tıklayın ve **Düzenle'ye** tıklayın.
 
@@ -65,9 +65,9 @@ Windows 10 önceki sürümlerinde, ayar Windows Defender istemci arabirimini giz
 
 3. **Yönetim şablonları'nı** tıklatın.
 
-4. **İstemci arabirimi > Microsoft Defender Virüsten Koruma > bileşenleri Windows** için ağacı genişletin.
+4. **Ağacı Microsoft Defender Virüsten Koruma > İstemci arabirimi > Windows bileşenlerine** genişletin.
 
-5. **Başsız UI modunu etkinleştir** ayarına çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. **Tamam**'a tıklayın.
+5. **Başsız UI modunu etkinleştir** ayarına çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. **Tamam**'ı tıklatın.
 
 Kullanıcıların bilgisayarlarında korumayı değiştirmesini engelleme hakkında daha fazla seçenek için bkz. Kullanıcıların [ilke ayarlarını yerel olarak](configure-local-policy-overrides-microsoft-defender-antivirus.md) değiştirmesini engelleme.
 
@@ -86,12 +86,12 @@ Kullanıcıların taramaları duraklatmasını engelleyebilirsiniz. Bu, zamanlan
 
 3. **Yönetim şablonları'nı** tıklatın.
 
-4. **Tarama** **Microsoft Defender Virüsten Koruma bileşenleri** \>  \> Windows için ağacı genişletin.
+4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Taraması** olarak genişletin.
 
-5. **Kullanıcıların taramayı duraklatmasına izin ver ayarına** çift tıklayın ve seçeneği **Devre Dışı** olarak ayarlayın. **Tamam**'a tıklayın.
+5. **Kullanıcıların taramayı duraklatmasına izin ver ayarına** çift tıklayın ve seçeneği **Devre Dışı** olarak ayarlayın. **Tamam**'ı tıklatın.
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

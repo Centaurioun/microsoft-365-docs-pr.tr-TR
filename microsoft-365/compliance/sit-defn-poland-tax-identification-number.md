@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Polonya vergi tanımlama numarasına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 793fbb9d82a94a9328adb665792768f051cf927f
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 38909e64a5ab3d4756d9cc11e64041076e6ca7da
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989519"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368003"
 ---
 # <a name="poland-tax-identification-number"></a>Polonya vergi kimlik numarası
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -44,16 +36,16 @@ Boşluk veya sınırlayıcı içermeyen 11 basamak
 
 11 basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_poland_eu_tax_file_number` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_poland_eu_tax_file_number` bir anahtar sözcük bulunur.
+- İşlev `Func_poland_eu_tax_file_number`, desenle eşleşen içeriği bulur.
+- `Keywords_poland_eu_tax_file_number` içinden bir anahtar sözcük bulundu.
 
 ```xml
       <!-- Poland Tax Identification Number -->

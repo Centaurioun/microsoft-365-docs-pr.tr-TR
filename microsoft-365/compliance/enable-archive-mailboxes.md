@@ -23,14 +23,16 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: Kuruluşunuzun ileti saklama, eKeşif ve saklama gereksinimlerini desteklemek için arşiv posta kutularını etkinleştirmeyi veya devre dışı bırakmayı öğrenin.
-ms.openlocfilehash: 0fef0db0af845a0e3e03f7747775eb41591002a3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 67a134051d9c586b27fdc6168b2b1902a22d03d5
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635545"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360270"
 ---
 # <a name="enable-archive-mailboxes-in-the-microsoft-purview-compliance-portal"></a>Microsoft Purview uyumluluk portalındaki arşiv posta kutularını etkinleştirme
+
+>*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Microsoft 365’te arşivleme ( *Yerinde Arşivleme* olarak da adlandırılır) kullanıcılara ek posta kutusu depolama alanı sağlar. Daha fazla bilgi için bkz. [Arşiv posta kutuları hakkında bilgi](archive-mailboxes.md).
 
@@ -46,7 +48,7 @@ Microsoft Purview uyumluluk portalında **Arşiv** sayfasını görmüyorsanız,
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview uyumluluk portalı’na</a> gidin ve oturum açın.
 
-2. Uyumluluk portalının sol bölmesinde **Veri yaşam döngüsü yönetimi** > **Arşiv**’i seçin.
+2. Uyumluluk portalının sol bölmesinde **Veri yaşam döngüsü yönetimi** > **Microsoft 365** > **Arşiv'i** seçin.
 
    **Arşiv** sayfasında  **Arşiv posta kutusu** sütunu, her kullanıcı için bir arşiv posta kutusunun etkinleştirilmiş olup olmadığını gösterir.
 

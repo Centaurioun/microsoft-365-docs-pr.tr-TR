@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 93013d8b51eb16290de3b80d3c27ea0e3f07e21c
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 4300aadd6ab57561592621a0d1aeb54887d70320
+ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174904"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67437793"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Android'de Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -31,10 +31,18 @@ ms.locfileid: "67174904"
 
 Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
->[!NOTE]
+>[!IMPORTANT]
 > Uç Nokta için Microsoft Defender'ın **Kötü amaçlı yazılımdan koruma altyapısı** genel kullanıma sunuldu. Tüm kullanıcıların bu yeni kötü amaçlı yazılımdan koruma özelliğini kullanabilmesi için **1.0.3815.0000'in** üzerinde bir Uç Nokta için Microsoft Defender sürümüne sahip olması gerekir. 1.0.3815.0000'in altındaki Uç Nokta için Microsoft Defender sürümdeki kullanıcılara, Uç Nokta için Microsoft Defender uygulamalarını güncelleştirmek için bildirimler ve uygulama içi katman iletileri gönderilir. Kullanıcılar, katman iletisinde sağlanan bağlantıya tıklayarak yönetilen play store'a gidebilir ve uygulamayı güncelleştirebilir. 
 >
 > Kullanıcılar play store'a erişemiyorsa uygulama şirket portalı üzerinden güncelleştirilebilir. 
+
+## <a name="privacy-controls"></a>Gizlilik Denetimleri
+
+Android'de Uç Nokta için Microsoft Defender hem Yöneticiler hem de Son Kullanıcılar için Gizlilik Denetimleri'ni etkinleştirir. Bu, kayıtlı (MDM) ve kaydı kaldırılmış (MAM) cihazlar (önizlemede) denetimlerini içerir. Yöneticiler uyarı raporunda gizliliği yapılandırırken, Son Kullanıcılar da kendi kuruluşlarıyla paylaşılan bilgileri yapılandırabilir. Daha fazla bilgi için bkz [. gizlilik denetimleri (MDM)](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) ve [gizlilik denetimleri (MAM)](/microsoft-365/security/defender-endpoint/android-configure-mam#configure-privacy-controls).
+
+## <a name="optional-permissions-and-disable-web-protection"></a>İsteğe Bağlı İzinler ve Web Korumasını Devre Dışı Bırakma
+
+Android'de Uç Nokta için Microsoft Defender, ekleme akışında **İsteğe Bağlı İzinler'i** etkinleştirir. Şu anda ekleme akışında MDE için gereken izinler zorunlu. Bu özellik sayesinde yönetici, ekleme sırasında zorunlu **VPN** ve **Erişilebilirlik** izinlerini zorlamadan cihazlara MDE dağıtabilir. Son Kullanıcılar zorunlu izinler olmadan uygulamayı ekleyebilir ve daha sonra bu izinleri gözden geçirebilir. Bu özellik şu anda yalnızca kaydı kaldırılmış cihazlar (MAM) için mevcuttur. Daha fazla bilgi için bkz. [isteğe bağlı izinler](/microsoft-365/security/defender-endpoint/android-configure-mam#optional-permissions).
 
 
 ## <a name="microsoft-defender-on-android-enterprise-byod-personal-profile"></a>Android kurumsal KCG kişisel profilinde Microsoft Defender
@@ -60,9 +68,9 @@ Güncelleştirmek için kullanıcılar aşağıdaki adımları kullanabilir:
 
 Uç Nokta için Microsoft Defender artık play store'da **Microsoft Defender** olarak kullanılabilir. Bu güncelleştirmeyle, uygulama **ABD bölgesindeki Tüketiciler** için önizleme olarak kullanıma sunulacaktır. Uygulamada iş veya kişisel hesabınızla nasıl oturum açtığınıza bağlı olarak, Uç Nokta için Microsoft Defender özelliklerine veya kişiler için Microsoft Defender özelliklerine erişebilirsiniz. Daha fazla ayrıntı için [lütfen bu bloga](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) bakın.
 
-## <a name="threat-and-vulnerability-management"></a>Tehdit ve Güvenlik Açığı Yönetimi
+## <a name="vulnerability-management"></a>Güvenlik Açığı Yönetimi
 
-25 Ocak 2022'de Android ve iOS'ta Tehdit ve Güvenlik Açığı yönetiminin genel kullanılabilirliğini duyurduk. Diğer ayrıntılar için [buradaki techcommunity gönderisine](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663) bakın.
+25 Ocak 2022'de Android ve iOS'ta güvenlik açığı yönetiminin genel kullanıma sunulduğu duyuruldu. Diğer ayrıntılar için [buradaki techcommunity gönderisine](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663) bakın.
 
 ## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Android 11 veya sonraki bir sürümü çalıştıran Uç Nokta için Microsoft Defender için yaklaşan izin değişiklikleri (2021'in 2021'in Başında)
 

@@ -26,12 +26,12 @@ appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 0d9a0104e601b31448b586e3958df0c8d17cad7e
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: ce2c8da70b2fa6908518fc2f7d9489a2fdf578cd
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824900"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405738"
 ---
 # <a name="shifts-for-frontline-workers"></a>Ön cephe çalışanları için vardiyalar
 
@@ -47,11 +47,11 @@ Kuruluşunuzda Vardiyaları ayarlamanıza ve yönetmenize yardımcı olması iç
 
 |&nbsp;  |&nbsp; |
 |---------|---------|
-|<img src="/office/media/icons/calendar-teams.png" alt="Calendar symbol.">   |**[Vardiyaları Yönetme](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Kuruluşunuz için Vardiyaları yönetmeyi öğrenin.         |
+|<img src="/office/media/icons/calendar-teams.png" alt="Calendar symbol.">   |**[Vardiyaları Yönetme](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Kuruluşunuz için Vardiyaları yönetme hakkında genel bir bakış edinin. Shift'lere erişimi denetlemeyi, kolay erişim için Vardiyaları Teams uygulama çubuğuna sabitlemeyi, vardiya tabanlı etiketleri etkinleştirmeyi ve daha fazlasını öğrenin. |
 |<img src="/office/media/icons/users-people.png" alt="Users/people symbol.">   |**[Vardiya yönetimi için zamanlama sahiplerini yönetme](schedule-owner-for-shift-management.md)** Bu özellik, çalışanı ekip sahibi yapmadan ekip üyesinin izinlerini zamanlama sahibine yükseltmenize olanak tanır.         |
 |<img src="/office/media/icons/help.png" alt="Help symbol.">     | **[Verileri kaydırma hakkında SSS](/microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Shifts verilerinin nerede depolandığını ve Saklama, alma ve şifreleme gibi Shifts verileriyle ilgili diğer konuları öğrenin.        |
 
-## <a name="shifts-connectors"></a>Bağlayıcıları kaydırıyor
+## <a name="shifts-connectors"></a>Vardiya bağlayıcıları
 
 Zamanlama için üçüncü taraf iş gücü yönetimi (WFM) sistemi kullanıyorsanız, yönetilen Vardiyalar bağlayıcıları aracılığıyla doğrudan Vardiyalar ile tümleştirebilirsiniz. Bağlantı kurduktan sonra, ön cephe çalışanlarınız vardiyalar içinden WFM sisteminizde zamanlamalarını sorunsuz bir şekilde görüntüleyebilir ve yönetebilir.
 

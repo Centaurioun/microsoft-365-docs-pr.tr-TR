@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard'u ayarlama ve yönetme hakkında kaynakları bulun.
-ms.openlocfilehash: 18c2b56e37d6c683c46b3bfa62e5d859d9813c10
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 2ca2dacb4db36d8109554bb7e275e11d8de18366
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943452"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67320513"
 ---
 # <a name="introduction-to-microsoft-whiteboard"></a>Microsoft Whiteboard'a giriş
 
@@ -32,7 +32,7 @@ Bu bölümdeki kaynaklar, Microsoft Whiteboard'un ne olduğu ve kuruluşunuza na
 |Microsoft Whiteboard'u nasıl edineceğinizi öğrenin|[Microsoft Whiteboard ürün sayfası](https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app)|
 |Microsoft Tech Community Kaynak Merkezi'nde kaynakları bulma|[Microsoft 365 Whiteboard blogu](https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/label-name/Microsoft%20Whiteboard)|
 |Yararlı ipuçlarını keşfetmek için videoları izleyin|[Microsoft Whiteboard YouTube kanalı](https://www.youtube.com/c/MicrosoftWhiteboard/videos/Microsoft%20Whiteboard)|
-|Son kullanıcılar için Microsoft Whiteboard kılavuzlarını bulma|[Microsoft Whiteboard yardımı](https://support.microsoft.com/office/microsoft-whiteboard-help-d236aef8-fcdf-4b5e-b5d7-7f157461e920)|
+|Son kullanıcılar için Microsoft Whiteboard kılavuzlarını bulma|[Microsoft Whiteboard yardım merkezi](https://support.microsoft.com/office/microsoft-whiteboard-help-d236aef8-fcdf-4b5e-b5d7-7f157461e920)|
 
 ## <a name="setup-and-management"></a>Kurulum ve yönetim
 
@@ -42,12 +42,12 @@ Bu bölümdeki kaynaklar, kuruluşunuzdaki yöneticinin Microsoft 365 ortamını
 
 | Bu bilgileri arıyorsanız | Bu kaynağa git |
 |:-----|:-----|
-|Kuruluşunuz için Beyaz Tahta'yı ayarlamayı öğrenin|[Whiteboard'ı ayarlama ve kullanma](/surface-hub/whiteboard-collaboration)|
-|Microsoft Intune veya Microsoft Configuration Manager kullanarak Windows 10 veya üzerini çalıştıran cihazlara Whiteboard dağıtma|[Windows cihazlarda Microsoft Whiteboard'u dağıtma](deploy-on-windows-organizations.md)|
-|Kuruluşunuz için Whiteboard erişimini yönetmeyi öğrenin|[Whiteboard'a erişimi yönetme](manage-whiteboard-access-organizations.md)|
-|Whiteboard içeriğinizin ve verilerinizin Azure'da nerede depolandığını bulma ve OneDrive İş  |[Whiteboard için verileri yönetme](manage-data-organizations.md)  |
+|Kuruluşunuz için Whiteboard erişimini yönetmeyi öğrenin|[Whiteboard'a erişimi yönetme](manage-whiteboard-access-organizations.md) |
 |Teams'de paylaşım deneyimi ve belirli kullanıcılarla bağlantı paylaşma hakkında bilgi edinin  |[Whiteboard için paylaşımı yönetme](manage-sharing-organizations.md)  |
+|Whiteboard içeriğinizin ve verilerinizin Azure'da nerede depolandığını bulma ve OneDrive İş  |[Whiteboard için verileri yönetme](manage-data-organizations.md)  |
 |Whiteboard için gizlilik ayarlarını ve tanılama verilerini yapılandırmayı öğrenin |[Whiteboard'da gizlilik ayarlarını yapılandırma](configure-privacy-settings.md)  |
+|Surface Hub'da Beyaz Tahta'yı ayarlamayı öğrenin|[Surface Hub'da Whiteboard'ı ayarlama ve kullanma](/surface-hub/whiteboard-collaboration)|
+|Microsoft Intune veya Microsoft Configuration Manager kullanarak Windows 10 veya üzerini çalıştıran cihazlara Whiteboard dağıtma|[Windows cihazlarda Microsoft Whiteboard'u dağıtma](deploy-on-windows-organizations.md) |
 |Whiteboard'da toplanan kişisel veriler için Genel Veri Koruma Yönetmeliği (GDPR) gereksinimlerini yönetmeyi öğrenin |[Whiteboard'da GDPR veri sahibi isteklerini yönetme](gdpr-requests.md)  |
 
 ### <a name="for-government"></a>Kamu için

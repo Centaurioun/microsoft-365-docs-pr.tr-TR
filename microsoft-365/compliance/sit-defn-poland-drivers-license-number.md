@@ -19,36 +19,36 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Polonya sürücü lisansı numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: e0bb04fb1d6e7dc6a56fc0a487bba3dc9cf60b49
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 120e000e5d7666d213062d812b2b5d6b6555c18e
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948797"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325715"
 ---
-# <a name="poland-drivers-license-number"></a>Polonya sürücü lisans numarası
+# <a name="poland-drivers-license-number"></a>Polonya ehliyet numarası
 
 ## <a name="format"></a>Biçim
 
-İki eğik çizgi içeren 14 basamak
+İki eğik çizgi içeren 11 veya 14 basamak
 
 ## <a name="pattern"></a>Desen
 
-14 basamak ve iki eğik çizgi:
+İki eğik çizgi içeren 11 veya 14 basamak
 
 - beş basamak
 - eğik çizgi
 - iki basamak
 - eğik çizgi
-- yedi basamak
+- dört veya yedi basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_poland_eu_driver's_license_number` , desenle eşleşen içeriği bulur.
 - veya `Keywords_poland_eu_driver's_license_number` anahtar `Keywords_eu_driver's_license_number` sözcüğü bulunur.
