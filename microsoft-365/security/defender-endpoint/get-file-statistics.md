@@ -1,7 +1,7 @@
 ---
-title: Dosya istatistikleri API'sini edinin
-description: Uç Nokta için Microsoft Defender'da dosya istatistikleri API'sini alma hakkında bilgi edinin.
-keywords: api'ler, grafik api'si, desteklenen api'ler, get, file, statistics
+title: Dosya istatistikleri API'lerini alma
+description: Uç Nokta için Microsoft Defender'da verilen dosyanın istatistiklerini almak için Dosya istatistikleri al API'sini kullanmayı öğrenin.
+keywords: api'ler, graf api'leri, desteklenen API'ler, alma, dosya, istatistikler
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,25 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 83901799d6dc5e8f6aa81ad57580e64167bfa134
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 3a7880b9a148ca971be8fb588d4823e85c30db99
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996455"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325445"
 ---
-# <a name="get-file-statistics-api"></a>Dosya istatistikleri API'sini edinin
+# <a name="get-file-statistics-api"></a>Dosya istatistikleri API'lerini alma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,26 +39,26 @@ ms.locfileid: "62996455"
 
 ## <a name="api-description"></a>API açıklaması
 
-Verilen dosyanın istatistiklerini alınır.
+Verilen dosyanın istatistiklerini alır.
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
-2. En büyük değer `lookbackhours` 720 Saat(30 gün) değeridir.
+1. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
+2. için `lookbackhours` en yüksek değer 720 Saat(30 gün) değeridir.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
-Uygulama|File.Read.All|'Dosya profillerini oku'
-Temsilcili (iş veya okul hesabı)|File.Read.All|'Dosya profillerini oku'
+Uygulama|File.Read.All|'Dosya profillerini okuma'
+Temsilci (iş veya okul hesabı)|File.Read.All|'Dosya profillerini okuma'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rol](user-roles.md) oluşturma ve yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -66,17 +66,17 @@ Temsilcili (iş veya okul hesabı)|File.Read.All|'Dosya profillerini oku'
 GET /api/files/{id}/stats
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
 Yetkilendirme|Dize|Taşıyıcı {token}. **Gerekli**.
 
-## <a name="request-uri-parameters"></a>URI parametreleri isteği
+## <a name="request-uri-parameters"></a>İstek URI parametreleri
 
 Name|Tür|Açıklama
 :---|:---|:---
-lookBackHours|Int32|İstatistikleri almak için geri arama saatlerini tanımlar. Varsayılan değer 30 gündür. **İsteğe bağlı**.
+lookBackHours|Int32|İstatistikleri almak için geri arama yaptığımız saatleri tanımlar. Varsayılan değer 30 gündür. **İsteğe bağlı**.
 
 ## <a name="request-body"></a>İstek gövdesi
 
@@ -84,13 +84,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı ve dosya varsa - Gövdede istatistiksel veriler ile 200 Tamam. Dosya yoksa - 404 Bulunamadı.
+Başarılı ve dosya varsa - Gövdede istatistiksel verilerle 200 Tamam. Dosya yoksa - 404 Bulunamadı.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/files/0991a395da64e1c5fbe8732ed11e6be064081d9f/stats?lookBackHours=48
@@ -98,7 +98,7 @@ GET https://api.securitycenter.microsoft.com/api/files/0991a395da64e1c5fbe8732ed
 
 ### <a name="response-example"></a>Yanıt örneği
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 ```json
 {

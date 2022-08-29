@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kullanıcıların e-posta, belgeler ve konuşmalarla oluşturduğu içeriğin denetimini verimli bir şekilde korumak için bekletme ilkesi kullanın. İstediğinizi koruyun ve istemediğinizden kurtulun.
-ms.openlocfilehash: 127d32073e05da84449e5b80eb6a507b94f9f988
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: a6b8e346547d246322593c67a07a0eaeb9f13c18
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300968"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336320"
 ---
 # <a name="create-and-configure-retention-policies"></a>Bekletme ilkeleri oluşturma ve yapılandırma
 
@@ -76,7 +76,7 @@ Birden fazla bekletme ilkeniz varsa ve bekletme etiketlerini de kullandığını
 > [!NOTE]
 > Bekletme ilkeleri [paylaşılan kanalları destekler](/MicrosoftTeams/shared-channels). **Teams kanalı ileti** konumu için bekletme ayarlarını yapılandırdığınızda, bir ekibin paylaşılan kanalları varsa, bu kişiler bekletme ayarlarını üst ekibinden devralır.
 
-1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) **Veri yaşam döngüsü yönetimi** > **Bekletme İlkeleri'ni** seçin.
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) **Veri yaşam döngüsü yönetimi** > **Microsoft 365** > **Bekletme İlkeleri'ni** seçin.
 
 2. Bekletme ilkesi oluştur yapılandırmasını başlatmak için **Yeni bekletme ilkesi'ni** seçin ve yeni bekletme ilkenizi adlandırın.
 
@@ -132,7 +132,7 @@ Microsoft 365 gruplarına, SharePoint sitelerine veya OneDrive hesaplarına uygu
 >
 > Bu özelliği kullanmak için Yammer ağınızın Karma Mod değil [Yerel Mod](/yammer/configure-your-yammer-network/overview-native-mode) olması gerekir.
 
-1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) **Veri yaşam döngüsü yönetimi** > **Bekletme İlkeleri'ni** seçin.
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) **Veri yaşam döngüsü yönetimi** > **Microsoft 365** > **Bekletme İlkeleri'ni** seçin.
 
 2. **Yeni bir bekletme ilkesi** oluşturmak için Yeni bekletme ilkesi'ni seçin.
 
@@ -176,7 +176,7 @@ Bu hizmetlerden herhangi biri için geçerli olan bekletme ilkeleri için aşağ
 - Microsoft 365 grupları
 - Skype Kurumsal
 
-1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) **Veri yaşam döngüsü yönetimi** > **Bekletme İlkeleri'ni** seçin.
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) **Veri yaşam döngüsü yönetimi** > **Microsoft 365** > **Bekletme İlkeleri'ni** seçin.
 
 2. Bekletme ilkesi oluştur yapılandırmasını başlatmak için **Yeni bekletme ilkesi'ni** seçin ve yeni bekletme ilkenizi adlandırın.
 

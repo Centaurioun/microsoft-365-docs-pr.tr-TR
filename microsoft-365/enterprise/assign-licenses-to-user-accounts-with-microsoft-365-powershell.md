@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Bu makalede, PowerShell'i kullanarak lisanssız kullanıcılara Microsoft 365 lisansı atamayı öğrenin.
-ms.openlocfilehash: a336c932ca31cc145e50baaaf9c77a992f39ab33
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 94c3c8dd58ed0ac424e027b30a7d83fd6dda1556
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940392"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336166"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>PowerShell ile kullanıcı hesaplarına Microsoft 365 lisansları atama
 
@@ -34,13 +34,13 @@ ms.locfileid: "65940392"
 
 Kullanıcılar, hesaplarına lisans planından lisans atanana kadar hiçbir Microsoft 365 hizmetini kullanamaz. Lisanssız hesaplara hızla lisans atamak için PowerShell'i kullanabilirsiniz. 
 
-Kullanıcı hesaplarına önce bir konum atanmalıdır. Konum belirtmek, [Microsoft 365 yönetim merkezinde](../admin/add-users/add-users.md) yeni bir kullanıcı hesabı oluşturmanın gerekli bir parçasıdır. 
+Kullanıcı hesaplarına önce bir konum atanmalıdır. Konum belirtmek, [Microsoft 365 yönetim merkezi](../admin/add-users/add-users.md) yeni bir kullanıcı hesabı oluşturmanın gerekli bir parçasıdır. 
 
-Şirket içi Active Directory Etki Alanı Hizmetlerinizden eşitlenen hesapların varsayılan olarak belirtilen bir konumu yoktur. Bu hesaplar için şu konumlardan birini yapılandırabilirsiniz:
+şirket içi Active Directory Etki Alanı Hizmetlerinizden eşitlenen hesapların varsayılan olarak belirtilen bir konumu yoktur. Bu hesaplar için şu konumlardan birini yapılandırabilirsiniz:
 
 - Microsoft 365 yönetim merkezi
 - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
-- [Azure portalı](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory** > **Kullanıcıları** > kullanıcı hesabı > **Profil** > **kişi bilgileri** > **Ülke veya bölge**).
+- [Azure portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory** > **Kullanıcıları** > kullanıcı hesabı > **Profil** > **kişi bilgileri** > **Ülke veya bölge**).
 
 >[!Note]
 >Microsoft 365 yönetim merkezi ile [kullanıcı hesaplarına lisans atamayı öğrenin](../admin/manage/assign-licenses-to-users.md). Ek kaynakların listesi için bkz. [Kullanıcıları ve grupları yönetme](/admin).
@@ -50,7 +50,7 @@ Kullanıcı hesaplarına önce bir konum atanmalıdır. Konum belirtmek, [Micros
 
 İlk olarak [Microsoft 365 kiracınıza bağlanın](/graph/powershell/get-started#authentication).
 
-Bir kullanıcı için lisans atama ve kaldırma için User.ReadWrite.All izin kapsamı veya ['Lisans ata' Graph API başvurusu sayfasında](/graph/api/user-assignlicense) listelenen diğer izinlerden biri gerekir.
+Bir kullanıcıya lisans atama ve kaldırma için User.ReadWrite.All izin kapsamı veya ['Lisans ata' Graph API başvuru sayfasında](/graph/api/user-assignlicense) listelenen diğer izinlerden biri gerekir.
 
 Kiracıda bulunan lisansları okumak için Organization.Read.All izin kapsamı gereklidir.
 
@@ -66,7 +66,12 @@ Kuruluşunuzdaki lisanssız hesapları bulmak için bu komutu çalıştırın.
 Get-MgUser -Filter 'assignedLicenses/$count eq 0' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All
 ```
 
-Yalnızca **UsageLocation** özelliği geçerli bir ISO 3166-1 alfa-2 ülke koduna ayarlanmış kullanıcı hesaplarına lisans atayabilirsiniz. Örneğin, ABD için ABD ve Fransa için FR. Bazı Microsoft 365 hizmetleri belirli ülkelerde kullanılamaz. Daha fazla bilgi için bkz. [Lisans kısıtlamaları hakkında](https://go.microsoft.com/fwlink/p/?LinkId=691730).
+Kuruluşunuzdaki lisanssız eşitlenmiş kullanıcıları bulmak için bu komutu çalıştırın.
+
+```powershell
+Get-MgUser -Filter 'assignedLicenses/$count eq 0 and OnPremisesSyncEnabled eq true' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All -Select UserPrincipalName
+```
+Yalnızca **UsageLocation** özelliği geçerli bir ISO 3166-1 alfa-2 ülke koduna ayarlanmış kullanıcı hesaplarına lisans atayabilirsiniz. Örneğin, Birleşik Devletler için ABD ve Fransa için FR. Bazı Microsoft 365 hizmetleri belirli ülkelerde kullanılamaz. Daha fazla bilgi için bkz. [Lisans kısıtlamaları hakkında](https://go.microsoft.com/fwlink/p/?LinkId=691730).
 
 **UsageLocation** değeri olmayan hesapları bulmak için bu komutu çalıştırın.
 
@@ -106,7 +111,7 @@ $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
 Set-MgUserLicense -UserId "belindan@litwareinc.com" -AddLicenses @{SkuId = $e5Sku.SkuId} -RemoveLicenses @()
 ```
 
-Bu örnekte, kullanıcı **belindan\@** **litwareinc.com SPE_E5** (Microsoft 365 E5) ve **EMSPREMIUM** (ENTERPRISE MOBILITY + SECURITY E5) atanır:
+Bu örnekte kullanıcı **belindan\@** **litwareinc.com SPE_E5** (Microsoft 365 E5) ve **EMSPREMIUM** (ENTERPRISE MOBILITY + SECURITY E5) atanır:
   
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
@@ -119,7 +124,7 @@ $addLicenses = @(
 Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
 ```
 
-Bu örnekte, **MICROSOFTBOOKINGS (Microsoft Bookings**) ve **LOCKBOX_ENTERPRISE** (Müşteri Kasası) hizmetlerinin kapalı olduğu **SPE_E5** (Microsoft 365 E5) atanır:
+Bu örnek **, MICROSOFTBOOKINGS** **(Microsoft Bookings**) ve LOCKBOX_ENTERPRISE (Müşteri Kasası) hizmetlerinin kapalı olduğu **SPE_E5 (Microsoft 365 E5**) atar:
   
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
@@ -137,7 +142,7 @@ $addLicenses = @(
 Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
 ```
 
-Bu örnek **, bir kullanıcıyı SPE_E5** (Microsoft 365 E5) ile güncelleştirir ve kullanıcının mevcut devre dışı planlarını geçerli durumunda bırakırken Sway ve Forms hizmet planlarını kapatır:
+Bu örnek bir kullanıcıyı **SPE_E5** (Microsoft 365 E5) ile güncelleştirir ve kullanıcının mevcut devre dışı planlarını geçerli durumunda bırakırken Sway ve Forms hizmet planlarını kapatır:
   
 ```powershell
 $userLicense = Get-MgUserLicenseDetail -UserId "belinda@fdoau.onmicrosoft.com"
@@ -173,7 +178,7 @@ Set-MgUserLicense -UserId "jamesp@litwareinc.com" -AddLicenses $mgUser.AssignedL
 
 ### <a name="move-a-user-to-a-different-subscription-license-plan"></a>Kullanıcıyı farklı bir aboneliğe taşıma (lisans planı)
 
-Bu örnek, kullanıcıyı **SPE_E3** (Microsoft 365 E3) lisans planından **SPE_E5** (Microsoft 365 E5) lisans planına yükseltmektedir:
+Bu örnek, kullanıcıyı **SPE_E3 (Microsoft 365 E3**) lisans planından **SPE_E5 (Microsoft 365 E5**) lisans planına yükseltmektedir:
 
 ```powershell
 $e3Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E3'
@@ -245,7 +250,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 Kuruluşunuzdaki `Get-MsolAccountSku` her bir plandaki kullanılabilir lisans planlarını ve kullanılabilir lisans sayısını görüntülemek için komutunu çalıştırın. Her plandaki kullanılabilir lisans sayısı **ActiveUnits WarningUnits** - **ConsumedUnits'tir** - . Lisans planları, lisanslar ve hizmetler hakkında daha fazla bilgi için bkz. [PowerShell ile lisansları ve hizmetleri görüntüleme](view-licenses-and-services-with-microsoft-365-powershell.md).
 
 >[!Note]
->PowerShell Core, Windows PowerShell için Microsoft Azure Active Directory Modülü modülünü ve adında **Msol** bulunan cmdlet'leri desteklemez. Bu cmdlet'leri kullanmaya devam etmek için bunları Windows PowerShell'den çalıştırmanız gerekir.
+>PowerShell Core, Windows PowerShell modülü için Microsoft Azure Active Directory Modülünü ve adında **Msol** bulunan cmdlet'leri desteklemez. Bu cmdlet'leri kullanmaya devam etmek için bunları Windows PowerShell çalıştırmanız gerekir.
 >
 
 Kuruluşunuzdaki lisanssız hesapları bulmak için bu komutu çalıştırın.
@@ -254,7 +259,7 @@ Kuruluşunuzdaki lisanssız hesapları bulmak için bu komutu çalıştırın.
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-Yalnızca **UsageLocation** özelliği geçerli bir ISO 3166-1 alfa-2 ülke koduna ayarlanmış kullanıcı hesaplarına lisans atayabilirsiniz. Örneğin, ABD için ABD ve Fransa için FR. Bazı Microsoft 365 hizmetleri belirli ülkelerde kullanılamaz. Daha fazla bilgi için bkz. [Lisans kısıtlamaları hakkında](https://go.microsoft.com/fwlink/p/?LinkId=691730).
+Yalnızca **UsageLocation** özelliği geçerli bir ISO 3166-1 alfa-2 ülke koduna ayarlanmış kullanıcı hesaplarına lisans atayabilirsiniz. Örneğin, Birleşik Devletler için ABD ve Fransa için FR. Bazı Microsoft 365 hizmetleri belirli ülkelerde kullanılamaz. Daha fazla bilgi için bkz. [Lisans kısıtlamaları hakkında](https://go.microsoft.com/fwlink/p/?LinkId=691730).
     
 **UsageLocation** değeri olmayan hesapları bulmak için bu komutu çalıştırın.
 
@@ -284,7 +289,7 @@ Kullanıcıya lisans atamak için PowerShell'de aşağıdaki komutu kullanın.
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-Bu örnek, lisanssız kullanıcı **belindan\@litwareinc.com** **litwareinc:ENTERPRISEPACK** (Office 365 Kurumsal E3) lisans planından bir lisans atar:
+Bu örnek, lisanssız kullanıcı belindan litwareinc.com **litwareinc:ENTERPRISEPACK** (Office 365 Kurumsal E3) lisans **planından\@** bir lisans atar:
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -306,7 +311,7 @@ Bu örnek, tüm lisanssız **kullanıcılara litwareinc:ENTERPRISEPACK** (Office
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-Bu örnek, aynı lisansları Abd'deki Satış departmanındaki lisanssız kullanıcılara atar:
+Bu örnek, Birleşik Devletler Satış departmanındaki lisanssız kullanıcılara aynı lisansları atar:
   
 ```powershell
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"

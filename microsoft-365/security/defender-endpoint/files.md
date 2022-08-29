@@ -1,7 +1,7 @@
 ---
 title: Dosya kaynak türü
-description: Dosyalarla ilgili uç nokta uyarıları için son Microsoft Defender'ı alın.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, get, alerts, recent
+description: Dosyalarla ilgili son Uç Nokta için Microsoft Defender uyarılarını alın.
+keywords: api'ler, graf api'leri, desteklenen API'ler, alma, uyarılar, son kullanılanlar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,40 +13,40 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7fef64136e27b8b9a85163fe9e25fdf59ab6d2aa
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 85ce81f3d99aa789c68e9967f6bcafb68ca681f2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62997162"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323452"
 ---
 # <a name="file-resource-type"></a>Dosya kaynak türü
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:** 
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:** 
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Uç Nokta için Defender'da bir dosya varlığı temsil etme.
+Uç Nokta için Defender'da bir dosya varlığını temsil eder.
 
 ## <a name="methods"></a>Yöntemler
 
-Yöntem|İade Türü |Açıklama
+Yöntem|Dönüş Türü |Açıklama
 :---|:---|:---
-[Dosya al](get-file-information.md) | [dosya](files.md) | Tek bir dosya al 
-[Dosyayla ilgili uyarıları listele](get-file-related-alerts.md) | [uyarı](alerts.md) koleksiyonu | Dosyayla [](alerts.md) ilişkilendirilmiş uyarı varlıklarını almak.
-[Dosyayla ilgili makineler listele](get-file-related-machines.md) | [makine](machine.md) koleksiyonu | Uyarıyla [ilişkilendirilmiş](machine.md) makine varlıklarını al.
-[dosya istatistikleri](get-file-statistics.md) | İstatistik özeti | Verilen dosya için yaygın bilgileri sağlar.
+[Dosya al](get-file-information.md) | [Dosya](files.md) | Tek bir dosya alma 
+[Dosyayla ilgili uyarıları listeleme](get-file-related-alerts.md) | [uyarı](alerts.md) koleksiyonu | Dosyayla ilişkili [uyarı](alerts.md) varlıklarını alın.
+[Dosyayla ilgili makineleri listeleme](get-file-related-machines.md) | [makine](machine.md) koleksiyonu | Uyarıyla ilişkili [makine](machine.md) varlıklarını alın.
+[dosya istatistikleri](get-file-statistics.md) | İstatistik özeti | Verilen dosya için yaygınlığı alır.
 
 
 ## <a name="properties"></a>Özellikler
@@ -55,20 +55,20 @@ Yöntem|İade Türü |Açıklama
 |:---|:---|:---|
 |sha1 | Dize | Dosya içeriğinin Sha1 karması |
 |sha256 | Dize | Dosya içeriğinin Sha256 karması |
-|globalPrevalence | Nullable long | Kuruluş genelinde yaygın dosya kullanımı |
-|globalFirstObserved | DateTimeOffset | Dosya ilk kez gözlemlenirken |
-|globalLastObserved | DateTimeOffset | Dosyanın en son ne zaman gözlemlenmesi |
-|boyut | Nullable long | Dosya boyutu |
-|fileType | Dize | Dosyanın türü |
-|isPeFile | Boole | doğru ise (örneğin, "DLL", "EXE" vb.) |
-|filePublisher | Dize | Dosya yayıncısı |
+|globalPrevalence | Boş değer atanabilir uzun | Kuruluş genelinde dosya yaygınlığı |
+|globalFirstObserved | Datetimeoffset | Dosya ilk kez gözlemlendi |
+|globalLastObserved | Datetimeoffset | Dosyanın son gözlemlenme zamanı |
+|Boyutu | Boş değer atanabilir uzun | Dosyanın boyutu |
+|Filetype | Dize | Dosyanın türü |
+|isPeFile | Boole | Dosya taşınabilir yürütülebilir dosyaysa true (ör. "DLL", "EXE", vb.) |
+|filePublisher | Dize | Dosya yayımcısı |
 |fileProductName | Dize | Ürün adı |
-|imzacı | Dize | Dosya imzacı |
-|issuer | Dize | Dosyayı iletir |
-|signerHash | Dize | İmzalama sertifikasının karması |
-|isValidCertificate | Boole | Sertifikayı imzalama, Uç nokta aracısı için Microsoft Defender tarafından başarıyla doğrulandı |
-|determinationType | Dize | Dosyanın karartma türü |
-|determinationValue | Dize | Karar değeri |
+|Imzala -yan | Dize | Dosya imzalayan |
+|Veren | Dize | Dosya veren |
+|signerHash | Dize | İmzalama sertifikası karması |
+|isValidCertificate | Boole | sertifikayı imzalama Uç Nokta için Microsoft Defender aracısı tarafından başarıyla doğrulandı |
+|determinType | Dize | Dosyanın belirleme türü |
+|determinationValue | Dize | Belirleme değeri |
 
 ## <a name="json-representation"></a>Json gösterimi
 

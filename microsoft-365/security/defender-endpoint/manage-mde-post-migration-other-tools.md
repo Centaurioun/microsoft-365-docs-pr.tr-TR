@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.reviewer: chventou
-ms.openlocfilehash: 71b18f5e78301ac144faef9046420e817c65fa6b
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 4003f2a41674ec6dbaa875235ccc12412d23ddba
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607377"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327189"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>PowerShell, WMI ve MPCmdRun.exe ile Uç Nokta için Microsoft Defender yönetme
 
@@ -31,7 +31,7 @@ ms.locfileid: "66607377"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
 > Kuruluşunuzun cihazlar için tehdit koruması özelliklerini yönetmek için [Microsoft Endpoint Manager](/mem) kullanmanızı öneririz (uç noktalar olarak da adlandırılır). Endpoint Manager [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) ve [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction) içerir.
@@ -55,7 +55,7 @@ PowerShell'i kullanarak Microsoft Defender Virüsten Koruma' yı, yararlanma kor
 |PowerShell ile **saldırı yüzeyi azaltma kurallarını yapılandırma** <br/><br/> *Dosyaları ve klasörleri saldırı yüzeyi azaltma kurallarının dışında tutmak için PowerShell'i kullanabilirsiniz.*|[Saldırı yüzeyi azaltma kurallarını özelleştirme: Dosyaları & klasörleri hariç tutmak için PowerShell kullanma](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction) <br/><br/> Ayrıca [PowerShell ile saldırı yüzeyi azaltma kurallarını ayarlamak için antónio Vasconcelo'nun grafik kullanıcı arabirimi aracına](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI) bakın.|
 |PowerShell ile **Ağ Korumasını Etkinleştirme** <br/><br/> *Ağ Koruması'nı etkinleştirmek için PowerShell'i kullanabilirsiniz.*|[PowerShell ile Ağ Koruması'nı açma](/microsoft-365/security/defender-endpoint/enable-network-protection#powershell)|
 |Fidye yazılımlarına karşı korunmak için **denetimli klasör erişimini yapılandırma** <br/><br/> *[Denetimli klasör erişimi](/microsoft-365/security/defender-endpoint/controlled-folders) , antiransomware koruması olarak da adlandırılır.*|[PowerShell ile denetimli klasör erişimini etkinleştirme](/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell)|
-|Kuruluşunuzun cihazlarına veya cihazlarına gelen veya giden yetkisiz ağ trafiğini engellemek için **Microsoft Defender Güvenlik Duvarı yapılandırma**|[Windows PowerShell kullanarak Gelişmiş Güvenlik Yönetimi ile Microsoft Defender Güvenlik Duvarı](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
+|**Microsoft Defender Güvenlik Duvarı'nı** kuruluşunuzun cihazlarına gelen veya giden yetkisiz ağ trafiğini engelleyecek şekilde yapılandırma|[Windows PowerShell kullanan Gelişmiş Güvenlik Yönetimi ile Microsoft Defender Güvenlik Duvarı](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
 |Kuruluşunuzun Windows çalıştıran cihazlarındaki bilgileri korumak için **şifrelemeyi ve BitLocker'ı yapılandırma**|[BitLocker PowerShell başvuru kılavuzu](/powershell/module/bitlocker/)|
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi"></a>Windows Yönetim Araçları (WMI) ile Uç Nokta için Microsoft Defender yapılandırma
@@ -84,6 +84,6 @@ Ayrıca son kullanıcıların Microsoft Defender Güvenlik Merkezi görüp göre
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Tehdit ve Güvenlik Açığı Yönetimi genel bakışını edinin](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender Güvenlik Açığı Yönetimi'ne genel bakış edinin](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Microsoft Defender Güvenlik Merkezi güvenlik işlemleri panosunu ziyaret edin](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [Intune ile Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration-intune.md)

@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 029be738b8c916ec4eb16970ae2d2ff3c460f639
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 2116306529530561fab9e4c8107a7b97e64fb5a1
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771984"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344711"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'deki öğreticiler ve simülasyonlar
 
@@ -48,7 +48,7 @@ Aşağıdaki tabloda, İş için Defender müşterileri için önerilen öğreti
 |---------|---------|
 | **BelgeNin Arka Kapı Bırakması**     | Bir test cihazına dosya tabanlı kötü amaçlı yazılım getiren bir saldırının benzetimini yapmak. Öğreticide simülasyon dosyasının nasıl kullanılacağı ve Microsoft 365 Defender portalında nelerin izleyebileceğiniz açıklanır. <p>Bu öğretici, test cihazınızda Microsoft Word'un yüklü olmasını gerektirir.   |
 | **Canlı Yanıt**     | Canlı Yanıt ile temel ve gelişmiş komutları kullanmayı öğrenin. Şüpheli bir dosyayı bulmayı, dosyayı düzeltmeyi ve bir cihazda bilgi toplamayı öğrenin.   |
-| **Tehdit & Güvenlik Açığı Yönetimi (temel senaryolar)**     | Üç senaryodan Tehdit ve Güvenlik Açığı Yönetimi hakkında bilgi edinin:<ol><li>Şirketinizin tehdidini ve güvenlik açığına maruz kalmasını azaltın.</li><li>Bir düzeltme isteyin.</li><li>Güvenlik önerileri için bir özel durum oluşturun.</li></ol> <p> Tehdit & Güvenlik Açığı Yönetimi, uç nokta güvenlik açıklarının ve yanlış yapılandırmalarının bulunması, önceliklendirilmesi ve düzeltilmesi için risk tabanlı bir yaklaşım kullanır.      |
+| **Microsoft Defender Güvenlik Açığı Yönetimi(temel senaryolar)**     | Üç senaryo aracılığıyla Defender Güvenlik Açığı Yönetimi hakkında bilgi edinin:<ol><li>Şirketinizin tehdidini ve güvenlik açığına maruz kalmasını azaltın.</li><li>Bir düzeltme isteyin.</li><li>Güvenlik önerileri için bir özel durum oluşturun.</li></ol> <p> Defender Güvenlik Açığı Yönetimi, uç nokta güvenlik açıklarının ve yanlış yapılandırmalarının bulunması, önceliklendirilmesi ve düzeltilmesi için risk tabanlı bir yaklaşım kullanır.      |
 
 Her öğreticide senaryoyu, nasıl çalıştığını ve ne yapılacağını açıklayan bir izlenecek yol belgesi bulunur.
 
@@ -65,7 +65,7 @@ Her öğreticide senaryoyu, nasıl çalıştığını ve ne yapılacağını aç
 
    - **BelgeNin Arka Kapı Bırakması**
    - **Canlı Yanıt**
-   - **Tehdit & Güvenlik Açığı Yönetimi (temel senaryolar)**
+   - **Microsoft Defender Güvenlik Açığı Yönetimi (temel senaryolar)**
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

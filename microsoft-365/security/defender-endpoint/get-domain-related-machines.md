@@ -1,7 +1,7 @@
 ---
-title: Etki alanıyla ilgili makineler API'sini edinin
-description: Uç Nokta için Microsoft Defender'da etki alanıyla ilgili veya bu etki alanındaki bir makineye iletişim sağlayan makine almak için Etki alanıyla ilgili makineler al API'sini kullanmayı öğrenin.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, get, etki alanı, ilgili, cihazlar
+title: Etki alanıyla ilgili makineler API'lerini alma
+description: etki alanıyla ilgili makineleri alma API'sini kullanarak Uç Nokta için Microsoft Defender'daki bir etki alanına veya etki alanından iletişim kuran makineleri nasıl alacağınızı öğrenin.
+keywords: api'ler, graf api'leri, desteklenen API'ler, alma, etki alanı, ilgili, cihazlar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,25 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 179b3bf9ecd1ff7f7045f386d740eff4e83a12c9
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 5f81a9783529a59e240a9ac8c88ae265c409bb9b
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62999131"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324286"
 ---
-# <a name="get-domain-related-machines-api"></a>Etki alanıyla ilgili makineler API'sini edinin
+# <a name="get-domain-related-machines-api"></a>Etki alanıyla ilgili makineler API'lerini alma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,29 +39,29 @@ ms.locfileid: "62999131"
 
 ## <a name="api-description"></a>API açıklaması
 
-Verilen etki alanı [adresine](machine.md) veya bu adresten iletişim kuran bir Makine koleksiyonunu geri ister.
+Belirli bir etki alanı adresiyle veya bu adresten iletişim kuran bir [Makine](machine.md) koleksiyonunu alır.
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. Yapılandırılmış bekletme sürenize göre en son güncelleştirilen cihazlarda sorgu kullanabilirsiniz.
-2. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+1. Yapılandırdığınız saklama süresine göre en son güncelleştirilen cihazları sorgulayabilirsiniz.
+2. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
 Uygulama|Machine.Read.All|'Tüm makine profillerini oku'
 Uygulama|Machine.ReadWrite.All|'Tüm makine bilgilerini okuma ve yazma'
-Temsilcili (iş veya okul hesabı)|Machine.Read|'Makine bilgilerini oku'
-Temsilcili (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma ve yazma'
+Temsilci (iş veya okul hesabı)|Machine.Read|'Makine bilgilerini oku'
+Temsilci (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma ve yazma'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rol oluşturma ve yönetme](user-roles.md)
-> - Yanıtta, cihaz grubu ayarlarına göre yalnızca kullanıcının erişe cevap olarak erişenin cihazlar (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme)](machine-groups.md)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz. [Rolleri oluşturma ve yönetme](user-roles.md)
+> - Yanıt, cihaz grubu ayarlarına göre yalnızca kullanıcının erişebileceği cihazları içerir (Daha fazla bilgi için bkz. [Cihaz gruplarını oluşturma ve yönetme](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -69,7 +69,7 @@ Temsilcili (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma v
 GET /api/domains/{domain}/machines
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -81,13 +81,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı ve etki alanı varsa - Makine varlıklarının listesiyle 200 [Tamam](machine.md) . Etki alanı yoksa - Boş bir kümeyle 200 Tamam.
+Başarılıysa ve etki alanı varsa - [Makine](machine.md) varlıklarının listesiyle 200 Tamam. Etki alanı yoksa - Boş bir kümeyle 200 Tamam.
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiş.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/domains/api.securitycenter.microsoft.com/machines

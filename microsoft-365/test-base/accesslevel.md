@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 06/16/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: d337fd8af1e46f7ddabdf0ccb22ba3fe946f9407
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: ce39eab5dac11b50e052036ae5d236615f40c857
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66861919"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67316369"
 ---
 # <a name="request-to-change-access-level"></a>Erişim düzeyini değiştirme isteği 
 

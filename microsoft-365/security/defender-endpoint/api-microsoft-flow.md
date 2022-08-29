@@ -1,8 +1,8 @@
 ---
-title: Power Automate Connector'ın olayları için bir Flow ayarlamak için kullanma
+title: Olaylar için Akış ayarlamak için Power Automate Bağlayıcısı'nı kullanma
 ms.reviewer: ''
-description: Kiracı Uç Nokta için Microsoft Defender Flow bir olay oluştuğunda tetiklenen bir akış oluşturmak için bu bağlayıcıyı kullanın.
-keywords: akış, desteklenen api'ler, api, Microsoft akışı, sorgu, otomasyon, güç otomatikleştirme
+description: Kiracınızda yeni bir olay oluştuğunda tetiklenecek bir akış oluşturmak için Uç Nokta için Microsoft Defender Flow bağlayıcısını kullanın.
+keywords: akış, desteklenen api'ler, api, Microsoft flow, sorgu, otomasyon, power automate
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,82 +14,82 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 63626978311b679d0f8b520e4b041d92942bd1fd
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 2c800b5e36f7c3f19a3ed11e7a33e9040ffffad2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468005"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328024"
 ---
-# <a name="how-to-use-power-automate-connector-to-set-up-a-flow-for-events"></a>Power Automate Connector'ın olayları için bir Flow ayarlamak için kullanma
+# <a name="how-to-use-power-automate-connector-to-set-up-a-flow-for-events"></a>Olaylar için Akış ayarlamak için Power Automate Bağlayıcısı'nı kullanma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Bu deneyimi Uç Nokta için Microsoft Defender? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Güvenlik yordamlarını otomatik hale getirerek, her modern Güvenlik İşlemleri Merkezi'nin (SOC) standart bir gereksinimi vardır. SOC ekiplerinin en verimli şekilde çalışması için otomasyon gerekir. Microsoft Power Automate, otomatik iş akışları oluşturmanıza ve birkaç dakika içinde  uç yordam otomasyonu oluşturmanıza yardımcı olur. Microsoft Power Automate, tam olarak bunun için yerleşik olan farklı bağlayıcıları destekler.  
+Güvenlik yordamlarının otomatikleştirilmesi, her modern Güvenlik İşlem Merkezi (SOC) için standart bir gereksinimdir. SOC ekiplerinin en verimli şekilde çalışması için otomasyon şarttır. Otomatik iş akışları oluşturmanıza ve birkaç dakika içinde uçtan uca yordam otomasyonu oluşturmanıza yardımcı olması için Microsoft Power Automate'i kullanın. Microsoft Power Automate tam olarak bunun için oluşturulmuş farklı bağlayıcıları destekler.  
 
-Kiracınıza yeni bir uyarının oluşturulduğunda olduğu gibi, bir olay tarafından tetiklenen otomasyonları oluştururken size yol göstermede bu makaleyi kullanın. Microsoft Defender API'nin birçok Power Automate resmi bir Uygulama Bağlayıcısı vardır. 
+Kiracınızda yeni bir uyarı oluşturulduğunda olduğu gibi bir olay tarafından tetiklenen otomasyonlar oluşturma konusunda size yol göstermek için bu makaleyi kullanın. Microsoft Defender API'sinde birçok özelliğe sahip resmi bir Power Automate Bağlayıcısı vardır. 
 
-:::image type="content" source="images/api-flow-0.png" alt-text="Microsoft Defender 365 portalında Eylemler sayfası" lightbox="images/api-flow-0.png" :::
+:::image type="content" source="images/api-flow-0.png" alt-text="Microsoft Defender 365 portalındaki Eylemler sayfası" lightbox="images/api-flow-0.png" :::
 
 > [!NOTE]
-> Premium bağlayıcılar lisans önkoşulları hakkında daha fazla ayrıntı için bkz. [Premium bağlayıcıları için lisanslama](/power-automate/triggers-introduction#licensing-for-premium-connectors).
+> Premium bağlayıcı lisanslama önkoşulları hakkında daha fazla ayrıntı için bkz. [Premium bağlayıcılar için lisanslama](/power-automate/triggers-introduction#licensing-for-premium-connectors).
 
 ## <a name="usage-example"></a>Kullanım örneği
 
-Aşağıdaki örnekte, kiracınız için her Flow uyarı oluştuğunda tetiklenen yeni bir uyarının nasıl oluşturulacak olduğu göstermektedir. Akışı başlatan etkinliği ve bu tetikleyici ortaya geldiğinde bir sonraki eylemin ne zaman alın olacağını tanımlamada size yollenir.  
+Aşağıdaki örnekte, kiracınızda yeni bir Uyarı oluştuğunda tetiklenen bir Flow'un nasıl oluşturulacağı gösterilmektedir. Akışı başlatan olayı ve bu tetikleyici gerçekleştiğinde gerçekleştirilecek sonraki eylemi tanımlama konusunda size yol gösterilir.  
 
-1. [Microsoft Power Automate'te oturum Power Automate](https://flow.microsoft.com).
+1. [Microsoft Power Automate'te](https://flow.microsoft.com) oturum açın.
 
-2. Akışlarım **Yeni** **Otomatik-boş** \> \> **olarak'a gidin**.
+2. **Akışlarım** \> **Yeni** \> **Otomatikleştirilmiş- boş bölümüne** gidin.
 
-    :::image type="content" source="images/api-flow-1.png" alt-text="Microsoft Defender 365 portalında, Akışlarım menü öğesi altındaki Yeni akış bölmesi" lightbox="images/api-flow-1.png":::
+    :::image type="content" source="images/api-flow-1.png" alt-text="Microsoft Defender 365 portalında Akışlarım menü öğesinin altındaki Yeni akış bölmesi" lightbox="images/api-flow-1.png":::
 
-3. Dosyanız için bir ad Flow, tetikleyici olarak "Microsoft Defender ATP Tetikleyicileri" araması ve ardından yeni Uyarılar tetikleyicisini seçin.
+3. Akışınız için bir ad seçin, tetikleyici olarak "Microsoft Defender ATP Tetikleyicileri" ifadesini arayın ve ardından yeni Uyarılar tetikleyicisini seçin.
 
-    :::image type="content" source="images/api-flow-2.png" alt-text=" Microsoft Defender 365 portalında Akışlarınızı seçin tetikleyicisi bölümü" lightbox="images/api-flow-2.png" :::
+    :::image type="content" source="images/api-flow-2.png" alt-text=" Microsoft Defender 365 portalında Akışınızın tetikleyicisini seçin bölümü" lightbox="images/api-flow-2.png" :::
 
-Artık her Flow uyarı oluştuğunda tetiklenen bir uyarı uyarına sahipsiniz.
+Artık her yeni Uyarı gerçekleştiğinde tetiklenen bir Akışa sahipsiniz.
 
 :::image type="content" source="images/api-flow-3.png" alt-text="Tetikleyici açıklaması" lightbox="images/api-flow-3.png":::
 
-Şimdi tek gereken sonraki adımlarınızı seçmek.
-Örneğin, Uyarının Önem Düzeyi Yüksekse cihazı yalıtabilirsiniz ve bu konuda bir e-posta gönderebilirsiniz.
-Uyarı tetikleyicisi yalnızca Uyarı Kimliği'ne ve Makine Kimliği'ne sağlar. Bağlayıcıyı kullanarak bu varlıkları genişletebilirsiniz.
+Şimdi yapmanız gereken tek şey sonraki adımlarınızı seçmektir.
+Örneğin, Uyarının Önem Derecesi Yüksekse cihazı yalıtabilir ve bu konuda bir e-posta gönderebilirsiniz.
+Uyarı tetikleyicisi yalnızca Uyarı Kimliği ve Makine Kimliği sağlar. Bu varlıkları genişletmek için bağlayıcıyı kullanabilirsiniz.
 
-### <a name="get-the-alert-entity-using-the-connector"></a>Bağlayıcıyı kullanarak Uyarı varlıklarını al
+### <a name="get-the-alert-entity-using-the-connector"></a>Bağlayıcıyı kullanarak Uyarı varlığını alma
 
-1. Yeni **adım için Microsoft Defender ATP'yi** seçin.
+1. Yeni adım için **Microsoft Defender ATP'yi** seçin.
 
-2. Uyarılar **- Tek uyarı API'si edinin'i seçin**.
+2. **Uyarılar - Tek uyarı API'si alma'yı** seçin.
 
-3. Son **adımdan Uyarı** Kimliğini Giriş olarak **ayarlayın**.
+3. Son adımdaki **Uyarı Kimliğini** **Giriş** olarak ayarlayın.
 
     :::image type="content" source="images/api-flow-4.png" alt-text="Uyarılar bölmesi"  lightbox="images/api-flow-4.png":::
 
-### <a name="isolate-the-device-if-the-alerts-severity-is-high"></a>Uyarının önem düzeyi Yüksekse cihazı yalıtmak
+### <a name="isolate-the-device-if-the-alerts-severity-is-high"></a>Uyarının önem derecesi Yüksekse cihazı yalıtma
 
-1. **Koşul'a** yeni adım olarak ekleme.
+1. **Koşul'u** yeni bir adım olarak ekleyin.
 
-2. Uyarı önem düzeyi'nin **Yüksek'e eşit olup olduğunu** kontrol edin.
+2. Uyarı önem derecesinin **Yüksek'e eşit** olup olmadığını denetleyin.
 
-   Aldıysanız, **Microsoft Defender ATP - Makine Kimliği ile makine** eylemlerini yalıtmak ve bir açıklama eklemek.
+   Evet ise, Makine Kimliği ve açıklama ile **Microsoft Defender ATP - Makineyi yalıt** eylemini ekleyin.
 
     :::image type="content" source="images/api-flow-5.png" alt-text="Eylemler bölmesi"  lightbox="images/api-flow-5.png":::
 
-3. Uyarı ve Yalıtım hakkında e-posta göndermek için yeni bir adım ekleyin. E-posta bağlayıcısı kullanımı çok kolay olan birden çok e-posta bağlayıcısı Outlook Gmail gibi.
+3. Uyarı ve Yalıtım hakkında e-posta göndermeye yönelik yeni bir adım ekleyin. Outlook veya Gmail gibi kullanımı çok kolay birden çok e-posta bağlayıcısı vardır.
 
 4. Akışınızı kaydedin.
 
-Ayrıca, Gelişmiş Av **sorgularını** ve çok daha fazlasını çalıştıran bir zamanlanmış akış da oluşturabilirsiniz!
+Gelişmiş Tehdit Avcılığı sorguları ve çok daha fazlasını çalıştıran **zamanlanmış** bir akış da oluşturabilirsiniz!
 
 ## <a name="related-topic"></a>İlgili konu
-- [Uç Nokta için Microsoft Defender API'leri](apis-intro.md)
+- [api'leri Uç Nokta için Microsoft Defender](apis-intro.md)

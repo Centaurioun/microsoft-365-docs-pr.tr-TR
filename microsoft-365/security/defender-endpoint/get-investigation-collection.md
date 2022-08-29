@@ -1,7 +1,7 @@
 ---
-title: Liste Soruşturmaları API'si
-description: Araştırma koleksiyonuna almak üzere ilgili çağrılar oluşturmak için bu API'yi kullanın
-keywords: api'ler, grafik api'leri, desteklenen api'ler, Araştırma koleksiyonu
+title: Araştırma listeleme API'si
+description: Araştırma koleksiyonunu almakla ilgili çağrılar oluşturmak için bu API'yi kullanın
+keywords: api'ler, graf api'leri, desteklenen API'ler, Araştırma koleksiyonu
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,25 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f5a37d8cbbaeca3dd14c51e1d5c6adcefabf2db8
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 746cf78bce54651cc24dd07a90c5fc11772903d2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996454"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326001"
 ---
-# <a name="list-investigations-api"></a>Liste Soruşturmaları API'si
+# <a name="list-investigations-api"></a>Araştırma listeleme API'si
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,36 +39,36 @@ ms.locfileid: "62996454"
 
 ## <a name="api-description"></a>API açıklaması
 
-Bir Araştırma koleksiyonunu [alınır](investigation.md).
+[Araştırma koleksiyonunu alır](investigation.md).
 
-[OData V4 sorgularını destekler](https://www.odata.org/documentation/).
+[OData V4 sorgularını](https://www.odata.org/documentation/) destekler.
 
-OData'nın `$filter` sorgusu şu şekilde destekler: `startTime`, `id`, ve `state``machineId` `triggeringAlertId` özellikleri.
-<br>```$stop``` maksimum değeri 10.000
+OData'nın `$filter` sorgusu, , `id`, `state``machineId` ve `triggeringAlertId` özelliklerinde `startTime`desteklenir.
+<br>```$stop``` maksimum değeri 10.000 olan
 <br>```$skip```
 
-Uç Nokta için [Microsoft Defender ile OData sorguları ile ilgili örneklere bakın](exposed-apis-odata-samples.md)
+[Uç Nokta için Microsoft Defender ile OData sorgularında](exposed-apis-odata-samples.md) örneklere bakın
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. En büyük sayfa boyutu 10.000'tir.
-2. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+1. Sayfa boyutu üst sınırı 10.000'dir.
+2. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
 Uygulama|Alert.Read.All|'Tüm uyarıları oku'
 Uygulama|Alert.ReadWrite.All|'Tüm uyarıları okuma ve yazma'
-Temsilcili (iş veya okul hesabı)|Alert.Read|'Uyarıları oku'
-Temsilcili (iş veya okul hesabı)|Alert.ReadWrite|'Okuma ve yazma uyarıları'
+Temsilci (iş veya okul hesabı)|Alert.Read|'Uyarıları okuma'
+Temsilci (iş veya okul hesabı)|Alert.ReadWrite|'Uyarıları okuma ve yazma'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rol](user-roles.md) oluşturma ve yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -76,7 +76,7 @@ Temsilcili (iş veya okul hesabı)|Alert.ReadWrite|'Okuma ve yazma uyarıları'
 GET https://api.securitycenter.microsoft.com/api/investigations
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -88,13 +88,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem Araştırma varlıkları koleksiyonuyla birlikte 200, Tamam [yanıt kodu](investigation.md) döndürür.
+Başarılı olursa, bu yöntem [Bir Araştırma](investigation.md) varlıkları koleksiyonuyla 200 Tamam yanıt kodu döndürür.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-Tüm soruşturmaları almak için bir istek örneği şöyledir:
+Tüm araştırmalara ulaşmak için bir istek örneği aşağıda verilmiştir:
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/investigations
@@ -102,7 +102,7 @@ GET https://api.securitycenter.microsoft.com/api/investigations
 
 ### <a name="response-example"></a>Yanıt örneği
 
-Yanıtın örneği:
+Yanıtın bir örneği aşağıda verilmiştir:
 
 ```json
 {

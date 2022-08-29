@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Uyumluluk Yöneticisi'nde iyileştirme eylemleriyle çalışarak denetimleri uygulamayı ve test etmeyi öğrenin. İş, depolama belgeleri ve dışarı aktarma raporları atayın.
-ms.openlocfilehash: ca6855c544451661f9a8bd3cc9f59a111eeed360
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4eb75e23825e8e60fc0ea3ecfcbb75e1292ac5e9
+ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625511"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67333774"
 ---
 # <a name="working-with-improvement-actions-in-compliance-manager"></a>Uyumluluk Yöneticisi'nde iyileştirme eylemleriyle çalışma
 
@@ -184,18 +184,19 @@ Eyleminizin ayrıntılar sayfasına geri dönersiniz. **Genel Bakış** bölüm�
 
 ## <a name="perform-work-and-store-documentation"></a>İş ve mağaza belgeleri gerçekleştirme
 
-Uygulama ve test çalışmalarıyla ilgili dosyaları ve **notları doğrudan Belgeler** bölümüne yükleyebilirsiniz. Bu ortam, uyumluluk standartlarını ve düzenlemelerini karşılamak için denetimlerin memnuniyetini göstermenize yardımcı olan güvenli, merkezi bir depodur. Salt okunur erişimi olan tüm kullanıcılar bu bölümdeki içeriği okuyabilir. Yalnızca düzenleme haklarına sahip kullanıcılar dosyaları karşıya yükleyebilir ve indirebilir.
+Uygulama ve test çalışmalarıyla ilgili dosya ve bağlantı biçimindeki kanıtları doğrudan **Belgeler** bölümüne yükleyebilirsiniz. Bu ortam, uyumluluk standartlarını ve düzenlemelerini karşılamak için denetimlerin memnuniyetini göstermenize yardımcı olan güvenli, merkezi bir depodur. Salt okunur erişimi olan tüm kullanıcılar bu bölümdeki içeriği okuyabilir. Yalnızca düzenleme haklarına sahip kullanıcılar dosyaları karşıya yükleyebilir ve indirebilir.
 
-#### <a name="uploaded-documents"></a>Karşıya yüklenen belgeler
+#### <a name="upload-evidence"></a>Karşıya kanıt yükleme
 
-- İlgili dosyaları karşıya yüklemek için **Belgeleri yönet'i** seçin.
-- Belgeleri yönetme açılır penceresi açıldığında **Belge ekle'yi** ve ardından sisteminizden dosyanızı seçin. Kabul edilen dosya türleri:
+- İyileştirme eyleminin ayrıntılar sayfasında **Belgeler** sekmesine gidin ve **Kanıt ekle'yi** seçin.
+- **Kanıt ekle** açılır bölmesinde **Belge** mi yoksa **Bağlantı** mı ekleneceğini seçin. **Belge** için kabul edilen dosya türleri şunlardır:
   - Belgeler (.doc, .xls, .ppt, .txt, .pdf)
   - Görüntüler (.jpg, .png)
   - Video (.mkv)
   - Sıkıştırılmış dosyalar (.zip, .rar)
-- Dosyanız bölmede çözümlenince, dosya ekini otomatik olarak kaydeden **Kapat'ı** seçin. Ardından karşıya **yüklenen belgelerin** altında listelenen dosyayı görürsünüz.
-- Belgeyi indirmek veya silmek için, belge listesinin altından **Belgeleri yönet'i** seçin. Açılır bölmede belge satırını seçerek vurgulayın ve ardından **İndir** veya **Sil'i** seçin.
+- Karşıya yüklemek istediğiniz dosyayı seçmek için gözatın. Bağlantıyı karşıya yüklüyorsanız bağlantı için bir ad ve URL'si girin. İşiniz bittiğinde **Ekle'yi** seçin. Öğeniz artık **Belgeler** sekmesinde görüntülenir.
+
+Kanıt dosyalarını veya bağlantılarını silmek için, öğenin adının sağındaki eylem menüsünü (üç nokta) seçin ve **Sil'i** seçin. İstendiğinde silme işlemini onaylayın.
 
 ## <a name="assign-improvement-action-to-assessor-for-completion"></a>Tamamlama için değerlendiriciye geliştirme eylemi atama
 
@@ -251,3 +252,5 @@ Uygulama veya test durumunda değişiklik ya da puan artışı veya düşüş gi
 ## <a name="export-a-report"></a>Raporu dışarı aktarma
 
 Tüm iyileştirme eylemlerinizi ve iyileştirme eylemleri sayfasında gösterilen filtre kategorilerini içeren bir Excel çalışma sayfasını indirmek için ekranınızın sol üst köşesindeki **Dışarı Aktar'ı** seçin.
+
+Dışarı aktarılan Excel dosyası aynı anda birden çok geliştirme eylemini güncelleştirmek için de kullandığınız dosyadır. [Birden çok iyileştirme eylemini güncelleştirmek](compliance-manager-update-actions.md) için dışarı aktarma dosyasını düzenleme hakkında ayrıntılı bilgi edinin.

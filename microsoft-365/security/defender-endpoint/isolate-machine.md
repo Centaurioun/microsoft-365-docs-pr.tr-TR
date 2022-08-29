@@ -1,7 +1,7 @@
 ---
-title: Makine API'sini yalıt
-description: Uç Nokta için Microsoft Defender'da bir cihazın dış ağa erişimini ayırmak için Makine API'sini yalıtmak hakkında bilgi edinin.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, cihazı yalıtmak
+title: Makine API'lerini yalıtma
+description: Uç Nokta için Microsoft Defender'da bir cihazı dış ağa erişimini yalıtmak için Makine YALıT API'sini kullanmayı öğrenin.
+keywords: api'ler, graf api'leri, desteklenen API'ler, cihazı yalıtma
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,27 +13,27 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 52063135280d9e91ca531546b4ae03cf5b42ccbf
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 7f477c1e8133d0b01b71d7264caf3b0da2a53d3b
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996505"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327563"
 ---
-# <a name="isolate-machine-api"></a>Makine API'sini yalıt
+# <a name="isolate-machine-api"></a>Makine API'lerini yalıtma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -41,34 +41,34 @@ ms.locfileid: "62996505"
 
 ## <a name="api-description"></a>API açıklaması
 
-Bir cihazı dış ağa erişimini yalıtır.
+Bir cihazı dış ağa erişmeye karşı yalıtıyor.
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+1. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
 > [!IMPORTANT]
 >
-> - Tam yalıtım, 11. Windows 10 sürüm 1703 ve Windows cihazlar için kullanılabilir.
-> - Seçmeli yalıtım; 11. Windows 10, sürüm 1709 veya sonraki sürümlerde ve Windows kullanılabilir.
-> - Bir cihazı yorumlarken yalnızca belirli işlemlere ve hedeflere izin verilir. Bu nedenle, tam VPN hedeflerinin arkasındaki cihazlar cihaz yalıtılmış halde uç nokta için Microsoft Defender bulut hizmetine ulaşamayabilecektir. Uç Nokta için Microsoft Defender ve bulut tabanlı korumayla ilgili Microsoft Defender Virüsten Koruma bir VPN kullanılması önerilir.
+> - tam yalıtım, Windows 10, sürüm 1703 ve Windows 11 cihazlarda kullanılabilir.
+> - Seçmeli yalıtım, Windows 10, sürüm 1709 veya üzeri ve Windows 11 cihazlarda kullanılabilir.
+> - Bir cihazı yalıtırken yalnızca belirli işlemlere ve hedeflere izin verilir. Bu nedenle, tam VPN tünelinin arkasındaki cihazlar, cihaz yalıtıldıktan sonra Uç Nokta için Microsoft Defender bulut hizmetine erişemez. Uç Nokta için Microsoft Defender ve Microsoft Defender Virüsten Koruma bulut tabanlı korumayla ilgili trafik için bölünmüş tünel VPN kullanmanızı öneririz.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
-Uygulama|Makine.Yalıt|'Makine yalıt'
-Temsilcili (iş veya okul hesabı)|Makine.Yalıt|'Makine yalıt'
+Uygulama|Machine.Isolate|'Makineyi yalıt'
+Temsilci (iş veya okul hesabı)|Machine.Isolate|'Makineyi yalıt'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Etkin düzeltme eylemleri' (Daha fazla bilgi için bkz [.](user-roles.md) Rol oluşturma ve yönetme)
-> - Kullanıcının, cihaz grubu ayarlarına göre cihaza erişimi olması gerekir (Daha fazla bilgi için bkz. Cihaz [gruplarını oluşturma](machine-groups.md) ve yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Etkin düzeltme eylemleri' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
+> - Kullanıcının cihaz grubu ayarlarına göre cihaza erişimi olmalıdır (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -76,36 +76,36 @@ Temsilcili (iş veya okul hesabı)|Makine.Yalıt|'Makine yalıt'
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/isolate
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
 Yetkilendirme|Dize|Taşıyıcı {token}. **Gerekli**.
-İçerik Türü|dize|application/json. **Gerekli**.
+İçerik Türü|Dize|application/json. **Gerekli**.
 
 ## <a name="request-body"></a>İstek gövdesi
 
-İstek gövdesinde, aşağıdaki parametreleri olan bir JSON nesnesi girin:
+İstek gövdesinde aşağıdaki parametreleri içeren bir JSON nesnesi sağlayın:
 
 Parametre|Tür|Açıklama
 :---|:---|:---
-Açıklama ekleme|Dize|Eylemle ilişkilendirmek için açıklama. **Gerekli**.
-IsolationType|Dize|Yalıtma türü. İzin verilen değerler: 'Dolu' veya 'Seçmeli'.
+Açıklama ekleme|Dize|Eylemle ilişkilendirilecek açıklama. **Gerekli**.
+IsolationType|Dize|Yalıtımın türü. İzin verilen değerler şunlardır: 'Tam' veya 'Seçmeli'.
 
-**IsolationType** , gerçekleştirmek için yalıtım türünü kontrol eder ve aşağıdakilerden biri olabilir:
+**IsolationType** gerçekleştirilecek yalıtım türünü denetler ve aşağıdakilerden biri olabilir:
 
 - Tam: Tam yalıtım
-- Seçmeli: Yalnızca sınırlı uygulama kümelerinin ağa erişimini kısıtlama (daha ayrıntılı bilgi [için bkz. Cihazları ağdan](respond-machine-alerts.md#isolate-devices-from-the-network) ayırma)
+- Seçmeli: Yalnızca sınırlı uygulama kümesinin ağa erişimini kısıtlayın (daha fazla ayrıntı için bkz [. Cihazları ağdan yalıtma](respond-machine-alerts.md#isolate-devices-from-the-network) )
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem yanıt gövdesinde 201 - Yanıt kodu [ve Makine](machineaction.md) Eylemi oluşturuldu hata kodunu döndürür.
+Başarılı olursa, bu yöntem yanıt gövdesinde 201 - Oluşturulan yanıt kodunu ve [Makine Eylemi'ni](machineaction.md) döndürür.
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/isolate
@@ -118,4 +118,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 }
 ```
 
-- Cihazı yalıtma tarafından serbest bırakmak için bkz. [Cihazı yalıtımtan ayırmayı bırakma](unisolate-machine.md).
+- Bir cihazı yalıtımdan serbest bırakmak için bkz. [Cihazı yalıtımdan serbest bırakma](unisolate-machine.md).

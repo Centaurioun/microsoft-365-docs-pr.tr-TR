@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7ca212cf6cdacdaf374dbe65f4fd88c74712bb34
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 8a0a191d3e418b189af029f2c459bed93a0e8c54
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101854"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331917"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Uç Nokta için Microsoft Defender API'leri aracılığıyla iş ortağı erişimi
 
@@ -36,7 +36,7 @@ ms.locfileid: "66101854"
 > Gelişmiş avcılık özellikleri İş için Defender'a dahil değildir. Bkz[. İş için Microsoft Defender Uç Nokta için Microsoft Defender Planları 1 ve 2 ile karşılaştırma](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "66101854"
 
 Bu sayfada, müşterileriniz adına Uç Nokta için Microsoft Defender program aracılığıyla erişim elde etmek için bir Azure Active Directory (Azure AD) uygulamasının nasıl oluşturulacağı açıklanır.
 
-Uç Nokta için Microsoft Defender, bir dizi programlı API aracılığıyla verilerinin ve eylemlerinin büyük bir kısmını kullanıma sunar. Bu API'ler, iş akışlarını otomatikleştirmenize ve Uç Nokta için Microsoft Defender özelliklerine göre yenilik oluşturmanıza yardımcı olur. API erişimi için OAuth2.0 kimlik doğrulaması gerekir. Daha fazla bilgi için bkz[. OAuth 2.0 Yetkilendirme Kodu Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Uç Nokta için Microsoft Defender, bir dizi programlı API aracılığıyla verilerinin ve eylemlerinin büyük bir kısmını kullanıma sunar. Bu API'ler, iş akışlarını otomatikleştirmenize ve Uç Nokta için Microsoft Defender özelliklerine göre yenilik oluşturmanıza yardımcı olur. API erişimi için OAuth2.0 kimlik doğrulaması gerekir. Daha fazla bilgi için bkz [. OAuth 2.0 Yetkilendirme Kodu Akışı](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Genel olarak, API'leri kullanmak için aşağıdaki adımları uygulamanız gerekir:
 
@@ -59,7 +59,7 @@ Aşağıdaki adımlar bir Azure AD uygulaması oluşturma, Uç Nokta için Micro
 
 1. **Genel Yönetici** rolüne sahip kullanıcıyla [Azure kiracınızda](https://portal.azure.com) oturum açın.
 
-2. **yeni kayıt Uygulama kayıtları Azure Active Directory** \>  \> gidin.
+2. **Azure Active Directory** \> **Uygulama kayıtları** \> **Yeni kayıt'a** gidin.
 
    :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Uygulama kaydı bölmesine gezinti" lightbox="images/atp-azure-new-app2.png":::
 
@@ -174,7 +174,7 @@ return $token
 > [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet paketi ve Azure AD Kimlik Doğrulama Kitaplığı (ADAL) kullanım dışı bırakıldı. 30 Haziran 2020'den bu yana yeni özellik eklenmemiş. Yükseltmenizi kesinlikle öneririz. Diğer ayrıntılar için [geçiş kılavuzuna](/azure/active-directory/develop/msal-migration) bakın.
 
 - Yeni konsol uygulaması oluşturma
-- [NuGet Microsoft.Identity.Client'ı](https://www.nuget.org/packages/Microsoft.Identity.Client/) yükleme
+- NuGet [Microsoft.Identity.Client'ı](https://www.nuget.org/packages/Microsoft.Identity.Client/) yükleme
 - Kullanarak aşağıdakini ekleyin
 
     ```console

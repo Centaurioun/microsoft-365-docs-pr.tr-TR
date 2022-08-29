@@ -3,27 +3,27 @@ title: Temel API & SDK'sını test edin
 description: Temel API & SDK'sını test edin
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: 6ae0fdf9cc49faaaff84eb3f96e076d1efba8a4c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5a3959e723dbf78f56de0b33b280de13b1c3b59e
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077448"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315931"
 ---
 # <a name="manage-your-resource-with-sdk--apis"></a>SDK & API'leri ile kaynağınızı yönetme
 
-Otomasyon, DevOps ve çevik geliştirmenin önemli bir yönüdür. Microsoft 365 kaynakları için Test Tabanı'nı yönetmek, test sonuçlarını program aracılığıyla almak ve ci araçlarımızla tümleştirmek mi istiyorsunuz? Test Temel API'leri/SDK'ları tüm bunları ve daha fazlasını başarmanıza yardımcı olabilir!
+Otomasyon, DevOps ve çevik geliştirmenin önemli bir yönüdür. Microsoft 365 kaynakları için Test Tabanı'nı yönetmek, test sonuçlarını program aracılığıyla almak ve bunları CI araçlarımızla tümleştirmek mi istiyorsunuz? Test Temel API'leri/SDK'ları tüm bunları ve daha fazlasını başarmanıza yardımcı olabilir!
 
 Bu API'ler/SDK, BT uzmanlarının ve uygulama geliştiricilerinin şunları yapmasını sağlar:
 

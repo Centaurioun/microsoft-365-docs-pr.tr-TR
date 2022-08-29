@@ -1,7 +1,7 @@
 ---
 title: Rol tabanlı erişim denetimi için roller oluşturma ve yönetme
-description: Rol oluşturun ve rol tabanlı erişim denetimi uygulamasının bir parçası olarak bu role atanan izinleri Microsoft 365 Defender
-keywords: kullanıcı rolleri, roller, access rbac
+description: Rol oluşturma ve Microsoft 365 Defender rol tabanlı erişim denetimi uygulamasının bir parçası olarak role atanan izinleri tanımlama
+keywords: kullanıcı rolleri, roller, erişim rbac
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,107 +15,107 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f853df2d37cc41b2effb55ff10418af67df2bd6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 91f9f7c48d63b200db28b29530d5c1f398877283
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324081"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345063"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Rol tabanlı erişim denetimi için roller oluşturma ve yönetme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-roles-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-roles-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Rol oluşturma ve rolü bir grup Azure Active Directory atama
+## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Rol oluşturma ve rolü bir Azure Active Directory grubuna atama
 
-Aşağıdaki adımlar, iş yerlerinde roller oluşturmanıza Microsoft 365 Defender. Önceden bir kullanıcı grubu oluşturduğunuz Azure Active Directory varsaymaktadır.
+Aşağıdaki adımlar, Microsoft 365 Defender'da rol oluşturma konusunda size yol gösterir. Azure Active Directory kullanıcı gruplarını önceden oluşturduğunuz varsayılır.
 
-1. Bir Güvenlik <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> veya Genel yönetici rolü atanmış bir hesabı kullanarak oturum açın.
+1. Atanmış bir Güvenlik yöneticisi veya <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Genel yönetici</a> rolü olan hesabı kullanarak Microsoft 365 Defender oturum açın.
 
-2. Gezinti bölmesinde, Uç Noktalar **Rollerini Ayarlar** \> **Seçin** \> (**İzinler'in altında**).
+2. Gezinti bölmesinde **Ayarlar** \> **Uç Noktaları** \> **Rolleri'ni** seçin ( **İzinler'in** altında).
 
-3. Öğe **ekle'yi seçin**.
+3. **Öğe ekle'yi** seçin.
 
 4. Role atamak istediğiniz rol adını, açıklamasını ve izinlerini girin.
 
-5. Rolü **bir** Azure AD Güvenlik grubuna atamak için Sonraki'yi seçin.
+5. Rolü bir Azure AD Güvenlik grubuna atamak için **İleri'yi** seçin.
 
-6. Filtreyi kullanarak bu role eklemek istediğiniz Azure AD grubunu seçin.
+6. Bu role eklemek istediğiniz Azure AD grubunu seçmek için filtreyi kullanın.
 
-7. **Kaydedin ve kapatın**.
+7. **Kaydedip kapatın**.
 
-8. Yapılandırma ayarlarını uygulama.
+8. Yapılandırma ayarlarını uygulayın.
 
 > [!IMPORTANT]
-> Rolleri oluşturduktan sonra, bir cihaz grubu oluşturmanız ve yeni oluşturduğunuz bir role ataarak cihaz grubuna erişim sağlamanız gerekir.
+> Rolleri oluşturduktan sonra, yeni oluşturduğunuz bir role atayarak bir cihaz grubu oluşturmanız ve cihaz grubuna erişim sağlamanız gerekir.
 
 ### <a name="permission-options"></a>İzin seçenekleri
 
 - **Verileri görüntüleme**
   - **Güvenlik işlemleri** - Portalda tüm güvenlik işlemleri verilerini görüntüleme
-  - **Tehdit güvenlik açığı yönetimi**- Portalda Tehdit ve Güvenlik Açığı Yönetimi verilerini görüntüleme
+  - **Tehdit ve güvenlik açığı yönetimi** - Portalda Defender Güvenlik Açığı Yönetimi verilerini görüntüleme
 
 - **Etkin düzeltme eylemleri**
-  - **Güvenlik işlemleri** - Yanıt eylemleri alma, bekleyen düzeltme eylemlerini onaylama veya yok sayma, otomasyon ve göstergeler için izin verilen/engellenen listeleri yönetme
-  - **Tehdit ve güvenlik açığı yönetimi- Özel durum işleme** - Yeni özel durumlar oluşturma ve etkin özel durumları yönetme
-  - **Tehdit ve güvenlik açığı yönetimi- Düzeltme işleme** - Yeni düzeltme istekleri gönderme, bilet oluşturma ve mevcut düzeltme etkinliklerini yönetme
+  - **Güvenlik işlemleri** - Yanıt eylemleri gerçekleştirme, bekleyen düzeltme eylemlerini onaylama veya kapatma, otomasyon ve göstergeler için izin verilen/engellenen listeleri yönetme
+  - **Tehdit ve güvenlik açığı yönetimi - Özel durum işleme** - Yeni özel durumlar oluşturma ve etkin özel durumları yönetme
+  - **Tehdit ve güvenlik açığı yönetimi - Düzeltme işleme** - Yeni düzeltme istekleri gönderme, bilet oluşturma ve mevcut düzeltme etkinliklerini yönetme
 
-- **Uyarılar soruşturması** - Uyarıları yönetme, otomatik soruşturmalar başlatma, taramaları çalıştırma, soruşturma paketleri toplama, cihaz etiketlerini yönetme ve yalnızca taşınabilir yürütülebilir (PE) dosyaları indirme
+- **Uyarı araştırması - Uyarıları** yönetme, otomatik araştırma başlatma, tarama çalıştırma, araştırma paketlerini toplama, cihaz etiketlerini yönetme ve yalnızca taşınabilir yürütülebilir (PE) dosyaları indirme
 
-- **Portal sistem ayarlarını yönetme** - Depolama ayarlarını, SIEM'yi ve tehdit intel API ayarlarını (genel olarak geçerlidir), gelişmiş ayarları, otomatik dosya yüklemelerini, rolleri ve cihaz gruplarını yapılandırma
+- **Portal sistem ayarlarını yönetme** - Depolama ayarlarını, SIEM ve tehdit intel API ayarlarını yapılandırma (genel olarak geçerlidir), gelişmiş ayarlar, otomatik dosya yüklemeleri, roller ve cihaz grupları
 
     > [!NOTE]
-    > Bu ayar yalnızca Uç nokta yöneticisi (varsayılan) için Microsoft Defender rolünde kullanılabilir.
+    > Bu ayar yalnızca Uç Nokta için Microsoft Defender yöneticisi (varsayılan) rolünde kullanılabilir.
 
-- **Güvenlik Merkezi'nde** güvenlik ayarlarını yönetme - Uyarı gizleme ayarlarını yapılandırma, otomasyon için klasör dışlamalarını yönetme, cihaz ekleme ve çıkarılmış cihazları ekleme, e-posta bildirimlerini yönetme ve değerlendirme laboratuvarı yönetme
+- **Güvenlik Merkezi'nde güvenlik ayarlarını yönetme** - Uyarı engelleme ayarlarını yapılandırma, otomasyon için klasör dışlamalarını yönetme, cihazları ekleme ve çıkarma, e-posta bildirimlerini yönetme ve değerlendirme laboratuvarını yönetme
 
 - **Canlı yanıt özellikleri**
   - **Temel** komutlar:
     - Canlı yanıt oturumu başlatma
-    - Uzak cihazda salt okunur canlı yanıt komutlarını gerçekleştirme (dosya kopyalama ve yürütme hariç)
-    - Canlı yanıt yoluyla uzak cihazdan dosya indirme
+    - Uzak cihazda salt okunur canlı yanıt komutları gerçekleştirme (dosya kopyalama ve yürütme hariç)
+    - Canlı yanıt aracılığıyla uzak cihazdan bir dosya indirme
   - **Gelişmiş** komutlar:
-    - Dosya sayfasından PE ve PE olmayan dosyaları indirme
-    - Upload uzak cihaza dosya yükleme
-    - Dosya kitaplığından betiği görüntüleme
-    - Dosyalar kitaplığından uzak cihazda betik yürütme
+    - PE ve PE olmayan dosyaları dosya sayfasından indirme
+    - Uzak cihaza dosya yükleme
+    - Dosya kitaplığından betik görüntüleme
+    - Dosya kitaplığından uzak cihazda betik yürütme
 
-Kullanılabilir komutlar hakkında daha fazla bilgi için bkz [. Canlı yanıtı kullanarak cihazları araştırma](live-response.md).
+Kullanılabilir komutlar hakkında daha fazla bilgi için bkz [. Canlı yanıt kullanarak cihazları araştırma](live-response.md).
 
 ## <a name="edit-roles"></a>Rolleri düzenleme
 
-1. Hesapta Güvenlik <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> veya Genel yönetici rolü atanmış olarak oturum açın.
+1. Güvenlik yöneticisi veya <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Genel yönetici</a> rolü atanmış hesabı kullanarak Microsoft 365 Defender oturum açın.
 
-2. Gezinti bölmesinde, Uç Noktalar **Rollerini Ayarlar** \> **Seçin** \> (**İzinler'in altında**).
+2. Gezinti bölmesinde **Ayarlar** \> **Uç Noktaları** \> **Rolleri'ni** seçin ( **İzinler'in** altında).
 
 3. Düzenlemek istediğiniz rolü seçin.
 
 4. **Düzenle**’ye tıklayın.
 
-5. Role atanan ayrıntıları veya grupları değiştirebilirsiniz.
+5. Role atanan ayrıntıları veya grupları değiştirin.
 
-6. Kaydet ve **kapat'a tıklayın**.
+6. **Kaydet'e tıklayın ve kapatın**.
 
 ## <a name="delete-roles"></a>Rolleri silme
 
-1. Hesapta Güvenlik <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> veya Genel yönetici rolü atanmış olarak oturum açın.
+1. Güvenlik yöneticisi veya <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Genel yönetici</a> rolü atanmış hesabı kullanarak Microsoft 365 Defender oturum açın.
 
-2. Gezinti bölmesinde, Uç Noktalar **Rollerini Ayarlar** \> **Seçin** \> (**İzinler'in altında**).
+2. Gezinti bölmesinde **Ayarlar** \> **Uç Noktaları** \> **Rolleri'ni** seçin ( **İzinler'in** altında).
 
 3. Silmek istediğiniz rolü seçin.
 
-4. Açılan düğmeye tıklayın ve Rolü **sil'i seçin**.
+4. Açılan düğmeye tıklayın ve **Rolü sil'i** seçin.
 
 ## <a name="related-topic"></a>İlgili konu
 
 - [Portala erişmek için kullanıcı temel izinleri](basic-permissions.md)
-- [Cihaz grupları oluşturma ve yönetme](machine-groups.md)
+- [Cihaz grupları oluşturun ve yönetin](machine-groups.md)

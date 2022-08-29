@@ -1,7 +1,7 @@
 ---
-title: Makine oturum açma kullanıcıları API'sini edinin
-description: Uç Nokta için Microsoft Defender'da bir cihazda oturum açmış kullanıcılar koleksiyonunu almak için Makine oturum açma kullanıcılarını alma API'sini nasıl kullanabileceğinizi öğrenin.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, al, cihaz, oturum aç, kullanıcılar
+title: Makine oturum açma kullanıcıları API'lerini alma
+description: Uç Nokta için Microsoft Defender'da bir cihazda oturum açmış kullanıcıların koleksiyonunu almak için Makine oturum açma kullanıcılarını alma API'sini kullanmayı öğrenin.
+keywords: api'ler, graf api'leri, desteklenen API'ler, alma, cihaz, oturum açma, kullanıcılar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,25 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1c8635e7037f72830584d09d229891822a2e1f52
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 9ca2ccb7486131024f6c69c6203944f5b57fd878
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63018837"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331807"
 ---
-# <a name="get-machine-logon-users-api"></a>Makine oturum açma kullanıcıları API'sini edinin
+# <a name="get-machine-logon-users-api"></a>Makine oturum açma kullanıcıları API'lerini alma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:** 
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:** 
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,26 +39,26 @@ ms.locfileid: "63018837"
 
 
 ## <a name="api-description"></a>API açıklaması
-Belirli bir cihazda oturum açmış kullanıcıların bir koleksiyonunu verir.
+Belirli bir cihazda oturum açmış kullanıcıların koleksiyonunu alır.
 
 ## <a name="limitations"></a>Sınırlamalar
-1. Yapılandırılmış bekletme sürenize göre en son güncelleştirilen uyarılarda sorgu kullanabilirsiniz.
-2. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+1. Yapılandırdığınız saklama süresine göre son güncelleştirilen uyarıları sorgulayabilirsiniz.
+2. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
 Uygulama |User.Read.All |'Kullanıcı profillerini oku'
-Temsilcili (iş veya okul hesabı) | User.Read.All | 'Kullanıcı profillerini oku'
+Temsilci (iş veya okul hesabı) | User.Read.All | 'Kullanıcı profillerini oku'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Verileri Görüntüle'. Daha fazla bilgi için bkz [. Rol oluşturma ve yönetme](user-roles.md).
-> - Yanıt, cihaz grubu ayarlarına göre cihaz kullanıcı tarafından görülebilirse kullanıcıları içerir. Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md).
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Verileri Görüntüle'. Daha fazla bilgi için bkz. [Rolleri oluşturma ve yönetme](user-roles.md).
+> - Yanıt, yalnızca cihaz grubu ayarlarına bağlı olarak cihazın kullanıcı tarafından görünür olması durumunda kullanıcıları içerir. Daha fazla bilgi için bkz. [Cihaz gruplarını oluşturma ve yönetme](machine-groups.md).
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -66,7 +66,7 @@ Temsilcili (iş veya okul hesabı) | User.Read.All | 'Kullanıcı profillerini o
 GET /api/machines/{id}/logonusers
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -78,13 +78,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı ve cihaz varsa - Gövdede kullanıcı varlıklarının listesiyle birlikte 200 Tamam.[](user.md) Cihaz bulunamadı - 404 Bulunamadı.
+Başarılıysa ve cihaz varsa - Gövdedeki [kullanıcı](user.md) varlıklarının listesiyle 200 Tamam. Cihaz bulunamadıysa - 404 Bulunamadı.
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
@@ -92,7 +92,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c29
 
 ### <a name="response"></a>Yanıt
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 ```http
 HTTP/1.1 200 OK

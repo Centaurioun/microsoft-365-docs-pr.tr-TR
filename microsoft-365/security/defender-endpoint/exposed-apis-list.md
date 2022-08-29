@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9b8009af5bd88c1dfd37dc7e8297e3c7e05f1356
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 7f732b38c108d50b2c8950cdc5e30ba1153944b3
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280773"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324396"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>Desteklenen Uç Nokta için Microsoft Defender API'leri
 

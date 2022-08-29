@@ -1,60 +1,60 @@
 ---
-title: Özellik güncelleştirmesi doğrulaması
-description: Özellik güncelleştirme doğrulaması için uygulamanızı karşıya yükleme hakkında ayrıntılar
+title: Özellik güncelleştirme doğrulaması
+description: Özellik güncelleştirme doğrulaması için uygulamanızı karşıya yüklemeyle ilgili ayrıntılar
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: f6e7cfffb92f64d92a4ad68d93d1d51dccc0f4bb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 02693d1dc9637b97d6d567a6bc362eaef24adc5d
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988604"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315514"
 ---
-# <a name="windows-feature-update-validation"></a>Windows güncelleştirme doğrulaması
+# <a name="windows-feature-update-validation"></a>Windows Özellik güncelleştirme doğrulaması
 
-Yeni Windows özelliklerini doğrulamak için bir ortamı korumadan, Windows 10 veya Windows 11'in sonraki sürümüyle uygulamalarınızı nasıl gerçekleştirecekleri hakkında içgörülere ihtiyacınız var mı? 
+Yeni Windows özelliklerini doğrulamak için bir ortamı korumadan uygulamalarınızın bir sonraki Windows 10 veya Windows 11 sürümüyle nasıl performans göstereceği hakkında içgörülere mi ihtiyacınız var? 
 
-Doğrulama testlerinizi Azure ortamımızda Windows Insider Programı derlemelerine karşı çalıştırmak istiyor musunuz?
+Doğrulama testlerinizi Azure ortamımızda Windows Insider Programı derlemelerinde çalıştırmak istiyor musunuz?
 
-**M365** için Test Temel'in özellik güncelleştirme doğrulaması tüm bunları ve daha fazlasını başarmanıza yardımcı olabilir!
+M365 için Test Tabanı'nda **özellik güncelleştirme** doğrulaması, tüm bunları ve daha fazlasını başarmanıza yardımcı olabilir!
 
-M365 için Test Temel hizmeti altında bu yeni beceriye nasıl erişebilirsiniz hakkında bilgi için aşağıdaki adım adım ana hatta göz atın.
+M365 hizmeti için Test Temeli'nde bu yeni özelliğe nasıl erişeceklerini öğrenmek için aşağıdaki adım adım ana hattı gözden geçirin.
 
-```Feature update validation``` M365 için Test Temel'de çalışmaya başlamak için, self servis ekleme portalı aracılığıyla uygulamalarınızı (ve ilgili dosyaları) karşıya yükleyin. 
+M365 için Test Temeli'ni kullanmaya başlamak ```Feature update validation``` için self servis ekleme portalı aracılığıyla uygulamalarınızı (ve ilgili dosyaları) karşıya yükleyin. 
 
-Aşağıda, Test ayrıntılarını doldururken atılması gereken adımlar **vurgulanmıştır**:
+**Aşağıda, Test ayrıntılarını** doldururken izlenmeniz gereken adımlar vurgulanır:
 
-1. işletim **sistemi güncelleştirme türünüz** olarak Özellik Güncelleştirmesi'ne seçin:
+1. İşletim sistemi güncelleştirme türünüz olarak **Özellik Güncelleştirmesi'ni** seçin:
 
 ![Özellik güncelleştirmesi doğrulama işletim sistemi türü.](Media/Feature-update-validation-01.png)
 
-2. Uygulama Windows doğrulanmasını istediğiniz Insider Kanalı kanalını seçin.  
+2. Uygulamanızın doğrulanmasını istediğiniz Windows Insider Kanalı'nı seçin.  
 
 ![Özellik güncelleştirme doğrulaması. Insider beta kanalını seçme.](Media/Feature-update-validation-02.png)
 
-3. test için taban çizgisi (ve sonuçta elde edilen içgörüler!) olarak Windows 10 veya Windows 11'in pazar içi bir sürümü seçin ve paketinizi başarılı bir şekilde eklemek için gereken diğer ayrıntıları açık bırakın.
+3. Testinizin temeli olarak pazar içi bir Windows 10 veya Windows 11 sürümü seçin (ve elde edilen içgörüler!) ve paketinizi başarıyla eklemek için gereken diğer ayrıntıları sağlayın.
 
-![Windows 10 11'in yayımlanan sürümleriyle Windows doğrulama.](Media/Feature-update-validation-03.png)
+![Windows 10 ve Windows 11 sürümleriyle özellik güncelleştirme doğrulaması.](Media/Feature-update-validation-03.png)
 
-4. Yayın öncesi sürüm özellik güncelleştirmelerine karşı uygulamanın doğrulanmasından Windows 10 için şu makaleyi ziyaret edin```Feature Updates Test Results```: .
+4. Uygulamanızın önceden yayımlanan Windows 10 özellik güncelleştirmelerine karşı doğrulamasının sonuçlarını görüntülemek için adresini ziyaret edin```Feature Updates Test Results```.
 
-![Özellik güncelleştirmesi doğrulama sonuçları hızla gözden geçirmenize olanak sağlar.](Media/Feature-update-validation-04.png)
+![Özellik güncelleştirme doğrulaması, sonuçları hızlı bir şekilde gözden geçirmenizi sağlar.](Media/Feature-update-validation-04.png)
 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bellek regresyon çözümlemesi'nin nasıl olduğunu anlamaya başlamak için sonraki makaleye ilerleyin.
+Bellek regresyon analizini anlamaya başlamak için sonraki makaleye geçin.
 > [!div class="nextstepaction"]
 > [Sonraki adım](memory.md)
 

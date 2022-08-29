@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a24b887edefa21807ca544a68b0721e70b6b512c
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: ee74b1b5af9af8e657329f973855cdee926a61f8
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050798"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328375"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Microsoft 365 Defender'de tehdit analizi
 
@@ -191,7 +191,7 @@ _Tehdit analizi raporunun engellenen e-posta denemeleri bölümü_
   - İstenmeyebilecek uygulama (PUA) koruması
   - Gerçek zamanlı koruma
 
-Bu bölümdeki azaltma bilgileri[, rapordaki](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) çeşitli bağlantılardan ayrıntılı detaya gitme bilgileri de sağlayan Tehdit ve Güvenlik Açığı Yönetimi verilerini içerir.
+Bu bölümdeki azaltma bilgileri[, rapordaki](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) çeşitli bağlantılardan ayrıntılı detaya gitme bilgileri de sağlayan Microsoft Defender Güvenlik Açığı Yönetimi verilerini içerir.
 
 :::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp.png" alt-text="Güvenli yapılandırma ayrıntılarını gösteren tehdit analizi raporunun risk azaltmalar bölümü" lightbox="../../media/threat-analytics/ta_mitigations_mtp.png":::
 
@@ -251,7 +251,7 @@ Tehdit analizi raporlarına erişmek için belirli rollere ve izinlere ihtiyacı
 
 - Uyarıları, olayları veya etkilenen varlık verilerini görüntülemek için, Office için Microsoft Defender veya Uç Nokta için Microsoft Defender uyarı verilerini ya da her ikisini birden görüntüleme izinlerine sahip olmanız gerekir.
 - Engellenen e-posta girişimlerini görüntülemek için Office için Microsoft Defender tehdit avcılığı verilerine yönelik izinlere sahip olmanız gerekir.
-- Azaltmaları görüntülemek için Uç Nokta için Microsoft Defender'da verileri Tehdit ve Güvenlik Açığı Yönetimi izinleriniz olmalıdır.
+- Risk azaltmaları görüntülemek için Uç Nokta için Microsoft Defender'de Defender Güvenlik Açığı Yönetimi verilerine yönelik izinlere sahip olmanız gerekir.
 
 Tehdit analizi verilerine bakarken aşağıdaki faktörleri unutmayın:
 

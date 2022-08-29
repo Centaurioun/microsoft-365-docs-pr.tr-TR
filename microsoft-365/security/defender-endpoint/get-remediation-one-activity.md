@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1d2d96ab3b2b2166fab70a324a0f3d22dab61cd7
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 6822d4836a5a8399053a6d3d19cea254e1cabad0
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020087"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342987"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Kimlikle bir düzeltme etkinliği al
 
@@ -146,5 +146,5 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 - [Düzeltme yöntemleri ve özellikleri](get-remediation-methods-properties.md)
 - [Tüm düzeltme etkinliklerini listele](get-remediation-all-activities.md)
 - [Bir düzeltme etkinliğine maruz kalmış cihazları listele](get-remediation-exposed-devices-activities.md)
-- [Risk tabanlı tehdit & güvenlik açığı yönetimi](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](next-gen-threat-and-vuln-mgt.md)
 - [Kuruluşunuzdaki güvenlik açıkları](tvm-weaknesses.md)

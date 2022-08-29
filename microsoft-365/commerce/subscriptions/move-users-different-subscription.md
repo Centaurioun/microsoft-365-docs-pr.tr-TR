@@ -14,19 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- VSBFY23
 - commerce_subscriptions
 - AdminSurgePortfolio
 - manage_licenses
 search.appverid: MET150
 description: Kullanıcıları abonelikler arasında taşımayı öğrenin.
 ms.date: 05/12/2022
-ms.openlocfilehash: b8427e383e40a4061e92e4d02b64a6a16a4412db
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: c3450cecf4219f825740d5777cebeb05782b3dc4
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67083981"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322639"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Kullanıcıları farklı bir aboneliğe taşıma
 
@@ -57,6 +56,47 @@ Lisansları atamak için Genel, Lisans veya Kullanıcı yöneticisi olmanız ger
 4. **Ürün lisanslarını yönet** bölmesinde **Değiştir'i** seçin ve kullanıcılara atamak istediğiniz lisansları seçin.
 
 5. Alt kısımda **Değişiklikleri** \> Kaydet **Kapat'ı** seçin.
+
+## <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>İş için Microsoft 365 planlarını değiştirmeden önce verileri yedekleme
+
+Bir kullanıcı veriyle ilgili daha az hizmet içeren başka bir aboneliğe geçerse veya bir kullanıcı kuruluştan ayrılırsa, yeni aboneliğe geçmeden önce Microsoft 365'te depolanan verilerinin bir kopyasını indirebilirsiniz.
+
+Kullanıcıyı aynı veya daha fazla hizmete sahip bir aboneliğe taşıyorsanız, kullanıcı verilerini yedeklemeniz gerekmez.
+  
+### <a name="save-a-copy-of-outlook-information"></a>Outlook bilgilerinin bir kopyasını kaydetme
+
+Kullanıcıların Outlook'u varsa, planları değiştirilmeden önce [e-postayı, kişileri ve takvimi bir Outlook .pst dosyasına aktarabilir veya yedekleyebilirler](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) .
+  
+Yeni plana geçiş tamamlandıktan sonra, kullanıcılar [Outlook .pst dosyasından e-postayı, kişileri ve takvimi içeri aktarabilir](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
+  
+### <a name="save-files-stored-in-onedrive-for-business"></a>OneDrive İş'de depolanan dosyaları kaydetme
+
+Kullanıcılar, farklı bir aboneliğe geçmeden önce [OneDrive veya SharePoint'ten](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) bilgisayarlarının sabit sürücüsündeki bir klasör veya kuruluşun ağındaki dosya paylaşımı gibi farklı bir konuma dosya ve klasör indirebilir.
+  
+### <a name="save-yammer-information"></a>Yammer bilgilerini kaydetme
+
+Yöneticiler tüm iletileri, notları, dosyaları, konuları, kullanıcıları ve grupları bir .zip dosyasına aktarabilir. Daha fazla bilgi için bkz. [Yammer Kurumsal'dan verileri dışarı aktarma](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Geliştiriciler bunu yapmak için [Yammer API'sini](https://go.microsoft.com/fwlink/p/?linkid=842495) de kullanabilir.
+  
+### <a name="how-to-save-sharepoint-information"></a>SharePoint bilgilerini kaydetme
+
+Bir kullanıcı SharePoint Online'ı olmayan bir aboneliğe geçirilirse, **SharePoint** kutucuğu artık Microsoft 365 menüsünde görünmez.
+  
+Ancak, yeni abonelik, geçiş yaptıkları kuruluşla aynı kuruluş içinde olduğu sürece, kullanıcılar SharePoint ekip sitesine erişmeye devam edebilir. Ekip sitesinin doğrudan URL'sini kullanarak not defterlerini, belgeleri, görevleri ve takvimleri görüntüleyebilir ve güncelleştirebilirler.
+  
+> [!TIP]
+> Kullanıcıların abonelikleri değiştirilmeden önce ekip sitesine gitmelerini ve URL'yi tarayıcılarında sık kullanılan veya yer işareti olarak kaydetmelerini öneririz.
+  
+Varsayılan olarak, ekip web sitesinin URL'si şu biçimdedir:
+  
+```html
+https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
+```
+
+burada  _\<orgDomain\>_ kuruluşun URL'sidir.
+  
+Örneğin, kuruluşun etki alanı contoso.onmicrosoft.com ise, ekip sitesinin doğrudan URL'si olur `https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx`.
+  
+Elbette, kullanıcılar sharepoint online belgelerini SharePoint ekip sitesinden kendi yerel bilgisayarlarına veya başka bir konuma istedikleri zaman indirebilirler.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

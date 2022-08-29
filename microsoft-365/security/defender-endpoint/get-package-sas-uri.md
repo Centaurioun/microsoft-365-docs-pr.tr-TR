@@ -1,7 +1,7 @@
 ---
-title: Paket SAS URI API'sini edinin
+title: Paket SAS URI API'si alma
 description: Araştırma paketini indirmeye izin veren bir URI almak için bu API'yi kullanın.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, paket, sas, uri al
+keywords: api'ler, graf api'leri, desteklenen API'ler, paket alma, sas, uri
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,55 +13,55 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d64219ad2a48a64926bf177fb506d6611ece0ca3
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: af4d99f552af17f99ea93c940cadadc100905d62
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996592"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331697"
 ---
-# <a name="get-package-sas-uri-api"></a>Paket SAS URI API'sini edinin
+# <a name="get-package-sas-uri-api"></a>Paket SAS URI API'si alma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:** 
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:** 
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API açıklaması
-Bir Araştırma paketini indirmeye izin veren bir [URI'yi elde edin](collect-investigation-package.md).
+[Araştırma paketinin](collect-investigation-package.md) indirilmesine izin veren bir URI alın.
 
 > [!IMPORTANT]
 >
-> - Bu eylemler yalnızca 11. Windows 10, sürüm 1703 veya sonraki bir sürümde Windows için kullanılabilir.
+> - Bu eylemler yalnızca Windows 10, sürüm 1703 veya üzeri ve Windows 11 cihazlarda kullanılabilir.
 
 ## <a name="limitations"></a>Sınırlamalar
 
-Bu API için fiyat sınırlamaları, dakikada 2 çağrı ve saatte 120 çağrıdır. 
+Bu API için hız sınırlamaları dakikada 2 çağrı ve saatte 120 çağrıdır. 
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'a Erişim](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi için bkz. [Uç Nokta için Microsoft Defender API'lerine erişme](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
 Uygulama|Machine.Read.All|''Tüm makine profillerini oku''
 Uygulama|"Machine.ReadWrite.All|'Tüm makine bilgilerini okuma ve yazma'
-Temsilcili (iş veya okul hesabı)|Machine.CollectForensics|'Bilgi toplama'
+Temsilci (iş veya okul hesabı)|Machine.CollectForensics|'Adli tıp topla'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Uyarılar İncelemesi' (Daha fazla [](user-roles.md) bilgi için bkz. Rol oluşturma ve yönetme)
-> - Kullanıcının, cihaz grubu ayarlarına göre cihaza erişimi olması gerekir (Daha fazla bilgi için bkz. Cihaz [gruplarını oluşturma](machine-groups.md) ve yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Uyarı Araştırması' (Daha fazla bilgi için bkz [. Rol oluşturma ve yönetme](user-roles.md) )
+> - Kullanıcının cihaz grubu ayarlarına göre cihaza erişimi olmalıdır (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -69,7 +69,7 @@ Temsilcili (iş veya okul hesabı)|Machine.CollectForensics|'Bilgi toplama'
 GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action id}/getPackageUri
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -81,13 +81,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Bu yöntem başarılı olursa, "value" parametresinde pakete bağlantıyı tutan nesneyle birlikte 200, Tamam yanıt kodu döndürür. Bu bağlantı çok kısa bir süre için geçerlidir ve paketi yerel bir depolama alanına indirmek için hemen kullanılmalıdır. Koleksiyon için makine eylemi mevcut ancak tamamlanmadı ise, 404 Bulunamadı döndürür.
+Başarılı olursa, bu yöntem 200 döndürür, Tamam yanıt kodu paketin bağlantısını "value" parametresinde tutan nesnesiyle. Bu bağlantı kısa bir süre için geçerlidir ve paketi yerel bir depolama alanına indirmek için hemen kullanılmalıdır. Koleksiyon için makine eylemi varsa ancak tamamlanmadıysa, bu 404 Bulunamadı değerini döndürür.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiş.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525cbca07dacde913b5ac3c85673/GetPackageUri
@@ -95,7 +95,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525c
 
 ### <a name="response-example"></a>Yanıt örneği
 
-Yanıtın bir örneği:
+Yanıtın bir örneğini aşağıda bulabilirsiniz.
 
 ```json
 HTTP/1.1 200 Ok

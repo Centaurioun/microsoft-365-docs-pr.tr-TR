@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bad5e4bbc21eb968a5d856653366eb3967759595
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 5165adfd402415ddd7bd5a0fd6b5acb098fd49f1
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175542"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328463"
 ---
 # <a name="start-using-microsoft-defender-experts-for-hunting"></a>Avlanmak için Microsoft Defender Uzmanlarını kullanmaya başlama
 
@@ -54,7 +54,7 @@ Defender Uzmanlar Bildirimleri hizmeti şunları içerir:
 
 Örnek Defender Uzmanları Bildirimi'ni görmek için aşağıdaki ekran görüntüsüne bakın:
 
-![Microsoft 365 Defender'da Defender Uzmanlar Bildirimi'nin alıntısı. Defender Uzman Bildirimi, gözlemlenen tehdidi veya etkinliği, yönetici özetini ve öneri listesini açıklayan bir başlık içerir.](../../media/mte/defenderexperts/receive-defender-experts-notification.png)
+![Microsoft 365 Defender'da Defender Uzmanlar Bildirimi'nin ekran görüntüsü. Defender Uzman Bildirimi, gözlemlenen tehdidi veya etkinliği, yönetici özetini ve öneri listesini açıklayan bir başlık içerir.](../../media/mte/defenderexperts/receive-defender-experts-notification.png)
 
 ### <a name="where-youll-find-defender-experts-notifications"></a>Defender Uzmanları Bildirimlerini nerede bulabilirsiniz?
 

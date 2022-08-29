@@ -10,18 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 1eb0e7a36e170d8e8bd01233b0ee2db42c0ec331
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+ms.openlocfilehash: 42f9766f951f6598008bf2646321829603d75391
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309757"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319921"
 ---
 # <a name="get-microsoft-defender-for-business"></a>İş için Microsoft Defender alma
 
@@ -97,8 +97,8 @@ Başlamaya hazır olduğunuzda iki ana portalla çalışırsınız: Microsoft 36
 
 |Portal  |Açıklama  |
 |---------|---------|
-| Microsoft 365 yönetim merkezi ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Deneme sürümünüzü etkinleştirmek ve ilk kez oturum açmak için Microsoft 365 yönetim merkezi kullanın.<p> Ayrıca Microsoft 365 yönetim merkezi kullanarak şunları da yapacaksınız: <ul><li>Kullanıcı ekleme veya kaldırma.</li><li>Kullanıcı lisansları atayın.</li><li>Ürün ve hizmetlerinizi görüntüleyin.</li><li>Microsoft 365 aboneliğiniz için kurulum görevlerini tamamlayın.</li></ul><p>Daha fazla bilgi edinmek için bkz. [Microsoft 365 yönetim merkezi genel bakış](../../admin/admin-overview/admin-center-overview.md).      |
-| Microsoft 365 Defender portalı ([https://security.microsoft.com](https://security.microsoft.com))     | İş için Defender'ı ayarlamak ve yapılandırmak için Microsoft 365 Defender portalını kullanın.<p>Microsoft 365 Defender portalını kullanarak: <ul><li>Cihazlarınızı ve cihaz koruma ilkelerinizi görüntüleyin.</li><li>Algılanan tehditleri görüntüleyin ve harekete geçin.</li><li>Güvenlik önerilerini görüntüleyin ve güvenlik ayarlarınızı yönetin.</li></ul><p>Daha fazla bilgi için bkz. [Microsoft 365 Defender portalını kullanmaya başlama](mdb-get-started.md).        |
+| Microsoft 365 yönetim merkezi ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Deneme sürümünüzü etkinleştirmek ve ilk kez oturum açmak için Microsoft 365 yönetim merkezi kullanın.<p> Ayrıca Microsoft 365 yönetim merkezi kullanarak şunları da yapacaksınız: <ul><li>Kullanıcı ekleme veya kaldırma.</li><li>Kullanıcı lisansları atayın.</li><li>Ürün ve hizmetlerinizi görüntüleyin.</li><li>Microsoft 365 aboneliğiniz için kurulum görevlerini tamamlayın.</li></ul>Daha fazla bilgi edinmek için bkz. [Microsoft 365 yönetim merkezi genel bakış](../../admin/admin-overview/admin-center-overview.md).      |
+| Microsoft 365 Defender portalı ([https://security.microsoft.com](https://security.microsoft.com))     | İş için Defender'ı ayarlamak ve yapılandırmak için Microsoft 365 Defender portalını kullanın.<p>Microsoft 365 Defender portalını kullanarak: <ul><li>Cihazlarınızı ve cihaz koruma ilkelerinizi görüntüleyin.</li><li>Algılanan tehditleri görüntüleyin ve harekete geçin.</li><li>Güvenlik önerilerini görüntüleyin ve güvenlik ayarlarınızı yönetin.</li></ul>Daha fazla bilgi için bkz. [Microsoft 365 Defender portalını kullanmaya başlama](mdb-get-started.md).        |
 
 > [!TIP]
 > Cihazları eklemek ve güvenlik ayarlarını yapılandırmak için Microsoft Endpoint Manager yönetim merkezini ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) kullanabilirsiniz. Intune hakkında daha fazla bilgi edinmek için bkz. [Microsoft Intune cihazlarınız için bir MDM ve MAM sağlayıcısıdır](/mem/intune/fundamentals/what-is-intune).

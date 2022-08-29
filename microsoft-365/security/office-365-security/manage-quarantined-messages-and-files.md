@@ -19,12 +19,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection(EOP) içindeki tüm kullanıcılar için karantinaya alınan iletileri görüntülemeyi ve yönetmeyi öğrenebilir. Office 365 için Microsoft Defender sahip kuruluşlardaki yöneticiler, SharePoint Online, OneDrive İş ve Microsoft Teams'de karantinaya alınan dosyaları da yönetebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 50fa4eb3895fa9ad35e6182c2bcc7d7875bdae3a
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 392b6d2b8a64908c66a7c84302f893d8f61a4680
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607311"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343853"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Karantinaya alınan iletileri ve dosyaları EOP'de yönetici olarak yönetme
 
@@ -64,7 +64,7 @@ Karantinaya alınan iletileri yönetici olarak yönetmeyi öğrenmek için bu k�
 
   - kullanıcıları Microsoft 365 yönetim merkezi ilgili Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'teki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
   - [Exchange Online'daki](/Exchange/permissions-exo/permissions-exo#role-groups) **Yalnızca Görüntüleme Kuruluş Yönetimi** rol grubu da özelliğe salt okunur erişim sağlar.
-  - <sup>\*</sup>Microsoft 365 Defender [portalındaki](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) **E-posta & işbirliği** rollerindeki **Karantina Yöneticisi** rol grubunun üyelerinin de Exchange Online PowerShell'de karantina yordamları gerçekleştirmek için **Exchange Online'da Hijyen Yönetimi** rol grubunun üyesi olması [](/Exchange/permissions-exo/permissions-exo#role-groups) gerekir.
+  - <sup>\*</sup>Microsoft 365 Defender [portalındaki](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) **Email & işbirliği** rollerindeki **Karantina Yöneticisi** rol grubunun üyelerinin Exchange Online PowerShell'de karantina yordamları gerçekleştirmek için **Exchange Online'da Hijyen Yönetimi** rol grubunun da üyesi olması gerekir [](/Exchange/permissions-exo/permissions-exo#role-groups) .
 
 - Karantinaya alınan iletiler, neden karantinaya alındıklarına bağlı olarak varsayılan bir süre boyunca saklanır. Bekletme süresi dolduktan sonra iletiler otomatik olarak silinir ve kurtarılamaz. Daha fazla bilgi için bkz. [EOP'de karantinaya alınan e-posta iletileri ve Office 365 için Defender](quarantine-email-messages.md).
 
@@ -72,9 +72,9 @@ Karantinaya alınan iletileri yönetici olarak yönetmeyi öğrenmek için bu k�
 
 ### <a name="view-quarantined-email"></a>Karantinaya alınan e-postayı görüntüleme
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**E-posta & işbirliği** \> **Karantinayı Gözden Geçir'e** \> gidin. Doğrudan **Karantina** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantine>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Email & işbirliğine** \> gidip **Karantinayı** **Gözden Geçir'e** \> gidin. Doğrudan **Karantina** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantine>.
 
-2. **Karantina** sayfasında **, E-posta** sekmesinin seçili olduğunu doğrulayın.
+2. **Karantina** sayfasında **, Email** sekmesinin seçili olduğunu doğrulayın.
 
 3. Kullanılabilir bir sütun üst bilgisine tıklayarak sonuçları sıralayabilirsiniz. Gösterilen sütunları değiştirmek için **Sütunları özelleştir'e**  tıklayın. Varsayılan değerler yıldız işaretiyle (<sup>\*</sup>):
 
@@ -114,7 +114,7 @@ Karantinaya alınan iletileri yönetici olarak yönetmeyi öğrenmek için bu k�
      - **Toplu**
      - **Spam**
      - **Kötü amaçlı yazılım**: EOP'deki kötü amaçlı yazılımdan koruma ilkeleri veya Office 365 için Defender'daki Güvenli Ekler ilkeleri. **İlke Türü** değeri hangi özelliğin kullanıldığını gösterir.
-     - **Kimlik avı**: İstenmeyen posta filtresinin kararı **,** iletiyi (kimlik [sahtekarlığı ayarları](set-up-anti-phishing-policies.md#spoof-settings) veya [kimliğe bürünme koruması](kimlik avı önleme ilkelerini ayarlama) karantinaya alan Kimlik Avı veya kimlik avı korumasıdır.
+     - **Kimlik avı**: İstenmeyen posta filtresi kararı **Kimlik avı** veya kimlik avı önleme koruması iletiyi karantinaya aldı ([kimlik sahtekarlığı ayarları](set-up-anti-phishing-policies.md#spoof-settings) veya [kimliğe bürünme koruması](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **Yüksek güvenilirlikli kimlik avı**
    - **Alıcı**: **Tüm kullanıcılar** veya **Yalnızca ben**. Son kullanıcılar yalnızca kendilerine gönderilen karantinaya alınmış iletileri yönetebilir.
    - **Sürüm durumu**: Aşağıdaki değerlerden herhangi biri:
@@ -219,7 +219,7 @@ Diğer eylemler simgesine tıkladıktan ![sonra aşağıdaki eylemler kullanıla
 - ![Göndereni engelle simgesi.](../../media/m365-cc-sc-block-sender-icon.png) **Göndereni engelle**: Göndereni **posta** kutunuzdaki Engellenen Gönderenler listesine ekleyin. Daha fazla bilgi için bkz [. Posta göndereni engelleme](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - ![Yalnızca gönder simgesi.](../../media/m365-cc-sc-create-icon.png) **Yalnızca gönder**: İletiyi analiz için Microsoft'a bildirir. Görüntülenen açılır öğede aşağıdaki seçenekleri belirleyin:
-  - **Gönderme türünü seçin**: **E-posta** (varsayılan), **URL** veya **Dosya**.
+  - **Gönderim türünü seçin**: **Email** (varsayılan), **URL** veya **Dosya**.
   - **Ağ iletisi kimliğini ekleyin veya e-posta dosyasını karşıya yükleyin**: Aşağıdaki seçeneklerden birini seçin:
     - **E-posta ağ ileti kimliğini ekleyin** (varsayılan olarak, kutuda karşılık gelen değer bulunur)
     - **E-posta dosyasını (.msg veya eml) karşıya yükleyin**: Göndermek üzere .msg veya .eml ileti dosyasını bulmak ve seçmek için **Dosyalara gözat'a** tıklayın.
@@ -287,9 +287,9 @@ Office 365 için Defender olan kuruluşlarda yöneticiler SharePoint, OneDrive v
 
 ### <a name="view-quarantined-files"></a>Karantinaya alınan dosyaları görüntüleme
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**E-posta & işbirliği** \> **Karantinayı Gözden Geçir'e** \> gidin. Doğrudan **Karantina** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantine>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Email & işbirliğine** \> gidip **Karantinayı** **Gözden Geçir'e** \> gidin. Doğrudan **Karantina** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantine>.
 
-2. **Karantina** sayfasında **Dosyalar** sekmesini seçin (**E-posta** varsayılan sekmedir).
+2. **Karantina** sayfasında **Dosyalar** sekmesini seçin (**Email** varsayılan sekmedir).
 
 3. Kullanılabilir bir sütun üst bilgisine tıklayarak sonuçları sıralayabilirsiniz. Gösterilen sütunları değiştirmek için **Sütunları özelleştir'e** tıklayın. Varsayılan sütunlar yıldız işaretiyle (<sup>\*</sup>):
    - **Kullanıcı**<sup>\*</sup>

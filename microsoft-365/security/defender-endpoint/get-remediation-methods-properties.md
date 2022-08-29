@@ -1,6 +1,6 @@
 ---
 title: Düzeltme etkinliği yöntemleri ve özellikleri
-description: API yanıtı, kiracınızda oluşturulan tehdit & güvenlik açığı yönetimi düzeltme etkinliklerini içerir. Seçilen bir düzeltme görevi için tüm düzeltme etkinliklerini, yalnızca bir düzeltme etkinliğini veya kullanıma sunulan cihazlarla ilgili bilgileri isteyebilirsiniz.
+description: API yanıtı, kiracınızda oluşturulan Microsoft Defender Güvenlik Açığı Yönetimi düzeltme etkinliklerini içerir. Seçilen bir düzeltme görevi için tüm düzeltme etkinliklerini, yalnızca bir düzeltme etkinliğini veya kullanıma sunulan cihazlarla ilgili bilgileri isteyebilirsiniz.
 keywords: api'ler, düzeltme, düzeltme api'leri, alma, düzeltme görevleri, düzeltme yöntemleri, düzeltme özellikleri,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 86218bb1dc3a30ab38e3df07496aa40a5775e88c
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: c39153ce23adeec598fef7234c4b90592067d116
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020483"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344865"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Düzeltme etkinliği yöntemleri ve özellikleri
 
@@ -42,7 +42,7 @@ ms.locfileid: "67020483"
 
 [!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
-API yanıtı, kiracınızda oluşturulan [Tehdit & güvenlik açığı yönetimi](next-gen-threat-and-vuln-mgt.md) düzeltme etkinliklerini içerir.
+API yanıtı, kiracınızda oluşturulmuş [Microsoft Defender Güvenlik Açığı Yönetimi](next-gen-threat-and-vuln-mgt.md) düzeltme etkinliklerini içerir.
 
 ## <a name="methods"></a>Yöntemler
 
@@ -95,6 +95,6 @@ Vendorıd|Dize|İlgili satıcı adı
 
 - [Bir düzeltme etkinliğine maruz kalmış cihazları listele](get-remediation-exposed-devices-activities.md)
 
-- [Risk tabanlı tehdit & güvenlik açığı yönetimi](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](next-gen-threat-and-vuln-mgt.md)
 
 - [Kuruluşunuzdaki güvenlik açıkları](tvm-weaknesses.md)

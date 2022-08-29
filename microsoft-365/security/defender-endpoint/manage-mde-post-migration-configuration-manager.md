@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: b253fe7dad271684f5c0e927ec162ea4e993df29
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: d8db3816e050d7384070cf31e458921231f0df9b
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607399"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327321"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Configuration Manager ile Uç Nokta için Microsoft Defender yönetme
 
@@ -32,7 +32,7 @@ ms.locfileid: "66607399"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft Intune [(](/mem/intune/fundamentals/what-is-intune)Intune) ve [Microsoft Endpoint Configuration Manager](/mem) (Configuration Manager) içeren [Microsoft Endpoint Manager](/mem/configmgr/core/understand/introduction) kullanmanızı öneririz ), kuruluşunuzun cihazlar için tehdit koruma özelliklerini (uç noktalar olarak da adlandırılır) yönetmeye yöneliktir.
 
@@ -59,6 +59,6 @@ Henüz yapmadıysanız, Microsoft 365 Defender portalınızı uyarıları görü
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Tehdit ve Güvenlik Açığı Yönetimi genel bakışını edinin](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender Güvenlik Açığı Yönetimi'ne genel bakış edinin](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Microsoft 365 Defender portalı güvenlik işlemleri panosunu ziyaret edin](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [Intune ile Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration-intune.md)

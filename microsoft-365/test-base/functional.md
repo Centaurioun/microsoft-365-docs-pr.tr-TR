@@ -1,82 +1,82 @@
 ---
-title: Test Temel'de işlevsel test
-description: Mevcut otomatik işlevsel testlerle uygulamanızı test ayrıntıları
+title: Test Tabanında işlevsel test
+description: Uygulamanızı mevcut otomatik işlevsel testlerinizle test etme ayrıntıları
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
-ms.collection: TestBase-M365
+ms.collection: TestBase-Microsoft 365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: f64480d66cd91dc4b08f9694331cfe0d9c130ee4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 566ca739c15920d1d9c1260d7b7e771dd984b9d8
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985016"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315510"
 ---
 # <a name="functional-testing"></a>İşlevsel test
 
-Yazılım satıcısı olarak, artık M365 için self servis Test Temel'i kullanarak istediğiniz test çerçevesini kullanarak özel işlevsel testler gerçekleştirebilirsiniz. 
+Bir yazılım yayımcısı olarak artık Microsoft 365 portalı için kendi kendine hizmet sunan Test Tabanı aracılığıyla tercih ettiğiniz test çerçevesini kullanarak özel işlevsel testler gerçekleştirebilirsiniz. 
 
-Hizmeti ilk kez başlattığımızda, standartleştirilmiş betik aracılığıyla yönlendiren ve önceden tanımlanmış bir dizi test olan Hazır testler sunduk. Öte yandan bu, birçok Bağımsız Yazılım Satıcı (ISV) için tam test kapsamına ulaşamayebiliyordu. 
+Hizmeti ilk kez başlattığımızda, standartlaştırılmış betik ile yönlendirilen önceden tanımlanmış bir test kümesi olan hazır testler sunduk. Ancak bu, birçok Bağımsız Yazılım Satıcısı (ISV) için tam test kapsamı elde edemedi. 
 
 Bu nedenle, geri bildirimlerinize yanıt olarak ISV'lerimize otomatik işlevsel testleri karşıya yükleme olanağı sağlıyoruz.
 
 Bu özelliği kullanmak için aşağıdaki adımları izleyin:
 
-1. Upload (ikili dosyalar, bağımlılıklar ve betikler) tek bir dosya paketi .zip.
-2. Çeşitli yürütme noktalarında test Sanal Makinelerini (SANAL MAKINELER) yeniden başlatmak mı istediğinize karar seçin.
+1. Dosyalarınızı (ikili dosyalar, bağımlılıklar ve betikler) tek bir .zip paketi olarak karşıya yükleyin.
+2. Çeşitli yürütme noktalarında test Sanal Makineler (VM) yeniden başlatmak isteyip istemediğinizi seçin.
 3. Betikleriniz için kullanılabilir seçenekleri yönetin.
-4. Yürütme sırasında VM'de Windows güncelleştirmesini ne zaman uygulayacaklarını seçin.
+4. Yürütme sırasında VM'ye Windows güncelleştirmesinin ne zaman uygulanacağını seçin.
 
-Yukarıdaki adımların ayrıntılı açıklamaları aşağıda vurgulanmıştır:
+Yukarıdaki adımların ayrıntılı açıklamaları aşağıda vurgulanır:
 
-**Upload bir test paketidir**
+**İşlevsel test paketini karşıya yükleme**
 
-Çalışmaya başlamak için, Upload sayfasına gidin, Azure'Upload M365 için Test Temel'in sol tarafındaki gezinti menüsündeki Uygulama kataloğu altında yeni bir uygulama seçin. Buradan:
+Başlamak için Karşıya Yükle sayfasına gidin, Azure'da M365 için Test Tabanı portalının sol tarafındaki gezinti menüsünde Uygulama kataloğu altında Yeni uygulamayı karşıya yükle'yi seçin. Buradan:
 
-Sekme 1 - Temel bilgileri girin. Uygulamanın adını ve sürümünü girin. Test türü seçeneğinde öğesini seçin ```Functional tests```. 
+Sekme 1 - Temel bilgileri girin. Uygulamanızın adını ve sürümünü belirtin. Test türü seçeneğinde öğesini seçin ```Functional tests```. 
 
-*Varsayılan olarak, Kutusu Dışında (OOB) seçeneğinin gerekli olduğunu unutmayın.*
+*İlk Çalıştırma (OOB) seçeneği varsayılan olarak gereklidir.*
 
 
 ![İşlevsel test sekmesini seçin.](Media/functional_testing_tab1.png)
 
-2. Sekme: Upload tüm test (ikili dosyalar, bağımlılıklar, betikler vb.) ile bir zip dosyası yükerek paketinizin bileşenlerini düzenleyin. 
+Sekme 2 - Tüm testinizin bulunduğu bir zip dosyasını (ikili dosyalar, bağımlılıklar, betikler vb.) karşıya yükleyerek paketinizin bileşenlerini karşıya yükleyin. 
 
-Ayrıntılar aka.ms/usl-package-outline bilgi için bkz. (Not: Hem İlk Çalıştırma testi betikleri hem de İşlevsel test içeriği aynı zip dosyasına yerleştirilsin). Şu anda, dosya boyutu 2 GB ile sınırlıdır.
+Ayrıntılar için bkz. aka.ms/usl-package-outline. (Not: Hem kullanıma açık test betikleri hem de İşlevsel test içeriği aynı zip dosyasına yerleştirilmelidir). Şu anda dosya boyutu 2 GB ile sınırlıdır.
 
-Sekme 3 - Kutusu Dışında ve İşlevsel test görevlerini yapılandırma. Burada, powershell betiklerinin yollarını seçin; bu betikleri, hem uygulamanızı başlatacak, kapatacak ve kaldıracak (Hazır Kutusu Dışında) hem de tüm özel betiklerinizi işlevsel testlerinizi gerçekleştirmek için bunların yollarını seçin. **(Not: Uygulama kaldırma betiği isteğe bağlıdır).**
+Sekme 3 - İlk Çalıştırma ve İşlevsel test görevlerini yapılandırın. Burada, uygulamanızı yükleyecek, başlatacak, kapatacak ve kaldıracak PowerShell betiklerinin yollarını (İlk Çalıştırma için) ve işlevsel testinizi gerçekleştirmek için tüm özel betiklerinizin yollarını seçin. **(Not: Uygulamanızı kaldırma betiği isteğe bağlıdır).**
 
-Şu anda, işlevsel testlerinizi yüklemek için 1 ile 8 arasında betik yükleyebilirsiniz. (Daha fazla betikye ihtiyacınız varsa, bu gönderiye lütfen yorum olun!)
+Şu anda işlevsel testleriniz için 1 ile 8 arası betik yükleyebilirsiniz. (Daha fazla betik gerekiyorsa lütfen bu gönderiye yorum yapın!)
 
-![Upload testi olan en fazla 8 betik içerir.](Media/functional_testing_tab3.png)
+![İşlevsel testlerle en fazla 8 betik yükleyin.](Media/functional_testing_tab3.png)
 
-(İsteğe bağlı) Yüklemeden sonra yeniden başlatmayı yapılandırma. Bazı uygulamalar yüklemeden sonra yeniden başlatmayı gerektirir. 
+(İsteğe bağlı) Yüklemeden sonra yeniden başlatma yapılandırabilirsiniz. Bazı uygulamalar yüklemeden sonra yeniden başlatma gerektirir. 
 
-Bu ```Reboot After Execution``` betiğin yürütülmesi sonrasında bir yeniden başlatmanın yürütülmesini istediğiniz belirli Betik için Görevler sekmesindeki seçimi yapın.
+```Reboot After Execution``` Bu betiğin yürütülmesinden sonra yeniden başlatmanın yürütülmesini istiyorsanız Görevler sekmesinde belirli bir Betik seçin.
 
-4. Sekme - Windows güncelleştirmenin ne zaman yüklenimini seçin: En son Güncelleştirme Windows uygulaması, seçtiğiniz herhangi bir betikten önce yapılır. Uygulamanın yüklenmesi sonrasında, gerçek Windows kullanım senaryolarınızı yakından taklit etmek için bir güncelleştirme güncelleştirmesini yüklemeniz önerilir.
+Sekme 4 - Windows güncelleştirmesinin ne zaman yükleneceğini seçin: Windows Update düzeltme ekinin uygulaması istediğiniz herhangi bir betikten önce yapılır. Gerçek uygulama kullanım senaryolarınızı yakından taklit etmek için uygulama yüklendikten sonra bir Windows güncelleştirmesi yüklemeniz önerilir.
 
-![En Windows güncelleştirmesi, belirli bir betik sonrasında yükleyebilir.](Media/functional_testing_tab4.png)
+![Windows güncelleştirmesi belirli bir betik sonrasında yüklenebilir.](Media/functional_testing_tab4.png)
 
-Sekme 5 - Paketi gözden geçirin ve oluşturun. Yukarıda listelenen adımları tamamlandıktan sonra, karşıya yükleme ```Create``` işlemini tamamlamak için öğesini seçin.
+Sekme 5 - Paketi gözden geçirin ve oluşturun. Yukarıda listelenen adımları tamamladıktan sonra karşıya yükleme işlemini tamamlamak için öğesini seçin ```Create``` .
 
-Paketiniz oluşturulduktan sonra paketinizin doğrulama durumunu kontrol edin.
+Paketiniz oluşturulduktan sonra paketinizin doğrulama durumunu de kontrol edebilirsiniz.
 
-Uygulamanızı yüklemek, başlatmak, kapatmak ve kaldırmak için bir başlangıç testi çalıştırdık. Bu, paketinizin hatasız olarak hizmetimize yüklenemediklerini doğrulamamıza olanak sağlar.
+Uygulamanızı yüklemek, başlatmak, kapatmak ve kaldırmak için bir ilk test çalıştırıyoruz. Paketinizin hizmetimize hatasız olarak yüklenebildiğini doğrulamamıza olanak tanır.
 
-Doğrulama işlemi 24 saat kadar sürebilir. Doğrulama tamamlandıktan sonra, menüde durumu görebilir ```Manage packages``` ve şu iki girişlerden birini kullanabilirsiniz:
+Doğrulama işlemi 24 saat kadar sürebilir. Doğrulama tamamlandıktan sonra menüdeki ```Manage packages``` durumu görebilirsiniz ve bu iki girdiden biri olur:
 
-1. Doğrulama başarılı olur: Paket, seçtiğiniz işletim sistemi derlemeleri için Windows öncesi sürüm güncelleştirmeleri ile otomatik olarak test edilecektir.
+1. Doğrulama başarılı olur: Paket, seçtiğiniz işletim sistemi derlemeleri için yayın öncesi Windows güncelleştirmelerinde otomatik olarak test edilecek.
 veya
-2. Doğrulama başarısız: Başarısızlığın nedenlerini araştırmanız, sorunu düzeltmeniz ve paketinizi yeniden karşıya yüklemeniz gerekir.
+2. Doğrulama başarısız oluyor: Hatanın nedenlerini araştırmanız, sorunu düzeltmeniz ve paketinizi yeniden yüklemeniz gerekir.
 
-Ayrıca, her iki sonucun da Azure portalda bildirim simgesi aracılığıyla size bildirilmesi gerekir.
+Ayrıca, Azure portal bildirim simgesi aracılığıyla her iki sonuç da size bildirilir.

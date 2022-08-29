@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: 1cbaff007a5ef2839cbcf51babc7a057c7b756c0
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: c8a7b949118375fa10ac12a18ce82c4fadebd6f3
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607465"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327167"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Intune ile Uç Nokta için Microsoft Defender yönetme
 
@@ -32,7 +32,7 @@ ms.locfileid: "66607465"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Kuruluşunuzun cihazlar için tehdit koruması özelliklerini (uç noktalar olarak da adlandırılır) yönetmek için Microsoft Intune (Intune) içeren [Microsoft](/mem) Endpoint Manager kullanmanızı öneririz. [Endpoint Manager hakkında daha fazla bilgi edinin](/mem/endpoint-manager-overview).
 
@@ -70,7 +70,7 @@ Aşağıdaki tabloda, Intune ile Uç Nokta için Microsoft Defender yapılandır
 |Fidye yazılımlarına karşı korunmak için **denetimli klasör erişimini yapılandırma** <br/><br/> *[Denetimli klasör erişimi](/microsoft-365/security/defender-endpoint/controlled-folders) , antiransomware koruması olarak da adlandırılır.*|[Uç nokta koruması: Denetimli klasör erişimi](/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <br/><br/> [Intune'de denetimli klasör erişimini etkinleştirme](/microsoft-365/security/defender-endpoint/enable-controlled-folders#intune)|
 |Kuruluşunuzun cihazlarını diğer cihazlara yaymak ve bulaştırmak için kötüye kullanım kullanan kötü amaçlı yazılımlardan korumak için yararlanma **korumasını yapılandırma** <br/><br/> *[Exploit Protection, Exploit](/microsoft-365/security/defender-endpoint/exploit-protection) Guard olarak da adlandırılır.*|[Uç nokta koruması: Microsoft Defender Exploit Guard](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-exploit-guard) <br/><br/> [Intune'de açıklara karşı korumayı etkinleştirme](/microsoft-365/security/defender-endpoint/enable-exploit-protection#intune)|
 |**Microsoft Defender SmartScreen'i** , internet üzerindeki kötü amaçlı sitelere ve dosyalara karşı korumak için yapılandırın. <br/><br/> *Microsoft Edge, kuruluşunuzun cihazlarına yüklenmelidir. Google Chrome ve FireFox tarayıcılarında koruma için açıklardan yararlanma korumasını yapılandırın.*|[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) <br/><br/> [Cihaz kısıtlamaları: Microsoft Defender SmartScreen](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-smartscreen) <br/><br/> [Intune'de SmartScreen'i yönetmek için ilke ayarları](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#mdm-settings)|
-|Kuruluşunuzun cihazlarına veya cihazlarına gelen veya giden yetkisiz ağ trafiğini engellemek için **Microsoft Defender Güvenlik Duvarı yapılandırma**|[Uç nokta koruması: Microsoft Defender Güvenlik Duvarı](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-firewall) <br/><br/> [Gelişmiş Güvenlik ile Microsoft Defender Güvenlik Duvarı](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)|
+|**Microsoft Defender Güvenlik Duvarı'nı** kuruluşunuzun cihazlarına gelen veya giden yetkisiz ağ trafiğini engelleyecek şekilde yapılandırma|[Uç nokta koruması: Microsoft Defender Güvenlik Duvarı](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-firewall) <br/><br/> [Gelişmiş Güvenlik özellikli Microsoft Defender Güvenlik Duvarı](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)|
 |Kuruluşunuzun Windows çalıştıran cihazlarındaki bilgileri korumak için **şifrelemeyi ve BitLocker'ı yapılandırma**|[Uç nokta koruması: Windows Şifrelemesi](/mem/intune/protect/endpoint-protection-windows-10#windows-encryption) <br/><br/> [Windows 10 ve Windows 11 cihazlar için BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview)|
 |Kimlik bilgisi hırsızlığı saldırılarına karşı korunmak için **Microsoft Defender Credential Guard'ı yapılandırma**|Windows 10, Windows 11, Windows Server 2016, Windows Server 2019 ve Windows Server 2022 için bkz[. Endpoint protection: Microsoft Defender Credential Guard](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-credential-guard) <br/><br/> Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 ve Windows Server 2012 R2 için bkz. [Karma Geçiş (PtH) Saldırılarını ve Diğer Kimlik Bilgileri Hırsızlığını Azaltma, Sürüm 1 ve 2](https://www.microsoft.com/download/details.aspx?id=36036)|
 |**Microsoft Defender Uygulama Denetimi'ni** kuruluşunuzun cihazlarında uygulamaların denetlenip denetlenmeyeceğini veya güvenileceğini seçecek şekilde yapılandırın <br/><br/> *Microsoft Defender Uygulama Denetimi, [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview) olarak da adlandırılır.*|[Microsoft Intune kullanarak Microsoft Defender Uygulama Denetimi ilkelerini dağıtma](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) <br/><br/> [Uç nokta koruması: Microsoft Defender Uygulama Denetimi](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control) <br/><br/> [AppLocker CSP](/windows/client-management/mdm/applocker-csp)|
@@ -85,5 +85,5 @@ Henüz yapmadıysanız, Microsoft 365 Defender portalınızı uyarıları görü
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Tehdit ve Güvenlik Açığı Yönetimi genel bakışını edinin](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender Güvenlik Açığı Yönetimi'ne genel bakış edinin](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Microsoft 365 Defender portalı güvenlik işlemleri panosunu ziyaret edin](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

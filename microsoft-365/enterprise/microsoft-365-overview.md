@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/01/2021
+ms.date: 08/08/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - it-pro
 - intro-overview
 description: Kuruluş için Microsoft 365 bileşenlerine, planlarına ve dağıtım yollarına giriş sağlar.
-ms.openlocfilehash: 6c79427f48867f5da7cf869e4856ad6b31dc6ed1
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: b4ebce35c1f642a6cfa8ee72489c1d8f531e3f67
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037676"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67335770"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 Kurumsal’a genel bakış
 
@@ -120,7 +120,7 @@ Kurgusal ama temsili çok uluslu bir kuruluşun kuruluş için Microsoft 365'i n
 
 ## <a name="additional-microsoft-365-products"></a>Ek Microsoft 365 ürünleri
 
-- [Microsoft 365 Business Premium](../admin/index.yml)
+- [Microsoft 365 Business Premium](/microsoft-365/business/)
 
   Küçük ve orta ölçekli işletmeler için iş verilerini korumak için cihaz yönetimi ve güvenlik çözümleriyle sınıfının en iyi üretkenlik ve işbirliği özelliklerini bir araya getirin.
 

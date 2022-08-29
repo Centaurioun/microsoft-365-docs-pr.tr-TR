@@ -15,15 +15,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.technology: m365d
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 7c39e6010015a6b645924aec04119b4e5e9c586b
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: ab8689ffa5b557b77f7c88c7c4cde6f11ac14584
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276208"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328507"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 365'te Microsoft Tehdit Uzmanları genel bakış
 
@@ -35,6 +36,9 @@ ms.locfileid: "67276208"
 - [Uç Nokta için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
+
+> [!NOTE]
+> Ağustos 2022 itibarıyla, **Bir tehdit uzmanına danışmak** için İsteğe Bağlı Uzmanlar seçeneği **Defender Uzmanlara Sor** olarak yeniden tanımlanmıştır.
 
 Endpoint Attack Notifications (eski adıyla Microsoft Tehdit Uzmanları - Hedefli Saldırı Bildirimi), yönetilen bir tehdit avcılığı hizmetidir. Başvurduktan ve kabul edildikten sonra Microsoft tehdit uzmanlarından uç nokta saldırısı bildirimleri alırsınız, böylece ortamınıza yönelik kritik tehditleri kaçırmazsınız. Bu bildirimler kuruluşunuzun uç noktalarını, e-postalarını ve kimliklerini korumanıza yardımcı olur.
 
@@ -70,13 +74,22 @@ Doğrudan Microsoft 365 güvenlik portalında **Defender Uzmanlarına Sorun'u** 
 - Şüpheli cihazlara, uyarılara veya olaylara açıklık getirin ve gelişmiş bir saldırganla karşılaşılması durumunda sonraki adımları izleyin
 - Tehdit aktörleri, kampanyalar veya yeni ortaya çıkan saldırgan teknikleri ile ilgili riskleri ve kullanılabilir korumaları belirleme
 
+> [!NOTE]
+> Ağustos 2022 itibarıyla, **Bir tehdit uzmanına danışmak** için İsteğe Bağlı Uzmanlar seçeneği **Defender Uzmanlara Sor** olarak yeniden tanımlanmıştır.
+
 **Defender Uzmanlarına Sor** seçeneği portal genelinde çeşitli yerlerde kullanılabilir:
 
-- <i>**Cihaz sayfası eylemleri menüsü**</i><BR>
-- <i>**Cihaz envanteri sayfası açılır menüsü**</i><BR>
-- <i>**Uyarılar sayfası açılır menüsü**</i><BR>
-- <i>**Olaylar sayfası eylemleri menüsü**</i><BR>
-- <i>**Olay envanter sayfası**</i><BR>
+- ***Cihaz sayfası eylemleri menüsü***
+
+![Microsoft 365 Defender portalındaki Cihaz sayfası eylem menüsündeki Defender Uzmanlarına Sor menü seçeneğinin ekran görüntüsü.](../../media/mte/device-page-actions-menu.png)
+
+- ***Uyarılar sayfası eylemleri menüsü***
+
+![Microsoft 365 Defender portalındaki Uyarılar sayfası eylem menüsündeki Defender Uzmanlarına Sor menü seçeneğinin ekran görüntüsü.](../../media/mte/alerts-page-actions-menu.png)
+
+- ***Dosya sayfası eylemleri menüsü***
+
+![Microsoft 365 Defender portalındaki Olaylar sayfası eylem menüsündeki Defender Uzmanlarına Sor menü seçeneğinin ekran görüntüsü.](../../media/mte/incidents-page-actions-menu.png)
 
 > [!NOTE]
 > Office 365 için Microsoft Defender lisansınıza eşlenmiş Premier Destek aboneliğiniz varsa İsteğe Bağlı Uzmanlar durumlarınızı Microsoft Services Hub aracılığıyla izleyebilirsiniz.

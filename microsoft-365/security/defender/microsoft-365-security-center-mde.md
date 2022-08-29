@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 9d0bff0caec40fa0f4503508643f9aae95a27389
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 9669e0788197f59f6d46c0475a89c67310e32ec9
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051524"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328617"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft 365 Defender'da Uç Nokta için Microsoft Defender
 
@@ -52,7 +52,7 @@ Aşağıdaki resimde ve tabloda, Microsoft Defender Güvenlik Merkezi ile Micros
 | Gelişmiş avcılık örneği | Avcı -lık |
 | Raporlar | Raporlar |
 | İş ortakları & API'leri | İş ortakları & API'leri |
-| Tehdit & Güvenlik Açığı Yönetimi | Güvenlik açığı yönetimi |
+| Microsoft Defender Güvenlik Açığı Yönetimi | Güvenlik açığı yönetimi |
 | Değerlendirme ve öğreticiler | Değerlendirme & öğreticileri |
 | Yapılandırma yönetimi | Yapılandırma yönetimi |
 | Ayarlar | Ayarlar | 
@@ -96,10 +96,10 @@ Bu tablo, Microsoft Defender Güvenlik Merkezi ile Microsoft 365 Defender arası
 
 | Alan | Değişikliğin açıklaması |
 |---------|---------|
-|Arama   |  Arama çubuğu sayfanın en üstünde yer alır. Siz yazarken öneriler sağlanır. Uç Nokta için Defender ve Kimlik için Defender'da aşağıdaki varlıklar arasında arama yapabilirsiniz: <br><br> - **Cihazlar** - Hem Uç Nokta için Defender hem de Kimlik için Defender için desteklenir. Hatta arama işleçlerini de kullanabilirsiniz. Örneğin, bir konak adının bir bölümünü aramak için "contains" kullanabilirsiniz. <br><br> - **Kullanıcılar** - Hem Uç Nokta için Defender hem de Kimlik için Defender için desteklenir. <br><br> - **Dosyalar, IP'ler ve URL'ler** - Uç Nokta için Defender'daki özelliklerle aynıdır. <br> NOT: *IP ve URL aramaları tam olarak eşleşir ve arama sonuçları sayfasında görünmez; doğrudan varlık sayfasına yönlendirir.  <br><br> - **TVM** - Uç Nokta için Defender ile aynı özellikler (güvenlik açıkları, yazılımlar ve öneriler). <br><br>  Gelişmiş arama sonuçları sayfası, tüm varlıklardaki sonuçları merkezileştirir.  |
+|Arama   |  Arama çubuğu sayfanın en üstünde yer alır. Siz yazarken öneriler sağlanır. Uç Nokta için Defender ve Kimlik için Defender'da aşağıdaki varlıklar arasında arama yapabilirsiniz: <br><br> - **Cihazlar** - Hem Uç Nokta için Defender hem de Kimlik için Defender için desteklenir. Hatta arama işleçlerini de kullanabilirsiniz. Örneğin, bir konak adının bir bölümünü aramak için "contains" kullanabilirsiniz. <br><br> - **Kullanıcılar** - Hem Uç Nokta için Defender hem de Kimlik için Defender için desteklenir. <br><br> - **Dosyalar, IP'ler ve URL'ler** - Uç Nokta için Defender'daki özelliklerle aynıdır. <br> NOT: *IP ve URL aramaları tam olarak eşleşir ve arama sonuçları sayfasında görünmez; doğrudan varlık sayfasına yönlendirir.  <br><br> - **MDVM** - Uç Nokta için Defender'dakiyle aynı özellikler (güvenlik açıkları, yazılımlar ve öneriler). <br><br>  Gelişmiş arama sonuçları sayfası, tüm varlıklardaki sonuçları merkezileştirir.  |
 |[Pano](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  Bu, güvenlik işlemleri panonuzdur. Kaç etkin uyarının tetiklendiğine, hangi cihazların risk altında olduğunu, hangi kullanıcıların risk altında olduğunu ve uyarılar, cihazlar ve kullanıcılar için önem derecesine genel bakış bölümüne bakın. Ayrıca herhangi bir cihazda algılayıcı sorunları olup olmadığını, genel hizmet durumunuzu ve çözümlenmemiş uyarıların nasıl algılandığını da görebilirsiniz. |
 |Cihaz envanteri | Değişiklik yok. |
-|[Güvenlik açığı yönetimi](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Ad, gezinti bölmesine sığacak şekilde kısaltıldı. Tüm sayfaların altında olduğu Tehdit ve Güvenlik Açığı Yönetimi bölümüyle aynıdır.     |
+|[Güvenlik açığı yönetimi](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Ad, gezinti bölmesine sığacak şekilde kısaltıldı. Tüm sayfaların altında olduğu Microsoft Defender Güvenlik Açığı Yönetimi bölümüyle aynıdır.     |
 | İş ortakları ve API'ler | Değişiklik yok. |
 | Değerlendirmeler & öğreticileri    |     Yeni test ve öğrenme özellikleri.     |
 | Yapılandırma yönetimi   |  Değişiklik yok.  |

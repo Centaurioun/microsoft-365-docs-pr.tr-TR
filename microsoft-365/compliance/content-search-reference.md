@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Bu makale, İçerik arama hakkındaki birçok ayrıntıyı öğrenmenize yardımcı olmak için Microsoft Purview uyumluluk portalı İçerik arama eBulma aracı hakkında başvuru bilgileri içerir.
-ms.openlocfilehash: a028cfc80dfdba7bea0ddbf89b6f528d5e0726ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7173e57eaed4f4fcaec9fe240385004419918f8e
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634819"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67335660"
 ---
 # <a name="feature-reference-for-content-search"></a>İçerik arama için özellik referansı
 
@@ -190,7 +190,7 @@ Microsoft Teams'de içerik ararken ve Microsoft 365 Grupları aşağıdakileri g
 
 ## <a name="searching-inactive-mailboxes"></a>Etkin olmayan posta kutularını arama
 
-İçerik aramasında etkin olmayan posta kutularında arama yapabilirsiniz. Kuruluşunuzdaki etkin olmayan posta kutularının listesini almak için powershell Exchange Online komutunu `Get-Mailbox -InactiveMailboxOnly` çalıştırın. Alternatif olarak, Microsoft Purview uyumluluk portalı **Veri yaşam döngüsü yönetimi** \> **Bekletme'ye** gidip **Diğer**![Gezinti Çubuğu üç nokta simgesine tıklayabilirsiniz.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>**Etkin olmayan posta kutuları**.
+İçerik aramasında etkin olmayan posta kutularında arama yapabilirsiniz. Kuruluşunuzdaki etkin olmayan posta kutularının listesini almak için powershell Exchange Online komutunu `Get-Mailbox -InactiveMailboxOnly` çalıştırın. Alternatif olarak, **Microsoft Purview uyumluluk portalı Veri yaşam döngüsü yönetimi** \> **Microsoft 365** \> **Bekletme'ye** gidip **Diğer**![Gezinti Çubuğu üç nokta simgesine tıklayabilirsiniz.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>**Etkin olmayan posta kutuları**.
 
 Etkin olmayan posta kutularında arama yaparken göz önünde bulundurmak istediğiniz birkaç şey aşağıdadır.
 

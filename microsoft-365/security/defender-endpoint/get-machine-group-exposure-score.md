@@ -1,7 +1,7 @@
 ---
-title: Cihaz grubuna göre açık kalma puanı listesi
-description: Cihaz grubuna göre pozlama puanları listesini verir.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, almak, pozlama puanı, cihaz grubu, cihaz grubu pozlama puanı
+title: Cihaz grubuna göre pozlama puanını listeleme
+description: Cihaz grubuna göre maruz kalma puanlarının listesini alır.
+keywords: api'ler, graf api'leri, desteklenen API'ler, alma, maruz kalma puanı, cihaz grubu, cihaz grubu maruz kalma puanı
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,24 +13,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ba046d35b6cf93754fc1daf3d2b211d69e6c27d8
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 3740ef8976982d29ef75419fc7ae105f6a686a5b
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996545"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343317"
 ---
-# <a name="list-exposure-score-by-device-group"></a>Cihaz grubuna göre açık kalma puanı listesi
+# <a name="list-exposure-score-by-device-group"></a>Cihaz grubuna göre pozlama puanını listeleme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,16 +38,16 @@ ms.locfileid: "62996545"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Her makine grubu için pozlama puanını sağlar.
+Her makine grubu için pozlama puanını alır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 ---|---|---
-Uygulama|Puan.Okuma.All|'Tehdit ve Güvenlik Açığı Yönetimi puanı'
-Temsilcili (iş veya okul hesabı)|Puan.Okuma|'Tehdit ve Güvenlik Açığı Yönetimi puanı'
+Uygulama|Score.Read.All|'Tehdit ve Güvenlik Açığı Yönetimi puanını okuma'
+Temsilci (iş veya okul hesabı)|Score.Read|'Tehdit ve Güvenlik Açığı Yönetimi puanını okuma'
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -55,7 +55,7 @@ Temsilcili (iş veya okul hesabı)|Puan.Okuma|'Tehdit ve Güvenlik Açığı Yö
 GET /api/exposureScore/ByMachineGroups
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 ---|---|---
@@ -67,13 +67,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem yanıt gövdesinde cihaz grubu verileri başına pozlama puanının listesiyle 200 Tamam döndürür.
+Başarılı olursa bu yöntem 200 Tamam döndürür ve yanıt gövdesindeki cihaz grubu başına maruz kalma puanı verilerinin bir listesi bulunur.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="example-request"></a>Örnek istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/exposureScore/ByMachineGroups
@@ -81,7 +81,7 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore/ByMachineGroups
 
 ### <a name="example-response"></a>Örnek yanıt
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 ```json
 {
@@ -104,5 +104,5 @@ Yanıtın bir örneği:
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Risk Tabanlı Tehdit & Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Tehdit & Güvenlik Açığının etkilenme puanı](/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender Güvenlik Açığı Yönetimi açığa çıkarma puanı](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

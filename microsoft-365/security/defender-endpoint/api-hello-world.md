@@ -1,8 +1,8 @@
 ---
-title: MERHABA DÜNYA API için Uç Nokta için Microsoft Defender Bilgi
+title: Uç Nokta için Microsoft Defender API için Merhaba Dünya
 ms.reviewer: ''
-description: Kullanıcı API'sinde "Merhaba dünya" tarzı bir API çağrısı Uç Nokta için Microsoft Defender oluşturun.
-keywords: api'ler, desteklenen api'ler, gelişmiş av, sorgu, microsoft defender atp, uç nokta için Microsoft Defender
+description: Uç Nokta için Microsoft Defender API'sine 'Merhaba dünya' stili api çağrısı oluşturma.
+keywords: api'ler, desteklenen api'ler, gelişmiş avcılık, sorgu, microsoft defender atp, uç nokta için microsoft defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,105 +14,105 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd8f48e8396225fc03441cfc7c8ed69fa3f378bb
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 2805736c3d612716f3b99ba0f97fc74a0070bc68
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475619"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328046"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Uç Nokta için Microsoft Defender API - Merhaba Dünya
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
->Bu deneyimi Uç Nokta için Microsoft Defender? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="get-alerts-using-a-simple-powershell-script"></a>Basit bir PowerShell betiği kullanarak Uyarılar'ı kullanma
+## <a name="get-alerts-using-a-simple-powershell-script"></a>Basit bir PowerShell betiği kullanarak Uyarılar alma
 
-### <a name="how-long-it-takes-to-go-through-this-example"></a>Bu örneği üzerinden geçen süre ne kadar sürer?
+### <a name="how-long-it-takes-to-go-through-this-example"></a>Bu örnekten geçmek ne kadar sürer?
 
-İki adımda yapılması yalnızca 5 dakika sürer:
+İki adımda yalnızca 5 dakika sürer:
 
 - Uygulama kaydı
-- Örnekleri kullanın: yalnızca kısa bir PowerShell betiğinin kopyalayıp yapıştır gerektirir
+- Örnekleri kullanma: Yalnızca kısa bir PowerShell betiğinin kopyalanmasını/yapıştırılabilmesini gerektirir
 
-### <a name="do-i-need-a-permission-to-connect"></a>Bağlanmak için izin gerekiyor mu?
+### <a name="do-i-need-a-permission-to-connect"></a>Bağlanmak için izne ihtiyacım var mı?
 
-Uygulama kayıt aşamasında, Genel yönetici (Azure AD) kiracısında Azure Active Directory rolüne sahip olmak gerekir.
+Uygulama kayıt aşaması için Azure Active Directory (Azure AD) kiracınızda **Genel yönetici** rolüne sahip olmanız gerekir.
 
-### <a name="step-1---create-an-app-in-azure-active-directory"></a>1. Adım - Aynı Uygulamada Azure Active Directory
+### <a name="step-1---create-an-app-in-azure-active-directory"></a>1. Adım - Azure Active Directory'de uygulama oluşturma
 
-1. [Genel yönetici kullanıcınız](https://portal.azure.com) **ile Azure'da Genel yönetici** yapın.
+1. Genel yönetici kullanıcınızla [](https://portal.azure.com) **Azure'da** oturum açın.
 
-2. Yeni kayıt **Azure Active Directory** \> **Uygulama kayıtları** \> **gidin**.
+2. **Azure Active Directory** \> **Uygulama kayıtları** \> **Yeni kayıt'a** gidin.
 
-   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Uygulama kayıtları portalında Yönet bölmesinin altında yer alan Azure Active Directory seçeneği"  lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Azure Active Directory portalındaki Yönet bölmesinin altındaki Uygulama kayıtları seçeneği"  lightbox="images/atp-azure-new-app2.png":::
 
-3. Kayıt formunda, başvuru için bir ad seçin ve Kaydol'a **tıklayın**.
+3. Kayıt formunda, uygulamanız için bir ad seçin ve **Kaydet'e** tıklayın.
 
-4. Uygulamanın Uç Nokta için Defender'a erişmesine ve 'Tüm uyarıları **okuma' izni atamasına izin** ver:
+4. Uygulamanızın Uç Nokta için Defender'a erişmesine ve **'Tüm uyarıları okuma'** izni atamasına izin verin:
 
-   - Uygulama sayfanız üzerinde **API** \>  \> İzinleri Ekle Kuruluşumda kullanan izin API'leri'ne **tıklayın > WindowsDefenderATP** yazın ve **WindowsDefenderATP'ye tıklayın**.
+   - Uygulama sayfanızda **API İzinleri** **Kuruluşumun kullandığı** **izin** \> API'leri \> ekle'ye tıklayın > **WindowsDefenderATP** yazın ve **WindowsDefenderATP'ye** tıklayın.
 
      > [!NOTE]
-     > WindowsDefenderATP özgün listede görünmez. Görünmesini görmek için metin kutusuna adını yazmaya başlamalı.
+     > WindowsDefenderATP özgün listede görünmez. Görünmesini sağlamak için metin kutusuna adını yazmaya başlamanız gerekir.
 
-     :::image type="content" source="images/add-permission.png" alt-text="Portalda Yönet bölmesinin altındaki API izinleri Azure Active Directory." lightbox="images/add-permission.png":::
+     :::image type="content" source="images/add-permission.png" alt-text="Azure Active Directory portalındaki Yönet bölmesinin altındaki API izinleri seçeneği" lightbox="images/add-permission.png":::
 
-   - Uygulama **izinleri** **Uyarısı.Oku.Tüm** \> Gün > İzin **ekle'ye tıklayın**.
+   - **Uygulama izinleri** \> **Alert.Read.All** > **İzin ekle'ye** tıklayın.
 
-     :::image type="content" source="images/application-permissions.png" alt-text="API izinleri sayfasındaki izin türü ve ayarlar bölmeleri" lightbox="images/application-permissions.png":::
+     :::image type="content" source="images/application-permissions.png" alt-text="API izinleri isteme sayfasındaki izin türü ve ayarlar bölmeleri" lightbox="images/application-permissions.png":::
 
      > [!IMPORTANT]
      > İlgili izinleri seçmeniz gerekir. 'Tüm Uyarıları Oku' yalnızca bir örnektir!
 
      Örneğin:
 
-     - Gelişmiş [sorguları çalıştırmak için "](run-advanced-query-api.md)Gelişmiş sorguları çalıştırma" iznini seçin.
-     - Bir [makine yalıtmak](isolate-machine.md) için "Makine ayırma" iznini seçin.
-     - Hangi izinlere ihtiyacınız olduğunu belirlemek için lütfen çağrı **yapmakla** ilgilendiğiniz API'deki İzinler bölümüne bakın.
+     - [Gelişmiş sorgular çalıştırmak](run-advanced-query-api.md) için 'Gelişmiş sorgu çalıştır' iznini seçin.
+     - [Bir makineyi yalıtmak](isolate-machine.md) için 'Makineyi yalıtma' iznini seçin.
+     - Hangi izne ihtiyacınız olduğunu belirlemek için lütfen çağırmak istediğiniz API'nin **İzinler** bölümüne bakın.
 
-5. İzin **ver'e tıklayın**.
+5. **İzin ver'e** tıklayın.
 
    > [!NOTE]
-   > Her izin ekley tıklaymanız ve yeni **iznin** yürürlüğe girecek olması için İzin ver'e tıklamanız gerekir.
+   > her izin eklediğinizde, yeni iznin geçerli olması için **Onay ver'e** tıklamanız gerekir.
 
-   :::image type="content" source="images/grant-consent.png" alt-text="Azure Active Directory portalında izin Azure Active Directory seçeneği" lightbox="images/grant-consent.png":::
+   :::image type="content" source="images/grant-consent.png" alt-text="Azure Active Directory portalında izin izni verme seçeneği" lightbox="images/grant-consent.png":::
 
-6. Uygulamaya bir gizli ekleyin.
+6. Uygulamaya gizli dizi ekleyin.
 
-    **Sertifikalar gizli & tıklayın**, gizli gizli için açıklama ekleyin ve Ekle'ye **tıklayın**.
+    **Sertifikalar & gizli diziler'e** tıklayın, gizli diziye açıklama ekleyin ve **Ekle'ye** tıklayın.
 
     > [!IMPORTANT]
-    > Ekle'ye **tıklayıp oluşturulan gizli değeri kopyalayın**. İşten ayrıldıktan sonra geri ala zaman kazanaaasiniz!
+    > Ekle'ye tıkladıktan sonra **oluşturulan gizli dizi değerini kopyalayın**. Gittikten sonra geri alamazsınız!
 
-    :::image type="content" source="images/webapp-create-key2.png" alt-text="The Certificates & secrets menu item in the Manage pane in the Azure Active Directory portal" lightbox="images/webapp-create-key2.png":::
+    :::image type="content" source="images/webapp-create-key2.png" alt-text="Azure Active Directory portalındaki Yönet bölmesindeki Sertifikalar & gizli dizileri menü öğesi" lightbox="images/webapp-create-key2.png":::
 
-7. Uygulama kimliğinizi ve kiracı kimliğinizi bir yere yazın.
+7. Uygulama kimliğinizi ve kiracı kimliğinizi not edin.
 
-   Uygulama sayfanız üzerinde Genel **Bakış'a** gidin ve şunları kopyalayın:
+   Uygulama sayfanızda **Genel Bakış'a** gidin ve aşağıdakileri kopyalayın:
 
-   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="Azure Active Directory portalında Genel Bakış menü öğesinin altındaki uygulama Azure Active Directory bölmesi" lightbox="images/app-and-tenant-ids.png":::
+   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="Azure Active Directory portalındaki Genel Bakış menü öğesinin altındaki uygulama ayrıntıları bölmesi" lightbox="images/app-and-tenant-ids.png":::
 
-Bitti! Bir uygulamayı başarıyla kaydettiysiniz!
+Bitti! Bir uygulamayı başarıyla kaydettiniz!
 
-### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>2. Adım - Uygulamayı kullanarak bir belirteç alın ve API'ye erişmek için bu belirteci kullanın.
+### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>2. Adım: Uygulamayı kullanarak bir belirteç alın ve API'ye erişmek için bu belirteci kullanın.
 
-- Aşağıdaki betiği PowerShell ISE'ye veya bir metin düzenleyicisine kopyalayın ve **farklıGet-Token.ps1.**
-- Bu betiği çalıştırarak bir belirteç oluşturulur ve bunu çalışma klasörüne dosya adı **Latest-token.txt**.
+- Aşağıdaki betiği PowerShell ISE'ye veya bir metin düzenleyicisine kopyalayın ve **Get-Token.ps1** olarak kaydedin.
+- Bu betiği çalıştırmak bir belirteç oluşturur ve **Latest-token.txt** adı altında çalışma klasörüne kaydeder.
 
    ```powershell
    # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -136,20 +136,20 @@ Bitti! Bir uygulamayı başarıyla kaydettiysiniz!
    return $token
    ```
 
-- Sanity Check:
+- Sanity Denetimi:
   - Betiği çalıştırın.
-  - Tarayıcınızda şu gidin: <https://jwt.ms/>.
-  - Belirteci kopyalayın (dosyanın Latest-token.txt).
-  - Üst kutuya yapıştırma.
-  - "Roller" bölümünü bakın. _Alert.Read.All rolünü_ bulun.
+  - Tarayıcınızda adresine gidin: <https://jwt.ms/>.
+  - Belirteci kopyalayın (Latest-token.txt dosyasının içeriği).
+  - Üstteki kutuya yapıştırın.
+  - "Roller" bölümünü arayın. _Alert.Read.All_ rolünü bulun.
 
-  :::image type="content" source="images/api-jwt-ms.png" alt-text="Kod Çözme Belirteci bölmesi jwt.ms" lightbox="images/api-jwt-ms.png":::
+  :::image type="content" source="images/api-jwt-ms.png" alt-text="jwt.ms için Kod Çözme Belirteci bölmesi" lightbox="images/api-jwt-ms.png":::
 
-### <a name="lets-get-the-alerts"></a>Uyarıları al!
+### <a name="lets-get-the-alerts"></a>Uyarıları alalım!
 
-- Aşağıdaki betik API' **Get-Token.ps1** içinGet-Token.ps1'i kullanır ve son 48 saatlik Uyarıları alır.
-- Bu betiği, önceki betiği kaydetmek istediğiniz **klasöreGet-Token.ps1**.
-- Betik, betiklerle aynı klasörde yer alan verilerle birlikte iki dosya (json ve csv) oluşturur.
+- Aşağıdaki betik, API'ye erişmek için **Get-Token.ps1** kullanır ve son 48 saatlik Uyarıları alır.
+- Bu betiği, **Get-Token.ps1** önceki betiği kaydettiğiniz klasöre kaydedin.
+- Betik, betiklerle aynı klasörde yer alan verileri içeren iki dosya (json ve csv) oluşturur.
 
   ```powershell
   # Returns Alerts created in the past 48 hours.
@@ -187,15 +187,15 @@ Bitti! Bir uygulamayı başarıyla kaydettiysiniz!
   ($alerts | ConvertFrom-Json) | Export-CSV $outputCsvPath -NoTypeInformation
   ```
 
-Hepsi bu kadar! Başarıyla tamamladık:
+Hepsi bu kadar! Başarılı bir şekilde:
 
-- Oluşturma, kayıt ve uygulama
-- Bu uygulama için uyarıları okuma izni verildi
-- API'ye bağlandı
-- Son 48 saat içinde oluşturulan uyarıları geri dönmek için bir PowerShell betiği kullanıldı
+- Oluşturulan ve kaydedilen ve uygulama
+- Bu uygulamaya uyarıları okuma izni verildi
+- API'yi bağlama
+- Son 48 saat içinde oluşturulan uyarıları döndürmek için PowerShell betiği kullanıldı
 
 ## <a name="related-topic"></a>İlgili konu
 
-- [Uç Nokta için Microsoft Defender API'leri](exposed-apis-list.md)
-- [Uygulama Uç Nokta için Microsoft Defender ile Access 2013](exposed-apis-create-app-webapp.md)
-- [Kullanıcı Uç Nokta için Microsoft Defender Access erişimi](exposed-apis-create-app-nativeapp.md)
+- [api'leri Uç Nokta için Microsoft Defender](exposed-apis-list.md)
+- [Uygulama bağlamı ile Uç Nokta için Microsoft Defender erişme](exposed-apis-create-app-webapp.md)
+- [Kullanıcı bağlamıyla Uç Nokta için Microsoft Defender erişme](exposed-apis-create-app-nativeapp.md)

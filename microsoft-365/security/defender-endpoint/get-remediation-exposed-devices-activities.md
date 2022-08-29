@@ -1,7 +1,7 @@
 ---
-title: Bir düzeltme etkinliğinin açık cihazları listesi
-description: Belirtilen düzeltme görevi için belirtilen cihazlar hakkında bilgi verir.
-keywords: api'ler, düzeltme, düzeltme API'si, almak, düzeltme görevleri, düzeltme açıklanmış cihazlar
+title: Bir düzeltme etkinliğine maruz kalmış cihazları listele
+description: Belirtilen düzeltme görevi için kullanıma sunulan cihazlar hakkındaki bilgileri döndürür.
+keywords: api'ler, düzeltme, düzeltme api'leri, alma, düzeltme görevleri, kullanıma sunulan cihazları düzeltme
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,25 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1a7dffa064b68b2c1ce0296b66eef663eb471496
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 34a12fbe5d97345a7a0a5a9c491d10489d6ac601
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996567"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344799"
 ---
-# <a name="list-exposed-devices-of-one-remediation-activity"></a>Bir düzeltme etkinliğinin açık cihazları listesi
+# <a name="list-exposed-devices-of-one-remediation-activity"></a>Bir düzeltme etkinliğine maruz kalmış cihazları listele
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -41,31 +41,31 @@ ms.locfileid: "62996567"
 
 ## <a name="api-description"></a>API Açıklaması
 
-Belirtilen düzeltme görevi için belirtilen cihazlar hakkında bilgi verir.
+Belirtilen düzeltme görevi için kullanıma sunulan cihazlar hakkındaki bilgileri döndürür.
 
-[Düzeltme etkinlikleri hakkında daha fazla bilgi öğrenin](tvm-remediation.md).
+[Düzeltme etkinlikleri hakkında daha fazla bilgi edinin](tvm-remediation.md).
 
-## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a>Düzeltme göreviyle (kimlik) ilişkilendirilmiş, açık cihazlar listesi
+## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a>Bir düzeltme görevi (id) ile ilişkili kullanıma sunulan cihazları listeleme
 
 **URL:** GET: /api/remediationTasks/\{id\}/machineReferences
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Uç nokta API'leri için Microsoft Defender'ı kullanma.](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek [için ayrıntılar için bkz. Uç Nokta için Microsoft Defender API'lerini kullanma.](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
-Uygulama|RemediationTasks.Read.All|\'Tehdit ve Güvenlik Açığı Yönetimi güvenlik açığı bilgilerini okuma\'
-Temsilcili (iş veya okul hesabı)|RemediationTask.Read.Read|\'Tehdit ve Güvenlik Açığı Yönetimi güvenlik açığı bilgilerini okuma\'
+Uygulama|RemediationTasks.Read.All|\'Tehdit ve Güvenlik Açığı Yönetimi güvenlik açığı bilgilerini okuyun\'
+Temsilci (iş veya okul hesabı)|RemediationTask.Read.Read|\'Tehdit ve Güvenlik Açığı Yönetimi güvenlik açığı bilgilerini okuyun\'
 
 ## <a name="properties-details"></a>Özellikler ayrıntıları
 
-Özellik (kimlik)|Veri türü|Açıklama|Örnek
+Özellik (id)|Veri türü|Açıklama|Örnek
 :---|:---|:---|:---
-id|Dize|Cihaz Kimliği|w2957837fwda8w9ae7f023dba081059dw8d94503
+Kimliği|Dize|Cihaz Kimliği|w2957837fwda8w9ae7f023dba081059dw8d94503
 computerDnsName|Dize|Cihaz adı|PC-SRV2012R2Foo.UserNameVldNet.local
 osPlatform|Dize|Cihaz işletim sistemi|WindowsServer2012R2
-rbacGroupName|Dize|Bu cihazın ilişkilendiril olduğu cihaz grubunun adı|Sunucular
+rbacGroupName|Dize|Bu cihazın ilişkili olduğu cihaz grubunun adı|Sunucular
 
 ## <a name="example"></a>Örnek
 
@@ -116,7 +116,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Düzeltme yöntemleri ve özellikleri](get-remediation-methods-properties.md)
-- [Kimlikle tek bir düzeltme etkinliği elde](get-remediation-one-activity.md)
+- [Kimliğine göre bir düzeltme etkinliği alma](get-remediation-one-activity.md)
 - [Tüm düzeltme etkinliklerini listele](get-remediation-all-activities.md)
-- [Risk tabanlı tehdit & güvenlik açığı yönetimi](next-gen-threat-and-vuln-mgt.md)
-- [Organizasyon güvenlik açıkları](tvm-weaknesses.md)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](next-gen-threat-and-vuln-mgt.md)
+- [Kuruluşunuzdaki güvenlik açıkları](tvm-weaknesses.md)

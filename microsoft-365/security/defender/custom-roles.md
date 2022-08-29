@@ -1,7 +1,7 @@
 ---
 title: Rol tabanlı erişim denetimi için özel roller
 description: Microsoft 365 Defender portalında özel rolleri yönetmeyi öğrenin
-keywords: erişim, izinler, Microsoft 365 Defender, M365, güvenlik, MCAS, Bulut Uygulamaları Güvenliği, Uç Nokta için Microsoft Defender , kapsam, kapsam, RBAC, rol tabanlı erişim, özel rol tabanlı erişim, roller tabanlı kimlik doğrulaması, MDO'da RBAC, roller, rol grupları, izin devralma, ayrıntılı izinler
+keywords: erişim, izinler, Microsoft 365 Defender, M365, güvenlik, MCAS, Bulut Uygulamaları Güvenliği, Uç Nokta için Microsoft Defender, kapsam, kapsam, kapsam, RBAC, rol tabanlı erişim, özel roller tabanlı erişim, rol tabanlı kimlik doğrulaması, MDO'da RBAC, roller, rol grupları, izinler devralma, ayrıntılı izinler
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 94330e319eeb44618c1e11b27da7b3d63c08d203
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: f36e57af9cf1c593ba157454bdfe90b840094c02
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731361"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344591"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Microsoft 365 Defender için rol tabanlı erişim denetiminde özel roller
 
@@ -41,11 +41,11 @@ Microsoft 365 Defender erişmek için kullanılabilecek iki tür rol vardır:
 - **Genel Azure Active Directory (AD) rolleri**
 - **Özel roller**
 
-Microsoft 365 Defender erişimi, [Azure Active Directory genel rolleri kullanılarak toplu olarak yönetilebilir (AAD)](m365d-permissions.md)
+Microsoft 365 Defender erişimi[, Azure Active Directory'de (AAD) Genel roller](m365d-permissions.md) kullanılarak toplu olarak yönetilebilir
 
 Daha fazla esnekliğe ve belirli ürün verilerine erişim üzerinde denetime ihtiyacınız varsa, Microsoft 365 Defender erişim ilgili her güvenlik portalı aracılığıyla Özel roller oluşturularak da yönetilebilir.  
 
-Örneğin, Uç Nokta için Microsoft Defender aracılığıyla oluşturulan özel bir rol, Microsoft 365 Defender portalındaki Uç nokta verileri de dahil olmak üzere ilgili ürün verilerine erişime izin verebilir. Benzer şekilde, Office 365 için Microsoft Defender aracılığıyla oluşturulan bir Özel rol, Microsoft 365 Defender portalındaki E-posta & işbirliği verileri de dahil olmak üzere ilgili ürün verilerine erişime izin verir.
+Örneğin, Uç Nokta için Microsoft Defender aracılığıyla oluşturulan özel bir rol, Microsoft 365 Defender portalındaki Uç nokta verileri de dahil olmak üzere ilgili ürün verilerine erişime izin verebilir. Benzer şekilde, Office 365 için Microsoft Defender aracılığıyla oluşturulan bir Özel rol, Microsoft 365 Defender portalındaki Email & işbirliği verileri de dahil olmak üzere ilgili ürün verilerine erişime izin verir.
 
 Mevcut Özel rollere sahip kullanıcılar, ek yapılandırma gerekmeyen mevcut iş yükü izinlerine göre Microsoft 365 Defender portalındaki verilere erişebilir.
 
@@ -59,7 +59,7 @@ Aşağıdaki güvenlik portallarının her biri aracılığıyla özel roller ve
 Tek bir portal aracılığıyla oluşturulan her özel rol, ilgili ürün portalının verilerine erişim sağlar. Örneğin, Uç Nokta için Microsoft Defender aracılığıyla oluşturulan özel bir rol yalnızca Uç Nokta için Defender verilerine erişime izin verir.
 
 > [!TIP]
-> İzinlere ve rollere gezinti bölmesinden İzinler & rolleri seçilerek Microsoft 365 Defender portalı üzerinden de erişilebilir. Microsoft Defender for Cloud Apps erişimi, Bulut için Defender Uygulamaları portalı üzerinden yönetilir ve Kimlik için Microsoft Defender erişimi de denetler.  [Bkz. Microsoft Defender for Cloud Apps](/cloud-app-security/manage-admins)
+> İzinlere ve rollere gezinti bölmesinden İzinler & rolleri seçilerek Microsoft 365 Defender portalı üzerinden de erişilebilir. Microsoft Defender for Cloud Apps erişimi, Cloud Apps için Defender portalı üzerinden yönetilir ve Kimlik için Microsoft Defender erişimi de denetler.  [Bkz. Microsoft Defender for Cloud Apps](/cloud-app-security/manage-admins)
 
 > [!NOTE]
 > Microsoft Defender for Cloud Apps'de oluşturulan özel rollerin de Kimlik için Microsoft Defender verilere erişimi vardır. Kullanıcı grubu yöneticisi veya Uygulama/örnek yöneticisi Microsoft Defender for Cloud Apps rolleri olan kullanıcılar Microsoft 365 Defender portalı üzerinden Microsoft Defender for Cloud Apps verilere erişemez.
@@ -81,14 +81,14 @@ Aşağıdaki tabloda, her iş yükündeki her bir birleşik deneyime erişmek i�
 > [!NOTE]
 > Olay yönetimi, olayın parçası olan tüm ürünler için yönetim izinleri gerektirir.
  
-| **Microsoft 365 Defender için aşağıdaki rollerden biri gereklidir**  | **Uç Nokta için Defender için aşağıdaki rollerden biri gereklidir**  | **Office 365 için Defender için aşağıdaki rollerden biri gereklidir** | **Bulut için Defender Uygulamaları için aşağıdaki rollerden biri gereklidir** | 
+| **Microsoft 365 Defender için aşağıdaki rollerden biri gereklidir**  | **Uç Nokta için Defender için aşağıdaki rollerden biri gereklidir**  | **Office 365 için Defender için aşağıdaki rollerden biri gereklidir** | **Cloud Apps için Defender için aşağıdaki rollerden biri gereklidir** | 
 |---------|---------|---------|---------|
 | Araştırma verilerini görüntüleme: <ul><li>Uyarı sayfası</li> <li>Uyarı sırası</li> <li>Olaylar</li>  <li>Olay kuyruğu</li> <li>İşlem merkezi</li></ul>| Veri görüntüleme- güvenlik işlemleri | <ul><li>Yalnızca görüntüleme Uyarılarını yönetme </li> <li>Kuruluş yapılandırması</li><li>Denetim günlükleri</li> <li>Yalnızca görüntüleme denetim günlükleri</li> <li>Güvenlik gözetmeni</li> <li>Güvenlik yöneticisi</li><li>Yalnızca görüntüleme alıcıları</li></ul>  | <ul><li>Genel yönetici</li> <li>Güvenlik yöneticisi</li> <li>Uyumluluk yöneticisi</li> <li>Güvenlik operatörü</li> <li>Güvenlik gözetmeni</li> <li>Genel gözetmen</li></ul> |
 | Tehdit avcılığı verilerini görüntüleme | Veri görüntüleme- güvenlik işlemleri | <ul><li>Güvenlik gözetmeni</li> <li>Güvenlik yöneticisi</li> <li>Yalnızca görüntüleme alıcıları</li> | <ul><li>Genel yönetici</li> <li>Güvenlik yöneticisi</li> <li>Uyumluluk yöneticisi</li> <li>Güvenlik operatörü</li> <li>Güvenlik gözetmeni</li> <li>Genel gözetmen</li></ul> |
 | Uyarıları ve olayları yönetme | Uyarı araştırması | <ul><li>Uyarıları yönetin</li> <li>Güvenlik yöneticisi</li> | <ul><li>Genel yönetici</li> <li>Güvenlik yöneticisi</li> <li>Uyumluluk yöneticisi</li> <li>Güvenlik operatörü</li> <li>Güvenlik gözetmeni</li></ul> |
 | İşlem merkezi düzeltmesi | Etkin düzeltme eylemleri – güvenlik işlemleri | Arama ve temizleme | |
 | Özel algılamaları ayarlama | Güvenlik ayarlarını yönetme |<ul><li>Uyarıları yönetin</li> <li>Güvenlik yöneticisi</li></ul> | <ul><li>Genel yönetici</li> <li>Güvenlik yöneticisi</li> <li>Uyumluluk yöneticisi</li> <li>Güvenlik operatörü</li> <li>Güvenlik gözetmeni</li> <li>Genel gözetmen</li></ul> |
-| Tehdit Analizi | Uyarılar ve olay verileri: <ul><li>Veri görüntüleme- güvenlik işlemleri</li></ul>TVM risk azaltmaları:<ul><li>Verileri görüntüleme - Tehdit ve güvenlik açığı yönetimi</li></ul> | Uyarılar ve olay verileri:<ul> <li>Yalnızca görüntüleme Uyarılarını yönetme</li> <li>Uyarıları yönetin</li> <li>Kuruluş yapılandırması</li><li>Denetim günlükleri</li> <li>Yalnızca görüntüleme denetim günlükleri</li><li>Güvenlik gözetmeni</li> <li>Güvenlik yöneticisi</li><li>Yalnızca görüntüleme alıcıları</li> </ul> Engellenen e-posta girişimleri: <ul><li>Güvenlik gözetmeni</li> <li>Güvenlik yöneticisi</li><li>Yalnızca görüntüleme alıcıları</li> | Bulut için Defender Uygulamaları veya MDI kullanıcıları için kullanılamaz |
+| Tehdit Analizi | Uyarılar ve olay verileri: <ul><li>Veri görüntüleme- güvenlik işlemleri</li></ul>Defender Güvenlik Açığı Yönetimi azaltmaları:<ul><li>Verileri görüntüleme - Tehdit ve güvenlik açığı yönetimi</li></ul> | Uyarılar ve olay verileri:<ul> <li>Yalnızca görüntüleme Uyarılarını yönetme</li> <li>Uyarıları yönetin</li> <li>Kuruluş yapılandırması</li><li>Denetim günlükleri</li> <li>Yalnızca görüntüleme denetim günlükleri</li><li>Güvenlik gözetmeni</li> <li>Güvenlik yöneticisi</li><li>Yalnızca görüntüleme alıcıları</li> </ul> Engellenen e-posta girişimleri: <ul><li>Güvenlik gözetmeni</li> <li>Güvenlik yöneticisi</li><li>Yalnızca görüntüleme alıcıları</li> | Cloud Apps için Defender veya MDI kullanıcıları için kullanılamaz |
 
 Örneğin, Uç Nokta için Microsoft Defender gelen tehdit avcılığı verilerini görüntülemek için Veri güvenliği işlemlerini görüntüleme izinleri gereklidir.  
 
@@ -102,4 +102,4 @@ Benzer şekilde, Office 365 için Microsoft Defender avlanma verilerini görünt
 ## <a name="related-topics"></a>İlgili konular
 - [RBAC rolleri](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
 - [Microsoft 365 Defender erişimini yönetme](m365d-permissions.md)
-- [Bulut için Defender Uygulamaları için yönetici erişimini yönetme](/cloud-app-security/manage-admins)
+- [Cloud Apps için Defender için yönetici erişimini yönetme](/cloud-app-security/manage-admins)

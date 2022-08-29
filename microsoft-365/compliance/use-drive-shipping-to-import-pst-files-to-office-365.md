@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: Yönetici, PST dosyalarını bir sabit sürücüye kopyalayıp Microsoft'a göndererek PST dosyalarını Microsoft 365 posta kutularına toplu olarak aktarmayı öğrenebilir.
-ms.openlocfilehash: ac8b24c04823bf3635b7762d160cee71a356ebfd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a81755b4c36664f215387cfa11b149af03e307b3
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626083"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67335792"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Kuruluşunuzun PST dosyalarını içeri aktarmak için sürücü gönderimini kullanma
 
@@ -113,7 +113,7 @@ PST dosyalarını Office 365 aktarmak için sürücü gönderimi kullanma hakkı
   
 1. <https://compliance.microsoft.com> Adresine gidin ve kuruluşunuzdaki bir yönetici hesabının kimlik bilgilerini kullanarak oturum açın.
 
-2. Uyumluluk portalının sol gezinti bölmesinde **Veri yaşam döngüsü yönetimi** \> **İçeri Aktar'a** tıklayın.
+2. Uyumluluk portalının sol gezinti bölmesinde **Veri yaşam döngüsü yönetimi** \> **Microsoft 365** \> **İçeri Aktar'a** tıklayın.
     
     > [!NOTE]
     > Daha önce belirtildiği gibi, uyumluluk portalındaki **İçeri Aktar** sayfasına erişmek için size uygun izinlerin atanması gerekir.
@@ -240,7 +240,7 @@ Sonraki adım, Office 365'da İçeri Aktarma hizmetinde PST İçeri Aktarma işi
   
 1. <https://compliance.microsoft.com> Adresine gidin ve kuruluşunuzdaki bir yönetici hesabının kimlik bilgilerini kullanarak oturum açın.
 
-2. Uyumluluk portalının sol gezinti bölmesinde **Veri yaşam döngüsü yönetimi** \> **İçeri Aktar'a** tıklayın.
+2. Uyumluluk portalının sol gezinti bölmesinde **Veri yaşam döngüsü yönetimi** \> **Microsoft 365** \> **İçeri Aktar'a** tıklayın.
 
 3. **İçeri Aktar** sekmesinde Simge Ekle'ye tıklayın![.](../media/ITPro-EAC-AddIcon.gif) **Yeni içeri aktarma işi**.
 
@@ -350,7 +350,7 @@ PST dosyaları Azure'a yüklendikten sonra durum **Analiz sürüyor** olarak de�
   
 1. <https://compliance.microsoft.com> Adresine gidin ve kuruluşunuzdaki bir yönetici hesabının kimlik bilgilerini kullanarak oturum açın.
 
-2. Uyumluluk portalının sol gezinti bölmesinde **Veri yaşam döngüsü yönetimi** \> **İçeri aktar***'a tıklayın.
+2. Uyumluluk portalının sol gezinti bölmesinde **Veri yaşam döngüsü yönetimi** \> **Microsoft 365** \> **İçeri aktar***'a tıklayın.
 
 3. **İçeri Aktar** sekmesinde, 4. Adımda oluşturduğunuz içeri aktarma işini seçin ve **Office 365 için İçeri Aktar'a** tıklayın.
   

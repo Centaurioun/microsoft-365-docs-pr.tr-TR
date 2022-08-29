@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Bekletme etiketlerini yayımlama yönergelerini kullanarak, ihtiyacınız olan şeyleri korumak ve olmayanları silmek için bunları uygulamalara uygulayabilirsiniz.
-ms.openlocfilehash: 54e2a7f5f9776438ad36d51d43b38ed379cb35d0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a477157b024d3b58483fe90549ba75e820f34a2f
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630355"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67335748"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Bekletme etiketlerini yayımlama ve uygulamalarda uygulama
 
@@ -62,7 +62,7 @@ Bekletme etiketi ilkenizi oluşturmadan önce **bunun uyarlamalı** mı yoksa **
         - **Çözümleri** >  **Kayıt yönetimi** > > **Etiket ilkeleri** sekmesi > **Etiketleri yayımla**
     
     - Veri yaşam döngüsü yönetimi kullanıyorsanız:
-        - **Çözümleri** >  **Veri yaşam döngüsü yönetimi** >  **Etiket ilkeleri** sekmesi > **Etiketleri yayımla**
+        - **Çözümleri** >  **Veri yaşam döngüsü yönetimi** >  **Microsoft 365** >  **Etiket ilkeleri** sekmesi > **Etiketleri yayımla**
     
     Gezinti bölmesinde çözümünüzü hemen görmüyor musunuz? İlk olarak **Tümünü göster'i** seçin. 
 
@@ -102,7 +102,7 @@ Etiketler yedi gün sonra görünmüyorsa, Microsoft Purview uyumluluk portalı 
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
     
-    - **Exchange e-postası**, **SharePoint siteleri**, **Teams kanal iletileri** gibi diğer tüm ilke konumları için:
+    - **Exchange e-postası**, **SharePoint siteleri**, **Teams kanal iletileri** vb. gibi diğer tüm ilke konumları için:
     
         ```PowerShell
         Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
@@ -273,7 +273,7 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ### Deleting retention labels
 
-You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
+You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or that mark items as regulatory records.
 
 For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
 

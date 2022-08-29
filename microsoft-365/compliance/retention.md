@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: İhtiyacınız olanı korumak ve kuruluşunuzun verilerini yönetmek için olmayanları silmek için Microsoft 365 bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin.
-ms.openlocfilehash: 24750145bb1361ede8d7519a1d08c74baafdf10d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7e4c0384cd2678d666be4d65f59a1651d1e2d03e
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949315"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336276"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Bekletme ilkeleri ve bekletme etiketleri hakkında bilgi edinin
 
@@ -586,7 +586,7 @@ Verileri korumak için eski eBulma araçlarını kullanıyorsanız aşağıdaki 
 
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>Eski özellikler yerine bekletme ilkelerini ve bekletme etiketlerini kullanma
 
-Veri yaşam döngüsü yönetimi için Microsoft 365'te içeriği proaktif olarak saklamanız veya silmeniz gerekiyorsa, aşağıdaki eski özellikler yerine bekletme ilkelerini ve bekletme etiketlerini kullanmanızı öneririz.
+Veri yaşam döngüsü yönetimi için Microsoft 365'te içeriği proaktif olarak saklamanız veya silmeniz gerekiyorsa, aşağıdaki eski özellikler yerine Microsoft 365 bekletme ilkelerini ve bekletme etiketlerini kullanmanızı öneririz.
 
 Şu anda bu eski özellikleri kullanıyorsanız, bunlar Microsoft 365 bekletme ilkeleri ve bekletme etiketleriyle yan yana çalışmaya devam eder. Ancak bundan sonra, Microsoft 365'te birden çok iş yükünde içeriğin hem elde tutulmasını hem de silinmesini yönetmek için tek bir çözümden yararlanmak için Microsoft 365 bekletme ilkelerini ve bekletme etiketlerini kullanmanızı öneririz.
 
@@ -599,6 +599,10 @@ Veri yaşam döngüsü yönetimi için Microsoft 365'te içeriği proaktif olara
   - Belirli bir süre sonra [kullanıcının birincil posta kutusundan gelen e-postaları](enable-archive-mailboxes.md) otomatik olarak arşiv posta kutusuna taşımaya yönelik arşiv posta kutularına yönelik arşiv ilkesi. Arşiv ilkesi (tüm ayarlarla) kullanıcının birincil ve arşiv posta kutusu için geçerli olan bir Microsoft 365 bekletme ilkesiyle birlikte kullanılabilir.
 
   - Bir yönetici tarafından posta kutusu içindeki belirli klasörlere uygulanan bekletme ilkeleri. Microsoft 365 bekletme ilkesi, posta kutusundaki tüm klasörler için geçerlidir. Ancak yönetici, kullanıcının Outlook'taki klasörlere [varsayılan bekletme etiketi](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder) olarak uygulayabileceği bekletme etiketlerini kullanarak farklı bekletme ayarları yapılandırabilir.
+
+- [Günlük kaydı](/exchange/security-and-compliance/journaling/journaling) (saklama ve arşiv)
+    
+    Üçüncü taraf çözümleriyle tümleştirmek gerekebilir ve e-posta iletilerinin kopyaları ve bunların veri iletişimi Exchange Online dışında depolanır. Verileri Microsoft 365'in dışına taşıdığınızdan, bu verilerin güvenliğini sağlamak için ek önlemler almanız ve ayrıca bu çözümden kaynaklanan yinelemeleri çözmeniz gerekir. Dış ve bağımlı hizmetler nedeniyle gerçekleşebilecek günlük posta kutusuna teslim edilemeyen makbuzları izlemek ve takip etmek sizin sorumluluğunuzdadır. Microsoft 365 saklama ve yalnızca e-posta iletileriyle sınırlı olmayan diğer Microsoft Purview uyumluluk çözümlerini kullandığınızda bu ek yönetim ek yüklerine sahip olmazsınız.
 
 - [Dava tutma](create-a-litigation-hold.md) (yalnızca saklama)
 

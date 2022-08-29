@@ -1,7 +1,7 @@
 ---
-title: Gösterge API'sini Sil.
-description: Uç Nokta için Microsoft Defender'da Gösterge API'sini Sil'i kullanarak bir Gösterge varlıkını nasıl sil ola öğrenin.
-keywords: api'ler, genel api, desteklenen api'ler, sil, ti göstergesi, varlık, kimlik
+title: Gösterge API'lerini silin.
+description: Uç Nokta için Microsoft Defender'da Bir Gösterge varlığını kimliğine göre silmek için Göstergeyi Sil API'sini kullanmayı öğrenin.
+keywords: apis, genel API, desteklenen API'ler, silme, ti göstergesi, varlık, kimlik
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,25 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6122c50018bb44f0e5812263339a7644868fd0d2
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 1bfb5955a14f8f520ce66139b708f82d27e1f724
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996448"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326133"
 ---
-# <a name="delete-indicator-api"></a>Gösterge API'sini Sil
+# <a name="delete-indicator-api"></a>Gösterge API'lerini Sil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,20 +40,20 @@ ms.locfileid: "62996448"
 
 ## <a name="api-description"></a>API açıklaması
 
-Bir Gösterge varlık [kimliğine](ti-indicator.md) göre siler.
+[Bir Gösterge](ti-indicator.md) varlığını kimliğine göre siler.
 
 ## <a name="limitations"></a>Sınırlamalar
 
-Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Başlama](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Başlarken](apis-intro.md)
 
-İzin türü | İzin | İzin görünen adı
+İzin türü | Izni | İzin görünen adı
 :---|:---|:---
-Uygulama | Ti.ReadWrite | 'Okuma ve yazma TI Göstergeleri'
-Uygulama | Ti.ReadWrite.All | 'Okuma ve yazma Göstergeleri'
+Uygulama | Ti.ReadWrite | 'TI Göstergelerini okuma ve yazma'
+Uygulama | Ti.ReadWrite.All | 'Gösterge okuma ve yazma'
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -63,7 +63,7 @@ Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -75,15 +75,15 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Gösterge oluşturuldu ve başarıyla silindi - İçerik olmadan 204 Tamam.
+Gösterge varsa ve başarıyla silindiyse - İçerik olmadan 204 Tamam
 
-Belirtilen kimliğin bulunduğu Gösterge bulunamadı - 404 Bulunamadı.
+Belirtilen kimliği içeren Gösterge bulunamadıysa - 404 Bulunamadı
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiş.
 
 ```http
 DELETE https://api.securitycenter.microsoft.com/api/indicators/995

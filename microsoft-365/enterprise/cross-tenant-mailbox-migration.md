@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 60e79a0b4b8aff7785bca24bbd974492b3a1e795
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 307754dec24549c320a8ea9e2d8064b7e6d44d68
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071645"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336034"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Kiracılar arası posta kutusu geçişi (önizleme)
 
@@ -658,15 +658,24 @@ Geçiş tamamlanmadan önce bu yapılabilir, ancak _ExchangeGuid_ özniteliğini
       | Exchange Online Plan 1                           |
       | Exchange Online POP                              |
       | Exchange Online Protection                       |
+      | Dizinli Graph Bağlayıcıları Arama                |
       | Bilgi Engelleri                             |
       | Office 365 için Information Protection - Premium  |
       | Office 365 için Information Protection - Standart |
       | MyAnalytics İçgörüleri                          |
+      | Microsoft Bilgi İdaresi                 |
       | Microsoft Purview Denetim (Premium)                  |
       | Microsoft Kayıtları                               |
       | Microsoft İş Merkezi                        |
-      | Microsoft MyAnalytics (Tam)                     |
+      | Microsoft Veri Araştırmaları                    |
+      | Microsoft MyAnalytics (Tam)       
+      | Microsoft İletişim Uyumluluğu               |
+      | Microsoft Communications DLP                     |
+      | Microsoft Müşteri Anahtarı                           |
+      | Microsoft 365 Gelişmiş Denetim                  |
+      | Microsoft Kayıt Yönetimi                     |
       | Office 365 eKeşif (Premium)                   |
+      | Office 365 Gelişmiş eKeşif                    |
       | Office 365 için Microsoft Defender (Plan 1)       |
       | Office 365 için Microsoft Defender (Plan 2)       |
       | Ayrıcalıklı Erişim Yönetimi'ni Office 365          |

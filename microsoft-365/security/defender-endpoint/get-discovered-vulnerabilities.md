@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 95e350a6288ecefabe86aaa7b802deae0ffafaa1
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 52d11c7a86d95236adbc56faebfa4076fd9c2c99
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020021"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345129"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Keşfedilen güvenlik açıklarını al
 
@@ -114,5 +114,5 @@ Yanıtın bir örneği aşağıda verilmiştir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Risk Tabanlı Tehdit & Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Kuruluşunuzdaki güvenlik açıkları](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

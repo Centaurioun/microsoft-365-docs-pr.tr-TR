@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Uluslararası bankacılık hesabı numarası (IBAN) hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 739c0a1fd90da1da817f46019cd1023be8ab27a3
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 016196af1d36c3d246d275848f7339a74d0878a2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948594"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322353"
 ---
 # <a name="international-banking-account-number-iban"></a>Uluslararası bankacılık hesap numarası (IBAN)
 
@@ -41,7 +41,7 @@ Desen aşağıdakilerin tümünü içermelidir:
 - Dört harf veya rakamdan oluşan 1-7 grup (boşluklarla ayrılabilir)
 - 1-3 harf veya rakam
 
-Her ülkenin biçimi biraz farklıdır. IBAN hassas bilgi türü şu 60 ülkeyi kapsar:
+Her ülkenin biçimi biraz farklıdır. IBAN hassas bilgi türü şu 68 ülkeyi kapsar:
 
 - Reklam
 - Ae
@@ -52,6 +52,7 @@ Her ülkenin biçimi biraz farklıdır. IBAN hassas bilgi türü şu 60 ülkeyi 
 - be
 - Bg
 - bh
+- Br
 - Caner
 - Cr
 - Cy
@@ -69,12 +70,14 @@ Her ülkenin biçimi biraz farklıdır. IBAN hassas bilgi türü şu 60 ülkeyi 
 - Gı
 - Gl
 - Gr
+- Gt
 - Hr
 - Hu
 - Yani
 - ıl
 - is
 - bu
+- jo
 - Kw
 - Kz
 - Lb
@@ -82,7 +85,7 @@ Her ülkenin biçimi biraz farklıdır. IBAN hassas bilgi türü şu 60 ülkeyi 
 - Teğmen
 - Lu
 - Lv
-- Mc
+- mc
 - md
 - Beni
 - Mk
@@ -91,8 +94,11 @@ Her ülkenin biçimi biraz farklıdır. IBAN hassas bilgi türü şu 60 ülkeyi 
 - mu
 - Nl
 - No
+- Pk
 - Pl
+- Ps
 - Pt
+- Qa
 - Ro
 - rs
 - Sa
@@ -100,20 +106,23 @@ Her ülkenin biçimi biraz farklıdır. IBAN hassas bilgi türü şu 60 ülkeyi 
 - Si
 - sk
 - Sm
+- Tl
 - Tn
 - tr
 - Vg
+- Xk
 
-## <a name="checksum"></a>Sağlama toplamı
+
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_iban` , desenle eşleşen içeriği bulur.
-- Sağlama toplamı geçer.
+- İşlev `Func_iban`, desenle eşleşen içeriği bulur.
+- Sağlama toplamı başarılı.
 
 ```xml
 <Entity id="e7dc4711-11b7-4cb0-b88b-2c394a771f0e" patternsProximity="300" recommendedConfidence="85">

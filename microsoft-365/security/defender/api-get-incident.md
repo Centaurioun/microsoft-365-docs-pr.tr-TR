@@ -1,7 +1,7 @@
 ---
-title: Olay API'sini edinin
-description: Olay get incidents API'sini kullanarak tek bir olayla ilgili bilgi Microsoft 365 Defender.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, get, file, hash
+title: Olay API'si alma
+description: Microsoft 365 Defender'da tek bir olay almak için Olayları alma API'sini kullanmayı öğrenin.
+keywords: api'ler, graf api'leri, desteklenen API'ler, alma, dosya, karma
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,23 +14,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+MS.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 8861dc3752d2c4cc798bc83475f6a51f8245191a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: af54daf82ca8f4fbd50c5aaeafd4482f2ce6b0ca
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62983616"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329101"
 ---
-# <a name="get-incident-information-api"></a>Olay bilgileri API'sini edinin
+# <a name="get-incident-information-api"></a>Olay bilgileri API'si alma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,29 +38,29 @@ ms.locfileid: "62983616"
 
 ## <a name="api-description"></a>API açıklaması
 
-Belirli bir olayı kimliğiyle alınan
+Kimliğine göre belirli bir olayı alır
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+1. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir.
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir.
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 ---|---|---
-Uygulama|Olay.Okuma.All|'Tüm Olayları Oku'
+Uygulama|Incident.Read.All|'Tüm Olayları Oku'
 Uygulama|Incident.ReadWrite.All|'Tüm Olayları okuma ve yazma'
-Temsilcili (iş veya okul hesabı)|Olay.Okuma|'Olayları Oku'
-Temsilcili (iş veya okul hesabı)|Olay.Okuma|'Olayları okuma ve yazma'
+Temsilci (iş veya okul hesabı)|Incident.Read|'Olayları Oku'
+Temsilci (iş veya okul hesabı)|Incident.ReadWrite|'Olayları okuma ve yazma'
 
 > [!NOTE]
 >
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Verileri Görüntüle'
-> - Yanıt yalnızca kullanıcının açık olduğu olayları içerir
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Verileri Görüntüle'
+> - Yanıt yalnızca kullanıcının maruz kaldığı olayları içerir
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -68,7 +68,7 @@ Temsilcili (iş veya okul hesabı)|Olay.Okuma|'Olayları okuma ve yazma'
 GET .../api/incidents/{id}
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 ---|---|---
@@ -80,14 +80,14 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem 200 Tamam'ı ve yanıt gövdesinin olay varlığı döndürür.
-Belirtilen kimlikle ilgili olay bulunamadı - 404 Bulunamadı.
+Başarılı olursa, bu yöntem 200 Tamam değerini ve yanıt gövdesindeki olay varlığını döndürür.
+Belirtilen kimlikle ilgili olay bulunamadıysa - 404 Bulunamadı.
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.security.microsoft.com/api/incidents/{id}

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab8ff3069a59c59f509396158c747cae35bccfe3
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: e7858fb525bbe55859897764f930251c2159e4e5
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67301298"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326472"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>URL/etki alanı ve IP’ler için göstergeler oluşturun
 
@@ -66,13 +66,13 @@ IPS, URL'ler veya etki alanları için göstergeler oluşturmadan önce aşağı
 > Çakışan URL göstergesi ilkeleri varsa, daha uzun yol uygulanır. Örneğin, URL göstergesi ilkesi `https://support.microsoft.com/office` URL göstergesi ilkesinden `https://support.microsoft.com`önceliklidir.
 
 > [!NOTE]
-> Diğer tüm işlemler için web koruma senaryoları, inceleme ve zorlama için Ağ Koruması'ndan yararlanıyor:
+> Web koruma senaryoları, Microsoft Edge ve Internet Explorer dışındaki işlemler için inceleme ve zorlama için Ağ Koruması'dan yararlanıyor:
 >
-> - IP, üç protokol için de desteklenir
-> - Yalnızca tek IP adresleri desteklenir (CIDR blokları veya IP aralıkları yoktur)
+> - IP, üç protokol için de desteklenir (TCP, HTTP ve HTTPS (TLS))
+> - Özel göstergelerde yalnızca tek IP adresleri desteklenir (CIDR blokları veya IP aralıkları yoktur)
 > - Şifrelenmiş URL'ler (tam yol) yalnızca birinci taraf tarayıcılarda engellenebilir (Internet Explorer, Edge)
-> - Şifrelenmiş URL'ler (yalnızca FQDN) birinci taraf tarayıcıların dışında engellenebilir (Internet Explorer, Edge)
-> - Tam URL yol blokları etki alanı düzeyinde ve tüm şifrelenmemiş URL'lere uygulanabilir
+> - Şifrelenmiş URL'ler (yalnızca FQDN) üçüncü taraf tarayıcılarda engellenebilir (örneğin, Internet Explorer, Edge dışında)
+> - Şifrelenmemiş URL'ler için tam URL yol blokları uygulanabilir
 >
 > Eylemin gerçekleştirilişi ile URL ve IP'nin engellenmesi arasında 2 saate kadar gecikme süresi (genellikle daha az) olabilir.
 

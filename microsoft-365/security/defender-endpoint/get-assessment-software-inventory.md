@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 07535a2dd433bee2b2d92b206efa2b964212d74d
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 365b932de39e558bbe30c84ba793e59b1db447c3
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276776"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344565"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Cihaz başına yazılım envanteri değerlendirmeyi dışarı aktarma
 
@@ -101,7 +101,7 @@ EndOfSupportDate|Dize|Bu yazılım için desteğin sona ereceği veya sona erece
 EndOfSupportStatus|Dize|Destek sonu durumu. Şu olası değerleri içerebilir: Yok, EOS Sürümü, Yaklaşan EOS Sürümü, EOS Yazılımı, Yaklaşan EOS Yazılımı.|Yaklaşan EOS
 Kimlik|Dize|Kayıt için benzersiz tanımlayıcı.|123ABG55_573AG&mnp!
 NumberOfWeaknesses|Int|Bu cihazdaki bu yazılımdaki zayıflıkların sayısı|3
-OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu. Bunlar, Windows 10 ve Windows 11 gibi aynı aile içinde varyasyonları olan belirli işletim sistemleridir. Ayrıntılar için bkz. tvm tarafından desteklenen işletim sistemleri ve platformlar.|Windows10 ve Windows 11
+OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu. Bunlar, Windows 10 ve Windows 11 gibi aynı aile içinde varyasyonları olan belirli işletim sistemleridir. Ayrıntılar için desteklenen Microsoft Defender Güvenlik Açığı Yönetimi işletim sistemlerine ve platformlara bakın.|Windows10 ve Windows 11
 RbacGroupName|Dize|Rol tabanlı erişim denetimi (RBAC) grubu. Bu cihaz herhangi bir RBAC grubuna atanmamışsa, değer "Atanmamış" olur. Kuruluş herhangi bir RBAC grubu içermiyorsa, değer "Yok" olur.|Sunucular
 RegistryPaths|Dizi[dize]|Ürünün cihaza yüklendiğine dair kayıt defteri kanıtı.|[ "HKEY_LOCAL_MACHINE\\ SOFTWARE\\WOW6432Microsoft\\\\Windows\\CurrentVersion\\Uninstall\\Microsoft Silverlight" ]
 SoftwareFirstSeenTimestamp|Dize|Bu yazılım cihazda ilk kez görüldü.|2019-04-07 02:06:47
@@ -289,9 +289,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 - [Cihaz başına değerlendirme yöntemlerini ve özelliklerini dışarı aktarma](get-assessment-methods-properties.md)
 - [Cihaz başına güvenli yapılandırma değerlendirmelerini dışarı aktarma](get-assessment-secure-config.md)
 - [Cihaz başına yazılım güvenlik açıkları değerlendirmesi dışarı aktarma](get-assessment-software-vulnerabilities.md)
-- [Ürün kodu olmayan yazılım envanteri değerlendirmeyi dışarı aktarma](get-assessment-non-cpe-software-inventory.md)
+- [Ürün kodu olmayan yazılım envanteri değerlendirmesini dışarı aktarma](get-assessment-non-cpe-software-inventory.md)
 
 Diğer ilgililer
 
-- [Risk tabanlı tehdit & güvenlik açığı yönetimi](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](next-gen-threat-and-vuln-mgt.md)
 - [Kuruluşunuzdaki güvenlik açıkları](tvm-weaknesses.md)

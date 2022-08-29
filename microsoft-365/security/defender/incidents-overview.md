@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d283876f8e68943d45ab2dbca4ef8455a5dce038
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9a8d2e5533afe8d9a7d5dd2effe1646de8dc974d
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949065"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328925"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Microsoft 365 Defender ile olay yanıtı
 
@@ -165,7 +165,7 @@ Günlük görevler şunları içerebilir:
 Aylık görevler şunları içerebilir:
 
 - [AIR ayarlarını](m365d-configure-auto-investigation-response.md) gözden geçirme
-- [Güvenlik Puanı](microsoft-secure-score-improvement-actions.md) ve [Tehdit & Güvenlik Açığı Yönetimini](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) Gözden Geçirme
+- [Güvenli Puan](microsoft-secure-score-improvement-actions.md) ve [Microsoft Defender Güvenlik Açığı Yönetimi](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) gözden geçirme
 - BT güvenlik yönetimi zincirinize raporlama
 
 Üç aylık görevler arasında Bir rapor ve güvenlik sonuçlarının Bilgi Güvenliği Başkanı'na (CISO) bildirilmesi yer alabilir.

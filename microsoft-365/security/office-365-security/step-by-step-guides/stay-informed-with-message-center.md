@@ -1,5 +1,5 @@
 ---
-title: İleti merkezini kullanarak Office 365 için Microsoft Defender’da yapılacak değişikliklerden haberdar olun
+title: İleti merkezi ile Office 365 için Microsoft Defender yapılan değişikliklerin haftalık özet bildirimlerini ayarlama
 description: Office 365 için Microsoft Defender yapılan değişikliklerden haberdar olmak için ileti merkezi etkinliğinin haftalık özetini ayarlama adımları.
 search.product: ''
 search.appverid: ''
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: c1ca632d3809b1599449125c59289f113e477997
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 995fee0b61cce798800242dfa92e2ac74c1268f7
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66861889"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67316325"
 ---
 # <a name="stay-informed-of-upcoming-changes-to-microsoft-defender-for-office-365-using-the-message-center"></a>İleti merkezini kullanarak Office 365 için Microsoft Defender’da yapılacak değişikliklerden haberdar olun
 

@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 04/08/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 99e2a26294d8e67854387d3c4f3d41c469a97a50
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 16d8dd96b9fef1aaa01437f3c1175021a1f9f33d
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "66861721"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315712"
 ---
 # <a name="creating-and-testing-binary-files-on-test-base"></a>Test Tabanında İkili Dosyalar Oluşturma ve Test Etme
 
@@ -133,7 +133,7 @@ Sol taraftaki menüde **Paket kataloğu** altında **Yeni paket'i** seçin. Ard�
 
 1. Test matrisi sekmesinde işletim **sistemi güncelleştirme türünü** seçin. Desteklenen iki işletim sistemi güncelleştirme türü vardır.
    - **Güvenlik güncelleştirmeleri**, paketinizin Windows yayın öncesi aylık güvenlik güncelleştirmelerinin artımlı değişim sıklığına karşı test edilmesine olanak tanır.
-   - **Özellik güncelleştirmeleri**, paketinizin Windows Insider Programı windows yayın öncesi iki yıllık özellik güncelleştirmeleri derlemelerinde test edilmesine olanak tanır.
+   - **Özellik güncelleştirmeleri**, paketinizin Windows Insider Programı'ndan windows yayın öncesi iki yıllık özellik güncelleştirmeleri derlemelerine karşı test edilmesine olanak tanır.
 
 2. Güvenlik güncelleştirme testleri için işletim sistemi sürümlerini seçin.
 
@@ -144,7 +144,7 @@ Sol taraftaki menüde **Paket kataloğu** altında **Yeni paket'i** seçin. Ard�
 
 3. Özellik güncelleştirme testleri seçeneklerini belirleyin.
    - **İşletim sistemi güncelleştirme türünde Özellik güncelleştirmeleri** seçiliyse, aşağıdaki seçenekleri tamamlamanız gerekir.
-   - **Insider Channel** için paketlerinizin test edilmesi gereken derleme olarak Windows Insider Programı Kanalı'nı seçin. Şu anda **Insider Beta Kanalında** sunulan derlemeleri kullanıyoruz.
+   - **Insider Kanalı** için, paketlerinizin test edilmesi gereken derleme olarak Windows Insider Program Kanalı'nı seçin. Şu anda **Insider Beta Kanalında** sunulan derlemeleri kullanıyoruz.
    - **insight işletim sistemi temeli için**, test sonuçlarınızı karşılaştırmak için temel olarak kullanılacak Windows işletim sistemi sürümünü seçin.
 
    > [!div class="mx-imgBorder"]

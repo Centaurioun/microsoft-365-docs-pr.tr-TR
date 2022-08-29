@@ -20,12 +20,12 @@ ms.topic: article
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.openlocfilehash: a5ca2613028e892229da1888c6176cb729e0cf1b
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 001bbea4a2bfcf04227e10a509fc4297aaf4b7ce
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469590"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326287"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Saldırı yüzeyi azaltma kurallarına genel bakış
 
@@ -54,7 +54,7 @@ Saldırı yüzeyi azaltma kurallarını yapılandırma hakkında daha fazla bilg
 
 ## <a name="assess-rule-impact-before-deployment"></a>Dağıtımdan önce kural etkisini değerlendirme
 
-Bir saldırı yüzeyi azaltma kuralının ağınızı nasıl etkileyebileceğini değerlendirmek için bu kuralın güvenlik önerisini [Tehdit ve Güvenlik Açığı Yönetimi](/windows/security/threat-protection/#tvm) açabilirsiniz.
+Bir saldırı yüzeyi azaltma kuralının ağınızı nasıl etkileyebileceğini değerlendirmek için [Microsoft Defender Güvenlik Açığı Yönetimi'da](/windows/security/threat-protection/) bu kuralın güvenlik önerisini açabilirsiniz.
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="ASR önerisi" lightbox="images/asrrecommendation.png":::
 
@@ -74,15 +74,15 @@ Uyarı modu, kuruluşunuzun kullanıcıların görevlerini gerçekleştirmek iç
 
 ### <a name="requirements-for-warn-mode-to-work"></a>Uyarı modunun çalışması için gereksinimler
 
-Uyarı modu, aşağıdaki Windows sürümlerini çalıştıran cihazlarda desteklenir:
+Uyarı modu, Windows'un aşağıdaki sürümlerini çalıştıran cihazlarda desteklenir:
 
 - [Windows 10, sürüm 1809](/windows/whats-new/whats-new-windows-10-version-1809) veya üzeri
 - Windows 11
 - [Windows Server, sürüm 1809](/windows-server/get-started/whats-new-in-windows-server-1809) veya üzeri
 
-Microsoft Defender Virüsten Koruma [Etkin modda](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state) gerçek zamanlı koruma ile çalışıyor olmalıdır.
+Microsoft Defender Virüsten Koruma [, Etkin modda](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state) gerçek zamanlı koruma ile çalışıyor olmalıdır.
 
-Ayrıca[, Microsoft Defender Virüsten Koruma ve kötü amaçlı yazılımdan koruma güncelleştirmelerinin](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) yüklendiğinden emin olun.
+Ayrıca [, Microsoft Defender Virüsten Koruma ve kötü amaçlı yazılımdan koruma güncelleştirmelerinin](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) yüklü olduğundan emin olun.
 
 - En düşük platform sürümü gereksinimi: `4.18.2008.9`
 - En düşük altyapı sürümü gereksinimi: `1.1.17400.5`
@@ -91,13 +91,13 @@ Daha fazla bilgi edinmek ve güncelleştirmelerinizi almak için bkz. [Microsoft
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Uyarı modunun desteklenmediği durumlar
 
-Uyarı modu, Microsoft Endpoint Manager'da yapılandırdığınızda üç saldırı yüzeyi azaltma kuralı için desteklenmez. (Saldırı yüzeyi azaltma kurallarınızı yapılandırmak için grup ilkesi kullanıyorsanız uyarı modu desteklenir.) uyarı modunu Microsoft Endpoint Manager yapılandırırken desteklemeyen üç kural şunlardır:
+Uyarı modu, Microsoft Endpoint Manager'de yapılandırdığınızda üç saldırı yüzeyi azaltma kuralı için desteklenmez. (Saldırı yüzeyi azaltma kurallarınızı yapılandırmak için grup ilkesi kullanıyorsanız uyarı modu desteklenir.) Uyarı modunu Microsoft Endpoint Manager yapılandırırken desteklemeyen üç kural şunlardır:
 
 - [JavaScript veya VBScript'in indirilen yürütülebilir içeriği](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID `d3e037e1-3eb8-44c8-a917-57927947596d`) başlatmasını engelleme
 - WMI olay aboneliği (GUID`e6db77e5-3df2-4cf1-b95a-636979351e5b`) [aracılığıyla kalıcılığı engelleme](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
 - [Fidye yazılımına karşı gelişmiş koruma kullanma](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware) (GUID `c1db55ab-c21a-4637-bb3f-a12568109d35`)
 
-Ayrıca uyarı modu, Windows eski sürümlerini çalıştıran cihazlarda desteklenmez. Bu gibi durumlarda, uyarı modunda çalışacak şekilde yapılandırılmış saldırı yüzeyi azaltma kuralları blok modunda çalışır.
+Ayrıca uyarı modu, Windows'un eski sürümlerini çalıştıran cihazlarda desteklenmez. Bu gibi durumlarda, uyarı modunda çalışacak şekilde yapılandırılmış saldırı yüzeyi azaltma kuralları blok modunda çalışır.
 
 ## <a name="notifications-and-alerts"></a>Bildirimler ve uyarılar
 
@@ -117,21 +117,21 @@ Saldırı yüzeyi azaltma olaylarını görüntülemek için gelişmiş avcılı
 
 Gelişmiş avcılık hakkında daha fazla bilgi için bkz. [Gelişmiş avcılık ile tehditleri proaktif olarak avlama](advanced-hunting-overview.md).
 
-## <a name="attack-surface-reduction-features-across-windows-versions"></a>Windows sürümlerde saldırı yüzeyi azaltma özellikleri
+## <a name="attack-surface-reduction-features-across-windows-versions"></a>Windows sürümleri genelinde saldırı yüzeyi azaltma özellikleri
 
-aşağıdaki Windows sürümlerinden herhangi birini çalıştıran cihazlar için saldırı yüzeyi azaltma kuralları ayarlayabilirsiniz:
+Windows'un aşağıdaki sürümlerinden ve sürümlerinden herhangi birini çalıştıran cihazlar için saldırı yüzeyi azaltma kuralları ayarlayabilirsiniz:
 
 - Windows 10 Pro, [sürüm 1709](/windows/whats-new/whats-new-windows-10-version-1709) veya üzeri
 - Windows 10 Enterprise, [sürüm 1709](/windows/whats-new/whats-new-windows-10-version-1709) veya üzeri
-- Windows Sunucusu, [sürüm 1803 (Altı Aylık Kanal)](/windows-server/get-started/whats-new-in-windows-server-1803) veya üzeri
+- Windows Server, [sürüm 1803 (Altı Aylık Kanal)](/windows-server/get-started/whats-new-in-windows-server-1803) veya üzeri
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh801901(v=ws.11))
 
   >[!NOTE]
-  >Windows Server 2016 ve Windows Server 2012 R2'nin bu özelliğin çalışması için [Windows sunucularında ekleme](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) yönergeleri kullanılarak eklenmelidir.
+  >Windows Server 2016 ve Windows Server 2012 R2'nin bu özelliğin çalışması için [Windows sunucularını ekleme](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) yönergeleri kullanılarak eklenmesi gerekir.
 
-Saldırı yüzeyi azaltma kuralları [Windows E5 lisansı](/windows/deployment/deploy-enterprise-licenses) gerektirmese de, E5 Windows sahipseniz gelişmiş yönetim özelliklerine sahip olursunuz. Yalnızca Windows E5'te kullanılabilen gelişmiş özellikler şunlardır:
+Saldırı yüzeyi azaltma kuralları [windows E5 lisansı](/windows/deployment/deploy-enterprise-licenses) gerektirmez, ancak Windows E5'iniz varsa gelişmiş yönetim özelliklerine sahip olursunuz. Yalnızca Windows E5'te kullanılabilen gelişmiş özellikler şunlardır:
 
 - [Uç Nokta için Defender'da](microsoft-defender-endpoint.md) kullanılabilen izleme, analiz ve iş akışları
 - [Microsoft 365 Defender'deki](/microsoft-365/security/defender/overview-security-center) raporlama ve yapılandırma özellikleri.
@@ -151,13 +151,13 @@ DeviceEvents
 | where ActionType startswith 'Asr'
 ```
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Windows Olay Görüntüleyicisi'da saldırı yüzeyi azaltma olaylarını gözden geçirme
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Windows Olay Görüntüleyicisi'de saldırı yüzeyi azaltma olaylarını gözden geçirme
 
 Saldırı yüzeyi azaltma kuralları tarafından oluşturulan olayları görüntülemek için Windows olay günlüğünü gözden geçirebilirsiniz:
 
 1. [Değerlendirme Paketi'ni](https://aka.ms/mp7z2w) indirin *vecfa-events.xmldosyayı* cihazda kolayca erişilebilen bir konuma ayıklayın.
 
-2. Windows Olay Görüntüleyicisi açmak için *Başlat menüsü* Olay Görüntüleyicisi sözcükleri girin.
+2. Windows Olay Görüntüleyicisi açmak için Başlat menüsüne *Olay Görüntüleyicisi* sözcükleri girin.
 
 3. **Eylemler'in** altında **Özel görünümü içeri aktar...** öğesini seçin.
 

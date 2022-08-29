@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 690e1c48a452cfa00f0ae8d4fd87849b1c2e79dc
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: eeaa5c663d7f35a1a43f883953cd08c5aa1920aa
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893529"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329057"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>İlk olayınız için güvenlik duruşunuzu hazırlama
 
@@ -42,7 +42,7 @@ Microsoft 365 Defender, olay önlemenin çeşitli yönlerini ele alınmasına ya
 
 - [Sıfır Güven](/security/zero-trust/) çerçevesi uygulama
 - [Microsoft Güvenli Puanı](microsoft-secure-score.md) ile puan atayarak güvenlik duruşunuzu belirleme
-- [Tehdit ve](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) Güvenlik Açığı Yönetimi'nde güvenlik açığı değerlendirmeleri aracılığıyla tehditleri önleme
+- [Defender Güvenlik Açığı Yönetimi'nde](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) güvenlik açığı değerlendirmeleri aracılığıyla tehditleri önleme
 - Tehdit analiziyle bunlara hazırlanmak için en son güvenlik [tehditlerini](threat-analytics.md) anlama
 
 ## <a name="step-1-implement-zero-trust"></a>Adım 1. Sıfır Güven uygulama
@@ -51,7 +51,7 @@ Microsoft 365 Defender, olay önlemenin çeşitli yönlerini ele alınmasına ya
 
 Microsoft 365 Defender bileşenleri, Uç Nokta için Microsoft Defender verilerini tümleştirerek Sıfır Güven için Koşullu Erişim ilkeleri oluşturmak üzere uygulanan kural ihlallerini görüntüleyebilir  veya cihaz uyumluluk ilkeleri ve cihaz tabanlı Koşullu Erişim ilkelerinin uygulanması için bir bilgi kaynağı olarak diğer mobil güvenlik satıcıları.
 
-Cihaz riski, bu cihazın kullanıcısı tarafından erişilebilecek kaynakları doğrudan etkiler. Belirli ölçütlere göre kaynaklara erişimin reddedilme şekli, Sıfır Güven ana temasıdır ve Microsoft 365 Defender güven düzeyi ölçütlerini belirlemek için gereken bilgileri sağlar. Örneğin, Microsoft 365 Defender Tehdit ve Güvenlik Açığı Yönetimi sayfası aracılığıyla bir cihazın yazılım sürümü düzeyini sağlayabilirken, Koşullu Erişim ilkeleri eski veya güvenlik açığı olan sürümleri olan cihazları kısıtlayabilir.
+Cihaz riski, bu cihazın kullanıcısı tarafından erişilebilecek kaynakları doğrudan etkiler. Belirli ölçütlere göre kaynaklara erişimin reddedilme şekli, Sıfır Güven ana temasıdır ve Microsoft 365 Defender güven düzeyi ölçütlerini belirlemek için gereken bilgileri sağlar. Örneğin, Microsoft 365 Defender eski adıyla Tehdit & Güvenlik Açığı Yönetimi sayfası olarak bilinen Microsoft Defender Güvenlik Açığı Yönetimi aracılığıyla bir cihazın yazılım sürümü düzeyini sağlayabilirken, Koşullu Erişim ilkeleri eski veya güvenlik açığı olan sürümleri olan cihazları kısıtlayabilir.
 
 Otomasyon, bir Sıfır Güven ortamı uygulama ve korumanın önemli bir parçasıdır ve aynı zamanda olay yanıtı (IR) olaylarına yol açabilecek uyarı sayısını azaltır. Microsoft 365 Defender bileşenleri, [düzeltme eylemleri](m365d-autoir.md) (Microsoft 365 Defender portalındaki bir olay için araştırma olarak bilinir), bildirim eylemleri ve hatta [ServiceNow](https://microsoft.service-now.com/sp/) gibi destek biletleri oluşturma gibi otomatikleştirilebilir.
 
@@ -65,7 +65,7 @@ Bundan sonra kuruluşlar, geçerli güvenlik duruşunuzu belirlemek ve bunu nas�
 
 Olayların önlenmesi, devam eden kritik ve önemli güvenlik olaylarına odaklanmak için güvenlik operasyonları çalışmalarını kolaylaştırmaya yardımcı olabilir. Yazılım güvenlik açıkları genellikle veri hırsızlığına, veri kaybına veya iş operasyonlarının kesintiye uğramasına neden olabilecek saldırılar için önlenebilir bir giriş noktasıdır. Devam eden bir saldırı yoksa, güvenlik operasyonları kuruluşlarında kabul edilebilir bir [güvenlik açığı maruziyeti](../defender-endpoint/tvm-exposure-score.md) düzeyi elde etmek ve korumak için çaba göstermelidir.
 
-Yazılım düzeltme eki uygulama ilerleme durumunuzu denetlemek için Uç Nokta için Defender'daki [Tehdit ve Güvenlik Açığı Yönetimi](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) sayfasını ziyaret edin. Bu sayfaya **Microsoft 365 Defender Diğer kaynaklar** sekmesinden erişebilirsiniz.
+Yazılım düzeltme eki uygulama ilerlemenizi denetlemek için Uç Nokta için Defender'daki [Microsoft Defender Güvenlik Açığı Yönetimi](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) sayfasını ziyaret edin. Bu sayfaya **Microsoft 365 Defender Diğer kaynaklar** sekmesinden erişebilirsiniz.
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Microsoft 365 Defender portalındaki Tehdit ve Güvenlik Açığı sayfası" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png":::
 

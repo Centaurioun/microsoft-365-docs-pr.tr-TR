@@ -23,12 +23,12 @@ ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: f922d618ac947646379f9d1022aba67c874e64fd
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 63b932df7337a757a0358719e32409ab8c6ea117
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174970"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331307"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Microsoft dışı uç nokta korumasından Uç Nokta için Microsoft Defender geçiş yapma
 
@@ -67,7 +67,7 @@ Bu geçiş kılavuzunda, Uç Nokta için Defender'a geçiş için başlangıç n
 
 |Özellik/Yetenek|Açıklama|
 |---|---|
-|[Tehdit ve Güvenlik Açığı Yönetimi](next-gen-threat-and-vuln-mgt.md)|Tehdit & güvenlik açığı yönetimi özellikleri uç noktalarınızdaki (cihazlar gibi) zayıf noktaları belirlemenize, değerlendirmenize ve düzeltmenize yardımcı olur.|
+|[Microsoft Defender Güvenlik Açığı Yönetimi](next-gen-threat-and-vuln-mgt.md)|Defender Güvenlik Açığı Yönetimi özellikleri uç noktalarınızdaki (cihazlar gibi) zayıf noktaları belirlemenize, değerlendirmenize ve düzeltmenize yardımcı olur.|
 |[Saldırı yüzeyini azaltma](overview-attack-surface-reduction.md)|Saldırı yüzeyi azaltma kuralları, kuruluşunuzun cihazlarını ve uygulamalarını siber tehditlere ve saldırılara karşı korumaya yardımcı olur.|
 |[Yeni nesil koruma](microsoft-defender-antivirus-in-windows-10.md)|Yeni nesil koruma, tehditleri ve kötü amaçlı yazılımları engellemeye yardımcı olmak için Microsoft Defender Virüsten Koruma içerir.|
 |[Uç nokta algılama ve yanıt](overview-endpoint-detection-response.md)|Uç nokta algılama ve yanıt özellikleri, yetkisiz erişim girişimlerini ve etkin ihlalleri algılar, araştırır ve yanıtlar.|

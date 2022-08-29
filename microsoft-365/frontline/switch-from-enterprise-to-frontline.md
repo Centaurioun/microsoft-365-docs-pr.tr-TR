@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 90e29a5ec2ddf70afb299398113be034580eda85
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
+ms.openlocfilehash: 81ebf6305ca4e60a33eb262fc277efe298d19c43
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66827158"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331851"
 ---
 # <a name="changing-from-a-microsoft-365-e-plan-to-a-microsoft-365-f-plan"></a>Microsoft 365 E planından Microsoft 365 F planına geçiş
 
@@ -209,7 +209,7 @@ Kullanıcıların saklamak istediği verileri belirleyin ve yedekleyin veya haz�
 - Teams
 - OneDrive
 
-Daha fazla bilgi için bkz. [Plan değiştirmeden önce verileri yedekleme](/microsoft-365/commerce/subscriptions/back-up-data-before-switching-plans).
+Daha fazla bilgi için bkz. [Plan değiştirmeden önce verileri yedekleme](/microsoft-365/commerce/subscriptions/move-users-different-subscription).
 
 ## <a name="switch-users-to-a-microsoft-365-f-plan"></a>Kullanıcıları Microsoft 365 F planına değiştirme
 

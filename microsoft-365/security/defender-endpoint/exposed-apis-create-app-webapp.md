@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a0387eac18152599cfd08ba75893f3eae248431
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: ca448d64b544e7c7a390b243c77a878dd9afc55a
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102624"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324505"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Kullanıcı olmadan Uç Nokta için Microsoft Defender erişmek için uygulama oluşturma
 
@@ -36,18 +36,18 @@ ms.locfileid: "66102624"
 > Gelişmiş avcılık özellikleri İş için Defender'a dahil değildir. Bkz[. İş için Microsoft Defender Uç Nokta için Microsoft Defender Planları 1 ve 2 ile karşılaştırma](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Bu sayfada, kullanıcı olmadan Uç Nokta için Defender'a programlı erişim elde etmek için bir uygulamanın nasıl oluşturulacağı açıklanır. Kullanıcı adına Uç Nokta için Defender'a programlı erişime ihtiyacınız varsa bkz. [Kullanıcı bağlamıyla erişim alma](exposed-apis-create-app-nativeapp.md). Hangi erişime ihtiyacınız olduğundan emin değilseniz bkz. [Kullanmaya başlayın](apis-intro.md).
+Bu sayfada, kullanıcı olmadan Uç Nokta için Defender'a programlı erişim elde etmek için bir uygulamanın nasıl oluşturulacağı açıklanır. Kullanıcı adına Uç Nokta için Defender'a programlı erişime ihtiyacınız varsa bkz. [Kullanıcı bağlamıyla erişim alma](exposed-apis-create-app-nativeapp.md). Hangi erişime ihtiyacınız olduğundan emin değilseniz bkz. [Kullanmaya başlama](apis-intro.md).
 
-Uç Nokta için Microsoft Defender, bir dizi programlı API aracılığıyla verilerinin ve eylemlerinin büyük bir kısmını kullanıma sunar. Bu API'ler iş akışlarını otomatikleştirmenize ve Uç Nokta için Defender özelliklerine göre yenilik yapmaya yardımcı olur. API erişimi için OAuth2.0 kimlik doğrulaması gerekir. Daha fazla bilgi için bkz[. OAuth 2.0 Yetkilendirme Kodu Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Uç Nokta için Microsoft Defender, bir dizi programlı API aracılığıyla verilerinin ve eylemlerinin büyük bir kısmını kullanıma sunar. Bu API'ler iş akışlarını otomatikleştirmenize ve Uç Nokta için Defender özelliklerine göre yenilik yapmaya yardımcı olur. API erişimi için OAuth2.0 kimlik doğrulaması gerekir. Daha fazla bilgi için bkz [. OAuth 2.0 Yetkilendirme Kodu Akışı](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Genel olarak, API'leri kullanmak için aşağıdaki adımları uygulamanız gerekir:
-- bir Azure Active Directory (Azure AD) uygulaması oluşturun.
+- Bir Azure Active Directory (Azure AD) uygulaması oluşturun.
 - Bu uygulamayı kullanarak erişim belirteci alın.
 - Uç Nokta için Defender API'sine erişmek için belirteci kullanın.
 
@@ -57,7 +57,7 @@ Bu makalede bir Azure AD uygulaması oluşturma, Uç Nokta için Microsoft Defen
 
 1. **Genel Yönetici** rolüne sahip bir kullanıcıyla [Azure'da](https://portal.azure.com) oturum açın.
 
-2. **yeni kayıt Uygulama kayıtları Azure Active Directory** \>  \> gidin. 
+2. **Azure Active Directory** \> **Uygulama kayıtları** \> **Yeni kayıt'a** gidin. 
 
     :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Uygulama kaydı bölmesi" lightbox="images/atp-azure-new-app2.png":::
 
@@ -154,7 +154,7 @@ Aşağıdaki kod NuGet Microsoft.Identity.Client 3.19.8 ile test edilmiştir.
 > [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet paketi ve Azure AD Kimlik Doğrulama Kitaplığı (ADAL) kullanım dışı bırakıldı. 30 Haziran 2020'den bu yana yeni özellik eklenmemiş.   Yükseltmenizi kesinlikle öneririz. Diğer ayrıntılar için [geçiş kılavuzuna](/azure/active-directory/develop/msal-migration) bakın.
 
 1. Yeni bir konsol uygulaması oluşturun.
-1. [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/) NuGet yükleyin.
+1. NuGet [Microsoft.Identity.Client'ı](https://www.nuget.org/packages/Microsoft.Identity.Client/) yükleyin.
 1. Aşağıdakileri ekleyin:
 
     ```csharp

@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 931dfb257902e17968df2621b5b8c374f4691a25
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 4dfd112af96bbb421ace15e3ac4bd9a8e4e2733a
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300792"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328089"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>İş için Microsoft Defender ayarlama ve yapılandırma
 
@@ -32,7 +32,7 @@ ms.locfileid: "67300792"
 > [Kurulum sihirbazını](mdb-use-wizard.md) kullandıysanız, temel kurulum işleminizin birkaç adımını tamamladınız demektir. Bu durumda şunları yapabilirsiniz:
 > - [Daha fazla cihaz ekleme](mdb-onboard-devices.md)
 > - [Güvenlik ilkelerinizi ve ayarlarınızı yapılandırma](mdb-configure-security-settings.md)
-> - [Güvenlik açığı yönetimi panonuzu ziyaret edin](mdb-view-tvm-dashboard.md)
+> - [Microsoft Defender Güvenlik Açığı Yönetimi panonuzu ziyaret edin](mdb-view-tvm-dashboard.md)
 
 
 ## <a name="the-setup-and-configuration-process"></a>Kurulum ve yapılandırma işlemi

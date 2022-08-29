@@ -20,18 +20,18 @@ ms.custom:
 search.appverid: MET150
 description: İş için Microsoft 365 aboneliğinizin süresi dolduğunda, devre dışı bırakıldığında veya iptal ettiğinizde verilerinize ne olacağını öğrenin.
 ms.date: 09/16/2021
-ms.openlocfilehash: a9837a146ff6494ceaa94adeefeeaf6ed7769986
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 74d2ff2a2df4ed24a0fb13512d1f320bf24d6b42
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128711"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325737"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 İş aboneliğim sona erdiğinde verilerime ve erişimime ne olur?
 
-Aboneliğiniz sona erdiğinde (süresi dolduğundan veya iptal etmeye karar verirseniz) Microsoft 365 hizmetlere, uygulamalara ve müşteri verilerine erişiminiz, abonelik tamamen kapatılmadan veya *silinmeden* önce birden çok durumdan geçer. Bu ilerlemenin farkındaysanız, çok geç olmadan aboneliğinizi etkin bir duruma geri döndürmek veya Microsoft 365 ayrılıyorsanız verilerinizi nihai olarak silinmeden önce yedeklemek için daha iyi bir donanıma sahip olursunuz.
+Aboneliğiniz sona erdiğinde (süresi dolduğunda veya iptal etmeye karar verirseniz) Microsoft 365 hizmetlerine, uygulamalarına ve müşteri verilerine erişiminiz, abonelik tamamen kapatılmadan veya *silinmeden* önce birden çok durumdan geçer. Bu ilerlemenin farkındaysanız, çok geç olmadan aboneliğinizi etkin bir duruma geri döndürmek veya Microsoft 365'ten ayrılıyorsanız verilerinizi nihai olarak silinmeden önce yedeklemek için daha iyi bir donanıma sahip olursunuz.
 
-[Microsoft 365 desteğe](../../admin/get-help-support.md) başvurmadan önce bu önemli bilgileri okuyun.
+[Microsoft 365 desteğine](../../admin/get-help-support.md) başvurmadan önce bu önemli bilgileri okuyun.
 
 > [!NOTE]
 > Bazı abonelikler için yalnızca aboneliğinizi satın aldıktan veya yeniledikten sonra sınırlı bir süre içinde iptal edebilirsiniz. İptal penceresi geçtiyse, süresi sonunda aboneliği iptal etmek için yinelenen ödemeyi kapatın.
@@ -40,26 +40,26 @@ Aboneliğiniz sona erdiğinde (süresi dolduğundan veya iptal etmeye karar veri
 
 - Aboneliğinizin süresi dolarsa şu aşamalardan geçer: Süresi Doldu / Devre Dışı / Silindi. Süresi Dolan aşama, abonelik bitiş tarihine ulaştıktan hemen sonra başlar.
 - Yıllık aboneliğinizde yinelenen ödemeyi kapatırsanız süresi dolmuş bir abonelikle aynı aşamalardan geçer. İlk aşama başlangıçları, aboneliğin yinelenen faturalama ayarını kapattığınız tarihte başlamayan yıllık aboneliğin yıl dönümü olur.
-- Aylık aboneliğinizi iptal ederseniz, hemen devre dışı bırakılır (iptal tarihinde). Bu, kullanıcılarınızın Microsoft 365 varlıklarına erişimini hemen kaybettiği ve yalnızca yöneticilerin önümüzdeki 90 gün boyunca verilere erişimi olduğu anlamına gelir.
+- Aylık aboneliğinizi iptal ederseniz, hemen devre dışı bırakılır (iptal tarihinde). Bu, kullanıcılarınızın Microsoft 365 varlıklarına erişimini hemen kaybettiği ve yalnızca yöneticilerin önümüzdeki 90 gün boyunca verilere erişecekleri anlamına gelir.
 
-Aşağıdaki tabloda, ücretli bir iş Microsoft 365 aboneliğinin süresi dolduğunda neler bekleyebileceğiniz açıklanmaktadır.
+Aşağıdaki tabloda ücretli bir İş için Microsoft 365 aboneliğinin süresi dolduğunda neler bekleyebileceğiniz açıklanmaktadır.
 
 | Etkin | Süresi dolmuş <br/>(30 gün\*) | Devre dışı <br/>(90 gün\*) | Silindi |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| *Herkes tarafından erişilebilen veriler*                                               | *Herkes tarafından erişilebilen veriler*                                                     | *Yalnızca yöneticiler tarafından erişilebilen veriler*                                             | **Veriler silindi<br/> Azure Active Directory diğer hizmetler tarafından kullanılmıyorsa kaldırılır** |
-| Kullanıcıların Microsoft 365, dosyalara ve uygulamalara normal erişimi vardır   | Kullanıcıların Microsoft 365, dosyalara ve uygulamalara normal erişimi vardır              | Kullanıcılar Microsoft 365, dosyalara veya uygulamalara erişemiyor                        | Kullanıcılar Microsoft 365, dosyalara veya uygulamalara erişemiyor                                     |
-| Yöneticilerin Microsoft 365, verilere ve Office uygulamalarına normal erişimi vardır | Yöneticiler yönetim merkezine erişebilir                                           | Yöneticiler yönetim merkezine erişebilir, ancak kullanıcılara lisans atayamaz       | Yöneticiler, diğer abonelikleri satın almak ve yönetmek için yönetim merkezine erişebilir             |
+| *Herkes tarafından erişilebilen veriler*                                               | *Herkes tarafından erişilebilen veriler*                                                     | *Yalnızca yöneticiler tarafından erişilebilen veriler*                                             | **<br/>Diğer hizmetler tarafından kullanılmıyorsa silinen Azure Active Directory verileri kaldırılır** |
+| Kullanıcıların Microsoft 365' e, dosyalara ve uygulamalara normal erişimi vardır   | Kullanıcıların Microsoft 365' e, dosyalara ve uygulamalara normal erişimi vardır              | Kullanıcılar Microsoft 365' e, dosyalara veya uygulamalara erişemiyor                        | Kullanıcılar Microsoft 365' e, dosyalara veya uygulamalara erişemiyor                                     |
+| Yöneticilerin Microsoft 365, veri ve Office uygulamalarına normal erişimi vardır | Yöneticiler yönetim merkezine erişebilir                                           | Yöneticiler yönetim merkezine erişebilir, ancak kullanıcılara lisans atayamaz       | Yöneticiler, diğer abonelikleri satın almak ve yönetmek için yönetim merkezine erişebilir             |
 |                                                                        | Genel yöneticiler veya faturalama yöneticileri, yönetim merkezinde aboneliği yeniden etkinleştirebilir | Genel yöneticiler veya faturalama yöneticileri, yönetim merkezinde aboneliği yeniden etkinleştirebilir |                                                                                           |
 
 *Çoğu teklif için, çoğu ülkede ve bölgede.
   
 > [!NOTE]
 >
-> **"Müşteri verileri" nedir?** [Microsoft Çevrimiçi Hizmet Koşulları'nda](https://www.microsoft.com/en-us/licensing/product-licensing/products) tanımlandığı gibi müşteri verileri, müşterinin Microsoft 365 hizmetlerini kullanması yoluyla veya adına Microsoft'a sağlanan tüm metin, ses veya görüntü dosyaları dahil olmak üzere tüm verileri ifade eder. Müşteri verilerinin korunması hakkında daha fazla bilgi edinmek için [Bkz. Microsoft Hizmet Güveni Portalı ile Kullanmaya başlayın](../../compliance/get-started-with-service-trust-portal.md).
+> **"Müşteri verileri" nedir?** [Microsoft Çevrimiçi Hizmet Koşulları'nda](https://www.microsoft.com/en-us/licensing/product-licensing/products) tanımlandığı gibi müşteri verileri, müşterinin Microsoft 365 hizmetlerini kullanması yoluyla veya adına Microsoft'a sağlanan tüm metin, ses veya görüntü dosyaları dahil olmak üzere tüm verileri ifade eder. Müşteri verilerinin korunması hakkında daha fazla bilgi edinmek için bkz. [Microsoft Hizmet Güveni Portalı'nı kullanmaya başlama](../../compliance/get-started-with-service-trust-portal.md).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>Aboneliği iptal edersem ne olur?
 
-Aboneliğinizi dönem bitiş tarihinden önce iptal ederseniz abonelik Süresi Doldu aşamasını atlar ve doğrudan çoğu ülke ve bölgede çoğu abonelik için 90 gün olan Devre dışı aşamasına geçer. İptal etmeden önce [verilerinizi yedeklemenizi](back-up-data-before-switching-plans.md) öneririz, ancak yönetici olarak, devre dışı aşamasındayken kuruluşunuz için verilere erişmeye ve verileri yedeklemeye devam edebilirsiniz. Geride bıraktığınız tüm müşteri verileri 90 gün sonra silinebilir ve iptal sonrasında en fazla 180 gün içinde silinir.
+Aboneliğinizi dönem bitiş tarihinden önce iptal ederseniz abonelik Süresi Doldu aşamasını atlar ve doğrudan çoğu ülke ve bölgede çoğu abonelik için 90 gün olan Devre dışı aşamasına geçer. İptal etmeden önce [verilerinizi yedeklemenizi](move-users-different-subscription.md) öneririz, ancak yönetici olarak, devre dışı aşamasındayken kuruluşunuz için verilere erişmeye ve verileri yedeklemeye devam edebilirsiniz. Geride bıraktığınız tüm müşteri verileri 90 gün sonra silinebilir ve iptal sonrasında en fazla 180 gün içinde silinir.
   
 Aboneliği iptal ederseniz siz ve kullanıcılarınız için beklemeniz gerekenler aşağıdadır.
   
@@ -74,11 +74,11 @@ Aboneliği iptal ederseniz siz ve kullanıcılarınız için beklemeniz gerekenl
   
 > [!NOTE]
 >
-> Bir aboneliği açıkça silerseniz, Süresi Dolan ve Devre Dışı aşamalarını atlar ve OneDrive dahil SharePoint Çevrimiçi veri ve içerik hemen silinir.
+> Bir aboneliği açıkça silerseniz, Süresi Dolan ve Devre Dışı aşamalarını atlar ve OneDrive da dahil olmak üzere SharePoint Online verileri ve içeriği hemen silinir.
 
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Aboneliğimin süresi dolmak üzereyse seçeneklerim nelerdir?
 
-Abonelik etkinken, siz ve son kullanıcılarınız verilerinize, e-posta ve OneDrive İş gibi hizmetlere ve Office uygulamalarınıza normal erişime sahip olursunuz. Yönetici olarak, aboneliğiniz sona erme tarihine yaklaştığında e-posta yoluyla ve yönetim merkezinde bir dizi bildirim alırsınız.
+Abonelik etkinken, siz ve son kullanıcılarınız verilerinize, e-posta ve OneDrive İş gibi hizmetlere ve Office uygulamalarına normal erişime sahip olursunuz. Yönetici olarak, aboneliğiniz sona erme tarihine yaklaştığında e-posta yoluyla ve yönetim merkezinde bir dizi bildirim alırsınız.
   
 Abonelik fiili olarak sona erme tarihine ulaşmadan önce birkaç seçeneğiniz vardır:
   
@@ -105,21 +105,21 @@ Aboneliğiniz her durumda olduğunda şunları bekleyebilirsiniz.
 
 Bu durumda, kullanıcılar Microsoft 365 portalına, Office uygulamalarına ve e-posta ve SharePoint Online gibi hizmetlere normal erişime sahiptir.
   
-Yönetici olarak, yönetim merkezine hala erişiminiz vardır. Endişelenmeyin; genel yöneticiler veya faturalama yöneticileri [aboneliği yeniden etkinleştirebilir](reactivate-your-subscription.md) ve Microsoft 365 kullanmaya devam edebilir. Yeniden etkinleştirmezseniz [verilerinizi yedekleyin](back-up-data-before-switching-plans.md).
+Yönetici olarak, yönetim merkezine hala erişiminiz vardır. Endişelenmeyin; genel yöneticiler veya faturalama yöneticileri [aboneliği yeniden etkinleştirebilir](reactivate-your-subscription.md) ve Microsoft 365'i kullanmaya devam edebilir. Yeniden etkinleştirmezseniz [verilerinizi yedekleyin](move-users-different-subscription.md).
   
 ### <a name="state-disabled"></a>Durum: Devre Dışı
 
 **Bekleyebileceğinizler:** Aboneliğinizi Süresi Doldu aşamasındayken yeniden etkinleştirmezseniz, çoğu ülkede ve bölgede çoğu abonelik için 90 gün süren Devre Dışı aşamasına geçer. Toplu Lisanslama ürünleri için Devre dışı bırakılan aşama 30 gün sürer.
 
-Bu durumda, erişiminiz önemli ölçüde azalır. Kullanıcılarınız oturum açamaz veya e-posta veya SharePoint Online gibi hizmetlere erişemez. Office uygulamalar sonunda salt okunur, azaltılmış işlevsellik moduna geçer ve [Lisanssız Ürün bildirimlerini](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) görüntüler. Yine de oturum açıp yönetim merkezine gidebilirsiniz, ancak kullanıcılara lisans atayamazsınız. Ekip sitelerindeki tüm kullanıcı verileri, e-posta ve dosyalar dahil olmak üzere müşteri verileriniz yalnızca siz ve diğer yöneticiler tarafından kullanılabilir.
+Bu durumda, erişiminiz önemli ölçüde azalır. Kullanıcılarınız oturum açamaz veya e-posta veya SharePoint Online gibi hizmetlere erişemez. Office uygulamaları sonunda salt okunur, azaltılmış işlevsellik moduna geçer ve [Lisanssız Ürün bildirimlerini](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) görüntüler. Yine de oturum açıp yönetim merkezine gidebilirsiniz, ancak kullanıcılara lisans atayamazsınız. Ekip sitelerindeki tüm kullanıcı verileri, e-posta ve dosyalar dahil olmak üzere müşteri verileriniz yalnızca siz ve diğer yöneticiler tarafından kullanılabilir.
 
-Genel yönetici veya faturalama yöneticisi olarak [aboneliği yeniden etkinleştirebilir](reactivate-your-subscription.md) ve tüm müşteri verilerinizle Microsoft 365 kullanmaya devam edebilirsiniz. Yeniden etkinleştirmemeyi seçerseniz [verilerinizi yedekleyin](back-up-data-before-switching-plans.md).
+Genel yönetici veya faturalama yöneticisi olarak [aboneliği yeniden etkinleştirebilir](reactivate-your-subscription.md) ve microsoft 365'i tüm müşteri verilerinizle birlikte kullanmaya devam edebilirsiniz. Yeniden etkinleştirmemeyi seçerseniz [verilerinizi yedekleyin](move-users-different-subscription.md).
 
 ### <a name="state-deleted"></a>Durum: Silindi
   
 **Bekleyebileceğinizler:** Süresi dolduğunda veya devre dışı bırakıldığı sırada aboneliğinizi yeniden etkinleştirmezseniz abonelik silinir.
   
-Yöneticiler ve kullanıcılar artık abonelikle birlikte gelen hizmetlere veya Office uygulamalara erişemeyecektir. Kullanıcı verilerinden belgelere ve e-postalara kadar tüm müşteri verileri kalıcı olarak silinir ve kurtarılamaz.
+Yöneticiler ve kullanıcılar artık abonelikle birlikte gelen hizmetlere veya Office uygulamalarına erişemeyecek. Kullanıcı verilerinden belgelere ve e-postalara kadar tüm müşteri verileri kalıcı olarak silinir ve kurtarılamaz.
   
 Bu noktada aboneliği yeniden etkinleştiremezsiniz. Ancak genel yönetici veya faturalama yöneticisi olarak diğer abonelikleri yönetmek veya iş gereksinimlerinizi karşılamak için yeni abonelikler satın almak için yönetim merkezine erişmeye devam edebilirsiniz.
   
@@ -130,11 +130,11 @@ Bu noktada aboneliği yeniden etkinleştiremezsiniz. Ancak genel yönetici veya 
 
 ### <a name="what-happens-when-my-trial-ends"></a>Deneme sürümüm sona erdiğinde ne olur?
 
-Deneme sürümünüz sona erdiğinde Microsoft 365 ücretsiz olarak kullanmaya devam edebilirsiniz. Birkaç seçeneğiniz vardır:
+Deneme sürümünüz sona erdiğinde Microsoft 365'i ücretsiz kullanmaya devam edebilirsiniz. Birkaç seçeneğiniz vardır:
 
-- **Microsoft 365 satın alın.** Deneme süreniz dolduğunda Süresi Doldu aşamasına geçer ve size Microsoft 365 satın almak için 30 gün daha (çoğu ülkede ve bölgede çoğu deneme için) verir. Deneme sürümünüzü ücretli aboneliğe dönüştürmeyi öğrenmek için bkz. [Ücretsiz deneme sürümünüzden abonelik satın alma](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
+- **Microsoft 365'i satın alın.** Deneme süreniz dolduğunda Süresi Doldu aşamasına geçer ve Microsoft 365'i satın almak için size 30 gün daha (çoğu ülkede ve bölgede çoğu deneme için) verir. Deneme sürümünüzü ücretli aboneliğe dönüştürmeyi öğrenmek için bkz. [Ücretsiz deneme sürümünüzden abonelik satın alma](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
 - **Deneme süresini uzatın.** Microsoft 365’i değerlendirmek için daha fazla zamana mı ihtiyacınız var? Bazı durumlarda [deneme süresini uzatabilirsiniz](../extend-your-trial.md).
-- **Deneme sürümünü iptal edin veya süresinin dolmasına izin verin.** Microsoft 365 satın almamaya karar verirseniz deneme sürenizin dolmasına izin verebilir veya [iptal edebilirsiniz](cancel-your-subscription.md). Saklamak istediğiniz tüm verileri yedekleyin. Süresi dolan 30 günün hemen ardından deneme hesabı bilgileriniz ve verileriniz kalıcı olarak silinir.
+- **Deneme sürümünü iptal edin veya süresinin dolmasına izin verin.** Microsoft 365'i satın almamaya karar verirseniz deneme sürenizin dolmasına izin verebilir veya [iptal edebilirsiniz](cancel-your-subscription.md). Saklamak istediğiniz tüm verileri yedekleyin. Süresi dolan 30 günün hemen ardından deneme hesabı bilgileriniz ve verileriniz kalıcı olarak silinir.
 
 > [!NOTE]
 >
@@ -143,5 +143,5 @@ Deneme sürümünüz sona erdiğinde Microsoft 365 ücretsiz olarak kullanmaya d
 ## <a name="related-content"></a>İlgili içerik
 
 [Aboneliğinizi iptal etme](./cancel-your-subscription.md) (makale)\
-[İş için Microsoft 365 yenileme](./renew-your-subscription.md) (makale)\
+[İş için Microsoft 365'i yenileme](./renew-your-subscription.md) (makale)\
 [Aboneliğinizi yeniden etkinleştirme](./reactivate-your-subscription.md) (makale)

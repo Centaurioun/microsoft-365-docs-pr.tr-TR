@@ -1,7 +1,7 @@
 ---
-title: MakineAction nesnesi API'sini edinin
-description: Uç Nokta için Microsoft Defender'da Kimliğiyle belirli bir Makine Eylemi almak için MakineAction API'sini Alma'yı nasıl kullanabileceğinizi öğrenin.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, makine emiş nesnesi
+title: MachineAction nesne API'lerini alma
+description: Uç Nokta için Microsoft Defender'de belirli bir Makine Eylemini kimliğine göre almak için Get MachineAction API'sini kullanmayı öğrenin.
+keywords: apis, graph api, desteklenen API'ler, machineaction nesnesi
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,24 +13,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ea532b791b15320379655546ca86c798dbfc8674
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 4fa508be9abdbf0f589b1dd488d905386c42a183
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996544"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326947"
 ---
-# <a name="get-machineaction-api"></a>MakineAction API'sini edinin
+# <a name="get-machineaction-api"></a>machineAction API'lerini alma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:** 
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:** 
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,27 +38,27 @@ ms.locfileid: "62996544"
 
 ## <a name="api-description"></a>API açıklaması
 
-Belirli Makine [Eylemini kimliğiyle](machineaction.md) alınır.
+Kimliğine göre belirli [Makine Eylemini](machineaction.md) alır.
 
 ## <a name="limitations"></a>Sınırlamalar
 
-- Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+- Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. [Uç Nokta API'leri için Defender Kullanma](apis-intro.md).
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi için bkz [. Uç Nokta API'leri için Defender'ı kullanma](apis-intro.md).
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
 Uygulama|Machine.Read.All|'Tüm makine profillerini oku'
 Uygulama|Machine.ReadWrite.All|'Tüm makine bilgilerini okuma ve yazma'
-Temsilcili (iş veya okul hesabı)|Machine.Read|'Makine bilgilerini oku'
-Temsilcili (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma ve yazma'
+Temsilci (iş veya okul hesabı)|Machine.Read|'Makine bilgilerini oku'
+Temsilci (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma ve yazma'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rol](user-roles.md) oluşturma ve yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -66,7 +66,7 @@ Temsilcili (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma v
 GET https://api.securitycenter.microsoft.com/api/machineactions/{id}
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -78,13 +78,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem bir Makine Eylemi varlığıyla 200, [Tamam yanıt kodunu](machineaction.md) döndürür. Belirtilen kimlikle makine eylem varlığı bulunamadı - 404 Bulunamadı.
+Başarılı olursa, bu yöntem [Makine Eylemi](machineaction.md) varlığıyla 200 Tamam yanıt kodu döndürür. Belirtilen kimlikle makine eylemi varlığı bulunamadıysa - 404 Bulunamadı.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="example-request"></a>Örnek istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/2e9da30d-27f6-4208-81f2-9cd3d67893ba
@@ -92,7 +92,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/2e9da30d-27f6-42
 
 ### <a name="response-example"></a>Yanıt örneği
 
-İşte yanıtın bir örneği.
+Yanıtın bir örneğini aşağıda bulabilirsiniz.
 
 ```json
 HTTP/1.1 200 Ok

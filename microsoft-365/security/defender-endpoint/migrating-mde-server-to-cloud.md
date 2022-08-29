@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: migrationguides
 ms.date: 07/19/2022
 ms.technology: mde
-ms.openlocfilehash: b32a47ba4ca01c3f6b99cde639063c1fc2373ed2
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 7906589143e99213795c2e3961e237beb6c813bd
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275783"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67316391"
 ---
 # <a name="migrating-servers-from-microsoft-defender-for-endpoint-to-microsoft-defender-for-cloud"></a>Sunucuları Uç Nokta için Microsoft Defender Bulut için Microsoft Defender'a geçirme
 
@@ -54,7 +54,7 @@ Azure [ARC özellikli sunucular](/azure/azure-arc/servers/overview) aracılığ�
 
      :::image type="content" source="images/mde-integration.png" alt-text="MDE tümleştirmesini etkinleştirmeyi gösteren ekran görüntüsü." lightbox="images/mde-integration.png":::
 
-   Ortamınızda bu düğmelerden herhangi biri varsa her ikisi için de tümleştirmeyi etkinleştirdiğinizden emin olun. Yeni aboneliklerde her iki seçenek de varsayılan olarak etkinleştirilir.
+   Ortamınızda bu düğmelerden herhangi biri varsa her ikisi için de tümleştirmeyi etkinleştirdiğinizden emin olun. Yeni aboneliklerde her iki seçenek de varsayılan olarak etkinleştirilir. Bu durumda, ortamınızda bu düğmeleri görmezsiniz.
 
 5. Azure Arc için bağlantı gereksinimlerinin karşılandığından emin olun. Bulut için Microsoft Defender, tüm şirket içi ve Azure dışı makinelerin Azure Arc aracısı aracılığıyla bağlanmasını gerektirir. Ayrıca Azure Arc, MDE tarafından desteklenen tüm işletim sistemlerini desteklemez. Bu nedenle Azure [Arc dağıtımlarını](/azure/azure-arc/servers/plan-at-scale-deployment) planlamayı buradan öğrenebilirsiniz.
 
@@ -68,7 +68,7 @@ Azure VM'leri için ek adım gerekmez; Azure platformu ile Bulut için Defender 
 
 ## <a name="how-do-i-migrate-on-premises-machines-to-microsoft-defender-for-servers"></a>Şirket içi makineleri Sunucular için Microsoft Defender'a geçirmek Nasıl yaparım??
 
-Şirket içi makinelerinizi Azure Arc'a bağlı sunucular aracılığıyla [bağlayın](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc).
+Tüm önkoşullar karşılandığında, şirket içi makinelerinizi Azure Arc'a bağlı sunucular aracılığıyla [bağlayın](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc) .
 
 ## <a name="how-do-i-migrate-vms-from-aws-or-gcp-environments"></a>VM'leri AWS veya GCP ortamlarından geçirmek Nasıl yaparım??
 

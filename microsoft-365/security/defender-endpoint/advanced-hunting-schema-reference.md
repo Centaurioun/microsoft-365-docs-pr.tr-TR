@@ -1,7 +1,7 @@
 ---
-title: Gelişmiş av şeması başvurusu
-description: Tehdit arama sorgularını çalıştırabilirsiniz verileri anlamak için gelişmiş av şemasında yer alan tablolar hakkında bilgi öğrenin.
-keywords: gelişmiş av, tehdit avı, siber tehdit avı, mdatp, microsoft defender atp, uç nokta için Microsoft Defender, wdatp arama, sorgu, telemetri, şema başvurusu, kusto, tablo, veriler
+title: Gelişmiş tehdit avcılığı şeması başvurusu
+description: Tehdit avcılığı sorguları çalıştırabileceğiniz verileri anlamak için gelişmiş tehdit avcılığı şemasındaki tablolar hakkında bilgi edinin.
+keywords: gelişmiş avcılık, tehdit avcılığı, siber tehdit avcılığı, mdatp, microsoft defender atp, uç nokta için microsoft defender, wdatp arama, sorgu, telemetri, şema başvurusu, kusto, tablo, veriler
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,46 +15,46 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 2e45a4ae78d0beb9bc57b72a59b9cf1376ac7da7
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 76c9f55e99ba13417403a6f9ac2d03913f792326
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468357"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326331"
 ---
-# <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da gelişmiş arama şemasını anlama
+# <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de gelişmiş tehdit avcılığı şemasını anlama
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Gelişmiş [av şeması](advanced-hunting-overview.md) , cihazlar ve diğer varlıklar hakkında etkinlik bilgileri ya da bilgi sağlayan birden çok tablodan yapılır. Birden çok tabloya yayılan sorguları etkili bir şekilde oluşturmak için gelişmiş av şemasında yer alan tabloları ve sütunları anlamalısınız.
+[Gelişmiş tehdit avcılığı](advanced-hunting-overview.md) şeması, cihazlar ve diğer varlıklar hakkında olay bilgileri veya bilgiler sağlayan birden çok tablodan oluşur. Birden çok tabloya yayılan sorguları etkili bir şekilde oluşturmak için gelişmiş tehdit avcılığı şemasındaki tabloları ve sütunları anlamanız gerekir.
 
-## <a name="get-schema-information-in-the-defender-for-cloud"></a>Şema bilgilerini çalışma Bulut için Defender
+## <a name="get-schema-information-in-the-defender-for-cloud"></a>Bulut için Defender'da şema bilgilerini alma
 
-Sorguları oluşturmakla birlikte, yerleşik şema başvurularını kullanarak şemadaki her tablo hakkında hızla aşağıdaki bilgileri edinebilirsiniz:
+Sorgu oluştururken, şemadaki her tablo hakkında hızla aşağıdaki bilgileri almak için yerleşik şema başvurularını kullanın:
 
-- **Tablolar açıklaması**: Tabloda yer alan verilerin türü ve bu verilerin kaynağı.
+- **Tablo açıklaması**: Tabloda yer alan verilerin türü ve bu verilerin kaynağı.
 - **Sütunlar**: Tablodaki tüm sütunlar.
-- **Eylem türleri**: Sütunda, tablo `ActionType` tarafından desteklenen olay türlerini temsil eden olası değerler. Bu değerler yalnızca olay bilgileri içeren tablolar için sağlanmıştır.
-- **Örnek sorgu**: Tablonun nasıl kullanılay olacağını özellikte olan örnek sorgular.
+- **Eylem türleri**: Tablo tarafından desteklenen olay türlerini temsil eden sütundaki `ActionType` olası değerler. Bu değerler yalnızca olay bilgilerini içeren tablolar için sağlanır.
+- **Örnek sorgu**: Tablonun nasıl kullanılabilmesini sağlayan örnek sorgular.
 
 ### <a name="access-the-schema-reference"></a>Şema başvurusuna erişme
 
-Şema başvurusuna hızla erişmek için, şema **gösteriminde** tablo adının yanındaki Başvuruyu görüntüle eylemini seçin. Tablo aramak için **Şema başvurusu** da öğesini de seçin.
+Şema başvurusuna hızla erişmek için, şema gösteriminde tablo adının yanındaki **Başvuruyu görüntüle** eylemini seçin. Tablo aramak için **Şema başvurusu'nu** da seçebilirsiniz.
 
-:::image type="content" source="images/ah-reference.png" alt-text="Gelişmiş av sayfası" lightbox="images/ah-reference.png":::
+:::image type="content" source="images/ah-reference.png" alt-text="Gelişmiş avcılık sayfası" lightbox="images/ah-reference.png":::
 
 ## <a name="learn-the-schema-tables"></a>Şema tablolarını öğrenme
 
-Aşağıdaki başvuru, gelişmiş av şemasında yer alan tüm tabloları listeler. Her tablo adı, o tablonun sütun adlarını açıklayan sayfaya bağlantı sağlar.
+Aşağıdaki başvuruda gelişmiş tehdit avcılığı şemasındaki tüm tablolar listelenmiştir. Her tablo adı, o tablonun sütun adlarını açıklayan bir sayfaya bağlanır.
 
-Tablo ve sütun adları, gelişmiş av Microsoft 365 Defender şema temsili içinde, tablo ve sütun adları da listelenmiştir.
+Tablo ve sütun adları, gelişmiş tehdit avcılığı ekranındaki şema gösteriminde Microsoft 365 Defender portalında da listelenir.
 
 <br>
 
@@ -62,34 +62,34 @@ Tablo ve sütun adları, gelişmiş av Microsoft 365 Defender şema temsili içi
 
 |Tablo adı|Açıklama|
 |---|---|
-|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|Alanla ilgili Microsoft 365 Defender |
-|**[DeviceInfo](advanced-hunting-deviceinfo-table.md)**|Işletim sistemi bilgileri dahil olmak üzere cihaz bilgileri|
-|**[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)**|Bağdaştırıcılar, IP ve MAC adresleri, ayrıca bağlı ağlar ve etki alanları dahil olmak üzere cihazların ağ özellikleri|
-|**[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)**|Süreç oluşturma ve ilgili olaylar|
+|**[CihazUyarıEtkinlikleri](advanced-hunting-devicealertevents-table.md)**|Microsoft 365 Defender uyarıları |
+|**[DeviceInfo](advanced-hunting-deviceinfo-table.md)**|İşletim sistemi bilgileri de dahil olmak üzere cihaz bilgileri|
+|**[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)**|Bağdaştırıcılar, IP ve MAC adreslerinin yanı sıra bağlı ağlar ve etki alanları da dahil olmak üzere cihazların ağ özellikleri|
+|**[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)**|İşlem oluşturma ve ilgili olaylar|
 |**[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)**|Ağ bağlantısı ve ilgili olaylar|
 |**[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)**|Dosya oluşturma, değiştirme ve diğer dosya sistemi olayları|
-|**[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)**|Kayıt defteri girdilerini oluşturma ve değiştirme|
-|**[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)**|Oturum açma bilgileri ve diğer kimlik doğrulama olayları|
+|**[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)**|Kayıt defteri girdilerinin oluşturulması ve değiştirilmesi|
+|**[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)**|Oturum açma işlemleri ve diğer kimlik doğrulama olayları|
 |**[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)**|DLL yükleme olayları|
-|**[DeviceEvents](advanced-hunting-deviceevents-table.md)**|Güvenlik denetimleri tarafından tetiklenen olaylar (güvenlik nedeniyle koruma ve açıklardan yararlanma koruması gibi) Microsoft Defender Virüsten Koruma türler|
+|**[DeviceEvents](advanced-hunting-deviceevents-table.md)**|Microsoft Defender Virüsten Koruma ve açıklardan yararlanma koruması gibi güvenlik denetimleri tarafından tetiklenen olaylar da dahil olmak üzere birden çok olay türü|
 |**[DeviceFileCertificateInfo](advanced-hunting-devicefilecertificateinfo-table.md)**|Uç noktalarda sertifika doğrulama olaylarından alınan imzalı dosyaların sertifika bilgileri|
 |**[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)**|Sürüm bilgileri ve destek sonu durumu da dahil olmak üzere cihazlarda yüklü yazılımların envanteri|
-|**[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)**|Cihazlarda bulunan yazılım açıkları ve her bir güvenlik açığını gideren kullanılabilir güvenlik güncelleştirmeleri listesi|
-|**[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)**|Exploit code'ın genel kullanıma açık olup olmadığı da dahil olmak üzere, herkese açık açık güvenlik açıkları için bilgi tabanı|
-|**[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)**|Tehdit & Cihazlarla ilgili çeşitli güvenlik yapılandırmalarının durumunu gösteren Güvenlik Açığı Yönetimi değerlendirme etkinlikleri|
-|**[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)**|Threat & Güvenlik Açığı Yönetimi tarafından cihazları değerlendirmek için kullanılan çeşitli güvenlik yapılandırmaları hakkında bilgi tabanı; çeşitli standartlara ve karşılaştırmalara eşlemeler içerir|
+|**[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)**|Cihazlarda bulunan yazılım güvenlik açıkları ve her güvenlik açığını gideren kullanılabilir güvenlik güncelleştirmelerinin listesi|
+|**[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)**|Açıklardan yararlanma kodunun genel kullanıma açık olup olmadığı da dahil olmak üzere genel olarak açıklanan güvenlik açıklarının bilgi bankası|
+|**[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)**|Cihazlardaki çeşitli güvenlik yapılandırmalarının durumunu gösteren değerlendirme olaylarını Microsoft Defender Güvenlik Açığı Yönetimi|
+|**[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)**|Defender Güvenlik Açığı Yönetimi tarafından cihazları değerlendirmek için kullanılan çeşitli güvenlik yapılandırmalarının bilgi bankası; çeşitli standartlara ve kıyaslamalara eşlemeler içerir|
 |
 
 > [!TIP]
-> Uç [nokta, Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview), Microsoft Defender for Cloud Apps için Defender'dan gelen verileri kullanarak tehdit avına Office 365 için Microsoft Defender gelişmiş Microsoft Defender for Cloud Apps kullanın Kimlik için Microsoft Defender. [Aç'Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
+> Uç Nokta, Office 365 için Microsoft Defender, Microsoft Defender for Cloud Apps ve Defender verilerini kullanarak tehditleri avlamak için Microsoft 365 Defender [gelişmiş avcılığı](/microsoft-365/security/defender/advanced-hunting-overview) kullanın Kimlik için Microsoft Defender. [Microsoft 365 Defender açın](/microsoft-365/security/defender/m365d-enable).
 
-Gelişmiş av iş akışlarınızı e-postanıza taşıma hakkında daha fazla bilgi Uç Nokta için Microsoft Defender Microsoft 365 Defender Gelişmiş arama sorgularını buradan [Uç Nokta için Microsoft Defender](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
+Gelişmiş avcılık iş akışlarınızı Uç Nokta için Microsoft Defender'den Microsoft 365 Defender taşıma hakkında daha fazla bilgi için [bkz. Gelişmiş avcılık sorgularını Uç Nokta için Microsoft Defender geçirme](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Gelişmiş ava genel bakış](advanced-hunting-overview.md)
+- [Gelişmiş avcılığa genel bakış](advanced-hunting-overview.md)
 - [Sorgu dilini öğrenin](advanced-hunting-query-language.md)
 - [Sorgu sonuçlarıyla çalışın](advanced-hunting-query-results.md)
 - [Sorgu en iyi yöntemlerini uygulayın](advanced-hunting-best-practices.md)
 - [Özel algılamalara genel bakış](overview-custom-detections.md)
-- [Gelişmiş av veri şeması değişiklikleri](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/advanced-hunting-data-schema-changes/ba-p/1043914)
+- [Gelişmiş tehdit avcılığı veri şeması değişiklikleri](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/advanced-hunting-data-schema-changes/ba-p/1043914)

@@ -1,7 +1,7 @@
 ---
 title: Tüm önerileri listele
-description: Kuruluşu etkileyen tüm güvenlik önerilerinin listesini sağlar.
-keywords: api'ler, grafik api'si, desteklenen api'ler, get, güvenlik önerileri, Uç nokta tvm api için Microsoft Defender, Tehdit ve Güvenlik Açığı Yönetimi, Tehdit ve Güvenlik Açığı Yönetimi api
+description: Kuruluşu etkileyen tüm güvenlik önerilerinin listesini alır.
+keywords: apis, graph api, desteklenen api'ler, get, güvenlik önerileri, Uç Nokta için Microsoft Defender tvm api, Tehdit ve Güvenlik Açığı Yönetimi, Tehdit ve Güvenlik Açığı Yönetimi api, mdvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,23 +15,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 727b20e6784016aac423a74c6b564fa96d6f5733
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: c420d73326cc9965f0b4a5d57af5adba83c30f1d
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996562"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343097"
 ---
 # <a name="list-all-recommendations"></a>Tüm önerileri listele
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,29 +39,29 @@ ms.locfileid: "62996562"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Kuruluşu etkileyen tüm güvenlik önerilerinin listesini sağlar.
+Kuruluşu etkileyen tüm güvenlik önerilerinin listesini alır.
 
 
 ## <a name="api-description"></a>API açıklaması
 
-Kuruluşu etkileyen tüm güvenlik önerileriyle ilgili bilgileri döndürür.
+Kuruluşu etkileyen tüm güvenlik önerileri hakkında bilgi döndürür.
 
 *URL:* GET:/api/recommendations
-<br>[OData V4 sorgularını destekler](https://www.odata.org/documentation/).
-<br>OData'da desteklenen işleçler:
-<br>```$filter```on: ```id```, , ```vendor``````productName```, ```recommendedVersion```, ```recommendationCategory``````subCategory```, ```severityScore```, ```remediationType```, ```recommendedProgram```, ```recommendedVendor```ve ```status``` özellikler.
-<br>```$top``` maksimum değeri 10.000' olur.
+<br>[OData V4 sorgularını](https://www.odata.org/documentation/) destekler.
+<br>OData tarafından desteklenen işleçler:
+<br>```$filter```üzerinde: ```id```, ```productName```, ```vendor```, ```recommendedVersion```, , ```recommendationCategory```, ```subCategory```, , ```severityScore```, ```remediationType``````recommendedProgram```, ```recommendedVendor```ve ```status``` özellikleri.
+<br>```$top``` 10.000 maksimum değere sahip.
 <br>```$skip```.
-<br>Uç Nokta için [Microsoft Defender ile OData sorguları ile ilgili örneklere bakın](exposed-apis-odata-samples.md).
+<br>[Uç Nokta için Microsoft Defender ile OData sorgularında örneklere](exposed-apis-odata-samples.md) bakın.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Uç nokta API'leri için Microsoft Defender'ı](apis-intro.md) kullanma.
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için ayrıntılar için bkz. [Uç Nokta için Microsoft Defender API'lerini kullanma](apis-intro.md).
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
-Uygulama|SecurityRecommendation.Read.All|'Tehdit ve Güvenlik Açığı Yönetimi güvenlik öneri bilgileri'
-Temsilcili (iş veya okul hesabı)|SecurityRecommendation.Read |'Tehdit ve Güvenlik Açığı Yönetimi güvenlik öneri bilgileri'
+Uygulama|SecurityRecommendation.Read.All|'Tehdit ve Güvenlik Açığı Yönetimi güvenlik öneri bilgilerini okuyun'
+Temsilci (iş veya okul hesabı)|SecurityRecommendation.Read |'Tehdit ve Güvenlik Açığı Yönetimi güvenlik öneri bilgilerini okuyun'
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -69,7 +69,7 @@ Temsilcili (iş veya okul hesabı)|SecurityRecommendation.Read |'Tehdit ve Güve
 GET /api/recommendations
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -81,13 +81,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem gövdede güvenlik önerileri listesiyle birlikte 200 Tamam döndürür.
+Başarılı olursa, bu yöntem gövdedeki güvenlik önerilerinin listesiyle birlikte 200 Tamam döndürür.
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/recommendations
@@ -95,7 +95,7 @@ GET https://api.securitycenter.microsoft.com/api/recommendations
 
 ### <a name="response"></a>Yanıt
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 ```json
 {
@@ -136,5 +136,5 @@ Yanıtın bir örneği:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Risk Tabanlı Tehdit & Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Tehdit & Güvenlik Açığı güvenlik önerisi](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Güvenlik açığı yönetimi güvenlik önerileri](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

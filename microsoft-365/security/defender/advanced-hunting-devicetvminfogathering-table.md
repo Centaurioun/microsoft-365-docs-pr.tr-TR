@@ -1,7 +1,7 @@
 ---
 title: DeviceTvmInfoGathering tablosu gelişmiş tehdit avcılığı şemasında
 description: Gelişmiş tehdit avcılığı şemasının DeviceTvmInfoGathering tablosundaki çeşitli yapılandırmaların durumu ve cihazların saldırı yüzeyi alanı durumları da dahil olmak üzere değerlendirme olayları hakkında bilgi edinin.
-keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, tehdit & güvenlik açığı yönetimi, TVM, cihaz yönetimi, yazılım, envanter, güvenlik açıkları, CVE ID, OS DeviceTvmSoftwareInventoryVulnerabilities
+keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, tehdit & güvenlik açığı yönetimi, TVM, cihaz yönetimi, yazılım, envanter, güvenlik açıkları, CVE ID, OS DeviceTvmSoftwareInventoryVulnerabilities, Microsoft Defender Güvenlik Açığı Yönetimi
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 738168153738f8bf4e12220829114efc0cc8beb2
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: efd3ed40963c1114ddc61e2fb86f84410795959d
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66862105"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329497"
 ---
 # <a name="devicetvminfogathering"></a>DeviceTvmInfoGathering
 

@@ -1,8 +1,8 @@
 ---
-title: Uç Nokta için Microsoft Defender - Mobile Threat Defense
+title: Uç Nokta için Microsoft Defender - Mobil Tehdit Savunması
 ms.reviewer: ''
 description: Uç Nokta için Microsoft Defender'da Mobile Threat Defense'e genel bakış
-keywords: mobile, defender, Uç Nokta için Microsoft Defender, ios, mtd, android, güvenlik
+keywords: mobile, defender, Uç Nokta için Microsoft Defender, ios, mtd, android, security
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,14 +17,14 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 36b7703aeaf0fdf4ff30c9bd0dd1486ebe27f618
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: f02dc28eb3204922386d0fae26bc1191779641e6
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923193"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327211"
 ---
-# <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Uç Nokta için Microsoft Defender - Mobile Threat Defense
+# <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Uç Nokta için Microsoft Defender - Mobil Tehdit Savunması
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,9 +33,9 @@ ms.locfileid: "65923193"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı deneyimlemek mi istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Android ve iOS'ta Uç Nokta için Microsoft Defender **, mobil tehdit savunması çözümümüzdür (MTD).** Genellikle şirketler bilgisayarları güvenlik açıklarına ve saldırılara karşı korurken mobil cihazlar genellikle izlenmeyen ve korumasız hale getirilir. Mobil platformların uygulama yalıtımı ve incelenmiş tüketici uygulama mağazaları gibi yerleşik korumaları olduğu durumlarda, bu platformlar web tabanlı veya diğer gelişmiş saldırılara karşı savunmasız kalır. Daha fazla çalışan, cihazları iş ve hassas bilgilere erişmek için kullandığından, şirketlerin cihazları ve kaynaklarınızı cep telefonlarına yönelik giderek daha karmaşık saldırılara karşı korumak için bir MTD çözümü dağıtması zorunludur.
+Android ve iOS'ta Uç Nokta için Microsoft Defender **mobil tehdit savunması çözümümüzdür (MTD).** Genellikle şirketler bilgisayarları güvenlik açıklarına ve saldırılara karşı korurken mobil cihazlar genellikle izlenmeyen ve korumasız hale getirilir. Mobil platformların uygulama yalıtımı ve incelenmiş tüketici uygulama mağazaları gibi yerleşik korumaları olduğu durumlarda, bu platformlar web tabanlı veya diğer gelişmiş saldırılara karşı savunmasız kalır. Daha fazla çalışan, cihazları iş ve hassas bilgilere erişmek için kullandığından, şirketlerin cihazları ve kaynaklarınızı cep telefonlarına yönelik giderek daha karmaşık saldırılara karşı korumak için bir MTD çözümü dağıtması zorunludur.
 
 ## <a name="key-capabilities"></a>Önemli özellikler
 
@@ -48,14 +48,14 @@ Android ve iOS'ta Uç Nokta için Microsoft Defender aşağıdaki temel özellik
 |Web Koruması|Kimlik avı önleme, güvenli olmayan ağ bağlantılarını engelleme ve özel göstergeler için destek.|
 |Kötü Amaçlı YazılımDan Koruma (yalnızca Android)|Kötü amaçlı uygulamaları tarama.|
 |Jailbreak Algılama (yalnızca iOS)|Jailbreak uygulanmış cihazların algılanması.|
-|Tehdit ve Güvenlik Açığı Yönetimi (TVM) |Eklenen mobil cihazların güvenlik açığı değerlendirmesi. Uç Nokta için Microsoft Defender'da tehdit ve güvenlik açığı yönetimi hakkında daha fazla bilgi edinmek için bu [sayfayı](next-gen-threat-and-vuln-mgt.md) ziyaret edin. *Bu önizlemede yalnızca iOS işletim sistemi güvenlik açıklarının desteklendiğini unutmayın.*|
-|Ağ Koruması *(Genel Önizleme)*| Wi-Fi ilgili tehditlere ve sahte sertifikalara karşı koruma; Intune'da kök CA ve özel kök CA sertifikalarını listelemeye izin verme yeteneği; uç noktalarla güven oluşturun.|
+|Microsoft Defender Güvenlik Açığı Yönetimi (MDVM) |Eklenen mobil cihazların güvenlik açığı değerlendirmesi. Uç Nokta için Microsoft Defender'da Microsoft Defender Güvenlik Açığı Yönetimi hakkında daha fazla bilgi edinmek için bu [sayfayı](next-gen-threat-and-vuln-mgt.md) ziyaret edin. *Bu önizlemede yalnızca iOS işletim sistemi güvenlik açıklarının desteklendiğini unutmayın.*|
+|Ağ Koruması *(Genel Önizleme)*| Wi-Fi ilgili tehditlere ve sahte sertifikalara karşı koruma; Intune'de kök CA ve özel kök CA sertifikalarını listeleme olanağı; uç noktalarla güven oluşturma.|
 |Birleşik uyarı|Birleşik M365 güvenlik konsolundaki tüm platformlardan uyarılar|
 |Koşullu Erişim, Koşullu başlatma|Riskli cihazların şirket kaynaklarına erişmesini engelleme. Uç Nokta için Defender risk sinyalleri, uygulama koruma ilkelerine (MAM) de eklenebilir|
 |Gizlilik Denetimleri. Önizlemede (aşağıdaki nota bakın)|Uç Nokta için Microsoft Defender tarafından gönderilen verileri denetleyerek tehdit raporlarında gizliliği yapılandırın. *Gizlilik denetimlerinin şu anda yalnızca kayıtlı cihazlarda kullanılabildiğini unutmayın. Kaydı kaldırılan cihazlar için denetimler daha sonra eklenecek*|
 |Microsoft Tunnel ile tümleştirme|Tek bir uygulamada güvenliği ve bağlantıyı etkinleştirmek için bir VPN ağ geçidi çözümü olan Microsoft Tunnel ile tümleştirebilir. Android'de kullanılabilir ve artık iOS'ta da genel kullanıma sunulmuştur.|
 
-Tüm bu özellikler Uç Nokta için Microsoft Defender lisans sahipleri tarafından kullanılabilir. Daha fazla bilgi için bkz [. Lisanslama gereksinimleri](minimum-requirements.md#licensing-requirements).
+Tüm bu özellikler Uç Nokta için Microsoft Defender lisans sahipleri için kullanılabilir. Daha fazla bilgi için bkz [. Lisanslama gereksinimleri](minimum-requirements.md#licensing-requirements).
 
 
 ## <a name="overview-and-deploy"></a>Genel Bakış ve Dağıtma
@@ -68,29 +68,29 @@ Mobil cihazlarda Uç Nokta için Microsoft Defender dağıtımı Microsoft Endpo
 
 ### <a name="deploy"></a>Dağıtım
 
-Aşağıdaki tabloda, Android ve iOS'ta Uç Nokta için Microsoft Defender'ın nasıl dağıtılacağı özetlanmaktadır. Ayrıntılı belgeler için bkz. 
-- [Android'de Uç Nokta için Microsoft Defender'a genel bakış](microsoft-defender-endpoint-android.md) ve
+Aşağıdaki tabloda, Android ve iOS'ta Uç Nokta için Microsoft Defender nasıl dağıtılacağı özetlemektedir. Ayrıntılı belgeler için bkz. 
+- [Android'de Uç Nokta için Microsoft Defender genel bakış](microsoft-defender-endpoint-android.md) ve
 - [iOS'ta Uç Nokta için Microsoft Defender’a genel bakış](microsoft-defender-endpoint-ios.md)
 
 **Android**
 
 |Kayıt türü     |Ayrıntılar      |
 |--------------------|-------------|
-|Intune Unified Endpoint Manager (Microsoft Endpoint Manager) ile Android Enterprise|[Android Kurumsal kayıtlı cihazlarda dağıtma](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
-|Intune Birleşik Uç Nokta Yöneticisi (Microsoft Endpoint Manager) ile Cihaz Yöneticisi|[Cihaz Yöneticisi tarafından kaydedilen cihazlarda dağıtma](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
+|Intune Unified Endpoint Manager (Microsoft Endpoint Manager) ile Android Kurumsal|[Android Kurumsal kayıtlı cihazlarda dağıtma](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
+|Intune Birleşik Endpoint Manager (Microsoft Endpoint Manager) ile Cihaz Yöneticisi|[Cihaz Yöneticisi tarafından kaydedilen cihazlarda dağıtma](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
 |Diğer Birleşik Uç Nokta Yöneticileri tarafından yönetilen yönetilmeyen KCG VEYA cihazlar / Uygulama koruma ilkesini ayarlama (MAM)|[Uygulama koruma ilkesinde (MAM) Defender risk sinyallerini yapılandırma](android-configure-mam.md)|
 
 **iOS**
 
 |Kayıt türü     |Ayrıntılar      |
 |--------------------|-------------|
-|Intune Birleşik Uç Nokta Yöneticisi (Microsoft Endpoint Manager) ile denetimli cihazlar|1. [iOS mağazası uygulaması olarak dağıtma](ios-install.md)<br/>2. [Denetimli iOS cihazları için VPN olmadan Web Koruması kurma](ios-install.md#complete-deployment-for-supervised-devices)|
-|Intune UEM'ye (Microsoft Endpoint Manager) kayıtlı denetimsiz (KCG) cihazlar|[iOS mağazası uygulaması olarak dağıtma](ios-install.md)|
+|Intune Birleşik Endpoint Manager sahip denetimli cihazlar (Microsoft Endpoint Manager)|1. [iOS mağazası uygulaması olarak dağıtma](ios-install.md)<br/>2. [Denetimli iOS cihazları için VPN olmadan Web Koruması kurma](ios-install.md#complete-deployment-for-supervised-devices)|
+|Intune UEM(Microsoft Endpoint Manager) ile kaydedilen denetimsiz (KCG) cihazlar|[iOS mağazası uygulaması olarak dağıtma](ios-install.md)|
 |Yönetilmeyen KCG VEYA diğer UEM'ler tarafından yönetilen cihazlar / Uygulama koruma ilkesi (MAM) kurulumu|[Uygulama koruma ilkesinde (MAM) Defender risk sinyallerini yapılandırma](ios-install-unmanaged.md)|
 
 ### <a name="end-user-onboarding"></a>Son kullanıcı ekleme
 
-- [iOS'a kayıtlı cihazlar için Sıfır dokunma eklemeyi yapılandırma](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint): Yöneticiler, kullanıcının uygulamayı açmasına gerek kalmadan kayıtlı iOS cihazlarına Uç Nokta için Microsoft Defender'ı sessizce eklemek için sıfır dokunmayla yüklemeyi yapılandırabilir. 
+- [iOS kayıtlı cihazlar için Sıfır dokunma eklemeyi yapılandırma](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint): Yöneticiler, kullanıcının uygulamayı açmasına gerek kalmadan kayıtlı iOS cihazlarına sessizce Uç Nokta için Microsoft Defender eklemek için sıfır dokunmayla yüklemeyi yapılandırabilir. 
 
 - [Kullanıcı ekleme işlemini zorunlu kılmak için Koşullu Erişimi yapılandırın](android-configure.md#conditional-access-with-defender-for-endpoint-on-android): Bu, son kullanıcıların dağıtıldıktan sonra Uç Nokta için Microsoft Defender uygulamasına eklendiğinden emin olmak için uygulanabilir. Uç Nokta için Defender risk sinyalleriyle koşullu erişimi yapılandırma hakkında hızlı bir tanıtım için bu videoyu izleyin. 
 
@@ -112,9 +112,9 @@ Bu, hizmet dağıtılırken ortaya çıkabilecek olası sorunları azaltmaya yar
 
 - Cihazlar cihaz envanter listesinde gösterilir: Mobil cihazda Uç Nokta için Defender'ın başarıyla eklendikten sonra, cihazın [güvenlik konsolundaki](https://security.microsoft.com) Cihaz Envanteri'nde listelendiğini doğrulayın.
 
-- Android cihazda kötü amaçlı yazılım algılama testi çalıştırma: Google Play Store'dan herhangi bir test virüs uygulamasını yükleyin ve Uç Nokta için Microsoft Defender tarafından algılandığını doğrulayın. Bu test için kullanılabilecek örnek bir uygulama aşağıda verilmiştir: [Test virüsü](https://play.google.com/store/apps/details?id=com.antivirus&hl=en_US&gl=US). İş profiline sahip Android Kurumsal'da yalnızca iş profilinin desteklendiğini unutmayın.
+- Android cihazda kötü amaçlı yazılım algılama testi çalıştırma: Google play store'dan herhangi bir test virüs uygulamasını yükleyin ve Uç Nokta için Microsoft Defender tarafından algılandığını doğrulayın. Bu test için kullanılabilecek örnek bir uygulama aşağıda verilmiştir: [Test virüsü](https://play.google.com/store/apps/details?id=com.antivirus&hl=en_US&gl=US). İş profiline sahip Android Kurumsal'da yalnızca iş profilinin desteklendiğini unutmayın.
 
-- Kimlik avı testi çalıştırma: https://smartscreentestratings2.net Uç Nokta için Microsoft Defender tarafından engellendiğini bulun ve doğrulayın. İş profiline sahip Android Kurumsal'da yalnızca iş profilinin desteklendiğini unutmayın.
+- Kimlik avı testi çalıştırma: adresine gidin https://smartscreentestratings2.net ve Uç Nokta için Microsoft Defender tarafından engellendiğini doğrulayın. İş profiline sahip Android Kurumsal'da yalnızca iş profilinin desteklendiğini unutmayın.
 
 - Uyarılar panoda görünür: Yukarıdaki algılama testlerine yönelik uyarıların [güvenlik konsolunda](https://security.microsoft.com) göründüğünü doğrulayın.
 

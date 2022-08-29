@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: İhtiyaç duyduklarınızı koruyabilmeniz ve tutmadığınız şeyleri silebilmeniz için veri yaşam döngüsü yönetimi için bekletme ilkelerine yönelik özel durumlar için bekletme etiketleri oluşturma yönergeleri.
-ms.openlocfilehash: 0951ce1fea2f9324c19ec0bf17451d458b4914d1
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ca78c4df6decaf71bfddd899ac13afaa9ada5df6
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632585"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336232"
 ---
 # <a name="create-retention-labels-for-exceptions-to-your-retention-policies"></a>Bekletme ilkelerinizin özel durumları için bekletme etiketleri oluşturma
 
@@ -51,7 +51,7 @@ Kuruluşunuzun genel yöneticisi, bekletme etiketleri ve ilkelerini oluşturmak 
 
 ## <a name="how-to-create-retention-labels-for-data-lifecycle-management"></a>Veri yaşam döngüsü yönetimi için bekletme etiketleri oluşturma
 
-1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) şu sayfaya gidin: **Çözümler** > **Veri yaşam döngüsü yönetimi** > **Etiketleri** sekmesi > + **Etiket oluşturma**
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) şu sayfaya gidin: **Çözümler** > **Veri yaşam döngüsü yönetimi** > **Microsoft 365** > **Etiketleri** sekmesi > + **Etiket oluşturma**
     
     **Veri yaşam döngüsü yönetimi** çözümünü hemen görmüyor musunuz? İlk olarak **Tümünü göster'i** seçin. 
 

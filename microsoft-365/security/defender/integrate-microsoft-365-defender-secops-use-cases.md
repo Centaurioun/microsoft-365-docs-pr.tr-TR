@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a039239545a5442592fe1a07f840cf75bebb0eca
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 2df6e5a989ff46359d685cca3859aaf759280bef
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012956"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328815"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Adım 5. Kullanım örneklerini geliştirme ve test edin
 
@@ -76,7 +76,7 @@ Kullanım örneği oluşturmanın ilk adımı, bir yazı panosu kullanarak iş a
 
 Kullanım örneğinin kullanılabilmesi için bir diğer senaryo da tehdit ve güvenlik açığı taramasıdır. Bu örnekte SOC, varlıkların taranması da dahil olmak üzere onaylı işlemler aracılığıyla varlıklara karşı tehditlerin ve güvenlik açıklarının giderilmesini gerektirir.
 
-Varlıkların Tehdit ve Güvenlik Açığı Yönetimi için örnek bir üst düzey görsel taslak aşağıda verilmiştir.
+Varlıkların Microsoft Defender Güvenlik Açığı Yönetimi için örnek bir üst düzey görsel taslak aşağıda verilmiştir.
 
 :::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="Tehdit ve Güvenlik Açığı Yönetimi için kullanım örneği iş akışı" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
 
@@ -92,19 +92,19 @@ Bir kullanım örneği onaylandıktan ve test edildikten sonra, güvenlik ekiple
 
 Örneğin, kimlik avına karşı koruma senaryosu örneğinde SOC ekipleri bu tabloda keşifler yapmış olabilir.
 
-|SOC ekibi|Gereksinim|Gereksinimi karşılayacak kişiler|Gereksinimi karşılama süreci|İlgili teknoloji|Tanımlanan boşluk|Kullanım örneği değişiklik günlüğü|Muaf (Y/N)|
+|SOC ekibi|Gereksinim|Gereksinimi karşılamak için Kişiler|Gereksinimi karşılama süreci|İlgili teknoloji|Tanımlanan boşluk|Kullanım örneği değişiklik günlüğü|Muaf (Y/N)|
 |---|---|---|---|---|---|---|---|
 |Tehdit Analizi ve Analiz ekibi|Veri kaynakları tehdit bilgileri altyapılarını düzgün bir şekilde besliyor.|Tehdit Analizi Analisti/Mühendis|Veri akışı gereksinimleri oluşturuldu, onaylanan kaynaklardan gelen tehdit bilgileri tetikleyicileri|Kimlik için Microsoft Defender, Uç Nokta için Microsoft Defender|Tehdit Bilgileri ekibi, Microsoft 365 Defender API'sini tehdit intel altyapılarıyla bağlamak için otomasyon betiğini kullanmadı|Tehdit altyapılarına veri kaynağı olarak Microsoft 365 Defender ekleme <p> Kullanım örneği çalıştırma kitabını güncelleştirme|N|
 |İzleme ekibi|Veri kaynakları izleme panolarını düzgün şekilde besliyor|Katman 1,2 SOC Analisti-İzleme & Uyarıları|Güvenlik & Uyumluluk Merkezi Güvenli Puanını raporlamaya yönelik iş akışı|[Güvenlik & Uyumluluk Merkezi'ndeki uyarılar](/microsoft-365/security/office-365-security/alerts) <p> Güvenli Puan izleme|SOC analistlerinin Güvenli Puanı geliştirmek için başarılı yeni kimlik avı değişken algılamasını bildirmesi için bir mekanizma yok <p> [Microsoft 365 Defender portalında e-posta güvenlik raporlarını görüntüleme](/microsoft-365/security/office-365-security/view-email-security-reports)|Raporlama iş akışlarına Güvenli Puan iyileştirmesini izlemeye yönelik bir işlem ekleme|N|
 |Mühendislik ve SecOps Ekibi|Değişiklik denetimi güncelleştirmeleri SOC ekip runbook'larında yapılır|Katman 2 SOC Mühendisi|SOC ekip runbook'ları için Denetim bildirimi yordamını değiştirme|Güvenlik cihazlarında onaylanan değişiklikler|SOC güvenlik teknolojisine Microsoft 365 Defender bağlantıda yapılan değişiklikler onay gerektirir|SOC runbook'larına Microsoft Defender for Cloud Apps, Kimlik için Defender, Uç Nokta için Defender, Güvenlik & Uyumluluk Merkezi ekleme|E|
 
-Ayrıca SOC ekipleri, yukarıda özetlenen Tehdit ve Güvenlik Açığı Yönetimi senaryosuyla ilgili olarak aşağıdaki tabloda özetlenen keşifleri yapmış olabilir:
+Ayrıca SOC ekipleri, yukarıda özetlenen Defender Güvenlik Açığı Yönetimi senaryosuyla ilgili olarak aşağıdaki tabloda özetlenen keşifleri yapmış olabilir:
 
-|SOC ekibi|Gereksinim|Gereksinimi karşılayacak kişiler|Gereksinimi karşılama süreci|İlgili teknoloji|Tanımlanan boşluk|Kullanım örneği değişiklik günlüğü|Muaf (Y/N)|
+|SOC ekibi|Gereksinim|Gereksinimi karşılamak için Kişiler|Gereksinimi karşılama süreci|İlgili teknoloji|Tanımlanan boşluk|Kullanım örneği değişiklik günlüğü|Muaf (Y/N)|
 |---|---|---|---|---|---|---|---|
-|SOC Gözetim|Onaylanan ağlara bağlı tüm varlıklar tanımlanır ve kategorilere ayrılmıştır|SOC Gözetim, BU sahipleri, uygulama sahipleri, BT varlık sahipleri vb.|Risk temelinde varlık kategorisini ve özniteliklerini bulmak ve listelemek için merkezi varlık yönetim sistemi.|ServiceNow veya diğer varlıklar. <br><br>[cihaz envanteri Microsoft 365](/microsoft-365/security/defender-endpoint/device-discovery)|Varlıkların yalnızca %70'i bulundu. Microsoft 365 Defender düzeltme izlemesi yalnızca bilinen varlıklar için geçerlidir|Microsoft 365 Defender %100 kapsama sahip olduğundan emin olmak için olgun varlık yaşam döngüsü yönetim hizmetleri|N|
-|Mühendislik & SecOps Teams|Varlıklardaki yüksek etki ve kritik güvenlik açıkları ilkeye göre düzeltilir|SecOps mühendisleri, SOC analistleri: Güvenlik açığı & Uyumluluğu, Güvenlik Mühendisliği|Yüksek Risk ve Kritik Güvenlik Açıklarını kategorilere ayırmak için tanımlanan işlem|[Tehdit ve Güvenlik Açığı Yönetimi Panoları](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)|Uç Nokta için Defender, microsoft tarafından önerilen etkinliğin düzeltme planı veya uygulaması olmayan yüksek etki, yüksek uyarı cihazları tanımladı|İlke başına 30 gün içinde düzeltme etkinliği gerektiğinde varlık sahiplerini bilgilendirmek için bir iş akışı ekleyin; Varlık sahiplerine düzeltme adımlarını bildirmek için bir bilet sistemi uygulayın.|N|
-|İzleme Teams|Tehdit ve güvenlik açığı durumu şirket intranet portalı aracılığıyla bildirilir|Katman 2 SOC analisti|Varlıkların düzeltme ilerleme durumunu gösteren Microsoft 365 Defender otomatik olarak oluşturulan raporlar|[Güvenlik & Uyumluluk Merkezi'ndeki uyarılar](/microsoft-365/security/office-365-security/alerts) <p> Güvenli Puan izleme|Varlıkların tehdit ve güvenlik açığı durumuyla ilgili olarak varlık sahiplerine hiçbir görünüm veya pano raporu iletilmeyen.|Kuruluş için yüksek riskli ve kritik varlık güvenlik açığı düzeltme durumunu doldurmak için otomasyon betiği oluşturun.|N|
+|SOC Gözetim|Onaylanan ağlara bağlı tüm varlıklar tanımlanır ve kategorilere ayrılmıştır|SOC Gözetim, BU sahipleri, uygulama sahipleri, BT varlık sahipleri vb.|Risk temelinde varlık kategorisini ve özniteliklerini bulmak ve listelemek için merkezi varlık yönetim sistemi.|ServiceNow veya diğer varlıklar. <br><br>[Microsoft 365 Cihaz Envanteri](/microsoft-365/security/defender-endpoint/device-discovery)|Varlıkların yalnızca %70'i bulundu. Microsoft 365 Defender düzeltme izlemesi yalnızca bilinen varlıklar için geçerlidir|Microsoft 365 Defender %100 kapsama sahip olduğundan emin olmak için olgun varlık yaşam döngüsü yönetim hizmetleri|N|
+|Mühendislik & SecOps Ekipleri|Varlıklardaki yüksek etki ve kritik güvenlik açıkları ilkeye göre düzeltilir|SecOps mühendisleri, SOC analistleri: Güvenlik açığı & Uyumluluğu, Güvenlik Mühendisliği|Yüksek Risk ve Kritik Güvenlik Açıklarını kategorilere ayırmak için tanımlanan işlem|[Microsoft Defender Güvenlik Açığı Yönetimi Panoları](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)|Uç Nokta için Defender, microsoft tarafından önerilen etkinliğin düzeltme planı veya uygulaması olmayan yüksek etki, yüksek uyarı cihazları tanımladı|İlke başına 30 gün içinde düzeltme etkinliği gerektiğinde varlık sahiplerini bilgilendirmek için bir iş akışı ekleyin; Varlık sahiplerine düzeltme adımlarını bildirmek için bir bilet sistemi uygulayın.|N|
+|İzleme Ekipleri|Tehdit ve güvenlik açığı durumu şirket intranet portalı aracılığıyla bildirilir|Katman 2 SOC analisti|Varlıkların düzeltme ilerleme durumunu gösteren Microsoft 365 Defender otomatik olarak oluşturulan raporlar|[Güvenlik & Uyumluluk Merkezi'ndeki uyarılar](/microsoft-365/security/office-365-security/alerts) <p> Güvenli Puan izleme|Varlıkların tehdit ve güvenlik açığı durumuyla ilgili olarak varlık sahiplerine hiçbir görünüm veya pano raporu iletilmeyen.|Kuruluş için yüksek riskli ve kritik varlık güvenlik açığı düzeltme durumunu doldurmak için otomasyon betiği oluşturun.|N|
 
 Bu örnek kullanım örneklerinde test, SOC ekibinin gereksinimlerinde her ekibin sorumlulukları için temel olarak oluşturulmuş çeşitli boşluklar ortaya çıkardı. SOC ekibinin yeni veya mevcut SOC gereksinimleriyle Microsoft 365 Defender tümleştirmeye hazır olduğundan emin olmak için kullanım örneği denetim listesi gerektiği kadar kapsamlı olabilir. Bu yinelemeli bir süreç olacağından, kullanım örneği geliştirme süreci ve kullanım örneği çıktı içeriği doğal olarak SOC'nin runbook'larını öğrenilen derslerle güncelleştirmeye ve olgun etmeye yarar.
 

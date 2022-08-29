@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2d8200d93b3cab7acff237113a2c98d8571be1a7
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 78d6281f837575740d5fe8ad56a4d95feb5b2ce9
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020131"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343197"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>Cihaz kimliğine göre eksik KB'leri alma
 
@@ -105,5 +105,5 @@ Yanıtın bir örneği aşağıda verilmiştir.
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Risk Tabanlı Tehdit & Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Tehdit & Güvenlik Açığı yazılım envanteri](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender Güvenlik Açığı Yönetimi yazılım envanteri](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

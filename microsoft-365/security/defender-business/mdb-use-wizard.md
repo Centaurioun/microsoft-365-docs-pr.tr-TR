@@ -18,17 +18,16 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 1144326c626c565a1bb231ddccd998c2ca7a2195
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: e1bf29eb817649f2e736da2a80aed3b0108157a5
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300836"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319965"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'da kurulum sihirbazını kullanma
 
 İş için Defender, küçük ve orta ölçekli işletmelere zaman ve çaba kazandırmak için tasarlanmıştır. Örneğin, bir kurulum sihirbazıyla ilk kurulumu ve yapılandırmayı yapabilirsiniz. Kurulum sihirbazı, güvenlik ekibinize erişim verme, güvenlik ekibiniz için e-posta bildirimleri ayarlama ve şirketinizin Windows cihazlarını ekleme konusunda size yol gösterir.
-
 
 > [!TIP]
 > Kurulum sihirbazını kullanmak isteğe bağlıdır. Kurulum ve yapılandırma işlemi boyunca el ile çalışmayı seçebilirsiniz. Daha fazla bilgi için şu makalelere bakın:
@@ -64,18 +63,16 @@ Kurulum sihirbazı, İş için Defender'ı hızlı ve verimli bir şekilde ayarl
 
 2. **E-posta bildirimlerini ayarlayın**. Bu adımda, güvenlik ekibiniz için e-posta bildirimleri ayarlayabilirsiniz. Ardından, bir uyarı oluşturulduğunda veya yeni bir güvenlik açığı bulunduğunda, güvenlik ekibiniz masalarından uzakta olsalar bile bu uyarıyı kaçırmaz. [E-posta bildirimleri hakkında daha fazla bilgi edinin](mdb-email-notifications.md). 
 
-3. **Windows cihazlarını ekleme ve yapılandırma**. Bu adımda, şirketinizin Windows cihazlarını hızlı bir şekilde İş için Defender'a ekleyebilirsiniz. Cihazları hemen eklemek, bu cihazların ilk günden korunmasına yardımcı olur. 
+3. **Windows cihazlarını ekleme ve yapılandırma**. Bu adımda, şirketinizin Windows cihazlarını hızlı bir şekilde İş için Defender'a ekleyebilirsiniz. Cihazları hemen eklemek, bu cihazların ilk günden korunmasına yardımcı olur. [cihazları İş için Defender'a ekleme hakkında daha fazla bilgi edinin](mdb-onboard-devices.md).
 
-   - **Zaten Microsoft Intune kullanıyorsanız** ve şirketinizde Intune kayıtlı cihazlar varsa, Intune kullanmaya devam edebilirsiniz. 
    - **Intune kullanmıyorsanız** cihazları Microsoft 365 Defender portalına ekleyebilirsiniz. 
+   - **Zaten Microsoft Intune kullanıyorsanız** ve şirketinizde Intune kayıtlı cihazlar varsa, Intune kullanmaya devam edebilirsiniz. Bkz. [Microsoft Intune'de uç nokta güvenliğini yönetme](/mem/intune/protect/endpoint-security).
    
-   [cihazları İş için Defender'a ekleme hakkında daha fazla bilgi edinin](mdb-onboard-devices.md).
-   
-4. **Güvenlik ilkelerinizi yapılandırın**. İş için Defender, şirketinizin cihazlarına uygulanabilecek yeni nesil koruma ve güvenlik duvarı koruması için varsayılan güvenlik ilkelerini içerir. Bu varsayılan ilkeler önerilen ayarları kullanır ve cihazlarınız için güçlü koruma sağlamak üzere tasarlanmıştır. Kendi güvenlik ilkelerinizi de oluşturabilirsiniz. 
+4. **Güvenlik ilkelerinizi yapılandırın**. İş için Defender, şirketinizin cihazlarına uygulanabilecek yeni nesil koruma ve güvenlik duvarı koruması için varsayılan güvenlik ilkelerini içerir. Bu varsayılan ilkeler önerilen ayarları kullanır ve cihazlarınız için güçlü koruma sağlamak üzere tasarlanmıştır. Kendi güvenlik ilkelerinizi de oluşturabilirsiniz. Bkz. [Güvenlik ilkelerinizi ve ayarlarınızı görüntüleme ve düzenleme](mdb-configure-security-settings.md).
 
-   Cihazlarınızı ve güvenlik ilkelerinizi yönetmek için zaten Intune kullanıyorsanız Microsoft Endpoint Manager yönetim merkezini kullanmaya devam edebilirsiniz.
+   > [!NOTE]
+   > Cihazlarınızı ve güvenlik ilkelerinizi yönetmek için zaten Intune kullanıyorsanız Microsoft Endpoint Manager yönetim merkezini kullanmaya devam edebilirsiniz. Bkz. [Microsoft Intune'de uç nokta güvenliğini yönetme](/mem/intune/protect/endpoint-security).
 
-   [Güvenlik ilkelerinizi ve ayarlarınızı görüntüleyin ve düzenleyin](mdb-configure-security-settings.md).
 
 ## <a name="what-is-automatic-onboarding"></a>Otomatik ekleme nedir?
 

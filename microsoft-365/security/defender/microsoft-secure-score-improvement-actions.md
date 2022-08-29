@@ -1,7 +1,7 @@
 ---
-title: Microsoft Güvenli Puanı ile güvenlik nedenlerinizi değerlendirin
-description: Güvenlik portalında Microsoft Güvenli Puanınızı geliştirmek için nasıl Microsoft 365 Defender açıklar.
-keywords: microsoft güvenli puan, güvenli puan, office 365 güvenli puanı, microsoft güvenlik puanı, Microsoft 365 Defender portalı, geliştirme eylemleri
+title: Microsoft Güvenli Puanı aracılığıyla güvenlik duruşunuzu değerlendirme
+description: Microsoft 365 Defender portalında Microsoft Güvenli Puanınızı geliştirmek için nasıl işlem yapılacağını açıklar.
+keywords: microsoft güvenli puanı, güvenli puan, office 365 güvenli puanı, microsoft güvenlik puanı, Microsoft 365 Defender portalı, iyileştirme eylemleri
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -22,106 +22,106 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8991c2aca277d2a08e5f8924a5e5cb354df6dc1f
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: d09c64d7986a85bbc90469d7cd8cc20bdf0d367e
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569448"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328573"
 ---
-# <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft Güvenli Puanı ile güvenlik nedenlerinizi değerlendirin
+# <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft Güvenli Puanı ile güvenlik duruşunuzu değerlendirme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Güvenli Puanı, kuruluşun güvenlik mezralarının bir ölçümüdür ve yapılan daha fazla geliştirme eylemine işaret eden daha yüksek bir sayıdır. Microsoft 365 Defender https://security.microsoft.com/securescore [portalında bulunabilir](microsoft-365-defender.md).
+Microsoft Güvenli Puan, bir kuruluşun güvenlik duruşunun ölçümüdür ve daha yüksek bir sayı daha fazla geliştirme eylemi gerçekleştirildiğini gösterir. [Microsoft 365 Defender portalında](microsoft-365-defender.md) bulunabilirhttps://security.microsoft.com/securescore.
 
-Gereksinen bilgileri daha hızlı bu gerektirmenizi yardımcı olmak için, Microsoft geliştirme eylemleri gruplar halinde düzenlenmiştir:
+İhtiyacınız olan bilgileri daha hızlı bulmanıza yardımcı olmak için Microsoft geliştirme eylemleri gruplar halinde düzenlenir:
 
 - Kimlik (Azure Active Directory hesapları & rolleri)
-- Cihaz (Uç Nokta için Microsoft Defender [Için Microsoft Güvenli Puanı olarak bilinir](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-- Uygulamalar (e-posta ve bulut uygulamaları, Office 365 ve bulut Microsoft Defender for Cloud Apps)
+- Cihaz (Uç Nokta için Microsoft Defender, [Cihazlar için Microsoft Güvenli Puanı](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) olarak bilinir)
+- Uygulamalar (Office 365 ve Microsoft Defender for Cloud Apps dahil olmak üzere e-posta ve bulut uygulamaları)
 
 >[!NOTE]
->Microsoft Secure Score'ın son sürümüyle, Microsoft Secure Score'ın Kimlik Güvenliği Puanı ve kimlik puanıyla geçici olarak uyumsuz hale gelen geliştirilmiş bir puanlama modeli Graph API. [Ayrıntıları görüntüle](microsoft-secure-score-whats-new.md)
+>Microsoft Güvenli Puan'ın son sürümünde, Microsoft Güvenli Puan'ın Identity Secure Score ve Graph API ile geçici olarak uyumsuz hale gelen geliştirilmiş bir puanlama modeli yayınlandı. [Ayrıntıları görüntüle](microsoft-secure-score-whats-new.md)
 
-Microsoft Güvenli Puanı genel bakış sayfasında, bu gruplar arasında puanların nasıl bölün olduğunu ve hangi noktaların kullanılabilir olduğunu görebilirsiniz. Ayrıca, karşılaştırma karşılaştırmaları ile toplam puanın, güvenli puanınıza genel eğilimin ve puanınızı geliştirmek için alınacak öncelikleri alınmış geliştirme eylemlerinin hepsini kullanabilirsiniz.
+Microsoft Güvenli Puana genel bakış sayfasında, puanların bu gruplar arasında nasıl bölündüğünü ve hangi noktaların kullanılabilir olduğunu görüntüleyin. Ayrıca toplam puanın genel görünümünü, karşılaştırma karşılaştırmalarıyla güvenli puanınızın geçmiş eğilimini ve puanınızı geliştirmek için gerçekleştirilebilecek önceliklendirilmiş iyileştirme eylemlerini de alabilirsiniz.
 
-:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="Web sitesi portalında Güvenli Microsoft 365 Defender sayfası" lightbox="../../media/secure-score/secure-score-home-page.png":::
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="Microsoft 365 Defender portalındaki Güvenli Puan giriş sayfası" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
-## <a name="check-your-current-score"></a>Geçerli puanınızı denetleme
+## <a name="check-your-current-score"></a>Geçerli puanınızı denetleyin
 
-Geçerli puanınızı kontrol etmek için Microsoft Güvenli Puanı genel bakış sayfasına gidin ve Güvenli puanınız **kutucuğuna bakın**. Puanınız, toplam olası puanın üzerinde elde edilen puanlarla birlikte yüzde olarak gösterilir.
+Geçerli puanınızı kontrol etmek için Microsoft Güvenli Puana genel bakış sayfasına gidin ve **Güvenli puanınız** yazan kutucuğu arayın. Puanınız, toplam olası puandan elde ettiğiniz puan sayısıyla birlikte yüzde olarak gösterilir.
 
-Buna ek olarak, **puanının yanındaki** Dahil düğmesini seçerseniz, puanınız için farklı görünümler seçebilirsiniz. Bu farklı puan görünümleri, puan kutucuğunun ve puan çözümleme grafiğinin grafikte görüntülenir.
+Ayrıca, puanınızın yanındaki **Ekle** düğmesini seçerseniz, puanınızın farklı görünümlerini seçebilirsiniz. Puan kutucuğundaki grafikte ve puan döküm grafiğinde bu farklı puan görünümleri görüntülenir.
 
-Aşağıda, genel puanınızı görünümünüze ek olarak, genel not resmin tam görünümü elde etmek için şu puanlar yer gelir:
+Genel puanınızın daha kapsamlı bir resmini sunmak için genel puanınızı görünümünüzde ekleyebileceğiniz puanlar aşağıdadır:
 
-- **Planlı puan**: Planlanan eylemler tamamlandığında, planlanan puanı göster
-- **Geçerli lisans puanı**: Geçerli Microsoft lisansınız ile elde edilebilir puanı gösterme
-- **Ulaşılabilir puan**: Microsoft lisansları ve geçerli risk kabulü ile elde edilebilir puanı gösterme
+- **Planlı puan: Planlı** eylemler tamamlandığında öngörülen puanı göster
+- **Geçerli lisans puanı**: Geçerli Microsoft lisansınızla elde edilebilecek puanı göster
+- **Ulaşılabilir puan**: Microsoft lisanslarınız ve geçerli risk kabulü ile elde edilebilecek puanı gösterin
 
-Bu görünüm, tüm olası puan görünümlerini dahil ettiysanız görünümün görünümüne benzer:
+Olası tüm puan görünümlerini eklediyseniz bu görünüm şöyle görünür:
 
-:::image type="content" source="../../media/secure-score/secure-score-achievable.png" alt-text="Planlanan puan, geçerli lisans puanı ve portalda ulaşılabilir puanlar dahil güvenli Microsoft 365 Defender puanınız" lightbox="../../media/secure-score/secure-score-achievable.png":::
+:::image type="content" source="../../media/secure-score/secure-score-achievable.png" alt-text="Microsoft 365 Defender portalında planlı puan, geçerli lisans puanı ve ulaşılabilir puan dahil olmak üzere güvenli puanınız" lightbox="../../media/secure-score/secure-score-achievable.png":::
 
-## <a name="take-action-to-improve-your-score"></a>Puanınızı geliştirmek için harekete geç
+## <a name="take-action-to-improve-your-score"></a>Puanınızı geliştirmek için eyleme geçme
 
-Geliştirme **eylemleri sekmesi** , olası saldırı yüzeylerine karşı askıya alan güvenlik önerilerini listeler. Ayrıca durumlarını da (ele almak, planlanan, kabul edilen, üçüncü taraf aracılığıyla çözülen, alternatif risk azaltma yoluyla çözülen ve tamamlanan) içerir. Tüm geliştirme eylemlerini arayabilir, filtre yer ve grupabilirsiniz.  
+**İyileştirme eylemleri** sekmesi, olası saldırı yüzeylerini ele alan güvenlik önerilerini listeler. Ayrıca durumlarını da içerir (ele almak, planlanan, riski kabul edilen, üçüncü taraf aracılığıyla çözümlenen, alternatif risk azaltma yoluyla çözümlenen ve tamamlanan). Tüm iyileştirme eylemlerini arayabilir, filtreleyebilir ve gruplandırabilirsiniz.  
 
-### <a name="ranking"></a>Derecelendirme
+### <a name="ranking"></a>Sıralama
 
-Sıralama, ulaşacak puan sayısına, uygulama zorluğuna, kullanıcı etkisine ve karmaşıklığına dayalıdır. En yüksek dereceli geliştirme eylemleri, düşük zorlukla, kullanıcı etkisiyle ve karmaşıklıkla çok fazla sayıda puana sahiptir.
+Derecelendirme, elde edilecek puan sayısına, uygulama zorluğuna, kullanıcı etkisine ve karmaşıklık düzeyine bağlıdır. En yüksek dereceli iyileştirme eylemleri düşük zorluk, kullanıcı etkisi ve karmaşıklık ile çok sayıda puana sahiptir.
 
-### <a name="view-improvement-action-details"></a>Geliştirme eylem ayrıntılarını görüntüleme
+### <a name="view-improvement-action-details"></a>İyileştirme eylemi ayrıntılarını görüntüleme
 
-Belirli bir geliştirme eylemlerini seçin, tam sayfa açılır sayfası görüntülenir.  
+Belirli bir iyileştirme eylemini seçtiğinizde tam sayfa açılır öğesi görüntülenir.  
 
-:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="Microsoft 365 Defender portalında geliştirme eyleminin uçarak çıkış" lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
+:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="Microsoft 365 Defender portalında geliştirme eyleminin açılır öğesi" lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
 
-Eylemi tamamlamak için birkaç seçenek vardır:
+Eylemi tamamlamak için birkaç seçeneğiniz vardır:
 
-- Yapılandırma **ekranına Microsoft 365 Defender** değişikliği yapmak için Aşağıdaki ekranda yönet'i seçin. Bundan sonra, eylemin değer olduğu noktaları uçarak çıkışta görünür hale gelirsiniz. Puanların güncelleştirilsi genellikle yaklaşık 24 saat sürer.
+- Yapılandırma ekranına gitmek ve değişikliği yapmak için **Microsoft 365 Defender'de Yönet'i** seçin. Ardından, eylemin değer olduğu ve açılır öğede görünür olduğu noktaları elde edersiniz. Noktaların güncelleştirilmek genellikle yaklaşık 24 saat sürer.
 
-- Geliştirme **eyleminin** doğrudan bağlantısını kopyalamak için Paylaş'ı seçin. Bağlantıyı paylaşmak için e-posta, e-posta adresi veya posta Microsoft Teams da Microsoft Planner.
+- İyileştirme eyleminin doğrudan bağlantısını kopyalamak için **Paylaş'ı** seçin. Bağlantıyı paylaşmak için e-posta, Microsoft Teams veya Microsoft Planner gibi platformu da seçebilirsiniz.
 
-**İlerlemeyi** veya açıklama eklemek istediğiniz başka herhangi bir şeyi izlemek için Notlar ekleyin. Geliştirme eylemine kendi **etiketlerinizi** eklersiniz, bu etiketlere göre filtre uygulamanız gerekir.
+İlerleme durumunu veya yorum yapmak istediğiniz diğer her şeyi izlemek için **Notlar** ekleyin. İyileştirme eylemine kendi **etiketlerinizi** eklerseniz, bu etiketlere göre filtreleyebilirsiniz.
 
-### <a name="choose-an-improvement-action-status"></a>Geliştirme eylemi durumunu seçme
+### <a name="choose-an-improvement-action-status"></a>İyileştirme eylemi durumunu seçme
 
-Herhangi bir durumu seçin ve iyileştirme işlemiyle ilgili notları kaydedin.
+İyileştirme eylemine özgü durumları seçin ve notları kaydedin.
 
-- **Adres** - Geliştirme eyleminin gerekli olduğunu biliyor ve bunu gelecekte bir noktada ele ayacak şekilde planlamayı planlıyoruz. Bu durum, kısmen algılandı ancak tamamlanmadı olarak algılanan eylemler için de geçerlidir.
-- **Planlanan** - Geliştirme işlemini tamamlamak üzere beton planları vardır.
-- **Risk kabul edildi** - Güvenlik her zaman kullanılabilirlik ile dengelenmeli, ortamınız için her öneri işe yaramadı. Böyle bir durumda, riski veya kalan riski kabul etmeye seçebilir ve iyileştirme eylemlerini atmayacak şekilde devam etmeye devam edersiniz. Size puan verilmez, ancak iyileştirme eylemleri listesinde eylem artık görünmez. Bu eylemi geçmişte  görüntüde veya geri almak için, ne zaman olursa bunu geri alabilirsiniz.
-- **Üçüncü taraf aracılığıyla çözümlenen** **ve** Alternatif risk azaltma yoluyla çözümlenen - Geliştirme eylemi, üçüncü taraf bir uygulama veya yazılım ya da dahili araç tarafından zaten ele alındı. Eylemin değerinde puanlar kazanırsınız, bu yüzden puanınız genel güvenlik gerilenizi daha iyi yansıttır. Üçüncü taraf veya iç araç artık denetimi kapsıyorsa, başka bir durum seçebilirsiniz. Geliştirme eylemi bu durumlardan biri olarak işaretlenirse, Microsoft'un uygulamanın eksiksizliği konusunda hiçbir görünürlüğü olmayacaktır.
+- **Ele almak için** - İyileştirme eyleminin gerekli olduğunu fark eder ve bunu gelecekte bir noktada ele almayı planlıyorsunuz. Bu durum kısmen olarak algılanan ancak tam olarak tamamlanmamış eylemler için de geçerlidir.
+- **Planlı** - İyileştirme eylemini tamamlamak için somut planlar vardır.
+- **Risk kabul edildi** - Güvenlik her zaman kullanılabilirlik ile dengelenmelidir ve her öneri ortamınızda çalışmaz. Bu durumda, riski veya kalan riski kabul etmeyi ve iyileştirme eylemini gerçekleştirmemeyi seçebilirsiniz. Size herhangi bir puan verilmez, ancak eylem artık iyileştirme eylemleri listesinde görünmez. Bu eylemi geçmişte görüntüleyebilir veya istediğiniz zaman geri alabilirsiniz.
+- **Üçüncü taraf aracılığıyla çözümlendi** ve **Alternatif risk azaltma yoluyla çözümlendi** - İyileştirme eylemi bir üçüncü taraf uygulama veya yazılım ya da bir iç araç tarafından zaten ele alınmıştır. Eylemin değerindeki puanları kazanırsınız, böylece puanınız genel güvenlik duruşunuzu daha iyi yansıtır. Bir üçüncü taraf veya iç araç artık denetimi kapsamazsa, başka bir durum seçebilirsiniz. İyileştirme eylemi bu durumlardan biri olarak işaretlenirse Microsoft'un uygulamanın tamamında görünürlük elde etmiyeceğini unutmayın.
 
-#### <a name="threat--vulnerability-management-improvement-actions"></a>Tehdit & güvenlik açığı yönetimi geliştirme eylemleri
+#### <a name="microsoft-defender-vulnerability-management-improvement-actions"></a>Microsoft Defender Güvenlik Açığı Yönetimi iyileştirme eylemleri
 
-"Cihaz" kategorisindeki geliştirme eylemleri için durumları seçesiniz. Bunun yerine, işlem yapmak için gereken güvenlik [Tehdit ve Güvenlik Açığı Yönetimi ilgili güvenlik](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) Microsoft 365 Defender yönlendirildiniz. Seçtiğiniz özel durum ve gerekçelendirme, bu portala özeldir. Microsoft Güvenli Puanı portalında sunumz.
+"Cihaz" kategorisindeki iyileştirme eylemleri için durumları seçemezsiniz. Bunun yerine, eylemde bulunabilmek için [Microsoft 365 Defender ilişkili Microsoft Defender Güvenlik Açığı Yönetimi güvenlik önerisine](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) yönlendirilirsiniz. Seçtiğiniz özel durum ve yazdığınız gerekçe bu portala özgü olacaktır. Microsoft Güvenli Puan portalında sunulmaz.
 
-#### <a name="completed-improvement-actions"></a>Tamamlanmış geliştirme eylemleri
+#### <a name="completed-improvement-actions"></a>Tamamlanan iyileştirme eylemleri
 
-Geliştirme eyleminin tüm olası noktaları sağlandıktan sonra geliştirme eylemleri "tamamlandı" durumuna sahip olur. Tamamlanan geliştirme eylemleri Microsoft verileri olsa da onaylanır ve durumu değiştiremezsiniz.
+İyileştirme eylemi için tüm olası noktalar elde edildikten sonra iyileştirme eylemleri "tamamlandı" durumuna sahiptir. Tamamlanan iyileştirme eylemleri Microsoft verilerine rağmen onaylanır ve durumu değiştiremezsiniz.
 
-### <a name="assess-information-and-review-user-impact"></a>Bilgileri değerlendirin ve kullanıcının etkisini gözden geçirme
+### <a name="assess-information-and-review-user-impact"></a>Bilgileri değerlendirme ve kullanıcı etkisini gözden geçirme
 
-Bir bakışta **adlı bölüm size** kategoriyi, bu kategoriyi, bu kategoriyi ve ürünü koruma altında bulunduracak.
+**Bir bakışta** adlı bölüm size kategoriyi, koruyabileceği saldırıları ve ürünü söyler.
 
-**Geliştirme** eyleminin işlemde yer alan kullanıcılar ve etkilenen kullanıcılar, etkilenecek olan kişiler de kullanıcı üzerindeki  etkisidir.
+**Kullanıcı etkisi** , iyileştirme eylemi gerçekleştirilirse kullanıcıların karşılaşacağı etkidir ve **etkilenen kullanıcılar** etkilenecek kişilerdir.
 
-### <a name="implement-the-improvement-action"></a>Geliştirme eylemlerini uygulama
+### <a name="implement-the-improvement-action"></a>İyileştirme eylemini uygulama
 
-Uygulama **bölümünde** önkoşullar, geliştirme eylemlerini tamamlamak için adım adım sonraki adımlar, geliştirme eyleminin geçerli uygulama durumu ve daha fazla bilgi içeren diğer bağlantılar yer almaktadır.
+**Uygulama** bölümünde önkoşullar, iyileştirme eylemini tamamlamak için adım adım sonraki adımlar, iyileştirme eyleminin geçerli uygulama durumu ve daha fazla bilgi edinin.
 
-Önkoşullar, geliştirme işlemi ele alınmadan önce gerekli lisansları veya tamamlanması gereken eylemleri içerir. Geliştirme eylemini tamamlamak için lisansınıza yeterli lisansların olduğundan ve bu lisansların gerekli kullanıcılara uygulandığından emin olun.  
+Önkoşullar, iyileştirme eylemi ele almadan önce tamamlanması gereken lisansları veya eylemleri içerir. İyileştirme eylemini tamamlamak için lisansınızda yeterli yer olduğundan ve bu lisansların gerekli kullanıcılara uygulandığından emin olun.  
 
-## <a name="we-want-to-hear-from-you"></a>Bize haber almak için
+## <a name="we-want-to-hear-from-you"></a>Sizden haber almak istiyoruz
 
-Herhangi bir sorun varsa, Güvenlik, Gizlilik ve Uyumluluk topluluğuna [göndererek & sağlayın](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Topluluğu izliyoruz ve yardım sağacağız.
+Herhangi bir sorununuz varsa [Güvenlik, Gizlilik & Uyumluluk](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) topluluğuna göndererek bize bildirin. Topluluğu izliyoruz ve yardım sağlayacağız.
 
 ## <a name="related-resources"></a>İlgili kaynaklar
 
 - [Microsoft Güvenli Puanına genel bakış](microsoft-secure-score.md)
 - [Microsoft Güvenli Puan geçmişinizi izleme ve hedefleri karşılama](microsoft-secure-score-history-metrics-trends.md)
 - [Yapılacak yenilikler](microsoft-secure-score-whats-coming.md)
-- [Yeni gelenler](microsoft-secure-score-whats-new.md)
+- [Yenilikler](microsoft-secure-score-whats-new.md)

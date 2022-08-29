@@ -10,20 +10,24 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: none
-ms.date: 08/09/2022
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 8587b1fe90f003035d02afb7cf34cd9773e0d3ca
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 55e429351a45b461d8a55dfcebe56a17cf6ef35e
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300355"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67320338"
 ---
 # <a name="how-to-get-microsoft-defender-for-business-servers-preview"></a>İş için Microsoft Defender sunucuları nasıl alınır (önizleme)
+
+İş için Microsoft Defender sunucuları (önizleme), Windows Server veya Linux Server çalıştıran bir cihazı İş için Defender'a veya Microsoft 365 İş Ekstra eklemenizi sağlar. İş için Microsoft Defender sunucuları lisansı genel kullanıma sunulduğunda, her sunucu örneği için bir lisans gerekir.
+
+İş için Microsoft Defender sunucularını alma (önizleme):
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın. 
 

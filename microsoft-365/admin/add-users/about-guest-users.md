@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Konukların davet edildikleri Teams'de toplantılara katılabilmesi, belgeleri görüntüleyebilmesi ve sohbet edebilmesi için Microsoft 365 yönetim merkezi Konuk kullanıcılar listesini nasıl dolduracağınızı öğrenin.
-ms.openlocfilehash: 56bef3039a0e00cc0f0ae6914eac11dca3b06713
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 724925acbcbbda9cbe1b5d272caac60357c507ce
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67274649"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319571"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi'deki konuk kullanıcılar
 
@@ -53,19 +53,19 @@ Bu görevi gerçekleştirmek için genel yönetici olmanız gerekir.
 ## <a name="understanding-guest-accounts-in-microsoft-365"></a>Microsoft 365'te konuk hesaplarını anlama
 
 Fazla paylaşımı engellerken dosyaları ve belgeleri doğru kişilerle kolayca paylaşabilmek için planlama gerekir. Aşağıdaki kaynaklar, Microsoft 365'te güvenli bir konuk paylaşım ortamı oluşturmanıza yardımcı olmak için daha fazla arka plan sağlar.
-- Dış işbirliğini planlayın
-- Güvenli bir konuk paylaşım ortamı oluşturma
-- Microsoft 365'te Teams ile güvenli dosya ve belge paylaşımı ve işbirliği ayarlama
-- Microsoft Teams'de konuk erişimi
+- [Dış işbirliğini planlayın](../../solutions/plan-external-collaboration.md)
+- [Güvenli bir konuk paylaşım ortamı oluşturma](../../solutions/create-secure-guest-sharing-environment.md)
+- [Microsoft 365'te Teams ile güvenli dosya ve belge paylaşımı ve işbirliği ayarlama](../../solutions/setup-secure-collaboration-with-teams.md)
+- [Microsoft Teams'de konuk erişimi](/microsoftteams/guest-access)
 
 Microsoft Teams ve SharePoint'e ek olarak, Microsoft 365 diğer uygulamalarda konuk erişimini de destekler. Aşağıdaki Microsoft 365 ürünleri konuk erişimini destekler.
 
-- Power Apps (Tuval uygulamaları) - Tuval uygulamasını konuk kullanıcılarla paylaşın.
-- Listeler - OneDrive, SharePoint ve Listelerde dış veya konuk paylaşımı.
-- OneDrive - OneDrive, SharePoint ve Listelerde dış veya konuk paylaşımı.
-- Planner : Web ve mobil platformlar için geçerlidir. Microsoft Planner'de konuk erişimi.
-- Microsoft 365 grupları - Microsoft 365 gruplarında konuk erişimini yönetin.
-- Yammer - Yammer ağlarında yerel moda hizalanmamış dış gruplarla çalışma.
+- Power Apps (Tuval uygulamaları) - [Tuval uygulamasını konuk kullanıcılarla paylaşın](/power-apps/maker/canvas-apps/share-app-guests).
+- Listeler - [OneDrive, SharePoint ve Listelerde dış veya konuk paylaşımı](https://support.microsoft.com/office/external-or-guest-sharing-in-onedrive-sharepoint-and-lists-7aa070b8-d094-4921-9dd9-86392f2a79e7).
+- OneDrive - [OneDrive, SharePoint ve Listelerde dış veya konuk paylaşımı](https://support.microsoft.com/office/external-or-guest-sharing-in-onedrive-sharepoint-and-lists-7aa070b8-d094-4921-9dd9-86392f2a79e7).
+- Planner : Web ve mobil platformlar için geçerlidir. [Microsoft Planner'de konuk erişimi](https://support.microsoft.com/office/guest-access-in-microsoft-planner-cc5d7f96-dced-4da4-ab62-08c72d9759c6).
+- Microsoft 365 grupları - [Microsoft 365 gruplarında konuk erişimini yönetin](../create-groups/manage-guest-access-in-groups.md).
+- Yammer - [Yammer ağlarında yerel moda hizalanmamış dış gruplarla çalışma](/yammer/work-with-external-users/create-and-manage-external-groups).
 
 Microsoft Word ve Excel gibi Microsoft Office uygulamaları için konuk erişimi, çıkış dosyasının konumu (örneğin, Microsoft SharePoint, Teams ve OneDrive) tarafından denetlenır.
 
@@ -79,6 +79,6 @@ Birden çok konuğu kuruluşunuzla işbirliği yapmaya davet etmek için bkz. [T
 
 ## <a name="related-content"></a>İlgili içerik
 
-[Microsoft 365 gruplarında konuk erişimini yönetme](../create-groups/manage-guest-access-in-groups.md)\
-[Konukların belirli bir Microsoft 365 grubuna veya Microsoft Teams'e eklenmesini engelleme](../../solutions/per-group-guest-access.md)\
+[Microsoft 365 gruplarında konuk erişimini yönetme](../create-groups/manage-guest-access-in-groups.md) (makale)\
+[Konukların belirli bir Microsoft 365 grubuna veya Microsoft Teams'e eklenmesini engelleme](../../solutions/per-group-guest-access.md) (makale)\
 [Microsoft 365 yönetim merkezi kuruluş değiştiricisi](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-organization-switcher-in-the-microsoft-365-admin-center/ba-p/1165543) (makale)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 saklamanın SharePoint ve OneDrive'da nasıl çalıştığını, kuruluşunuz için verilerin otomatik olarak elde tutulmasını veya silinmesini yönetmek için bekletme ilkelerini ve bekletme etiketlerini kullanmayı öğrenin.
-ms.openlocfilehash: 54e1b1493eecd763853e4b3968ce744b21d4eebf
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 3e21d720b2d4afa70a83011b1e2486151f6c3cd2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112515"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326441"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint ve OneDrive için bekletme hakkında bilgi edinin
 
@@ -133,6 +133,8 @@ Bekletme etiketi özgün dosyaya uygulanmadığından etiketlenen dosya hiçbir 
 ![SharePoint ve OneDrive'da depolanan bulut eklerinde bekletme nasıl çalışır?](../media/retention-diagram-of-retention-flow-cloud-attachments.png)
 
 Koruma Bekletme kitaplığında depolanan kopya genellikle paylaşılmakta olan bulut ekinden bir saat içinde oluşturulur.
+
+Kopya oluşturulup etiketlenmeden önce özgün dosyanın kullanıcılar tarafından silinmesini engellemek için, otomatik etiketleme ilkesine dahil edilen konumlardaki dosyalar silinirse otomatik olarak Koruma Bekletme kitaplığına kopyalanır. Bu dosyalar bir günlük geçici saklama süresine sahiptir ve ardından bu sayfada açıklanan standart temizleme işlemini izler. Özgün dosya silindiğinde, bulut eklerini korumak için kopya dosyanın bu sürümünü kullanır. Koruma Bekletme kitaplığında silinen dosyaların otomatik ve geçici olarak saklanması, bulut ekleri için otomatik etiketleme ilkelerine özeldir.
 
 ## <a name="how-retention-works-with-onenote-content"></a>OneNote içeriğiyle bekletme nasıl çalışır?
 

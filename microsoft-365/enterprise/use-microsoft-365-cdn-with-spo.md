@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: SharePoint Online varlıklarınızın teslimini hızlandırmak için Office 365 Content Delivery Network'ün (CDN) nasıl kullanılacağını öğrenin.
-ms.openlocfilehash: 19a6ef51c73340c9f048ffa60208a5216a1959db
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: ca3d6c1158c93c9f897540e4b73565fd5a518e2a
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492523"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336210"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online ile Office 365 Content Delivery Network'i (CDN) kullanma
 
@@ -163,7 +163,6 @@ Aksini belirtmediğiniz sürece Office 365 Office 365 CDN'yi etkinleştirdiğini
 
 Varsayılan özel CDN kaynakları:
 
-+ \*/userphoto.aspx
 + \*/siteassets
 
 Varsayılan genel CDN kaynakları:
@@ -997,7 +996,7 @@ Ayrıca, tarayıcınızın geliştirici araçlarını kullanarak sayfadaki her b
 > [!NOTE]
 > Varlıklarınızı sharepoint sayfasından işleme dışında test etmek için Fiddler gibi bir ağ aracı kullanıyorsanız, "Başvuran: `https://yourdomain.sharepoint.com`" başvuru başlığını, URL'nin SharePoint Online kiracınızın kök URL'si olduğu GET isteğine el ile eklemeniz gerekir.
 
-SharePoint Online'dan gelen bir başvuru sahibi olması gerektiğinden CDN URL'lerini doğrudan bir web tarayıcısında test edemezsiniz. Ancak, CDN varlık URL'sini bir SharePoint sayfasına ekler ve ardından sayfayı tarayıcıda açarsanız, cdn varlığının sayfada işlendiğini görürsünüz.
+SharePoint Online'dan gelen bir başvuran olması gerektiğinden CDN URL'lerini doğrudan bir web tarayıcısında test edemezsiniz. Ancak, CDN varlık URL'sini bir SharePoint sayfasına ekler ve ardından sayfayı tarayıcıda açarsanız, cdn varlığının sayfada işlendiğini görürsünüz.
 
 Microsoft Edge tarayıcısında geliştirici araçlarını kullanma hakkında daha fazla bilgi için bkz. [Microsoft Edge Geliştirici Araçları](/microsoft-edge/devtools-guide).
 

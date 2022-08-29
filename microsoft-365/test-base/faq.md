@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: c7fd01b95d461332baaf4eac90aee4715da3e55e
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 5d84ea6e803fba5d5f355fecaa4f6ac6776d3f60
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953040"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315482"
 ---
 # <a name="test-base-faq"></a>Test Temeli SSS
 
@@ -37,7 +37,7 @@ Daha fazla bilgi için ekleme kullanıcı kılavuzuna bakın veya yardım ve dah
 
 Test Temeli için oluşturulan paketlerde şu test betikleri bulunur: yükleme, başlatma, kapatma ve isteğe bağlı olarak kaldırma betiği.
 
-İlk çalıştırma (OOB) testleri, Windows derlemeleri karşılaştırmak için uygulamanızda standart telemetri sağlar.
+İlk çalıştırma (OOB) testleri, Windows derlemeleriyle karşılaştırmak için uygulamanızda standart telemetri sağlar.
 
 **S: İlk çalıştırma testlerinin dışında test gönderebilir miyiz (yükleme, başlatma, kapatma, test betiklerini kaldırma)?**
 
@@ -86,11 +86,11 @@ Ayrıca gerekli çerçevenin bağımlı ikili dosyalarını sağlamanız (karş�
 
 **S: Hangi Windows sürümlerini destekliyorsunuz?**
 
-**A:** Şu anda Windows 10 istemcileri, Windows Server 2016, Windows Server 2016 Core sürümü, Windows Server 2019 ve Windows Server 2019 Core sürümünü destekliyoruz.
+**A:** Şu anda Windows 10 istemcilerini, Windows Server 2016 Windows Server 2016 Core sürümünü, Windows Server 2019 ve Windows Server 2019 Core sürümünü destekliyoruz.
 
 **S: Güvenlik Güncelleştirmesi testleri ile Özellik Güncelleştirmesi testleri arasındaki fark nedir?**
 
-**A:** Güvenlik güncelleştirme testleri için, kullanıcılarımızın her zaman güvenli ve korumalı kalmasına odaklanan **<ins>Windows'da aylık yayın öncesi güvenlik güncelleştirmelerini</ins>** test ederiz. Özellik güncelleştirme testleri için, Windows yeni özellikler ve özellikler sunan **<ins>iki yıllık yayın öncesi özellik güncelleştirmelerini</ins>** test ediyoruz.
+**A:** Güvenlik güncelleştirmesi testleri için, kullanıcılarımızın her zaman güvenli ve korumalı kalmasına odaklanan Windows'ta **<ins>aylık yayın öncesi güvenlik güncelleştirmelerine</ins>** karşı test ederiz. Özellik güncelleştirme testleri için, Windows'ta yeni özellikler ve özellikler sunan **<ins>iki yıllık yayın öncesi özellik güncelleştirmelerini</ins>** test ediyoruz.
 
 ## <a name="debugging-options"></a>Hata ayıklama seçenekleri
 
@@ -116,7 +116,7 @@ Sorunları çözmek için müşterilerimizle her zaman ortak bir düzeltmede yak
 
 **A:** Şu anda şirket içi sunucular için destek sağlanmıyor. Ancak, sunucu HTTP uç noktasını açığa çıkartıyorsa, İnternet üzerinden bu uç noktaya bağlanabiliriz.
 
-**S: VM'leri Who barındırıyor?**
+**S: VM'leri kim barındırıyor?**
 
 **A:** Microsoft, bu hizmet için VM'yi sağlar ve bunun yükünü müşteriden alır.
 

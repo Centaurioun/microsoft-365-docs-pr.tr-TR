@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8c69e92390e6ed6515be6f399703124ece99cc39
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 72535a88f6718724a4d87774d393a4ef0c6955a8
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664028"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344469"
 ---
 # <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>Adım 1. Microsoft 365 Defender işlemlerin hazır olma durumunu planlama
 
@@ -50,7 +50,7 @@ SOC, güvenlik olaylarına ve olaylarına karşı savunmanın ön hattıdır. Bi
 
 ## <a name="centralize-monitoring-and-logging-of-your-organizations-security-sources"></a>Kuruluşunuzun güvenlik kaynaklarının izlenmesini ve günlüğe kaydedilmesini merkezileştirme
 
-SOC ekibinin temel işlevi genellikle güvenlik duvarları, izinsiz giriş önleme sistemleri, veri kaybı önleme sistemleri, Tehdit ve Güvenlik Açığı Yönetimi sistemleri ve kimlik sistemleri gibi tüm güvenlik cihazlarının doğru çalıştığından ve izlendiğinden emin olmaktır. SOC ekipleri kimlik, DevOps, bulut, uygulama, veri bilimi ve diğer iş ekipleriyle birlikte çalışarak güvenlik bilgilerinin analizinin merkezi ve güvenli olmasını sağlayacaktır. Ayrıca SOC ekibi, verilerin günlüklerini ayrıştırma ve normalleştirmeyi de içerebilecek, kullanılabilir ve okunabilir biçimlerde tutmakla sorumludur.
+SOC ekibinin temel işlevi genellikle güvenlik duvarları, izinsiz giriş önleme sistemleri, veri kaybı önleme sistemleri, güvenlik açığı yönetim sistemleri ve kimlik sistemleri gibi tüm güvenlik cihazlarının doğru çalıştığından ve izlendiğinden emin olmaktır. SOC ekipleri, güvenlik bilgilerinin analizinin merkezi ve güvenli olduğundan emin olmak için kimlik, DevOps, bulut, uygulama, veri bilimi ve diğer iş ekipleri gibi daha geniş ağ işlemleriyle çalışacaktır. Ayrıca SOC ekibi, verilerin günlüklerini ayrıştırma ve normalleştirmeyi de içerebilecek, kullanılabilir ve okunabilir biçimlerde tutmakla sorumludur.
 
 ## <a name="establish-red-blue-and-purple-team-operational-readiness"></a>Kırmızı, Mavi ve Mor takım işletime hazır olma durumunu belirleme
 

@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 6da9ec9f0d59d04d61d4a957f5a914b06b140fac
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: ecc62eb22f60a13d249374f1d00896ad0e1693ea
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099227"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328727"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender'da uyarıları araştırma
 
@@ -150,7 +150,7 @@ Uyarıyı yönetmek için uyarı sayfasının özet ayrıntıları bölümünde 
      - **Ayarlanmadı** (varsayılan).
      - Bir tehdit türüyle **gerçek pozitif**. Gerçek bir tehdidi doğru şekilde gösteren uyarılar için bu sınıflandırmayı kullanın. Bu tehdit türünü belirterek güvenlik ekibiniz tehdit desenlerini görür ve kuruluşunuzu onlardan korumak için harekete geçebilirsiniz.
      - Bir etkinlik türüyle **bilgilendirici, beklenen** etkinlik. Teknik olarak doğru olan ancak normal davranışı veya sanal tehdit etkinliğini temsil eden uyarılar için bu seçeneği kullanın. Genellikle bu uyarıları yoksaymak istersiniz ancak gelecekte etkinliklerin gerçek saldırganlar veya kötü amaçlı yazılımlar tarafından tetiklendiği benzer etkinlikler için beklemeniz gerekir. Güvenlik testlerine, kırmızı ekip etkinliğine ve güvenilen uygulama ve kullanıcılardan beklenen olağan dışı davranışlara yönelik uyarıları sınıflandırmak için bu kategorideki seçenekleri kullanın.
-     - **Kötü** amaçlı bir etkinlik olmadığında bile oluşturulan uyarı türleri veya yanlış alarm için hatalı pozitif. Yanlışlıkla normal olaylar veya etkinlikler olarak tanımlanan uyarıları kötü amaçlı veya şüpheli olarak sınıflandırmak için bu kategorideki seçenekleri kullanın. Gerçek tehditleri yakalamak için de yararlı olabilecek 'Bilgilendirici, beklenen etkinlik' uyarılarından farklı olarak, genellikle bu uyarıları yeniden görmek istemezsiniz. Uyarıları hatalı pozitif olarak sınıflandırmak Microsoft 365 Defender algılama kalitesini artırmaya yardımcı olur.
+     - **Kötü** amaçlı bir etkinlik olmadığında veya yanlış alarm için bile oluşturulan uyarı türleri için hatalı pozitif. Yanlışlıkla normal olaylar veya etkinlikler olarak tanımlanan uyarıları kötü amaçlı veya şüpheli olarak sınıflandırmak için bu kategorideki seçenekleri kullanın. Gerçek tehditleri yakalamak için de yararlı olabilecek 'Bilgilendirici, beklenen etkinlik' uyarılarından farklı olarak, genellikle bu uyarıları yeniden görmek istemezsiniz. Uyarıları hatalı pozitif olarak sınıflandırmak Microsoft 365 Defender algılama kalitesini artırmaya yardımcı olur.
 - Uyarıyla ilgili bir açıklama.
 
 >[!NOTE]
@@ -201,6 +201,9 @@ Uyarılar için bir gizleme kuralı oluşturmak için:
     Ancak kuralı kural koşullarına uyan herhangi bir uyarı türüne uygulamak için **IOC koşullarına göre herhangi bir uyarı türü'nü** seçin.
  
     GÇC'ler dosyalar, işlemler, zamanlanmış görevler ve uyarıyı tetikleyen diğer kanıt türleri gibi göstergelerdir.
+    
+    > [!NOTE]
+    > Artık "özel algılama" kaynağı tarafından tetiklenen bir uyarıyı gizleyemezsiniz. Bu uyarı için bir gizleme kuralı oluşturamazsınız.
      
 3. **IOC'ler** bölümünde, uyarıya hangi 'kanıt' neden olursa olsun uyarıyı engellemek için **Herhangi bir IOC'yi** seçin. 
 
@@ -218,9 +221,9 @@ Uyarılar için bir gizleme kuralı oluşturmak için:
 
     3. Bu 'kanıtın' özelliklerini gereksinimlerinize göre düzenleyebilir ve/veya silebilirsiniz (desteklendiğinde joker karakterler kullanarak).
 
-    4. Dosyalar ve işlemler dışında AMSI betiği, WMI olayı ve zamanlanmış görevler, kanıt türleri açılan listesinden seçebileceğiniz yeni eklenen kanıt türlerinden bazılarıdır.
+    4. Dosya ve işlemler dışında Kötü Amaçlı Yazılımdan Koruma Tarama Arabirimi (AMSI) betiği, Windows Yönetim Araçları (WMI) olayı ve zamanlanmış görevler, kanıt türleri açılan listesinden seçebileceğiniz yeni eklenen kanıt türlerinden bazılarıdır.
     :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="Diğer kanıt türlerinin ekran görüntüsü." lightbox="../../media/investigate-alerts/other-evidence-types.png":::
-
+    
     5. Başka bir IOC eklemek için **Filtre ekle'ye** tıklayın. 
     > [!NOTE]
     > Herhangi bir uyarı türünü engellemek için kural koşuluna en az bir IOC eklenmesi gerekir.
@@ -248,8 +251,11 @@ Gizleme koşullarında seçilen GÇ'ler varsayılan olarak seçilir.
     :::image type="content" source="../../media/investigate-alerts/suppression-2-choose-iocs.png" lightbox="../../media/investigate-alerts/suppression-2-choose-iocs.png" alt-text="Başarılı gizleme kuralı oluşturma işleminin ekran görüntüsü. ":::
 
 8.  Yeni gizleme uyarısı işlevselliği varsayılan olarak kullanılabilir. <br> Ancak, Microsoft 365 Defender portalında **Ayarlar > Uç Noktalar > Uyarı gizleme'ye** gidip **Yeni gizleme kuralları oluşturma etkin iki durumlu** düğmesini kapatarak önceki deneyime dönebilirsiniz. 
+
  
     :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="Gizleme kuralı oluşturma özelliğini açmak/kapatmak için iki durumlu düğmenin ekran görüntüsü.":::
+    > [!NOTE]
+    > Yakında yalnızca yeni uyarı engelleme deneyimi kullanıma sunulacaktır. Önceki deneyime geri dönemeyeceksiniz.
 
 9.  **Mevcut kuralları düzenleyin:** <br> Microsoft Defender portalında ilgili kuralı seçip Kuralı **düzenle'ye** tıklayarak istediğiniz zaman kural koşullarını ve yeni veya mevcut kuralların kapsamını ekleyebilir veya değiştirebilirsiniz.    
     Mevcut kuralları düzenlemek için **Yeni gizleme kuralları oluşturma etkin iki durumlu** düğmesinin etkinleştirildiğinden emin olun.         

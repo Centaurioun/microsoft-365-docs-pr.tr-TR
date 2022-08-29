@@ -1,7 +1,7 @@
 ---
-title: Gelişmiş av şemasında DeviceTvmSecureConfigurationAssessment tablosu
-description: Gelişmiş av şemasının DeviceTvmSecureConfigurationAssessment tablosunda güvenlik değerlendirme olayları hakkında bilgi edinebilirsiniz. Bu olaylar cihaz bilgileri, güvenlik yapılandırma ayrıntıları, etki ve uyumluluk bilgilerini sağlar.
-keywords: gelişmiş av, tehdit avı, siber tehdit avı, Microsoft 365 Defender, Microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, tehdit & güvenlik açığı yönetimi, TVM, cihaz yönetimi, güvenlik yapılandırması, DeviceTvmSecureConfigurationAssessment
+title: Gelişmiş tehdit avcılığı şemasında DeviceTvmSecureConfigurationAssessment tablosu
+description: Gelişmiş tehdit avcılığı şemasının DeviceTvmSecureConfigurationAssessment tablosunda güvenlik değerlendirmesi olayları hakkında bilgi edinin. Bu olaylar cihaz bilgileri, güvenlik yapılandırma ayrıntıları, etki ve uyumluluk bilgileri sağlar.
+keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, tehdit & güvenlik açığı yönetimi, TVM, cihaz yönetimi, güvenlik yapılandırması, DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,45 +18,44 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 43f44458cde7d466d1097034e7bcc9d0e3072745
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: b3d5fdfb79d814855f119abb42593a6066d6019a
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63018895"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329453"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 - Uç Nokta için Microsoft Defender
 
+Tablodaki `DeviceTvmSecureConfigurationAssessment` her satır, [Microsoft Defender Güvenlik Açığı Yönetimi](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) belirli bir güvenlik yapılandırması için bir değerlendirme olayı içerir. En son değerlendirme sonuçlarını denetlemek ve cihazların uyumlu olup olmadığını belirlemek için bu başvuruyu kullanın.
 
-Tablodaki her satırda `DeviceTvmSecureConfigurationAssessment` , Tehdit Veya Güvenlik Açığı Yönetimi'nin belirli bir güvenlik [& etkinliği yer alır](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). En son değerlendirme sonuçlarını kontrol etmek ve cihazların uyumlu olup olmadığını belirlemek için bu başvuruya bakın.
+Bu tabloyu [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) tablosuyla `ConfigurationId` birleştirerek yapılandırma değerlendirme sonuçlarında tablonun sütunundaki yapılandırmanın `ConfigurationDescription` `DeviceTvmSecureConfigurationAssessmentKB` metin açıklamasını görüntüleyebilirsiniz.
 
-Bu tabloyu [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) `ConfigurationId` tablosuyla birleşebilirsiniz; böylelikle, örneğin, `ConfigurationDescription` `DeviceTvmSecureConfigurationAssessmentKB` tablonun sütunundaki yapılandırmanın metin açıklamasını yapılandırma değerlendirme sonuçlarında görüntüebilirsiniz.
-
-Gelişmiş av şemasında yer alan diğer tablolar hakkında bilgi için bkz. [gelişmiş av başvurusu](advanced-hunting-schema-tables.md).
+Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi için gelişmiş [avcılık başvurusuna](advanced-hunting-schema-tables.md) bakın.
 
 | Sütun adı | Veri türü | Açıklama |
 |-------------|-----------|-------------|
-| `DeviceId` | `string` | Hizmette cihaz için benzersiz tanımlayıcı |
+| `DeviceId` | `string` | Hizmetteki cihaz için benzersiz tanımlayıcı |
 | `DeviceName` | `string` | Cihazın tam etki alanı adı (FQDN) |
-| `OSPlatform` | `string` | Cihazda çalışan işletim sisteminin platformu. Windows 11, Windows 10 ve Windows 7 gibi, aynı aile içindeki çeşitlemeler de dahil olmak üzere belirli işletim sistemlerini gösterir.|
-| `Timestamp` | `datetime` | Kaydın oluşturulma tarihi ve saati |
+| `OSPlatform` | `string` | Cihazda çalışan işletim sisteminin platformu. Windows 11, Windows 10 ve Windows 7 gibi aynı aile içindeki varyasyonlar da dahil olmak üzere belirli işletim sistemlerini gösterir.|
+| `Timestamp` | `datetime` | Kaydın oluşturulduğu tarih ve saat |
 | `ConfigurationId` | `string` | Belirli bir yapılandırma için benzersiz tanımlayıcı |
-| `ConfigurationCategory` | `string` | Yapılandırmanın ait olduğu kategori veya gruplama: Uygulama, işletim sistemi, Ağ, Hesaplar, Güvenlik denetimleri |
-| `ConfigurationSubcategory` | `string` | Yapılandırmanın ait olduğu alt kategori veya alt grup. Çoğu durumda, dize belirli özellikleri veya özellikleri açıklar. |
-| `ConfigurationImpact` | `string` | Yapılandırmanın etkisini genel yapılandırma puanına göre derecelendirildi (1-10) |
-| `IsCompliant` | `boolean` | Yapılandırmanın veya ilkenin düzgün yapılandırıldığından emin olun |
-| `IsApplicable` | `boolean` | Yapılandırmanın veya ilkenin cihaz için geçerli olup olmadığını gösterir |
+| `ConfigurationCategory` | `string` | Yapılandırmanın ait olduğu kategori veya gruplandırma: Uygulama, İşletim Sistemi, Ağ, Hesaplar, Güvenlik denetimleri |
+| `ConfigurationSubcategory` | `string` | Yapılandırmanın ait olduğu alt kategori veya alt gruplama. Çoğu durumda, dize belirli özellikleri veya özellikleri açıklar. |
+| `ConfigurationImpact` | `string` | Yapılandırmanın genel yapılandırma puanına etkisi derecelendirilmiştir (1-10) |
+| `IsCompliant` | `boolean` | Yapılandırmanın veya ilkenin düzgün yapılandırılıp yapılandırılmadığını gösterir |
+| `IsApplicable` | `boolean` | Yapılandırmanın veya ilkenin cihaza uygulanıp uygulanmayacağını gösterir |
 | `Context` | `string` | Yapılandırma veya ilke hakkında ek bağlamsal bilgiler |
-| `IsExpectedUserImpact` | `boolean` | Yapılandırma veya ilke uygulandığında kullanıcı etkisinin olup olmadığını gösterir |
+| `IsExpectedUserImpact` | `boolean` | Yapılandırma veya ilke uygulandığında kullanıcı etkisi olup olmayacağını gösterir |
 
-Tablodan ilgili yapılandırma meta verileriyle birlikte, uyumlu olmayan virüsten koruma yapılandırmaları içeren cihazlara ilişkin bilgileri vermek için bu örnek sorguyu `DeviceTvmSecureConfigurationAssessmentKB` abilirsiniz:
+Uyumlu olmayan virüsten koruma yapılandırmalarına sahip cihazlardaki bilgileri ve tablodaki ilgili yapılandırma meta verilerini döndürmek için bu örnek sorguyu `DeviceTvmSecureConfigurationAssessmentKB` deneyebilirsiniz:
 
 ```kusto
 // Get information on devices with antivirus configurations issues
@@ -71,10 +70,10 @@ DeviceTvmSecureConfigurationAssessment
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Önceden tehdit avı](advanced-hunting-overview.md)
-- [Sorgu dilini öğrenme](advanced-hunting-query-language.md)
-- [Paylaşılan sorguları kullanma](advanced-hunting-shared-queries.md)
-- [Cihazlar, e-postalar, uygulamalar ve kimlikler arasında iş avı](advanced-hunting-query-emails-devices.md)
-- [Şemayı anlama](advanced-hunting-schema-tables.md)
-- [Sorguyla ilgili en iyi yöntemleri uygulama](advanced-hunting-best-practices.md)
-- [Tehdit Veya Güvenlik & Yönetimine Genel Bakış](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Tehditleri proaktif olarak avlama](advanced-hunting-overview.md)
+- [Sorgu dilini öğrenin](advanced-hunting-query-language.md)
+- [Paylaşılan sorguları kullanın](advanced-hunting-shared-queries.md)
+- [Cihazlar, e-postalar, uygulamalar ve kimlikler arasında avlayın](advanced-hunting-query-emails-devices.md)
+- [Şemayı anlayın](advanced-hunting-schema-tables.md)
+- [Sorgu en iyi yöntemlerini uygulayın](advanced-hunting-best-practices.md)
+- [Microsoft Defender Güvenlik Açığı Yönetimi genel bakış](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

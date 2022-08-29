@@ -1,8 +1,8 @@
 ---
-title: Uç Nokta için Microsoft Defender API bağlantısı Power BI
+title: Power BI'a API bağlantısı Uç Nokta için Microsoft Defender
 ms.reviewer: ''
-description: Kullanıcı API'lerinin en üstünde Power Business Intelligence (BI) Uç Nokta için Microsoft Defender oluşturun.
-keywords: api'ler, desteklenen api'ler, Power BI, raporlar
+description: Uç Nokta için Microsoft Defender API'lerinin üzerinde bir Power Business Intelligence (BI) raporu oluşturun.
+keywords: api'ler, desteklenen API'ler, Power BI, raporlar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,47 +14,47 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4cad6fd5188745773ce561d1db697989598a1dc5
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 086579f6923f59c12c5ef9f7494b539f24c19210
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472165"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328133"
 ---
-# <a name="create-custom-reports-using-power-bi"></a>Özel raporları kullanarak özel Power BI
+# <a name="create-custom-reports-using-power-bi"></a>Power BI kullanarak özel raporlar oluşturma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Bu deneyimi Uç Nokta için Microsoft Defender? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Bu bölümde, Uç nokta API'leri için Defender'Power BI bir rapor oluşturma hakkında bilgi edinebilirsiniz.
+Bu bölümde, Uç Nokta için Defender API'lerinin üzerinde bir Power BI raporu oluşturmayı öğreneceksiniz.
 
-İlk örnekte, Power BI Gelişmiş Av API'sine nasıl bağlan bağlantısı olduğu ve ikinci örnekte de Makine Eylemleri veya Uyarılar gibi OData API'lerimize bağlantının olduğu yer almaktadır.
+İlk örnekte Power BI'ın Gelişmiş Tehdit Avcılığı API'sine nasıl bağlanacakları, ikinci örnekte ise Makine Eylemleri veya Uyarılar gibi OData API'lerimize bağlantı gösterilmektedir.
 
-## <a name="connect-power-bi-to-advanced-hunting-api"></a>Bağlan Power BI Av API'sini Kullanma
+## <a name="connect-power-bi-to-advanced-hunting-api"></a>Power BI'ı Gelişmiş Tehdit Avcılığı API'sine bağlama
 
-- Microsoft Power BI.
+- Microsoft Power BI'i açın.
 
-- Verileri Boş **Sorgu** **Al'a**\> tıklayın.
+- **Boş Veri** \> Al **Sorgu'ya** tıklayın.
 
   :::image type="content" source="images/power-bi-create-blank-query.png" alt-text="Veri Al menü öğesinin altındaki Boş Sorgu seçeneği" lightbox="images/power-bi-create-blank-query.png":::
 
-- **Ekle'Gelişmiş Düzenleyici**.
+- **Gelişmiş Düzenleyici'e** tıklayın.
 
   :::image type="content" source="images/power-bi-open-advanced-editor.png" alt-text="Gelişmiş Düzenleyici menü öğesi" lightbox="images/power-bi-open-advanced-editor.png":::
 
-- Aşağıdaki kopyayı kopyalayıp düzenleyiciye yapıştırın:
+- Aşağıdakini kopyalayın ve düzenleyiciye yapıştırın:
 
 ```
     let
@@ -94,32 +94,32 @@ Bu bölümde, Uç nokta API'leri için Defender'Power BI bir rapor oluşturma ha
     in Table
 ```
 
-- **Bitti'ye tıklayın**.
+- **Bitti'ye** tıklayın.
 
-- Kimlik Bilgilerini **Düzenle'ye tıklayın**.
+- **Kimlik Bilgilerini Düzenle'ye** tıklayın.
 
     :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="Kimlik Bilgilerini Düzenle menü öğesi" lightbox="images/power-bi-edit-credentials.png":::
     
 
-- Kuruluş **hesabı Oturum** **açın'ı**\> seçin.
+- **Kuruluş hesabı** \> **Oturum aç'ı** seçin.
 
     :::image type="content" source="images/power-bi-set-credentials-organizational.png" alt-text="Kuruluş hesabı menü öğesinde Oturum aç seçeneği" lightbox="images/power-bi-set-credentials-organizational.png":::
 
-- Kimlik bilgilerinizi girin ve oturum açık olmak için bekleyin.
+- Kimlik bilgilerinizi girin ve oturum açmak için bekleyin.
 
-- **Ekle'Bağlan**.
+- **Bağlan'a** tıklayın.
 
-    :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="Kuruluş hesabı menü öğesinde oturum açma onay iletisi" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
+    :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="Kuruluş hesabı menü öğesindeki oturum açma onayı iletisi" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
 
-- Artık sorgunun sonuçları tablo olarak görüntülenir ve üzerine görsel öğeler yapmaya başlayabilirsiniz!
+- Artık sorgunuzun sonuçları bir tablo olarak görünür ve üzerine görselleştirmeler oluşturmaya başlayabilirsiniz!
 
-- Bu tabloyu yineleyemez, yeniden adlandırarak istediğiniz verileri elde etmek için Gelişmiş Av sorgusunu içinden düzenleyebilirsiniz.
+- İstediğiniz verileri almak için bu tabloyu çoğaltabilir, yeniden adlandırabilir ve içindeki Gelişmiş Tehdit Avcılığı sorgusunu düzenleyebilirsiniz.
 
-## <a name="connect-power-bi-to-odata-apis"></a>Bağlan Power BI OData API'lerini arama
+## <a name="connect-power-bi-to-odata-apis"></a>Power BI'ı OData API'lerine bağlama
 
-- Yukarıdaki örnekteki tek fark düzenleyicinin içindeki sorgudur.
+- Yukarıdaki örnekten tek fark düzenleyicinin içindeki sorgudur.
 
-- Aşağıdan kopyalayıp, tüm makine eylemlerini kuruluştan çekmek **için düzenleyiciye** yapıştırın:
+- Aşağıdakini kopyalayın ve kuruluşunuzdan tüm **Makine Eylemleri'ni** çekmek için düzenleyiciye yapıştırın:
 
 ```
     let
@@ -131,16 +131,16 @@ Bu bölümde, Uç nokta API'leri için Defender'Power BI bir rapor oluşturma ha
         Source
 ```
 
-- Alerts and Machines için **de aynı şeyi** **yapmak gerekir**.
-- Sorgu filtreleri için OData sorgularını da kullanabilirsiniz. Bkz [. OData Sorgularını Kullanma](exposed-apis-odata-samples.md).
+- Aynı işlemi **Uyarılar** ve **Makineler** için de yapabilirsiniz.
+- Sorgu filtreleri için OData sorgularını da kullanabilirsiniz. Bkz. [OData Sorgularını Kullanma](exposed-apis-odata-samples.md).
 
-## <a name="power-bi-dashboard-samples-in-github"></a>Power BI örneklerine bir pano GitHub
+## <a name="power-bi-dashboard-samples-in-github"></a>GitHub'da Power BI pano örnekleri
 
-Daha fazla bilgi için [Power BI şablonuna bakın](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
+Daha fazla bilgi için bkz. [Power BI rapor şablonları](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
 
 ## <a name="sample-reports"></a>Örnek raporlar
 
-Rapor Uç Nokta için Microsoft Defender Power BI görüntüleme. Daha fazla bilgi için bkz. [Kod örneklerine göz atma](/samples/browse/?products=mdatp).
+Uç Nokta için Microsoft Defender Power BI rapor örneklerini görüntüleyin. Daha fazla bilgi için bkz. [Kod örneklerine göz atma](/samples/browse/?products=mdatp).
 
 ## <a name="related-topics"></a>İlgili konular
 

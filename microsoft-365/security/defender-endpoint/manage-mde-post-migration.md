@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: d00de67b52f521042d5595320346f875f8c89c9e
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 3158f75d98d1536f54f9c5387c1515fe64be1c25
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607575"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324045"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-after-initial-setup-or-migration"></a>İlk kurulum veya geçiş sonrasında Uç Nokta için Microsoft Defender yönetme
 
@@ -31,7 +31,7 @@ ms.locfileid: "66607575"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Uç Nokta için Microsoft Defender ayarlayıp yapılandırdıktan sonra, sonraki adımınız özelliklerinizi ve yeteneklerinizi yönetmektir. Kuruluşunuzun cihazlarını [](/mem/endpoint-manager-overview)ve güvenlik ayarlarını yönetmek için [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) ve [Microsoft Endpoint Configuration Manager içeren Microsoft Endpoint Manager](/mem/configmgr/core/understand/introduction) kullanmanızı öneririz. Ancak[, Azure Active Directory Domain Services'daki grup ilkesi Nesneleri](/azure/active-directory-domain-services/manage-group-policy) gibi diğer araçları/yöntemleri kullanabilirsiniz.
 
@@ -39,7 +39,7 @@ Aşağıdaki tabloda, daha fazla bilgi edinmek için kullanabileceğiniz çeşit
 
 |Araç/Yöntem|Açıklama|
 |---|---|
-|[Microsoft 365 Defender](https://security.microsoft.com/) portalında **[tehdit ve güvenlik açığı yönetimi panosu içgörüleri](/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights)**|Tehdit & güvenlik açığı yönetim panosu, güvenlik operasyonları ekibinizin maruz kalma süresini azaltmak ve kuruluşunuzun güvenlik duruşunu geliştirmek için kullanabileceği eyleme dönüştürülebilir bilgiler sağlar. <br/><br/> Bkz[. Tehdit & güvenlik açığı yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) ve [Microsoft 365 Defender genel bakış](/microsoft-365/security/defender-endpoint/use).|
+|Microsoft 365 Defender portalında **[pano içgörülerini](/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights)** [Microsoft Defender Güvenlik Açığı Yönetimi](https://security.microsoft.com/)|Defender Güvenlik Açığı Yönetimi panosu, güvenlik operasyonları ekibinizin ifşayı azaltmak ve kuruluşunuzun güvenlik duruşunu geliştirmek için kullanabileceği eyleme dönüştürülebilir bilgiler sağlar. <br/><br/> Bkz. [Defender Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) ve [Microsoft 365 Defender Genel Bakış](/microsoft-365/security/defender-endpoint/use).|
 |**[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)** (önerilir)|Microsoft Endpoint Manager'nin bir bileşeni olan [Microsoft Intune (Intune](/mem/endpoint-manager-overview)), mobil cihaz yönetimine (MDM) ve mobil uygulama yönetimine (MAM) odaklanır. Intune ile cep telefonları, tabletler ve dizüstü bilgisayarlar dahil olmak üzere kuruluşunuzun cihazlarının nasıl kullanılacağını denetleyebilirsiniz. Uygulamaları denetlemek için belirli ilkeleri de yapılandırabilirsiniz. <br/><br/> Bkz. [Intune kullanarak Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration-intune.md).|
 |**[Microsoft Uç Noktası Yapılandırma Yöneticisi](/mem/configmgr/core/understand/introduction)**|Eski adıyla System Center Configuration Manager olan Microsoft Endpoint Manager (Configuration Manager), [Microsoft Endpoint Manager'nin](/mem/endpoint-manager-overview) bir bileşenidir. Configuration Manager, kullanıcılarınızı, cihazlarınızı ve yazılımınızı yönetmek için güçlü bir araçtır. <br/><br/> Bkz. [Configuration Manager ile Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration-configuration-manager.md).|
 |**[Azure Active Directory Domain Services'da Nesneleri grup ilkesi](/azure/active-directory-domain-services/manage-group-policy)**|[Azure Active Directory Domain Services](/azure/active-directory-domain-services/overview), kullanıcılar ve cihazlar için yerleşik grup ilkesi Nesneleri içerir. Yerleşik grup ilkesi Nesnelerini ortamınız için gerektiği gibi özelleştirebilir, ayrıca özel grup ilkesi Nesneleri ve kuruluş birimleri (OU) oluşturabilirsiniz. <br/><br/> Bkz. [grup ilkesi Nesnelerle Uç Nokta için Microsoft Defender Yönetme](manage-mde-post-migration-group-policy-objects.md).|

@@ -1,7 +1,7 @@
 ---
-title: Liste yazılımı
-description: Yazılım envanteri listesini alma
-keywords: api'ler, grafik api'si, desteklenen api'ler, get, list, file, information, software inventory, threat & güvenlik açığı yönetimi api, Endpoint tvm api için Microsoft Defender
+title: Yazılımı listele
+description: Yazılım envanterinin listesini alır
+keywords: apis, graph api, desteklenen API'ler, get, list, file, information, software inventory, threat & vulnerability management api, Uç Nokta için Microsoft Defender tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,23 +13,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0f2db10e24212808253e197c562468c03f3ae293
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: e58abcb2f7e3f7432d3c855422d07182020596f9
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996515"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342927"
 ---
-# <a name="list-software-inventory-api"></a>Yazılım envanteri API'sini listele
+# <a name="list-software-inventory-api"></a>Yazılım envanteri API'sini listeleme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:** 
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:** 
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -37,22 +37,22 @@ ms.locfileid: "62996515"
 
 ## <a name="api-description"></a>API açıklaması
 
-Kuruluş yazılım envanterini karşılar.
-<br>[OData V4 sorgularını destekler](https://www.odata.org/documentation/).
-<br>OData'da desteklenen işleçler:
-<br>```$filter``` on:  ```id```, ```name```ve özellikler'i ```vendor``` seçin.
-<br>```$top``` maksimum değeri 10.000' olur.
+Kuruluş yazılım envanterini alır.
+<br>[OData V4 sorgularını](https://www.odata.org/documentation/) destekler.
+<br>OData tarafından desteklenen işleçler:
+<br>```$filter``` üzerinde:  ```id```, ```name```ve ```vendor``` özellikleri.
+<br>```$top``` 10.000 maksimum değere sahip.
 <br>```$skip```.
-<br>Uç Nokta için [Microsoft Defender ile OData sorguları ile ilgili örneklere bakın](exposed-apis-odata-samples.md).
+<br>[Uç Nokta için Microsoft Defender ile OData sorgularında örneklere](exposed-apis-odata-samples.md) bakın.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Uç nokta API'leri için Microsoft Defender'ı](apis-intro.md) kullanma.
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için ayrıntılar için bkz. [Uç Nokta için Microsoft Defender API'lerini kullanma](apis-intro.md).
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
-Uygulama|Software.Read.All|'Tehdit ve Güvenlik Açığı Yönetimi Yazılımı bilgilerini okuma'
-Temsilcili (iş veya okul hesabı)|Software.Read|'Tehdit ve Güvenlik Açığı Yönetimi Yazılımı bilgilerini okuma'
+Uygulama|Software.Read.All|'Tehdit ve Güvenlik Açığı Yönetim Yazılımı bilgilerini okuyun'
+Temsilci (iş veya okul hesabı)|Software.Read|'Tehdit ve Güvenlik Açığı Yönetim Yazılımı bilgilerini okuyun'
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -60,7 +60,7 @@ Temsilcili (iş veya okul hesabı)|Software.Read|'Tehdit ve Güvenlik Açığı 
 GET /api/Software
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -72,13 +72,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem gövdesinde yazılım envanteri için 200 Tamam döndürür.
+Başarılı olursa, bu yöntem gövdedeki yazılım envanteri ile 200 Tamam döndürür.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/Software
@@ -86,7 +86,7 @@ GET https://api.securitycenter.microsoft.com/api/Software
 
 ### <a name="response-example"></a>Yanıt örneği
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 ```json
 {
@@ -109,5 +109,5 @@ Yanıtın bir örneği:
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Risk Tabanlı Tehdit & Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Tehdit & Güvenlik Açığı yazılım envanteri](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender Güvenlik Açığı Yönetimi yazılım envanteri](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

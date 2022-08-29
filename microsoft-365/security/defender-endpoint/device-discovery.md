@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2e4939eb21a62c99ecf6572060213c87c2c01176
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: b8102e492f7c3d179bf053466d4d49d399a67f10
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617314"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344635"
 ---
 # <a name="device-discovery-overview"></a>Cihaz keşfine genel bakış
 
@@ -52,7 +52,7 @@ Bilinmeyen ve yönetilmeyen cihazlar ağınıza önemli riskler getirir. Bu, eş
 Keşfedilen Uç Nokta için Microsoft Defender yönetilmeyen cihazları değerlendirmeye ve eklemeye hızlı bir genel bakış için bu videoyu izleyin.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4RwQz]
 
-Bu özellik ile birlikte, mevcut Tehdit ve Güvenlik Açığı Yönetimi deneyiminin bir parçası olarak cihazları Uç Nokta için Microsoft Defender eklemeye yönelik bir güvenlik önerisi sağlanır.
+Bu özellik ile birlikte, mevcut Microsoft Defender Güvenlik Açığı Yönetimi deneyiminin bir parçası olarak cihazları Uç Nokta için Microsoft Defender eklemeye yönelik bir güvenlik önerisi sağlanır.
 
 ## <a name="discovery-methods"></a>Bulma yöntemleri
 
@@ -94,7 +94,7 @@ Daha fazla bilgi için bkz [. Cihaz envanteri](machines-view-overview.md).
 
 Bir kuruluşa dağıtılan çok sayıda yönetilmeyen ağ cihazı, büyük bir yüzey saldırı alanı oluşturur ve kuruluşun tamamı için önemli bir riski temsil eder. Uç Nokta için Microsoft Defender ağ bulma özellikleri, ağ cihazlarının bulunmasını, doğru sınıflandırılmasını ve varlık envanterine eklenmesini sağlamanıza yardımcı olur.
 
-Uç Nokta için Defender'ın ağ cihazlarında yerleşik bir algılayıcısı olmadığından, ağ cihazları standart uç nokta olarak yönetilmez. Bu tür cihazlar, uzaktan taramanın cihazlardan gerekli bilgileri edineceği aracısız bir yaklaşım gerektirir. Bunu yapmak için, önceden yapılandırılmış ağ cihazlarında düzenli aralıklarla kimliği doğrulanmış taramalar gerçekleştirmek için her ağ kesiminde belirlenmiş bir Uç Nokta için Microsoft Defender cihazı kullanılır. Uç Nokta için Defender'ın Tehdit ve Güvenlik Açığı Yönetimi özellikleri, bulunan anahtarları, yönlendiricileri, WLAN denetleyicilerini, güvenlik duvarlarını ve VPN ağ geçitlerini güvenli hale getirmek için tümleşik iş akışları sağlar.
+Uç Nokta için Defender'ın ağ cihazlarında yerleşik bir algılayıcısı olmadığından, ağ cihazları standart uç nokta olarak yönetilmez. Bu tür cihazlar, uzaktan taramanın cihazlardan gerekli bilgileri edineceği aracısız bir yaklaşım gerektirir. Bunu yapmak için, önceden yapılandırılmış ağ cihazlarında düzenli aralıklarla kimliği doğrulanmış taramalar gerçekleştirmek için her ağ kesiminde belirlenmiş bir Uç Nokta için Microsoft Defender cihazı kullanılır. Uç Nokta için Defender'ın güvenlik açığı yönetim özellikleri keşfedildikten sonra bulunan anahtarları, yönlendiricileri, WLAN denetleyicilerini, güvenlik duvarlarını ve VPN ağ geçitlerini güvenli hale getirmek için tümleşik iş akışları sağlar.
 
 Daha fazla bilgi için bkz [. Ağ cihazları](network-devices.md).
 
@@ -108,7 +108,7 @@ Ot/IOT varlık envanterinizi bulmak, tanımlamak ve güvenliğini sağlamak içi
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>Bulunan cihazlarda güvenlik açığı değerlendirmesi
 
-Cihazlarınızdaki güvenlik açıkları ve riskler ve ağda bulunan diğer yönetilmeyen cihazlar, "Güvenlik Önerileri" altındaki geçerli TVM akışlarının bir parçasıdır ve portaldaki varlık sayfalarında gösterilir.
+Cihazlarınızdaki güvenlik açıkları ve riskler ve ağda bulunan diğer yönetilmeyen cihazlar, "Güvenlik Önerileri" altındaki geçerli Defender Güvenlik Açığı Yönetimi akışlarının bir parçasıdır ve portaldaki varlık sayfalarında gösterilir.
 Yönetilmeyen ve yönetilen cihazlarla ilgili SSH güvenlik açıklarını bulmak için "SSH" ile ilgili güvenlik önerilerini arayın.
 
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="Güvenlik önerileri panosu" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::

@@ -1,7 +1,7 @@
 ---
 title: Puan yöntemleri ve özellikleri
-description: Cihaz grubuna göre kuruluşlarının pozlama puanını, cihazın güvenli puanını ve pozlama puanını verir
-keywords: api'ler, grafik api'leri, desteklenen api'ler, puan, pozlama puanı, cihazın güvenli puanı, cihaz grubuna göre pozlama puanı
+description: Kuruluşunuzun maruz kalma puanını, cihaz güvenli puanını ve cihaz grubuna göre maruz kalma puanını alır
+keywords: api'ler, graf api'leri, desteklenen API'ler, puan, maruz kalma puanı, cihaz güvenli puanı, cihaz grubuna göre maruz kalma puanı
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,26 +13,26 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: fe69b42c2d8bf80089b749cd41e59664cc2921e3
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 270ce3b5a2127217c1fb2e7e568b21d5f7b33ecd
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996518"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331455"
 ---
-# <a name="score-resource-type"></a>Puan kaynak türü
+# <a name="score-resource-type"></a>Kaynak türünü puanla
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,17 +42,17 @@ ms.locfileid: "62996518"
 
 ## <a name="methods"></a>Yöntemler
 
-Yöntem|İade Türü|Açıklama
+Yöntem|Dönüş Türü|Açıklama
 :---|:---|:---
-[Pozlama puanı elde](get-exposure-score.md)|[Puan](score.md)|Kurumsal pozlama puanına sahip olur.
-[Cihazın güvenli puanını al](get-device-secure-score.md)|[Puan](score.md)|Kurumsal cihaz güvenliğinin puanına sahip olun.
-[Cihaz grubuna göre açık kalma puanı listesi](get-machine-group-exposure-score.md)|[Puan](score.md)|Cihaz grubuna göre puanları listele.
+[Hassaslık puanı al](get-exposure-score.md)|[Puan](score.md)|Kurumsal maruz kalma puanını alın.
+[Cihaz güvenlik puanı al](get-device-secure-score.md)|[Puan](score.md)|Kuruluş cihazının güvenli puanını alın.
+[Cihaz grubuna göre pozlama puanını listeleme](get-machine-group-exposure-score.md)|[Puan](score.md)|Cihaz grubuna göre puanları listeleyin.
 
 ## <a name="properties"></a>Özellikler
 
 Özellik|Tür|Açıklama
 :---|:---|:---
-Puan|Double|Geçerli puandır.
-Saat|DateTime|Bu API için çağrının hangi tarih ve saatte yapılmış olduğu.
+Puan|Çift|Geçerli puan.
+Saat|Datetime|Bu API için çağrının yapıldığı tarih ve saat.
 RbacGroupName|Dize|Cihaz grubu adı.
-RbacGroupId|Dize|Cihaz grup kimliği.
+RbacGroupId|Dize|Cihaz grubu kimliği.

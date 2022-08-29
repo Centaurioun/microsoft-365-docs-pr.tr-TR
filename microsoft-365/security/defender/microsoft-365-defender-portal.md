@@ -24,12 +24,12 @@ ms.custom:
 ms.topic: conceptual
 ms.technology: m365d
 adobe-target: true
-ms.openlocfilehash: c2915adc7b9b49015cdb436886563c4eba74d989
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: f55172bf0a7df4e15e690a5e0847c81b3cc537dc
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66862216"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328595"
 ---
 # <a name="microsoft-365-defender-portal"></a>Microsoft 365 Defender portalı
 
@@ -124,7 +124,7 @@ Uç Nokta için Defender ve Kimlik için Defender'da aşağıdaki varlıklar ara
     >[!NOTE]
     >IP ve URL aramaları tam olarak eşleşir ve arama sonuçları sayfasında görünmez; doğrudan varlık sayfasına yönlendirir. 
 
-- **TVM** - Uç Nokta için Defender ile aynı özellikler (güvenlik açıkları, yazılımlar ve öneriler). 
+- **MDVM** - Uç Nokta için Defender'dakiyle aynı özellikler (güvenlik açıkları, yazılımlar ve öneriler). 
 
 ## <a name="threat-analytics"></a>Tehdit analizi
 

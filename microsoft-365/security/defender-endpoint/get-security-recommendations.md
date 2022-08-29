@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e00937145cfff6eb9a0996683eacfb424b68091b
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: d2b4c57bda9084d1e76ad011869e27b05c5c1f4f
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020065"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344755"
 ---
 # <a name="get-security-recommendations"></a>Güvenlik önerileri al
 
@@ -118,5 +118,5 @@ Yanıtın bir örneği aşağıda verilmiştir.
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Risk Tabanlı Tehdit & Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Tehdit & Güvenlik Açığı güvenlik önerisi](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender Güvenlik Açığı Yönetimi güvenlik önerisi](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

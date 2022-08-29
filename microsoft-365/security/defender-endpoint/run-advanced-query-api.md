@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3a916f3fe15e979f6d432e3a834453b04afe5a63
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 8eb2fdc1301b340c0907f3dc71b852488ccb64b6
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051788"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331566"
 ---
 # <a name="advanced-hunting-api"></a>Gelişmiş tehdit avcılığı API'si
 

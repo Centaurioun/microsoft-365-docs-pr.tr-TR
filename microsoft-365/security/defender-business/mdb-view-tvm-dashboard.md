@@ -1,6 +1,6 @@
 ---
-title: Tehdit & Güvenlik Açığı Yönetimi panonuzu İş için Microsoft Defender'da görüntüleme
-description: İş için Defender'da ele alınması gereken önemli öğeleri görmek için Tehdit & Güvenlik Açığı Yönetimi panonuzu kullanın.
+title: İş için Microsoft Defender'da Microsoft Defender Güvenlik Açığı Yönetimi panonuzu görüntüleme
+description: İş için Defender'da ele alınması gereken önemli öğeleri görmek için Microsoft Defender Güvenlik Açığı Yönetimi panonuzu kullanın.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,16 +17,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 332128566bb117dec10420fff3e7dc0d529071ac
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: dc1fea2a1bcbf05b0f32519221a68686a85e85f6
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175430"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326353"
 ---
 # <a name="use-your-vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'de güvenlik açığı yönetimi panonuzu kullanma
 
-İş için Defender, güvenlik ekibinize zaman ve çaba kazandırmak için tasarlanmış bir güvenlik açığı yönetim panosu içerir. Bu pano, bir maruz kalma puanı sağlamanın yanı sıra kullanıma sunulan cihazlar hakkındaki bilgileri görüntülemenize ve ilgili güvenlik önerilerini görmenize olanak tanır. Tehdit & güvenlik açığı yönetim panonuzu kullanarak:
+İş için Defender, güvenlik ekibinize zaman ve çaba kazandırmak için tasarlanmış bir güvenlik açığı yönetim panosu içerir. Bu pano, bir maruz kalma puanı sağlamanın yanı sıra kullanıma sunulan cihazlar hakkındaki bilgileri görüntülemenize ve ilgili güvenlik önerilerini görmenize olanak tanır. Defender Güvenlik Açığı Yönetimi panonuzu kullanarak:
 
 - Şirketinizdeki cihazlarla ilişkili olan poz puanınızı görüntüleyin.
 - Cihazlarla ilgili engelli iletişimleri ele alma, güvenlik duvarı korumasını açma veya Microsoft Defender Virüsten Koruma tanımlarını güncelleştirme gibi en önemli güvenlik önerilerinizi görüntüleyin.

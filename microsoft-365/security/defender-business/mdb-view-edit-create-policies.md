@@ -10,18 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 209af419462d6894e80b1d05955a58a78572e525
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: a7281605f4bc47c2ce39ef3b067a5db39aa33142
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772751"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319943"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'de ilkeleri görüntüleme veya düzenleme
 
@@ -34,6 +35,8 @@ ms.locfileid: "66772751"
 - [Var olan bir ilkeyi düzenleme](#edit-an-existing-policy)
 - [Yeni ilke oluşturma](#create-a-new-policy)
 
+> [!NOTE]
+> Bu makaledeki yordamlarda, Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) güvenlik ilkelerini görüntüleme, düzenleme ve oluşturma işlemleri açıklanmaktadır. Microsoft Intune kullanıyorsanız bkz. [Microsoft Intune'de uç nokta güvenliğini yönetme](/mem/intune/protect/endpoint-security).
 
 ## <a name="default-policies-in-defender-for-business"></a>İş için Defender'da varsayılan ilkeler
 
@@ -41,7 +44,6 @@ ms.locfileid: "66772751"
 
 - Microsoft Defender Virüsten Koruma ve diğer tehdit koruması özelliklerinin nasıl yapılandırıldığını belirleyen **yeni nesil koruma ilkeleri**
 - Şirketinizin cihazlarına hangi ağ trafiğinin akışına izin verileceğini belirleyen **güvenlik duvarı ilkeleri**
-
 
 ## <a name="view-your-existing-policies"></a>Mevcut ilkelerinizi görüntüleme
 

@@ -1,7 +1,7 @@
 ---
-title: Etki alanı istatistikleri API'sini edinin
-description: Uç Nokta için Microsoft Defender'da verilen etki alanı istatistiklerini almak için Etki alanı istatistikleri API'sini alma hakkında bilgi edinin.
-keywords: api'ler, grafik api'si, desteklenen api'ler, get, etki alanı, etki alanıyla ilgili cihazlar
+title: Etki alanı istatistikleri API'lerini alma
+description: Uç Nokta için Microsoft Defender'da verilen etki alanıyla ilgili istatistikleri almak için Etki alanı istatistikleri al API'sini kullanmayı öğrenin.
+keywords: api'ler, graf api'leri, desteklenen API'ler, alma, etki alanı, etki alanıyla ilgili cihazlar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,25 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2e07b9545ef6bab0c7b93188edf65d43ae0378b2
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 945ca97d9492f9aad96603a7282c326186475613
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62997115"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327079"
 ---
-# <a name="get-domain-statistics-api"></a>Etki alanı istatistikleri API'sini edinin
+# <a name="get-domain-statistics-api"></a>Etki alanı istatistikleri API'lerini alma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,26 +39,26 @@ ms.locfileid: "62997115"
 
 ## <a name="api-description"></a>API açıklaması
 
-Verilen etki alanıyla ilgili istatistikleri sağlar.
+Verilen etki alanındaki istatistikleri alır.
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
-2. En fazla `lookbackhours` 720 saat (30 gün) değeridir.
+1. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
+2. için `lookbackhours` en yüksek değer 720 saattir (30 gün).
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
-Uygulama|URL. Read.All|'OKUMA URL'leri'
-Temsilcili (iş veya okul hesabı)|URL. Read.All|'OKUMA URL'leri'
+Uygulama|Url. Tümünü Oku|'Okuma URL'leri'
+Temsilci (iş veya okul hesabı)|Url. Tümünü Oku|'Okuma URL'leri'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rol](user-roles.md) oluşturma ve yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -66,17 +66,17 @@ Temsilcili (iş veya okul hesabı)|URL. Read.All|'OKUMA URL'leri'
 GET /api/domains/{domain}/stats
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
-Üst bilgi|Değer
+Üstbilgi|Değer
 :---|:---
 Yetkilendirme|Taşıyıcı {token}. **Gerekli**.
 
-## <a name="request-uri-parameters"></a>URI parametreleri isteği
+## <a name="request-uri-parameters"></a>İstek URI parametreleri
 
 Name|Tür|Açıklama
 :---|:---|:---
-lookBackHours|Int32|İstatistikleri almak için geri arama saatlerini tanımlar. Varsayılan değer 30 gündür. **İsteğe bağlı**.
+lookBackHours|Int32|İstatistikleri almak için geri arama yaptığımız saatleri tanımlar. Varsayılan değer 30 gündür. **İsteğe bağlı**.
 
 ## <a name="request-body"></a>İstek gövdesi
 
@@ -84,13 +84,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı ve etki alanı varsa - 200 Tamam, yanıt gövdesinde istatistik nesnesi vardır. Etki alanı yoksa - 0 olarak ayarlanmış bir yaygınlık alanı ile 200 Tamam.
+Başarılıysa ve etki alanı varsa - yanıt gövdesinde istatistik nesnesiyle 200 Tamam. Etki alanı yoksa - 0 olarak ayarlanmış bir yaygınlık ile 200 Tamam.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats?lookBackHours=48
@@ -98,7 +98,7 @@ GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats?lookB
 
 ### <a name="response-example"></a>Yanıt örneği
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 ```json
 {

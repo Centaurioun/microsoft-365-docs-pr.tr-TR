@@ -1,7 +1,7 @@
 ---
-title: Canlı yanıt sonuçlarını al
-description: Belirli bir canlı yanıt komutu sonucun dizinine göre nasıl alın öğrenin.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, kitaplı kitaplara yükleme
+title: Canlı yanıt sonuçlarını alma
+description: Dizinine göre belirli bir canlı yanıt komut sonucunu almayı öğrenin.
+keywords: api'ler, graf api'leri, desteklenen API'ler, kitaplığa yükleme
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,25 +16,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd8b3c997a8efceb2791eca4de0b0e42d47513f8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fb001d0212b6eabcbabd0a2f5c3a108e7a1a9c33
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314413"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324440"
 ---
-# <a name="get-live-response-results"></a>Canlı yanıt sonuçlarını al
+# <a name="get-live-response-results"></a>Canlı yanıt sonuçlarını alma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,44 +42,44 @@ ms.locfileid: "63314413"
 
 ## <a name="api-description"></a>API açıklaması
 
-Belirli bir canlı yanıt komutu sonucu dizinine göre alınır.
+Dizinine göre belirli bir canlı yanıt komut sonucunu alır.
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+1. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
-## <a name="minimum-requirements"></a>En düşük gereksinimler
+## <a name="minimum-requirements"></a>Minimum gereksinimler
 
-Cihazda oturumu başlatamadan önce, aşağıdaki gereksinimleri karşılayın:
+Bir cihazda oturum başlatabilmeniz için önce aşağıdaki gereksinimleri karşıladığınızdan emin olun:
 
-- **Dosyanın desteklenen bir sürümünü çalıştırarak Windows**.
+- **Windows'un desteklenen bir sürümünü çalıştırdığınızı doğrulayın**.
 
-  Cihazlar, aşağıdaki Windows sürümlerinden birini çalıştırabiliyor Windows
+  Cihazlar Windows'un aşağıdaki sürümlerinden birini çalıştırıyor olmalıdır
 
   - **Windows 11**
   
   - **Windows 10**
-    - [Sürüm 1909](/windows/whats-new/whats-new-windows-10-version-1909) veya sonrası
-    - [KB4515384 ile](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) Sürüm [1903](/windows/whats-new/whats-new-windows-10-version-1903)
-    - [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) [ile Sürüm 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809)
-    - [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795) [ile Sürüm 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803)
-    - [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816) [ile Sürüm 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709)
+    - [Sürüm 1909](/windows/whats-new/whats-new-windows-10-version-1909) veya üzeri
+    - [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) ile [Sürüm 1903](/windows/whats-new/whats-new-windows-10-version-1903)
+    - [KB4537818 ile](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) [Sürüm 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809)
+    - [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795) ile [Sürüm 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803)
+    - [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816) ile [Sürüm 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709)
 
   - **Windows Server 2019 - Yalnızca Genel önizleme için geçerlidir**
-    - Sürüm 1903 veya ( [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) ile) daha sonraki sürümler
-    - Sürüm 1809 ( [KB4537818 ile](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+    - Sürüm 1903 veya ( [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384) ile) daha sonra
+    - Sürüm 1809 ( [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) ile)
     
   - **Windows Server 2022**  
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Başlama](apis-intro.md).
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz. [Kullanmaya başlama](apis-intro.md).
 
-|İzin türü|İzin|İzin görünen adı|
+|İzin türü|Izni|İzin görünen adı|
 |---|---|---|
 Uygulama|Machine.Read.All|''Tüm makine profillerini oku''
 Uygulama|"Machine.ReadWrite.All|'Tüm makine bilgilerini okuma ve yazma'
-|Temsilcili (iş veya okul hesabı)|Machine.LiveResponse|Belirli bir makinede canlı yanıt çalıştırma|
+|Temsilci (iş veya okul hesabı)|Machine.LiveResponse|Belirli bir makinede canlı yanıt çalıştırma|
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -88,7 +88,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action
 id}/GetLiveResponseResultDownloadLink(index={command-index})
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 |Name|Tür|Açıklama|
 |---|---|---|
@@ -100,22 +100,22 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem value özelliğinde komut sonucu bağlantısını içeren nesneyle 200, Tamam yanıt *kodu* döndürür. Bu bağlantı 30 dakika geçerlidir ve paketi yerel bir depolama alanına indirmek için hemen kullanılmalıdır. Süresi dolmuş olan bir bağlantı başka bir arama tarafından yeniden oluşturulabilir ve yeniden canlı yanıt çalıştırmanız gerek yoktur.
+Başarılı olursa, bu yöntem *value* özelliğinde komut sonucunun bağlantısını tutan nesneyle 200 Tamam yanıt kodu döndürür. Bu bağlantı 30 dakika boyunca geçerlidir ve paketi yerel bir depolama alanına indirmek için hemen kullanılmalıdır. Süresi dolmuş bir bağlantı başka bir çağrı tarafından yeniden oluşturulabilir ve canlı yanıtı yeniden çalıştırmaya gerek yoktur.
 
-*Runscript döküm özellikleri:*
+*Runscript transkript özellikleri:*
 
 |Özellik|Açıklama|
 |---|---|
 |script_name|Yürütülen betik adı|
 |exit_code|Yürütülen betik çıkış kodu|
 |script_output|Yürütülen betik standart çıkışı|
-|script_errors|Yürütülen betik standart hata çıktısı|
+|script_errors|Yürütülen betik standart hata çıkışı|
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```HTTP
 GET https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-ab65-54970c5d5018/GetLiveResponseResultDownloadLink(index=0)
@@ -123,9 +123,9 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b
 
 ### <a name="response-example"></a>Yanıt örneği
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
-HTTP/1.1 200 Ok
+HTTP/1.1 200 Tamam
 
 İçerik türü: application/json
 
@@ -150,6 +150,6 @@ C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Makine eylem API'sini edinin](get-machineaction-object.md)
-- [Makine eylemini iptal etme](cancel-machine-action.md)
+- [Makine eylem API'si alma](get-machineaction-object.md)
+- [Makine eylemini iptal et](cancel-machine-action.md)
 - [Canlı yanıt çalıştır](run-live-response.md) 

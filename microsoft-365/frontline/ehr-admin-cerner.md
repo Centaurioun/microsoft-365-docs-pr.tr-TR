@@ -25,12 +25,12 @@ appliesto:
 - Microsoft 365 for frontline workers
 ms.reviewer: ansantam
 description: Kuruluşunuzdaki sağlık sağlayıcılarının doğrudan Cerner EHR sisteminden Teams'deki hastalarla veya diğer sağlayıcılarla sanal randevular yürütmesini sağlamak için Teams EHR bağlayıcısını tümleştirmeyi öğrenin.
-ms.openlocfilehash: 9388ec0fef16fb15221044e387c485586acc1a64
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 856447ac9036be5a707788e333892aba106800c7
+ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099898"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67333730"
 ---
 # <a name="virtual-appointments-with-teams---integration-into-cerner-ehr"></a>Teams ile sanal randevular - Cerner EHR ile tümleştirme
 
@@ -56,6 +56,7 @@ Teams EHR bağlayıcısını sağlık kuruluşunuzla tümleştirmeden önce aşa
 - Healthcare için Microsoft Bulut'a etkin bir abonelik veya Microsoft Teams EHR bağlayıcısı tek başına aboneliği teklifi.
 - Kullanıcılar, Teams toplantılarını içeren uygun bir Microsoft 365 veya Office 365 lisansına sahiptir.
 - Teams, sağlık kuruluşunuzda benimsenip kullanılır.
+- Kuruluşunuzda [Teams yönetim merkezine](https://admin.teams.microsoft.com) erişimi olan bir Microsoft 365 genel yöneticisi olan bir kişi tanımladı.
 - Sistemleriniz Teams için tüm [yazılım ve tarayıcı gereksinimlerini karşılar](/microsoftteams/hardware-requirements-for-the-teams-app) .
 - Cerner sürümü Kasım 2018 veya üzeri
 

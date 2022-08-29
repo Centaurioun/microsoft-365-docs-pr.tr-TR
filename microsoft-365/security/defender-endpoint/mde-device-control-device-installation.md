@@ -8,18 +8,18 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 750b00bf2418765c780471356ad01208667b4d2c
-ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
+ms.openlocfilehash: 5b336a0650bc30eb1ebf23f8356b6c3c1ebb4e79
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67294621"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324177"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Cihaz Denetimi Cihazı Yüklemesini Uç Nokta için Microsoft Defender
 
@@ -29,7 +29,7 @@ ms.locfileid: "67294621"
 
 
 > [!NOTE]
-> Çıkarılabilir depolamayı yönetiyorsanız bkz. [Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama Birimi Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
+> Çıkarılabilir depolamayı yönetmek istiyorsanız bkz. [Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama Birimi Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control).
 
 Uç Nokta için Microsoft Defender Cihaz Denetimi Cihazı Yüklemesi aşağıdaki görevi gerçekleştirmenizi sağlar:
 

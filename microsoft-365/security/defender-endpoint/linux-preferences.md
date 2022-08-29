@@ -10,18 +10,19 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d810ac3a8a314307d2526397bf34200ef0eeeeda
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a6a31317ec95a4767f36cf6db21ec2e146f9eda8
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943584"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67320229"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın
 
@@ -432,25 +433,25 @@ Aşağıdaki yapılandırma profili, bu belgede açıklanan tüm ayarların gird
          {
             "$type":"excludedPath",
             "isDirectory":false,
-            "path":"/var/log/system.log"
+            "path":"/var/log/system.log<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/run"
+            "path":"/run<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/home/*/git"
+            "path":"/home/*/git<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedFileExtension",
-            "extension":".pdf"
+            "extension":".pdf<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedFileName",
-            "name":"cat"
+            "name":"cat<EXAMPLE DO NOT USE>"
          }
       ],
       "allowedThreats":[

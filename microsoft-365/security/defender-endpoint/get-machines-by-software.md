@@ -1,7 +1,7 @@
 ---
-title: Cihazları yazılıma göre listele
+title: Cihazları yazılıma göre listeleme
 description: Bu yazılımın yüklü olduğu cihazların listesini alın.
-keywords: api'ler, grafik api'si, desteklenen api'ler, get, list devices, devices list devices by software, Microsoft Defender for Endpoint tvm api
+keywords: apis, graph api, desteklenen API'ler, get, list devices, devices list, list devices by software, Uç Nokta için Microsoft Defender tvm API
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,23 +13,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 32dd0531d0919613621d656f7f3b9aef3e4bec0d
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: fba7fc216f126a9b6f166fe0287a75f5a3b38214
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996542"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345107"
 ---
-# <a name="list-devices-by-software"></a>Cihazları yazılıma göre listele
+# <a name="list-devices-by-software"></a>Cihazları yazılıma göre listeleme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:** 
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:** 
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -41,12 +41,12 @@ Bu yazılımın yüklü olduğu cihaz başvurularının listesini alın.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Uç nokta API'leri için Microsoft Defender'ı](apis-intro.md) kullanma.
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için ayrıntılar için bkz. [Uç Nokta için Microsoft Defender API'lerini kullanma](apis-intro.md).
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
-Uygulama|Software.Read.All|'Tehdit ve Güvenlik Açığı Yönetimi Yazılımı bilgilerini okuma'
-Temsilcili (iş veya okul hesabı)|Software.Read|'Tehdit ve Güvenlik Açığı Yönetimi Yazılımı bilgilerini okuma'
+Uygulama|Software.Read.All|'Tehdit ve Güvenlik Açığı Yönetim Yazılımı bilgilerini okuyun'
+Temsilci (iş veya okul hesabı)|Software.Read|'Tehdit ve Güvenlik Açığı Yönetim Yazılımı bilgilerini okuyun'
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -54,7 +54,7 @@ Temsilcili (iş veya okul hesabı)|Software.Read|'Tehdit ve Güvenlik Açığı 
 GET /api/Software/{Id}/machineReferences 
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 |Name|Tür|Açıklama
 |---|---|---|
@@ -66,13 +66,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem 200 Tamam'ı ve gövdesinde yüklü yazılım yüklü cihazların listesini verir. 
+Başarılı olursa, bu yöntem 200 Tamam değerini ve gövdede yüklü olan yazılımın yüklü olduğu cihazların listesini döndürür. 
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machineReferences
@@ -80,7 +80,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/machi
 
 ### <a name="response-example"></a>Yanıt örneği
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 ```json
 
@@ -106,5 +106,5 @@ Yanıtın bir örneği:
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Risk Tabanlı Tehdit & Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Tehdit & Güvenlik Açığı yazılım envanteri](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender Güvenlik Açığı Yönetimi yazılım envanteri](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

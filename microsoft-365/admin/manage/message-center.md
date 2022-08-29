@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Microsoft 365 İleti merkezi'ne ve yeni ve değiştirilmiş özellikleri ve diğer önemli duyuruları izlemedeki rolüne genel bakış edinin.
-ms.openlocfilehash: 403b16f0f1624034a1224dfe53841a81ee53d572
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8368e86e0ab4431aeb07c387daf0a57f89ea1827
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085673"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322925"
 ---
 # <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>Microsoft 365 İleti merkezinde yeni ve değiştirilmiş özellikleri izleme
 
@@ -284,5 +284,4 @@ Microsoft 365 hizmetlerindeki değişikliklerle ilgili birçok eyleme dönüşt�
 ## <a name="related-content"></a>İlgili içerik
 
 [Standart veya Hedefli sürüm seçeneklerini ayarlama](../manage/release-options-in-office-365.md) (makale)\
-[Yenilikler bölümünde hangi Office özelliklerinin görüneceğini yönetme](../manage/show-hide-new-features.md) (makale)\
 [İş abonelikleri ve faturalama belgeleri](../../commerce/index.yml) (bağlantı sayfası)

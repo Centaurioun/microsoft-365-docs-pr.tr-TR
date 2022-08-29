@@ -1,7 +1,7 @@
 ---
-title: Yazılıma göre açıkları listele
-description: Yüklü yazılım güvenlik açıklarının listesini alın.
-keywords: api'ler, grafik api'si, desteklenen api'ler, get, güvenlik açıkları listesi, Uç nokta tvm api için Microsoft Defender
+title: Yazılıma göre güvenlik açıklarını listele
+description: Yüklü yazılımdaki güvenlik açıklarının listesini alın.
+keywords: api'ler, graf api'leri, desteklenen API'ler, get, güvenlik açıkları listesi, Uç Nokta için Microsoft Defender tvm API'leri
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,24 +13,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2ac182b9d8e2cc79dfa7d42328ea4fbcacb7f6f9
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 61a85b5e3a52cdf936058a08ad71f08348c4a553
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996516"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327651"
 ---
-# <a name="list-vulnerabilities-by-software"></a>Yazılıma göre açıkları listele
+# <a name="list-vulnerabilities-by-software"></a>Yazılıma göre güvenlik açıklarını listele
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,16 +38,16 @@ ms.locfileid: "62996516"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Yüklü yazılım güvenlik açıklarının listesini alın.
+Yüklü yazılımdaki güvenlik açıklarının listesini alın.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Uç nokta API'leri için Microsoft Defender'ı](apis-intro.md) kullanma.
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için ayrıntılar için bkz. [Uç Nokta için Microsoft Defender API'lerini kullanma](apis-intro.md).
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
-Uygulama|Güvenlik Açığı.Read.All|'Tehdit ve Güvenlik Açığı Yönetimi Yazılımı bilgilerini okuma'
-Temsilcili (iş veya okul hesabı)|Güvenlik Açığı.Okuma|'Tehdit ve Güvenlik Açığı Yönetimi Yazılımı bilgilerini okuma'
+Uygulama|Vulnerability.Read.All|'Tehdit ve Güvenlik Açığı Yönetim Yazılımı bilgilerini okuyun'
+Temsilci (iş veya okul hesabı)|Vulnerability.Read|'Tehdit ve Güvenlik Açığı Yönetim Yazılımı bilgilerini okuyun'
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -55,7 +55,7 @@ Temsilcili (iş veya okul hesabı)|Güvenlik Açığı.Okuma|'Tehdit ve Güvenli
 GET /api/Software/{Id}/vulnerabilities
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 |Name|Tür|Açıklama
 |---|---|---|
@@ -67,13 +67,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem belirtilen yazılım tarafından açığa çıkarılacak güvenlik açıklarının listesiyle birlikte 200 Tamam döndürür.
+Başarılı olursa, bu yöntem belirtilen yazılım tarafından kullanıma sunulan güvenlik açıklarının listesini içeren 200 Tamam döndürür.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulnerabilities
@@ -81,7 +81,7 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/vulne
 
 ### <a name="response-example"></a>Yanıt örneği
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 ```json
 {

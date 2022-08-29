@@ -1,78 +1,78 @@
 ---
-title: Bellek regresyon çözümlemesi
-description: Bellek regresyonu nasıl çıkar?
+title: Bellek regresyon analizi
+description: Bellek regresyonu nasıl çıkarılır?
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
-ms.collection: TestBase-M365
+ms.collection: TestBase-Microsoft 365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: c4c6ec61ea96966237976ea71b82931e37efd278
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 421fce87bc57f794bdf875e9bc09889bb20b62fb
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988175"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67316435"
 ---
 # <a name="memory-regression-analysis"></a>Bellek Regresyon Çözümlemesi
 
-Test Tabanı, uygulamalarınızı çalıştıran test VM'lerde önemli bellek kullanımının arttıkça olduğunu daha net farknıza yardımcı olur. Bellek kullanımı gibi performans ölçümleri genel uygulama durumuna işaret edebilir ve bu eklemenin uygulamalarınızı en iyi şekilde gerçekleştirmesini büyük ölçüde yardımcı olacağını inanıyoruz.
+Test Tabanı, uygulamalarınızı çalıştıran test VM'lerinde önemli bellek kullanımı artışlarını daha net bir şekilde fark etmenizi sağlar. Bellek kullanımı gibi performans ölçümleri, genel uygulama durumunun göstergesi olabilir ve bu eklemenin uygulamalarınızın en iyi performansı göstermesini sağlamaya büyük ölçüde yardımcı olacağına inanıyoruz.
 
-Diğer ayrıntılar için okumaya devam edin veya en son iyileştirmeleri hızlıca izlemek için bu videoyu izleyin. 
+Daha fazla ayrıntı için okumaya devam edin veya en son iyileştirmeleri hızlı bir şekilde izlemek için bu videoyu izleyin. 
 
-M365'in regresyon çözümlemesinde yardımcı olmak için sınanma olanağı hakkında daha fazla bilgi için bkz. İşlem güvenilirliğine dayalı regresyon sonuçları.
+Microsoft 365'in regresyon analizine yardımcı olma özelliği için Test Temeli hakkında daha fazla bilgi için bkz. İşlem güvenilirliğine dayalı regresyon sonuçları.
 
 <b>Bellek regresyonlarına daha yakından bakma</b>
 
-M365 için Test Temel panosu, yeni yayımlanan bir Windows güncelleştirmesinde uygulamanız tarafından kullanılan belleği gösterir ve bu belleği son yayımlanan Windows bellekle karşıtır. 
+Microsoft 365 için Test Temeli panosu, uygulamanız tarafından önceden yayımlanan yeni bir Windows güncelleştirmesinde tüketilen belleği gösterir ve bunu son yayımlanan Windows güncelleştirmesi tarafından kullanılan bellekle karşılaştırır. 
 
-Bu ayın geliştirmeleriyle birlikte, sık kullanılan işlemleriniz arasında artık bellek gerileme çözümlemesi öne çıktı. Uygulamalar birden çok işlem içerebilir ve Güvenilirlik sekmesi aracılığıyla sık kullanılan işlemlerinizi kendiniz seçebilirsiniz. Daha sonra hizmetimiz, bu sık kullanılan işlemlerde bellek gerilemelerini tanımlayabilir ve test karşılaştırması farklı güncelleştirme Windows yayımlar. Bir regresyon algılanırsa, regresyonla ilgili ayrıntılar kolayca kullanılabilir.
+Bu ayın geliştirmeleriyle birlikte bellek regresyon analizi artık sık kullandığınız işlemlerde öne çıktı. Uygulamalar birden çok işlem içerebilir ve Sık kullandığınız işlemleri Güvenilirlik sekmesinden el ile seçebilirsiniz. Hizmetimiz daha sonra bu sık kullanılan işlemlerdeki bellek regresyonlarını belirlerken farklı Windows update sürümlerinde test çalıştırmalarını karşılaştıracaktır. Bir regresyon algılanırsa, regresyon hakkındaki ayrıntılar kolayca kullanılabilir.
 
-Şimdi bu özelliği ayrıntılı olarak incelealım ve Windows Performance Analyzer kullanarak bellek gerilemelerini nasıl giderebilirsiniz?
+Şimdi bu özelliğe ayrıntılı olarak göz atalım ve Windows Performans Analizi kullanarak bellek regresyonlarında nasıl sorun giderebileceğinizi tartışalım.
 
-Bellek regresyon nedeniyle oluşan hata sinyali, Bellek Kullanımı altındaki Test sonuçları sayfasındaki M365 için Test Tabanı panosunda gösterilir:
+Bellek regresyonundan kaynaklanan hata sinyali, Bellek Kullanımı altındaki Test sonuçları sayfasındaki Microsoft 365 için Test Tabanı panosunda gösterilir:
 
 ![Bellek kullanımı sonuçları.](Media/01_memory-utilization-results.png)
 
 
-Bellek tüketimi daha yüksek olduğu için uygulamanın başarısız olması Test Özeti ```Fail``` sayfasında da görüntülenir:
+Daha yüksek bellek tüketimi nedeniyle uygulama hatası, Test Özeti sayfasında olduğu gibi ```Fail``` de görüntülenir:
 
 ![Test özeti sonuçları.](Media/02_test-summary.png)
 
-Bu hata sinyallerini ön plana çıkararak, amacımız, uygulamanız için son kullanıcı deneyimini kesintiye neden olan ve etki altında tutulacak olası sorunları açıkça bayrakla işaret etmektir. 
+Hata sinyallerini önceden sağlayarak hedefimiz, uygulamanız için son kullanıcı deneyimini kesintiye uğratabilecek ve etkileyebilecek olası sorunları net bir şekilde işaretlemektir. 
 
-Daha fazla araştırma yapmak için günlük dosyalarını indirebilir ve Windows Çözümleyicisi'ne veya tercih ettiğiniz araç setini kullanabilirsiniz. Ayrıca, sorunu düzeltme ve son kullanıcıları etkileyen sorunları önlemeye yardımcı olmak için M365 için Test Temel'i birlikte çalışabilirsiniz.
+Daha sonra günlük dosyalarını indirebilir ve daha fazla araştırma yapmak için Windows Performans Analizi veya tercih ettiğiniz araç setini kullanabilirsiniz. Ayrıca sorunu düzeltmek ve son kullanıcıları etkileyen sorunları önlemeye yardımcı olmak için Microsoft 365 için Test Tabanı ekibiyle birlikte çalışabilirsiniz.
 
-Bellek işaretleri, tüm test çalıştırmaları için M365 için Test Tabanı hizmetinin Bellek Kullanımı sekmesinde yakalanır. Aşağıdaki örnekte, Ağustos 2020 ön sürüm güvenlik güncelleştirmesi ile birlikte "Test Bellek Stresi" uygulamasıyla birlikte yeni bir test çalıştırıldı. (Bu uygulama, ekibimiz tarafından bellek gerilemelerini göstermek için yazılmıştır.)
+Bellek sinyalleri, tüm test çalıştırmaları için Microsoft 365 hizmeti için Test Temeli'ndeki Bellek Kullanımı sekmesinde yakalanır. Aşağıdaki örnekte Ağustos 2020 güvenlik güncelleştirmesine karşı eklenen "Duman Testi Bellek Stresi" uygulamasıyla yapılan son test çalıştırması gösterilmektedir. (Bu uygulama, bellek regresyonlarını göstermek için ekibimiz tarafından yazılmıştır.)
 
-![Bellek regresyon sonuçları.](Media/03_memory-regression%20comparison.png)
+![Bellek regresyonu sonuçları.](Media/03_memory-regression%20comparison.png)
 
-Bu örnekte, sık kullanılan işlem "USLTestMemoryStress.exe" işlemi, Temmuz güncelleştirmesi ile karşılaştırıldığında sürüm öncesi Ağustos güncelleştirmesinde ortalama 100 MB tüketmektedir; dolayısıyla M365 için Test Temeli bir regresyon tanımlanır. 
+Bu örnekte sık kullanılan "USLTestMemoryStress.exe" işlemi, Yayın öncesi Ağustos güncelleştirmesinde yayımlanan Temmuz güncelleştirmesine kıyasla ortalama 100 MB tüketti, bu nedenle Microsoft 365 için Test Temeli bir regresyon belirledi. 
 
-Burada "USLTestMemoryStress_Aux1.exe" ve "USLTestMemoryStress_Aux2.exe" olarak gösterilen diğer işlemler de aynı uygulamaya aittir, ancak iki sürümün yaklaşık olarak aynı miktarda bellek tüketmesi dolayısıyla "geçti" ve sağlıklı kabul edilirler.
+Burada "USLTestMemoryStress_Aux1.exe" ve "USLTestMemoryStress_Aux2.exe" olarak gösterilen diğer işlemler de aynı uygulamaya aittir, ancak iki sürüm için yaklaşık olarak aynı miktarda bellek tüketerek "geçtikleri" ve iyi durumda oldukları kabul edilir.
 
-Ana işlemde regresyon "istatistiksel olarak anlamlı" olarak belirlendi, böylece hizmet bu farkı kullanıcıya iletecek ve vurgular. Karşılaştırma istatistiksel olarak anlamlı olsaydı, vurgulanmazdı. Bellek kullanımı gürültülü olabilir, dolayısıyla derlemeler ve sürümler arasında tutarsız farklılıklara karşı anlamlı farkları ayırt etmek için istatistiksel modeller kullanıyoruz. 
+Ana işlemdeki regresyon "istatistiksel olarak anlamlı" olarak belirlendiği için hizmet kullanıcıya bu farkı iletmiş ve vurgulamıştı. Karşılaştırma istatistiksel olarak önemli olmasaydı vurgulanamazdı. Bellek kullanımı gürültülü olabilir, bu nedenle derlemeler ve sürümler arasında, tutarsız farklardan anlamlı farkları ayırt etmek için istatistiksel modeller kullanırız. 
 
-Doğru fark (hatalı pozitif) olduğunda karşılaştırma nadiren işaretlenir, ancak bu regresyonları (veya doğru pozitif pozitifleri) doğru tanımlama olasılığını geliştirmek için gerekli bir ticari karşılıktır.
+Karşılaştırma gerçek bir fark olmadığında (hatalı pozitif) nadiren işaretlenebilir, ancak bu, regresyonları (veya gerçek pozitifleri) doğru tanımlama olasılığını geliştirmek için gerekli bir dengedir.
 
-Sonraki adım, bellek gerilemenin neden olduğunu anlamaktır. Aşağıda gösterildiği gibi, Günlük dosyalarını indir seçeneğinden her iki yürütme için de zip dosyalarını indirebilirsiniz. 
+Sonraki adım, bellek regresyonuna neyin neden olduğunu anlamaktır. Her iki yürütme için zip dosyalarını aşağıda gösterildiği gibi Günlük dosyalarını indir seçeneğinden indirebilirsiniz. 
 
-Bu zip dosyaları, ETL dosyasında bulunan betik sonuçları ve bellek ve CPU performans verileri de içinde olmak üzere test çalıştırma sonuçlarınızı içerir.
+Bu zip dosyaları, ETL dosyasına dahil edilen betik sonuçları ve bellek ile CPU performans verileri de dahil olmak üzere test çalıştırmanızın sonuçlarını içerir.
 
-![Bellek gerileme test dosyaları.](Media/04_memory-regression-test-files.png)
+![Bellek regresyon testi dosyaları.](Media/04_memory-regression-test-files.png)
 
-İki test çalıştırması için günlükleri indirip sıkıştırmayı açabilirsiniz, ardından her klasör içinde ETL dosyasını bulup bunları hedef.etl (sürüm öncesi güncelleştirmede test çalıştırma için) ve temel.etl (son yayımlanan güncelleştirmede test çalıştırması için) olarak yeniden adlandırarak araştırmayı ve gezintiyi basitleştirebilirsiniz.
+araştırma ve gezintiyi basitleştirmek için iki test çalıştırmasının günlüklerini indirip açabilir, ardından her klasördeki ETL dosyasını bulabilir ve target.etl (yayın öncesi güncelleştirmede çalışan test için) ve baseline.etl (son yayınlanan güncelleştirmede çalışan test için) olarak yeniden adlandırabilirsiniz.
  
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Akıllı CPU regresyon çözümlemesini anlamaya başlamak için sonraki makaleye ilerleyin.
+Akıllı CPU regresyon analizini anlamaya başlamak için sonraki makaleye ilerleyin.
 > [!div class="nextstepaction"]
 > [Sonraki adım](cpu.md)
 

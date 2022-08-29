@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5c509c046dfb50d8fefd0843535e77dbe49bd58a
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 55517599dabee5ee4304b3347f71bd53d8d9bfcc
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306250"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325759"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Kamu görevlisi müşterilere yönelik Uç Nokta için Microsoft Defender
 
@@ -207,4 +207,4 @@ Bilinen boşluklar şunlardır:
 |Koşullu Erişim/Koşullu Başlatma|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|
 |MAM desteği|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|
 |Gizlilik Denetimleri|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|
-|Tehdit ve Güvenlik Açığı Yönetimi (TVM)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|
+|Microsoft Defender Güvenlik Açığı Yönetimi (MDVM))|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|![Evet](images/svg/check-yes.svg)|

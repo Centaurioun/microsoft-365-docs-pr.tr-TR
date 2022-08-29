@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3087d5cb22f7cc8ef1afedad73de027caf00771e
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: e59cfc0058a2ad767238f5da0c5ab0cd60aae804
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280453"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322811"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>api sürüm notlarını Uç Nokta için Microsoft Defender
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f8726c006bac66b18d0e8359fe391a5d6e39ad69
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: d16be2d9a072b43fba591a65b78eaa3111b25f65
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306444"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325787"
 ---
 # <a name="create-indicators-for-files"></a>Dosyalar için göstergeler oluşturun
 
@@ -165,7 +165,7 @@ Aynı zorlama türüne ve hedefe sahip çakışan dosya IoC ilkeleri varsa, daha
 > [!WARNING]
 > Dosyalar ve sertifikalar için ilke çakışması işleme, etki alanları/URL'ler/IP adresleri için ilke çakışması işlemesinden farklıdır.
 
-Tehdit ve güvenlik açığı yönetiminin güvenlik açığı olan uygulama özelliklerini engellemesi, zorlama için dosya ICS'lerini kullanır ve yukarıdaki çakışma işleme sırasını izler.
+Microsoft Defender Güvenlik Açığı Yönetimi'ın engelleyici güvenlik açığı olan uygulama özellikleri zorlama için dosya ICS'lerini kullanır ve yukarıdaki çakışma işleme sırasını izler.
 
 ### <a name="examples"></a>Örnekler
 

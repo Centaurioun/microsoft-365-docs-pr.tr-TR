@@ -2,7 +2,7 @@
 title: Microsoft Tehdit Uzmanları
 ms.reviewer: ''
 description: Microsoft Tehdit Uzmanları, Uç Nokta için Microsoft Defender için ek bir uzmanlık katmanı sağlar.
-keywords: yönetilen tehdit avcılığı hizmeti, yönetilen tehdit avcılığı, yönetilen algılama ve yanıt (MDR) hizmeti, MTE, Microsoft Tehdit Uzmanları, uç nokta saldırı bildirimi, Uç Nokta Saldırısı Bildirimi
+keywords: yönetilen tehdit avcılığı hizmeti, yönetilen tehdit avcılığı, yönetilen algılama ve yanıt (MDR) hizmeti, MTE, Microsoft Tehdit Uzmanları, uç nokta saldırı bildirimi, Uç Nokta Saldırısı Bildirimi, Defender Uzmanlarına Sorun
 search.product: Windows 10
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9f612e79eaed1403592668feae1144aab7f6fddf
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 907f69bc081033002c45cd37b690e174d0b530ed
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280751"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323988"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft Tehdit Uzmanları
 
@@ -34,6 +34,9 @@ ms.locfileid: "67280751"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> [!NOTE]
+> Ağustos 2022 itibarıyla, **Bir tehdit uzmanına danışmak** için İsteğe Bağlı Uzmanlar seçeneği **Defender Uzmanlara Sor** olarak yeniden tanımlanmıştır.
 
 Microsoft Tehdit Uzmanları, güvenlik operasyon merkezlerinize (SOC) benzersiz ortamlarınızdaki kritik tehditlerin kaçırılmamasını sağlamaya yardımcı olmak için uzman düzeyinde izleme ve analiz sağlayan bir yönetilen tehdit avcılığı hizmetidir.
 
@@ -73,12 +76,22 @@ Müşteriler, yanıtlarını almak için doğrudan Microsoft 365 Defender portal
 - Şüpheli cihaz davranışına ve gelişmiş bir saldırganla karşılaşılması durumunda sonraki adımlara açıklık kazandırma
 - Tehdit aktörleri, kampanyalar veya yeni ortaya çıkan saldırgan teknikleri ile ilgili risk ve korumayı belirleme
 
+> [!NOTE]
+> Ağustos 2022 itibarıyla, **Bir tehdit uzmanına danışmak** için İsteğe Bağlı Uzmanlar seçeneği **Defender Uzmanlara Sor** olarak yeniden tanımlanmıştır.
+
 **Defender Uzmanlarına Sor** seçeneği, araştırmanız bağlamında uzmanlarla etkileşim kurabilmeniz için portalda çeşitli yerlerde kullanılabilir:
 
-- ***Yardım ve destek menüsü***
 - ***Cihaz sayfası eylemleri menüsü***
+
+![Microsoft 365 Defender portalındaki Cihaz sayfası eylem menüsündeki Defender Uzmanlarına Sor menü seçeneğinin ekran görüntüsü.](../../media/mte/device-page-actions-menu.png)
+
 - ***Uyarılar sayfası eylemleri menüsü***
+
+![Microsoft 365 Defender portalındaki Uyarılar sayfası eylem menüsündeki Defender Uzmanlarına Sor menü seçeneğinin ekran görüntüsü.](../../media/mte/alerts-page-actions-menu.png)
+
 - ***Dosya sayfası eylemleri menüsü***
+
+![Microsoft 365 Defender portalındaki Olaylar sayfası eylem menüsündeki Defender Uzmanlarına Sor menü seçeneğinin ekran görüntüsü.](../../media/mte/incidents-page-actions-menu.png)
 
 > [!NOTE]
 > İsteğe Bağlı Uzmanlar servis taleplerinizin durumunu Microsoft Services Hub aracılığıyla izlemek isterseniz Müşteri Başarısı Hesap Yöneticinize ulaşın.

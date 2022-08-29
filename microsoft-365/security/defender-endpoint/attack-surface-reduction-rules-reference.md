@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 08/10/2022
-ms.openlocfilehash: 363ef1fbf760d54e843994347e1e4c1ad3e40146
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 41afd4f726ecef8b63003a1e639f8430a759e5e7
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306624"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325319"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Saldırı yüzeyi azaltma kuralları başvurusu
 
@@ -69,7 +69,7 @@ Aşağıdaki tabloda, şu anda genel kullanıma sunulan kurallar için desteklen
 | [Office uygulamalarının yürütülebilir içerik oluşturmalarını engelleme](#block-office-applications-from-creating-executable-content) | E | E | E | E | E |
 | [Office uygulamalarının diğer işlemlere kod eklemesini engelleme](#block-office-applications-from-injecting-code-into-other-processes)  | E | E | E | E | E |
 | [Office iletişim uygulamasının alt işlemler oluşturmalarını engelleme](#block-office-communication-application-from-creating-child-processes) | E | E | E | E | E |
-| [WMI olay aboneliği aracılığıyla kalıcılığı engelleme](#block-persistence-through-wmi-event-subscription) <br> \*_Dosya ve klasör dışlamaları desteklenmiyor._ | E <br> sürüm 1903 (derleme 18362) veya üzeri <sup>[[3](#fn1)]<sup></sup> | E | E <br> sürüm 1903 (derleme 18362) veya üzeri | N | N |
+| [Windows Yönetim Araçları (WMI) olay aboneliği aracılığıyla kalıcılığı engelleme](#block-persistence-through-wmi-event-subscription) <br> \*_Dosya ve klasör dışlamaları desteklenmiyor._ | E <br> sürüm 1903 (derleme 18362) veya üzeri <sup>[[3](#fn1)]<sup></sup> | E | E <br> sürüm 1903 (derleme 18362) veya üzeri | N | N |
 | [PSExec ve WMI komutlarından kaynaklanan işlem oluşturma işlemlerini engelleme](#block-process-creations-originating-from-psexec-and-wmi-commands) | E <br> sürüm 1803 veya üzeri <sup>[[3](#fn1)]<sup></sup> | E | E | E | E |
 | [USB'den çalıştırılan güvenilmeyen ve imzalanmamış işlemleri engelleme](#block-untrusted-and-unsigned-processes-that-run-from-usb) | E | E | E | E | E |
 | [Office makrolarından Win32 API çağrılarını engelleme](#block-win32-api-calls-from-office-macros) | E | E | E | N | N |
@@ -349,7 +349,7 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
 
-Bağımlılıklar: Microsoft Defender Virüsten Koruma, AMSI
+Bağımlılıklar: Microsoft Defender Virüsten Koruma, Kötü Amaçlı Yazılımdan Koruma Tarama Arabirimi (AMSI)
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>JavaScript veya VBScript'in indirilen yürütülebilir içeriği başlatmasını engelleme
 

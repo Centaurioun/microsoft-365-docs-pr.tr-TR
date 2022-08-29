@@ -8,24 +8,24 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 02/28/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: db09d1b182965c0a21945b025601c21d5100212b
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 75de203a09b27870287ec1253d2f485575d188ee
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952918"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315536"
 ---
 # <a name="build-a-package"></a>Paket oluşturma
 
 Paket, Test Temeli'ni kullanmak için önkoşul olan uygulama ikili ve test betiklerinizi içeren bir .zip dosyasıdır. Bu Hızlı Başlangıç, uygulamanızda ilk paketinizi oluşturmanız için size yol gösterir. Bu paketle uygulamanızda ilk çalıştırma testi gerçekleştirebilirsiniz.
 
-- *Kullanıma **Açık (OOB)** testi, uygulamanızın yükleme, başlatma, kapatma ve kaldırma işlemlerini gerçekleştirir. Yüklemeden sonra başlatma-kapatma yordamı, tek bir kaldırma çalıştırılmadan önce 30 kez yinelenir. OOB testi, Windows derlemeleri karşılaştırmak için paketinizde standart telemetri sağlar.*
+- *Kullanıma **Açık (OOB)** testi, uygulamanızın yükleme, başlatma, kapatma ve kaldırma işlemlerini gerçekleştirir. Yüklemeden sonra başlatma-kapatma yordamı, tek bir kaldırma çalıştırılmadan önce 30 kez yinelenir. OOB testi, Windows derlemeleriyle karşılaştırmak için paketinizde standart telemetri sağlar.*
 
 İsteğe bağlı olarak, başvurmak ve başlamak için [örnek paketimizi](https://aka.ms/testbase-sample-package) indirebilirsiniz.
 
@@ -165,7 +165,7 @@ Ancak, karşıya yüklemeden önce betiklerin düzgün çalıştığından emin 
 
 1. VM hazırlama (Sanal Makine)
 
-   Her test için şu anda temiz bir Windows ortamı gerektiğinden, bu yerel test için bir sanal makine kullanmanızı öneririz. Azure'da Windows VM oluşturmak kolaydır ([Hızlı başlangıç: Windows sanal makine](/azure/virtual-machines/windows/quick-create-portal)), örneğin Windows 10 Pro, sürüm *21H2* gibi testiniz için uygun bir Windows sürümü (görüntü) seçebilirsiniz.<br>
+   Her test için şu anda temiz bir Windows ortamı gerektiğinden, bu yerel test için bir sanal makine kullanmanızı öneririz. Azure'da Windows VM oluşturmak kolaydır ([Hızlı başlangıç: Windows sanal makinesi](/azure/virtual-machines/windows/quick-create-portal)), örneğin Windows 10 Pro, *sürüm 21H2* gibi testiniz için uygun bir Windows sürümü (görüntü) seçebilirsiniz.<br>
 
 2. Paketinizi VM'ye kopyalama
 
@@ -216,4 +216,4 @@ Her adımdan sonra betiğinizde herhangi bir sorun olup olmadığını kontrol e
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-[Paket Upload](uploadApplication.md)
+[Paketi karşıya yükleme](uploadApplication.md)

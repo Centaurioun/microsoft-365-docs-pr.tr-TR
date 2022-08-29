@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender Güvenlik Merkezi İşlemler panosu
-description: Risk altında cihazları tanımlamak, hizmetin durumunu izlemek ve cihazlar ve uyarılar hakkında istatistikleri ve bilgileri görmek için panoyu kullanın.
-keywords: pano, uyarılar, yeni, devam eden, çözümlenen, risk, risk altında cihazlar, bulaşmalar, raporlama, istatistik, grafikler, grafikler, sağlık, etkin kötü amaçlı yazılım algılamaları, tehdit kategorisi, kategoriler, parola çalmak, fidye yazılımı, istismar, tehdit, düşük önem düzeyi, etkin kötü amaçlı yazılım
+title: Microsoft Defender Güvenlik Merkezi Güvenlik işlemleri panosu
+description: Panoyu kullanarak risk altındaki cihazları belirleyin, hizmetin durumunu izleyin ve cihazlar ve uyarılar hakkındaki istatistikleri ve bilgileri görün.
+keywords: pano, uyarılar, yeni, devam ediyor, çözüldü, risk, risk altındaki cihazlar, bulaşmalar, raporlama, istatistikler, grafikler, grafikler, sistem durumu, etkin kötü amaçlı yazılım algılamaları, tehdit kategorisi, kategoriler, parola çalan, fidye yazılımı, yararlanma, tehdit, düşük önem düzeyi, etkin kötü amaçlı yazılım
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,121 +14,121 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c08f592ac72be10bb4b967521e7e504a9ae70a86
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: aa55d3ab9fe082d00d957cfc404ccf2a6cf35301
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472649"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331499"
 ---
-# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender Güvenlik Merkezi İşlemler panosu
+# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender Güvenlik Merkezi Güvenlik işlemleri panosu
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Bu deneyimi Uç Nokta için Microsoft Defender? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
 
-Güvenlik **işlemleri panosu**, en uç noktada algılama ve yanıtlama ortaya çıkar. Algılamaların nerede görüldükleri ve yanıt eylemlerinin gerekli olduğu vurgular hakkında üst düzey bir genel bakış sağlar.
+**Güvenlik işlemleri panosu**, uç nokta algılama ve yanıt özelliklerinin ortaya çıktığı yerdir. Algılamaların nerede görüldüğüne yönelik üst düzey bir genel bakış sağlar ve yanıt eylemlerinin nerede gerekli olduğunu vurgular.
 
-Pano aşağıdakilerin anlık görüntüsünü görüntüler:
+Panoda aşağıdakilerin anlık görüntüsü görüntülenir:
 
 - Etkin uyarılar
-- Risk altında cihazlar
-- Algılayıcı sağlığı
+- Risk altındaki cihazlar
+- Algılayıcı durumu
 - Hizmet durumu
-- Günlük cihazlar raporlaması
-- Etkin otomatik soruşturmalar
-- Otomatik soruşturma istatistikleri
-- Risk altında kullanıcılar
+- Günlük cihaz raporlama
+- Etkin otomatik araştırmalar
+- Otomatik araştırma istatistikleri
+- Risk altındaki kullanıcılar
 - Şüpheli etkinlikler
 
 :::image type="content" source="images/atp-sec-ops-dashboard.png" alt-text="Güvenlik işlemleri panosu" lightbox="images/atp-sec-ops-dashboard.png":::
 
-Ağ üzerinde şüpheli etkinliklerin gerçekleştir olup olmadığını, nerede ve ne zaman olduğunu hemen belirlemek için uyarıları ve cihazları inceler ve araştırabilirsiniz; bu etkinliklerin hangi bağlamda olduğunu anlamanıza yardımcı olur.
+Göründükleri bağlamı anlamanıza yardımcı olmak için ağınızda şüpheli etkinliklerin olup olmadığını, nerede ve ne zaman gerçekleştiğini hızla belirlemek için uyarıları ve cihazları araştırabilir ve araştırabilirsiniz.
 
-Güvenlik **işlemleri panosunda** , cihazda önemli etkinliklerin veya davranışların tanımlanmasını kolaylaştırmak için toplanan olayları görürsünüz. Ayrıca ayrıntılı olaylara ve düşük düzeyli göstergelere de detaya girsiniz.
+**Güvenlik işlemleri panosunda**, bir cihazdaki önemli olayların veya davranışların tanımlanmasını kolaylaştırmak için toplu olaylar görürsünüz. Ayrıntılı olaylara ve düşük düzeyli göstergelere de detaya gidebilirsiniz.
 
-Ayrıca, kurum genel durumuyla ilgili görsel ipuçları vermek için tıklanabilir kutucuklar da vardır. Her kutucuk ilgili genel görünümün ayrıntılı bir görünümünü açar.
+Ayrıca kuruluşunuzun genel sistem durumu hakkında görsel ipuçları veren tıklanabilir kutucuklara sahiptir. Her kutucuk, ilgili genel bakışın ayrıntılı bir görünümünü açar.
 
 ## <a name="active-alerts"></a>Etkin uyarılar
 
-Kutucukta, ağda son 30 gün içinde etkin uyarıların toplam sayısını görüntüebilirsiniz. Uyarılar Yeni ve Sürüyor **olarak** **gruplandı**.
+Ağınızdaki son 30 günün genel etkin uyarı sayısını kutucuktan görüntüleyebilirsiniz. Uyarılar **Yeni** ve **Devam Ediyor** olarak gruplandırılır.
 
 :::image type="content" source="images/active-alerts-tile.png" alt-text="Etkin uyarılar sayfası" lightbox="images/active-alerts-tile.png":::
 
-Her grup, ilgili uyarı önem düzeyine göre daha da alt kategorilere ayrılmıştır. Her uyarı halkası içindeki uyarı sayısını tıklatın ve o kategorinin kuyruğuna ait sıralanmış görünümü görüntüleyin (Yeni **veya** **Sürüyor**).
+Her grup, ilgili uyarı önem derecelerine göre daha fazla alt kategoriye ayrılır. Bu kategori kuyruğunun (**Yeni** veya **Devam Ediyor**) sıralanmış görünümünü görmek için her uyarı halkasının içindeki uyarı sayısına tıklayın.
 
-Daha fazla bilgi için [Uyarılar'a genel bakış bilgilerine bakın](alerts-queue.md).
+Daha fazla bilgi için bkz. [Uyarılara genel bakış](alerts-queue.md).
 
-Her satır bir uyarı önem düzeyi kategorisi ve uyarının kısa bir açıklamasını içerir. Ayrıntılı görünümünü görmek için uyarıya tıkabilirsiniz. Daha fazla bilgi için Bkz[. Uç Nokta için Microsoft Defender ve Uyarılar'a](investigate-alerts.md) [genel bakış](alerts-queue.md).
+Her satır bir uyarı önem derecesi kategorisi ve uyarının kısa bir açıklamasını içerir. Ayrıntılı görünümünü görmek için bir uyarıya tıklayabilirsiniz. Daha fazla bilgi için bkz[. Uç Nokta için Microsoft Defender uyarıları](investigate-alerts.md) araştırma ve [Uyarılara genel bakış](alerts-queue.md).
 
-## <a name="devices-at-risk"></a>Risk altında cihazlar
+## <a name="devices-at-risk"></a>Risk altındaki cihazlar
 
-Bu kutucuk size, en yüksek etkin uyarı sayısına sahip cihazların listesini gösterir. Her cihaz için toplam uyarı sayısı cihaz adının yanında bir daire içinde gösterilir ve kutucuğun en ucundaki önem düzeyine göre daha da kategorilere ayrılmıştır (etiketini görmek için her önem derecesi çubuğunun üzerine gelin).
+Bu kutucuk, en fazla etkin uyarıya sahip cihazların listesini gösterir. Her cihaz için toplam uyarı sayısı, cihaz adının yanındaki bir daire içinde gösterilir ve ardından kutucuğun en ucundaki önem derecelerine göre daha fazla kategorilere ayrılmıştır (etiketini görmek için her önem derecesi çubuğunun üzerine gelin).
 
-:::image type="content" source="images/devices-at-risk-tile.png" alt-text="Risk altında Cihazlar sayfası" lightbox="images/devices-at-risk-tile.png":::
+:::image type="content" source="images/devices-at-risk-tile.png" alt-text="Risk altındaki cihazlar sayfası" lightbox="images/devices-at-risk-tile.png":::
 
-Bu cihazla ilgili ayrıntıları görmek için cihazın adına tıklayın. Daha fazla bilgi için Bkz[. Cihazlar listesinde Uç Nokta için Microsoft Defender araştırma](investigate-machines.md).
+Bu cihazla ilgili ayrıntıları görmek için cihazın adına tıklayın. Daha fazla bilgi için bkz[. Uç Nokta için Microsoft Defender Cihazlar listesinde cihazları araştırma](investigate-machines.md).
 
-Etkin uyarı **sayısına göre** sıralanmış olarak doğrudan Cihazlar listesine gitmek **için** kutucuğun en üstünde Cihazlar listesine de tıkabilirsiniz. Daha fazla bilgi için Bkz[. Cihazlar listesinde Uç Nokta için Microsoft Defender araştırma](investigate-machines.md).
+Ayrıca, etkin uyarı sayısına göre sıralanmış olarak doğrudan **Cihazlar listesine** gitmek için kutucuğun üst kısmındaki **Cihazlar listesine** de tıklayabilirsiniz. Daha fazla bilgi için bkz[. Uç Nokta için Microsoft Defender Cihazlar listesinde cihazları araştırma](investigate-machines.md).
 
-## <a name="devices-with-sensor-issues"></a>Algılayıcı sorunu olan cihazlar
+## <a name="devices-with-sensor-issues"></a>Algılayıcı sorunları olan cihazlar
 
-Algılayıcı **sorunu olan cihazlar kutucuğu**, tek bir cihazın algılayıcı verilerini en iyi şekilde ve en iyi şekilde Uç Nokta için Microsoft Defender sağlar. Kaç cihaza dikkat gerek olduğunu rapor ediyor ve sorunlu cihazları tanımlamanıza yardımcı oluyor.
+**Algılayıcı sorunları olan cihazlar** kutucuğu, tek tek cihazın Uç Nokta için Microsoft Defender hizmetine algılayıcı verileri sağlayabilme özelliği hakkında bilgi sağlar. Kaç cihazın dikkat gerektirdiğini bildirir ve sorunlu cihazları belirlemenize yardımcı olur.
 
 :::image type="content" source="images/atp-tile-sensor-health.png" alt-text="Algılayıcı sorunları olan cihazlar kutucuğu" lightbox="images/atp-tile-sensor-health.png":::
 
-Hizmete düzgün bir şekilde rapor etmek için bildirilen cihazların sayısı hakkında bilgi sağlayan iki durum göstergesi vardır:
+Hizmete düzgün rapor vermeyen cihazların sayısı hakkında bilgi sağlayan iki durum göstergesi vardır:
 
-- **Yanlış Yapılandırılmış: Bu** cihazlar kısmen algılayıcı verilerini Uç Nokta için Microsoft Defender hizmetine bildiriyor olabilir ve düzeltilmesi gereken yapılandırma hataları olabilir.
-- **Etkin değil**: Geçen ay içinde Uç Nokta için Microsoft Defender için raporlamayı durduran cihazlar.
+- **Yanlış yapılandırılmış**: Bu cihazlar algılayıcı verilerini kısmen Uç Nokta için Microsoft Defender hizmetine bildiriyor olabilir ve düzeltilmesi gereken yapılandırma hataları olabilir.
+- **Etkin değil**: Geçen ay yedi günden uzun bir süre boyunca Uç Nokta için Microsoft Defender hizmetine raporlamayı durduran cihazlar.
 
-Gruplardan herhangi birini tıklatmanız, tercihe bağlı olarak filtrelenmiş cihazlar listesine yönlendirildiniz. Daha fazla bilgi için bkz [. Algılayıcı durumunu denetleme](check-sensor-status.md) ve [Cihazları araştırma](investigate-machines.md).
+Gruplardan herhangi birine tıkladığınızda, tercihinize göre filtrelenmiş cihazlar listesine yönlendirilirsiniz. Daha fazla bilgi için bkz. [Algılayıcı durumunu denetleme](check-sensor-status.md) ve [Cihazları araştırma](investigate-machines.md).
 
 ## <a name="service-health"></a>Hizmet durumu
 
-Bu **Hizmet durumu** kutucuğu, hizmetin etkin olup olduğunu veya sorun olup olduğunu size haber sağlar.
+**Hizmet durumu** kutucuğu, hizmetin etkin olup olmadığını veya sorun olup olmadığını size bildirir.
 
-:::image type="content" source="images/status-tile.png" alt-text="Sayfa Hizmet durumu sayfası" lightbox="images/status-tile.png":::
+:::image type="content" source="images/status-tile.png" alt-text="Hizmet durumu sayfası" lightbox="images/status-tile.png":::
 
-Hizmet durumu hakkında daha fazla bilgi için bkz[. Hizmet Uç Nokta için Microsoft Defender denetleme](service-status.md).
+Hizmet durumu hakkında daha fazla bilgi için bkz. [Uç Nokta için Microsoft Defender hizmet durumunu denetleme](service-status.md).
 
-## <a name="daily-devices-reporting"></a>Günlük cihazlar raporlaması
+## <a name="daily-devices-reporting"></a>Günlük cihaz raporlama
 
-Günlük **cihazlar raporlama kutucuğu** , son 30 gün içinde günlük olarak rapor eden cihazların sayısını gösteren bir çubuk grafik gösterir. Her gün raporlama yapılan cihazların tam sayısını görmek için grafikte tek tek çubukların üzerine gelin.
+**Günlük cihazlar raporlama** kutucuğu, son 30 gün içinde günlük rapor veren cihaz sayısını temsil eden bir çubuk grafik gösterir. Her gün rapor eden cihazların tam sayısını görmek için grafiğin üzerindeki tek tek çubukların üzerine gelin.
 
 :::image type="content" source="images/atp-daily-devices-reporting.png" alt-text="Günlük cihazlar raporlama kutucuğu" lightbox="images/atp-daily-devices-reporting.png":::
 
-## <a name="active-automated-investigations"></a>Etkin otomatik soruşturmalar
+## <a name="active-automated-investigations"></a>Etkin otomatik araştırmalar
 
-Etkin otomatik soruşturmalar kutucuğunu kullanarak, ağınız için son 30 gün içinde yapılan otomatik **soruşturmaların toplam sayısını görüntüebilirsiniz** . Araştırma, Bekleyen eylem, **Cihaz bekleniyor** ve Çalışıyor **olarak** **gruplandı**.
+Ağınızdaki son 30 günün toplam otomatik araştırma sayısını **Etkin otomatik araştırma kutucuğundan** görüntüleyebilirsiniz. Araştırmalar **Beklemede eylemi**, **Cihaz bekleniyor** ve **Çalışıyor** olarak gruplandırılır.
 
-:::image type="content" source="images/atp-active-investigations-tile.png" alt-text="Etkin otomatik soruşturmalar" lightbox="images/atp-active-investigations-tile.png":::
+:::image type="content" source="images/atp-active-investigations-tile.png" alt-text="Etkin otomatik araştırma" lightbox="images/atp-active-investigations-tile.png":::
 
-## <a name="automated-investigations-statistics"></a>Otomatik soruşturma istatistikleri
+## <a name="automated-investigations-statistics"></a>Otomatik araştırma istatistikleri
 
-Bu kutucuk, son yedi gün içinde otomatik soruşturmalarla ilgili istatistikleri gösterir. Tamamlanan araştırma sayısını, başarılı bir şekilde düzeltilen soruşturmaların sayısını, bir soruşturmanın başlatılması için gereken ortalama bekleme süresi, bir uyarıyı düzeltmek için gereken ortalama süre, araştırılan uyarı sayısını ve genel bir elle incelemeden kaydedilen otomasyon saatlerini gösterir. 
+Bu kutucuk, son yedi gün içindeki otomatik araştırmalarla ilgili istatistikleri gösterir. Tamamlanan araştırma sayısını, başarıyla düzeltilen araştırma sayısını, araştırmanın başlatılması için gereken ortalama bekleme süresini, bir uyarıyı düzeltmek için gereken ortalama süreyi, araştırılan uyarı sayısını ve tipik bir el ile araştırmadan kaydedilen otomasyon saat sayısını gösterir. 
 
-:::image type="content" source="images/atp-automated-investigations-statistics.png" alt-text="Otomatik soruşturma istatistikleri" lightbox="images/atp-automated-investigations-statistics.png":::
+:::image type="content" source="images/atp-automated-investigations-statistics.png" alt-text="Otomatik araştırma istatistikleri" lightbox="images/atp-automated-investigations-statistics.png":::
 
-Uygun kategoriye **göre filtrelenmiş** olarak Araştırma sayfasına gitmek için Otomatik  soruşturmalar **, Düzeltilen** soruşturmalar ve Araştırılan Uyarılar'a tıkleyebilirsiniz. Bu, bağlam içinde soruşturmaların ayrıntılı dökümünü görmenizi sağlar.
+**Otomatik araştırmalara**, **Düzeltilen araştırmalara** ve **araştırılan uyarılar'a** tıklayarak uygun kategoriye göre filtrelenmiş **Araştırma sayfasına** gidebilirsiniz. Bu, bağlam içinde araştırmaların ayrıntılı dökümünü görmenizi sağlar.
 
-## <a name="users-at-risk"></a>Risk altında kullanıcılar
+## <a name="users-at-risk"></a>Risk altındaki kullanıcılar
 
-Kutucuk en etkin uyarılara ve yüksek, orta veya düşük uyarılarda görülen uyarı sayısına sahip kullanıcı hesaplarının listesini gösterir. 
+Kutucuk, en etkin uyarılara ve yüksek, orta veya düşük uyarılarda görülen uyarı sayısına sahip kullanıcı hesaplarının listesini gösterir. 
 
-:::image type="content" source="images/atp-users-at-risk.png" alt-text="Risk altında kullanıcılar sayfası" lightbox="images/atp-users-at-risk.png":::
+:::image type="content" source="images/atp-users-at-risk.png" alt-text="Risk altındaki kullanıcılar sayfası" lightbox="images/atp-users-at-risk.png":::
 
 Kullanıcı hesabıyla ilgili ayrıntıları görmek için kullanıcı hesabına tıklayın. Daha fazla bilgi için bkz [. Kullanıcı hesabını araştırma](investigate-user.md).
 
-> Bu deneyimi Uç Nokta için Microsoft Defender? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Kullanıcı Uç Nokta için Microsoft Defender anlama](use.md)
+- [Uç Nokta için Microsoft Defender portalını anlama](use.md)
 - [Portala genel bakış](portal-overview.md)
-- [Threat & Vulnerability Management panosunun görünümünü görüntüleme](tvm-dashboard-insights.md)
-- [Threat Analytics panosuna göz atarak önerilen risk azaltma eylemleri gerçekleştirin](threat-analytics.md)
+- [Microsoft Defender Güvenlik Açığı Yönetimi panosunu görüntüleme](tvm-dashboard-insights.md)
+- [Tehdit analizi panosunu görüntüleme ve önerilen risk azaltma eylemlerini gerçekleştirme](threat-analytics.md)

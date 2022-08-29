@@ -1,7 +1,7 @@
 ---
-title: Soruşturma paketi API'sini topla
-description: Bir cihazdan araştırma paketi toplamakla ilgili aramalar oluşturmak için bu API'yi kullanın.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, soruşturma paketi toplama
+title: Araştırma paketi API'lerini toplama
+description: Bir cihazdan araştırma paketi toplamayla ilgili çağrılar oluşturmak için bu API'yi kullanın.
+keywords: api'ler, graf api'leri, desteklenen API'ler, araştırma paketini toplama
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,26 +13,26 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e6a310c167a0f77f0022b9ba35ed9aa94e437eb9
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 13cc4e0a1c5a72beb6c5c65ceb4a408d7d43a6ea
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996582"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326177"
 ---
-# <a name="collect-investigation-package-api"></a>Soruşturma paketi API'sini topla
+# <a name="collect-investigation-package-api"></a>Araştırma paketi API'lerini toplama
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -44,26 +44,26 @@ Bir cihazdan araştırma paketi toplayın.
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+1. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 > [!IMPORTANT]
 >
-> - Bu yanıt eylemleri yalnızca 11. Windows 10, sürüm 1703 veya sonraki sürümlerde Windows kullanılabilir.
+> - Bu yanıt eylemleri yalnızca Windows 10, sürüm 1703 veya sonraki sürümlerde ve Windows 11 cihazlarda kullanılabilir.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. [Uç Nokta API'leri için Defender Kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Uç Nokta API'leri için Defender'ı kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
-Uygulama|Machine.CollectForensics|'Bilgi toplama'
-Temsilcili (iş veya okul hesabı)|Machine.CollectForensics|'Bilgi toplama'
+Uygulama|Machine.CollectForensics|'Adli tıp topla'
+Temsilci (iş veya okul hesabı)|Machine.CollectForensics|'Adli tıp topla'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Uyarılar İncelemesi' (Daha fazla [](user-roles.md) bilgi için bkz. Rol oluşturma ve yönetme)
-> - Kullanıcının, cihaz grubu ayarlarına göre cihaza erişimi olması gerekir (Daha fazla bilgi için bkz. Cihaz [gruplarını oluşturma](machine-groups.md) ve yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Uyarı Araştırması' (Daha fazla bilgi için bkz [. Rol oluşturma ve yönetme](user-roles.md) )
+> - Kullanıcının cihaz grubu ayarlarına göre cihaza erişimi olmalıdır (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -71,30 +71,30 @@ Temsilcili (iş veya okul hesabı)|Machine.CollectForensics|'Bilgi toplama'
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestigationPackage
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
 Yetkilendirme|Dize|Taşıyıcı {token}. **Gerekli**.
-İçerik Türü|dize|application/json. **Gerekli**.
+İçerik Türü|Dize|application/json. **Gerekli**.
 
 ## <a name="request-body"></a>İstek gövdesi
 
-İstek gövdesinde, aşağıdaki parametreleri olan bir JSON nesnesi girin:
+İstek gövdesinde aşağıdaki parametreleri içeren bir JSON nesnesi sağlayın:
 
 Parametre|Tür|Açıklama
 :---|:---|:---
-Açıklama ekleme|Dize|Eylemle ilişkilendirmek için açıklama. **Gerekli**.
+Açıklama ekleme|Dize|Eylemle ilişkilendirilecek açıklama. **Gerekli**.
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem yanıt gövdesinde 201 - Yanıt kodu [ve Makine](machineaction.md) Eylemi oluşturuldu hata kodunu döndürür. Koleksiyon zaten çalışıyorsa, 400 Hatalı İstek döndürür.
+Başarılı olursa, bu yöntem yanıt gövdesinde 201 - Oluşturulan yanıt kodunu ve [Makine Eylemi'ni](machineaction.md) döndürür. Bir koleksiyon zaten çalışıyorsa, bu 400 Hatalı İstek döndürür.
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/collectInvestigationPackage

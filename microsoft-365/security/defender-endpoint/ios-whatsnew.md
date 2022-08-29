@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 03538b93115d28ed033097f99f446def673c5cdb
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 7c3d61f038198ff331ece29bf17dea14aba12462
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050985"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343809"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS'ta Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -63,9 +63,9 @@ iOS'ta Uç Nokta için Microsoft Defender artık bu tür cihazlarda platform tar
 
 Uç Nokta için Microsoft Defender artık uygulama mağazasında **Microsoft Defender** olarak kullanılabilir. Bu güncelleştirmeyle, uygulama **ABD bölgesindeki Tüketiciler** için önizleme olarak kullanıma sunulacaktır. uygulamada iş veya kişisel hesabınızla nasıl oturum açtığınıza bağlı olarak, Uç Nokta için Microsoft Defender veya kişiler için Microsoft Defender özelliklerine erişebilirsiniz. Daha fazla bilgi için [bu blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) yazısına bakın.
 
-## <a name="threat-and-vulnerability-management"></a>Tehdit ve Güvenlik Açığı Yönetimi
+## <a name="vulnerability-management"></a>Güvenlik Açığı Yönetimi
 
-25 Ocak 2022'de Android ve iOS'ta Tehdit ve Güvenlik Açığı yönetiminin genel kullanılabilirliğini duyurduk. Diğer ayrıntılar için [buradaki techcommunity gönderisine](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663) bakın.
+25 Ocak 2022'de Android ve iOS'ta güvenlik açığı yönetiminin genel kullanıma sunulduğu duyuruldu. Diğer ayrıntılar için [buradaki techcommunity gönderisine](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663) bakın.
 
 ## <a name="1128250101"></a>1.1.28250101
 - **Tunnel ile tümleştirme** - iOS'taki Uç Nokta için Microsoft Defender artık tek bir uygulamada güvenliği ve bağlantıyı etkinleştirmek için bir VPN ağ geçidi çözümü olan Microsoft Tunnel ile tümleştirilebilir. Daha fazla bilgi için bkz. [Microsoft Tunnel'a Genel Bakış](/mem/intune/protect/microsoft-tunnel-overview).

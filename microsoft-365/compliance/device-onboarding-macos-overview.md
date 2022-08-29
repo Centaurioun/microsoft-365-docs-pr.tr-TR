@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: macOS cihazlarını Uyumluluk çözümlerine ekleme hakkında bilgi edinin
-ms.openlocfilehash: b697b805b8a4c65a0528054ca301f16d203e5a64
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
+ms.openlocfilehash: 6cf9d5233f66f1afd62644f774b3f9301a477e2e
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912769"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343513"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview"></a>macOS cihazlarının Microsoft 365'e katılımına genel bakış
 
@@ -104,10 +104,10 @@ DLP algılayıcı telemetrisini almak ve veri kaybı önleme ilkelerini uygulama
 
 Konu | Açıklama
 :---|:---
-|[Intune kullanarak macOS cihazlarını Microsoft Purview çözümlerine ekleme ve çıkarma](device-onboarding-offboarding-macos-intune.md)|Intune aracılığıyla yönetilen macOS cihazları için
-|[macOS cihazlarının Uç Nokta için Microsoft Defender müşterileri için Intune kullanarak Uyumluluk çözümlerine katılımı ve çıkarılması](device-onboarding-offboarding-macos-intune-mde.md) |Intune aracılığıyla yönetilen ve bunlara Uç Nokta için Microsoft Defender (MDE) dağıtılmış macOS cihazları için
-|[JAMF Pro kullanarak macOS cihazlarını Microsoft Purview çözümlerine ekleme ve çıkarma](device-onboarding-offboarding-macos-jamfpro.md) | JAMF Pro aracılığıyla yönetilen macOS cihazları için
-|[macOS cihazlarının Uç Nokta için Microsoft Defender müşterileri için JAMF Pro kullanarak Uyumluluk çözümlerine katılımı ve çıkarılması](device-onboarding-offboarding-macos-jamfpro-mde.md)|JAMF Pro aracılığıyla yönetilen ve bunlara Uç Nokta için Microsoft Defender (MDE) dağıtılmış macOS cihazları için
+|[Intune](device-onboarding-offboarding-macos-intune.md)|Intune aracılığıyla yönetilen macOS cihazları için
+|[Uç Nokta için Microsoft Defender müşterileri için Intune](device-onboarding-offboarding-macos-intune-mde.md) |Intune aracılığıyla yönetilen ve bunlara Uç Nokta için Microsoft Defender (MDE) dağıtılmış macOS cihazları için
+|[JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | JAMF Pro aracılığıyla yönetilen macOS cihazları için
+|[Uç Nokta için Microsoft Defender için JAMF Pro](device-onboarding-offboarding-macos-jamfpro-mde.md)|JAMF Pro aracılığıyla yönetilen ve bunlara Uç Nokta için Microsoft Defender (MDE) dağıtılmış macOS cihazları için
 
 
 ## <a name="related-topics"></a>İlgili konular

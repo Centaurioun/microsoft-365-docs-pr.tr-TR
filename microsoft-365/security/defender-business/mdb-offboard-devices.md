@@ -10,18 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: bd6ea78daa1a19d84efc23c34bdb58704484c0d1
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 24c6e511b32b88ca72de7a7a0654fbea2761bf78
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772421"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325649"
 ---
 # <a name="offboard-a-device-from-microsoft-defender-for-business"></a>cihazı İş için Microsoft Defender'dan çıkarma
 
@@ -57,6 +58,6 @@ Bir cihazı boşaltmak istiyorsanız aşağıdaki yordamlardan birini kullanın:
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [İş için Microsoft Defender'da Tehdit & Güvenlik Açığı Yönetimi panonuzu kullanma](mdb-view-tvm-dashboard.md)
+- [İş için Microsoft Defender'da Microsoft Defender Güvenlik Açığı Yönetimi panonuzu kullanma](mdb-view-tvm-dashboard.md)
 - [İş için Microsoft Defender'de ilkeleri görüntüleme veya düzenleme](mdb-view-edit-create-policies.md)
 - [İş için Microsoft Defender'de cihazları yönetme](mdb-manage-devices.md)

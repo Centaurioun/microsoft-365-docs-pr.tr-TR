@@ -1,7 +1,7 @@
 ---
 title: Öneri yöntemleri ve özellikleri
-description: En son uyarıları almaya devam ediyor.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, get, alerts, recent
+description: En son uyarıları alır.
+keywords: api'ler, graf api'leri, desteklenen API'ler, alma, uyarılar, son kullanılanlar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,25 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f6e8295d83d5ab6fb86726903800d2779f394836
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: d629678e9b03e3abcb0ed88781d4943a137ba7b3
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996537"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331609"
 ---
 # <a name="recommendation-resource-type"></a>Öneri kaynak türü
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -45,13 +45,13 @@ Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz den
 
 ****
 
-|Yöntem|İade Türü|Açıklama|
+|Yöntem|Dönüş Türü|Açıklama|
 |---|---|---|
-|[Tüm önerileri listele](get-all-recommendations.md)|Öneri koleksiyonu|Kuruluşu etkileyen tüm güvenlik önerilerinin listesini alma|
-|[Kimlikle öneriyi al](get-recommendation-by-id.md)|Öneri|Kimliğiyle bir güvenlik önerisi sağlar|
-|[Öneri yazılımı al](list-recommendation-software.md)|[Yazılım](software.md)|Belirli bir yazılımla ilgili bir güvenlik önerisi sağlar|
-|[Öneri cihazları al](get-recommendation-machines.md)|MachineRef koleksiyonu|Güvenlik önerisiyle ilişkilendirilmiş cihazların listesini verir|
-|[Öneri güvenlik açıklarını al](get-recommendation-vulnerabilities.md)|[Güvenlik Açığı](vulnerability.md) koleksiyonu|Güvenlik önerisiyle ilişkilendirilmiş güvenlik açıklarının listesini alma|
+|[Tüm önerileri listele](get-all-recommendations.md)|Öneri koleksiyonu|Kuruluşu etkileyen tüm güvenlik önerilerinin listesini alır|
+|[Kimlikle öneri al](get-recommendation-by-id.md)|Öneri|Güvenlik önerisini kimliğine göre alır|
+|[Öneri yazılımı alma](list-recommendation-software.md)|[Yazılım](software.md)|Belirli bir yazılımla ilgili güvenlik önerisini alır|
+|[Öneri cihazları alma](get-recommendation-machines.md)|MachineRef koleksiyonu|Güvenlik önerisiyle ilişkili cihazların listesini alır|
+|[Öneri güvenlik açıklarını alma](get-recommendation-vulnerabilities.md)|[Güvenlik açığı](vulnerability.md) koleksiyonu|Güvenlik önerisiyle ilişkili güvenlik açıklarının listesini alır|
 |
 
 ## <a name="properties"></a>Özellikler
@@ -62,26 +62,26 @@ Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz den
 
 |Özellik|Tür|Açıklama|
 |---|---|---|
-|id|Dize|Öneri Kimliği|
-|ürünAdı|Dize|İlgili yazılım adı|
+|Kimliği|Dize|Öneri Kimliği|
+|Productname|Dize|İlgili yazılım adı|
 |recommendationName|Dize|Öneri adı|
-|Zayıflar|Long|Bulunan güvenlik açıklarının sayısı|
+|Zayıf|Uzun|Bulunan güvenlik açıklarının sayısı|
 |Satıcı|Dize|İlgili satıcı adı|
 |recommendedVersion|Dize|Önerilen sürüm|
-|recommendedProgram|Dize|Önerilen program|
+|önerilenProgram|Dize|Önerilen program|
 |önerilenVendor|Dize|Önerilen satıcı|
-|recommendationCategory|Dize|Öneri kategorisi. Olası değerler şöyledir: "Hesaplar", "Uygulama", "Ağ", "işletim sistemi", "SecurityControls"|
-|altKategori|Dize|Öneri alt kategorisi|
-|önem derecesiScore|Double|Yapılandırmanın, kuruluşun Cihazlar için Microsoft Güvenli Puanı'nın olası etkileri (1-10)|
-|publicExploit|Boole|Kamu açıkları kullanılabilir|
-|activeAlert|Boole|Etkin uyarı bu öneriyle ilişkilendirildi|
-|associatedThreats|Dize koleksiyonu|Tehdit analizi raporu bu öneriyle ilişkilendirilmiştir|
-|remediationType|Dize|Düzeltme türü. Olası değerler: "ConfigurationChange","Güncelleştir","Yükselt","Kaldır"|
-|Durum|Enum|Öneri özel durumu. Olası değerler şöyledir: "Etkin" ve "Özel Durum"|
-|configScoreImpact|Double|Cihazlar üzerindeki etki için Microsoft Güvenli Puan|
-|exposureImpact|Double|Etkilenme puanının etkisi|
-|totalMachineCount|Long|Yüklü cihaz sayısı|
-|exposedMacount|Long|Güvenlik açıklarına açık olan yüklü cihaz sayısı|
-|nonProductivityImpactedAssets|Long|Etkilenmez cihaz sayısı|
+|recommendationCategory|Dize|Öneri kategorisi. Olası değerler şunlardır: "Hesaplar", "Uygulama", "Ağ", "İşletim Sistemi", "SecurityControls"|
+|Alt kategori|Dize|Öneri alt kategorisi|
+|severityScore|Çift|Yapılandırmanın kuruluşun Cihazlar için Microsoft Güvenli Puanına olası etkisi (1-10)|
+|publicExploit|Boole|Genel güvenlik açığından yararlanma kullanılabilir|
+|activeAlert|Boole|Etkin uyarı bu öneriyle ilişkilendirilir|
+|associatedThreats|Dize koleksiyonu|Tehdit analizi raporu bu öneriyle ilişkilendirilir|
+|remediationType|Dize|Düzeltme türü. Olası değerler şunlardır: "ConfigurationChange","Update","Upgrade","Uninstall"|
+|Durum|Enum|Öneri özel durum durumu. Olası değerler şunlardır: "Etkin" ve "Özel Durum"|
+|configScoreImpact|Çift|Cihazlar için Microsoft Güvenli Puanı etkisi|
+|exposureImpact|Çift|Maruz kalma puanı etkisi|
+|totalMachineCount|Uzun|Yüklü cihaz sayısı|
+|exposedMachinesCount|Uzun|Güvenlik açıklarına maruz kalan yüklü cihaz sayısı|
+|nonProductivityImpactedAssets|Uzun|Etkilenmeyen cihaz sayısı|
 |relatedComponent|Dize|İlgili yazılım bileşeni|
 |

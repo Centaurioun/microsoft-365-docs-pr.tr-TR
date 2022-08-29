@@ -1,35 +1,35 @@
 ---
 title: Test paketi yönergeleri
-description: Test paketiyle ilgili yönergeleri gözden geçirme
+description: Test paketiyle ilgili yönergeleri gözden geçirin
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 02/04/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: 0b5e69a245b21f4f6985eb54ca865b602059cba8
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: eea9d04f2a50ce7a9a858a302eeef2c9feef8868
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63016598"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315558"
 ---
 # <a name="test-package-guidelines"></a>Test paketi yönergeleri
 
-## <a name="1-script-referencing"></a>1. Komut dosyası başvuru
+## <a name="1-script-referencing"></a>1. Betik başvuruyor
 
-Portala bir .zip dosya karşıya yüklerken, bu dosyanın tüm içeriğinin sıkıştırması bir kök klasörüne açılır. Bu ilk sıkıştırmayı açmak için herhangi bir kod yazmanız gerek değildir. Ayrıca, karşıya yüklenen zip dosyasına .zip yolu kullanarak dosya içindeki herhangi bir dosyaya başvurabilirsiniz.
+Portala bir .zip dosyası yüklediğinizde, bu dosyanın tüm içeriğini kök klasöre ayırırız. Bu ilk sıkıştırmayı açma işlemini yapmak için herhangi bir kod yazmanız gerekmez. Karşıya yüklenen zip dosyasına göre yolu kullanarak da .zip içindeki herhangi bir dosyaya başvurabilirsiniz.
 
-Aşağıdaki örnekte, Görevler sekmesindeki giriş alanından ikili dosyalarınıza/betiklerinize nasıl başvurabilirsiniz? gösterilmiştir. Mavi renk metin, Tırnak işaretleri olmadan **Betik yolu** **alanına girilir.**
+Aşağıdaki örnekte, Görevler sekmesindeki giriş alanından ikili dosyalarınıza/betiklerinize nasıl başvurabileceğinizi göstereceğiz. Mavi renkli metin, **Tırnak işaretleri olmadan** **Betik yolu** alanına girilmelidir.
 
-Zip dosyanızı karşıya yüklemeden önce içeriğinin farkında olmak önemlidir. Çoğunlukla klasörü sıkıştırırsanız, yerel makineniz zip dosyasının altında bir ana klasör oluşturur. Bu durumda, başvuru aşağıda kalın yazıyla **gösterildiği gibi** gösterilir:
+Zip dosyanızı karşıya yüklemeden önce içeriği bilmeniz önemlidir. Genellikle bir klasörü sıkıştırırken yerel makineniz zip dosyasının altında bir ana klasör oluşturur. Bu durumda, başvuru aşağıda **kalın** olarak gösterildiği gibi olacaktır:
 
 **Contoso_App_Folder.zip**:
 
@@ -50,7 +50,7 @@ Zip dosyanızı karşıya yüklemeden önce içeriğinin farkında olmak önemli
 - ScriptX.ps1 - **"Contoso_App_Folder/ScriptX.ps1"**
 - Script.ps1 - **"Contoso_App_Folder/klasör1/script.ps1"**
 
-Diğer zamanlarda, zip dosyanız dosyalarınız veya içeriğiniz hemen altında olabilir (örneğin, 2. düzey klasör yok):
+Diğer durumlarda, zip dosyanızın hemen altında dosyalarınız veya içeriğiniz olabilir (örneğin, 2. düzey klasör yoktur):
 
 **Zip_file_uploaded.zip**:
 
@@ -71,53 +71,53 @@ Diğer zamanlarda, zip dosyanız dosyalarınız veya içeriğiniz hemen altında
 
 ## <a name="2-script-execution"></a>2. Betik yürütme
 
-**Kutusu Dışında testleri:** Uygulama paketi en az üç PowerShell betik içermesi gerekir. Bu betikler katılımsız yükleme, başlatma ve kapatma için uygulama ve bağımlılıklarını yürütür. Her betik, kendi önkoşullarını denetlemeyi, kendi başarısını doğrulamayı ve (gerekirse) kendini temizlemeyi ele alır.
+**kullanıma ait olmayan testler:** Uygulama paketinin en az üç PowerShell betik içermesi gerekir. Bu betikler, uygulamanın ve bağımlılıklarının katılımsız yüklenmesi, başlatılması ve kapatılmasını yürütür. Her betik kendi önkoşullarını denetlemeyi, kendi başarısını doğrulamayı ve kendi sonrasını temizlemeyi (gerekirse) işlemelidir.
 
-**İşlevsel testler:** Uygulama paketinde en az bir PowerShell betiği olması gerekir. Birden çok betik sağlanıyorsa, betikler karşıya yükleme sırasına göre çalıştırılıyor ve belirli bir betikte bir hata nedeniyle sonraki betikler yürütülebilir.
+**İşlevsel testler:** Uygulama paketinin en az bir PowerShell betiği içermesi gerekir. Birden fazla betik sağlandığında, betikler karşıya yükleme sırasında çalıştırılır ve belirli bir betikteki bir hata, izleyen betiklerin yürütülmesini durdurur.
 
-### <a name="script-requirements"></a>Komut dosyası gereksinimleri
+### <a name="script-requirements"></a>Betik gereksinimleri
 
 - PowerShell Sürüm 5.1+
 - Katılımsız yürütme
-- Hata iade kodu
-- Başarılı olduğunu doğrula
-- Betikle ilgili günlük klasöründe günlüğe kaydetme
+- Hata dönüş kodu
+- Başarıyı doğrulama
+- Betike özgü günlük klasörüne günlüğe kaydetme
 
-Test komut isteminde başarılı bir şekilde yürütül olması için, her betiğin katılımsız olarak çalışması gerekir (kullanıcı istemi yoktur).
+Her betiğin test işlem hattında başarıyla yürütülebilmesi için katılımsız (kullanıcı istemleri olmadan) çalıştırılması gerekir.
 
 > [!NOTE]
-> Betikler, başarıyla tamamlanma için "0" ve yürütme sırasında herhangi bir hata oluşursa sıfırdan farklı bir hata kodu döndürür.
+> Betikler başarıyla tamamlandığında "0" döndürmelidir ve yürütme sırasında herhangi bir hata oluşursa sıfır olmayan bir hata kodu döndürür.
 
-Her betik, başarılı bir şekilde çalıştır bu betiği doğrulamalı. Örneğin, yükleme betiği, yükleyici ikilisi yürütüldikten sonra sistem üzerinde belirli ikili dosyalar ve/veya kayıt defteri anahtarları olup olduğunu denetlemeli. Bu denetim, yüklemenin başarılı olduğundan emin olmak için makul bir güven sağlar.
+Her betik, başarıyla çalıştırıldığını doğrulamalıdır. Örneğin yükleme betiği, yükleyici ikili dosyasının yürütülmesi tamamlandıktan sonra sistemde belirli ikili dosyaların ve/veya kayıt defteri anahtarlarının olup olmadığını denetlemelidir. Bu denetim, yüklemenin başarılı olduğundan makul ölçüde emin olmak için yardımcı olur.
 
-Test çalıştırması sırasında hataların nerede olduğunu doğru şekilde tanılamak için doğrulama gereklidir. Örneğin, betik uygulamayı başarılı bir şekilde yükleyeyse ve başlatamıyorsa.
+Doğrulama, bir test çalıştırması sırasında hataların oluştuğu yeri düzgün bir şekilde tanılamak için gereklidir. Örneğin, betik uygulamayı başarıyla yükleyemiyorsa ve başlatılamıyorsa.
 
 > [!IMPORTANT]
-> **Aşağıdakilerin önüne geç:** Betikler, yeniden başlatma gerekirse lütfen betiklerinizi yükleme sırasında bunu belirtin.
+> **Aşağıdakilerden kaçının:** Betikler makineyi yeniden başlatmamalıdır, yeniden başlatma gerekiyorsa lütfen betiklerinizin karşıya yüklenmesi sırasında bunu belirtin.
 
-## <a name="3-log-collection"></a>3. Günlük toplama
+## <a name="3-log-collection"></a>3. Günlük koleksiyonu
 
-Her betik, kendi oluşturulan tüm günlüklerin çıkışında 'adlı bir klasöre gir yazarak bunların çıktısını alır `logs`. Dizin adı altında yer alan tüm `logs` klasörler kopyalanır ve sayfada indirilecek şekilde `Test Results` görüntülenir.
+Her betik, oluşturduğu günlüklerin çıkışını adlı `logs`bir klasöre vermelidir. adlı `logs` dizindeki tüm klasörler kopyalanır ve sayfada indirilsin `Test Results` .
 
-Örneğin, yükleme betiği ( **Uygulama/scripts/install** dizininde yer alıyor olabilir) günlüklerinin çıkışını şu şekilde alıyor olabilir: **logs/install.log**; örneğin, son günlük şöyle olur: **Uygulamalar/scripts/install/logs/install.log**
+Örneğin, yükleme betiği ( **Uygulama/betikler/yükleme** dizininde bulunabilir) günlüklerinin çıkışını şu konuma alabilir: **logs/install.log**; böylece son günlük şu konumda olur: **Uygulamalar/betikler/yükleme/logs/install.log**
 
-Sistem, dosyayı diğer klasörlerdeki `install.log` diğer dosyalarla birlikte `logs` alır ve indirmek için harmanlar.
+Sistem, dosyayı diğer `logs` klasörlerdeki `install.log` diğer dosyalarla birlikte alır ve indirmek üzere harmanlar.
 
-## <a name="4-application-binaries"></a>4. Uygulama ikilileri
+## <a name="4-application-binaries"></a>4. Uygulama ikili dosyaları
 
-Tüm ikili dosyalar ve bağımlılıklar tek zip dosyasına ekli olmalı.
+Tüm ikili dosyalar ve bağımlılıklar tek bir zip dosyasına eklenmelidir.
 
-Bu ikili dosyalar, uygulamanın yüklenmesi için gereken her şeyi (örneğin, uygulama yükleyicisi) içerir. Uygulamanın .NET Core/Standard veya .NET Framework gibi tüm çerçevelere bağımlılığı varsa, bu çerçeveler dosyaya ekli olmalı ve sağlanan betiklerde doğru şekilde başvurlanmalıdır.
+Bu ikili dosyalar, uygulamanın yüklenmesi için gereken her şeyi (örneğin, uygulama yükleyicisi) içermelidir. Uygulamanın .NET Core/Standard veya .NET Framework gibi herhangi bir çerçeveye bağımlılığı varsa, bu çerçeveler dosyaya eklenmelidir ve sağlanan betiklerde doğru başvurulmalıdır.
 
 > [!NOTE]
-> Karşıya yüklenen zip dosyasının adı boşluk veya özel karakter olamaz
+> Karşıya yüklenen zip dosyasının adında boşluk veya özel karakter olamaz
 
 ## <a name="5-applicationtest-rules"></a>5. Uygulama/Test kuralları
 
-Uygulama/testlerinin Test Temel altyapısı altında doğru çalışması için, Uygulama/Test kurallarında açıklanan kurallara [uymaları gerekir ](rules.md). 
+Uygulamalarınızın/testlerinizin Test Temeli altyapısı altında doğru şekilde çalışması için Uygulama [/Test kuralları ](rules.md)bölümünde açıklanan kurallara uymaları gerekir. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bazı Sık Sorulan Soruları (SSS **) görüntülemek için sonraki makaleye ilerleyin**
+**Bazı Sık Sorulan Soruları (SSS)** görüntülemek için sonraki makaleye ilerleyin
 > [!div class="nextstepaction"]
 > [Sonraki adım](faq.md)

@@ -1,7 +1,7 @@
 ---
-title: IP ile ilgili uyarılar API'sini al
-description: Uç Nokta için Microsoft Defender'ı kullanarak verilen IP adresiyle ilgili uyarı koleksiyonunu alma
-keywords: api'ler, grafik api'leri, desteklenen api'ler, almak, ip, ilgili, uyarılar
+title: IP ile ilgili uyarılar API'lerini alma
+description: Uç Nokta için Microsoft Defender kullanarak belirli bir IP adresiyle ilgili uyarı koleksiyonunu alma
+keywords: api'ler, graf api'leri, desteklenen API'ler, get, ip, related, alerts
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,54 +13,54 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: b46e67a6fe2d30a4b6480b88ea3a40f842227669
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 71f8a51e97e8bdfa4c68fde86f37aafa80c994b9
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62997173"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325979"
 ---
-# <a name="get-ip-related-alerts-api"></a>IP ile ilgili uyarılar API'sini al
+# <a name="get-ip-related-alerts-api"></a>IP ile ilgili uyarılar API'lerini alma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API açıklaması
-Verilen IP adresiyle ilgili uyarı koleksiyonunu sağlar.
+Belirli bir IP adresiyle ilgili bir uyarı koleksiyonunu alır.
 
 
 ## <a name="limitations"></a>Sınırlamalar
-1. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+1. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. [Uç Nokta API'leri için Defender Kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Uç Nokta API'leri için Defender'ı kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
 Uygulama|Alert.Read.All|'Tüm uyarıları oku'
 Uygulama|Alert.ReadWrite.All|'Tüm uyarıları okuma ve yazma'
-Temsilcili (iş veya okul hesabı) | Alert.Read | 'Uyarıları oku'
-Temsilcili (iş veya okul hesabı) | Alert.ReadWrite | 'Okuma ve yazma uyarıları'
+Temsilci (iş veya okul hesabı) | Alert.Read | 'Uyarıları okuma'
+Temsilci (iş veya okul hesabı) | Alert.ReadWrite | 'Uyarıları okuma ve yazma'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rol](user-roles.md) oluşturma ve yönetme)
-> - Yanıt, cihaz grubu ayarlarına göre kullanıcının erişimi olan cihazlarla ilişkilendirilmiş uyarıları içerir (daha fazla bilgi için bkz. Cihaz grupları [](machine-groups.md) oluşturma ve yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
+> - Yanıt yalnızca cihaz grubu ayarlarına göre kullanıcının erişimi olan cihazlarla ilişkili uyarıları içerir (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -68,7 +68,7 @@ Temsilcili (iş veya okul hesabı) | Alert.ReadWrite | 'Okuma ve yazma uyarılar
 GET /api/ips/{ip}/alerts
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -80,14 +80,14 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı ve IP varsa - Gövdede uyarı varlıklarının listesiyle 200 Tamam.[](alerts.md) IP adresi bilinmiyorsa ancak geçerli değilse boş bir küme döner.
-IP adresi geçersizse HTTP 400 olarak döner.
+Başarılıysa ve IP varsa - Gövdedeki [uyarı](alerts.md) varlıklarının listesiyle 200 Tamam. IP adresi bilinmiyor ancak geçerliyse boş bir küme döndürür.
+IP adresi geçersizse HTTP 400 döndürür.
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/alerts

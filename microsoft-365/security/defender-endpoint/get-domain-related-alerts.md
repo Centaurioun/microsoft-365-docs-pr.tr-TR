@@ -1,7 +1,7 @@
 ---
-title: Etki alanıyla ilgili uyarılar API'sini al
-description: Uç Nokta için Microsoft Defender'da etki alanıyla ilgili uyarıları almak üzere Etki alanıyla ilgili uyarılar API'sini nasıl kullanabileceğinizi öğrenin.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, al, etki alanı, ilgili, uyarılar
+title: Etki alanıyla ilgili uyarılar API'lerini alma
+description: Uç Nokta için Microsoft Defender'da belirli bir etki alanı adresiyle ilgili uyarıları almak için Etki alanıyla ilgili uyarıları alma API'sini kullanmayı öğrenin.
+keywords: api'ler, graf api'leri, desteklenen API'ler, alma, etki alanı, ilgili, uyarılar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,25 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: b67b97ac115057b0e17bfd492e6330a13ee9e213
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 0d2cc5c906110b0159439fc27de0f5690460928d
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996471"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325469"
 ---
-# <a name="get-domain-related-alerts-api"></a>Etki alanıyla ilgili uyarılar API'sini al
+# <a name="get-domain-related-alerts-api"></a>Etki alanıyla ilgili uyarılar API'lerini alma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,29 +39,29 @@ ms.locfileid: "62996471"
 
 ## <a name="api-description"></a>API açıklaması
 
-Verilen bir etki alanı [adresiyle ilgili](alerts.md) Uyarılar koleksiyonunu sağlar.
+Belirli bir etki alanı adresiyle ilgili [Uyarılar](alerts.md) koleksiyonunu alır.
 
 ## <a name="limitations"></a>Sınırlamalar
 
-- Yapılandırılmış bekletme sürenize göre en son güncelleştirilen uyarılarda sorgu kullanabilirsiniz.
-- Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+- Yapılandırdığınız saklama süresine göre son güncelleştirilen uyarıları sorgulayabilirsiniz.
+- Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
 Uygulama|Alert.Read.All|'Tüm uyarıları oku'
 Uygulama|Alert.ReadWrite.All|'Tüm uyarıları okuma ve yazma'
-Temsilcili (iş veya okul hesabı)|Alert.Read|'Uyarıları oku'
-Temsilcili (iş veya okul hesabı)|Alert.ReadWrite|'Okuma ve yazma uyarıları'
+Temsilci (iş veya okul hesabı)|Alert.Read|'Uyarıları okuma'
+Temsilci (iş veya okul hesabı)|Alert.ReadWrite|'Uyarıları okuma ve yazma'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rol](user-roles.md) oluşturma ve yönetme)
-> - Yanıt, cihaz grubu ayarlarına göre kullanıcının erişimi olan cihazlarla ilişkilendirilmiş uyarıları içerir (daha fazla bilgi için bkz. Cihaz grupları [](machine-groups.md) oluşturma ve yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
+> - Yanıt yalnızca cihaz grubu ayarlarına göre kullanıcının erişimi olan cihazlarla ilişkili uyarıları içerir (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -69,9 +69,9 @@ Temsilcili (iş veya okul hesabı)|Alert.ReadWrite|'Okuma ve yazma uyarıları'
 GET /api/domains/{domain}/alerts
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
-|Üst bilgi|Değer|
+|Üstbilgi|Değer|
 |---|---|
 |Yetkilendirme|Dize|
 
@@ -81,13 +81,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı ve etki alanı varsa - Uyarı varlıklarının listesiyle 200 [Tamam](alerts.md) . Etki alanı yoksa - Boş bir kümeyle 200 Tamam.
+Başarılıysa ve etki alanı varsa - [Uyarı](alerts.md) varlıklarının listesiyle 200 Tamam. Etki alanı yoksa - Boş bir kümeyle 200 Tamam.
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiş.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/domains/client.wns.windows.com/alerts

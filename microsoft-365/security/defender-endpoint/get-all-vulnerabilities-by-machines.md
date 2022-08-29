@@ -1,7 +1,7 @@
 ---
-title: Makine ve yazılımla tüm güvenlik açıklarını elde edersiniz
-description: Makine ve Yazılım tarafından kuruluşu etkileyen tüm güvenlik açıklarının listesini alma
-keywords: api'ler, grafik api'si, desteklenen api'ler, get, güvenlik açığı bilgileri, Uç nokta tvm api için Microsoft Defender
+title: Makine ve yazılıma göre tüm güvenlik açıklarını alma
+description: Makine ve Yazılım tarafından kuruluşu etkileyen tüm güvenlik açıklarının listesini alır
+keywords: api'ler, graph api'leri, desteklenen API'ler, alma, güvenlik açığı bilgileri, Uç Nokta için Microsoft Defender tvm API'leri
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,48 +13,48 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 45c29a70f97c681e6236f4327fed8e344d9dc8ac
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: a2a5086ddd56df3dee50a849526021a92e9dfc43
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996546"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342923"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>Makine ve yazılıma göre güvenlik açıklarını listele
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Makine ve yazılım başına kuruluşu etkileyen tüm güvenlik [açıklarının listesini](machine.md) [sağlar](software.md).
+[Makine](machine.md) ve [yazılım](software.md) başına kuruluşu etkileyen tüm güvenlik açıklarının listesini alır.
 
-- Güvenlik açığı bir KB düzeltmesi varsa, yanıtta görünür.
-- [OData V4 sorgularını destekler](https://www.odata.org/documentation/).
-- OData'nın `$filter` sorgusu şunları destekler: `id`, `cveId`, `machineId`, `fixingKbId`, `productName`, `productVersion`ve `severity``productVendor` özellikleri.
-<br>```$stop``` maksimum değeri 10.000
+- Güvenlik açığının düzeltilmesi gereken bir KB varsa yanıtta görünür.
+- [OData V4 sorgularını](https://www.odata.org/documentation/) destekler.
+- OData'nın `$filter` sorgusu şu özelliklerde desteklenir: `id`, `cveId`, `machineId``fixingKbId`, , `productName`, `productVersion`, , `severity`ve `productVendor` özellikleri.
+<br>```$stop``` maksimum değeri 10.000 olan
 <br>```$skip```
 
 > [!TIP]
-> Bu API, veri tümleştirme [için Power BI API'tir](api-power-bi.md).
+> Bu, [Power BI tümleştirmesi](api-power-bi.md) için harika bir API'dir.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Uç nokta API'leri için Microsoft Defender'ı](apis-intro.md) kullanma.
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için ayrıntılar için bkz. [Uç Nokta için Microsoft Defender API'lerini kullanma](apis-intro.md).
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
-Uygulama|Güvenlik Açığı.Read.All|'Tehdit ve Güvenlik Açığı Yönetimi güvenlik açığı bilgileri'
-Temsilcili (iş veya okul hesabı)|Güvenlik Açığı.Okuma|'Tehdit ve Güvenlik Açığı Yönetimi güvenlik açığı bilgileri'
+Uygulama|Vulnerability.Read.All|'Tehdit ve Güvenlik Açığı Yönetimi güvenlik açığı bilgilerini okuyun'
+Temsilci (iş veya okul hesabı)|Vulnerability.Read|'Tehdit ve Güvenlik Açığı Yönetimi güvenlik açığı bilgilerini okuyun'
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -62,7 +62,7 @@ Temsilcili (iş veya okul hesabı)|Güvenlik Açığı.Okuma|'Tehdit ve Güvenli
 GET /api/vulnerabilities/machinesVulnerabilities
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -74,13 +74,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem gövdede güvenlik açıkları listesiyle birlikte 200 Tamam döndürür.
+Başarılı olursa, bu yöntem gövdedeki güvenlik açıklarının listesiyle birlikte 200 Tamam döndürür.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/vulnerabilities/machinesVulnerabilities
@@ -88,7 +88,7 @@ GET https://api.securitycenter.microsoft.com/api/vulnerabilities/machinesVulnera
 
 ### <a name="response-example"></a>Yanıt örneği
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 ```json
 {
@@ -122,5 +122,5 @@ Yanıtın bir örneği:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Risk tabanlı Tehdit ve Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Organizasyon güvenlik açıkları](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Kuruluşunuzdaki güvenlik açıkları](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

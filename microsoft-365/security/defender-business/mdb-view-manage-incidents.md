@@ -10,18 +10,19 @@ ms.topic: how-to
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 0072cd6088d7fa560e5dbd6f449b766cb6afb694
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 2c751289c9d365d72909433fe6534f3f00ba3638
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772653"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67320426"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'da olayları görüntüleme ve yönetme
 
@@ -55,10 +56,10 @@ Microsoft Defender Virüsten Koruma algılanan bir tehdidin (kötü amaçlı yaz
 
 | Senaryo | Uyarı önem derecesi ve nedeni |
 |:---|:---|
-| Microsoft Defender Virüsten Koruma herhangi bir hasara neden olmadan önce bir tehdidi algılar ve durdurur. | Bilgi <br/><br/>Herhangi bir hasar verilmeden önce tehdit durduruldu. |
-| Microsoft Defender Virüsten Koruma, şirketinizde yürütülen kötü amaçlı yazılımları algılar. Kötü amaçlı yazılım durduruldu ve düzeltildi. | Düşük <br/><br/>Tek bir uç noktaya zarar verilmiş olsa da, kötü amaçlı yazılım artık şirketiniz için bir tehdit oluşturmaz. |
-| Yürütülen kötü amaçlı yazılım, İş için Defender tarafından algılanır. Kötü amaçlı yazılım neredeyse hemen engellenir. | Orta veya Yüksek <br/><br/>Kötü amaçlı yazılım, tek tek uç noktalar ve şirketiniz için bir tehdit oluşturur. |
-| Şüpheli davranış algılanır ancak henüz düzeltme işlemi yapılmaz. | Düşük, Orta veya Yüksek <br/><br/>Önem derecesi, davranışın şirketiniz için tehdit oluşturma derecesine bağlıdır. |
+| Microsoft Defender Virüsten Koruma herhangi bir hasara neden olmadan önce bir tehdidi algılar ve durdurur. | **Bilgilendirici**. Herhangi bir hasar verilmeden önce tehdit durduruldu. |
+| Microsoft Defender Virüsten Koruma, şirketinizde yürütülen kötü amaçlı yazılımları algılar. Kötü amaçlı yazılım durduruldu ve düzeltildi. | **Düşük**. Tek bir uç noktaya zarar verilmiş olsa da, kötü amaçlı yazılım artık şirketiniz için bir tehdit oluşturmaz. |
+| Yürütülen kötü amaçlı yazılım, İş için Defender tarafından algılanır. Kötü amaçlı yazılım neredeyse hemen engellenir. | **Orta** veya **Yüksek**. Kötü amaçlı yazılım, tek tek uç noktalar ve şirketiniz için bir tehdit oluşturur. |
+| Şüpheli davranış algılanır ancak henüz düzeltme işlemi yapılmaz. | **Düşük**, **Orta** veya **Yüksek**. Önem derecesi, davranışın şirketiniz için tehdit oluşturma derecesine bağlıdır. |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

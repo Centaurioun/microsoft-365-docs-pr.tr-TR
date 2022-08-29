@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 04/11/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: e2e56b931dd7ae26fa5881036f4cf208b66922d6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2fbe3a21762f6bf048d5f35485a359389df93ce2
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "66861466"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315996"
 ---
 # <a name="test-your-intune-application-on-test-base"></a>Test Tabanında Intune uygulamanızı test edin 
   > [!Note] 

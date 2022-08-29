@@ -19,16 +19,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: how-to
+ms.technology: m365d
 ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: b82d40a1bc12b480851de3ecaec639717b3c00c7
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 5e12c5b96b5e5ebe9bf162360a74dcaf56b28a81
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051810"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328551"
 ---
 # <a name="the-action-center"></a>İşlem merkezi
 

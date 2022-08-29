@@ -25,12 +25,12 @@ appliesto:
 - Microsoft 365 for frontline workers
 ms.reviewer: ansantam
 description: Kuruluşunuzdaki sağlık sağlayıcılarının doğrudan Epic EHR sisteminden Teams'deki hastalarla veya diğer sağlayıcılarla sanal randevular yürütmesini sağlamak için Teams EHR bağlayıcısını tümleştirmeyi öğrenin.
-ms.openlocfilehash: 0d3a4818b327171a03506425d1fbd849eeafdd88
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 6cf48c01e804a6a8a473ae42883c000a9577ea01
+ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824833"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67333796"
 ---
 # <a name="virtual-appointments-with-teams---integration-into-epic-ehr"></a>Teams ile sanal randevular - Epic EHR ile tümleştirme
 
@@ -81,6 +81,7 @@ Teams uygulamasına erişim istemeniz gerekir.
 - Epic sürümü Kasım 2018 veya üzeri.
 - Kullanıcılar, Teams toplantılarını içeren uygun bir Microsoft 365 veya Office 365 lisansına sahiptir.
 - Teams, sağlık kuruluşunuzda benimsenip kullanılır.
+- Kuruluşunuzda [Teams yönetim merkezine](https://admin.teams.microsoft.com) erişimi olan bir Microsoft 365 genel yöneticisi olan bir kişi tanımladı.
 - Sistemleriniz Teams için tüm [yazılım ve tarayıcı gereksinimlerini karşılar](/microsoftteams/hardware-requirements-for-the-teams-app) .
 
 > [!IMPORTANT]

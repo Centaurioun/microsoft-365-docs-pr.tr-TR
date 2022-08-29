@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Windows 10 ve Windows 11 cihazlarını Microsoft 365'e ekleme
-ms.openlocfilehash: 630a159327dc5ce177caf819b21e77ec40929866
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 867a3e356592c054dd3badbc960a5ae4b7edc80a
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635589"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343469"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Windows 10 ve Windows 11 cihazlarının Microsoft 365'e katılımına genel bakış
 
@@ -133,13 +133,13 @@ Bu dağıtım senaryosunda, henüz eklenmemiş Windows 10 veya Windows 11 cihazl
 
 6. Aşağıdaki tablodan izleyebileceğiniz uygun yordamı seçin:
 
-Konu | Açıklama
-:---|:---
-[grup ilkesi kullanarak Windows 10 veya 11 cihazı ekleme](device-onboarding-gp.md) | Yapılandırma paketini cihazlara dağıtmak için grup ilkesi kullanın.
-[Microsoft Endpoint Configuration Manager kullanarak Windows 10 veya 11 cihazı ekleme](device-onboarding-sccm.md) | Yapılandırma paketini cihazlara dağıtmak için Microsoft Endpoint Configuration Manager (geçerli dal) sürüm 1606 veya Microsoft Endpoint Configuration Manager (geçerli dal) sürüm 1602 veya önceki bir sürümü kullanabilirsiniz.
-[Mobil Cihaz Yönetimi araçlarını kullanarak Windows 10 veya 11 cihazı ekleme](device-onboarding-mdm.md) | Yapılandırma paketini cihaza dağıtmak için Mobil Cihaz Yönetimi araçlarını veya Microsoft Intune kullanın.
-[Yerel betik kullanarak Windows 10 veya 11 cihaz ekleme](device-onboarding-script.md) | Yapılandırma paketini uç noktalara dağıtmak için yerel betiği kullanmayı öğrenin.
-[Kalıcı olmayan sanal masaüstü altyapısı (VDI) cihazlarının katılımı](device-onboarding-vdi.md) | VDI cihazlarını yapılandırmak için yapılandırma paketini kullanmayı öğrenin.
+|Konu | Açıklama|
+|:---|:---|
+[Intune](device-onboarding-mdm.md) | Yapılandırma paketini cihaza dağıtmak için Mobil Cihaz Yönetimi araçlarını veya Microsoft Intune kullanın.|
+|[Yapılandırma Yöneticisi](device-onboarding-sccm.md) | Yapılandırma paketini cihazlara dağıtmak için Microsoft Endpoint Configuration Manager (geçerli dal) sürüm 1606 veya Microsoft Endpoint Configuration Manager (geçerli dal) sürüm 1602 veya önceki bir sürümü kullanabilirsiniz.|
+|[Grup İlkesi](device-onboarding-gp.md) | Yapılandırma paketini cihazlara dağıtmak için grup ilkesi kullanın.
+[Yerel betik](device-onboarding-script.md) | Yapılandırma paketini uç noktalara dağıtmak için yerel betiği kullanmayı öğrenin.
+[Sanal masaüstü altyapısı (VDI) cihazları](device-onboarding-vdi.md) | VDI cihazlarını yapılandırmak için yapılandırma paketini kullanmayı öğrenin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: 13eaea1e62dd030f86e08d885ad743d673d6142c
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
-ms.translationtype: HT
+ms.openlocfilehash: d54c4ca0ca9263062e3edb0e062406e5c8d3bc68
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231703"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315843"
 ---
 # <a name="what-is-test-base-for-microsoft-365"></a>Microsoft 365 için Test Base nedir?
 

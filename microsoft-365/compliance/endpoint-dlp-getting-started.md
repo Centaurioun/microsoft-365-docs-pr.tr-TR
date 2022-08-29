@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Dosya etkinliklerini izlemek ve bu dosyalar için uç noktalara koruyucu eylemler uygulamak için Uç nokta veri kaybı önlemeyi ayarlayın.
-ms.openlocfilehash: 7b9999b180262eb35f1b2b36c4059b5b34855e1e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6800eaeec80bddda35a3b297d6fb9689800cc244
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624167"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343447"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Uç noktada veri kaybı önlemeyi kullanmaya başlama
 
@@ -78,10 +78,10 @@ macOS cihazlarını ekleme konusunda belirli yönergeler için bkz:
 
 Konu | Açıklama
 :---|:---
-|[Intune kullanarak macOS cihazlarını Microsoft Purview çözümlerine ekleme ve çıkarma](device-onboarding-offboarding-macos-intune.md)|Intune aracılığıyla yönetilen macOS cihazları için
-|[macOS cihazlarının Uç Nokta için Microsoft Defender müşterileri için Intune kullanarak Uyumluluk çözümlerine katılımı ve çıkarılması](device-onboarding-offboarding-macos-intune-mde.md) |Intune aracılığıyla yönetilen ve bunlara Uç Nokta için Microsoft Defender (MDE) dağıtılmış macOS cihazları için
-|[JAMF Pro kullanarak macOS cihazlarını Microsoft Purview çözümlerine ekleme ve çıkarma)](device-onboarding-offboarding-macos-jamfpro.md) | JAMF Pro aracılığıyla yönetilen macOS cihazları için
-|[Uç Nokta için Microsoft Defender müşterileri için JAMF Pro kullanarak macOS cihazlarını Uyumluluk çözümlerine ekleme ve çıkarma)](device-onboarding-offboarding-macos-jamfpro-mde.md)|JAMF Pro aracılığıyla yönetilen ve bunlara Uç Nokta için Microsoft Defender (MDE) dağıtılmış macOS cihazları için
+|[Intune](device-onboarding-offboarding-macos-intune.md)|Intune aracılığıyla yönetilen macOS cihazları için
+|[Uç Nokta için Microsoft Defender müşterileri için Intune](device-onboarding-offboarding-macos-intune-mde.md) |Intune aracılığıyla yönetilen ve bunlara Uç Nokta için Microsoft Defender (MDE) dağıtılmış macOS cihazları için
+|[JAMF Pro)](device-onboarding-offboarding-macos-jamfpro.md) | JAMF Pro aracılığıyla yönetilen macOS cihazları için
+|[Uç Nokta için Microsoft Defender müşterileri için JAMF Pro)](device-onboarding-offboarding-macos-jamfpro-mde.md)|JAMF Pro aracılığıyla yönetilen ve bunlara Uç Nokta için Microsoft Defender (MDE) dağıtılmış macOS cihazları için
 
 Bir cihaz eklendikten sonra cihaz listesinde görünür olmalı ve denetim etkinliğini Etkinlik gezginine raporlamaya başlamalıdır.
 

@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Yeni bir abonelik satın alarak ve her iki aboneliğin de listelenmiş ve etkin olduğundan emin olarak abonelikleri el ile değiştirin.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 5e2d9e3da47c8d9c86e3e0b6d3d0b648c6016509
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: f9e1a6eed45da6a125917a3ba6b181537248c9c6
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493563"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322947"
 ---
 # <a name="manually-change-microsoft-plans"></a>Microsoft planlarını el ile değiştirme
 
@@ -42,7 +42,7 @@ Tüm kullanıcılarınızı bir plandan diğerine değiştirmenin en iyi yolu [Y
 El ile yapılan bir değişikliğe devam etmek için bu [konudaki 2. Adım: Yeni abonelik satın alma](#step-2-buy-a-new-subscription) konusunu okuyun.
 
 > [!IMPORTANT]
-> Geçerli planınızdan daha az veriyle ilgili hizmet içeren bir plana (düşürme) geçiş yaparsanız, saklamak istediğiniz tüm verileri el ile yedeklemeniz gerekir. Daha fazla bilgi için bkz. [Planları değiştirmeden önce verileri yedekleme](back-up-data-before-switching-plans.md).
+> Geçerli planınızdan daha az veriyle ilgili hizmet içeren bir plana (düşürme) geçiş yaparsanız, saklamak istediğiniz tüm verileri el ile yedeklemeniz gerekir. Daha fazla bilgi için bkz. [Planları değiştirmeden önce verileri yedekleme](move-users-different-subscription.md).
 
 ## <a name="step-2-buy-a-new-subscription"></a>2. Adım: Yeni abonelik satın alma
 

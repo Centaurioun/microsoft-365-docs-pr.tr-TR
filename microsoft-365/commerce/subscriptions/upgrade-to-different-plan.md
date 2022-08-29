@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Planları yükseltmenin en kolay yolu, yönetim merkezindeki Yükseltme sekmesini kullanmaktır. Ancak Yükseltme sekmesi her zaman desteklenmez.
 ms.date: 04/21/2021
-ms.openlocfilehash: 557070177fac2e1ae91d3ddb9e2125221c6b4f3f
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 18e5da20b67068b2834793a0b7013bb27e6c5adf
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489156"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324571"
 ---
 # <a name="upgrade-to-a-different-microsoft-plan"></a>Farklı bir Microsoft planına yükseltme
 
@@ -165,4 +165,4 @@ Plan yükseltmenizin tamamlanacağı gün, eski aboneliğinizdeki faturalama kap
 ## <a name="related-content"></a>İlgili içerik
 
 [Planları el ile değiştirme](change-plans-manually.md) (makale)\
-[İş için Microsoft 365 planlarını değiştirmeden önce verileri yedekleme](back-up-data-before-switching-plans.md) (makale)
+[İş için Microsoft 365 planlarını değiştirmeden önce verileri yedekleme](move-users-different-subscription.md) (makale)

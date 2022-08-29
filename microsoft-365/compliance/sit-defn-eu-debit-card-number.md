@@ -19,22 +19,22 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: AB banka kartı numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 53e7ea3475786032d2871092e3c7e6c39697958c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: dc5d633255b534fc0da217f42766c2d34d9d6180
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949021"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322815"
 ---
 # <a name="eu-debit-card-number"></a>AB banka kartı numarası
 
 ## <a name="format"></a>Biçim
 
-16 basamak
+16 - 19 basamak
 
 ## <a name="pattern"></a>Desen
 
-Karmaşık ve sağlam desen
+16 ile 19 arasında biçimlendirilmiş veya biçimlendirilmemiş basamak
 
 ## <a name="checksum"></a>Sağlama Toplamı
 
@@ -53,9 +53,14 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
     - İşlev `Func_expiration_date`, doğru tarih biçiminde bir tarih bulur.
 - Sağlama toplamı başarılı.
 
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının güvenilirliği düşüktür:
+
+- İşlev Func_eu_debit_card desenle eşleşen içeriği bulur.
+- Sağlama toplamı başarılı.
+
 ```xml
     <!-- EU Debit Card Number -->
-    <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85">
+    <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85" relaxProximity="true">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_eu_debit_card" />
         <Any minMatches="1">
@@ -65,6 +70,10 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
           <Match idRef="Keyword_card_expiration_terms_dict" />
           <Match idRef="Func_expiration_date" />
         </Any>
+      </Pattern>
+        
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_eu_debit_card" />
       </Pattern>
     </Entity>
 ```

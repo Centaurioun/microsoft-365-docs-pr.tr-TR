@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 455b80f590edf255362c7bb047c7aa1b23916666
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 4a21b62e7ab8cad349dbcabebdd1e0d6eeceacd7
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128576"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345161"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Tehdit analizi aracılığıyla yeni ortaya çıkan tehditleri izleme ve yanıtlama
 
@@ -34,7 +34,7 @@ ms.locfileid: "65128576"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Daha karmaşık saldırganlar ve yaygın olarak ortaya çıkan yeni tehditler sayesinde, hızlı bir şekilde şunları yapabilmek çok önemlidir:
 
@@ -59,9 +59,9 @@ Tehdit analizinin en son tehditleri izlemenize ve durdurmanıza nasıl yardımc�
 ## <a name="required-roles-and-permissions"></a>Gerekli roller ve izinler
 Aşağıdaki tabloda, Threat Analytics'e erişmek için gereken roller ve izinler özetlenmiştir. Aşağıdaki tabloda tanımlanan roller, tek tek portallardaki özel rollere başvurur ve benzer şekilde adlandırılmış olsa bile Azure AD'deki genel rollere bağlı değildir.
 
-| **Microsoft 365 Defender için aşağıdaki rollerden biri gereklidir**  | **Uç Nokta için Defender için aşağıdaki rollerden biri gereklidir**  | **Office 365 için Defender için aşağıdaki rollerden biri gereklidir** | **Bulut için Defender Uygulamaları için aşağıdaki rollerden biri gereklidir** | 
+| **Microsoft 365 Defender için aşağıdaki rollerden biri gereklidir**  | **Uç Nokta için Defender için aşağıdaki rollerden biri gereklidir**  | **Office 365 için Defender için aşağıdaki rollerden biri gereklidir** | **Cloud Apps için Defender için aşağıdaki rollerden biri gereklidir** | 
 |---------|---------|---------|---------|
-| Tehdit Analizi | Uyarılar ve olay verileri: <ul><li>Veri görüntüleme- güvenlik işlemleri</li></ul>TVM risk azaltmaları:<ul><li>Verileri görüntüleme - Tehdit ve güvenlik açığı yönetimi</li></ul> | Uyarılar ve olay verileri:<ul> <li>Uyarıları yalnızca görüntüleme yönetimi</li> <li>Uyarıları yönetin</li> <li>Kuruluş yapılandırması</li><li>Denetim günlükleri</li> <li>Yalnızca görüntüleme denetim günlükleri</li><li>Güvenlik gözetmeni</li> <li>Güvenlik yöneticisi</li><li>Yalnızca görüntüleme alıcıları</li> </ul> Engellenen e-posta girişimleri: <ul><li>Güvenlik gözetmeni</li> <li>Güvenlik yöneticisi</li><li>Yalnızca görüntüleme alıcıları</li> | Bulut için Defender Uygulamaları veya MDI kullanıcıları için kullanılamaz |
+| Tehdit Analizi | Uyarılar ve olay verileri: <ul><li>Veri görüntüleme- güvenlik işlemleri</li></ul>Defender Güvenlik Açığı Yönetimi azaltmaları:<ul><li>Verileri görüntüleme - Tehdit ve güvenlik açığı yönetimi</li></ul> | Uyarılar ve olay verileri:<ul> <li>Uyarıları yalnızca görüntüleme yönetimi</li> <li>Uyarıları yönetin</li> <li>Kuruluş yapılandırması</li><li>Denetim günlükleri</li> <li>Yalnızca görüntüleme denetim günlükleri</li><li>Güvenlik gözetmeni</li> <li>Güvenlik yöneticisi</li><li>Yalnızca görüntüleme alıcıları</li> </ul> Engellenen e-posta girişimleri: <ul><li>Güvenlik gözetmeni</li> <li>Güvenlik yöneticisi</li><li>Yalnızca görüntüleme alıcıları</li> | Cloud Apps için Defender veya MDI kullanıcıları için kullanılamaz |
 
 ## <a name="view-the-threat-analytics-dashboard"></a>Tehdit analizi panosunu görüntüleme
 
@@ -117,7 +117,7 @@ Ayrıntılı uzman yazma işlemini okumak için **Analist raporu** bölümüne g
   - İstenmeyebilecek uygulama (PUA) koruması
   - Gerçek zamanlı koruma
 
-Bu bölümdeki azaltma bilgileri[, rapordaki](next-gen-threat-and-vuln-mgt.md) çeşitli bağlantılardan ayrıntılı detaya gitme bilgileri de sağlayan Tehdit ve Güvenlik Açığı Yönetimi verilerini içerir.
+Bu bölümdeki azaltma bilgileri[, rapordaki](next-gen-threat-and-vuln-mgt.md) çeşitli bağlantılardan ayrıntılı detaya gitme bilgileri de sağlayan Microsoft Defender Güvenlik Açığı Yönetimi verilerini içerir.
 
 :::image type="content" source="images/ta-mitigations.png" alt-text="Tehdit analizi raporunun Risk Azaltmalar bölümü" lightbox="images/ta-mitigations.png":::
 
@@ -132,7 +132,7 @@ Raporları kullanırken aşağıdakileri göz önünde bulundurun:
 - Grafikler yalnızca izlenen azaltmaları yansıtır. Grafiklerde gösterilmeyen ek risk azaltmaları için rapora genel bakış'a bakın.
 - Risk azaltmalar tam dayanıklılığı garanti etmez. Sağlanan azaltmalar, dayanıklılığı artırmak için gereken mümkün olan en iyi eylemleri yansıtır.
 - Cihazlar hizmete veri iletmediyse "kullanılamaz" olarak sayılır.
-- Virüsten korumayla ilgili istatistikler Microsoft Defender Virüsten Koruma ayarlarına bağlıdır. Üçüncü taraf virüsten koruma çözümlerine sahip cihazlar "kullanıma sunuldu" olarak görünebilir.
+- Virüsten korumayla ilgili istatistikler Microsoft Defender Virüsten Koruma ayarlarını temel alır. Üçüncü taraf virüsten koruma çözümlerine sahip cihazlar "kullanıma sunuldu" olarak görünebilir.
 
 ## <a name="related-topics"></a>İlgili konular
 

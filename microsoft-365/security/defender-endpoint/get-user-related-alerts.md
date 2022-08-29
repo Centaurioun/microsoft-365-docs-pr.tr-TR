@@ -1,7 +1,7 @@
 ---
-title: Kullanıcıyla ilgili uyarılar API'sini edinin
-description: Uç Nokta için Microsoft Defender'ı kullanarak, verilen bir kullanıcı kimliğiyle ilgili uyarı koleksiyonunu alın.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, almak, kullanıcı, ilgili, uyarılar
+title: Kullanıcıyla ilgili uyarılar API'lerini alma
+description: Uç Nokta için Microsoft Defender kullanarak belirli bir kullanıcı kimliğiyle ilgili uyarı koleksiyonunu alın.
+keywords: api'ler, graf api'leri, desteklenen API'ler, alma, kullanıcı, ilgili, uyarılar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,25 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 11811996ef369c7850030871abdb6a5082546de8
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 0c318d1b877eaeea1ee8e189d7e07a4577d01432
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996558"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325891"
 ---
-# <a name="get-user-related-alerts-api"></a>Kullanıcıyla ilgili uyarılar API'sini edinin
+# <a name="get-user-related-alerts-api"></a>Kullanıcıyla ilgili uyarılar API'lerini alma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,28 +39,28 @@ ms.locfileid: "62996558"
 
 ## <a name="api-description"></a>API açıklaması
 
-Verilen kullanıcı kimliğiyle ilgili uyarı koleksiyonunu sağlar.
+Belirli bir kullanıcı kimliğiyle ilgili bir uyarı koleksiyonunu alır.
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+1. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
 Uygulama|Alert.Read.All|'Tüm uyarıları oku'
 Uygulama|Alert.ReadWrite.All|'Tüm uyarıları okuma ve yazma'
-Temsilcili (iş veya okul hesabı) | Alert.Read | 'Uyarıları oku'
-Temsilcili (iş veya okul hesabı) | Alert.ReadWrite | 'Okuma ve yazma uyarıları'
+Temsilci (iş veya okul hesabı) | Alert.Read | 'Uyarıları okuma'
+Temsilci (iş veya okul hesabı) | Alert.ReadWrite | 'Uyarıları okuma ve yazma'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Verileri Görüntüle'. Daha fazla bilgi için bkz [. Rol oluşturma ve yönetme](user-roles.md).
-> - Yanıt, cihaz grubu ayarlarına göre kullanıcının erişimi olan cihazlarla ilişkilendirilmiş uyarıları içerir (daha fazla bilgi için bkz. Cihaz grupları [](machine-groups.md) oluşturma ve yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Verileri Görüntüle'. Daha fazla bilgi için bkz. [Rolleri oluşturma ve yönetme](user-roles.md).
+> - Yanıt yalnızca cihaz grubu ayarlarına göre kullanıcının erişimi olan cihazlarla ilişkili uyarıları içerir (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -68,9 +68,9 @@ Temsilcili (iş veya okul hesabı) | Alert.ReadWrite | 'Okuma ve yazma uyarılar
 GET /api/users/{id}/alerts
 ```
 
-**Kimlik, tam UPN'değildir; yalnızca kullanıcı adıdır. (örneğin, /api/users/user1@contoso.com/alerts kullanımıyla ilgili uyarı almak için)**
+**Kimlik tam UPN değil, yalnızca kullanıcı adıdır. (örneğin, /api/users/user1/alerts user1@contoso.com uyarılarını almak için)**
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -82,13 +82,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı ve kullanıcı varsa - 200 Tamam. Kullanıcı yoksa - boş bir kümeyle 200 Tamam.
+Başarılı ve kullanıcı varsa - 200 Tamam. Kullanıcı yoksa - Boş bir kümeyle 200 Tamam.
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/users/user1/alerts

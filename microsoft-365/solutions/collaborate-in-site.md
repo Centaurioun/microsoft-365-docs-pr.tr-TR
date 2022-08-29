@@ -1,5 +1,5 @@
 ---
-title: Bir sitede konuklarla işbirliği yapma
+title: Sitedeki konuklarla işbirliği yapma
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -18,137 +18,129 @@ ms.custom:
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
-description: Konuklarla işbirliği Microsoft 365 bir siteyi ayarlamak için SharePoint yapılandırma adımları hakkında bilgi alın.
-ms.openlocfilehash: 7187149324f88c64570549429f86291320431566
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Konuklarla işbirliği için bir SharePoint sitesi ayarlamak için gereken Microsoft 365 yapılandırma adımları hakkında bilgi edinin.
+ms.openlocfilehash: 6814eb2dd1d0876c332a7be932fc8c59a43f198c
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318547"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344657"
 ---
-# <a name="collaborate-with-guests-in-a-site"></a>Bir sitede konuklarla işbirliği yapma
+# <a name="collaborate-with-guests-in-a-site"></a>Sitedeki konuklarla işbirliği yapma
 
-Konuklarla belgeler, veriler ve listeler arasında işbirliği yapma gerekirse, bir konuk SharePoint kullanabilirsiniz. Modern SharePoint siteleri Microsoft 365 Gruplarla bağlantılıdır ve site üyeliğini yönetebilir ve paylaşılan posta kutusu ve takvim gibi ek işbirliği araçları sağlar.
+Konuklarla belgeler, veriler ve listeler arasında işbirliği yapmanız gerekiyorsa, SharePoint sitesini kullanabilirsiniz. Modern SharePoint siteleri Microsoft 365 Grupları bağlanır ve site üyeliğini yönetebilir ve paylaşılan posta kutusu ve takvim gibi ek işbirliği araçları sağlayabilir.
 
-Bu makalede, konuklarla işbirliğine Microsoft 365 yönelik bir SharePoint yapılandırma adımlarını takip edeceğiz.
+Bu makalede, konuklarla işbirliği için bir SharePoint sitesi ayarlamak için gereken Microsoft 365 yapılandırma adımlarını inceleyeceğiz.
 
 ## <a name="video-demonstration"></a>Video tanıtımı
 
-Bu videoda, bu belgede açıklanan yapılandırma adımları gösterir.</br>
+Bu videoda, bu belgede açıklanan yapılandırma adımları gösterilmektedir.</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44Llg?autoplay=false]
 
 ## <a name="azure-external-collaboration-settings"></a>Azure dış işbirliği ayarları
 
-Dış Microsoft 365, çalışma sayfasındaki [B2B dış işbirliği ayarları tarafından en yüksek Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). Azure AD'de konuk paylaşımı devre dışı bırakılmış veya kısıtlanmışsa, bu ayar Microsoft 365.
+Microsoft 365'te paylaşım, [Azure Active Directory'deki B2B dış işbirliği ayarları](/azure/active-directory/external-identities/delegate-invitations) tarafından en üst düzeyde yönetilir. Konuk paylaşımı Azure AD devre dışı bırakıldıysa veya kısıtlandıysa, bu ayar Microsoft 365'te yapılandırdığınız paylaşım ayarlarını geçersiz kılar.
 
-Konuklarla paylaşımın engellenmiş olduğundan emin olmak için B2B dış işbirliği ayarlarını kontrol edin.
+Konuklarla paylaşımın engellenmediğinden emin olmak için B2B dış işbirliği ayarlarını denetleyin.
 
-![Dış işbirliği Azure Active Directory sayfası Ayarlar ekran görüntüsü.](../media/azure-ad-organizational-relationships-settings.png)
+![Azure Active Directory Dış işbirliği Ayarları sayfasının ekran görüntüsü.](../media/azure-ad-organizational-relationships-settings.png)
 
 Dış işbirliği ayarlarını ayarlamak için
 
-1. Azure Active Directory'ta oturum açma[https://aad.portal.azure.com](https://aad.portal.azure.com).
-2. Sol gezinti bölmesinde Ekle'ye **Azure Active Directory**.
-3. Dış **kimlikler'e tıklayın**.
-4. Çalışmaya başlama **ekranında,** sol gezinti bölmesinde Dış işbirliği **ayarları'ne tıklayın**.
-5. Belirli yönetici **rollerine atanan** Üye kullanıcıların ve kullanıcıların, konuk kullanıcılar (üye izinleri olan konuklar dahil) davet etme veya Kuruluşta herkes konuk kullanıcılar (konuklar ve yönetici olmayanlar) seçili olarak davet olabilir.
-6. Değişiklikler yaptıysanız Kaydet'e **tıklayın**.
+1. adresinden Azure Active Directory'de [https://aad.portal.azure.com](https://aad.portal.azure.com)oturum açın.
+2. Sol gezinti bölmesinde **Azure Active Directory'ye** tıklayın.
+3. **Dış kimlikler'e** tıklayın.
+4. **Başlarken** ekranında, sol gezinti bölmesinde **Dış işbirliği ayarları'na** tıklayın.
+5. **Üye kullanıcıların ve belirli yönetici rollerine atanan kullanıcıların, üye izinlerine sahip konuklar dahil konuk kullanıcıları davet etmelerini** sağlayın veya **Kuruluştaki herkes konuk kullanıcıları davet edebilir(konuklar ve yönetici olmayanlar dahil)** seçilidir.
+6. Değişiklik yaptıysanız **Kaydet'e** tıklayın.
 
-İşbirliği kısıtlamaları bölümündeki **ayarlara dikkat** edin. Konukların işbirliği yapmak istediğiniz etki alanlarının engellenmiş olduğundan emin olun.
+**İşbirliği kısıtlamaları** bölümündeki ayarları not edin. İşbirliği yapmak istediğiniz konukların etki alanlarının engellenmediğinden emin olun.
 
-Birden çok kuruluştan konuklarla çalışıyorsanız, dizin verilerine erişim izinlerini kısıtlamak istemeyebilirsiniz. Bu, dizinde başka kimlerin konuk olduğunu görmelerini önler. Bunu yapmak için Konuk kullanıcı erişimi kısıtlamaları'nın **altında Konuk kullanıcıların** özelliklere erişimi ve dizin nesneleri ayarları üyeliği sınırlı seçeneğini veya Konuk kullanıcı erişimi kendi dizin nesnelerinin özellik ve üyelikleriyle **sınırlıdır**.
+Birden çok kuruluşun konuklarıyla çalışıyorsanız, dizin verilerine erişimlerini kısıtlamak isteyebilirsiniz. Bu, dizinde başka kimlerin konuk olduğunu görmelerini engeller. Bunu yapmak için **Konuk kullanıcı erişim kısıtlamaları'nın** altında **Konuk kullanıcılar dizin nesneleri ayarlarının özelliklerine ve üyeliğine sınırlı erişime sahip** veya **Konuk kullanıcı erişimi kendi dizin nesnelerinin özellikleri ve üyelikleriyle sınırlıdır'ı** seçin.
 
-## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 Grupları konuk ayarlarını değiştirme
+## <a name="microsoft-365-groups-guest-settings"></a>Konuk ayarlarını Microsoft 365 Grupları
 
-Modern SharePoint sitelerde, site Microsoft 365 denetimi için Grup Gruplarında kullanılır. Microsoft 365 sitelerinde konuk erişiminin çalışması için Grup Gruplarında konuk SharePoint açık olması gerekir.
+Modern SharePoint siteleri, site erişimini denetlemek için Microsoft 365 Grupları kullanır. SharePoint sitelerindeki konuk erişiminin çalışması için Microsoft 365 Grupları konuk ayarlarının açık olması gerekir.
 
-![Grup Grup Microsoft 365 ayarlarının ekran Microsoft 365 yönetim merkezi.](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 yönetim merkezi Microsoft 365 Grupları konuk ayarlarının ekran görüntüsü.](../media/office-365-groups-guest-settings.png)
 
-Grup konuk Microsoft 365 ayarlarını ayarlamak için
+Microsoft 365 Grupları konuk ayarlarını ayarlamak için
 
-1. Gezinti Microsoft 365 yönetim merkezi gezinti bölmesinde Gezinti **Bölmesi'ni Ayarlar**.
-2. Kuruluş **ayarları'ne tıklayın**.
-3. Listede Grup **Ekle'Microsoft 365 tıklayın**.
-4. Grup sahiplerinin kuruluş **dışından kişi eklemesine izin ver Microsoft 365 Grupları** konuk olarak ekle ve Konuk grup üyelerinin grup içeriğine erişmesine izin **ver onay** kutularının her ikisi de işaretlidir.
-5. Değişiklik yaptıysanız, Değişiklikleri **kaydet'e tıklayın**.
+1. Microsoft 365 yönetim merkezi, sol gezinti bölmesinde **Ayarlar'ı** genişletin.
+2. **Kuruluş ayarları'na** tıklayın.
+3. Listede **Microsoft 365 Grupları'e** tıklayın.
+4. **Grup sahiplerinin Microsoft 365 Grupları için kuruluşunuz dışındaki kişileri konuk olarak eklemesine izin ver** ve **Konuk grup üyelerinin grup içeriğine erişmesine izin ver** onay kutularının da işaretli olduğundan emin olun.
+5. Değişiklik yaptıysanız Değişiklikleri **kaydet'e** tıklayın.
 
-## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint düzeyinde paylaşım ayarlarını değiştirme
+## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint kuruluş düzeyinde paylaşım ayarları
 
-Konukların sitelere erişimleri için SharePoint, kuruluş SharePoint düzeyinde paylaşım ayarlarının konuklarla paylaşıma izin vermesi gerekir.
+Konukların SharePoint sitelerine erişebilmesi için SharePoint kuruluş düzeyinde paylaşım ayarlarının konuklarla paylaşıma izin vermesi gerekir.
 
-Tek tek siteler için  hangi ayarların kullanılabilir olacağını kuruluş düzeyinde ayarlar belirler. Site ayarları, kuruluş düzeyindeki ayarlardan daha izinli olamaz.
+Kuruluş düzeyindeki ayarlar, tek tek siteler için kullanılabilecek ayarları belirler. Site ayarları, kuruluş düzeyindeki ayarlardan daha izinli olamaz.
 
-Kimliği doğrulanmamış dosya ve klasör paylaşımına izin vermek için Herkes'i **seçin**. Kuruluş dışındaki tüm kişilerin kimlik doğrulaması yapmak zorunda olduğundan emin olmak için Yeni ve mevcut **konuklar'ı seçin**. Kuruluş herhangi bir site tarafından gerekli olacak en izinli ayarı seçin.
+Kimliği doğrulanmamış dosya ve klasör paylaşımına izin vermek istiyorsanız **Herkes'i** seçin. Kuruluşunuz dışındaki tüm kişilerin kimlik doğrulaması yapmak zorunda olduğundan emin olmak istiyorsanız **Yeni ve mevcut konuklar'ı** seçin. Kuruluşunuzdaki herhangi bir sitenin ihtiyaç duyduğu en izin veren ayarı seçin.
 
-![Kuruluş düzeyi SharePoint ayarlarının ekran görüntüsü.](../media/sharepoint-organization-external-sharing-controls.png)
+![SharePoint kuruluş düzeyinde paylaşım ayarlarının ekran görüntüsü.](../media/sharepoint-organization-external-sharing-controls.png)
 
 
-Kuruluş SharePoint paylaşım ayarlarını ayarlamak için
+SharePoint kuruluş düzeyinde paylaşım ayarlarını ayarlamak için
 
-1. Gezinti Microsoft 365 yönetim merkezi, Yönetim merkezleri altında, Sol gezinti **bölmesindeKimlik'i SharePoint**.
-2. SharePoint yönetim merkezinde, sol gezinti bölmesinde, İlkeler'in **altında Paylaşım'ı** <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**seçin**</a>.
-3. Dış paylaşım için dış SharePoint Herkes veya Yeni **ve var olan** **konuklar olarak ayarlayın**.
-4. Değişiklik yaptıysanız Kaydet'i **seçin**.
+1. Microsoft 365 yönetim merkezi sol gezinti bölmesindeki **Yönetici merkezlerinin** altında **SharePoint'i** seçin.
+2. SharePoint yönetim merkezinde, sol gezinti bölmesindeki **İlkeler'in** altında <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Paylaşım'ı**</a> seçin.
+3. SharePoint için dış paylaşımın **Herkes** veya **Yeni ve mevcut konuklar olarak ayarlandığından** emin olun.
+4. Değişiklik yaptıysanız **Kaydet'i** seçin.
 
 ## <a name="create-a-site"></a>Site oluşturma
 
-Sonraki adım, konuklarla işbirliği yapmak için kullanmayı planlayın siteyi oluşturmaktır.
+Sonraki adım, konuklarla işbirliği yapmak için kullanmayı planladığınız siteyi oluşturmaktır.
 
 Site oluşturmak için
-1. Yönetim merkezinde SharePoint altında Etkin <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**siteler'i seçin**</a>.
+1. SharePoint yönetim merkezindeki **Siteler'in** altında <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Etkin siteler'i**</a> seçin.
 2. **Oluştur**’u seçin.
-3. Ekip **sitesi'ne seçin**.
+3. **Ekip sitesi'ne** tıklayın.
 4. Bir site adı yazın ve Grup sahibi (site sahibi) için bir ad girin.
-5. Gelişmiş **ayarlar'ın** altında, bu sitenin genel mi yoksa özel site mi olacağını seçin.
+5. **Gelişmiş ayarlar'ın** altında, bu sitenin genel mi yoksa özel mi olmasını istediğinizi seçin.
 6. **İleri**'yi seçin.
 7. **Bitir'i** seçin.
 
-Kullanıcıları daha sonra davetacağız. Daha sonra, bu site için site düzeyinde paylaşım ayarlarını denetlemeniz önemlidir.
+Kullanıcıları daha sonra davet edeceğiz. Ardından, bu sitenin site düzeyinde paylaşım ayarlarını denetlemek önemlidir.
 
-## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint düzeyinde paylaşım ayarlarını değiştirme
+## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint site düzeyinde paylaşım ayarları
 
-Bu site için istediğiniz erişim türüne izin vermelerini sağlayan site düzeyinde paylaşım ayarlarını kontrol edin. Örneğin, kuruluş düzeyi ayarlarını Herkes olarak ayarlarsanız **ancak tüm** konukların bu site için kimlik doğrulaması yapmalarını istiyorsanız, site düzeyinde paylaşım ayarlarının Yeni ve var olan konuklar olarak ayarlanmış olduğundan **emin olun**.
+Bu site için istediğiniz erişim türüne izin verdiklerinden emin olmak için site düzeyinde paylaşım ayarlarını denetleyin. Örneğin, kuruluş düzeyi ayarlarını **Herkes** olarak ayarladıysanız ancak tüm konukların bu site için kimlik doğrulaması yapmasını istiyorsanız, site düzeyinde paylaşım ayarlarının **Yeni ve mevcut konuklar** olarak ayarlandığından emin olun.
 
-Sitenin kimliği doğrulanmamış kullanıcılarla paylaşılanamay (Herkes ayarı), ancak tek tek dosyalar ve klasörler paylaşabilirsiniz.
+Sitenin kimliği doğrulanmamış kişilerle paylaşılamayacağını (**Herkes** ayarı) ancak tek tek dosya ve klasörlerin paylaşabileceğini unutmayın.
 
-Duyarlılık etiketlerini, [site site sitelerinin dış paylaşım ayarlarını kontrol etmek SharePoint kullanabilirsiniz](../compliance/sensitivity-labels-teams-groups-sites.md).
+[SharePoint sitelerinin dış paylaşım ayarlarını denetlemek için duyarlılık etiketlerini](../compliance/sensitivity-labels-teams-groups-sites.md) de kullanabilirsiniz.
 
-![Site dış SharePoint ayarlarının ekran görüntüsü.](../media/sharepoint-site-external-sharing-settings.png)
+![SharePoint sitesi dış paylaşım ayarlarının ekran görüntüsü.](../media/sharepoint-site-external-sharing-settings.png)
 
 Site düzeyinde paylaşım ayarlarını ayarlamak için
-1. Genel SharePoint, sol gezinti bölmesinde Siteler'i genişletin **ve Etkin** <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**siteler'i seçin**</a>.
+1. SharePoint yönetim merkezinde, sol gezinti bölmesinde **Siteler'i** genişletin ve <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Etkin siteler'i**</a> seçin.
 2. Paylaşmak istediğiniz siteyi seçin.
-3. ... öğesini ve ardından Paylaşım'ı **seçin**.
-4. Paylaşımın Herkes veya Yeni ve mevcut **konuklar** **olarak ayarlanmış olduğundan emin olmak**.
-5. Değişiklik yaptıysanız Kaydet'i **seçin**.
+3. ... öğesini ve **ardından Paylaşım'ı** seçin.
+4. Paylaşımın **Herkes** veya **Yeni ve mevcut konuklar olarak ayarlandığından** emin olun.
+5. Değişiklik yaptıysanız **Kaydet'i** seçin.
 
-## <a name="invite-users"></a>Kullanıcıları davet et
+## <a name="invite-users"></a>Kullanıcıları davet etme
 
-Konuk paylaşım ayarları artık yapılandırılmıştır, böylece sitenize iç kullanıcıları ve konukları eklemeye başlayabilirsiniz. Site erişimi ilişkili Microsoft 365 Grubu aracılığıyla denetlenmektedir, dolayısıyla biz de kullanıcıları bu gruba ekliyoruz.
+Artık konuk paylaşım ayarları yapılandırıldığından, sitenize dahili kullanıcılar ve konuklar eklemeye başlayabilirsiniz. Site erişimi ilişkili Microsoft 365 grubu üzerinden denetleneceğinden, oraya kullanıcı ekleyeceğiz.
 
 Bir gruba iç kullanıcıları davet etmek için
 
-1. Kullanıcı eklemek istediğiniz siteye gidin.
-2. Sağ **üst** köşede üye sayısını ifadeen Üyeler bağlantısı'ı seçin.
-3. Üye **ekle'yi seçin**.
-4. Siteye davet etmek istediğiniz kullanıcıların adlarını veya e-posta adreslerini yazın ve ardından Kaydet'i **seçin**.
+1. Kullanıcıları eklemek istediğiniz siteye gidin.
+2. Sağ üstteki üye sayısını gösteren **Üyeler** bağlantısını seçin.
+3. **Üye ekle'yi** seçin.
+4. Siteye davet etmek istediğiniz kullanıcıların adlarını veya e-posta adreslerini yazın ve **kaydet'i** seçin.
 
-Konuklar bu siteden eklenmiştir. Bunları, Bir Veri Ekle'yi kullanarak Web üzerinde Outlook. Bu nedenle, konukları gruba eklemek ve davet etmek için önkoşul olarak **URL sütununda sitenin URL'sini**  tıklatın ve siteye özgü sayfaya gidin. Bu sayfada Uygulama başlatıcı **simgesine tıklayın ve** Başlatıcı'yı **Outlook**. Bu, aşağıda açıklanan yordamın açıklandığı bir gruba konuk davet edebilirsiniz.
-
-Konukları gruba davet etmek için
-1. **Gruplar'ın** altında, konukları davet etmek istediğiniz gruba tıklayın.
-2. Grup kişi kartını açın, sağ **üstteki** Üyeler bağlantısına tıklayın (üye sayısını ifade edecek bağlantı).
-3. Üye **ekle'ye tıklayın**.
-4. Davet etmek istediğiniz konukların e-posta adreslerini yazın ve Ekle'ye **tıklayın**.
-5. **Kapat**'a tıklayın.
-Yalnızca grubun **sahibi değilseniz** Kapat'a tıklamanız gerekmektedir ve bunun sonucunda konuğu gruba eklemenize izin verilmiyor. Böyle durumlarda, konuğu gruba ekleme isteği onay için grup sahibine aktarılır.
+Konuklar siteden Microsoft 365 grubuna eklenemez. Gruba konuk ekleme hakkında bilgi için bkz. [Microsoft 365 Grupları konuk ekleme](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kimliği doğrulanmamış kullanıcılarla dosya ve klasör paylaşmak için en iyi yöntemler](best-practices-anonymous-sharing.md)
+[Kimliği doğrulanmamış kullanıcılarla dosya ve klasör paylaşmaya yönelik en iyi yöntemler](best-practices-anonymous-sharing.md)
 
-[Konuklarla paylaşım sırasında dosyalarda yanlışlıkla açık kalma sürelerini sınırlama](share-limit-accidental-exposure.md)
+[Konuklarla paylaşırken dosyaların yanlışlıkla açığa alınmasını sınırlayın](share-limit-accidental-exposure.md)
 
 [Güvenli bir konuk paylaşım ortamı oluşturma](create-secure-guest-sharing-environment.md)
 

@@ -1,7 +1,7 @@
 ---
-title: Uyarıyla ilgili makine bilgilerini al
-description: Uç Nokta için Microsoft Defender'ı kullanarak belirli bir uyarıyla ilgili tüm cihazları alın.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, uyarı bilgilerini almak, uyarı bilgileri, ilgili cihaz
+title: Uyarıyla ilgili makine bilgilerini alma
+description: Uç Nokta için Microsoft Defender kullanarak belirli bir uyarıyla ilgili tüm cihazları alın.
+keywords: api'ler, graf api'leri, desteklenen API'ler, uyarı bilgilerini alma, uyarı bilgileri, ilgili cihaz
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,27 +13,27 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: cd6ec0ded2ee76f6d348bc054ee1aeaacbd2d022
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 7904539ba8b6c06c6981a4e630a6d95ca4f8422b
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62997179"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324374"
 ---
-# <a name="get-alert-related-machine-information-api"></a>Uyarıyla ilgili makine bilgileri API'sini al
+# <a name="get-alert-related-machine-information-api"></a>Uyarıyla ilgili makine bilgileri API'lerini alma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -41,29 +41,29 @@ ms.locfileid: "62997179"
 
 ## <a name="api-description"></a>API açıklaması
 
-Belirli bir [uyarıyla](machine.md) ilgili Cihazı verir.
+Belirli bir uyarıyla ilgili [Cihazı](machine.md) alır.
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. Yapılandırılmış bekletme sürenize göre en son güncelleştirilen uyarılarda sorgu kullanabilirsiniz.
-2. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+1. Yapılandırdığınız saklama süresine göre son güncelleştirilen uyarıları sorgulayabilirsiniz.
+2. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
 Uygulama|Machine.Read.All|'Tüm makine bilgilerini oku'
 Uygulama|Machine.ReadWrite.All|'Tüm makine bilgilerini okuma ve yazma'
-Temsilcili (iş veya okul hesabı)|Machine.Read|'Makine bilgilerini oku'
-Temsilcili (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma ve yazma'
+Temsilci (iş veya okul hesabı)|Machine.Read|'Makine bilgilerini oku'
+Temsilci (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma ve yazma'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rol](user-roles.md) oluşturma ve yönetme)
-> - Kullanıcının, cihaz grubu ayarlarına göre uyarıyla ilişkilendirilmiş cihaza erişimi olması gerekir (Daha fazla bilgi için bkz. Cihaz [grupları oluşturma](machine-groups.md) ve yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
+> - Kullanıcının, cihaz grubu ayarlarına bağlı olarak uyarıyla ilişkilendirilmiş cihaza erişimi olmalıdır (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -71,7 +71,7 @@ Temsilcili (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma v
 GET /api/alerts/{id}/machine
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -83,13 +83,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı ve uyarı varsa ve cihaz varsa - 200 Tamam. Uyarı bulunamadı veya cihaz bulunamadı - 404 Bulunamadı.
+Başarılı ve uyarı ve cihaz varsa - 200 Tamam. Uyarı bulunamadıysa veya cihaz bulunamadıysa - 404 Bulunamadı.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/machine
@@ -97,7 +97,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_21362
 
 ### <a name="response-example"></a>Yanıt örneği
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 ```json
 {

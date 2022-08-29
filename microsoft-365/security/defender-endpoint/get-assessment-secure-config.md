@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6d706dc8552490b7705cc23fca4751f810211d47
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: dfc0ad17a142eebb021f11e78bedddf33538c61e
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839316"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342855"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Cihaz başına güvenli yapılandırma değerlendirmelerini dışarı aktarma
 
@@ -32,7 +32,7 @@ ms.locfileid: "65839316"
 - [Microsoft Defender Güvenlik Açığı Yönetimi](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Tüm yapılandırmaları ve bunların durumunu cihaz başına temel alarak döndürür.
 
@@ -106,7 +106,7 @@ DeviceName|Dize|Cihazın tam etki alanı adı (FQDN).|johnlaptop.europe.contoso.
 IsApplicable|Bool|Yapılandırmanın veya ilkenin geçerli olup olmadığını gösterir|True
 IsCompliant|Bool|Yapılandırmanın veya ilkenin düzgün yapılandırılıp yapılandırılmadığını gösterir|False
 IsExpectedUserImpact|Bool|Yapılandırmanın uygulanıp uygulanmayacağının kullanıcı tarafından etkilenip etkilenmeyeceğini gösterir|True
-OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu. Bu, aynı ailedeki Windows 10 ve Windows 11 gibi varyasyonlar da dahil olmak üzere belirli işletim sistemlerini gösterir. Ayrıntılar için bkz. tvm tarafından desteklenen işletim sistemleri ve platformlar.|Windows10 ve Windows 11
+OSPlatform|Dize|Cihazda çalışan işletim sisteminin platformu. Bu, aynı ailedeki Windows 10 ve Windows 11 gibi varyasyonlar da dahil olmak üzere belirli işletim sistemlerini gösterir. Ayrıntılar için bkz. Microsoft Defender Güvenlik Açığı Yönetimi (MDVM) tarafından desteklenen işletim sistemleri ve platformlar.|Windows10 ve Windows 11
 RbacGroupName|Dize|Rol tabanlı erişim denetimi (RBAC) grubu. Bu cihaz herhangi bir RBAC grubuna atanmamışsa, değer "Atanmamış" olur. Kuruluş herhangi bir RBAC grubu içermiyorsa, değer "Yok" olur.|Sunucular
 RecommendationReference|Dize|Bu yazılımla ilgili öneri kimliğine başvuru.|sca-_-scid-20000
 Zaman damgası|Dize|Yapılandırmanın cihazda son görüldüğü zaman|2020-11-03 10:13:34.8476880
@@ -293,5 +293,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 Diğer ilgililer
 
-- [Risk tabanlı tehdit & güvenlik açığı yönetimi](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](next-gen-threat-and-vuln-mgt.md)
 - [Kuruluşunuzdaki güvenlik açıkları](tvm-weaknesses.md)

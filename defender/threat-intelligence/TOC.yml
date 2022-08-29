@@ -2,7 +2,7 @@
   expanded: true
   items:
     - name: Microsoft Defender Tehdit Bilgileri (Defender TI) nedir?
-      href: index.md
+      href: what-is-microsoft-defender-threat-intelligence-defender-ti.md
     - name: Veri kümeleri
       href: data-sets.md
     - name: İtibar puanlaması

@@ -1,6 +1,6 @@
 ---
-title: Gösterge kaynağı türü
-description: Varlık ayrıntılarını belirtin ve Uç Nokta için Microsoft Defender'ı kullanarak göstergenin sona erme tarihini tanımlayın.
+title: Gösterge kaynak türü
+description: Varlık ayrıntılarını belirtin ve Uç Nokta için Microsoft Defender kullanarak göstergenin süre sonunu tanımlayın.
 keywords: api'ler, desteklenen api'ler, get, TiIndicator, Indicator, recent
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -13,80 +13,80 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8e8660574f65d614bacfe705d7fad19e39d501a6
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: dcdba63fe99d092f2ce6a9839a94f5e4c297ee66
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62997116"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67330773"
 ---
-# <a name="indicator-resource-type"></a>Gösterge kaynağı türü
+# <a name="indicator-resource-type"></a>Gösterge kaynak türü
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-- Portalda [ilgili Göstergeler](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) sayfasına bakın.
+- Portalda ilgili [Göstergeler sayfasına](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) bakın.
 
-Yöntem|İade Türü|Açıklama
+Yöntem|Dönüş Türü|Açıklama
 :---|:---|:---
-[Liste Göstergeleri](get-ti-indicators-collection.md)|[Gösterge](ti-indicator.md) Koleksiyon|Liste [Göstergesi](ti-indicator.md) varlıkları.
-[Gönderme Göstergesi](post-ti-indicator.md)|[Gösterge](ti-indicator.md)|Gösterge varlıkını gönderin [veya](ti-indicator.md) güncelleştirin.
-[İçeri Aktarma Göstergeleri](import-ti-indicators.md)|[Gösterge](ti-indicator.md) Koleksiyon|Gösterge varlıklarını [gönderin veya](ti-indicator.md) güncelleştirin.
-[Silme Göstergesi](delete-ti-indicator-by-id.md)|İçerik Yok|Gösterge [varlıkını](ti-indicator.md) siler.
+[Göstergeleri Listele](get-ti-indicators-collection.md)|[Göstergesi](ti-indicator.md) Koleksiyon|[Liste Göstergesi](ti-indicator.md) varlıkları.
+[Göstergeyi Gönder](post-ti-indicator.md)|[Göstergesi](ti-indicator.md)|[Gösterge](ti-indicator.md) varlığını gönderin veya güncelleştirin.
+[göstergeleri içeri aktarma](import-ti-indicators.md)|[Göstergesi](ti-indicator.md) Koleksiyon|[Gösterge varlıklarını](ti-indicator.md) gönderin veya güncelleştirin.
+[Göstergeyi Sil](delete-ti-indicator-by-id.md)|İçerik Yok|[Gösterge](ti-indicator.md) varlığını siler.
 
 ## <a name="properties"></a>Özellikler
 
 Özellik|Tür|Açıklama
 :---|:---|:---
-id|Dize|Gösterge varlık [kimliği](ti-indicator.md) .
-indicatorValue|Dize|Gösterge [değeridir](ti-indicator.md).
-indicatorType|Enum|Göstergenin türü. Olası değerler şöyledir: "FileSha1", "FileSha256", "FileMd5", "CertificateThumbprint", "IpAddress", "DomainName" ve "Url".
-uygulama|Dize|Göstergeyle ilişkili uygulama.
-eylem|Enum|Gösterge kuruluşta keşfedilecekse, alınacak eylem. Olası değerler şöyledir: "Uyarı", "Engelle", "Denetim", "Uyarı", "AlertAndBlock", "BlockAndRemediate" ve "İzin Verildi".
-|externalID|Dize|Müşterinin özel korelasyon isteğiyle gönderebn olduğu kimlik.|
-sourceType|Enum|"Kullanıcı", kullanıcı tarafından oluşturulan Gösterge (örneğin portaldan), API aracılığıyla otomatik uygulama kullanılarak gönderilme durumuna karşı "AadApp".
-createdBySource|dize|Göstergeyi gönderilen kullanıcının/uygulamanın adı.
-createdBy|Dize|Göstergeyi gönderilen kullanıcının/uygulamanın benzersiz kimliği.
-lastUpdatedBy|Dize|Göstergeyi en son güncelleştirilen kullanıcının/uygulamanın kimliği.
-creationTimeDateTimeUtc|DateTimeOffset|Göstergenin oluşturulma tarihi ve saati.
-expirationTime|DateTimeOffset|Göstergenin sona erme zamanıdır.
-lastUpdateTime|DateTimeOffset|Göstergenin en son güncelleştirilmiş zamanı.
-önem derecesi|Enum|Göstergenin önem derecesidir. olası değerler şöyledir: "Bilgilendirme", "Düşük", "Orta" ve "Yüksek".
-başlık|Dize|Gösterge başlığı.
-açıklama|Dize|Göstergenin açıklaması.
+Kimliği|Dize|[Gösterge](ti-indicator.md) varlığının kimliği.
+indicatorValue|Dize|[Göstergenin](ti-indicator.md) değeri.
+indicatorType|Enum|Göstergenin türü. Olası değerler şunlardır: "FileSha1", "FileSha256", "FileMd5", "CertificateThumbprint", "IpAddress", "DomainName" ve "Url".
+Uygulama|Dize|Göstergeyle ilişkili uygulama.
+Eylem|Enum|Gösterge kuruluşta bulunursa gerçekleştirilecek eylem. Olası değerler şunlardır: "Warn", "Block", "Audit", "Alert", "AlertAndBlock", "BlockAndRemediate" ve "Allowed".
+|externalID|Dize|Müşterinin özel bağıntı isteğinde gönderebileceği kimlik.|
+Sourcetype|Enum|Kullanıcı tarafından oluşturulan Göstergenin (örneğin portaldan), API aracılığıyla otomatik uygulama kullanılarak gönderilmesi durumunda "AadApp" olması durumunda "Kullanıcı".
+createdBySource|Dize|Göstergeyi gönderen kullanıcının/uygulamanın adı.
+Createdby|Dize|Göstergeyi gönderen kullanıcının/uygulamanın benzersiz kimliği.
+lastUpdatedBy|Dize|Göstergeyi son güncelleştiren kullanıcının/uygulamanın kimliği.
+creationTimeDateTimeUtc|Datetimeoffset|Göstergenin oluşturulduğu tarih ve saat.
+expirationTime|Datetimeoffset|Göstergenin sona erme zamanı.
+lastUpdateTime|Datetimeoffset|Göstergenin son güncelleştirilişi.
+Önem|Enum|Göstergenin önem derecesi. olası değerler şunlardır: "Bilgilendirici", "Düşük", "Orta" ve "Yüksek".
+Başlık|Dize|Gösterge başlığı.
+Açıklama|Dize|Göstergenin açıklaması.
 recommendedActions|Dize|Gösterge için önerilen eylemler.
-rbacGroupNames|Dize listesi|Göstergenin açık olduğu ve etkin olduğu RBAC cihaz grup adları. Tüm cihazlara açık olduğu durumda boş liste.
-rbacGroupIds|Dize listesi|Göstergenin açık olduğu ve etkin olduğu RBAC cihaz grup kimliğidir. Tüm cihazlara açık olduğu durumda boş liste.
-generateAlert|Enum|**Uyarı** oluşturma gerekirse Doğru, bu **gösterge** bir uyarı oluşturmazsa False.
+rbacGroupNames|Dizelerin listesi|Göstergenin açık ve etkin olduğu RBAC cihaz grubu adları. Tüm cihazlara açık olması durumunda boş liste.
+rbacGroupIds|Dizelerin listesi|Göstergenin kullanıma sunulduğu ve etkin olduğu RBAC cihaz grubu kimliği. Tüm cihazlara açık olması durumunda boş liste.
+generateAlert|Enum|Uyarı oluşturma gerekliyse **True****, bu** gösterge uyarı oluşturmamalıdır.
 
 ## <a name="indicator-types"></a>Gösterge Türleri
 
-API tarafından desteklenen gösterge eylem türleri:
+API tarafından desteklenen gösterge eylem türleri şunlardır:
 
-- İzin verildi
+- Izin verilen
 - Denetim
 - Engelle
 - BlockAndRemediate
-- Uyar (Yalnızca Bulut Uygulamaları için Defender)
+- Uyar (yalnızca Cloud Apps için Defender)
 
 Yanıt eylem türlerinin açıklaması hakkında daha fazla bilgi için bkz. [Gösterge oluşturma](manage-indicators.md).
 
 > [!Note]
 >
-> Önceki yanıt eylemleri (AlertAndBlock ve Uyarı) Ocak 2022'ye kadar desteklenecek. Bu tarihten sonra, tüm müşterilerin yukarıda listelenen eylem türlerinden birini kullanmaları gerekir.
+> Önceki yanıt eylemleri (AlertAndBlock ve Alert) Ocak 2022'ye kadar desteklenecektir. Bu tarihten sonra, tüm müşterilerin yukarıda listelenen eylem türlerinden birini kullanması gerekir.
 
 ## <a name="json-representation"></a>Json gösterimi
 

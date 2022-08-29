@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5c2f1c7c73f150c02192fa7e275a07b12c64c79
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 1ff2bb5e7381f09d1a6bf448c18096f0f9263fe0
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438388"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323913"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Ağ cihazı bulma ve güvenlik açığı yönetimi
 
@@ -30,17 +30,17 @@ ms.locfileid: "65438388"
 
 **Şunlar için geçerlidir:**
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Tehdit ve güvenlik açığı yönetimi](next-gen-threat-and-vuln-mgt.md)
+- [Defender Güvenlik Açığı Yönetimi](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 > [!NOTE]
 > [Ağ cihazı bulma ve güvenlik açığı değerlendirmeleri](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) 04-13-2021'de\) yayımlanan Blog\(, Uç Nokta için Defender'daki yeni **Ağ cihazı bulma** özellikleri hakkında içgörüler sağlar. Bu makalede **Ağ cihazı bulma** işleminin ele almak için tasarlandığı sınamaya genel bir bakış ve bu yeni özellikleri kullanmaya başlama hakkında ayrıntılı bilgiler sağlanmaktadır.
 
 Ağ bulma özellikleri, <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalın</a> **cihaz envanteri** bölümünde ve Microsoft 365 Defender konsollarında kullanılabilir.
 
-Önceden yapılandırılmış ağ cihazlarında düzenli aralıklarla kimliği doğrulanmış taramalar gerçekleştirmek için her ağ kesiminde belirlenmiş bir Uç Nokta için Microsoft Defender cihazı kullanılır. Uç Nokta için Defender'ın Tehdit ve Güvenlik Açığı Yönetimi özellikleri, bulunan anahtarları, yönlendiricileri, WLAN denetleyicilerini, güvenlik duvarlarını ve VPN ağ geçitlerini güvenli hale getirmek için tümleşik iş akışları sağlar.
+Önceden yapılandırılmış ağ cihazlarında düzenli aralıklarla kimliği doğrulanmış taramalar gerçekleştirmek için her ağ kesiminde belirlenmiş bir Uç Nokta için Microsoft Defender cihazı kullanılır. Uç Nokta için Defender'ın Güvenlik Açığı Yönetimi özellikleri keşfedildikten sonra bulunan anahtarları, yönlendiricileri, WLAN denetleyicilerini, güvenlik duvarlarını ve VPN ağ geçitlerini güvenli hale getirmek için tümleşik iş akışları sağlar.
 
 Ağ cihazları keşfedilip sınıflandırıldıktan sonra, güvenlik yöneticileri en son güvenlik önerilerini alabilir ve kuruluşlarına dağıtılan ağ cihazlarında yakın zamanda bulunan güvenlik açıklarını gözden geçirebilir.
 
@@ -82,7 +82,7 @@ Müşteri kullanımından toplanan verilere bağlı olarak zaman içinde daha fa
 
 5. Taranacak ağ cihazlarının (veya bu cihazların dağıtıldığı alt ağların) IP adreslerini alın.
 
-6. Ağ cihazlarının SNMP kimlik bilgilerini alın (örneğin: Community Dizesi, noAuthNoPriv, authNoPriv, authPriv). Yeni bir değerlendirme işi yapılandırırken kimlik bilgilerini sağlamanız gerekir.
+6. Ağ cihazlarının SNMP kimlik bilgilerini alın (örneğin: Topluluk Dizesi, noAuthNoPriv, authNoPriv, authPriv). Yeni bir değerlendirme işi yapılandırırken kimlik bilgilerini sağlamanız gerekir.
 
 7. Ara sunucu istemci yapılandırması: Uç nokta için Defender cihaz proxy gereksinimleri dışında ek yapılandırma gerekmez.
 
@@ -98,11 +98,11 @@ Müşteri kullanımından toplanan verilere bağlı olarak zaman içinde daha fa
 
 ## <a name="permissions"></a>İzinler
 
-Değerlendirme işlerini yapılandırmak için aşağıdaki kullanıcı izni seçeneği gereklidir: **Defender'da güvenlik ayarlarını yönetme**. **Ayarlar Roller'e** \> giderek izni bulabilirsiniz. Daha fazla bilgi için bkz. [Rol tabanlı erişim denetimi için roller oluşturma ve yönetme](user-roles.md).
+Değerlendirme işlerini yapılandırmak için aşağıdaki kullanıcı izni seçeneği gereklidir: **Defender'da güvenlik ayarlarını yönetme**. **Ayarlar** \> **Rolleri'ne** giderek izni bulabilirsiniz. Daha fazla bilgi için bkz. [Rol tabanlı erişim denetimi için roller oluşturma ve yönetme](user-roles.md).
 
 ## <a name="install-the-network-scanner"></a>Ağ tarayıcısını yükleme
 
-1. **Microsoft 365 güvenlik** \> **Ayarlar** \> **Uç Nokta** \> **Değerlendirme işleri'ne** gidin (**Ağ değerlendirmeleri** altında).
+1. **Microsoft 365 güvenlik** \> **Ayarları** \> **Uç Noktaları** \> **Değerlendirme işleri'ne** gidin (**Ağ değerlendirmeleri** altında).
     1. Microsoft 365 Defender portalında Ayarlar > Değerlendirme işleri sayfasına gidin.
 
 2. Ağ tarayıcısını indirin ve belirlenen Uç Nokta için Defender değerlendirme cihazına yükleyin.
@@ -189,7 +189,7 @@ Cihazlar hala gösterilmiyorsa, ağ tarayıcısını yüklediğiniz değerlendir
 
 Tarayıcının düzgün çalıştığını doğrulayın. Ardından tarama tanımına gidin ve "Testi çalıştır"ı seçin. İlgili IP adreslerinden hangi hata iletilerinin döndüğünü denetleyin.
 
-### <a name="required-threat-and-vulnerability-management-user-permission"></a>Kullanıcı izni Tehdit ve Güvenlik Açığı Yönetimi gerekli
+### <a name="required-defender-vulnerability-management-user-permission"></a>Gerekli Defender Güvenlik Açığı Yönetimi kullanıcı izni
 
 Kayıt şu hatayla tamamlandı: "Yeni aracı eklemek için yeterli izniniz yok gibi görünüyor. Gerekli izin 'Defender'da güvenlik ayarlarını yönet'tir."
 

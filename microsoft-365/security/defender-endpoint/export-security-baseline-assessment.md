@@ -1,6 +1,6 @@
 ---
 title: Cihaz başına güvenlik temeli değerlendirme yöntemleri ve özellikleri
-description: "\"Tehdit ve Güvenlik Açığı Yönetimi\" verileri çeken güvenlik temelleri API'leri hakkında bilgi sağlar. Farklı veri türlerini almak için farklı API çağrıları vardır. Genel olarak, her API çağrısı kuruluşunuzdaki cihazlar için gerekli verileri içerir."
+description: "\"Microsoft Defender Güvenlik Açığı Yönetimi\" verileri çeken güvenlik temelleri API'leri hakkında bilgi sağlar. Farklı veri türlerini almak için farklı API çağrıları vardır. Genel olarak, her API çağrısı kuruluşunuzdaki cihazlar için gerekli verileri içerir."
 keywords: api, API'ler, dışarı aktarma değerlendirmesi, cihaz değerlendirmesi başına, makine değerlendirmesi başına, güvenlik açığı değerlendirmesi raporu, cihaz güvenlik açığı değerlendirmesi, cihaz güvenlik açığı raporu, güvenli yapılandırma değerlendirmesi, güvenli yapılandırma raporu, yazılım güvenlik açıkları değerlendirmesi, yazılım güvenlik açığı raporu, makineye göre güvenlik açığı raporu,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5002c4ffe5e987865ba80d80b27b1e58adff2696
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: fb7dd6ff2f752fdbd8eff644ba728391d1f1dfa0
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020373"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343361"
 ---
 # <a name="export-security-baselines-assessment-per-device"></a>Cihaz başına güvenlik temelleri değerlendirmesini dışarı aktarma
 
@@ -97,7 +97,7 @@ GET /api/machines/baselineComplianceAssessmentByMachine
 |isCompliant|Boole|Cihazın yapılandırmayla uyumlu olup olmadığını gösterir.
 |Kimliği|Dize|DeviceId, ProfileId ve ConfigurationId'nin birleşimi olan kayıt için benzersiz tanımlayıcı.
 |osVersion|Dize|Cihazda çalışan işletim sisteminin belirli bir sürümü.
-|osPlatform|Dize|Cihazda çalışan işletim sistemi platformu. Windows 10 ve Windows 11 gibi aynı aile içinde varyasyonları olan belirli işletim sistemleri. Ayrıntılar için bkz. [TVM tarafından desteklenen işletim sistemleri ve platformlar](tvm-supported-os.md) .
+|osPlatform|Dize|Cihazda çalışan işletim sistemi platformu. Windows 10 ve Windows 11 gibi aynı aile içinde varyasyonları olan belirli işletim sistemleri. Ayrıntılar için bkz. [MDVM tarafından desteklenen işletim sistemleri ve platformlar](tvm-supported-os.md) .
 |rbacGroupId|Int|Rol tabanlı erişim denetimi (RBAC) grup kimliği. Cihaz herhangi bir RBAC grubuna atanmamışsa, değer "Atanmamış" olur. Kuruluş herhangi bir RBAC grubu içermiyorsa, değer "Yok" olur.
 |rbacGroupName|Dize|Rol tabanlı erişim denetimi (RBAC) grubu. Cihaz herhangi bir RBAC grubuna atanmamışsa, değer "Atanmamış" olur. Kuruluş herhangi bir RBAC grubu içermiyorsa, değer "Yok" olur.
 |DataCollectionTimeOffset|Datetime|Verilerin cihazdan toplandığı zaman. Veri toplanmadıysa bu alan görünmeyebilir.

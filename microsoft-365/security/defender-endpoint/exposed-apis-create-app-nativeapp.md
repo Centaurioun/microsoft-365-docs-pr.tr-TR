@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: aec4c7bdc0da76a6a52a8b8f19d89b8b54f3df9f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c7adaa79ef98b0ccfc1c12e2f84b30c8cd5600fe
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173478"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327914"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Uç Nokta için Microsoft Defender API'lerini kullanma
 
@@ -36,7 +36,7 @@ ms.locfileid: "65173478"
 > Gelişmiş avcılık özellikleri İş için Defender'a dahil değildir. Bkz[. İş için Microsoft Defender Uç Nokta için Microsoft Defender Planları 1 ve 2 ile karşılaştırma](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -48,7 +48,7 @@ Kullanıcı olmadan Uç Nokta için Microsoft Defender programlı erişime ihtiy
 
 Hangi erişime ihtiyacınız olduğundan emin değilseniz [Giriş sayfasını](apis-intro.md) okuyun.
 
-Uç Nokta için Microsoft Defender, bir dizi programlı API aracılığıyla verilerinin ve eylemlerinin büyük bir kısmını kullanıma sunar. Bu API'ler, iş akışlarını otomatikleştirmenize ve Uç Nokta için Microsoft Defender özelliklerine göre yenilik yapmanızı sağlar. API erişimi için OAuth2.0 kimlik doğrulaması gerekir. Daha fazla bilgi için bkz[. OAuth 2.0 Yetkilendirme Kodu Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Uç Nokta için Microsoft Defender, bir dizi programlı API aracılığıyla verilerinin ve eylemlerinin büyük bir kısmını kullanıma sunar. Bu API'ler, iş akışlarını otomatikleştirmenize ve Uç Nokta için Microsoft Defender özelliklerine göre yenilik yapmanızı sağlar. API erişimi için OAuth2.0 kimlik doğrulaması gerekir. Daha fazla bilgi için bkz [. OAuth 2.0 Yetkilendirme Kodu Akışı](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Genel olarak, API'leri kullanmak için aşağıdaki adımları uygulamanız gerekir:
 
@@ -69,9 +69,9 @@ Bu sayfada AAD uygulaması oluşturma, Uç Nokta için Microsoft Defender için 
 
 1. **Genel Yönetici** rolüne sahip bir kullanıcı hesabıyla [Azure'da](https://portal.azure.com) oturum açın.
 
-2. **yeni kayıt Uygulama kayıtları Azure Active Directory** \>  \> gidin.
+2. **Azure Active Directory** \> **Uygulama kayıtları** \> **Yeni kayıt'a** gidin.
 
-   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Microsoft Azure portalındaki Uygulama kayıtları sayfası" lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Microsoft Azure portal'daki Uygulama kayıtları sayfası" lightbox="images/atp-azure-new-app2.png":::
 
 3. **Uygulamayı kaydet** sayfası görüntülendiğinde, uygulamanızın kayıt bilgilerini girin:
    - **Ad** - Uygulamanın kullanıcılarına görüntülenecek anlamlı bir uygulama adı girin.
@@ -132,7 +132,7 @@ Bu sayfada AAD uygulaması oluşturma, Uç Nokta için Microsoft Defender için 
 
 ## <a name="get-an-access-token"></a>Erişim belirteci alma
 
-AAD belirteçleri hakkında daha fazla bilgi için Azure AD [öğreticiye](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds) bakın.
+AAD belirteçleri hakkında daha fazla bilgi için [Azure AD öğreticiye](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds) bakın.
 
 ### <a name="using-c"></a>C kullanma\#
 

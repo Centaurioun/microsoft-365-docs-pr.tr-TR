@@ -1,38 +1,38 @@
 ---
-title: Python için Test Temel SDK'si
-description: Python için Test Bankası'nın SDK'ini anlamayla ilgili ayrıntılar
+title: Python için Test Temel SDK'sı
+description: Test Temeli'nin Python için SDK'sını anlamayla ilgili ayrıntılar
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: article
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: 9a4f64afbf02853ccb68098995c0f05baf2c9b01
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 90a8348e2bde22fa2d0358b9d1696798e089d328
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62988761"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67316522"
 ---
-# <a name="test-base-sdk-for-python"></a>Python için Test Temel SDK'si
+# <a name="test-base-sdk-for-python"></a>Python için Test Temel SDK'sı
 
 ## <a name="overview"></a>Genel bakış
-Test Temel SDK'si, Azure test temel kaynağıyla etkileşim kurmak için kullanılabilir. (Örneğin, uygulama paketinizi yönetin, paket oluştur, paketi düzenle ve paketi sil dahil)
+Test Temeli SDK'sı, Azure test temeli kaynağıyla etkileşime geçmek için kullanılabilir. (Başka bir ifadeyle uygulama paketinizi yönetin, paket oluşturma, paketi düzenleme ve paketi silme dahil edin).
 
-SDK ile alınabilirsiniz test özeti ve Çözümleme Sonucu şunlardır: scriptExecution, güvenilirlik, memoryUtilization, cpuUtilization, memoryRegression, cpuRegression.
+SDK ile elde edilebilecek test özeti ve Çözümleme Sonucu şunlardır: scriptExecution, güvenilirlik, memoryUtilization, cpuUtilization, memoryRegression, cpuRegression.
 
-Test Temel SDK'si ile, test tabanını CI/CD ardışık düzeninde tümleştirebilirsiniz.
+Test Temeli SDK'sı ile test tabanını CI/CD işlem hattınızla tümleştirebilirsiniz.
 
 ## <a name="client-library"></a>İstemci Kitaplığı
 
-Boru ile test temel paketini yükleyin.
+Test temel paketini pip ile yükleyin.
 
 ~~~
 pip install  Microsoft.Testbase

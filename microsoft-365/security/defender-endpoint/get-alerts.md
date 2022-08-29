@@ -1,7 +1,7 @@
 ---
-title: Liste uyarıları API'si
-description: Uç Nokta için Microsoft Defender'da uyarı koleksiyonunu almak için Liste uyarıları API'sini kullanmayı öğrenin.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, get, alerts, recent
+title: Uyarıları listeleme API'si
+description: Uç Nokta için Microsoft Defender'da bir uyarı koleksiyonu almak için Liste uyarıları API'sini kullanmayı öğrenin.
+keywords: api'ler, graf api'leri, desteklenen API'ler, alma, uyarılar, son kullanılanlar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,25 +13,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7c720e7743fda39f7950a7df44bea0007988b94b
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 231894a707b476f3c2ab52ef8198dad5fe1713c5
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62997163"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323123"
 ---
-# <a name="list-alerts-api"></a>Liste uyarıları API'si
+# <a name="list-alerts-api"></a>Uyarıları listeleme API'si
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -40,38 +40,38 @@ ms.locfileid: "62997163"
 
 
 ## <a name="api-description"></a>API açıklaması
-Bir Uyarılar koleksiyonu sağlar.
-<br>[OData V4 sorgularını destekler](https://www.odata.org/documentation/).
-<br>OData'da desteklenen işleçler:
-<br>```$filter```on: ```alertCreationTime```, , ```incidentId``````lastUpdateTime```, ```InvestigationId```, ```id``````asssignedTo```, ```detectionSource```, ```lastEventTime```, ```status```ve ```severity``` ```category``` özellikler.
-<br>```$top``` maksimum değeri 10.000
+Bir Uyarı koleksiyonu alır.
+<br>[OData V4 sorgularını](https://www.odata.org/documentation/) destekler.
+<br>OData tarafından desteklenen işleçler:
+<br>```$filter```üzerinde: ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```, ```InvestigationId```, ```id```, , ```asssignedTo```, ```detectionSource```, ```lastEventTime```, ```severity``` ```status```ve ```category``` özellikleri.
+<br>```$top``` maksimum değeri 10.000 olan
 <br>```$skip```
-<br>```$expand``` / ```evidence```
-<br>Uç Nokta için [Microsoft Defender ile OData sorguları ile ilgili örneklere bakın](exposed-apis-odata-samples.md)
+<br>```$expand``````evidence```
+<br>[Uç Nokta için Microsoft Defender ile OData sorgularında](exposed-apis-odata-samples.md) örneklere bakın
 
 
 ## <a name="limitations"></a>Sınırlamalar
-1. Yapılandırılmış bekletme sürenize göre son güncelleştirme uyarılarını alabiliyorsiniz.
-2. En büyük sayfa boyutu 10.000'tir.
-3. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır. 
+1. Uyarıları en son yapılandırdığınız saklama süresine göre güncelleştirebilirsiniz.
+2. Sayfa boyutu üst sınırı 10.000'dir.
+3. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır. 
 
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü | İzin | İzin görünen adı
+İzin türü | Izni | İzin görünen adı
 :---|:---|:---
 Uygulama | Alert.Read.All | 'Tüm uyarıları oku'
 Uygulama | Alert.ReadWrite.All | 'Tüm uyarıları okuma ve yazma'
-Temsilcili (iş veya okul hesabı) | Alert.Read | 'Uyarıları oku'
-Temsilcili (iş veya okul hesabı) | Alert.ReadWrite | 'Okuma ve yazma uyarıları'
+Temsilci (iş veya okul hesabı) | Alert.Read | 'Uyarıları okuma'
+Temsilci (iş veya okul hesabı) | Alert.ReadWrite | 'Uyarıları okuma ve yazma'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rol](user-roles.md) oluşturma ve yönetme)
-> - Yanıt yalnızca kullanıcının cihaz grubu ayarlarına bağlı olarak erişe cevap verdiği cihazlarla ilişkili uyarılar içerir (Daha fazla bilgi için bkz. [](machine-groups.md) Cihaz grupları oluşturma ve yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
+> - Yanıt, yalnızca cihaz grubu ayarlarına bağlı olarak kullanıcının erişebileceği cihazlarla ilişkili uyarıları içerir (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -79,7 +79,7 @@ Temsilcili (iş veya okul hesabı) | Alert.ReadWrite | 'Okuma ve yazma uyarılar
 GET /api/alerts
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -91,13 +91,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem 200 Tamam'ı ve yanıt [gövdesine uyarı](alerts.md) nesnelerinin listesini döndürür.
+Başarılı olursa, bu yöntem 200 Tamam değerini ve yanıt gövdesindeki [uyarı](alerts.md) nesnelerinin listesini döndürür.
 
 ## <a name="example-1---default"></a>Örnek 1 - Varsayılan
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts
@@ -105,10 +105,10 @@ GET https://api.securitycenter.microsoft.com/api/alerts
 
 ### <a name="response"></a>Yanıt
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 > [!NOTE]
-> Burada gösterilen yanıt listesi kısalma için kesilmiş olabilir. Tüm uyarılar gerçek bir aramadan geri döndürülür.
+> Burada gösterilen yanıt listesi kısa bir süre için kesilebilir. Tüm uyarılar gerçek bir çağrıdan döndürülür.
 
 ```json
 {
@@ -162,11 +162,11 @@ Yanıtın bir örneği:
 }
 ```
 
-## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>Örnek 2 - İlgili Kanıta Sahip En Son 10 UyarıYı Al
+## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>Örnek 2 - İlgili Kanıtlarla en son 10 Uyarı alma
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
@@ -174,10 +174,10 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 
 ### <a name="response"></a>Yanıt
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 > [!NOTE]
-> Burada gösterilen yanıt listesi kısalma için kesilmiş olabilir. Tüm uyarılar gerçek bir aramadan geri döndürülür.
+> Burada gösterilen yanıt listesi kısa bir süre için kesilebilir. Tüm uyarılar gerçek bir çağrıdan döndürülür.
 
 ```json
 {

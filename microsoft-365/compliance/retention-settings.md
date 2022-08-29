@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuzun verilerini tutmak veya silmek için Microsoft 365 bekletme ilkeleri ve bekletme etiketleri için yapılandırabileceğiniz ayarları anlayın.
-ms.openlocfilehash: b329b7f2ebb73e791c4fc2330d66faf35d67a960
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: c0c5003a1e4a8b8aba231a0f3790aa0a82f26e15
+ms.sourcegitcommit: a1c86e51f6fec7517356251c3b99b1a86705c8c5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943342"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336720"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Bekletme ilkeleri ve bekletme etiketi ilkeleri için yaygın ayarlar
 
@@ -66,7 +66,7 @@ Sitelerin özellik adları, SharePoint sitesi tarafından yönetilen özellikler
 Kullanıcıların ve grupların öznitelik adları, Azure AD öznitelikleriyle [eşlenebilen filtrelenebilir alıcı özelliklerini](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) temel alır. Örneğin:
 
 - **Diğer ad**, Azure AD yönetim merkezinde **Email** olarak görüntülenen **mailNickname** LDAP adıyla eşler.
-- **Email adresleri**, Azure AD yönetim merkezinde **Proxy adresi** olarak görüntülenen PROXY adı **proxyAddresses ile eşlenir**.
+- **Email adresleri**, Azure AD yönetim merkezinde **Proxy adresi** olarak görüntülenen LDAP adı **proxyAddresses ile eşlenir**.
 
 Basit sorgu oluşturucusu kullanılarak uyarlamalı bir kapsam yapılandırdığınızda tabloda listelenen öznitelikler ve özellikler kolayca belirtilebilir. Aşağıdaki bölümde açıklandığı gibi gelişmiş sorgu oluşturucusu ile ek öznitelikler ve özellikler desteklenir.
 
@@ -86,10 +86,10 @@ Uyarlamalı kapsamınızı yapılandırmadan önce, oluşturulacak kapsam türü
 1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) aşağıdaki konumlardan birine gidin:
     
     - Kayıt yönetimi çözümünü kullanıyorsanız:
-        - **Çözümleri** >  **Kayıt yönetimi** >  **Uyarlamalı kapsamlar** sekmesi > + **Kapsam oluştur**
+        - **Çözümleri** \> **Kayıt yönetimi** \> **Uyarlamalı kapsamlar** sekmesi \> + **Kapsam oluştur**
         
     - Veri yaşam döngüsü yönetim çözümünü kullanıyorsanız:
-       - **Çözümleri** >  **Veri yaşam döngüsü yönetimi** >  **Uyarlamalı kapsamlar** sekmesi > + **Kapsam oluştur**
+       - **Çözümleri** \> **Veri yaşam döngüsü yönetimi** \> **Microsoft 365** \> **Uyarlamalı kapsamlar** sekmesi \> + **Kapsam oluştur**
     
     Gezinti bölmesinde çözümünüzü hemen görmüyor musunuz? İlk olarak **Tümünü göster'i** seçin. 
 
@@ -302,6 +302,10 @@ Uyarlamalı ilke kapsamları kullanan bir ilkeyi bekletme için yapılandırdı�
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 Grupları için yapılandırma bilgileri
 
 Bir Microsoft 365 grubunun (eski adıyla Office 365 grubu) içeriğini korumak veya silmek için **Microsoft 365 Grupları** konumunu kullanın. Bekletme ilkeleri için bu konum grup posta kutusunu ve SharePoint teams sitesini içerir. Bekletme etiketleri için bu konum yalnızca SharePoint ekip sitesini içerir.
+
+Microsoft 365 Grupları dahil edilen ve dışlanan öğeler hakkında ayrıntılı bilgi için:
+- Grup posta kutuları için bkz. Exchange [saklama için saklama ve silme](retention-policies-exchange.md#whats-included-for-retention-and-deletion) işlemlerine dahil olanlar.
+- SharePoint teams siteleri için bkz. SharePoint [saklama için saklama ve silmeye dahil](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion) olanlar.
 
 Bu ilke konumuyla hedeflediğiniz posta kutularına bekletme ayarları uygulanmadan önce en az 10 MB veri gerekir.
 

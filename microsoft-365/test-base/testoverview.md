@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 04/13/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 2a59599dc9757935413b977bf9e71ed3b7ba09ea
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: b947c8491018278b035b227956b6d150dc6010d7
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923422"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67316544"
 ---
 # <a name="test-your-application-on-test-base"></a>Uygulamanızı Test Base üzerinde test edin
 
@@ -34,7 +34,7 @@ Bu bölümde, **Test Temeli'nde** karşıya yüklemek ve test etmek için farkl�
 
    - **Intunewin uygulaması**
 
-      Karşıya yükleme ve test için [intune uygulama](testintuneapplication.md) dosyası (.intunewin) ile bir paket hazırlamak için bkz. Test Tabanında Intune uygulamanızı test etme.
+      Karşıya yükleme ve test için Intune uygulama dosyası (.intunewin) içeren bir paket hazırlamak için bkz. [Test Tabanında Intune uygulamanızı](testintuneapplication.md) test etme.
 
    - **Önceden oluşturulmuş Zip paketi**
 

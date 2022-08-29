@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 7b74a58601d5d6463d81d244a7f3cb2119486d15
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 58de1c63995521794fa368f64601221a3c9668ee
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969364"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319899"
 ---
 # <a name="set-up-email-notifications"></a>E-posta bildirimlerini ayarlama
 
@@ -31,8 +31,6 @@ Güvenlik ekibiniz için e-posta bildirimleri ayarlayabilirsiniz. Ardından uyar
 1. [E-posta bildirimi türleri hakkında bilgi edinin](#types-of-email-notifications).
 2. [E-posta bildirim ayarlarını görüntüleyin ve düzenleyin](#view-and-edit-email-notifications).
 3. [Sonraki adımlarınıza geçin](#next-steps).
-
-
 
 ## <a name="types-of-email-notifications"></a>E-posta bildirimi türleri
 

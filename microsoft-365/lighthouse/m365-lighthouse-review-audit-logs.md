@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için denetim günlüklerini gözden geçirmeyi öğrenin.
-ms.openlocfilehash: a357d6d4383fb967b09d1ce3dc1be68d7fd2ca4f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: c24e321cae13e6e604f7daba79f820d0b1bc6bb3
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017520"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315624"
 ---
 # <a name="review-audit-logs-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de denetim günlüklerini gözden geçirme
 
@@ -47,8 +47,8 @@ Denetim günlüklerini görüntülemek için aşağıdaki izinlerden birine sahi
 
     - **Tarih aralığı** - Önceki ay, hafta veya gün.
     - **Kiracılar** - Kiracı etiketleri veya müşteri kiracı adları.
-    - **Etkinlik** - gerçekleştirilen eyleme karşılık gelen etkinlik türü Microsoft 365. Daha fazla bilgi için [Etkinlikler](#activities) tablosuna bakın.
-    - **Tarafından başlatıldı** - eylemi Who başlattı.
+    - **Etkinlik** - Gerçekleştirilen eyleme karşılık gelen Microsoft 365 etkinlik türü. Daha fazla bilgi için [Etkinlikler](#activities) tablosuna bakın.
+    - **Başlatan** - Eylemi başlatan kişi.
 
 3. **İstek** gövdesi de dahil olmak üzere tüm ayrıntıları görmek için listeden bir günlük seçin.
 
@@ -63,7 +63,6 @@ Aşağıdaki tabloda Lighthouse denetim günlüklerinde yakalanan etkinlikler li
 | **uygulama** veya **dağıtma** | Kiracı | Dağıtım planı uygulama | Azure AD, Microsoft Endpoint Manager (MEM) |
 | **assignTag** | Kiracı | Müşteriden etiket uygulama | Lighthouse |
 | **changeDeploymentStatus** veya **assign** | Kiracı | Dağıtım planı için eylem planı durumunu güncelleştirme | Lighthouse |
-| **managedTenantOperations** | Kiracı | Dağıtım planıyla ilgili bilgileri görüntüleme | Azure AD |
 | **offboardTenant** | Kiracı | Müşteriyi devre dışı bırakma | Lighthouse |
 | **resetTenantOnboardingStatus** | Kiracı | Müşteriyi yeniden etkinleştirme | Lighthouse |
 | **tenantTags** | Kiracı | Etiket oluşturma veya silme | Lighthouse |
@@ -74,26 +73,14 @@ Aşağıdaki tabloda Lighthouse denetim günlüklerinde yakalanan etkinlikler li
 | **confirmUsersCompromised** | Kullanıcılar | Bir kullanıcının gizliliğinin tehlikeye girdiğini onaylama | Azure AD |
 | **dismissUsersRisk** | Kullanıcılar | Kullanıcı riskini kapatma | Azure AD |
 | **resetUserPassword** | Kullanıcılar | Parolayı sıfırlayın | Azure AD |
-| **getConditionalAccessPolicies** | Kullanıcılar | MFA gerektiren CA ilkelerini görüntüleme | Azure AD |
-| **getTenantIDToTenantNameMap** | Kullanıcılar | Kimlikleri arama | Azure AD |
-| **getUsers** | Kullanıcılar | Kullanıcı arama | Azure AD |
-| **getUsersWithoutMfa** | Kullanıcılar | MFA için kayıtlı olmayan kullanıcıları görüntüleme | Azure AD |
-| **getSsprEnabledButNotRegisteredUsers** | Kullanıcılar | SSPR için kayıtlı olmayan kullanıcıları görüntüleme | Azure AD |
 | **setCustomerSecurityDefaultsEnabledStatus** | Kullanıcılar | Güvenlik varsayılanlarıyla çok faktörlü kimlik doğrulamasını (MFA) etkinleştirme | Azure AD |
-|**getCompliancePolicyInfo** | Aygıtları | İlke görüntüleme | MEM
-|**getDeviceCompliancePolicyStates** | Aygıtları | İlke durumlarını görüntüleme | MEM
-|**getDeviceCompliancePolicySettingStates** | Aygıtları | Uyumlu olmayan ayarları görüntüleme | MEM
-|**getDeviceCompliancePolicySettingStateSummaries** | Aygıtları | Uyumlu olmayan cihazları görüntüleme | MEM
-|**getTenantsDeviceCompliancePolicies** | Aygıtları | İlkeleri karşılaştırma | MEM
-| **restartCihaz** | Aygıtları | Yeniden başlatma | MEM |
-| **syncDevice** | Aygıtları | Eşitleme | MEM |
-| **rebootNow** | Tehdit yönetimi | Yeni -den başlatma | MEM |
+| **restartCihaz** | Aygıtları | Yeniden başlatma | Mem |
+| **syncDevice** | Aygıtları | Eşitleme | Mem |
+| **rebootNow** | Tehdit yönetimi | Yeni -den başlatma | Mem |
 | **yeniden sağlama** | Windows 365 | Sağlamayı yeniden deneyin | Windows 365 |
-| **getDeviceUserInfo** | Tehdit yönetimi | Yönetilen cihaz kullanıcı bilgilerini görüntüleme  | MEM |
-| **getManagedDevice**, **remoteActionAudits** veya **deviceActionResults** | Tehdit yönetimi | Yönetilen cihaz bilgilerini görüntüleme  | MEM |
-| **windowsDefenderScanFull** | Tehdit yönetimi | Tam tarama | MEM |
-| **windowsDefenderScan** | Tehdit yönetimi | Hızlı tarama | MEM |
-| **windowsDefenderUpdateSignatures** | Tehdit yönetimi | Virüsten korumayı güncelleştirme | MEM |
+| **windowsDefenderScanFull** | Tehdit yönetimi | Tam tarama | Mem |
+| **windowsDefenderScan** | Tehdit yönetimi | Hızlı tarama | Mem |
+| **windowsDefenderUpdateSignatures** | Tehdit yönetimi | Virüsten korumayı güncelleştirme | Mem |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

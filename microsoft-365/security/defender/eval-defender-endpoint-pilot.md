@@ -22,12 +22,12 @@ ms.collection:
 - zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c12d1bca36884a7b43580b0685f38df99e51ba1d
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 44e6e341bd47dfb4d0debe1975c79f00cdb5a1da
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750417"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328969"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Pilot Uç Nokta için Microsoft Defender
 
@@ -59,8 +59,8 @@ Panolara göz atarak başlayalım.
 ### <a name="view-the-device-inventory"></a>Cihaz envanterini görüntüleme
 Cihaz envanteri, ağınızdaki uç noktaların, ağ cihazlarının ve IoT cihazlarının listesini göreceğiniz yerdir. Ağınızdaki cihazların görünümünü sağlamakla kalmaz, aynı zamanda etki alanı, risk düzeyi, işletim sistemi platformu ve en riskli cihazların kolay tanımlanması için diğer ayrıntılar gibi bunlar hakkında ayrıntılı bilgi verir.
 
-### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>Tehdit ve güvenlik açığı yönetimi panosunu görüntüleme 
-Tehdit ve güvenlik açığı yönetimi, kuruluş için en acil ve en yüksek riski oluşturan zayıflıklara odaklanmanıza yardımcı olur. Panodan kuruluşun maruz kalma puanı, Cihazlar için Microsoft Güvenli Puanı, cihaz açığa çıkarma dağıtımı, en iyi güvenlik önerileri, en savunmasız yazılımlar, en iyi düzeltme etkinlikleri ve en çok kullanıma sunulan cihaz verilerinin üst düzey bir görünümünü elde edin. 
+### <a name="view-the-microsoft-defender-vulnerability-management-dashboard"></a>Microsoft Defender Güvenlik Açığı Yönetimi panosunu görüntüleme 
+Defender Güvenlik Açığı Yönetimi yönetimi, kuruluş için en acil ve en yüksek riski oluşturan zayıflıklara odaklanmanıza yardımcı olur. Panodan kuruluşun maruz kalma puanı, Cihazlar için Microsoft Güvenli Puanı, cihaz açığa çıkarma dağıtımı, en iyi güvenlik önerileri, en savunmasız yazılımlar, en iyi düzeltme etkinlikleri ve en çok kullanıma sunulan cihaz verilerinin üst düzey bir görünümünü elde edin. 
 
 ### <a name="run-a-simulation"></a>Simülasyon çalıştırma
 Uç Nokta için Microsoft Defender, pilot cihazlarınızda çalıştırabileceğiniz ["Kendiniz Yapın" saldırı senaryolarıyla](https://securitycenter.windows.com/tutorials) birlikte gelir.  Her belgede işletim sistemi ve uygulama gereksinimlerinin yanı sıra bir saldırı senaryosuna özgü ayrıntılı yönergeler bulunur. Bu betikler güvenlidir, belgelenir ve kullanımı kolaydır. Bu senaryolar Uç Nokta için Defender özelliklerini yansıtır ve araştırma deneyiminde size yol gösterir.

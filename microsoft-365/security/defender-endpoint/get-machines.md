@@ -1,7 +1,7 @@
 ---
-title: Liste makineleri API'si
-description: Uç nokta bulutu için Microsoft Defender ile iletişim kuran makine koleksiyonunu almak için Liste makineleri API'sini kullanmayı öğrenin.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, almak, cihazlar
+title: Makineleri listeleme API'si
+description: Uç Nokta için Microsoft Defender bulutla iletişim kuran makinelerden oluşan bir koleksiyonu almak için Liste makineleri API'sini kullanmayı öğrenin.
+keywords: api'ler, graf api'leri, desteklenen API'ler, get, cihazlar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,24 +13,24 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.collection: M365-security-compliance
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6e522f2baac234097ed75d26eb1427719211a7de
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: b7a95843d1102d9bd004a300a754fdd6bc8ecd42
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996470"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326881"
 ---
-# <a name="list-machines-api"></a>Liste makineleri API'si
+# <a name="list-machines-api"></a>Makineleri listeleme API'si
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:** 
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:** 
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,34 +38,34 @@ ms.locfileid: "62996470"
 
 ## <a name="api-description"></a>API açıklaması
 
-Uç nokta [bulutu için Microsoft](machine.md) Defender ile iletişim kuran bir Makine koleksiyonunu sağlar.
+Uç Nokta için Microsoft Defender bulutla iletişim kuran [bir Makine](machine.md) koleksiyonunu alır.
 
-[OData V4 sorgularını destekler](https://www.odata.org/documentation/).
+[OData V4 sorgularını](https://www.odata.org/documentation/) destekler.
 
-OData'nın `$filter` sorgusu şu şekilde destekler: `computerDnsName`, `id`, `version`, `deviceValue`, `aadDeviceId`, `lastSeen``machineTags``exposureLevel`, `onboardingStatus`, ve . `lastIpAddress``healthStatus``osPlatform``riskScore` `rbacGroupId`
-<br>```$stop``` maksimum değeri 10.000
-<br>```$skip``` Uç Nokta için [Defender ile OData sorgularında örneklere bakın](exposed-apis-odata-samples.md)
+OData'nın `$filter` sorgusu şu konuda desteklenir: `computerDnsName`, `id`, `version`, `deviceValue`, `aadDeviceId`, , `machineTags``lastIpAddress``exposureLevel``lastSeen``healthStatus``osPlatform``onboardingStatus``riskScore` ve .`rbacGroupId`
+<br>```$stop``` maksimum değeri 10.000 olan
+<br>```$skip```[Uç Nokta için Defender ile OData sorgularında](exposed-apis-odata-samples.md) örneklere bakın
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. Yapılandırılmış bekletme sürenize göre en son görülen cihazları edinebilirsiniz.
-2. En büyük sayfa boyutu 10.000'tir.
-3. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır. 
+1. Yapılandırdığınız saklama süresine göre en son görülen cihazları alabilirsiniz.
+2. Sayfa boyutu üst sınırı 10.000'dir.
+3. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır. 
 
 ## <a name="permissions"></a>İzinler
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
 Uygulama|Machine.Read.All|'Tüm makine profillerini oku'
 Uygulama|Machine.ReadWrite.All|'Tüm makine bilgilerini okuma ve yazma'
-Temsilcili (iş veya okul hesabı)|Machine.Read|'Makine bilgilerini oku'
-Temsilcili (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma ve yazma'
+Temsilci (iş veya okul hesabı)|Machine.Read|'Makine bilgilerini oku'
+Temsilci (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma ve yazma'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rol](user-roles.md) oluşturma ve yönetme)
-> - Yanıt, cihaz grubu ayarlarına göre kullanıcının erişim iznine sahip olduğu cihazları içerir (daha fazla bilgi için bkz. Cihaz [grupları oluşturma ve](machine-groups.md) yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Verileri Görüntüle' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
+> - Yanıt, cihaz grubu ayarlarına göre yalnızca kullanıcının erişimi olan cihazları içerir (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -73,7 +73,7 @@ Temsilcili (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma v
 GET https://api.securitycenter.microsoft.com/api/machines
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
@@ -85,13 +85,13 @@ Boş
 
 ## <a name="response"></a>Yanıt
 
-Başarılı ve makine varsa - Gövdede makine varlıklarının listesiyle birlikte 200 Tamam.[](machine.md) Son makine yoksa - 404 Bulunamadı.
+Başarılıysa ve makineler varsa - gövdedeki [makine](machine.md) varlıklarının listesiyle 200 Tamam. Son kullanılan makine yoksa - 404 Bulunamadı.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines
@@ -99,7 +99,7 @@ GET https://api.securitycenter.microsoft.com/api/machines
 
 ### <a name="response-example"></a>Yanıt örneği
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 ```http
 HTTP/1.1 200 OK

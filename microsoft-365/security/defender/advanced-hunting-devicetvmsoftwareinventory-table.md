@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: aaab93748ea3bea8ce5de54f5996f5dbc6373f29
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 64ecf8a3f0d040ce8645d6dde803126efa11060f
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099095"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329321"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -38,7 +38,7 @@ ms.locfileid: "67099095"
 > Bazı bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
 
 
-`DeviceTvmSoftwareInventory` Gelişmiş tehdit avcılığı şemasındaki tablo, destek sonu bilgileri de dahil olmak üzere ağınızdaki cihazlarda yüklü olan yazılımların [Tehdit & Güvenlik Açığı Yönetimi](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) envanterini içerir. Örneğin, şu anda güvenlik açığı olan bir yazılım sürümüyle yüklenen cihazlarla ilgili olayları avlayabilirsiniz. Tablodan bilgi döndüren sorgular oluşturmak için bu başvuruyu kullanın.
+`DeviceTvmSoftwareInventory` Gelişmiş tehdit avcılığı şemasındaki tablo, destek sonu bilgileri de dahil olmak üzere ağınızdaki cihazlarda yüklü olan yazılımların [Microsoft Defender Güvenlik Açığı Yönetimi](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) envanterini içerir. Örneğin, şu anda güvenlik açığı olan bir yazılım sürümüyle yüklenen cihazlarla ilgili olayları avlayabilirsiniz. Tablodan bilgi döndüren sorgular oluşturmak için bu başvuruyu kullanın.
 
 >[!NOTE]
 > `DeviceTvmSoftwareInventory` ve `DeviceTvmSoftwareVulnerabilities` tabloları tablonun yerini aldı`DeviceTvmSoftwareInventoryVulnerabilities`. İlk iki tablo birlikte, güvenlik açığı yönetim etkinliklerinizi bilgilendirmek veya savunmasız cihazları avlamak için kullanabileceğiniz daha fazla sütun içerir.
@@ -68,4 +68,4 @@ Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi iç
 - [Cihazlar, e-postalar, uygulamalar ve kimlikler arasında avlayın](advanced-hunting-query-emails-devices.md)
 - [Şemayı anlayın](advanced-hunting-schema-tables.md)
 - [Sorgu en iyi yöntemlerini uygulayın](advanced-hunting-best-practices.md)
-- [Tehdit & Güvenlik Açığı Yönetimine Genel Bakış](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Microsoft Defender Güvenlik Açığı Yönetimi genel bakış](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
