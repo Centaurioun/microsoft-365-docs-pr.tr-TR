@@ -11,20 +11,20 @@ f1_keywords:
 - O365E_BCSSetup4WindowsConfig
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/16/2022
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: herhangi bir Windows cihazının iş veya okul hesabında oturum açtıktan sonra alacağı varsayılan cihaz ilkesinin ayarlarını yapılandırma hakkında bilgi edinin.
-ms.openlocfilehash: f497dab832b9980225be2e689d2c980860a01454
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+description: Yerleşik ayarları kullanarak şirketinizin Windows cihazlarının güvenliğini sağlamayı öğrenin.
+ms.openlocfilehash: 76f7321f916c6c65c01906d1c1ad69e559b3c084
+ms.sourcegitcommit: 9a7e853bb2f9d0ea377961d854d36b644799e5f8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894887"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67364534"
 ---
 # <a name="secure-windows-devices"></a>Windows cihazlarının güvenliğini sağlama
 
@@ -46,14 +46,14 @@ Windows cihazlarını yükseltme hakkında daha fazla bilgi için bkz[. Windows 
 
 ## <a name="secure-your-windows-10-and-11-devices"></a>Windows 10 ve 11 cihazlarınızın güvenliğini sağlama
 
-Varsayılan olarak tüm ayarlar **Açık** durumdadır. Aşağıdaki ayarlar kullanılabilir:<br/><br/>
+Varsayılan olarak tüm ayarlar **Açık** durumdadır. Aşağıdaki ayarlar kullanılabilir:
 
-|Ayar  <br/> |Açıklama  <br/> |
+|Ayar |Açıklama |
 |:-----|:-----|
-|Microsoft Defender Virüsten Koruma'yı kullanarak bilgisayarları virüslerden ve diğer tehditlerden korumaya yardımcı olun  <br/> |Bilgisayarları İnternet'e bağlı olmanın tehlikelerinden korumak için Microsoft Defender Virüsten Koruma'nın açık olmasını gerektirir.  <br/> |
-|Bilgisayarları Microsoft Edge'de web tabanlı tehditlere karşı korumaya yardımcı ol  <br/> |Edge'de, kullanıcıları kötü amaçlı sitelerden ve indirmelerden korumaya yardımcı olan ayarları açar.  <br/> |
-|BitLocker ile PC'lerdeki dosyaların ve klasörlerin yetkisiz erişime karşı korunmasına yardımcı ol  <br/> |BitLocker, bilgisayar sabit sürücülerini şifreleyerek verileri korur ve bir bilgisayar kaybolur veya çalınırsa verilerin açığa çıkarmasını önler. Daha fazla bilgi için bkz. [BitLocker SSS](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).  <br/> |
-|Cihaz şu kadar süre boşta kaldığında ekranı kapat  <br/> |Kullanıcı cihaz başında olmadığında şirket verilerinin korunmasını sağlar. Kullanıcı bir kafe gibi herkese açık bir konumda çalışıyorken kısa süreliğine uzaklaşabilir veya başka bir şeyle ilgilenebilir ve bu sırada diğer kişiler cihazdaki bilgilere bakabilir. Bu ayar sayesinde, ekran kapanmadan önce kullanıcının ne kadar süre boşta olabileceğini denetleyebilirsiniz.  <br/> |
+|Microsoft Defender Virüsten Koruma kullanarak bilgisayarların virüslerden ve diğer tehditlerden korunmasına yardımcı olun  |Bilgisayarları internete bağlı olmanın tehlikelerinden korumak için Microsoft Defender Virüsten Koruma'nın açık olmasını gerektirir.   |
+|Microsoft Edge'de bilgisayarların web tabanlı tehditlerden korunmasına yardımcı olun   |Edge'de, kullanıcıları kötü amaçlı sitelerden ve indirmelerden korumaya yardımcı olan ayarları açar.  |
+|BitLocker ile bilgisayarlardaki dosya ve klasörleri yetkisiz erişime karşı korumaya yardımcı olun  |BitLocker, bilgisayar sabit sürücülerini şifreleyerek verileri korur ve bir bilgisayar kaybolur veya çalınırsa verilerin açığa çıkarmasını önler. Daha fazla bilgi için bkz. [BitLocker SSS](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).  |
+|Cihaz şu kadar süre boşta kaldığında ekranı kapat  |Kullanıcı cihaz başında olmadığında şirket verilerinin korunmasını sağlar. Kullanıcı bir kafe gibi herkese açık bir konumda çalışıyorken kısa süreliğine uzaklaşabilir veya başka bir şeyle ilgilenebilir ve bu sırada diğer kişiler cihazdaki bilgilere bakabilir. Bu ayar sayesinde, ekran kapanmadan önce kullanıcının ne kadar süre boşta olabileceğini denetleyebilirsiniz.  |
 
 ## <a name="next-objective"></a>Sonraki hedef
 

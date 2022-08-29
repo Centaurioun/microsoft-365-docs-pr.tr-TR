@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a0b9688cf184a3b35c4780d4fdaf979fca193380
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: c42d4603641d36f0bf54f6393471e68ea8b91ddf
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487636"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359263"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 üretkenlik çizimleri
 
@@ -38,7 +38,7 @@ Hangi yöntemin (veya yöntem bileşimlerinin) ve bunların ne zaman kullanılac
 
 | Öğe | Açıklama |
 |:-----|:-----|
-|[![Contoso kurumsal iletişim senaryosu posteri.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>Ocak 2022'de güncelleştirildi   |Bu posterde Contoso'nun popüler iletişim senaryolarında çalışanları nasıl bilgilendirip etkileşimde tuttuğu gösterilmektedir. Contoso, yeni bir teklif de dahil olmak üzere çeşitli Microsoft 365 uygulamaları Viva Bağlantılar kullanır.<br/><br/>**İlgili çözüm kılavuzları** <br/> <ul><li>[Kurumsal iletişimler: Rehberlik, yöntemler ve ürünler](/sharepoint/corporate-communications-overview)|
+|[![Contoso kurumsal iletişim senaryosu posteri.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/relecloud-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/relecloud-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/relecloud-corporate-communication-poster.vsdx)  <br>Ocak 2022'de güncelleştirildi   |Bu posterde Contoso'nun popüler iletişim senaryolarında çalışanları nasıl bilgilendirip etkileşimde tuttuğu gösterilmektedir. Contoso, yeni bir teklif de dahil olmak üzere çeşitli Microsoft 365 uygulamaları Viva Bağlantılar kullanır.<br/><br/>**İlgili çözüm kılavuzları** <br/> <ul><li>[Kurumsal iletişimler: Rehberlik, yöntemler ve ürünler](/sharepoint/corporate-communications-overview)|
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>BT Mimarları için Microsoft 365'teki gruplar
 Bu çizim, BT mimarlarına Microsoft 365 Grupları hakkında bilgi içerir. Kuruluşunuzda işbirliği için Microsoft 365 Grupları ve ekipleri yapılandırma ve yönetme hakkında bilgi edinmek için bkz. [Microsoft 365 ile güvenli işbirliği ayarlama](/microsoft-365/solutions/setup-secure-collaboration-with-teams) ve [İşbirliği idaresi nedir?](/microsoft-365/solutions/collaboration-governance-overview).
@@ -130,7 +130,7 @@ Bu poster, kuruluşunuzdaki kullanıcılar için hangi Microsoft telefon çözü
 Microsoft 365 ve diğer Microsoft bulut teknolojileriyle, çalışanlarınıza kuruluşunuzun şirket içi ve bulut tabanlı bilgilerine, araçlarına ve kaynaklarına evlerinden güvenli erişim sağlayabilirsiniz.
 
 [![Hibrit çalışma posteri için altyapınızı ayarlayın.](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) <br/>
-[PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)   <br>
+[Pdf](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)   <br>
 Haziran 2021'de güncelleştirildi
 
 Daha fazla bilgi için bu posterin makalesine bakın: [Microsoft 365 ile karma çalışma için altyapınızı ayarlama](empower-people-to-work-remotely.md).

@@ -20,14 +20,16 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: Posta kutusunu etkin olmayan bir posta kutusuna dönüştürerek eski çalışanlar için posta kutusu içeriğini korumayı öğrenin.
-ms.openlocfilehash: 981675f64015e0320805e2be8e955cbd6d98769a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9043c71118b00638d8671063c623ada7dcf25bcd
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627227"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359197"
 ---
 # <a name="learn-about-inactive-mailboxes"></a>Etkin olmayan posta kutuları hakkında daha fazla bilgi edinme
+
+>*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Kuruluşunuzun, kuruluştan ayrıldıktan sonra eski çalışanların e-postalarını tutması gerekebilir. Kuruluşunuzun bekletme gereksinimlerine bağlı olarak, çalışma sona erdikten sonra posta kutusu içeriğini birkaç ay veya yıl boyunca saklamanız veya posta kutusu içeriğini süresiz olarak saklamanız gerekebilir. E-postayı ne kadar süre saklamanız gerektiğinden bağımsız olarak, eski çalışanların posta kutusunu korumak için etkin olmayan posta kutuları oluşturabilirsiniz.
 
@@ -128,7 +130,7 @@ Otomatik olarak genişletilen arşivle yapılandırılmış etkin olmayan bir po
 
 ## <a name="inactive-mailboxes-and-exchange-mrm-retention-policies"></a>Etkin olmayan posta kutuları ve Exchange MRM saklama ilkeleri
 
-Kullanıcı hesabı silindiğinde Exchange bekletme ilkesi (Exchange Online'daki Microsoft Mesajlaşma Kayıt Yönetimi veya MRM özelliği) etkin olmayan bir posta kutusu oluşturmaz.
+Exchange bekletme ilkesi (Exchange Online'daki mesajlaşma kayıtları yönetimi veya MRM özelliği) uygulandığında, kullanıcı hesabı silindiğinde etkin olmayan bir posta kutusu oluşturulmaz.
 
 Ancak, bu MRM bekletme ilkesi devre dışı bırakılmadan önce bir posta kutusuna uygulandıysa, tüm silme ilkeleri ( **Silme** eylemiyle yapılandırılmış MRM bekletme etiketleri) etkin olmayan posta kutusunda işlenmeye devam eder. Bu, MRM silme ilkesiyle etiketlenmiş öğelerin saklama süresi dolduğunda [Kurtarılabilir Öğeler klasörüne](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) taşınacağı anlamına gelir. Saklama süresi dolduğunda bu öğeler etkin olmayan posta kutusundan temizlenir. Etkin olmayan posta kutusu için ayrı tutma süresi belirtilmezse, Öğeleri Kurtar klasöründeki öğeler süresiz olarak korunur.
 

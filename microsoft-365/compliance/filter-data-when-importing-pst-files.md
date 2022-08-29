@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: PST dosyalarını Microsoft 365'e aktarırken Microsoft 365 içeri aktarma hizmetindeki akıllı içeri aktarma özelliğini kullanarak verileri filtrelemeyi öğrenin.
-ms.openlocfilehash: 1a9483d77ff575b643d4ab9717d286b608bea35d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b18db6e684df522e863219cac5c7dc5f0ec3179e
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640082"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360358"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>PST dosyalarını içe aktarırken verileri filtreleme
+
+>*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Hedef posta kutularına aktarılan PST dosyalarındaki öğeleri filtrelemek için Microsoft 365 İçeri Aktarma hizmetindeki yeni Akıllı İçeri Aktarma özelliğini kullanın. Şu şekilde çalışır:
   
@@ -68,7 +70,7 @@ PST içeri aktarma işini oluşturduktan sonra, verileri Office 365 içeri aktar
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview uyumluluk portalı</a> gidin ve kuruluşunuzdaki bir yönetici hesabının kimlik bilgilerini kullanarak oturum açın.
     
-2. Uyumluluk portalının sol bölmesinde **Veri yaşam döngüsü yönetimi** \> **İçeri Aktar'a** tıklayın.
+2. Uyumluluk portalının sol bölmesinde **Veri yaşam döngüsü yönetimi** \> **Microsoft 365** \> **İçeri Aktar'a** tıklayın.
     
     Kuruluşunuzun içeri aktarma işleri **İçeri Aktar** sekmesinde listelenir. **Durum** sütunundaki **Çözümleme tamamlandı** değeri, Microsoft 365 tarafından analiz edilmiş ve içeri aktarma için hazır olan içeri aktarma işlerini gösterir.
     
@@ -139,14 +141,14 @@ PST içeri aktarma işini oluşturduktan sonra, verileri Office 365 içeri aktar
   
     |**İleti sınıfı kimliği**|**Bu ileti sınıfını kullanan posta kutusu öğeleri**|
     |:-----|:-----|
-    |IPM. Etkinlik  <br/> |Günlük girişleri  <br/> |
-    |IPM. Belge  <br/> |Belgeler ve dosyalar (e-posta iletisine eklenmemiş)  <br/> |
-    |IPM. Dosya  <br/> |(IPM ile aynı. Belge)  <br/> |
-    |IPM. Note.IMC.Notification  <br/> |İnternet'e Exchange Server ağ geçidi olan Internet Mail Connect tarafından gönderilen raporlar  <br/> |
-    |IPM. Note.Microsoft.Fax  <br/> |Faks iletileri  <br/> |
-    |IPM. Note.Rules.Oof.Template.Microsoft  <br/> |İş yeri dışında otomatik yeniden yanıt iletileri  <br/> |
-    |IPM. Note.Rules.ReplyTemplate.Microsoft  <br/> |Gelen kutusu kuralı tarafından gönderilen yanıtlar  <br/> |
-    |IPM. OLE. Sınıfı  <br/> |Yinelenen seriler için özel durumlar  <br/> |
-    |IPM. Recall.Report  <br/> |İleti geri çağırma raporları  <br/> |
-    |IPM. Uzaktan  <br/> |Uzak posta iletileri  <br/> |
-    |IPM. Rapor  <br/> |Öğe durum raporları  <br/> |
+    |Ipm. Etkinlik  <br/> |Günlük girişleri  <br/> |
+    |Ipm. Belge  <br/> |Belgeler ve dosyalar (e-posta iletisine eklenmemiş)  <br/> |
+    |Ipm. Dosya  <br/> |(IPM ile aynı. Belge)  <br/> |
+    |Ipm. Note.IMC.Notification  <br/> |İnternet'e Exchange Server ağ geçidi olan Internet Mail Connect tarafından gönderilen raporlar  <br/> |
+    |Ipm. Note.Microsoft.Fax  <br/> |Faks iletileri  <br/> |
+    |Ipm. Note.Rules.Oof.Template.Microsoft  <br/> |İş yeri dışında otomatik yeniden yanıt iletileri  <br/> |
+    |Ipm. Note.Rules.ReplyTemplate.Microsoft  <br/> |Gelen kutusu kuralı tarafından gönderilen yanıtlar  <br/> |
+    |Ipm. Ole. Sınıfı  <br/> |Yinelenen seriler için özel durumlar  <br/> |
+    |Ipm. Recall.Report  <br/> |İleti geri çağırma raporları  <br/> |
+    |Ipm. Uzaktan  <br/> |Uzak posta iletileri  <br/> |
+    |Ipm. Rapor  <br/> |Öğe durum raporları  <br/> |

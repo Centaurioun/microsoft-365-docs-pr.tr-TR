@@ -17,14 +17,18 @@ search.appverid:
 - MET150
 description: Tam veri eşleşmesine dayalı hassas bilgi türleri için tam veri eşleşmesi şeması oluşturma
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5c2038dd7f3b4a6a96ad5e320e73254b21519f8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 87b90d2aabb3dd23e7f891a740bcaf98a5cb996a
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622029"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359941"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Tam veri eşleşmesine dayalı hassas bilgi türleri için tam veri eşleşmesi şeması oluşturma
+
+## <a name="applies-to"></a>Uygulandığı öğe
+
+- Klasik deneyim
 
 Şemayı ve EDM SIT'i oluşturmak için [Tam veri eşleştirme şemasını ve hassas bilgi türü desenini kullanma sihirbazını](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) veya [el ile kullanabilirsiniz](#create-exact-data-match-schema-manually-and-upload). Ayrıca, şemayı oluşturmak için bir yöntem kullanarak her ikisini de birleştirebilir ve daha sonra diğer yöntemi kullanarak düzenleyebilirsiniz.
 
@@ -35,7 +39,6 @@ EDM tabanlı SITS veya uygulamaları hakkında bilgi sahibi değilseniz, şunlar
 - [Tam veri eşleşmesine dayalı hassas bilgi türlerini kullanmaya başlama](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
 Aynı hassas veri tablosunu kullanan birden çok hassas bilgi türünde tek bir EDM şeması kullanılabilir. Microsoft 365 kiracısında en fazla 10 farklı EDM şeması oluşturabilirsiniz.
-
 
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>Tam Veri Eşleştirme Şemasını ve Hassas Bilgi Türü Sihirbazını Kullanma
@@ -143,6 +146,28 @@ Bayrak `ignoredDelimiters` aşağıdakileri desteklemez:
 > EDM hassas bilgi türünüzü tanımlarken *ignoreDelimiters* , bir EDM desenindeki birincil öğeyle ilişkili Sınıflandırmaya duyarlı bilgi türünün bir öğedeki içeriği nasıl tanımladığını etkilemez. Bu nedenle, aranabilir bir alan için *ignoreDelimiters* yapılandırıyorsanız, bu alanı temel alan birincil öğe için kullanılan hassas bilgi türünün bu karakterlerin hem bulunduğu hem de bulunmadığı dizeleri seçtiğinden emin olmanız gerekir.
 >
 > Hassas bilgi kaynağı tablonuzdaki sütunların sayısı ve şemanızdaki alanların sayısı eşleşmelidir; sıra önemli değildir.
+
+*Belirteç ayırıcısı* olarak kullanılan karakterler diğer sınırlayıcılardan farklı davranır. İşte birkaç örnek:
+- \ (boşluk)
+- \\T
+- \,
+- \.
+- \;
+- \?
+- \!
+- \\R
+- \\n  
+
+*Belirteç ayırıcısı* eklediğinizde, EDM ayırıcının bulunduğu belirteci bozar. Örneğin, EDM, alanın **Orta-Soyadı** **ve** **Ad** `LastName` değerlerini görür. '-' karakterine sahip alana *ignoredDelimiters* eklenirse `LastName` , bu eylem yalnızca değer bozulduktan sonra gerçekleşir. Sonunda EDM, **MiddleLast** ve **Name** değerlerini görür.
+
+Aşağıdaki karakterleri *belirteç ayırıcıları* değil *yoksayılanDelimiters* olarak kullanmak için, karşılık gelen biçimle eşleşen bir SIT'in alanla ilişkilendirilmesi gerekir. Örneğin, içinde tireler bulunan çok sözcüklü bir dizeyi algılayan bir SIT'in alanla `LastName` ilişkilendirilmesi gerekir.
+- \.
+- \;
+- \!
+- \?
+- \\
+
+PowerShell kullanarak SID'leri ikincil öğelerle ilişkilendirmek mümkündür.
 
 1. Şemayı XML biçiminde tanımlayın (aşağıdaki örneğimize benzer). Bu şema dosyasını **edm.xml** adlandırın ve hassas bilgi kaynağı tablosundaki her sütun için söz dizimini kullanan bir satır olacak şekilde yapılandırın:
 

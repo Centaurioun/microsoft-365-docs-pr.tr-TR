@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Belçika katma değer vergi numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 59411672288d3a9c47aef1a54a7d4727876a498f
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: c1099e69636f9b3dd0fdc5250df47f57506176fd
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948369"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367367"
 ---
 # <a name="belgium-value-added-tax-number"></a>Belçika katma değer vergi numarası
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -53,20 +45,20 @@ Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
 - isteğe bağlı nokta veya Kısa Çizgi veya boşluk
 - dört basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_belgium_value_added_tax_number` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_belgium_value_added_tax_number` bir anahtar sözcük bulunur.
+- İşlev `Func_belgium_value_added_tax_number`, desenle eşleşen içeriği bulur.
+- `Keywords_belgium_value_added_tax_number` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_belgium_value_added_tax_number` , desenle eşleşen içeriği bulur.
+- İşlev `Func_belgium_value_added_tax_number`, desenle eşleşen içeriği bulur.
 
 ```xml
       <!-- Belgium Value Added Tax Number -->

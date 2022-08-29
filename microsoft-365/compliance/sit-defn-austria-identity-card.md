@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Avusturya kimlik kartına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 5a7cae0eabfa179bda83a09dc6a70a3e6e5048a6
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d180c3e46c3810997bfe54a3521c840f833aff02
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948806"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367631"
 ---
 # <a name="austria-identity-card"></a>Avusturya kimlik kartı
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -48,16 +40,16 @@ Harflerin, basamakların ve özel karakterlerin 24 karakterlik birleşimi
 
 - iki harf (büyük/küçük harfe duyarlı değil), basamaklar, ters eğik çizgi, eğik çizgi, artı işareti veya eşittir işareti
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Geçerli değil
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_austria_eu_national_id_card` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_austria_eu_national_id_card` bir anahtar sözcük bulunur.
+- `Keywords_austria_eu_national_id_card` içinden bir anahtar sözcük bulundu.
 
 ```xml
       <!-- Austria Identity Card -->

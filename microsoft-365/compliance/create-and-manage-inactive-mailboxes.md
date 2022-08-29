@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Microsoft 365'te silinen posta kutularının içeriğini koruyan etkin olmayan posta kutuları oluşturun ve yönetin.
-ms.openlocfilehash: 15a9db1099eb687195d5c54b12d5bfca9a8c6f22
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c4a4719d34b7e1097e43152644d3d0bedf53b293
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634631"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360314"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Etkin olmayan posta kutuları oluşturma ve yönetme
+
+>*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Etkin olmayan posta kutuları, kuruluşunuzdan ayrıldıktan sonra eski çalışanların e-postalarını tutmanıza olanak tanır ve uyumluluk veya yasal [nedenlerle eBulma izinleri](assign-ediscovery-permissions.md) verilmiş yetkili kişiler tarafından erişilebilir. Örneğin, yöneticiler, uyumluluk görevlileri ve kayıt yöneticileri, etkin olmayan posta kutusunun içeriğini aramak ve dışarı aktarmak için İçerik Arama'yı kullanabilir. Devre dışı bırakılmış posta kutuları e-posta alamaz ve kuruluşunuzun paylaşılan adres defterinde veya başka listelerinde görüntülenmez.
 
@@ -38,7 +40,7 @@ Etkin olmayan posta kutuları hakkında daha fazla bilgi için bkz. [Etkin olmay
 
 Posta kutusunu devre dışı yapmak için posta kutusunda ayrı tutma ve ardından posta kutusunun veya ilgili kullanıcı hesabının silinmesi gerekir.
 
-Posta kutusunun devre dışı bırakılabilmesi için, bir Exchange Online Plan 2 lisansına (veya Exchange Online Arşivleme eklenti lisansına sahip bir Exchange Online Plan 1 lisansına) atanması gerekir, böylece saklama işlemi silinmeden önce posta kutusuna uygulanabilir. Kullanıcı hesabı silindikten sonra, kullanıcı hesabıyla ilişkili tüm Exchange Online lisansları yeni bir kullanıcıya atanabilecektir.
+Posta kutusunun devre dışı bırakılabilmesi için, saklamanın silinmeden önce posta kutusuna uygulanabilmesi için [doğru şekilde lisanslanması](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#email-archiving) gerekir. Kullanıcı hesabı silindikten sonra, kullanıcı hesabıyla ilişkili tüm Exchange Online lisansları yeni bir kullanıcıya atanabilecektir.
 
 Saklamayı posta kutusuna uygulamak için Microsoft 365 saklamayı kullanmanızı öneririz. Diğer yöntemler [, Etkin olmayan posta kutuları hakkında bilgi edinme bölümünde ele alınmıştır](inactive-mailboxes-in-office-365.md).
 
@@ -64,7 +66,7 @@ Kuruluşunuzdaki etkin olmayan posta kutularının listesini görüntülemek iç
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview uyumluluk portalı</a> gidin ve kuruluşunuzdaki bir Genel yönetici veya Uyumluluk yöneticisi hesabının kimlik bilgilerini kullanarak oturum açın.
 
-2. Sol gezinti bölmesinde **Tümünü göster'i** ve ardından **Veri yaşam döngüsü yönetimi** > **Bekletme ilkeleri'ni** seçin.
+2. Sol gezinti bölmesinde **Veri yaşam döngüsü yönetimi** > **Microsoft 365** > **Bekletme ilkeleri'ni** seçin.
 
 3. **Etkin olmayan posta kutusu** seçeneğini belirleyin:
 

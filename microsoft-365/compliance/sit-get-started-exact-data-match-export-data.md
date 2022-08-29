@@ -17,15 +17,19 @@ search.appverid:
 - MET150
 description: Hassas bilgi türüne göre tam veri eşleşmesi için kaynak verileri dışarı aktarmayı öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 644c62dce3069899aba33737dd1e6452c81fee24
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 4c79123ab44e9be20a96d19c058df6aecfb6aeeb
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66918078"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359875"
 ---
 # <a name="export-source-data-for-exact-data-match-based-sensitive-information-type"></a>Tam veri eşleşmesine dayalı hassas bilgi türleri için kaynak verilerini dışa aktarma
 
+## <a name="applies-to"></a>Uygulandığı öğe
+
+- [Yeni deneyim](sit-create-edm-sit-unified-ux-workflow.md)
+- [Klasik deneyim](sit-create-edm-sit-classic-ux-workflow.md)
 
 Hassas veri tablosu, hassas verileri tanımlamak için belgelerinizdeki içeriği karşılaştıracağınız değer satırları içeren bir metin dosyasıdır. Bu değerler, içerikte algılamak ve üzerinde koruyucu eylemler yapmak istediğiniz, kişisel bilgiler, ürün kayıtları veya metin biçimindeki diğer hassas veriler olabilir.
 
@@ -57,7 +61,11 @@ Veri dosyası en fazla şunları içerebilir:
 
 ## <a name="next-step"></a>Sonraki adım
 
-- [Tam veri eşleşmesine dayalı hassas bilgi türleri için tam veri eşleşmesi şeması oluşturma](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
+- **Yeni deneyim için: Yeni deneyim** [için EDM SIT örnek dosyası oluşturma](sit-create-edm-sit-unified-ux-sample-file.md)
+
+veya
+
+- **Klasik deneyim için**: [Tam veri eşleştirme tabanlı hassas bilgi türleri için şema oluşturma](sit-get-started-exact-data-match-create-schema.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

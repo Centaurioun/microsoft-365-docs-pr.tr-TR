@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Bu giriş sayfası, Office 365 güvenlik ve uyumluluk için bağlantılar ve planlama bilgileri sağlar.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ecc9d01f82393aa20f8993abfffd6cca78c656f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: acc98ae381af6035be46eb6708d26213c4540d22
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639830"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360029"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Güvenlik &amp; uyumluluğunu planlama
 
@@ -38,7 +38,7 @@ Office 365 posteri için Information Protection bilgi koruma özelliklerine odak
 
 Microsoft 365 aboneliğinizi ayarladıktan sonra başlangıç puanınızı not alın. Güvenli Puan, puanınızı artırmak için kullanabileceğiniz yapılandırma önerileri sağlar. Amaç, kullanıcılarınızın üretkenliğini olumsuz etkilemeyecek ortamınızı korumak için kullanabileceğiniz fırsatların farkında olmaktır.
   
-- [Office 365 Güvenli Puanı ile tanışın](../security/defender/microsoft-secure-score.md)
+- [Microsoft Güvenlik Puanı](../security/defender/microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>3. Adım: Kimlik ve cihazlar için erişim korumasını planlama
 

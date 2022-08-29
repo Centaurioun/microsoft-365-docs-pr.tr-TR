@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Etkin olmayan bir posta kutusunun içeriğini mevcut posta kutusuna geri yüklemeyi (veya birleştirmeyi) öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c1a976013f522e45b4e96d6b28653fa860fe16f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b12df38ff1cf9ed5ffef748ea21a86aca742e3c5
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629233"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359568"
 ---
 # <a name="restore-an-inactive-mailbox"></a>Etkin olmayan posta kutusunu geri yükleme
+
+>*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Etkin olmayan bir posta kutusu (geçici olarak silinen posta kutusu türüdür) kuruluşunuzdan ayrıldıktan sonra eski bir çalışanın e-postasını tutmak için kullanılır. Başka bir çalışan, ayrılan çalışanın iş sorumluluklarını üstlenirse veya bu çalışan kuruluşunuza geri dönerse, etkin olmayan posta kutusunun içeriğini kullanıcının kullanımına sunmanın iki yolu vardır:
 

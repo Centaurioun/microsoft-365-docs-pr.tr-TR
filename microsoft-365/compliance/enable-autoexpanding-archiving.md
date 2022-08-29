@@ -19,34 +19,38 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Yöneticiler için: Kullanıcılarınıza Exchange Online posta kutuları için ek depolama alanı sağlayan otomatik genişletme arşivlemeyi etkinleştirmeyi öğrenin. Otomatik genişletme arşivlemeyi tüm kuruluşunuz için veya yalnızca belirli kullanıcılar için etkinleştirebilirsiniz.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16fa0a1a53572d0680160441b237cc7ceb27f712
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7edb246d2a2b9f765bcce6db8f8afa0485c423b3
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622887"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359590"
 ---
 # <a name="enable-auto-expanding-archiving"></a>Otomatik genişleyen arşivlemeyi etkinleştirme
+
+>*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Arşiv posta kutuları için ek depolama alanı etkinleştirmek için Exchange Online otomatik genişletme arşivleme özelliğini kullanabilirsiniz. Arşivleme otomatik olarak genişletildiğinde, 1,5 TB depolama sınırına ulaşana kadar kullanıcının arşiv posta kutusuna otomatik olarak ek depolama alanı eklenir. Otomatik genişletme arşivlemeyi kuruluşunuzdaki herkes veya yalnızca belirli kullanıcılar için açabilirsiniz. Arşivlemenin otomatik olarak genişletilmesi hakkında daha fazla bilgi için bkz. [Arşivlemeyi otomatik genişletme hakkında bilgi edinin](autoexpanding-archiving.md).
 
 ## <a name="before-you-enable-auto-expanding-archiving"></a>Otomatik genişletme arşivlemeyi etkinleştirmeden önce
 
-- Kuruluşunuz veya belirli bir kullanıcı için otomatik genişletme arşivlemeyi açtıktan sonra kapatılamaz. Ayrıca, yöneticiler arşivlemenin otomatik olarak genişletilmesi için depolama kotasını ayarlayamaz.
+- Aşağıdaki kısıtlamaları anlayın: 
+
+    - Kuruluşunuz veya belirli bir kullanıcı için otomatik genişletme arşivlemeyi açtıktan sonra kapatılamaz. Yöneticiler ayrıca arşivlemenin otomatik olarak genişletilmesi için depolama kotasını ayarlayamaz.
+    
+    - Arşivlemenin otomatik olarak genişletilmesi [, etkin olmayan bir posta kutusunu](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes) kurtarmanızı veya geri yüklemenizi engeller. Başka bir deyişle, bir posta kutusu için otomatik genişletme arşivlemeyi etkinleştirirseniz ve posta kutusu daha sonraki bir tarihte devre dışı bırakılırsa, [etkin olmayan posta kutusunu kurtaramaz (etkin bir posta kutusuna](recover-an-inactive-mailbox.md) dönüştürerek) veya [geri yükleyemezsiniz](restore-an-inactive-mailbox.md) (içeriği mevcut bir posta kutusuyla birleştirerek). 
+        
+        Etkin olmayan bir posta kutusunda otomatik genişletme arşivleme etkinleştirildiyse, verileri kurtarmanın tek yolu, verileri posta kutusundan dışarı aktarmak ve başka bir posta kutusuna aktarmak için Microsoft Purview uyumluluk portalı İçerik arama aracını kullanmaktır. Daha fazla bilgi için bkz [. Etkin olmayan posta kutuları ve otomatik olarak genişleten arşivler](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives).
 
 - Otomatik genişletme arşivlemeyi etkinleştirmek için kuruluşunuzda genel yönetici veya Exchange Online kuruluşunuzda Kuruluş Yönetimi rol grubunun üyesi olmanız gerekir. Alternatif olarak, belirli kullanıcılar için otomatik genişletme arşivlemeyi etkinleştirmek için Posta Alıcıları rolü atanmış bir rol grubunun üyesi olmanız gerekir.
 
-- Otomatik genişletme arşivlemeyi etkinleştirebilmeniz için önce kullanıcının arşiv posta kutusunun etkinleştirilmesi gerekir. Arşiv posta kutusunu etkinleştirmek için kullanıcıya Exchange Online Plan 2 lisansı atanmalıdır. Kullanıcıya Exchange Online Plan 1 lisansı atanırsa, arşiv posta kutusunu etkinleştirmek için kullanıcıya ayrı bir Exchange Online Arşivleme lisansı atamanız gerekir. Bkz [. Arşiv posta kutularını etkinleştirme](enable-archive-mailboxes.md).
+- Otomatik genişletme arşivlemeyi etkinleştirebilmeniz için önce kullanıcının posta kutusunun arşiv için zaten [etkinleştirilmesi](enable-archive-mailboxes.md) gerekir.
 
 - Otomatik genişletme arşivlemeyi açtıktan sonra, arşiv posta kutusu (Kurtarılabilir Öğeler klasörü dahil) 90 GB'a ulaştığında arşiv posta kutusu otomatik olarak genişletilen arşive dönüştürülür. Ek depolama alanının sağlanması 30 güne kadar sürebilir.
 
-- Arşiv posta kutularını etkinleştirmek için PowerShell'i de kullanabilirsiniz. Kuruluşunuzdaki tüm kullanıcılar için arşiv posta kutularını etkinleştirmek için kullanabileceğiniz PowerShell komutunun bir örneği için [Daha fazla bilgi](#more-information) bölümüne bakın.
+- Otomatik genişletme arşivleme, paylaşılan posta kutularını da destekler.
 
-- Otomatik genişletme arşivleme, paylaşılan posta kutularını da destekler. Paylaşılan posta kutusunun arşivini etkinleştirmek için Exchange Online Plan 2 lisansı veya Exchange Online Arşivleme lisansına sahip bir Exchange Online Plan 1 lisansı gerekir.
-
-- Arşivlemenin otomatik olarak genişletilmesi [, etkin olmayan bir posta kutusunu](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes) kurtarmanızı veya geri yüklemenizi engeller. Başka bir deyişle, bir posta kutusu için otomatik genişletme arşivlemeyi etkinleştirirseniz ve posta kutusu daha sonraki bir tarihte devre dışı bırakılırsa, [etkin olmayan posta kutusunu kurtaramaz (etkin bir posta kutusuna](recover-an-inactive-mailbox.md) dönüştürerek) veya [geri yükleyemezsiniz](restore-an-inactive-mailbox.md) (içeriği mevcut bir posta kutusuyla birleştirerek). Etkin olmayan bir posta kutusunda otomatik genişletme arşivleme etkinleştirildiyse, verileri kurtarmanın tek yolu, verileri posta kutusundan dışarı aktarmak ve başka bir posta kutusuna aktarmak için Microsoft Purview uyumluluk portalı İçerik arama aracını kullanmaktır. Daha fazla bilgi için Etkin olmayan posta kutuları [hakkında bilgi edinin bölümündeki "Etkin olmayan posta kutuları](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives) ve otomatik olarak genişleten arşivler" bölümüne bakın.
-
-- Otomatik genişletme arşivlemeyi etkinleştirmek için Exchange yönetim merkezini veya Microsoft Purview uyumluluk portalı kullanamazsınız. PowerShell'Exchange Online kullanmanız gerekir. Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
+- Otomatik genişletme arşivlemeyi etkinleştirmek için Exchange yönetim merkezini veya Microsoft Purview uyumluluk portalı kullanamazsınız. Exchange Online PowerShell kullanmalısınız.
 
 ## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>Tüm kuruluşunuz için otomatik genişletme arşivlemeyi etkinleştirme
 

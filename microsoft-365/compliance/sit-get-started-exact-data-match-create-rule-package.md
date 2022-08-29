@@ -17,14 +17,18 @@ search.appverid:
 - MET150
 description: Tam veri eşleşmesi hassas bilgi türü/kural paketi oluşturma
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16da97f249eff856fd1b0e671d71d813b3cbac73
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1ff8a9d39dec1fe46924dc02f8e05473947fd61f
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628517"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359131"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Tam veri eşleşmesi hassas bilgi türü/kural paketi oluşturma
+
+## <a name="applies-to"></a>Uygulandığı öğe
+
+- [Klasik deneyim](sit-create-edm-sit-classic-ux-workflow.md)
 
 Uyumluluk merkezindeki [EDM şemasını ve SIT sihirbazını](#use-the-edm-schema-and-sit-wizard) kullanarak tam veri eşleşmesi (EDM) hassas bilgi türü (SIT) oluşturabilir veya kural paketi XML dosyasını [el ile](#create-a-rule-package-manually) oluşturabilirsiniz. Ayrıca, şemayı oluşturmak için bir yöntem kullanarak her ikisini de birleştirebilir ve daha sonra diğer yöntemi kullanarak düzenleyebilirsiniz.
 
@@ -103,7 +107,7 @@ Performans nedenleriyle, gereksiz eşleşme sayısını en aza indirecek desenle
 
 Bu, herhangi bir belge veya e-postadaki tek tek her sözcük veya numarayla eşleşer. Bu, hizmetin eşleşmelerle aşırı yüklenmesine ve doğru eşleşmelerin algılanmamasına neden olabilir. Daha kesin desenler kullanmak bu durumu önleyebilir. Bazı yaygın veri türleri için doğru yapılandırmayı belirlemeye yönelik bazı öneriler aşağıdadır.
 
-**E-posta adresleri**: E-posta adreslerini tanımlamak kolay olabilir, ancak içerikte çok yaygın olduklarından, birincil alan olarak kullanıldığında sistemde önemli bir yüke neden olabilirler. Bunları yalnızca ikincil kanıt olarak kullanın. Birincil kanıt olarak kullanılması gerekiyorsa, e-postalarda veya `From` `To` alanlarında kullanımlarını dışlamak ve eşleştirilmesi gereken gereksiz dize sayısını azaltmak için şirketinizin e-posta adresiyle bunları dışlamak için mantığı kullanan özel bir hassas bilgi türü tanımlamayı deneyin.
+**Email adresleri**: Email adresleri kolayca tanımlanabilir, ancak içerikte çok yaygın olduklarından, birincil alan olarak kullanıldığında sistemde önemli yüke neden olabilirler. Bunları yalnızca ikincil kanıt olarak kullanın. Birincil kanıt olarak kullanılması gerekiyorsa, e-postalarda veya `From` `To` alanlarında kullanımlarını dışlamak ve eşleştirilmesi gereken gereksiz dize sayısını azaltmak için şirketinizin e-posta adresiyle bunları dışlamak için mantığı kullanan özel bir hassas bilgi türü tanımlamayı deneyin.
 
 **Telefon numaraları**: Telefon numaraları ülke ön ekleri, alan kodları ve ayırıcılar dahil veya hariç olmak üzere birçok farklı biçimde gelebilir. Yükü en düşük düzeyde tutarken hatalı negatifleri azaltmak için bunları yalnızca ikincil öğeler olarak kullanın, parantez ve tireler gibi olası tüm ayırıcıları hariç tutun ve yalnızca hassas veri tablonuza her zaman telefon numarasında bulunacak bölümü ekleyin.
 
@@ -215,4 +219,4 @@ Bu yordamda, kural paketi (Unicode kodlamalı) olarak adlandırılan XML biçimi
 
 ## <a name="next-step"></a>Sonraki adım
 
-- [Tam veri eşleşmesi hassas bilgi türünü test etme](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
+- **Klasik deneyim için**: [Hassas bilgi türüyle tam olarak eşleşen verileri test edin](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)

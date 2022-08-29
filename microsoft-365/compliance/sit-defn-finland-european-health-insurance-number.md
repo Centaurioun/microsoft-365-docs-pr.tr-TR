@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Finlandiya Avrupa sağlık sigortası numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 200b580804d60ef3adfaeead21e7c3ab8d51f139
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 799f664f03f91fa35c01cc87701046faddab5dde
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989389"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367389"
 ---
 # <a name="finland-european-health-insurance-number"></a>Finlandiya Avrupa sağlık sigortası numarası
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -48,16 +40,16 @@ Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
 - isteğe bağlı bir boşluk veya kısa çizgi
 - 10 basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Regex `Regex_Finland_European_Health_Insurance_Number` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_Finland_European_Health_Insurance_Number` bir anahtar sözcük bulunur.
+- `Keyword_Finland_European_Health_Insurance_Number` içinden bir anahtar sözcük bulundu.
 
 ```xml
       <!-- Finland European Health Insurance Number -->

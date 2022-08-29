@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Şirket içi tarayıcıda veri kaybı önlemeyi ayarlama
-ms.openlocfilehash: a1bcebfb48a502a9d7c484d266d91fe105603f84
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fae1b5d2113935e2e3a899a16aafb224297d9912
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625445"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359175"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Şirket içi veri kaybı önleme tarayıcısını kullanmaya başlama
 
@@ -126,7 +126,7 @@ Aşağıda, önizleme aşamasında olan geçerli rol gruplarının listesi yer a
 
 1. Microsoft Purview uyumluluk portalı [Veri kaybı önleme sayfasını](https://compliance.microsoft.com/datalossprevention?viewid=policies) açın ve **Uyarılar'ı** seçin.
 
-2. Uç Nokta [DLP ilkelerinizin uyarılarını görüntülemek için DLP ilkelerinizin uyarılarını yapılandırma ve görüntüleme](dlp-configure-view-alerts-policies.md) bölümündeki yordamlara bakın.
+2. Şirket içi [DLP ilkelerinizin uyarılarını görüntülemek için DLP ilkelerinizin uyarılarını yapılandırma ve görüntüleme](dlp-configure-view-alerts-policies.md) bölümündeki yordamlara bakın.
 
 ### <a name="viewing-dlp-on-premises-scanner-in-activity-explorer-and-audit-log"></a>Etkinlik gezgininde ve denetim günlüğünde DLP şirket içi tarayıcıyı görüntüleme
 

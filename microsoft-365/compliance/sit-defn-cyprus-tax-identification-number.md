@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Kıbrıs vergi kimlik numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: ef2b1d1790993a7ed9b42ccf1bfd662f20b662df
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: fb24f1841483e48b6cfec5167772be13743297e0
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989361"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367609"
 ---
 # <a name="cyprus-tax-identification-number"></a>Kıbrıs vergi kimlik numarası
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -48,20 +40,20 @@ sekiz basamak ve bir harf:
 - yedi basamak
 - bir harf (büyük/küçük harfe duyarlı değil)
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 geçerli değil
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_cyprus_eu_tax_file_number` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_cyprus_eu_tax_file_number` bir anahtar sözcük bulunur.
+- İşlev `Func_cyprus_eu_tax_file_number`, desenle eşleşen içeriği bulur.
+- `Keywords_cyprus_eu_tax_file_number` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_cyprus_eu_tax_file_number` , desenle eşleşen içeriği bulur.
+- İşlev `Func_cyprus_eu_tax_file_number`, desenle eşleşen içeriği bulur.
 
 ```xml
       <!-- Cyprus Tax Identification Number -->

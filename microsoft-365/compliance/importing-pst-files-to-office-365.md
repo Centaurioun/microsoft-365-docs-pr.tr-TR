@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: E-posta verilerini (PST dosyaları) kullanıcı posta kutularına toplu olarak aktarmak için Microsoft Purview uyumluluk portalı İçeri Aktarma hizmetini kullanmayı öğrenin.
-ms.openlocfilehash: 254d9cc31e4d8be88671ca59de176a308ae008a8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e0159d3fd42117a73ce9021756c97c521961000f
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636127"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360489"
 ---
 # <a name="learn-about-importing-your-organizations-pst-files"></a>Kuruluşunuzun PST dosyalarını içeri aktarma hakkında bilgi edinin
+
+>*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Bu makale yöneticilere yöneliktir. PST dosyalarını kendi posta kutunuza aktarmaya mı çalışıyorsunuz? Bkz. [Outlook .pst dosyasından e-postayı, kişileri ve takvimi içeri aktarma](https://go.microsoft.com/fwlink/p/?LinkID=785075).
@@ -104,9 +106,9 @@ Aşağıda, PST içeri aktarma işleminin tamamının çizimi ve açıklaması y
 
   - İletilerin ileti standartlarıyla uyumlu olduğundan emin olmak ve bir sınıflandırma türü eklemek üzere iletileri incelemek için [İletişim uyumluluk ilkelerini](communication-compliance.md) kullanın.
 
-- Verileri Microsoft 365'e aktarmak, veri kaybına karşı korunmaya yardımcı olur. Microsoft 365'e aktarılan e-posta verileri, Exchange Online yüksek kullanılabilirlik özelliklerini devralır.
+- Verileri Microsoft 365'e aktarmak, veri kaybına karşı korunmaya yardımcı olur. Microsoft 365'e aktarılan Email veriler, Exchange Online yüksek kullanılabilirlik özelliklerini devralır.
 
-- E-posta verileri bulutta depolandığından tüm cihazlardan kullanıcılar tarafından kullanılabilir.
+- Email veriler bulutta depolandığından tüm cihazlardan kullanıcılar tarafından kullanılabilir.
 
 ## <a name="importing-sharepoint-data-to-microsoft-365"></a>SharePoint verilerini Microsoft 365'e aktarma
 

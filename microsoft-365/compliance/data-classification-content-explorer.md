@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: İçerik gezgini etiketli öğeleri yerel olarak görüntülemenizi sağlar.
-ms.openlocfilehash: ca3fc3deb542af582f2c38457bbd460c1241b5ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d00d8febe5c30b438d77e3c9b82b6a8bb6011812
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637361"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360467"
 ---
 # <a name="get-started-with-content-explorer"></a>İçerik gezginini kullanmaya başlama
 
@@ -95,7 +95,7 @@ Aşağıda, önizleme aşamasında olan geçerli rol gruplarının listesi yer a
 
 ### <a name="sensitive-information-types"></a>Hassas bilgi türleri
 
-[DLP ilkesi](dlp-learn-about-dlp.md), hassas bilgi türü olarak tanımlanan **hassas bilgilerin** korunmasına yardımcı olabilir. Microsoft 365, kullanımınıza hazır birçok farklı bölgeden birçok [ortak hassas bilgi türü için tanımlar](sensitive-information-type-entity-definitions.md) içerir. Örneğin, kredi kartı numarası, banka hesabı numaraları, ulusal kimlik numaraları ve Windows Live ID hizmet numaraları.
+[DLP ilkesi](dlp-learn-about-dlp.md), hassas bilgi türü olarak tanımlanan **hassas bilgilerin** korunmasına yardımcı olabilir. Microsoft 365, kullanımınıza hazır birçok farklı bölgeden birçok [ortak hassas bilgi türü için tanımlar](sensitive-information-type-entity-definitions.md) içerir. Örneğin, kredi kartı numarası, banka hesap numaraları ve ulusal kimlik numaraları.
 
 ### <a name="sensitivity-labels"></a>Duyarlılık etiketleri
 

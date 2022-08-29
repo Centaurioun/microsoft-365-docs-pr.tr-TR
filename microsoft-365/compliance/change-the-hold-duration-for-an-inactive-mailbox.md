@@ -20,14 +20,16 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: bir Office 365 posta kutusu devre dışı bırakıldıktan sonra, etkin olmayan posta kutusuna atanan saklama veya Office 365 bekletme ilkesinin süresini değiştirin.
-ms.openlocfilehash: 6fdb3993fd6b6503ab672a0c6465a394f3824c4b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c131aabd87b130a72c334ec2399f09e0d9910dab
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628891"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359919"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Etkin olmayan posta kutusunun bekletme süresini değiştirme
+
+>*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 [Etkin olmayan posta kutusu](inactive-mailboxes-in-office-365.md), eski bir çalışanın e-postasını kuruluşunuzdan ayrıldıktan sonra tutmak için kullanılan posta kutusu durumudur. Microsoft 365 kullanıcı nesnesi silinmeden önce geçerli bir ayrı tutma uygulandığında bir posta kutusu devre dışı olur.  Aşağıdaki tür ayrı tutmalar, kullanıcı hesabı silinerek etkin olmayan bir posta kutusunun oluşturulmasını başlatır:
 
@@ -278,7 +280,7 @@ In-Place Tutmalar kullanımdan kaldırıldı ve artık değiştirilemez. Etkin o
 
     Buna karşılık, etkin olmayan bir posta kutusuna atanan MRM saklama ilkesine dahil edilen tüm arşiv ilkeleri ( **MoveToArchive** eylemiyle yapılandırılmış MRM bekletme etiketleri) yoksayılır. Bu, arşiv ilkesiyle etiketlenmiş etkin olmayan posta kutusunda bulunan öğelerin saklama süresi dolduğunda birincil posta kutusunda kaldığı anlamına gelir. Bunlar arşiv posta kutusuna veya arşiv posta kutusunda Kurtarılabilir Öğeler klasörüne taşınmaz. Süresiz olarak tutulacaklardır.
     > [!NOTE]
-    > Kullanıcı hesabı silindiğinde Exchange bekletme ilkesi (Exchange Online'daki Microsoft Mesajlaşma Kayıt Yönetimi veya MRM özelliği) etkin olmayan bir posta kutusu oluşturmaz.
+    > Exchange bekletme ilkesi (Exchange Online'daki mesajlaşma kayıtları yönetimi veya MRM özelliği) uygulandığında, kullanıcı hesabı silindiğinde etkin olmayan bir posta kutusu oluşturulmaz.
 
 - **Normal posta kutularında olduğu gibi, Yönetilen Klasör Yardımcısı (MFA) etkin olmayan posta kutularını da işler.** Exchange Online'de MFA, posta kutularını yaklaşık olarak yedi günde bir işler. Etkin olmayan posta kutusunun saklama süresini değiştirdikten sonra, etkin olmayan posta kutusunun yeni saklama süresini hemen işlemeye başlamak için **Start-ManagedFolderAssistant** cmdlet'ini kullanabilirsiniz. Aşağıdaki komutu çalıştırın. 
 

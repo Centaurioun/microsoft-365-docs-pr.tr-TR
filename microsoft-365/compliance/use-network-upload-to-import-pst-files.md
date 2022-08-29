@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: "Yöneticiler için: Microsoft 365'te birden çok PST dosyasını kullanıcı posta kutularına toplu olarak aktarmak için ağ yüklemeyi kullanmayı öğrenin."
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b24dc0ddc69c9af7516ee844af3899ff92fe4c4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 585da60b92e57c0a1835d0d732d7abc8b228053c
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626039"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359721"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Kuruluşunuzun PST dosyalarını Microsoft 365'e aktarmak için ağ yüklemeyi kullanma
+
+>*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Bu makale yöneticilere yöneliktir. PST dosyalarını kendi posta kutunuza aktarmaya mı çalışıyorsunuz? Bkz. [Outlook .pst dosyasından e-postayı, kişileri ve takvimi içeri aktarma](https://go.microsoft.com/fwlink/p/?LinkID=785075)
@@ -90,7 +92,7 @@ PST dosyalarını Microsoft 365 posta kutularına aktarmak için 1. Adımı yaln
   
 1. <https://compliance.microsoft.com> Adresine gidin ve kuruluşunuzdaki bir yönetici hesabının kimlik bilgilerini kullanarak oturum açın.
 
-2. Uyumluluk portalının sol bölmesinde **Veri yaşam döngüsü yönetimi** \> **İçeri Aktar'a** tıklayın.
+2. Uyumluluk portalının sol bölmesinde **Veri yaşam döngüsü yönetimi** \> **Microsoft 365 Microsoft 365** \>  \> **İçeri Aktar'ı** seçin.
 
     > [!NOTE]
     > Uyumluluk portalında **İçeri Aktar** sayfasına erişmek için size uygun izinlerin atanması gerekir. Daha fazla bilgi için **Başlamadan önce** bölümüne bakın. 
@@ -258,7 +260,7 @@ Sonraki adım, Microsoft 365'teki İçeri Aktarma hizmetinde PST İçeri Aktarma
   
 1. <https://compliance.microsoft.com> Adresine gidin ve kuruluşunuzdaki bir yönetici hesabının kimlik bilgilerini kullanarak oturum açın.
 
-2. Uyumluluk portalının sol bölmesinde **veri yaşam döngüsü yönetimi > İçeri Aktar'a** tıklayın.
+2. Uyumluluk portalının sol bölmesinde **Veri yaşam döngüsü yönetimi** > **Microsoft 365** > İçeri Aktar**'ı seçin.
 
 3. **İçeri Aktar** sekmesinde Simge Ekle'ye tıklayın![.](../media/ITPro-EAC-AddIcon.gif) **Yeni içeri aktarma işi**.
 
@@ -328,7 +330,7 @@ Sonraki adım, Microsoft 365'teki İçeri Aktarma hizmetinde PST İçeri Aktarma
 
   - Veriler bulutta depolandığından tüm cihazlardan kullanıcıya sağlanır.
 
-  - İçeri aktardığınız PST dosyalarındaki verilere Microsoft Purview özelliklerini uygulamanıza izin vererek kuruluşunuzun uyumluluk gereksinimlerini karşılamaya yardımcı olur. Buna şunlar dahildir:
+  - İçeri aktardığınız PST dosyalarındaki verilere Microsoft Purview özelliklerini uygulamanıza izin vererek kuruluşunuzun uyumluluk gereksinimlerini karşılamaya yardımcı olur. Bu, şunları kapsar:
 
   - Kullanıcılara içeri aktardığınız verileri [depolamaları](enable-archive-mailboxes.md) için ek posta kutusu depolama alanı sağlamak için arşiv posta kutularını etkinleştirme ve [arşivlemeyi otomatik olarak genişletme](enable-autoexpanding-archiving.md) .
 

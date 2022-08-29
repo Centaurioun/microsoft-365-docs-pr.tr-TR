@@ -22,19 +22,19 @@ ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Öğeleri otomatik olarak kullanıcının arşiv posta kutusuna taşımak için özel bir Microsoft Mesajlaşma Kayıt Yönetimi (MRM) arşivleme ve silme ilkesi oluşturma.
-ms.openlocfilehash: 7002f28d5926ac02cf01e7ab26b02cddfbd58404
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: Öğeleri otomatik olarak kullanıcının arşiv posta kutusuna taşımak için özel mesajlaşma kayıtları yönetimi (MRM) arşivleme ve silme ilkesi oluşturma.
+ms.openlocfilehash: d9a4af2b5518480e45ab98ca1a76b11aea36efd8
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626061"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360423"
 ---
 # <a name="customize-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Kuruluşunuzdaki posta kutuları için arşiv ve silme ilkesini özelleştirme
 
 Microsoft Purview yöneticileri, öğeleri otomatik olarak kullanıcının arşiv [posta kutusuna taşıyan ve posta kutusundan](archive-mailboxes.md) öğeleri otomatik olarak silecek bir arşivleme ve silme ilkesi oluşturabilir.
 
-Bunu, daha sonra posta kutularına atadığınız bir Microsoft Mesajlaşma Kayıt Yönetimi (MRM) bekletme ilkesi oluşturarak yaparsınız. Bu ilke, öğeleri belirli bir süre sonra kullanıcının arşiv posta kutusuna taşır ve ayrıca belirli bir yaş sınırına ulaştıktan sonra öğeleri posta kutusundan siler.
+Bunu, daha sonra posta kutularına atadığınız bir mesajlaşma kayıtları yönetimi (MRM) bekletme ilkesi oluşturarak yaparsınız. Bu ilke, öğeleri belirli bir süre sonra kullanıcının arşiv posta kutusuna taşır ve ayrıca belirli bir yaş sınırına ulaştıktan sonra öğeleri posta kutusundan siler.
 
 Hangi öğelerin taşındığını veya silindiğini belirleyen gerçek kurallar ve bunun ne zaman gerçekleştiği bekletme etiketleri olarak adlandırılır. Bekletme etiketleri bir MRM bekletme ilkesine bağlanır ve bu ilke de kullanıcının posta kutusuna atanır. Bekletme etiketi, bekletme ayarlarını kullanıcının posta kutusundaki tek tek iletilere ve klasörlere uygular. İletinin posta kutusunda ne kadar süre kaldığını ve ileti belirtilen saklama yaşına ulaştığında hangi eylemin gerçekleştirilecek olduğunu tanımlar. İleti saklama yaşına ulaştığında, kullanıcının arşiv posta kutusuna taşınır veya silinir.
   
@@ -53,7 +53,10 @@ Bu makaledeki adımlar, Alpine House adlı kurgusal bir kuruluş için arşivlem
 - Yeni bir bekletme ilkesi oluşturun ve yeni özel bekletme etiketlerini ekleyin. Ayrıca, yeni bekletme ilkesine yerleşik bekletme etiketleri de ekleyeceksiniz. Bu, kullanıcıların posta kutularındaki öğelere atayabileceği kişisel etiketleri içerir. Ayrıca, kullanıcının birincil posta kutusunda bulunan Kurtarılabilir Öğeler klasöründeki öğeleri arşiv posta kutularındaki Kurtarılabilir Öğeler klasörüne taşıyan bir bekletme etiketi de ekleyeceksiniz. Bu eylem, posta kutusu beklemeye alındığında kullanıcının Kurtarılabilir Öğeler klasöründe yer açmasına yardımcı olur.
 
 Kendi kuruluşunuzdaki posta kutuları için arşiv ve silme ilkesi ayarlamak için bu makaledeki adımların bazılarını veya tümünü izleyebilirsiniz. Kuruluşunuzdaki tüm posta kutularına uygulamadan önce bu işlemi birkaç posta kutusunda test etmenizi öneririz.
-  
+
+> [!NOTE]
+> Bu makaledeki yönergelerde [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-center.md) ve [yeni Exchange yönetim merkezi](/exchange/features-in-new-eac) kullanılır.
+
 ## <a name="before-you-set-up-an-archive-and-deletion-policy"></a>Arşiv ve silme ilkesi ayarlamadan önce
 
 - Bu makaledeki adımları gerçekleştirmek için kuruluşunuzda genel yönetici olmanız gerekir.
@@ -81,136 +84,133 @@ Bu adımda, daha önce açıklanan üç özel bekletme etiketini oluşturacaksı
 
 - Alpine House Silinmiş Öğeler 5 Yıl Silme ve Kurtarmaya İzin Ver (Silinmiş Öğeler klasörü için özel etiket)
 
-Yeni bekletme etiketleri oluşturmak için, Exchange Online kuruluşunuzda <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange yönetim merkezini (EAC)</a> kullanacaksınız. EAC'nin klasik sürümünü kullandığınızdan emin olun.
+Yeni bekletme etiketleri oluşturmak için [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-center.md) kullanacaksınız.
   
-1. [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) adresine gidin ve kimlik bilgilerinizi kullanarak oturum açın.
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) gidin ve kimlik bilgilerinizi kullanarak oturum açın.
   
-2. EAC'de **Uyumluluk yönetimi** > **Bekletme etiketleri'ne** gidin
-
+2. Uyumluluk portalında **Çözüm** \> **Verileri yaşam döngüsü yönetimi** \> **Exchange (eski)** > **Bekletme etiketleri'ne** gidin
+    
     Kuruluşunuzun bekletme etiketlerinin listesi görüntülenir.
 
 ### <a name="create-a-custom-archive-default-policy-tag"></a>Özel arşiv varsayılan ilke etiketi oluşturma
   
 İlk olarak, öğeleri 3 yıl sonra arşiv posta kutusuna taşıyacak özel bir arşiv varsayılan ilke etiketi (DPT) oluşturacaksınız.
   
-1. **Bekletme etiketleri** sayfasında **Yeni etiket**![Yeni simgesi'ni](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) seçin ve ardından **posta kutusunun tamamına otomatik olarak uygulandı (varsayılan)** seçeneğini belirleyin.
+1. **Bekletme etiketleri** sayfasında **+ Yeni etiket'i** seçin ve **etiketin nasıl uygulanacağını tanımla** sayfasında **Otomatik olarak tüm posta kutusuna (varsayılan)** seçeneğini belirleyin.
 
-2. **Posta kutusunun tamamına otomatik olarak uygulanan yeni etiket (varsayılan)** sayfasında aşağıdaki alanları tamamlayın: 
-
-    ![Yeni bir arşiv varsayılan ilke etiketi oluşturma ayarları.](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+2. **Bekletme ayarlarını tanımla** sayfasında aşağıdaki alanları doldurun: 
   
-   1. **Adı** Yeni bekletme etiketi için bir ad yazın. 
+   1. **Öğeler aşağıdaki yaşa ulaştığında (gün olarak)** Saklama süresinin süresini girin. Bu senaryoda, öğeler 1095 gün (3 yıl) sonra arşiv posta kutusuna taşınacaktır. 
 
-   2. **Bekletme eylemi** Bekletme süresi dolduğunda öğeleri arşiv posta kutusuna taşımak için **Arşive Taşı'yı** seçin.
+   2. **Bekletme Eylemi için,** bekletme süresi dolduğunda öğeleri arşiv posta kutusuna taşımak için **Öğeyi arşive taşı'yı** seçin.
 
-   3. **Bekletme süresi** **Öğe aşağıdaki yaşa ulaştığında (gün cinsinden)** öğesini seçin ve bekletme süresinin süresini girin. Bu senaryoda, öğeler 1095 gün (3 yıl) sonra arşiv posta kutusuna taşınacaktır.
+3. **Etiketinizi adlandırın** sayfasında, yeni bekletme etiketi için bir ad ve özel bekletme etiketinin amacını açıklayan isteğe bağlı bir açıklama yazın. 
+    
+    Örnek senaryomuzda bu etiketi "Alpine House 3 Year Move to Archive" olarak adlandıracağız.
 
-   4. **Açıklama** (İsteğe bağlı) Özel bekletme etiketinin amacını açıklayan bir açıklama yazın.
+4. **İleri'yi** seçin ve ardından gözden geçirip göndererek özel arşiv DPT'sini oluşturun.
 
-3. Özel arşiv DPT'sini oluşturmak için **Kaydet'i** seçin.
-
-    Yeni arşiv DPT,bekletme etiketleri listesinde görüntülenir.
+Yeni arşiv DPT,bekletme etiketleri listesinde görüntülenir.
 
 ### <a name="create-a-custom-deletion-default-policy-tag"></a>Özel silme varsayılan ilke etiketi oluşturma
   
 Ardından, başka bir özel DPT oluşturacaksınız, ancak bu, 7 yıl sonra öğeleri kalıcı olarak silecek bir silme ilkesi olacaktır.
   
-1. **Bekletme etiketleri** sayfasında **Yeni etiket**![Yeni simgesi'ni](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) seçin ve ardından **posta kutusunun tamamına otomatik olarak uygulandı (varsayılan)** seçeneğini belirleyin.
+1. **Bekletme etiketleri** sayfasına geri dönün **, + Yeni etiket'i** seçin ve **etiketin nasıl uygulanacağını tanımla** sayfasında **Otomatik olarak tüm posta kutusuna (varsayılan)** öğesini yeniden seçin.
 
-2. **Posta kutusunun tamamına otomatik olarak uygulanan yeni etiket (varsayılan)** sayfasında aşağıdaki alanları tamamlayın: 
-
-    ![Yeni silme varsayılan ilke etiketi oluşturma ayarları.](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
+2. **Bekletme ayarlarını tanımla** sayfasında aşağıdaki alanları doldurun: 
   
-   1. **Adı** Yeni bekletme etiketi için bir ad yazın. 
+   1. **Öğeler aşağıdaki yaşa ulaştığında (gün olarak)** Saklama süresinin süresini girin. Bu senaryo için öğeler 2555 gün (7 yıl) sonra temizlenir. 
 
-   2. **Bekletme eylemi** Bekletme süresi dolduğunda öğeleri posta kutusundan temizlemek için **Kalıcı Olarak Sil'i** seçin.
+   2. **Bekletme Eylemi için,** bekletme süresi dolduğunda posta kutusundan öğeleri temizlemek için **Kalıcı olarak sil'i** seçin.
 
-   3. **Bekletme süresi** **Öğe aşağıdaki yaşa ulaştığında (gün cinsinden)** öğesini seçin ve bekletme süresinin süresini girin. Bu senaryo için öğeler 2555 gün (7 yıl) sonra temizlenir.
+3. **Etiketinizi adlandırın** sayfasında, yeni bekletme etiketi için bir ad ve özel bekletme etiketinin amacını açıklayan isteğe bağlı bir açıklama yazın. 
+    
+    Örnek senaryomuz için bu etiketi "Alpine House 7 Yıl Kalıcı Olarak Sil" olarak adlandıracağız.
 
-   4. **Açıklama** (İsteğe bağlı) Özel bekletme etiketinin amacını açıklayan bir açıklama yazın. 
+4. **İleri'yi** seçin ve ardından gözden geçirip göndererek özel silme DPT'sini oluşturun.
 
-3. Özel silme DPT'sini oluşturmak için **Kaydet'i** seçin. 
-
-    Yeni silme DPT'i bekletme etiketleri listesinde görüntülenir.
+Yeni silme DPT'i bekletme etiketleri listesinde görüntülenir.
 
 ### <a name="create-a-custom-retention-policy-tag-for-the-deleted-items-folder"></a>Silinmiş Öğeler klasörü için özel bekletme ilkesi etiketi oluşturma
   
 Oluşturulacak son bekletme etiketi, Silinmiş Öğeler klasörü için özel bir bekletme ilkesi etiketidir (RPT). Bu etiket, Silinmiş Öğeler klasöründeki öğeleri 5 yıl sonra siler ve kullanıcıların bir öğeyi kurtarmak için Silinmiş Öğeleri Kurtar aracını kullanabileceği bir kurtarma süresi sağlar.
+
+1. **Bekletme etiketleri** sayfasına geri dönün **, + Yeni etiket'i** seçin ve **etiketin nasıl uygulanacağını tanımla** sayfasında **Otomatik olarak tüm posta kutusuna (varsayılan)** öğesini yeniden seçin.
+
+2. **Bekletme ayarlarını tanımla** sayfasında aşağıdaki alanları doldurun: 
   
-1. **Bekletme etiketleri** sayfasında **Yeni etiket** ![Yeni simgesi'ni](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) seçin ve ardından **varsayılan klasöre otomatik olarak uygulandı'yı** seçin.
+   1. **Öğeler aşağıdaki yaşa ulaştığında (gün olarak)** Saklama süresinin süresini girin. Bu senaryo için öğeler 1825 gün (5 yıl) sonra silinir. 
 
-2. **Varsayılan klasöre otomatik olarak uygulanan Yeni etiketi** sayfasında aşağıdaki alanları tamamlayın:
+   2. **Bekletme Eylemi** için **Sil'i seçin ve** bekletme süresi dolduğunda kurtarmanın öğeleri silmesine izin verin, ancak kullanıcıların silinen öğe saklama süresi içinde (varsayılan olarak 14 gündür) silinen bir öğeyi kurtarmasına izin verin.
 
-    ![Silinmiş Öğeler klasörü için yeni bir bekletme ilkesi etiketi oluşturma ayarları.](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
-  
-   1. **Adı** Yeni bekletme etiketi için bir ad yazın. 
+3. **Etiketinizi adlandırın** sayfasında, yeni bekletme etiketi için bir ad ve özel bekletme etiketinin amacını açıklayan isteğe bağlı bir açıklama yazın.
+    
+    Örnek senaryomuz için bu etiketi "Alpine House Deleted Items 5 Years Delete and Allow Recovery" olarak adlandıracağız.
 
-   2. **Bu etiketi aşağıdaki varsayılan klasöre uygula** Açılan listede **Silinmiş Öğeler'i** seçin.
+4. **İleri'yi** seçin ve ardından gözden geçirip göndererek özel silme DPT'sini oluşturun.
 
-   3. **Bekletme eylemi** Saklama süresi dolduğunda öğeleri silmek için **Sil ve Kurtarmaya İzin Ver'i** seçin, ancak kullanıcıların silinen öğe saklama süresi içinde (varsayılan olarak 14 gündür) silinen bir öğeyi kurtarmasına izin verin.
-
-   4. **Bekletme süresi** **Öğe aşağıdaki yaşa ulaştığında (gün cinsinden)** öğesini seçin ve bekletme süresinin süresini girin. Bu senaryo için öğeler 1825 gün (5 yıl) sonra silinir.
-
-   5. **Açıklama** (İsteğe bağlı) Özel bekletme etiketinin amacını açıklayan bir açıklama yazın. 
-
-3. Silinmiş Öğeler klasörü için özel RPT oluşturmak için **Kaydet'i** seçin.
-
-    Yeni RPT, bekletme etiketleri listesinde görüntülenir.
+Yeni RPT, bekletme etiketleri listesinde görüntülenir.
 
 ## <a name="step-3-create-a-new-retention-policy"></a>3. Adım: Yeni bir bekletme ilkesi oluşturma
 
 Özel bekletme etiketlerini oluşturduktan sonra, sonraki adım yeni bir bekletme ilkesi oluşturmak ve bekletme etiketlerini eklemektir. 2. Adımda oluşturduğunuz üç özel bekletme etiketini ve ilk bölümde bahsedilen yerleşik etiketleri ekleyeceksiniz. 4. Adımda, bu yeni bekletme ilkesini kullanıcı posta kutularına atayacaksınız.
   
-1. EAC'de **Uyumluluk yönetimi** > **Bekletme ilkeleri'ne** gidin.
+1. [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/) **Veri yaşam döngüsü yönetimi** \> **Exchange (eski)** > **Bekletme ilkeleri'ne** gidin.
 
-2. **Bekletme ilkeleri** sayfasında **Yeni Yeni** ![simgesi..](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif). öğesini seçin.
+2. **Bekletme ilkeleri** sayfasında **Yeni ilke'yi** seçin.
 
 3. **Ad** kutusuna yeni bekletme ilkesi için bir ad yazın; örneğin, **Alpine House Arşiv ve Silme İlkesi**.
 
-4. **Bekletme etiketleri'nin** altında Yeni **Ekle** ![simgesi..](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif). öğesini seçin.
+4. **+ Etiket ekle'yi** seçin.
 
-    Kuruluşunuzdaki bekletme etiketlerinin listesi görüntülenir. 2. Adımda oluşturduğunuz özel etiketlerin görüntülendiğini unutmayın.
+    2. Adımda oluşturduğunuz özel etiketleri içeren, kuruluşunuzdaki bekletme etiketlerinin listesi görüntülenir.
 
-5. Aşağıdaki ekran görüntüsünde vurgulanan 9 bekletme etiketini ekleyin (bu etiketler [Daha fazla bilgi](#more-information) bölümünde daha ayrıntılı olarak açıklanmıştır). Bekletme etiketi eklemek için etiketi seçin ve ardından **Ekle'yi** seçin.
+5. [Daha fazla bilgi](#more-information) bölümünde daha ayrıntılı olarak açıklanan 9 bekletme etiketini ekleyin:
+    
+    - **Alpine House 3 Year Move to Archive** - Bu yönergelerin 2. adımında oluşturulan özel arşiv varsayılan ilke etiketi
+    - **Alpine House 7 Yıl Kalıcı Silme** - bu yönergelerin 2. adımında oluşturulan özel silme etiketi
+    - **Alpine House Silinmiş Öğeler 5 Yıl Silme ve Kurtarmaya İzin Ver** - bu yönergelerin 2. adımında oluşturulan Silinmiş Öğeler klasörünün özel etiketi
+    - **Kurtarılabilir Öğeler 14 gün Arşive Taşı**
+    - **Gereksiz Email**
+    - **1 Ay Silme**
+    - **1 Yıllık Silme**
+    - **Hiçbir Zaman Silme**
+    - **Kişisel 1 yıl arşive taşıma**
+    
+    Bu bekletme etiketlerini eklemek için bunları seçin ve ardından **Ekle'yi** seçin.
 
-    ![Yeni bekletme ilkesine bekletme etiketleri ekleyin.](../media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
-  
-    > [!TIP]
-    > **Ctrl** tuşunu basılı tutup her etikete tıklayarak birden çok bekletme etiketi seçebilirsiniz. 
-  
-6. Bekletme etiketlerini ekledikten sonra **Tamam'ı** seçin.
+7. **İlkenizi yapılandırın** sayfasına geri dönüp **İleri'yi** seçerek yeni ilkeyi gözden geçirin ve gönderin.
 
-7. **Yeni bekletme ilkesi** sayfasında **Kaydet'i** seçerek yeni ilkeyi oluşturun.
+Yeni bekletme ilkesi listede görüntülenir. Ayrıntılar bölmesinde bağlantılı bekletme etiketlerini görüntülemek için bunu seçin.
 
-    Yeni bekletme ilkesi listede görüntülenir. Ayrıntılar bölmesinde bağlantılı bekletme etiketlerini görüntülemek için bunu seçin.
-
-    ![Yeni bekletme ilkesi ve bağlantılı bekletme etiketlerinin listesi.](../media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
-  
 ## <a name="step-4-assign-the-new-retention-policy-to-user-mailboxes"></a>4. Adım: Yeni bekletme ilkesini kullanıcı posta kutularına atama
 
-Yeni bir posta kutusu oluşturulduğunda, varsayılan olarak Varsayılan MRM ilkesi adlı bir bekletme ilkesi atanır. Bu adımda, 3. Adımda oluşturduğunuz yeni bekletme ilkesini kuruluşunuzdaki kullanıcı posta kutularına atayarak bu bekletme ilkesini değiştireceksiniz. Bir posta kutusuna aynı anda yalnızca bir MRM bekletme ilkesi atanabileceğinden değiştirme gereklidir. Bu adım, yeni ilkeyi kuruluşunuzdaki tüm posta kutularına atayabileceğinizi varsayar.
+Yeni bir posta kutusu oluşturulduğunda, varsayılan olarak Varsayılan MRM ilkesi adlı bir bekletme ilkesi atanır. Bu adımda, 3. Adımda oluşturduğunuz yeni bekletme ilkesini kuruluşunuzdaki kullanıcı posta kutularına atayarak bu bekletme ilkesini değiştireceksiniz. 
+
+Bir posta kutusuna aynı anda yalnızca bir MRM bekletme ilkesi atanabileceğinden değiştirme gereklidir. Bu adım, yeni ilkeyi kuruluşunuzdaki tüm posta kutularına atayabileceğinizi varsayar.
+
+Bu adımları izlemek için klasik sürüm yerine [yeni Exchange yönetim merkezini](/exchange/features-in-new-eac) kullandığınızdan emin olun.
   
-1. EAC'de **Alıcılar** > **Posta Kutuları'na** gidin.
+1. Yeni [Exchange yönetim merkezinde (EAC)](https://admin.exchange.microsoft.com/) oturum açın ve **Alıcılar** > **Posta Kutuları'na** gidin.
 
     Kuruluşunuzdaki tüm kullanıcı posta kutularının listesi görüntülenir.
 
-2. Listedeki ilk posta kutusuna tıklayıp **Shift** tuşunu basılı tutarak ve ardından listedeki son posta kutusuna tıklayarak tüm posta kutularını seçin. 
+2. **Görünen ad** kutusunu seçerek tüm posta kutularını seçin. 
 
-3. EAC'nin ayrıntılar bölmesindeki **Toplu Düzenleme'nin** altında **Diğer seçenekler'i** seçin.
+3. **Posta kutusu ilkeleri** seçeneğini belirleyin.
 
-4. **Bekletme İlkesi'nin** altında **Güncelleştir'i** seçin.
+4. **Posta kutusu ilkeleri** açılır penceresinde, **Bekletme İlkesi'nin** altında, 3. Adımda oluşturduğunuz bekletme ilkesini seçin; örneğin, **Alpine House Arşiv ve Bekletme İlkesi**.
 
-5. **Bekletme ilkesini toplu atama** sayfasındaki **Bekletme ilkesini seçin** açılan listesinde, 3. Adımda oluşturduğunuz bekletme ilkesini seçin; örneğin, **Alpine House Arşiv ve Bekletme İlkesi**.
+5. Yeni bekletme ilkesi atamasını kaydetmek için **Kaydet'i** seçin.
 
-6. Yeni bekletme ilkesi atamasını kaydetmek için **Kaydet'i** seçin.
+6. Yeni bekletme ilkesinin posta kutularına atandığını doğrulamak için:
 
-7. Yeni bekletme ilkesinin posta kutularına atandığını doğrulamak için:
+   1. **Posta Kutuları sayfasında bir posta kutusu** seçin.
 
-   1. **Posta Kutuları** sayfasında bir posta kutusu seçin ve ardından **Düzenle Düzenle**![.](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png).. öğesini seçin.
-
-   2. Seçili kullanıcının posta kutusu özellikleri sayfasında **Posta kutusu özellikleri'ni** seçin.
-
-   Posta kutusuna atanan yeni ilkenin adı **Bekletme ilkesi** açılan listesinde görüntülenir.
+   2. Seçili kullanıcının posta kutusu özellikleri sayfasında **Posta Kutusu'na** tıklayın.
+    
+    Bekletme ilkesi için posta kutusuna atanan yeni **ilkenin** adı görüntülenir.
 
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(İsteğe bağlı) 5. Adım: Yeni ayarları uygulamak için Yönetilen Klasör Yardımcısı'nı çalıştırın
 
@@ -280,7 +280,7 @@ Bunu, kuruluşunuzun varsayılan posta kutusu planını güncelleştirmek için 
     |Alpine House 7 Yıl Kalıcı Olarak Sil  <br/> |Birincil posta kutusunda veya arşiv posta kutusunda bulunan öğeler 7 yaşındayken kalıcı olarak silinir.  <br/> |Özel (Bkz [. 2. Adım: Arşiv ve silme ilkeleri için yeni bekletme etiketleri oluşturma](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Varsayılan İlke Etiketi (silme); bu etiket, posta kutusunun tamamına otomatik olarak uygulanır.  <br/> |
     |Alpine House Silinmiş Öğeler 5 Yıl Silme ve Kurtarmaya İzin Ver  <br/> |Silinmiş Öğeler klasöründeki 5 yaşındaki öğeleri siler. Kullanıcılar bu öğeleri silindikten sonra 14 gün boyunca kurtarabilir.<sup>\*</sup> <br/> |Özel (Bkz [. 2. Adım: Arşiv ve silme ilkeleri için yeni bekletme etiketleri oluşturma](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Bekletme İlkesi Etiketi (Silinmiş Öğeler); bu etiket, Silinmiş öğeler klasöründeki öğelere otomatik olarak uygulanır.  <br/> |
     |Kurtarılabilir Öğeler 14 gün Arşive Taşı  <br/> |14 gün boyunca Kurtarılabilir Öğeler klasöründe bulunan öğeleri arşiv posta kutusunda Kurtarılabilir Öğeler klasörüne taşır.  <br/> |Yerleşik  <br/> |Bekletme İlkesi Etiketi (Kurtarılabilir Öğeler); bu etiket, Kurtarılabilir Öğeler klasöründeki öğelere otomatik olarak uygulanır.  <br/> |
-    |Gereksiz E-posta  <br/> |Gereksiz E-posta klasöründe 30 gün boyunca bulunan öğeleri kalıcı olarak siler. Kullanıcılar bu öğeleri silindikten sonra 14 gün boyunca kurtarabilir.<sup>\*</sup> <br/> |Yerleşik  <br/> |Bekletme İlkesi Etiketi (Gereksiz E-posta); bu etiket, Gereksiz E-posta klasöründeki öğelere otomatik olarak uygulanır.  <br/> |
+    |Gereksiz Email  <br/> |Gereksiz Email klasöründe 30 gün boyunca bulunan öğeleri kalıcı olarak siler. Kullanıcılar bu öğeleri silindikten sonra 14 gün boyunca kurtarabilir.<sup>\*</sup> <br/> |Yerleşik  <br/> |Bekletme İlkesi Etiketi (Gereksiz Email); Bu etiket, Gereksiz Email klasöründeki öğelere otomatik olarak uygulanır.  <br/> |
     |1 Ay Silme  <br/> |30 günlük öğeleri kalıcı olarak siler. Kullanıcılar bu öğeleri silindikten sonra 14 gün boyunca kurtarabilir.<sup>\*</sup> <br/> |Yerleşik  <br/> |Kişisel; bu etiket kullanıcılar tarafından uygulanabilir.  <br/> |
     |1 Yıllık Silme  <br/> |365 günlük öğeleri kalıcı olarak siler. Kullanıcılar bu öğeleri silindikten sonra 14 gün boyunca kurtarabilir.<sup>\*</sup> <br/> |Yerleşik  <br/> |Kişisel; bu etiket kullanıcılar tarafından uygulanabilir.  <br/> |
     |Hiçbir Zaman Silme  <br/> |Bu etiket, öğelerin bekletme ilkesi tarafından silinmesini engeller.  <br/> |Yerleşik  <br/> |Kişisel; bu etiket kullanıcılar tarafından uygulanabilir.  <br/> |
@@ -288,4 +288,4 @@ Bunu, kuruluşunuzun varsayılan posta kutusu planını güncelleştirmek için 
 
     > <sup>\*</sup>Kullanıcılar, Silinmiş Öğeleri Kurtarma aracını Outlook'ta ve Web üzerinde Outlook (eski adıyla Outlook Web App) kullanarak silinmiş bir öğeyi silinmiş öğe saklama süresi içinde kurtarabilir ve bu da varsayılan olarak Exchange Online 14 gündür. Yönetici, silinmiş öğe saklama süresini en fazla 30 güne yükseltmek için PowerShell Exchange Online kullanabilir. Daha fazla bilgi için bkz. [Windows için Outlook'ta silinen öğeleri kurtarma](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) ve [Exchange Online bir posta kutusunun silinmiş öğe saklama süresini değiştirme](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
   
-- **Kurtarılabilir Öğeler 14 gün Arşive Taşı** bekletme etiketinin kullanılması, kullanıcının birincil posta kutusunda Kurtarılabilir Öğeler klasöründe depolama alanı boşaltmaya yardımcı olur. Bu, kullanıcının posta kutusu beklemeye alındığında yararlıdır; başka bir deyişle kullanıcının posta kutusundan hiçbir şey kalıcı olarak silinmez. Öğeleri arşiv posta kutusuna taşımadan, birincil posta kutusunda Kurtarılabilir Öğeler klasörünün depolama kotasına ulaşılması mümkündür. Bu ve bundan kaçınma hakkında daha fazla bilgi için bkz. [Beklemedeki posta kutuları için Kurtarılabilir Öğeler kotasını artırma](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).
+- **Kurtarılabilir Öğeler 14 gün Arşive Taşı** bekletme etiketinin kullanılması, kullanıcının birincil posta kutusunda Kurtarılabilir Öğeler klasöründe depolama alanı boşaltmaya yardımcı olur. Bu, kullanıcının posta kutusu beklemeye alındığında veya öğeleri tutan bir bekletme ilkesi uygulandığında yararlıdır. Her iki yapılandırma da e-postaların kullanıcının posta kutusundan kalıcı olarak silinmesini engeller. Öğeleri arşiv posta kutusuna taşımadan, birincil posta kutusunda Kurtarılabilir Öğeler klasörünün depolama kotasına ulaşılması mümkündür. Bu senaryo hakkında daha fazla bilgi için bkz. [Beklemedeki posta kutuları için Kurtarılabilir Öğeler kotasını artırma](./increase-the-recoverable-quota-for-mailboxes-on-hold.md).

@@ -18,14 +18,16 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Artık Microsoft 365 etkin olmayan posta kutusunun içeriğini korumanız gerekmediğinde, etkin olmayan posta kutusunu kalıcı olarak silebilirsiniz.
-ms.openlocfilehash: a8bdd0cb98d744b6c64f651b7b7bb1754ff4f12e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a4037d22939adfa46a28a20966cb2ef5ca50f0e8
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634499"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359963"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Etkin olmayan posta kutusunu silme
+
+>*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Etkin olmayan posta kutusu, kuruluşunuzdan ayrılan eski bir çalışanın e-postasını korumak için kullanılır. Artık etkin olmayan posta kutusunun içeriğini korumanız gerekmediğinde, saklamayı kaldırarak etkin olmayan posta kutusunu kalıcı olarak silebilirsiniz. Ayrıca, etkin olmayan bir posta kutusuna birden çok ayrı tutma yerleştirilebilir. Örneğin, etkin olmayan bir posta kutusu Dava Tutma'ya ve bir veya daha fazla In-Place Ayrı Tutma'ya yerleştirilebilir. Ayrıca, microsoft 365 saklama etkin olmayan posta kutusuna uygulanabilir. Silmek için etkin olmayan bir posta kutusundan tüm saklama ve saklama ilkelerini kaldırmanız gerekir. Saklama ve saklama ilkelerini kaldırdıktan sonra, etkin olmayan posta kutusu silinmek üzere işaretlenir ve işlendikten sonra kalıcı olarak silinir.
   

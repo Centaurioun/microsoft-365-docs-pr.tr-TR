@@ -17,16 +17,21 @@ search.appverid:
 - MET150
 description: Hassas bilgi türleriyle tam olarak eşleşen veriler için hassas bilgi kaynağı tablosunu karma olarak ekleyin ve karşıya yükleyin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd484f10cf8dad76132ed2a68a34f87b253e76b3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e443b583fa3db007d3c2448dca29b5795dd17ad2
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641306"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360051"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Tam veri eşleşmeli hassas bilgi türleri için hassas bilgi kaynak tablosu karması oluşturma ve karşıya yükleme
 
 Bu makalede hassas bilgi kaynağı tablonuzun karması ve karşıya yüklenmesi gösterilmektedir.
+
+## <a name="applies-to"></a>Uygulandığı öğe
+
+- [Hassas bilgi türü yeni deneyimiyle tam veri eşleştirmesi oluşturma](sit-create-edm-sit-unified-ux-workflow.md)
+- [Hassas bilgi türü klasik deneyimiyle tam veri eşleştirmesi oluşturma](sit-create-edm-sit-classic-ux-workflow.md)
 
 ## <a name="hash-and-upload-the-sensitive-information-source-table"></a>Hassas bilgi kaynağı tablosunu karma ve karşıya yükleme
 
@@ -80,6 +85,9 @@ Araç sütun sayısında uyuşmazlık gösteriyorsa, tablodaki değerlerin için
   - hassas öğe dosyanızı .csv, .tsv veya kanal (|) biçiminde **PatientRecords.csv** örneklerimizde bulabilirsiniz
   - bu yordamda oluşturulan çıkış karması ve tuz dosyaları
   - **edm.xml** dosyasındaki veri deposu adı, örneğin`PatientRecords`
+
+> [!IMPORTANT]
+Yönetici izinlerine gerek duymayabilmeniz için [EDM Karşıya Yükleme Aracısı'nı](#links-to-edm-upload-agent-by-subscription-type) özel bir klasöre yükleyin. Bunu varsayılana yüklerseniz (*Program Dosyaları*), yönetici izinleri gerekir.
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Güvenlik grubunu ve kullanıcı hesabını ayarlama
 
@@ -233,6 +241,10 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 > [!NOTE]
 > Karma ve karşıya yükleme işlemini ilk kez oluşturduktan sonra otomatikleştirmek için bkz. [Hassas bilgi kaynağı tablo dosyasıyla tam olarak eşleşen verilerinizi yenileme](sit-use-exact-data-refresh-data.md).
 
-## <a name="next-step"></a>Sonraki Adım
+## <a name="next-steps"></a>Sonraki adımlar
 
-- [Tam veri eşleşmesi hassas bilgi türü/kural paketi oluşturma](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
+- **Yeni deneyim için**: [Hassas bilgi türüyle tam olarak eşleşen verileri test edin](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
+
+veya
+
+- **Klasik deneyim için**: [Hassas bilgi türü/kural paketiyle tam olarak eşleşen veriler oluşturun](sit-get-started-exact-data-match-create-rule-package.md)

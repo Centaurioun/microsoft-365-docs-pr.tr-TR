@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: etkin olmayan posta kutusunun içeriğini içeren yeni bir posta kutusuna dönüştürerek Office 365'da etkin olmayan posta kutusunun içeriğini kurtarmayı öğrenin.
-ms.openlocfilehash: f09104703807532770c7ea5b660e1088589883ec
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6de92c2325d0457c03c4501b0aac6374dff690c8
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639676"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359524"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Etkin olmayan posta kutusunu kurtarma
+
+>*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Etkin olmayan bir posta kutusu (geçici olarak silinen posta kutusu türüdür) kuruluşunuzdan ayrıldıktan sonra eski bir çalışanın e-postasını korumak için kullanılır. Bu çalışan kuruluşunuza geri dönerse veya başka bir çalışan eski çalışanın iş sorumluluklarını üstlenirse, etkin olmayan posta kutusunun içeriğini kullanıcının kullanımına sunmanın iki yolu vardır:
 

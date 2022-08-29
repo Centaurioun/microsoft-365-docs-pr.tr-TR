@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Japonya Numaram - Kurumsal hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 25aacfb8275b8567ec9f93fa6cb31288709f9688
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 083e8b0bca98d11ea65e6b5644186be1232f296d
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948874"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367301"
 ---
 # <a name="japan-my-number---corporate"></a>Japonya Numaram - Kurumsal
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -47,20 +39,20 @@ Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
 - bir basamaktan dokuza
 - 12 basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_japanese_my_number_corporate` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_japanese_my_number_corporate` bir anahtar sözcük bulunur.
+- İşlev `Func_japanese_my_number_corporate`, desenle eşleşen içeriği bulur.
+- `Keywords_japanese_my_number_corporate` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_japanese_my_number_corporate` , desenle eşleşen içeriği bulur.
+- İşlev `Func_japanese_my_number_corporate`, desenle eşleşen içeriği bulur.
 
 ```xml
       <!-- Japanese My Number – Corporate -->

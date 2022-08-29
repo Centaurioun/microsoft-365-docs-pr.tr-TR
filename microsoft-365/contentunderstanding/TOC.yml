@@ -70,6 +70,8 @@
   items:
     - name: İçerik derlemesi kullanarak belge oluştur
       href: content-assembly.md
+    - name: Power Automate kullanarak belge oluşturma
+      href: automate-document-generation.md
 - name: Meta veri arama
   items:
     - name: Belge kitaplıklarında meta verileri arama

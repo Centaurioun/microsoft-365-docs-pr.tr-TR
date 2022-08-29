@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Tam veri eşleşmesi tabanlı hassas bilgi türleri hakkında bilgi edinin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 25a48a13e66803dec592680c0ad0e9c01b611dc0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: eced8c769f7c1b8f35fd0eb4524d3518ea891881
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949293"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360073"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>Tam veri eşleşmesine dayalı hassas bilgi türleri hakkında daha fazla bilgi edinme
 
-[Hassas bilgi türleri](sensitive-information-type-learn-about.md) , hassas öğelerin yanlışlıkla veya uygunsuz bir şekilde paylaşılmasını önlemek, eBulma'da ilgili verilerin bulunmasına yardımcı olmak ve belirli bilgi türlerine idare eylemleri uygulamak için kullanılır. Aşağıdakilere göre özel bir hassas bilgi türü (SIT) tanımlarsınız:
+[Hassas bilgi türleri](sensitive-information-type-learn-about.md) , hassas öğelerin yanlışlıkla veya uygunsuz bir şekilde paylaşılmasını önleyebilmeniz için tanımlanmasına yardımcı olmak için kullanılır. Ayrıca, eBulma'da ilgili verilerin bulunmasına yardımcı olmak ve belirli bilgi türlerine idare eylemleri uygulamak için de kullanılır. Aşağıdakilere göre özel bir hassas bilgi türü (SIT) tanımlarsınız:
 
 - Desen
 - *çalışan*, *sosyal güvenlik numarası* veya *kimlik* gibi anahtar sözcük kanıtı
@@ -36,7 +36,6 @@ ms.locfileid: "66949293"
 Peki ya genel desenleri temel alan eşleşmeler bulmak yerine tam veya neredeyse tam veri değerlerini kullanan özel bir hassas bilgi türü (SIT) istiyorsanız? Tam Veri Eşleşmesi (EDM) tabanlı sınıflandırma ile, aşağıdakileri yapmak için tasarlanmış özel bir hassas bilgi türü oluşturabilirsiniz:
 
 - dinamik olmak ve kolayca yenilenmek
-- daha ölçeklenebilir olmak
 - daha az hatalı pozitif sonuç
 - yapılandırılmış hassas verilerle çalışma
 - Hassas bilgileri daha güvenli bir şekilde işleme, Microsoft dahil olmak üzere kimseyle paylaşmama
@@ -71,7 +70,7 @@ EDM SID'leri ile çalışırken, kendilerine özgü birkaç kavramı anlamanız 
 
 ### <a name="sensitive-information-source-table"></a>Hassas bilgi kaynağı tablosu
 
-Hassas kaynak tablo, EDM SIT'in arayacağı hassas bilgi değerlerini içerir. Sütunlardan ve satırlardan oluşur. Sütun başlıkları alan adlarıdır, satırlar bir veri örneğidir ve her hücre o alanın o örneğine ait değerleri içerir.
+Hassas bilgi kaynağı tablosu, EDM SIT'in arayacağı değerleri içerir. Sütunlardan ve satırlardan oluşur. Sütun üst bilgileri alan adlarıdır, satırlar öğenin bir örneğidir ve her hücre o alanın öğe örneğine ait değerleri içerir.
 
 Hassas bilgi kaynağı tablosunun basit bir örneği aşağıda verilmiştır.
 
@@ -86,25 +85,33 @@ Hassas bilgi kaynağı tablosunun basit bir örneği aşağıda verilmiştır.
 Her SIT'in bir kural paketi vardır. Kural paketini bir EDM SIT'te kullanarak aşağıdakileri tanımlarsınız:
 
 - Eşleşmeler, tam aramada kullanılacak birincil öğe olacak alanı belirtir. Sağlama toplamı doğrulaması, anahtar sözcük listesi, anahtar sözcük sözlüğü veya işlev içeren veya olmayan normal bir ifade olabilir.
-- EDM aramasını tetikleyen hassas tür eşleşmesini belirten sınıflandırma.
-- Bulunduğunda eşleşmenin güvenilirliğini artırmaya yardımcı olacak destekleyici kanıt sağlayan öğeler olan destekleyici öğe. Örneğin, bir SSN numarasının yakınında "SSN" anahtar sözcüğü. Sağlama toplamı doğrulaması, anahtar sözcük listesi, anahtar sözcük sözlüğü ile veya olmadan normal bir ifade olabilir.
-- Güvenilirlik düzeyleri (yüksek, orta, düşük), birincil öğeyle birlikte ne kadar destekleyici kanıt algılandığını yansıtır. Bir öğe ne kadar destekleyici kanıt içeriyorsa, eşleşen bir öğenin aradığınız hassas bilgileri içerdiğine o kadar fazla güvenir. Güvenilirlik düzeyleri hakkında daha fazla [bilgi için bkz. Hassas bilgi türünün temel bölümleri](sensitive-information-type-learn-about.md#fundamental-parts-of-a-sensitive-information-type) .
-Yakınlık - Birincil ve destekleyici öğe arasındaki karakter sayısı
+- EDM aramasını tetikleyen hassas bilgi türü eşleşmesini belirten sınıflandırma.
+- Bulunduğunda eşleşmenin güvenilirliğini artırmaya yardımcı olan kanıt sağlayan öğeler olan destekleyici öğe. Örneğin, "SSN" anahtar sözcüğünü gerçek bir sosyal güvenlik numarasına yakın bir yerde ortaya çıkması. Destekleyici öğe sağlama toplamı doğrulaması, anahtar sözcük listesi veya anahtar sözcük sözlüğü içeren veya içermeyen normal bir ifade olabilir.
+- Güvenilirlik düzeyleri (yüksek, orta, düşük), birincil öğeye ek olarak ne kadar destekleyici kanıt algılandığını yansıtır. Bir öğe ne kadar destekleyici kanıt içeriyorsa, eşleşen bir öğenin aradığınız hassas bilgileri içerdiğine o kadar fazla güvenir. Güvenilirlik düzeyleri hakkında daha fazla [bilgi için bkz. Hassas bilgi türünün temel bölümleri](sensitive-information-type-learn-about.md#fundamental-parts-of-a-sensitive-information-type) .
+- Yakınlık - Birincil ve destekleyici öğe arasındaki karakter sayısı.
 
 ### <a name="you-supply-your-own-schema-and-data"></a>Kendi şemanızı ve verilerinizi sağlayın
 
-Microsoft Purview önceden tanımlanmış şemalar, regex desenleri, anahtar sözcükler ve güvenilirlik düzeyleri ile [200'den fazla SITS ile birlikte gelir](sensitive-information-type-entity-definitions.md). EDM SID'leri ile, şemanın yanı sıra hassas öğeleri tanımlayan birincil ve ikincil alanları tanımlamak sizin sorumluluğundadır. Şema ve birincil ve ikincil veri değerleri son derece hassas olduğundan, bunları rastgele oluşturulan veya kendi kendine sağlanan [bir tuz](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) değeri içeren bir [karma](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) işlevi aracılığıyla şifrelersiniz. Bu karma değerler daha sonra hizmete yüklenir, dolayısıyla hassas verileriniz hiçbir zaman açık olmaz.
+[Microsoft Purview önceden tanımlanmış birçok SITS ile birlikte gelir](sensitive-information-type-entity-definitions.md). Bu SITS şemalar, regex desenleri, anahtar sözcükler ve güvenilirlik düzeyleriyle birlikte gelir. Ancak, EDM SID'leri ile şemanın yanı sıra hassas öğeleri tanımlayan birincil ve ikincil alanları tanımlamak sizin sorumluluğundadır. Şema ve birincil ve ikincil veri değerleri son derece hassas olduğundan, bunları rastgele oluşturulan veya kendi kendine sağlanan [bir tuz](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) değeri içeren bir [karma](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) işlevi aracılığıyla şifrelersiniz. Hizmete yalnızca karma değerler yüklenir, bu nedenle hassas verileriniz hiçbir zaman açık olmaz.
 
 ### <a name="primary-and-secondary-support-elements"></a>Birincil ve ikincil destek öğeleri
 
-EDM SIT oluşturduğunuzda, kural paketinde *bir birincil öğe* alanı tanımlarsınız. Birincil alanlar, tüm içeriğinizin aranacağı ve tanımlanabilmesi için tanımlı bir deseni izlemesi gereken öğelerdir. Taranan öğelerde birincil öğe bulunduğunda, EDM bir deseni izlemesi gerekmeyen *ikincil* veya destekleyici öğeleri ve bunların birincil öğeye yakınlıklarını arar. EDM, birincil öğenin önce var olan bir SIT aracılığıyla bulunabilir olmasını gerektirir. Kullanılabilir SID'lerin tam listesi için [bkz. Hassas bilgi türü varlık tanımları](sensitive-information-type-entity-definitions.md) . EDM SIT'inizin algılamasını istediğiniz sınıfı algılayanlardan birini bulmanız gerekir. Örneğin, EDM SIT şemanızda birincil öğe olarak ABD sosyal güvenlik numarası varsa, EDM şemanızı oluşturduğunuzda, bunu [ABD sosyal güvenlik numarası (SSN)](sit-defn-us-social-security-number.md) SIT ile ilişkilendirmiş olursunuz.
+EDM SIT oluşturduğunuzda, kural paketinde *bir birincil öğe* alanı tanımlarsınız. Tüm içerik birincil öğe için aranacak. EDM, birincil öğenin mevcut bir SIT aracılığıyla bulunabilir olmasını gerektirir. 
+
+> [!NOTE]
+> Kullanılabilir SID'lerin tam listesi için [bkz. Hassas bilgi türü varlık tanımları](sensitive-information-type-entity-definitions.md) .  
+
+EDM SIT'inizin algılamasını istediğiniz hassas bilgileri algılayan önceden tanımlanmış bir SIT bulmanız gerekir. Örneğin, EDM SIT şemanızda birincil öğe olarak ABD sosyal güvenlik numarası varsa, EDM şemanızı oluşturduğunuzda, bunu [ABD sosyal güvenlik numarası (SSN)](sit-defn-us-social-security-number.md) SIT ile ilişkilendirmiş olursunuz. Birincil öğelerin algılanması için tanımlı bir deseni izlemesi gerekir.
+
+Taranan bir öğede birincil öğe bulunduğunda, EDM *ikincil* veya destekleyici öğeleri arar. İkincil öğelerin bir deseni izlemesi gerekmez, ancak birincil öğeye belirli bir yakınlık içinde olması gerekir.
 
 ## <a name="how-matching-works"></a>Eşleştirme nasıl çalışır?
 
-EDM, bulduğu içeriği sizin tanımladığınız hassas veri tablosuyla karşılaştırarak eşleşmeleri bulur. Eşleştirme testi, eşleştirilen verilerin bulmak ve korumak istediğiniz verilerin gerçek bir örneği olduğundan emin olmak için geleneksel kurallar ve desenlerin bir bileşimi kullanılarak gerçekleştirilir. EDM, tek yönlü şifreleme karmalarını karşılaştırarak içeriğinizdeki değerlerin tabloda mevcut olup olmadığını öğrenmek için belgelerinizdeki dizeleri ve e-postaları sağladığınız hassas veri tablosundaki değerlerle karşılaştırarak çalışır.
+EDM, taranan içerikteki değerlerin tabloda mevcut olup olmadığını görmek için belgelerinizdeki dizeleri ve e-postaları hassas bilgi kaynağı tablosundaki değerlerle karşılaştırarak çalışır. Karşılaştırma, tek yönlü şifreleme karmaları karşılaştırılarak yapılır.
+
 
 > [!TIP]
-> Yaygın bir uygulama, EDM Hassas bilgi türlerinin ve DLP kurallarında temel aldıkları normal hassas bilgi türlerinin kullanımını farklı eşiklerle birleştirmektir. Örneğin, bir veya daha fazla eşleşmenin DLP uyarısına neden olacağı katı gereksinimler ve düşük tolerans ile sosyal güvenlik numaralarını ve diğer verileri arayabilen bir EDM hassas bilgi türü kullanabilir ve daha yüksek sayımlar için ABD Sosyal Güvenlik Numarası yerleşik konumu gibi normal hassas bilgi türünü kullanabilirsiniz.  
+> Daha iyi algılama için DLP kurallarında hem EDM SID'lerini hem de temel aldıkları önceden tanımlanmış SID'leri birlikte kullanabilirsiniz. EDM SIT'i daha yüksek güvenilirlik düzeyleriyle ve önceden tanımlanmış SIT'i daha düşük güvenilirlik düzeyleriyle kullanın. Örneğin, yüksek güvenle katı gereksinimlere sahip sosyal güvenlik numarası ve diğer destekleyici verileri arayabilen bir EDM SIT kullanın. Yüksek güvenin kullanılması, az sayıda örnek algılandığında bir DLP eşleşmesi oluşturur. Ardından, daha fazla sayıda oluşum algılandığında DLP eşleşmesini tetikleyecek daha düşük güvenilirlik düzeyleriyle ABD Sosyal Güvenlik Numarası gibi önceden tanımlanmış bir SIT kullanın.  
 
 ## <a name="services-that-edm-supports"></a>EDM'nin desteklediği hizmetler
 
