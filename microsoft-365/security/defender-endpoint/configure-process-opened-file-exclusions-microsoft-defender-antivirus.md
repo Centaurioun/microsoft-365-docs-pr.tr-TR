@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0dd59d2196ebb2c2af80fb53d43a009ff3a367d0
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 897a443be70afb8248e6a49f24f32b678060b976
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102338"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388759"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>İşlemler tarafından açılan dosyalar için dışlamaları yapılandırma
 
@@ -34,7 +34,7 @@ ms.locfileid: "66102338"
 **Platform**
 - Windows 
 
-Belirli işlemler tarafından açılmış dosyaları Microsoft Defender Virüsten Koruma taramaların dışında tutabilirsiniz. [Dışlama listelerinizi tanımlamadan önce dışlamaları tanımlamak için](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) bkz. Öneriler.
+Belirli işlemler tarafından açılmış dosyaları Microsoft Defender Virüsten Koruma taramalarının dışında tutabilirsiniz. Dışlama listelerinizi [tanımlamadan önce dışlamaları tanımlama önerileri](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) bölümüne bakın.
 
 Bu makalede dışlama listelerinin nasıl yapılandırıldığı açıklanır.
 
@@ -46,13 +46,13 @@ Bu makalede dışlama listelerinin nasıl yapılandırıldığı açıklanır.
 |Makinedeki belirli bir klasör altındaki herhangi bir işlem tarafından açılan herhangi bir dosya|Belirtilmesi `c:\test\sample\*` , aşağıdakiler tarafından açılan dosyaları dışlar: <p> `c:\test\sample\test.exe` <p> `c:\test\sample\test2.exe` <p> `c:\test\sample\utility.exe`|
 |Makinedeki belirli bir klasördeki belirli bir işlem tarafından açılan herhangi bir dosya|Belirtilmesi `c:\test\process.exe` yalnızca `c:\test\process.exe`|
 
-İşlem dışlama listesine bir işlem eklediğinizde, Microsoft Defender Virüsten Koruma dosyaların nerede bulunduğu fark etmez, bu işlem tarafından açılan dosyaları taramaz. Ancak, [dosya dışlama listesine](configure-extension-file-exclusions-microsoft-defender-antivirus.md) de eklenmediği sürece işlemin kendisi taranır.
+İşlem dışlama listesine bir işlem eklediğinizde Microsoft Defender Virüsten Koruma, dosyaların nerede bulunduğu fark etmez, bu işlem tarafından açılan dosyaları taramaz. Ancak, [dosya dışlama listesine](configure-extension-file-exclusions-microsoft-defender-antivirus.md) de eklenmediği sürece işlemin kendisi taranır.
 
 Dışlamalar yalnızca [her zaman açık gerçek zamanlı koruma ve izleme](configure-real-time-protection-microsoft-defender-antivirus.md) için geçerlidir. Zamanlanmış veya isteğe bağlı taramalar için geçerli değildir.
 
 Dışlama listelerinde grup ilkesi yapılan değişiklikler [Windows Güvenliği uygulamasındaki](microsoft-defender-security-center-antivirus.md) listelerde **gösterilir**. Ancak, Windows Güvenliği uygulamasında yapılan değişiklikler grup ilkesi listelerinde **gösterilmez**.
 
-grup ilkesi, Microsoft Endpoint Configuration Manager, Microsoft Intune ve Windows Güvenliği uygulamasıyla dışlamalar için listeleri ekleyebilir, kaldırabilir ve gözden geçirebilir ve listeleri daha fazla özelleştirmek için joker karakterler kullanabilirsiniz.
+grup ilkesi, Microsoft Endpoint Configuration Manager, Microsoft Intune ve Windows Güvenliği uygulamasıyla dışlama listelerini ekleyebilir, kaldırabilir ve gözden geçirebilir ve listeleri daha fazla özelleştirmek için joker karakterler kullanabilirsiniz.
 
 Dışlama listelerini yapılandırmak için listelerinizi gözden geçirmek de dahil olmak üzere PowerShell cmdlet'lerini ve WMI'yi de kullanabilirsiniz.
 
@@ -64,11 +64,11 @@ Yerel değişikliklerin yönetilen dağıtım ayarlarını geçersiz kılmasın�
 
 ### <a name="use-microsoft-intune-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Belirtilen işlemler tarafından açılmış dosyaları taramaların dışında tutmak için Microsoft Intune kullanın
 
-Daha fazla bilgi için bkz. [Microsoft Intune cihaz kısıtlama ayarlarını yapılandırma](/intune/device-restrictions-configure) ve [Windows 10 için cihaz kısıtlama ayarlarını Microsoft Defender Virüsten Koruma Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
+Daha fazla bilgi için bkz[. Microsoft Intune'de cihaz kısıtlama ayarlarını yapılandırma](/intune/device-restrictions-configure) ve [Intune Windows 10 için Microsoft Defender Virüsten Koruma cihaz kısıtlama ayarları](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
-### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Belirtilen işlemler tarafından açılmış dosyaları taramaların dışında tutmak için Microsoft Endpoint Manager kullanın
+### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Belirtilen işlemler tarafından açılmış dosyaları taramaların dışında tutmak için Microsoft Endpoint Manager kullanma
 
-Microsoft Endpoint Manager (geçerli dal) yapılandırma ayrıntıları için bkz[. Kötü amaçlı yazılımdan koruma ilkeleri oluşturma ve dağıtma: Dışlama ayarları](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings).
+Bkz. [Kötü amaçlı yazılımdan koruma ilkeleri oluşturma ve dağıtma:](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) Microsoft Endpoint Manager (geçerli dal) yapılandırmasıyla ilgili ayrıntılar için dışlama ayarları.
 
 ### <a name="use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Belirtilen işlemler tarafından açılmış dosyaları taramaların dışında tutmak için grup ilkesi kullanın
 
@@ -76,14 +76,14 @@ Microsoft Endpoint Manager (geçerli dal) yapılandırma ayrıntıları için bk
 
 2. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na** gidin ve **Yönetim şablonları'na** tıklayın.
 
-3. **Dışlamalar Microsoft Defender Virüsten Koruma bileşenleri \> Windows \>** için ağacı genişletin.
+3. Ağacı **Windows bileşenleri Microsoft Defender Virüsten Koruma \> Dışlamaları \>** olarak genişletin.
 
 4. **İşlem Dışlamaları'na** çift tıklayın ve dışlamaları ekleyin:
     1. Seçeneği **Etkin** olarak ayarlayın.
     2. **Seçenekler** bölümünün altında **Göster...** öğesine tıklayın.
     3. Her işlemi **Değer adı** sütununun altına kendi satırına girin. Farklı işlem dışlama türleri için örnek tabloya bakın. Tüm işlemler için **Değer** sütununa **0** girin.
 
-5. **Tamam**'a tıklayın.
+5. **Tamam**'ı tıklatın.
 
 ### <a name="use-powershell-cmdlets-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Belirtilen işlemler tarafından açılmış dosyaları taramaların dışında tutmak için PowerShell cmdlet'lerini kullanma
 
@@ -106,13 +106,13 @@ aşağıdakiler olarak \<cmdlet\>izin verilir:
 > [!IMPORTANT]
 > veya `Add-MpPreference`ile `Set-MpPreference` bir liste oluşturduysanız, cmdlet'ini `Set-MpPreference` yeniden kullanmak varolan listenin üzerine yazar.
 
-Örneğin, aşağıdaki kod parçacığı Microsoft Defender AV taramalarının belirtilen işlem tarafından açılan tüm dosyaları dışlamasına neden olabilir:
+Örneğin, aşağıdaki kod parçacığı Microsoft Defender Virüsten Koruma taramalarının belirtilen işlem tarafından açılan tüm dosyaları dışlamasına neden olabilir:
 
 ```PowerShell
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
 ```
 
-PowerShell'i Microsoft Defender Virüsten Koruma ile kullanma hakkında daha fazla bilgi için bkz. PowerShell cmdlet'leri ve [Microsoft Defender Virüsten Koruma cmdlet'leri ile virüsten](/powershell/module/defender) korumayı yönetme.
+PowerShell'i Microsoft Defender Virüsten Koruma ile kullanma hakkında daha fazla bilgi için bkz. PowerShell cmdlet'leri ve [Microsoft Defender Virüsten Koruma cmdlet'leri ile virüsten korumayı](/powershell/module/defender) yönetme.
 
 ### <a name="use-windows-management-instruction-wmi-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Belirtilen işlemler tarafından açılmış dosyaları taramaların dışında tutmak için Windows Yönetim Yönergesi'ni (WMI) kullanın
 
@@ -161,7 +161,7 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> MpCmdRun ile dışlamaların denetlenmesi için MICROSOFT DEFENDER VIRÜSTEN KORUMA CAMP sürüm 4.18.1812.3 (Aralık 2018'de yayımlandı) veya üzeri gerekir.
+> MpCmdRun ile dışlamaların denetlenmesi için Microsoft Defender Virüsten Koruma KAMPı sürüm 4.18.1812.3 (Aralık 2018'de yayımlandı) veya üzeri gerekir.
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>PowerShell kullanarak diğer tüm Microsoft Defender Virüsten Koruma tercihlerinin yanı sıra dışlama listesini gözden geçirin
 
@@ -171,7 +171,7 @@ Aşağıdaki cmdlet'i kullanın:
 Get-MpPreference
 ```
 
-[PowerShell'i Microsoft Defender Virüsten Koruma](use-powershell-cmdlets-microsoft-defender-antivirus.md) ile kullanma hakkında daha fazla bilgi için bkz. PowerShell [cmdlet'lerini Microsoft Defender Virüsten Koruma ve Microsoft Defender Virüsten Koruma cmdlet'lerini](/powershell/module/defender) yapılandırmak ve çalıştırmak için kullanma.
+[PowerShell'i Microsoft Defender Virüsten Koruma ile](use-powershell-cmdlets-microsoft-defender-antivirus.md) kullanma hakkında daha fazla bilgi için bkz. Microsoft Defender [Virüsten Koruma ve Microsoft Defender Virüsten Koruma cmdlet'lerini](/powershell/module/defender) yapılandırmak ve çalıştırmak için PowerShell cmdlet'lerini kullanma.
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>PowerShell kullanarak belirli bir dışlama listesini alma
 
@@ -182,7 +182,7 @@ $WDAVprefs = Get-MpPreference
 $WDAVprefs.ExclusionProcess
 ```
 
-[PowerShell'i Microsoft Defender Virüsten Koruma](use-powershell-cmdlets-microsoft-defender-antivirus.md) ile kullanma hakkında daha fazla bilgi için bkz. PowerShell [cmdlet'lerini Microsoft Defender Virüsten Koruma ve Microsoft Defender Virüsten Koruma cmdlet'lerini](/powershell/module/defender) yapılandırmak ve çalıştırmak için kullanma.
+[PowerShell'i Microsoft Defender Virüsten Koruma ile](use-powershell-cmdlets-microsoft-defender-antivirus.md) kullanma hakkında daha fazla bilgi için bkz. Microsoft Defender [Virüsten Koruma ve Microsoft Defender Virüsten Koruma cmdlet'lerini](/powershell/module/defender) yapılandırmak ve çalıştırmak için PowerShell cmdlet'lerini kullanma.
 
 > [!TIP]
 > Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
@@ -198,7 +198,7 @@ $WDAVprefs.ExclusionProcess
 
 - [Microsoft Defender Virüsten Koruma taramalarında dışlamaları yapılandırma ve doğrulama](configure-exclusions-microsoft-defender-antivirus.md)
 - [Dosya adı, uzantı ve klasör konumuna göre dışlamaları yapılandırma ve doğrulama](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [Windows Sunucusu'nda Microsoft Defender Virüsten Koruma dışlamalarını yapılandırma](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Windows Server'da Microsoft Defender Virüsten Koruma dışlamalarını yapılandırma](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [Dışlamaları tanımlarken kaçınılması gereken yaygın hatalar](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [Microsoft Defender Virüsten Koruma taramalarının ve düzeltmelerinin sonuçlarını özelleştirme, başlatma ve gözden geçirme](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Windows 10'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)

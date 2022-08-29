@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Microsoft 365 yönetim merkezi - Bu ay eklenen özellikler hakkında bilgi edinin.
-ms.openlocfilehash: fe801e913e227239b53eb7f1166a3f802f4217ce
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 588e5d405bb0a343d95014892d23b62f2e1f28f4
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602590"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388891"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi'deki yenilikler
 
@@ -38,7 +38,7 @@ ms.locfileid: "66602590"
 
 ::: moniker-end
 
-[Microsoft 365 yönetim merkezi](Microsoft 365 yönetim merkezi Genel Bakış](admin-overview/admin-center-overview.md) öğesine sürekli yeni özellikler ekliyoruz, öğrendiğimiz sorunları düzeltiyoruz ve geri bildiriminize göre değişiklikler yapıyoruz. Bazı özellikler müşterilerimiz için farklı hızlarda kullanıma sunulur. Henüz bir özellik görmüyorsanız, [kendinizi hedeflenen sürüme eklemeyi deneyin](manage/release-options-in-office-365.md).
+[Microsoft 365 yönetim merkezi](admin-overview/admin-center-overview.md) sürekli yeni özellikler ekliyor, öğrendiğimiz sorunları düzeltiyoruz ve geri bildiriminize göre değişiklikler yapıyoruz. Bazı özellikler müşterilerimiz için farklı hızlarda kullanıma sunulur. Henüz bir özellik görmüyorsanız, [kendinizi hedeflenen sürüme eklemeyi deneyin](manage/release-options-in-office-365.md).
 
 Diğer Microsoft bulut hizmetleriyle ilgili yeni şeyleri öğrenmek isterseniz:
 

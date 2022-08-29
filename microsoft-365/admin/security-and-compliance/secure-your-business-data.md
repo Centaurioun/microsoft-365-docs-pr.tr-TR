@@ -1,5 +1,5 @@
 ---
-title: İş için Microsoft 365'i güvenli hale getirmek için en iyi yöntemler
+title: Verilerinizin güvenliğini sağlamanın en iyi 10 yolu - Küçük ve orta ölçekli işletmeler için en iyi yöntemler
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -7,8 +7,9 @@ author: denisebmsft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
+ms.date: 08/24/2022
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -27,337 +28,72 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
-description: İş e-postanızı ve verilerinizi fidye yazılımı, kimlik avı ve kötü amaçlı ekler gibi siber tehditlere karşı koruyun.
-ms.openlocfilehash: db9822a87c180577afe4040e7828471b993bd0d5
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+description: Fidye yazılımı, kimlik avı ve kötü amaçlı ekler dahil olmak üzere işletmenizi korumanın en iyi 10 yolunu öğrenin.
+ms.openlocfilehash: 1672b0c5233f1dce6f95847a986ea43ed03e15dc
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087451"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450201"
 ---
-# <a name="best-practices-for-securing-microsoft-365-for-business"></a>İş için Microsoft 365'i güvenli hale getirmek için en iyi yöntemler
+# <a name="top-10-ways-to-secure-your-data---best-practices-for-small-and-medium-sized-businesses"></a>Verilerinizin güvenliğini sağlamanın en iyi 10 yolu - Küçük ve orta ölçekli işletmeler için en iyi yöntemler
 
-YouTube'da [Microsoft 365 küçük işletme yardımına](https://go.microsoft.com/fwlink/?linkid=2197659) göz atın.
+**Uygulandığı öğe**
 
-Microsoft'un iş planlarından birini kullanan küçük veya orta ölçekli bir kuruluşsanız, bu makaledeki yönergeler kuruluşunuzun güvenliğini artırmanıza yardımcı olur. Seçenekleriniz arasında Microsoft 365 İş Ekstra, artık İş için Microsoft Defender ve diğer [güvenlik korumalarını](../../business-premium/get-microsoft-365-business-premium.md) içerdiğinden yol gösterir. Burada yer alan önerilen eylemler, Harvard Kennedy School [Cybersecurity Campaign Handbook'ta](https://go.microsoft.com/fwlink/p/?linkid=2015598) açıklanan hedeflere ulaşmanıza yardımcı olacaktır.
+- Microsoft 365 Küçük İşletme
+- Microsoft 365 Business Standard
+- Microsoft 365 Business Premium
+
+İş için Microsoft 365 planları, antiphishing, antispam ve kötü amaçlı yazılım koruması gibi güvenlik özelliklerini içerir. Microsoft 365 İş Ekstra cihaz yönetimi, gelişmiş tehdit koruması ve bilgi koruması gibi daha fazla özellik içerir. Bu makalede, iş verilerinizin güvenliğini sağlamak için atabileceğiniz adımlar açıklanır ve [microsoft 365 İş planlarının özelliklerini karşılaştırır](#comparing-microsoft-365-for-business-plans).
+
+:::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="İş verilerinin güvenliğini sağlamanın en iyi 10 yolunu listeleyen diyagram.":::
+
+| Adım | Görev | Açıklama |
+|:--:|:---|:---|
+| 1 | **[Çok faktörlü kimlik doğrulamasını kullanın](multi-factor-authentication-microsoft-365.md)**. | İki aşamalı doğrulama olarak da bilinen [çok faktörlü kimlik doğrulaması](multi-factor-authentication-microsoft-365.md) (MFA), kullanıcıların Microsoft 365'te oturum açmak için telefonlarında bir kod veya kimlik doğrulama uygulaması kullanmasını gerektirir ve iş verilerinizi korumanın kritik bir ilk adımıdır. MFA'nın kullanılması, korsanların parolanızı biliyorsa devralmalarını engelleyebilir.<br/><br/>Bkz [. güvenlik varsayılanları ve MFA](../../business-premium/m365bp-conditional-access.md). |
+| 2 | **[Yönetici hesaplarınızı koruyun](../../business-premium/m365bp-protect-admin-accounts.md)**. | Yönetici hesaplarının (yönetici olarak da adlandırılır) yükseltilmiş ayrıcalıkları vardır ve bu da bu hesapların siber saldırılara karşı daha hassas olmasını sağlar. İşletmeniz için doğru sayıda yönetici ve kullanıcı hesabı ayarlamanız ve yönetmeniz gerekir. Ayrıca, kullanıcılara ve uygulamalara yalnızca işlerini gerçekleştirmek için ihtiyaç duydukları veri ve işlemlere erişim verilmesi gerektiği anlamına gelen en az ayrıcalıklı bilgi güvenliği ilkesine de bağlı kalmalısınız. <br/><br/>Bkz. [Yönetici hesaplarınızı koruma](../../business-premium/m365bp-protect-admin-accounts.md). |
+| 3 | **[Önceden ayarlanmış güvenlik ilkelerini kullanın](../../business-premium/m365bp-increase-protection.md)**. | Aboneliğiniz istenmeyen posta önleme, kötü amaçlı yazılımdan koruma ve kimlik avı koruması için önerilen ayarları kullanan [önceden ayarlanmış güvenlik ilkeleri](../../security/office-365-security/preset-security-policies.md) içerir. <br/><br/>Bkz [. Kötü amaçlı yazılımlara ve diğer siber tehditlere karşı koruma](../../business-premium/m365bp-increase-protection.md). |
+| 4 | **[Tüm cihazları koruyun](../../business-premium/m365bp-devices-overview.md)**. | Her cihaz ağınıza yönelik olası bir saldırı yoludur ve kişisel olarak sahip olunan ancak iş için kullanılan cihazlar bile düzgün bir şekilde yapılandırılmalıdır. <br/><br/>Aşağıdaki makalelere bakın: <br/>- [Kullanıcıların cihazlarında MFA ayarlamasına yardımcı olun](https://support.microsoft.com/office/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14)<br/>- [Yönetilmeyen Windows ve Mac bilgisayarlarını koruma](../../business-premium/m365bp-protect-pcs-macs.md) <br/>- [Yönetilen cihazları ayarlama](../../business-premium/m365bp-managed-devices-setup.md) (Microsoft 365 İş Ekstra veya İş için Microsoft Defender gerektirir) |
+| 5 | **[Herkesi e-posta en iyi yöntemleriyle eğitin](../../business-premium/m365bp-avoid-phishing-and-attacks.md)**. | Email zararsız iletişim olarak gizlenmiş kötü amaçlı saldırılar içerebilir. Email sistemler özellikle savunmasızdır, çünkü e-posta kuruluştaki herkes tarafından işlenir ve güvenlik, insanların bu iletişimlerle tutarlı bir şekilde iyi kararlar almalarına dayanır. İstenmeyen veya gereksiz postalar, kimlik avı girişimleri, kimlik sahtekarlığı ve e-postalarında kötü amaçlı yazılımlara karşı neleri izleyeceğini öğrenmek için herkesi eğitin. <br/><br/>Bkz [. Kendinizi kimlik avına ve diğer saldırılara karşı koruma](../../business-premium/m365bp-avoid-phishing-and-attacks.md). |
+| 6 | **[İşbirliği ve paylaşım için Microsoft Teams'i kullanın](../../business-premium/m365bp-collaborate-share-securely.md)**. | Güvenli bir şekilde işbirliği yapma ve paylaşmanın en iyi yolu Microsoft Teams'i kullanmaktır. Microsoft Teams ile tüm dosyalarınız ve iletişimleriniz korumalı bir ortamdadır ve bunun dışında güvenli olmayan yollarla depolanmaz.<br/><br/> Aşağıdaki makalelere bakın: <br/>- [İşbirliği için Microsoft Teams'i kullanma](../../business-premium/create-teams-for-collaboration.md) <br/>- [Microsoft Teams ile toplantı ayarlama](../../business-premium/set-up-meetings.md) <br/>- [Dosyaları ve videoları güvenli bir ortamda paylaşma](../../business-premium/share-files-and-videos.md) |
+| 7 | **[SharePoint ve OneDrive dosya ve klasörleri için paylaşım ayarlarını yapın](../../business-premium/m365bp-increase-protection.md)**. | SharePoint ve OneDrive için varsayılan paylaşım düzeyleriniz, kullanmanız gerekenden daha izinli bir düzeye ayarlanmış olabilir. İşletmenizi daha iyi korumak için varsayılan ayarları gözden geçirmenizi ve gerekirse değiştirmenizi öneririz. Kişilere yalnızca işlerini yapmak için ihtiyaç duydukları erişimi verin. <br/><br/>Bkz. [SharePoint ve OneDrive dosya ve klasörleri için paylaşım ayarlarını ayarlama](../../business-premium/m365bp-increase-protection.md#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders). |
+| 8 | **[Cihazlarda Microsoft 365 Uygulamaları kullanın](https://support.microsoft.com/topic/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)**. | Outlook ve Microsoft 365 Uygulamaları (Office uygulamaları olarak da adlandırılır), kişilerin cihazlar arasında üretken ve daha güvenli bir şekilde çalışmasını sağlar. Bir uygulamanın web sürümünü veya masaüstü sürümünü kullanıyor olun, belgeyi bir cihazda başlatabilir ve daha sonra başka bir cihazdan alabilirsiniz. Dosyaları e-posta eki olarak göndermek yerine, SharePoint veya OneDrive'da depolanan belgelerin bağlantılarını paylaşabilirsiniz. <br/><br/>Aşağıdaki makalelere bakın: <br/>- [Office uygulamalarını tüm cihazlara yükleyin](../../business-premium/m365bp-install-office-apps.md).<br/>- [Kullanıcılarınızı Office ve Microsoft 365'te eğitin](https://support.microsoft.com/topic/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27) |
+| 9 | **[İşletmeniz için takvim paylaşımını yönetin](../../business-premium/m365bp-increase-protection.md#manage-calendar-sharing)**. | Kuruluşunuzdaki kişilerin daha iyi işbirliği için takvimlerini uygun şekilde paylaşmalarına yardımcı olabilirsiniz. Paylaşabilecekleri ayrıntı düzeyini yönetebilirsiniz. Örneğin, paylaşılan ayrıntıları yalnızca serbest/meşgul zamanlarıyla sınırlandırabilirsiniz. <br/><br/>Bkz. [Takvim paylaşımını yönetme](../../business-premium/m365bp-increase-protection.md#manage-calendar-sharing). |
+| 10 | **[Ortamınızı koruyun](../../business-premium/m365bp-maintain-environment.md)**. | İş için Microsoft 365'in ilk kurulumu ve yapılandırması tamamlandıktan sonra kuruluşunuzun bir bakım ve operasyon planına ihtiyacı vardır. Çalışanlar gelip gittikçe kullanıcıları eklemeniz veya kaldırmanız, parolaları sıfırlamanız ve hatta cihazları fabrika ayarlarına sıfırlamanız gerekir. Ayrıca, kişilerin yalnızca işlerini yapmak için ihtiyaç duydukları erişime sahip olduğundan emin olmak istersiniz. <br/><br/>Bkz [. Ortamınızı koruma](../../business-premium/m365bp-maintain-environment.md). |
+
+## <a name="comparing-microsoft-365-for-business-plans"></a>İş için Microsoft 365 planlarını karşılaştırma
+
+İş için Microsoft 365 planları güvenli e-posta, işbirliği ve dosya depolama için Microsoft Exchange, Microsoft Teams, SharePoint ve OneDrive'ı içerir. Bu planlar ayrıca antiphishing, antimalware ve antispam koruma içerir. Microsoft 365 İş Ekstra ile cihaz yönetimi, gelişmiş tehdit koruması ve bilgi koruması gibi daha fazla özelliğe sahip olursunuz. 
+
+Aşağıdaki tabloda İş için Microsoft 365 planlarındaki özellikler karşılaştırilmektedir. 
+
+| Yeteneği | [Microsoft 365 Küçük İşletme](../setup/setup-business-basic.md) | [Microsoft 365 Business Standard](../setup/setup-business-standard.md) | [Microsoft 365 Business Premium](../../business-premium/index.md) |
+|:---|:--:|:--:|:--:|
+| **Office uygulamalarının Outlook ve Web/mobil sürümleri** <br/>Word, Excel ve PowerPoint | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| **Office uygulamalarının masaüstü sürümleri**<br/>Word, Excel, PowerPoint, Publisher ve Access <sup>[[Bkz. not 1](#fn1)]</sup> |  | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| **Güvenli iletişim, işbirliği ve dosya depolama**<br/>Microsoft Teams, Exchange, OneDrive ve SharePoint | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| E-posta **için antispam, antiphishing ve kötü amaçlı yazılımdan koruma** <br/>[Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| **Mobil cihaz yönetimi** ve mobil uygulama yönetimi <br/>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) | Bkz. not <sup>[[2](#fn2)]</sup> | Bkz. not <sup>[[2](#fn2)]</sup> | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| Yeni nesil koruma, güvenlik duvarı, saldırı yüzeyini azaltma, otomatik araştırma ve yanıt ve daha fazlası ile **gelişmiş cihaz güvenliği** <br/>[İş için Defender](../../security/defender-business/mdb-overview.md) | Nota bakın <sup>[[3](#fn3)]</sup>  | Nota bakın <sup>[[3](#fn3)]</sup> | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| Gelişmiş kimlik avı önleme, Güvenli Bağlantılar, Güvenli Ekler ve gerçek zamanlı algılamalar ile **e-posta ve belgeler için gelişmiş koruma**<br/>[Office 365 için Microsoft Defender Plan 1](../../security/office-365-security/defender-for-office-365.md) | Bkz. not <sup>[[4](#fn4)]</sup> | Bkz. not <sup>[[4](#fn4)]</sup> | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
+| Hassas bilgileri keşfetmeye, sınıflandırmaya, korumaya ve yönetmeye yönelik bilgi **koruma** özellikleri <br/>[Azure Information Protection](/azure/information-protection/what-is-information-protection)  | | | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+
+(<a id="fn1">1</a>) Microsoft Publisher ve Microsoft Access yalnızca Windows dizüstü ve masaüstü bilgisayarlarda çalışır.
+
+(<a id="fn2">2</a>) Microsoft Intune bazı Microsoft 365 planlarıyla birlikte sağlanır. Temel Mobilite ve Güvenlik özellikleri Microsoft 365 İş Temel ve Standart'ın bir parçasıdır. [Temel Mobilite ve Güvenlik veya Intune arasında seçim yapın](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
+
+(<a id="fn3">3</a>) İş için Defender Microsoft 365 İş Ekstra dahildir. Ayrıca Microsoft 365 İş Temel veya Microsoft 365 İş Standart için eklenti olarak da satın alınabilir. Bkz. [İş için Defender'ı edinme](/microsoft-365/security/defender-business/get-defender-business).
+
+(<a id="fn4">4</a>) Office 365 için Defender Plan 1 Microsoft 365 İş Ekstra dahil edilir. Ayrıca Microsoft 365 İş Temel veya Microsoft 365 İş Standart için eklenti olarak da satın alınabilir. Bkz. [Plan 1 ve Plan 2](../../security/office-365-security/overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) Office 365 için Defender.
 
 > [!TIP]
-> Bu makaledeki adımlarla ilgili yardıma ihtiyacınız varsa [bir Microsoft küçük işletme uzmanıyla çalışmayı](https://go.microsoft.com/fwlink/?linkid=2186871) göz önünde bulundurun. İşletme Yardımı ile, işletmenizi büyütürken katılımdan gündelik kullanıma kadar her aşamada siz ve çalışanlarınız günün 24 saati küçük işletme uzmanlarına erişebilirsiniz.
+> Her planın neler içerdiği hakkında daha fazla bilgi için bkz. [Microsoft 365 ve Microsoft Teams ile üretkenliği yeniden](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c) planlama.
 
-## <a name="watch-a-quick-overview-of-security"></a>Izleyin: Güvenliğe hızlı bir genel bakış
 
-[YouTube kanalımızda](https://go.microsoft.com/fwlink/?linkid=2198012) bu videoya ve diğer videolara göz atın.
+## <a name="see-also"></a>Ayrıca bkz.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
-
-Tüm Microsoft 365 planları Defender Virüsten Koruma ile temel koruma ve güvenlik sunar, ancak Microsoft 365 İş Ekstra İş için Microsoft Defender dahil edilmesi nedeniyle tehdit koruması, veri koruması ve cihaz yönetimi özelliklerine de sahip olursunuz.  Bu ek özellikler, kuruluşunuzu çevrimiçi tehditlere ve yetkisiz erişime karşı korumanın yanı sıra telefon, tablet ve bilgisayarlarınızda şirket verilerini yönetmenize de olanak tanır.
-
-## <a name="security-features-comparison"></a>Güvenlik özellikleri karşılaştırması
-
-Hizmet planı özelliklerinden biri hakkında bilgi edinmek için aşağıdaki tabloda yer alan başlığa tıklayın. 
-
-|Görev|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
-|---|---|---|
-[Kaybolan veya çalınan parolalara karşı koruma](#set-up-multi-factor-authentication) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-[Kullanıcılarınızı eğitme](#train-your-users) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-[Ayrılmış yönetici hesaplarını kullanma](#use-dedicated-admin-accounts)|![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
-[Kötü amaçlı yazılımlara karşı koruma](#protect-against-malware) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(e-posta için koruma) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(e-posta ve cihazlar için artırılmış koruma) |
-[Fidye yazılımlarından koruma](#protect-against-ransomware) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(e-posta ve bulut depolama için koruma) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(cihazlar, e-posta ve bulut depolama için artırılmış koruma) |
-[Hassas e-postaları şifreleme](#send-encrypted-email) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-[E-postanızı kimlik avı saldırılarına karşı koruma](#protect-sensitive-emails) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(kimlik avı koruması) | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(gelişmiş kimlik avı koruması) |
-[E-posta ve Office dosyalarındaki kötü amaçlı eklere, dosyalara ve URL'lere karşı koruma](#protect-against-malicious-attachments-files-and-urls) | | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(Güvenli Bağlantılar ve Güvenli Ekler) |
-[Kuruluşunuzun cihazları için korumayı artırma](#increase-protection-for-your-organizations-devices) | | ![Dahil.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(kurumsal sınıf cihaz koruması) |
-
-[Microsoft 365 İş Ekstra](../../business-premium/index.md) kitaplığında sağladığımız kılavuzla güvenliği hızla ayarlayabilir ve güvenli bir şekilde işbirliğine başlayabilirsiniz. İş Ekstra bilgileri, tüm küçük işletme müşterilerini karmaşık siber saldırılar ve bilgisayar korsanları tarafından başlatılan siber tehditlere karşı korumak için Microsoft Savunma Demokrasisi ekibiyle ortaklaşa geliştirilmiştir.
-
-### <a name="about-the-microsoft-365-secure-score"></a>Microsoft 365 Güvenli Puanı hakkında
-
-Başlamadan önce <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a> [Microsoft 365 Güvenli Puanınızı](../../security/defender/microsoft-secure-score.md) denetlemeniz önemlidir. Merkezi bir panodan Microsoft 365 kimlikleriniz, verileriniz, uygulamalarınız, cihazlarınız ve altyapınızın güvenliğini izleyebilir ve geliştirebilirsiniz. Önerilen güvenlik özelliklerini yapılandırma, güvenlikle ilgili görevleri gerçekleştirme (raporları görüntüleme gibi) veya üçüncü taraf bir uygulama veya yazılımla önerileri ele almak için size puan verilir. Daha geniş bir Microsoft ürün ve hizmetleri kümesine yönelik içgörüler ve daha fazla görünürlük sayesinde kuruluşunuzun güvenlik durumuyla ilgili raporlama konusunda kendinizi güvende hissedebilirsiniz.
-
-![Microsoft Güvenli Puanı'nın ekran görüntüsü.](../../media/secure-score.png)
-
-## <a name="set-up-multi-factor-authentication"></a>Çok faktörlü kimlik doğrulamasını ayarlama
-
-Çok faktörlü kimlik doğrulamasını (MFA) kullanarak kaybolan veya çalınan parolalara karşı koruma sağlayın. Çok faktörlü kimlik doğrulaması ayarlandığında, kişilerin Microsoft 365'te oturum açmak için telefonlarında bir kod kullanmaları gerekir. Bu ek adım, korsanların parolanızı biliyorsa devralmalarını engelleyebilir. 
-
-Çok faktörlü kimlik doğrulaması 2 aşamalı doğrulama olarak da adlandırılır. Kişiler çoğu 2 aşamalı doğrulamayı, örneğin Google veya Microsoft hesaplarına kolayca ekleyebilir. [Kişisel Microsoft hesabınıza iki aşamalı doğrulamayı şu şekilde ekleyebilirsiniz](https://go.microsoft.com/fwlink/p/?linkid=2016403).
-
-Microsoft 365 kullanan işletmeler için, kullanıcılarınızın çok faktörlü kimlik doğrulaması kullanarak oturum açmasını gerektiren bir ayar ekleyin. Bu değişikliği yaptığınızda, kullanıcılardan bir sonraki oturum açışında telefonlarını iki öğeli kimlik doğrulaması için ayarlamaları istenir.
-MFA'yı ayarlama ve kullanıcıların kurulumu nasıl tamamlayacağına ilişkin bir eğitim videosu görmek için bkz. [MFA'yı](set-up-multi-factor-authentication.md) ve [kullanıcı kurulumunu](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) ayarlama.
-
-### <a name="turn-on-security-defaults"></a>Güvenlik varsayılanlarını açma
-
-Çoğu kuruluş için güvenlik varsayılanları iyi bir ek oturum açma güvenliği düzeyi sunar. Daha fazla bilgi için bkz. [Güvenlik varsayılanları nedir?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Aboneliğiniz yeniyse güvenlik varsayılanları sizin için zaten otomatik olarak açılmış olabilir.
-
-Azure portal Azure Active Directory (Azure AD) için **Özellikler** bölmesinden güvenlik varsayılanlarını etkinleştirin veya devre dışı bırakın.
-
-1. Genel yönetici kimlik bilgileriyle [Microsoft 365 yönetim merkezi](https://admin.microsoft.com) oturum açın.
-
-2. Sol gezinti bölmesinde **Tümünü Göster'i** seçin ve **Yönetici merkezlerin** altında **Azure Active Directory'yi** seçin.
-
-3. **Azure Active Directory yönetim merkezinde Azure** **Active Directory** > **Özellikleri'ni** seçin.
-
-4. Sayfanın alt kısmında **Güvenlik varsayılanlarını yönet**’i seçin.
-
-5. Güvenlik varsayılanlarını etkinleştirmek için **Evet'i** veya güvenlik varsayılanlarını devre dışı bırakmak için **Hayır'ı** ve ardından **Kaydet'i** seçin.
-
-Kuruluşunuz için çok faktörlü kimlik doğrulamasını ayarladıktan sonra, kullanıcılarınızın kendi cihazlarında iki aşamalı doğrulamayı ayarlaması gerekir. Daha fazla bilgi için bkz. [Microsoft 365 için 2 aşamalı doğrulamayı ayarlama](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
-
-> [!Tip]
-> Çok faktörlü kimlik doğrulamasında daha ayrıntılı denetime ihtiyacınız varsa, koşullu erişimi Microsoft 365 İş Ekstra ile etkinleştirebilirsiniz. Bunu yaparsanız, Güvenlik Varsayılanları ile eşdeğer ilkelerin uygulanmasını öneririz. [Güvenlik varsayılanları](/microsoft-365/business-premium/m365bp-conditional-access) hakkında daha fazla bilgi için buraya gidin.
-
-Diğer ayrıntılar ve öneriler için bkz. [Kullanıcılar için çok faktörlü kimlik doğrulamasını ayarlama](set-up-multi-factor-authentication.md).
-
-## <a name="train-your-users"></a>Kullanıcılarınızı eğitme
-
-Harvard Kennedy School [Siber Güvenlik Kampanyası El Kitabı](https://go.microsoft.com/fwlink/p/?linkid=2015598) , kullanıcıları kimlik avı saldırılarını belirlemeye yönelik eğitim de dahil olmak üzere kuruluşunuzda güçlü bir güvenlik farkındalığı kültürü oluşturma konusunda mükemmel rehberlik sağlar.
-
-Ayrıca Microsoft, kullanıcılarınızın bu makalede açıklanan eylemleri gerçekleştirmelerini önerir: [Hesabınızı ve cihazlarınızı korsanlara ve kötü amaçlı yazılımlara karşı koruma](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). Bu eylemler şunlardır:
-
-- Güçlü parolalar kullanma
-- Cihazları koruma
-- Windows 10 ve Mac bilgisayarlarda güvenlik özelliklerini etkinleştirme
-
-Microsoft, kullanıcıların aşağıdaki makalelerde önerilen eylemleri gerçekleştirerek kişisel e-posta hesaplarını korumalarını da önerir:
-
-- [Outlook.com e-posta hesabınızın korunmasına yardımcı olun](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
-
-- [Gmail hesabınızı 2 aşamalı doğrulama ile koruma](https://go.microsoft.com/fwlink/p/?linkid=2015688&)
-
-## <a name="use-dedicated-admin-accounts"></a>Ayrılmış yönetici hesaplarını kullanma
-
-Microsoft 365 ortamınızı yönetmek için kullandığınız yönetim hesapları yükseltilmiş ayrıcalıklar içerir. Bunlar bilgisayar korsanları ve siber saldırganlar için değerli hedeflerdir. Yalnızca yönetim için yönetici hesaplarını kullanın. Yöneticilerin düzenli ve yönetici olmayan kullanım için ayrı bir kullanıcı hesabı olmalıdır ve yalnızca iş işleviyle ilişkili bir görevi tamamlamak için gerektiğinde yönetim hesaplarını kullanmalıdır. Ek öneriler:
-
-- Hesapların [Azure Active Directory'ye](../../admin/add-users/add-users.md) eklendiğinden emin olun.
-- Yönetici hesaplarının çok faktörlü kimlik doğrulaması için de ayarlandığından emin olun.
-- Yönetici hesaplarını kullanmadan önce, kişisel e-posta hesapları da dahil olmak üzere tüm ilgisiz tarayıcı oturumlarını ve uygulamalarını kapatın.
-- Yönetici görevlerini tamamladıktan sonra tarayıcı oturumunda oturumunuzu kapatmış olmanız gerekir.
-
-## <a name="protect-against-malware"></a>Kötü amaçlı yazılımlara karşı koruma
-
-Microsoft 365 ortamınız kötü amaçlı yazılımlara karşı koruma içerir. Kötü amaçlı yazılım korumanızı şu şekilde artırabilirsiniz:
-
-- [Microsoft Office 365 için önceden ayarlanmış ilkeleri](../../../microsoft-365/security/office-365-security/preset-security-policies.md) kullanma.
-- Belirli dosya türlerine sahip ekleri engelleme.
-- Cihazlarınızda, özellikle de İş için Microsoft Defender virüsten koruma/kötü amaçlı yazılımdan koruma kullanma. [Otomatik araştırma raporlama](../../security/office-365-security/air-view-investigation-results.md) (AIR) ve Tehdit ve Güvenlik Açığı Yönetimi (TVM) Panosu gibi özellikler içerir. İş için Microsoft Defender birincil virüsten koruma yazılımınız değilse, yine de pasif modda çalıştırabilir ve özellikle EDR'nin özellikleri tarafından algılanan ve birincil virüs algılayıcı yazılımı tarafından kaçırılan kötü amaçlı yapıtları düzeltmek için arka planda çalıştığı [blok modunda](../../security/defender-endpoint/edr-in-block-mode.md) [uç nokta koruma ve yanıt (](../../security/defender-endpoint/overview-endpoint-detection-response.md)EDR) kullanabilirsiniz.
-
-### <a name="block-attachments-with-certain-file-types"></a>Belirli dosya türlerine sahip ekleri engelleme
-
-Kötü amaçlı yazılım için yaygın olarak kullanılan dosya türlerine sahip ekleri engelleyerek kötü amaçlı yazılım korumanızı artırabilirsiniz. E-postada kötü amaçlı yazılım korumasını artırmak için [İzleyin: Postada kötü amaçlı yazılımlara karşı koruma düzeyini yükseltin](increase-threat-protection.md#watch-raise-the-level-of-protection-against-malware-in-mail) veya aşağıdaki adımları tamamlayın:
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a>, İlkeler **bölümünde** **Email & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kötü amaçlı yazılımdan koruma** bölümüne gidin.
-2. **Kötü amaçlı yazılımdan koruma** sayfasında **Varsayılan'a** çift tıklayın. Açılır öğe görüntülenir.
-3. Açılır pencerenin alt kısmındaki **Koruma ayarlarını düzenle'yi** seçin.
-4. Sonraki sayfada, **Koruma ayarları'nın** altında **Ortak ekler filtresini etkinleştir'in** yanındaki onay kutusunu seçin. Engellenen dosya türleri bu seçeneğin hemen altında listelenir. Dosya türleri eklemek veya silmek için listenin sonundaki **Dosya türlerini özelleştir'i** seçin.
-5. **Kaydet**'i seçin.
-
-Daha fazla bilgi için bkz. [EOP'de kötü amaçlı yazılımdan koruma](../../security/office-365-security/anti-malware-protection.md).
-
-### <a name="use-antivirus-and-anti-malware-protection"></a>Virüsten koruma ve kötü amaçlı yazılımdan koruma kullanma
-
-Microsoft Defender Virüsten Koruma güçlü virüsten koruma ve kötü amaçlı yazılımdan koruma sağlar ve Windows işletim sisteminde yerleşik olarak bulunur.
-
-Kuruluşunuz Microsoft 365 İş Ekstra kullanıyorsa şunları içeren ek cihaz koruması elde edersiniz:
-
-- Yeni nesil koruma
-- Güvenlik duvarı koruması
-- Web içeriği filtreleme
-
-Bu özellikler, 1 Mart 2022'de Microsoft 365 İş Ekstra müşterilerine sunulmaya başlanacak bir teklif olan İş için Microsoft Defender'ye dahildir.
-
-[İş için Microsoft Defender hakkında daha fazla bilgi edinin](../../security/defender-business/mdb-overview.md).
-
-## <a name="protect-against-ransomware"></a>Fidye yazılımlarından koruma
-
-Fidye yazılımı, dosyaları şifreleyerek veya bilgisayar ekranlarını kilitleyerek verilere erişimi kısıtlar. Daha sonra verilere erişim karşılığında genellikle Bitcoin gibi kripto para birimleri biçiminde "fidye" isteyerek kurbanlardan para sızdırmaya çalışır.
-
-Microsoft 365'te barındırılan e-postalar ve OneDrive'da depolanan dosyalar için fidye yazılımı koruması alırsınız. Microsoft 365 İş Ekstra varsa kuruluşunuzun cihazları için ek fidye yazılımı koruması alırsınız.
-
-Fidye yazılımı için yaygın olarak kullanılan dosya uzantılarını engellemek veya bu ekleri e-postayla alan kullanıcıları uyarmak için bir veya daha fazla posta akışı kuralı oluşturarak fidye yazılımlarına karşı koruma sağlayabilirsiniz. İyi bir başlangıç noktası iki kural oluşturmaktır:
-
-- Dosyaları taşımak için OneDrive'ı kullanın, böylece her zaman erişim denetimine sahip ve korumalı olur.
-
-- Makro içeren Office dosya eklerini açmadan önce kullanıcıları uyarın. Fidye yazılımı makroların içine gizlenebilir, bu nedenle kullanıcıları tanımadıkları kişilerden bu dosyaları açmamaları konusunda uyaracağız.
-
-- Fidye yazılımı veya diğer kötü amaçlı kodlar içerebilecek dosya türlerini engelleyin. Yaygın bir yürütülebilir dosya listesiyle başlayacağız (aşağıdaki tabloda listelenmiştir). Kuruluşunuz bu yürütülebilir dosya türlerinden herhangi birini kullanıyorsa ve bunların e-postayla gönderilmesini bekliyorsanız, bunları önceki kurala ekleyin (kullanıcıları uyar).
-
-Posta taşıma kuralı oluşturmak için [İzleme: Fidye yazılımlarına karşı koruma'yı](increase-threat-protection.md#watch-protect-against-ransomware) görüntüleyin veya aşağıdaki adımları tamamlayın:
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange yönetim merkezine</a> gidin.
-
-2. **Posta akışı** kategorisinde **kurallar'ı** seçin.
-
-3. öğesini ve ardından **Yeni kural oluştur'u** seçin **+**.
-
-4. Tüm seçenekler kümesini görmek için iletişim kutusunun alt kısmındaki *** öğesini seçin.
-
-5. Her kural için aşağıdaki tabloda yer alan ayarları uygulayın. Değiştirmek istemediğiniz sürece ayarların geri kalanını varsayılanda bırakın.
-
-6. **Kaydet**'i seçin.
-
-| Ayar | Office dosyalarının eklerini açmadan önce kullanıcıları uyarma | Fidye yazılımı veya diğer kötü amaçlı kod içerebilecek dosya türlerini engelleme |
-|:-----|:-----|:-----|
-|Name  <br/> |Fidye yazılımı önleme kuralı: kullanıcıları uyarma  <br/> |Fidye yazılımı önleme kuralı: dosya türlerini engelleme  <br/> |
-|ise bu kuralı uygulayın. . .  <br/> |Herhangi bir ek . . . dosya uzantısı ile eşleşir. . .  <br/> |Herhangi bir ek . . . dosya uzantısı ile eşleşir. . .  <br/> |
-|Sözcükleri veya tümcecikleri belirtme  <br/> |Şu dosya türlerini ekleyin:  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm  <br/> |Şu dosya türlerini ekleyin:  <br/> ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, wsh, exe, pif  <br/> |
-|Aşağıdakini yapın. . .  <br/> |Bir uyarıyı önceden ekleme  <br/> |iletisini engelleyin. . . iletiyi reddetme ve açıklama ekleme  <br/> |
-|İleti metni sağlama  <br/> |Dosyalar kötü amaçlı kod içerebileceğinden ve göndereni tanımak bir güvenlik garantisi olmadığından, bu tür dosyaları beklemediğiniz sürece açmayın.  <br/> ||
-
-> [!TIP]
-> Ayrıca, engellemek istediğiniz dosyaları Kötü amaçlı yazılımlara [karşı koruma'daki kötü amaçlı yazılımdan](#protect-against-malware) koruma listesine de ekleyebilirsiniz.
-
-Daha fazla bilgi için bkz.:
-
-- [Fidye yazılımı: riski azaltma](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
-
-- [Birlikte daha iyi: Microsoft Defender Virüsten Koruma ve Office 365](../../security/defender-endpoint/office-365-microsoft-defender-antivirus.md)
-
-- [OneDrive'ınızı geri yükleme](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
-
-
-## <a name="protect-sensitive-emails"></a>Hassas e-postaları koruma
-
-Microsoft 365, kuruluşunuzun içindeki ve dışındaki kişiler arasında şifreli e-posta iletileri gönderip almanızı sağlayan Office İleti Şifrelemesi'ni içerir ve bunları yalnızca hedeflenen alıcılar görüntüleyebilir. Şifreleme Outlook.com, Yahoo!, Gmail ve diğer e-posta hizmetleriyle çalışır.
-
-> [!Tip]
-> Daha sıkı bir güvenlik düzeyi gerekiyorsa, kuruluşunuz e-postalar veya dosyalar için duyarlılık etiketlemesini de yapılandırmalı ve kullanmalıdır. [Duyarlılık etiketleri](../../compliance/sensitivity-labels.md) , nereye gidersen girsin içerik üzerinde denetime olanak sağlar.
-
-### <a name="send-encrypted-email"></a>Şifreli e-posta gönderme
-
-E-postanızı şifrelemek için:
-
-1. Yeni bir e-posta açıkken **Seçenekler** menüsünü seçin.
-1. **Şifrele** açılan listesinden uygun izin düzeyini seçin.
-
-:::image type="content" source="../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png" alt-text="Outlook'ta ileti şifrelemeyi Email":::
-
-### <a name="receive-encrypted-email"></a>Şifrelenmiş e-posta alma
-
-Alıcının Outlook 2013 veya Outlook 2016 ve bir Microsoft e-posta hesabı varsa, Okuma bölmesinde öğenin kısıtlı izinleri hakkında bir uyarı görür. İletiyi açtıktan sonra, alıcı iletiyi diğer tüm iletilerde olduğu gibi görüntüleyebilir.
-
-Alıcı Gmail veya Yahoo gibi başka bir e-posta istemcisi veya e-posta hesabı kullanıyorsa, e-posta iletisini okumak için oturum açmasına veya iletiyi web tarayıcısında görüntülemek için tek seferlik geçiş kodu istemesine olanak tanıyan bir bağlantı görür. Kullanıcılar e-postayı almıyorsa İstenmeyen posta veya Gereksiz e-posta klasörlerini denetlemeleri gerekir.
-
-> [!TIP]
-> Daha fazla bilgi için bkz. [Bilgisayar için Outlook'ta şifrelenmiş iletileri gönderme, görüntüleme ve yanıtlama](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980).
-
-## <a name="protect-the-organization"></a>Kuruluşu koruma
-
-Microsoft 365 ortamınız için bir veya daha fazla özel etki alanı yapılandırdıysanız, hedeflenen kimlik avı koruması yapılandırabilirsiniz. Kimlik avı koruması Office 365 için Microsoft Defender dahildir ve kuruluşunuzun kötü amaçlı kimliğe bürünme tabanlı kimlik avı ve diğer saldırılara karşı korunmasına yardımcı olabilir.
-
-> [!Note]
-> Özel bir etki alanı yapılandırmadıysanız bunu yapmanız gerekmez.
-
-En önemli kullanıcılarınız ve özel etki alanınız için bir ilke oluşturarak bu korumayı kullanmaya başlamanızı öneririz. Bunu yapmak için Microsoft 365 Defender, Microsoft Business Premium ile birlikte iyi bir yerdir. Office 365 için Defender'da kimlik avı önleme ilkesi oluşturmak için aşağıdaki adımları tamamlayın:
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalına</a> gidin.
-
-2. İlkeler **bölümünde** **Email & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kimlik avı önleme** bölümüne gidin.
-
-3. Kimlik avı önleme sayfasında **+ Oluştur'u** seçin. Kimlik avı önleme ilkenizi tanımlama işleminde size yol gösteren bir sihirbaz başlatılır.
-
-4. Aşağıdaki grafikte önerilen ilkenizin adını, açıklamasını ve ayarlarını belirtin. Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender seçeneklerinde kimlik avı önleme ilkesi hakkında bilgi edinin](../../security/office-365-security/set-up-anti-phishing-policies.md).
-
-5. Ayarlarınızı gözden geçirdikten sonra **, Uygun şekilde Bu ilkeyi oluştur** veya **Kaydet'i** seçin.
-
-|Ayar veya seçenek|Önerilen ayar|
-|---|---|
-|Name|Etki alanı ve en değerli kampanya personeli|
-|Açıklama|En önemli personelin ve etki alanımızın kimliğine bürünülmediğinden emin olun.|
-|Korunacak kullanıcıları ekleme|**+ Koşul ekle'yi seçin, Alıcıdır**. Kullanıcı adlarını yazın veya adayın, kampanya yöneticisinin ve diğer önemli personel üyelerinin e-posta adresini girin. Kimliğe bürünmeye karşı korumak istediğiniz en fazla 20 iç ve dış adres ekleyebilirsiniz.|
-|Korunacak etki alanları ekleme|**+ Koşul ekle'yi seçin, Alıcı etki alanı.** Tanımladıysanız Microsoft 365 aboneliğinizle ilişkili özel etki alanını girin. Birden fazla etki alanı girebilirsiniz.|
-|Eylemleri seçme|E-posta kimliğine bürünülen bir kullanıcı tarafından gönderiliyorsa: **İletiyi başka bir e-posta adresine yeniden yönlendir'i** seçin ve güvenlik yöneticisinin e-posta adresini yazın; örneğin, securityadmin@contoso.com. <br/> E-posta kimliğine bürünülen bir etki alanı tarafından gönderiliyorsa, **İletiyi karantinaya al'ı** seçin.|
-|Posta kutusu zekası|Varsayılan olarak, yeni bir kimlik avı önleme ilkesi oluşturduğunuzda posta kutusu zekası seçilir. En iyi sonuçlar için bu ayarı **Açık** bırakın.|
-|Güvenilir gönderenler ve etki alanları ekleme|Bu örnekte hiçbir geçersiz kılma tanımlamayın.|
-|Uygulandığı yer|**Alıcı etki alanı'nı** seçin. **Bunlardan herhangi biri'nin** altında **Seç'i** seçin. **+ Ekle'yi** seçin. Etki alanı adının yanındaki onay kutusunu seçin(örneğin, listede contoso.com) ve ardından **Ekle'yi** seçin. **Bitti'yi** seçin.|
-
-> [!TIP]
-> Daha fazla bilgi için bkz. [Office 365 için Defender'de kimlik avı önleme ilkelerini ayarlama](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
-
-## <a name="protect-against-malicious-attachments-files-and-urls"></a>Kötü amaçlı eklere, dosyalara ve URL'lere karşı koruma
-
-Kişiler belgeler, sunular, elektronik tablolar ve daha fazlası gibi ekleri düzenli olarak gönderir, alır ve paylaşır. Yalnızca e-posta iletisine bakarak bir ekin güvenli mi yoksa kötü amaçlı mı olduğunu söylemek her zaman kolay değildir. Office 365 için Microsoft Defender Güvenli Ek koruması içerir, ancak bu koruma varsayılan olarak açık değildir. Bu korumayı kullanmaya başlamak için yeni bir kural oluşturmanızı öneririz. Bu koruma SharePoint, OneDrive ve Microsoft Teams'deki dosyalara genişletir.
-
-### <a name="set-up-safe-attachments"></a>Güvenli Ekleri Ayarlama
-
-Önceden ayarlanmış Güvenli Ekler ilkelerini kullanabilir veya kendi ilkelerinizi oluşturabilirsiniz. Güvenli Ekler ilkesi oluşturmak için [kısa bir eğitim videosu](increase-threat-protection.md) görüntüleyin veya aşağıdaki adımları tamamlayın:
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalına</a> gidin ve yönetici hesabınızla oturum açın.
-
-2. **İlkeler bölümünde Email & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kötü amaçlı yazılımdan koruma** bölümüne gidin.
-
-3. Yeni bir ilke oluşturmak için **+ Oluştur'u** seçin.
-
-4. Aşağıdaki tabloda yer alan ayarları uygulayın.
-
-5. Ayarlarınızı gözden geçirdikten sonra **, Uygun şekilde Bu ilkeyi oluştur** veya **Kaydet'i** seçin.
-
-|Ayar veya seçenek|Önerilen ayar|
-|---|---|
-|Name|Algılanan kötü amaçlı yazılımlarla geçerli ve gelecekteki e-postaları engelleyin.|
-|Açıklama|Algılanan kötü amaçlı yazılımlarla geçerli ve gelecekteki e-postaları ve ekleri engelleyin.|
-|Ekleri kaydetme bilinmeyen kötü amaçlı yazılım yanıtı|**Engelle - Algılanan kötü amaçlı yazılım içeren geçerli ve gelecekteki e-postaları ve ekleri engelle'yi** seçin.|
-|Algılamada eki yeniden yönlendirme|Yeniden yönlendirmeyi etkinleştir (bu kutuyu seçin) <br/> Karantina için yönetici hesabını veya posta kutusu kurulumunu girin. <br/> Eklerde kötü amaçlı yazılım taraması zaman aşımına uğradıysa veya hata oluşursa yukarıdaki seçimi uygulayın (bu kutuyu seçin).|
-|Uygulandığı yer|Alıcı etki alanı şeklindedir. . . etki alanınızı seçin.|
-
-> [!TIP]
-> Daha fazla bilgi için bkz. [Office 365 için Defender'de kimlik avı önleme ilkelerini ayarlama](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
-
-### <a name="set-up-safe-links"></a>Güvenli Bağlantıları Ayarlama
-
-Korsanlar bazen kötü amaçlı web sitelerini e-posta veya diğer dosyalardaki bağlantılarda gizler. Office 365 için Microsoft Defender parçası olan Güvenli Bağlantılar, e-posta iletilerinde ve Office belgelerinde web adreslerinin (URL' ler) tıklama zamanında doğrulanmasını sağlayarak kuruluşunuzun korunmasına yardımcı olabilir. Koruma, Güvenli Bağlantılar ilkeleri aracılığıyla tanımlanır.
-
-Saldırılara karşı korumak için aşağıdakileri yapın:
-
-- Korumayı artırmak için varsayılan ilkeyi değiştirin.
-
-- Etki alanınızdaki tüm alıcıları hedefleyen yeni bir ilke ekleyin.
-
-Güvenli Bağlantılar'a ulaşmak için [İzleme: E-postanızı kimlik avı saldırılarına karşı koruma'yı](increase-threat-protection.md#watch-protect-your-email-from-phishing-attacks) görüntüleyin veya aşağıdaki adımları tamamlayın:
-
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalına</a> gidin ve yönetici hesabınızla oturum açın.
-
-2. **İlkeler bölümünde Email & işbirliği** \> **İlkeleri & kuralları** \> **Tehdit ilkeleri** \> **Kötü amaçlı yazılımdan koruma** bölümüne gidin.
-
-3. Yeni bir ilke oluşturmak veya varsayılan ilkeyi değiştirmek için **+ Oluştur'u** seçin.
-
-Varsayılan ilkeyi değiştirmek için:
-
-1. **Varsayılan** ilkeye çift tıklayın. Açılır öğe görüntülenir. 
-
-2. Açılır pencerenin alt kısmındaki **Koruma ayarlarını düzenle'yi** seçin.
-
-3. Varsayılan ilkeyi değiştirdikten sonra **Kaydet'i** seçin.
-
-|Ayar veya seçenek|Önerilen ayar|
-|---|---|
-|Name|Etki alanındaki tüm alıcılar için güvenli bağlantılar ilkesi|
-|İletilerde bilinmeyen kötü amaçlı olabilecek URL'ler için eylemi seçin|**Açık - URL'ler yeniden yazılır ve kullanıcı bağlantıya tıkladığında bilinen kötü amaçlı bağlantıların listesiyle karşılaştırılır**.|
-|Şüpheli bağlantılar ve dosyalara işaret eden bağlantılar için gerçek zamanlı URL taraması uygulama|Bu kutuyu seçin.|
-|Uygulandığı yer|Alıcı etki alanı şeklindedir. . . etki alanınızı seçin.|
-
-> [!TIP]
-> Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar](../../security/office-365-security/atp-safe-links.md).
-
-## <a name="increase-protection-for-your-organizations-devices"></a>Kuruluşunuzun cihazları için korumayı artırma
-
-Microsoft Defender Virüsten Koruma, Windows işletim sisteminde yerleşiktir ve virüslere ve kötü amaçlı yazılımlara karşı iyi koruma sağlar. Ancak, sizinki gibi küçük ve orta ölçekli işletmeler için yeni bir teklif olan ve [Microsoft 365 İş Ekstra dahil edilen](../../business-premium/index.md) İş için Microsoft Defender'a ekleyerek kuruluşunuzun cihazları için korumayı artırabilirsiniz. İş için Defender ile kuruluşunuzun cihazları fidye yazılımlarına, kötü amaçlı yazılımlara, kimlik avına ve diğer tehditlere karşı daha iyi korunur.
-
-Microsoft 365 İş Ekstra ile cihaz yönetimi ve gelişmiş tehdit koruması gibi daha yüksek güvenlik özelliklerine sahip olursunuz. Cihazları Defender için Microsoft 365 İş'e kaydettiğinizde, cihazlar InTune tarafından izlenir ve korunur.
-
-
-Daha fazla bilgi edinmek için aşağıdaki kaynaklara bakın:
-
-- [İş için Microsoft Defender'a Genel Bakış](../../security/defender-business/mdb-overview.md)
-
-- [İş için Microsoft Defender ayarlama ve yapılandırma](../../security/defender-business/mdb-setup-configuration.md)
-
-- [Microsoft 365 Defender portalını kullanmaya başlama](../../security/defender-business/mdb-get-started.md)
-
-## <a name="related-content"></a>İlgili içerik
-
-[Microsoft 365 için çok faktörlü kimlik doğrulaması](multi-factor-authentication-microsoft-365.md) (makale)\
-[Öncelik hesaplarını yönetme ve izleme](../setup/priority-accounts.md) (makale)\
-[Yönetim merkezinde Microsoft 365 Raporları](../activity-reports/activity-reports.md) (video)\
-[Microsoft 365 İş Ekstra — küçük işletmeler için siber güvenlik](/microsoft-365/business-premium/) (makale)\
+- [İş için Defender nedir?](../../security/defender-business/mdb-overview.md)
+- [Microsoft 365 İş Ekstra— küçük işletmeler için siber güvenlik](/microsoft-365/business-premium/)
+- [Küçük ve orta ölçekli işletmeler için Microsoft 365 planlarındaki güvenlik özelliklerini karşılaştırma](../../security/defender-business/compare-mdb-m365-plans.md) (İş için Defender ve Microsoft 365 İş Ekstra hakkında daha fazla ayrıntı için)
+- [Microsoft uç nokta güvenlik planlarını karşılaştırma](../../security/defender-endpoint/defender-endpoint-plan-1-2.md) (cihazların güvenliğini sağlamak ve yönetmek için)
 

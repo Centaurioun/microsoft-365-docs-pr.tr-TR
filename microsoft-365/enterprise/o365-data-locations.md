@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 müşteri verilerinizin dünya çapında nerede depolandığını belirleme
-ms.openlocfilehash: 6652d9076a5b2ecd11b0793104924690d14a1f98
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 8ece0439bafcb6c183cf57cef7648c6bfa3f62ee
+ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787638"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67393120"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 müşteri verilerinizin depolandığı yer
 
@@ -161,13 +161,13 @@ Aşağıdaki tabloda çeşitli hizmetler için veri konumu tanımlenmektedir. Hi
 
 ### <a name="data-center-geographies"></a>Veri Merkezi Coğrafyaları
 
-Aşağıdaki küresel coğrafyalar bekleyen verileri depolayabilir. Müşteri verilerinin depolanabileceği konumlar değişebilir.
+Aşağıdaki bölgesel coğrafyalar bekleyen verileri depolayabilir. Müşteri verilerinin depolanabileceği konumlar değişebilir.
 
-| Küresel Coğrafyalar | Müşteri verilerinin depolanabileceği konumlar |
+| Bölgesel Coğrafyalar | Müşteri verilerinin depolanabileceği konumlar |
 | --- | --- |
-| Küresel Coğrafya 1 – EMEA (Avrupa, Orta Doğu ve Afrika) | Avusturya, Finlandiya, Fransa, İrlanda, Hollanda, İsveç |
-| Küresel Coğrafya 2 – Asya Pasifik | Hong Kong, Japonya, Malezya, Singapur, Güney Kore |
-| Küresel Coğrafya 3 - Amerika | Brezilya, Şili, Birleşik Devletler |
+| Bölgesel Coğrafya 1 – EMEA (Avrupa, Orta Doğu ve Afrika) | Avusturya, Finlandiya, Fransa, İrlanda, Hollanda, İsveç |
+| Bölgesel Coğrafya 2 – Asya Pasifik | Hong Kong, Japonya, Malezya, Singapur, Güney Kore |
+| Bölgesel Coğrafya 3 - Amerika | Brezilya, Şili, Birleşik Devletler |
 
 ## <a name="countryregion-specific-data-center-city-locations"></a>Ülkeye/Bölgeye özgü Veri Merkezi şehir konumları
 
@@ -183,6 +183,7 @@ Aşağıdaki küresel coğrafyalar bekleyen verileri depolayabilir. Müşteri ve
 | Almanya | Frankfurt, Berlin |
 | Hindistan | Chennai, Mumbai, Pune |
 | Japonya | Osaka, Tokyo |
+| Katar | Doha |
 | Güney Kore | Busan, Seul |
 | Norveç | Oslo, Stavanger |
 | South Africa | Cape Town, Johannesburg |
@@ -632,7 +633,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -688,7 +689,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -3180,7 +3181,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -3264,7 +3265,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -3404,7 +3405,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -3432,7 +3433,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -3544,7 +3545,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -3572,7 +3573,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -3600,7 +3601,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -3684,7 +3685,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -4244,7 +4245,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -4833,7 +4834,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -4861,7 +4862,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -5184,27 +5185,31 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 
 | Hizmet | Konum |
 | --- | --- |
-| Exchange Online | Küresel Coğrafya 1 – EMEA |
-| OneDrive İş | Küresel Coğrafya 1 – EMEA |
-| SharePoint Online | Küresel Coğrafya 1 – EMEA |
-| Microsoft Teams | Küresel Coğrafya 1 – EMEA |
-| Office Online &amp; Mobile | Küresel Coğrafya 1 – EMEA |
-| EOP | Küresel Coğrafya 1 – EMEA |
-| Intune | Küresel Coğrafya 1 – EMEA |
-| Planner | Küresel Coğrafya 1 – EMEA |
-| Sway | Amerika Birleşik Devletleri |
-| Yammer | Küresel Coğrafya 1 – EMEA |
-| OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
-| Stream | Küresel Coğrafya 1 – EMEA |
-| Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
-| Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
-| Viva Konular | Küresel Coğrafya 1 – EMEA |
-| Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
-| Viva Analizler - Kişisel | Küresel Coğrafya 1 – EMEA |
-| Viva Analizler - Yalnızca Yönetici/Lider AAD kuruluş verileri | Küresel Coğrafya 1 – EMEA |
-| Viva Analizler - Yalnızca 3. taraf İk verileriyle Yönetici/Lider | Amerika Birleşik Devletleri |
-| Viva Analizler - Gelişmiş | Amerika Birleşik Devletleri |
+| Exchange Online | Katar* |
+| OneDrive İş | Katar* |
+| SharePoint Online | Katar* |
+| Exchange Online Protection | Katar* |
+| Office P1 için Microsoft Defender | Katar* |
+| Microsoft Teams | Katar* |
+| Web için Office | Katar* |
+| Mobil cihazlar için Office | Katar* |
+| OneNote Hizmetleri | Katar* |
+| Stream | Katar* |
+| Tahta | Katar* |
+| Viva Bağlantılar | Katar* |
+| Viva Analizler - Kişisel İçgörüler | Katar* |
+| Viva Konular | Katar* |
+| Azure Active Directory | Avrupa Birliği |
+| Teams için Dataverse | Avrupa Birliği |
+| Intune | Avrupa Birliği |
+| Planner | Avrupa Birliği |
+| Power Automate Desktop | Avrupa Birliği |
+| Teams için Power Virtual Agent | Avrupa Birliği |
+| Viva Analizler - Mgr / Lider / Gelişmiş | Avrupa Birliği |
+| Viva öğrenme | Avrupa Birliği |
+| Yammer | Avrupa Birliği |
+| Forms | Amerika Birleşik Devletleri |
+*Müşteri verilerini bekleyen Exchange Online, SharePoint Online veya OneDrive İş depolayan veya yerel olarak dağıtılan her hizmet.
 </p></details>
 
 ## <a name="republic-of-macedonia"></a>Makedonya Cumhuriyeti
@@ -5225,7 +5230,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -5645,7 +5650,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -6513,7 +6518,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -6681,7 +6686,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Birleşik Arap Emirlikleri |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Birleşik Arap Emirlikleri |
 | Viva Konular | Birleşik Arap Emirlikleri |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -6821,7 +6826,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |
@@ -6988,7 +6993,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | OneNote Hizmetleri | Küresel Coğrafya 1 – EMEA |
 | Stream | Küresel Coğrafya 1 – EMEA |
 | Tahta | Amerika Birleşik Devletleri |
-| Forms | Küresel Coğrafya 1 – EMEA |
+| Forms | Amerika Birleşik Devletleri |
 | Viva Bağlantılar | Küresel Coğrafya 1 – EMEA |
 | Viva Konular | Küresel Coğrafya 1 – EMEA |
 | Viva Öğrenme | Küresel Coğrafya 1 – EMEA |

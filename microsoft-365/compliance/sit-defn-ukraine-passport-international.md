@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Ukrayna pasaportu uluslararası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 333475ad89f8437c046a572ae5377fb030b173fe
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a383fea21990437199287f3e212debe8530d1521
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948562"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67370199"
 ---
 # <a name="ukraine-passport-international"></a>Ukrayna pasaportu uluslararası
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -47,16 +39,16 @@ sekiz karakterli alfasayısal desen:
 - iki harf veya basamak
 - altı basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Regex `Regex_Ukraine_Passport_International` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_Ukraine_Passport_International` bir anahtar sözcük bulunur.
+- `Keyword_Ukraine_Passport_International` içinden bir anahtar sözcük bulundu.
 
 ```xml
       <!-- Ukraine Passport International -->

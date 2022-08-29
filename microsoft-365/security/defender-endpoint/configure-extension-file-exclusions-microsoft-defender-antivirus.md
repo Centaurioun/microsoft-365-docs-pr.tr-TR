@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: thdoucet
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5976d09bfbfd42798dda38d2479ac9535ae3b68b
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 26338be73c034c02ed285b7098d49547c4f8b54a
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020433"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388781"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Dosya uzantısına ve klasör konumuna göre dışlamaları yapılandırma ve doğrulama
 
@@ -107,7 +107,7 @@ Bkz. [Kötü amaçlı yazılımdan koruma ilkeleri oluşturma ve dağıtma:](/co
 
 2. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na** gidin ve **Yönetim şablonları'nı** seçin.
 
-3. Ağacı **Dışlamalar**\> **Windows Defender Virüsten Koruma** \> **Windows bileşenlerine** genişletin.
+3. Ağacı **Windows bileşenleri** **Microsoft Defender Virüsten Koruma** \> **Dışlamaları**\> olarak genişletin.
 
 4. Düzenlemek için **Yol Dışlamaları** ayarını açın ve dışlamalarınızı ekleyin.
 

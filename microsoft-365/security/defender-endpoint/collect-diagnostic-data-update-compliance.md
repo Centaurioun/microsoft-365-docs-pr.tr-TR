@@ -1,7 +1,7 @@
 ---
-title: Güncelleştirme Uyumluluğu ve Uyumluluğu için tanılama verilerini Microsoft Defender Virüsten Koruma
-description: Değerlendirme Eklentisini kullanırken Güncelleştirme Uyumluluğu sorunlarını gidermek üzere veri Microsoft Defender Virüsten Koruma kullanın.
-keywords: sorun giderme, hata, düzeltme, uyumluluğu güncelleştirme, işletim sistemi, monitör, rapor, Microsoft Defender AV
+title: Güncelleştirme Uyumluluğu ve Microsoft Defender Antivirus için tanılama verilerini toplayın
+description: Microsoft Defender Virüsten Koruma Değerlendirmesi eklentisini kullanırken Güncelleştirme Uyumluluğu sorunlarını gidermek için veri toplamak için bir araç kullanın.
+keywords: sorun giderme, hata, düzeltme, güncelleştirme uyumluluğu, oms, izleme, rapor, Microsoft Defender AV, Microsoft Defender Virüsten Koruma
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -17,48 +17,48 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9e368f2cb3cecf9359c4aed5e727aef2ee21c02b
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 84a0d069d2f4f87d2884f3d70b6c6e88a07b4868
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "62997021"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388847"
 ---
-# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Değerlendirme değerlendirme için güncelleştirme uyumluluğu tanılama Microsoft Defender Virüsten Koruma toplama
+# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Microsoft Defender Virüsten Koruma değerlendirmesi için güncelleştirme uyumluluğu tanılama verilerini toplama
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Bu makalede, Microsoft destek ve mühendislik ekipleri tarafından, Güncelleştirme Uyumluluğu eklentisinde Yer Alan Değerlendirme bölümünü kullanırken karşılaşabilirsiniz sorunları gidermek için Microsoft Defender Virüsten Koruma kullanılmaktadır.
+Bu makalede, Güncelleştirme Uyumluluğu eklentisinin Microsoft Defender Virüsten Koruma Değerlendirmesi bölümünü kullanırken karşılaşabileceğiniz sorunları gidermeye yardımcı olmak için Microsoft destek ve mühendislik ekipleri tarafından kullanılabilecek tanılama verilerinin nasıl toplandığı açıklanır.
 
-Bu işlemi denemeden önce, Raporlama sorunlarını giderme, [önkoşulların](troubleshoot-reporting.md) Microsoft Defender Virüsten Koruma karşılanması ve önerilen diğer sorun giderme adımlarını okuduğu salt okunur.
+Bu işlemi denemeden önce [Microsoft Defender Virüsten Koruma raporlama sorunlarını giderme](troubleshoot-reporting.md) makalesini okuduğunuzdan, önkoşulların tümünü karşıladığınızdan ve önerilen diğer sorun giderme adımlarını uyguladığınızı doğrulayın.
 
-Raporlama veya Güncelleştirme Uyumluluğu'nda göstermeyen en az iki cihaz için aşağıdaki .cab bu tanılama dosyasını alın:
+Güncelleştirme Uyumluluğu'nda raporlamayan veya görünmeyen en az iki cihazda, aşağıdaki adımları uygulayarak .cab tanılama dosyasını alın:
 
-1. Komut isteminin yönetici düzeyindeki bir sürümünü aşağıdaki gibi açın:
+1. Komut isteminin yönetici düzeyinde bir sürümünü aşağıdaki gibi açın:
 
-    a. Başlat **menüsünü** açın.
+    a. **Başlat** menüsünü açın.
 
-    b. **cmd yazın**. Komut İstemi'ne **sağ tıklayın ve** yönetici olarak **çalıştır'ı seçin**.
+    b. **cmd** yazın. **Komut İstemi'ne** sağ tıklayın ve yönetici **olarak çalıştır'ı** seçin.
 
-    c. Yönetici kimlik bilgilerini belirtin veya bilgi istemini onaylar.
+    c. Yönetici kimlik bilgilerini belirtin veya istemi onaylayın.
 
-2. Windows Defender gidin. Varsayılan olarak bu seçenektir `C:\Program Files\Windows Defender`.
+2. Windows Defender dizinine gidin. Varsayılan olarak, bu değeridir `C:\Program Files\Windows Defender`.
 
-3. Aşağıdaki komutu yazın ve Enter tuşuna **basın**
+3. Aşağıdaki komutu yazın ve **Enter tuşuna** basın
 
     ```Dos
     mpcmdrun -getfiles
     ```
 
-4. Çeşitli .cab günlükler içeren bir dosya oluşturulur. Dosyanın konumu, komut isteminde çıktıda belirtilir. Varsayılan olarak konum: `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.
+4. Çeşitli tanılama günlüklerini içeren bir .cab dosyası oluşturulur. Dosyanın konumu komut istemindeki çıktıda belirtilir. Varsayılan olarak, konumu şeklindedir `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.
 
-5. Bu .cab dosyalarını Microsoft desteği tarafından erişilebilen bir konuma kopyalayın. Örneğin, bizimle paylaşabilirsiniz OneDrive parola korumalı bir klasör olabilir.
+5. Bu .cab dosyalarını Microsoft desteği tarafından erişilebilen bir konuma kopyalayın. Bizimle paylaşabileceğiniz parola korumalı bir OneDrive klasörü örnek olabilir.
 
-6. Güncelleştirme uyumluluğu desteği <a href="mailto:ucsupport@microsoft.com?subject=MDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">e-posta şablonunu kullanarak bir e-posta</a> gönderin ve şablonu aşağıdaki bilgilerle doldurun:
+6. <a href="mailto:ucsupport@microsoft.com?subject=MDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">Güncelleştirme uyumluluğu desteği e-posta şablonunu kullanarak bir e-posta</a> gönderin ve şablonu aşağıdaki bilgilerle doldurun:
 
     ```text
     I am encountering the following issue when using Microsoft Defender Antivirus in Update Compliance:
@@ -72,4 +72,4 @@ Raporlama veya Güncelleştirme Uyumluluğu'nda göstermeyen en az iki cihaz iç
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Raporlama Microsoft Defender Virüsten Koruma giderme](troubleshoot-reporting.md)
+- [Microsoft Defender Virüsten Koruma raporlama sorunlarını giderme](troubleshoot-reporting.md)

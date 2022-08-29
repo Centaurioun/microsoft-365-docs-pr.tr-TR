@@ -1,6 +1,6 @@
 ---
-title: İşletmenizdeki Microsoft Defender Virüsten Koruma yönetme
-description: Microsoft Defender AV'yi yönetmek için grup ilkesi, Configuration Manager, PowerShell, WMI, Intune ve komut satırını kullanmayı öğrenin
+title: İşletmenizde Microsoft Defender Virüsten Koruma'ya yönetme
+description: Microsoft Defender Virüsten Koruma'yı yönetmek için grup ilkesi, Configuration Manager, PowerShell, WMI, Intune ve komut satırını kullanmayı öğrenin
 keywords: grup ilkesi, gpo, yapılandırma yöneticisi, sccm, scep, powershell, wmi, intune, defender, virüsten koruma, kötü amaçlı yazılımdan koruma, güvenlik, koruma
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,21 +16,21 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 760c3b7ca646b02813b5d14086f5d94fc9aec72c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: c26f3e045efa5ea1c538796b9165bef5fa763c98
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418664"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388825"
 ---
-# <a name="manage-microsoft-defender-antivirus-in-your-business"></a>İşletmenizdeki Microsoft Defender Virüsten Koruma yönetme
+# <a name="manage-microsoft-defender-antivirus-in-your-business"></a>İşletmenizde Microsoft Defender Virüsten Koruma'ya yönetme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Şunlar için geçerlidir:**
 
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Virüsten Koruma
@@ -38,27 +38,27 @@ ms.locfileid: "65418664"
 **Platform**
 - Windows
 
-aşağıdaki araçlarla Microsoft Defender Virüsten Koruma yönetebilir ve yapılandırabilirsiniz:
+Microsoft Defender Virüsten Koruma'yi aşağıdaki araçlarla yönetebilir ve yapılandırabilirsiniz:
 
-- [Microsoft Intune](/mem/intune/protect/endpoint-security-antivirus-policy) (şimdi Microsoft Endpoint Manager parçası)
-- [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure) (artık Microsoft Endpoint Manager parçası)
+- [Microsoft Intune](/mem/intune/protect/endpoint-security-antivirus-policy) (artık Microsoft Endpoint Manager'nin bir parçası)
+- [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure) (artık Microsoft Endpoint Manager'nin bir parçası)
 - [Grup İlkesi](./use-group-policy-microsoft-defender-antivirus.md)
 - [PowerShell cmdlet'leri](./use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Windows Yönetim Araçları (WMI)](./use-wmi-microsoft-defender-antivirus.md)
 - [Microsoft Kötü Amaçlı Yazılımdan Koruma Komut Satırı Yardımcı Programı](./command-line-arguments-microsoft-defender-antivirus.md) (*mpcmdrun.exe* yardımcı programı olarak adlandırılır)
 
-Aşağıdaki makaleler, Microsoft Defender Virüsten Koruma yönetmek ve yapılandırmak için bu araçları kullanmaya yönelik daha fazla bilgi, bağlantı ve kaynak sağlar.
+Aşağıdaki makaleler, Microsoft Defender Virüsten Koruma'yı yönetmek ve yapılandırmak için bu araçları kullanmaya yönelik daha fazla bilgi, bağlantı ve kaynak sağlar.
 
 |Makale|Açıklama|
 |:---|:---|
-|[Microsoft Intune ve Microsoft Endpoint Configuration Manager ile Microsoft Defender Virüsten Koruma yönetme](use-intune-config-manager-microsoft-defender-antivirus.md)|Microsoft Defender Virüsten Koruma dağıtmak, yönetmek, raporlamak ve yapılandırmak için Intune ve Configuration Manager kullanma hakkında bilgi|
-|[grup ilkesi ayarlarıyla Microsoft Defender Virüsten Koruma yönetme](use-group-policy-microsoft-defender-antivirus.md)|ADMX şablonlarında bulunan tüm grup ilkesi ayarlarının listesi|
-|[PowerShell cmdlet'leriyle Microsoft Defender Virüsten Koruma yönetme](use-powershell-cmdlets-microsoft-defender-antivirus.md)|Microsoft Defender Virüsten Koruma yönetmek için PowerShell cmdlet'lerini kullanma yönergelerinin yanı sıra tüm cmdlet'ler ve izin verilen parametreler için belgelere bağlantılar|
-|[Windows Yönetim Araçları (WMI) ile Microsoft Defender Virüsten Koruma yönetme](use-wmi-microsoft-defender-antivirus.md)|Microsoft Defender Virüsten Koruma yönetmek için WMI kullanma yönergelerinin yanı sıra WMIv2 API'lerinin belgelerine bağlantılar (tüm sınıflar, yöntemler ve özellikler dahil)|
-|[MpCmdRun.exe komut satırı aracıyla Microsoft Defender Virüsten Koruma yönetme](command-line-arguments-microsoft-defender-antivirus.md)|Microsoft Defender Virüsten Koruma yönetmek ve kullanmak için ayrılmış komut satırı aracını kullanma yönergeleri|
+|[microsoft defender virüsten korumayı Microsoft Intune ve Microsoft Endpoint Configuration Manager ile yönetme](use-intune-config-manager-microsoft-defender-antivirus.md)|Microsoft Defender Virüsten Koruma'yı dağıtmak, yönetmek, raporlamak ve yapılandırmak için Intune ve Configuration Manager kullanma hakkında bilgi|
+|[microsoft defender virüsten korumayı grup ilkesi ayarlarıyla yönetme](use-group-policy-microsoft-defender-antivirus.md)|ADMX şablonlarında bulunan tüm grup ilkesi ayarlarının listesi|
+|[Microsoft Defender Virüsten Koruma'nın PowerShell cmdlet'lerini yönetme](use-powershell-cmdlets-microsoft-defender-antivirus.md)|Microsoft Defender Virüsten Koruma'yı yönetmek için PowerShell cmdlet'lerini kullanma yönergelerinin yanı sıra tüm cmdlet'ler ve izin verilen parametrelerin belgelerine bağlantılar|
+|[Microsoft Defender Virüsten Koruma'yi Windows Yönetim Araçları ile Yönetme (WMI)](use-wmi-microsoft-defender-antivirus.md)|Microsoft Defender Virüsten Koruma'yı yönetmek için WMI kullanma yönergelerinin yanı sıra WMIv2 API'lerinin belgelerine bağlantılar (tüm sınıflar, yöntemler ve özellikler dahil)|
+|[microsoft defender virüsten korumayı MpCmdRun.exe komut satırı aracıyla yönetme](command-line-arguments-microsoft-defender-antivirus.md)|Microsoft Defender Virüsten Koruma'yi yönetmek ve kullanmak için ayrılmış komut satırı aracını kullanma yönergeleri|
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
