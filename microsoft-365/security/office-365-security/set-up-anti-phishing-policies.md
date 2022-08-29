@@ -17,12 +17,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection (EOP) ve Office 365 için Microsoft Defender'de kullanılabilen kimlik avı önleme ilkeleri hakkında bilgi edinebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7d1352817a1bb514d12365fa81a581a92362f1b8
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 0cc623bb7ca19620aaf9305a403e709d723f7ac3
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087604"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385153"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365'te kimlik avı önleme ilkeleri
 
@@ -69,7 +69,7 @@ Aşağıdaki ilke ayarları EOP ve Office 365 için Defender kimlik avı önleme
 
 - **Ad**: Varsayılan kimlik avı önleme ilkesini yeniden adlandıramazsınız. Özel kimlik avı önleme ilkesi oluşturduktan sonra, ilkeyi Microsoft 365 Defender portalında yeniden adlandıramazsınız.
 
-- **Tarif** Varsayılan kimlik avı önleme ilkesine açıklama ekleyemezsiniz, ancak oluşturduğunuz özel ilkelerin açıklamasını ekleyip değiştirebilirsiniz.
+- **Açıklama** Varsayılan kimlik avı önleme ilkesine açıklama ekleyemezsiniz, ancak oluşturduğunuz özel ilkelerin açıklamasını ekleyip değiştirebilirsiniz.
 
 - **Kullanıcılar, gruplar ve etki alanları**: Kimlik avı önleme ilkesinin geçerli olduğu iç alıcıları tanımlar. Bu değer özel ilkelerde gereklidir ve varsayılan ilkede kullanılamaz (varsayılan ilke tüm alıcılar için geçerlidir).
 
@@ -104,10 +104,10 @@ Aşağıdaki kimlik sahtekarlığı ayarları EOP ve Office 365 için Defender k
 
 - **Kimlik sahtekarlık zekasını etkinleştirme**: Kimlik sahtekarı zekasını açar veya kapatır. Açık bırakmanızı öneririz.
 
-  Kimlik sahtekarlığı zekası etkinleştirildiğinde, sahte **zeka içgörüleri** , kimlik sahtekarlığı zekası tarafından otomatik olarak algılanan ve izin verilen veya engellenen sahte gönderenleri gösterir. Algılanan sahte gönderenlere içgörü içinden izin vermek veya bunları engellemek için sahte zeka kararını el ile geçersiz kılabilirsiniz. Ancak bunu yaptığınızda, sahte gönderen sahte zeka içgörüsünden kaybolur ve artık yalnızca Kiracı İzin Ver/Engelle Listesi'ndeki **Kimlik Sahtekarı** sekmesinde görünür. Ayrıca Kiracı İzin Ver/Engelle Listesi'nde sahte gönderenler için el ile izin verme veya engelleme girdileri oluşturabilirsiniz. Daha fazla bilgi için aşağıdaki makalelere bakın:
+  Kimlik sahtekarlığı zekası etkinleştirildiğinde, sahte **zeka içgörüleri** , kimlik sahtekarlığı zekası tarafından otomatik olarak algılanan ve izin verilen veya engellenen sahte gönderenleri gösterir. Algılanan sahte gönderenlere içgörü içinden izin vermek veya bunları engellemek için sahte zeka kararını el ile geçersiz kılabilirsiniz. Ancak bunu yaptığınızda, sahte gönderen sahte zeka içgörüsünden kaybolur ve artık yalnızca Kiracı İzin Ver/Engelle Listesi'ndeki Sahte **Gönderenler** sekmesinde görünür. Ayrıca Kiracı İzin Ver/Engelle Listesi'nde sahte gönderenler için el ile izin verme veya engelleme girdileri oluşturabilirsiniz. Daha fazla bilgi için aşağıdaki makalelere bakın:
 
   - [EOP'de sahte zeka içgörüleri](learn-about-spoof-intelligence.md)
-  - [EOP'de Kiracı İzin Ver/Engelle Listesini Yönetme](tenant-allow-block-list.md)
+  - [EOP'de Kiracı İzin Ver/Engelle Listesini Yönetme](manage-tenant-allow-block-list.md)
 
   > [!NOTE]
   >
@@ -135,7 +135,7 @@ Kimliği doğrulanmamış gönderen göstergeleri, hem EOP hem de Office 365 iç
 
 Soru işaretinin veya etiketin belirli gönderenlerden gelen iletilere eklenmesini önlemek için aşağıdaki seçeneklere sahipsiniz:
 
-- Kimlik sahtekarlığına sahip gönderene [kimlik bilgileri içgörüsüsünde](learn-about-spoof-intelligence.md) veya [Kiracı İzin Ver/Engelle Listesi'nde](tenant-allow-block-list.md) el ile izin verin. sahte gönderene izin vermek, ilkede **"via" etiketini göster** ayarı açık olsa bile, gönderenden gelen iletilerde via etiketinin görünmesini engeller.
+- Kimlik sahtekarlığına sahip gönderene [kimlik bilgileri içgörüsüsünde](learn-about-spoof-intelligence.md) veya [Kiracı İzin Ver/Engelle Listesi'nde](manage-tenant-allow-block-list.md) el ile izin verin. sahte gönderene izin vermek, ilkede **"via" etiketini göster** ayarı açık olsa bile, gönderenden gelen iletilerde via etiketinin görünmesini engeller.
 - Gönderen etki alanı için [e-posta kimlik doğrulamasını yapılandırın](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own).
   - Gönderenin fotoğrafındaki soru işareti için SPF veya DKIM en önemlileridir.
   - via etiketi için DKIM imzasında etki alanını onaylayın veya **MAIL FROM** adresi, Kimden adresindeki etki alanıyla eşleşir (veya bir alt etki alanıdır).
@@ -237,6 +237,13 @@ Aşağıdaki kimliğe bürünme ayarları yalnızca Office 365 için Defender ki
   - **İleti teslim etmeden önce silme**
 
 - **Güvenilen gönderenler ve etki alanları ekleme**: Kimliğe bürünme koruması ayarlarına özel durumlar. Belirtilen gönderenlerden ve gönderen etki alanlarından gelen iletiler hiçbir zaman ilke tarafından kimliğe bürünme tabanlı saldırılar olarak sınıflandırılmamaktadır. Başka bir deyişle, korumalı gönderenler, korumalı etki alanları veya posta kutusu zekası koruması eylemi bu güvenilir gönderenlere veya gönderen etki alanlarına uygulanmaz. Bu listeler için en yüksek sınır 1024 giriştir.
+
+  > [!NOTE]
+  > Aşağıdaki gönderenlerden gelen Microsoft 365 sistem iletileri kimliğe bürünme girişimi olarak tanımlanırsa, gönderenleri güvenilen gönderenler listesine ekleyebilirsiniz:
+  >
+  > - `⁠noreply@email.teams.microsoft.com`
+  > - `noreply@emeaemail.teams.microsoft.com`
+  > - `no-reply@sharepointonline.com`
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender kimlik avı önleme ilkelerindeki gelişmiş kimlik avı eşikleri
 

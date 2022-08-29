@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00a43da0c6b817c6e53ef93ae27fa8e59d7c5341
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 19b7546f4c1730b4077d29d43d450a0701c5ae62
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300465"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385087"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da cihaz durumu ve uyumluluk raporu
 
@@ -61,6 +61,26 @@ Cihaz durumu ve uyumluluk panosu iki sekmede yapılandırılmıştır:
   - [Virüsten koruma altyapısı güncelleştirme kartı](#antivirus-engine-updates-card)
   - [Güvenlik bilgileri güncelleştirme kartı](#security-intelligence-updates-card)
   - [Virüsten koruma platformu güncelleştirme kartı](#antivirus-platform-updates-card)
+
+### <a name="report-access-permissions"></a>Rapor erişim izinleri
+
+Microsoft 365 Güvenlik panosunda Cihaz durumu ve virüsten koruma uyumluluk raporuna erişmek için aşağıdaki izinler gereklidir:
+
+| İzin adı | İzin türü |
+|:---|:---|
+| Verileri Görüntüle | Tehdit ve güvenlik açığı yönetimi (TVM) |
+
+Bu izinleri atamak için:
+
+1. Güvenlik yöneticisi veya <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Genel yönetici</a> rolü atanmış hesabı kullanarak Microsoft 365 Defender oturum açın.
+1. Gezinti bölmesinde **Ayarlar** \> **Uç Noktaları** \> **Rolleri'ni** seçin ( **İzinler'in** altında).
+1. Düzenlemek istediğiniz rolü seçin.
+1. **Düzenle**’ye tıklayın.
+1. **Rolü düzenle'nin** **Genel** sekmesindeki **Rol adı** alanına rol için bir ad yazın.
+1. **Açıklama** alanına rolün kısa bir özetini yazın.
+1. **İzinler'de** **Verileri Görüntüle'yi** seçin ve **Verileri Görüntüle'nin** altında **Tehdit ve güvenlik açığı yönetimi** (TVM) öğesini seçin.
+
+Kullanıcı rolü yönetimi hakkında daha fazla bilgi için bkz. [Rol tabanlı erişim denetimi için rol oluşturma ve yönetme](user-roles.md).
 
 ### <a name="sensor-health--os-tab"></a>Algılayıcı sistem durumu & işletim sistemi sekmesi
 

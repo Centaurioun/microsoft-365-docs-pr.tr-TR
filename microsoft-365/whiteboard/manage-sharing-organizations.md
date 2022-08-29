@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard için paylaşımı yönetmeyi öğrenin.
-ms.openlocfilehash: 61f8a79cd17721d1a383038bd8912d87c625ac4c
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: b5455886067bb343a0a3bbd499f4271bc72971b6
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275966"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383776"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Microsoft Whiteboard için paylaşımı yönetme
 
@@ -70,7 +70,7 @@ Teams kanalına veya sohbete sekme olarak beyaz tahta eklediğinizde Whiteboard,
 
 |Senaryo|Depolama ve sahiplik|Paylaşım ayarları|Paylaşım deneyimi|
 |---|---|---|---|
-|Beyaz tahtayı bir kanala ekleme veya masaüstü veya mobil cihazdan sohbet etme|Depolama: OneDrive İş<br><br>Sahip: Beyaz tahtayı oluşturan kullanıcı|Uygulanamaz (yalnızca toplantılar için geçerlidir)|Kiracı içi kullanıcılar: Başlatabilir, görüntüleyebilir ve işbirliği yapabilir<br><br>Dış kullanıcılar: Desteklenmez<br><br>Teams konukları: Görüntüleyebilir ve işbirliği yapabilir<br><br>Paylaşılan cihaz hesapları: Geçerli değil|
+|Beyaz tahtayı bir kanala ekleme veya masaüstü veya mobil cihazdan sohbet etme|Depolama: OneDrive İş<br><br>Sahip: Beyaz tahtayı oluşturan kullanıcı|Uygulanamaz (yalnızca toplantılar için geçerlidir)|Kiracı içi kullanıcılar: Başlatabilir, görüntüleyebilir ve işbirliği yapabilir<br><br>Dış kullanıcılar: Desteklenmez<br><br>Teams konukları: Desteklenmez<br><br>Paylaşılan cihaz hesapları: Geçerli değil|
 
 ## <a name="create-and-share-in-whiteboard-native-clients"></a>Whiteboard yerel istemcilerinde oluşturma ve paylaşma
 

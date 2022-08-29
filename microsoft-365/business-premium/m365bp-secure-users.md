@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/26/2022
+ms.date: 08/24/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,23 +20,23 @@ search.appverid:
 - MET150
 - MOE150
 description: üretkenlik ve güvenlikle Microsoft 365 İş Ekstra işinizi daha güvenli bir şekilde çalıştırmanıza nasıl yardımcı olduğunu öğrenin.
-ms.openlocfilehash: b70b62790330a6e92d52a8f490eebd0b8b0efccf
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: ed739d1fd65925d2d8de71ec78603f811dc7f3b3
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300639"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433542"
 ---
 # <a name="productivity-and-security-for-small-and-medium-sized-businesses"></a>Küçük ve orta ölçekli işletmeler için üretkenlik ve güvenlik 
 
 Microsoft 365 İş Ekstra, küçük ve orta ölçekli işletmeler (1-300 çalışan) için tasarlanmış ve oluşturulmuş kapsamlı bir bulut üretkenliği ve güvenlik çözümüdür. Microsoft 365 İş Ekstra ile şunları yapabilirsiniz:
 
-- Microsoft Teams gibi sınıfının en iyisi işbirliği araçlarıyla çalışanlarınızın ister yerinde ister uzaktan çalışsınlar bağlı ve üretken olmasını sağlayın.
-- Çalışanlarınıza iş verilerine ve uygulamalarına güvenli erişim sağlayın ve yalnızca yetkili personelin gizli iş verilerine erişebildiğinden emin olun.
-- Gelişmiş siber tehditlere karşı savunma yapın ve kimlik avı, fidye yazılımı ve veri kaybına karşı koruma ile iş verilerinizi koruyun.
-- Verilerinize bağlanan cihazları (Windows, Mac, iOS ve Android) yönetin ve bunların güvenliğini sağlayın ve bu cihazların güncel kalmasına yardımcı olun.
+- [Microsoft Teams](create-teams-for-collaboration.md) gibi sınıfının en iyisi işbirliği araçlarıyla çalışanlarınızın ister yerinde ister uzaktan çalışsınlar **bağlı ve üretken olmasını sağlayın**.
+- **Çalışanlarınıza iş verilerine ve uygulamalarına güvenli erişim sağlayın** ve yalnızca yetkili personelin gizli iş verilerine erişebildiğinden emin olun.
+- **Gelişmiş siber tehditlere karşı savunma yapın ve** kimlik avı, fidye yazılımı ve veri kaybına karşı gelişmiş koruma ile iş verilerinizi koruyun.
+- Verilerinize bağlanan cihazları (Windows, Mac, iOS ve Android) **yönetin ve koruyun** ve bu cihazların güncel kalmasına yardımcı olun.
 
-Microsoft 365 İş Ekstra size üretkenlik ve güvenlik için kapsamlı bir çözüm sunar. Yönetici veya BT Uzmanı olarak, işletmeniz için maliyeti ve karmaşıklığı azaltırken yönetim, faturalama ve 7 gün 24 saat destek için ihtiyacınız olan her şeye tek bir yerden sahip olursunuz. Bu makalede, Microsoft 365 İş Ekstra işletmenize veya kampanyanıza nasıl yardımcı olabileceği açıklanır ve aşağıdaki bölümler yer alır:
+Microsoft 365 İş Ekstra size üretkenlik ve güvenlik için kapsamlı bir çözüm sunar. Yönetici veya BT Uzmanı olarak, işletmeniz için maliyeti ve karmaşıklığı azaltırken yönetim, faturalama ve 7 gün 24 saat destek için ihtiyacınız olan her şeye tek bir yerden sahip olursunuz. Bu makale aşağıdaki bölümleri içerir:
 
 - [Video: Microsoft 365 İş Ekstra en iyi 5 avantajı](#video-top-5-benefits-of-microsoft-365-business-premium)
 - İşletmenizi daha güvenli bir şekilde, cihazlar arasında ve neredeyse her yerden çalıştırmanızı sağlayan [üretkenlik ve gelişmiş güvenlik özellikleri](#productivity-and-security)
@@ -94,4 +94,4 @@ Dijital tehditler kılavuzumuzda farklı tehdit türleri ve sizin ve personelini
 
 2. [Kurulum işlemini başlatın](m365bp-setup-overview.md).
 
-3. [Güvenliği yükselt](m365bp-security-overview.md).
+3. [Güvenlik özelliklerinizi ayarlayın](m365bp-security-overview.md).

@@ -12,21 +12,19 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft 365 yönetim merkezi kuruluşunuz için Microsoft Whiteboard'u ayarlamayı öğrenin.
-ms.openlocfilehash: cbffaaf0573ce5763c200b96630af3fbb2f73218
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 12c16c428d6cd03459d6de4bb4e372d471b1ba36
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942946"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369849"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-your-organization"></a>Kuruluşunuz için Microsoft Whiteboard erişimini yönetme
 
 >[!NOTE]
 > Bu makale, Whiteboard kullanan Kurumsal veya Eğitim kuruluşları için geçerlidir. US Government GCC High ortamları için bkz. [GCC High ortamları için Microsoft Whiteboard erişimini yönetme](manage-whiteboard-access-gcc-high.md).
 
-Microsoft Whiteboard, kişilerin, içeriğin ve fikirlerin bir araya geldiği görsel bir işbirliği tuvalidir. Whiteboard bugün Kurumsal ve Eğitim için Azure müşterileri üzerinde çalışmaktadır. Beyaz Tahta, OneDrive İş üzerinde çalıştırılmaya geçiliyor. Bu geçiş birçok yeni özellik getirir ve beyaz tahtaları herhangi bir Office belgesi kadar kolay bir şekilde oluşturmanıza, paylaşmanıza, keşfetmenize ve yönetmenize olanak sağlar.
-
-Beyaz Tahta, geçerli Microsoft 365 kiracıları için otomatik olarak etkinleştirilir. 
+Microsoft Whiteboard, kişilerin, içeriğin ve fikirlerin bir araya geldiği görsel bir işbirliği tuvalidir. OneDrive İş'da Microsoft Whiteboard, geçerli Microsoft 365 kiracıları için varsayılan olarak etkindir. Kiracı genelinde bir düzeyde etkinleştirilebilir veya devre dışı bırakılabilir. Ayrıca **Azure Active Directory yönetim merkezi** > **Kurumsal uygulamalarında** **Microsoft Whiteboard Services'ın** etkinleştirildiğinden de emin olmanız gerekir.
 
 Whiteboard SOC 1, SOC 2, ISO 27001, HIPAA ve AB Model Maddeleri gibi küresel standartlara uygundur. 
 
@@ -35,9 +33,6 @@ Whiteboard için aşağıdaki yönetici ayarları gereklidir:
 - Beyaz Tahta Microsoft 365 yönetim merkezi genel olarak etkinleştirilmelidir.
 
 - Cmdlet,SharePoint <code>Set-SPOTenant -IsWBFluidEnabled</code> [Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) kullanılarak etkinleştirilmelidir.
-
->[!NOTE]
-> OneDrive İş depolamanın dağıtımı devam ediyor. Microsoft 365 yönetim merkezi gittiğinizde, kiracınız zaten OneDrive İş'e geçirilmişse OneDrive İş depolamayı kabul etme veya devre dışı bırakma seçeneği devre dışı bırakılır.
 
 Whiteboard'a erişimi aşağıdaki yollarla denetleyebilirsiniz:
 

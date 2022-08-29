@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Bulgaristan tek tip sivil numara hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 95bbe1368ca4d6d91d98d07f5cd1c48029fd8499
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: f9e97c049cf20f3c804e0fbf0f12489e557ad9f1
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948355"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369709"
 ---
 # <a name="bulgaria-uniform-civil-number"></a>Bulgaristan üniforma sivil numarası
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -49,20 +41,20 @@ Boşluk ve sınırlayıcı içermeyen 10 basamak
 - cinsiyete karşılık gelen bir basamak: Erkek için çift basamak ve kadın için tek bir basamak
 - bir denetim basamalı
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_bulgaria_eu_national_id_card` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_bulgaria_eu_national_id_card` bir anahtar sözcük bulunur.
+- İşlev `Func_bulgaria_eu_national_id_card`, desenle eşleşen içeriği bulur.
+- `Keywords_bulgaria_eu_national_id_card` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_bulgaria_eu_national_id_card` , desenle eşleşen içeriği bulur.
+- İşlev `Func_bulgaria_eu_national_id_card`, desenle eşleşen içeriği bulur.
 
 ```xml
       <!-- Bulgaria Uniform Civil Number -->

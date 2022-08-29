@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Exchange Online ve Microsoft 365'in e-posta iletişimlerinin güvenliğini sağlamak için Aktarım Katmanı Güvenliği (TLS) ve İletme Gizliliği 'ni (FS) nasıl kullandığını öğrenin. Ayrıca Exchange Online için Microsoft tarafından verilen sertifika hakkında da bilgi edinin.
-ms.openlocfilehash: 93f71e38e3063aeec0c423dbfea25ac463a3e46f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 127e72fd756754b11cf27316a006fab08fc459fb
+ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641570"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67432341"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Exchange Online, e-posta bağlantılarının güvenliğini sağlamak için TLS'yi nasıl kullanır?
 
@@ -31,9 +31,9 @@ Exchange Online ve Microsoft 365'in e-posta iletişimlerinin güvenliğini sağl
   
 ## <a name="tls-basics-for-microsoft-365-and-exchange-online"></a>Microsoft 365 ve Exchange Online için TLS temel bilgileri
 
-AKTARıM Katmanı Güvenliği (TLS) ve TLS'den önce gelen SSL, bilgisayarlar arasındaki bağlantıyı şifrelemek için güvenlik sertifikaları kullanarak ağ üzerinden iletişimi güvenli hale getiren şifreleme protokolleridir. TLS, Güvenli Yuva Katmanı'nın (SSL) yerini alır ve genellikle SSL 3.1 olarak adlandırılır. Exchange Online, Exchange sunucuları arasındaki bağlantıları ve Exchange sunucuları ile şirket içi Exchange sunucularınız veya alıcılarınızın posta sunucuları gibi diğer sunucular arasındaki bağlantıları şifrelemek için TLS kullanır. Bağlantı şifrelendiğinde, bu bağlantı üzerinden gönderilen tüm veriler şifrelenmiş kanal üzerinden gönderilir. Ancak, TLS ile şifrelenmiş bir bağlantı üzerinden gönderilen bir iletiyi iletirseniz, bu ileti mutlaka şifrelenmez. TLS iletiyi şifrelemez, yalnızca bağlantıyı şifreler.
+AKTARıM Katmanı Güvenliği (TLS) ve TLS'den önce gelen SSL, bilgisayarlar arasındaki bağlantıyı şifrelemek için güvenlik sertifikaları kullanarak ağ üzerinden iletişimi güvenli hale getiren şifreleme protokolleridir. TLS, Güvenli Yuva Katmanı'nın (SSL) yerini alır ve genellikle SSL 3.1 olarak adlandırılır. Exchange Online, Exchange sunucuları arasındaki bağlantıları ve Exchange sunucuları ile şirket içi Exchange sunucularınız veya alıcılarınızın posta sunucuları gibi diğer sunucular arasındaki bağlantıları şifrelemek için TLS kullanır. Bağlantı şifrelendiğinde, bu bağlantı üzerinden gönderilen tüm veriler şifrelenmiş kanal üzerinden gönderilir. Ancak TLS ile şifrelenmiş bir bağlantı üzerinden gönderilen bir iletiyi TLS şifrelemesini desteklemeyen bir alıcı kuruluşuna iletirseniz, bu iletinin şifrelenmesi gerekmez. TLS iletiyi şifrelemez, yalnızca bağlantıyı şifreler.
   
-İletiyi şifrelemek istiyorsanız, ileti içeriğini şifreleyen bir şifreleme teknolojisi kullanın. Örneğin, Microsoft Purview İleti Şifrelemesi veya S/MIME kullanabilirsiniz. Office 365 ileti [şifrelemesi](ome.md) hakkında bilgi için bkz. [Office 365'de e-posta](email-encryption.md) şifrelemesi ve İleti şifrelemesi.
+İletiyi şifrelemek istiyorsanız, ileti içeriğini şifreleyen bir şifreleme teknolojisi kullanın. Örneğin, Microsoft Purview İleti Şifrelemesi veya S/MIME kullanabilirsiniz. [Office 365'da ileti şifrelemesi](email-encryption.md) hakkında bilgi için bkz. Office 365 Email şifrelemesi ve [İleti](ome.md) şifrelemesi.
   
 Microsoft ile şirket içi kuruluşunuz veya iş ortağı gibi başka bir kuruluş arasında güvenli bir yazışma kanalı ayarlamak istediğiniz durumlarda TLS'yi kullanın. Exchange Online her zaman e-postanızın güvenliğini sağlamak için önce TLS'yi kullanmayı dener, ancak diğer taraf TLS güvenliği sağlamazsa kullanamaz. *Bağlayıcıları* kullanarak şirket içi sunucularınıza veya önemli iş ortaklarınıza gelen tüm postaların güvenliğini nasıl sağlayabileceğinizi öğrenmek için okumaya devam edin.
 

@@ -11,12 +11,12 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
 description: Kullanıcının oturumlarının zaman aşımına uğramadan önce Microsoft 365'te ne kadar süreceğini ayarlayın.
-ms.openlocfilehash: 527862e77f8fdfba3c418ba13607bc1389875cab
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 7dbc3f7cfeaa0997661849e6f2a36439c9f6973a
+ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67019933"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420100"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>Microsoft 365 için boşta oturum zaman aşımı
 
@@ -76,12 +76,17 @@ Bir kullanıcı seçtiğiniz süre boyunca Microsoft 365 web uygulamalarında et
 - Kullanıcıların yapılandırılan süre boyunca tüm Microsoft 365 web uygulaması sekmelerinde etkin olmamalıdır. Kullanıcı başka bir sekmede etkin değilken (OWA gibi) bir sekmede etkinse (SPO gibi), etkin olarak kabul edilir ve oturumu kapatılmaz.  
 
 - Bu durumlarda kullanıcıların oturumları kapatılamaz.
-    - Cihaza katılmış hesaptan web uygulamasında çoklu oturum açma (SSO) alıyorsa veya oturum açma sırasında **Oturum açık kalsın'ı** seçtiyse. Kuruluşunuzda bu seçeneği gizleme hakkında daha fazla bilgi için bkz. [Kuruluşunuzun oturum açma sayfasına marka ekleme](/azure/active-directory/fundamentals/customize-branding).
-    - Yönetilen bir cihazdaysa (uyumlu veya bir etki alanına katılmış bir cihaz) ve Microsoft Edge veya Google Chrome gibi desteklenen bir tarayıcı kullanıyorsa ( [Windows Hesapları uzantısıyla](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). Bu özelliğin yönetilmeyen bir cihazda tetiklemesi için uygun bir Azure AD Premium P1 veya P2 aboneliği ve belirli bir Koşullu Erişim ilkesi gerekir. Diğer ayrıntılar için aşağıya bakın.
+    - Cihazın katılmış hesabından web uygulamasında çoklu oturum açma (SSO) alıyorlarsa.
+    - Oturum açma sırasında **Oturum açık kalsın** seçeneğini belirlediyse. Kuruluşunuzda bu seçeneği gizleme hakkında daha fazla bilgi için bkz. [Kuruluşunuzun oturum açma sayfasına marka ekleme](/azure/active-directory/fundamentals/customize-branding).
+    - Yönetilen bir cihazdaysa (uyumlu veya bir etki alanına katılmış bir cihaz) ve Microsoft Edge veya Google Chrome gibi desteklenen bir tarayıcı kullanıyorsa ( [Windows Hesapları uzantısıyla](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)).
+
+## <a name="trigger-idle-session-timeout-only-on-unmanaged-devices"></a>Yalnızca yönetilmeyen cihazlarda boşta oturum zaman aşımını tetikleme
+
+Varsayılan olarak, boşta oturum zaman aşımı özelliği diğer koşulların karşılanması durumunda tüm cihaz türlerinde tetiklenir. Bu özelliğin yalnızca yönetilmeyen bir cihazda tetiklemesi için uygun bir Azure AD Premium P1 veya P2 aboneliği gerekir. Ayrıca, Azure AD yönetim merkezine bir Koşullu Erişim ilkesi eklemeniz gerekir.
 
 ## <a name="idle-session-timeout-on-unmanaged-devices"></a>Yönetilmeyen cihazlarda boşta oturum zaman aşımı  
 
-Yönetilmeyen cihazlarda tetiklenen boşta oturum zaman aşımı için, Azure AD yönetim merkezine bir Koşullu Erişim ilkesi eklemeniz gerekir.
+Boşta oturum zaman aşımının yalnızca yönetilmeyen cihazlarda tetiklenebilmek için, Azure AD yönetim merkezine bir Koşullu Erişim ilkesi eklemeniz gerekir.
 
 1. **Koşullu Erişim | Azure AD yönetim merkezinin İlkeler** sayfası, **Yeni ilke'yi** seçin ve ilke için bir ad girin.
 

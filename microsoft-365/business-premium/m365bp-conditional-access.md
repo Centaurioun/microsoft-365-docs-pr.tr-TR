@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/08/2022
+ms.date: 08/24/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,19 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Güvenlik varsayılanlarının, Microsoft 365 İş Ekstra için önceden yapılandırılmış güvenlik ayarları sağlayarak kuruluşunuzun kimlikle ilgili saldırılara karşı korunmasına nasıl yardımcı olabileceğini öğrenin.
-ms.openlocfilehash: 2d4dc4af9f003245b25a85c5b18abf593db8fbe8
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
+ms.openlocfilehash: e054361e015f6dbfad8e6e4dd6e212814f43d552
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285197"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433498"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>Güvenlik varsayılanları ve çok faktörlü kimlik doğrulaması
 
-Microsoft 365 İş Ekstra, önceden yapılandırılmış güvenlik ayarlarıyla şirketinizin kullanıcı hesaplarını korumaya yardımcı olmak için tasarlanmıştır. Bu ayarlar, tüm yöneticileriniz ve kullanıcı hesaplarınız için çok faktörlü kimlik doğrulamasını (MFA) etkinleştirmeyi içerir. Çoğu kuruluş için güvenlik varsayılanları iyi bir oturum açma güvenliği düzeyi sunar.
-
-> [!TIP]
-> Güvenlik varsayılanları ve uyguladıkları ilkeler hakkında daha fazla bilgi için bkz. [Güvenlik varsayılanları nedir?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+Microsoft 365 İş Ekstra, önceden yapılandırılmış güvenlik ayarlarıyla şirketinizin kullanıcı hesaplarını korumaya yardımcı olmak için tasarlanmıştır. Bu ayarlar, tüm yöneticileriniz ve kullanıcı hesaplarınız için çok faktörlü kimlik doğrulamasını (MFA) etkinleştirmeyi içerir. Çoğu kuruluş için güvenlik varsayılanları iyi bir oturum açma güvenliği düzeyi sunar. Daha katı gereksinimleri karşılaması gereken kuruluşlar için Koşullu Erişim kullanılabilir.
 
 Bu makalede aşağıdakiler hakkında bilgi sağlanır:
 
@@ -40,7 +37,7 @@ Bu makalede aşağıdakiler hakkında bilgi sağlanır:
 - **[Koşullu Erişim](#conditional-access)** (daha sıkı güvenlik gereksinimleri olan işletmeler için)
 
 > [!NOTE]
-> Koşullu Erişim ilkelerini kullanıyorsanız, güvenlik varsayılanlarını kullanmadan önce bunları kapatmanız gerekir. Güvenlik varsayılanlarını veya Koşullu Erişim ilkelerini kullanabilirsiniz, ancak ikisini de aynı anda kullanamazsınız.
+> *Güvenlik* varsayılanlarını *veya* Koşullu Erişim ilkelerini kullanabilirsiniz, ancak ikisini de aynı anda kullanamazsınız.
 
 ## <a name="security-defaults"></a>Güvenlik varsayılanları
 

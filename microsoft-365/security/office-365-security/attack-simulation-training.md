@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Yöneticiler, Office 365 için Microsoft Defender Plan 2'deki Saldırı benzetimi eğitimini kullanarak kimlik avı saldırılarının simülasyonunu yapmayı ve kullanıcılarını kimlik avı önleme konusunda eğitmeyi öğrenebilir.
+description: Yöneticiler, Office 365 için Microsoft Defender Plan 2'deki Saldırı simülasyonu eğitimi kullanarak kimlik avı saldırılarının simülasyonunu yapmayı ve kullanıcılarını kimlik avı önleme konusunda eğitmeyi öğrenebilir.
 ms.technology: mdo
-ms.openlocfilehash: c1489c2653adbfa05958ca61240a97d837a9dc93
-ms.sourcegitcommit: 03543c27c33427ac7f11af4c04fff35a181a2524
+ms.openlocfilehash: 755b6b514027125f0570469ba3c683422b8d1edf
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66609401"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408097"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Office 365 için Defender'de Saldırı simülasyonu eğitimi ile kimlik avı saldırısı simülasyonu
 
@@ -26,19 +26,19 @@ ms.locfileid: "66609401"
 
 [Office 365 için Microsoft Defender plan 2](defender-for-office-365.md) **için geçerlidir**
 
-Office 365 için Microsoft Defender Plan 2 veya Microsoft 365 E5'da saldırı simülasyonu eğitimi, kuruluşunuzda zararsız siber saldırı simülasyonları çalıştırmanıza olanak tanır. Bu simülasyonlar güvenlik ilkelerinizi ve uygulamalarınızı test eder, ayrıca çalışanlarınızı farkındalıklarını artırmaları ve saldırılara karşı duyarlılıklarını azaltmaları için eğitebilir. Bu makalede, Saldırı simülasyonu eğitimini kullanarak sanal kimlik avı saldırısı oluşturma konusunda size yol gösterir.
+Office 365 için Microsoft Defender Plan 2 veya Microsoft 365 E5'da Saldırı simülasyonu eğitimi, kuruluşunuzda zararsız siber saldırı simülasyonları çalıştırmanıza olanak tanır. Bu simülasyonlar güvenlik ilkelerinizi ve uygulamalarınızı test eder, ayrıca çalışanlarınızı farkındalıklarını artırmaları ve saldırılara karşı duyarlılıklarını azaltmaları için eğitebilir. Bu makalede, Saldırı simülasyonu eğitimi kullanarak sanal kimlik avı saldırısı oluşturma konusunda size yol gösterir.
 
-Saldırı simülasyonu eğitimi hakkında başlangıç bilgileri için bkz. [Saldırı simülasyonu eğitimini kullanmaya başlama](attack-simulation-training-get-started.md).
+Saldırı simülasyonu eğitimi hakkında başlangıç bilgileri için bkz. [Saldırı simülasyonu eğitimi kullanmaya başlama](attack-simulation-training-get-started.md).
 
 Kimlik avı simülasyonu saldırısı başlatmak için aşağıdaki adımları uygulayın:
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, E-posta & işbirliği** \> **Saldırı benzetimi eğitimi** \> **Simülasyonları** sekmesine gidin.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Email & işbirliği** \> **Saldırı simülasyonu eğitimi** \> **Benzetimi** sekmesine gidin.
 
    Doğrudan **Simülasyonlar** sekmesine gitmek için kullanın <https://security.microsoft.com/attacksimulator?viewid=simulations>.
 
 2. **Simülasyonlar sekmesinde Simülasyon** simgesini başlat'ı seçin![.](../../media/m365-cc-sc-create-icon.png) **Simülasyonu başlatın**.
 
-   :::image type="content" source="../../media/attack-sim-training-simulations-launch.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi'ndeki Simülasyonlar sekmesindeki Simülasyon başlat düğmesi" lightbox="../../media/attack-sim-training-simulations-launch.png":::
+   :::image type="content" source="../../media/attack-sim-training-simulations-launch.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi Simülasyonlar sekmesinde simülasyon başlat düğmesi" lightbox="../../media/attack-sim-training-simulations-launch.png":::
 
 3. Simülasyon oluşturma sihirbazı açılır. Bu makalenin geri kalanında sayfalar ve içerdikleri ayarlar açıklanmaktadır.
 
@@ -54,6 +54,7 @@ Kimlik avı simülasyonu saldırısı başlatmak için aşağıdaki adımları u
 - **Ekteki bağlantı**: Kimlik bilgisi toplama karma türü. Saldırgan bir e-posta ekine URL ekler. Ek içindeki URL, kimlik bilgisi toplama ile aynı tekniği izler.
 - **Kötü amaçlı yazılım bağlantısı**: İyi bilinen bir dosya paylaşım hizmetinde barındırılan bir dosyadan rastgele kod çalıştırır. Kullanıcıya gönderilen ileti bu kötü amaçlı dosyanın bağlantısını içerir. Dosyayı açmak, saldırganın hedefin cihazını tehlikeye atılmasına yardımcı olur.
 - **Sürücü URL'si**: İletideki kötü amaçlı URL, kullanıcıyı sessizce çalışan ve/veya kullanıcının cihazına kod yükleyen tanıdık görünen bir web sitesine götürür.
+- **OAuth Onayı Verme**: Kötü amaçlı URL, kullanıcılardan kötü amaçlı bir Azure Uygulaması için verilere izin vermelerini ister.
 
 Açıklamadaki **Ayrıntıları görüntüle** bağlantısına tıklarsanız, tekniği ve teknikten kaynaklanan simülasyon adımlarını açıklayan bir ayrıntı açılır öğesi açılır.
 
@@ -109,23 +110,26 @@ Her yük için aşağıdaki ayrıntılar gösterilir:
 
 - **Tartışmalı**: Kullanılabilir değerler **Evet** veya **Hayır'dır**.
 
-Filtreleri yapılandırmayı bitirdiğinizde **Uygula**, **İptal veya** **Filtreleri temizle'ye** tıklayın.
+Filtreleri yapılandırmayı bitirdiğinizde **Uygula**, **İptal veya**![ Filtreleri temizle simgesi **Filtreleri temizle'ye**](../../media/m365-cc-sc-clear-filters-icon.png) tıklayın.
 
 Onay kutusunu seçerek listeden bir yük seçerseniz, ![Test yükü gönder simgesi.](../../media/m365-cc-sc-create-icon.png) Ana sayfada yük e-postasının bir kopyasını inceleme için kendinize (şu anda oturum açmış olan kullanıcı) gönderebileceğiniz **bir test** düğmesi görüntülenir.
 
-Kendi yükünüzü oluşturmak için Yük oluştur simgesine tıklayın ![.](../../media/m365-cc-sc-create-icon.png) **Yük oluşturma**. Daha fazla bilgi için bkz [. Saldırı benzetimi eğitimi için özel yük oluşturma](attack-simulation-training-payloads.md#create-payloads).
+Kendi yükünüzü oluşturmak için Yük oluştur simgesine tıklayın ![.](../../media/m365-cc-sc-create-icon.png) **Yük oluşturma**. Daha fazla bilgi için bkz. [Saldırı simülasyonu eğitimi için özel yük oluşturma](attack-simulation-training-payloads.md#create-payloads).
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="Microsoft 365 Defender portalındaki Saldırı benzetimi eğitimi'ndeki Yük seçin sayfası" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi yük seçin sayfası" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
 
 Listeden onay kutusunun dışındaki herhangi bir yere tıklayarak bir yük seçerseniz, yükle ilgili ayrıntılar açılır pencerede gösterilir:
 
 - **Yük** sekmesi bir örnek ve yükle ilgili diğer ayrıntıları içerir.
-- **Oturum açma sayfası** sekmesi sonraki bölümde açıklanmıştır.
+- **Oturum Açma sayfası** sekmesi yalnızca Ek yüklerinde **Kimlik Bilgisi Toplama** veya **Bağlantı'da** kullanılabilir ve sonraki bölümde açıklanmaktadır.
 - **Başlatılan Simülasyonlar** sekmesi **Benzetimi adı**, **Tıklama oranı**, **Risk altındaki hız** ve **Eylem'i** içerir.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitiminde yük ayrıntıları açılır öğesindeki Yük sekmesi" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi yük ayrıntıları açılır öğesindeki Yük sekmesi" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
 ### <a name="login-page"></a>Oturum açma sayfası
+
+> [!NOTE]
+> **Oturum Açma sayfası** sekmesi yalnızca **Kimlik Bilgisi Toplama** veya **Ek yüklerinde bağlantı** olarak kullanılabilir.
 
 Ayrıntılar açılır penceresini açmak için, satırda onay kutusu dışında herhangi bir yere tıklayarak yükü listeden seçin.
 
@@ -133,7 +137,7 @@ Yük ayrıntıları açılır öğesindeki **Oturum açma sayfası** sekmesi, y�
 
 Oturum açma sayfasının tamamını görüntülemek için, iki sayfalı oturum açma sayfaları için sayfanın altındaki **Sayfa 1** ve **Sayfa 2** bağlantılarını kullanın.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi bölümünde yük ayrıntıları açılır öğesindeki oturum açma sayfası sekmesi" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi yük ayrıntıları açılır öğesindeki oturum açma sayfası sekmesi" lightbox="../../media/attack-sim-training-simulations-select-payload-details-login-page-tab.png":::
 
 Yükte kullanılan oturum açma sayfasını değiştirmek için Oturum açma sayfasını değiştir simgesine tıklayın ![.](../../media/m365-cc-sc-edit-icon.png) **Oturum açma sayfasını değiştirin**.
 
@@ -151,15 +155,35 @@ Listede oturum açma sayfası bulmak için Ara simgesini kullanın ![.](../../me
 
 Filtre simgesine tıklayın ![.](../../media/m365-cc-sc-filter-icon.png) Oturum açma sayfalarını **Kaynağa** veya Dile göre filtrelemek için **filtreleyin**.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi bölümünde yük ayrıntıları açılır öğesindeki Oturum açma sayfası sekmesindeki Oturum açma bilgilerini seçin sayfası" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-select-login-page.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi yük ayrıntıları açılır öğesindeki Oturum açma sayfası sekmesindeki Oturum açma bilgilerini seçin sayfası" lightbox="../../media/attack-sim-training-simulations-select-payload-select-login-page.png":::
 
-Yeni oturum açma sayfası oluşturmak için [Yeni oluştur simgesine tıklayın.](../../media/m365-cc-sc-create-icon.png) Son kullanıcı oturum açma sayfası oluşturma sihirbazını başlatmak için **yeni oluşturun**. Adımlar **, Saldırı benzetimi eğitimi** \> **Sanal içerik kitaplığı** sekmesindeki **Oturum açma sayfalarıyla** aynıdır. Yönergeler için bkz. [Oturum açma sayfaları oluşturma](attack-simulation-training-login-pages.md#create-login-pages).
+Yeni oturum açma sayfası oluşturmak için [Yeni oluştur simgesine tıklayın.](../../media/m365-cc-sc-create-icon.png) Son kullanıcı oturum açma sayfası oluşturma sihirbazını başlatmak için **yeni oluşturun**. Adımlar, **Saldırı simülasyonu eğitimi** \> **Sanal içerik kitaplığı** sekmesindeki **Oturum açma sayfalarıyla** aynıdır. Yönergeler için bkz. [Oturum açma sayfaları oluşturma](attack-simulation-training-login-pages.md#create-login-pages).
 
 **Oturum açma seç sayfasına** geri dönün, oluşturduğunuz yeni oturum açma sayfasının seçili olduğunu doğrulayın ve **kaydet'e** tıklayın.
 
 Yük ayrıntıları açılır menüsüne geri dönüp [Kapat simgesine tıklayın.](../../media/m365-cc-sc-close-icon.png) **Kapat'ı seçin**.
 
 **Yük seçin ve oturum açın sayfasında** işiniz bittiğinde **İleri'ye** tıklayın.
+
+## <a name="configure-oauth-payload"></a>OAuth Yükünü Yapılandırma
+
+> [!NOTE]
+> Bu sayfa yalnızca [Tekniği seçin](#select-a-social-engineering-technique) sayfasında **OAuth Onayı Ver'i** seçtiyseniz kullanılabilir. Aksi takdirde **Hedef kullanıcılar** sayfasına yönlendirilirsiniz.
+
+**OAuth yükünü yapılandır** sayfasında aşağıdaki ayarları yapılandırın:
+
+- **Uygulama adı**
+
+- **Uygulama logosu**: Kullanılacak .png, .jpeg veya .gif dosyasını seçmek için **Gözat'a** tıklayın. Dosyayı seçtikten sonra kaldırmak için **Kaldır'a** tıklayın.
+
+- **Uygulama kapsamını seçin**: Aşağıdaki değerlerden birini seçin:
+  - **Kullanıcı takvimlerini okuma**
+  - **Kullanıcı kişilerini okuma**
+  - **Kullanıcı postasını okuma**
+  - **Tüm sohbet iletilerini okuma**
+  - **Kullanıcının erişebileceği tüm dosyaları okuma**
+  - **Kullanıcı postasına okuma ve yazma erişimi**
+  - **Postayı kullanıcı olarak gönderme**
 
 ## <a name="target-users"></a>Hedef kullanıcılar
 
@@ -170,7 +194,7 @@ Yük ayrıntıları açılır menüsüne geri dönüp [Kapat simgesine tıklayı
 - **Yalnızca belirli kullanıcıları ve grupları dahil et**: Aşağıdaki seçeneklerden birini belirleyin:
   - ![Kullanıcı ekle simgesi.](../../media/m365-cc-sc-create-icon.png) **Kullanıcı ekle**: Görüntülenen **Kullanıcı ekle** açılır listesinde, aşağıdaki ölçütlere göre kullanıcıları ve grupları bulabilirsiniz:
 
-    - **Kullanıcıları veya grupları arayın**: Kutuya, kullanıcı veya grubun **Ad** veya **E-posta adresinin** bir bölümünü yazıp Enter tuşuna basabilirsiniz. Sonuçların bir kısmını veya tümünü seçebilirsiniz. İşiniz bittiğinde **X kullanıcı ekle'ye** tıklayın.
+    - **Kullanıcıları veya grupları arayın**: Kutusuna, kullanıcı veya grubun **Ad** veya **Email adresinin** bir bölümünü yazıp Enter tuşuna basabilirsiniz. Sonuçların bir kısmını veya tümünü seçebilirsiniz. İşiniz bittiğinde **X kullanıcı ekle'ye** tıklayın.
 
       > [!NOTE]
       > **Kullanıcıları kategorilere göre filtrele** seçeneklerine dönmek için **Filtre ekle** düğmesine tıklanması, arama sonuçlarında seçtiğiniz tüm kullanıcıları veya grupları temizler.
@@ -200,7 +224,7 @@ Yük ayrıntıları açılır menüsüne geri dönüp [Kapat simgesine tıklayı
         - **Tüm Başlığı** Seç
         - Mevcut Başlık değerlerini seçin.
 
-      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi sayfasındaki Hedef kullanıcılar sayfasında Kullanıcı filtrelemesi" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
+      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi Hedef kullanıcılar sayfasında Kullanıcı filtrelemesi" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
 
       Ölçütlerinizi belirledikten sonra, etkilenen kullanıcılar görüntülenen **Kullanıcı listesi** bölümünde gösterilir ve burada bulunan alıcılardan bazılarını veya tümünü seçebilirsiniz.
 
@@ -238,7 +262,7 @@ Yük ayrıntıları açılır menüsüne geri dönüp [Kapat simgesine tıklayı
       - **Simülasyon bittikten 7 gün sonra**
   - **Eğitim yok**: Bu değeri seçerseniz sayfadaki tek seçenek, sizi [**Giriş sayfası**](#landing-page) sayfasına götüren **İleri** düğmesidir.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="Önerilen eğitimi Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi'ndeki Eğitim ataması sayfasına ekleme seçeneği" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="Önerilen eğitimi Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi Eğitim ataması sayfasına ekleme seçeneği" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
 
 ### <a name="training-assignment"></a>Eğitim ataması
 
@@ -280,7 +304,7 @@ Listedeki her eğitim için **, Ata** sütunundaki değerleri seçerek eğitimi 
 
 Gösterilen bir eğitimi kullanmak istemiyorsanız Eğitimi sil simgesine tıklayın ![.](../../media/m365-cc-sc-delete-icon.png) **Sil'i seçin**.
 
-:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi'ndeki Eğitim atama sayfası" lightbox="../../media/attack-sim-training-training-assignment.png":::
+:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi Eğitim atama sayfası" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
 İşiniz bittiğinde **İleri'ye** tıklayın.
 
@@ -303,19 +327,31 @@ Microsoft tarafından seçilmiş giriş sayfaları 12 dilde kullanılabilir: Çi
     **Özel URL kullan'ı** seçerseniz, görüntülenen **Özel giriş sayfası URL'sini girin** kutusuna URL'yi eklemeniz gerekir. Sayfada başka seçenek yoktur.
 
   - **Kendi giriş sayfanızı oluşturun**: Bu değer, yapılandırmak için aşağıdaki ilişkili seçeneklere sahiptir:
-    - **E-postaya yük göstergeleri ekleme**: Bu ayar yalnızca aşağıdaki koşulların her ikisi de doğruysa seçilebilir:
-      - Daha önce [Tekniği seç](#select-a-social-engineering-technique) sayfasında **Kimlik bilgisi toplama**, **Ekteki bağlantı** veya **SürücüYE göre URL'yi** seçtiniz.
-      - Sayfa **içeriğine e-posta içeriği ekle** adlı **Dinamik etiketi** ekledikten sonra.
+    - **E-postaya yük göstergeleri ekleme**:Bu ayar yalnızca aşağıdaki deyimlerin ikisi de doğruysa seçilebilir:
+      - Teknik seçin sayfasında **Kimlik bilgisi toplama**, **Ekteki bağlantı**, **Sürücüye göre URL** veya **OAuth Onayı Verme'yi** [seçtiniz](#select-a-social-engineering-technique) .
+      - Bu sayfadaki giriş sayfası **içeriğine Yük İçeriği Ekle** adlı **Dinamik etiketi** eklediniz.
 
-    - Sayfa içeriği: İki sekme kullanılabilir:
+    - Giriş sayfası içeriği: İki sekme kullanılabilir:
       - **Metin**: Giriş sayfanızı oluşturmak için zengin bir metin düzenleyicisi kullanılabilir. Tipik yazı tipi ve biçimlendirme ayarlarına ek olarak aşağıdaki ayarlar da kullanılabilir:
         - **Dinamik etiket**: Aşağıdaki etiketler arasından seçim yapın:
-          - **Ad ekle**
-          - **Gönderen adı ekle**
-          - **Gönderen e-postası ekleme**
-          - **E-posta konusu ekle**
-          - **E-posta içeriği ekleme**
-          - **Tarih ekle**
+
+          |Etiket adı|Etiket değeri|
+          |---|---|
+          |**Kullanıcı adı ekle**|`${userName}`|
+          |**Ad Ekle**|`${firstName}`|
+          |**Soyadı Ekle**|`${lastName}`|
+          |**UPN ekleme**|`${upn}`|
+          |**Email ekle**|`${emailAddress}`|
+          |**Bölüm Ekle**|`${department}`|
+          |**Yönetici Ekle**|`${manager}`|
+          |**Cep telefonu ekle**|`${mobilePhone}`|
+          |**Şehir Ekle**|`${city}`|
+          |**Gönderen adı ekle**|`${FromName}`|
+          |**Gönderen e-postası ekleme**|`${FromEmail}`|
+          |**Yük konu ekle**|`${EmailSubject}`|
+          |**Payload içeriği ekleme**|`${EmailContent}`|
+          |**Tarih Ekle**|`${date|MM/dd/yyyy|offset}`|
+
         - **Varsayılandan kullanın**: Başlamak için kullanılabilir bir şablon seçin. Düzenleme alanındaki metni ve düzeni değiştirebilirsiniz. Giriş sayfasını şablonun varsayılan metnine ve düzenine geri döndürmek **için Varsayılana sıfırla'ya** tıklayın.
     - **Kod**: HTML kodunu doğrudan görüntüleyebilir ve değiştirebilirsiniz.
 
@@ -381,7 +417,7 @@ Bu sayfada aşağıdaki bildirimler ve yapılandırılan dilleri gösterilir:
 - **Microsoft varsayılan eğitim ataması bildirimi**
 - Daha önce oluşturduğunuz tüm özel eğitim atama bildirimleri.
 
-  Bu bildirimler, konumundaki Saldırı benzetimi eğitimi'nin **Simülasyon içerik kitaplığı** sekmesindeki **Son kullanıcı bildirimlerinde** <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>de kullanılabilir. **Microsoft varsayılan eğitim ataması bildirimi** Genel **bildirimler** sekmesinde bulunur. Özel eğitim ataması bildirimleri **Kiracı bildirimleri** sekmesinde bulunur. Daha fazla bilgi için bkz [. Saldırı benzetimi eğitimi için son kullanıcı bildirimleri](attack-simulation-training-end-user-notifications.md).
+  Bu bildirimler, konumundaki Saldırı simülasyonu eğitimi **Simülasyon içerik kitaplığı** sekmesindeki **Son kullanıcı bildirimlerinde** <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>de kullanılabilir. **Microsoft varsayılan eğitim ataması bildirimi** Genel **bildirimler** sekmesinde bulunur. Özel eğitim ataması bildirimleri **Kiracı bildirimleri** sekmesinde bulunur. Daha fazla bilgi için bkz. [Saldırı simülasyonu eğitimi için son kullanıcı bildirimleri](attack-simulation-training-end-user-notifications.md).
 
 Var olan bir eğitim ataması bildirimini seçebilir veya kullanmak için yeni bir bildirim oluşturabilirsiniz:
 
@@ -416,7 +452,7 @@ Kullanmak istediğiniz bildirimi seçin ve **İleri'ye** tıklayın.
   - **Microsoft varsayılan eğitim anımsatıcı bildirimi**
   - Daha önce oluşturduğunuz tüm özel eğitim anımsatıcı bildirimleri.
 
-    Bu bildirimler, konumundaki Saldırı benzetimi eğitimi'nin **Simülasyon içerik kitaplığı** sekmesindeki **Son kullanıcı bildirimlerinde** <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>de kullanılabilir. **Microsoft varsayılan eğitim anımsatıcı bildirimi** Genel **bildirimler** sekmesinde bulunur. Özel eğitim anımsatıcısı bildirimleri **Kiracı bildirimleri** sekmesinde bulunur. Daha fazla bilgi için bkz [. Saldırı benzetimi eğitimi için son kullanıcı bildirimleri](attack-simulation-training-end-user-notifications.md).
+    Bu bildirimler, konumundaki Saldırı simülasyonu eğitimi **Simülasyon içerik kitaplığı** sekmesindeki **Son kullanıcı bildirimlerinde** <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>de kullanılabilir. **Microsoft varsayılan eğitim anımsatıcı bildirimi** Genel **bildirimler** sekmesinde bulunur. Özel eğitim anımsatıcısı bildirimleri **Kiracı bildirimleri** sekmesinde bulunur. Daha fazla bilgi için bkz. [Saldırı simülasyonu eğitimi için son kullanıcı bildirimleri](attack-simulation-training-end-user-notifications.md).
 
   Var olan bir eğitim anımsatıcısı bildirimini seçebilir veya kullanmak için yeni bir bildirim oluşturabilirsiniz:
 
@@ -453,7 +489,7 @@ Kullanmak istediğiniz bildirimi seçin ve **İleri'ye** tıklayın.
   - **Microsoft varsayılan pozitif takviye bildirimi**
   - Daha önce oluşturduğunuz tüm özel pozitif takviye bildirimleri.
 
-    Bu bildirimler, konumundaki Saldırı benzetimi eğitimi'nin **Simülasyon içerik kitaplığı** sekmesindeki **Son kullanıcı bildirimlerinde** <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>de kullanılabilir. **Microsoft varsayılan pozitif takviye bildirimi** Genel **bildirimler** sekmesinde bulunur. Kiracı bildirimleri sekmesinde özel pozitif takviye **bildirimleri** bulunur. Daha fazla bilgi için bkz [. Saldırı benzetimi eğitimi için son kullanıcı bildirimleri](attack-simulation-training-end-user-notifications.md).
+    Bu bildirimler, konumundaki Saldırı simülasyonu eğitimi **Simülasyon içerik kitaplığı** sekmesindeki **Son kullanıcı bildirimlerinde** <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>de kullanılabilir. **Microsoft varsayılan pozitif takviye bildirimi** Genel **bildirimler** sekmesinde bulunur. Kiracı bildirimleri sekmesinde özel pozitif takviye **bildirimleri** bulunur. Daha fazla bilgi için bkz. [Saldırı simülasyonu eğitimi için son kullanıcı bildirimleri](attack-simulation-training-end-user-notifications.md).
 
   Mevcut bir pozitif takviye bildirimi seçebilir veya kullanmak için yeni bir bildirim oluşturabilirsiniz:
 
@@ -490,7 +526,8 @@ Aşağıdaki ayarlar kullanılabilir:
     - **Başlatma zamanını seçin**
 - **Benzetimi sona erdirecek gün sayısını yapılandırın**: Varsayılan değer 2'dir.
 - **Bölge algılamalı saat dilimi teslimini etkinleştirme**: Çalışanlarınıza bölgelerine göre çalışma saatleri içinde sanal saldırı iletileri iletin.
-- **Toplanan sürücüye göre teknik ara verileri görüntüleme sayfası**: Sürücü veri yolu URL'si tekniği saldırıları için ortaya çıkan katmanı gösterebilirsiniz. Yer paylaşımını gizlemek ve doğrudan giriş sayfasına gitmek için bu seçeneği kaldırın.
+
+- **Toplanan sürücüye göre teknik ara verileri görüntüleme sayfası**: Bu ayar yalnızca [bir teknik seçin sayfasında](#select-a-social-engineering-technique) **Drive-by URL'sini** seçtiyseniz kullanılabilir. Sürücüye göre URL tekniği saldırıları için ortaya çıkan katmanı gösterebilirsiniz. Katmanı gizlemek ve doğrudan giriş sayfasına gitmek için bu seçeneği belirtmeyin.
 
 İşiniz bittiğinde **İleri'ye** tıklayın.
 
@@ -504,4 +541,4 @@ Bölümün içindeki ayarları değiştirmek için her bölümde **Düzenle'yi**
 
 İşiniz bittiğinde **Gönder'e** tıklayın.
 
-:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitiminin Simülasyonu gözden geçirme sayfası" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
+:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi simülasyon sayfasını gözden geçirin" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::

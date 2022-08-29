@@ -18,12 +18,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection (EOP) içinde gelen iletilere izin vermek için kullanılabilir ve tercih edilen seçenekler hakkında bilgi edinebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c2ef3c1ae6485f5ebdd965aee92bafd5f63233e
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 5ef0ddc2d6a47e22120b3cfbc205cd4aa4da31b0
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67274868"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383820"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP'de güvenilir gönderen listeleri oluşturma
 
@@ -53,7 +53,7 @@ Posta akışı kuralları, yalnızca doğru iletilere izin verildiğinden emin o
 >
 > - Hatalı pozitif (iyi e-posta kötü olarak işaretlenmiş) konusunda yardımcı olmak için güvenilir gönderen listelerini kullanabilirsiniz ancak mümkünse kaçınılması gereken geçici bir çözüm olarak güvenilir gönderen listelerinin kullanımını göz önünde bulundurmalısınız. İstenmeyen posta filtreleme özel durumları kuruluşunuzu kimlik sahtekarlığına ve diğer saldırılara açabileceğinden, güvenilir gönderen listelerini kullanarak hatalı pozitif sonuçları yönetmenizi önermeyiz. Hatalı pozitif sonuçları yönetmek için güvenilir gönderen listelerini kullanmakta ısrar ediyorsanız dikkatli olmanız ve [İletileri ve dosyaları Microsoft'a bildirme](report-junk-email-messages-to-microsoft.md) konusunu hazır tutmanız gerekir.
 >
-> - Etki alanının kimliği doğrulanmamış e-posta göndermesine (kimlik sahtekarlığına karşı korumayı atlama) ancak istenmeyen posta önleme ve diğer korumaları atlamamasına izin vermek için kimlik [sahtekarlığı zekası içgörülerini](learn-about-spoof-intelligence.md) ve [Kiracı İzin Ver/Engelle Listesi'ni](tenant-allow-block-list.md) kullanabilirsiniz.
+> - Etki alanının kimliği doğrulanmamış e-posta göndermesine (kimlik sahtekarlığına karşı korumayı atlama) ancak istenmeyen posta önleme ve diğer korumaları atlamamasına izin vermek için kimlik [sahtekarlığı zekası içgörülerini](learn-about-spoof-intelligence.md) ve [Kiracı İzin Ver/Engelle Listesi'ni](manage-tenant-allow-block-list.md) kullanabilirsiniz.
 >
 > - EOP ve Outlook, iletinin gönderenini belirlemek için farklı ileti özelliklerini inceler. Daha fazla bilgi için bu makalenin devamında yer [alan Toplu e-posta ile ilgili dikkat edilmesi gerekenler](#considerations-for-bulk-email) bölümüne bakın.
 >

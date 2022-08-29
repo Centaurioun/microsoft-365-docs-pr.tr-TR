@@ -18,12 +18,12 @@ ms.custom:
 description: Kimliği Doğrulanmış Alınan Zincir (ARC), cihazlarda ve gönderen ile alıcı arasında gelen dolaylı posta akışlarında kimlik doğrulama sonuçlarını korumaya çalışan e-posta kimlik doğrulamasıdır. Güvenilir ARC Gönderenleriniz için şu şekilde özel durumlar yapabilirsiniz.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6c27e5913a035c892b7c3a2b2677f5cf3531d04
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: c6845fd9137029ebebd031550e145aef8ffc1440
+ms.sourcegitcommit: ec245c75006e3e5ed2b8e6c1b062fbb31a63aa6c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306646"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67423747"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>*Meşru* dolaylı posta akışlarına güvenmek için güvenilir ARC Gönderenlerinin listesini oluşturma
 
@@ -37,7 +37,7 @@ ms.locfileid: "67306646"
 
 ## <a name="authenticated-received-chain-arc-in-microsoft-365-defender-for-office"></a>Office için Microsoft 365 Defender Kimliği Doğrulanmış Alınan Zincir (ARC)
 
-kuruluşunuza teslim etmeden önce iletinin taşınması sırasında içeriği değiştiren hizmetler, DKIM e-posta imzasını geçersiz kılabilir ve iletinin kimlik doğrulamasını etkileyebilir. Bu aracı hizmetler bu tür eylemleri gerçekleştirdiğinde, arc'ı kullanarak değişiklikler yapılmadan önce özgün kimlik doğrulamasının ayrıntılarını sağlayabilirler. Bu bilgiler, kuruluşunuzun iletinin kimliğini doğrulamaya yardımcı olmak için güvenebileceği bir işlemdir.  
+Kuruluşunuza teslim etmeden önce ileti içeriğini değiştiren hizmetler DKIM e-posta imzalarını geçersiz kılabilir ve iletinin kimlik doğrulamasını etkileyebilir. Bu aracı hizmetler bu tür eylemleri gerçekleştirdiğinde, değişiklikler yapılmadan önce özgün kimlik doğrulamasının ayrıntılarını sağlamak için ARC'ı kullanabilir. Kuruluşunuz daha sonra bu ayrıntılara güvenerek iletinin kimliğini doğrulamaya yardımcı olabilir.  
 
 **Güvenilen ARC mühürleyicileri yöneticilerin Microsoft 365 Defender portalına *güvenilir* aracıların listesini eklemesine olanak tanır.** Güvenilir ARC mühürleyicileri, Microsoft'un bu güvenilir aracılardan gelen ARC imzalarını yerine getirmesine olanak sağlayarak bu meşru iletilerin kimlik doğrulama zincirinde başarısız olmasını önler.
 

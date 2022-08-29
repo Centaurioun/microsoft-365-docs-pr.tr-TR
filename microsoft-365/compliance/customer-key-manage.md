@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Müşteri Anahtarı'nı ayarladıktan sonra, AKV anahtarlarını geri yükleyerek ve izinleri yöneterek ve veri şifreleme ilkeleri oluşturup atayarak anahtarı yönetmeyi öğrenin.
-ms.openlocfilehash: d9f9e992b78b673df08d0c0d5b12ba09cfa9ea84
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4f02b9228dc581e1b1d2a2f533d65d97bffe572e
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637339"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433476"
 ---
 # <a name="manage-customer-key"></a>Müşteri Anahtarını Yönet
 
@@ -41,9 +41,9 @@ Başlamadan önce Müşteri Anahtarını ayarlamak için gereken görevleri tama
 
    - *İlkeAdı* , ilke için kullanmak istediğiniz addır. Adlar boşluk içeremez. Örneğin, Contoso_Global.
 
-   - *KeyVaultURI1* , ilkedeki ilk anahtarın URI'sini oluşturur. Örneğin, <https://contosoWestUSvault1.vault.azure.net/keys/Key_01>.
+   - *KeyVaultURI1* , ilkedeki ilk anahtarın URI'sini oluşturur. Örneğin, `https://contosoWestUSvault1.vault.azure.net/keys/Key_01`.
 
-   - *KeyVaultURI2* , ilkedeki ikinci anahtarın URI'sini oluşturur. Örneğin, <https://contosoCentralUSvault1.vault.azure.net/keys/Key_02>. İki URI'yi virgül ve boşlukla ayırın.
+   - *KeyVaultURI2* , ilkedeki ikinci anahtarın URI'sini oluşturur. Örneğin, `https://contosoCentralUSvault1.vault.azure.net/keys/Key_02`. İki URI'yi virgül ve boşlukla ayırın.
 
    - *İlke Açıklaması* , ilkenin ne için olduğunu hatırlamanıza yardımcı olacak kullanıcı dostu bir açıklamadır. Açıklamaya boşluk ekleyebilirsiniz. Örneğin, "Kiracıdaki tüm kullanıcılar için birden çok iş yükü için kök ilke."
 
@@ -93,9 +93,9 @@ Posta kutusuyla kullanılacak bir DEP oluşturmak için şu adımları izleyin:
 
    - *İlke Açıklaması* , ilkenin ne için olduğunu hatırlamanıza yardımcı olacak kullanıcı dostu bir açıklamadır. Açıklamaya boşluk ekleyebilirsiniz. Örneğin, "ABD'deki posta kutuları ve bölgeleri için kök anahtar".
 
-   - *KeyVaultURI1* , ilkedeki ilk anahtarın URI'sini oluşturur. Örneğin, <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>.
+   - *KeyVaultURI1* , ilkedeki ilk anahtarın URI'sini oluşturur. Örneğin, `https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01`.
 
-   - *KeyVaultURI2* , ilkedeki ikinci anahtarın URI'sini oluşturur. Örneğin, <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. İki URI'yi virgül ve boşlukla ayırın.
+   - *KeyVaultURI2* , ilkedeki ikinci anahtarın URI'sini oluşturur. Örneğin, `https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02`. İki URI'yi virgül ve boşlukla ayırın.
 
    Örneğin:
 

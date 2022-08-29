@@ -2,7 +2,7 @@
   items:
     - name: Genel bakış
       href: index.md
-    - name: İşinizi daha güvenli bir şekilde yürütün
+    - name: Üretkenlik ve güvenlik
       href: m365bp-secure-users.md
     - name: Microsoft 365 İş Ekstra deneme akış planı
       href: m365bp-trial-playbook-microsoft-business-premium.md
@@ -76,10 +76,10 @@
           href: m365bp-onboard-devices-mdb.md
         - name: Windows cihazlarını koruma
           items:
-            - name: Windows 10 Pro’ya yükseltme (gerekirse)
-              href: m365bp-upgrade-windows-10-pro.md
             - name: Windows cihazlarının güvenliğini sağlama
               href: m365bp-secure-windows-devices.md
+            - name: Windows 10 Pro’ya yükseltme (gerekirse)
+              href: m365bp-upgrade-windows-10-pro.md
             - name: Windows cihazları yönetme
               href: m365bp-manage-windows-devices.md
             - name: Office istemci dağıtımı hazırlığı
@@ -128,7 +128,21 @@
       href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 yönetici içeriği
       href: /microsoft-365/admin/
-    - name: Autopilot’ı ayarlama
+    - name: İş için Microsoft Defender
+      href: ../security/defender-business/index.yml
+    - name: Office 365 için Microsoft Defender
+      href: ../security/office-365-security/overview.md
+    - name: Microsoft 365 Lighthouse
+      href: ../lighthouse/m365-lighthouse-overview.md
+    - name: Microsoft Defender Virüsten Koruma tarafından tehdit koruması
+      href: m365bp-threats-detected-defender-av.md
+    - name: Intune yönetici rolleri
+      href: m365bp-intune-admin-roles-in-the-mac.md
+    - name: Koruma özelliklerini Intune ayarlarına eşleme
+      href: m365bp-map-protection-features-to-intune-settings.md
+    - name: Uyumluluk Yöneticisi
+      href: m365bp-set-up-compliance.md
+    - name: Windows Autopilot
       items:
         - name: Autopilot cihazı ve profili ekleme
           href: m365bp-add-Autopilot-devices-and-profile.md
@@ -140,15 +154,3 @@
       href: m365bp-app-protection-settings-for-android-and-ios.md
     - name: Android ve iOS'ta uygulama ayarlarını doğrulama
       href: m365bp-validate-settings-on-android-or-ios.md
-    - name: Koruma özelliklerini Intune ayarlarına eşleme
-      href: m365bp-map-protection-features-to-intune-settings.md
-    - name: Intune yönetici rolleri
-      href: m365bp-intune-admin-roles-in-the-mac.md
-    - name: Uyumluluk Yöneticisi ayarlama
-      href: m365bp-set-up-compliance.md
-    - name: İş için Microsoft Defender
-      href: ../security/defender-business/index.yml
-    - name: Office 365 için Microsoft Defender
-      href: ../security/office-365-security/overview.md
-    - name: Microsoft 365 Lighthouse
-      href: ../lighthouse/m365-lighthouse-overview.md

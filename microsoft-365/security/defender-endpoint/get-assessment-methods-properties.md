@@ -1,6 +1,6 @@
 ---
 title: Cihaz başına değerlendirme yöntemlerini ve özelliklerini dışarı aktarma
-description: "\"Tehdit ve Güvenlik Açığı Yönetimi\" verileri çeken API'ler hakkında bilgi sağlar. Farklı veri türlerini almak için farklı API çağrıları vardır. Genel olarak, her API çağrısı kuruluşunuzdaki cihazlar için gerekli verileri içerir."
+description: "\"Microsoft Defender Güvenlik Açığı Yönetimi\" verileri çeken API'ler hakkında bilgi sağlar. Farklı veri türlerini almak için farklı API çağrıları vardır. Genel olarak, her API çağrısı kuruluşunuzdaki cihazlar için gerekli verileri içerir."
 keywords: api, API'ler, dışarı aktarma değerlendirmesi, cihaz değerlendirmesi başına, makine değerlendirmesi başına, güvenlik açığı değerlendirmesi raporu, cihaz güvenlik açığı değerlendirmesi, cihaz güvenlik açığı raporu, güvenli yapılandırma değerlendirmesi, güvenli yapılandırma raporu, yazılım güvenlik açıkları değerlendirmesi, yazılım güvenlik açığı raporu, makineye göre güvenlik açığı raporu,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 574a3b1206212b627176b4d85555f6acc15ebda6
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: a6a542f07e77a35661cab10b64133f6cfa2a26ed
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276950"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408363"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Cihaz başına değerlendirme yöntemlerini ve özelliklerini dışarı aktarma
 
@@ -172,7 +172,7 @@ SecurityUpdateAvailable|Boole|Yazılım için bir güvenlik güncelleştirmesi o
 SoftwareName|Dize|Yazılım ürününün adı.
 SoftwareVendor|Dize|Yazılım satıcısının adı.
 SoftwareVersion|Dize|Yazılım ürününün sürüm numarası.
-VulnerabilitySeverityLevel|Dize|CVSS puanına ve tehdit ortamının etkilediği dinamik faktörlere göre güvenlik açığına atanan önem düzeyi.
+VulnerabilitySeverityLevel|Dize|CVSS puanına göre güvenlik açığına atanan önem düzeyi.
 
 ### <a name="33-properties-via-files"></a>3.3 Özellikler (dosyalar aracılığıyla)
 
@@ -205,7 +205,7 @@ SoftwareName|Dize|Yazılım ürününün adı.
 SoftwareVendor|Dize|Yazılım satıcısının adı.
 SoftwareVersion|Dize|Yazılım ürününün sürüm numarası.
 Durum|Dize|**Yeni** (cihazda kullanıma sunulan yeni bir güvenlik açığı için). **Düzeltildi** (cihazda artık mevcut olmayan ve düzeltildiği anlamına gelen bir güvenlik açığı için). **Güncelleştirildi** (değiştirilen bir cihazdaki güvenlik açığı için. Olası değişiklikler şunlardır: CVSS puanı, kötüye kullanılabilirlik düzeyi, önem düzeyi, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
-VulnerabilitySeverityLevel|Dize|CVSS puanına ve tehdit ortamının etkilediği dinamik faktörlere bağlı olarak güvenlik açığına atanan önem düzeyi.
+VulnerabilitySeverityLevel|Dize|CVSS puanına göre güvenlik açığına atanan önem düzeyi.
 
 ## <a name="4-export-non-product-code-software-inventory-assessment"></a>4. Ürün kodu olmayan yazılım envanteri değerlendirmeyi dışarı aktarma
 
@@ -248,5 +248,5 @@ GeneratedTime|Dize|Dışarı aktarmanın oluşturulduğu zaman.
 
 Diğer ilgililer
 
-- [Risk tabanlı tehdit & güvenlik açığı yönetimi](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Güvenlik Açığı Yönetimi](next-gen-threat-and-vuln-mgt.md)
 - [Kuruluşunuzdaki güvenlik açıkları](tvm-weaknesses.md)

@@ -19,18 +19,18 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Kuruluşunuzun içindeki ve dışındaki kişiler arasında şifreli e-posta iletileri göndermeyi ve almayı öğrenin.
-ms.openlocfilehash: 746a1cbb1d4fa5e98fb3fc3cbba529232178987c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0501aeb833d41048e6e3f8848f20b3e4b0bc217b
+ms.sourcegitcommit: 57e6a8e42b41376c4f4021754c918502bf52d209
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640576"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67427124"
 ---
 # <a name="message-encryption"></a>İleti Şifrelemesi
 
-İnsanlar genellikle finansal veriler, yasal sözleşmeler, gizli ürün bilgileri, satış raporları ve projeksiyonlar, hasta sağlığı bilgileri veya müşteri ve çalışan bilgileri gibi hassas bilgileri değiştirmek için e-posta kullanır. Sonuç olarak, posta kutuları büyük miktarlarda hassas olabilecek bilgiler için depolara dönüşebilir ve bilgi sızıntısı kuruluşunuz için ciddi bir tehdit haline gelebilir.
+Kişiler genellikle finansal veriler, yasal sözleşmeler, gizli ürün bilgileri, satış raporları ve projeksiyonlar, hasta sağlığı bilgileri veya müşteri ve çalışan bilgileri gibi hassas bilgileri değiştirmek için e-posta kullanır. Sonuç olarak, posta kutuları büyük miktarlarda hassas olabilecek bilgiler için depolara dönüşebilir ve bilgi sızıntısı kuruluşunuz için ciddi bir tehdit haline gelebilir.
 
-Office 365 İleti Şifrelemesi ile kuruluşunuz, kuruluşunuzun içindeki ve dışındaki kişiler arasında şifreli e-posta iletileri gönderebilir ve alabilir. Office 365 İleti Şifrelemesi Outlook.com, Yahoo!, Gmail ve diğer e-posta hizmetleriyle çalışır. E-posta iletisi şifrelemesi, yalnızca hedeflenen alıcıların ileti içeriğini görüntüleyebilmesine yardımcı olur.
+Office 365 İleti Şifrelemesi ile kuruluşunuz, kuruluşunuzun içindeki ve dışındaki kişiler arasında şifreli e-posta iletileri gönderebilir ve alabilir. Office 365 İleti Şifrelemesi Outlook.com, Yahoo!, Gmail ve diğer e-posta hizmetleriyle çalışır. Email ileti şifrelemesi, yalnızca hedeflenen alıcıların ileti içeriğini görüntüleyebilmesine yardımcı olur.
 
 ## <a name="how-message-encryption-works"></a>İleti Şifrelemesi nasıl çalışır?
 
@@ -48,11 +48,11 @@ OME'nin önceki sürümüyle Microsoft Purview İleti Şifrelemesi arasındaki f
 
 Birisi şifreleme posta akışı kuralıyla eşleşen bir e-posta iletisi gönderdiğinde, ileti gönderilmeden önce şifrelenir. Posta okumak için Outlook istemcilerini kullanan tüm Microsoft 365 son kullanıcıları, gönderenle aynı kuruluşta olmasalar bile şifrelenmiş ve hak korumalı postalar için yerel, birinci sınıf okuma deneyimleri alır. Desteklenen Outlook istemcileri Outlook masaüstü, Outlook Mac, iOS ve Android üzerinde Outlook mobile ve Web üzerinde Outlook (eski adıyla Outlook Web App) içerir.
 
-Outlook.com, Gmail ve Yahoo hesaplarına gönderilen şifrelenmiş veya hak korumalı posta alan şifrelenmiş iletilerin alıcıları, microsoft hesabı, Gmail veya Yahoo kimlik bilgilerini kullanarak kolayca kimlik doğrulaması yapabilecekleri OME Portalı'na yönlendiren bir sarmalayıcı posta alır.
+Outlook.com, Gmail ve Yahoo hesaplarına gönderilen şifrelenmiş veya hak korumalı posta alan şifrelenmiş iletilerin alıcıları, bir Microsoft hesabı, Gmail veya Yahoo kimlik bilgilerini kullanarak kolayca kimlik doğrulaması yapabilecekleri şifrelenmiş ileti portalına yönlendiren bir sarmalayıcı posta alır.
 
-Outlook dışındaki istemcilerde şifrelenmiş veya hak korumalı posta okuyan son kullanıcılar, aldıkları şifrelenmiş ve hak korumalı iletileri görüntülemek için OME portalını da kullanır.
+Outlook dışındaki istemcilerde şifrelenmiş veya hak korumalı posta okuyan son kullanıcılar, aldıkları şifrelenmiş ve hak korumalı iletileri görüntülemek için şifrelenmiş ileti portalını da kullanır.
 
-Korumalı postayı gönderen GCC High'daysa ve alıcı ticari kullanıcılar, Outlook.com kullanıcılar ve Gmail gibi diğer e-posta sağlayıcılarının kullanıcıları da dahil olmak üzere GCC High'ın dışındaysa, alıcı bir sarmalayıcı posta alır. Sarmalayıcı posta, alıcıyı, alıcının iletiyi okuyup yanıtlayabildiği OME Portalı'na yönlendirir. Aksi takdirde, gönderen ve alıcı aynı kuruluşta olmasalar bile GCC High ortamındaysa, posta okumak için Outlook istemcilerini kullanan alıcılar şifrelenmiş ve hak korumalı postalar için yerel, birinci sınıf okuma deneyimleri alır. GCC High'daki farklı deneyim hakkında daha fazla bilgi için bkz. [OME sürümlerini karşılaştırma](ome-version-comparison.md).
+Korumalı postayı gönderen GCC High'daysa ve alıcı ticari kullanıcılar, Outlook.com kullanıcılar ve Gmail gibi diğer e-posta sağlayıcılarının kullanıcıları da dahil olmak üzere GCC High'ın dışındaysa, alıcı bir sarmalayıcı posta alır. Sarmalayıcı posta, alıcıyı, alıcının iletiyi okuyup yanıtlayabildiği şifrelenmiş ileti portalına yönlendirir. Aksi takdirde, gönderen ve alıcı aynı kuruluşta olmasalar bile GCC High ortamındaysa, posta okumak için Outlook istemcilerini kullanan alıcılar şifrelenmiş ve hak korumalı postalar için yerel, birinci sınıf okuma deneyimleri alır. GCC High'daki farklı deneyim hakkında daha fazla bilgi için bkz. [OME sürümlerini karşılaştırma](ome-version-comparison.md).
 
 OME kullanarak şifreleyebileceğiniz iletilerin ve eklerin boyut sınırları hakkında daha fazla bilgi için bkz. [Exchange Online Sınırları](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
@@ -68,7 +68,7 @@ Microsoft 365'teki Gelişmiş İleti Şifrelemesi, dış alıcının şifrelenmi
 
 Microsoft Purview İleti Şifrelemesi etkinleştirmenin bir yolu, Exchange Online ve Exchange Online Protection yöneticilerinin posta akışı kurallarını tanımlamasıdır. Bu kurallar, e-posta iletilerinin hangi koşullarda şifreleneceğini belirler. Bir kural için şifreleme eylemi ayarlandığında, kural koşullarıyla eşleşen tüm iletiler gönderilmeden önce şifrelenir.
 
-Posta akışı kuralları esnektir ve koşulları birleştirerek belirli güvenlik gereksinimlerini tek bir kuralda karşılamanızı sağlar. Örneğin, belirtilen anahtar sözcükleri içeren ve dış alıcılara gönderilen tüm iletileri şifrelemek için bir kural oluşturabilirsiniz. Microsoft Purview İleti Şifrelemesi şifrelenmiş e-posta alıcılarından gelen yanıtları da şifreleyin.
+Posta akışı kuralları esnektir ve koşulları birleştirerek belirli güvenlik gereksinimlerini tek bir kuralda karşılamanızı sağlar. Örneğin, belirtilen anahtar sözcükleri içeren ve dış alıcılara gönderilen tüm iletileri şifrelemek için bir kural oluşturabilirsiniz. Microsoft Purview İleti Şifrelemesi, şifrelenmiş e-posta alıcılarından gelen yanıtları da şifreler.
 
 Microsoft Purview İleti Şifrelemesi yararlanmak için posta akışı kuralları oluşturma hakkında daha fazla bilgi için bkz. [E-posta iletilerini şifrelemek için posta akışı kuralları tanımlama](define-mail-flow-rules-to-encrypt-email.md).
 
@@ -80,7 +80,7 @@ Kuruluşunuzdaki Microsoft Purview İleti Şifrelemesi kullanmaya başlamaya haz
 
 Microsoft Purview İleti Şifrelemesi ile kullanıcılar Outlook'tan ve Web üzerinde Outlook şifrelenmiş e-posta gönderebilir. Ayrıca yöneticiler, anahtar sözcük eşleştirme veya diğer koşullara göre e-postaları otomatik olarak şifrelemek için Microsoft 365'te posta akışı kuralları ayarlayabilir.
 
-Kuruluşlardaki şifrelenmiş iletilerin alıcıları pc için Outlook, Mac için Outlook, Web üzerinde Outlook, iOS için Outlook ve Android için Outlook dahil olmak üzere tüm Outlook sürümlerinde bu iletileri sorunsuz bir şekilde okuyabilir. Diğer e-posta istemcilerinde şifrelenmiş iletiler alan kullanıcılar, iletileri OME portalında görüntüleyebilir.
+Kuruluşlardaki şifrelenmiş iletilerin alıcıları pc için Outlook, Mac için Outlook, Web üzerinde Outlook, iOS için Outlook ve Android için Outlook dahil olmak üzere tüm Outlook sürümlerinde bu iletileri sorunsuz bir şekilde okuyabilir. Diğer e-posta istemcilerinde şifrelenmiş iletiler alan kullanıcılar, şifrelenmiş ileti portalında iletileri görüntüleyebilir.
 
 Şifrelenmiş iletileri gönderme ve görüntüleme hakkında ayrıntılı yönergeler için bu makalelere göz atın.
 

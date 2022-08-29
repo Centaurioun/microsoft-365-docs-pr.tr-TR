@@ -1,7 +1,7 @@
 ---
-title: Organizasyonlarınızı web tehditlerine karşı koruma
-description: Uç Nokta için Microsoft Defender'da web korumasını ve organizasyonlarınızı nasıl koruy koruyacı olduğunu öğrenin.
-keywords: web koruması, web tehdit koruması, web'e gözatma, güvenlik, kimlik avı, kötü amaçlı yazılım, açıkları kullanma, web siteleri, ağ koruması, Edge, Internet Explorer, Chrome, Firefox, web tarayıcısı
+title: Kuruluşunuzu web tehditlerine karşı koruma
+description: Uç Nokta için Microsoft Defender'da web koruması ve kuruluşunuzu nasıl koruyabileceği hakkında bilgi edinin.
+keywords: web koruması, web tehdit koruması, web'e göz atma, güvenlik, kimlik avı, kötü amaçlı yazılım, yararlanma, web siteleri, ağ koruması, Edge, Internet Explorer, Chrome, Firefox, web tarayıcısı
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -10,75 +10,76 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 08/22/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 398fdb8bbfb5bba59fce83e24e7d6cdd496e90bd
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: bd63b74990dd058f6a9158cd85f02f303d7dc4aa
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997554"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408407"
 ---
-# <a name="protect-your-organization-against-web-threats"></a>Organizasyonlarınızı web tehditlerine karşı koruma
+# <a name="protect-your-organization-against-web-threats"></a>Kuruluşunuzu web tehditlerine karşı koruma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web tehdit koruması, Uç nokta için [Defender'daki Web](web-protection-overview.md) korumasının bir bölümüdur. Cihazlarınızı [web tehditlerine](network-protection.md) karşı korumak için ağ koruması kullanır. Microsoft Edge Chrome ve Firefox gibi popüler üçüncü taraf tarayıcılarla tümleştirerek, web tehdit koruması web ara sunucusu olmadan web tehditlerini durdurur ve cihazları uzakta ya da şirket içindeyken koruyabilir. Web tehdit koruması kimlik avı sitelerine, kötü amaçlı yazılım vektörlerine, açıklarından yararlanan sitelere, güvenilmeyen veya düşük itibarlı sitelere ve özel gösterge listesinde engellemiş olduğunuz sitelere erişimi [durdurur](manage-indicators.md).
+Web tehdit koruması, Uç Nokta için Defender'da [Web korumasının](web-protection-overview.md) bir parçasıdır. Cihazlarınızın web tehditlerine karşı güvenliğini sağlamak için [ağ koruması](network-protection.md) kullanır. Web tehdit koruması, Microsoft Edge ve Chrome ve Firefox gibi popüler üçüncü taraf tarayıcılarla tümleştirilerek web proxy'si olmadan web tehditlerini durdurur ve cihazları dışarıda veya şirket içindeyken koruyabilir. Web tehdit koruması, kimlik avı sitelerine, kötü amaçlı yazılım vektörlerine, güvenlik açığından yararlanma sitelerine, güvenilmeyen veya saygınlığı düşük sitelere ve [özel gösterge listenizde](manage-indicators.md) engellediğiniz sitelere erişimi durdurur.
 
 > [!NOTE]
-> Cihazların yeni özel göstergeler edinsi bir saat kadar zaman alabiliyor.
+> Cihazların yeni özel göstergeler alması iki saate kadar sürebilir.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Web koruması, web tarayıcıları ve üçüncü taraf web tarayıcılarda web Microsoft Edge göz atma güvenliği sağlamak için ağ koruması kullanır.
+Web koruması, Microsoft Edge ve üçüncü taraf web tarayıcılarında web'e gözatma güvenliği sağlamak için ağ korumasını kullanır.
 
-Cihazlarınız üzerinde ağ korumasını açmak için:
+Cihazlarınızda ağ korumasını açmak için:
 
-- Ağ korumasını dağıtmadan veya yeniden dağıtmadan **önce etkinleştirmek için, Web &** Ağ Koruması altında Uç nokta güvenlik temeli için Defender'ı düzenleyin. [Uç nokta güvenlik temeli için Defender'ı gözden geçirme ve atama hakkında bilgi](configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline)
-- Intune cihaz yapılandırmasını, SCCM'i, Grup İlkesi'i veya MDM çözümlerinizi kullanarak ağ korumasını açın. [Ağ korumasını etkinleştirme hakkında daha fazla bilgi](enable-network-protection.md)
+- Dağıtmadan veya yeniden dağıtmadan önce ağ korumasını etkinleştirmek için **Web & Ağ Koruması** altında Uç Nokta için Defender güvenlik temelini düzenleyin. [Uç Nokta için Defender güvenlik temelini gözden geçirme ve atama hakkında bilgi edinin](configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline)
+- Intune cihaz yapılandırması, SCCM, grup ilkesi veya MDM çözümünüzü kullanarak ağ korumasını açın. [Ağ korumasını etkinleştirme hakkında daha fazla bilgi edinin](enable-network-protection.md)
 
 > [!NOTE]
-> Ağ korumasını Yalnızca denetim olarak **ayarsanız** engelleme kullanılamaz. Ayrıca, yalnızca web sitelerinden kötü amaçlı ve istenmeyen web sitelerine erişim denemelerini algılanabilir Microsoft Edge.
+> Ağ korumasını **Yalnızca denetle** olarak ayarlarsanız engelleme kullanılamaz. Ayrıca, yalnızca Microsoft Edge'de kötü amaçlı ve istenmeyen web sitelerine erişme girişimlerini algılayabilir ve günlüğe kaydedebilirsiniz.
 
 ## <a name="configure-web-threat-protection"></a>Web tehdit korumasını yapılandırma
 
-Aşağıdaki yordamda, bu yönetim merkezinde web tehdit korumasının nasıl yapılandır Microsoft Endpoint Manager açık almaktadır.
+Aşağıdaki yordamda, Microsoft Endpoint Manager yönetim merkezini kullanarak web tehdit korumasının nasıl yapılandırıldığı açıklanmaktadır.
 
-1. Yönetim merkezine Microsoft Endpoint Manager ()[https://endpoint.microsoft.com](https://endpoint.microsoft.com) ve oturum açma.
+1. Microsoft Endpoint Manager yönetim merkezine ()[https://endpoint.microsoft.com](https://endpoint.microsoft.com) gidin ve oturum açın.
  
-2. Uç **nokta güvenliği Saldırı** \> **yüzeyini azaltma'ya ve** ardından + İlke **oluştur'a seçin**.
+2. **Uç nokta güvenliği** \> **Saldırı yüzeyi azaltma'yı** ve ardından **+ İlke oluştur'u** seçin.
 
-3. Web koruma profili ve daha **Windows 10 bir** platform seçin, **ardından** Oluştur'a **tıklayın**. 
+3. **Windows 10 ve üzeri** gibi bir platform seçin, **Web koruma** profilini ve ardından **Oluştur'u** seçin. 
 
-4. Temel **Bilgiler sekmesinde** bir ad ve açıklama belirtin ve ardından Sonraki'yi **seçin**.
+4. **Temel Bilgiler** sekmesinde, bir ad ve açıklama belirtin ve ardından **İleri'yi** seçin.
 
-5. Yapılandırma ayarları **sekmesinde Web** **Koruması'nın kapsamını genişletin**, ayarlarınızı belirtin ve ardından Sonraki'yi **seçin**.
+5. **Yapılandırma ayarları** sekmesinde **Web Koruması'nı** genişletin, ayarlarınızı belirtin ve **ardından İleri'yi** seçin.
 
-   - Web **korumasının açık olduğu** **Ağ korumasını** etkinleştir ayarını Etkin olarak ayarlayın. Alternatif olarak, ortamınıza nasıl **çalışacaklarını görmek için** ağ korumasını Denetim moduna da kurabilirsiniz. Denetim modunda ağ koruması kullanıcıların siteleri veya etki alanlarını ziyaretsini engellemez, ancak algılamaları olay olarak izlemez. 
-   - Kullanıcıları olası kimlik avı dolandırıcılığı ve kötü amaçlı yazılımlardan korumak için, Kimlik avı **dolandırıcılığı için SmartScreen Microsoft Edge'in eski sürümü'i Evet'e** **döndürebilirsiniz**.
-   - Kullanıcıların kötü amaçlı olabilecek siteler hakkında uyarıları atlamalarını önlemek için Kötü amaçlı **site erişimini engelle'ye Evet** **ayarlayın**.
-   - Kullanıcıların uyarıları atlayarak ve doğrulanmamış dosyaları indirmesini önlemek için Doğrulanmamış dosya indirmesini engelle **tl Evet'i** **ayarlayın**. 
+   - **Web korumasının açık olması için Ağ korumasını etkinleştir** **seçeneğini Etkin** olarak ayarlayın. Alternatif olarak, ortamınızda nasıl çalışacağını görmek için ağ korumasını **Denetim moduna** ayarlayabilirsiniz. Denetim modunda ağ koruması kullanıcıların siteleri veya etki alanlarını ziyaret etmesini engellemez, ancak algılamaları olay olarak izler. 
+   - Kullanıcıları olası kimlik avı dolandırıcılığına ve kötü amaçlı yazılımlara karşı korumak **için Microsoft Edge'in eski sürümü için SmartScreen iste** seçeneğini **Evet** olarak ayarlayın.
+   - Kullanıcıların kötü amaçlı olabilecek sitelerle ilgili uyarıları atlamasını önlemek için **Kötü amaçlı site erişimini engelle** seçeneğini **Evet** olarak ayarlayın.
+   - Kullanıcıların uyarıları atlamasını ve doğrulanmamış dosyaları indirmesini önlemek için **Doğrulanmamış dosya indirmeyi engelle** seçeneğini **Evet** olarak ayarlayın. 
 
-6. Kapsam etiketleri **sekmesinde,** organizasyonunız kapsam etiketleri kullanıyorsa, **+ Kapsam etiketlerini seç'i ve sonra** da Sonraki'yi **seçin**. (Kapsam etiketlerini kullan değilken Sonraki'yi **seçin**.) Kapsam etiketleri hakkında daha fazla bilgi edinmek için bkz. Dağıtılmış IT için rol tabanlı erişim [denetimi (RBAC) ve kapsam etiketlerini kullanma](/mem/intune/fundamentals/scope-tags).
+6. **Kapsam etiketleri** sekmesinde, kuruluşunuz kapsam etiketleri kullanıyorsa **+ Kapsam etiketlerini seçin'i** ve ardından **İleri'yi** seçin. (Kapsam etiketleri kullanmıyorsanız **İleri'yi** seçin.) Kapsam etiketleri hakkında daha fazla bilgi edinmek için bkz. [Dağıtılmış BT için rol tabanlı erişim denetimi (RBAC) ve kapsam etiketlerini kullanma](/mem/intune/fundamentals/scope-tags).
 
-7. Ödevler **sekmesinde** , web koruma ilkesi alacak kullanıcıları ve cihazları belirtin ve ardından Sonraki'yi **seçin**.
+7. **Atamalar** sekmesinde, web koruma ilkesini alacak kullanıcıları ve cihazları belirtin ve ardından **İleri'yi** seçin.
 
-8. Gözden Geçir **+ oluştur sekmesinde** , ilke ayarlarınızı gözden geçirin ve sonra Oluştur'a **tıklayın**.
+8. **Gözden Geçir + oluştur** sekmesinde ilke ayarlarınızı gözden geçirin ve **oluştur'u** seçin.
 
 ## <a name="related-topics"></a>İlgili konular
 
 - [Web korumasına genel bakış](web-protection-overview.md)
 - [Web tehdit koruması](web-threat-protection.md)
-- [Web güvenliğini izleme](web-protection-monitoring.md)
-- [Web tehditlerine yanıt verme](web-protection-response.md)
+- [Web güvenliğini izleyin](web-protection-monitoring.md)
+- [Web tehditlerine yanıt verin](web-protection-response.md)
 - [Ağ koruması](network-protection.md)

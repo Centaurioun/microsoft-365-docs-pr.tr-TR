@@ -21,18 +21,18 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: Microsoft 365 İş Standart’ı bir perakende mağazasından satın aldıysanız ürün anahtarını nasıl kullanacağınızı ve aboneliğinizi nasıl etkinleştireceğinizi öğrenin.
-ms.date: 11/13/2020
-ms.openlocfilehash: 880a339549a6bde1987aec9200f17476ca518497
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+description: Perakende satış mağazasından Microsoft 365 İş Standart satın aldıysanız ürün anahtarını kullanmayı ve aboneliğinizi etkinleştirmeyi öğrenin.
+ms.date: 08/18/2022
+ms.openlocfilehash: 57208bc75a70f423e69065ae72eda6816145601b
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112437"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384736"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 İş Standart için ürün anahtarınızı girin
 
-Bir perakende mağazasından Microsoft 365 İş Standart’ı satın aldıysanız bu makale aboneliğinizi etkinleştirmenize yardımcı olur.
+Perakende satış mağazasından Microsoft 365 İş Standart satın aldıysanız, bu makale aboneliğinizi etkinleştirmenize yardımcı olur.
   
  **Başka bir şey mi gerekiyor?**
  **Microsoft 365 Aile veya Microsoft 365 Bireysel ile ilgili yardım** için bkz. [Office ile ürün anahtarlarını kullanma](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).  
@@ -57,7 +57,7 @@ Bir perakende mağazasından Microsoft 365 İş Standart’ı satın aldıysanı
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Sona erme tarihini uzatma veya mevcut bir aboneliğe lisans ekleme
 
-Sona erme tarihini uzatmak veya mevcut Microsoft 365 İş Standart’ı aboneliğinize bir lisans eklemek için aynı Microsoft 365 planı için yeni ve kullanılmamış bir anahtar kullanın. İlk Microsoft 365 ürün anahtarınızı girmek işe yaramaz, çünkü bir kez kullanılmış bir anahtar yeniden kullanılamaz. Bkz. [Bir ürün anahtarı kullanılarak ödenen bir aboneliğe lisans ekleme veya aboneliği uzatma](licenses/add-licenses-using-product-key.md).
+Son kullanma tarihini uzatmak veya mevcut Microsoft 365 İş Standart aboneliğinize lisans eklemek için aynı Microsoft 365 planı için yeni ve kullanılmayan bir ürün anahtarı kullanın. İlk Microsoft 365 ürün anahtarınızı girmek işe yaramaz, çünkü bir kez kullanılmış bir anahtar yeniden kullanılamaz. Daha fazla bilgi için bkz. [Microsoft 365 ürün anahtarı kullanarak ön ödemeli aboneliğinizin sona erme tarihini uzatma](subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key) veya [Microsoft 365 ürün anahtarı kullanarak ön ödemeli aboneliğe lisans ekleme](licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

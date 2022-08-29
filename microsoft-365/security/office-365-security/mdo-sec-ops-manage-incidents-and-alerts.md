@@ -18,12 +18,12 @@ ms.custom: ''
 description: SecOps personeli, Office 365 için Microsoft Defender'daki olayları yönetmek için Microsoft 365 Defender'daki Olaylar kuyruğunun nasıl kullanılacağını öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8467d77bd3bdd99af0a33f7fc373e61f7e3efb51
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: ef744ec88f8ee81d33e537b5ffc9d128c724f84f
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "66861685"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383842"
 ---
 # <a name="manage-incidents-and-alerts-from-microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft 365 Defender'da Office 365 için Microsoft Defender olayları ve uyarıları yönetme
 
@@ -120,7 +120,7 @@ Güvenlik ekipleri, Office 365 için Defender araçlarını kullanarak e-posta �
 
 - [Tehdit Gezgini'ni](threat-explorer.md) veya [yönetici gönderimlerini](admin-submission.md) kullanarak hatalı pozitif veya hatalı negatif algılamaları doğrudan Microsoft'a bildirebilirsiniz.
 
-- Algılanmayan kötü amaçlı dosyaları, URL'leri veya gönderenleri [Kiracı İzin Ver/Engelle Listesi'ni kullanarak engelleyebilirsiniz](tenant-allow-block-list.md).
+- Algılanmayan kötü amaçlı dosyaları, URL'leri veya gönderenleri [Kiracı İzin Ver/Engelle Listesi'ni kullanarak engelleyebilirsiniz](manage-tenant-allow-block-list.md).
 
 Office 365 için Defender eylemler avcılık deneyimleriyle sorunsuz bir şekilde tümleştirilir ve eylemlerin geçmişi, konumundaki <https://security.microsoft.com/action-center/history>birleşik **İşlem merkezindeki** **Geçmiş** sekmesinde görünür.
 

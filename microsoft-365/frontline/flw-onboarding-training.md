@@ -21,12 +21,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 2bcffb08fa45d486a091f02c7bd1813c3dad5b57
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: ea44b6f9bddea605cf20254124c634d9a4b8fe3b
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824684"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384317"
 ---
 # <a name="provide-initial-and-ongoing-training-to-help-onboard-your-frontline-workers"></a>Ön cephe çalışanlarınızı eklemeye yardımcı olmak için ilk ve sürekli eğitim sağlayın
 
@@ -81,6 +81,8 @@ Viva Paketi veya Viva Öğrenme lisansınız varsa ve kuruluşunuz bir lisansa a
 Ön cephe ekibinizin Viva Öğrenme'da hangi eğitimin kullanılıp kullanılamadığından ve onlar için gerekli olduğunu bildiğinden emin olun.
 
 Yöneticiler, gerekli eğitimlerin tamamlandığından emin olmak için öğrenme [içeriklerini ekiplerine önerebilir](https://support.microsoft.com/office/recommend-and-manage-content-in-viva-learning-77f9dcbf-41a8-4b19-b4d1-b99c406f37b8) .
+
+![Viva Öğrenme kartlı Viva Bağlantılar Panosunun ekran görüntüsü.](media/viva-learning-card-mobile.png) 
 
 Kurumsal iletişim uzmanları[, yeni](/viva/connections/viva-connections-overview) öğrenme fırsatlarını veya gerekli eğitimleri vurgulayan bir SharePoint haber gönderisini dağıtmak için Viva Bağlantılar kullanabilir.
 

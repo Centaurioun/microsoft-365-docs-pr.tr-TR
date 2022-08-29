@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: İtalya katma değer vergi numarasına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: d370ef3c46cf773791b3b0d599d546ea695a6e97
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9e45fda7fe698e4059ec1f3af79ef7625f8f81a8
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948729"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369925"
 ---
 # <a name="italy-value-added-tax-number"></a>İtalya katma değer vergi numarası
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -49,20 +41,20 @@ Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
 - isteğe bağlı boşluk, nokta, kısa çizgi veya virgül
 - 11 basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_italy_value_added_tax_number` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_italy_value_added_tax_number` bir anahtar sözcük bulunur.
+- İşlev `Func_italy_value_added_tax_number`, desenle eşleşen içeriği bulur.
+- `Keywords_italy_value_added_tax_number` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_italy_value_added_tax_number` , desenle eşleşen içeriği bulur.
+- İşlev `Func_italy_value_added_tax_number`, desenle eşleşen içeriği bulur.
 
 ```xml
       <!-- Italy Value Added Tax -->

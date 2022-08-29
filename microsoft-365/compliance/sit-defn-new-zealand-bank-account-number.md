@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Yeni Zelanda banka hesap numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: b33eeb1e83f5efc9dd805c9ea036c6f30de600a0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 3e682641abeee0c6e48fa1df70c767f029d0af4c
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948482"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369723"
 ---
 # <a name="new-zealand-bank-account-number"></a>Yeni Zelanda banka hesap numarası
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -53,20 +45,20 @@ Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
 - iki ile üç basamak
 - seçenekler kısa çizgi veya boşluk
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_new_zealand_bank_account_number` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_new_zealand_bank_account_number` bir anahtar sözcük bulunur.
+- İşlev `Func_new_zealand_bank_account_number`, desenle eşleşen içeriği bulur.
+- `Keywords_new_zealand_bank_account_number` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_new_zealand_bank_account_number` , desenle eşleşen içeriği bulur.
+- İşlev `Func_new_zealand_bank_account_number`, desenle eşleşen içeriği bulur.
 
 ```xml
       <!-- New Zealand Bank Account Number -->

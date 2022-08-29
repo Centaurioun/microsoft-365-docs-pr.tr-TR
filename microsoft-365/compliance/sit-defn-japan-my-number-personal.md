@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Japonya My Number - Kişisel hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 4c5899c985813fd930672da6c0bd32196eaa279f
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 343bc26e3310c4c8586a50b635ef3d5b2398967c
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948873"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369845"
 ---
 # <a name="japan-my-number---personal"></a>Japonya Numaram - Kişisel
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -50,20 +42,20 @@ Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
 - isteğe bağlı boşluk, nokta veya kısa çizgi
 - dört basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_japanese_my_number_personal` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_japanese_my_number_personal` bir anahtar sözcük bulunur.
+- İşlev `Func_japanese_my_number_personal`, desenle eşleşen içeriği bulur.
+- `Keywords_japanese_my_number_personal` içinden bir anahtar sözcük bulundu.
 
 DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının güvenilirliği düşüktür:
 
-- İşlev `Func_japanese_my_number_personal` , desenle eşleşen içeriği bulur.
+- İşlev `Func_japanese_my_number_personal`, desenle eşleşen içeriği bulur.
 
 ```xml
       <!-- Japanese My Number – Personal -->

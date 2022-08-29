@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: SharePoint ve OneDrive'da etiketlenmiş ve şifrelenmiş belgeler için masaüstü uygulamalarında birlikte yazma ve Otomatik Kaydetme'yi etkinleştiren bir ayarı açın.
-ms.openlocfilehash: 80fbc8b598f07efec761e9222612345601f1994e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: bc405ee52ba469b342c143ba720e0dc027a0addd
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944229"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408385"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Duyarlılık etiketleriyle şifrelenmiş dosyalar için birlikte yazmayı etkinleştirme
 
@@ -76,8 +76,8 @@ Bu özelliği açmadan önce aşağıdaki önkoşulları anladığınızdan emin
 - Kurumlar için Microsoft 365 Uygulamaları:
     - **Windows**: Geçerli Kanal veya Aylık Kurumsal Kanal'dan en düşük sürüm 2107 veya Semi-Annual Enterprise Channel'dan en düşük sürüm 2202
     - **macOS**: En düşük sürüm 16.51
-    - **iOS**: En düşük sürüm 2.58'i [kabul ettiğinizde önizlemede](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)
-    - **Android**: En düşük sürüm 16.0.14931'i [kabul](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) ettiğinizde önizlemede
+    - **iOS**: En düşük sürüm 2.58
+    - **Android**: En düşük sürüm 16.0.14931
 
 - Kiracınızdaki tüm uygulamalar, hizmetler ve işletimsel araçlar yeni [etiketleme meta verilerini](#metadata-changes-for-sensitivity-labels) desteklemelidir. Aşağıdakilerden birini kullanıyorsanız gereken en düşük sürümleri denetleyin:
     
@@ -103,12 +103,6 @@ Bu özelliği açtığınızda Microsoft 365 hizmetleri yeni etiketleme meta ver
 - [Duyarlılık etiketlerini koşul olarak kullanan DLP ilkeleri](dlp-sensitivity-label-as-condition.md)
 - [duyarlılık etiketlerini uygulamak için yapılandırılmış Microsoft Defender for Cloud Apps](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
-### <a name="opt-in-to-the-preview-of-co-authoring-for-ios-and-android"></a>iOS ve Android için birlikte yazma önizlemesine katılma
-
-iOS ve Android için birlikte yazma önizlemesini denemek için, önceki bölümde belirtilen en düşük sürümlere sahip olmanız ve ayrıca kiracınızın önizlemeye eklenmesini istemeniz gerekir: [Mobil cihazlarda duyarlılık etiketleriyle şifrelenmiş dosyalar için birlikte yazmayı etkinleştirme onayı](https://ncv.microsoft.com/5Oob3oDj1O)
-
-Daha fazla bilgi için şu blog gönderisi duyurusunu inceleyin: [Şifrelenmiş Microsoft Bilgi Koruması belgelerde birlikte yazma özelliği artık mobil cihazlarda genel önizleme aşamasındadır](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/3081369)
-
 ## <a name="limitations"></a>Sınırlamalar
 
 Duyarlılık etiketleriyle şifrelenmiş dosyalar için birlikte yazma için kiracı ayarını etkinleştirmeden önce, bu özelliğin aşağıdaki sınırlamalarını anladığınızdan emin olun.
@@ -116,8 +110,6 @@ Duyarlılık etiketleriyle şifrelenmiş dosyalar için birlikte yazma için kir
 - [Etiketleme meta verileri değişiklikleri](#metadata-changes-for-sensitivity-labels) nedeniyle kiracınızdaki tüm uygulamalar, hizmetler ve işletimsel araçlar tutarlı ve güvenilir bir etiketleme deneyimi için yeni etiketleme meta verilerini desteklemelidir.
     
     Excel'e özgü: Birisi duyarlılık etiketleri için meta veri değişikliklerini desteklemeyen bir Excel sürümünü kullanarak dosyayı düzenler ve kaydederse, şifreleme uygulanmayan bir duyarlılık etiketine ait meta veriler dosyadan silinebilir.
-
-- iOS ve Android için Office uygulamalarının desteklenmesi şu anda [önizleme](https://office.com/insider) aşamasındadır.
 
 - Birlikte yazma ve Otomatik Kaydetme desteklenmez ve [şifreleme için aşağıdaki yapılandırmalardan](encryption-sensitivity-labels.md#configure-encryption-settings) herhangi birini kullanan etiketli ve şifrelenmiş Office belgeleri için çalışmaz:
     - Word, PowerPoint ve Excel'de kullanıcıların etiketi ve onay kutusunu **uyguladığında izin atamasına izin verin****, kullanıcılardan izinleri belirtmelerini iste** seçeneğini belirleyin. Bu yapılandırma bazen "kullanıcı tanımlı izinler" olarak adlandırılır.
@@ -134,8 +126,6 @@ Duyarlılık etiketleriyle şifrelenmiş dosyalar için birlikte yazma için kir
 
 > [!CAUTION]
 > Bu ayarı açmak tek yönlü bir işlemdir. Yalnızca meta veri değişikliklerini, önkoşulları, sınırlamaları ve bu sayfada belgelenen bilinen sorunları okuduktan ve anladıktan sonra etkinleştirin.
-
-Önizleme döneminde bu ayarı zaten açtıysanız başka bir eylem gerekmez ve bu yordamı atlayabilirsiniz.
 
 1. [kiracınız için genel](https://compliance.microsoft.com) yönetici olarak Microsoft Purview uyumluluk portalı oturum açın.
 

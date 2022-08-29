@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için standart kiracı yapılandırmalarını dağıtmak için temelleri kullanma hakkında bilgi edinin.
-ms.openlocfilehash: 9261be531db428c3d081e87c6717dfc8710a5026
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 40d146491b45203b9a643b81fa3677bb9ff53a0c
+ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056646"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420012"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Standart kiracı yapılandırmalarını dağıtmak için Microsoft 365 Lighthouse temellerini kullanmaya genel bakış 
 
@@ -47,8 +47,9 @@ Lighthouse temel yapılandırmaları, tüm yönetilen kiracıların güvenli ve 
 | İş için Microsoft Defender ayarlama | kiracıyı İş için Microsoft Defender için sağlar ve Microsoft Endpoint Manager'a kayıtlı cihazları İş için Microsoft Defender ekler. Daha fazla bilgi için bkz. [İş için Microsoft Defender nedir?](../security/defender-business/mdb-overview.md) |
 | Exchange Online Protection ve Office 365 için Microsoft Defender ayarlama | Önerilen istenmeyen posta önleme, kötü amaçlı yazılımdan koruma, kimlik avı önleme, güvenli bağlantılar ve güvenli ek ilkelerini kiracılarınıza Exchange Online posta kutularına uygulama ilkesi. |
 | microsoft defender virüsten korumayı Windows 10 ve üzeri için yapılandırma | Önceden yapılandırılmış Microsoft Defender Virüsten Koruma ayarlarına sahip Windows cihazları için bir cihaz yapılandırma profili. Bu temel hakkında daha fazla bilgi için bkz[. Intune'da Uç Nokta için Microsoft Defender yapılandırma](/mem/intune/protect/advanced-threat-protection-configure).|
-| Windows 10 ve üzeri için Microsoft Defender Güvenlik Duvarı yapılandırma | İstenmeyen ve yetkisiz ağ trafiğini engelleyerek cihazların güvenliğini sağlamaya yardımcı olan bir güvenlik duvarı ilkesi. Bu temel hakkında daha fazla bilgi için bkz. [Windows Defender Güvenlik Duvarı yapılandırmaya yönelik en iyi yöntemler](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
+| Windows 10 ve üzeri için Microsoft Defender Güvenlik Duvarı'nı yapılandırma | İstenmeyen ve yetkisiz ağ trafiğini engelleyerek cihazların güvenliğini sağlamaya yardımcı olan bir güvenlik duvarı ilkesi. Bu temel hakkında daha fazla bilgi için bkz. [Windows Defender Güvenlik Duvarı'nı yapılandırmaya yönelik en iyi yöntemler](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
 | Windows 10 ve üzeri için cihaz uyumluluk ilkesi yapılandırma | Temel uyumluluk gereksinimlerini karşılamak için önceden yapılandırılmış ayarlara sahip bir Windows cihaz ilkesi. Bu temel hakkında daha fazla bilgi için bkz[. Koşullu Erişim: Uyumlu veya karma Azure AD birleştirilmiş cihaz gerektirme](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
+| Microsoft Edge’i yapılandırma  | Kimlik avı dolandırıcılığına ve kötü amaçlı yazılımlara karşı korunmak için önceden yapılandırılmış ayarlara sahip Windows 10 veya üzeri için bir Microsoft Edge tarayıcı ilkesi. Bu ilke, Microsoft Edge'in parolaları güvenli bir şekilde kaydedip izlemesine ve gerektiğinde güçlü parolalar önermesine de olanak tanır. |
 
 ## <a name="deployment-plans"></a>Dağıtım Planları
 

@@ -21,12 +21,12 @@ ms.custom:
 description: Bu konu, Microsoft 365 ortamınızın güvenliğini etkileyen kiracı genelindeki ayarlar için önerilen yapılandırmada size yol gösterir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3b4d0580a8807dd9801b082a8326e4a17b65f5f
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 2a48d3c935a5c4afb1006c31c586744fd6964b94
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773147"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385583"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Daha fazla güvenlik için Microsoft 365 kiracınızı yapılandırma
 
@@ -49,7 +49,7 @@ Microsoft 365 Defender portalı, ortamınızı koruyan özellikler içerir. Ayr�
 
 |Alan|Varsayılan ilke?|Öneri|
 |---|---|---|
-|**Kimlik avına karşı koruma**|Evet|Burada açıklandığı gibi varsayılan kimlik avı önleme ilkesini yapılandırın: [EOP ve Office 365 için Defender kimlik avı koruması ayarlarını yapılandırın](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> Daha fazla bilgi: <ul><li>[Microsoft 365'te kimlik avı önleme ilkeleri](set-up-anti-phishing-policies.md)</li><li>[Office 365 için Microsoft Defender'de önerilen kimlik avı önleme ilkesi ayarları](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Kimliğe bürünme içgörüleri](impersonation-insight.md)</li><li>[EOP'de sahte zeka içgörüleri](learn-about-spoof-intelligence.md)</li><li>[Kiracı İzin Ver/Engelle Listesini yönet](tenant-allow-block-list.md).</li></ul>|
+|**Kimlik avına karşı koruma**|Evet|Burada açıklandığı gibi varsayılan kimlik avı önleme ilkesini yapılandırın: [EOP ve Office 365 için Defender kimlik avı koruması ayarlarını yapılandırın](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> Daha fazla bilgi: <ul><li>[Microsoft 365'te kimlik avı önleme ilkeleri](set-up-anti-phishing-policies.md)</li><li>[Office 365 için Microsoft Defender'de önerilen kimlik avı önleme ilkesi ayarları](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Kimliğe bürünme içgörüleri](impersonation-insight.md)</li><li>[EOP'de sahte zeka içgörüleri](learn-about-spoof-intelligence.md)</li><li>[Kiracı İzin Ver/Engelle Listesini yönet](manage-tenant-allow-block-list.md).</li></ul>|
 |**Kötü Amaçlı Yazılımdan Koruma Altyapısı**|Evet|Burada açıklandığı gibi varsayılan kötü amaçlı yazılımdan koruma ilkesini yapılandırın: [EOP'de kötü amaçlı yazılımdan koruma ayarlarını yapılandırın](protect-against-threats.md#part-1---anti-malware-protection-in-eop). <p> Daha fazla bilgi: <ul><li>[Kötü amaçlı yazılımdan koruma](anti-malware-protection.md)</li><li>[Önerilen kötü amaçlı yazılımdan koruma ilkesi ayarları](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)</li><li>[Kötü amaçlı yazılımdan koruma ilkelerini yapılandırma](configure-anti-malware-policies.md)</li></ul>|
 |**Office 365 için Defender'da Güvenli Ekler**|Hayır|Güvenli Ekler için genel ayarları yapılandırın ve burada açıklandığı gibi güvenli ekler ilkesi oluşturun: [Office 365 için Microsoft Defender'de Güvenli Ekler ayarlarını yapılandırma](protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365). <p> Daha fazla bilgi: <ul><li>[Önerilen Güvenli Ekler ayarları](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)</li><li>[Office 365 için Microsoft Defender'da Güvenli Ekler](safe-attachments.md)</li><li>[Güvenli Ekler ilkelerini ayarlama](set-up-safe-attachments-policies.md)</li><li>[SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler](mdo-for-spo-odb-and-teams.md)</li><li>[Microsoft 365 E5 aboneliğinde Güvenli Belgeler](safe-docs.md)</li></ul>|
 |**Office 365 için Microsoft Defender'da Güvenli Bağlantılar**|Hayır|Burada açıklandığı gibi bir Güvenli Bağlantılar ilkesi oluşturun: [Office 365 için Microsoft Defender'da Güvenli Bağlantılar ayarlarını yapılandırın](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365). <p> Daha fazla bilgi: <ul><li>[Önerilen Güvenli Bağlantılar ayarları](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md)</li><li>[Office 365 için Microsoft Defender'da Güvenli Bağlantılar](safe-links.md)</li></ul>|

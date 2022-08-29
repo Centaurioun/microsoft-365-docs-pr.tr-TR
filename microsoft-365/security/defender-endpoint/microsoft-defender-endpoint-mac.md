@@ -17,28 +17,28 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d6438c7af3d3dbb8f4b2c19fdfdd04640cc8b4d2
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 97f7477c1216bfa25e25f6fc3086cf62a8b4b5a3
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174960"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384106"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac'te Uç Nokta için Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Şunlar için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Bu konuda Mac'te Uç Nokta için Defender'ı yükleme, yapılandırma, güncelleştirme ve kullanma işlemleri açıklanmaktadır.
 
 > [!CAUTION]
-> Mac'te Uç Nokta için Microsoft Defender birlikte diğer üçüncü taraf uç nokta koruma ürünlerini çalıştırmak, performans sorunlarına ve öngörülemeyen yan etkilere yol açabilir. Ortamınızda Microsoft dışı uç nokta koruması mutlak bir gereksinimse, virüsten koruma işlevini [Pasif modda](mac-preferences.md#enforcement-level-for-antivirus-engine) çalışacak şekilde yapılandırdıktan sonra Mac'te Uç Nokta için Defender EDR işlevselliğinden güvenle yararlanabilirsiniz.
+> Mac'te Uç Nokta için Microsoft Defender birlikte diğer üçüncü taraf uç nokta koruma ürünlerini çalıştırmak, performans sorunlarına ve öngörülemeyen yan etkilere yol açabilir. Ortamınızda Microsoft dışı uç nokta koruması mutlak bir gereksinimse, virüsten koruma işlevini [Pasif modda](mac-preferences.md#enforcement-level-for-antivirus-engine) çalışacak şekilde yapılandırdıktan sonra Mac EDR'de Uç Nokta için Defender işlevinden güvenle yararlanabilirsiniz.
 
 ## <a name="whats-new-in-the-latest-release"></a>En son sürümdeki yenilikler
 
@@ -49,7 +49,7 @@ Bu konuda Mac'te Uç Nokta için Defender'ı yükleme, yapılandırma, güncelle
 > [!TIP]
 > Paylaşmak istediğiniz herhangi bir geri bildiriminiz varsa, cihazınızda Mac'te Uç Nokta için Microsoft Defender açarak ve Geri bildirim **Göndermeye Yardımcı Olun** \> bölümüne giderek bu **geri bildirimi** gönderin.
 
-Önizleme özellikleri (Mac cihazlarınız için uç noktada algılama ve yanıtlama gibi) dahil olmak üzere en son özellikleri almak için Uç Nokta için Microsoft Defender çalıştıran macOS cihazınızı "Insider" cihazı olacak şekilde yapılandırın.
+Önizleme özellikleri (Mac cihazlarınız için uç nokta algılama ve yanıt gibi) dahil olmak üzere en son özellikleri almak için, Uç Nokta için Microsoft Defender çalıştıran macOS cihazınızı bir "Insider" cihazı olacak şekilde yapılandırın.
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Mac'e Uç Nokta için Microsoft Defender yükleme
 
@@ -101,11 +101,11 @@ Mac'te Uç Nokta için Microsoft Defender aşağıdaki Microsoft Toplu Lisanslam
 
 > [!NOTE]
 > Uygun lisanslı kullanıcılar en fazla beş eşzamanlı cihazda Uç Nokta için Microsoft Defender kullanabilir.
-> Uç Nokta için Microsoft Defender ayrıca bir Bulut Çözümü Sağlayıcısı (CSP) satın alınabilir. CSP aracılığıyla satın aldığınızda, listelenen Microsoft Toplu Lisanslama tekliflerini gerektirmez.
+> Uç Nokta için Microsoft Defender, bulut çözümü sağlayıcısından (CSP) satın alınabilir. CSP aracılığıyla satın aldığınızda, listelenen Microsoft Toplu Lisanslama tekliflerini gerektirmez.
 
 ### <a name="configuring-exclusions"></a>Dışlamaları Yapılandırma
 
-Dışlama eklerken, [Microsoft Defender Virüsten Koruma için yaygın dışlama hatalarına](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) dikkat edin.
+Dışlama eklerken [, Microsoft Defender Virüsten Koruma için yaygın dışlama hatalarına dikkat edin](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
 
 ### <a name="network-connections"></a>Ağ bağlantıları
 
@@ -169,3 +169,4 @@ macOS 11 'den (Big Sur) başlayarak, Uç Nokta için Microsoft Defender çekirde
 
 - Günlüğe kaydetme, kaldırma veya diğer konular hakkında daha fazla bilgi için bkz. [Mac'te Uç Nokta için Microsoft Defender kaynakları](mac-resources.md).
 - [Mac'te Uç Nokta için Microsoft Defender için gizlilik](mac-privacy.md).
+- [macOS için ağ korumasını açma](network-protection-macos.md)

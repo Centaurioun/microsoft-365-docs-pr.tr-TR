@@ -12,12 +12,12 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Moodle için Microsoft OneDrive Öğrenme Araçları Birlikte Çalışabilirliği ile Teams sınıflarını ve toplantılarını oluşturun ve yönetin.
-ms.openlocfilehash: da65874516dcf196ac91ecea1acc75e3cb719f58
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: e570b35f80203268a947a22ec8bdbc023a90854b
+ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66861907"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420034"
 ---
 # <a name="integrate-microsoft-teams-classes-and-meetings-within-moodle"></a>Microsoft Teams sınıflarını ve toplantılarını Moodle ile tümleştirme
 
@@ -33,8 +33,7 @@ Moodle ile Teams arasındaki tümleştirmenin düzgün çalışması için Moodl
 
 ## <a name="register-microsoft-teams-lti-for-use-in-moodle"></a>Microsoft Teams LTI'ı Moodle'da kullanmak üzere kaydetme
 
-> [!IMPORTANT]
-> Bu tümleştirmeyi gerçekleştiren kişi moodle yöneticisi ve Microsoft 365 kiracı yöneticisi olmalıdır.
+Bu tümleştirmeyi gerçekleştiren kişi moodle yöneticisi ve Microsoft 365 kiracı yöneticisi olmalıdır.
 
 1. [Microsoft LMS Ağ Geçidi'ni](https://lti.microsoft.com/) ziyaret edin ve **Kayıt portalına git** düğmesini seçin.
 
@@ -69,18 +68,21 @@ Moodle ile Teams arasındaki tümleştirmenin düzgün çalışması için Moodl
 
 15. Moodle's **Tool yapılandırma ayrıntılarındaki** değerleri kopyalayıp Microsoft'un **LMS tarafından sağlanan kayıt anahtarları** adımına yapıştırın.
 
-  Değerleri aşağıdaki gibi yapıştırın:
+    Değerleri aşağıdaki gibi yapıştırın:
 
-  | Moodle'da | Microsoft LTI kayıt portalında |
-  | --------- | ------------------------------------ |
-  | Platform Kimliği | Veren Kimliği URL'si |
-  | İstemci Kimliği | İstemci Kimliği |
-  | Dağıtım Kimliği | Dağıtım Kimliği |
-  | Ortak anahtar kümesi URL'si | Anahtar Kümesi URL'si |
-  | Erişim belirteci URL'si | Erişim belirteci URL'si |
-  | Kimlik doğrulama isteği URL'si | Platform kimlik doğrulaması URL'si |
+    | Moodle'da | Microsoft LTI kayıt portalında |
+    | --------- | ------------------------------------ |
+    | Platform Kimliği | Veren Kimliği URL'si |
+    | İstemci Kimliği | İstemci Kimliği |
+    | Dağıtım Kimliği | Dağıtım Kimliği |
+    | Ortak anahtar kümesi URL'si | Anahtar Kümesi URL'si |
+    | Erişim belirteci URL'si | Erişim belirteci URL'si |
+    | Kimlik doğrulama isteği URL'si | Platform kimlik doğrulaması URL'si |
 
-  **İleri**'yi seçin.
+    >[!NOTE]
+    > Ortak anahtar kümesi URL'sinin, Microsoft LMS Ağ Geçidi'nden kaynaklanan istekler için ağ ayarlarınız tarafından kısıtlanmadığından emin olun.
+
+    **İleri**'yi seçin.
 
 16. **Gözden geçir ve ekle** sayfasını gözden geçirin. Hata yoksa **Kaydet ve çık'ı** seçin. Kaydın başarılı olduğunu belirten bir ileti görmeniz gerekir.
 

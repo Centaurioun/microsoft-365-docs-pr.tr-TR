@@ -1,6 +1,6 @@
 ---
-title: Uç nokta canlı yanıt sorunları için Microsoft Defender'da sorun giderme
-description: Uç nokta için Microsoft Defender'da canlı yanıt kullanırken ortaya çıkabilecek sorunları giderme
+title: Uç Nokta için Microsoft Defender canlı yanıt sorunlarını giderme
+description: Uç Nokta için Microsoft Defender'de canlı yanıt kullanırken ortaya çıkabilecek sorunları giderme
 keywords: canlı yanıt, canlı, yanıt, kilitli, dosya sorunlarını giderme
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,31 +14,31 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4a3bab27a4e2efd6b196167754303f35d5553de6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c6a2f676839caefc34b9dff03f860d04a260de0c
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62998152"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384948"
 ---
-# <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Uç nokta canlı yanıt sorunları için Microsoft Defender'da sorun giderme
+# <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Uç Nokta için Microsoft Defender canlı yanıt sorunlarını giderme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-Bu sayfada, canlı yanıt sorunlarını gidermek için ayrıntılı adımlar yer sağlar.
+Bu sayfada canlı yanıt sorunlarını gidermek için ayrıntılı adımlar sağlanır.
 
 ## <a name="file-cannot-be-accessed-during-live-response-sessions"></a>Canlı yanıt oturumları sırasında dosyaya erişilemiyor
 
-Canlı yanıt oturumu sırasında bir eylem yapmaya çalışırken dosyaya erişile olmadığını belirten bir hata iletisiyle karşılaşırsanız, sorunu gidermek için aşağıdaki adımları kullanın.
+Canlı yanıt oturumu sırasında bir eylem gerçekleştirmeye çalışırken dosyaya erişilemediğini belirten bir hata iletisiyle karşılaşırsanız, sorunu çözmek için aşağıdaki adımları kullanmanız gerekir.
 
-1. Aşağıdaki komut dosyası kod parçacığını kopyalayın ve PS1 dosyası olarak kaydedin:
+1. Aşağıdaki betik kodu parçacığını kopyalayın ve PS1 dosyası olarak kaydedin:
 
     ```powershell
     $copied_file_path=$args[0]
@@ -56,19 +56,20 @@ Canlı yanıt oturumu sırasında bir eylem yapmaya çalışırken dosyaya eriş
     ```
 
 2. Betiği canlı yanıt kitaplığına ekleyin.
-3. Betiği tek bir parametreyle çalıştırın: kopyalanan dosyanın dosya yolu.
+3. Betiği tek bir parametreyle çalıştırın: kopyalanacak dosyanın dosya yolu.
 4. TEMP klasörünüze gidin.
 5. Kopyalanan dosyada yapmak istediğiniz eylemi çalıştırın.
 
-## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>Yavaş canlı yanıt oturumları veya ilk bağlantılar sırasında gecikmeler
+## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>yavaş canlı yanıt oturumları veya ilk bağlantılar sırasındaki gecikmeler
 
-Canlı yanıt, Windows'de WNS hizmetiyle Uç nokta algılayıcısı kaydı için Defender'dan Windows. Canlı yanıtla ilgili bağlantı sorunlarınız varsa, aşağıdaki ayrıntıları onaylayın:
+Canlı yanıt, Windows'da WNS hizmetiyle Uç Nokta için Defender algılayıcı kaydı hizmetinden yararlanıyor. Canlı yanıtla ilgili bağlantı sorunlarınız varsa aşağıdaki ayrıntıları onaylayın:
 
-1. `notify.windows.com` ortamınız içinde engellenmiş değil. Daha fazla bilgi için bkz. [Cihaz ara sunucusunu ve İnternet bağlantı ayarlarını yapılandırma](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
-2. WpnService (Windows Push Notifications System Service) devre dışı bırakılamaz.
+1. `notify.windows.com` ortamınızda engellenmez. Daha fazla bilgi için bkz. [Cihaz ara sunucusu ve İnternet bağlantı ayarlarını yapılandırma](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
+2. WpnService (Windows Anında İletme Bildirimleri Sistem Hizmeti) devre dışı bırakılmamış.
+3. WNS bulutuyla WpnService bağlantısı, grup ilkesi veya MDM ayarı aracılığıyla devre dışı bırakılmaz. ['Bildirimlerin ağ kullanımını kapat'](/windows/client-management/mdm/policy-csp-notifications) ayarı '1' olarak ayarlanmamalıdır.
 
-WpnService hizmet davranışını ve gereksinimlerini tam olarak anlamak için aşağıdaki makalelere bakın:
+WpnService hizmetinin davranışını ve gereksinimlerini tam olarak anlamak için aşağıdaki makalelere bakın:
 
-- [Windows Bildirim Hizmetleri'ne (WNS) genel bakış](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [Enterprise WNS Trafiğini Desteklemek için Güvenlik Duvarı ve Ara Sunucu Yapılandırmalarını Yapılandırma](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
-- [Microsoft Anında Bildirimler Hizmeti (MPNS) Genel IP aralıkları](https://www.microsoft.com/download/details.aspx?id=44535)
+- [Windows Anında İletme Bildirimi Hizmetleri'ne (WNS) genel bakış](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [WNS Trafiğini Desteklemek için Kurumsal Güvenlik Duvarı ve Ara Sunucu Yapılandırmaları](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Microsoft Anında İletme Bildirimleri Hizmeti (MPNS) Genel IP aralıkları](https://www.microsoft.com/download/details.aspx?id=44535)

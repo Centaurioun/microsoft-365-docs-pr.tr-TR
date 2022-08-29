@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 08/08/2022
+ms.date: 08/15/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: ed20fcfe660bcc56a5756d1be0070f7a9610ee65
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: c3856209c510c67bb9054e9567f78ff8ed978b2b
+ms.sourcegitcommit: 57e6a8e42b41376c4f4021754c918502bf52d209
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280729"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67427256"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama
 
@@ -91,18 +91,16 @@ Tüm güncelleştirmelerimiz
 - Tümleştirme geliştirmeleri (Bulut, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>Temmuz-2022 (Platform: 4.18.2205.TBD | Motor: 1.1.19500.2)</summary>
+<summary>Temmuz-2022 (Platform: 4.18.2207.5 | Motor: 1.1.19500.2)</summary>
 
-*Bu bölüm, hala etkin geliştirme aşamasında olan yayın öncesi bilgileri içerir. Son güvenlik güncelleştirmesi sürüm numarası da dahil olmak üzere güncelleştirmelerin gerçekleşmesini bekleyin.*
-
-&ensp;Güvenlik bilgileri güncelleştirme sürümü: *çok yakında*<br/>
-&ensp;Sürüm tarihi: **8 Ağustos 2022**<br/>
-&ensp;Platform: *4.18.2205.TBD*<br/>
+&ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.373.219.0**<br/>
+&ensp;Sürüm tarihi: **15 Ağustos 2022**<br/>
+&ensp;Platform: **4.18.2207.5**<br/>
 &ensp;Motor: **1.1.19500.2**<br/>
 &ensp;Destek aşaması: **Güvenlik ve Kritik Güncelleştirmeler**<br/>
 
 Altyapı sürümü: 1.1.19300.2<br/>
-Güvenlik bilgileri güncelleştirme sürümü: *çok yakında*<br/>
+Güvenlik bilgileri güncelleştirme sürümü: 1.373.219.0 <br/>
 
 ### <a name="whats-new"></a>Yenilikler
 
@@ -117,11 +115,17 @@ Güvenlik bilgileri güncelleştirme sürümü: *çok yakında*<br/>
 - Geliştirilmiş güven doğrulaması 
 - Eski işletim platformlarında altyapı kilitlenme sorunu düzeltildi 
 - v3 güncelleştirmelerini Performans Analizi: En üst yol desteği, tarama atlama bilgileri ve OnDemand tarama desteği eklendi. Bkz. [Microsoft Defender Virüsten Koruma için performans çözümleyicisi](tune-performance-defender-antivirus.md). 
+- Dosya kopyalama işlemleri sırasında Defender performans geliştirmeleri
+- [Sorun giderme modu](enable-troubleshooting-mode.md) için iyileştirmeler eklendi  
+- Güncelleştirmeler/yeniden başlatmalar arasında Defender WINEVT kanalları için düzeltme eklendi. (WINEVT hakkında daha fazla ayrıntı için bkz [. Windows Olay Günlüğü](/windows/win32/api/_wes/) .)
+- Başlatma/güncelleştirmeler sırasında [Defender WMI yönetim](use-wmi-microsoft-defender-antivirus.md) hatası için düzeltme eklendi 
+- [Windows Olay Görüntüleyicisi İşletimsel olaylarında](troubleshoot-microsoft-defender-antivirus.md) yinelenen 2010/2011 düzeltmesi eklendi 
+- [Uç Nokta için Defender](microsoft-defender-endpoint.md) yığın işlemleri belirteci sağlamlaştırma desteği eklendi 
 
 
 ### <a name="known-issues"></a>Bilinen Sorunlar
 
-Bilinen sorun yok
+- Platform güncelleştirmesi 4.18.2207.5'i dağıtan müşteriler, uygulamaları etkileyebilecek gecikmeli ağ performansıyla karşılaşabilir.
 
 <br/><br/>
 </details><details>

@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender'te olay API'sini Microsoft 365 Defender
-description: Microsoft 365 Defender'de olay API'lerini Microsoft 365 Defender
-keywords: liste, olay, olay, api
+title: Microsoft 365 Defender'de olay API'sini listeleme
+description: Microsoft 365 Defender'de olaylar API'sini listelemeyi öğrenin
+keywords: list, incident, incidents, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,56 +21,56 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 03fbcb70588158919b54c9153b5d8d32d416cc75
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 1ec15654bc87645c615e022e0622127efb32a608
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63014204"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383952"
 ---
-# <a name="list-incidents-api-in-microsoft-365-defender"></a>Microsoft 365 Defender'te olay API'sini Microsoft 365 Defender
+# <a name="list-incidents-api-in-microsoft-365-defender"></a>Microsoft 365 Defender'de olay API'sini listeleme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
-> Bazı bilgiler, ticari olarak piyasaya sürmeden önce önemli ölçüde değiştirilmiş olabilir, önceden satın alınan ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
+> Bazı bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
 
 ## <a name="api-description"></a>API açıklaması
 
-Liste olayları API'si, bilinçli bir siber güvenlik yanıtı oluşturmak için olayları sıralamanızı sağlar. Ağ bağlantınıza bayrakla işaretlenmiş bir olay koleksiyonunu, ortam bekletme ilkesinde belirttiğiniz zaman aralığında sunar. En son olaylar listenin en üstünde görüntülenir. Her olay, ilgili uyarılar ve bunların ilgili varlıklarını içeren bir dizi içerir.
+Olayları listeleme API'si, bilinçli bir siber güvenlik yanıtı oluşturmak için olayları sıralamanıza olanak tanır. Ortamınızı saklama ilkenizde belirttiğiniz zaman aralığında ağınızda bayrak eklenmiş bir olay koleksiyonunu kullanıma sunar. En son olaylar listenin en üstünde görüntülenir. Her olay bir dizi ilgili uyarı ve bunların ilgili varlıklarını içerir.
 
-API, aşağıdaki **OData işleçlerini** destekler:
+API aşağıdaki **OData** işleçlerini destekler:
 
-- `$filter``lastUpdateTime`üzerinde , `createdTime`, ve `status`özelliklerde `assignedTo`
-- `$top`maksimum değeri **100 olan**
+- `$filter``lastUpdateTime`, `createdTime`, `status`ve `assignedTo` özelliklerinde
+- `$top`, en fazla **100** değerle
 - `$skip`
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. En fazla sayfa boyutu **100 olaydır**.
-2. En fazla, dakikada **50 çağrı ve saatte** **1500 çağrı olabilir**.
+1. Sayfa boyutu üst sınırı **100 olaydır**.
+2. İstek sayısı üst sınırı **dakikada 50 çağrı** ve **saatte 1500 çağrıdır**.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. [Microsoft 365 Defender API'lere erişme](api-access.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Access Microsoft 365 Defender API'leri](api-access.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 ---|---|---
-Uygulama|Olay.Okuma.All|Tüm olayları okuma
+Uygulama|Incident.Read.All|Tüm olayları okuma
 Uygulama|Incident.ReadWrite.All|Tüm olayları okuma ve yazma
-Temsilcili (iş veya okul hesabı)|Olay.Okuma|Olayları okuma
-Temsilcili (iş veya okul hesabı)|Olay.Okuma|Olayları okuma ve yazma
+Temsilci (iş veya okul hesabı)|Incident.Read|Olayları okuma
+Temsilci (iş veya okul hesabı)|Incident.ReadWrite|Olayları okuma ve yazma
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının portalda olayları görüntüleme izni olması gerekir.
-> - Yanıt yalnızca kullanıcının açık olduğu olayları içerir.
+> - Kullanıcının portaldaki olaylar için görüntüleme iznine sahip olması gerekir.
+> - Yanıt yalnızca kullanıcının maruz kaldığı olayları içerir.
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -78,7 +78,7 @@ Temsilcili (iş veya okul hesabı)|Olay.Okuma|Olayları okuma ve yazma
 GET /api/incidents
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 ---|---|---
@@ -86,109 +86,109 @@ Yetkilendirme|Dize|Taşıyıcı {token}. **Gerekli**
 
 ## <a name="request-body"></a>İstek gövdesi
 
-Yok.
+Hiçbiri.
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem yanıt `200 OK`gövdesinde ['i ve olay](api-incident.md) listesini döndürür.
+Başarılı olursa, bu yöntem döndürür ve yanıt gövdesindeki [olayların](api-incident.md) bir listesini döndürür`200 OK`.
 
-## <a name="schema-mapping"></a>Şema eşlemesi
+## <a name="schema-mapping"></a>Şema eşleme
 
 ### <a name="incident-metadata"></a>Olay meta verileri
 
 Alan adı|Açıklama|Örnek değer
 ---|---|---
-olaykimlikkim|Olayı temsil eden benzersiz tanımlayıcı|924565
-redirectIncidentId|Yalnızca bir olayın başka bir olayla birlikte grup olması durumunda, olay işleme mantığının bir parçası olarak doldurulur.|924569
-incidentName|Her olay için kullanılabilir dize değeri.|Fidye yazılımı etkinliği
-createdTime|Olayın ilk oluşturulma zamanı.|2020-09-06T14:46:57.0733333Z
-lastUpdateTime|Olayın en son arka uçta güncelleştiril olduğu zaman. <p> Bu alan, olayları alma aralığı için istek parametresini ayarlarken kullanılabilir.|2020-09-06T14:46:57.29Z
-atanan|Olayın sahibi veya *sahip atanmamışsa null* .|secop2@contoso.com
-sınıflandırma|Olayın belirtimi. Özellik değerleri şöyledir: *Bilinmiyor*, *YanlışPositive*, *DoğruPositive*|Unknown
-karartma|Olayın belirlenmesini belirtir. Özellik değerleri: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other*|NotAvailable
-algılamaKaynağı|Algılama kaynağını belirtir.|Bulut Uygulamaları için Defender
-durum|Olayları kategorilere ayır ( *Etkin* veya Çözümlendi *olarak*). Olaylara yanıtlarınızı düzenlemenize ve yönetmenize yardımcı olabilir.|Etkin
-önem derecesi|Varlıklar üzerindeki olası etkiyi gösterir. Önem derecesi ne kadar yüksek ise etki o kadar büyük olur. Normalde daha yüksek önem düzeyi olan öğeler en acil dikkat gerektirir. <p> Aşağıdaki değerlerden biri: *Bilgilendirme*, *Düşük*, *Orta ve *Yüksek*.|Orta
-etiketler|Bir olayla ilişkilendirilmiş özel etiketler dizisi; örneğin, bir olay grubunu ortak bir özel gruba bayrakla bayrak eklemek için.|\[\]
-açıklamalar|Olayı yönetmekle ilgili özetler tarafından oluşturulan açıklamalar dizisi; örneğin sınıflandırma seçimi hakkında ek bilgiler.|\[\]
-uyarılar|Olayla ilgili tüm uyarıların yanı sıra önem derecesi, uyarıya katılan varlıklar ve uyarıların kaynağı gibi diğer bilgileri içeren dizi.|\[\] (aşağıdaki uyarı alanlarındaki ayrıntılara bakın)
+incidentId|Olayı temsil eden benzersiz tanımlayıcı|924565
+redirectIncidentId|Yalnızca olay işleme mantığının bir parçası olarak bir olayın başka bir olayla birlikte gruplandırılması durumunda doldurulur.|924569
+incidentName|Her olay için kullanılabilen dize değeri.|Fidye yazılımı etkinliği
+createdTime|Olayın ilk oluşturulduğu zaman.|2020-09-06T14:46:57.0733333Z
+lastUpdateTime|Olayın arka uçta en son güncelleştirildiği saat. <p> Bu alan, olayların alınacağı zaman aralığı için istek parametresini ayarlarken kullanılabilir.|2020-09-06T14:46:57.29Z
+Atanan|Olayın sahibi veya sahip atanmamışsa *null* .|secop2@contoso.com
+Sınıflandırma|Olayın belirtimi. Özellik değerleri şunlardır: *Unknown*, *FalsePositive*, *TruePositive*|Unknown
+Belirlenmesi|Olayın belirlenmesini belirtir. Özellik değerleri şunlardır: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *İstenmeyenSoftware*, *Diğer*|Kullanılamaz
+detectionSource|Algılama kaynağını belirtir.|Bulut Uygulamaları için Defender
+Durum|Olayları kategorilere ayırın ( *Etkin* veya *Çözüldü* olarak). Olaylara yanıtınızı düzenlemenize ve yönetmenize yardımcı olabilir.|Etkin
+Önem|Varlıklar üzerindeki olası etkiyi gösterir. Önem derecesi ne kadar yüksek ise etki o kadar büyük olur. Genellikle daha yüksek önem derecesi öğeleri en acil dikkat gerektirir. <p> Aşağıdaki değerlerden biri: *Bilgilendirici*, *Düşük*, *Orta ve *Yüksek*.|Orta
+Etiketler|Bir olayla ilişkili özel etiketler dizisi, örneğin ortak bir özelliğe sahip bir olay grubuna bayrak ekleme.|\[\]
+Yorum|Olayı yönetirken secops tarafından oluşturulan açıklama dizisi, örneğin sınıflandırma seçimi hakkında ek bilgiler.|\[\]
+Uyarı|Olayla ilgili tüm uyarıların yanı sıra önem derecesi, uyarıya katılan varlıklar ve uyarıların kaynağı gibi diğer bilgileri içeren dizi.|\[\] (aşağıdaki uyarı alanlarıyla ilgili ayrıntılara bakın)
 
-### <a name="alerts-metadata"></a>Uyarılar meta verileri
+### <a name="alerts-metadata"></a>Uyarı meta verileri
 
 Alan adı|Açıklama|Örnek değer
 ---|---|---
 alertId|Uyarıyı temsil eden benzersiz tanımlayıcı|caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
-olaykimlikkim|Bu uyarının ilişkilendiril olduğu olayı temsil eden benzersiz tanımlayıcı|924565
-serviceSource|Uyarının kaynaklandığı hizmet (Uç Nokta için Microsoft Defender, Bulut Uygulamaları için Microsoft Defender, Kimlik için Microsoft Defender veya Kimlik için Microsoft Defender gibi) Office 365.|MicrosoftCloudAppSecurity
-creationTime|Uyarının ilk oluşturulma zamanı.|2020-09-06T14:46:55.7182276Z
-lastUpdatedTime|Uyarının en son arka uçta güncelleştirilmiş olduğu saat.|2020-09-06T14:46:57.2433333Z
-resolvedTime|Uyarının çözümlenmezse olduğu zaman.|2020-09-10T05:22:59Z
-firstActivity|Uyarının ilk kez arka uçta etkinliğin güncelleştirilmiş olduğunu bildirmiş olduğu saat.|2020-09-04T05:22:59Z
-başlık|Her uyarı için kullanılabilen kısa tanımlayıcı dize değeri.|Fidye yazılımı etkinliği
-açıklama|Her uyarıyı açıklayan dize değeri.|Kullanıcı Test Kullanıcı2 (testUser2@contoso.com) *herunterladen* seyrek karşılaşılan uzantıyla biten birden çok uzantılı 99 dosya üzerinde değişiklik yaptı. Bu, olağandışı bir dosya işlemesi sayısıdır ve olası bir fidye yazılımı saldırısına işaret ediyor.
-kategori|Kill zinciri boyunca saldırının ne kadar ilerlemiştine görsel ve sayısal bir bakış. [MITRE ATT ve CK&hizalanır™](https://attack.mitre.org/).|Etki
-durum|Uyarıları kategorilere ayır ( *Yeni*, *Etkin veya* Çözümlendi *olarak*). Uyarılar için yanıtlarınızı düzenlemenize ve yönetmenize yardımcı olabilir.|Yeni
-önem derecesi|Varlıklar üzerindeki olası etkiyi gösterir. Önem derecesi ne kadar yüksek ise etki o kadar büyük olur. Normalde daha yüksek önem düzeyi olan öğeler en acil dikkat gerektirir.<br>Aşağıdaki değerlerden biri: *Bilgilendirme*, *Düşük*, *Orta* ve *Yüksek*.|Orta
+incidentId|Bu uyarının ilişkili olduğu olayı temsil eden benzersiz tanımlayıcı|924565
+serviceSource|Uç Nokta için Microsoft Defender, Microsoft Defender for Cloud Apps, Kimlik için Microsoft Defender veya Office 365 için Microsoft Defender.|MicrosoftCloudAppSecurity
+creationTime|Uyarının ilk oluşturulduğu zaman.|2020-09-06T14:46:55.7182276Z
+Lastupdatedtime|Uyarının arka uçta en son güncelleştirildiği saat.|2020-09-06T14:46:57.2433333Z
+resolvedTime|Uyarının çözümlenme zamanı.|2020-09-10T05:22:59Z
+firstActivity|Uyarının arka uçta etkinliğin güncelleştirildiğini ilk bildirdiği zaman.|2020-09-04T05:22:59Z
+Başlık|Her uyarı için kullanılabilen kısa tanımlayıcı dize değeri.|Fidye yazılımı etkinliği
+Açıklama|Her uyarıyı açıklayan dize değeri.|Test Kullanıcısı2 (testUser2@contoso.com) kullanıcısı, yaygın olmayan *herunterladen* uzantısıyla biten birden çok uzantıya sahip 99 dosyayı işledi. Bu, olağan dışı sayıda dosya işlemedir ve olası bir fidye yazılımı saldırısının göstergesidir.
+Kategori|Saldırının sonlandırma zinciri boyunca ne kadar ilerlediğini gösteren görsel ve sayısal görünüm. [MITRE ATT&CK™ çerçevesine](https://attack.mitre.org/) hizalanır.|Etki
+Durum|Uyarıları kategorilere ayırın ( *Yeni*, *Etkin* veya *Çözüldü* olarak). Uyarılara yanıtınızı düzenlemenize ve yönetmenize yardımcı olabilir.|Yeni
+Önem|Varlıklar üzerindeki olası etkiyi gösterir. Önem derecesi ne kadar yüksek ise etki o kadar büyük olur. Genellikle daha yüksek önem derecesi öğeleri en acil dikkat gerektirir.<br>Aşağıdaki değerlerden biri: *Bilgilendirici*, *Düşük*, *Orta* ve *Yüksek*.|Orta
 investigationId|Bu uyarı tarafından tetiklenen otomatik araştırma kimliği.|1234
-investigationState|Araştırmanın geçerli durumu hakkında bilgiler. Aşağıdaki değerlerden *biri: Bilinmiyor**,* Sonlandırıldı, *Başarıyla Gönderildi*, *Atlandı**,* *KısmenRemedi**, Çalışıyor*, *PendingApproval*, *PendingResource*, *PartialLyInvestigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert.*|UnsupportedAlertType
-sınıflandırma|Olayın belirtimi. Özellik değerleri *şöyledir: Bilinmiyor*, *YanlışPositive*, *TruePositive* veya *null*|Unknown
-karartma|Olayın belirlenmesini belirtir. Özellik değerleri: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* veya  *null*|Apt
-atanan|Olayın sahibi veya *sahip atanmamışsa null* .|secop2@contoso.com
-actorName|Varsa, bu uyarıyla ilişkilendirilmiş etkinlik grubu.|BORON
-threatFamilyName|Bu uyarıyla ilişkilendirilmiş tehdit ailesi.|null
-mitreTechniques|[MITRE ATT ve CK framework ile&saldırı teknikleri](https://attack.mitre.org/)™.|\[\]
-cihazlar|Olayla ilgili uyarıların gönderildiği tüm cihazlar.|\[\] (aşağıdaki varlık alanlarına ilişkin ayrıntılara bakın)
+investigationState|Araştırmanın geçerli durumuyla ilgili bilgiler. Aşağıdaki değerlerden biri: *Unknown*, *Terminated*, *SuccessfullyRemediated*, *Benign*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyInvestigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*.|DesteklenmeyenAlertType
+Sınıflandırma|Olayın belirtimi. Özellik değerleri şunlardır: *Unknown*, *FalsePositive*, *TruePositive* veya *null*|Unknown
+Belirlenmesi|Olayın belirlenmesini belirtir. Özellik değerleri şunlardır: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *İstenmeyenSoftware*, *Diğer* veya  *null*|Apt
+Atanan|Olayın sahibi veya sahip atanmamışsa *null* .|secop2@contoso.com
+actorName|Varsa, bu uyarıyla ilişkili etkinlik grubu.|BOR
+threatFamilyName|Bu uyarıyla ilişkili tehdit ailesi.|Null
+mitreTechniques|[MITRE ATT&CK](https://attack.mitre.org/)™ çerçevesiyle uyumlu saldırı teknikleri.|\[\]
+Aygıtları|Olayla ilgili uyarıların gönderildiği tüm cihazlar.|\[\] (aşağıdaki varlık alanlarıyla ilgili ayrıntılara bakın)
 
 ### <a name="device-format"></a>Cihaz biçimi
 
 Alan adı|Açıklama|Örnek değer
 ---|---|---
-DeviceId|Cihaz kimliği, Uç Nokta için Microsoft Defender'da belirlendi.|24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId|Cihaz kimliği, Mobil [Cihaz Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-whatis) Yalnızca etki alanına katılmış cihazlar için kullanılabilir.|null
-deviceDnsName|Cihaz için tam etki alanı adı.|user5cx.middleeast.corp.contoso.com
-osPlatform|Cihazın çalıştır olduğu işletim sistemi platformu.|WindowsServer2016
-osBuild|Cihazın çalıştır olduğu işletim sistemi derleme sürümü.|14393
-rbacGroupName|[Cihazla ilişkili rol tabanlı erişim](/azure/role-based-access-control/overview) denetimi (RBAC) grubu.|WDATP-Ring0
-firstSeen|Cihazın ilk görülme zamanı.|2020-02-06T14:16:01.9330135Z
-healthStatus|Cihazın durumu.|Etkin
+Deviceıd|Uç Nokta için Microsoft Defender'de belirtilen cihaz kimliği.|24c222b0b60fe148eeece49ac83910cc6a7ef491
+aadDeviceId|[Azure Active Directory'de](/azure/active-directory/fundamentals/active-directory-whatis) belirlenen cihaz kimliği. Yalnızca etki alanına katılmış cihazlar için kullanılabilir.|Null
+deviceDnsName|Cihazın tam etki alanı adı.|user5cx.middleeast.corp.contoso.com
+osPlatform|Cihazın çalıştırılan işletim sistemi platformu.|WindowsServer2016
+osBuild|Cihazın çalıştırılan işletim sistemi için derleme sürümü.|14393
+rbacGroupName|Cihazla ilişkili [rol tabanlı erişim denetimi](/azure/role-based-access-control/overview) (RBAC) grubu.|WDATP-Ring0
+firstSeen|Cihazın ilk görüldüğü zaman.|2020-02-06T14:16:01.9330135Z
+healthStatus|Cihazın sistem durumu.|Etkin
 riskScore|Cihazın risk puanı.|Yüksek
-varlıklar|Verilen uyarının bir parçası veya ilgili olduğu belirlenen tüm varlıklar.|\[\] (aşağıdaki varlık alanlarına ilişkin ayrıntılara bakın)
+Varlık|Belirli bir uyarının parçası veya ilgili olduğu belirlenen tüm varlıklar.|\[\] (aşağıdaki varlık alanlarıyla ilgili ayrıntılara bakın)
 
 ### <a name="entity-format"></a>Varlık Biçimi
 
 Alan adı|Açıklama|Örnek değer
 ---|---|---
-entityType|Verilen uyarının bir parçası veya ilgili olduğu belirlenen varlıklar.<br>Özellikler değerleri şöyledir: *Kullanıcı*, *Ip*, *Url*, *Dosya*, *İşlem*, *Posta Kutusu*, *MailMessage*, *MailCluster*, *Registry*|Kullanıcı
-sha1|EntityType Dosya ise *kullanılabilir*.<br>Dosya veya işlemle ilişkilendirilmiş uyarılar için dosya karması.|5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
-sha256|EntityType Dosya ise *kullanılabilir*.<br>Dosya veya işlemle ilişkilendirilmiş uyarılar için dosya karması.|28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
-dosyaAdı|EntityType Dosya ise *kullanılabilir*.<br>Dosya veya işlemle ilişkilendirilmiş uyarılar için dosya adı|Detector.UnitTests.dll
-filePath|EntityType Dosya ise *kullanılabilir*.<br>Dosya veya işlemle ilişkilendirilmiş uyarılar için dosya yolu|C:\\\agent_work_temp\Deploy\SYSTEM\2020-09-06 12_14_54\Out
-processId|EntityType Süreç ise *kullanılabilir*.|24348
-processCommandLine|EntityType Süreç ise *kullanılabilir*.|"Dosyanız İndirmeye Hazır\_ "1911150169.exe
-processCreationTime|EntityType Süreç ise *kullanılabilir*.|2020-07-18T03:25:38.5269993Z
-parentProcessId|EntityType Süreç ise *kullanılabilir*.|16840
-parentProcessCreationTime|EntityType Süreç ise *kullanılabilir*.|2020-07-18T02:12:32.8616797Z
-ipAddress|EntityType *Ip ise kullanılabilir*. <br>Kötü amaçlı bir ağ hedefine İletişim gibi ağ olaylarıyla *ilişkilendirilmiş uyarılar için IP adresi*.|62.216.203.204
-url|EntityType *Url ise kullanılabilir*. <br>Kötü amaçlı bir ağ hedefine iletişim gibi ağ *olaylarıyla ilişkili uyarıların Url'si*.|down.esales360.cn
-accountName|EntityType Kullanıcı ise *kullanılabilir*.|testUser2
-domainName|EntityType Kullanıcı ise *kullanılabilir*.|europe.corp.contoso
-userSid|EntityType Kullanıcı ise *kullanılabilir*.|S-1-5-21-1721254763-462695806-1538882281-4156657
-aadUserId|EntityType Kullanıcı ise *kullanılabilir*.|fc8f7484-f813-4db2-afab-bc1507913fb6
-userPrincipalName|EntityType /*UserMailBoxMailMessage*/ *ise kullanılabilir*.|testUser2@contoso.com
-mailboxDisplayName|EntityType *MailBox ise kullanılabilir*.|test Kullanıcı2
-mailboxAddress|EntityType /*UserMailBoxMailMessage*/ *ise kullanılabilir*.|testUser2@contoso.com
-clusterBy|EntityType  *MailCluster ise kullanılabilir*.|Konu; P2SenderDomain; ContentType
-gönderen|EntityType /*UserMailBoxMailMessage*/ *ise kullanılabilir*.|user.abc@mail.contoso.co.in
-alıcı|EntityType *MailMessage ise kullanılabilir*.|testUser2@contoso.com
-Konu|EntityType *MailMessage ise kullanılabilir*.|\[DıŞ\] Dikkat
-deliveryAction|EntityType *MailMessage ise kullanılabilir*.|Teslim edildi
-securityGroupId|EntityType  *SecurityGroup ise kullanılabilir*.|301c47c8-e15f-4059-ab09-e2ba9ffd372b
-securityGroupName|EntityType  *SecurityGroup ise kullanılabilir*.|Ağ Yapılandırma İşleçleri
-registryHive|EntityType Kayıt Defteri ise  *kullanılabilir*.|HKEYLOCALMACHINE\_\_|
-registryKey|EntityType Kayıt Defteri ise  *kullanılabilir*.|SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType|EntityType Kayıt Defteri ise  *kullanılabilir*.|Dize
-registryValue|EntityType Kayıt Defteri ise  *kullanılabilir*.|31-00-00-00
-deviceId|Varsa, varlıkla ilgili cihazın kimliği.|986e5df8b73dacd43c8917d17e523e76b13c75cd
+Entitytype|Belirli bir uyarının parçası olduğu veya ilgili olduğu belirlenen varlıklar.<br>Özellik değerleri şunlardır: *User*, *Ip*, *Url*, *File*, *Process*, *MailBox*, *MailMessage*, *MailCluster*, *Registry*|Kullanıcı
+sha1|entityType *Dosya* ise kullanılabilir.<br>Bir dosya veya işlemle ilişkili uyarılar için dosya karması.|5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
+sha256|entityType *Dosya* ise kullanılabilir.<br>Bir dosya veya işlemle ilişkili uyarılar için dosya karması.|28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
+Dosyaadı|entityType *Dosya* ise kullanılabilir.<br>Bir dosya veya işlemle ilişkili uyarıların dosya adı|Detector.UnitTests.dll
+Filepath|entityType *Dosya* ise kullanılabilir.<br>Bir dosya veya işlemle ilişkili uyarıların dosya yolu|C:\\\agent_work_temp\Deploy\SYSTEM\2020-09-06 12_14_54\Out
+Processıd|entityType *İşlem* ise kullanılabilir.|24348
+processCommandLine|entityType *İşlem* ise kullanılabilir.|"Dosyanız1911150169.exe İndirmeye\_ Hazır"
+processCreationTime|entityType *İşlem* ise kullanılabilir.|2020-07-18T03:25:38.5269993Z
+parentProcessId|entityType *İşlem* ise kullanılabilir.|16840
+parentProcessCreationTime|entityType *İşlem* ise kullanılabilir.|2020-07-18T02:12:32.8616797Z
+ıpaddress|entityType *Ip* ise kullanılabilir. <br>*Kötü amaçlı bir ağ hedefine iletişim* gibi ağ olaylarıyla ilişkili uyarıların IP adresi.|62.216.203.204
+Url|entityType *Url* ise kullanılabilir. <br>*Kötü amaçlı bir ağ hedefine iletişim* gibi ağ olaylarıyla ilişkili uyarıların URL'si.|down.esales360.cn
+Accountname|entityType *Kullanıcı* ise kullanılabilir.|testUser2
+Etkialanıadı|entityType *Kullanıcı* ise kullanılabilir.|europe.corp.contoso
+userSid|entityType *Kullanıcı* ise kullanılabilir.|S-1-5-21-1721254763-462695806-1538882281-4156657
+aadUserId|entityType *Kullanıcı* ise kullanılabilir.|fc8f7484-f813-4db2-afab-bc1507913fb6
+Userprincipalname|entityType *, User*/*MailBox*/*MailMessage* ise kullanılabilir.|testUser2@contoso.com
+mailboxDisplayName|entityType *MailBox* ise kullanılabilir.|test Kullanıcısı2
+mailboxAddress|entityType *, User*/*MailBox*/*MailMessage* ise kullanılabilir.|testUser2@contoso.com
+clusterBy|entityType  *MailCluster* ise kullanılabilir.|Konu; P2SenderDomain; Contenttype
+Gönderen|entityType *, User*/*MailBox*/*MailMessage* ise kullanılabilir.|user.abc@mail.contoso.co.in
+Alıcı|entityType *MailMessage* ise kullanılabilir.|testUser2@contoso.com
+Konu|entityType *MailMessage* ise kullanılabilir.|\[DıŞ\] Dikkat
+deliveryAction|entityType *MailMessage* ise kullanılabilir.|Teslim
+securityGroupId|entityType  *SecurityGroup* ise kullanılabilir.|301c47c8-e15f-4059-ab09-e2ba9ffd372b
+securityGroupName|entityType  *SecurityGroup* ise kullanılabilir.|Ağ Yapılandırma İşleçleri
+Registryhive|entityType  *Kayıt Defteri* ise kullanılabilir.|HKEY\_YEREL\_MAKINESI|
+registryKey|entityType  *Kayıt Defteri* ise kullanılabilir.|SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+registryValueType|entityType  *Kayıt Defteri* ise kullanılabilir.|Dize
+registryValue|entityType  *Kayıt Defteri* ise kullanılabilir.|31-00-00-00
+Deviceıd|Varsa, varlıkla ilgili cihazın kimliği.|986e5df8b73dacd43c8917d17e523e76b13c75cd
 
 ## <a name="example"></a>Örnek
 
@@ -343,7 +343,7 @@ GET https://api.security.microsoft.com/api/incidents
                     "firstActivity": "2020-09-06T12:15:07.7272048Z",
                     "lastActivity": "2020-09-06T12:15:07.7272048Z",
                     "title": "'Mimikatz' hacktool was detected",
-                    "description": "Readily available tools, such as hacking programs, can be used by unauthorized individuals to spy on users. When used by attackers, these tools are often installed without authorization and used to compromise targeted machines.\n\nThese tools are often used to collect personal information from browser records, record key presses, access email and instant messages, record voice and video conversations, and take screenshots.\n\nThis detection might indicate that Windows Defender Antivirus has stopped the tool from being installed and used effectively. However, it is prudent to check the machine for the files and processes associated with the detected tool.",
+                    "description": "Readily available tools, such as hacking programs, can be used by unauthorized individuals to spy on users. When used by attackers, these tools are often installed without authorization and used to compromise targeted machines.\n\nThese tools are often used to collect personal information from browser records, record key presses, access email and instant messages, record voice and video conversations, and take screenshots.\n\nThis detection might indicate that Microsoft Defender Antivirus has stopped the tool from being installed and used effectively. However, it is prudent to check the machine for the files and processes associated with the detected tool.",
                     "category": "Malware",
                     "status": "New",
                     "severity": "Low",
@@ -724,9 +724,9 @@ GET https://api.security.microsoft.com/api/incidents
 
 ## <a name="related-articles"></a>İlgili makaleler
 
-- [Api'lere Microsoft 365 Defender erişme](api-access.md)
+- [Microsoft 365 Defender API'lerine erişme](api-access.md)
 - [API sınırları ve lisanslama hakkında bilgi edinin](api-terms.md)
 - [Hata kodlarını anlama](api-error-codes.md)
 - [Olaylara genel bakış](incidents-overview.md)
 - [Olay API'leri](api-incident.md)
-- [Olay API'sini güncelleştir](api-update-incidents.md)
+- [Olay API'sini güncelleştirme](api-update-incidents.md)

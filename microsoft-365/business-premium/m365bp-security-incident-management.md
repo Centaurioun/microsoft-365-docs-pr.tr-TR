@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Güvenlik olayı yönetimine genel bakış
-ms.openlocfilehash: 9f99dda8b1226e051b17dcd4a7a96c236c222fa7
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 1637ba7ca349916588d2f75369a1a5b849596285
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917945"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433439"
 ---
 # <a name="security-incident-management"></a>Güvenlik olayı yönetimi
 
@@ -36,10 +36,7 @@ Nasıl çalıştığını görmek ister misiniz? Tipik bir olay yanıtıyla ilgi
 
 Olay yanıtları hakkında daha fazla bilgi edinmek için aşağıdaki makalelere bakın:
 
-1. [Güvenlik önerilerini gözden geçirin](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
-
-2. [Algılanan tehditleri gözden geçirin ve harekete geçin](m365bp-review-threats-take-action.md).
-
-3. [Düzeltme eylemlerini gözden geçirin](m365bp-review-remediation-actions-devices.md).
-
-4. [Güvenliği aşılmış bir e-posta hesabını yanıtlayın](../security/office-365-security/responding-to-a-compromised-email-account.md).
+- [Güvenlik önerilerini gözden geçirin](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
+- [Algılanan tehditleri gözden geçirin ve harekete geçin](m365bp-review-threats-take-action.md).
+- [Düzeltme eylemlerini gözden geçirin](m365bp-review-remediation-actions-devices.md).
+- [Güvenliği aşılmış bir e-posta hesabını yanıtlayın](../security/office-365-security/responding-to-a-compromised-email-account.md).

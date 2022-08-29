@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da modern bir şablon kullanarak belgeleri ve diğer içerikleri otomatik olarak oluşturmayı öğrenin.
-ms.openlocfilehash: ed0b66ecf495dccd18e24ff5ef4caded17c2b234
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+ms.openlocfilehash: bce344a5a8daf36c9408a846f2ab289f14695d82
+ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309845"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420122"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da içerik derlemesini kullanarak belge oluşturma
 
@@ -65,7 +65,9 @@ Modern bir şablon oluşturmak için bu adımları izleyin.
    - [Yönetilen meta veri terim kümesinden veya terimden seçim yapın](#associate-a-placeholder-by-selecting-from-managed-metadata-term-set-or-term)
 
    > [!NOTE]
-   > Yalnızca metin için yer tutucular oluşturabilirsiniz. Görüntüler, akıllı resim, tablolar ve madde işaretleri listeleri şu anda desteklenmiyor.   
+   > Metin için yer tutucular ve ayrıca tablodaki hücreler içindeki metinler için yer tutucular oluşturabilirsiniz. Ancak görüntüler, akıllı resim, tam tablolar ve madde işaretli listeler şu anda desteklenmiyor.   
+
+
 
 ### <a name="associate-a-placeholder-by-entering-text-or-selecting-a-date"></a>Metin girerek veya tarih seçerek yer tutucuyu ilişkilendirme
 
@@ -185,7 +187,7 @@ Mevcut bir şablonu düzenlemeniz veya şablonu silmeniz veya yayımlamanız ger
 >- Şu anda şablon oluşturmak için yalnızca Microsoft Word belgeleri (.docx uzantısı) desteklenmektedir. Word belgesini karşıya yüklemeden önce, belgenin açıklama içermediğinden veya **Değişiklikleri izle** seçeneğinin etkin olduğundan emin olun. Belgede resimler için metin yer tutucuları varsa, bunların metin sarmalı olmadığından emin olun. Word'deki içerik denetimleri şu anda desteklenmiyor. İçerik denetimleri olan bir Word belgesinden şablon oluşturmak istiyorsanız, modern bir şablon oluşturmadan önce bunları kaldırın.
 >- Şablon ve belge bir belge kitaplığıyla ilişkilendirilir. Şablonu başka bir belge kitaplığında kullanmak için, şablonu bu belge kitaplığında yeniden oluşturmanız gerekir.
 >- Modern şablonu oluşturmak için kullanılan karşıya yüklenen belge ayrı bir kopya olarak kaydedilir ve belge kitaplığının /forms dizinine yerleştirilir. Disk üzerindeki özgün dosya etkilenmez.
->- Yalnızca metin için yer tutucular oluşturabilirsiniz. Görüntüler, akıllı resim, tablolar ve madde işaretleri listeleri şu anda desteklenmiyor.
+>- Metin için yer tutucular ve ayrıca tablodaki hücreler içindeki metinler için yer tutucular oluşturabilirsiniz. Ancak görüntüler, akıllı resim, tam tablolar ve madde işaretli listeler şu anda desteklenmiyor.
 >- Şablondan bir belge oluşturulduktan sonra, şablonla ilişkilendirilmemiş olur.
 
 

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Erişim günlükleri, şifrelenmiş ileti portalı aracılığıyla alınan şifrelenmiş iletiler için kullanılabilir.
-ms.openlocfilehash: 0877463ce317f4d38a3251f75b349fb8abb5a027
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: fe45757eb6ca89f55a1b796d3752b1e3bcb1b89b
+ms.sourcegitcommit: d7c51ab23de4b43bcc8eebebc5a2962831e9fd55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942640"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420842"
 ---
 # <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption"></a>Microsoft Purview Gelişmiş İleti Şifrelemesi tarafından şifrelenmiş ileti portalı etkinlik günlüğü
 
@@ -29,7 +29,7 @@ Erişim günlükleri, kuruluşunuzun iletilerin ne zaman okunduğunu ve dış al
 
 ## <a name="enabling-message-access-audit-logs-in-powershell"></a>PowerShell'de ileti erişimi denetim günlüklerini etkinleştirme
 
-Erişim günlüğü Exchange Online PowerShell kullanılarak etkinleştirilebilir. *Set-IrmConfiguration'in -EnablePortalTrackingLogs* parametresi, şifrelenmiş ileti portalına erişim denetim günlüklerinin etkinleştirilip etkinleştirilmeymeyeceğini belirtir. Geçerli değerler şunlardır:
+Erişim günlüğü [Exchange Online PowerShell V2 modülü](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps) kullanılarak etkinleştirilebilir. *Set-IrmConfiguration'in -EnablePortalTrackingLogs* parametresi, şifrelenmiş ileti portalına erişim denetim günlüklerinin etkinleştirilip etkinleştirilmeymeyeceğini belirtir. Geçerli değerler şunlardır:
 
 - $true: Denetim özelliğini açın.
 - $false: Denetim özelliğini kapatma

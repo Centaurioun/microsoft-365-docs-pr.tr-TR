@@ -12,18 +12,20 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard'dan kişisel bilgileri dışarı aktarmayı, aktarmayı veya silmeyi öğrenin.
-ms.openlocfilehash: 97b960082621c6a728740d5fd747da73540b2ac7
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 696e21ef3b48a9823554746fa7cc24b11e421af7
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943021"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369821"
 ---
 # <a name="manage-gdpr-data-subject-requests-in-microsoft-whiteboard"></a>Microsoft Whiteboard'da GDPR veri sahibi isteklerini yönetme
 
 Genel Veri Koruma Yönetmeliği (GDPR), kullanıcılara bir kuruluş tarafından toplanan kişisel verileri yönetme hakları verir. Bu haklar bir veri sahibi isteği (DSR) aracılığıyla kullanılabilir.
 
 Bu makale, Microsoft Whiteboard'dan kişisel bilgileri dışarı aktarma, aktarma veya silme hakkında bilgi sağlar.
+
+Kişisel bilgileri yönetmek için önce Whiteboard'un kuruluşunuz için etkinleştirildiğinden emin olmanız gerekir. Daha fazla bilgi için bkz. [Whiteboard erişimini yönetme](manage-whiteboard-access-organizations.md).
 
 ## <a name="export-a-whiteboard"></a>Beyaz tahtayı dışarı aktarma
 
@@ -45,7 +47,7 @@ iOS veya web'de aşağıdaki adımları uygulayın:
 
 2. **Ayarlar** simgesini seçin.
 
-3. Şunlardan birini yapın:
+3. Aşağıdaki adımlardan birini yapın:
 
    - iOS için Beyaz Tahta'da **Resmi dışarı aktar (png)'** yi seçin.
 

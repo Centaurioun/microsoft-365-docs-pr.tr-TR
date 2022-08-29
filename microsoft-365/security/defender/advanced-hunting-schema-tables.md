@@ -1,7 +1,7 @@
 ---
-title: Gelişmiş av şemasında Microsoft 365 Defender tabloları
-description: Tehdit arama sorgularını çalıştırabilirsiniz verileri anlamak için gelişmiş av şemasında yer alan tablolar hakkında bilgi
-keywords: gelişmiş av, tehdit avı, siber tehdit avı, Microsoft 365 Defender, Microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, veriler
+title: Microsoft 365 Defender gelişmiş tehdit avcılığı şemasındaki veri tabloları
+description: Tehdit avcılığı sorguları çalıştırabileceğiniz verileri anlamak için gelişmiş tehdit avcılığı şemasındaki tablolar hakkında bilgi edinin
+keywords: gelişmiş avcılık, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, veriler
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,75 +18,75 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a496e0e293e72821016d6efa5fbd9622f669ab0b
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: f84e0e0ad95d45cefabdfb87b824d6afd2385638
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755547"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384238"
 ---
-# <a name="understand-the-advanced-hunting-schema"></a>Gelişmiş arama şemasını anlama
+# <a name="understand-the-advanced-hunting-schema"></a>Gelişmiş tehdit avcılığı şemasını anlama
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
 - Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Gelişmiş [av şeması](advanced-hunting-overview.md) ; cihazlar, uyarılar, kimlikler ve diğer varlık türleri hakkında etkinlik bilgileri veya bilgi sağlayan birden çok tablodan oluşturulur. Birden çok tabloya yayılan sorguları etkili bir şekilde oluşturmak için gelişmiş av şemasında yer alan tabloları ve sütunları anlamalısınız.
+[Gelişmiş tehdit avcılığı](advanced-hunting-overview.md) şeması, cihazlar, uyarılar, kimlikler ve diğer varlık türleri hakkında olay bilgileri veya bilgi sağlayan birden çok tablodan oluşur. Birden çok tabloya yayılan sorguları etkili bir şekilde oluşturmak için gelişmiş tehdit avcılığı şemasındaki tabloları ve sütunları anlamanız gerekir.
 
 <a name="get-schema-information-in-the-security-center"></a>
 
-## <a name="get-schema-information"></a>Şema bilgilerini al
+## <a name="get-schema-information"></a>Şema bilgilerini alma
 
-Sorguları oluşturmakla birlikte, yerleşik şema başvurularını kullanarak şemadaki her tablo hakkında hızla aşağıdaki bilgileri edinebilirsiniz:
+Sorgu oluştururken, şemadaki her tablo hakkında hızla aşağıdaki bilgileri almak için yerleşik şema başvurularını kullanın:
 
-- **Tablolar açıklaması**: Tabloda yer alan verilerin türü ve bu verilerin kaynağı.
-- **Sütunlar**: Tablodaki tüm sütunlar.
-- **Eylem türleri**— tablo tarafından desteklenen `ActionType` olay türlerini temsil eden sütundaki olası değerler. Bu bilgiler yalnızca olay bilgileri içeren tablolar için sağlanır.
-- **Örnek sorgu**: Tablonun nasıl kullanılay olacağını özellikte olan örnek sorgular.
+- **Tablo açıklaması**: Tabloda yer alan verilerin türü ve bu verilerin kaynağı.
+- **Sütunlar**— tablodaki tüm sütunlar.
+- **Eylem türleri**— tablo tarafından desteklenen olay türlerini temsil eden sütundaki `ActionType` olası değerler. Bu bilgiler yalnızca olay bilgilerini içeren tablolar için sağlanır.
+- **Örnek sorgu**; tablonun nasıl kullanılabilmesini sağlayan örnek sorgular.
 
 ### <a name="access-the-schema-reference"></a>Şema başvurusuna erişme
-Şema başvurusuna hızla erişmek için, şema **gösteriminde** tablo adının yanındaki Başvuruyu görüntüle eylemini seçin. Tablo aramak için **Şema başvurusu** da öğesini de seçin.
+Şema başvurusuna hızla erişmek için, şema gösteriminde tablo adının yanındaki **Başvuruyu görüntüle** eylemini seçin. Tablo aramak için **Şema başvurusu'nu** da seçebilirsiniz.
 
-:::image type="content" source="../../media/understand-schema-1.png" alt-text="Microsoft 365 Defender portalında Gelişmiş Av sayfasındaki Şema Başvurusu sayfası" lightbox="../../media/understand-schema-1.png":::
+:::image type="content" source="../../media/understand-schema-1.png" alt-text="Microsoft 365 Defender portalındaki Gelişmiş Tehdit Avcılığı sayfasındaki Şema Başvurusu sayfası" lightbox="../../media/understand-schema-1.png":::
 
 ## <a name="learn-the-schema-tables"></a>Şema tablolarını öğrenme
-Aşağıdaki başvuru, şemadaki tüm tabloları listeler. Her tablo adı, o tablonun sütun adlarını açıklayan sayfaya bağlantı sağlar. Tablo ve sütun adları, gelişmiş av ekranındaki şema gösteriminin bir parçası olarak Bulut için Defender'da da listelenir.
+Aşağıdaki başvuru şemadaki tüm tabloları listeler. Her tablo adı, o tablonun sütun adlarını açıklayan bir sayfaya bağlanır. Tablo ve sütun adları, gelişmiş tehdit avcılığı ekranındaki şema gösteriminin bir parçası olarak Bulut için Defender'da da listelenir.
 
 | Tablo adı | Açıklama |
 |------------|-------------|
-| **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Uyarılarla ilişkilendirilmiş dosyalar, IP adresleri, URL'ler, kullanıcılar veya cihazlar |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Önem derecesi bilgileri ve tehdit sınıflandırması dahil olmak üzere Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Bulut Uygulamaları için Microsoft Defender ve Kimlik için Microsoft Defender uyarıları  |
-| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Diğer bulut uygulamaları ve hizmetlerde Office 365 ve nesneleri içeren etkinlikler |
-| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Güvenlik denetimleri tarafından tetiklenen olaylar (örneğin, Güvenlik koruması ve Windows Defender Virüsten Koruma türler) |
+| **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Uyarılarla ilişkili dosyalar, IP adresleri, URL'ler, kullanıcılar veya cihazlar |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Microsoft Defender for Cloud Apps ve Kimlik için Microsoft Defender uyarıları , önem derecesi bilgileri ve tehdit kategorisi dahil  |
+| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Office 365 ve diğer bulut uygulamaları ve hizmetlerindeki hesapları ve nesneleri içeren olaylar |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Microsoft Defender Virüsten Koruma ve açıklardan yararlanma koruması gibi güvenlik denetimleri tarafından tetiklenen olaylar da dahil olmak üzere birden çok olay türü |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Uç noktalarda sertifika doğrulama olaylarından alınan imzalı dosyaların sertifika bilgileri |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | Dosya oluşturma, değiştirme ve diğer dosya sistemi olayları |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL yükleme olayları |
-| **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Işletim sistemi bilgileri dahil olmak üzere makine bilgileri |
-| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Cihazlarda oturum açma ve diğer kimlik doğrulama olayları |
+| **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | İşletim sistemi bilgileri de dahil olmak üzere makine bilgileri |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Cihazlarda oturum açma işlemleri ve diğer kimlik doğrulama olayları |
 | **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | Ağ bağlantısı ve ilgili olaylar |
-| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Fiziksel bağdaştırıcılar, IP ve MAC adresleri ile bağlı ağlar ve etki alanları dahil olmak üzere cihazların ağ özellikleri |
-| **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Süreç oluşturma ve ilgili olaylar |
-| **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Kayıt defteri girdilerini oluşturma ve değiştirme |
-| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | Tehdit & Cihazlarla ilgili çeşitli güvenlik yapılandırmalarının durumunu gösteren Güvenlik Açığı Yönetimi değerlendirme etkinlikleri |
-| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Threat & Güvenlik Açığı Yönetimi tarafından cihazları değerlendirmek için kullanılan çeşitli güvenlik yapılandırmaları hakkında bilgi tabanı; çeşitli standartlara ve karşılaştırmalara eşlemeler içerir  |
+| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Fiziksel bağdaştırıcılar, IP ve MAC adreslerinin yanı sıra bağlı ağlar ve etki alanları da dahil olmak üzere cihazların ağ özellikleri |
+| **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | İşlem oluşturma ve ilgili olaylar |
+| **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Kayıt defteri girdilerinin oluşturulması ve değiştirilmesi |
+| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | Cihazlardaki çeşitli güvenlik yapılandırmalarının durumunu gösteren değerlendirme olaylarını Microsoft Defender Güvenlik Açığı Yönetimi |
+| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | cihazları değerlendirmek için Microsoft Defender Güvenlik Açığı Yönetimi tarafından kullanılan çeşitli güvenlik yapılandırmalarının bilgi bankası; çeşitli standartlara ve karşılaştırmalara yönelik eşlemeleri içerir  |
 | **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | Sürüm bilgileri ve destek sonu durumu da dahil olmak üzere cihazlarda yüklü yazılımların envanteri |
-| **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Cihazlarda bulunan yazılım açıkları ve her bir güvenlik açığını gideren kullanılabilir güvenlik güncelleştirmeleri listesi |
-| **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | Exploit code'ın genel kullanıma açık olup olmadığı da dahil olmak üzere, herkese açık açık güvenlik açıkları için bilgi tabanı |
+| **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Cihazlarda bulunan yazılım güvenlik açıkları ve her güvenlik açığını gideren kullanılabilir güvenlik güncelleştirmelerinin listesi |
+| **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | Açıklardan yararlanma kodunun genel kullanıma açık olup olmadığı da dahil olmak üzere genel olarak açıklanan güvenlik açıklarının bilgi bankası |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | E-postalara eklenen dosyalar hakkında bilgi |
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 teslimi ve engelleme etkinlikleri de dahil olmak üzere e-posta etkinliklerini engelleme |
-| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | E-postalar alıcı posta kutusuna teslim Microsoft 365 sonra, teslim sonrası oluşan güvenlik olayları |
-| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | E-postalarda yer alan URL'ler hakkında bilgiler |
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Active Directory (AD) çalıştıran bir şirket içi etki alanı denetleyicisini içeren olaylar. Bu tablo, etki alanı denetleyicisinde kimlikle ilgili çeşitli olayları ve sistem olaylarını kapsar. |
-| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Hesap bilgileri de dahil olmak üzere çeşitli kaynaklardan Azure Active Directory |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory ve Microsoft çevrimiçi hizmetlerinde kimlik doğrulama olayları |
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | E-posta teslimi ve engelleyici olaylar da dahil olmak üzere Microsoft 365 e-posta olayları |
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Microsoft 365 e-postaları alıcı posta kutusuna teslim ettikten sonra teslim sonrası gerçekleşen güvenlik olayları |
+| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | E-postalardaki URL'ler hakkında bilgi |
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Active Directory (AD) çalıştıran bir şirket içi etki alanı denetleyicisini içeren olaylar. Bu tablo, etki alanı denetleyicisindeki kimlikle ilgili olayları ve sistem olaylarını kapsar. |
+| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Azure Active Directory dahil olmak üzere çeşitli kaynaklardan gelen hesap bilgileri |
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory ve Microsoft çevrimiçi hizmetler kimlik doğrulama olayları |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Kullanıcılar, gruplar, cihazlar ve etki alanları gibi Active Directory nesneleri için sorgular |
 
 ## <a name="related-topics"></a>İlgili konular
-- [Gelişmiş ava genel bakış](advanced-hunting-overview.md)
+- [Gelişmiş avcılığa genel bakış](advanced-hunting-overview.md)
 - [Sorgu dilini öğrenin](advanced-hunting-query-language.md)
 - [Sorgu sonuçlarıyla çalışın](advanced-hunting-query-results.md)
 - [Paylaşılan sorguları kullanın](advanced-hunting-shared-queries.md)

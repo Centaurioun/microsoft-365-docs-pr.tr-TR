@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: SharePoint sitesini çok coğrafi ortamınızda farklı bir coğrafi konuma taşımayı ve değişikliklerle ilgili beklentileri kullanıcılarınıza iletmeyi öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a72c98cf2c4f71c9812af5aef01adc93777d5ccf
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: adb80e3c1f08d5f99e593e5592a1065e2829e3e6
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306316"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67370001"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>SharePoint sitesini farklı bir coğrafi konuma taşıma
 
@@ -229,4 +229,6 @@ Power Apps'in hedef konumda yeniden oluşturulması gerekir.
 
 ### <a name="data-movement-between-geo-locations"></a>Coğrafi konumlar arasında veri taşıma
 
-SharePoint içeriği için Azure Blob depolamayı kullanırken, sitelerle ve dosyalarıyla ilişkili meta veriler SharePoint'in içinde depolanır. Site kaynak coğrafi konumundan hedef coğrafi konumuna taşındıktan sonra, hizmet ilişkili Blob Depolama alanını da taşır. Blob Depolama yaklaşık 40 gün içinde tamamlar.
+SharePoint içeriği için Azure Blob Depolama kullanırken, sitelerle ve dosyalarıyla ilişkili meta veriler SharePoint'in içinde depolanır. Site kaynak coğrafi konumundan hedef coğrafi konumuna taşındıktan sonra, hizmet ilişkili Blob Depolama alanını da taşır. Blob Depolama yaklaşık 40 gün içinde tamamlar. Bu, kullanıcıların verilerle etkileşimini etkilemez. 
+
+[Get-SPOCrossGeoMoveReport](/powershell/module/sharepoint-online/get-spocrossgeomovereport) cmdlet'ini kullanarak Blob Depolama taşıma durumunu denetleyebilirsiniz. 

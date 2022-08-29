@@ -17,12 +17,12 @@ ms.custom: ''
 description: Yöneticiler, desteklenen belirli senaryolarda (üçüncü taraf kimlik avı simülasyonları ve güvenlik işlemleri (SecOps) posta kutularına teslim edilen iletiler) filtrelenmemesi gereken iletileri belirlemek için Exchange Online Protection (EOP) içinde gelişmiş teslim ilkesini kullanmayı öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b69e143ecae2974db249a64d32d18cb5ead32aa6
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 826eb2d2b860900ed0f73ecd85f3162bb90de2a9
+ms.sourcegitcommit: d7c51ab23de4b43bcc8eebebc5a2962831e9fd55
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051194"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420994"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Üçüncü taraf kimlik avı simülasyonlarının kullanıcılara ve filtrelenmemiş iletilerin SecOps posta kutularına teslimini yapılandırma
 
@@ -46,7 +46,7 @@ _Bu belirli senaryolardaki_ gelen iletilerin filtrelenmesini <sup>\*</sup> önle
 - [Office 365 için Defender'da AIR ve kümeleme](office-365-air.md) bu iletileri yoksayar.
 - Özellikle üçüncü taraf kimlik avı simülasyonları için:
   - [Yönetici gönderimleri](admin-submission.md), iletinin bir kimlik avı simülasyonu kampanyasının parçası olduğunu ve gerçek bir tehdit olmadığını belirten otomatik bir yanıt oluşturur. Uyarılar ve AIR tetiklenmez. Yönetici gönderimleri deneyimi, bu iletileri sanal bir tehdit olarak gösterir.
-  - Kullanıcı [Rapor İletisi veya Rapor Kimlik Avı eklentilerini](enable-the-report-message-add-in.md) kullanarak bir kimlik avı simülasyonu iletisi bildirdiğinde sistem uyarı, araştırma veya olay oluşturmaz. Bağlantılar veya dosyalar patlamaz, ancak ileti **Gönderimler** sayfasının **Kullanıcı tarafından bildirilen iletiler** sekmesinde de gösterilir.
+  - Kullanıcı [Rapor İletisi veya Rapor Kimlik Avı eklentilerini](enable-the-report-message-add-in.md) kullanarak bir kimlik avı simülasyonu iletisi bildirdiğinde sistem uyarı, araştırma veya olay oluşturmaz. Bağlantılar veya dosyalar patlamaz, ancak ileti **Gönderimler** sayfasının **Kullanıcı tarafından bildirilen iletiler** sekmesinde görünür.
   - [Office 365 için Defender'daki Güvenli Bağlantılar](safe-links.md), tıklama sırasında bu iletilerde özel olarak tanımlanan URL'leri engellemez veya patlamaz. URL'ler sarmalanmaya devam eder, ancak engellenmez.
   - [Office 365 için Defender'deki Güvenli Ekler](safe-attachments.md) bu iletilerdeki ekleri patlamaz.
 
@@ -66,7 +66,7 @@ Gelişmiş teslim ilkesi tarafından tanımlanan iletiler güvenlik tehditleri o
 
 - Microsoft 365 Defender portalını adresinde <https://security.microsoft.com>açarsınız. Doğrudan **Gelişmiş teslim** sayfasına gitmek için dosyasını açın <https://security.microsoft.com/advanceddelivery>.
 
-- Güvenlik & Uyumluluğu PowerShell'e bağlanmak için bkz. [Güvenlik & Uyumluluk PowerShell'e bağlanma](/powershell/exchange/connect-to-scc-powershell).
+- Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Bu makaledeki yordamları gerçekleştirmeden önce size izinler atanmalıdır:
   - Gelişmiş teslim ilkesinde yapılandırılmış ayarları oluşturmak, değiştirmek veya kaldırmak için, **Microsoft 365 Defender portalında** **Güvenlik Yöneticisi** rol grubunun üyesi ve **Exchange Online** **Kuruluş Yönetimi** rol grubunun üyesi olmanız gerekir.
@@ -93,9 +93,23 @@ Gelişmiş teslim ilkesi tarafından tanımlanan iletiler güvenlik tehditleri o
 
      Mevcut bir değeri kaldırmak için Kaldır'a tıklayın ![Kaldır simgesi.](../../media/m365-cc-sc-remove-selection-icon.png) öğesini seçin.
 
-4. Bitirdiğinizde, **Kaydet**'i tıklatın.
+4. İşiniz bittiğinde **Ekle'ye** ve ardından **Kapat'a** tıklayın.
 
-Yapılandırdığınız SecOps posta kutusu girişleri **SecOps posta kutusu** sekmesinde görüntülenir. Değişiklik yapmak için Düzenle simgesine tıklayın ![.](../../media/m365-cc-sc-edit-icon.png) Sekmede **düzenleyin**.
+Yapılandırdığınız SecOps posta kutusu girişleri **SecOps posta kutusu** sekmesinde görüntülenir.
+
+## <a name="use-the-microsoft-365-defender-portal-to-modify-or-remove-secops-mailboxes-in-the-advanced-delivery-policy"></a>Gelişmiş teslim ilkesindeki SecOps posta kutularını değiştirmek veya kaldırmak için Microsoft 365 Defender portalını kullanma
+
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **Kurallar** bölümünde **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Gelişmiş teslim** bölümüne gidin. Doğrudan **Gelişmiş teslim** sayfasına gitmek için kullanın <https://security.microsoft.com/advanceddelivery>.
+
+2. **Gelişmiş teslim** sayfasında **SecOps posta kutusu** sekmesinin seçili olduğunu doğrulayın ve düzenle simgesine tıklayın![.](../../media/m365-cc-sc-edit-icon.png) **Düzenle'yi seçin**.
+
+3. Açılan **SecOps posta kutularını düzenle** açılır öğesinde, önceki bölümde açıklandığı gibi posta kutularını ekler veya kaldırırsınız.
+
+   Tüm posta kutularını kaldırmak için Kaldır'a tıklayın ![Kaldır simgesi.](../../media/m365-cc-sc-remove-selection-icon.png) seçili başka posta kutusu kalmayıncaya kadar her değerin yanında.
+
+4. İşiniz bittiğinde **Kaydet'e** ve ardından **Kapat'a** tıklayın.
+
+Yapılandırdığınız SecOps posta kutusu girişleri **SecOps posta kutusu** sekmesinde görüntülenir. Tüm SecOps posta kutusu girdilerini kaldırdıysanız, liste boş olur.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Gelişmiş teslim ilkesinde üçüncü taraf kimlik avı simülasyonlarını yapılandırmak için Microsoft 365 Defender portalını kullanın
 
@@ -117,7 +131,7 @@ Yapılandırdığınız SecOps posta kutusu girişleri **SecOps posta kutusu** s
      - IP aralığı: Örneğin, 192.168.0.1-192.168.0.254.
      - CIDR IP: Örneğin, 192.168.0.1/25.
 
-   - **İzin vermek için simülasyon URL'leri**: Bu ayarı genişletin ve isteğe bağlı olarak kutuya tıklayıp bir değer girip Enter tuşuna basarak veya kutunun altında görüntülenen değeri seçerek engellenmemesi veya patlatılmaması gereken kimlik avı simülasyonu kampanyanızın parçası olan belirli URL'leri girin. En fazla 10 giriş ekleyebilirsiniz. URL söz dizimi biçimi için bkz. [Kiracı İzin Ver/Engelle Listesi için URL söz dizimi](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list). Bu URL'ler tıklandığında kaydırılır, ancak engellenmez.
+   - **İzin vermek için simülasyon URL'leri**: Bu ayarı genişletin ve isteğe bağlı olarak kutuya tıklayıp bir değer girip Enter tuşuna basarak veya kutunun altında görüntülenen değeri seçerek engellenmemesi veya patlatılmaması gereken kimlik avı simülasyonu kampanyanızın parçası olan belirli URL'leri girin. En fazla 10 giriş ekleyebilirsiniz. URL söz dizimi biçimi için bkz. [Kiracı İzin Ver/Engelle Listesi için URL söz dizimi](allow-block-urls.md#url-syntax-for-the-tenant-allowblock-list). Bu URL'ler tıklandığında kaydırılır, ancak engellenmez.
 
    Mevcut bir değeri kaldırmak için Kaldır'a tıklayın ![Kaldır simgesi.](../../media/m365-cc-sc-remove-selection-icon.png) öğesini seçin.
 
@@ -130,26 +144,38 @@ Yapılandırdığınız SecOps posta kutusu girişleri **SecOps posta kutusu** s
    > - En az bir **Ip Gönderiliyor**.
    >
    > simülasyon iletilerindeki **URL'lerin** engellenmediğinden emin olmak için isteğe bağlı olarak Simülasyon URL'leri ekleyebilirsiniz.
+   >
    > Her alan için en fazla 10 giriş belirtebilirsiniz.
+   >
    > En az bir **Etki Alanı** ve bir **Gönderme IP'sinde** eşleşme olması gerekir, ancak değerler arasındaki ilişki korunmaz.
 
-4. İşiniz bittiğinde aşağıdaki adımlardan birini yapın:
-   - **İlk kez**: **Ekle'ye** ve ardından **Kapat'a** tıklayın.
-   - **Var olanı düzenle**: **Kaydet'e** ve ardından **Kapat'a** tıklayın.
+4. İşiniz bittiğinde **Ekle'ye** ve ardından **Kapat'a** tıklayın.
 
-Yapılandırdığınız üçüncü taraf kimlik avı benzetimi girişleri **, Kimlik Avı simülasyonu** sekmesinde görüntülenir. Değişiklik yapmak için Düzenle simgesine tıklayın ![.](../../media/m365-cc-sc-edit-icon.png) Sekmede **düzenleyin**.
+Yapılandırdığınız üçüncü taraf kimlik avı benzetimi girişleri **, Kimlik Avı simülasyonu** sekmesinde görüntülenir.
+
+## <a name="use-the-microsoft-365-defender-portal-to-modify-or-remove-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Gelişmiş teslim ilkesinde üçüncü taraf kimlik avı simülasyonlarını değiştirmek veya kaldırmak için Microsoft 365 Defender portalını kullanın
+
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **Kurallar** bölümünde **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Gelişmiş teslim** bölümüne gidin. Doğrudan **Gelişmiş teslim** sayfasına gitmek için kullanın <https://security.microsoft.com/advanceddelivery>.
+
+2. **Gelişmiş teslim** sayfasında **Kimlik avı simülasyonu** sekmesini seçin ve düzenle simgesine tıklayın![.](../../media/m365-cc-sc-edit-icon.png) **Düzenle'yi seçin**.
+
+3. Açılan **Üçüncü taraf kimlik avı simülasyonunu düzenle** açılır öğesinde, önceki bölümde açıklandığı gibi **Etki Alanı**, **Ip Gönderme** ve **Simülasyon URL'leri** için girdiler ekler veya kaldırırsınız.
+
+   Tüm girişleri kaldırmak için Kaldır'a tıklayın ![Kaldır simgesi.](../../media/m365-cc-sc-remove-selection-icon.png) seçili başka etki alanı, IP veya URL kalmayıncaya kadar her değerin yanında.
+
+4. İşiniz bittiğinde **Kaydet'e** ve ardından **Kapat'a** tıklayın.
 
 ## <a name="additional-scenarios-that-require-filtering-bypass"></a>Filtreleme atlama gerektiren ek senaryolar
 
-Gelişmiş teslim ilkesinin size yardımcı olabileceği iki senaryoya ek olarak, filtrelemeyi atlamanızı gerektirebilecek başka senaryolar da vardır:
+Gelişmiş teslim ilkesinin size yardımcı olabileceği iki senaryoya ek olarak, filtrelemeyi atlamanız gerekebilecek başka senaryolar da vardır:
 
 - **Üçüncü taraf filtreleri**: Etki alanınızın MX kaydı Office 365 işaret _etmiyorsa_ (iletiler önce başka bir yere yönlendirilir), [varsayılan olarak güvenli](secure-by-default.md) _kullanılamaz_. Koruma eklemek isterseniz Bağlayıcılar için Gelişmiş Filtreleme'yi ( _atlama listesi_ olarak da bilinir) etkinleştirmeniz gerekir. Daha fazla bilgi için bkz. [Exchange Online ile üçüncü taraf bulut hizmeti kullanarak posta akışını yönetme](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud). Bağlayıcılar için Gelişmiş Filtreleme istemiyorsanız, üçüncü taraf filtreleme tarafından zaten değerlendirilmiş iletiler için Microsoft filtrelemesini atlamak için posta akışı kurallarını (aktarım kuralları olarak da bilinir) kullanın. Daha fazla bilgi için bkz. [İletilerde SCL'yi ayarlamak için posta akışı kurallarını kullanma](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 - **Gözden geçirilmekte olan hatalı pozitifler**: Microsoft tarafından [yönetici gönderimleri](admin-submission.md) aracılığıyla analiz edilmeye devam eden belirli iletilere geçici olarak izin vererek hatalı olarak Microsoft'a kötü olarak işaretlenen bilinen iyi iletileri (hatalı pozitifler) bildirmek isteyebilirsiniz. Tüm geçersiz kılmalarda olduğu gibi, bu izinlerin de geçici olması _**kesinlikle önerilir**_ .
 
-## <a name="security--compliance-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Gelişmiş teslim ilkesinde SecOps posta kutuları için güvenlik & Uyumluluk PowerShell yordamları
+## <a name="powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Gelişmiş teslim ilkesinde SecOps posta kutuları için PowerShell yordamları
 
-Güvenlik & Uyumluluğu PowerShell'de, gelişmiş teslim ilkesindeki SecOps posta kutularının temel öğeleri şunlardır:
+PowerShell'de, gelişmiş teslim ilkesindeki SecOps posta kutularının temel öğeleri şunlardır:
 
 - **SecOps geçersiz kılma ilkesi**: **-SecOpsOverridePolicy cmdlet'leri tarafından\*** denetlendi.
 - **SecOps geçersiz kılma kuralı**: **-SecOpsOverrideRule cmdlet'leri tarafından\*** denetlendi.
@@ -169,7 +195,7 @@ PowerShell'de gelişmiş teslim ilkesinde SecOps posta kutusunu yapılandırmak 
 
 #### <a name="step-1-use-powershell-to-create-the-secops-override-policy"></a>1. Adım: SecOps geçersiz kılma ilkesini oluşturmak için PowerShell kullanma
 
-SecOps geçersiz kılma ilkesini oluşturmak için aşağıdaki söz dizimini kullanın:
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki söz dizimini kullanın:
 
 ```powershell
 New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>
@@ -188,7 +214,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [New-SecOpsOverridePo
 
 #### <a name="step-2-use-powershell-to-create-the-secops-override-rule"></a>2. Adım: SecOps geçersiz kılma kuralını oluşturmak için PowerShell kullanma
 
-Bu örnek, belirtilen ayarlarla SecOps posta kutusu kuralını oluşturur.
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki komutu çalıştırın:
 
 ```powershell
 New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
@@ -201,7 +227,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [New-SecOpsOverrideRu
 
 ### <a name="use-powershell-to-view-the-secops-override-policy"></a>SecOps geçersiz kılma ilkesini görüntülemek için PowerShell kullanma
 
-Bu örnek, tek ve tek SecOps posta kutusu ilkesi hakkında ayrıntılı bilgi döndürür.
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) bu örnek, tek ve tek SecOps posta kutusu ilkesi hakkında ayrıntılı bilgiler döndürür.
 
 ```powershell
 Get-SecOpsOverridePolicy
@@ -211,7 +237,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-SecOpsOverridePo
 
 ### <a name="use-powershell-to-view-secops-override-rules"></a>SecOps geçersiz kılma kurallarını görüntülemek için PowerShell kullanma
 
-Bu örnek, SecOps geçersiz kılma kuralları hakkında ayrıntılı bilgi döndürür.
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell), bu örnek SecOps geçersiz kılma kuralları hakkında ayrıntılı bilgi döndürür.
 
 ```powershell
 Get-SecOpsOverrideRule
@@ -231,7 +257,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-SecOpsOverrideRu
 
 ### <a name="use-powershell-to-modify-the-secops-override-policy"></a>SecOps geçersiz kılma ilkesini değiştirmek için PowerShell kullanma
 
-SecOps geçersiz kılma ilkesini değiştirmek için aşağıdaki söz dizimini kullanın:
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki söz dizimini kullanın:
 
 ```powershell
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy [-AddSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>] [-RemoveSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>]
@@ -256,7 +282,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-SecOpsOverrideRu
 
 ### <a name="use-powershell-to-remove-the-secops-override-policy"></a>SecOps geçersiz kılma ilkesini kaldırmak için PowerShell kullanma
 
-Bu örnek SecOps Posta Kutusu ilkesini ve ilgili kuralı kaldırır.
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) bu örnek SecOps Posta Kutusu ilkesini ve ilgili kuralı kaldırır.
 
 ```powershell
 Remove-SecOpsOverridePolicy -Identity SecOpsOverridePolicy
@@ -266,7 +292,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz [. Remove-SecOpsOverri
 
 ### <a name="use-powershell-to-remove-secops-override-rules"></a>SecOps geçersiz kılma kurallarını kaldırmak için PowerShell kullanma
 
-SecOps geçersiz kılma kuralını kaldırmak için aşağıdaki söz dizimini kullanın:
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki söz dizimini kullanın:
 
 ```powershell
 Remove-SecOpsOverrideRule -Identity <RuleIdentity>
@@ -280,9 +306,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 Ayrıntılı söz dizimi ve parametre bilgileri için bkz [. Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule).
 
-## <a name="security--compliance-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Gelişmiş teslim ilkesinde üçüncü taraf kimlik avı simülasyonları için Güvenlik & Uyumluluğu PowerShell yordamları
+## <a name="powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Gelişmiş teslim ilkesinde üçüncü taraf kimlik avı simülasyonları için PowerShell yordamları
 
-Güvenlik & Uyumluluğu PowerShell'de, gelişmiş teslim ilkesindeki üçüncü taraf kimlik avı simülasyonlarının temel öğeleri şunlardır:
+PowerShell'de, gelişmiş teslim ilkesindeki üçüncü taraf kimlik avı simülasyonlarının temel öğeleri şunlardır:
 
 - **Kimlik avı simülasyonu geçersiz kılma ilkesi**: **-PhishSimOverridePolicy cmdlet'leri tarafından\*** denetleniyor.
 - **Kimlik avı benzetimi geçersiz kılma kuralı**: **-PhishSimOverrideRule cmdlet'leri tarafından\*** denetleniyor.
@@ -307,7 +333,7 @@ PowerShell'de üçüncü taraf kimlik avı simülasyonu yapılandırmak çok ad�
 
 #### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>1. Adım: Kimlik avı benzetimi geçersiz kılma ilkesini oluşturmak için PowerShell kullanma
 
-Bu örnek, kimlik avı benzetimi geçersiz kılma ilkesini oluşturur.
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) bu örnek, kimlik avı benzetimi geçersiz kılma ilkesini oluşturur.
 
 ```powershell
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
@@ -319,7 +345,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [New-PhishSimOverride
 
 #### <a name="step-2-use-powershell-to-create-the-phishing-simulation-override-rule"></a>2. Adım: Kimlik avı benzetimi geçersiz kılma kuralını oluşturmak için PowerShell kullanma
 
-Aşağıdaki sözdizimini kullanın:
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki söz dizimini kullanın:
 
 ```powershell
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
@@ -343,13 +369,13 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [New-PhishSimOverride
 
 #### <a name="step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow"></a>3. Adım: (İsteğe bağlı) İzin vermek üzere kimlik avı benzetimi URL'lerini tanımlamak için PowerShell kullanın
 
-Aşağıdaki sözdizimini kullanın:
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki söz dizimini kullanın:
 
 ```powershell
 New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URL10>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
 ```
 
-URL söz dizimi hakkında ayrıntılı bilgi için bkz. [Kiracı İzin Ver/Engelle Listesi için URL söz dizimi](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list).
+URL söz dizimi hakkında ayrıntılı bilgi için bkz. [Kiracı İzin Ver/Engelle Listesi için URL söz dizimi](allow-block-urls.md#url-syntax-for-the-tenant-allowblock-list)
 
 Bu örnek, belirtilen üçüncü taraf kimlik avı benzetimi URL'si için süre sonu olmayan bir URL izin girişi ekler.
 
@@ -361,7 +387,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [New-TenantAllowBlock
 
 ### <a name="use-powershell-to-view-the-phishing-simulation-override-policy"></a>Kimlik avı benzetimi geçersiz kılma ilkesini görüntülemek için PowerShell kullanma
 
-Bu örnek, tek ve tek kimlik avı benzetimi geçersiz kılma ilkesi hakkında ayrıntılı bilgiler döndürür.
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) bu örnek, tek ve tek kimlik avı benzetimi geçersiz kılma ilkesi hakkında ayrıntılı bilgi döndürür.
 
 ```powershell
 Get-PhishSimOverridePolicy
@@ -371,7 +397,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-PhishSimOverride
 
 ### <a name="use-powershell-to-view-phishing-simulation-override-rules"></a>Kimlik avı benzetimi geçersiz kılma kurallarını görüntülemek için PowerShell kullanma
 
-Bu örnek, kimlik avı simülasyonu geçersiz kılma kuralları hakkında ayrıntılı bilgi döndürür.
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) bu örnek, kimlik avı benzetimi geçersiz kılma kuralları hakkında ayrıntılı bilgi döndürür.
 
 ```powershell
 Get-PhishSimOverrideRule
@@ -391,7 +417,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-PhishSimOverride
 
 ### <a name="use-powershell-to-view-the-allowed-phishing-simulation-url-entries"></a>İzin verilen kimlik avı benzetimi URL girişlerini görüntülemek için PowerShell kullanma
 
-İzin verilen kimlik avı benzetimi URL'lerini görüntülemek için aşağıdaki komutu çalıştırın:
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki komutu çalıştırın:
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery
@@ -401,7 +427,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-TenantAllowBlock
 
 ### <a name="use-powershell-to-modify-the-phishing-simulation-override-policy"></a>Kimlik avı benzetimi geçersiz kılma ilkesini değiştirmek için PowerShell kullanma
 
-Kimlik avı benzetimi geçersiz kılma ilkesini değiştirmek için aşağıdaki söz dizimini kullanın:
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki söz dizimini kullanın:
 
 ```powershell
 Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy [-Comment "<DescriptiveText>"] [-Enabled <$true | $false>]
@@ -417,7 +443,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-PhishSimOverride
 
 ### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>Kimlik avı benzetimi geçersiz kılma kurallarını değiştirmek için PowerShell kullanma
 
-Kimlik avı benzetimi geçersiz kılma kuralını değiştirmek için aşağıdaki söz dizimini kullanın:
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki söz dizimini kullanın:
 
 ```powershell
 Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
@@ -440,7 +466,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-PhishSimOverride
 
 URL değerlerini doğrudan değiştiremezsiniz. [Var olan URL girdilerini kaldırabilir](#use-powershell-to-remove-the-allowed-phishing-simulation-url-entries) ve bu makalede açıklandığı gibi [yeni URL girdileri ekleyebilirsiniz](#step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow).
 
-İzin verilen bir kimlik avı benzetimi URL girişinin diğer özelliklerini (örneğin, son kullanma tarihi veya açıklamalar) değiştirmek için aşağıdaki söz dizimini kullanın:
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell), izin verilen bir kimlik avı benzetimi URL girişinin diğer özelliklerini (örneğin, son kullanma tarihi veya açıklamalar) değiştirmek için aşağıdaki söz dizimini kullanın:
 
 ```powershell
 Set-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery <[-NoExpiration] | [-ExpirationDate <DateTime>]> [-Notes <String>]
@@ -458,7 +484,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-TenantAllowBlock
 
 ### <a name="use-powershell-to-remove-a-phishing-simulation-override-policy"></a>Kimlik avı benzetimi geçersiz kılma ilkesini kaldırmak için PowerShell kullanma
 
-Bu örnek, kimlik avı benzetimi geçersiz kılma ilkesini ve ilgili kuralı kaldırır.
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) bu örnek, kimlik avı benzetimi geçersiz kılma ilkesini ve buna karşılık gelen kuralı kaldırır.
 
 ```powershell
 Remove-PhishSimOverridePolicy -Identity PhishSimOverridePolicy
@@ -468,7 +494,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz [. Remove-PhishSimOver
 
 ### <a name="use-powershell-to-remove-phishing-simulation-override-rules"></a>Kimlik avı benzetimi geçersiz kılma kurallarını kaldırmak için PowerShell kullanma
 
-Kimlik avı benzetimi geçersiz kılma kuralını kaldırmak için aşağıdaki söz dizimini kullanın:
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki söz dizimini kullanın:
 
 ```powershell
 Remove-PhishSimOverrideRule -Identity <RuleIdentity>
@@ -484,7 +510,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz [. Remove-PhishSimOver
 
 ### <a name="use-powershell-to-remove-the-allowed-phishing-simulation-url-entries"></a>İzin verilen kimlik avı benzetimi URL girişlerini kaldırmak için PowerShell kullanma
 
-Mevcut kimlik avı simülasyonu URL girdisini kaldırmak için aşağıdaki söz dizimini kullanın:
+[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki söz dizimini kullanın:
 
 ```powershell
 Remove-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery

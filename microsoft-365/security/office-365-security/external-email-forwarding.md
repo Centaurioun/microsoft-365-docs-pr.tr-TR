@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 11/17/2021
+ms.date: 08/18/2022
 audience: ITPro
 ms.topic: overview
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ ms.custom:
 description: Bu makale dış e-posta iletme, Otomatik iletme, 5.7.520 Erişim Reddedildi iletileri, dış iletmeyi devre dışı bırakma, 'Yöneticiniz dış iletmeyi devre dışı bırakmış' iletileri ve giden istenmeyen posta önleme ilkesi gibi konuları kapsar.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c10433cd858ebe160ac4a38cfee78b57d39b80df
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: e540fc99cb06b18d8a602ffa33f290e8969a7ad5
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487158"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385241"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Microsoft 365'te otomatik dış e-posta iletmeyi denetleme
 
@@ -33,7 +33,7 @@ ms.locfileid: "66487158"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Yönetici olarak, otomatik olarak iletilen iletileri dış alıcılara (kuruluşunuzun dışındaki alıcılar) kısıtlamak veya denetlemek için şirket gereksinimleriniz olabilir. E-posta iletme yararlı olabilir, ancak bilgilerin olası açığa çıkması nedeniyle güvenlik riski de oluşturabilir. Saldırganlar bu bilgileri kuruluşunuza veya iş ortaklarınıza saldırmak için kullanabilir.
+Yönetici olarak, otomatik olarak iletilen iletileri dış alıcılara (kuruluşunuzun dışındaki alıcılar) kısıtlamak veya denetlemek için şirket gereksinimleriniz olabilir. Email iletme yararlı olabilir, ancak bilgilerin olası açığa çıkması nedeniyle güvenlik riski de oluşturabilir. Saldırganlar bu bilgileri kuruluşunuza veya iş ortaklarınıza saldırmak için kullanabilir.
 
 Aşağıdaki otomatik iletme türleri Microsoft 365'te kullanılabilir:
 

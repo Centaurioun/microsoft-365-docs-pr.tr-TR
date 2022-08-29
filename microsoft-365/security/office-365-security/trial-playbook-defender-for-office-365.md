@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 için Microsoft Defender çözümleri deneme playbook'u.
+ms.technology: mdo
 ms.custom: trial-playbook
-ms.openlocfilehash: 6f19499a3c00fc1520d8bffb64336a789c017d28
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
+ms.openlocfilehash: 942752a8fc13a9644558f20567d7dd32e991867b
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687770"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408075"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Deneme playbook'u: Office 365 için Microsoft Defender
 
@@ -47,7 +48,7 @@ Artık iki yoldan biriyle Office 365 için Defender deneme seçeneğiniz vardır
 
 Bu kılavuzdaki önerileri kullanarak Office 365 için Defender koruma ilkeleri tanımlamanıza, kuruluşunuza yönelik tehditleri analiz etmeye ve saldırılara yanıt vermenize nasıl yardımcı olabileceğini öğreneceksiniz.
 
-Haydi başlayalım!
+Başlayalım!
 
 ## <a name="blocking-mode"></a>Engelleme modu
 
@@ -83,7 +84,7 @@ Ortamınız hakkında daha fazla bilgi edinmek için Office 365 için Defender'd
 - [Posta akışı durum raporuyla](view-email-security-reports.md#mailflow-status-report) tehditlerin nerede engellendiğini görün.
 - Kullanıcılar tarafından görüntülenen veya sistem tarafından engellenen [bağlantıları gözden geçirin](view-reports-for-mdo.md#url-protection-report).
 
-:::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="e-posta & işbirliği raporları Microsoft 365 Defender portalında." lightbox="../../media/mdo-trial-playbook-reporting.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="Microsoft 365 Defender portalında Email & işbirliği raporları." lightbox="../../media/mdo-trial-playbook-reporting.png":::
 
 ### <a name="step-2-intermediate-steps-in-blocking-mode"></a>2. Adım: Engelleme modunda ara adımlar
 
@@ -146,14 +147,14 @@ Tehditleri gözden geçirmek, önceliklendirmek ve yanıtlamak için Otomatik ar
 
 Özel algılama kuralları yazmak, ortamınızdaki olayları proaktif olarak incelemek ve tehdit göstergelerini bulmak için Gelişmiş tehdit avcılığı kullanın. Ortamınızdaki ham verileri keşfedin.
 
-- [Özel algılama kuralları oluşturun](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting).
+- [Özel algılama kuralları oluşturun](../defender/custom-detections-overview.md).
 - Başkaları tarafından oluşturulan [paylaşılan sorgulara erişin](../defender/advanced-hunting-shared-queries.md).
 
 Daha fazla bilgi edinmek için bu videoyu izleyin: [Microsoft 365 Defender ile tehdit avcılığı - YouTube](https://www.youtube.com/watch?v=l3OmH4U6XAs&list=PL3ZTgFEc7Lyt1O81TZol31YXve4e6lyQu&index=4).
 
 #### <a name="train-users-to-spot-threats-by-simulating-attacks"></a>Saldırıların benzetimlerini yaparak kullanıcıları tehditleri tespit etmeye eğitin
 
-Office 365 için Defender'daki Saldırı simülasyonu eğitimiyle tehditleri tanımlamak ve şüpheli iletileri bildirmek için kullanıcılarınızı doğru bilgiyle donatın.
+Tehditleri tanımlamak ve şüpheli iletileri Office 365 için Defender Saldırı simülasyonu eğitimi bildirmek için kullanıcılarınızı doğru bilgiyle donatın.
 
 - Savunmasız kullanıcıları tanımlamak için [gerçekçi tehditlerin benzetimini](attack-simulation-training.md) yapmak.
 - Simülasyon sonuçlarına göre kullanıcılara [eğitim atayın](attack-simulation-training.md#assign-training).
@@ -222,7 +223,7 @@ Daha fazla bilgi için bkz. [Üçüncü taraf koruma hizmetinden veya cihazında
 
 #### <a name="train-users-to-spot-threats-by-simulating-attacks-in-auditing-mode"></a>Denetim modunda saldırıların benzetimlerini yaparak kullanıcıları tehditleri tespit etmeye eğitin
 
-Office 365 için Defender'daki Saldırı simülasyonu eğitimiyle tehditleri tanımlamak ve şüpheli iletileri bildirmek için kullanıcılarınızı doğru bilgiyle donatın.
+Tehditleri tanımlamak ve şüpheli iletileri Office 365 için Defender Saldırı simülasyonu eğitimi bildirmek için kullanıcılarınızı doğru bilgiyle donatın.
 
 - Savunmasız kullanıcıları tanımlamak için [gerçekçi tehditlerin benzetimini](attack-simulation-training.md) yapmak.
 - Simülasyon sonuçlarına göre kullanıcılara [eğitim atayın](attack-simulation-training.md#assign-training).

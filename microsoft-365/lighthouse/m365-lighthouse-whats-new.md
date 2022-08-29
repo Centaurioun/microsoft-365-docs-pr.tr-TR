@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP' ler) için her ay Microsoft 365 Lighthouse eklenen, değiştirilen ve düzeltilmiş olanlara bakın.
-ms.openlocfilehash: d7538cf55feaf4adc6d0d741f21b13c4a9e19b80
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: fd5e7d611146237482fd53753c7362ce83639225
+ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106459"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67432298"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'daki yenilikler
 
@@ -30,6 +30,30 @@ ms.locfileid: "67106459"
 
 > [!NOTE]
 > Bazı özellikler müşterilerimiz için farklı hızlarda kullanıma sunulur. Henüz bir özellik görmüyorsanız, yakında görmeniz gerekir.
+
+## <a name="august-2022"></a>Ağustos 2022
+
+### <a name="view-and-manage-inactive-user-accounts"></a>Etkin olmayan kullanıcı hesaplarını görüntüleme ve yönetme 
+
+Microsoft 365 Lighthouse artık yönetilen kiracılarınızdaki tüm etkin olmayan kullanıcı hesaplarının listesini sağlar. Listeye erişmek için, Microsoft 365 Lighthouse sol gezinti bölmesinden **Etkin Olmayan Kullanıcılar'ı**  >  seçin. Hala etkin olan ancak son altı ay içinde kullanılmayan hesapları izlemek ve temizlemek için bu listeyi kullanarak güvenlik risklerini azaltabilirsiniz. 
+
+### <a name="microsoft-edge-policy-deployment"></a>Microsoft Edge ilke dağıtımı   
+
+Varsayılan taban çizgisine bir Microsoft Edge ilke dağıtım görevi ekledik. Bu dağıtım görevi, kimlik avına ve kötü amaçlı yazılımlara karşı yerleşik koruma içeren Edge güvenlik ayarlarıyla müşteri kiracınızın tarayıcılarının güvenliğini sağlamanızı sağlar. Microsoft Edge'in, Windows 10 veya sonraki sürümleri çalıştıran cihazlara sahip küçük ve orta ölçekli işletmeler için Google Chromium'dan daha güvenli olduğu kanıtlanmıştır.
+
+Daha fazla bilgi için bkz. [İşletmeniz için Microsoft Edge güvenliği](/deployedge/ms-edge-security-for-business).
+
+### <a name="deployment-status-reporting"></a>Dağıtım durumu raporlama 
+
+Microsoft 365 Lighthouse artık dağıtım çalışmalarınızı uygun şekilde iyileştirmenize ve önceliklendirmenize yardımcı olmak için her dağıtım planı için bir dağıtım durumu sağlar.
+
+### <a name="enhanced-deployment-insights-for-licensing"></a>Lisanslama için gelişmiş dağıtım içgörüleri
+
+Microsoft 365 Lighthouse artık yetersiz lisanslama nedeniyle hangi dağıtım görevlerinin hangi kullanıcılar için tamamlanamamasıyla ilgili içgörüler sağlar. Bu içgörüler, dağıtım planınızı tamamlamak için lisanslamayı veya dağıtım planını buna göre ayarlamanıza yardımcı olur.
+
+### <a name="enhanced-baseline-deployment-with-direct-links-to-existing-configurations"></a>Mevcut yapılandırmalara doğrudan bağlantılar içeren gelişmiş temel dağıtım
+
+Müşteri kiracılarınızın iyi durumda ve güvenli olduğundan emin olmak için temel dağıtım deneyimini daha hızlı ve kolay hale getirmek için geliştirdik. Algılanan müşteri kiracı yapılandırmalarına bağlantılar ekledik, böylece ilgili yönetim portalında bu kiracı yapılandırmalarını kolayca bulabilir, gözden geçirebilir ve değiştirebilirsiniz.
 
 ## <a name="july-2022"></a>Temmuz 2022
 
@@ -49,7 +73,7 @@ Microsoft 365 Lighthouse artık aşağıdakiler sayesinde tüm yönetilen kirac�
 
 ### <a name="support-for-microsoft-365-e5-customers"></a>Microsoft 365 E5 müşterileri için destek
 
-Microsoft 365 E5 müşterileri Microsoft 365 Lighthouse eklemenizi sağlamak için ekleme gereksinimlerimizi değiştirdik. Microsoft 365 Lighthouse'nin ekleme için desteklediği genişletilmiş lisans listesi Microsoft 365 İş Ekstra, Microsoft 365 E3, Microsoft 365 E5, İş için Microsoft Defender ve İş için Windows 365. Bu lisanslardan en az birine sahip olan müşteriler, temsilci erişim izinleri gereksinimlerini karşılar ve Microsoft 365 Lighthouse'da yönetilebilen lisanslı kullanıcı sayısı üst sınırını aşmaz.  
+Microsoft 365 E5 müşterileri Microsoft 365 Lighthouse eklemenizi sağlamak için ekleme gereksinimlerimizi değiştirdik. Microsoft 365 Lighthouse'nin ekleme için desteklediği genişletilmiş lisans listesi Microsoft 365 İş Ekstra, Microsoft 365 E3, Microsoft 365 E5, İş için Microsoft Defender ve İş için Windows 365. Bu lisanslardan en az birine sahip olan müşteriler, temsilci erişim izinleri gereksinimlerini karşılar ve Microsoft 365 Lighthouse'de yönetilebilen lisanslı kullanıcı sayısı üst sınırını aşmaz.  
 
 Gereksinimlerin tam listesi için bkz[. Microsoft 365 Lighthouse gereksinimleri](m365-lighthouse-requirements.md).
 
@@ -83,7 +107,7 @@ Daha fazla kullanıcı bilgisi ve kullanıcıları daha iyi yönetmek için ger�
 
 ### <a name="delegated-access-type-and-roles-on-tenants-page"></a>Kiracılar sayfasında temsilci erişim türü ve rolleri
 
-**Kiracılar** sayfasını, **Temsilci** erişim sütunu altında müşteri başına Yönetilen Hizmet Sağlayıcısı'nın (MSP) temsilci erişim türünü (Yok, DAP, GDAP veya Her İkisi DAP & GDAP) listelenecek şekilde güncelleştirdik. Ayrıca oturum açmış bir kullanıcının müşteri başına DAP ve GDAP rollerini listeleyen **Rolleriniz** adlı yeni bir sütun ekledik. **Kiracılar** sayfasındaki bu iki geliştirme, iş ortağı teknisyenlerinin her müşteri için hangi tür temsilci yönetim izinlerinin kullanılabilir olduğunu ve onlara açıkça hangi temsilci rollerinin verildiğini anlamasını kolaylaştırır.
+**Kiracılar** sayfasını, **Temsilci** erişim sütunu altında müşteri başına Yönetilen Hizmet Sağlayıcısı'nın (MSP) temsilci erişim türünü (Yok, DAP, GDAP veya Her İkisi DAP & GDAP) listelenecek şekilde güncelleştirdik. Ayrıca oturum açmış bir kullanıcının müşteri başına DAP ve GDAP rollerini listeleyen **Rolleriniz** adlı yeni bir sütun ekledik. **Kiracılar** sayfasında yapılan bu iki geliştirme, MSP teknisyenlerinin her müşteri için hangi tür temsilci yönetim izinlerinin kullanılabilir olduğunu ve onlara açıkça hangi temsilci rollerinin verildiğini anlamasını kolaylaştırır.
 
 Daha fazla bilgi için bkz. [Microsoft 365 Lighthouse'da izinlere genel bakış](m365-lighthouse-overview-of-permissions.md).
 

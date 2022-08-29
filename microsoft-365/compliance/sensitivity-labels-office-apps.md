@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b8ee8f3d4a5ef1176c482aa6cb54d866fd4dd41
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 18153facee37f52ea0bcc5baa5e5193f63e06360
+ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306580"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67419968"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -76,9 +76,8 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 |[Kullanıcıların e-postalarına ve belgelerine etiket uygulamasını gerektirme](#require-users-to-apply-a-label-to-their-email-and-documents)   | Güncel Kanal: 2101+ <br /><br> Aylık Kurumsal Kanal: 2101+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Hassas bilgi türlerini kullanma                    | Güncel Kanal: 2009+ <br /><br> Aylık Kurumsal Kanal: 2009+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.44+ | İnceleme altında | İnceleme altında | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Eğitilebilir sınıflandırıcıları kullanma                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | İnceleme altında | İnceleme altında | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
-|Etiketlenmiş ve şifrelenmiş belgeler için [birlikte yazma ve Otomatik Kaydetme](sensitivity-labels-coauthoring.md) desteği | Güncel Kanal: 2107+ <br /><br> Aylık Kurumsal Kanal: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | Önizleme: [Kabul ettiğinizde](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) 2,58+ | Önizleme: [Kabul ettiğinizde](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) 16.0.14931+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[PDF desteği](#pdf-support)| Önizleme: [Beta Kanalı](https://office.com/insider) |  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
-
+|Etiketlenmiş ve şifrelenmiş belgeler için [birlikte yazma ve Otomatik Kaydetme](sensitivity-labels-coauthoring.md) desteği | Güncel Kanal: 2107+ <br /><br> Aylık Kurumsal Kanal: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[PDF desteği](#pdf-support)| Önizleme: [Geçerli Kanal (Önizleme)](https://office.com/insider) |  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook'ta duyarlılık etiketi özellikleri
 
@@ -231,41 +230,13 @@ Başka bir deyişle, belgeleri farklı etiket adları kullanan başka bir kurulu
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>Şifrelenmiş belgeleri dış kullanıcılarla paylaşma
 
-Erişimi kendi kuruluşunuzdaki kullanıcılara kısıtlamanın yanı sıra, Azure Active Directory'de hesabı olan diğer tüm kullanıcılara da genişletebilirsiniz. Ancak, kuruluşunuz Koşullu Erişim ilkeleri kullanıyorsa, ek dikkat edilmesi gerekenler için [sonraki bölüme](#conditional-access-policies) bakın.
+Kendi kuruluşunuzdaki kullanıcılara erişimi kısıtlayabilirsiniz ancak erişimi Azure Active Directory'de (Azure AD) hesabı olan diğer tüm kullanıcılara da genişletebilirsiniz. Varsayılan olarak, bu dış kullanıcıların kimlikleri ek yapılandırma olmadan doğrulanır. Ancak, [dış kimlikler Azure AD kiracılar arası erişim ayarları](/azure/active-directory/external-identities/cross-tenant-access-overview) ve [Koşullu Erişim](/azure/active-directory/conditional-access/overview) için ek yapılandırma gerekebilir. 
+
+Dış kullanıcıların Azure AD içinde bir hesabı yoksa, kiracınızdaki konuk hesaplarını kullanarak kimlik doğrulaması yapabilir. Bu konuk hesapları, SharePoint ve OneDrive'da [Office dosyaları için duyarlılık etiketlerini etkinleştirdiğinizde SharePoint veya OneDrive'daki](sensitivity-labels-sharepoint-onedrive-files.md) paylaşılan belgelere erişmek için de kullanılabilir.
+
+İsteğe bağlı Azure AD özellikleri ve kimlik doğrulama gereksinimleri için konuk hesaplarını kullanma hakkında daha fazla bilgi için bkz. [şifreleme içeriği için Azure AD yapılandırması](encryption-azure-ad-configuration.md).
 
 Tüm Office uygulamaları ve [RMS kullanan diğer uygulamalar](/azure/information-protection/requirements-applications#rms-enlightened-applications) , kullanıcı başarıyla kimlik doğrulamasından geçtikten sonra şifrelenmiş belgeleri açabilir. 
-
-Dış kullanıcıların Azure Active Directory'de bir hesabı yoksa, kiracınızdaki konuk hesaplarını kullanarak kimlik doğrulaması yapabilir. Bu konuk hesapları, SharePoint ve OneDrive'da [Office dosyaları için duyarlılık etiketlerini etkinleştirdiğinizde SharePoint veya OneDrive'daki](sensitivity-labels-sharepoint-onedrive-files.md) paylaşılan belgelere erişmek için de kullanılabilir:
-
-- Bir seçenek, bu konuk hesaplarını kendiniz oluşturmaktır. Bu kullanıcıların zaten kullandığı herhangi bir e-posta adresini belirtebilirsiniz. Örneğin, Gmail adresleri.
-    
-    Bu seçeneğin avantajı, şifreleme ayarlarında e-posta adreslerini belirterek belirli kullanıcılara erişimi ve hakları kısıtlayabilirsiniz. Dezavantajı, hesap oluşturma ve etiket yapılandırmasıyla koordinasyon için yönetim ek yüküdür.
-
-- Diğer bir seçenek de, kullanıcılarınız bağlantıları paylaştığında konuk hesaplarının otomatik olarak oluşturulması için [Azure AD B2B ile SharePoint ve OneDrive tümleştirmesini](/sharepoint/sharepoint-azureb2b-integration) kullanmaktır.
-    
-    Hesaplar otomatik olarak oluşturulduğundan ve daha basit etiket yapılandırmasından dolayı bu seçeneğin avantajı en düşük yönetim yüküdür. Bu senaryo için, e-posta adreslerini önceden bilmediğiniz için [Kimliği doğrulanmış herhangi bir kullanıcı ekle](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) şifreleme seçeneğini belirlemeniz gerekir. Dezavantajı, bu ayarın erişim ve kullanım haklarını belirli kullanıcılarla kısıtlamanıza izin vermemesidir.
-
-Dış kullanıcılar, Windows ve Microsoft 365 Uygulamaları ([eski adıyla Office 365 uygulamalar](/deployoffice/name-change)) veya Office 2019'un tek başına sürümünü kullandıklarında şifrelenmiş belgeleri açmak için bir Microsoft hesabı da kullanabilir. Daha yakın zamanda diğer platformlar için desteklenen Microsoft hesapları, şifrelenmiş belgeleri macOS (Microsoft 365 Uygulamaları, sürüm 16.42+), Android (sürüm 16.0.13029+) ve iOS (sürüm 2.42+) üzerinde açmak için de desteklenir. Örneğin, kuruluşunuzdaki bir kullanıcı şifrelenmiş bir belgeyi kuruluşunuzun dışındaki bir kullanıcıyla paylaşır ve şifreleme ayarları dış kullanıcı için bir Gmail e-posta adresi belirtir. Bu dış kullanıcı, Gmail e-posta adresini kullanan kendi Microsoft hesabını oluşturabilir. Ardından, bu hesapla oturum açtıktan sonra belgeyi açabilir ve kendileri için belirtilen kullanım kısıtlamalarına göre düzenleyebilirler. Bu senaryonun izlenecek yol örneği için bkz. [Korumalı belgeyi açma ve düzenleme](/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
-
-> [!NOTE]
-> Microsoft hesabının e-posta adresi, şifreleme ayarlarına erişimi kısıtlamak için belirtilen e-posta adresiyle eşleşmelidir.
-
-Microsoft hesabı olan bir kullanıcı şifreli bir belgeyi bu şekilde açtığında, aynı ada sahip bir konuk hesabı zaten mevcut değilse kiracı için otomatik olarak bir konuk hesabı oluşturur. Konuk hesabı mevcut olduğunda, desteklenen masaüstü ve mobil Office uygulamalarından şifrelenmiş belgeleri açmaya ek olarak Web üzerinde Office kullanarak SharePoint ve OneDrive'da belgeleri açmak için kullanılabilir.
-
-Ancak otomatik konuk hesabı, çoğaltma gecikme süresi nedeniyle bu senaryoda hemen oluşturulmaz. Etiket şifreleme ayarlarınızın bir parçası olarak kişisel e-posta adresleri belirtirseniz, Azure Active Directory'de ilgili konuk hesaplarını oluşturmanızı öneririz. Ardından bu kullanıcılara kuruluşunuzdan şifrelenmiş bir belge açmak için bu hesabı kullanmaları gerektiğini bildirin.
-
-> [!TIP]
-> Dış kullanıcıların desteklenen bir Office istemci uygulaması kullanacağından emin olmadığınızdan, konuk hesapları oluşturduktan sonra (belirli kullanıcılar için) SharePoint ve OneDrive bağlantılarını paylaşmak veya [Azure AD B2B ile SharePoint ve OneDrive tümleştirmesi](/sharepoint/sharepoint-azureb2b-integration-preview) kullandığınızda (kimliği doğrulanmış herhangi bir kullanıcı için) dış kullanıcılarla güvenli işbirliğini desteklemek için daha güvenilir bir yöntemdir.
-
-### <a name="conditional-access-policies"></a>Koşullu Erişim ilkeleri
-
-Kuruluşunuz [Azure Active Directory Koşullu Erişim ilkeleri](/azure/active-directory/conditional-access/overview) uyguladıysa, bu ilkelerin yapılandırmasını denetleyin. İlkeler **Microsoft Azure Information Protection** içeriyorsa ve ilke dış kullanıcılara genişletildiyse, kendi kiracılarında Azure AD hesabı olsa bile bu dış kullanıcıların kiracınızda bir konuk hesabı olmalıdır.
-
-Bu konuk hesabı olmadan, şifrelenmiş belgeyi açamaz ve bir hata iletisi göremezler. İleti metni, bu senaryonun **Oturumu kapatma ve farklı bir Azure Active Directory kullanıcı hesabıyla yeniden oturum açma** konusunda yanlış yönergeyle, hesabın kiracıya dış kullanıcı olarak eklenmesi gerektiğini bildirebilir.
-
-Etiketlerinizle şifrelenmiş belgeleri açması gereken dış kullanıcılar için kiracınızda konuk hesapları oluşturamıyor ve yapılandıramıyorsanız, Azure Information Protection Koşullu Erişim ilkelerinden kaldırmanız veya dış kullanıcıları ilkelerden dışlamanız gerekir.
-
-Duyarlılık etiketleri tarafından kullanılan şifreleme hizmeti olan Koşullu Erişim ve Azure Information Protection hakkında daha fazla bilgi için sık sorulan soruya bakın; [Azure Information Protection koşullu erişim için kullanılabilir bir bulut uygulaması olarak listelendiğini görüyorum; bu nasıl çalışır?](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Office uygulamaları içerik işaretleme ve şifreleme uyguladığında
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint ve Microsoft Teams sitelerindeki ve Microsoft 365 gruplarındaki içeriği korumak için duyarlılık etiketlerini kullanın.
-ms.openlocfilehash: d05c2e5a7dfb1fc0c7da1bcaced640bf7c20d3e7
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 7417592f4000d344fe6a093de4de02bcecba573e
+ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037654"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67417466"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Microsoft Teams, Microsoft 365 grupları ve SharePoint sitelerindeki içeriği korumak için duyarlılık etiketlerini kullanma
 
@@ -43,6 +43,8 @@ Belge ve e-postaları korumak için [duyarlılık etiketlerini](sensitivity-labe
 > Yönetilmeyen cihazlar ve kimlik doğrulama bağlamları için ayarlar, Azure Active Directory Koşullu Erişim ile birlikte çalışır. Bu ayarlar için duyarlılık etiketi kullanmak istiyorsanız bu bağımlı özelliği yapılandırmanız gerekir. Aşağıdaki yönergelere ek bilgiler eklenmiştir.
 
 Bu duyarlılık etiketini desteklenen bir kapsayıcıya uyguladığınızda, etiket otomatik olarak duyarlılık kategorisini ve yapılandırılan koruma ayarlarını siteye veya gruba uygular.
+
+Bazı etiket seçeneklerinin yapılandırma ayarlarını, aksi takdirde yöneticilerle sınırlı olan site sahiplerine genişletebileceğini unutmayın. Dış paylaşım seçenekleri ve kimlik doğrulama bağlamı için etiket ayarlarını yapılandırıp yayımladığınızda, site sahibi artık bir ekip veya site için duyarlılık etiketini uygulayarak veya değiştirerek site için bu seçenekleri ayarlayabilir ve değiştirebilir. Site sahiplerinin bu değişiklikleri yapabilmesini istemiyorsanız bu belirli etiket ayarlarını yapılandırmayın.
 
 Ancak bu kapsayıcılardaki içerik, duyarlılık kategorisinin etiketlerini veya içerik işaretleri ve şifreleme gibi dosya ve e-posta ayarlarını devralmaz. Kullanıcıların belgelerini SharePoint sitelerinde veya ekip sitelerinde etiketleyebilmesi [için, SharePoint ve OneDrive'da Office dosyaları için duyarlılık etiketlerini etkinleştirdiğinizden](sensitivity-labels-sharepoint-onedrive-files.md) emin olun.
 
@@ -195,7 +197,7 @@ SharePoint sitesine uygulanacak duyarlılık etiketi için yapılandırabileceğ
 
 |SharePoint yönetim merkezinden seçenek |MembersCanShare için eşdeğer PowerShell değeri |
 |----------------------------------------|------------------------------------------------|
-|**Site sahipleri ve üyeleri dosyaları, klasörleri ve siteyi paylaşabilir. Düzenleme izinlerine sahip kişiler dosya ve klasörleri paylaşabilir.**| MemberShareAll|
+|**Site sahipleri ve üyeleri dosyaları, klasörleri ve siteyi paylaşabilir. Düzenleme izinlerine sahip Kişiler dosya ve klasörleri paylaşabilir.**| MemberShareAll|
 |**Site sahipleri ve üyeleri ile Düzenleme izinlerine sahip kişiler dosya ve klasörleri paylaşabilir, ancak siteyi yalnızca site sahipleri paylaşabilir.**|MemberShareFileAndFolder|
 |**Yalnızca site sahipleri dosyaları, klasörleri ve siteyi paylaşabilir.**|MemberShareNone|
 

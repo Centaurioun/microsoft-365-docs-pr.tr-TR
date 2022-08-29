@@ -53,6 +53,8 @@
           href: flw-team-collaboration.md
         - name: Ön saf çalışanları ile kurumsal iletişim
           href: flw-corp-comms.md
+        - name: Çalışanlarınızın işbirliği uygulamalarını ve özelliklerini kullanmalarını sağlama
+          href: collab-features-apps-toolkit.md
     - name: Dengeli yaşam ve katılım
       items:
         - name: Çalışanlarınızın katılımını sağlayın ve dengeli yaşama odaklanın
@@ -69,6 +71,8 @@
           href: schedule-owner-for-shift-management.md
         - name: Teams'de vardiya tabanlı erişimi yönetme
           href: manage-shift-based-access-flw.md
+        - name: Çalışanlarınızın zamanı ve katılımı izlemelerine yardımcı olun
+          href: shifts-toolkit.md
         - name: Vardiya bağlayıcıları
           items:
             - name: Genel bakış

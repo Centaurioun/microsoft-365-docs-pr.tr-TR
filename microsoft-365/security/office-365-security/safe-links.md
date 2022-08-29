@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Bir kuruluşu kimlik avına ve kötü amaçlı URL kullanan diğer saldırılara karşı korumak için Office 365 için Defender'de Güvenli Bağlantılar koruması hakkında bilgi edinin. Teams Güvenli Bağlantılar'ı keşfedin ve Güvenli Bağlantılar iletilerinin grafiklerini görün.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc393372e5e8dace8ae42a2f748dfb24a7e7a5ed
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 5507ac8dbedf1bd3adaf8fcebb95d71810940cb2
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086527"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385219"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Bağlantılar
 
@@ -275,7 +275,7 @@ Birden çok ilke oluşturduktan sonra, uygulanacağı sırayı belirtebilirsiniz
 ## <a name="block-the-following-urls-list-for-safe-links"></a>Güvenli Bağlantılar için "Aşağıdaki URL'leri engelle" listesi
 
 > [!NOTE]
-> Artık [Kiracı İzin Ver/Engelle Listesi'nde](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list) blok URL'si girdilerini yönetebilirsiniz. "Aşağıdaki URL'leri engelle" listesi kullanım dışı bırakılıyor. Kiracı İzin Ver/Engelle Listesindeki URL girdilerini engellemek için "Aşağıdaki URL'leri engelle" listesinden mevcut girdileri geçirmeyi deneyeceğiz. Engellenen URL'yi içeren iletiler karantinaya alınır.
+> Artık [Kiracı İzin Ver/Engelle Listesi'nde](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) blok URL'si girdilerini yönetebilirsiniz. "Aşağıdaki URL'leri engelle" listesi kullanım dışı bırakılıyor. Kiracı İzin Ver/Engelle Listesindeki URL girdilerini engellemek için "Aşağıdaki URL'leri engelle" listesinden mevcut girdileri geçirmeyi deneyeceğiz. Engellenen URL'yi içeren iletiler karantinaya alınır.
 
 **Aşağıdaki URL'leri engelle** listesi, aşağıdaki konumlarda Güvenli Bağlantılar taraması tarafından her zaman engellenen bağlantıları tanımlar:
 
@@ -289,7 +289,7 @@ Url listesini Güvenli Bağlantılar için genel ayarlarda yapılandırabilirsin
 
 **Notlar**:
 
-- Her yerde engellenen URL'lerin gerçekten evrensel bir listesi için bkz. [Kiracı İzin Verme/Engelleme Listesini Yönetme](tenant-allow-block-list.md).
+- Her yerde engellenen URL'lerin gerçekten evrensel bir listesi için bkz. [Kiracı İzin Verme/Engelleme Listesini Yönetme](manage-tenant-allow-block-list.md).
 - **Aşağıdaki URL'leri engelle listesinin** sınırları:
   - En fazla giriş sayısı 500'dür.
   - Bir girişin uzunluk üst sınırı 128 karakterdir.
@@ -313,7 +313,7 @@ Girebileceğiniz değerlerin ve sonuçlarının örnekleri aşağıdaki tabloda 
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>Güvenli Bağlantılar ilkelerindeki "Aşağıdaki URL'leri yeniden yazmayın" listeleri
 
 > [!NOTE]
-> "Aşağıdaki URL'leri yeniden yazmayın" listesindeki girdiler, posta akışı sırasında Güvenli Bağlantılar tarafından taranmıyor veya sarmalanmıyor. Posta akışı sırasında _ve_ tıklandığında URL'lerin Güvenli Bağlantılar tarafından taranmaması veya sarmalanmaması için [Kiracı İzin Ver/Engelle Listesi'ndeki İzin Ver URL girişlerini](allow-block-urls.md#create-allow-url-entries) kullanın.
+> "Aşağıdaki URL'leri yeniden yazmayın" listesindeki girdiler, posta akışı sırasında Güvenli Bağlantılar tarafından taranmıyor veya sarmalanmıyor. Posta akışı sırasında _ve_ tıklandığında URL'lerin Güvenli Bağlantılar tarafından taranmaması veya sarmalanmaması için [Kiracı İzin Ver/Engelle Listesi'ndeki İzin Ver URL girişlerini](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) kullanın.
 
 Her Güvenli Bağlantılar ilkesi, Güvenli Bağlantılar taraması tarafından **yeniden yazılmayan URL'leri belirtmek için kullanabileceğiniz aşağıdaki URL'leri yeniden yazma** listesini içerir. Başka bir deyişle, liste ilkeye dahil edilen kullanıcıların, aksi takdirde Güvenli Bağlantılar tarafından engellenecek belirtilen URL'lere erişmesine izin verir. Farklı Güvenli Bağlantılar ilkelerinde farklı listeler yapılandırabilirsiniz. İlke işleme, kullanıcıya ilk (büyük olasılıkla en yüksek öncelikli) ilke uygulandıktan sonra durur. Bu nedenle, birden çok etkin Güvenli Bağlantı ilkesine dahil edilen bir kullanıcıya **yalnızca bir Tane Aşağıdaki URL'leri yeniden yazma** listesi uygulanır.
 
@@ -325,7 +325,7 @@ Yeni veya mevcut Güvenli Bağlantılar ilkelerinde listeye girdi eklemek için 
   - Microsoft Teams
   - Office web uygulamaları
 
-  Her yerde izin verilen URL'lerin gerçekten evrensel listesi için bkz. [Kiracı İzin Verme/Engelleme Listesini Yönetme](tenant-allow-block-list.md). Ancak, oraya eklenen URL'lerin Güvenli Bağlantılar ilkesinde yapılması gerektiğinden Güvenli Bağlantılar yeniden yazmanın dışında tutulmayacaklarını unutmayın.
+  Her yerde izin verilen URL'lerin gerçekten evrensel listesi için bkz. [Kiracı İzin Verme/Engelleme Listesini Yönetme](manage-tenant-allow-block-list.md). Ancak, oraya eklenen URL'lerin Güvenli Bağlantılar ilkesinde yapılması gerektiğinden Güvenli Bağlantılar yeniden yazmanın dışında tutulmayacaklarını unutmayın.
 
 - Kullanıcı deneyimini geliştirmek için sık kullanılan iç URL'leri listeye eklemeyi göz önünde bulundurun. Örneğin, Skype Kurumsal veya SharePoint gibi şirket içi hizmetleriniz varsa, bu URL'leri taramanın dışında tutmak için ekleyebilirsiniz.
 - Güvenli Bağlantılar ilkelerinizde **aşağıdaki URL girişlerini yeniden yazmadıysanız** listeleri gözden geçirmeyi ve gerektiğinde joker karakterleri eklemeyi unutmayın. Örneğin, listenizde gibi `https://contoso.com/a` bir girdi vardır ve daha sonra gibi `https://contoso.com/a/b`alt yolları dahil etmeye karar verirsiniz. Yeni bir girdi eklemek yerine, var olan girdiye joker karakter ekleyerek olur `https://contoso.com/a/*`.

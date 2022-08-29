@@ -1,7 +1,7 @@
 ---
-title: Uç Nokta Cihazları için Defender listesinde cihazları araştırma
-description: Uyarıları, ağ bağlantısı bilgilerini gözden geçirerek, cihaz etiketleri ve grupları ekleyerek ve hizmet durumunu gözden geçirerek etkilenen cihazları araştırabilirsiniz.
-keywords: cihazlar, etiketler, gruplar, uç nokta, uyarılar sırası, uyarılar, cihaz adı, etki alanı, son görülen, iç IP, etkin uyarılar, tehdit kategorisi, filtre, sıralama, uyarıları gözden geçirme, ağ, bağlantı, tür, parola çalmak, fidye yazılımı, açık, tehdit, düşük önem düzeyi, hizmet durumu
+title: Uç Nokta Cihazları için Defender listesindeki cihazları araştırma
+description: Uyarıları, ağ bağlantısı bilgilerini gözden geçirerek, cihaz etiketleri ve grupları ekleyerek ve hizmet durumunu denetleyerek etkilenen cihazları araştırın.
+keywords: cihazlar, etiketler, gruplar, uç nokta, uyarılar kuyruğu, uyarılar, cihaz adı, etki alanı, son görülen, iç IP, etkin uyarılar, tehdit kategorisi, filtreleme, sıralama, uyarıları gözden geçirme, ağ, bağlantı, tür, parola çalan, fidye yazılımı, yararlanma, tehdit, düşük önem derecesi, hizmet durumu
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,198 +14,224 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71755add523b3426d144f748ab3582e3a3975dc6
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f80f33b76ad5061372351ef0c399adabcc8a8c26
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475245"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384458"
 ---
-# <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Uç Nokta için Microsoft Defender Cihazlar listesinde cihazları araştırma
+# <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Uç Nokta için Microsoft Defender Cihazlar listesindeki cihazları araştırma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
-Uyarıyla veya ihlalin olası kapsamıyla ilgili olabileceği diğer davranışları veya olayları tanımlamak için, belirli bir cihazda yükseltilmiş uyarının ayrıntılarını araştırabilirsiniz.
+Uyarıyla veya ihlalin olası kapsamıyla ilgili olabilecek diğer davranışları veya olayları belirlemek için belirli bir cihazda tetiklenen uyarının ayrıntılarını araştırın.
 
 > [!NOTE]
-> Araştırma veya yanıt işleminin bir parçası olarak, bir cihazdan araştırma paketi toplayabilirsiniz. Şöyle: Araştırma paketini [cihazlardan toplayın](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices).
+> Araştırma veya yanıt sürecinin bir parçası olarak bir cihazdan araştırma paketi toplayabilirsiniz. Şu şekilde yapılır: [Cihazlardan araştırma paketi toplayın](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices).
 
-Etkilenen cihazları portalda her gördüğünüzde bu cihaz hakkında ayrıntılı bir rapor açabilirsiniz. Etkilenen cihazlar aşağıdaki alanlarda tanımlanır:
+Etkilenen cihazları portalda her gördüğünüzde tıklayarak ilgili cihaz hakkında ayrıntılı bir rapor açabilirsiniz. Etkilenen cihazlar aşağıdaki alanlarda tanımlanır:
 
 - [Cihazlar listesi](investigate-machines.md)
-- [Uyarılar sırası](alerts-queue.md)
+- [Uyarı sırası](alerts-queue.md)
 - [Güvenlik işlemleri panosu](security-operations-dashboard.md)
-- Tek tek herhangi bir uyarı
+- Tek tek uyarılar
 - Tek tek dosya ayrıntıları görünümü
 - Herhangi bir IP adresi veya etki alanı ayrıntıları görünümü
 
-Belirli bir cihazı araştırsanız, şunları görmeye devam edin:
+Belirli bir cihazı araştırdığınızda şunları görürsünüz:
 
 - Cihaz ayrıntıları
 - Yanıt eylemleri
-- Sekmeler (genel bakış, uyarılar, zaman çizelgesi, güvenlik önerileri, yazılım envanteri, güvenlik açıkları keşfetildi, eksik KB'ler)
-- Kartlar (etkin uyarılar, oturum açmış kullanıcılar, güvenlik değerlendirmesi)
+- Sekmeler (genel bakış, uyarılar, zaman çizelgesi, güvenlik önerileri, yazılım envanteri, bulunan güvenlik açıkları, eksik KB'ler)
+- Kartlar (etkin uyarılar, oturum açmış kullanıcılar, güvenlik değerlendirmesi, cihaz sistem durumu) 
+ 
 
 :::image type="content" source="images/specific-device.png" alt-text="Cihaz görünümü" lightbox="images/specific-device.png":::
 
 > [!NOTE]
-> Ürün sınırlandırma nedeniyle, cihaz profili 'Son Görülme' zaman çerçevesini belirlerken (cihaz sayfasında da görülür) siber kanıtı göz önünde bulundurm olmaz.
-> Örneğin, makine zaman çizelgesinde daha yeni uyarılar veya veriler mevcut olsa bile, Cihaz sayfasındaki 'Son görülen' değeri daha eski bir zaman dilimi gösterebilir.
+> Ürün kısıtlamaları nedeniyle, cihaz profili 'Son Görülme' zaman çerçevesini belirlerken (cihaz sayfasında da görüldüğü gibi) tüm siber kanıtları dikkate almaz.
+> Örneğin, makinenin zaman çizelgesinde daha yeni uyarılar veya veriler bulunsa bile, Cihaz sayfasındaki 'Son görülen' değeri daha eski bir zaman dilimi gösterebilir.
 
 ## <a name="device-details"></a>Cihaz ayrıntıları
 
-Cihaz ayrıntıları bölümünde, cihazın etki alanı, işletim sistemi ve sistem durumu gibi bilgiler yer almaktadır. Cihazda bir soruşturma paketi varsa, paketi indirmeye izin veren bir bağlantıyla karşıdan yüklemesi gerekir.
+Cihaz ayrıntıları bölümünde cihazın etki alanı, işletim sistemi ve sistem durumu gibi bilgiler sağlanır. Cihazda bir araştırma paketi varsa paketi indirmenizi sağlayan bir bağlantı görürsünüz.
 
 ## <a name="response-actions"></a>Yanıt eylemleri
 
-Yanıt eylemleri belirli bir cihaz sayfasının en üstünde görüntülenir ve şunları içerir:
+Yanıt eylemleri belirli bir cihaz sayfasının üst kısmında çalışır ve şunları içerir:
 
-- Etiketleri yönetme
-- Cihazı yalıt
-- Uygulama yürütmeyi kısıtla
-- Virüsten koruma taraması çalıştırma
-- Soruşturma paketini topla
-- Canlı Yanıt Oturumunu Başlatma
+- Etiketleri yönetin
+- Cihazı yalıtma
+- Uygulama yürütmeyi kısıtlayın
+- Antivirüs taraması başlat
+- Soruşturma paketini toplayın
+- Canlı Yanıt Oturumu Başlat
 - Otomatik araştırma başlatma
 - Tehdit uzmanına danışın
 - İşlem merkezi
 
-İşlem merkezinde, belirli bir cihaz sayfasında veya belirli bir dosya sayfasında yanıt eylemleri gerçekleştirebilirsiniz.
+yanıt eylemlerini İşlem merkezinde, belirli bir cihaz sayfasında veya belirli bir dosya sayfasında gerçekleştirebilirsiniz.
 
-Cihazda nasıl işlem yapmakla ilgili daha fazla bilgi için bkz [. Cihazda yanıt eylemi alma](respond-machine-alerts.md).
+Cihazda eylem gerçekleştirme hakkında daha fazla bilgi için bkz. Cihazda [yanıt eylemi gerçekleştirme](respond-machine-alerts.md).
 
 Daha fazla bilgi için bkz [. Kullanıcı varlıklarını araştırma](investigate-user.md).
 
-## <a name="tabs"></a>Sekmeler
+## <a name="tabs"></a>Sekme
 
-Sekmeler cihazla ilgili ilgili güvenlik ve tehdit önleme bilgilerini sağlar. Her sekmede, sütun başlıklarının üstündeki çubukta Sütunları **özelleştir'i** seçerek gösterilen sütunları özelleştirebilirsiniz.
+Sekmeler, cihazla ilgili ilgili güvenlik ve tehdit önleme bilgilerini sağlar. Her sekmede, sütun üst bilgilerinin üstündeki çubuktan **Sütunları özelleştir'i** seçerek gösterilen sütunları özelleştirebilirsiniz.
 
 ### <a name="overview"></a>Genel bakış
 
-Genel **Bakış** sekmesi etkin [uyarılar,](#cards) oturum açmış kullanıcılar ve güvenlik değerlendirmesi için kartları görüntüler.
+**Genel Bakış** sekmesinde etkin uyarıların, oturum açmış kullanıcıların ve güvenlik değerlendirmesinin [kartları](#cards) görüntülenir.
 
 :::image type="content" source="images/overview-device.png" alt-text="Cihaz sayfasındaki Genel Bakış sekmesi" lightbox="images/overview-device.png":::
 
 ### <a name="alerts"></a>Uyarılar
 
-Uyarılar **sekmesi** cihazla ilişkilendirilmiş uyarıların listesini sağlar. Bu liste, Uyarılar kuyruğun filtrelenmiş bir [](alerts-queue.md)sürümüdür ve uyarı, önem düzeyi (yüksek, orta, düşük, bilgilendirme amaçlı), sırada durumu (yeni, sürüyor, çözümlendi), sınıflandırma (ayarlanmaz, yanlış uyarı, doğru uyarı), araştırma durumu, uyarı kategorisi, uyarının adresi olan kişi ve son etkinlik hakkında kısa bir açıklama gösterir. Uyarıları filtrelemek de gerekir.
+**Uyarılar** sekmesi, cihazla ilişkili uyarıların listesini sağlar. Bu liste [, Uyarılar kuyruğunun](alerts-queue.md) filtrelenmiş bir sürümüdür ve uyarının kısa bir açıklamasını, önem derecesini (yüksek, orta, düşük, bilgilendirici), kuyruktaki durumu (yeni, devam ediyor, çözüldü), sınıflandırmayı (ayarlanmamış, yanlış uyarı, doğru uyarı), araştırma durumunu, uyarı kategorisini, uyarıyı ele alan kişiyi ve son etkinliği gösterir. Uyarıları da filtreleyebilirsiniz.
 
 :::image type="content" source="images/alerts-device.png" alt-text="Cihazla ilgili uyarıların sekmesi" lightbox="images/alerts-device.png":::
 
-Uyarının sol köşesindeki daire simgesi seçiliyken bir açılır simge görüntülenir. Bu panelden uyarıyı yönetebilir ve olay numarası ve ilgili cihazlar gibi diğer ayrıntıları görüntüleyebilirsiniz. Aynı anda birden çok uyarı seçilebilir.
+Uyarının solundaki daire simgesi seçildiğinde, bir açılır menü görüntülenir. Bu panelden uyarıyı yönetebilir ve olay numarası ve ilgili cihazlar gibi diğer ayrıntıları görüntüleyebilirsiniz. Aynı anda birden çok uyarı seçilebilir.
 
-Olay grafiği ve işlem ağacı da içinde olmak üzere uyarının tam sayfa görünümünü görmek için uyarının başlığını seçin.
+Olay grafiği ve işlem ağacı dahil olmak üzere bir uyarının tam sayfa görünümünü görmek için uyarının başlığını seçin.
 
 ### <a name="timeline"></a>Zaman çizelgesi
 
-Zaman **Çizelgesi** sekmesi, cihazda gözlemlenen olayların ve ilişkili uyarıların kronolojik görünümünü sağlar. Bu, tüm olayları, dosyaları ve IP adreslerini cihaza göre birbiriyle bağıntıya neden olabilir.
+**Zaman Çizelgesi** sekmesi, cihazda gözlemlenen olayların ve ilişkili uyarıların kronolojik bir görünümünü sağlar. Bu, cihazla ilgili olarak tüm olayları, dosyaları ve IP adreslerini ilişkilendirmenize yardımcı olabilir.
 
-Zaman çizelgesi, ayrıca, verilen bir süre içinde  meydana gelen olayları seçerek detaya gitmelerine olanak sağlar. Seçilen bir zaman süresi boyunca bir cihazda  meydana gelen olayların zaman sırasını görüntüebilirsiniz. Görünümlerinizi daha fazla kontrol etmek için, olay gruplarına göre filtre uygulama veya sütunları özelleştirme.
+Zaman çizelgesi ayrıca belirli bir süre içinde gerçekleşen olaylara seçmeli olarak detaya gitmenizi sağlar. Seçili bir zaman aralığında bir cihazda gerçekleşen olayların zamansal sırasını görüntüleyebilirsiniz. Görünümünüzü daha fazla denetlemek için olay gruplarına göre filtreleyebilir veya sütunları özelleştirebilirsiniz.
 
 > [!NOTE]
-> Güvenlik duvarı olaylarının görüntülensi için denetim ilkesi etkinleştirmeniz gerekir. Bkz. [Denetim Filtreleme Platformu bağlantısı](/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
+> Güvenlik duvarı olaylarının görüntülenmesi için denetim ilkesini etkinleştirmeniz gerekir. Bkz. [Denetim Filtreleme Platformu bağlantısı](/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
 >
 > Güvenlik duvarı aşağıdaki olayları kapsar:
 >
-> - [5025](/windows/security/threat-protection/auditing/event-5025) - güvenlik duvarı hizmeti durduruldu
-> - [5031](/windows/security/threat-protection/auditing/event-5031) - uygulamanın ağ üzerinden gelen bağlantıları kabulsi engellendi
+> - [5025](/windows/security/threat-protection/auditing/event-5025) - Güvenlik duvarı hizmeti durduruldu
+> - [5031](/windows/security/threat-protection/auditing/event-5031) - Uygulamanın ağda gelen bağlantıları kabul etme engeli
 > - [5157](/windows/security/threat-protection/auditing/event-5157) - engellenen bağlantı
 
-:::image type="content" source="images/timeline-device.png" alt-text="Olaylı cihaz zaman çizelgesi" lightbox="images/timeline-device.png":::
+:::image type="content" source="images/timeline-device.png" alt-text="Olaylar içeren cihaz zaman çizelgesi" lightbox="images/timeline-device.png":::
 
-İşlevlerin bazıları şunları içerir:
+İşlevlerden bazıları şunlardır:
 
 - Belirli olayları arama
   - Belirli zaman çizelgesi olaylarını aramak için arama çubuğunu kullanın.
-- Belirli bir tarihten itibaren olayları filtreleme
-  - Tablonun sol üst kısmında takvim simgesini seçerek geçmiş gün, hafta, 30 gün veya özel aralıkta etkinlikleri görüntüleniyor. Varsayılan olarak, cihaz zaman çizelgesi son 30 gün içinde olan olayları görüntülemek için ayarlanmıştır.
-  - Bölümü vurgulayıp belirli bir ana atlamak için zaman çizelgesini kullanın. Zaman çizelgesinde otomatik soruşturmalar için oklar
+- Belirli bir tarihteki olayları filtreleme
+  - Son gün, hafta, 30 gün veya özel aralıktaki etkinlikleri görüntülemek için tablonun sol üst kısmındaki takvim simgesini seçin. Varsayılan olarak, cihaz zaman çizelgesi son 30 güne ait olayları görüntüleyecek şekilde ayarlanır.
+  - Bölümü vurgulayarak zaman çizelgesini kullanarak belirli bir ana atlayın. Zaman çizelgesindeki oklar otomatik araştırmalara işaret eder
 - Ayrıntılı cihaz zaman çizelgesi olaylarını dışarı aktarma
-  - Geçerli tarih veya belirtilen tarih aralığı için cihaz zaman çizelgesini yedi gün kadar dışarı aktarın.
+  - Geçerli tarih veya belirtilen tarih aralığı için cihaz zaman çizelgesini yedi güne kadar dışarı aktarın.
 
-Bazı olaylar hakkında daha fazla ayrıntı, Ek **bilgiler bölümünde** sağlanır. Bu ayrıntılar, olayın türüne bağlı olarak değişir; örneğin:
+Bazı olaylar hakkında daha fazla bilgi **Ek bilgiler** bölümünde verilmiştir. Bu ayrıntılar olayın türüne bağlı olarak değişiklik gösterir, örneğin:
 
-- Application Guard tarafından bulunan - web tarayıcısı olayı yalıtılmış bir kapsayıcıyla kısıtlandı
-- Etkin tehdit algılandı - Tehdit çalışırken tehdit algılaması meydana geldi
-- Düzeltme başarısız - algılanan tehdide düzeltme girişimi başlatıldı ancak başarısız oldu
-- Düzeltme başarılı- algılanan tehdit durduruldu ve temizlendi
-- Uyarı kullanıcı tarafından atlandı - Windows Defender SmartScreen uyarısı kullanıcı tarafından yok sayıldı ve geçersiz kılındı
-- Şüpheli betik algılandı - kötü amaçlı olabilecek bir betiği çalışıyor olarak bulundu
-- Uyarı kategorisi - olay bir uyarının yeniltirine yol açtı ise uyarı kategorisi ("örneğin, Lateral Movement" sağlanır)
+- Application Guard tarafından kapsanan - web tarayıcısı olayı yalıtılmış bir kapsayıcı tarafından kısıtlandı
+- Etkin tehdit algılandı - tehdit çalışırken tehdit algılama oluştu
+- Düzeltme başarısız - algılanan tehdidi düzeltme girişimi çağrıldı ancak başarısız oldu
+- Düzeltme başarılı - algılanan tehdit durduruldu ve temizlendi
+- Uyarı kullanıcı tarafından atlandı - Windows Defender SmartScreen uyarısı bir kullanıcı tarafından kapatıldı ve geçersiz kılındı
+- Şüpheli betik algılandı - çalışan kötü amaçlı olabilecek bir betik bulundu
+- Uyarı kategorisi - olay bir uyarının oluşturulmasına yol açtıysa, uyarı kategorisi ("YanAl Hareket", örneğin) sağlanır
 
 #### <a name="event-details"></a>Olay ayrıntıları
 
-Bir etkinlikle ilgili ayrıntıları görüntülemek için o etkinliği seçin. Genel etkinlik bilgilerini göstermek için bir panel görüntülenir. Uygun olduğunda ve veriler kullanılabilir olduğunda, ilgili varlıkları ve bunların ilişkilerini gösteren bir grafik de gösterilir.
+Bu olayla ilgili ayrıntıları görüntülemek için bir olay seçin. Genel olay bilgilerini göstermek için bir panel görüntülenir. Uygun olduğunda ve veriler kullanılabilir olduğunda, ilgili varlıkları ve ilişkilerini gösteren bir grafik de gösterilir.
 
-Etkinlik ve ilgili etkinlikleri daha ayrıntılı incelemek için, ilgili etkinlikler için Tekin'i [seçerek](advanced-hunting-overview.md) hızla gelişmiş bir av **sorgusu çalıştırabilirsiniz**. Sorgu seçili olayı ve aynı uç noktada aynı zamanda 44 saat içinde  meydana gelen diğer olayların listesini geri döner.
+Olayı ve ilgili olayları daha fazla incelemek **için, ilgili olayları avla'yı** seçerek hızlı bir şekilde [gelişmiş bir avcılık](advanced-hunting-overview.md) sorgusu çalıştırabilirsiniz. Sorgu, seçilen olayı ve aynı uç noktada aynı anda gerçekleşen diğer olayların listesini döndürür.
 
 :::image type="content" source="images/event-details.png" alt-text="Olay ayrıntıları paneli" lightbox="images/event-details.png":::
 
 ### <a name="security-recommendations"></a>Güvenlik önerileri
 
-**Güvenlik önerileri,** güvenlik Uç Nokta için Microsoft Defender Güvenlik Açığı Yönetimi [& tarafından](tvm-dashboard-insights.md) oluşturulur. Öneriyi seçerek, önerinin açıklaması ve üzerine alınmayacak riskler gibi ilgili ayrıntıları görüntüleyebilirsiniz. Ayrıntılar [için güvenlik önerisine](tvm-security-recommendation.md) bakın.
+**Güvenlik önerileri** Uç Nokta için Microsoft Defender [Güvenlik Açığı Yönetimi](tvm-dashboard-insights.md) özelliğinden oluşturulur. Bir öneri seçildiğinde, önerinin açıklaması ve önerinin yapılmamasıyla ilişkili olası riskler gibi ilgili ayrıntıları görüntüleyebileceğiniz bir panel gösterilir. Ayrıntılar için bkz [. Güvenlik önerisi](tvm-security-recommendation.md) .
 
 :::image type="content" source="images/security-recommendations-device.png" alt-text="Güvenlik önerileri sekmesi" lightbox="images/security-recommendations-device.png":::
 
 ### <a name="software-inventory"></a>Yazılım envanteri
 
-Yazılım **envanteri** sekmesi, yazılımlarla birlikte cihazda her türlü zayıflığı veya tehdityi de görüntülemenizi sağlar. Yazılımın adını seçmek, sizi güvenlik önerilerini, güvenlik açıklarını, yüklü cihazları ve sürüm dağıtımını görüntüleyebilirsiniz yazılım ayrıntıları sayfasına götürebilirsiniz. Ayrıntılar [için bkz.](tvm-software-inventory.md) Yazılım envanteri
+**Yazılım envanteri** sekmesi, cihazdaki yazılımları ve tüm zayıflıkları veya tehditleri görüntülemenizi sağlar. Yazılımın adını seçtiğinizde güvenlik önerilerini, bulunan güvenlik açıklarını, yüklü cihazları ve sürüm dağıtımını görüntüleyebileceğiniz yazılım ayrıntıları sayfasına yönlendirilirsiniz. Ayrıntılar için bkz[. Yazılım envanteri](tvm-software-inventory.md)
 
 :::image type="content" source="images/software-inventory-device.png" alt-text="Yazılım envanteri sekmesi" lightbox="images/software-inventory-device.png":::
 
 ### <a name="discovered-vulnerabilities"></a>Bulunan güvenlik açıkları
 
-Bulunan **güvenlik açıkları** sekmesi, cihazla ilgili bulunan güvenlik açıklarının adını, önem derecesine ve tehdit öngörülerini gösterir. Belirli güvenlik açıklarını seçmek bir açıklama ve ayrıntılar gösterir.
+**Bulunan güvenlik açıkları sekmesi cihazda bulunan güvenlik açıklarının** adını, önem derecesini ve tehdit içgörülerini gösterir. Belirli güvenlik açıkları seçildiğinde bir açıklama ve ayrıntılar gösterilir.
 
 :::image type="content" source="images/discovered-vulnerabilities-device.png" alt-text="Bulunan güvenlik açıkları sekmesi" lightbox="images/discovered-vulnerabilities-device.png":::
 
 ### <a name="missing-kbs"></a>Eksik KB'ler
-Eksik **KBs sekmesi** , cihaz için eksik güvenlik güncelleştirmelerini listeler.
+**Eksik KB'ler** sekmesinde cihaz için eksik güvenlik güncelleştirmeleri listelenir.
 
-:::image type="content" source="images/missing-kbs-device.png" alt-text="Eksik Kbs sekmesi" lightbox="images/missing-kbs-device.png":::
+:::image type="content" source="images/missing-kbs-device.png" alt-text="Eksik KB sekmesi" lightbox="images/missing-kbs-device.png":::
 
-## <a name="cards"></a>Kartlar
+## <a name="cards"></a>Kart
 
 ### <a name="active-alerts"></a>Etkin uyarılar
 
-**Azure Gelişmiş Tehdit Koruması** kartı, gelişmiş tehdit özelliğini etkinleştirdiyseniz ve herhangi bir etkin uyarı varsa cihazla ve cihazla ilgili risk düzeyiyle ilgili Kimlik için Microsoft Defender düzeyli bir genel bakış görüntüler. Daha fazla bilgiyi "Uyarılar" detaya gitme sayfalarından edinebilirsiniz.
+**Azure Gelişmiş Tehdit Koruması** kartı, Kimlik için Microsoft Defender özelliğini etkinleştirdiyseniz ve etkin uyarılar varsa cihazla ve bunların risk düzeyiyle ilgili uyarılara üst düzey bir genel bakış görüntüler. "Uyarılar" detayına giderek daha fazla bilgi edinebilirsiniz.
 
 :::image type="content" source="images/risk-level-small.png" alt-text="Etkin uyarılar kartı" lightbox="images/risk-level-small.png":::
 
 > [!NOTE]
-> Bu özelliği kullanmak için hem Uç Nokta için Kimlik için Microsoft Defender Defender'da tümleştirmeyi etkinleştirmeniz gerekir. Uç Nokta için Defender'da, gelişmiş özelliklerde bu özelliği etkinleştirebilirsiniz. Gelişmiş özellikleri etkinleştirme hakkında daha fazla bilgi için bkz [. Gelişmiş özellikleri açma](advanced-features.md).
+> Bu özelliği kullanmak için hem Kimlik için Microsoft Defender hem de Uç Nokta için Defender'da tümleştirmeyi etkinleştirmeniz gerekir. Uç Nokta için Defender'da bu özelliği gelişmiş özelliklerde etkinleştirebilirsiniz. Gelişmiş özellikleri etkinleştirme hakkında daha fazla bilgi için bkz. [Gelişmiş özellikleri açma](advanced-features.md).
 
-### <a name="logged-on-users"></a>Oturum açmış kullanıcılar
+### <a name="logged-on-users"></a>Oturum açan kullanıcılar
 
-Oturum **açan kullanıcılar kartı** , son 30 gün içinde kaç kullanıcının oturum açtığını ve en sık kullanan kullanıcıları gösterir. "Tüm kullanıcıları göster" bağlantısının seçkisi, kullanıcı türü, oturum açma türü ve kullanıcının ilk ve son görülme zamanları gibi bilgilerin görüntü olduğu ayrıntılar bölmesini açar. Daha fazla bilgi için bkz [. Kullanıcı varlıklarını araştırma](investigate-user.md).
+**Oturum açan kullanıcılar** kartı, son 30 gün içinde en sık ve en az sıklıktaki kullanıcılarla birlikte kaç kullanıcının oturum açtığını gösterir. "Tüm kullanıcıları görüntüle" bağlantısı seçildiğinde, kullanıcı türü, oturum açma türü ve kullanıcının ilk ve son görüldüğü zaman gibi bilgileri görüntüleyen ayrıntılar bölmesi açılır. Daha fazla bilgi için bkz [. Kullanıcı varlıklarını araştırma](investigate-user.md).
 
 :::image type="content" source="images/logged-on-users.png" alt-text="Kullanıcı ayrıntıları bölmesi" lightbox="images/logged-on-users.png":::
 
 > [!NOTE]
-> 'En sık' kullanıcı değeri yalnızca etkileşimli olarak oturum açan kullanıcıların kanıtlarına dayalı olarak hesaplanır.
-> Bununla birlikte, "Tüm kullanıcılar" yan bölme her tür kullanıcı oturum açmasını hesaplar, bu nedenle bu kullanıcıların etkileşimli olmadığının var olduğu için yan bölmede daha sık kullanıcı görmeleri beklir.
+> 'En sık' kullanıcı değeri yalnızca etkileşimli olarak başarıyla oturum açan kullanıcıların kanıtlarına göre hesaplanır.
+> Bununla birlikte, "Tüm kullanıcılar" yan bölmesi her türlü kullanıcı oturum açma işlemini hesaplar, böylece bu kullanıcıların etkileşimli olmayabileceği göz önüne alındığında, yan bölmede daha sık kullanıcı görmesi beklenir.
 
 ### <a name="security-assessments"></a>Güvenlik değerlendirmeleri
 
-Güvenlik **değerlendirmeleri kartı** genel açık düzeyini, güvenlik önerilerini, yüklü yazılımı ve güvenlik açıklarını gösterir. Bir cihazın etkilenme düzeyi, bekleyen güvenlik önerilerinin kümülatif etkisiyle belirlenir.
+**Güvenlik değerlendirmeleri** kartı genel açığa çıkarma düzeyini, güvenlik önerilerini, yüklü yazılımları ve bulunan güvenlik açıklarını gösterir. Bir cihazın maruz kalma düzeyi, bekleyen güvenlik önerilerinin birikmeli etkisine göre belirlenir.
 
 :::image type="content" source="images/security-assessments.png" alt-text="Güvenlik değerlendirmeleri kartı" lightbox="images/security-assessments.png":::
 
+
+### <a name="device-health-status"></a>Cihaz durumu
+
+**Cihaz sistem durumu** kartı, belirli bir cihaz için özetlenmiş bir sistem durumu raporu gösterir. Cihazın genel durumunu belirtmek için kartın üst kısmında aşağıdaki durumlardan biri görüntülenir:
+
+- Cihaz güncel
+- Platform güncel değil
+- Tam tarama başarısız oldu
+- Hızlı tarama başarısız oldu
+- Altyapı güncel değil
+- Güvenlik bilgileri güncel değil
+- Defender Virüsten Koruma etkin değil
+- macOS & Linux için durum kullanılamıyor
+
+Karttaki diğer bilgiler şunlardır: son tam tarama, son hızlı tarama, güvenlik zekası güncelleştirme sürümü, altyapı güncelleştirme sürümü, platform güncelleştirme sürümü ve Defender Virüsten Koruma modu. 
+
+>[!NOTE]
+>macOS ve Linux cihazları için genel durum iletisi şu anda 'MacOS & Linux için durum kullanılamıyor' olarak görünüyor. Şu anda durum özeti yalnızca Windows cihazları için kullanılabilir. Tablodaki diğer tüm bilgiler, desteklenen tüm platformlar için her cihaz sistem durumu sinyalinin tek tek durumlarını göstermek için günceldir. 
+
+Cihaz durumu raporunun ayrıntılı bir görünümünü elde etmek için **Raporlar > Cihaz durumu'na** gidebilirsiniz. Daha fazla bilgi için bkz[. Uç Nokta için Microsoft Defender'de cihaz durumu ve uyumluluk raporu](/microsoft-365/security/defender-endpoint/machine-reports). 
+
+:::image type="content" source="images/device-health-status.png"  alt-text="Cihaz sistem durumu kartı" lightbox="images/device-health-status.png":::
+
+
+
 ## <a name="related-topics"></a>İlgili konular
 
-- [Yeni Uyarı kuyruğu Uç Nokta için Microsoft Defender ve düzenleme](alerts-queue.md)
-- [Uyarı Uç Nokta için Microsoft Defender yönetme](manage-alerts.md)
-- [Uyarı Uç Nokta için Microsoft Defender araştırma](investigate-alerts.md)
-- [Uç Nokta için Defender uyarısıyla ilişkilendirilmiş dosyayı araştırma](investigate-files.md)
-- [Uç Nokta için Defender uyarısıyla ilişkilendirilmiş IP adresini araştırma](investigate-ip.md)
-- [Uç nokta için Defender uyarısıyla ilişkilendirilmiş etki alanını araştırma](investigate-domain.md)
+- [Uç Nokta için Microsoft Defender Uyarıları kuyruğu görüntüleme ve düzenleme](alerts-queue.md)
+- [Uç Nokta için Microsoft Defender uyarılarını yönetme](manage-alerts.md)
+- [Uç Nokta için Microsoft Defender uyarılarını araştırma](investigate-alerts.md)
+- [Uç Nokta için Defender uyarısıyla ilişkilendirilmiş bir dosyayı araştırma](investigate-files.md)
+- [Uç Nokta için Defender uyarısıyla ilişkilendirilmiş bir IP adresini araştırma](investigate-ip.md)
+- [Uç Nokta için Defender uyarısıyla ilişkilendirilmiş bir etki alanını araştırma](investigate-domain.md)
 - [Uç Nokta için Defender'da kullanıcı hesabını araştırma](investigate-user.md)
 - [Güvenlik önerisi](tvm-security-recommendation.md)
 - [Yazılım envanteri](tvm-software-inventory.md)

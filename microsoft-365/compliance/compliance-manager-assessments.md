@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuz için önemli olan düzenlemelerin ve sertifikaların gereksinimlerini karşılamanıza yardımcı olmak için Microsoft Purview Uyumluluk Yöneticisi'nde değerlendirmeler oluşturun.
-ms.openlocfilehash: 6eeb77e1e5d6adea3489764626910e63ce443a2d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 187820e789f376b990414bb7208b1eaa004a4be2
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633575"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357344"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Uyumluluk Yöneticisi'nde değerlendirme oluşturma ve yönetme
 
@@ -212,7 +212,7 @@ Değerlendirme ayrıntıları sayfasında **güncelleştirmeyi gözden geçir'i*
 - Güncelleştirmeyi açıklayan bir genel bakış
 - Uyumluluk puanınıza etkisi, değerlendirmenin tamamlanmasına yönelik ilerleme miktarı ve iyileştirme eylemleri ve denetimlerindeki belirli değişiklik sayısı gibi değişikliklerle ilgili belirli ayrıntılar.
 
-**Güncelleştirilmiş şablon** bağlantısı seçildiğinde, bekleyen güncelleştirmelerle birlikte şablonun sürümü için denetim verilerini içeren bir Excel dosyası indirilir. **Geçerli şablon** bağlantısı seçildiğinde, değişiklikler olmadan mevcut şablonun bir dosyası indirilir.
+**Güncelleştirilmiş şablon** komutu seçildiğinde, bekleyen güncelleştirmelerle birlikte şablonun sürümü için denetim verilerini içeren bir Excel dosyası indirilir. **Geçerli şablon** komutu seçildiğinde, güncelleştirmeler olmadan mevcut şablonun bir dosyası indirilir.
 
 Güncelleştirmeyi kabul etmek ve değerlendirmenizde değişiklik yapmak için **Güncelleştirmeyi kabul et'i** seçin. Kabul edilen değişiklikler kalıcıdır.
 

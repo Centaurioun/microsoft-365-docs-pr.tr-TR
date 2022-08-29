@@ -21,12 +21,12 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 66253ed6deab0f41cac3a4ff732201e20d100e98
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: e9cb7fc02a3e84f7fa0909e509f47c21b63050ab
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772007"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384868"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>EOP'de sahte zeka ilkesini ve sahte zeka içgörülerini kullanarak sahte gönderenleri yönetme
 
@@ -35,21 +35,21 @@ ms.locfileid: "65772007"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Microsoft 365 Defender portalında kimlik sahtekarlığına neden olan gönderen yönetimi artık yalnızca Kiracı İzin Ver/Engelle Listesi'ndeki **Kimlik Sahtekarlık** sekmesinde kullanılabilir. Microsoft 365 Defender portalındaki geçerli yordamlar için bkz. [EOP'de sahte zeka içgörüleri](learn-about-spoof-intelligence.md).
+> Microsoft 365 Defender portalındaki sahte gönderen yönetimi artık yalnızca Kiracı İzin Ver/Engelle Listesi'ndeki Kimlik **Sahtekarı gönderenler** sekmesinde kullanılabilir. Microsoft 365 Defender portalındaki geçerli yordamlar için bkz. [EOP'de sahte zeka içgörüleri](learn-about-spoof-intelligence.md).
 >
 > Exchange Online PowerShell veya Tek Başına EOP PowerShell'de sahte gönderen yönetimi yalnızca ilgili **\*-TenantAllowBlockListSpoofItems**, **Get-SpoofIntelligenceInsight** ve **Get-SpoofMailReport** cmdlet'lerine geçiriliyor. Bu cmdlet'leri kullanan yordamlar için aşağıdaki makalelere bakın:
 >
-> - [PowerShell kullanarak sahte gönderen girdilerini görüntüleme](tenant-allow-block-list.md#view-spoofed-sender-entries)
-> - [PowerShell kullanarak sahte gönderen izin girdileri ekleme](manage-tenant-allows.md#add-spoofed-sender-allow-entries-using-powershell)
-> - [PowerShell kullanarak sahte gönderen bloğu girdileri ekleme](manage-tenant-blocks.md#add-spoofed-sender-block-entries)
-> - [PowerShell kullanarak sahte gönderen girdilerini değiştirme](modify-remove-entries-tenant-allow-block.md#modify-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list)
-> - [PowerShell kullanarak sahte gönderen girdilerini kaldırma](modify-remove-entries-tenant-allow-block.md#remove-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list)
+> - [Kiracı İzin Ver/Engelle Listesi'nde sahte gönderenlerin izin verme veya engelleme girdilerini görüntülemek için PowerShell kullanma](allow-block-email-spoof.md#use-powershell-to-view-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Sahte gönderenler için izin verme girdileri oluşturmak için PowerShell kullanma](allow-block-email-spoof.md#use-powershell-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Sahte gönderenler için blok girdileri oluşturmak için PowerShell kullanma](allow-block-email-spoof.md#use-powershell-to-create-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Kiracı İzin Ver/Engelle Listesi'nde sahte gönderenlerin izin verme veya engelleme girdilerini değiştirmek için PowerShell kullanma](allow-block-email-spoof.md#use-powershell-to-modify-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [Kiracı İzin Ver/Engelle Listesinden sahte gönderenlere yönelik izin verme veya engelleme girdilerini kaldırmak için PowerShell kullanma](allow-block-email-spoof.md#use-powershell-to-remove-allow-or-block-entries-for-spoofed-senders-from-the-tenant-allowblock-list)
 >
 > **Get-PhishFilterPolicy** ve **Set-PhishFilterPolicy** cmdlet'lerini kullanan daha eski sahte gönderen yönetimi deneyimi kullanım dışı bırakılıyor, ancak cmdlet'ler her yerde kaldırılana kadar eksiksizlik için bu makalede sunulmaya devam ediyor.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
-- Exchange Online PowerShell'e bağlanmak için bkz. [PowerShell'Exchange Online Bağlan](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [PowerShell'i Exchange Online Protection için Bağlan](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [Exchange Online Protection PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bu makaledeki yordamları gerçekleştirebilmeniz için **önce Exchange Online'de** izinlerin atanmış olması gerekir:
   - Kimlik sahtekarlık zekası ilkesini değiştirmek veya kimlik sahtekarlık zekasını etkinleştirmek veya devre dışı bırakmak için şunlara üye olmanız gerekir:
@@ -61,7 +61,7 @@ ms.locfileid: "65772007"
 
   **Notlar**:
 
-  - kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'deki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+  - kullanıcıları Microsoft 365 yönetim merkezi ilgili Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'teki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
   - [Exchange Online'daki](/Exchange/permissions-exo/permissions-exo#role-groups) **Yalnızca Görüntüleme Kuruluş Yönetimi** rol grubu da özelliğe salt okunur erişim sağlar.
 
 - Kimlik sahtekarlığı zekası seçenekleri [kimlik avı önleme ilkelerindeki kimlik sahtekarlığı ayarlarında](set-up-anti-phishing-policies.md#spoof-settings) açıklanmıştır.

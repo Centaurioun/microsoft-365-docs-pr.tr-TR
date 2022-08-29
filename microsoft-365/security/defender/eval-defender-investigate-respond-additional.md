@@ -24,12 +24,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 01a263569da09807c96160c32fda719bd2575994
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 64e200acf8726a69e6f71784334345e5603b9677
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748485"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384546"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pilot ortamda olay yanıtı özelliklerini Microsoft 365 Defender deneyin
 
@@ -157,7 +157,7 @@ Bu benzetim için tek bir iç posta kutusu ve cihaz gereklidir. Test iletisini g
 
     b. Test cihazını test etki alanına ekleyin.
 
-    c. [Windows Defender Virüsten Koruma açın](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Windows Defender Virüsten Koruma etkinleştirme konusunda sorun yaşıyorsanız [bu sorun giderme konusuna bakın](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+    c. [Microsoft Defender Virüsten Koruma'nı açın](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Microsoft Defender Virüsten Koruma'yı etkinleştirme konusunda sorun yaşıyorsanız [bu sorun giderme konusuna bakın](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
     d. [Uç Nokta için Microsoft Defender'a ekleme](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 

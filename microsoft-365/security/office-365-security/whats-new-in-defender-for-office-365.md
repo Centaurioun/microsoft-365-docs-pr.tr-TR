@@ -9,6 +9,7 @@ f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +20,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 82b23047b8013f9916168d46b5b595b326f6d1e5
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 6c714e15cfb37116fe23f51c4e47214d69961120
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530542"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385561"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender’daki yenilikler
 
@@ -46,19 +47,43 @@ Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında da
 - [Kimlik için Microsoft Defender'deki yenilikler](/defender-for-identity/whats-new)
 - [Microsoft Cloud App Security'deki yenilikler](/cloud-app-security/release-notes)
 
+## <a name="august-2022"></a>Ağustos 2022
+
+**Office 365 Güvenlik ve Uyumluluk Merkezi'nden Microsoft 365 Defender portalına otomatik** yeniden yönlendirme: Office 365 Güvenlik ve Uyumluluk Merkezi'ndeki (protection.office.com) güvenlik çözümlerine erişen kullanıcılar için otomatik yeniden yönlendirme başlar Microsoft 365 Defender portalı (security.microsoft.com). Bu, uyarılar, Tehdit Yönetimi ve Raporlar gibi tüm güvenlik iş akışlarına yöneliktir. 
+- Yeniden yönlendirme URL'leri:
+    - GCC Ortamı:
+        - Office 365 Güvenlik & Uyumluluk Merkezi URL'sinden: protection.office.com
+        - URL'yi Microsoft 365 Defender için: security.microsoft.com
+    - GCC-High Ortamı:
+        - Office 365 Güvenlik & Uyumluluk Merkezi URL'sinden: scc.office365.us
+        - URL'yi Microsoft 365 Defender için: security.microsoft.us
+    - DoD Ortamı:
+        - Office 365 Güvenlik & Uyumluluk Merkezi URL'sinden: scc.protection.apps.mil
+        - URL'yi Microsoft 365 Defender için: security.apps.mil
+- Office 365 Güvenlik ve Uyumluluk Merkezi'ndeki güvenlikle ilgili olmayan öğeler Microsoft 365 Defender yeniden yönlendirılmaz. Uyumluluk çözümlerinin Microsoft 365 Uyumluluk Merkezi'ne yeniden yönlendirilmesi için bkz. 244886 sonrası İleti Merkezi. 
+- Bu, mart 2022'de duyurulan [Microsoft Tech Community GCC, GCC High ve DoD müşterilerine birleşik XDR deneyimi sunan Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702) devamıdır.
+- Bu değişiklik, kullanıcıların ek Microsoft 365 Defender güvenlik çözümlerini tek bir portalda görüntülemesine ve yönetmesine olanak tanır.
+- Bu değişiklik, Office için Microsoft Defender (Plan 1 veya Plan 2), Microsoft 365 E3 / E5, Office 365 E3/ E5 ve Exchange Online Protection dahil olmak üzere Office 365 Güvenlik ve Uyumluluk Merkezi'ni (protection.office.com) kullanan tüm müşterileri etkiler. Tam liste için bkz[. Güvenlik & Uyumluluk Merkezi - Hizmet Açıklamaları | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+- Bu değişiklik, Email Karantina deneyimine erişen güvenlik ekipleri ve son kullanıcılar da dahil olmak üzere Office 365 Güvenlik ve Uyumluluk portalında (protection.office.com) oturum açan tüm kullanıcıları **Microsoft Defender Portalı** > **Karantina İncelemesi'nde** >  etkiler.
+- Yeniden yönlendirme varsayılan olarak etkindir ve Kiracının tüm kullanıcılarını etkiler.
+- Genel Yöneticiler ve Güvenlik Yöneticileri, Microsoft 365 Defender portalında **Ayarlar** >  **Email & işbirliği** > **Portalı yeniden yönlendirme** ve yeniden yönlendirme geçişine giderek yeniden yönlendirmeyi açabilir veya kapatabilir.
+
+## <a name="july-2022"></a>Temmuz 2022
+
+- [E-posta varlığı sayfasına eylemler ekleme: Yöneticiler, e-posta](mdo-email-entity-page.md) varlık sayfasından önleyici, düzeltme ve gönderme eylemleri gerçekleştirebilir.
 
 ## <a name="june-2022"></a>Haziran 2022
 
-- [Kimlik sahtekarlığına yönetici gönderiminin kullanılmasına izin verilir](allow-block-email-spoof.md#use-admin-submission-in-microsoft-365-defender): Kiracı İzin Ver/Engelle Listesi'ni kullanarak izin verilen sahte gönderen girişleri oluşturun.
+- [Microsoft 365 Defender portalını kullanarak Gönderiler portalında sahte gönderenler için izin verilen girişler oluşturun](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-submissions-portal): Kiracı İzin Ver/Engelle Listesini kullanarak izin verilen sahte gönderen girişleri oluşturun.
 
-- [Kimliğe bürünme, yönetici gönderiminin kullanılmasına izin verir](allow-block-email-spoof.md#create-impersonated-sender-entries): Ekleme özelliği, Microsoft 365 Defender gönderiler sayfasını kullanarak kimliğine bürünülen gönderenlere izin verir.
+- [Kimliğe bürünme, yönetici gönderiminin kullanılmasına izin verir](allow-block-email-spoof.md#about-impersonated-domains-or-senders): Ekleme özelliği, Microsoft 365 Defender gönderiler sayfasını kullanarak kimliğine bürünülen gönderenlere izin verir.
 
 - [Kullanıcı gönderiminden dönüştürülmüş yönetici gönderimini görüntüleme](admin-submission.md#convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission): Özel posta kutusunu, analiz için microsoft'a ileti göndermeden kullanıcı tarafından bildirilen iletileri kesecek şekilde yapılandırın.
 
-- [Kullanıcı ve yönetici gönderimleri için ilişkili uyarıyı görüntüleme](admin-submission.md#view-associated-alert-for-user-and-admin-email-submissions): Kullanıcı tarafından bildirilen her kimlik avı iletisi ve yönetici e-posta gönderimi için ilgili uyarıyı görüntüleyin. 
+- [Kullanıcı ve yönetici gönderimleri için ilişkili uyarıyı görüntüleme](admin-submission.md#view-associated-alert-for-user-and-admin-email-submissions): Kullanıcı tarafından bildirilen her kimlik avı iletisi ve yönetici e-posta gönderimi için ilgili uyarıyı görüntüleyin.
 
 - [Önceden ayarlanmış ilkeler içinde yapılandırılabilir kimliğe bürünme koruması özel kullanıcıları ve etki alanları ve artırılmış kapsam](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/configurable-impersonation-protection-and-scope-for-preset/ba-p/3294459):
-  - (Seç) Kuruluşun tamamına Önceden Belirlenmiş Katı/Standart ilkeleri uygulayın ve belirli alıcı kullanıcıları, grupları veya etki alanlarını seçme zahmetini ortadan kaldırarak kuruluşunuzun tüm alıcı kullanıcılarının güvenliğini sağlayın. 
+  - (Seç) Kuruluşun tamamına Önceden Belirlenmiş Katı/Standart ilkeleri uygulayın ve belirli alıcı kullanıcıları, grupları veya etki alanlarını seçme zahmetini ortadan kaldırarak kuruluşunuzun tüm alıcı kullanıcılarının güvenliğini sağlayın.
   - Önceden Belirlenmiş Katı/Standart ilkeler içindeki özel kullanıcılar ve özel etki alanları için kimliğe bürünme koruma ayarlarını yapılandırın ve hedeflenen kullanıcılarınızı ve hedeflenen etki alanınızı kimliğe bürünme saldırılarına karşı otomatik olarak koruyun.
 
 - [Office 365 için Microsoft 365 Defender'de karantina deneyimini (ikinci bölüm) basitleştirme](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): Karantina deneyiminin kullanımını daha da kolaylaştırmak için ek özellikleri vurgular.
@@ -67,8 +92,8 @@ Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında da
 
 - [Microsoft 365 Defender Gelişmiş Avcılık'ta URLClickEvents tablosuna](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096) giriş: Office 365 için Microsoft Defender ile gelişmiş avcılıkta UrlClickEvents tablosuna giriş.
 - [El ile e-posta düzeltme iyileştirmeleri](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): Yeni eylem odaklı bir araştırma kullanarak Office 365 için Microsoft Defender gerçekleştirilen el ile e-posta temizleme eylemlerini Microsoft 365 Defender (M365D) birleşik İşlem Merkezi'ne getirme.
-- [Office 365 için Microsoft Defender'da öncelik hesapları için farklı](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838) koruma tanıtımı: Öncelik hesapları için farklılaştırılmış korumanın genel kullanılabilirliğine giriş. 
- 
+- [Office 365 için Microsoft Defender'da öncelik hesapları için farklı](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838) koruma tanıtımı: Öncelik hesapları için farklılaştırılmış korumanın genel kullanılabilirliğine giriş.
+
 ## <a name="march-2022"></a>Mart 2022
 
 - [Office 365 için Microsoft Defender'de gönderim deneyimi kolaylaştırıldı](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/streamlining-the-submissions-experience-in-microsoft-defender/ba-p/3152080): Deneyiminizi daha basit hale getirmek için yeni birleşik ve kolaylaştırılmış gönderim sürecine giriş.
@@ -94,11 +119,14 @@ Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında da
 ## <a name="august-2021"></a>Ağustos 2021
 
 - [bildirilen iletiler için gözden Yönetici](admin-review-reported-message.md): Yöneticiler artık bildirilen iletileri gözden geçirdikten sonra son kullanıcılara şablonlu iletiler gönderebilir. Şablonlar, kuruluşunuz için ve yöneticinizin kararına göre özelleştirilebilir.
-- [Ekleme, Kiracı İzin Ver/Engelle Listesinde izin verir](manage-tenant-allows.md): Engellenen ileti yönetici gönderme işleminin bir parçası olarak gönderildiyse, artık Kiracı İzin Ver/Engelle Listesine izin verme girdileri ekleyebilirsiniz. Bloğun yapısına bağlı olarak, gönderilen URL, dosya ve/veya gönderen izin verme izni Kiracı İzin Ver/Engelle Listesine eklenir. Çoğu durumda, sisteme biraz zaman vermek ve garanti edilirse doğal olarak izin vermek için izinler eklenir. Bazı durumlarda Microsoft, izin verme işlemini sizin için yönetir.
+- Engellenen ileti yönetici gönderme işleminin bir parçası olarak gönderildiyse, ou artık Kiracı İzin Ver/Engelle Listesine izin verme girdileri ekleyebilir. Bloğun yapısına bağlı olarak, gönderilen URL, dosya ve/veya gönderen izin verme izni Kiracı İzin Ver/Engelle Listesine eklenir. Çoğu durumda, sisteme biraz zaman vermek ve garanti edilirse doğal olarak izin vermek için izinler eklenir. Bazı durumlarda Microsoft, izin verme işlemini sizin için yönetir. Daha fazla bilgi için bkz.:
+  - [Gönderimler portalında URL'ler için izin verme girdileri oluşturmak için Microsoft 365 Defender portalını kullanın](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal)
+  - [Gönderimler portalında dosyalar için izin verme girdileri oluşturmak için Microsoft 365 Defender portalını kullanın](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal)
+  - [Gönderimler portalında etki alanları ve e-posta adresleri için izin verme girdileri oluşturmak için Microsoft 365 Defender portalını kullanın](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal)
 
 ## <a name="july-2021"></a>Temmuz 2021
 
-- [Otomatik araştırmalarda e-posta analizi geliştirmeleri](email-analysis-investigations.md)
+- [Otomatik araştırmalarda Email çözümleme geliştirmeleri](email-analysis-investigations.md)
 - [Gelişmiş Teslim](configure-advanced-delivery.md): Üçüncü taraf kimlik avı simülasyonlarının kullanıcılara ve filtrelenmemiş iletilerin güvenlik işlemi posta kutularına teslimini yapılandırmaya yönelik yeni bir özellik sunar.
 - [Microsoft Teams için Güvenli Bağlantılar](safe-links.md#safe-links-settings-for-microsoft-teams)
 - Şu senaryolar için yeni uyarı ilkeleri: güvenliği aşılmış posta kutuları, Forms kimlik avı, geçersiz kılmalar nedeniyle teslim edilen kötü amaçlı postalar ve ZAP'ı yuvarlama
@@ -113,14 +141,14 @@ Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında da
 
 ## <a name="june-2021"></a>Haziran 2021
 
-- Kimlik avı önleme ilkeleri içinde yeni ilk kişi güvenliği ipucu ayarı. Bu güvenlik ipucu, alıcılar bir gönderenden ilk kez e-posta aldığında veya genellikle bir gönderenden e-posta almadığında gösterilir. Bu ayar ve yapılandırma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
+- Kimlik avı önleme ilkeleri içinde yeni ilk kişi güvenliği ipucu ayarı. Bu güvenlik ipucu, alıcılar ilk olarak bir gönderenden e-posta aldığında veya genellikle gönderenden e-posta almadığında gösterilir. Bu ayar ve yapılandırma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
   - [İlk temas emniyet ipucu](set-up-anti-phishing-policies.md#first-contact-safety-tip)
   - [EOP'de kimlik avı önleme ilkelerini yapılandırma](configure-anti-phishing-policies-eop.md)
   - [Office 365 için Microsoft Defender'de kimlik avı önleme ilkelerini yapılandırma](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="aprilmay-2021"></a>Nisan/Mayıs 2021
 
-- [E-posta varlık sayfası](mdo-email-entity-page.md): Tehditler, kimlik doğrulaması ve algılamalar, patlama ayrıntıları ve yepyeni bir e-posta önizleme deneyimi hakkında zenginleştirilmiş bilgiler içeren bir e-postanın birleşik 360 derecelik görünümü.
+- [Email varlık sayfası](mdo-email-entity-page.md): Tehditler, kimlik doğrulaması ve algılamalar, patlama ayrıntıları ve yepyeni bir e-posta önizleme deneyimiyle zenginleştirilmiş bilgiler içeren bir e-postanın birleşik 360 derecelik görünümü.
 - [Office 365 Yönetim API'si](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): Teslim eylemini, özgün ve en son teslim konumlarını ve güncelleştirilmiş algılama ayrıntılarını eklemek için EmailEvents'e (RecordType 28) Güncelleştirmeler.
 - [Office 365 için Defender için Tehdit Analizi](/microsoft-365/security/defender/threat-analytics): Etkin tehdit aktörlerini, popüler teknikleri ve saldırı yüzeylerini ve devam eden kampanyalar konusunda Microsoft araştırmacılarının kapsamlı raporlamalarını görüntüleyin.
 

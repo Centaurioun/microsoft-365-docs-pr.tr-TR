@@ -21,13 +21,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Yinelenen faturalamayı kapatarak veya açarak iş için Microsoft 365 aboneliklerinin çoğunu yenilemeyi öğrenin.
-ms.date: 05/04/2021
-ms.openlocfilehash: b180b5be5427832070680f00b9cd804a650e603e
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.date: 08/18/2022
+ms.openlocfilehash: 0f7722eda2f7b7fc4f9e24d30be4442c106ff640
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112097"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384568"
 ---
 # <a name="renew-microsoft-365-for-business"></a>İş için Microsoft 365'i yenileme
 
@@ -60,8 +60,11 @@ Aboneliğiniz için bir ürün anahtarıyla ön ödeme yaparsanız aboneliğiniz
 ::: moniker-end
 
 2. Yinelenen faturalamayı yönetmek istediğiniz aboneliği seçin.
+
 3. Abonelik ayrıntıları sayfasındaki **Abonelik ve ödeme ayarları'nın** altında **Yinelenen ödemeyi düzenle'yi** seçin.
+
 4. **Yinelenen faturalamayı düzenle** bölmesinde **Açık**, **Açık, ancak bir kez yenile'yi** veya **Kapat'ı** seçin.
+
 5. **Kaydet**'i seçin.
 
     > [!NOTE]
@@ -70,6 +73,34 @@ Aboneliğiniz için bir ürün anahtarıyla ön ödeme yaparsanız aboneliğiniz
     > - **Yinelenen faturalama** kapatıldığında abonelik iptal olmaz. Aboneliği etkin tutmak istiyorsanız faturayı el ile ödemeniz gerekir.
     > - **Yinelenen faturalamayı** kapatırsanız abonelik süresi dolana kadar etkin kalır. **Abonelik ve ödeme ayarları** bölümündeki abonelik ayrıntıları sayfasında son kullanma tarihini görüntüleyebilirsiniz.
     > - Aboneliği hemen iptal etmeyi öğrenmek için bkz. [Aboneliğimi iptal etme](cancel-your-subscription.md).
+
+## <a name="extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key"></a>Microsoft 365 ürün anahtarı kullanarak ön ödemeli aboneliğinizin sona erme tarihini uzatma
+
+Ön ödemeli ürün lisansları size ürün anahtarı olarak adlandırılan 25 karakterlik alfasayısal kod olarak verilir. Zaten sahip olduğunuz bir ürün için başka bir ön ödemeli abonelik satın alırsanız, aboneliğinizin son kullanma tarihini uzatmak için ürün anahtarını kullanabilirsiniz. [Aboneliğinize daha fazla lisans eklemek](../licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key) için bir ürün anahtarı da kullanabilirsiniz.
+
+::: moniker range="o365-worldwide"
+
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ürünleriniz</a> sayfasına gidin.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ürünleriniz</a> sayfasına gidin.
+
+::: moniker-end
+
+2. **Ürünler** sekmesinde, genişletmek istediğiniz aboneliği seçin.
+
+3. Abonelik ayrıntıları sayfasındaki **Abonelik ve ödeme ayarları** bölümünde **Bitiş tarihini genişlet'i** seçin.
+
+4. **Kullanıcı lisanslarını yenile veya ekle** sayfasında **Yeni ve kullanılmayan bir ürün anahtarı kullan'ı** ve ardından **İleri'yi** seçin.
+
+5. Ürün anahtarını girin ve **İleri'yi** seçin.
+    > [!NOTE]
+    > Birden fazla ürün anahtarınız varsa, bunları girmek için **Başka bir ürün anahtarı ekle'yi** seçebilirsiniz.
+
+6. Sipariş ayrıntılarınızı gözden geçirin ve **Kullan'ı** seçin.
 
 ## <a name="related-content"></a>İlgili içerik
 

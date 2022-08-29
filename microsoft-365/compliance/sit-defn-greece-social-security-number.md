@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Yunanistan Sosyal Güvenlik Numarası (AMKA) hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: c28819240da0fe67a93f848502a9f274fc7f9229
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: f7f313987f647efcb066ac95d64e8aeaec2fa44e
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948834"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369841"
 ---
-# <a name="greece-social-security-number-amka"></a>Yunanistan Sosyal Güvenlik Numarası (AMKA)
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
+# <a name="greece-social-security-number-amka"></a>Yunanistan Sosyal Güvenlik Numarasını (AMKA)
 
 ## <a name="format"></a>Biçim
 
@@ -46,20 +38,20 @@ Boşluk ve sınırlayıcı içermeyen 11 basamak
 - Dört basamak
 - denetim basamalı
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_greece_eu_ssn` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_greece_eu_ssn_or_equivalent` bir anahtar sözcük bulunur.
+- İşlev `Func_greece_eu_ssn`, desenle eşleşen içeriği bulur.
+- `Keywords_greece_eu_ssn_or_equivalent` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_greece_eu_ssn` , desenle eşleşen içeriği bulur.
+- İşlev `Func_greece_eu_ssn`, desenle eşleşen içeriği bulur.
 
 ```xml
       <!-- Greece Social Security Number (AMKA) -->

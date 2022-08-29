@@ -1,5 +1,5 @@
 ---
-title: Ön cephe ekip işbirliği
+title: Ön saf ekip işbirliği
 description: Ön cephe ekiplerinizin konumlar içinde veya konumlar arasında etkili bir şekilde nasıl iletişim kurabileceğini ve işbirliği yapabileceklerini öğrenin.
 ms.topic: conceptual
 author: daisyfell
@@ -22,14 +22,14 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 07471ac0d253df36f60882bd551769fe2868e195
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: a2c354b575436d93713bb2487c35f2dca6807f19
+ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824747"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67432385"
 ---
-# <a name="frontline-team-collaboration"></a>Ön cephe ekip işbirliği
+# <a name="frontline-team-collaboration"></a>Ön saf ekip işbirliği
 
 Microsoft Teams ile iletişim kurmak, işbirliği yapmak ve işlemleri kolaylaştırmak için ön cephenizi bir araya getirin. Microsoft 365 ve Teams, perakende iş ortaklarını, sağlık çalışanlarını, finansal hizmet sağlayıcılarını, kar amacı gütmeyen düzenleyicileri, üretim çalışanlarını ve daha fazlasını sorunsuz bir şekilde iletişim kurmaları ve işbirliği yapmalarını sağlayabilir.
 
@@ -44,7 +44,7 @@ Teams, bilgi iletişim kurmak ve paylaşmak için aşağıdaki yolları içerir:
 
 |Görev |Açıklama |Bu özelliği yönet |Son kullanıcı eğitimi |
 |-----|------------|-----------------------|------------------|
-|Sohbet edin, ileti gönderin ve iletişim kurun |Ön cephe çalışanlarınız tek tek ve kanal sohbet mesajlaşması ile konumlar içinde ve konumlar arasında sorunsuz bir şekilde iletişim kurabilir. Teams, kuruluşunuz için kullanıma hazır harika bir işbirliği deneyimi sunar ve çoğu kuruluş varsayılan ayarların kendileri için çalıştığını fark eder. |[Sohbeti, ekipleri, kanalları ve uygulamaları yönetin](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page). | [Sohbetler başlatın](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5) ve [Gönderiler ve iletilerle çalışın](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885). |
+|Sohbet edin, ileti gönderin ve iletişim kurun |Ön cephe çalışanlarınız tek tek ve kanal sohbet mesajlaşması ile konumlar içinde ve konumlar arasında sorunsuz bir şekilde iletişim kurabilir. Teams, kuruluşunuz için kullanıma hazır harika bir işbirliği deneyimi sunar ve çoğu kuruluş varsayılan ayarların kendileri için çalıştığını fark eder. |[Sohbeti, ekipleri, kanalları ve uygulamaları yönetin](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page). | [Sohbetler başlatın](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5) ve [Gönderiler ve iletilerle çalışın](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885). [Microsoft Teams'de Etiketler videosunu](https://go.microsoft.com/fwlink/?linkid=2202727) izleyin. |
 |Ekip üyelerini arama ve toplantı |Yöneticiler teams ses, video, ekran paylaşımı, kayıt ve transkripsiyon özelliklerinin gücüyle tek tek toplantılar ayarlayabilir veya günlük toplantıları yönetmek için kanal toplantılarını kullanabilir. Toplantılar ve konferans ayarlarını yapılandırmanız ve aramayı kullanmak için bir sesli çözüm etkinleştirmeniz gerekir. |[Teams'de aramayı ve toplantıyı yönetme](/microsoftteams/deploy-meetings-microsoft-teams-landing-page) ve [Teams ses çözümünüzü planlama](/microsoftteams/cloud-voice-landing-page) |[Arama yapma](https://support.microsoft.com/office/overview-of-teams-calls-425d6970-6e27-47b6-bc61-4c38fff51c4f) ve [Toplantıya katılma](https://support.microsoft.com/office/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4) |
 |Dosya ve belgeleri depolama ve paylaşma |Dosya paylaşımı, mağaza personelinin satış katından çıkmak veya bir yöneticiden yardım almak zorunda kalmadan satış diyagramları gibi bilgilere kolayca erişmesini sağlar. Her ekip otomatik olarak belgeleri depolamak ve paylaşmak için kullanabileceğiniz bir Dosyalar sekmesiyle birlikte gelir. Bu sekme aslında SharePoint'teki varsayılan ekip sitesi belge kitaplığında yer alan ve ekip oluşturulduğunda otomatik olarak oluşturulan bir klasörü temsil eder. |[Teams ve SharePoint tümleştirmesine genel bakış](/sharepoint/teams-connected-sites) |[Dosyaları karşıya yükleme ve paylaşma](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 
@@ -84,13 +84,19 @@ Finansal hizmetler kuruluşları, kredi verme süreci üzerinde sorunsuz bir şe
 > [!TIP]
 > Finansal hizmetler, sağlık hizmetleri, kar amacı gütmeyen kuruluşlar ve perakende sektörleri için örnekler verilmiştir, ancak bu uygulamaları herhangi bir sektördeki bir kuruluş için kullanabilirsiniz.
 
+Teams'de işbirliği uygulamalarını ve özelliklerini kullanmalarına yardımcı olmak için ekibinizle paylaşacak [videoları ve kaynakları görüntüleyin](collab-features-apps-toolkit.md).
+
 ### <a name="create-manage-and-share-schedules-with-shifts"></a>Vardiyalar ile zamanlama oluşturma, yönetme ve paylaşma
 
 Zamanlamaları sorunsuz bir şekilde yönetmek ve paylaşmak için Vardiyalar'ı kullanın. Yöneticiler kasiyerler, hemşireler veya ipotek uzmanları gibi özel gruplar oluşturabilir, çalışanlara vardiya atayabilir, özel etiketleme ve molalar ekleyebilir ve çalışanların almak isteyebileceği açık vardiyalar ekleyebilir. Çalışanlar vardiyaları kullanarak uygunluklarını ayarlayabilir, zamanlamalarını görüntüleyebilir, vardiyaları iş arkadaşlarınızla değiştirebilir ve giriş ve çıkış saati alabilir. Yöneticiler ayrıca çalışanların isteyebileceği açık vardiyalar da oluşturabilir. Örneğin, kar amacı gütmeyen bir kuruluşta gönüllü koordinatör, gönüllülerin alma isteğinde bulunabileceği açık vardiyalar oluşturabilir.
 
-[Kuruluşunuz için Vardiyaları Yönetmeyi öğrenin](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+[Kuruluşunuz için Vardiyaları Yönetmeyi](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) öğrenin.
+
+[Çalışanlarınızın Vardiyalar ile zamanı ve katılımı izlemesine nasıl yardımcı olunacağınızı](shifts-toolkit.md) öğrenin.
 
 Bu [Shifts video eğitimini](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) kullanıcılarınızla paylaşın.
+
+Vardiyalar'daki özellikleri kullanmalarına yardımcı olmak için ekibinizle paylaşacak [videoları ve kaynakları görüntüleyin](shifts-toolkit.md).
 
 ### <a name="keep-in-touch-with-walkie-talkie"></a>Walkie Talkie ile iletişimde kalın
 
@@ -103,9 +109,11 @@ Walkie Talkie uygulaması anında anında iletişim sağlar. Walkie Talkie'yi ku
 |Finansal hizmetler |Müşteriyle kredi seçeneklerini tartışan bir banka çalışanı, müşteri için en iyi seçeneği belirlemek üzere bir kredi uzmanına danışmak için Walkie Talkie'yi kullanabilir. |
 |Üretim |Bir teknisyen, ekipman bakımı veya onarımı yaparken başka bir konumdaki bir uzmana danışmak için Walkie Talkie'yi kullanabilir. |
 
-[Kuruluşunuz için Walkie Talkie'yi yönetmeyi öğrenin](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+[Kuruluşunuz için Walkie Talkie'yi yönetmeyi](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) öğrenin.
 
 Bu [Walkie Talkie video eğitimini](https://support.microsoft.com/office/use-walkie-talkie-in-teams-884a008a-761e-4b62-99f8-15671d9a2f69) kullanıcılarınızla paylaşın.
+
+[Walkie Talkie featurette videosunu](https://go.microsoft.com/fwlink/?linkid=2202710) izleyin.
 
 ### <a name="boost-morale-with-praise"></a>Övgü ile morali artırma
 
@@ -116,15 +124,15 @@ Takdir uygulaması, yönetim ve ön cephe ekip üyelerinin birbirlerini tebrik e
 |Perakende |Mağaza yöneticisi, satış hedeflerine uyan bir iş ortağına **Harika** rozeti gönderebilir. |
 |Sağlık Hizmetleri |Bir sağlık çalışanı, hasta bakımı için fazladan çaba sarf eden bir akrana **Kind kalp** rozeti gönderebilir. |
 |Finansal hizmetler |Banka yöneticisi, önemli bir müşteriyi korumaya yardımcı olan bir ilişki yöneticisine **Achiever** rozeti gönderebilir. |
-|Üretim |Bir gözetmen **Liderlik** rozetini ekibi iyi performans gösteren bir ustabaşına gönderebiliyor. |
+|Üretim |Bir gözetmen **, ekibi** iyi performans gösteren bir ustabaşına Liderlik rozeti gönderebilir. |
 
-[Kuruluşunuz için Takdir uygulamasını yönetmeyi öğrenin](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+[Kuruluşunuz için Takdir uygulamasını yönetmeyi](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) öğrenin.
 
 Bu [Övgü video eğitimini](https://support.microsoft.com/office/communication-and-praise-7d37ef80-542b-42e5-aa01-0fabbaa634b6) kullanıcılarınızla paylaşın.
 
 ### <a name="track-and-monitor-work-with-tasks"></a>Görevler ile çalışmayı izleme ve izleme
 
-Tüm perakende ekibinizin yapılacaklar öğelerini izlemek için Teams'deki Görevler'i kullanın. Mağaza yöneticileri ve çalışanlar, Teams çalıştıran herhangi bir cihazdan istedikleri zaman görev oluşturabilir, atayabilir ve zamanlayabilir, görevleri kategorilere ayırabilir ve durumu güncelleştirebilir. BT uzmanları ve yöneticileri de kuruluşunuz için belirli ekiplere görev yayımlayabilir. Örneğin, günlük temizlik için bir dizi görev veya yeni bir ekran ayarlama adımları yayımlayabilirsiniz.
+Tüm ön cephe ekibiniz için yapılacaklar öğelerini izlemek için Teams'deki Görevler'i kullanın. Mağaza yöneticileri ve çalışanlar, Teams çalıştıran herhangi bir cihazdan istedikleri zaman görev oluşturabilir, atayabilir ve zamanlayabilir, görevleri kategorilere ayırabilir ve durumu güncelleştirebilir. BT uzmanları ve yöneticileri de kuruluşunuz için belirli ekiplere görev yayımlayabilir. Örneğin, günlük temizlik için bir dizi görev veya yeni bir ekran ayarlama adımları yayımlayabilirsiniz.
 
 |Sanayi |Örnek |
 |:--------|:-------|
@@ -133,9 +141,11 @@ Tüm perakende ekibinizin yapılacaklar öğelerini izlemek için Teams'deki Gö
 |Finansal hizmetler |Banka yöneticisi, ipotek uzmanlarına yeni fiyatları veya ilkeleri gözden geçirmeleri ve tanımaları için bir görev atayabilir. |
 |Üretim |Gözetmen, çalışana yeni bir ürün grubunu inceleme görevi atayabilir. |
 
-[Kuruluşunuz için Görevler uygulamasını yönetmeyi öğrenin](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+[Kuruluşunuz için Görevler uygulamasını yönetmeyi](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) öğrenin.
 
 Bu [Görevler video eğitimini](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) kullanıcılarınızla paylaşın.
+
+[Görevler featurette videosunu](https://go.microsoft.com/fwlink/?linkid=2202616) izleyin.
 
 ### <a name="streamline-approvals-with-approvals"></a>Onaylarla onayları kolaylaştırma
 
@@ -148,9 +158,11 @@ Ekibinizle istekleri ve işlemleri kolaylaştırmak için Onaylar'ı kullanın. 
 |Finansal hizmetler |Kredi veren bir uzman, özel bir faiz oranı sunmak için bir gözetmene onay isteği gönderebilir. |
 |Üretim |Bir makine operatörü, bir ekipman parçasının ayarlarını yapmak için onay isteği gönderebilir. |
 
-[Kuruluşunuz için Onaylar uygulamasını yönetmeyi öğrenin](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+[Kuruluşunuz için Onaylar uygulamasını yönetmeyi](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) öğrenin.
 
 Bu [Onaylar video eğitimini](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3?wt.mc_id=otc_microsoft_teams) kullanıcılarınızla paylaşın.
+
+[Approvals featurette videosunu](https://go.microsoft.com/fwlink/?linkid=2202800) izleyin.
 
 ### <a name="check-in-on-progress-with-updates"></a>Güncelleştirmeler ile devam ederken iade edin
 
@@ -163,9 +175,11 @@ Microsoft Teams uygulamasındaki Güncelleştirmeler, kuruluşunuzun üyelerinin
 |Finansal hizmetler |Banka yöneticisi, sabah sayımlarını onaylamak için teller için yinelenen bir günlük şablon oluşturabilir ve atayabilir. |
 |Üretim |Gözetmen, yeni bir ürün grubundaki ilerleme durumunu izlemek için bir şablon oluşturabilir ve atayabilir. |
 
-[Kuruluşunuz için Güncelleştirmeler uygulamasını yönetmeyi öğrenin](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+[Kuruluşunuz için Güncelleştirmeler uygulamasını yönetmeyi](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) öğrenin.
 
 Bu [Güncelleştirmeler video eğitimini](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) kullanıcılarınızla paylaşın.
+
+[Güncelleştirmeler featurette videosunu](https://go.microsoft.com/fwlink/?linkid=2202831) izleyin.
 
 ## <a name="set-up-your-teams-channels-and-apps"></a>Ekiplerinizi, kanallarınızı ve uygulamalarınızı ayarlama
 
@@ -187,6 +201,23 @@ Daha fazla bilgi: [Şablonlarla ekip oluşturma](https://support.microsoft.com/o
 Uygulamalarla ekibinizdekileri geliştirin. Microsoft Teams yönetim merkezinde kuruluşunuz için uygulamalara izin verebilir veya uygulamaları engelleyebilir ya da uygulamaların ayarlarını yapılandırabilirsiniz. Uygulamaları yönetme hakkında daha fazla bilgi için bkz. [Microsoft Teams yönetim merkezinde uygulamaları yönetme](/microsoftteams/manage-apps).
 
 Kullanıcılarınız ekiplerine izin verilen tüm uygulamaları ekleyebilir. Nasıl yapıldığını göstermek için bu eğitimi kullanıcılarınızla paylaşın: [Uygulamaları bulma ve kullanma](https://support.microsoft.com/office/find-and-use-apps-6e22a734-c002-4da0-ba63-681f155b142d).
+
+
+### <a name="use-viva-connections-to-create-a-personalized-experience"></a>Kişiselleştirilmiş bir deneyim oluşturmak için Viva Bağlantılar kullanma
+
+Viva Bağlantılar[, Microsoft Viva paketinin](/viva/microsoft-viva-overview) bir parçasıdır ve Teams'de kişiselleştirilmiş bir giriş deneyimi oluşturmanıza olanak tanır. 
+
+![Mobil cihazda Viva Bağlantılar Panosunun ekran görüntüsü.](media/flw-shifts-praise-tasks-approvals.png)
+
+
+Viva Bağlantılar Panosu'nu kullanın ve Vardiyalar, Görevler ve Onaylar kartlarını ekleyin. Kartlar Teams'deki Vardiyalar, Görevler ve Onaylar uygulamalarına bağlanır. Kartlardaki içerik kullanıcı için dinamik ve kişiselleştirilmiştir. 
+
+[Viva Bağlantılar alma](/viva/connections/viva-connections-overview) ve [Viva Bağlantılar Panosu oluşturma](/viva/connections/create-dashboard) hakkında daha fazla bilgi edinin. 
+
+
+
+
+
 
 ## <a name="learn-more-about-teams-capabilities-for-specific-industries"></a>Belirli sektörlere yönelik Teams özellikleri hakkında daha fazla bilgi edinin
 

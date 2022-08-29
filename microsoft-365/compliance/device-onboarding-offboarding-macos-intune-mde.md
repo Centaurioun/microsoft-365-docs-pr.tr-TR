@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: MDE müşterileri için Microsoft Intune kullanarak macOS cihazlarını Microsoft Purview çözümlerine ekleme ve çıkarma hakkında bilgi edinin
-ms.openlocfilehash: 3e6947483a4d3320b61211edeb0f9fdc3e31095d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b14b8c8385bd1a67265b36006c35d35612a32e3c
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623041"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385517"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>macOS cihazlarının Uç Nokta için Microsoft Defender müşterileri için Intune kullanarak Uyumluluk çözümlerine katılımı ve çıkarılması
 
@@ -86,22 +86,28 @@ tam disk erişimi     |[fulldisk.mobileconfig](https://github.com/microsoft/mdat
 
 1. **Yapılandırma profilleri** sayfasında, az önce oluşturduğunuz profili seçin, bu örnekte *ErişilebilirlikformacOS* ve cihaz listesini ve yapılandırma profilinin dağıtım durumunu görmek için **Cihaz durumu'nu** seçin.
 
-### <a name="update-configuration-profiles"></a>Yapılandırma profillerini güncelleştirme
+### <a name="update-existing-system-configuration-profiles"></a>Mevcut sistem yapılandırma profillerini güncelleştirme
 
-1. Var olan tam disk erişim profilini **fulldisk.mobileconfig** dosyasıyla güncelleştirin.
 
-1. Mevcut MDE tercihleri profilini bu değerlerle güncelleştirin
-   
+1. MDE için önceden bir Tam Disk Erişimi yapılandırma profili oluşturulmuş ve dağıtılmış olmalıdır.  [Bkz. Mac'te Uç Nokta için Microsoft Defender için Intune tabanlı dağıtım](/microsoft-365/security/defender-endpoint/mac-install-with-intune#full-disk-access). Uç nokta DLP, yeni bir uygulama için ek bir Tam Disk Erişimi izni gerektirir: `com.microsoft.dlp.daemon`. 
+    1. Mevcut Fullfull Disk Erişimi yapılandırma profilini fulldisk.mobileconfig dosyasıyla güncelleştirin. 
+
+
+1. Mevcut MDE Tercihleri yapılandırma profilini bulun. Bkz. [macOS'ta Uç Nokta için Microsoft Defender için tercihleri ayarlama](/microsoft-365/security/defender-endpoint/mac-preferences#intune-full-profile)
+    1. Şu değerleri kullanarak profile yeni bir anahtar ekleyin:
+
 ```xml
-<key>features</key>
-<dict>
-    <key>systemExtensions</key>
-    <string>enabled</string>
-    <key>dataLossPrevention</key>
-    <string>enabled</string>
-</dict>
-```
+<key>features</key> 
+<dict> 
+    <key>systemExtensions</key> 
+    <string>enabled</string> 
+    <key>dataLossPrevention</key> 
+    <string>enabled</string> 
+</dict> 
+``` 
 
+Aşağıda [bir mobileconfig örneği verilmiş](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)
+ 
 ## <a name="offboard-macos-devices-using-intune"></a>Intune kullanarak macOS cihazlarını çıkarma
 
 > [!IMPORTANT]

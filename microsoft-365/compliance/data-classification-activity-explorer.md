@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Etkinlik gezgini, kullanıcıların etiketlenmiş içeriğinizde yaptıkları eylemleri görmenizi ve filtrelemenizi sağlar.
-ms.openlocfilehash: c33ff2653eef6813caf9b9281903b7248af12359
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 06e77cf567c34f49da7206dd22f030ddb35e6b3d
+ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66918012"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67417400"
 ---
 # <a name="get-started-with-activity-explorer"></a>Etkinlik gezginini kullanmaya başlama
 
@@ -59,18 +59,18 @@ Veri sınıflandırmasına erişen ve kullanan her hesapta şu aboneliklerden bi
 
 Bir hesaba bu rol gruplarından herhangi birinde açıkça üyelik atanmalıdır veya bu rol açıkça verilmelidir.
 
-### <a name="roles-and-role-groups-in-preview"></a>Önizlemede Roller ve Rol Grupları
+### <a name="roles-and-role-groups"></a>Roller ve Rol Grupları
 
-Önizlemede, erişim denetimlerinizde ince ayar yapmak için test yapabileceğiniz roller ve rol grupları vardır.
+Erişim denetimlerinizde ince ayar yapmak için kullanabileceğiniz roller ve rol grupları vardır.
 
-Aşağıda, önizleme aşamasında olan geçerli rollerin listesi yer alır. Bunlar hakkında daha fazla bilgi edinmek için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki Roller](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Kullanabileceğiniz geçerli rollerin listesi aşağıdadır. Bunlar hakkında daha fazla bilgi edinmek için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki Roller](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Information Protection Yönetici
 - Information Protection Analisti
 - Information Protection Araştırmacısı
 - Information Protection Okuyucu
 
-Aşağıda, önizleme aşamasında olan geçerli rol gruplarının listesi yer alır. hakkında daha fazla bilgi edinmek için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki Rol grupları](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Kullanabileceğiniz geçerli rol gruplarının listesi aşağıdadır. hakkında daha fazla bilgi edinmek için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki Rol grupları](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Information Protection
 - Information Protection Yöneticileri

@@ -13,22 +13,22 @@ ms.collection:
 ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender Plan 2'de Saldırı simülasyonu eğitimi için yük oluşturmayı ve yönetmeyi öğrenebilir.
 ms.technology: mdo
-ms.openlocfilehash: 6cb3f2b2edb3c55063db2640eab1dd888f9aa5b7
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4f763bc7c0fc47e845beabedfe6eff4968338934
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621303"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408451"
 ---
-# <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Office 365 için Defender'de Saldırı simülasyonu eğitimi yükleri
+# <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Office 365 için Defender'da Saldırı simülasyonu eğitimi yükleri
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 [Office 365 için Microsoft Defender plan 2](defender-for-office-365.md) **için geçerlidir**
 
-Saldırı simülasyonu eğitiminde _yük_ , kimlik avı e-posta iletisi ve simülasyonlarda kullanıcılara sunulan bağlantılar veya ek içeriğidir. Microsoft 365 E5 veya Office 365 için Microsoft Defender Plan 2'de saldırı simülasyonu eğitimi, kullanılabilir sosyal mühendislik teknikleri için sağlam bir yerleşik yük kataloğu sunar. Ancak, kuruluşunuz için daha iyi çalışacak özel yükler oluşturmak isteyebilirsiniz.
+Saldırı simülasyonu eğitimi'de _yük_, kimlik avı e-posta iletisi ve simülasyonlarda kullanıcılara sunulan bağlantılar veya ek içeriğidir. Microsoft 365 E5 veya Office 365 için Microsoft Defender Plan 2'deki Saldırı simülasyonu eğitimi, kullanılabilir sosyal mühendislik teknikleri için sağlam bir yerleşik yük kataloğu sunar. Ancak, kuruluşunuz için daha iyi çalışacak özel yükler oluşturmak isteyebilirsiniz.
 
-Kullanılabilir yükleri görmek için adresinden Microsoft 365 Defender portalını <https://security.microsoft.com>açın **, e-posta & işbirliği** \> **Saldırı simülasyonu eğitimi** \> **Simülasyonu içerik kitaplığı** sekmesine \> gidin ve **Ardından Yükler'i** seçin. **Doğrudan Yükleri** seçebileceğiniz **Simülasyon içerik kitaplığı** sekmesine gitmek için kullanın<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+Kullanılabilir yükleri görmek için adresinden Microsoft 365 Defender portalını <https://security.microsoft.com>açın **Email & işbirliği** \> **Saldırı simülasyonu eğitimi** \> **Benzetim içerik kitaplığı** sekmesine \> gidin ve **Ardından Yükler'i** seçin. **Doğrudan Yükleri** seçebileceğiniz **Simülasyon içerik kitaplığı** sekmesine gitmek için kullanın<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 **Simülasyon içerik kitaplığı** sekmesindeki **yüklerin** iki sekmesi vardır:
 
@@ -42,7 +42,7 @@ Her yük için aşağıdaki bilgiler gösterilir:
 - **Dil**: Yük birden çok çeviri içeriyorsa, ilk iki dil doğrudan gösterilir. Kalan dilleri görmek için, sayısal simgenin üzerine gelin (örneğin, **+10**).
 - **Kaynak**: Yerleşik yükler için değer **Genel'dir**. Özel yükler için değer **Kiracı'dır**.
 - **Başlatılan simülasyonlar**: Yükü kullanan başlatılan simülasyonların sayısı.
-- **Risk altındaki oran (%)**: Yerleşik yüklerde bu değer, diğer tüm Microsoft 365 kuruluşlarında aynı yük türünü kullanan Saldırı simülasyonu eğitim simülasyonları için tahmin edilen ortalama risk oranıdır.
+- **Risk altındaki oran (%)**: Yerleşik yüklerde bu değer, diğer tüm Microsoft 365 kuruluşlarında aynı yük türünü kullanan Saldırı simülasyonu eğitimi simülasyonları için tahmin edilen ortalama risk oranıdır.
 - **Oluşturan**: Yerleşik yüklerde değer **Microsoft'tur**. Özel yükler için değer, yükü oluşturan kullanıcının UPN değeridir.
 - **Son değiştirme**
 - **Teknik**: Mevcut [sosyal mühendislik tekniklerinden](attack-simulation-training.md#select-a-social-engineering-technique) biri:
@@ -51,6 +51,7 @@ Her yük için aşağıdaki bilgiler gösterilir:
   - **Ekteki bağlantı**
   - **Kötü amaçlı yazılım bağlantısı**
   - **Sürücüye göre URL**
+  - **OAuth onayı verme**
 - **Durum**: Değer **Hazır** veya **Taslak'tır**. **Genel yükler** sekmesinde değer her zaman **Hazır'dır**.
 
 Listede bir yük bulmak için Ara simgesini kullanın ![.](../../media/m365-cc-sc-search-icon.png) Yükün adını bulmak için **arama** kutusu.
@@ -66,7 +67,7 @@ Tıklatın ![Filtre simgesi.](../../media/m365-cc-sc-filter-icon.png) yüklerini
 - **Geçerli olay**: **Evet** veya **Hayır**.
 - **Tartışmalı**: **Evet** veya **Hayır**.
 
-Görüntülenen bir veya daha fazla sütunu kaldırmak için Sütunları özelleştir simgesine tıklayın ![.](../../media/m365-cc-sc-customize-icon.png) **Sütunları özelleştirin**. Varsayılan olarak, gösterilmeyen tek sütun **Platform'dur** ve bu değer şu anda her zaman **E-posta'dır**.
+Görüntülenen bir veya daha fazla sütunu kaldırmak için Sütunları özelleştir simgesine tıklayın ![.](../../media/m365-cc-sc-customize-icon.png) **Sütunları özelleştirin**. Varsayılan olarak, gösterilmeyen tek sütun **Platform'dur** ve bu değer şu anda her zaman **Email**.
 
 Listeden bir yük seçtiğinizde, aşağıdaki bilgilerle birlikte bir ayrıntılar açılır öğesi görüntülenir:
 
@@ -74,7 +75,7 @@ Listeden bir yük seçtiğinizde, aşağıdaki bilgilerle birlikte bir ayrıntı
   - **Yük açıklaması**
   - **Kimden adı**
   - **E-postadan**
-  - **E-posta konusu**
+  - **Email konu**
   - **Kaynak**: Yerleşik yükler için değer **Genel'dir**. Özel yükler için değer **Kiracı'dır**.
   - **Tema**
   - **Marka**
@@ -94,18 +95,18 @@ Listeden bir yük seçtiğinizde, aşağıdaki bilgilerle birlikte bir ayrıntı
 > [!NOTE]
 > Bazı ticari markalar, logolar, simgeler, insignias ve diğer kaynak tanımlayıcıları, yerel, eyalet ve federal tüzükler ve yasalar kapsamında yüksek koruma alır. Bu tür göstergelerin yetkisiz kullanımı, kullanıcıları cezai para cezaları da dahil olmak üzere cezalara tabi yapabilir. Kapsamlı bir liste olmasa da, buna Başkanlık, Başkan Yardımcısı ve Kongre mühürleri, CIA, FBI, Sosyal Güvenlik, Medicare ve Medicaid, Birleşik Devletler İç Gelir Servisi ve Olimpiyatlar dahildir. Bu ticari marka kategorilerinin ötesinde, herhangi bir üçüncü taraf ticari markanın kullanılması ve değiştirilmesi doğal bir risk taşır. Yükte kendi ticari markalarınızı ve logolarınızı kullanmak, özellikle de kuruluşunuzun kullanıma izin vermesinde daha az riskli olabilir. Yük oluştururken veya yapılandırırken nelerin kullanılması uygun veya uygun olmadığı hakkında başka sorularınız varsa, hukuk danışmanlarınıza danışmanız gerekir.
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, E-posta & işbirliği** \> **Saldırı simülasyonu eğitimi** \> **Simülasyon içerik kitaplığı** sekmesi \> **Yük Kiracı yükleri** \> sekmesine gidin. Doğrudan **Yükleri** ve **Kiracı yükleri** sekmesini seçebileceğiniz **Simülasyon içerik kitaplığı** sekmesine gitmek için kullanın<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Email & işbirliği** \> **Saldırı simülasyonu eğitimi** \> **Benzetim içerik kitaplığı** sekmesi \> **Yük Kiracı yükleri** \> sekmesine gidin. Doğrudan **Yükleri** ve **Kiracı yükleri** sekmesini seçebileceğiniz **Simülasyon içerik kitaplığı** sekmesine gitmek için kullanın<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
    Yük oluştur simgesine tıklayın ![.](../../media/m365-cc-sc-create-icon.png) **Yük oluşturma sihirbazını** başlatmak için **Yüklerin** **Kiracı yükleri** sekmesinde bir yük oluşturun.
 
-   ![Microsoft 365 Defender portalındaki Saldırı benzetimi eğitimindeki Yüklerin Kiracı yükleri sekmesinde bir yük oluşturun.](../../media/attack-sim-training-payload-create.png)
+   ![Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi'daki Yüklerin Kiracı yükleri sekmesinde bir yük oluşturun.](../../media/attack-sim-training-payload-create.png)
 
    > [!NOTE]
    > ![Yük simgesi oluşturun.](../../media/m365-cc-sc-create-icon.png) **Yük oluşturma** , simülasyon oluşturma sihirbazının **Yükü seçin ve oturum açma sayfası** adımında da kullanılabilir. Daha fazla bilgi için bkz [. Simülasyon oluşturma: Yük seçme ve oturum açma sayfası](attack-simulation-training.md#select-a-payload-and-login-page).
    >
    > Oluşturma sihirbazı sırasında herhangi bir noktada Kaydet **ve kapat'a** tıklayarak ilerlemenizi kaydedebilir ve yükü daha sonra yapılandırmaya devam edebilirsiniz. **Yüklerin Kiracı yükleri** sekmesindeki bildirimi seçip Yükü düzenle simgesine tıklayarak ![kaldığınız yerden devam edebilirsiniz.](../../media/m365-cc-sc-edit-icon.png) **Yükü düzenle**. Kısmen tamamlanan yük **, Taslak** **Durum** değerine sahip olacaktır.
 
-2. **Türü seç** sayfasında, şu anda seçebileceğiniz tek değer **E-posta'dır**.
+2. **Türü seç** sayfasında, şu anda seçebileceğiniz tek değer **Email**.
 
    **İleri**'ye tıklayın.
 
@@ -116,8 +117,9 @@ Listeden bir yük seçtiğinizde, aşağıdaki bilgilerle birlikte bir ayrıntı
    - **Ekteki bağlantı**
    - **Kötü amaçlı yazılım bağlantısı**
    - **Sürücüye göre URL**
+   - **OAuth Onayı Verme**
 
-   Daha fazla bilgi için bkz. [Office 365 için Defender'de Saldırı benzetimi eğitimi ile kimlik avı saldırısı simülasyonu](attack-simulation-training.md) yapma.
+   Daha fazla bilgi için bkz. [Office 365 için Defender'da Saldırı simülasyonu eğitimi ile kimlik avı saldırısı simülasyonu](attack-simulation-training.md) yapma.
 
    İşiniz bittiğinde **İleri'ye** tıklayın.
 
@@ -134,7 +136,8 @@ Listeden bir yük seçtiğinizde, aşağıdaki bilgilerle birlikte bir ayrıntı
      - **Kimden adı**
      - **Görünen ad olarak ad kullanın**: Varsayılan olarak, bu ayar seçili değildir.
      - **E-postadan**: Yükünüzün göndereni için bir iç e-posta adresi seçerseniz, yük bir çalışandan geliyor gibi görünür. Bu gönderen e-posta adresi, kullanıcının yüke karşı duyarlılığını artırır ve çalışanları iç tehdit riski konusunda eğitmeye yardımcı olur.
-     - **E-posta konusu**
+     - **Email konu**
+     - **E-postaya Dış etiket ekle**: Varsayılan olarak, bu ayar seçili değildir.
 
    - **Ek ayrıntıları** bölümü: Bu bölüm yalnızca Teknik **seçin** sayfasında **Kötü amaçlı yazılım eki**, **Ekteki bağlantı** veya **Kötü amaçlı yazılıma bağla'yı** seçtiyseniz kullanılabilir. Aşağıdaki ayarları yapılandırın:
      - **Ekinize ad verin**
@@ -144,9 +147,9 @@ Listeden bir yük seçtiğinizde, aşağıdaki bilgilerle birlikte bir ayrıntı
 
      Daha sonra URL'yi iletinin gövdesine ekleyeceksiniz.
 
-   - **Kimlik avı bağlantısı** bölümü: Bu bölüm yalnızca, **Teknik seçin** sayfasında **Kimlik bilgisi toplama**, **Ekteki bağlantı** veya **Sürücüye göre URL'yi** seçtiyseniz kullanılabilir.
+   - **Kimlik avı bağlantısı** bölümü: Bu bölüm yalnızca Teknik **seçin** sayfasında **Kimlik bilgisi toplama**, **Ekteki bağlantı**, **Sürücüye göre URL** veya **OAuth Onayı Verme'yi** seçtiyseniz kullanılabilir.
 
-     **Kimlik bilgisi toplama** veya **Sürüş URL'si** için, kutunun adı **Kimlik avı bağlantınız olmasını istediğiniz URL'yi seçin** şeklindedir. Daha sonra URL'yi iletinin gövdesine ekleyeceksiniz.
+     **Kimlik bilgisi toplama**, **Drive-by URL** veya **OAuth Onayı Verme** için, kutunun adı **Kimlik avı bağlantınız olmasını istediğiniz URL'yi seçin** şeklindedir. Daha sonra URL'yi iletinin gövdesine ekleyeceksiniz.
 
      **Ekteki bağlantı** için, kutunun adı **Bu ekte kimlik avı bağlantınız olmasını istediğiniz bir URL seçin** şeklindedir. Daha sonra, URL'yi eke ekleyeceksiniz.
 
@@ -202,7 +205,7 @@ Listeden bir yük seçtiğinizde, aşağıdaki bilgilerle birlikte bir ayrıntı
 
    - **Dil** bölümü: Yükün dilini seçin. Kullanılabilir değerler şunlardır: **İngilizce**, **İspanyolca**, **Almanca**, **Japonca**, **Fransızca**, **Portekizce**, **Felemenkçe**, **İtalyanca**, **İsveççe**, **Çince (Basitleştirilmiş)**, **Norveççe Bokmål**, **Lehçe**, **Rusça**, **Fince**, **Korece**, **Türkçe**, **Macarca**, **İbranice**, **Tayca**, **Arapça**, **Vietnamca**, **Slovakça**, **Yunanca**, **Endonezya dili**, **Rumence**, **Slovence**, **Hırvat,** **Katalanca** veya **Diğer**.
 
-   - **E-posta iletisi** bölümü:
+   - **Email ileti** bölümü:
 
      - Var olan bir düz metin iletisi dosyasını içeri aktarmak için **E-postayı içeri aktar'a** ve ardından **Dosya seç'e** tıklayabilirsiniz.
 
@@ -220,9 +223,9 @@ Listeden bir yük seçtiğinizde, aşağıdaki bilgilerle birlikte bir ayrıntı
          - **Şehir Ekle**: İleti gövdesine eklenen değer olur `${city}`.
          - **Ekleme tarihi**: İleti gövdesine eklenen değer olur `${date|MM/dd/yyyy|offset}`.
 
-         :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="Office 365 için Microsoft Defender'deki Saldırı benzetimi eğitimi'ndeki yük oluşturma sihirbazının Yükü yapılandır sayfasındaki E-posta iletisi bölümü" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
+         :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="Office 365 için Microsoft Defender'deki Saldırı simülasyonu eğitimi yük oluşturma sihirbazının Yükü yapılandırma sayfasındaki Email iletisi bölümü" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
 
-       - **Kimlik avı bağlantısı** denetimi: Bu denetim yalnızca, **Seç tekniği** sayfasında **Kimlik bilgisi toplama**, **Ekteki bağlantı** veya **Sürücüye göre URL'yi** seçtiyseniz kullanılabilir. **Kimlik avı bağlantısı** bölümünde daha önce seçtiğiniz URL'yi adlandırmak ve eklemek için bu denetimi kullanın.
+       - **Kimlik avı bağlantısı** denetimi: Bu denetim yalnızca, **Seç tekniği** sayfasında **Kimlik bilgisi toplama**, **Ekteki bağlantı**, **Sürücüye göre URL** veya **OAuth Onayı Verme'yi** seçtiyseniz kullanılabilir. **Kimlik avı bağlantısı** bölümünde daha önce seçtiğiniz URL'yi adlandırmak ve eklemek için bu denetimi kullanın.
 
        - **Kötü amaçlı yazılım eki bağlantı** denetimi: Bu denetim, yalnızca **Seç tekniği** sayfasında **Kötü amaçlı yazılıma bağla** seçeneğini belirlediğinizde kullanılabilir. **Ek bağlantısı** bölümünde daha önce seçtiğiniz URL'yi adlandırmak ve eklemek için bu denetimi kullanın.
 
@@ -232,11 +235,11 @@ Listeden bir yük seçtiğinizde, aşağıdaki bilgilerle birlikte bir ayrıntı
 
      - **Kod** sekmesinde HTML kodunu doğrudan görüntüleyebilir ve değiştirebilirsiniz. **Biçimlendirme ve Dinamik etiket** ve **Kimlik Avı bağlantısı** veya **Kötü amaçlı yazılım ek bağlantısı** gibi diğer denetimler kullanılamaz.
 
-     - **E-posta iletisindeki tüm bağlantıları kimlik avı bağlantısıyla değiştir iki durumlu** düğmesi, yalnızca **Teknik seçin** sayfasında **Kimlik bilgisi toplama**, **Kötü amaçlı yazılıma bağlantı** veya **Sürücü URL'sini** seçtiyseniz kullanılabilir. Bu iki durumlu düğme, iletideki tüm bağlantıları önceden seçilen **Kimlik Avı bağlantısı** veya Ek URL'si **için bağlantı** ile değiştirerek zaman kazandırabilir. Bunu yapmak için ayarı ![Açık konuma getirin simgesi..](../../media/scc-toggle-on.png).
+     - **E-posta iletisindeki tüm bağlantıları kimlik avı bağlantısıyla değiştir iki durumlu** düğmesi, yalnızca **Kimlik bilgisi toplama**, **Kötü amaçlı yazılım bağlantısı**, **Sürücüye göre URL** veya **Seç tekniği** sayfasında **OAuth Onayı Verme** seçeneğini belirlediğinizde kullanılabilir. Bu iki durumlu düğme, iletideki tüm bağlantıları önceden seçilen **Kimlik Avı bağlantısı** veya Ek URL'si **için bağlantı** ile değiştirerek zaman kazandırabilir. Bunu yapmak için ayarı ![Açık konuma getirin simgesi..](../../media/scc-toggle-on.png).
 
    İşiniz bittiğinde **İleri'ye** tıklayın.
 
-6. **Gösterge ekle** sayfası yalnızca, **Seç tekniği** sayfasında **Kimlik bilgisi toplama**, **Ekteki bağlantı** veya **Sürücüye göre URL'yi** seçtiyseniz kullanılabilir.
+6. **Gösterge ekle** sayfası yalnızca Teknik **seçin** sayfasında **Kimlik bilgisi toplama**, **Ekteki bağlantı**, **Sürücüye göre URL** veya **OAuth Onayı Verme'yi** seçtiyseniz kullanılabilir.
 
    Göstergeler, çalışanların kimlik avı iletilerinin hikaye işaretlerini belirlemesine yardımcı olur.
 
@@ -250,7 +253,7 @@ Listeden bir yük seçtiğinizde, aşağıdaki bilgilerle birlikte bir ayrıntı
      |---|---|
      |**Ek türü**|İleti gövdesi|
      |**Dikkat dağıtıcı ayrıntı**|İleti gövdesi|
-     |**Etki alanı kimlik sahtekarlık**|İleti gövdesi <p> E-posta adresinden|
+     |**Etki alanı kimlik sahtekarlık**|İleti gövdesi <br/><br/> E-posta adresinden|
      |**Genel karşılama**|İleti gövdesi|
      |**İnsani temyizler**|İleti gövdesi|
      |**Tutarsız -lık**|İleti gövdesi|
@@ -262,11 +265,11 @@ Listeden bir yük seçtiğinizde, aşağıdaki bilgilerle birlikte bir ayrıntı
      |**Hayır/minimal markalama**|İleti gövdesi|
      |**Arkadaş, iş arkadaşı, gözetmen veya yetkili figürü olarak pozlar**|İleti gövdesi|
      |**Hassas bilgi isteği**|İleti gövdesi|
-     |**Güvenlik göstergeleri ve simgeleri**|İleti gövdesi <p> İleti konusu|
-     |**Gönderen görünen adı ve e-posta adresi**|Kimden adı <p> E-posta adresinden|
-     |**Aciliyet duygusu**|İleti gövdesi <p> İleti konusu|
-     |**Yazım ve dil bilgisi düzensizlikleri**|İleti gövdesi <p> İleti konusu|
-     |**Tehdit dili**|İleti gövdesi <p> İleti konusu|
+     |**Güvenlik göstergeleri ve simgeleri**|İleti gövdesi <br/><br/> İleti konusu|
+     |**Gönderen görünen adı ve e-posta adresi**|Kimden adı <br/><br/> E-posta adresinden|
+     |**Aciliyet duygusu**|İleti gövdesi <br/><br/> İleti konusu|
+     |**Yazım ve dil bilgisi düzensizlikleri**|İleti gövdesi <br/><br/> İleti konusu|
+     |**Tehdit dili**|İleti gövdesi <br/><br/> İleti konusu|
      |**Gerçek teklifler olamayacak kadar iyi**|İleti gövdesi|
      |**Profesyonel olmayan görünümlü tasarım veya biçimlendirme**|İleti gövdesi|
      |**URL köprü oluşturma**|İleti gövdesi|
@@ -276,7 +279,7 @@ Listeden bir yük seçtiğinizde, aşağıdaki bilgilerle birlikte bir ayrıntı
 
      Göstergenin konumu olarak e-posta iletisinin konusunu veya ileti gövdesini seçerseniz, **Metin seç** düğmesi görüntülenir. İleti konusu veya ileti gövdesinde göstergenin görünmesini istediğiniz metni seçmek için bu düğmeye tıklayın. İşiniz bittiğinde **Seç'e** tıklayın.
 
-     :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="Saldırı benzetimi eğitimindeki yük oluşturma sihirbazındaki bir göstergeye eklenecek ileti gövdesindeki Seçili metin konumu" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
+     :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="Saldırı simülasyonu eğitimi'daki yük oluşturma sihirbazındaki bir göstergeye eklenecek ileti gövdesindeki Seçili metin konumu" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
 
      - **Gösterge açıklaması: Gösterge** için varsayılan açıklamayı kabul edebilir veya özelleştirebilirsiniz.
 
@@ -306,7 +309,7 @@ Listeden bir yük seçtiğinizde, aşağıdaki bilgilerle birlikte bir ayrıntı
 
    İşiniz bittiğinde **Gönder'e** tıklayın. Görüntülenen onay sayfasında **Bitti'ye** tıklayın.
 
-   :::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi sayfasındaki Yükü gözden geçirme sayfası" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
+   :::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi yükü gözden geçir sayfası" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
 
 ## <a name="modify-payloads"></a>Yükleri değiştirme
 

@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: dacurwin
 author: dcurwin
 manager: dansimp
-ms.date: 05/03/2022
+ms.date: 08/21/2022
 audience: ITPro
 ms.topic: article
 search.appverid:
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: d31288d115cf78d54b87d7d01f162caa209c2094
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 13d178f77efa19ed53c93afa454ddaf6e481a8a6
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106284"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408429"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft 365 Defender'de Microsoft Defender for Cloud Apps (Önizleme)
 
@@ -74,8 +74,9 @@ Aşağıdaki resimde ve tabloda Microsoft Defender for Cloud Apps ile Microsoft 
 
 > [!NOTE]
 > Microsoft 365 Defender portalındaki yeni Cloud Apps için Defender deneyimi, şu anda [Yönetici erişimini yönetme](/defender-cloud-apps/manage-admins) bölümünde ayrıntılı olarak belirtilen tüm kullanıcılar tarafından kullanılabilir:
-> * Cloud [Apps için Defender'daki Yerleşik yönetici rollerinde](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps) tanımlandığı gibi **Uygulama/Örnek yöneticisi**, **Kullanıcı grubu yöneticisi**, Cloud **Discovery genel** yöneticisi ve Cloud **Discovery rapor yöneticisi**.
-> * Etkinlik gizliliği bölümünde tanımlanan kullanıcı [gizlilik](/defender-cloud-apps/activity-privacy) grupları
+>
+> - Cloud [Apps için Defender'daki Yerleşik yönetici rollerinde](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps) tanımlandığı gibi **Uygulama/Örnek yöneticisi**, **Kullanıcı grubu yöneticisi**, Cloud **Discovery genel** yöneticisi ve Cloud **Discovery rapor yöneticisi**.
+> - Etkinlik gizliliği bölümünde tanımlanan kullanıcı [gizlilik](/defender-cloud-apps/activity-privacy) grupları
 
 ## <a name="whats-changed"></a>Değişenler
 

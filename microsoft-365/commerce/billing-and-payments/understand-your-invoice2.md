@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: İş için Microsoft 365 faturanızda veya faturanızda ücretleri, faturalamayı ve ödeme bilgilerini yorumlamayı öğrenin.
 ms.date: 05/24/2022
-ms.openlocfilehash: 0c863c1398b19c0c3efdf6c8390ad4a0cd16f82c
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 041e0636cf5e1797d0716ddceb550e2544085e46
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112031"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384846"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>İş için Microsoft 365 faturanızı veya faturanızı anlama
 
@@ -36,6 +36,12 @@ Faturanız veya faturanız, aboneliğiniz için ücretlerin özetini sağlar ve 
 
 > [!NOTE]
 > Microsoft 365 yerine veya buna ek olarak başka abonelikleriniz varsa bkz. [Faturanızı veya faturanızı anlama](understand-your-invoice.md).
+
+## <a name="watch-understand-your-bill-or-invoice"></a>İzleyin: Faturanızı veya faturanızı anlama
+
+[YouTube kanalımızda](https://go.microsoft.com/fwlink/?linkid=2197915) bu videoya ve diğer videolara göz atın.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53wxS?autoplay=false]
 
 ## <a name="how-often-and-when-am-i-billed"></a>Ne sıklıkta ve ne zaman faturalandırılırım?
 

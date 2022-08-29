@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Yönetilen Hizmet Sağlayıcıları (MSP' ler) için Microsoft 365 Lighthouse kullanmak için gereksinimlerin listesini alın.
-ms.openlocfilehash: 4cea971227f13bf5cf7a59cffa08465e9ed63391
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 6ed55b436d110c43ce0a87d12049988105c79c48
+ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67105977"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67417444"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse için gereksinimler
 
@@ -36,7 +36,7 @@ Ayrıca, her MSP müşteri kiracısının aşağıdaki gereksinimleri karşılay
 - En az bir Microsoft 365 İş Ekstra, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business veya İş için Microsoft Defender lisansı olmalıdır
 - En fazla 2500 lisanslı kullanıcı olmalıdır
 
- \*Müşterileri Lighthouse'a eklemek için Ayrıntılı Temsilcili Yönetici Ayrıcalıkları (GDAP veya Temsilci Yönetici Ayrıcalıkları (DAP) ilişkisi gereklidir. Lighthouse'a eklemek için dolaylı kurumsal bayi ilişkisi artık gerekli değildir. MÜŞTERI kiracısında DAP ve GDAP birlikte varsa, GDAP özellikli güvenlik gruplarındaki MSP teknisyenleri için GDAP izinleri önceliklidir.
+ \*Müşterileri Lighthouse'a eklemek için Ayrıntılı Temsilcili Yönetici Ayrıcalıkları (GDAP) ve dolaylı bayi ilişkisi ya da Temsilci Yönetici Ayrıcalıkları (DAP) ilişkisi gerekir. MÜŞTERI kiracısında DAP ve GDAP birlikte varsa, GDAP özellikli güvenlik gruplarındaki MSP teknisyenleri için GDAP izinleri önceliklidir. Yakında yalnızca GDAP ilişkilerine (dolaylı kurumsal bayi ilişkileri olmadan) sahip müşteriler Lighthouse'a eklenecek.
 
 ## <a name="requirements-for-enabling-device-management"></a>Cihaz yönetimini etkinleştirme gereksinimleri
 

@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Yunanistan vergi kimlik numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 13fe64c6cae50526e0e3bd3b631b1ca936c10b71
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6a9928223a95355157ac1bef14480aa686524c3b
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948830"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369957"
 ---
 # <a name="greece-tax-identification-number"></a>Yunanistan vergi kimlik numarası
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -44,16 +36,16 @@ Boşluk ve sınırlayıcı içermeyen dokuz basamak
 
 Dokuz basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Geçerli değil
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_greece_eu_tax_file_number` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_greece_eu_tax_file_number` bir anahtar sözcük bulunur.
+- `Keywords_greece_eu_tax_file_number` içinden bir anahtar sözcük bulundu.
 
 ```xml
       <!-- Greek Tax Identification Number -->

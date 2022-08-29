@@ -19,12 +19,12 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: ad8c15ef0b5dc56d2df8455341f8bf5e4e6efd94
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: e46e5f3af06cc94cea4ff2e76208f3ccadc53586
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66862099"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385627"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender deneyin
 
@@ -87,7 +87,7 @@ Office 365 için Defender değerlendirdiğinizde, Microsoft 365'teki koruma öze
 
 **Notlar**:
 
-- Güvenli Bağlantılar, posta akışında URL'leri patlatacaktır. Belirli URL'lerin patlamasını önlemek için Kiracı İzin Ver/Engelle Listesini kullanın. Daha fazla bilgi için bkz. [Kiracı İzin Verme/Engelleme Listesini Yönetme](tenant-allow-block-list.md).
+- Güvenli Bağlantılar, posta akışında URL'leri patlatacaktır. Belirli URL'lerin patlamasını önlemek için Kiracı İzin Ver/Engelle Listesini kullanın. Daha fazla bilgi için bkz. [Kiracı İzin Verme/Engelleme Listesini Yönetme](manage-tenant-allow-block-list.md).
 - Güvenli Bağlantılar, e-posta iletisi gövdelerindeki URL bağlantılarını sarmalamaz.
 - Değerlendirme ilkesi ayarları, bu makalenin devamında yer alan [Değerlendirme ilkesi ayarları](#evaluation-policy-settings) bölümünde açıklanmıştır.
 

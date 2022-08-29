@@ -17,12 +17,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 0c5dd2cc372ad1d8e37713360561f41be9b05209
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 5d5c6596d0981ad9787a784c0d189a8e11c07ac6
+ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824691"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67432407"
 ---
 # <a name="choose-your-scenarios-for-microsoft-365-for-frontline-workers"></a>Ön cephe çalışanları için Microsoft 365 senaryolarınızı seçin
 
@@ -34,7 +34,7 @@ Kuruluşunuzun ön cephe çalışanları için Microsoft 365 ile neler yapabilec
 
 ## <a name="communications"></a>İletişim
 
-:::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png"::: 
+:::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png":::
 
 İletişim çözümleri, ön cephe çalışanlarınızı birbirine bağlar ve birbirleriyle, kuruluştaki diğer kişilerle ve müşterilerinizle işbirliği yapmalarını sağlar.
 
@@ -45,9 +45,9 @@ Kuruluşunuzun ön cephe çalışanları için Microsoft 365 ile neler yapabilec
 
 Yammer'ın ön cephe çalışanlarınız için nasıl çalışabileceğini öğrenmek için şu kaynaklara da bakın: [Yammer On Toplulukları](https://aka.ms/Yam10Communities) ve [Yammer Lookbook](https://aka.ms/Yammer/Lookbook)
 
-## <a name="wellbeing--engagement"></a>& etkileşimin refahı
+## <a name="wellbeing--engagement"></a>Dengeli yaşam ve katılım
 
-:::image type="icon" source="/office/media/icons/heart-teams.png"::: 
+:::image type="icon" source="/office/media/icons/heart-teams.png":::
 
 Tüm kuruluşunuzla etkileşim kurmalarına yardımcı olarak ön cephe çalışanlarınıza ait olma duygusunu besleyin.
 
@@ -57,20 +57,20 @@ Tüm kuruluşunuzla etkileşim kurmalarına yardımcı olarak ön cephe çalış
 
 Kapak: [Satır içi çeviri](/microsoftteams/inline-message-translation-teams), Takdir, hedefli iletişimler (Viva Bağlantılar), Stream veya Teams ile video yayınları.
 
-## <a name="training--onboarding"></a>Eğitim & ekleme
+## <a name="training--onboarding"></a>Eğitim ve işe alım
 
-:::image type="icon" source="/office/media/icons/files-teams.png"::: 
+:::image type="icon" source="/office/media/icons/files-teams.png":::
 
 Çalışanlarınız için sürekli büyümeyi teşvik edin ve bilgi paylaşımını ve değişimi teşvik edin.
 
 | Senaryo | Açıklama | Hizmetleri | Teams uygulamaları |
 | --- | --- | --- |--- |
 | [Yeni çalışanları ekleme](flw-onboarding-training.md) | Yeni çalışanların önemli kaynaklar bulabileceği, kuruluşundaki kişilerle tanışabileceği ve yeni rollerinde başarılı olmaya hazırlanabileceği hepsi bir arada karma bir çalışma ortamı geliştirerek yeni çalışanın harika bir deneyime sahip olmasını sağlayın.| SharePoint <br> Viva Öğrenme <br> Viva Bağlantılar <br> Yammer | Liste <br>Canlı toplantılar |
-| [Devam eden eğitim](flw-onboarding-training.md#ongoing-training) | Bunlar eklendikten sonra, Viva Öğrenme'da devam eden eğitimlerle iş gücünüzün becerilerini güncel tutmasına yardımcı olun. | SharePoint <br> Viva Öğrenme <br> Viva Bağlantılar | |
+| [Devam eden eğitim](flw-onboarding-training.md#ongoing-training) | Bunlar eklendikten sonra, Viva Öğrenme'da devam eden eğitimlerle iş gücünüzün becerilerini güncel tutmasına yardımcı olun. | SharePoint <br> Viva Öğrenme <br> Viva Bağlantılar <br> Yammer| |
 
 ## <a name="schedule-management"></a>Zamanlama yönetimi
 
-:::image type="icon" source="/office/media/icons/calendar-teams.png"::: 
+:::image type="icon" source="/office/media/icons/calendar-teams.png":::
 
 Ön cephe iş gücünüzle zamanlama koordinasyonu basitleştirin ve kolaylaştırın. Zamanlamalarına ilişkin görünürlük elde edin ve kapak için düzenleme ve ayrılma işlemlerinin yapılmasına olanak tanıyin.
 
@@ -80,7 +80,7 @@ Kapak: [Satır içi çeviri](/microsoftteams/inline-message-translation-teams), 
 
 ## <a name="digitized-processes"></a>Dijitalleştirilmiş süreçler
 
-:::image type="icon" source="/office/media/icons/task-checklist-planning-teams.png"::: 
+:::image type="icon" source="/office/media/icons/task-checklist-planning-teams.png":::
 
 Kağıt tabanlı işlemleri dijitalleştirerek ve rutin, yinelenen adımları otomatikleştirerek operasyonel verimliliği artırma.
 
@@ -91,11 +91,21 @@ Kağıt tabanlı işlemleri dijitalleştirerek ve rutin, yinelenen adımları ot
 
 ## <a name="virtual-appointments"></a>Sanal randevular
 
-:::image type="icon" source="media/virtual-appointment-teams.png"::: 
+:::image type="icon" source="media/virtual-appointment-teams.png":::
 
 İstemciler ve müşterilerle sanal randevular zamanlamak ve barındırmak için Microsoft Bookings ve Microsoft Teams'i kullanın. Müşterileriniz hakkında doğru bilgileri almak için Veya müşterilerinizin neye ihtiyacı olduğunu öğrenmek için müşteri desteği deneyiminizin bir parçası olarak Forms'ı sanal randevu deneyiminiz ile tümleştirebilirsiniz.
 
 Daha fazla bilgi: [Microsoft Teams ve Bookings uygulamasıyla sanal randevular](bookings-virtual-visits.md)
+
+## <a name="help-your-team-clients-and-customers"></a>Ekibinize, müşterilerinize ve müşterilerinize yardımcı olun
+
+Teams uygulamalarını ve özelliklerini rahatça kullanmalarına yardımcı olmak için ekibinizle paylaşacak kaynakları bulun. İstemcilerinizin ve müşterilerinizin kuruluşunuzla sanal randevuları kullanmasına yardımcı olmak için özelleştirilebilir bilgi grafikleri ve web içeriği alın.
+
+| Senaryo | Açıklama |
+| --- | --- |
+|[İstemcilerinizin ve müşterilerinizin sanal randevuları kullanmasına yardımcı olma](virtual-appointments-toolkit.md) |Müşterilerinizin kuruluşunuzla sanal randevuları kullanmasını kolaylaştırmak için web sitenize ekleyebileceğiniz özelleştirilebilir bilgi grafikleri ve SSS. |
+|[Ön cephe çalışanlarınızın zamanı ve katılımı izlemelerine yardımcı olun](shifts-toolkit.md) |Ön cephe yöneticilerinizin ve çalışanlarınızın Microsoft Teams'de Vardiyaları nasıl kullanacağınızı öğrenmesine yardımcı olacak videolar. |
+|[Ön cephe çalışanlarınızın işbirliği uygulamalarını ve özelliklerini kullanmalarını sağlama](collab-features-apps-toolkit.md) |Ön cephe ekibinizin Microsoft Teams uygulamalarını ve özelliklerini kullanmasına yardımcı olacak videolar. |
 
 ## <a name="more-scenarios-and-solutions-with-the-digital-ecosystem"></a>Dijital ekosistemle ilgili daha fazla senaryo ve çözüm
 
