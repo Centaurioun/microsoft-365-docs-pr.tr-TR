@@ -1,5 +1,5 @@
 ---
-title: Ön cephe çalışanlarıyla kurumsal iletişim
+title: Ön saf çalışanları ile kurumsal iletişim
 description: Ön cephe ekibinizi daha geniş kuruluşunuza bağlamak için Viva Bağlantılar ve Yammer'ı nasıl kullanabileceğinizi öğrenin.
 ms.topic: conceptual
 author: daisyfeller
@@ -21,20 +21,26 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: b5ff5f83492cdc50558d36ba305ce279506e79c3
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 28273f2445784ea269364f62a49bdc6ba871b960
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824687"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388305"
 ---
-# <a name="corporate-communications-with-frontline-workers"></a>Ön cephe çalışanlarıyla kurumsal iletişim
+# <a name="corporate-communications-with-frontline-workers"></a>Ön saf çalışanları ile kurumsal iletişim
 
 Yammer ve Viva Bağlantılar kullanarak ön cephe ekibinizin daha geniş kuruluşunuzla bağlantıda kalmasını sağlayın.
 
 ## <a name="connect-information-from-across-the-organization-with-viva-connections"></a>kuruluş genelindeki bilgileri Viva Bağlantılar ile bağlama
 
 Viva Bağlantılar ile çalışanlarla etkileşim kurun ve çalışanları bilgilendirin. Viva Bağlantılar Teams'de ön cephe ekibinizin kuruluşunuzdan uyarlanmış haber akışını ve ihtiyaç duydukları kaynakları içeren kişiselleştirilmiş bir panoyu görüntüleyebileceği bir merkez oluşturur. Çalışanlar Viva Bağlantılar kullandığında, önemli bilgileri daha hızlı alabilirler. Bu da yöneticilerin güncelleştirmeleri aktarmak için değerli zaman harcamak zorunda olmadığı anlamına gelir. Viva Bağlantılar Panosu'nda surface önemli bilgileri, kişiselleştirilmiş haberler, görevler, duyurular ve diğer kaynaklar. Örneğin, bir perakendeci yeni ürün ve promosyon duyurularını mağaza iş arkadaşlarıyla paylaşabilir veya kar amacı gütmeyen kuruluş için bir bağış toplama koordinatörü üç aylık hedefleri gönüllülerle paylaşabilir.
+
+
+| Perakende çalışanı için görüntüleme  |Perakende yöneticisi için görüntüleme                  | 
+| :------------------- | :------------------- |
+| ![Perakende çalışanının bilgilerini görüntüleyen mobil cihazdaki Viva Bağlantılar Panosunun ekran görüntüsü.](media/frontline-worker-1.png)  | ![Mobil cihazda perakende satış yöneticisinin bilgilerini görüntüleyen Viva Bağlantılar Panosunun ekran görüntüsü.](media/frontline-worker-2.png) | 
+
 
 [Viva Bağlantılar](/sharepoint/viva-connections-overview) hakkında daha fazla bilgi edinin ve çalışanlarınızın ve iş ortaklarınızın [Microsoft Teams'de Viva Bağlantılar](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) kullanmaya başlamalarına yardımcı olun.
 

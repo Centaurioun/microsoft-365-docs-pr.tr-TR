@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: Yeni bir onmicrosoft.com etki alanı oluşturmayı ve yeni geri dönüş etki alanınız yapmayı öğrenin.
-ms.openlocfilehash: 66f5562b4a2ba46f662a54ff33d953c4e617ce3a
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 9382921fcb8d93770c056b11b2c3bb89ceb01a2d
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087319"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445192"
 ---
 # <a name="add-and-replace-your-onmicrosoftcom-fallback-domain-in-microsoft-365"></a>Microsoft 365'te onmicrosoft.com geri dönüş etki alanınızı ekleme ve değiştirme
 
@@ -92,7 +92,7 @@ Etki alanlarını eklemek, değiştirmek veya kaldırmak için, bir [işletme ve
 
 
 > [!NOTE]
-> Geri dönüş etki alanınızı yeni bir onmicrosoft.com etki alanına dönüştürmeden önce, onmicrosoft.com SharePoint etki alanınızı değiştirmeyi düşünebilirsiniz. Ek bir onmicrosoft etki alanı oluşturup bunu geri dönüş etki alanınız olarak kullanmak SharePoint Online için yeniden adlandırma yapmaz. Mevcut SharePoint ve OneDrive URL'leriniz aynı kalır.  SharePoint etki alanı yeniden adlandırma önizlemesinde sağlanan PowerShell adımlarını kullanarak.onmicrosoft [SharePoint etki alanınızı](/sharepoint/change-your-sharepoint-domain-name) değiştirebilirsiniz (şu anda 1.000'den az sitesi olan tüm kiracılar tarafından kullanılabilir).
+> Geri dönüş etki alanınızı yeni bir onmicrosoft.com etki alanına dönüştürmeden önce, onmicrosoft.com SharePoint etki alanınızı değiştirmeyi düşünebilirsiniz. Ek bir onmicrosoft etki alanı oluşturup bunu geri dönüş etki alanınız olarak kullanmak SharePoint Online için yeniden adlandırma yapmaz. Mevcut SharePoint ve OneDrive URL'leriniz aynı kalır.  SharePoint etki alanı yeniden adlandırma önizlemesinde sağlanan PowerShell adımlarını kullanarak.onmicrosoft [SharePoint etki alanınızı](/sharepoint/change-your-sharepoint-domain-name) değiştirebilirsiniz (şu anda 10.000'den az sitesi olan tüm kiracılar tarafından kullanılabilir).
 
 Yeni onmicrosoft.com etki alanınızı oluşturduktan sonra geri dönüş etki alanınızla değiştirmek için aşağıdakileri yapın.
 

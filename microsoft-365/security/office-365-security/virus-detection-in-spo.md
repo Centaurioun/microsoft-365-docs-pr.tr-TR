@@ -20,12 +20,12 @@ description: SharePoint Online'ın kullanıcıların karşıya yüklediği dosya
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b04e9a1ca2e722a2f581441f44716c22be7a1635
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: e57865d0c8ec3993080c822438b7c4037ccab765
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059699"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450069"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online, OneDrive ve Microsoft Teams'de yerleşik virüs koruması
 
@@ -42,7 +42,7 @@ Microsoft 365, kullanıcıların SharePoint Online, OneDrive ve Microsoft Teams'
 
 ## <a name="what-happens-if-an-infected-file-is-uploaded-to-sharepoint-online"></a>Virüslü bir dosya SharePoint Online'a yüklenirse ne olur?
 
-Microsoft 365 virüs algılama altyapısı, SharePoint Online'da zaman uyumsuz (dosya yüklemelerinden bağımsız) çalışır. **Tüm dosyalar otomatik olarak taranmıyor**. Buluşsal yöntemler, taranacak dosyaları belirler. Bir dosyanın virüs içerdiği bulunduğunda, dosyaya bayrak eklenir. Nisan 2018'de taranan dosyalar için 25 MB sınırını kaldırdık.
+Microsoft 365 virüs algılama altyapısı dosyaları zaman uyumsuz olarak tarar (karşıya yükleme sonrasında bir süre). Bir dosya henüz zaman uyumsuz virüs algılama işlemi tarafından taranmadıysa ve kullanıcı dosyayı tarayıcıdan veya Teams'den indirmeye çalışırsa, indirmeye izin verilmeden önce SharePoint tarafından indirme sırasında bir tarama tetikler. **Tüm dosya türleri otomatik olarak taranmıyor**. Buluşsal yöntemler, taranacak dosyaları belirler. Bir dosyanın virüs içerdiği bulunduğunda, dosyaya bayrak eklenir. 
 
 Şöyle olur:
 

@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: o365-administration
 ms.collection: ''
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/18/2022
 ms.custom:
 - MiniMaven
 - OKR_SMB_M365
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Windows Autopilot'ı kullanarak işletmeniz için yeni Windows 10 cihazları çalışanların kullanımına hazır olacak şekilde ayarlamayı öğrenin.
-ms.openlocfilehash: 72a35557d3ab70c5e11f91f366b9cbe003b0c4c6
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 7286d22a92b8d989b8cb00c949f45f25f501a1a3
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893265"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388596"
 ---
 # <a name="use-this-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Autopilot cihazları ve profili eklemek için bu adım adım kılavuzu kullanın
 
@@ -46,11 +46,11 @@ Henüz cihaz grupları veya profilleri oluşturmadıysanız, başlamanın en iyi
 
 2. Sol gezinti bölmesinde **Cihazlar** \> **Otomatik Pilotu'nu** seçin.
 
-    ![Yönetim merkezinde cihazlar'ı ve ardından Autopilot'ı seçin.](../media/Autopilot.png)
+    :::image type="content" source="../media/Autopilot.png" alt-text="Microsoft 365 yönetim merkezi cihazlar'ı ve ardından Autopilot'ı seçin.":::
   
 3. **Autopilot** sayfasında **Başlangıç kılavuzu'na** tıklayın veya dokunun.
 
-    ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
+    :::image type="content" source="../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png" alt-text="Autopilot için adım adım yönergeler için Başlangıç kılavuzu'na tıklayın":::
   
 4. **Cihaz listesi içeren .csv dosyasını karşıya yükle** sayfasında, hazır .CSV dosyasının bulunduğu konuma gidin ve **ardından İleri'yi** **Aç'ı seçin**\>. Dosyanın üç üst bilgisi olmalıdır:
 
@@ -87,6 +87,6 @@ Daha fazla bilgi için bkz. [Cihaz listesi CSV dosyası](../admin/misc/device-li
 
 ## <a name="related-content"></a>İlgili içerik
 
-- [Autopilot Profili ayarları](../business-premium/m365bp-Autopilot-profile-settings.md) hakkında (makale)\
-- [Cihazlarınızı ve uygulama verilerinizi koruma seçenekleri](../admin/devices/choose-device-security.md) (makale)
-- [İş için Microsoft 365 planlarının güvenliğini sağlamaya yönelik en iyi yöntemler](../admin/security-and-compliance/secure-your-business-data.md)
+[Autopilot Profili ayarları](../business-premium/m365bp-Autopilot-profile-settings.md) hakkında (makale)\
+[Cihazlarınızı ve uygulama verilerinizi koruma seçenekleri](../admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md) (makale)\
+[İş için Microsoft 365 planlarının güvenliğini sağlamaya yönelik en iyi yöntemler](../admin/security-and-compliance/secure-your-business-data.md)

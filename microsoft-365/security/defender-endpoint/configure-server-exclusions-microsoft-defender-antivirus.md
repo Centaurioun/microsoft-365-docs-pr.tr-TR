@@ -1,8 +1,8 @@
 ---
-title: Windows Sunucusu'nda Microsoft Defender Virüsten Koruma dışlamalarını yapılandırma
+title: Windows Server'da Microsoft Defender Virüsten Koruma dışlamalarını yapılandırma
 ms.reviewer: pahuijbr
 manager: dansimp
-description: Windows Sunucusu, sunucu rolüne göre otomatik dışlamalar içerir. Özel dışlamalar da ekleyebilirsiniz.
+description: Windows Server, sunucu rolüne göre otomatik dışlamalar içerir. Özel dışlamalar da ekleyebilirsiniz.
 keywords: dışlamalar, sunucu, otomatik dışlamalar, otomatik, özel, taramalar, Microsoft Defender Virüsten Koruma
 ms.prod: m365-security
 ms.technology: mde
@@ -15,14 +15,14 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3d1fce680062f2ca63f220754ac1ab3f8b9b33d3
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 7205a612954dfbd283b61ca377c81c5f78243f58
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419868"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388693"
 ---
-# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Windows Sunucusu'nda Microsoft Defender Virüsten Koruma dışlamalarını yapılandırma
+# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Windows Server'da Microsoft Defender Virüsten Koruma dışlamalarını yapılandırma
 
 
 **Şunlar için geçerlidir:**
@@ -47,7 +47,7 @@ Sunucu rol tanımlı otomatik dışlamalara ek olarak, özel dışlamalar ekleye
 - Özel ve yinelenen dışlamalar otomatik dışlamalarla çakışmaz.
 - Microsoft Defender Virüsten Koruma, bilgisayarınızda hangi rollerin yüklü olduğunu belirlemek için Dağıtım Görüntüsü Bakımı ve Yönetimi (DISM) araçlarını kullanır.
 - İşletim sistemine dahil olmayan yazılımlar için uygun dışlamalar ayarlanmalıdır.
-- Windows Server 2012 R2, yüklenebilir bir özellik olarak Microsoft Defender Virüsten Koruma sahip değildir. Bu sunucuları Uç Nokta için Defender'a eklediğinizde, Windows Defender Virüsten Koruma yüklersiniz ve işletim sistemi dosyaları için varsayılan dışlamalar uygulanır. Ancak, sunucu rolleri için dışlamalar (aşağıda belirtildiği gibi) otomatik olarak uygulanmaz ve bu dışlamaları uygun şekilde yapılandırmanız gerekir. Daha fazla bilgi için bkz. [Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme](configure-server-endpoints.md).
+- Windows Server 2012 R2'de microsoft defender virüsten koruma yüklenebilir bir özellik yoktur. Bu sunucuları Uç Nokta için Defender'a eklediğinizde, Microsoft Defender Virüsten Koruma'yı yüklersiniz ve işletim sistemi dosyaları için varsayılan dışlamalar uygulanır. Ancak, sunucu rolleri için dışlamalar (aşağıda belirtildiği gibi) otomatik olarak uygulanmaz ve bu dışlamaları uygun şekilde yapılandırmanız gerekir. Daha fazla bilgi edinmek için bkz. [Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme](configure-server-endpoints.md).
 
 Bu makalede, Windows Server 2016 veya sonraki sürümlerde Microsoft Defender Virüsten Koruma için dışlamalara genel bir bakış sağlanır.
 
@@ -68,12 +68,12 @@ Windows Server 2016 veya sonraki sürümlerde aşağıdaki dışlamaları tanım
 - İşletim sistemi dosyaları
 - Sunucu rolleri ve sunucu rolleri aracılığıyla eklenen tüm dosyalar
 
-Microsoft Defender Virüsten Koruma yerleşik olduğundan, Windows Server 2016 veya sonraki sürümlerde işletim sistemi dosyaları için dışlama gerektirmez. Ayrıca, Windows Server 2016 veya üzerini çalıştırıp bir rol yüklediğinizde, Microsoft Defender Virüsten Koruma sunucu rolü için otomatik dışlamaları ve rolü yüklerken eklenen dosyaları içerir.
+Microsoft Defender Virüsten Koruma yerleşik olduğundan, Windows Server 2016 veya sonraki sürümlerde işletim sistemi dosyaları için dışlama gerektirmez. Ayrıca, Windows Server 2016 veya sonraki bir sürümü çalıştırıp bir rol yüklediğinizde Microsoft Defender Virüsten Koruma, sunucu rolü için otomatik dışlamalar ve rolü yüklerken eklenen tüm dosyaları içerir.
 
 İşletim sistemi dışlamaları ve sunucu rolü dışlamaları[, Windows Güvenliği uygulamasında](microsoft-defender-security-center-antivirus.md) gösterilen standart dışlama listelerinde görünmez.
 
 > [!NOTE]
-> Sunucu rolleri ve işletim sistemi dosyaları için otomatik dışlamalar Windows Server 2012 için geçerli değildir. R2 Windows Server 2012 çalıştıran sunucularınız Uç Nokta için Defender'a eklendiyse otomatik dışlamalar uygulanabilir. (Bkz[. Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme](configure-server-endpoints.md).)
+> Sunucu rolleri ve işletim sistemi dosyaları için otomatik dışlamalar Windows Server 2012 için geçerli değildir. R2 Windows Server 2012 çalıştıran sunucularınız Uç Nokta için Defender'a eklendiyse otomatik dışlamalar uygulanabilir. (Bkz. [Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme](configure-server-endpoints.md).)
 
 
 ### <a name="the-list-of-automatic-exclusions"></a>Otomatik dışlamaların listesi
@@ -86,9 +86,9 @@ Bu bölümde Windows Server 2016, Windows Server 2019 ve Windows Server 2022'dek
 
 > [!IMPORTANT]
 > - Varsayılan konumlar, bu makalede açıklanan konumlardan farklı olabilir.
-> - Windows özelliği veya sunucu rolü olarak dahil olmayan yazılımlar için dışlamalar ayarlamak için yazılım üreticisinin belgelerine bakın.
+> - Windows özelliği veya sunucu rolü olarak dahil olmayan yazılımların dışlamalarını ayarlamak için yazılım üreticisinin belgelerine bakın.
 
-##### <a name="windows-tempedb-files"></a>"temp.edb" dosyalarını Windows
+##### <a name="windows-tempedb-files"></a>Windows "temp.edb" dosyaları
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
 - `%ProgramData%\Microsoft\Search\Data\Applications\Windows\windows.edb`
@@ -325,7 +325,7 @@ Bu bölümde, Windows Server Update Services (WSUS) rolünü yüklediğinizde ot
 
 ## <a name="opting-out-of-automatic-exclusions"></a>Otomatik dışlamaları geri çevirme
 
-Windows Server 2016 ve sonraki sürümlerde, Güvenlik bilgileri güncelleştirmeleri tarafından sunulan önceden tanımlanmış dışlamalar yalnızca bir rol veya özellik için varsayılan yolları dışlar. Özel bir yola bir rol veya özellik yüklediyseniz veya dışlama kümesini el ile denetlemek istiyorsanız, Güvenlik bilgileri güncelleştirmelerinde sunulan otomatik dışlamaları geri çevirdiğinizden emin olun. Ancak otomatik olarak sunulan dışlamaların Windows Server 2016 ve üzeri için iyileştirildiğini unutmayın. [Dışlama listelerinizi tanımlamadan önce dışlamaları tanımlamak için](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) bkz. Öneriler.
+Windows Server 2016 ve sonraki sürümlerde, Güvenlik bilgileri güncelleştirmeleri tarafından sunulan önceden tanımlanmış dışlamalar yalnızca bir rol veya özellik için varsayılan yolları dışlar. Özel bir yola bir rol veya özellik yüklediyseniz veya dışlama kümesini el ile denetlemek istiyorsanız, Güvenlik bilgileri güncelleştirmelerinde sunulan otomatik dışlamaları geri çevirdiğinizden emin olun. Ancak otomatik olarak sunulan dışlamaların Windows Server 2016 ve üzeri için iyileştirildiğini unutmayın. Dışlama listelerinizi [tanımlamadan önce dışlamaları tanımlama önerileri](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) bölümüne bakın.
 
 > [!WARNING]
 > Otomatik dışlamaları geri çevirmek performansı olumsuz etkileyebilir veya veri bozulmasına neden olabilir. Otomatik olarak sunulan dışlamalar Windows Server 2016, Windows Server 2019 ve Windows Server 2022 rolleri için iyileştirilmiştir.
@@ -340,11 +340,11 @@ otomatik dışlama listelerini grup ilkesi, PowerShell cmdlet'leri ve WMI ile de
 
 2. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na** gidin ve ardından **Yönetim şablonları'nı** seçin.
 
-3. **Dışlamalar Microsoft Defender Virüsten Koruma bileşenleri** \> **Windows** \> için ağacı genişletin.
+3. Ağacı **Windows bileşenleri** **Microsoft Defender Virüsten Koruma** \> **Dışlamaları**\> olarak genişletin.
 
 4. **Otomatik Dışlamaları Kapat'a** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. Sonra **Tamam**’ı seçin.
 
-### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server"></a>Windows Sunucusu'nda otomatik dışlama listesini devre dışı bırakmak için PowerShell cmdlet'lerini kullanma
+### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server"></a>Windows Server'da otomatik dışlama listesini devre dışı bırakmak için PowerShell cmdlet'lerini kullanma
 
 Aşağıdaki cmdlet'leri kullanın:
 
@@ -354,10 +354,10 @@ Set-MpPreference -DisableAutoExclusions $true
 
 Daha fazla bilgi edinmek için aşağıdaki kaynaklara bakın:
 
-- [Microsoft Defender Virüsten Koruma yapılandırmak ve çalıştırmak için PowerShell cmdlet'lerini kullanın](use-powershell-cmdlets-microsoft-defender-antivirus.md).
+- [Microsoft Defender Virüsten Koruma'nın yapılandırılması ve çalıştırılması için PowerShell cmdlet'lerini kullanın](use-powershell-cmdlets-microsoft-defender-antivirus.md).
 - [PowerShell'i Microsoft Defender Virüsten Koruma ile kullanın](/powershell/module/defender/).
 
-### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server"></a>Windows Sunucusu'nda otomatik dışlama listesini devre dışı bırakmak için Windows Yönetim Yönergesi'ni (WMI) kullanın
+### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server"></a>Windows Server'da otomatik dışlama listesini devre dışı bırakmak için Windows Yönetim Yönergesi'ni (WMI) kullanma
 
 Aşağıdaki özellikler için [MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) sınıfının **Set** yöntemini kullanın:
 
@@ -377,7 +377,7 @@ Gerekirse özel dışlamalar ekleyebilir veya kaldırabilirsiniz. Bunu yapmak i�
 - [İşlemler tarafından açılan dosyalar için dışlamaları yapılandırma ve doğrulama](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

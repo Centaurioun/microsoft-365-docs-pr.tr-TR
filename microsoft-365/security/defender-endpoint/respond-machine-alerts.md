@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d61e7732b48fdb9738133929735b6538c67032b2
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 65799821ab4d6b2ad8076c68c9991074465d1435
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099975"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387231"
 ---
 # <a name="take-response-actions-on-a-device"></a>Cihazda yanıt eylemleri gerçekleştirin
 
@@ -117,7 +117,7 @@ Paket aşağıdaki klasörleri içerir:
 
 |Klasör|Açıklama|
 |---|---|
-|Otomatik çalıştırmalar|Her biri, saldırganın cihazdaki kalıcılığını belirlemeye yardımcı olmak için bilinen bir otomatik başlatma giriş noktasının (ASEP) kayıt defterinin içeriğini temsil eden bir dosya kümesi içerir. <p> <div class="alert"><b>NOT:</b> Kayıt defteri anahtarı bulunmazsa, dosya şu iletiyi içerir: "HATA: Sistem belirtilen kayıt defteri anahtarını veya değerini bulamadı."<div>|
+|Autoruns|Her biri, saldırganın cihazdaki kalıcılığını belirlemeye yardımcı olmak için bilinen bir otomatik başlatma giriş noktasının (ASEP) kayıt defterinin içeriğini temsil eden bir dosya kümesi içerir. <p> <div class="alert"><b>NOT:</b> Kayıt defteri anahtarı bulunmazsa, dosya şu iletiyi içerir: "HATA: Sistem belirtilen kayıt defteri anahtarını veya değerini bulamadı."<div>|
 |Yüklü programlar|Bu .CSV dosyası, cihazda şu anda yüklü olanları tanımlamaya yardımcı olabilecek yüklü programların listesini içerir. Daha fazla bilgi için bkz. [Win32_Product sınıfı](https://go.microsoft.com/fwlink/?linkid=841509).|
 |Ağ bağlantıları|Bu klasör şüpheli URL'lere bağlantıyı, saldırganın komut ve denetimi (C&C) altyapısını, yanal hareketleri veya uzak bağlantıları tanımlamaya yardımcı olabilecek bağlantı bilgileriyle ilgili bir dizi veri noktası içerir. <ul><li>ActiveNetConnections.txt: Protokol istatistiklerini ve geçerli TCP/IP ağ bağlantılarını görüntüler. Bir işlem tarafından yapılan şüpheli bağlantıyı arama olanağı sağlar.</li><li>Arp.txt: Tüm arabirimler için geçerli adres çözümleme protokolü (ARP) önbellek tablolarını görüntüler. ARP önbelleği, ağdaki güvenliği aşılmış veya ağdaki bir iç saldırı çalıştırmak için kullanılmış olabilecek şüpheli sistemlere sahip diğer konakları gösterebilir.</il><li>DnsCache.txt: Yerel Hosts dosyasından önceden yüklenmiş girişleri ve bilgisayar tarafından çözümlenen ad sorguları için yakın zamanda alınan kaynak kayıtlarını içeren DNS istemci çözümleyici önbelleğinin içeriğini görüntüler. Bu, şüpheli bağlantıları tanımlamaya yardımcı olabilir.</li><li>IpConfig.txt: Tüm bağdaştırıcılar için tam TCP/IP yapılandırmasını görüntüler. Bağdaştırıcılar, yüklü ağ bağdaştırıcıları gibi fiziksel arabirimleri veya çevirmeli bağlantılar gibi mantıksal arabirimleri temsil edebilir.</li><li>FirewallExecutionLog.txt ve pfirewall.log</li></ul><p><div class="alert"><b>NOT:</b> pfirewall.log dosyası %windir%\system32\logfiles\firewall\pfirewall.log içinde bulunmalıdır, bu nedenle araştırma paketine eklenecektir. Güvenlik duvarı günlük dosyasını oluşturma hakkında daha fazla bilgi için bkz[. Gelişmiş Güvenlik Günlüğü ile Windows Defender Güvenlik Duvarını Yapılandırma](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
 |Dosyaları önceden yükleme|Windows Prefetch dosyaları, uygulama başlatma işlemini hızlandırmak için tasarlanmıştır. Bu, sistemde son kullanılan tüm dosyaları izlemek ve silinmiş olsa da önceden dosya listesinde bulunabilen uygulamaların izlemelerini bulmak için kullanılabilir. <ul><li>Prefetch klasörü: dosyasından `%SystemRoot%\Prefetch`ön yükleme dosyalarının bir kopyasını içerir. NOT: Prefetch dosyalarını görüntülemek için bir prefetch dosya görüntüleyicisi indirmeniz önerilir.</li><li>PrefetchFilesList.txt: Prefetch klasöründe kopyalama hatası olup olmadığını izlemek için kullanılabilecek tüm kopyalanan dosyaların listesini içerir.</li></ul>|
@@ -139,13 +139,13 @@ Araştırma veya yanıt sürecinin bir parçası olarak, güvenliği aşılmış
 
 > [!IMPORTANT]
 > - Bu eylem şu anda macOS ve Linux için desteklenmiyor. Eylemi çalıştırmak için canlı yanıtı kullanın. Canlı yanıt hakkında daha fazla bilgi için bkz [. Canlı yanıt kullanarak cihazlarda varlıkları araştırma](live-response.md)
-> - Microsoft Defender AV etkin virüsten koruma çözümü olsa da olmasa da microsoft defender virüsten koruma (Microsoft Defender AV) taraması diğer virüsten koruma çözümleriyle birlikte çalıştırılabilir. Microsoft Defender AV Pasif modda olabilir. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma uyumluluğu](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Microsoft Defender Virüsten Koruma taraması, Microsoft Defender Virüsten Koruma'nın etkin virüsten koruma çözümü olup olmadığına bakılmaksızın diğer virüsten koruma çözümleriyle birlikte çalıştırılabilir. Microsoft Defender Virüsten Koruma Pasif modda olabilir. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma uyumluluğu](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 **Virüsten koruma taraması çalıştır'ı** seçtikten sonra, çalıştırmak istediğiniz tarama türünü seçin (hızlı veya tam) ve taramayı onaylamadan önce bir açıklama ekleyin.
 
 :::image type="content" source="images/run-antivirus.png" alt-text="Hızlı tarama veya tam tarama seçme ve açıklama ekleme bildirimi" lightbox="images/run-antivirus.png":::
 
-İşlem merkezi tarama bilgilerini gösterir ve cihaz zaman çizelgesinde cihazda bir tarama eylemi gönderildiğini yansıtan yeni bir olay yer alır. Microsoft Defender AV uyarıları, tarama sırasında ortaya çıkacak tüm algılamaları yansıtır.
+İşlem merkezi tarama bilgilerini gösterir ve cihaz zaman çizelgesinde cihazda bir tarama eylemi gönderildiğini yansıtan yeni bir olay yer alır. Microsoft Defender Virüsten Koruma uyarıları, tarama sırasında ortaya çıkacak tüm algılamaları yansıtır.
 
 > [!NOTE]
 > Uç Nokta için Defender yanıt eylemini kullanarak tarama tetiklerken, Microsoft Defender virüsten koruma 'ScanAvgCPULoadFactor' değeri yine de geçerli olur ve taramanın CPU etkisini sınırlar.

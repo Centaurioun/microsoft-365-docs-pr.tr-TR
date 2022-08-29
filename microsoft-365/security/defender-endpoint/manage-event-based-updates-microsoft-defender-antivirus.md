@@ -1,6 +1,6 @@
 ---
-title: Belirli olaylardan sonra Microsoft Defender Virüsten Koruma güncelleştirmeleri uygulama
-description: Microsoft Defender Virüsten Koruma başlatma veya bulut teslim algılama raporlarını aldıktan sonra güvenlik bilgileri güncelleştirmelerini nasıl uygulayacağı yönetin.
+title: Belirli olaylardan sonra Microsoft Defender Virüsten Koruma güncelleştirmelerini uygulama
+description: Microsoft Defender Virüsten Koruma'nın başlatma veya bulut teslim algılama raporlarını aldıktan sonra güvenlik bilgileri güncelleştirmelerini nasıl uyguladığını yönetin.
 keywords: güncelleştirmeler, koruma, güncelleştirmeleri zorlama, olaylar, başlatma, en son bildirimleri denetleme
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 813dfe410a3e6cf198d6d4a36afd6d2987f6d376
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 315e3e41e78ad29042eadf60ec1a01dba1517583
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415606"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387605"
 ---
 # <a name="manage-event-based-forced-updates"></a>Olay tabanlı zorunlu güncelleştirmeleri yönetin
 
@@ -29,26 +29,26 @@ ms.locfileid: "65415606"
 
 
 **Şunlar için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Virüsten Koruma
 
 **Platform**
 - Windows
 
-Microsoft Defender Virüsten Koruma, güncelleştirmelerin başlangıçta veya bulut tarafından teslim edilen koruma hizmetinden belirli raporlar alındıktan sonra belirli olaylardan sonra gerçekleşmesi (veya olmaması) gerekip gerekmediğini belirlemenize olanak tanır.
+Microsoft Defender Virüsten Koruma, güncelleştirmelerin başlangıçta veya bulut tarafından teslim edilen koruma hizmetinden belirli raporları aldıktan sonra gerçekleşmesi (veya olmaması) durumunda olup olmadığını belirlemenize olanak tanır.
 
 ## <a name="check-for-protection-updates-before-running-a-scan"></a>Taramayı çalıştırmadan önce koruma güncelleştirmelerini denetleme
 
-Microsoft Endpoint Configuration Manager, grup ilkesi, PowerShell cmdlet'lerini ve WMI'yı kullanarak Microsoft Defender Virüsten Koruma zamanlanmış taramayı çalıştırmadan önce koruma güncelleştirmelerini denetlemeye ve indirmeye zorlayabilirsiniz.
+Microsoft Defender Virüsten Koruma'yı zamanlanmış tarama çalıştırmadan önce koruma güncelleştirmelerini denetlemeye ve indirmeye zorlamak için Microsoft Endpoint Configuration Manager, grup ilkesi, PowerShell cmdlet'lerini ve WMI'yı kullanabilirsiniz.
 
 ### <a name="use-configuration-manager-to-check-for-protection-updates-before-running-a-scan"></a>Taramayı çalıştırmadan önce koruma güncelleştirmelerini denetlemek için Configuration Manager kullanma
 
-1. Microsoft Endpoint Manager konsolunuzda, değiştirmek istediğiniz kötü amaçlı yazılımdan koruma ilkesini açın (soldaki gezinti bölmesinde **Varlıklar ve Uyumluluk'a** tıklayın, sonra ağacı **Genel Bakış** \> **Endpoint Protection** \> **Kötü Amaçlı Yazılımdan Koruma İlkeleri**) olarak genişletin
+1. Microsoft Endpoint Manager konsolunuzda, değiştirmek istediğiniz kötü amaçlı yazılımdan koruma ilkesini açın (soldaki gezinti bölmesinde **Varlıklar ve Uyumluluk'a** tıklayın, sonra ağacı **Genel Bakış** \> **Endpoint Protection** \> **Kötü Amaçlı Yazılımdan Koruma İlkeleri** olarak genişletin)
 
 2. **Zamanlanmış taramalar** bölümüne gidin ve **taramayı çalıştırmadan önce en son güvenlik bilgileri güncelleştirmelerini denetle** seçeneğini **Evet** olarak ayarlayın.
 
-3. **Tamam**'a tıklayın.
+3. **Tamam**'ı tıklatın.
 
 4. [Güncelleştirilmiş ilkeyi her zamanki gibi dağıtın](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
@@ -60,11 +60,11 @@ Microsoft Endpoint Configuration Manager, grup ilkesi, PowerShell cmdlet'lerini 
 
 3. **İlkeler'e** ve ardından **Yönetim şablonları'nı** tıklatın.
 
-4. **Tarama** **Microsoft Defender Virüsten Koruma bileşenleri** \>  \> Windows için ağacı genişletin.
+4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Taraması** olarak genişletin.
 
 5. **Zamanlanmış tarama çalıştırmadan önce en son virüs ve casus yazılım tanımlarını denetle'ye** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın.
 
-6. **Tamam**'a tıklayın.
+6. **Tamam**'ı tıklatın.
 
 ### <a name="use-powershell-cmdlets-to-check-for-protection-updates-before-running-a-scan"></a>Tarama çalıştırmadan önce koruma güncelleştirmelerini denetlemek için PowerShell cmdlet'lerini kullanma
 
@@ -74,9 +74,9 @@ Aşağıdaki cmdlet'leri kullanın:
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-Daha fazla bilgi için bkz. Microsoft Defender Virüsten Koruma ve [Defender Virüsten Koruma cmdlet'lerini](/powershell/module/defender/index) [yapılandırmak ve çalıştırmak için PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) cmdlet'lerini kullanma.
+Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma ve Defender Virüsten Koruma cmdlet'lerini yapılandırmak ve çalıştırmak için PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlet'lerini](/powershell/module/defender/index) kullanma.
 
-### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>Taramayı çalıştırmadan önce koruma güncelleştirmelerini denetlemek için Windows Yönetim Yönergesi'ni (WMI) kullanın
+### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>Taramayı çalıştırmadan önce koruma güncelleştirmelerini denetlemek için Windows Yönetim Yönergesi'ni (WMI) kullanma
 
 Aşağıdaki özellikler için [**MSFT_MpPreference** sınıfının **Set** yöntemini](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) kullanın:
 
@@ -88,7 +88,7 @@ Daha fazla bilgi için bkz. [Windows Defender WMIv2 API'leri](/previous-versions
 
 ## <a name="check-for-protection-updates-on-startup"></a>Başlangıçta koruma güncelleştirmelerini denetleme
 
-makine başlatıldığında Microsoft Defender Virüsten Koruma koruma güncelleştirmelerini denetlemeye ve indirmeye zorlamak için grup ilkesi kullanabilirsiniz.
+Grup ilkesi kullanarak Microsoft Defender Virüsten Koruma'nın makine başlatıldığında koruma güncelleştirmelerini denetlemeye ve indirmeye zorlamasını sağlayabilirsiniz.
 
 1. grup ilkesi yönetim bilgisayarınızda [grup ilkesi Yönetim Konsolu'nu](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) açın, yapılandırmak istediğiniz grup ilkesi Nesnesine sağ tıklayın ve **Düzenle'ye** tıklayın.
 
@@ -96,15 +96,15 @@ makine başlatıldığında Microsoft Defender Virüsten Koruma koruma güncelle
 
 3. **İlkeler'e** ve ardından **Yönetim şablonları'nı** tıklatın.
 
-4. **Güvenlik Bilgileri Güncelleştirmeleri** **Microsoft Defender Virüsten Koruma bileşenleri** \> **Windows** \> için ağacı genişletin.
+4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Güvenlik Bilgileri Güncelleştirmeler** genişletin.
 
 5. **Başlangıçta en son virüs ve casus yazılım tanımlarını denetle'ye** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın.
 
-6. **Tamam**'a tıklayın.
+6. **Tamam**'ı tıklatın.
 
-grup ilkesi, PowerShell veya WMI kullanarak da Microsoft Defender Virüsten Koruma çalışmadığında bile başlangıçta güncelleştirmeleri denetleyecek şekilde yapılandırabilirsiniz.
+Ayrıca grup ilkesi, PowerShell veya WMI kullanarak Microsoft Defender Virüsten Koruma'yı, çalışmadığında bile başlangıçta güncelleştirmeleri denetleyecek şekilde yapılandırabilirsiniz.
 
-### <a name="use-group-policy-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Microsoft Defender Virüsten Koruma olmadığında güncelleştirmeleri indirmek için grup ilkesi kullanma
+### <a name="use-group-policy-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Microsoft Defender Virüsten Koruma mevcut olmadığında güncelleştirmeleri indirmek için grup ilkesi kullanın
 
 1. grup ilkesi yönetim makinenizde [grup ilkesi Yönetim Konsolu'nu](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) açın, yapılandırmak istediğiniz grup ilkesi Nesnesine sağ tıklayın ve **Düzenle'ye** tıklayın.
 
@@ -112,13 +112,13 @@ grup ilkesi, PowerShell veya WMI kullanarak da Microsoft Defender Virüsten Koru
 
 3. **İlkeler'e** ve ardından **Yönetim şablonları'nı** tıklatın.
 
-4. **Güvenlik Bilgileri Güncelleştirmeleri** **Microsoft Defender Virüsten Koruma bileşenleri** \> **Windows** \> için ağacı genişletin.
+4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Güvenlik Bilgileri Güncelleştirmeler** genişletin.
 
 5. **Başlangıçta güvenlik bilgileri güncelleştirmesini başlat'a** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın.
 
-6. **Tamam**'a tıklayın.
+6. **Tamam**'ı tıklatın.
 
-### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Microsoft Defender Virüsten Koruma olmadığında güncelleştirmeleri indirmek için PowerShell cmdlet'lerini kullanma
+### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Microsoft Defender Virüsten Koruma mevcut olmadığında güncelleştirmeleri indirmek için PowerShell cmdlet'lerini kullanma
 
 Aşağıdaki cmdlet'leri kullanın:
 
@@ -126,7 +126,7 @@ Aşağıdaki cmdlet'leri kullanın:
 Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 ```
 
-Daha fazla bilgi için bkz[. Microsoft Defender Virüsten Koruma yönetmek için PowerShell cmdlet'lerini](use-powershell-cmdlets-microsoft-defender-antivirus.md) kullanma ve Microsoft Defender Virüsten Koruma ile PowerShell'i kullanma hakkında daha fazla bilgi için [Defender Virüsten Koruma cmdlet'leri](/powershell/module/defender/index).
+Daha fazla bilgi için Bkz [. Microsoft Defender Virüsten Koruma'yı yönetmek için PowerShell cmdlet'lerini kullanma ve Microsoft Defender Virüsten](use-powershell-cmdlets-microsoft-defender-antivirus.md) Koruma ile PowerShell'in nasıl kullanılacağı hakkında daha fazla bilgi için [Defender Virüsten Koruma cmdlet'lerini](/powershell/module/defender/index) kullanma.
 
 ### <a name="use-windows-management-instruction-wmi-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Microsoft Defender Virüsten Koruma olmadığında güncelleştirmeleri indirmek için Windows Yönetim Yönergesi'ni (WMI) kullanma
 
@@ -142,9 +142,9 @@ Daha fazla bilgi için bkz. [Windows Defender WMIv2 API'leri](/previous-versions
 
 ## <a name="allow-ad-hoc-changes-to-protection-based-on-cloud-delivered-protection"></a>Bulut tabanlı korumayı temel alan korumada geçici değişikliklere izin ver
 
-Microsoft Defender AV, bulut tabanlı korumayı temel alarak korumasında değişiklik yapabilir. Bu tür değişiklikler normal veya zamanlanmış koruma güncelleştirmeleri dışında gerçekleşebilir.
+Microsoft Defender Virüsten Koruma, bulut tabanlı korumayı temel alarak korumasında değişiklikler yapabilir. Bu tür değişiklikler normal veya zamanlanmış koruma güncelleştirmeleri dışında gerçekleşebilir.
 
-Bulut tabanlı korumayı etkinleştirdiyseniz, Microsoft Defender AV şüpheli olduğu dosyaları Windows Defender buluta gönderir. Bulut hizmeti dosyanın kötü amaçlı olduğunu bildirirse ve dosya son koruma güncelleştirmesinde algılanırsa, grup ilkesi kullanarak Microsoft Defender AV'yi bu koruma güncelleştirmesini otomatik olarak alacak şekilde yapılandırabilirsiniz. Diğer önemli koruma güncelleştirmeleri de uygulanabilir.
+Bulut tabanlı korumayı etkinleştirdiyseniz Microsoft Defender Virüsten Koruma şüpheli olduğu dosyaları Windows Defender buluta gönderir. Bulut hizmeti dosyanın kötü amaçlı olduğunu bildirirse ve dosya son koruma güncelleştirmesinde algılanırsa, grup ilkesi kullanarak Microsoft Defender Virüsten Koruma'yı bu koruma güncelleştirmesini otomatik olarak alacak şekilde yapılandırabilirsiniz. Diğer önemli koruma güncelleştirmeleri de uygulanabilir.
 
 ### <a name="use-group-policy-to-automatically-download-recent-updates-based-on-cloud-delivered-protection"></a>Bulut tabanlı korumayı temel alan son güncelleştirmeleri otomatik olarak indirmek için grup ilkesi kullanın
 
@@ -154,7 +154,7 @@ Bulut tabanlı korumayı etkinleştirdiyseniz, Microsoft Defender AV şüpheli o
 
 3. **İlkeler'e** ve ardından **Yönetim şablonları'nı** tıklatın.
 
-4. **Güvenlik Bilgileri Güncelleştirmeleri** **Microsoft Defender Virüsten Koruma bileşenleri** \> **Windows** \> için ağacı genişletin.
+4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Güvenlik Bilgileri Güncelleştirmeler** genişletin.
 
 5. **Microsoft MAPS raporlarına göre gerçek zamanlı güvenlik bilgileri güncelleştirmelerine izin ver'e** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. Sonra **Tamam**'a tıklayın.
 
@@ -164,7 +164,7 @@ Bulut tabanlı korumayı etkinleştirdiyseniz, Microsoft Defender AV şüpheli o
 > **Tanım tabanlı raporları devre dışı bırakmak için bildirimlere izin ver** , Microsoft MAPS'in hatalı pozitif raporlara neden olduğu bilinen tanımları devre dışı bırakmasına olanak tanır. Bu işlevin çalışması için bilgisayarınızı Microsoft MAPS'e katılacak şekilde yapılandırmanız gerekir.
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -175,7 +175,7 @@ Bulut tabanlı korumayı etkinleştirdiyseniz, Microsoft Defender AV şüpheli o
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Microsoft Defender Virüsten Koruma dağıtma](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Microsoft Defender Virüsten Koruma'yi dağıtma](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Koruma güncelleştirmelerinin ne zaman indirileceğini ve uygulanacağını yönetme](manage-protection-update-schedule-microsoft-defender-antivirus.md)
 - [Güncel olmayan uç noktalar için güncelleştirmeleri yönetme](manage-outdated-endpoints-microsoft-defender-antivirus.md)

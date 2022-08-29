@@ -13,6 +13,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -23,12 +24,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: cc53717feed347019540ffcb8c85687a6c28537f
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 591c7a8aca882c0674eaa3ba4b3eacc89817e859
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607487"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388627"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Otomatik araştırmanın ayrıntıları ve sonuçları
 
@@ -43,7 +44,7 @@ Microsoft 365 Defender ile [otomatik araştırma](m365d-autoir.md) çalıştır�
 
 Araştırma sayfası yakın zamanda cihazlarınız, e-postanız ve işbirliği içeriğiniz arasında bilgi içerecek şekilde güncelleştirildi. Yeni, birleşik araştırma sayfası ortak bir dil tanımlar ve [Uç Nokta için Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) ve [Office 365 için Microsoft Defender](../office-365-security/defender-for-office-365.md) genelinde otomatik araştırmalara yönelik birleşik bir deneyim sağlar. Birleşik araştırma sayfasına erişmek için, göreceğiniz sarı başlıktaki bağlantıyı seçin:
 
-- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Güvenlik & Uyumluluk Merkezi'ndeki herhangi bir</a> araştırma sayfası
+- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Microsoft Purview uyumluluk portalı</a> herhangi bir araştırma sayfası
 - Microsoft 365 Defender portalındaki herhangi bir araştırma sayfası ([https://security.microsoft.com](https://security.microsoft.com))
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a> herhangi bir olay veya İşlem merkezi deneyimi
 
@@ -105,7 +106,7 @@ Araştırma ayrıntıları görünümünde, aşağıdaki tabloda açıklanan **A
 | Sekme | Açıklama |
 |:--------|:--------|
 | **Araştırma grafiği** | Araştırmanın görsel bir gösterimini sağlar. Bulunan tehditlerin yanı sıra uyarıları ve onay bekleyen eylemlerin olup olmadığını gösterir.<br/>Daha fazla ayrıntı görüntülemek için grafikte bir öğe seçebilirsiniz. Örneğin, **Kanıt** simgesini seçtiğinizde, algılanan varlıkları ve bunların kararlarını görebileceğiniz **Kanıt** sekmesine gidebilirsiniz. |
-| **Uyarılar** | Araştırmayla ilişkili uyarıları listeler. Uyarılar, kullanıcının cihazında, Office uygulamalarında, Microsoft Defender for Cloud Apps ve diğer Microsoft 365 Defender özelliklerindeki tehdit koruması özelliklerinden gelebilir. <br> <br> *Desteklenmeyen uyarı türü* görüyorsanız, bunun otomatik araştırma özelliklerinin otomatik araştırma çalıştırmak için bu uyarıyı alamayacağı anlamına geldiğini unutmayın. Ancak [, bu uyarıları el ile araştırabilirsiniz](investigate-incidents.md#alerts).
+| **Uyarılar** | Araştırmayla ilişkili uyarıları listeler. Uyarılar, kullanıcının cihazında, Office uygulamalarında, Microsoft Defender for Cloud Apps ve diğer Microsoft 365 Defender özelliklerindeki tehdit koruması özelliklerinden gelebilir. <br> <br> *Desteklenmeyen uyarı türü* görüyorsanız bu, otomatik araştırma özelliklerinin otomatik araştırma çalıştırmak için bu uyarıyı alamayacağı anlamına gelir. Ancak [, bu uyarıları el ile araştırabilirsiniz](investigate-incidents.md#alerts).
 | **Aygıtları** | Araştırmada yer alan cihazları ve düzeltme düzeylerini listeler. (Düzeltme düzeyleri [, cihaz grupları için otomasyon düzeyine](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) karşılık gelir.) |
 | **Posta kutu -ları** |Algılanan tehditlerden etkilenen posta kutularını listeler.  |
 | **Kullanıcılar**  | Algılanan tehditlerden etkilenen kullanıcı hesaplarını listeler. |
@@ -113,6 +114,59 @@ Araştırma ayrıntıları görünümünde, aşağıdaki tabloda açıklanan **A
 | **Varlık** | Her varlık türü (*Kötü Amaçlı*, *Şüpheli* veya *Tehdit bulunamadı*) için bir karar da dahil olmak üzere analiz edilen her varlıkla ilgili ayrıntıları sağlar.|
 |**Günlük** | Uyarı tetiklendikten sonra gerçekleştirilen tüm araştırma eylemlerinin kronolojik, ayrıntılı bir görünümünü sağlar.|
 | **Bekleyen eylemler geçmişi** | Devam etmek için onay gerektiren öğeleri listeler. Bekleyen eylemleri onaylamak için İşlem merkezine ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) gidin. |
+
+
+## <a name="investigation-states"></a>Araştırma durumları
+
+Aşağıdaki tabloda araştırma durumları ve bunların neyi gösterdiği listelenmiştir.
+
+
+|Araştırma durumu  |Tanım  |
+|---------|---------|
+|Benign   | Yapıtlar araştırıldı ve herhangi bir tehdit bulunmadığını tespit edildi.|
+|PendingResource     | Bir düzeltme eylemi onay beklemede olduğundan veya bir yapıtın bulunduğu cihaz geçici olarak kullanılamadığından otomatik araştırma duraklatıldı.|
+|DesteklenmeyenAlertType     | Bu tür bir uyarı için otomatik araştırma kullanılamaz. Gelişmiş avcılık kullanılarak el ile daha fazla araştırma yapılabilir. |
+|Başarısız     | En az bir araştırma çözümleyicisi, araştırmayı tamamlayamadığı bir sorunla karşılaştı. Düzeltme eylemleri onaylandıktan sonra bir araştırma başarısız olursa, düzeltme eylemleri yine de başarılı olmuş olabilir.|
+|Başarıyla düzeltilmiş| Otomatik bir araştırma tamamlandı ve tüm düzeltme eylemleri tamamlandı veya onaylandı.|
+
+Araştırma durumlarının nasıl gösteriliyor olduğu hakkında daha fazla bağlam sağlamak için aşağıdaki tabloda uyarılar ve buna karşılık gelen otomatik araştırma durumları listelenmektedir. Bu tablo, bir güvenlik operasyonları ekibinin Microsoft 365 Defender portalında neler görebileceğine ilişkin bir örnek olarak eklenmiştir.
+
+|Uyarı adı | Önem derecesi | Araştırma durumu | Durum | Kategori |
+|-----------|----------|---------------------|--------|----------|
+|Wim disk görüntü dosyasında kötü amaçlı yazılım algılandı|Bilgi|Benign|Çözülmüş|Malware|
+|Bir rar arşiv dosyasında kötü amaçlı yazılım algılandı|Bilgi|PendingResource|Yeni|Malware|
+|Bir rar arşiv dosyasında kötü amaçlı yazılım algılandı|Bilgi|DesteklenmeyenAlertType|Yeni|Malware|
+|Bir rar arşiv dosyasında kötü amaçlı yazılım algılandı|Bilgi|DesteklenmeyenAlertType|Yeni|Malware|
+|Bir rar arşiv dosyasında kötü amaçlı yazılım algılandı|Bilgi|DesteklenmeyenAlertType|Yeni|Malware|
+|Zip arşiv dosyasında kötü amaçlı yazılım algılandı|Bilgi|PendingResource|Yeni|Malware|
+|Zip arşiv dosyasında kötü amaçlı yazılım algılandı|Bilgi|PendingResource|Yeni|Malware|
+|Zip arşiv dosyasında kötü amaçlı yazılım algılandı|Bilgi|PendingResource|Yeni|Malware|
+|Zip arşiv dosyasında kötü amaçlı yazılım algılandı|Bilgi|PendingResource|Yeni|Malware|
+|Wpakill hacktool engellendi|Düşük|Başarısız|Yeni|Malware|
+|GendowsBatch hacktool engellendi|Düşük|Başarısız|Yeni|Malware|
+|Keygen hacktool engellendi|Düşük|Başarısız|Yeni|Malware|
+|Zip arşiv dosyasında kötü amaçlı yazılım algılandı|Bilgi|PendingResource|Yeni|Malware|
+|Bir rar arşiv dosyasında kötü amaçlı yazılım algılandı|Bilgi|PendingResource|Yeni|Malware|
+|Bir rar arşiv dosyasında kötü amaçlı yazılım algılandı|Bilgi|PendingResource|Yeni|Malware|
+|Zip arşiv dosyasında kötü amaçlı yazılım algılandı|Bilgi|PendingResource|Yeni|Malware|
+|Bir rar arşiv dosyasında kötü amaçlı yazılım algılandı|Bilgi|PendingResource|Yeni|Malware|
+|Bir rar arşiv dosyasında kötü amaçlı yazılım algılandı|Bilgi|PendingResource|Yeni|Malware|
+|Iso disk görüntü dosyasında kötü amaçlı yazılım algılandı|Bilgi|PendingResource|Yeni|Malware|
+|Iso disk görüntü dosyasında kötü amaçlı yazılım algılandı|Bilgi|PendingResource|Yeni|Malware|
+|Pst Outlook veri dosyasında kötü amaçlı yazılım algılandı|Bilgi|DesteklenmeyenAlertType|Yeni|Malware|
+|Pst Outlook veri dosyasında kötü amaçlı yazılım algılandı|Bilgi|DesteklenmeyenAlertType|Yeni|Malware|
+|MediaGet algılandı|Orta|KısmenInvestigated|Yeni|Malware|
+|TrojanEmailFile|Orta|Başarıyla Kaldırıldı|Çözülmüş|Malware|
+|CustomEnterpriseBlock kötü amaçlı yazılımı engellendi|Bilgi|Başarıyla Kaldırıldı|Çözülmüş|Malware|
+|Etkin bir CustomEnterpriseBlock kötü amaçlı yazılımı engellendi|Düşük|Başarıyla Kaldırıldı|Çözülmüş|Malware|
+|Etkin bir CustomEnterpriseBlock kötü amaçlı yazılımı engellendi|Düşük|Başarıyla Kaldırıldı|Çözülmüş|Malware|
+|Etkin bir CustomEnterpriseBlock kötü amaçlı yazılımı engellendi|Düşük|Başarıyla Kaldırıldı|Çözülmüş|Malware|
+|TrojanEmailFile|Orta|Benign|Çözülmüş|Malware|
+|CustomEnterpriseBlock kötü amaçlı yazılımı engellendi|Bilgi|DesteklenmeyenAlertType|Yeni|Malware|
+|CustomEnterpriseBlock kötü amaçlı yazılımı engellendi|Bilgi|Başarıyla Kaldırıldı|Çözülmüş|Malware|
+|TrojanEmailFile|Orta|Başarıyla Kaldırıldı|Çözülmüş|Malware|
+|TrojanEmailFile|Orta|Benign|Çözülmüş|Malware|
+|Etkin bir CustomEnterpriseBlock kötü amaçlı yazılımı engellendi|Düşük|PendingResource|Yeni|Malware|
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

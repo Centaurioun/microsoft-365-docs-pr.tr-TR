@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: İtalya mali koduna duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 1a27af7f33aba799a37c64c37e53eef01555ec3c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: dd7fae7b927532d9224cc852419f01e31f5dbef4
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948950"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368575"
 ---
 # <a name="italy-fiscal-code"></a>İtalya mali kodu
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -52,20 +44,20 @@ Harf ve rakamlardan oluşan 16 karakterlik bir birleşim:
 - kişinin doğduğu belediyeye özgü alan koduna karşılık gelen dört basamak (ülke genelindeki kodlar yabancı ülkeler için kullanılır)
 - tek eşlikli basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_italy_eu_national_id_card` , desenle eşleşen içeriği bulur.
-- 'den `Keywords_italy_eu_national_id_card` bir anahtar sözcük bulunur.
+- İşlev `Func_italy_eu_national_id_card`, desenle eşleşen içeriği bulur.
+- `Keywords_italy_eu_national_id_card` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_italy_eu_national_id_card` , desenle eşleşen içeriği bulur.
+- İşlev `Func_italy_eu_national_id_card`, desenle eşleşen içeriği bulur.
 
 ```xml
       <!-- Italy Fiscal Code -->

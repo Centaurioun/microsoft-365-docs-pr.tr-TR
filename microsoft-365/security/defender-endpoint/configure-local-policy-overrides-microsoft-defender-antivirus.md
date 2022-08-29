@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Virüsten Koruma ayarları için yerel geçersiz kılmaları yapılandırma
-description: Microsoft Defender AV'de kullanıcıların ayarları yerel olarak değiştirmesini etkinleştirin veya devre dışı bırakın.
+description: Microsoft Defender Virüsten Koruma'da kullanıcıların ayarları yerel olarak değiştirmesini etkinleştirin veya devre dışı bırakın.
 keywords: yerel geçersiz kılma, yerel ilke, grup ilkesi, gpo, kilitleme,birleştirme, listeler
 ms.prod: m365-security
 ms.technology: mde
@@ -16,12 +16,12 @@ ms.date: 08/02/2022
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6281426f284b8a75f316a1e9e808176f89defc36
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 397fb835d73c2e18c3cc044f95d8b294e2ef762d
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276338"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388176"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Kullanıcıların Microsoft Defender Virüsten Koruma ilke ayarlarını yerel olarak değiştirmesini engelleme veya izin verme
 

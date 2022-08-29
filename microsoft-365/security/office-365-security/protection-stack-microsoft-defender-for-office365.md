@@ -14,12 +14,12 @@ description: Office 365 için Microsoft Defender'daki tehdit filtreleme yığın
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d6697652754792b3beb87b7bcafc0846ca51c53d
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 96e7fb9a4e774b51b1d2138cd72ea468bc23ee7b
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772050"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450157"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da adım adım tehdit koruması
 
@@ -66,7 +66,7 @@ Gönderen bilgilerindeki özellikler istenmeyen posta, toplu, kimliğe bürünme
     - **SPF** , KURULUŞ adına posta göndermesine izin verilen IP adreslerini ve sunucuları listeleyen DNS TXT kayıtlarına göre postaları reddedebilir.
     - **DKIM** , gönderenin kimliğini doğrulayan şifreli bir imza sağlar.
     - **DMARC** , yöneticilerin etki alanında SPF ve DKIM'i gerekli olarak işaretlemesine olanak tanır ve bu iki teknolojinin sonuçları arasında hizalamayı zorlar.
-    - **ARC** müşteri tarafından yapılandırılmaz, ancak kimlik doğrulama zincirini kaydederken posta listelerinde iletme ile çalışmak için DMARC'yi derler.
+    - **ARC** , kimlik doğrulama zinciri kaydederken posta listelerinde iletme ile çalışmak için DMARC'yi oluşturur.
 
 3. **Kimlik sahtekarlık zekası** , kuruluş veya bilinen dış etki alanlarını taklit eden kötü amaçlı gönderenlerden 'kimlik sahtekarlığına' izin verilenleri (başka bir hesap adına posta gönderenler veya posta listesi için iletilenler) filtrelenebilir. Yasal "adına" postaları istenmeyen posta ve kimlik avı iletileri göndermek için sahtekarlık yapan gönderenlerden ayırır.
 

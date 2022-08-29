@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Uç nokta veri kaybı önleme konumlarını kullanmak için veri kaybı önleme (DLP) ilkelerini yapılandırmayı öğrenin.
-ms.openlocfilehash: 2fef9c2d89d741c70f3d2d903f41fa8a354d4a79
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
+ms.openlocfilehash: 0224fefeb5b33bf688dea37b4609408e6d299557
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912640"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450091"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uç noktada veri kaybı önlemeyi kullanma
 
@@ -256,7 +256,7 @@ Bu kısıtlamayı kullanmak için üç önemli parça yapılandırmanız gerekir
 
 Bu yapılandırma, verilerinizin güvende kalmasını sağlarken kullanıcıların hassas olmayan öğelere erişmesini ve bunları paylaşmasını engelleyen veya kısıtlayan gereksiz kısıtlamaları da önler.
 
-## <a name="scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview"></a>Senaryo 6 Hassas hizmet etki alanlarında kullanıcı etkinliklerini izleme veya kısıtlama (önizleme)
+## <a name="scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains"></a>Senaryo 6 Hassas hizmet etki alanlarında kullanıcı etkinliklerini izleme veya kısıtlama
 
 Bir web sitesinde bu kullanıcı etkinliklerini denetlemek, geçersiz kılmayla engellemek veya engellemek istediğinizde bu senaryoyı kullanın.
 

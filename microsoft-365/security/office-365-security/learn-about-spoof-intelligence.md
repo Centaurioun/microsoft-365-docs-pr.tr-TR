@@ -20,12 +20,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection (EOP) içindeki kimlik sahtekarlığına ilişkin zeka içgörüleri hakkında bilgi edinebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68d0d2e9ae61afcc69c8f297ca88554090838068
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 4bd690b9adae76f6920389ab59fda2210f9fc681
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281761"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388451"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>EOP'de sahte zeka içgörüleri
 
@@ -60,9 +60,9 @@ Bu makalenin geri kalanında, Microsoft 365 Defender portalında ve PowerShell'd
 
 > [!NOTE]
 >
-> - Sahte zeka içgörülerinde yalnızca sahte zeka tarafından algılanan sahte gönderenler görünür. İçgörüde izin verme veya engelleme kararını geçersiz kıldığınızda, sahte gönderen yalnızca Kiracı İzin Ver/Engelle Listesi'ndeki **Kimlik Sahtekarı** sekmesinde görünen el ile izin verme veya engelleme girdisine dönüşür. Ayrıca sahte gönderenler için kimlik sahtekarlık zekası tarafından algılanana kadar el ile izin verme veya engelleme girdileri oluşturabilirsiniz. Daha fazla bilgi için bkz. [EOP'de Kiracı İzin Verme/Engelleme Listesini Yönetme](tenant-allow-block-list.md).
+> - Sahte zeka içgörülerinde yalnızca sahte zeka tarafından algılanan sahte gönderenler görünür. İçgörüde izin verme veya engelleme kararını geçersiz kıldığınızda, sahte gönderen yalnızca Kiracı İzin Ver/Engelle Listesi'ndeki Kimlik **Sahtekarı gönderenler** sekmesinde görünen el ile izin verme veya engelleme girdisi olur. Ayrıca sahte gönderenler için kimlik sahtekarlık zekası tarafından algılanana kadar el ile izin verme veya engelleme girdileri oluşturabilirsiniz. Daha fazla bilgi için bkz. [EOP'de Kiracı İzin Verme/Engelleme Listesini Yönetme](manage-tenant-allow-block-list.md).
 >
-> - Kiracı İzin Ver/Engelle listesindeki kimlik sahtekarlığı bilgileri içgörüleri ve Kimlik **Sahtekarlığı** sekmesi, Güvenlik & Uyumluluk Merkezi'ndeki istenmeyen posta önleme ilkesi sayfasında bulunan kimlik sahtekarlığı zekası ilkesinin işlevselliğinin yerini alır.
+> - Kiracı İzin Ver/Engelle listesindeki kimlik sahtekarlığı bilgileri içgörüleri ve Kimlik Sahtekarlığı **gönderenler** sekmesi, Güvenlik & Uyumluluk Merkezi'ndeki istenmeyen posta önleme ilkesi sayfasında bulunan kimlik sahtekarlığı zekası ilkesinin işlevselliğinin yerini alır.
 >
 > - Sahte zeka içgörüleri 7 günlük verileri gösterir. **Get-SpoofIntelligenceInsight** cmdlet'i 30 günlük verileri gösterir.
 >
@@ -70,7 +70,7 @@ Bu makalenin geri kalanında, Microsoft 365 Defender portalında ve PowerShell'd
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
-- Microsoft 365 Defender portalını adresinde <https://security.microsoft.com>açarsınız. **Kiracı İzin Ver/Engelle Listesi** sayfasındaki Kimlik **Sahtekarlık** sekmesine doğrudan gitmek için kullanın<https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. **Doğrudan Spoof intelligence içgörü** sayfasına gitmek için kullanın<https://security.microsoft.com/spoofintelligence>.
+- Microsoft 365 Defender portalını adresinde <https://security.microsoft.com>açarsınız. **Kiracı İzin Ver/Engelle Listesi** sayfasındaki Kimlik **Sahtekarı gönderenler** sekmesine doğrudan gitmek için kullanın<https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. **Doğrudan Spoof intelligence içgörü** sayfasına gitmek için kullanın<https://security.microsoft.com/spoofintelligence>.
 
 - Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [Exchange Online Protection PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -93,7 +93,7 @@ Bu makalenin geri kalanında, Microsoft 365 Defender portalında ve PowerShell'd
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında sahte zeka içgörülerini açma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **Kurallar** bölümündeki **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kiracı İzin Ver/Listeleri Engelle'ye** gidin. **Kiracı İzin Ver/Engelle Listesi** sayfasındaki Kimlik **Sahtekarlık** sekmesine doğrudan gitmek için kullanın<https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **Kurallar** bölümündeki **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **Kiracı İzin Ver/Listeleri Engelle'ye** gidin. **Kiracı İzin Ver/Engelle Listesi** sayfasındaki Kimlik **Sahtekarı gönderenler** sekmesine doğrudan gitmek için kullanın<https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
 
 2. **Kiracı İzin Ver/Engelle Listeleri** sayfasında kimlik sahtekarlığına ilişkin bilgi sahtekarlık içgörüleri şöyle görünür:
 
@@ -109,7 +109,7 @@ Kimlik sahtekarı zekası algılamalarıyla ilgili bilgileri görüntülemek iç
 ### <a name="view-information-about-spoofed-messages"></a>Sahte iletiler hakkındaki bilgileri görüntüleme
 
 > [!NOTE]
-> Unutmayın, bu sayfada yalnızca kimlik sahtekarı zekası tarafından algılanan sahte gönderenler görünür. İçgörüde izin verme veya engelleme kararını geçersiz kıldığınızda, sahte gönderen yalnızca Kiracı İzin Ver/Engelle Listesi'ndeki **Kimlik Sahtekarı** sekmesinde görünen el ile izin verme veya engelleme girdisine dönüşür.
+> Unutmayın, bu sayfada yalnızca kimlik sahtekarı zekası tarafından algılanan sahte gönderenler görünür. İçgörüde izin verme veya engelleme kararını geçersiz kıldığınızda, sahte gönderen yalnızca Kiracı İzin Ver/Engelle Listesi'ndeki Kimlik **Sahtekarı gönderenler** sekmesinde görünen el ile izin verme veya engelleme girdisi olur.
 
 **Sahte zeka içgörülerinde** Kimlik sahtekarlık **etkinliğini görüntüle'ye** tıkladıktan sonra görüntülenen Kimlik sahtekarı zekası içgörü sayfasında, sayfa aşağıdaki bilgileri içerir:
 
@@ -161,7 +161,7 @@ Yalnızca bu etki alanından/gönderen altyapı çiftinden gelen e-postaların k
 
 ## <a name="use-the-spoof-intelligence-insight-in-exchange-online-powershell-or-standalone-eop-powershell"></a>Exchange Online PowerShell veya tek başına EOP PowerShell'de sahte zeka içgörülerini kullanma
 
-PowerShell'de, sahte zeka tarafından algılanan izin verilen ve engellenen sahte gönderenleri **görüntülemek** için **Get-SpoofIntelligenceInsight** cmdlet'ini kullanırsınız. Sahte gönderenlere el ile izin vermek veya engellemek için **New-TenantAllowBlockListSpoofItems** cmdlet'ini kullanmanız gerekir. Daha fazla bilgi için bkz. [Kiracı İzin Ver/Engelle Listesi'ne sahte gönderen girdilerini yönetmek için PowerShell kullanma](tenant-allow-block-list.md).
+PowerShell'de, sahte zeka tarafından algılanan izin verilen ve engellenen sahte gönderenleri **görüntülemek** için **Get-SpoofIntelligenceInsight** cmdlet'ini kullanırsınız. Sahte gönderenlere el ile izin vermek veya engellemek için **New-TenantAllowBlockListSpoofItems** cmdlet'ini kullanmanız gerekir. Daha fazla bilgi için bkz. [Kiracı İzin Ver/Engelle Listesi'ne sahte gönderen girdilerini yönetmek için PowerShell kullanma](manage-tenant-allow-block-list.md).
 
 Bilgi sahtekarlığı içgörülerindeki bilgileri görüntülemek için aşağıdaki komutu çalıştırın:
 

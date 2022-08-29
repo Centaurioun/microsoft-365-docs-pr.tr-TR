@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 04/01/2022
+ms.date: 08/12/2022
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Office 365 için Microsoft Defender E5, P1 ve P2 müşterileri artık e-posta varlık sayfasıyla her e-postanın 360 derecelik görünümünü alabilir.
-ms.openlocfilehash: 79863916cab3b859a0b24de9dc5eb9b4f324a3f9
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 9e4546f6ed8689ed218b4b7fc209918c44d53cb9
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648777"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368933"
 ---
 # <a name="the-email-entity-page"></a>E-posta varlığı sayfası
 
@@ -38,11 +38,11 @@ ms.locfileid: "65648777"
 - [E-posta varlığı sayfa sekmelerini kullanma](#use-email-entity-page-tabs)
 - [E-posta varlığı sayfasında yeni](#new-to-the-email-entity-page)
 
-Office 365 için Microsoft Defender E5 ve Office P1 ve P2 için Defender yöneticileri, **E-posta varlığı sayfasını** kullanarak e-postanın 360 derecelik bir görünümüne sahiptir. Bu e-postaya gitme sayfası [, Tehdit Gezgini 'e-posta ayrıntıları' açılır](threat-explorer-views.md) penceresinde sunulan bilgileri geliştirmek için oluşturulmuştur.
+Office 365 için Microsoft Defender E5 ve Office P1 ve P2 için Defender yöneticileri, **Email varlık sayfasını** kullanarak e-postanın 360 derecelik bir görünümüne sahiptir. Bu e-postaya gitme sayfası [, Tehdit Gezgini 'e-posta ayrıntıları' açılır](threat-explorer-views.md) penceresinde sunulan bilgileri geliştirmek için oluşturulmuştur.
 
 ## <a name="reach-the-email-entity-page"></a>E-posta varlığı sayfasına ulaşma
 
-E-posta varlığı sayfası, Microsoft 365 Defender portalında **E-posta & işbirliği** \> **Gezgini'nde**<https://security.microsoft.com> bulunabilir. Veya doğrudan **Gezgin** sayfasına gitmek için kullanın <https://security.microsoft.com/threatexplorer>.
+E-posta varlığı sayfası, Email & **işbirliği** \> **Gezgini'ndeki** Microsoft 365 Defender portalında <https://security.microsoft.com> bulunabilir. Veya doğrudan **Gezgin** sayfasına gitmek için kullanın <https://security.microsoft.com/threatexplorer>.
 
 **Gezgin'de**, araştırdığınız e-postanın konusunu seçin. Bu posta için açılan e-postanın üst kısmında altın renkli bir çubuk görüntülenir. Yeni sayfaya gönderilen bu davette "Zenginleştirilmiş verilerle yeni e-posta varlığı sayfamızı deneyin..." ifadesi yer alır. Yeni sayfayı görüntülemek için öğesini seçin.
 
@@ -83,12 +83,12 @@ Varlık sayfasının üst kısmındaki sekmeler, e-postayı verimli bir şekilde
 
 Bu e-posta varlık sayfasıyla birlikte gelen yeni özellikler vardır. Liste burada.
 
-### <a name="email-preview-for-cloud-mailboxes"></a>Bulut posta kutuları için e-posta önizlemesi
+### <a name="email-preview-for-cloud-mailboxes"></a>Bulut posta kutuları için Email önizlemesi
 
 E-postalar bulutta hala ***mevcutsa*** yöneticiler Bulut posta kutularında e-postaların önizlemesini görebilir. Geçici silme (yönetici veya kullanıcı tarafından) veya ZAP (karantinaya almak için) durumunda e-postalar artık Bulut konumunda bulunmaz. Bu durumda, yöneticiler bu belirli postaların önizlemesini göremez. Bırakılan veya teslimin başarısız olduğu e-postalar hiçbir zaman posta kutusuna giremedi. Sonuç olarak, yöneticiler de bu e-postaların önizlemesini göremez.
 
 > [!WARNING]
-> E-postaların önizlemesi için **Önizleme** adlı özel bir rol gerekir. Bu rolü Microsoft 365 Defender portalındaki [E-posta & işbirliği rollerinde açıklandığı gibi Microsoft 365 Defender portalına](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) ekleyebilirsiniz. Burada yeni bir **E-posta & işbirliği** rol grubu oluşturmanız ve **Önizleme** rolünü bu yeni rol grubuna eklemeniz veya **Önizleme rolünü** kuruluşunuzdaki yöneticilerin **Explorer'da** çalışmasına izin veren bir rol grubuna eklemeniz gerekebilir.
+> E-postaların önizlemesi için **Önizleme** adlı özel bir rol gerekir. Bu rolü Microsoft 365 Defender portalındaki [Email & işbirliği rollerinde açıklandığı gibi Microsoft 365 Defender portalına](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) ekleyebilirsiniz. Burada yeni bir **Email & işbirliği** rol grubu oluşturmanız ve **Önizleme** rolünü bu yeni rol grubuna eklemeniz veya Kuruluşunuzdaki yöneticilerin **Explorer'da** çalışmasına olanak tanıyan bir rol grubuna **Önizleme** rolünü eklemeniz gerekebilir.
 
 ### <a name="detonation-details"></a>Patlama ayrıntıları
 
@@ -116,11 +116,11 @@ Kullanıcılar, e-postalarında bulunan ve belirli bir kiracı için patlatılan
 
 *En son teslim konumu*: En son teslim konumu, ZAP gibi sistem eylemlerini veya Silinmiş Öğelere Taşı, son gibi yönetici eylemlerini tamamladıktan sonra e-postanın geldiği konumdur. En son teslim konumu, yöneticileri iletinin *geçerli* konumu hakkında bilgilendirmek için tasarlanmamıştır. Örneğin, bir kullanıcı iletiyi silerse veya arşive taşırsa, teslim konumu güncelleştirilmez. Ancak, bir sistem eylemi gerçekleştirilip konumu güncelleştirmişse (örneğin, karantinaya alınan bir e-postanın karantinaya alınmasına neden olan ZAP gibi) bu işlem karantinaya almak için en son teslim konumunu güncelleştirir.
 
-*E-posta ayrıntıları*: *Analiz* sekmesinde bulunan e-postayı daha ayrıntılı anlamak için gereken ayrıntılar.
+*Email ayrıntıları*: *Analiz* sekmesinde bulunan e-postayı daha ayrıntılı anlamak için gereken ayrıntılar.
 
-- *Exchange aktarım kuralları (posta akışı kuralları veya ETR'ler olarak da bilinir):* Bu kurallar aktarım katmanındaki bir iletiye uygulanır ve kimlik avı ve istenmeyen posta kararlarından önceliklidir. Posta akışı kuralları, konumundaki Exchange yönetim merkezinde <https://admin.exchange.microsoft.com/#/transportrules>oluşturulur ve değiştirilir, ancak iletiye herhangi bir posta akışı kuralı uygulanırsa, kural adı ve GUID burada gösterilir. İzleme amacıyla değerli bilgiler.
+- *Exchange aktarım kuralları (posta akışı kuralları veya ETR'ler olarak da bilinir):* Bu kurallar aktarım katmanındaki bir iletiye uygulanır ve kimlik avı ve istenmeyen posta kararlarından önceliklidir. Posta akışı kuralları, konumundaki <https://admin.exchange.microsoft.com/#/transportrules>Exchange yönetim merkezinde oluşturulur ve değiştirilir, ancak iletiye herhangi bir posta akışı kuralı uygulanırsa, kural adı ve GUID burada gösterilir. İzleme amacıyla değerli bilgiler.
 
-- *Birincil Geçersiz Kılma: Kaynak:* Birincil geçersiz kılma ve kaynak, e-postanın teslimini etkileyen ve sistem tarafından verilen teslim konumunu geçersiz kılan kiracı veya kullanıcı ayarına (tehdit ve algılama teknolojisine göre) başvurur. Örneğin, kiracı tarafından yapılandırılmış aktarım kuralı nedeniyle engellenen bir e-posta veya Kasa Gönderenler için son kullanıcı ayarı nedeniyle izin verilen bir e-posta olabilir. 
+- *Birincil Geçersiz Kılma: Kaynak:* Birincil geçersiz kılma ve kaynak, e-postanın teslimini etkileyen ve sistem tarafından verilen teslim konumunu geçersiz kılan kiracı veya kullanıcı ayarına (tehdit ve algılama teknolojisine göre) başvurur. Örneğin, kiracı tarafından yapılandırılmış aktarım kuralı nedeniyle engellenen bir e-posta veya Güvenilir Gönderenler için son kullanıcı ayarı nedeniyle izin verilen bir e-posta olabilir. 
 
 - *Tüm Geçersiz Kılmalar*: Tüm Geçersiz Kılmalar, e-postaya uygulanmış olan ve e-postanın teslimini etkileyebilecek veya etkilememiş olabilecek geçersiz kılmaların (kiracı veya kullanıcı ayarları) listesine başvurur. Örneğin, kiracı tarafından yapılandırılmış taşıma kuralının yanı sıra kiracı tarafından yapılandırılmış bir ilke ayarı (örneğin, Kiracı İzin Verme Engelleme listesinden) bir e-postaya uygulanırsa, her ikisi de bu alanda listelenir. E-postanın teslimini etkileyen ayarı belirlemek için birincil geçersiz kılma alanını de kontrol edebilirsiniz. 
 
@@ -144,7 +144,7 @@ Kullanıcılar, e-postalarında bulunan ve belirli bir kiracı için patlatılan
 
 - *Etki Alanı Oluşturma Tarihi*: Gönderen etki alanının oluşturulma tarihini belirtir. Yeni oluşturulan bir etki alanı, diğer sinyaller bazı şüpheli davranışları gösteriyorsa dikkatli olabileceğiniz bir şeydir.
 
-*E-posta Kimlik Doğrulaması*: Microsoft 365 tarafından kullanılan e-posta kimlik doğrulama yöntemleri SPF, DKIM ve DMARC'yi içerir.
+*Email Kimlik Doğrulaması*: Microsoft 365 tarafından kullanılan Email kimlik doğrulama yöntemleri SPF, DKIM ve DMARC'yi içerir.
 
 - Sender Policy Framework (**SPF**): İleti için SPF denetiminin sonuçlarını açıklar. Olası değerler:
   - Geçiş (IP adresi): Geçirilen ileti için SPF denetimi ve gönderenin IP adresini içerir. İstemci, gönderenin etki alanı adına e-posta gönderme veya aktarma yetkisine sahip.
@@ -166,9 +166,23 @@ Kullanıcılar, e-postalarında bulunan ve belirli bir kiracı için patlatılan
   - Bestguesspass: Etki alanı için DMARC TXT kaydı olmadığını gösterir, ancak varsa, ileti için DMARC denetimi geçirilirdi.
   - Yok: DNS'de gönderen etki alanı için DMARC TXT kaydı olmadığını gösterir.
 
-*Bileşik Kimlik Doğrulaması*: bu, Microsoft 365 tarafından iletinin doğru olup olmadığını belirlemek üzere SPF, DKIM ve DMARC gibi e-posta kimlik doğrulamasını birleştirmek için kullanılan bir değerdir. Değerlendirmenin temeli olarak postanın *Kimden:* etki alanını kullanır.
+*Bileşik Kimlik Doğrulaması*: Bu, Microsoft 365 tarafından iletinin orijinal olup olmadığını belirlemek üzere SPF, DKIM ve DMARC gibi e-posta kimlik doğrulamasını birleştirmek için kullanılan bir değerdir. Değerlendirmenin temeli olarak postanın *Kimden:* etki alanını kullanır.
+## <a name="actions-into-email-entity-page"></a>Email varlık Sayfasına yönelik eylemler
 
-### <a name="email-summary-panel"></a>E-posta özet paneli
+Güvenlik ekipleri artık geçici silme ve sabit silme gibi e-posta eylemleri gerçekleştirebilir, gereksiz öğeye geçebilir, gelen kutusuna geçebilir, araştırma başlatabilir, gözden geçirme için Microsoft'a gönderebilir ve diğer işlemleri gerçekleştirebilir. Dosya ve URL veya gönderen gibi **kiracı düzeyi blok** eylemleri de varlık sayfasından Email.  
+
+Varlık sayfasının sağ üst köşesinden **Eylem gerçekleştir'e** tıklayabilirsiniz ve bu işlem, ihtiyacınız olan eylemi seçmeniz için Eylem sihirbazını açar. 
+![Varlık sayfasından eylem gerçekleştirme.](../../media/Take-ActionWizard-Email-entity.png)
+
+Eylem sihirbazında aynı yan bölmede e-posta eylemleri, e-posta gönderimleri, gönderen ve gönderen etki alanını engelleme, araştırma eylemleri ve iki adımlı onay (düzeltmeye ekleme) gerçekleştirebilirsiniz. Bu, kullanım kolaylığı için tutarlı bir akış izler. Eylem sihirbazı, Örneğin, Gezgin eylemleri (Silme, Göndermeler ve Araştırma eylemleri için) tarafından kullanılanla aynı sistemi kullanır. Bu eylemleri [Birleşik işlem merkezinde](https://security.microsoft.com/action-center/history) (silinen e-postalar için), [Gönderim portalında](https://security.microsoft.com/reportsubmission) (gönderimler için) ve Kiracı [İzin Ver/Engelle Listeleri](https://security.microsoft.com/tenantAllowBlockList) sayfasında (TABL blokları) görebilir ve izleyebilirsiniz. 
+
+Ayrıca kiracı düzeyi blok URL'sini ve ekini ilgili Email varlık URL'si ve Ekler sekmelerine getiriyoruz. Onay sonrasında, tüm Kiracı İzin Ver ve Engelle Listeleri (veya TABL) blok URL'si ve blok ekleri TABL/URL ve TABL/dosya sayfaları altında izlenebilir. 
+![Varlık sayfasından URL'yi engelle eylemini gerçekleştirin.](../../media/Block-URL-Email-entity.png)
+
+Bu eylemleri yapmak için gereken [izinlere](permissions-microsoft-365-security-center.md) bakın. 
+
+ 
+### <a name="email-summary-panel"></a>Email özet paneli
 
 E-posta özeti paneli, tam e-posta varlık sayfasının özetlenmiş bir görünümüdür. E-posta (örneğin algılamalar) hakkında standartlaştırılmış ayrıntıların yanı sıra bağlama özgü bilgiler (örneğin, Karantina veya Gönderimler meta verileri için) içerir. E-posta özeti paneli geleneksel Gerçek Zamanlı Algılamalar, Tehdit Gezgini, Gönderimler ve Raporlama açılır bileşenlerinin yerini alır.
 
@@ -182,7 +196,7 @@ E-posta özet paneli aşağıdaki bölümlere ayrılmıştır:
 
 - *Teslim ayrıntıları: Tehditler* ve buna karşılık gelen güvenilirlik düzeyi, algılama teknolojileri ve özgün ve en son teslim konumu hakkında bilgi içerir.
 
-- *E-posta ayrıntıları*: Gönderen adı, gönderen adresi, alınan süre, kimlik doğrulama ayrıntıları ve diğer birçok diğer ayrıntı gibi e-posta özellikleri hakkında bilgi içerir.
+- *Email ayrıntıları*: Gönderen adı, gönderen adresi, alınan süre, kimlik doğrulama ayrıntıları ve diğer diğer birçok ayrıntı gibi e-posta özellikleri hakkında bilgi içerir.
 
 - *URL'ler*: Varsayılan olarak, 3 URL ve karşılık gelen tehditlerini görürsünüz. **Tüm URL'leri** genişletip görmek ve dışarı aktarmak için istediğiniz zaman Tüm URL'leri görüntüle'ye tıklayabilirsiniz.  
 

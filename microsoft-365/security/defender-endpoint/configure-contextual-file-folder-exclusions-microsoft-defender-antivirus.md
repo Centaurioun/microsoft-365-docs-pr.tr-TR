@@ -1,6 +1,6 @@
 ---
 title: Bağlamsal dosya ve klasör dışlamaları
-description: Windows Defender Virüsten Koruma için bağlamsal dosya ve klasör dışlama özelliğini açıklar. Bu özellik, kısıtlamalar uygulayarak hangi bağlam Windows Defender Virüsten Koruma bir dosyayı veya klasörü taramaması gerektiğini tanımlarken daha belirgin olmanıza olanak tanır
+description: Windows üzerinde Microsoft Defender Virüsten Koruma için bağlamsal dosya ve klasör dışlama özelliğini açıklar. Bu özellik, kısıtlamalar uygulayarak Microsoft Defender Virüsten Koruma'nın bir dosyayı veya klasörü taramaması gereken bağlamı tanımlarken daha belirgin olmanıza olanak tanır
 keywords: Microsoft Defender Virüsten Koruma, işlem, dışlama, dosyalar, taramalar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -9,25 +9,26 @@ ms.pagetype: security
 author: jweston-1
 ms.author: v-jweston
 ms.localizationpriority: medium
+ms.date: 08/25/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6fa5ebe413baef991b412cd44d90239bfb72b0e2
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 8d1516d00a693a56b99ad6eabad59722867f3db0
+ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099051"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67439574"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>Bağlamsal dosya ve klasör dışlamaları
 
-Bu makalede/bölümde, Windows Defender Virüsten Koruma için bağlamsal dosya ve klasör dışlamaları özelliği açıklanmaktadır. Bu özellik, kısıtlamalar uygulayarak hangi bağlam Windows Defender Virüsten Koruma bir dosya veya klasörü taramaması gerektiğini tanımlarken daha belirgin olmanıza olanak tanır.
+Bu makalede/bölümde, Windows üzerinde Microsoft Defender Virüsten Koruma için bağlamsal dosya ve klasör dışlamaları özelliği açıklanmaktadır. Bu özellik, kısıtlamalar uygulayarak Microsoft Defender Virüsten Koruma'nın bir dosyayı veya klasörü taramaması gereken bağlamı tanımlarken daha belirgin olmanıza olanak tanır.
 
 ## <a name="overview"></a>Genel bakış
 
-Dışlamalar öncelikli olarak performans üzerindeki etkileri azaltmaya yöneliktir. Daha düşük koruma değeri cezasıyla gelirler. Bu kısıtlamalar, dışlamanın uygulanacağı koşulları belirterek bu koruma azaltmasını sınırlamanıza olanak sağlar. Bağlamsal dışlamalar, hatalı pozitif sonuçları güvenilir bir şekilde ele almak için uygun değildir. Hatalı bir pozitif sonuçla karşılaşırsanız dosyaları [analiz için Microsoft 365 Defender](https://security.microsoft.com/) portalından (abonelik gereklidir) veya [Microsoft Güvenlik Zekası](https://www.microsoft.com/wdsi/filesubmission) web sitesinden gönderebilirsiniz. Geçici bir gizleme yöntemi için özel _bir izin verme_ göstergesi oluşturmayı göz önünde bulundurun.
+Dışlamalar öncelikli olarak performans üzerindeki etkileri azaltmaya yöneliktir. Daha düşük koruma değeri cezasıyla gelirler. Bu kısıtlamalar, dışlamanın uygulanacağı koşulları belirterek bu koruma azaltmasını sınırlamanıza olanak sağlar. Bağlamsal dışlamalar, hatalı pozitif sonuçları güvenilir bir şekilde ele almak için uygun değildir. Hatalı bir pozitif sonuçla karşılaşırsanız, dosyaları [analiz için Microsoft 365 Defender](https://security.microsoft.com/) portalı (abonelik gereklidir) veya [Microsoft Güvenlik Zekası](https://www.microsoft.com/wdsi/filesubmission) web sitesi aracılığıyla gönderebilirsiniz. Geçici bir gizleme yöntemi için [Uç Nokta için Microsoft Defender'de](/microsoft-365/security/defender-endpoint/indicator-file) özel _bir izin verme_ göstergesi oluşturmayı göz önünde bulundurun.
 
 Bir dışlamanın uygulanabilirliğini sınırlamak için uygulayabileceğiniz dört kısıtlama vardır:
 
@@ -43,16 +44,16 @@ Bir dışlamanın uygulanabilirliğini sınırlamak için uygulayabileceğiniz d
 
 Kısıtlamalar genellikle dosya veya klasör dışlama yoluna kısıtlama türü eklenerek uygulanır.  
 
-| Kısıtlama | TypeName | değer |
+| Kısıtlama | Typename | Değer |
 |:---|:---|:---|
-| Dosya/klasör  | PathType  | dosya <br> klasör |
-| Tarama türü | ScanType | çabuk <br> dolu |
-| Tarama tetikleyicisi | ScanTrigger | OnDemand <br> OnAccess <br> BM |
-| İşlem | İşlem | "<image_path>" |
+| Dosya/klasör  | PathType  | Dosya <br> Klasör |
+| Tarama türü | ScanType | Hızlı <br> Tam |
+| Tarama tetikleyicisi | ScanTrigger | Ondemand <br> OnAccess <br> BM |
+| Işlem | Işlem | "<image_path>" |
 
 ### <a name="requirements"></a>Gereksinimler
 
-Bu özellik için Windows Defender Virüsten Koruma gerekir:
+Bu özellik için Microsoft Defender Virüsten Koruma gerekir:
 
 - Platform: **4.18.2205.7** veya üzeri
 - Motor: **1.1.19300.2** veya üzeri
@@ -64,6 +65,10 @@ Başlangıç noktası olarak, daha belirgin hale getirmek istediğiniz dışlama
 `<PATH>\:{TypeName:value,TypeName:value}`
 
 _Tüm_ **türlerin** ve değerlerin büyük/küçük **harfe** duyarlı olduğunu unutmayın.
+
+> [!NOTE]  
+> Kısıtlamanın eşleşmesi için içindeki `{}` koşullar DOĞRU OLMALIDIR. Örneğin, iki tarama tetikleyicisi belirtirseniz bu doğru olamaz ve dışlama uygulanmaz. Aynı türde iki kısıtlama belirtmek için iki ayrı dışlama oluşturun.
+
 
 ### <a name="examples"></a>Örnekler
 
@@ -85,7 +90,7 @@ Dışlamaları yalnızca hedef bir dosya veya klasörse geçerli olacak şekilde
 
 #### <a name="filefolder-exclusions-default-behavior"></a>Dosya/klasör dışlamaları varsayılan davranışı
 
-Başka seçenek belirtmezseniz, dosya/klasör tüm tarama türlerinin dışında tutulur _ve_ hedef bir dosya veya klasör olup olmadığına bakılmaksızın dışlama uygulanır. Dışlamaları yalnızca belirli bir tarama türüne uygulanacak şekilde özelleştirme hakkında daha fazla bilgi için bkz [. Tarama türü kısıtlaması](#scan-type-restriction).
+Başka bir seçenek belirtmezseniz, dosya/klasör tüm tarama türlerinin dışında tutulur _ve_ hedef bir dosya veya klasör olmasına bakılmaksızın dışlama uygulanır. Dışlamaları yalnızca belirli bir tarama türüne uygulanacak şekilde özelleştirme hakkında daha fazla bilgi için bkz [. Tarama türü kısıtlaması](#scan-type-restriction).
 
 #### <a name="folders"></a>Klasörler
 

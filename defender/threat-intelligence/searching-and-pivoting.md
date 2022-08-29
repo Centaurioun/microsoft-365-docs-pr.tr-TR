@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 3a7b5a5cba7d289faccef5e1e1c5eb7684357f25
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: e5c621eaf22b00a8d0c29aa17063882e2873be2b
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175586"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387209"
 ---
 # <a name="searching-and-pivoting"></a>Arama ve özetleme
 
@@ -29,7 +29,7 @@ Microsoft Defender Tehdit Analizi (Defender TI), araştırma sürecini kolaylaş
 
 ## <a name="open-defender-tis-threat-intelligence-home-page"></a>Defender TI'nin Tehdit Bilgileri Giriş Sayfasını açın
 
-1. [Defender Tehdit Bilgileri Portalı'na](https://defender.microsoft.com/) erişin.
+1. [Defender Tehdit Bilgileri Portalı'na](https://ti.defender.microsoft.com/) erişin.
 2. Portala erişmek için Microsoft kimlik doğrulamasını tamamlayın.
 
 ## <a name="performing-threat-intelligence-searches-and-pivots"></a>Tehdit bilgileri aramaları ve özetleri gerçekleştirme
@@ -41,15 +41,15 @@ Defender TI'nin Tehdit Bilgileri araması hem basit hem de güçlüdür ve kulla
 
     ![Ip Adresi Ara](media/searchIpAddress.png)
 
-2. **Alan:** Tehdit Bilgileri Arama `fabrikam.com` çubuğunda arama yapın. Bu eylem bir Etki Alanı araması ile sonuçlandır.
+2. **Etki alanı:** Tehdit Bilgileri Arama `fabrikam.com` çubuğunda arama yapın. Bu eylem bir Etki Alanı araması ile sonuçlandır.
 
     ![Arama Etki Alanı](media/searchDomain.png)
 
-3. **Ev sahibi:** Tehdit Bilgileri Arama `canary.fabrikam.com` çubuğunda arama yapın. Bu eylem bir Konak araması ile sonuçlar.
+3. **Ana bilgisayar:** Tehdit Bilgileri Arama `canary.fabrikam.com` çubuğunda arama yapın. Bu eylem bir Konak araması ile sonuçlar.
 
     ![Arama Ana Bilgisayarı](media/searchHost.png)
 
-4. **Anahtar sözcük:** Tehdit Bilgileri Arama çubuğunda 'apt29' araması yapın. Bu eylem bir Anahtar Sözcük araması ile sonuçlar. Anahtar sözcük aramaları terim, e-posta adresi vb. içerebilen herhangi bir anahtar sözcük türünü kapsar. Anahtar sözcük aramaları makalelerle, projelerle ve veri kümeleriyle ilişkilendirmelerle sonuçlanır.
+4. **Anahtar kelime:** Tehdit Bilgileri Arama çubuğunda 'apt29' araması yapın. Bu eylem bir Anahtar Sözcük araması ile sonuçlar. Anahtar sözcük aramaları terim, e-posta adresi vb. içerebilen herhangi bir anahtar sözcük türünü kapsar. Anahtar sözcük aramaları makalelerle, projelerle ve veri kümeleriyle ilişkilendirmelerle sonuçlanır.
 
     ![Arama Anahtar Sözcüğü](media/searchKeyword.png)
 
@@ -66,11 +66,11 @@ Defender TI'nin Tehdit Bilgileri araması hem basit hem de güçlüdür ve kulla
 
     ![Arama Etiketi](media/searchTag.png)
 
-8. **Parça:** Tehdit Bilgileri Araması açılan listesinden 'Bileşen'i seçin ve Tehdit Bilgileri Arama çubuğuna 'cobalt strike' yazın. Aramayı gerçekleştirmek için Enter tuşuna basın veya sağ oku seçin. Bu eylem bir Bileşen araması ile sonuçlar.
+8. **Bileşen:** Tehdit Bilgileri Araması açılan listesinden 'Bileşen'i seçin ve Tehdit Bilgileri Arama çubuğuna 'cobalt strike' yazın. Aramayı gerçekleştirmek için Enter tuşuna basın veya sağ oku seçin. Bu eylem bir Bileşen araması ile sonuçlar.
 
     ![Arama Bileşeni](media/searchComponent.png)
 
-9. **Takipçi:** Tehdit Bilgileri Araması açılan listesinden 'İzleyiciler'i seçin ve Tehdit Bilgileri Arama çubuğuna '07d14d16d21d00042d41d00041d47e4e0ae17960b2a5b4fd6107fbb0926' yazın. Aramayı gerçekleştirmek için Enter tuşuna basın veya sağ oku seçin. Bu eylem bir İzleyici araması ile sonuçlar. Not: Bu örnekte bu bir JarmHash İzleyici türü idi.
+9. **Takibi:** Tehdit Bilgileri Araması açılan listesinden 'İzleyiciler'i seçin ve Tehdit Bilgileri Arama çubuğuna '07d14d16d21d00042d41d00041d47e4e0ae17960b2a5b4fd6107fbb0926' yazın. Aramayı gerçekleştirmek için Enter tuşuna basın veya sağ oku seçin. Bu eylem bir İzleyici araması ile sonuçlar. Not: Bu örnekte bu bir JarmHash İzleyici türü idi.
 
     > [!NOTE]
     > Bu örnekte bu bir JarmHash İzleyici türü idi.
@@ -172,15 +172,15 @@ Bu bölümde yapıta uygulanan etiketler veya bunu içeren projeler de gösteril
 
 ## <a name="summary-tab"></a>Özet sekmesi
 
-### <a name="overview"></a>Genel Bakış
+### <a name="overview"></a>Genel bakış
 
 Tehdit Bilgileri aramasının sonuçları iki sekmede gruplandırılır: "Özet" ve "Veri." Özet sekmesi, platformun geniş veri kümelerimizden türetdiği yapıt hakkında önemli içgörüler sağlar. Bu bölüm, araştırma başlatmaya yardımcı olabilecek önemli bulguları ortaya atmak için tasarlanmıştır.
 
-### <a name="reputation"></a>Şöhret
+### <a name="reputation"></a>Itibar
 
-Defender TI herhangi bir Konak, Etki Alanı veya IP Adresi için özel itibar puanları sağlar. Bu puan, bilinen veya bilinmeyen bir varlığın itibarını doğrulayarak kullanıcıların kötü amaçlı veya şüpheli altyapıyla ilgili algılanan tüm bağları hızla anlamasına yardımcı olur. Saygınlık Puanları, 0 ile 100 arasında bir aralığa sahip sayısal puan olarak görüntülenir. Puanı "0" olan bir varlığın şüpheli etkinlikle veya bilinen risk göstergeleriyle bilinen bir ilişkisi yoktur; "100" puanı varlığın kötü amaçlı olduğunu gösterir. Platform, açıklama ve önem derecesi içeren kuralların listesini sağlar. Aşağıdaki örnekte, bu etki alanı için geçerli olan dört "yüksek önem derecesi" kuralı görüyoruz.
+Defender TI tüm Konaklar, Etki Alanları veya IP Adreslerine yönelik özel itibar puanları sağlar. Bu puan, bilinen veya bilinmeyen bir varlığın itibarını doğrulayarak kullanıcıların kötü amaçlı veya şüpheli altyapıyla ilgili algılanan tüm bağları hızla anlamasına yardımcı olur. Saygınlık Puanları, 0 ile 100 arasında bir aralığa sahip sayısal puan olarak görüntülenir. Puanı "0" olan bir varlığın şüpheli etkinlikle veya bilinen risk göstergeleriyle bilinen bir ilişkisi yoktur; "100" puanı varlığın kötü amaçlı olduğunu gösterir. Platform, açıklama ve önem derecesi içeren kuralların listesini sağlar. Aşağıdaki örnekte, bu etki alanı için geçerli olan dört "yüksek önem derecesi" kuralı görüyoruz.
 
-Daha fazla bilgi için bkz [. İtibar puanlaması](reputation-scoring.md).
+Daha fazla bilgi için bkz. [İtibar puanlaması](reputation-scoring.md).
 
 ![Özet Sekmesi Saygınlığı](media/summaryTabReputation.png)
 
@@ -188,9 +188,9 @@ Daha fazla bilgi için bkz [. İtibar puanlaması](reputation-scoring.md).
 
 Analist İçgörüleri bölümü, bir araştırmanın sonraki adımını belirlemeye yardımcı olabilecek yapıt hakkında hızlı içgörüler sağlar. Bu bölümde yapıt için geçerli olan içgörüler ve ek görünürlük için geçerli olmayan içgörüler listelenecektir. Aşağıdaki örnekte, IP Adresinin yönlendirilebilir olduğunu, bir web sunucusu barındırdığını ve son beş gün içinde açık bir bağlantı noktasına sahip olduğunu hızla belirleyebiliriz. Ayrıca, sistem tetiklenmeyen kurallar görüntüler ve bu da bir araştırma başlatırken aynı derecede yararlı olabilir.
 
-Daha fazla bilgi için bkz [. Analist içgörüleri](analyst-insights.md).
+Daha fazla bilgi için bkz. [Çözümleyici içgörüleri](analyst-insights.md).
 
-![Özet Sekmesi Analist İçgörüleri](media/summaryTabAnalystInsights.png)
+![Özet Sekmesi Çözümleyici İçgörüleri](media/summaryTabAnalystInsights.png)
 
 ### <a name="articles"></a>Makaleler
 
@@ -218,7 +218,7 @@ SSL Sertifikaları, verilerinizin güvenliğini sağlamanın ötesinde, kullanı
 
 ![Özet Sekmesi Sertifikaları](media/summaryTabCertificates.png)
 
-### <a name="projects"></a>Proje
+### <a name="projects"></a>Projeler
 
 Defender TI platformu, kullanıcıların ilgi çekici göstergeleri düzenlemek veya araştırmadan ödün vermek için projeler oluşturmasına olanak tanır. Daha iyi görünürlük için bağlantı yapıtlarını izlemek için projeler de oluşturulur. Projeler, tüm ilişkili yapıtların listesini ve adları, açıklamaları, ortak çalışanları ve izleme profillerini koruyan ayrıntılı bir geçmiş içerir.
 
@@ -236,7 +236,7 @@ Microsoft, karma veri kümesini doldurmak üzere sorgulanan altyapıyla eşleşt
 
 ## <a name="data-tab"></a>Veri sekmesi
 
-### <a name="overview"></a>Genel Bakış
+### <a name="overview"></a>Genel bakış
 
 Veri sekmesi, kullanıcıların Defender TI platformu tarafından gözlemlenen somut bağlantıları ayrıntılı olarak incelemelerine yardımcı olur. Özet sekmesi bir yapıt hakkında hemen bağlam sağlamak için önemli bulguları ortaya çıkarken, Veri sekmesi analistlerin bu bağlantıları çok daha ayrıntılı bir şekilde incelemesine olanak tanır. Kullanıcılar döndürülen herhangi bir değere tıklayarak ilgili meta veriler arasında özetleyebilir.
 
@@ -247,7 +247,7 @@ Veri sekmesi, kullanıcıların Defender TI platformu tarafından gözlemlenen s
 Aşağıdaki veri kümeleri Defender TI'de kullanılabilir:
 
 - Çözünürlük
-- WHOIS
+- WHOİS
 - Sertifika
 - Izci
 - Alt
@@ -279,7 +279,7 @@ PDNS çözümleme verilerimiz şunları içerir:
 
 ![Veri Sekmesi Yeniden çözümleri](media/dataTabResolutions.png)
 
-### <a name="whois"></a>WHOIS
+### <a name="whois"></a>WHOİS
 
 WHOIS, herkesin bir etki alanının, IP adresinin veya alt ağın sahipliği hakkında bilgi sorgulamasına olanak tanıyan bir protokoldür. Tehdit altyapısı araştırmalarında WHOIS için en yaygın işlevlerden biri, WHOIS kayıtlarında paylaşılan benzersiz verilere göre farklı varlıkları tanımlamak veya bağlamaktır.
 
@@ -500,7 +500,7 @@ Daha fazla bilgi için bkz. [Microsoft Defender Tehdit Analizi (Defender TI) ned
 
 ![Veri Sekmesi Yönetim Bilgileri Makaleleri](media/dataTabIntelligenceArticles.png)
 
-### <a name="projects"></a>Proje
+### <a name="projects"></a>Projeler
 
 Altyapı analizinin birincil yan üretimlerinden biri, neredeyse her zaman bir tehdit aktörü veya aktör grubuyla bağlantılı bir gösterge kümesidir. Bu göstergeler, bir saldırı kampanyası başlattıklarında tehdit aktörlerini tanımlamanın bir yoludur. Saldırganların tehdit aktörlerinin nasıl çalıştığına ilişkin taktikleri, teknikleri ve yordamları (TTP' ler) hakkında içgörü geliştirme. Projeler, TTP'lerine göre saldırganları tanımlamak ve saldırgan altyapısının zaman içinde nasıl değiştiğini izlemek için bir yöntem sağlar.
 

@@ -1,7 +1,7 @@
 ---
-title: Gelişmiş av şemasında UyarıBilgileri tablosu
-description: Gelişmiş av şemasının AlertInfo tablosunda uyarı oluşturma olayları hakkında bilgi
-keywords: gelişmiş av, tehdit avı, siber tehdit avı, Microsoft 365 Defender, Microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, UyarıBilgileri, uyarı, önem derecesi, kategori, MITRE, ATT&CK, Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Microsoft Cloud App Security, MCAS ve Kimlik için Microsoft Defender
+title: Gelişmiş tehdit avcılığı şemasındaki AlertInfo tablosu
+description: Gelişmiş tehdit avcılığı şemasının AlertInfo tablosunda uyarı oluşturma olayları hakkında bilgi edinin
+keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, AlertInfo, uyarı, önem derecesi, kategori, MITRE, ATT&CK, Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Microsoft Cloud App Security, MCAS ve Kimlik için Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,42 +18,48 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0298b4f83ac748048215af4f5b1f8261a2a8c67c
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 20d9cc76f3da2efea31c0cf430022d8a83897583
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63018990"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388671"
 ---
-# <a name="alertinfo"></a>UyarıBilgileri
+# <a name="alertinfo"></a>AlertInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
 
+## <a name="get-access"></a>Erişim alma
+Gelişmiş avcılık veya diğer [Microsoft 365 Defender](microsoft-365-defender.md) özelliklerini kullanmak için Azure Active Directory'de uygun bir role sahip olmanız gerekir. [Gelişmiş avcılık için gerekli roller ve izinler hakkında bilgi edinin](custom-roles.md).
 
-Gelişmiş `AlertInfo` av [şemasında](advanced-hunting-overview.md) yer alan tablo, Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Bulut Uygulamaları için Microsoft Defender ve Kimlik için Microsoft Defender ile ilgili uyarılar hakkında bilgiler içerir. Bu tablodan bilgi dönüşen sorgular oluşturmak için bu başvuruyu kullanın.
+Ayrıca, uç nokta verilerine erişiminiz Uç Nokta için Microsoft Defender rol tabanlı erişim denetimi (RBAC) ayarları tarafından belirlenir. [Microsoft 365 Defender erişimini yönetme hakkında bilgi edinin](m365d-permissions.md).
 
-Gelişmiş av şemasında yer alan diğer tablolar hakkında bilgi için bkz [. gelişmiş av başvurusu](advanced-hunting-schema-tables.md).
+## <a name="alertinfo"></a>AlertInfo
+
+`AlertInfo` [Gelişmiş tehdit avcılığı](advanced-hunting-overview.md) şemasındaki tablo Uç Nokta, Office 365 için Microsoft Defender, Microsoft Defender for Cloud Apps ve için Microsoft Defender'dan gelen uyarılar hakkında bilgi içerir Kimlik için Microsoft Defender. Bu tablodan bilgi döndüren sorgular oluşturmak için bu başvuruyu kullanın.
+
+Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi için [gelişmiş avcılık başvurusuna bakın](advanced-hunting-schema-tables.md).
 
 | Sütun adı | Veri türü | Açıklama |
 |-------------|-----------|-------------|
-| `Timestamp` | `datetime` | Etkinliğin kaydedl olduğu tarih ve saat |
-| `AlertId` | `string` | Uyarı için benzersiz tanımlayıcı |
+| `Timestamp` | `datetime` | Olayın kaydedilildiği tarih ve saat |
+| `AlertId` | `string` | Uyarının benzersiz tanımlayıcısı |
 | `Title` | `string` | Uyarının başlığı |
-| `Category` | `string` | Uyarıda tanımlanan tehdit göstergesi veya ihlal etkinliğinin türü |
-| `Severity` | `string` | Uyarıda tanımlanan tehdit göstergesi veya ihlal etkinliğinin olası etkisini (yüksek, orta veya düşük) gösterir |
-| `ServiceSource` | `string` | Uyarı bilgilerini sağlanan ürün veya hizmet |
-| `DetectionSource` | `string` | Önemli bileşeni veya etkinliği tespit edilen algılama teknolojisi veya algılayıcı |
-| `AttackTechniques` | `string` | MITRE ATT&uyarıyı tetikleyen etkinlikle ilişkilendirilmiş CK tekniklerini kullanır |
+| `Category` | `string` | Uyarı tarafından tanımlanan tehdit göstergesi veya ihlal etkinliğinin türü |
+| `Severity` | `string` | Uyarı tarafından tanımlanan tehdit göstergesinin veya ihlal etkinliğinin olası etkisini (yüksek, orta veya düşük) gösterir |
+| `ServiceSource` | `string` | Uyarı bilgilerini sağlayan ürün veya hizmet |
+| `DetectionSource` | `string` | Önemli bileşeni veya etkinliği tanımlayan algılama teknolojisi veya algılayıcısı |
+| `AttackTechniques` | `string` | MITRE ATT&uyarıyı tetikleyen etkinlikle ilişkili CK teknikleri |
 
 ## <a name="related-topics"></a>İlgili konular
-- [Gelişmiş ava genel bakış](advanced-hunting-overview.md)
-- [Sorgu dilini öğrenme](advanced-hunting-query-language.md)
-- [Paylaşılan sorguları kullanma](advanced-hunting-shared-queries.md)
-- [Cihazlar, e-postalar, uygulamalar ve kimlikler arasında iş avı](advanced-hunting-query-emails-devices.md)
-- [Şemayı anlama](advanced-hunting-schema-tables.md)
-- [Sorguyla ilgili en iyi yöntemleri uygulama](advanced-hunting-best-practices.md)
+- [Gelişmiş avcılığa genel bakış](advanced-hunting-overview.md)
+- [Sorgu dilini öğrenin](advanced-hunting-query-language.md)
+- [Paylaşılan sorguları kullanın](advanced-hunting-shared-queries.md)
+- [Cihazlar, e-postalar, uygulamalar ve kimlikler arasında avlayın](advanced-hunting-query-emails-devices.md)
+- [Şemayı anlayın](advanced-hunting-schema-tables.md)
+- [Sorgu en iyi yöntemlerini uygulayın](advanced-hunting-best-practices.md)

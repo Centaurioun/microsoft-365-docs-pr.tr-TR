@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 441f9ce5824c1de82a5629e4c0ba9192ed89a529
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 92a2d49e68bcf138e99264ac5f7a1392e23d61b6
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66895085"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388517"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender'daki olayları araştırma
 
@@ -122,7 +122,7 @@ Cihazın ayrıntılarını, dizin verilerini, etkin uyarıları ve oturum açmı
 Cihaz sayfasından cihaz hakkında tüm uyarıları, zaman çizelgesi ve güvenlik önerileri gibi ek bilgiler toplayabilirsiniz. Örneğin, **Zaman Çizelgesi** sekmesinde makine zaman çizelgesinde gezinebilir ve makinede gözlemlenen tüm olayları ve davranışları, tetiklenen uyarılarla birlikte kronolojik sırayla görüntüleyebilirsiniz.
 
 > [!TIP]
-> Bir cihaz sayfasında isteğe bağlı taramalar yapabilirsiniz. Microsoft 365 Defender portalında **Uç Noktalar > Cihaz envanteri'ni** seçin. Uyarıları olan bir cihaz seçin ve ardından virüsten koruma taraması çalıştırın. Virüsten koruma taramaları gibi eylemler izlenir ve **Cihaz envanteri** sayfasında görünür. Daha fazla bilgi için bkz. [Cihazlarda Defender Virüsten Koruma taraması çalıştırma](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
+> Bir cihaz sayfasında isteğe bağlı taramalar yapabilirsiniz. Microsoft 365 Defender portalında **Uç Noktalar > Cihaz envanteri'ni** seçin. Uyarıları olan bir cihaz seçin ve ardından virüsten koruma taraması çalıştırın. Virüsten koruma taramaları gibi eylemler izlenir ve **Cihaz envanteri** sayfasında görünür. Daha fazla bilgi için bkz. [Cihazlarda Microsoft Defender Virüsten Koruma taraması çalıştırma](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
 
 ## <a name="users"></a>Kullanıcılar
 

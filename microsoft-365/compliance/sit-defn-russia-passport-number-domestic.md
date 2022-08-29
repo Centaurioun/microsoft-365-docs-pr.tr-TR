@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Rusya pasaport numarası yurt içi hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 0e74f6f8f268591cdf69148390e94e287f0e9686
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 186f5fc3e231a311ef8d9de4a87dd18c7b47972b
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948515"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368862"
 ---
 # <a name="russia-passport-number-domestic"></a>Rusya pasaport numarası yurt içi
-
-Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
-
-- veri kaybı önleme ilkeleri
-- iletişim uyumluluk ilkeleri
-- veri yaşam döngüsü yönetimi
-- kayıt yönetimi
-- Bulut Uygulamaları için Microsoft Defender
 
 ## <a name="format"></a>Biçim
 
@@ -50,16 +42,16 @@ Bu hassas bilgi türü yalnızca şu durumlarda kullanılabilir:
 - isteğe bağlı bir alan
 - altı basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Regex `Regex_Russian_Passport_Number_Domestic` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_Russian_Passport_Number` bir anahtar sözcük bulunur.
+- `Keyword_Russian_Passport_Number` içinden bir anahtar sözcük bulundu.
 
 ```xml
       <!-- Russian Passport Number Domestic -->

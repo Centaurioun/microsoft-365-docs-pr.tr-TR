@@ -14,12 +14,12 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 61f0e265e0a375aaff4d1ad445ac6e1bbeb05b1d
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: ba24bcac58ce814282b56244d530858a1c3bdea1
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717524"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387627"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Sanal Masaüstü Altyapısı (VDI) ortamında Microsoft Defender Virüsten Koruma için dağıtım klavuzu
 
@@ -49,7 +49,7 @@ Azure tabanlı sanal makineler için bkz. [Bulut için Microsoft Defender'da End
 
 > [!IMPORTANT]
 > VDI Windows Server 2012 veya Windows Server 2016 üzerinde barındırılsa da, windows'un önceki sürümlerinde kullanılamayan artan koruma teknolojileri ve özellikleri nedeniyle sanal makinelerin (VM) en az 1607 Windows 10 çalışıyor olması gerekir.
-> Microsoft Defender AV'nin Windows 10 Insider Preview, derleme 18323 (ve üzeri) içinde sanal makinelerde çalışma yönteminde performans ve özellik iyileştirmeleri vardır. Insider Preview derlemesi kullanmanız gerekiyorsa bu kılavuzda bunu belirleyeceğiz; belirtilmezse, en iyi koruma ve performans için gereken en düşük sürüm 1607 Windows 10.
+> Microsoft Defender Virüsten Koruma'nın Windows 10 Insider Preview, derleme 18323 (ve üzeri) içinde sanal makinelerde çalışma yönteminde performans ve özellik iyileştirmeleri vardır. Insider Preview derlemesi kullanmanız gerekiyorsa bu kılavuzda bunu belirleyeceğiz; belirtilmezse, en iyi koruma ve performans için gereken en düşük sürüm 1607 Windows 10.
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>Ayrılmış bir VDI dosya paylaşımı ayarlama
 
@@ -69,7 +69,7 @@ Windows 10, sürüm 1903'te, indirilen güvenlik zekası güncelleştirmelerinin
 
 6. Girin `\\<sharedlocation\>\wdav-update` (bu değerle ilgili yardım için bkz [. İndirme ve paketi açma](#download-and-unpackage-the-latest-updates)).
 
-7. **Tamam**'a tıklayın.
+7. **Tamam**'ı tıklatın.
 
 8. GPO'yi test etmek istediğiniz VM'lere dağıtın.
 
@@ -256,7 +256,7 @@ Vm ardışık olarak zamanlanmış iki veya daha fazla taramayı kaçırdıysa, 
 
 3. İlkeyi **Etkin** olarak ayarlayın.
 
-4. **Tamam**'a tıklayın.
+4. **Tamam**'ı tıklatın.
 
 5. grup ilkesi Nesnenizi genellikle yaptığınız gibi dağıtın.
 

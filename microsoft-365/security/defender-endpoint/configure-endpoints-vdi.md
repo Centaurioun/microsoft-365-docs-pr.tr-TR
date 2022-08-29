@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/15/2022
 ms.technology: mde
-ms.openlocfilehash: 7ef410beaacbc899c6f52e688ee38b3b545b8997
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 8bf3dda061b582adb7b21029022e61bc890aeec7
+ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823097"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67441650"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Microsoft 365 Defender kalıcı olmayan sanal masaüstü altyapısı (VDI) cihazlarını ekleme
 
@@ -59,7 +59,6 @@ VDI ortamında, VDI örneklerinin ömrü kısa olabilir. VDI cihazları Uç Nokt
 
 
 - Her VDI örneği için tek portal girişi. VDI örneği zaten Uç Nokta için Microsoft Defender eklendiyse ve bir noktada silindikten sonra aynı ana bilgisayar adıyla yeniden oluşturulduysa, portalda bu VDI örneğini temsil eden yeni bir nesne OLUŞTURULMAZ. 
-
 
   > [!NOTE]
   > Bu durumda, oturum oluşturulduğunda *,* örneğin katılımsız yanıt dosyası kullanılarak aynı cihaz adı yapılandırılmalıdır.
@@ -143,14 +142,14 @@ Aşağıdaki adımlar VDI cihazlarını ekleme konusunda size yol gösterir ve t
 
 2. [Sunucu ekleme işlemini](configure-server-endpoints.md) izleyin. 
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Kalıcı olmayan sanal masaüstü altyapısı (VDI) görüntülerini güncelleştirme
+## <a name="updating-virtual-desktop-infrastructure-vdi-images-persistent-or-non-persistent"></a>Sanal masaüstü altyapısı (VDI) görüntülerini güncelleştirme (kalıcı veya kalıcı olmayan)
 
 Güncelleştirmeleri VDI'lerde çalışan VM'lere kolayca dağıtabilme özelliği sayesinde, makinelerinizde güncelleştirmeleri hızlı ve kolay bir şekilde nasıl edinebileceğinize odaklanmak için bu kılavuzu kısaltdık. Güncelleştirmeler konak sunucusundaki bileşen bitlerine genişletildiğinden ve açıldığında doğrudan VM'ye indirildiğinden, artık düzenli aralıklarla altın renkli görüntüler oluşturmanız ve mühürlemeniz gerekmez.
 
 Daha fazla bilgi [için, Sanal Masaüstü Altyapısı (VDI) ortamında Microsoft Defender Virüsten Koruma için dağıtım kılavuzundaki yönergeleri](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus) izleyin.
 
    > [!NOTE]
-   > Kalıcı Olmayan VDI ortamınızın ana görüntüsünü (SENSE hizmeti çalışıyor) eklerseniz, görüntüyü üretime geri döndürmeden önce bazı verileri çıkarmanız ve temizlemeniz gerekir.
+   > VDI ortamınızın ana görüntüsünü (SENSE hizmeti çalışıyor) dahil ettiyseniz, görüntüyü üretime geri döndürmeden önce bazı verileri çıkarmanız ve temizlemeniz gerekir.
    > 1. Aşağıdaki komutu bir CMD penceresinde çalıştırarak algılayıcının durdurulduğunu doğrulayın:
    >  ```console
    >  sc query sense
@@ -165,11 +164,9 @@ Daha fazla bilgi [için, Sanal Masaüstü Altyapısı (VDI) ortamında Microsoft
    >  exit
    >  ```
 
-
 ## <a name="other-recommended-configuration-settings"></a>Önerilen diğer yapılandırma ayarları
 
 Cihazları hizmete ekledikten sonra, aşağıdaki önerilen yapılandırma ayarlarıyla etkinleştirerek dahil edilen tehdit koruması özelliklerinden yararlanmak önemlidir.
-
 
 ### <a name="next-generation-protection-configuration"></a>Yeni nesil koruma yapılandırması
 
@@ -181,14 +178,12 @@ Aşağıdaki yapılandırma ayarları önerilir:
 - Bulut tabanlı koruma düzeyi: Yapılandırılmadı
 - Saniyeler içinde Defender Bulut Genişletilmiş Zaman Aşımı: 20
 
-
 #### <a name="exclusions"></a>Dışlamalar
 - Yerel yönetici birleştirmeyi devre dışı bırakma: Yapılandırılmadı
 - Hariç tutulacak Defender işlemleri:
   - `%Programfiles%\FSLogix\Apps\frxccd.exe`
   - `%Programfiles%\FSLogix\Apps\frxccds.exe`
   - `%Programfiles%\FSLogix\Apps\frxsvc.exe`
-
 
 - Taramaların ve gerçek zamanlı korumanın dışında tutulacak dosya uzantıları:
   -  `%Programfiles%\FSLogix\Apps\frxccd.sys`
@@ -201,7 +196,6 @@ Aşağıdaki yapılandırma ayarları önerilir:
   - `\\stroageaccount.file.core.windows.net\share**.VHD`
   -  `\\stroageaccount.file.core.windows.net\share**.VHDX`
 
-
 #### <a name="real-time-protection"></a>Gerçek Zamanlı Koruma
 
 - Tüm ayarları açın ve tüm dosyaları izleyecek şekilde ayarlayın
@@ -213,8 +207,6 @@ Aşağıdaki yapılandırma ayarları önerilir:
 - Algılanan tehditler için eylemler:
   - Düşük tehdit: Temiz
   - Orta tehdit, Yüksek tehdit, Ciddi tehdit: Karantina
-
-
 
 #### <a name="scan"></a>Tarama
 
@@ -237,7 +229,6 @@ Aşağıdaki yapılandırma ayarları önerilir:
 #### <a name="user-experience"></a>Kullanıcı deneyimi
 - Microsoft Defender uygulamasına kullanıcı erişimine izin ver: Yapılandırılmadı
 
-
 #### <a name="enable-tamper-protection"></a>Kurcalama korumasını etkinleştirme
 - Microsoft Defender'ın devre dışı bırakılmasını önlemek için kurcalama korumasını etkinleştirme: Etkinleştir
 
@@ -245,20 +236,14 @@ Aşağıdaki yapılandırma ayarları önerilir:
 
 - Ağ korumasını etkinleştirme: Denetim modu
 - Microsoft Edge için SmartScreen gerektir: Evet
-- Maclious site erişimini engelle: Evet
+- Kötü amaçlı site erişimini engelle: Evet
 - Doğrulanmamış dosya indirmeyi engelle: Evet
 
 #### <a name="attack-surface-reduction-rules"></a>Saldırı yüzeyini azaltma kuralları
 - Denetim için tüm kullanılabilir kuralları yapılandırın.
 
-
 > [!NOTE]
 > Bu etkinliklerin engellenmesi meşru iş süreçlerini kesintiye uğratabilir. En iyi yaklaşım, her şeyi denetime ayarlamak, hangilerinin güvenli olduğunu belirlemek ve ardından hatalı pozitif algılamaları olmayan uç noktalarda bu ayarları etkinleştirmektir.
-
-
-
-
-
 
 ## <a name="related-topics"></a>İlgili konular
 - [Windows araçlarını Grup İlkesi kullanarak ekleyin](configure-endpoints-gp.md)

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Yöneticiler, karantinaya alınan iletilere kullanıcıların yapabileceklerini denetlemek için karantina ilkelerini kullanmayı öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d5b95ca3b763bafe2689caf4ab77df9eea9df6d8
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 01a4d5acb9edfa0906695329489439d3ce6af298
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056888"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445148"
 ---
 # <a name="quarantine-policies"></a>Karantina ilkeleri
 
@@ -32,7 +32,7 @@ ms.locfileid: "67056888"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online Protection(EOP) ve Office 365 için Microsoft Defender'de karantina ilkeleri (eski _adıyla karantina etiketleri_) yöneticilerin, iletilerin neden karantinaya alındığına bağlı olarak kullanıcıların karantinaya alınan iletileri ne yapabileceklerini denetlemesine olanak tanır.
+Exchange Online Protection(EOP) ve Office 365 için Microsoft Defender'de karantina ilkeleri (eski _adıyla karantina etiketleri_) yöneticilerin, iletilerin neden karantinaya alındığına bağlı olarak kullanıcıların karantinaya alınan iletileri ne yapabileceklerini denetlemesine olanak tanır. Bu özellik, Exchange Online posta kutularına sahip tüm Microsoft 365 kuruluşlarında kullanılabilir.
 
 Geleneksel olarak, iletinin neden karantinaya alındığına bağlı olarak, kullanıcılara karantina iletileri için etkileşim düzeyleri izin verilir veya reddedilir. Örneğin, kullanıcılar istenmeyen posta önleme filtrelemesi tarafından karantinaya alınan iletileri istenmeyen posta veya toplu olarak görüntüleyebilir ve yayımlayabilir, ancak yüksek güvenilirlikli kimlik avı veya kötü amaçlı yazılım olarak karantinaya alınan iletileri görüntüleyemez veya yayımlayamaz.
 
@@ -523,7 +523,7 @@ Karantina ilkeleri için genel ayarlar, karantinaya alınan iletilerin alıcıla
 
         :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="Karantina ilkelerinin genel karantina bildirimi ayarlarında seçilen diller." lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
 
-   - **Şirket logomu kullan**: Karantina bildirimlerinin en üstünde kullanılan varsayılan Microsoft logosunu değiştirmek için bu seçeneği belirleyin. Bu adımı gerçekleştirmeden önce, özel logonuzu karşıya yüklemek [için Microsoft 365 temasını kuruluşunuz için özelleştirme](../../admin/setup/customize-your-organization-theme.md) başlığı altında yer alan yönergeleri izlemeniz gerekir.
+   - **Şirket logomu kullan**: Karantina bildirimlerinin en üstünde kullanılan varsayılan Microsoft logosunu değiştirmek için bu seçeneği belirleyin. Bu adımı gerçekleştirmeden önce, özel logonuzu karşıya yüklemek [için Microsoft 365 temasını kuruluşunuz için özelleştirme](../../admin/setup/customize-your-organization-theme.md) başlığı altında yer alan yönergeleri izlemeniz gerekir. Kuruluşunuzda karşıya yüklenen özel logo dosyası yerine URL'ye işaret eden özel logo varsa bu seçenek desteklenmez. 
 
      Aşağıdaki ekran görüntüsünde karantina bildiriminde özel bir logo gösterilmektedir:
 

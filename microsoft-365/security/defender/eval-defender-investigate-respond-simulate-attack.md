@@ -23,12 +23,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2fd9dc7e8d597890e8d07ce783938bc1d69b6c78
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: db3a005b80a69695da5936d60cb512b8fc46cfcb
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748769"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387077"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Microsoft 365 Defender pilot ortamında saldırı simülasyonu çalıştırma
 
@@ -49,9 +49,9 @@ Microsoft 365 hizmetleri ve uygulamaları, şüpheli veya kötü amaçlı bir ol
 
 Microsoft 365 Defender portalı, pilot ortamınızda sanal saldırılar oluşturmak için yerleşik özelliklere sahiptir:
 
-- konumundaki [https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator)Office 365 için Microsoft 365 Defender için saldırı simülasyonu eğitimi.
+- konumundaki [https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator)Office 365 için Microsoft 365 Defender için Saldırı simülasyonu eğitimi.
   
-  Microsoft 365 Defender portalında **Email & işbirliği > Saldırı simülasyonu eğitimi'ni** seçin.
+  Microsoft 365 Defender portalında **işbirliği > Saldırı simülasyonu eğitimi Email &** seçin.
 
 - saldırı öğreticileri & konumunda [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations)uç nokta için Microsoft 365 Defender simülasyonları.
 
@@ -119,7 +119,7 @@ Bu isteğe bağlı olay yanıtı alıştırmasında, bir PowerShell betiği kull
 
    - Windows 10 sürüm 1903 veya sonraki bir sürümü çalıştırır.
    - AD DS etki alanı denetleyicisi etki alanına katılır.
-   - [Windows Defender Virüsten Koruma](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) etkinleştirildi. Windows Defender Virüsten Koruma etkinleştirme konusunda sorun yaşıyorsanız bu [sorun giderme konusuna bakın](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+   - [Microsoft Defender Virüsten Koruma](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) etkinleştirildi. Microsoft Defender Virüsten Koruma'yı etkinleştirme konusunda sorun yaşıyorsanız bu [sorun giderme konusuna bakın](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
    - [Uç Nokta için Microsoft Defender'a eklenir](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 Kiracı ve cihaz grupları kullanıyorsanız test cihazı için ayrılmış bir cihaz grubu oluşturun ve en üst düzeye itin.

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft 365, uyumluluk merkezine yeni çözümler ekleme, mevcut özellikleri geri bildiriminize göre güncelleştirme veya yeni ve güncelleştirilmiş belgeleri kullanıma sunarken sürekli değişen uyumluluk ortamını takip etme konusunda size yardımcı olur. Bu ay neler yaptığımıza bakın.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0b2a55b686c310fc8d864229655c6815e7afef38
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7a44fe74c3d0262737d5af52e226a3aa942a412f
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949161"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450179"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview risk ve uyumluluk çözümlerindeki yenilikler
 
@@ -40,6 +40,46 @@ microsoft 365, [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-c
 > - [Microsoft 365 Defender'daki yenilikler](../security/defender/whats-new.md)
 >
 > Ayrıca başlatılan, kullanıma sunulan, geliştirilen, iptal edilen veya daha önce yayımlanan Microsoft 365 özellikleri hakkında bilgi edinmek için Microsoft 365 [Yol Haritası'nı](https://www.microsoft.com/microsoft-365/roadmap) ziyaret edin.
+
+## <a name="july-2022"></a>Temmuz 2022
+
+### <a name="compliance-manager"></a>Uyumluluk Yöneticisi
+
+- [Uyumluluk Yöneticisi şablonları listesi](compliance-manager-templates-list.md) - Asia-Pacific ülkeler kategorisine "Hong Kong - Bankacılık Uygulaması ve Ödeme Kartı Kodu" için yeni premium şablon eklendi.
+
+### <a name="compliance-offerings--service-assurance"></a>Hizmet güvencesi & uyumluluk teklifleri
+
+- [Microsoft 365'te SharePoint ve OneDrive veri dayanıklılığı](/compliance/assurance/assurance-sharepoint-onedrive-data-resiliency) - blob depolama dayanıklılığında yapılan değişiklikler bölümü.
+
+### <a name="data-lifecycle-management-and-records-management"></a>Veri yaşam döngüsü yönetimi ve kayıt yönetimi
+
+- Senaryolar için eklenen ayrıntılarla birlikte [birleştirilmiş lisanslama bölümü](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management).
+- SharePoint belge sürümlerinin saklanması artık Koruma Bekletme kitaplığında ayrı dosyalar kullanmaz. Daha fazla bilgi için, [belge sürümleriyle bekletme nasıl çalışır](retention-policies-sharepoint.md#how-retention-works-with-document-versions)? güncelleştirilmiş belgelere bakın.
+- [SharePoint veya OneDrive'a geçiş yaptığınız kayıtları doğrulama](records-management.md#validating-migrated-records) yönergeleri.
+- [SEC 17a-4(f), FINRA 4511(c) ve CFTC 1.31(c)-(d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d)için Cohasset Değerlendirme raporu güncelleştirildi.
+- Bu özellik GA'da kullanıma sunulmaya başlandığından Teams paylaşılan kanalları için bekletme ilkelerine yönelik önizleme bildirimleri kaldırıldı.
+
+### <a name="data-loss-prevention"></a>Veri Kaybı Önleme
+
+- [DLP ilkesi başvurusu](dlp-policy-reference.md#blocking-and-notifications-in-sharepoint-online-and-onedrive-for-business) - SharePoint Online'da engelleme ve bildirimler hakkında yeni bölüm eklendi ve müşteri yükseltmelerine yanıt olarak OneDrive İş. Hassas hizmet etki alanlarının genel önizlemesini destekleyecek şekilde güncelleştirildi. Power BI desteği güncelleştirildi. Eğitilebilir sınıflandırıcılar için güncelleştirilmiş destek.
+- [Uç nokta DLP ayarlarını yapılandırma](dlp-configure-endpoint-settings.md#sensitive-service-domains) - hassas hizmet etki alanları genel önizlemesinin genel önizleme sürümünü destekleyen yeni içerik eklendi. URL eşleştirme davranışı güncelleştirildi.
+- [Uç nokta DLP'sini kullanma](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) - hassas hizmet etki alanlarının genel önizleme sürümünü destekleyen yeni senaryo içeriği. Güncelleştirilmiş abonelik bilgileri.
+
+### <a name="ediscovery"></a>Ediscovery
+
+- [eBulma için anahtar sözcük sorguları ve arama koşulları](keyword-queries-and-search-conditions.md) - değiştirilen bilgiler kaldırıldı.
+
+### <a name="sensitive-information-types"></a>Hassas bilgi türleri
+
+- [Hassas bilgi türü varlık tanımları](sensitive-information-type-entity-definitions.md) - 41 yeni kimlik bilgisi tarama SID'sini destekleyen 41 yeni SIT varlık tanımı ekledik. SIT varlık tanımları içeriği tek bir monolitik makaleden daha kolay başvurulabilen ve desteklenebilir tek tek makalelere dönüştürüldü. 42 yeni kimlik bilgisi tarama SID'si de dahil olmak üzere toplamda 303 makale vardır.
+
+### <a name="sensitivity-labels"></a>Duyarlılık etiketleri
+
+- Önizlemede: [SharePoint belge kitaplığı için varsayılan duyarlılık etiketi](sensitivity-labels-sharepoint-default-label.md).
+- Önizlemede: Kullanıcıların izin atamasına izin vermek üzere bir duyarlılık etiketi yapılandırıldığında Windows için [kuruluş genelindeki özel](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) izinler. Daha fazla bilgi için bkz.  [Kuruluş genelindeki özel izinler için destek](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions).
+- Şimdi Windows için Geçerli Kanal'a (Önizleme) dağıtılıyor: Mevcut belgeler için varsayılan etiket.
+- Artık Semi-Annual Enterprise Channel ile kullanılabilir: [Duyarlılık etiketleriyle şifrelenmiş dosyalar için birlikte yazma](sensitivity-labels-coauthoring.md).
+- Duyarlılık etiketini yapılandırırken gördüğünüz "Dosyalar & e-postalar" etiket [kapsamı adı](sensitivity-labels.md#label-scopes) artık "Öğeler"dir.
 
 ## <a name="june-2022"></a>Haziran 2022
 
@@ -313,24 +353,3 @@ Günümüzün merkezi olmayan, veri açısından zengin çalışma alanının zo
 - Önizleme aşamasında: Mobil cihazlar (iOS ve Android), en düşük sürümlere sahip olduğunuzda ve bu önizlemeyi kabul ettiğinizde [birlikte yazmayı](sensitivity-labels-coauthoring.md) destekler.
 - Varsayılan paylaşım bağlantı türünü ayarlama desteği, SharePoint ve OneDrive'daki tek tek belgelere genişletilir. Daha fazla bilgi için, [SharePoint ve OneDrive'daki siteler ve belgeler için varsayılan paylaşım bağlantı türünü yapılandırmak için duyarlılık etiketlerini kullanma]( sensitivity-labels-default-sharing-link.md) makalesine bakın.
 - Teams yönetim merkezi artık kapsayıcı etiketlerini (Gruplar & siteleri kapsamına sahip duyarlılık etiketleri) destekliyor.
-
-## <a name="january-2022"></a>Ocak 2022
-
-### <a name="microsoft-purview-data-lifecycle-management"></a>Microsoft Purview Veri Yaşam Döngüsü Yönetimi
-
-- Daha önce Microsoft Information Governance olarak bilinen belgeler, Microsoft Purview uyumluluk portalı yapılandırdığınız çözümlerle ilgili bilgileri daha kolay bulmanıza yardımcı olmak için önemli ölçüde gözden geçirilmiş ve yeniden yapılandırılmıştır: Veri Bağlayıcıları, Veri Yaşam Döngüsü Yönetimi ve Kayıt Yönetimi. Bu düzeltmenin bir parçası olarak, belgelerde veri yaşam döngüsü yönetimi ile kayıt yönetimi arasındaki saklama senaryoları için daha net bir ayrım sağlanır.
-- Yeniden yapılandırmayı desteklemek için [yeni veri yaşam döngüsü yönetimi hakkında bilgi edinin](data-lifecycle-management.md).
-- [Veri yaşam döngüsü yönetimini kullanmaya başlama](get-started-with-data-lifecycle-management.md) - "Bekletmeyi kullanmaya başlama" ifadesinin yerini alacak yeni makale, saklamayı içeren tüm veri yaşam döngüsü yönetimi özelliklerine yönelik başlangıç adımlarını içerir.
-- [Bekletme ilkelerinizin özel durumları için bekletme etiketleri oluşturun](create-retention-labels-data-lifecycle-management.md) . Kayıt yönetimi yerine veri yaşam döngüsü yönetimi için bekletme etiketlerini kullanmaya yönelik yeni, tanımlanmış bir senaryo.
-- [Arşiv posta kutuları hakkında bilgi edinin](archive-mailboxes.md) - yeni, yeniden yapılandırmayı desteklemek için daha önce "Arşiv posta kutularını etkinleştirme" makalesinde yer alan kavramsal bilgileri içerir.
-
-### <a name="microsoft-priva"></a>Microsoft Priva
-
-- [Gizlilik yönetimi artık Microsoft Priva](/privacy/priva/priva-overview)- ürünü ve çözümlerini, Priva Gizlilik Risk Yönetimi ve Priva Konu Hakkı Talepleri yeniden üretecek şekilde güncelleştirildi.
-
-### <a name="sensitivity-labels"></a>Duyarlılık etiketleri
-
-- Artık önizleme aşamasında olan yeni [rol grupları ve rolleri](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels) için destek.
-- Otomatik etiketleme ilkeleri için yeni [izleme özellikleri](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) .
-- Şimdi kullanıma sunulacak: mevcut belgeler için varsayılan etiket ve Web üzerinde Office için gerekçe metni.
-- Temmuz Semi-Annual Enterprise Channel için sürüm 2202+ ile duyuruldu: Outlook için birlikte yazma ve denetim.

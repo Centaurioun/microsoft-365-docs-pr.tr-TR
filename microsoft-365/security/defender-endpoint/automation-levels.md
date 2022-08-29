@@ -10,7 +10,7 @@ ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/20/2022
+ms.date: 08/22/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: fb7c4ee03c5391b12beb3d716b7817a880878af5
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
+ms.openlocfilehash: 787b636ec3834d258125e724be63aa9487c99081
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912586"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450113"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Otomatik araştırma ve düzeltme özelliklerindeki otomasyon düzeyleri
 
@@ -59,7 +59,7 @@ ms.locfileid: "66912586"
 
 - Uç Nokta için Defender ile yeni kiracılar (16 Ağustos 2020 veya sonrasında oluşturulan kiracıları içerir) varsayılan olarak tam otomasyona ayarlanır.
 
-- [İş için Defender](../defender-business/compare-mdb-m365-plans.md) varsayılan olarak tam otomasyonu kullanır. İş için Defender, cihaz gruplarını İş için Defender ile aynı şekilde kullanmaz. Bu nedenle, tam otomasyon açık ve İş için Defender'daki tüm cihazlara uygulanır.
+- [İş için Defender](../defender-business/compare-mdb-m365-plans.md) varsayılan olarak tam otomasyonu kullanır. İş için Defender, cihaz gruplarını Uç Nokta için Defender ile aynı şekilde kullanmaz. Bu nedenle, tam otomasyon açık ve İş için Defender'daki tüm cihazlara uygulanır.
 
 - Güvenlik ekibiniz bir otomasyon düzeyine sahip cihaz grupları tanımladıysa, bu ayarlar dağıtılan yeni varsayılan ayarlar tarafından değiştirilmez.
 

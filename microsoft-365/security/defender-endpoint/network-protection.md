@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 08/08/2022
+ms.date: 08/12/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -19,12 +19,12 @@ ms.topic: overview
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.openlocfilehash: c59e4a7a7eb3c7fcf6bb623385382c3e453a3790
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: bb4b0cb1c38fc394d5dfb2ec0498ba72b23e8754
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281695"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388561"
 ---
 # <a name="protect-your-network"></a>Ağınızı koruyun
 
@@ -57,13 +57,11 @@ Ağ koruması Windows 10 veya 11 (Pro veya Enterprise), Windows Server sürüm 1
 
 | Windows sürümü | Microsoft Defender Virüsten Koruma |
 |:---|:---|
-| Windows 10 sürüm 1709 veya üzeri <br> Windows 11 <br> Windows Server 1803 veya üzeri | [Microsoft Defender Virüsten Koruma gerçek zamanlı koruma](configure-real-time-protection-microsoft-defender-antivirus.md) <br> ve [bulut tabanlı koruma](enable-cloud-protection-microsoft-defender-antivirus.md) etkinleştirilmelidir (etkin)|
+| Windows 10 sürüm 1709 veya üzeri <br/> Windows 11 <br/> Windows Server 1803 veya üzeri | [Microsoft Defender Virüsten Koruma'nın gerçek zamanlı koruma](configure-real-time-protection-microsoft-defender-antivirus.md) ve [bulut tabanlı korumanın](enable-cloud-protection-microsoft-defender-antivirus.md) etkinleştirildiğinden (etkin) emin olun. |
 
 ## <a name="why-network-protection-is-important"></a>Ağ koruması neden önemlidir?
 
-Ağ koruması, Uç Nokta için Microsoft Defender'deki saldırı yüzeyi azaltma çözümleri grubunun bir parçasıdır. Ağ koruması, engelleyici URL'lerin ve IP adreslerinin ağ katmanını etkinleştirir. Ağ koruması, belirli tarayıcılar ve standart ağ bağlantıları kullanılarak URL'lere erişilebileceğini engelleyebilir.
-
-Varsayılan olarak, ağ koruması, Microsoft Edge tarayıcısında SmartScreen'e benzer şekilde kötü amaçlı URL'leri engelleyen SmartScreen akışını kullanarak bilgisayarlarınızı bilinen kötü amaçlı URL'lerden korur. Ağ koruma işlevselliği şu şekilde genişletilebilir:
+Ağ koruması, Uç Nokta için Microsoft Defender'deki saldırı yüzeyi azaltma çözümleri grubunun bir parçasıdır. Ağ koruması, engelleyici URL'lerin ve IP adreslerinin ağ katmanını etkinleştirir. Ağ koruması, belirli tarayıcılar ve standart ağ bağlantıları kullanılarak URL'lere erişilebileceğini engelleyebilir. Varsayılan olarak, ağ koruması, Microsoft Edge tarayıcısında SmartScreen'e benzer şekilde kötü amaçlı URL'leri engelleyen SmartScreen akışını kullanarak bilgisayarlarınızı bilinen kötü amaçlı URL'lerden korur. Ağ koruma işlevselliği şu şekilde genişletilebilir:
 
 - Kendi tehdit bilgilerinizden ([göstergeler](indicator-ip-domain.md)) IP/URL adreslerini engelleme
 - Microsoft Defender for Cloud Apps (eski [adıyla Microsoft Cloud App Security](/defender-cloud-apps/what-is-defender-for-cloud-apps)) tasdik edilmemiş hizmetleri engelleme
@@ -122,10 +120,10 @@ Kullanıcı bir web sitesini ziyaret eder:
   - **Engellemeyi kaldırma** - Kullanıcının site erişimi kazanmak için Windows Defender Güvenlik Bilgileri (WDSI) portalına erişmesi gerekmez. Kullanıcı 24 saat boyunca siteye erişebilir; bu noktada blok 24 saat daha yeniden kullanılabilir. Kullanıcı, yönetici siteyi yasaklayana (engelleyene) kadar siteye erişmek için **Engellemeyi** Kaldır'ı kullanmaya devam edebilir ve böylece **Engellemeyi Kaldırma** seçeneğini kaldırır.
   - **Geri Bildirim** - Bildirim, kullanıcıya, siteye erişimi gerekçelendirmek amacıyla yöneticiye geri bildirim göndermek için kullanabileceği bir bilet gönderme bağlantısı sunar.
 
-  > [!div class="mx-imgBorder"]
-  > ![Ağ koruması kimlik avı içeriği uyarı bildirimini gösterir](images/network-protection-phishing-warn-2.png)
+    :::image type="content" source="images/network-protection-phishing-warn-2.png" alt-text="Ağ koruması kimlik avı içeriği uyarı bildirimini gösterir.":::
 
-  > [NOT!] Burada uyarı deneyimi ve engelleme deneyimi için gösterilen görüntüler (aşağıda) her ikisinde de örnek yer tutucu metin olarak **"engellenen URL"** listelenir; çalışma ortamında gerçek URL veya etki alanı listelenir.  
+  > [!NOTE]
+  > Burada uyarı deneyimi ve engelleme deneyimi için gösterilen görüntüler (aşağıda) her ikisinde de örnek yer tutucu metin olarak **"engellenen URL"** listelenir; çalışma ortamında gerçek URL veya etki alanı listelenir.  
 
 #### <a name="block-experience"></a>Blok deneyimi
 
@@ -134,9 +132,8 @@ Kullanıcı bir web sitesini ziyaret eder:
 - URL'nin kötü bir ünü varsa, kullanıcıya aşağıdaki seçenekleri içeren bir bildirim sunulur:
   - **Tamam** Bildirim yayımlanır (kaldırılır) ve siteye erişim girişimi sona erer.
   - **Geribildirim** Bildirimde kullanıcıya, siteye erişimi gerekçelendirmek amacıyla yöneticiye geri bildirim göndermek için kullanabileceği bir bilet gönderme bağlantısı bulunur.
-  
-  > [!div class="mx-imgBorder"]
-  > ![ Ağ koruması bilinen kimlik avı içeriği engellendi bildirimini gösterir](images/network-protection-phishing-blocked.png)
+
+    :::image type="content" source="images/network-protection-phishing-blocked.png" alt-text="Bilinen kimlik avı içeriği engellendi bildirimini gösteren ağ koruması." lightbox="images/network-protection-phishing-blocked.png":::
 
 ### <a name="network-protection-c2-detection-and-remediation"></a>Ağ koruması: C2 algılama ve düzeltme
 
@@ -148,17 +145,11 @@ Komut ve Denetim sunucuları (C2) desteği bu fidye yazılımı evriminin öneml
 
 Uç Nokta için Defender göstergelerindeki yeni bir özellik, yöneticilerin son kullanıcıların bazı URL'ler ve IP'ler için oluşturulan uyarıları atlamasına olanak tanır. URL'nin neden engellendiğine bağlı olarak, bir SmartScreen bloğuyla karşılaşıldığında yöneticilere sitenin engellemesini 24 saate kadar kaldırma olanağı sunabilir. Bu gibi durumlarda, son kullanıcının tanımlı süre boyunca URL veya IP **engelini kaldırmasına** izin verecek bir Windows Güvenliği bildirim görüntülenir.  
 
- > [!div class="mx-imgBorder"]
- > ![Ağ koruması için Windows Güvenliği bildirimi](images/network-protection-smart-screen-block-notification.png)
+:::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Ağ koruması için Windows Güvenliği bildirimi.":::
 
 Uç Nokta için Microsoft Defender Yöneticiler, aşağıdaki yapılandırma aracını kullanarak [Microsoft 365 Defender](https://security.microsoft.com/) SmartScreen Engellemesini Kaldırma işlevini yapılandırabilir. Microsoft 365 Defender portalından ConfigToolName yoluna gidin.
 
-<!-- Hide {this intro with no subsequent list items}
-[Line 171: Delete the colon and the right angle-brackets. The resulting sentence will be "From the [MS365 Defender] portal, navigate to path to ConfigToolName." Delete "to" and add "the" before path unless a specific description is available. Would a screenshot help? Normally angle brackets or arrows are used in place of certain text rather than in addition.]
--->
-
- > [!div class="mx-imgBorder"]
- > ![Ağ koruması SmartScreen blok yapılandırması ULR ve IP formu](images/network-protection-smart-screen-block-configuration.png)
+:::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="Ağ koruması SmartScreen blok yapılandırması ULR ve IP formu.":::
 
 ## <a name="using-network-protection"></a>Ağ korumasını kullanma
 
@@ -168,6 +159,8 @@ Ağ koruması cihaz başına etkinleştirilir ve bu genellikle yönetim altyapı
 > Ağ korumasını etkinleştirmek için Microsoft Defender Virüsten Koruma'nın etkin olması gerekir.
 
 Ağ korumasını **Denetim** modunda veya **Blok** modunda etkinleştirebilirsiniz. IP adreslerini veya URL'leri engellemeden önce ağ korumasını etkinleştirmenin etkisini değerlendirmek istiyorsanız, engellenecek veriler hakkında veri toplamak için bir süre denetim modunda ağ korumasını etkinleştirebilirsiniz. Son kullanıcılar ağ koruması tarafından engellenecek bir adrese veya siteye bağlandığında denetim modu günlükleri.
+
+Linux ve macOS için ağ koruması hakkında bilgi için bkz. [Linux için ağ koruması](network-protection-linux.md) ve [MacOS için Ağ koruması](network-protection-macos.md).
 
 ## <a name="advanced-hunting"></a>Gelişmiş avcılık örneği
 
@@ -186,8 +179,8 @@ DeviceEvents
 
 ```
 
- > [!div class="mx-imgBorder"]
- > ![Olayları denetleme ve tanımlama için gelişmiş avcılık](images/network-protection-advanced-hunting.png)
+
+:::image type="content" source="images/network-protection-advanced-hunting.png" alt-text="Olayları denetlemek ve tanımlamak için gelişmiş avcılık." lightbox="images/network-protection-advanced-hunting.png":::
 
 > [!TIP]
 > Bu girdilerin **AdditionalFields** sütunundaki veriler, eylemle ilgili harika bilgiler sağlar. **AdditionalFields'i** genişletirseniz **IsAudit**, **ResponseCategory** ve **DisplayName** alanlarını da alabilirsiniz.
@@ -308,7 +301,7 @@ Windows 10 Enterprise çok kullanıcılı yapısı nedeniyle aşağıdaki noktal
 
 ### <a name="alternative-option-for-network-protection"></a>Ağ koruması için alternatif seçenek
 
-Azure'da Windows Sanal Masaüstü'nde kullanılan Windows 10 Enterprise Çoklu Oturum 1909 ve üstü için, Microsoft Edge için ağ koruması aşağıdaki yöntem kullanılarak etkinleştirilebilir:
+Azure'da Windows Sanal Masaüstü'nde kullanılan Windows Server sürüm 1803 veya üzeri ile Çok Oturumlu 1909 ve üzeri Windows 10 Enterprise için, Microsoft Edge için ağ koruması aşağıdaki yöntem kullanılarak etkinleştirilebilir:
 
 1. [Ağ korumasını aç'ı](enable-network-protection.md) kullanın ve ilkenizi uygulamak için yönergeleri izleyin.
 
@@ -334,3 +327,5 @@ Ağ koruması artık Blok modunun SmartScreen tarafından doğrulandıktan ve iz
 - [Ağ koruma | değerlendirme](evaluate-network-protection.md) Özelliğin nasıl çalıştığını ve genellikle hangi olayların oluşturulacağını gösteren hızlı bir senaryoyu üstlenin.
 - [Ağ korumasını etkinleştirme](enable-network-protection.md) | Ağınızda ağ korumasını etkinleştirmek ve yönetmek için grup ilkesi, PowerShell veya MDM CSP'lerini kullanın.
 - [Microsoft Intune'de saldırı yüzeyi azaltma özelliklerini yapılandırma](/mem/intune/protect/endpoint-security-asr-policy)
+- [Linux | için ağ koruması](network-protection-linux.md) Linux cihazları için Microsoft Ağ koruması kullanma hakkında bilgi edinmek için.
+- [MacOS | için ağ koruması](network-protection-macos.md) MacOS için Microsoft Ağ koruması hakkında daha fazla bilgi edinmek için

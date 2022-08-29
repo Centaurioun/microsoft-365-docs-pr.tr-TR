@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bf23036c48952991253ea3a211ebdeb571c98e5f
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 67d1f15ef79f932ad8515d8c8f6b5339845eb4f4
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276984"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67444932"
 ---
 # <a name="migrating-servers-from-microsoft-monitoring-agent-to-the-unified-solution"></a>Sunucuları Microsoft Monitoring Agent'tan birleşik çözüme geçirme
 
@@ -46,9 +46,9 @@ Listelenen önkoşulları yükleme hakkında daha fazla bilgi için [ilgili konu
 MeCM ile diğer uygulamaları dağıttığınız içerik kaynağına birleştirilmiş çözüm paketini, ekleme betiğini ve geçiş betiğini kopyalayın.
 
 1. [Microsoft 365 Defender ayarları sayfasından](https://sip.security.microsoft.com/preferences2/onboarding) Ekleme Betiği'ni ve birleşik çözümü indirin.
-
-   :::image type="content" source="images/onboarding-script.png" alt-text="Ekleme betiği ve birleşik çözüm indirme işleminin ekran görüntüsü." lightbox="images/onboarding-script.png":::
-      
+   :::image type="content" source="images/onboarding-script.png" alt-text="Ekleme betiği ve birleşik çözüm indirme işleminin ekran görüntüsü" lightbox="images/onboarding-script.png":::
+   > [!Note]
+   > .cmd dosyasını almak için Dağıtım yöntemi açılan listesinden grup ilkesi seçmeniz gerekir.
 2. Geçiş betiğini belgeden indirin: [Önceki MMA tabanlı Uç Nokta için Microsoft Defender çözümünden sunucu geçişi senaryoları](server-migration.md). Bu betik GitHub'da da bulunabilir: [GitHub - microsoft/mdefordownlevelserver](https://github.com/microsoft/mdefordownlevelserver).
 3. Üç dosyayı da MECM tarafından kullanılan paylaşılan bir klasöre Yazılım Kaynağı olarak kaydedin.
 
@@ -58,17 +58,14 @@ MeCM ile diğer uygulamaları dağıttığınız içerik kaynağına birleştiri
 
 1. MECM konsolunda şu adımları izleyin: **Yazılım Kitaplığı>Uygulamalar>Uygulama Oluşturma**.
 2. **Uygulama bilgilerini el ile belirtin'i** seçin.
-   
    :::image type="content" source="images/manual-application-information.png" alt-text="Uygulama bilgileri seçimini el ile belirtme işleminin ekran görüntüsü." lightbox="images/manual-application-information.png":::
-   
 3. Sihirbazın Yazılım Merkezi ekranında **İleri'yi** seçin.
 4. Dağıtım Türleri'nin üzerinde **Ekle'ye** tıklayın.
 5. **Dağıtım türü bilgilerini belirtmek için El ile'yi** ve **ardından İleri'yi** seçin.
 6. Betik dağıtımınıza bir ad verin ve **İleri'yi** seçin.
 
    :::image type="content" source="images/manual-deployment-information.png" alt-text="Betik dağıtım bilgilerini belirten ekran görüntüsü.":::
-     
-7. Bu adımda, içeriğinizin bulunduğu UNC yolunu kopyalayın. Örnek: `\\Cm1\h$\SOFTWARE_SOURCE\UAmigrate`.
+7. Bu adımda, içeriğinizin bulunduğu UNC yolunu kopyalayın. Örnek: `\\ServerName\h$\SOFTWARE_SOURCE\path`.
 
    :::image type="content" source="images/deployment-type-wizard.png" alt-text="UNC yol kopyalamayı gösteren ekran görüntüsü.":::
   
@@ -81,21 +78,21 @@ MeCM ile diğer uygulamaları dağıttığınız içerik kaynağına birleştiri
       **İleri'ye** tıklayın ve bu bölümde kendi Çalışma Alanı Kimliğinizi eklediğinizden emin olun.
 9. **İleri'ye** tıklayın ve yan tümce ekle'ye tıklayın.
 10. Algılama yöntemi aşağıda gösterilen kayıt defteri anahtarını temel alır.
-      `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense\ImagePath`
+      `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense`
 
       Şu seçeneği işaretleyin: **Bu uygulamanın var olduğunu belirtmek için hedef sistemde bu kayıt defteri ayarının çıkması gerekir.**
 
-    :::image type="content" source="images/detection-wizard.png" alt-text="Algılama türü sihirbazını gösteren ekran görüntüsü":::
+      :::image type="content" source="images/detection-wizard.png" alt-text="Algılama türü sihirbazını gösteren ekran görüntüsü":::
 
       >[!TIP]
-      >Bu kayıt defteri anahtarı değeri, birleşik çözümün yüklü olduğu bir cihazda aşağıda gösterilen Powershell komutu çalıştırılarak elde edildi. Diğer yaratıcı algılama yöntemleri de kullanılabilir. Amaç, birleşik çözümün belirli bir cihaza önceden yüklenmiş olup olmadığını belirlemektir.
+      >Kayıt defteri anahtarı değeri, birleşik çözümün yüklü olduğu bir cihazda aşağıda gösterilen Powershell komutu çalıştırılarak elde edildi. Diğer yaratıcı algılama yöntemleri de kullanılabilir. Amaç, birleşik çözümün belirli bir cihaza önceden yüklenmiş olup olmadığını belirlemektir. Değer ve Veri Türü alanlarını boş bırakabilirsiniz.
 
      ```powershell
       get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize 
      ```
 
 11. **Kullanıcı Deneyimi** bölümünde, ekran görüntüsünde gösterilen önerilen ayarları denetleyin. Ortamınıza uygun olanı seçip **İleri'ye** tıklayabilirsiniz. **Yükleme programı görünürlüğü** için aşama testi sırasında **Normal** ile yüklemeniz ve ardından genel dağıtım için **simge durumuna küçültülmüş** olarak değiştirmeniz önerilir.
-     
+
      >[!TIP]
      >İzin verilen çalışma zamanı üst sınırı (varsayılan) 120 dakikadan 60 dakikaya düşürülebilir.
 

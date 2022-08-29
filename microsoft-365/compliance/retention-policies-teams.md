@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuz için Teams iletilerinin otomatik olarak tutulmasını veya silinmesini yönetebilmeniz için Microsoft Teams için geçerli olan Microsoft 365 bekletme ilkeleri hakkında bilgi edinin.
-ms.openlocfilehash: 00b8932c1d529a236a0d70f15443d1afa74c3213
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: da8275ff3a5792df3cbc72aea7b8e483a0a5f4f3
+ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037526"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67441828"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams için bekletme hakkında bilgi edinin
 
@@ -190,17 +190,13 @@ Teams'e Skype Kurumsal bir sohbet geldiğinde, teams sohbet yazışmasında bir 
 
 Ancak, konuşma geçmişi Skype Kurumsal için ve Skype Kurumsal istemci tarafından geçmişin bir posta kutusuna kaydedildiğini gösterirse, bu sohbet verileri teams saklama ilkesi tarafından işlenmez. Bu içerik için Skype Kurumsal için yapılandırılmış bir bekletme ilkesi kullanın.
 
-## <a name="meetings-and-external-users"></a>Toplantılar ve dış kullanıcılar
+## <a name="messages-and-external-users"></a>İletiler ve dış kullanıcılar
 
-Kanal toplantı iletileri, kanal iletileriyle aynı şekilde depolanır, bu nedenle bekletme ilkenizi yapılandırırken bu veriler için **Teams kanal iletileri** konumunu seçin.
+Kuruluşunuzun barındırtığı bir toplantıya veya sohbete dış kullanıcılar dahil edildiğinde:
 
-Anlık ve zamanlanmış toplantı iletileri grup sohbeti iletileriyle aynı şekilde depolanır, bu nedenle bu veriler için bekletme ilkenizi yapılandırırken **Teams sohbetleri** konumunu seçin.
+- Dış kullanıcı kiracınızda bir konuk hesabı kullanarak katılırsa, tüm Teams iletileri hem kullanıcılarınızın posta kutusunda hem de konuk hesabına verilen gölge posta kutusunda depolanır. Ancak, saklama ilkeleri, konumun tamamı için bir bekletme ilkesine dahil olarak bildirilse de (bazen "kuruluş genelinde ilke" olarak da bilinir) gölge posta kutuları için desteklenmez.
 
-Kuruluşunuzun barındır olduğu bir toplantıya dış kullanıcılar dahil edildiğinde:
-
-- Dış kullanıcı kiracınızda bir konuk hesabı kullanarak katılırsa, toplantıdan gelen iletiler hem kullanıcılarınızın posta kutusunda hem de konuk hesabına verilen gölge posta kutusunda depolanır. Ancak, saklama ilkeleri, konumun tamamı için bir bekletme ilkesine dahil olarak bildirilse de (bazen "kuruluş genelinde ilke" olarak da bilinir) gölge posta kutuları için desteklenmez.
-
-- Dış kullanıcı başka bir Microsoft 365 kuruluşundan bir hesap kullanarak katılırsa, bekletme ilkeleriniz bu kullanıcının başka bir kiracıdaki posta kutusunda depolandığından iletileri silemez. Ancak aynı toplantı için bekletme ilkeleriniz kullanıcılarınız için iletileri silebilir.
+- Dış kullanıcı başka bir Microsoft 365 kuruluşundan bir hesap kullanarak katılırsa, bekletme ilkeleriniz bu kullanıcının başka bir kiracıdaki posta kutusunda depolandığından iletileri silemez. Ancak aynı toplantı veya sohbet için bekletme ilkeleriniz kullanıcılarınız için iletileri silebilir.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Kullanıcı kuruluştan ayrıldığında 
 

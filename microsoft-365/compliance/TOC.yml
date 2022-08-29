@@ -28,33 +28,33 @@
       href: plan-for-security-and-compliance.md
     - name: Uyumluluk genişletilebilirliği
       href: compliance-extensibility.md
-- name: Çapraz çözüm özellikleri
+- name: Microsoft Purview için cihazları ekleme
   items:
-    - name: Windows 10 ve Windows 11 cihazlarının katılımı
+    - name: Windows cihazlarını ekleme
       items:
-        - name: Windows 10 ve Windows 11 cihazlarının Microsoft 365'e katılımına genel bakış
+        - name: Genel bakış
           href: device-onboarding-overview.md
-        - name: Grup Politikası aracılığıyla Windows 10 ve Windows 11 cihazlarının katılımı
-          href: device-onboarding-gp.md
-        - name: Mobil Cihaz Yönetimi araçlarını kullanan Windows 10 ve Windows 11 cihazlarının katılımı
+        - name: Intune
           href: device-onboarding-mdm.md
-        - name: Yapılandırma Yöneticisi kullanan Windows 10 ve Windows 11 cihazlarının katılımı
+        - name: Yapılandırma Yöneticisi
           href: device-onboarding-sccm.md
-        - name: Yerel bir komut dosyası kullanan Windows 10 ve Windows 11 cihazlarının katılımı
+        - name: Grup İlkesi
+          href: device-onboarding-gp.md
+        - name: Yerel betik
           href: device-onboarding-script.md
-        - name: Kalıcı olmayan sanal masaüstü altyapısı (VDI) cihazlarının katılımı
+        - name: Kalıcı olmayan sanal masaüstü altyapısı (VDI)
           href: device-onboarding-vdi.md
     - name: macOS cihazlarının katılımı
       items:
-        - name: macOS cihazlarının Microsoft 365'e katılımına genel bakış
+        - name: Genel bakış
           href: device-onboarding-macos-overview.md
-        - name: macOS cihazlarının Microsoft Intune kullanarak Uyumluluk çözümlerine katılımı ve çıkarılması
+        - name: Intune
           href: device-onboarding-offboarding-macos-intune.md
-        - name: macOS cihazlarının Uç Nokta için Microsoft Defender müşterileri için Intune kullanarak Uyumluluk çözümlerine katılımı ve çıkarılması
+        - name: Uç Nokta için Microsoft Defender için Intune
           href: device-onboarding-offboarding-macos-intune-mde.md
-        - name: macOS cihazlarının JAMF Pro kullanarak Uyumluluk çözümlerine katılımı ve çıkarılması
+        - name: JAMF Pro
           href: device-onboarding-offboarding-macos-jamfpro.md
-        - name: macOS cihazlarının Uç Nokta için Microsoft Defender müşterileri için JAMF Pro kullanarak Uyumluluk çözümlerine katılımı ve çıkarılması
+        - name: Uç Nokta için Microsoft Defender müşterileri için JAMF Pro
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: Üçüncü taraf verileri için bağlayıcıları yönetme
   items:
@@ -98,8 +98,6 @@
           href: archive-eml-data.md
         - name: FX Connect
           href: archive-fxconnect-data.md
-        - name: Jive
-          href: archive-jive-data.md
         - name: MS SQL Veritabanı
           href: archive-mssqldatabaseimporter-data.md
         - name: Pivot
@@ -328,18 +326,38 @@
           items:
             - name: Özel bir hassas bilgi türü oluşturma - Uyumluluk Merkezi
               href: create-a-custom-sensitive-information-type.md
-            - name: Tam veri eşleşmesine dayalı hassas bilgi türlerini kullanmaya başlama
-              href: sit-get-started-exact-data-match-based-sits-overview.md
-            - name: Tam veri eşleşmesine dayalı hassas bilgi türleri için kaynak verilerini dışa aktarma
-              href: sit-get-started-exact-data-match-export-data.md
-            - name: Tam veri eşleşmesine dayalı hassas bilgi türleri için tam veri eşleşmesi şeması oluşturma
-              href: sit-get-started-exact-data-match-create-schema.md
-            - name: Tam veri eşleşmeli hassas bilgi türleri için hassas bilgi kaynak tablosu karması oluşturma ve karşıya yükleme
-              href: sit-get-started-exact-data-match-hash-upload.md
-            - name: Tam veri eşleşmesi hassas bilgi türü/kural paketi oluşturma
-              href: sit-get-started-exact-data-match-create-rule-package.md
-            - name: Tam veri eşleşmesi hassas bilgi türünü test etme
-              href: sit-get-started-exact-data-match-test.md
+            - name: EDM SIT'leri oluşturma
+              items:
+                - name: EDM SITS'i kullanmaya başlama
+                  href: sit-get-started-exact-data-match-based-sits-overview.md
+                - name: EDM SIT yeni deneyimi oluşturma
+                  items:
+                    - name: EDM SIT iş akışı yeni deneyimi oluşturma
+                      href: sit-create-edm-sit-unified-ux-workflow.md
+                    - name: Kaynak verileri dışarı aktarma
+                      href: sit-get-started-exact-data-match-export-data.md
+                    - name: Yeni deneyim için EDM SIT örnek dosyası oluşturma
+                      href: sit-create-edm-sit-unified-ux-sample-file.md
+                    - name: EDM SIT şeması ve kural paketi oluşturma yeni deneyimi
+                      href: sit-create-edm-sit-unified-ux-schema-rule-package.md
+                    - name: EDM klasik deneyimi için hassas bilgi kaynağı tablosunu karma hale getirmek ve karşıya yüklemek
+                      href: sit-get-started-exact-data-match-hash-upload.md
+                    - name: EDM hassas bilgi türünü test edin
+                      href: sit-get-started-exact-data-match-test.md
+                - name: EDM SIT klasik deneyimi oluşturma
+                  items:
+                    - name: Tam EDM SIT iş akışı klasik deneyimi oluşturma
+                      href: sit-create-edm-sit-classic-ux-workflow.md
+                    - name: Kaynak verileri dışarı aktarma
+                      href: sit-get-started-exact-data-match-export-data.md
+                    - name: EDM klasik deneyimi için şema oluşturma
+                      href: sit-get-started-exact-data-match-create-schema.md
+                    - name: EDM klasik deneyimi için hassas bilgi kaynağı tablosunu karma hale getirmek ve karşıya yüklemek
+                      href: sit-get-started-exact-data-match-hash-upload.md
+                    - name: Tam veri eşleşmesi hassas bilgi türü/kural paketi oluşturma
+                      href: sit-get-started-exact-data-match-create-rule-package.md
+                    - name: EDM hassas bilgi türünü test edin
+                      href: sit-get-started-exact-data-match-test.md
         - name: Hassas bilgi türlerini kullanma
           items:
             - name: Yerleşik hassas bilgi türünü özelleştirme
@@ -836,6 +854,8 @@
                   href: sit-defn-norway-identification-number.md
                 - name: Norveç fiziksel adresleri
                   href: sit-defn-norway-physical-addresses.md
+                - name: Filipinler pasaport numarası
+                  href: sit-defn-philippines-passport-number.md
                 - name: Filipinler birleşik çok amaçlı kimlik numarası
                   href: sit-defn-philippines-unified-multi-purpose-identification-number.md
                 - name: Polonya ehliyet numarası
@@ -862,6 +882,8 @@
                   href: sit-defn-portugal-physical-addresses.md
                 - name: Portekiz vergi kimlik numarası
                   href: sit-defn-portugal-tax-identification-number.md
+                - name: Katar kimlik kartı numarası
+                  href: sit-defn-qatari-id-card-number.md
                 - name: Romanya ehliyet numarası
                   href: sit-defn-romania-drivers-license-number.md
                 - name: Romanya pasaport numarası
@@ -984,6 +1006,8 @@
               href: sit-functions.md
             - name: Özel hassas bilgi türü filtreleri referansı
               href: sit-custom-sit-filters.md
+            - name: Hassas bilgi türü sınırları
+              href: sit-limits.md
     - name: Eğitilebilir sınıflandırıcılar
       items:
         - name: Eğitilebilir sınıflandırıcılar hakkında daha fazla bilgi edinme
@@ -1032,6 +1056,8 @@
       items:
         - name: Şifrelemeyi anlama
           href: encryption.md
+        - name: yapılandırmaları Azure AD
+          href: encryption-azure-ad-configuration.md
         - name: Çift Anahtarlı Şifreleme (DKE)
           href: double-key-encryption.md
         - name: Çift Anahtarlı Şifreleme SSS
@@ -1185,6 +1211,8 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Veri Kaybı Önleme ilkesi ipuçları referansı
               href: dlp-policy-tips-reference.md
+            - name: DLP Uyarılarını Paylaşma (önizleme)
+              href: dlp-share-alerts.md
 - name: Veri yaşam döngüsünü ve kayıtlarını yönetme
   items:
     - name: Bilgilerinizi yönetme
@@ -1201,7 +1229,7 @@
           items:
             - name: SharePoint ve OneDrive
               href: retention-policies-sharepoint.md
-            - name: Microsoft Teams
+            - name: Teams
               href: retention-policies-teams.md
             - name: Yammer
               href: retention-policies-yammer.md
@@ -1679,6 +1707,8 @@
           href: compliance-manager-templates-list.md
         - name: İyileştirme eylemleriyle çalışma
           href: compliance-manager-improvement-actions.md
+        - name: İyileştirme eylemlerini güncelleştirme
+          href: compliance-manager-update-actions.md
         - name: Uyarı ilkeleri oluşturma ve yönetme
           href: compliance-manager-alert-policies.md
         - name: Uyumluluk puanınızı hesaplama

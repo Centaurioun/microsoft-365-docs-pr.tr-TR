@@ -1,7 +1,7 @@
 ---
-title: Microsoft Endpoint Configuration Manager kullanarak işe Microsoft Endpoint Configuration Manager
-description: Microsoft Endpoint Configuration Manager kullanarak Uç Nokta için Microsoft Defender'e nasıl Microsoft Endpoint Configuration Manager öğrenin
-keywords: ekleme, yapılandırma, dağıtma, dağıtım, uç nokta yapılandırma yöneticisi, Uç Nokta için Microsoft Defender, koleksiyon oluşturma, uç nokta algılama yanıtı, yeni nesil koruma, saldırı yüzeyini azaltma, microsoft uç nokta yapılandırma yöneticisi
+title: Microsoft Endpoint Configuration Manager aracılığı ile katılım
+description: Microsoft Endpoint Configuration Manager kullanarak Uç Nokta için Microsoft Defender eklemeyi öğrenin
+keywords: ekleme, yapılandırma, dağıtma, dağıtım, uç nokta yapılandırma yöneticisi, Uç Nokta için Microsoft Defender, koleksiyon oluşturma, uç nokta algılama yanıtı, yeni nesil koruma, saldırı yüzeyi azaltma, microsoft uç nokta yapılandırma yöneticisi
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,100 +18,100 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b8847fb9132ee037a3103bf86aabd14d21fb482f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: e4ddd903047fd3bdb2fb8c77019c83721fbe156f
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469437"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387407"
 ---
-# <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager kullanarak işe Microsoft Endpoint Configuration Manager
+# <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager aracılığı ile katılım
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Bu deneyimi Uç Nokta için Microsoft Defender? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Bu makale, Dağıtım kılavuzunda yer almaktadır ve örnek bir ekleme yöntemi olarak hareket almaktadır.
+Bu makale Dağıtım kılavuzunun bir parçasıdır ve örnek ekleme yöntemi olarak görev yapar.
 
-Planlama [başlığında](deployment-strategy.md) , cihazları hizmete eklemeye için çeşitli yöntemler sağlanmıştır. Bu konu birlikte yönetim mimarisini kapsar.
+[Planlama](deployment-strategy.md) konusunda, cihazları hizmete eklemek için çeşitli yöntemler sağlanmıştır. Bu konu, ortak yönetim mimarisini kapsar.
 
-:::image type="content" source="images/co-management-architecture.png" alt-text="Yerel bulut mimarisi" lightbox="images/co-management-architecture.png":::
-*Ortam mimarisi diyagramı*
+:::image type="content" source="images/co-management-architecture.png" alt-text="Buluta özel mimari" lightbox="images/co-management-architecture.png":::
+*Ortam mimarileri diyagramı*
 
-Uç Nokta için Defender çeşitli uç noktaların ve araçların onboarding'i destekler ama bu makale bunları desteklemez. Diğer desteklenen dağıtım araçları ve yöntemleri kullanılarak genel ekleme hakkında bilgi için bkz. [Eklemeye genel bakış](onboarding.md).
+Uç Nokta için Defender çeşitli uç noktaların ve araçların eklenip eklenmediğini desteklese de, bu makale bunları kapsamaz. Desteklenen diğer dağıtım araçlarını ve yöntemlerini kullanarak genel ekleme hakkında bilgi için bkz. [Eklemeye genel bakış](onboarding.md).
 
-Bu konu başlığı, kullanıcıları şu konuda yönlendirmektedir:
+Bu konu, kullanıcılara şu konuda yol gösterir:
 
-- 1. Adım: Windows cihazları hizmete ekleme
-- 2. Adım: Defender'ı Uç nokta özellikleri için yapılandırma
+- 1. Adım: Windows cihazlarını hizmete ekleme
+- 2. Adım: Uç Nokta için Defender özelliklerini yapılandırma
 
-Bu ekleme kılavuzu, bu kılavuzu kullanırken atılması gereken aşağıdaki temel Microsoft Endpoint Configuration Manager:
+Bu ekleme kılavuzu, Microsoft Endpoint Configuration Manager kullanırken uygulamanız gereken aşağıdaki temel adımlarda size yol gösterecektir:
 
-- **Web'de koleksiyon Microsoft Endpoint Configuration Manager**
-- **Özellikleri Uç Nokta için Microsoft Defender özelliklerini Microsoft Endpoint Configuration Manager**
+- **Microsoft Endpoint Configuration Manager'da koleksiyon oluşturma**
+- **Microsoft Endpoint Configuration Manager kullanarak Uç Nokta için Microsoft Defender özelliklerini yapılandırma**
 
 > [!NOTE]
-> Bu Windows dağıtımda yalnızca bu cihazlar ele amektedir.
+> Bu örnek dağıtımda yalnızca Windows cihazları ele alınmıştır.
 
-## <a name="step-1-onboard-windows-devices-using-microsoft-endpoint-configuration-manager"></a>1. Adım: Windows kullanarak cihazları Microsoft Endpoint Configuration Manager
+## <a name="step-1-onboard-windows-devices-using-microsoft-endpoint-configuration-manager"></a>1. Adım: Microsoft Endpoint Configuration Manager kullanarak Windows cihazlarını ekleme
 
 ### <a name="collection-creation"></a>Koleksiyon oluşturma
 
-Yeni Windows cihazlara Microsoft Endpoint Configuration Manager için, dağıtım var olan bir koleksiyonu hedef alan veya test amacıyla yeni bir koleksiyon oluşturulabilir.
+Windows cihazlarını Microsoft Endpoint Configuration Manager ile eklemek için dağıtım mevcut bir koleksiyonu hedefleyebilir veya test için yeni bir koleksiyon oluşturulabilir.
 
-Grup ilkesi veya el ile yöntem gibi araçların kullanımı, sisteme hiçbir aracı yüklemez.
+Grup ilkesi veya el ile yöntemi gibi araçları kullanarak ekleme işlemi sisteme herhangi bir aracı yüklemez.
 
-Oyun Microsoft Endpoint Configuration Manager konsolda ekleme işlemi, konsol içindeki uyumluluk ayarlarının bir parçası olarak yapılandırılır.
+Microsoft Endpoint Configuration Manager konsolunda, ekleme işlemi konsolundaki uyumluluk ayarlarının bir parçası olarak yapılandırılır.
 
-Bu gerekli yapılandırmayı alan tüm sistem, istemci yönetim noktasından bu Configuration Manager ilkeyi almaya devam ettiği sürece bu yapılandırmayı sürdürür.
+Bu gerekli yapılandırmayı alan tüm sistem, Configuration Manager istemcisi bu ilkeyi yönetim noktasından almaya devam ettikçe bu yapılandırmayı korur.
 
-Microsoft Endpoint Configuration Manager kullanarak uç noktaları ekleme için aşağıdaki Microsoft Endpoint Configuration Manager.
+Microsoft Endpoint Configuration Manager kullanarak uç noktaları eklemek için aşağıdaki adımları izleyin.
 
-1. Uygulama Microsoft Endpoint Configuration Manager Varlıklara ve **Uyumluluğuna Genel Bakış Cihaz \> Koleksiyonlarına \> gidin**.
+1. Microsoft Endpoint Configuration Manager konsolunda **Varlıklar ve Uyumluluğa \> Genel Bakış \> Cihaz Koleksiyonları'na** gidin.
 
     :::image type="content" source="images/configmgr-device-collections.png" alt-text="Microsoft Endpoint Configuration Manager sihirbazı1" lightbox="images/configmgr-device-collections.png":::
 
-2. Cihaz **Koleksiyonu'ne sağ tıklayın** ve Cihaz Koleksiyonu **Oluştur'u seçin**.
+2. **Cihaz Koleksiyonu'nu** sağ tıklatın ve **Cihaz Koleksiyonu Oluştur'u** seçin.
 
     :::image type="content" source="images/configmgr-create-device-collection.png" alt-text="Microsoft Endpoint Configuration Manager sihirbazı2" lightbox="images/configmgr-create-device-collection.png":::
 
-3. Bir Ad **ve Sınırlama** **Koleksiyonu girin,** ardından Sonraki'yi **seçin**.
+3. **Bir Ad** ve **Sınırlama Koleksiyonu** sağlayın ve **ardından İleri'yi** seçin.
 
-    :::image type="content" source="images/configmgr-limiting-collection.png" alt-text="Yeni Microsoft Endpoint Configuration Manager sihirbazı3" lightbox="images/configmgr-limiting-collection.png":::
+    :::image type="content" source="images/configmgr-limiting-collection.png" alt-text="Microsoft Endpoint Configuration Manager sihirbazı3" lightbox="images/configmgr-limiting-collection.png":::
 
-4. Kural **Ekle'yi ve** sonra Sorgu **Kuralı'nı seçin**.
+4. **Kural Ekle'yi** ve **ardından Sorgu Kuralı'nı** seçin.
 
-    :::image type="content" source="images/configmgr-query-rule.png" alt-text="En Microsoft Endpoint Configuration Manager sihirbazı4" lightbox="images/configmgr-query-rule.png":::
+    :::image type="content" source="images/configmgr-query-rule.png" alt-text="Microsoft Endpoint Configuration Manager sihirbazı4" lightbox="images/configmgr-query-rule.png":::
 
-5. Doğrudan **Üyelik** **Sihirbazı'nda Sonraki'ne tıklayın ve** sorgu deyimini **düzenle'ye tıklayın**.
+5. **Doğrudan Üyelik Sihirbazı'nda** **İleri'ye** ve **Sorgu Deyimini Düzenle'ye** tıklayın.
 
-    :::image type="content" source="images/configmgr-direct-membership.png" alt-text="Yeni Microsoft Endpoint Configuration Manager sihirbazı5" lightbox="images/configmgr-direct-membership.png":::
+    :::image type="content" source="images/configmgr-direct-membership.png" alt-text="Microsoft Endpoint Configuration Manager sihirbazı5" lightbox="images/configmgr-direct-membership.png":::
 
-6. **Ölçütler'i** seçin ve ardından yıldız simgesini seçin.
+6. **Ölçütler'i** ve ardından yıldız simgesini seçin.
 
-    :::image type="content" source="images/configmgr-criteria.png" alt-text="En Microsoft Endpoint Configuration Manager sihirbazı6" lightbox="images/configmgr-criteria.png":::
+    :::image type="content" source="images/configmgr-criteria.png" alt-text="Microsoft Endpoint Configuration Manager sihirbazı6" lightbox="images/configmgr-criteria.png":::
 
-7. Ölçüt türünü basit değer olarak **tutmak için İşletim** Sistemi **-** derleme numarası, **14393'e** eşit veya daha büyük olan işleç ve Tamam'a **tıklayın**.
+7. Ölçüt türünü **basit bir değer** olarak tutun, **İşletim Sistemi - derleme numarası**, işleç olarak **14393** **değerinden büyük veya buna eşit olan** işleci seçin ve **Tamam'a** tıklayın.
 
-    :::image type="content" source="images/configmgr-simple-value.png" alt-text="Yeni Microsoft Endpoint Configuration Manager sihirbazı7" lightbox="images/configmgr-simple-value.png":::
+    :::image type="content" source="images/configmgr-simple-value.png" alt-text="Microsoft Endpoint Configuration Manager sihirbazı7" lightbox="images/configmgr-simple-value.png":::
 
-8. **Sonraki'yi ve** **Kapat'ı seçin**.
+8. **İleri** ve **Kapat'ı** seçin.
 
-    :::image type="content" source="images/configmgr-membership-rules.png" alt-text="En Microsoft Endpoint Configuration Manager sihirbazı8" lightbox="images/configmgr-membership-rules.png":::
+    :::image type="content" source="images/configmgr-membership-rules.png" alt-text="Microsoft Endpoint Configuration Manager sihirbazı8" lightbox="images/configmgr-membership-rules.png":::
 
 9. **İleri**'yi seçin.
 
-    :::image type="content" source="images/configmgr-confirm.png" alt-text="Yeni Microsoft Endpoint Configuration Manager sihirbazı9" lightbox="images/configmgr-confirm.png":::
+    :::image type="content" source="images/configmgr-confirm.png" alt-text="Microsoft Endpoint Configuration Manager sihirbazı9" lightbox="images/configmgr-confirm.png":::
 
-Bu görevi tamamladıktan sonra, artık ortamdaki tüm en uç noktaları Windows bir cihaz koleksiyonunuz olur.
+Bu görevi tamamladıktan sonra, artık ortamdaki tüm Windows uç noktalarını içeren bir cihaz koleksiyonunuz olur.
 
-## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>2. Adım: Uç Nokta için Microsoft Defender yapılandırma
+## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>2. Adım: Uç Nokta için Microsoft Defender özelliklerini yapılandırma
 
-Bu bölüm, bilgisayar veya cihazlarınız için mobil cihazlarında Microsoft Endpoint Configuration Manager özellikleri Windows yardımcı olur:
+Bu bölüm, Windows cihazlarda Microsoft Endpoint Configuration Manager kullanarak aşağıdaki özellikleri yapılandırma konusunda size yol gösterir:
 
 - [**Uç nokta algılama ve yanıt**](#endpoint-detection-and-response)
 - [**Yeni nesil koruma**](#next-generation-protection)
@@ -121,76 +121,76 @@ Bu bölüm, bilgisayar veya cihazlarınız için mobil cihazlarında Microsoft E
 
 #### <a name="windows-10-and-windows-11"></a>Windows 10 ve Windows 11
 
-Microsoft 365 Defender portalının içinde, `.onboarding` System Center Configuration Manager'de ilkeyi oluşturmak için kullanılan ilkeyi indirebilir ve bu ilkeyi Windows 10 cihazlarında ve Windows 11 dağıtabilirsiniz.
+Microsoft 365 Defender portalından, ilkeyi `.onboarding` System Center Configuration Manager oluşturmak ve bu ilkeyi Windows 10 ve Windows 11 cihazlara dağıtmak için kullanılabilecek ilkeyi indirmek mümkündür.
 
-1. Bir Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalında,</a> Kullanıcı Ayarlar [ekleme'yi seçin](https://security.microsoft.com/preferences2/onboarding).
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalından</a> [Ayarlar'ı ve ardından Ekleme'yi](https://security.microsoft.com/preferences2/onboarding) seçin.
 
-2. Dağıtım yöntemi'nin altında desteklenen **Dağıtım Microsoft Endpoint Configuration Manager.**
+2. Dağıtım yöntemi'nin altında **Desteklenen Microsoft Endpoint Configuration Manager** sürümünü seçin.
 
-    :::image type="content" source="images/mdatp-onboarding-wizard.png" alt-text="Yeni Microsoft Endpoint Configuration Manager sihirbazı10" lightbox="images/mdatp-onboarding-wizard.png":::
+    :::image type="content" source="images/mdatp-onboarding-wizard.png" alt-text="Microsoft Endpoint Configuration Manager sihirbazı10" lightbox="images/mdatp-onboarding-wizard.png":::
 
-3. Paketi **indir'i seçin**.
+3. **Paketi indir'i** seçin.
 
-   :::image type="content" source="images/mdatp-download-package.png" alt-text="Sihirbaz Microsoft Endpoint Configuration Manager 11" lightbox="images/mdatp-download-package.png":::
+   :::image type="content" source="images/mdatp-download-package.png" alt-text="Microsoft Endpoint Configuration Manager sihirbazı11" lightbox="images/mdatp-download-package.png":::
 
 4. Paketi erişilebilir bir konuma kaydedin.
-5. Uygulama Microsoft Endpoint Configuration Manager: **Microsoft Defender ATP İlkelerine Genel > Ve Uyumluluk > Endpoint Protection >'ne gidin**.
+5. Microsoft Endpoint Configuration Manager'da: **Varlıklar ve Uyumluluk > Genel Bakış > Endpoint Protection > Microsoft Defender ATP İlkeleri'ne** gidin.
 
-6. **Microsoft Defender ATP İlkeleri'ne sağ tıklayın ve** **Microsoft Defender ATP İlkesi Oluştur'u seçin**.
+6. **Microsoft Defender ATP İlkeleri'ne** sağ tıklayın ve **Microsoft Defender ATP İlkesi Oluştur'u** seçin.
 
-    :::image type="content" source="images/configmgr-create-policy.png" alt-text="Yeni Microsoft Endpoint Configuration Manager sihirbazı12" lightbox="images/configmgr-create-policy.png":::
+    :::image type="content" source="images/configmgr-create-policy.png" alt-text="Microsoft Endpoint Configuration Manager sihirbazı12" lightbox="images/configmgr-create-policy.png":::
 
-7. Adı ve açıklamayı girin, **Ekleme'nin seçili** olduğunu doğrulayın ve ardından Sonraki'yi **seçin**.
+7. Adı ve açıklamayı girin, **Ekleme'nin** seçili olduğunu doğrulayın ve **ardından İleri'yi** seçin.
 
-    :::image type="content" source="images/configmgr-policy-name.png" alt-text="Yeni Microsoft Endpoint Configuration Manager sihirbazı13" lightbox="images/configmgr-policy-name.png":::
+    :::image type="content" source="images/configmgr-policy-name.png" alt-text="Microsoft Endpoint Configuration Manager sihirbazı13" lightbox="images/configmgr-policy-name.png":::
 
-8. **Gözat'ı tıklatın**.
+8. **Gözat'a** tıklayın.
 
-9. Yukarıdaki 4. adımdan indirilen dosyanın bulunduğu konuma gidin.
+9. Yukarıdaki 4. adımda indirilen dosyanın konumuna gidin.
 
 10. **İleri**'ye tıklayın.
-11. Aracıyı uygun örneklerle (Yok **veya Tüm dosya** **türleri) yapılandırabilirsiniz**.
+11. Aracıyı uygun örneklerle yapılandırın (**Hiçbiri** veya **Tümü dosya türleri**).
 
     :::image type="content" source="images/configmgr-config-settings.png" alt-text="Yapılandırma ayarları1" lightbox="images/configmgr-config-settings.png":::
 
-12. Uygun telemetriyi (**Normal veya Hızlandırılmış** ) **seçin ve** ardından Sonraki'ye **tıklayın**.
+12. Uygun telemetriyi (**Normal** veya **Hızlandırılmış**) seçin ve **İleri'ye** tıklayın.
 
     :::image type="content" source="images/configmgr-telemetry.png" alt-text="Yapılandırma ayarları2" lightbox="images/configmgr-telemetry.png":::
 
-13. Yapılandırmayı doğrulayın ve ardından Sonraki'ye **tıklayın**.
+13. Yapılandırmayı doğrulayın ve **İleri'ye** tıklayın.
 
     :::image type="content" source="images/configmgr-verify-configuration.png" alt-text="Yapılandırma ayarları3" lightbox="images/configmgr-verify-configuration.png":::
 
-14. Sihirbaz **tamamlandığında** Kapat'a tıklayın.
+14. Sihirbaz tamamlandığında **Kapat'a** tıklayın.
 
-15. Yeni oluşturduğunuz Microsoft Endpoint Configuration Manager için Defender ilkeye sağ tıklayın ve Dağıt'ı **seçin**.
+15. Microsoft Endpoint Configuration Manager konsolunda, yeni oluşturduğunuz Uç Nokta için Defender ilkesine sağ tıklayın ve **Dağıt'ı** seçin.
 
     :::image type="content" source="images/configmgr-deploy.png" alt-text="Yapılandırma ayarları4" lightbox="images/configmgr-deploy.png":::
 
-16. Sağ panelde, daha önce oluşturulmuş koleksiyonu seçin ve Tamam'a **tıklayın**.
+16. Sağ panelde, daha önce oluşturulan koleksiyonu seçin ve **Tamam'a** tıklayın.
 
     :::image type="content" source="images/configmgr-select-collection.png" alt-text="Yapılandırma ayarları5" lightbox="images/configmgr-select-collection.png":::
 
-#### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a>Windows Client'ın önceki sürümleri (Windows 7 ve Windows 8.1)
+#### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a>Windows İstemcisi'nin önceki sürümleri (Windows 7 ve Windows 8.1)
 
-Windows'un önceki sürümlerinin eklemesi için gereken Uç Nokta Çalışma Alanı Kimliği ve Çalışma Alanı Anahtarı için Defender'ı tanımlamak Windows.
+Önceki Windows sürümlerinin eklenmesi için gerekli olan Uç Nokta için Defender Çalışma Alanı Kimliği ve Çalışma Alanı Anahtarı'nı belirlemek için aşağıdaki adımları izleyin.
 
-1. Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portalında, Uç</a> **Noktaları Ekleme Ayarlar** \> **seçin** \> **(Uç** **nokta'nın Cihaz Yönetimi**.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalından</a> **Ayarlar** \> **Uç Noktaları** \> **Ekleme'yi** seçin (**Cihaz Yönetimi** altında).
 
-2. İşletim sisteminin altında **7 SP1 Windows 8.1'i seçin**.
+2. İşletim sistemi altında **Windows 7 SP1 ve 8.1'i** seçin.
 
-3. Çalışma Alanı **Kimliği'ne** ve **Çalışma Alanı Anahtarı'ne** kopyalayıp kaydedin. Bunlar bu işlemde daha sonra kullanılacaktır.
+3. **Çalışma Alanı Kimliği** ve **Çalışma Alanı Anahtarı'nı** kopyalayıp kaydedin. Bunlar işlemin ilerleyen bölümlerinde kullanılacaktır.
 
    :::image type="content" source="images/91b738e4b97c4272fd6d438d8c2d5269.png" alt-text="Ekleme işlemi" lightbox="images/91b738e4b97c4272fd6d438d8c2d5269.png":::
 
-4. MMA (Microsoft Monitoring Agent) yükleme.
+4. Microsoft Monitoring Agent'ı (MMA) yükleyin.
 
-   MMA şu anda (Ocak 2019'dan itibaren) aşağıdaki işletim sistemlerinde Windows desteklemektedir:
+   MMA şu anda (Ocak 2019 itibariyle) aşağıdaki Windows İşletim Sistemlerinde desteklenmektedir:
 
-   - Sunucu SKUs: Windows Server 2008 SP1 veya Daha Yeni
-   - İstemci SKUs'ları: Windows 7 SP1 ve sonrası
+   - Sunucu SKU'ları: Windows Server 2008 SP1 veya Daha Yeni
+   - İstemci SKU'ları: Windows 7 SP1 ve üzeri
 
-   MMA aracısı, cihaza veya cihaza Windows gerekir. Aracıyı yüklemek için, bazı sistemlerin MMA ile verileri toplamak için Müşteri deneyimi ve tanılama [telemetrisi](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) için Güncelleştirme'sini indirmesi gerekir. Bu sistem sürümleri şunları içerir ancak bunlarla sınırlı değildir:
+   MMA aracısının Windows cihazlarına yüklenmesi gerekir. Aracıyı yüklemek için bazı sistemlerin MMA ile veri toplamak [için Müşteri deneyimi ve tanılama telemetrisi için Güncelleştirme'yi](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) indirmesi gerekir. Bu sistem sürümleri şunları içerir ancak bunlarla sınırlı olmayabilir:
 
    - Windows 8.1
    - Windows 7
@@ -198,32 +198,32 @@ Windows'un önceki sürümlerinin eklemesi için gereken Uç Nokta Çalışma Al
    - Windows Server 2012 R2
    - Windows Server 2008 R2
 
-   Özel olarak, Windows 7 SP1'de aşağıdaki düzeltme ekleri yük kurulmalı:
+   Özellikle, Windows 7 SP1 için aşağıdaki düzeltme eklerinin yüklenmesi gerekir:
 
-   - [KB4074598 yükleme](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-   - [KB3154518 .NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (veya **sonrası) ya** da [KB3154518'i yükleyin](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework). Her ikisini de aynı sisteme yükleyemesiniz.
+   - [KB4074598'i](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598) yükleme
+   - [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (veya üzeri) **veya** [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework) yükleyin. Her ikisini de aynı sisteme yüklemeyin.
 
-5. İnternet'e bağlanmak için proxy kullanıyorsanız Proxy ayarlarını yapılandırma bölümüne bakın.
+5. İnternet'e bağlanmak için ara sunucu kullanıyorsanız Ara sunucu ayarlarını yapılandırma bölümüne bakın.
 
-Tamamlandığında, portalda bir saat içinde yerleşik uç noktaları görmelisiniz.
+Tamamlandıktan sonra, bir saat içinde portalda eklenen uç noktaları görmeniz gerekir.
 
 ### <a name="next-generation-protection"></a>Yeni nesil koruma
 
-Microsoft Defender Virüsten Koruma, masaüstü bilgisayarlar, taşınabilir bilgisayarlar ve sunucular için yeni nesil koruma sağlayan yerleşik bir kötü amaçlı yazılımdan koruma çözümüdür.
+Microsoft Defender Virüsten Koruma, masaüstleri, taşınabilir bilgisayarlar ve sunucular için yeni nesil koruma sağlayan yerleşik bir kötü amaçlı yazılımdan koruma çözümüdür.
 
-1. Uygulama konsolunda Microsoft Endpoint Configuration Manager Varlıklara **\> \> ve Uyumluluğuna Genel Bakış'a Endpoint Protection \>** Kötü amaçlı Yazılımdan Koruma **İlkeleri'ne gidin** ve Kötü amaçlı Yazılımdan Koruma İlkesi Oluştur'a seçin.
+1. Microsoft Endpoint Configuration Manager konsolunda **Varlıklar ve Uyumluluğa \> Genel Bakış \> Endpoint Protection \> Kötü Amaçlı Yazılımdan Koruma İlkeleri'ne** gidin ve **Kötü Amaçlı Yazılımdan Koruma İlkesi Oluştur'u** seçin.
 
    :::image type="content" source="images/9736e0358e86bc778ce1bd4c516adb8b.png" alt-text="Kötü amaçlı yazılımdan koruma ilkesi" lightbox="images/9736e0358e86bc778ce1bd4c516adb8b.png":::
 
-2. **Zamanlanmış taramalar**, **Tarama ayarları**, **Varsayılan eylemler**, **Gerçek zamanlı** koruma, **Dışlama** ayarları, **Gelişmiş**, **Tehdit** geçersiz kılmaları, **Bulut Koruma** Hizmeti ve **Güvenlik** zekası güncelleştirmeleri'ne ve Tamam'a **tıklayın**.
+2. **Zamanlanmış taramalar**, **Tarama ayarları**, **Varsayılan eylemler**, **Gerçek zamanlı koruma**, **Dışlama ayarları**, **Gelişmiş**, **Tehdit geçersiz kılmaları**, **Bulut Koruma Hizmeti** ve **Güvenlik bilgileri güncelleştirmeleri'ni** seçin ve **Tamam'ı** seçin.
 
    :::image type="content" source="images/1566ad81bae3d714cc9e0d47575a8cbd.png" alt-text="Yeni nesil koruma bölmesi1" lightbox="images/1566ad81bae3d714cc9e0d47575a8cbd.png":::
 
-    Belirli endüstrilerde veya bazı belirli kurumsal müşterilerin Virüsten Koruma'nın nasıl yapılandırılmayla ilgili belirli ihtiyaçları olabilir.
+    Bazı sektörlerde veya bazı belirli kurumsal müşterilerin Virüsten Koruma'nın nasıl yapılandırıldığı konusunda belirli gereksinimleri olabilir.
 
     [Hızlı tarama ile tam tarama ve özel tarama karşılaştırması](/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
-    Diğer ayrıntılar için bkz. [Windows Güvenliği çerçevesine bakın](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework).
+    Diğer ayrıntılar için bkz. [yapılandırma çerçevesi Windows Güvenliği](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework).
   
     :::image type="content" source="images/cd7daeb392ad5a36f2d3a15d650f1e96.png" alt-text="Yeni nesil koruma bölmesi2" lightbox="images/cd7daeb392ad5a36f2d3a15d650f1e96.png":::
 
@@ -241,134 +241,134 @@ Microsoft Defender Virüsten Koruma, masaüstü bilgisayarlar, taşınabilir bil
 
     :::image type="content" source="images/3876ca687391bfc0ce215d221c683970.png" alt-text="Yeni nesil koruma bölmesi9" lightbox="images/3876ca687391bfc0ce215d221c683970.png":::
 
-3. Yeni oluşturulan kötü amaçlı yazılımlardan koruma ilkesine sağ tıklayın ve Dağıt'ı **seçin**.
+3. Yeni oluşturulan kötü amaçlı yazılımdan koruma ilkesine sağ tıklayın ve **Dağıt'ı** seçin.
 
     :::image type="content" source="images/f5508317cd8c7870627cb4726acd5f3d.png" alt-text="Yeni nesil koruma bölmesi10" lightbox="images/f5508317cd8c7870627cb4726acd5f3d.png":::
 
-4. Yeni kötü amaçlı yazılımlardan koruma ilkesine hedef Windows Tamam'a **tıklayın**.
+4. Yeni kötü amaçlı yazılımdan koruma ilkesini Windows koleksiyonunuzla hedefleyin ve **Tamam'a** tıklayın.
 
     :::image type="content" source="images/configmgr-select-collection.png" alt-text="Yeni nesil koruma bölmesi11" lightbox="images/configmgr-select-collection.png":::
 
-Bu görevi tamamladıktan sonra, görev ayarlarını başarıyla Windows Defender Virüsten Koruma.
+Bu görevi tamamladıktan sonra Microsoft Defender Virüsten Koruma'yı başarıyla yapılandırmış oldunuz.
 
 ### <a name="attack-surface-reduction"></a>Saldırı yüzeyini azaltma
 
-Endpoint için Defender'ın saldırı yüzeyini azaltma sütunu, Exploit Guard altında bulunan özellik kümesi içerir. Saldırı yüzeyini azaltma (ASR) kuralları, Denetimli Klasör Erişimi, Ağ Koruması ve Exploit Protection.
+Uç Nokta için Defender'ın saldırı yüzeyi azaltma sütunu Exploit Guard altında kullanılabilen özellik kümesini içerir. Saldırı yüzeyi azaltma (ASR) kuralları, Denetimli Klasör Erişimi, Ağ Koruması ve Exploit Protection.
 
-Tüm bu özellikler bir denetim modu ve bir engelleme modu sağlar. Denetim modunda son kullanıcının hiçbir etkisi yoktur. Yaptığı tek şey ek telemetri toplamak ve telemetriyi portalda Microsoft 365 Defender. Dağıtımda amaç, güvenlik denetimlerini adım adım engelleme moduna taşımaktır.
+Tüm bu özellikler bir denetim modu ve bir blok modu sağlar. Denetim modunda son kullanıcı etkisi yoktur. Tek yaptığı ek telemetri toplamak ve Microsoft 365 Defender portalında kullanılabilir hale getirmektir. Dağıtımın amacı, güvenlik denetimlerini adım adım blok moduna taşımaktır.
 
 Denetim modunda ASR kuralları ayarlamak için:
 
-1. Uygulama konsolunda Microsoft Endpoint Configuration Manager ve **\> \> Uyumluluğuna Genel Bakış 'a Endpoint Protection \> Windows Defender Exploit Guard İlkesi** Oluştur'a gidin.
+1. Microsoft Endpoint Configuration Manager konsolunda **Varlıklar ve Uyumluluğa \> Genel Bakış \> Endpoint Protection \> Windows Defender Exploit Guard'a** gidin ve **Exploit Guard İlkesi Oluştur'u** seçin.
 
-   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="Microsoft Endpoint Configuration Manager konsolu0" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
+   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="Microsoft Endpoint Configuration Manager console0" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
-2. Saldırı **Yüzeyini Azaltma'yi seçin**.
+2. **Saldırı Yüzeyi Azaltma'ya** tıklayın.
 
-3. Kurallara **Denetim'i ayarlayın ve** Sonraki'ne **tıklayın**.
+3. Kuralları **Denetim** olarak ayarlayın ve **İleri'ye** tıklayın.
 
    :::image type="content" source="images/d18e40c9e60aecf1f9a93065cb7567bd.png" alt-text="Microsoft Endpoint Configuration Manager konsolu1" lightbox="images/d18e40c9e60aecf1f9a93065cb7567bd.png":::
 
-4. Yeni Exploit Guard ilkenizi onaylamak için Sonraki düğmesine **tıklayın**.
+4. **İleri'ye** tıklayarak yeni Exploit Guard ilkesini onaylayın.
 
    :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="Microsoft Endpoint Configuration Manager konsolu2" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
-5. İlke oluşturulduktan sonra Kapat'a **tıklayın**.
+5. İlke oluşturulduktan sonra **Kapat'a** tıklayın.
 
-   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="Oyun Microsoft Endpoint Configuration Manager konsolu3" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
+   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="Microsoft Endpoint Configuration Manager konsolu3" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
-6. Yeni oluşturulan ilkeye sağ tıklayın ve Dağıt'ı **seçin**.
+6. Yeni oluşturulan ilkeye sağ tıklayın ve **Dağıt'ı** seçin.
 
-   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="Oyun Microsoft Endpoint Configuration Manager konsolu4" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
+   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="Microsoft Endpoint Configuration Manager konsolu4" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
-7. İlkeyi yeni oluşturulan site koleksiyonuna Windows tamam'a **tıklayın**.
+7. İlkeyi yeni oluşturulan Windows koleksiyonuna hedefleyin ve **Tamam'a** tıklayın.
 
-   :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="Oyun Microsoft Endpoint Configuration Manager konsolu5" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
+   :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="Microsoft Endpoint Configuration Manager konsolu5" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
-Bu görevi tamamladıktan sonra, artık denetim modunda ASR kurallarını başarıyla yapılandırmış olursunuz.
+Bu görevi tamamladıktan sonra, artık ASR kurallarını denetim modunda başarıyla yapılandırmış oldunuz.
 
-Aşağıda, ASR kurallarının uç noktalara doğru uygulanıp uygulanmadı ılmasıyla ilgili ek adımlar verilmiştir. (Bu birkaç dakika sürebilir)
+AsR kurallarının uç noktalara doğru uygulanıp uygulanmadığını doğrulamaya yönelik ek adımlar aşağıdadır. (Bu işlem birkaç dakika sürebilir)
 
-1. Web tarayıcısında Tamam'a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
+1. Web tarayıcısından <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> gidin.
 
-2. Sol **menüden** Yapılandırma yönetimi'ne tıklayın.
+2. Sol taraftaki menüden **Yapılandırma yönetimi'ne** tıklayın.
 
-3. Saldırı **yüzeyi yönetim panelinde Saldırı yüzeyi yönetimi** için Git'e tıklayın.
+3. Saldırı **yüzeyi yönetimi panelinde Saldırı yüzeyi yönetimine git'e** tıklayın.
 
    :::image type="content" source="images/security-center-attack-surface-mgnt-tile.png" alt-text="Saldırı yüzeyi yönetimi" lightbox="images/security-center-attack-surface-mgnt-tile.png":::
 
-4. Saldırı **yüzeyini azaltma** kuralları raporlarındaki Yapılandırma sekmesine tıklayın. Her cihaz için ASR kuralları yapılandırmasına genel bakış ve ASR kuralları durumunu gösterir.
+4. Saldırı yüzeyi azaltma kuralları raporlarında **Yapılandırma** sekmesine tıklayın. Her cihazda ASR kuralları yapılandırmasına genel bakış ve ASR kuralları durumunu gösterir.
 
-   :::image type="content" source="images/f91f406e6e0aae197a947d3b0e8b2d0d.png" alt-text="Saldırı yüzeyini azaltma kuralları raporları1" lightbox="images/f91f406e6e0aae197a947d3b0e8b2d0d.png":::
+   :::image type="content" source="images/f91f406e6e0aae197a947d3b0e8b2d0d.png" alt-text="Saldırı yüzeyi azaltma kuralları raporları1" lightbox="images/f91f406e6e0aae197a947d3b0e8b2d0d.png":::
 
-5. ASR kurallarının yapılandırma ayrıntılarını gösteren her cihaza tıklayın.
+5. AsR kurallarının yapılandırma ayrıntılarını gösteren her cihaza tıklayın.
 
-   :::image type="content" source="images/24bfb16ed561cbb468bd8ce51130ca9d.png" alt-text="Saldırı yüzeyini azaltma kuralları raporları2" lightbox="images/24bfb16ed561cbb468bd8ce51130ca9d.png":::
+   :::image type="content" source="images/24bfb16ed561cbb468bd8ce51130ca9d.png" alt-text="Saldırı yüzeyi azaltma kuralları raporları2" lightbox="images/24bfb16ed561cbb468bd8ce51130ca9d.png":::
 
-Daha [fazla ayrıntı için bkz. ASR kuralı dağıtımını ve algılamalarını](/microsoft-365/security/defender-endpoint/configure-machines-asr) en iyi duruma getirme.
+Daha fazla ayrıntı için bkz. [ASR kuralı dağıtım ve algılamalarını iyileştirme](/microsoft-365/security/defender-endpoint/configure-machines-asr) .
 
-#### <a name="set-network-protection-rules-in-audit-mode"></a>Denetim modunda Ağ Koruma kurallarını ayarlama
+#### <a name="set-network-protection-rules-in-audit-mode"></a>Denetim modunda Ağ Koruması kurallarını ayarlama
 
-1. Uygulama konsolunda Microsoft Endpoint Configuration Manager ve **\> \> Uyumluluğuna Genel Bakış 'a Endpoint Protection \> Windows Defender Exploit Guard İlkesi** Oluştur'a gidin.
+1. Microsoft Endpoint Configuration Manager konsolunda **Varlıklar ve Uyumluluğa \> Genel Bakış \> Endpoint Protection \> Windows Defender Exploit Guard'a** gidin ve **Exploit Guard İlkesi Oluştur'u** seçin.
 
-   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="System Center Configuration Manager1" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
+   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The System Center Configuration Manager1" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
-2. Ağ **koruması'ı seçin**.
+2. **Ağ koruması'ı** seçin.
 
-3. Ayarı Denetim olarak ayarlayın **ve Sonraki'yi** **tıklatın**.
+3. Ayarı **Denetim** olarak ayarlayın ve **İleri'ye** tıklayın.
 
-   :::image type="content" source="images/c039b2e05dba1ade6fb4512456380c9f.png" alt-text="System Center Configuration Manager2" lightbox="images/c039b2e05dba1ade6fb4512456380c9f.png":::
+   :::image type="content" source="images/c039b2e05dba1ade6fb4512456380c9f.png" alt-text="The System Center Configuration Manager2" lightbox="images/c039b2e05dba1ade6fb4512456380c9f.png":::
 
-4. Yeni Exploit Guard İlkesi'ne tıklayarak Sonraki'ne tıklayarak bu ilkeyi **onaylayın**.
+4. **İleri'ye** tıklayarak yeni Exploit Guard İlkesi'ni onaylayın.
 
    :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="Exploit Guard ilkesi1" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
-5. İlke oluşturulduktan sonra Kapat'a **tıklayın**.
+5. İlke oluşturulduktan sonra **Kapat'a** tıklayın.
 
    :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="Exploit Guard ilkesi2" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
-6. Yeni oluşturulan ilkeye sağ tıklayın ve Dağıt'ı **seçin**.
+6. Yeni oluşturulan ilkeye sağ tıklayın ve **Dağıt'ı** seçin.
 
    :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="Microsoft Endpoint Configuration Manager-1" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
-7. Yeni oluşturulan site koleksiyonunun Windows seçin ve Tamam'ı **seçin**.
+7. Yeni oluşturulan Windows koleksiyonuna ilişkin ilkeyi seçin ve **Tamam'ı** seçin.
 
    :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="Microsoft Endpoint Configuration Manager-2" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
-Bu görevi tamamladıktan sonra, artık denetim modunda Ağ Korumasını başarıyla yapılandırmış olursunuz.
+Bu görevi tamamladıktan sonra ağ korumasını denetim modunda başarıyla yapılandırmış oldunuz.
 
 #### <a name="to-set-controlled-folder-access-rules-in-audit-mode"></a>Denetim modunda Denetimli Klasör Erişimi kurallarını ayarlamak için
 
-1. Uygulama Microsoft Endpoint Configuration Manager Assets and **ComplianceOverview'a** >  >  gidin **Endpoint Protection Windows Defender** >  **Exploit Guard'ı** seçin ve ardından **Exploit Guard İlkesi Oluştur'u seçin**.
+1. Microsoft Endpoint Configuration Manager konsolunda **Varlıklar ve Uyumluluğa** > **Genel Bakış** > **Endpoint Protection** >  **Windows Defender Exploit Guard'a** gidin ve **Exploit Guard İlkesi Oluştur'u** seçin.
 
    :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="Microsoft Endpoint Configuration Manager-3" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
-2. Denetimli **klasör erişimi'ne tıklayın**.
+2. **Denetimli klasör erişimi'ni** seçin.
 
-3. Yapılandırmayı Denetim olarak ayarlayın **ve Sonraki'yi** **tıklatın**.
+3. Yapılandırmayı **Denetim** olarak ayarlayın ve **İleri'ye** tıklayın.
 
    :::image type="content" source="images/a8b934dab2dbba289cf64fe30e0e8aa4.png" alt-text="Microsoft Endpoint Configuration Manager-4" lightbox="images/a8b934dab2dbba289cf64fe30e0e8aa4.png":::
 
-4. Sonraki seçeneğine tıklayarak yeni Exploit Guard **İlkesi'ne tıklayın**.
+4. **İleri'ye** tıklayarak yeni Exploit Guard İlkesi'ni onaylayın.
 
    :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="Microsoft Endpoint Configuration Manager-5" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
-5. İlke oluşturulduktan sonra Kapat'a **tıklayın**.
+5. İlke oluşturulduktan sonra **Kapat'a** tıklayın.
 
    :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="Microsoft Endpoint Configuration Manager-6" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
-6. Yeni oluşturulan ilkeye sağ tıklayın ve Dağıt'ı **seçin**.
+6. Yeni oluşturulan ilkeye sağ tıklayın ve **Dağıt'ı** seçin.
 
    :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="Microsoft Endpoint Configuration Manager-7" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
 
-7. İlkeyi yeni oluşturulan site koleksiyonuna Windows tamam'a **tıklayın**.
+7. İlkeyi yeni oluşturulan Windows koleksiyonuna hedefleyin ve **Tamam'a** tıklayın.
 
 
 :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="Microsoft Endpoint Configuration Manager-8" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
-Denetim modunda Denetimli klasör erişimini başarıyla yapılandırdısınız.
+Denetim modunda denetimli klasör erişimini başarıyla yapılandırmış oldunuz.
 
 ## <a name="related-topic"></a>İlgili konu
 
-- [Microsoft Endpoint Manager kullanarak işe Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
+- [Microsoft Endpoint Manager aracılığı ile katılım](onboarding-endpoint-manager.md)

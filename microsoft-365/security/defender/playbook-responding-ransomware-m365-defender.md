@@ -11,13 +11,14 @@ ms.date: 05/30/2022
 ms.prod: m365-security
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
+ms.technology: m365d
 f1.keywords: NOCSH
-ms.openlocfilehash: a7c03947cc159ed9933854c9fd1041af63c3f55c
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: aaf672f8ec913b8d0e206f9d630452bac36185ee
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "66861703"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445104"
 ---
 # <a name="responding-to-ransomware-attacks"></a>Fidye yazılımı saldırılarına yanıt verme
 
@@ -37,7 +38,7 @@ Kapsama ve araştırma mümkün olduğunca aynı anda gerçekleşmelidir; Ancak,
 
 ### <a name="step-1-assess-the-scope-of-the-incident"></a>1. Adım: Olayın kapsamını değerlendirme
 
-Saldırının kapsamını keşfetmek için bu soru ve görev listesini inceleyin. Microsoft 365 Defender, olay yanıtı değerlendirmenize yardımcı olmak için etkilenen veya risk altındaki tüm varlıkların birleştirilmiş bir görünümünü sağlayabilir. Bkz[. Microsoft 365 Defender | ile olay yanıtı Microsoft Docs](/incidents-overview.md). Aşağıdakileri belirlemek için olaydaki uyarıları ve kanıt listesini kullanabilirsiniz:
+Saldırının kapsamını keşfetmek için bu soru ve görev listesini inceleyin. Microsoft 365 Defender, olay yanıtı değerlendirmenize yardımcı olmak için etkilenen veya risk altındaki tüm varlıkların birleştirilmiş bir görünümünü sağlayabilir. Bkz[. Microsoft 365 Defender ile olay yanıtı](incidents-overview.md). Aşağıdakileri belirlemek için olaydaki uyarıları ve kanıt listesini kullanabilirsiniz:
 
 * Hangi kullanıcı hesapları tehlikeye girebilir?
   * Yükü teslim etmek için hangi hesaplar kullanıldı?

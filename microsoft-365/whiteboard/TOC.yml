@@ -14,8 +14,6 @@
       href: manage-data-organizations.md
     - name: Paylaşımı yönetin
       href: manage-sharing-organizations.md
-    - name: Windows cihazlarda dağıtın
-      href: deploy-on-windows-organizations.md
 - name: Gizlilik ve uyumluluk
   items:
     - name: Gizlilik ayarlarını yapılandırma
@@ -24,13 +22,15 @@
       href: gdpr-requests.md
 - name: Kamu için Whiteboard
   items:
-    - name: Erişimi yönetme - GCC High
-      href: manage-whiteboard-access-gcc-high.md
-    - name: Verileri yönetme - GCC High
-      href: manage-data-gcc-high.md
-    - name: Paylaşımı yönetme - GCC High
-      href: manage-sharing-gcc-high.md
-    - name: İstemcileri yönetme - GCC High
-      href: manage-clients-gcc-high.md
+    - name: GCC Yüksek
+      items:
+        - name: Erişimi yönetme - GCC High
+          href: manage-whiteboard-access-gcc-high.md
+        - name: Verileri yönetme - GCC High
+          href: manage-data-gcc-high.md
+        - name: Paylaşımı yönetme - GCC High
+          href: manage-sharing-gcc-high.md
+        - name: İstemcileri yönetme - GCC High
+          href: manage-clients-gcc-high.md
 - name: Whiteboard PowerShell
   href: /powershell/module/whiteboard/

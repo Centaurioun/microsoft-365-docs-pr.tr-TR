@@ -22,13 +22,13 @@ ms.custom:
 - adminvideo
 search.appverid: MET150
 description: İş için Microsoft 365 aboneliğiniz için daha fazla lisans satın almak veya lisans sayısını azaltmak için bu adımları kullanın.
-ms.date: 06/06/2022
-ms.openlocfilehash: 530a1058b9f6676d6a674041ef8fe69d6cfe77e7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.date: 08/18/2022
+ms.openlocfilehash: 1641b16f7f04b163c31ae1e03de3d0f7631a5efe
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602380"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388066"
 ---
 # <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>Abonelik için Microsoft 365 lisanslarını satın alma veya kaldırma
 
@@ -64,11 +64,13 @@ Abonelikten lisansları kaldırdıysanız, yapılacak bir sonraki şey [kullanı
 ::: moniker range="o365-worldwide"
 
 1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ürünleriniz</a> sayfasına gidin.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ürünleriniz</a> sayfasına gidin.
+
 ::: moniker-end
 
 2. **Ürünler** sekmesinde, lisans satın almak veya kaldırmak istediğiniz aboneliği bulun. Üç noktayı (diğer eylemler) ve ardından **Lisans satın al'ı** seçin. [Lisans satın al veya Lisansları kaldır düğmelerini görmezsem ne olur?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
@@ -81,6 +83,37 @@ Abonelikten lisansları kaldırdıysanız, yapılacak bir sonraki şey [kullanı
 
 > [!NOTE]
 > Tüm lisanslar şu anda kullanıcılara atanmışsa aboneliğinizin lisans sayısını azaltamazsınız. Lisans sayısını azaltmak için önce [kullanıcılardan bir veya daha fazla lisansın atamasını kaldırın](../../admin/manage/remove-licenses-from-users.md), ardından abonelikten lisansları kaldırın.
+
+## <a name="add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key"></a>Microsoft 365 ürün anahtarı kullanarak ön ödemeli aboneliğe lisans ekleme
+
+Ön ödemeli ürün lisansları size ürün anahtarı olarak adlandırılan 25 karakterlik alfasayısal kod olarak verilir. İhtiyacınız olan lisansları satın aldıktan sonra, aşağıdaki adımları kullanarak bunları aboneliğinize ekleyebilirsiniz. [Aboneliğinizin sona erme tarihini uzatmak](../subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key) için bir ürün anahtarı da kullanabilirsiniz.
+
+> [!NOTE]
+> Yeni bir ürün anahtarı satın almak istemiyorsanız, daha fazla lisans için ödeme yapmak üzere aboneliğinize her zaman bir kredi kartı veya banka hesabı eklemeyi seçebilirsiniz. Daha fazla bilgi için bkz. [Aboneliğinizi yenileme](../subscriptions/renew-your-subscription.md).
+  
+::: moniker range="o365-worldwide"
+
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ürünleriniz</a> sayfasına gidin.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ürünleriniz</a> sayfasına gidin.
+
+::: moniker-end
+
+2. **Ürünler** sekmesinde, lisans eklemek istediğiniz aboneliği seçin.
+
+3. Abonelik ayrıntıları sayfasındaki **Lisanslar** bölümünde **Daha fazla lisans ekle'yi** seçin.
+
+4. **Daha fazla lisans ekle bölmesinde** **Yeni ve kullanılmayan bir ürün anahtarı kullan'ı** ve ardından **İleri'yi** seçin.
+
+5. Ürün anahtarını girin ve **İleri'yi** seçin.
+    > [!NOTE]
+    > Birden fazla ürün anahtarınız varsa, bunları girmek için **Başka bir ürün anahtarı ekle'yi** seçebilirsiniz.
+
+6. Sipariş ayrıntılarınızı gözden geçirin ve **Kullan'ı** seçin.
 
 ## <a name="what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons"></a>Lisans satın al veya Lisansları kaldır düğmelerini görmezsem ne olur?
 

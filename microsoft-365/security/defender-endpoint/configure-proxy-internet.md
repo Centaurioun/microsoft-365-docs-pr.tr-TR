@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 049fd7b7bcec0ebdc4690cd666bdb99ced5bf504
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: c579c72ab4918bf7ce0ebb5df80c05d9a4a45518
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873500"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388737"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Cihaz ara sunucusu ve İnternet bağlantısı ayarlarını yapılandırma
 
@@ -40,7 +40,7 @@ Uç Nokta için Defender algılayıcısı, algılayıcı verilerini raporlamak v
 > [!TIP]
 > İleri proxy'leri İnternet'e ağ geçidi olarak kullanan kuruluşlarda, [ileriye doğru ara sunucuların arkasında gerçekleşen bağlantı olaylarını araştırmak](investigate-behind-proxy.md) için ağ korumasını kullanabilirsiniz.
 
-WinHTTP yapılandırma ayarı, Windows İnternet (WinINet) gözatma proxy ayarlarından bağımsızdır (bkz[. WinINet ve WinHTTP](/windows/win32/wininet/wininet-vs-winhttp)). Bir proxy sunucusunu yalnızca aşağıdaki bulma yöntemlerini kullanarak bulabilir:
+WinHTTP yapılandırma ayarı, Windows internet (WinINet) gözatma proxy ayarlarından bağımsızdır (bkz [. WinINet ve WinHTTP](/windows/win32/wininet/wininet-vs-winhttp)). Bir proxy sunucusunu yalnızca aşağıdaki bulma yöntemlerini kullanarak bulabilir:
 
 - Otomatik bulma yöntemleri:
 
@@ -65,7 +65,7 @@ WinHTTP yapılandırma ayarı, Windows İnternet (WinINet) gözatma proxy ayarla
 Bir bilgisayarın İnternet'e bağlanmasına izin verilmiyorsa tanılama verilerini raporlamak ve Uç Nokta için Defender hizmetleriyle iletişim kurmak üzere Uç Nokta için Defender algılama ve yanıt (EDR) algılayıcısı için kayıt defteri tabanlı statik proxy yapılandırın.
 
 > [!NOTE]
-> Windows 10, Windows 11 veya Windows Server 2019 veya Windows Server 2022'de bu seçeneği kullanırken, aşağıdaki (veya sonraki) derleme ve toplu güncelleştirme paketine sahip olmanız önerilir:
+> Windows 10, Windows 11, Windows Server 2019 veya Windows Server 2022'de bu seçeneği kullanırken, aşağıdaki (veya üzeri) derleme ve toplu güncelleştirme paketine sahip olmanız önerilir:
 >
 > - Windows 11
 > - Windows 10, sürüm 1809 veya Windows Server 2019 veya Windows Server 2022 -<https://support.microsoft.com/kb/5001384>
@@ -75,15 +75,15 @@ Bir bilgisayarın İnternet'e bağlanmasına izin verilmiyorsa tanılama veriler
 >
 > Bu güncelleştirmeler CnC (Komut ve Denetim) kanalının bağlantısını ve güvenilirliğini artırır.
 
-Statik ara sunucu, grup ilkesi (GP) aracılığıyla yapılandırılabilir; grup ilkesi değerleri altındaki her iki ayar da EDR kullanmak üzere ara sunucuya yapılandırılmalıdır. Grup ilkesi Yönetim Şablonları'nda kullanılabilir.
+Statik proxy, grup ilkesi (GP) aracılığıyla yapılandırılabilir; grup ilkesi değerleri altındaki her iki ayar da EDR kullanmak üzere ara sunucuya yapılandırılmalıdır. Grup ilkesi Yönetim Şablonları'nda kullanılabilir.
 
-- **Yönetim Şablonları > Windows Bileşenleri > Veri Toplama ve Önizleme Derlemeleri > Bağlı Kullanıcı Deneyimi ve Telemetri Hizmeti için Kimliği Doğrulanmış Proxy kullanımını yapılandırın**.
+- **Bağlı Kullanıcı Deneyimi ve Telemetri Hizmeti için Kimliği Doğrulanmış Proxy kullanımını yapılandırmak > Windows Bileşenleri > Veri Toplama ve Önizleme Derlemeleri > Yönetim Şablonları**.
 
   **Etkin** olarak ayarlayın ve **Kimliği Doğrulanmış Proxy kullanımını devre dışı bırak'ı** seçin.
 
   :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="grup ilkesi ayarı1 durum bölmesi" lightbox="images/atp-gpo-proxy1.png":::
 
-- **Yönetim Şablonları > Windows Bileşenleri > Veri Toplama ve Önizleme Derlemeleri > Bağlı kullanıcı deneyimlerini ve telemetrisini yapılandırma**:
+- **Bağlı kullanıcı deneyimlerini ve telemetrisini yapılandırma > Windows Bileşenleri > Veri Toplama ve Önizleme Derlemeleri > Yönetim Şablonları**:
 
   Ara sunucuyu yapılandırın.
 
@@ -97,7 +97,7 @@ Statik ara sunucu, grup ilkesi (GP) aracılığıyla yapılandırılabilir; grup
 
 ## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma için statik proxy yapılandırma
 
-Microsoft Defender Virüsten Koruma [bulut tabanlı koruma](cloud-protection-microsoft-defender-antivirus.md), yeni ve yeni tehditlere karşı neredeyse anında, otomatik koruma sağlar. Defender Virüsten Koruma etkin kötü amaçlı yazılımdan koruma çözümünüz olduğunda [özel göstergeler](manage-indicators.md) için bağlantının gerekli olduğunu unutmayın. [Blok modundaki EDR](edr-in-block-mode.md), Microsoft dışı bir çözüm kullanırken birincil kötü amaçlı yazılımdan koruma çözümüne sahiptir.
+Microsoft Defender Virüsten Koruma [bulut tabanlı koruma](cloud-protection-microsoft-defender-antivirus.md) , yeni ve yeni tehditlere karşı neredeyse anında, otomatik koruma sağlar. Defender Virüsten Koruma etkin kötü amaçlı yazılımdan koruma çözümünüz olduğunda [özel göstergeler](manage-indicators.md) için bağlantının gerekli olduğunu unutmayın. [Blok modundaki EDR için](edr-in-block-mode.md) Microsoft dışı bir çözüm kullanılırken birincil kötü amaçlı yazılımdan koruma çözümü vardır.
 
 Yönetim Şablonları'nda bulunan grup ilkesi kullanarak statik proxy'yi yapılandırın:
 
@@ -123,7 +123,7 @@ Yönetim Şablonları'nda bulunan grup ilkesi kullanarak statik proxy'yi yapıla
 >
 > Microsoft Defender Virüsten Koruma, güncelleştirmeleri indirmek üzere Windows Update veya Microsoft Update'e bağlanmak için statik ara sunucuyu kullanmaz. Bunun yerine, Windows Update kullanacak şekilde yapılandırılmışsa sistem genelinde bir ara sunucu veya yapılandırılmış [geri dönüş sırasına](manage-protection-updates-microsoft-defender-antivirus.md) göre yapılandırılmış iç güncelleştirme kaynağı kullanır. 
 >
-> Gerekirse, ağa bağlanmak için **Yönetim Şablonları > Windows Bileşenleri'ni kullanabilir > Microsoft Defender Virüsten Koruma > Ara sunucu otomatik yapılandırmasını (.pac) tanımlayabilirsiniz**. Birden çok ara sunucuyla gelişmiş yapılandırmalar ayarlamanız gerekiyorsa, proxy sunucusunu atlamak ve Microsoft Defender Virüsten Koruma ara sunucu kullanmasını önlemek **> Microsoft Defender Virüsten Koruma > Adresleri tanımlamak > Microsoft Defender Virüsten Koruma > Yönetim Şablonları > Windows Bileşenleri'ni** kullanın Hedef. 
+> Gerekirse, Ağa bağlanmak **için Ara sunucu otomatik yapılandırmasını (.pac) tanımlama > Microsoft Defender Virüsten Koruma > Windows Bileşenleri > Yönetim Şablonları'nı** kullanabilirsiniz. Birden çok proxy ile gelişmiş yapılandırmalar ayarlamanız gerekiyorsa, Microsoft **Defender Virüsten Koruma > Adresleri tanımlama > Microsoft Defender Virüsten Koruma > Windows Bileşenleri > Yönetim Şablonları'nı** kullanarak proxy sunucusunu atlayın ve Microsoft Defender Virüsten Koruma'nın bu hedefler için ara sunucu kullanmasını engelleyin. 
 >
 > PowerShell'i cmdlet'iyle `Set-MpPreference` birlikte kullanarak şu seçenekleri yapılandırabilirsiniz: 
 >
@@ -144,7 +144,6 @@ Sistem genelinde statik ara sunucuyu yapılandırmak için netsh kullanın.
 > [!NOTE]
 >
 > - Bu, varsayılan proxy ile WinHTTP kullanan Windows hizmetleri de dahil olmak üzere tüm uygulamaları etkiler.</br>
-> - Topolojiyi değiştiren dizüstü bilgisayarlar (örneğin: ofisten eve) netsh komutuyla arızalanır. Kayıt defteri tabanlı statik proxy yapılandırmasını kullanın.
 
 1. Yükseltilmiş bir komut satırı açın:
    1. **Başlangıç'a** gidin ve **cmd** yazın.
@@ -183,7 +182,7 @@ Bir ara sunucuda veya güvenlik duvarında HTTPS taraması (SSL incelemesi) etki
 Güvenlik duvarınızda coğrafya sütununun WW olduğu tüm URL'leri açın. Coğrafya sütununun WW olmadığı satırlar için, belirli veri konumunuzun URL'lerini açın. Veri konumu ayarınızı doğrulamak için bkz. [Veri depolama konumunu doğrulama ve Uç Nokta için Microsoft Defender için veri saklama ayarlarını güncelleştirme](/microsoft-365/security/defender-endpoint/data-retention-settings).
 
 > [!NOTE]
-> Windows sürüm 1803 veya önceki sürümlerle çalışan cihazlar gereksinimleri`settings-win.data.microsoft.com`.  <br>
+> Sürüm 1803 veya önceki sürümlerle çalışan Windows cihazları gerekir `settings-win.data.microsoft.com`.  <br>
 >
 > Bunlara v20 içeren URL'ler yalnızca sürüm 1803 veya üzerini çalıştıran Windows cihazlarınız varsa gereklidir. Örneğin, `us-v20.events.data.microsoft.com` sürüm 1803 veya üzerini çalıştıran ve ABD Veri Depolama bölgesine eklenen bir Windows cihazı için gereklidir.
 >
@@ -195,7 +194,7 @@ Ara sunucu veya güvenlik duvarı Uç Nokta için Defender algılayıcısı olar
 
 ### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) - Windows istemcisinin veya Windows Server'ın eski sürümleri için ara sunucu ve güvenlik duvarı gereksinimleri
 
-Ara sunucu ve güvenlik duvarı yapılandırma bilgileri listesindeki bilgiler, Windows 7 SP1, Windows 8.1 ve Windows Server 2008 R2* gibi Windows önceki sürümleri için Log Analytics aracısı (genellikle Microsoft Monitoring Agent olarak adlandırılır) ile iletişim kurmak için gereklidir.
+Ara sunucu ve güvenlik duvarı yapılandırma bilgileri listesindeki bilgiler, Windows 7 SP1, Windows 8.1 ve Windows Server 2008 R2* gibi Windows'un önceki sürümleri için Log Analytics aracısı (genellikle Microsoft Monitoring Agent olarak adlandırılır) ile iletişim kurmak için gereklidir.
 
 <br>
 
@@ -209,16 +208,16 @@ Ara sunucu ve güvenlik duvarı yapılandırma bilgileri listesindeki bilgiler, 
 |*.azure-automation.net|Bağlantı Noktası 443|Giden|Evet|
 
 > [!NOTE]
-> *Bu bağlantı gereksinimleri, önceki Uç Nokta için Microsoft Defender Windows Server 2016 ve MMA gerektiren Windows Server 2012 R2 için geçerlidir. Bu işletim sistemlerini yeni birleştirilmiş çözümle ekleme yönergeleri[, Windows sunucuları ekleme](configure-server-endpoints.md) veya [Uç Nokta için Microsoft Defender'daki Sunucu geçiş senaryolarında](/microsoft-365/security/defender-endpoint/server-migration) yeni birleşik çözüme geçiş konusunda verilmiştir.
+> *Bu bağlantı gereksinimleri, önceki Uç Nokta için Microsoft Defender Windows Server 2016 ve MMA gerektiren Windows Server 2012 R2 için geçerlidir. Bu işletim sistemlerini yeni birleştirilmiş çözümle ekleme yönergeleri [Windows sunucularını ekleme](configure-server-endpoints.md) veya [Uç Nokta için Microsoft Defender'daki Sunucu geçiş senaryolarında](/microsoft-365/security/defender-endpoint/server-migration) yeni birleşik çözüme geçme yönergeleridir.
 
 > [!NOTE]
 > Bulut tabanlı bir çözüm olarak IP aralığı değişebilir. Dns çözümleme ayarına geçmeniz önerilir.
 
-## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>Microsoft Monitoring Agent (MMA) Hizmet URL'si Gereksinimlerini Onaylayın 
+## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>Microsoft Monitoring Agent (MMA) Hizmeti URL Gereksinimlerini Onaylayın 
 
- Windows'in önceki sürümleri için Microsoft Monitoring Agent (MMA) kullanırken ortamınız için joker karakter (*) gereksinimini ortadan kaldırmak için aşağıdaki kılavuza bakın.
+ Windows'un önceki sürümleri için Microsoft Monitoring Agent 'ı (MMA) kullanırken özel ortamınız için joker karakter (*) gereksinimini ortadan kaldırmak için aşağıdaki kılavuza bakın.
 
-1. Uç Nokta için Defender'a Microsoft Monitoring Agent (MMA) içeren önceki bir işletim sistemini ekleme (daha fazla bilgi için bkz. [Uç Nokta için Defender'da Windows önceki sürümlerini](https://go.microsoft.com/fwlink/p/?linkid=2010326) ekleme ve [Windows sunucuları ekleme](configure-server-endpoints.md)).
+1. Microsoft Monitoring Agent (MMA) ile önceki bir işletim sistemini Uç Nokta için Defender'a ekleme (daha fazla bilgi için bkz. [Uç Nokta için Defender'da Windows'un önceki sürümlerini](https://go.microsoft.com/fwlink/p/?linkid=2010326) ekleme ve [Windows sunucularını ekleme](configure-server-endpoints.md)).
 
 2. Makinenin Microsoft 365 Defender portalına başarıyla raporlandığından emin olun.
 
@@ -285,6 +284,6 @@ Ancak, bağlantı denetimi sonuçları bir hata gösteriyorsa, bir HTTP hatası 
 
 ## <a name="related-articles"></a>İlgili makaleler
 
-- [Microsoft Defender Virüsten Koruma yapılandırmak ve yönetmek için grup ilkesi ayarlarını kullanma](use-group-policy-microsoft-defender-antivirus.md)
-- [Windows cihazları ekleme](configure-endpoints.md)
+- [Microsoft Defender Virüsten Koruma'nın yapılandırılması ve yönetilmesi için grup ilkesi ayarlarını kullanma](use-group-policy-microsoft-defender-antivirus.md)
+- [Windows cihazlarını ekleme](configure-endpoints.md)
 - [Uç Nokta için Microsoft Defender ekleme sorunlarını giderme](troubleshoot-onboarding.md)

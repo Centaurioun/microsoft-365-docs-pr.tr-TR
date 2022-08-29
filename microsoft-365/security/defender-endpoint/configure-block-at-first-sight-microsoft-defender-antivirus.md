@@ -15,12 +15,12 @@ ms.date: 07/11/2022
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c41b463c7262c5be6df43d1c9e808060a75d15c0
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 945c1c84559b6022790c47890494998d1027ce56
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717678"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387803"
 ---
 # <a name="turn-on-block-at-first-sight"></a>İlk görüşte engellemeyi etkinleştirin
 
@@ -54,7 +54,7 @@ Microsoft Defender Virüsten Koruma şüpheli ancak algılanmamış bir dosyayla
 
 Microsoft Defender Virüsten Koruma, doğru, akıllı ve gerçek zamanlı koruma sağlamak için birden çok algılama ve önleme teknolojisi kullanır.
 
-:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="Microsoft Defender AV altyapılarının listesi" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
+:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="Microsoft Defender Virüsten Koruma altyapılarının listesi" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
 
 > [!TIP]
 > Daha fazla bilgi edinmek için bkz. [(Blog) yeni nesil korumanın Uç Nokta için Microsoft Defender temelindeki gelişmiş teknolojileri tanıma](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).

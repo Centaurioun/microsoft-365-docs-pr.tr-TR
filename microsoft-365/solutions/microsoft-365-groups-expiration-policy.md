@@ -17,22 +17,22 @@ search.appverid:
 - MET150
 recommendations: false
 description: Microsoft 365 grupları süre sonu ilkeleri hakkında bilgi edinin.
-ms.openlocfilehash: 3fd7d5269d755d6b48429b425616d42157e3294c
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: d91f3f09ccc1ffd562d87f5018953a6cd4fc8574
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050666"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388407"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 grup süre sonu ilkesi
 
 Microsoft 365 gruplarının ve Microsoft Teams'in kullanımındaki artışla birlikte, yöneticilerin ve kullanıcıların kullanılmayan grupları ve ekipleri temizlemenin bir yoluna ihtiyacı vardır. Microsoft 365 grupları süre sonu ilkesi, etkin olmayan grupları sistemden kaldırmaya ve işleri temizlemeye yardımcı olabilir.
 
-Grubun süresi dolduğunda, tüm ilişkili hizmetleri (posta kutusu, Planner, SharePoint sitesi, ekip vb.) de silinir.
+Grubun süresi dolduğunda, [ilişkili hizmetlerinin neredeyse tamamı (posta kutusu, Planner, SharePoint sitesi, ekip vb.) de silinir](/microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer).
 
 Bir grubun süresi dolduğunda "geçici olarak silinir", yani 30 güne kadar kurtarılabilir.
 
-Yöneticiler bir süre sonu belirtebilir ve bu sürenin sonuna ulaşan ve yenilenmeyen tüm etkin olmayan gruplar silinir. (Buna arşivlenmiş ekipler de dahildir.) Süre sonu, grup oluşturulduğunda veya son yenilendiği tarihte başlar. Grup sahiplerine, süresi dolmadan önce otomatik olarak bir e-posta gönderilir ve bu da grubu başka bir süre sonu aralığı için yenilemelerine olanak tanır. Teams kullanıcıları, Teams'de kalıcı bildirimler görür.
+Yöneticiler bir süre sonu belirtebilir ve bu sürenin sonuna ulaşan ve yenilenmeyen tüm etkin olmayan gruplar silinir. (Buna arşivlenmiş ekipler de dahildir.) Süre sonu, grup oluşturulduğunda veya son yenilendiği tarihte başlar. Grup sahipleri, sona erme tarihinden önce otomatik olarak grubu başka bir süre sonu aralığı için yenilemelerine olanak tanıyan bir bildirim gönderilir. Teams'de kullanılan grupların süre sonu bildirimleri, Teams Sahipleri akışında görünür.
 
 Etkin olarak kullanımda olan gruplar otomatik olarak yenilenir. Aşağıdaki eylemlerden herhangi biri grubu otomatik olarak yeniler:
 - SharePoint - Dosyaları görüntüleyin, düzenleyin, indirin, taşıyın, paylaşın veya karşıya yükleyin. (SharePoint sayfasını görüntülemek, otomatik yenileme eylemi olarak sayılmaz.)
@@ -58,11 +58,11 @@ Süre sonunun varsayılan olarak kapalı olduğunu bilmek önemlidir. Kullanmak 
 
 ## <a name="how-to-set-the-expiration-policy"></a>Süre sonu ilkesini ayarlama
 
-Yukarıda belirtildiği gibi, süre sonu varsayılan olarak kapalıdır. Bir yöneticinin süre sonu ilkesini etkinleştirmesi ve etkili olması için özelliklerini ayarlaması gerekir. Etkinleştirmek için **Azure Active Directory** > **Grupları** > **Süre Sonu'na** gidin. Burada varsayılan grup ömrünü ayarlayabilir ve birinci ve ikinci süre sonu bildirimlerinin grup sahibine ne kadar önceden gitmesini istediğinizi belirtebilirsiniz.
+Yukarıda belirtildiği gibi, süre sonu varsayılan olarak kapalıdır. Bir yöneticinin süre sonu ilkesini etkinleştirmesi ve etkili olması için özelliklerini ayarlaması gerekir. Etkinleştirmek için **Azure Active Directory** > **Grupları** > **Süre Sonu'na** gidin. Burada varsayılan grup ömrünü ayarlayabilirsiniz.
 
 Grup ömrü gün cinsinden belirtilir ve 180, 365 veya belirttiğiniz özel bir değere ayarlanabilir. Özel değerin en az 30 gün olması gerekir.
 
-Grubun sahibi yoksa, süre sonu e-postaları belirtilen yöneticiye gider.
+Grubun sahibi yoksa, süre sonu e-postaları belirtilen e-postaya gider.
 
 İlkeyi tüm gruplarınız için, yalnızca seçili gruplar için (en fazla 500) ayarlayabilir veya **Hiçbiri'ni** seçerek tamamen kapatabilirsiniz. **Hiçbiri'ni** seçtiğinizde etkin olan ve doğrulama için bekleyen tüm grupların son kullanma tarihi olmaz. Ancak, süresi dolmuş olan gruplar etkilenmez.
 

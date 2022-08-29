@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c19352d584bedc5acd94f9984242a2c50d2fcf3
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 1db4f7397eb700d9cee48de27a9b757d8f6a9472
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573931"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388715"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Uç Nokta için Microsoft Defender yapılandırma ayarlarını farklı bir Microsoft Endpoint Manager cihazı ile yönetin
 
@@ -73,7 +73,7 @@ Uç noktalarınızın Uç Nokta için Microsoft Defender ekleme işlemi için G�
 Uç Nokta için Microsoft Defender için Güvenlik Yönetimi aracılığıyla eklenen cihazları kullanıma almak için bkz. [cihazları Uç Nokta için Microsoft Defender hizmetinden çıkarma](offboard-machines.md).
 
 >[!NOTE]
->Çıkarma, etkinse [Kurcalama Koruması'nın devre dışı bırakılmasına](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) neden olur.
+>Çıkarma, etkinse [Kurcalama Koruması'nın devre dışı bırakılmasına](manage-tamper-protection-microsoft-365-defender.md) neden olur.
 
 ## <a name="troubleshooting-security-management"></a>Güvenlik Yönetimi Sorunlarını Giderme 
 Uç Nokta için Microsoft Defender kayıt sorunlarını gidermek için bkz. [Uç Nokta için Microsoft Defender için Güvenlik Yönetimi ile ilgili ekleme sorunlarını giderme](troubleshoot-security-config-mgt.md).

@@ -18,12 +18,12 @@ ms.custom: ''
 description: SecOps personelinin Office 365 için Microsoft Defender yönetmesi için açıklayıcı bir playbook.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 97d7a03843fd9c4059bbaa99fa6a406919133026
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 32beb27564475c988b95da1a1f41f1943de1220e
+ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051084"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67441712"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>Office 365 için Microsoft Defender Güvenlik İşlemleri Kılavuzu
 
@@ -40,6 +40,8 @@ Bu kılavuzun geri kalanında SecOps personeli için gerekli etkinlikler açıkl
 Bu kılavuzun yardımcı makalesi, [Microsoft 365 Defender portalının Olaylar sayfasındaki Office 365 için Defender olayları ve uyarıları yönetmeye](mdo-sec-ops-manage-incidents-and-alerts.md) yönelik bir genel bakış sağlar.
 
 [Microsoft 365 Defender Güvenlik İşlemleri Kılavuzu](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops), planlama ve geliştirme için kullanabileceğiniz ek bilgiler içerir.
+
+Bu bilgiler hakkında bir video için bkz <https://youtu.be/eQanpq9N1Ps>. .
 
 ## <a name="daily-activities"></a>Günlük etkinlikler
 
@@ -76,7 +78,7 @@ Olay kuyruğu yönetimi ve sorumlu kişilikler aşağıdaki tabloda açıklanmı
 Office 365 için Defender'da, aşağıdaki konumlarda hatalı pozitif sonuçları (kötü olarak işaretlenmiş iyi postalar) ve hatalı negatifleri (hatalı postaya izin verilir) yönetirsiniz:
 
 - [Gönderimler portalı (yönetici gönderimleri)](admin-submission.md).
-- [Kiracı İzin Ver/Engelle Listesi](tenant-allow-block-list.md)
+- [Kiracı İzin Ver/Engelle Listesi](manage-tenant-allow-block-list.md)
 - [Tehdit Gezgini](threat-explorer.md)
 
 Daha fazla bilgi için, bu makalenin devamında [yer alan Hatalı pozitif ve hatalı negatif algılamaları yönetme](#manage-false-positive-and-false-negative-detections) bölümüne bakın.
@@ -88,7 +90,7 @@ Hatalı pozitif ve hatalı negatif yönetim ve sorumlu kişilikler aşağıdaki 
 |Microsoft'a <https://security.microsoft.com/reportsubmission>adresinden hatalı pozitif ve hatalı negatifler gönderin.|Günlük|Yanlış e-posta, URL ve dosya algılamaları bildirerek Microsoft'a sinyaller sağlayın.|Güvenlik operasyonları ekibi|
 |Yönetici gönderimi ayrıntılarını analiz edin.|Günlük|Microsoft'a yaptığınız gönderimler için aşağıdaki faktörleri anlayın: <ul><li>Hatalı pozitif veya yanlış negatife neden olan şey.</li><li>gönderim sırasındaki Office 365 için Defender yapılandırmanızın durumu.</li><li>Office 365 için Defender yapılandırmanızda değişiklik yapmanız gerekip gerekmediği.</li></ul>|Güvenlik operasyonları ekibi <br/><br/> Güvenlik Yönetimi|
 |konumundaki Kiracı İzin Ver/Engelle Listesine <https://security.microsoft.com/tenantAllowBlockList>blok girdileri ekleyin.|Günlük|Gerektiğinde hatalı negatif URL, dosya veya gönderen algılamaları için blok girdileri eklemek için Kiracı İzin Ver/Engelle Listesi'ni kullanın.|Güvenlik operasyonları ekibi|
-|Karantinadan hatalı negatifleri serbest bırakın.|Günlük|Alıcı iletinin yanlış karantinaya alındığını onayladıktan sonra, kullanıcılar için yayın isteklerini serbest bırakabilir veya onaylayabilirsiniz. <br/><br/> Kullanıcıların kendi karantinaya alınan iletilerine (yayın veya istek yayını dahil) neler yapabileceğini denetlemek için bkz. [Karantina ilkeleri](quarantine-policies.md).|Güvenlik operasyonları ekibi <br/><br/> Microsoft Mesajlaşma Ekibi|
+|Karantinadan hatalı negatifleri serbest bırakın.|Günlük|Alıcı iletinin yanlış karantinaya alındığını onayladıktan sonra, kullanıcılar için yayın isteklerini serbest bırakabilir veya onaylayabilirsiniz. <br/><br/> Kullanıcıların kendi karantinaya alınan iletilerine (yayın veya istek yayını dahil) neler yapabileceğini denetlemek için bkz. [Karantina ilkeleri](quarantine-policies.md).|Güvenlik operasyonları ekibi <br/><br/> Mesajlaşma Ekibi|
 
 ### <a name="review-phishing-and-malware-campaigns-that-resulted-in-delivered-mail"></a>Teslim edilen postayla sonuçlanan kimlik avı ve kötü amaçlı yazılım kampanyalarını gözden geçirin
 
@@ -147,20 +149,20 @@ Kampanya Görünümleri, kuruluşunuza yönelik kötü amaçlı yazılım ve kim
 |---|---|---|---|
 |Tehditler için düzenli ve proaktif avcılık: <ul><li><https://security.microsoft.com/threatexplorer></li><li><https://security.microsoft.com/v2/advanced-hunting></li></ul>.|Geçici|[Tehdit Gezgini](threat-explorer.md) ve [Gelişmiş tehdit avcılığı](../defender-endpoint/advanced-hunting-overview.md) kullanarak tehditleri arayın.|Güvenlik operasyonları ekibi <br/><br/> Tehdit avcılığı ekibi|
 |Avlanma sorgularını paylaşın.|Geçici|Daha hızlı el ile tehdit avcılığı ve düzeltme için güvenlik ekibi içinde sık kullanılan ve yararlı sorguları etkin bir şekilde paylaşın. <br/><br/> [Gelişmiş tehdit avcılığında](/microsoft-365/security/defender/advanced-hunting-shared-queries) [Tehdit izleyicilerini](threat-trackers.md) ve paylaşılan sorguları kullanın.|Güvenlik operasyonları ekibi <br/><br/> Tehdit avcılığı ekibi|
-|konumunda <https://security.microsoft.com/custom_detection>özel algılama kuralları oluşturun.|Geçici|Gelişmiş Tehdit Avcılığı'nda Office 365 için Defender verilerine dayalı olayları, desenleri ve tehditleri proaktif olarak izlemek için [özel algılama kuralları oluşturun](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting). Algılama kuralları, eşleşen ölçütlere göre uyarılar oluşturan gelişmiş tehdit avcılığı sorguları içerir.|Güvenlik operasyonları ekibi <br/><br/> Tehdit avcılığı ekibi|
+|konumunda <https://security.microsoft.com/custom_detection>özel algılama kuralları oluşturun.|Geçici|Gelişmiş Tehdit Avcılığı'nda Office 365 için Defender verilerine dayalı olayları, desenleri ve tehditleri proaktif olarak izlemek için [özel algılama kuralları oluşturun](../defender/custom-detections-overview.md). Algılama kuralları, eşleşen ölçütlere göre uyarılar oluşturan gelişmiş tehdit avcılığı sorguları içerir.|Güvenlik operasyonları ekibi <br/><br/> Tehdit avcılığı ekibi|
 
 ### <a name="review-defender-for-office-365-policy-configurations"></a>Office 365 için Defender ilkesi yapılandırmalarını gözden geçirin
 
 |Etkinlik|Cadence|Açıklama|Persona|
 |---|---|---|---|
-|konumundaki <https://security.microsoft.com/configurationAnalyzer>Office 365 için Defender ilkelerinin yapılandırmasını gözden geçirin.|Geçici <br/><br/> Aylık|Mevcut ilke ayarlarınızı [Office 365 için Defender için önerilen Standart veya Katı değerlerle](recommended-settings-for-eop-and-office365.md) karşılaştırmak için [Yapılandırma çözümleyicisini](configuration-analyzer-for-security-policies.md) kullanın. Yapılandırma çözümleyicisi, kuruluşunuzun güvenlik duruşunu düşürebilecek yanlışlıkla veya kötü amaçlı değişiklikleri tanımlar. <br/><br/> Ya da yu, PowerShell tabanlı [ORCA aracını](https://aka.ms/getorca) kullanabilir.|Güvenlik Yönetimi <br/><br/> Microsoft Mesajlaşma Ekibi|
-|Office 365 için Defender'de algılama geçersiz kılmalarını gözden geçirin:<https://security.microsoft.com/reports/TPSMessageOverrideReportATP>|Geçici <br/><br/> Aylık|**Tehdit Koruması durum raporunda**, kimlik avı olarak algılanan ancak ilke veya kullanıcı geçersiz kılma ayarları nedeniyle teslim edilen e-postayı gözden geçirmek için [Verileri Sisteme göre görüntüle geçersiz kılma \> Grafiği dökümünü](view-email-security-reports.md#view-data-by-system-override-and-chart-breakdown-by-reason) kullanın. <br/><br/> Kötü amaçlı olduğu belirlenen e-postaların teslimini önlemek için geçersiz kılmaları etkin bir şekilde araştırın, kaldırın veya hassas ayar yapın.|Güvenlik Yönetimi <br/><br/> Microsoft Mesajlaşma Ekibi|
+|konumundaki <https://security.microsoft.com/configurationAnalyzer>Office 365 için Defender ilkelerinin yapılandırmasını gözden geçirin.|Geçici <br/><br/> Aylık|Mevcut ilke ayarlarınızı [Office 365 için Defender için önerilen Standart veya Katı değerlerle](recommended-settings-for-eop-and-office365.md) karşılaştırmak için [Yapılandırma çözümleyicisini](configuration-analyzer-for-security-policies.md) kullanın. Yapılandırma çözümleyicisi, kuruluşunuzun güvenlik duruşunu düşürebilecek yanlışlıkla veya kötü amaçlı değişiklikleri tanımlar. <br/><br/> Ya da yu, PowerShell tabanlı [ORCA aracını](https://aka.ms/getorca) kullanabilir.|Güvenlik Yönetimi <br/><br/> Mesajlaşma Ekibi|
+|Office 365 için Defender'de algılama geçersiz kılmalarını gözden geçirin:<https://security.microsoft.com/reports/TPSMessageOverrideReportATP>|Geçici <br/><br/> Aylık|**Tehdit Koruması durum raporunda**, kimlik avı olarak algılanan ancak ilke veya kullanıcı geçersiz kılma ayarları nedeniyle teslim edilen e-postayı gözden geçirmek için [Verileri Sisteme göre görüntüle geçersiz kılma \> Grafiği dökümünü](view-email-security-reports.md#view-data-by-system-override-and-chart-breakdown-by-reason) kullanın. <br/><br/> Kötü amaçlı olduğu belirlenen e-postaların teslimini önlemek için geçersiz kılmaları etkin bir şekilde araştırın, kaldırın veya hassas ayar yapın.|Güvenlik Yönetimi <br/><br/> Mesajlaşma Ekibi|
 
 ### <a name="review-spoof-and-impersonation-detections"></a>Kimlik sahtekarlığı ve kimliğe bürünme algılamalarını gözden geçirme
 
 |Etkinlik|Cadence|Açıklama|Persona|
 |---|---|---|---|
-|**Spoof intelligence içgörülerini** ve **Kimliğe Bürünme algılama içgörülerini** gözden geçirin: <ul><li><<https://security.microsoft.com/spoofintelligence>></li><li><https://security.microsoft.com/impersonationinsight></li></ul>.|Geçici <br/><br/> Aylık|Kimlik sahtekarlığı ve kimliğe bürünme algılamaları için filtrelemeyi ayarlamak için kimlik sahtekarlığı [zekası içgörülerini](learn-about-spoof-intelligence.md) ve kimliğe bürünme [içgörülerini](impersonation-insight.md) kullanın.|Güvenlik Yönetimi <br/><br/> Microsoft Mesajlaşma Ekibi|
+|**Spoof intelligence içgörülerini** ve **Kimliğe Bürünme algılama içgörülerini** gözden geçirin: <ul><li><<https://security.microsoft.com/spoofintelligence>></li><li><https://security.microsoft.com/impersonationinsight></li></ul>.|Geçici <br/><br/> Aylık|Kimlik sahtekarlığı ve kimliğe bürünme algılamaları için filtrelemeyi ayarlamak için kimlik sahtekarlığı [zekası içgörülerini](learn-about-spoof-intelligence.md) ve kimliğe bürünme [içgörülerini](impersonation-insight.md) kullanın.|Güvenlik Yönetimi <br/><br/> Mesajlaşma Ekibi|
 
 ### <a name="review-priority-account-membership"></a>Öncelik hesabı üyeliğini gözden geçirme
 
@@ -212,7 +214,7 @@ Aşağıdaki izinler (roller ve rol grupları) Office 365 için Defender kullan�
 
     Bu rolü yeni veya mevcut bir rol grubuna atamak için bkz. [Microsoft 365 Defender portalında Email & işbirliği rolü üyeliğini değiştirme](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
 
-  - **Kiracı AllowBlockList Manager**: [Kiracı İzin Ver/Engelle Listesindeki izin ver ve engelle](tenant-allow-block-list.md) girdilerini yönetin. URL'leri, dosyaları (dosya karması kullanarak) veya gönderenleri engellemek, teslim edilen kötü amaçlı e-postaları araştırırken yapmanız gereken yararlı bir yanıt eylemidir.
+  - **Kiracı AllowBlockList Manager**: [Kiracı İzin Ver/Engelle Listesindeki izin ver ve engelle](manage-tenant-allow-block-list.md) girdilerini yönetin. URL'leri, dosyaları (dosya karması kullanarak) veya gönderenleri engellemek, teslim edilen kötü amaçlı e-postaları araştırırken yapmanız gereken yararlı bir yanıt eylemidir.
 
     Varsayılan olarak, bu rol yalnızca **Güvenlik İşleci** rol grubuna atanır. Ancak **, Güvenlik Yöneticileri** ve **Kuruluş yönetim** rol gruplarının üyeleri de Kiracı İzin Ver/Engelle Listesi'ndeki girdileri yönetebilir.
 
@@ -275,9 +277,9 @@ Güvenlik ekibi üyeleri, Microsoft 365 Defender portalında <https://security.m
 
   Toplu gönderim gerçekleştirmek için en fazla 10 ileti seçebilirsiniz. Bu şekilde oluşturulan Yönetici gönderimler Gönderim portalında da görülebilir.
 
-Hatalı negatiflerin kısa vadeli olarak azaltılması için, güvenlik ekipleri [Kiracı İzin Ver/Engelle Listesi'nde](tenant-allow-block-list.md) dosyalar, URL'ler ve gönderenler için [blok girişlerini](manage-tenant-blocks.md) doğrudan yönetebilir.
+Hatalı negatiflerin kısa vadede azaltılması için, güvenlik ekipleri [Kiracı İzin Ver/Engelle Listesi'nde](manage-tenant-allow-block-list.md) dosyalar, URL'ler ve etki alanları veya e-posta adresleri için blok girişlerini doğrudan yönetebilir.
 
-Hatalı pozitif sonuçların kısa vadeli risk azaltması için güvenlik ekipleri Kiracı İzin Ver/Engelle Listesi'ndeki [izin verme girdilerini](manage-tenant-allows.md) doğrudan yönetemez. Bunun yerine yönetici gönderimlerini ve **Bu gibi iletilere izin ver** seçeneğini [kullanmaları](admin-submission.md) gerekir.
+Hatalı pozitif sonuçların kısa vadeli risk azaltması için, güvenlik ekipleri Kiracı İzin Ver/Engelle Listesi'nde etki alanları ve e-posta adresleri için izin verme girdilerini doğrudan yönetemez. Bunun yerine, e-posta iletisini hatalı pozitif olarak raporlamak için [yönetici gönderimlerini kullanmaları](admin-submission.md) gerekir. Yönergeler için bkz. [Gönderimler portalında etki alanları ve e-posta adresleri için izin verme girdileri oluşturmak için Microsoft 365 Defender portalını kullanma](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
 
 [Office 365 için Defender'de karantinaya almak](manage-quarantined-messages-and-files.md) tehlikeli veya istenmeyen iletileri ve dosyaları barındırıyor. Güvenlik ekipleri tüm kullanıcılar için tüm karantinaya alınmış iletileri görüntüleyebilir, yayımlayabilir ve silebilir. Bu özellik, hatalı pozitif bir ileti veya dosya karantinaya alındığında güvenlik ekiplerinin etkili bir şekilde yanıt vermesini sağlar.
 

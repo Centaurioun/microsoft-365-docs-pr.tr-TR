@@ -1,6 +1,6 @@
 ---
 title: Windows'ta Microsoft Defender Çevrimdışı
-description: Microsoft Defender Çevrimdışı'nı doğrudan Windows Defender Virüsten Koruma uygulamasından kullanabilirsiniz. Ayrıca ağınızda nasıl dağıtılacağı da yönetilebilir.
+description: Microsoft Defender Çevrimdışı'nı doğrudan Microsoft Defender Virüsten Koruma uygulamasından kullanabilirsiniz. Ayrıca ağınızda nasıl dağıtılacağı da yönetilebilir.
 keywords: tarama, defender, çevrimdışı
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: cc01b6d81d272bfd0ee808131804cf59d4502350
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 33f41114c0647de2987a5ed5abdaec4c885fcbfd
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051854"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387451"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Microsoft Defender çevrimdışı tarama sonuçlarını gözden geçirin ve çalıştırın
 
@@ -55,10 +55,10 @@ Microsoft Defender Çevrimdışı'nı uç noktadan çalıştırmak için kullan�
 
 ## <a name="microsoft-defender-offline-updates"></a>Microsoft Defender Çevrimdışı güncelleştirmeleri
 
-Microsoft Defender Çevrimdışı, uç noktada bulunan en son koruma güncelleştirmelerini kullanır; Windows Defender Virüsten Koruma her güncelleştirildiğinde güncelleştirilir.
+Microsoft Defender Çevrimdışı, uç noktada bulunan en son koruma güncelleştirmelerini kullanır; Microsoft Defender Virüsten Koruma her güncelleştirildiğinde güncelleştirilir.
 
 > [!NOTE]
-> Çevrimdışı taramayı çalıştırmadan önce Microsoft Defender AV korumasını güncelleştirmeye çalışmanız gerekir. bir güncelleştirmeyi grup ilkesi ile zorlayabilirsiniz veya normalde uç noktalara güncelleştirme dağıtabilirsiniz ya da [Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi'nden](https://www.microsoft.com/security/portal/definitions/adl.aspx) en son koruma güncelleştirmelerini el ile indirip yükleyebilirsiniz.
+> Çevrimdışı taramayı çalıştırmadan önce Microsoft Defender Virüsten Koruma korumasını güncelleştirmeyi denemeniz gerekir. bir güncelleştirmeyi grup ilkesi ile zorlayabilirsiniz veya normalde uç noktalara güncelleştirme dağıtabilirsiniz ya da [Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi'nden](https://www.microsoft.com/security/portal/definitions/adl.aspx) en son koruma güncelleştirmelerini el ile indirip yükleyebilirsiniz.
 
 Daha fazla bilgi için [Microsoft Defender Virüsten Koruma Güvenlik bilgileri güncelleştirmelerini yönetme](manage-protection-updates-microsoft-defender-antivirus.md) konusuna bakın.
 
@@ -82,7 +82,7 @@ Microsoft Defender Çevrimdışı taramaları **, Kötü amaçlı yazılım düz
 
 ## <a name="configure-notifications"></a>Bildirimleri yapılandırma
 
-Microsoft Defender Çevrimdışı bildirimleri, diğer Microsoft Defender AV bildirimleriyle aynı ilke ayarında yapılandırılır.
+Microsoft Defender Çevrimdışı bildirimleri, diğer Microsoft Defender Virüsten Koruma bildirimleriyle aynı ilke ayarında yapılandırılır.
 
 Windows Defender'deki bildirimler hakkında daha fazla bilgi için [Uç noktalarda görünen bildirimleri yapılandırma](configure-notifications-microsoft-defender-antivirus.md) konusuna bakın.
 

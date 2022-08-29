@@ -15,12 +15,12 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: c1f6fa058715f831b1c8ba594bf1604ad92e9ed2
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 642fc9b8f38b0687a27d73a47324dc3b3f70269e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669374"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388198"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Uç Nokta için Microsoft Defender uyarısıyla ilişkili bir dosyayı araştırma
 
@@ -68,7 +68,7 @@ Bu eylemler hakkında daha fazla bilgi için bkz. [Dosyada yanıt eylemi gerçek
 
 Dosya ayrıntıları, olay, kötü amaçlı yazılım algılama ve dosya yaygınlık kartları dosyayla ilgili çeşitli öznitelikleri görüntüler.
 
-Dosyanın MD5'i, Virüs Toplam algılama oranı, varsa Microsoft Defender AV algılaması ve dosyanın yaygınlığı gibi ayrıntıları görürsünüz.
+Dosyanın MD5'i, Virüs Toplam algılama oranı, varsa Microsoft Defender Virüsten Koruma algılaması ve dosyanın yaygınlığı gibi ayrıntıları görürsünüz.
 
 Dosya yaygınlığı kartı, dosyanın kuruluştaki ve dünya çapındaki cihazlarda nerede görüldüğünü gösterir. Dosyanın görüldüğü ilk ve son cihazlara kolayca özetleyebilir ve araştırmaya cihaz zaman çizelgesinde devam edebilirsiniz. 
 

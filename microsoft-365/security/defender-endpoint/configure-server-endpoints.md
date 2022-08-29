@@ -19,12 +19,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 83a311676a1b74e551817c4f0b64f024f80738c8
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 4a9cb2e20c2c2b5bfc47ae738d52f248fb464a3e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306440"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387693"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme
 
@@ -174,7 +174,7 @@ Yükleyici paketi, aşağıdaki bileşenlerin bir güncelleştirme aracılığı
 
 - 14 Eylül 2021 veya sonraki sürümlerden hizmet yığını güncelleştirmesi (SSU) yüklenmelidir.
 - 20 Eylül 2018 veya sonraki sürümlerden en son Toplu Güncelleştirme (LCU) yüklenmelidir.  Sunucuya en son kullanılabilir SSU ve LCU'nun yüklenmesi önerilir
-- Microsoft Defender Virüsten Koruma (MDAV) özelliğini etkinleştirin ve güncel olduğundan emin olun. Windows Server'da Defender Virüsten Koruma'yı etkinleştirme hakkında daha fazla bilgi için bkz. [Devre dışı bırakıldıysa Windows Server'da Defender Virüsten Koruma'yı](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled) [yeniden etkinleştirme ve kaldırılmışsa Windows Server'da Defender Virüsten Koruma'yı yeniden etkinleştirme](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled).
+- Microsoft Defender Virüsten Koruma özelliğini etkinleştirin ve güncel olduğundan emin olun. Windows Server'da Defender Virüsten Koruma'yı etkinleştirme hakkında daha fazla bilgi için bkz. [Devre dışı bırakıldıysa Windows Server'da Defender Virüsten Koruma'yı](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled) [yeniden etkinleştirme ve kaldırılmışsa Windows Server'da Defender Virüsten Koruma'yı yeniden etkinleştirme](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled).
 - Windows Update kullanarak en son platform sürümünü indirin ve yükleyin. Alternatif olarak, güncelleştirme paketini [Microsoft Update Kataloğu'ndan](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) veya [MMPC'den](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64) el ile indirin.
 
 #### <a name="prerequisites-for-running-with-third-party-security-solutions"></a>Üçüncü taraf güvenlik çözümleriyle çalışmak için önkoşullar
@@ -314,7 +314,7 @@ Bu betik, [önceki MMA tabanlı Uç Nokta için Microsoft Defender çözümünde
 
 9. **Tamam'ı** seçin ve açık GPMC pencerelerini kapatın.
 
-10. GPO'yu Bir Kuruluş Birimine (OU) bağlamak için sağ tıklayın ve **Var olan bir GPO'yu bağla'ya** tıklayın. Görüntülenen iletişim kutusunda, bağlamak istediğiniz grup ilkesi Nesnesi'ni seçin. **Tamam**'a tıklayın.
+10. GPO'yu Bir Kuruluş Birimine (OU) bağlamak için sağ tıklayın ve **Var olan bir GPO'yu bağla'ya** tıklayın. Görüntülenen iletişim kutusunda, bağlamak istediğiniz grup ilkesi Nesnesi'ni seçin. **Tamam**'ı tıklatın.
 
 Daha fazla yapılandırma ayarı için bkz [. Örnek koleksiyon ayarlarını](configure-endpoints-gp.md#configure-sample-collection-settings) yapılandırma ve [Diğer önerilen yapılandırma ayarları](configure-endpoints-gp.md#other-recommended-configuration-settings).
 

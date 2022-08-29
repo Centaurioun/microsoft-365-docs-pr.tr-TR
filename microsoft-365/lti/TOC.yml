@@ -36,3 +36,9 @@
   items:
     - name: Brightspace ile Microsoft Teams sınıflarını ve toplantılarını kullanma
       href: teams-classes-meetings-with-brightspace.md
+    - name: Microsoft OneDrive LTI'sini Brightspace ile kullanma
+      href: onedrive-lti-brightspace.md
+- name: Schoology tümleştirmeleri
+  items:
+    - name: Microsoft Teams toplantılarını Schoology ile kullanma
+      href: teams-classes-and-meetings-with-schoology.md

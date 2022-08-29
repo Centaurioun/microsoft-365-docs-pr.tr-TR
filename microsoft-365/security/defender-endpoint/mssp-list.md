@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9a4ea838092c379ff3d58f78b5622083f7dcbfa7
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: bade400bfd794371f294df28320d3a8a11aa30b4
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099271"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445052"
 ---
 # <a name="supported-managed-security-service-providers"></a>Desteklenen güvenlik hizmeti sağlayıcıları
 
@@ -46,7 +46,7 @@ Logo |İş ortağı adı   | Açıklama
 ![CyberProof logosunun resmi.](images/cyberproof-logo.png) |[CyberProof Yönetilen Algılama & Yanıtı (MDR)](https://go.microsoft.com/fwlink/?linkid=2163964) | 7/24 yönetilen tehdit algılama ve yanıt hizmetleri, Microsoft Sentinel ve Uç Nokta için Defender ile tamamen tümleştirilmiş.
 ![Dell Technologies Advanced Threat Protection logosunun görüntüsü.](images/dell-logo.png)| [Dell Technologies Advanced Threat Protection](https://go.microsoft.com/fwlink/?linkid=2091004) | 7/24 özelliği olan kötü amaçlı davranışlar ve anomaliler için profesyonel izleme hizmeti
 :::image type="content" source="images/dxc-logo.png" alt-text="DXC-Managed Endpoint Threat Detection and Response logosunun görüntüsü.":::.| [DXC Tarafından Yönetilen Uç Nokta Tehdit Algılama ve Yanıt](https://go.microsoft.com/fwlink/?linkid=2090395) | Geleneksel güvenlik savunmalarından kaçınan ve bunları günler değil, saatler veya dakikalar içinde içeren uç nokta tehditlerini belirleyin.
-![eSentire günlüğünün resmi.](images/esentire-logo.png) | [eSentire Yönetilen Algılama ve Yanıt](https://go.microsoft.com/fwlink/?linkid=2154970) | 7/24 tehdit araştırmaları ve Uç Nokta için Microsoft Defender yoluyla yanıt.
+![eSentire günlüğünün resmi.](images/esentire-logo.png) | [eSentire Yönetilen Algılama ve Yanıt](https://go.microsoft.com/fwlink/?linkid=2154970) | Microsoft 365 Defender & Sentinel artı 15 dakikalık ortalama kapsama süresi dahil olmak üzere Microsoft Ekosistemi genelinde sertifikalı MDR uzmanlığıyla 7/24 tehdit avcılığı, araştırma ve eksiksiz yanıt.
 ![Expel logosunun resmi.](images/expel-logo.png)| [Uç Nokta için Microsoft Defender için Expel Yönetilen algılama ve yanıt](https://go.microsoft.com/fwlink/?linkid=2162430) | Expel, Uç Nokta için Microsoft Defender güvenlik risklerini algılayarak güvenliğinizin sürekli kalmasına yardımcı olur.
 ![Mandiant logosunun resmi.](images/mandiant-logo.png) | [Uç Nokta için Microsoft Defender için Mandiant Managed Defense (MDR)](https://go.microsoft.com/fwlink/?linkid=2164352) | Mandiant'ın 7/24 ön cephe MDR zekası ve uzmanlığıyla Uç Nokta için Defender'ınızı güçlendirin.
 ![NTT Security logosunun resmi.](images/ntt-logo.png)| [NTT Güvenliği](https://go.microsoft.com/fwlink/?linkid=2095320) | NTT'nin EDR Hizmeti, uç noktanız ve ağınız genelinde 7/24 güvenlik izleme & yanıt sağlar

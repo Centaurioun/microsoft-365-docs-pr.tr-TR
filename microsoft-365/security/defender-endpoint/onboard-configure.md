@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f52dd982c9a418af9184389e8e83e6077326ee80
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 365226ece74ec4e0a46e0de75d92c875457bdab5
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100019"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445126"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Cihazları ekleyin ve Uç Nokta için Microsoft Defender işlevlerini yapılandırın
 
@@ -89,43 +89,14 @@ Cihazları ekleme, Uç Nokta için Microsoft Defender uç nokta algılama ve yan
 
 Cihazları ekledikten sonra hizmetin diğer özelliklerini yapılandırmanız gerekir. Aşağıdaki tabloda, ortamınız için en iyi korumayı elde etmek için yapılandırabileceğiniz özellikler listelemektedir.
 
-| Yetenek | Açıklama |
+| Yeteneği | Açıklama |
 |-|-|
-| [Tehdit & Güvenlik Açığı Yönetimini Yapılandırma (TVM)](tvm-prerequisites.md) | Tehdit & Güvenlik Açığı Yönetimi, Uç Nokta için Microsoft Defender bir bileşenidir ve hem güvenlik yöneticilerine hem de güvenlik operasyonları ekiplerine aşağıdakiler gibi benzersiz bir değer sağlar: <br><br> - Uç nokta güvenlik açıklarıyla ilişkili gerçek zamanlı uç nokta algılama ve yanıt (EDR) içgörüleri. <br><br> - Olay araştırmaları sırasında çok değerli cihaz güvenlik açığı bağlamı. <br><br> - Microsoft Intune ve Microsoft System Center Configuration Manager aracılığıyla yerleşik düzeltme işlemleri.  |
+| [Microsoft Defender Güvenlik Açığı Yönetimi yapılandırma (MDVM)](tvm-prerequisites.md) | Defender Güvenlik Açığı Yönetimi, Uç Nokta için Microsoft Defender bir bileşenidir ve hem güvenlik yöneticilerine hem de güvenlik operasyonları ekiplerine aşağıdakiler gibi benzersiz bir değer sağlar: <br><br> - Uç nokta güvenlik açıklarıyla ilişkili gerçek zamanlı uç nokta algılama ve yanıt (EDR) içgörüleri. <br><br> - Olay araştırmaları sırasında çok değerli cihaz güvenlik açığı bağlamı. <br><br> - Microsoft Intune ve Microsoft System Center Configuration Manager aracılığıyla yerleşik düzeltme işlemleri.  |
 | [Yeni nesil korumayı (NGP) yapılandırma](configure-microsoft-defender-antivirus-features.md) | Microsoft Defender Virüsten Koruma, masaüstü bilgisayarlar, taşınabilir bilgisayarlar ve sunucular için yeni nesil koruma sağlayan yerleşik bir kötü amaçlı yazılımdan koruma çözümüdür. Microsoft Defender Virüsten Koruma şunları içerir:<br> <br>-Yeni ve yeni tehditlerin neredeyse anında algılanması ve engellenmesi için bulut tabanlı koruma. Bulut tabanlı koruma, makine öğrenmesi ve Akıllı Güvenlik Grafı ile birlikte Microsoft Defender Virüsten Koruma'yı destekleyen yeni nesil teknolojilerin bir parçasıdır.<br> <br> - Gelişmiş dosya ve işlem davranışı izleme ve diğer buluşsal yöntemler kullanılarak her zaman açık tarama ("gerçek zamanlı koruma" olarak da bilinir).<br><br> - Makine öğrenmesi, insan ve otomatik büyük veri analizi ve derinlemesine tehdit direnci araştırmalarına dayalı ayrılmış koruma güncelleştirmeleri. |
 | [Saldırı yüzeyini azaltmayı yapılandırma (ASR)](overview-attack-surface-reduction.md) | Uç Nokta için Microsoft Defender'daki saldırı yüzeyi azaltma özellikleri, kuruluştaki cihazların ve uygulamaların yeni ve yeni tehditlere karşı korunmasına yardımcı olur. |
 | [Otomatik Araştırma & Düzeltme (AIR) özelliklerini yapılandırma](configure-automated-investigations-remediation.md) | Uç Nokta için Microsoft Defender, tek tek araştırılması gereken uyarı hacmini önemli ölçüde azaltmak için Otomatik araştırma kullanır. Otomatik araştırma özelliği, uyarıları incelemek ve ihlalleri çözmek için anında düzeltme eylemi uygulamak için analistler tarafından kullanılan çeşitli inceleme algoritmalarından ve işlemlerden (playbook'lar gibi) yararlanır. Bu, uyarı hacmini önemli ölçüde azaltarak güvenlik operasyonları uzmanlarının daha karmaşık tehditlere ve diğer yüksek değerli girişimlere odaklanmasına olanak sağlar. |
 | [Microsoft Tehdit Uzmanları (MTE) özelliklerini yapılandırma](configure-microsoft-threat-experts.md) | Microsoft Tehdit Uzmanları, güvenlik operasyon merkezlerine (SOC) benzersiz ortamlarındaki kritik tehditlerin kaçırılmamasını sağlamaya yardımcı olmak için uzman düzeyinde izleme ve analiz sağlayan yönetilen bir avcılık hizmetidir.      |
 
+Daha fazla bilgi için bkz[. Platforma göre desteklenen Uç Nokta için Microsoft Defender özellikleri](supported-capabilities-by-platform.md).
 
-## <a name="supported-capabilities-for-windows-devices"></a>Windows cihazları için desteklenen özellikler
 
-|İşletim Sistemi  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>  |<sup>Windows Server 2016[[1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
-|---------|---------|---------|---------|---------|---------|
-|**Korunma**    |         |         |         |         |         |
-|Saldırı Yüzeyi Azaltma kuralları     |    E     |   E      |    E     |    E     |    E     |
-|Cihaz Denetimi     |     E    |    N     |    N     |    N     |    N     |  
-|Güvenlik duvarı     |      E   |    E     |     E    |    E    |    E   |
-|Ağ Koruması     |      E   |    E     |     E    |    E    |    E   |
-|Yeni nesil koruma     |      E   |    E     |     E    |    E    |    E   |
-|Kurcalama Koruması     |        E   |    E     |     E    |    E    |    E   |
-|Web Koruması     |       E   |    E     |     E    |    E    |    E   |
-|||||||
-|**Algılama**     |         |         |         |||
-|Gelişmiş avcılık     |      E   |    E     |     E    |    E    |    E   |
-|Özel dosya göstergeleri     |      E   |    E     |     E    |    E    |    E   |
-|Özel ağ göstergeleri     |      E   |    E     |     E    |    E    |    E   |
-|Pasif Mod & EDR Bloğu     |      E   |    E     |     E    |    E    |    E   |
-|Algılama algılayıcısı     |      E   |    E     |     E    |    E    |    E   |
-|Uç nokta & ağ cihazı bulma     |      E   |    N     |     N    |    N    |    N   |
-|||||||
-|**Yanıt**     |         |         |         |||
-|Otomatik Araştırma & Yanıtı (AIR)    |      E   |    E     |     E    |    E    |    E   |
-|Cihaz yanıtı özellikleri: yalıtım, araştırma paketi toplama, AV taraması çalıştırma     |      E   |    E     |     E    |    E    |    E   |
-|Dosya yanıtı özellikleri: dosya toplama, derin analiz, blok dosyası, durdurma ve karantina işlemleri     |      E   |    E     |     E    |    E    |    E   |
-|Canlı Yanıt    |      E   |    E     |     E    |    E    |    E   |
-
-(<a id="fn1">1</a>) Windows Server 2012 R2 ve 2016 için modern, birleşik çözümü ifade eder. Daha fazla bilgi için bkz. [Uç Nokta için Defender hizmetine Windows Sunucuları ekleme](configure-server-endpoints.md).
-
->[!NOTE]
->Windows 7, 8.1, Windows Server 2008 R2, EDR algılayıcısı ve System Center Endpoint Protection (SCEP) kullanan AV için destek içerir.

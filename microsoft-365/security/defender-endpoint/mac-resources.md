@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d7f01e3336fef9382ae6556180deaf14155b6d44
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7215beeec25f4d343e574b8e2bcda22a43f0f45e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943628"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386812"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender kaynakları
 
@@ -32,7 +32,7 @@ ms.locfileid: "66943628"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="collecting-diagnostic-information"></a>Tanılama bilgilerini toplama
 
@@ -120,6 +120,7 @@ Tablo ve JSON biçimi çıkış türlerini destekler. Her komut için varsayıla
 |Yapılandırma|Güvenlik bilgileri güncelleştirmelerinden sonra taramaları açma/kapatma|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
 |Yapılandırma|Arşiv taramasını açma/kapatma (yalnızca isteğe bağlı taramalar)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Yapılandırma|Dosya karması hesaplamasını açma/kapatma|`mdatp config enable-file-hash-computation --value [enabled/disabled]`|
+|Yapılandırma|data_loss_prevention açma/kapatma|`mdatp config data_loss_prevention --value [enabled/disabled]`|
 |Tanılama|Günlük düzeyini değiştirme|`mdatp log level set --level [error/warning/info/verbose]`|
 |Tanılama|Tanılama günlükleri oluşturma|`mdatp diagnostic create --path [directory]`|
 |Hizmet Durumu|Ürünün durumunu kontrol edin|`mdatp health`|
@@ -129,9 +130,9 @@ Tablo ve JSON biçimi çıkış türlerini destekler. Her komut için varsayıla
 |Koruma|Tam tarama yapma|`mdatp scan full`|
 |Koruma|Devam eden isteğe bağlı taramayı iptal etme|`mdatp scan cancel`|
 |Koruma|Güvenlik bilgileri güncelleştirmesi isteme|`mdatp definitions update`|
-|EDR|Etiketi ayarla/kaldır, yalnızca GROUP desteklenir|`mdatp edr tag set --name GROUP --value [name]`|
-|EDR|Cihazdan grup etiketini kaldırma|`mdatp edr tag remove --tag-name [name]`|
-|EDR|Grup Kimliği Ekle|`mdatp edr group-ids --group-id [group]`|
+|Edr|Etiketi ayarla/kaldır, yalnızca GROUP desteklenir|`mdatp edr tag set --name GROUP --value [name]`|
+|Edr|Cihazdan grup etiketini kaldırma|`mdatp edr tag remove --tag-name [name]`|
+|Edr|Grup Kimliği Ekle|`mdatp edr group-ids --group-id [group]`|
 
 ### <a name="how-to-enable-autocompletion"></a>Otomatik tamamlama nasıl etkinleştirilir?
 

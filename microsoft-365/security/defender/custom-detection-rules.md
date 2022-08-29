@@ -1,7 +1,7 @@
 ---
-title: Yeni görünümde özel algılama kurallarını oluşturma Microsoft 365 Defender
-description: Gelişmiş arama sorgularına dayalı olarak özel algılama kurallarını nasıl oluştur sevk ve yöneteceklerini öğrenin
-keywords: gelişmiş av, tehdit avı, siber tehdit avı, Microsoft 365 Defender, Microsoft 365, m365, arama, sorgu, telemetri, özel algılamalar, kurallar, şema, kusto, RBAC, izinler, Uç nokta için Microsoft Defender
+title: Microsoft 365 Defender'da özel algılama kuralları oluşturma ve yönetme
+description: Gelişmiş tehdit avcılığı sorgularını temel alan özel algılama kuralları oluşturmayı ve yönetmeyi öğrenin
+keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgulama, telemetri, özel algılamalar, kurallar, şema, kusto, RBAC, izinler, Uç Nokta için Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,57 +20,57 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dac2a68249d90b212e6bbcaacdec84918560deb5
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 0bc0ff6c0ccd9013685ff59e2ce3f12745a7e82e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755811"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387033"
 ---
-# <a name="create-and-manage-custom-detections-rules"></a>Özel algılama kurallarını oluşturma ve yönetme
+# <a name="create-and-manage-custom-detections-rules"></a>Özel algılama kuralları oluşturma ve yönetme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 - Uç Nokta için Microsoft Defender
 
-Özel algılama kuralları, gelişmiş arama sorgularını kullanarak tasarlanması ve [ince ayarlanması için kurallardır](advanced-hunting-overview.md) . Bu kurallar ihlalin şüpheli etkinliği ve hatalı yapılandırılmış uç noktalar da dahil olmak üzere çeşitli olayları ve sistem durumunu önceden izlemenizi sağlar. Bunları düzenli aralıklarla çalıştıracak şekilde ayarlayabilirsiniz; her eşleşme olduğunda uyarılar oluşturmak ve yanıt eylemleri yapmak.
+Özel algılama kuralları, [gelişmiş tehdit avcılığı](advanced-hunting-overview.md) sorgularını kullanarak tasarlayabileceğiniz ve ayarlayabileceğiniz kurallardır. Bu kurallar, şüpheli ihlal etkinliği ve yanlış yapılandırılmış uç noktalar dahil olmak üzere çeşitli olayları ve sistem durumlarını proaktif olarak izlemenize olanak sağlar. Bunları düzenli aralıklarla çalışacak şekilde ayarlayabilir, uyarılar oluşturabilir ve her eşleşme olduğunda yanıt eylemleri gerçekleştirebilirsiniz.
 
 ## <a name="required-permissions-for-managing-custom-detections"></a>Özel algılamaları yönetmek için gerekli izinler
 
-Özel algılamaları yönetmek için, size şu rollerden biri atanacak:
+Özel algılamaları yönetmek için şu rollerden birine atanmış olmanız gerekir:
 
-- **Güvenlik yöneticisi**:Bu kullanıcı [Azure Active Directory portalında](/azure/active-directory/roles/permissions-reference#security-administrator) ve diğer portal Microsoft 365 Defender hizmetlerde güvenlik ayarlarını yönetebilir.
+- **Güvenlik yöneticisi**: Bu [Azure Active Directory rolüne](/azure/active-directory/roles/permissions-reference#security-administrator) sahip kullanıcılar Microsoft 365 Defender portalında ve diğer portallarda ve hizmetlerde güvenlik ayarlarını yönetebilir.
 
-- **Güvenlik işleci**:[Bu Azure Active Directory](/azure/active-directory/roles/permissions-reference#security-operator) olan kullanıcılar uyarıları yönetebilir ve portalda yer alan tüm bilgiler de dahil olmak üzere, güvenlikle ilgili özelliklere genel olarak salt Microsoft 365 Defender erişime sahip olabilir. Bu rol, yalnızca Uç Nokta için Microsoft Defender'da rol tabanlı erişim denetimi (RBAC) kapalı olursa, özel algılamaları yönetmek için yeterlidir. RBAC yapılandırılmışsa, Uç Nokta için Defender güvenlik **ayarları iznini** de yönetmeniz gerekir.
+- **Güvenlik operatörü**: Bu [Azure Active Directory rolüne](/azure/active-directory/roles/permissions-reference#security-operator) sahip kullanıcılar uyarıları yönetebilir ve Microsoft 365 Defender portalındaki tüm bilgiler de dahil olmak üzere güvenlikle ilgili özelliklere genel salt okunur erişime sahip olabilir. Bu rol, yalnızca rol tabanlı erişim denetimi (RBAC) Uç Nokta için Microsoft Defender kapalı olduğunda özel algılamaları yönetmek için yeterlidir. RBAC'yi yapılandırdıysanız, Uç Nokta için Defender **için güvenlik ayarlarını yönetme** iznine de ihtiyacınız vardır.
 
-Belirli veri çözümlerinden verilere uygulanacak özel algılamaları da Microsoft 365 Defender izinlerine sahipsinizdir. Örneğin, örneğin yalnızca bu Microsoft 365 Defender Office `Email` için özel algılamalar oluşturmak için tabloları değil, yalnızca tabloları kullanarak özel algılamalar oluşturabilirsiniz`Identity`.  
+Ayrıca, belirli Microsoft 365 Defender çözümlerinden gelen verilere uygulanan özel algılamaları, bunlar için izinleriniz varsa yönetebilirsiniz. Örneğin, yalnızca Office için Microsoft 365 Defender için yönetme izinleriniz varsa tabloları kullanarak `Email` özel algılamalar oluşturabilirsiniz, tabloları değil`Identity`.  
 
-Gerekli izinleri yönetmek için genel **yönetici şunları** yönetebilir:
+Gerekli izinleri yönetmek için genel **yönetici** şunları yapabilir:
 
-- RolesSecurity **admin altında**, **güvenlik yöneticisini** [veya Microsoft 365 yönetim merkezi](https://admin.microsoft.com/) işleci **rolünü** >  **attayin**.
-- Ayarlar **PermissionsBac** >  altında, [Microsoft 365 Defender'de Uç Nokta](https://security.microsoft.com/)  >  için Microsoft Defender RBAC **ayarlarını kontrol edin**. Güvenlik ayarlarını yönetme iznini atamak için **ilgili rolü** seçin.
+- Güvenlik **yöneticisi** veya **güvenlik operatörü** rolünü **Roller** > **Güvenlik yöneticisi** altındaki [Microsoft 365 yönetim merkezi](https://admin.microsoft.com/) atayın.
+- **Microsoft 365 Defender'da Ayarlar** > **İzin rolleri** >  altındaki [Uç Nokta için Microsoft Defender](https://security.microsoft.com/) için RBAC ayarlarını **denetleyin.** **Güvenlik ayarlarını yönetme** iznini atamak için ilgili rolü seçin.
 
 > [!NOTE]
-> Özel algılamaları yönetmek için, **güvenlik işleçleri** RBAC  açıksa Uç Nokta için Microsoft Defender'da güvenlik ayarları iznini yönetmesi gerekir.
+> Özel algılamaları yönetmek için, RBAC açıksa **güvenlik operatörlerinin** **Uç Nokta için Microsoft Defender'de güvenlik ayarlarını yönetme** iznine sahip olması gerekir.
 
 ## <a name="create-a-custom-detection-rule"></a>Özel algılama kuralı oluşturma
 ### <a name="1-prepare-the-query"></a>1. Sorguyu hazırlayın.
 
-Gelişmiş Microsoft 365 Defender'ne **gidip mevcut** bir sorguyu seçin veya yeni bir sorgu oluşturun. Yeni bir sorgu kullanırken, hataları tanımlamak ve olası sonuçları anlamak için sorguyu çalıştırın.
+Microsoft 365 Defender portalında **Gelişmiş tehdit avcılığı'na** gidin ve var olan bir sorguyu seçin veya yeni bir sorgu oluşturun. Yeni bir sorgu kullanırken, hataları belirlemek ve olası sonuçları anlamak için sorguyu çalıştırın.
 
 >[!IMPORTANT]
->Hizmetin çok fazla sayıda uyarı geri dönmesini önlemek için, her kural her çalıştırıca yalnızca 100 uyarı oluşturmakla sınırlıdır. Kural oluşturmadan önce, günlük normal etkinlik uyarılarını önlemek için sorgunuzda küçük ayarlamalar oluşturun.
+>Hizmetin çok fazla uyarı döndürmesini önlemek için, her kural her çalıştırıldığında yalnızca 100 uyarı oluşturmakla sınırlıdır. Kural oluşturmadan önce, normal, günlük etkinlik uyarılarını önlemek için sorgunuzda ayarlamalar yapın.
 
 
 #### <a name="required-columns-in-the-query-results"></a>Sorgu sonuçlarında gerekli sütunlar
-Özel bir algılama kuralı oluşturmak için, sorgunun aşağıdaki sütunları geri iadesi gerekir:
+Özel algılama kuralı oluşturmak için sorgu aşağıdaki sütunları döndürmelidir:
 
-- `Timestamp`—oluşturulan uyarılar için zaman damgasını ayarlamak için kullanılır
-- `ReportId`—orijinal kayıtlar için aramaları sağlar
-- Belirli cihazları, kullanıcıları veya posta kutularını tanımlamak için aşağıdaki sütunlardan biri:
+- `Timestamp`—oluşturulan uyarıların zaman damgasını ayarlamak için kullanılır
+- `ReportId`—özgün kayıtlar için aramaları etkinleştirir
+- Belirli cihazları, kullanıcıları veya posta kutularını tanımlayan aşağıdaki sütunlardan biri:
     - `DeviceId`
     - `DeviceName`
     - `RemoteDeviceName`
@@ -86,18 +86,18 @@ Gelişmiş Microsoft 365 Defender'ne **gidip mevcut** bir sorguyu seçin veya ye
     - `InitiatingProcessAccountObjectId`
 
 >[!NOTE]
->Gelişmiş av şemasına yeni tablolar eklendiklerine, başka varlıklar için [destek eklenecektir](advanced-hunting-schema-tables.md).
+>[Gelişmiş tehdit avcılığı şemasına](advanced-hunting-schema-tables.md) yeni tablolar eklendikçe ek varlıklar için destek eklenecektir.
 
-Sonuçları özelleştirmek veya toplamak için veya `project` `summarize` işleci kullanmayanlar gibi basit sorgular genellikle bu ortak sütunları verir.
+Sonuçları özelleştirmek veya toplamak için veya `summarize` işlecini kullanmayanlar `project` gibi basit sorgular genellikle bu ortak sütunları döndürür.
 
-Daha karmaşık sorguların bu sütunları geri iade etmenin çeşitli yolları vardır. Örneğin, 'gibi bir sütun `DeviceId``Timestamp` `ReportId` altındaki varlığa göre toplamayı ve saymayı tercih ederseniz, her benzersiz değeri içeren en son olaydan geri dönebilirsiniz.`DeviceId`
+Daha karmaşık sorguların bu sütunları döndürmesini sağlamanın çeşitli yolları vardır. Örneğin, gibi `DeviceId`bir sütun altında varlığa göre toplamayı ve sayma işlemini tercih ederseniz, yine de `Timestamp` döndürebilir ve `ReportId` her benzersiz `DeviceId`içeren en son olaydan alabilirsiniz.
 
 
 > [!IMPORTANT]
-> Sütunu kullanarak özel algılamaları filtrelemekten `Timestamp` kaçının. Özel algılamalarda kullanılan veriler algılama sıklığına göre önceden filtrelenmiş olarak kullanılır.
+> Sütunu kullanarak özel algılamaları filtrelemekten `Timestamp` kaçının. Özel algılamalar için kullanılan veriler algılama sıklığına göre önceden filtrelenmiştir.
 
 
-Aşağıdaki örnek sorgu, virüsten koruma algılamaları kullanan benzersiz cihazların sayısını (`DeviceId`) sayar ve yalnızca beşten fazla algılamaya sahip cihazları bulmak için bu sayımı kullanır. En geç ile ilgili `Timestamp` olan işleci, `ReportId`işlevle `summarize` birlikte kullanır `arg_max` .
+Aşağıdaki örnek sorgu, virüsten koruma algılamaları olan benzersiz cihazların (`DeviceId`) sayısını sayar ve yalnızca beşten fazla algılaması olan cihazları bulmak için bu sayıyı kullanır. En son `Timestamp` ve karşılık gelen `ReportId`değerini döndürmek için işleviyle birlikte işlecini `arg_max` kullanır`summarize`.
 
 ```kusto
 DeviceEvents
@@ -108,131 +108,131 @@ DeviceEvents
 ```
 
 > [!TIP]
-> Daha iyi bir sorgu performansı için, kural için hedeflenen çalıştırma sıklığınıza uygun bir zaman filtresi ayarlayın. En az sık çalıştırma her _24 saatte bir olduğu_ için, son güne göre filtreleme tüm yeni verileri içerir.
+> Daha iyi sorgu performansı için, kural için hedeflenen çalışma sıklığınızla eşleşen bir zaman filtresi ayarlayın. En az sık çalıştırılan _her 24 saatte_ bir olduğundan, son güne yönelik filtreleme tüm yeni verileri kapsar.
 
-### <a name="2-create-new-rule-and-provide-alert-details"></a>2. Yeni kural oluşturun ve uyarı ayrıntıları sağlar.
+### <a name="2-create-new-rule-and-provide-alert-details"></a>2. Yeni kural oluşturun ve uyarı ayrıntılarını sağlayın.
 
-Sorgu düzenleyicisinde sorguyla, Algılama kuralı **oluştur'a tıklayın** ve aşağıdaki uyarı ayrıntılarını belirtin:
+Sorguyu sorgu düzenleyicisinde kullanarak **Algılama kuralı oluştur'u** seçin ve aşağıdaki uyarı ayrıntılarını belirtin:
 
 - **Algılama adı**—algılama kuralının adı; benzersiz olmalıdır
-- **Sıklık**— sorguyu çalıştırma ve bir işlemle ilgili aralıktır. [Aşağıdaki ek kılavuza bakın](#rule-frequency)
+- **Sıklık**— sorguyu çalıştırma ve eylem gerçekleştirme aralığı. [Aşağıdaki ek yönergelere bakın](#rule-frequency)
 - **Uyarı başlığı**— kural tarafından tetiklenen uyarılarla görüntülenen başlık; benzersiz olmalıdır
 - **Önem derecesi**— kural tarafından tanımlanan bileşenin veya etkinliğin olası riski
-- **Kategori**: kural tarafından tanımlanan tehdit bileşeni veya etkinlik
-- **MITRE ATT&, CK** [framework'te MITRE ATT'de](https://attack.mitre.org/) belgelenmiş olarak kural tarafından tanımlanan bir veya&CK tekniklerini kullanır. Bu bölüm kötü amaçlı yazılım, fidye yazılımı, şüpheli etkinlik ve istenmeyen yazılımlar gibi bazı uyarı kategorileri için gizlidir
+- **Kategori**— kural tarafından tanımlanan tehdit bileşeni veya etkinliği
+- **MITRE ATT&CK teknikleri**: [MITRE ATT&CK çerçevesinde](https://attack.mitre.org/) belgelendiği gibi kural tarafından tanımlanan bir veya daha fazla saldırı tekniği. Bu bölüm kötü amaçlı yazılım, fidye yazılımı, şüpheli etkinlik ve istenmeyen yazılımlar dahil olmak üzere belirli uyarı kategorileri için gizlenir
 - **Açıklama**— kural tarafından tanımlanan bileşen veya etkinlik hakkında daha fazla bilgi 
-- **Önerilen eylemler:** Yanıtlayanların bir uyarıya yanıt olarak gerçekleştir olabileceği ek eylemler
+- **Önerilen eylemler**: Yanıtlayanların uyarıya yanıt olarak gerçekleştirebileceği ek eylemler
 
 #### <a name="rule-frequency"></a>Kural sıklığı
-Yeni bir kural kaydeden bu kural, son 30 günlük verilerde çalışır ve eşleşmeleri denetler. Bundan sonra kural, seçtiğiniz sıklık temel alarak geri dönüş süresi uygulayarak sabit aralıklarla yeniden çalışır:
+Yeni bir kural kaydettiğinizde çalıştırılır ve son 30 günlük verilerin eşleşmelerini denetler. Kural daha sonra sabit aralıklarla yeniden çalıştırılır ve seçtiğiniz sıklık temelinde bir geri arama süresi uygular:
 
-- **Her 24 saatte** bir; her 24 saatte bir çalışır ve son 30 gün içinde yapılan verileri denetleme
-- **Her 12 saatte** bir; her 12 saatte bir çalışır ve son 24 saatte bir verileri denetleme
-- **Her 3 saatte** bir çalışır; son 6 saatte bir verileri kontrol ederek her 3 saatte bir çalışır
-- **Her saat** çalışır; saatte bir çalışır ve son 2 saatten verileri denetleme
+- **Her 24 saatte** bir— 24 saatte bir çalışır ve son 30 güne ait verileri denetler
+- **Her 12 saatte** bir— 12 saatte bir çalışır ve son 24 saatteki verileri denetler
+- **Her 3 saatte** bir— 3 saatte bir çalışır ve son 6 saatteki verileri denetler
+- **Saatte bir**— saatlik çalışır ve son 2 saatdeki verileri denetler
 
-Bir kuralı düzenley düzenlemeniz, ayarlandığı sıklık göre zamanlanan bir sonraki çalışma zamanında uygulanan değişikliklerle birlikte çalışmasına neden olur.
+Bir kuralı düzenlediğinizde, bir sonraki çalışma zamanında uygulanan değişiklikler ayarladığınız sıklık değerine göre zamanlanmış olarak çalıştırılır. Kural sıklığı, alım süresini değil olay zaman damgasını temel alır.
 
 
 
 >[!TIP]
-> Sorgunuza göre zaman filtrelerini arama süresiyle eşler. Geri arama süresi dışında olan sonuçlar yoksayılır.  
+> Sorgunuzdaki zaman filtrelerini geri arama süresiyle eşleştirin. Geri arama süresinin dışındaki sonuçlar yoksayılır.  
 
-Algılamaları ne kadar yakın izlemek istediğinize uygun sıklığı seçin. Uyarılara yanıt verme kapasitenizi göz önünde bulundurarak göz önünde önünde olun.
+Algılamaları ne kadar yakından izlemek istediğinizi gösteren sıklığı seçin. Kuruluşunuzun uyarılara yanıt verme kapasitesini göz önünde bulundurun.
 
-### <a name="3-choose-the-impacted-entities"></a>3. Etkide olan varlıkları seçin.
-Etkilenen veya etkilenen ana varlığı bulmanızı beklediğiniz sorgu sonuçları sütunlarını bulun. Örneğin, sorgu gönderen (`SenderFromAddress` veya ) ve alıcı `SenderMailFromAddress`() adreslerini`RecipientEmailAddress` döndürür. Bu sütunlardan hangisinin ana etkiyi temsil eden varlığın belirlenmesi, hizmetin ilgili uyarıları toplamalarına, olayları birbiriyle ilişkisine ve hedef yanıt eylemlerini bir araya toplamalarına yardımcı olur.
+### <a name="3-choose-the-impacted-entities"></a>3. Etkilenen varlıkları seçin.
+Sorgu sonuçlarınızda, etkilenen veya etkilenen ana varlığı bulmayı beklediğiniz sütunları belirleyin. Örneğin, bir sorgu gönderen (`SenderFromAddress` veya `SenderMailFromAddress`) ve alıcı (`RecipientEmailAddress`) adresleri döndürebilir. Bu sütunlardan hangisinin ana etkilenen varlığı temsil ettiği belirlenerek hizmet ilgili uyarıları toplamaya, olayları ilişkilendirmeye ve hedef yanıt eylemlerini toplamaya yardımcı olur.
 
-Her varlık türü (posta kutusu, kullanıcı veya cihaz) için yalnızca bir sütun seçin. Sorgunuz tarafından döndürülen sütunlar seç kabul edilir.
+Her varlık türü (posta kutusu, kullanıcı veya cihaz) için yalnızca bir sütun seçebilirsiniz. Sorgunuz tarafından döndürülmeyen sütunlar seçilemiyor.
 
 ### <a name="4-specify-actions"></a>4. Eylemleri belirtin.
-Özel algılama kuralınız, sorgu tarafından döndürülen cihazlarda, dosyalarda veya kullanıcılarda otomatik olarak eylem gerçekleştirebilirsiniz.
+Özel algılama kuralınız, sorgu tarafından döndürülen cihazlarda, dosyalarda veya kullanıcılarda otomatik olarak eylemler gerçekleştirebilir.
 
 #### <a name="actions-on-devices"></a>Cihazlardaki eylemler
-Bu eylemler, sorgu sonuçları sütunundaki `DeviceId` cihazlara uygulanır:
-- **Cihazı yalıt**—Tam ağ yalıtım uygulamak ve cihazın herhangi bir uygulama veya hizmete bağlanmasını önlemek için Uç Nokta için Microsoft Defender kullanır. [Uç nokta makine yalıtım için Microsoft Defender hakkında daha fazla bilgi](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
-- **Araştırma paketini toplayın**— ZIP dosyasında cihaz bilgilerini toplar. [Uç nokta soruşturma paketi için Microsoft Defender hakkında daha fazla bilgi](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **Virüsten koruma taraması** çalıştırma— cihazda Windows Defender Virüsten Koruma tam ekran taraması yapar
-- **Araştırmayı** başlatma— cihazda [otomatik bir](m365d-autoir.md) araştırma başlatılır
-- **Uygulama yürütmeyi** kısıtla: Yalnızca Microsoft tarafından verilen bir sertifikayla imzalanan dosyaların yürütülmesine izin vermek için cihaz kısıtlamalarını ayarlar. [Uç nokta için Microsoft Defender ile uygulama kısıtlamaları hakkında daha fazla bilgi](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
+Bu eylemler, sorgu sonuçlarının sütunundaki `DeviceId` cihazlara uygulanır:
+- **Cihazı yalıtma**— tam ağ yalıtımı uygulamak için Uç Nokta için Microsoft Defender kullanır ve cihazın herhangi bir uygulama veya hizmete bağlanmasını önler. [Makine yalıtımı Uç Nokta için Microsoft Defender hakkında daha fazla bilgi edinin](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **Araştırma paketi toplama**— ZIP dosyasındaki cihaz bilgilerini toplar. [Uç Nokta için Microsoft Defender araştırma paketi hakkında daha fazla bilgi edinin](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
+- **Virüsten koruma taraması çalıştırma**—cihazda tam bir Microsoft Defender Virüsten Koruma taraması gerçekleştirir
+- **Araştırma başlatma**—cihazda [otomatik bir araştırma](m365d-autoir.md) başlatır
+- **Uygulama yürütmeyi kısıtlayın**; cihazdaki kısıtlamaları yalnızca Microsoft tarafından verilen bir sertifikayla imzalanan dosyaların çalışmasına izin verecek şekilde ayarlar. [Uç Nokta için Microsoft Defender ile uygulama kısıtlamaları hakkında daha fazla bilgi edinin](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 
-#### <a name="actions-on-files"></a>Dosyalarda eylemler
-Seçildiğinde, sorgu  sonuçlarının 'daki `SHA1``InitiatingProcessSHA1``SHA256`veya sütunundaki dosyalara Dosya karantina eylemlerini `InitiatingProcessSHA256` uygulamayı seçebilirsiniz. Bu eylem dosyayı geçerli bulunduğu konumdan siler ve bir kopyasını karantinaya yapıştırır.
+#### <a name="actions-on-files"></a>Dosyalardaki eylemler
+Seçildiğinde, sorgu sonuçlarının , , `InitiatingProcessSHA1``SHA256`veya `InitiatingProcessSHA256` sütunundaki `SHA1`dosyalara **Dosya karantinaya** al eylemini uygulamayı seçebilirsiniz. Bu eylem dosyayı geçerli konumundan siler ve bir kopyasını karantinaya alır.
 
-#### <a name="actions-on-users"></a>Kullanıcılarda eylemler
-Seçildiğinde, sorgu **sonuçlarının 'sinde** veya `AccountObjectId``InitiatingProcessAccountObjectId`sütununda kullanıcılar üzerinde Güvenliği ihlal edilmiş `RecipientObjectId` olarak işaretle eylemi alınır. Bu eylem, kullanıcı sayısı içinde risk düzeyini "yüksek" olarak Azure Active Directory ilgili kimlik koruma [ilkelerini tetikler](/azure/active-directory/identity-protection/overview-identity-protection).
+#### <a name="actions-on-users"></a>Kullanıcılara yönelik eylemler
+Seçildiğinde, sorgu sonuçlarının , `InitiatingProcessAccountObjectId`veya `RecipientObjectId` sütunundaki `AccountObjectId`kullanıcılar üzerinde Kullanıcıyı **güvenliği aşılmış olarak işaretle** eylemi gerçekleştirilen eylemdir. Bu eylem, kullanıcıların risk düzeyini Azure Active Directory'de "yüksek" olarak ayarlayarak ilgili [kimlik koruma ilkelerini](/azure/active-directory/identity-protection/overview-identity-protection) tetikler.
 
 > [!NOTE]
-> Özel algılama kuralları için izin ver veya engelle eylemi şu anda bu kuralda Microsoft 365 Defender.
+> Özel algılama kuralları için izin ver veya engelle eylemi şu anda Microsoft 365 Defender'de desteklenmiyor.
 
 ### <a name="5-set-the-rule-scope"></a>5. Kural kapsamını ayarlayın.
-Kuralın hangi cihazları kapsdır takipte olduğunu belirtmek için kapsamı ayarlayın. Kapsam, cihazları denetleme kurallarını etkiler ve yalnızca posta kutularını ve kullanıcı hesaplarını veya kimlikleri denetleme kurallarını etkilemez.
+Kuralın kapsamına giren cihazları belirtmek için kapsamı ayarlayın. Kapsam, cihazları denetleyen kuralları etkiler ve yalnızca posta kutularını ve kullanıcı hesaplarını veya kimlikleri denetleyen kuralları etkilemez.
 
-Kapsamı ayarlarken şunları da seçebilirsiniz:
+Kapsamı ayarlarken şunları seçebilirsiniz:
 
 - Tüm cihazlar
 - Belirli cihaz grupları
 
-Yalnızca kapsam kapsamındaki cihazlardan veriler sorgular. Ayrıca, eylemler yalnızca bu cihazlarda  alınır.
+Yalnızca kapsamdaki cihazlardan veriler sorgulanır. Ayrıca, yalnızca bu cihazlarda eylemler gerçekleştirilecektir.
 
-### <a name="6-review-and-turn-on-the-rule"></a>6. Kuralı gözden geçirme ve açma.
-Kuralı gözden geçirdikten sonra kaydetmek için **Oluştur'a** tıklayın. Özel algılama kuralı hemen çalışır. Eşleşmeleri denetleme, uyarılar oluşturma ve yanıt eylemleri yapma sıklığına bağlı olarak yeniden çalışır.
+### <a name="6-review-and-turn-on-the-rule"></a>6. Kuralı gözden geçirin ve açın.
+Kuralı gözden geçirdikten sonra **oluştur'u** seçerek kaydedin. Özel algılama kuralı hemen çalışır. Eşleşmeleri denetlemek, uyarılar oluşturmak ve yanıt eylemleri uygulamak için yapılandırılmış sıklık temelinde yeniden çalışır.
 
 
 >[!Important] 
->Verimlilik ve verimlilik için özel algılamaların düzenli olarak gözden geçir olması gerekir. Doğru uyarıları tetikleyen algılamalar oluşturarak emin olmak için Var olan özel algılama kurallarını yönetme'de yer alan adımları takip eden mevcut özel algılamalarınızı [gözden geçirmek için zaman tanıyın](#manage-existing-custom-detection-rules). <br>  
-Özel algılamalar tarafından oluşturulan tüm yanlış uyarılar kuralların belirli parametrelerini değiştirmenin gerekli olduğu belirtesin diye, özel algılamaların genişliği ve özelliği üzerinde denetiminiz olmalıdır.
+>Özel algılamalar, verimlilik ve verimlilik açısından düzenli olarak gözden geçirilmelidir. Gerçek uyarıları tetikleyen algılamalar oluşturduğunuzdan emin olmak için Mevcut özel algılama kurallarını yönetme bölümündeki adımları izleyerek [mevcut özel algılamalarınızı](#manage-existing-custom-detection-rules) gözden geçirin. <br>  
+Özel algılamalarınızın genişliği veya özgüllüğü üzerinde denetim sahibi olursunuz, böylece özel algılamalar tarafından oluşturulan yanlış uyarılar kuralların belirli parametrelerini değiştirme gereksinimini gösterebilir.
 
 
-## <a name="manage-existing-custom-detection-rules"></a>Varolan özel algılama kurallarını yönetme
-Var olan özel algılama kurallarının listesini ekleyebilirsiniz, önceki çalıştırmalarını gözden geçirebilirsiniz ve tetikle yaptıkları uyarıları gözden geçirebilirsiniz. Ayrıca isteğe bağlı olarak bir kural çalıştırarak bunu değiştirebilirsiniz.
+## <a name="manage-existing-custom-detection-rules"></a>Mevcut özel algılama kurallarını yönetme
+Mevcut özel algılama kurallarının listesini görüntüleyebilir, önceki çalıştırmalarını denetleyebilir ve tetikledikleri uyarıları gözden geçirebilirsiniz. Ayrıca isteğe bağlı olarak bir kural çalıştırabilir ve değiştirebilirsiniz.
 
 >[!TIP]
-> Özel algılamalar tarafından yükseltilmiş uyarılar, uyarılar ve olay API'leri üzerinde kullanılabilir. Daha fazla bilgi için bkz[. Desteklenen Microsoft 365 Defender API'ler](api-supported.md).
+> Özel algılamalar tarafından tetiklenen uyarılar, uyarılar ve olay API'leri üzerinden kullanılabilir. Daha fazla bilgi için bkz[. Desteklenen Microsoft 365 Defender API'leri](api-supported.md).
 
-### <a name="view-existing-rules"></a>Var olan kuralları görüntüleme
+### <a name="view-existing-rules"></a>Mevcut kuralları görüntüleme
 
-Var olan tüm özel algılama kurallarını görüntülemek için, **HuntingCustom detection rules (****Özel** >  algılama kuralları) makalesine gidin. Sayfada, aşağıdaki çalıştırma bilgilerine sahip tüm kurallar listeılmıştır:
+Mevcut tüm özel algılama kurallarını görüntülemek için **Özel Tehdit Avcılığı** > **algılama kuralları'na** gidin. Sayfada tüm kurallar aşağıdaki çalıştırma bilgileriyle listelenir:
 
-- **Son çalıştırma**: sorgu eşleşmelerini denetlemesi ve uyarılar oluşturması için bir kural en son ne zaman çalıştır bırakıldı
-- **Son çalıştırma durumu—** bir kuralın başarıyla çalıştırıp çalışmama durumu
-- **Sonraki çalıştırma—** bir sonraki zamanlanan çalışma
-- **Durum**— bir kuralın açık veya kapalı olup olmadığı
+- **Son çalıştırma**— sorgu eşleşmelerini denetlemek ve uyarılar oluşturmak için bir kuralın son çalıştırıldığı zaman
+- **Son çalıştırma durumu**— bir kuralın başarıyla çalıştırılıp çalıştırılmadığı
+- **Sonraki çalıştırma**— bir sonraki zamanlanmış çalıştırma
+- **Durum**— Kuralın açık veya kapalı olup olmadığı
 
 ### <a name="view-rule-details-modify-rule-and-run-rule"></a>Kural ayrıntılarını görüntüleme, kuralı değiştirme ve kuralı çalıştırma
 
-Özel bir algılama kuralı hakkında kapsamlı bilgi görüntülemek için **, Özel** algılama kuralları'  >  gidin ve kural adını seçin. Bundan sonra kural hakkında, çalıştırma durumu ve kapsamı gibi genel bilgileri görüntüebilirsiniz. Sayfa ayrıca tetiklenen uyarıların ve eylemlerin listesini de sağlar.
+Özel algılama kuralıyla ilgili kapsamlı bilgileri görüntülemek için **Özel Tehdit Avcılığı** > **algılama kuralları'na** gidin ve kuralın adını seçin. Daha sonra kural hakkındaki genel bilgileri, çalıştırma durumu ve kapsamı da dahil olmak üzere görüntüleyebilirsiniz. Sayfa ayrıca tetiklenen uyarıların ve eylemlerin listesini de sağlar.
 
-:::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="Microsoft 365 Defender portalında Özel algılama kuralı ayrıntıları sayfası" lightbox="../../media/custom-detect-rules-view.png":::<br>
+:::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="Microsoft 365 Defender portalındaki Özel algılama kuralı ayrıntıları sayfası" lightbox="../../media/custom-detect-rules-view.png":::<br>
 *Özel algılama kuralı ayrıntıları*
 
-Ayrıca, bu sayfada kural üzerinde aşağıdaki eylemleri de yapabilirsiniz:
+Bu sayfadan kural üzerinde aşağıdaki eylemleri de gerçekleştirebilirsiniz:
 
-- **Çalıştır**— kuralı hemen çalıştırın. Bu, sonraki çalıştırma aralığını da sıfırlar.
-- **Düzenleme**—sorguyu değiştirmeden kuralı değiştirme
-- **Sorguyu değiştirme**— gelişmiş avda sorguyu düzenleme
--  /  Aç **Kapatma**— kuralı etkinleştirme veya çalıştırmayı durdurma
-- **Sil**— kuralı kapatın ve kaldırın
+- **Çalıştır**—kuralı hemen çalıştırın. Bu, sonraki çalıştırmanın aralığını da sıfırlar.
+- **Düzenle**—sorguyu değiştirmeden kuralı değiştirme
+- **Sorguyu değiştirme**—sorguyu gelişmiş tehdit avcılığında düzenleme
+-  /  Aç **Kapatma**— kuralı etkinleştirin veya çalışmasını durdurun
+- **Silme**—kuralı kapatma ve kaldırma
 
 ### <a name="view-and-manage-triggered-alerts"></a>Tetiklenen uyarıları görüntüleme ve yönetme
 
-Kural ayrıntıları ekranında (**Özel algılamalar** >  > [Kural adı **]**), Kuralla eşleşmelerle oluşturulan uyarıları listeleyen Tetikleyicili uyarılar'a gidin. Ayrıntılı bilgileri görüntülemek ve aşağıdaki eylemleri yapmak için bir uyarı seçin:
+Kural ayrıntıları ekranında (**Özel** > **Algılama algılamaları** > **[Kural adı]**), kuralla eşleşmeler tarafından oluşturulan uyarıları listeleyen  **Tetiklenen** uyarılar'a gidin. Bununla ilgili ayrıntılı bilgileri görüntülemek için bir uyarı seçin ve aşağıdaki eylemleri gerçekleştirin:
 
-- Uyarının durumunu ve sınıflandırmasını (doğru veya yanlış uyarı) ayarerek uyarıyı yönetme
-- Uyarıyı bir olayla bağlama
-- Gelişmiş avda uyarıyı tetikleyen sorguyu çalıştırın
+- Durumunu ve sınıflandırmasını ayarlayarak uyarıyı yönetme (doğru veya yanlış uyarı)
+- Uyarıyı bir olaya bağlama
+- Gelişmiş tehdit avcılığında uyarıyı tetikleyen sorguyu çalıştırma
 
 ### <a name="review-actions"></a>Eylemleri gözden geçirme
-Kural ayrıntıları ekranında (**Özel algılamalar** >  > [Kural adı **]**), Kuralla eşleşmeleri temel alarak alınan eylemleri listeleyen Tetiklenen eylemler'e gidin.
+Kural ayrıntıları ekranında (**Özel** >  Algılamalar **[Kural adı]**), Kuralla **eşleşmelere** >  göre gerçekleştirilen eylemleri listeleyen **Tetiklenen eylemler'e** gidin.
 
 >[!TIP]
->Bilgileri hızla görüntülemek ve tablodaki bir öğe üzerinde eylemde kullanmak için, tablonun sol &#10003; [Başlık] seçim sütununu kullanın.
+>Bilgileri hızla görüntülemek ve tablodaki bir öğe üzerinde işlem yapmak için tablonun sol tarafındaki [&#10003;] seçim sütununu kullanın.
 
 >[!NOTE]
->Bu makaledeki bazı sütunlar Uç Nokta için Microsoft Defender'da kullanılamıyor olabilir. [Daha fazla Microsoft 365 Defender](m365d-enable.md) kullanarak tehdit yakalamak için çok daha fazla kaynağı açabilirsiniz. Gelişmiş av iş akışlarınızı Uç Nokta için Microsoft Defender'dan Microsoft 365 Defender için [Microsoft Defender'dan gelişmiş arama sorgularını geçirme makalesinde](advanced-hunting-migrate-from-mde.md) yer alan adımları takip edebilirsiniz.
+>Bu makaledeki bazı sütunlar Uç Nokta için Microsoft Defender'da kullanılamayabilir. Daha fazla veri kaynağı kullanarak tehditleri avlamak için [Microsoft 365 Defender açın](m365d-enable.md). Gelişmiş avcılık sorgularını Uç Nokta için Microsoft Defender'den geçirme bölümünde yer alan adımları izleyerek [gelişmiş avcılık iş akışlarınızı Uç Nokta için Microsoft Defender'den Microsoft 365 Defender](advanced-hunting-migrate-from-mde.md) taşıyabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Özel algılamalara genel bakış](custom-detections-overview.md)
-- [Gelişmiş ava genel bakış](advanced-hunting-overview.md)
-- [Gelişmiş arama sorgusu dilini öğrenin](advanced-hunting-query-language.md)
-- [Uç nokta için Microsoft Defender'dan gelişmiş arama sorgularını geçirme](advanced-hunting-migrate-from-mde.md)
+- [Gelişmiş avcılığa genel bakış](advanced-hunting-overview.md)
+- [Gelişmiş tehdit avcılığı sorgu dilini öğrenme](advanced-hunting-query-language.md)
+- [gelişmiş tehdit avcılığı sorgularını Uç Nokta için Microsoft Defender geçirme](advanced-hunting-migrate-from-mde.md)

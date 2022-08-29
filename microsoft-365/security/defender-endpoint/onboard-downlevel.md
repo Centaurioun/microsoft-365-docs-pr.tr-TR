@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4d8665f379683ccc113a10e6308c6fa4026616c6
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 73330ff3dde5daa8d8ec9b2e3f1500e125135db5
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717226"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388154"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Windows'un önceki sürümlerini ekleyin
 
@@ -152,16 +152,16 @@ Ekleme adımlarını tamamladıktan sonra, [System Center Endpoint Protection is
 
 ## <a name="verify-onboarding"></a>Eklemeyi doğrulama
 
-Microsoft Defender AV ve Uç Nokta için Microsoft Defender çalıştığını doğrulayın. 
+Microsoft Defender Virüsten Koruma ve Uç Nokta için Microsoft Defender çalıştığını doğrulayın. 
 
 > [!NOTE]
-> Microsoft Defender AV'nin çalıştırılması gerekli değildir, ancak önerilir. Birincil uç nokta koruma çözümü başka bir virüsten koruma satıcısı ürünüyse Defender Virüsten Koruma'yı Pasif modda çalıştırabilirsiniz. Pasif modun açık olduğunu yalnızca Uç Nokta için Microsoft Defender algılayıcının (SENSE) çalıştığını doğruladıktan sonra onaylayabilirsiniz. 
+> Microsoft Defender Virüsten Koruma'nın çalıştırılması gerekli değildir, ancak önerilir. Birincil uç nokta koruma çözümü başka bir virüsten koruma satıcısı ürünüyse Defender Virüsten Koruma'yı Pasif modda çalıştırabilirsiniz. Pasif modun açık olduğunu yalnızca Uç Nokta için Microsoft Defender algılayıcının (SENSE) çalıştığını doğruladıktan sonra onaylayabilirsiniz. 
 
-1. Microsoft Defender AV'nin yüklü olduğunu doğrulamak için aşağıdaki komutu çalıştırın:
+1. Microsoft Defender Virüsten Koruma'nın yüklü olduğunu doğrulamak için aşağıdaki komutu çalıştırın:
 
    ```sc.exe query Windefend```
 
-    Sonuç 'Belirtilen hizmet yüklü bir hizmet olarak yok' ise Microsoft Defender AV'yi yüklemeniz gerekir. Daha fazla bilgi için bkz. [Windows 10'de Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-windows.md).
+    Sonuç 'Belirtilen hizmet yüklü bir hizmet olarak yok' ise Microsoft Defender Virüsten Koruma'yı yüklemeniz gerekir. Daha fazla bilgi için bkz. [Windows 10'de Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-windows.md).
 
     Windows sunucularınızda Microsoft Defender Virüsten Koruma'yı yapılandırmak ve yönetmek için grup ilkesi kullanma hakkında bilgi için bkz. [Microsoft Defender Virüsten Koruma'yı yapılandırmak ve yönetmek için grup ilkesi ayarlarını kullanma](use-group-policy-microsoft-defender-antivirus.md).
 

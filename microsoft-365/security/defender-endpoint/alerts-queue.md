@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: 13959666f0c44f83fcb938db010ed30d5e5056b4
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 30d42c9ca69c75675f453eefd2714b6820dd5384
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607542"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388220"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Uç Nokta için Microsoft Defender Uyarıları kuyruğu görüntüleme ve düzenleme
 
@@ -63,7 +63,7 @@ Bilgi <br> (Gri)|Ağa zararlı olarak kabul edilebilecek ancak olası güvenlik 
 
 #### <a name="understanding-alert-severity"></a>Uyarı önem derecesini anlama
 
-Microsoft Defender Virüsten Koruma (Microsoft Defender AV) ve Uç Nokta için Defender uyarı önem dereceleri farklı kapsamları temsil ettiğinden farklıdır.
+Microsoft Defender Virüsten Koruma ve Uç Nokta için Defender uyarı önem dereceleri farklı kapsamları temsil ettiğinden farklıdır.
 
 Microsoft Defender Virüsten Koruma tehdit önem derecesi, algılanan tehdidin (kötü amaçlı yazılım) mutlak önem derecesini temsil eder ve virüs bulaşmışsa tek bir cihaz için olası risk temelinde atanır.
 
@@ -72,7 +72,7 @@ Uç Nokta için Defender uyarı önem derecesi, algılanan davranışın önem d
 Bu nedenle, örneğin:
 
 - Microsoft Defender Virüsten Koruma tarafından algılanan ve cihaza bulaşmayan bir tehdit algılanan bir Uç Nokta için Defender uyarısının önem derecesi, gerçek bir hasar olmadığından "Bilgilendirici" olarak kategorilere ayrılmıştır.
-- Yürütülürken ticari bir kötü amaçlı yazılım algılandı, ancak Microsoft Defender AV tarafından engellendi ve düzeltildi, çünkü cihaz tek tek zarara neden olmuş olabilir ancak kurumsal bir tehdit oluşturmaz.
+- Yürütülürken ticari bir kötü amaçlı yazılım algılandı, ancak Microsoft Defender Virüsten Koruma tarafından engellendi ve düzeltildi, çünkü tek bir cihaza zarar vermesine rağmen kurumsal bir tehdit oluşturmadığı için "Düşük" olarak kategorilere ayrılmıştır.
 - Yürütülürken algılanan ve yalnızca tek bir cihaz için değil, kuruluş için de tehdit oluşturabilen ve sonunda engellenip engellenmediğine bakılmaksızın kötü amaçlı yazılımla ilgili bir uyarı "Orta" veya "Yüksek" olarak derecelenebilir.
 - Engellenmeyen veya düzeltilmemiş şüpheli davranış uyarıları, aynı kurumsal tehdit dikkate alınarak "Düşük", "Orta" veya "Yüksek" olarak sıralanır.
 
@@ -119,8 +119,8 @@ Uyarıları aşağıdaki ilkelere göre filtreleyebilirsiniz:
 |Otomatik araştırma|AutomatedInvestigation|
 |Özel algılama|CustomDetection|
 |Özel TI|CustomerTI|
-|EDR|WindowsDefenderAtp|
-|Microsoft 365 Defender|MTP|
+|Edr|WindowsDefenderAtp|
+|Microsoft 365 Defender|Mtp|
 |Office 365 için Microsoft Defender|OfficeATP|
 |Microsoft Tehdit Uzmanları|ThreatExperts|
 |Smartscreen|WindowsDefenderSmartScreen|

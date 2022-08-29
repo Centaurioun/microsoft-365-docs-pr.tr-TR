@@ -19,12 +19,12 @@ ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender'da Güvenli Bağlantılar ilkelerini ve genel Güvenli Bağlantılar ayarlarını görüntülemeyi, oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 48e873550c83154827d7deaa430b75d82ff80acc
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 41014ce0960d7973ddd7b90382c55ba7156070fd
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087275"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388110"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama
 
@@ -141,7 +141,7 @@ Microsoft 365 Defender portalında özel bir Güvenli Bağlantılar ilkesi oluş
        - **E-posta bölümünde aşağıdaki URL'leri yeniden yazmayın** : Güvenli Bağlantılar tarafından engellenecek belirli URL'lere erişime izin vermek için **Yönet (nn)** URL'lerini tıklatın.
 
          > [!NOTE]
-         > "Aşağıdaki URL'leri yeniden yazmayın" listesindeki girdiler, posta akışı sırasında Güvenli Bağlantılar tarafından taranmıyor veya sarmalanmıyor. Posta akışı sırasında _ve_ tıklandığında URL'lerin Güvenli Bağlantılar tarafından taranmaması veya sarmalanmaması için [Kiracı İzin Ver/Engelle Listesi'ndeki İzin Ver URL girişlerini](allow-block-urls.md#create-allow-url-entries) kullanın.
+         > "Aşağıdaki URL'leri yeniden yazmayın" listesindeki girdiler, posta akışı sırasında Güvenli Bağlantılar tarafından taranmıyor veya sarmalanmıyor. Posta akışı sırasında _ve_ tıklandığında URL'lerin Güvenli Bağlantılar tarafından taranmaması veya sarmalanmaması için [Kiracı İzin Ver/Engelle Listesindeki URL izin verme girdilerini](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) kullanın.
 
      1. Görüntülenen **URL'leri yeniden yazmamak için yönet** açılır öğesinde URL Ekle simgesine tıklayın ![.](../../media/m365-cc-sc-create-icon.png) **URL'ler ekleyin**.
      2. Görüntülenen **URL ekle** açılır penceresinde, istediğiniz URL'yi veya değeri yazın, kutunun altında görünen girdiyi seçin ve **kaydet'e** tıklayın. Bu adımı gerektiği kadar tekrarlayın.

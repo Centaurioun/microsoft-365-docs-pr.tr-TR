@@ -16,12 +16,12 @@ ms.custom: ''
 description: Yöneticiler, Exchange Online Protection (EOP) ve Office 365 için Microsoft Defender koruma özellikleri arasında Standart ve Katı ilke ayarlarının nasıl uygulanacağını öğrenebilir
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ec4a2a1bc858cbf95ad85894f1b27828a18648e
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: ba440b028b1f56f3375e46f57c0b347f63eeed3f
+ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281629"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67439672"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP ve Office 365 için Microsoft Defender'da önceden ayarlanmış güvenlik ilkeleri
 
@@ -61,6 +61,10 @@ Profil, koruma düzeyini belirler. Aşağıdaki profiller kullanılabilir:
   - **Gruplar**:
     - Belirtilen dağıtım gruplarının veya posta özellikli güvenlik gruplarının üyeleri.
     - Belirtilen Microsoft 365 Grupları.
+
+    > [!NOTE]
+    >  Dinamik dağıtım grupları desteklenmez.
+    
   - **Etki alanları**: Kuruluşunuzda belirtilen [kabul edilen etki alanlarındaki](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) tüm alıcılar.
 
   Bir koşulu veya özel durumu yalnızca bir kez kullanabilirsiniz, ancak koşul veya özel durum için birden çok değer belirtebilirsiniz. Aynı koşula veya özel duruma ait birden çok değer OR mantığını kullanır (örneğin, _\<recipient1\>_ veya _\<recipient2\>_). Farklı koşullar veya özel durumlar AND mantığını kullanır (örneğin, _\<recipient1\>_ ve _\<member of group 1\>_).
@@ -166,8 +170,13 @@ Başka bir deyişle, **Katı** önceden ayarlanmış güvenlik ilkesinin ayarlar
    - **Tüm alıcılar**
    - **Belirli alıcılar**:
      - **Kullanıcılar**
-     - **Gruplar**
-     - **Etki alanları**
+     - **Gruplar**:
+       - Belirtilen dağıtım gruplarının veya posta özellikli güvenlik gruplarının üyeleri.
+       - Belirtilen Microsoft 365 Grupları.
+
+       Dinamik dağıtım grupları desteklenmez.
+
+   - **Etki alanları**
 
      Uygun kutuya tıklayın, bir değer yazmaya başlayın ve sonuçlardan istediğiniz değeri seçin. Bu işlemi gerektiği kadar tekrarlayın. Mevcut bir değeri kaldırmak için Kaldır'a tıklayın ![Kaldır simgesi.](../../media/m365-cc-sc-remove-selection-icon.png) öğesini seçin.
 
@@ -220,7 +229,7 @@ Başka bir deyişle, **Katı** önceden ayarlanmış güvenlik ilkesinin ayarlar
 
    İşiniz bittiğinde **İleri'ye** tıklayın.
 
-8. **Kimliğe bürünme olarak işaretlememek için güvenilen e-posta adresleri ve etki alanları ekle sayfasında, kimliğe bürünme** korumasının dışında tutmak istediğiniz gönderen e-posta adreslerini ve etki alanlarını girin. Bu gönderenlerden gelen iletiler hiçbir zaman kimliğe bürünme saldırısı olarak işaretlenmez, ancak gönderenler EOP ve Office 365 için Defender'deki diğer filtreler tarafından taramaya devam eder.
+8. **Kimliğe bürünme olarak işaretlememek için güvenilen e-posta adresleri ve etki alanları ekle sayfasında, kimliğe bürünme** korumasının dışında tutulmasını istediğiniz gönderen e-posta adreslerini ve etki alanlarını girin. Bu gönderenlerden gelen iletiler hiçbir zaman kimliğe bürünme saldırısı olarak işaretlenmez, ancak gönderenler EOP ve Office 365 için Defender'deki diğer filtreler tarafından taramaya devam eder.
 
    Kutuya e-posta adresini veya etki alanını girin ve **Ekle'ye** tıklayın. Bu adımı gerektiği kadar tekrarlayın.
 
@@ -248,7 +257,12 @@ Bu nedenle, **genellikle Yerleşik koruma** önayarlı güvenlik ilkesi için ö
 
 3. Görüntülenen **Yerleşik korumanın dışında bırak** açılır penceresinde, yerleşik Güvenli Bağlantılar ve Güvenli Ekler korumasının dışında tutulan iç alıcıları tanımlayın:
    - **Kullanıcılar**
-   - **Gruplar**
+   - **Gruplar**:
+       - Belirtilen dağıtım gruplarının veya posta özellikli güvenlik gruplarının üyeleri.
+       - Belirtilen Microsoft 365 Grupları.
+
+     Dinamik dağıtım grupları desteklenmez.
+
    - **Etki alanları**
 
    Uygun kutuya tıklayın, bir değer yazmaya başlayın ve sonuçlardan istediğiniz değeri seçin. Bu işlemi gerektiği kadar tekrarlayın. Mevcut bir değeri kaldırmak için Kaldır'a tıklayın ![Yerleşik koruma simgesinden dışlamaları kaldırın.](../../media/m365-cc-sc-remove-selection-icon.png) öğesini seçin.

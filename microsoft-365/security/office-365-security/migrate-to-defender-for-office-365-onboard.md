@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Üçüncü taraf koruma hizmetinden veya cihazından Office 365 için Microsoft Defender korumasına geçiş adımlarını tamamlayın.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d9691eb3baebadee70d7467c2073497d04c6e12e
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: d30f13e77f0b7da864d266ddb2607afe7de1d451
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969418"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388097"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Office 365 için Microsoft Defender Geçiş - 3. Aşama: Ekleme
 
@@ -175,7 +175,7 @@ Sorunları bulup düzeltirken pilot gruplara daha fazla kullanıcı ekleyebilirs
   - İletileri tanımlamak için Tehdit Gezgini'nde filtreleyin.
   - İletileri tanımlamak için Gelişmiş Tehdit Avcılığı'nda filtreleyin.
 
-  Yönetici gönderimleri aracılığıyla microsoft'a mümkün olan en erken şekilde hatalı pozitif sonuçları bildirin, bu hatalı pozitif sonuçların güvenli geçersiz kılmalarını yapılandırmak için [Kiracı İzin Ver/Engelle Listesi](tenant-allow-block-list.md) özelliğini kullanın.
+  Yönetici gönderimleri aracılığıyla microsoft'a mümkün olan en erken şekilde hatalı pozitif sonuçları bildirin, bu hatalı pozitif sonuçların güvenli geçersiz kılmalarını yapılandırmak için [Kiracı İzin Ver/Engelle Listesi](manage-tenant-allow-block-list.md) özelliğini kullanın.
 
 - Gereksiz geçersiz kılmaları incelemek de iyi bir fikirdir. Başka bir deyişle, Microsoft 365'in iletilerde verdiği kararlara bakın. Microsoft365 doğru kararı verdiyse geçersiz kılma gereksinimi büyük ölçüde azalır veya ortadan kalkar.
 

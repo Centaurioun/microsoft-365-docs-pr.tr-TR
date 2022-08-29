@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e68e1e49dd855356840eb732c6050178ae1c147
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 0c0e09bb69cd4b7ad30276a54e002be568b85c5c
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669726"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387583"
 ---
 # <a name="create-indicators"></a>Göstergeleri oluşturun
 
@@ -34,7 +34,7 @@ ms.locfileid: "65669726"
 
 > [!TIP]
 >
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Risk (ICS) eşleştirmesinin göstergesi, her uç nokta koruma çözümünde önemli bir özelliktir. Bu özellik SecOps'a algılama ve engelleme (önleme ve yanıt) için göstergelerin listesini ayarlama olanağı verir.
 
@@ -48,7 +48,7 @@ Uç Nokta için Defender'ın bulut algılama altyapısı, toplanan verileri düz
 
 ## <a name="endpoint-prevention-engine"></a>Uç nokta önleme altyapısı
 
-Aynı gösterge listesi önleme aracısı tarafından kabul edilir. Başka bir deyişle, yapılandırılan birincil AV Microsoft Defender AV ise, eşleşen göstergeler ayarlara göre değerlendirilir. Örneğin, eylem "Uyarı ve Engelle" ise, Microsoft Defender AV dosya yürütmelerini engeller (engelleme ve düzeltme) ve buna karşılık gelen bir uyarı tetiklenir. Öte yandan, Eylem "İzin Ver" olarak ayarlanırsa, Microsoft Defender AV dosyanın çalıştırılmasını algılamaz veya engellemez.
+Aynı gösterge listesi önleme aracısı tarafından kabul edilir. Başka bir deyişle, Microsoft Defender Virüsten Koruma yapılandırılmış birincil Virüsten Koruma ise, eşleşen göstergeler ayarlara göre değerlendirilir. Örneğin, eylem "Uyarı ve Engelle" ise, Microsoft Defender Virüsten Koruma dosya yürütmelerini engeller (engelleme ve düzeltme) ve buna karşılık gelen bir uyarı tetiklenir. Öte yandan, Eylem "İzin Ver" olarak ayarlanırsa, Microsoft Defender Virüsten Koruma dosyayı algılamaz veya çalıştırılmasını engellemez.
 
 ## <a name="automated-investigation-and-remediation-engine"></a>Otomatik araştırma ve düzeltme altyapısı
 
@@ -69,7 +69,7 @@ Yeni bir gösterge (IoC) oluştururken aşağıdaki eylemlerden biri veya daha f
 
 Şunun için bir gösterge oluşturabilirsiniz:
 
-- [Dosyaları](indicator-file.md)
+- [Dosyalar](indicator-file.md)
 - [IP adresleri, URL'ler/etki alanları](indicator-ip-domain.md)
 - [Sertifika](indicator-certificates.md)
 
@@ -77,7 +77,7 @@ Aşağıdaki tabloda, gösterge türü (IoC) başına tam olarak hangi eylemleri
 
 | IoC türü | Kullanılabilir eylemler |
 |:---|:---|
-| [Dosyaları](indicator-file.md) | İzin ver <br> Denetim <br> Engelleme ve düzeltme |
+| [Dosyalar](indicator-file.md) | İzin ver <br> Denetim <br> Engelleme ve düzeltme |
 | [IP adresleri](indicator-ip-domain.md) | İzin ver <br> Denetim <br> Yürütmeyi engelle <br> Uyarmak |
 | [URL'ler ve etki alanları](indicator-ip-domain.md) | İzin ver <br> Denetim <br> Yürütmeyi engelle<br> Uyarmak |
 | [Sertifika](indicator-certificates.md) | İzin ver <br> Engelleme ve düzeltme |
@@ -90,7 +90,7 @@ Aşağıdaki tabloda, gösterge türü (IoC) başına tam olarak hangi eylemleri
 IoC API şeması ve tehdit kimlikleri önceden tehdit avcılığı, IoC yanıt eylemlerinin yeniden adlandırılmasıyla uyumlu olacak şekilde güncelleştirildi. API düzeni değişiklikleri tüm IoC Türleri için geçerlidir.
 
 > [!Note]
-> Kiracı başına 15.000 gösterge sınırı vardır. Dosya ve sertifika göstergeleri[, Microsoft Defender Virüsten Koruma için tanımlanan dışlamaları](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) engellemez. Göstergeler pasif moddayken Microsoft Defender Virüsten Koruma desteklenmez.
+> Kiracı başına 15.000 gösterge sınırı vardır. Dosya ve sertifika göstergeleri [, Microsoft Defender Virüsten Koruma için tanımlanan dışlamaları](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) engellemez. Göstergeler, pasif moddayken Microsoft Defender Virüsten Koruma'da desteklenmez.
 >
 > Yeni göstergeleri (ICS) içeri aktarma biçimi, yeni güncelleştirilmiş eylemler ve uyarı ayarlarına göre değişti. İçeri aktarma panelinin en altında bulunan yeni CSV biçimini indirmenizi öneririz.
 

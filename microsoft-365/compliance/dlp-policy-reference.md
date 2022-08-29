@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ilkesi bileşeni ve yapılandırma başvurusu
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 9d0b8489c303b7786cdd7443ebc6f41507e6487e
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 1ddae6821c528d14b603668d943cc70abc069cdd
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306712"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450135"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Veri Kaybı Önleme ilkesi başvurusu
 
@@ -229,7 +229,7 @@ Kural yalnızca seçtiğiniz **duyarlılık etiketlerinin** ve **bekletme etiket
 SID'ler, gerekirse değiştirebileceğiniz önceden tanımlanmış bir [**güvenilirlik düzeyine**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) sahiptir. Daha fazla bilgi için bkz. [Güvenilirlik düzeyleri hakkında daha fazla bilgi](sensitive-information-type-learn-about.md#more-on-confidence-levels).
 
 > [!IMPORTANT]
-> SID'lerin, en fazla benzersiz örnek sayısı parametresini tanımlamanın iki farklı yolu vardır. Daha fazla bilgi edinmek için bkz [. SIT için örnek sayısı desteklenen değerler](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+> SID'lerin, en fazla benzersiz örnek sayısı parametresini tanımlamanın iki farklı yolu vardır. Daha fazla bilgi edinmek için bkz [. SIT için örnek sayısı desteklenen değerler](sit-limits.md#instance-count-supported-values-for-sit).
 
 #### <a name="condition-context"></a>Koşul bağlamı
 
@@ -313,7 +313,7 @@ Kullanılabilir bağlam seçenekleri, seçtiğiniz konuma bağlı olarak değiş
 ##### <a name="conditions-devices-supports"></a>Cihazların desteklediği koşullar
 
 - İçerik içeriği
-- (önizleme) Kullanıcı Edge'den hassas bir web sitesine erişmiş. Daha fazla bilgi için bkz[. Senaryo 6 Hassas hizmet etki alanlarındaki kullanıcı etkinliklerini izleme veya kısıtlama (önizleme).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview)
+- Kullanıcı Edge'den hassas bir web sitesine erişmiş. Daha fazla bilgi için bkz [. Senaryo 6 Hassas hizmet etki alanlarında kullanıcı etkinliklerini izleme veya kısıtlama](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) .
 - Dosya uzantısı
 - Dosya türü:
 - Bkz [. üzerinde izleyebileceğiniz ve eylem gerçekleştirebileceğiniz uç nokta etkinlikleri](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
@@ -417,7 +417,7 @@ Bir kuralda kullanılabilen eylemler, seçilen konumlara bağlıdır. İlkenin u
 #### <a name="devices-actions"></a>Cihaz eylemleri
 
 <!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
-- (önizleme) Kullanıcılar Windows cihazlarında Microsoft Edge tarayıcısında hassas web sitelerine eriştiğinde etkinlikleri denetle veya kısıtla. Daha fazla bilgi için bkz[. Senaryo 6 Hassas hizmet etki alanlarındaki kullanıcı etkinliklerini izleme veya kısıtlama (önizleme).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview)
+- Kullanıcılar Windows cihazlarında Microsoft Edge tarayıcısında hassas web sitelerine eriştiğinde etkinlikleri denetle veya kısıtla. Daha fazla bilgi için bkz [. Senaryo 6 Hassas hizmet etki alanlarında kullanıcı etkinliklerini izleme veya kısıtlama](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) ).
 - Windows cihazlarında etkinlikleri denetleme veya kısıtlama
 
 kullanmak `Audit or restrict activities on Windows devices`için **, DLP ayarlarında** ve bunları kullanmak istediğiniz ilkede seçenekleri yapılandırmanız gerekir. Daha fazla bilgi için bkz [. Kısıtlı uygulamalar ve uygulama grupları](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) .

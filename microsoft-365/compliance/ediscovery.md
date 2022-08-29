@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 08/25/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview; Exchange posta kutuları, SharePoint ve OneDrive İş siteleri, Microsoft 365 Grupları, Microsoft Teams ve Skype Kurumsal konuşmaları gibi farklı konumlarda bulunan içeriği aramak ve dışarı aktarmak için kullanabileceğiniz üç eBulma aracı sunar. eBulma (Standart) ve eBulma (Premium), araştırmalarınızı yönetmenize yardımcı olacak birçok ek özellik sağlar.
-ms.openlocfilehash: a94811c4f8d3ec2d3f15f99375cfee2d3e5a4a0d
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: c35b0c92ce38fecf0aac31b72037d9cbe3e05073
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306558"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445170"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Microsoft Purview eKeşif çözümleri
 
@@ -38,7 +38,13 @@ Elektronik bulma veya eBulma, yasal davalarda kanıt olarak kullanılabilecek el
 
 Microsoft Purview üç eBulma çözümü sağlar: İçerik arama, eBulma (Standart) ve eBulma (Premium).
 
-![Microsoft Purview eKeşif araçlarının temel özellikleri.](..\media\m365-ediscovery-solution-graphic.png)
+<!--
+![Key capabilities of Microsoft Purview eDiscovery tools.](..\media\m365-ediscovery-solution-graphic.png)
+-->
+
+|İçerik Arama|eKeşif (Standart)|eKeşif (Premium)|
+|---------|---------|---------|
+|İçerik için arama yapma </br> Anahtar sözcük sorguları ve arama koşulları </br> Arama sonuçlarını dışarı aktarma </br> Rol tabanlı izinler|Arama ve dışarı aktarma </br> Olay yönetimi </br>Yasal tutma|Koruyucu yönetimi </br> Yasal tutma bildirimleri </br> Gelişmiş dizin oluşturma </br> Küme filtrelemeyi gözden geçirme </br> Etiketleme </br> Analytics </br> Tahmine dayalı kodlama modelleri </br> Ve daha fazlası...|
 
 - **İçerik araması**. İçerik arama aracını kullanarak Microsoft 365 veri kaynaklarında içerik arayın ve arama sonuçlarını yerel bir bilgisayara aktarın.
 

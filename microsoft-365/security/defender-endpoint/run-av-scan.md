@@ -1,7 +1,7 @@
 ---
-title: Virüsten koruma tarama API'sini çalıştırma
-description: Cihazda virüsten koruma taraması çalıştırmayla ilgili çağrılar oluşturmak için bu API'yi kullanın.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, cihazı yalıtımtan kaldırma
+title: Virüsten koruma tarama API'si çalıştırma
+description: Bir cihazda virüsten koruma taraması çalıştırmayla ilgili çağrılar oluşturmak için bu API'yi kullanın.
+keywords: api'ler, graph API'leri, desteklenen API'ler, cihazı yalıtımdan kaldırma
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,24 +13,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3208ff32c2adda051b79fea684af915a909dd062
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 0f72d2d6db4bae754b0cd70d444e2781654a4b40
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63016510"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387102"
 ---
-# <a name="run-antivirus-scan-api"></a>Virüsten koruma tarama API'sini çalıştırma
+# <a name="run-antivirus-scan-api"></a>Virüsten koruma tarama API'si çalıştırma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:** 
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:** 
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,33 +38,33 @@ ms.locfileid: "63016510"
 
 ## <a name="api-description"></a>API açıklaması
 
-Bir Microsoft Defender Virüsten Koruma taramayı başlatma.
+Cihazda Microsoft Defender Virüsten Koruma taraması başlatın.
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1. Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+1. Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
 > [!IMPORTANT]
 >
-> - Bu eylem, 11. Windows 10 sürüm 1709 ve sonraki sürümler Windows kullanılabilir.
-> - Etkin Microsoft Defender Virüsten Koruma virüsten koruma çözümü olsa da, diğer virüsten koruma çözümleriyle birlikte bir Microsoft Defender Virüsten Koruma (Microsoft Defender AV) taraması da çalıştırabilirsiniz. Microsoft Defender Virüsten Koruma Edilgen modunda olabilir. Daha fazla bilgi için uyumluluk [Microsoft Defender Virüsten Koruma bakın](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+> - Bu eylem Windows 10, sürüm 1709 veya üzeri ve Windows 11 cihazlarda kullanılabilir.
+> - Microsoft Defender Virüsten Koruma taraması, Microsoft Defender Virüsten Koruma'nın etkin virüsten koruma çözümü olup olmadığına bakılmaksızın diğer virüsten koruma çözümleriyle birlikte çalıştırılabilir. Microsoft Defender Virüsten Koruma Pasif modda olabilir. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma uyumluluğu](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz. Uç Nokta API'leri için [Microsoft Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz[. Uç Nokta için Microsoft Defender API'leri kullanma](apis-intro.md)
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 :---|:---|:---
-Uygulama|Makine.Tarama|'Makine tara'
-Temsilcili (iş veya okul hesabı)|Makine.Tarama|'Makine tara'
+Uygulama|Machine.Scan|'Tarama makinesi'
+Temsilci (iş veya okul hesabı)|Machine.Scan|'Tarama makinesi'
 
 > [!NOTE]
-> Kullanıcı kimlik bilgilerini kullanarak belirteç elde edilirken:
+> Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en azından şu rol iznine sahip olması gerekir: 'Etkin düzeltme eylemleri' (Daha fazla bilgi için bkz [.](user-roles.md) Rol oluşturma ve yönetme)
-> - Kullanıcının, cihaz grubu ayarlarına göre cihaza erişimi olması gerekir (Daha fazla bilgi için bkz. Cihaz [gruplarını oluşturma](machine-groups.md) ve yönetme)
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Etkin düzeltme eylemleri' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
+> - Kullanıcının cihaz grubu ayarlarına göre cihaza erişimi olmalıdır (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -72,38 +72,38 @@ Temsilcili (iş veya okul hesabı)|Makine.Tarama|'Makine tara'
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 Name|Tür|Açıklama
 :---|:---|:---
 Yetkilendirme|Dize|Taşıyıcı {token}. **Gerekli**.
-İçerik Türü|dize|application/json
+İçerik Türü|Dize|application/json
 
 ## <a name="request-body"></a>İstek gövdesi
 
-İstek gövdesinde, aşağıdaki parametreleri olan bir JSON nesnesi girin:
+İstek gövdesinde aşağıdaki parametreleri içeren bir JSON nesnesi sağlayın:
 
 Parametre|Tür|Açıklama
 :---|:---|:---
-Açıklama ekleme|Dize|Eylemle ilişkilendirmek için açıklama. **Gerekli**.
-ScanType|Dize|Tarama türünü tanımlar. **Gerekli**.
+Açıklama ekleme|Dize|Eylemle ilişkilendirilecek açıklama. **Gerekli**.
+ScanType|Dize|Tarama'nın türünü tanımlar. **Gerekli**.
 
-**ScanType** , gerçekleştirmek istediğiniz tarama türünü kontrol eder ve aşağıdakilerden biri olabilir:
+**ScanType** gerçekleştirilecek tarama türünü denetler ve aşağıdakilerden biri olabilir:
 
 - **Hızlı**: Cihazda hızlı tarama gerçekleştirme
 - **Tam**: Cihazda tam tarama gerçekleştirme
 
 ## <a name="response"></a>Yanıt
 
-Başarılı olursa, bu yöntem yanıt gövdesinde 201, Yanıt kodu ve _MakineAction_ nesnesi oluşturuldu hata kodunu döndürür.
+Başarılı olursa, bu yöntem yanıt gövdesinde 201, Oluşturuldu yanıt kodu ve _MachineAction_ nesnesi döndürür.
 
-Aynı cihaz için virüsten koruma taraması çalıştırmak üzere birden çok API çağrısı gönderiyorsanız, "Eylem zaten devam ediyor" iletisiyle "bekleyen makine eylemi" veya HTTP 400'ü döndürür.
+Aynı cihaz için virüsten koruma taraması çalıştırmak için birden çok API çağrısı gönderirseniz, "bekleyen makine eylemi" veya "Eylem zaten sürüyor" iletisiyle HTTP 400 döndürür.
 
 ## <a name="example"></a>Örnek
 
-### <a name="request"></a>İstek
+### <a name="request"></a>Istek
 
-burada isteğin bir örneği ve sağlanmaktadır.
+burada isteğin bir örneği verilmiştir.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/runAntiVirusScan 

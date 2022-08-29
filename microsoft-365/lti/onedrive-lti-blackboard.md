@@ -1,5 +1,5 @@
 ---
-title: Microsoft OneDrive LTI'yi Blackboard ile tümleştirme
+title: Blackboard ile Microsoft OneDrive LTI kullanma
 ms.author: danismith
 author: DaniEASmith
 manager: serdars
@@ -7,22 +7,19 @@ ms.reviewer: amitman
 audience: admin
 ms.topic: article
 ms.service: o365-administration
-f1.keywords:
-- CSH
-ms.collection: M365-modern-desktop
+ms.collection: m365initiative-edu
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Yeni Microsoft OneDrive Learning Tools Interoperability for Blackboard ile ödevler oluşturun ve notlayın, kurs içeriğini derleyin ve dosyalar üzerinde gerçek zamanlı olarak işbirliği yapın.
-ms.openlocfilehash: 7e43ff51a069db55be06236fb0318aa4453d8feb
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: Yeni Blackboard için Microsoft OneDrive Öğrenme Araçları Birlikte Çalışabilirliği ile ödevler oluşturun ve notlayın, kurs içeriğini derleyin ve dosyalar üzerinde gerçek zamanlı olarak işbirliği yapın.
+ms.openlocfilehash: 2fd03732a9426bb13176dbfc16a7c996767f5430
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824662"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388363"
 ---
-# <a name="integrate-microsoft-onedrive-lti-with-blackboard"></a>Microsoft OneDrive LTI'yi Blackboard ile tümleştirme
+# <a name="use-microsoft-onedrive-lti-with-blackboard"></a>Blackboard ile Microsoft OneDrive LTI kullanma
 
-Microsoft OneDrive LTI'yi Blackboard ile tümleştirmek iki adımlı bir işlemdir. İlk adım, Microsoft OneDrive LTI'yi Blackboard kurslarında kullanılabilir hale getirir ve ikinci adım Blackboard için Microsoft OneDrive açar.
+Microsoft OneDrive LTI'yi Blackboard ile tümleştirmek iki adımlı bir işlemdir. İlk adım, Microsoft OneDrive LTI'yi Blackboard kurslarında kullanıma hazır hale getirir ve ikinci adım da Microsoft OneDrive for Blackboard'u açar.
 
 > [!IMPORTANT]
 > Bu tümleştirmeyi gerçekleştiren kişi Blackboard yöneticisi ve Microsoft 365 kiracısının yöneticisi olmalıdır.
@@ -35,7 +32,7 @@ Microsoft OneDrive LTI'yi Blackboard ile tümleştirmek iki adımlı bir işlemd
 > [!NOTE]
 >
 > - Chrome tarayıcı gizli modunda tanımlama bilgilerine varsayılan olarak izin verilmez ve buna izin verilmelidir.
-> - Microsoft OneDrive LTI, Microsoft Edge tarayıcıdaki özel modda çalışır. Tanımlama bilgilerini engellemediğinizden emin olun (varsayılan olarak izin verilir).
+> - Microsoft OneDrive LTI, Microsoft Edge tarayıcısında özel modda çalışır. Tanımlama bilgilerini engellemediğinizden emin olun (varsayılan olarak izin verilir).
 
 ## <a name="register-the-onedrive-lti-13-tool-in-blackboard"></a>OneDrive LTI 1.3 aracını Blackboard'a kaydetme
 
@@ -56,10 +53,10 @@ Microsoft OneDrive LTI'yi Blackboard ile tümleştirmek iki adımlı bir işlemd
 ## <a name="configure-the-microsoft-lti-tool-to-work-with-blackboard"></a>Microsoft LTI Aracı'nı Blackboard ile çalışacak şekilde yapılandırma
 
 1. [Microsoft OneDrive LTI Kayıt Portalı'na giriş](https://onedrivelti.microsoft.com/admin) yapın.
-2. **Yönetici Onayı** düğmesini seçin ve izinleri kabul edin.
+2. **Yönetici Onay** düğmesini seçin ve izinleri kabul edin.
 
-> [!CAUTION]
-> Bu adım gerçekleştirilmezse, aşağıdaki adım size bir hata verir ve hatayı aldıktan sonra bu adımı bir saat boyunca gerçekleştiremezsiniz.
+    > [!CAUTION]
+    > Bu adım gerçekleştirilmezse, aşağıdaki adım size bir hata verir ve hatayı aldıktan sonra bu adımı bir saat boyunca gerçekleştiremezsiniz.
 
 3. **Yeni LTI Kiracısı oluştur** düğmesini seçin.
 4. LTI Kaydı sayfasında, LTI Tüketici Platformu açılan **listesinden Kara Tahta'yı** seçin ve ardından **İleri** düğmesini seçin.
@@ -67,7 +64,7 @@ Microsoft OneDrive LTI'yi Blackboard ile tümleştirmek iki adımlı bir işlemd
 6. Değişikliklerinizi gözden geçirin ve kaydedin. Kayıt başarılı olduktan sonra bir ileti görüntülenir.
 7. Kayıt ayrıntılarınız, giriş sayfasındaki **LTI Kiracılarını Görüntüle** düğmesi seçilerek de gözden geçirilebilir.
 
-Bu adımları tamamladıktan sonra eğitmenleriniz, Kurs İçeriği sayfasındaki 'artı' menüsünü kullandıklarında OneDrive belgeleri açabilir.
+Bu adımları tamamladıktan sonra eğitmenleriniz, Kurs İçeriği sayfasındaki 'artı' menüsünü kullandıklarında Belgeleri OneDrive'dan açabilir.
 
 ## <a name="recommended-content"></a>Önerilen içerik
 

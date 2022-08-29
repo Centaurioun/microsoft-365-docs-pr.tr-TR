@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Virüsten Koruma için tarama seçeneklerini yapılandırma
-description: Microsoft Defender AV'yi e-posta depolama dosyalarını, yedekleme veya yeniden ayrıştırma noktalarını, ağ dosyalarını ve arşivlenmiş dosyaları (.zip dosyaları gibi) tarayabilecek şekilde yapılandırabilirsiniz.
+description: E-posta depolama dosyalarını, yedekleme veya yeniden ayrıştırma noktalarını, ağ dosyalarını ve arşivlenmiş dosyaları (.zip dosyaları gibi) taramak için Microsoft Defender Virüsten Koruma'yı yapılandırabilirsiniz.
 keywords: gelişmiş taramalar, tarama, e-posta, arşiv, zip, rar, arşiv, yeniden ayrıştırma taraması
 ms.pagetype: security
 ms.prod: m365-security
@@ -16,17 +16,17 @@ ms.technology: mde
 ms.date: 12/03/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 5060a05e485db18f8276ecd2ec592ea3873a83b2
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 873ea8ee0b8f3f392a312b811b79f9a6e59f9825
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419934"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387891"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Microsoft Defender Virüsten Koruma tarama seçeneklerini yapılandırın
 
 **Şunlar için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Virüsten Koruma
 
@@ -35,18 +35,18 @@ ms.locfileid: "65419934"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Tarama seçeneklerini yapılandırmak için Microsoft Intune kullanma
 
-Daha fazla bilgi için bkz[. Microsoft Intune cihaz kısıtlama ayarlarını yapılandırma](/intune/device-restrictions-configure) ve [Intune Windows 10 için cihaz kısıtlama ayarlarını Microsoft Defender Virüsten Koruma](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
+Daha fazla bilgi için bkz[. Microsoft Intune cihaz kısıtlama ayarlarını yapılandırma](/intune/device-restrictions-configure) ve [Intune'de Windows 10 için Microsoft Defender Virüsten Koruma cihaz kısıtlama ayarları](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Tarama seçeneklerini yapılandırmak için Microsoft Endpoint Manager kullanma
 
-Microsoft Endpoint Manager (geçerli dal) yapılandırmayla ilgili ayrıntılar için bkz. [Kötü amaçlı yazılımdan koruma ilkeleri oluşturma ve dağıtma: Tarama ayarları](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
+Microsoft Endpoint Manager (geçerli dal) yapılandırmasıyla ilgili ayrıntılar için bkz. [Kötü amaçlı yazılımdan koruma ilkeleri oluşturma ve dağıtma: Tarama ayarları](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
 
 ## <a name="use-group-policy-to-configure-scanning-options"></a>Tarama seçeneklerini yapılandırmak için grup ilkesi kullanma
 
 > [!TIP]
 > Windows için teslim edilen Yönetim şablonu dosyalarına dahil edilen bilgisayar ve kullanıcı yapılandırmaları için ilke ayarlarını listeleyen grup ilkesi Başvuru Elektronik Tablosu'nı indirin. grup ilkesi Nesneleri düzenlerken elektronik tabloya başvurmayı yapılandırabilirsiniz. <br/><br/> En son sürümler şunlardır:
-> - [Windows 10 Mayıs 2020 Güncelleştirmesi (2004) için grup ilkesi Ayarlar Başvuru Elektronik Tablosu](https://www.microsoft.com/download/details.aspx?id=101451)
-> - [Windows 11 Ekim 2021 Güncelleştirmesi (21H2) için grup ilkesi Ayarlar Başvuru Elektronik Tablosu](https://www.microsoft.com/download/details.aspx?id=103506)
+> - [Windows 10 Mayıs 2020 Güncelleştirmesi (2004) için grup ilkesi Ayarları Başvuru Elektronik Tablosu](https://www.microsoft.com/download/details.aspx?id=101451)
+> - [Windows 11 Ekim 2021 Güncelleştirmesi (21H2) için grup ilkesi Ayarları Başvuru Elektronik Tablosu](https://www.microsoft.com/download/details.aspx?id=103506)
 
 1. grup ilkesi yönetim bilgisayarınızda [grup ilkesi Yönetim Konsolu'nu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) açın.
 
@@ -54,7 +54,7 @@ Microsoft Endpoint Manager (geçerli dal) yapılandırmayla ilgili ayrıntılar 
 
 3. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na** gidin ve **Yönetim şablonları'na** tıklayın.
 
-4. Microsoft Defender Virüsten Koruma **bileşenleri** \> Windows için ağacı genişletin ve bir konum seçin (bu [makaledeki Ayarlar ve konumlara](#settings-and-locations) bakın).
+4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma'ya** genişletin ve bir konum seçin (bu makaledeki [Ayarlar ve konumlar](#settings-and-locations) bölümüne bakın).
 
 5. İlke nesnesini düzenleyin.
 
@@ -64,7 +64,7 @@ Microsoft Endpoint Manager (geçerli dal) yapılandırmayla ilgili ayrıntılar 
 
 |İlke öğesi ve konumu|Varsayılan ayar (yapılandırılmadıysa)|Sınıf için `MSFT_MpPreference` PowerShell `Set-MpPreference` parametresi veya WMI özelliği|
 |---|---|---|
-|E-posta taraması <p> **Tarama** \> **E-posta taramayı açma**<p>Bkz [. E-posta tarama sınırlamaları](#email-scanning-limitations) (bu makalede)|Devre dışı|`-DisableEmailScanning`|
+|Email tarama <p> **Tarama** \> **E-posta taramayı açma**<p>[Tarama sınırlamalarını Email](#email-scanning-limitations) bakın (bu makalede)|Devre dışı|`-DisableEmailScanning`|
 | Betik tarama | Etkin  | Bu ilke ayarı betik taramasını yapılandırmanıza olanak tanır. Bu ayarı etkinleştirir veya yapılandırmazsanız, betik taraması etkinleştirilir. <p>Bkz. [Defender/AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender)  | 
 |[Yeniden ayrıştırma noktalarını](/windows/win32/fileio/reparse-points) tarama <p> **Tarama** \> **Yeniden ayrıştırma noktası taramayı açma**|Devre dışı|Yok <p>Bkz [. Noktaları yeniden ayrıştırma](/windows/win32/fileio/reparse-points)|
 |Eşlenen ağ sürücülerini tarama <p> **Tarama** \> **Eşlenen ağ sürücülerinde tam tarama çalıştırma**|Devre dışı|`-DisableScanningMappedNetworkDrivesForFullScan`|
@@ -84,26 +84,26 @@ Microsoft Endpoint Manager (geçerli dal) yapılandırmayla ilgili ayrıntılar 
 
 PowerShell'i Microsoft Defender Virüsten Koruma ile kullanma hakkında daha fazla bilgi için bkz.
 
-- [PowerShell cmdlet'leriyle Microsoft Defender Virüsten Koruma yönetme](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [Microsoft Defender Virüsten Koruma'nın PowerShell cmdlet'lerini yönetme](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Microsoft Defender Virüsten Koruma cmdlet'leri](/powershell/module/defender/)
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>Tarama seçeneklerini yapılandırmak için WMI kullanma
 
 Bkz. [Windows Defender WMIv2 API'leri](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
-## <a name="email-scanning-limitations"></a>E-posta tarama sınırlamaları
+## <a name="email-scanning-limitations"></a>Email tarama sınırlamaları
 
-E-posta taraması, Outlook ve diğer posta istemcileri tarafından isteğe bağlı ve zamanlanmış taramalar sırasında kullanılan e-posta dosyalarının taranmalarına olanak tanır. E-posta içindeki katıştırılmış nesneler (ekler ve arşivlenmiş dosyalar gibi) de taranır. Aşağıdaki dosya biçimi türleri taranabilir ve düzeltilebilir:
+Email tarama, outlook ve diğer posta istemcileri tarafından isteğe bağlı ve zamanlanmış taramalar sırasında kullanılan e-posta dosyalarının taranmalarına olanak tanır. E-posta içindeki katıştırılmış nesneler (ekler ve arşivlenmiş dosyalar gibi) de taranır. Aşağıdaki dosya biçimi türleri taranabilir ve düzeltilebilir:
 
-- DBX
-- MBX
+- Dbx
+- Mbx
 - MIME
 
-Outlook 2003 veya daha eski (arşiv türünün unicode olmayan olarak ayarlandığı) tarafından kullanılan PST dosyaları da taranır, ancak Microsoft Defender Virüsten Koruma PST dosyalarının içinde algılanan tehditleri gideremez.
+Outlook 2003 veya daha eski bir sürümü tarafından kullanılan PST dosyaları da taranır (arşiv türü unicode olmayan olarak ayarlanır), ancak Microsoft Defender Virüsten Koruma PST dosyalarının içinde algılanan tehditleri düzeltemez.
 
-Microsoft Defender Virüsten Koruma bir e-posta iletisinde bir tehdit algılarsa, tehdidi el ile düzeltebilmeniz için güvenliği aşılmış e-postayı tanımlamanıza yardımcı olması için aşağıdaki bilgileri gösterir:
+Microsoft Defender Virüsten Koruma bir e-posta iletisinde bir tehdit algılarsa, tehdidi el ile düzeltebilmeniz için güvenliği aşılmış e-postayı tanımlamanıza yardımcı olacak aşağıdaki bilgileri gösterir:
 
-- E-posta konusu
+- Email konu
 - Ek adı
 
 ## <a name="scanning-mapped-network-drives"></a>Eşlenen ağ sürücülerini tarama
@@ -111,7 +111,7 @@ Microsoft Defender Virüsten Koruma bir e-posta iletisinde bir tehdit algılarsa
 Herhangi bir işletim sisteminde, yalnızca sistem düzeyinde eşlenen ağ sürücüleri taranır. Kullanıcı düzeyinde eşlenmiş ağ sürücüleri taranmıyor. Kullanıcı düzeyinde eşlenen ağ sürücüleri, kullanıcının oturumlarında el ile ve kendi kimlik bilgilerini kullanarak eşledikleri sürücülerdir.
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

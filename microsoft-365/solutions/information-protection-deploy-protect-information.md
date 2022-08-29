@@ -18,12 +18,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Microsoft 365 güvenlik ve uyumluluk özelliklerini dağıtın ve kişisel bilgilerinizi koruyun.
-ms.openlocfilehash: ca2f500c5a6f09bf051137de2b637feb5a00f391
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 893e989f0040523645fc5fc91e3acd4176f77eb6
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750286"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368742"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Veri gizliliği düzenlemesine tabi bilgileri koruma
 
@@ -198,7 +198,7 @@ Yapılandırma yönergeleri için bkz. [SharePoint, OneDrive ve Exchange için o
 
 ## <a name="data-loss-prevention"></a>Veri kaybı önleme
 
-Microsoft 365'te [veri kaybı önlemeyi (DLP)](../compliance/dlp-learn-about-dlp.md) kullanarak hem şirket içinde hem de dışarıdan kişisel bilgiler içeren verilerin paylaşılması gibi riskli, yanlışlıkla veya uygunsuz paylaşımları algılayabilir, uyarır ve engelleyebilirsiniz.
+Microsoft Purview'da [veri kaybı önlemeyi (DLP)](../compliance/dlp-learn-about-dlp.md) kullanarak hem şirket içinde hem de dışarıdan kişisel bilgiler içeren verilerin paylaşılması gibi riskli, yanlışlıkla veya uygunsuz paylaşımları algılayabilir, uyarır ve engelleyebilirsiniz.
 
 DLP şunları yapmanızı sağlar:
 
@@ -227,41 +227,57 @@ DLP, sistem durumu kaydı içeren bir belgeyi veya e-postayı tanımlamak için 
 
 ### <a name="planning-for-dlp"></a>DLP planlama
 
-DLP ilkelerinizi planlama:
+DLP uygulamanızı planlama konusunda eksiksiz yönergeler için bkz. [Veri kaybı önlemeyi (](../compliance/dlp-overview-plan-for-dlp.md) DLP) planlama
 
-- İş gereksinimleriniz.
+<!-- Plan your DLP policies for:
 
-- [Veri gizliliği risklerini değerlendirme ve hassas öğeleri tanımlama makalesinde](information-protection-deploy-assess.md) açıklandığı gibi kuruluşun risk tabanlı değerlendirmesi.
+- Your business requirements.
 
-- Veri gizliliğinin yerinde veya planlanmasında diğer bilgi koruma ve idare mekanizmaları.
+- A risk-based assessment of the organization as described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md).
 
-- Değerlendirmenize bağlı olarak kişisel veriler için tanımladığınız hassas bilgi türleri [, veri gizliliği risklerini değerlendirme ve hassas öğeleri tanımlama makalesinde](information-protection-deploy-assess.md) açıklandığı gibi çalışır. DLP ilkesi koşulları hem hassas bilgi türlerini hem de bekletme etiketlerini temel alabilir.
+- Other information protection and governance mechanisms in place or in planning for data privacy.
 
-- Bekletme etiketleri, DLP koşullarını belirtmeniz gerekir. Daha fazla [bilgi için kuruluşunuzun veri gizliliği düzenlemesine tabi idare bilgileri](information-protection-deploy-govern.md) makalesine bakın.
+- The sensitive information types that you’ve identified for personal data based on your assessment work as described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md). DLP policy conditions can be based on both sensitive information types and retention labels.
 
-- Kuruluştaki birinin hassas bilgi türlerindeki, bekletme etiketlerindeki, yönetmeliklerdeki ve uyumluluk ilkelerindeki değişiklikler için ilkeleri çalıştırmasını ve ayarlamasını gerektiren sürekli DLP ilke yönetimi.
+- The retention labels you'll need to specify DLP conditions. See the [govern information subject to data privacy regulation in your organization](information-protection-deploy-govern.md) article for more information.
 
-Duyarlılık etiketleri DLP ilke koşullarında kullanılamasa da, erişimi önlemeye yönelik belirli koruma senaryolarına yalnızca hassas bilgi türlerine göre otomatik olarak uygulanabilen duyarlılık etiketleriyle ulaşılabilir. Sağlam duyarlılık etiketlemesi varsa, korumayı artırmak için DLP'nin kullanılıp kullanılmayacağını göz önünde bulundurun çünkü:
+- Ongoing DLP policy management, which requires someone in the organization to operate and tune policies for changes in sensitive information types, retention labels, regulations, and compliance policies.
 
-  - DLP, dosyaların paylaşılmasını engelleyebilir. Duyarlılık etiketleri yalnızca erişimi engelleyebilir.
+Although sensitivity labels can’t be used in DLP policy conditions, certain protection scenarios to prevent access may be achievable with just sensitivity labels that can be auto-applied based on sensitive information types. If robust sensitivity labeling is in place, consider whether DLP should be used to augment protection because:
 
-  - DLP kurallar, koşullar ve eylemler açısından daha ayrıntılı denetim düzeylerine sahiptir.
+  - DLP can prevent sharing of files. Sensitivity labels can just prevent access.
 
-  - DLP ilkeleri Teams sohbetine ve kanal iletilerine uygulanabilir. Duyarlılık etiketleri yalnızca belgelere ve e-postalara uygulanabilir.
+  - DLP has more granular levels of control in terms of rules, conditions, and actions.
+
+  - DLP policies can be applied to Teams chat and channel messages. Sensitivity labels can only be applied to documents and email. -->
 
 
 ### <a name="dlp-policies"></a>DLP ilkeleri
 
-DLP ilkeleri Microsoft Purview uyumluluk portalı yapılandırılır ve koruma düzeyini, ilkenin aradığı hassas bilgi türünü ve hedef iş yüklerini belirtir. Temel bileşenleri korumayı ve veri türlerini tanımlamaktır.
+DLP ilkeleri Microsoft Purview uyumluluk portalı yapılandırılır ve koruma düzeyini, ilkenin aradığı bilgileri ve hedef iş yüklerini belirtir. Her DLP ilkesi şunları gerektirir:
+
+1. İzlemek istediğiniz şeyi seçin.
+1. İzlenecek yeri seçin.
+1. Bir ilkenin bir öğeye uygulanması için eşleşmesi gereken koşulları seçin.
+1. İlke koşulları karşılandığında gerçekleştirecek eylemi seçin.
+
+DLP ilkeleri ve bunların tasarımı hakkında daha fazla bilgi edinmek için bkz:
+
+- [Veri kaybı önleme hakkında daha fazla bilgi edinme](../compliance/dlp-learn-about-dlp.md)
+- [Veri kaybı önleme ilkesi tasarlama](../compliance/dlp-policy-design.md)
+- [Veri Kaybı Önleme ilkesi başvurusu](../compliance/dlp-policy-reference.md)
+
+
+<!--
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365'te DLP ilkesi yapılandırması.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> ![DLP policy configuration in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
-GDPR farkındalığı için örnek bir DLP ilkesi aşağıda verilmiştir.
+Here is an example DLP policy for awareness of GDPR.
 
-![GDPR farkındalığı için örnek DLP ilkesi.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
+![Example DLP policy for awareness of GDPR.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
-DLP ilkeleri oluşturma ve uygulama hakkında daha fazla bilgi için [bu makaleye](../compliance/create-test-tune-dlp-policy.md) bakın.
+See [this article](../compliance/create-test-tune-dlp-policy.md) for more information about creating and applying DLP policies.-->
 
 ### <a name="protection-levels-for-data-privacy"></a>Veri gizliliği için koruma düzeyleri
 
@@ -304,7 +320,7 @@ Aşağıda, şekilde gösterildiği gibi DLP ve duyarlılık etiketlerini birlik
 
 ## <a name="office-365-message-encryption-ome-new-capabilities"></a>Office 365 İleti Şifrelemesi (OME) yeni özellikleri
 
-İnsanlar genellikle hasta sağlığı bilgileri veya müşteri ve çalışan bilgileri gibi hassas öğeleri değiştirmek için e-posta kullanır. Email ileti şifrelemesi, yalnızca hedeflenen alıcıların ileti içeriğini görüntüleyebilmesine yardımcı olur.
+Kişiler genellikle hasta sağlığı bilgileri veya müşteri ve çalışan bilgileri gibi hassas öğeleri değiştirmek için e-posta kullanır. Email ileti şifrelemesi, yalnızca hedeflenen alıcıların ileti içeriğini görüntüleyebilmesine yardımcı olur.
 
 [OME](../compliance/ome.md) ile kuruluşunuzun içindeki ve dışındaki kişiler arasında şifreli iletiler gönderebilir ve alabilirsiniz. OME Outlook.com, Yahoo!, Gmail ve diğer e-posta hizmetleriyle çalışır. OME, yalnızca hedeflenen alıcıların ileti içeriğini görüntüleyebilmesine yardımcı olur.
 

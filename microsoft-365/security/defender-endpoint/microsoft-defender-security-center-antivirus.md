@@ -1,7 +1,7 @@
 ---
 title: Windows Güvenliği uygulamasında Microsoft Defender Virüsten Koruma
-description: Windows Güvenliği uygulamasına Microsoft Defender Virüsten Koruma eklendiğinde, sık kullanılan görevleri gözden geçirebilir, karşılaştırabilir ve gerçekleştirebilirsiniz.
-keywords: wdav, virüsten koruma, güvenlik duvarı, güvenlik, windows
+description: Microsoft Defender Virüsten Koruma artık Windows Güvenliği uygulamasına eklendiğinde, sık kullanılan görevleri gözden geçirebilir, karşılaştırabilir ve gerçekleştirebilirsiniz.
+keywords: wdav, virüsten koruma, güvenlik duvarı, güvenlik, windows, microsoft defender virüsten koruma
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: bd045ac36f1685c3bf12cedf04dd074ed6c7fc5e
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: e661667802f5d170261c51bd6bc706eddfdcbf42
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873996"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387429"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Windows Güvenliği uygulamasında Microsoft Defender Virüsten Koruma
 
@@ -31,15 +31,15 @@ ms.locfileid: "65873996"
 
 Windows 10, sürüm 1703 ve sonraki sürümlerde, Windows Defender uygulaması Windows Güvenliği bir parçasıdır.
 
-Daha önce Windows Defender istemcisi ve ana Windows Ayarlar parçası olan Ayarlar birleştirildi ve Windows 10 sürüm 1703'ün bir parçası olarak varsayılan olarak yüklenen yeni uygulamaya taşındı.
+Daha önce Windows Defender istemcisi ve ana Windows Ayarları'nın parçası olan ayarlar birleştirildi ve Windows 10 sürüm 1703'ün bir parçası olarak varsayılan olarak yüklenen yeni uygulamaya taşındı.
 
 > [!IMPORTANT]
-> Windows Güvenliği uygulama hizmetini devre dışı bırakmak Microsoft Defender Virüsten Koruma veya [Windows Defender Güvenlik Duvarı](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) devre dışı bırakmaz. Bir üçüncü taraf virüsten koruma veya güvenlik duvarı ürünü yüklendiğinde ve güncel tutulduğunda bunlar otomatik olarak devre dışı bırakılır.
+> Windows Güvenliği uygulama hizmetinin devre dışı bırakılması Microsoft Defender Virüsten Koruma'nın veya [Windows Defender Güvenlik Duvarı'nın](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) devre dışı bırakılmasına neden olmaz. Bir üçüncü taraf virüsten koruma veya güvenlik duvarı ürünü yüklendiğinde ve güncel tutulduğunda bunlar otomatik olarak devre dışı bırakılır.
 > Windows Güvenliği uygulama hizmetini devre dışı bırakırsanız veya grup ilkesi ayarlarını yapılandırarak başlatılmasını veya çalışmasını engellerseniz, Windows Güvenliği uygulaması cihaza yüklediğiniz virüsten koruma veya güvenlik duvarı ürünleri hakkında eski veya yanlış bilgiler görüntüleyebilir.
-> Ayrıca, eski veya güncel olmayan bir üçüncü taraf virüsten koruma yazılımınız varsa veya daha önce yüklemiş olabileceğiniz üçüncü taraf virüsten koruma ürünlerini kaldırırsanız Microsoft Defender Virüsten Koruma'ın kendisini etkinleştirmesini engelleyebilir.
+> Ayrıca eski veya güncel olmayan bir üçüncü taraf virüsten koruma yazılımınız varsa veya daha önce yüklemiş olabileceğiniz üçüncü taraf virüsten koruma ürünlerini kaldırırsanız Microsoft Defender Virüsten Koruma'nın kendisini etkinleştirmesini engelleyebilir.
 > Bu, cihazınızın korumasını önemli ölçüde düşürür ve kötü amaçlı yazılım bulaşmasına yol açabilir.
 
-Uygulamada izleyebileceğiniz diğer Windows güvenlik özellikleri hakkında daha fazla bilgi için Windows Güvenliği [makalesine](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) bakın.
+Uygulamada izleyebileceğiniz diğer Windows güvenlik özellikleri hakkında daha fazla bilgi için [Windows Güvenliği makalesine](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) bakın.
 
 Windows Güvenliği uygulaması, Windows 10, sürüm 1703 ve sonraki sürümlerde bir istemci arabirimidir. Uç Nokta için Microsoft Defender gözden geçirmek ve yönetmek için kullanılan [Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) web portalı değildir.
 
@@ -51,10 +51,10 @@ Windows Güvenliği uygulaması, Windows 10, sürüm 1703 ve sonraki sürümlerd
 
 2. **Virüs & tehdit koruması** kutucuğunu (veya sol menü çubuğundaki kalkan simgesini) seçin.
 
-Aşağıdaki bölümlerde, Windows Güvenliği uygulamasındaki Microsoft Defender Virüsten Koruma tarafından sağlanan tehdit korumasını gözden geçirirken veya bunlarla etkileşim kurarken en yaygın görevlerden bazılarının nasıl gerçekleştirildiği açıklanır.
+Aşağıdaki bölümlerde, Windows Güvenliği uygulamasında Microsoft Defender Virüsten Koruma tarafından sağlanan tehdit korumasını gözden geçirirken veya bunlarla etkileşim kurarken en yaygın görevlerden bazılarının nasıl gerçekleştirildiği açıklanmaktadır.
 
 > [!NOTE]
-> Bu ayarlar grup ilkesi kullanılarak yapılandırılır ve dağıtılırsa, bu bölümde açıklanan ayarlar gri görünür ve tek tek uç noktalarda kullanılamaz. grup ilkesi Nesnesi aracılığıyla yapılan değişikliklerin, ayarın Windows Ayarlar güncelleştirilmeden önce tek tek uç noktalara dağıtılması gerekir. [Microsoft Defender Virüsten Koruma ile son kullanıcı etkileşimini yapılandırma](configure-end-user-interaction-microsoft-defender-antivirus.md) konusu, yerel ilke geçersiz kılma ayarlarının nasıl yapılandırılabildiğini açıklar.
+> Bu ayarlar grup ilkesi kullanılarak yapılandırılır ve dağıtılırsa, bu bölümde açıklanan ayarlar gri görünür ve tek tek uç noktalarda kullanılamaz. Ayar Windows Ayarları'nda güncelleştirilmeden önce grup ilkesi Nesnesi aracılığıyla yapılan değişikliklerin tek tek uç noktalara dağıtılması gerekir. [Microsoft Defender Virüsten Koruma ile son kullanıcı etkileşimini yapılandırma](configure-end-user-interaction-microsoft-defender-antivirus.md) konusu, yerel ilke geçersiz kılma ayarlarının nasıl yapılandırılabildiğini açıklar.
 
 ## <a name="run-a-scan-with-the-windows-security-app"></a>Windows Güvenliği uygulamasıyla tarama çalıştırma
 
@@ -72,11 +72,11 @@ Aşağıdaki bölümlerde, Windows Güvenliği uygulamasındaki Microsoft Defend
 
 2. **Virüs & tehdit koruması** kutucuğunu (veya sol menü çubuğundaki kalkan simgesini) seçin.
 
-3. **Virüs & tehdit koruması güncelleştirmelerini** seçin. Şu anda yüklü olan sürüm, ne zaman indirildiği hakkında bazı bilgilerle birlikte görüntülenir. Geçerli sürümü el ile indirilebilen en son sürümle karşılaştırabilir veya bu sürüm için değişiklik günlüğünü gözden geçirebilirsiniz. Bkz[. Microsoft Defender Virüsten Koruma ve diğer Microsoft kötü amaçlı yazılımdan koruma yazılımları için güvenlik bilgileri güncelleştirmeleri](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus).
+3. **Virüs & tehdit koruması güncelleştirmelerini** seçin. Şu anda yüklü olan sürüm, ne zaman indirildiği hakkında bazı bilgilerle birlikte görüntülenir. Geçerli sürümü el ile indirilebilen en son sürümle karşılaştırabilir veya bu sürüm için değişiklik günlüğünü gözden geçirebilirsiniz. Bkz [. Microsoft Defender Virüsten Koruma ve diğer Microsoft kötü amaçlı yazılımdan koruma için güvenlik bilgileri güncelleştirmeleri](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus).
 
 4. Yeni koruma **güncelleştirmelerini indirmek için Güncelleştirmeleri denetle'yi** seçin (varsa).
 
-## <a name="ensure-microsoft-defender-antivirus-is-enabled-in-the-windows-security-app"></a>Windows Güvenliği uygulamasında Microsoft Defender Virüsten Koruma etkinleştirildiğinden emin olun
+## <a name="ensure-microsoft-defender-antivirus-is-enabled-in-the-windows-security-app"></a>Windows Güvenliği uygulamasında Microsoft Defender Virüsten Koruma'nın etkinleştirildiğinden emin olun
 
 1. Başlangıç menüsünde *Güvenlik'i* arayarak ve ardından **Windows Güvenliği'ı** seçerek Windows Güvenliği uygulamasını açın.
 
@@ -88,7 +88,7 @@ Aşağıdaki bölümlerde, Windows Güvenliği uygulamasındaki Microsoft Defend
 
     > [!NOTE]
     > **Gerçek zamanlı korumayı** kapatırsanız, kısa bir gecikmeden sonra otomatik olarak yeniden açılır. Bu, kötü amaçlı yazılımlardan ve tehditlerden korunduğunuzdan emin olmaktır.
-    > Başka bir virüsten koruma ürünü yüklerseniz Microsoft Defender Virüsten Koruma otomatik olarak kendini devre dışı bırakır ve Windows Güvenliği uygulamasında olduğu gibi gösterilir. [Sınırlı düzenli taramayı](limited-periodic-scanning-microsoft-defender-antivirus.md) etkinleştirmenizi sağlayacak bir ayar görüntülenir.
+    > Başka bir virüsten koruma ürünü yüklerseniz, Microsoft Defender Virüsten Koruma otomatik olarak kendini devre dışı bırakır ve Windows Güvenliği uygulamasında bu şekilde gösterilir. [Sınırlı düzenli taramayı](limited-periodic-scanning-microsoft-defender-antivirus.md) etkinleştirmenizi sağlayacak bir ayar görüntülenir.
 
 ## <a name="add-exclusions-for-microsoft-defender-antivirus-in-the-windows-security-app"></a>Windows Güvenliği uygulamasında Microsoft Defender Virüsten Koruma için dışlamalar ekleme
 
@@ -109,7 +109,7 @@ Aşağıdaki tabloda dışlama türleri ve ne olacağı özetlenmiştir:
 |**Dosya**|Konum <br/>Örnek: `c:\sample\sample.test`|Belirli bir dosya Microsoft Defender Virüsten Koruma tarafından atlanır.|
 |**Klasör**|Konum <br/>Örnek: `c:\test\sample`|Belirtilen klasördeki tüm öğeler Microsoft Defender Virüsten Koruma tarafından atlanır.|
 |**Dosya türü**|Dosya uzantısı <br/>Örnek: `.test`|Cihazınızda herhangi bir yerde uzantıya `.test` sahip tüm dosyalar Microsoft Defender Virüsten Koruma tarafından atlanır.|
-|**Işlem**|Yürütülebilir dosya yolu <br>Örnek: `c:\test\process.exe`|Belirli işlem ve bu işlem tarafından açılan tüm dosyalar Microsoft Defender Virüsten Koruma tarafından atlanır.|
+|**Işlem**|Yürütülebilir dosya yolu <br>Örnek: `c:\test\process.exe`|Belirli bir işlem ve bu işlem tarafından açılan tüm dosyalar Microsoft Defender Virüsten Koruma tarafından atlanır.|
 
 Daha fazla bilgi edinmek için aşağıdaki kaynaklara bakın:
 
@@ -134,7 +134,7 @@ Daha fazla bilgi edinmek için aşağıdaki kaynaklara bakın:
 
 4. **Denetimli klasör erişimi** ayarlarını değiştirmek için bkz. [Denetimli klasör erişimi ile önemli klasörleri koruma](/microsoft-365/security/defender-endpoint/controlled-folders).
 
-5. Fidye yazılımı kurtarma seçeneklerini ayarlamak için **Fidye yazılımı veri kurtarma** altında **Ayarla'yı** seçin ve fidye yazılımı saldırısından kolayca kurtarabilmek için OneDrive hesabınızı bağlama veya ayarlama yönergelerini izleyin.
+5. Fidye yazılımı kurtarma seçeneklerini ayarlamak için **Fidye yazılımı veri kurtarma** altında **Ayarla'yı** seçin ve bir fidye yazılımı saldırısından kolayca kurtarabilmek için OneDrive hesabınızı bağlama veya ayarlama yönergelerini izleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

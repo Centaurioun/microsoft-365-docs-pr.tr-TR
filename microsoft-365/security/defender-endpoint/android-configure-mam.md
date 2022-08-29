@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9918763732fa828f17b395a3f96b24e8fbed46f2
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: d6d9561f381771fb322a281f33f840c27ce61f90
+ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174992"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67437808"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-risk-signals-using-app-protection-policies-mam"></a>Uygulama Koruma İlkelerini (MAM) kullanarak Uç Nokta için Microsoft Defender risk sinyallerini yapılandırma
 
@@ -133,7 +133,11 @@ Mobil uygulama yönetimi cihaz yönetimi gerektirmediğinden, şirket verilerini
 
 6. Yönetilen uygulamada oturum açmak için **Devam'ı** seçin. 
 
-### <a name="configure-privacy-controls"></a>Gizlilik denetimlerini yapılandırma 
+## <a name="configure-privacy-controls"></a>Gizlilik denetimlerini yapılandırma 
+>[!IMPORTANT]
+>MAM üzerinde Uç Nokta için Microsoft Defender gizlilik denetimleri genel önizleme aşamasındadır. Aşağıdaki bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
+>**Bu özelliği denemek veya geri bildirim sağlamak istiyorsanız lütfen mdatpmobile@microsoft.com adresinden bize ulaşın.**
+
 Yöneticiler, gizliliği etkinleştirmek ve ilgili tehditler için uyarı raporunun bir parçası olarak etki alanı adını, uygulama ayrıntılarını ve ağ bilgilerini toplamamak için aşağıdaki adımları kullanabilir.
 
 1. Microsoft Endpoint Manager yönetim merkezinde **Uygulamalar > Uygulama yapılandırma ilkeleri > > Yönetilen uygulamalar ekle'ye** gidin.
@@ -149,6 +153,9 @@ Yöneticiler, gizliliği etkinleştirmek ve ilgili tehditler için uyarı raporu
 6. İlkeyi gözden geçirin ve oluşturun.
 
 ## <a name="optional-permissions"></a>İsteğe bağlı izinler 
+>[!IMPORTANT]
+>Uç Nokta için Microsoft Defender üzerinde isteğe bağlı İzinler genel önizleme aşamasındadır. Aşağıdaki bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
+>**Bu özelliği denemek veya geri bildirim sağlamak istiyorsanız lütfen mdatpmobile@microsoft.com adresinden bize ulaşın.**
 
 Android'de Uç Nokta için Microsoft Defender, ekleme akışında İsteğe Bağlı İzinler'i etkinleştirir. Şu anda ekleme akışında MDE için gereken izinler zorunlu. Bu özellik sayesinde yönetici, ekleme sırasında zorunlu VPN ve Erişilebilirlik İzinlerini zorunlu tutmadan MAM ilkeleriyle Android cihazlarda MDE dağıtabilir. Son Kullanıcılar zorunlu izinler olmadan uygulamayı ekleyebilir ve daha sonra bu izinleri gözden geçirebilir. 
 

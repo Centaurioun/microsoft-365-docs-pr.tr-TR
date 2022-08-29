@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 90244050b9fd8e5714ba28f7ac9850091d368da7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: a34ee4f16bb6bc98e14ede15df98ceedb7f4dec8
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601234"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388649"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Saldırı yüzeyi azaltma kurallarını etkinleştirme
 
@@ -59,7 +59,7 @@ Windows'un aşağıdaki sürümlerinden ve sürümlerinden herhangi birini çal�
 
 Saldırı yüzeyi azaltma kurallarının özellik kümesinin tamamını kullanmak için şunları yapmanız gerekir:
 
-- birincil AV olarak Windows Defender Virüsten Koruma (gerçek zamanlı koruma açık)
+- Birincil AV olarak Microsoft Defender Virüsten Koruma (gerçek zamanlı koruma açık)
 - [Üzerinde Bulut Teslim Koruması](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) (bazı kurallar bunu gerektirir)
 - E5 veya E3 Lisansını Windows 10 Enterprise
 
@@ -119,7 +119,7 @@ ASR kuralları ortam değişkenlerini ve joker karakterleri destekler. Joker kar
 Bu bölümde, aşağıdaki yapılandırma yöntemleri için yapılandırma ayrıntıları sağlanır:
 
 - [Intune](#intune)
-- [MEM](#mem)
+- [Mem](#mem)
 - [MDM](#mdm)
 - [Microsoft Uç Noktası Yapılandırma Yöneticisi](#microsoft-endpoint-configuration-manager)
 - [Grup İlkesi](#group-policy)
@@ -153,7 +153,7 @@ ASR kurallarını etkinleştirmeye yönelik aşağıdaki yordamlar, dosya ve kla
 
 4. Üç yapılandırma bölmesinde **İleri'yi** ve ardından yeni bir ilke oluşturuyorsanız **Oluştur'u** veya mevcut bir ilkeyi düzenliyorsanız **Kaydet'i** seçin.
 
-### <a name="mem"></a>MEM
+### <a name="mem"></a>Mem
 
 Özel ASR kurallarını yapılandırmak için Microsoft Endpoint Manager (MEM) OMA-URI'sini kullanabilirsiniz. Aşağıdaki yordam, örnek için [kötüye kullanılan güvenlik açığı bulunan imzalı sürücülerin kötüye kullanımı engelleyin](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) kuralını kullanır.
 
@@ -288,7 +288,7 @@ Dışlama eklemek için [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReduc
 
 1. grup ilkesi yönetim bilgisayarınızda [grup ilkesi Yönetim Konsolu'nu](https://technet.microsoft.com/library/cc731212.aspx) açın, yapılandırmak istediğiniz grup ilkesi Nesnesine sağ tıklayın ve **Düzenle'yi** seçin.
 
-2. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na** gidin ve **Yönetim şablonları'nı** seçin.
+2. **Grup İlkesi Yönetimi Düzenleyicisi**'nde **Bilgisayar yapılandırması**'na gidin ve **Yönetim şablonları**'nı seçin.
 
 3. Ağacı **Windows bileşenlerine** \> genişletin **Microsoft Defender Virüsten Koruma** \> **Microsoft Defender Exploit Guard** \> **Saldırısı yüzey azaltma**.
 
@@ -316,7 +316,7 @@ Dışlama eklemek için [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReduc
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-user-defined.png" alt-text="Kimlik bilgisi güvenliği için Etkinleştir seçeneği" lightbox="images/asr-user-defined.png":::
 
-1. Başlat menüsüne **powershell** yazın, **Windows PowerShell** sağ tıklayın ve **Yönetici olarak çalıştır'ı** seçin.
+1. Başlat menüsüne **powershell** yazın, **Windows PowerShell**'e sağ tıklayın ve **Yönetici olarak çalıştır**'ı seçin.
 
 2. Aşağıdaki cmdlet'lerden birini yazın. (Kural kimliği gibi diğer ayrıntılar için [Saldırı yüzeyi azaltma kuralları başvurusuna](attack-surface-reduction-rules-reference.md) bakın.)
 

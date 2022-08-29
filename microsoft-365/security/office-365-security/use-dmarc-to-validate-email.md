@@ -18,12 +18,12 @@ ms.collection:
 description: Kuruluşunuzdan gönderilen iletileri doğrulamak için Etki Alanı Tabanlı İleti Kimlik Doğrulaması, Raporlama ve Uyumluluk (DMARC) yapılandırmayı öğrenin.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55fd24a033526053e8006c3d70f3abeeef1c94d2
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: f33ea4cfe9323121f928e9a07247167c9d536721
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663404"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388429"
 ---
 # <a name="use-dmarc-to-validate-email"></a>E-postayı doğrulamak için DMARC kullanma
 
@@ -234,7 +234,7 @@ Bazı geçerli e-postalar DMARC'de başarısız olabileceği için Microsoft 365
 
 - Kullanıcılar, e-posta istemcilerini kullanarak güvenilir gönderenleri tek tek ekler.
 
-- Yöneticiler kimlik sahtekarlığına sahip gönderenden gelen iletilere izin vermek için kimlik [sahtekarlığına ilişkin bilgi sahtekarlık içgörülerini](learn-about-spoof-intelligence.md) veya [Kiracı İzin Ver/Engelle Listesi'ni](tenant-allow-block-list.md) kullanabilir.
+- Yöneticiler kimlik sahtekarlığına sahip gönderenden gelen iletilere izin vermek için kimlik [sahtekarlığına ilişkin bilgi sahtekarlık içgörülerini](learn-about-spoof-intelligence.md) veya [Kiracı İzin Ver/Engelle Listesi'ni](manage-tenant-allow-block-list.md) kullanabilir.
 
 - Yöneticiler, söz konusu gönderenler için iletilere izin veren tüm kullanıcılar için bir Exchange posta akışı kuralı (aktarım kuralı olarak da bilinir) oluşturur.
 
@@ -267,7 +267,7 @@ DMARC hakkında daha fazla bilgi mi istiyorsunuz? Bu kaynaklar yardımcı olabil
 
 - [İstenmeyen postadan koruma iletisi üst bilgileri](anti-spam-message-headers.md) , DMARC denetimleri için Microsoft 365 tarafından kullanılan söz dizimi ve üst bilgi alanlarını içerir.
 
-- M<sup>3</sup>AAWG'den (Microsoft Mesajlaşma, Kötü Amaçlı Yazılım, Mobil Kötü Amaçlı Yazılımdan Koruma Çalışma Grubu) [DMARC Eğitim Serisi'ni](https://www.m3aawg.org/activities/training/dmarc-training-series) alın.
+- M<sup>3</sup>AAWG'den (Mesajlaşma, Kötü Amaçlı Yazılım, Mobil Kötüye Kullanım Önleme Çalışma Grubu) [DMARC Eğitim Serisi'ni](https://www.m3aawg.org/activities/training/dmarc-training-series) alın.
 
 - [Dmarcian'daki](https://space.dmarcian.com/deployment/) denetim listesini kullanın.
 
@@ -281,4 +281,4 @@ DMARC hakkında daha fazla bilgi mi istiyorsunuz? Bu kaynaklar yardımcı olabil
 
 [**Microsoft 365'te özel etki alanınızdan gönderilen giden e-postayı doğrulamak için DKIM kullanma**](use-dkim-to-validate-outbound-email.md)
 
-[Güvenilir ARC Gönderenleri'ni geçerli posta akışları için kullanma](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet)
+[Güvenilir ARC Gönderenleri'ni geçerli posta akışları için kullanma](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&preserve-view=true)
