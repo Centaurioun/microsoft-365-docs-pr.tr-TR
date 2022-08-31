@@ -1,9 +1,10 @@
 ---
 title: Gelişmiş tehdit avcılığı şemasında AADSpnSignInEventsBeta tablosu
-description: Azure Active Directory hizmet sorumlusu ve yönetilen kimlik oturum açma olayları tablosuyla ilişkili bilgiler hakkında bilgi edinin.
+description: Azure Active Directory'nin hizmet sorumlusu ve yönetilen kimlik oturum açma olayları tablosuyla ilişkili bilgiler hakkında bilgi edinin.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b1b9d6405abdddea42652cfd4c532df91eeb6b30
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: 74e8ff6319799da8e9893a65b447a8e3c693cd8f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842224"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472952"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -30,9 +30,9 @@ ms.locfileid: "65842224"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Tablo `AADSpnSignInEventsBeta` şu anda beta sürümündedir ve Azure Active Directory (AAD) oturum açma olaylarında avlanmanıza olanak sağlamak için kısa süreli olarak sunulmaktadır. Müşterilerin bu tabloya yönelik etkinlikleri toplamak ve görüntülemek için Azure Active Directory Premium P2 lisansına sahip olması gerekir. Microsoft sonunda tüm oturum açma şeması bilgilerini tabloya `IdentityLogonEvents` taşıyacaktır.
+> Tablo `AADSpnSignInEventsBeta` şu anda beta sürümündedir ve Azure Active Directory (AAD) oturum açma olaylarını izlemenize olanak sağlamak için kısa süreli olarak sunulmaktadır. Müşterilerin bu tabloya yönelik etkinlikleri toplamak ve görüntülemek için Azure Active Directory Premium P2 lisansına sahip olması gerekir. Microsoft sonunda tüm oturum açma şeması bilgilerini tabloya `IdentityLogonEvents` taşıyacaktır.
 
-`AADSpnSignInEventsBeta` Gelişmiş tehdit avcılığı şemasındaki tablo, Azure Active Directory hizmet sorumlusu ve yönetilen kimlik oturum açma işlemleri hakkında bilgi içerir. Azure Active Directory [oturum açma etkinlik raporlarında (önizleme](/azure/active-directory/reports-monitoring/concept-all-sign-ins)) farklı oturum açma türleri hakkında daha fazla bilgi edinebilirsiniz.
+`AADSpnSignInEventsBeta` Gelişmiş tehdit avcılığı şemasındaki tablo, Azure Active Directory hizmet sorumlusu ve yönetilen kimlik oturum açma işlemleri hakkında bilgi içerir. [Azure Active Directory oturum açma etkinlik raporlarında (önizleme](/azure/active-directory/reports-monitoring/concept-all-sign-ins)) farklı oturum açma türleri hakkında daha fazla bilgi edinebilirsiniz.
 
 Tablodan bilgi döndüren sorgular oluşturmak için bu başvuruyu kullanın.
 

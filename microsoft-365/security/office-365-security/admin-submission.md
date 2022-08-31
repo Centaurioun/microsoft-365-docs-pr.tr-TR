@@ -15,14 +15,14 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: seo-marvel-apr2020
 description: Yöneticiler, Microsoft 365 Defender portalında Gönderiler portalını kullanarak engellenen, şüpheli e-posta, şüpheli kimlik avı e-postası, istenmeyen posta, diğer zararlı olabilecek iletiler, URL'ler ve e-posta eklerini yeniden keşfetmek üzere Microsoft'a yasal e-posta göndermeyi öğrenebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 692bef65a37f1411952e3848147913a64daf72a1
-ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: b5b54a0d6d8e760d392578997461be44a19cf92a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67393031"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480547"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Şüpheli istenmeyen posta, kimlik avı, URL'ler, engellenen meşru e-postalar ve e-posta eklerini Microsoft'a göndermek için Gönderimler portalını kullanın
 
@@ -166,7 +166,7 @@ Değerlendirme için Microsoft'a ileti göndermek üzere Office 365 için Micros
 
 2. **Gönderimler** sayfasında **URL'ler** sekmesini seçin.
 
-3. **URL'ler** sekmesinde Analiz için Microsoft'a Gönder simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Analiz için Microsoft'a gönderin**.
+3. **URL'ler** sekmesinde Analiz için Microsoft'a gönder ekle düğmesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Analiz için Microsoft'a gönderin**.
 
 4. Görüntülenen **Analiz için Microsoft'a gönder** açılır öğesinde aşağıdaki bilgileri girin:
 
@@ -441,7 +441,7 @@ Kullanıcı özel posta kutusuna şüpheli bir e-posta gönderdikten sonra, kull
 
 Özel posta kutusunu, iletileri Microsoft'a göndermeden kullanıcı tarafından bildirilen iletileri kesecek şekilde yapılandırdıysanız, analiz için belirli iletileri bulabilir ve Microsoft'a gönderebilirsiniz.
 
-**Kullanıcı tarafından bildirilen iletiler** sekmesinde, listeden bir ileti seçin ve Analiz için Microsoft'a gönder simgesine tıklayın![.](../../media/m365-cc-sc-submit-user-reported-message-icon.png) **Analiz için Microsoft'a gönderin** ve açılan listeden aşağıdaki değerlerden birini seçin:
+**Kullanıcı tarafından bildirilen iletiler** sekmesinde, listeden bir ileti seçin ve Analiz için Microsoft'a gönder ekle simgesine tıklayın![.](../../media/m365-cc-sc-submit-user-reported-message-icon.png) **Analiz için Microsoft'a gönderin** ve açılan listeden aşağıdaki değerlerden birini seçin:
 
 - **Rapor temizleme**
 - **Kimlik avı bildirme**

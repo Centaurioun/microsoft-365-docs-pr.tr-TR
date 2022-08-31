@@ -1,5 +1,5 @@
 ---
-title: Office 365 için Microsoft Defender'da otomatik araştırma ve yanıt nasıl çalışır?
+title: Office 365 için Microsoft Defender'de otomatik araştırma ve yanıt nasıl çalışır?
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -16,22 +16,22 @@ ms.collection:
 - m365initiative-defender-office365
 keywords: otomatik olay yanıtı, araştırma, düzeltme, tehdit koruması
 ms.date: 01/29/2021
-description: Office 365 için Microsoft Defender'da otomatik araştırma ve yanıt özelliklerinin nasıl çalıştığını görün
+description: Office 365 için Microsoft Defender'de otomatik araştırma ve yanıt özelliklerinin nasıl çalıştığını görün
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 78dc31c055f563f0f9f03bcf12642296459de491
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 91af37a052eac5bb2b43568fefd5c8e45f93d5bb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974245"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480701"
 ---
-# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da otomatik araştırma ve yanıt nasıl çalışır?
+# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de otomatik araştırma ve yanıt nasıl çalışır?
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Office 365 için Microsoft Defender plan 2](defender-for-office-365.md)
@@ -54,7 +54,7 @@ Kuruluşunuzdaki bir kullanıcının kimlik avı girişimi olduğunu düşündü
 Kök araştırma aşamasında, e-postanın çeşitli yönleri değerlendirilir. Bu özellikler şunlardır:
 
 - Ne tür bir tehdit olabileceğine ilişkin bir belirleme;
-- Who gönderdi;
+- Onu kim gönderdi?
 - E-postanın gönderildiği yer (altyapı gönderme);
 - E-postanın diğer örneklerinin teslim edilip edilmediği;
 - Analistlerimizden bir değerlendirme;
@@ -68,7 +68,7 @@ Ardından çeşitli tehdit araştırması ve tehdit avcılığı adımları yür
 - Benzer e-posta iletileri, e-posta kümesi aramaları aracılığıyla tanımlanır.
 - Sinyal, [Uç Nokta için Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) gibi diğer platformlarla paylaşılır.
 - Şüpheli e-posta iletilerinde herhangi bir kullanıcının kötü amaçlı bağlantılara tıklayıp tıklamadığına ilişkin bir belirleme yapılır.
-- Exchange Online Protection ([EOP](exchange-online-protection-overview.md) ve ([Office 365 için Microsoft Defender](defender-for-office-365.md)' da kullanıcılar tarafından bildirilen başka benzer iletiler olup olmadığını görmek için bir denetim yapılır.
+- Kullanıcılar tarafından bildirilen başka benzer iletiler olup olmadığını görmek için Exchange Online Protection ([EOP](exchange-online-protection-overview.md) ve ([Office 365 için Microsoft Defender](defender-for-office-365.md)) genelinde bir denetim yapılır.
 - Kullanıcının gizliliğinin tehlikeye atılıp aşılmadığını görmek için bir denetim yapılır. Bu denetim, Office 365, [Microsoft Defender for Cloud Apps](/cloud-app-security) ve [Azure Active Directory](/azure/active-directory) genelindeki sinyallerden yararlanarak ilgili kullanıcı etkinliği anomalilerini ilişkilendirir.
 
 Tehdit avcılığı aşamasında çeşitli avlanma adımlarına riskler ve tehditler atanır.
@@ -79,7 +79,7 @@ Düzeltme, playbook'un son aşamasıdır. Bu aşamada, araştırma ve avcılık 
 
 Bir uyarı tarafından tetiklenen otomatik araştırmalara ek olarak, kuruluşunuzun güvenlik operasyonları ekibi [Tehdit Gezgini'ndeki](threat-explorer.md) bir görünümden otomatik bir araştırma tetikleyebilir. Bu araştırma bir uyarı da oluşturur, böylece Microsoft 365 Defender olaylar ve dış SIEM araçları bu araştırmanın tetiklendiğini görebilir.
 
-Örneğin, Gezgin'de **Kötü Amaçlı Yazılım** görünümünü kullandığınızı varsayalım. Grafiğin altındaki sekmeleri kullanarak **E-posta** sekmesini seçersiniz. Listeden bir veya daha fazla öğe seçerseniz **+ Eylemler** düğmesi etkinleştirilir.
+Örneğin, Gezgin'de **Kötü Amaçlı Yazılım** görünümünü kullandığınızı varsayalım. Grafiğin altındaki sekmeleri kullanarak **Email** sekmesini seçersiniz. Listeden bir veya daha fazla öğe seçerseniz **+ Eylemler** düğmesi etkinleştirilir.
 
 :::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="Seçili iletileri içeren Gezgin" lightbox="../../media/Explorer-Malware-Email-ActionsInvestigate.png":::
 
@@ -91,11 +91,11 @@ Bir uyarı tarafından tetiklenen playbook'lara benzer şekilde, Explorer'daki b
 
 ## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Örnek: Güvenlik operasyonları ekibi, Office 365 Yönetim Etkinliği API'sini kullanarak AIR'i SIEM ile tümleştirir
 
-Office 365 için Microsoft Defender'daki AIR özellikleri, güvenlik operasyonları ekiplerinin tehditleri izlemek ve ele almak için kullanabileceği [raporlar & ayrıntıları](air-view-investigation-results.md) içerir. Ancak AIR özelliklerini diğer çözümlerle de tümleştirebilirsiniz. Örnek olarak güvenlik bilgileri ve olay yönetimi (SIEM) sistemi, servis talebi yönetim sistemi veya özel raporlama çözümü verilebilir. Bu tür tümleştirmeler [Office 365 Yönetim Etkinliği API'sini](/office/office-365-management-api/office-365-management-activity-api-reference) kullanarak yapılabilir.
+Office 365 için Microsoft Defender'deki AIR özellikleri, güvenlik operasyonları ekiplerinin tehditleri izlemek ve ele almak için kullanabileceği [raporlar & ayrıntıları](air-view-investigation-results.md) içerir. Ancak AIR özelliklerini diğer çözümlerle de tümleştirebilirsiniz. Örnek olarak güvenlik bilgileri ve olay yönetimi (SIEM) sistemi, servis talebi yönetim sistemi veya özel raporlama çözümü verilebilir. Bu tür tümleştirmeler [Office 365 Yönetim Etkinliği API'sini](/office/office-365-management-api/office-365-management-activity-api-reference) kullanarak yapılabilir.
 
-Örneğin kısa süre önce bir kuruluş, güvenlik operasyonları ekibine AIR tarafından önceden işlenmiş kullanıcı tarafından bildirilen kimlik avı uyarılarını görüntülemesi için bir yol ayarladı. Çözümü, ilgili uyarıları kuruluşun SIEM sunucusu ve olay yönetim sistemiyle tümleştirir. Çözüm, hatalı pozitif sonuçların sayısını büyük ölçüde azaltır, böylece güvenlik operasyonları ekibi zamanlarını ve çabalarını gerçek tehditlere odaklayabilir. Bu özel çözüm hakkında daha fazla bilgi edinmek [için teknik Community blogu: Office 365 için Microsoft Defender ve O365 Yönetim API'siyle SOC'nizin Verimliliğini Artırma makalesine](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185) bakın.
+Örneğin kısa süre önce bir kuruluş, güvenlik operasyonları ekibine AIR tarafından önceden işlenmiş kullanıcı tarafından bildirilen kimlik avı uyarılarını görüntülemesi için bir yol ayarladı. Çözümü, ilgili uyarıları kuruluşun SIEM sunucusu ve olay yönetim sistemiyle tümleştirir. Çözüm, hatalı pozitif sonuçların sayısını büyük ölçüde azaltır, böylece güvenlik operasyonları ekibi zamanlarını ve çabalarını gerçek tehditlere odaklayabilir. Bu özel çözüm hakkında daha fazla bilgi edinmek için bkz[. Teknoloji Topluluğu blogu: Office 365 için Microsoft Defender ve O365 Yönetim API'siyle SOC'nizin Verimliliğini Artırma](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [AIR kullanarak Kullanmaya başlayın](office-365-air.md)
+- [AIR kullanmaya başlama](office-365-air.md)
 - [Bekleyen veya tamamlanan düzeltme eylemlerini görüntüleme](air-review-approve-pending-completed-actions.md)

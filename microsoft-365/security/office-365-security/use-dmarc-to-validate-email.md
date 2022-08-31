@@ -18,12 +18,12 @@ ms.collection:
 description: Kuruluşunuzdan gönderilen iletileri doğrulamak için Etki Alanı Tabanlı İleti Kimlik Doğrulaması, Raporlama ve Uyumluluk (DMARC) yapılandırmayı öğrenin.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f33ea4cfe9323121f928e9a07247167c9d536721
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 7723105d4617937b85a29911122a0e43e2076350
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388429"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470285"
 ---
 # <a name="use-dmarc-to-validate-email"></a>E-postayı doğrulamak için DMARC kullanma
 
@@ -40,6 +40,9 @@ DMARC, hedef e-posta sistemlerinin etki alanınızdan gönderilen iletilere güv
 
 > [!TIP]
 > Microsoft 365 için DMARC raporlaması sunan üçüncü taraf satıcıları görüntülemek için Microsoft [Akıllı Güvenlik Birliği (MISA)](https://www.microsoft.com/misapartnercatalog) kataloğunu ziyaret edin.
+
+> [!TIP]
+> **Adım adım kılavuzlarımızı gördün mü?** Yapılandırma 1-2-3s ve hiçbir fırfır, yöneticiler için acele. *[Microsoft Online Email Yönlendirme Adresleri (MOERA) ve park edilmiş Etki Alanları için DMARC Raporlama'yı etkinleştirme adımları için ziyaret edin](step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains.md)*.
 
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-microsoft-365"></a>MICROSOFT 365'te e-postayı korumak için SPF ve DMARC birlikte nasıl çalışır?
 

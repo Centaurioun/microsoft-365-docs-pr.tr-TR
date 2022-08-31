@@ -2,8 +2,8 @@
 title: Microsoft Defender Virüsten Koruma ağ bağlantılarını yapılandırın ve doğrulayın
 description: Microsoft Defender Virüsten Koruma bulut koruma hizmetiyle bağlantınızı yapılandırın ve test edin.
 keywords: virüsten koruma, Microsoft Defender Virüsten Koruma, kötü amaçlı yazılımdan koruma, güvenlik, defender, bulut, saldırganlık, koruma düzeyi
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +16,12 @@ ms.date: 06/28/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 163929596d826eb1f7a04af4d9baea5d6a975c3e
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: f9b459507fb9c2a3b2b63b5c944dd4dc0a4f4419
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67386483"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480591"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender Virüsten Koruma ağ bağlantılarını yapılandırın ve doğrulayın
 

@@ -3,7 +3,7 @@ title: Microsoft Defender Virüsten Koruma için tarama seçeneklerini yapıland
 description: E-posta depolama dosyalarını, yedekleme veya yeniden ayrıştırma noktalarını, ağ dosyalarını ve arşivlenmiş dosyaları (.zip dosyaları gibi) taramak için Microsoft Defender Virüsten Koruma'yı yapılandırabilirsiniz.
 keywords: gelişmiş taramalar, tarama, e-posta, arşiv, zip, rar, arşiv, yeniden ayrıştırma taraması
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,16 +12,16 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.date: 12/03/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 873ea8ee0b8f3f392a312b811b79f9a6e59f9825
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 6668bfc3cd9b8b2494458a1434f3d296f56c8b09
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387891"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479323"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Microsoft Defender Virüsten Koruma tarama seçeneklerini yapılandırın
 

@@ -9,19 +9,19 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
 ms.collection: m365-security-compliance
-ms.technology: mde
-ms.openlocfilehash: 95c138b6613d610520a4e6870ae7a59b46159f5d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.subservice: mde
+ms.openlocfilehash: 3947d29b4115c2f08e57aab26de951b733762c07
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418750"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480635"
 ---
 # <a name="client-behavioral-blocking"></a>İstemci davranışsal engelleme
 
@@ -33,7 +33,7 @@ ms.locfileid: "65418750"
 **Ortam**
 - Windows
 
-> Uç Nokta için Defender'ı deneyimlemek mi istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>Genel bakış
 
@@ -45,7 +45,7 @@ Virüsten koruma, bulut korumasıyla eşleştirildiğinde en iyi şekilde çalı
 
 ## <a name="how-client-behavioral-blocking-works"></a>İstemci davranış engellemesi nasıl çalışır?
 
-[Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md) bir cihazda şüpheli davranışı, kötü amaçlı kodu, dosyasız ve bellek içi saldırıları ve daha fazlasını algılayabilir. Şüpheli davranışlar algılandığında, Microsoft Defender Virüsten Koruma bu şüpheli davranışları ve işlem ağaçlarını izler ve bulut koruma hizmetine gönderir. Makine öğrenmesi, kötü amaçlı uygulamalarla iyi davranışları milisaniyeler içinde ayırt eder ve her yapıtı sınıflandırır. Neredeyse gerçek zamanlı olarak, bir yapıt kötü amaçlı olarak bulunduğunda cihazda engellenir.
+[Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md) şüpheli davranışları, kötü amaçlı kodları, dosyasız ve bellek içi saldırıları ve bir cihazda daha fazlasını algılayabilir. Şüpheli davranışlar algılandığında, Microsoft Defender Virüsten Koruma bu şüpheli davranışları ve işlem ağaçlarını izler ve bulut koruma hizmetine gönderir. Makine öğrenmesi, kötü amaçlı uygulamalarla iyi davranışları milisaniyeler içinde ayırt eder ve her yapıtı sınıflandırır. Neredeyse gerçek zamanlı olarak, bir yapıt kötü amaçlı olarak bulunduğunda cihazda engellenir.
 
 Şüpheli bir davranış algılandığında bir [uyarı](alerts-queue.md) oluşturulur ve saldırı algılanıp durdurulurken görünür; gibi uyarılar tetiklenir ve [Microsoft 365 Defender portalında](/microsoft-365/security/defender/microsoft-365-defender) (eski adıyla Microsoft 365 Defender) görüntülenir.
 
@@ -53,7 +53,7 @@ Virüsten koruma, bulut korumasıyla eşleştirildiğinde en iyi şekilde çalı
 
 ## <a name="behavior-based-detections"></a>Davranış tabanlı algılamalar
 
-Davranış tabanlı algılamalar, [Enterprise için MITRE ATT&CK Matrisine](https://attack.mitre.org/matrices/enterprise) göre adlandırılır. Adlandırma kuralı, kötü amaçlı davranışın gözlemlendiği saldırı aşamasını belirlemeye yardımcı olur:
+Davranış tabanlı algılamalar [, Enterprise için MITRE ATT&CK Matrisine](https://attack.mitre.org/matrices/enterprise) göre adlandırılır. Adlandırma kuralı, kötü amaçlı davranışın gözlemlendiği saldırı aşamasını belirlemeye yardımcı olur:
 
 |Taktik|Algılama tehdidi adı|
 |---|---|
@@ -85,7 +85,7 @@ Kuruluşunuz Uç Nokta için Defender kullanıyorsa istemci davranış engelleme
 - [Yeni nesil koruma](configure-microsoft-defender-antivirus-features.md) (virüsten koruma, kötü amaçlı yazılımdan koruma ve diğer tehdit koruması özellikleri)
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

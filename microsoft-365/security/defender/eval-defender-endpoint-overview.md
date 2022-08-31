@@ -1,9 +1,10 @@
 ---
 title: Adım 4. Mimariyi gözden geçirme de dahil olmak üzere Uç Nokta için Microsoft Defender genel bakışı değerlendirin
-description: Microsoft 365 Defender deneme laboratuvarı veya pilot ortam için ayarlama adımları. Güvenlik çözümünün kuruluşunuzdaki cihazları, kimliği, verileri ve uygulamaları korumak için nasıl tasarlandığını test edin ve deneyimleyin.
+description: Microsoft 365 Defender deneme laboratuvarının veya pilot ortamın kurulumu için adımlar. Güvenlik çözümünün kuruluşunuzdaki cihazları, kimliği, verileri ve uygulamaları korumak için nasıl tasarlandığını test edin ve deneyimleyin.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 2dc14caba4fc56d9fa6e6b2d076d19ae9f8cf371
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: f12663d6221e8128aaa531eba667f575cda50868
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748857"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480371"
 ---
 # <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>Adım 4. değerlendirme Uç Nokta için Microsoft Defender genel bakış
 

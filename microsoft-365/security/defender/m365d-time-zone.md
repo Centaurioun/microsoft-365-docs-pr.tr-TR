@@ -1,9 +1,10 @@
 ---
-title: Microsoft 365 Defender özellikleri için saat Microsoft 365 Defender ayarlama
-description: Olaylarla ilişkilendirilmiş tarih ve saat bilgileri, otomatik araştırma ve düzeltme ve gelişmiş avlar için saat dilimi seçmeyi öğrenin
-keywords: saat dilimi, tarih, saat, Microsoft 365 Defender, M365, güvenlik, olaylar, otomatik araştırma ve yanıt, HAVA, gelişmiş av
+title: Microsoft 365 Defender özellikleri için saat dilimini ayarlama
+description: Olaylar, otomatik araştırma ve düzeltme ve gelişmiş avcılık ile ilişkili tarih ve saat bilgileri için saat dilimini seçmeyi öğrenin
+keywords: saat dilimi, tarih, saat, Microsoft 365 Defender, M365, güvenlik, olaylar, otomatik araştırma ve yanıt, AIR, gelişmiş avcılık
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,29 +20,28 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 8184ca1ad434478040b4a586a1e5f37261aee93a
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 7f69ef59a91c368d51291080daa68517272bce74
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "62990024"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476176"
 ---
-# <a name="set-the-time-zone-for-microsoft-365-defender"></a>Saat dilimini Microsoft 365 Defender
+# <a name="set-the-time-zone-for-microsoft-365-defender"></a>Microsoft 365 Defender için saat dilimini ayarlama
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
 
 
-Microsoft 365 Defender saat diliminizi veya UTC'nizi kullanarak tarih ve saat bilgilerini görüntüebilirsiniz. Seçilen saat dilimi, aşağıdaki Microsoft 365 Defender portalında gösterilen tüm tarih ve saat Microsoft 365 Defender uygulanır:
+Microsoft 365 Defender yerel saat diliminizi veya UTC'yi kullanarak tarih ve saat bilgilerini görüntüleyebilir. Seçilen saat dilimi, Microsoft 365 Defender portalında aşağıdaki özelliklerde gösterilen tüm tarih ve saat bilgilerine uygulanır:
 - Olaylar
-- İşlem merkezi dahil olmak üzere otomatik araştırma ve düzeltme
+- İşlem merkezi de dahil olmak üzere otomatik araştırma ve düzeltme
 
-Bu özelliklerin saat dilimini ayarlamak için saat dilimi Ayarlar  > **Microsoft 365 Defender** >  **saat dilimi'ne gidin**.
+Bu özelliklerin saat dilimini ayarlamak için **Ayarlar** >  **Microsoft 365 Defender** >  **Saat dilimi'ne** gidin.
 
 > [!NOTE]
-> Gelişmiş av, saat dilimi ayarı ne olursa olsun sorgu sonuçlarının tarih ve saat bilgilerini UTC'de tutar. 
+> Gelişmiş avcılık, saat dilimi ayarından bağımsız olarak sorgu sonuçlarının tarih ve saat bilgilerini UTC olarak tutar. 

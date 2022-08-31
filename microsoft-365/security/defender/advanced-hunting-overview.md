@@ -2,7 +2,8 @@
 title: Genel Bakış - Gelişmiş avcılık
 description: Microsoft 365'teki gelişmiş tehdit avcılığı sorguları ve ağınızdaki tehditleri ve zayıf noktaları proaktif olarak bulmak için bunları nasıl kullanacağınızı öğrenin
 keywords: gelişmiş avcılık, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, özel algılamalar, şema, kusto
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,13 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.technology: m365d
-ms.openlocfilehash: fe5138ad12932acd8458303c631ae737fdcb4531
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: 376d9021d06f120bc4f84b9194c26f45479492d1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67406200"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481008"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Microsoft 365 Defender'da gelişmiş arama ile tehditleri proaktif olarak avlama
 

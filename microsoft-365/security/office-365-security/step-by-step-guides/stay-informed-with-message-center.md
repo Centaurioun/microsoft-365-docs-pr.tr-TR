@@ -1,6 +1,6 @@
 ---
-title: İleti merkezi ile Office 365 için Microsoft Defender yapılan değişikliklerin haftalık özet bildirimlerini ayarlama
-description: Office 365 için Microsoft Defender yapılan değişikliklerden haberdar olmak için ileti merkezi etkinliğinin haftalık özetini ayarlama adımları.
+title: Office 365 için Microsoft Defender için ileti merkezi değişikliklerinin haftalık özet e-postasını ayarlama adımları
+description: Office 365 için Microsoft Defender değişiklikleri hakkında güncel kalmak için ileti merkezi etkinliğinin haftalık özet e-postasını ayarlama adımları.
 search.product: ''
 search.appverid: ''
 ms.prod: m365-security
@@ -17,16 +17,20 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 995fee0b61cce798800242dfa92e2ac74c1268f7
-ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
+ms.openlocfilehash: a7df8a0ec777e68b273b246ac6d92adca44539b7
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67316325"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470497"
 ---
-# <a name="stay-informed-of-upcoming-changes-to-microsoft-defender-for-office-365-using-the-message-center"></a>İleti merkezini kullanarak Office 365 için Microsoft Defender’da yapılacak değişikliklerden haberdar olun
+# <a name="set-up-a-digest-notification-of-changes-to-microsoft-defender-for-office-365-using-the-message-center"></a>İleti merkezini kullanarak Office 365 için Microsoft Defender yapılan değişikliklerin özet bildirimini ayarlama
 
-İleti merkezi, resmi hizmet duyuruları ve özellik değişiklikleri hakkında bilgi edinebileceğiniz yerdir. Bu iletileri Microsoft 365 yönetim merkezi, yönetici mobil uygulamasından Microsoft Planner okuyabilir veya e-postada haftalık özet alabilirsiniz. Bu kılavuz, Microsoft Planner yapılandırma & Office 365 için Microsoft Defender değişiklikler için haftalık bir e-posta özeti ayarlama konusunda size yol gösterir.
+Her hafta Microsoft ileti merkezinden gelen Office 365 için Microsoft Defender değişikliklerin özet e-postası gelen kutunuza inse kullanışlı olur mu?
+
+İleti merkezi, yöneticilerin siteyi ziyaret ederek (masaüstü veya mobil uygulama), danışmanlık Microsoft Planner veya *e-posta* yoluyla resmi *hizmet duyuruları ve özellik değişiklikleri* hakkında bilgi edindiği yerdir.
+
+Bu yararlı özet e-postanın gerçekleşmesi için aşağıdaki adımları izleyin.
 
 ## <a name="what-youll-need"></a>İhtiyacınız olan şey
 
@@ -34,15 +38,17 @@ ms.locfileid: "67316325"
 - Yeterli izinler (İleti merkezi okuyucusu en az)
 - Aşağıdaki adımları gerçekleştirmek için 5 dakika.
 
-## <a name="setting-up-a-weekly-digest-of-changes-and-notifications"></a>Değişikliklerin ve bildirimlerin haftalık özetini ayarlama.
-1.  **adresinden Yönetici Merkezi'nde** oturum açınhttps://admin.microsoft.com
-1.  Sol gezinti bölmesinde **Tümünü Göster'i** seçin.
-1.  **Sistem Durumu'nu** genişletin ve **İleti Merkezi'ne** basın.
-1.  Yüklenen sayfada **Tercihler'i** seçin.
-1.  Sağ tarafta bir açılır pencere görünür ve **Email** sekmesini seçin.
-1.  E-posta bildirim ayarlarının beklendiği gibi olduğundan emin olun, özetin farklı kullanıcılara veya paylaşılan bir posta kutusuna gönderilmesini ayarlamak için gerekirse **Diğer e-posta adresleri'ni** seçebilirsiniz.
-1.  **Seçtiğim hizmetler hakkında haftalık özet gönder** kutusunu seçin ve en azından **Exchange Online** &  **Microsoft 365 Defender** seçmeniz gerektiği için hakkında bilgi almak istediğiniz hizmetleri seçin.
-1.  **Kaydet'e** basın.
+## <a name="steps-to-set-up-a-weekly-digest-mail-of-message-center-changes-and-notifications"></a>İleti merkezi değişikliklerinin ve bildirimlerinin haftalık özet postasını ayarlama adımları.
+1. **adresinden Yönetici Merkezi'nde** oturum açınhttps://admin.microsoft.com
+1. Sol gezinti bölmesinde **Tümünü Göster'i** seçin.
+1. **Sistem Durumu'nu** genişletin ve **İleti Merkezi'ne** basın.
+1. Yüklenen sayfada **Tercihler'i** seçin.
+1. Sağ tarafta bir açılır pencere görünür ve **Email** sekmesini seçin.
+1. E-posta bildirim ayarlarının beklendiği gibi olduğundan emin olun, özetin farklı kullanıcılara veya paylaşılan bir posta kutusuna gönderilmesini ayarlamak için gerekirse **Diğer e-posta adresleri'ni** seçebilirsiniz.
+1. **Seçtiğim hizmetler hakkında haftalık özet gönder** kutusunu seçin ve en azından **Exchange Online** &  **Microsoft 365 Defender** seçmeniz gerektiği için hakkında bilgi almak istediğiniz hizmetleri seçin.
+1. **Kaydet'e** basın.
+
+İşiniz bitti.
 
 ## <a name="watch-track-your-message-center-tasks-in-planner"></a>İzleyin: Planner'da ileti merkezi görevlerinizi izleme
 [Video](https://www.microsoft.com/en-us/videoplayer/embed/RE4C7Ne)

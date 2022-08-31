@@ -3,7 +3,8 @@ title: Kullanıcı olmadan Microsoft 365 Defender erişmek için uygulama oluşt
 description: Kullanıcı olmadan Microsoft 365 Defender erişmek için uygulama oluşturmayı öğrenin.
 keywords: uygulama, erişim, api, oluşturma
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 05450912d78e7da774de76e02dfe4d42a1569084
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: fbcf081bda20dd470837614c985de77d037673a3
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102404"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471400"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>Kullanıcı olmadan Microsoft 365 Defender erişmek için uygulama oluşturma
 
@@ -41,13 +41,13 @@ ms.locfileid: "66102404"
 
 Bu sayfada, tanımlı bir kullanıcı olmadan Microsoft 365 Defender programlı erişim elde etmek için bir uygulamanın nasıl oluşturulacağı açıklanır( örneğin, bir daemon veya arka plan hizmeti oluşturuyorsanız).
 
-Bir veya daha fazla kullanıcı adına Microsoft 365 Defender program aracılığıyla erişmeniz gerekiyorsa bkz. [Kullanıcı adına Microsoft 365 Defender API'lere erişmek için uygulama oluşturma](api-create-app-user-context.md) ve [Microsoft 365 Defender API'lere iş ortağı erişimiyle uygulama oluşturma](api-partner-access.md). Hangi tür erişime ihtiyacınız olduğundan emin değilseniz bkz. [Kullanmaya başlayın](api-access.md).
+Bir veya daha fazla kullanıcı adına Microsoft 365 Defender program aracılığıyla erişmeniz gerekiyorsa bkz. [Kullanıcı adına Microsoft 365 Defender API'lere erişmek için uygulama oluşturma](api-create-app-user-context.md) ve [Microsoft 365 Defender API'lere iş ortağı erişimiyle uygulama oluşturma](api-partner-access.md). Hangi tür erişime ihtiyacınız olduğundan emin değilseniz bkz. [Kullanmaya başlama](api-access.md).
 
-Microsoft 365 Defender, bir dizi programlı API aracılığıyla verilerinin ve eylemlerinin büyük bir kısmını kullanıma sunar. Bu API'ler iş akışlarını otomatikleştirmenize ve Microsoft 365 Defender özelliklerinden yararlanmanıza yardımcı olur. Bu API erişimi için OAuth2.0 kimlik doğrulaması gerekir. Daha fazla bilgi için bkz[. OAuth 2.0 Yetkilendirme Kodu Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender, bir dizi programlı API aracılığıyla verilerinin ve eylemlerinin büyük bir kısmını kullanıma sunar. Bu API'ler iş akışlarını otomatikleştirmenize ve Microsoft 365 Defender özelliklerinden yararlanmanıza yardımcı olur. Bu API erişimi için OAuth2.0 kimlik doğrulaması gerekir. Daha fazla bilgi için bkz [. OAuth 2.0 Yetkilendirme Kodu Akışı](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Genel olarak, bu API'leri kullanmak için aşağıdaki adımları uygulamanız gerekir:
 
-- bir Azure Active Directory (Azure AD) uygulaması oluşturun.
+- Bir Azure Active Directory (Azure AD) uygulaması oluşturun.
 - Bu uygulamayı kullanarak erişim belirteci alın.
 - Microsoft 365 Defender API'sine erişmek için belirteci kullanın.
 
@@ -120,7 +120,7 @@ Bu makalede şunların nasıl yapılacağını açıklar:
 
 ## <a name="get-an-access-token"></a>Erişim belirteci alma
 
-Azure Active Directory belirteçleri hakkında daha fazla bilgi için [Azure AD öğreticisine](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds) bakın.
+Azure Active Directory belirteçleri hakkında daha fazla bilgi [için Azure AD öğreticisine](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds) bakın.
 
 > [!IMPORTANT]
 > Bu bölümdeki örnekler gizli dizi değerlerini test amacıyla yapıştırmanızı teşvik etse de, üretimde çalışan bir uygulamaya **gizli dizileri hiçbir zaman sabit kodlamamalısınız** . Üçüncü bir taraf, kaynaklara erişmek için gizli dizinizi kullanabilir. [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates) kullanarak uygulamanızın gizli dizilerini güvende tutmaya yardımcı olabilirsiniz. Uygulamanızı nasıl koruyabileceğinize ilişkin pratik bir örnek için bkz. [Azure Key Vault ile sunucu uygulamalarınızda gizli dizileri yönetme](/learn/modules/manage-secrets-with-azure-key-vault/).
@@ -162,7 +162,7 @@ return $token
 
 1. Yeni bir konsol uygulaması oluşturun.
 
-1. [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/) NuGet yükleyin.
+1. NuGet [Microsoft.Identity.Client'ı](https://www.nuget.org/packages/Microsoft.Identity.Client/) yükleyin.
 
 1. Aşağıdaki satırı ekleyin:
 
@@ -222,7 +222,7 @@ aadToken = jsonResponse["access_token"]
 ### <a name="get-an-access-token-using-curl"></a>Curl kullanarak erişim belirteci alma
 
 > [!NOTE]
-> Curl, Windows 10, sürüm 1803 ve sonraki sürümlerde önceden yüklenmiştir. Windows diğer sürümleri için aracı doğrudan [resmi curl web sitesinden](https://curl.haxx.se/windows/) indirin ve yükleyin.
+> Curl, Windows 10, sürüm 1803 ve sonraki sürümlerde önceden yüklenmiştir. Windows'un diğer sürümleri için aracı doğrudan [resmi curl web sitesinden](https://curl.haxx.se/windows/) indirin ve yükleyin.
 
 1. Bir komut istemi açın ve CLIENT_ID Azure uygulama kimliğiniz olarak ayarlayın.
 

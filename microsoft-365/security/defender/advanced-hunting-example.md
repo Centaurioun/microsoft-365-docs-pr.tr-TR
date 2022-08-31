@@ -1,10 +1,11 @@
 ---
-title: Office 365 için Microsoft Defender için gelişmiş Office 365
-description: Gelişmiş avı kullanarak e-posta tehditlerini aramaya başlama
-keywords: gelişmiş av, tehdit avı, siber tehdit avı, Microsoft 365 Defender, Microsoft 365, m365, arama, sorgu, telemetri, özel algılamalar, şema, kusto
+title: Office 365 için Microsoft Defender için gelişmiş avcılık örneği
+description: Gelişmiş avcılığı kullanarak e-posta tehditlerini aramaya başlama
+keywords: gelişmiş avcılık, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, özel algılamalar, şema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,45 +20,44 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 04e4fd2267cc3774e9a816539f0de044ae988dfb
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 014802107d564fc24cf5e50a7513c390dcc943d5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "62997081"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480072"
 ---
-# <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender için gelişmiş Office 365
+# <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender için gelişmiş avcılık örneği
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-Gelişmiş avı kullanarak e-posta tehditlerini aramaya mı başladınız? Deneyebileceğiniz yöntem:
+Gelişmiş avcılığı kullanarak e-posta tehditlerini aramaya başlamak mı istiyorsunuz? Deneyebileceğiniz yöntem:
 
-Bu [makalenin Microsoft](/microsoft-365/security/office-365-security/defender-for-office-365#getting-started) [Defender'ın Başlarken Office 365](/microsoft-365/security/office-365-security/defender-for-office-365), aşağıdaki gibi mantıksal erken yapılandırma öbekleri vardır:
+[Office 365 için Microsoft Defender makalesinin](/microsoft-365/security/office-365-security/defender-for-office-365) [Başlarken](/microsoft-365/security/office-365-security/defender-for-office-365#getting-started) bölümünde aşağıdakine benzer mantıksal erken yapılandırma öbekleri vardır:
 
-1. Adı 'Anti' olan her şeyi yapılandır.
+1. Adında 'Anti' ile her şeyi yapılandırın.
    - Kötü amaçlı yazılımdan koruma
-   - Kimlik avı önleme
-   - İstenmeyen posta önleme
-2. Her şeyi, adı 'Kasa' ile ayarlayın.
+   - Kimlik avına karşı koruma
+   - Antispam
+2. Adında 'Güvenli' olan her şeyi ayarlayın.
    - Güvenli Bağlantılar
-   - Kasa Ekleri Kaydetme
-3. İş yüklerini savunma (örneğin. SharePoint Online, OneDrive ve Teams).
-4. Sıfır Saatlik otomatik temizleme ile koruyun.
+   - Güvenli Ekler
+3. İş yüklerini savunma (ör. SharePoint Online, OneDrive ve Teams).
+4. Sıfır saatlik otomatik temizleme ile koruyun.
 
-Doğrudan içine atlamak [ve](../office-365-security/protect-against-threats.md) 1. Gün'de yapılandırmaya devam etmek için bir bağlantıyla birlikte.
+1. Günde hemen atlayıp yapılandırmayı almak için bir [bağlantıyla](../office-365-security/protect-against-threats.md) birlikte.
 
-Başlarken'in **son adımı** , ZAP olarak da bilinen **Sıfır** Saatlik otomatik temizleme özelliğiyle kullanıcıları korumaktır. ŞÜPHELI veya kötü amaçlı bir e-postaYA ZAP uygulama çabalarınız başarılı olup olmadığını bilmek çok önemli olabilir.
+**Başlarken'in** son adımı, ZAP olarak da bilinen **Sıfır Saat otomatik temizleme** ile kullanıcıları korumaktır. Şüpheli veya kötü amaçlı bir postayı(teslim sonrası) zap etme çabalarınızın başarılı olup olmadığını bilmek çok önemli olabilir.
 
-Sorunları yakalamak için Hemen Kusto sorgu diline gitmek, bu iki güvenlik merkeziyle bir konuşmanın avantajıdır. Güvenlik ekipleri, burada, Gelişmiş Sındır'ın altında [ZAP'ın](https://security.microsoft.com/advanced-hunting) kaçırılan **günlerini** \> **izleyebilir**.
+Sorunları aramak için Kusto sorgu diline hızla gitmek, bu iki güvenlik merkezini birleştirmenin bir avantajıdır. Güvenlik ekipleri, **Av** **Gelişmiş Avcılığı**\> altında sonraki adımlarını [atarak](https://security.microsoft.com/advanced-hunting) ZAP eksiklerini izleyebilir.
 
-1. Gelişmiş Av sayfasında Sorgu'ya **tıklayın**.
+1. Gelişmiş Avcılık sayfasında **Sorgu'ya** tıklayın.
 1. Aşağıdaki sorguyu sorgu penceresine kopyalayın.
-1. Sorguyu **çalıştır'ı seçin**.
+1. **Sorguyu çalıştır'ı** seçin.
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -73,10 +73,10 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/ah-query-example-new.png" alt-text="Sorgu panelinin en üstünde Sorgu seçili olan ve son 7 gün içinde ZAP eylemlerini yakalamak için Bir Kusto sorgusu çalıştıran Gelişmiş av sayfası (Çınlama altında)." lightbox="../../media/ah-query-example-new.png":::
+:::image type="content" source="../../media/ah-query-example-new.png" alt-text="Sorgu panelinin en üstünde Sorgu'nun seçili olduğu Gelişmiş avcılık sayfası (Avcılık altında) ve son 7 gün içindeki ZAP eylemlerini yakalamak için bir Kusto sorgusu çalıştırma." lightbox="../../media/ah-query-example-new.png":::
 
-Bu sorgudan gelen veriler, sorgunun kendi altındaki sonuçlar panelinde gösterilir. Sonuçlar, özelleştirilebilir bir sonuç kümesinde 'DeviceName', 'AccountDisplayName' ve 'ZapTime' gibi bilgiler içerir. Kayıtlarınız için de sonuçlar dışarı aktarabilirsiniz. Sorgu yeniden ihtiyacınız olacaksa,  >  Farklı Kaydet'i seçin ve sorguyu sorgu, paylaşılan veya topluluk sorguları listenize ekleyin.
+Bu sorgudaki veriler, sorgunun altındaki sonuçlar panelinde görünür. Sonuçlar, özelleştirilebilir bir sonuç kümesinde 'DeviceName', 'AccountDisplayName' ve 'ZapTime' gibi bilgileri içerir. Sonuçlar, kayıtlarınız için de dışarı aktarılabilir. Sorgu yeniden ihtiyacınız olacaksa Farklı **Kaydet'i** >  seçin ve sorguyu sorgu, paylaşılan veya topluluk sorguları listenize ekleyin.
 
 ## <a name="related-information"></a>İlgili bilgiler
-- [Gelişmiş arama için en iyi yöntemler](advanced-hunting-best-practices.md)
-- [Genel Bakış - Gelişmiş av](advanced-hunting-overview.md)
+- [Gelişmiş avcılık en iyi yöntemleri](advanced-hunting-best-practices.md)
+- [Genel Bakış - Gelişmiş avcılık](advanced-hunting-overview.md)

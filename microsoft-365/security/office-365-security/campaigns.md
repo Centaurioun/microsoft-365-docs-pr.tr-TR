@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Office 365 için Microsoft Defender'deki Kampanya Görünümleri hakkında bilgi edinin.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 5308770e4ddb72ead5e4d5dac7506c507aa407f6
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 7d705e77e7d288ea6cee594d02277d2c9bb54db1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739637"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473974"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Saldırı Kampanyası Görünümleri
 
@@ -47,7 +47,7 @@ kuruluşunuzu hedef alan saldırı kampanyalarını anlamanıza yardımcı olmak
 
 ## <a name="what-is-a-campaign"></a>Kampanya nedir?
 
-Kampanya, bir veya birden çok kuruluşa yönelik eşgüdümlü bir e-posta saldırısıdır. Kimlik bilgilerini ve şirket verilerini çalan e-posta saldırıları büyük ve kazançlı bir endüstridir. Saldırıları durdurma çabasında teknolojiler arttıkça, saldırganlar başarının devamını sağlamak için yöntemlerini değiştirir.
+Kampanya, bir veya birden çok kuruluşa yönelik eşgüdümlü bir e-posta saldırısıdır. Kimlik bilgilerini ve şirket verilerini çalan Email saldırıları büyük ve kazançlı bir endüstridir. Saldırıları durdurma çabasında teknolojiler arttıkça, saldırganlar başarının devamını sağlamak için yöntemlerini değiştirir.
 
 Microsoft, kampanyaların tanımlanmasına yardımcı olmak için tüm hizmet genelinde çok miktarda kimlik avı, istenmeyen posta önleme ve kötü amaçlı yazılımdan koruma verilerinden yararlanıyor. Saldırı bilgilerini çeşitli faktörlere göre analiz edip sınıflandırırız. Örneğin:
 
@@ -60,16 +60,16 @@ Kampanya kısa süreli olabileceği gibi, etkin ve etkin olmayan dönemlerle bir
 
 ## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalındaki Kampanya Görünümleri
 
-Kampanya Görünümleri, Microsoft 365 Defender portalında <https://security.microsoft.com> **, E-posta & işbirliği** \> **Kampanyaları'nda** veya doğrudan adresinde <https://security.microsoft.com/campaigns>bulunabilir.
+Kampanya Görünümleri, Microsoft 365 Defender portalında <https://security.microsoft.com> **Email & işbirliği** \> **Kampanyaları'nda** veya doğrudan adresinde <https://security.microsoft.com/campaigns>bulunabilir.
 
 :::image type="content" source="../../media/campaigns-overview.png" alt-text="Microsoft 365 Defender portalında Kampanyalara genel bakış" lightbox="../../media/campaigns-overview.png":::
 
 Kampanya Görünümleri'ne şu kaynaklardan da ulaşabilirsiniz:
 
-- **E-posta & işbirliği** \> **Explorer** \> **Görünüm** \> **Kampanya**
-- **E-posta & işbirliği** \> **Explorer** \> **Görünüm** \> **Tüm e-postalar** \> **Kampanya** sekmesi
-- **E-posta & işbirliği** \> **Explorer** \> **Görünüm** \> **Phish** \> **Kampanya** sekmesi
-- **E-posta & işbirliği** \> **Explorer** \> **Görünüm** \> **Malware** \> **Kampanya** sekmesi
+- **Email & işbirliği** \> **Gezgini** \> **Kampanyaları** **Görüntüle** \>
+- **Email & işbirliği** \> **Gezgini** \> **Tüm e-postaları** \> **Görüntüle** \> **Kampanya** sekmesi
+- **Email & işbirliği** \> **Gezgini** \> **Kimlik Avı** \> **Kampanyalarını** **Görüntüle** \> sekmesi
+- **Email & işbirliği** \> **Gezgini** \> **Kötü Amaçlı Yazılım** \> **Kampanyalarını** **Görüntüle** \> sekmesi
 
 Kampanya Görünümleri'ne erişmek için Microsoft 365 Defender portalında **Kuruluş Yönetimi**, **Güvenlik Yöneticisi** veya **Güvenlik Okuyucusu** rol gruplarının üyesi olmanız gerekir. Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında İzinler](permissions-microsoft-365-security-center.md).
 
@@ -100,7 +100,7 @@ Genel bakış sayfasındaki grafiğin altındaki tabloda **Kampanya** sekmesinde
 
 - **Alıcılar**: Bu kampanya tarafından hedeflenen kullanıcı sayısı.
 
-- **Gelen Kutusu: Gelen Kutusu'nda** bu kampanyadan ileti alan kullanıcıların sayısı (Gereksiz E-posta klasörüne teslim edilmedi).
+- **Gelen Kutusu: Gelen Kutusu'nda** bu kampanyadan ileti alan kullanıcıların sayısı (Gereksiz Email klasörüne teslim edilmemektedir).
 
 - **Tıklanan**: KIMLIK avı iletisinde URL'ye tıklayan veya eki açan kullanıcıların sayısı.
 
@@ -108,7 +108,7 @@ Genel bakış sayfasındaki grafiğin altındaki tabloda **Kampanya** sekmesinde
 
   **Tıklama oranının** kötü amaçlı yazılım kampanyalarında kullanılmadığını unutmayın.
 
-- **Ziyaret edildi**: Kaç kullanıcının yük web sitesine gerçekten ulaşmış olduğunu. **Tıklanan** değerler varsa, ancak Kasa Bağlantılar web sitesine erişimi engellediyse, bu değer sıfır olur.
+- **Ziyaret edildi**: Kaç kullanıcının yük web sitesine gerçekten ulaşmış olduğunu. **Tıklanan** değerler varsa ancak Güvenli Bağlantılar web sitesine erişimi engellediyse, bu değer sıfır olur.
 
 **Kampanya kaynağı** sekmesi, ileti kaynaklarını dünya haritasında gösterir.
 
@@ -147,7 +147,7 @@ Görünümü daha fazla filtrelemek için **, Kampanya türü** düğmesine tık
   - **İnternet ileti kimliği: İleti** üst bilgisindeki **İleti Kimliği** üst bilgisi alanında kullanılabilir. Örnek bir değerdir `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (açılı ayraçlara dikkat edin).
   - **Ağ iletisi kimliği**: İleti üst bilgisindeki **X-MS-Exchange-Organization-Network-Message-Id** üst bilgi alanında bulunan bir GUID değeri.
   - **Gönderen IP'i**
-  - **Ek SHA256**: Windows bir dosyanın SHA256 karma değerini bulmak için komut isteminde aşağıdaki komutu çalıştırın: `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.
+  - **Ek SHA256**: Windows'da bir dosyanın SHA256 karma değerini bulmak için komut isteminde aşağıdaki komutu çalıştırın: `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.
   - **Küme Kimliği**
   - **Uyarı Kimliği**
   - **Uyarı İlkesi Kimliği**
@@ -157,7 +157,7 @@ Görünümü daha fazla filtrelemek için **, Kampanya türü** düğmesine tık
 - **URL'ler**:
   - **URL etki alanı**
   - **URL etki alanı ve yolu**
-  - **URL**
+  - **Url**
   - **URL yolu**
   - **Karara tıklayın**
 
@@ -173,7 +173,7 @@ Temel veya gelişmiş bir filtre oluşturduktan sonra, **Sorguyu kaydet** veya *
 
 Grafiği veya kampanya listesini dışarı aktarmak için **Dışarı Aktar'a** tıklayın ve **Grafik verilerini dışarı aktar'ı** veya **Kampanya listesini dışarı aktar'ı** seçin.
 
-Uç Nokta için Microsoft Defender aboneliğiniz varsa, Uç Nokta için Microsoft Defender ile kampanya bilgilerini bağlamak veya bağlantısını kesmek için **MDE** Ayarlar'e tıklayabilirsiniz. Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender Uç Nokta için Microsoft Defender ile tümleştirme](integrate-office-365-ti-with-mde.md).
+Uç Nokta için Microsoft Defender aboneliğiniz varsa, Uç Nokta için Microsoft Defender ile kampanya bilgilerine bağlanmak veya bağlantısını kesmek için **MDE Ayarları'na** tıklayabilirsiniz. Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender Uç Nokta için Microsoft Defender ile tümleştirme](integrate-office-365-ti-with-mde.md).
 
 ## <a name="campaign-details"></a>Kampanya ayrıntıları
 
@@ -188,7 +188,7 @@ Kampanya ayrıntıları görünümünün en üstünde aşağıdaki kampanya bilg
 - Seçtiğiniz (veya zaman çizelgesinde seçtiğiniz) tarih aralığı filtresi için aşağıdaki veriler:
 - **Etki**
 - **İletiler**: Alıcıların toplam sayısı.
-- **Gelen Kutusu:** Gereksiz E-posta klasörüne değil Gelen Kutusu'na teslim edilen ileti sayısı.
+- **Gelen Kutusu:** Gereksiz Email klasörüne değil Gelen Kutusu'na teslim edilen ileti sayısı.
 - **Tıklanan bağlantı**: Kimlik avı iletisindeki URL yüküne kaç kullanıcı tıkladı?
 - **Ziyaret edilen bağlantı**: Url'yi ziyaret eden kullanıcı sayısı.
 - **Hedeflenen(%)**: Şu şekilde hesaplanan yüzde: (kuruluşunuzdaki kampanya alıcılarının sayısı) / (hizmetteki tüm kuruluşlar genelinde kampanyadaki toplam alıcı sayısı). Bu değerin kampanyanın tüm ömrü boyunca hesaplandığını ve tarih filtrelerine göre değişmediğini unutmayın.
@@ -223,15 +223,15 @@ Diyagram aşağıdaki bilgileri içerir:
   |**Yayım -lanan**|`SFV:SKQ`|İleti, karantinadan çıkarıldığı için istenmeyen posta filtrelemeyi atladı.|
   |**Kiracı İzin Ver**<sup>\*</sup>|`SFV:SKA`|İleti, istenmeyen posta önleme ilkesindeki ayarlar nedeniyle istenmeyen posta filtrelemeyi atladı. Örneğin, gönderen izin verilen gönderen listesinde veya izin verilen etki alanı listesindeydi.|
   |**Kiracı Bloğu**<sup>\*\*</sup>|`SFV:SKA`|İleti, istenmeyen posta önleme ilkesindeki ayarlar nedeniyle istenmeyen posta filtrelemesi tarafından engellendi. Örneğin, gönderen izin verilen gönderen listesinde veya izin verilen etki alanı listesindeydi.|
-  |**Kullanıcı İzin Ver**<sup>\*</sup>|`SFV:SFE`|Gönderen kullanıcının Kasa Gönderenler listesinde olduğundan ileti istenmeyen posta filtrelemeyi atladı.|
+  |**Kullanıcı İzin Ver**<sup>\*</sup>|`SFV:SFE`|Gönderen bir kullanıcının Güvenilir Gönderenler listesinde olduğundan ileti istenmeyen posta filtrelemeyi atladı.|
   |**Kullanıcı Bloğu**<sup>\*\*</sup>|`SFV:BLK`|Gönderen kullanıcının Engellenen Gönderenler listesinde olduğundan ileti istenmeyen posta filtrelemesi tarafından engellendi.|
-  |**ZAP**|yok|[Sıfır saatlik otomatik temizleme (ZAP),](zero-hour-auto-purge.md) teslim edilen iletiyi Gereksiz E-posta klasörüne veya karantinaya almaya taşıdı. Eylemi [istenmeyen posta önleme ilkelerinde](configure-your-spam-filter-policies.md) yapılandırabilirsiniz.|
+  |**Zap**|yok|[Sıfır saatlik otomatik temizleme (ZAP),](zero-hour-auto-purge.md) teslim edilen iletiyi Gereksiz Email klasörüne veya karantinaya almaya taşıdı. Eylemi [istenmeyen posta önleme ilkelerinde](configure-your-spam-filter-policies.md) yapılandırabilirsiniz.|
 
   <sup>\*</sup> İzin verilen ileti büyük olasılıkla hizmet tarafından engellenmiş olabileceğinden istenmeyen posta önleme ilkelerinizi gözden geçirin.
 
   <sup>\*\*</sup> İstenmeyen posta önleme ilkelerinizi gözden geçirin çünkü bu iletiler teslim edilmeden karantinaya alınmalıdır.
 
-- **İleti hedefleri**: Kullanıcılar iletideki yük URL'sine tıklamamış olsalar bile alıcılara (Gelen Kutusu veya Gereksiz E-posta klasörüne) teslim edilen iletileri araştırmak isteyebilirsiniz. Karantinaya alınan iletileri de karantinadan kaldırabilirsiniz. Daha fazla bilgi için bkz. [EOP'de karantinaya alınan e-posta iletileri](quarantine-email-messages.md).
+- **İleti hedefleri**: Kullanıcılar iletideki yük URL'sine tıklamamış olsalar bile alıcılara (Gelen Kutusu'na veya Gereksiz Email klasörüne) teslim edilen iletileri araştırmak isteyebilirsiniz. Karantinaya alınan iletileri de karantinadan kaldırabilirsiniz. Daha fazla bilgi için bkz. [EOP'de karantinaya alınan e-posta iletileri](quarantine-email-messages.md).
   - **Klasör silindi**
   - **Düştü**
   - **Dış**: Alıcı, karma ortamlarda şirket içi e-posta kuruluşunuzda bulunur.
@@ -249,14 +249,14 @@ Diyagram aşağıdaki bilgileri içerir:
 
 #### <a name="url-clicks"></a>URL tıklamaları
 
-Bir kimlik avı iletisi alıcının Gelen Kutusu veya Gereksiz E-posta klasörüne teslim edildiğinde, kullanıcının yük URL'sine tıklama olasılığı her zaman vardır. URL'ye tıklamamak küçük bir başarı ölçüsüdür, ancak kimlik avı iletisinin neden posta kutusuna teslim edildiğine karar vermeniz gerekir.
+Bir kimlik avı iletisi alıcının Gelen Kutusu veya Gereksiz Email klasörüne teslim edildiğinde, kullanıcının yük URL'sine tıklama olasılığı her zaman olur. URL'ye tıklamamak küçük bir başarı ölçüsüdür, ancak kimlik avı iletisinin neden posta kutusuna teslim edildiğine karar vermeniz gerekir.
 
 Bir kullanıcı kimlik avı iletisindeki yük URL'sine tıkladıysa, eylemler kampanya ayrıntıları görünümünde diyagramın **URL tıklamaları** alanında görüntülenir.
 
 - **Izin verilen**
-- **BlockPage**: Alıcı yük URL'sine tıkladı, ancak kötü amaçlı web sitesine erişimi kuruluşunuzdaki [bir Kasa Bağlantıları](safe-links.md) ilkesi tarafından engellendi.
-- **BlockPageOverride**: Alıcı iletideki yük URL'sine tıkladı Kasa Bağlantılar bunları durdurmaya çalıştı, ancak bloğu geçersiz kılmalarına izin verildi. Kullanıcıların neden Kasa Bağlantıları kararını geçersiz kılıp kötü amaçlı web sitesine devam etmelerine izin verilip verilmediğini görmek için Kasa [Bağlantıları ilkelerinizi](set-up-safe-links-policies.md) inceleyin.
-- **PendingDetonationPage**: Office 365 için Microsoft Defender Kasa Ekleri, sanal bilgisayar ortamında yük URL'sini açma ve araştırma aşamasındadır.
+- **BlockPage**: Alıcı yük URL'sine tıkladı, ancak kötü amaçlı web sitesine erişimi kuruluşunuzdaki bir [Güvenli Bağlantılar](safe-links.md) ilkesi tarafından engellendi.
+- **BlockPageOverride**: Alıcı iletideki yük URL'sine tıkladı, Güvenli Bağlantılar bunları durdurmaya çalıştı, ancak bloğu geçersiz kılmalarına izin verildi. Kullanıcıların [Neden Güvenli Bağlantılar](set-up-safe-links-policies.md) kararını geçersiz kılıp kötü amaçlı web sitesine devam etmelerine izin verilip verilmediğini görmek için Güvenli Bağlantılar ilkelerinizi inceleyin.
+- **PendingDetonationPage**: Office 365 için Microsoft Defender'deki Güvenli Ekler, sanal bilgisayar ortamında yük URL'sini açma ve araştırma aşamasındadır.
 - **PendingDetonationPageOverride**: Alıcının yük boşaltma işlemini geçersiz kılıp sonuçları beklemeden URL'yi açmasına izin verildi.
 
 ### <a name="tabs"></a>Sekme
@@ -268,7 +268,7 @@ Kampanya ayrıntıları görünümündeki sekmeler, kampanyayı daha fazla araş
 
 - **URL tıklamaları**: Kullanıcılar iletideki yük URL'sine tıklamadıysa, bu bölüm boş olur. Kullanıcı URL'ye tıklayabildiyse aşağıdaki değerler doldurulur:
   - **Kullanıcı**<sup>\*</sup>
-  - **URL**<sup>\*</sup>
+  - **Url**<sup>\*</sup>
   - **Tıklama zamanı**
   - **Karara tıklayın**
 
@@ -293,8 +293,8 @@ Kampanya ayrıntıları görünümündeki sekmeler, kampanyayı daha fazla araş
   - **Kötü amaçlı yazılım ailesi**
   - **Toplam sayı**
 
-- **URL**
-  - **URL**<sup>\*</sup>
+- **Url**
+  - **Url**<sup>\*</sup>
   - **Toplam Sayı**
 
 <sup>\*</sup> Bu değere tıklanması, kampanya ayrıntıları görünümünün üstünde belirtilen öğe (kullanıcı, URL vb.) hakkında daha fazla ayrıntı içeren yeni bir açılır öğe açar. Kampanya ayrıntıları görünümüne dönmek için yeni açılır pencerede **Bitti'ye** tıklayın.

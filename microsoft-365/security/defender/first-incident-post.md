@@ -3,7 +3,8 @@ title: Adım 3. İlk olayınızın olay sonrası gözden geçirmesini gerçekle�
 description: Microsoft 365 Defender'daki ilk olayınızı gözden geçirme.
 keywords: olaylar, uyarılar, araştırma, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlik, kimlik, posta kutusu, e-posta, 365, Microsoft, m365
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,17 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-firstincident
+- highpri
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 1856548b8cb3fd1c8b09844d04adaa21f6fd8776
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 76df56c3d1200e8657f288f0b696e8ace3f8ea28
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892935"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480854"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Adım 3. İlk olayınızın olay sonrası gözden geçirmesini gerçekleştirme
 

@@ -298,7 +298,6 @@
 ### Yeni nesil koruma
 #### [Yeni nesil korumaya genel bakış](next-generation-protection.md)
 ##### [Microsoft Defender Virüsten Koruma’ya Genel Bakış](microsoft-defender-antivirus-windows.md)
-##### [Windows’da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-windows.md)
 ##### [Windows Server'da Microsoft Defender Virüsten Koruma'yı etkinleştirme ve güncelleştirme](enable-update-mdav-to-latest-ws.md)
 ##### [Birlikte daha iyi: Microsoft Defender Virüsten Koruma ve Uç Nokta için Microsoft Defender](why-use-microsoft-defender-antivirus.md)
 ##### [Birlikte daha iyi: Microsoft Defender Virüsten Koruma ve Office 365](office-365-microsoft-defender-antivirus.md)
@@ -524,7 +523,11 @@
 ####### [Ürün kodu olmayan yazılım envanteri değerlendirmesini dışarı aktarma](get-assessment-non-cpe-software-inventory.md)
 ####### [Yazılım güvenlik açığı değerlendirmesini dışarı aktar](get-assessment-software-vulnerabilities.md)
 
-###### [Otomatik Araştırma]()
+###### [Tarayıcı uzantıları]()
+####### [Broswer ekstensiyonlarını dışarı aktarma değerlendirmesi](get-assessment-browser-extensions.md)
+####### [Tarayıcı ekstensiyonları permisson bilgilerini alma](get-browser-extensions-permission-info.md)
+
+###### [Otomatik araştırma]()
 ####### [Araştırma yöntemleri ve özellikleri](investigation.md)
 ####### [Araştırmaları Listele](get-investigation-collection.md)
 ####### [Araştırma Al](get-investigation-object.md)

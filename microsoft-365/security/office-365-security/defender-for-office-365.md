@@ -18,14 +18,14 @@ ms.custom:
 - seo-marvel-apr2020
 - intro-overview
 description: Office 365 için Microsoft Defender Güvenli Ekler, Güvenli Bağlantılar, gelişmiş kimlik avı önleme araçları, raporlama araçları ve tehdit bilgileri özelliklerini içerir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: fe021a2ba40f6e5e4d2bb9221ef0e2bef70a2371
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 73df1e43bb4046a5569d8416fde2237f27e66c78
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004334"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480328"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender
 
@@ -64,7 +64,7 @@ Office 365 için Microsoft Defender yeniyseniz veya *bunu yaparak* en iyi şekil
   - Antispam
 - Adında "*güvenli*" olan her şeyi ayarlayın.
   - Güvenli Bağlantılar
-  - Güvenli Ekleri Kaydetme
+  - Güvenli Ekler
 - İş yüklerini savunma (ör. SharePoint Online, OneDrive ve Teams)
 - Sıfır saatlik otomatik temizleme (ZAP) ile koruyun.
 
@@ -87,7 +87,7 @@ Aşağıdaki tabloda her plana neler dahil olduğu özetlenmiştir.
 
 - Office 365 için Microsoft Defender Plan 1 ve Office 365 için Defender Plan 2, belirli abonelikler için eklenti olarak kullanılabilir. Daha fazla bilgi edinmek için, [Office 365 planları için Microsoft Defender genelinde Özellik kullanılabilirliği](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans) bağlantısını burada bulabilirsiniz.
 
-- [Güvenli Belgeler](safe-docs.md) özelliği yalnızca Microsoft 365 A5 veya Microsoft 365 E5 Güvenlik lisanslarına sahip kullanıcılar tarafından kullanılabilir (Office 365 için Microsoft Defender planlarına dahil değildir).
+- [Güvenli Belgeler](safe-docs.md) özelliği yalnızca Microsoft 365 A5 veya Microsoft 365 E5 Güvenlik lisanslarına sahip kullanıcılar tarafından kullanılabilir (Office 365 için Microsoft Defender planlarına dâhil değildir).
 
 - Mevcut aboneliğiniz Office 365 için Microsoft Defender'ı içermiyorsa ve bunu istiyorsanız, [bir deneme başlatmak için satış ekibiyle iletişime geçin](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html) ve Office 365 için Microsoft Defender'ın kuruluşunuzda nasıl çalışabileceğini öğrenin.
 
@@ -136,7 +136,7 @@ Office 365 için Microsoft Defender Plan 2, kuruluşunuzun güvenlik ekibinin k�
 
 - **[Tehdit Gezgini (veya gerçek zamanlı algılamalar)](threat-explorer.md)** (Gezgin olarak da adlandırılır) son tehditleri tanımlamanıza ve analiz etmenizi sağlayan gerçek zamanlı bir rapordur. Gezgin'i özel dönemlere ait verileri gösterecek şekilde yapılandırabilirsiniz.
 
-- **[Saldırı simülasyonu eğitimi](attack-simulation-training.md)** , kuruluşunuzda güvenlik açıklarını tanımlamak için gerçekçi saldırı senaryoları çalıştırmanızı sağlar. Zıpkınla kimlik avı kimlik bilgileri toplama ve ek saldırıları, parola spreyi ve deneme yanılma parola saldırıları dahil olmak üzere mevcut saldırı türlerinin simülasyonları mevcuttur.
+- **[Saldırı simülasyonu eğitimi](attack-simulation-training.md)**, kuruluşunuzda güvenlik açıklarını tanımlamak için gerçekçi saldırı senaryoları çalıştırmanıza olanak tanır. Zıpkınla kimlik avı kimlik bilgileri toplama ve ek saldırıları, parola spreyi ve deneme yanılma parola saldırıları dahil olmak üzere mevcut saldırı türlerinin simülasyonları mevcuttur.
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>Otomatik araştırma ve yanıt ile zaman kazanın
 

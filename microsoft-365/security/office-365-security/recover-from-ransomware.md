@@ -13,24 +13,25 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 - m365solution-ransomware
+- highpri
 description: Microsoft 365 yöneticileri fidye yazılımı saldırısından kurtarmayı öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 328457e37ea6ae351abb2c5d5f0089246145b32c
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 23cc51d34244ebdb0d37141879df25da7e8429df
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648667"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481140"
 ---
-# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Microsoft 365'de fidye yazılımı saldırısından kurtarma
+# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Microsoft 365'te fidye yazılımı saldırısından kurtarma
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Kuruluşunuzu korumak için her türlü önlemi alsanız bile fidye [yazılımı](/windows/security/threat-protection/intelligence/ransomware-malware) saldırısına kurban gidebilirsiniz. Fidye yazılımı büyük bir iştir ve günümüzün tehdit alanında Microsoft 365 [karmaşık saldırılar için](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf) sürekli artan bir hedeftir.
+Kuruluşunuzu korumak için her türlü önlemi alsanız bile fidye [yazılımı](/windows/security/threat-protection/intelligence/ransomware-malware) saldırısına kurban gidebilirsiniz. Fidye yazılımı büyük bir iştir ve günümüzün tehdit alanında Microsoft 365, [karmaşık saldırılar için](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf) sürekli artan bir hedeftir.
 
 Bu makaledeki adımlar, verileri kurtarmanız ve enfeksiyonun iç yayılmasını durdurmanız için size en iyi şansı verecektir. Başlamadan önce aşağıdaki öğeleri göz önünde bulundurun:
 
@@ -62,7 +63,7 @@ Posta kutusuna diğer erişim türlerini devre dışı bırakmak için bkz:
 
 - [Kullanıcı için POP3 veya IMAP4 erişimini etkinleştirme veya devre dışı bırakma](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-OneDrive eşitleme duraklatılması, bulut verilerinizin virüs bulaşmış olabilecek cihazlar tarafından güncelleştirilmesinden korunmasına yardımcı olur. Daha fazla bilgi için bkz. [OneDrive eşitlemeyi duraklatma ve sürdürme](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
+OneDrive eşitleme duraklatılması, bulut verilerinizin virüs bulaşmış olabilecek cihazlar tarafından güncelleştirilmesinden korunmasına yardımcı olur. Daha fazla bilgi için bkz. [OneDrive'da eşitlemeyi duraklatma ve sürdürme](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>3. Adım: Kötü amaçlı yazılımı etkilenen cihazlardan kaldırma
 
@@ -78,17 +79,17 @@ Bu seçenekler işe yaramazsa [Çevrimdışı Windows Defender](https://support.
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>4. Adım: Temizlenmiş bir bilgisayarda veya cihazda dosyaları kurtarma
 
-Fidye yazılımı yükünü ortamınızdan kaldırmak için önceki adımı tamamladıktan sonra (fidye yazılımının dosyalarınızı şifrelemesini veya kaldırmasını engeller), Windows 11, Windows 10, Windows 8.1 ve yerel dosya ve klasörlerinizi kurtarmaya çalışmak için Windows 7'de Sistem Koruması'nı kullanarak [Dosya Geçmişi'ni](https://support.microsoft.com/help/17128) kullanabilirsiniz.
+Fidye yazılımı yükünü ortamınızdan kaldırmak için önceki adımı tamamladıktan sonra (fidye yazılımının dosyalarınızı şifrelemesini veya kaldırmasını engeller), Windows 11, Windows 10, Windows 8.1 ve Windows 7'de Sistem Koruması'nı kullanarak yerel dosya ve klasörlerinizi kurtarmayı deneyerek [Dosya Geçmişi'ni](https://support.microsoft.com/help/17128) kullanabilirsiniz.
 
 **Notlar**:
 
-- Bazı fidye yazılımları yedekleme sürümlerini de şifreler veya siler, bu nedenle dosyaları geri yüklemek için Dosya Geçmişi veya Sistem Koruması'nı kullanamazsınız. Böyle bir durumda, sonraki bölümde açıklandığı gibi fidye yazılımı veya OneDrive etkilenmeyen harici sürücülerde veya cihazlarda yedeklemeleri kullanmanız gerekir.
+- Bazı fidye yazılımları yedekleme sürümlerini de şifreler veya siler, bu nedenle dosyaları geri yüklemek için Dosya Geçmişi veya Sistem Koruması'nı kullanamazsınız. Böyle bir durumda, sonraki bölümde açıklandığı gibi, dış sürücülerde veya fidye yazılımından veya OneDrive'da etkilenmeyen cihazlarda yedeklemeleri kullanmanız gerekir.
 
-- Bir klasör OneDrive ile eşitlenmişse ve Windows en son sürümünü kullanmıyorsanız, Dosya Geçmişi'ni kullanırken bazı sınırlamalar olabilir.
+- Bir klasör OneDrive ile eşitlenmişse ve Windows'un en son sürümünü kullanmıyorsanız, Dosya Geçmişi'ni kullanırken bazı sınırlamalar olabilir.
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>5. Adım: OneDrive İş dosyalarınızı kurtarma
 
-OneDrive İş'da Dosyaları Geri Yükleme, tüm OneDrive son 30 gün içinde önceki bir noktaya geri yüklemenize olanak tanır. Daha fazla bilgi için bkz. [OneDrive'ınızı yeniden yükleyin](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15).
+OneDrive İş'da Dosyaları Geri Yükleme özelliği, OneDrive'ınızın tamamını son 30 gün içinde önceki bir noktaya geri yüklemenize olanak tanır. Daha fazla bilgi için bkz. [OneDrive'ınızı yeniden yükleyin](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 ## <a name="step-6-recover-deleted-email"></a>6. Adım: Silinen e-postayı kurtarma
 
@@ -96,7 +97,7 @@ Fidye yazılımının tüm e-postanızı sildiği nadir durumlarda, muhtemelen s
 
 - [Kullanıcının posta kutusunda silinen iletileri kurtarma](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [Windows için Outlook silinmiş öğeleri kurtarma](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
+- [Windows için Outlook'ta silinen öğeleri kurtarma](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>7. Adım: Exchange ActiveSync ve OneDrive eşitleme yeniden etkinleştirme
 
@@ -175,7 +176,7 @@ Microsoft Azure:
 
 Microsoft Defender for Cloud Apps:
 
--  [Bulut için Defender Uygulamalarında anomali algılama ilkeleri oluşturma](/cloud-app-security/anomaly-detection-policy)
+-  [Cloud Apps için Defender'da anomali algılama ilkeleri oluşturma](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft Güvenlik ekibi blog gönderileri:
 

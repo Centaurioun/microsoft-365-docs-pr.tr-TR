@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Uyumluluk Yöneticisi'nde iyileştirme eylemleriyle çalışarak denetimleri uygulamayı ve test etmeyi öğrenin. İş, depolama belgeleri ve dışarı aktarma raporları atayın.
-ms.openlocfilehash: 4eb75e23825e8e60fc0ea3ecfcbb75e1292ac5e9
-ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
+ms.openlocfilehash: 6388a4e1c4ce73e29481e1e1daa0ee27d733ed8b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67333774"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472974"
 ---
 # <a name="working-with-improvement-actions-in-compliance-manager"></a>Uyumluluk Yöneticisi'nde iyileştirme eylemleriyle çalışma
 
@@ -154,7 +154,7 @@ Uyumluluk Yöneticisi, iyileştirme eylemlerini test etme seçenekleri sağlar. 
 El ile test için ayarlanan iyileştirme eylemleri, el ile test ettiğiniz ve uyguladığınız eylemlerdir. Gerekli uygulama ve test durumu durumlarını ayarlar ve tüm kanıt dosyalarını **Belgeler** sekmesine yüklersiniz. Bazı eylemlerde, iyileştirme eylemlerini test etme için tek kullanılabilir yöntem budur.
 
 #### <a name="automatic-testing-source"></a>Otomatik test kaynağı
-Bazı iyileştirme eylemleri, Uyumluluk Yöneticisi tarafından otomatik olarak test edilebilir. Hangi iyileştirme eylemlerinin otomatik olarak test edilebileceği ve test edilemeyecekleri [hakkında ayrıntılı bilgi edinin](compliance-manager-improvement-actions.md#update-testing-source).
+Bazı iyileştirme eylemleri, Uyumluluk Yöneticisi tarafından otomatik olarak test edilebilir. Hangi iyileştirme eylemlerinin otomatik olarak test edilebileceği ve test edilemeyecekleri [hakkında ayrıntılı bilgi edinin](compliance-manager-setup.md#set-up-automated-testing).
 
 Otomatik olarak test edilebilen iyileştirme eylemleri için, test kaynağı için **Otomatik** seçeneğini görürsünüz. Uyumluluk Yöneticisi, Microsoft 365 ortamınızda ayarladığınız diğer uyumluluk çözümlerinden gelen sinyallerin yanı sıra Microsoft Güvenli Puan'ın da izlediği tüm tamamlayıcı eylemleri algılar. Test sekmesindeki **Test mantığı** alanı, eylemin uyumluluk puanınıza doğru puan geçirmesi ve puan kazanması için başka bir çözümde ne tür bir ilke veya yapılandırma gerektiğini gösterir.
 

@@ -2,7 +2,8 @@
 title: Microsoft Güvenli Puanı aracılığıyla güvenlik duruşunuzu değerlendirme
 description: Microsoft 365 Defender portalında Microsoft Güvenli Puanınızı geliştirmek için nasıl işlem yapılacağını açıklar.
 keywords: microsoft güvenli puanı, güvenli puan, office 365 güvenli puanı, microsoft güvenlik puanı, Microsoft 365 Defender portalı, iyileştirme eylemleri
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -21,13 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.technology: m365d
-ms.openlocfilehash: d09c64d7986a85bbc90469d7cd8cc20bdf0d367e
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: dac1fa506dbb5de8a74817d20722738640ee2719
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328573"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480437"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft Güvenli Puanı ile güvenlik duruşunuzu değerlendirme
 

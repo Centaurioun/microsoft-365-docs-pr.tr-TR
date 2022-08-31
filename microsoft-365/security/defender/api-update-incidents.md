@@ -3,7 +3,8 @@ title: Olay API'sini güncelleştirme
 description: Microsoft 365 Defender API kullanarak olayları güncelleştirme hakkında bilgi edinin
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: f0d8ec43cc67ab07b2c69104e79730ab522118ad
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: d15f7a580964736ebc81bd0dbeed534c4965426b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100063"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480986"
 ---
 # <a name="update-incidents-api"></a>Güvenlik olayları API'sini güncelleştirme
 
@@ -54,7 +54,7 @@ Mevcut olayın özelliklerini Güncelleştirmeler. Güncelleştirilebilir özell
 
 Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz. [Microsoft 365 Defender API'lerine erişme](api-access.md).
 
-İzin türü|İzin|İzin görünen adı
+İzin türü|Izni|İzin görünen adı
 ---|---|---
 Uygulama|Incident.ReadWrite.All|Tüm olayları okuma ve yazma
 Temsilci (iş veya okul hesabı)|Incident.ReadWrite|Olayları okuma ve yazma
@@ -72,21 +72,21 @@ PATCH /api/incidents/{id}
 
 Name|Tür|Açıklama
 ---|---|---
-İzin|Dize|Taşıyıcı {token}. **Gerekli**.
+Yetkilendirme|Dize|Taşıyıcı {token}. **Gerekli**.
 İçerik Türü|Dize|application/json. **Gerekli**.
 
 ## <a name="request-body"></a>İstek gövdesi
 
 İstek gövdesinde, güncelleştirilmesi gereken alanların değerlerini sağlayın. İstek gövdesinde yer almayan mevcut özellikler, ilgili değerlerde yapılan değişiklikler nedeniyle yeniden hesaplanmaları gerekmediği sürece değerlerini korur. En iyi performans için değişmemiş mevcut değerleri atlamalısınız.
 
-Mülk|Tür|Açıklama
+Özellik|Tür|Açıklama
 ---|---|---
-durum|Sabit Listesi|Olayın geçerli durumunu belirtir. Olası değerler şunlardır: `Active`, `Resolved`ve `Redirected`.
-assignedTo|dizgi|Olayın sahibi.
-sınıflandırma|Sabit Listesi|Olayın belirtimi. Olası değerler şunlardır: `Unknown`, `FalsePositive`, `TruePositive`.
-sebat|Sabit Listesi|Olayın belirlenmesini belirtir. Olası değerler şunlardır: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, , `UnwantedSoftware`. `Other`
+Durum|Enum|Olayın geçerli durumunu belirtir. Olası değerler şunlardır: `Active`, `Resolved`ve `Redirected`.
+Atanan|Dize|Olayın sahibi.
+Sınıflandırma|Enum|Olayın belirtimi. Olası değerler şunlardır: `Unknown`, `FalsePositive`, `TruePositive`.
+Belirlenmesi|Enum|Olayın belirlenmesini belirtir. Olası değerler şunlardır: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, , `UnwantedSoftware`. `Other`
 Etiketler|dize Listesi|Olay etiketlerinin listesi.
-yorum|dizgi|Olaya eklenecek açıklama.
+Yorum|Dize|Olaya eklenecek açıklama.
 
 >[!NOTE]
 >29 Ağustos 2022'de daha önce desteklenen uyarı belirleme değerleri ('Apt' ve 'SecurityPersonnel') kullanım dışı bırakılacak ve artık API aracılığıyla kullanılamayacak.

@@ -5,19 +5,19 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Yöneticiler, Office 365 için Microsoft Defender Plan 2'de Saldırı simülasyonu eğitimi için son kullanıcı bildirim e-posta iletileri oluşturmayı öğrenebilir.
-ms.technology: mdo
-ms.openlocfilehash: b26c8060fb869ea9e02ab06396a5a91281bcf3f0
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.subservice: mdo
+ms.openlocfilehash: 6297fafeb572c807a49161b1bd3e11a0820b7686
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "66861751"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481074"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>Saldırı simülasyonu eğitimi için son kullanıcı bildirimleri
 
@@ -26,14 +26,14 @@ ms.locfileid: "66861751"
 **Uygulandığı öğe**
 - [Office 365 için Microsoft Defender plan 2](defender-for-office-365.md)
 
-Microsoft 365 E5 veya Office 365 için Microsoft Defender Plan 2'de saldırı simülasyonu eğitimi bölümünde, son kullanıcı bildirimleri [simülasyonlar veya simülasyon otomasyonları](attack-simulation-training.md) sonucunda kullanıcılara gönderilen e-posta iletileridir.[](attack-simulation-training-simulation-automations.md) Aşağıdaki son kullanıcı bildirimi türleri kullanılabilir:
+Microsoft 365 E5 veya Office 365 için Microsoft Defender Plan 2'deki Saldırı simülasyonu eğitimi son kullanıcı bildirimleri, [simülasyonlar veya simülasyon otomasyonları](attack-simulation-training.md) sonucunda kullanıcılara gönderilen e-posta iletileridir.[](attack-simulation-training-simulation-automations.md) Aşağıdaki son kullanıcı bildirimi türleri kullanılabilir:
 
 - **Pozitif pekiştirme bildirimi**: Kullanıcılar sanal kimlik avı iletisi bildirdiğinde gönderilir.
 - **Simülasyon bildirimi**: Kullanıcılar bir simülasyon veya simülasyon otomasyonuna dahil edildiğinde gönderilir, ancak hiçbir eğitim seçilmez.
 - **Eğitim atama bildirimi**: Kullanıcılara simülasyon veya simülasyon otomasyonları sonucunda gerekli eğitimler atandığında gönderilir.
 - **Eğitim anımsatıcı bildirimi**: Gerekli eğitimler için anımsatıcı olarak gönderilir.
 
-Kullanılabilir son kullanıcı bildirimlerini görmek için adresinden Microsoft 365 Defender portalını <https://security.microsoft.com>açın **Email & işbirliği** \> **Saldırı simülasyonu eğitimi** \> **Simülasyon içerik kitaplığı** sekmesine \> gidin ve **son kullanıcı bildirimleri'ni** seçin. **Doğrudan Son kullanıcı bildirimleri'ni** seçebileceğiniz **Simülasyon içerik kitaplığı** sekmesine gitmek için kullanın<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+Kullanılabilir son kullanıcı bildirimlerini görmek için adresinden Microsoft 365 Defender portalını <https://security.microsoft.com>açın **Email & işbirliği** \> **Saldırı simülasyonu eğitimi** \> **Benzetim içerik kitaplığı** sekmesine \> gidin ve **son kullanıcı bildirimleri'ni** seçin. **Doğrudan Son kullanıcı bildirimleri'ni** seçebileceğiniz **Simülasyon içerik kitaplığı** sekmesine gitmek için kullanın<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 **Son kullanıcı bildirimlerinin** iki sekmesi vardır:
 
@@ -79,7 +79,7 @@ Yalnızca **Kiracı bildirimleri** sekmesindeki ayrıntılar açılır menüsün
 
 ## <a name="create-end-user-notifications"></a>Son kullanıcı bildirimleri oluşturma
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Email & işbirliği** \> **Saldırı simülasyonu eğitimi** \> **Simülasyon içerik kitaplığı** sekmesine \> gidin ve **son kullanıcı bildirimleri'ni** seçin. **Doğrudan Son kullanıcı bildirimleri'ni** seçebileceğiniz **Simülasyon içerik kitaplığı** sekmesine gitmek için kullanın<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Email & işbirliği** \> **Saldırı simülasyonu eğitimi** \> **Benzetim içerik kitaplığı** sekmesine \> gidin ve **son kullanıcı bildirimleri'ni** seçin. **Doğrudan Son kullanıcı bildirimleri'ni** seçebileceğiniz **Simülasyon içerik kitaplığı** sekmesine gitmek için kullanın<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 2. **Kiracı bildirimleri** sekmesinde Yeni oluştur simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) Son kullanıcı bildirim sihirbazını başlatmak için **yeni oluşturun**.
 

@@ -2,7 +2,8 @@
 title: Microsoft 365 Defender'da Uç Nokta için Microsoft Defender
 description: Microsoft Defender Güvenlik Merkezi Microsoft 365 Defender değişiklikleri hakkında bilgi edinin
 keywords: Microsoft 365 Defender, Office 365 için Microsoft Defender, Uç Nokta için Microsoft Defender, MDO, MDE, güvenlik portalı, defender güvenlik portalı ile çalışmaya başlama
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,12 +20,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 9669e0788197f59f6d46c0475a89c67310e32ec9
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: d43fc893c2b0d9326b4b4c1021ae863c5038647e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328617"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480205"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft 365 Defender'da Uç Nokta için Microsoft Defender
 

@@ -1,10 +1,11 @@
 ---
-title: Gelişmiş av şemasında DeviceNetworkInfo tablosu
-description: Gelişmiş av şemasının DeviceNetworkInfo tablosunda ağ yapılandırma bilgileri hakkında bilgi
-keywords: gelişmiş av, tehdit avı, siber tehdit avı, Microsoft 365 Defender, Microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, makinenetworkinfo, DeviceNetworkInfo, cihaz, makine, mac, ip, bağdaştırıcı, dns, tabloya, ağ geçidi, şema
+title: Gelişmiş tehdit avcılığı şemasındaki DeviceNetworkInfo tablosu
+description: Gelişmiş tehdit avcılığı şemasının DeviceNetworkInfo tablosunda ağ yapılandırma bilgileri hakkında bilgi edinin
+keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, machinenetworkinfo, DeviceNetworkInfo, cihaz, makine, mac, ip, bağdaştırıcı, dns, dhcp, ağ geçidi, tünel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,51 +18,50 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 86c087c8a8cdfa80904612625c08ec37ca6813ca
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: b617abf829478ada5a79e6013afca3c8eba6bf0a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63018998"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480832"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 - Uç Nokta için Microsoft Defender
 
 
 
-Gelişmiş `DeviceNetworkInfo` arama [şemasında yer](advanced-hunting-overview.md) alan tablo, ağ bağdaştırıcıları, IP ve MAC adresleri ve bağlı ağlar veya etki alanları gibi makine ağ yapılandırması hakkında bilgi içerir. Bu tablodan bilgi dönüşen sorgular oluşturmak için bu başvuruyu kullanın.
+`DeviceNetworkInfo` [Gelişmiş tehdit avcılığı](advanced-hunting-overview.md) şemasındaki tablo, ağ bağdaştırıcıları, IP ve MAC adresleri ve bağlı ağlar veya etki alanları da dahil olmak üzere makinelerin ağ yapılandırması hakkında bilgi içerir. Bu tablodan bilgi döndüren sorgular oluşturmak için bu başvuruyu kullanın.
 
-Gelişmiş av şemasında yer alan diğer tablolar hakkında bilgi için bkz [. gelişmiş av başvurusu](advanced-hunting-schema-tables.md).
+Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi için [gelişmiş avcılık başvurusuna bakın](advanced-hunting-schema-tables.md).
 
 | Sütun adı | Veri türü | Açıklama |
 |-------------|-----------|-------------|
-| `Timestamp` | `datetime` | Etkinliğin kaydedl olduğu tarih ve saat |
-| `DeviceId` | `string` | Hizmette makine için benzersiz tanımlayıcı |
+| `Timestamp` | `datetime` | Olayın kaydedilildiği tarih ve saat |
+| `DeviceId` | `string` | Hizmetteki makine için benzersiz tanımlayıcı |
 | `DeviceName` | `string` | Makinenin tam etki alanı adı (FQDN) |
 | `NetworkAdapterName` | `string` | Ağ bağdaştırıcısının adı |
 | `MacAddress` | `string` | Ağ bağdaştırıcısının MAC adresi |
-| `NetworkAdapterType` | `string` | Ağ bağdaştırıcısı türü. Olası değerler için bu [numaralamaya bakın](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
-| `NetworkAdapterStatus` | `string` | Ağ bağdaştırıcısının işlem durumu. Olası değerler için bu [numaralamaya bakın](/dotnet/api/system.net.networkinformation.operationalstatus) |
-| `TunnelType` | `string` | Geçiş protokolü, arabirimin bu amaçla kullanılıyorsa (örneğin, 6'dan 4'e, Teredo, ISATAP, PPTP, SSTP ve SSH) |
-| `ConnectedNetworks` | `string` | Bağdaştırıcının bağlı olduğu ağlar. Her JSON dizisi ağ adını, kategoriyi (genel, özel veya etki alanı), bir açıklamayı ve İnternet'e genel olarak bağlı olup olmadığını gösteren bir bayrak içerir |
+| `NetworkAdapterType` | `string` | Ağ bağdaştırıcısı türü. Olası değerler için [bu numaralandırmaya](/dotnet/api/system.net.networkinformation.networkinterfacetype) bakın |
+| `NetworkAdapterStatus` | `string` | Ağ bağdaştırıcısının çalışma durumu. Olası değerler için [bu numaralandırmaya](/dotnet/api/system.net.networkinformation.operationalstatus) bakın |
+| `TunnelType` | `string` | Arabirim bu amaçla kullanılıyorsa tünel protokolü, örneğin 6'dan 4'e, Teredo, ISATAP, PPTP, SSTP ve SSH |
+| `ConnectedNetworks` | `string` | Bağdaştırıcının bağlı olduğu ağlar. Her JSON dizisi ağ adını, kategorisini (genel, özel veya etki alanı), bir açıklamayı ve İnternet'e genel olarak bağlanıp bağlanmadığını belirten bir bayrak içerir |
 | `DnsAddresses` | `string` | JSON dizi biçiminde DNS sunucusu adresleri |
-| `IPv4Dhcp` | `string` | AİLE sunucusunun IPv4 adresi |
-| `IPv6Dhcp` | `string` | IPv6 address of HERale sunucusu |
+| `IPv4Dhcp` | `string` | DHCP sunucusunun IPv4 adresi |
+| `IPv6Dhcp` | `string` | DHCP sunucusunun IPv6 adresi |
 | `DefaultGateways` | `string` | JSON dizi biçimindeki varsayılan ağ geçidi adresleri |
-| `IPAddresses` | `string` | Bağdaştırıcıya atanan tüm IP adreslerini ve ilgili alt ağ ön eklerini ve IP adresi alanı (genel, özel veya link-local gibi) içeren JSON dizisi |
-| `ReportId` | `long` | Yinelenen bir sayaça dayalı olay tanımlayıcısı. Benzersiz olayları tanımlamak için bu sütun DeviceName ve Timestamp sütunlarıyla birlikte kullanılmalıdır |
+| `IPAddresses` | `string` | Bağdaştırıcıya atanan tüm IP adreslerini içeren JSON dizisi, ilgili alt ağ ön eki ve ip adresi alanıyla birlikte ortak, özel veya bağlantı yerel gibi |
+| `ReportId` | `long` | Yinelenen sayacı temel alan olay tanımlayıcısı. Benzersiz olayları tanımlamak için bu sütunun DeviceName ve Timestamp sütunlarıyla birlikte kullanılması gerekir |
 
 ## <a name="related-topics"></a>İlgili konular
-- [Gelişmiş ava genel bakış](advanced-hunting-overview.md)
-- [Sorgu dilini öğrenme](advanced-hunting-query-language.md)
-- [Paylaşılan sorguları kullanma](advanced-hunting-shared-queries.md)
-- [Cihazlar, e-postalar, uygulamalar ve kimlikler arasında iş avı](advanced-hunting-query-emails-devices.md)
-- [Şemayı anlama](advanced-hunting-schema-tables.md)
-- [Sorguyla ilgili en iyi yöntemleri uygulama](advanced-hunting-best-practices.md)
+- [Gelişmiş avcılığa genel bakış](advanced-hunting-overview.md)
+- [Sorgu dilini öğrenin](advanced-hunting-query-language.md)
+- [Paylaşılan sorguları kullanın](advanced-hunting-shared-queries.md)
+- [Cihazlar, e-postalar, uygulamalar ve kimlikler arasında avlayın](advanced-hunting-query-emails-devices.md)
+- [Şemayı anlayın](advanced-hunting-schema-tables.md)
+- [Sorgu en iyi yöntemlerini uygulayın](advanced-hunting-best-practices.md)

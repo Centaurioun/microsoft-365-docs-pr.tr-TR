@@ -3,7 +3,8 @@ title: İlk olayınız için güvenlik duruşunuzu hazırlama
 description: Microsoft 365 Defender'daki ilk olayınız için Microsoft 365 kiracınızın güvenlik duruşu ayarlayın.
 keywords: olaylar, uyarılar, araştırma, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlik, kimlik, posta kutusu, e-posta, 365, Microsoft, m365
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,17 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-firstincident
+- highpri
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: eeaa5c663d7f35a1a43f883953cd08c5aa1920aa
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 7915c2dac12980283e45f0d389c2e13cd9753f66
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67329057"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471113"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>İlk olayınız için güvenlik duruşunuzu hazırlama
 

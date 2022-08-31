@@ -410,15 +410,15 @@
               href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
             - name: Office 365 için Microsoft Defender'ı Microsoft Sentinel'e bağlayın
               href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
-            - name: Office 365 için Microsoft Defender'ı Microsoft Sentinel'e bağlayın
-              href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
+            - name: Microsoft Online Email Yönlendirme Adresi (MOERA) ve park edilmiş Etki Alanları için DMARC Raporlama'yı etkinleştirme
+              href: step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains.md
             - name: Rapor iletisi eklentisini dağıtma ve yapılandırma
               href: step-by-step-guides/deploy-and-configure-the-report-message-add-in.md
-            - name: Önceden ayarlanmış güvenlik ilkeleriyle her zaman en uygun güvenlik denetimlerine sahip olmanızı sağlayarak
-              href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+            - name: SharePoint Online'da Office 365 için Microsoft Defender kullanma
+              href: step-by-step-guides/utilize-microsoft-defender-for-office-365-in-sharepoint-online.md
         - name: Kullanım
           items:
-            - name: İleti merkezini kullanarak Office 365 için Microsoft Defender’da yapılacak değişikliklerden haberdar olun
+            - name: İleti merkezinden Office 365 için Microsoft Defender yapılan değişikliklerin özet bildirimini ayarlama
               href: step-by-step-guides/stay-informed-with-message-center.md
             - name: 'Microsoft 365 Defender''da olaylar nasıl Önceliklendirilir, Yönetilir, Araştırılır ve Yanıtlanır?'
               href: step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender.md

@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Azure Disk Şifrelemesi gibi Azure'da kullanılabilen şifreleme hakkında bilgi edinin
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 66fb4e54c0837534d6943372d84cf3a4864e4739
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: de0e98feb54cd2f56ebea35a0f0ec243b8712d86
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632189"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472446"
 ---
 # <a name="encryption-in-azure"></a>Azure'da şifreleme
 
@@ -32,7 +32,7 @@ Azure, verileri bir konumdan diğerine taşırken korumaya yönelik birçok meka
 
 Veriler [istemci tarafı şifreleme](/azure/storage/storage-client-side-encryption), HTTPS veya SMB 3.0 kullanılarak uygulama ile Azure arasında aktarım sırasında güvenli hale getirilebilir. Kendi sanal makineleriniz (VM) ile kullanıcılarınız arasındaki trafik için şifrelemeyi etkinleştirebilirsiniz. [Azure Sanal Ağları](https://azure.microsoft.com/services/virtual-network/) ile kurumsal VPN ağ geçidinizle Azure arasındaki trafiği şifrelemek ve Sanal Ağ bulunan VM'ler arasındaki trafiği şifrelemek için endüstri standardı IPsec protokollerini kullanabilirsiniz.
 
-Bekleyen veriler için Azure, AES-256 desteği gibi birçok şifreleme seçeneği sunarak ihtiyaçlarınıza en uygun veri depolama senaryolarını seçme esnekliği sunar. Veriler [Depolama Hizmeti Şifrelemesi](/azure/storage/storage-service-encryption) kullanılarak Azure Depolama'ya yazıldığında otomatik olarak şifrelenebilir ve VM'ler tarafından kullanılan işletim sistemi ve veri diskleri şifrelenebilir. Daha fazla bilgi için bkz. [Azure'da Windows sanal makineleri için güvenlik önerileri](/azure/security/azure-security-disk-encryption). Ayrıca, Azure Depolama'daki veri nesnelerine temsilci erişimi [, Paylaşılan Erişim İmzaları](/azure/storage/storage-dotnet-shared-access-signature-part-1) kullanılarak verilebilir. Azure ayrıca [Azure SQL Veritabanı ve Data Warehouse için Saydam Veri Şifrelemesi](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql) kullanarak bekleyen veriler için şifreleme sağlar.
+Bekleyen veriler için Azure, AES-256 desteği gibi birçok şifreleme seçeneği sunarak ihtiyaçlarınıza en uygun veri depolama senaryolarını seçme esnekliği sunar. Veriler [Depolama Hizmeti Şifrelemesi](/azure/storage/storage-service-encryption) kullanılarak Azure Depolama'ya yazıldığında otomatik olarak şifrelenebilir ve VM'ler tarafından kullanılan işletim sistemi ve veri diskleri şifrelenebilir. Daha fazla bilgi için bkz. [Azure'da Windows sanal makineleri için güvenlik önerileri](/azure/virtual-machines/security-recommendations). Ayrıca, Azure Depolama'daki veri nesnelerine temsilci erişimi [, Paylaşılan Erişim İmzaları](/azure/storage/storage-dotnet-shared-access-signature-part-1) kullanılarak verilebilir. Azure ayrıca [Azure SQL Veritabanı ve Data Warehouse için Saydam Veri Şifrelemesi](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql) kullanarak bekleyen veriler için şifreleme sağlar.
 
 Azure'da şifreleme hakkında daha fazla bilgi için bkz. [Azure şifrelemeye genel bakış](/azure/security/security-azure-encryption-overview) ve [Bekleyen Azure Veri Şifrelemesi](/azure/security/azure-security-encryption-atrest).
 

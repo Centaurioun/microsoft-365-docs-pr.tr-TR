@@ -8,17 +8,17 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: 07/07/2022
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2b7a4d47d07fd609fb9dd424f2a8b89af2ed0b9b
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 280541647409916f45208b8ddfbb98c03f91383c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66862315"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476868"
 ---
 # <a name="trial-playbook-microsoft-defender-for-endpoint"></a>Deneme playbook'u: Uç Nokta için Microsoft Defender
 
@@ -56,7 +56,7 @@ Bu playbook, ücretsiz denemenizden en iyi şekilde yararlanabilirsiniz. Microso
 </table>
 <br>
 
-**Haydi başlayalım!**
+**Başlayalım!**
 
 ## <a name="set-up-your-trial"></a>Deneme sürümünüzü ayarlama
 

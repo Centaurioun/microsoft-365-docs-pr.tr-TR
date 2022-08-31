@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 sektörü için çözüm üretmek
-description: E-posta kullanarak perakende sektörü için çözüm ve mimari Microsoft 365
+title: Perakende sektörü için Microsoft 365 çözümleri
+description: Microsoft 365 kullanarak perakende sektörü için çözüm ve mimari kaynakları hakkında bilgi edinin
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -12,16 +12,16 @@ ms.collection:
 - M365-subscription-management
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: b91cfa6469a74a4d9c041acfb84c823f7367619c
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 45dd2c1e723d865bcb80107126e4eb4a4f5d42d2
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63010192"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480679"
 ---
-# <a name="microsoft-365-solutions-for-the-retail-industry"></a>Microsoft 365 sektörü için çözüm üretmek
+# <a name="microsoft-365-solutions-for-the-retail-industry"></a>Perakende sektörü için Microsoft 365 çözümleri
 
-Microsoft, perakende kuruluşlarının müşterilere hizmet etme, siparişleri karşılama, tedarik zincirini yönetme ve perakende ekiplerinin görevlerden uzak kalmalarına ve birlikte çalışmasına yardımcı olmak için birçok özellik sunar. Microsoft ayrıca perakende sektörü için, Microsoft 365, Dynamics 365 ve Microsoft Azure'den bileşenleri içeren perakende sektörü için Microsoft Bulut Microsoft Azure. Perakende ortamların modernleştirme ve dijital dönüşümü, sürekli değişen ekonomiyi takip etmek için çok önemlidir.
+Microsoft, perakende kuruluşlarının müşterilere hizmet vermesine, siparişleri yerine getirmesine, tedarik zincirini yönetmesine ve perakende ekiplerinin görevlerden haberdar olup birlikte çalışmasına yardımcı olmak için birçok özellik sunar. Microsoft ayrıca perakende sektörü için Microsoft 365, Dynamics 365 ve Microsoft Azure bileşenlerini içeren Microsoft Cloud for Retail kapsamlı bir platform sağlar. Perakende ortamlarının modernizasyonu ve dijital dönüşümü, sürekli değişen ekonomiye ayak uydurmanın anahtarıdır.
 
 <br>
 
@@ -29,20 +29,19 @@ Microsoft, perakende kuruluşlarının müşterilere hizmet etme, siparişleri k
 
 <br>
 
-Perakende çözümlerinizi dijital ortama Microsoft 365, modernleştirmek ve geliştirmek için Azure, Dynamics 365 ve Azure'i nasıl kullanabileceğinizi öğrenin.
+Perakende çözümünüzü dijitalleştirmek, modernleştirmek ve geliştirmek için Microsoft 365, Dynamics 365 ve Azure'ı nasıl kullanabileceğinizi öğrenin.
 
-## <a name="resources-for-retail"></a>Perakende satış kaynakları
+## <a name="resources-for-retail"></a>Perakende için kaynaklar
 
 |Kaynak |Açıklama  |
 |---------|---------|
-|[Teams Satış](/microsoftteams/expand-teams-across-your-org/teams-for-retail-landing-page)    |  Microsoft 365 ve Microsoft Teams, perakende kuruluşlara günlük işlemleri ve dijital dönüşümleri ile yardımcı olacak çeşitli özellikler sağlar. <br>- Mağaza içinde ve çapraz iletişim <br>- Sanal uygulama ve danışmalar <br>- İş işlemlerini basitleştirme <br>- Kurumsal iletişimler <br>- Yeni çalışanları işe ekleme    |
-|[Perakende için Microsoft Bulut](/industry/retail/overview)  | Perakende için Microsoft Bulut hakkında ve perakende satıcının var olan sistemleriyle tümleştirilmiş güvenilir perakende sektörü çözümleri sağlayarak iş artışlarını nasıl hızlandırdiğini öğrenin.     |
-|[Azure mimarisi ve perakende satış çözümleri](/azure/architecture/industries/retail)| Perakende sektörü için Azure Solutions'Microsoft Azure çözümlerinizi dijitalleştirmek, modernleştirmek ve geliştirmek için bu hizmetleri nasıl kullanabileceğinizi öğrenin. |
-| | |
+|[Perakende için Microsoft 365](../frontline/teams-for-retail-landing-page.md)    |  Microsoft 365 ve Microsoft Teams, perakende kuruluşların günlük operasyonları ve dijital dönüşümleri konusunda yardımcı olabilecek çeşitli özellikler sunar. <br>- Mağaza içi ve mağazalar arası iletişim <br>- Sanal bağlantı parçaları ve danışmalar <br>- İş süreçlerini basitleştirme <br>- Kurumsal iletişimler <br>- Yeni çalışanları ekleme    |
+|[Microsoft Cloud for Retail](/industry/retail/overview)  | Perakendecinin mevcut sistemleriyle tümleşen güvenilir perakende sektörü çözümleri sunarak Microsoft Cloud for Retail ve iş büyümesini nasıl hızlandırdığı hakkında bilgi edinin.     |
+|[Perakende için Azure mimarisi ve çözümleri](/azure/architecture/industries/retail)| Perakende sektörü için Azure Çözümleri'nde perakende çözümlerinizi dijitalleştirmek, modernleştirmek ve geliştirmek için Microsoft Azure hizmetlerini nasıl kullanabileceğinizi öğrenin. |
 
-## <a name="videos-you-can-share-with-your-team"></a>Ekipleriniz ile paylaşabilirsiniz videolar
+## <a name="videos-you-can-share-with-your-team"></a>Ekibinizle paylaşabileceğiniz videolar
 
-Perakende için Microsoft Bulut hakkında bilgi edin:
+Microsoft Cloud for Retail hakkında bilgi edinin:
 
 <br>
 
@@ -50,7 +49,7 @@ Perakende için Microsoft Bulut hakkında bilgi edin:
 
 <br>
 
-Microsoft Teams ve Perakende için Microsoft Bulut ile iş ortaklarınızı gerçek zamanlı mağaza iletişimleri ve işbirliğiyle güçlendirerek güç katabilirsiniz:
+Microsoft Teams ve Microsoft Cloud for Retail ile gerçek zamanlı mağaza iletişimleri ve işbirliği ile iş ortaklarınızı nasıl güçlendirebileceğinizi öğrenin:
 
 <br>
 

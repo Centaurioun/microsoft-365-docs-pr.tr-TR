@@ -23,12 +23,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: c4b176d0da2d6caa9b6126ddfbd1e4d02ab1417e
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
+ms.openlocfilehash: db40235a7ef2b278cd532fec06745e58054580ee
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66827128"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471996"
 ---
 # <a name="get-started-with-microsoft-365-for-retail"></a>Perakende için Microsoft 365'i kullanmaya başlama
 
@@ -48,6 +48,16 @@ Microsoft 365 ve Microsoft Teams, perakende kuruluşların günlük operasyonlar
 
 > [!NOTE]
 > Bu senaryolar da Microsoft Cloud for Retail bir parçasıdır. Microsoft Dynamics 365 gibi Microsoft Cloud for Retail diğer özellikleri de kullandığınızda bu senaryolarla daha fazlasını yapabilirsiniz. Azure, Dynamics 365 ve Microsoft 365'in özelliklerini [Microsoft Cloud for Retail](/industry/retail) bir araya getiren bu çözümü kullanma hakkında daha fazla bilgi edinin.
+
+Mağaza iş ortaklarınızın bağlanmasına ve işbirliği yapmasına nasıl yardımcı olabileceğinizi görmek için aşağıdaki videoyu izleyin:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+
+
+Perakende ortamlarında iş süreçlerini nasıl basitleştirebileceğinizi görmek için aşağıdaki videoyu izleyin:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
 
 ### <a name="in-store-communication-and-collaboration"></a>Mağaza içi iletişim ve işbirliği
 

@@ -362,6 +362,8 @@
   items:
     - name: Finansal hizmetler
       items:
+        - name: Genel bakış
+          href: financial-services-overview.md
         - name: Finansal hizmetler için güvenlik ve uyumluluk
           href: financial-services-secure-collaboration.md
     - name: Enerji ve yardımcı hizmetler
@@ -373,7 +375,7 @@
         - name: Genel bakış
           href: healthcare-overview.md
         - name: Sağlık Hizmetleri için Teams
-          href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+          href: /frontline/teams-in-hc
     - name: Education
       items:
         - name: Eğitim için Teams
@@ -389,7 +391,7 @@
         - name: Genel bakış
           href: retail-overview.md
         - name: Perakende için Teams
-          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-retail-landing-page
+          href: /frontline/teams-for-retail-landing-page
 - name: Kurumsal mimari tasarım ilkeleri
   items:
     - name: Genel bakış

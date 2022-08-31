@@ -3,7 +3,8 @@ title: Microsoft 365 Defender ile araştırma ve yanıtlama
 description: olayları Microsoft 365 Defender özellikleriyle araştırın ve yanıt verin.
 keywords: olaylar, uyarılar, araştırma, analiz etme, yanıt, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365, olay yanıtı, siber saldırı
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 83df9dcec46f4e75f001a8851be4f9897cee2e8c
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: bb6189c92057b3c58a518bab3768011c4a1cffe4
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893485"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480964"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Microsoft 365 Defender ile araştırma ve yanıtlama
 

@@ -16,14 +16,14 @@ ms.collection: m365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, Microsoft 365 E5 Office 365 için Microsoft Defender veya Plan 2 kuruluşlarında saldırı simülasyonu ve eğitimiyle ilgili dağıtım konuları ve sık sorulan sorular hakkında bilgi edinebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 50f82d975e9dc4f534f9223b85fd9e841a3ad725
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: f0a4bf3f408b48a4feb48ae4fad39cfe1e11420d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490497"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480613"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Saldırı simülasyonu eğitimi dağıtımıyla ilgili dikkat edilmesi gerekenler ve SSS
 
@@ -32,9 +32,9 @@ ms.locfileid: "66490497"
 **Uygulandığı öğe**
 - [Office 365 için Microsoft Defender plan 2](defender-for-office-365.md)
 
-Saldırı simülasyonu eğitimi, Microsoft 365 E5 veya Office 365 için Microsoft Defender Plan 2 kuruluşlarının gerçek dünya, silah dışı kimlik avı yükleri tarafından desteklenen kimlik avı simülasyonlarının oluşturulmasına ve yönetilmesine izin vererek sosyal mühendislik riskini ölçmesine ve yönetmesine olanak tanır. Terranova güvenliğiyle ortaklaşa sunulan hiper hedefli eğitim, bilginin geliştirilmesine ve çalışan davranışının değiştirilmesine yardımcı olur.
+Saldırı simülasyonu eğitimi, Microsoft 365 E5 veya Office 365 için Microsoft Defender Plan 2 kuruluşlarının gerçek dünyada, silah dışı kimlik avıyla desteklenen kimlik avı simülasyonlarının oluşturulmasına ve yönetilmesine izin vererek sosyal mühendislik riskini ölçmesine ve yönetmesine olanak tanır Yük. Terranova güvenliğiyle ortaklaşa sunulan hiper hedefli eğitim, bilginin geliştirilmesine ve çalışan davranışının değiştirilmesine yardımcı olur.
 
-Saldırı simülasyonu eğitimine başlama hakkında daha fazla bilgi için bkz. [Saldırı simülasyonu eğitimini kullanmaya başlama](attack-simulation-training-get-started.md).
+Saldırı simülasyonu eğitimi kullanmaya başlama hakkında daha fazla bilgi için bkz. [Saldırı simülasyonu eğitimi kullanmaya başlama](attack-simulation-training-get-started.md).
 
 Simülasyon oluşturma ve zamanlama deneyiminin tamamı serbest akışlı ve sorunsuz olacak şekilde tasarlanmış olsa da, simülasyonların kurumsal ölçekte çalıştırılması genellikle planlama gerektirir. Bu makale, müşterilerimiz simülasyonları kendi ortamlarında çalıştırırken gördüğümüz belirli zorlukların giderilmesine yardımcı olur.
 
@@ -50,7 +50,7 @@ Bu sorunun Microsoft Edge'i etkilemediğini unutmayın.
 
 Planlama aşamasının bir parçası olarak, URL'yi bir kimlik avı kampanyasında kullanmadan önce desteklenen web tarayıcılarınızda URL'nin kullanılabilirliğini denetlemeyi unutmayın. URL'ler Google Güvenli Gözatma tarafından engelleniyorsa, URL'lere erişime izin vermek için Google'ın [bu yönergelerini izleyin](https://support.google.com/chrome/a/answer/7532419) .
 
-Şu anda [Saldırı simülasyonu eğitimi](attack-simulation-training-get-started.md) tarafından kullanılan URL'lerin listesi için Bkz. Saldırı simülasyonu eğitimini kullanmaya başlama.
+şu anda Saldırı simülasyonu eğitimi tarafından kullanılan URL'lerin listesi için Saldırı simülasyonu eğitimi [kullanmaya başlama](attack-simulation-training-get-started.md) bölümüne bakın.
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>Ağ ara sunucusu çözümleri ve filtre sürücüleri tarafından engellenen kimlik avı simülasyonu ve yönetici URL'leri
 
@@ -62,7 +62,7 @@ Hem kimlik avı simülasyonu URL'leri hem de yönetici URL'leri, ara güvenlik c
 
 Bu katmanda birkaç müşterinin engellendiğini gördük ancak bu gerçekleşir. Sorunlarla karşılaşırsanız, güvenlik cihazlarınız veya filtreleriniz tarafından taramayı atlamak için aşağıdaki URL'leri gerektiği gibi yapılandırmayı göz önünde bulundurun:
 
-- [Saldırı simülasyonu eğitimi kullanmaya başlama](attack-simulation-training-get-started.md) bölümünde açıklandığı gibi kimlik avı simülasyonu URL'leri.
+- [Saldırı simülasyonu eğitimi kullanmaya başlama](attack-simulation-training-get-started.md) bölümünde açıklandığı gibi sanal kimlik avı URL'leri.
 - <https://security.microsoft.com/attacksimulator>
 - <https://security.microsoft.com/attacksimulationreport>
 - <https://security.microsoft.com/trainingassignments>
@@ -77,13 +77,13 @@ Simülasyon e-posta iletilerini gerçekten alan kullanıcı sayısının simüla
 
 Simülasyonlara yalnızca geçerli, geçerli posta kutusu olan konuk olmayan kullanıcılar dahil edilecek. Kullanıcıları hedeflemek için dağıtım grupları veya posta etkin güvenlik grupları kullanıyorsanız, dağıtım grubu üyelerini görüntülemek ve doğrulamak için [Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet'ini kullanabilirsiniz.
 
-## <a name="issues-with-attack-simulation-training-reporting"></a>Saldırı simülasyonu eğitim raporlamasıyla ilgili sorunlar
+## <a name="issues-with-attack-simulation-training-reporting"></a>Saldırı simülasyonu eğitimi raporlamayla ilgili sorunlar
 
-### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>Saldırı simülasyonu eğitim raporları herhangi bir etkinlik ayrıntısı içermiyor
+### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>Saldırı simülasyonu eğitimi raporları herhangi bir etkinlik ayrıntısı içermiyor
 
-Saldırı simülasyonu eğitimi, çalışanlarınızın tehdit hazırlığı ilerleme durumu hakkında sizi bilgilendiren zengin ve eyleme dönüştürülebilir içgörülerle birlikte gelir. Saldırı simülasyonu eğitim raporları verilerle doldurulmazsa, kuruluşunuzda denetim günlüğü aramanın açık olduğunu doğrulayın (varsayılan olarak açıktır).
+Saldırı simülasyonu eğitimi, çalışanlarınızın tehdit hazırlığı ilerleme durumu hakkında sizi bilgilendiren zengin ve eyleme dönüştürülebilir içgörülerle birlikte gelir. Saldırı simülasyonu eğitimi raporlar verilerle doldurulmazsa, kuruluşunuzda denetim günlüğü aramanın açık olduğunu doğrulayın (varsayılan olarak açıktır).
 
-Olayların yakalanabilmesi, kaydedilebilmesi ve okunabilmesi için Saldırı benzetimi eğitimi için denetim günlüğü araması gereklidir. Denetim günlüğü aramasını kapatmak, Saldırı simülasyonu eğitimi için aşağıdaki sonuçlara neden olur:
+Olayların yakalanabilmesi, kaydedilebilmesi ve okunabilmesi için denetim günlüğü araması Saldırı simülasyonu eğitimi gereklidir. Denetim günlüğü aramasını kapatmak Saldırı simülasyonu eğitimi için aşağıdaki sonuçları doğurabilir:
 
 - Raporlama verileri tüm raporlarda kullanılamaz. Raporlar boş görünür.
 - Veriler kullanılamadığından eğitim atamaları engellenir.
@@ -127,7 +127,7 @@ Saldırı simülatörü eğitimindeki simülasyon raporları, kullanıcı etkinl
 - Kimlik bilgilerini veren kullanıcılar.
 - İletiyi kimlik avı olarak bildiren kullanıcılar.
 
-Kullanıcıların kimlik avı olarak bildirdiği iletiler Saldırı benzetimi eğitim simülasyonu raporlarında yakalanmazsa, bildirilen iletilerin Microsoft'a teslimini engelleyen bir Exchange posta akışı kuralı (aktarım kuralı olarak da bilinir) olabilir. Posta akışı kurallarının aşağıdaki e-posta adreslerine teslimi engellemediğini doğrulayın:
+Kullanıcıların kimlik avı olarak bildirdiği iletiler Saldırı simülasyonu eğitimi simülasyon raporlarında yakalanmazsa, bildirilen iletilerin Microsoft'a teslimini engelleyen bir Exchange posta akışı kuralı (aktarım kuralı olarak da bilinir) olabilir. Posta akışı kurallarının aşağıdaki e-posta adreslerine teslimi engellemediğini doğrulayın:
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com

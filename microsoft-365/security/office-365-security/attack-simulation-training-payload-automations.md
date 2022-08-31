@@ -5,19 +5,19 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Yöneticiler, Office 365 için Microsoft Defender Plan 2'de Saldırı simülasyonu eğitimi için otomatik simülasyonları toplamak ve başlatmak için yük otomasyonlarını (yük toplama) kullanmayı öğrenebilir.
-ms.technology: mdo
-ms.openlocfilehash: bc7bba0d91e9b2ff1f9baddc52f717450660d070
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.subservice: mdo
+ms.openlocfilehash: 340ca76086e7696017e1433433a5294a8003b225
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65838923"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480481"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>Saldırı simülasyonu eğitimi için yük otomasyonları
 
@@ -25,9 +25,9 @@ ms.locfileid: "65838923"
 
 [Office 365 için Microsoft Defender plan 2](defender-for-office-365.md) **için geçerlidir**
 
-Microsoft 365 E5 veya Office 365 için Microsoft Defender Plan 2'de saldırı simülasyonu eğitimi bölümünde, yük otomasyonları (_yük toplama_ olarak da bilinir) kuruluşunuzdaki kullanıcılar tarafından bildirilen gerçek dünya kimlik avı saldırı iletilerinden bilgi toplar. Kuruluşunuzda bu iletilerin sayısı büyük olasılıkla düşük olsa da, kimlik avı saldırılarında aranacak koşulları belirtebilirsiniz (örneğin, alıcılar, sosyal mühendislik tekniği, gönderen bilgileri vb.). Saldırı simülasyonu eğitimi, hedeflenen kullanıcılara zararsız simülasyonları otomatik olarak başlatmak için saldırıda kullanılan iletileri ve yükleri taklit eder.
+Microsoft 365 E5 veya Office 365 için Microsoft Defender Plan 2'deki Saldırı simülasyonu eğitimi yük otomasyonları (_yük toplama_ olarak da bilinir) kuruluşunuzdaki kullanıcılar tarafından bildirilen gerçek dünya kimlik avı saldırı iletilerinden bilgi toplar. Kuruluşunuzda bu iletilerin sayısı büyük olasılıkla düşük olsa da, kimlik avı saldırılarında aranacak koşulları belirtebilirsiniz (örneğin, alıcılar, sosyal mühendislik tekniği, gönderen bilgileri vb.). Saldırı simülasyonu eğitimi, hedeflenen kullanıcılara zararsız simülasyonları otomatik olarak başlatmak için saldırıda kullanılan iletileri ve yükleri taklit eder.
 
-Kullanılabilir yük otomasyonlarını görmek için adresinden Microsoft 365 Defender portalını <https://security.microsoft.com>açın **, e-posta & işbirliği** \> **Saldırı benzetimi eğitim** \> **Otomasyonları** sekmesine \> gidin ve **yük otomasyonları'nı** seçin. Doğrudan **Yük otomasyonlarını** seçebileceğiniz **Otomasyonlar** sekmesine gitmek için kullanın <https://security.microsoft.com/attacksimulator?viewid=automations>.
+Kullanılabilir yük otomasyonlarını görmek için adresinden Microsoft 365 Defender portalını <https://security.microsoft.com>açın **Email & işbirliği** \> **Saldırı simülasyonu eğitimi** \> **Otomasyonlar** sekmesine \> gidin ve **ardından Yük otomasyonları'nı** seçin. Doğrudan **Yük otomasyonlarını** seçebileceğiniz **Otomasyonlar** sekmesine gitmek için kullanın <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 Her yük otomasyonu için aşağıdaki bilgiler gösterilir:
 
@@ -46,11 +46,11 @@ Listeden bir yük otomasyonu seçtiğinizde, aşağıdaki bilgileri içeren bir 
 
 Yük otomasyonu oluşturmak için aşağıdaki adımları uygulayın:
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com/>**, E-posta & işbirliği** \> **Saldırı benzetimi eğitimi** \> **Otomasyonları** sekmesi **Yük otomasyonları'na**\> gidin. Doğrudan **Yük otomasyonlarını** seçebileceğiniz **Otomasyonlar** sekmesine gitmek için kullanın <https://security.microsoft.com/attacksimulator?viewid=automations>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com/>**Email & işbirliği** \> **Saldırı simülasyonu eğitimi** \> **Otomasyonlar** sekmesi **Yük otomasyonları'na**\> gidin. Doğrudan **Yük otomasyonlarını** seçebileceğiniz **Otomasyonlar** sekmesine gitmek için kullanın <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
    Otomasyon oluştur simgesine tıklayın ![.](../../media/m365-cc-sc-create-icon.png) **Otomasyon oluşturma**.
 
-   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi'ndeki Yük otomasyonları sekmesindeki Simülasyon oluştur düğmesi" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi Yük otomasyonları sekmesindeki Simülasyon oluştur düğmesi" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
    > [!NOTE]
    > Oluşturma sihirbazı sırasında herhangi bir noktada Kaydet **ve kapat'a** tıklayarak ilerlemenizi kaydedebilir ve yük otomasyonunu daha sonra yapılandırmaya devam edebilirsiniz. **Yük otomasyonlarında** yük otomasyonunu seçip Otomasyonu düzenle simgesine tıklayarak ![kaldığınız yerden devam edebilirsiniz.](../../media/m365-cc-sc-edit-icon.png) **Otomasyonu düzenleyin**. Kısmen tamamlanan yük otomasyonu **, Taslak** **Durum** değerine sahip olacaktır.

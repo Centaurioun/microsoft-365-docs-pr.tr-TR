@@ -1,9 +1,10 @@
 ---
-title: Güvenlik personelinizi eğitim için Microsoft 365 Defender
-description: Güvenlik personelinizin hızlı bir şekilde bilgili çalışması için önemli eğitim kaynaklarına sahip olun.
-keywords: videolar, kendi kendine yardım, kendi kendine çalışma, öğrenme, öğrenme yolu, Microsoft Learn, kurs, kurs, SecOps, güvenlik analisti
+title: Güvenlik personelinizi Microsoft 365 Defender için eğitin
+description: Güvenlik personelinizin hızlı bir şekilde artması için önemli eğitim kaynaklarına ulaşın.
+keywords: videolar, kendi kendine yardım, kendi kendine çalışma, ramp-up, yönerge, kurslar, öğrenme yolu, Microsoft Learn, kurs, kurslar, SecOps, güvenlik analisti
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,55 +22,54 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: f500b830a2a12674c53fdf1611c41ae7d59b6916
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 0656ec0d5194ea14deec293a505c5563a74ec939
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526956"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481096"
 ---
-# <a name="train-your-security-staff-for-microsoft-365-defender"></a>Güvenlik personelinizi eğitim için Microsoft 365 Defender
+# <a name="train-your-security-staff-for-microsoft-365-defender"></a>Güvenlik personelinizi Microsoft 365 Defender için eğitin
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-Organizasyonlarınızı ve verilerini saldırganlardan koruma aciliyet nedeniyle, güvenlik personelinizi hızlı bir şekilde güvenlik personelinizi bu kuruluşta Microsoft 365 Defender. Microsoft, e-posta ve ilişkili hizmetler için birden çok Microsoft 365 Defender türü sunar.
+Kuruluşunuzu ve verilerini saldırganlardan korumanın aciliyetiyle, güvenlik personelinizi hızla Microsoft 365 Defender eklemeniz gerekir. Microsoft, Microsoft 365 Defender ve ilişkili hizmetler için birden çok tür öğrenme ve kendi kendine çalışma kaynağı sağlar.
 
 
 ## <a name="microsoft-365-defender-ninja-training"></a>Microsoft 365 Defender Ninja eğitimi
 
-[Microsoft 365 Defender Ninja eğitimi](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376), iş 365'in özellikleri ve işlevlerinde size yol gösterirken size yol gösterir, düzenlenmiş Microsoft 365 Defender. Eğitim tehdit sinyali kaynaklarından geçmektedir. Örneğin&mdash; Uç Nokta için Microsoft Defender ve diğerleri&mdash; bu kaynakları tek tek kapsıyor. 
+[Microsoft 365 Defender Ninja eğitimi](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376), Microsoft 365 Defender özellikleri ve işlevlerinde size yol göstermenizi sağlamak için düzenlenmiş bir dizi bölüm ve modüldür. Eğitim, Uç Nokta için Microsoft Defender ve diğerleri&mdash;gibi tehdit sinyali kaynaklarından&mdash;geçer ancak tek tek kaynakları kapsamaz. 
 
-İçerik üç farklı bilgi düzeyine yapılandırılmıştır ve birden çok modül içerir: Temeller, Ara ve Uzman. Her düzey, malzemeyi anlamanızı test etmek için bir bilgi denetimi içerir.
+İçerik, birden çok modülle üç farklı bilgi düzeyine göre yapılandırılmıştır: Temel Bilgiler, Ara ve Uzman. Her düzey, malzemeyi anlamanızı test etmek için bir bilgi kontrolü içerir.
 
-## <a name="microsoft-learn-learning-paths"></a>Microsoft Öğrenme yolları
+## <a name="microsoft-learn-learning-paths"></a>Microsoft Learn öğrenme yolları
 
-Microsoft Learn öğrenme yollarını ve modüllerini kullanarak one module and unit of a time Microsoft 365 Defender Microsoft Defender for Endpoint hakkında bilgi edinmek için bu Microsoft Learn eğitim yollarını ve modüllerini kullanın.
+Microsoft 365 Defender ve Uç Nokta için Microsoft Defender, tek seferde bir modül ve birim hakkında bilgi edinmek için bu Microsoft Learn öğrenme yollarını ve modüllerini kullanın.
 
- - [Siber saldırıları algıla ve bu saldırılara Microsoft 365 Defender](/learn/paths/defender-detect-respond/)
+ - [Microsoft 365 Defender ile siber saldırıları algılama ve yanıtlama](/learn/paths/defender-detect-respond/)
 
- - [Uç Nokta için Microsoft Defender ile organizasyon güvenliği sağlama](/learn/paths/defender-endpoint-fundamentals/)  
+ - [Uç Nokta için Microsoft Defender ile kuruluşunuzun güvenliğini sağlama](/learn/paths/defender-endpoint-fundamentals/)  
 
 
-## <a name="learning-paths-in-the-microsoft-365-defender-portal-learning-hub"></a>Learning portalı öğrenme Microsoft 365 Defender yollarda bağlantı yolları
+## <a name="learning-paths-in-the-microsoft-365-defender-portal-learning-hub"></a>Microsoft 365 Defender portalı öğrenme hub'ında öğrenme yolları
 
-Microsoft 365 Defender [portalı öğrenme merkezi şu](https://security.microsoft.com/learning) öğrenme yollarını içerir:
+[Microsoft 365 Defender portalı öğrenme merkezi](https://security.microsoft.com/learning) şu öğrenme yollarını içerir:
 
-- Microsoft 365 güvenlik merkeziyle çalışmaya başlama
+- Microsoft 365 güvenlik merkezi kullanmaya başlama
 - Microsoft 365 Defender Kullanarak Araştırma
-- Microsoft 365 Defender Temel Eğitim
+- Microsoft 365 Defender Temel Eğitimi
 - Uç Nokta için Microsoft Defender Temel Eğitimi
-- En İyi Uygulamalar Office 365 için Microsoft Defender
+- Office 365 için Microsoft Defender En İyi Yöntemleri
 - Kurulum
 
-## <a name="hands-on-with-a-trial-environment"></a>Deneme ortamıyla birlikte çalışma
+## <a name="hands-on-with-a-trial-environment"></a>Deneme ortamı ile uygulamalı çalışma
 
-Öğrenmenin en iyi yollarından biri, deneme ortamında kullanıcı hizmetleriyle Microsoft 365 Defender hizmetlerini yapılandırarak ve test etmektir. Ayrıntılar [için bkz. Microsoft 365 Defender](eval-overview.md) değerlendirme ve pilot uygulama.
+Öğrenmenin en iyi yollarından biri, Microsoft 365 Defender ve ilişkili hizmetlerini bir deneme ortamında yapılandırmak ve test etmektir. Ayrıntılar için bkz[. Değerlendirme ve pilot Microsoft 365 Defender](eval-overview.md).
 
-## <a name="simulating-an-attack"></a>Saldırıyı taklit etmeye
+## <a name="simulating-an-attack"></a>Saldırı benzetimi
 
-Güvenlik personelinizin siber saldırıyı algılama ve yanıtlama becerisini test etmek için sanal bir saldırı kullanın. Daha [fazla bilgi için bkz. Microsoft 365 Defender portalıyla](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal) saldırıların benzetimini yapmak. 
+Güvenlik personelinizi bir siber saldırıyı algılama ve yanıtlama yetenekleri konusunda test etmek için simülasyon saldırısı kullanın. Daha fazla bilgi için bkz. [Microsoft 365 Defender portalıyla saldırıların benzetimini yapma](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal). 
 
