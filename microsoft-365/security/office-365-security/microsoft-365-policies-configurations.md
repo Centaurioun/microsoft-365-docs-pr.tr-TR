@@ -20,13 +20,14 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 - zerotrust-solution
+- highpri
 ms.technology: mdo
-ms.openlocfilehash: 97e81f020c18a4f51e8af99f3633c8edb2559a41
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 7480fdcf3d394e152ff3b1de738d48f5723d7b75
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750374"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481206"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Sıfır Güven kimlik ve cihaz erişimi yapılandırmaları
 

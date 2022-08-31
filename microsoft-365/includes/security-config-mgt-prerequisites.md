@@ -2,14 +2,14 @@
 title: dosyayı dahil et
 description: dosyayı dahil et
 author: mjcaparas
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-365-security
 ms.author: macapara
-ms.openlocfilehash: 31008df3e43c99f3a97dad3dce037b96e3b0c4b5
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 6fc45df2c8b63292e43674f1e8392c9407f92bd5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66116304"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67484117"
 ---
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -22,19 +22,19 @@ Bir cihaz Uç Nokta için Microsoft Defender eklendiğinde:
 
 - Cihaz, Intune için mobil cihaz yönetimi (MDM) kaydı olan mevcut bir Endpoint Manager iletişim durumu için ankete alınır
 - Endpoint Manager varlığı olmayan cihazlar Güvenlik Yönetimi özelliğini etkinleştirir
-- Henüz yoksa Azure Active Directory ile bir güven oluşturulur
-- Endpoint Manager (Intune) ile iletişim kurmak ve ilkeleri almak için Azure Active Directory güven kullanılır
+- Henüz mevcut değilse Azure Active Directory ile bir güven oluşturulur
+- Azure Active Directory güveni, Endpoint Manager (Intune) ile iletişim kurmak ve ilkeleri almak için kullanılır
 - Endpoint Manager'den ilke alma, Uç Nokta için Microsoft Defender tarafından cihazda zorlanır
 
 ### <a name="active-directory-requirements"></a>Active Directory Gereksinimleri
 
-Etki alanına katılmış bir cihaz Azure Active Directory ile güven oluşturduğunda, bu senaryo *Karma Azure Active Directory Katılma* senaryosu olarak adlandırılır. Uç Nokta için Microsoft Defender için Güvenlik Yönetimi bu senaryoyu aşağıdaki gereksinimlerle tam olarak destekler:
+Etki alanına katılmış bir cihaz Azure Active Directory ile güven oluşturduğunda, bu senaryo *Karma Azure Active Directory'ye Katılma* senaryosu olarak adlandırılır. Uç Nokta için Microsoft Defender için Güvenlik Yönetimi bu senaryoyu aşağıdaki gereksinimlerle tam olarak destekler:
 
-- Azure Active Directory Bağlan (AAD Bağlan) Uç Nokta için Microsoft Defender'dan kullanılan kiracıyla eşitlenmelidir
-- Karma Azure Active Directory Katılma ortamınızda yapılandırılmalıdır (Federasyon veya AAD Bağlan Eşitleme aracılığıyla)
-- AAD Bağlan Eşitlemesi, Azure Active Directory ile *eşitleme için cihaz* nesnelerini kapsama eklemelidir (birleştirme için gerektiğinde)
-- Eşitleme için AAD Bağlan kuralları [Server 2012 R2 için değiştirilmelidir (Server](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt?view=o365-worldwide#instructions-for-applying-computer-join-rule-in-aad-connect) 2012 R2 desteği gerektiğinde)
-- Tüm cihazların Uç Nokta için Microsoft Defender barındıran kiracının Azure Active Directory kaydolması gerekir. Kiracılar arası senaryolar desteklenmez. 
+- Azure Active Directory Connect (AAD Connect) Uç Nokta için Microsoft Defender'dan kullanılan kiracıyla eşitlenmelidir
+- Karma Azure Active Directory Katılımı ortamınızda yapılandırılmalıdır (Federasyon veya AAD Connect Sync aracılığıyla)
+- AAD Connect Sync, Azure Active Directory ile *eşitleme kapsamındaki* cihaz nesnelerini içermelidir (katılma için gerektiğinde)
+- Eşitleme için AAD Connect kuralları [Server 2012 R2 için değiştirilmelidir (Sunucu](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#instructions-for-applying-computer-join-rule-in-aad-connect) 2012 R2 desteği gerektiğinde)
+- Tüm cihazların Uç Nokta için Microsoft Defender barındıran kiracının Azure Active Directory'sine kaydolması gerekir. Kiracılar arası senaryolar desteklenmez. 
 
 ### <a name="connectivity-requirements"></a>Bağlantı Gereksinimleri
 
@@ -55,17 +55,17 @@ Uç Nokta için Microsoft Defender güvenlik yönetimi ilkeleri aşağıdaki cih
 - Windows 11 Professional/Enterprise
 - Down-Level [Cihazlar için Microsoft Defender ile R2 Windows Server 2012](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Down-Level [Cihazlar için Microsoft Defender ile Windows Server 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
-- Windows Server 2019 ([KB5006744](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0) ile)
-- Windows Server 2022 ([KB5006745](https://support.microsoft.com/topic/october-26-2021-kb5006745-os-build-20348-320-preview-8ff9319a-19e7-40c7-bbd1-cd70fcca066c) ile)
+- Windows Server 2019 ( [KB5006744](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0) ile)
+- Windows Server 2022 ( [KB5006745](https://support.microsoft.com/topic/october-26-2021-kb5006745-os-build-20348-320-preview-8ff9319a-19e7-40c7-bbd1-cd70fcca066c) ile)
 
 ### <a name="licensing-and-subscriptions"></a>Lisanslama ve abonelikler
 
 Uç Nokta için Microsoft Defender için güvenlik yönetimini kullanmak için şunlar gerekir:
 
-- Microsoft 365 gibi Uç Nokta için Microsoft Defender lisansları veya yalnızca Uç Nokta için Microsoft Defender için tek başına lisans veren abonelik. Uç Nokta için Microsoft Defender lisansları veren bir abonelik, kiracınıza Microsoft Endpoint Manager yönetim merkezinin Uç nokta güvenlik düğümüne de erişim verir.
+- Microsoft 365 gibi Uç Nokta için Microsoft Defender lisansları veya yalnızca Uç Nokta için Microsoft Defender için tek başına lisans veren bir abonelik. Uç Nokta için Microsoft Defender lisansları veren bir abonelik, kiracınıza Microsoft Endpoint Manager yönetim merkezinin Uç nokta güvenlik düğümüne de erişim verir.
 
   > [!NOTE]  
-  > **Özel durum**: Yalnızca Bulut için Microsoft Defender lisansının (eski adıyla Azure Güvenlik Merkezi) bir parçası olarak Uç Nokta için Microsoft Defender erişiminiz varsa, Uç Nokta için Microsoft Defender işlevselliği kullanılamaz.
+  > **Özel durum**: Yalnızca Bulut için Microsoft Defender lisansının (eski adıyla Azure Güvenlik Merkezi) bir parçası olarak Uç Nokta için Microsoft Defender erişiminiz varsa, Uç Nokta için Microsoft Defender için Güvenlik Yönetimi işlevselliği kullanılamaz.
 
 Uç nokta güvenlik düğümü, cihazlarınız için Uç Nokta için Microsoft Defender yönetmek ve cihaz durumunu izlemek için ilkeleri yapılandırıp dağıtabileceğiniz yerdir.
 
@@ -83,7 +83,7 @@ Aşağıdaki diyagram, Uç Nokta için Microsoft Defender güvenlik yapılandır
 
 2. Her cihaz ve Azure AD arasında bir güven kurulur. Bir cihazın mevcut bir güveni olduğunda, bu kullanılır. Cihazlar kaydedilmediğinde yeni bir güven oluşturulur.
 
-3. Cihazlar, Endpoint Manager ile iletişim kurmak için Azure AD Kimliklerini kullanır. Bu kimlik, Microsoft Endpoint Manager kullanıma aldıklarında hedeflenen ilkeleri cihazlara dağıtmasını sağlar.
+3. Cihazlar, Endpoint Manager ile iletişim kurmak için Azure AD Kimliklerini kullanır. Bu kimlik, Microsoft Endpoint Manager'nin iade sırasında hedeflenen ilkeleri cihazlara dağıtmasını sağlar.
 
 4. Uç Nokta için Defender, ilkenin durumunu Endpoint Manager'a geri bildirir.
 
@@ -113,17 +113,17 @@ Aşağıdaki tablo, MDE ayarlarını yapılandırabilen ilkelerin farklı senary
 **Uç nokta güvenlik ilkeleri** , kuruluşunuzdaki cihazları korumaya odaklanan güvenlik yöneticileri tarafından kullanılmak üzere tasarlanmış ayrık ayar gruplarıdır.
 
 - **Virüsten koruma** ilkeleri, Uç Nokta için Microsoft Defender bulunan güvenlik yapılandırmalarını yönetir. Bkz. Uç nokta güvenliği için  [virüsten koruma](/mem/intune/protect/endpoint-security-antivirus-policy) ilkesi.
-- **Saldırı yüzeyi azaltma** ilkeleri, kuruluşunuzun siber tehditlere ve saldırılara karşı savunmasız olduğu yerleri en aza indirmeye odaklanır. Daha fazla bilgi için bkz. Windows Tehdit koruması belgelerindeki [saldırı yüzeyi azaltmaya genel bakış](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) ve uç nokta güvenliği için [saldırı yüzeyi azaltma](/mem/intune/protect/endpoint-security-asr-policy) ilkesi.
-- **Uç nokta algılama ve yanıt** (EDR) ilkeleri, neredeyse gerçek zamanlı ve eyleme dönüştürülebilir gelişmiş saldırı algılamaları sağlayan Uç Nokta için Defender özelliklerini yönetir. Güvenlik analistleri EDR yapılandırmalarına bağlı olarak uyarıların önceliklerini etkili bir şekilde belirleyebilir, ihlal kapsamının tamamını görebilir ve tehditleri düzeltmek için yanıt eylemleri gerçekleştirebilir. Bkz. uç nokta güvenliği için [uç noktada algılama ve yanıtlama](/mem/intune/protect/endpoint-security-edr-policy) ilkesi.
+- **Saldırı yüzeyi azaltma** ilkeleri, kuruluşunuzun siber tehditlere ve saldırılara karşı savunmasız olduğu yerleri en aza indirmeye odaklanır. Daha fazla bilgi için Bkz. Windows Tehdit koruması belgelerindeki [saldırı yüzeyi azaltmaya genel bakış](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) ve uç nokta güvenliği için [saldırı yüzeyi azaltma](/mem/intune/protect/endpoint-security-asr-policy) ilkesi.
+- **Uç nokta algılama ve yanıt** (EDR) ilkeleri, neredeyse gerçek zamanlı ve eyleme dönüştürülebilir gelişmiş saldırı algılamaları sağlayan Uç Nokta için Defender özelliklerini yönetir. Güvenlik analistleri EDR yapılandırmalarına bağlı olarak uyarıların önceliklerini etkili bir şekilde belirleyebilir, ihlal kapsamının tamamını görebilir ve tehditleri düzeltmek için yanıt eylemleri gerçekleştirebilir. Bkz [. uç nokta güvenliği için uç nokta algılama ve yanıt](/mem/intune/protect/endpoint-security-edr-policy) ilkesi.
 - **Güvenlik duvarı** ilkeleri, cihazlarınızdaki Defender güvenlik duvarına odaklanır. Uç nokta güvenliği için güvenlik [duvarı](/mem/intune/protect/endpoint-security-firewall-policy) ilkesine bakın.
 - **Güvenlik Duvarı Kuralları** belirli bağlantı noktaları, protokoller, uygulamalar ve ağlar dahil olmak üzere Güvenlik Duvarları için ayrıntılı kurallar yapılandırılır. Uç nokta güvenliği için güvenlik [duvarı](/mem/intune/protect/endpoint-security-firewall-policy) ilkesine bakın.
-- **Güvenlik temelleri**, Defender, Edge veya Windows gibi farklı ürünler için Microsoft tarafından önerilen güvenlik duruşunu tanımlayan önceden yapılandırılmış güvenlik ayarlarını içerir. Varsayılan öneriler ilgili ürün ekiplerindendir ve önerilen güvenli yapılandırmayı cihazlara hızla dağıtmanızı sağlar. Ayarlar her temelde önceden yapılandırılmış olsa da, kuruluşunuzun güvenlik beklentilerini oluşturmak için bunların özelleştirilmiş örneklerini oluşturabilirsiniz. Bkz. Intune için [güvenlik temelleri](/mem/intune/protect/security-baselines).
+- **Güvenlik temelleri** , Defender, Edge veya Windows gibi farklı ürünler için Microsoft tarafından önerilen güvenlik duruşunu tanımlayan önceden yapılandırılmış güvenlik ayarlarını içerir. Varsayılan öneriler ilgili ürün ekiplerindendir ve önerilen güvenli yapılandırmayı cihazlara hızla dağıtmanızı sağlar. Ayarlar her temelde önceden yapılandırılmış olsa da, kuruluşunuzun güvenlik beklentilerini oluşturmak için bunların özelleştirilmiş örneklerini oluşturabilirsiniz. Bkz. Intune için [güvenlik temelleri](/mem/intune/protect/security-baselines).
 
 ## <a name="configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management"></a>Kiracınızı Uç Nokta için Microsoft Defender Güvenlik Yapılandırma Yönetimi'ne destek olacak şekilde yapılandırma
 
 Microsoft Endpoint Manager yönetim merkezi aracılığıyla Uç Nokta için Microsoft Defender güvenlik yapılandırması yönetimini desteklemek için, her konsolun içinden aralarındaki iletişimi etkinleştirmeniz gerekir.
 
-1. [Microsoft 365 Defender portalında](https://security.microsoft.com/) oturum açın ve **Ayarlar** >  **Endpoints****Yapılandırma Yönetimi** > **Zorlama Kapsamı'na** gidin ve güvenlik ayarları yönetimi için platformları  >  etkinleştirin:
+1. [Microsoft 365 Defender portalında](https://security.microsoft.com/) oturum açın ve **Ayarlar** > **Uç Noktaları** > **Yapılandırma Yönetimi** > **Zorlama Kapsamı'na** gidin ve güvenlik ayarları yönetimi için platformları etkinleştirin:
 
    :::image type="content" source="../media/security-settings-mgt.png" alt-text="Defender konsolunda Uç Nokta için Microsoft Defender ayarları yönetimini etkinleştirin.":::
     
@@ -134,14 +134,14 @@ Microsoft Endpoint Manager yönetim merkezi aracılığıyla Uç Nokta için Mic
   > [!TIP]
   > Az sayıda cihazda dağıtımınızı test etmek ve doğrulamak için pilot modu ve uygun cihaz etiketlerini kullanın. Pilot modu kullanılmadan, yapılandırılan kapsama giren tüm cihazlar otomatik olarak kaydedilir.
 
-1. İlgili kullanıcıların Microsoft Endpoint Manager uç nokta güvenlik ayarlarını yönetme izinlerine sahip olduğundan emin olun veya Defender portalında bir rol yapılandırarak bu izinleri verin. **Ayarlar** >  **Roles** > **Öğe ekle'ye** gidin:
+1. İlgili kullanıcıların Microsoft Endpoint Manager uç nokta güvenlik ayarlarını yönetme izinlerine sahip olduğundan emin olun veya Defender portalında bir rol yapılandırarak bu izinleri verin. **Ayarlar** > **Roller** > **Öğe ekle'ye** gidin:
 
    :::image type="content" source="../media/add-role-in-mde.png" alt-text="Defender portalında yeni bir rol oluşturun.":::
 
    > [!TIP]
    > Mevcut rolleri değiştirebilir ve Uç Nokta için Microsoft Defender'de ek roller oluşturmak yerine gerekli izinleri ekleyebilirsiniz
 
-1. Rolü yapılandırırken kullanıcıları ekleyin ve **Microsoft Endpoint Manager'da Uç nokta güvenlik ayarlarını yönet'i seçtiğinizden** emin olun:
+1. Rolü yapılandırırken kullanıcıları ekleyin ve **Microsoft Endpoint Manager uç nokta güvenlik ayarlarını yönet'i** seçtiğinizden emin olun:
 
    :::image type="content" source="../media/add-role.png" alt-text="Kullanıcılara ayarları yönetme izinleri verin.":::
 
@@ -151,18 +151,18 @@ Microsoft Endpoint Manager yönetim merkezi aracılığıyla Uç Nokta için Mic
 
    :::image type="content" source="../media/enable-mde-settings-management-mem.png" alt-text="Microsoft Endpoint Manager yönetim merkezinde Uç Nokta için Microsoft Defender ayarları yönetimini etkinleştirin.":::
 
-   Bu seçeneği *Açık* olarak ayarladığınızda, Microsoft Endpoint Manager tarafından yönetilmeyen Uç Nokta için Microsoft Defender platform kapsamındaki tüm cihazlar Uç Nokta için Microsoft Defender eklemeye hak kazanacaktır.
+   Bu seçeneği *Açık* olarak ayarladığınızda, microsoft Endpoint Manager tarafından yönetilmeyen Uç Nokta için Microsoft Defender platform kapsamındaki tüm cihazlar Uç Nokta için Microsoft Defender eklemeye hak kazanacaktır.
 
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Cihazları Uç Nokta için Microsoft Defender ekleme
 
-Uç Nokta için Microsoft Defender, cihazları eklemek için çeşitli seçenekleri destekler. Geçerli yönergeler için Uç Nokta için Defender belgelerindeki [Windows cihazlar için ekleme araçları ve yöntemleri](/microsoft-365/security/defender-endpoint/security-config-management) bölümüne bakın.
+Uç Nokta için Microsoft Defender, cihazları eklemek için çeşitli seçenekleri destekler. Geçerli yönergeler için Uç Nokta için Defender belgelerindeki [Windows cihazları için ekleme araçları ve yöntemleri](/microsoft-365/security/defender-endpoint/security-config-management) bölümüne bakın.
 
 
 
 ## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager ile birlikte yaşama
 Bazı ortamlarda, [Configuration Manager kiracı iliştirilmiş](/mem/configmgr/tenant-attach/endpoint-security-get-started) Uç Nokta için Microsoft Defender için Güvenlik Yönetimi'nin kullanılması istenebilir. Her ikisini de kullanırsanız, birden fazla kanal kullanmak çakışmalar ve istenmeyen sonuçlar için fırsat oluşturduğundan, ilkeyi tek bir kanal üzerinden denetlemeniz gerekir.
 
-Bunu desteklemek için *, Configuration Manager seçeneğini Kapalı olarak değiştirerek Güvenlik ayarlarını yapılandırın*.  [Microsoft 365 Defender portalında](https://security.microsoft.com/) oturum açın ve **Ayarlar** >  **Endpoints** > **Yapılandırma Yönetimi** > **Zorlama Kapsamı'na** gidin:
+Bunu desteklemek için *, Configuration Manager seçeneğini Kapalı olarak değiştirerek Güvenlik ayarlarını yapılandırın*.  [Microsoft 365 Defender portalında](https://security.microsoft.com/) oturum açın ve **Ayarlar** > **Uç Noktaları** > **Yapılandırma Yönetimi** > **Zorlama Kapsamı'na** gidin:
 
 :::image type="content" source="../media/manage-security-settings-cfg-mgr.png" alt-text="Configuration Manager ayarını kullanarak güvenlik ayarlarını yönetin.":::
 
@@ -176,7 +176,7 @@ Cihazlar Uç Nokta için Defender'a eklendikten sonra, Uç Nokta için Microsoft
 
 Uç Nokta için Microsoft Defender kaydedilmiş ancak Intune veya Configuration Manager tarafından yönetilmeyen cihazları tanımlamak için:
 
-1. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) oturum açın.
+1. [Microsoft Endpoint Manager yönetim merkezinde oturum](https://go.microsoft.com/fwlink/?linkid=2109431) açın.
 
 2. **Cihazlar** > **Tüm cihazlar'a** gidin ve ardından cihazların görünümünü sıralamak için **Yönetilen** sütununu seçin.
 
@@ -210,19 +210,19 @@ Uç Nokta için Microsoft Defender tarafından yönetilen cihazları içeren bir
 3. Aşağıdaki özellikleri veya seçtiğiniz ilke türünü girin:
 
    - Virüsten koruma ilkesi için şunları seçin:
-     - Platform: **Windows 10, Windows 11 ve Windows Sunucusu (Önizleme)**
+     - Platform: **Windows 10, Windows 11 ve Windows Server (Önizleme)**
      - Profil: **Microsoft Defender Virüsten Koruma (Önizleme)**
 
    - Güvenlik duvarı ilkesi için şunları seçin:
-     - Platform: **Windows 10, Windows 11 ve Windows Sunucusu (Önizleme)**
+     - Platform: **Windows 10, Windows 11 ve Windows Server (Önizleme)**
      - Profil: **Microsoft Defender Güvenlik Duvarı (Önizleme)**
 
    - Güvenlik Duvarı Kuralları ilkesi için şunları seçin:
-     - Platform: **Windows 10, Windows 11 ve Windows Sunucusu (Önizleme)**
+     - Platform: **Windows 10, Windows 11 ve Windows Server (Önizleme)**
      - Profil: **Microsoft Defender Güvenlik Duvarı Kuralları (Önizleme)**
 
    - Uç Nokta Algılama ve Yanıt ilkesi için şunları seçin:
-     - Platform: **Windows 10, Windows 11 ve Windows Sunucusu (Önizleme)**
+     - Platform: **Windows 10, Windows 11 ve Windows Server (Önizleme)**
      - Profil: **Uç nokta algılama ve yanıt (Önizleme)**
 
    >[!Note]

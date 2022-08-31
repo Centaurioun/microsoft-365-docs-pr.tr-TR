@@ -3,8 +3,8 @@ title: Otomatik araştırmanın ayrıntıları ve sonuçları
 description: otomatik araştırmanın sonuçlarını ve önemli bulgularını Microsoft 365 Defender
 keywords: otomatik, araştırma, sonuçlar, analiz, ayrıntılar, düzeltme, otomatik hava aracı
 search.appverid: met150
-ms.prod: m365-security
-ms.technology: m365d
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -24,12 +24,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 591c7a8aca882c0674eaa3ba4b3eacc89817e859
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: be8cdaf9912c9039f9eb12ae7555a0052e8e502e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388627"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481404"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Otomatik araştırmanın ayrıntıları ve sonuçları
 

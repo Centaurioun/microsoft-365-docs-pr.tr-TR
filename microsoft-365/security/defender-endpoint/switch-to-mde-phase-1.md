@@ -1,7 +1,7 @@
 ---
-title: Pertahanan Microsoft untuk Titik Akhir geçiş yapma - Hazırlama
-description: Pertahanan Microsoft untuk Titik Akhir geçiş yapmaya hazırlanın. Cihazlarınızı güncelleştirin ve ağ bağlantılarınızı yapılandırın.
-keywords: geçiş, Pertahanan Microsoft untuk Titik Akhir, en iyi uygulama
+title: Uç Nokta için Microsoft Defender geçiş yapma - Hazırlama
+description: Uç Nokta için Microsoft Defender geçiş yapmaya hazır olun. Cihazlarınızı güncelleştirin ve ağ bağlantılarınızı yapılandırın.
+keywords: geçiş, Uç Nokta için Microsoft Defender, en iyi uygulama
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -15,25 +15,24 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
-- m365solution-mcafeemigrate
-- m365solution-symantecmigrate
+- highpri
 ms.topic: article
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: c08ab1c96adc2b9d83cc6869573f2f0dbe75ac78
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 269e9023f18ab028a15f561841b4b46ecb8ce311
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782929"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481470"
 ---
-# <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Pertahanan Microsoft untuk Titik Akhir Geçiş - 1. Aşama: Hazırlama
+# <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Uç Nokta için Microsoft Defender Geçiş - 1. Aşama: Hazırlama
 
 **Şunlar için geçerlidir:**
-- [Pertahanan Microsoft untuk Titik Akhir Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -52,7 +51,7 @@ Bu geçiş aşaması aşağıdaki adımları içerir:
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>Güncelleştirmeleri kuruluşunuzun cihazlarına alma ve dağıtma
 
-En iyi uygulama olarak, kuruluşunuzun cihazlarını ve uç noktalarını güncel tutun. Mevcut uç nokta koruma ve virüsten koruma çözümünüzün güncel olduğundan ve kuruluşunuzun işletim sistemleriyle uygulamalarının da en son güncelleştirmelere sahip olduğundan emin olun. Bunu şimdi yapmak, uç nokta ve Microsoft Defender Virüsten Koruma için Defender'a geçiş yaparken daha sonra sorunları önlemeye yardımcı olabilir.
+En iyi uygulama olarak, kuruluşunuzun cihazlarını ve uç noktalarını güncel tutun. Mevcut uç nokta koruma ve virüsten koruma çözümünüzün güncel olduğundan ve kuruluşunuzun işletim sistemleriyle uygulamalarının da en son güncelleştirmelere sahip olduğundan emin olun. Bunu şimdi yapmak, daha sonra Uç Nokta için Defender ve Microsoft Defender Virüsten Koruma'ya geçiş yaparken sorunların önlenmesine yardımcı olabilir.
 
 ### <a name="make-sure-your-existing-solution-is-up-to-date"></a>Mevcut çözümünüzün güncel olduğundan emin olun
 
@@ -64,7 +63,7 @@ Yardıma mı ihtiyacınız var? Çözüm sağlayıcınızın belgelerine bakın.
 
 Kuruluşunuzun cihazlarını güncelleştirmek için yardıma mı ihtiyacınız var? Aşağıdaki kaynaklara bakın:
 
-|OS|Kaynak|
+|Os|Kaynak|
 |---|---|
 |Windows|[Microsoft Update](https://www.update.microsoft.com)|
 |macOS|[Mac bilgisayarınızda yazılımı güncelleştirme](https://support.apple.com/HT201541)|
@@ -72,7 +71,7 @@ Kuruluşunuzun cihazlarını güncelleştirmek için yardıma mı ihtiyacınız 
 |Android|[Android sürümünüzü denetleme & güncelleştirme](https://support.google.com/android/answer/7680439)|
 |Linux|[Linux 101: Sisteminizi Güncelleştirme](https://www.linux.com/training-tutorials/linux-101-updating-your-system)|
 
-## <a name="get-microsoft-defender-for-endpoint"></a>Pertahanan Microsoft untuk Titik Akhir alma
+## <a name="get-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender edinin
 
 Kuruluşunuzun cihazlarını güncelleştirdiğinize göre, sonraki adım Uç Nokta için Defender'ı almak, lisans atamak ve hizmetin sağlandığından emin olmaktır.
 
@@ -116,13 +115,13 @@ Cihazlarınız ile Uç Nokta için Defender arasında iletişimi etkinleştirmek
 |Yetenek -lerini|İşletim Sistemi|Kaynaklar|
 |---|---|---|
 |[Uç nokta algılama ve yanıt](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information) veya üzeri<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 veya üzeri](/windows-server/get-started/whats-new-in-windows-server-1803)<br/><br/>[Windows Server 2016*](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Makine ara sunucusu ve internet bağlantısı ayarlarını yapılandırma](configure-proxy-internet.md)|
-|EDR [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Ara sunucu ve internet bağlantısı ayarlarını yapılandırma](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
-|EDR|macOS (bkz [. Sistem gereksinimleri](microsoft-defender-endpoint-mac.md)|[macOS'ta Uç Nokta için Defender: Ağ bağlantıları](microsoft-defender-endpoint-mac.md#network-connections)|
+|EDR[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Ara sunucu ve internet bağlantısı ayarlarını yapılandırma](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
+|Edr|macOS (bkz [. Sistem gereksinimleri](microsoft-defender-endpoint-mac.md)|[macOS'ta Uç Nokta için Defender: Ağ bağlantıları](microsoft-defender-endpoint-mac.md#network-connections)|
 |[Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 veya üzeri](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Microsoft Defender Virüsten Koruma ağ bağlantılarını yapılandırın ve doğrulayın](configure-network-connections-microsoft-defender-antivirus.md)|
 |Antivirus|macOS (bkz [. Sistem gereksinimleri](microsoft-defender-endpoint-mac.md)|[macOS'ta Uç Nokta için Defender: Ağ bağlantıları](microsoft-defender-endpoint-mac.md#network-connections)|
 |Antivirus|Linux (bkz [. Sistem gereksinimleri](microsoft-defender-endpoint-linux.md#system-requirements))|[Linux'ta Uç Nokta için Defender: Ağ bağlantıları](microsoft-defender-endpoint-linux.md#network-connections)|
 
-*Windows Server 2012 R2 ve 2016 için modern, birleşik çözümün yüklenmesini gerektirir. Daha fazla bilgi için bkz. [Windows sunucularını Pertahanan Microsoft untuk Titik Akhir hizmetine ekleme](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
+*Windows Server 2012 R2 ve 2016 için modern, birleşik çözümün yüklenmesini gerektirir. Daha fazla bilgi için bkz. [Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
 ## <a name="next-step"></a>Sonraki adım
 

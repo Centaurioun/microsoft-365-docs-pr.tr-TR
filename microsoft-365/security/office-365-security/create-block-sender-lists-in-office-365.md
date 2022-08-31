@@ -12,80 +12,80 @@ ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 search.appverid:
 - MET150s
-description: Yöneticiler, EOP'de (EOP) gelen iletileri engellemek için kullanılabilen ve tercih Exchange Online Protection bilgi edinebilirsiniz.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: bf47fd7723bc1fe9cdef1b57cf16e1948112e749
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Yöneticiler, Exchange Online Protection (EOP) içinde gelen iletileri engellemek için kullanılabilir ve tercih edilen seçenekler hakkında bilgi edinebilir.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: a8abd50deb509564acb6646dc0732bf4a61b6cfd
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675658"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481426"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>EOP'de engellenen gönderen listeleri oluşturma
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Geçerli olduğu yer:**
+**Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [1. plan Office 365 plan 2 için Microsoft Defender](defender-for-office-365.md)
+- [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-EOP Microsoft 365 posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutusu Exchange Online kuruluşlarda, EOP istenmeyen gönderenlerden gelen e-postaları engellemek için çeşitli yollar sunar. Bu seçenekler Outlook Engellenen Gönderenler, istenmeyen posta önleme ilkelerinde engellenen gönderenler listeleri veya engellenen etki alanı listelerini, Exchange akış kurallarını (aktarım kuralları olarak da bilinir) ve IP Engelleme Listesini (bağlantı filtreleme) içerir. Toplu olarak, bu seçenekleri engellenen gönderen listeleri _olarak düşünebilirsiniz_.
+Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarında EOP, istenmeyen gönderenlerden gelen e-postaları engellemenin birden çok yolunu sunar. Bu seçenekler outlook engellenen gönderenler, engellenen gönderen listeleri veya istenmeyen posta önleme ilkelerindeki engellenen etki alanı listeleri, Exchange posta akışı kuralları (aktarım kuralları olarak da bilinir) ve IP Engelleme Listesi 'ni (bağlantı filtreleme) içerir. Bu seçenekleri toplu olarak _engellenen gönderen listeleri_ olarak düşünebilirsiniz.
 
-Gönderenleri engellemenin en iyi yöntemi etki kapsamına göre değişir. Tek bir kullanıcı için, doğru çözüm Engellenen Outlook olabilir. Birçok kullanıcı için, diğer seçeneklerden biri daha uygun olacaktır. Aşağıdaki seçenekler hem etki kapsamına hem de ekmek seçeneğine göre sıralandı. Liste dar görüşten genişe doğru ilerler, _ancak tam öneriler_ için özel bilgileri okuyun.
+Gönderenleri engellemek için en iyi yöntem etki kapsamına göre değişir. Tek bir kullanıcı için doğru çözüm Outlook Engellenen Gönderenler olabilir. Birçok kullanıcı için diğer seçeneklerden biri daha uygun olacaktır. Aşağıdaki seçenekler hem etki kapsamına hem de kapsama göre sıralanır. Liste dardan genişe doğru gider, ancak tam öneriler için _ayrıntıları okuyun_ .
 
-1. Outlook Gönderenler listesi (her posta kutusunda depolanan Engellenen Gönderenler listesi)
+1. Outlook Engellenen Gönderenler (her posta kutusunda depolanan Engellenen Gönderenler listesi)
 
-2. Engellenen gönderenler listeleri veya engellenen etki alanı listeleri (istenmeyen posta önleme ilkeleri)
+2. Engellenen gönderen listeleri veya engellenen etki alanı listeleri (istenmeyen posta önleme ilkeleri)
 
-3. Posta akış kuralları
+3. Posta akışı kuralları
 
-4. IP Engelleme Listesi (bağlantı filtreleme)
-
-> [!NOTE]
-> Kuruluş genelinde hatalı negatif sonuçları (istenmeyen posta yanıtsız) ele alırken, bu iletileri çözümleme için Microsoft'a da göndermeniz gerekir. Engelleme listelerini kullanarak hatalı negatifleri yönetmek, yönetim yükünü önemli ölçüde artırır. Cevapsız istenmeyen postaları engellemek için engelleme listelerini kullanırsanız İletileri ve dosyaları Microsoft'a bildirme [konusunu](report-junk-email-messages-to-microsoft.md) hazır tutmanız gerekir.
-
-Buna karşılık, güvenilir gönderen listelerini kullanarak belirli kaynaklardan gelen e-postalara her zaman izin vermek için çeşitli _seçenekleriniz vardır_. Daha fazla bilgi için bkz [. Güvenilir gönderen listeleri oluşturma](create-safe-sender-lists-in-office-365.md).
-
-## <a name="email-message-basics"></a>E-posta iletisiyle ilgili temel bilgiler
-
-Standart SMTP e-posta iletisi, ileti _zarfı ve ileti_ içeriğilerinden oluşur. İleti zarfı, iletiyi SMTP sunucuları arasında ileterek teslim etmek için gereken bilgileri içerir. İleti içeriği, ileti üst bilgisi alanlarını (toplu olarak _ileti üst bilgisi_ denir) ve ileti gövdeyi içerir. İleti zarfı RFC 5321'de ve ileti üst bilgisi de RFC 5322'de açıklanmıştır. alıcılar hiçbir zaman gerçek ileti zarfını görmez, çünkü ileti iletim süreci tarafından oluşturulur ve aslında iletinin bir parçası değildir.
-
-- Adres `5321.MailFrom` (MAIL **FROM** adresi, P1 göndereni veya zarf gönderen olarak da bilinir), iletinin SMTP iletiminde kullanılan e-posta adresidir. Bu **e-posta** adresi normalde ileti üst bilgisinde Dönüş Yolu üst bilgi alanına kaydedilir (ancak gönderen farklı bir **Dönüş Yolu e-posta** adresi ataması mümkündür). İleti teslim edilene kadar teslim edileme raporunun (NDR veya geri dönen ileti olarak da bilinir) alıcısı olur.
-
-- Gönderen `5322.From` adresi veya P2 göndereni olarak da bilinir), Gönderen üst bilgisi alanında yer alan e-posta adresidir ve e-posta istemcisinde görüntülenen gönderenin e-posta adresidir. 
-
-Genellikle, adresler `5321.MailFrom` `5322.From` ve adresler aynıdır (kişiler arasında iletişim). Bununla birlikte, başka biri adına e-posta gönderi olduğunda, adresler farklı olabilir.
-
-EOP'de istenmeyen posta önleme ilkelerinde engellenen gönderenler listeleri ve engellenen etki alanı listeleri hem adresleri hem de adresleri `5321.MailFrom` `5322.From` inceler. Outlook Gönderenler yalnızca adresi `5322.From` kullanır.
-
-## <a name="use-outlook-blocked-senders"></a>Engellenen Outlook'i kullanma
-
-Yalnızca az sayıda kullanıcı istenmeyen e-posta aldıklarında, kullanıcılar veya yöneticiler posta kutusunda gönderenin e-posta adreslerini Engellenen Gönderenler listesine ekleyebilir. Yönergeler için bkz. [Posta kutularına gereksiz e-Exchange Online yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md).
-
-Bir kullanıcının Engellenen Gönderenler listesi nedeniyle iletiler başarıyla engel olduğunda, **X-Forefront-Antispam-Report** üst bilgi alanı değeri içerir `SFV:BLK`.
+4. IP Blok Listesi (bağlantı filtreleme)
 
 > [!NOTE]
-> İstenmeyen iletiler saygın ve tanınan bir kaynaktan gelen bültenlerse, kullanıcının iletileri almalarını durdurmanın bir diğer seçeneği de e-postadan abonelikten çıkmaktır.
+> Hatalı negatifleri (cevapsız istenmeyen postaları) gidermek için kuruluş genelinde blok ayarlarını kullanabilirsiniz ancak bu iletileri analiz için Microsoft'a da göndermelisiniz. Blok listelerini kullanarak hatalı negatifleri yönetmek, yönetim ek yükünüzü önemli ölçüde artırır. Kaçırılan istenmeyen postaları saptırmak için blok listeleri kullanıyorsanız [İletileri ve dosyaları Microsoft'a bildirme](report-junk-email-messages-to-microsoft.md) konusunu hazır tutmanız gerekir.
 
-## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Engellenen gönderenler listelerini veya engellenen etki alanı listelerini kullanma
+Buna karşılık, _güvenilir gönderen listelerini_ kullanarak belirli kaynaklardan gelen e-postalara her zaman izin vermek için çeşitli seçenekleriniz de vardır. Daha fazla bilgi için bkz. [Güvenilir gönderen listeleri oluşturma](create-safe-sender-lists-in-office-365.md).
 
-Birden çok kullanıcı etki durumdayken kapsam daha geniştir, bu nedenle bir sonraki en iyi seçenek istenmeyen posta önleme ilkelerinde engellenen gönderen listeleri veya engellenen etki alanı listeleridir. Listelerde yer alan gönderenlerden gelen iletiler İstenmeyen **Posta olarak işaretlenir** (Yüksek güveni olmayan istenmeyen posta **değil) ve** İstenmeyen  posta filtresi kararı için yapılandırmış olduğunuz eylem iletiye alınır. Daha fazla bilgi için bkz [. İstenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md).
+## <a name="email-message-basics"></a>İletinin temellerini Email
 
-Bu listeler için en yüksek sınır yaklaşık 1000 girdidir.
+Standart smtp e-posta iletisi, _ileti zarfı ve ileti_ içeriğinden oluşur. İleti zarfı, iletiyi SMTP sunucuları arasında iletmek ve teslim etmek için gereken bilgileri içerir. İleti içeriği, ileti üst bilgisi alanlarını (topluca _ileti üst bilgisi_ olarak adlandırılır) ve ileti gövdesini içerir. İleti zarfı RFC 5321'de ve ileti üst bilgisi RFC 5322'de açıklanmıştır. İleti iletim işlemi tarafından oluşturulduğundan ve iletinin bir parçası olmadığından alıcılar gerçek ileti zarfını asla görmez.
 
-## <a name="use-mail-flow-rules"></a>Posta akış kurallarını kullanma
+- Adres `5321.MailFrom` ( **POSTA KIMDEN** adresi, P1 gönderen veya zarf gönderen olarak da bilinir), iletinin SMTP iletiminde kullanılan e-posta adresidir. Bu **e-posta** adresi genellikle ileti üst bilgisindeki Dönüş Yolu üst bilgisi alanına kaydedilir (ancak gönderenin farklı bir **Dönüş Yolu e-posta** adresi belirlemesi mümkündür). İleti teslim edilemiyorsa, teslim edilemedi raporunun alıcısıdır (NDR veya geri dönen ileti olarak da bilinir).
 
-Belirli kullanıcılara veya kuruluşun tamamına gönderilen iletileri engellemeniz gerekirse, posta akışı kurallarını kullanabilirsiniz. Posta akış kuralları, istenmeyen iletilerde anahtar sözcükleri veya diğer özellikleri de arama yapabilecekleri için, engellenen gönderen listelerine veya engellenen gönderen etki alanı listelerine göre daha esnektir.
+- `5322.From` (**Kimden** adresi veya P2 göndereni olarak da bilinir) **Kimden** üst bilgisi alanındaki e-posta adresidir ve gönderenin e-posta istemcilerinde görüntülenen e-posta adresidir.
 
-İletileri tanımlamak için hangi koşulları veya özel durumları kullanırsanız kullanın, eylemi iletinin istenmeyen posta güven düzeyi (SCL) 9 olarak (SCL) ayarlanacak şekilde yapılandırmış ve bu da iletiyi Yüksek güven düzeyinde istenmeyen posta olarak **işaretler.** Daha fazla bilgi için bkz [. İletilerde SCL'i ayarlamak için posta akışı kurallarını kullanma](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+Ve adresleri sıklıkla `5321.MailFrom` `5322.From` aynıdır (kişiden kişiye iletişim). Ancak, başka biri adına e-posta gönderildiğinde, adresler farklı olabilir.
+
+EOP'de istenmeyen posta önleme ilkelerinde engellenen gönderen listeleri ve engellenen etki alanı listeleri hem hem de `5321.MailFrom` `5322.From` adreslerini inceler. Outlook Engellenen Gönderenler yalnızca adresi kullanır `5322.From` .
+
+## <a name="use-outlook-blocked-senders"></a>Outlook Engellenen Gönderenleri kullanma
+
+Yalnızca az sayıda kullanıcı istenmeyen e-posta aldığında, kullanıcılar veya yöneticiler gönderen e-posta adreslerini posta kutusunda Engellenen Gönderenler listesine ekleyebilir. Yönergeler için bkz[. Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md).
+
+bir kullanıcının Engellenen Gönderenler listesi nedeniyle iletiler başarıyla engellendiğinde, **X-Forefront-Antispam-Report** üst bilgi alanı değerini `SFV:BLK`içerir.
+
+> [!NOTE]
+> İstenmeyen iletiler saygın ve tanınabilir bir kaynaktan gelen bültenlerse, kullanıcının iletileri almasını durdurmak için e-postadan abonelikten çıkmak da başka bir seçenektir.
+
+## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Engellenen gönderen listelerini veya engellenen etki alanı listelerini kullanma
+
+Birden çok kullanıcı etkilendiğinde kapsam daha geniştir, bu nedenle bir sonraki en iyi seçenek istenmeyen posta önleme ilkelerinde engellenen gönderen listeleri veya engellenen etki alanı listeleridir. Listelerdeki gönderenlerden gelen iletiler **İstenmeyen Posta** ( **Yüksek güvenilirlikli istenmeyen posta** değil) olarak işaretlenir ve iletide **İstenmeyen posta** filtresi kararı için yapılandırdığınız eylem gerçekleştirilen eylemdir. Daha fazla bilgi için bkz. [İstenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md).
+
+Bu listeler için en yüksek sınır yaklaşık 1000 giriştir.
+
+## <a name="use-mail-flow-rules"></a>Posta akışı kurallarını kullanma
+
+Belirli kullanıcılara veya kuruluşun tamamına gönderilen iletileri engellemeniz gerekiyorsa, posta akışı kurallarını kullanabilirsiniz. Posta akışı kuralları, istenmeyen iletilerde anahtar sözcükleri veya diğer özellikleri de arayabildiği için engellenen gönderen listelerinden veya engellenen gönderen etki alanı listelerinden daha esnektir.
+
+İletileri tanımlamak için kullandığınız koşullar veya özel durumlar ne olursa olsun, eylemi iletinin istenmeyen posta güvenilirlik düzeyini (SCL) 9 olarak ayarlayacak şekilde yapılandırabilirsiniz ve bu da iletiyi **Yüksek güvenilirlikli istenmeyen posta** olarak işaretler. Daha fazla bilgi için bkz. [İletilerde SCL'yi ayarlamak için posta akışı kurallarını kullanma](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 > [!IMPORTANT]
-> Aşırı agresif kurallar oluşturmak kolaydır, dolayısıyla yalnızca engellemek  istediğiniz iletileri, çok özel ölçütler kullanarak tanımlamanız önemlidir. Ayrıca, her şeyin beklendiği gibi olduğundan emin olmak için kuralda denetimi etkinleştirmeyi ve kuralın sonuçlarını sınayın.
+> Aşırı _agresif kurallar_ oluşturmak kolaydır, bu nedenle yalnızca engellemek istediğiniz iletileri çok özel ölçütler kullanarak tanımlamanız önemlidir. Ayrıca, her şeyin beklendiği gibi çalıştığından emin olmak için kural üzerinde denetimi etkinleştirdiğinizden ve kuralın sonuçlarını test edin.
 
-## <a name="use-the-ip-block-list"></a>IP Engelleme Listesini kullanma
+## <a name="use-the-ip-block-list"></a>IP Bloğu Listesini Kullanma
 
-Göndereni engellemek için diğer seçeneklerden birini kullanmak mümkün değilken _, yalnızca_ bağlantı filtresi ilkesinde IP Engelleme Listesi'ne sahipseniz kullanın. Daha fazla bilgi için bkz [. Bağlantı filtresi ilkesi yapılandırma](configure-the-connection-filter-policy.md). Engellenen IP'lerin sayısını en az düzeyde tutmanız önemlidir, bu nedenle IP adresi aralıklarının tamamının _engellenmesi_ önerilmez.
+Bir göndereni engellemek için diğer seçeneklerden birini kullanmak mümkün olmadığında, _bağlantı_ filtresi ilkesinde IP Engelleme Listesi'ni kullanmanız gerekir. Daha fazla bilgi için bkz [. Bağlantı filtresi ilkesini yapılandırma](configure-the-connection-filter-policy.md). Engellenen IP'lerin sayısını en az düzeyde tutmak önemlidir, bu nedenle IP adresi aralıklarının tamamının engellenmesi _önerilmez._
 
-Özellikle _tüketici_ hizmetleriyle (örneğin, outlook.com) veya paylaşılan altyapılara ait IP adresi aralıklarını eklemekten kaçınmalı ve ayrıca düzenli bakım kapsamında engellenen IP adresleri listesini gözden geçirmeyi sağ özellikle belirtebilirsiniz.
+_Özellikle_ tüketici hizmetlerine (örneğin, outlook.com) veya paylaşılan altyapılara ait IP adresi aralıkları eklemekten kaçınmanız ve ayrıca düzenli bakım kapsamında engellenen IP adreslerinin listesini gözden geçirmeniz gerekir.

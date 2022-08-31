@@ -1,10 +1,11 @@
 ---
-title: Gelişmiş av şemasında IdentityDirectoryEvents tablosu
-description: Gelişmiş av şemasının IdentityDirectoryEvents tablosunda etki alanı denetleyicisi ve Active Directory olayları hakkında bilgi
-keywords: gelişmiş av, tehdit avı, siber tehdit avı, Microsoft 365 Defender, Microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, IdentityDirectoryEvents, etki alanı denetleyicisi, Active Directory, Kimlik için Microsoft Defender, kimlikler
+title: Gelişmiş tehdit avcılığı şemasında IdentityDirectoryEvents tablosu
+description: Gelişmiş tehdit avcılığı şemasının IdentityDirectoryEvents tablosunda etki alanı denetleyicisi ve Active Directory olayları hakkında bilgi edinin
+keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, IdentityDirectoryEvents, etki alanı denetleyicisi, Active Directory, Kimlik için Microsoft Defender, kimlikler
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,59 +18,58 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b7d880e0865ebeaf09e40fc543abba37566d2081
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 9665ff301396d9b3c4f31ed51f17ffbd45f06113
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63019043"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481316"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-Gelişmiş `IdentityDirectoryEvents` arama [şemasında,](advanced-hunting-overview.md) Active Directory (AD) çalıştıran bir şirket içi etki alanı denetleyicisini içeren olaylar yer alır. Bu tablo, parola değişiklikleri, parola süre sonu ve kullanıcı asıl adı (UPN) değişiklikleri gibi kimlikle ilgili çeşitli olayları yakalar. Ayrıca, görevlerin zamanlaması ve PowerShell etkinliği gibi etki alanı denetleyicisinde sistem olaylarını da yakalar. Bu tablodan bilgi dönüşen sorgular oluşturmak için bu başvuruyu kullanın.
+`IdentityDirectoryEvents` [Gelişmiş tehdit avcılığı](advanced-hunting-overview.md) şemasındaki tablo, Active Directory (AD) çalıştıran şirket içi etki alanı denetleyicisini içeren olayları içerir. Bu tablo parola değişiklikleri, parola süre sonu ve kullanıcı asıl adı (UPN) değişiklikleri gibi kimlikle ilgili çeşitli olayları yakalar. Ayrıca, görevlerin zamanlanması ve PowerShell etkinliği gibi etki alanı denetleyicisindeki sistem olaylarını yakalar. Bu tablodan bilgi döndüren sorgular oluşturmak için bu başvuruyu kullanın.
 
 >[!TIP]
-> Tablo tarafından desteklenen olay türleri (`ActionType` değerler) hakkında ayrıntılı bilgi için, Bulut için Defender'da bulunan yerleşik şema başvurularını kullanın.
+> Bir tablo tarafından desteklenen olay türleri (`ActionType` değerler) hakkında ayrıntılı bilgi için Bulut için Defender'da bulunan yerleşik şema başvurusunu kullanın.
 
-Gelişmiş av şemasında yer alan diğer tablolar hakkında bilgi için bkz [. gelişmiş av başvurusu](advanced-hunting-schema-tables.md).
+Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi için [gelişmiş avcılık başvurusuna bakın](advanced-hunting-schema-tables.md).
 
 | Sütun adı | Veri türü | Açıklama |
 |-------------|-----------|-------------|
-| `Timestamp` | `datetime` | Etkinliğin kaydedl olduğu tarih ve saat |
-| `ActionType` | `string` | Olayı tetikleyen etkinlik türü. Ayrıntılar için [portal şeması başvurusuna](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) bakın |
+| `Timestamp` | `datetime` | Olayın kaydedilildiği tarih ve saat |
+| `ActionType` | `string` | Olayı tetikleyen etkinlik türü. Ayrıntılar için [bkz. portal içi şema başvurusu](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
 | `Application` | `string` | Kaydedilen eylemi gerçekleştiren uygulama |
-| `TargetAccountUpn` | `string` | Kayıtlı eylemin uygulandığı hesabın kullanıcı asıl adı (UPN) |
+| `TargetAccountUpn` | `string` | Kaydedilen eylemin uygulandığı hesabın kullanıcı asıl adı (UPN) |
 | `TargetAccountDisplayName` | `string` | Kaydedilen eylemin uygulandığı hesabın görünen adı |
 | `TargetDeviceName` | `string` | Kaydedilen eylemin uygulandığı cihazın tam etki alanı adı (FQDN) |
-| `DestinationDeviceName` | `string` | Kaydedilen eylemi işlenen sunucu uygulamasını çalıştıran cihazın adı |
-| `DestinationIPAddress` | `string` | Kaydedilen eylemi işlenen sunucu uygulamasını çalıştıran cihazın IP adresi |
+| `DestinationDeviceName` | `string` | Kaydedilen eylemi işleyen sunucu uygulamasını çalıştıran cihazın adı |
+| `DestinationIPAddress` | `string` | Kaydedilen eylemi işleyen sunucu uygulamasını çalıştıran cihazın IP adresi |
 | `DestinationPort` | `string` | Etkinliğin hedef bağlantı noktası |
 | `Protocol` | `string` | İletişim sırasında kullanılan protokol |
 | `AccountName` | `string` | Hesabın kullanıcı adı |
 | `AccountDomain` | `string` | Hesabın etki alanı |
 | `AccountUpn` | `string` | Hesabın kullanıcı asıl adı (UPN) |
 | `AccountSid` | `string` | Hesabın Güvenlik Tanımlayıcısı (SID) |
-| `AccountObjectId` | `string` | Hesap için benzersiz bir tanımlayıcı Azure Active Directory |
-| `AccountDisplayName` | `string` | Adres defteri'de görüntülenen hesap kullanıcı adı. Normalde, belirli bir veya ad, ortadaki bir başlatma ve soyadı veya surname bileşimidir. |
+| `AccountObjectId` | `string` | Azure Active Directory'de hesabın benzersiz tanımlayıcısı |
+| `AccountDisplayName` | `string` | Adres defterinde görüntülenen hesap kullanıcısının adı. Genellikle belirli bir adın veya adın, ikinci bir başlatmanın ve soyadının veya soyadının birleşimidir. |
 | `DeviceName` | `string` | Cihazın tam etki alanı adı (FQDN) |
 | `IPAddress` | `string` | İletişim sırasında cihaza atanan IP adresi |
 | `Port` | `string` | İletişim sırasında kullanılan TCP bağlantı noktası |
-| `Location` | `string` | Etkinlikle ilişkilendirilmiş şehir, ülke veya başka bir coğrafi konum |
+| `Location` | `string` | Etkinlikle ilişkili şehir, ülke veya diğer coğrafi konum |
 | `ISP` | `string` | IP adresiyle ilişkilendirilmiş İnternet servis sağlayıcısı |
-| `ReportId` | `long` | Olay için benzersiz tanımlayıcı |
-| `AdditionalFields` | `string` | Varlık veya olay hakkında ek bilgiler |
+| `ReportId` | `long` | Olayın benzersiz tanımlayıcısı |
+| `AdditionalFields` | `string` | Varlık veya olay hakkında ek bilgi |
 
 ## <a name="related-topics"></a>İlgili konular
-- [Gelişmiş ava genel bakış](advanced-hunting-overview.md)
-- [Sorgu dilini öğrenme](advanced-hunting-query-language.md)
-- [Paylaşılan sorguları kullanma](advanced-hunting-shared-queries.md)
-- [Cihazlar, e-postalar, uygulamalar ve kimlikler arasında iş avı](advanced-hunting-query-emails-devices.md)
-- [Şemayı anlama](advanced-hunting-schema-tables.md)
-- [Sorguyla ilgili en iyi yöntemleri uygulama](advanced-hunting-best-practices.md)
+- [Gelişmiş avcılığa genel bakış](advanced-hunting-overview.md)
+- [Sorgu dilini öğrenin](advanced-hunting-query-language.md)
+- [Paylaşılan sorguları kullanın](advanced-hunting-shared-queries.md)
+- [Cihazlar, e-postalar, uygulamalar ve kimlikler arasında avlayın](advanced-hunting-query-emails-devices.md)
+- [Şemayı anlayın](advanced-hunting-schema-tables.md)
+- [Sorgu en iyi yöntemlerini uygulayın](advanced-hunting-best-practices.md)

@@ -1,5 +1,5 @@
 ---
-title: otomatik araştırmanın sonuçlarını Microsoft 365
+title: Microsoft 365'te otomatik araştırmanın sonuçlarını görüntüleme
 keywords: AIR, autoIR, Uç Nokta için Microsoft Defender, otomatik, araştırma, düzeltme, eylemler
 f1.keywords:
 - NOCSH
@@ -15,18 +15,18 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft 365'da otomatik bir araştırma sırasında ve sonrasında sonuçları ve önemli bulguları görüntüleyebilirsiniz.
+description: Microsoft 365'te otomatik bir araştırma sırasında ve sonrasında sonuçları ve önemli bulguları görüntüleyebilirsiniz.
 ms.date: 01/29/2021
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 6e3234168383a0dad6d8a9de3fb680b27b7ce6cb
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 75700ed2c5eaa197750cf8634ccbdeadf0ee204e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139705"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481558"
 ---
-# <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365'da otomatik araştırmanın ayrıntıları ve sonuçları
+# <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365'te otomatik araştırmanın ayrıntıları ve sonuçları
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -66,7 +66,7 @@ Araştırma durumu, analizin ve eylemlerin ilerleme durumunu gösterir. Araştı
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>Araştırmayla ilgili uyarıyla ilgili ayrıntıları görüntüleme
 
-Bazı uyarı türleri, Microsoft 365 otomatik araştırmayı tetikler. Daha fazla bilgi edinmek için bkz. [Otomatik araştırma tetikleyen uyarı ilkeleri](office-365-air.md#which-alert-policies-trigger-automated-investigations).
+Bazı uyarı türleri, Microsoft 365'te otomatik araştırmayı tetikler. Daha fazla bilgi edinmek için bkz. [Otomatik araştırma tetikleyen uyarı ilkeleri](office-365-air.md#which-alert-policies-trigger-automated-investigations).
 
 1. Microsoft 365 Defender portalına (<https://security.microsoft.com>) gidin ve oturum açın.
 2. Gezinti bölmesinde **İşlem merkezi'ni** seçin.
@@ -77,11 +77,11 @@ Bazı uyarı türleri, Microsoft 365 otomatik araştırmayı tetikler. Daha fazl
 
 ## <a name="keep-the-following-points-in-mind"></a>Aşağıdaki noktaları göz önünde bulundurun
 
-- E-posta sayıları araştırma sırasında hesaplanır ve araştırma açılır öğelerini açtığınızda (temel alınan sorguya göre) bazı sayılar yeniden hesaplanır.
+- Email sayımlar araştırma sırasında hesaplanır ve araştırma açılır öğelerini açtığınızda bazı sayımlar yeniden hesaplanır (temel alınan sorguya göre).
 
-- E-posta sekmesindeki e-posta kümeleri için gösterilen **e-posta** sayıları ve küme açılır öğesinde gösterilen e-posta miktarı değeri araştırma sırasında hesaplanır ve değişmez.
+- **Email** sekmesindeki e-posta kümeleri için gösterilen e-posta sayıları ve küme açılır öğesinde gösterilen e-posta miktarı değeri araştırma sırasında hesaplanır ve değişmez.
 
-- E-posta kümesi açılır öğesinin **E-posta** sekmesinin en altında gösterilen e-posta sayısı ve Gezgin'de gösterilen e-posta iletilerinin sayısı, araştırmanın ilk analizinden sonra alınan e-posta iletilerini yansıtır.
+- E-posta kümesi açılır öğesinin **Email** sekmesinin en altında gösterilen e-posta sayısı ve Gezgin'de gösterilen e-posta iletilerinin sayısı, araştırmanın ilk analizinden sonra alınan e-posta iletilerini yansıtır.
 
   Bu nedenle, özgün 10 e-posta iletisi miktarını gösteren bir e-posta kümesi, araştırma analizi aşaması arasında beş e-posta iletisi daha geldiğinde ve yönetici araştırmayı gözden geçirirken toplam 15 e-posta listesi gösterir. Benzer şekilde, Office 365 için Microsoft Defender Plan 2'deki verilerin süresi denemeler için yedi gün sonra ve ücretli lisanslar için 30 gün sonra dolduğundan, eski araştırmalarda Gezgin sorgularının gösterdiğinden daha yüksek sayımlar gösterilmeye başlanabilir.
 

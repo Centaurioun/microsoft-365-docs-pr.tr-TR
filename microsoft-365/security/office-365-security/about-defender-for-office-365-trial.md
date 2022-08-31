@@ -6,8 +6,8 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdo
+ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Yöneticiler Office 365 için Microsoft Defender deneme modu hakkında bilgi edinebilir
-ms.openlocfilehash: 9cce1e910f5497ce2dfe265923f66e87306fb90e
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 883e91227ccf99835d85ea5253f89d765c3693df
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773267"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481382"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Office 365 için Microsoft Defender deneme sürümü hakkında
 
@@ -88,7 +88,7 @@ Deneme sürümü için lisans kartı aşağıdaki bilgileri gösterir:
   - **Yalnızca algılama & yanıtı**: Aşağıdaki senaryolara dahil edilen toplam kullanıcı sayısı:
     - Deneme süresince ilkelerin kapsamını belirli kullanıcılara belirttiniz.
     - Kapsamı belirli kullanıcılara göre belirlenmiş özel ilkeleriniz vardır.
-  - **Tam koruma**: Office 365 için Defender Plan 2 özellikleri (AIR, Tehdit Gezgini, Saldırı simülasyonu eğitimi vb.) tarafından korunan toplam kullanıcı sayısı.
+  - **Tam koruma**: Office 365 için Defender Plan 2 özellikleri (AIR, Threat Explorer, Saldırı simülasyonu eğitimi vb.) tarafından korunan toplam kullanıcı sayısı.
 
 Fiyatlandırma bilgileri için bkz. [Office 365 için Microsoft Defender](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365).
 

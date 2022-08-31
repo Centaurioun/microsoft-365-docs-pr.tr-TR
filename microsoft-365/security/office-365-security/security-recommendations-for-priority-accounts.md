@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 öncelik hesapları, öncelik hesapları, Office 365 öncelik hesapları, Microsoft 365 öncelik hesapları için güvenlik önerileri
+title: Microsoft 365'teki öncelik hesapları, öncelik hesapları, Office 365 öncelik hesapları, Microsoft 365'teki öncelik hesapları için güvenlik önerileri
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,16 +17,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-overview
 - m365solution-protecthve
+- highpri
 ms.custom: ''
-description: Yöneticiler, güvenlik ayarlarını yükseltmeyi ve Microsoft 365 kuruluşlarında öncelikli hesaplar için raporları, uyarıları ve araştırmaları kullanmayı öğrenebilir.
+description: Yöneticiler, Microsoft 365 kuruluşlarında güvenlik ayarlarını yükseltmeyi ve öncelikli hesaplar için raporları, uyarıları ve araştırmaları kullanmayı öğrenebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 99e4726af1226e044715d33e92a176c9292b49ab
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 89452cca1e3871c864204053049c05938b576b91
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873390"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481646"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365'te öncelikli hesaplar için güvenlik önerileri
 
@@ -69,13 +70,13 @@ Yönergeler için bkz [. 1. Adım. MFA ile uzak çalışanlar için oturum açma
   - [Kullanıcı için POP3 veya IMAP4 erişimini etkinleştirme veya devre dışı bırakma](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
   - [Kimliği doğrulanmış istemci SMTP gönderimini etkinleştirme veya devre dışı bırakma (SMTP AUTH)](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
-Temel kimlik doğrulamasının Exchange Web Hizmetleri (EWS), Exchange ActiveSync, POP3, IMAP4 ve uzak PowerShell için Exchange Online kullanım dışı bırakıldığını da unutmayın. Ayrıntılar için bu [blog gönderisini inceleyin](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/).
+Temel kimlik doğrulamasının Exchange Web Services (EWS), Exchange ActiveSync, POP3, IMAP4 ve uzak PowerShell için Exchange Online kullanım dışı bırakıldığını da belirtmek gerekir. Ayrıntılar için bu [blog gönderisini inceleyin](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/).
 
 ## <a name="use-strict-preset-security-policies-for-priority-accounts"></a>Öncelik hesapları için katı önceden ayarlanmış güvenlik ilkeleri kullanma
 
 Öncelik kullanıcıları, Exchange Online Protection (EOP) ve Office 365 için Defender'de kullanılabilen çeşitli korumalar için daha sıkı eylemler gerektirir.
 
-Örneğin, gereksiz e-posta olarak sınıflandırılan iletileri Gereksiz E-posta klasörüne teslim etmek yerine, öncelik hesapları için tasarlandıysa aynı iletileri karantinaya almalısınız.
+Örneğin, gereksiz posta olarak sınıflandırılan iletileri Gereksiz Email klasörüne teslim etmek yerine, öncelik hesaplarına yönelikse aynı iletileri karantinaya almalısınız.
 
 Önceden belirlenmiş güvenlik ilkelerinde Katı profilini kullanarak öncelik hesapları için bu katı yaklaşımı uygulayabilirsiniz.
 
@@ -98,10 +99,10 @@ Ayrıca, öncelik hesaplarınızı daha fazla tanımlamak ve sınıflandırmak i
 |Özellik|Açıklama|
 |---|---|
 |Uyarılar|Etkilenen kullanıcıların kullanıcı etiketleri görünür ve Microsoft 365 Defender portalındaki **Uyarılar** sayfasında filtre olarak kullanılabilir. Daha fazla bilgi için bkz [. Uyarıları görüntüleme](../../compliance/alert-policies.md#viewing-alerts).|
-|Explorer <p> Gerçek zamanlı algılamalar|**Gezgin'de** (Office 365 için Defender Plan 2) veya **Gerçek zamanlı algılamalarda** (Office 365 için Defender Plan 1) kullanıcı etiketleri E-posta kılavuzu görünümünde ve E-posta ayrıntıları açılır öğesinde görünür. Kullanıcı etiketleri filtrelenebilir bir özellik olarak da kullanılabilir. Daha fazla bilgi için bkz.  [Explorer'da Etiketler](threat-explorer.md#tags-in-threat-explorer).|
+|Explorer <p> Gerçek zamanlı algılamalar|**Gezgin'de** (Office 365 için Defender Plan 2) veya **Gerçek zamanlı algılamalarda** (Office 365 için Defender Plan 1), kullanıcı etiketleri Email kılavuz görünümünde ve Email ayrıntıları açılır penceresinde görünür. Kullanıcı etiketleri filtrelenebilir bir özellik olarak da kullanılabilir. Daha fazla bilgi için bkz.  [Explorer'da Etiketler](threat-explorer.md#tags-in-threat-explorer).|
 |Kampanya Görünümleri|Kullanıcı etiketleri, Office 365 için Microsoft Defender Plan 2'deki Kampanya Görünümlerinde filtrelenebilir özelliklerden biridir. Daha fazla bilgi için bkz. [Kampanya Görünümleri](campaigns.md).|
 |Tehdit koruması durum raporu|**Tehdit koruması durum raporundaki** neredeyse tüm görünümlerde ve ayrıntı tablolarında, sonuçları **öncelik hesaplarına** göre filtreleyebilirsiniz. Daha fazla bilgi için bkz [. Tehdit koruması durum raporu](view-email-security-reports.md#threat-protection-status-report).|
-|Öncelik hesapları raporu için e-posta sorunları|Exchange yönetim merkezindeki (EAC) **öncelik hesapları için e-posta sorunları** raporu, **öncelik hesapları** için teslim edilmemiş ve geciken iletiler hakkında bilgi içerir. Daha fazla bilgi için bkz. [Öncelik hesapları için e-posta sorunları raporu](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
+|Öncelik hesapları raporu için Email sorunları|Exchange yönetim merkezindeki (EAC) **öncelik hesapları raporunun Email sorunları**, **öncelik hesapları** için teslim edilmemiş ve gecikmiş iletiler hakkında bilgi içerir. Daha fazla bilgi için bkz. [öncelik hesapları raporuyla ilgili Email sorunları](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
 
 ## <a name="train-users"></a>Kullanıcıları eğitme
 
@@ -114,9 +115,9 @@ Microsoft 365, kuruluşunuzdaki kullanıcıları bilgilendirmeye yardımcı olma
 |Kavram|Kaynaklar|Açıklama|
 |---|---|---|
 |Microsoft 365|[Özelleştirilebilir öğrenme yolları](/office365/customlearning/)|Bu kaynaklar, kuruluşunuzdaki kullanıcılar için eğitimleri bir araya getirebilmenize yardımcı olabilir.|
-|Microsoft 365 güvenlik|[Learning modülü: kuruluşunuzun güvenliğini Microsoft 365 yerleşik, akıllı güvenlikle sağlama](/learn/modules/security-with-microsoft-365)|Bu modül, Microsoft 365 güvenlik özelliklerinin birlikte nasıl çalıştığını açıklamanıza ve bu güvenlik özelliklerinin avantajlarını açıklamanıza olanak tanır.|
+|Microsoft 365 güvenlik|[Öğrenme modülü: Microsoft 365'ten yerleşik ve akıllı güvenlikle kuruluşunuzun güvenliğini sağlama](/learn/modules/security-with-microsoft-365)|Bu modül, Microsoft 365 güvenlik özelliklerinin birlikte nasıl çalıştığını açıklamanızı ve bu güvenlik özelliklerinin avantajlarını açıklamanızı sağlar.|
 |Çok faktörlü kimlik doğrulaması|[İki aşamalı doğrulama: Ek doğrulama sayfası nedir?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Bu makale, son kullanıcıların çok faktörlü kimlik doğrulamasının ne olduğunu ve kuruluşunuzda neden kullanıldığını anlamasına yardımcı olur.|
-|Saldırı simülasyonu eğitimi|[Saldırı simülasyonu eğitimini kullanmaya başlama](attack-simulation-training-get-started.md)|Office 365 için Microsoft Defender Plan 2'deki saldırı simülasyonu eğitimi, yöneticinin belirli kullanıcı gruplarına karşı sanal kimlik avı saldırılarını yapılandırmasına, başlatmasına ve izlemesine olanak tanır.|
+|Saldırı simülasyonu eğitimi|[Saldırı simülasyonu eğitimini kullanmaya başlama](attack-simulation-training-get-started.md)|Office 365 için Microsoft Defender Plan 2'deki Saldırı simülasyonu eğitimi, yöneticinin belirli kullanıcı gruplarına yönelik sanal kimlik avı saldırılarını yapılandırmasına, başlatmasına ve izlemesine olanak tanır.|
 
 Ayrıca Microsoft, kullanıcıların bu makalede açıklanan eylemleri gerçekleştirmelerini önerir: [Hesabınızı ve cihazlarınızı korsanlara ve kötü amaçlı yazılımlara karşı koruma](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). Bu eylemler şunlardır:
 

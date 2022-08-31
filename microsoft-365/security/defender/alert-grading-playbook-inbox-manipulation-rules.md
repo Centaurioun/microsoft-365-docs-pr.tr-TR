@@ -2,7 +2,8 @@
 title: Şüpheli gelen kutusu işleme kuralları için uyarı notlama
 description: Uyarıları gözden geçirmek ve saldırıyı düzeltmek ve ağınızı korumak için önerilen eylemleri uygulamak için şüpheli gelen kutusu işleme kuralları için uyarı notlama.
 keywords: olaylar, uyarılar, araştırma, analiz etme, yanıt, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: e663d02037633599b9dffc19e1ebbd174aa279e1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: cf342707849235c0322cd7bffbceaad837fbed20
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663192"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481602"
 ---
 # <a name="alert-grading-for-suspicious-inbox-manipulation-rules"></a>Şüpheli gelen kutusu işleme kuralları için uyarı notlama
 
@@ -81,7 +81,7 @@ Burada, kötü amaçlı gelen kutusu işleme kuralı tarafından tetiklenen bir 
 
 Kuralların aşağıdaki kural parametrelerine veya ölçütlerine göre şüpheli görünerek görünmediğini belirleyin:
 
-- Anahtar kelime -ler
+- Anahtar Sözcükler
 
    Saldırgan, düzenleme kuralını yalnızca belirli sözcükleri içeren e-postalara uygulayabilir. Bu anahtar sözcükleri şu gibi bazı öznitelikler altında bulabilirsiniz: "BodyContainsWords", "SubjectContainsWords" veya "SubjectOrBodyContainsWords".
 
@@ -186,7 +186,7 @@ CloudAppEvents
 ## <a name="recommended-actions"></a>Önerilen eylemler
 
 1. Kötü amaçlı gelen kutusu kuralını devre dışı bırakın.
-2. Kullanıcı hesabının kimlik bilgilerini sıfırlayın. Ayrıca, Azure Active Directory (Azure AD) Kimlik Koruması'ndan güvenlik sinyalleri alan Microsoft Defender for Cloud Apps kullanıcı hesabının gizliliğinin ihlal edildiğini de doğrulayabilirsiniz.
+2. Kullanıcı hesabının kimlik bilgilerini sıfırlayın. Ayrıca, Azure Active Directory (Azure AD) Kimlik Koruması'ndan güvenlik sinyalleri alan Microsoft Defender for Cloud Apps ile kullanıcı hesabının gizliliğinin ihlal edildiğini de doğrulayabilirsiniz.
 3. Etkilenen kullanıcı hesabı tarafından gerçekleştirilen diğer kötü amaçlı etkinlikleri arayın.
 4. Diğer güvenliği aşılmış kullanıcı hesaplarını bulmak için kiracıda aynı IP'den veya aynı ISS'den (ISS yaygın değilse) kaynaklanan diğer şüpheli etkinlikleri denetleyin.
 

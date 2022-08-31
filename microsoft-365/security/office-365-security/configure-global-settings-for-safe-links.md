@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender'da Güvenli Bağlantılar için genel ayarları ('Aşağıdaki URL'leri engelle' listesi ve Office 365 uygulamaları için koruma) görüntülemeyi ve yapılandırmayı öğrenebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: d396157be6e245e81d084d97dfc6446201b28f95
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: fb9e5159b4bee43d7e376af569151293aefd20f0
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385759"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481162"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Bağlantılar için genel ayarları yapılandırma
 
