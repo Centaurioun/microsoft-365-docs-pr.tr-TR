@@ -2,7 +2,8 @@
 title: Microsoft 365 güvenlik portalında cihaz profili
 description: Kuruluşunuzdaki bir cihazın risk ve maruz kalma düzeylerini görüntüleyin. Geçmiş ve mevcut tehditleri analiz edin ve cihazı en son güncelleştirmelerle koruyun.
 keywords: güvenlik, kötü amaçlı yazılım, Microsoft 365, M365, Microsoft 365 Defender, güvenlik merkezi, Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Kimlik için Microsoft Defender , cihaz sayfası, cihaz profili, makine sayfası, makine profili
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: dansimp
@@ -12,13 +13,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: d474b38e65c77fb75dd1472cfa6f316c9200b086
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: b701d93aefcab19ff352830815c7894fc062140a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67386618"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67466975"
 ---
 # <a name="device-profile-page"></a>Cihaz profili sayfası
 

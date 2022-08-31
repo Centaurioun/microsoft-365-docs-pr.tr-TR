@@ -4,7 +4,8 @@ description: Gelişmiş tehdit avcılığı sorgu sonuçlarınızdaki tehditleri
 keywords: gelişmiş avcılık, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgulama, telemetri, eylem gerçekleştirme
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b7fbe659902bf89023e994f4e1304f25f3934db8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c83370c302b10159d4d2325e66224685ab232cad
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097621"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479520"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Gelişmiş tehdit avcılığı sorgu sonuçları üzerinde eylem gerçekleştirme
 
@@ -76,7 +76,7 @@ Karantina eylemlerinin nasıl gerçekleştirildiği ve dosyaların nasıl geri y
 
 Açıklanan eylemlerden herhangi birini yapmak için sorgu sonuçlarınızda bir veya daha fazla kayıt seçin ve ardından **Eylem gerçekleştir'i** seçin. Sihirbaz, tercih ettiğiniz eylemleri seçip gönderme işleminde size yol gösterir.
 
-:::image type="content" source="../../media/take-action-multiple.png" alt-text="Microsoft 365 Defender portalında Eylem gerçekleştir seçeneği" lightbox="../../media/take-action-multiple.png":::
+:::image type="content" source="../../media/take-action-multiple.png" alt-text="Microsoft 365 Defender portalında eylem gerçekleştirme seçeneği" lightbox="../../media/take-action-multiple.png":::
 
 
 ## <a name="take-various-actions-on-emails"></a>E-postalar üzerinde çeşitli eylemler gerçekleştirme
@@ -97,7 +97,7 @@ Bu e-posta eylemleri [özel algılamalar](custom-detections-overview.md) için d
 
 
 ## <a name="review-actions-taken"></a>Gerçekleştirilen eylemleri gözden geçirme
-Her eylem işlem [merkezine](m365d-action-center.md) **İşlem** **merkeziHistory** >  ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)) altında tek tek kaydedilir. Her eylemin durumunu denetlemek için işlem merkezine gidin.
+Her eylem, [işlem merkezine](m365d-action-center.md) **İşlem merkezi** > **Geçmişi** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)) altında tek tek kaydedilir. Her eylemin durumunu denetlemek için işlem merkezine gidin.
  
 >[!NOTE]
 >Bu makaledeki bazı tablolar Uç Nokta için Microsoft Defender'de kullanılamayabilir. Daha fazla veri kaynağı kullanarak tehditleri avlamak için [Microsoft 365 Defender açın](m365d-enable.md). Gelişmiş avcılık sorgularını Uç Nokta için Microsoft Defender'den geçirme bölümünde yer alan adımları izleyerek [gelişmiş avcılık iş akışlarınızı Uç Nokta için Microsoft Defender'den Microsoft 365 Defender](advanced-hunting-migrate-from-mde.md) taşıyabilirsiniz.

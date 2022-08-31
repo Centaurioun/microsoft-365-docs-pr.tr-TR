@@ -2,7 +2,8 @@
 title: Şüpheli gelen kutusu iletme kuralları için uyarı notları
 description: Uyarıları gözden geçirmek ve saldırıyı düzeltmek ve ağınızı korumak için önerilen eylemleri uygulamak için şüpheli gelen kutusu iletme kuralları için uyarı notlama.
 keywords: olaylar, uyarılar, araştırma, analiz etme, yanıt, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: dca305b88e6e8db25e0a798c4361086bd7cb1e8b
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: bb99643be9df5a43b65bd0d5d017ff65b4bc0426
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666030"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479476"
 ---
 # <a name="alert-grading-for-suspicious-inbox-forwarding-rules"></a>Şüpheli gelen kutusu iletme kuralları için uyarı notları
 
@@ -187,7 +187,7 @@ CloudAppEvents
 ## <a name="recommended-actions"></a>Önerilen eylemler
 
 1. Kötü amaçlı gelen kutusu kuralını devre dışı bırakın.
-2. Kullanıcının hesap kimlik bilgilerini sıfırlayın. Ayrıca, Azure Active Directory (Azure AD) Kimlik Koruması'ndan güvenlik sinyalleri alan Microsoft Defender for Cloud Apps kullanıcı hesabının gizliliğinin ihlal edildiğini de doğrulayabilirsiniz.
+2. Kullanıcının hesap kimlik bilgilerini sıfırlayın. Ayrıca, Azure Active Directory (Azure AD) Kimlik Koruması'ndan güvenlik sinyalleri alan Microsoft Defender for Cloud Apps ile kullanıcı hesabının gizliliğinin ihlal edildiğini de doğrulayabilirsiniz.
 3. Etkilenen kullanıcı tarafından gerçekleştirilen diğer kötü amaçlı etkinlikleri arayın.
 4. Diğer güvenliği aşılmış kullanıcıları bulmak için kiracıdaki aynı IP'den veya aynı ISS'den (ISS yaygın değilse) kaynaklanan diğer şüpheli etkinlikleri denetleyin.
 

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için riskli kullanıcıları görüntülemeyi ve yönetmeyi öğrenin.
-ms.openlocfilehash: 6f3fdaca1b89561e623d195faa4804c431e43a69
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 0239dd4c56de9203f01df04cc4f0fce8c73fb27e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055844"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474874"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de riskli kullanıcıları görüntüleme ve yönetme
 
@@ -53,7 +53,7 @@ Azure AD Kimlik Koruması'nda risk algılamaları, Azure AD kullanıcı hesaplar
 
 1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Riskli kullanıcılar'ı** seçin.
 
-2. **Riskli Kullanıcılar** sekmesinde, risk durumu **Risk** altında olan listedeki kullanıcıları gözden geçirin.
+2. **Riskli Kullanıcılar** sayfasında, risk durumu **Risk** altında olan listedeki kullanıcıları gözden geçirin.
 
 3. Her kullanıcı için algılanan riskler hakkında ayrıntılı bilgi almak için **Risk algılamalarını görüntüle'yi** seçin. Risk türleri ve algılama hakkında daha fazla bilgi için bkz. [Risk nedir?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
 
@@ -73,7 +73,7 @@ Aynı anda birden çok etkilenen kullanıcı üzerinde işlem yapmak için:
 
 1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Riskli kullanıcılar'ı** seçin.
 
-2. **Riskli Kullanıcılar** sekmesinde, üzerinde işlem yapmak istediğiniz kullanıcı kümesini seçin.
+2. **Riskli Kullanıcılar** sayfasında, işlem yapmak istediğiniz kullanıcı kümesini seçin.
 
 3. Gerçekleştirilecek aşağıdaki eylemlerden birini seçin:
 

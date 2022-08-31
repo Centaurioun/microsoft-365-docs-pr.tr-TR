@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Çevrimiçi kuruluşunuzu telefonunuzdan veya tabletinizde yönetmek için web tabanlı Microsoft 365 yönetim merkezi eşlikçiniz olan Microsoft 365 Yönetici uygulamasını edinin.
-ms.openlocfilehash: 6fcc6ceec6c7dcd7f5af3cb2bf0883b0bd1170a1
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8766098509a0c7cea22e177907b77199d6e6c690
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084641"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469129"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 Yönetici mobil uygulaması hakkında
 
@@ -80,6 +80,12 @@ Yönetici mobil uygulamasını kullanmak için bir Microsoft 365 kuruluşunda y�
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
 Aşağıda sık sorulan soruların yanıtları yer almaktadır.
+
+### <a name="does-the-admin-app-support-multi-tenant-billing-features"></a>Yönetici uygulaması çok kiracılı faturalama özelliklerini destekliyor mu? 
+
+Yönetici mobil uygulamasında, yetkili yöneticinin söz konusu kiracının ürünlerini ve lisanslarını, ilişkili kiracıların ürünlerini ve lisanslarını tek bir görünümde görebileceği birkaç çok kiracılı özellik eksiktir. 
+
+Bu özellik henüz Microsoft 365 Yönetici mobil uygulamasının bir parçası değildir ve yakında kullanıma sunulacaktır. Daha fazla bilgi için yöneticiler <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a> gidebilir.  
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>Uygulamayı kullanabilmek için ne yapmam gerekiyor?
 

@@ -3,7 +3,8 @@ title: Üretim ortamınızdaki Office 365 için Microsoft Defender için değerl
 description: Deneme lisansları, MX kaydı işleme, kabul edilen etki alanlarının ve gelen bağlantıların denetlenme & Office 365 için Microsoft Defender değerlendirmesini etkinleştirme adımları.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: how-to
-ms.technology: m365d
-ms.openlocfilehash: f3298c67421dea921a014bc32e91be8033733183
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: b41754e6fe8930f2b01c983ff7d30e1d478efcb4
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750110"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478871"
 ---
 # <a name="enable-the-evaluation-environment"></a>Değerlendirme ortamını etkinleştirme
 

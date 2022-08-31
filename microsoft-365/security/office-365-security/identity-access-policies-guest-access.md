@@ -19,13 +19,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 ms.technology: mdo
-ms.openlocfilehash: c6784f73b431826063d94794606b373662446324
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 872d5e5fc7774a32619e637bdb6dceb6e07b324e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750154"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67466909"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Konuk erişimine ve B2B dış kullanıcı erişimine izin verme ilkeleri
 

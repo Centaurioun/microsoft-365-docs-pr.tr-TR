@@ -1,10 +1,11 @@
 ---
-title: Gelişmiş avda AssignedIPAddresses() işlevi Microsoft 365 Defender
+title: Microsoft 365 Defender için gelişmiş avcılıkta AssignedIPAddresses() işlevi
 description: Bir cihaza atanan en son IP adreslerini almak için AssignedIPAddresses() işlevini kullanmayı öğrenin
-keywords: gelişmiş av, tehdit avı, siber tehdit avı, Microsoft 365 Defender, Microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, FileProfile, dosya profili, işlev, zenginleştirme
+keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, FileProfile, dosya profili, işlev, zenginleştirme
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,55 +18,54 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b82a079a476ee6ed3d5465b52bca381cd49746b5
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: ecb3191888359675fb2fafa373858c388bc8bf08
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63018996"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477703"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-Bir cihaza `AssignedIPAddresses()` atanmış [en son](advanced-hunting-overview.md) IP adreslerini hızla elde etmek için gelişmiş arama sorgularında işlevi kullanın. Zaman damgası bağımsız değişkeni belirtirsiniz, bu işlev belirtilen zamanda en yeni IP adreslerini elde edilir. 
+`AssignedIPAddresses()` Bir cihaza atanmış olan en son IP adreslerini hızla elde etmek için [gelişmiş tehdit avcılığı](advanced-hunting-overview.md) sorgularınızda işlevini kullanın. Bir zaman damgası bağımsız değişkeni belirtirseniz, bu işlev belirtilen zamanda en son IP adreslerini alır. 
 
-Bu işlev, aşağıdaki sütunları içeren bir tablo döndürür:
+Bu işlev aşağıdaki sütunları içeren bir tablo döndürür:
 
 | Sütun | Veri türü | Açıklama |
 |------------|-------------|-------------|
-| `Timestamp` | `datetime` | Cihaz IP adresi kullanılarak gözlemlenen en son saat |
+| `Timestamp` | `datetime` | Cihazın IP adresi kullanılarak gözlemlendiği en son zaman |
 | `IPAddress` | `string` | Cihaz tarafından kullanılan IP adresi |
-| `IPType` | `string` | IP adresinin genel veya özel bir adres olup olmadığını gösterir |
-| `NetworkAdapterType` | `int` | IP adresi atanmış olan cihaz tarafından kullanılan ağ bağdaştırıcısı türü. Olası değerler için bu [numaralamaya bakın](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
-| `ConnectedNetworks` | `int` | Atanmış IP adresine sahip bağdaştırıcının bağlı olduğu ağlar. Her JSON dizisi ağ adını, kategoriyi (genel, özel veya etki alanı), bir açıklamayı ve İnternet'e genel olarak bağlı olup olmadığını gösteren bir bayrak içerir |
+| `IPType` | `string` | IP adresinin genel mi yoksa özel bir adres mi olduğunu gösterir |
+| `NetworkAdapterType` | `int` | IP adresi atanmış olan cihaz tarafından kullanılan ağ bağdaştırıcısı türü. Olası değerler için [bu numaralandırmaya](/dotnet/api/system.net.networkinformation.networkinterfacetype) bakın |
+| `ConnectedNetworks` | `int` | Atanan IP adresine sahip bağdaştırıcının bağlı olduğu ağlar. Her JSON dizisi ağ adını, kategorisini (genel, özel veya etki alanı), bir açıklamayı ve İnternet'e genel olarak bağlanıp bağlanmadığını belirten bir bayrak içerir |
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```kusto
 AssignedIPAddresses(x, y)
 ```
 
-## <a name="arguments"></a>Bağımsız değişkenler
+## <a name="arguments"></a>Bağımsız değişken
 
 - **x**—`DeviceId` veya `DeviceName` cihazı tanımlayan değer
-- **y**—`Timestamp` (datetime) değeri, işleve belirli bir tarihten en son atanan IP adreslerini almalarını sağlar. Belirtilmezse, işlev en son IP adreslerini döndürür.
+- **y**—`Timestamp` (datetime) işlevine belirli bir zamandan en son atanan IP adreslerini almasını belirten değer. Belirtilmezse, işlev en son IP adreslerini döndürür.
 
 ## <a name="examples"></a>Örnekler
 
-### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a>Bir cihaz tarafından kullanılan IP adreslerinin listesini 24 saat önce al
+### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a>24 saat önce bir cihaz tarafından kullanılan IP adreslerinin listesini alma
 
 ```kusto
 AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
-### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>Bir cihaz tarafından kullanılan IP adreslerini al ve cihazla iletişim kurma cihazlarını bul
-Bu sorgu, cihazın `AssignedIPAddresses()` () belirli bir tarihte () veya daha önce atanmış`example-device-name` IP adreslerini almak için işlevi kullanır`example-date`. Ardından IP adreslerini kullanarak, diğer cihazlar tarafından başlatılan cihaza bağlantıları bulur. 
+### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>Cihaz tarafından kullanılan IP adreslerini alma ve cihazla iletişim kuran cihazları bulma
+Bu sorgu, `AssignedIPAddresses()` belirli bir tarihte`example-date` () veya öncesinde cihaz (`example-device-name`) için atanmış IP adreslerini almak için işlevini kullanır. Ardından, diğer cihazlar tarafından başlatılan cihaza bağlantıları bulmak için IP adreslerini kullanır. 
 
 ```kusto
 let Date = datetime(example-date);
@@ -80,6 +80,6 @@ AssignedIPAddresses(DeviceName, Date)
 ```
 
 ## <a name="related-topics"></a>İlgili konular
-- [Gelişmiş ava genel bakış](advanced-hunting-overview.md)
-- [Sorgu dilini öğrenme](advanced-hunting-query-language.md)
-- [Şemayı anlama](advanced-hunting-schema-tables.md)
+- [Gelişmiş avcılığa genel bakış](advanced-hunting-overview.md)
+- [Sorgu dilini öğrenin](advanced-hunting-query-language.md)
+- [Şemayı anlayın](advanced-hunting-schema-tables.md)

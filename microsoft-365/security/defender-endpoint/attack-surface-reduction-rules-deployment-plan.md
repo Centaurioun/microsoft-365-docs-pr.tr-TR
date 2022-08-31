@@ -19,13 +19,14 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365solution-asr-rules
+- highpri
 ms.date: 1/18/2022
-ms.openlocfilehash: b4617b6a0eeed7013f024c895afed12005ed95c3
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 5e0c47ce04bee66b9102c5b190d892b488934d7b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66970154"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479345"
 ---
 # <a name="plan-attack-surface-reduction-asr-rules-deployment"></a>Saldırı yüzeyini azaltma (ASR) kuralları dağıtım planı
 

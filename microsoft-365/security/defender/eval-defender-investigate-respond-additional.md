@@ -4,7 +4,8 @@ description: Olayları önceliklendirmek ve yönetmek, araştırmaları otomatik
 keywords: Deneme Microsoft 365 Defender, Microsoft 365 Defender deneyin, Microsoft 365 Defender değerlendirin, değerlendirme laboratuvarı Microsoft 365 Defender Microsoft 365 Defender  pilot, siber güvenlik, gelişmiş kalıcı tehdit, kurumsal güvenlik, cihazlar, cihaz, kimlik, kullanıcılar, veriler, uygulamalar, olaylar, otomatik araştırma ve düzeltme, gelişmiş avcılık
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,15 +22,15 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 64e200acf8726a69e6f71784334345e5603b9677
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 5dbda4df04d47d4069a60fd7925dde2390708aba
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384546"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473645"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pilot ortamda olay yanıtı özelliklerini Microsoft 365 Defender deneyin
 

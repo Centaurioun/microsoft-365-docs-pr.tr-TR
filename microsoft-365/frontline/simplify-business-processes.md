@@ -22,16 +22,19 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 45e476ea1054c8d495c78f8744109d24130706d1
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 020862c14e02b06718a7816ab6200341969404c8
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66862489"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472018"
 ---
 # <a name="simplify-business-processes-for-frontline-teams"></a>Ön cephe ekipleri için iş süreçlerini basitleştirme
 
 Teams uygulamalarını, Power Apps'i ve Power BI'ı kullanarak ön cephe ekiplerinizin iş süreçlerini basitleştirebilirsiniz.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
 
 > [!NOTE]
 > [Finansal hizmetler](/industry/financial-services), [sağlık](/industry/healthcare) hizmetleri, [kar amacı gütmeyen kuruluşlar](/industry/nonprofit) ve [perakende](/industry/retail) ortamları için ek özellikler, Dynamics 365 ve Microsoft Azure özelliklerinin yanı sıra Microsoft 365 özelliklerini de içeren Microsoft sektör bulutlarıyla kullanılabilir.

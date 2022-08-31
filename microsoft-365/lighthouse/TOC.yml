@@ -40,6 +40,8 @@
       href: m365-lighthouse-users-page-overview.md
     - name: Kullanıcının oturum açmasını engelleme
       href: m365-lighthouse-block-user-signin.md
+    - name: Etkin olmayan kullanıcıları yönetme
+      href: m365-lighthouse-manage-inactive-users.md
     - name: Çok faktörlü kimlik doğrulamasını yönetme
       href: m365-lighthouse-manage-mfa.md
     - name: Self servis parola sıfırlamayı yönetme

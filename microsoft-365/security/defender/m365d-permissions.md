@@ -1,9 +1,10 @@
 ---
-title: Portalda verilerin Microsoft 365 Defender erişimi Microsoft 365 Defender yönetme
-description: E-postada veri izinlerini yönetmeyi Microsoft 365 Defender
-keywords: erişim, izinler, Microsoft 365 Defender, M365, güvenlik, MCAS, Bulut Uygulamaları Güvenliği, Uç Nokta için Microsoft Defender, kapsam, kapsam, RBAC
+title: Microsoft 365 Defender portalında Microsoft 365 Defender verilere erişimi yönetme
+description: Microsoft 365 Defender'da verilere yönelik izinleri yönetmeyi öğrenin
+keywords: erişim, izinler, Microsoft 365 Defender, M365, güvenlik, MCAS, Bulut Uygulamaları Güvenliği, Uç Nokta için Microsoft Defender, kapsam, kapsam belirleme, RBAC
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,56 +20,55 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 8e9cacf3fb7d74acc210ac0b77ed5e68c7a93961
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: 76101b7dc082786fb7c3054aef8a938402bbb0a8
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "63010031"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471003"
 ---
-# <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Genel rollerle Microsoft 365 Defender erişimi Azure Active Directory yönetme
+# <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Azure Active Directory genel rolleri ile Microsoft 365 Defender erişimini yönetme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-E-postanıza erişimi yönetmenin iki Microsoft 365 Defender:
+Microsoft 365 Defender erişimini yönetmenin iki yolu vardır:
 - **Genel Azure Active Directory (AD) rolleri**
 - **Özel rol erişimi**
 
-Aşağıdaki Genel Kullanıcı Görevleri **(AD) Azure Active Directory atanan** hesaplar, genel Microsoft 365 Defender verilere erişim sağlar:
+Aşağıdaki **Genel Azure Active Directory (AD) rollerine** atanan hesaplar Microsoft 365 Defender işlevlere ve verilere erişebilir:
 - Genel yönetici
 - Güvenlik yöneticisi
 - Güvenlik İşleci
 - Genel Okuyucu
-- Güvenlik Okuyucu
+- Güvenlik Okuyucusu
 
-Bu rollere sahip hesapları gözden geçirmek için [Portalda yer alan Microsoft 365 Defender görünümüne tıklayın](https://security.microsoft.com/permissions).
+Bu rollere sahip hesapları gözden geçirmek için [Microsoft 365 Defender portalında İzinler'i görüntüleyin](https://security.microsoft.com/permissions).
 
-**Özel rol** erişimi, yeni bir Microsoft 365 Defender özelliktir ve proje içinde belirli verilere, görevlere ve özelliklere erişimi yönetmenize Microsoft 365 Defender. Özel roller, genel Azure AD rollerine göre daha fazla denetim sağlayarak, kullanıcılara yalnızca gereken en az izinli rollerle erişim sağlar.  Genel Azure AD rollerinin yanı sıra özel roller de oluşturulabilir. [Özel roller hakkında daha fazla bilgi edinmek için](custom-roles.md):
+**Özel rol** erişimi, Microsoft 365 Defender yeni bir özelliktir ve Microsoft 365 Defender'daki belirli verilere, görevlere ve özelliklere erişimi yönetmenize olanak tanır. Özel roller, genel Azure AD rollerinden daha fazla denetim sunar ve kullanıcılara yalnızca ihtiyaç duydukları erişimi en az izin veren rollerle sağlar.  Genel Azure AD rollerine ek olarak özel roller de oluşturulabilir. [Özel roller hakkında daha fazla bilgi edinin](custom-roles.md).
 
 > [!NOTE]
-> Bu makale yalnızca genel kullanıcı rollerinin yönetimi Azure Active Directory geçerlidir. Özel rol tabanlı erişim denetimi kullanma hakkında daha fazla bilgi için bkz. [Rol tabanlı erişim denetimi için özel roller](custom-roles.md)
+> Bu makale yalnızca genel Azure Active Directory rollerini yönetmek için geçerlidir. Özel rol tabanlı erişim denetimini kullanma hakkında daha fazla bilgi için bkz. [Rol tabanlı erişim denetimi için özel roller](custom-roles.md)
 
-## <a name="access-to-functionality"></a>İşlevlere erişim
-Belirli işlevlere erişim, [Azure AD rolünüz tarafından belirlenir](/azure/active-directory/roles/permissions-reference). Sizin veya kullanıcı grubunuzla yeni bir rol atamanızı gerektiren belirli işlevlere erişmeniz gerekirse, genel yöneticiye başvurun.
+## <a name="access-to-functionality"></a>İşlevselliğe erişim
+Belirli işlevlere erişim[, Azure AD rolünüz](/azure/active-directory/roles/permissions-reference) tarafından belirlenir. Size veya kullanıcı grubunuza yeni bir rol atanmasını gerektiren belirli işlevlere erişmeniz gerekiyorsa genel yöneticiye başvurun.
 
 ### <a name="approve-pending-automated-tasks"></a>Bekleyen otomatik görevleri onaylama
-[Otomatik araştırma ve düzeltme,](m365d-autoir-actions.md) e-postalar, iletme kuralları, dosyalar, kalıcılık mekanizmaları ve araştırma sırasında bulunan diğer yapılar üzerinde eylemde bulunabilir. Açık onay gerektiren bekleyen eylemleri onaylamak veya reddetmek için, belirli rollere Belirli roller Microsoft 365. Daha fazla bilgi edinmek için bkz [. İşlem merkezi izinleri](m365d-action-center.md#required-permissions-for-action-center-tasks).
+[Otomatik araştırma ve düzeltme](m365d-autoir-actions.md) e-postalar, iletme kuralları, dosyalar, kalıcılık mekanizmaları ve araştırma sırasında bulunan diğer yapıtlar üzerinde işlem yapabilir. Açık onay gerektiren bekleyen eylemleri onaylamak veya reddetmek için Microsoft 365'te belirli rollerin atanmış olması gerekir. Daha fazla bilgi için bkz [. İşlem merkezi izinleri](m365d-action-center.md#required-permissions-for-action-center-tasks).
 
 ## <a name="access-to-data"></a>Verilere erişim
-Kullanıcı gruplarına Microsoft 365 Defender, Uç nokta rol tabanlı erişim denetimi (RBAC) için Microsoft Defender'da kullanıcı gruplarına atanan kapsam kullanılarak denetlenabilir. Erişiminizin kapsamı Uç Nokta için Defender'daki belirli bir cihaz kümesinde yoksa, tüm cihazlardaki verilere tam Microsoft 365 Defender. Bununla birlikte, hesabınız kapsamındaki verileri yalnızca kapsam kapsamındaki cihazlarla ilgili olarak görüntülersiniz.
+Microsoft 365 Defender verilere erişim, Uç Nokta için Microsoft Defender rol tabanlı erişim denetiminde (RBAC) kullanıcı gruplarına atanan kapsam kullanılarak denetlenebilir. Erişiminizin kapsamı Uç Nokta için Defender'daki belirli bir cihaz kümesiyle belirlenmediyse, Microsoft 365 Defender'daki verilere tam erişiminiz olur. Ancak hesabınızın kapsamı tamamlandıktan sonra yalnızca kapsamınızdaki cihazlarla ilgili verileri görürsünüz.
 
-Örneğin, Microsoft Defender for Endpoint rolüne sahip tek bir kullanıcı grubunda yer aldıysanız ve bu kullanıcı grubuna yalnızca satış cihazlarına erişim verildiyse, Microsoft 365 Defender'de yalnızca satış cihazlarıyla ilgili verileri Microsoft 365 Defender. [Uç Nokta için Microsoft Defender'daki RBAC ayarları hakkında daha fazla bilgi](/windows/security/threat-protection/microsoft-defender-atp/rbac)
+Örneğin, Uç Nokta için Microsoft Defender rolüne sahip tek bir kullanıcı grubuna aitseniz ve bu kullanıcı grubuna yalnızca satış cihazlarına erişim verildiyse, Microsoft 365 Defender yalnızca satış cihazlarıyla ilgili verileri görürsünüz. [Uç Nokta için Microsoft Defender'da RBAC ayarları hakkında daha fazla bilgi edinin](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
-### <a name="microsoft-defender-for-cloud-apps-access-controls"></a>Bulut Uygulamaları için Microsoft Defender erişim denetimleri
-Önizleme sırasında, Microsoft 365 Defender Uygulamaları için Defender ayarlarına göre erişim denetimlerini zorunlu tutulmayacaktır. Veri Microsoft 365 Defender bu ayarlardan etkilenmez.
+### <a name="microsoft-defender-for-cloud-apps-access-controls"></a>erişim denetimlerini Microsoft Defender for Cloud Apps
+Önizleme sırasında Microsoft 365 Defender, Cloud Apps için Defender ayarlarına göre erişim denetimlerini zorunlu kılmaz. Microsoft 365 Defender verilere erişim bu ayarlardan etkilenmez.
 
 ## <a name="related-topics"></a>İlgili konular
-- [Görevler için rol tabanlı erişim denetiminde özel Microsoft 365 Defender](custom-roles.md)
-- [Azure AD yerleşik rolleri](/azure/active-directory/roles/permissions-reference)
-- [Endpoint RBAC için Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/rbac)
-- [Bulut Uygulamaları rolleri için Defender](/cloud-app-security/manage-admins)
+- [Microsoft 365 Defender için rol tabanlı erişim denetiminde özel roller](custom-roles.md)
+- [Yerleşik rolleri Azure AD](/azure/active-directory/roles/permissions-reference)
+- [RBAC Uç Nokta için Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/rbac)
+- [Cloud Apps için Defender rolleri](/cloud-app-security/manage-admins)

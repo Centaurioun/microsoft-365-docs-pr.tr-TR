@@ -18,15 +18,16 @@ ms.collection:
 - m365solution-migratetomdatp
 - m365solution-mcafeemigrate
 - m365solution-symantecmigrate
+- highpri
 ms.topic: article
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 376bc904fabeee9b9fe2c9c91309427f28f19c5a
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 07b8c6f945cbf71a2474d7668884eeede504e2fe
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306360"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480028"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Uç Nokta için Microsoft Defender Geçiş - 2. Aşama: Kurulum
 

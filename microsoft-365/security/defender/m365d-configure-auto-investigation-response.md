@@ -7,7 +7,8 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
@@ -17,13 +18,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.technology: m365d
-ms.openlocfilehash: 51efeb57c6670f9c798fa254bb0a6242b30c5700
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4f0d9fe5057fb1aadf5631bff96bf81401268dd9
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944381"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468283"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Microsoft 365 Defender'de otomatik araştırma ve yanıt özelliklerini yapılandırma
 
@@ -50,9 +50,9 @@ Ardından, kurulumu tamamladıktan sonra, [düzeltme eylemlerini İşlem merkezi
 |---|---|
 |Abonelik gereksinimleri|Şu aboneliklerden biri: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E5 Güvenlik eklentisiyle Microsoft 365 E3</li><li>Microsoft 365 A5 Güvenliği eklentisiyle Microsoft 365 A3</li><li>Office 365 E5 artı Enterprise Mobility + Security E5 artı Windows E5</li></ul> <p> Bkz. [lisanslama gereksinimleri Microsoft 365 Defender](./prerequisites.md#licensing-requirements).|
 |Ağ gereksinimleri|<ul><li>[Kimlik için Microsoft Defender](/azure-advanced-threat-protection/what-is-atp) etkin</li><li>[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) yapılandırıldı</li><li>[Kimlik için Microsoft Defender tümleştirmesi](/cloud-app-security/mdi-integration)</li></ul>|
-|cihaz gereksinimlerini Windows|<ul><li>Windows 11</li><li>Windows 10, sürüm 1709 veya üzeri yüklü ([Windows sürüm bilgilerine](/windows/release-information/) bakın)</li><li>Yapılandırılan aşağıdaki tehdit koruma hizmetleri:<ul><li>[Uç Nokta için Microsoft Defender](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender Virüsten Koruma](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
+|Windows cihaz gereksinimleri|<ul><li>Windows 11</li><li>Windows 10, sürüm 1709 veya üzeri yüklü (Bkz[. Windows sürüm bilgileri](/windows/release-information/))</li><li>Yapılandırılan aşağıdaki tehdit koruma hizmetleri:<ul><li>[Uç Nokta için Microsoft Defender](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender Virüsten Koruma](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |E-posta içeriği ve Office dosyaları için koruma|[Office 365 için Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) yapılandırıldı|
-|İzinler|Otomatik araştırma ve yanıt özelliklerini yapılandırmak için, Azure Active Directory () veya Microsoft 365 yönetim merkezi (<https://portal.azure.com><https://admin.microsoft.com>) içinde Genel Yönetici veya Güvenlik Yöneticisi rolü atanmış olmalıdır. <p> Bekleyen eylemleri gözden geçirme, onaylama veya reddetme gibi otomatik araştırma ve yanıt özellikleriyle çalışmak için gereken izinleri almak için bkz. [İşlem merkezi görevleri için gerekli izinler](m365d-action-center.md#required-permissions-for-action-center-tasks).|
+|İzinler|Otomatik araştırma ve yanıt özelliklerini yapılandırmak için Azure Active Directory'de (<https://portal.azure.com>) veya Microsoft 365 yönetim merkezi (<https://admin.microsoft.com>) içinde Genel Yönetici veya Güvenlik Yöneticisi rolü atanmış olmalıdır. <p> Bekleyen eylemleri gözden geçirme, onaylama veya reddetme gibi otomatik araştırma ve yanıt özellikleriyle çalışmak için gereken izinleri almak için bkz. [İşlem merkezi görevleri için gerekli izinler](m365d-action-center.md#required-permissions-for-action-center-tasks).|
 |
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>Cihaz grupları için otomasyon düzeyini gözden geçirme veya değiştirme
@@ -61,7 +61,7 @@ Otomatik araştırmaların çalıştırılıp çalıştırılmadığı ve düzel
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın.
 
-2. **İzinler** altında **Ayarlar** >  **EndpointsCihaz** >  **grupları'na** gidin.
+2. **İzinler'in** >  altında **Ayarlar** > **Uç Noktaları****Cihaz grupları'na** gidin.
 
 3. Cihaz grubu ilkelerinizi gözden geçirin. Özellikle **Otomasyon düzeyi** sütununa bakın. **Tam - tehditleri otomatik olarak düzeltmenizi** öneririz.  İstediğiniz otomasyon düzeyini elde etmek için cihaz gruplarınızı oluşturmanız veya düzenlemeniz gerekebilir. Bu görevle ilgili yardım almak için aşağıdaki makalelere bakın:
    - [Tehditler nasıl düzeltilir?](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
@@ -69,7 +69,7 @@ Otomatik araştırmaların çalıştırılıp çalıştırılmadığı ve düzel
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>Office 365'da güvenlik ve uyarı ilkelerinizi gözden geçirin
 
-Microsoft, belirli riskleri tanımlamaya yardımcı olan yerleşik [uyarı ilkeleri](../../compliance/alert-policies.md) sağlar. Bu riskler Exchange yönetici izinlerinin kötüye kullanılması, kötü amaçlı yazılım etkinliği, olası dış ve iç tehditler ve bilgi idaresi riskleridir. Bazı uyarılar [Office 365 otomatik araştırma ve yanıt](../office-365-security/office-365-air.md) tetikleyebilir. [Office 365 için Defender](../office-365-security/defender-for-office-365.md) özelliklerinizin doğru yapılandırıldığından emin olun.
+Microsoft, belirli riskleri tanımlamaya yardımcı olan yerleşik [uyarı ilkeleri](../../compliance/alert-policies.md) sağlar. Bu riskler Arasında Exchange yönetici izinlerinin kötüye kullanılması, kötü amaçlı yazılım etkinliği, olası dış ve iç tehditler ve bilgi idaresi riskleri yer alır. Bazı uyarılar [Office 365 otomatik araştırma ve yanıt](../office-365-security/office-365-air.md) tetikleyebilir. [Office 365 için Defender](../office-365-security/defender-for-office-365.md) özelliklerinizin doğru yapılandırıldığından emin olun.
 
 Bazı uyarılar ve güvenlik ilkeleri otomatik araştırma tetikleyebilse de, *e-posta ve içerik için otomatik olarak düzeltme eylemi yapılmaz*. Bunun yerine, e-posta ve e-posta içeriği için tüm düzeltme eylemleri [, İşlem merkezinde](m365d-action-center.md) güvenlik operasyonları ekibinizin onayını bekler.
 
@@ -84,11 +84,11 @@ Office 365'deki güvenlik ayarları e-postanın ve içeriğin korunmasına yard�
    - [Güvenli Bağlantılar](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [Antispam](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 
-3. [SharePoint, OneDrive ve Microsoft Teams için Kasa Eklerinin](../office-365-security/mdo-for-spo-odb-and-teams.md) açık olduğundan emin olun.
+3. [SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler'in](../office-365-security/mdo-for-spo-odb-and-teams.md) açık olduğundan emin olun.
 
 4. [Exchange Online'de Sıfır saat otomatik temizlemenin (ZAP)](../office-365-security/zero-hour-auto-purge.md) etkin olduğundan emin olun.
 
-5. (Bu adım isteğe bağlıdır.) Microsoft Purview uyumluluk portalında ([https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ) [Office 365 uyarı ilkelerinizi](../../compliance/alert-policies.md) gözden geçirin. Çeşitli varsayılan uyarı ilkeleri Tehdit yönetimi kategorisindedir. Bu uyarılardan bazıları otomatik araştırma ve yanıt tetikleyebilir. Daha fazla bilgi için bkz [. Varsayılan uyarı ilkeleri](../../compliance/alert-policies.md#default-alert-policies).
+5. (Bu adım isteğe bağlıdır.) Microsoft Purview uyumluluk portalı([https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) [içinde Office 365 uyarı ilkelerinizi](../../compliance/alert-policies.md) gözden geçirin. Çeşitli varsayılan uyarı ilkeleri Tehdit yönetimi kategorisindedir. Bu uyarılardan bazıları otomatik araştırma ve yanıt tetikleyebilir. Daha fazla bilgi için bkz [. Varsayılan uyarı ilkeleri](../../compliance/alert-policies.md#default-alert-policies).
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>Microsoft 365 Defender açık olduğundan emin olun
 

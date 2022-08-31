@@ -16,12 +16,13 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: dd741bd3fabed64e7a27ddc0521bac8b318ffeed
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+- highpri
+ms.openlocfilehash: 48e316e1be7975db912dfd9ebe7380f4a9102d56
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344447"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468459"
 ---
 # <a name="view-and-edit-security-policies-and-settings-in-microsoft-defender-for-business"></a>güvenlik ilkelerini ve ayarlarını İş için Microsoft Defender görüntüleme ve düzenleme
 

@@ -3,7 +3,7 @@ title: Microsoft 365 veri konumları
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/13/2022
+ms.date: 08/30/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 müşteri verilerinizin dünya çapında nerede depolandığını belirleme
-ms.openlocfilehash: 8ece0439bafcb6c183cf57cef7648c6bfa3f62ee
-ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
+ms.openlocfilehash: b786892b99e2b67114c34006c77f2e394cba6f45
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67393120"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467931"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 müşteri verilerinizin depolandığı yer
 
@@ -37,9 +37,9 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili işl
 
 Bekleyen müşteri verilerinin depolama konumuna ilişkin sözleşmeye bağlı taahhütler hakkında bilgi edinmek için [Microsoft Ürün ve Hizmetleri Veri Koruma Eki'nde (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) bilgi bulabilirsiniz.
 
-Azure Active Directory veri konumları için lütfen [Azure'da veri yerleşimi](https://azure.microsoft.com/global-infrastructure/data-residency/#overview) sayfasını ziyaret edin.
+Azure Active Directory veri konumları için bkz. [Azure'da veri yerleşimi](https://azure.microsoft.com/global-infrastructure/data-residency/#overview).
 
-Müşterinin fatura adresi Avrupa dışındaysa ve Müşterinin Office 365 Eğitim bir aboneliği varsa, OST'nin "Çekirdek Çevrimiçi Hizmetler için Bekleyen Müşteri Verilerinin Konumu" bölümüne bakılmaksızın, Microsoft Müşterinin Office 365 kiracısını avrupa veya Kuzey Amerika içinde herhangi bir yerde sunabilir, Müşteri Verilerini'ne aktarabilir ve bekleyen müşteri verilerini depolar.  Müşterinin faturalama adresi Avrupa'daysa ve Müşterinin Office 365 Eğitim bir aboneliği varsa, OST'nin "Çekirdek Çevrimiçi Hizmetler için Bekleyen Müşteri Verilerinin Konumu" bölümüne bakılmaksızın, Microsoft Müşterinin Office 365 kiracısını avrupa birliği içinde herhangi bir yerde sunabilir, Müşteri Verilerini bu kiracıya aktarabilir ve bekleyen müşteri verilerini depolar.
+Fatura adresiniz Avrupa dışındaysa ve bir Office 365 Eğitim aboneliğiniz varsa, OST'nin "Core Online Services için Bekleyen Müşteri Verilerinin Konumu" bölümüne bakılmaksızın, Microsoft Office 365 kiracınızı içinde sunabilir, verilerinizi avrupa veya Kuzey Amerika herhangi bir yerde beklemede saklayabilir.  Fatura adresiniz Avrupa'daysa ve bir Office 365 Eğitim aboneliğiniz varsa, OST'nin "Core Online Services için Bekleyen Müşteri Verilerinin Konumu" bölümüne bakılmaksızın Microsoft, Office 365 kiracınızı içinde sağlayıp verilerinizi Avrupa Birliği'nin herhangi bir yerindeki beklemede saklayabilir.
 
 ## <a name="faq"></a>SSS
 
@@ -5209,6 +5209,7 @@ Yeni Microsoft 365 kiracıları, bu kiracının ilk aboneliğiyle ilişkili fatu
 | Viva öğrenme | Avrupa Birliği |
 | Yammer | Avrupa Birliği |
 | Forms | Amerika Birleşik Devletleri |
+
 *Müşteri verilerini bekleyen Exchange Online, SharePoint Online veya OneDrive İş depolayan veya yerel olarak dağıtılan her hizmet.
 </p></details>
 

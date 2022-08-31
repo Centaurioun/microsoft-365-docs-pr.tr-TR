@@ -2,7 +2,7 @@
 title: Denetimli klasör erişimini özelleştirin
 description: Denetimli klasör erişimiyle korunması gereken diğer klasörleri ekleyin veya önemli dosyalardaki değişiklikleri yanlış engelleyen uygulamalara izin verin.
 keywords: Denetimli klasör erişimi, windows 10, windows 11, windows defender, fidye yazılımı, koruma, dosyalar, klasörler, özelleştirme, klasör ekleme, uygulama ekleme, izin verme, yürütülebilir dosya ekleme
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,16 +11,16 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 3d6f763bd2ac2c4352f1b200c05c3079bc615aaf
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: 5b46a2a4f520ea1d7d92366b8e356b895d12563a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139351"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471620"
 ---
 # <a name="customize-controlled-folder-access"></a>Denetimli klasör erişimini özelleştirin
 
@@ -35,7 +35,7 @@ ms.locfileid: "66139351"
 > [!TIP]
 > Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Denetimli klasör erişimi, değerli verileri fidye yazılımı gibi kötü amaçlı uygulamalardan ve tehditlerden korumanıza yardımcı olur. Windows Server 2019, Windows Server 2022, Windows 10 ve Windows 11 istemcilerinde denetimli klasör erişimi desteklenir. Bu makalede, denetimli klasör erişim özelliklerinin nasıl özelleştirileceği açıklanır ve aşağıdaki bölümler yer alır:
+Denetimli klasör erişimi, değerli verileri fidye yazılımı gibi kötü amaçlı uygulamalardan ve tehditlerden korumanıza yardımcı olur. Denetimli klasör erişimi Windows Server 2019, Windows Server 2022, Windows 10 ve Windows 11 istemcilerinde desteklenir. Bu makalede, denetimli klasör erişim özelliklerinin nasıl özelleştirileceği açıklanır ve aşağıdaki bölümler yer alır:
 
 - [Ek klasörleri koruma](#protect-additional-folders)
 - [Korumalı klasörlere erişmesine izin verilmesi gereken uygulamalar ekleme](#allow-specific-apps-to-make-changes-to-controlled-folders)
@@ -57,7 +57,7 @@ Korumalı klasörleri eklemek ve kaldırmak için Windows Güvenliği uygulamas�
 
 ### <a name="use-the-windows-security-app-to-protect-additional-folders"></a>Ek klasörleri korumak için Windows Güvenliği uygulamasını kullanma
 
-1. Görev çubuğunda kalkan simgesini seçerek veya Başlat menüsü *güvenlik* arayarak Windows Güvenliği uygulamasını açın.
+1. Görev çubuğunda kalkan simgesini seçerek veya Başlat menüsünde *güvenlik* arayarak Windows Güvenliği uygulamasını açın.
 
 2. **Virüs & tehdit koruması'nı** seçin ve **fidye yazılımı koruması** bölümüne gidin.
 
@@ -77,7 +77,7 @@ Korumalı klasörleri eklemek ve kaldırmak için Windows Güvenliği uygulamas�
 
 3. **grup ilkesi Yönetim Düzenleyicinizde** **Bilgisayar yapılandırma** \> **İlkeleri** \> **Yönetim şablonları'na** gidin.
 
-4. **Exploit Guard** \> **Denetimli klasör erişimi** **Windows Defender Microsoft Defender Virüsten Koruma** \> **bileşenleri** \> Windows için ağacı genişletin. <br/>**NOT**: Windows'ın eski sürümlerinde **Microsoft Defender Virüsten Koruma** yerine **Windows Defender Virüsten Koruma** görebilirsiniz.
+4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Windows Defender Exploit Guard** \> **Denetimli klasör erişimi** olarak genişletin. <br/>**NOT**: Windows'un eski sürümlerinde **Microsoft Defender Virüsten Koruma** yerine **Windows Defender Virüsten Koruma** görebilirsiniz.
 
 5. **Yapılandırılmış korumalı klasörler'e** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. **Göster'i** seçin ve korumak istediğiniz her klasörü belirtin.
 
@@ -85,7 +85,7 @@ Korumalı klasörleri eklemek ve kaldırmak için Windows Güvenliği uygulamas�
 
 ### <a name="use-powershell-to-protect-additional-folders"></a>Ek klasörleri korumak için PowerShell kullanma
 
-1. Başlat menüsü **PowerShell** yazın, **Windows PowerShell** sağ tıklayın ve **Yönetici olarak çalıştır'ı** seçin
+1. Başlat menüsüne **PowerShell** yazın, **Windows PowerShell** sağ tıklayın ve **Yönetici olarak çalıştır'ı** seçin
 
 2. aşağıdaki PowerShell cmdlet'ini yazın ve yerine `<the folder to be protected>` klasörün yolunu yazın (örneğin `"c:\apps\"`):
 
@@ -108,7 +108,7 @@ Uygulamaların korumalı klasörlerde değişiklik yapmasına izin vermek için 
 Belirli uygulamaların her zaman güvenli kabul edilip değerlendirilmediğini belirtebilir ve korumalı klasörlerdeki dosyalara yazma erişimi verebilirsiniz. Tanıdığınız ve güvendiğiniz belirli bir uygulama denetimli klasör erişimi özelliği tarafından engelleniyorsa uygulamalara izin vermek yararlı olabilir.
 
 > [!IMPORTANT]
-> varsayılan olarak, Windows izin verilenler listesine kolay olarak kabul edilen uygulamalar ekler. Otomatik olarak eklenen bu tür uygulamalar, Windows Güvenliği uygulamasında gösterilen listeye veya ilişkili PowerShell cmdlet'leri kullanılarak kaydedilmez. Çoğu uygulamayı eklemeniz gerekmez. Uygulamaları yalnızca engelleniyorsa ekleyin ve bunların güvenilirliğini doğrulayabilirsiniz.
+> Varsayılan olarak, Windows izin verilenler listesine kolay kabul edilen uygulamalar ekler. Otomatik olarak eklenen bu tür uygulamalar, Windows Güvenliği uygulamasında gösterilen listeye veya ilişkili PowerShell cmdlet'leri kullanılarak kaydedilmez. Çoğu uygulamayı eklemeniz gerekmez. Uygulamaları yalnızca engelleniyorsa ekleyin ve bunların güvenilirliğini doğrulayabilirsiniz.
 
 Bir uygulama eklediğinizde, uygulamanın konumunu belirtmeniz gerekir. Korumalı klasörlere yalnızca o konumdaki uygulamaya erişim izni verilir. Uygulama (aynı ada sahip) farklı bir konumdaysa, izin verilenler listesine eklenmez ve denetimli klasör erişimi tarafından engellenebilir.
 
@@ -130,15 +130,15 @@ Bir uygulama eklediğinizde, uygulamanın konumunu belirtmeniz gerekir. Korumal�
 
 1. grup ilkesi yönetim cihazınızda [grup ilkesi Yönetim Konsolu'nu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true) açın, yapılandırmak istediğiniz grup ilkesi Nesnesine sağ tıklayın ve **Düzenle'yi** seçin.
 
-2. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na** gidin ve **Yönetim şablonları'nı** seçin.
+2. **Grup İlkesi Yönetimi Düzenleyicisi**'nde **Bilgisayar yapılandırması**'na gidin ve **Yönetim şablonları**'nı seçin.
 
-3. **Exploit Guard** \> **Denetimli klasör erişimi** **Windows Defender Microsoft Defender Virüsten Koruma** \> **bileşenleri** \> Windows için ağacı genişletin.
+3. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Windows Defender Exploit Guard** \> **Denetimli klasör erişimi** olarak genişletin.
 
 4. **İzin verilen uygulamaları yapılandır** ayarına çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. **Göster'i** seçin ve her uygulamayı girin.
 
 ### <a name="use-powershell-to-allow-specific-apps"></a>Belirli uygulamalara izin vermek için PowerShell kullanma
 
-1. Başlat menüsü **PowerShell** yazın, **Windows PowerShell** sağ tıklayın ve **Yönetici olarak çalıştır'ı** seçin
+1. Başlat menüsüne **PowerShell** yazın, **Windows PowerShell** sağ tıklayın ve **Yönetici olarak çalıştır'ı** seçin
 2. Aşağıdaki cmdlet'i girin:
 
     ```PowerShell

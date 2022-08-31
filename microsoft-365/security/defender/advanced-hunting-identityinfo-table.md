@@ -1,10 +1,11 @@
 ---
-title: Gelişmiş av şemasında IdentityInfo tablosu
-description: Gelişmiş av şemasının IdentityInfo tablosunda kullanıcı hesabı bilgileri hakkında bilgi
-keywords: gelişmiş av, tehdit avı, siber tehdit avı, Microsoft 365 Defender, Microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, HesapBilgileri, IdentityInfo, hesap
+title: Gelişmiş tehdit avcılığı şemasında IdentityInfo tablosu
+description: Gelişmiş tehdit avcılığı şemasının IdentityInfo tablosunda kullanıcı hesabı bilgileri hakkında bilgi edinin
+keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, AccountInfo, IdentityInfo, hesap
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,52 +18,51 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b09d1774ab35dbca9119deb98864d6c6f78051a9
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 587cba0befbed71d1f051858211efce63aa711f6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63019020"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476692"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-Gelişmiş `IdentityInfo` arama [şemasında yer alan](advanced-hunting-overview.md) tablo, ürün şemaları dahil olmak üzere çeşitli hizmetlerden alınan kullanıcı hesapları Azure Active Directory. Bu tablodan bilgi dönüşen sorgular oluşturmak için bu başvuruyu kullanın.
+`IdentityInfo` [Gelişmiş tehdit avcılığı](advanced-hunting-overview.md) şemasındaki tablo, Azure Active Directory dahil olmak üzere çeşitli hizmetlerden elde edilen kullanıcı hesapları hakkında bilgi içerir. Bu tablodan bilgi döndüren sorgular oluşturmak için bu başvuruyu kullanın.
 
 >[!NOTE]
->Bu tablonun adı .`AccountInfo` Yeniden adlandırmalar sırasında portala kaydedilen tüm sorgular otomatik olarak güncelleştirilir. Başka bir yere kayıtlı sorguları kontrol edin.
+>Bu tablo' dan `AccountInfo`yeniden adlandırıldı. Yeniden adlandırmalar sırasında portala kaydedilen tüm sorgular otomatik olarak güncelleştirilir. Başka bir yere kaydettiğiniz sorguları denetleyin.
 
-Gelişmiş av şemasında yer alan diğer tablolar hakkında bilgi için bkz [. gelişmiş av başvurusu](advanced-hunting-schema-tables.md).
+Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi için [gelişmiş avcılık başvurusuna bakın](advanced-hunting-schema-tables.md).
 
 | Sütun adı | Veri türü | Açıklama |
 |-------------|-----------|-------------|
-| `AccountObjectId` | `string` | Azure AD'de hesabın benzersiz tanımlayıcısı |
+| `AccountObjectId` | `string` | Azure AD'daki hesap için benzersiz tanımlayıcı |
 | `AccountUpn` | `string` | Hesabın kullanıcı asıl adı (UPN) |
 | `OnPremSid` | `string` | Hesabın şirket içi güvenlik tanımlayıcısı (SID) |
 | `CloudSid` | `string` | Hesabın bulut güvenlik tanımlayıcısı |
-| `GivenName` | `string` | Hesap kullanıcı adının veya adının verildiği ad |
-| `Surname` | `string` | Hesap kullanıcı adının soyadı, aile adı veya soyadı |
-| `AccountDisplayName` | `string` | Adres defteri'de görüntülenen hesap kullanıcı adı. Normalde, belirli bir veya ad, ortadaki bir başlatma ve soyadı veya surname bileşimidir. |
-| `Department` | `string` | Hesap kullanıcısı tarafından ait olduğu departmanın adı |
-| `JobTitle` | `string` | Hesap kullanıcılarının iş unvanı |
+| `GivenName` | `string` | Hesap kullanıcısının adı veya adı |
+| `Surname` | `string` | Hesap kullanıcısının soyadı, aile adı veya soyadı |
+| `AccountDisplayName` | `string` | Adres defterinde görüntülenen hesap kullanıcısının adı. Genellikle belirli bir adın veya adın, ikinci bir başlatmanın ve soyadının veya soyadının birleşimidir. |
+| `Department` | `string` | Hesap kullanıcısının ait olduğu bölümün adı |
+| `JobTitle` | `string` | Hesap kullanıcısının iş unvanı |
 | `AccountName` | `string` | Hesabın kullanıcı adı |
 | `AccountDomain` | `string` | Hesabın etki alanı |
 | `EmailAddress` | `string` | Hesabın SMTP adresi |
-| `SipProxyAddress` | `string` | Hesabın IP (VOIP) oturumları üzerinden ses (SIP) adresi |
-| `City` | `string` | Hesap kullanıcıs 2007'nin bulunduğu şehir |
-| `Country` | `string` | Hesap kullanıcıs ın bulunduğu Ülke/Bölge |
+| `SipProxyAddress` | `string` | Hesabın IP üzerinden ses (VOIP) oturum başlatma protokolü (SIP) adresi |
+| `City` | `string` | Hesap kullanıcısının bulunduğu şehir |
+| `Country` | `string` | Hesap kullanıcısının bulunduğu ülke/bölge |
 | `IsAccountEnabled` | `boolean` | Hesabın etkin olup olmadığını gösterir |
 
 ## <a name="related-topics"></a>İlgili konular
-- [Gelişmiş ava genel bakış](advanced-hunting-overview.md)
-- [Sorgu dilini öğrenme](advanced-hunting-query-language.md)
-- [Paylaşılan sorguları kullanma](advanced-hunting-shared-queries.md)
-- [Cihazlar, e-postalar, uygulamalar ve kimlikler arasında iş avı](advanced-hunting-query-emails-devices.md)
-- [Şemayı anlama](advanced-hunting-schema-tables.md)
-- [Sorguyla ilgili en iyi yöntemleri uygulama](advanced-hunting-best-practices.md)
+- [Gelişmiş avcılığa genel bakış](advanced-hunting-overview.md)
+- [Sorgu dilini öğrenin](advanced-hunting-query-language.md)
+- [Paylaşılan sorguları kullanın](advanced-hunting-shared-queries.md)
+- [Cihazlar, e-postalar, uygulamalar ve kimlikler arasında avlayın](advanced-hunting-query-emails-devices.md)
+- [Şemayı anlayın](advanced-hunting-schema-tables.md)
+- [Sorgu en iyi yöntemlerini uygulayın](advanced-hunting-best-practices.md)

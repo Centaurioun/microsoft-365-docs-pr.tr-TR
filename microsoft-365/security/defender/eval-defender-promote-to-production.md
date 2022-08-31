@@ -3,7 +3,8 @@ title: 7. Adım. Microsoft 365 Defender değerlendirme ortamınızı Üretim'e y
 description: MDI, MDO, MDE ve Cloud Apps için Defender değerlendirmelerinizi Microsoft 365 Defender veya M365D'deki canlı ortamınıza yükseltmek için bu makaleyi kullanın.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 769a70177ada62b4dbb505a8363fe3bdbfc4a59a
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 018b8047ecce5dd4d41becb19ed779025715fe70
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748747"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479676"
 ---
 # <a name="step-7-promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>7. Adım. Microsoft 365 Defender değerlendirme ortamınızı üretim ortamına yükseltme
 

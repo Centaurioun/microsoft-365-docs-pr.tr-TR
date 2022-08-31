@@ -4,7 +4,8 @@ description: Kimlik için Defender'dan Microsoft 365 Defender hesapları ve otur
 keywords: Microsoft 365 Defender, Microsoft 365 Defender kullanmaya başlama, güvenlik merkezi yeniden yönlendirmesi
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b5c122f01d37d066e0f20bf817ca45ad5c57480b
-ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
+ms.openlocfilehash: c66794d8f09d93b2582938d3eda996be7f9b5400
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "66861781"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471069"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-identity-to-microsoft-365-defender"></a>Hesapları Kimlik için Microsoft Defender'den Microsoft 365 Defender'a yeniden yönlendirme
 

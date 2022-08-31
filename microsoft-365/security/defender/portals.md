@@ -2,7 +2,8 @@
 title: Microsoft güvenlik portalları ve yönetim merkezleri
 description: Microsoft 365 güvenliğiyle ilgili çeşitli hizmetleri yönetmek için doğru Microsoft yönetim merkezini veya portalı bulun
 keywords: güvenlik, portallar, Microsoft 365, M365, güvenlik merkezi, yönetim merkezi, URL, bağlantı, Microsoft 365 Defender, Uç Nokta için Microsoft Defender, Microsoft Defender Güvenlik Merkezi, Kimlik için Microsoft Defender, Office 365 için Microsoft Defender, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, Bulut Uygulamaları Güvenliği , Azure AD, güvenlik & uyumluluğu Merkezi
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -15,13 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 837d4fc455c31aee0aac35e7f73f0d19a40d700a
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: f0ca8e03bf89afd148611c0af26c9ad4ca30f269
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433717"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479764"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft güvenlik portalları ve yönetim merkezleri
 

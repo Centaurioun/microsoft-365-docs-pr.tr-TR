@@ -3,7 +3,8 @@ title: Adım 3. SOC hizmet kataloğunuzla Microsoft 365 Defender tümleştirmeyi
 description: Microsoft 365 Defender hizmet güvenlik işlemleri kataloğunuzla tümleştirmenin temelleri.
 keywords: olaylar, uyarılar, araştırma, bağıntı, saldırı, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365, olay yanıtı, siber saldırı, secops, güvenlik işlemleri, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: f6cab6be7d41f1d71a6ccf69fbedfa616694ee78
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5db25bc333c09c284971b86c44a088a75fcaa92f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438498"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479654"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Adım 3. SOC hizmet kataloğunuzla Microsoft 365 Defender tümleştirmeyi planlama
 
@@ -61,7 +61,7 @@ Microsoft 365 Defender bileşenleri şunlardır:
 
 - **Kimlik için Microsoft Defender** (eski adıyla Azure Gelişmiş Tehdit Koruması, Azure ATP olarak da bilinir), gelişmiş tehditleri, güvenliği aşılmış kimlikleri ve yönlendirilen kötü amaçlı insider eylemlerini tanımlamak, algılamak ve araştırmak için Active Directory Domain Services (AD DS) sinyallerini kullanan bulut tabanlı bir güvenlik çözümüdür Kuruluş.
 
-- **Uç Nokta için Microsoft Defender**, risk tabanlı güvenlik açığı yönetimi ve değerlendirme, saldırı yüzeyi azaltma, davranış tabanlı ve bulut destekli yeni nesil koruma içeren cihazlar için bütünsel, bulut tarafından sunulan bir uç nokta güvenlik çözümüdür. uç noktada algılama ve yanıtlama (EDR), otomatik araştırma ve düzeltme, yönetilen avcılık hizmetleri, zengin API'ler ve birleşik güvenlik yönetimi.
+- **Uç Nokta için Microsoft Defender**, risk tabanlı güvenlik açığı yönetimi ve değerlendirmesi, saldırı yüzeyi azaltma, davranış tabanlı ve bulut destekli yeni nesil koruma, uç nokta algılama ve yanıt (EDR), otomatik araştırma ve düzeltme, yönetilen avcılık hizmetleri, zengin API'ler ve birleşik güvenlik yönetimi içeren cihazlar için bütünsel, bulut tarafından sunulan bir uç nokta güvenlik çözümüdür .
 
  - **Office 365 için Microsoft Defender**, sağlam sıfır gün koruması sağlayarak kuruluşların bilinmeyen kötü amaçlı yazılımlara ve virüslere karşı korunmasına yardımcı olan bulut tabanlı bir e-posta filtreleme hizmetidir ve kuruluşları gerçek zamanlı olarak zararlı bağlantılardan korumaya yönelik özellikler içerir. Ayrıca kapsamlı bir araştırma ve avcılık, yanıt ve düzeltme, farkındalık ve eğitim ve güvenli duruş özellikleri sunar.
 

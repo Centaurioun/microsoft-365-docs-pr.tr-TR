@@ -10,19 +10,20 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 08/29/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 3f69c82a6a401118d50372adec03b9cdbed0f502
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+- highpri
+ms.openlocfilehash: 05bfff000929fcc26bd358b1b76bbdd2dd1f250e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309405"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472996"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Cihazları İş için Microsoft Defender ekleme
 
@@ -248,7 +249,8 @@ Sunucunuz için işletim sistemini seçin:
 ## <a name="windows-server"></a>Windows Server
 
 > [!IMPORTANT]
-> **Windows Server uç noktalarını ekleme özelliği şu anda önizleme aşamasındadır**. Windows Server uç noktasını eklemeden önce aşağıdaki gereksinimleri karşıladığınızdan emin olun:
+> **Windows Server uç noktalarını ekleme özelliği şu anda önizleme aşamasındadır**. Genel kullanılabilirlik duyurulduğunda, eklenen her sunucu için bir İş için Microsoft Defender sunucuları lisansı satın alınmalıdır; aksi durumda bu sunucular kullanıma alınabilir.
+> Windows Server uç noktasını eklemeden önce aşağıdaki gereksinimleri karşıladığınızdan emin olun:
 > - **Önizleme özellikleri** ayarı açıktır. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ), **Ayarlar** > **Uç Noktaları** > **Genel** > **Gelişmiş özellikler****Önizleme özellikleri'ne** >  gidin.
 > - Windows Server için zorlama kapsamı açık. **Ayarlar** > **Uç Noktaları** > **Yapılandırma yönetimi** > **Zorlama kapsamı'na** gidin. **MEM'den güvenlik yapılandırma ayarlarını zorunlu kılmak için MDE kullan'ı** seçin, **Windows Server'ı** ve ardından **Kaydet'i** seçin.
 
@@ -303,7 +305,8 @@ Komut çalıştırıldıktan sonra Komut İstemi penceresi otomatik olarak kapat
 ## <a name="linux-server"></a>Linux Server
 
 > [!IMPORTANT]
-> **Linux Server uç noktalarını ekleme özelliği şu anda önizleme aşamasındadır**. Linux Server uç noktasını eklemeden önce aşağıdaki gereksinimleri karşıladığınızdan emin olun:
+> **Linux Server uç noktalarını ekleme özelliği şu anda önizleme aşamasındadır**. Genel kullanılabilirlik duyurulduğunda, eklenen her sunucu için bir İş için Microsoft Defender sunucuları lisansı satın alınmalıdır; aksi durumda bu sunucular kullanıma alınabilir.
+> Linux Server uç noktasını eklemeden önce aşağıdaki gereksinimleri karşıladığınızdan emin olun:
 > - **Önizleme özellikleri** ayarı açıktır. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ), **Ayarlar** > **Uç Noktaları** > **Genel** > **Gelişmiş özellikler****Önizleme özellikleri'ne** >  gidin.
 > - [Linux'ta Uç Nokta için Microsoft Defender önkoşullarını](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites) karşılarsınız.
 

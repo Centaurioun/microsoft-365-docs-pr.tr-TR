@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Duyarlılık etiketi oluşturduğunuzda, dosyalara ve e-postalara otomatik olarak bir etiket atayabilir veya kullanıcılardan önerdiğiniz etiketi seçmelerini isteyebilirsiniz.
-ms.openlocfilehash: 611719819bf64918cdd4f974214d8926e59aecb3
-ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.openlocfilehash: b986d875bc8a3368cdb6e85aa00c23b4783eaa46
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67434536"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476582"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>İçeriğe otomatik olarak bir hassasiyet etiketi uygulama
 
@@ -92,7 +92,7 @@ Microsoft 365'te içeriğe otomatik olarak duyarlılık etiketi uygulamak için 
 |:-----|:-----|:-----|
 |Uygulama bağımlılığı|Evet ([en düşük sürümler](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |No \* |
 |Konuma göre kısıtla|Hayır |Evet |
-|Koşullar: Eğitilebilir sınıflandırıcılar|Evet |Hayır |
+|Koşullar: Eğitilebilir sınıflandırıcılar|Evet |Önizlemede |
 |Koşullar: E-posta için paylaşım seçenekleri ve ek seçenekler|Hayır |Evet |
 |Koşullar: Özel Durumlar|Hayır |Evet (yalnızca e-posta) |
 |Öneriler, ilke araç ipucu ve kullanıcı geçersiz kılmaları|Evet |Hayır |
@@ -162,7 +162,7 @@ Bu duyarlılık etiketi otomatik olarak uygulandığında, kullanıcı Office uy
 
 ### <a name="configuring-sensitive-info-types-for-a-label"></a>Etiket için hassas bilgi türlerini yapılandırma
 
-**Hassas bilgi türleri** seçeneğini belirlediğinizde, veri kaybı önleme (DLP) ilkesi oluştururken kullandığınız hassas bilgi türlerinin listesini görürsünüz. Bu nedenle, örneğin, kredi kartı numaraları, sosyal güvenlik numaraları veya pasaport numaraları gibi müşterilerin kişisel bilgilerini içeren içeriklere otomatik olarak Çok Gizli etiketi uygulayabilirsiniz:
+**Hassas bilgi türleri** seçeneğini belirlediğinizde, veri kaybı önleme (DLP) ilkesi oluştururken kullandığınız [hassas bilgi türlerinin](sensitive-information-type-learn-about.md) listesini görürsünüz. Bu nedenle, örneğin, kredi kartı numaraları, sosyal güvenlik numaraları veya pasaport numaraları gibi müşterilerin kişisel bilgilerini içeren içeriklere otomatik olarak Çok Gizli etiketi uygulayabilirsiniz:
 
 ![Office uygulamalarında otomatik etiketleme için hassas bilgi türleri.](../media/sensitivity-labels-sensitive-info-types.png)
 
@@ -335,9 +335,9 @@ Son olarak, simülasyon modunu kullanarak otomatik etiketleme ilkenizi çalışt
 
 7. **Ortak veya gelişmiş kuralları ayarlama** sayfası için: Tüm seçtiğiniz konumlarda etiketlenmek üzere içeriği tanımlayan kuralları tanımlamak için **Ortak** kurallar varsayılanını koruyun. Konum başına exchange için daha fazla seçenek de dahil olmak üzere farklı kurallara ihtiyacınız varsa **Gelişmiş kurallar'ı** seçin. Ardından **İleri'yi** seçin.
 
-    Kurallar hassas bilgi türlerini ve paylaşım seçeneklerini içeren koşulları kullanır:
-    - Hassas bilgi türleri için hem yerleşik hem de özel hassas bilgi türlerini seçebilirsiniz.
-    - Paylaşılan seçenekler için **yalnızca kuruluşumdaki kişilerle veya kuruluşum** **dışındaki kişilerle** seçim yapabilirsiniz.
+    Kurallar [hassas bilgi türleri](sensitive-information-type-learn-about.md), [eğitilebilir sınıflandırıcılar](classifier-learn-about.md) ve paylaşım seçeneklerini içeren koşulları kullanır:
+    - Koşul olarak hassas bir bilgi türü veya eğitilebilir sınıflandırıcı seçmek için **İçerik içerir'in** altında **Ekle'yi** ve ardından **Hassas bilgi türleri** veya **Eğitilebilir sınıflandırıcılar'ı** seçin.
+    - Koşul olarak paylaşım seçeneklerini belirlemek için **İçerik paylaşıldı'nın** altında **yalnızca kuruluşumdaki kişilerle veya kuruluşum** **dışındaki kişilerle** seçeneğini belirleyin.
 
     Konumunuz **Exchange** ise ve **Gelişmiş kurallar'ı** seçtiyseniz seçebileceğiniz başka koşullar da vardır:
     - Gönderen IP adresi

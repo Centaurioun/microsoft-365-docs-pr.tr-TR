@@ -1,8 +1,8 @@
 ---
-title: İstemci çözümleyiciSI HTML raporunu anlama
-description: Yeni İstemci Çözümleyicisi HTML Uç Nokta için Microsoft Defender çözümlemeyi öğrenin
+title: İstemci çözümleyicisi HTML raporunu anlama
+description: Uç Nokta için Microsoft Defender İstemci Çözümleyicisi HTML raporunu analiz etmeyi öğrenin
 keywords: istemci çözümleyici raporu, html raporu, istemci çözümleyicisi
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,45 +15,45 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 1f843c62d44ed7c25f07568cc0ee92709fb080a7
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: b1b83200b9fd0f67d832b4dbb41352bebfa418bd
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468909"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470795"
 ---
-# <a name="understand-the-client-analyzer-html-report"></a>İstemci çözümleyiciSI HTML raporunu anlama
+# <a name="understand-the-client-analyzer-html-report"></a>İstemci çözümleyicisi HTML raporunu anlama
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-İstemci çözümleyicisi, html biçiminde bir rapor üretir. Olası algılayıcı sorunlarını tespit etmek ve bu sorunları giderebilirsiniz.
+İstemci çözümleyicisi HTML biçiminde bir rapor oluşturur. Sorunları giderebilmeniz için olası algılayıcı sorunlarını belirlemek için raporu nasıl gözden geçireceğinizi öğrenin.
 
 Raporu anlamak için aşağıdaki örneği kullanın.
 
- Son kullanma tarihi geçen Kuruluş Kimliği'ne ekli bir makinede çözümleyicinin örnek çıktısı ve gerekli kullanıcı URL'lerinden Uç Nokta için Microsoft Defender başarısız:
+ Süresi dolmuş Kuruluş Kimliği'ne eklenen ve gerekli Uç Nokta için Microsoft Defender URL'lerinden birine ulaşamayan bir makinedeki çözümleyiciden örnek çıktı:
 
 :::image type="content" source="images/147cbcf0f7b6f0ff65d200bf3e4674cb.png" alt-text="MDE İstemci Çözümleyicisi Sonuçları sayfası" lightbox="images/147cbcf0f7b6f0ff65d200bf3e4674cb.png":::
 
-- En üstte, başvuru için betik sürümü ve betik çalışma zamanı listelenir
-- Cihaz **Bilgileri bölümünde** , çözümleyicinin çalıştır çalıştır olduğu cihazı benzersiz bir şekilde tanımlamak için temel işletim sistemi ve cihaz tanımlayıcıları gösterilir.
-- Uç **Nokta Güvenlik Ayrıntıları**, algılayıcı Uç Nokta için Microsoft Defender de dahil olmak üzere konuyla ilgili Microsoft Defender Virüsten Koruma genel bilgiler sağlar. Önemli işlemler beklendiği gibi çevrimiçi yoksa renk kırmızıya değiştirir.
+- En üstte, betik sürümü ve betik çalışma zamanı başvuru için listelenir
+- **Cihaz Bilgileri** bölümü, çözümleyicinin üzerinde çalıştığı cihazı benzersiz olarak tanımlamak için temel işletim sistemi ve cihaz tanımlayıcıları sağlar.
+- **Endpoint Security Details**, Microsoft Defender Virüsten Koruma ve algılayıcı işlemi de dahil olmak üzere Uç Nokta için Microsoft Defender ile ilgili işlemler hakkında genel bilgiler sağlar. Önemli işlemler beklendiği gibi çevrimiçi değilse renk kırmızıya dönüşür.
   
--   Uç **Nokta Güvenlik Ayrıntıları**, algılayıcı Uç Nokta için Microsoft Defender de dahil olmak üzere konuyla ilgili Microsoft Defender Virüsten Koruma genel bilgiler sağlar. Önemli işlemler beklendiği gibi çevrimiçi yoksa renk kırmızıya değiştirir.
+-   **Endpoint Security Details**, Microsoft Defender Virüsten Koruma ve algılayıcı işlemi de dahil olmak üzere Uç Nokta için Microsoft Defender ile ilgili işlemler hakkında genel bilgiler sağlar. Önemli işlemler beklendiği gibi çevrimiçi değilse renk kırmızıya dönüşür.
 
-    :::image type="content" source="images/85f56004dc6bd1679c3d2c063e36cb80.png" alt-text="Sonuçları Denetleme Özeti sayfası" lightbox="images/85f56004dc6bd1679c3d2c063e36cb80.png":::
+    :::image type="content" source="images/85f56004dc6bd1679c3d2c063e36cb80.png" alt-text="Sonuçları Denetle Özeti sayfası" lightbox="images/85f56004dc6bd1679c3d2c063e36cb80.png":::
 
--   Sonuçları **Denetleme Özeti'nin** altında, çözümleyici tarafından algılanan hata, uyarı veya bilgisel olaylar için birleştirilmiş bir sayınız olur.
+-   **Sonuçları Denetle Özeti** bölümünde çözümleyici tarafından algılanan hata, uyarı veya bilgilendirici olaylar için toplu bir sayı elde edersiniz.
 
--   Ayrıntılı **Sonuçlar'da**, sonuçların ve çözümleyicinin yaptığı gözlemlere dayalı rehberlikle birlikte bir liste (önem derecesine göre sıralanmış) gösterilir.
+-   **Ayrıntılı Sonuçlar** bölümünde, sonuçların ve çözümleyici tarafından yapılan gözlemlere göre kılavuzun yer aldığı bir liste (önem derecesine göre sıralanmış) görürsünüz.
 
-## <a name="open-a-support-ticket-to-microsoft-and-include-the-analyzer-results"></a>Microsoft'a bir destek bileti açın ve Çözümleyici sonuçlarını dahil
+## <a name="open-a-support-ticket-to-microsoft-and-include-the-analyzer-results"></a>Microsoft'a bir destek bileti açın ve Çözümleyici sonuçlarını ekleyin
 
-Destek bileti a [açılışında çözümleyici sonuç dosyalarını eklemek](contact-support.md#open-a-service-request) için Ekler bölümünü kullanmaya **ve dosyayı** eklemeye emin `MDEClientAnalyzerResult.zip` olun:
+[Destek bileti açarken](contact-support.md#open-a-service-request) çözümleyici sonuç dosyalarını eklemek için **Ekler** bölümünü kullandığınızdan ve dosyayı eklediğinizden `MDEClientAnalyzerResult.zip` emin olun:
 
 :::image type="content" source="images/508c189656c3deb3b239daf811e33741.png" alt-text="Ek istemi" lightbox="images/508c189656c3deb3b239daf811e33741.png":::
 
 > [!NOTE]
-> Dosya boyutu 25 MB'den büyükse, davanıza atanan destek mühendisi, çözümleme için büyük dosyaları karşıya yüklemek için özel bir güvenli çalışma alanı sağlar.
+> Dosya boyutu 25 MB'tan büyükse, servis talebinize atanan destek mühendisi analiz için büyük dosyaları karşıya yüklemek için ayrılmış bir güvenli çalışma alanı sağlar.

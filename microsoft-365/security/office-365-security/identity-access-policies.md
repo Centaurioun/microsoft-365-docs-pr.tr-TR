@@ -20,13 +20,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 ms.technology: mdo
-ms.openlocfilehash: 35acb32c9a27ec32c78f4f247257d589a9fefc04
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: e47dffc84870a34cb22aa8246b82ce230bcd7ebd
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750066"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468195"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Yaygın Sıfır Güven kimlik ve cihaz erişim ilkeleri
 
@@ -110,7 +111,7 @@ Aşağıdaki tablolarda, oturum açma riski temelinde MFA gerektirmek için Koş
 
 **Atamalar** bölümünde:
 
-|Ayar|Özellikler|Değer|Notlar|
+|Ayar|Özellikler|Değerler|Notlar|
 |---|---|---|---|
 |Kullanıcılar ve gruplar|Içerir|**Kullanıcılar ve gruplar > kullanıcıları ve grupları seçin**: Hedeflenen kullanıcı hesaplarını içeren belirli grupları seçin.|Pilot kullanıcı hesaplarını içeren grupla başlayın.|
 ||Dışlamak|**Kullanıcılar ve gruplar**: Koşullu Erişim özel durum grubunuzu seçin; hizmet hesapları (uygulama kimlikleri).|Üyelik, gerektiğinde geçici olarak değiştirilmelidir.|
@@ -130,7 +131,7 @@ Risk düzeyi ayarlarını hedeflediğiniz koruma düzeyine göre uygulayın.
 
 **Erişim denetimleri** bölümünde:
 
-|Ayar|Özellikler|Değer|Eylem|
+|Ayar|Özellikler|Değerler|Eylem|
 |---|---|---|---|
 |Grant|**Grant access**||Seç|
 |||**Çok faktörlü kimlik doğrulaması gerektir**|Çek|
@@ -150,7 +151,7 @@ Microsoft 365'te çok faktörlü kimlik doğrulamasını destekleyen istemcileri
 
 **Atamalar** bölümünde:
 
-|Ayar|Özellikler|Değer|Notlar|
+|Ayar|Özellikler|Değerler|Notlar|
 |---|---|---|---|
 |Kullanıcılar ve gruplar|Içerir|**Kullanıcılar ve gruplar > kullanıcıları ve grupları seçin**: Hedeflenen kullanıcı hesaplarını içeren belirli grupları seçin.|Pilot kullanıcı hesaplarını içeren grupla başlayın.|
 ||Dışlamak|**Kullanıcılar ve gruplar**: Koşullu Erişim özel durum grubunuzu seçin; hizmet hesapları (uygulama kimlikleri).|Üyelik, gerektiğinde geçici olarak değiştirilmelidir.|
@@ -159,7 +160,7 @@ Microsoft 365'te çok faktörlü kimlik doğrulamasını destekleyen istemcileri
 
 **Erişim denetimleri** bölümünde:
 
-|Ayar|Özellikler|Değer|Eylem|
+|Ayar|Özellikler|Değerler|Eylem|
 |---|---|---|---|
 |Grant|**Erişimi engelle**||Seç|
 ||**Tüm seçili denetimleri gerektir**||Seç|
@@ -180,14 +181,14 @@ Microsoft Azure portal (yönetici kimlik bilgilerinizle [)https://portal.azure.c
 
 **Atamalar** bölümünde:
 
-|Tür|Özellikler|Değer|Eylem|
+|Tür|Özellikler|Değerler|Eylem|
 |---|---|---|---|
 |Kullanıcılar|Içerir|**Tüm kullanıcılar**|Seç|
 |Kullanıcı riski|**Yüksek**||Seç|
 
 İkinci **Ödevler** bölümünde:
 
-|Tür|Özellikler|Değer|Eylem|
+|Tür|Özellikler|Değerler|Eylem|
 |---|---|---|---|
 |Access|**Erişime izin ver**||Seç|
 |||**Parola değişikliği gerektir**|Çek|

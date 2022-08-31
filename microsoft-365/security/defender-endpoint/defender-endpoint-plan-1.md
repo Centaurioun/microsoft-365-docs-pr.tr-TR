@@ -7,8 +7,8 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdep1
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: ace1eae6ab668a34e4ceff676b9edf01196521dd
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: d3d0118c75f2ac183b6a7c6b6eef599b2a943b1f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872730"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468911"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Uç Nokta için Microsoft Defender Plan 1'e genel bakış
 
@@ -43,7 +43,7 @@ Aşağıdakiler için bu kılavuzu kullanın:
 - [Uç Nokta Için Defender Plan 1'e neler dahil olduğu hakkında genel bakış edinin](#defender-for-endpoint-plan-1-capabilities)
 - [Uç Nokta için Defender Plan 1’i Plan 2 ile karşılaştırın](defender-endpoint-plan-1-2.md)
 - [Uç Nokta Planı 1 için Defender'ı ayarlamayı ve yapılandırmayı öğrenin](mde-p1-setup-configuration.md)
-- [olayları ve uyarıları görüntüleyebileceğiniz, cihazları yönetebileceğiniz ve algılanan tehditlerle ilgili raporları kullanabileceğiniz Microsoft 365 Defender portalını kullanarak Kullanmaya başlayın](mde-plan1-getting-started.md)
+- [Olayları ve uyarıları görüntüleyebileceğiniz, cihazları yönetebileceğiniz ve algılanan tehditlerle ilgili raporları kullanabileceğiniz Microsoft 365 Defender portalını kullanmaya başlayın](mde-plan1-getting-started.md)
 - [Bakım ve işlemlere genel bakış elde edin](mde-p1-maintenance-operations.md)
 
 > [!TIP]
@@ -56,7 +56,7 @@ Uç Nokta Planı 1 için Defender aşağıdaki özellikleri içerir:
 - Sektör lideri, sağlam kötü amaçlı yazılımdan koruma ve virüsten koruma içeren **[yeni nesil](#next-generation-protection)** koruma
 - Tehditler algılandığında güvenlik ekibinizin cihazlarda veya dosyalarda gerçekleştirebileceği karantinaya dosya gönderme gibi **[el ile yanıt eylemleri](#manual-response-actions)**
 - Cihazları güçlendiren, sıfır gün saldırılarını önleyen ve uç nokta erişimi ve davranışları üzerinde ayrıntılı denetim sunan **[saldırı yüzeyi azaltma özellikleri](#attack-surface-reduction)**
-- Microsoft 365 Defender portalı ile **[merkezi yapılandırma ve yönetim](#centralized-management)** ve Microsoft Endpoint Manager ile tümleştirme
+- Microsoft 365 Defender portalı **[ile merkezi yapılandırma ve yönetim](#centralized-management)** ve Microsoft Endpoint Manager ile tümleştirme
 - Windows, macOS, iOS ve Android cihazları dahil olmak üzere **[çeşitli platformlar için koruma](#cross-platform-support)**
 
 Aşağıdaki bölümlerde bu özellikler hakkında daha fazla ayrıntı sağlanır. 
@@ -148,7 +148,7 @@ Ağ güvenlik duvarı koruması ile, hangi ağ trafiğinin kuruluşunuzun cihazl
 - Hassas verileri ve fikri mülkiyeti koruma
 - Güvenlik yatırımınızı genişletme
 
-Daha fazla bilgi edinmek için bkz. [gelişmiş güvenlikle Windows Defender Güvenlik Duvarı](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+Daha fazla bilgi edinmek için bkz[. Gelişmiş güvenlikle Windows Defender Güvenlik Duvarı](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### <a name="application-control"></a>Uygulama denetimi
 
@@ -164,7 +164,7 @@ Daha fazla bilgi için bkz. [Microsoft 365 Defender portala genel bakış](porta
 
 ### <a name="role-based-access-control"></a>Rol tabanlı erişim denetimi
 
-Güvenlik yöneticiniz rol tabanlı erişim denetimini (RBAC) kullanarak Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com) ) uygun erişimi vermek için roller ve gruplar oluşturabilir. RBAC ile, Bulut için Defender kimlerin erişebileceği ve ne görüp yapabilecekleri üzerinde ayrıntılı denetime sahip olursunuz. 
+Güvenlik yöneticiniz rol tabanlı erişim denetimini (RBAC) kullanarak Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com) ) uygun erişimi vermek için roller ve gruplar oluşturabilir. RBAC ile Bulut için Defender'a kimlerin erişebileceği ve ne görüp yapabilecekleri üzerinde ayrıntılı denetime sahip olursunuz. 
 
 Daha fazla bilgi edinmek için bkz. [Rol tabanlı erişim denetimini kullanarak portal erişimini yönetme](rbac.md).
 
@@ -177,7 +177,7 @@ Microsoft 365 Defender portalı ([https://security.microsoft.com](https://securi
 - **İşlem merkezi**, gerçekleştirilen düzeltme eylemlerini listeler. Örneğin, bir dosya karantinaya gönderilirse veya bir URL engellenirse, her eylem **Geçmiş** sekmesindeki İşlem merkezinde listelenir.
 - **Raporlar** bölümünde algılanan tehditleri ve bunların durumunu gösteren raporlar yer alır. 
 
-Daha fazla bilgi edinmek için bkz. [Uç Nokta için Microsoft Defender Plan 1 ile Kullanmaya başlayın](mde-plan1-getting-started.md).
+Daha fazla bilgi edinmek için bkz. [Uç Nokta için Microsoft Defender Plan 1'i kullanmaya başlama](mde-plan1-getting-started.md).
 
 ### <a name="apis"></a>Apı 'leri
 
@@ -203,5 +203,5 @@ Daha fazla bilgi için bkz [. Uç Nokta için Defender API'leri](management-apis
 
 - [Uç Nokta için Microsoft Defender Plan 1 ile Plan 2 karşılaştırması](defender-endpoint-plan-1-2.md)
 - [Uç Nokta için Defender Planı 1’i ayarlama ve yapılandırın](mde-p1-setup-configuration.md)
-- [Uç Nokta için Defender Plan 1 ile Kullanmaya başlayın](mde-plan1-getting-started.md)
+- [Uç Nokta için Defender Plan 1'i kullanmaya başlama](mde-plan1-getting-started.md)
 - [Uç Nokta Için Defender Plan 1'i yönetme](mde-p1-maintenance-operations.md)

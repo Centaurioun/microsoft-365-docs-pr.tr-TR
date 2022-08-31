@@ -3,7 +3,8 @@ title: Microsoft 365 Defender'de düzeltme eylemleri
 description: Microsoft 365 Defender'de otomatik araştırmalardan sonra kullanılabilecek düzeltme eylemlerine genel bakış elde edin
 keywords: otomatik, araştırma, uyarı, tetikleyici, eylem, düzeltme
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.technology: m365d
-ms.openlocfilehash: 669d4f3b4e8c2d805f72f9113cea1e9e926f3390
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6e1648b8c2e02eb17635597026e48535c4bfa402
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492381"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479432"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Microsoft 365 Defender'de düzeltme eylemleri
 
@@ -48,7 +48,7 @@ Microsoft 365 Defender'da otomatik bir araştırma sırasında ve sonrasında, k
 
 Aşağıdaki tabloda, şu anda Microsoft 365 Defender'de desteklenen düzeltme eylemleri özetlenmektedir.
 
-|Cihaz (uç nokta) düzeltme eylemleri  |E-posta düzeltme eylemleri  |Kullanıcılar (hesaplar)  |
+|Cihaz (uç nokta) düzeltme eylemleri  |düzeltme eylemlerini Email  |Kullanıcılar (hesaplar)  |
 |:---------|:---------|----------|
 |- Araştırma paketini toplama <br/>- Cihazı yalıt (bu eylem geri alınabilir)<br/>- Çıkarma makinesi <br/>- Sürüm kodu yürütme <br/>- Karantinadan serbest bırakma <br/>- İstek örneği <br/>- Kod yürütmeyi kısıtla (bu eylem geri alınabilir) <br/>- Virüsten koruma taraması çalıştırma <br/>- Durdurma ve karantinaya al <br/>- Ağdan cihazları içerir     |- URL'yi engelle (tıklama zamanı)<br/>- E-posta iletilerini veya kümelerini geçici silme<br/>- Karantina e-postası<br/>- E-posta eklerini karantinaya alma<br/>- Dış posta iletmeyi kapatma          |- Kullanıcıyı devre dışı bırakma<br />- Kullanıcı parolasını sıfırlama<br />- Kullanıcının güvenliğinin aşıldığını onaylayın          |
 
@@ -64,7 +64,7 @@ Aşağıdaki tabloda olası karar ve sonuçlar listelemektedir:
 |------|------|------|
 | Kötü amaçlı    | Cihazlar (uç noktalar)    | Düzeltme eylemleri otomatik olarak yapılır (kuruluşunuzun [cihaz gruplarının](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) Tam olarak ayarlandığı varsayılarak **- tehditleri otomatik olarak düzeltin**)|
 | Tehlikeye | Kullanıcılar | Düzeltme eylemleri otomatik olarak gerçekleştirilen |
-| Kötü amaçlı    | E-posta içeriği (URL'ler veya ekler) | Önerilen düzeltme eylemleri onay bekliyor|
+| Kötü amaçlı    | Email içeriği (URL'ler veya ekler) | Önerilen düzeltme eylemleri onay bekliyor|
 | Şüpheli    | Cihazlar veya e-posta içeriği | Önerilen düzeltme eylemleri onay bekliyor|
 | Tehdit bulunamadı    | Cihazlar veya e-posta içeriği    | Hiçbir düzeltme eylemi gerekmez|
 

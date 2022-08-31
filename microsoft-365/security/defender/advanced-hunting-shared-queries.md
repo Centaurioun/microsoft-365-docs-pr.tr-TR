@@ -4,7 +4,8 @@ description: Önceden tanımlanmış ve paylaşılan sorgularla tehdit avcılı�
 keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, özel algılamalar, şema, kusto, github deposu, sorgularım, paylaşılan sorgular
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 2e86d733304eeaa0e5e16f3ce1bfde87c21258d4
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: d9e90d1c4e353b9ac460420867ed56632b1e5eeb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761634"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477131"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Gelişmiş avcılıkta paylaşılan sorguları kullanma
 
@@ -34,12 +34,12 @@ ms.locfileid: "64761634"
 - Microsoft 365 Defender
 - Uç Nokta için Microsoft Defender
 
-[Gelişmiş tehdit avcılığı](advanced-hunting-overview.md) sorguları aynı kuruluştaki kullanıcılar arasında paylaşılabilir. Ayrıca yalnızca sizin erişebileceğiniz sorguları da kaydedebilirsiniz. Ayrıca, GitHub genel olarak paylaşılan topluluk sorgularını da bulabilirsiniz. Kaydedilen bu sorgular, sıfırdan sorgu yazmak zorunda kalmadan belirli tehdit avcılığı senaryolarını hızla izlemenize olanak sağlar.
+[Gelişmiş tehdit avcılığı](advanced-hunting-overview.md) sorguları aynı kuruluştaki kullanıcılar arasında paylaşılabilir. Ayrıca yalnızca sizin erişebileceğiniz sorguları da kaydedebilirsiniz. GitHub'da herkese açık olarak paylaşılan topluluk sorgularını da bulabilirsiniz. Kaydedilen bu sorgular, sıfırdan sorgu yazmak zorunda kalmadan belirli tehdit avcılığı senaryolarını hızla izlemenize olanak sağlar.
 
-Gelişmiş avcılıkta Sorgular sekmesinin altında **Paylaşılan sorgular**, **Sorgularım** ve **Community sorguların** açılan menülerini bulabilirsiniz. Menüyü genişletmek için aşağı dönük bir ok seçebilirsiniz.
+Gelişmiş tehdit avcılığındaki Sorgular sekmesinin altında **Paylaşılan sorgular**, **Sorgularım** ve **Topluluk sorguları** için açılan menüleri bulabilirsiniz. Menüyü genişletmek için aşağı dönük bir ok seçebilirsiniz.
 
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Microsoft 365 Defender portalında paylaşılan sorgular, Sorgularım ve Community sorguları" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Microsoft 365 Defender portalında paylaşılan sorgular, Sorgularım ve Topluluk sorguları" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
 
 
 
@@ -71,13 +71,13 @@ Yeni veya mevcut bir sorguyu kaydederek yalnızca sizin için erişilebilir olma
 Sorgunuzu doğrudan gelişmiş tehdit avcılığı sorgu düzenleyicisinde açan bir bağlantı oluşturmak için sorgunuzu sonlandırın ve **Bağlantıyı paylaş'ı** seçin.
 
 ## <a name="access-community-queries-in-the-github-repo"></a>GitHub deposunda topluluk sorgularını erişme  
-Microsoft güvenlik araştırmacıları, [GitHub'daki belirli bir genel depoda](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/Microsoft%20365%20Defender) düzenli olarak gelişmiş avlanma sorgularını paylaşır. Bu depoya yapılan katkılar yayımlanmadan önce gözden geçirilir. Katkıda bulunmak için [ücretsiz olarak GitHub katılın](https://github.com/).
+Microsoft güvenlik araştırmacıları [GitHub'daki belirli bir genel depoda](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/Microsoft%20365%20Defender) düzenli olarak gelişmiş avlanma sorgularını paylaşır. Bu depoya yapılan katkılar yayımlanmadan önce gözden geçirilir. Katkıda bulunmak [için GitHub'a ücretsiz katılın](https://github.com/).
 
-Bu sorguları **Community sorguları** açılan menüsünde de kolayca bulabilirsiniz.
+Bu sorguları **Topluluk sorguları** açılan menüsünde de kolayca bulabilirsiniz.
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Microsoft 365 Defender portalında klasöre göre düzenlenmiş sorguları Community" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Microsoft 365 Defender portalında klasöre göre düzenlenmiş topluluk sorguları" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
 
-Community sorgular *Kampanyalar*, *Koleksiyon*, *Savunma kaçaması* ve benzeri klasörler halinde gruplandırılır. Sorgu hakkında daha fazla bilgi, sorgunun kendisinde satır içi açıklamalar olarak sağlanır. 
+Topluluk sorguları *Kampanyalar*, *Koleksiyon*, *Savunma kaçaması* ve benzeri klasörler halinde gruplandırılır. Sorgu hakkında daha fazla bilgi, sorgunun kendisinde satır içi açıklamalar olarak sağlanır. 
 
 >[!tip]
 >Microsoft güvenlik araştırmacıları, yeni ortaya çıkan tehditlerle ilişkili etkinlikleri ve göstergeleri bulmak için kullanabileceğiniz gelişmiş tehdit avcılığı sorguları da sağlar. Bu sorgular, [Microsoft 365 Defender'daki tehdit analizi](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) raporlarının bir parçası olarak sağlanır.

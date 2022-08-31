@@ -3,7 +3,8 @@ title: Adım 3. değerlendirme Office 365 için Microsoft Defender genel bakış
 description: Gereksinimler, değerlendirmeyi etkinleştirme veya etkinleştirme ve pilotu ayarlama dahil olmak üzere bir MDO pilotu ayarlama adımlarını öğrenmek için bu genel bakışı kullanın.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 5a5b1e6a08b91eba8ecd256a5ba80954305853ee
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 7117918981341f0872c07c213a9113c6aa5cf195
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750132"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478805"
 ---
 # <a name="step-3-enable-and-pilot-microsoft-defender-for-office-365"></a>Adım 3. Office 365 için Microsoft Defender etkinleştirme ve pilot uygulama
 

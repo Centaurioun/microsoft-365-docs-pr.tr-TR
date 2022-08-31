@@ -2,8 +2,8 @@
 title: Belirli işlemler tarafından açılan dosyalar için dışlamaları yapılandırma
 description: Belirli bir işlem tarafından açılmış dosyaları taramaların dışında tutabilirsiniz.
 keywords: Microsoft Defender Virüsten Koruma, işlem, dışlama, dosyalar, taramalar
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 897a443be70afb8248e6a49f24f32b678060b976
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: ba64dd57323433f82d27b48bf844ec4b1fda5e50
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388759"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479498"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>İşlemler tarafından açılan dosyalar için dışlamaları yapılandırma
 
@@ -83,7 +83,7 @@ Bkz. [Kötü amaçlı yazılımdan koruma ilkeleri oluşturma ve dağıtma:](/co
     2. **Seçenekler** bölümünün altında **Göster...** öğesine tıklayın.
     3. Her işlemi **Değer adı** sütununun altına kendi satırına girin. Farklı işlem dışlama türleri için örnek tabloya bakın. Tüm işlemler için **Değer** sütununa **0** girin.
 
-5. **Tamam**'ı tıklatın.
+5. **Tamam**'a tıklayın.
 
 ### <a name="use-powershell-cmdlets-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Belirtilen işlemler tarafından açılmış dosyaları taramaların dışında tutmak için PowerShell cmdlet'lerini kullanma
 
