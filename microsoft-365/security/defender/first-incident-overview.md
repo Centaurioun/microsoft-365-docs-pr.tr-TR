@@ -3,7 +3,8 @@ title: İlk olayınıza yanıt verme
 description: Microsoft 365 Defender'daki ilk olayınıza yanıt vermenin temelleri.
 keywords: olaylar, uyarılar, araştırma, bağıntı, saldırı, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365, olay yanıtı, siber saldırı, kendi kendine çalışma, rampa, rampa, rampa, ekleme, olay yanıtlayıcısı
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,17 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-firstincident
+- highpri
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 3774d4bbf68196b5253bdfa4d5c55a0bf4014728
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: deeda4f3a09c548d8368f65ba0e26289faa88120
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66895151"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470109"
 ---
 # <a name="responding-to-your-first-incident"></a>İlk olayınıza yanıt verme
 

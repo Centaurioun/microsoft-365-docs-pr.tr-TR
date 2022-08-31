@@ -1,9 +1,10 @@
 ---
-title: Destek hakkında geri Microsoft 365 Defender
-description: Ürünler hakkında ürün geri bildirimi Microsoft 365 Defender
-keywords: feedback, m365 security, security, 365, capabilities
+title: Microsoft 365 Defender hakkında geri bildirim sağlayın
+description: Microsoft 365 Defender hakkında ürün geri bildirimi sağlama
+keywords: geri bildirim, m365 güvenlik, güvenlik, 365, özellikler
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,33 +20,32 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 2843406c934ab95587ba07e3f897a3055562d9e1
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: de30ac89e0bf4f39ba7114adac7ad0a24bbf4a18
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64501255"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468757"
 ---
-# <a name="provide-feedback-on-microsoft-365-defender"></a>Destek hakkında geri Microsoft 365 Defender
+# <a name="provide-feedback-on-microsoft-365-defender"></a>Microsoft 365 Defender hakkında geri bildirim sağlayın
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-Geri bildiriminiz, ortamınızı gelişmiş saldırılardan koruma konusunda daha iyi bir yer alsak da bize yardımcı olur. Deneyimlerinizi, bilginizi ve isteklerinizi geri bildirim sağlayarak paylaşın.
+Geri bildiriminiz, ortamınızı gelişmiş saldırılara karşı koruma konusunda daha iyi olmamıza yardımcı olur. Geri bildirim sağlayarak deneyiminizi, gösterimlerinizi ve isteklerinizi paylaşın.
 
-Geri bildirim sağlamanın ne kadar kolay olduğunu görmek için bu videoyu izleyin.
+Geri bildirim sağlamanın ne kadar kolay olduğunu görmek için bu videoya göz atın.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LWeP]
 
 
-1. Portalın herhangi bir bölümünde Geri bildirim **ver'i seçin**. 
+1. Portalın herhangi bir bölümünde **Geri bildirimde bulunma'yı** seçin. 
 
-    :::image type="content" source="../../media/feedback.png" alt-text="Microsoft 365 güvenlik portalında olaylar" lightbox="../../media/feedback.png":::   
+    :::image type="content" source="../../media/feedback.png" alt-text="Microsoft 365 güvenlik portalındaki olaylar" lightbox="../../media/feedback.png":::   
  
-2. Beğendiğiniz deneyime göre yorum edin ve neleri beğendiğini ya da geliştirmenin nerede olduğunu ayrıntılı olarak açık edin. Geri bildirimle ilgili olarak iletişim kurmak da seçebilirsiniz. 
+2. Deneyiminizi derecelendirin ve neleri beğendiğinize veya nerelerde iyileştirme yapabileceğinize ilişkin ayrıntılar sağlayın. Ayrıca geri bildirimle ilgili olarak sizinle iletişime geçmeyi de seçebilirsiniz. 
 
-3. **Gönder'i seçin**.
+3. **Gönder'i** seçin.

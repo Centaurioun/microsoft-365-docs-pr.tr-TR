@@ -3,7 +3,8 @@ title: Microsoft 365 Defender'de olayların önceliklerini belirleme
 description: Microsoft 365 Defender'da olay kuyruğundan olayları filtrelemeyi öğrenin
 keywords: olay, kuyruk, genel bakış, cihazlar, kimlikler, kullanıcılar, posta kutusu, e-posta, olaylar, analiz, yanıt, önceliklendirme
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,13 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 285da473c8e8035a28ee6e64c4950e2b8fe373f5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b5f8968020a08197586caef09273d6b4276ff421
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944425"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480227"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender'de olayların önceliklerini belirleme
 
@@ -75,7 +75,7 @@ Bu tabloda, kullanılabilen filtre adları listelenir.
 | Filtre adı | Açıklama |
 |:-------|:-----|
 | Durum | **Yeni**, Sürüyor veya **Çözümlendi'yi** seçin.  |
-| Önem | Bir olayın önem derecesi, varlıklarınız üzerindeki etkisini gösterir. Önem derecesi ne kadar yüksek olursa, etki o kadar büyük olur ve genellikle en acil dikkati gerektirir. **Yüksek**, **Orta**, **Düşük** veya **Bilgilendirici'yi** seçin. |
+| Önem derecesi | Bir olayın önem derecesi, varlıklarınız üzerindeki etkisini gösterir. Önem derecesi ne kadar yüksek olursa, etki o kadar büyük olur ve genellikle en acil dikkati gerektirir. **Yüksek**, **Orta**, **Düşük** veya **Bilgilendirici'yi** seçin. |
 | Olay ataması | Atanan kullanıcıyı veya kullanıcıları seçin. |
 | Birden çok hizmet kaynağı  | Filtrenin birden fazla hizmet kaynağı için olup olmadığını belirtin. |
 | Hizmet kaynakları  | Şu uyarıları içeren olayları belirtin: Uygulama İdaresi, Microsoft 365 Defender, Office 365 için Microsoft Defender, Uç Nokta için Microsoft Defender, Kimlik için Microsoft Defender, Microsoft Defender for Cloud Apps. |
@@ -83,7 +83,7 @@ Bu tabloda, kullanılabilen filtre adları listelenir.
 | Birden çok kategori  | Filtrenin birden fazla kategori için olup olmadığını belirtin. |
 | Kategori | Görülen belirli taktiklere, tekniklere veya saldırı bileşenlerine odaklanmak için kategorileri seçin. |
 | Varlık | Kullanıcı, cihaz, posta kutusu veya uygulama adı gibi bir varlığın adını belirtin. |
-| Veri duyarlılığı | Bazı saldırılar, hassas veya değerli verileri sızdırmak için hedeflemeye odaklanır. Belirli duyarlılık etiketleri için bir filtre uygulayarak hassas bilgilerin ele geçirilip geçirilmemiş olabileceğini hızla belirleyebilir ve bu olayları ele geçirmeyi önceliklendikleyebilirsiniz. <br><br> Bu filtre yalnızca [Microsoft Purview Information Protection duyarlılık etiketlerini](../../compliance/sensitivity-labels.md) uyguladığınızda bilgileri görüntüler. |
+| Veri duyarlılığı | Bazı saldırılar, hassas veya değerli verileri sızdırmak için hedeflemeye odaklanır. Belirli duyarlılık etiketleri için bir filtre uygulayarak hassas bilgilerin ele geçirilip geçirilmemiş olabileceğini hızla belirleyebilir ve bu olayları ele geçirmeyi önceliklendikleyebilirsiniz. <br><br> Bu filtre yalnızca [Microsoft Purview Bilgi Koruması duyarlılık etiketleri](../../compliance/sensitivity-labels.md) uyguladığınızda bilgileri görüntüler. |
 | Cihaz grupları | [Bir cihaz grubu](/windows/security/threat-protection/microsoft-defender-atp/machine-groups) adı belirtin. |
 | İşletim sistemi platformu | Cihaz işletim sistemlerini belirtin. |
 | Sınıflandırma | İlgili uyarıların sınıflandırma kümesini belirtin. |
@@ -119,7 +119,7 @@ Olay listesinin üstündeki **Ad veya kimlik ara** kutusundan olay kimliğini ve
 
 ## <a name="search-for-impacted-assets"></a>Etkilenen varlıkları arama
 
-Bir varlığı&mdash; kullanıcı, cihaz, posta kutusu veya uygulama adı&mdash; olarak adlandırabilir ve tüm ilgili olayları bulabilirsiniz. 
+Kullanıcı, cihaz, posta kutusu veya uygulama adı&mdash;gibi bir varlığı&mdash;adlandırabilir ve ilgili tüm olayları bulabilirsiniz. 
 
 ## <a name="specify-a-time-range"></a>Zaman aralığı belirtme
 

@@ -8,31 +8,31 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
-description: Microsoft 365'da Bookings özelliğine nasıl erişeceğinizi öğrenin.
-ms.openlocfilehash: 4100e5b74561f49868271a2be15521d73c75f92c
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+description: Microsoft 365'teki Bookings özelliğine nasıl erişeceğinizi öğrenin.
+ms.openlocfilehash: 95e81f594dfcd01ec1163e577cf6f3dc38848d97
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637725"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472666"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>Microsoft Bookings’e erişim elde etme
 
-Bu konuda, Bookings ilk kez nasıl erişilen açıklanır. Ayrıca, kuruluşunuzda Bookings nasıl açabileceğinizi veya kapatabileceğinizi de bildirir. Ayrıca, Bookings erişebilmeleri ve kullanabilmeleri için kullanıcılarınıza nasıl lisans atayabileceğiniz de açıklanır.
+Bu konu başlığında Bookings'e ilk kez nasıl erişilen açıklanır. Ayrıca kuruluşunuzda Bookings'i nasıl açabileceğinizi veya kapatabileceğinizi de bildirir. Ayrıca, Bookings'e erişebilmeleri ve bunları kullanabilmeleri için kullanıcılarınıza nasıl lisans atayabileceğiniz açıklanmaktadır.
 
-## <a name="access-bookings-for-the-first-time"></a>Bookings ilk kez erişme
+## <a name="access-bookings-for-the-first-time"></a>Bookings'e ilk kez erişme
 
-BT yöneticiniz size Bookings erişimi verdiyse, uygulamaya çevrimiçi Office aracılığıyla erişebilirsiniz.
+BT yöneticiniz size [Bookings erişimi](/microsoft-365/bookings/turn-bookings-on-or-off) verdiyse, uygulamaya Office online üzerinden erişebilirsiniz.
 
-[Bookings](https://outlook.office.com/bookings/onboarding) ilk kez kullandığınızda bir takvim oluşturacak ve işinizi ayarlayacaksınız.
+[Bookings'i](https://outlook.office.com/bookings/onboarding) ilk kez kullandığınızda bir takvim oluşturacak ve işinizi ayarlayacaksınız.
 
-1. **Kullanmaya başlayın'ı** seçin, iş adınızı ve iş türünüzü girin ve ardından **Takvim oluştur'u** seçin.
+1. **Başlarken'i** seçin, iş adınızı ve iş türünüzü girin ve ardından **Takvim oluştur'u** seçin.
 
 1. Bu sayfada ilk kez kullanmıyorsanız, başka bir rezervasyon takvimi seçebilir veya başka bir rezervasyon takvimi için arama yapabilirsiniz.
 
 1. İşletmenizin adını ve iş türünü girin ve **Devam'ı** seçin.
 
-Artık kuruluşunuz için Bookings ayarlamaya hazırsınız. Bu [bağlantıyla](https://outlook.office.com/bookings/onboarding) Bookings sayfasına uygulama başlatıcıdan veya office.com ulaşabilirsiniz. Bookings özelliklerinizi ayarlamaya devam etmek için aşağıdaki konuları kullanın.
+Artık kuruluşunuz için Bookings'i ayarlamaya hazırsınız. Bookings sayfasına bu [bağlantıyla](https://outlook.office.com/bookings/onboarding), uygulama başlatıcıdan veya office.com ulaşabilirsiniz. Bookings özelliklerinizi ayarlamaya devam etmek için aşağıdaki konuları kullanın.
 
 - [İş bilginizi girme](enter-business-information.md)
 - [Bookings’e personel ekleme](add-staff.md)

@@ -2,8 +2,8 @@
 title: Microsoft Defender Virüsten Koruma koruma özelliklerini etkinleştirme ve yapılandırma
 description: Davranış izleme, buluşsal yöntemler ve makine öğrenmesi gibi Microsoft Defender Virüsten Koruma gerçek zamanlı koruma özelliklerini etkinleştirme ve yapılandırma
 keywords: virüsten koruma, gerçek zamanlı koruma, rtp, makine öğrenmesi, davranış izleme, buluşsal yöntemler
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,18 +15,18 @@ ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d950e69a557ccc95fe40bf300dae05f64e51032e
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: c8137314b845699ec98b5424fa5942ef484f2537
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416046"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479808"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a> Grup İlkesinde sürekli korumayı Microsoft Defender Virüsten Koruma ile etkinleştirin ve yapılandırın
 
 **Şunlar için geçerlidir:**
 
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Virüsten Koruma
 
@@ -51,9 +51,9 @@ Her zaman açık korumayı etkinleştirmek ve yapılandırmak için:
     
        :::image type="content" source="images/gpedit-search.png" alt-text="Denetim masası'ndaki GPEdit görev çubuğu arama sonucu" lightbox="images/gpedit-search.png":::
 
-2. **Yerel grup ilkesi Düzenleyicisi'nin** sol bölmesinde, ağacı **Bilgisayar Yapılandırması** \> **Yönetim Şablonları** \> **Windows Bileşenler** \> **Microsoft Defender Virüsten Koruma** olarak genişletin.
+2. **Yerel grup ilkesi Düzenleyicisi'nin** sol bölmesinde, ağacı **Bilgisayar Yapılandırması** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** olarak genişletin.
 
-3. Microsoft Defender Virüsten Koruma kötü amaçlı yazılımdan koruma hizmeti ilkesi ayarını yapılandırın.
+3. Microsoft Defender Virüsten Koruma kötü amaçlı yazılımdan koruma hizmeti ilke ayarını yapılandırın.
 
    Sağ taraftaki **Microsoft Defender Virüsten Koruma** ayrıntıları bölmesinde Kötü **amaçlı yazılımdan koruma hizmetinin normal öncelikle başlatılmasına izin ver'e** çift tıklayın ve **Etkin** olarak ayarlayın.
 
@@ -61,7 +61,7 @@ Her zaman açık korumayı etkinleştirmek ve yapılandırmak için:
 
 4. Microsoft Defender Virüsten Koruma gerçek zamanlı koruma ilkesi ayarlarını aşağıdaki gibi yapılandırın:
 
-    1. **Microsoft Defender Virüsten Koruma** ayrıntılar bölmesinde **Gerçek Zamanlı Koruma'ya** çift tıklayın. Ya da sol bölmedeki **Microsoft Defender Virüsten Koruma** **ağacından Gerçek Zamanlı Koruma'yı** seçin.
+    1. **Microsoft Defender Virüsten Koruma** ayrıntıları bölmesinde **Gerçek Zamanlı Koruma'ya** çift tıklayın. Alternatif olarak, sol bölmedeki **Microsoft Defender Virüsten Koruma** **ağacından Gerçek Zamanlı Koruma'yı** seçin.
 
     2. Sağdaki **Gerçek Zamanlı Koruma** ayrıntıları bölmesinde, [gerçek zamanlı koruma ilkesi ayarlarında](#real-time-protection-policy-settings) belirtildiği gibi ilke ayarına çift tıklayın (bu makalenin ilerleyen bölümlerinde).
 
@@ -94,7 +94,7 @@ Her zaman açık korumayı etkinleştirmek ve yapılandırmak için:
 |Bilgisayarınızda dosya ve program etkinliğini izlemek için yerel ayarı geçersiz kılmayı yapılandırma <p> Bilgisayarınızda dosya ve program etkinliği için izleme yapılandırması için yerel bir geçersiz kılma yapılandırın. Bu ayar yalnızca grup ilkesi tarafından ayarlanabilir. Bu ayarı etkinleştirirseniz, yerel tercih ayarı grup ilkesi öncelikli olur. Bu ayarı devre dışı bırakır veya yapılandırmazsanız, grup ilkesi yerel tercih ayarına göre öncelik alır.|Etkin|
 |Gerçek zamanlı korumayı açmak için yerel ayarı geçersiz kılmayı yapılandırma <p> Gerçek zamanlı korumayı açmak için yapılandırma için yerel bir geçersiz kılma yapılandırın. Bu ayar yalnızca grup ilkesi tarafından ayarlanabilir. Bu ayarı etkinleştirirseniz, yerel tercih ayarı grup ilkesi öncelikli olur. Bu ayarı devre dışı bırakır veya yapılandırmazsanız, grup ilkesi yerel tercih ayarına göre öncelik alır.|Etkin|
 |Gelen ve giden dosya etkinliği için izleme için yerel ayarı geçersiz kılmayı yapılandırma <p> Gelen ve giden dosya etkinliği için izleme yapılandırması için yerel bir geçersiz kılma yapılandırın. Bu ayar yalnızca grup ilkesi tarafından ayarlanabilir. Bu ayarı etkinleştirirseniz, yerel tercih ayarı grup ilkesi öncelikli olur. Bu ayarı devre dışı bırakır veya yapılandırmazsanız, grup ilkesi yerel tercih ayarına göre öncelik alır.|Etkin|
-|Gelen ve giden dosya ve program etkinliği için izlemeyi yapılandırma <p> İzlemenin gelen, giden, her iki yönde mi yoksa her iki yönde mi gerçekleşeceğini belirtin. Bu eylem, yalnızca bir yönde büyük miktarda dosya değişikliği gören ve ağ performansını geliştirmek istediğiniz belirli sunucuları veya Sunucu Rollerini tanımladığınız Windows Sunucu yüklemeleri için geçerlidir. Bir ağdaki tam olarak güncelleştirilmiş uç noktalar (ve sunucular), dosya değişikliklerinin sayısı veya yönü ne olursa olsun çok az performans etkisi görür.|Etkin (her iki yön)|
+|Gelen ve giden dosya ve program etkinliği için izlemeyi yapılandırma <p> İzlemenin gelen, giden, her iki yönde mi yoksa her iki yönde mi gerçekleşeceğini belirtin. Bu eylem, yalnızca bir yönde büyük miktarda dosya değişikliği gören ve ağ performansını geliştirmek istediğiniz belirli sunucuları veya Sunucu Rollerini tanımladığınız Windows Server yüklemeleriyle ilgilidir. Bir ağdaki tam olarak güncelleştirilmiş uç noktalar (ve sunucular), dosya değişikliklerinin sayısı veya yönü ne olursa olsun çok az performans etkisi görür.|Etkin (her iki yön)|
 
 ## <a name="disable-real-time-protection-in-group-policy"></a>grup ilkesi'de gerçek zamanlı korumayı devre dışı bırakma
 
@@ -110,7 +110,7 @@ Ana gerçek zamanlı koruma özelliği varsayılan olarak etkindir, ancak **Yere
    1. Windows 10 veya Windows 11 görev çubuğu arama kutunuza **gpedit** yazın.
    2. **En iyi eşleşme'nin** altında **Grup ilkesini düzenle'yi** seçerek **Yerel grup ilkesi Düzenleyicisi'ni** başlatın.
 
-2. **Yerel grup ilkesi Düzenleyicisi'nin** sol bölmesinde, ağacı **Gerçek Zamanlı Koruma** **Microsoft Defender Virüsten Koruma Bileşenler** \> Windows **Bilgisayar Yapılandırması** \> **Yönetim Şablonları** \> **olarak** \> genişletin.
+2. **Yerel grup ilkesi Düzenleyicisi'nin** sol bölmesinde, ağacı **Bilgisayar Yapılandırması** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Gerçek Zamanlı Koruma** olarak genişletin.
 
 3. Sağdaki **Gerçek Zamanlı Koruma** ayrıntıları bölmesinde **Gerçek zamanlı korumayı kapat'a** çift tıklayın.
 
@@ -121,7 +121,7 @@ Ana gerçek zamanlı koruma özelliği varsayılan olarak etkindir, ancak **Yere
 6. **Yerel grup ilkesi Düzenleyicisi'ni** kapatın.
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

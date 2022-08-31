@@ -3,7 +3,8 @@ title: Microsoft 365 Defender ile olay yanıtı
 description: Microsoft 365 Defender portalında cihazlar, kullanıcılar ve posta kutuları arasında görülen olayları araştırın.
 keywords: olaylar, uyarılar, araştırma, analiz etme, yanıt, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365, olay yanıtı, siber saldırı
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,13 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 9a8d2e5533afe8d9a7d5dd2effe1646de8dc974d
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: a797d0c96c708bd69b275cb5f9dfb7bbd669e367
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328925"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478761"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Microsoft 365 Defender ile olay yanıtı
 

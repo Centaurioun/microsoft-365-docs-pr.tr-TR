@@ -19,13 +19,14 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365solution-asr-rules
+- highpri
 ms.date: 1/18/2022
-ms.openlocfilehash: a1db97410de095314de6fb75acc5394ab18bc6c6
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 3a7b59513681881ad37aa816f55920438925c13e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969715"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478475"
 ---
 # <a name="enable-attack-surface-reduction-asr-rules"></a>Saldırı yüzeyini azaltma (ASR) kurallarını etkinleştirme
 
@@ -108,7 +109,7 @@ Her kuralla ilgili ayrıntılar için [saldırı yüzeyi azaltma kuralları baş
 
 ##### <a name="use-powershell-to-exclude-files-and-folders"></a>Dosyaları ve klasörleri dışlamak için PowerShell kullanma
 
-1. Başlat menüsüne **powershell** yazın, **Windows PowerShell** sağ tıklayın ve **Yönetici olarak çalıştır'ı** seçin.
+1. Başlat menüsüne **powershell** yazın, **Windows PowerShell**'e sağ tıklayın ve **Yönetici olarak çalıştır**'ı seçin.
 
 2. Aşağıdaki cmdlet'i girin:
 

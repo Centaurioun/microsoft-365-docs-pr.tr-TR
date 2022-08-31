@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için kullanıcıları nasıl arayacağınızı öğrenin.
-ms.openlocfilehash: 44e043c144fd35e42f2f5ea937670007ce8b3c62
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: bd0b29393eab77403556640b9fd5294c2357ec76
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823517"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475702"
 ---
 # <a name="search-for-users-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de kullanıcıları arama
 
 Microsoft 365 Lighthouse, tüm etkin kiracılarda belirli bir kullanıcıyı aramanıza olanak tanır. Bu, farklı kiracılarda gezinmeye gerek kalmadan bir kullanıcıyı hızlı bir şekilde bulmanıza olanak tanır.
 
-1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar****Arama kullanıcıları'nı** >  seçin.
+1. Lighthouse'un sol gezinti bölmesinde Kullanıcılar **Hesabı yönetimi** >  **Kullanıcıları** > **ara'yı** seçin.
 
 2. Arama kutusuna bir görünen ad veya kullanıcı asıl adı (UPN) girin.
 

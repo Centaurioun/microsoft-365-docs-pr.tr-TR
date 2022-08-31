@@ -1,10 +1,11 @@
 ---
 title: Gelişmiş tehdit avcılığı şemasındaki CloudAppEvents tablosu
 description: Gelişmiş tehdit avcılığı şemasının CloudAppEvents tablosunda bulut uygulamaları ve hizmetlerinden gelen olaylar hakkında bilgi edinin
-keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, CloudAppEvents, Bulut için Defender Uygulamaları
+keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, CloudAppEvents, Cloud Apps için Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 77b4ebd42a8c105340d6d965380aa42b64ae6734
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 8892a672cb9fc77b4cf606f32581c1928decc45f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664974"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470153"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -45,8 +45,8 @@ Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi iç
 | `ActionType` | `string` | Olayı tetikleyen etkinlik türü |
 | `Application` | `string` | Kaydedilen eylemi gerçekleştiren uygulama |
 | `ApplicationId` | `string` | Uygulama için benzersiz tanımlayıcı |
-| `AccountObjectId` | `string` | Azure Active Directory'deki hesabın benzersiz tanımlayıcısı |
-| `AccountId` | `string` | Microsoft Defender for Cloud Apps tarafından bulunan hesabın tanımlayıcısı. Azure Active Directory kimliği, kullanıcı asıl adı veya diğer tanımlayıcılar olabilir. |
+| `AccountObjectId` | `string` | Azure Active Directory'de hesabın benzersiz tanımlayıcısı |
+| `AccountId` | `string` | Microsoft Defender for Cloud Apps tarafından bulunan hesabın tanımlayıcısı. Azure Active Directory Kimliği, kullanıcı asıl adı veya diğer tanımlayıcılar olabilir. |
 | `AccountDisplayName` | `string` | Adres defterinde görüntülenen hesap kullanıcısının adı. Genellikle belirli bir adın veya adın, ikinci bir başlatmanın ve soyadının veya soyadının birleşimidir. |
 | `IsAdminOperation` | `string` | Etkinliğin bir yönetici tarafından gerçekleştirilip gerçekleştirilmediğini gösterir |
 | `DeviceType` | `string` | "Ağ cihazı", "İş İstasyonu", "Sunucu", "Mobil", "Oyun konsolu" veya "Yazıcı" gibi amaca ve işlevselliğe dayalı cihaz türü |

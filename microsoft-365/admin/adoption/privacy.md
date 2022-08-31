@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gizlilik, Benimseme Puanı ile nasıl korunur?
-ms.openlocfilehash: d94b3bbf02be6c9a49926b2aadd6d4f35a4aa804
-ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
+ms.openlocfilehash: 36c71ae05cc4f8c19557a94b8788e3ab19e2a4d9
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67437940"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469079"
 ---
 # <a name="privacy-controls-for-adoption-score"></a>Benimseme Puanı için gizlilik denetimleri
 
@@ -52,21 +52,6 @@ Benimseme Puanı'nın tamamını görüntülemek için aşağıdaki yönetici ro
 
 Rapor Okuyucusu veya Kullanım Özeti Raporları Okuyucusu rolünü, değişiklik yönetimi ve benimsemeden sorumlu olan, ancak bt yöneticisi olması gerekmeyen herkese atayın. Bu rol, microsoft 365 yönetim merkezinde benimseme puanı deneyiminin tamamına erişim sağlar.
 
-Kullanım Özeti Raporları Okuyucusu rolünün, 2020'nin sonraki Microsoft 365 yönetim merkezi atanabilene kadar PowerShell cmdlet'leri aracılığıyla atanmalıdır.
-
-PowerShell ile Kullanım Özeti Raporları Okuyucusu rolünü atamak için:
-
-- Aşağıdaki PowerShell'i çalıştırın:
-
-```powershell
-Connect-AzureAD
-Enable-AzureADDirectoryRole -RoleTemplateId '75934031-6c7e-415a-99d7-48dbd49e875e'
-$role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
-Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
-$u=Get-AzureADUser -ObjectId <user upn>
-Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
-```
-
 ## <a name="capability-to-opt-out-of-people-experiences"></a>Kişi deneyimlerini geri çevirme özelliği
 
 Benimseme Puanı'nın kişi deneyimleri alanından da çıkabilirsiniz. Devre dışı bırakmanız durumunda kuruluşunuzdan hiç kimse bu ölçümleri görüntüleyemez ve kuruluşunuz iletişim, toplantılar, ekip çalışması, içerik işbirliği ve mobilite içeren hesaplamalardan kaldırılacaktır. Kuruluşunuzun kişi deneyim raporları dışında bırakılabilmesi için Genel yönetici olmanız gerekir.
@@ -74,7 +59,8 @@ Benimseme Puanı'nın kişi deneyimleri alanından da çıkabilirsiniz. Devre d�
 Geri çevirmek için:
 
 1. Yönetim merkezinde **Ayarlar**  >  **Kuruluş Ayarları** > **Benimseme Puanı'na** gidin.
-2. **Microsoft 365 kullanım verilerinin kişiler tarafından içgörüler için kullanılmasına izin ver** yazan kutunun işaretini kaldırın. Intune yapılandırma yöneticisinde Endpoint Analytics için veri paylaşımı ayarlarının nasıl değiştirileceği hakkında bilgi edinmek için **Daha fazla bilgi'yi** seçin.
-3. **Kaydet'i** seçin.
+2. **Kullanıcı yok (kişiler içgörüler hesaplanamaz) seçeneğini** belirleyin. 
+3. **Kişi deneyimlerinden veri kaldırmak istiyor musunuz?** onay ekranında **Verileri Kaldır'ı** seçin.
+4. **Kaydet'i** seçin.
 
 :::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="Kişi deneyimlerini geri çevirebileceğiniz kuruluş ayarları sayfası.":::

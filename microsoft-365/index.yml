@@ -13,12 +13,12 @@ metadata:
   ms.author: samanro
   ms.date: 06/08/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: e699cfb3cd0f45ff466967a93e2c40bc3d2ff556
-  ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-  ms.translationtype: HT
+  ms.openlocfilehash: 90225a98fc6e702fec1819273c1ee2b15f623dd5
+  ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+  ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 07/15/2022
-  ms.locfileid: "66822933"
+  ms.lasthandoff: 08/31/2022
+  ms.locfileid: "67477109"
 highlightedContent:
   items:
   - title: Hibrit çalışma için altyapınızı ayarlayın
@@ -141,12 +141,12 @@ productDirectory:
   - title: Sektöre özgü çözümler ve senaryolar
     imageSrc: https://docs.microsoft.com/office/media/icons/on-premises-blue.svg
     links:
+    - url: frontline/index.yml
+      text: Ön cephe kuruluşları için Microsoft 365
     - url: solutions/financial-services-secure-collaboration.md
       text: Finansal hizmetler için güvenlik ve uyumluluk
     - url: solutions/energy-secure-collaboration.md
       text: Enerji ve kamu hizmetleri için güvenlik ve uyumluluk
-    - url: frontline/teams-in-hc.md
-      text: Sağlık kuruluşları için Teams
     - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page
       text: Eğitim için Teams
     - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
@@ -215,7 +215,7 @@ additionalContent:
       links:
       - text: Planlama, dağıtma ve yönetme
         url: /onedrive/onedrive
-      - text: Daha fazla OneDrive >
+      - text: Daha fazla >
         url: /onedrive
     - title: Outlook ve Exchange
       links:
@@ -223,7 +223,7 @@ additionalContent:
         url: https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/
       - text: Exchange Online
         url: /Exchange/exchange-online
-      - text: Daha fazla Exchange >
+      - text: Daha fazla >
         url: /Exchange
     - title: Planner ve Project
       links:
@@ -236,15 +236,15 @@ additionalContent:
     - title: Microsoft Viva
       links:
       - text: Microsoft Viva Konular
-        url: /microsoft-365/knowledge/
+        url: /viva/topics/
       - text: Microsoft Viva Analizler
         url: /insights/viva-teams-app
       - text: Microsoft Viva Bağlantılar
-        url: /viva/connections/
+        url: /viva/connections/viva-connections-overview
       - text: Microsoft Viva Öğrenme
-        url: /microsoft-365/learning/
-      - text: Daha fazla Microsoft Viva >
-        url: /microsoft-365/viva/
+        url: /viva/learning/
+      - text: Daha fazla >
+        url: /viva/
     - title: Diğer uygulama ve hizmetler
       links:
       - text: Microsoft Kayıtları

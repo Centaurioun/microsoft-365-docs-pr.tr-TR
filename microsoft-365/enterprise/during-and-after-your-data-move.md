@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Veri taşıma işlemleri, Microsoft kiracınız için hizmetleri ve ilişkili verileri yeni bir veri merkezi coğrafi alanına taşırken gerçekleşen arka uç işlemleridir.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 76d4921db83c5f13ad7f6d62b4826540b12528a0
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 9c8b22665fec704ae9cb74bb2fe218e0b2e4a00f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872302"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478607"
 ---
 # <a name="during-and-after-your-data-move"></a>Verilerinizi taşıma sırasında ve sonrasında
 
@@ -48,6 +48,7 @@ Exchange Online, SharePoint Online ve Teams sohbet hizmetinin her biri için ta�
 |Almanya  <br/> |1 Mayıs 2023, Mayıs 2023  <br/> |
 |Brezilya  <br/> |1 Haziran 2023 Perşembe  <br/> |
 |İsveç  <br/> |1 Haziran 2024, Ağustos 2024, Ağustos 2024, Temmuz 2024  <br/> |
+|Katar  <br/> |1 Mart 2025, Saat 2025  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -55,12 +56,12 @@ Her kullanıcının tek bir kiracı için yeni veri merkezi coğrafi konumuna ta
   
 ### <a name="open-shared-folder-in-outlook-web-access"></a>Outlook Web Access'te "Paylaşılan Klasör" seçeneğini açma
 
-Bazı kullanıcılar, "Paylaşılan Klasör" özelliğini kullanarak Outlook Web Access'te başka bir posta kutusundan (kullanıcının okuma veya yazma izinlerine sahip olduğu) paylaşılan posta klasörünü açar. Aşağıdaki tabloda, posta kutusu taşıma sırasında paylaşılan klasörlere erişimin nasıl çalıştığı açıklanmaktadır. Paylaşılan posta kutusuna tam izinlere sahip kullanıcıların taşıma sırasında Outlook Web Erişimi'ni kullanarak posta kutusunu açabileceğini lütfen unutmayın.
+Bazı kullanıcılar, "Paylaşılan Klasör" özelliğini kullanarak Outlook Web Access'te başka bir posta kutusundan (kullanıcının okuma veya yazma izinlerine sahip olduğu) paylaşılan posta klasörünü açar. Aşağıdaki tabloda, posta kutusu taşıma sırasında paylaşılan klasörlere erişimin nasıl çalıştığı açıklanmaktadır. Paylaşılan posta kutusuna tam izinlere sahip kullanıcıların taşıma sırasında Outlook Web Access'i kullanarak posta kutusunu açabileceğini lütfen unutmayın.
   
 | Yapılandırma | Açıklama |
 |:-----|:-----|
-|Kullanıcının başka bir posta kutusu için posta kutusu klasörü izni var  <br/> |Potansiyel olarak sınırlı.  <br/> Kiracı taşıma sırasında A Kullanıcısı ve B Posta Kutusu aynı coğrafi bölgede değilse, A Kullanıcısı B Posta Kutusu'nun B Posta Kutusu'nda yalnızca belirli bir klasöre izni varsa, A Kullanıcısı Outlook Web Access'te B Posta Kutusu'nun klasörünü açamaz.  <br/> Paylaşılan klasör eklemek için sol gezinti panelinde kullanıcı adına sağ tıklayın ve **Paylaşılan klasör ekle'yi** seçin.  <br/> |
-|Başka bir posta kutusuna tam posta kutusu izni olan kullanıcı  <br/> |Tam olarak desteklenir.  <br/> A Kullanıcısının B Posta Kutusu'nda "Tam Erişim" izni varsa, A Kullanıcısı B Posta Kutusu'nun gösterildiği bir pencere açmak için Outlook Web Access'in sol gezinti panelinde paylaşılan klasöre tıklayabilir.  Kullanıcı, taşıma sırasında web erişimi Outlook kullanarak herhangi bir olumsuz etki olmadan paylaşılan posta kutusunu açabilir. Sınırlama yalnızca posta kutusunda klasör düzeyinde paylaşım için geçerlidir.           |
+|Kullanıcının başka bir posta kutusu için posta kutusu klasörü izni var  <br/> |Potansiyel olarak sınırlı.  <br/> Kiracı taşıma sırasında A Kullanıcısı ve B Posta Kutusu aynı coğrafi bölgede değilse, A Kullanıcısı B Posta Kutusu'nun B Posta Kutusu'nda yalnızca belirli bir klasöre izni varsa Outlook Web Access'te B Posta Kutusu klasörünü açamaz.  <br/> Paylaşılan klasör eklemek için sol gezinti panelinde kullanıcı adına sağ tıklayın ve **Paylaşılan klasör ekle'yi** seçin.  <br/> |
+|Başka bir posta kutusuna tam posta kutusu izni olan kullanıcı  <br/> |Tam olarak desteklenir.  <br/> A Kullanıcısının B Posta Kutusu için "Tam Erişim" izni varsa, A Kullanıcısı Outlook Web Access'in sol gezinti panelinde paylaşılan klasöre tıklayarak B Posta Kutusu'nun gösterildiği bir pencere açabilir.  Kullanıcı, taşıma sırasında herhangi bir olumsuz etki olmadan Outlook Web Access'i kullanarak paylaşılan posta kutusunu açabilir. Sınırlama yalnızca posta kutusunda klasör düzeyinde paylaşım için geçerlidir.           |
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
@@ -82,29 +83,29 @@ SharePoint Online verilerinizi taşımayı tamamladıktan sonra aşağıdaki etk
 
 - Video için veri taşıma işlemi, SharePoint Online'daki içeriğinizin geri kalanındaki taşıma işlemlerinden daha uzun sürer.
 
-- SharePoint Çevrimiçi içerik taşındıktan sonra, videoların oynatılamadığı bir zaman dilimi olacaktır.
+- SharePoint Online içeriği taşındıktan sonra, videoların oynatılamadığı bir zaman dilimi olacaktır.
 
 - Koda dönüştürülmüş kopyaları önceki veri merkezinden kaldırıyor ve yeni veri merkezinde yeniden koda aktarıyoruz.
 
 ### <a name="search"></a>Arama
 
-SharePoint Online verilerinizi taşıma işleminiz boyunca, arama dizininizi ve arama ayarlarınızı yeni bir konuma geçiririz. SharePoint Online verilerinizin taşınmasını **tamamlayana** kadar kullanıcılarınıza özgün konumdaki dizinden hizmet etmeye devam ediyoruz. Yeni konumda, SharePoint Online verilerinizi taşımayı tamamladıktan sonra arama otomatik olarak içeriğinizde gezinmeye başlar. Bu noktadan itibaren, geçirilen dizinden kullanıcılarınıza hizmet ederiz. Geçiş sonrasında içeriğinizde yapılan değişiklikler, gezinme tarafından alınana kadar geçirilen dizine dahil değildir. Müşterilerin çoğu, SharePoint Çevrimiçi verilerini taşımayı tamamladıktan hemen sonra sonuçların daha az yeni olduğunu fark etmez, ancak bazı müşteriler ilk 24-48 saat içinde daha az yenilikle karşılaşabilir.
+SharePoint Online verilerinizi taşırken, arama dizininizi ve arama ayarlarınızı yeni bir konuma geçiririz. SharePoint Online verilerinizin taşınmasını **tamamlayana** kadar kullanıcılarınıza özgün konumdaki dizinden hizmet etmeye devam edeceğiz. SharePoint Online verilerinizi taşımayı tamamladıktan sonra yeni konumda arama otomatik olarak içeriğinizde gezinmeye başlar. Bu noktadan itibaren, geçirilen dizinden kullanıcılarınıza hizmet ederiz. Geçiş sonrasında içeriğinizde yapılan değişiklikler, gezinme tarafından alınana kadar geçirilen dizine dahil değildir. Çoğu müşteri, SharePoint Online verilerini taşımayı tamamladıktan hemen sonra sonuçların daha az yeni olduğunu fark etmez, ancak bazı müşteriler ilk 24-48 saat içinde daha az yenilikle karşılaşabilir.
   
 Aşağıdaki arama özellikleri etkilenir:
   
 - Arama sonuçları ve Arama Web Bölümleri: Sonuçlar, gezinme onları alana kadar geçiş sonrasında gerçekleşen değişiklikleri içermez. 
 
-- Delve: Delve, gezinme tarafından seçilene kadar geçiş sonrasında gerçekleşen değişiklikleri içermez.
+- Delve: Delve, gezinme onları alana kadar geçiş sonrasında gerçekleşen değişiklikleri içermez.
 
-- Site için Popülerlik ve Arama Raporları: Yeni konumdaki Excel raporların sayısı yalnızca SharePoint Çevrimiçi verilerinizi taşımayı tamamladıktan sonra çalıştırılan kullanım raporlarından geçirilen sayımları ve sayıları içerir. Ara dönemdeki sayımlar kaybolur ve kurtarılamaz. Bu süre genellikle birkaç gündür. Bazı müşteriler daha kısa veya daha uzun kayıplar yaşayabilir.
+- Site için popülerlik ve Arama Raporları: Yeni konumdaki Excel raporlarına ait sayımlar yalnızca SharePoint Online verilerinizi taşımayı tamamladıktan sonra çalıştırılan kullanım raporlarından geçirilen sayıları ve sayıları içerir. Ara dönemdeki sayımlar kaybolur ve kurtarılamaz. Bu süre genellikle birkaç gündür. Bazı müşteriler daha kısa veya daha uzun kayıplar yaşayabilir.
 
-- Video Portalı: Video Portalı'nın sayılarını ve istatistiklerini görüntüleme, Excel Raporların istatistiklerine bağlıdır, bu nedenle video portalının görüntüleme sayıları ve istatistikleri Excel raporlarıyla aynı süre boyunca kaybolur.
+- Video Portalı: Video Portalı'nın sayılarını ve istatistiklerini görüntüleme, Excel Raporları istatistiklerine bağlıdır, bu nedenle Video Portalı'nın görüntüleme sayıları ve istatistikleri Excel raporlarıyla aynı süre boyunca kaybolur.
 
 - eBulma: Geçiş sırasında değiştirilen öğeler, gezinme değişiklikleri alana kadar gösterilmez.
 
 - Veri Kaybı Koruması (DLP): Gezinme değişiklikleri alana kadar değişen öğelerde ilkeler uygulanmaz.
 
-Geçişin bir parçası olarak, varsayılan bölge değişir ve tüm yeni içerik yeni varsayılan bölgede bekleyen konumda depolanır. Mevcut içerik, yönetim merkezindeki SharePoint Online veri konumunda yapılan ilk değişiklikten sonra 90 güne kadar arka planda sizi etkilemeden hareket eder.
+Geçişin bir parçası olarak, varsayılan bölge değişir ve tüm yeni içerik yeni varsayılan bölgede bekleyen konumda depolanır. Mevcut içerik, yönetim merkezindeki SharePoint Online veri konumunda yapılan ilk değişiklikten sonra 90 güne kadar arka planda sizi etkilemeden taşınır.
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için self servis parola sıfırlamayı yönetmeyi öğrenin.
-ms.openlocfilehash: 4760953d3d25c925dbe1bad6e2c67f43c621761b
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 2b530b7f0d2d8707a0876788fd22132a5cb998c5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055932"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471642"
 ---
 # <a name="manage-self-service-password-reset-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de self servis parola sıfırlamayı yönetme
 
@@ -40,13 +40,13 @@ Kiracı listede görünmeden önce aşağıdaki koşulların karşılanması ger
 
 - Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Parola sıfırlama'yı** seçin.
 
-Parola sıfırlama sekmesi, önerilen ayarlar, SSPR'ye kaydolmamış kullanıcı sayısı ve yönettiğiniz kuruluşlar genelinde SSPR dağıtım ilerleme durumunun kiracıya göre ayrıntılı dökümü aracılığıyla SSPR'yi etkinleştiren kiracılara genel bir bakış sağlar.
+Parola sıfırlama sayfası, önerilen ayarlar, SSPR'ye kaydolmamış kullanıcı sayısı ve yönettiğiniz kuruluşlar genelinde SSPR dağıtım ilerleme durumunun kiracıya göre ayrıntılı dökümü aracılığıyla SSPR'yi etkinleştiren kiracılara genel bir bakış sağlar.
 
 ## <a name="enable-sspr-for-a-tenant"></a>Kiracı için SSPR'yi etkinleştirme
 
 1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Parola sıfırlama'yı** seçin.
 
-2. **Parola sıfırlama** sekmesinde, ayrıntılar bölmesini açmak için listeden bir kiracı seçin.
+2. **Parola sıfırlama** sayfasında, ayrıntılar bölmesini açmak için listeden bir kiracı seçin.
 
 3. **Azure Active Directory'ye (Azure AD) gitmek için Azure Active Directory'de SSPR ayarlarını düzenle'yi** seçin.
 
@@ -56,7 +56,7 @@ Parola sıfırlama sekmesi, önerilen ayarlar, SSPR'ye kaydolmamış kullanıcı
 
 1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Parola sıfırlama'yı** seçin.
 
-2. **Parola sıfırlama** sekmesinde, ayrıntılar bölmesini açmak için listeden bir kiracı seçin.
+2. **Parola sıfırlama** sayfasında, ayrıntılar bölmesini açmak için listeden bir kiracı seçin.
 
 3. Bildirmek istediğiniz kullanıcıları seçin.
 

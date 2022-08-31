@@ -1,9 +1,10 @@
 ---
-title: Microsoft 365 Defender hizmeti sorunlarını giderme
+title: Microsoft 365 Defender hizmet sorunlarını giderin
 description: Bilinen Microsoft 365 Defender sorunlarının çözümlerini ve geçici çözümlerini bulma
 keywords: sorun giderme Microsoft 365 Defender, sorun giderme, Kimlik için Microsoft Defender, sorunlar, eklenti, ayarlar sayfası
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,15 +20,14 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 656599cf9ec66987119819b2f28f9a8eff1d4e77
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 1bc37191d83ebe4e2a6d483d4f490d96d195082b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731680"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474962"
 ---
-# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Microsoft 365 Defender hizmeti sorunlarını giderme
+# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Microsoft 365 Defender hizmet sorunlarını giderin
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -51,7 +51,7 @@ Daha fazla bilgi için bkz. [Kimlik için Microsoft Defender tümleştirme](/clo
 
 ## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>Hizmeti açmak için ayarlar sayfası nerede?
 
-Microsoft 365 Defender açmak için **Microsoft 365 Defender** portalındaki gezinti bölmesinden Ayarlar erişin. Bu gezinti öğesi yalnızca [önkoşul izinleriniz ve lisanslarınız](m365d-enable.md#check-license-eligibility-and-required-permissions) varsa görünür.
+Microsoft 365 Defender açmak için, Microsoft 365 Defender portalındaki gezinti bölmesinden **Ayarlar'a** erişin. Bu gezinti öğesi yalnızca [önkoşul izinleriniz ve lisanslarınız](m365d-enable.md#check-license-eligibility-and-required-permissions) varsa görünür.
 
 ## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>Dosyam/URL'm için özel durum Nasıl yaparım? oluşturulsun mu?
 

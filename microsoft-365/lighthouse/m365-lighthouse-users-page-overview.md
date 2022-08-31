@@ -17,28 +17,28 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Kullanıcılar sayfası hakkında bilgi edinin.
-ms.openlocfilehash: 0c4a0fd7f715fec45cbb359ef21b448941451a0a
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 21a3505f39f7a822283deddb7c8fcc8c41b1f640
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056723"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469977"
 ---
 # <a name="overview-of-the-users-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Kullanıcılar sayfasına genel bakış 
 
 Microsoft 365 Lighthouse, sol gezinti bölmesindeki **Kullanıcılar'ın** altındaki bağlantılardan herhangi birini seçerek müşteri kiracı hesapları genelinde kullanıcıları yönetmenize olanak tanır. Kullanıcılar sayfasından kullanıcıları arayabilir, kullanıcı hesaplarınızın güvenlik durumunu değerlendirebilir ve üzerinde işlem yapabilirsiniz. Ayrıca riskli kullanıcılarla ilgili içgörüleri ve çok faktörlü kimlik doğrulaması ile self servis parola sıfırlamanın durumunu da görüntüleyebilirsiniz.  
   
-## <a name="search-users-tab"></a>Kullanıcı ara sekmesi  
+## <a name="account-management-page"></a>Hesap yönetimi sayfası  
   
-Kullanıcıları ara sekmesinden belirli kullanıcıları hızla arayabilir ve kullanıcı hesabı bilgilerini güncelleştirme, parolaları sıfırlama, lisans atama ve kullanıcının gruplarını, posta kutusunu veya OneDrive'ı yönetme gibi yaygın kullanıcı yönetim görevlerini gerçekleştirebilirsiniz.
+Hesap yönetimi sayfasında, belirli kullanıcılar için kiracılarda hızla arama yapabilir ve kullanıcı hesabı bilgilerini güncelleştirme, parolaları sıfırlama, lisans atama ve kullanıcının gruplarını, posta kutusunu veya OneDrive'ı yönetme gibi yaygın kullanıcı yönetimi görevlerini gerçekleştirebilirsiniz. Ayrıca etkin olmayan hesapları görüntüleyebilir ve uygun güvenlik eylemlerini gerçekleştirebilir ve kullanılmayan lisansları geri kazanabilirsiniz.
 
-:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" alt-text="Kullanıcı ara sekmesinin ekran görüntüsü.":::
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" alt-text="Arama ve Etkin Olmayan kullanıcılar sayfasının ekran görüntüsü.":::
 
-## <a name="risky-users-tab"></a>Riskli Kullanıcılar sekmesi
+## <a name="risky-users-page"></a>Riskli Kullanıcılar sayfası
 
-Riskli Kullanıcılar sekmesi, kiracılarınızda riskli davranış için bayrak eklenmiş kullanıcı hesaplarını gösterir. Algılanan risk hakkında daha fazla bilgi görüntülemek veya kullanıcının parolasını sıfırlayarak veya oturum açmayı engelleyerek riski azaltmak için kullanıcılardan herhangi birini seçin. Risk türleri ve algılama hakkında daha fazla bilgi için bkz. [Risk nedir?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
+Riskli Kullanıcılar sayfası, kiracılarınızda riskli davranış için bayrak eklenmiş kullanıcı hesaplarını gösterir. Algılanan risk hakkında daha fazla bilgi görüntülemek veya kullanıcının parolasını sıfırlayarak veya oturum açmayı engelleyerek riski azaltmak için kullanıcılardan herhangi birini seçin. Risk türleri ve algılama hakkında daha fazla bilgi için bkz. [Risk nedir?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
 
-Riskli Kullanıcılar sekmesi aşağıdaki seçenekleri de içerir:
+Riskli Kullanıcılar sayfası aşağıdaki seçenekleri de içerir:
 - **Ihracat:** Cihaz uyumluluk verilerini Excel virgülle ayrılmış değerler (.csv) dosyasına dışarı aktarmak için seçin.
 - **Yenileme:** En güncel cihaz uyumluluk verilerini almak için öğesini seçin.
 - **Güvenliği ihlal edilen kullanıcıları onaylayın:** Kullanıcının gizliliğinin ihlal edildiğini onaylamak için öğesini seçin.
@@ -46,19 +46,19 @@ Riskli Kullanıcılar sekmesi aşağıdaki seçenekleri de içerir:
 - **Parolayı sıfırla:** Kullanıcı parolasını değiştirmek veya sıfırlamak için seçin.
 - **Oturum Açmayı Engelle:** Bu kullanıcı olarak herkesin oturum açmasını engellemek için öğesini seçin.
 
-:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-risky-users-tab.png" alt-text="Riskli kullanıcılar sekmesinin ekran görüntüsü.":::
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-risky-users-tab.png" alt-text="Riskli kullanıcılar sayfasının ekran görüntüsü.":::
 
-## <a name="multifactor-authentication-tab"></a>Çok Faktörlü Kimlik Doğrulaması sekmesi
+## <a name="multifactor-authentication-page"></a>Çok Faktörlü Kimlik Doğrulama sayfası
 
-Çok Faktörlü Kimlik Doğrulaması sekmesi, kiracılarınız genelinde çok faktörlü kimlik doğrulaması (MFA) etkinleştirmesinin durumu hakkında ayrıntılı bilgi sağlar. MFA gerektiren Koşullu Erişim ilkelerinin zaten yapılandırıldığı ve MFA için henüz hangi kullanıcıların kaydolmadığı da dahil olmak üzere bu kiracıyla ilgili daha fazla ayrıntı görmek için listeden herhangi bir kiracıyı seçin.
+Çok Faktörlü Kimlik Doğrulaması sayfası, kiracılarınız genelinde çok faktörlü kimlik doğrulaması (MFA) etkinleştirmesinin durumu hakkında ayrıntılı bilgi sağlar. MFA gerektiren Koşullu Erişim ilkelerinin zaten yapılandırıldığı ve MFA için henüz hangi kullanıcıların kaydolmadığı da dahil olmak üzere bu kiracıyla ilgili daha fazla ayrıntı görmek için listeden herhangi bir kiracıyı seçin.
 
-:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png" alt-text="Çok Faktörlü Kimlik Doğrulaması sekmesinin ekran görüntüsü.":::
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png" alt-text="Çok Faktörlü Kimlik Doğrulaması sayfasının ekran görüntüsü.":::
 
-## <a name="password-reset-tab"></a>Parola sıfırlama sekmesi
+## <a name="password-reset-page"></a>Parola sıfırlama sayfası
 
-Parola sıfırlama sekmesi, kiracılarınız genelinde self servis parola sıfırlama etkinleştirmesinin durumuyla ilgili ayrıntılı bilgileri gösterir. Ayrıca, etkinleştirilen ancak kendi parolalarını sıfırlamadan önce kaydolması gereken kullanıcılara yönelik içgörüler sağlar.
+Parola sıfırlama sayfası, kiracılarınız genelinde self servis parola sıfırlama etkinleştirmesinin durumuyla ilgili ayrıntılı bilgileri gösterir. Ayrıca, etkinleştirilen ancak kendi parolalarını sıfırlamadan önce kaydolması gereken kullanıcılara yönelik içgörüler sağlar.
 
-:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" alt-text="Parola sıfırlama sekmesinin ekran görüntüsü.":::
+:::image type="content" source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" alt-text="Parola sıfırlama sayfasının ekran görüntüsü.":::
 
 ## <a name="related-content"></a>İlgili içerik
 

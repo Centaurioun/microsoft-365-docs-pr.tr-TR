@@ -3,7 +3,8 @@ title: Microsoft 365 Defender API'leri aracılığıyla iş ortağı erişimi
 description: Kullanıcılarınız adına Microsoft 365 Defender program aracılığıyla erişim elde etmek için uygulama oluşturmayı öğrenin.
 keywords: iş ortağı, erişim, api, çok kiracılı, onay, erişim belirteci, uygulama
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 43bb018abe6a19464d7e52493ed1b4ccd1f15140
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 03c87d32cf850d75fb83eefdc989927fcdc6ae90
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102426"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479564"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Microsoft 365 Defender API'lerine iş ortağı erişimi olan bir uygulama oluşturma
 
@@ -41,13 +41,13 @@ ms.locfileid: "66102426"
 
 Bu sayfada, birden çok kiracıdaki kullanıcılar adına Microsoft 365 Defender program aracılığıyla erişimi olan bir Azure Active Directory uygulamasının nasıl oluşturulacağı açıklanır. Çok kiracılı uygulamalar, büyük kullanıcı gruplarına hizmet etmek için kullanışlıdır.
 
-Tek bir kullanıcı adına Microsoft 365 Defender program aracılığıyla erişmeniz gerekiyorsa bkz. [Kullanıcı adına Microsoft 365 Defender API'lere erişmek için uygulama oluşturma](api-create-app-user-context.md). Kullanıcı açıkça tanımlanmamış bir erişime ihtiyacınız varsa (örneğin, bir arka plan uygulaması veya daemon yazıyorsanız), bkz. [Kullanıcı olmadan Microsoft 365 Defender erişmek için uygulama oluşturma](api-create-app-web.md). Hangi tür erişime ihtiyacınız olduğundan emin değilseniz bkz. [Kullanmaya başlayın](api-access.md).
+Tek bir kullanıcı adına Microsoft 365 Defender program aracılığıyla erişmeniz gerekiyorsa bkz. [Kullanıcı adına Microsoft 365 Defender API'lere erişmek için uygulama oluşturma](api-create-app-user-context.md). Kullanıcı açıkça tanımlanmamış bir erişime ihtiyacınız varsa (örneğin, bir arka plan uygulaması veya daemon yazıyorsanız), bkz. [Kullanıcı olmadan Microsoft 365 Defender erişmek için uygulama oluşturma](api-create-app-web.md). Hangi tür erişime ihtiyacınız olduğundan emin değilseniz bkz. [Kullanmaya başlama](api-access.md).
 
-Microsoft 365 Defender, bir dizi programlı API aracılığıyla verilerinin ve eylemlerinin büyük bir kısmını kullanıma sunar. Bu API'ler iş akışlarını otomatikleştirmenize ve Microsoft 365 Defender özelliklerinden yararlanmanıza yardımcı olur. Bu API erişimi için OAuth2.0 kimlik doğrulaması gerekir. Daha fazla bilgi için bkz[. OAuth 2.0 Yetkilendirme Kodu Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender, bir dizi programlı API aracılığıyla verilerinin ve eylemlerinin büyük bir kısmını kullanıma sunar. Bu API'ler iş akışlarını otomatikleştirmenize ve Microsoft 365 Defender özelliklerinden yararlanmanıza yardımcı olur. Bu API erişimi için OAuth2.0 kimlik doğrulaması gerekir. Daha fazla bilgi için bkz [. OAuth 2.0 Yetkilendirme Kodu Akışı](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Genel olarak, bu API'leri kullanmak için aşağıdaki adımları uygulamanız gerekir:
 
-- bir Azure Active Directory (Azure AD) uygulaması oluşturun.
+- Bir Azure Active Directory (Azure AD) uygulaması oluşturun.
 - Bu uygulamayı kullanarak erişim belirteci alın.
 - Microsoft 365 Defender API'sine erişmek için belirteci kullanın.
 
@@ -60,7 +60,7 @@ Bu makalede şunların nasıl yapılacağını açıklar:
 - Microsoft 365 Defender erişim belirteci alma
 - Belirteci doğrulama
 
-Microsoft 365 Defender, bir dizi programlı API aracılığıyla verilerinin ve eylemlerinin büyük bir kısmını kullanıma sunar. Bu API'ler, iş akışlarını otomatikleştirmenize ve Microsoft 365 Defender özelliklerine göre yenilik oluşturmanıza yardımcı olur. API erişimi için OAuth2.0 kimlik doğrulaması gerekir. Daha fazla bilgi için bkz[. OAuth 2.0 Yetkilendirme Kodu Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender, bir dizi programlı API aracılığıyla verilerinin ve eylemlerinin büyük bir kısmını kullanıma sunar. Bu API'ler, iş akışlarını otomatikleştirmenize ve Microsoft 365 Defender özelliklerine göre yenilik oluşturmanıza yardımcı olur. API erişimi için OAuth2.0 kimlik doğrulaması gerekir. Daha fazla bilgi için bkz [. OAuth 2.0 Yetkilendirme Kodu Akışı](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Genel olarak, API'leri kullanmak için aşağıdaki adımları uygulamanız gerekir:
 
@@ -189,7 +189,7 @@ return $token
 > [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet paketi ve Azure AD Kimlik Doğrulama Kitaplığı (ADAL) kullanım dışı bırakıldı. 30 Haziran 2020'den bu yana yeni özellik eklenmemiş.   Yükseltmenizi kesinlikle öneririz. Diğer ayrıntılar için [geçiş kılavuzuna](/azure/active-directory/develop/msal-migration) bakın.
 
 1. Yeni bir konsol uygulaması oluşturun.
-1. [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/) NuGet yükleyin.
+1. NuGet [Microsoft.Identity.Client'ı](https://www.nuget.org/packages/Microsoft.Identity.Client/) yükleyin.
 1. Aşağıdaki satırı ekleyin:
 
     ```C#
@@ -247,7 +247,7 @@ aadToken = jsonResponse["access_token"]
 ### <a name="get-an-access-token-using-curl"></a>Curl kullanarak erişim belirteci alma
 
 > [!NOTE]
-> Curl, Windows 10, sürüm 1803 ve sonraki sürümlerde önceden yüklenmiştir. Windows diğer sürümleri için aracı doğrudan [resmi curl web sitesinden](https://curl.haxx.se/windows/) indirin ve yükleyin.
+> Curl, Windows 10, sürüm 1803 ve sonraki sürümlerde önceden yüklenmiştir. Windows'un diğer sürümleri için aracı doğrudan [resmi curl web sitesinden](https://curl.haxx.se/windows/) indirin ve yükleyin.
 
 1. Bir komut istemi açın ve CLIENT_ID Azure uygulama kimliğiniz olarak ayarlayın.
 1. CLIENT_SECRET Azure uygulama gizli dizinize ayarlayın.

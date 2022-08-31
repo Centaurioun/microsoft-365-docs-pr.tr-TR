@@ -5,7 +5,8 @@ description: Microsoft Tehdit Uzmanları, Microsoft 365 Defender için ek bir uz
 keywords: yönetilen tehdit avcılığı hizmeti, yönetilen tehdit avcılığı, yönetilen algılama ve yanıt (MDR) hizmeti, MTE, Microsoft Tehdit Uzmanları, uç nokta saldırı bildirimi, Uç Nokta Saldırısı Bildirimi
 search.product: Windows 10
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,16 +16,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.technology: m365d
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: ab8689ffa5b557b77f7c88c7c4cde6f11ac14584
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c7d8363e75df92ecfa0c85e12856678c8e32096c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328507"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476604"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 365'te Microsoft Tehdit Uzmanları genel bakış
 
@@ -54,6 +54,8 @@ Zaten Uç Nokta için Microsoft Defender ve Microsoft 365 Defender varsa, uç no
 Uygulamanız onaylandıktan sonra Tehdit Uzmanları ortamınıza yönelik bir tehdit algıladığı her durumda uç nokta saldırı bildirimleri almaya başlarsınız.
 
 ## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Microsoft Tehdit Uzmanları Abone Olma - İsteğe Bağlı Uzmanlar
+> [!NOTE]
+> İsteğe Bağlı Uzmanlar bir güvenlik olayı yanıt hizmeti değildir. Kuruluşunuzu etkileyen karmaşık tehditlerin daha iyi anlaşılmasını sağlamak için tasarlanmıştır. Acil güvenlik olayı yanıt sorunlarını çözmek için kendi güvenlik olayı yanıt ekibinizle etkileşime geçin. Kendi güvenlik olayı yanıt ekibiniz yoksa ve Microsoft'un yardımını istiyorsanız [Premier Services Hub](/services-hub/)![görüntüsünde bir destek isteği oluşturun](https://user-images.githubusercontent.com/11750124/187275203-87c65c03-d5c5-4fd0-a045-f795f6976336.png)
 
 İsteğe Bağlı Uzmanlar'a abone olmak için Microsoft temsilcinizle iletişime geçin.  Tüm ayrıntılar için bkz[. Microsoft Tehdit Uzmanları özelliklerini yapılandırma](./configure-microsoft-threat-experts.md).
 

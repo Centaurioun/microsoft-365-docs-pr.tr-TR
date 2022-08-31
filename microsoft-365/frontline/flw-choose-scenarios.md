@@ -17,12 +17,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 5d5c6596d0981ad9787a784c0d189a8e11c07ac6
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: 5265c8f4a2135fdeee800ebdd465bc3cbb53a6f5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432407"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470981"
 ---
 # <a name="choose-your-scenarios-for-microsoft-365-for-frontline-workers"></a>Ön cephe çalışanları için Microsoft 365 senaryolarınızı seçin
 
@@ -37,6 +37,11 @@ Kuruluşunuzun ön cephe çalışanları için Microsoft 365 ile neler yapabilec
 :::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png":::
 
 İletişim çözümleri, ön cephe çalışanlarınızı birbirine bağlar ve birbirleriyle, kuruluştaki diğer kişilerle ve müşterilerinizle işbirliği yapmalarını sağlar.
+
+Ön cephe çalışanlarınızın perakende kuruluşlarında bağlantı kurmasına ve işbirliği yapmasına nasıl yardımcı olabileceğinize ilişkin bir örnek görmek için aşağıdaki videoyu izleyin:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+
 
 | Senaryo | Açıklama | Hizmetleri | Teams uygulamaları |
 | --- | --- | --- |--- |
@@ -84,6 +89,11 @@ Kapak: [Satır içi çeviri](/microsoftteams/inline-message-translation-teams), 
 
 Kağıt tabanlı işlemleri dijitalleştirerek ve rutin, yinelenen adımları otomatikleştirerek operasyonel verimliliği artırma.
 
+Perakende ortamlarında iş süreçlerini nasıl basitleştirebileceğinize ilişkin bir örnek görmek için aşağıdaki videoyu izleyin:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
+
 | Senaryo | Açıklama | Hizmetleri | Teams uygulamaları |
 | --- | --- | --- | --- |
 | [İş süreçlerini basitleştirme](simplify-business-processes.md) | Siteler arasında standart işlemler, bilgileri yönetmek ve devam eden işlemleri izlemek için listeler oluşturmak ve Onaylar ile istekleri kolaylaştırmak için görev yayımlamayı kullanın. Otomatik iş akışları, veri toplama veya yönlendirme bildirimleri gibi eylemleri hızlandırabilir ve otomatikleştirebilir. | Microsoft Teams<br>Power Platform | Görevler<br>Liste<br>Onaylar |
@@ -94,6 +104,11 @@ Kağıt tabanlı işlemleri dijitalleştirerek ve rutin, yinelenen adımları ot
 :::image type="icon" source="media/virtual-appointment-teams.png":::
 
 İstemciler ve müşterilerle sanal randevular zamanlamak ve barındırmak için Microsoft Bookings ve Microsoft Teams'i kullanın. Müşterileriniz hakkında doğru bilgileri almak için Veya müşterilerinizin neye ihtiyacı olduğunu öğrenmek için müşteri desteği deneyiminizin bir parçası olarak Forms'ı sanal randevu deneyiminiz ile tümleştirebilirsiniz.
+
+Sağlık kuruluşlarında sanal randevuların bir örneğini görmek için aşağıdaki videoyu izleyin: 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
+
 
 Daha fazla bilgi: [Microsoft Teams ve Bookings uygulamasıyla sanal randevular](bookings-virtual-visits.md)
 

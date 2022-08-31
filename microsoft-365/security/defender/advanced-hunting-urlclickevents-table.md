@@ -4,7 +4,8 @@ description: Gelişmiş tehdit avcılığı şemasındaki UrlClickEvents tablosu
 keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, UrlClickEvents, SafeLinks, kimlik avı, kötü amaçlı yazılım, kötü amaçlı tıklamalar, Outlook, ekipler, e-posta, Office365
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: bb7ee0397c79cc64c6f7396b6c3ca9450c8306f2
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 068e083321b465410df9e734660344c03e6b55ce
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130292"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476054"
 ---
 # <a name="urlclickevents"></a>UrlClickEvents
 
@@ -35,7 +35,7 @@ ms.locfileid: "65130292"
 - Office 365 için Microsoft Defender
 
 
-`UrlClickEvents` Gelişmiş tehdit avcılığı şemasındaki tablo, desteklenen masaüstü, mobil ve web uygulamalarında e-posta iletileri, Microsoft Teams ve Office 365 uygulamalarından Kasa [Bağlantıları](../office-365-security/safe-links.md) tıklamaları hakkında bilgi içerir. 
+`UrlClickEvents` Gelişmiş tehdit avcılığı şemasındaki tablo, desteklenen masaüstü, mobil ve web uygulamalarında e-posta iletileri, Microsoft Teams ve Office 365 uygulamalarından [gelen Güvenli Bağlantılar](../office-365-security/safe-links.md) tıklamaları hakkında bilgi içerir. 
 
 > [!IMPORTANT]
 > Bazı bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
@@ -46,9 +46,9 @@ Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi iç
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | Kullanıcının bağlantıya tıkladığında tarih ve saat |
 | `Url` | `string` | Kullanıcı tarafından tıklanan tam URL |
-| `ActionType` | `string` | Tıklamaya izin verilip verilmeyeceğini veya Kasa Bağlantıları tarafından engellenip engellenmediğini veya bir kiracı ilkesi nedeniyle engellenip engellenmediğini gösterir; örneğin, Kiracı İzin Verme Bloğu listesinden|
+| `ActionType` | `string` | Tıklamaya güvenli bağlantılar tarafından izin verilip verilmeyeceğini veya engellenip engellenmediğini veya bir kiracı ilkesi nedeniyle engellenip engellenmediğini gösterir; örneğin, Kiracı İzin Ver Bloğu listesinden|
 | `AccountUpn` | `string` | Bağlantıya tıklanan hesabın Kullanıcı Asıl Adı|
-| `Workload` | `string` | Kullanıcının bağlantıya tıkladığı uygulama ve değerler E-posta, Office ve Teams|
+| `Workload` | `string` | Kullanıcının bağlantıya tıkladığı ve değerlerin Email, Office ve Teams olduğu uygulama|
 | `NetworkMessageId` | `string` | Microsoft 365 tarafından oluşturulan tıklanan bağlantıyı içeren e-postanın benzersiz tanımlayıcısı|
 | `IPAddress` | `string` | Kullanıcının bağlantıya tıkladığı cihazın genel IP adresi|
 | `ThreatTypes` | `string` | Url'nin kötü amaçlı yazılıma mı, kimlik avına mı yoksa diğer tehditlere mi yol açtığını belirten tıklama sırasında karar verme|
@@ -70,5 +70,5 @@ UrlClickEvents
 ## <a name="related-topics"></a>İlgili konular
 
 - [Tehditleri proaktif olarak avlama](advanced-hunting-overview.md)
-- [Office 365 için Microsoft Defender'da bağlantıları Kasa](../office-365-security/safe-links.md)
+- [Office 365 için Microsoft Defender'da Güvenli Bağlantılar](../office-365-security/safe-links.md)
 - [Gelişmiş tehdit avcılığı sorgu sonuçları üzerinde eylem gerçekleştirme](advanced-hunting-take-action.md)

@@ -13,28 +13,28 @@ metadata:
   ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
   ms.custom:
   - seo-marvel-apr2020
-  description: Yöneticiler, Microsoft iş ortakları ve kurumsal bayileri için Microsoft 365'da temsilci yönetim görevleriyle ilgili sık sorulan soruları ve yanıtları görüntüleyebilir.
-  ms.technology: mdo
-  ms.prod: m365-security
-  ms.openlocfilehash: 457dc56d8869b1d8ddd010139f571dae217655b6
-  ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+  description: Yöneticiler, Microsoft iş ortakları ve kurumsal bayileri için Microsoft 365'te temsilci yönetim görevleri hakkında sık sorulan soruları ve yanıtları görüntüleyebilir.
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
+  ms.openlocfilehash: 5ccd9868bef3e26eaff0edde91f76a789099d734
+  ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 06/03/2022
-  ms.locfileid: "65873192"
+  ms.lasthandoff: 08/31/2022
+  ms.locfileid: "67475072"
 title: Temsilci ile yönetim SSS
 summary: >
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 
-  Bu makale, Microsoft iş ortakları ve kurumsal bayileri için Microsoft 365'da temsilci olarak atanan yönetim görevleri hakkında sık sorulan sorular ve yanıtlar sağlar. Temsilcili yönetim, diğer kiracılar (şirketler) için Exchange Online Protection (EOP) ayarlarını yönetme özelliğini içerir.
+  Bu makalede, Microsoft iş ortakları ve kurumsal bayileri için Microsoft 365'teki temsilci yönetim görevleri hakkında sık sorulan sorular ve yanıtlar sağlanır. Temsilcili yönetim, diğer kiracılar (şirketler) için Exchange Online Protection (EOP) ayarlarını yönetme özelliğini içerir.
 sections:
 - name: Yok sayıldı
   questions:
   - question: >
       Kurumsal bayiyim ve müşteri kiracılarımı yönetmem gerekiyor. Bu nasıl çalışır?
     answer: >
-      Microsoft iş ortağı veya satıcıysanız ve Microsoft Bulut Çözümü Sağlayıcısı (CSP) olmak için kaydolmuşsanız, müşterinizin Microsoft 365 kuruluşunda _temsilci yönetim_ özellikleri isteyebilirsiniz. Daha fazla bilgi için aşağıdaki makalelere bakın:
+      Microsoft iş ortağı veya kurumsal bayiyseniz ve Microsoft Bulut Çözümü Sağlayıcısı (CSP) olarak kaydolmuşsanız, müşterinizin Microsoft 365 kuruluşunda _temsilci yönetim_ özellikleri isteyebilirsiniz. Daha fazla bilgi için aşağıdaki makalelere bakın:
 
 
       - [Bulut Çözümü Sağlayıcısı programı](/partner-center/csp-overview)
@@ -50,4 +50,4 @@ sections:
       Hayır. Microsoft 365 şu anda bu özelliğe sahip değildir.
   - question: >
       Tüm kiracılarımda birleştirilmiş raporlama alabilir miyim?
-    answer: Yönettiğiniz şirketler arasında birleştirilmiş raporlama Microsoft 365 yönetim merkezi raporlarda kullanılamaz. Ancak, [Microsoft Graph](/graph/overview) kullanarak raporlar alabilirsiniz.
+    answer: Yönettiğiniz şirketler arasında birleştirilmiş raporlama Microsoft 365 yönetim merkezi raporlarda kullanılamaz. Ancak, [Microsoft Graph'ı](/graph/overview) kullanarak rapor alabilirsiniz.

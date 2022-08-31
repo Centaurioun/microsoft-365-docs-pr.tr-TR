@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Uyumluluk Yöneticisi kullanıcı izinlerini ve rollerini ayarlayın ve eylemlerin otomatik testini yapılandırın. Kullanıcı geçmişini yönetin ve pano görünümünüzü filtreleyin.
-ms.openlocfilehash: 940396ad6334e646a37a359f4ed73345056f51ef
-ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
+ms.openlocfilehash: 295ba35eeb454314adb364a0203b6d6c337c8ba8
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67357466"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467953"
 ---
 # <a name="get-started-with-compliance-manager"></a>Uyumluluk Yöneticisini kullanmaya başlama
 
@@ -155,7 +155,7 @@ Kuruluşunuzun genel yöneticisi, otomatik test ayarlarını istediği zaman de�
 
 ### <a name="manage-user-history"></a>Kullanıcı geçmişini yönetme
 
-**Kullanıcı geçmişini yönet** ayarları, Uyumluluk Yöneticisi'nde hangi kullanıcıların iyileştirme eylemleriyle çalıştığını hızla belirlemenize yardımcı olur. İyileştirme eylemleriyle ilişkili tanımlanabilir kullanıcı verileri, yapılan tüm uygulama ve test çalışmalarını, karşıya yükledikleri belgeleri ve girdikleri notları içerir. Bu tür verileri anlamak ve almak, kuruluşunuzun kendi uyumluluk gereksinimleri için gerekli olabilir.
+**Kullanıcı geçmişini yönet** ayarları, Uyumluluk Yöneticisi'nde hangi kullanıcıların iyileştirme eylemleriyle çalıştığını hızla belirlemenize yardımcı olur. İyileştirme eylemleriyle ilişkili tanımlanabilir kullanıcı verileri, karşıya yükledikleri iyileştirme eylemlerinin ve belgelerin durumunu içerir. Bu tür verileri anlamak ve almak, kuruluşunuzun kendi uyumluluk gereksinimleri için gerekli olabilir.
 
 Kullanıcı geçmişi ayarları, tüm iyileştirme eylemlerini bir kullanıcıdan diğerine yeniden atamanıza da olanak tanır.
 

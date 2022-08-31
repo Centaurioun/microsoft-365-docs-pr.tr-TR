@@ -5,27 +5,27 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Yöneticiler, Office 365 için Microsoft Defender Plan 2'de kimlik avı saldırıları simülasyonu için oturum açma sayfaları oluşturmayı ve yönetmeyi öğrenebilir.
-ms.technology: mdo
-ms.openlocfilehash: 7057f443675cb0715a41f78c80feb69cdc75d22c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.subservice: mdo
+ms.openlocfilehash: d0a129bfdd43009a854bffea27a18717bf95df7b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640312"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480161"
 ---
 # <a name="login-pages-in-attack-simulation-training"></a>Saldırı simülasyonu eğitimindeki oturum açma sayfaları
 
 [Office 365 için Microsoft Defender plan 2](defender-for-office-365.md) **için geçerlidir**
 
-Microsoft 365 E5 veya Office 365 için Microsoft Defender Plan 2'de saldırı simülasyonu eğitimi bölümünde oturum açma sayfaları, ek [sosyal mühendislik tekniklerinde](attack-simulation-training.md#select-a-social-engineering-technique) **Kimlik Bilgisi toplama** ve **Bağlama kullanan simülasyonlarda** kullanıcılara görüntülenir.
+Microsoft 365 E5 veya Office 365 için Microsoft Defender Plan 2'deki Saldırı simülasyonu eğitimi oturum açma sayfaları, ek [sosyal mühendislik tekniklerinde](attack-simulation-training.md#select-a-social-engineering-technique) **Kimlik Bilgisi toplama** ve **Bağlama kullanan simülasyonlarda** kullanıcılara görüntülenir.
 
-Kullanılabilir oturum açma sayfalarını görmek için adresinden Microsoft 365 Defender portalını <https://security.microsoft.com>açın **, e-posta & işbirliği** \> **Saldırı simülasyonu eğitimi** \> **Simülasyon içerik kitaplığı** sekmesine \> gidin ve **oturum açma sayfaları'nı** seçin. **Oturum açma sayfaları'nı** seçebileceğiniz **Simülasyon içerik kitaplığı** sekmesine doğrudan gitmek için kullanın<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+Kullanılabilir oturum açma sayfalarını görmek için adresinden Microsoft 365 Defender portalını <https://security.microsoft.com>açın **Email & işbirliği** \> **Saldırı simülasyonu eğitimi** \> **Benzetimi içerik kitaplığı** sekmesine \> gidin ve **oturum açma sayfaları'nı** seçin. **Oturum açma sayfaları'nı** seçebileceğiniz **Simülasyon içerik kitaplığı** sekmesine doğrudan gitmek için kullanın<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 **Oturum açma sayfalarında** iki sekme vardır:
 
@@ -67,7 +67,7 @@ Listeden bir oturum açma sayfası seçtiğinizde, aşağıdaki bilgilerle birli
 
 ## <a name="create-login-pages"></a>Oturum açma sayfaları oluşturma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, E-posta & işbirliği** \> **Saldırı benzetimi eğitimi** \> **Benzetimi içerik kitaplığı** sekmesine \> gidin ve **oturum açma sayfaları'nı** seçin. **Oturum açma sayfaları'nı** seçebileceğiniz **Simülasyon içerik kitaplığı** sekmesine doğrudan gitmek için kullanın<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Email & işbirliği** \> **Saldırı simülasyonu eğitimi** \> **Benzetimi içerik kitaplığı** sekmesine \> gidin ve **oturum açma sayfaları'nı** seçin. **Oturum açma sayfaları'nı** seçebileceğiniz **Simülasyon içerik kitaplığı** sekmesine doğrudan gitmek için kullanın<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 Aşağıdaki konumlarda özel oturum açma sayfaları oluşturabilirsiniz:
 
    Yeni oluştur simgesine tıklayın ![.](../../media/m365-cc-sc-create-icon.png) Son kullanıcı oturum açma sayfası oluşturma sihirbazını başlatmak için **yeni oluşturun**.
@@ -173,7 +173,7 @@ Varsayılan oturum açma sayfası, **Kimlik bilgisi toplama** veya Ek [yüklerin
 >
 > Varsayılan oturum açma sayfası da listede işaretlenir, ancak bunu görmek için **Ad** sütununu genişletmeniz gerekebilir:
 >
-> ![Saldırı benzetimi eğitimindeki oturum açma sayfaları listesinde işaretlenmiş varsayılan oturum açma sayfası.](../../media/attack-sim-training-login-pages-default.png)
+> ![Saldırı simülasyonu eğitimi oturum açma sayfaları listesinde işaretlenmiş varsayılan oturum açma sayfası.](../../media/attack-sim-training-login-pages-default.png)
 
 ## <a name="related-links"></a>İlgili bağlantılar
 

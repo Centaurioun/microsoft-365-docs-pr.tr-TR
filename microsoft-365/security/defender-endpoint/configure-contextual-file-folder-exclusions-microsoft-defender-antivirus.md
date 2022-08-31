@@ -2,7 +2,7 @@
 title: Bağlamsal dosya ve klasör dışlamaları
 description: Windows üzerinde Microsoft Defender Virüsten Koruma için bağlamsal dosya ve klasör dışlama özelliğini açıklar. Bu özellik, kısıtlamalar uygulayarak Microsoft Defender Virüsten Koruma'nın bir dosyayı veya klasörü taramaması gereken bağlamı tanımlarken daha belirgin olmanıza olanak tanır
 keywords: Microsoft Defender Virüsten Koruma, işlem, dışlama, dosyalar, taramalar
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 8d1516d00a693a56b99ad6eabad59722867f3db0
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.subservice: mde
+ms.openlocfilehash: 0868250b04120a4eed0cf254e4a9d3692eb661fa
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439574"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477967"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>Bağlamsal dosya ve klasör dışlamaları
 

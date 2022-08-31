@@ -19,13 +19,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 ms.technology: mdo
-ms.openlocfilehash: 6883782a942b7fda8e2dedc721756b59a3e7ede6
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 27c6557219db62d17ebb90e3e5b36169fc397874
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750000"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477351"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Sıfır Güven kimlik ve cihaz erişim ilkelerini uygulamak için önkoşul çalışması
 

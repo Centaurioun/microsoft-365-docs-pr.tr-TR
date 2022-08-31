@@ -1,10 +1,11 @@
 ---
-title: Gelişmiş av şemasında AADSignInEventsBeta tablosu
-description: Gelişmiş av Azure Active Directory oturum açma olayları tablosu hakkında bilgi
-keywords: gelişmiş av, tehdit avı, siber tehdit avı, Microsoft 365 Defender, Microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, dosya, IP adresi, cihaz, makine, kullanıcı, hesap, kimlik, AAD
+title: Gelişmiş tehdit avcılığı şemasında AADSignInEventsBeta tablosu
+description: Gelişmiş tehdit avcılığı şemasının Azure Active Directory oturum açma olayları tablosu hakkında bilgi edinin
+keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, dosya, IP adresi, cihaz, makine, kullanıcı, hesap, kimlik, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,26 +18,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: dad3ea9fe4297d93864032130e3f6d6b5f6e4e82
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 90d275264c93736e1219488ecd4ae03e66a62af1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63014053"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469151"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Tablo `AADSignInEventsBeta` şu anda beta sürümündedir ve Azure Active Directory (AAD) oturum açma etkinliklerini takip etmek için kısa vadeli olarak sunulmaktadır. Müşterilerin bu tablo için Azure Active Directory Premium P2 toplamak ve görüntülemek için bir lisansa sahip ihtiyaçları vardır. Tüm oturum açma şeması bilgileri zamanla tabloya `IdentityLogonEvents` taşınacak.
+> Tablo `AADSignInEventsBeta` şu anda beta sürümündedir ve Azure Active Directory (AAD) oturum açma olaylarını izlemenize olanak sağlamak için kısa süreli olarak sunulmaktadır. Müşterilerin bu tabloya yönelik etkinlikleri toplamak ve görüntülemek için Azure Active Directory Premium P2 lisansına sahip olması gerekir. Tüm oturum açma şeması bilgileri sonunda tabloya `IdentityLogonEvents` taşınır.
 
-Gelişmiş `AADSignInEventsBeta` av şemasında yer alan tablo, Azure Active Directory etkileşimli olmayan oturum açma bilgileri içerir. Oturum açma etkinlik raporları - önizleme Azure Active Directory [oturum açma hakkında daha fazla bilgi edinin](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+`AADSignInEventsBeta` Gelişmiş tehdit avcılığı şemasındaki tablo, Azure Active Directory etkileşimli ve etkileşimli olmayan oturum açma işlemleri hakkında bilgi içerir. [Azure Active Directory oturum açma etkinlik raporları - önizlemede oturum açma](/azure/active-directory/reports-monitoring/concept-all-sign-ins) işlemleri hakkında daha fazla bilgi edinin.
 
-Tablodan bilgi dönüşen sorgular oluşturmak için bu başvuruyu kullanın. Gelişmiş av şemasında yer alan diğer tablolar hakkında bilgi için bkz. [gelişmiş av başvurusu](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
+Tablodan bilgi döndüren sorgular oluşturmak için bu başvuruyu kullanın. Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi için gelişmiş [avcılık başvurusuna](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference) bakın.
 
 <br>
 
@@ -44,53 +44,53 @@ Tablodan bilgi dönüşen sorgular oluşturmak için bu başvuruyu kullanın. Ge
 
 |Sütun adı|Veri türü|Açıklama|
 |---|---|---|
-|`Timestamp`|`datetime`|Kaydın oluşturulma tarihi ve saati|
+|`Timestamp`|`datetime`|Kaydın oluşturulduğu tarih ve saat|
 |`Application`|`string`|Kaydedilen eylemi gerçekleştiren uygulama|
-|`ApplicationId`|`string`|Uygulamanın benzersiz tanımlayıcısı|
-|`LogonType`|`string`|Oturum açma oturumunun, etkileşimli, uzak etkileşimli (RDP), ağ, toplu işlem ve hizmetin türü|
-|`ErrorCode`|`int`|Oturum açma hatası oluşursa, hata kodunu içerir. Belirli bir hata kodunun açıklamasını bulmak için, ziyaret edin <https://aka.ms/AADsigninsErrorCodes>.|
-|`CorrelationId`|`string`|Oturum açma olayı için benzersiz tanımlayıcı|
-|`SessionId`|`string`|Ziyaret veya oturum sırasında web sitesinin sunucusu tarafından kullanıcıya atanan benzersiz numara|
-|`AccountDisplayName`|`string`|Adres defteri'de görüntülenen hesap kullanıcı adı. Normalde, belirli bir adın veya adın, ilk adının baş harfinin ve soyadının veya surname'in bir bileşimidir.|
-|`AccountObjectId`|`string`|Azure AD'de hesabın benzersiz tanımlayıcısı|
+|`ApplicationId`|`string`|Uygulama için benzersiz tanımlayıcı|
+|`LogonType`|`string`|Oturum açma oturumunun türü, etkileşimli, uzaktan etkileşimli (RDP), ağ, toplu işlem ve hizmet|
+|`ErrorCode`|`int`|Oturum açma hatası oluşursa hata kodunu içerir. Belirli bir hata kodunun açıklamasını bulmak için adresini ziyaret edin <https://aka.ms/AADsigninsErrorCodes>.|
+|`CorrelationId`|`string`|Oturum açma olayının benzersiz tanımlayıcısı|
+|`SessionId`|`string`|Ziyaret veya oturum sırasında bir web sitesinin sunucusu tarafından kullanıcıya atanan benzersiz numara|
+|`AccountDisplayName`|`string`|Adres defterinde görüntülenen hesap kullanıcısının adı. Genellikle belirli bir adın veya adın, ikinci bir adın ve soyadının veya soyadının birleşimidir.|
+|`AccountObjectId`|`string`|Azure AD'daki hesap için benzersiz tanımlayıcı|
 |`AccountUpn`|`string`|Hesabın kullanıcı asıl adı (UPN)|
-|`IsExternalUser`|`int`|Oturum gösteren kullanıcının dış olup olduğunu gösterir. Olası değerler: -1 (ayarlanmaz), 0 (dış değil), 1 (dış).|
-|`IsGuestUser`|`boolean`|Oturum gösteren kullanıcının kiracıda konuk olup olmadığını gösterir|
-|`AlternateSignInName`|`string`|Azure AD'de oturum alan kullanıcının şirket içi kullanıcı asıl adı (UPN)|
-|`LastPasswordChangeTimestamp`|`datetime`|Oturum anın son kez oturum alan kullanıcının parolasını değiştir olduğu tarih ve saat|
+|`IsExternalUser`|`int`|Oturum açan kullanıcının dış kullanıcı olup olmadığını gösterir. Olası değerler: -1 (ayarlanmadı), 0 (dış değil), 1 (dış).|
+|`IsGuestUser`|`boolean`|Oturum açan kullanıcının kiracıda konuk olup olmadığını gösterir|
+|`AlternateSignInName`|`string`|Azure AD oturum açmış kullanıcının şirket içi kullanıcı asıl adı (UPN)|
+|`LastPasswordChangeTimestamp`|`datetime`|Oturum açan kullanıcının parolasını en son değiştirdiği tarih ve saat|
 |`ResourceDisplayName`|`string`|Erişilen kaynağın görünen adı|
 |`ResourceId`|`string`|Erişilen kaynağın benzersiz tanımlayıcısı|
-|`ResourceTenantId`|`string`|Erişilen kaynağın kiracı benzersiz tanımlayıcısı|
+|`ResourceTenantId`|`string`|Erişilen kaynağın kiracısının benzersiz tanımlayıcısı|
 |`DeviceName`|`string`|Makinenin tam etki alanı adı (FQDN)|
-|`AadDeviceId`|`string`|Azure AD'de cihaz için benzersiz tanımlayıcı|
-|`OSPlatform`|`string`|Makinede çalışan işletim sisteminin platformu. Windows 11, Windows 10 ve Windows 7 gibi, aynı aile içindeki çeşitlemeler de dahil olmak üzere belirli işletim sistemlerini gösterir.|
-|`DeviceTrustType`|`string`|Oturum imzalanan cihazın güven türünü gösterir. Yalnızca yönetilen cihaz senaryoları için. Olası değerler Çalışma Alanı, AzureAd ve ServerAd'dır.|
+|`AadDeviceId`|`string`|Azure AD'da cihaz için benzersiz tanımlayıcı|
+|`OSPlatform`|`string`|Makinede çalışan işletim sisteminin platformu. Windows 11, Windows 10 ve Windows 7 gibi aynı aile içindeki varyasyonlar da dahil olmak üzere belirli işletim sistemlerini gösterir.|
+|`DeviceTrustType`|`string`|Oturum açan cihazın güven türünü gösterir. Yalnızca yönetilen cihaz senaryoları için. Olası değerler Workplace, AzureAd ve ServerAd'dır.|
 |`IsManaged`|`int`|Oturum açmayı başlatan cihazın yönetilen bir cihaz (1) olup olmadığını gösterir (0)|
-|`IsCompliant`|`int`|Oturum açma başlatan cihazın uyumlu (1) veya uyumlu olmayan (0) olup olmadığını gösterir|
-|`AuthenticationProcessingDetails`|`string`|Kimlik doğrulama işlemcisi hakkında ayrıntılar|
-|`AuthenticationRequirement`|`string`|Oturum açma için gereken kimlik doğrulama türü. Olası değerler: multiFactorAuthentication (MFA gereklidi) ve singleFactorAuthentication (MFA gerekmez).|
-|`TokenIssuerType`|`int`|Belirteçyı alan kişi (0) Azure Active Directory Active Directory Federasyon Hizmetleri'nin mi (1) olduğunu gösterir|
-|`RiskLevelAggregated`|`int`|Oturum açma sırasında toplanan risk düzeyi. Olası değerler: 0 (kümelenmiş risk düzeyi ayarlanmaz), 1 (yok), 10 (düşük), 50 (orta) veya 100 (yüksek).|
-|`RiskDetails`|`int`|Oturum alıkan kullanıcının riskli durumu hakkında ayrıntılar|
-|`RiskState`|`int`|Riskli kullanıcı durumunu gösterir. Olası değerler: 0 (yok), 1 (güvenli onaylandı), 2 (düzeltildi), 3 (reddedildi), 4 (risk altında) veya 5 (güvenliği ihlal edildi onaylandı).|
-|`UserAgent`|`string`|Web tarayıcısında veya başka bir istemci uygulamasından kullanıcı aracısı bilgileri|
+|`IsCompliant`|`int`|Oturum açmayı başlatan cihazın uyumlu (1) veya uyumlu olmadığını gösterir (0)|
+|`AuthenticationProcessingDetails`|`string`|Kimlik doğrulama işlemcisi hakkındaki ayrıntılar|
+|`AuthenticationRequirement`|`string`|Oturum açma için gereken kimlik doğrulama türü. Olası değerler: multiFactorAuthentication (MFA gerekiyordu) ve singleFactorAuthentication (MFA gerekli değildi).|
+|`TokenIssuerType`|`int`|Belirteç verenin Azure Active Directory (0) veya Active Directory Federasyon Hizmetleri (AD FS) (1) olup olmadığını gösterir|
+|`RiskLevelAggregated`|`int`|Oturum açma sırasında toplu risk düzeyi. Olası değerler: 0 (toplam risk düzeyi ayarlanmadı), 1 (yok), 10 (düşük), 50 (orta) veya 100 (yüksek).|
+|`RiskDetails`|`int`|Oturum açan kullanıcının riskli durumuyla ilgili ayrıntılar|
+|`RiskState`|`int`|Riskli kullanıcı durumunu gösterir. Olası değerler: 0 (yok), 1 (güvenli onaylandı), 2 (düzeltildi), 3 (kapatıldı), 4 (risk altında) veya 5 (güvenliği aşıldığı onaylandı).|
+|`UserAgent`|`string`|Web tarayıcısından veya diğer istemci uygulamasından kullanıcı aracısı bilgileri|
 |`ClientAppUsed`|`string`|Kullanılan istemci uygulamasını gösterir|
-|`Browser`|`string`|Oturum a açılırken kullanılan tarayıcı sürümü hakkında ayrıntılar|
+|`Browser`|`string`|Oturum açmak için kullanılan tarayıcı sürümüyle ilgili ayrıntılar|
 |`ConditionalAccessPolicies`|`string`|Oturum açma olayına uygulanan koşullu erişim ilkelerinin ayrıntıları|
-|`ConditionalAccessStatus`|`int`|Oturum açma için uygulanan koşullu erişim ilkelerinin durumu. Olası değerler 0 (uygulanan ilkeler), 1 (ilkeleri uygulama girişimi başarısız) veya 2 (ilke uygulanmadı) olabilir.|
+|`ConditionalAccessStatus`|`int`|Oturum açma işlemine uygulanan koşullu erişim ilkelerinin durumu. Olası değerler 0 (ilkeler uygulandı), 1 (ilke uygulama girişimi başarısız oldu) veya 2 (ilkeler uygulanmadı) değerleridir.|
 |`IPAddress`|`string`|Uç noktaya atanan ve ilgili ağ iletişimleri sırasında kullanılan IP adresi|
-|`Country`|`string`|İstemci IP adresinin coğrafi olarak bulunduğu ülkeyi gösteren iki harfli kod|
-|`State`|`string`|Varsa, oturum açmanın nerede olduğunu haber vere|
-|`City`|`string`|Hesap kullanıcıs 2007'nin bulunduğu şehir|
+|`Country`|`string`|İstemci IP adresinin coğrafi olarak konumlandırıldığı ülkeyi gösteren iki harfli kod|
+|`State`|`string`|Varsa oturum açma işleminin gerçekleştiği durum|
+|`City`|`string`|Hesap kullanıcısının bulunduğu şehir|
 |`Latitude`|`string`|Oturum açma konumunun kuzeyden güneye koordinatları|
 |`Longitude`|`string`|Oturum açma konumunun doğudan batıya koordinatları|
-|`NetworkLocationDetails`|`string`|Oturum açma olayında kimlik doğrulama işlemcisinin ağ konumu ayrıntıları|
+|`NetworkLocationDetails`|`string`|Oturum açma olayının kimlik doğrulama işlemcisinin ağ konumu ayrıntıları|
 |`RequestId`|`string`|İsteğin benzersiz tanımlayıcısı|
-|`ReportId`|`string`|Olay için benzersiz tanımlayıcı|
+|`ReportId`|`string`|Olayın benzersiz tanımlayıcısı|
 
 ## <a name="related-articles"></a>İlgili makaleler
 
 - [AADSpnSignInEventsBeta](./advanced-hunting-aadspnsignineventsbeta-table.md)
-- [Gelişmiş ava genel bakış](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
-- [Sorgu dilini öğrenme](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language)
-- [Şemayı anlama](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)
+- [Gelişmiş avcılığa genel bakış](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+- [Sorgu dilini öğrenin](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language)
+- [Şemayı anlayın](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)

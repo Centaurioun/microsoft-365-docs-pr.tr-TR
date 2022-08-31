@@ -1,7 +1,7 @@
 ---
-title: Office 365 için Microsoft Defender'da otomatik incelemeden sonra hatalı pozitif veya yanlış negatifleri Office 365
-description: Bu sorun için Microsoft Defender'da AIR tarafından bir şey cevapsız veya yanlış Office 365? Çözümleme için Microsoft'a hatalı pozitif veya yanlış negatif sonuçlar göndermeyi öğrenin.
-keywords: otomatik, araştırma, uyarı, tetikleyici, eylem, düzeltme, yanlış pozitif, hatalı negatif
+title: Office 365 için Microsoft Defender'da otomatik araştırma sonrasında hatalı pozitif veya hatalı negatifleri bildirme
+description: Office 365 için Microsoft Defender'da AIR tarafından bir şey mi atlandı veya yanlış algılandı? Hatalı pozitif veya hatalı negatifleri analiz için Microsoft'a göndermeyi öğrenin.
+keywords: otomatik, araştırma, uyarı, tetikleyici, eylem, düzeltme, yanlış pozitif, yanlış negatif
 search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,7 +10,7 @@ f1.keywords:
 - NOCSH
 author: dansimp
 ms.author: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.date: 01/29/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,68 +21,68 @@ ms.collection:
 ms.topic: how-to
 ms.custom:
 - autoir
-ms.technology: mdo
-ms.openlocfilehash: 4b1de0e19cbf241936aa02f957cdd0920f2a580a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.subservice: mdo
+ms.openlocfilehash: 0b48a5d954bb77a8982fa09d03d3acc103973430
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682493"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478673"
 ---
-# <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Otomatik araştırma ve yanıt yeteneklerinde hatalı pozitif/negatifleri bildirme
+# <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Otomatik araştırma ve yanıt özelliklerinde hatalı pozitif/negatifleri bildirme
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Geçerli olduğu yer:**
+**Uygulandığı öğe**
 - [Office 365 için Microsoft Defender plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Bir [şeyi kaçırmanız veya](automated-investigation-response-office.md) yanlış şekilde algılaymanıza neden olan otomatik soruşturma ve yanıt (AIR) özellikleri Office 365, güvenlik işlemleri ekibimizin bu durumu düzeltmek için atılması gereken adımlar vardır. Bu tür eylemler şunlardır:
+[Office 365'daki otomatik araştırma ve yanıt (AIR) özellikleri](automated-investigation-response-office.md) bir şeyi atladıysa veya yanlış algıladıysa, güvenlik operasyonları ekibinizin bunu düzeltmek için atabileceği adımlar vardır. Bu tür eylemler şunlardır:
 
-- [Microsoft'a hatalı pozitif/negatif bir rapor bildirme](#report-a-false-positivenegative-to-microsoft-for-analysis);
-- [Uyarıları ayarlama](#adjust-an-alert-to-prevent-false-positives-from-recurring) (gerekirse); ve
-- [Yapılan düzeltme eylemleri geri alınıyor](#undo-a-remediation-action).
+- [Microsoft'a hatalı pozitif/negatif raporlama](#report-a-false-positivenegative-to-microsoft-for-analysis);
+- [Uyarıları ayarlama](#adjust-an-alert-to-prevent-false-positives-from-recurring) (gerekirse); Ve
+- [Gerçekleştirilen düzeltme eylemleri geri alınıyor](#undo-a-remediation-action).
 
 Bu makaleyi kılavuz olarak kullanın.
 
-## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Çözümleme için hatalı pozitif/negatif microsoft raporu
+## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Hatalı pozitif/negatifi analiz için Microsoft'a bildirme
 
-Office 365 için Microsoft Defender'da AIR bir e-posta mesajını, e-posta ekini, e-posta iletisinde bir URL'yi veya Office dosyasındaki bir URL'yi kaçırıyorsa, tarama yapmak için şüpheli istenmeyen posta, kimlik avı[, URL'ler ve dosyaları Microsoft'a Office 365](admin-submission.md) gönderebilirsiniz.
+Office 365 için Microsoft Defender'da AIR bir e-posta iletisini, e-posta ekini, e-posta iletisindeki URL'yi veya Office dosyasındaki bir URL'yi kaçırdıysa, [şüpheli istenmeyen posta, kimlik avı, URL'ler ve dosyaları Office 365 tarama için Microsoft'a gönderebilirsiniz](admin-submission.md).
 
-Ayrıca kötü amaçlı [yazılım çözümlemesi yapmak için dosyayı Microsoft'a gönderebilirsiniz](https://www.microsoft.com/wdsi/filesubmission).
+Ayrıca [kötü amaçlı yazılım analizi için Microsoft'a dosya gönderebilirsiniz](https://www.microsoft.com/wdsi/filesubmission).
 
-## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Hatalı pozitif sonuç yinelemesini önlemek için uyarı ayarlama
+## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Hatalı pozitif sonuçların yinelenmesini önlemek için uyarıyı ayarlama
 
-Geçerli kullanım bir uyarı tarafından tetiklenirse veya uyarı yanlışsa, Bulut Uygulamaları için [Defender portalında uyarıları yönetebilirsiniz](/cloud-app-security/managing-alerts).
+Bir uyarı geçerli kullanımla tetiklenirse veya uyarı yanlışsa [, Uyarıları Cloud Apps için Defender portalında yönetebilirsiniz](/cloud-app-security/managing-alerts).
 
-Cihazınız güvenli olsa bile, bir dosya, Office 365 IP adresi, URL veya etki alanı uç nokta için [Microsoft Defender for Endpoint](/windows/security/threat-protection) kullanıyorsa ve bir cihazda kötü amaçlı yazılım olarak kabul edilen bir dosya, IP adresi, URL veya etki alanı, cihazınız için "İzin Ver["](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) eylemiyle özel bir gösterge oluşturabilirsiniz.
+Kuruluşunuz Office 365 ek olarak [Uç Nokta için Microsoft Defender](/windows/security/threat-protection) kullanıyorsa ve dosya, IP adresi, URL veya etki alanı güvenli olsa bile bir cihazda kötü amaçlı yazılım olarak değerlendirilirse, [cihazınız için "İzin Ver" eylemiyle özel bir gösterge oluşturabilirsiniz](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
-## <a name="undo-a-remediation-action"></a>Düzeltme eylemlerini geri alma
+## <a name="undo-a-remediation-action"></a>Düzeltme eylemini geri alma
 
-Çoğu durumda, bir e-posta iletisi, e-posta eki veya URL üzerinde bir düzeltme eylemi gerçek oldu ve öğe aslında bir tehdit değil, güvenlik işlemleri ekibinin düzeltme eylemini geri alabilir ve hatalı pozitif sonuç tekrarı önleyen adımlar atabilirsiniz. Bir eylemi geri almak [üzere bir](#undo-an-action-using-threat-explorer) soruşturma için [Tehdit Gezgini'ni veya](#undo-an-action-in-the-action-center) Eylemler sekmesini kullanabilirsiniz.
+Çoğu durumda, bir e-posta iletisinde, e-posta ekinde veya URL'de düzeltme eylemi yapıldıysa ve öğe aslında bir tehdit değilse, güvenlik operasyonları ekibiniz düzeltme eylemini geri alabilir ve hatalı pozitif sonucun yinelenmesini önlemek için adımlar atabilir. Bir eylemi geri almak [için bir araştırma için](#undo-an-action-in-the-action-center) [Tehdit Gezgini'ni](#undo-an-action-using-threat-explorer) veya Eylemler sekmesini kullanabilirsiniz.
 
 > [!IMPORTANT]
-> Aşağıdaki görevleri gerçekleştirmeyi denemeden önce gerekli izinlere sahip olduğundan emin olun.
+> Aşağıdaki görevleri gerçekleştirmeye çalışmadan önce gerekli izinlere sahip olduğunuzdan emin olun.
 
-### <a name="undo-an-action-using-threat-explorer"></a>Threat Explorer'ı kullanarak eylemi geri alma
+### <a name="undo-an-action-using-threat-explorer"></a>Tehdit Gezgini'nin kullanıldığı bir eylemi geri alma
 
-Tehdit Gezgini'nde, güvenlik işlemleri ekipleriniz bir eylemden etkilenen bir e-posta bulabilir ve bu işlemi geri alabilir.
+Tehdit Gezgini ile güvenlik operasyonları ekibiniz bir eylemden etkilenen bir e-posta bulabilir ve eylemi geri alabilir.
 
 |Senaryo|Geri Alma Seçenekleri|Daha fazla bilgi|
 |---|---|---|
-|Bir e-posta iletisi kullanıcının Gereksiz E-posta klasörüne yönlendirildi|<ul><li>İletiyi kullanıcının Silinmiş Öğeler klasörüne taşıma</li><li>İletiyi kullanıcının Gelen Kutusu'na taşıma</li><li>İletiyi silme</li></ul>|[Teslim edilen kötü amaçlı e-postaları bulma ve Office 365](investigate-malicious-email-that-was-delivered.md)|
+|E-posta iletisi kullanıcının Gereksiz Email klasörüne yönlendirildi|<ul><li>İletiyi kullanıcının Silinmiş Öğeler klasörüne taşıma</li><li>İletiyi kullanıcının Gelen Kutusuna taşıma</li><li>İletiyi silme</li></ul>|[Office 365'de teslim edilen kötü amaçlı e-postayı bulma ve araştırma](investigate-malicious-email-that-was-delivered.md)|
 |E-posta iletisi veya dosya karantinaya alındı|<ul><li>E-postayı veya dosyayı serbest bırakma</li><li> E-postayı veya dosyayı silme</li></ul>|[Karantinaya alınan iletileri yönetici olarak yönetme](manage-quarantined-messages-and-files.md)|
 
-### <a name="undo-an-action-in-the-action-center"></a>İşlem merkezinde eylemi geri alma
+### <a name="undo-an-action-in-the-action-center"></a>İşlem merkezindeki bir eylemi geri alma
 
-İşlem merkezinde, yapılan düzeltme eylemlerini görebilir ve eylemi geri alma olasılığı vardır.
+İşlem merkezinde, gerçekleştirilen düzeltme eylemlerini görebilir ve eylemi geri alabilirsiniz.
 
-1. aşağıdaki Microsoft 365 Defender portalında <https://security.microsoft.com>İşlem merkezi'ne gidin. Doğrudan İşlem merkezine gitmek için, 'i kullanın <https://security.microsoft.com/action-center/>.
-2. İşlem merkezinde Geçmiş sekmesini **seçerek** tamamlanmış eylemlerin listesini görüntüleyin.
-3. Bir öğe seçin. Açılır bölmesi açılır.
-4. Uçarak çıkış bölmesinde Geri Al'ı **seçin**. (Yalnızca geri alınmayacak eylemlerin Geri Al **düğmesi** olur.)
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>İşlem merkezi'ni seçerek **İşlem merkezine** gidin. Doğrudan İşlem merkezine gitmek için kullanın <https://security.microsoft.com/action-center/>.
+2. İşlem merkezinde **Geçmiş** sekmesini seçerek tamamlanan eylemlerin listesini görüntüleyin.
+3. Bir öğe seçin. Açılır pencere bölmesi açılır.
+4. Açılır bölmede **Geri Al'ı** seçin. (Yalnızca geri alınabilen eylemlerde **Geri Al** düğmesi olur.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Office 365 için Microsoft Defender](defender-for-office-365.md)
-- [Office 365 için Microsoft Defender'da otomatik Office 365](office-365-air.md)
+- [Office 365 için Microsoft Defender'de otomatik araştırma](office-365-air.md)

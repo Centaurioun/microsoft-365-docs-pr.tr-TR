@@ -3,7 +3,8 @@ title: Adım 4. Microsoft 365 Defender rollerini, sorumluluklarını ve gözetim
 description: Microsoft 365 Defender güvenlik işlemlerinizle tümleştirirken rol, sorumluluk ve gözetim tanımlamanın temelleri.
 keywords: olaylar, uyarılar, araştırma, bağıntı, saldırı, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, Microsoft 365, olay yanıtı, siber saldırı, secops, güvenlik işlemleri, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 5410db413ece81a39453070985e6c744e8b684a6
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 11deb4cd56c77202e002162542b8a9e30db56916
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664072"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478045"
 ---
 # <a name="step-4-define-microsoft-365-defender-roles-responsibilities-and-oversight"></a>Adım 4. Microsoft 365 Defender rollerini, sorumluluklarını ve gözetimlerini tanımlama
 
@@ -36,7 +36,7 @@ ms.locfileid: "64664072"
 **Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-Kuruluşunuzun, işletimsel rollerin tanımlanabilmesi için önce Microsoft 365 Defender lisanslarının, yapılandırmalarının ve yönetiminin sahipliğini ve sorumluluklarını ilk görevler olarak belirlemesi gerekir. Genellikle lisansların sahipliği, abonelik maliyetleri ve Microsoft 365 ve Enterprise Security + Mobility (EMS) hizmetlerinin (Microsoft 365 Defender içerebilir) yönetimi, Güvenlik İşletim Merkezi (SOC) ekiplerinin dışında kalır. SOC ekipleri, Microsoft 365 Defender düzgün bir şekilde gözetim altında olmasını sağlamak için bu kişilerle birlikte çalışmalıdır. 
+Kuruluşunuzun, işletimsel rollerin tanımlanabilmesi için önce Microsoft 365 Defender lisanslarının, yapılandırmalarının ve yönetiminin sahipliğini ve sorumluluklarını ilk görevler olarak belirlemesi gerekir. Genellikle, Microsoft 365 ve Enterprise Security + Mobility (EMS) hizmetlerinin (Microsoft 365 Defender içerebilir) lisanslarının, abonelik maliyetlerinin ve yönetiminin sahipliği Güvenlik İşlemleri Merkezi (SOC) ekiplerinin dışında kalır. SOC ekipleri, Microsoft 365 Defender düzgün bir şekilde gözetim altında olmasını sağlamak için bu kişilerle birlikte çalışmalıdır. 
 
 Birçok modern SOC, ekip üyelerini becerilerine ve işlevlerine göre kategorilere atar. Örneğin:
 

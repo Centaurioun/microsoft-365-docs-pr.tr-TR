@@ -1,9 +1,10 @@
 ---
-title: Playbooks'a not verme uyarısı
-description: İyi bilinen saldırılar için uyarıları gözden geçirin ve saldırıyı düzeltmek ve ağın korunması için önerilen eylemleri gerçekleştirin.
-keywords: olaylar, uyarılar, araştırma, çözümleme, yanıt, korelasyon, saldırı, makineler, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, microsoft, m365
+title: Taktik defterini notlandırma uyarısı
+description: İyi bilinen saldırılara yönelik uyarıları gözden geçirin ve saldırıyı düzeltmek ve ağınızı korumak için önerilen eylemleri gerçekleştirin.
+keywords: olaylar, uyarılar, araştırma, analiz etme, yanıt, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,81 +23,80 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.technology: m365d
-ms.openlocfilehash: 129a4f2efd9a47c09535be3ba0f56504f3da697c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 83935f8ad4fda1848a15bfe34599b80683ee95fe
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328015"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477417"
 ---
-# <a name="alert-grading-playbooks"></a>Playbooks'a not verme uyarısı
+# <a name="alert-grading-playbooks"></a>Taktik defterini notlandırma uyarısı
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-Uyarı notlama playbooks'ları iyi bilinen saldırılara yönelik uyarıları yöntemsel olarak gözden geçirmenize, hızla sınıflandırmanıza ve saldırıyı düzeltmek ve ağın korunması için önerilen eylemlere izin verir. Uyarı notlama, genel olayı düzgün bir şekilde sınıflandırmaya da yardımcı olur.
+Uyarı notlama playbook'ları, uyarıları iyi bilinen saldırılar için yöntemsel olarak gözden geçirmenize ve hızla sınıflandırmanıza ve saldırıyı düzeltmek ve ağınızı korumak için önerilen eylemleri gerçekleştirmenize olanak tanır. Uyarı notları, olayın genelini düzgün sınıflandırmaya da yardımcı olur.
 
-Güvenlik araştırmacısı veya güvenlik işlemleri merkezi (SOC) analisti olarak, aşağıdaki işlemleri yapmak için Microsoft 365 Defender portalına erişiminiz olması gerekir:
+Bir güvenlik araştırmacısı veya güvenlik operasyonları merkezi (SOC) analisti olarak şunları yapmak için Microsoft 365 Defender portalına erişiminiz olmalıdır:
 
-- Oluşturulan uyarıları ve ilişkili olayları değerlendirin ve gözden geçirin. Uyarıları [araştırma'ya bakın](investigate-alerts.md).
-- Kiracının güvenlik sinyali verinde arama gerçekleştirin ve olası tehdit ve şüpheli etkinlikleri kontrol edin. Gelişmiş [ava bakın](advanced-hunting-overview.md).
+- Oluşturulan uyarıları ve ilişkili olayları değerlendirin ve gözden geçirin. Bkz [. Uyarıları araştırma](investigate-alerts.md).
+- Kiracınızın güvenlik sinyali verilerini arayın ve olası tehditleri ve şüpheli etkinlikleri denetleyin. Bkz. [gelişmiş avcılık](advanced-hunting-overview.md).
 
 >[!Note]
->Microsoft'a yalnızca araştırmanın sonunda değil, aynı zamanda soruşturma süreci sırasında da doğru pozitif ve yanlış pozitif uyarılar hakkında geri bildirim sebilirsiniz. Bu, Microsoft'a gelecekte güvenlik olaylarının analiz ve sınıflandırması için yardımcı olabilir.
+>Microsoft'a yalnızca araştırmanın sonunda değil, aynı zamanda araştırma süreci sırasında da gerçek pozitif ve hatalı pozitif uyarılar hakkında geri bildirim sağlayabilirsiniz. Bu, Microsoft'un güvenlik olaylarının gelecekteki analizi ve sınıflandırması konusunda yardımcı olabilir.
 >
 
 ## <a name="microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender
 
-[Microsoft Defender For Office 365](/microsoft-365/security/office-365-security/defender-for-office-365), e-posta iletileri, bağlantılar (URL'ler) ve işbirliği araçları tarafından tehditlere karşı organizasyonlarınızı korur. Defender for Office 365 şunları içerir:
+[Office 365 için Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365), kuruluşunuzu e-posta iletileri, bağlantılar (URL'ler) ve işbirliği araçları tarafından ortaya konan kötü amaçlı tehditlere karşı korur. Office 365 için Defender şunları içerir:
 
-- Tehdit koruması ilkeleri
+- Tehdit koruma ilkeleri
 
-   Organizasyonu için uygun koruma düzeyini ayarlamak üzere tehdit koruması ilkelerini tanımlayın.
+   Kuruluşunuz için uygun koruma düzeyini ayarlamak için tehdit koruma ilkeleri tanımlayın.
 
 - Raporlar
 
-  Defender'ı izlemek ve Office 365 performansını izlemek için gerçek zamanlı raporları görüntüleniyor.
+  Kuruluşunuzdaki Office 365 için Defender performansını izlemek için gerçek zamanlı raporları görüntüleyin.
 
-- Tehdit soruşturması ve yanıt özellikleri
+- Tehdit araştırması ve yanıt özellikleri
 
-  Tehditleri araştırmak, anlamak, benzetimini yapmak ve engellemek için önde gelen araçları kullanın.
+  Tehditleri araştırmak, anlamak, benzetimini yapmak ve önlemek için önde gelen araçları kullanın.
 
 - Otomatik araştırma ve yanıt özellikleri
 
-  Zaman ve çabadan tasarruf etmek için inceler ve tehditleri azaltabilirsiniz.
+  Tehditleri araştırmak ve azaltmak için zaman ve çabadan tasarruf edin.
 
-Güvenlik Office 365 Defender şöyle sınıflandırılabilir: 
+Office 365 için Defender uyarıları şu şekilde sınıflandırılabilir: 
 
-- Onaylanmış kötü amaçlı etkinlikler için doğru pozitif (TP). 
-- Kötü amaçlı olmayan onaylanmış etkinlikler için hatalı pozitif (FP).
+- Doğrulanmış kötü amaçlı etkinlik için gerçek pozitif (TP). 
+- Doğrulanmış kötü amaçlı olmayan etkinlikler için hatalı pozitif (FP).
 
 >[!Note]
->Microsoft 365 Defender portalı [https://security.microsoft.com](https://security.microsoft.com) mevcut Microsoft güvenlik portallarından gelen işlevleri bir araya getirir. Hızlı Microsoft 365 Defender erişimi vurgular, daha basit düzenler ve daha kolay kullanım için ilgili bilgileri bir araya getirir.
+>Microsoft 365 Defender portalı[https://security.microsoft.com](https://security.microsoft.com), mevcut Microsoft güvenlik portallarından işlevleri bir araya getirir. Microsoft 365 Defender portalı bilgilere hızlı erişimi, daha basit düzenleri vurgular ve daha kolay kullanım için ilgili bilgileri bir araya getirir.
 >
 
 ## <a name="microsoft-defender-for-cloud-apps"></a>Bulut Uygulamaları için Microsoft Defender
 
-[Bulut Uygulamaları için Microsoft Defender](/defender-cloud-apps) ; günlük toplama, API bağlayıcıları ve ters ara sunucu gibi çeşitli dağıtım modlarını destekleyen bir Bulut Erişim Güvenlik Aracısı (CASB) aracıdır. Tüm Microsoft ve üçüncü taraf bulut hizmetleriniz genelinde siber tehditleri tespit etmek ve tehditlere karşı mücadele etmek için zengin görünürlük, veri seyahati üzerinde denetim ve gelişmiş analiz sağlar.
+[Microsoft Defender for Cloud Apps](/defender-cloud-apps) günlük toplama, API bağlayıcıları ve ters ara sunucu gibi çeşitli dağıtım modlarını destekleyen bir Bulut Erişim Güvenlik Aracısıdır (CASB). Tüm Microsoft ve üçüncü taraf bulut hizmetlerinizde siber tehditleri belirlemek ve bununla mücadele etmek için zengin görünürlük, veri seyahati üzerinde denetim ve gelişmiş analiz sağlar.
 
-Bulut Uygulamaları için Defender, önde gelen Microsoft çözümleriyle yerel olarak tümleştirilmiştir ve güvenlik uzmanlarının göz göre göre tasarlanmıştır. Basit dağıtım, merkezi yönetim ve yenilikçi otomasyon özellikleri sağlar.
+Cloud Apps için Defender, önde gelen Microsoft çözümleriyle yerel olarak tümleştirilir ve güvenlik uzmanları göz önünde bulundurularak tasarlanmıştır. Basit dağıtım, merkezi yönetim ve yenilikçi otomasyon özellikleri sağlar.
 
-Bulut Uygulamaları için Defender çerçevesi, anızı siber tehditlere ve bilgisayarlara karşı koruma özelliği içerir; fidye yazılımlarını, güvenliği tehlikeye atılmış kullanıcıları veya bazı uygulama uygulamalarını belirlemek için bulut uygulamaları genelinde alışılmışın dışında bir davranış algılar. Yüksek riskli kullanımın analiz edini sağlar ve otomatik olarak düzeltmek ve riski organizasyonum ile sınırlandırmanızı sağlar.
+Cloud Apps için Defender çerçevesi, ağınızı siber tehditlere ve anomalilere karşı koruma, fidye yazılımlarını, güvenliği aşılmış kullanıcıları veya sahte uygulamaları tanımlamak için bulut uygulamaları genelinde olağan dışı davranışları algılama özelliğini içerir. Yüksek riskli kullanımın analizini sağlar ve riski kuruluşunuzla sınırlamak için otomatik olarak düzeltebilir.
 
-Bulut Uygulamaları için Defender uyarıları şöyle sınıflandırılabilir: 
+Cloud Apps için Defender uyarıları şu şekilde sınıflandırılabilir: 
 
-- Onaylandı kötü amaçlı etkinlikler için TP. 
-- Bir test veya diğer yetkili şüpheli eylem gibi şüpheli ama kötü amaçlı olmayan etkinlikler için gerçek pozitif (B-TP). 
-- Kötü amaçlı olmayan onaylandı etkinlik için FP.
+- Doğrulanmış kötü amaçlı etkinlik için TP. 
+- Sızma testi veya başka bir yetkili şüpheli eylem gibi şüpheli ancak kötü amaçlı olmayan etkinlikler için zararsız gerçek pozitif (B-TP). 
+- Onaylanan kötü amaçlı olmayan etkinlikler için FP.
 
-## <a name="alert-grading-playbooks"></a>Playbooks'a not verme uyarısı
+## <a name="alert-grading-playbooks"></a>Taktik defterini notlandırma uyarısı
 
-Aşağıdaki tehditlere karşı uyarıları daha hızlı şekilde puanlayacak adımlar için bu playbooks'lara bakın:
+Aşağıdaki tehditler için uyarıları daha hızlı not alma adımları için bu playbook'lara bakın:
 
 - [Şüpheli e-posta iletme etkinliği](alert-grading-playbook-email-forwarding.md)
 - [Şüpheli gelen kutusu işleme kuralları](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Şüpheli gelen kutusu iletme kuralları](alert-grading-playbook-inbox-forwarding-rules.md)
 
-Güvenlik [portalında uyarıları](investigate-alerts.md) inceleme hakkında bilgi için bkz. Microsoft 365 Defender.
+Microsoft 365 Defender portalıyla uyarıları inceleme hakkında bilgi için bkz. Uyarıları [araştırma](investigate-alerts.md).

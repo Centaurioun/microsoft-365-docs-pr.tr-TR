@@ -2,8 +2,8 @@
 title: Microsoft Defender Virüsten Koruma bildirimlerini yapılandırma
 description: Uç noktalarda hem standart hem de diğer Microsoft Defender Virüsten Koruma bildirimlerini yapılandırmayı ve özelleştirmeyi öğrenin.
 keywords: bildirimler, defender, virüsten koruma, uç nokta, yönetim, yönetici
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -16,25 +16,25 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6c9dfd603a128de4a94c9cf49faa6ba9ca940d9b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: af6889be3f64d45f7a7237453e2050664de301bf
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418192"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473259"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>Uç noktalarda görünen Microsoft Defender Virüsten Koruma bildirimlerini yapılandırma
 
 **Şunlar için geçerlidir:**
 
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Virüsten Koruma
 
 **Platform**
 - Windows
 
-Windows 10 ve Windows 11,kötü amaçlı yazılım algılama ve düzeltme hakkında uygulama bildirimleri daha sağlam, tutarlı ve kısadır. taramalar tamamlandığında ve tehditler algılandığında uç noktalarda Microsoft Defender Virüsten Koruma bildirimleri görüntülenir. Bildirimler hem zamanlanmış hem de el ile tetiklenen taramaları izler. Bu bildirimler **Bildirim Merkezi'nde** de görünür ve taramaların ve tehdit algılamalarının bir özeti düzenli aralıklarla görüntülenir.
+Windows 10 ve Windows 11,kötü amaçlı yazılım algılama ve düzeltme hakkında uygulama bildirimleri daha sağlam, tutarlı ve kısadır. Taramalar tamamlandığında ve tehditler algılandığında uç noktalarda Microsoft Defender Virüsten Koruma bildirimleri görüntülenir. Bildirimler hem zamanlanmış hem de el ile tetiklenen taramaları izler. Bu bildirimler **Bildirim Merkezi'nde** de görünür ve taramaların ve tehdit algılamalarının bir özeti düzenli aralıklarla görüntülenir.
 
 Kuruluşunuzun güvenlik ekibinin bir parçasıysanız, sistemin yeniden başlatılmasını isteyen veya bir tehdidin algılanıp düzeltildiğini belirten bildirimler gibi bildirimlerin uç noktalarda nasıl görüneceğini yapılandırabilirsiniz.
 
@@ -43,7 +43,7 @@ Kuruluşunuzun güvenlik ekibinin bir parçasıysanız, sistemin yeniden başlat
 Son tehdit algılama özetleri gibi ek bildirimlerin görüntülenmesini [Windows Güvenliği uygulamasında ve grup ilkesi](microsoft-defender-security-center-antivirus.md) ile yapılandırabilirsiniz.
 
 > [!NOTE]
-> Windows 10 sürüm 1607'de özellik **Gelişmiş bildirimler** olarak adlandırıldı ve **Windows Ayarlar** \> **Güncelleştirme & güvenlik** \> **Windows Defender** altında yapılandırıldı. tüm Windows 10 ve Windows 11 sürümleri için grup ilkesi ayarlarında, bildirim özelliği **Gelişmiş bildirimler** olarak adlandırılır.
+> Windows 10 sürüm 1607'de özellik **Gelişmiş bildirimler** olarak adlandırıldı ve **Windows Ayarları** \> **Güncelleştirmesi & güvenlik** \> **Windows Defender** altında yapılandırıldı. tüm Windows 10 ve Windows 11 sürümleri için grup ilkesi ayarlarında, bildirim özelliği **Gelişmiş bildirimler** olarak adlandırılır.
 
 ### <a name="use-group-policy-to-disable-additional-notifications"></a>Ek bildirimleri devre dışı bırakmak için grup ilkesi kullanma
 
@@ -55,7 +55,7 @@ Son tehdit algılama özetleri gibi ek bildirimlerin görüntülenmesini [Window
 
 4. **Yönetim şablonları'nı** seçin.
 
-5. Microsoft Defender Virüsten Koruma **Reporting** **bileşenlerini** \> **Windows** >  için ağacı genişletin.
+5. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** > **Raporlama** olarak genişletin.
 
 6. **Gelişmiş bildirimleri kapat'a** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. Sonra **Tamam**’ı seçin. Bu, ek bildirimlerin görünmesini engeller.
 
@@ -83,7 +83,7 @@ grup ilkesi kullanarak:
 - Uç noktalardaki tüm bildirimleri gizleme
 - Uç noktalarda yeniden başlatma bildirimlerini gizleme
 
-Bildirimleri gizlemek, Microsoft Defender Virüsten Koruma arabiriminin tamamını gizleyememenize neden olan durumlarda yararlı olabilir. Daha fazla bilgi için bkz. [Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya bunlarla etkileşim kurmasını engelleme](prevent-end-user-interaction-microsoft-defender-antivirus.md). Bildirimleri gizleme işlemi yalnızca ilkenin dağıtıldığı uç noktalarda gerçekleşir. Yapılması gereken eylemlerle ilgili bildirimler (yeniden başlatma gibi) [Microsoft Endpoint Manager Endpoint Protection izleme panosunda ve raporlarda görünmeye](/configmgr/protect/deploy-use/monitor-endpoint-protection) devam eder. 
+Bildirimleri gizlemek, Microsoft Defender Virüsten Koruma arabiriminin tamamını gizleyememenize neden olan durumlarda yararlı olabilir. Daha fazla bilgi için bkz. [Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya bunlarla etkileşim kurmasını engelleme](prevent-end-user-interaction-microsoft-defender-antivirus.md) . Bildirimleri gizleme işlemi yalnızca ilkenin dağıtıldığı uç noktalarda gerçekleşir. Yapılması gereken eylemlerle ilgili bildirimler (yeniden başlatma gibi) [Microsoft Endpoint Manager Endpoint Protection izleme panosunda ve raporlarında](/configmgr/protect/deploy-use/monitor-endpoint-protection) görünmeye devam eder. 
 
 Uç nokta bildirimlerine özel kişi bilgileri eklemek için bkz. [Kuruluşunuz için Windows Güvenliği uygulamasını özelleştirme](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center).
 
@@ -95,7 +95,7 @@ Uç nokta bildirimlerine özel kişi bilgileri eklemek için bkz. [Kuruluşunuz 
 
 3. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na** gidin ve **ardından Yönetim şablonları'nı** seçin.
 
-4. **İstemci arabirimi** **Microsoft Defender Virüsten Koruma bileşenleri** \> **Windows** \> için ağacı genişletin. 
+4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **İstemcisi arabirimine** genişletin. 
 
 5. **Tüm bildirimleri gizle'ye** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. 
 
@@ -111,14 +111,14 @@ Uç nokta bildirimlerine özel kişi bilgileri eklemek için bkz. [Kuruluşunuz 
 
 3. **Yönetim şablonları'nı** tıklatın.
 
-4. **İstemci arabirimi** **Microsoft Defender Virüsten Koruma bileşenleri** \> **Windows** \> için ağacı genişletin.
+4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **İstemcisi arabirimine** genişletin.
 
 5. **Yeniden başlatma bildirimlerini gizle'ye** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. 
 
 5. **Tamam**'ı seçin. Bu, ek bildirimlerin görünmesini engeller.
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

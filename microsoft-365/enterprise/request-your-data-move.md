@@ -15,19 +15,19 @@ f1.keywords:
 - NOCSH
 description: Mevcut Office 365 müşterileri, ülkelerinin Microsoft 365 hizmet verilerini yeni coğrafi bölgelerine taşımaları için son tarihten önce bir istek göndermelidir.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 492e7680524728a136d5aa5530285e50b47f2935
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 821aa47c2101c2370e95372a7f9b9eb302199918
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874162"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476220"
 ---
 # <a name="how-to-request-your-data-move"></a>Veri taşıma isteğinde bulunma
 
 > [!NOTE]
-> Bu sayfadaki bilgiler yalnızca veri merkezi coğrafi olarak açılmadan önce kiracıları Microsoft 365 olan müşteriler için geçerlidir. Geçiş uygunluğu da belirli bir hizmet sağlama tarihine bağlıdır.  Kiracı oluşturma tarihi her zaman önemli olan tek tarih olmayabilir.
+> Bu sayfadaki bilgiler yalnızca veri merkezi coğrafi olarak açılmadan önce mevcut Microsoft 365 kiracıları olan müşteriler için geçerlidir. Geçiş uygunluğu da belirli bir hizmet sağlama tarihine bağlıdır.  Kiracı oluşturma tarihi her zaman önemli olan tek tarih olmayabilir.
   
-Uygun Microsoft 365 müşteriler, bekleyen tüm kuruluşlarının temel müşteri verileri için geçiş isteyebilir.  Program, tabloda açıklanan zaman aralığında ve Microsoft 365 kiracısıyla ilişkilendirilmiş uygun bir kayıt ülkesi olan müşterilerden gelen istekleri destekler.
+Uygun Microsoft 365 müşterileri, bekleyen tüm kuruluşlarının temel müşteri verileri için geçiş isteyebilir.  Program, tabloda açıklanan zaman aralığında ve Microsoft 365 kiracısıyla ilişkilendirilmiş uygun bir kayıt ülkesi olan müşterilerden gelen istekleri destekler.
   
 ## <a name="when-can-i-request-a-move"></a>Ne zaman taşıma isteğinde bulunabilirim?
 
@@ -46,13 +46,14 @@ Uygun Microsoft 365 müşteriler, bekleyen tüm kuruluşlarının temel müşter
 |Norveç  | |İstek dönemi kapatıldı  |
 |Almanya  | |İstek dönemi kapatıldı  |
 |Brezilya  | |İstek dönemi kapatıldı  |
-|İsveç  |16 Kasım 2021, İstanbul  |31 Mayıs 2022, Saat 2022, İstanbul  |
+|İsveç  | |İstek dönemi kapatıldı  |
+|Katar  |30 Ağustos 2022, Ağustos 2022, Ağustos 2022, Ağustos 2022, Ağustos  |28 Şubat 2023, İstanbul  |
 
 ## <a name="how-to-request-a-move"></a>Taşıma isteğinde bulunma
 
 Uygun müşteriler Microsoft 365 yönetim merkezi bir sayfa görür ve bu sayfa, temel müşteri verilerinin yeni veri merkezi bölgelerine taşınmasını istemelerini sağlar.  
   
-Microsoft 365 yönetim merkezi sayfaya erişmek için sol taraftaki gezinti bölmesinde **Ayarlar** genişletin ve **ardından Kuruluş Ayarlar'ne** tıklayın.
+Microsoft 365 yönetim merkezi sayfaya erişmek için sol taraftaki gezinti bölmesinde **Ayarlar'ı** genişletin ve **kuruluş ayarları'na** tıklayın.
 **Kuruluş profili** sekmesini ve ardından **Veri yerleşimi** seçeneğini belirleyin.
   
 Kiracınız Microsoft 365 Taşıma Programı için uygun değilse bu bölümü görmezsiniz.  Kuruluşunuzun veri yerleşimi gereksinimleri varsa ve geçiş isteğinde bulunmanız gerekiyorsa onay kutusunu işaretleyin ve **kaydet'i seçin**.
@@ -69,7 +70,7 @@ Taşımalar, ülkenizin tamamlanması için istek son tarihinden itibaren 24 aya
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Ocak 2020 itibarıyla, uygun Office 365 ülkelerdeki müşteriler Microsoft Teams sohbet hizmeti verilerinin geçişini kabul edebilir.  Daha önce Data Residency taşımayı kabul eden müşteriler de yerel veri merkezi coğrafi bölgelerine Teams taşınacaktır.  Bu müşteriler için ek eylem gerekmez.
+Ocak 2020 itibarıyla, uygun Office 365 ülkelerdeki müşteriler Microsoft Teams sohbet hizmeti verilerinin geçişini kabul edebilir.  Daha önce Data Residency bir taşımayı kabul eden müşteriler de Teams'in yerel veri merkezi coğrafi bölgelerine taşınmasını sağlayacaktır.  Bu müşteriler için ek eylem gerekmez.
 
 ## <a name="related-topics"></a>İlgili konular
 

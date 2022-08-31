@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Etkinlik gezgini, kullanıcıların etiketlenmiş içeriğinizde yaptıkları eylemleri görmenizi ve filtrelemenizi sağlar.
-ms.openlocfilehash: 06e77cf567c34f49da7206dd22f030ddb35e6b3d
-ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
+ms.openlocfilehash: 0091c1b48544f4e693554901aec5ef645b5a908c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67417400"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478629"
 ---
 # <a name="get-started-with-activity-explorer"></a>Etkinlik gezginini kullanmaya başlama
 
-[Veri sınıflandırmasına genel bakış](data-classification-overview.md) ve [içerik gezgini](data-classification-content-explorer.md) sekmeleri, hangi içeriğin keşfedildiğine ve etiketlendiğine ve içeriğin nerede olduğuna ilişkin görünürlük sağlar. Etkinlik gezgini, etiketlenmiş içeriğinizle yapılan işlemleri izlemenize olanak tanıyarak bu işlev paketini kullanıma sunar. Etkinlik gezgini etiketli içeriğinizdeki etkinliklerin geçmiş görünümünü sağlar. Etkinlik bilgileri Microsoft 365 birleşik denetim günlüklerinden toplanır, dönüştürülür ve Etkinlik gezgini kullanıcı arabiriminde kullanıma sunulur. Etkinlik gezgini en fazla 30 günlük verileri raporlar.
+[Veri sınıflandırmasına genel bakış](data-classification-overview.md) ve [içerik gezgini](data-classification-content-explorer.md) sekmeleri, hangi içeriğin keşfedildiğine ve etiketlendiğine ve içeriğin nerede olduğuna ilişkin görünürlük sağlar. [Etkinlik gezgini](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer) , etiketlenmiş içeriğinizle yapılan işlemleri izlemenize olanak tanıyarak bu işlev paketini kullanıma sunar. Etkinlik gezgini etiketli içeriğinizdeki etkinliklerin geçmiş görünümünü sağlar. Etkinlik bilgileri Microsoft 365 birleşik denetim günlüklerinden toplanır, dönüştürülür ve Etkinlik gezgini kullanıcı arabiriminde kullanıma sunulur. Etkinlik gezgini en fazla 30 günlük verileri raporlar.
 
 ![yer tutucu ekran görüntüsü genel bakış etkinlik gezgini.](../media/data-classification-activity-explorer-1.png)
 

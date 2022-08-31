@@ -17,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için çok faktörlü kimlik doğrulamasını yönetmeyi öğrenin.
-ms.openlocfilehash: aa9d25ce633088d840a38e1927c4ebf3baef56b3
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: ef658f19aba9530ab4f1cd76e1e32a1733f3594c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056478"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471786"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de çok faktörlü kimlik doğrulamasını yönetme
 
-Azure Active Directory (Azure AD) Multi-Factor Authentication (MFA), veri ve uygulamalara erişimi korumaya yardımcı olur ve ikinci bir kimlik doğrulama biçimi kullanarak başka bir güvenlik katmanı sağlar. Çok Faktörlü Kimlik Doğrulaması sekmesi, kiracılarınız genelinde MFA etkinleştirmesinin durumu hakkında ayrıntılı bilgi sağlar. MFA gerektiren Koşullu Erişim ilkelerinin zaten yapılandırıldığı ve MFA için henüz hangi kullanıcıların kaydolmadığı da dahil olmak üzere bu kiracıyla ilgili daha fazla ayrıntı görmek için listeden herhangi bir kiracıyı seçin.
+Azure Active Directory (Azure AD) Multi-Factor Authentication (MFA), veri ve uygulamalara erişimi korumaya yardımcı olur ve ikinci bir kimlik doğrulama biçimi kullanarak başka bir güvenlik katmanı sağlar. Çok Faktörlü Kimlik Doğrulaması sayfası, kiracılarınız genelinde MFA etkinleştirmesinin durumu hakkında ayrıntılı bilgi sağlar. MFA gerektiren Koşullu Erişim ilkelerinin zaten yapılandırıldığı ve MFA için henüz hangi kullanıcıların kaydolmadığı da dahil olmak üzere bu kiracıyla ilgili daha fazla ayrıntı görmek için listeden herhangi bir kiracıyı seçin.
 
 Microsoft, küçük ve orta ölçekli işletme (SMB) müşterileri için [güvenlik varsayılanlarının](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) en düşük düzeyde etkinleştirilmesini önerir. Daha karmaşık senaryolar için [Koşullu Erişim'i](/azure/active-directory/conditional-access/overview) kullanarak belirli ilkeleri yapılandırabilirsiniz.
 
@@ -42,7 +42,7 @@ Kiracı listede görünmeden önce aşağıdaki koşulların karşılanması ger
 
 1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Çok Faktörlü kimlik doğrulaması'nı** seçin.
 
-2. **Çok Faktörlü Kimlik Doğrulaması** sekmesinde, şu anda MFA kullanmayan bir kiracıyı arayın ve kiracı ayrıntıları bölmesini açmak için bu kiracıyı seçin.
+2. **Çok Faktörlü Kimlik Doğrulaması** sayfasında, şu anda MFA kullanmayan bir kiracı bulun ve kiracı ayrıntıları bölmesini açmak için bu kiracıyı seçin.
 
 3. **MFA etkinleştirme** sekmesinde, **Güvenlik varsayılanlarıyla MFA'nın altında Güvenlik varsayılanlarını** **etkinleştir'i** seçin.
 
@@ -54,7 +54,7 @@ Koşullu Erişim aracılığıyla MFA'yı etkinleştirmek için bkz[. Öğretici
 
 1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Çok Faktörlü kimlik doğrulaması'nı** seçin.
 
-2. **Çok Faktörlü Kimlik Doğrulaması** sekmesinde, MFA için kayıtlı olmayan kullanıcıları olan kiracıları arayın ve kiracıyı seçerek kiracı ayrıntıları bölmesini açın.
+2. **Çok Faktörlü Kimlik Doğrulaması** sayfasında, MFA için kayıtlı olmayan kullanıcıları olan kiracıları arayın ve kiracıyı seçerek kiracı ayrıntıları bölmesini açın.
 
 3. **MFA sekmesine kayıtlı olmayan kullanıcılar'ı** seçin.
 

@@ -7,6 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 08/30/2022
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +18,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 860c1cd36568705b2646cf14b6fea071af4a19a5
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 642f3294304d6cd0aadd3ead44a61f17d0e61ad3
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756615"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478221"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender Virüsten Koruma'nın diğer güvenlik ürünleriyle uyumluluğu
 
@@ -132,6 +133,7 @@ Microsoft Defender Virüsten Koruma'nın pasif modda çalışması için uç nok
 
 > [!IMPORTANT]
 > - Microsoft Defender Virüsten Koruma yalnızca Windows 10 ve 11, Windows Server 2022, Windows Server 2019, Windows Server, sürüm 1803 veya üzeri, Windows Server 2016 ve Windows Server 2012 R2 çalıştıran cihazlarda kullanılabilir.
+> - Pasif mod yalnızca cihaz [modern, birleşik çözüm](/microsoft-365/security/defender-endpoint/configure-server-endpoints) kullanılarak eklendiğinde Windows Server 2012 R2 & 2016'da desteklenir. 
 > - Windows 8.1'da, Microsoft Endpoint Configuration Manager aracılığıyla yönetilen [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)) olarak kurumsal düzeyde uç nokta virüsten koruma sunulmaktadır.
 > - Windows Defender kurumsal düzeyde yönetim sağlamasa da [Windows Defender Windows 8.1 üzerindeki tüketici cihazları](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender) için de sunulur.
 

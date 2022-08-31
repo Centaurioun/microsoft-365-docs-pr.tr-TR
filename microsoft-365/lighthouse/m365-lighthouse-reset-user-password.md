@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP' ler) için, tek bir kullanıcı veya farklı kiracılardaki birden çok riskli kullanıcı için parola sıfırlamayı öğrenin.
-ms.openlocfilehash: c46f7e744e06118eb3a8cf8dc48bf5dcf1b36e31
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 1133b545cc3b817f06b88112fc9670247dd0dd66
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055888"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475658"
 ---
 # <a name="reset-a-user-password-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'de kullanıcı parolasını sıfırlama
 
@@ -30,7 +30,7 @@ Microsoft 365 Lighthouse, kullanıcı parolalarını değiştirmenize veya sıf�
 
 ## <a name="reset-a-password-for-a-user"></a>Kullanıcı için parola sıfırlama
 
-1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar****Arama kullanıcıları'nı** >  seçin.
+1. Lighthouse'un sol gezinti bölmesinde Kullanıcılar **Hesabı yönetimi** >  **Kullanıcıları** > **ara'yı** seçin.
 
 2. **Kullanıcıları ara** sekmesinde, arama kutusuna bir kullanıcı adı girin.
 
@@ -50,7 +50,7 @@ Microsoft 365 Lighthouse, kullanıcı parolalarını değiştirmenize veya sıf�
 
 1. Lighthouse'un sol gezinti bölmesinde **Kullanıcılar** > **Riskli kullanıcılar'ı** seçin.
 
-2. **Riskli Kullanıcılar** sekmesinde, listeden riskli bir kullanıcı seçin.
+2. **Riskli Kullanıcılar** sayfasında, listeden riskli bir kullanıcı seçin.
 
 3. **Parolayı sıfırla'yı** seçin.
 

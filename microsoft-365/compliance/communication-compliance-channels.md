@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ccf46df1ecbe2fb2e55e461cc27a5b7af088e7b9
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: af6b5af33ce6d10b66489f2d49ef5ed4ec1f9310
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787462"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469217"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>İletişim uyumluluğu ile kanal sinyallerini tespit etme
 
@@ -41,7 +41,7 @@ Hem genel hem de özel Microsoft Teams kanallarında ve tek tek sohbetlerde sohb
 | **Kanalı bir iç ekiple paylaşma** | İletişim uyumluluk ilkeleri, kapsam içi kullanıcılar ve paylaşılan kanaldaki tüm iletiler için geçerlidir |
 | **Dış ekiple kanal paylaşma** | İletişim uyumluluk ilkeleri, iç kuruluş için paylaşılan kanaldaki dahili kapsam içi kullanıcılar ve iletiler için geçerlidir |
 
-Modern ekler, Teams iletilerine dahil edilen [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) veya [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) sitelerinden alınan dosyalardır. Otomatik işleme ve etkin iletişim uyumluluk ilkesi koşulları ve sınıflandırıcılarla olası eşleşmeler için bu eklerden metin otomatik olarak ayıklanır. Modern ek algılama ve işleme için gerekli ek yapılandırma yoktur. Metin yalnızca ilke koşullarıyla eşleşen ekler için ayıklanır. İlke eşleşmesi olan iletilere yönelik ekler için, ekin bir ilke eşleşmesi de olsa metin ayıklanmamıştır.
+Modern ekler, Teams iletilerine dahil edilen [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) veya [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) sitelerinden alınan dosyalardır. Otomatik işleme ve etkin iletişim uyumluluk ilkesi koşulları ve sınıflandırıcılarla olası eşleşmeler için bu eklerden metin otomatik olarak ayıklanır. Modern ek algılama ve işleme için gerekli ek yapılandırma yoktur. Metin yalnızca iletinin gönderildiği sırada ilke koşullarıyla eşleşen ekler için ayıklanır. İlke eşleşmesi olan iletilere yönelik ekler için, ekin bir ilke eşleşmesi de olsa metin ayıklanmamıştır.
 
 Modern ek taraması aşağıdaki dosya türleri için desteklenir:
 

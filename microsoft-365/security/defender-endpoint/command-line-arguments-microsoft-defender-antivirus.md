@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender Virüsten Koruma yönetmek için komut satırını kullanma
-description: Microsoft Defender Virüsten Koruma taramaları çalıştırın ve özel bir komut satırı yardımcı programıyla yeni nesil korumayı yapılandırın.
+title: Microsoft Defender Virüsten Koruma'yi yönetmek için komut satırını kullanma
+description: Microsoft Defender Virüsten Koruma taramalarını çalıştırın ve ayrılmış bir komut satırı yardımcı programıyla yeni nesil korumayı yapılandırın.
 keywords: windows defender taraması çalıştırma, komut satırından virüsten koruma taraması çalıştırma, komut satırından Windows Defender taraması çalıştırma, mpcmdrun, defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,17 +12,17 @@ ms.custom: nextgen
 ms.reviewer: ksarens
 manager: dansimp
 ms.date: 05/24/2021
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d459c87f7d996d70d37e84f4e21bc261c720b443
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 311f015495dad909451e89e69e93112390710cd5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418686"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479940"
 ---
-# <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>mpcmdrun.exe komut satırı aracıyla Microsoft Defender Virüsten Koruma yapılandırma ve yönetme
+# <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>microsoft defender virüsten korumayı mpcmdrun.exe komut satırı aracıyla yapılandırma ve yönetme
 
 **Şunlar için geçerlidir:**
 
@@ -32,10 +32,10 @@ ms.locfileid: "65418686"
 **Platform**
 - Windows
 
-mpcmdrun.exeayrılmış komut **satırı aracını kullanarak** Microsoft Defender Virüsten Koruma'da çeşitli işlevler gerçekleştirebilirsiniz. Bu yardımcı program, Microsoft Defender Virüsten Koruma görevleri otomatikleştirmek istediğinizde kullanışlıdır. yardımcı programını içinde `%ProgramFiles%\Windows Defender\MpCmdRun.exe`bulabilirsiniz. Komut isteminden çalıştırın.
+mpcmdrun.exeayrılmış komut **satırı aracını kullanarak** Microsoft Defender Virüsten Koruma'da çeşitli işlevler gerçekleştirebilirsiniz. Bu yardımcı program, Microsoft Defender Virüsten Koruma görevlerini otomatikleştirmek istediğinizde kullanışlıdır. yardımcı programını içinde `%ProgramFiles%\Windows Defender\MpCmdRun.exe`bulabilirsiniz. Komut isteminden çalıştırın.
 
 > [!TIP]
-> Komut isteminin yönetici düzeyinde bir sürümünü açmanız gerekebilir. Başlat menüsü **Komut İstemi'ni** aradığınızda **Yönetici olarak çalıştır'ı** seçin. Güncelleştirilmiş bir Microsoft Defender kötü amaçlı yazılımdan koruma platformu sürümü çalıştırıyorsanız şu konumdan komutunu çalıştırın `MpCmdRun` : `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>`. Kötü amaçlı yazılımdan koruma platformu hakkında daha fazla bilgi için bkz. [güncelleştirmeleri ve temelleri Microsoft Defender Virüsten Koruma](manage-updates-baselines-microsoft-defender-antivirus.md).
+> Komut isteminin yönetici düzeyinde bir sürümünü açmanız gerekebilir. Başlat menüsünde **Komut İstemi'ni** aradığınızda **Yönetici olarak çalıştır'ı** seçin. Güncelleştirilmiş bir Microsoft Defender kötü amaçlı yazılımdan koruma platformu sürümü çalıştırıyorsanız şu konumdan komutunu çalıştırın `MpCmdRun` : `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>`. Kötü amaçlı yazılımdan koruma platformu hakkında daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma güncelleştirmeleri ve temelleri](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 MpCmdRun yardımcı programı aşağıdaki söz dizimini kullanır:
 
@@ -77,8 +77,8 @@ Aşağıdaki tabloda, MpCmdRun aracı kullanılırken oluşabilecek yaygın hata
 
 |Hata iletisi|Olası neden|
 |---|---|
-|**ValidateMapsConnection başarısız oldu (800106BA)** veya **0x800106BA**|Microsoft Defender Virüsten Koruma hizmeti devre dışı bırakıldı. Hizmeti etkinleştirin ve yeniden deneyin. Microsoft Defender Virüsten Koruma yeniden etkinleştirme konusunda yardıma ihtiyacınız varsa bkz. [Uç noktalarınızda Microsoft Defender Virüsten Koruma yeniden yükleme/etkinleştirme](switch-to-mde-phase-2.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).<p> **İpucu**: Windows 10 1909 veya daha eski ve Windows Server 2019 veya daha eski sürümlerinde, hizmet eski *adıyla Windows Defender Virüsten Koruma*.|
-|**0x80070667**|Komutunu 1607 veya daha eski Windows 10 ya da Windows Server 2016 veya daha eski bir bilgisayardan çalıştırıyorsunuz`-ValidateMapsConnection`. Komutunu 1703 veya daha yeni bir sürüm Windows 10 ya da Server 2019 veya daha yeni Windows bir makineden çalıştırın.|
+|**ValidateMapsConnection başarısız oldu (800106BA)** veya **0x800106BA**|Microsoft Defender Virüsten Koruma hizmeti devre dışı bırakıldı. Hizmeti etkinleştirin ve yeniden deneyin. Microsoft Defender Virüsten Koruma'yı yeniden etkinleştirme konusunda yardıma ihtiyacınız varsa bkz. [Uç noktalarınızda Microsoft Defender Virüsten Koruma'yı yeniden yükleme/etkinleştirme](switch-to-mde-phase-2.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).<p> **İpucu**: Windows 10 1909 veya daha eski ve Windows Server 2019 veya daha eski sürümlerinde, hizmet daha önce *Windows Defender Virüsten Koruma* olarak adlandırılıyordu.|
+|**0x80070667**|Komutunu 1607 veya daha eski Windows 10 ya da Windows Server 2016 veya daha eski bir bilgisayardan çalıştırıyorsunuz`-ValidateMapsConnection`. Komutu, sürüm 1703 veya daha yeni Windows 10 ya da Windows Server 2019 veya daha yeni bir makineden çalıştırın.|
 |**MpCmdRun iç veya dış komut, çalıştırılabilir program veya toplu iş dosyası olarak tanınmaz.**|Araç veya `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` konumundan çalıştırılmalıdır ( `2012.4-0` Platform güncelleştirmeleri Mart ayı dışında aylık olduğundan farklı olabilir)|
 |**ValidateMapsConnection MAPS ile bağlantı kuramadı (hr=80070005 httpcode=450)**|Komut yetersiz ayrıcalıklar kullanılarak denendi. Yönetici olarak komut istemini (cmd.exe) kullanın.|
 |**ValidateMapsConnection MAPS ile bağlantı kuramadı (hr=80070006 httpcode=451)**|Güvenlik duvarı bağlantıyı engelliyor veya SSL denetimi gerçekleştiriyor.|
@@ -88,7 +88,7 @@ Aşağıdaki tabloda, MpCmdRun aracı kullanılırken oluşabilecek yaygın hata
 |**ValidateMapsConnection MAPS ile bağlantı kuramadı (hr=80072EE7 httpcode=451)**|Güvenlik duvarı bağlantıyı engelliyor veya SSL denetimi gerçekleştiriyor.|
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

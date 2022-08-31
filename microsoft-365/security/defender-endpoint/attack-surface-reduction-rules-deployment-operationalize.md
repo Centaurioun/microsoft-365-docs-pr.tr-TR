@@ -19,13 +19,14 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365solution-asr-rules
+- highpri
 ms.date: 1/18/2022
-ms.openlocfilehash: b3a978f5bda7de3e606b4521eb55ab471465b7b2
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 644325e02272344b5ceca37178691ecf5f0ffd23
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969342"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473457"
 ---
 # <a name="operationalize-attack-surface-reduction-asr-rules"></a>Saldırı yüzeyini azaltma (ASR) kurallarını kullanıma hazır hale getirme
 

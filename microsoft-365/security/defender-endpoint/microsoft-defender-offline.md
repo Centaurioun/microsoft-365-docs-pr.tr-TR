@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 07/28/2022
+ms.date: 08/30/2022
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 33f41114c0647de2987a5ed5abdaec4c885fcbfd
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 350ab278281cc436bb49c6d27827ac73ae2bea43
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387451"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476538"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Microsoft Defender çevrimdışı tarama sonuçlarını gözden geçirin ve çalıştırın
 
@@ -141,6 +141,14 @@ Daha fazla bilgi için aşağıdakilere bakın:
 > - [Linux'ta Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-linux.md)
 > - [Android özelliklerinde Uç Nokta için Defender’ı yapılandırın](android-configure.md)
 > - [iOS özelliklerinde Uç Nokta için Microsoft Defender’ı yapılandırın](ios-configure-features.md)
+
+### <a name="where-can-i-find-the-scan-results"></a>Tarama sonuçlarını nerede bulabilirim?
+
+Microsoft Defender Çevrimdışı tarama sonuçlarını görmek için:
+
+1. **Başlat'ı** ve ardından Güvenlik **Windows Güvenliği**  >  **Virus & tehdit koruması &**  >  **Ayarlar**  > **Güncelleştirme'yi** seçin.
+
+2. **Virüs & tehdit koruması** ekranında **, Geçerli tehditler'in** altında **Tarama seçenekleri'ni** ve ardından **Koruma geçmişi'ni** seçin.
 
 ## <a name="related-articles"></a>İlgili makaleler
 

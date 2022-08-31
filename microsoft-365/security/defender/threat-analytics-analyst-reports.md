@@ -5,7 +5,8 @@ description: Her tehdit analizi raporunun analist raporu bölümü hakkında bil
 keywords: analist raporu, tehdit analizi, algılamalar, gelişmiş tehdit avcılığı sorguları, azaltmalar,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +21,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9f699be27f3ad0bee522a3e9d0f5550428aacc91
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 4c90856686e09f06b45b84f1d5eeb33cb8919826
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051502"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477373"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Microsoft 365 Defender'de tehdit analizinde analist raporunu anlama
 

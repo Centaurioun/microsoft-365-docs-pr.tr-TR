@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Office 365 için Microsoft Defender Plan 2'de otomatik araştırma ve yanıt özelliklerindeki düzeltme eylemleri hakkında bilgi edinin.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: aaa444a2bada254aeed83540aee361ed806ab0a0
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: f7a8c1b4ae7df1d69d48dbcb1f1954e4fae3e51b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649131"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468713"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Office 365'de düzeltme eylemlerini gözden geçirme ve yönetme
 
@@ -68,7 +68,7 @@ Otomatik araştırma eylemlerini bulmanın ve gerçekleştirmenin dört farklı 
 
 ## <a name="investigation-and-remediation-investigations-queue"></a>Araştırma ve düzeltme araştırmaları kuyruğu
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, E-posta & işbirliği** \> **Araştırmalarında** **Tehdit araştırması** sayfasına gidin. **Doğrudan Tehdit araştırması** sayfasına gitmek için kullanın<https://security.microsoft.com/airinvestigation>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **Email & işbirliği** \> **Araştırmalarındaki Tehdit araştırması** sayfasına gidin. **Doğrudan Tehdit araştırması** sayfasına gitmek için kullanın<https://security.microsoft.com/airinvestigation>.
 2. **Tehdit araştırması** sayfasında, ve listesinden durumu **Bekleyen eylem** olan bir öğe bulun.
 3. Yeni pencerede aç simgesine tıklayın ![.](../../media/m365-cc-sc-open-icon.png) Liste zamanında (**Kimlik** ve **Durum** arasında) **yeni pencerede açın**.
 4. Açılan sayfada onaylayın veya eylemleri reddedin.
@@ -88,7 +88,7 @@ Gönderilen eylemleri yeniden gözden geçirmenin iki farklı yolu vardır:
 
 ## <a name="change-or-undo-through-the-office-action-center"></a>Office işlem merkezi aracılığıyla değiştirme veya geri alma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, E-posta & işbirliği** \> **gözden geçirme** \> **İşlem merkezi'ndeki** Office işlem merkezine gidin. Doğrudan Office işlem merkezine gitmek için kullanın<https://security.microsoft.com/threatincidents>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **Email & işbirliği** \> **gözden geçirme** \> **İşlem merkezi'ndeki** Office işlem merkezine gidin. Doğrudan Office işlem merkezine gitmek için kullanın <https://security.microsoft.com/threatincidents>.
 2. **İşlem merkezi** sayfasında uygun düzeltmeyi seçin.
 3. Yan panelde posta gönderimleri girdisine tıklayın ve listenin yüklenmesini bekleyin.
 4. En üstteki Eylem düğmesinin etkinleştirilmesini bekleyin ve eylem türünü değiştirmek için Eylem düğmesini seçin.
@@ -97,7 +97,7 @@ Gönderilen eylemleri yeniden gözden geçirmenin iki farklı yolu vardır:
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [Tehdit Gezgini'ni kullanma](threat-explorer.md)
-- [Yönetici /El İle Eylemler](remediate-malicious-email-delivered-office-365.md)
+- [Yönetici /El ile Eylemler](remediate-malicious-email-delivered-office-365.md)
 - [Otomatik araştırma ve yanıt özelliklerinde hatalı pozitif/negatifleri bildirme](air-report-false-positives-negatives.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
