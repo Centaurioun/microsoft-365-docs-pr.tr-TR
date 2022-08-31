@@ -17,33 +17,33 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, e-posta sunucularından gelen e-postalara izin vermek veya bunları engellemek için Exchange Online Protection 'de (EOP) bağlantı filtrelemeyi yapılandırmayı öğrenebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 0c09f445bf3d204f9e22d116dc9fda4c3fea9735
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 1e82df7ac66b11b323d88c00d29a89d7c9d3e237
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974135"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483112"
 ---
 # <a name="configure-connection-filtering"></a>Bağlantı filtrelemeyi yapılandırma
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-posta kutuları Exchange Online olan Microsoft 365 bir müşteriyseniz veya Exchange Online olmayan tek başına Exchange Online Protection (EOP) müşterisiyseniz  posta kutuları, iyi veya hatalı kaynak e-posta sunucularını IP adreslerine göre tanımlamak için EOP'de (özellikle varsayılan bağlantı filtresi ilkesi) bağlantı filtrelemeyi kullanırsınız. Varsayılan bağlantı filtresi ilkesinin temel bileşenleri şunlardır:
+Exchange Online posta kutuları olan bir Microsoft 365 müşterisiyseniz veya Exchange Online posta kutuları olmayan tek başına Exchange Online Protection (EOP) müşterisiyseniz, iyi veya kötü kaynak e-posta sunucularını IP adreslerine göre tanımlamak için EOP'de bağlantı filtrelemeyi (özellikle varsayılan bağlantı filtresi ilkesi) kullanırsınız. Varsayılan bağlantı filtresi ilkesinin temel bileşenleri şunlardır:
 
 - **IP İzin Listesi**: IP adresi veya IP adresi aralığına göre belirttiğiniz kaynak e-posta sunucularından gelen tüm iletiler için istenmeyen posta filtrelemesini atlayın. Bu kaynaklardan gelen iletilerde istenmeyen posta filtrelemesinin hala gerçekleşebileceği senaryolar için, bu makalenin [devamında IP İzin Ver Listesindeki kaynaklardan gelen iletilerin hala filtrelendiği senaryolar](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) bölümüne bakın. IP İzin Verme Listesinin genel güvenilir gönderenler stratejinize nasıl uyması gerektiği hakkında daha fazla bilgi için bkz. [EOP'de güvenilir gönderen listeleri oluşturma](create-safe-sender-lists-in-office-365.md).
 
 - **IP Engelleme Listesi**: IP adresi veya IP adresi aralığına göre belirttiğiniz kaynak e-posta sunucularından gelen tüm iletileri engelleyin. Gelen iletiler reddedilir, istenmeyen posta olarak işaretlenmez ve ek filtreleme gerçekleşmez. IP Engelleme Listesi'nin genel engellenen gönderenler stratejinize nasıl uyması gerektiği hakkında daha fazla bilgi için bkz. [EOP'de engellenen gönderen listeleri oluşturma](create-block-sender-lists-in-office-365.md).
 
-- **Kasa listesi**: *Güvenli liste*, Microsoft veri merkezinde müşteri yapılandırması gerektirmeyen dinamik bir izin verme listesidir. Microsoft bu güvenilir e-posta kaynaklarını aboneliklerden çeşitli üçüncü taraf listelerine tanımlar. Güvenli listenin kullanımını etkinleştirir veya devre dışı bırakırsınız; kaynak e-posta sunucularını güvenli listede yapılandıramazsınız. Güvenli listedeki e-posta sunucularından gelen iletilerde istenmeyen posta filtreleme atlanır.
+- **Güvenli liste**: *Güvenli liste* , Microsoft veri merkezinde müşteri yapılandırması gerektirmeyen dinamik bir izin verme listesidir. Microsoft bu güvenilir e-posta kaynaklarını aboneliklerden çeşitli üçüncü taraf listelerine tanımlar. Güvenli listenin kullanımını etkinleştirir veya devre dışı bırakırsınız; kaynak e-posta sunucularını güvenli listede yapılandıramazsınız. Güvenli listedeki e-posta sunucularından gelen iletilerde istenmeyen posta filtreleme atlanır.
 
-Bu makalede, Microsoft 365 Microsoft 365 Defender portalında veya PowerShell'de (Exchange Online posta kutuları olan Microsoft 365 kuruluşlar için PowerShell'de Exchange Online) varsayılan bağlantı filtresi ilkesinin nasıl yapılandırıldığı açıklanır ; Exchange Online posta kutusu olmayan kuruluşlar için tek başına EOP PowerShell). EOP'nin bağlantı filtrelemeyi nasıl kullandığı hakkında daha fazla bilgi için bkz. [İstenmeyen posta önleme koruması](anti-spam-protection.md).
+Bu makalede, Microsoft 365 Microsoft 365 Defender portalında veya Exchange Online'de posta kutuları olan Microsoft 365 kuruluşları için PowerShell'de (Exchange Online PowerShell) varsayılan bağlantı filtresi ilkesinin nasıl yapılandırıldığı açıklanır; tek başına EOP PowerShell Exchange Online posta kutuları). EOP'nin bağlantı filtrelemeyi nasıl kullandığı hakkında daha fazla bilgi için bkz. [İstenmeyen posta önleme koruması](anti-spam-protection.md).
 
 > [!NOTE]
 > IP İzin Verme Listesi, güvenli liste ve IP Engelleme Listesi, kuruluşunuzda e-postaya izin verme veya e-postayı engelleme stratejinizin bir parçasıdır. Daha fazla bilgi için bkz. [Güvenli gönderen listeleri oluşturma](create-safe-sender-lists-in-office-365.md) ve [Engellenen gönderen listeleri oluşturma](create-block-sender-lists-in-office-365.md).
@@ -52,7 +52,7 @@ Bu makalede, Microsoft 365 Microsoft 365 Defender portalında veya PowerShell'de
 
 - Microsoft 365 Defender portalını adresinde <https://security.microsoft.com>açarsınız. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
 
-- Exchange Online PowerShell'e bağlanmak için bkz. [PowerShell'Exchange Online Bağlan](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [PowerShell'i Exchange Online Protection için Bağlan](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell). Tek başına EOP PowerShell'e bağlanmak için bkz. [Exchange Online Protection PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bu makaledeki yordamları gerçekleştirebilmeniz için **önce Exchange Online'de** izinlerin atanmış olması gerekir:
   - Varsayılan bağlantı filtresi ilkesini değiştirmek için **Kuruluş Yönetimi** veya **Güvenlik Yöneticisi** rol gruplarının üyesi olmanız gerekir.
@@ -62,10 +62,10 @@ Bu makalede, Microsoft 365 Microsoft 365 Defender portalında veya PowerShell'de
 
   **Notlar**:
 
-  - kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'deki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+  - kullanıcıları Microsoft 365 yönetim merkezi ilgili Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'teki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
   - [Exchange Online'daki](/Exchange/permissions-exo/permissions-exo#role-groups) **Yalnızca Görüntüleme Kuruluş Yönetimi** rol grubu da özelliğe salt okunur erişim sağlar.
 
-- İzin vermek veya engellemek istediğiniz e-posta sunucularının (gönderenler) kaynak IP adreslerini bulmak için, ileti üst bilgisindeki bağlanan IP (**CIP**) üst bilgi alanını de kontrol edebilirsiniz. Çeşitli e-posta istemcilerinde ileti üst bilgisini görüntülemek için bkz. [Outlook'de internet iletisi üst bilgilerini görüntüleme](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
+- İzin vermek veya engellemek istediğiniz e-posta sunucularının (gönderenler) kaynak IP adreslerini bulmak için, ileti üst bilgisindeki bağlanan IP (**CIP**) üst bilgi alanını de kontrol edebilirsiniz. Çeşitli e-posta istemcilerinde ileti üst bilgisini görüntülemek için bkz. [Outlook'ta internet iletisi üst bilgilerini görüntüleme](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
 - IP İzin Verilenler Listesi, IP Engelleme Listesi'ne göre önceliklidir (her iki listede de bir adres engellenmez).
 
@@ -73,7 +73,7 @@ Bu makalede, Microsoft 365 Microsoft 365 Defender portalında veya PowerShell'de
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy"></a>Varsayılan bağlantı filtresi ilkesini değiştirmek için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
 
 2. **İstenmeyen posta önleme ilkeleri** sayfasında, ilkenin adına tıklayarak listeden **Bağlantı filtresi ilkesi (Varsayılan)** seçeneğini belirleyin.
 
@@ -104,7 +104,7 @@ Bu makalede, Microsoft 365 Microsoft 365 Defender portalında veya PowerShell'de
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy"></a>Varsayılan bağlantı filtresi ilkesini görüntülemek için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, **İlkeler** bölümünde **e-posta & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>, İlkeler **bölümünde** **Email & İşbirliği** \> **İlkeleri & Kurallar** \> **Tehdit ilkeleri** \> **İstenmeyen posta önleme** bölümüne gidin. **İstenmeyen posta önleme ilkeleri** sayfasına doğrudan gitmek için kullanın<https://security.microsoft.com/antispam>.
 
 2. **İstenmeyen posta önleme ilkeleri** sayfasında, ilke listesinde aşağıdaki özellikler görüntülenir:
 
@@ -167,7 +167,7 @@ Aşağıdaki bölümlerde, IP İzin Verilenler Listesi'ni yapılandırırken bil
 
 ### <a name="skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range"></a>Kullanılabilir aralığın dışında bir CIDR IP'sine yönelik istenmeyen posta filtrelemeyi atlama
 
-Bu makalede daha önce açıklandığı gibi, IP İzin Verme Listesinde yalnızca /24 - /32 ağ maskesine sahip bir CIDR IP'si kullanabilirsiniz. /1 aralığındaki kaynak e-posta sunucularından /23 aralığına iletilerde istenmeyen posta filtrelemeyi atlamak için Exchange posta akışı kurallarını (aktarım kuralları olarak da bilinir) kullanmanız gerekir. Ancak, /1 - /23 CIDR IP aralığındaki bir IP adresi Microsoft'un özel veya üçüncü taraf blok listelerinden birinde göründüğünde iletiler engellendiğinden, mümkünse bunu yapmanızı öneririz.
+Bu makalede daha önce açıklandığı gibi, IP İzin Verme Listesinde yalnızca /24 - /32 ağ maskesine sahip bir CIDR IP'si kullanabilirsiniz. /1 aralığındaki kaynak e-posta sunucularından /23 aralığına iletilerde istenmeyen posta filtrelemesini atlamak için Exchange posta akışı kurallarını (aktarım kuralları olarak da bilinir) kullanmanız gerekir. Ancak, /1 - /23 CIDR IP aralığındaki bir IP adresi Microsoft'un özel veya üçüncü taraf blok listelerinden birinde göründüğünde iletiler engellendiğinden, mümkünse bunu yapmanızı öneririz.
 
 Olası sorunları tam olarak fark ettiğinize göre, bu IP adreslerinden gelen iletilerin istenmeyen posta filtrelemeyi atladığından emin olmak için aşağıdaki ayarlarla (en azından) bir posta akışı kuralı oluşturabilirsiniz:
 
@@ -193,7 +193,7 @@ Genellikle, IP İzin Ver Listesine bir IP adresi veya adres aralığı eklemek, 
 
 IP İzin Ver Listenizdeki bir e-posta sunucusundan gelen iletiler hala aşağıdaki senaryolarda istenmeyen posta filtrelemesine tabidir:
 
-- IP İzin Ver Listenizdeki bir IP adresi, Microsoft 365'daki *herhangi* bir kiracıdaki şirket içi, IP tabanlı bir gelen bağlayıcıda da yapılandırılır (bunu A Kiracısı olarak adlandıralım) ve A Kiracısı **ile** iletiyle ilk karşılaşan EOP sunucusu, Microsoft veri *merkezlerindeki aynı* Active Directory ormanında yer alır. Bu senaryoda **, IPV:CAL** iletinin [istenmeyen posta önleme ileti üst bilgilerine](anti-spam-message-headers.md) *eklenir (* iletinin istenmeyen posta filtrelemesini atlandığını gösterir), ancak ileti yine de istenmeyen posta filtrelemeye tabidir.
+- IP İzin Ver Listenizdeki bir IP adresi, Microsoft 365'teki *herhangi* bir kiracıdaki şirket içi, IP tabanlı bir gelen bağlayıcıda da yapılandırılır (bunu A Kiracısı olarak adlandıralım) **ve** A Kiracısı ile iletiyle ilk kez karşılaşan EOP sunucusu, Microsoft veri merkezlerinde *aynı* Active Directory ormanında yer alır. Bu senaryoda **, IPV:CAL** iletinin [istenmeyen posta önleme ileti üst bilgilerine](anti-spam-message-headers.md) *eklenir (* iletinin istenmeyen posta filtrelemesini atlandığını gösterir), ancak ileti yine de istenmeyen posta filtrelemeye tabidir.
 
 - IP İzin Verme Listesi'ni ve iletiyle ilk karşılaşan EOP sunucusunu içeren kiracınız, Microsoft veri *merkezlerindeki farklı* Active Directory ormanlarında yer alıyor. Bu senaryoda, ileti üst bilgilerine **IPV:CAL** *eklenmez* , bu nedenle ileti yine de istenmeyen posta filtrelemeye tabidir.
 
@@ -202,8 +202,8 @@ Bu senaryolardan biriyle karşılaşırsanız, sorunlu IP adreslerinden gelen il
 - Kural koşulu: **Gönderen** \> **IP adresi bu aralıklardan herhangi birindeyse** \> veya tam olarak eşleşiyorsa \> (IP adresiniz veya adresleriniz) **bu kuralı uygulayın**.
 - Kural eylemi: **İleti özelliklerini** \> değiştirin **İstenmeyen posta güvenilirlik düzeyini (SCL)** \> **ayarlama İstenmeyen posta filtrelemesini atla**.
 
-## <a name="new-to-microsoft-365"></a>Microsoft 365'da yeni misiniz?
+## <a name="new-to-microsoft-365"></a>Microsoft 365'i yeni mi kullanıyorsunuz?
 
 ****
 
-![LinkedIn Learning kısa simgesi.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Microsoft 365'da yeni misiniz?** LinkedIn Learning tarafından size getirilen **Microsoft 365 yöneticileri ve BT uzmanlarına** yönelik ücretsiz video kurslarını keşfedin.
+![LinkedIn Learning kısa simgesi.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Microsoft 365'i yeni mi kullanıyorsunuz?** LinkedIn Learning tarafından size getirilen **Microsoft 365 yöneticileri ve BT uzmanları** için ücretsiz video kurslarını keşfedin.

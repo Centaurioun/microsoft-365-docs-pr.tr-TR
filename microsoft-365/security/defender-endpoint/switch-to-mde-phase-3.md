@@ -15,20 +15,19 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
-- m365solution-mcafeemigrate
-- m365solution-symantecmigrate
+- highpri
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: d927f1a5972e24c3bae0329bd866a4b56b0a5d95
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: cc07b9324c8c3e0f1c37e7bd8c4d235945fc1092
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717260"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482548"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Uç Nokta için Microsoft Defender Geçiş - 3. Aşama: Ekleme
 

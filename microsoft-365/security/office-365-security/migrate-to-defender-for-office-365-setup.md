@@ -15,16 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365solution-mdo-migration
+- highpri
 ms.custom: migrationguides
 description: Üçüncü taraf koruma hizmetinden veya cihazından Office 365 için Microsoft Defender korumasına geçişe başlamak için adımları uygulayın.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 69af51bbd39339b07af8f0832a113184afaf725b
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: cc5e53ae41c24c946d74bee7b18ac6e6ecbab173
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051700"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482724"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Office 365 için Microsoft Defender Geçiş - 2. Aşama: Kurulum
 

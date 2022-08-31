@@ -4,7 +4,8 @@ description: Gelişmiş tehdit avcılığı şemasının EmailAttachmentInfo tab
 keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, EmailAttachmentInfo, ağ iletisi kimliği, gönderen, alıcı, ek kimliği, ek adı, kötü amaçlı yazılım kararı
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b99daf9fa7597e44dc7ea20b517c2f7ed5aaa354
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: e2c4ac28a463f2422c096fc4eea6cff8c3b2094d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130571"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483332"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -44,11 +44,11 @@ Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi iç
 | Sütun adı | Veri türü | Açıklama |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | Olayın kaydedilildiği tarih ve saat |
-| `NetworkMessageId` | `string` | Microsoft 365 tarafından oluşturulan e-postanın benzersiz tanımlayıcısı |
+| `NetworkMessageId` | `string` | Microsoft 365 tarafından oluşturulan e-posta için benzersiz tanımlayıcı |
 | `SenderFromAddress` | `string` | KIMDEN üst bilgisindeki gönderen e-posta adresi, e-posta istemcilerindeki e-posta alıcıları tarafından görülebilir |
 | `SenderDisplayName` | `string` | Adres defterinde görüntülenen gönderenin adı, genellikle verilen veya adın, ikinci bir adın ve soyadının veya soyadının birleşimidir |
 | `SenderObjectId` | `string` | Azure AD'da gönderenin hesabının benzersiz tanımlayıcısı |
-| `RecipientEmailAddress` | `string` | Dağıtım listesi genişletildikten sonra alıcının e-posta adresi veya alıcının e-posta adresi |
+| `RecipientEmailAddress` | `string` | Dağıtım listesi genişletildikten sonra alıcının adresini veya alıcının e-posta adresini Email |
 | `RecipientObjectId` | `string` | Azure AD'de e-posta alıcısı için benzersiz tanımlayıcı |
 | `FileName` | `string` | Kaydedilen eylemin uygulandığı dosyanın adı |
 | `FileType` | `string` | Dosya uzantısı türü |

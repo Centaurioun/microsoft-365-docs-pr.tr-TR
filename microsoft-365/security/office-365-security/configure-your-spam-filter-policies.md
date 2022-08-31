@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Yöneticiler, Exchange Online Protection (EOP) içinde istenmeyen posta önleme ilkelerini görüntülemeyi, oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: f5d1b60a2fea570375f4b85170af016fdcfacf71
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 6712359eeff1ee57ef75caea6e46452394062c43
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087648"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482372"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP'de istenmeyen posta önleme ilkelerini yapılandırma
 
@@ -153,14 +153,14 @@ Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi olu
      - **Yüksek güvenilirlikli istenmeyen posta**
      - **Kimlik Avı**
      - **Yüksek güvenilirlikli kimlik avı**
-     - **Yığın**
+     - **Toplu**
 
      İstenmeyen posta filtreleme kararlarına yönelik kullanılabilir eylemler aşağıdaki tabloda açıklanmıştır.
 
      - Onay işareti ( ![Onay işareti.](../../media/checkmark.png)) eylemin kullanılabilir olduğunu gösterir (tüm eylemler tüm kararlarda kullanılamaz).
      - Onay işaretinden sonraki yıldız işareti ( <sup>\*</sup> ) istenmeyen posta filtreleme kararı için varsayılan eylemi gösterir.
 
-     |Eylem|Spam|Yüksek<br>güven<br>istenmeyen posta|Kimlik Avı|Yüksek<br>güven<br>kimlik avı|Yığın|
+     |Eylem|Spam|Yüksek<br>Güven<br>istenmeyen posta|Kimlik Avı|Yüksek<br>Güven<br>Kimlik avı|Toplu|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**İletiyi Gereksiz Email klasörüne taşıma**: İleti posta kutusuna teslim edilir ve Gereksiz Email klasörüne taşınır.<sup> 1</sup>|![Onay işareti.](../../media/checkmark.png)<sup>\*</sup>|![Onay işareti.](../../media/checkmark.png)<sup>\*</sup>|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)<sup>\*</sup>|
      |**X üst bilgisi ekle**: İleti üst bilgisine bir X üst bilgisi ekler ve iletiyi posta kutusuna teslim eder. <p> Bu X üst bilgisini ekle metin kutusuna daha sonra **X üst bilgisi** alan adını (değeri değil) girersiniz. <p> **İstenmeyen posta** ve **Yüksek güvenilirlikli istenmeyen posta** kararları için ileti Gereksiz Email klasörüne taşınır.<sup> 1,2</sup>|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)||![Onay işareti](../../media/checkmark.png)|
@@ -232,8 +232,8 @@ Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi olu
    1. Yapılandırmak istediğiniz listenin bağlantısına tıklayın:
       - **Izin verilen** \> **Gönderenler**: **Yönet (nn) gönderenler'e** tıklayın.
       - **Izin verilen** \> **Etki alanları**: **Etki alanlarına izin ver'e** tıklayın.
-      - **Engellenmiş** \> **Gönderenler**: **Yönet (nn) gönderenler'e** tıklayın.
-      - **Engellenmiş** \> **Etki alanları**: **Etki alanlarını engelle'ye** tıklayın.
+      - **Engellenen** \> **Gönderenler**: **Yönet (nn) gönderenler'e** tıklayın.
+      - **Engellenen** \> **Etki alanları**: **Etki alanlarını engelle'ye** tıklayın.
 
    2. Görüntülenen açılır öğede aşağıdaki adımları uygulayın:
       1. Oluştur simgesine tıklayın ![.](../../media/m365-cc-sc-create-icon.png) **Gönderenleri veya** **Etki alanı ekle'yi seçin**.

@@ -3,7 +3,8 @@ title: Microsoft 365 Defender açarken sık sorulan sorular
 description: Lisanslama, izinler, ilk ayarlar ve Microsoft 365 Defender etkinleştirmeyle ilgili diğer ürün ve hizmetler hakkında en sık sorulan soruların yanıtlarını alın
 keywords: sık sorulan sorular, SSS, GCC, kullanmaya başlama, Microsoft 365 Defender etkinleştirme, Microsoft 365 Defender, M365, güvenlik, veri konumu, gerekli izinler, lisans uygunluğu, ayarlar sayfası
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 73dddcfc1389eb5bb0b0115f0666c413dc7d2a01
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 55a5dbaf78ff19b9ef70d77493f7ac8568a0039d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663214"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483420"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Microsoft 365 Defender açarken sık sorulan sorular
 
@@ -53,7 +53,7 @@ Desteklenen lisansların tam listesi için [lisans gereksinimlerini okuyun](prer
 
 ## <a name="do-i-need-to-install-or-deploy-anything-to-start-using-microsoft-365-defender"></a>Microsoft 365 Defender kullanmaya başlamak için herhangi bir şey yüklemem veya dağıtmam gerekiyor mu?
 
-Hayır, Microsoft 365 Defender önceden dağıttığınız Microsoft 365 güvenlik hizmetlerindeki verileri birleştirir. Etkinleştirdiğinizde olay, otomasyon ve tehdit avcılığı deneyimleri dağıtılan ürünler kapsamında çalışmaya başlar. Bu ürünlerden hiçbiri düzgün dağıtılmazsa, Microsoft 365 Defender hiçbir veri görüntülemez ve herhangi bir işlem yapamaz.
+Hayır, Microsoft 365 Defender zaten dağıttığınız Microsoft 365 güvenlik hizmetlerinden gelen verileri birleştirir. Etkinleştirdiğinizde olay, otomasyon ve tehdit avcılığı deneyimleri dağıtılan ürünler kapsamında çalışmaya başlar. Bu ürünlerden hiçbiri düzgün dağıtılmazsa, Microsoft 365 Defender hiçbir veri görüntülemez ve herhangi bir işlem yapamaz.
 
 Microsoft 365 Defender deneyimlerinizi iyileştirmek için desteklenen *tüm* [Microsoft 365 güvenlik ürünlerini ve hizmetlerini](deploy-supported-services.md) dağıtmanızı öneririz.
 
@@ -64,7 +64,7 @@ Microsoft 365 Defender, birleştirilmiş verilerin işlendiği ve depolandığı
 >[!NOTE]
 >Uç Nokta için Microsoft Defender Bulut için Microsoft Defender aracılığıyla açıldığında Avrupa Birliği (AB) veri merkezlerinde otomatik olarak sağlamalar. Microsoft 365 Defender, Uç Nokta için Microsoft Defender bu şekilde sağlayan müşteriler için aynı AB veri merkezinde otomatik olarak sağlanır.
 
-Veri merkezi konumu, Microsoft 365 Defender (**Ayarlar > Microsoft 365 Defender**) için ayarlar sayfasında hizmet sağlanmadan önce ve sonra gösterilir. Başka bir veri merkezi konumu kullanmayı tercih ediyorsanız, Microsoft desteğine başvurmak için Microsoft 365 Defender portalında **Yardım mı gerekiyor?** öğesini seçin.
+Veri merkezi konumu, Microsoft 365 Defender için ayarlar sayfasında hizmet sağlanmadan önce ve sonra gösterilir (**Ayarlar > Microsoft 365 Defender**). Başka bir veri merkezi konumu kullanmayı tercih ediyorsanız, Microsoft desteğine başvurmak için Microsoft 365 Defender portalında **Yardım mı gerekiyor?** öğesini seçin.
 
 ## <a name="where-can-i-access-microsoft-365-defender"></a>Microsoft 365 Defender nereden erişebilirim?
 

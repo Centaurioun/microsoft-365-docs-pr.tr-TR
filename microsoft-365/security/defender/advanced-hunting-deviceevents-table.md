@@ -4,7 +4,8 @@ description: Gelişmiş tehdit avcılığı şemasının çeşitli cihaz olaylar
 keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, güvenlik olayları, virüsten koruma, güvenlik duvarı, exploit guard, DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 423e7934702197b97f148ff5285e5f51b4a5da54
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: aa6176e74b74d2b3fa8a259b9c8d129bb2a9715f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384890"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483464"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 

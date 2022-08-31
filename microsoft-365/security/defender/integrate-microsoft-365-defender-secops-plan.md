@@ -3,7 +3,8 @@ title: Adım 1. Microsoft 365 Defender işlemlerin hazır olma durumunu planlama
 description: Microsoft 365 Defender güvenlik işlemlerinizle tümleştirirken Microsoft 365 Defender işlemlerin hazır olma durumunu planlamanın temelleri.
 keywords: olaylar, uyarılar, araştırma, bağıntı, saldırı, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365, olay yanıtı, siber saldırı, secops, güvenlik işlemleri, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 72535a88f6718724a4d87774d393a4ef0c6955a8
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: e4cae3512e9f4d856dd97f04f3678ac113d0ecb6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344469"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483156"
 ---
 # <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>Adım 1. Microsoft 365 Defender işlemlerin hazır olma durumunu planlama
 

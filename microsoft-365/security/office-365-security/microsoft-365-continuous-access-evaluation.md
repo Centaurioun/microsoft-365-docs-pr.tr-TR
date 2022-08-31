@@ -1,6 +1,6 @@
 ---
-title: Kuruluş için sürekli erişim Microsoft 365 - Microsoft 365 değerlendirme
-description: Microsoft 365 Azure AD ve Azure AD için koşullu erişim değerlendirmenin etkin kullanıcı oturumlarını nasıl önceden sonlandırıyor ve yakın zamanda kiracı ilkesi değişikliklerini nasıl zorunlu olduğunu açıklar.
+title: Microsoft 365 için sürekli erişim değerlendirmesi - Kuruluş için Microsoft 365
+description: Microsoft 365 ve Azure AD için koşullu erişim değerlendirmesinin etkin kullanıcı oturumlarını proaktif olarak nasıl sonlandırdığı ve kiracı ilkesi değişikliklerini neredeyse gerçek zamanlı olarak nasıl zorunlu kıldığı açıklanır.
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -17,82 +17,83 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
+- highpri
 ms.technology: mdo
-ms.openlocfilehash: e265fd09fa7442b24868ad7f001701ef567e32bd
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 7f0d15bcefa8b8dfc34ceff6d77e06facb4a917d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681578"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482945"
 ---
-# <a name="continuous-access-evaluation-for-microsoft-365"></a>Web için sürekli erişim Microsoft 365
+# <a name="continuous-access-evaluation-for-microsoft-365"></a>Microsoft 365 için sürekli erişim değerlendirmesi
 
-Geleneksel kimlik doğrulaması için OAuth 2.0 kullanan modern bulut hizmetleri, kullanıcı hesabının erişimini iptal etmek için erişim belirtecinin süresinin dolmasını kullanır. Uygulamada, bu durum yöneticinin kullanıcı hesabının erişimini iptal etmese bile, ilk iptal etkinliği gerçekleştikten sonra varsayılan olarak Microsoft 365 için bir saate kadar olan erişim belirteci süresi dolana kadar kullanıcının erişimi olduğu anlamına gelir.
+Kimlik doğrulaması için OAuth 2.0 kullanan modern bulut hizmetleri, kullanıcı hesabının erişimini iptal etmek için geleneksel olarak erişim belirteci süre sonunu kullanır. Uygulamada bu, yönetici bir kullanıcı hesabının erişimini iptal etse bile erişim belirtecinin süresi dolana kadar erişime devam edeceği anlamına gelir. Bu, varsayılan olarak Microsoft 365 için ilk iptal olayından bir saat sonrasına kadar kullanılmıştır.
 
-Microsoft 365 Azure Active Directory (Azure AD) için koşullu erişim değerlendirmesi, erişim belirteci süresinin dolmasına güvenmek yerine etkin kullanıcı oturumlarını önceden sonlandırılır ve kiracı ilkesi değişikliklerini gerçek zamanlı olarak zorlar. Kullanıcı hesabı veya kiracı, kullanıcı hesabının kimlik doğrulama durumunun yeniden değerlendirilmesini gerektiren şekilde değiştirildiğinde, Azure AD sürekli erişim değerlendirme özelliği etkin Microsoft 365 hizmetlerini (SharePoint, Teams ve Exchange gibi) onaylatır.
+Microsoft 365 ve Azure Active Directory (Azure AD) için koşullu erişim değerlendirmesi, etkin kullanıcı oturumlarını proaktif olarak sonlandırır ve erişim belirteci süre sonu yerine kiracı ilkesi değişikliklerini neredeyse gerçek zamanlı olarak zorunlu tutar. Azure AD, kullanıcı hesabı veya kiracı, kullanıcı hesabının kimlik doğrulama durumunun yeniden değerlendirilmesini gerektirecek şekilde değiştiğinde sürekli erişim değerlendirmesi etkinleştirilmiş Microsoft 365 hizmetlerini (SharePoint, Teams ve Exchange gibi) bildirir.
 
-Outlook gibi sürekli erişim değerlendirme özelliği etkinleştirilmiş bir istemci var olan bir erişim belirteciyle Exchange erişmeye çalıştığında, belirteç hizmet tarafından reddedilir ve yeni bir Azure AD kimlik doğrulaması istenir. Sonuç, kullanıcı hesabı ve ilke değişikliklerinin neredeyse gerçek zamanlı zorlaması olur.
+Outlook gibi sürekli erişim değerlendirmesi etkinleştirilmiş bir istemci var olan bir erişim belirteci ile Exchange'e erişmeye çalıştığında, belirteç hizmet tarafından reddedilir ve yeni bir Azure AD kimlik doğrulaması istenir. Sonuç, kullanıcı hesabı ve ilke değişikliklerinin neredeyse gerçek zamanlı olarak uygulanmasıdır.
 
-bazı ek avantajlardan bazıları:
+Bazı ek avantajlar şunlardır:
 
-- Azure AD IP adresi konum ilkesi aracılığıyla, kuruluş dışında geçerli bir erişim belirteci kopyaları ve dışarı aktaran kötü niyetli Insider'lar için, sürekli erişim değerlendirme bu belirtecin kullanımını engellemez. Sürekli erişim değerlendirmeyle, Azure AD ilkeleri desteklenen Microsoft 365 hizmetleriyle eşitler, böylece bir erişim belirteci ilkenin IP adresi aralığının dışından hizmete erişmeye çalışırsa, hizmet belirteci reddeder.
+- Kuruluşunuzun dışında geçerli bir erişim belirtecini kopyalayıp dışarı aktaran kötü niyetli bir insider için, sürekli erişim değerlendirmesi Azure AD IP adresi konumu ilkesi aracılığıyla bu belirtecin kullanımını engeller. Sürekli erişim değerlendirmesiyle Azure AD ilkeleri desteklenen Microsoft 365 hizmetleriyle eşitler, böylece erişim belirteci ilkedeki IP adresi aralığının dışından hizmete erişmeye çalıştığında hizmet belirteci reddeder.
 
-- Sürekli erişimin değerlendirilmesi, daha az belirteç yenilemesi gerektirerek daha yüksek performansı sağlar. Destek hizmetleri yeniden kimlik doğrulaması gerektirmeyle ilgili önceden bildirim alsa da, Azure AD bir saatten daha uzun süre önce, daha uzun yaşayan belirteçler verilmesine neden olabilir. Daha uzun yaşanacak belirteçlerle, istemcilerin Azure AD'den o kadar sık belirteç yenilemesi talep etmek zorunda kalmaları gerekmeyecektir, bu nedenle kullanıcı deneyimi daha dayancı olur.
+- Sürekli erişim değerlendirmesi, daha az belirteç yenilemesi gerektirerek dayanıklılığı artırır. Destek hizmetleri yeniden kimlik doğrulaması gerektirme hakkında proaktif bildirimler aldığından, Azure AD örneğin bir saatten uzun süreli belirteçler verebilir. Daha uzun süreli belirteçlerle, istemcilerin Azure AD sık sık belirteç yenilemesi istemesi gerekmez, bu nedenle kullanıcı deneyimi daha dayanıklıdır.
 
-Aşağıda, sürekli erişim değerlendirmesinde kullanıcı erişim denetimi güvenliğini artıran durumlara bazı örnekler verilmiştir:
+Aşağıda, sürekli erişim değerlendirmesinin kullanıcı erişim denetimi güvenliğini geliştirdiği durumlara bazı örnekler verilmiştir:
 
-- Bir yöneticinin mevcut tüm oturumları geçersiz kılınarak parolasını kullanıcı hesabının parolası geçersiz olduğu için kullanıcı Microsoft 365 yönetim merkezi. Gerçek zamanlı olarak mevcut tüm kullanıcı oturumları Microsoft 365 geçersiz kılındı.
+- Bir kullanıcı hesabının parolası tehlikeye atıldığı için yönetici tüm mevcut oturumları geçersiz kılıp parolasını Microsoft 365 yönetim merkezi sıfırlar. Neredeyse gerçek zamanlı olarak, Microsoft 365 hizmetleriyle var olan tüm kullanıcı oturumları geçersiz kılındı.
 
-- Word'de bir belge üzerinde çalışan bir kullanıcı tabletini yönetici tarafından tanımlanan ve onaylanmış IP adresi aralığında olmayan bir açık kahveciye alır. Kafede, kullanıcının belgeye erişimi hemen engellenir.
+- Word'de bir belge üzerinde çalışan bir kullanıcı, tabletini yönetici tanımlı ve onaylı bir IP adresi aralığında olmayan genel bir kafeye götürür. Kahve dükkanında kullanıcının belgeye erişimi hemen engellenir.
 
-Örneğin Microsoft 365 sürekli erişim değerlendirme şu anda şunları destekler:
+Microsoft 365 için sürekli erişim değerlendirmesi şu anda aşağıdakiler tarafından desteklenmektedir:
 
-- Exchange, SharePoint hizmetleri Teams.
-- Outlook tarayıcısında Outlook, Teams, Office ve OneDrive tarayıcılarında ve Win32, iOS, Android ve Mac istemcileri için kullanılabilir.
+- Exchange, SharePoint ve Teams hizmetleri.
+- Web tarayıcısında ve Win32, iOS, Android ve Mac istemcileri için Outlook, Teams, Office ve OneDrive.
 
-Microsoft, sürekli erişim değerlendirmesini Microsoft 365 hizmet ve istemci desteği sağlamak için ek hizmetler ve istemciler üzerinde çalışıyor.
+Microsoft, sürekli erişim değerlendirmesini desteklemek için ek Microsoft 365 hizmetleri ve istemcileri üzerinde çalışmaktadır.
 
-Sürekli erişim değerlendirme, tüm çalışma sürümlerine, çalışma Office 365 Microsoft 365. Koşullu Erişim ilkelerini yapılandırmak için, Azure AD Premium P1 sürümlerin tamamlarına dahil olan Microsoft 365 gerekir.
+Sürekli erişim değerlendirmesi, Office 365 ve Microsoft 365'in tüm sürümlerine dahil edilecek. Koşullu Erişim ilkelerinin yapılandırılması, tüm Microsoft 365 sürümlerinde yer alan Azure AD Premium P1 gerektirir.
 
 > [!NOTE]
-> Sürekli [erişim değerlendirme](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#limitations) sınırlamaları için bu makaleye bakın.
+> Sürekli erişim değerlendirmesinin sınırlamaları için [bu makaleye](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#limitations) bakın.
 
 ## <a name="scenarios-supported-by-microsoft-365"></a>Microsoft 365 tarafından desteklenen senaryolar
 
-Sürekli erişim değerlendirme iki tür etkinlik destekler:
+Sürekli erişim değerlendirmesi iki tür olayı destekler:
 
 - Kritik olaylar, kullanıcının erişimini kaybetmesi gereken olaylardır.
-- Koşullu Erişim ilkesi değerlendirme, kullanıcının yönetici tanımlı bir ilkeye dayalı olarak kaynağa erişimini kaybetmesi gerektiği zaman oluşur.
+- Koşullu Erişim ilkesi değerlendirmesi, bir kullanıcının yönetici tanımlı bir ilkeye göre kaynağa erişimini kaybetmesi gerektiğinde gerçekleşir.
 
 Kritik olaylar şunlardır:
 
-- Kullanıcı hesabı devre dışı
-- Parola değişti
-- Kullanıcı oturumları iptal edildi
-- Multifactor authentication is enabled for the user
-- Azure AD Kimlik Koruması'nın erişiminin değerlendirilmesina bağlı olarak [artırılmış hesap riski](/azure/active-directory/identity-protection/overview-identity-protection)
+- Kullanıcı hesabı devre dışı bırakıldı
+- Parola değiştirildi
+- Kullanıcı oturumları iptal edilir
+- Kullanıcı için çok faktörlü kimlik doğrulaması etkinleştirildi
+- [Azure AD Kimlik Koruması'ndan](/azure/active-directory/identity-protection/overview-identity-protection) erişimin değerlendirilmesine bağlı olarak hesap riski artırıldı
 
-Koşullu Erişim ilkesi değerlendirme, kullanıcı hesabı artık güvenilir bir ağdan bağlanmazsa gerçekleşir.
+Koşullu Erişim ilkesi değerlendirmesi, kullanıcı hesabı artık güvenilir bir ağdan bağlanmadığında gerçekleşir.
 
-Aşağıdaki örnek Microsoft 365 hizmetleri şu anda Azure AD'den gelen olayları dinleyerek sürekli erişim değerlendirmesini destekler.
+Aşağıdaki Microsoft 365 hizmetleri şu anda Azure AD olayları dinleyerek sürekli erişim değerlendirmesini destekler.
 
 |Zorlama türü|Exchange|SharePoint|Teams|
 |---|---|---|---|
 |**Kritik olaylar:**||||
 |Kullanıcı iptali|Destekleniyor|Destekleniyor|Destekleniyor|
 |Kullanıcı riski|Destekleniyor|Desteklenmiyor|Desteklenmiyor|
-|**Koşullu Erişim ilkesi değerlendirme:**||||
+|**Koşullu Erişim ilkesi değerlendirmesi:**||||
 |IP adresi konum ilkesi|Destekleniyor|Destekleniyor\*|Destekleniyor|
 
-\*SharePoint Office tarayıcı erişimi katı modu etkinleştirerek anında IP ilkesi zorlamasını destekler. Kesin mod olmadan, erişim belirtecinin yaşam süresi bir saat olur.
+\* SharePoint Office web tarayıcısı erişimi, katı modu etkinleştirerek anında IP ilkesi zorlamayı destekler. Katı mod olmadan erişim belirteci ömrü bir saattir.
 
-Koşullu Erişim ilkesi ayarlama hakkında daha fazla bilgi için bu [makaleye bakın](/azure/active-directory/conditional-access/overview).
+Koşullu Erişim ilkesi ayarlama hakkında daha fazla bilgi için [bu makaleye](/azure/active-directory/conditional-access/overview) bakın.
 
-## <a name="microsoft-365-clients-supporting-continuous-access-evaluation"></a>Microsoft 365 erişim değerlendirmesini destekleyen en iyi istemciler
+## <a name="microsoft-365-clients-supporting-continuous-access-evaluation"></a>Sürekli erişim değerlendirmesini destekleyen Microsoft 365 istemcileri
 
-Microsoft 365 için sürekli erişim değerlendirme özelliği etkinleştirilmiş istemciler, bir kullanıcı oturumunun yeniden kimlik doğrulaması için Azure AD'ye yeniden yönlendirmesi olan, önbelleğe alınmış bir kullanıcı belirteci sürekli erişim değerlendirme özelliği etkin bir kullanıcı hizmeti tarafından reddedildiğinde bir talep Microsoft 365 destekler.
+Microsoft 365 için sürekli erişim değerlendirme özellikli istemciler, önbelleğe alınmış bir kullanıcı belirteci sürekli erişim değerlendirmesi etkinleştirilmiş bir Microsoft 365 hizmeti tarafından reddedildiğinde kullanıcı oturumunun yeniden kimlik doğrulaması için Azure AD yönlendirmesi olan talep sınamasını destekler.
 
-Aşağıdaki istemciler web, Win32, iOS, Android ve Mac üzerinde sürekli erişim değerlendirmesini destekler:
+Aşağıdaki istemciler web, Win32, iOS, Android ve Mac'te sürekli erişim değerlendirmesini destekler:
 
 - Outlook
 - Teams
@@ -100,12 +101,12 @@ Aşağıdaki istemciler web, Win32, iOS, Android ve Mac üzerinde sürekli eriş
 - SharePoint
 - OneDrive
 
-\*Görev iddia edin, web için Office desteklenmiyor.
+\* Talep sınaması Web için Office'te desteklenmez.
 
-Sürekli erişim değerlendirmesini desteklemez istemciler için erişim belirtecinin yaşam Microsoft 365 bir saat varsayılan olarak kalır.
+Sürekli erişim değerlendirmesini desteklemeyen istemciler için Microsoft 365'e erişim belirteci ömrü varsayılan olarak bir saat olarak kalır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Sürekli erişim değerlendirme](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
+- [Sürekli erişim değerlendirmesi](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
 - [Koşullu Erişim belgeleri](/azure/active-directory/conditional-access/overview)
 - [Azure AD Kimlik Koruması belgeleri](/azure/active-directory/identity-protection/overview-identity-protection)

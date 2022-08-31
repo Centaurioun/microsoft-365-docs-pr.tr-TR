@@ -1,8 +1,9 @@
 ---
-title: ServiceNow biletlerini web sitesi portalında Microsoft 365 Defender uyumluluk merkezinde tümleştirin
-description: ServiceNow'da bilet oluşturma ve izleme hakkında bilgi edinmek için, Microsoft 365 Defender ve uyumluluk merkezinden bilet satın alın.
+title: ServiceNow biletlerini Microsoft 365 Defender portalı ve uyumluluk merkeziyle tümleştirme
+description: Microsoft 365 Defender portalından ve uyumluluk merkezinden ServiceNow'da bilet oluşturmayı ve izlemeyi öğrenin.
 keywords: güvenlik, Microsoft 365, M365, uyumluluk, uyumluluk merkezi, güvenlik merkezi, ServiceNow, biletler, görevler, SNOW, bağlantı
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,20 +20,19 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: m365d
-ms.openlocfilehash: 89ceeb3b702e2c8f98a6270907f9c759833601f2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7fc743e2333c58268a8bffb21e9196a66c324e3c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62984435"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483178"
 ---
-# <a name="integrate-servicenow-tickets-into-the-microsoft-365-defender-portal-and-compliance-center"></a>ServiceNow biletlerini web sitesi portalında Microsoft 365 Defender uyumluluk merkezinde tümleştirin
+# <a name="integrate-servicenow-tickets-into-the-microsoft-365-defender-portal-and-compliance-center"></a>ServiceNow biletlerini Microsoft 365 Defender portalı ve uyumluluk merkeziyle tümleştirme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 >[!CAUTION]
->**ServiceNow bağlayıcısı önizleme süresi sona erdi**<br>
->Bu özellik artık kullanılamaz. Sonraki adımları belirlerken, geri bildirimleriniz ve desteğiniz için teşekkür ederiz.
+>**ServiceNow bağlayıcısı için önizleme süresi sona erdi**<br>
+>Bu özellik artık kullanılamaz. Sonraki adımları belirlerken geri bildiriminiz ve devam eden desteğiniz için teşekkür ederiz.
 
-ServiceNow, şirketlerin kurumsal işlemler için dijital iş akışlarını yönetmeye yardımcı olan popüler bir bulut bilgi işlem platformudur. Artık platformlarında IT iş akışları, çalışan iş akışları ve müşteri iş akışları vardır.
+ServiceNow, şirketlerin kurumsal operasyonlar için dijital iş akışlarını yönetmelerine yardımcı olan popüler bir bulut bilişim platformudur. Şimdi platformlarında BT iş akışları, çalışan iş akışları ve müşteri iş akışları vardır.

@@ -2,11 +2,12 @@
 title: Microsoft Güvenli Puan'daki yenilikler
 description: Microsoft 365 Defender portalında Microsoft Güvenli Puanı'nda yapılan yeni değişiklikleri açıklar.
 keywords: microsoft güvenli puanı, güvenli puan, office 365 güvenlik puanı, microsoft güvenlik puanı, Microsoft 365 Defender portalı
-ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -20,13 +21,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.technology: m365d
-ms.openlocfilehash: 6f478959d8e6de84ad64fdc128c4f7a9eea73a62
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: e5bea982a1cbc776a9529532bbbac4da4199fb4a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67369147"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482592"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Güvenli Puan'daki yenilikler
 

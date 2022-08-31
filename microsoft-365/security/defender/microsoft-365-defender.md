@@ -4,7 +4,8 @@ description: Microsoft 365 Defender cihazları, kimliği, verileri ve uygulamala
 keywords: MMicrosoft 365 Defender'a giriş, siber güvenlik, gelişmiş kalıcı tehdit, kurumsal güvenlik, cihazlar, cihaz, kimlik, kullanıcılar, veriler, uygulamalar, olaylar, otomatik araştırma ve düzeltme, gelişmiş avcılık
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,14 +23,13 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-overview
 ms.topic: conceptual
-ms.technology: m365d
 adobe-target: true
-ms.openlocfilehash: de40589c69aee6c6ab959f360b384707eca3d29a
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 6e255fda40e12855359754920ef07ff2d78f9b5e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617140"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483288"
 ---
 # <a name="what-is-microsoft-365-defender"></a>Microsoft 365 Defender nedir?
 
@@ -65,7 +65,7 @@ Microsoft 365 Defender hizmetleri koruma:
 
 - **Uç Nokta için Defender ile uç noktalar** - Uç Nokta için Defender, önleyici koruma, ihlal sonrası algılama, otomatik araştırma ve yanıt için birleşik bir uç nokta platformudur.
 - **Defender Güvenlik Açığı Yönetimi ile varlıklar** - Microsoft Defender Güvenlik Açığı Yönetimi, güvenlik ve BT ekiplerinizin kuruluşunuzdaki kritik güvenlik açıklarını ve yanlış yapılandırmaları önceliklendirmesine ve gidermesine yardımcı olmak için sürekli varlık görünürlüğü, akıllı risk tabanlı değerlendirmeler ve yerleşik düzeltme araçları sunar.
-- **Office 365 için Defender ile e-posta ve işbirliği** - Office 365 için Defender kuruluşunuzu e-posta iletileri, bağlantılar (URL' ler) ve işbirliği araçları tarafından ortaya konan kötü amaçlı tehditlere karşı korur.
+- **Office 365 için Defender ile Email ve işbirliği** - Office 365 için Defender kuruluşunuzu e-posta iletileri, bağlantılar (URL'ler) ve işbirliği araçları tarafından ortaya konan kötü amaçlı tehditlere karşı korur.
 - **Kimlik için Defender ve Azure Active Directory (Azure AD) Kimlik Koruması ile kimlikler** - Kimlik için Defender, şirket içi Active Directory Etki Alanı Hizmetleri (AD DS) sinyallerinizi kullanarak gelişmiş tehditleri, güvenliği aşılmış kimlikleri ve kuruluşunuza yönelik kötü amaçlı şirket içi eylemleri tanımlar, algılar ve araştırır. Azure AD Kimlik Koruması, bulut tabanlı Azure AD kimlik tabanlı risklerin algılanması ve düzeltilmesi için otomatik hale getirir.
 - **Microsoft Defender for Cloud Apps uygulamaları** - Microsoft Defender for Cloud Apps, bulut uygulamalarınıza derin görünürlük, güçlü veri denetimleri ve gelişmiş tehdit koruması getiren kapsamlı bir SaaS çözümüdür.
 

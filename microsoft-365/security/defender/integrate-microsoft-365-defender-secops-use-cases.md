@@ -3,7 +3,8 @@ title: Adım 5. Kullanım örneklerini geliştirme ve test edin
 description: Microsoft 365 Defender güvenlik işlemlerinizle tümleştirirken kullanım örnekleri geliştirme ve test etmeyle ilgili temel bilgiler.
 keywords: olaylar, uyarılar, araştırma, bağıntı, saldırı, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365, olay yanıtı, siber saldırı, secops, güvenlik işlemleri, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 2df6e5a989ff46359d685cca3859aaf759280bef
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c4caee1bd0904cecd941789e891b93a378080eed
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328815"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483310"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Adım 5. Kullanım örneklerini geliştirme ve test edin
 

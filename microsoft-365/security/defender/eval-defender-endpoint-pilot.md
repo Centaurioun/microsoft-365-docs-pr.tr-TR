@@ -3,7 +3,8 @@ title: Pilot Uç Nokta için Microsoft Defender
 description: Pilot grubu doğrulama ve özellikleri deneme de dahil olmak üzere Uç Nokta için Microsoft Defender(MDE) için pilot çalıştırmayı öğrenin.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 44e6e341bd47dfb4d0debe1975c79f00cdb5a1da
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 825a1676e3adfd79a410d4d32df0daef53b34df2
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328969"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482813"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Pilot Uç Nokta için Microsoft Defender
 

@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 9a06b695d6e9cffe03ed2a42590c1489f3678056
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.openlocfilehash: e833def27e88a9f59c756bd769a09191e9b2dd5c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439596"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467393"
 ---
 # <a name="deploy-teams-at-scale-for-frontline-workers-in-microsoft-teams"></a>Microsoft Teams'de ön cephe çalışanları için uygun ölçekte ekip dağıtma
 
@@ -143,7 +143,7 @@ Oluşturmak üzere bir grup ekip göndermek için cmdlet'ini kullanırsınız ``
     Get-Command -Module MicrosoftTeams
     ```
 
-    ve ```Get-CsBatchTeamsDeployment``` öğesinin listelendiğini ```New-CsBatchTeamsDeployment``` doğrulayın.
+    ve ```Get-CsBatchTeamsDeploymentStatus``` öğesinin listelendiğini ```New-CsBatchTeamsDeployment``` doğrulayın.
 
 1. Bir ekip grubu dağıtmak için aşağıdakileri çalıştırın. Bu komutta, bu dağıtım hakkında bildirimde bulunabilmek için CSV dosyalarınızın yolunu ve en fazla beş alıcının e-posta adreslerini belirtirsiniz.
 
@@ -162,7 +162,7 @@ Oluşturmak üzere bir grup ekip göndermek için cmdlet'ini kullanırsınız ``
 1. Gönderdiğiniz toplu iş durumunu denetlemek için aşağıdakileri çalıştırın.
 
     ```powershell
-    Get-CsBatchTeamsDeployment -OrchestrationId "OrchestrationId"
+    Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
     ```
 
 ## <a name="send-us-feedback"></a>Görüşlerinizi bize gönderin

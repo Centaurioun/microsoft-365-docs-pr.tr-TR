@@ -4,7 +4,8 @@ description: Microsoft 365 Defender'deki yeni özellikleri ve işlevleri listele
 keywords: Microsoft 365 Defender, ga, genel kullanıma sunulan, özellikler, kullanılabilir, yeni sürümündeki yenilikler
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: d7a49b76efb824160157b9bf10315562149edb02
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: e7b992f22e58cca007e1ed3afecf02ecac830857
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67405630"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483376"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender'daki yenilikler
 

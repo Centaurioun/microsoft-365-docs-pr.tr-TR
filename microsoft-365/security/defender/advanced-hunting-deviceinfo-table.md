@@ -1,10 +1,11 @@
 ---
-title: Gelişmiş av şemasında CihazBilgileri tablosu
-description: Gelişmiş av şemasının CihazBilgileri tablosunda işletim sistemi, bilgisayar adı ve diğer makine bilgileri hakkında bilgi
-keywords: gelişmiş av, tehdit avı, siber tehdit avı, Microsoft 365 Defender, Microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, makinebilgileri, CihazBilgileri, cihaz, makine, işletim sistemi, platform, kullanıcılar
+title: Gelişmiş tehdit avcılığı şemasındaki DeviceInfo tablosu
+description: Gelişmiş tehdit avcılığı şemasının DeviceInfo tablosunda işletim sistemi, bilgisayar adı ve diğer makine bilgileri hakkında bilgi edinin
+keywords: gelişmiş avcılık, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, machineinfo, DeviceInfo, cihaz, makine, işletim sistemi, platform, kullanıcılar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,59 +18,58 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 245a9aa11bcaf10ba6f3b8fe0fe429267a355560
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1808e0fa69f1ea683986b534a88b93e9e4a53af0
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63034238"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482658"
 ---
-# <a name="deviceinfo"></a>CihazBilgileri
+# <a name="deviceinfo"></a>DeviceInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 - Uç Nokta için Microsoft Defender
 
-Gelişmiş `DeviceInfo` arama [şemasında yer alan](advanced-hunting-overview.md) tablo, kuruluşta işletim sistemi sürümü, etkin kullanıcılar ve bilgisayar adı gibi cihazlar hakkında bilgi içerir. Bu tablodan bilgi dönüşen sorgular oluşturmak için bu başvuruyu kullanın.
+`DeviceInfo` [Gelişmiş tehdit avcılığı](advanced-hunting-overview.md) şemasındaki tablo işletim sistemi sürümü, etkin kullanıcılar ve bilgisayar adı gibi kuruluştaki cihazlar hakkında bilgi içerir. Bu tablodan bilgi döndüren sorgular oluşturmak için bu başvuruyu kullanın.
 
-Gelişmiş av şemasında yer alan diğer tablolar hakkında bilgi için bkz [. gelişmiş av başvurusu](advanced-hunting-schema-tables.md).
+Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi için [gelişmiş avcılık başvurusuna bakın](advanced-hunting-schema-tables.md).
 
 | Sütun adı | Veri türü | Açıklama |
 |-------------|-----------|-------------|
-| `Timestamp` | `datetime` | Etkinliğin kaydedl olduğu tarih ve saat |
-| `DeviceId` | `string` | Hizmette makine için benzersiz tanımlayıcı |
+| `Timestamp` | `datetime` | Olayın kaydedilildiği tarih ve saat |
+| `DeviceId` | `string` | Hizmetteki makine için benzersiz tanımlayıcı |
 | `DeviceName` | `string` | Makinenin tam etki alanı adı (FQDN) |
-| `ClientVersion` | `string` | Makinede çalışan uç nokta aracısı veya algılayıcı sürümü |
-| `PublicIP` | `string` | Ekli makine tarafından Uç Nokta için Microsoft Defender hizmetine bağlanmak için kullanılan genel IP adresi. Bu, makinenin kendi IP adresi, NAT cihazı veya proxy olabilir |
+| `ClientVersion` | `string` | Makinede çalışan uç nokta aracısının veya algılayıcının sürümü |
+| `PublicIP` | `string` | Uç Nokta için Microsoft Defender hizmetine bağlanmak için eklenen makine tarafından kullanılan genel IP adresi. Bu, makinenin IP adresi, NAT cihazı veya ara sunucu olabilir |
 | `OSArchitecture` | `string` | Makinede çalışan işletim sisteminin mimarisi |
-| `OSPlatform` | `string` | Makinede çalışan işletim sisteminin platformu. Bu, Windows 11, Windows 10 ve Windows 7 gibi, aynı aile içindeki çeşitlemeler de dahil olmak üzere belirli işletim sistemlerini gösterir. |
+| `OSPlatform` | `string` | Makinede çalışan işletim sisteminin platformu. Bu, Windows 11, Windows 10 ve Windows 7 gibi aynı aile içindeki varyasyonlar da dahil olmak üzere belirli işletim sistemlerini gösterir. |
 | `OSBuild` | `string` | Makinede çalışan işletim sisteminin derleme sürümü |
-| `IsAzureADJoined` | `boolean` | Makinenin diğer makineye katılıp katılmadı şeklinde Boole Azure Active Directory |
-| `AadDeviceId` | `string` | Azure AD'de cihaz için benzersiz tanımlayıcı |
-| `LoggedOnUsers` | `string` | JSON dizi biçiminde etkinlik sırasında makinede oturum açan tüm kullanıcıların listesi |
+| `IsAzureADJoined` | `boolean` | Makinenin Azure Active Directory'ye katılıp katılmadığını gösteren Boole göstergesi |
+| `AadDeviceId` | `string` | Azure AD'da cihaz için benzersiz tanımlayıcı |
+| `LoggedOnUsers` | `string` | Olay sırasında JSON dizi biçiminde makinede oturum açan tüm kullanıcıların listesi |
 | `RegistryDeviceTag` | `string` | Kayıt defteri aracılığıyla eklenen makine etiketi |
 | `OSVersion` | `string` | Makinede çalışan işletim sisteminin sürümü |
 | `MachineGroup` | `string` | Makinenin makine grubu. Bu grup, makineye erişimi belirlemek için rol tabanlı erişim denetimi tarafından kullanılır |
-| `ReportId` | `long` | Yinelenen bir sayaça dayalı olay tanımlayıcısı. Benzersiz olayları tanımlamak için bu sütun DeviceName ve Timestamp sütunlarıyla birlikte kullanılmalıdır |
-| `OnboardingStatus` | `string` | Cihazın şu anda Uç Nokta için Microsoft Defender'a ekli mi yoksa desteklenmiyor mu olduğunu gösterir |
+| `ReportId` | `long` | Yinelenen sayacı temel alan olay tanımlayıcısı. Benzersiz olayları tanımlamak için bu sütunun DeviceName ve Timestamp sütunlarıyla birlikte kullanılması gerekir |
+| `OnboardingStatus` | `string` | Cihazın şu anda eklenip eklenmediğini veya Uç Nokta için Microsoft Defender ya da cihazın desteklenip desteklenmediğini gösterir |
 |`AdditionalFields` | `string` | JSON dizi biçimindeki olay hakkında ek bilgi |
-|`DeviceCategory` | `string` | Belirli cihaz türlerini aşağıdaki kategoriler altında gruplandıran daha geniş sınıflandırma: Uç nokta, Ağ cihazı, IoT, Bilinmiyor |
-|`DeviceType` | `string` | Ağ cihazı, iş istasyonu, sunucu, mobil, oyun konsolu veya yazıcı gibi amaca ve işlevlere dayalı cihazın türü |
-|`DeviceSubType` | `string` | Mobil cihaz bir tablet veya akıllı telefon gibi belirli cihaz türleri için ek değiştirici olabilir; yalnızca cihaz bulma bu öznitelik hakkında yeterli bilgi bulursa kullanılabilir |
-|`Model` | `string` | Satıcı veya üreticinin ürün adı veya numarası, ancak cihaz bulma bu öznitelik hakkında yeterli bilgi bulursa kullanılabilir |
-|`Vendor` | `string` | Ürün satıcısının veya üreticisinin adı; ancak cihaz bulma bu öznitelik hakkında yeterli bilgi bulursa kullanılabilir |
-|`OSDistribution` | `string` | Linux için Ubuntu veya RedHat gibi işletim sistemi platformlarının dağıtımı |
-|`OSVersionInfo` | `string` | Işletim sistemi sürümü hakkında popüler ad, kod adı veya sürüm numarası gibi ek bilgiler |
-|`MergedDeviceIds` | `string` | Aynı cihaza atanmış olan önceki cihaz kimlikleri |
+|`DeviceCategory` | `string` | Aşağıdaki kategoriler altında belirli cihaz türlerini gruplandıran daha geniş bir sınıflandırma: Uç Nokta, Ağ cihazı, IoT, Bilinmiyor |
+|`DeviceType` | `string` | Ağ cihazı, iş istasyonu, sunucu, mobil, oyun konsolu veya yazıcı gibi amaca ve işlevselliğe dayalı cihaz türü |
+|`DeviceSubType` | `string` | Mobil cihaz gibi belirli cihaz türleri için ek değiştirici tablet veya akıllı telefon olabilir; yalnızca cihaz bulma bu öznitelik hakkında yeterli bilgi bulursa kullanılabilir |
+|`Model` | `string` | Satıcıdan veya üreticiden gelen ürünün model adı veya numarası, yalnızca cihaz keşfi bu öznitelik hakkında yeterli bilgi bulursa kullanılabilir |
+|`Vendor` | `string` | Ürün satıcısının veya üreticinin adı; yalnızca cihaz keşfi bu öznitelik hakkında yeterli bilgi bulursa kullanılabilir |
+|`OSDistribution` | `string` | Linux platformları için Ubuntu veya RedHat gibi işletim sistemi platformunun dağıtımı |
+|`OSVersionInfo` | `string` | İşletim sistemi sürümü hakkında popüler ad, kod adı veya sürüm numarası gibi ek bilgiler |
+|`MergedDeviceIds` | `string` | Aynı cihaza atanmış önceki cihaz kimlikleri |
 |`MergedToDeviceId` | `string` | Bir cihaza atanan en son cihaz kimliği |
 
-Tablo `DeviceInfo` , bir cihazdan düzenli raporlar veya sinyaller olan sinyallere dayalı olarak cihaz bilgilerini sağlar. Her on beş dakikada bir, cihaz gibi öznitelikleri sık sık değiştiren bir kısmi sinyal gönderir `LoggedOnUsers`. Günde bir, cihazın özniteliklerini içeren tam sinyal gönderilir.
+Tablo, `DeviceInfo` düzenli raporlar veya bir cihazdan gelen sinyaller olan sinyalleri temel alan cihaz bilgilerini sağlar. Cihaz, her on beş dakikada bir gibi `LoggedOnUsers`sık değişen öznitelikleri içeren kısmi bir sinyal gönderir. Günde bir kez, cihazın özniteliklerini içeren tam sinyal gönderilir.
 
-Cihazın en son durumunu almak için aşağıdaki örnek sorguyu kullanabilirsiniz:
+Bir cihazın en son durumunu almak için aşağıdaki örnek sorguyu kullanabilirsiniz:
 
 ```kusto
 // Get latest information on user/device
@@ -79,9 +79,9 @@ DeviceInfo
 ```
 
 ## <a name="related-topics"></a>İlgili konular
-- [Gelişmiş ava genel bakış](advanced-hunting-overview.md)
-- [Sorgu dilini öğrenme](advanced-hunting-query-language.md)
-- [Paylaşılan sorguları kullanma](advanced-hunting-shared-queries.md)
-- [Cihazlar, e-postalar, uygulamalar ve kimlikler arasında iş avı](advanced-hunting-query-emails-devices.md)
-- [Şemayı anlama](advanced-hunting-schema-tables.md)
-- [Sorguyla ilgili en iyi yöntemleri uygulama](advanced-hunting-best-practices.md)
+- [Gelişmiş avcılığa genel bakış](advanced-hunting-overview.md)
+- [Sorgu dilini öğrenin](advanced-hunting-query-language.md)
+- [Paylaşılan sorguları kullanın](advanced-hunting-shared-queries.md)
+- [Cihazlar, e-postalar, uygulamalar ve kimlikler arasında avlayın](advanced-hunting-query-emails-devices.md)
+- [Şemayı anlayın](advanced-hunting-schema-tables.md)
+- [Sorgu en iyi yöntemlerini uygulayın](advanced-hunting-best-practices.md)

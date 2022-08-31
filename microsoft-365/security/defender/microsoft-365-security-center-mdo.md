@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender'da Office 365 için Microsoft Defender
 description: Güvenlik & Uyumluluk Merkezi'nden Microsoft 365 Defender değişiklikleri hakkında bilgi edinin.
-keywords: Microsoft 365 güvenlik, Microsoft 365 Defender, Office 365 için Microsoft Defender, Uç Nokta için Microsoft Defender, MDO, MDE, yeni defender güvenlik portalı ile çalışmaya başlama
+keywords: Microsoft 365 güvenliği, Microsoft 365 Defender, Office 365 için Microsoft Defender, Uç Nokta için Microsoft Defender, MDO, MDE, yeni Defender güvenlik portalı ile çalışmaya başlama
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.prod: m365-security
-ms.technology: m365d
-ms.openlocfilehash: 4cd43c5f9e8ecad35ed574d5b60eaf1fa2e635d9
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.service: microsoft-365-security
+ms.subservice: m365d
+ms.openlocfilehash: 0a1bf4dd4d46490ed85cbb8631d2581da0a2f7af
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438357"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482790"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft 365 Defender'da Office 365 için Microsoft Defender
 
@@ -45,9 +45,9 @@ Aşağıdaki tabloda Güvenlik & Uyumluluk Merkezi ile Microsoft 365 Defender ar
 |Veri kaybı önleme||[Bkz. Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/homepage)||
 |Kayıt yönetimi||[Bkz. Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/homepage)||
 |Bilgi Yönetişimi||[Bkz. Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/homepage)||
-|Tehdit yönetimi|[E-posta & İşbirliği](https://security.microsoft.com/homepage)|||
+|Tehdit yönetimi|[Email & İşbirliği](https://security.microsoft.com/homepage)|||
 |İzinler|[İzinler & rolleri](https://security.microsoft.com/emailandcollabpermissions)|[Bkz. Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/homepage)||
-|Posta akışı|||Bkz[. Exchange yönetim merkezi](https://admin.exchange.microsoft.com/#/)|
+|Posta akışı|||Bkz [. Exchange yönetim merkezi](https://admin.exchange.microsoft.com/#/)|
 |Veri gizliliği||[Bkz. Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com/homepage)||
 |Arama|[Denetim](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Arama (içerik araması)||
 |Raporlar|[Rapor](https://security.microsoft.com/emailandcollabreport)|||
@@ -65,7 +65,7 @@ Uyumlulukla ilgili öğeleri arıyorsanız <a href="https://go.microsoft.com/fwl
 
 ## <a name="new-and-improved-capabilities"></a>Yeni ve geliştirilmiş özellikler
 
-Sol gezinti veya hızlı başlatma çubuğu tanıdık görünecektir. Ancak, bu Bulut için Defender bazı yeni ve güncelleştirilmiş öğeler vardır.
+Sol gezinti veya hızlı başlatma çubuğu tanıdık görünecektir. Ancak bu Bulut için Defender'da bazı yeni ve güncelleştirilmiş öğeler vardır.
 
 Birleşik Microsoft 365 Defender çözümüyle tehdit sinyallerini bir araya getirerek tehdidin tam kapsamını ve etkisini ve şu anda kuruluşu nasıl etkilediğini belirleyebilirsiniz.
 
@@ -102,7 +102,7 @@ Office 365 için Microsoft Defender'da [gelişmiş avcılık örneği](advanced-
 
 Uzman Microsoft güvenlik araştırmacılarından tehdit bilgileri alın. Tehdit Analizi, güvenlik ekiplerinin yeni ortaya çıkan tehditlerle karşılaştığında daha verimli olmasını sağlar. Tehdit Analizi şunları içerir:
 
-- Office 365 için Microsoft Defender e-postayla ilgili algılamalar ve azaltmalar. Bu, Uç Nokta için Microsoft Defender'dan sağlanan uç nokta verilerine ek olarak sağlanır.
+- Office 365 için Microsoft Defender Email ilgili algılamalar ve risk azaltmaları. Bu, Uç Nokta için Microsoft Defender'dan sağlanan uç nokta verilerine ek olarak sağlanır.
 - Tehditlerle ilgili olaylar görünümü.
 - Raporlarda eyleme dönüştürülebilir bilgileri hızla tanımlamak ve kullanmak için gelişmiş deneyim.
 
@@ -110,15 +110,15 @@ Tehdit analizine Microsoft 365 Defender sol üst gezinti çubuğundan veya kurul
 
 [Tehdit analiziyle yeni ortaya çıkan tehditleri izleme ve yanıtlama](./threat-analytics.md) hakkında daha fazla bilgi edinin.
 
-### <a name="email--collaboration"></a>E-posta & işbirliği
+### <a name="email--collaboration"></a>Email & işbirliği
 
 Kullanıcılarınızın e-postasına yönelik tehditleri izleyin ve araştırın, kampanyaları izleyin ve daha fazlasını yapın. Güvenlik & Uyumluluk Merkezi'ni kullandıysanız, bu tanıdık olacaktır.
 
-![Microsoft 365 Defender portalının sol gezinti bölmesindeki E-posta & harmanlama için hızlı başlatma menüsü.](../../media/mdo-m365d-nav.png)
+![Microsoft 365 Defender portalının sol gezinti bölmesindeki Email & harmanlama için hızlı başlatma menüsü.](../../media/mdo-m365d-nav.png)
   
-#### <a name="email-entity-page"></a>E-posta varlık sayfası
+#### <a name="email-entity-page"></a>varlık sayfasını Email
 
-[E-posta varlığı sayfası](../office-365-security/mdo-email-entity-page.md), geçmişte farklı *sayfalara veya görünümlere* dağılmış e-posta bilgilerini birlandırır. Tehditler ve eğilimler için e-postayı *araştırmak merkezidir*. Üst bilgi bilgilerine ve e-posta önizlemesine, e-postayla ilgili diğer yararlı bilgilerin yanı sıra aynı e-posta sayfasından erişilebilir. Benzer şekilde, kötü amaçlı dosya ekleri veya URL'ler için de patlama durumu aynı sayfanın bir sekmesinde bulunabilir. E-posta varlık sayfası, yöneticilerin ve güvenlik operasyonları ekiplerinin bir e-posta tehdidini ve durumunu anlamasını ve işlemeyi hızlı bir şekilde belirlemesini sağlar.
+[Email varlık sayfası](../office-365-security/mdo-email-entity-page.md), geçmişte farklı *sayfalara veya görünümlere* dağılmış e-posta bilgilerini birlandırır. Tehditler ve eğilimler için e-postayı *araştırmak merkezidir*. Üst bilgi bilgilerine ve e-posta önizlemesine, e-postayla ilgili diğer yararlı bilgilerin yanı sıra aynı e-posta sayfasından erişilebilir. Benzer şekilde, kötü amaçlı dosya ekleri veya URL'ler için de patlama durumu aynı sayfanın bir sekmesinde bulunabilir. Email varlık sayfası, yöneticilerin ve güvenlik operasyonları ekiplerinin bir e-posta tehdidini ve durumunu hızlı bir şekilde anlamasını ve ardından işlemeyi hızlı bir şekilde belirlemesini sağlar.
 
 ### <a name="access-and-reports"></a>Erişim ve Raporlar
 
@@ -163,9 +163,9 @@ Ayrıca, bu makalenin altındaki **İlgili Bilgiler** bölümüne bakın.
 
 ## <a name="microsoft-365-defender-home-page"></a>Microsoft 365 Defender Giriş sayfası
 
-Portalın Giriş sayfası, Microsoft 365 ortamınızın güvenlik durumu hakkında önemli özet bilgileri gösterir.
+Portalın Giriş sayfası, Microsoft 365 ortamınızın güvenlik durumuyla ilgili önemli özet bilgileri gösterir.
 
-**Kılavuzlu turu** kullanarak Uç Nokta veya E-posta & işbirliği sayfalarında hızlı bir tura gidebilirsiniz. Burada gördükleriniz, Office 365 için Defender ve/veya Uç Nokta için Defender lisansınız olup olmadığınıza bağlıdır.
+**Rehberli turu** kullanarak Uç Nokta veya Email & işbirliği sayfalarında hızlı bir tura gidebilirsiniz. Burada gördükleriniz, Office 365 için Defender ve/veya Uç Nokta için Defender lisansınız olup olmadığınıza bağlıdır.
 
 Ayrıca karşılaştırma için Güvenlik & Uyumluluk Merkezi'nin bağlantısı da bulunur. Son bağlantı, son güncelleştirmeleri açıklayan **Yenilikler** sayfasının bağlantısıdır.
 
@@ -173,6 +173,6 @@ Ayrıca karşılaştırma için Güvenlik & Uyumluluk Merkezi'nin bağlantısı 
 
 - [Güvenlik & Uyumluluk Merkezi'nin Microsoft 365 Defender yeniden yönlendirilmesi](microsoft-365-security-mdo-redirection.md)
 - [İşlem merkezi](./m365d-action-center.md)
-- [E-posta & işbirliği uyarıları](../../compliance/alert-policies.md#default-alert-policies)
+- [İşbirliği uyarılarını Email &](../../compliance/alert-policies.md#default-alert-policies)
 - [Özel algılama kuralları](/microsoft-365/security/defender-endpoint/custom-detection-rules)
 - [Kimlik avı saldırısı simülasyonu oluşturma](../office-365-security/attack-simulation-training.md) ve [kişilerinizi eğitme yükü oluşturma](../office-365-security/attack-simulation-training-payloads.md)

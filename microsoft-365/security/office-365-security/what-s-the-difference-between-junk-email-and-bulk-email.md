@@ -19,12 +19,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection (EOP) içindeki gereksiz e-posta (istenmeyen posta) ile toplu e-posta (gri posta) arasındaki farklar hakkında bilgi edinebilir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5117954e668c4e64444628078f38dab61b0597cb
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.openlocfilehash: d8fc8bdc3740c5103c33a1e3fdd1d98dc67f8704
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441799"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482416"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>EOP'de gereksiz e-posta ile toplu e-posta arasındaki fark nedir?
 
@@ -52,14 +52,13 @@ Toplu e-postaya yönelik karışık tepki nedeniyle, her kuruluş için geçerli
 İstenmeyen posta önleme ilkeleri, toplu e-postayı istenmeyen posta olarak tanımlamak için kullanılan varsayılan bir BCL eşiğine sahiptir. Yöneticiler eşiği artırabilir veya azaltabilir. Daha fazla bilgi için, aşağıdaki konulara bakın:
 
 - [EOP'de istenmeyen posta önleme ilkelerini yapılandırın](configure-your-spam-filter-policies.md).
-
 - [EOP istenmeyen posta önleme ilkesi ayarları](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 
 Gözden kaçırması kolay başka bir seçenek: Bir kullanıcı toplu e-posta almaktan şikayetçiyse ancak iletiler EOP'de istenmeyen posta filtrelemesi geçiren saygın gönderenlerden geliyorsa, kullanıcının toplu e-posta iletisinde abonelikten çıkma seçeneğini denetlemesini sağlayın.
 
 ## <a name="how-to-tune-bulk-email"></a>Toplu e-postayı ayarlama
 
-Septemeber 2022'de, Office 365 için Microsoft Defender Plan 2 müşterileri [gelişmiş avlanmadan](/microsoft-365/security/defender/advanced-hunting-overview) BCL'ye erişebilir. Bu özellik yöneticilerin, karşılık gelen BCL değerleri ve alınan e-posta birimiyle birlikte, kuruluşlarına posta gönderen tüm toplu gönderenlere bakmasını sağlar. **Email & işbirliği** şemasındaki **EmailEvents** tablosundaki diğer sütunları kullanarak toplu gönderenlerin detayına gidebilirsiniz. Daha fazla bilgi için bkz. [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table).
+Eylül 2022'de Office 365 için Microsoft Defender Plan 2 müşterileri [BCL'ye gelişmiş avlanmadan](/microsoft-365/security/defender/advanced-hunting-overview) erişebilir. Bu özellik yöneticilerin, karşılık gelen BCL değerleri ve alınan e-posta birimiyle birlikte, kuruluşlarına posta gönderen tüm toplu gönderenlere bakmasını sağlar. **Email & işbirliği** şemasındaki **EmailEvents** tablosundaki diğer sütunları kullanarak toplu gönderenlerin detayına gidebilirsiniz. Daha fazla bilgi için bkz. [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table).
 
 Örneğin, Contoso istenmeyen posta önleme ilkelerinde geçerli toplu eşiklerini 7 olarak ayarlamışsa, Contoso alıcıları gelen kutularında BCL \< 7 bulunan tüm gönderenlerden e-posta alır. Yöneticiler, kuruluştaki tüm toplu gönderenlerin listesini almak için aşağıdaki sorguyu çalıştırabilir:
 
@@ -71,12 +70,15 @@ EmailEvents
 
 Bu sorgu, yöneticilerin istenen ve istenmeyen gönderenleri tanımlamasına olanak tanır. Toplu gönderenin toplu eşiği karşılamayan bir BCL puanı varsa, yöneticiler [analiz için gönderenin iletilerini Microsoft'a gönderebilir](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal) ve bu da göndereni Kiracı İzin Verme/Engelleme Listesi'ne izin verme girdisi olarak ekler.
 
-Office 365 için Defender Plan 2 olmayan kuruluşlar, aranan ve istenmeyen toplu gönderenleri belirlemek için [Tehdit koruması durum raporunu](view-email-security-reports.md#threat-protection-status-report) kullanabilir:
+Office 365 için Defender Plan 2 olmayan kuruluşlar, Office 365 Plan 2 için Microsoft 365 Defender'deki özellikleri ücretsiz olarak deneyebilir. adresinde 90 günlük Office 365 için Defender değerlendirmesini <https://security.microsoft.com/atpEvaluation>kullanın. [Burada](try-microsoft-defender-for-office-365.md) kimlerin kaydolabileceği ve deneme koşulları hakkında bilgi edinin veya tehdit [koruması durum raporunu](view-email-security-reports.md#threat-protection-status-report) kullanarak istenen ve istenmeyen toplu gönderenleri belirleyebilirsiniz:
 
-1. adresinde <https://security.microsoft.com/reports/URLProtectionActionReport> Tehdit koruması durum raporuna gidin ve **Verileri Email İstenmeyen**\> **Posta'ya göre görüntüle'ye göre** filtreleyin.
- 
+1. Tehdit koruması durumu raporunda, **İstenmeyen posta Email \> verileri görüntüle'yi** seçin. Doğrudan rapora gitmek için aşağıdaki URL'lerden birini açın:
+
+   - EOP: <https://security.microsoft.com/reports/TPSAggregateReport>
+   - Office 365 için Defender:<https://security.microsoft.com/reports/TPSAggregateReportATP>
+
 2. Toplu e-posta filtresi, araştırmak için bir e-posta seçin ve gönderen hakkında daha fazla bilgi edinmek için e-posta varlığına tıklayın. Email varlığı yalnızca Office 365 için Defender Plan 2 müşterileri tarafından kullanılabilir.
 
 3. İstenen ve istenmeyen gönderenleri belirledikten sonra toplu eşiği istediğiniz düzeye ayarlayın. Toplu eşiğinize sığmayan BCL puanına sahip toplu gönderenler varsa, [iletileri analiz için Microsoft'a gönderin](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal); bu da göndereni Kiracı İzin Ver/Engelle Listesi'ne izin verilen giriş olarak ekler.
 
-Yöneticiler, önerilen toplu eşik değerlerini izleyebilir veya kuruluşlarının gereksinimlerine uygun bir toplu eşik değeri seçebilir.
+Yöneticiler [önerilen toplu eşik değerlerini](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) toplu eşik değerlerini izleyebilir veya kuruluşlarının gereksinimlerine uygun bir toplu eşik değeri seçebilir.

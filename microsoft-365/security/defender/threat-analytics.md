@@ -3,7 +3,8 @@ title: Microsoft 365 Defender'de tehdit analizi
 ms.reviewer: ''
 description: Yeni ortaya çıkan tehditler ve saldırı teknikleri ve bunların nasıl durdurulacağını öğrenin. Kuruluşunuz üzerindeki etkilerini değerlendirin ve kuruluşunuzun dayanıklılığını değerlendirin.
 keywords: tehdit analizi, risk değerlendirmesi, Microsoft 365 Defender, M365D, risk azaltma durumu, güvenli yapılandırma, Office 365 için Microsoft Defender, Office 365 için Microsoft Defender  tehdit analizi, MDO tehdit analizi, tümleşik MDE ve MDO tehdit analizi verileri, tehdit analizi veri tümleştirmesi, tümleşik Microsoft 365 Defender tehdit analizi
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee74b1b5af9af8e657329f973855cdee926a61f8
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: f9b0fc2035ff1b47c41d928f885c105aef59e9cb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328375"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467129"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Microsoft 365 Defender'de tehdit analizi
 

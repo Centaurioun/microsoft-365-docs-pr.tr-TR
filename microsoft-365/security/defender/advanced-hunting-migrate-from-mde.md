@@ -4,7 +4,8 @@ description: Uç Nokta için Microsoft Defender sorgularınızı Microsoft 365 D
 keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, Uç Nokta için Microsoft Defender, arama, sorgu, telemetri, özel algılamalar, şema, Kusto, eşleme
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.technology: m365d
-ms.openlocfilehash: 9fd00df5e61d37e5133f23e5f06973ceb99c4636
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 05e498d7208e9cd72cde4b6899fedc70a70db766
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666184"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483530"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>gelişmiş tehdit avcılığı sorgularını Uç Nokta için Microsoft Defender geçirme
 
@@ -34,7 +34,7 @@ ms.locfileid: "64666184"
 **Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-Daha geniş bir veri kümesi kullanarak tehditleri proaktif olarak avlamak için gelişmiş tehdit avcılığı iş akışlarınızı Uç Nokta için Microsoft Defender taşıyın. Microsoft 365 Defender, aşağıdakiler dahil olmak üzere diğer Microsoft 365 güvenlik çözümlerinden verilere erişebilirsiniz:
+Daha geniş bir veri kümesi kullanarak tehditleri proaktif olarak avlamak için gelişmiş tehdit avcılığı iş akışlarınızı Uç Nokta için Microsoft Defender taşıyın. Microsoft 365 Defender'da, aşağıdakiler dahil olmak üzere diğer Microsoft 365 güvenlik çözümlerinden verilere erişebilirsiniz:
 
 - Uç Nokta için Microsoft Defender
 - Office 365 için Microsoft Defender
@@ -55,7 +55,7 @@ Mevcut Uç Nokta için Defender iş akışlarınızı etkilemeden geçiş yapabi
 | [AlertEvidence](advanced-hunting-alertevidence-table.md) | Uyarılarla ilişkili dosyalar, IP adresleri, URL'ler, kullanıcılar veya cihazlar |
 | [AlertInfo](advanced-hunting-alertinfo-table.md) | Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Microsoft Defender for Cloud Apps ve Kimlik için Microsoft Defender uyarıları , önem derecesi bilgileri ve tehdit kategorileri dahil  |
 | [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | E-postalara eklenen dosyalar hakkında bilgi |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | E-posta teslimi ve engelleme olayları dahil olmak üzere e-posta olaylarını Microsoft 365 |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | E-posta teslimi ve engelleyici olaylar da dahil olmak üzere Microsoft 365 e-posta olayları |
 | [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | Microsoft 365 e-postaları alıcı posta kutusuna teslim ettikten sonra teslim sonrası gerçekleşen güvenlik olayları |
 | [EmailUrlInfo](advanced-hunting-emailurlinfo-table.md) | E-postalardaki URL'ler hakkında bilgi |
 | [IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) | Active Directory (AD) çalıştıran bir şirket içi etki alanı denetleyicisini içeren olaylar. Bu tablo, etki alanı denetleyicisindeki kimlikle ilgili olayları ve sistem olaylarını kapsar. |

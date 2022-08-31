@@ -1,9 +1,10 @@
 ---
-title: Desteklenen Microsoft 365 Defender API'ler
-description: Desteklenen Microsoft 365 Defender API'ler
-keywords: Microsoft 365 Defender API'ler, api
+title: Desteklenen Microsoft 365 Defender API'leri
+description: Desteklenen Microsoft 365 Defender API'leri
+keywords: Microsoft 365 Defender, API'ler, api
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,49 +20,48 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 1785186f778c489cb4a254fe39cc41921a4de86e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 71c4586e37f36418320c6baff456f2e9839cb1af
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63014138"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482835"
 ---
-# <a name="supported-microsoft-365-defender-apis"></a>Desteklenen Microsoft 365 Defender API'ler 
+# <a name="supported-microsoft-365-defender-apis"></a>Desteklenen Microsoft 365 Defender API'leri 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Bazı bilgiler, ticari olarak piyasaya sürmeden önce önemli ölçüde değiştirilmiş olabilir, önceden satın alınan ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
+> Bazı bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
 
 ## <a name="list-of-available-apis"></a>Kullanılabilir API'lerin listesi
 
 Makale | Açıklama
 -|-
-[Gelişmiş Av API'si](api-advanced-hunting.md) | Gelişmiş Arama sorgularını çalıştırma.
-[Olay API'leri](api-incident.md) | Diğer pratik görevlerle birlikte olayları listele ve güncelleştirin.
-[Akış API'si](streaming-api.md) | Gerçek zamanlı etkinlikleri ve uyarıları tek bir veri akışında olduğu gibi gönderebilirsiniz.
+[Gelişmiş Avcılık API'si](api-advanced-hunting.md) | Gelişmiş Tehdit Avcılığı sorguları çalıştırın.
+[Olay API'leri](api-incident.md) | Olayları ve diğer pratik görevleri listeleyin ve güncelleştirin.
+[Akış API'si](streaming-api.md) | Gerçek zamanlı olayları ve uyarıları tek bir veri akışında gerçekleşirken gönderme.
 
-### <a name="endpoint-uris"></a>Uç Nokta  URL'leri
+### <a name="endpoint-uris"></a>Uç nokta URI'leri
 
-Ana API'lerin her ikisi için de temel URI'dir: https://api.security.microsoft.com. Daha iyi bir performans için coğrafi konumunıza daha yakın bir sunucu kullanın:
+Ana API'lerin her ikisi için de temel URI: https://api.security.microsoft.com. Daha iyi performans için coğrafi konumunuza daha yakın bir sunucu kullanın:
 
-- Amerika Birleşik Devletleri: api-us.security.microsoft.com
+- Birleşik Devletler: api-us.security.microsoft.com
 - Avrupa: api-eu.security.microsoft.com
 - Birleşik Krallık: api-uk.security.microsoft.com
 
-Belirteçler erişimle elde edilir https://api.security.microsoft.com.
+Belirteçler erişimiyle https://api.security.microsoft.comedinilebilir.
 
-Yol boyunca yer alan tüm `/api` [API'ler OData](/odata/overview) Protokolünü kullanır; örneğin, https://api.security.microsoft.com/api/incidents.
+Yol boyunca tüm `/api` API'ler [OData](/odata/overview) Protokolünü kullanır; örneğin, https://api.security.microsoft.com/api/incidents.
 
 ## <a name="related-articles"></a>İlgili makaleler
 
 - [Microsoft 365 Defender API'lere genel bakış](api-overview.md)
-- [Api'lere Microsoft 365 Defender erişme](api-access.md)
+- [Microsoft 365 Defender API'lerine erişme](api-access.md)
 - [Akış API'si](../defender-endpoint/raw-data-export.md)
 - [API sınırları ve lisanslama hakkında bilgi edinin](api-terms.md)
 - [Hata kodlarını anlama](api-error-codes.md)

@@ -4,7 +4,8 @@ description: Günlük güvenlik operasyonlarınızda ve güvenlik yönetimi çal
 keywords: Microsoft Tehdit Uzmanları, yönetilen tehdit avcılığı hizmeti, MTE, Microsoft yönetilen tehdit avcılığı hizmeti
 search.product: Windows 10
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,16 +15,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.technology: m365d
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 3facbf62dcc6fc572ea46322c8969b4af2dcd68e
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 352fabf477bd991080a64bfc40ee60a19ec11d77
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67329013"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67466953"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Microsoft 365 Defender aracılığıyla Microsoft Tehdit Uzmanları özelliklerini yapılandırma ve yönetme
 
@@ -96,6 +96,8 @@ Birçok uyarı arasında yalnızca Defender Uzman Bildirimleri'ni görmek istiyo
 3. **Uygula'yı** seçin.
 
 ## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Microsoft Tehdit Uzmanları Abone Olma - İsteğe Bağlı Uzmanlar
+> [!NOTE]
+> İsteğe Bağlı Uzmanlar bir güvenlik olayı yanıt hizmeti değildir. Kuruluşunuzu etkileyen karmaşık tehditlerin daha iyi anlaşılmasını sağlamak için tasarlanmıştır. Acil güvenlik olayı yanıt sorunlarını çözmek için kendi güvenlik olayı yanıt ekibinizle etkileşime geçin. Kendi güvenlik olayı yanıt ekibiniz yoksa ve Microsoft'un yardımını istiyorsanız [Premier Services Hub'da](/services-hub/) bir destek isteği oluşturun.![ Görüntü](https://user-images.githubusercontent.com/11750124/187275455-b62fd01d-ad23-46c8-a11d-e5c0a50e92a8.png)
 
 Zaten Uç Nokta için Microsoft Defender bir müşteriyseniz, Microsoft Tehdit Uzmanları - İsteğe Bağlı Uzmanlar'a abone olmak için Microsoft temsilcinizle iletişime geçebilirsiniz.
 

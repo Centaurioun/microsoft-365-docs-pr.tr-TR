@@ -4,7 +4,8 @@ description: Microsoft 365 Defender portalına erişin ve Microsoft 365 Defender
 keywords: Deneme kurulumu Microsoft 365 Defender, pilot kurulum Microsoft 365 Defender, Microsoft 365 Defender deneyin Microsoft 365 Defender değerlendirme laboratuvarı kurulumu
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- highpri
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 5d516a7062d8c6f617cee2a260f27ee896689f2c
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 116efc949edace902b8e71abb27f5c091407fb14
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667350"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482284"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>laboratuvar ortamında Microsoft 365 Defender denemenizi ayarlama 
 
@@ -71,7 +72,7 @@ Bu konu, özel bir laboratuvar ortamı ayarlamanız için size yol gösterir. Ü
 
    :::image type="content" source="../../media/mtp-eval-15.png" alt-text="Kuruluma Git düğmesine tıklamayı isteyen Office 365 E5 deneme kaydı kurulum sayfası" lightbox="../../media/mtp-eval-15.png":::
 
-8. Şirket etki alanınızı Office 365 kiracıya Bağlan. [İsteğe bağlı] **Zaten sahip olduğunuz bir etki alanını Bağlan** seçin ve etki alanı adınızı yazın. **İleri**'ye tıklayın.
+8. Şirket etki alanınızı Office 365 kiracısına bağlayın. [İsteğe bağlı] **Zaten sahip olduğunuz bir etki alanına bağlan'ı** seçin ve etki alanı adınızı yazın. **İleri**'ye tıklayın.
 
    :::image type="content" source="../../media/mtp-eval-16.png" alt-text="Oturum açma ve e-posta bilgilerinizi kişiselleştirmeniz gereken Office 365 E5 Kurulumu sayfası" lightbox="../../media/mtp-eval-16.png":::
  
@@ -83,7 +84,7 @@ Bu konu, özel bir laboratuvar ortamı ayarlamanız için size yol gösterir. Ü
 
     :::image type="content" source="../../media/mtp-eval-18.png" alt-text="Daha fazla kullanıcı ekleyebileceğiniz Office 365 E5 kurulum sayfası" lightbox="../../media/mtp-eval-18.png":::
  
-11. [İsteğe bağlı] Office uygulamaları indirin. Bu adımı atlamak için **İleri'ye** tıklayın. 
+11. [İsteğe bağlı] Office uygulamalarını indirin. Bu adımı atlamak için **İleri'ye** tıklayın. 
 
     :::image type="content" source="../../media/mtp-eval-19.png" alt-text="Office uygulamalarınızı yükleyebileceğiniz Office 365 E5 sayfası" lightbox="../../media/mtp-eval-19.png":::
 
@@ -91,7 +92,7 @@ Bu konu, özel bir laboratuvar ortamı ayarlamanız için size yol gösterir. Ü
 
     :::image type="content" source="../../media/mtp-eval-20.png" alt-text="E-posta iletilerinin geçirilip geçirilmeyeceğini ayarlayabileceğiniz Office 365 E5" lightbox="../../media/mtp-eval-20.png":::
  
-13. çevrimiçi hizmetler'ı seçin. **Exchange'ı** seçin ve **İleri'ye** tıklayın. 
+13. çevrimiçi hizmetler'ı seçin. **Exchange'i** seçin ve **İleri'ye** tıklayın. 
 
     :::image type="content" source="../../media/mtp-eval-21.png" alt-text="çevrimiçi hizmetler seçebileceğiniz Office 365 E5" lightbox="../../media/mtp-eval-21.png":::
 
@@ -107,7 +108,7 @@ Bu konu, özel bir laboratuvar ortamı ayarlamanız için size yol gösterir. Ü
 ## <a name="enable-microsoft-365-trial-subscription"></a>Microsoft 365 deneme aboneliğini etkinleştirme
 
 >[!NOTE]
->Deneme sürümüne kaydolmak, size bir ay boyunca kullanabileceğiniz 25 kullanıcı lisansı verir. Ayrıntılar için bkz. [Microsoft 365 aboneliğini deneme veya satın alma](../../commerce/try-or-buy-microsoft-365.md).
+>Deneme sürümüne kaydolmak, size bir ay boyunca kullanabileceğiniz 25 kullanıcı lisansı verir. Ayrıntılar için bkz. [Microsoft 365 aboneliğini deneme veya satın alma](../../commerce/try-or-buy-microsoft-365.md) .
 
 1. [Microsoft 365 Yönetici Merkezi'nde](https://admin.microsoft.com/) **Faturalama'ya** tıklayın ve ardından **Hizmetleri satın al'a** gidin.
 
@@ -127,7 +128,7 @@ Bu konu, özel bir laboratuvar ortamı ayarlamanız için size yol gösterir. Ü
 
    :::image type="content" source="../../media/mtp-eval-27.png" alt-text="Başlamak için Şimdi dene düğmesini saatle Microsoft 365 E5 Ücretsiz denemeyi başlat sayfası" lightbox="../../media/mtp-eval-27.png":::
  
-6. **Microsoft 365 Yönetici** **CenterUsersActive** >  >  **kullanıcıları'na** gidin. Kullanıcı hesabınızı seçin, **Ürün lisanslarını yönet'i** seçin, ardından lisansı Office 365 E5 **Microsoft 365 E5** olarak değiştirin. **Kaydet**'e tıklayın.
+6. **Microsoft 365 Yönetici Merkezi** > **Kullanıcıları** > **Etkin kullanıcıları'na** gidin. Kullanıcı hesabınızı seçin, **Ürün lisanslarını yönet'i** seçin, ardından lisansı Office 365 E5 **Microsoft 365 E5** olarak değiştirin. **Kaydet**'e tıklayın.
 
    :::image type="content" source="../../media/mtp-eval-28.png" alt-text="Microsoft 365 E5 lisansını seçebileceğiniz Microsoft 365 Yönetici Merkezi sayfası" lightbox="../../media/mtp-eval-28.png":::
  

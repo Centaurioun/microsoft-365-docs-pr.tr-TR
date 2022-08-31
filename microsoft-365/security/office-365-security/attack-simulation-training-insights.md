@@ -5,20 +5,20 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
 description: Yöneticiler, Microsoft 365 Defender portalındaki Saldırı simülasyonu eğitimi kullanıcıları nasıl etkilediğini öğrenebilir ve simülasyon ve eğitim sonuçlarından içgörüler elde edebilir.
-ms.technology: mdo
-ms.openlocfilehash: f3ec93de3790791bbec7b02faac4d2885edc5759
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mdo
+ms.openlocfilehash: af3a1e9f7a2b991b7ece6f36595e2f7759eccb9d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67409190"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483134"
 ---
 # <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Office 365 için Defender Saldırı simülasyonu eğitimi için içgörüler ve raporlar
 

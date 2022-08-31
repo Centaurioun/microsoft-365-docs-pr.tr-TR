@@ -3,7 +3,8 @@ title: 6. Adım. SOC bakım görevlerini tanımlama
 description: Microsoft 365 Defender güvenlik işlemlerinizle tümleştirirken SOC bakım görevlerini belirleyin.
 keywords: olaylar, uyarılar, araştırma, bağıntı, saldırı, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365, olay yanıtı, siber saldırı, secops, güvenlik işlemleri, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: db30612de836cfac1279dba4aa3563ae71a6e269
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: b066b248444dbd897e7c560ec58622787c5fed9a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343153"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482438"
 ---
 # <a name="step-6-identify-soc-maintenance-tasks"></a>6. Adım. SOC bakım görevlerini tanımlama
 

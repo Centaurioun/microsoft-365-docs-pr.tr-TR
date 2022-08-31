@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Yöneticiler, desteklenen belirli senaryolarda (üçüncü taraf kimlik avı simülasyonları ve güvenlik işlemleri (SecOps) posta kutularına teslim edilen iletiler) filtrelenmemesi gereken iletileri belirlemek için Exchange Online Protection (EOP) içinde gelişmiş teslim ilkesini kullanmayı öğrenebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 826eb2d2b860900ed0f73ecd85f3162bb90de2a9
-ms.sourcegitcommit: d7c51ab23de4b43bcc8eebebc5a2962831e9fd55
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 82d1f38430769b00cdb8fc5cc7c9cd02884f66d1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67420994"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483002"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Üçüncü taraf kimlik avı simülasyonlarının kullanıcılara ve filtrelenmemiş iletilerin SecOps posta kutularına teslimini yapılandırma
 
