@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 ms.custom: ''
 ms.date: 06/10/2021
 description: Office 365 için Microsoft Defender Plan 2'de otomatik araştırma ve yanıt özellikleriyle güvenliği aşılmış kullanıcı hesaplarını algılama ve ele alma sürecini nasıl hızlandıracağınızı öğrenin.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 8628f1952f37f43a66daccb5f0792097ce798c31
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 5c6bd48759382209375201b2e95ac71ccce4d0f4
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649053"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482218"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Güvenliği aşılmış kullanıcı hesaplarını otomatik araştırma ve yanıtla ele alın
 
@@ -70,7 +70,7 @@ Otomatik Araştırma ve Yanıt (AIR) ve güvenliği aşılmış kullanıcı uyar
 
 ### <a name="view-and-investigate-restricted-users"></a>Kısıtlanmış kullanıcıları görüntüleme ve araştırma
 
-Kısıtlı kullanıcılar listesine gitmek için birkaç seçeneğiniz vardır. Örneğin, Microsoft 365 Defender portalında **E-posta & işbirliği** \> **Kısıtlı Kullanıcıları** **Gözden Geçir'e** \> gidebilirsiniz. Aşağıdaki yordam, tetiklenmiş olabilecek çeşitli uyarı türlerini görmenin iyi bir yolu olan **Uyarılar** panosunu kullanarak gezintiyi açıklar.
+Kısıtlı kullanıcılar listesine gitmek için birkaç seçeneğiniz vardır. Örneğin, Microsoft 365 Defender portalında kısıtlı **kullanıcıları** **gözden geçirme** \> **Email & işbirliğine** \> gidebilirsiniz. Aşağıdaki yordam, tetiklenmiş olabilecek çeşitli uyarı türlerini görmenin iyi bir yolu olan **Uyarılar** panosunu kullanarak gezintiyi açıklar.
 
 1. adresinden Microsoft 365 Defender portalını <https://security.microsoft.com> açın ve **Olaylar & Uyarılar'a** \> gidin. Veya doğrudan **Uyarılar** sayfasına gitmek için kullanın <https://security.microsoft.com/alerts>.
 
@@ -104,4 +104,4 @@ Daha fazla bilgi için bkz. [Araştırmanın ayrıntılarını görüntüleme](a
 
 - [Uç Nokta için Microsoft Defender'da AIR hakkında bilgi edinin](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Yakında sunulacakları görmek için Microsoft 365 Yol Haritası'nı ziyaret edin](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Yakında sunulacak ve kullanıma sunulacakları görmek için Microsoft 365 Yol Haritası'nı ziyaret edin](https://www.microsoft.com/microsoft-365/roadmap?filters=)

@@ -1,9 +1,10 @@
 ---
 title: Diğer güvenlik ve tehdit koruması API'leri
-description: Microsoft güvenlik ve tehdit koruması ürünleriyle ilgili API'lerin listesini görüntüleme.
+description: Microsoft güvenlik ve tehdit koruması ürünleriyle ilgili API'lerin listesini görüntüleyin.
 keywords: api, güvenlik, tehdit koruması, mde, Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, bulut uygulaması güvenliği
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,27 +20,26 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 7fa04ce2ecfb830b60cbc195bc57af3cf4a44bdd
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: d5524b85066e95be0630084fc0525158095fe7a5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63014210"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481998"
 ---
 # <a name="other-security-and-threat-protection-apis"></a>Diğer güvenlik ve tehdit koruması API'leri
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
-- Microsoft 365 Defender API'si
+- Microsoft 365 Defender API
 
 > [!IMPORTANT]
-> Bazı bilgiler, ticari olarak piyasaya sürmeden önce önemli ölçüde değiştirilmiş olabilir, önceden satın alınan ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
+> Bazı bilgiler, ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen önceden yayımlanmış ürünle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
 
-Aşağıdaki kaynaklar, diğer Microsoft güvenlik çözümleri için kullanılabilen API'ler hakkında, AŞAĞıDAKI API'nin ötesinde daha Microsoft 365 Defender sağlar.
+Aşağıdaki kaynaklar, Microsoft 365 Defender API'sinin ötesinde diğer Microsoft güvenlik çözümleri için kullanılabilen API'ler hakkında daha fazla bilgi sağlar.
 
 - [Uç Nokta için Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
 - [Office 365 için Microsoft Defender](/office/office-365-management-api/)

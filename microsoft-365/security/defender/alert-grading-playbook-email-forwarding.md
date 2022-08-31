@@ -2,7 +2,8 @@
 title: Şüpheli e-posta iletme etkinliği için uyarı notları
 description: Uyarıları gözden geçirmek ve saldırıyı düzeltmek ve ağınızı korumak için önerilen eylemleri uygulamak için şüpheli e-posta iletme etkinliği için uyarı notlama.
 keywords: olaylar, uyarılar, araştırma, analiz etme, yanıt, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: dcfb6d01503dd4499ce6431b95a433c4cb598de1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 088cb74f16fae1155b86b1bfa6b5c72aae287720
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663236"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482108"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Şüpheli e-posta iletme etkinliği için uyarı notları
 
@@ -37,9 +37,9 @@ ms.locfileid: "64663236"
 
 Tehdit aktörleri, güvenliği aşılmış kullanıcı hesaplarını kullanıcının gelen kutusundaki e-postaları okuma, e-postaları dış alıcılara iletme ve kimlik avı postaları gönderme gibi çeşitli kötü amaçlı amaçlar için kullanabilir. Hedeflenen kullanıcı, e-postalarının iletildiğini bilmiyor olabilir. Bu, saldırganların kullanıcı hesapları tehlikeye atıldığında kullandığı çok yaygın bir taktiktir.
 
-E-postalar el ile veya iletme kuralları kullanılarak otomatik olarak iletilebilir. Otomatik iletme, Gelen Kutusu Kuralları, Exchange Aktarım Kuralı (ETR) ve SMTP İletme gibi birçok yolla uygulanabilir. El ile iletme kullanıcıların doğrudan eylem gerçekleştirmesini gerektirse de, otomatik olarak iletilen tüm e-postaların farkında olmayabilirler. Microsoft 365'da, kullanıcı bir e-postayı kötü amaçlı olabilecek bir e-posta adresine otomatik olarak ilettiğinde bir uyarı oluşturulur.
+E-postalar el ile veya iletme kuralları kullanılarak otomatik olarak iletilebilir. Otomatik iletme, Gelen Kutusu Kuralları, Exchange Aktarım Kuralı (ETR) ve SMTP İletme gibi birden çok yolla uygulanabilir. El ile iletme kullanıcıların doğrudan eylem gerçekleştirmesini gerektirse de, otomatik olarak iletilen tüm e-postaların farkında olmayabilirler. Microsoft 365'te, kullanıcı bir e-postayı kötü amaçlı olabilecek bir e-posta adresine otomatik olarak ilettiğinde bir uyarı oluşturulur.
 
-Bu playbook, Şüpheli E-posta İletme Etkinliği uyarılarını araştırmanıza ve bunları Doğru Pozitif (TP) veya Hatalı Pozitif (FP) olarak hızla notlamanıza yardımcı olur. Ardından, saldırıyı düzeltmek için TP uyarıları için önerilen eylemleri gerçekleştirebilirsiniz.
+Bu playbook, Şüpheli Email İletme Etkinliği uyarılarını araştırmanıza ve bunları Doğru Pozitif (TP) veya Hatalı Pozitif (FP) olarak hızla notlamanıza yardımcı olur. Ardından, saldırıyı düzeltmek için TP uyarıları için önerilen eylemleri gerçekleştirebilirsiniz.
 
 Office 365 için Microsoft Defender ve Microsoft Defender for Cloud Apps için uyarı not verme konusuna genel bakış için [giriş makalesine](alert-grading-playbooks.md) bakın.
 
@@ -51,9 +51,9 @@ Bu playbook'u kullanmanın sonuçları şunlardır:
 
 - E-postalar kötü amaçlı bir e-posta adresine iletildiyse gerekli eylemi yapmışsınızdır.
 
-## <a name="email-forwarding-rules"></a>E-posta iletme kuralları
+## <a name="email-forwarding-rules"></a>Email iletme kuralları
 
-E-posta iletme kuralları, kullanıcıların kullanıcının posta kutusuna gönderilen e-posta iletilerini kuruluşun içindeki veya dışındaki başka bir kullanıcının posta kutusuna iletmek için bir kural oluşturmasına olanak tanır. Özellikle birden çok posta kutusu olan bazı e-posta kullanıcıları, işveren e-postalarını özel e-posta hesaplarına taşımak için iletme kurallarını yapılandırmaktadır. E-posta iletme yararlı bir özelliktir, ancak bilgilerin olası açığa çıkması nedeniyle güvenlik riski de oluşturabilir. Saldırganlar bu bilgileri kuruluşunuza veya iş ortaklarına saldırmak için kullanabilir.
+Email iletme kuralları, kullanıcıların kullanıcının posta kutusuna gönderilen e-posta iletilerini kuruluşun içindeki veya dışındaki başka bir kullanıcının posta kutusuna iletmek için bir kural oluşturmasına olanak tanır. Özellikle birden çok posta kutusu olan bazı e-posta kullanıcıları, işveren e-postalarını özel e-posta hesaplarına taşımak için iletme kurallarını yapılandırmaktadır. Email iletme kullanışlı bir özelliktir, ancak bilgilerin olası açığa çıkması nedeniyle güvenlik riski de oluşturabilir. Saldırganlar bu bilgileri kuruluşunuza veya iş ortaklarına saldırmak için kullanabilir.
 
 ### <a name="suspicious-email-forwarding-activity"></a>Şüpheli e-posta iletme etkinliği
 
@@ -65,12 +65,12 @@ Office 365 için Microsoft Defender şüpheli e-posta iletme kurallarını algı
 
 Daha fazla bilgi için şu blog gönderilerine bakın:
 
-- [İş E-posta Güvenliğinin Aşılmasına Neden Olan](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/business-email-uncompromised-part-one/ba-p/2159900)
+- [İş Email Güvenliğinin Aşılmasına Neden Olan](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/business-email-uncompromised-part-one/ba-p/2159900)
 - [İş e-posta güvenliğinin aşılması sahne arkası: Büyük bir BEC kampanyasını kesintiye uğratmak için etki alanları arası tehdit verilerini kullanma](https://www.microsoft.com/security/blog/2021/06/14/behind-the-scenes-of-business-email-compromise-using-cross-domain-threat-data-to-disrupt-a-large-bec-infrastructure/)
 
 ## <a name="alert-details"></a>Uyarı ayrıntıları
 
-Şüpheli E-posta İletme Etkinliği uyarısını gözden geçirmek için **, Etkinlik** **listesi** bölümünü görmek için Uyarılar sayfasını açın. İşte bir örnek.
+Şüpheli Email İletme Etkinliği uyarısını gözden geçirmek için, **Etkinlik listesi** bölümünü görmek için **Uyarılar** sayfasını açın. İşte bir örnek.
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png" alt-text="Uyarıyla ilgili etkinliklerin listesi" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png":::
 
@@ -81,7 +81,7 @@ Kenar çubuğunda bu etkinliğin ayrıntılarını görüntülemek için **Etkin
 **Neden** alanı, bu uyarıyla ilgili aşağıdaki bilgileri içerir.
 
 - İletme Türü (FT) aşağıdakilerden biridir:
-  - Exchange Aktarım Kuralı (ETR): Aktarım Kuralı kullanılarak iletilir ve Exchange
+  - Exchange Aktarım Kuralı (ETR): ve Exchange Aktarım Kuralı kullanılarak iletildi
   - SMTP: Posta Kutusu İletme kullanılarak iletildi
   - Gelen KutusuRule: Gelen Kutusu Kuralı kullanılarak iletildi
 
@@ -107,7 +107,7 @@ Etkilenen posta kutusu için bu ek etkinlikleri de analiz edebilirsiniz:
   - Gönderen tarafından gönderilen en son e-postalardan kaçının kimlik avı, istenmeyen posta veya kötü amaçlı yazılım olarak algılandığından gözlemleyin.
   - Gönderilen e-postaların kaç tanesinde hassas bilgiler olduğunu gözlemleyin.
 
-- Microsoft Azure portalında riskli oturum açma davranışını değerlendirin.
+- Microsoft Azure portal riskli oturum açma davranışını değerlendirin.
 - Kullanıcının cihazındaki kötü amaçlı etkinlikleri denetleyin.
 
 ### <a name="are-the-activities-malicious"></a>Etkinlikler kötü amaçlı mı?
@@ -116,10 +116,10 @@ E-posta iletme etkinliğini araştırma. Örneğin, e-postanın türünü, bu e-
 
 Daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- [Otomatik iletilen iletiler içgörüleri](/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report)
-- [E-posta içgörülerini ileten yeni kullanıcılar](/microsoft-365/security/office-365-security/mfi-new-users-forwarding-email)
-- [Güvenliği Aşılmış E-posta Hesabına Yanıt Verme](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)
-- [Outlook hatalı pozitifleri ve hatalı negatifleri raporlama](/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives)
+- [Otomatik iletilen iletiler içgörüsü](/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report)
+- [E-posta içgörüsü ileten yeni kullanıcılar](/microsoft-365/security/office-365-security/mfi-new-users-forwarding-email)
+- [Güvenliği Aşılmış Email Hesabına Yanıt Verme](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)
+- [Outlook'ta yanlış pozitifleri ve yanlış negatifleri bildirme](/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives)
 
 Şüpheli e-posta iletme etkinliklerini tanımlamaya yönelik iş akışı aşağıdadır.
 
@@ -135,7 +135,7 @@ Tehdit Gezgini, bu etkinliğin şüpheli olup olmadığını belirlemek için e-
 
     :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png" alt-text="Alıcı listesi örneği" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png":::
 
-  - Bu alıcılara başka Who e-posta iletildi?
+  - Başka kim bu alıcılara e-posta iletmiştir?
   - Bu alıcılara kaç e-posta iletildi?
   - E-postalar bu alıcılara ne sıklıkta iletilir?
 
@@ -236,15 +236,15 @@ IdentityLogonEvents
 
 ### <a name="investigating-forwarding-rules"></a>İletme kurallarını araştırma
 
-Kural türüne (uyarıdaki FT değeri) göre Exchange yönetim merkezini kullanarak şüpheli iletme kurallarını da bulabilirsiniz.
+Ayrıca, kural türüne (uyarıdaki FT değeri) göre Exchange yönetim merkezini kullanarak şüpheli iletme kurallarını da bulabilirsiniz.
 
-- ETR
+- Etr
 
   Exchange aktarım kuralları **Kurallar** bölümünde listelenir. Tüm kuralların beklendiği gibi olduğunu doğrulayın.
 
 - SMTP
 
-  Gönderenin posta kutusunu **yönet posta akışı ayarlarını \> e-posta iletme Düzenleme'yi seçerek posta kutusu\> iletme \>** kurallarını görebilirsiniz.
+  Gönderenin posta kutusunu **Yönet posta akışı ayarlarını \> seçerek posta kutusu\> iletme kurallarını görebilirsiniz Email İlet \> Düzenle'yi iletebilirsiniz**.
 
 - Gelen KutusuRule
 

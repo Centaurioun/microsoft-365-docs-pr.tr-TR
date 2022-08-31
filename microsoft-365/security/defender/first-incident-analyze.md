@@ -3,7 +3,8 @@ title: Adım 1. İlk olayınızı önceliklendirme ve analiz etme
 description: Microsoft 365 Defender'deki ilk olayınızın analizini önceliklendirme ve analize başlama.
 keywords: olaylar, uyarılar, araştırma, bağıntı, saldırı, makineler, cihazlar, kullanıcılar, kimlikler, kimlik, posta kutusu, e-posta, 365, Microsoft, m365, olay yanıtı, siber saldırı
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,17 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-firstincident
+- highpri
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 596966c7c1975ebb8f20b306be5e4ab0a34bd99e
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: b930181681d5849af4e99bf41d2b8643329175a5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893649"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482240"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Adım 1. İlk olayınızı önceliklendirme ve analiz etme
 

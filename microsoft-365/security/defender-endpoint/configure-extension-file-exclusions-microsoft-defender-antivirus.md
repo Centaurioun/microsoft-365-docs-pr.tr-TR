@@ -2,8 +2,8 @@
 title: Uzantı, ad veya konuma göre dışlamaları yapılandırma ve doğrulama
 description: Dosyaları, dosya uzantılarına, dosya adlarına veya konumlarına göre Microsoft Defender Virüsten Koruma taramalarının dışında tutun.
 keywords: dışlamalar, dosyalar, uzantı, dosya türü, klasör adı, dosya adı, taramalar
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: thdoucet
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 26338be73c034c02ed285b7098d49547c4f8b54a
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 49e6a54928c4459f7b19a1eb766c63cd6a182f5f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388781"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481932"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Dosya uzantısına ve klasör konumuna göre dışlamaları yapılandırma ve doğrulama
 

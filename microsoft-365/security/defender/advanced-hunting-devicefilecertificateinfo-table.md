@@ -4,7 +4,8 @@ description: Gelişmiş tehdit avcılığı şemasının DeviceFileCertificateIn
 keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, dijital imza, sertifika, dosya imzalama, DeviceFileCertificateInfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 019ca8eced735b8a9e24c2b0f3e3baae37757875
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 71a2e57abe26ebb84954fda0ab0867a2ec7e23d1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554565"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483552"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 

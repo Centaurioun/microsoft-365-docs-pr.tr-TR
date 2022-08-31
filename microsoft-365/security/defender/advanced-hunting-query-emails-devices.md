@@ -1,10 +1,11 @@
 ---
 title: Gelişmiş tehdit avcılığı ile cihazlar, e-postalar, uygulamalar ve kimlikler arasında tehditleri avlama
 description: Cihazlar, e-postalar, uygulamalar ve kimlikleri kapsayan yaygın tehdit avcılığı senaryolarını ve örnek sorguları inceleyin.
-keywords: gelişmiş tehdit avcılığı, Office365 verileri, Windows cihazlar, Office365 e-postaları normalleştirme, e-postalar, uygulamalar, kimlikler, tehdit avcılığı, siber tehdit avcılığı, arama, sorgulama, telemetri, Microsoft 365, Microsoft 365 Defender
+keywords: gelişmiş tehdit avcılığı, Office365 verileri, Windows cihazları, Office365 e-postaları normalleştirme, e-postalar, uygulamalar, kimlikler, tehdit avcılığı, siber tehdit avcılığı, arama, sorgu, telemetri, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 0ca9a951ffd561113a806341d25bc1f0661732cc
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 740f9c5e683297f2a4d990cad5fdbc8c6295ed57
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739959"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481866"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Cihazlar, e-postalar, uygulamalar ve kimlikler arasında tehditleri avlama
 
@@ -155,7 +155,7 @@ DeviceInfo
 ```
 
 
-### <a name="example-query-for-macos-devices"></a>macOS cihazlar için örnek sorgu
+### <a name="example-query-for-macos-devices"></a>macOS cihazları için örnek sorgu
 
 Catalina'dan eski bir sürüme sahip macOS çalıştıran tüm cihazları görmek için aşağıdaki örnek sorguyu kullanın.
 

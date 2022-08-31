@@ -3,7 +3,8 @@ title: İşlem merkezinde eylemleri görüntüleme ve yönetme
 description: düzeltme eylemlerini görüntülemek ve yönetmek için İşlem merkezini kullanma
 keywords: işlem, merkez, otomatik hava aracı, otomatik, araştırma, yanıt, düzeltme
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -23,13 +24,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.technology: m365d
-ms.openlocfilehash: 1dc09357f2b16a0d00dc995ff2a9e10285ccb81b
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: b6cd87846b9225ced8a818252ef5b0e90e562470
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050688"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482086"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>İşlem merkezinde eylemleri görüntüleme ve yönetme
 

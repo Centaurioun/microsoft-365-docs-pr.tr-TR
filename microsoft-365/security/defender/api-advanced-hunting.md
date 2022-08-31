@@ -3,7 +3,8 @@ title: Microsoft 365 Defender gelişmiş avcılık API'si
 description: Microsoft 365 Defender gelişmiş tehdit avcılığı API'sini kullanarak gelişmiş avcılık sorguları çalıştırmayı öğrenin
 keywords: Gelişmiş Avcılık, API'ler, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 4b8a8e67bc7bd69b9ae20648ad66eb539101441e
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
+ms.openlocfilehash: 4e0114e2a53a9fd532f49ef5c928e15751a9aa2e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66827190"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482020"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender Gelişmiş avcılık API'si
 

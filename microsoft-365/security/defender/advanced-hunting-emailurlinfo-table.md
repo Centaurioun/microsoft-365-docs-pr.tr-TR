@@ -4,7 +4,8 @@ description: Gelişmiş tehdit avcılığı şemasının EmailUrlInfo tablosunda
 keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, EmailUrlInfo, ağ iletisi kimliği, URL, bağlantı
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 9453a5a7ddb48ff09ca217aa23c5e557d57d00e5
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 7759ac799304e2073b9aee027bf1f71ee0d02ef6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130965"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482130"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -41,7 +41,7 @@ Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi iç
 | Sütun adı | Veri türü | Açıklama |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | Olayın kaydedilildiği tarih ve saat |
-| `NetworkMessageId` | `string` | Microsoft 365 tarafından oluşturulan e-postanın benzersiz tanımlayıcısı |
+| `NetworkMessageId` | `string` | Microsoft 365 tarafından oluşturulan e-posta için benzersiz tanımlayıcı |
 | `Url` | `string` | E-posta konusu, gövdesi veya ekindeki tam URL |
 | `UrlDomain` | `string` | URL'nin etki alanı adı veya ana bilgisayar adı |
 | `ReportId` | `long` | Yinelenen sayacı temel alan olay tanımlayıcısı. Benzersiz olayları tanımlamak için bu sütunun DeviceName ve Timestamp sütunlarıyla birlikte kullanılması gerekir |

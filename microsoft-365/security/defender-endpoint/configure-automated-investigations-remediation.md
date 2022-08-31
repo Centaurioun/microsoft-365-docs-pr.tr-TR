@@ -2,8 +2,8 @@
 title: Otomatik araştırma ve düzeltme özelliklerini yapılandırma
 description: Uç Nokta için Microsoft Defender'de otomatik araştırma ve düzeltme özelliklerinizi ayarlayın.
 keywords: yapılandırma, kurulum, otomatik, araştırma, algılama, uyarılar, düzeltme, yanıt
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 7e94cd14f392eb47a9b747cfb5e5f846f03fdc63
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 09d9860119a7c4aeb8949357b277fb395e09a9c2
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535768"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481910"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de otomatik araştırma ve düzeltme özelliklerini yapılandırma
 
@@ -42,7 +42,7 @@ Otomatik araştırma ve düzeltmeyi yapılandırmak için:
 
 1. Genel yönetici veya güvenlik yöneticisi olarak Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın.
 
-2. Gezinti bölmesinde **Ayarlar'yi** seçin.
+2. Gezinti bölmesinde **Ayarlar'ı** seçin.
 
 3. **Uç noktalar'ı** ve ardından **Gelişmiş özellikler'i** seçin.
 

@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender Virüsten Koruma bulut bloğu zaman aşımı süresini yapılandırma
-description: Microsoft Defender Virüsten Koruma bulut belirlemeyi beklerken bir dosyanın çalışmasını ne kadar süreyle engelleyeceklerini yapılandırabilirsiniz.
+title: Microsoft Defender Virüsten Koruma bulut blok zaman aşımı süresini yapılandırma
+description: Microsoft Defender Virüsten Koruma'nın bulut belirlemeyi beklerken bir dosyanın çalışmasını ne kadar süreyle engelleyeceklerini yapılandırabilirsiniz.
 keywords: Microsoft Defender Virüsten Koruma, kötü amaçlı yazılımdan koruma, güvenlik, defender, bulut, zaman aşımı, blok, nokta, saniye
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,21 +12,21 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0ad46ff70ed2542ebed423a02eba6cc0810a99ca
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: d147ef775d012628ff6e5a4410f800d08a792adb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418772"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481888"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Bulut engelleme zaman aşımı dönemini yapılandırın
 
 **Şunlar için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Virüsten Koruma
 
@@ -43,7 +43,7 @@ Dosyanın [engellendiği](configure-block-at-first-sight-microsoft-defender-anti
 
 ## <a name="specify-the-extended-timeout-period-using-microsoft-endpoint-manager"></a>Microsoft Endpoint Manager kullanarak genişletilmiş zaman aşımı süresini belirtme
 
-[Microsoft Endpoint Manager'da bir uç nokta güvenlik ilkesiyle](/mem/intune/protect/endpoint-security-policy) bulut bloğu zaman aşımı süresini belirtebilirsiniz.
+[Microsoft Endpoint Manager'de bir uç nokta güvenlik ilkesiyle](/mem/intune/protect/endpoint-security-policy) bulut bloğu zaman aşımı süresini belirtebilirsiniz.
 
 1. Endpoint Manager yönetim merkezine ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) gidin ve oturum açın.
 
@@ -51,9 +51,9 @@ Dosyanın [engellendiği](configure-block-at-first-sight-microsoft-defender-anti
 
 3. Virüsten koruma ilkesi seçin (veya oluşturun).
 
-4. **Yapılandırma ayarları** bölümünde **Bulut koruması'nı** genişletin. Ardından, **Microsoft Defender Virüsten Koruma Genişletilmiş Saniye Cinsinden Zaman Aşımı** kutusunda, 1 saniyeden 50 saniyeye kadar olan süreyi saniye cinsinden belirtin. Belirttiğiniz her şey varsayılan 10 saniyeye eklenir.
+4. **Yapılandırma ayarları** bölümünde **Bulut koruması'nı** genişletin. Ardından **, Microsoft Defender Virüsten Koruma Genişletilmiş Zaman Aşımı Saniye cinsinden** kutusunda, 1 saniyeden 50 saniyeye kadar olan süreyi saniye cinsinden belirtin. Belirttiğiniz her şey varsayılan 10 saniyeye eklenir.
 
-5. (Bu adım isteğe bağlıdır) Virüsten koruma ilkenizde başka değişiklikler yapın. (Yardıma mı ihtiyacınız var? bkz[. Microsoft Intune'da Microsoft Defender Virüsten Koruma ilkesi için Ayarlar](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
+5. (Bu adım isteğe bağlıdır) Virüsten koruma ilkenizde başka değişiklikler yapın. (Yardıma mı ihtiyacınız var? Bkz[. Microsoft Intune'de Microsoft Defender Virüsten Koruma ilkesi ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
 
 6. **İleri'yi** seçin ve ilkenizi yapılandırmayı tamamlayın.
 
@@ -67,7 +67,7 @@ Bulut denetimleri için genişletilmiş bir zaman aşımı belirtmek üzere grup
 
 3. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na** gidin ve **yönetim şablonları'nı** seçin.
 
-3. **MpEngine** **Microsoft Defender Virüsten Koruma bileşenleri** \> **Windows** \> için ağacı genişletin.
+3. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **MpEngine** olarak genişletin.
 
 4. **Genişletilmiş bulut denetimini yapılandır'a** çift tıklayın ve seçeneğin etkinleştirildiğinden emin olun. 
 
@@ -76,7 +76,7 @@ Bulut denetimleri için genişletilmiş bir zaman aşımı belirtmek üzere grup
 5. **Tamam**'ı seçin.
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
