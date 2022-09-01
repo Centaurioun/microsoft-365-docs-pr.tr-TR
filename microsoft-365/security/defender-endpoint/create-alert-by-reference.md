@@ -2,7 +2,7 @@
 title: Olay API'sinden uyarı oluşturma
 description: Uç Nokta için Microsoft Defender'da Olay'ın üzerinde yeni bir Uyarı oluşturmak için Uyarı oluşturma API'sini kullanmayı öğrenin.
 keywords: api'ler, graf api'si, desteklenen API'ler, alma, uyarı, bilgi, kimlik
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 9a211034b164381226df0d5d79d0d709db3c2e98
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 6b8e8077a06ba811d9e969766ea09c3547595b56
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326749"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67498995"
 ---
 # <a name="create-alert-api"></a>Uyarı API'si oluşturma
 

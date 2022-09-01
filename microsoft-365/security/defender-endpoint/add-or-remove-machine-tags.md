@@ -2,7 +2,7 @@
 title: Makine Etiketleri API'sini Ekleme veya Kaldırma
 description: Uç Nokta için Microsoft Defender'da makine etiketi eklemek veya kaldırmak için Makine etiketleri ekleme veya kaldırma API'sini kullanmayı öğrenin.
 keywords: api'ler, graf api'leri, desteklenen API'ler, etiketler, makine etiketleri
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
+ms.subservice: m365d
 ms.custom: api
-ms.openlocfilehash: f5a4a232e7752ae990c1f32ca69653c45baecb8b
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 39c1024a047cefbd372e4668977f4c68132c103c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328111"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67498981"
 ---
-# <a name="add-or-remove-machine-tags-api"></a>Makine Etiketleri API'sini Ekleme veya Kaldırma
+# <a name="add-or-remove-machine-tags-api"></a>Makine etiketleri API'sini ekleme veya kaldırma
 
 **Şunlar için geçerlidir:**
 
@@ -49,7 +49,7 @@ Belirli bir [Makineye](machine.md) etiket ekler veya kaldırır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Uç Nokta API'leri için Defender'ı kullanma](apis-intro.md)
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi için bkz [. Uç Nokta API'leri için Defender'ı kullanma](apis-intro.md).
 
 İzin türü|Izni|İzin görünen adı
 :---|:---|:---
@@ -59,8 +59,8 @@ Temsilci (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma ve 
 > [!NOTE]
 > Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 >
-> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Güvenlik ayarını yönet'. Daha fazla bilgi için (Daha fazla bilgi için bkz. [Rolleri oluşturma ve yönetme](user-roles.md) )
-> - Kullanıcının makine grubu ayarlarına göre makineye erişimi olmalıdır (Daha fazla bilgi için bkz [. Makine gruplarını oluşturma ve yönetme](machine-groups.md) )
+> - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Güvenlik ayarını yönet'. Daha fazla bilgi için (Daha fazla bilgi için bkz. [Rolleri oluşturma ve yönetme](user-roles.md) ).
+> - Kullanıcının makine grubu ayarlarına göre makineye erişimi olmalıdır (Daha fazla bilgi için bkz. [Makine gruplarını oluşturma ve yönetme](machine-groups.md) ).
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -88,9 +88,7 @@ Eylem|Enum|Ekle veya Kaldır'ı seçin. İzin verilen değerler şunlardır: 'Ek
 
 Başarılı olursa, bu yöntem 200 - Tamam yanıt kodunu ve yanıt gövdesindeki güncelleştirilmiş Makine'yi döndürür.
 
-## <a name="example"></a>Örnek
-
-### <a name="request"></a>Istek
+## <a name="example-request"></a>Örnek İstek
 
 Makine etiketi ekleyen bir istek örneği aşağıda verilmiştir.
 
@@ -105,4 +103,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 }
 ```
 
-- Makine etiketini kaldırmak için eylem'i istek gövdesinde 'Ekle' yerine 'Kaldır' olarak ayarlayın.
+Makine etiketini kaldırmak için eylem'i istek gövdesinde 'Ekle' yerine 'Kaldır' olarak ayarlayın.

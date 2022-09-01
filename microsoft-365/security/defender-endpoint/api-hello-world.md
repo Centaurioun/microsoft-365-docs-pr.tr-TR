@@ -3,7 +3,7 @@ title: Uç Nokta için Microsoft Defender API için Merhaba Dünya
 ms.reviewer: ''
 description: Uç Nokta için Microsoft Defender API'sine 'Merhaba dünya' stili api çağrısı oluşturma.
 keywords: api'ler, desteklenen api'ler, gelişmiş avcılık, sorgu, microsoft defender atp, uç nokta için microsoft defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 2805736c3d612716f3b99ba0f97fc74a0070bc68
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: a240f647e1e1cead26bab384e112e14a26dea2d3
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328046"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67499002"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Uç Nokta için Microsoft Defender API - Merhaba Dünya
 

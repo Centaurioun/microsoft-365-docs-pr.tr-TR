@@ -3,7 +3,8 @@ title: Olay API'si alma
 description: Microsoft 365 Defender'da tek bir olay almak için Olayları alma API'sini kullanmayı öğrenin.
 keywords: api'ler, graf api'leri, desteklenen API'ler, alma, dosya, karma
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: m365d
 ms.custom: api
-ms.openlocfilehash: af54daf82ca8f4fbd50c5aaeafd4482f2ce6b0ca
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: adfe4423304d7827cef9fc4a0c49a1499d5302a1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67329101"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67499090"
 ---
 # <a name="get-incident-information-api"></a>Olay bilgileri API'si alma
 

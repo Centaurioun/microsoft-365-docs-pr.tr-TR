@@ -4,7 +4,7 @@ description: Canlı yanıt kitaplığından bir dosyayı silmeyi öğrenin.
 keywords: api'ler, graf api'leri, desteklenen API'ler, kitaplıktan silme
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,14 +18,14 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: reference
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 97a2a2152a60ff542cb946c4283fe3f26c4b9c8e
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: da4da672f3ae513a60f5d4a9fb7134c7b36bc8df
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874140"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67499046"
 ---
 #  <a name="delete-a-file-from-the-live-response-library"></a>Canlı yanıt kitaplığından dosya silme  
 
@@ -36,7 +36,7 @@ ms.locfileid: "65874140"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+>Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -52,7 +52,7 @@ Canlı yanıt kitaplığından bir dosyayı silin.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi için bkz. [Kullanmaya başlayın](apis-intro.md).
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz. [Kullanmaya başlama](apis-intro.md).
 
 | İzin türü                    | Izni     | İzin görünen adı        |
 |------------------------------------|----------------|--------------------------------|
