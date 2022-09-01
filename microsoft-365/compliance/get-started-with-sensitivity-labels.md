@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuzun verilerini korumaya yardımcı olmak için duyarlılık etiketlerini kullanan yöneticiler, lisans gereksinimleri ve yaygın senaryolar için açıklayıcı adımlar.
-ms.openlocfilehash: 2a82a788ae766050c663d3d35332470aa48d9a20
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: c796bf283873e86a569e70d30fb7944a20bd7e2e
+ms.sourcegitcommit: d60d78e6a05845747af0ad25131c7e526d58064d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069657"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67498449"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Hassasiyet etiketlerini kullanmaya başlama
 
@@ -127,6 +127,8 @@ Temel yönergeler için aşağıdaki kaynakları da kullanabilirsiniz:
 
 - [Office'te dosyalarınıza ve e-postalarınıza duyarlılık etiketlerini otomatik olarak uygulama veya önerme](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [Duyarlılık etiketlerini otomatik olarak uygulama veya önerme ile ilgili bilinen sorunlar](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
+
+- [Office dosyalarından korumalı PDF'ler oluşturma](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4)
 
 - [Azure Information Protection birleşik etiketleme kullanıcı kılavuzu](/azure/information-protection/rms-client/clientv2-user-guide)
 

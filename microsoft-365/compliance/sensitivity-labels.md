@@ -22,12 +22,12 @@ description: Microsoft Purview Bilgi Koruması duyarlılık etiketlerinin, depol
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2f1940c88700a6039bde0af088c161d33df73bdd
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 97c507a9e3cae483018254a150bb9f8b2689dbf9
+ms.sourcegitcommit: d60d78e6a05845747af0ad25131c7e526d58064d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306734"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67498471"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Duyarlılık etiketleri hakkında bilgi edinin
 
@@ -187,7 +187,7 @@ Bir etiket ilkesi yapılandırırken şunları yapabilirsiniz:
 - Etiketlenmemiş belgeler ve e-postalar, yeni kapsayıcılar ([Microsoft Teams, Microsoft 365 grupları ve SharePoint siteleri için duyarlılık etiketlerini etkinleştirdiğinizde) ve](sensitivity-labels-teams-groups-sites.md) ayrıca [Power BI içeriği](/power-bi/admin/service-security-sensitivity-label-default-label-policy) için varsayılan bir etiket **belirtin**. Dört öğe türü için de aynı etiketi veya farklı etiketleri belirtebilirsiniz. Kullanıcılar, uygulanan varsayılan duyarlılık etiketini içeriklerinin veya kapsayıcılarının duyarlılığıyla daha iyi eşleşecek şekilde değiştirebilir.
     
     > [!NOTE]
-    > Yerleşik etiketler kullanan Office uygulamalarının önizlemesinde: Bu ayar artık kullanıcılar tarafından açıldığında mevcut belgeleri ve yeni belgeleri destekler. Davranıştaki bu değişiklik, Azure Information Protection birleşik etiketleme istemcisiyle eşlik sağlar. Uygulama başına dağıtım ve en düşük sürümler hakkında daha fazla bilgi için Word, Excel ve [PowerPoint'in yetenekler tablosuna](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) bakın.
+    > Mevcut belgeler için varsayılan etiketleme, Office uygulamaları için yerleşik etiketleme için yeni desteklenir. Uygulama başına dağıtım ve en düşük sürümler hakkında daha fazla bilgi için Word, Excel ve [PowerPoint'in yetenekler tablosuna](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) bakın.
     
     Tüm içeriğinize uygulanmasını istediğiniz temel koruma ayarlarını ayarlamak için varsayılan bir etiket kullanmayı göz önünde bulundurun. Ancak, kullanıcı eğitimi ve diğer denetimler olmadan bu ayar yanlış etiketlemeye de neden olabilir. Belgelere varsayılan etiket olarak şifreleme uygulayan bir etiket seçmek genellikle iyi bir fikir değildir. Örneğin, birçok kuruluşun şifrelemeyi destekleyen uygulamaları olmayan veya yetkilendirilebilen bir hesap kullanamayan dış kullanıcılarla belge göndermesi ve paylaşması gerekir. Bu senaryo hakkında daha fazla bilgi için bkz. [Şifrelenmiş belgeleri dış kullanıcılarla paylaşma](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
     
