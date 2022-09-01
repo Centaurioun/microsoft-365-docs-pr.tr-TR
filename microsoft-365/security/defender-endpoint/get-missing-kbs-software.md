@@ -2,7 +2,7 @@
 title: Yazılım kimliğine göre eksik KB'leri alma
 description: Eksik güvenlik güncelleştirmelerini yazılım kimliğine göre alır
 keywords: apis, graph api, desteklenen API'ler, get, list, file, information, software id, threat & vulnerability management api, Uç Nokta için Microsoft Defender tvm api, mdvm, Microsoft Defender Güvenlik Açığı Yönetimi
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: d587951bd201e921f48244a823a11747ceed776a
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 82b34971a7eeb92109ed689dd3d69d49a85164cd
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67342931"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520489"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>Yazılım kimliğine göre eksik KB'leri alma
 

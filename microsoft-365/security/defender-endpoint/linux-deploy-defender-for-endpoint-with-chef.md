@@ -2,7 +2,7 @@
 title: Chef ile Linux'ta Uç Nokta için Defender'ı Dağıtma
 description: Chef ile Linux'ta Uç Nokta için Defender'ı dağıtmayı öğrenin
 keywords: microsoft, defender, atp, linux, scans, virüsten koruma, uç nokta için microsoft defender (linux)
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 8f610821b6c0bef7694d6ce8acd256f59f761f06
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.subservice: mde
+ms.openlocfilehash: 7d1e1a577e6e3c4077035cff7a500f4d60fe4b45
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872950"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519852"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Uç Nokta için Defender’ı Chef ile Linux üzerinde dağıtın
 

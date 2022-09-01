@@ -1,8 +1,8 @@
 ---
-title: Uç nokta (Linux) için Microsoft Defender güncelleştirmesini zamanlama
-description: Kuruluş varlıklarını daha iyi korumak için Uç Nokta (Linux) için Microsoft Defender güncelleştirmesini zamanlamayı öğrenin.
-keywords: microsoft, defender, Endpoint için Microsoft Defender, linux, taramalar, virüsten koruma, uç nokta için Microsoft Defender (linux)
-ms.prod: m365-security
+title: Uç Nokta için Microsoft Defender güncelleştirmesini zamanlama (Linux)
+description: Kuruluşunuzun varlıklarını daha iyi korumak için Uç Nokta için Microsoft Defender (Linux) güncelleştirmesini zamanlamayı öğrenin.
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, linux, scans, virüsten koruma, uç nokta için microsoft defender (linux)
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,24 +13,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 6fb3141b33948c5c452096c83a2f02657c199575
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.subservice: mde
+ms.openlocfilehash: 263ffb74d433ba75fa61a59c75b1132a845f2cef
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450556"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519720"
 ---
-# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Uç Nokta (Linux) için Microsoft Defender güncelleştirmesini zamanlama
+# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Uç Nokta için Microsoft Defender (Linux) güncelleştirmelerini zamanlayın
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Linux'ta Uç Nokta için Microsoft Defender'da bir güncelleştirme çalıştırmak için bkz. [Linux'ta Uç Nokta için Microsoft Defender güncelleştirmelerini dağıtma](/microsoft-365/security/defender-endpoint/linux-updates).
+Linux'ta Uç Nokta için Microsoft Defender bir güncelleştirme çalıştırmak için bkz. [Linux'ta Uç Nokta için Microsoft Defender güncelleştirmelerini dağıtma](/microsoft-365/security/defender-endpoint/linux-updates).
 
-Linux (ve Unix), zamanlanmış görevleri çalıştırabilecek **crontab** (Görev Zamanlayıcı gibi) adlı bir araciya sahip.
+Linux (ve Unix), zamanlanmış görevleri çalıştırabilmek için **crontab** (Görev Zamanlayıcı'ya benzer) adlı bir arağa sahiptir.
 
-## <a name="pre-requisite"></a>Önkul
+## <a name="pre-requisite"></a>Ön koşul
 
 > [!NOTE]
 > Tüm saat dilimlerinin listesini almak için aşağıdaki komutu çalıştırın: `timedatectl list-timezones`
@@ -46,19 +46,19 @@ Linux (ve Unix), zamanlanmış görevleri çalıştırabilecek **crontab** (Gör
 
 Aşağıdaki komutları kullanın:
 
-### <a name="backup-crontab-entries"></a>Çapraz girdileri yedekleme
+### <a name="backup-crontab-entries"></a>Crontab girdilerini yedekleme
 
 ```bash
 sudo crontab -l > /var/tmp/cron_backup_201118.dat
 ```
 
 > [!NOTE]
-> Burada 201118 == YYAAAA
+> Where 201118 == YYMMDD
 
 > [!TIP]
-> Düzenlemeden veya kaldırmadan önce bunu yapmak.
+> Düzenlemeden veya kaldırmadan önce bunu yapın.
 
-Kırpmayı düzenlemek ve kök kullanıcı olarak yeni bir iş eklemek için:
+Crontab'ı düzenlemek ve kök kullanıcı olarak yeni bir iş eklemek için:
 
 ```bash
 sudo crontab -e
@@ -67,7 +67,7 @@ sudo crontab -e
 > [!NOTE]
 > Varsayılan düzenleyici VIM'dir.
 
-Şunları da görüyor olabileceğiniz gibi:
+Şunu görebilirsiniz:
 
 ```output
 0****/etc/opt/microsoft/mdatp/logrorate.sh
@@ -79,7 +79,7 @@ Ve
 02**sat /bin/mdatp scan quick>~/mdatp_cron_job.log
 ```
 
-Bkz [. Uç Nokta (Linux) için Microsoft Defender ile tarama zamanlama](linux-schedule-scan-mde.md)
+Bkz[. Uç Nokta için Microsoft Defender ile tarama zamanlama (Linux)](linux-schedule-scan-mde.md)
 
 "Ekle" tuşuna basın
 
@@ -89,7 +89,7 @@ Aşağıdaki girdileri ekleyin:
 CRON_TZ=America/Los_Angeles
 ```
 
-> #<a name="rhel-and-variants-centos-and-oracle-linux"></a>! RHEL ve çeşitlemeler (CentOS ve Oracle Linux)
+> #<a name="rhel-and-variants-centos-and-oracle-linux"></a>! RHEL ve varyantlar (CentOS ve Oracle Linux)
 >
 > ```bash
 > 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp -y >> ~/mdatp_cron_job.log
@@ -108,20 +108,20 @@ CRON_TZ=America/Los_Angeles
 > ```
 
 > [!NOTE]
-> Yukarıdaki örneklerde, bunu Pazar günleri 00 dakika, 6 saat (24 saat biçiminde saat), ayın herhangi bir günü, herhangi bir ayın herhangi bir günü olarak ayarlarız. [$(date +\%d) -le 15] == 15. gün (3. hafta) eşit veya daha küçük olmadıkça çalışmaz. Yani, ayın 3'üncü Pazarlarında(7) sabah 6:00'da çalıştırılacaktır. Pasifik (UTC -8).
+> Yukarıdaki örneklerde bunu 00 dakika, 06:00 (24 saat biçiminde saat), ayın herhangi bir günü, herhangi bir ay ve Pazar günleri olarak ayarlıyoruz. [$(date +\%d) -le 15] == 15. güne (3. hafta) eşit veya daha az değilse çalışmaz. Yani ayın her 3.Pazar günü (7) saat 06:00'da çalışacaktır. Pasifik (UTC -8).
 
 "Esc" tuşuna basın
 
-Çift tırnak içine "`:wq`" yazın.
+Çift tırnak işaretine "`:wq`" yazın.
 
 > [!NOTE]
 > w == write, q == quit
 
-İşlerinizi görüntülemek için `sudo crontab -l`
+Cron işlerinizi görüntülemek için `sudo crontab -l`
 
-:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="Linux'ta Uç Nokta için Defender Güncelleştirmesi.":::
+:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="Linux'ta Uç Nokta için Defender'a güncelleştirme.":::
 
-İş ilanlarını incelemek için:
+Cron iş çalıştırmalarını incelemek için:
 
 ```bash
 sudo grep mdatp /var/log/cron
@@ -133,35 +133,35 @@ mdatp_cron_job.log dosyasını incelemek için
 sudo nano mdatp_cron_job.log
 ```
 
-## <a name="for-those-who-use-ansible-chef-or-puppet"></a>Ansible,Sina veya Yalçın'i kullananlar için
+## <a name="for-those-who-use-ansible-chef-or-puppet"></a>Ansible, Chef veya Puppet kullananlar için
 
 Aşağıdaki komutları kullanın:
 
-### <a name="to-set-cron-jobs-in-ansible"></a>Ansible'da iş kırpmayı ayarlamak için
+### <a name="to-set-cron-jobs-in-ansible"></a>Ansible'da cron işleri ayarlamak için
 
 ```bash
 cron - Manage cron.d and crontab entries
 ```
 
-Daha <https://docs.ansible.com/ansible/latest/modules/cron_module.html> fazla bilgi için bkz.
+Daha fazla bilgi için bkz <https://docs.ansible.com/ansible/latest/modules/cron_module.html> .
 
-### <a name="to-set-crontabs-in-chef"></a>Crontabs in Veya Veya irdele'i ayarlamak için
+### <a name="to-set-crontabs-in-chef"></a>Chef'te crontab'ları ayarlamak için
 
 ```bash
 cron resource
 ```
 
-Daha <https://docs.chef.io/resources/cron/> fazla bilgi için bkz.
+Daha fazla bilgi için bkz <https://docs.chef.io/resources/cron/> .
 
-### <a name="to-set-cron-jobs-in-puppet"></a>Jobs'ta iş kırpmayı ayarlamak için
+### <a name="to-set-cron-jobs-in-puppet"></a>Puppet'da cron işleri ayarlamak için
 
 Kaynak Türü: cron
 
-Daha <https://puppet.com/docs/puppet/5.5/types/cron.html> fazla bilgi için bkz.
+Daha fazla bilgi için bkz <https://puppet.com/docs/puppet/5.5/types/cron.html> .
 
-Çiğdem: Cron işleri ve zamanlanmış görevlerle otomatik oluşturma
+Puppet: Cron işleri ve zamanlanmış görevler ile otomatikleştirme
 
-Daha <https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/> fazla bilgi için bkz.
+Daha fazla bilgi için bkz <https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/> .
 
 ## <a name="additional-information"></a>Ek bilgiler
 
@@ -171,58 +171,58 @@ Daha <https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/> 
 man crontab
 ```
 
-### <a name="to-get-a-list-of-crontab-file-of-the-current-user"></a>Geçerli kullanıcının çapraz dosyasının listesini almak için
+### <a name="to-get-a-list-of-crontab-file-of-the-current-user"></a>Geçerli kullanıcının crontab dosyasının listesini almak için
 
 ```bash
 crontab -l
 ```
 
-### <a name="to-get-a-list-of-crontab-file-of-another-user"></a>Başka bir kullanıcının çapraz dosyasının listesini almak için
+### <a name="to-get-a-list-of-crontab-file-of-another-user"></a>Başka bir kullanıcının crontab dosyasının listesini almak için
 
 ```bash
 crontab -u username -l
 ```
 
-### <a name="to-backup-crontab-entries"></a>Çapraz girdileri yedeklemek için
+### <a name="to-backup-crontab-entries"></a>Crontab girdilerini yedeklemek için
 
 ```bash
 crontab -l > /var/tmp/cron_backup.dat
 ```
 
 > [!TIP]
-> Düzenlemeden veya kaldırmadan önce bunu yapmak.
+> Düzenlemeden veya kaldırmadan önce bunu yapın.
 
-### <a name="to-restore-crontab-entries"></a>Çapraz girdileri geri yüklemek için
+### <a name="to-restore-crontab-entries"></a>Crontab girdilerini geri yüklemek için
 
 ```bash
 crontab /var/tmp/cron_backup.dat
 ```
 
-### <a name="to-edit-the-crontab-and-add-a-new-job-as-a-root-user"></a>Kırpmayı düzenlemek ve kök kullanıcı olarak yeni iş eklemek için
+### <a name="to-edit-the-crontab-and-add-a-new-job-as-a-root-user"></a>Crontab'ı düzenlemek ve kök kullanıcı olarak yeni bir iş eklemek için
 
 ```bash
 sudo crontab -e
 ```
 
-### <a name="to-edit-the-crontab-and-add-a-new-job"></a>Kırpmayı düzenlemek ve yeni iş eklemek için
+### <a name="to-edit-the-crontab-and-add-a-new-job"></a>Crontab'ı düzenlemek ve yeni bir iş eklemek için
 
 ```bash
 crontab -e
 ```
 
-### <a name="to-edit-other-users-crontab-entries"></a>Diğer kullanıcının çapraz girdilerini düzenlemek için
+### <a name="to-edit-other-users-crontab-entries"></a>Diğer kullanıcının crontab girdilerini düzenlemek için
 
 ```bash
 crontab -u username -e
 ```
 
-### <a name="to-remove-all-crontab-entries"></a>Tüm çapraz girdileri kaldırmak için
+### <a name="to-remove-all-crontab-entries"></a>Tüm crontab girdilerini kaldırmak için
 
 ```bash
 crontab -r
 ```
 
-### <a name="to-remove-other-users-crontab-entries"></a>Diğer kullanıcının çapraz girdilerini kaldırmak için
+### <a name="to-remove-other-users-crontab-entries"></a>Diğer kullanıcının crontab girdilerini kaldırmak için
 
 ```bash
 crontab -u username -r

@@ -3,7 +3,7 @@ title: Yönetim ve API'lere genel bakış
 ms.reviewer: ''
 description: Uç Nokta için Microsoft Defender'deki yönetim araçları ve API kategorileri hakkında bilgi edinin
 keywords: ekleme, api, siem, rbac, access, portal, tümleştirme, araştırma, yanıt, varlıklar, varlık, kullanıcı bağlamı, uygulama bağlamı, akış
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 493f83c3ba2e607a09d89e3570cbd4b0f65f6bfb
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 212a21accc314cc9ff235138eeb2784521a32502
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327255"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67516510"
 ---
 # <a name="overview-of-management-and-apis"></a>Yönetim ve API'lere genel bakış
 

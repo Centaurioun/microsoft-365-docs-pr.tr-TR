@@ -2,7 +2,7 @@
 title: Jamf Pro'da macOS ilkelerinde Uç Nokta için Microsoft Defender ayarlama
 description: Jamf Pro'da macOS ilkelerinde Uç Nokta için Microsoft Defender ayarlamayı öğrenin
 keywords: policies, microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 8d248eef175da6de3e329b4ec9b75b1111c668a6
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.subservice: mde
+ms.openlocfilehash: e0e2fdba969eeb72b13d451da2546c2e440af57e
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824728"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519698"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf Pro'da macOS ilkelerinde Uç Nokta için Microsoft Defender ayarlama
 
@@ -29,10 +29,10 @@ ms.locfileid: "64824728"
 
 **Şunlar için geçerlidir:**
 - [Mac'te Uç Nokta için Defender](microsoft-defender-endpoint-mac.md)
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Bu sayfa Jamf Pro'de macOS ilkelerini ayarlamak için uygulamanız gereken adımlarda size yol gösterir.
+Bu sayfa Jamf Pro'da macOS ilkelerini ayarlamak için uygulamanız gereken adımlarda size yol gösterir.
 
 Aşağıdaki adımları uygulamanız gerekir:
 
@@ -50,7 +50,7 @@ Aşağıdaki adımları uygulamanız gerekir:
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>1. Adım: Uç Nokta için Microsoft Defender ekleme paketini alma
 
-1. [Microsoft 365 Defender](https://security.microsoft.com) Ayarlar > **Uç Noktaları > Ekleme'ye** gidin.
+1. [Microsoft 365 Defender'da](https://security.microsoft.com) **Ayarlar > Uç Noktalar > Ekleme'ye** gidin.
 
 2. İşletim sistemi olarak macOS ve dağıtım yöntemi olarak Mobil Cihaz Yönetimi / Microsoft Intune'yi seçin.
 
@@ -62,13 +62,13 @@ Aşağıdaki adımları uygulamanız gerekir:
 
 5. Dosyayı tercih ettiğiniz konuma kopyalayın. Örneğin, `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.
 
-## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a>2. Adım: Ekleme paketini kullanarak Jamf Pro'de yapılandırma profili oluşturma
+## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a>2. Adım: Ekleme paketini kullanarak Jamf Pro'da yapılandırma profili oluşturma
 
 1. Önceki bölümde yer alan dosyayı `WindowsDefenderATPOnboarding.plist` bulun.
 
    :::image type="content" source="images/plist-onboarding-file.png" alt-text="Windows Defender ATP Ekleme dosyası" lightbox="images/plist-onboarding-file.png":::
 
-2. Jamf Pro oturum açın, **Bilgisayarlar** >  **Yapılandırma Profilleri'ne** gidin ve **Yeni'yi** seçin.
+2. Jamf Pro'da oturum açın, **Bilgisayarlar** > **Yapılandırma Profilleri'ne** gidin ve **Yeni'yi** seçin.
 
    :::image type="content" source="images/jamf-pro-configure-profile.png" alt-text="Yeni bir Jamf Pro panosu oluşturduğunuz sayfa" lightbox="images/jamf-pro-configure-profile.png":::
 
@@ -82,11 +82,11 @@ Aşağıdaki adımları uygulamanız gerekir:
    - Dağıtım Yöntemi: Otomatik Olarak Yükleme
    - Düzey: Bilgisayar Düzeyi
 
-4.  **Uygulama & Özel Ayarlar** sayfasına gidin ve **Upload** >  **Ekle'yi** seçin.
+4.  **Uygulama & Özel Ayarlar** sayfasına gidin ve **Ekle'yi Karşıya Yükle'yi** >  seçin.
 
    :::image type="content" source="images/jamfpro-mac-profile.png" alt-text="Yapılandırma uygulaması ve özel ayarlar" lightbox="images/jamfpro-mac-profile.png":::
 
-5. **Upload Dosya (PLIST dosyası)** öğesini seçin ve **ardından Tercih Etki Alanı'nda** şu değeri girin: `com.microsoft.wdav.atp`.
+5. **Dosyayı Karşıya Yükle 'yi (PLIST dosyası)** seçin ve **ardından Tercih Etki Alanı'nda** şu değeri girin: `com.microsoft.wdav.atp`.
 
    :::image type="content" source="images/jamfpro-plist-upload.png" alt-text="jamfpro plist karşıya yükleme dosyası" lightbox="images/jamfpro-plist-upload.png":::
 
@@ -96,7 +96,7 @@ Aşağıdaki adımları uygulamanız gerekir:
 
    :::image type="content" source="images/jamfpro-plist-file-onboard.png" alt-text="Ekleme dosyası" lightbox="images/jamfpro-plist-file-onboard.png":::
 
-7. **Upload'ı** seçin.
+7. **Karşıya Yükle'yi** seçin.
 
    :::image type="content" source="images/jamfpro-upload-plist.png" alt-text="Karşıya yüklenen plist dosyası" lightbox="images/jamfpro-upload-plist.png":::
 
@@ -124,7 +124,7 @@ Aşağıdaki adımları uygulamanız gerekir:
 
 ## <a name="step-3-configure-microsoft-defender-for-endpoint-settings"></a>3. Adım: Uç Nokta için Microsoft Defender ayarlarını yapılandırma
 
-UÇ NOKTA IÇIN MICROSOFT DEFENDER yapılandırmasının tek tek ayarlarını düzenlemek için JAMF Pro GUI kullanabilir veya metin düzenleyicisinde bir yapılandırma Plist'i oluşturup JAMF Pro'e yükleyerek eski yöntemi kullanabilirsiniz.
+JAMF Pro GUI kullanarak Uç Nokta için Microsoft Defender yapılandırmasının tek tek ayarlarını düzenleyebilir veya metin düzenleyicisinde bir yapılandırma Plist'i oluşturup JAMF Pro'ya yükleyerek eski yöntemi kullanabilirsiniz.
 
 **Tercih Etki Alanı** olarak tam `com.microsoft.wdav` olarak kullanmanız gerektiğini unutmayın Uç Nokta için Microsoft Defender yalnızca bu adı kullanır ve `com.microsoft.wdav.ext` yönetilen ayarlarını yükler!
 
@@ -148,15 +148,15 @@ UÇ NOKTA IÇIN MICROSOFT DEFENDER yapılandırmasının tek tek ayarlarını d�
     - Düzey: Bilgisayar Düzeyi (varsayılan)
     - Dağıtım Yöntemi: Otomatik Olarak Yükle (varsayılan)
 
-3. **Uygulama & Özel Ayarlar** sekmesine gidin, **Dış Uygulamalar'ı** seçin, Ekle'ye tıklayın ve tercih etki alanında kullanmak üzere **Kaynak olarak Özel Şema'yı** kullanın.
+3. **Uygulama & Özel Ayarlar** sekmesine gidin, **Dış Uygulamalar'ı** seçin, **Ekle'ye** tıklayın ve tercih etki alanında kullanmak üzere **Kaynak olarak Özel Şema'yı** kullanın.
 
    :::image type="content" source="images/4137189bc3204bb09eed3aabc41afd78.png" alt-text="Özel şema ekleme" lightbox="images/4137189bc3204bb09eed3aabc41afd78.png":::
 
-4. Tercih Etki Alanı olarak girin`com.microsoft.wdav`, **Şema Ekle'ye** tıklayın ve 1. Adımda indirilen schema.json dosyasını **Upload**. **Kaydet**'e tıklayın.
+4. Tercih Etki Alanı olarak girin `com.microsoft.wdav` , **Şema Ekle'ye** tıklayın ve 1. Adımda indirilen schema.json dosyasını **karşıya yükleyin** . **Kaydet**'e tıklayın.
 
-   :::image type="content" source="images/a6f9f556037c42fabcfdcb1b697244cf.png" alt-text="şemayı Upload" lightbox="images/a6f9f556037c42fabcfdcb1b697244cf.png":::
+   :::image type="content" source="images/a6f9f556037c42fabcfdcb1b697244cf.png" alt-text="Şemayı karşıya yükleme" lightbox="images/a6f9f556037c42fabcfdcb1b697244cf.png":::
 
-5. Desteklenen tüm Uç Nokta için Microsoft Defender yapılandırma ayarlarını aşağıda **, Tercih Etki Alanı Özellikleri** altında görebilirsiniz. Yönetilmesini istediğiniz ayarları seçmek için **Özellikler ekle/kaldır'a** tıklayın ve değişikliklerinizi kaydetmek için **Tamam'a** tıklayın. (seçili olmayan Ayarlar yönetilen yapılandırmaya dahil edilmeyecektir; son kullanıcı bu ayarları makinelerinde yapılandırabilecektir.)
+5. Desteklenen tüm Uç Nokta için Microsoft Defender yapılandırma ayarlarını aşağıda **, Tercih Etki Alanı Özellikleri** altında görebilirsiniz. Yönetilmesini istediğiniz ayarları seçmek için **Özellikler ekle/kaldır'a** tıklayın ve değişikliklerinizi kaydetmek için **Tamam'a** tıklayın. (Seçili olmayan ayarlar yönetilen yapılandırmaya dahil edilmeyecektir; son kullanıcı bu ayarları makinelerinde yapılandırabilecektir.)
 
    :::image type="content" source="images/817b3b760d11467abe9bdd519513f54f.png" alt-text="Seçilen yönetilen ayarlar" lightbox="images/817b3b760d11467abe9bdd519513f54f.png":::
 
@@ -181,7 +181,7 @@ UÇ NOKTA IÇIN MICROSOFT DEFENDER yapılandırmasının tek tek ayarlarını d�
     :::image type="content" source="images/dd55405106da0dfc2f50f8d4525b01c8.png" alt-text="Yapılandırma ayarlarını tamamladığınız sayfa" lightbox="images/dd55405106da0dfc2f50f8d4525b01c8.png":::
 
 Uç Nokta için Microsoft Defender zaman içinde yeni ayarlar ekler. Bu yeni ayarlar şemaya eklenir ve github'da yeni bir sürüm yayımlanır.
-Güncelleştirmelere sahip olmak için yapmanız gereken tek şey, **uygulama & Özel Ayarlar** sekmesinde güncelleştirilmiş bir şema indirmek, var olan yapılandırma profilini **düzenlemek ve Şemayı düzenlemektir**.
+Güncelleştirmelere sahip olmak için yapmanız gereken tek şey, **Uygulama & Özel Ayarlar** sekmesinde güncelleştirilmiş bir şemayı indirmek, mevcut yapılandırma profilini **düzenlemek ve Şemayı düzenle'yi düzenlemektir**.
 
 ### <a name="legacy-method"></a>Eski yöntem
 
@@ -332,15 +332,15 @@ Güncelleştirmelere sahip olmak için yapmanız gereken tek şey, **uygulama & 
 
     :::image type="content" source="images/3160906404bc5a2edf84d1d015894e3b.png" alt-text="MDATP MDAV yapılandırma ayarları" lightbox="images/3160906404bc5a2edf84d1d015894e3b.png":::
 
-5. **Uygulama & Özel Ayarlar** **Yapılandır'ı** seçin.
+5. **Uygulama & Özel Ayarlar'da** **Yapılandır'ı** seçin.
 
    :::image type="content" source="images/e1cc1e48ec9d5d688087b4d771e668d2.png" alt-text="Uygulama ve özel ayarlar" lightbox="images/e1cc1e48ec9d5d688087b4d771e668d2.png":::
 
-6. **Upload Dosyası (PLIST dosyası) öğesini** seçin.
+6. **Dosyayı Karşıya Yükle (PLIST dosyası)'** ı seçin.
 
    :::image type="content" source="images/6f85269276b2278eca4bce84f935f87b.png" alt-text="Yapılandırma ayarları plist dosyası" lightbox="images/6f85269276b2278eca4bce84f935f87b.png":::
 
-7. **Tercihler Etki Alanı** alanına yazın `com.microsoft.wdav`ve **PLIST Dosyası'Upload** seçin.
+7. **Tercihler Etki Alanı** alanına yazın `com.microsoft.wdav`ve **ardından PLIST Dosyasını Karşıya Yükle'yi** seçin.
 
    :::image type="content" source="images/db15f147dd959e872a044184711d7d46.png" alt-text="Yapılandırma ayarları tercihleri etki alanı" lightbox="images/db15f147dd959e872a044184711d7d46.png":::
 
@@ -352,7 +352,7 @@ Güncelleştirmelere sahip olmak için yapmanız gereken tek şey, **uygulama & 
 
    :::image type="content" source="images/98acea3750113b8dbab334296e833003.png" alt-text="mdatpmdav yapılandırma ayarları" lightbox="images/98acea3750113b8dbab334296e833003.png":::
 
-10. **Upload'ı** seçin.
+10. **Karşıya Yükle'yi** seçin.
 
     :::image type="content" source="images/0adb21c13206861ba9b30a879ade93d3.png" alt-text="Yapılandırma ayarı karşıya yükleme" lightbox="images/0adb21c13206861ba9b30a879ade93d3.png":::
 
@@ -418,7 +418,7 @@ Bu adımlar macOS 10.15 (Catalina) veya daha yeni sürümler için geçerlidir.
 
         :::image type="content" source="images/7f9138053dbcbf928e5182ee7b295ebe.png" alt-text="Yapılandırma ayarları mdatpmdav bildirim tepsisi" lightbox="images/7f9138053dbcbf928e5182ee7b295ebe.png":::
 
-    - Sekme **Bildirimleri'ne** tıklayın, Bir kez daha **ekle'ye** tıklayın, aşağı kaydırarak **Yeni Bildirimler Ayarlar**
+    - Sekme **Bildirimleri'ne** tıklayın, Bir kez daha **ekle'ye** tıklayın, ekranı aşağı kaydırarak **Yeni Bildirimler Ayarları'na** gidin
         - **Paket Kimliği**: `com.microsoft.autoupdate.fba`
         - Ayarların geri kalanını yukarıdakilerle aynı değerlerle yapılandırın
 
@@ -481,13 +481,13 @@ Bu adımlar macOS 10.15 (Catalina) veya daha yeni sürümler için geçerlidir.
     - Dağıtım Yöntemi: Otomatik Olarak Yükle(varsayılan)
     - Düzey: Bilgisayar Düzeyi(varsayılan)
 
-5. **Uygulama & Özel Ayarlar** **Yapılandır'ı** seçin.
+5. **Uygulama & Özel Ayarlar'da** **Yapılandır'ı** seçin.
 
    :::image type="content" source="images/1f72e9c15eaafcabf1504397e99be311.png" alt-text="Yapılandırma ayarı uygulaması ve özel ayarlar" lightbox="images/1f72e9c15eaafcabf1504397e99be311.png":::
 
-6. **Upload Dosyası (PLIST dosyası) öğesini** seçin.
+6. **Dosyayı Karşıya Yükle (PLIST dosyası)'** ı seçin.
 
-7. **Tercih Etki Alanı** alanına şunu girin: `com.microsoft.autoupdate2`ve **ardından PLIST Dosyası'Upload** seçin.
+7. **Tercih Etki Alanı** alanına şunu girin: `com.microsoft.autoupdate2`ve **ardından PLIST Dosyasını Karşıya Yükle'yi** seçin.
 
    :::image type="content" source="images/1213872db5833aa8be535da57653219f.png" alt-text="Yapılandırma ayarı tercih etki alanı" lightbox="images/1213872db5833aa8be535da57653219f.png":::
     
@@ -500,7 +500,7 @@ Bu adımlar macOS 10.15 (Catalina) veya daha yeni sürümler için geçerlidir.
 
    :::image type="content" source="images/a26bd4967cd54bb113a2c8d32894c3de.png" alt-text="mdatpmdavmau ayarları" lightbox="images/a26bd4967cd54bb113a2c8d32894c3de.png":::
 
-10. **Upload'ı** seçin.
+10. **Karşıya Yükle'yi** seçin.
     :::image type="content" source="images/4239ca0528efb0734e4ca0b490bfb22d.png" alt-text="Yapılandırma ayarıyla ilgili dosyanın karşıya yüklenmesi" lightbox="images/4239ca0528efb0734e4ca0b490bfb22d.png":::
 
     :::image type="content" source="images/4ec20e72c8aed9a4c16912e01692436a.png" alt-text="Yapılandırma ayarıyla ilgili dosyanın karşıya yükleme seçeneğinin görüntülendiği sayfa" lightbox="images/4ec20e72c8aed9a4c16912e01692436a.png":::
@@ -613,7 +613,7 @@ Bu adımlar macOS 10.15 (Catalina) veya daha yeni sürümler için geçerlidir.
 
     :::image type="content" source="images/6c8b406ee224335a8c65d06953dc756e.png" alt-text="Yapılandırma ayarı çizimi" lightbox="images/6c8b406ee224335a8c65d06953dc756e.png":::
 
-Alternatif olarak[, fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) dosyasını indirebilir ve [Jamf Pro| kullanarak Özel Yapılandırma Profilleri Dağıtma bölümünde açıklandığı gibi JAMF Yapılandırma Profillerine yükleyebilirsiniz Yöntem 2: Jamf Pro yapılandırma profilini Upload](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+Alternatif olarak [, fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) dosyasını indirebilir ve [Jamf Pro kullanarak Özel Yapılandırma Profilleri Dağıtma bölümünde açıklandığı gibi JAMF Yapılandırma Profillerine yükleyebilirsiniz| Yöntem 2: Jamf Pro'ya yapılandırma profili yükleyin](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ## <a name="step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint"></a>7. Adım: Uç Nokta için Microsoft Defender için Çekirdek uzantısını onaylama
 
@@ -667,7 +667,7 @@ Alternatif olarak[, fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xp
 
     :::image type="content" source="images/1c9bd3f68db20b80193dac18f33c22d0.png" alt-text="Yapılandırma Profilleri ayrıntıları sayfası" lightbox="images/1c9bd3f68db20b80193dac18f33c22d0.png":::
 
-Alternatif olarak[, kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) dosyasını indirebilir ve [Jamf Pro| kullanarak Özel Yapılandırma Profilleri Dağıtma bölümünde açıklandığı gibi JAMF Yapılandırma Profilleri'ne yükleyebilirsiniz Yöntem 2: Jamf Pro yapılandırma profilini Upload](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+Alternatif olarak [, kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) dosyasını indirebilir ve [Jamf Pro kullanarak Özel Yapılandırma Profilleri Dağıtma bölümünde açıklandığı gibi JAMF Yapılandırma Profillerine yükleyebilirsiniz| Yöntem 2: Jamf Pro'ya yapılandırma profili yükleyin](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ## <a name="step-8-approve-system-extensions-for-microsoft-defender-for-endpoint"></a>8. Adım: Uç Nokta için Microsoft Defender için Sistem uzantılarını onaylama
 
@@ -772,7 +772,7 @@ Bu adımlar macOS 10.15 (Catalina) veya daha yeni sürümler için geçerlidir.
 
    :::image type="content" source="images/netext-final.png" alt-text="Yapılandırma ayarları netext - final" lightbox="images/netext-final.png":::
 
-Alternatif olarak, [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) dosyasını indirebilir ve [Jamf Pro| kullanarak Özel Yapılandırma Profilleri Dağıtma bölümünde açıklandığı gibi JAMF Yapılandırma Profilleri'ne yükleyebilirsiniz Yöntem 2: Jamf Pro yapılandırma profilini Upload](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+Alternatif olarak, [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) dosyasını indirebilir ve [Jamf Pro kullanarak Özel Yapılandırma Profilleri Dağıtma bölümünde açıklandığı gibi JAMF Yapılandırma Profillerine yükleyebilirsiniz| Yöntem 2: Jamf Pro'ya yapılandırma profili yükleyin](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>10. Adım: macOS'ta Uç Nokta için Microsoft Defender ile tarama zamanlama
 
@@ -822,7 +822,7 @@ Alternatif olarak, [netfilter.mobileconfig](https://github.com/microsoft/mdatp-x
 
     :::image type="content" source="images/56dac54634d13b2d3948ab50e8d3ef21.png" alt-text="Yapılandırma ayarları için sınırlama sekmesi" lightbox="images/56dac54634d13b2d3948ab50e8d3ef21.png":::
 
-8. **Kaydet**'i seçin. Paket Jamf Pro'a yüklenir.
+8. **Kaydet**'i seçin. Paket Jamf Pro'ya yüklenir.
 
    :::image type="content" source="images/33f1ecdc7d4872555418bbc3efe4b7a3.png" alt-text="Yapılandırma ayarlarıyla ilgili paket için yapılandırma ayarları paketi karşıya yükleme işlemi" lightbox="images/33f1ecdc7d4872555418bbc3efe4b7a3.png":::
 
@@ -855,7 +855,7 @@ Alternatif olarak, [netfilter.mobileconfig](https://github.com/microsoft/mdatp-x
 
     :::image type="content" source="images/8fb4cc03721e1efb4a15867d5241ebfb.png" alt-text="Paketleri yapılandırma seçeneği" lightbox="images/8fb4cc03721e1efb4a15867d5241ebfb.png":::
 
-15. **Microsoft Defender Gelişmiş Tehdit Koruması'nın** yanındaki **Ekle** düğmesini seçin ve Microsoft Defender Virüsten Koruma.
+15. **Microsoft Defender Gelişmiş Tehdit Koruması ve Microsoft Defender Virüsten Koruma'nın** yanındaki **Ekle** düğmesini seçin.
 
     :::image type="content" source="images/526b83fbdbb31265b3d0c1e5fbbdc33a.png" alt-text="MDATP MDA'ya daha fazla ayar ekleme seçeneği" lightbox="images/526b83fbdbb31265b3d0c1e5fbbdc33a.png":::
 

@@ -3,7 +3,7 @@ title: Uç Nokta için Microsoft Defender API'leri aracılığıyla iş ortağı
 ms.reviewer: ''
 description: Kullanıcılarınız adına Uç Nokta için Microsoft Defender program aracılığıyla erişim elde etmek için bir web uygulaması tasarlamayı öğrenin.
 keywords: apis, graph api, desteklenen API'ler, aktör, uyarılar, cihaz, kullanıcı, etki alanı, ip, dosya, gelişmiş avcılık, sorgu
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 8a0a191d3e418b189af029f2c459bed93a0e8c54
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 8d866ee513720b71eaf44bf0682b2e411ee7bcfa
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331917"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520115"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Uç Nokta için Microsoft Defender API'leri aracılığıyla iş ortağı erişimi
 

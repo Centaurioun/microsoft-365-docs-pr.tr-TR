@@ -2,7 +2,7 @@
 title: Kimliğine göre öneri alma
 description: Kimliğine göre bir güvenlik önerisi alır.
 keywords: api'ler, graf api'si, desteklenen API'ler, get, güvenlik önerisi, kimlik, Tehdit ve Güvenlik Açığı Yönetimi Tehdit ve Güvenlik Açığı Yönetimi API'ye göre güvenlik önerisi
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 6983ed109357bef89209c689a12a8e90ea11c797
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 6a1f128d3075da2d5de55208a5f9afd8b61bff97
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344795"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520467"
 ---
 # <a name="get-recommendation-by-id"></a>Kimlikle öneri al
 

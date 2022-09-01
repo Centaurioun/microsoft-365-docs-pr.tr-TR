@@ -2,7 +2,7 @@
 title: Uç Nokta Cihazları için Defender listesindeki cihazları araştırma
 description: Uyarıları, ağ bağlantısı bilgilerini gözden geçirerek, cihaz etiketleri ve grupları ekleyerek ve hizmet durumunu denetleyerek etkilenen cihazları araştırın.
 keywords: cihazlar, etiketler, gruplar, uç nokta, uyarılar kuyruğu, uyarılar, cihaz adı, etki alanı, son görülen, iç IP, etkin uyarılar, tehdit kategorisi, filtreleme, sıralama, uyarıları gözden geçirme, ağ, bağlantı, tür, parola çalan, fidye yazılımı, yararlanma, tehdit, düşük önem derecesi, hizmet durumu
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: f80f33b76ad5061372351ef0c399adabcc8a8c26
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: c1ff7eff6627ed231754dbdf9c31f740e053f154
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384458"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519896"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Uç Nokta için Microsoft Defender Cihazlar listesindeki cihazları araştırma
 

@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender'de canlı yanıt kullanarak cihazlardaki varlıkları araştırma
 description: Araştırma çalışmaları yapmak ve bir cihazda gerçek zamanlı olarak anında yanıt eylemleri gerçekleştirmek için güvenli bir uzak kabuk bağlantısı kullanarak bir cihaza erişin.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 1f387696797d52805495777be0850ebe135fd38a
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.subservice: mde
+ms.openlocfilehash: f25537cc3ccbfc1cf7bc957a56d074755f4852e7
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173115"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519676"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Canlı yanıt kullanarak cihazlardaki varlıkları araştırma
 
@@ -29,7 +29,7 @@ ms.locfileid: "65173115"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimlemek mi istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Canlı yanıt, güvenlik operasyonları ekiplerine uzak kabuk bağlantısı kullanarak bir cihaza (makine olarak da adlandırılır) anında erişim sağlar. Bu size ayrıntılı araştırma çalışmaları yapma ve belirlenen tehditleri anında gerçek zamanlı olarak içermesi için anında yanıt eylemleri gerçekleştirme gücü verir.
 
@@ -42,16 +42,16 @@ Analistler canlı yanıtla aşağıdaki görevlerin tümünü gerçekleştirebil
 - Bir cihazda araştırma çalışması yapmak için temel ve gelişmiş komutları çalıştırın.
 - Kötü amaçlı yazılım örnekleri ve PowerShell betiklerinin sonuçları gibi dosyaları indirin.
 - Arka planda dosyaları indirin (yeni!).
-- PowerShell betiğini veya yürütülebilir dosyasını kitaplığa Upload ve kiracı düzeyindeki bir cihazda çalıştırın.
+- PowerShell betiğini veya yürütülebilir dosyasını kitaplığa yükleyin ve kiracı düzeyinden bir cihazda çalıştırın.
 - Düzeltme eylemlerini gerçekleştirme veya geri alma.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
 Bir cihazda oturum başlatabilmeniz için önce aşağıdaki gereksinimleri karşıladığınızdan emin olun:
 
-- **desteklenen bir Windows sürümünü çalıştırdığınızı doğrulayın**.
+- **Windows'un desteklenen bir sürümünü çalıştırdığınızı doğrulayın**.
 
-  Cihazlar aşağıdaki Windows sürümlerinden birini çalıştırıyor olmalıdır
+  Cihazlar Windows'un aşağıdaki sürümlerinden birini çalıştırıyor olmalıdır
 
   - **Windows 10 & 11**
     - [Sürüm 1909](/windows/whats-new/whats-new-windows-10-version-1909) veya üzeri
@@ -114,7 +114,7 @@ Bir cihazda oturum başlatabilmeniz için önce aşağıdaki gereksinimleri kar�
   Yalnızca uygun izinlerle sağlanan kullanıcılar bir oturum başlatabilir. Rol atamaları hakkında daha fazla bilgi için bkz. [Rol oluşturma ve yönetme](user-roles.md).
 
   > [!IMPORTANT]
-  > Kitaplığa dosya yükleme seçeneği yalnızca "Güvenlik Ayarlar Yönetme" iznine sahip kullanıcılar tarafından kullanılabilir.
+  > Kitaplığa dosya yükleme seçeneği yalnızca "Güvenlik Ayarlarını Yönet" iznine sahip kullanıcılar tarafından kullanılabilir.
   > Düğme, yalnızca temsilci izinlerine sahip kullanıcılar için gri renktedir.
 
   Size verilen role bağlı olarak, temel veya gelişmiş canlı yanıt komutlarını çalıştırabilirsiniz. Kullanıcı izinleri RBAC özel rolü tarafından denetlenmektedir.
@@ -123,14 +123,14 @@ Bir cihazda oturum başlatabilmeniz için önce aşağıdaki gereksinimleri kar�
 
 Bir cihazda canlı yanıt oturumu başlattığınızda bir pano açılır. Pano oturum hakkında aşağıdaki gibi bilgiler sağlar:
 
-- oturumu Who oluşturdunuz
+- Oturumu kim oluşturdu?
 - Oturum başlatıldığında
 - Oturumun süresi
 
 Pano ayrıca aşağıdakilere erişmenizi sağlar:
 
 - Oturumun bağlantısını kes
-- Dosyaları kitaplığa Upload
+- Dosyaları kitaplığa yükleme
 - Komut konsolu
 - Komut günlüğü
 
@@ -157,7 +157,7 @@ Size verilen role bağlı olarak, temel veya gelişmiş canlı yanıt komutları
 
 Aşağıdaki komutlar, **temel** canlı yanıt komutlarını çalıştırma özelliği verilen kullanıcı rolleri için kullanılabilir. Rol atamaları hakkında daha fazla bilgi için bkz. [Rol oluşturma ve yönetme](user-roles.md).
 
-| Komut  | Açıklama  | Windows ve Windows Sunucusu  | macOS  | Linux  |
+| Komut  | Açıklama  | Windows ve Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
 | Cd  | Geçerli dizini değiştirir.  | E  | E  | E  |
 | Cls  | Konsol ekranını temizler.  | E  | E  | E  |
@@ -184,7 +184,7 @@ Aşağıdaki komutlar, **temel** canlı yanıt komutlarını çalıştırma öze
 
 Gelişmiş **canlı yanıt** komutlarını çalıştırma yeteneği verilen kullanıcı rolleri için aşağıdaki komutlar kullanılabilir. Rol atamaları hakkında daha fazla bilgi için bkz. [Rol oluşturma ve yönetme](user-roles.md).
 
-| Komut  | Açıklama  | Windows ve Windows Sunucusu  | macOS  | Linux  |
+| Komut  | Açıklama  | Windows ve Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
 | Analiz  | Bir karara ulaşmak için varlığı çeşitli eğim altyapılarıyla analiz eder.  | E  | N  | N  |
 | Toplamak  | Makineden adli tıp paketini toplar  | N  | E  | E  |
@@ -199,7 +199,7 @@ Gelişmiş **canlı yanıt** komutlarını çalıştırma yeteneği verilen kull
 
 ## <a name="use-live-response-commands"></a>Canlı yanıt komutlarını kullanma
 
-Konsolunda kullanabileceğiniz komutlar[, Windows Komutları](/windows-server/administration/windows-commands/windows-commands#BKMK_c) ile benzer ilkeleri izler.
+Konsolunda kullanabileceğiniz komutlar [, Windows Komutları](/windows-server/administration/windows-commands/windows-commands#BKMK_c) ile benzer ilkeleri izler.
 
 Gelişmiş komutlar, bir dosyayı indirip karşıya yükleme, betikleri cihazda çalıştırma ve bir varlıkta düzeltme eylemleri gerçekleştirme gibi daha güçlü eylemler gerçekleştirmenize olanak sağlayan daha güçlü bir eylem kümesi sunar.
 
@@ -244,7 +244,7 @@ Canlı yanıt oturumları başlattığınız cihazlarda çalıştırabileceğini
 
 #### <a name="to-upload-a-file-in-the-library"></a>Kitaplığa dosya yüklemek için
 
-1. **Dosya kitaplığına Upload'e** tıklayın.
+1. **Dosyayı kitaplığa yükle'ye** tıklayın.
 
 2. **Gözat'a** tıklayın ve dosyayı seçin.
 

@@ -3,7 +3,7 @@ title: Linux kaynaklarında Uç Nokta için Microsoft Defender
 ms.reviewer: ''
 description: Linux'ta Uç Nokta için Microsoft Defender nasıl kaldırıldığı, tanılama günlüklerinin nasıl toplandığı, CLI komutları ve ürünle ilgili bilinen sorunlar gibi kaynakları açıklar.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 0971933f1099192b1cb8b7a844793f264ef2aa15
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.subservice: mde
+ms.openlocfilehash: 3fca43004ef55832a813a3a36958efb310e6a342
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949491"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519786"
 ---
 # <a name="resources"></a>Kaynaklar
 

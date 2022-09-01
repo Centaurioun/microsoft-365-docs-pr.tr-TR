@@ -2,7 +2,7 @@
 title: halkalarda Uç Nokta için Microsoft Defender dağıtma
 description: halkalarda Uç Nokta için Microsoft Defender dağıtmayı öğrenin
 keywords: dağıtma, halkalar, değerlendirme, pilot, insider hızlı, insider yavaş, kurulum, ekleme, aşama, dağıtım, dağıtma, benimseme, yapılandırma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
+- highpri
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: e308b1c1d8c26a4ec3d6b3044501ffe1ce92e1c7
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.subservice: mde
+ms.openlocfilehash: 6049e8d56c3d928785f46d19b7a430b8e0542613
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862894"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520355"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>halkalarda Uç Nokta için Microsoft Defender dağıtma
 
@@ -31,7 +32,7 @@ ms.locfileid: "64862894"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimlemek mi istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Uç Nokta için Microsoft Defender dağıtma işlemi halka tabanlı dağıtım yaklaşımı kullanılarak gerçekleştirilebilir.
 
@@ -79,7 +80,7 @@ Aşağıdaki tabloda desteklenen uç noktalar ve cihazları hizmete eklemek içi
 
 |Uç nokta|Dağıtım aracı|
 |---|---|
-|**Windows**|[Yerel betik (en fazla 10 cihaz)](configure-endpoints-script.md) <br> NOT: Üretim ortamında 10'dan fazla cihaz dağıtmak istiyorsanız, bunun yerine grup ilkesi yöntemini veya aşağıda listelenen diğer desteklenen araçları kullanın.<br>  [Grup İlkesi](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobil Aygıt Yöneticisi](configure-endpoints-mdm.md) <br>   [Microsoft Uç Noktası Yapılandırma Yöneticisi](configure-endpoints-sccm.md) <br> [VDI betikleri](configure-endpoints-vdi.md) <br> [Bulut için Microsoft Defender ile tümleştirme](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)|
+|**Windows**|[Yerel betik (en fazla 10 cihaz)](configure-endpoints-script.md) <br> NOT: Üretim ortamında 10'dan fazla cihaz dağıtmak istiyorsanız, bunun yerine grup ilkesi yöntemini veya aşağıda listelenen diğer desteklenen araçları kullanın.<br>  [Grup İlkesi](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Aygıt Yöneticisi](configure-endpoints-mdm.md) <br>   [Microsoft Uç Noktası Yapılandırma Yöneticisi](configure-endpoints-sccm.md) <br> [VDI betikleri](configure-endpoints-vdi.md) <br> [Bulut için Microsoft Defender ile tümleştirme](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)|
 |**macOS**|[Yerel betik](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobil Cihaz Yönetimi](mac-install-with-other-mdm.md)|
 |**Linux Server**|[Yerel betik](linux-install-manually.md) <br> [Kukla](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 |**iOS**|[Microsoft Endpoint Manager](ios-install.md)|
@@ -97,7 +98,7 @@ Kuruluşunuzu en iyi şekilde paketleyen uygun Uç Nokta için Microsoft Defende
 
 ## <a name="existing-deployments"></a>Mevcut dağıtımlar
 
-### <a name="windows-endpoints"></a>uç noktaları Windows
+### <a name="windows-endpoints"></a>Windows uç noktaları
 
 Windows ve/veya Windows Sunucuları için **, Güvenlik Güncelleştirmesi Doğrulama programını (SUVP**) kullanarak önceden test etmek üzere birkaç makine seçersiniz (Salı düzeltme eki uygulamadan önce).
 
@@ -106,7 +107,7 @@ Daha fazla bilgi için bkz.:
 - [Güvenlik Güncelleştirmesi Doğrulama Programı nedir?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [Yazılım Güncelleştirme Doğrulama Programı ve Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi Kuruluşu - TwC Etkileşimli Zaman Çizelgesi Bölüm 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
-### <a name="non-windows-endpoints"></a>Windows olmayan uç noktalar
+### <a name="non-windows-endpoints"></a>Windows dışı uç noktalar
 
 macOS ve Linux ile birkaç sistem alıp Beta kanalında çalıştırabilirsiniz.
 

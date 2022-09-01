@@ -1,10 +1,10 @@
 ---
 title: Canlı yanıt kitaplığı yöntemleri ve özellikleri
 description: Canlı yanıt kitaplığı yöntemlerini ve özelliklerini kullanmayı öğrenin.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, almak, cihazlar
+keywords: api'ler, graf api'leri, desteklenen API'ler, get, cihazlar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,23 +18,23 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: reference
-ms.technology: m365d
-ms.openlocfilehash: c9eb1de08be8905a41b172a19a33db58dbdc19b9
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.subservice: m365d
+ms.openlocfilehash: 8338805bebc21e538242ebb902a5d581d5af42f5
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63705502"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520829"
 ---
 #  <a name="live-response-library-methods-and-properties"></a>Canlı yanıt kitaplığı yöntemleri ve özellikleri
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Geçerli olduğu yer: Uç** [Nokta için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:** [Uç Nokta için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-- Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,15 +43,15 @@ ms.locfileid: "63705502"
 
 ## <a name="methods"></a>Yöntemler
 
-| **Yöntem**          | **İade Türü**         | **Açıklama**                         |
+| **Yöntem**          | **Dönüş Türü**         | **Açıklama**                         |
 |---------------------|-------------------------|-----------------------------------------|
-| Liste kitaplığı dosyaları  | Kitaplık dosya koleksiyonu | Liste kitaplığı dosya varlıkları              |
-| Upload kitaplığına ekleme   | Kitaplık dosyası varlığı     | Upload yanıt kitaplığına dosya ekleme |
-| Kitaplıktan silme | İçerik yok              | Kitaplık dosyası varlığı silme              |
+| Kitaplık dosyalarını listele  | Kitaplık dosyası koleksiyonu | Liste kitaplığı dosya varlıkları              |
+| Kitaplığa yükleme   | Kitaplık dosyası varlığı     | Canlı yanıt kitaplığına dosya yükleme |
+| Kitaplıktan sil | İçerik yok              | Kitaplık dosyası varlığını silme              |
 
 ## <a name="properties"></a>Özellikler
 
 | **Özellik** | **Tür**                         | **Açıklama**                                        |
 |--------------|----------------------------------|--------------------------------------------------------|
-| Komutlar     | Live Response komut koleksiyonu | Komut nesneleri dizisi. Canlı [yanıt komutlarına bakın](live-response.md#live-response-commands). |
+| Komut     | Live Response komut koleksiyonu | Command nesneleri dizisi. Bkz. [canlı yanıt komutları](live-response.md#live-response-commands). |
 

@@ -2,7 +2,7 @@
 title: Cihaz başına yazılım envanteri değerlendirmeyi dışarı aktarma
 description: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion'ın her benzersiz bileşimi için bir giriş içeren bir tablo döndürür.
 keywords: api, API'ler, dışarı aktarma değerlendirmesi, cihaz başına değerlendirme, güvenlik açığı değerlendirme raporu, cihaz güvenlik açığı değerlendirmesi, cihaz güvenlik açığı raporu, güvenli yapılandırma değerlendirmesi, güvenli yapılandırma raporu, yazılım güvenlik açıkları değerlendirmesi, yazılım güvenlik açığı raporu, makineye göre güvenlik açığı raporu,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 365b932de39e558bbe30c84ba793e59b1db447c3
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 02d14b7aad018d8c4744c5aed012e441f65ac1d0
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344565"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67516038"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Cihaz başına yazılım envanteri değerlendirmeyi dışarı aktarma
 
@@ -55,7 +55,7 @@ Toplanan veriler ( _Json yanıtı_ veya _dosyalar aracılığıyla_) geçerli du
 
 Bu API yanıtı, cihaz başına [Ortak Platform Numaralandırması (CPE)](https://nvd.nist.gov/products/cpe) olan yüklü yazılımların tüm verilerini içerir. DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion'ın her benzersiz bileşimi için bir giriş içeren bir tablo döndürür.
 
-#### <a name="limitations"></a>Sınırlamalar
+#### <a name="111-limitations"></a>1.1.1 Sınırlamaları
 
 - En büyük sayfa boyutu 200.000'dir.
 - Bu API için hız sınırlamaları dakikada 30 çağrı ve saatte 1000 çağrıdır.
@@ -66,8 +66,8 @@ Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin 
 
 İzin türü|Izni|İzin görünen adı
 ---|---|---
-Uygulama|Software.Read.All|\'Tehdit ve Güvenlik Açığı Yönetimi güvenlik açığı bilgilerini okuyun\'
-Temsilci (iş veya okul hesabı)|Software.Read|\'Tehdit ve Güvenlik Açığı Yönetimi güvenlik açığı bilgilerini okuyun\'
+Uygulama|Software.Read.All|\'Tehdit ve Güvenlik Açığı Yönetimi yazılım bilgilerini okuyun\'
+Temsilci (iş veya okul hesabı)|Software.Read|\'Tehdit ve Güvenlik Açığı Yönetimi yazılım bilgilerini okuyun\'
 
 ### <a name="13-url"></a>1.3 URL
 
@@ -231,8 +231,8 @@ Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin 
 
 İzin türü|Izni|İzin görünen adı
 ---|---|---
-Uygulama|Software.Read.All|\'Tehdit ve Güvenlik Açığı Yönetimi güvenlik açığı bilgilerini okuyun\'
-Temsilci (iş veya okul hesabı)|Software.Read|\'Tehdit ve Güvenlik Açığı Yönetimi güvenlik açığı bilgilerini okuyun\'
+Uygulama|Software.Read.All|\'Tehdit ve Güvenlik Açığı Yönetimi yazılım bilgilerini okuyun\'
+Temsilci (iş veya okul hesabı)|Software.Read|\'Tehdit ve Güvenlik Açığı Yönetimi yazılım bilgilerini okuyun\'
 
 ### <a name="23-url"></a>2.3 URL
 

@@ -8,23 +8,23 @@ manager: dansimp
 audience: ITPro
 ms.topic: overview
 ms.date: 01/03/2022
-ms.prod: m365-security
-ms.technology: mdep1
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 417dd33eed846e45453464e63ff403374ce224dc
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 41b76968dbaf868d200ab9841893300a36e80fc6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667416"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67514267"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>Uç Nokta için Microsoft Defender Plan 1'i yönetme
 
 **Uygulandığı öğe**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Kuruluşunuzda Endpoint Plan 1 için Defender'ı kullandığınızda, güvenlik ekibiniz güvenlik çözümünüzü korumak için belirli adımları izleyebilir. Güvenlik ekibiniz bakım ve operasyon planınızı bir araya getirirken en azından aşağıdaki etkinlikleri eklediğinizden emin olun:
 
@@ -34,12 +34,12 @@ Kuruluşunuzda Endpoint Plan 1 için Defender'ı kullandığınızda, güvenlik 
 
 ## <a name="manage-security-intelligence-and-product-updates"></a>Güvenlik zekası ve ürün güncelleştirmelerini yönetme
 
-Microsoft Defender Virüsten Koruma güncel tutmak, yeni kötü amaçlı yazılımlara ve saldırı tekniklerine karşı koruma açısından kritik öneme sahiptir. Microsoft, güvenlik bilgileri, virüsten koruma ve kötü amaçlı yazılımdan koruma için düzenli güncelleştirmeler yayınlar. Güncelleştirmeler iki kategoriye ayrılır: 
+Microsoft Defender Virüsten Koruma'nın güncel tutulması, yeni kötü amaçlı yazılımlara ve saldırı tekniklerine karşı koruma açısından kritik öneme sahiptir. Microsoft, güvenlik bilgileri, virüsten koruma ve kötü amaçlı yazılımdan koruma için düzenli güncelleştirmeler yayınlar. Güncelleştirmeler iki kategoriye ayrılır: 
 
 - Güvenlik bilgileri güncelleştirmeleri
 - Ürün güncelleştirmeleri 
 
-Güvenlik bilgileri ve ürün güncelleştirmelerinizi yönetmek için bkz. [Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama](manage-updates-baselines-microsoft-defender-antivirus.md).
+Güvenlik zekanızı ve ürün güncelleştirmelerinizi yönetmek için bkz. [Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ## <a name="fine-tune-and-adjust-defender-for-endpoint"></a>Uç Nokta için Defender'da ince ayar yapma ve ayarlama
 

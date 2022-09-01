@@ -2,7 +2,7 @@
 title: Araştırma nesnesi API'lerini alma
 description: Araştırma nesnesini almakla ilgili çağrılar oluşturmak için bu API'yi kullanın
 keywords: api'ler, graf api'leri, desteklenen API'ler, Araştırma nesnesi
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: d086ffb524038ea7a487508d1fbe387c859220b2
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c9ae9c80fed41254f8bc375a36ac1fcc3fc1ff52
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326595"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520665"
 ---
 # <a name="get-investigation-api"></a>Araştırma API'si alma
 

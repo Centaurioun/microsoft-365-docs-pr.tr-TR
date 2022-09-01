@@ -2,7 +2,7 @@
 title: Mac'te Uç Nokta için Microsoft Defender güncelleştirmelerini dağıtma
 description: Kurumsal ortamlarda Mac'te Uç Nokta için Microsoft Defender güncelleştirmelerini denetleyin.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, updates, deploy
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 4612c7ca68ab0b55fa2a2f28821cb5baef6ff6e9
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.subservice: mde
+ms.openlocfilehash: 3686ee0e4356091a0dd3d6b295fde72d8f2611e0
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669352"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519522"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'da Uç Nokta için Microsoft Defender güncelleştirmelerini dağıtma
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender güncelleştirmelerini dağıtma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,13 +34,13 @@ ms.locfileid: "65669352"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft, performansı, güvenliği geliştirmek ve yeni özellikler sunmak için düzenli olarak yazılım güncelleştirmeleri yayımlar.
 
-macOS'da Uç Nokta için Microsoft Defender güncelleştirmek için Microsoft AutoUpdate (MAU) adlı bir program kullanılır. Varsayılan olarak, MAU güncelleştirmeleri günlük olarak otomatik olarak denetler, ancak bunu haftalık, aylık veya el ile değiştirebilirsiniz.
+macOS'ta Uç Nokta için Microsoft Defender güncelleştirmek için Microsoft AutoUpdate (MAU) adlı bir program kullanılır. Varsayılan olarak, MAU güncelleştirmeleri günlük olarak otomatik olarak denetler, ancak bunu haftalık, aylık veya el ile değiştirebilirsiniz.
 
-:::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
+:::image type="content" source="images/MDATP-34-MAU.png" alt-text="Mau" lightbox="images/MDATP-34-MAU.png":::
 
 Güncelleştirmeleri yazılım dağıtım araçlarınızı kullanarak dağıtmaya karar verirseniz MAU'yu yazılım güncelleştirmelerini el ile denetleyecek şekilde yapılandırmanız gerekir. MAU'un kuruluşunuzdaki Mac'ler için güncelleştirmeleri nasıl ve ne zaman denetleyebileceğini yapılandırmak için tercihleri dağıtabilirsiniz.
 
@@ -48,7 +48,7 @@ Güncelleştirmeleri yazılım dağıtım araçlarınızı kullanarak dağıtmay
 
 MAU, güncelleştirmelerin ne zaman uygulanacağı üzerinde daha hassas denetime sahip olmaları için BT yöneticileri için tasarlanmış *msupdate* adlı bir komut satırı aracı içerir. Bu aracın nasıl kullanılacağına ilişkin yönergeler [güncelleştirme Office Mac msupdate kullanılarak](/deployoffice/mac/update-office-for-mac-using-msupdate) bulunabilir.
 
-MAU'da, macOS üzerindeki Uç Nokta için Microsoft Defender için uygulama *tanımlayıcısı WDAV00'dür*. macOS'da Uç Nokta için Microsoft Defender için en son güncelleştirmeleri indirmek ve yüklemek için terminal penceresinden aşağıdaki komutu yürütebilirsiniz:
+MAU'da, macOS üzerinde Uç Nokta için Microsoft Defender için uygulama *tanımlayıcısı WDAV00'dür*. macOS'ta Uç Nokta için Microsoft Defender için en son güncelleştirmeleri indirmek ve yüklemek için terminal penceresinden aşağıdaki komutu yürütebilirsiniz:
 
 ```dos
 cd /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app/Contents/MacOS
@@ -88,7 +88,7 @@ Kanal, `Current` ürünün en kararlı sürümünü içerir.
 |||
 
 > [!WARNING]
-> Bu ayar, Microsoft AutoUpdate aracılığıyla güncelleştirilen tüm uygulamalar için kanalı değiştirir. Kanalı yalnızca macOS Uç Nokta için Microsoft Defender değiştirmek için, öğesini istenen kanalla değiştirdikten `[channel-name]` sonra aşağıdaki komutu yürütür:
+> Bu ayar, Microsoft AutoUpdate aracılığıyla güncelleştirilen tüm uygulamalar için kanalı değiştirir. Kanalı yalnızca macOS'taki Uç Nokta için Microsoft Defender değiştirmek için, istediğiniz kanalla değiştirdikten `[channel-name]` sonra aşağıdaki komutu yürütebilirsiniz:
 >
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
@@ -128,9 +128,9 @@ MAU'nin güncelleştirmeleri arama şeklini değiştirin.
 |**Açıklama ekleme**|AutomaticDownload'un mümkünse bir indirme gerçekleştireceğini ve sessizce yükleneceğini unutmayın.|
 |||
 
-### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>"Güncelleştirmeleri Denetle" düğmesinin etkinleştirilip etkinleştirilmediğini değiştirme
+### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>"Güncelleştirmeler Denetle" düğmesinin etkinleştirilip etkinleştirilmediğini değiştirme
 
-Yerel kullanıcıların Microsoft AutoUpdate kullanıcı arabirimindeki "Güncelleştirmeleri Denetle" seçeneğine tıklayıp tıklayamayacağını değiştirin.
+Yerel kullanıcıların Microsoft AutoUpdate kullanıcı arabirimindeki "Güncelleştirmeler Denetle" seçeneğine tıklayıp tıklayamayacağını değiştirin.
 
 <br>
 

@@ -2,7 +2,7 @@
 title: Güvenlik temelleri değerlendirme yapılandırmaları
 description: "\"Microsoft Defender Güvenlik Açığı Yönetimi\" verileri çeken güvenlik temelleri değerlendirme yapılandırmaları hakkında bilgi sağlar. Farklı veri türlerini almak için farklı API çağrıları vardır. Genel olarak, her API çağrısı kuruluşunuzdaki cihazlar için gerekli verileri içerir."
 keywords: api, API'ler, dışarı aktarma değerlendirmesi, cihaz değerlendirmesi başına, makine değerlendirmesi başına, güvenlik açığı değerlendirmesi raporu, cihaz güvenlik açığı değerlendirmesi, cihaz güvenlik açığı raporu, güvenli yapılandırma değerlendirmesi, güvenli yapılandırma raporu, yazılım güvenlik açıkları değerlendirmesi, yazılım güvenlik açığı raporu, makineye göre güvenlik açığı raporu,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 396f5f83123ec3040cd773e1fe2abd201bd8a3ae
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 21fdebfac2ba62144e665e7e72580cbff1ee8c00
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344557"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520423"
 ---
 # <a name="list-security-baselines-assessment-configurations"></a>Güvenlik temelleri değerlendirme yapılandırmalarını listeleyin
 

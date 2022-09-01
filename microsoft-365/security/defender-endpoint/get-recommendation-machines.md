@@ -2,7 +2,7 @@
 title: Cihazları öneriye göre listeleme
 description: Güvenlik önerisiyle ilişkili cihazların listesini alır.
 keywords: api'ler, graph api'leri, desteklenen API'ler, get, güvenlik açığı olan cihazlar için güvenlik önerisi, Tehdit ve Güvenlik Açığı Yönetimi Tehdit ve Güvenlik Açığı Yönetimi API
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 82192989a1e2ad2968f38b15f1cc9ff0156466e4
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: b57dd9b91b2002a47d7195be62a3676498c10820
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67345085"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520445"
 ---
 # <a name="list-devices-by-recommendation"></a>Cihazları öneriye göre listeleme
 

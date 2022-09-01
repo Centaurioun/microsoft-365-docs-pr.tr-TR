@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender Virüsten Koruma'de bulut korumasını açma
+title: Microsoft Defender Virüsten Koruma'da bulut korumasını açma
 description: Hızlı ve gelişmiş koruma özelliklerinden yararlanmak için bulut korumasını açın.
 keywords: Microsoft Defender Virüsten Koruma, kötü amaçlı yazılımdan koruma, güvenlik, bulut, ilk bakışta blok
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,16 +13,16 @@ ms.date: 02/03/2022
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 38bd804d40c3d5f84e80585f86d906c6a645a668
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 3b982b09a384a69ffca8d50d7dad9e9e4c476c30
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416704"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520311"
 ---
-# <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'de bulut korumasını açma
+# <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'da bulut korumasını açma
 
 **Şunlar için geçerlidir:**
 
@@ -36,7 +36,7 @@ ms.locfileid: "65416704"
 
 ## <a name="methods-to-configure-cloud-protection"></a>Bulut korumasını yapılandırma yöntemleri
 
-Çeşitli yöntemlerden birini kullanarak Microsoft Defender Virüsten Koruma bulut korumasını açabilir veya kapatabilirsiniz:
+Microsoft Defender Virüsten Koruma bulut korumasını birkaç yöntemden birini kullanarak açabilir veya kapatabilirsiniz:
 
 - Microsoft Intune ve Configuration Manager içeren Microsoft Endpoint Manager
 - Grup İlkesi
@@ -57,7 +57,7 @@ Uç noktalarınızın bulut koruma hizmetine bağlanamasını sağlamak için be
 
 3. Yapılandırmak istediğiniz **Cihaz kısıtlamaları** profil türünü seçin. Yeni bir **Cihaz kısıtlamaları** profil türü oluşturmanız gerekiyorsa bkz. [Microsoft Intune'de cihaz kısıtlama ayarlarını yapılandırma](/intune/device-restrictions-configure).
 
-4. **Özellikler** \> **Yapılandırma ayarları: Microsoft Defender Virüsten Koruma düzenle'yi** \> seçin.
+4. **Özellikler** \> Yapılandırma ayarları: **Microsoft Defender Virüsten** **Koruma'nın düzenlenmesi'ni** \> seçin.
 
 5. **Bulut tabanlı koruma** anahtarında **Etkinleştir'i** seçin.
 
@@ -92,7 +92,7 @@ Microsoft Endpoint Configuration Manager yapılandırma hakkında daha fazla bil
 
 3. **Yönetim şablonları'nı** seçin.
 
-4. Ağacı **bileşenleri** >  Windows için genişletin **Microsoft Defender Virüsten Koruma > MAPS**
+4. Ağacı **Windows bileşenlerine** >  genişletme **Microsoft Defender Virüsten Koruma > MAPS**
 
     > [!NOTE]
     > MAPS ayarları, bulut tabanlı korumaya eşittir.
@@ -125,7 +125,7 @@ Set-MpPreference -MAPSReporting Advanced
 Set-MpPreference -SubmitSamplesConsent SendAllSamples
 ```
 
-PowerShell'i Microsoft Defender Virüsten Koruma ile kullanma hakkında daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma ve Microsoft Defender Virüsten Koruma cmdlet'lerini yapılandırmak ve çalıştırmak için PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlet'lerini](/powershell/module/defender/) kullanma . [İlke CSP - Defender](/windows/client-management/mdm/policy-csp-defender) özellikle [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) hakkında daha fazla bilgiye sahiptir.
+PowerShell'i Microsoft Defender Virüsten Koruma ile kullanma hakkında daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma ve Microsoft Defender Virüsten Koruma cmdlet'lerini yapılandırmak ve çalıştırmak için PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlet'lerini](/powershell/module/defender/) kullanma. [İlke CSP - Defender](/windows/client-management/mdm/policy-csp-defender) özellikle [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) hakkında daha fazla bilgiye sahiptir.
 
 > [!IMPORTANT]
 > **-SubmitSamplesConsent** `SendSafeSamples` değerini (varsayılan, önerilen ayar) `NeverSend`veya `AlwaysPrompt`olarak ayarlayabilirsiniz. Bu `SendSafeSamples` ayar, çoğu örneğin otomatik olarak gönderileceği anlamına gelir. Kişisel bilgiler içerme olasılığı olan dosyalar devam etmek için bir istemle sonuçlanır ve onay gerektirir.
@@ -145,7 +145,7 @@ SubmitSamplesConsent
 ## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>Windows Güvenliği uygulamasıyla tek tek istemcilerde bulut korumasını açma
 
 > [!NOTE]
-> **Microsoft MAPS grup ilkesi raporlaması için yerel ayarı yapılandırma geçersiz kılma** ayarı **Devre Dışı** olarak ayarlanırsa, Windows Ayarlar'deki **Bulut tabanlı koruma** ayarı gri görünür ve kullanılamaz. grup ilkesi Nesnesi aracılığıyla yapılan değişikliklerin, ayarın Windows Ayarlar güncelleştirilmeden önce tek tek uç noktalara dağıtılması gerekir.
+> **Microsoft MAPS grup ilkesi raporlaması için yerel ayarı yapılandırma geçersiz kılma** ayarı **Devre Dışı** olarak ayarlanırsa, Windows Ayarları'ndaki **Bulut tabanlı koruma** ayarı gri görünür ve kullanılamaz. Ayar Windows Ayarları'nda güncelleştirilmeden önce grup ilkesi Nesnesi aracılığıyla yapılan değişikliklerin tek tek uç noktalara dağıtılması gerekir.
 
 1. Görev çubuğunda kalkan simgesini seçerek veya başlangıç menüsünde **Windows Güvenliği arayarak Windows Güvenliği** uygulamasını açın.
 
@@ -159,7 +159,7 @@ SubmitSamplesConsent
    > Otomatik örnek gönderimi grup ilkesi ile yapılandırıldıysa ayar gri görünür ve kullanılamaz.
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -170,7 +170,7 @@ SubmitSamplesConsent
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Microsoft Defender Virüsten Koruma'de Microsoft bulut korumasını kullanma](cloud-protection-microsoft-defender-antivirus.md)
+- [Microsoft Defender Virüsten Koruma'da Microsoft bulut korumasını kullanma](cloud-protection-microsoft-defender-antivirus.md)
 
 - [Kötü amaçlı yazılımdan koruma ilkeleri oluşturma ve dağıtma: Bulut koruma hizmeti](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
 

@@ -1,8 +1,8 @@
 ---
 title: Mac'te Uç Nokta için Microsoft Defender lisans sorunlarını giderme
-description: Mac'te Uç Nokta için Microsoft Defender sorunlarını giderin.
+description: Mac'te Uç Nokta için Microsoft Defender lisans sorunlarını giderme.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, performans
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,29 +14,29 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 35b77183ee9ceb00569c956d30debb0dd61e63f7
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 6fb3f01dd59e8febf7d0aa769882001a16f4366f
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64471747"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519566"
 ---
-# <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender sorunları giderme
+# <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender lisans sorunlarını giderme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
-- [Uç Nokta için Microsoft Defender os'ta Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
- [Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [macOS](microsoft-defender-endpoint-mac.md)
+ [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+ [Uç Nokta için Microsoft Defender Plan 2'de](https://go.microsoft.com/fwlink/p/?linkid=2154037) Uç Nokta için Microsoft Defender
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Bu deneyimi Uç Nokta için Microsoft Defender? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[macOS ve El ile Uç Nokta için Microsoft Defender testi veya](microsoft-defender-endpoint-mac.md) Kavram Kanıtı (PoC[](mac-install-manually.md)) üzerinden çalışırken aşağıdaki hatayı alabilirsiniz:
+[macOS ve](microsoft-defender-endpoint-mac.md) [El ile dağıtım](mac-install-manually.md) testi veya Kavram Kanıtı (PoC) üzerinde Uç Nokta için Microsoft Defender devam ederken aşağıdaki hatayı alabilirsiniz:
 
 :::image type="content" source="images/no-license-found.png" alt-text="Lisans hatası" lightbox="images/no-license-found.png":::
 
@@ -44,19 +44,19 @@ ms.locfileid: "64471747"
 
 Lisans bulunamadı
 
-Görünüşe göre, kuruma bu abonelik için Microsoft 365 Kurumsal yok.
+Kuruluşunuzun Microsoft 365 Kurumsal aboneliği için lisansı yok gibi görünüyor.
 
 Yardım için yöneticinize başvurun.
 
 **Neden:** 
 
-Uç Nokta için Microsoft Defender'i macOS paketine ("Yükleme paketini indir") dağıttınız ve/veya yüklemişsinizdir, ancak yapılandırma betiğini çalıştırmamış ("Ekleme paketini indir") veya kullanıcıya lisans atamamış olabilirsiniz.
+Uç Nokta için Microsoft Defender macOS paketine dağıttınız ve/veya yüklediniz ("Yükleme paketini indir"), ancak yapılandırma betiğini çalıştırmamış olabilirsiniz ("Ekleme paketini indir"), veya kullanıcıya lisans atamamış olabilirsiniz.
 
-MacOS aracısı üzerinde Uç Nokta için Microsoft Defender güncel değilse bu hatayla da karşılaşebilirsiniz. 
+MacOS aracısının Uç Nokta için Microsoft Defender güncel olmadığında da bu hatayla karşılaşabilirsiniz. 
 
 
 **Çözüm:**
 
-Burada MicrosoftDefenderATPOnboardingMacOs.py yönergeleri izleyin: [İstemci yapılandırması](mac-install-manually.md#client-configuration)
+Burada belgelenen MicrosoftDefenderATPOnboardingMacOs.py yönergeleri izleyin: [İstemci yapılandırması](mac-install-manually.md#client-configuration)
 
-macOS'Uç Nokta için Microsoft Defender güncel olmayan senaryolarda aracıyı güncelleştirmeniz gerekir. 
+macOS'ta Uç Nokta için Microsoft Defender güncel olmadığı senaryolar için aracıyı güncelleştirmeniz gerekir. 

@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender (Linux) ile tarama zamanlama
 description: Kuruluşunuzun varlıklarını daha iyi korumak için Uç Nokta için Microsoft Defender (Linux) için otomatik tarama süresi zamanlamayı öğrenin.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, linux, scans, virüsten koruma, uç nokta için microsoft defender (linux)
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 706284ed0adf49c4da6357b6bb8217d5a14268e1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.subservice: mde
+ms.openlocfilehash: 21fbdd1e10fc929711944c2586e262c76e7a3905
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663500"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519764"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Uç Nokta için Microsoft Defender (Linux) ile tarama zamanlama
 

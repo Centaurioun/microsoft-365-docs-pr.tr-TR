@@ -2,7 +2,7 @@
 title: Makine kaynak türü
 description: Uç Nokta için Microsoft Defender'de Makine kaynak türünün yöntemleri ve özellikleri hakkında bilgi edinin.
 keywords: api'ler, desteklenen API'ler, alma, makineler
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: ada405980a781d32735a545f4d2bd44d19477511
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 08754eaa0040e3f7aa89c9e398db37afbbd1b474
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497082"
+ms.locfileid: "67514421"
 ---
 # <a name="machine-resource-type"></a>Makine kaynak türü
 

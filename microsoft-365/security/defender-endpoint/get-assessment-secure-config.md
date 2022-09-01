@@ -2,7 +2,7 @@
 title: Cihaz başına güvenli yapılandırma değerlendirmelerini dışarı aktarma
 description: DeviceId, ConfigurationId'nin her benzersiz bileşimi için bir girdi döndürür.
 keywords: api, API'ler, dışarı aktarma değerlendirmesi, cihaz başına değerlendirme, güvenlik açığı değerlendirme raporu, cihaz güvenlik açığı değerlendirmesi, cihaz güvenlik açığı raporu, güvenli yapılandırma değerlendirmesi, güvenli yapılandırma raporu, yazılım güvenlik açıkları değerlendirmesi, yazılım güvenlik açığı raporu, makineye göre güvenlik açığı raporu,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: dfc0ad17a142eebb021f11e78bedddf33538c61e
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 4b9d8cc479e72e79f9322feb6adca9b8b5bd5eda
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67342855"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520555"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Cihaz başına güvenli yapılandırma değerlendirmelerini dışarı aktarma
 
@@ -222,7 +222,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 Bu API yanıtı, kullanıma sunulan cihazlarınızda Güvenli Yapılandırma Değerlendirmesi'ni içerir ve DeviceId, ConfigurationId'nin her benzersiz bileşimi için bir giriş döndürür.
 
-#### <a name="212-limitations"></a>2.1.2 Sınırlamaları
+#### <a name="211-limitations"></a>2.1.1 Sınırlamaları
 
 Bu API için hız sınırlamaları dakikada 5 çağrı ve saatte 20 çağrıdır.
 
@@ -232,8 +232,8 @@ Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin 
 
 İzin türü|Izni|İzin görünen adı
 ---|---|---
-Uygulama|Vulnerability.Read.All|\'"Tehdit ve Güvenlik Açığı Yönetimi" güvenlik açığı bilgilerini okuyun\'
-Temsilci (iş veya okul hesabı)|Vulnerability.Read|\'"Tehdit ve Güvenlik Açığı Yönetimi" güvenlik açığı bilgilerini okuyun\'
+Uygulama|Vulnerability.Read.All|\'Tehdit ve Güvenlik Açığı Yönetimi güvenlik açığı bilgilerini okuyun\'
+Temsilci (iş veya okul hesabı)|Vulnerability.Read|\'Tehdit ve Güvenlik Açığı Yönetimi güvenlik açığı bilgilerini okuyun\'
 
 ### <a name="23-url"></a>2.3 URL
 

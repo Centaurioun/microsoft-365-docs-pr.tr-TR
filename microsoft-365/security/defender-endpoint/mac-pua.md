@@ -1,8 +1,8 @@
 ---
-title: Mac'te Uç Nokta için Microsoft Defender ile istenmeyen olabilecek uygulamaları algılama ve engelleme
-description: macOS'ta Uç Nokta için Microsoft Defender'ı kullanarak olası İstenmeyen Uygulamaları (PUA) algıla ve engelle.
-keywords: microsoft, defender, Endpoint için Microsoft Defender, mac, pua, pus
-ms.prod: m365-security
+title: Mac'te Uç Nokta için Microsoft Defender ile istenmeyebilecek uygulamaları algılama ve engelleme
+description: macOS üzerinde Uç Nokta için Microsoft Defender kullanarak İstenmeyebilecek Uygulamaları (PUA) algılayın ve engelleyin.
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, pua, pus
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,53 +14,53 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: a0fb8e19dd573da67936892c81cd515b463a7cba
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: 4ddce441f0a1948a774a24cb8ffcbb5d330cf910
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011855"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519588"
 ---
-# <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender ile istenmeyen olabilecek uygulamaları algılama ve engelleme
+# <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender ile istenmeyebilecek uygulamaları algılama ve engelleme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-macOS üzerinde Uç Nokta için Microsoft Defender'daki istenmeyen uygulama (PUA) koruma özelliği ağ bağlantı noktalarında PUA dosyalarını algılanabilir ve engelleyebilir.
+macOS'taki Uç Nokta için Microsoft Defender'daki istenmeyebilecek uygulama (PUA) koruma özelliği, ağınızdaki uç noktalarda PUA dosyalarını algılayabilir ve engelleyebilir.
 
-Bu uygulamalar virüs, kötü amaçlı yazılım veya diğer tehdit türleri olarak kabul alınmaz, ancak performanslarını veya kullanımını olumsuz etkileyen uç noktalar üzerinde eylemler gerçekleştirebilir. PUA, kötü bir üne sahip olduğu kabul edilen uygulamalara da başvurur.
+Bu uygulamalar virüs, kötü amaçlı yazılım veya diğer tehdit türleri olarak kabul edilmez, ancak uç noktalarda performanslarını veya kullanımlarını olumsuz yönde etkileyen eylemler gerçekleştirebilir. PUA ayrıca kötü bir üne sahip olduğu düşünülen uygulamalara da başvurabilir.
 
-Bu uygulamalar, ağlarının kötü amaçlı yazılımdan bulaşma riskini artırabilir, kötü amaçlı yazılım bulaşmalarının belirlenmesini daha zorlaştırabilir ve uygulamaları temizlerken IT kaynaklarını israf edebilir.
+Bu uygulamalar ağınıza kötü amaçlı yazılım bulaşma riskini artırabilir, kötü amaçlı yazılım bulaşmalarının tanımlanmasının zor olmasına neden olabilir ve uygulamaları temizlerken BT kaynaklarını boşa harcayabilir.
 
 ## <a name="how-it-works"></a>Nasıl çalışır?
 
-macOS'ta Uç Nokta için Microsoft Defender PUA dosyalarını algılanabilir ve bildirebilirsiniz. Engelleme modunda yapılandırıldığında, PUA dosyaları karantinaya taşınır.
+macOS'ta Uç Nokta için Microsoft Defender PUA dosyalarını algılayabilir ve raporlayabilir. Engelleme modunda yapılandırıldığında PUA dosyaları karantinaya taşınır.
 
-Bir uç noktada PUA algılandığında, bildirimlerin devre dışı bırakılamadıkça macOS'ta Uç Nokta için Microsoft Defender kullanıcıya bir bildirim sunar. Tehdit adı "Uygulama" sözcüğü içerir.
+Bir uç noktada PUA algılandığında, bildirimler devre dışı bırakılmadığı sürece macOS'ta Uç Nokta için Microsoft Defender kullanıcıya bir bildirim sunar. Tehdit adı "Uygulama" sözcüğünü içerir.
 
 ## <a name="configure-pua-protection"></a>PUA korumasını yapılandırma
 
-macOS üzerinde Uç Nokta için Microsoft Defender'da PUA koruması aşağıdaki yöntemlerden biri ile yalnabilirsiniz:
+macOS'ta Uç Nokta için Microsoft Defender PUA koruması aşağıdaki yollardan biriyle yapılandırılabilir:
 
-- **Kapalı**: PUA koruması devre dışı bırakılır.
-- **Denetim**: PUA dosyaları ürün günlüklerine bildiriliyor ancak portalda Microsoft 365 Defender değil. Kullanıcıya herhangi bir bildirim olmaz ve ürün hiçbir işlemde yoktur.
-- **Engelle**: PUA dosyaları ürün günlüklerine ve portala Microsoft 365 Defender. Kullanıcıya bir bildirim ve ürün tarafından işlem yapıldı bildirimini alır.
+- **Kapalı**: PUA koruması devre dışı bırakıldı.
+- **Denetim**: PUA dosyaları ürün günlüklerinde bildirilir, ancak Microsoft 365 Defender portalda raporlanmaz. Kullanıcıya bildirim sunulmaz ve ürün tarafından hiçbir işlem yapılmaz.
+- **Engelle**: PUA dosyaları ürün günlüklerinde ve Microsoft 365 Defender portalında bildirilir. Kullanıcıya bir bildirim sunulur ve ürün tarafından işlem yapılır.
 
 > [!WARNING]
-> Varsayılan olarak, PUA koruması **Denetim modunda yapılandırılır** .
+> Varsayılan olarak, PUA koruması **Denetim** modunda yapılandırılır.
 
-PUA dosyalarının komut satırı veya yönetim konsolundan nasıl işleniyor olduğunu yapılandırabilirsiniz.
+PUA dosyalarının işlenme şeklini komut satırından veya yönetim konsolundan yapılandırabilirsiniz.
 
 ### <a name="use-the-command-line-tool-to-configure-pua-protection"></a>PUA korumasını yapılandırmak için komut satırı aracını kullanın:
 
-Terminal'de PUA korumasını yapılandırmak için aşağıdaki komutu yürütün:
+Terminal'de aşağıdaki komutu yürüterek PUA korumasını yapılandırın:
 
 ```bash
 mdatp threat policy set --type potentially_unwanted_application --action [off|audit|block]
@@ -68,8 +68,8 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>PUA korumasını yapılandırmak için yönetim konsolunu kullanın:
 
-Kurumunuzun içinde, aynı diğer ürün ayarlarının yapılandırılma örneğine benzer şekilde, JAMF veya Intune gibi bir yönetim konsolundan PUA korumasını yapılandırabilirsiniz. Daha fazla bilgi için macOS [üzerinde Uç nokta](mac-preferences.md#threat-type-settings) için Microsoft Defender tercihlerini ayarlama konusunun [Tehdit türü ayarları bölümüne](mac-preferences.md) bakın.
+Kuruluşunuzda, JAMF veya Intune gibi bir yönetim konsolundan PUA korumasını, diğer ürün ayarlarının nasıl yapılandırıldığına benzer şekilde yapılandırabilirsiniz. Daha fazla bilgi [için macOS'ta Uç Nokta için Microsoft Defender için tercihleri ayarlama](mac-preferences.md) konusunun [Tehdit türü ayarları](mac-preferences.md#threat-type-settings) bölümüne bakın.
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [macOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlama](mac-preferences.md)
+- [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)

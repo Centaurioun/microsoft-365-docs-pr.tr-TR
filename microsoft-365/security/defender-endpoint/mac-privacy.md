@@ -1,8 +1,8 @@
 ---
-title: Mac'te Uç Nokta için Microsoft Defender Gizliliği
-description: Gizlilik denetimleri, Mac'te Uç Nokta için Microsoft Defender'da toplanan tanılama verileri hakkında gizliliği ve bilgileri etkileyen ilke ayarlarını yapılandırma.
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, gizlilik, tanılama
-ms.prod: m365-security
+title: Mac'te Uç Nokta için Microsoft Defender için gizlilik
+description: Gizlilik denetimleri, Mac'te Uç Nokta için Microsoft Defender toplanan tanılama verileriyle ilgili gizlilik ve bilgilerle ilgili gizliliği etkileyen ilke ayarlarını yapılandırma.
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, privacy, diagnostic
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,70 +14,70 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: c49a6ff1440c7a3eee2e26eef90fb928e68458d1
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.subservice: mde
+ms.openlocfilehash: 3a76626834f68ea381dc2a69707e073012ea742f
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63014413"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519632"
 ---
-# <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender Gizliliği
+# <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender için gizlilik
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft, macOS üzerinde Uç Nokta için Microsoft Defender kullanırken verilerinizin nasıl toplanacak ve kullanılacak konusunda seçim yapmak için ihtiyacınız olan bilgileri ve denetimleri sağlamayı taahhüt eder.
+Microsoft, macOS'ta Uç Nokta için Microsoft Defender kullanırken verilerinizin nasıl toplandığı ve kullanıldığı hakkında seçim yapmak için ihtiyacınız olan bilgileri ve denetimleri sağlamayı taahhüt eder.
 
-Bu konu başlığı altında, ürün içinde kullanılabilen gizlilik denetimleri, ilke ayarlarıyla bu denetimlerin nasıl yönetilebilecekleri ve toplanan veri olaylarla ilgili daha fazla ayrıntı açıklanmıştır.
+Bu konu başlığı altında ürün içinde kullanılabilen gizlilik denetimleri, ilke ayarlarıyla bu denetimlerin nasıl yönetileceğini ve toplanan veri olaylarıyla ilgili daha fazla ayrıntı açıklanmaktadır.
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender'daki gizlilik denetimlerine genel bakış
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender gizlilik denetimlerine genel bakış
 
-Bu bölümde, macOS'ta Uç Nokta için Microsoft Defender tarafından toplanan farklı veri türleri için gizlilik denetimleri açıklanıyor.
+Bu bölümde, macOS üzerinde Uç Nokta için Microsoft Defender tarafından toplanan farklı veri türleri için gizlilik denetimleri açıklanmaktadır.
 
 ### <a name="diagnostic-data"></a>Tanılama verileri
 
-Tanılama verileri, Uç nokta için Microsoft Defender'ı güvenli ve güncel tutmak, sorunları algılamak, tanılamak ve düzeltmek ve ürün geliştirmeleri yapmak için kullanılır.
+Tanılama verileri, Uç Nokta için Microsoft Defender güvenli ve güncel tutmak, sorunları algılamak, tanılamak ve düzeltmek ve ürün geliştirmeleri yapmak için kullanılır.
 
 Bazı tanılama verileri isteğe bağlıyken bazı tanılama verileri gereklidir. Size, kuruluşlar için gizlilik ayarları gibi gizlilik denetimlerini kullanarak bize gerekli veya isteğe bağlı tanılama verilerini gönderip göndermeme olanağı sunarız.
 
-Uç nokta istemci yazılımı için Microsoft Defender tanılama verilerini iki düzeyden birini seçebilirsiniz:
+Uç Nokta için Microsoft Defender istemci yazılımı için aralarından seçim yapabileceğiniz iki tanılama verisi düzeyi vardır:
 
-- **Gerekli**: Uç nokta için Microsoft Defender'ı güvenli, güncel ve yüklü olduğu cihazda beklendiği şekilde performans gösterirken tutmak için gereken en düşük veriler.
+- **Gerekli**: Uç Nokta için Microsoft Defender güvenli, güncel ve yüklendiği cihazda beklendiği gibi performans göstermesini sağlamak için gereken minimum veriler.
 
-- **İsteğe** bağlı: Microsoft'un ürün geliştirmeleri yapmana yardımcı olan ve sorunları algılamaya, tanılamaya ve düzeltmeye yardımcı olacak gelişmiş bilgiler sağlayan ek veriler.
+- **İsteğe bağlı**: Microsoft'un ürün geliştirmeleri yapmasına yardımcı olan ve sorunları algılamaya, tanılamaya ve düzeltmeye yardımcı olacak gelişmiş bilgiler sağlayan ek veriler.
 
-Varsayılan olarak, yalnızca gerekli tanılama verileri Microsoft'a gönderilir.
+Varsayılan olarak, Yalnızca gerekli tanılama verileri Microsoft'a gönderilir.
 
-### <a name="cloud-delivered-protection-data"></a>Bulut teslimi koruma verileri
+### <a name="cloud-delivered-protection-data"></a>Bulut tarafından sunulan koruma verileri
 
-Bulut teslimi koruması, buluttaki en son koruma verilerine erişimle daha yüksek ve daha hızlı koruma sağlamak için kullanılır.
+Bulut tarafından sunulan koruma, buluttaki en son koruma verilerine erişim ile daha yüksek ve daha hızlı koruma sağlamak için kullanılır.
 
-Bulut teslimi koruma hizmetinin etkinleştirilmesi isteğe bağlıdır, ancak uç noktalarınıza ve ağ genelinde kötü amaçlı yazılımlara karşı önemli bir koruma sağladığı için bu özelliğin kullanılması kesinlikle önerilir.
+Bulut tabanlı koruma hizmetinin etkinleştirilmesi isteğe bağlıdır, ancak uç noktalarınızdaki ve ağınızdaki kötü amaçlı yazılımlara karşı önemli koruma sağladığından kesinlikle önerilir.
 
 ### <a name="sample-data"></a>Örnek veriler
 
-Örnek veriler, çözümlenirken Microsoft'a şüpheli örnekler göndererek ürünün koruma özelliklerini geliştirmek için kullanılır. Otomatik örnek gönderimin etkinleştirilmesi isteğe bağlıdır.
+Örnek veriler, analiz edilebilmeleri için Microsoft şüpheli örnekleri göndererek ürünün koruma özelliklerini geliştirmek için kullanılır. Otomatik örnek gönderimini etkinleştirmek isteğe bağlıdır.
 
-Bu özellik etkinleştirildiğinde ve toplanan örneğin büyük olasılıkla kişisel bilgiler içerdiğinde, kullanıcıdan izin istenir.
+Bu özellik etkinleştirildiğinde ve toplanan örnek büyük olasılıkla kişisel bilgiler içerdiğinde, kullanıcıdan onay istenir.
 
 ## <a name="manage-privacy-controls-with-policy-settings"></a>Gizlilik denetimlerini ilke ayarlarıyla yönetme
 
-Bir IT yöneticisiyseniz, bu denetimleri kuruluş düzeyinde yapılandırmak istediğiniz olabilir.
+BT yöneticisiyseniz bu denetimleri kurumsal düzeyde yapılandırmak isteyebilirsiniz.
 
-Önceki bölümde açıklanan çeşitli veri türleri için gizlilik denetimleri macOS üzerinde Uç nokta için Microsoft Defender tercihlerini ayarlama konusunda [ayrıntılı olarak açıklanmıştır](mac-preferences.md).
+Önceki bölümde açıklanan çeşitli veri türlerinin gizlilik denetimleri[, macOS'ta Uç Nokta için Microsoft Defender için tercihleri ayarlama](mac-preferences.md) bölümünde ayrıntılı olarak açıklanmıştır.
 
-Yeni ilke ayarlarında olduğu gibi, ilke ayarlarını kurum içinde daha geniş bir alanla uygulamadan önce, yapılandırılan ayarların istediğiniz etkiyi elde etmek için bunları sınırlı, denetimli bir ortamda dikkatle test edin.
+Tüm yeni ilke ayarlarında olduğu gibi, ilke ayarlarını kuruluşunuzda daha geniş bir şekilde uygulamadan önce yapılandırdığınız ayarların istenen etkiye sahip olduğundan emin olmak için bunları sınırlı, denetimli bir ortamda dikkatlice test etmelisiniz.
 
 ## <a name="diagnostic-data-events"></a>Tanılama veri olayları
 
-Bu bölümde gerekli tanılama verileri olarak kabul edilenler, isteğe bağlı tanılama verileri olarak kabul edilenler ve toplanan olaylarla alanların açıklaması açıklanıyor.
+Bu bölümde, gerekli tanılama verileri olarak kabul edilenler ve isteğe bağlı tanılama verileri olarak kabul edilenler ve toplanan olayların ve alanların açıklaması açıklanmaktadır.
 
 ### <a name="data-fields-that-are-common-for-all-events"></a>Tüm olaylar için ortak olan veri alanları
 
@@ -87,26 +87,26 @@ Aşağıdaki alanlar tüm olaylar için ortak kabul edilir:
 
 |Alan|Açıklama|
 |---|---|
-|platform|Uygulamanın çalıştır çalıştır olduğu platformun kapsamlı sınıflandırması. Microsoft'un sorunun hangi platformlarda ortaya çıkan bir sorun olduğunu belirlemesi ve doğru önceliklerin belirlenmesini sağlar.|
-|machine_guid|Cihazla ilişkilendirilmiş benzersiz tanımlayıcı. Microsoft'un belirli bir yükleme dizisinde sorun olup olmadığını ve kaç kullanıcının etki etkisinin olduğunu belirlemesi için Microsoft'a olanak sağlar.|
-|sense_guid|Cihazla ilişkilendirilmiş benzersiz tanımlayıcı. Microsoft'un belirli bir yükleme dizisinde sorun olup olmadığını ve kaç kullanıcının etki etkisinin olduğunu belirlemesi için Microsoft'a olanak sağlar.|
-|org_id|Cihazın ait olduğu kuruluşla ilişkilendirilmiş benzersiz tanımlayıcı. Microsoft'un belirli bir kuruluş setlerini etkileyen sorunları ve kaç işletmeyi etkile ilgili olduğunu belirlemesi için Microsoft'a olanak sağlar.|
-|ana bilgisayar adı|Yerel cihaz adı (DNS soneki olmadan). Microsoft'un belirli bir yükleme dizisinde sorun olup olmadığını ve kaç kullanıcının etki etkisinin olduğunu belirlemesi için Microsoft'a olanak sağlar.|
-|product_guid|Ürünün benzersiz tanımlayıcısı. Microsoft'un ürünün farklı çeşitlerini etkileyen sorunları ayırt ingdir.|
-|app_version|macOS uygulamasında Uç Nokta için Microsoft Defender sürümü. Microsoft'un, doğru önceliklendirmek için ürünün hangi sürümlerinin sorun gösterdiğini belirlemesi için izin verir.|
-|sig_version|Güvenlik zekası veritabanı sürümü. Microsoft'un, güvenlik zekası sürümlerinin doğru önceliklendirmek için sorun gösterdiği sürümleri belirlemelerine olanak sağlar.|
-|supported_compressions|Uygulama tarafından desteklenen sıkıştırma algoritmalarının listesi, örneğin `['gzip']`. Microsoft'un uygulamayla iletişim kurarken hangi tür sıkıştırmaların kullanıl olacağını anlamasına olanak sağlar.|
-|release_ring|Cihazın ilişkilendirilen halkası (örneğin Insider Hızlı, Insider Yavaş, Üretim). Microsoft'un bir sorunun hangi sürüm halkası içinde olduğunu belirlemesi ve böylelikle doğru önceliklendirmeyi sağlar.|
+|Platform|Uygulamanın üzerinde çalıştığı platformun geniş sınıflandırması. Microsoft'un doğru önceliklendirilebilmesi için bir sorunun hangi platformlarda oluşabileceğini belirlemesine olanak tanır.|
+|machine_guid|Cihazla ilişkili benzersiz tanımlayıcı. Microsoft'un sorunların belirli bir yükleme kümesini etkileyip etkilemediğini ve kaç kullanıcının etkilendiğini belirlemesine olanak tanır.|
+|sense_guid|Cihazla ilişkili benzersiz tanımlayıcı. Microsoft'un sorunların belirli bir yükleme kümesini etkileyip etkilemediğini ve kaç kullanıcının etkilendiğini belirlemesine olanak tanır.|
+|org_id|Cihazın ait olduğu kuruluşla ilişkilendirilmiş benzersiz tanımlayıcı. Microsoft'un sorunların belirli bir kuruluş kümesini etkileyip etkilemediğini ve kaç kuruluşun etkilendiğini belirlemesine olanak tanır.|
+|Hostname|Yerel cihaz adı (DNS soneki olmadan). Microsoft'un sorunların belirli bir yükleme kümesini etkileyip etkilemediğini ve kaç kullanıcının etkilendiğini belirlemesine olanak tanır.|
+|product_guid|Ürünün benzersiz tanımlayıcısı. Microsoft'un ürünün farklı çeşitlerini etkileyen sorunları ayırt etmesine olanak tanır.|
+|app_version|macOS uygulamasındaki Uç Nokta için Microsoft Defender sürümü. Microsoft'un doğru önceliklendirilebilmesi için ürünün hangi sürümlerinin sorun gösterdiğini belirlemesine olanak tanır.|
+|sig_version|Güvenlik zekası veritabanının sürümü. Microsoft'un doğru önceliklendirilebilmesi için güvenlik zekasının hangi sürümlerinin sorun gösterdiğini belirlemesine olanak tanır.|
+|supported_compressions|Uygulama tarafından desteklenen sıkıştırma algoritmalarının listesi, örneğin `['gzip']`. Microsoft'un uygulamayla iletişim kurarken hangi tür sıkıştırmaların kullanılabileceğini anlamasını sağlar.|
+|release_ring|Cihazın ilişkili olduğu halka (örneğin Insider Hızlı, Insider Yavaş, Üretim). Microsoft'un doğru önceliklendirilebilmesi için bir sorunun hangi yayın kademesinde oluşabileceğini belirlemesine olanak tanır.|
 
 ### <a name="required-diagnostic-data"></a>Gerekli tanılama verileri
 
-**Gerekli tanılama verileri** , uç nokta için Microsoft Defender'ı güvenli, güncel ve yüklü olduğu cihazda beklendiği şekilde gerçekleştirmeye yardımcı olmak için gereken minimum verilerdir.
+**Gerekli tanılama verileri**, Uç Nokta için Microsoft Defender güvenli, güncel ve yüklü olduğu cihazda beklendiği gibi performans göstermesini sağlamak için gereken en düşük verilerdir.
 
-Gerekli tanılama verileri, cihaz veya yazılım yapılandırmasıyla ilgili uç nokta için Microsoft Defender ile ilgili sorunları belirlemeye yardımcı olur. Örneğin, yeni eklenen özelliklerle birlikte belirli bir işletim sistemi sürümünde Uç Nokta için Microsoft Defender özelliğinin daha sık kilitleniyor mu yoksa uç nokta özellikleri için bazı Microsoft Defender devre dışı mı kilitleniyor? belirlemeye yardımcı olabilir. Gerekli tanılama verileri, Microsoft'un bu sorunları daha çabuk algılamasını, tanılamasını ve düzeltmesi için kullanıcıların veya kuruluşların etkisinin azalmasına yardımcı olur.
+Gerekli tanılama verileri, bir cihaz veya yazılım yapılandırmasıyla ilgili olabilecek Uç Nokta için Microsoft Defender sorunlarını belirlemeye yardımcı olur. Örneğin, bir Uç Nokta için Microsoft Defender özelliğinin belirli bir işletim sistemi sürümünde, yeni eklenen özelliklerle veya belirli Uç Nokta için Microsoft Defender özelliklerinin devre dışı bırakıldığında daha sık kilitlenip kilitlenmediğini belirlemeye yardımcı olabilir. Gerekli tanılama verileri, Microsoft'un bu sorunları daha hızlı algılamasına, tanılamasına ve düzeltmesine yardımcı olur, böylece kullanıcılar veya kuruluşlar üzerindeki etkisi azalır.
 
 #### <a name="software-setup-and-inventory-data-events"></a>Yazılım kurulumu ve envanter veri olayları
 
-**Uç nokta yüklemesi için Microsoft Defender / kaldırma**:
+**yükleme /kaldırma Uç Nokta için Microsoft Defender**:
 
 Aşağıdaki alanlar toplanır:
 
@@ -114,58 +114,58 @@ Aşağıdaki alanlar toplanır:
 |---|---|
 |correlation_id|Yüklemeyle ilişkili benzersiz tanımlayıcı.|
 |Sürüm|Paketin sürümü.|
-|önem derecesi|İletinin önem derecesi (örneğin Bilgilendirme).|
-|kod|işlemi açıklayan kod.|
-|metin|Ürün yüklemesi ile ilgili ek bilgiler.|
+|Önem|İletinin önem derecesi (örneğin, Bilgilendirici).|
+|Kod|İşlemi açıklayan kod.|
+|Metin|Ürün yüklemesiyle ilişkili ek bilgiler.|
 
-**Uç nokta yapılandırması için Microsoft Defender**:
+**Uç Nokta için Microsoft Defender yapılandırması**:
 
 Aşağıdaki alanlar toplanır:
 
 |Alan|Açıklama|
 |---|---|
-|antivirus_engine.enable_real_time_protection|Gerçek zamanlı korumanın cihazda etkin olup olmadığı.|
-|antivirus_engine.pasif_modu|Cihazda pasif modunun etkin olup olmadığı.|
-|cloud_service.enabled|Cihazda bulut teslimi korumasının etkin olup olmadığı.|
-|cloud_service.timeout|Uygulama Uç nokta bulutu için Microsoft Defender ile iletişim kurarken zaman out.|
-|cloud_service.heartbeat_interval|Ürünün buluta gönderdiği ardışık sinyaller arasındaki aralık.|
+|antivirus_engine.enable_real_time_protection|Cihazda gerçek zamanlı korumanın etkinleştirilip etkinleştirilmediği.|
+|antivirus_engine.passive_mode|Cihazda pasif modun etkinleştirilip etkinleştirilmediği.|
+|cloud_service.enabled|Bulutta sunulan korumanın cihazda etkinleştirilip etkinleştirilmediği.|
+|cloud_service.timeout|Uygulama Uç Nokta için Microsoft Defender bulutuyla iletişim kurarken zaman aşımına uğradı.|
+|cloud_service.heartbeat_interval|Ürün tarafından buluta gönderilen ardışık sinyaller arasındaki aralık.|
 |cloud_service.service_uri|Bulutla iletişim kurmak için kullanılan URI.|
 |cloud_service.diagnostic_level|Cihazın tanılama düzeyi (gerekli, isteğe bağlı).|
-|cloud_service.automatic_sample_submission|Otomatik örnek gönderimin açık olup olmadığı.|
-|cloud_service.automatic_definition_update_enabled|Otomatik tanım güncelleştirmenin açık olup olmadığı.|
-|edr.early_preview|Cihazın ilk önizleme özellikleri EDR çalıştırıp çalıştırması gerektiği.|
+|cloud_service.automatic_sample_submission|Otomatik örnek göndermenin açık olup olmadığı.|
+|cloud_service.automatic_definition_update_enabled|Otomatik tanım güncelleştirmesinin açık olup olmadığı.|
+|edr.early_preview|Cihazın EDR erken önizleme özelliklerini çalıştırıp çalıştırmayacağı.|
 |edr.group_id|Algılama ve yanıt bileşeni tarafından kullanılan grup tanımlayıcısı.|
 |edr.tags|Kullanıcı tanımlı etiketler.|
-|özelliklerine sahiptir.\[ isteğe bağlı özellik adı\]|Önizleme özelliklerinin listesi ve bunların etkin olup olmadığı.|
+|Özellik.\[ isteğe bağlı özellik adı\]|Önizleme özelliklerinin listesi ve bunların etkinleştirilip etkinleştirilmediği.|
 
 #### <a name="product-and-service-usage-data-events"></a>Ürün ve hizmet kullanımı verisi olayları
 
-**Güvenlik zekası güncelleştirme raporu**:
+**Güvenlik bilgileri güncelleştirme raporu**:
 
 Aşağıdaki alanlar toplanır:
 
 |Alan|Açıklama|
 |---|---|
-|from_version|İlk güvenlik zekası sürümü.|
-|to_version|Yeni güvenlik zekası sürümü.|
-|durum|Başarılı veya başarısız olduğunu gösteren güncelleştirmenin durumu.|
-|using_proxy|Güncelleştirmenin proxy üzerinden yap isteyip olmadığı.|
-|hatasını|Güncelleştirme başarısız olursa hata kodu.|
-|Neden|Dosyalandı ise hata iletisi.|
+|from_version|Özgün güvenlik bilgileri sürümü.|
+|to_version|Yeni güvenlik bilgileri sürümü.|
+|Durum|Başarılı veya başarısız olduğunu belirten güncelleştirmenin durumu.|
+|using_proxy|Güncelleştirmenin bir ara sunucu üzerinden yapılıp yapılmadığı.|
+|Hata|Güncelleştirme başarısız olursa hata kodu.|
+|Neden|Güncelleştirilmiş dosyalandıysa hata iletisi.|
 
 #### <a name="product-and-service-performance-data-events-for-required-diagnostic-data"></a>Gerekli tanılama verileri için ürün ve hizmet performansı veri olayları
 
 **Beklenmeyen uygulama çıkışı (kilitlenme)**:
 
-Uygulama beklenmedik bir şekilde çıkışta olduğunda sistem bilgilerini ve uygulamanın durumunu toplar.
+Bir uygulama beklenmedik şekilde çıktığında sistem bilgilerini ve uygulamanın durumunu toplar.
 
 Aşağıdaki alanlar toplanır:
 
 |Alan|Açıklama|
 |---|---|
-|v1_crash_count|İstemci makinesi üzerinde V1 altyapısı işleminin saatte bir kilitlenme sayısı|
-|v2_crash_count|İstemci makinesi üzerinde V2 altyapısı işleminin saatte bir kilitlenme sayısı|
-|EDR_crash_count|İstemci EDR her saatte bir kilitlenmeye neden olan kilitlenme sayısı|
+|v1_crash_count|İstemci makinede V1 altyapı işleminin saatte bir kilitlenme sayısı|
+|v2_crash_count|İstemci makinede V2 altyapı işleminin saatte bir kilitlenme sayısı|
+|EDR_crash_count|İstemci makinede EDR işleminin saatte bir kilitlenme sayısı|
 
 **Çekirdek uzantısı istatistikleri**:
 
@@ -173,21 +173,21 @@ Aşağıdaki alanlar toplanır:
 
 |Alan|Açıklama|
 |---|---|
-|Sürüm|macOS'ta Uç Nokta için Microsoft Defender Sürümü.|
-|instance_id|Çekirdek uzantısı başlangıçta oluşturulan benzersiz tanımlayıcı.|
+|Sürüm|macOS'ta Uç Nokta için Microsoft Defender sürümü.|
+|instance_id|Çekirdek uzantısı başlangıcında oluşturulan benzersiz tanımlayıcı.|
 |trace_level|Çekirdek uzantısının izleme düzeyi.|
-|alt sistem|Gerçek zamanlı koruma için temeldeki alt sistem kullanılır.|
-|ipc.connects|Çekirdek uzantısıyla alınan bağlantı isteklerinin sayısı.|
+|Alt|Gerçek zamanlı koruma için kullanılan temel alt sistem.|
+|ipc.connects|Çekirdek uzantısı tarafından alınan bağlantı isteklerinin sayısı.|
 |ipc.rejects|Çekirdek uzantısı tarafından reddedilen bağlantı isteklerinin sayısı.|
-|ipc.connected|Çekirdek uzantısına etkin bağlantı olup olmadığı.|
+|ipc.connected|Çekirdek uzantısına etkin bir bağlantı olup olmadığı.|
 
 #### <a name="support-data"></a>Destek verileri
 
 **Tanılama günlükleri**:
 
-Tanı günlükleri yalnızca geri bildirim gönderme özelliğinin bir parçası olarak kullanıcının onayıyla toplanır. Destek günlüklerinin bir parçası olarak aşağıdaki dosyalar toplanır:
+Tanılama günlükleri yalnızca geri bildirim gönderme özelliğinin bir parçası olarak kullanıcının onayıyla toplanır. Aşağıdaki dosyalar destek günlüklerinin bir parçası olarak toplanır:
 
-- */Library/Logs/Microsoft/mdatp/ altındaki tüm dosyalar*
+- */Library/Logs/Microsoft/mdatp/* altındaki tüm dosyalar
 - macOS'ta Uç Nokta için Microsoft Defender tarafından oluşturulan ve kullanılan */Library/Application Support/Microsoft/Defender/* altındaki dosyaların alt kümesi
 - macOS'ta Uç Nokta için Microsoft Defender tarafından kullanılan */Library/Managed Preferences* altındaki dosyaların alt kümesi
 - /Library/Logs/Microsoft/autoupdate.log
@@ -195,35 +195,35 @@ Tanı günlükleri yalnızca geri bildirim gönderme özelliğinin bir parçası
 
 ### <a name="optional-diagnostic-data"></a>İsteğe bağlı tanılama verileri
 
-**İsteğe bağlı tanılama** verileri, Microsoft'un ürün geliştirmeleri yapmana yardımcı olan ve sorunları algılamaya, tanılamaya ve düzeltmeye yardımcı olacak gelişmiş bilgiler sağlayan ek verilerdir.
+**İsteğe bağlı tanılama verileri** , Microsoft'un ürün geliştirmeleri yapmasına yardımcı olan ek verilerdir ve sorunları algılamaya, tanılamaya ve düzeltmeye yardımcı olmak için gelişmiş bilgiler sağlar.
 
 Bize isteğe bağlı tanılama verilerini göndermeyi seçerseniz, bu durum gerekli tanılama verilerini de içerir.
 
-İsteğe bağlı tanılama verilerine örnek olarak, Microsoft'un ürün yapılandırması hakkında top aldığı veriler (örneğin, cihazda ayarlanmış dışlama sayısı) ve ürün performansı (ürünün bileşenlerinin performansıyla ilgili toplama ölçüleri) yer alır.
+İsteğe bağlı tanılama verilerine örnek olarak Microsoft'un ürün yapılandırması (örneğin cihazda ayarlanan dışlama sayısı) ve ürün performansı (ürünün bileşenlerinin performansı hakkında toplu ölçüler) hakkında topladığı veriler verilebilir.
 
-#### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>İsteğe bağlı tanılama verileri için yazılım kurulumu ve stok verileri olayları
+#### <a name="software-setup-and-inventory-data-events-for-optional-diagnostic-data"></a>İsteğe bağlı tanılama verileri için yazılım kurulumu ve envanter verileri olayları
 
-**Uç nokta yapılandırması için Microsoft Defender**:
+**Uç Nokta için Microsoft Defender yapılandırması**:
 
 Aşağıdaki alanlar toplanır:
 
 |Alan|Açıklama|
 |---|---|
-|connection_retry_timeout|Bulutla iletişime geçken bağlantıda zaman outnı yeniden deneyin.|
-|file_hash_cache_maximum|Ürün önbelleği boyutu.|
-|crash_upload_daily_limit|Günlük olarak karşıya yüklenen kilitlenme günlükleri sınırı.|
-|antivirus_engine.exclusions[].is_directory|Tarama dışında kalmanın bir dizin olup olmadığı.|
-|antivirus_engine.exclusions[].path|Tarama dışında bırakılan yol.|
-|antivirus_engine.exclusions[].extension|Tarama dışında bırakılan uzantı.|
-|antivirus_engine.exclusions[].name|Tarama dışında bırakılan dosyanın adı.|
-|antivirus_engine.scan_cache_maximum|Ürün önbelleği boyutu.|
-|antivirus_engine.maximum_scan_threads|Tarama için kullanılan en fazla iş parçacığı sayısı.|
-|antivirus_engine.threat_restore_exclusion_time|Dosya karantinadan geri yüklendi ancak yeniden algılanamaz.|
-|antivirus_engine.threat_type_settings|Ürün tarafından farklı tehdit türlerinin nasıl ele handle handle?.|
+|connection_retry_timeout|Bulutla iletişim kurarken bağlantı yeniden deneme zaman aşımına uğradı.|
+|file_hash_cache_maximum|Ürün önbelleğinin boyutu.|
+|crash_upload_daily_limit|Günlük olarak karşıya yüklenen kilitlenme günlüklerinin sınırı.|
+|antivirus_engine.exclusions[].is_directory|Taramanın dışlanmasının bir dizin olup olmadığı.|
+|antivirus_engine.exclusions[].path|Taramanın dışında bırakılan yol.|
+|antivirus_engine.exclusions[].extension|Uzantı taramanın dışında bırakıldı.|
+|antivirus_engine.exclusions[].name|Taramadan dışlanan dosyanın adı.|
+|antivirus_engine.scan_cache_maximum|Ürün önbelleğinin boyutu.|
+|antivirus_engine.maximum_scan_threads|Tarama için kullanılan iş parçacığı sayısı üst sınırı.|
+|antivirus_engine.threat_restoration_exclusion_time|Karantinadan geri yüklenen bir dosyanın yeniden algılanması için önce zaman aşımı.|
+|antivirus_engine.threat_type_settings|Farklı tehdit türlerinin ürün tarafından nasıl işlenme şekline yönelik yapılandırma.|
 |filesystem_scanner.full_scan_directory|Tam tarama dizini.|
 |filesystem_scanner.quick_scan_directories|Hızlı taramada kullanılan dizinlerin listesi.|
-|edr.latency_mode|Algılama ve yanıt bileşeni tarafından kullanılan gecikme süresi modu.|
-|edr.proxy_address|Algılama ve yanıt bileşeni tarafından kullanılan ara sunucu adresi.|
+|edr.latency_mode|Algılama ve yanıt bileşeni tarafından kullanılan gecikme modu.|
+|edr.proxy_address|Algılama ve yanıt bileşeni tarafından kullanılan proxy adresi.|
 
 **Microsoft Otomatik Güncelleştirme yapılandırması**:
 
@@ -231,8 +231,8 @@ Aşağıdaki alanlar toplanır:
 
 |Alan|Açıklama|
 |---|---|
-|how_to_check|Ürün güncelleştirmelerinin nasıl denetlenir (örneğin otomatik veya el ile) belirler.|
-|channel_name|Cihazla ilişkilendirilmiş kanalı güncelleştirin.|
+|how_to_check|Ürün güncelleştirmelerinin nasıl denetleneceğini belirler (örneğin, otomatik veya el ile).|
+|channel_name|Cihazla ilişkili kanalı güncelleştirin.|
 |manifest_server|Güncelleştirmeleri indirmek için kullanılan sunucu.|
 |update_cache|Güncelleştirmeleri depolamak için kullanılan önbelleğin konumu.|
 
@@ -245,10 +245,10 @@ Aşağıdaki alanlar toplanır:
 |Alan|Açıklama|
 |---|---|
 |sha256|Destek günlüğünün SHA256 tanımlayıcısı.|
-|boyut|Destek günlüğünün boyutu.|
-|original_path|Destek günlüğünün yolu (her zaman */Library/Application Support/Microsoft/Defender/wdavdiag/ altında).*|
-|biçim|Destek günlüğünün biçimi.|
-|meta veri|Destek günlüğünün içeriği hakkında bilgi.|
+|Boyutu|Destek günlüğünün boyutu.|
+|original_path|Destek günlüğünün yolu (her zaman */Library/Application Support/Microsoft/Defender/wdavdiag/* altında).|
+|Biçim|Destek günlüğünün biçimi.|
+|Meta veri|Destek günlüğünün içeriği hakkında bilgi.|
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Tanılama günlüğü karşıya yükleme tamamlandı raporu
 
@@ -258,9 +258,9 @@ Aşağıdaki alanlar toplanır:
 |---|---|
 |request_id|Destek günlüğü karşıya yükleme isteği için bağıntı kimliği.|
 |sha256|Destek günlüğünün SHA256 tanımlayıcısı.|
-|blob_sas_uri|Destek günlüğünü karşıya yüklemek için uygulama tarafından kullanılan URI.|
+|blob_sas_uri|Uygulama tarafından destek günlüğünü karşıya yüklemek için kullanılan URI.|
 
-#### <a name="product-and-service-performance-data-events-for-product-and-service-usage"></a>Ürün ve hizmet kullanımına bağlı ürün ve hizmet performansı verileri olayları
+#### <a name="product-and-service-performance-data-events-for-product-and-service-usage"></a>Ürün ve hizmet kullanımı için ürün ve hizmet performansı veri olayları
 
 **Beklenmeyen uygulama çıkışı (kilitlenme)**:
 
@@ -272,7 +272,7 @@ Aşağıdaki alanlar toplanır:
 
 |Alan|Açıklama|
 |---|---|
-|pkt_ack_timeout|Aşağıdaki özellikler, çekirdek uzantısının başlatılmasından bu yana oluşan olayların sayısını temsil eden toplam sayısal değerlerdir.|
+|pkt_ack_timeout|Aşağıdaki özellikler, çekirdek uzantısının başlatılmasından bu yana gerçekleşen olayların sayısını temsil eden, toplanan sayısal değerlerdir.|
 |pkt_ack_conn_timeout||
 |ipc.ack_pkts||
 |ipc.nack_pkts||

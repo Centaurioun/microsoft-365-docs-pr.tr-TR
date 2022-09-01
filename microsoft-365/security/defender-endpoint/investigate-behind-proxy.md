@@ -1,8 +1,8 @@
 ---
-title: İleri gelen sunuculardan sonra oluşan bağlantı olaylarını araştırma
-description: Proxy yerine gerçek bir hedef ortaya alan Uç Nokta için Microsoft Defender'da ağ koruması aracılığıyla gelişmiş HTTP düzeyi izlemenin nasıl kullanıla olduğunu öğrenin.
-keywords: proxy, ağ koruması, proxy'i iletme, ağ olayları, denetim, engelleme, etki alanı adları, etki alanı
-ms.prod: m365-security
+title: Forward proxy’lerin arkasında oluşan bağlantı olaylarını araştırın
+description: Uç Nokta için Microsoft Defender'da, ara sunucu yerine gerçek bir hedefi ortaya çıkararak ağ koruması aracılığıyla gelişmiş HTTP düzeyinde izlemeyi kullanmayı öğrenin.
+keywords: proxy, ağ koruması, iletme ara sunucusu, ağ olayları, denetim, engelleme, etki alanı adları, etki alanı
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,63 +14,63 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 580f41c24d6d78fb9e5ac7e20eb80e6ae78a505b
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: b34e9cfcbebee2196981e11b5a59a897aeca8cb1
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469811"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67514371"
 ---
-# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>İleri gelen sunuculardan sonra oluşan bağlantı olaylarını araştırma
+# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Forward proxy’lerin arkasında oluşan bağlantı olaylarını araştırın
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
-Uç Nokta için Defender, farklı ağ yığını düzeylerinden ağ bağlantısını izlemeyi destekler. Zorlu bir durum, ağın İnternet'e bir ağ geçidi olarak ileriye doğru ara sunucu kullandığı durumdur.
+Uç Nokta için Defender, ağ yığınının farklı düzeylerinden ağ bağlantısı izlemeyi destekler. Zor bir durum, ağın İnternet'e ağ geçidi olarak ileriye doğru ara sunucu kullanmasıdır.
 
-Ara sunucu, hedef uç nokta gibi davranır. Böyle durumlarda, basit ağ bağlantısı monitörleri doğru olan ancak daha düşük araştırma değerine sahip ara sunucuyla bağlantıları denetlemektedir.
+Proxy, hedef uç noktaymış gibi davranır. Bu gibi durumlarda, basit ağ bağlantısı izleyicileri doğru olan ancak araştırma değeri daha düşük olan proxy ile bağlantıları denetler.
 
-Uç Nokta için Defender, ağ koruması aracılığıyla gelişmiş HTTP düzeyi izlemesini destekler. Açık olduğunda, gerçek hedef etki alanı adlarını ortaya çıkaran yeni bir olay türü ortaya çıkar.
+Uç Nokta için Defender, ağ koruması aracılığıyla gelişmiş HTTP düzeyinde izlemeyi destekler. Açıldığında, gerçek hedef etki alanı adlarını kullanıma sunan yeni bir olay türü ortaya çıkar.
 
-## <a name="use-network-protection-to-monitor-network-connection-behind-a-firewall"></a>Güvenlik duvarının arkasında ağ bağlantısını izlemek için ağ korumasını kullanma
+## <a name="use-network-protection-to-monitor-network-connection-behind-a-firewall"></a>Güvenlik duvarının arkasındaki ağ bağlantısını izlemek için ağ korumasını kullanma
 
-Ağ korumasından kaynaklanan diğer ağ olayları nedeniyle ileri proxy arkasında ağ bağlantısını izlemek mümkündür. Bunları bir cihaz zaman çizelgesinde görmek için ağ korumasını açın (en azından denetim modunda).
+Ağ korumasından kaynaklanan diğer ağ olaylarından dolayı ileriye doğru ara sunucu arkasındaki ağ bağlantısını izlemek mümkündür. Bunları bir cihaz zaman çizelgesinde görmek için ağ korumasını açın (denetim modunda en azından).
 
-Ağ koruması aşağıdaki modlar kullanılarak denetlenabilir:
+Ağ koruması aşağıdaki modlar kullanılarak denetlenebilir:
 
-- **Engelle**: Kullanıcıların veya uygulamaların tehlikeli etki alanlarına bağlanması engellenir. Bu etkinliği aynı etkinlikte Microsoft 365 Defender.
-- **Denetim**: Kullanıcılar veya uygulamaların tehlikeli etki alanlarına bağlanması engellanmaz. Bununla birlikte, bu etkinliği etkinlik etkinliklerini aynı Microsoft 365 Defender.
+- **Engelle**: Kullanıcıların veya uygulamaların tehlikeli etki alanlarına bağlanması engellenir. Bu etkinliği Microsoft 365 Defender görebilirsiniz.
+- **Denetim**: Kullanıcıların veya uygulamaların tehlikeli etki alanlarına bağlanması engellenmez. Ancak, bu etkinliği Microsoft 365 Defender görmeye devam edebilirsiniz.
 
 
-Ağ korumasını kapatsanız bile, kullanıcıların veya uygulamaların tehlikeli etki alanlarına bağlanması engellanmaz. E-Microsoft 365 Defender'de ağ Microsoft 365 Defender.
+Ağ korumasını kapatırsanız, kullanıcıların veya uygulamaların tehlikeli etki alanlarına bağlanması engellenmez. Microsoft 365 Defender'da herhangi bir ağ etkinliği görmezsiniz.
 
-Bunu yapılandırmazsanız, ağ engelleme varsayılan olarak kapalı olur.
+Yapılandırmazsanız, ağ engelleme varsayılan olarak kapatılır.
 
-Daha fazla bilgi için bkz. [Ağ korumasını etkinleştirme](enable-network-protection.md).
+Daha fazla bilgi için bkz [. Ağ korumasını etkinleştirme](enable-network-protection.md).
 
-## <a name="investigation-impact"></a>İncelemenin etkisi
+## <a name="investigation-impact"></a>Araştırma etkisi
 
-Ağ koruması açıkken cihazın zaman çizelgesinde IP adresinin proxy'yi temsil ederken gerçek hedef adresin de proxy'yi temsil eder.
+Ağ koruması açık olduğunda, gerçek hedef adres görünürken cihazın zaman çizelgesinde IP adresinin proxy'yi temsil ettiğini görürsünüz.
 
-:::image type="content" source="images/atp-proxy-investigation.png" alt-text="Cihazın zaman çizelgesinde ağ olayları" lightbox="images/atp-proxy-investigation.png":::
+:::image type="content" source="images/atp-proxy-investigation.png" alt-text="Cihazın zaman çizelgesindeki ağ olayları" lightbox="images/atp-proxy-investigation.png":::
 
-Ağ koruma katmanı tarafından tetiklenen diğer olaylar artık gerçek etki alanı adlarını bir proxy arkasında bile ortaya çıkarabilirsiniz.
+Ağ koruma katmanı tarafından tetiklenen diğer olaylar artık bir ara sunucu arkasında bile gerçek etki alanı adlarını ortaya sürebilmek için kullanılabilir.
 
-Etkinliğin bilgileri:
+Olayın bilgileri:
 
-:::image type="content" source="images/atp-proxy-investigation-event.png" alt-text="Tek bir ağ olayın URL'leri" lightbox="images/atp-proxy-investigation-event.png":::
+:::image type="content" source="images/atp-proxy-investigation-event.png" alt-text="Tek bir ağ olayının URL'leri" lightbox="images/atp-proxy-investigation-event.png":::
 
-## <a name="hunt-for-connection-events-using-advanced-hunting"></a>Gelişmiş avı kullanarak bağlantı etkinliklerini arama
+## <a name="hunt-for-connection-events-using-advanced-hunting"></a>Gelişmiş avcılığı kullanarak bağlantı olaylarını avlama
 
-Tüm yeni bağlantı etkinlikleri, gelişmiş avı da takip etmek için kullanılabilir. Bu olaylar bağlantı olayları olduğu için, bunları DeviceNetworkEvents tablosunda eylem türünün altında `ConnecionSuccess` bulabilirsiniz.
+Tüm yeni bağlantı etkinlikleri, gelişmiş avcılık yoluyla da avlanabilirsiniz. Bu olaylar bağlantı olayları olduğundan, bunları eylem türünün altındaki DeviceNetworkEvents tablosunun `ConnecionSuccess` altında bulabilirsiniz.
 
-Bu basit sorgunun kullanımı tüm ilgili olayları gösterir:
+Bu basit sorguyu kullanmak size tüm ilgili olayları gösterir:
 
 ```console
 DeviceNetworkEvents
@@ -78,9 +78,9 @@ DeviceNetworkEvents
 | take 10
 ```
 
-:::image type="content" source="images/atp-proxy-investigation-ah.png" alt-text="Gelişmiş av sorgusu" lightbox="images/atp-proxy-investigation-ah.png":::
+:::image type="content" source="images/atp-proxy-investigation-ah.png" alt-text="Gelişmiş tehdit avcılığı sorgusu" lightbox="images/atp-proxy-investigation-ah.png":::
 
-Ayrıca, proxy'nin kendisine yönelik bağlantıyla ilgili olayları filtre de atabilirsiniz.
+Ayrıca, proxy'nin kendisiyle bağlantıyla ilgili olayları filtreleyebilirsiniz.
 
 Ara sunucu bağlantılarını filtrelemek için aşağıdaki sorguyu kullanın:
 

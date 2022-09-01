@@ -1,8 +1,8 @@
 ---
-title: MacOS'ta Jamf ile Uç Nokta için Microsoft Defender dağıtımı Pro
-description: MacOS'ta Jamf ile Uç Nokta için Microsoft Defender dağıtımı Pro
-keywords: microsoft, defender, Endpoint için Microsoft Defender, mac, yükleme, dağıtma, kaldırma, intune, jamfpro, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+title: Jamf Pro ile macOS'ta Uç Nokta için Microsoft Defender dağıtma
+description: Jamf Pro ile macOS'ta Uç Nokta için Microsoft Defender dağıtma
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,37 +14,37 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 0ce77d9d63aecdd3150b9dc0f536abcdab2755e8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: df657784239477de63bd34585a2c6c1d2d8fabe6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63012015"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67519654"
 ---
-# <a name="deploying-microsoft-defender-for-endpoint-on-macos-with-jamf-pro"></a>MacOS'ta Jamf ile Uç Nokta için Microsoft Defender dağıtımı Pro
+# <a name="deploying-microsoft-defender-for-endpoint-on-macos-with-jamf-pro"></a>Jamf Pro ile macOS'ta Uç Nokta için Microsoft Defender dağıtma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-MacOS'ta Jamf ile Uç Nokta için Microsoft Defender'ı dağıtmayı Pro.
+Jamf Pro ile macOS'ta Uç Nokta için Microsoft Defender dağıtmayı öğrenin.
 
 > [!NOTE]
-> macOS Catalina (10.15.4) veya daha yeni macOS sürümleri kullanıyorsanız bkz. [macOS Catalina](/microsoft-365/security/defender-endpoint/mac-sysext-policies) için yeni yapılandırma profilleri ve macOS'un daha yeni sürümleri.
+> macOS Catalina (10.15.4) veya macOS'un daha yeni sürümlerini kullanıyorsanız bkz. [macOS Catalina için yeni yapılandırma profilleri ve macOS'un daha yeni sürümleri](/microsoft-365/security/defender-endpoint/mac-sysext-policies).
 
-Bu, çok adımlı bir işlemdir. Aşağıdaki adımların hepsini tamamlamanız gerekir:
+Bu çok adımlı bir işlemdir. Aşağıdaki adımların tümünü tamamlamanız gerekir:
 
-- [Jamf Portalında oturum açın](mac-install-jamfpro-login.md)
-- [Jamf'te macOS cihaz gruplarında Uç Nokta için Microsoft Defender'ı Pro](mac-jamfpro-device-groups.md)
-- [Jamf sitesinde macOS'ta Uç Nokta için Microsoft Defender ilkelerini Pro](mac-jamfpro-policies.md)
-- [macOS cihazlarda Uç Nokta için Microsoft Defender'ı Jamf hizmetine Pro](mac-jamfpro-enroll-devices.md)
+- [Jamf Portalı'na giriş yapın](mac-install-jamfpro-login.md)
+- [Jamf Pro'da macOS cihaz gruplarında Uç Nokta için Microsoft Defender ayarlama](mac-jamfpro-device-groups.md)
+- [Jamf Pro'da macOS ilkelerinde Uç Nokta için Microsoft Defender ayarlama](mac-jamfpro-policies.md)
+- [macOS cihazlarındaki Uç Nokta için Microsoft Defender Jamf Pro'ya kaydetme](mac-jamfpro-enroll-devices.md)
 
 
 

@@ -5,7 +5,7 @@ manager: dansimp
 description: Kurcalama korumasını yapılandırma hakkında sık sorulan sorular.
 keywords: kötü amaçlı yazılım, defender, virüsten koruma, kurcalama koruması
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -16,16 +16,16 @@ ms.author: deniseb
 ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
-ms.technology: mde
+ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 39e295d165ff0130536c62e195a6b3a13bb47317
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 2654e4d199ce58bffdd8f126756b288f5b3b59c3
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67389462"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520599"
 ---
 # <a name="frequently-asked-questions-on-tamper-protection"></a>Kurcalama koruması hakkında sık sorulan sorular
 

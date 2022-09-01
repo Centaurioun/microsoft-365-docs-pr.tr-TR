@@ -2,7 +2,7 @@
 title: Cihaz envanteri
 description: Araştırmayı geliştirmek için Sıralama, filtreleme ve listeyi dışarı aktarma gibi Cihazlar listesinden kullanabileceğiniz kullanılabilir özellikler hakkında bilgi edinin.
 keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, istenmeyen yazılım
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 232f27b9edb23e932d49cf33e026d22abfbe72dd
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.subservice: mde
+ms.openlocfilehash: 2d436df67c9f0ee7e37ce7c6ea6e4580f24af0ff
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617336"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67514378"
 ---
 # <a name="device-inventory"></a>Cihaz envanteri
 

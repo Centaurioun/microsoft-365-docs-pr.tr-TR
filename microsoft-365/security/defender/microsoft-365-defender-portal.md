@@ -24,16 +24,16 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.openlocfilehash: ea1a6138204dd75855ade67ce06822c347160e4f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6c442d0a3a3394a29ad89e81add2a1608c4d675b
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67467909"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67516554"
 ---
 # <a name="microsoft-365-defender-portal"></a>Microsoft 365 Defender portalı
 
-[Microsoft 365 Defender portalı](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47), e-posta, işbirliği, kimlik, cihaz ve bulut uygulaması tehditlerine karşı koruma, algılama, araştırma ve yanıtı merkezi bir yerde birleştirir. Microsoft 365 Defender portalı bilgilere hızlı erişimi, daha basit düzenleri vurgular ve daha kolay kullanım için ilgili bilgileri bir araya getirir. İçindekiler:
+[Microsoft 365 Defender portalı](https://sip.security.microsoft.com/homepage), e-posta, işbirliği, kimlik, cihaz ve bulut uygulaması tehditlerine karşı koruma, algılama, araştırma ve yanıtı merkezi bir yerde birleştirir. Microsoft 365 Defender portalı bilgilere hızlı erişimi, daha basit düzenleri vurgular ve daha kolay kullanım için ilgili bilgileri bir araya getirir. İçindekiler:
 
 - **[Office 365 için Microsoft Defender](/microsoft-365/security/office-365-security/defender-for-office-365)** Office 365 için Microsoft Defender, kuruluşların e-postayı ve Office 365 kaynaklarını korumak için bir dizi önleme, algılama, araştırma ve avcılık özelliğiyle kuruluşlarının güvenliğini sağlamalarına yardımcı olur.
 - **[Uç Nokta için Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** kuruluşunuzdaki cihazlar için önleyici koruma, ihlal sonrası algılama, otomatik araştırma ve yanıt sunar.

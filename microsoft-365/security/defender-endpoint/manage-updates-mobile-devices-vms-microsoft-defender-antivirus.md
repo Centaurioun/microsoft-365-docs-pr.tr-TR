@@ -2,7 +2,7 @@
 title: Mobil cihazların Microsoft Defender Virüsten Koruma tarafından nasıl güncelleştirildiği tanımlama
 description: Dizüstü bilgisayarlar gibi mobil cihazların Microsoft Defender Virüsten Koruma koruma güncelleştirmeleriyle nasıl güncelleştirilmesi gerektiğini yönetin.
 keywords: güncelleştirmeler, koruma, güncelleştirmeleri zamanlama, pil, mobil cihaz, dizüstü bilgisayar, not defteri, kabul etme, microsoft update, wsus, geçersiz kılma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e7f8327dc4bae972528943eceb8cf5c6f28fb0c4
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 97e8d573e6d03e25ecec4d9e038f831687443524
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416364"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67514385"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Mobil cihaz ve sanal makine (VM) güncelleştirmelerini yönetin
 
@@ -29,7 +29,7 @@ ms.locfileid: "65416364"
 
 **Şunlar için geçerlidir:**
 
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Virüsten Koruma
 
@@ -50,7 +50,7 @@ Aşağıdaki makaleler bu durumlarda da yararlı olabilir:
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>WSUS bağlantısı olmayan mobil bilgisayarlarda Microsoft Update'e katılma
 
-Şirket ağına bağlı olmayan veya WSUS bağlantısı olmayan Microsoft Defender Virüsten Koruma çalışan mobil cihazlarda güvenlik bilgilerini güncel tutmak için Microsoft Update'i kullanabilirsiniz.
+Microsoft Defender Virüsten Koruma çalıştıran mobil cihazlarda şirket ağına bağlı olmayan veya WSUS bağlantısı olmayan mobil cihazlarda Güvenlik zekasını güncel tutmak için Microsoft Update'i kullanabilirsiniz.
 
 Bu, WSUS'yi Microsoft Update'i geçersiz kılacak şekilde ayarlamış olsanız bile koruma güncelleştirmelerinin cihazlara (Microsoft Update aracılığıyla) teslim edilebileceği anlamına gelir.
 
@@ -68,7 +68,7 @@ Mobil cihazda Microsoft Update'i aşağıdaki yollardan biriyle kabul edebilirsi
 
 3. **İlkeler'i** ve ardından **Yönetim şablonları'nı** seçin.
 
-4. **İmza Güncelleştirmeleri** **Microsoft Defender Virüsten Koruma bileşenleri** \> **Windows** \> için ağacı genişletin.
+4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **İmzası Güncelleştirmeler** genişletin.
 
 5. **Microsoft Update'ten Güvenlik bilgileri güncelleştirmelerine izin ver** seçeneğini **Etkin** olarak ayarlayın ve **ardından Tamam'ı** seçin.
 
@@ -84,11 +84,11 @@ Mobil cihazda Microsoft Update'i aşağıdaki yollardan biriyle kabul edebilirsi
 
 2. **Gelişmiş seçenekler'i** seçin.
 
-3. **Windows güncelleştirdiğimde Diğer Microsoft ürünleri için güncelleştirme ver** onay kutusunu seçin.
+3. **Windows'u güncelleştirdiğimde diğer Microsoft ürünleri için güncelleştirmeler ver** onay kutusunu seçin.
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>Pil gücüyle çalışırken güvenlik bilgileri güncelleştirmelerini engelleme
 
-Microsoft Defender Virüsten Koruma yalnızca bilgisayar kablolu bir güç kaynağına bağlı olduğunda koruma güncelleştirmelerini indirecek şekilde yapılandırabilirsiniz.
+Microsoft Defender Virüsten Koruma'nın koruma güncelleştirmelerini yalnızca bilgisayar kablolu bir güç kaynağına bağlı olduğunda indirecek şekilde yapılandırabilirsiniz.
 
 ### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>Pil gücünde güvenlik zekası güncelleştirmelerini önlemek için grup ilkesi kullanın
 
@@ -98,12 +98,12 @@ Microsoft Defender Virüsten Koruma yalnızca bilgisayar kablolu bir güç kayna
 
 3. **İlkeler'i** ve ardından **Yönetim şablonları'nı** seçin.
 
-4. **İmza** **Güncelleştirmeleri Microsoft Defender Virüsten Koruma bileşenleri** \> **Windows** \> ağacı genişletin ve **pil gücüyle çalışırken güvenlik zekası güncelleştirmelerine izin ver** seçeneğini **Devre Dışı** olarak ayarlayın. Sonra **Tamam**’ı seçin.
+4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **İmzası Güncelleştirmeler** genişletin ve **pil gücüyle çalışırken güvenlik bilgileri güncelleştirmelerine izin ver** seçeneğini **Devre Dışı** olarak ayarlayın. Sonra **Tamam**’ı seçin.
 
 Bu eylem, bilgisayar pil gücündeyken koruma güncelleştirmelerinin indirilmesini engeller.
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -115,4 +115,4 @@ Bu eylem, bilgisayar pil gücündeyken koruma güncelleştirmelerinin indirilmes
 ## <a name="related-articles"></a>İlgili makaleler
 
 - [Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Windows 10'da Microsoft Defender Virüsten Koruma güncelleştirme ve yönetme](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Windows 10'da Microsoft Defender Virüsten Koruma'ya güncelleştirme ve yönetme](deploy-manage-report-microsoft-defender-antivirus.md)

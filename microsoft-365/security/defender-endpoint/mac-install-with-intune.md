@@ -2,7 +2,7 @@
 title: Mac'te Uç Nokta için Microsoft Defender için Intune tabanlı dağıtım
 description: Microsoft Intune kullanarak Mac'e Uç Nokta için Microsoft Defender yükleyin.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 4c2c1f7c11c57ca45411b74023807077f73ba8bf
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.subservice: mde
+ms.openlocfilehash: 79af6ae1a6fc54726789caaf9c49dbe997bd3186
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044116"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520785"
 ---
-# <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS Uç Nokta için Microsoft Defender için Intune tabanlı dağıtım
+# <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender için Intune tabanlı dağıtım
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "66044116"
 - [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Bu konuda, Intune aracılığıyla macOS üzerinde Uç Nokta için Microsoft Defender nasıl dağıtılacağı açıklanmaktadır. Başarılı bir dağıtım için aşağıdaki adımların tümünün tamamlanması gerekir:
+Bu konuda, Intune aracılığıyla macOS'ta Uç Nokta için Microsoft Defender nasıl dağıtılacağı açıklanmaktadır. Başarılı bir dağıtım için aşağıdaki adımların tümünün tamamlanması gerekir:
 
 1. [Ekleme paketini indirme](#download-the-onboarding-package)
 1. [İstemci cihazı kurulumu](#client-device-setup)
@@ -42,7 +42,7 @@ Bu konuda, Intune aracılığıyla macOS üzerinde Uç Nokta için Microsoft Def
 
 ## <a name="prerequisites-and-system-requirements"></a>Önkoşullar ve sistem gereksinimleri
 
-Başlamadan önce, geçerli yazılım sürümü için önkoşulların ve sistem gereksinimlerinin açıklaması için [macOS sayfasındaki ana Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md) bakın.
+Başlamadan önce, geçerli yazılım sürümü için önkoşulların ve sistem gereksinimlerinin açıklaması için [macOS'ta ana Uç Nokta için Microsoft Defender sayfasına](microsoft-defender-endpoint-mac.md) bakın.
 
 ## <a name="overview"></a>Genel bakış
 
@@ -68,7 +68,7 @@ Aşağıdaki tabloda, Intune aracılığıyla Mac'lerde Uç Nokta için Microsof
 
 Ekleme paketlerini Microsoft 365 Defender portalından indirin:
 
-1. Microsoft 365 Defender portalında **Ayarlar** \> **Uç Noktalar** \> **Cihaz yönetimi** \> **Ekleme'ye** gidin.
+1. Microsoft 365 Defender portalında **Ayarlar** \> **Uç Noktaları** \> **Cihaz yönetimi** \> **Ekleme'ye** gidin.
 
 2. İşletim sistemini **macOS** ve dağıtım yöntemini **Mobil Cihaz Yönetimi / Microsoft Intune** olarak ayarlayın.
 
@@ -100,12 +100,12 @@ Sonraki adım, ihtiyaç Uç Nokta için Microsoft Defender sistem yapılandırma
 Bu profil, Uç Nokta için Microsoft Defender lisans bilgilerini içerir. Bu profil olmadan Uç Nokta için Microsoft Defender lisanslanmadığını bildirir.
 
 1. **Yapılandırma Profilleri'nin** altında **Profil Oluştur'u** seçin.
-1. **Platform**= **macOS**, **Profil türü Şablonları'nı**= seçin. **Şablon adı**= **Özel**. **Oluştur'a** tıklayın.
+1. **Platform**=**macOS**, **Profil türü Şablonları'nı**= seçin. **Şablon adı**= **Özel**. **Oluştur'a** tıklayın.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-1.png" alt-text="Özel Yapılandırma Profili oluşturma sayfası" lightbox="images/mdatp-6-systemconfigurationprofiles-1.png":::
 
-1. Profil için "Bulut için Defender veya macOS için uç nokta ekleme" gibi bir ad seçin. **İleri**'ye tıklayın.
+1. Profil için "Bulut için Defender veya macOS için Uç Nokta ekleme" gibi bir ad seçin. **İleri**'ye tıklayın.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-2.png" alt-text="Özel Yapılandırma Profili adı alanı" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
@@ -131,10 +131,10 @@ Bu profil, Uç Nokta için Microsoft Defender lisans bilgilerini içerir. Bu pro
 
 ### <a name="approve-system-extensions"></a>Sistem Uzantılarını Onayla
 
-Bu profil macOS 10.15 (Catalina) veya daha yeni sürümler için gereklidir. Eski macOS yoksayılır.
+Bu profil macOS 10.15 (Catalina) veya daha yeni sürümler için gereklidir. Eski macOS'ta yoksayılır.
 
 1. **Yapılandırma Profilleri'nin** altında **Profil Oluştur'u** seçin.
-1. **Platform**= **macOS**, **Profil türü Şablonları'nı**= seçin. **Şablon adı**= **Uzantılar**. **Oluştur'a** tıklayın.
+1. **Platform**=**macOS**, **Profil türü Şablonları'nı**= seçin. **Şablon adı**= **Uzantılar**. **Oluştur'a** tıklayın.
 1. **Temel Bilgiler** sekmesinde, bu yeni profile bir ad verin.
 1. **Yapılandırma ayarları** sekmesinde Sistem **Uzantıları'nı** genişletin, **İzin verilen sistem uzantıları bölümüne aşağıdaki girdileri** ekleyin:
 
@@ -151,13 +151,13 @@ Bu profil macOS 10.15 (Catalina) veya daha yeni sürümler için gereklidir. Esk
 
 ### <a name="kernel-extensions"></a>Çekirdek Uzantıları
 
-Bu profil macOS 10.15 (Catalina) veya üzeri için gereklidir. Daha yeni macOS yoksayılır.
+Bu profil macOS 10.15 (Catalina) veya daha eski sürümler için gereklidir. Daha yeni macOS'ta yoksayılır.
 
 > [!CAUTION]
 > Apple Silicon (M1) cihazları KEXT'yi desteklemez. KEXT ilkelerini içeren bir yapılandırma profilinin yüklenmesi bu cihazlarda başarısız olur.
 
 1. **Yapılandırma Profilleri'nin** altında **Profil Oluştur'u** seçin.
-1. **Platform**= **macOS**, **Profil türü Şablonları'nı**= seçin. **Şablon adı**= **Uzantılar**. **Oluştur'a** tıklayın.
+1. **Platform**=**macOS**, **Profil türü Şablonları'nı**= seçin. **Şablon adı**= **Uzantılar**. **Oluştur'a** tıklayın.
 1. **Temel Bilgiler** sekmesinde, bu yeni profile bir ad verin.
 1. **Yapılandırma ayarları** sekmesinde **Çekirdek Uzantıları'nı** genişletin.
 1. **Takım tanımlayıcısını** **UBF8T346G9** olarak ayarlayın ve **İleri'ye** tıklayın.
@@ -171,7 +171,7 @@ Bu profil macOS 10.15 (Catalina) veya üzeri için gereklidir. Daha yeni macOS y
 ### <a name="full-disk-access"></a>Tam Disk Erişimi
 
    > [!CAUTION]
-   > macOS 10.15 (Catalina) yeni güvenlik ve gizlilik geliştirmeleri içerir. Bu sürümden başlayarak, uygulamalar varsayılan olarak açık onay olmadan disk üzerindeki belirli konumlara (Belgeler, İndirmeler, Masaüstü vb.) erişemez. Bu onay olmadığında, Uç Nokta için Microsoft Defender cihazınızı tam olarak koruyamaz.
+   > macOS 10.15 (Catalina), yeni güvenlik ve gizlilik geliştirmeleri içerir. Bu sürümden başlayarak, uygulamalar varsayılan olarak açık onay olmadan disk üzerindeki belirli konumlara (Belgeler, İndirmeler, Masaüstü vb.) erişemez. Bu onay olmadığında, Uç Nokta için Microsoft Defender cihazınızı tam olarak koruyamaz.
    >
    > Bu yapılandırma profili, Uç Nokta için Microsoft Defender Için Tam Disk Erişimi verir. daha önce Uç Nokta için Microsoft Defender Intune aracılığıyla yapılandırdıysanız, dağıtımı bu yapılandırma profiliyle güncelleştirmenizi öneririz.
 
@@ -181,7 +181,7 @@ Profil adı olarak "Uç Nokta Tam Disk Erişimi için Defender"ı ve Yapılandı
 
 ### <a name="network-filter"></a>Ağ Filtresi
 
-Uç Nokta Algılama ve Yanıt özelliklerinin bir parçası olarak macOS'da Uç Nokta için Microsoft Defender yuva trafiğini inceler ve bu bilgileri Microsoft 365 Defender portalına bildirir. Aşağıdaki ilke, ağ uzantısının bu işlevi gerçekleştirmesine izin verir.
+Uç Nokta Algılama ve Yanıt özelliklerinin bir parçası olarak macOS'ta Uç Nokta için Microsoft Defender yuva trafiğini inceler ve bu bilgileri Microsoft 365 Defender portalına bildirir. Aşağıdaki ilke, ağ uzantısının bu işlevi gerçekleştirmesine izin verir.
 
 [GitHub depomuzdan](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) [**netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) dosyasını indirin.
 
@@ -189,9 +189,9 @@ Profil adı olarak "Uç Nokta Ağ Filtresi için Defender"ı ve Yapılandırma p
 
 ### <a name="notifications"></a>Bildirim
 
-Bu profil, macOS ve Microsoft Otomatik Güncelleştirme'de Uç Nokta için Microsoft Defender macOS 10.15 (Catalina) veya daha yeni sürümlerde kullanıcı arabiriminde bildirimleri görüntülemesine izin vermek için kullanılır.
+Bu profil, macOS ve Microsoft Auto Update'te Uç Nokta için Microsoft Defender macOS 10.15 (Catalina) veya daha yeni sürümlerde kullanıcı arabiriminde bildirimleri görüntülemesine izin vermek için kullanılır.
 
-[GitHub depomuzdan](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) [**notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) dosyasını indirin.
+[**Notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) dosyasını [GitHub depomuzdan](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) indirin.
 
 Profil adı olarak "Uç Nokta Bildirimleri için Defender" ve Yapılandırma profili adı olarak **notif.mobileconfig** dosyasını indirerek [yukarıdan blob](#onboarding-blob) ekleme yönergelerini izleyin.
 
@@ -212,7 +212,7 @@ Bu adım, kayıtlı makinelere Uç Nokta için Microsoft Defender dağıtılmas�
     > :::image type="content" source="images/mdatp-8-app-before.png" alt-text="Uygulamanın genel bakış sayfası" lightbox="images/mdatp-8-app-before.png":::
 
 1. Platforma göre > macOS > Ekle'yi seçin.
-1. **Uygulama türü'nü**= seçin **macOS** **Seç'e** tıklayın.
+1. **Uygulama türü****macOS'u**= seçin, **Seç'e** tıklayın.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-9-app-type.png" alt-text="Belirli uygulama türü" lightbox="images/mdatp-9-app-type.png":::
@@ -228,12 +228,12 @@ Bu adım, kayıtlı makinelere Uç Nokta için Microsoft Defender dağıtılmas�
     > :::image type="content" source="images/mdatp-11-assignments.png" alt-text="Intune atama bilgileri sayfası" lightbox="images/mdatp-11-assignments.png":::
 
 1. Gözden Geçir ve **Oluştur'u seçin**.
-1. Tüm uygulamalar listesinde görmek için **Platforma** \> göre **Uygulamalar** \> **macOS** ziyaret edebilirsiniz.
+1. Tüm uygulamalar listesinde görmek için **MacOS** **platformuna** \> göre **Uygulamalar** \> sayfasını ziyaret edebilirsiniz.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-12-applications.png" alt-text="Uygulama listeleri sayfası" lightbox="images/mdatp-12-applications.png":::
 
-Daha fazla bilgi için bkz[. Microsoft Intune kullanarak macOS cihazlara Uç Nokta için Microsoft Defender ekleme](/mem/intune/apps/apps-advanced-threat-protection-macos).)
+Daha fazla bilgi için bkz. [Microsoft Intune kullanarak macOS cihazlarına Uç Nokta için Microsoft Defender ekleme](/mem/intune/apps/apps-advanced-threat-protection-macos).)
 
    > [!CAUTION]
    > Yukarıda açıklandığı gibi tüm gerekli yapılandırma profillerini oluşturmanız ve bunları tüm makinelere göndermeniz gerekir.
@@ -290,4 +290,4 @@ Bir hata oluştuğunda yükleyici tarafından oluşturulan otomatik olarak oluş
 
 ## <a name="uninstallation"></a>Kaldırma
 
-İstemci cihazlarından macOS Uç Nokta için Microsoft Defender kaldırma hakkında ayrıntılı bilgi için bkz. [Kaldırma](mac-resources.md#uninstalling).
+macOS'ta Uç Nokta için Microsoft Defender istemci cihazlarından kaldırma hakkında ayrıntılı bilgi için bkz. [Kaldırma](mac-resources.md#uninstalling).
