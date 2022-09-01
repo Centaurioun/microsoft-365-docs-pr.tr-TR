@@ -2,7 +2,7 @@
 title: Etki alanıyla ilgili uyarılar API'lerini alma
 description: Uç Nokta için Microsoft Defender'da belirli bir etki alanı adresiyle ilgili uyarıları almak için Etki alanıyla ilgili uyarıları alma API'sini kullanmayı öğrenin.
 keywords: api'ler, graf api'leri, desteklenen API'ler, alma, etki alanı, ilgili, uyarılar
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 0d2cc5c906110b0159439fc27de0f5690460928d
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 6d127010b8db8e91f4d639b2280bfe69f414af29
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325469"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524248"
 ---
 # <a name="get-domain-related-alerts-api"></a>Etki alanıyla ilgili uyarılar API'lerini alma
 
