@@ -16,24 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Microsoft Teams'de sohbet iletilerini aramak ve temizlemek ve Teams'deki veri taşması olaylarına yanıt vermek için eBulma (Premium) ve Microsoft Graph Gezgini'ni kullanın.
-ms.openlocfilehash: 372293e11ee16498746da69c824a91abd108f2cf
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 12ac9bbc0cf45a7609ddcbfcc382d579e4641cd9
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66862249"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496713"
 ---
 # <a name="search-and-purge-chat-messages-in-teams-preview"></a>Teams'de sohbet iletilerini arama ve temizleme (Önizleme)
 
 Microsoft Teams'de sohbet iletilerini aramak ve silmek için eKeşif (Premium) ve Microsoft Graph Gezgini'ni kullanabilirsiniz. Bu, hassas bilgileri veya uygunsuz içeriği bulup kaldırmanıza yardımcı olabilir. Bu arama ve temizleme iş akışı, Teams sohbet iletileri aracılığıyla gizli veya kötü amaçlı bilgiler içeren içerik yayımlandığında veri taşması olayına yanıt vermenizi de sağlar.
 
-> [!NOTE]
-> Bu makale Microsoft 365 Kurumsal kuruluşlar için geçerlidir. ABD Kamu bulutu (GCC, GCC High ve DoD dahil) için destek yakında sunulacaktır.
-
 ## <a name="before-you-search-and-purge-chat-messages"></a>Sohbet iletilerini aramadan ve temizlemeden önce
 
 - Bir eBulma (Premium) olayı oluşturmak ve sohbet iletilerini aramak için koleksiyonları kullanmak için, Microsoft Purview uyumluluk portalı **eBulma Yöneticisi** rol grubunun üyesi olmanız gerekir. Sohbet iletilerini silmek için **Size Arama ve Temizleme** rolü atanmalıdır. Bu rol, varsayılan olarak Veri Araştırmacısı ve Kuruluş Yönetimi rol gruplarına atanır. Daha fazla bilgi için bkz. [eBulma izinleri atama](assign-ediscovery-permissions.md).
-- Arama ve temizleme, kiracınızdaki konuşmalar için desteklenir. Teams Connect Sohbeti (Dış Erişim veya Federasyon) konuşmaları desteği bazı durumlarda arabirimde etkinleştirilir ancak istendiği gibi çalışmaz.
+- Arama ve temizleme, kiracınızdaki konuşmalar için desteklenir. Teams Bağlantı Sohbet (Dış Erişim veya Federasyon) konuşmaları desteği bazı durumlarda arabirimde etkinleştirilir ancak istendiği gibi çalışmaz.
 - Posta kutusu başına bir kerede en fazla 10 öğe kaldırılabilir. Sohbet iletilerini arama ve kaldırma özelliği bir olay yanıtı aracı olması amaçlandığından, bu sınır sohbet iletilerinin hızla kaldırılmasına yardımcı olur.
 
 ## <a name="search-and-purge-workflow"></a>İş akışını arama ve temizleme
@@ -143,6 +140,9 @@ Graph Explorer'ı kullanma hakkında bilgi için bkz. [Microsoft Graph API'lerin
 
 3. İlgili kimliği kopyalayın (veya kopyalayıp bir metin dosyasına yapıştırın). Sohbet iletilerini temizlemek için bir sonraki görevde bu kimliği kullanacaksınız.
 
+> [!TIP]
+> Koleksiyon kimliğini almak için önceki yordamı kullanmak yerine, servis talebini Microsoft Purview uyumluluk portalı açabilirsiniz. Servis talebini açın ve İşler sekmesine gidin. İlgili koleksiyonu seçin ve Destek bilgileri'nin altında iş kimliğini bulun (burada görüntülenen iş kimliği koleksiyon kimliğiyle aynıdır).
+
 ### <a name="purge-the-chat-messages"></a>Sohbet iletilerini temizleme
 
 1. Graph Explorer'da, 2. Adımda oluşturduğunuz koleksiyon tarafından döndürülen öğeleri temizlemek için aşağıdaki POST isteğini çalıştırın. İstek sorgusunun adres çubuğundaki değeri `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` kullanın; burada caseId ve collectionId, önceki yordamlarda elde ettiğiniz kimliklerdir. Kimlik değerlerini parantezler ve tek tırnak işaretleri ile çevrelemeye özen gösterin.
@@ -155,11 +155,28 @@ Graph Explorer'ı kullanma hakkında bilgi için bkz. [Microsoft Graph API'lerin
 
   purgeData hakkında daha fazla bilgi için bkz. [sourceCollection: purgeData](/graph/api/ediscovery-sourcecollection-purgedata).
 
+> [!NOTE]
+> Microsoft Graph Gezgini ABD Kamu bulutunda (GCC, GCC High ve DOD) kullanılamadığından, bu görevleri gerçekleştirmek için PowerShell'i kullanmanız gerekir.
+
+PowerShell kullanarak sohbet iletilerini de temizleyebilirsiniz. Örneğin, ABD Kamu bulutundaki iletileri temizlemek için aşağıdakine benzer bir komut kullanabilirsiniz:
+
+``
+Connect-MgGraph -Scopes "ediscovery.ReadWrite.All" -Environment USGov
+``
+
+``Invoke-MgGraphRequest  -Method POST -Uri '/beta/security/cases/ediscoveryCases/<case ID>/searches/<collection ID>/purgeData'
+``
+
+Sohbet iletilerini temizlemek için PowerShell kullanma hakkında daha fazla bilgi için bkz. [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata).
+
 ## <a name="step-6-verify-chat-messages-are-purged"></a>6. Adım: Sohbet iletilerinin temizlendiğini doğrulama
 
 Sohbet iletilerini temizlemek için POST isteğini çalıştırdıktan sonra, bu iletiler Teams istemcisinden kaldırılır ve bir yöneticinin iletiyi kaldırdığını belirten otomatik olarak oluşturulan bir iletiyle değiştirilir. Bu iletinin bir örneği için bu makaledeki [Son kullanıcı deneyimi](#end-user-experience) bölümüne bakın.
 
 Temizlenen sohbet iletileri, gizli bir posta kutusu klasörü olan SubstrateHolds klasörüne taşınır. Temizlenmiş sohbet iletileri en az 1 gün boyunca orada depolanır ve zamanlayıcı işi bir sonraki çalıştırıldığında (genellikle 1-7 gün arasında) kalıcı olarak silinir. Daha fazla bilgi için bkz. [Microsoft Teams için bekletme hakkında bilgi edinin](retention-policies-teams.md).
+
+> [!NOTE]
+> Microsoft Graph Gezgini ABD Kamu bulutunda (GCC, GCC High ve DOD) kullanılamadığından, bu görevleri gerçekleştirmek için PowerShell'i kullanmanız gerekir.
 
 ## <a name="step-7-reapply-holds-and-retention-policies-to-data-sources"></a>7. Adım: Veri kaynaklarına saklama ve saklama ilkelerini yeniden uygulama
 

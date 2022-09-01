@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e54b3c1c696d05bb0f3815b532a4f0e7e92c6331
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 886ed68514235669d72fe260cacc9b150d9a04d3
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020659"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497790"
 ---
 # <a name="web-protection"></a>Web koruması
 
@@ -33,9 +33,7 @@ ms.locfileid: "67020659"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
-
 
 ## <a name="about-web-protection"></a>Web koruması hakkında
 
@@ -52,6 +50,17 @@ Web tehdit koruması şunları içerir:
 - Kuruluşunuzu etkileyen web tehditlerine yönelik kapsamlı görünürlük.
 - Uyarılar ve bu URL'lere erişen cihazların kapsamlı profilleri ve uyarılar aracılığıyla web ile ilgili tehdit etkinlikleri üzerinde araştırma özellikleri.
 - Kötü amaçlı ve istenmeyen web sitelerine genel erişim eğilimlerini izleyen tam bir güvenlik özellikleri kümesi.
+
+> [!NOTE]
+> Web koruma senaryoları, Microsoft Edge ve Internet Explorer dışındaki işlemler için inceleme ve zorlama için Ağ Koruması'dan yararlanıyor:
+>
+> - IP, üç protokol için de desteklenir (TCP, HTTP ve HTTPS (TLS)).
+> - Özel göstergelerde yalnızca tek IP adresleri desteklenir (CIDR blokları veya IP aralıkları yoktur).
+> - Şifrelenmiş URL'ler (tam yol) yalnızca birinci taraf tarayıcılarda (Internet Explorer, Edge) engellenebilir.
+> - Şifrelenmiş URL'ler (yalnızca FQDN) üçüncü taraf tarayıcılarda (internet explorer, Edge dışında) engellenebilir.
+> - Şifrelenmemiş URL'ler için tam URL yol blokları uygulanabilir.
+>
+> Eylemin gerçekleştirilişi ile URL ve IP'nin engellenmesi arasında 2 saate kadar gecikme süresi (genellikle daha az) olabilir.
 
 Daha fazla bilgi için bkz [. Web tehdit koruması](web-threat-protection.md).
 
@@ -136,7 +145,7 @@ Aşağıdaki tabloda yanıtlar ve bunların bağıntılı özellikleri gösteril
 
 |ResponseCategory|Blok için sorumlu özellik|
 |---|---|
-|CustomPolicy|WCF|
+|CustomPolicy|Wcf|
 |CustomBlockList|Özel göstergeler|
 |CasbPolicy|Bulut Uygulamaları için Defender|
 |Kötü amaçlı|Web tehditleri|

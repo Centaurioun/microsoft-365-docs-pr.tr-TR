@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: Kuruluşunuzun SIEM sunucusunu Office 365 Etkinlik Yönetimi API'sindeki Office 365 için Microsoft Defender ve ilgili tehdit olaylarıyla tümleştirin.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 2ffa1e59f368af4b3e99cee9939ed0ead0cc686e
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 90a3b87b4ce2c52a26c2d95b6f607816ff26afa4
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131008"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497389"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender ile SIEM tümleştirmesi
 
@@ -33,13 +33,13 @@ ms.locfileid: "65131008"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 Kuruluşunuz bir güvenlik bilgileri ve olay yönetimi (SIEM) sunucusu kullanıyorsa, Office 365 için Microsoft Defender SIEM sunucunuzla tümleştirebilirsiniz. Office 365 [Etkinlik Yönetimi API'sini](/office/office-365-management-api/office-365-management-activity-api-reference) kullanarak bu tümleştirmeyi ayarlayabilirsiniz.
 
 SIEM tümleştirmesi, SIEM sunucu raporlarınızda Office 365 için Microsoft Defender tarafından algılanan kötü amaçlı yazılım veya kimlik avı gibi bilgileri görüntülemenizi sağlar.
 
-- Office 365 için Microsoft Defender ile SIEM tümleştirmesinin bir örneğini görmek için [teknik Community blogu: Office 365 için Defender ve O365 Yönetim API'siyle SOC'nizin verimliliğini geliştirme makalesine](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185) bakın.
+- Office 365 için Microsoft Defender ile SIEM tümleştirmesinin bir örneğini görmek için [bkz. Teknik Topluluk blogu: Office 365 için Defender ve O365 Yönetim API'siyle SOC'nizin Verimliliğini Artırma](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 - Office 365 Yönetim API'leri hakkında daha fazla bilgi edinmek için bkz. [Office 365 Yönetim API'lerine genel bakış](/office/office-365-management-api/office-365-management-apis-overview).
 
 ## <a name="how-siem-integration-works"></a>SIEM tümleştirmesi nasıl çalışır?
@@ -48,7 +48,7 @@ Office 365 Etkinlik Yönetimi API'si, kuruluşunuzun Microsoft 365 ve Azure Acti
 
 Kısa süre önce, [Office 365 için Microsoft Defender Plan 2'deki](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) otomatik araştırma ve yanıt özelliklerinden gelen olaylar Office 365 Yönetim Etkinliği API'sine eklendi. API, kimlik, ad ve durum gibi temel araştırma ayrıntılarıyla ilgili verileri eklemenin yanı sıra araştırma eylemleri ve varlıkları hakkında üst düzey bilgiler de içerir.
 
-SIEM sunucusu veya diğer benzer sistem algılama olaylarına erişmek için **audit.general** iş yükünü yoklar. Daha fazla bilgi için bkz. [Office 365 Yönetim API'leriyle Kullanmaya başlayın](/office/office-365-management-api/get-started-with-office-365-management-apis).
+SIEM sunucusu veya diğer benzer sistem algılama olaylarına erişmek için **audit.general** iş yükünü yoklar. Daha fazla bilgi edinmek için bkz. [Office 365 Yönetim API'lerini kullanmaya başlama](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 ## <a name="enum-auditlogrecordtype---type-edmint32"></a>Enum: AuditLogRecordType - Tür: Edm.Int32
 
@@ -59,8 +59,8 @@ Aşağıdaki tabloda, Office 365 için Microsoft Defender olaylarıyla ilgili **
 | Değer | Üye adı | Açıklama |
 |---|---|---|
 | 28| ThreatIntelligence | Exchange Online Protection ve Office 365 için Microsoft Defender kimlik avı ve kötü amaçlı yazılım olayları. |
-| 41| ThreatIntelligenceUrl | Kasa Office 365 için Microsoft Defender gelen blok zamanı ve engelleme geçersiz kılma olaylarını bağlar. |
-| 47| ThreatIntelligenceAtpContent | Office 365 için Microsoft Defender SharePoint Online, OneDrive İş ve Microsoft Teams dosyalar için kimlik avı ve kötü amaçlı yazılım olayları. |
+| 41| ThreatIntelligenceUrl | Office 365 için Microsoft Defender gelen Güvenli Bağlantılar blok zamanı ve engelleme geçersiz kılma olayları. |
+| 47| ThreatIntelligenceAtpContent | SharePoint Online, OneDrive İş ve Microsoft Teams'deki dosyalar için Office 365 için Microsoft Defender kimlik avı ve kötü amaçlı yazılım olayları. |
 | 64| AirInvestigation | Office 365 için Microsoft Defender Plan 2'den araştırma ayrıntıları ve ilgili yapıtlar gibi otomatik araştırma ve yanıt olayları. |
 
 > [!IMPORTANT]

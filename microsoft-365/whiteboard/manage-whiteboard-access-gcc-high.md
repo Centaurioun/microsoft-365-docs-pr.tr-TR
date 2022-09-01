@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Whiteboard verilerini etkinleştirmeyi, devre dışı bırakmayı ve yönetmeyi öğrenin.
-ms.openlocfilehash: 2f79f53ce68dd9179b2b652f46a4245b9ed6ffdb
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7034aba1ea94bcc87a21f8378595ce984a74769f
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942438"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496735"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-gcc-high-environments"></a>GCC High ortamları için Microsoft Whiteboard erişimini yönetme
 
@@ -46,7 +46,7 @@ Whiteboard'a erişimi aşağıdaki yollarla denetleyebilirsiniz:
 - Azure Active Directory yönetim merkezini kullanarak Whiteboard'a erişmek için koşullu erişim ilkeleri gerektir.
 
 >[!NOTE]
-> OneDrive İş beyaz tahta Microsoft 365 yönetim merkezi görünmez. Teams toplantı ilkesi yalnızca Beyaz Tahta giriş noktalarını gizler, kullanıcıların Whiteboard kullanmasını engellemez. Koşullu erişim diskleri Whiteboard'a erişimi engeller, ancak giriş noktalarını gizlemez.
+> OneDrive İş beyaz tahta Microsoft 365 yönetim merkezi görünmez. Teams toplantı ilkesi yalnızca Beyaz Tahta giriş noktalarını gizler, kullanıcıların Whiteboard kullanmasını engellemez. Koşullu erişim ilkeleri Beyaz Tahta'ya erişimi engeller, ancak giriş noktalarını gizlemez.
 
 ## <a name="enable-or-disable-whiteboard"></a>Beyaz Tahta'yı etkinleştirme veya devre dışı bırakma
 

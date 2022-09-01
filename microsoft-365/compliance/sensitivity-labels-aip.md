@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Azure Information Protection (AIP) birleşik etiketleme istemcisini kullandığınızda, AIP eklentisi yerine Office uygulamaları için yerleşik etiketleme kullanmanın avantajlarını anlayın.
-ms.openlocfilehash: 9f1bf7c7243ce2414c70ad3fd487ab43465b905f
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 0c2f4989407d4498df3d4e3401b935f5200b2412
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306272"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497659"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office uygulamaları için AIP eklentisi yerine neden yerleşik etiketlemeyi seçmelisiniz?
 
@@ -74,7 +74,7 @@ Bazı özellikler yalnızca Office uygulamaları için yerleşik etiketleme tara
     - [Eğitilebilir sınıflandırıcılar](classifier-learn-about.md), [tam veri eşleşmesi (EDM)](sit-learn-about-exact-data-match-based-sits.md) ve [adlandırılmış varlıklar](named-entities-learn.md) içeren akıllı sınıflandırma hizmetlerine erişim
     - Kullanıcılar yazarken hassas bilgilerin algılanması
     - Word'de, kullanıcılar tanımlanan hassas içeriği gözden geçirebilir ve kaldırabilir
-- [PDF desteği](sensitivity-labels-office-apps.md#pdf-support) (önizlemede)
+- [PDF desteği](sensitivity-labels-office-apps.md#pdf-support)
 - Kullanıcıların izin atamasına izin veren etiketler için kullanıcılara veya gruplara farklı izinler (Okuma veya Değiştirme) verilebilir
 - E-postalar için Encrypt-Only
 - Durum çubuğunda etiketlerin görünürlüğü

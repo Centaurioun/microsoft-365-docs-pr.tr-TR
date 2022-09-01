@@ -1,5 +1,5 @@
 ---
-title: İş için Microsoft Defender Premium deneme playbook'u
+title: Microsoft 365 İş Ekstra deneme akış planı
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 İş Ekstra denemenizden en iyi şekilde geçin. Temel üretkenlik ve güvenlik özelliklerinden bazılarını deneyin.
-ms.openlocfilehash: 750772357c5dda926840ba41f879a055e12d5230
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: 8a74d5b107f8142c7d0b733e558540fecaff3346
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433454"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497027"
 ---
-# <a name="trial-playbook-microsoft-business-premium"></a>Deneme playbook'u: Microsoft Business Premium
+# <a name="trial-playbook-microsoft-365-business-premium"></a>Deneme playbook'u: Microsoft 365 İş Ekstra
 
 Microsoft Business Premium deneme playbook'una hoş geldiniz. Bu playbook, Microsoft 365 İş Ekstra üretkenliği nasıl artırdığını deneyimleyerek 30 günlük ücretsiz denemenizden en iyi şekilde yararlanabilir ve kuruluşunuzun gelişmiş güvenlik özellikleriyle korunmasına yardımcı olur. Microsoft önerilerini kullanarak tehdit koruma özelliklerinizi ayarlamayı, algılanan tehditleri analiz etmeyi ve siber saldırılara yanıt vermeyi öğrenin.
 

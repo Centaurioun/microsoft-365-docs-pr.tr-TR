@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365'da güvenliği aşılmış bir bağlayıcıya yanıt verme
+title: Microsoft 365'te güvenliği aşılmış bir bağlayıcıya yanıt verme
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -13,19 +13,19 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-description: Microsoft 365'de güvenliği aşılmış bağlayıcıyı tanımayı ve yanıtlamayı öğrenin.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 6f32f9960655c8998abd8d9fb8fa939368373520
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+description: Microsoft 365'te güvenliği aşılmış bağlayıcıyı tanımayı ve yanıtlamayı öğrenin.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 8552c0d6181e17c460e3fd6a4db0daa400e4f828
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419022"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497005"
 ---
 # <a name="respond-to-a-compromised-connector"></a>Risk altındaki bağlayıcıyı yanıtlama
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 
@@ -33,9 +33,9 @@ ms.locfileid: "65419022"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Bağlayıcılar, şirket içi ortamınızdaki Microsoft 365 veya Office 365 ile e-posta sunucuları arasında posta akışını etkinleştirmek için kullanılır. Daha fazla bilgi için bkz[. Exchange Online'da bağlayıcıları kullanarak posta akışını yapılandırma](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+Bağlayıcılar, şirket içi ortamınızda bulunan Microsoft 365 veya Office 365 ile e-posta sunucuları arasında posta akışını etkinleştirmek için kullanılır. Daha fazla bilgi için bkz[. Exchange Online'da bağlayıcıları kullanarak posta akışını yapılandırma](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
-Güvenliği aşılmış bir gelen bağlayıcı, yetkisiz bir kişinin mevcut gelen bağlayıcıya değişiklik uygulaması veya Microsoft 365 bir kiracıda istenmeyen posta veya kimlik avı e-postaları göndermek amacıyla yeni bir gelen bağlayıcı oluşturması olarak tanımlanır. Bunun yalnızca OnPremises türündeki gelen bağlayıcılar için geçerli olduğunu unutmayın. 
+Güvenliği aşılmış bir gelen bağlayıcısı, yetkisiz bir kişinin mevcut gelen bağlayıcıya değişiklik uygulaması veya microsoft 365 kiracısında istenmeyen posta veya kimlik avı e-postaları göndermek amacıyla yeni bir gelen bağlayıcı oluşturması olarak tanımlanır. Bunun yalnızca OnPremises türündeki gelen bağlayıcılar için geçerli olduğunu unutmayın. 
 
 ## <a name="detect-a-compromised-connector"></a>Güvenliği aşılmış bağlayıcıyı algılama
 
@@ -125,7 +125,7 @@ Search-UnifiedAuditLog -StartDate "<ExDateTime>" -EndDate "<ExDateTime>" -Operat
 
 ### <a name="step-4-investigate-and-remediate-potentially-compromised-administrative-user-account"></a>4. Adım: Güvenliği aşılmış olabilecek yönetici kullanıcı hesabını araştırma ve düzeltme
 
-Yetkisiz bağlayıcı etkinliği olan bir kullanıcı tanımlanırsa, bu kullanıcıyı olası risklere karşı araştırabilirsiniz. Daha fazla bilgi için bkz [. Güvenliği Aşılmış E-posta Hesabını Yanıtlama](responding-to-a-compromised-email-account.md).
+Yetkisiz bağlayıcı etkinliği olan bir kullanıcı tanımlanırsa, bu kullanıcıyı olası risklere karşı araştırabilirsiniz. Daha fazla bilgi için bkz[. Güvenliği Aşılmış Email Hesabına Yanıt Verme](responding-to-a-compromised-email-account.md).
 
 ## <a name="more-information"></a>Daha fazla bilgi
 

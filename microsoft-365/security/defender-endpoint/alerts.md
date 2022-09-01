@@ -2,7 +2,7 @@
 title: Uyarı alma API'si
 description: Uç Nokta için Microsoft Defender'da Uyarı kaynak türünün yöntemleri ve özellikleri hakkında bilgi edinin.
 keywords: api'ler, graf api'leri, desteklenen API'ler, alma, uyarılar, son kullanılanlar
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 626b18829594c6cd88421fd183c2403a84bf0a4e
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 301abec576f15ac83406660ca75b3f9ec3b7d389
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67322397"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497927"
 ---
 # <a name="alert-resource-type"></a>Uyarı kaynak türü
 
@@ -37,10 +37,6 @@ ms.locfileid: "67322397"
 
 ## <a name="methods"></a>Yöntemler
 
-<br>
-
-****
-
 |Yöntem|Dönüş Türü|Açıklama|
 |---|---|---|
 |[Uyarı alma](get-alert-info-by-id.md)|[Uyarı](alerts.md)|Tek bir [uyarı](alerts.md) nesnesi alın.|
@@ -53,13 +49,8 @@ ms.locfileid: "67322397"
 |[İlgili IP'leri listeleme](get-alert-related-ip-info.md)|IP koleksiyonu|Uyarıyla ilişkili IP'leri listeleyin.|
 |[İlgili makineleri alma](get-alert-related-machine-info.md)|[Makine](machine.md)|[Uyarıyla](alerts.md) ilişkili [makine](machine.md).|
 |[İlgili kullanıcıları alma](get-alert-related-user-info.md)|[Kullanıcı](user.md)|[Uyarıyla](alerts.md) ilişkili [kullanıcı](user.md).|
-|
 
 ## <a name="properties"></a>Özellikler
-
-<br>
-
-****
 
 |Özellik|Tür|Açıklama|
 |---|---|---|
@@ -92,7 +83,6 @@ ms.locfileid: "67322397"
 |detectorId|Dize|Uyarıyı tetikleyen algılayıcının kimliği.|
 |Yorum|Uyarı açıklamalarının listesi|Uyarı Açıklaması nesnesi şunları içerir: açıklama dizesi, createdBy dizesi ve createTime tarih saati.|
 |Kanıt|Uyarı kanıtı listesi|Uyarıyla ilgili kanıt. Aşağıdaki örniğe bakın.|
-|
 
 >[!NOTE]
 >29 Ağustos 2022'de daha önce desteklenen uyarı belirleme değerleri ('Apt' ve 'SecurityPersonnel') kullanım dışı bırakılacak ve artık API aracılığıyla kullanılamayacak.

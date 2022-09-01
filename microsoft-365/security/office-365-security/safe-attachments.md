@@ -1,5 +1,5 @@
 ---
-title: Güvenli Ekleri Kaydetme
+title: Güvenli Ekler
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: Yöneticiler, Office 365 için Microsoft Defender'daki Güvenli Ekler özelliği hakkında bilgi edinebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 4ccbe9073440240fb9d09097958a24e7671081d0
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: f19c0b4497cc2d6d1c08f5b3062add2dd45d64fd
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087626"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496801"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Ekler
 
@@ -64,7 +64,7 @@ Bu bölümde, Güvenli Ekler ilkelerindeki ayarlar açıklanmaktadır:
 
 - **Güvenli Ekler bilinmeyen kötü amaçlı yazılım yanıtı**: Bu ayar, e-posta iletilerinde Güvenli Ekler kötü amaçlı yazılım taraması eylemini denetler. Kullanılabilir seçenekler aşağıdaki tabloda açıklanmıştır:
 
-  |Seçenek|Etki|Şunu yapmak istediğinizde kullanın:|
+  |Seçeneği|Etkisi|Şunu yapmak istediğinizde kullanın:|
   |---|---|---|
   |**Devre Dışı**|Ekler, Güvenli Ekler tarafından kötü amaçlı yazılımlara karşı taranmıyor. EOP'de kötü amaçlı yazılımdan [koruma tarafından iletiler yine de kötü amaçlı yazılımlara](anti-malware-protection.md) karşı taranır.|Seçili alıcılar için taramayı kapatın. <br/><br/> İç posta yönlendirmede gereksiz gecikmeleri önleyin. <br/><br/> **Bu seçenek çoğu kullanıcı için önerilmez. Bu seçeneği yalnızca güvenilir gönderenlerden yalnızca ileti alan alıcılar için Güvenli Ekler taramasını kapatmak için kullanmalısınız. Güvenli Ekler kapatılırsa ve kötü amaçlı yazılım sinyali alınmazsa ZAP iletileri karantinaya almayacaktır. Ayrıntılar için bkz. [Sıfır saatlik otomatik temizleme](zero-hour-auto-purge.md)**|
   |**Monitör**|Ekleri olan iletileri teslim eder ve ardından algılanan kötü amaçlı yazılımla ne olduğunu izler. <br/><br/> Güvenli Eklerin taranma nedeniyle güvenli iletilerin teslimi gecikebilir.|Algılanan kötü amaçlı yazılımların kuruluşunuzda nereye gittiğini görün.|

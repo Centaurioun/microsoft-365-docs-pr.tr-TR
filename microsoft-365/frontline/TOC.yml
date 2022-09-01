@@ -19,7 +19,7 @@
           items:
             - name: Microsoft 365 ve ilgili hizmetleri ayarlama
               href: flw-setup-microsoft-365.md
-            - name: Ekipleri uygun ölçekte dağıtma
+            - name: Teams'i uygun ölçekte dağıtma
               href: deploy-teams-at-scale.md
             - name: Katılım sihirbazı ile kullanıcılarınızın katılımını sağlayın
               href: flw-onboarding-wizard.md

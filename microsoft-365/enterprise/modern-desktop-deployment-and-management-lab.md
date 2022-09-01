@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows ve Office Dağıtım Laboratuvar Seti'ne nereden erişeceğinizi öğrenin.
-ms.openlocfilehash: fcb0b24480c61dcd5d3856aa800d6a30566d3b02
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: 3457d949887877f6ba3e514d68ca145ef3d155b3
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433695"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497615"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Windows ve Office 365 dağıtım laboratuvarı seti
 
@@ -31,8 +31,8 @@ Laboratuvarın iki sürümü ücretsiz olarak indirilebilir:
 
 |Windows 10 Laboratuvarı|Windows 11 Laboratuvarı|
 |---|---|
-|[Win 10 laboratuvar ortamı](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_lab.zip)|[Win 11 laboratuvar ortamı](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Microsoft365DeviceLabKit.zip)|
-|[Win 10 laboratuvar kılavuzları](https://download.microsoft.com/download/b/d/4/bd4f430b-8cd1-4a07-97b1-c32100fce7ae/Win_10_21H2_lab_guides.zip)|[Win 11 laboratuvar kılavuzları](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Win11_SetUp_Guide_08.05.zip)|
+|[Windows 10 laboratuvar ortamı](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_lab.zip)|[Windows 11 laboratuvar ortamı](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Microsoft365DeviceLabKit.zip)|
+|[Windows 10 laboratuvar kılavuzları](https://download.microsoft.com/download/b/d/4/bd4f430b-8cd1-4a07-97b1-c32100fce7ae/Win_10_21H2_lab_guides.zip)|[Windows 11 laboratuvar kılavuzları](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Win11_SetUp_Guide_08.05.zip)|
 
 ## <a name="a-complete-lab-environment"></a>Eksiksiz bir laboratuvar ortamı
 

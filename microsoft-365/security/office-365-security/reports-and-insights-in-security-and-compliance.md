@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: Akıllı raporlar ve içgörüler hakkında bilgi edinin ve verileri görüntülemek ve keşfetmek ve hızlı işlemler yapmak için bunları nasıl kullanacağınızı öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 3dc90846f68d5e3ef5a1b2a003f5afb69cab3c60
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 93a0a0891710678f6dee56e47bbb1d35e0952791
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617096"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496647"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Güvenlik ve Uyumluluk Merkezi'nde akıllı raporlar ve içgörüler
 
@@ -52,7 +52,7 @@ Aşağıdaki tabloda **Pano'da** bulunan raporlar listelenir:
 |Bilgi türü|Oraya nasıl ulaşılabilirim?|Daha fazla bilgi edinmek için nereye gidilir?|
 |---|---|---|
 |**Tümü yukarı** <p> En iyi içgörüler ve öneriler ile kullanılabilir güvenlik raporları ve uyumluluk raporlarının bağlantıları.|<https://protection.office.com/insightdashboard>|[Güvenlik & Uyumluluk Merkezi'ndeki raporlar](../../compliance/reports-in-security-and-compliance.md)|
-|**E-posta & işbirliği raporları** <p> Tehdit algılamaları, kötü amaçlı yazılım eğilimleri, en çok hedeflenen kullanıcılar, gönderilen ve alınan e-posta iletileriyle ilgili ayrıntılar ve daha fazlası.|<https://security.microsoft.com/emailandcollabreport>|[E-posta güvenlik raporlarını görüntüleme](view-email-security-reports.md) <p> [Office 365 için Defender için raporları görüntüleme](view-reports-for-mdo.md)|
+|**Email & işbirliği raporları** <p> Tehdit algılamaları, kötü amaçlı yazılım eğilimleri, en çok hedeflenen kullanıcılar, gönderilen ve alınan e-posta iletileriyle ilgili ayrıntılar ve daha fazlası.|<https://security.microsoft.com/emailandcollabreport>|[E-posta güvenlik raporlarını görüntüleme](view-email-security-reports.md) <p> [Office 365 için Defender için raporları görüntüleme](view-reports-for-mdo.md)|
 |**Gezgin** (Tehdit gezgini olarak da adlandırılır) veya **Gerçek zamanlı algılamalar** <p> Microsoft 365'te e-posta ve dosyalarda kötü amaçlı yazılım olduğundan şüphelenildi.|<https://security.microsoft.com/threatexplorer> <p> <https://security.microsoft.com/realtimereports>|[Tehdit Gezgini (veya gerçek zamanlı algılamalar)](threat-explorer.md)|
 
 ## <a name="related-topics"></a>İlgili konular

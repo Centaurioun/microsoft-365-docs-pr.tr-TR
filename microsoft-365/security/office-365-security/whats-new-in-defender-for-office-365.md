@@ -9,7 +9,7 @@ f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 08/30/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c714e15cfb37116fe23f51c4e47214d69961120
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 7487297cbb6a28436e7a28006ef9989d902cdcc6
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385561"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496845"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender’daki yenilikler
 
@@ -45,9 +45,9 @@ Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında da
 - [Microsoft 365 Defender'daki yenilikler](../defender/whats-new.md)
 - [Uç Nokta için Microsoft Defender'deki yenilikler](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Kimlik için Microsoft Defender'deki yenilikler](/defender-for-identity/whats-new)
-- [Microsoft Cloud App Security'deki yenilikler](/cloud-app-security/release-notes)
+- [Microsoft Defender for Cloud Apps'deki yenilikler](/cloud-app-security/release-notes)
 
-## <a name="august-2022"></a>Ağustos 2022
+## <a name="september-2022"></a>Eylül 2022
 
 **Office 365 Güvenlik ve Uyumluluk Merkezi'nden Microsoft 365 Defender portalına otomatik** yeniden yönlendirme: Office 365 Güvenlik ve Uyumluluk Merkezi'ndeki (protection.office.com) güvenlik çözümlerine erişen kullanıcılar için otomatik yeniden yönlendirme başlar Microsoft 365 Defender portalı (security.microsoft.com). Bu, uyarılar, Tehdit Yönetimi ve Raporlar gibi tüm güvenlik iş akışlarına yöneliktir. 
 - Yeniden yönlendirme URL'leri:

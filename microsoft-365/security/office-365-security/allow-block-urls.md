@@ -16,12 +16,12 @@ ms.collection:
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde URL'lere nasıl izin vereceğinizi veya url'leri nasıl engelleyebileceğinizi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 4160bb2351f0096dafb189d63a9b0498c141fdde
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: f29e410a6457a4810bf98436f912a57866978241
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67467041"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67495115"
 ---
 # <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini kullanarak URL'lere izin verme veya URL’leri engelleme
 
@@ -81,10 +81,9 @@ Yönergeler için bkz. [Sorgulanabilir URL'leri Microsoft'a bildirme](admin-subm
 
 ### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesindeki URL'ler için blok girdileri oluşturmak için Microsoft 365 Defender portalını kullanın
 
-URL'ler için blok girdilerini doğrudan Kiracı İzin Ver/Engelle Listesi'nde oluşturursunuz.
+URL'ler için blok girdilerini doğrudan Kiracı İzin Ver/Engelle Listesi'nde oluşturabilirsiniz.
 
-> [!NOTE]
-> Bu engellenen URL'leri içeren Email iletiler *yüksek güvenilirlikli kimlik avı* olarak engellenir.
+Bu engellenen URL'leri içeren Email iletiler *yüksek güvenilirlikli kimlik avı* olarak engellenir.
 
 1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**İlkeler & kuralları** \> **Tehdit İlkeleri** \> **Kuralları** bölümüne **Kiracı İzin Ver/Listeleri Engelle** bölümüne \> gidin. Ya da doğrudan **Kiracı İzin Ver/Engelle Listesi** sayfasına gitmek için kullanın <https://security.microsoft.com/tenantAllowBlockList>.
 

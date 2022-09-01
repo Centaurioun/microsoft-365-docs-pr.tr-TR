@@ -12,19 +12,19 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Whiteboard için şu anda hangi istemcilerin desteklendiği hakkında bilgi edinin.
-ms.openlocfilehash: b1e4f83a0df0f03a423d9f7e3821cc53284ddb19
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 5ff362ff562eade8f80b44b3a5f5a929b242de24
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306338"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497505"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-high-environments"></a>GCC High ortamlarında Microsoft Whiteboard istemcilerini yönetme
 
 > [!NOTE]
 > Bu kılavuz, ABD Kamu Topluluk Bulutu (GCC) Yüksek ortamları için geçerlidir.
 
-Whiteboard istemcileri şu anda OneDrive İş destekleyecek şekilde güncelleştiriliyor.
+Whiteboard istemcileri şu anda OneDrive İş destekleyecek şekilde güncelleştiriliyor. 
 
 ## <a name="clients-supported"></a>Desteklenen istemciler
 

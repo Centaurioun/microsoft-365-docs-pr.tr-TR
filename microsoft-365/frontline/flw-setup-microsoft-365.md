@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 25f33208cd52520d810efbb9d48643595c955f3e
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: ad81e7f7f04247be406d77cc54f8d31bd44c187f
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824672"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497637"
 ---
 # <a name="set-up-microsoft-365-for-frontline-workers"></a>Ön cephe çalışanları için Microsoft 365'i ayarlama
 
@@ -64,7 +64,7 @@ Microsoft 365 yönetim merkezi, Microsoft 365'te ürünleri, güvenlik özellikl
 
 Pilot projede ön cephe çalışanlarınız için yapılandırılmış tek bir ekip ayarlamak için Ön Cephe çalışanı ekleme sihirbazını kullanabilirsiniz. Adım adım yönergeler için bkz [. Ön cephe çalışanlarınızı çalışır duruma getirmek için Ön Cephe Çalışanı ekleme sihirbazını kullanma](flw-onboarding-wizard.md).
 
-Tam dağıtımlar [için, Ön cephe çalışanları için ekipleri uygun ölçekte dağıtma](deploy-teams-at-scale.md) yönergelerini izleyin.
+Tam dağıtımlar [için, ön cephe çalışanları için Teams'i uygun ölçekte dağıtma](deploy-teams-at-scale.md) yönergelerini izleyin.
 
 ## <a name="step-4-set-up-other-services"></a>4. Adım: Diğer hizmetleri ayarlama
 
@@ -117,7 +117,7 @@ Senaryolar ve uygulamalar
 | [Ekip iletişimi ve işbirliği](flw-team-collaboration.md) | &#x2705; | &nbsp; | &#x2705; | &#x2705; | &nbsp; | &#x2705; | &#x2705; |
 | [Kurumsal İletişimler](flw-corp-comms.md) |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |
 | [Microsoft Teams ve Bookings uygulaması ile sanal randevular](bookings-virtual-visits.md) |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp;|  &nbsp; |
-| & etkileşimin refahı |  &nbsp; |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; |
+| Dengeli yaşam ve katılım |  &nbsp; |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; |
 | [Vardiyalar ile ekibinizi zamanlama](shifts-for-teams-landing-page.md) |  &nbsp; | &nbsp; | &#x2705; |  &nbsp; | &#x2705; | &#x2705; | &#x2705; |
 | [Eğitim: Yeni çalışanları ekleme](/sharepoint/onboard-employees) |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; | &#x2705; |
 | Devam eden eğitim |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; | &#x2705; |

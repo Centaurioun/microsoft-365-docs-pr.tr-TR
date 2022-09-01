@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Bir Etki Alanı Adı Hizmeti (DNS) kaydını, Office 365'daki özel etki alanınızla Sender Policy Framework (SPF) kullanacak şekilde nasıl güncelleştireceğinizi öğrenin.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 33e4a6d3644f7a3aab8992130b2b92e09dd665af
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 14e66008c159a042df8ea14af039276d97c7f622
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772412"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497213"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Kimlik sahtekarlığını önlemeye yardımcı olmak için SPF'yi ayarlama
 
@@ -133,9 +133,9 @@ Ayrıca, özel etki alanınızın SPF TXT kaydı yoksa, bazı alıcı sunucular 
 
 Office 365 için postayı zaten ayarladıysanız, Microsoft'un mesajlaşma sunucularını ZATEN BIR SPF TXT kaydı olarak DNS'ye eklemişsinizdir. Ancak, DNS'de SPF TXT kaydınızı güncelleştirmeniz gerekebilecek bazı durumlar vardır. Örneğin:
 
-- Daha önce, SharePoint Online kullanıyorsanız özel etki alanınıza farklı bir SPF TXT kaydı eklemeniz gerekiyordu. Bu artık gerekli değildir. Bu değişiklik, SharePoint Çevrimiçi bildirim iletilerinin Gereksiz E-posta klasörüne düşmesi riskini azaltmalıdır. 10 arama sınırına ulaşıyorsanız ve "arama sınırını aştı" ve "çok fazla atlama" gibi hatalar alıyorsanız SPF TXT kaydınızı güncelleştirin.
+- Daha önce, SharePoint Online kullanıyorsanız özel etki alanınıza farklı bir SPF TXT kaydı eklemeniz gerekiyordu. Bu artık gerekli değildir. Bu değişiklik, SharePoint Online bildirim iletilerinin Gereksiz Email klasörüne düşmesi riskini azaltmalıdır. 10 arama sınırına ulaşıyorsanız ve "arama sınırını aştı" ve "çok fazla atlama" gibi hatalar alıyorsanız SPF TXT kaydınızı güncelleştirin.
 
-- Office 365 ve şirket içinde Exchange karma bir ortamınız varsa.
+- Office 365 ve Şirket İçi Exchange ile karma bir ortamınız varsa.
 
 - DKIM ve DMARC'yi ayarlamayı planlıyorsunuz (önerilir).
 
@@ -153,6 +153,6 @@ Gelişmiş örnekler için desteklenen SPF söz dizimi, kimlik sahtekarlığı, 
 
  Gelişmiş örnekler ve desteklenen SPF söz dizimi hakkında daha ayrıntılı bir tartışma için bkz. [Office 365 kimlik sahtekarlığı ve kimlik avının önlenmesi için SPF nasıl çalışır](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)?
 
-[Güvenilir ARC Gönderenleri'ni geçerli posta akışları için kullanma](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)
+[Güvenilir ARC Gönderenleri'ni geçerli posta akışları için kullanma](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders)
 
 *Bu belgelerle ilgili geri bildiriminiz varsa 'Geri Bildirim' bölümünden 'Bu sayfa' öğesini seçin.*

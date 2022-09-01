@@ -16,12 +16,12 @@ ms.collection:
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde e-postalara ve sahte gönderen girişlerine izin verme veya bunları engelleme hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 03dd5247135e3d4d297e73ab166921adc73f3573
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 1537b32d56046da776024cef3acbd9eb2d8a4da3
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67469591"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497571"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini kullanarak e-postalara izin verme veya e-postaları engelleme
 
@@ -87,18 +87,18 @@ Yönergeler için bkz. [Sorgulanabilir e-postayı Microsoft'a bildirme](admin-su
 
 #### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesinde etki alanları ve e-posta adresleri için blok girdileri oluşturmak için Microsoft 365 Defender portalını kullanın
 
-Etki alanları ve e-posta adresleri için blok girdilerini doğrudan Kiracı İzin Ver/Engelle Listesi'nde oluşturursunuz.
+Etki alanları ve e-posta adresleri için blok girdilerini doğrudan Kiracı İzin Ver/Engelle Listesi'nde oluşturabilirsiniz.
+
+Bu gönderenlerden gelen Email iletileri *yüksek güvenilirlikli istenmeyen posta* olarak işaretlenir (SCL = 9). İletilere ne olacağı, alıcı için iletiyi algılayan [istenmeyen posta önleme ilkesi](configure-your-spam-filter-policies.md) tarafından belirlenir. Varsayılan istenmeyen posta önleme ilkesinde ve yeni özel ilkelerde, yüksek güvenilirlikli istenmeyen posta olarak işaretlenmiş iletiler varsayılan olarak Gereksiz Email klasörüne teslim edilir. Standart ve Katı [önceden ayarlanmış güvenlik ilkelerinde](preset-security-policies.md) yüksek güvenilirlikli istenmeyen posta iletileri karantinaya alınır.
 
 > [!NOTE]
-> Bu gönderenlerden gelen Email iletileri *yüksek güvenilirlikli istenmeyen posta* olarak işaretlenir (SCL = 9). İletilere ne olacağı, alıcı için iletiyi algılayan [istenmeyen posta önleme ilkesi](configure-your-spam-filter-policies.md) tarafından belirlenir. Varsayılan istenmeyen posta önleme ilkesinde ve yeni özel ilkelerde, yüksek güvenilirlikli istenmeyen posta olarak işaretlenmiş iletiler varsayılan olarak Gereksiz Email klasörüne teslim edilir. Standart ve Katı [önceden ayarlanmış güvenlik ilkelerinde](preset-security-policies.md) yüksek güvenilirlikli istenmeyen posta iletileri karantinaya alınır.
->
 > Kuruluştaki kullanıcılar bu engellenen etki alanlarına ve adreslere e-posta gönderemez. Aşağıdaki teslim edilmedi raporunu (NDR veya geri dönen ileti olarak da bilinir) alırlar: `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.`
 
 1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**İlkeler & kuralları** \> **Tehdit İlkeleri** \> **Kuralları** bölümüne **Kiracı İzin Ver/Listeleri Engelle** bölümüne \> gidin. Ya da doğrudan **Kiracı İzin Ver/Engelle Listesi** sayfasına gitmek için kullanın <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. **Kiracı İzin Ver/Engelle Listesi** sayfasında **Etki Alanları & adresleri** sekmesinin seçili olduğunu doğrulayın.
 
-3. **Etki alanları & adresler** sekmesine tıklayın, Engelle simgesine tıklayın ![.](../../media/m365-cc-sc-create-icon.png) **Engelle'ye bakın**.
+3. **Etki Alanları & adresleri** sekmesinde Engelle simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Engelle'ye bakın**.
 
 4. Görüntülenen **Etki alanlarını & adresleri engelle** açılır öğesinde aşağıdaki ayarları yapılandırın:
 
@@ -546,12 +546,12 @@ Etki alanı çifti eklemek yalnızca kimlik sahtekarlığına sahip kullanıcın
 Örneğin, aşağıdaki etki alanı çifti için bir izin ver girdisi eklersiniz:
 
 - **Etki alanı**: gmail.com
-- **Altyapı**: tms.mx.com
+- **Altyapı gönderme**: tms.mx.com
 
 Yalnızca bu etki alanından gelen *ve* altyapı çifti gönderen iletilerin kimlik sahtekarlığına izin verilir. gmail.com sahtekarlık yapmaya çalışan diğer gönderenlere izin verilmez. diğer etki alanlarındaki tms.mx.com gelen gönderenlerden gelen iletiler kimlik sahtekarlığına göre denetleniyor.
 
 > [!NOTE]
-> Gönderen altyapıda joker karakter kullanamazsınız.
+> Joker karakterleri gönderen altyapıda veya kimlik sahtekarlığına neden olan kullanıcıda belirtebilirsiniz, ancak her ikisinde de aynı anda belirtemezsiniz. Örneğin, `*, *` izin verilmez.
 
 ## <a name="about-impersonated-domains-or-senders"></a>Kimliğine bürünülen etki alanları veya gönderenler hakkında
 

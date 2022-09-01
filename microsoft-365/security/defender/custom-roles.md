@@ -1,7 +1,7 @@
 ---
 title: Rol tabanlı erişim denetimi için özel roller
 description: Microsoft 365 Defender portalında özel rolleri yönetmeyi öğrenin
-keywords: erişim, izinler, Microsoft 365 Defender, M365, güvenlik, MCAS, Bulut Uygulamaları Güvenliği, Uç Nokta için Microsoft Defender, kapsam, kapsam, kapsam, RBAC, rol tabanlı erişim, özel roller tabanlı erişim, rol tabanlı kimlik doğrulaması, MDO'da RBAC, roller, rol grupları, izinler devralma, ayrıntılı izinler
+keywords: erişim, izinler, Microsoft 365 Defender, M365, güvenlik, Cloud Apps için Defender, Uç Nokta için Microsoft Defender, kapsam, kapsam, kapsam, RBAC, rol tabanlı erişim, özel roller tabanlı erişim, rol tabanlı kimlik doğrulaması, MDO'da RBAC, roller, rol grupları, izin devralma, ayrıntılı izinler
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -20,12 +20,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: db9cd679fd5c8fe49384655b7bb94925252a6be1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: c2640f1a0b475ccfd8bdde0b76e97e24c9512747
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482328"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67495181"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Microsoft 365 Defender için rol tabanlı erişim denetiminde özel roller
 

@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Eski bir çalışanın oturum açmaması, kuruluş verilerinin güvenliğini sağlamaması ve diğer çalışanların e-posta ve OneDrive verilerine erişmesine izin vermemesi için Microsoft 365 erişimini engelleyin.
-ms.openlocfilehash: 12c1656ba0826e9d4d2472427642914cdcc7b2e6
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 163cb427ce66f9c1f583681895f18fc67d0745dc
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601728"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496603"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Genel bakış: Eski bir çalışanı ve güvenli verileri kaldırma
 
@@ -103,4 +103,5 @@ Bir kullanıcıyı kaldırdıktan sonra hesabını geri yüklemek için en fazla
 [Kullanıcıyı geri yükleme](restore-user.md) (makale)\
 [Microsoft 365'e yeni bir çalışan ekleme](add-new-employee.md) (makale)\
 [Kullanıcılara lisans atama](../manage/assign-licenses-to-users.md) (makale)\
+[Remove-CalendarEvents](/powershell/module/exchange/remove-calendarevents)\
 [Kullanıcılardan lisans atamalarını kaldırma](../manage/remove-licenses-from-users.md) (makale)

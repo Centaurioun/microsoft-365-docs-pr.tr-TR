@@ -12,14 +12,14 @@ ms.localizationpriority: medium
 MS.collection: ''
 search.appverid: MET150
 description: Tehdit düzeltme
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 6102d1e7d3b7e39787c3787b8bc0851eedbdcefb
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 9b9a51bfbfe7cd5ec754c6f3925b91612e58a2d6
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115553"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496867"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Office 365'te teslim edilen kötü amaçlı e-postaları düzeltme
 
@@ -35,9 +35,9 @@ Düzeltme, bir tehdide karşı belirlenmiş bir eylem gerçekleştirme anlamına
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
-Yöneticiler e-postalar üzerinde gerekli eylemleri gerçekleştirebilir, ancak bu eylemlerin onaylanması için Microsoft 365 Defender portalındaki **E-posta & işbirliği** izinlerinde Kendilerine *Arama ve Temizleme* rolü atanmış olmalıdır. Rol gruplarından birine *Arama ve temizleme"* rolü eklenmeden, eylemi yürütemezler.
+Yöneticiler e-postalarda gerekli eylemleri gerçekleştirebilir, ancak bu eylemlerin onaylanması için Microsoft 365 Defender portalındaki **Email & işbirliği** izinlerinde kendilerine *Arama ve Temizleme* rolü atanmış olmalıdır. Rol gruplarından birine *Arama ve temizleme"* rolü eklenmeden, eylemi yürütemezler.
 
-E-posta eylemleri arka uçta otomatik araştırma oluşturduğundan *, Otomatik Araştırma'yı* etkinleştirmeniz gerekir. **Ayarlar** \> **Uç Noktalar** \> **Gelişmiş özellikleri'ne** gidin ve **Otomatik Araştırma'yi** açın.
+E-posta eylemleri arka uçta otomatik araştırma oluşturduğundan *, Otomatik Araştırma'yı* etkinleştirmeniz gerekir. **Ayarlar** \> **Uç Noktaları** \> **Gelişmiş özellikler'e** gidin ve **Otomatik Araştırma'yi** açın.
 
 ## <a name="manual-and-automated-remediation"></a>El ile ve otomatik düzeltme
 
@@ -82,7 +82,7 @@ Birleşik İşlem Merkezi son 30 güne ait düzeltme eylemlerini gösterir. Gezg
 Düzeltme adı, onay kimliği, Araştırma Kimliği, oluşturma tarihi, açıklama, durum, eylem kaynağı, eylem türü, karar verme ölçütü, durum gibi ilgili ayrıntıları görüntülemek için herhangi bir düzeltme öğesini açın. Ayrıca eylem ayrıntılarını, e-posta kümesi ayrıntılarını, uyarıyı ve Olay ayrıntılarını içeren bir yan bölme açar.
 
 - *Araştırma sayfasını açın* ; daha az ayrıntı ve sekme içeren bir yönetici Araştırması açılır. Aşağıdaki gibi ayrıntıları gösterir: ilgili uyarı, düzeltme için seçilen varlık, gerçekleştirilen eylem, düzeltme durumu, varlık sayısı, günlükler, eylemi onaylayan. Bu araştırma, yönetici tarafından el ile yapılan araştırmanın kaydını tutar ve yönetici tarafından yapılan seçimlerin ayrıntılarını içerir, bu nedenle yönetici eylem araştırması olarak adlandırılır. Araştırma üzerinde işlem yapmanıza ve zaten onaylanmış durumda olduğunu uyarmanıza gerek yoktur.
-- *E-posta sayısı* Tehdit Gezgini aracılığıyla gönderilen e-postaların sayısını görüntüler. Bu e-postalar eyleme dönüştürülebilir veya eyleme dönüştürülemez olabilir.
+- *Email sayısı* Tehdit Gezgini aracılığıyla gönderilen e-postaların sayısını görüntüler. Bu e-postalar eyleme dönüştürülebilir veya eyleme dönüştürülemez olabilir.
 - *Eylem günlükleri* Başarılı, başarısız ve zaten hedefte gibi düzeltme durumlarının ayrıntılarını gösterin.
 
 :::image type="content" source="../../media/microsoft-365-defender-action-center-history-panel.png" alt-text="Gelen Kutusuna Taşı seçeneğinin açık olduğu İşlem Merkezi.":::

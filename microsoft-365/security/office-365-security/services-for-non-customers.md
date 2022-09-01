@@ -15,18 +15,18 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Microsoft, e-posta kullanımında kullanıcı güvenini korumaya yardımcı olmak için kullanıcılarımızın korunmasına yardımcı olmak için çeşitli ilkeler ve teknolojiler getirmiştir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: ff526dc317935651d28843b36bb529edf4ceb006
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 8fb45e71d79458c6d990f226d8c2d81d7efe3681
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648689"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496757"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Microsoft 365'e posta gönderen müşteri olmayanlara yönelik hizmetler
 
-E-posta kötüye kullanımı, gereksiz e-posta ve sahte e-postalar (kimlik avı) e-posta ekosisteminin tamamının yükünü yüklenmeye devam ediyor. Microsoft, e-posta kullanımında kullanıcı güvenini korumaya yardımcı olmak için kullanıcılarımızın korunmasına yardımcı olmak için çeşitli ilkeler ve teknolojiler getirmiştir. Ancak Microsoft, geçerli e-postaların olumsuz etkilenmemesi gerektiğini anlar. Bu nedenle, gönderenlerin gönderme itibarını proaktif olarak yöneterek Microsoft 365 kullanıcılara e-posta teslim etme becerilerini geliştirmelerine yardımcı olacak bir hizmet paketi oluşturduk.
+Kötüye kullanım, gereksiz e-posta ve sahte e-postalar (kimlik avı) Email e-posta ekosisteminin tamamının yükünü yüklenmeye devam ediyor. Microsoft, e-posta kullanımında kullanıcı güvenini korumaya yardımcı olmak için kullanıcılarımızın korunmasına yardımcı olmak için çeşitli ilkeler ve teknolojiler getirmiştir. Ancak Microsoft, geçerli e-postaların olumsuz etkilenmemesi gerektiğini anlar. Bu nedenle, gönderenlerin microsoft 365 kullanıcılarına e-posta gönderme becerilerini, gönderen saygınlıklarını proaktif olarak yöneterek geliştirmelerine yardımcı olacak bir hizmet paketi oluşturduk.
 
 Bu genel bakış, müşteri olmasanız bile kuruluşunuza sağladığımız avantajlar hakkında bilgi sağlar.
 
@@ -41,13 +41,13 @@ Bu genel bakış, müşteri olmasanız bile kuruluşunuza sağladığımız avan
 
 ## <a name="microsoft-support"></a>Microsoft desteği
 
-Microsoft, Microsoft 365 alıcılara posta gönderirken sorun yaşayan kişiler için çeşitli destek seçenekleri sunar. Aşağıdakiler önerilir:
+Microsoft, Microsoft 365 alıcılarına posta gönderirken sorun yaşayan kişiler için çeşitli destek seçenekleri sunar. Aşağıdakiler önerilir:
 
 - Aldığınız teslim edilmedi raporundaki yönergeleri izleyin.
 
 - Office 365 [gönderilen posta sorunlarını giderme](troubleshooting-mail-sent-to-office-365.md) bölümünde müşteri olmayanların karşılaştığı en yaygın sorunlara göz atın.
 
-- IP'nizin engellenen gönderenler listesinden kaldırılması için bir istek göndermek için [Microsoft 365 liste kaldırma portalını](https://sender.office.com) kullanın.
+- IP'nizin engellenen gönderen listesinden kaldırılmasına ilişkin bir istek göndermek için [Microsoft 365 liste kaldırma portalını](https://sender.office.com) kullanın.
 
 - [Microsoft topluluk forumlarını](https://community.office365.com/f/) okuyun.
 
@@ -57,7 +57,7 @@ Microsoft, Microsoft 365 alıcılara posta gönderirken sorun yaşayan kişiler 
 
 ## <a name="anti-spam-ip-delist-portal"></a>İstenmeyen Posta Önleme IP Liste Kaldırma Portalı
 
-Bu, engellenen Microsoft 365 gönderenler listesinden kendinizi kaldırmak için kullanabileceğiniz bir self servis portalıdır. E-posta adresi Microsoft 365 olan bir alıcıya e-posta göndermeye çalıştığınızda hata iletisi alıyorsanız ve e-posta adresi olması gerektiğini düşünmüyorsanız bu portalı kullanın. Daha fazla bilgi için bkz. [Liste kaldırma portalını kullanarak kendinizi engellenen gönderenler listesinden kaldırma](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Bu, microsoft 365 engellenen gönderenler listesinden kendinizi kaldırmak için kullanabileceğiniz bir self servis portalıdır. E-posta adresi Microsoft 365'te olan ve olması gerektiğini düşünmediğiniz bir alıcıya e-posta göndermeye çalıştığınızda hata iletisi alıyorsanız bu portalı kullanın. Daha fazla bilgi için bkz. [Liste kaldırma portalını kullanarak kendinizi engellenen gönderenler listesinden kaldırma](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Exchange Online kaynaklı gereksiz e-posta için uygunsuz kullanım ve istenmeyen posta bildirimi
 

@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 307754dec24549c320a8ea9e2d8064b7e6d44d68
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: a0146159ebbb5e960bb375228e87fbfe43c0276e
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67336034"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497170"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Kiracılar arası posta kutusu geçişi (önizleme)
 
@@ -225,6 +225,9 @@ Geçiş yapılan kullanıcılar, kiracılar arası taşımaları etkinleştirmek
 ### <a name="prerequisites-for-target-user-objects"></a>Hedef kullanıcı nesneleri için önkoşullar
 
 Hedef kuruluşta aşağıdaki nesnelerin ve özniteliklerin ayarlandığından emin olun.
+
+>[!TIP]
+>Microsoft, aşağıdaki bölümdeki özniteliklerin çoğunu ayarlamak için güvenli bir otomatik yöntem sağlayan bir özellik geliştirmektedir. Kiracılar Arası Kimlik Eşlemesi adlı bu özellik şu anda küçük bir özel önizlemeye katılmak isteyen müşterileri arıyor. Bu yayın öncesi özellik ve kiracılar arası geçiş işlemlerinizi nasıl basitleştirebileceği hakkında daha fazla bilgi için **[Kiracılar Arası Kimlik Eşleme](cross-tenant-identity-mapping.md)** makalesine bakın.
 
 1. Kaynak kuruluştan taşınan herhangi bir posta kutusu için, Hedef kuruluşta bir MailUser nesnesi sağlamalısınız:
 

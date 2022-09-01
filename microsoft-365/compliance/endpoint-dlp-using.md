@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Uç nokta veri kaybı önleme konumlarını kullanmak için veri kaybı önleme (DLP) ilkelerini yapılandırmayı öğrenin.
-ms.openlocfilehash: 0224fefeb5b33bf688dea37b4609408e6d299557
-ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.openlocfilehash: eef4e62f013c95788d723a250b5d8b833bf574b8
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450091"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497849"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uç noktada veri kaybı önlemeyi kullanma
 
@@ -295,7 +295,7 @@ Bu söz dizimi tüm http/https web siteleri için geçerlidir.
 1. **Yeni bir hassas hizmet etki alanı grubu ekle'yi** seçin.
 1. Grubu adlandırın.
 1. İstediğiniz **Eşleşme türünü** seçin. **URL**, **IP adresi**, **IP adresi aralığı** arasından seçim yapabilirsiniz.
-1. **Bu gruba yeni hizmet etki alanları ekle** bölümüne uygun değeri yazın. Gruba birden çok web sitesi ekleyebilir ve alt etki alanları için joker karakterler kullanabilirsiniz.  Örneğin, yalnızca en üst düzey web sitesi için www.contoso.com veya corp.contoso.com, hr.contoso.com fin.contoso.com için *.contoso.com
+1. **Bu gruba yeni hizmet etki alanları ekle** bölümüne uygun değeri yazın. Gruba birden çok web sitesi ekleyebilir ve alt etki alanları için joker karakterler kullanabilirsiniz.  Örneğin, `www.contoso.com` yalnızca en üst düzey web sitesi için veya \*corp.contoso.com, hr.contoso.com fin.contoso.com için .contoso.com
 1. **Kaydet**'i seçin.
 1. **İlkeler'i** seçin.
 1. Yalnızca **Cihazlara** uygulanan bir ilke oluşturun ve kapsamına girin. İlke oluşturma hakkında daha fazla bilgi için bkz. [DLP ilkesi oluşturma, test etme ve ayarlama](create-test-tune-dlp-policy.md) .

@@ -26,14 +26,14 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Bir kuruluşu kimlik avına ve kötü amaçlı URL kullanan diğer saldırılara karşı korumak için Office 365 için Defender'de Güvenli Bağlantılar koruması hakkında bilgi edinin. Teams Güvenli Bağlantılar'ı keşfedin ve Güvenli Bağlantılar iletilerinin grafiklerini görün.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 5507ac8dbedf1bd3adaf8fcebb95d71810940cb2
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 63f2a129b5a02969cdc8859611822cdb3c89ec89
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385219"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497345"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Bağlantılar
 

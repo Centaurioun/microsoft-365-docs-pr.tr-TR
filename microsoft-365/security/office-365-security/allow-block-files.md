@@ -16,12 +16,12 @@ ms.collection:
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde dosyalara izin verme veya dosyaları engelleme hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 2478328f47c278944abe523c1448704f0b8199ff
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 61d9a3f2c1ae370183d88afce0077ecaea6a422c
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67469437"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497126"
 ---
 # <a name="allow-or-block-files-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini kullanarak dosyalara izin verme veya dosyaları engelleme
 
@@ -87,10 +87,9 @@ Yönergeler için bkz. [Sorgulanabilir e-posta eklerini Microsoft'a bildirme](ad
 
 ### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesi'ndeki dosyalar için blok girdileri oluşturmak için Microsoft 365 Defender portalını kullanın
 
-Dosyalar için blok girdilerini doğrudan Kiracı İzin Ver/Engelle Listesi'nde oluşturursunuz.
+Dosyalar için blok girdilerini doğrudan Kiracı İzin Ver/Engelle Listesi'nde oluşturabilirsiniz.
 
-> [!NOTE]
-> Email bu engellenen dosyaları içeren iletiler *kötü amaçlı yazılım* olarak engellenir.
+Email bu engellenen dosyaları içeren iletiler *kötü amaçlı yazılım* olarak engellenir.
 
 1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**İlkeler & kuralları** \> **Tehdit İlkeleri** \> **Kuralları** bölümüne **Kiracı İzin Ver/Listeleri Engelle** bölümüne \> gidin. Ya da doğrudan **Kiracı İzin Ver/Engelle Listesi** sayfasına gitmek için kullanın <https://security.microsoft.com/tenantAllowBlockList>.
 

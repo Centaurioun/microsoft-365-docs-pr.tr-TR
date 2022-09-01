@@ -18,12 +18,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 352fabf477bd991080a64bfc40ee60a19ec11d77
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6a4d665e4800e5f3aaf07129f9d5dbff1d3bfd2a
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67466953"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496581"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Microsoft 365 Defender aracılığıyla Microsoft Tehdit Uzmanları özelliklerini yapılandırma ve yönetme
 
@@ -97,7 +97,7 @@ Birçok uyarı arasında yalnızca Defender Uzman Bildirimleri'ni görmek istiyo
 
 ## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Microsoft Tehdit Uzmanları Abone Olma - İsteğe Bağlı Uzmanlar
 > [!NOTE]
-> İsteğe Bağlı Uzmanlar bir güvenlik olayı yanıt hizmeti değildir. Kuruluşunuzu etkileyen karmaşık tehditlerin daha iyi anlaşılmasını sağlamak için tasarlanmıştır. Acil güvenlik olayı yanıt sorunlarını çözmek için kendi güvenlik olayı yanıt ekibinizle etkileşime geçin. Kendi güvenlik olayı yanıt ekibiniz yoksa ve Microsoft'un yardımını istiyorsanız [Premier Services Hub'da](/services-hub/) bir destek isteği oluşturun.![ Görüntü](https://user-images.githubusercontent.com/11750124/187275455-b62fd01d-ad23-46c8-a11d-e5c0a50e92a8.png)
+> İsteğe Bağlı Uzmanlar bir güvenlik olayı yanıt hizmeti değildir. Kuruluşunuzu etkileyen karmaşık tehditlerin daha iyi anlaşılmasını sağlamak için tasarlanmıştır. Acil güvenlik olayı yanıt sorunlarını çözmek için kendi güvenlik olayı yanıt ekibinizle etkileşime geçin. Kendi güvenlik olayı yanıt ekibiniz yoksa ve Microsoft'un yardımını istiyorsanız [Premier Services Hub'da](/services-hub/) bir destek isteği oluşturun.
 
 Zaten Uç Nokta için Microsoft Defender bir müşteriyseniz, Microsoft Tehdit Uzmanları - İsteğe Bağlı Uzmanlar'a abone olmak için Microsoft temsilcinizle iletişime geçebilirsiniz.
 

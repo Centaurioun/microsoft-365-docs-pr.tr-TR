@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da önceden oluşturulmuş modeller hakkında bilgi edinin.
-ms.openlocfilehash: 47579f640e02874545177946534d81f1350104cd
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
+ms.openlocfilehash: 04247a627c30e4a13209f11bcdf40c3b24e8aea0
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687684"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497593"
 ---
 # <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da önceden oluşturulmuş modellere genel bakış
 
@@ -69,6 +69,6 @@ Microsoft Office metin tabanlı dosyalar ve OCR ile taranan dosyalar (PDF, resim
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Faturalardan veya makbuzlardan bilgi ayıklamak için önceden oluşturulmuş bir model kullanma](prebuilt-overview.md)
+[Faturalardan veya makbuzlardan bilgi ayıklamak için önceden oluşturulmuş bir model kullanma](prebuilt-models.md)
  
 

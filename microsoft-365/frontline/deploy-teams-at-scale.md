@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams'de ön cephe çalışanları için uygun ölçekte ekip dağıtma
+title: Teams'i ön cephe çalışanları için uygun ölçekte dağıtma
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: rahuldey
@@ -8,7 +8,7 @@ ms.topic: article
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Kuruluşunuzdaki ön cephe çalışanları için uygun ölçekte ekip dağıtmayı öğrenin.
+description: Teams'i kuruluşunuzdaki ön cephe çalışanları için uygun ölçekte dağıtmayı öğrenin.
 ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
@@ -16,44 +16,38 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: e833def27e88a9f59c756bd769a09191e9b2dd5c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: c9eca5d4d805b3eb9663a3aacf82d8e922585da7
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67467393"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497721"
 ---
-# <a name="deploy-teams-at-scale-for-frontline-workers-in-microsoft-teams"></a>Microsoft Teams'de ön cephe çalışanları için uygun ölçekte ekip dağıtma
-
-> [!NOTE]
-> Bu özellik şu anda genel önizleme aşamasındadır. Katılmak isterseniz [dscale@microsoft.com](mailto:dscale@microsoft.com) bize ulaşın.
+# <a name="deploy-teams-at-scale-for-frontline-workers"></a>Teams'i ön cephe çalışanları için uygun ölçekte dağıtma
 
 ## <a name="overview"></a>Genel bakış
- 
-Kuruluşunuzda, farklı mağazalara, konumlara ve rollere yayılmış ön cephe iş gücünüz arasında iletişim ve işbirliği sağlamak için kullandığınız birçok ekip olabilir. Şu anda bu ekipleri ve kullanıcıları büyük ölçekte dağıtmak, ayarlamak ve yönetmek için kolay bir çözüm yoktur.
 
-Yöneticilerin büyük ölçekte ekip dağıtıp yönetmesini sağlamak için bir çözüm oluşturuyoruz.
+Kuruluşunuz, ön cephe iş gücünüz arasında iletişim ve işbirliği sağlamak için çok sayıda ekip kullanıyor mu? Bu makale, uygun ölçekte ekipler oluşturmanız ve yönetmeniz gerekiyorsa size yöneliktir.
 
-Burada, bir kerede çok sayıda ekip oluşturup yönetmeye yönelik özelliklere ve yakın gelecekte neleri planladığımıza ilişkin genel bir bakış bulabilirsiniz.
+PowerShell'i kullanarak aynı anda en fazla 500 ekip dağıtabilir ve ekip başına en fazla 25 kullanıcı ekleyebilirsiniz. Ayrıca, uygun ölçekte mevcut ekiplere kullanıcı ekleyebilir ve bu ekiplerden kullanıcıları kaldırabilirsiniz. Kuruluşunuzun ölçek gereksinimlerini karşılamak ve dağıtım süresini önemli ölçüde azaltmak için bu çözümü kullanın.
 
-||Bugün kullanılabilir |2022'nin ilerleyen bölümlerinde  |
-|---------|---------|---------|
-|**Toplu iş başına oluşturabileceğiniz ekip sayısı**|En fazla 100 |En fazla 500|
-|**Ekip başına ekleyebileceğiniz kullanıcı sayısı**|En fazla 25|En fazla 25|
-
-Ekipleri büyük ölçekte dağıtmak şunları yapmanızı sağlar:
+Teams'i uygun ölçekte dağıtmak şunları yapabilirsiniz:
 
 - Önceden oluşturulmuş şablonları veya kendi özel şablonlarınızı kullanarak ekipler oluşturun.
 - Kullanıcıları ekiplere sahip veya üye olarak ekleyin.
 - Kullanıcıları mevcut ekiplere ekleyerek veya mevcut ekiplerden kaldırarak ekipleri uygun ölçekte yönetin.
 - Tamamlama, durum ve hatalar (varsa) dahil olmak üzere e-posta yoluyla bildirim alın. Dağıttığınız her ekip grubunun durumu hakkında en fazla beş kişiyi bilgilendirmeyi seçebilirsiniz. Ekip sahiplerine ve üyelerine ekiliğe eklendiklerinde otomatik olarak bildirim gönderilir.
 
-## <a name="how-to-deploy-teams-at-scale"></a>Ekipleri uygun ölçekte dağıtma
+Bu makale, Teams'i uygun ölçekte dağıtma konusunda size yol gösterir.
+
+:::image type="content" source="media/deploy-teams-at-scale.png" alt-text="Teams'i uygun ölçekte dağıtma adımlarına genel bakış.":::
+
+## <a name="set-up-and-deploy-your-teams"></a>Ekiplerinizi ayarlama ve dağıtma
 
 > [!NOTE]
 > Ekiplerinizi dağıtmadan önce tüm ekip sahiplerinin Teams lisansına sahip olduğundan emin olun.
 
-Aynı anda çok sayıda ekip dağıtmak için bu adımları izleyin.
+Aynı anda en fazla 500 ekip dağıtmak için bu adımları izleyin.
 
 ### <a name="step-1-prepare-your-csv-files"></a>1. Adım: CSV dosyalarınızı hazırlama
 
@@ -112,11 +106,9 @@ CSV dosyalarınızı oluşturmanıza yardımcı olması için aşağıdaki örne
 |Sydney Mattos|sydneym@contoso.com|Contoso Store 9|AddMember|Üye|
 |Violet Martinez|violetm@contoso.com|Contoso Store 10|AddMember|Üye|
 
-### <a name="step-2-deploy-your-teams"></a>2. Adım: Ekiplerinizi dağıtma
+### <a name="step-2-set-up-your-environment"></a>2. Adım: Ortamınızı ayarlama
 
-CSV dosyalarınızı oluşturduğunuza göre ortamınızı ayarlamaya ve ekiplerinizi dağıtmaya hazırsınız.
-
-Oluşturmak üzere bir grup ekip göndermek için cmdlet'ini kullanırsınız ```New-CsBatchTeamsDeployment``` . Her toplu iş için bir düzenleme kimliği oluşturulur. Ardından cmdlet'ini ```Get-CsBatchTeamsDeployment``` kullanarak her bir toplu iş için ilerleme durumunu ve ilerleme durumunu izleyebilirsiniz.
+Teams PowerShell modülünün en son sürümünü yüklemek ve bu sürüme bağlanmak için bu adımları izleyin.
 
 1. PowerShell sürüm 7 veya üzerini yükleyin. Adım adım yönergeler için bkz [. PowerShell'i Windows'a yükleme](/powershell/scripting/install/installing-powershell-on-windows).
 1. PowerShell'i yönetici modunda çalıştırın.
@@ -127,7 +119,7 @@ Oluşturmak üzere bir grup ekip göndermek için cmdlet'ini kullanırsınız ``
     ```
 
     Hata iletisi alırsanız, zaten hazırsınız demektir. Sonraki adıma geçin.
-1. [Teams PowerShell modülünün en son önizleme sürümünü](https://www.powershellgallery.com/packages/MicrosoftTeams) indirin ve yükleyin. Sürüm 4.3.1 (önizleme) veya sonraki bir önizleme sürümünü çalıştırıyor olmanız gerekir.  
+1. [Teams PowerShell modülünün en son sürümünü](https://www.powershellgallery.com/packages/MicrosoftTeams) indirin ve yükleyin. 4.3.1 (önizleme) veya sonraki bir sürümü çalıştırıyor olmanız gerekir.  
 
 1. Teams'e bağlanmak için aşağıdakileri çalıştırın.
 
@@ -145,11 +137,19 @@ Oluşturmak üzere bir grup ekip göndermek için cmdlet'ini kullanırsınız ``
 
     ve ```Get-CsBatchTeamsDeploymentStatus``` öğesinin listelendiğini ```New-CsBatchTeamsDeployment``` doğrulayın.
 
+### <a name="step-3-deploy-your-teams"></a>3. Adım: Ekiplerinizi dağıtma
+
+CSV dosyalarınızı oluşturduğunuza ve ortamınızı ayarladığınıza göre, ekiplerinizi dağıtmaya hazırsınız demektir.
+
+Oluşturmak üzere bir grup ekip göndermek için cmdlet'ini kullanırsınız ```New-CsBatchTeamsDeployment``` . Her toplu iş için bir düzenleme kimliği oluşturulur. Ardından cmdlet'ini ```Get-CsBatchTeamsDeploymentStatus``` kullanarak her bir toplu iş için ilerleme durumunu ve ilerleme durumunu izleyebilirsiniz.
+
 1. Bir ekip grubu dağıtmak için aşağıdakileri çalıştırın. Bu komutta, bu dağıtım hakkında bildirimde bulunabilmek için CSV dosyalarınızın yolunu ve en fazla beş alıcının e-posta adreslerini belirtirsiniz.
 
     ```powershell
     New-CsBatchTeamsDeployment -TeamsFilePath "Your CSV file path" -UsersFilePath "Your CSV file path" -UsersToNotify "Email addresses" 
     ```
+
+    Alıcılar dağıtım durumu hakkında e-posta bildirimleri alır. E-posta, gönderdiğiniz toplu işlemin düzenleme kimliğini ve oluşmuş olabilecek hataları içerir.
 
     Örneğin:
 
@@ -157,20 +157,13 @@ Oluşturmak üzere bir grup ekip göndermek için cmdlet'ini kullanırsınız ``
     New-CsBatchTeamsDeployment -TeamsFilePath "C:\dscale\Teams.csv" -UsersFilePath "C:\dscale\Users.csv" -UsersToNotify "adminteams@contoso.com,adelev@contoso.com"
     ```
 
-    Alıcılar dağıtım durumu hakkında e-posta bildirimleri alır. E-posta, gönderdiğiniz toplu işlemin düzenleme kimliğini ve oluşmuş olabilecek hataları içerir.
-
 1. Gönderdiğiniz toplu iş durumunu denetlemek için aşağıdakileri çalıştırın.
 
     ```powershell
     Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
     ```
 
-## <a name="send-us-feedback"></a>Görüşlerinizi bize gönderin
-
-Görüşleriniz bizim için önemlidir. Kullanılabilirlik, güvenilirlik, performans&mdash;her şeyi memnuniyetle karşılıyoruz!
-
-dscale@microsoft.com [Email](mailto:dscale@microsoft.com) ve varsa düzenleme kimliğinizi ve hata dosyanızı ekleyin.
-
 ## <a name="related-articles"></a>İlgili makaleler
 
 - [Teams PowerShell'e Genel Bakış](/microsoftteams/teams-powershell-overview)
+- [Ön cephe dağıtımıyla nereden başlayacağını öğrenin](flw-deploy-overview.md)

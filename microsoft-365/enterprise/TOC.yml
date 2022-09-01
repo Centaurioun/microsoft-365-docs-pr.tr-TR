@@ -170,6 +170,8 @@
           href: microsoft-365-inter-tenant-collaboration.md
         - name: Kiracılar arası posta kutusu geçişi
           href: cross-tenant-mailbox-migration.md
+        - name: Kiracılar arası kimlik eşlemesi
+          href: cross-tenant-identity-mapping.md
         - name: Kiracıdan kiracıya geçişler
           href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Multi-Geo

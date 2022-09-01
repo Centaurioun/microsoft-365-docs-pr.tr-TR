@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365'a posta gönderme
+title: Microsoft 365'e posta gönderme
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,25 +16,25 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Konuk gönderen olarak, Microsoft 365'da kullanıcılara e-posta teslim etme özelliğini nasıl artırabileceğinizi öğrenin. Ayrıca gereksiz e-postaları & kimlik avı girişimlerini konuk olarak bildirmeyi de öğrenin.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 94bd79493a56bd288d21be255915b046b2bb0178
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+description: Konuk gönderen olarak, Microsoft 365'te kullanıcılara e-posta teslim etme özelliğini nasıl artırabileceğinizi öğrenin. Ayrıca gereksiz e-postaları & kimlik avı girişimlerini konuk olarak bildirmeyi de öğrenin.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: fb7ffcbe016056a20aaeca761c2991c362a2482b
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649197"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497235"
 ---
-# <a name="sending-mail-to-microsoft-365"></a>Microsoft 365'a posta gönderme
+# <a name="sending-mail-to-microsoft-365"></a>Microsoft 365'e posta gönderme
 
-Bu makaleler, dış gönderenlerin saygınlıklarını artırmalarına ve Microsoft 365'da kullanıcılara e-posta teslim etme becerilerini artırmalarına yardımcı olur. Ayrıca, kendiniz Microsoft 365 bir kullanıcı olmasanız bile gereksiz e-postaları ve kimlik avı girişimlerini nasıl bildirebileceğiniz hakkında bazı bilgiler sağlar.
+Bu makaleler, dış gönderenlerin itibarını artırmalarına ve Microsoft 365'te kullanıcılara e-posta teslim etme becerilerini artırmalarına yardımcı olur. Ayrıca, microsoft 365 kullanıcısı olmasanız bile gereksiz e-postaları ve kimlik avı girişimlerini nasıl bildirebileceğiniz hakkında bazı bilgiler sağlar.
 
 Müşteri değilseniz, ancak olan birine posta göndermeye çalışıyorsanız, doğru yerdesiniz demektir. Yöneticiyseniz ve istenmeyen postayla mücadele konusunda yardıma ihtiyacınız varsa, bu sizin için doğru bölüm değildir. Bunun yerine [istenmeyen posta ve](anti-spam-protection.md) [kötü amaçlı yazılımdan koruma'ya](anti-malware-protection.md) gidin.
 
 |Hakkında bilgi için...|Bkz. ...|
 |---|---|
 |Müşterilere bireysel ve toplu e-posta gönderen e-posta sistemi yöneticilerine sağlanan hizmetler.|[Office 365'a posta gönderen müşteri olmayanlara yönelik hizmetler](services-for-non-customers.md)|
-|E-posta aracılığıyla Microsoft 365 müşterilere ulaşma sorunlarını düzeltme. Microsoft 365 alıcılara toplu posta göndermek için en iyi yöntemler.|[Office 365 gönderilen posta sorunlarını giderme](troubleshooting-mail-sent-to-office-365.md)|
-|Microsoft 365 kimlik avı ve kimlik sahtekarlığı gibi gereksiz e-postaların müşterilerimize gönderilmesini nasıl engeller?|[Microsoft 365'de istenmeyen posta önleme koruması](anti-spam-protection.md)|
+|Microsoft 365'te müşterilere e-posta yoluyla ulaşma sorunlarını giderme. Microsoft 365 alıcılarına toplu posta göndermek için en iyi yöntemler.|[Office 365 gönderilen posta sorunlarını giderme](troubleshooting-mail-sent-to-office-365.md)|
+|Microsoft 365'in, kimlik avı ve kimlik sahtekarlığı e-postası gibi gereksiz e-postaların müşterilerimize gönderilmesini nasıl önlediği.|[Microsoft 365'te istenmeyen posta önleme koruması](anti-spam-protection.md)|
 |Microsoft 365 müşterilerine e-posta gönderen bir yönetici olarak istenmeyen posta önleme ilkelerimize bağlı kalarak e-postanın engellenmesini nasıl önleyebilirsiniz? Bilmeniz gereken yasal şeyler bunlar.|[Başvuru: İlkeler, uygulamalar ve yönergeler](reference-policies-practices-and-guidelines.md)|

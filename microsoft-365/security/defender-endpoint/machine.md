@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d5b6c51fd6f0e581a1299e72600930d9ef4a2a3e
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: ada405980a781d32735a545f4d2bd44d19477511
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327409"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497082"
 ---
 # <a name="machine-resource-type"></a>Makine kaynak türü
 
@@ -41,10 +41,6 @@ ms.locfileid: "67327409"
 
 ## <a name="methods"></a>Yöntemler
 
-<br>
-
-****
-
 |Yöntem|Dönüş Türü|Açıklama|
 |---|---|---|
 |[Makineleri listele](get-machines.md)|[makine](machine.md) koleksiyonu|Kuruluştaki [makine](machine.md) varlıklarının listesi.|
@@ -60,13 +56,8 @@ ms.locfileid: "67327409"
 |[Eksik KB'leri al](get-missing-kbs-machine.md)|KB koleksiyonu|Makine kimliğiyle ilişkili eksik KB'lerin listesini alma|
 |[Cihaz değerini ayarla](set-device-value.md)|[makine](machine.md) koleksiyonu|[Bir cihazın değerini](tvm-assign-device-value.md) ayarlayın.|
 |[Makineyi güncelleştir](update-machine-method.md)|[makine](machine.md) koleksiyonu|Makinenin güncelleştirme durumunu alma.|
-|
 
 ## <a name="properties"></a>Özellikler
-
-<br>
-
-****
 
 |Özellik|Tür|Açıklama|
 |---|---|---|
@@ -91,4 +82,3 @@ ms.locfileid: "67327409"
 |deviceValue|Null Atanabilir Sabit Listesi|[Cihazın değeri](tvm-assign-device-value.md). Olası değerler şunlardır: 'Normal', 'Düşük' ve 'Yüksek'.|
 |ipAddresses|IpAddress koleksiyonu|***IpAddress*** nesneleri kümesi. Bkz. [Makine alma API'si](get-machines.md).|
 |osArchitecture|Dize|İşletim sistemi mimarisi. Olası değerler şunlardır: "32 bit", "64 bit". osProcessor yerine bu özelliği kullanın.|
-|

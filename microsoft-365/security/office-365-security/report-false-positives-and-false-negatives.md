@@ -11,14 +11,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Rapor İletisi özelliğini kullanarak Outlook'ta hatalı pozitif ve hatalı negatifleri bildirmeyi öğrenin.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 5955f6b5c4e376f296dcdad2d54a627bbcce04c3
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 92ec6777469caaa47664130a66acfcb72e7329ba
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685689"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497367"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Outlook'ta yanlış pozitifleri ve yanlış negatifleri bildirme
 
@@ -58,7 +58,7 @@ bir iletinin içeriğini belirlemek için kullanıcı gönderimlerini kolayca ar
 
 ### <a name="report-junk-and-phishing-messages"></a>Gereksiz iletileri ve kimlik avı iletilerini bildirme
 
-Gelen Kutusu'ndaki iletiler veya Gereksiz E-posta dışındaki herhangi bir e-posta klasöründe istenmeyen posta ve kimlik avı iletilerini bildirmek için aşağıdaki yöntemi kullanın:
+Gelen Kutusu'ndaki iletiler veya Gereksiz Email dışındaki herhangi bir e-posta klasöründe istenmeyen posta ve kimlik avı iletilerini bildirmek için aşağıdaki yöntemi kullanın:
 
 1. Seçili iletinin sağ üst köşesindeki **Diğer eylemler** üç nokta'yı seçin, açılan menüden **Rapor iletisi'ni** ve ardından **Gereksiz** veya **Kimlik Avı'nı** seçin.
 
@@ -67,7 +67,7 @@ Gelen Kutusu'ndaki iletiler veya Gereksiz E-posta dışındaki herhangi bir e-po
    :::image type="content" source="../../media/report-message-junk-phishing.png" alt-text="Rapor İletisi bölmesinde gereksiz ve kimlik avı seçeneği" lightbox="../../media/report-message-junk-phishing.png":::
 
 2. Seçilen iletiler analiz için Microsoft'a gönderilir ve:
-   - İstenmeyen posta olarak bildirildiyse Gereksiz E-posta klasörüne taşındı.
+   - İstenmeyen posta olarak bildirildiyse Gereksiz Email klasörüne taşındı.
    - Kimlik avı olarak bildirildiyse silindi.
 
 ### <a name="report-messages-that-are-not-junk"></a>Gereksiz olmayan iletileri bildirme

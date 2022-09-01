@@ -19,12 +19,12 @@ ms.topic: overview
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.openlocfilehash: bb4b0cb1c38fc394d5dfb2ec0498ba72b23e8754
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 7ab48b6dc7aad50af438e6fcebb241e32baac6ed
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388561"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67495291"
 ---
 # <a name="protect-your-network"></a>Ağınızı koruyun
 
@@ -48,6 +48,17 @@ Ağ koruması, cihazların İnternet tabanlı olaylardan korunmasına yardımcı
 
 Ağ koruması [, Web korumasındaki](web-protection-overview.md) korumayı işletim sistemi düzeyine genişletir. Microsoft Edge'de bulunan web koruma işlevselliğini desteklenen diğer tarayıcılara ve tarayıcı olmayan uygulamalara sağlar. Ağ koruması ayrıca [Uç nokta algılama ve yanıt](overview-endpoint-detection-response.md) ile kullanıldığında güvenliğin aşılmasına ilişkin göstergelerin (ICS) görünürlüğünü ve engellenmesini de sağlar. Örneğin, ağ koruması belirli etki alanlarını veya konak adlarını engellemek için kullanabileceğiniz [özel göstergelerinizle](manage-indicators.md) birlikte çalışır.
 
+> [!NOTE]
+> Web koruma senaryoları, Microsoft Edge ve Internet Explorer dışındaki işlemler için inceleme ve zorlama için Ağ Koruması'dan yararlanıyor:
+>
+> - IP, üç protokol için de desteklenir (TCP, HTTP ve HTTPS (TLS)).
+> - Özel göstergelerde yalnızca tek IP adresleri desteklenir (CIDR blokları veya IP aralıkları yoktur).
+> - Şifrelenmiş URL'ler (tam yol) yalnızca birinci taraf tarayıcılarda (Internet Explorer, Edge) engellenebilir.
+> - Şifrelenmiş URL'ler (yalnızca FQDN) üçüncü taraf tarayıcılarda (internet explorer, Edge dışında) engellenebilir.
+> - Şifrelenmemiş URL'ler için tam URL yol blokları uygulanabilir.
+>
+> Eylemin gerçekleştirilişi ile URL ve IP'nin engellenmesi arasında 2 saate kadar gecikme süresi (genellikle daha az) olabilir.
+
 Ağ korumasının cihazlarınızın saldırı yüzeyini kimlik avı dolandırıcılığı, açıklardan yararlanma ve diğer kötü amaçlı içeriklerden nasıl azaltmaya yardımcı olduğunu öğrenmek için bu videoyu izleyin.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
 
@@ -64,7 +75,7 @@ Ağ koruması Windows 10 veya 11 (Pro veya Enterprise), Windows Server sürüm 1
 Ağ koruması, Uç Nokta için Microsoft Defender'deki saldırı yüzeyi azaltma çözümleri grubunun bir parçasıdır. Ağ koruması, engelleyici URL'lerin ve IP adreslerinin ağ katmanını etkinleştirir. Ağ koruması, belirli tarayıcılar ve standart ağ bağlantıları kullanılarak URL'lere erişilebileceğini engelleyebilir. Varsayılan olarak, ağ koruması, Microsoft Edge tarayıcısında SmartScreen'e benzer şekilde kötü amaçlı URL'leri engelleyen SmartScreen akışını kullanarak bilgisayarlarınızı bilinen kötü amaçlı URL'lerden korur. Ağ koruma işlevselliği şu şekilde genişletilebilir:
 
 - Kendi tehdit bilgilerinizden ([göstergeler](indicator-ip-domain.md)) IP/URL adreslerini engelleme
-- Microsoft Defender for Cloud Apps (eski [adıyla Microsoft Cloud App Security](/defender-cloud-apps/what-is-defender-for-cloud-apps)) tasdik edilmemiş hizmetleri engelleme
+- [Microsoft Defender for Cloud Apps'den](/defender-cloud-apps/what-is-defender-for-cloud-apps) tasdik edilmemiş hizmetleri engelleme
 - Siteleri kategoriye göre engelleme ([Web içeriği filtreleme](web-content-filtering.md))
 
 Ağ koruması, Microsoft koruması ve yanıt yığınının kritik bir parçasıdır.
@@ -137,6 +148,8 @@ Kullanıcı bir web sitesini ziyaret eder:
 
 ### <a name="network-protection-c2-detection-and-remediation"></a>Ağ koruması: C2 algılama ve düzeltme
 
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 İlk biçiminde fidye yazılımı, önceden programlanmış ve sınırlı, belirli sonuçlara (örneğin, bir bilgisayarı şifrelemeye) odaklanmış bir ticari tehdittir. Ancak fidye yazılımı insan odaklı, uyarlamalı ve daha büyük ölçekli ve daha yaygın sonuçlara odaklanan gelişmiş bir tehdit haline gelmiştir; bir kuruluşun tüm varlıklarını veya verilerini fidye için tutmak gibi.
 
 Komut ve Denetim sunucuları (C2) desteği bu fidye yazılımı evriminin önemli bir parçasıdır ve bu saldırıların hedefledikleri ortama uyum sağlamasına olanak tanır. Komut ve denetim altyapısı bağlantısının kesilmesi, saldırının bir sonraki aşamasına ilerlemesini durdurur.
@@ -175,7 +188,7 @@ Aşağıdaki örnek engellenen eylemleri içerir:
 ```kusto
 
 DeviceEvents
-|Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
 

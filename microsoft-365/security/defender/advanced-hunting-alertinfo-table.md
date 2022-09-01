@@ -1,7 +1,7 @@
 ---
 title: Gelişmiş tehdit avcılığı şemasındaki AlertInfo tablosu
 description: Gelişmiş tehdit avcılığı şemasının AlertInfo tablosunda uyarı oluşturma olayları hakkında bilgi edinin
-keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, AlertInfo, uyarı, önem derecesi, kategori, MITRE, ATT&CK, Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Microsoft Cloud App Security, MCAS ve Kimlik için Microsoft Defender
+keywords: gelişmiş tehdit avcılığı, tehdit avcılığı, siber tehdit avcılığı, Microsoft 365 Defender, microsoft 365, m365, arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, AlertInfo, uyarı, önem derecesi, kategori, MITRE, ATT&CK, Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Microsoft Defender for Cloud Apps ve Kimlik için Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -18,12 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d4f361cdb48db59c72527c7b06e72ae2e91aef70
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6dbb60d6cd5b7ca208e4e79164b23dfe576b225b
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67472930"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67495807"
 ---
 # <a name="alertinfo"></a>AlertInfo
 

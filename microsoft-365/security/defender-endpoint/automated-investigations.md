@@ -10,6 +10,7 @@ ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
+ms.date: 08/31/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: cfc3ebb1a32487bf2b32074059091c0d4d3517ec
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: d83377503587c76fced144159f2d8f3fc82f4df7
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535790"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497905"
 ---
 # <a name="overview-of-automated-investigations"></a>Otomatik araştırmalara genel bakış
 
@@ -46,7 +47,7 @@ Otomatik araştırmadaki teknoloji çeşitli inceleme algoritmalarını kullanı
 Bu makale AIR'e genel bir bakış sağlar ve sonraki adımlara ve ek kaynaklara bağlantılar içerir.
 
 > [!TIP]
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automated-investigations-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automated-investigations-abovefoldlink)
 
 ## <a name="how-the-automated-investigation-starts"></a>Otomatik araştırma nasıl başlar?
 
@@ -85,7 +86,7 @@ Bekleyen veya tamamlanan tüm düzeltme eylemleri [İşlem merkezinde](auto-inve
 Aboneliğiniz [Uç Nokta için Defender](microsoft-defender-endpoint.md) veya [İş için Defender](../defender-business/mdb-overview.md) içermelidir.
 
 > [!NOTE]
-> Otomatik araştırma ve yanıt, pasif modda veya etkin modda çalışmak için Microsoft Defender Virüsten Koruma gerektirir. Microsoft Defender Virüsten Koruma devre dışı bırakılırsa veya kaldırılırsa, Otomatik Araştırma ve Yanıt düzgün çalışmaz.
+> Otomatik araştırma ve yanıt, pasif modda veya etkin modda çalışmak için Microsoft Defender Virüsten Koruma gerektirir. Microsoft Defender Virüsten Koruma devre dışı bırakılır veya kaldırılırsa, Otomatik Araştırma ve Yanıt düzgün çalışmaz.
 
 Şu anda AIR yalnızca aşağıdaki işletim sistemi sürümlerini destekler:
 
@@ -97,6 +98,9 @@ Aboneliğiniz [Uç Nokta için Defender](microsoft-defender-endpoint.md) veya [�
 - Windows 10, sürüm 1803 ([KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464) ile İs Derlemesi 17134.704) veya üzeri
 - Windows 10, sürüm [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) veya üzeri
 - Windows 11
+
+> [!NOTE]
+> Windows Server 2012 R2 ve Windows Server 2016 üzerinde otomatik araştırma ve yanıt, [Birleşik Aracı'nın](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) yüklenmesini gerektirir. 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

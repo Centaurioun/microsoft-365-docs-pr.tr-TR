@@ -17,12 +17,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 6184d31ec2ae47f796b7ef61da43bc163423cb86
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+ms.openlocfilehash: 12e155d9b5953dcd88c5051d97dfe37389e2ebda
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309537"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497681"
 ---
 # <a name="get-started-with-microsoft-365-for-frontline-workers"></a>Ön saf çalışanları için Microsoft 365'i kullanmaya başlama
 
@@ -99,7 +99,7 @@ Sınıfının en iyisi güvenlik ve uyumluluk özellikleriyle işletmenizin güv
 |Yeteneği |Lisans kullanılabilirliği |
 |-----------|---------------------|
 |[Ön cephe çalışanı ekleme sihirbazı](flw-onboarding-wizard.md) |Kurumsal, F1, F3 |
-|[Teams'i uygun ölçekte dağıtma](deploy-teams-at-scale.md) |Kurumsal, F1, F3 |
+|[Teams'i ön cephe çalışanları için uygun ölçekte dağıtma](deploy-teams-at-scale.md) |Kurumsal, F1, F3 |
 |[Ön cephe çalışanları için Teams ilke paketleri](/microsoftteams/policy-packages-flw) |Kurumsal, F1, F3 |
 
 ### <a name="secure-endpoints-and-apps-across-device-types-and-operating-systems"></a>Cihaz türleri ve işletim sistemleri arasında uç noktaların ve uygulamaların güvenliğini sağlama

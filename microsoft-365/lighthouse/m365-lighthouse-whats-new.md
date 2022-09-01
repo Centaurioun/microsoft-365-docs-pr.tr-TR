@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP' ler) için her ay Microsoft 365 Lighthouse eklenen, değiştirilen ve düzeltilmiş olanlara bakın.
-ms.openlocfilehash: fd5e7d611146237482fd53753c7362ce83639225
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: b1c8a3f3a965f21ab5197c6d13196c092f8ebc68
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432298"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496889"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'daki yenilikler
 
@@ -42,18 +42,6 @@ Microsoft 365 Lighthouse artık yönetilen kiracılarınızdaki tüm etkin olmay
 Varsayılan taban çizgisine bir Microsoft Edge ilke dağıtım görevi ekledik. Bu dağıtım görevi, kimlik avına ve kötü amaçlı yazılımlara karşı yerleşik koruma içeren Edge güvenlik ayarlarıyla müşteri kiracınızın tarayıcılarının güvenliğini sağlamanızı sağlar. Microsoft Edge'in, Windows 10 veya sonraki sürümleri çalıştıran cihazlara sahip küçük ve orta ölçekli işletmeler için Google Chromium'dan daha güvenli olduğu kanıtlanmıştır.
 
 Daha fazla bilgi için bkz. [İşletmeniz için Microsoft Edge güvenliği](/deployedge/ms-edge-security-for-business).
-
-### <a name="deployment-status-reporting"></a>Dağıtım durumu raporlama 
-
-Microsoft 365 Lighthouse artık dağıtım çalışmalarınızı uygun şekilde iyileştirmenize ve önceliklendirmenize yardımcı olmak için her dağıtım planı için bir dağıtım durumu sağlar.
-
-### <a name="enhanced-deployment-insights-for-licensing"></a>Lisanslama için gelişmiş dağıtım içgörüleri
-
-Microsoft 365 Lighthouse artık yetersiz lisanslama nedeniyle hangi dağıtım görevlerinin hangi kullanıcılar için tamamlanamamasıyla ilgili içgörüler sağlar. Bu içgörüler, dağıtım planınızı tamamlamak için lisanslamayı veya dağıtım planını buna göre ayarlamanıza yardımcı olur.
-
-### <a name="enhanced-baseline-deployment-with-direct-links-to-existing-configurations"></a>Mevcut yapılandırmalara doğrudan bağlantılar içeren gelişmiş temel dağıtım
-
-Müşteri kiracılarınızın iyi durumda ve güvenli olduğundan emin olmak için temel dağıtım deneyimini daha hızlı ve kolay hale getirmek için geliştirdik. Algılanan müşteri kiracı yapılandırmalarına bağlantılar ekledik, böylece ilgili yönetim portalında bu kiracı yapılandırmalarını kolayca bulabilir, gözden geçirebilir ve değiştirebilirsiniz.
 
 ## <a name="july-2022"></a>Temmuz 2022
 

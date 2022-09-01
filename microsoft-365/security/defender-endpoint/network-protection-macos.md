@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: c0f22f4fa772198e73aff1ab06933e1736aa3b41
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 103268e8b1cd1090d2ec6815a414164a63e83606
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67389466"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497059"
 ---
 # <a name="network-protection-for-macos"></a>macOS için ağ koruması
 
@@ -248,7 +248,7 @@ plutil -lint com.microsoft.wdav.xml
    > [!NOTE]
    > Bir ilkeyi kaldırıyorsanız veya cihaz gruplarını aynı anda değiştiriyorsanız, bu durum ilke dağıtımında gecikmeye neden olabilir.
    > Profesyonel ipucu: Bir cihaz grubunda herhangi bir kategori seçmeden bir ilke dağıtabilirsiniz. Bu eylem, engelleme ilkesi oluşturmadan önce kullanıcı davranışını anlamanıza yardımcı olmak için yalnızca denetim ilkesi oluşturur.
-4. [Uç Nokta için Microsoft Defender Bulut Uygulamaları Güvenliği ile tümleştirin](/defender-cloud-apps/mde-integration); ağ koruması etkinleştirilmiş macOS cihazlarınız uç nokta ilkesi zorlama özelliklerine sahip olur.
+4. [Uç Nokta için Microsoft Defender Cloud Apps için Defender ile tümleştirin](/defender-cloud-apps/mde-integration) ve ağ koruması etkinleştirilmiş macOS cihazlarınız uç nokta ilkesi zorlama özelliklerine sahip olur.
    > [!NOTE]
    > Bulma ve diğer özellikler şu anda bu platformlarda desteklenmiyor.
 

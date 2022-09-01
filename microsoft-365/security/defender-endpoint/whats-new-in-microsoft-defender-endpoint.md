@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07f9aa517ae0cc4b442d0296df82f219e242debf
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.openlocfilehash: 9d7e89a55a70cef1f8957792346ca09f05416439
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439618"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67497148"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender’daki yenilikler
 
@@ -53,7 +53,7 @@ Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında da
 - [Microsoft 365 Defender'daki yenilikler](../defender/whats-new.md)
 - [Office 365 için Microsoft Defender’daki yenilikler](../office-365-security/whats-new-in-defender-for-office-365.md)
 - [Kimlik için Microsoft Defender'deki yenilikler](/defender-for-identity/whats-new)
-- [Microsoft Cloud App Security'deki yenilikler](/cloud-app-security/release-notes)
+- [Microsoft Defender for Cloud Apps'deki yenilikler](/cloud-app-security/release-notes)
 
 Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkında daha fazla bilgi için:
 

@@ -19,18 +19,18 @@ ms.collection:
 description: Yöneticiler, Microsoft 365 Defender portalındaki Kısıtlı kullanıcılar sayfasından kullanıcıları kaldırmayı öğrenebilir. Kullanıcılar, genellikle hesap güvenliğinin aşılmasına bağlı olarak giden istenmeyen posta göndermek için Kısıtlı kullanıcılar portalına eklenir.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 229dfbb7a0441f4a6cb6632432c0032f4ce4308e
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 688fb910aa292e65b84d7142487fc8541b5445f4
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130746"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496669"
 ---
-# <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>engellenen kullanıcıları Microsoft 365'deki Kısıtlı kullanıcılar portalından kaldırma
+# <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Engellenen kullanıcıları Microsoft 365'teki Kısıtlı kullanıcılar portalından kaldırma
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -59,7 +59,7 @@ Kısıtlanmış varlık, gizliliği tehlikeye girmiş veya gönderme sınırın�
 
 - Microsoft 365 Defender portalını adresinde <https://security.microsoft.com>açarsınız. **Doğrudan Kısıtlı kullanıcılar** sayfasına gitmek için kullanın<https://security.microsoft.com/restrictedusers>.
 
-- Exchange Online PowerShell'e bağlanmak için bkz. [PowerShell'Exchange Online Bağlan](/powershell/exchange/connect-to-exchange-online-powershell).
+- Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Bu makaledeki yordamları gerçekleştirebilmeniz için **önce Exchange Online'de** izinlerin atanmış olması gerekir:
   - Kısıtlı kullanıcılar portalından kullanıcıları kaldırmak için **Kuruluş Yönetimi** veya **Güvenlik Yöneticisi** rol gruplarının üyesi olmanız gerekir.
@@ -69,7 +69,7 @@ Kısıtlanmış varlık, gizliliği tehlikeye girmiş veya gönderme sınırın�
 
   > [!NOTE]
   >
-  > - kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'deki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+  > - kullanıcıları Microsoft 365 yönetim merkezi ilgili Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365'teki diğer özellikler için gerekli izinleri _ve_ izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
   >
   > - [Exchange Online'daki](/Exchange/permissions-exo/permissions-exo#role-groups) **Yalnızca Görüntüleme Kuruluş Yönetimi** rol grubu da özelliğe salt okunur erişim sağlar.
 
@@ -77,7 +77,7 @@ Kısıtlanmış varlık, gizliliği tehlikeye girmiş veya gönderme sınırın�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-a-user-from-the-restricted-users-list"></a>Kullanıcıyı Kısıtlı kullanıcılar listesinden kaldırmak için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**E-posta & işbirliği** \> **Kısıtlı kullanıcıları** **gözden geçir'e** \> gidin. **Doğrudan Kısıtlı kullanıcılar** sayfasına gitmek için kullanın<https://security.microsoft.com/restrictedusers>.
+1. konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, Email & işbirliği** \> **Kısıtlı kullanıcıları** **gözden geçirme** \> bölümüne gidin. **Doğrudan Kısıtlı kullanıcılar** sayfasına gitmek için kullanın<https://security.microsoft.com/restrictedusers>.
 
 2. **Kısıtlı kullanıcılar** sayfasında, engelini kaldırmak istediğiniz kullanıcıyı bulmak ve seçmek için kullanıcıya tıklayın.
 
@@ -98,20 +98,20 @@ Kısıtlanmış varlık, gizliliği tehlikeye girmiş veya gönderme sınırın�
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>Kısıtlı kullanıcılar için uyarı ayarlarını doğrulama
 
-**Kullanıcının e-posta göndermesi kısıtlandı** adlı varsayılan uyarı ilkesi, kullanıcıların giden posta göndermesi engellendiğinde yöneticileri otomatik olarak bilgilendirir. Bu ayarları doğrulayabilir ve bildirim için ek kullanıcılar ekleyebilirsiniz. Uyarı ilkeleri hakkında daha fazla bilgi için bkz[. Microsoft 365 uyarı ilkeleri](../../compliance/alert-policies.md).
+**Kullanıcının e-posta göndermesi kısıtlandı** adlı varsayılan uyarı ilkesi, kullanıcıların giden posta göndermesi engellendiğinde yöneticileri otomatik olarak bilgilendirir. Bu ayarları doğrulayabilir ve bildirim için ek kullanıcılar ekleyebilirsiniz. Uyarı ilkeleri hakkında daha fazla bilgi için bkz. [Microsoft 365'te uyarı ilkeleri](../../compliance/alert-policies.md).
 
 > [!IMPORTANT]
 > Uyarıların çalışması için denetim günlüğü aramanın açık olması gerekir. Daha fazla bilgi için bkz [. Denetim günlüğü aramasını açma veya kapatma](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**E-posta & işbirliği** \> **İlkeleri & kurallar** \> **Uyarı ilkesi'ne** gidin. **Doğrudan Uyarı ilkesi** sayfasına gitmek için kullanın<https://security.microsoft.com/alertpolicies>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Email & işbirliği** \> **İlkeleri & kuralları** \> **Uyarı ilkesi'ne** gidin. **Doğrudan Uyarı ilkesi** sayfasına gitmek için kullanın<https://security.microsoft.com/alertpolicies>.
 
 2. **Uyarı ilkesi** sayfasında Kullanıcı'nın **e-posta göndermesi kısıtlandı** adlı uyarıyı bulun ve seçin. İlkeleri ada göre sıralayabilir veya **arama** kutusunu kullanarak ilkeyi bulabilirsiniz.
 
 3. Kullanıcının görüntülenen **e-postayı göndermesi kısıtlandı** açılır öğesinde, aşağıdaki ayarları doğrulayın veya yapılandırın:
    - **Durum**: Uyarının açık ![olduğunu doğrulayın.](../../media/scc-toggle-on.png)
-   - **E-posta alıcıları**: **Düzenle'ye** tıklayın ve görüntülenen **Alıcıları düzenle** açılır penceresinde aşağıdaki ayarları doğrulayın veya yapılandırın:
+   - **alıcıları Email: Alıcıları** düzenle **açılır penceresinde** **Düzenle'ye** tıklayın ve aşağıdaki ayarları doğrulayın veya yapılandırın:
      - **E-posta bildirimleri gönder**: Bunun seçili olduğunu doğrulayın (**Açık**).
-     - **E-posta alıcıları**: Varsayılan değer **TenantAdmins'tir** (genel **yönetici** üyeleri anlamına gelir). Daha fazla alıcı eklemek için kutunun boş bir alanına tıklayın. Alıcıların listesi görüntülenir ve bir alıcıyı filtrelemek ve seçmek için bir ad yazmaya başlayabilirsiniz. Kaldır simgesine tıklayarak ![kutudan var olan bir alıcıyı kaldırabilirsiniz.](../../media/m365-cc-sc-remove-selection-icon.png) öğesini seçin.
+     - **Email alıcılar**: Varsayılan değer **TenantAdmins'tir** (genel **yönetici** üyeleri anlamına gelir). Daha fazla alıcı eklemek için kutunun boş bir alanına tıklayın. Alıcıların listesi görüntülenir ve bir alıcıyı filtrelemek ve seçmek için bir ad yazmaya başlayabilirsiniz. Kaldır simgesine tıklayarak ![kutudan var olan bir alıcıyı kaldırabilirsiniz.](../../media/m365-cc-sc-remove-selection-icon.png) öğesini seçin.
      - **Günlük bildirim sınırı**: Varsayılan değer **Sınır yok'dur** , ancak günlük en fazla bildirim sayısı için bir sınır seçebilirsiniz.
 
      Bitirdiğinizde, **Kaydet**'i tıklatın.

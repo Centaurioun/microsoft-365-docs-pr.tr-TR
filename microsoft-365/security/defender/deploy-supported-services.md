@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender tarafından desteklenen hizmetleri dağıtma
 description: Microsoft 365 Defender tarafından tümleştirilebilen Microsoft güvenlik hizmetleri, lisans gereksinimleri ve dağıtım yordamları hakkında bilgi edinin
-keywords: dağıtma, lisanslar, desteklenen hizmetler, sağlama, yapılandırma Microsoft 365 Defender, M365, lisans uygunluğu, Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Kimlik için Microsoft Defender, Microsoft Cloud App Security, MCAS, E5, A5, EMS
+keywords: dağıtma, lisanslar, desteklenen hizmetler, sağlama, yapılandırma Microsoft 365 Defender, M365, lisans uygunluğu, Uç Nokta için Microsoft Defender, Office 365 için Microsoft Defender, Kimlik için Microsoft Defender, Microsoft Defender for Cloud Apps, MCAS, E5, A5, EMS
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8c7b5f44097bcf2e18b1b9d39e82c4ca468c38aa
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9ba05de628da9b98fcea1ad4e363123807f33d51
+ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480723"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67496691"
 ---
 # <a name="deploy-supported-services"></a>Desteklenen hizmetleri dağıtın
 
