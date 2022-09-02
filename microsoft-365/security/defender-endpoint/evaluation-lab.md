@@ -5,7 +5,7 @@ keywords: Uç Nokta için Microsoft Defender değerlendirme, değerlendirme, lab
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -14,14 +14,15 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-evalutatemtp
+- highpri
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 8a369aba012d7de23f72501ef1ce042750c57f7d
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.subservice: mde
+ms.openlocfilehash: c149237cabf5a12e1ed3e53b954aa9ebf94a5c84
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714607"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521389"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Uç Nokta için Microsoft Defender değerlendirme laboratuvarı
 
@@ -31,7 +32,7 @@ ms.locfileid: "66714607"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Kapsamlı bir güvenlik ürünü değerlendirmesi yapmak, uçtan uca saldırı simülasyonu yapılabilmesi için önce hantal ortam ve cihaz yapılandırması gerektiren karmaşık bir süreç olabilir. Karmaşıklık düzeyine eklemek, değerlendirme sırasında simülasyon etkinliklerinin, uyarıların ve sonuçların yansıtıldığı yeri izleme zorluğudur.
 
@@ -64,7 +65,7 @@ Rol tabanlı erişim denetimini (RBAC) etkinleştirdiyseniz ve en az bir makine 
 
 Daha fazla bilgi için bkz. [Rolleri oluşturma ve yönetme](user-roles.md).
 
-Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink)
+Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink)
 
 ## <a name="get-started-with-the-lab"></a>Laboratuvarı kullanmaya başlama
 

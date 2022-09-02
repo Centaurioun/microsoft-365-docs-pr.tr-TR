@@ -2,7 +2,7 @@
 title: Microsoft Defender Virüsten Koruma ile istenmeyebilecek uygulamaları engelleme
 description: Adware gibi istenmeyen yazılımları engellemek için istenmeyebilecek uygulama (PUA) virüsten koruma özelliğini etkinleştirin.
 keywords: pua, enable, istenmeyen yazılım, istenmeyen uygulamalar, adware, tarayıcı araç çubuğu, algılama, engelleme, Microsoft Defender Virüsten Koruma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: detect
 ms.sitesec: library
 ms.localizationpriority: high
@@ -12,15 +12,15 @@ ms.custom: nextgen
 audience: ITPro
 ms.reviewer: mimilone, julih
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 43cb2c4230bd48260ecd1cf4e4f6f92518a47b43
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 92ff7fa7e5ef74eba29ad4fd9e7b571f5dd61610
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66747933"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523808"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>İstenmeyen olası uygulamaları tespit edin ve engelleyin
 
@@ -113,7 +113,7 @@ System Center 2012 Configuration Manager için bkz. [Configuration Manager'de En
 
 3. Yapılandırmak istediğiniz grup ilkesi Nesnesi'ni ve ardından **Düzenle'yi** seçin.
 
-4. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na** gidin ve **Yönetim şablonları'nı** seçin.
+4. **Grup İlkesi Yönetimi Düzenleyicisi**'nde **Bilgisayar yapılandırması**'na gidin ve **Yönetim şablonları**'nı seçin.
 
 5. Ağacı **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** olarak genişletin.
 

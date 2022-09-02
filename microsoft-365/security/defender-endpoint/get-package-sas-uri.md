@@ -2,7 +2,7 @@
 title: Paket SAS URI API'si alma
 description: Araştırma paketini indirmeye izin veren bir URI almak için bu API'yi kullanın.
 keywords: api'ler, graf api'leri, desteklenen API'ler, paket alma, sas, uri
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: af4d99f552af17f99ea93c940cadadc100905d62
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 8dcc5a89cd50f560bc60226f1b940c44fbee8728
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331697"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523896"
 ---
 # <a name="get-package-sas-uri-api"></a>Paket SAS URI API'si alma
 

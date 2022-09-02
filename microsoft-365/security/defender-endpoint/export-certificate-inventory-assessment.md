@@ -2,7 +2,7 @@
 title: Cihaz başına sertifika değerlendirme yöntemleri ve özellikleri
 description: "\"Microsoft Defender Güvenlik Açığı Yönetimi\" verileri çeken sertifika API'leri hakkında bilgi sağlar. Farklı veri türlerini almak için farklı API çağrıları vardır. Genel olarak, her API çağrısı kuruluşunuzdaki cihazlar için gerekli verileri içerir."
 keywords: api, API'ler, dışarı aktarma değerlendirmesi, cihaz değerlendirmesi başına, makine değerlendirmesi başına, güvenlik açığı değerlendirmesi raporu, cihaz güvenlik açığı değerlendirmesi, cihaz güvenlik açığı raporu, güvenli yapılandırma değerlendirmesi, güvenli yapılandırma raporu, yazılım güvenlik açıkları değerlendirmesi, yazılım güvenlik açığı raporu, makineye göre güvenlik açığı raporu,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 1b47a3b3c0088dca035fa6c85943e1737935cc51
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 681f177215c15540cb8649e74b2b319623c2db58
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344931"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524028"
 ---
 # <a name="export-certificate-inventory-per-device"></a>Cihaz başına sertifika envanteri dışarı aktarma
 
@@ -53,21 +53,31 @@ Farklı veri türlerini almak için farklı API çağrıları vardır. Genel ola
 
 Cihaz başına tüm cihazlar için tüm sertifika değerlendirmelerini döndürür. DeviceId, Parmak İzi ve Yol'un her benzersiz bileşimi için ayrı bir giriş içeren bir tablo döndürür.
 
-#### <a name="12-limitations"></a>1.2 Sınırlamaları
+#### <a name="111-limitations"></a>1.1.1 Sınırlamaları
 
 - En büyük sayfa boyutu 200.000'dir.
 - Bu API için hız sınırlamaları dakikada 30 çağrı ve saatte 1000 çağrıdır.
 
-### <a name="13-parameters"></a>1.3 Parametreler
+### <a name="12-permissions"></a>1.2 İzinler
 
-- pageSize (varsayılan = 50.000): Yanıt olarak sonuç sayısı.
-- $top: Döndürülecek sonuç sayısı (@odata.nextLink döndürmez ve bu nedenle tüm verileri çekmez).
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek [için ayrıntılar için bkz. Uç Nokta için Microsoft Defender API'lerini kullanma.](apis-intro.md)
 
-### <a name="14-http-request"></a>1.4 HTTP isteği
+İzin türü|Izni|İzin görünen adı
+:---|:---|:---
+Uygulama|Software.Read.All|'Tehdit ve Güvenlik Açığı Yönetimi yazılım bilgilerini okuyun'
+Temsilci (iş veya okul hesabı)|Software.Read|'Tehdit ve Güvenlik Açığı Yönetimi yazılım bilgilerini okuyun'
+
+### <a name="13-url"></a>1.3 URL
 
 ```http
 GET /api/machines/certificateAssessmentByMachine
 ```
+
+### <a name="14-parameters"></a>1.4 Parametreler
+
+- pageSize (varsayılan = 50.000): Yanıt olarak sonuç sayısı.
+- $top: Döndürülecek sonuç sayısı (@odata.nextLink döndürmez ve bu nedenle tüm verileri çekmez).
+
 
 ### <a name="15-properties-json-response"></a>1.5 Özellikleri (JSON yanıtı)
 
@@ -139,19 +149,28 @@ GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAsse
 
 Cihaz başına tüm cihazlar için tüm sertifika değerlendirmelerini döndürür. DeviceId, Parmak İzi ve Yol'un her benzersiz bileşimi için ayrı bir giriş içeren bir tablo döndürür.
 
-#### <a name="22-limitations"></a>2.2 Sınırlamaları
+#### <a name="211-limitations"></a>2.1.1 Sınırlamaları
 
-- Bu API için hız sınırlamaları dakikada 5 çağrı ve saatte 20 çağrıdır. 
+- Bu API için hız sınırlamaları dakikada 5 çağrı ve saatte 20 çağrıdır.
 
-### <a name="23-parameters"></a>2.3 Parametreler
+### <a name="22-permissions"></a>2.2 İzinler
 
-- sasValidHours: İndirme URL'lerinin geçerli olacağı saat sayısı (En fazla 24 saat).
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek [için ayrıntılar için bkz. Uç Nokta için Microsoft Defender API'lerini kullanma.](apis-intro.md)
 
-### <a name="24-http-request"></a>2.4 HTTP isteği
+İzin türü|Izni|İzin görünen adı
+:---|:---|:---
+Uygulama|Software.Read.All|'Tehdit ve Güvenlik Açığı Yönetimi yazılım bilgilerini okuyun'
+Temsilci (iş veya okul hesabı)|Software.Read|'Tehdit ve Güvenlik Açığı Yönetimi yazılım bilgilerini okuyun'
+
+### <a name="23-url"></a>2.3 URL
 
 ```http
 GET /api/machines/certificateAssessmentExport
 ```
+
+### <a name="24-parameters"></a>2.4 Parametreler
+
+- sasValidHours: İndirme URL'lerinin geçerli olacağı saat sayısı (En fazla 24 saat).
 
 ### <a name="25-properties-json-response"></a>2.5 Özellikleri (JSON yanıtı)
 

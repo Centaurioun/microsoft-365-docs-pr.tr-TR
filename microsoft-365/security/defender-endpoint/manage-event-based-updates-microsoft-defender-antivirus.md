@@ -2,7 +2,7 @@
 title: Belirli olaylardan sonra Microsoft Defender Virüsten Koruma güncelleştirmelerini uygulama
 description: Microsoft Defender Virüsten Koruma'nın başlatma veya bulut teslim algılama raporlarını aldıktan sonra güvenlik bilgileri güncelleştirmelerini nasıl uyguladığını yönetin.
 keywords: güncelleştirmeler, koruma, güncelleştirmeleri zorlama, olaylar, başlatma, en son bildirimleri denetleme
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ ms.custom: nextgen
 ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 315e3e41e78ad29042eadf60ec1a01dba1517583
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 9463013802b86017b32d8258a314c19e1e9aaef6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387605"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522487"
 ---
 # <a name="manage-event-based-forced-updates"></a>Olay tabanlı zorunlu güncelleştirmeleri yönetin
 
@@ -48,7 +48,7 @@ Microsoft Defender Virüsten Koruma'yı zamanlanmış tarama çalıştırmadan �
 
 2. **Zamanlanmış taramalar** bölümüne gidin ve **taramayı çalıştırmadan önce en son güvenlik bilgileri güncelleştirmelerini denetle** seçeneğini **Evet** olarak ayarlayın.
 
-3. **Tamam**'ı tıklatın.
+3. **Tamam**'a tıklayın.
 
 4. [Güncelleştirilmiş ilkeyi her zamanki gibi dağıtın](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
@@ -64,7 +64,7 @@ Microsoft Defender Virüsten Koruma'yı zamanlanmış tarama çalıştırmadan �
 
 5. **Zamanlanmış tarama çalıştırmadan önce en son virüs ve casus yazılım tanımlarını denetle'ye** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın.
 
-6. **Tamam**'ı tıklatın.
+6. **Tamam**'a tıklayın.
 
 ### <a name="use-powershell-cmdlets-to-check-for-protection-updates-before-running-a-scan"></a>Tarama çalıştırmadan önce koruma güncelleştirmelerini denetlemek için PowerShell cmdlet'lerini kullanma
 
@@ -100,7 +100,7 @@ Grup ilkesi kullanarak Microsoft Defender Virüsten Koruma'nın makine başlatı
 
 5. **Başlangıçta en son virüs ve casus yazılım tanımlarını denetle'ye** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın.
 
-6. **Tamam**'ı tıklatın.
+6. **Tamam**'a tıklayın.
 
 Ayrıca grup ilkesi, PowerShell veya WMI kullanarak Microsoft Defender Virüsten Koruma'yı, çalışmadığında bile başlangıçta güncelleştirmeleri denetleyecek şekilde yapılandırabilirsiniz.
 
@@ -116,7 +116,7 @@ Ayrıca grup ilkesi, PowerShell veya WMI kullanarak Microsoft Defender Virüsten
 
 5. **Başlangıçta güvenlik bilgileri güncelleştirmesini başlat'a** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın.
 
-6. **Tamam**'ı tıklatın.
+6. **Tamam**'a tıklayın.
 
 ### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Microsoft Defender Virüsten Koruma mevcut olmadığında güncelleştirmeleri indirmek için PowerShell cmdlet'lerini kullanma
 

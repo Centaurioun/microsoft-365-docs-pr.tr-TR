@@ -2,7 +2,7 @@
 title: Microsoft Defender Virüsten Koruma Sanal Masaüstü Altyapısı dağıtım kılavuzu
 description: Koruma ve performans arasında en iyi dengeyi sağlamak için Microsoft Defender Virüsten Koruma'nın bir sanal masaüstü ortamında nasıl dağıtılacağı hakkında bilgi edinin.
 keywords: vdi, hyper-v, vm, sanal makine, windows defender, virüsten koruma, av, sanal masaüstü, rds, uzak masaüstü
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,14 +12,14 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: jesquive
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ba24bcac58ce814282b56244d530858a1c3bdea1
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 16f46ad95b2de0b871ef1baa5dbf8ae979eebe16
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387627"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524116"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Sanal Masaüstü Altyapısı (VDI) ortamında Microsoft Defender Virüsten Koruma için dağıtım klavuzu
 
@@ -69,7 +69,7 @@ Windows 10, sürüm 1903'te, indirilen güvenlik zekası güncelleştirmelerinin
 
 6. Girin `\\<sharedlocation\>\wdav-update` (bu değerle ilgili yardım için bkz [. İndirme ve paketi açma](#download-and-unpackage-the-latest-updates)).
 
-7. **Tamam**'ı tıklatın.
+7. **Tamam**'a tıklayın.
 
 8. GPO'yi test etmek istediğiniz VM'lere dağıtın.
 
@@ -256,7 +256,7 @@ Vm ardışık olarak zamanlanmış iki veya daha fazla taramayı kaçırdıysa, 
 
 3. İlkeyi **Etkin** olarak ayarlayın.
 
-4. **Tamam**'ı tıklatın.
+4. **Tamam**'a tıklayın.
 
 5. grup ilkesi Nesnenizi genellikle yaptığınız gibi dağıtın.
 

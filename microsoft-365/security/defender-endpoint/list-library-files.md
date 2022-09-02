@@ -1,10 +1,10 @@
 ---
-title: Liste kitaplığı dosyaları
-description: Canlı yanıt kitaplığı dosyalarını listeleyebilirsiniz.
-keywords: api'ler, grafik api'leri, desteklenen api'ler, almak, cihazlar
+title: Kitaplık dosyalarını listele
+description: Canlı yanıt kitaplığı dosyalarını listelemeyi öğrenin.
+keywords: api'ler, graf api'leri, desteklenen API'ler, get, cihazlar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,24 +18,24 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: reference
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 9c9bf11856cf518a1cd387b88a3b70dc4a34cc91
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: bc4e8d1df158ff4707aad966505dbf02be523548
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63705582"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521301"
 ---
-#  <a name="list-library-files"></a>Liste kitaplığı dosyaları 
+#  <a name="list-library-files"></a>Kitaplık dosyalarını listele 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Geçerli olduğu yer: Uç** [Nokta için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:** [Uç Nokta için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-- Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -43,20 +43,20 @@ ms.locfileid: "63705582"
 
 ## <a name="api-description"></a>API açıklaması
 
-Canlı yanıt kitaplığı dosyalarını listele.
+Canlı yanıt kitaplığı dosyalarını listeleyin.
 
 ## <a name="limitations"></a>Sınırlamalar
 
-1.  Bu API için fiyat sınırlamaları, dakikada 100 çağrı ve saatte 1500 çağrıdır.
+1.  Bu API için hız sınırlamaları dakikada 100 çağrı ve saatte 1500 çağrıdır.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri seçme de dahil olmak üzere daha fazla bilgi edinmek için bkz [. Başlama](apis-intro.md).
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz. [Kullanmaya başlama](apis-intro.md).
 
-|İzin türü                       |      İzin          |  İzin görünen adı | 
+|İzin türü                       |      Izni          |  İzin görünen adı | 
 |-----------------|--------|---------------------------|  
 | Uygulama                        | Library.Manage | Canlı yanıt kitaplığını yönetme |
-| Temsilcili (iş veya okul hesabı) | Library.Manage | Canlı yanıt kitaplığını yönetme |
+| Temsilci (iş veya okul hesabı) | Library.Manage | Canlı yanıt kitaplığını yönetme |
 
 ## <a name="http-request"></a>HTTP isteği
 
@@ -64,7 +64,7 @@ Bu API'yi çağrı yapmak için aşağıdaki izinlerden biri gerekir. İzinleri 
 GET https://api.securitycenter.microsoft.com/api/libraryfiles
 ```
 
-## <a name="request-headers"></a>Üstbilgi isteği
+## <a name="request-headers"></a>İstek üst bilgileri
 
 | Name         |      Tür                     | Açıklama
 |-----------------|--------|---------------------------|
@@ -74,13 +74,13 @@ GET https://api.securitycenter.microsoft.com/api/libraryfiles
 Boş
 
 ## <a name="response"></a>Yanıt 
-Başarılı olursa, bu yöntem canlı yanıt kitaplığı dosya varlıkları koleksiyonuyla birlikte 200 - Tamam yanıt kodu döndürür.
+Başarılı olursa, bu yöntem canlı yanıt kitaplığı dosya varlıklarından oluşan bir koleksiyona sahip 200 - Tamam yanıt kodunu döndürür.
 
 ## <a name="example"></a>Örnek
 
-**İstek**
+**Istek**
 
-Tüm canlı yanıt kitaplığı dosyalarını alan bir isteğin örneği:
+Burada tüm canlı yanıt kitaplığı dosyalarını alan bir istek örneği verilmiştir
 
 ```HTTP
 GET https://api.securitycenter.microsoft.com/api/libraryfiles
@@ -88,7 +88,7 @@ GET https://api.securitycenter.microsoft.com/api/libraryfiles
 
 ## <a name="response-example"></a>Yanıt örneği
 
-Yanıtın bir örneği:
+Yanıtın bir örneği aşağıda verilmiştir.
 
 ```JSON
 HTTP/1.1 200 Ok

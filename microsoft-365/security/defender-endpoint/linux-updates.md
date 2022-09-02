@@ -1,9 +1,9 @@
 ---
 title: Linux'ta Uç Nokta için Microsoft Defender güncelleştirmelerini dağıtma
 ms.reviewer: ''
-description: Kurumsal ortamlarda Linux'ta Uç Nokta için Microsoft Defender güncelleştirmelerinin nasıl dağıtıl olduğunu açıklar.
-keywords: microsoft, defender, Endpoint için Microsoft Defender, linux, güncelleştirmeler, dağıtma
-ms.prod: m365-security
+description: Kurumsal ortamlarda Linux'ta Uç Nokta için Microsoft Defender güncelleştirmelerinin nasıl dağıtılacağı açıklanır.
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, linux, güncelleştirmeler, dağıtma
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,40 +15,40 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 71c689143feca3d8c87d219a55c4ea42b4f9d950
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: 9987c5b6921d39bc5f3c0550388bddbfc5c91a92
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63019433"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521671"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender güncelleştirmelerini dağıtma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Microsoft, performansı, güvenliği geliştirmek ve yeni özellikler sunmak için düzenli olarak yazılım güncelleştirmeleri yayımlar.
 
 > [!WARNING]
-> Linux'ta Uç Nokta için Defender'ın her sürümünün bir son kullanma tarihi vardır ve bu tarihten sonra cihazınızı korumaya devam eder. Ürünü bu tarihten önce güncelleştirmeniz gerekir. Son kullanma tarihini kontrol etmek için aşağıdaki komutu çalıştırın:
+> Linux'ta Uç Nokta için Defender'ın her sürümünün bir sona erme tarihi vardır ve bundan sonra cihazınızı korumaya devam etmeyecektir. Ürünü bu tarihten önce güncelleştirmeniz gerekir. Son kullanma tarihini denetlemek için aşağıdaki komutu çalıştırın:
 > ```bash
 > mdatp health --field product_expiration
 > ```
 
 
-Genel olarak Uç Nokta özellikleri için Microsoft Defender'ın kullanımına, dağıtımda kullanılan güncelleştirme kanalına bakılmaksızın eşdeğerdir (Beta (Insider), Önizleme (Dış), Geçerli (Üretim)).
+Genel olarak kullanılabilen Uç Nokta için Microsoft Defender özellikleri, dağıtım için kullanılan güncelleştirme kanalı (Beta (Insider), Önizleme (Dış), Geçerli (Üretim)) ne olursa olsun eşdeğerdir.
 
 
-Linux'ta Uç Nokta için Defender'ı el ile güncelleştirmek için aşağıdaki komutlardan birini yürütün:
+Linux'ta Uç Nokta için Defender'ı el ile güncelleştirmek için aşağıdaki komutlardan birini yürütebilirsiniz:
 
-## <a name="rhel-and-variants-centos-and-oracle-linux"></a>RHEL ve çeşitlemeler (CentOS ve Oracle Linux)
+## <a name="rhel-and-variants-centos-and-oracle-linux"></a>RHEL ve varyantlar (CentOS ve Oracle Linux)
 
 ```bash
 sudo yum update mdatp
@@ -67,4 +67,4 @@ sudo apt-get install --only-upgrade mdatp
 ```
 
 > [!IMPORTANT]
-> Uç Nokta için Microsoft Defender ve Bulut için Defender tümleştirilirken, mdatp aracısı güncelleştirmeleri varsayılan olarak otomatik olarak alır.
+> Uç Nokta için Microsoft Defender ve Bulut için Defender'ı tümleştirdiğinizde, mdatp aracısı güncelleştirmeleri varsayılan olarak otomatik olarak alır.

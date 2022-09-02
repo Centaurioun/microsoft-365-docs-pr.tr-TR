@@ -2,7 +2,7 @@
 title: IP istatistikleri API'lerini alma
 description: Uç Nokta için Microsoft Defender kullanarak IP'niz için en son istatistikleri alın.
 keywords: api'ler, graf api'leri, desteklenen API'ler, get, ip, istatistikler, yaygınlık
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: df3da83e8f92247429029c8acf7212f164b3ea5a
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: e3b8826f2e64d339f617fb23d555d4a4f804c3ff
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325957"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522289"
 ---
 # <a name="get-ip-statistics-api"></a>IP istatistikleri API'lerini alma
 

@@ -2,7 +2,7 @@
 title: Windows’da Microsoft Defender Virüsten Koruma
 description: Kötü amaçlı yazılımlardan ve virüslerden koruyan yerleşik Microsoft Defender Virüsten Koruma’yı yönetmeyi, yapılandırmayı ve kullanmayı öğrenin.
 keywords: Microsoft Defender Virüsten Koruma, windows defender, kötü amaçlı yazılımdan koruma, scep, system center endpoint protection, system center configuration manager, virüs, kötü amaçlı yazılım, tehdit, algılama, koruma, güvenlik
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +13,16 @@ ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
+ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 0efacb67cb3ba6b5126bbe5de327fa0b9f2092cf
-ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
-ms.translationtype: HT
+ms.openlocfilehash: d11c6e536a2f1b4227d47177d7e178a1d9ad130a
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66720401"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521093"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows’da Microsoft Defender Virüsten Koruma
 

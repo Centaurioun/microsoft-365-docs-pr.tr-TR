@@ -2,7 +2,7 @@
 title: Mac'te Uç Nokta için Microsoft Defender kaynakları
 description: Mac'te Uç Nokta için Microsoft Defender kaldırma, tanılama günlüklerini toplama, CLI komutları ve ürünle ilgili bilinen sorunlar gibi kaynaklar.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 7215beeec25f4d343e574b8e2bcda22a43f0f45e
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: 8796a3d5317410278ada48205e1fe578c8c712bf
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67386812"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522003"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender kaynakları
 

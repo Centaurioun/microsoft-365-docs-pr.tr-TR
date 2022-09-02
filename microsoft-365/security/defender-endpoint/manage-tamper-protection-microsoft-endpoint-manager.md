@@ -5,7 +5,7 @@ manager: dansimp
 description: Microsoft Endpoint Manager'da kuruluşunuz için kurcalama korumasını açın veya kapatın.
 keywords: kötü amaçlı yazılım, defender, virüsten koruma, kurcalama koruması, Microsoft Endpoint Manager
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -16,16 +16,16 @@ ms.author: deniseb
 ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
-ms.technology: mde
+ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f4946191ab6483e42f84faa8aa56cf4227714976
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 1a703cc4748c1b69e392855cf5348e88b327712e
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67389478"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521125"
 ---
 # <a name="manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager"></a>Microsoft Endpoint Manager kullanarak kuruluşunuz için kurcalama korumasını yönetme
 

@@ -3,7 +3,7 @@ title: Ansible ile Linux'ta Uç Nokta için Microsoft Defender dağıtma
 ms.reviewer: ''
 description: Ansible kullanarak Linux'ta Uç Nokta için Microsoft Defender dağıtmayı açıklar.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: e35510960818472ccf82ffab0c3cb3016f49907a
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.subservice: mde
+ms.openlocfilehash: a35c50a941c7398c2c0722233627fe76f36f6afe
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175168"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522091"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Ansible ile Linux'ta Uç Nokta için Microsoft Defender dağıtma
 
@@ -239,7 +239,7 @@ Bir playbook'a veya göreve katkıda bulunabilecek bir alt görev veya rol dosya
 
 Şimdi görev dosyalarını veya ilgili dizin altında `/etc/ansible/playbooks/` çalıştırın.
 
-- Kurma:
+- Yükleme:
 
     ```bash
     ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts

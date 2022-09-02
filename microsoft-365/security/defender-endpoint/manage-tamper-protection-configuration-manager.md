@@ -5,7 +5,7 @@ manager: dansimp
 description: Configuration Manager ile kiracı ekleme özelliğini kullanarak kurcalama korumasını açın veya kapatın.
 keywords: kötü amaçlı yazılım, defender, virüsten koruma, kurcalama koruması, Configuration Manager
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -16,16 +16,16 @@ ms.author: deniseb
 ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
-ms.technology: mde
+ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 58f4d4b356a325c28f1ee6c914335578c365e3a7
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 32ea905c1ab6aaaa3a49cd7e2e40b0cadbf05284
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67389481"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521937"
 ---
 # <a name="manage-tamper-protection-using-tenant-attach-with-configuration-manager-version-2006"></a>Configuration Manager, sürüm 2006 ile kiracı ekleme kullanarak kurcalama korumasını yönetme
 

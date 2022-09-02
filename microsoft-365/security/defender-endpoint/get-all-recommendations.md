@@ -2,7 +2,7 @@
 title: Tüm önerileri listele
 description: Kuruluşu etkileyen tüm güvenlik önerilerinin listesini alır.
 keywords: apis, graph api, desteklenen api'ler, get, güvenlik önerileri, Uç Nokta için Microsoft Defender tvm api, Tehdit ve Güvenlik Açığı Yönetimi, Tehdit ve Güvenlik Açığı Yönetimi api, mdvm
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: c420d73326cc9965f0b4a5d57af5adba83c30f1d
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: d9a047f6e1cc24dfb205e791f3d88fdc07afd86d
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343097"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521839"
 ---
 # <a name="list-all-recommendations"></a>Tüm önerileri listele
 

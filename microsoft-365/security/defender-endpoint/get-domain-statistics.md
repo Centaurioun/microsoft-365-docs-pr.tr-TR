@@ -2,7 +2,7 @@
 title: Etki alanı istatistikleri API'lerini alma
 description: Uç Nokta için Microsoft Defender'da verilen etki alanıyla ilgili istatistikleri almak için Etki alanı istatistikleri al API'sini kullanmayı öğrenin.
 keywords: api'ler, graf api'leri, desteklenen API'ler, alma, etki alanı, etki alanıyla ilgili cihazlar
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 945ca97d9492f9aad96603a7282c326186475613
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: e4dc4137525f9f3019f98979ef33a219868ed15b
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327079"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523676"
 ---
 # <a name="get-domain-statistics-api"></a>Etki alanı istatistikleri API'lerini alma
 

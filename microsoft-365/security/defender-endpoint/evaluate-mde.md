@@ -1,11 +1,11 @@
 ---
 title: Uç Nokta için Microsoft Defender'ı Değerlendirme
 ms.reviewer: ''
-description: Bu özellik için farklı güvenlik özelliklerini Uç Nokta için Microsoft Defender.
-keywords: saldırı yüzeyini azaltma, değerlendirme, yeni, nesil, koruma
+description: Uç Nokta için Microsoft Defender'daki farklı güvenlik özelliklerini değerlendirin.
+keywords: saldırı yüzeyini azaltma, değerlendirme, sonraki, nesil, koruma
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,44 +16,44 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 727a35b5d5b34fa567b399fcc81ccb0c05ded106
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.subservice: mde
+ms.openlocfilehash: 97c565fb739fef16c475c24a84a446bbe0614f7e
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500463"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523288"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'ı Değerlendirme 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Bu deneyimi Uç Nokta için Microsoft Defender? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-[Uç Nokta için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037) koruma, ihlal sonrası algılama, otomatik soruşturma ve yanıt için birleşik bir platformdur.
+[Uç Nokta için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037) önleyici koruma, ihlal sonrası algılama, otomatik araştırma ve yanıt için birleşik bir platformdur.
 
-Ücretsiz deneme Uç Nokta için Microsoft Defender başlatarak, organizasyonsuz [denemenizi değerlendirin](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial).
+[Ücretsiz denemenizi başlatarak](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial) kuruluşunuzdaki Uç Nokta için Microsoft Defender değerlendirebilirsiniz.
 
-Ayrıca, aşağıdaki yönergeleri kullanarak e-posta Uç Nokta için Microsoft Defender özelliklerini değerlendirin.
+Ayrıca aşağıdaki yönergeleri kullanarak Uç Nokta için Microsoft Defender'daki farklı güvenlik özelliklerini de değerlendirebilirsiniz.
 
-## <a name="evaluate-attack-surface-reduction"></a>Saldırı yüzeyini azaltmayı değerlendir
+## <a name="evaluate-attack-surface-reduction"></a>Saldırı yüzeyini azaltmayı değerlendirme
 
-Bu özellikler saldırı ve istismarların organizasyonunıza bulaşmasını önlemeye yardımcı olur.
+Bu özellikler saldırıların ve açıklardan yararlanmaların kuruluşunuza bulaşmasını önlemeye yardımcı olur.
 
-- [Sömürüye karşı korumayı değerlendirme](./evaluate-exploit-protection.md)
-- [Ağ korumasını değerlendirme](./evaluate-exploit-protection.md)
-- [Denetimli klasör erişimini değerlendirme](./evaluate-controlled-folder-access.md)
-- [Uygulama korumayı değerlendir](/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)
+- [Açıklardan yararlanma korumasını değerlendirme](./evaluate-exploit-protection.md)
+- [Ağ korumasını değerlendirin](./evaluate-exploit-protection.md)
+- [Denetimli klasör erişimini değerlendirin](./evaluate-controlled-folder-access.md)
+- [Application Guard'ı değerlendirme](/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)
 - [Ağ güvenlik duvarını değerlendirme](/windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples)
 
 ## <a name="evaluate-next-generation-protection"></a>Yeni nesil korumayı değerlendirme
 
-Sonraki nesil korumalar en son tehditleri algılamaya ve engellemeye yardımcı olur.
+Yeni nesil korumalar, en son tehditleri algılamaya ve engellemeye yardımcı olur.
 
 - [Virüsten korumayı değerlendirme](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus)
 

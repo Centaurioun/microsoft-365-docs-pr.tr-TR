@@ -1,8 +1,8 @@
 ---
 title: macOS için cihaz denetimi
-description: Mac'te USB Uç Nokta için Microsoft Defender çıkarılabilir depolamadan gelen tehditleri azaltmak için mac'te depolamayı yapılandırmayı öğrenin.
-keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, cihaz, kontrol, usb, çıkarılabilir, medya
-ms.prod: m365-security
+description: USB cihazları gibi çıkarılabilir depolama birimi tehditlerini azaltmak için Mac'te Uç Nokta için Microsoft Defender yapılandırmayı öğrenin.
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, device, control, usb, çıkarılabilir, medya
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -14,42 +14,42 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: fbe693272a2f2893dff5f8614f3f9eff301069fd
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 371a59c4fb0a081ee80fc7c3a6c298730ee49c4b
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477313"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522553"
 ---
 # <a name="device-control-for-macos"></a>macOS için cihaz denetimi
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Bu deneyimi Uç Nokta için Microsoft Defender? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="requirements"></a>Gereksinimler
 
-macOS için cihaz denetimi aşağıdaki önkoşullara sahip:
+macOS için cihaz denetimi aşağıdaki önkoşullara sahiptir:
 
 > [!div class="checklist"]
 >
-> - Uç Nokta için Microsoft Defender hakkı (deneme sürümü olabilir)
-> - Minimum işletim sistemi sürümü: macOS 11 veya daha yüksek
-> - Minimum ürün sürümü: 101.34.20
+> - Uç Nokta için Microsoft Defender yetkilendirme (deneme olabilir)
+> - En düşük işletim sistemi sürümü: macOS 11 veya üzeri
+> - En düşük ürün sürümü: 101.34.20
 
 ## <a name="device-control-policy"></a>Cihaz denetimi ilkesi
 
-macOS için cihaz denetimi yapılandırmak için, kurum içinde yerine koymak istediğiniz kısıtlamaları açıklayan bir ilke oluşturmanız gerekir.
+macOS için cihaz denetimini yapılandırmak için, kuruluşunuzda uygulamak istediğiniz kısıtlamaları açıklayan bir ilke oluşturmanız gerekir.
 
-Cihaz denetimi ilkesi, diğer tüm ürün ayarlarını yapılandırmak için kullanılan yapılandırma profilinde yer almaktadır. Daha fazla bilgi için bkz [. Yapılandırma profili yapısı](mac-preferences.md#configuration-profile-structure).
+Cihaz denetimi ilkesi, diğer tüm ürün ayarlarını yapılandırmak için kullanılan yapılandırma profiline dahildir. Daha fazla bilgi için bkz [. Yapılandırma profili yapısı](mac-preferences.md#configuration-profile-structure).
 
-Cihaz denetimi ilkesi yapılandırma profili içinde aşağıdaki bölümde tanımlanır:
+Yapılandırma profilinde, cihaz denetim ilkesi aşağıdaki bölümde tanımlanır:
 
 <br>
 
@@ -63,18 +63,18 @@ Cihaz denetimi ilkesi yapılandırma profili içinde aşağıdaki bölümde tan�
 |**Açıklamalar**|Sözlük içeriğinin açıklaması için aşağıdaki bölümlere bakın.|
 |
 
-Cihaz denetimi ilkesi aşağıdakiler için kullanılabilir:
+Cihaz denetimi ilkesi aşağıdakileri yapmak için kullanılabilir:
 
-- [Cihaz denetimi tarafından yükseltilmiş bildirimler için URL hedefini özelleştirme](#customize-url-target-for-notifications-raised-by-device-control)
-- [Çıkarılabilir cihazlara izin verme veya engelleme](#allow-or-block-removable-devices)
+- [Cihaz denetimi tarafından tetiklenen bildirimler için URL hedefini özelleştirme](#customize-url-target-for-notifications-raised-by-device-control)
+- [Çıkarılabilir cihazlara izin verme veya bunları engelleme](#allow-or-block-removable-devices)
 
-### <a name="customize-url-target-for-notifications-raised-by-device-control"></a>Cihaz denetimi tarafından yükseltilmiş bildirimler için URL hedefini özelleştirme
+### <a name="customize-url-target-for-notifications-raised-by-device-control"></a>Cihaz denetimi tarafından tetiklenen bildirimler için URL hedeflerini özelleştirme
 
-Yerine konan cihaz denetim ilkesi bir cihazda zorunlu tutulsa (örneğin, çıkarılabilir bir medya cihazına erişim kısıtlanmışsa), kullanıcıya bir bildirim görüntülenir.
+Uygulamaya koyduğunuz cihaz denetim ilkesi bir cihazda zorunlu kılındığında (örneğin, çıkarılabilir bir medya cihazına erişim kısıtlandığında), kullanıcıya bir bildirim görüntülenir.
 
-:::image type="content" source="images/mac-device-control-notification.png" alt-text="Cihaz denetim bildirimi" lightbox="images/mac-device-control-notification.png":::
+:::image type="content" source="images/mac-device-control-notification.png" alt-text="Cihaz denetimi bildirimi" lightbox="images/mac-device-control-notification.png":::
 
-Son kullanıcılar bu bildirime tıklaytılarında, varsayılan tarayıcıda bir web sayfası açılır. Son kullanıcılar bildirimi tıklayana kadar açılan URL'yi yapılandırabilirsiniz.
+Son kullanıcılar bu bildirime tıkladığında, varsayılan tarayıcıda bir web sayfası açılır. Son kullanıcılar bildirime tıkladığında açılan URL'yi yapılandırabilirsiniz.
 
 <br>
 
@@ -85,15 +85,15 @@ Son kullanıcılar bu bildirime tıklaytılarında, varsayılan tarayıcıda bir
 |**Etki alanı**|`com.microsoft.wdav`|
 |**Anahtar**|navigationTarget|
 |**Veri türü**|Dize|
-|**Açıklamalar**|Tanımlanmamışsa, ürün, ürünün 4.|
+|**Açıklamalar**|Tanımlanmamışsa, ürün tarafından gerçekleştirilen eylemi açıklayan genel bir sayfaya işaret eden varsayılan bir URL kullanır.|
 |
 
-### <a name="allow-or-block-removable-devices"></a>Çıkarılabilir cihazlara izin verme veya engelleme
+### <a name="allow-or-block-removable-devices"></a>Çıkarılabilir cihazlara izin verme veya bunları engelleme
 
-Cihaz denetimi ilkesine bağlı çıkarılabilir medya bölümü çıkarılabilir medyaya erişimi kısıtlamak için kullanılır.
+Cihaz denetim ilkesinin çıkarılabilir medya bölümü, çıkarılabilir medyaya erişimi kısıtlamak için kullanılır.
 
 > [!NOTE]
-> Şu anda çıkarılabilir medya türleri desteklemektedir ve şu ilkeye dahil olabilir: USB depolama cihazları.
+> Şu anda aşağıdaki çıkarılabilir medya türleri desteklenmektedir ve ilkeye dahil edilebilir: USB depolama cihazları.
 
 <br>
 
@@ -107,7 +107,7 @@ Cihaz denetimi ilkesine bağlı çıkarılabilir medya bölümü çıkarılabili
 |**Açıklamalar**|Sözlük içeriğinin açıklaması için aşağıdaki bölümlere bakın.|
 |
 
-İlkenin bu bölümü hiyerarşik bir bölümdir ve en yüksek esnekliği sağlar ve çok çeşitli kullanım durumlarını kapsayan bir bölümtür. En üst düzeyde, satıcı kimliğiyle tanımlanan satıcılar vardır. Her satıcı için, ürün kimliğiyle tanımlanan ürünler vardır. Son olarak, her ürün için belirli cihazlara açıklama ekli seri numaraları vardır.
+İlkenin bu bölümü hiyerarşiktir ve maksimum esneklik sağlar ve çok çeşitli kullanım örneklerini kapsar. En üst düzeyde, satıcı kimliğiyle tanımlanan satıcılar bulunur. Her satıcı için, bir ürün kimliğiyle tanımlanan ürünler vardır. Son olarak, her ürün için belirli cihazları belirten seri numaraları vardır.
 
 ```text
 |-- policy top level
@@ -122,19 +122,19 @@ Cihaz denetimi ilkesine bağlı çıkarılabilir medya bölümü çıkarılabili
     |-- vendor N
 ```
 
-Cihaz tanımlayıcılarını bulma hakkında bilgi için bkz [. Cihaz tanımlayıcılarını bulma](#look-up-device-identifiers).
+Cihaz tanımlayıcılarını bulma hakkında bilgi için bkz [. Cihaz tanımlayıcılarını arama](#look-up-device-identifiers).
 
-İlke, en özel girdiden en genele doğru değerlendirilir. Başka bir ifadeyle, cihaz takılı olduğunda ürün her çıkarılabilir medya cihazı için ilkede en özel eşleşmeyi bulmaya çalışır ve izinleri bu düzeyde uygulayabilir. Eşleşme yoksa, bir sonraki en iyi eşleşme uygulanır ve en üst düzeyde belirtilen izinlere kadar uygulanır; bu, cihaz ilkenin başka hiçbir girdiyle eşleşmezse varsayılan ayardır.
+İlke, en özel girdiden en genel girişe değerlendirilir. Başka bir deyişle, bir cihaz takılıyken, ürün her çıkarılabilir medya cihazı için ilkedeki en özel eşleşmeyi bulmaya çalışır ve izinleri bu düzeyde uygular. Eşleşme yoksa, bir sonraki en iyi eşleşme uygulanır ve en üst düzeyde belirtilen izne kadar (cihaz ilkedeki başka bir girişle eşleşmediğinde varsayılan değerdir).
 
 #### <a name="policy-enforcement-level"></a>İlke zorlama düzeyi
 
-Çıkarılabilir medya bölümünün altında, aşağıdaki değerlerden birini almaya devam eden zorlama düzeyini ayarlama seçeneği vardır:
+Çıkarılabilir medya bölümünün altında, aşağıdaki değerlerden birini alabilen zorlama düzeyini ayarlama seçeneği vardır:
 
-- `audit` - Bu zorlama düzeyi altında, bir cihaza erişim kısıtlanmışsa kullanıcıya bir bildirim görüntülenir, ancak cihaz hala kullanılabilir. Bu zorlama düzeyi, bir ilkenin ne kadar etkili olduğunu değerlendirmek için yararlı olabilir.
-- `block` - Bu zorlama düzeyi altında, kullanıcının cihazda gerçekleştirebilirsiniz işlemleri ilkede tanımlanan işlemlerle sınırlıdır. Ayrıca, kullanıcıya bir bildirim de yükseltilmiştir.
+- `audit` - Bu zorlama düzeyi altında, bir cihaza erişim kısıtlanırsa kullanıcıya bir bildirim görüntülenir, ancak cihaz yine de kullanılabilir. Bu zorlama düzeyi, bir ilkenin etkinliğini değerlendirmek için yararlı olabilir.
+- `block` - Bu zorlama düzeyi altında, kullanıcının cihazda gerçekleştirebileceği işlemler ilkede tanımlanan işlemle sınırlıdır. Ayrıca kullanıcıya bir bildirim gönderilir.
 
 > [!NOTE]
-> Varsayılan olarak, zorlama düzeyi olarak ayarlanır `audit`.
+> Varsayılan olarak, zorlama düzeyi olarak `audit`ayarlanır.
 
 <br>
 
@@ -145,25 +145,25 @@ Cihaz tanımlayıcılarını bulma hakkında bilgi için bkz [. Cihaz tanımlay�
 |**Etki alanı**|`com.microsoft.wdav`|
 |**Anahtar**|enforcementLevel|
 |**Veri türü**|Dize|
-|**Olası değerler**|denetim (varsayılan) <p> engelle|
+|**Olası değerler**|denetim (varsayılan) <p> Blok|
 |
 
 #### <a name="default-permission-level"></a>Varsayılan izin düzeyi
 
-Çıkarılabilir medya bölümünün en üst düzeyinde, ilkede yer alan başka hiçbir şey ile eşleşmeen cihazlar için varsayılan izin düzeyini yapılandırabilirsiniz.
+Çıkarılabilir medya bölümünün en üst düzeyinde, ilkedeki başka hiçbir şeyle eşleşmeyen cihazlar için varsayılan izin düzeyini yapılandırabilirsiniz.
 
-Bu ayar şöyle de ayarlanabilirsiniz:
+Bu ayar şu şekilde ayarlanabilir:
 
-- `none` - Cihazda hiçbir işlem gerçekleştirilene kadar
+- `none` - Cihazda işlem yapılamaz
 - Aşağıdaki değerlerin birleşimi:
   - `read` - Cihazda okuma işlemlerine izin verilir
   - `write` - Cihazda yazma işlemlerine izin verilir
   - `execute` - Cihazda yürütme işlemlerine izin verilir
 
 > [!NOTE]
-> İzin `none` düzeyinde varsa, diğer tüm izinler (`read`, veya `write``execute`) yoksayılır.
+> `none` İzin düzeyinde varsa, diğer tüm izinler (`read`, `write`veya `execute`) yoksayılır.
 >
-> İzin `execute` yalnızca Mach-O ikililerinin yürütülmesine başvurur. Betiklerin veya diğer yük türlerinin yürütülmesi dahil değildir.
+> İzin `execute` yalnızca Mach-O ikili dosyalarının yürütülmesini ifade eder. Betiklerin veya diğer yük türlerinin yürütülmesini içermez.
 
 <br>
 
@@ -172,18 +172,18 @@ Bu ayar şöyle de ayarlanabilirsiniz:
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|izin|
+|**Anahtar**|Izni|
 |**Veri türü**|Dize dizisi|
-|**Olası değerler**|yok <p> okuma <p> yazma <p> yürütme|
+|**Olası değerler**|yok <p> Okuma <p> Yazmak <p> Yürütmek|
 |
 
-#### <a name="restrict-removable-media-by-vendor-product-and-serial-number"></a>Çıkarılabilir medyayı satıcı, ürün ve seri numarasına göre kısıtlama
+#### <a name="restrict-removable-media-by-vendor-product-and-serial-number"></a>Çıkarılabilir medyayı satıcıya, ürüne ve seri numarasına göre kısıtlama
 
-USB cihazları gibi [çıkarılabilir cihazlara izin](#allow-or-block-removable-devices) verme veya engelleme konusunda açıklandığı gibi, satıcı kimliği, ürün kimliği ve seri numarasıyla çıkarılabilir medya tanımlanır.
+[Çıkarılabilir cihazlara izin verme veya bunları engelleme](#allow-or-block-removable-devices) bölümünde açıklandığı gibi, USB cihazları gibi çıkarılabilir medya satıcı kimliği, ürün kimliği ve seri numarası ile tanımlanabilir.
 
-Çıkarılabilir medya ilkesi en üst düzeyinde, isteğe bağlı olarak satıcı düzeyinde daha ayrıntılı kısıtlamalar tanımlayabilirsiniz.
+Çıkarılabilir medya ilkesinin en üst düzeyinde, isteğe bağlı olarak satıcı düzeyinde daha ayrıntılı kısıtlamalar tanımlayabilirsiniz.
 
-Sözlük `vendors` bir veya daha fazla girdi içerir ve her girdi satıcı kimliği tarafından tanımlanır.
+`vendors` Sözlük, her girişin satıcı kimliğiyle tanımlandığı bir veya daha fazla giriş içerir.
 
 <br>
 
@@ -192,11 +192,11 @@ Sözlük `vendors` bir veya daha fazla girdi içerir ve her girdi satıcı kimli
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|satıcılar|
+|**Anahtar**|Satıcı|
 |**Veri türü**|Sözlük (iç içe tercih)|
 |
 
-Her satıcı için, o satıcıdan cihazlar için istediğiniz izin düzeyini belirtebilirsiniz.
+Her satıcı için, ilgili satıcıdan gelen cihazlar için istenen izin düzeyini belirtebilirsiniz.
 
 <br>
 
@@ -205,12 +205,12 @@ Her satıcı için, o satıcıdan cihazlar için istediğiniz izin düzeyini bel
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|izin|
+|**Anahtar**|Izni|
 |**Veri türü**|Dize dizisi|
-|**Olası değerler**|Varsayılan izin [düzeyinin aynısı](#default-permission-level)|
+|**Olası değerler**|[Varsayılan izin düzeyiyle](#default-permission-level) aynı|
 |
 
-Ayrıca, isteğe bağlı olarak daha ayrıntılı izinlerin tanımlandığı satıcıya ait ürün kümelerini de belirtebilirsiniz. Sözlük `products` bir veya daha fazla girdi içerir ve her girdi ürün kimliği tarafından tanımlanır.
+Ayrıca, daha ayrıntılı izinlerin tanımlandığı satıcıya ait ürün kümesini isteğe bağlı olarak belirtebilirsiniz. Sözlük, `products` her girişin ürün kimliğiyle tanımlandığı bir veya daha fazla girdi içerir.
 
 <br>
 
@@ -219,11 +219,11 @@ Ayrıca, isteğe bağlı olarak daha ayrıntılı izinlerin tanımlandığı sat
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|ürünler|
+|**Anahtar**|Ürünler|
 |**Veri türü**|Sözlük (iç içe tercih)|
 |
 
-Her ürün için, bu ürün için istediğiniz izin düzeyini belirtebilirsiniz.
+Her ürün için, bu ürün için istenen izin düzeyini belirtebilirsiniz.
 
 <br>
 
@@ -232,14 +232,14 @@ Her ürün için, bu ürün için istediğiniz izin düzeyini belirtebilirsiniz.
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|izin|
+|**Anahtar**|Izni|
 |**Veri türü**|Dize dizisi|
-|**Olası değerler**|Varsayılan izin [düzeyinin aynısı](#default-permission-level)|
+|**Olası değerler**|[Varsayılan izin düzeyiyle](#default-permission-level) aynı|
 |
 
-Ayrıca, daha ayrıntılı izinlerin tanımlandığı isteğe bağlı bir seri numarası kümesi de belirtebilirsiniz.
+Ayrıca, daha ayrıntılı izinlerin tanımlandığı isteğe bağlı bir seri numaraları kümesi belirtebilirsiniz.
 
-Sözlük `serialNumbers` bir veya daha fazla girdi içerir ve her girdi seri numarasıyla tanımlanır.
+`serialNumbers` Sözlük, her girişin seri numarasıyla tanımlandığı bir veya daha fazla girdi içerir.
 
 <br>
 
@@ -248,11 +248,11 @@ Sözlük `serialNumbers` bir veya daha fazla girdi içerir ve her girdi seri num
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|seriSayılar|
+|**Anahtar**|serialNumbers|
 |**Veri türü**|Sözlük (iç içe tercih)|
 |
 
-Her seri numarası için istediğiniz izin düzeyini belirtebilirsiniz.
+Her seri numarası için istenen izin düzeyini belirtebilirsiniz.
 
 <br>
 
@@ -261,14 +261,14 @@ Her seri numarası için istediğiniz izin düzeyini belirtebilirsiniz.
 |Bölüm|Değer|
 |---|---|
 |**Etki alanı**|`com.microsoft.wdav`|
-|**Anahtar**|izin|
+|**Anahtar**|Izni|
 |**Veri türü**|Dize dizisi|
-|**Olası değerler**|Varsayılan izin [düzeyinin aynısı](#default-permission-level)|
+|**Olası değerler**|[Varsayılan izin düzeyiyle](#default-permission-level) aynı|
 |
 
-#### <a name="example-device-control-policy"></a>Örnek cihaz denetim ilkesi
+#### <a name="example-device-control-policy"></a>Örnek cihaz denetimi ilkesi
 
-Aşağıdaki örnekte, yukarıdaki kavramlardan tüm kavramların bir cihaz denetim ilkesiyle nasıl bir araya alına bir araya gel! Aşağıdaki örnekte, çıkarılabilir medya ilkesi hiyerarşik yapısına dikkat etmiş olursunuz.
+Aşağıdaki örnekte yukarıdaki kavramların tümünün bir cihaz denetim ilkesinde nasıl birleştirilebileceği gösterilmektedir. Aşağıdaki örnekte, çıkarılabilir medya ilkesinin hiyerarşik yapısına dikkat edin.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -327,39 +327,39 @@ Aşağıdaki örnekte, yukarıdaki kavramlardan tüm kavramların bir cihaz dene
 </plist>
 ```
 
-Aşağıdaki belgelere cihaz denetimi ilkeleriyle ilgili daha fazla örneklemiz var:
+Aşağıdaki belgelere daha fazla cihaz denetimi ilkesi örneği ekledik:
 
-- [Veri için cihaz denetimi ilkelerine Intune](mac-device-control-intune.md)
+- [Intune için cihaz denetimi ilkeleri örnekleri](mac-device-control-intune.md)
 - [JAMF için cihaz denetimi ilkeleri örnekleri](mac-device-control-jamf.md)
 
-#### <a name="look-up-device-identifiers"></a>Cihaz tanımlayıcılarını bakma
+#### <a name="look-up-device-identifiers"></a>Cihaz tanımlayıcılarını arama
 
-USB cihazının satıcı kimliğini, ürün kimliğini ve seri numarasını bulmak için:
+Bir USB cihazının satıcı kimliğini, ürün kimliğini ve seri numarasını bulmak için:
 
-1. Mac cihazında oturum açın.
-1. Tanımlayıcıları görmek istediğiniz USB cihazını takın.
-1. macOS'un en üst düzey menüsünde Bu **Mac Hakkında'ya tıklayın**.
+1. Bir Mac cihazında oturum açın.
+1. Tanımlayıcıları aramak istediğiniz USB cihazını takın.
+1. macOS'un en üst düzey menüsünde **Bu Mac Hakkında'yı** seçin.
 
-   :::image type="content" source="images/mac-device-control-lookup-1.png" alt-text="Bu Mac hakkında sayfası" lightbox="images/mac-device-control-lookup-1.png":::
+   :::image type="content" source="images/mac-device-control-lookup-1.png" alt-text="Bu Mac Hakkında sayfası" lightbox="images/mac-device-control-lookup-1.png":::
 
-1. Sistem **Raporu'mu seçin**.
+1. **Sistem Raporu'mu** seçin.
 
    :::image type="content" source="images/mac-device-control-lookup-2.png" alt-text="Sistem raporu" lightbox="images/mac-device-control-lookup-2.png":::
 
-1. Sol sütundan **USB'yi seçin**.
+1. Sol sütundan **USB'yi** seçin.
 
    :::image type="content" source="images/mac-device-control-lookup-3.png" alt-text="Tüm USB cihazlarının görünümü" lightbox="images/mac-device-control-lookup-3.png":::
     
 
-1. **USB Cihaz Ağacı** altında, takmış olduğunuz USB cihazına gidin.
+1. **USB Cihaz Ağacı'nın** altında, prize taktığınız USB cihazına gidin.
 
-   :::image type="content" source="images/mac-device-control-lookup-4.png" alt-text="BIR USB cihazının ayrıntıları" lightbox="images/mac-device-control-lookup-4.png":::
+   :::image type="content" source="images/mac-device-control-lookup-4.png" alt-text="USB cihazının ayrıntıları" lightbox="images/mac-device-control-lookup-4.png":::
 
-1. Satıcı kimliği, ürün kimliği ve seri numarası görüntülenir. Çıkarılabilir medya ilkesine satıcı kimliği ve ürün kimliğini eklerken, bölümü yalnızca sonra eklemeniz gerekir `0x`. Örneğin, aşağıdaki resimde satıcı kimliği ve ürün `1000` kimliği yer almaktadır `090c`.
+1. Satıcı kimliği, ürün kimliği ve seri numarası görüntülenir. Çıkarılabilir medya ilkesine satıcı kimliğini ve ürün kimliğini eklerken, yalnızca öğesinin arkasına `0x`bölümünü eklemeniz gerekir. Örneğin, aşağıdaki görüntüde satıcı kimliği ve `1000` ürün kimliği şeklindedir `090c`.
 
-#### <a name="discover-usb-devices-in-your-organization"></a>Kuruluş içinde USB cihazlarını keşfedin
+#### <a name="discover-usb-devices-in-your-organization"></a>Kuruluşunuzdaki USB cihazlarını keşfetme
 
-Usb cihazlardan gelen bağlama, bağlama ve bağlamadan çıkış ve toplu değişiklik etkinliklerini gelişmiş Uç Nokta için Microsoft Defender görüntüebilirsiniz. Bu olaylar, şüpheli kullanım etkinliğini tanımlamak veya iç soruşturmalar gerçekleştirmek için yararlı olabilir.
+GELIŞMIŞ Uç Nokta için Microsoft Defender tehdit avcılığında USB cihazlarından kaynaklanan bağlama, çıkarma ve birim değişikliği olaylarını görüntüleyebilirsiniz. Bu olaylar, şüpheli kullanım etkinliğini belirlemek veya iç araştırmalar gerçekleştirmek için yararlı olabilir.
 
 ```bash
 DeviceEvents
@@ -369,27 +369,27 @@ DeviceEvents
 
 ## <a name="device-control-policy-deployment"></a>Cihaz denetimi ilkesi dağıtımı
 
-Cihaz denetimi ilkesi, MacOS'ta cihaz ayarları için tercihleri ayarlama konusunda açıklandığı [Uç Nokta için Microsoft Defender ekli olmalı](mac-preferences.md).
+Cihaz denetimi ilkesi, [macOS'ta Uç Nokta için Microsoft Defender için tercihleri ayarlama](mac-preferences.md) bölümünde açıklandığı gibi diğer ürün ayarlarının yanına eklenmelidir.
 
-Bu profil, Yapılandırma profili dağıtımı'nda listelenen yönergeler [kullanılarak dağıtılabilir](mac-preferences.md#configuration-profile-deployment).
+Bu profil [, Yapılandırma profili dağıtımında](mac-preferences.md#configuration-profile-deployment) listelenen yönergeler kullanılarak dağıtılabilir.
 
 ## <a name="troubleshooting-tips"></a>Sorun giderme ipuçları
 
-Intune YA DA JAMF aracılığıyla yapılandırma profilini ittirdikten sonra, Terminal'de aşağıdaki komutu çalıştırarak ürün tarafından başarıyla alınip alınamadı kontrol edin:
+Yapılandırma profilini Intune veya JAMF aracılığıyla gönderdikten sonra, Terminal'den aşağıdaki komutu çalıştırarak ürün tarafından başarıyla alınıp alınmadığını kontrol edebilirsiniz:
 
 ```bash
 mdatp device-control removable-media policy list
 ```
 
-Bu komut, ürünün kullanmakta olduğu cihaz denetim ilkesi için standart çıktıya yazdırılır. Bu durumda, `Policy is empty`(a) yapılandırma profilinin bu belgede açıklandığı gibi gerçekten cihaza yönetim konsolundan cihaza itilmiş olduğundan ve (b) geçerli bir cihaz denetim ilkesi olduğundan emin olun.
+Bu komut, ürünün kullandığı cihaz denetim ilkesini standart çıktıya yazdırır. Bu yazdırma `Policy is empty`durumunda, (a) yapılandırma profilinin gerçekten de yönetim konsolundan cihazınıza gönderildiğinden ve (b) bu belgede açıklandığı gibi geçerli bir cihaz denetim ilkesi olduğundan emin olun.
 
-İlke başarıyla teslim edilen ve bir veya daha fazla cihaz takılı olan bir cihazda, tüm cihazları ve onlara uygulanan geçerli izinleri listeleyen aşağıdaki komutu çalıştırabilirsiniz.
+İlkenin başarıyla teslim edildiği ve bir veya daha fazla cihazın takılı olduğu bir cihazda, tüm cihazları ve bunlara uygulanan etkin izinleri listelemek için aşağıdaki komutu çalıştırabilirsiniz.
 
 ```bash
 mdatp device-control removable-media devices list
 ```
 
-Çıkış örneği:
+Çıktı örneği:
 
 ```Output
 .Device(s)
@@ -400,9 +400,9 @@ mdatp device-control removable-media devices list
 | |-o Mount point: "/Volumes/TESTUSB"
 ```
 
-Yukarıdaki örnekte, takılı yalnızca bir `read` `execute` çıkarılabilir medya cihazı vardır ve cihaza teslim edilen cihaz denetim ilkesine göre bu cihaza ve izinlere sahip olur.
+Yukarıdaki örnekte, cihaza teslim edilen cihaz denetim ilkesine göre yalnızca bir çıkarılabilir medya cihazı takılıdır ve `execute` ve izinleri vardır`read`.
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Veri için cihaz denetimi ilkelerine Intune](mac-device-control-intune.md)
+- [Intune için cihaz denetimi ilkeleri örnekleri](mac-device-control-intune.md)
 - [JAMF için cihaz denetimi ilkeleri örnekleri](mac-device-control-jamf.md)

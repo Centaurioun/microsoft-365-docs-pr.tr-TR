@@ -2,8 +2,8 @@
 title: İlk kurulum veya geçiş sonrasında Uç Nokta için Microsoft Defender yönetme
 description: artık Uç Nokta için Microsoft Defender geçiş yaptığınıza göre, sonraki adımınız tehdit koruması özelliklerinizi yönetmektir
 keywords: geçiş sonrası, yönetme, işlemler, bakım, kullanım, Uç Nokta için Microsoft Defender, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: 3158f75d98d1536f54f9c5387c1515fe64be1c25
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: f5f0532e4bbcbbbfac19b1b5d123000e447404d7
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67324045"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522421"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-after-initial-setup-or-migration"></a>İlk kurulum veya geçiş sonrasında Uç Nokta için Microsoft Defender yönetme
 

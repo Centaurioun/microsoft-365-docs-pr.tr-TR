@@ -2,7 +2,7 @@
 title: Microsoft Defender Virüsten Koruma koruma güncelleştirmelerini zamanlama
 description: Koruma güncelleştirmelerinin indirileceği gün, saat ve aralığı zamanlama
 keywords: güncelleştirmeler, güvenlik temelleri, güncelleştirmeleri zamanlama
-ms.prod: m365-security
+ms.service: microsoft-365-security
 search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,14 +14,14 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 46deff4933055e4a76fa2e45663243ceca53f6d1
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 6222ea1102fd57a9cba3cfca5d4f2f8bc90bd20b
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388132"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521169"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Koruma güncelleştirmelerinin indirilme ve kullanılma zamanlamasını yönetin
 
@@ -74,11 +74,11 @@ Bu ayarların etkinleştirilmesi bu varsayılanı geçersiz kılar.
 
 4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **İmzası Güncelleştirmeler** genişletin ve aşağıdaki ayarları yapılandırın:
 
-    1. **Güvenlik bilgileri güncelleştirmelerini denetlemek için Haftanın gününü belirtin ayarına** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. Güncelleştirmeleri denetlemek için haftanın gününü girin. **Tamam**'ı tıklatın.
+    1. **Güvenlik bilgileri güncelleştirmelerini denetlemek için Haftanın gününü belirtin ayarına** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. Güncelleştirmeleri denetlemek için haftanın gününü girin. **Tamam**'a tıklayın.
 
-    2. **Tanım güncelleştirmelerini denetlemek için aralığı belirtin ayarına** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. Güncelleştirmeler arasındaki saat sayısını girin. **Tamam**'ı tıklatın.
+    2. **Tanım güncelleştirmelerini denetlemek için aralığı belirtin ayarına** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. Güncelleştirmeler arasındaki saat sayısını girin. **Tamam**'a tıklayın.
 
-    3. **Tanım güncelleştirmelerinin denetlenme zamanını belirtin ayarına** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. Güncelleştirmelerin denetlenmesi gereken zamanı girin. Zaman, uç noktanın yerel saatini temel alır. **Tamam**'ı tıklatın.
+    3. **Tanım güncelleştirmelerinin denetlenme zamanını belirtin ayarına** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. Güncelleştirmelerin denetlenmesi gereken zamanı girin. Zaman, uç noktanın yerel saatini temel alır. **Tamam**'a tıklayın.
 
 ## <a name="use-powershell-cmdlets-to-schedule-protection-updates"></a>Koruma güncelleştirmelerini zamanlamak için PowerShell cmdlet'lerini kullanma
 

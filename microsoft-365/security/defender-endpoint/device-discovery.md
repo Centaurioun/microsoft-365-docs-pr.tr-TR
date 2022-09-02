@@ -2,7 +2,7 @@
 title: Cihaz keşfine genel bakış
 description: Ağınızdaki yönetilmeyen cihazları bulmak için Microsoft 365 Defender uç nokta bulmadan nasıl yararlanacağınızı öğrenin
 keywords: cihaz bulma, bulma, pasif, proaktif, ağ, görünürlük, sunucu, iş istasyonu, ekleme, yönetilmeyen cihazlar
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +19,13 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: b8102e492f7c3d179bf053466d4d49d399a67f10
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.subservice: m365d
+ms.openlocfilehash: 68de47244ac8203049157811a0507b0c4b7acad0
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344635"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522730"
 ---
 # <a name="device-discovery-overview"></a>Cihaz keşfine genel bakış
 

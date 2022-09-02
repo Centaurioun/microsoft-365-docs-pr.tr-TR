@@ -2,7 +2,7 @@
 title: Liste Göstergeleri API'si
 description: Uç Nokta için Microsoft Defender'daki tüm etkin Göstergelerin koleksiyonunu almak için Liste Göstergeleri API'sini kullanmayı öğrenin.
 keywords: apis, genel API, desteklenen API'ler, Göstergeler koleksiyonu
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 1679f5f1b38ac3857b07625a883e267229eda8c6
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 93f805ab85438e764d1fcee2a9571fa684cefa91
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051062"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522179"
 ---
 # <a name="list-indicators-api"></a>Liste Göstergeleri API'si
 

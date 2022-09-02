@@ -3,7 +3,7 @@ title: URL/etki alanı ve IP’ler için göstergeler oluşturun
 ms.reviewer: ''
 description: VARLıKLARın algılanmasını, önlenmesini ve dışlanmasını tanımlayan IP'ler ve URL'ler/etki alanları için göstergeler oluşturun.
 keywords: ip, url, etki alanı, yönetme, izin verildi, engellendi, engelle, temiz, kötü amaçlı, dosya karması, IP adresi, URL'ler, etki alanı
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: e7858fb525bbe55859897764f930251c2159e4e5
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: 1724b274d64485a83625071149b7e451b1158c4a
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326472"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521049"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>URL/etki alanı ve IP’ler için göstergeler oluşturun
 

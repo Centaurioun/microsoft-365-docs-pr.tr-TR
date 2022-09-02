@@ -2,7 +2,7 @@
 title: Denetimli klasör erişimini değerlendirin
 description: Denetimli klasör erişiminin dosyaların kötü amaçlı uygulamalar tarafından değiştirilmesini nasıl koruyabileceğini görün.
 keywords: Yararlanma koruması, windows 10, windows 11, windows defender, fidye yazılımı, koruma, değerlendirme, test, tanıtım, deneme
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,15 +12,15 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 8e251222d71ad9559084ec39d7fa65a18b9e2c1a
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: f1309a52f21075574bcf1386a684889798a42405
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717172"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523302"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Denetimli klasör erişimini değerlendirin
 
@@ -34,7 +34,7 @@ ms.locfileid: "66717172"
 **Platform**
 - Windows
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
 [Denetimli klasör erişimi](controlled-folders.md) , belgelerinizi ve dosyalarınızın şüpheli veya kötü amaçlı uygulamalar tarafından değiştirilmesine karşı korunmasına yardımcı olan bir özelliktir. Denetimli klasör erişimi Windows Server 2019, Windows Server 2022, Windows 10 ve Windows 11 istemcilerinde desteklenir.

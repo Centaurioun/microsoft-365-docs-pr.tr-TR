@@ -2,7 +2,7 @@
 title: Öneriye göre güvenlik açıklarını listele
 description: Güvenlik önerisiyle ilişkili güvenlik açıklarının listesini alır.
 keywords: api'ler, graf api'leri, desteklenen API'ler, get, güvenlik açıklarının listesi, güvenlik önerisi, güvenlik açıkları için güvenlik önerisi, Tehdit ve Güvenlik Açığı Yönetimi, Tehdit ve Güvenlik Açığı Yönetimi API
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: b2c87047a0252bba643b2f6280b74f64c5de2d16
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: c1296ef3179278a321febc04ad24e71c8f4ddd1a
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344909"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522245"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>Öneriye göre güvenlik açıklarını listele
 

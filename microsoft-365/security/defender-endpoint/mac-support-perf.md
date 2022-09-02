@@ -2,7 +2,7 @@
 title: macOS'ta Uç Nokta için Microsoft Defender performans sorunlarını giderme
 description: macOS'ta Uç Nokta için Microsoft Defender performans sorunlarını giderme.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, performans
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: cef25147a57cf7613d22fbf393d41ecc33730955
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+ms.subservice: mde
+ms.openlocfilehash: 23da340c276256cc624dfc9a84da38ec326ae00e
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309559"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521597"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender performans sorunlarını giderme
 

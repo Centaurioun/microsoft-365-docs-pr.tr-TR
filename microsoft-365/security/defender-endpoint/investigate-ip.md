@@ -1,8 +1,8 @@
 ---
-title: Uyarıyla ilişkilendirilmiş IP adresini araştırma
+title: Uyarıyla ilişkilendirilmiş BIR IP adresini araştırma
 description: Cihazlar ve dış IP adresleri arasındaki olası iletişimi incelemek için araştırma seçeneklerini kullanın.
 keywords: araştırma, araştırma, IP adresi, uyarı, Uç Nokta için Microsoft Defender, dış IP
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,80 +14,80 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
-ms.technology: mde
-ms.openlocfilehash: b20a8d5f1f33ebe62fa1ec9a5e8c8e05dbddbc2b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.subservice: mde
+ms.openlocfilehash: 53548caff5a01c34e607b5e0960f14dfee33ac51
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323353"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522950"
 ---
-# <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Uç nokta için Microsoft Defender uyarısıyla ilişkilendirilmiş IP adresini araştırma
+# <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Uç Nokta için Microsoft Defender uyarısıyla ilişkili IP adresini araştırma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Cihazlarınız ve dış İnternet protokolü (IP) adresleri arasındaki olası iletişimi inceler.
+Cihazlarınız ile dış İnternet protokolü (IP) adresleri arasındaki olası iletişimi inceleyin.
 
-Kuruluşta, Komut ve Denetim (C2) sunucuları gibi şüpheli veya bilinen bir kötü amaçlı IP adresiyle iletişim kuran tüm cihazların belirlenmesi, ihlalle ilgili olası dosyaların ve virüs bulaşmış cihazların kapsamını belirlemeye yardımcı olur.
+Kuruluştaki komut ve denetim (C2) sunucuları gibi şüpheli veya bilinen bir kötü amaçlı IP adresiyle iletişim kuran tüm cihazları tanımlamak olası ihlal kapsamını, ilişkili dosyaları ve virüslü cihazları belirlemeye yardımcı olur.
 
-Aşağıdaki bölümlerde yer alan bilgileri IP adresi görünümünde bulabilirsiniz:
+IP adresi görünümünde aşağıdaki bölümlerden bilgi bulabilirsiniz:
 
-- IP dünya çapında
-- DNS adlarını ters çevirme
+- Dünya çapında IP
+- DNS adlarını ters çevir
 - Bu IP ile ilgili uyarılar
 - Kuruluşta IP
-- Yaygınlık
+- Prevalans
 
-## <a name="ip-worldwide-and-reverse-dns-names"></a>IP Worldwide ve Reverse DNS names
+## <a name="ip-worldwide-and-reverse-dns-names"></a>IP Worldwide ve Reverse DNS adları
 
-IP adresi ayrıntıları bölümünde, IP adresinin ASN ve Ters DNS adları gibi öznitelikleri yer almaktadır.
+IP adresi ayrıntıları bölümünde, ASN ve Ters DNS adları gibi IP adresinin öznitelikleri gösterilir.
 
 ## <a name="alerts-related-to-this-ip"></a>Bu IP ile ilgili uyarılar
 
-Bu **IP ile ilgili Uyarılar** bölümü IP ile ilişkili uyarıların listesini sağlar.
+**Bu IP ile ilgili uyarılar bölümü, IP** ile ilişkilendirilmiş uyarıların listesini sağlar.
 
 ## <a name="ip-in-organization"></a>Kuruluşta IP
 
-**Kuruluşta IP bölümü**, kuruluşta IP adresinin yaygın olarak kullanımıyla ilgili ayrıntılar sağlar.
+**Kuruluştaki IP bölümü, kuruluştaki** IP adresinin yaygınlığı hakkında ayrıntılı bilgi sağlar.
 
-## <a name="prevalence"></a>Yaygınlık
+## <a name="prevalence"></a>Prevalans
 
-Yaygın **yaygınlık** bölümü, bu IP adresine kaç cihaz bağlantısı olduğunu, IP'nin ne zaman ilk ve en son ne zaman olduğunu görüntüler. Bu bölümün sonuçlarını zaman dönemine göre filtrenin; varsayılan süre 30 gündür.
+**Yaygınlık** bölümü, bu IP adresine kaç cihazın bağlandığını ve IP'nin ilk ve son görüldüğü zamanları gösterir. Bu bölümün sonuçlarını zaman aralığına göre filtreleyebilirsiniz; varsayılan süre 30 gündür.
 
 ## <a name="most-recent-observed-devices-with-ip"></a>IP ile en son gözlemlenen cihazlar
 
-IP **ile en son gözlemlenen** cihazlar bölümü, IP adresi üzerinde gözlemlenen olaylar ve ilişkili uyarılar üzerinde kronolojik bir görünüm sağlar.
+**IP ile en son gözlemlenen cihazlar** bölümü, IP adresinde gözlemlenen olaylar ve ilişkili uyarılar hakkında kronolojik bir görünüm sağlar.
 
 **Dış IP'yi araştırma:**
 
-1. Arama **çubuğu** açılan **menüsünden** IP'yi seçin.
-2. ARAMA alanına IP **adresini** girin.
-3. Arama simgesine tıklayın veya Enter tuşuna **basın**.
+1. **Arama çubuğu** açılan menüsünden **IP'yi** seçin.
+2. **Arama** alanına IP adresini girin.
+3. Arama simgesine tıklayın veya **Enter tuşuna** basın.
 
-IP adresiyle ilgili ayrıntılar görüntülenir. Bunlar: kayıt ayrıntıları (varsa), ters IP'ler (örneğin, etki alanları), bu IP Adresi ile iletişim kurduğu kuruluşta cihazların yaygın kullanımı (seçilebilir bir süre boyunca) ve kuruluşta bu IP adresiyle iletişim kurduğu gözlemlenen cihazlar.
+IP adresiyle ilgili ayrıntılar görüntülenir: kayıt ayrıntıları (varsa), ters IP'ler (örneğin, etki alanları), kuruluştaki bu IP Adresi ile iletişim kuran cihazların yaygınlığı (seçilebilir zaman aralığında) ve kuruluştaki bu IP adresiyle iletişim kurarken gözlemlenen cihazlar.
 
 > [!NOTE]
-> Arama sonuçları yalnızca kuruluşta yer alan cihazlarla iletişimde gözlemlenen IP adresleri için döndürülür.
+> Arama sonuçları yalnızca kuruluştaki cihazlarla iletişimde gözlemlenen IP adresleri için döndürülür.
 
-Arama ölçütlerini tanımlamak için arama filtrelerini kullanın. Zaman çizelgesi arama kutusunu, kuruluşta IP adresiyle iletişim kurarken gözlemlenen tüm cihazların, iletişimle ilişkilendirilmiş dosyanın ve gözlemlenen son tarihin sonuçlarını filtrelemek için de zaman çizelgesi arama kutusunu kullanabilirsiniz.
+Arama ölçütlerini tanımlamak için arama filtrelerini kullanın. Ayrıca, kuruluştaki IP adresiyle, iletişimle ilişkilendirilmiş dosyayla ve gözlemlenen son tarihle iletişim kurarak gözlemlenen tüm cihazların görüntülenen sonuçlarını filtrelemek için zaman çizelgesi arama kutusunu da kullanabilirsiniz.
 
-Cihaz adlardan herhangi birini tıklatmak sizi bu cihazın görünümüne götürmektedir ve bu görünümde bildirilen uyarıları, davranışları ve olayları incelemeye devam edebilirsiniz.
+Cihaz adlarından herhangi birine tıkladığınızda bu cihazın görünümüne gidebilirsiniz; burada bildirilen uyarıları, davranışları ve olayları araştırmaya devam edebilirsiniz.
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Uç Nokta Uyarıları kuyruğu için Microsoft Defender'ı görüntüleme ve düzenleme](alerts-queue.md)
-- [Uç nokta uyarıları için Microsoft Defender'ı yönetme](manage-alerts.md)
-- [Uç nokta uyarıları için Microsoft Defender'ı araştırma](investigate-alerts.md)
-- [Uç nokta için Microsoft Defender uyarısıyla ilişkilendirilmiş dosyayı araştırma](investigate-files.md)
-- [Uç Nokta Cihazları için Microsoft Defender listesinde cihazları araştırma](investigate-machines.md)
-- [Uç nokta için Microsoft Defender uyarısıyla ilişkilendirilmiş etki alanını araştırma](investigate-domain.md)
-- [Uç Nokta için Microsoft Defender'da kullanıcı hesabını araştırma](investigate-user.md)
+- [Uç Nokta için Microsoft Defender Uyarıları kuyruğu görüntüleme ve düzenleme](alerts-queue.md)
+- [Uç Nokta için Microsoft Defender uyarılarını yönetme](manage-alerts.md)
+- [Uç Nokta için Microsoft Defender uyarılarını araştırma](investigate-alerts.md)
+- [Uç Nokta için Microsoft Defender uyarısıyla ilişkili bir dosyayı araştırma](investigate-files.md)
+- [Uç Nokta için Microsoft Defender Cihazlar listesindeki cihazları araştırma](investigate-machines.md)
+- [Uç Nokta için Microsoft Defender uyarısıyla ilişkili bir etki alanını araştırma](investigate-domain.md)
+- [Uç Nokta için Microsoft Defender'de kullanıcı hesabını araştırma](investigate-user.md)

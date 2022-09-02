@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender uyarılarını yönetme
 description: Uyarıları Yönet menüsüyle uyarıların durumunu değiştirin, uyarıları gizlemek, açıklamaları göndermek ve tek tek uyarıların değişiklik geçmişini gözden geçirmek için gizleme kuralları oluşturun.
 keywords: uyarıları yönetme, yönetme, uyarılar, durum, yeni, devam ediyor, çözümlendi, uyarıları çözümleme, gizleme, baskı, kurallar, bağlam, geçmiş, açıklamalar, değişiklikler
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c14447301cfa6abf83c231361c020d261eeb87a9
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.subservice: mde
+ms.openlocfilehash: 72d35555d3853aad102d2e4fee1a665c9abb04cd
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623430"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521235"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Uç Nokta için Microsoft Defender uyarılarını yönetme
 
@@ -105,7 +105,7 @@ Uyarıların ne zaman gizleneceğini veya çözümlendiğini denetlemek için ö
 
 #### <a name="view-the-list-of-suppression-rules"></a>Gizleme kurallarının listesini görüntüleme
 
-1. Gezinti bölmesinde **Uyarı gizleme** **Ayarlar** \> seçin.
+1. Gezinti bölmesinde **Ayarlar** \> **Uyarı gizleme'yi** seçin.
 
 2. Engelleme kuralları listesi, kuruluşunuzdaki kullanıcıların oluşturduğu tüm kuralları gösterir.
 

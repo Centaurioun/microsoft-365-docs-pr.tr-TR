@@ -3,7 +3,7 @@ title: Göstergeleri yönetin
 ms.reviewer: ''
 description: Varlıkların algılanmasını, önlenmesini ve dışlanmasını tanımlayan dosya karması, IP adresi, URL'ler veya etki alanları için göstergeleri yönetin.
 keywords: import, indicator, list, ioc, csv, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4619b24d06af4cdb80916fb9eacbc52b2fa55c21
-ms.sourcegitcommit: 0a67e239549752fcdbcff660189f34b51ec273f5
+ms.subservice: mde
+ms.openlocfilehash: 6a78b50ce7361363ae03d13d63783ed8469a56de
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "66983971"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521005"
 ---
 # <a name="manage-indicators"></a>Göstergeleri yönetin
 
@@ -69,13 +69,13 @@ indicatorValue|Dize|[Gösterge](ti-indicator.md) varlığının kimliği. **Gere
 Eylem|Enum|Gösterge kuruluşta bulunursa gerçekleştirilecek eylem. Olası değerler şunlardır: "Alert", "AlertAndBlock" ve "Allowed". **Gerekli**
 Başlık|Dize|Gösterge uyarı başlığı. **Gerekli**
 Açıklama|Dize| Göstergenin açıklaması. **Gerekli**
-expirationTime|Datetimeoffset|Göstergenin YYYY-AA-GGTHH:AA:SS.0Z biçiminde sona erme zamanı. Süre sonu süresi geçtiğinde ve süre sonu sırasında ne olursa olsun saniye (SS) değerinde gerçekleşirse gösterge silinir. **Isteğe bağlı**
-Önem|Enum|Göstergenin önem derecesi. Olası değerler şunlardır: "Bilgilendirici", "Düşük", "Orta" ve "Yüksek". **Isteğe bağlı**
-recommendedActions|Dize|TI göstergesi uyarısı önerilen eylemler. **Isteğe bağlı**
-rbacGroups|Dize|Göstergenin uygulanacağı RBAC gruplarının virgülle ayrılmış listesi. **Isteğe bağlı**
-Kategori|Dize|Uyarı kategorisi. Örnekler şunlardır: Yürütme ve kimlik bilgileri erişimi. **Isteğe bağlı**
+expirationTime|Datetimeoffset|Göstergenin YYYY-AA-GGTHH:AA:SS.0Z biçiminde sona erme zamanı. Süre sonu süresi geçtiğinde ve süre sonu sırasında ne olursa olsun saniye (SS) değerinde gerçekleşirse gösterge silinir. **İsteğe bağlı**
+Önem|Enum|Göstergenin önem derecesi. Olası değerler şunlardır: "Bilgilendirici", "Düşük", "Orta" ve "Yüksek". **İsteğe bağlı**
+recommendedActions|Dize|TI göstergesi uyarısı önerilen eylemler. **İsteğe bağlı**
+rbacGroups|Dize|Göstergenin uygulanacağı RBAC gruplarının virgülle ayrılmış listesi. **İsteğe bağlı**
+Kategori|Dize|Uyarı kategorisi. Örnekler şunlardır: Yürütme ve kimlik bilgileri erişimi. **İsteğe bağlı**
 mitretechniques|Dize|MITRE teknikleri kod/kimlik (virgülle ayrılmış). Daha fazla bilgi için bkz [. Kurumsal taktikler](https://attack.mitre.org/tactics/enterprise/). **Isteğe bağlı** MITRE tekniğinde kategoriye değer eklemeniz önerilir.
-GenerateAlert|Dize|Uyarının oluşturulup oluşturulmayacağı. Olası Değerler şunlardır: True veya False. **Isteğe bağlı**
+GenerateAlert|Dize|Uyarının oluşturulup oluşturulmayacağı. Olası Değerler şunlardır: True veya False. **İsteğe bağlı**
 
 > [!NOTE]
 > IP adresleri için sınıfsız Inter-Domain Yönlendirme (CIDR) gösterimi desteklenmez.

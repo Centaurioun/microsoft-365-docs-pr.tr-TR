@@ -2,7 +2,7 @@
 title: Ağ korumasını açın
 description: grup ilkesi, PowerShell veya Mobil Cihaz Yönetimi ve Configuration Manager ile ağ korumasını etkinleştirin.
 keywords: Ağ koruması, açıklardan yararlanmalar, kötü amaçlı web sitesi, ip, etki alanı, etki alanları, etkinleştirme, açma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,15 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 8f8f189e3cf340c0056eb6e9cbbbfefe6f4e148d
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: ffb0e9f05c8858f189a5ae2bcc05296d8cfd5ba3
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67405826"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524072"
 ---
 # <a name="turn-on-network-protection"></a>Ağ korumasını açın
 

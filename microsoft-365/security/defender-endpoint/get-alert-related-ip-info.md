@@ -2,7 +2,7 @@
 title: Uyarıyla ilgili IP'lerin bilgilerini alma
 description: Uç Nokta için Microsoft Defender kullanarak belirli bir uyarıyla ilgili tüm IP'leri alın.
 keywords: api'ler, graf api'leri, desteklenen API'ler, uyarı bilgilerini alma, uyarı bilgileri, ilgili ip
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: e2988e7c4c88e5f7727c132db2c8f5e6e3aba2bb
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: a1c1d9435484940b56ea3f535e09800e0eabc939
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67323211"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523940"
 ---
 # <a name="get-alert-related-ips-information-api"></a>Uyarıyla ilgili IP'lerin bilgi API'lerini alma
 

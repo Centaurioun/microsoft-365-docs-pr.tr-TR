@@ -1,8 +1,8 @@
 ---
-title: Linux'ta Uç Nokta için Microsoft Defender ile ilgili eksik olay veya uyarı sorunlarını giderme
-description: Linux'ta Uç Nokta için Microsoft Defender'da eksik olay veya uyarı sorunlarını giderin.
-keywords: microsoft, defender, Endpoint için Microsoft Defender, Linux, etkinlikler
-ms.prod: m365-security
+title: Linux'ta Uç Nokta için Microsoft Defender için eksik olayları veya uyarı sorunlarını giderme
+description: Linux'ta Uç Nokta için Microsoft Defender eksik olayları veya uyarı sorunlarını giderme.
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, linux, events
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,31 +15,31 @@ ms.collection:
 - m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 5a17f94e3d26c08c0f6e0ca358778a65189cf6a5
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.subservice: mde
+ms.openlocfilehash: 6f492ac422e105a22c48cb561f2b2247f4210c73
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011887"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520873"
 ---
-# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender ile ilgili eksik olay veya uyarı sorunlarını giderme
+# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender için eksik olayları veya uyarı sorunlarını giderme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
 - [Linux'ta Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-linux.md)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Bu makalede, portalda eksik etkinlikleri veya uyarıları azaltmak için bazı <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">genel Microsoft 365 Defender sağlar</a>.
+Bu makalede, <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a> eksik olayları veya uyarıları azaltmak için bazı genel adımlar sağlanır.
 
-Uç **Nokta için Microsoft Defender** bir cihaza düzgün bir şekilde yüklendikten sonra portalda bir cihaz sayfası oluşturulur. Cihaz sayfasındaki veya gelişmiş av sayfasındaki zaman çizelgesi sekmesinde tüm kayıtlı etkinlikleri gözden geçirebilirsiniz. Bu bölümde, bazı veya tüm beklenen olayların eksik olması durumu giderilir.
-Örneğin, tüm _CreatedFile olayları_ eksikse.
+**Uç Nokta için Microsoft Defender** bir cihaza düzgün bir şekilde yüklendikten sonra portalda bir _cihaz sayfası_ oluşturulur. Kaydedilen tüm olayları cihaz sayfasındaki zaman çizelgesi sekmesinde veya gelişmiş tehdit avcılığı sayfasında gözden geçirebilirsiniz. Bu bölümde beklenen olayların bazılarının veya tümünün eksik olması durumunda sorun giderilir.
+Örneğin, tüm _CreatedFile_ olayları eksikse.
 
-## <a name="missing-network-and-login-events"></a>Eksik ağ ve oturum açma olayları
+## <a name="missing-network-and-login-events"></a>Ağ ve oturum açma olayları eksik
 
-Ağ ve oturum açma etkinliğini izlemek için `audit` Linux'tan kullanılan Uç Nokta için Microsoft Defender.
+Uç Nokta için Microsoft Defender ağ ve oturum açma etkinliğini izlemek için Linux'tan çerçeve kullanılmıştır`audit`.
 
 1. Denetim çerçevesinin çalıştığından emin olun.
 
@@ -66,33 +66,33 @@ Ağ ve oturum açma etkinliğini izlemek için `audit` Linux'tan kullanılan Uç
             └─16671 /opt/microsoft/mdatp/sbin/mdatp_audisp_plugin -d
     ```
 
-2. Durduruldu `auditd` olarak işaretlenmişse, başlat'a.
+2. Durduruldu olarak işaretlenmişse `auditd` başlatın.
 
     ```bash
     service auditd start
     ```
 
-**SLES sistemlerinde** , SYSCALL denetimi `auditd` varsayılan olarak devre dışı bırakılabilir ve eksik olaylardan sorumlu olabilir.
+**SLES** sistemlerinde, içinde `auditd` SYSCALL denetimi varsayılan olarak devre dışı bırakılmış olabilir ve eksik olaylar için hesaba eklenebilir.
 
-1. SYSCALL denetiminin devre dışı olmadığını doğrulamak için, geçerli denetim kurallarını listele:
+1. SYSCALL denetiminin devre dışı bırakılmadığını doğrulamak için geçerli denetim kurallarını listeleyin:
 
     ```bash
     sudo auditctl -l
     ```
 
-    Aşağıdaki satır varsa, belirli SYSCALL'leri izlemek için Uç Nokta için Microsoft Defender'ı etkinleştirmek için satırı kaldırın veya düzenleyin.
+    Aşağıdaki satır varsa, Uç Nokta için Microsoft Defender belirli SYSCALL'leri izlemesini sağlamak için satırı kaldırın veya düzenleyin.
 
     ```output
     -a task, never
     ```
 
-    denetim kuralları 'da bulunur `/etc/audit/rules.d/audit.rules`.
+    denetim kuralları konumunda `/etc/audit/rules.d/audit.rules`bulunur.
 
 ## <a name="missing-file-events"></a>Eksik dosya olayları
 
-Dosya olayları çerçeveyle `fanotify` toplanır. Bazı dosya olaylarında veya bunların tüm durumlarda eksikse, `fanotify` cihazda etkin olduğundan ve dosya sisteminin destekildiğinden [emin olun](microsoft-defender-endpoint-linux.md#system-requirements).
+Dosya olayları çerçeve ile `fanotify` toplanır. Bazı veya tüm dosya olaylarının eksik olması durumunda cihazda etkinleştirildiğinden ve dosya sisteminin [desteklendiğinden](microsoft-defender-endpoint-linux.md#system-requirements) emin olun`fanotify`.
 
-Makinede dosyasistemlerini şu şekilde listele:
+Makinedeki dosya sistemlerini şu şekilde listeleyin:
 
 ```bash
 df -Th

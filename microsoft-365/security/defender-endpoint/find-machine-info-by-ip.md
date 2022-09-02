@@ -3,7 +3,7 @@ title: Dahili IP API'lerine göre cihaz bilgilerini bulma
 description: İç IP'ye göre belirli bir zaman damgası çevresinde bir cihaz girişi bulmayla ilgili çağrılar oluşturmak için bu API'yi kullanın.
 keywords: ip, API'ler, graf api'leri, desteklenen API'ler, cihaz bulma, cihaz bilgileri
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: a641784e632574d8b5ba50c59bbc5b987d9375de
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.subservice: mde
+ms.openlocfilehash: 8200e118046f22f3cfcdc48bf6956e2850547ea5
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051876"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523214"
 ---
 # <a name="find-device-information-by-internal-ip-api"></a>Dahili IP API'lerine göre cihaz bilgilerini bulma
 

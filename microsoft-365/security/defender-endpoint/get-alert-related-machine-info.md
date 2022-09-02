@@ -2,7 +2,7 @@
 title: Uyarıyla ilgili makine bilgilerini alma
 description: Uç Nokta için Microsoft Defender kullanarak belirli bir uyarıyla ilgili tüm cihazları alın.
 keywords: api'ler, graf api'leri, desteklenen API'ler, uyarı bilgilerini alma, uyarı bilgileri, ilgili cihaz
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 7904539ba8b6c06c6981a4e630a6d95ca4f8422b
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 52f5cfd1c15e3e4143fa543b8df055c1711ce023
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67324374"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521861"
 ---
 # <a name="get-alert-related-machine-information-api"></a>Uyarıyla ilgili makine bilgileri API'lerini alma
 

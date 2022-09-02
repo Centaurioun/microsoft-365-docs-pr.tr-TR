@@ -2,7 +2,7 @@
 title: Canlı yanıt komut örnekleri
 description: Uç Nokta için Microsoft Defender için temel veya gelişmiş canlı yanıt komutlarını çalıştırmayı öğrenin ve bunların nasıl kullanıldığına ilişkin örneklere bakın.
 keywords: örnek, command, cli, remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 77a1bd5c9234b7a38266be55825726e683557eb4
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.subservice: mde
+ms.openlocfilehash: 4451914a4ddcfe4e95a0a75581829af00afa5dbd
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872397"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522597"
 ---
 # <a name="live-response-command-examples"></a>Canlı yanıt komut örnekleri
 

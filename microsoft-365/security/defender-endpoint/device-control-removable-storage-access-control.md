@@ -1,7 +1,7 @@
 ---
 title: Uç Nokta için Microsoft Defender Aygıt Denetimi Çıkarılabilir Depolama birimi Access Control, çıkarılabilir depolama medyası
 description: Uç Nokta için Microsoft Defender hakkında kılavuz
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ms.date: 08/08/2022
 ms.reviewer: tewchen
-ms.openlocfilehash: 021556a1942619be8deeb4724507b1237c0a3f51
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: d6370dca95797b7ce83e95a4a4123aa2f5470205
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280707"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522443"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama birimi Access Control
 

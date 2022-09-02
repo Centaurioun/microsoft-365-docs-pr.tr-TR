@@ -2,7 +2,7 @@
 title: Yazılıma göre güvenlik açıklarını listele
 description: Yüklü yazılımdaki güvenlik açıklarının listesini alın.
 keywords: api'ler, graf api'leri, desteklenen API'ler, get, güvenlik açıkları listesi, Uç Nokta için Microsoft Defender tvm API'leri
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 61a85b5e3a52cdf936058a08ad71f08348c4a553
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 261545c6d462bcffd6067c0249457e5690a65616
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327651"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522201"
 ---
 # <a name="list-vulnerabilities-by-software"></a>Yazılıma göre güvenlik açıklarını listele
 

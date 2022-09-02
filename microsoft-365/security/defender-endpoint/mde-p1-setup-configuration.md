@@ -7,20 +7,20 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdep1
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e94a0ee04d45e92d5891c73ba3a70ac2f05cd482
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: bdc3d7c2f78b1f94c0f65950a8b36519a2e520a6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66485967"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521927"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>Uç Nokta için Microsoft Defender Plan 1'i ayarlama ve yapılandırma
 
@@ -363,13 +363,13 @@ Temel güvenlik duvarı ayarlarını yapılandırmak için şu adımları izleyi
 
 4. **Temel Bilgiler** sekmesinde, bir ad ve açıklama belirtin ve ardından **İleri'yi** seçin.
 
-5. **Microsoft Defender Güvenlik Duvarı** genişletin ve aşağı kaydırarak listenin en altına gelin.
+5. **Microsoft Defender Güvenlik Duvarı'nı** genişletin ve listenin en altına kadar aşağı kaydırın.
 
 6. Aşağıdaki ayarların her birini **Evet** olarak ayarlayın:
 
-   - **Etki alanı ağları için Microsoft Defender Güvenlik Duvarı açma** 
-   - **Özel ağlar için Microsoft Defender Güvenlik Duvarı açma**
-   - **Genel ağlar için Microsoft Defender Güvenlik Duvarı açma**
+   - **Etki alanı ağları için Microsoft Defender Güvenlik Duvarı'nı açma** 
+   - **Özel ağlar için Microsoft Defender Güvenlik Duvarı'nı açma**
+   - **Genel ağlar için Microsoft Defender Güvenlik Duvarı'nı açma**
    
    Etki alanı ağlarının, özel ağların ve genel ağların her birinin altındaki ayarların listesini gözden geçirin. Bunları **Yapılandırılmadı** olarak bırakabilir veya kuruluşunuzun gereksinimlerine uyacak şekilde değiştirebilirsiniz.
 
@@ -384,7 +384,7 @@ Temel güvenlik duvarı ayarlarını yapılandırmak için şu adımları izleyi
 9. **Gözden Geçir + oluştur** sekmesinde ilke ayarlarınızı gözden geçirin ve **oluştur'u** seçin.
 
 > [!TIP]
-> Güvenlik duvarı ayarları ayrıntılıdır ve karmaşık görünebilir. [Windows Defender Güvenlik Duvarı yapılandırmak için en iyi yöntemler](/windows/security/threat-protection/windows-firewall/best-practices-configuring) bölümüne bakın.
+> Güvenlik duvarı ayarları ayrıntılıdır ve karmaşık görünebilir. [Windows Defender Güvenlik Duvarı'nı yapılandırmak için en iyi yöntemler](/windows/security/threat-protection/windows-firewall/best-practices-configuring) bölümüne bakın.
 
 ### <a name="application-control"></a>Uygulama denetimi
 

@@ -2,7 +2,7 @@
 title: Kullanıcıyla ilgili makineler API'lerini alma
 description: Uç Nokta için Microsoft Defender'da kullanıcı kimliğiyle ilgili bir cihaz koleksiyonunu almak için Kullanıcıyla ilgili makineleri alma API'sini kullanmayı öğrenin.
 keywords: api'ler, graf api'leri, desteklenen API'ler, alma, kullanıcı, kullanıcıyla ilgili uyarılar
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 7cb4091f86383e7751c8837cbecafe895f22e5bc
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: fddef873ffa7cbf505d6fb6d6ceccf04a9ec50ae
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327585"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524138"
 ---
 # <a name="get-user-related-machines-api"></a>Kullanıcıyla ilgili makineler API'lerini alma
 

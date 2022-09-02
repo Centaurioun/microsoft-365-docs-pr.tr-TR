@@ -2,7 +2,7 @@
 title: Windows Server'da Microsoft Defender Virüsten Koruma'yı etkinleştirme ve güncelleştirme
 description: Windows Server'da Microsoft Defender Virüsten Koruma'yı etkinleştirmeyi ve güncelleştirmeyi öğrenin
 keywords: Windows Server, Defender Virüsten Koruma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.custom: intro-overview
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: f243473448fd1925b2ae382aff8a1924c58252fa
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.subservice: mde
+ms.openlocfilehash: 9e09dae01233f0f1a41d576bc33100c8d72fd65b
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306767"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521399"
 ---
 # <a name="enable-and-update-defender-antivirus-to-the-latest-version-on-windows-server"></a>Defender Virüsten Koruma'yı etkinleştirme ve Windows Server'da en son sürüme güncelleştirme
 

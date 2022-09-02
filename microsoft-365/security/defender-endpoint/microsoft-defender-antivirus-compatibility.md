@@ -3,7 +3,7 @@ title: Microsoft Defender Virüsten Koruma'nın diğer güvenlik ürünleriyle u
 description: Diğer güvenlik ürünleri ve işletim sistemleriyle Microsoft Defender Virüsten Koruma hakkında bilgi edinin.
 keywords: windows defender, uç nokta için defender, yeni nesil, virüsten koruma, uyumluluk, pasif mod
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 642f3294304d6cd0aadd3ead44a61f17d0e61ad3
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 186fcfe37cac460a03627d41093934ed949b9084
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67478221"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521115"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender Virüsten Koruma'nın diğer güvenlik ürünleriyle uyumluluğu
 

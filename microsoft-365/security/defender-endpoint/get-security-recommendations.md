@@ -2,7 +2,7 @@
 title: Güvenlik önerileri al
 description: Belirli bir cihaz kimliğiyle ilgili güvenlik önerileri koleksiyonunu alır.
 keywords: apis, graph api, desteklenen API'ler, get, list, file, information, security recommendation per device, threat & vulnerability management API, Uç Nokta için Microsoft Defender tvm api
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: d2b4c57bda9084d1e76ad011869e27b05c5c1f4f
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: ab5f7cd15fa1a810875101db6f03365d30618539
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344755"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524160"
 ---
 # <a name="get-security-recommendations"></a>Güvenlik önerileri al
 

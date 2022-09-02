@@ -1,9 +1,9 @@
 ---
-title: Bulut Uygulamaları için Microsoft Defender tümleştirmeye genel bakış
+title: Bulut Uygulamaları için Microsoft Defender tümleştirmesine genel bakış
 ms.reviewer: ''
-description: Uç Nokta için Microsoft Defender, tüm bulut uygulaması ağ etkinliklerini ileterek Bulut Uygulamaları için Defender ile tümleştirilmiştir.
+description: Uç Nokta için Microsoft Defender, tüm bulut uygulaması ağ etkinliklerini ileterek Cloud Apps için Defender ile tümleşir.
 keywords: bulut, uygulama, ağ, görünürlük, kullanım
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,49 +15,49 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
-ms.technology: mde
-ms.openlocfilehash: d3cf5259aeb070175d5d2a4a95154974c6cd4d56
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.subservice: mde
+ms.openlocfilehash: b07c3ec5749aa7e7c7f23415f1f50521b9b507b3
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63021592"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521477"
 ---
-# <a name="microsoft-defender-for-cloud-apps-in-defender-for-endpoint-overview"></a>Uç Nokta için Defender'da Bulut Uygulamaları için Microsoft Defender'a genel bakış
+# <a name="microsoft-defender-for-cloud-apps-in-defender-for-endpoint-overview"></a>Uç Nokta için Defender'da Microsoft Defender for Cloud Apps genel bakış
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Bulut Uygulamaları için Microsoft Defender, bulut uygulamalarına erişimi denetlemenizi ve bu uygulamalara erişimi sınırlandırmanıza olanak sağlarken bulutta depolanan verilerde uyumluluk gereksinimlerini de zorlayarak bulut uygulamaları ve hizmetlerinin görünürlüğünü sağlayan kapsamlı bir çözümdür. Daha fazla bilgi için bkz. [Bulut Uygulamaları için Defender](/cloud-app-security/what-is-cloud-app-security).
+Microsoft Defender for Cloud Apps, bulut uygulamalarına erişimi denetlemenize ve sınırlamanıza olanak tanıyarak bulut uygulamaları ve hizmetlerinde görünürlük sağlarken, bulutta depolanan verilerde uyumluluk gereksinimlerini zorunlu tutmanızı sağlayan kapsamlı bir çözümdür. Daha fazla bilgi için bkz. [Cloud Apps için Defender](/cloud-app-security/what-is-cloud-app-security).
 
 > [!NOTE]
-> Bu özellik, 1809 veya [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) 11 sürümünü çalıştıran Windows 10 çalıştıran cihazlarda E5 Windows ile kullanılabilir.
+> Bu özellik, Windows 10 sürüm 1809 veya üzeri ya da [Windows 11](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) çalıştıran cihazlarda Enterprise Mobility + Security için bir E5 lisansı ile kullanılabilir.
 
-## <a name="microsoft-defender-for-endpoint-and-defender-for-cloud-apps-integration"></a>Bulut Uygulamaları tümleştirmesi için Uç Nokta ve Defender için Microsoft Defender
+## <a name="microsoft-defender-for-endpoint-and-defender-for-cloud-apps-integration"></a>Uç Nokta için Microsoft Defender ve Cloud Apps için Defender tümleştirmesi
 
-Bulut Uygulamaları için Defender bulma, bulut trafiği günlüklerinin kurumsal güvenlik duvarından ve ara sunuculardan bu günlüklere ilet  özeldir. Uç Nokta için Microsoft Defender, tüm bulut uygulaması ağ etkinlikleri toplayarak ve ileterek Bulut Uygulamaları için Defender ile tümleştirerek, bulut uygulama kullanımına benzersiz görünürlük sağlar. İzleme işlevselliği cihazda yerleşik olarak yer alınarak ağ etkinliğinin tam kapsamda yer alan bir özelliğidir.
+Cloud Apps için Defender bulma, kurumsal güvenlik duvarı ve ara sunuculardan bulut trafiği günlüklerinin ona iletilmesini kullanır. Uç Nokta için Microsoft Defender, tüm bulut uygulaması ağ etkinliklerini toplayıp ileterek Cloud Apps için Defender ile tümleştirilerek bulut uygulaması kullanımına benzersiz görünürlük sağlar. İzleme işlevi cihazda yerleşik olarak bulunur ve ağ etkinliğinin tam kapsamını sağlar.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r4yQ]
 
-Tümleştirme, mevcut Bulut Uygulamaları için Defender'ı bulma konusunda aşağıdaki önemli geliştirmeleri sağlar:
+Tümleştirme, mevcut Cloud Apps için Defender keşfinde aşağıdaki önemli iyileştirmeleri sağlar:
 
-- Her yerde kullanılabilir - Ağ etkinliği doğrudan uç noktadan toplanmış olduğu için, cihazın olduğu her yerde, şirket ağına açık veya kapalı olarak kullanılabilir çünkü artık kurumsal güvenlik duvarı veya ara sunuculardan yönlendiren trafik bağlı değildir.
+- Her yerde kullanılabilir - Ağ etkinliği doğrudan uç noktadan toplandığından, artık kurumsal güvenlik duvarı veya ara sunuculardan yönlendirilen trafiğe bağlı olmadığından cihazın bulunduğu her yerde, şirket ağında veya dışında kullanılabilir.
 
-- Hazır çalışır, yapılandırma gerekmez - Bulut trafiği günlüklerinin Bulut Uygulamaları için Defender'a ilet olması için güvenlik duvarı ve ara sunucu yapılandırması gerekir. Uç Nokta için Defender ve Bulut Uygulamaları için Defender tümleştirmesi ile yapılandırma gerekmez. Bu ayarı Microsoft 365 Defender ve artık devam edebilirsiniz.
+- Hazır çalışır, yapılandırma gerekmez - Bulut trafiği günlüklerinin Cloud Apps için Defender'a iletilmesi için güvenlik duvarı ve ara sunucu yapılandırması gerekir. Uç Nokta için Defender ve Cloud Apps için Defender tümleştirmesiyle yapılandırma gerekmez. Microsoft 365 Defender ayarlardan açın ve hazırsınız.
 
-- Cihaz bağlamı - Bulut trafiğinde cihaz bağlamı eksik. Uç nokta ağ etkinliği için Defender, cihaz bağlamında (bulut uygulamasına erişilen cihaz) raporlandığı için, ağ etkinliğini kimin (kullanıcı) gerçekleştireceğiyle birlikte tam olarak nerede gerçekleştir olduğunu (cihaz) anlıyoruz.
+- Cihaz bağlamı - Bulut trafik günlüklerinin cihaz bağlamı yok. Uç Nokta için Defender ağ etkinliği, cihaz bağlamı (bulut uygulamasına erişen cihaz) ile bildirilir, böylece ağ etkinliğinin tam olarak nerede (cihaz) gerçekleştiğini ve bunu kimin (kullanıcı) gerçekleştirdiğini anlayabilirsiniz.
 
-Bulut bulma hakkında daha fazla bilgi için bkz [. Bulunan uygulamalarla çalışma](/cloud-app-security/discovered-apps).
+Bulut bulma hakkında daha fazla bilgi için bkz. [Bulunan uygulamalarla çalışma](/cloud-app-security/discovered-apps).
 
 ## <a name="related-topic"></a>İlgili konu
 
-- [Bulut Uygulamaları tümleştirmesi için Microsoft Defender'ı yapılandırma](microsoft-cloud-app-security-config.md)
+- [Bulut Uygulamaları için Microsoft Defender tümleştimesini yapılandırın](microsoft-cloud-app-security-config.md)

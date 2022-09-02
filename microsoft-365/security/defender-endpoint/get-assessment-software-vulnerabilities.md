@@ -2,7 +2,7 @@
 title: Cihaz başına yazılım güvenlik açıkları değerlendirmesi dışarı aktarma
 description: API yanıtı cihaza göredir ve kullanıma sunulan cihazlarınızda yüklü güvenlik açığı bulunan yazılımları ve bu yazılım ürünlerinde bilinen güvenlik açıklarını içerir. Bu tabloda işletim sistemi bilgileri, CVE kimlikleri ve güvenlik açığı önem derecesi bilgileri de yer alır.
 keywords: api, API'ler, dışarı aktarma değerlendirmesi, cihaz başına değerlendirme, güvenlik açığı değerlendirme raporu, cihaz güvenlik açığı değerlendirmesi, cihaz güvenlik açığı raporu, güvenli yapılandırma değerlendirmesi, güvenli yapılandırma raporu, yazılım güvenlik açıkları değerlendirmesi, yazılım güvenlik açığı raporu, makineye göre güvenlik açığı raporu,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: aba3078a31428e837bacaf65f0d03b3d6019521a
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: 5d0ef17838dc24d39c077dbf889c6272c68b0583
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67405809"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523698"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Cihaz başına yazılım güvenlik açıkları değerlendirmesi dışarı aktarma
 

@@ -1,10 +1,10 @@
 ---
-title: E-Uç Nokta için Microsoft Defender'daki olayları araştır
-description: İlişkili uyarıları görüntüleme, olayı yönetme ve bir olayı araştırmanıza yardımcı olacak uyarı meta verilerini görüntüleme
-keywords: araştırma, olay, uyarılar, meta veriler, risk, algılama kaynağı, etkilenen cihazlar, desenler, korelasyon
+title: Uç Nokta için Microsoft Defender'da olayları araştırma
+description: Bir olayı araştırmanıza yardımcı olmak için ilişkili uyarıları görme, olayı yönetme ve uyarı meta verilerini görme
+keywords: araştırma, olay, uyarılar, meta veriler, risk, algılama kaynağı, etkilenen cihazlar, desenler, bağıntı
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,91 +17,91 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d66dde2c3f346449c7ecd03a7ef577e39cf98991
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 76e944b809317b7783c30251407ba0ef310c7751
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468809"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521345"
 ---
-# <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>E-Uç Nokta için Microsoft Defender'daki olayları araştır
+# <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da olayları araştırma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-Anızı etkileyen olayları araştıryın, bunların ne anlama gelen olduğunu an olun ve bunları çözmek için kanıtları harmanlar.
+Ağınızı etkileyen olayları araştırın, ne anlama geldiğini anlayın ve bunları çözmek için kanıtları harmanlayın.
 
-Bir olayı incelerken şunları görüyorsunuz:
+Bir olayı araştırdığınızda şunları görürsünüz:
 
 - Olay ayrıntıları
-- Olay yorumları ve eylemleri
-- Sekmeler (uyarılar, cihazlar, soruşturmalar, kanıt, grafik)
+- Olay açıklamaları ve eylemleri
+- Sekmeler (uyarılar, cihazlar, araştırmalar, kanıt, grafik)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUV]
 
-## <a name="analyze-incident-details"></a>Olay ayrıntılarını çözümleme
+## <a name="analyze-incident-details"></a>Olay ayrıntılarını analiz etme
 
-Olay bölmesini görmek için bir **olayı tıklatın**. Olay **ayrıntılarını ve ilgili bilgileri** (uyarılar, cihazlar, soruşturmalar, kanıt, grafik) görmek için Olay sayfasını aç'ı seçin.
+**Olay bölmesini** görmek için bir olaya tıklayın. Olay ayrıntılarını ve ilgili bilgileri (uyarılar, cihazlar, araştırmalar, kanıt, grafik) görmek için **Olay sayfasını aç'ı** seçin.
 
-:::image type="content" source="images/atp-incident-details.png" alt-text="Olayın ayrıntıları" lightbox="images/atp-incident-details.png":::
+:::image type="content" source="images/atp-incident-details.png" alt-text="Bir olayın ayrıntıları" lightbox="images/atp-incident-details.png":::
 
 ### <a name="alerts"></a>Uyarılar
 
-Uyarıları inceler ve bir olayda nasıl bağlantılı olduklarını öğrensiniz. Uyarılar, aşağıdaki nedenlere göre olaylarda gruptur:
+Uyarıları araştırabilir ve bir olayda bunların nasıl birbirine bağlandığını görebilirsiniz. Uyarılar, aşağıdaki nedenlere göre olaylar halinde gruplandırılır:
 
-- Otomatik araştırma - Otomatik araştırma, özgün uyarıyı araştırırken bağlantılı uyarıyı tetikler
-- Dosya özellikleri - Uyarıyla ilişkilendirilmiş dosyaların benzer özellikleri vardır
-- El ile ilişkilendirme - Bir kullanıcı uyarıları el ile birbirine bağlı
-- Proximate time - Uyarılar belirli bir zaman çerçevesi içinde aynı cihazda tetikldi
+- Otomatik araştırma - Otomatik araştırma, özgün uyarıyı araştırırken bağlantılı uyarıyı tetikledi
+- Dosya özellikleri - Uyarıyla ilişkili dosyalar benzer özelliklere sahiptir
+- El ile ilişkilendirme - Bir kullanıcı uyarıları el ile bağladı
+- Yakın zaman - Uyarılar belirli bir zaman çerçevesi içinde aynı cihazda tetiklendi
 - Aynı dosya - Uyarıyla ilişkilendirilmiş dosyalar tamamen aynıdır
 - Aynı URL - Uyarıyı tetikleyen URL tamamen aynıdır
 
-:::image type="content" source="images/atp-incidents-alerts-reason.png" alt-text="Uyarıların o olayda neden birbirine bağlı olduğunu gösteren olay ayrıntıları sayfasının olduğu Uyarılar sekmesi" lightbox="images/atp-incidents-alerts-reason.png":::
+:::image type="content" source="images/atp-incidents-alerts-reason.png" alt-text="Uyarıların bu olayda birbirine bağlanma nedenlerini gösteren olay ayrıntıları sayfasının bulunduğu Uyarılar sekmesi" lightbox="images/atp-incidents-alerts-reason.png":::
 
-Ayrıca, uyarıyı yönetebilir ve diğer bilgilerle birlikte uyarı meta verilerini de görebilirsiniz. Daha fazla bilgi için bkz [. Uyarıları araştırma](investigate-alerts.md).
+Ayrıca bir uyarıyı yönetebilir ve uyarı meta verilerini diğer bilgilerle birlikte görebilirsiniz. Daha fazla bilgi için bkz [. Uyarıları araştırma](investigate-alerts.md).
 
-### <a name="devices"></a>Cihazlar
+### <a name="devices"></a>Aygıtları
 
-Ayrıca, ilgili veya bir olayın parçası olan cihazları da araştırabilirsiniz. Daha fazla bilgi için bkz. [Cihazları araştırma](investigate-machines.md).
+Ayrıca belirli bir olayın parçası olan veya ilgili cihazları da araştırabilirsiniz. Daha fazla bilgi için bkz [. Cihazları araştırma](investigate-machines.md).
 
-:::image type="content" source="images/atp-incident-device-tab.png" alt-text="Olay ayrıntıları sayfasında Cihazlar sekmesi" lightbox="images/atp-incident-device-tab.png":::
+:::image type="content" source="images/atp-incident-device-tab.png" alt-text="Olay ayrıntıları sayfasındaki Cihazlar sekmesi" lightbox="images/atp-incident-device-tab.png":::
 
-### <a name="investigations"></a>İncelemeler
+### <a name="investigations"></a>Sondajları
 
-Sistem **tarafından başlatılan** tüm otomatik soruşturmaları olay uyarılarına yanıt olarak görmek için Araştırmalar'ı seçin.
+Olay **uyarılarına** yanıt olarak sistem tarafından başlatılan tüm otomatik araştırmaları görmek için Araştırmalar'ı seçin.
 
-:::image type="content" source="images/atp-incident-investigations-tab.png" alt-text="Olay ayrıntıları sayfasındaki soruşturmalar sekmesi" lightbox="images/atp-incident-investigations-tab.png":::
+:::image type="content" source="images/atp-incident-investigations-tab.png" alt-text="Olay ayrıntıları sayfasındaki araştırma sekmesi" lightbox="images/atp-incident-investigations-tab.png":::
 
-## <a name="going-through-the-evidence"></a>Kanıtın üzerinden geçerek
+## <a name="going-through-the-evidence"></a>Kanıtları gözden geçirerek
 
-Uç Nokta için Microsoft Defender, uyarılarda olayların tüm desteklenen olaylarını ve şüpheli varlıklarını otomatik olarak inceler ve önemli dosyalar, işlemler, hizmetler ve daha fazlası hakkında otomatik yanıt ve bilgi sağlar.
+Uç Nokta için Microsoft Defender, uyarılardaki tüm olayların desteklenen olaylarını ve şüpheli varlıkları otomatik olarak araştırır ve size otomatik yanıt ve önemli dosyalar, işlemler, hizmetler ve daha fazlası hakkında bilgi sağlar.
 
-Çözümlenen varlıkların her biri virüs bulaştırıldı, düzeltildi veya şüpheli olarak işaretlenir.
+Analiz edilen varlıkların her biri virüslü, düzeltilmiş veya şüpheli olarak işaretlenir.
 
 :::image type="content" source="images/atp-incident-evidence-tab.png" alt-text="Olay ayrıntıları sayfasındaki Kanıt sekmesi" lightbox="images/atp-incident-evidence-tab.png":::
 
-## <a name="visualizing-associated-cybersecurity-threats"></a>İlişkili siber güvenlik tehditlerini görselleştirme
+## <a name="visualizing-associated-cybersecurity-threats"></a>İlgili siber güvenlik tehditlerini görselleştirme
 
-Uç Nokta için Microsoft Defender tehdit bilgilerini bir olayda bir araya toplar ve böylece çeşitli veri noktalarından gelen desenleri ve korelasyonları görmek için kullanılır. Bu tür bağıntıyı olay grafiği aracılığıyla görüntüabilirsiniz.
+Uç Nokta için Microsoft Defender, çeşitli veri noktalarından gelen desenleri ve bağıntıları görebilmeniz için tehdit bilgilerini bir olay halinde toplar. Bu tür bağıntıları olay grafı üzerinden görüntüleyebilirsiniz.
 
 ### <a name="incident-graph"></a>Olay grafiği
 
-Güvenlik **Graph** siber güvenlik saldırılarının anlat olduğu bir anlatıdır. Örneğin, hangi giriş noktası olduğunu, hangi cihazda güvenliğin veya etkinliğin gözlenen bir göstergesini gösterir. vb.
+**Graph**, siber güvenlik saldırısının hikayesini anlatır. Örneğin, giriş noktasının ne olduğunu, hangi cihazda güvenliğin ihlal veya etkinliğin gözlemlendiği gösterilir. Vb.
 
 :::image type="content" source="images/atp-incident-graph-tab.png" alt-text="Olay grafiği" lightbox="images/atp-incident-graph-tab.png":::
 
-Olay grafiğinde çemberlere tıklayarak kötü amaçlı dosyaların ayrıntılarını, ilişkili dosya algılamalarını, dünya çapında kaç örnek olduğunu, kaç örnek olduğunu, bu durumda kaç örnek olduğunu, kuruluş içinde gözlemlenmiş olup olmadığını görebilirsiniz.
+Olay grafiğindeki dairelere tıklayarak kötü amaçlı dosyaların ayrıntılarını, ilişkili dosya algılamalarını, dünya çapında kaç örnek bulunduğunu, kuruluşunuzda gözlemlenip gözlemlenmediğini, varsa kaç örnek olduğunu görüntüleyebilirsiniz.
 
 :::image type="content" source="images/atp-incident-graph-details.png" alt-text="Olay ayrıntıları sayfası" lightbox="images/atp-incident-graph-details.png":::
 
 ## <a name="related-topics"></a>İlgili konular
 
 - [Olay sırası](/microsoft-365/security/defender-endpoint/view-incidents-queue)
-- [E-Uç Nokta için Microsoft Defender'daki olayları araştır](/microsoft-365/security/defender-endpoint/investigate-incidents)
-- [Olay Uç Nokta için Microsoft Defender yönetme](/microsoft-365/security/defender-endpoint/manage-incidents)
+- [Uç Nokta için Microsoft Defender'da olayları araştırma](/microsoft-365/security/defender-endpoint/investigate-incidents)
+- [Uç Nokta için Microsoft Defender olaylarını yönetme](/microsoft-365/security/defender-endpoint/manage-incidents)

@@ -2,7 +2,7 @@
 title: Microsoft Defender güncelleştirmeleri için aşamalı dağıtım işlemini yönetme
 description: Aşamalı güncelleştirme işlemi ve denetimleri hakkında bilgi edinin
 keywords: güncelleştirme, güncelleştirme işlemi, denetimler, yayın
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 8f1f2add8196afef6e8bd738586957d7fea15c84
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.subservice: m365d
+ms.openlocfilehash: f1be806e9a1a7c300f6a33244a69aae1dea77959
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416342"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521553"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Microsoft Defender güncelleştirmeleri için aşamalı dağıtım işlemini yönetme
 
@@ -48,7 +48,7 @@ Kritik koruma özellikleri sunmak ve saldırıları önlemek için istemci bile�
 Güncelleştirmeler, aşamalı bir sürüm işlemi kullanılarak aylık olarak yayımlanıyor. Bu işlem, ortaya çıkan etkiyi yakalamak ve daha büyük bir dağıtımdan önce hızlı bir şekilde ele almak için erken hata algılamayı etkinleştirmeye yardımcı olur.
 
 > [!NOTE]
-> Günlük güvenlik bilgileri güncelleştirmelerini denetleme hakkında daha fazla bilgi için bkz[. Microsoft Defender Virüsten Koruma koruma güncelleştirmelerini zamanlama](manage-protection-update-schedule-microsoft-defender-antivirus.md). Güncelleştirmeler, uç nokta için bulut tabanlı koruma sağlanmıyor olsa bile yeni nesil korumanın yeni tehditlere karşı koruma sağlayabilmesini sağlar.
+> Günlük güvenlik bilgileri güncelleştirmelerini denetleme hakkında daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma güncelleştirmelerini zamanlama](manage-protection-update-schedule-microsoft-defender-antivirus.md). Güncelleştirmeler, bulut tabanlı koruma uç nokta için mevcut olmasa bile yeni nesil korumanın yeni tehditlere karşı savunma sağlayabilmesini sağlar.
 
 ## <a name="microsoft-gradual-rollout-model"></a>Microsoft aşamalı dağıtım modeli
 
@@ -67,9 +67,9 @@ Makineleriniz Windows Update Defender güncelleştirmelerini alıyorsa aşamalı
 > [!NOTE]
 > Kendi aşamalı sürümünüzü planlarken, lütfen her zaman önizlemeye ve hazırlanmış kanallara abone olan cihazların bir seçimine sahip olduğunuzdan emin olun. Bu, hem kuruluşunuza hem de Microsoft'a ortamınıza özgü sorunları engelleme veya bulma ve düzeltme fırsatı sağlar.
 
-Windows Sunucu Güncelleştirme Hizmetleri (WSUS) veya Microsoft Endpoint Configuration Manager (MECM) gibi güncelleştirmeleri alan makineler için, tüm Windows güncelleştirmeleri için seçenekler de dahil olmak üzere daha fazla seçenek sağlanır Uç Nokta için Microsoft Defender.
+Windows Server Update Services (WSUS) veya Microsoft Endpoint Configuration Manager (MECM) gibi güncelleştirmeleri alan makineler için, Uç Nokta için Microsoft Defender seçenekleri de dahil olmak üzere tüm Windows güncelleştirmeleri için daha fazla seçenek sağlanır.
 
-- Güncelleştirmelerin dağıtımını ve uygulamasını yönetmek için WSUS, MECM gibi bir çözümün nasıl kullanılacağı hakkında daha fazla bilgi için [bkz. Microsoft Defender Virüsten Koruma güncelleştirmeleri yönetme ve temelleri uygulama - Windows güvenlik](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
+- Güncelleştirmelerin dağıtımını ve uygulamasını yönetmek için WSUS, MECM gibi bir çözümün nasıl kullanılacağı hakkında daha fazla bilgi için [Bkz. Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama - Windows güvenliği](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
 
 ## <a name="update-channels-for-monthly-updates"></a>Aylık güncelleştirmeler için kanalları güncelleştirme
 
@@ -85,7 +85,7 @@ Aşağıdaki güncelleştirme kanalları kullanılabilir:
 
 |Kanal adı|Açıklama|Uygulama|
 |---|---|---|
-|Beta Kanalı - Yayın Öncesi|Güncelleştirmeleri diğerlerinden önce test etme|Yeni aylık güncelleştirmeleri ilk alan cihazlar bu kanala ayarlanır. Sorunları tanımlama ve Microsoft'a raporlamaya katılmak için Beta Kanalı'na tıklayın. Windows Insider Programı cihazlar varsayılan olarak bu kanala abonedir. Yalnızca test ortamlarında kullanım için.|
+|Beta Kanalı - Yayın Öncesi|Güncelleştirmeleri diğerlerinden önce test etme|Yeni aylık güncelleştirmeleri ilk alan cihazlar bu kanala ayarlanır. Sorunları tanımlama ve Microsoft'a raporlamaya katılmak için Beta Kanalı'na tıklayın. Windows Insider Programı'ndaki cihazlar varsayılan olarak bu kanala abonedir. Yalnızca test ortamlarında kullanım için.|
 |Geçerli Kanal (Önizleme)|Geçerli Kanal güncelleştirmelerini aşamalı sürüm sırasında **daha önce** alın|Bu kanala ayarlanan cihazlara, aşamalı sürüm döngüsü boyunca en erken güncelleştirmeler sunulacaktır. Ön üretim/doğrulama ortamları için önerilir.|
 |Geçerli Kanal (Aşamalı)|Aşamalı sürüm sırasında Güncel Kanal güncelleştirmelerini daha sonra alın|Cihazlara daha sonra aşamalı sürüm döngüsü sırasında güncelleştirmeler sunulacaktır. Cihaz popülasyonunuzun küçük, temsili bir bölümüne (%10) başvurmanız önerilir.|
 |Geçerli Kanal (Geniş)|Aşamalı sürümün sonunda güncelleştirmeleri alma|Cihazlara yalnızca aşamalı sürüm döngüsü tamamlandıktan sonra güncelleştirmeler sunulacaktır. Üretim popülasyonunuzda (~%10-100) geniş bir cihaz kümesine uygulanması önerilir.|
@@ -140,7 +140,7 @@ Aylık güncelleştirmeler için kendi özel aşamalı dağıtım işleminizi ol
 Bu araçların nasıl kullanılacağı hakkında ayrıntılı bilgi için bkz. [Microsoft Defender güncelleştirmeleri için özel bir aşamalı dağıtım işlemi oluşturma](configure-updates.md).
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

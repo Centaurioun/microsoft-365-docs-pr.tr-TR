@@ -3,7 +3,7 @@ title: Uç Nokta için Microsoft Defender iş ortağı olun
 ms.reviewer: ''
 description: Çözümünüzü Uç Nokta için Microsoft Defender ile tümleştirme ve iş ortağı olma adımlarını ve gereksinimlerini öğrenin
 keywords: iş ortağı, tümleştirme, çözüm doğrulama, sertifikasyon, gereksinimler, üye, misa, uygulama portalı
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 276f411699f4a9db61850a04da3ff18d3c6bb2a7
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.subservice: mde
+ms.openlocfilehash: ed6664f71712c9200cb27b7bc4c466778c55c3bd
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051216"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523016"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Uç Nokta için Microsoft Defender iş ortağı olun
 

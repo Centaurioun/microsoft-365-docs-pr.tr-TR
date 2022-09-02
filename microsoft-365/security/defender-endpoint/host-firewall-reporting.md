@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender’da güvenlik duvarı raporlama oturumu düzenleyin
 description: Microsoft 365 Defender portalında güvenlik duvarı raporlamayı barındırın ve görüntüleyin.
 keywords: windows defender, güvenlik duvarı
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,15 +12,15 @@ ms.topic: article
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 0d541fe3d129f1533c6642a0eb34547245faa489
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 060e73e46a92b601560d716dde76aed48213bff6
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67301320"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522818"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender’da güvenlik duvarı raporlama oturumu düzenleyin
 

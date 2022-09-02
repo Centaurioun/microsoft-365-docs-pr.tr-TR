@@ -1,8 +1,8 @@
 ---
 title: iOS özelliklerinde Uç Nokta için Microsoft Defender dağıtma
-description: Kaydedilmemiş iOS cihazlarda Uç Nokta için Microsoft Defender nasıl dağıtılacağı açıklanır.
+description: Uç Nokta için Microsoft Defender kaydedilmemiş iOS cihazlarına nasıl dağıtılacağı açıklanır.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, ios, configure, features, ios
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 1d05f515ef1f2badcb6ba0bde69daa3fa2677434
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.subservice: mde
+ms.openlocfilehash: 14535c5bcf599d292be97d0bdbf2381eed066911
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873522"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67520939"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>Kaydedilmemiş iOS cihazlarda Uç Nokta için Microsoft Defender dağıtma
+# <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>Kaydı kaldırılmış iOS cihazlarda Uç Nokta için Microsoft Defender dağıtma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,15 +34,15 @@ ms.locfileid: "65873522"
 > Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
-> iOS'da Uç Nokta için Defender, Web Koruması özelliğini sağlamak için bir VPN kullanır. Bu normal bir VPN değildir ve cihazın dışına trafiği almayan yerel/kendi kendini döngüye alan bir VPN'dir.
+> iOS'ta Uç Nokta için Defender, Web Koruması özelliğini sağlamak için bir VPN kullanır. Bu normal bir VPN değildir ve cihazın dışına trafiği almayan yerel/kendi kendini döngüye alan bir VPN'dir.
 
 ## <a name="configure-microsoft-defender-for-endpoint-risk-signals-in-app-protection-policy-mam"></a>Uygulama koruma ilkesinde (MAM) Uç Nokta için Microsoft Defender risk sinyallerini yapılandırma
 
-Mobil Cihaz Yönetimi (MDM) senaryolarında kurumsal kullanıcıları zaten koruyan iOS'da Uç Nokta için Microsoft Defender, artık Intune mobil cihaz yönetimi (MDM) kullanılarak kaydedilmemiş cihazlar için Mobil Uygulama Yönetimi (MAM) desteğini genişletiyor. Ayrıca bu destek, mobil uygulama yönetimi (MAM) için Intune kullanırken diğer kurumsal mobil yönetim çözümlerini kullanan müşterilere de genişletir. Bu özellik, bir uygulama içindeki kuruluşunuzun verilerini yönetmenize ve korumanıza olanak tanır.
+Mobil Cihaz Yönetimi (MDM) senaryolarında kurumsal kullanıcıları zaten koruyan iOS'ta Uç Nokta için Microsoft Defender, artık Intune mobil cihaz yönetimi (MDM) kullanılarak kaydedilmemiş cihazlar için Mobil Uygulama Yönetimi (MAM) desteğini genişletiyor. Ayrıca bu destek, mobil uygulama yönetimi (MAM) için Intune kullanırken diğer kurumsal mobil yönetim çözümlerini kullanan müşterilere de genişletir. Bu özellik, bir uygulama içindeki kuruluşunuzun verilerini yönetmenize ve korumanıza olanak tanır.
 
-iOS tehdit bilgileriyle ilgili Uç Nokta için Microsoft Defender, bu uygulamaları korumak için Intune Uygulama Koruma İlkeleri tarafından kullanılır. Uygulama koruması ilkeleri (APP), kuruluşun verilerinin güvenli kalmasını veya yönetilen bir uygulamada yer almamasını sağlayan kurallardır. Yönetilen bir uygulamada uygulama koruma ilkeleri uygulanır ve Intune tarafından yönetilebilir.  
+iOS tehdit bilgilerindeki Uç Nokta için Microsoft Defender, bu uygulamaları korumak için Intune Uygulama Koruma İlkeleri tarafından kullanılır. Uygulama koruması ilkeleri (APP), kuruluşun verilerinin güvenli kalmasını veya yönetilen bir uygulamada yer almamasını sağlayan kurallardır. Yönetilen bir uygulamada uygulama koruma ilkeleri uygulanır ve Intune tarafından yönetilebilir.  
 
-iOS'da Uç Nokta için Microsoft Defender, MAM'ın her iki yapılandırmasını da destekler
+iOS'ta Uç Nokta için Microsoft Defender, MAM'ın her iki yapılandırmasını da destekler
 - **MDM + MAM Intune**: BT yöneticileri yalnızca Intune mobil cihaz yönetimi (MDM) ile kaydedilen cihazlarda Uygulama Koruma İlkelerini kullanarak uygulamaları yönetebilir.
 - **Cihaz kaydı olmadan MAM: Cihaz** kaydı olmayan MAM veya MAM-WE, BT yöneticilerinin Intune MDM'ye kayıtlı olmayan cihazlarda [Uygulama Koruma İlkeleri'ni](/mem/intune/apps/app-protection-policy) kullanarak uygulamaları yönetmesine olanak tanır. Bu, uygulamaların üçüncü taraf EMM sağlayıcılarıyla kaydedilen cihazlarda Intune tarafından yönetilebileceği anlamına gelir. Yukarıdaki yapılandırmaların her ikisinde de kullanarak uygulamaları yönetmek için müşterilerin [Microsoft Endpoint Manager yönetim merkezinde Intune](https://go.microsoft.com/fwlink/?linkid=2109431) kullanması gerekir
 
@@ -52,7 +52,7 @@ Son kullanıcıların Uç Nokta için Microsoft Defender cihazlarına yüklemek 
 
 ### <a name="pre-requisites"></a>Önkoşullar
 
-1. **Bağlayıcının etkinleştirildiğini doğrulayın**. <br> [Birleşik güvenlik konsolunda](https://security.microsoft.com) **Ayarlar** >  **Endpoints** > **Gelişmiş Özellikleri'ne** gidin ve **Microsoft Intune bağlantısının** etkinleştirildiğinden emin olun.
+1. **Bağlayıcının etkinleştirildiğini doğrulayın**. <br> [Birleşik güvenlik konsolunda](https://security.microsoft.com) **Ayarlar** > **Uç Noktaları** > **Gelişmiş Özellikler'e** gidin ve **Microsoft Intune bağlantısının** etkinleştirildiğinden emin olun.
 
   :::image type="content" source="images/enable-intune-connection.png" alt-text="Uç Nokta için Defender - Intune bağlayıcısı" lightbox="images/enable-intune-connection.png":::
 
@@ -79,13 +79,13 @@ Mobil uygulama yönetimi cihaz yönetimi gerektirmediğinden, şirket verilerini
     b. Uygulamalar'ı seçin<br>
     Yönetilen uygulama, uygulama koruma ilkelerinin uygulandığı ve Intune tarafından yönetilebilen bir uygulamadır. [Intune SDK](/mem/intune/developer/app-sdk) ile tümleştirilmiş veya Intune App Wrapping Tool tarafından sarmalanmış tüm uygulamalar Intune uygulama koruma İlkeleri kullanılarak [yönetilebilir.](/mem/intune/developer/apps-prepare-mobile-application-management) Bu araçlar kullanılarak oluşturulmuş ve genel kullanıma açık [Microsoft Intune korumalı uygulamaların](/mem/intune/apps/apps-supported-intune-apps) resmi listesine bakın.
 
-    *Örnek: yönetilen uygulama olarak Outlook*
+    *Örnek: Yönetilen uygulama olarak Outlook*
 
      :::image type="content" source="images/managed-app.png" alt-text="Sol gezinti bölmesindeki Microsoft Outlook menü öğesi" lightbox="images/managed-app.png":::
   
 
  3. Koruma ilkeniz için oturum açma güvenlik gereksinimlerini ayarlayın. <br>
-**Cihaz Koşulları'nda** **İzin verilen en yüksek cihaz tehdit düzeyi > Ayar'ı** seçin ve bir değer girin. Ardından  **Eylem: "Erişimi Engelle" seçeneğini** belirleyin. iOS'da Uç Nokta için Microsoft Defender bu Cihaz Tehdit Düzeyini paylaşır.
+**Cihaz Koşulları'nda** **İzin verilen en yüksek cihaz tehdit düzeyi > Ayar'ı** seçin ve bir değer girin. Ardından  **Eylem: "Erişimi Engelle" seçeneğini** belirleyin. iOS'ta Uç Nokta için Microsoft Defender bu Cihaz Tehdit Düzeyini paylaşır.
 
     
    :::image type="content" source="images/conditional-launch.png" alt-text="Cihaz koşulları bölmesi" lightbox="images/conditional-launch.png":::
@@ -94,10 +94,10 @@ Mobil uygulama yönetimi cihaz yönetimi gerektirmediğinden, şirket verilerini
   **Dahil edilen gruplar'ı** seçin. Ardından ilgili grupları ekleyin. 
 
 
-MAM veya uygulama koruma ilkesi hakkında daha fazla bilgi için bkz. [uygulama koruma ilkesi ayarlarını iOS](/mem/intune/apps/app-protection-policy-settings-ios).
+MAM veya uygulama koruma ilkesi hakkında daha fazla bilgi için bkz. [iOS uygulama koruma ilkesi ayarları](/mem/intune/apps/app-protection-policy-settings-ios).
 
 ## <a name="deploy-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>MAM için veya kaydı kaldırılmış cihazlarda Uç Nokta için Microsoft Defender dağıtma
 
-iOS'da Uç Nokta için Microsoft Defender, uygulama koruma ilkesi senaryosuna olanak tanır ve Apple uygulama mağazasında kullanılabilir.
+iOS'ta Uç Nokta için Microsoft Defender, uygulama koruma ilkesi senaryosuna olanak tanır ve Apple uygulama mağazasında kullanılabilir.
 
 Uygulamalar için uygulama koruma ilkeleri, Uç Nokta için Microsoft Defender cihaz risk sinyallerini içerecek şekilde yapılandırıldığında, kullanıcılar bu tür uygulamaları kullanırken Uç Nokta için Microsoft Defender yükleyecek şekilde yönlendirilir. Alternatif olarak, kullanıcılar uygulamanın en son sürümünü doğrudan Apple uygulama mağazasından da yükleyebilir.

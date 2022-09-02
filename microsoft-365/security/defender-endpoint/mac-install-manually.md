@@ -1,8 +1,8 @@
 ---
-title: macOS üzerinde Uç Nokta için Microsoft Defender için el ile dağıtım
-description: komut satırından Uç Nokta için Microsoft Defender macOS el ile yükleyin.
+title: macOS'ta Uç Nokta için Microsoft Defender için el ile dağıtım
+description: Uç Nokta için Microsoft Defender macOS'a komut satırından el ile yükleyin.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,15 +15,15 @@ ms.collection:
 - m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 68f91e4b8f789087aacea14b6b2a8a8b67262fd0
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.subservice: mde
+ms.openlocfilehash: 6abef7bbfffdf7e00a9921470476acfa24ef890b
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159629"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521685"
 ---
-# <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS üzerinde Uç Nokta için Microsoft Defender için el ile dağıtım
+# <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender için el ile dağıtım
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "66159629"
 
 > Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink).
 
-Bu konuda, Uç Nokta için Microsoft Defender macOS el ile nasıl dağıtılacağı açıklanmaktadır. Başarılı bir dağıtım için aşağıdaki adımların tümünün tamamlanması gerekir:
+Bu konuda, macOS'ta Uç Nokta için Microsoft Defender el ile nasıl dağıtılacağı açıklanmaktadır. Başarılı bir dağıtım için aşağıdaki adımların tümünün tamamlanması gerekir:
 
 - [Yükleme ve ekleme paketlerini indirme](#download-installation-and-onboarding-packages)
 - [Uygulama yüklemesi (macOS 10.15)](#application-installation-macos-1015)
@@ -43,13 +43,13 @@ Bu konuda, Uç Nokta için Microsoft Defender macOS el ile nasıl dağıtılaca�
 
 ## <a name="prerequisites-and-system-requirements"></a>Önkoşullar ve sistem gereksinimleri
 
-Başlamadan önce, geçerli yazılım sürümü için önkoşulların ve sistem gereksinimlerinin açıklaması için [macOS sayfasındaki ana Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md) bakın.
+Başlamadan önce, geçerli yazılım sürümü için önkoşulların ve sistem gereksinimlerinin açıklaması için [macOS'ta ana Uç Nokta için Microsoft Defender sayfasına](microsoft-defender-endpoint-mac.md) bakın.
 
 ## <a name="download-installation-and-onboarding-packages"></a>Yükleme ve ekleme paketlerini indirme
 
 Yükleme ve ekleme paketlerini Microsoft 365 Defender portalından indirin:
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a> **Ayarlar > Uç Noktaları > Cihaz yönetimi > Ekleme'ye** gidin.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a> **Ayarlar > Uç Noktalar > Cihaz yönetimi > Ekleme'ye** gidin.
 2. Sayfanın Bölüm 1'inde işletim sistemini **macOS** ve Dağıtım yöntemini **Yerel betik** olarak ayarlayın.
 3. Sayfanın 2. Bölümünde **Yükleme paketini indir'i** seçin. Yerel bir dizine wdav.pkg olarak kaydedin.
 4. Sayfanın 2. Bölümünde **Ekleme paketini indir'i** seçin. Aynı dizine WindowsDefenderATPOnboardingPackage.zip olarak kaydedin.
@@ -117,7 +117,7 @@ Bu işlemi tamamlamak için cihazda yönetici ayrıcalıklarına sahip olmanız 
 
 ## <a name="client-configuration"></a>İstemci yapılandırması
 
-1. macOS Uç Nokta için Microsoft Defender dağıttığınız cihaza wdav.pkg ve MicrosoftDefenderATPOnboardingMacOs.sh kopyalayın.
+1. macOS üzerinde Uç Nokta için Microsoft Defender dağıttığınız cihaza wdav.pkg ve MicrosoftDefenderATPOnboardingMacOs.sh kopyalayın.
 
     İstemci cihazı org_id ile ilişkili değildir. *org_id* özniteliğinin boş olduğunu unutmayın.
 
@@ -145,7 +145,7 @@ Bu işlemi tamamlamak için cihazda yönetici ayrıcalıklarına sahip olmanız 
 ## <a name="how-to-allow-full-disk-access"></a>Tam Disk Erişimine İzin Verme
 
 > [!CAUTION]
-> macOS 10.15 (Catalina) yeni güvenlik ve gizlilik geliştirmeleri içerir. Bu sürümden başlayarak, uygulamalar varsayılan olarak açık onay olmadan disk üzerindeki belirli konumlara (Belgeler, İndirmeler, Masaüstü vb.) erişemez. Bu onay olmadığında, Uç Nokta için Microsoft Defender cihazınızı tam olarak koruyamaz.
+> macOS 10.15 (Catalina), yeni güvenlik ve gizlilik geliştirmeleri içerir. Bu sürümden başlayarak, uygulamalar varsayılan olarak açık onay olmadan disk üzerindeki belirli konumlara (Belgeler, İndirmeler, Masaüstü vb.) erişemez. Bu onay olmadığında, Uç Nokta için Microsoft Defender cihazınızı tam olarak koruyamaz.
 
 1. Onay vermek için **Sistem Tercihleri** \> **Güvenliği & Gizlilik** \> **Gizliliği** \> **Tam Disk Erişimi'ni** açın. Değişiklik yapmak için kilit simgesine tıklayın (iletişim kutusunun en altında). Uç Nokta için Microsoft Defender'ı seçin.
 
@@ -171,7 +171,7 @@ Bu işlemi tamamlamak için cihazda yönetici ayrıcalıklarına sahip olmanız 
 
 3. Cihazın düzgün şekilde eklendiğini ve hizmete bildirildiğini doğrulamak için bir EDR algılama testi çalıştırın. Yeni eklenen cihazda aşağıdaki adımları gerçekleştirin:
 
-   1. Mac veya Safari için Microsoft Edge gibi tarayıcınızda.
+   1. Mac için Microsoft Edge veya Safari gibi tarayıcınızda.
 
    1. MDATP MacOS DIY.zip indirip https://aka.ms/mdatpmacosdiy ayıklayın.
 
@@ -190,7 +190,7 @@ Bu işlemi tamamlamak için cihazda yönetici ayrıcalıklarına sahip olmanız 
    > Çift tıklarsanız aşağıdaki iletiyi alırsınız:
    >
    > > **Geliştirici doğrulanamadığından "MDATP MacOS DIY" açılamıyor.**<br/>
-   > > macOS bu uygulamanın kötü amaçlı yazılım içermediğini doğrulayamıyor.<br/>
+   > > macOS, bu uygulamanın kötü amaçlı yazılımdan arındırıldığını doğrulayamıyor.<br/>
    > > **\[Çöp Sepeti\]** **\[İptaline\]** Taşı
 
 7. **İptal'e** tıklayın.
@@ -199,17 +199,17 @@ Bu işlemi tamamlamak için cihazda yönetici ayrıcalıklarına sahip olmanız 
 
     Sistem aşağıdaki iletiyi göstermelidir:
 
-    > **macOS MDATP MacOS DIY geliştiricisini doğrulayamıyor. Açmak istediğinizden emin misiniz?**<br/>
+    > **macOS, MDATP MacOS DIY geliştiricisini doğrulayamıyor. Açmak istediğinizden emin misiniz?**<br/>
     > Bu uygulamayı açarak, bilgisayarınızı ve kişisel bilgilerinizi Mac'inize zarar verebilecek veya gizliliğinizi tehlikeye atabilecek kötü amaçlı yazılımlara maruz bırakabilecek sistem güvenliğini geçersiz kılacaksınız.
 
-9. **Aç'a** tıklayın.
+9. **Aç**'ı tıklatın.
 
     Sistem aşağıdaki iletiyi göstermelidir:
 
     > Uç Nokta için Microsoft Defender - macOS EDR DIY test dosyası<br/>
     > İlgili uyarı MDATP portalında kullanılabilir.
 
-10. **Aç'a** tıklayın.
+10. **Aç**'ı tıklatın.
 
     Birkaç dakika içinde "macOS EDR Test Uyarısı" adlı bir uyarı tetiklenmelidir.
 
@@ -227,4 +227,4 @@ Bir hata oluştuğunda yükleyici tarafından oluşturulan otomatik olarak oluş
 
 ## <a name="uninstallation"></a>Kaldırma
 
-İstemci cihazlarından macOS Uç Nokta için Microsoft Defender kaldırma hakkında ayrıntılı bilgi için bkz. [Kaldırma](mac-resources.md#uninstalling).
+macOS'ta Uç Nokta için Microsoft Defender istemci cihazlarından kaldırma hakkında ayrıntılı bilgi için bkz. [Kaldırma](mac-resources.md#uninstalling).

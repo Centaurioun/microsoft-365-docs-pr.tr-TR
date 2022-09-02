@@ -2,7 +2,7 @@
 title: Dosyayla ilgili uyarılar API'lerini alma
 description: Uç Nokta için Microsoft Defender'da belirli bir dosya karması ile ilgili uyarıların bir koleksiyonunu almak için Dosyayla ilgili uyarıları al API'sini kullanmayı öğrenin.
 keywords: api'ler, graf api'leri, desteklenen API'ler, alma, dosya, karma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 35b07504d393bca3c36608b841b259914cd5fcd0
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: a4a4a490354ab0307a2508564d1d10d776999583
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327013"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521773"
 ---
 # <a name="get-file-related-alerts-api"></a>Dosyayla ilgili uyarılar API'lerini alma
 

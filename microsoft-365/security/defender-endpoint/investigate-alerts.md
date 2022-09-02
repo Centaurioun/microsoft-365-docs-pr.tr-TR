@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender uyarılarını araştırma
 description: Ağınızı etkileyen uyarılar, bunların ne anlama gelenleri ve bunların nasıl çözüleceğini öğrenmek için araştırma seçeneklerini kullanın.
 keywords: araştırma, araştırma, cihazlar, cihaz, uyarılar kuyruğu, pano, IP adresi, dosya, gönderme, gönderimler, derin analiz, zaman çizelgesi, arama, etki alanı, URL, IP
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,24 +16,24 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
-ms.technology: mde
-ms.openlocfilehash: e4d379ee476276d24b683878bc4978addf220ced
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.subservice: mde
+ms.openlocfilehash: a2bc1b44cc49e2ded0a3079360436df2880b2f58
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665810"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522972"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de uyarıları araştırma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Şunlar için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimlemek mi istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatealerts-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatealerts-abovefoldlink)
 
 Ağınızı etkileyen uyarıları araştırın, bunların ne anlama geldiğini ve bunların nasıl çözümlendiğini anlayın.
 

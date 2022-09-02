@@ -2,7 +2,7 @@
 title: Uyarı ile ilgili kullanıcı bilgilerini al
 description: Uç Nokta için Microsoft Defender'da belirli bir uyarıyla ilgili kullanıcıyı almak için Uyarıyla ilgili kullanıcı bilgilerini alma API'sini kullanmayı öğrenin.
 keywords: apis, graph api, desteklenen API'ler, alma, uyarı, bilgi, ilgili, kullanıcı
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 7650be579cc3276308044754be6720e6c6dcf0f3
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 8ac4ab4ddc66e00875eaa6460d99ecaffa4de2b9
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326111"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522355"
 ---
 # <a name="get-alert-related-user-information-api"></a>Uyarıyla ilgili kullanıcı bilgileri API'si alma
 

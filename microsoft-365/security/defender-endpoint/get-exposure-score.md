@@ -2,7 +2,7 @@
 title: Hassaslık puanı al
 description: Kurumsal maruz kalma puanını alır.
 keywords: api'ler, graf api'leri, desteklenen API'ler, alma, maruz kalma puanı, kurumsal maruz kalma puanı
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 2bc2ab5d622b064e22c868b46a39b1fb3c68e1a0
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 7d528e9c4ddd09037e0dc6d9dc839cfd031a1457
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67345227"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523654"
 ---
 # <a name="get-exposure-score"></a>Hassaslık puanı al
 

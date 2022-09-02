@@ -2,7 +2,7 @@
 title: Mac'te Uç Nokta için Microsoft Defender için farklı bir Mobil Cihaz Yönetimi (MDM) sistemiyle dağıtım
 description: Mac'e diğer yönetim çözümlerine Uç Nokta için Microsoft Defender yükleyin.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,29 +14,29 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 2fa64ee9822fe1f784788e2d1ead79e66eb200ef
-ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
+ms.subservice: mde
+ms.openlocfilehash: 016293cb17675a90fd9f8ac49824d721154fd921
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65349748"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521641"
 ---
-# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'da Uç Nokta için Microsoft Defender için farklı bir Mobil Cihaz Yönetimi (MDM) sistemiyle dağıtım
+# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender için farklı bir Mobil Cihaz Yönetimi (MDM) sistemiyle dağıtım
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Şunlar için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimlemek mi istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## <a name="prerequisites-and-system-requirements"></a>Önkoşullar ve sistem gereksinimleri
 
-Başlamadan önce, geçerli yazılım sürümü için önkoşulların ve sistem gereksinimlerinin açıklaması için [macOS sayfasındaki ana Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md) bakın.
+Başlamadan önce, geçerli yazılım sürümü için önkoşulların ve sistem gereksinimlerinin açıklaması için [macOS'ta ana Uç Nokta için Microsoft Defender sayfasına](microsoft-defender-endpoint-mac.md) bakın.
 
 
 ## <a name="approach"></a>Yaklaşım
@@ -45,12 +45,12 @@ Başlamadan önce, geçerli yazılım sürümü için önkoşulların ve sistem 
 
 > Şu anda Microsoft, macOS üzerinde Uç Nokta için Microsoft Defender dağıtımı ve yönetimi için yalnızca Intune ve JAMF'yi resmi olarak desteklemektedir. Microsoft, aşağıda verilen bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
 
-Kuruluşunuz resmi olarak desteklenmeyen bir Mobil Cihaz Yönetimi (MDM) çözümü kullanıyorsa bu, macOS Uç Nokta için Microsoft Defender dağıtamadığınız veya çalıştıramadığınız anlamına gelmez.
+Kuruluşunuz resmi olarak desteklenmeyen bir Mobil Cihaz Yönetimi (MDM) çözümü kullanıyorsa bu, macOS üzerinde Uç Nokta için Microsoft Defender dağıtamadığınız veya çalıştıramadığınız anlamına gelmez.
 
-macOS Uç Nokta için Microsoft Defender satıcıya özgü özelliklere bağlı değildir. Aşağıdaki özellikleri destekleyen herhangi bir MDM çözümüyle kullanılabilir:
+macOS'ta Uç Nokta için Microsoft Defender satıcıya özgü özelliklere bağlı değildir. Aşağıdaki özellikleri destekleyen herhangi bir MDM çözümüyle kullanılabilir:
 
-- Yönetilen cihazlara bir macOS .pkg dağıtın.
-- Yönetilen cihazlara macOS sistem yapılandırma profilleri dağıtın.
+- Yönetilen cihazlara macOS .pkg dağıtın.
+- Yönetilen cihazlara macOS sistem yapılandırma profillerini dağıtın.
 - Yönetilen cihazlarda rastgele yönetici tarafından yapılandırılmış bir araç/betik çalıştırın.
 
 Modern MDM çözümlerinin çoğu bu özellikleri içerir, ancak bunları farklı şekilde adlandırabilirler.
@@ -62,7 +62,7 @@ Ancak, uç nokta için Defender'ı önceki listeden son gereksinim olmadan dağ�
 
 ## <a name="deployment"></a>Dağıtım
 
-Çoğu MDM çözümü, benzer terminolojiye sahip macOS cihazları yönetmek için aynı modeli kullanır. [ŞABLON olarak JAMF tabanlı dağıtımı](mac-install-with-jamf.md) kullanın.
+Çoğu MDM çözümü, benzer terminolojiye sahip macOS cihazlarını yönetmek için aynı modeli kullanır. [ŞABLON olarak JAMF tabanlı dağıtımı](mac-install-with-jamf.md) kullanın.
 
 ### <a name="package"></a>Paket
 
@@ -74,7 +74,7 @@ Paketi kuruluşunuza dağıtmak için MDM çözümünüzle ilişkili yönergeler
 
 [Bir sistem yapılandırma profili](mac-install-with-jamf.md) ayarlayın. 
 
-MDM çözümünüz buna "Özel Ayarlar Profili" gibi bir ad verebilir; macOS Uç Nokta için Microsoft Defender macOS parçası değildir.
+macOS'ta Uç Nokta için Microsoft Defender macOS'un bir parçası olmadığından MDM çözümünüz buna "Özel Ayarlar Profili" gibi bir ad verebilir.
 
 [Microsoft 365 Defender portalından](mac-install-with-jamf.md) indirilen bir ekleme paketinden ayıklanabilen jamf/WindowsDefenderATPOnboarding.plist özellik listesini kullanın.
 Sisteminiz XML biçiminde rastgele bir özellik listesini destekleyemeyebilir. Bu durumda jamf/WindowsDefenderATPOnboarding.plist dosyasını olduğu gibi karşıya yükleyebilirsiniz.
@@ -114,7 +114,7 @@ Aşağıdaki bileşenlere Tam Disk Erişimi verin:
 
 ### <a name="network-extension-policy"></a>Ağ uzantısı ilkesi
 
-Uç Nokta Algılama ve Yanıt özelliklerinin bir parçası olarak macOS'da Uç Nokta için Microsoft Defender yuva trafiğini inceler ve bu bilgileri Microsoft 365 Defender portalına bildirir. Aşağıdaki ilke, ağ uzantısının bu işlevi gerçekleştirmesine izin verir.
+Uç Nokta Algılama ve Yanıt özelliklerinin bir parçası olarak macOS'ta Uç Nokta için Microsoft Defender yuva trafiğini inceler ve bu bilgileri Microsoft 365 Defender portalına bildirir. Aşağıdaki ilke, ağ uzantısının bu işlevi gerçekleştirmesine izin verir.
 
 - Filtre türü: Eklenti
 - Eklenti paketi tanımlayıcısı: `com.microsoft.wdav`

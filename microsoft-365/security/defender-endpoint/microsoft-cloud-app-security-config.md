@@ -1,9 +1,9 @@
 ---
-title: Bulut Uygulamaları tümleştirmesi için Microsoft Defender'ı yapılandırma
+title: Bulut Uygulamaları için Microsoft Defender tümleştimesini yapılandırın
 ms.reviewer: ''
-description: Bulut Uygulamaları için Microsoft Defender ile Uç Nokta Tümleştirmesi için Microsoft Defender'ı etkinleştirmek üzere ayarları nasıl açabilirsiniz hakkında bilgi edinin.
-keywords: bulut, uygulama, güvenlik, ayarlar, tümleştirme, keşif, rapor
-ms.prod: m365-security
+description: Microsoft Defender for Cloud Apps ile Uç Nokta için Microsoft Defender tümleştirmesini etkinleştirmek için ayarları açmayı öğrenin.
+keywords: bulut, uygulama, güvenlik, ayarlar, tümleştirme, bulma, rapor
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,49 +14,49 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bd90c31ef961653e166672d1417003df2707e4c6
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.subservice: mde
+ms.openlocfilehash: 5397270c88b090f500f77c108c8b9b9cfdc1be00
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "63019068"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521795"
 ---
-# <a name="configure-microsoft-defender-for-cloud-apps-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da Bulut Uygulamaları için Microsoft Defender'ı yapılandırma
+# <a name="configure-microsoft-defender-for-cloud-apps-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da Microsoft Defender for Cloud Apps yapılandırma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Uç nokta bulut uygulaması bulma sinyallerinden Microsoft Defender'ın avantajından yararlanmak için Bulut Uygulamaları için Microsoft Defender tümleştirmesini açın.
+Uç Nokta için Microsoft Defender bulut uygulaması bulma sinyallerinden yararlanmak için Microsoft Defender for Cloud Apps tümleştirmeyi açın.
 
 > [!NOTE]
-> Bu özellik, Windows 10 ve Windows 11 çalıştıran cihazlarda Enterprise Mobility + Security [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) için E5 lisansı ile kullanılabilir olacak.
+> Bu özellik, [Windows 10 ve Windows 11](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) çalıştıran cihazlarda Enterprise Mobility + Security için bir E5 lisansı ile kullanılabilir.
 
 > [!TIP]
-> Bulut [Uygulamaları için Microsoft Defender ile Uç Nokta için Microsoft Defender](/cloud-app-security/mde-integration) tümleştirmesi hakkında ayrıntılı bilgi için bkz. Bulut Uygulamaları için Microsoft Defender ile Uç Nokta tümleştirmesi.
+> Uç Nokta için Microsoft Defender ile ayrıntılı [tümleştirme](/cloud-app-security/mde-integration) için bkz. Microsoft Defender for Cloud Apps ile Uç Nokta için Microsoft Defender tümleştirmesi Microsoft Defender for Cloud Apps.
 
-## <a name="enable-microsoft-defender-for-cloud-apps-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da Bulut Uygulamaları için Microsoft Defender'ı Etkinleştirme
+## <a name="enable-microsoft-defender-for-cloud-apps-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da Microsoft Defender for Cloud Apps etkinleştirme
 
-1. Gezinti bölmesinde Tercihler kurulumu Gelişmiş **özellikler'i** \> **seçin**.
-2. Bulut **Uygulamaları için Microsoft Defender'ı** seçin ve iki durumlu düğmeyi Açık olarak **seçin**.
-3. Kaydetme **tercihleri'ne tıklayın**.
+1. Gezinti bölmesinde **Tercihler kurulumu** \> **Gelişmiş özellikler'i** seçin.
+2. **Microsoft Defender for Cloud Apps'ı** seçin ve iki durumlu düğmeyi **Açık** olarak değiştirin.
+3. **Tercihleri kaydet'e** tıklayın.
 
-Etkinleştirildikten sonra, Uç Nokta için Microsoft Defender, bulut uygulamaları için Defender'a keşif sinyalleri iletmeye hemen başlar.
+etkinleştirildikten sonra Uç Nokta için Microsoft Defender bulma sinyallerini Cloud Apps için Defender'a iletmeye hemen başlar.
 
 ## <a name="view-the-data-collected"></a>Toplanan verileri görüntüleme
 
-Microsoft Bulut Uygulamaları Güvenliğinde Uç Nokta verileri için Microsoft Defender'ı görüntülemek ve bu verilere erişmek için bkz [. Bulut Uygulamaları için Defender'da cihazları araştırma](/cloud-app-security/mde-integration#investigate-devices-in-cloud-app-security).
+Microsoft Cloud Apps Security'de Uç Nokta için Microsoft Defender verileri görüntülemek ve verilere erişmek için bkz[. Cloud Apps için Defender'da cihazları araştırma](/cloud-app-security/mde-integration#investigate-devices-in-cloud-app-security).
 
-Bulut bulma hakkında daha fazla bilgi için bkz [. Bulunan uygulamalarla çalışma](/cloud-app-security/discovered-apps).
+Bulut bulma hakkında daha fazla bilgi için bkz. [Bulunan uygulamalarla çalışma](/cloud-app-security/discovered-apps).
 
-Bulut Uygulamaları için Microsoft Defender'ı deneme ilginizi çekiyorsa bkz. [Bulut Uygulamaları için Microsoft Defender Deneme](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1).
+Microsoft Defender for Cloud Apps denemek istiyorsanız bkz. [deneme Microsoft Defender for Cloud Apps](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1).
 
 ## <a name="related-topic"></a>İlgili konu
 
-- [Bulut Uygulamaları tümleştirmesi için Microsoft Defender](microsoft-cloud-app-security-integration.md)
+- [Microsoft Defender for Cloud Apps tümleştirmesi](microsoft-cloud-app-security-integration.md)

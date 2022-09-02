@@ -9,7 +9,7 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
 - next-gen
@@ -17,13 +17,13 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.date: 08/19/2022
 ms.collection: m365-security-compliance
-ms.technology: mde
-ms.openlocfilehash: bc15acb2a78350cff367e33f26f47e283c8b07b8
-ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
+ms.subservice: mde
+ms.openlocfilehash: b05e5a0e79c194d93106fd71256d05361f741fea
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67392746"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523390"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Blok modunda uç nokta algılama ve yanıt (EDR)
 

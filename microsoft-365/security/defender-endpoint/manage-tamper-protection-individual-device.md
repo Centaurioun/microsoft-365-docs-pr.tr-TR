@@ -5,7 +5,7 @@ manager: dansimp
 description: Tek bir cihaz için kurcalama korumasını açın veya kapatın.
 keywords: kötü amaçlı yazılım, defender, virüsten koruma, kurcalama koruması
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -16,16 +16,16 @@ ms.author: deniseb
 ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
-ms.technology: mde
+ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 3922ab332d2cb974b6e2f3cdc464b6d343bfeab0
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 82e5c255d73aaf9ef851b202be45c79e84a2e380
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67389467"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521509"
 ---
 # <a name="manage-tamper-protection-on-an-individual-device"></a>Tek bir cihazda kurcalama korumasını yönetme
 

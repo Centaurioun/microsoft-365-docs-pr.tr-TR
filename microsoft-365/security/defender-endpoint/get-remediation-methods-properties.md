@@ -2,7 +2,7 @@
 title: Düzeltme etkinliği yöntemleri ve özellikleri
 description: API yanıtı, kiracınızda oluşturulan Microsoft Defender Güvenlik Açığı Yönetimi düzeltme etkinliklerini içerir. Seçilen bir düzeltme görevi için tüm düzeltme etkinliklerini, yalnızca bir düzeltme etkinliğini veya kullanıma sunulan cihazlarla ilgili bilgileri isteyebilirsiniz.
 keywords: api'ler, düzeltme, düzeltme api'leri, alma, düzeltme görevleri, düzeltme yöntemleri, düzeltme özellikleri,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: c39153ce23adeec598fef7234c4b90592067d116
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: a70ddbcb8147b8618c559e912d5bef139c12ab42
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344865"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524182"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Düzeltme etkinliği yöntemleri ve özellikleri
 

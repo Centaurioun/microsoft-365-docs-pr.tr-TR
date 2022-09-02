@@ -2,7 +2,7 @@
 title: Saldırı yüzeyi azaltma kurallarını etkinleştirme
 description: Cihazlarınızı makro, betik ve yaygın ekleme teknikleri kullanan saldırılara karşı korumak için saldırı yüzeyi azaltma (ASR) kurallarını etkinleştirin.
 keywords: Saldırı yüzeyi azaltma, kalçalar, konak izinsiz giriş önleme sistemi, koruma kuralları, anti-exploit, antiexploit, exploit, enfeksiyon önleme, etkinleştirme, açma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,18 +12,18 @@ author: jweston-1
 ms.author: v-jweston
 ms.reviewer: oogunrinde
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: a34ee4f16bb6bc98e14ede15df98ceedb7f4dec8
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 7425579656cfcf4549d8b1330d62c40b10bc07cc
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388649"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521905"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Saldırı yüzeyi azaltma kurallarını etkinleştirme
 

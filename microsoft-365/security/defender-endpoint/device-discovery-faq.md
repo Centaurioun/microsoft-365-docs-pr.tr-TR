@@ -2,7 +2,7 @@
 title: Cihaz bulma hakkında sık sorulan sorular
 description: Cihaz bulma hakkında sık sorulan soruların (SSS) yanıtlarını bulma
 keywords: cihaz bulma, bulma, pasif, proaktif, ağ, görünürlük, sunucu, iş istasyonu, ekleme, yönetilmeyen cihazlar
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 54a1b816f3d1322cab5558e5bd09d5d9b4285ae8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.subservice: m365d
+ms.openlocfilehash: d33cccb219c262fb472a99b21e9071fdf2bb27c7
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665018"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522752"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Cihaz bulma hakkında sık sorulan sorular
 
@@ -59,7 +59,7 @@ Evet, yönetilmeyen cihazları cihaz envanter listesinden dışlamak için filtr
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>Hangi eklenen cihazlar bulma gerçekleştirebilir?
 
-Windows 10 sürüm 1809 veya üzeri, Windows 11, Windows Server 2019 veya Windows Server 2022 üzerinde çalışan eklenen cihazlar bulma gerçekleştirebilir.
+Windows 10 sürüm 1809 veya üzeri, Windows 11, Windows Server 2019 veya Windows Server 2022'de çalışan eklenen cihazlar bulma gerçekleştirebilir.
 
 ## <a name="what-happens-if-my-onboarded-devices-is-connected-to-my-home-network-or-to-public-access-point"></a>Eklenen cihazlarım ev ağıma veya genel erişim noktasına bağlıysa ne olur?
 
@@ -114,9 +114,9 @@ Gerçek durumları ne olursa olsun, cihaz envanterinin standart saklama süresi 
 
 Standart bulmayı değerlendirirken, yoklamanın etkilerini ve özellikle güvenlik araçlarının kötü amaçlı etkinlik gibi etkinliklerden şüphelenip şüphelenmeyeceğini merak ediyor olabilirsiniz. Aşağıdaki alt bölüm, neredeyse tüm durumlarda kuruluşların Standart bulmayı etkinleştirme konusunda neden endişeleri olmaması gerektiğini açıklar.  
 
-### <a name="probing-is-distributed-across-all-windows-devices-on-the-network"></a>Yoklama, ağdaki tüm Windows cihazlara dağıtılır
+### <a name="probing-is-distributed-across-all-windows-devices-on-the-network"></a>Yoklama, ağdaki tüm Windows cihazlarına dağıtılır
 
-Genellikle az sayıda güvenliği aşılmış cihazdan ağın tamamını tarayan kötü amaçlı etkinliklerin aksine, Uç Nokta için Microsoft Defender Standart bulma yoklama işlemi, etkinliği zararsız ve anormal olmayan hale getiren tüm eklenen Windows cihazlardan başlatılır. Yoklama, ağdaki desteklenen tüm eklenen cihazlar arasında yoklama girişimini dengelemek için buluttan merkezi olarak yönetilir.  
+Genellikle az sayıda güvenliği aşılmış cihazdan ağın tamamını tarayan kötü amaçlı etkinliklerin aksine, Uç Nokta için Microsoft Defender Standart bulma yoklama işlemi, etkinliği zararsız ve anormal olmayan hale getiren tüm eklenen Windows cihazlarından başlatılır. Yoklama, ağdaki desteklenen tüm eklenen cihazlar arasında yoklama girişimini dengelemek için buluttan merkezi olarak yönetilir.  
 
 ### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>Etkin yoklama göz ardı edilebilir miktarda ek trafik oluşturur
 
@@ -126,7 +126,7 @@ Yönetilmeyen cihazlar genellikle üç haftalık bir süre içinde en fazla bir 
 
 Etkin bulma özellikleri, ağdaki uç noktalar arasında daha kolay "tak çalıştır" deneyimleri ve dosya paylaşımı için yakındaki cihazları, uç noktaları ve yazıcıları bulmak için her zaman Windows işletim sistemine eklenmiştir. Benzer işlevler mobil cihazlarda, ağ ekipmanında ve envanter uygulamalarında yalnızca birkaç adla uygulanır.  
 
-Standart bulma, cihazları tanımlamak ve Microsoft 365 Defender Cihaz Envanteri'nde ağınızdaki tüm cihazlar için birleşik görünürlüğe sahip olmak için aynı bulma yöntemlerini kullanır. Örneğin– Standart bulma, ağdaki yakın uç noktaları ağdaki kullanılabilir yazıcıları Windows şekilde tanımlar. 
+Standart bulma, cihazları tanımlamak ve Microsoft 365 Defender Cihaz Envanteri'nde ağınızdaki tüm cihazlar için birleşik görünürlüğe sahip olmak için aynı bulma yöntemlerini kullanır. Örneğin– Standart bulma, ağdaki yakındaki uç noktaları Windows'un ağdaki kullanılabilir yazıcıları listelediği gibi tanımlar. 
 
 Ağ güvenliği ve izleme araçları, ağdaki cihazlar tarafından gerçekleştirilen bu tür etkinliklere kayıtsızdır. 
 

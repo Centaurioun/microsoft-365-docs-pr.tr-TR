@@ -2,7 +2,7 @@
 title: MachineActions API'sini listeleme
 description: Uç Nokta için Microsoft Defender'da Makine Eylemleri koleksiyonunu almak için List MachineActions API'sini kullanmayı öğrenin.
 keywords: api'ler, graf api'leri, desteklenen API'ler, machineaction koleksiyonu
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 2cabdbc069e1d8a4efdb1bd3e931b12f0fe2f963
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 85b3758d77430ffa9e7664c9079f25140d1b454a
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325402"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67523544"
 ---
 # <a name="list-machineactions-api"></a>MachineActions API'sini listeleme
 

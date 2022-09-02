@@ -1,8 +1,8 @@
 ---
-title: Olay yanıtını önceliklendirmek için duyarlılık etiketlerini kullanma
-description: Olayları önceliklendirmek ve araştırmak için duyarlılık etiketlerini kullanmayı öğrenin
+title: Olay yanıtına öncelik tanımak için duyarlılık etiketlerini kullanın
+description: Olaylara öncelik vermek ve olayları araştırmak için duyarlılık etiketlerini kullanmayı öğrenin
 keywords: bilgi, koruma, veri, kayıp, önleme,etiketler, dlp, olay, araştırma, araştırma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,43 +13,43 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 465c149e3ad82384b574b43c66da917a46e4a2ce
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 09dccdfcfc42d3d5995269e0d0f2666fabb0852d
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474167"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521027"
 ---
-# <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>Olay yanıtını önceliklendirmek için duyarlılık etiketlerini kullanma
+# <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>Olay yanıtına öncelik tanımak için duyarlılık etiketlerini kullanın
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Tipik bir kalıcı gelişmiş tehdit yaşam döngüsü, veri sızıntısını içerir. Bir güvenlik olayında, kurumsal verilerin ve bilgilerin korunması için hassas dosyaların tehlikeye atıldığı soruşturmalara öncelik sırasına sahip olmak önemlidir.
+Tipik bir gelişmiş kalıcı tehdit yaşam döngüsü, veri sızdırmayı içerir. Bir güvenlik olayında, şirket verilerinin ve bilgilerinin korunması için hassas dosyaların tehlikeye atılacağı araştırmalara öncelik verebilmek önemlidir.
 
-Uç Nokta için Defender, duyarlılık etiketlerinin kullanımıyla güvenlik olaylarının önceliklendirmesini çok daha basit hale getirmek için yardımcı olur. Duyarlılık etiketleri, gizli bilgiler gibi hassas bilgilerle ilgili cihazlarla ilgili olayları hızla tanır.
+Uç Nokta için Defender, duyarlılık etiketlerinin kullanılmasıyla güvenlik olaylarının önceliklendirilmesini çok daha basit hale getirmeye yardımcı olur. Duyarlılık etiketleri, gizli bilgiler gibi hassas bilgilere sahip cihazları içerebilecek olayları hızla tanımlar.
 
 ## <a name="investigate-incidents-that-involve-sensitive-data"></a>Hassas veriler içeren olayları araştırma
 
-Olay araştırmalarını önceliklendirmek için veri duyarlılığı etiketlerini kullanmayı öğrenin.
+Olay araştırmasına öncelik vermek için veri duyarlılığı etiketlerini kullanmayı öğrenin.
 
 > [!NOTE]
-> Etiketler, etiket Windows 10, sürüm 1809 sonrası için algılanır ve Windows 11.
+> Etiketler Windows 10, sürüm 1809 veya üzeri için algılandı ve Windows 11.
 
-1. Portalda Microsoft 365 Defender Olayları **ve Uyarıları &'ı** \> **seçin**.
+1. Microsoft 365 Defender portalında **Olaylar & uyarılar** \> **Olaylar'ı** seçin.
 
-2. Veri duyarlılığı sütununu görmek için **ekranı sağa kaydırın** . Bu sütun, olaylarla ilgili cihazlarda gözlemlenen duyarlılık etiketlerini yansıtmalı ve hassas dosyaların olaydan etkilenebilir olup olmadığının göstergesini sağlar.
+2. **Veri duyarlılığı** sütununu görmek için sağa kaydırın. Bu sütun, olaylarla ilgili cihazlarda gözlemlenen duyarlılık etiketlerini yansıtır ve hassas dosyaların olaydan etkilenip etkilenmeyebileceğini gösterir.
 
    :::image type="content" source="images/data-sensitivity-column.png" alt-text="Veri duyarlılığı sütunundaki Çok gizli seçeneği" lightbox="images/data-sensitivity-column.png":::
 
-    Ayrıca, Veri duyarlılığına dayalı **olarak filtre de ebilirsiniz**
+    **Ayrıca Veri duyarlılığına** göre filtreleyebilirsiniz
 
     :::image type="content" source="images/data-sensitivity-filter.png" alt-text="Veri duyarlılığı filtresi" lightbox="images/data-sensitivity-filter.png":::
 
@@ -57,15 +57,15 @@ Olay araştırmalarını önceliklendirmek için veri duyarlılığı etiketleri
 
    :::image type="content" source="images/incident-page.png" alt-text="Olay sayfası ayrıntıları" lightbox="images/incident-page.png":::
 
-4. Duyarlılık etiketleri **olan** dosyaların depolanması cihazlarını tanımlamak için Cihazlar sekmesini seçin.
+4. Duyarlılık etiketlerine sahip dosyaları depolayacak cihazları belirlemek için **Cihazlar** sekmesini seçin.
 
    :::image type="content" source="images/investigate-devices-tab.png" alt-text="Cihaz sekmesi" lightbox="images/investigate-devices-tab.png":::
 
-5. Hassas verileri depoyan cihazları seçin ve hangi dosyaların etki olacağını belirlemek için zaman çizelgesinde arama ekleyin, sonra verilerin korunmasını sağlamak için uygun önlemleri alabilirsiniz.
+5. Hassas verileri depolayan cihazları seçin ve hangi dosyaların etkilenebileceğini belirlemek için zaman çizelgesinde arama yapın ve ardından verilerin korunduğundan emin olmak için uygun eylemi gerçekleştirin.
 
-   Veri duyarlılığı etiketlerini arayarak cihaz zaman çizelgesinde gösterilen etkinlikleri daraltabilirsiniz. Bunu yapmak yalnızca etiket adı adı olan dosyalarla ilişkilendirilmiş olayları gösterir.
+   Veri duyarlılığı etiketlerini arayarak cihaz zaman çizelgesinde gösterilen olayları daraltabilirsiniz. Bunu yaptığınızda yalnızca etiket adı yazan dosyalarla ilişkili olaylar gösterilir.
 
-   :::image type="content" source="images/machine-timeline-labels.png" alt-text="Etikete göre arama sonuçlarını daraltmış olarak cihaz zaman çizelgesi" lightbox="images/machine-timeline-labels.png":::
+   :::image type="content" source="images/machine-timeline-labels.png" alt-text="Etikete göre daraltılmış arama sonuçlarına sahip cihaz zaman çizelgesi" lightbox="images/machine-timeline-labels.png":::
 
 > [!TIP]
-> Bu veri noktaları ayrıca gelişmiş avlarda 'DeviceFileEvents' aracılığıyla da ortaya çıkar ve gelişmiş sorguların ve algılamanın hesap duyarlılığı etiketlerini ve dosya koruma durumunu dikkate almalarını sağlar.
+> Bu veri noktaları gelişmiş avlanmada 'DeviceFileEvents' aracılığıyla da kullanıma sunulur ve gelişmiş sorguların ve zamanlama algılamanın duyarlılık etiketlerini ve dosya koruma durumunu dikkate almasını sağlar.

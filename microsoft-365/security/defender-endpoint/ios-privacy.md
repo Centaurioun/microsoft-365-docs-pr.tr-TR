@@ -2,8 +2,8 @@
 title: Gizlilik bilgileri - iOS'ta Uç Nokta için Microsoft Defender
 ms.reviewer: ''
 description: iOS'ta Uç Nokta için Microsoft Defender gizlilik bilgilerini açıklar
-keywords: microsoft, defender, Endpoint için Microsoft Defender, ios, ilke, genel bakış
-ms.prod: m365-security
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, ios, ilke, genel bakış
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,74 +15,74 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 4fc5d4fb51170a70edc8664d5ccba0943b93353d
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.subservice: mde
+ms.openlocfilehash: 64525457c63930876a729888aa5a8d5575894b45
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "62997032"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522664"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Gizlilik bilgileri - iOS'ta Uç Nokta için Microsoft Defender
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
-> iOS'ta Uç Nokta için Defender Web Koruma özelliğini sağlamak için VPN kullanır. Bu normal bir VPN değildir ve trafiği cihazın dışına almayan yerel veya kendi kendine döngülü bir VPN'tir. **Microsoft veya organizasyon, gözatma etkinliğinizi görmüyor.**
+> iOS'ta Uç Nokta için Defender, Web Koruması özelliğini sağlamak için bir VPN kullanır. Bu normal bir VPN değildir ve cihazın dışına trafik almayan yerel veya kendi kendine döngüye alınmış bir VPN'dir. **Microsoft veya kuruluşunuz gözatma etkinliğinizi görmüyor.**
 
-iOS'ta Uç Nokta için Defender, yapılandırılmış iOS cihazlarınız hakkında bilgi toplar ve bilgileri Uç Nokta için Defender'a sahip olduğunuz kiracıda depolar. Bilgiler iOS'ta Uç Nokta için Defender'ı güvenli, güncel, beklendiği şekilde performans gösteren ve hizmeti desteklemeye yardımcı olmak için toplanır.
+iOS'ta Uç Nokta için Defender, yapılandırılmış iOS cihazlarınızdan bilgi toplar ve bunu Uç Nokta için Defender'ın bulunduğu kiracıda depolar. Bilgiler, iOS'ta Uç Nokta için Defender'ın güvenli, güncel, beklendiği gibi performans göstermesini ve hizmeti desteklemesini sağlamaya yardımcı olmak için toplanır.
 
-Veri depolama hakkında daha fazla bilgi için bkz. Uç nokta [veri depolama ve gizlilik için Microsoft Defender](data-storage-privacy.md).
+Veri depolama hakkında daha fazla bilgi için bkz. [Uç Nokta için Microsoft Defender veri depolama ve gizlilik](data-storage-privacy.md).
 
-Android ve iOS mobil cihazlarda Uç Nokta için Microsoft Defender hakkında en yaygın gizlilik soruları hakkında daha fazla bilgi için bkz. Uç Nokta için [Microsoft Defender ve Android ve iOS mobil cihazlarda gizliliğiniz](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a).
+Android ve iOS mobil cihazlarda Uç Nokta için Microsoft Defender hakkında en yaygın gizlilik soruları hakkında daha fazla bilgi için bkz. [android ve iOS mobil cihazlarda Uç Nokta için Microsoft Defender ve gizliliğiniz](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a).
 
 ## <a name="required-data"></a>Gerekli veriler
 
-Gerekli veriler, iOS'ta Uç Nokta için Defender'ın beklendiği gibi çalışması için gereken verilerden oluşur. Bu veriler hizmetin çalışması için çok önemlidir ve son kullanıcı, kuruluş, cihaz ve uygulamalarla ilgili verileri içerebilir.
+Gerekli veriler, iOS'ta Uç Nokta için Defender'ın beklendiği gibi çalışmasını sağlamak için gereken verilerden oluşur. Bu veriler hizmetin çalışması için önemlidir ve son kullanıcı, kuruluş, cihaz ve uygulamalarla ilgili verileri içerebilir.
 
-Toplanan veri türlerinin listesi:
+Toplanan veri türlerinin listesi aşağıdadır:
 
 ### <a name="web-page-or-network-information"></a>Web sayfası veya Ağ bilgileri
 
-- Yalnızca kötü amaçlı bir bağlantı veya web sayfası algılandığında web sitesinin etki alanı adı ve IP adresi.
+- Web sitesinin etki alanı adı ve IP adresi yalnızca kötü amaçlı bir bağlantı veya web sayfası algılandığında.
 
 ### <a name="device-and-account-information"></a>Cihaz ve hesap bilgileri
 
-- Cihaz tanımlayıcısı aşağıdakilerden biri & saat, iOS sürümü, CPU bilgisi ve Cihaz tanımlayıcısı gibi cihaz bilgileri:
+- Tarih & saat, iOS sürümü, CPU bilgileri ve Cihaz tanımlayıcısı gibi cihaz bilgileri, burada Cihaz tanımlayıcısı aşağıdakilerden biridir:
   - Wi-Fi bağdaştırıcısı MAC adresi
   - Rastgele oluşturulan genel benzersiz tanımlayıcı (GUID)
 - Kiracı, Cihaz ve Kullanıcı bilgileri
-  - Azure Active Directory (AD) Cihaz Kimliği ve Azure Kullanıcı Kimliği - Cihazı, sırasıyla Azure Active Directory'deki Kullanıcı olarak benzersiz olarak tanımlar.
-  - Azure kiracı kimliği - iş yer alan ve organizasyon organizasyonlarınızı tanımlayan GUID Azure Active Directory.
-  - Uç Nokta kuruluş kimliği için Microsoft Defender - Cihazın ait olduğu kuruluşla ilişkilendirilmiş benzersiz tanımlayıcı. Microsoft'un, belirli bir kuruluş dizisini etkileyen sorunlar olup olduğunu ve bundan etkilediği kuruluşların sayısını belirlemesini sağlar.
-  - Kullanıcı Asıl Adı - Kullanıcının e-posta kimliği.
+  - Azure Active Directory (AD) Cihaz Kimliği ve Azure Kullanıcı Kimliği - Azure Active Directory'de sırasıyla Kullanıcı olan cihazı benzersiz olarak tanımlar.
+  - Azure kiracı kimliği - Azure Active Directory'de kuruluşunuzu tanımlayan GUID.
+  - kuruluş kimliği Uç Nokta için Microsoft Defender - Cihazın ait olduğu kuruluşla ilişkilendirilmiş benzersiz tanımlayıcı. Microsoft'un belirli bir kuruluş kümesini ve etkilenen kuruluş sayısını etkileyen sorunlar olup olmadığını belirlemesine olanak tanır.
+  - Kullanıcı Asıl Adı - kullanıcının Email kimliği.
 
 ### <a name="product-and-service-usage-data"></a>Ürün ve hizmet kullanım verileri
 
-Aşağıdaki bilgiler yalnızca cihazda yüklü Uç Nokta uygulaması için Microsoft Defender için toplanır.
+Aşağıdaki bilgiler yalnızca cihazda yüklü Uç Nokta için Microsoft Defender uygulama için toplanır.
 
-- Ad, sürüm ve uygulama yükseltme durumu dahil olmak üzere uygulama paketi bilgileri.
-- Uygulamada yapılan eylemler.
+- Ad, sürüm ve uygulama yükseltme durumu da dahil olmak üzere uygulama paketi bilgileri.
+- Uygulamada gerçekleştirilir.
 - iOS tarafından oluşturulan kilitlenme raporu günlükleri.
-- Bellek kullanımı verileri.
+- Bellek kullanım verileri.
 
 ## <a name="optional-data"></a>İsteğe Bağlı Veriler
 
-İsteğe bağlı veriler tanılama verilerini ve istemciden gelen geri bildirim verilerini içerir. İsteğe bağlı tanılama verileri ürün geliştirmeleri yapmamıza yardımcı olan ve sorunları algılamamıza, tanılamamıza ve çözmemize yardımcı olacak ileri düzey bilgi sağlayan ek verilerdir. Bu veriler yalnızca tanılama amaçlıdır ve hizmetin kendisi için gerekli değildir.
+İsteğe bağlı veriler, istemciden gelen tanılama verilerini ve geri bildirim verilerini içerir. İsteğe bağlı tanılama verileri ürün geliştirmeleri yapmamıza yardımcı olan ve sorunları algılamamıza, tanılamamıza ve çözmemize yardımcı olacak ileri düzey bilgi sağlayan ek verilerdir. Bu veriler yalnızca tanılama amaçlıdır ve hizmetin kendisi için gerekli değildir.
 
 İsteğe bağlı tanılama verileri şunları içerir:
 
-- Uç Nokta için Defender'ın uygulama, CPU ve ağ kullanımı.
-- Uç nokta için Defender yöneticisi tarafından yapılandırılan özellikler.
+- Uç Nokta için Defender için uygulama, CPU ve ağ kullanımı.
+- Uç Nokta için Defender yöneticisi tarafından yapılandırılan özellikler.
 
-Geri Bildirim Verileri, kullanıcı tarafından sağlanan uygulama içinde geri bildirim aracılığıyla toplanır.
+Geri Bildirim Verileri, kullanıcı tarafından sağlanan uygulama içi geri bildirim aracılığıyla toplanır.
 
-- Sağlamayı tercih ettiyse kullanıcının e-posta adresi.
-- Geri bildirim türü (gülümseme, kaş çatma, fikir) ve kullanıcı tarafından gönderilen tüm geri bildirim yorumları.
+- Sağlamayı tercih ederse kullanıcının e-posta adresi.
+- Geri bildirim türü (gülümseme, kaş çatma, fikir) ve kullanıcı tarafından gönderilen geri bildirim yorumları.
 
-Daha fazla bilgi için bkz. [Gizlilik hakkında daha fazla bilgi](https://aka.ms/mdatpiosprivacystatement).
+Daha fazla bilgi için bkz [. Gizlilik hakkında daha fazla bilgi](https://aka.ms/mdatpiosprivacystatement).

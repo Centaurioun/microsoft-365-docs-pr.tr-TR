@@ -3,7 +3,7 @@ title: Android'de Uç Nokta için Microsoft Defender
 ms.reviewer: ''
 description: Android'de Uç Nokta için Microsoft Defender yükleme ve kullanma işlemleri açıklanır
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, android, yükleme, dağıtma, kaldırma, intune
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 8de6af6f04243a8481d116fe9a67f5420b536f6c
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.subservice: mde
+ms.openlocfilehash: 691764119295ce4edab3df2ee3e6b1c3439900d9
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016536"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521433"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Android'de Uç Nokta için Microsoft Defender
 
@@ -33,14 +33,14 @@ ms.locfileid: "66016536"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Bu konuda, Android'da Uç Nokta için Defender'ın nasıl yükleneceği, yapılandırıldığı, güncelleştirildiği ve kullanılacağı açıklanmaktadır.
+Bu konuda, Android'de Uç Nokta için Defender'ın nasıl yükleneceği, yapılandırıldığı, güncelleştirildiği ve kullanılacağı açıklanmaktadır.
 
 > [!CAUTION]
-> Android'da Uç Nokta için Defender ile birlikte diğer üçüncü taraf uç nokta koruma ürünlerini çalıştırmak, performans sorunlarına ve öngörülemeyen sistem hatalarına neden olabilir.
+> Android'de Uç Nokta için Defender ile birlikte diğer üçüncü taraf uç nokta koruma ürünlerini çalıştırmak, performans sorunlarına ve öngörülemeyen sistem hatalarına neden olabilir.
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>Android'da Uç Nokta için Microsoft Defender yükleme
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>Android'de Uç Nokta için Microsoft Defender yükleme
 
 ### <a name="prerequisites"></a>Önkoşullar
 
@@ -52,7 +52,7 @@ Bu konuda, Android'da Uç Nokta için Defender'ın nasıl yükleneceği, yapıla
 
 - **Yöneticiler için**:
    - Microsoft 365 Defender portalına erişim.
-   - [Microsoft Endpoint Manager yönetim merkezine](https://go.microsoft.com/fwlink/?linkid=2109431) şu şekilde erişin:
+   - [Microsoft Endpoint Manager yönetim merkezine](https://go.microsoft.com/fwlink/?linkid=2109431) erişmek için:
      - Uygulamayı kuruluşunuzdaki kayıtlı kullanıcı gruplarına dağıtın.
      - Uygulama koruma ilkesinde Uç Nokta için Microsoft Defender risk sinyallerini yapılandırın.
   
@@ -63,28 +63,28 @@ Bu konuda, Android'da Uç Nokta için Defender'ın nasıl yükleneceği, yapıla
 
 ### <a name="network-requirements"></a>Ağ Gereksinimleri
 
-- Android Uç Nokta için Microsoft Defender bir ağa bağlıyken çalışması için güvenlik duvarının/proxy'nin [Uç Nokta için Microsoft Defender hizmet URL'lerine erişimi etkinleştirecek](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) şekilde yapılandırılması gerekir.
+- Android'de Uç Nokta için Microsoft Defender bir ağa bağlıyken çalışması için güvenlik duvarının/proxy'nin [Uç Nokta için Microsoft Defender hizmet URL'lerine erişimi etkinleştirecek şekilde yapılandırılması](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) gerekir.
 
 ### <a name="system-requirements"></a>Sistem Gereksinimleri
 
-- 6.0 ve üzeri Android çalışan cep telefonları. **Android çalıştıran cep telefonları, tabletler ve Android çalıştıran diğer mobil cihazlar şu anda desteklenmemektedir.**
+- Android 6.0 ve üzerini çalıştıran cep telefonları. **Android go çalıştıran cep telefonları, tabletler ve Android çalıştıran diğer mobil cihazlar şu anda desteklenmemektedir.**
 - Intune Şirket Portalı uygulaması [Google Play'den](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) indirilir ve yüklenir. Intune cihaz uyumluluk ilkelerinin uygulanması için cihaz kaydı gereklidir.
 
 ### <a name="installation-instructions"></a>Yükleme yönergeleri
 
-Android'da Uç Nokta için Microsoft Defender, kayıtlı cihazların her iki moduna da (eski Cihaz Yöneticisi ve Android Enterprise modları) yüklemeyi destekler. **Şu anda Android Enterprise'de iş profiline ve Şirkete ait tam olarak yönetilen kullanıcı cihaz kayıtlarına sahip kişisel cihazlar desteklenmektedir. Diğer Android Enterprise modları için destek hazır olduğunda duyurulacaktır.**
+Android'de Uç Nokta için Microsoft Defender, kayıtlı cihazların her iki moduna da (eski Cihaz Yöneticisi ve Android Kurumsal modları) yüklemeyi destekler. **Şu anda, iş profili ve Şirkete ait tam olarak yönetilen kullanıcı cihaz kayıtlarına sahip kişisel cihazlar Android Kurumsal'da desteklenmektedir. Diğer Android Kurumsal modları için destek hazır olduğunda duyurulacaktır.**
 
-- Android'da Uç Nokta için Microsoft Defender dağıtımı Microsoft Intune (MDM) üzerinden yapılır. Daha fazla bilgi için bkz[. Microsoft Intune ile Android üzerinde Uç Nokta için Microsoft Defender dağıtma](android-intune.md).
+- Android'de Uç Nokta için Microsoft Defender dağıtımı Microsoft Intune (MDM) üzerinden yapılır. Daha fazla bilgi için bkz[. Microsoft Intune ile Android'de Uç Nokta için Microsoft Defender dağıtma](android-intune.md).
 - Intune mobil cihaz yönetimi (MDM) kullanılarak kaydedilmemiş cihazlara Uç Nokta için Microsoft Defender yüklemesi için bkz. [Uygulama koruma ilkesinde (MAM) Uç Nokta için Microsoft Defender risk sinyallerini yapılandırma](android-configure-mam.md).
 
 > [!NOTE]
-> **Uç Nokta için Microsoft Defender Android artık [Google Play'de](https://play.google.com/store/apps/details?id=com.microsoft.scmx) kullanılabilir.**
+> **Android'de Uç Nokta için Microsoft Defender artık [Google Play'de](https://play.google.com/store/apps/details?id=com.microsoft.scmx) kullanılabilir.**
 >
-> Uç Nokta için Microsoft Defender uygulamasını Cihaz Yöneticisi ve Android Enterprise kayıt modları arasında dağıtmak için Intune'den Google Play'e bağlanabilirsiniz.
+> Uç Nokta için Microsoft Defender uygulamasını Cihaz Yöneticisi ve Android Kurumsal kayıt modları arasında dağıtmak için Intune'den Google Play'e bağlanabilirsiniz.
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-on-android"></a>Android'da Uç Nokta için Microsoft Defender Yapılandırma
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-android"></a>Android'de Uç Nokta için Microsoft Defender Yapılandırma
 
-Android özelliklerinde Uç Nokta için Microsoft Defender yapılandırma yönergelerine Android [özelliklerinde Uç Nokta için Microsoft Defender yapılandırma](android-configure.md) bölümünden ulaşabilirsiniz.
+Android özelliklerinde Uç Nokta için Microsoft Defender yapılandırma yönergelerine Android özelliklerinde [Uç Nokta için Microsoft Defender yapılandırma](android-configure.md) bölümünden ulaşabilirsiniz.
 
 ## <a name="related-topics"></a>İlgili konular
 

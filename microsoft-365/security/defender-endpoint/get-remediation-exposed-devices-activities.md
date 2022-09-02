@@ -2,7 +2,7 @@
 title: Bir düzeltme etkinliğine maruz kalmış cihazları listele
 description: Belirtilen düzeltme görevi için kullanıma sunulan cihazlar hakkındaki bilgileri döndürür.
 keywords: api'ler, düzeltme, düzeltme api'leri, alma, düzeltme görevleri, kullanıma sunulan cihazları düzeltme
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 34a12fbe5d97345a7a0a5a9c491d10489d6ac601
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: e4d006f49575cac26d08485c3ff47d6213ab36ad
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344799"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522223"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Bir düzeltme etkinliğine maruz kalmış cihazları listele
 

@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender'de cihazları dışlama
 description: Cihazları cihaz envanter listesinden dışlama
 keywords: Dışlamak
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d97e8db205d066671b7c0d430e3dbf79f0dd6ebd
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.subservice: mde
+ms.openlocfilehash: bd7769fa420da8770acbacfcb6a11abeb6e0a14c
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368121"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67521883"
 ---
 # <a name="exclude-devices"></a>Cihazları dışlayın
 
@@ -27,19 +27,19 @@ ms.locfileid: "65368121"
 
 **Şunlar için geçerlidir:**
 
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimlemek mi istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-## <a name="exclude-devices-from-vulnerability-management"></a>Cihazları güvenlik açığı yönetimi dışında tutma
+## <a name="exclude-devices-from-vulnerability-management"></a>Cihazları güvenlik açığı yönetiminin dışında tutma
 
-Etkin olmayan, yinelenen veya kapsamı dışında olan cihazları dışlamak, etkin cihazlarınızdaki riskleri keşfetmeye ve önceliklendirmeye odaklanmanıza olanak tanır. Dışlanan cihazlar güvenlik açığı yönetimi raporlarınızda görünmeyebileceği için bu eylem daha doğru güvenlik açığı yönetimi maruz kalma puanını yansıtmaya da yardımcı olabilir.
+Etkin olmayan, yinelenen veya kapsamı dışında olan cihazları dışlamak, etkin cihazlarınızdaki riskleri keşfetmeye ve önceliklendirmeye odaklanmanıza olanak tanır. Dışlanan cihazlar güvenlik açığı yönetim raporlarınızda görünür olmayacağından, bu eylem daha doğru bir güvenlik açığı yönetimi açığa çıkarma puanını yansıtmaya da yardımcı olabilir.
 
-Cihazlar dışlandıktan sonra, bu cihazlarda güvenlik açıkları ve yüklü yazılımlar hakkında güncelleştirilmiş veya ilgili bilgileri görüntüleyemezsiniz. Gelişmiş avcılıkta tüm güvenlik açığı yönetimi sayfaları, raporları ve ilgili tabloları etkiler.
+Cihazlar dışlandıktan sonra, bu cihazlarda güvenlik açıkları ve yüklü yazılımlar hakkında güncelleştirilmiş veya ilgili bilgileri görüntüleyemezsiniz. Gelişmiş tehdit avcılığındaki tüm güvenlik açığı yönetim sayfalarını, raporları ve ilgili tabloları etkiler.
 
-Cihaz dışlama özelliği cihaz verilerini güvenlik açığı yönetimi sayfalardan ve raporlardan kaldırsa da, cihazlar ağa bağlı kalır ve kuruluş için bir risk olmaya devam edebilir. İstediğiniz zaman cihaz dışlama işlemini iptal edebilirsiniz.
+Cihaz dışlama özelliği, cihaz verilerini güvenlik açığı yönetim sayfalarından ve raporlarından kaldırsa da, cihazlar ağa bağlı kalır ve kuruluş için bir risk olmaya devam edebilir. İstediğiniz zaman cihaz dışlama işlemini iptal edebilirsiniz.
 
 ## <a name="how-to-exclude-a-device"></a>Cihazı dışlama
 
@@ -69,7 +69,7 @@ Ayrıca bir cihazı cihaz sayfasından dışlayabilirsiniz.
 > [!NOTE]
 > Etkin cihazların dışlanması önerilmez, çünkü güvenlik açığı bilgilerine görünürlük sağlamamak özellikle risklidir. Bir cihaz etkinse ve cihazı dışlamaya çalışırsanız, etkin bir cihazı dışlamak istediğinizden emin olup olmadığınız sorusunu soran bir uyarı iletisi ve bir onay açılır penceresi alırsınız.
 
-Bir cihazın güvenlik açığı yönetimi görünümlerden ve verilerden tamamen dışlanması 10 saate kadar sürebilir.
+Bir cihazın güvenlik açığı yönetimi görünümlerinden ve verilerinden tamamen dışlanması 10 saate kadar sürebilir.
 
 Dışlanan cihazlar, Cihaz envanteri listesinde görünmeye devam ediyor. Dışlanan cihazlar görünümünüzü şu şekilde yönetebilirsiniz:
 
@@ -92,11 +92,11 @@ Cihaz listesinde farklı dışlama durumlarına sahip birden çok cihaz seçerse
 
 ![Toplu dışlama görüntüsü](images/exclude-device-bulk.png)
 
-Bir cihaz dışlandıktan sonra, dışlanan bir cihazın cihaz sayfasına giderseniz bulunan güvenlik açıklarına, yazılım envanterine veya güvenlik önerilerine ilişkin verileri göremezsiniz. Veriler güvenlik açığı yönetimi sayfalarında, ilgili gelişmiş tehdit avcılığı tablolarında ve güvenlik açığı bulunan cihazlar raporunda da gösterilmez.
+Bir cihaz dışlandıktan sonra, dışlanan bir cihazın cihaz sayfasına giderseniz bulunan güvenlik açıklarına, yazılım envanterine veya güvenlik önerilerine ilişkin verileri göremezsiniz. Veriler güvenlik açığı yönetim sayfalarında, ilgili gelişmiş tehdit avcılığı tablolarında ve güvenlik açığı bulunan cihazlar raporunda da gösterilmez.
 
 ## <a name="stop-excluding-a-device"></a>Cihazı dışlamayı durdurma
 
-İstediğiniz zaman bir cihazı dışlamayı durdurabilirsiniz. Cihazlar artık dışlanmadıktan sonra güvenlik açığı verileri güvenlik açığı yönetimi sayfalarda, raporlarda ve gelişmiş tehdit avcılığında görünür. Değişikliklerin geçerli olması 8 saat kadar sürebilir.
+İstediğiniz zaman bir cihazı dışlamayı durdurabilirsiniz. Cihazlar artık dışlanmadıktan sonra güvenlik açığı verileri güvenlik açığı yönetim sayfalarında, raporlarda ve gelişmiş tehdit avcılığında görünür. Değişikliklerin geçerli olması 8 saat kadar sürebilir.
 
 1. Cihaz envanterine gidin, dışlanan cihazı seçerek açılır öğeyi açın ve ardından **Dışlama ayrıntıları'nı** seçin
 2. **Dışlamayı durdur'u** seçin

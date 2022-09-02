@@ -1,7 +1,7 @@
 ---
 title: Cihaz denetimiyle kuruluşunuzun verilerini koruma
 description: Cihaz denetimi raporları aracılığıyla kuruluşunuzun veri güvenliğini izleyin.
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,14 +12,14 @@ ms.reviewer: dansimp
 ms.topic: article
 manager: dansimp
 audience: ITPro
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6fe93be2ec244628f2bf2195eb453307235ea06f
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: bc763de37b0bfffa8eaa30703db3da3f9acc81c2
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66129195"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522774"
 ---
 # <a name="device-control-report"></a>Cihaz denetimi raporu
 
@@ -41,7 +41,7 @@ Cihaz denetimi raporuyla, medya kullanımıyla ilgili olayları görüntüleyebi
 Denetim olayları şunlardır:
 
 - **USB sürücü bağlama ve çıkarma:** BIR USB sürücüsü takıldığında veya çıkarıldığında oluşturulan olayları denetleyin.
-- **PnP:** Çıkarılabilir depolama birimi, yazıcı veya Bluetooth medya bağlandığında Tak ve Kullan denetim olayları oluşturulur.
+- **PnP:** çıkarılabilir depolama birimi, yazıcı veya Bluetooth medyası bağlandığında Tak ve Kullan denetim olayları oluşturulur.
 - **Çıkarılabilir depolama birimi erişim denetimi:** Çıkarılabilir depolama erişim denetimi ilkesi tetiklendiğinde olaylar oluşturulur. Denetim, Engelleme veya İzin Ver olabilir.
 
 ## <a name="monitor-device-control-security"></a>Cihaz denetimi güvenliğini izleme

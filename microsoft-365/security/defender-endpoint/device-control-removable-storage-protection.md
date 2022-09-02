@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama Birimi Koruması
 description: Kullanıcının veya makinenin ya da her ikisinin de yetkisiz çıkarılabilir depolama medyası kullanmasını önlemeye yardımcı olan 'özellikleri anlama
 keywords: çıkarılabilir depolama ortamı
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: a0225c12521812dc3888aac6c0179019dfa0ea72
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.subservice: mde
+ms.openlocfilehash: 1add6ea29d38e784733b98646458f19c68fa6be1
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112537"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67524094"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama Birimi Koruması
 
@@ -40,7 +40,7 @@ Uç Nokta için Microsoft Defender'de cihaz denetimi çıkarılabilir depolama k
 **Yetenek -lerini**
 
 - *Denetim* Dışlama ile veya hariç tutmadan çeşitli cihaz özelliklerine göre çıkarılabilir depolama birimine okuma veya yazma veya yürütme erişimi.
-- *Önlemek* Okuma veya Yazma veya Dışlama olmadan erişim yürütme - Çeşitli cihaz özelliklerine göre belirli bir cihaza izin verin.
+- *Önle* Okuma veya Yazma veya Dışlama olmadan erişim yürütme - Çeşitli cihaz özelliklerine göre belirli bir cihaza izin verin.
 
 Dış depolamayı yönetmek için [cihaz yüklemesi](#device-installation) yerine çıkarılabilir depolama erişim denetimini kullanın.
 
@@ -87,7 +87,7 @@ Dış depolamayı yönetmek için [cihaz yüklemesi](#device-installation) yerin
 
 **Desteklenen Platform** - Windows 10, Windows 11
 
-### <a name="bitlocker"></a>BitLocker
+### <a name="bitlocker"></a>Bitlocker
 
 **Özellikler**:
 

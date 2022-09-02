@@ -2,7 +2,7 @@
 title: Cihazları iç IP API'lerine göre bulma
 description: belirli bir zaman damgasından 15 dakika önce ve sonra zaman aralığında istenen iç IP ile görülen cihazları bulma
 keywords: api'ler, graf api'leri, desteklenen API'ler, get, device, IP, find, find device, by ip, ip
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 84db0ee6740e6b6a47090a94ebc032d0176071f9
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: d3312c9218c600a63ca17a8d620ef49283c42ac8
+ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67323365"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "67522377"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>Cihazları iç IP API'lerine göre bulma
 
