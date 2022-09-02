@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 05/26/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -20,20 +20,20 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Özet: Microsoft 365 test ortamınız için federasyon kimlik doğrulamasını yapılandırın.'
-ms.openlocfilehash: 0214c7778176641c6446106cf92ed173b81b71de
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 23a7cb84dc4b1f67a4fd5ebd017282542e15114a
+ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101039"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67570259"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Microsoft 365 test ortamınız için federasyon kimliği
 
 *Bu Test Laboratuvarı Kılavuzu hem kurumsal hem de Office 365 Kurumsal test ortamları için Microsoft 365 için kullanılabilir.*
 
-Microsoft 365 federasyon kimliğini destekler. Bu, kimlik bilgilerinin doğrulanması yerine Microsoft 365 bağlanan kullanıcıyı güvenen bir federasyon kimlik doğrulama sunucusuna Microsoft 365 anlamına gelir. Kullanıcının kimlik bilgileri doğruysa, federasyon kimlik doğrulama sunucusu istemcinin kimlik doğrulaması kanıtı olarak Microsoft 365 gönderdiği bir güvenlik belirteci verir. Federasyon kimliği, Microsoft 365 aboneliği ve gelişmiş kimlik doğrulaması ve güvenlik senaryoları için kimlik doğrulamasının boşaltılmasını ve ölçeklendirilmesini sağlar.
+Microsoft 365, federasyon kimliğini destekler. Bu, kimlik bilgilerinin doğrulanması yerine Microsoft 365'in bağlanan kullanıcıyı Microsoft 365'in güvendiği bir federasyon kimlik doğrulama sunucusuna başvurduğu anlamına gelir. Kullanıcının kimlik bilgileri doğruysa, federasyon kimlik doğrulama sunucusu istemcinin kimlik doğrulaması kanıtı olarak Microsoft 365'e gönderdiği bir güvenlik belirteci verir. Federasyon kimliği, Microsoft 365 aboneliği ve gelişmiş kimlik doğrulaması ve güvenlik senaryoları için kimlik doğrulamasının boşaltılmasını ve ölçeklendirilmesini sağlar.
   
-Bu makalede, Microsoft 365 test ortamınız için federasyon kimlik doğrulamasının nasıl yapılandırıldığı açıklanır ve sonuç olarak aşağıdakiler elde edilir:
+Bu makalede, Microsoft 365 test ortamınız için federasyon kimlik doğrulamasının nasıl yapılandırıldığı açıklanır ve bunun sonucunda aşağıdakiler elde edilir:
 
 ![Microsoft 365 test ortamı için federasyon kimlik doğrulaması.](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
   
@@ -41,28 +41,28 @@ Bu yapılandırma şunlardan oluşur:
   
 - Microsoft 365 E5 deneme veya üretim aboneliği.
     
-- Azure sanal ağının alt ağındaki beş sanal makineden (DC1, APP1, CLIENT1, ADFS1 ve PROXY1) oluşan, internete bağlı basitleştirilmiş bir kuruluş intraneti. Azure AD Bağlan, Active Directory Domain Services etki alanındaki hesap listesini Microsoft 365 eşitlemek için APP1 üzerinde çalışır. PROXY1 gelen kimlik doğrulama isteklerini alır. ADFS1, DC1 ile kimlik bilgilerini doğrular ve güvenlik belirteçleri verir.
+- Azure sanal ağının alt ağındaki beş sanal makineden (DC1, APP1, CLIENT1, ADFS1 ve PROXY1) oluşan, internete bağlı basitleştirilmiş bir kuruluş intraneti. Azure AD Connect, Active Directory Domain Services etki alanındaki hesap listesini Microsoft 365'e eşitlemek için APP1 üzerinde çalışır. PROXY1 gelen kimlik doğrulama isteklerini alır. ADFS1, DC1 ile kimlik bilgilerini doğrular ve güvenlik belirteçleri verir.
     
 Bu test ortamının ayarlanması beş aşamadan oluşur:
 - [1. Aşama: Microsoft 365 test ortamınız için parola karması eşitlemesini yapılandırma](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
 - [2. Aşama: AD FS sunucusunu oluşturma](#phase-2-create-the-ad-fs-server)
 - [3. Aşama: Web proxy sunucusunu oluşturma](#phase-3-create-the-web-proxy-server)
 - [4. Aşama: Otomatik olarak imzalanan bir sertifika oluşturma ve ADFS1 ile PROXY1'i yapılandırma](#phase-4-create-a-self-signed-certificate-and-configure-adfs1-and-proxy1)
-- [5. Aşama: Federasyon kimliği için Microsoft 365 yapılandırma](#phase-5-configure-microsoft-365-for-federated-identity)
+- [5. Aşama: Federasyon kimliği için Microsoft 365'i yapılandırma](#phase-5-configure-microsoft-365-for-federated-identity)
     
 > [!NOTE]
 > Bu test ortamını azure deneme aboneliğiyle yapılandıramazsınız.
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>1. Aşama: Microsoft 365 test ortamınız için parola karması eşitlemesini yapılandırma
 
-[Microsoft 365 için parola karması eşitlemesindeki](password-hash-sync-m365-ent-test-environment.md) yönergeleri izleyin. Sonuçta elde edilen yapılandırmanız şöyle görünür:
+[Microsoft 365 için parola karması eşitlemesi](password-hash-sync-m365-ent-test-environment.md) yönergelerini izleyin. Sonuçta elde edilen yapılandırmanız şöyle görünür:
   
 ![Parola karması eşitleme testi ortamı ile sanal kuruluş.](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase1.png)
   
 Bu yapılandırma şunlardan oluşur:
   
 - Microsoft 365 E5 deneme sürümü veya ücretli abonelikler.
-- Azure sanal ağının alt ağındaki DC1, APP1 ve CLIENT1 sanal makinelerinden oluşan, internete bağlı basitleştirilmiş bir kuruluş intraneti. Azure AD Bağlan, TESTLAB Active Directory Domain Services (AD DS) etki alanını düzenli aralıklarla Microsoft 365 aboneliklerinizin Azure AD kiracısıyla eşitlemek için APP1 üzerinde çalışır.
+- Azure sanal ağının alt ağındaki DC1, APP1 ve CLIENT1 sanal makinelerinden oluşan, internete bağlı basitleştirilmiş bir kuruluş intraneti. Azure AD Connect, TESTLAB Active Directory Domain Services (AD DS) etki alanını Düzenli aralıklarla Microsoft 365 aboneliklerinizin Azure AD kiracısıyla eşitlemek için APP1 üzerinde çalışır.
 
 ## <a name="phase-2-create-the-ad-fs-server"></a>2. Aşama: AD FS sunucusunu oluşturma
 
@@ -106,7 +106,7 @@ Restart-Computer
 
 Sonuçta elde edilen yapılandırmanız şöyle görünür:
   
-![AD FS sunucusu, Microsoft 365 test ortamı için DirSync'e eklendi.](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase2.png)
+![AD FS sunucusu Microsoft 365 için DirSync test ortamına eklendi.](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase2.png)
   
 ## <a name="phase-3-create-the-web-proxy-server"></a>3. Aşama: Web proxy sunucusunu oluşturma
 
@@ -163,7 +163,7 @@ Write-Host (Get-AzPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPA
 
 Ardından, genel DNS sağlayıcınızla çalışın ve **fs.testlab** için yeni bir genel DNS A kaydı oluşturun.\<*your DNS domain name*> bu, **Write-Host** komutu tarafından görüntülenen IP adresine çözümleniyor. **fs.testlab.**\<*your DNS domain name*> bundan sonra  *federasyon hizmeti FQDN* olarak adlandırılır.
   
-Ardından[, CORPUser1](https://portal.azure.com)\\ kimlik bilgilerini kullanarak DC1 sanal makinesine bağlanmak için Azure portal kullanın ve ardından yönetici düzeyinde Windows PowerShell komut isteminde aşağıdaki komutları çalıştırın:
+Ardından[, CORP](https://portal.azure.com)\\ User1 kimlik bilgilerini kullanarak DC1 sanal makinesine bağlanmak için Azure portal kullanın ve ardından yönetici düzeyinde Windows PowerShell komut isteminde aşağıdaki komutları çalıştırın:
   
 ```powershell
 Add-DnsServerPrimaryZone -Name corp.contoso.com -ZoneFile corp.contoso.com.dns
@@ -173,13 +173,13 @@ Bu komutlar, Azure sanal ağındaki sanal makinelerin iç federasyon hizmeti FQD
   
 Sonuçta elde edilen yapılandırmanız şöyle görünür:
   
-![Microsoft 365 test ortamı için DirSync'e eklenen web uygulaması proxy sunucusu.](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
+![Microsoft 365 için DirSync test ortamına eklenen web uygulaması proxy sunucusu.](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
   
 ## <a name="phase-4-create-a-self-signed-certificate-and-configure-adfs1-and-proxy1"></a>4. Aşama: Otomatik olarak imzalanan bir sertifika oluşturma ve ADFS1 ile PROXY1'i yapılandırma
 
 Bu aşamada, federasyon hizmeti FQDN'niz için otomatik olarak imzalanan bir dijital sertifika oluşturur ve ADFS1 ile PROXY1'i bir AD FS grubu olarak yapılandırabilirsiniz.
   
-İlk olarak, CORPUser1\\ kimlik bilgilerini kullanarak DC1 sanal makinesine bağlanmak için [Azure portal](https://portal.azure.com) kullanın ve ardından yönetici düzeyinde bir Windows PowerShell komut istemi açın.
+İlk olarak, CORP\\User1 kimlik bilgilerini kullanarak DC1 sanal makinesine bağlanmak için [Azure portal](https://portal.azure.com) kullanın ve ardından yönetici düzeyinde bir Windows PowerShell komut istemi açın.
   
 Ardından, DC1'deki Windows PowerShell komut isteminde şu komutla bir AD FS hizmet hesabı oluşturun:
   
@@ -188,7 +188,7 @@ New-ADUser -SamAccountName ADFS-Service -AccountPassword (read-host "Set user pa
 ```
 Bu komutun sizden hesap parolasını girmenizi istediğini unutmayın. Güçlü bir parola seçin ve güvenli bir konuma kaydedin. Bu aşama ve 5. Aşama için buna ihtiyacınız olacaktır.
   
-CORPUser1\\ kimlik bilgilerini kullanarak ADFS1 sanal makinesine bağlanmak için [Azure portal](https://portal.azure.com) kullanın. ADFS1'de yönetici düzeyinde bir Windows PowerShell komut istemi açın, federasyon hizmeti FQDN'nizi doldurun ve otomatik olarak imzalanan bir sertifika oluşturmak için şu komutları çalıştırın:
+CORP\\User1 kimlik bilgilerini kullanarak ADFS1 sanal makinesine bağlanmak için [Azure portal](https://portal.azure.com) kullanın. ADFS1'de yönetici düzeyinde bir Windows PowerShell komut istemi açın, federasyon hizmeti FQDN'nizi doldurun ve otomatik olarak imzalanan bir sertifika oluşturmak için şu komutları çalıştırın:
   
 ```powershell
 $fedServiceFQDN="<federation service FQDN>"
@@ -201,7 +201,7 @@ Ardından, yeni otomatik olarak imzalanan sertifikayı dosya olarak kaydetmek i�
   
 1. **Başlat'ı** seçin, **mmc.exe** yazın ve **Enter tuşuna** basın.
     
-2. **Ek** >  **Bileşen Ekle/Kaldır'ı** seçin.
+2. **Dosya** > **Ek Bileşenleri Ekle/Kaldır**'ı seçin.
     
 3. **Ek Bileşen Ekle veya Kaldır'da**, kullanılabilir ek bileşenler listesinde **Sertifikalar'a** çift tıklayın, **Bilgisayar hesabı'nı** ve ardından **İleri'yi** seçin.
     
@@ -211,7 +211,7 @@ Ardından, yeni otomatik olarak imzalanan sertifikayı dosya olarak kaydetmek i�
     
 6. Federasyon hizmeti FQDN'nizin olduğu sertifikayı seçip basılı tutun (veya sağ tıklayın), **Tüm görevler'i** ve ardından **Dışarı Aktar'ı** seçin.
     
-7. **Hoş Geldiniz** sayfasında **İleri'yi** seçin.
+7. **Hoş Geldiniz** sayfasında, **İleri**'ye tıklatın.
     
 8. **Özel Anahtarı Dışarı Aktar** sayfasında **Evet'i** ve ardından **İleri'yi** seçin.
     
@@ -271,7 +271,7 @@ Ardından, AD FS hizmetini şu adımlarla yapılandırın:
     
 14. **Başlat'ı** seçin, güç simgesini seçin, **Yeniden Başlat'ı** ve ardından **Devam'ı** seçin.
     
-[Azure portal](https://portal.azure.com), CORPUser1\\ hesabı kimlik bilgileriyle PROXY1'e bağlanın.
+[Azure portal](https://portal.azure.com), CORP\\User1 hesabı kimlik bilgileriyle PROXY1'e bağlanın.
   
 Ardından, otomatik olarak imzalanan sertifikayı **hem PROXY1'e hem de APP1'e** yüklemek için bu adımları kullanın.
   
@@ -283,13 +283,13 @@ Ardından, otomatik olarak imzalanan sertifikayı **hem PROXY1'e hem de APP1'e**
     
 4. **Bilgisayar Seç'te** **Son'u** ve ardından **Tamam'ı** seçin.
     
-5. Ağaç bölmesinde **Sertifikalar (Yerel Bilgisayar)** > **KişiselSertifikalar'ı** >  açın.
+5. Ağaç bölmesinde **Sertifikalar (Yerel Bilgisayar)****Kişisel** > **Sertifikalar'ı** >  açın.
     
 6. **Kişisel'i** seçip basılı tutun (veya sağ tıklayın), **Tüm görevler'i** ve ardından **İçeri Aktar'ı** seçin.
     
-7. **Hoş Geldiniz** sayfasında **İleri'yi** seçin.
+7. **Hoş Geldiniz** sayfasında, **İleri**'ye tıklatın.
     
-8. **İçeri Aktaracak Dosya** sayfasında **adfs1certsssl.pfx\\\\ girin\\\\** ve **İleri'yi** seçin.
+8. **İçeri Aktaracak Dosya** sayfasında **adfs1\\certs\\ssl.pfx yazın\\\\** ve **İleri'yi** seçin.
     
 9. **Özel anahtar koruması** sayfasında **Parola alanına sertifika** parolasını girin ve **İleri'yi seçin.**
     
@@ -305,7 +305,7 @@ Ardından, otomatik olarak imzalanan sertifikayı **hem PROXY1'e hem de APP1'e**
     
 15. Sertifikayı seçip basılı tutun (veya sağ tıklayın) ve ardından **Kopyala'yı** seçin.
     
-16. Ağaç bölmesinde **Güvenilen Kök Sertifika** **YetkilileriCertificates'i** >  açın.
+16. Ağaç bölmesinde **Güvenilen Kök Sertifika Yetkilileri Sertifikaları'nı** >  açın.
     
 17. Fare işaretçinizi yüklü sertifikalar listesinin altına getirin, seçip basılı tutun (veya sağ tıklayın) ve ardından **Yapıştır'ı** seçin.
     
@@ -331,7 +331,7 @@ Web uygulaması proxy hizmetini ADFS1'i federasyon sunucusu olarak kullanacak ş
     
   - **Federasyon hizmeti adı** kutusuna federasyon hizmeti FQDN'nizi girin.
     
-  - **Kullanıcı adı** kutusuna **CORPUser1\\** yazın.
+  - **Kullanıcı adı** kutusuna **CORP\\Kullanıcısı1** girin.
     
   - **Parola** kutusuna User1 hesabının parolasını girin.
     
@@ -343,31 +343,31 @@ Web uygulaması proxy hizmetini ADFS1'i federasyon sunucusu olarak kullanacak ş
     
 8. **Sonuçlar** sayfasında **Kapat'ı** seçin.
     
-## <a name="phase-5-configure-microsoft-365-for-federated-identity"></a>5. Aşama: Federasyon kimliği için Microsoft 365 yapılandırma
+## <a name="phase-5-configure-microsoft-365-for-federated-identity"></a>5. Aşama: Federasyon kimliği için Microsoft 365'i yapılandırma
 
-CORPUser1\\ hesabı kimlik bilgileriyle APP1 sanal makinesine bağlanmak için [Azure portal](https://portal.azure.com) kullanın.
+CORP\\User1 hesabı kimlik bilgileriyle APP1 sanal makinesine bağlanmak için [Azure portal](https://portal.azure.com) kullanın.
   
-Azure AD Bağlan ve Microsoft 365 aboneliğinizi federasyon kimlik doğrulaması için yapılandırmak için şu adımları kullanın:
+Azure AD Connect'i ve Microsoft 365 aboneliğinizi federasyon kimlik doğrulaması için yapılandırmak için şu adımları kullanın:
   
-1. Masaüstünden **Azure AD Bağlan'ne** çift tıklayın.
+1. Masaüstünden **Bağlan'ı Azure AD** çift tıklayın.
     
-2. **Azure AD'ye Hoş Geldiniz Bağlan** sayfasında **Yapılandır'ı** seçin.
+2. **Azure AD Bağlan'a Hoş Geldiniz** sayfasında **Yapılandır'ı** seçin.
     
 3. **Ek görevler** sayfasında **Kullanıcı oturumunu değiştir'i ve ardından İleri'yi** seçin.
     
-4. **Azure AD'ye Bağlan** sayfasında genel yönetici hesabınızın adını ve parolasını girin ve **İleri'yi** seçin.
+4. **Azure AD bağlan** sayfasında genel yönetici hesabınızın adını ve parolasını girin ve **İleri'yi** seçin.
     
 5. **Kullanıcı oturum açma** sayfasında **AD FS ile Federasyon'a** ve ardından **İleri'ye** tıklayın.
     
 6. **AD FS grubu** sayfasında **Var olan bir AD FS grubu kullan'ı** seçin, **Sunucu Adı** kutusuna **ADFS1** yazın ve **İleri'yi** seçin.
     
-7. Sunucu kimlik bilgileri istendiğinde CORPUser1 hesabının kimlik bilgilerini\\ girin ve **Tamam'ı** seçin.
+7. Sunucu kimlik bilgileri istendiğinde, CORP\\User1 hesabının kimlik bilgilerini girin ve **Tamam'ı** seçin.
     
-8. **Etki Alanı Yöneticisi** kimlik bilgileri sayfasında, **Kullanıcı adı** kutusuna **CORPUser1\\** yazın, **Parola** kutusuna hesap parolasını girin ve **İleri'yi** seçin.
+8. **Etki Alanı Yöneticisi** kimlik bilgileri sayfasında, **Kullanıcı Adı** kutusuna **CORP\\Kullanıcı1** yazın, **Parola** kutusuna hesap parolasını girin ve **İleri'yi** seçin.
     
-9. **AD FS hizmet hesabı** sayfasında, **Etki Alanı Kullanıcı Adı** kutusuna **CORPADFS-Service\\** yazın, **Etki Alanı Kullanıcı Parolası** kutusuna hesap parolasını girin ve **İleri'yi** seçin.
+9. **AD FS hizmet hesabı** sayfasında, **Etki Alanı Kullanıcı Adı** kutusuna **CORP\\ADFS-Service** yazın, **Etki Alanı Kullanıcı Parolası** kutusuna hesap parolasını girin ve **İleri'yi** seçin.
     
-10. **Azure AD Etki Alanı** sayfasındaki **Etki Alanı'nda**, daha önce oluşturduğunuz ve 1. Aşamada aboneliğinize eklediğiniz etki alanının adını seçin ve ardından **İleri'yi** seçin.
+10. **Azure AD Etki Alanı** sayfasında, **Etki Alanı'nda**, daha önce oluşturduğunuz ve 1. Aşamada aboneliğinize eklediğiniz etki alanının adını seçin ve ardından **İleri'yi** seçin.
     
 11. **Yapılandırmaya hazır** sayfasında **Yapılandır'ı** seçin.
     
@@ -383,7 +383,7 @@ Federasyon kimlik doğrulamasının çalıştığını göstermek için:
     
 2. Oturum açma kimlik bilgileri için **user1@**\<*the domain created in Phase 1*> girin.
     
-    Örneğin, test etki alanınız **testlab.contoso.com** ise "user1@testlab.contoso.com" girersiniz. **Sekme** tuşuna basın veya Microsoft 365 sizi otomatik olarak yeniden yönlendirmesine izin verin.
+    Örneğin, test etki alanınız **testlab.contoso.com** ise "user1@testlab.contoso.com" girersiniz. **Sekme** tuşuna basın veya Microsoft 365'in sizi otomatik olarak yeniden yönlendirmesine izin verin.
     
     Şimdi **Bağlantınız özel değil** sayfasını görmeniz gerekir. Bunun nedeni, masaüstü bilgisayarınızın doğrulanamadığından ADFS1'e otomatik olarak imzalanan bir sertifika yüklemiş olmanızdır. Federasyon kimlik doğrulamasının üretim dağıtımında, güvenilen bir sertifika yetkilisinden bir sertifika kullanırsınız ve kullanıcılarınız bu sayfayı görmez.
     
@@ -403,11 +403,11 @@ Bu yordam, deneme aboneliğinizin DC1'de barındırılan AD DS corp.contoso.com 
     
 2. PROXY1, yerel bilgisayarınıza kurgusal şirket oturum açma sayfasını gönderir.
     
-3. CORPUser1\\ ve parolayı PROXY1'e gönderdiğinizde, bunları ADFS1'e iletir.
+3. CORP\\Kullanıcı1'i ve parolayı PROXY1'e gönderdiğinizde, bunları ADFS1'e iletir.
     
-4. ADFS1, CORPUser1\\ ve parolayı DC1 ile doğrular ve yerel bilgisayarınıza bir güvenlik belirteci gönderir.
+4. ADFS1, CORP\\User1'i ve parolayı DC1 ile doğrular ve yerel bilgisayarınıza bir güvenlik belirteci gönderir.
     
-5. Yerel bilgisayarınız güvenlik belirtecini Microsoft 365 gönderir.
+5. Yerel bilgisayarınız güvenlik belirtecini Microsoft 365'e gönderir.
     
 6. Microsoft 365, güvenlik belirtecinin ADFS1 tarafından oluşturulduğunu doğrular ve erişime izin verir.
     
@@ -415,5 +415,5 @@ Deneme aboneliğiniz artık federasyon kimlik doğrulamasıyla yapılandırıld�
   
 ## <a name="next-step"></a>Sonraki adım
 
-Azure'da Microsoft 365 için üretime hazır, yüksek kullanılabilirliğe yönelik federasyon kimlik doğrulamasını dağıtmaya hazır olduğunuzda bkz. [Azure'da Microsoft 365 için yüksek kullanılabilirlikli federasyon kimlik doğrulaması dağıtma](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md).
+Azure'da Microsoft 365 için üretime hazır, yüksek kullanılabilirliğe yönelik federasyon kimlik doğrulamasını dağıtmaya hazır olduğunuzda bkz. [Azure'da Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulaması dağıtma](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md).
   

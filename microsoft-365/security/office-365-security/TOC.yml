@@ -406,7 +406,7 @@
           items:
             - name: Karantina izinleri ve ilkeleri nasıl yapılandırılır?
               href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
-            - name: Önceden ayarlanmış güvenlik ilkeleriyle her zaman en uygun güvenlik denetimlerine sahip olmanızı sağlayarak
+            - name: Office 365 için Microsoft Defender'da Standart veya Katı önceden ayarlanmış güvenlik ilkeleri için adımları ayarlama
               href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
             - name: Office 365 için Microsoft Defender'ı Microsoft Sentinel'e bağlayın
               href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md

@@ -6,20 +6,20 @@ manager: scotv
 ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
-description: Skype Kurumsal Çevrimiçi ilkelerini, kullanıcı başına ilkeleri ve toplantı ayarlarını yönetmek için Microsoft 365 için PowerShell kullanın.
-ms.openlocfilehash: 1c3a3e06d3fa607765382176a8c291fab2c69636
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Skype Kurumsal Çevrimiçi ilkelerini, kullanıcı başına ilkeleri ve toplantı ayarlarını yönetmek için Microsoft 365 için PowerShell'i kullanın.
+ms.openlocfilehash: ca0067bffce7bded0a0115dd51e5b3874e19773e
+ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097678"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67570193"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>PowerShell ile Skype Kurumsal Online'i yönetme
 
@@ -30,14 +30,14 @@ Skype Kurumsal Çevrimiçi yöneticiler ilkeleri yönetmekten sorumludur. Bu gö
 ## <a name="before-you-start"></a>Başlamadan önce
 
 > [!NOTE]
-> Skype Kurumsal Online Connector şu anda en son Teams PowerShell modülünün bir parçasıdır. **PowerShell** genel sürümünün en son Teams kullanıyorsanız Skype Kurumsal Online Connector'ı yüklemeniz gerekmez.
+> Skype Kurumsal Online Connector şu anda en son Teams PowerShell modülünün bir parçasıdır. En son **Teams PowerShell** genel sürümünü kullanıyorsanız Skype Kurumsal Çevrimiçi Bağlayıcı'yı yüklemeniz gerekmez.
 
 > [!NOTE]
-> Skype Kurumsal Online Yöneticileri, PowerShell aracılığıyla hem **Teams** hem **de Skype Kurumsal Online** uygulama ilkelerini yönetebilir.
+> Skype Kurumsal Çevrimiçi Yöneticiler Hem **Teams'i** hem de **Skype Kurumsal Çevrimiçi** uygulama ilkelerini PowerShell aracılığıyla yönetebilir.
 
 [Teams PowerShell modülünü](/microsoftteams/teams-powershell-install) yükleyin.
 
-## <a name="connect-using-admin-credentials"></a>Yönetici kimlik bilgilerini kullanarak Bağlan
+## <a name="connect-using-admin-credentials"></a>Yönetici kimlik bilgilerini kullanarak bağlanma
 
 1. bir Windows PowerShell komut istemi penceresi açın ve aşağıdaki komutları çalıştırın:
 
@@ -49,7 +49,7 @@ Skype Kurumsal Çevrimiçi yöneticiler ilkeleri yönetmekten sorumludur. Bu gö
 
 2. **Windows PowerShell Kimlik Bilgisi İsteği** iletişim kutusuna yönetici hesabınızın adını ve parolasını yazın ve **tamam'ı** seçin.
 
-## <a name="connect-using-an-admin-account-with-multi-factor-authentication"></a>Çok faktörlü kimlik doğrulamasıyla yönetici hesabı kullanarak Bağlan
+## <a name="connect-using-an-admin-account-with-multi-factor-authentication"></a>Çok faktörlü kimlik doğrulaması ile yönetici hesabı kullanarak bağlanma
 
 1. bir Windows PowerShell komut istemi penceresi açın ve aşağıdaki komutları çalıştırın:
 
@@ -74,6 +74,6 @@ Daha fazla bilgi için bkz.:
 
 [PowerShell ile Microsoft 365’i yönetme](manage-microsoft-365-with-microsoft-365-powershell.md)
 
-[Microsoft 365 için PowerShell ile Kullanmaya başlayın](getting-started-with-microsoft-365-powershell.md)
+[Microsoft 365 için PowerShell'i kullanmaya başlama](getting-started-with-microsoft-365-powershell.md)
 
 [PowerShell cmdlet başvurularını Skype Kurumsal](/powershell/module/skype/)
