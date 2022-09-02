@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8eb2fdc1301b340c0907f3dc71b852488ccb64b6
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 6a686892a0a0e3753038c9296a14a4eaa36cbd3f
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331566"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560273"
 ---
 # <a name="advanced-hunting-api"></a>Gelişmiş tehdit avcılığı API'si
 
@@ -44,7 +44,7 @@ ms.locfileid: "67331566"
 
 1. Sorguyu yalnızca son 30 güne ait veriler üzerinde çalıştırabilirsiniz.
 
-2. Sonuçlar en fazla 100.000 satır içerir.
+2. Sonuçlar en fazla 10.000 satır içerir.
 
 3. Yürütme sayısı kiracı başına sınırlıdır:
    - API çağrıları: Dakikada en fazla 45 çağrı, saatte en fazla 1500 çağrı.

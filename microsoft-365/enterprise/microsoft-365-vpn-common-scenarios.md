@@ -1,12 +1,12 @@
 ---
-title: Kullanıcılar için yaygın VPN bölme bölme Microsoft 365
+title: Microsoft 365 için yaygın VPN bölünmüş tünel senaryoları
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 3/3/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,89 +16,89 @@ ms.collection:
 - remotework
 f1.keywords:
 - NOCSH
-description: Kullanıcılar için yaygın VPN bölme bölme Microsoft 365
-ms.openlocfilehash: 26f4cf10de3282c5257592a26ea61d073a0d3cd4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Microsoft 365 için yaygın VPN bölünmüş tünel senaryoları
+ms.openlocfilehash: 773ed8c0dcf3428dc6211b625ebe1ae206b6a1da
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63705182"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560559"
 ---
-# <a name="common-vpn-split-tunneling-scenarios-for-microsoft-365"></a>Kullanıcılar için yaygın VPN bölme bölme Microsoft 365
+# <a name="common-vpn-split-tunneling-scenarios-for-microsoft-365"></a>Microsoft 365 için yaygın VPN bölünmüş tünel senaryoları
 
 >[!NOTE]
->Bu makale, uzak kullanıcılar için iyileştirmeyi Microsoft 365 makale kümelerinin bir bölümüdir.
+>Bu makale, uzak kullanıcılar için Microsoft 365 iyileştirmesini ele alan bir makale kümesinin parçasıdır.
 
->- Uzak kullanıcılar için Microsoft 365 bağlantısını en iyi duruma getirmek için VPN bölünmüş şifreleme kullanma hakkında genel bir bakış için bkz[.](microsoft-365-vpn-split-tunnel.md) Genel Bakış: Vpn bölünmüş Microsoft 365.
->- VPN bölünmüş bölmeyi uygulama hakkında ayrıntılı kılavuz için bkz. [VPN bölünmüş bölmeyi uygulama Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
->- VPN bölünmüş trafiğinde Teams trafiğinin güvenliğini sağlama kılavuzu için bkz. VPN bölünmüş trafiği için Teams trafiğinin güvenliğini [sağlama](microsoft-365-vpn-securing-teams.md).
->- VPN ortamlarında Stream ve canlı etkinlikleri yapılandırma hakkında bilgi için bkz. VPN ortamlarında akış ve canlı etkinlikler [için dikkat edilmesi gereken noktalar](microsoft-365-vpn-stream-and-live-events.md).
->- Çin'deki kullanıcılar için Microsoft 365 kiracı performansını iyileştirme hakkında bilgi için bkz. [Microsoft 365 için performans iyileştirme.](microsoft-365-networking-china.md)
+>- Uzak kullanıcılar için Microsoft 365 bağlantısını iyileştirmek üzere VPN bölünmüş tünel kullanmaya genel bakış için bkz [. Genel Bakış: Microsoft 365 için VPN bölünmüş tünel oluşturma](microsoft-365-vpn-split-tunnel.md).
+>- VPN bölünmüş tüneli uygulama hakkında ayrıntılı yönergeler için bkz. [Microsoft 365 için VPN bölünmüş tüneli uygulama](microsoft-365-vpn-implement-split-tunnel.md).
+>- VPN bölünmüş tünel ortamlarında Teams medya trafiğinin güvenliğini sağlama yönergeleri için bkz. [VPN bölünmüş tüneli için Teams medya trafiğinin güvenliğini sağlama](microsoft-365-vpn-securing-teams.md).
+>- VPN ortamlarında Stream ve canlı etkinlikleri yapılandırma hakkında bilgi için bkz. [VPN ortamlarında Akış ve canlı etkinlikler için dikkat edilmesi gereken özel noktalar](microsoft-365-vpn-stream-and-live-events.md).
+>- Çin'deki kullanıcılar için Microsoft 365 dünya çapında kiracı performansını iyileştirme hakkında bilgi için bkz. [Çin kullanıcıları için Microsoft 365 performans iyileştirmesi](microsoft-365-networking-china.md).
 
-Aşağıdaki listede, kurumsal ortamlarda görülen en yaygın VPN senaryolarını görebilirsiniz. Çoğu müşteri geleneksel olarak model 1'i (VPN Zorlamalı Vpn Tunnel). Bu bölüm, görece az çabayla elde edilebilir olan ve ağ performansıyla kullanıcı deneyiminin inanılmaz avantajları olan **Model 2'ye** hızlı ve güvenli bir şekilde geçiş içinde size yardımcı olur.
+Aşağıdaki listede, kurumsal ortamlarda görülen en yaygın VPN senaryolarını göreceksiniz. Müşterilerin çoğu geleneksel olarak model 1 'i (VPN Zorlamalı Tünel) çalıştırır. Bu bölüm, nispeten az çabayla ulaşılabilir olan ve ağ performansı ve kullanıcı deneyimi açısından muazzam avantajlara sahip olan **model 2'ye** hızlı ve güvenli bir şekilde geçiş gerçekleştirmenize yardımcı olur.
 
-| Model | Açıklama |
+| Modeli | Açıklama |
 | --- | --- |
-| [1. VPN Zorunlu Tunnel](#1-vpn-forced-tunnel) | Trafiğin %100'ü şirket içi, İnternet ve tüm O365/M365 gibi VPN trafiğine gidiyor |
-| [2. VPN Zorlanan Tunnel birkaç özel durumla](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) | VPN hattı varsayılan olarak kullanılır (varsayılan rota noktaları VPN'ye), ve doğrudan gitme izni verilen birkaç önemli muaf senaryo |
-| [3. VPN Zorunlu Tunnel özel durumlar dışında](#3-vpn-forced-tunnel-with-broad-exceptions) | VPN hattı varsayılan olarak kullanılır (varsayılan rota noktaları VPN'ye), doğrudan yönlendiri izin verilen çok özel durumlar (tüm Microsoft 365, Tüm Salesforce, Tüm Yakınlaştırma) |
-| [4. VPN Seçmeli Tunnel](#4-vpn-selective-tunnel) | VPN yolu yalnızca Corpnet tabanlı hizmetler için kullanılır. Varsayılan rota (İnternet ve tüm İnternet tabanlı hizmetler) doğrudan gider. |
-| [5. VPN yok](#5-no-vpn) | #2'nin çeşitlemesi. Eski VPN yerine tüm corpnet hizmetleri modern güvenlik yaklaşımları (Zscaler ZPA, Azure Active Directory (Azure AD) Proxy/MCAS gibi) aracılığıyla yayımlanır. |
+| [1. VPN Zorlamalı Tüneli](#1-vpn-forced-tunnel) | Trafiğin %100'ü şirket içi, İnternet ve tüm O365/M365 dahil olmak üzere VPN tüneline gider |
+| [2. Birkaç özel durumla VPN Zorlamalı Tüneli](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) | VPN tüneli varsayılan olarak kullanılır (VPN'ye giden varsayılan yol noktaları), doğrudan gitmelerine izin verilen birkaç, en önemli muafiyet senaryoları |
+| [3. Geniş özel durumlarla VPN Zorlamalı Tüneli](#3-vpn-forced-tunnel-with-broad-exceptions) | VPN tüneli varsayılan olarak kullanılır (VPN'ye giden varsayılan yol noktaları), doğrudan gitmesine izin verilen geniş özel durumlar (tüm Microsoft 365, Tüm Salesforce, Tüm Yakınlaştırma gibi) |
+| [4. VPN Seçmeli Tüneli](#4-vpn-selective-tunnel) | VPN tüneli yalnızca corpnet tabanlı hizmetler için kullanılır. Varsayılan yol (İnternet ve tüm İnternet tabanlı hizmetler) doğrudan gider. |
+| [5. VPN yok](#5-no-vpn) | #2'nin bir varyasyonu. Eski VPN yerine tüm corpnet hizmetleri modern güvenlik yaklaşımları (Zscaler ZPA, Azure Active Directory (Azure AD) Proxy/MCAS vb.) aracılığıyla yayımlanır. |
 
-## <a name="1-vpn-forced-tunnel"></a>1. VPN Zorunlu Tunnel
+## <a name="1-vpn-forced-tunnel"></a>1. VPN Zorlamalı Tüneli
 
-Kurumsal müşterilerin çoğu için en yaygın başlangıç senaryosu. Zorlamalı bir VPN kullanılır, bu da uç nokta şirket ağı içinde olsun ya da yer alınsın trafiğin %100'musunuz şirket ağına yönlendirildi anlamına gelir. İnternet'e Microsoft 365 veya İnternet'e gözatma gibi dış (İnternet) bağlı tüm trafik, sonrasında şirket içi güvenlik donanımının (örneğin, şirket içi güvenlik donanımı) geri sabitlenmiş olmasıdır. Geçerli karnede uzaktan çalışan kullanıcıların neredeyse %100'olduğu bu model dolayısıyla VPN altyapısına yüksek yük koyar ve büyük olasılıkla tüm şirket trafiğinin performansını önemli ölçüde azaltır ve dolayısıyla kuruluş kriz durumlarında etkili bir şekilde çalışmaya devam etmektedir.
+Çoğu kurumsal müşteri için en yaygın başlangıç senaryosu. Zorlamalı VPN kullanılır; bu da uç noktanın şirket ağı içinde bulunup bulunmadığına bakılmaksızın trafiğin %100'ünün şirket ağına yönlendirildiği anlamına gelir. Microsoft 365 veya İnternet'e göz atma gibi tüm dış (İnternet) bağlı trafik, ara sunucular gibi şirket içi güvenlik ekipmanlarının dışına geri sabitlenir. Kullanıcıların neredeyse %100'ünün uzaktan çalıştığı mevcut iklimde, bu model VPN altyapısına yüksek yük getirir ve tüm kurumsal trafiğin performansını önemli ölçüde engeller ve bu nedenle kuruluşun kriz zamanında verimli bir şekilde çalışmasını engeller.
 
-![VPN Zorunlu Tunnel model 1.](../media/vpn-split-tunneling/vpn-model-1.png)
+![VPN Zorlamalı Tünel modeli 1.](../media/vpn-split-tunneling/vpn-model-1.png)
 
-## <a name="2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions"></a>2. VPN Tunnel çok az sayıda güvenilen özel durum ile zorunlu vpn
+## <a name="2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions"></a>2. Az sayıda güvenilen özel durumla VPN Zorlamalı Tüneli
 
-Bir işletmenin şu kuruluş kapsamında çalışması çok daha verimlidir. Bu model, yüksek yüke ve gecikme süresine duyarlı az sayıda denetimli ve tanımlanmış uç noktaların VPN taraklarını atlayarak doğrudan Microsoft 365 sağlar. Bu, yüklenen hizmetlerin performansını önemli ölçüde artırır ve VPN altyapısının yükünü de azaltır; böylelikle, kaynaklar için daha düşük içerikle çalışması için yine de gereken öğelerin çalışmasına olanak sağlar. Bu makalenin çok sayıda pozitif sonuçla hızlı bir şekilde basit ve tanımlı eylemlere izin verirken geçişte yardımcı olmaya odaklanan bu modeldir.
+Bir kuruluşun altında çalışması için önemli ölçüde daha verimlidir. Bu model, yüksek yük ve gecikme süresine duyarlı olan birkaç denetimli ve tanımlı uç noktanın VPN tünelini atlamasına ve doğrudan Microsoft 365 hizmetine gitmesine olanak tanır. Bu, boşaltılan hizmetlerin performansını önemli ölçüde artırır ve AYRıCA VPN altyapısı üzerindeki yükü azaltır, böylece kaynaklar için daha düşük çekişme ile çalışmasını gerektiren öğelerin çalışmasına izin verir. Bu makalenin, çok sayıda olumlu sonuçla hızlı bir şekilde basit, tanımlı eylemlerin gerçekleştirilmesini sağladığından geçişe yardımcı olmaya odaklandığı bu modeldir.
 
-![Bölünmüş Tunnel VPN modeli 2.](../media/vpn-split-tunneling/vpn-model-2.png)
+![Bölünmüş Tünel VPN modeli 2.](../media/vpn-split-tunneling/vpn-model-2.png)
 
-## <a name="3-vpn-forced-tunnel-with-broad-exceptions"></a>3. VPN Zorunlu Tunnel özel durumlar dışında
+## <a name="3-vpn-forced-tunnel-with-broad-exceptions"></a>3. Geniş özel durumlarla VPN Zorlamalı Tüneli
 
-Model 2'nin kapsamını genişleten. Yalnızca küçük bir tanımlı uç nokta grubunu doğrudan göndermek yerine, bunun yerine tüm trafiği doğrudan Microsoft 365 SalesForce gibi güvenilir hizmetlere gönderir. Bu da şirket VPN altyapısının yükünü daha da azaltır ve tanımlanan hizmetlerin performansını iyiler. Bu modelin uygulanabililiğini değerlendirmek ve uygulamak için daha fazla zaman gerektir, bu büyük olasılıkla iki model başarılı bir şekilde tamam olduktan sonra ileri bir tarihte tekrarlayan bir adımdır.
+Model 2'nin kapsamını genişleter. Yalnızca küçük bir grup tanımlı uç noktayı doğrudan göndermek yerine, tüm trafiği doğrudan Microsoft 365 ve SalesForce gibi güvenilir hizmetlere gönderir. Bu, kurumsal VPN altyapısı üzerindeki yükü daha da azaltır ve tanımlanan hizmetlerin performansını artırır. Bu modelin uygulanabilirliğini değerlendirmek ve uygulamak daha uzun süreceğinden, model iki başarıyla uygulandıktan sonra daha sonraki bir tarihte yinelemeli olarak izleyebileceğiniz bir adımdır.
 
-![Bölünmüş Tunnel VPN modeli 3.](../media/vpn-split-tunneling/vpn-model-3.png)
+![Bölünmüş Tünel VPN modeli 3.](../media/vpn-split-tunneling/vpn-model-3.png)
 
-## <a name="4-vpn-selective-tunnel"></a>4. VPN seçmeli Tunnel
+## <a name="4-vpn-selective-tunnel"></a>4. VPN seçmeli Tüneli
 
-Üçüncü modeli tersine çevirerek yalnızca şirket IP adresi olması olarak tanımlanan trafiğin VPN trafiğine iner ve İnternet yolu diğer her şey için varsayılan yol olur. Bu model, bu modeli güvenli bir şekilde uygulayabilecek [Sıfır](https://www.microsoft.com/security/zero-trust?rtc=1) Güven yolunda kuruluşun iyi bir şekilde yola sahip olması gerekir. Bu modelin veya böyle bir çeşitlemenin, zaman içinde daha fazla hizmet şirket ağına ve buluta taşınacak şekilde gerekli varsayılan ayar olacağını dikkate alın.
+Vpn tüneline yalnızca kurumsal IP adresine sahip olduğu belirlenen trafiğin gönderileceği üçüncü modeli tersine çevirir ve bu nedenle İnternet yolu diğer her şey için varsayılan yoldur. Bu model, bir kuruluşun bu modeli güvenli bir şekilde uygulayabilmesi için [Sıfır Güven](https://www.microsoft.com/security/zero-trust?rtc=1) yolunda iyi olmasını gerektirir. Bu modelin veya bazı varyasyonların, şirket ağından ve buluta daha fazla hizmet taşındığında büyük olasılıkla zaman içinde gerekli varsayılan değer haline geleceği belirtilmelidir.
 
-Microsoft bu modeli dahili olarak kullanır. Microsoft'un VPN bölünmüş bölme uygulaması hakkında daha fazla bilgiyi VPN'de çalıştırma: Microsoft uzaktan iş gücü bağlantısını [nasıl bağlı tutarak devam ediyor makalesinde bulabilirsiniz](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
+Microsoft bu modeli dahili olarak kullanır. Microsoft'un VPN bölünmüş tünel uygulaması hakkında daha fazla bilgi için bkz [. Vpn üzerinde çalıştırma: Microsoft uzak iş gücünü nasıl bağlı tutuyor](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)?
 
-![Bölünmüş Tunnel VPN modeli 4.](../media/vpn-split-tunneling/vpn-model-4.png)
+![Bölünmüş Tünel VPN modeli 4.](../media/vpn-split-tunneling/vpn-model-4.png)
 
 ## <a name="5-no-vpn"></a>5. VPN yok
 
-Model numarası 2'nin daha gelişmiş bir sürümü; böylece tüm iç hizmetler, Azure AD Proxy, Bulut Uygulamaları için Defender, Zscaler ZPA, vb. modern bir güvenlik yaklaşımı veya SDWAN çözümü aracılığıyla yayımlanır.
+2 numaralı modelin daha gelişmiş bir sürümüdür, böylece tüm iç hizmetler modern bir güvenlik yaklaşımı veya Azure AD Proxy, Bulut Uygulamaları için Defender, Zscaler ZPA gibi SDWAN çözümü aracılığıyla yayımlanır.
 
-![Bölünmüş Tunnel VPN modeli 5.](../media/vpn-split-tunneling/vpn-model-5.png)
+![Bölünmüş Tünel VPN modeli 5.](../media/vpn-split-tunneling/vpn-model-5.png)
 
 ## <a name="related-articles"></a>İlgili makaleler
 
-[Genel bakış: VPN bölme bölme Microsoft 365](microsoft-365-vpn-split-tunnel.md)
+[Genel bakış: Microsoft 365 için VPN bölünmüş tüneli](microsoft-365-vpn-split-tunnel.md)
 
-[VPN bölmeli bölme Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
+[Microsoft 365 için VPN bölünmüş tüneli uygulama](microsoft-365-vpn-implement-split-tunnel.md)
 
 [VPN bölünmüş tüneli için Teams medya trafiğinin güvenliğini sağlama](microsoft-365-vpn-securing-teams.md)
 
-[VPN ortamlarında Stream ve canlı etkinlikler için dikkat edilmesi gereken noktalar](microsoft-365-vpn-stream-and-live-events.md)
+[VPN ortamlarında Akış ve canlı etkinlikler için özel dikkat edilmesi gerekenler](microsoft-365-vpn-stream-and-live-events.md)
 
-[Microsoft 365 kullanıcıları için performans iyileştirmeyi iyileştirme](microsoft-365-networking-china.md)
+[Çin kullanıcıları için Microsoft 365 performans iyileştirmesi](microsoft-365-networking-china.md)
 
-[Microsoft 365 Ağ Bağlantısı İlkeleri](microsoft-365-network-connectivity-principles.md)
+[Microsoft 365 Ağ Bağlantı İlkeleri](microsoft-365-network-connectivity-principles.md)
 
 [Microsoft 365 ağ bağlantısını değerlendirme](assessing-network-connectivity.md)
 
-[Microsoft 365 ve performans ayarını yapılandırma](network-planning-and-performance.md)
+[Microsoft 365 ağ ve performans ayarlama](network-planning-and-performance.md)
 
-[Günümüzün benzersiz uzaktan çalışma senaryolarında güvenlik uzmanlarının ve BT'nin modern güvenlik denetimlerini elde etmenin alternatif yolları (Microsoft Güvenlik Ekibi blogu)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+[Günümüzün benzersiz uzaktan çalışma senaryolarında modern güvenlik denetimleri elde etmek için güvenlik uzmanları ve BT için alternatif yollar (Microsoft Güvenlik Ekibi blogu)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
-[Microsoft'ta VPN performansını geliştirme: otomatik Windows 10 izin vermek için VPN profillerini kullanma](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
+[Microsoft'ta VPN performansını geliştirme: otomatik bağlantılara izin vermek için Windows 10 VPN profillerini kullanma](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
-[VPN ile çalışma: Microsoft uzaktan iş gücüne nasıl bağlı tutarak](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
+[VPN üzerinde çalıştırma: Microsoft uzak iş gücünü nasıl bağlı tutuyor?](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
-[Microsoft genel ağı](/azure/networking/microsoft-global-network)
+[Microsoft küresel ağı](/azure/networking/microsoft-global-network)

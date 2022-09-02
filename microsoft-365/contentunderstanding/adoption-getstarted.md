@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'un benimsenmesini Kullanmaya başlayın
+title: Microsoft SharePoint Syntex benimsemeye başlama
 description: İş süreçlerinizi kolaylaştırmanıza yardımcı olmak için kuruluşunuzda SharePoint Syntex kullanmayı ve uygulamayı öğrenin.
 ms.author: chucked
 author: chuckedmonson
@@ -7,27 +7,27 @@ manager: pamgreen
 ms.date: ''
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 9b11c5077551aad666d565b0f3c077b3e43dc78e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 55ec030a82beda2f1ddd767c938eba8769eb55b3
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937839"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67556446"
 ---
-# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'un benimsenmesini Kullanmaya başlayın
+# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex benimsemeye başlama
 
 SharePoint Syntex'da bulunan akıllı içerik hizmetlerini üç bölüme sahip olarak düşünün:
 
 - **İçerik anlama:** Bilgi bulma ve yeniden kullanma için meta verileri otomatik olarak uygulamak üzere içerikten bilgileri sınıflandırmak ve ayıklamak için kodsuz yapay zeka modelleri oluşturun. [İçerik anlama](document-understanding-overview.md) hakkında daha fazla bilgi edinin.
-- **İçerik işleme:** İçeriği yakalama, alma ve kategorilere ayırma işlemlerini otomatikleştirin ve Power Automate kullanarak içerik odaklı işlemleri kolaylaştırın. [İçerik işleme](form-processing-overview.md) hakkında daha fazla bilgi edinin.
-- **İçerik uyumluluğu:** Microsoft Purview Information Protection tümleştirmesiyle güvenliği ve idareyi geliştirmek için içeriği denetleme ve yönetme.
+- **İçerik işleme:** Power Automate'i kullanarak içerik yakalama, alma ve kategorilere ayırma işlemlerini otomatikleştirin ve içerik odaklı işlemleri kolaylaştırın. [İçerik işleme](form-processing-overview.md) hakkında daha fazla bilgi edinin.
+- **İçerik uyumluluğu:** Microsoft Purview Bilgi Koruması tümleştirmesi ile güvenliği ve idareyi geliştirmek için içeriği denetleme ve yönetme.
 
 Yeni yapay zeka hizmetleri ve özellikleriyle, SharePoint Syntex kullanarak içerik anlama ve sınıflandırma uygulamalarını doğrudan içerik yönetimi akışına oluşturabilirsiniz. İçeriğinizi anlamanın iki farklı yolu vardır. Kullandığınız model türü dosya biçimini ve kullanım örneğini temel alır.
 
@@ -104,7 +104,7 @@ Projeniz için paydaşları belirleyin.
 |Rol |Sorumluluk |Bölüm |
 |:-------|:-------|:--------|
 | Yönetici sponsorları   | Üst düzey vizyon ve değerleri şirkete iletme   |  Yönetici liderliği   |
-| müşteri adaylarını Project | Başlatma yürütme ve dağıtım işleminin tamamını denetleme | Project yönetimi |
+| Proje müşteri adaylarını | Başlatma yürütme ve dağıtım işleminin tamamını denetleme | Proje yönetimi |
 | Bilgi yöneticileri| İçerik merkezleri oluşturma ve yönetme | BT veya diğer departman|
 | İçerik yöneticileri ve model sahipleri| Kullanım örneklerini toplama ve model oluşturma ve uygulama | Herhangi bir departman|
 | Şampiyonlar | İtiraz işlemeyi yaygınlaştırmaya ve yönetmeye yardımcı olun | Herhangi bir departman (personel) |

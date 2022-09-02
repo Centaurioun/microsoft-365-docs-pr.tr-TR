@@ -1,12 +1,12 @@
 ---
-title: Uydu SharePoint Multi-Geo coğrafi konumdaki konumları etkinleştirme
+title: Uydu coğrafi konumunuzdaki SharePoint Multi-Geo'sunu etkinleştirme
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
@@ -14,43 +14,41 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
-description: Bu makalede, Genel veya SharePoint uydu coğrafi konumlarında SharePoint Multi-Geo hakkında bilgi sağlar.
-ms.openlocfilehash: b542c1ee77c7b4ca7a6179bac5ce5eaa1090606a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Bu makalede, küresel veya SharePoint yöneticilerine uydu coğrafi konumlarında SharePoint Multi-Geo etkinleştirme hakkında bilgi sağlanır.
+ms.openlocfilehash: 41eb4573c9e07380b0df5df03848dadfb64c239d
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330447"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67556336"
 ---
-# <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Uydu SharePoint Multi-Geo coğrafi konumdaki konumları etkinleştirme
+# <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Uydu coğrafi konumunuzdaki SharePoint Multi-Geo'sunu etkinleştirme
 
-Bu makale **, SharePoint Multi-Geo** 27 Mart 2019'da genel kullanıma hazır hale gelmeden ve uydu coğrafi konumlarında SharePoint Multi-Geo'i etkinleştirmemiş olan Genel ya da SharePoint Multi-Geo yöneticilerine yöneliktir. SharePoint 
+Bu makale, SharePoint Multi-Geo özellikleri 27 Mart 2019'da genel kullanıma **sunulmadan önce** Multi-Geo uydu konumu oluşturan ve uydu coğrafi konumlarında SharePoint Multi-Geo etkinleştirmeyen Genel veya SharePoint yöneticilerine yöneliktir. 
 
 >[!Note]
->**27 Mart 2019'dan** sonra yeni bir coğrafi konum eklediysanız, yeni coğrafi konumunuz coğrafi konum bilgi ve görev için zaten etkinleştirildiğinden bu yönergeleri OneDrive SharePoint Multi-Geo.
+>**27 Mart 2019'un ardından** yeni bir coğrafi konum eklediyseniz, yeni coğrafi konumunuz OneDrive ve SharePoint Multi-Geo için zaten etkinleştirileceği için bu yönergeleri gerçekleştirmeniz gerekmez.
 
-Bu yönergeler, çok coğrafi SharePoint uydu kullanıcılarının O365'te hem uydu hem de OneDrive SharePoint Multi-Geo olanaklarını kullanmalarını sağlayacaktır. 
+Bu yönergeler, Multi-Geo uydu kullanıcılarınızın O365'teki hem OneDrive hem de SharePoint Multi-Geo özelliklerinden yararlanabilmesi için SharePoint'i uydu konumunuzda etkinleştirmenize olanak tanır. 
 
 >[!IMPORTANT]
->Bu özelliğin tek bir yolu olduğunu lütfen unutmayın. SPO modunu ayarlamanın ardından, desteği olan bir yükseltme olmadan OneDrive Multi-Geo modunu geri döndürmeniz mümkün olmayacaktır. 
+>Bunun tek bir etkinleştirme yöntemi olduğunu lütfen unutmayın. SPO modunu ayarladıktan sonra, destekle yükseltme olmadan kiracınızı yalnızca OneDrive Multi-Geo moduna geri döndüremezsiniz. 
 
-## <a name="to-set-a-geo-location-into-spo-mode"></a>SPO Moduna coğrafi bir konum ayarlamak için
+## <a name="to-set-a-geo-location-into-spo-mode"></a>Coğrafi konumu SPO Moduna ayarlamak için
 
-SPO moduna coğrafi bir konum ayarlamak için, SPO Modunda ayarlamak istediğiniz coğrafi konuma bağlanin:
+Bir coğrafi konumu SPO moduna ayarlamak için SPO Modunda ayarlamak istediğiniz coğrafi konuma bağlanın:
 
-1.    SharePoint Online Yönetim Kabuğu'nu açma 
-2.    Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Credential $credential
+1.    SharePoint Online Yönetim Kabuğunuzu açma 
+2.    Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Kimlik bilgisi $credential
 3.    Set-SPOMultiGeoExperience</br></br>
 ![Set-SPOMultiGeoExperience.](../media/Set-SPO-MultiGeo.jpg)
-4.    Bu işlem genellikle, hizmette çeşitli yayımlama işlemleri yaparken ve kiracınızı yeniden damgalarken yaklaşık bir saat sürer. En az 1 saat sonra lütfen Get-SPOMultiGeoExperience işlemi gerçekleştirin.  Bu size, bu coğrafi konumun SPO modunda olup olmadığını gösterir.</br></br>
-![Set-SPOMultiGeoExperience.](../media/Get-SPO-MultiGeo.jpg)
+4.    Bu işlem genellikle yaklaşık bir saat sürerken biz hizmette çeşitli geri yayımlama işlemleri gerçekleştirir ve kiracınızı yeniden damgalarız. En az 1 saat sonra lütfen Get-SPOMultiGeoExperience gerçekleştirin.  Bu, bu coğrafi konumun SPO modunda olup olmadığını gösterir.</br></br>
+![Set-SPOMultiGeoExperience görüntüsü.](../media/Get-SPO-MultiGeo.jpg)
 
- 
- 
- 
+  
 >[!Note]
->Hizmette bazı önbellekler 24 saatte bir güncelleştirilmektedir, bu nedenle 24 saate kadar bir süre boyunca uydu coğrafi olarak ODB modundaymış gibi aralıklı olarak davranabilirsiniz. Bu, herhangi bir teknik soruna neden olmaz. 
+>Hizmetteki belirli önbellekler 24 saatte bir güncelleştirilir, bu nedenle 24 saate kadar bir süre boyunca uydu coğrafi bölgeniz aralıklı olarak ODB modundaymış gibi davranabilir. Bu herhangi bir teknik soruna neden olmaz. 
  
-E-SharePoint Multi-Geo daha fazla bilgi için lütfen şu konuya [aka.ms/sharepointmultigeo](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)
+SharePoint Multi-Geo hakkında daha fazla bilgi için lütfen [aka.ms/sharepointmultigeo](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)
 
 

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 09/30/2020
 audience: ITPro
 ms.topic: landing-page
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,25 +17,25 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
-description: Office Server iş yüklerini Microsoft Azure dağıtmaya yönelik yararlı bilgilerin bağlantılarının listesini sağlar.
-ms.openlocfilehash: 9acb67db92e47951bf8d85cdcf6ad35c718c231b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft Azure'da Office Server iş yüklerini dağıtmaya yönelik yararlı bilgilerin bağlantılarının listesini sağlar.
+ms.openlocfilehash: 2d414d7f3f7c289034dd6e653d8bef49c17c2052
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091247"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560361"
 ---
 # <a name="hybrid-solutions"></a>Hibrit çözümler
 
-Microsoft Azure ile genellikle Azure altyapı hizmetlerinde şirket içinde dağıtılan bazı Office Sunucusu iş yüklerini dağıtabilirsiniz.
+Microsoft Azure ile, genellikle Azure altyapı hizmetlerinde şirket içinde dağıtılan bazı Office Server iş yüklerini dağıtabilirsiniz.
   
 Azure'da Microsoft 365 kimlik altyapısı için:
 
-- [SharePoint Sunucusu Kimlik Doğrulaması için Azure AD kullanma](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
+- [SharePoint Server Kimlik Doğrulaması için Azure AD Kullanma](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
 
-- [Microsoft Azure'da Microsoft 365 Dizin Eşitlemesini Dağıtma](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [Microsoft Azure'da Microsoft 365 Dizin Eşitleme'yi dağıtma](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
-- [şirket içi ağı Microsoft Azure bir sanal ağa Bağlan](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
+- [Şirket içi ağı Microsoft Azure sanal ağına bağlama](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
 - [Azure'da Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulamasını dağıtma](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
     
@@ -45,7 +45,7 @@ Azure'daki SharePoint Server 2013 iş yükleri için:
     
 - [Microsoft Azure'da SharePoint Server 2013 Olağanüstü Durum Kurtarma](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
-- [SharePoint Server 2013 kullanarak Microsoft Azure'daki İnternet Siteleri](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
+- [SharePoint Server 2013 kullanarak Microsoft Azure'da İnternet Siteleri](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
 ## <a name="related-topics"></a>İlgili konular

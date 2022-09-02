@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 76c53ce599b811ed868eb51e94e0cf0466987944
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 783ff81d7317792a99c6ad6ad2e584c843466001
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522686"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560691"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>iOS'ta Uç Nokta için Microsoft Defender dağıtma
 
@@ -56,7 +56,7 @@ Intune Şirket Portalı aracılığıyla iOS'ta Uç Nokta için Defender'ı dağ
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/ios-deploy-1.png" alt-text="Microsoft Endpoint Manager Yönetici Center'da Uygulama ekle sekmesi" lightbox="images/ios-deploy-1.png":::
 
-1. **Uygulama ekle** sayfasında App Store **ara'ya** tıklayın ve arama çubuğuna **Uç Nokta için Microsoft Defender** yazın. Arama sonuçları bölümünde *Uç Nokta için Microsoft Defender* ve **Seç'e** tıklayın.
+1. **Uygulama ekle** sayfasında **App Store ara'ya** tıklayın ve arama çubuğuna **Microsoft Defender** yazın. Arama sonuçları bölümünde *Microsoft Defender'a* tıklayın ve **Seç'e** tıklayın.
 
 1. En düşük işletim sistemi olarak **iOS 11.0'ı** seçin. Uygulama hakkındaki diğer bilgileri gözden geçirin ve **İleri'ye** tıklayın.
 

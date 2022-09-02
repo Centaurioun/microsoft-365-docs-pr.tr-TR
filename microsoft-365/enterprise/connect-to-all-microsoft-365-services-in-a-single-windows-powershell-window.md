@@ -1,12 +1,12 @@
 ---
-title: Tek bir PowerShell penceresindeki tüm Microsoft 365 hizmetlerine Bağlan
+title: Tek bir PowerShell penceresinde tüm Microsoft 365 hizmetlerine bağlanma
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 11/23/2021
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
@@ -17,30 +17,30 @@ ms.custom:
 - O365ITProTrain
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
-description: 'Özet: Tek bir PowerShell penceresindeki tüm Microsoft 365 hizmetlerine Bağlan.'
-ms.openlocfilehash: babb5c308310e1444a2ac20b6557f4f7a2050f79
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: 'Özet: Tek bir PowerShell penceresinde tüm Microsoft 365 hizmetlerine bağlanın.'
+ms.openlocfilehash: 67ee0831a0d78a971982f75653ca49e760e61692
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016910"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560383"
 ---
-# <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Tek bir PowerShell penceresindeki tüm Microsoft 365 hizmetlerine Bağlan
+# <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Tek bir PowerShell penceresinde tüm Microsoft 365 hizmetlerine bağlanma
 
-Microsoft 365 yönetmek için PowerShell kullandığınızda, aynı anda birden çok PowerShell oturumu açabilirsiniz. Kullanıcı hesaplarını, SharePoint Online, Exchange Online, Microsoft Teams, Office 365 için Microsoft Defender özelliklerini (güvenlik) ve Microsoft Purview uyumluluk özelliklerini yönetmek için farklı PowerShell pencereleriniz olabilir.
+Microsoft 365'i yönetmek için PowerShell kullandığınızda, aynı anda birden çok PowerShell oturumu açabilirsiniz. Kullanıcı hesaplarını, SharePoint Online'ı, Exchange Online, Microsoft Teams'i, Office 365 için Microsoft Defender özelliklerini (güvenlik) ve Microsoft Purview uyumluluk özelliklerini yönetmek için farklı PowerShell pencereleriniz olabilir.
 
-Bu senaryo, Microsoft 365 yönetmek için en uygun senaryo değildir çünkü hizmetler arası yönetim için bu pencereler arasında veri alışverişi yapamazsınız. Bu makalede, Microsoft 365 hesapları, Exchange Online, SharePoint Online, Microsoft Teams ve Office 365 için Defender Microsoft Purview uyumluluğundaki özellikleri yönetmek için tek bir PowerShell örneğinin nasıl kullanılacağı açıklanmaktadır.
+Bu senaryo Microsoft 365'i yönetmek için en uygun senaryo değildir çünkü hizmetler arası yönetim için bu pencereler arasında veri alışverişi yapamazsınız. Bu makalede, Microsoft Purview uyumluluğu Office 365 için Defender Microsoft 365 hesaplarını, Exchange Online, SharePoint Online'ı, Microsoft Teams'i ve özellikleri yönetmek için tek bir PowerShell örneğinin nasıl kullanılacağı açıklanır.
 
 >[!Note]
->Bu makale şu anda yalnızca Dünya Çapında (+GCC) buluta bağlanma komutlarını içerir. Notlar, diğer Microsoft 365 bulutlara bağlanma hakkındaki makalelerin bağlantılarını sağlar.
+>Bu makale şu anda yalnızca Dünya Çapında (+GCC) buluta bağlanma komutlarını içerir. Notlar, diğer Microsoft 365 bulutlarına bağlanma hakkındaki makalelerin bağlantılarını sağlar.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-PowerShell'in tek bir örneğinden tüm Microsoft 365 yönetebilmeniz için aşağıdaki önkoşulları göz önünde bulundurun:
+PowerShell'in tek bir örneğinden tüm Microsoft 365'i yönetebilmeniz için aşağıdaki önkoşulları göz önünde bulundurun:
 
-- Kullandığınız Microsoft 365 iş veya okul hesabı, Microsoft 365 yönetici rolünün üyesi olmalıdır. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../admin/add-users/about-admin-roles.md). Bu, Microsoft 365 için PowerShell'e yönelik bir gereksinimdir, ancak diğer tüm Microsoft 365 hizmetleri için zorunlu değildir.
+- Kullandığınız Microsoft 365 iş veya okul hesabı, Microsoft 365 yönetici rolünün üyesi olmalıdır. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../admin/add-users/about-admin-roles.md). Bu, Microsoft 365 için PowerShell için bir gereksinimdir, ancak diğer tüm Microsoft 365 hizmetleri için zorunlu değildir.
 
-- Windows aşağıdaki 64 bit sürümlerini kullanabilirsiniz:
+- Windows'un aşağıdaki 64 bit sürümlerini kullanabilirsiniz:
   - Windows 11
   - Windows 10
   - Windows 8.1 veya Windows 8
@@ -55,8 +55,8 @@ PowerShell'in tek bir örneğinden tüm Microsoft 365 yönetebilmeniz için aşa
 - Azure Active Directory (Azure AD), Exchange Online, Office 365 için Defender, Microsoft Purview uyumluluğu, SharePoint Online ve Teams için gereken modülleri yüklemeniz gerekir:
 
   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
-  - [çevrimiçi yönetim kabuğunu SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-  - [PowerShell Modülünü Teams](/microsoftteams/teams-powershell-overview)
+  - [SharePoint Online Yönetim Kabuğu](https://go.microsoft.com/fwlink/p/?LinkId=255251)
+  - [Teams PowerShell Modülü](/microsoftteams/teams-powershell-overview)
   - [PowerShell V2'Exchange Online](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
   - [Teams PowerShell'e Genel Bakış](/microsoftteams/teams-powershell-overview)
 
@@ -78,7 +78,7 @@ Oturum açmak için yalnızca bir parola kullanırken tek bir PowerShell pencere
    $credential = Get-Credential
    ```
 
-3. Graph için PowerShell Azure Active Directory modülünü kullanarak Azure AD bağlanmak için bu komutu çalıştırın.
+3. Graph için Azure Active Directory PowerShell modülünü kullanarak Azure AD bağlanmak için bu komutu çalıştırın.
 
    ```powershell
    Connect-AzureAD -Credential $credential
@@ -109,7 +109,7 @@ Oturum açmak için yalnızca bir parola kullanırken tek bir PowerShell pencere
    ```
 
    > [!Note]
-   > Worldwide dışındaki Microsoft 365 bulutların Exchange Online bağlanmak için bkz. [PowerShell'i Exchange Online için Bağlan](/powershell/exchange/connect-to-exchange-online-powershell).
+   > Worldwide dışındaki Microsoft 365 bulutlarının Exchange Online bağlanmak için bkz. [Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
 
 6. Güvenlik & Uyumluluk PowerShell'e bağlanmak için bu komutları çalıştırın.
 
@@ -119,7 +119,7 @@ Oturum açmak için yalnızca bir parola kullanırken tek bir PowerShell pencere
    ```
 
    > [!NOTE]
-   > Worldwide dışındaki Microsoft 365 bulutlar için Güvenlik & Uyumluluğu PowerShell'e bağlanmak için bkz. [Güvenlik & Uyumluluğu PowerShell'e Bağlan](/powershell/exchange/connect-to-scc-powershell).
+   > Dünya Çapında dışındaki Microsoft 365 bulutları için Güvenlik & Uyumluluğu PowerShell'e bağlanmak için bkz. [Güvenlik & Uyumluluk PowerShell'e bağlanma](/powershell/exchange/connect-to-scc-powershell).
 
 7. Teams PowerShell'e bağlanmak için bu komutları çalıştırın.
 
@@ -130,13 +130,13 @@ Oturum açmak için yalnızca bir parola kullanırken tek bir PowerShell pencere
    ```
 
    > [!NOTE]
-   > Skype Kurumsal Online Connector şu anda en son Teams PowerShell modülünün bir parçasıdır. PowerShell genel sürümünün en son Teams kullanıyorsanız, Skype Kurumsal Çevrimiçi Bağlayıcı'yı yüklemeniz gerekmez.
+   > Skype Kurumsal Online Connector şu anda en son Teams PowerShell modülünün bir parçasıdır. En son Teams PowerShell genel sürümünü kullanıyorsanız Skype Kurumsal Çevrimiçi Bağlayıcısı'nı yüklemeniz gerekmez.
    >
-   > *Worldwide* dışındaki Microsoft Teams bulutlara bağlanmak için bkz. [Bağlan-MicrosoftTeams](/powershell/module/teams/connect-microsoftteams).
+   > *Worldwide* dışındaki Microsoft Teams bulutlarına bağlanmak için bkz [. Connect-MicrosoftTeams](/powershell/module/teams/connect-microsoftteams).
 
-### <a name="azure-active-directory-powershell-for-graph-module-when-using-just-a-password"></a>Yalnızca parola kullanırken Graph modülü için PowerShell'i Azure Active Directory
+### <a name="azure-active-directory-powershell-for-graph-module-when-using-just-a-password"></a>Yalnızca parola kullanırken Graph için Azure Active Directory PowerShell modülü
 
-Graph için PowerShell Azure Active Directory modülünü kullandığınızda tek bir bloktaki tüm hizmetlere yönelik komutlar aşağıdadır. Oturum açma için etki alanı konağınızın adını ve UPN'sini belirtin ve hepsini aynı anda çalıştırın.
+Graph için Azure Active Directory PowerShell modülünü kullandığınızda tek bir bloktaki tüm hizmetlere yönelik komutlar aşağıdadır. Oturum açma için etki alanı konağınızın adını ve UPN'sini belirtin ve hepsini aynı anda çalıştırın.
 
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -181,9 +181,9 @@ Connect-MicrosoftTeams -Credential $credential
 
 ## <a name="connection-steps-when-using-multi-factor-authentication"></a>Çok faktörlü kimlik doğrulaması kullanırken bağlantı adımları
 
-### <a name="azure-active-directory-powershell-for-graph-module-when-using-mfa"></a>MFA kullanırken Graph modülü için PowerShell'i Azure Active Directory
+### <a name="azure-active-directory-powershell-for-graph-module-when-using-mfa"></a>MFA kullanırken Graph için Azure Active Directory PowerShell modülü
 
-Graph modülü için Azure Active Directory PowerShell ile çok faktörlü kimlik doğrulaması kullandığınızda birden çok Microsoft 365 hizmete bağlanmak için tek bir bloktaki tüm komutlar aşağıdadır.
+Graph için Azure Active Directory PowerShell modülüyle çok faktörlü kimlik doğrulaması kullandığınızda birden çok Microsoft 365 hizmetlerine bağlanmak için tek bir bloktaki tüm komutları aşağıda bulabilirsiniz.
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -224,7 +224,7 @@ Connect-MicrosoftTeams
 
 ## <a name="close-the-powershell-window"></a>PowerShell penceresini kapatma
 
-PowerShell penceresini kapatmak için şu komutu çalıştırarak SharePoint Online, Teams, Office 365 için Defender ve Microsoft Purview uyumluluğuna yönelik etkin oturumları kaldırın:
+PowerShell penceresini kapatmak için şu komutu çalıştırarak SharePoint Online, Teams, Office 365 için Defender ve Microsoft Purview uyumluluğundaki etkin oturumları kaldırın:
 
 ```powershell
 Disconnect-SPOService; Disconnect-MicrosoftTeams; Disconnect-ExchangeOnline
@@ -233,5 +233,5 @@ Disconnect-SPOService; Disconnect-MicrosoftTeams; Disconnect-ExchangeOnline
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [PowerShell ile Microsoft 365’e bağlanma](connect-to-microsoft-365-powershell.md)
-- [PowerShell ile SharePoint Online'i yönetme](manage-sharepoint-online-with-microsoft-365-powershell.md)
+- [SharePoint Online'i PowerShell ile yönetme](manage-sharepoint-online-with-microsoft-365-powershell.md)
 - [PowerShell ile Microsoft 365 kullanıcı hesaplarını, lisanslarını ve gruplarını yönetme](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)

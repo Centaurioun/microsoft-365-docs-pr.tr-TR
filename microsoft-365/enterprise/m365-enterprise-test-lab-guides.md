@@ -1,5 +1,5 @@
 ---
-title: Kurumsal Test Laboratuvarı Kılavuzları için Microsoft 365
+title: Kurumsal test laboratuvarı kılavuzları için Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 11/20/2019
 audience: ITPro
 ms.topic: landing-page
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,15 +17,15 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: Kurumsal Microsoft 365 için tanıtım, kavram kanıtı veya geliştirme/test ortamları ayarlamak için bu Test Laboratuvarı Kılavuzlarını kullanın.
-ms.openlocfilehash: 8c4444b599682ad40ebba88b37d83125fccd99f0
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Kuruluş için Microsoft 365'e yönelik tanıtım, kavram kanıtı veya geliştirme/test ortamları ayarlamak için bu Test Laboratuvarı Kılavuzlarını kullanın.
+ms.openlocfilehash: 8c0d66e0a3ee2cfee3d387d2aa233e0d6a6d40c6
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097436"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560295"
 ---
-# <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Kurumsal Test Laboratuvarı Kılavuzları için Microsoft 365
+# <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Kurumsal test laboratuvarı kılavuzları için Microsoft 365
 
 *Bu, hem kurumsal hem de Office 365 Kurumsal için Microsoft 365 için geçerlidir.*
 
@@ -37,17 +37,17 @@ Geliştirme/test ortamları olarak da bilinen uygulamaları geliştirmek ve test
   
 ![Microsoft bulutu için Test Laboratuvarı Kılavuzları.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Kurumsal Test Laboratuvarı Kılavuzu yığınının Microsoft 365 tüm makalelere yönelik görsel bir harita için aşağıdaki grafiği genişletin veya [kurumsal Test Laboratuvarı Kılavuzu Yığını için Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf) gidin.
+Kuruluş için Microsoft 365 Test Laboratuvarı Kılavuzu yığınındaki tüm makalelere yönelik görsel bir harita için aşağıdaki grafiği genişletin veya [Kurumsal Test Laboratuvarı Için Microsoft 365 Kılavuz Yığını'na](../downloads/Microsoft365EnterpriseTLGStack.pdf) gidin.
 
 [![Kurumsal Test Laboratuvarı Kılavuzu yığını için Microsoft 365.](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>Temel yapılandırma
 
-İlk olarak[, kuruluş için Microsoft 365 için](/microsoft-365-enterprise/) bir test ortamı oluşturun. İki farklı tür temel yapılandırma oluşturabilirsiniz:
+İlk olarak, [Kuruluş için Microsoft 365 için](/microsoft-365-enterprise/) bir test ortamı oluşturun. İki farklı tür temel yapılandırma oluşturabilirsiniz:
 
-- [Basit temel yapılandırma](lightweight-base-configuration-microsoft-365-enterprise.md) - Şirket içi bileşenler içermeyen yalnızca bulut ortamında kurumsal özellikler ve özellikler için Microsoft 365 yapılandırmak ve göstermek istediğinizde bunu kullanın.
+- [Basit temel yapılandırma](lightweight-base-configuration-microsoft-365-enterprise.md) - Şirket içi bileşenler içermeyen yalnızca bulut ortamında kurumsal özellikler ve özellikler için Microsoft 365'i yapılandırmak ve göstermek istediğinizde bunu kullanın.
 
-- [Kurumsal temel yapılandırma simülasyonu](simulated-ent-base-configuration-microsoft-365-enterprise.md) - Active Directory Domain Services (AD DS) etki alanı gibi şirket içi bileşenleri kullanan karma bulut ortamında kurumsal özellikler ve özellikler için Microsoft 365 yapılandırmak ve göstermek istediğinizde bunu kullanın.
+- [Kurumsal temel yapılandırma simülasyonu](simulated-ent-base-configuration-microsoft-365-enterprise.md) - Active Directory Domain Services (AD DS) etki alanı gibi şirket içi bileşenleri kullanan karma bulut ortamında kurumsal özellikler ve özellikler için Microsoft 365'i yapılandırmak ve göstermek istediğinizde bunu kullanın.
 
 Microsoft 365 E5 lisansını deneme veya üretim test ortamınıza eklemeyerek Office 365 E5 için test ortamları da oluşturabilirsiniz.
     
@@ -69,7 +69,7 @@ Kimlikle ilgili özellikleri ve özellikleri göstermek için bkz:
 
 - [Microsoft Azure AD Sorunsuz Çoklu Oturum Açma](single-sign-on-m365-ent-test-environment.md)
   
-   Ad DS etki alanı denetleyicisiyle Azure AD Sorunsuz Çoklu Oturum Açma 'yı (Sorunsuz SSO) etkinleştirin ve test edin.
+   AD DS etki alanı denetleyicisiyle Sorunsuz Çoklu Oturum Açma (Sorunsuz SSO) Azure AD etkinleştirin ve test edin.
 
 - [Çok faktörlü kimlik doğrulaması](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -81,7 +81,7 @@ Kimlikle ilgili özellikleri ve özellikleri göstermek için bkz:
 
 - [Parola geri yazma](password-writeback-m365-ent-test-environment.md)
 
-   Azure AD'den AD DS kullanıcı hesabınızdaki parolayı değiştirmek için parola geri yazma özelliğini kullanın.
+   AD DS kullanıcı hesabınızdaki parolayı Azure AD değiştirmek için parola geri yazma özelliğini kullanın.
 
 - [Parola sıfırlama](password-reset-m365-ent-test-environment.md)
 
@@ -117,7 +117,7 @@ Bilgi korumasıyla ilgili özellikleri ve özellikleri göstermek için bkz:
 
 - [Artırılmış Microsoft 365 güvenliği](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
     
-   Artırılmış Microsoft 365 güvenlik ayarlarını yapılandırın ve yerleşik güvenlik araçlarını araştırın.
+   Artırılmış Microsoft 365 güvenliği için ayarları yapılandırın ve yerleşik güvenlik araçlarını araştırın.
   
 - [Veri sınıflandırması](data-classification-microsoft-365-enterprise-dev-test-environment.md)
     

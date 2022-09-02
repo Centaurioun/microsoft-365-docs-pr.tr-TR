@@ -6,7 +6,7 @@ manager: dzazzo
 ms.date: 05/19/2020
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -18,14 +18,14 @@ search.appverid:
 - OGD150
 - MOE150
 ms.assetid: ''
-description: 'Özet: Office 365 GCC Yüksek ve DoD ek ağ güvenlik gereksinimlerine sahiptir'
+description: 'Özet: GCC High ve DoD Office 365 ek ağ güvenlik gereksinimleri vardır'
 hideEdit: true
-ms.openlocfilehash: 86d3eb3fb4db42eda2be0c2c66fc754fbfd35f1e
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 90dae84ac9fb5144aaf6e3049dedfa8c27dd227b
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754278"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67556292"
 ---
 # <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Office 365 GCC High ve DOD için ek ağ güvenliği gereksinimleri
 
@@ -33,7 +33,7 @@ ms.locfileid: "65754278"
 
 Office 365 GCC High ve DOD, Birleşik Devletler Kamu'nun ve tedarikçilerinin ve yüklenicilerinin ihtiyaçlarını karşılamak için güvenli bulut ortamlarıdır.  Bu bulut ortamları, hizmetlerin erişmesine izin verilen dış uç noktalar üzerinde ek ağ kısıtlamalarına sahiptir.
 
-GCC Federasyon kimliklerini veya karma bir arada bulunmayı planlayan Yüksek ve DOD müşterileri, Microsoft'un mevcut şirket içi dağıtımlarınıza gelen ve/veya giden erişime izin vermesini gerektirebilir.  Bu etkinliklere örnek olarak şunlar verilebilir:
+Federasyon kimliklerini veya karma bir arada bulunmayı planlayan GCC Yüksek ve DOD müşterileri, Microsoft'un mevcut şirket içi dağıtımlarınıza gelen ve/veya giden erişime izin vermesini gerektirebilir.  Bu etkinliklere örnek olarak şunlar verilebilir:
 
 * Federasyon kimliklerinin kullanımı (Active Directory Federasyon Hizmetleri (AD FS) veya desteklenen benzer STS ile)
 * Şirket içi Exchange Server veya Skype Kurumsal dağıtımıyla karma birlikte bulunma
@@ -48,13 +48,13 @@ Hizmetin şirket içi uç noktalarınızla iletişim kurmasına izin vermek içi
 
 * **Son**: [İstekleri Office 365 Kamu Allow-List](mailto:o365gwlt@microsoft.com)
 * **Kimden**: Kiracı yöneticisi - e-posta gönderme işleminin kiracınızdaki Genel Yönetici kişisi ile eşleşmesi **gerekir**
-* **E-posta konusu**: Office 365 GCC Yüksek Ağ İsteği - contoso.onmicrosoft.us (kiracınızın adıyla değiştirin)
+* **Email konu**: Office 365 GCC Yüksek Ağ İsteği - contoso.onmicrosoft.us (kiracı adınız ile değiştirin)
 
 İletinizin gövdesi aşağıdaki verileri içermelidir:
 
 * Microsoft Online Services kiracı adınız (örneğin, contoso.onmicrosoft.com, fabrikam.onmicrosoft.us)
 * Microsoft'un ağ değişiklikleriyle ilgili devam eden iletişimler için iletişim kuracağı ve/veya geçersiz alt ağlar için takip edeceği bir e-posta dağıtım listesi
-* Şirket içi dağıtımlarınızla karma birlikte Microsoft Teams kullanmayı planlayıp planlamayabileceğinizi belirtin
+* Şirket içi dağıtımlarınızla Microsoft Teams karma bir arada bulunmayı kullanmayı planlayıp planlamayabileceğinizi belirtin
 * Federasyon kimlik sistemi dışarıdan erişilebilir URL (örneğin, sts.contoso.com) ve CIDR gösterimindeki IP adresi aralığı (örneğin, . 10.1.1.0/28)
 * CIDR gösteriminde Şirket İçi PKI Sertifika İptal Listesi URL'si ve IP adresi aralığı
 * CIDR gösteriminde şirket içi Exchange Server dağıtımı için dışarıdan erişilebilir URL ve IP adresi aralığı

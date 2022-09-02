@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: Rights Management hizmetini Microsoft 365 ile etkinleştirme ve kullanma.
-ms.openlocfilehash: f670de1e8bb5e7b46acaa180e0d875628d364ae9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 69e9cce3dade28460919a2883e731559678c351e
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099070"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560669"
 ---
 # <a name="activate-rights-management-in-the-admin-center"></a>Yönetim merkezinde hak yönetimini etkinleştirme
 
-Microsoft 365 uygulama ve hizmetlerinin Bilgi Hakları Yönetimi (IRM) özelliklerini kullanabilmek için önce Rights Management hizmetini (RMS) etkinleştirmeniz gerekir. RMS'yi etkinleştirdikten sonra, kuruluşunuz Azure RMS kullanarak önemli belgeleri ve e-postaları korumaya başlayabilir. Bu bilgi koruma çözümü tüm dosya türlerini koruyabilir ve Excel, Microsoft Word ve diğerleri, Exchange Online ve SharePoint Online gibi istemci uygulamalarıyla ve Microsoft Exchange ve Microsoft SharePoint gibi sunucularla tümleştirilir.
+Microsoft 365 uygulamalarının ve hizmetlerinin Bilgi Hakları Yönetimi (IRM) özelliklerini kullanabilmek için önce Rights Management hizmetini (RMS) etkinleştirmeniz gerekir. RMS'yi etkinleştirdikten sonra, kuruluşunuz Azure RMS kullanarak önemli belgeleri ve e-postaları korumaya başlayabilir. Bu bilgi koruma çözümü tüm dosya türlerini koruyabilir ve Excel, Microsoft Word ve diğerleri, Exchange Online ve SharePoint Online gibi istemci uygulamalarıyla ve Microsoft Exchange ve Microsoft SharePoint gibi sunucularla tümleştirilir.
   
 > [!TIP]
 > Rights Management'a ihtiyacınız olup olmadığından emin değilseniz, kuruluşunuzun [bu iş sorunlarından veya gereksinimlerinden birinin veya](/azure/information-protection/what-is-azure-rms#business-problems-solved-by-azure-rights-management) daha fazlasının olup olmadığını denetleyin. 

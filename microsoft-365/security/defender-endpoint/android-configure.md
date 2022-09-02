@@ -2,7 +2,7 @@
 title: Android’de Uç Nokta için Microsoft Defender’ı yapılandırın
 description: Android'de Uç Nokta için Microsoft Defender yapılandırmayı açıklar
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mde, android, configuration
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 596ed2681df34ef288fadd4f28f96b1a8aebee73
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.subservice: mde
+ms.openlocfilehash: 5a644d63c2e07ea03c98cba6d9925864381161b0
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175564"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560977"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Android özelliklerinde Uç Nokta için Defender’ı yapılandırın
 
@@ -46,6 +46,8 @@ Android'de Uç Nokta için Defender, yöneticilerin Android cihazlarını destek
 
 ## <a name="configure-web-protection"></a>Web korumasını yapılandırma
 Android'de Uç Nokta için Defender, BT Yöneticilerinin web koruması özelliğini yapılandırmalarına olanak tanır. Bu özellik Microsoft Endpoint Manager Yönetici merkezinde kullanılabilir.
+
+[Web koruması](web-protection-overview.md) , cihazların web tehditlerine karşı korunmasına ve kullanıcıların kimlik avı saldırılarına karşı korunmasına yardımcı olur. Web koruması kapsamında kimlik avı önleme ve özel göstergelerin (URL ve IP adresleri) desteklendiğini unutmayın. Web içeriği filtreleme şu anda mobil platformlarda desteklenmiyor.
 
 > [!NOTE]
 > Android'de Uç Nokta için Defender, Web Koruması özelliğini sağlamak için bir VPN kullanır. Bu normal bir VPN değildir ve cihazın dışına trafiği almayan yerel/kendi kendini döngüye alan bir VPN'dir.

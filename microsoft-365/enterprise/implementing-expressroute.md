@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 12/5/2017
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: İnternet'e yönelik birçok Office 365 hizmeti için alternatif yönlendirme yolu sağlayan Office 365 için ExpressRoute'u uygulamayı öğrenin.
-ms.openlocfilehash: d577a30d97630b32fa080c9d17620b429562c5df
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e3a63aea6f0947127d05de6e8bd90e386646dc59
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090373"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560317"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365 için ExpressRoute Uygulama
 
@@ -68,7 +68,7 @@ Kuruluşunuzun gereksinimlerini toplamak için:
 
 - İç WAN omurganızın ve topolojinizin ayrıntılarını, uydu sitelerinin bağlantısını, son mil kullanıcı bağlantısını, ağ çevre çıkış noktalarına yönlendirmeyi ve ara sunucu hizmetlerini gösteren mevcut ağ topolojisinin belgelerini toplayın.
 
-  - Office 365 ve diğer Microsoft hizmetleri bağlanacağı ağ diyagramlarında hem İnternet hem de önerilen ExpressRoute bağlantı yollarını gösteren gelen hizmet uç noktalarını belirleyin.
+  - Office 365 ve diğer Microsoft hizmetlerinin bağlanacağı ağ diyagramlarında hem İnternet hem de önerilen ExpressRoute bağlantı yollarını gösteren gelen hizmet uç noktalarını belirleyin.
 
   - Tüm coğrafi kullanıcı konumlarını ve konumlar arasındaki WAN bağlantısının yanı sıra şu anda İnternet'e çıkış yapan konumları ve ExpressRoute eşleme konumuna çıkış yapılmasının önerildiği konumları belirleyin.
 
@@ -91,7 +91,7 @@ Yönlendirmeyi ve diğer ağ karmaşıklıklarını en aza indirmek için, yaln�
   
 Ağ trafiği kataloğunuz, şirket içi ağınızla Microsoft arasında sahip olduğunuz tüm gelen ve giden ağ bağlantılarının listelerini içermelidir.
   
-- Giden ağ trafiği akışları, şirket içi ortamınızdan( örneğin iç istemcilerden veya sunuculardan) Microsoft hizmetleri hedefine sahip bir bağlantının başlatıldığı tüm senaryolardır. Bu bağlantılar, örneğin bağlantının Office 365 yolundaki ara sunuculardan, güvenlik duvarlarından veya diğer ağ cihazlarından geçtiği durumlarda doğrudan Office 365 veya dolaylı olabilir.
+- Giden ağ trafiği akışları, şirket içi ortamınızdan (örneğin, iç istemcilerden veya sunuculardan) Microsoft hizmetlerinin hedefine sahip bir bağlantının başlatıldığı tüm senaryolardır. Bu bağlantılar, örneğin bağlantının Office 365 yolundaki ara sunuculardan, güvenlik duvarlarından veya diğer ağ cihazlarından geçtiği durumlarda doğrudan Office 365 veya dolaylı olabilir.
 
 - Gelen ağ trafiği akışları, Microsoft bulutundan şirket içi konağa bağlantının başlatıldığı tüm senaryolardır. Bu bağlantıların genellikle dış kaynaklı akışlar için müşteri güvenlik ilkesinin gerektirdiği güvenlik duvarından ve diğer güvenlik altyapısından geçmesi gerekir.
 
@@ -101,7 +101,7 @@ Giden bağlantı gerektiren her hizmet için ağ yönlendirme, ara sunucu yapıl
   
 Gelen bağlantı gerektiren her hizmet için bazı ek bilgilere ihtiyacınız olacaktır. Microsoft bulutundaki sunucular, şirket içi ağınızla bağlantı kurar. Bağlantıların doğru yapıldığından emin olmak için; bu gelen bağlantıları kabul edecek hizmetlerin genel DNS girişleri, CIDR biçimlendirilmiş IPv4 IP adresleri, hangi ISS ekipmanının dahil olduğu ve bu bağlantılar için gelen NAT veya kaynak NAT'nin nasıl işlendiği.
   
-Asimetrik yönlendirmenin kullanılmadığından emin olmak için İnternet üzerinden mi yoksa ExpressRoute üzerinden mi bağlandıklarına bakılmaksızın gelen bağlantılar gözden geçirilmelidir. Bazı durumlarda, Office 365 hizmetlerin gelen bağlantıları başlattığı şirket içi uç noktalarına diğer Microsoft ve Microsoft hizmetleri tarafından da erişilmesi gerekebilir. Office 365 amaçlarla bu hizmetlere ExpressRoute yönlendirmesini etkinleştirmenin diğer senaryoları bozmaması çok önemlidir. Çoğu durumda müşterilerin, ExpressRoute etkinleştirildikten sonra Microsoft'tan gelen akışların simetrik kalmasını sağlamak için kaynak tabanlı NAT gibi iç ağlarında belirli değişiklikler yapmaları gerekebilir.
+Asimetrik yönlendirmenin kullanılmadığından emin olmak için İnternet üzerinden mi yoksa ExpressRoute üzerinden mi bağlandıklarına bakılmaksızın gelen bağlantılar gözden geçirilmelidir. Bazı durumlarda, Office 365 hizmetlerin gelen bağlantıları başlattığı şirket içi uç noktalarına diğer Microsoft ve Microsoft dışı hizmetler de erişmesi gerekebilir. Office 365 amaçlarla bu hizmetlere ExpressRoute yönlendirmesini etkinleştirmenin diğer senaryoları bozmaması çok önemlidir. Çoğu durumda müşterilerin, ExpressRoute etkinleştirildikten sonra Microsoft'tan gelen akışların simetrik kalmasını sağlamak için kaynak tabanlı NAT gibi iç ağlarında belirli değişiklikler yapmaları gerekebilir.
   
 Aşağıda gerekli ayrıntı düzeyinin bir örneği verilmişti. Bu durumda Exchange Karma, ExpressRoute üzerinden şirket içi sisteme yönlendirilir. 
 
@@ -112,7 +112,7 @@ Aşağıda gerekli ayrıntı düzeyinin bir örneği verilmişti. Bu durumda Exc
 |**Genel Office 365 uç noktası (kaynak)** <br/> |Exchange Online (IP adresleri)  <br/> |
 |**Genel Şirket İçi Uç Nokta (hedef)** <br/> |5.5.5.5  <br/> |
 |**Genel (İnternet) DNS girişi** <br/> |Autodiscover.contoso.com  <br/> |
-|**Bu şirket içi uç nokta diğer (Office 365 olmayan) Microsoft hizmetleri** <br/> |Hayır  <br/> |
+|**Bu şirket içi uç nokta diğer (Office 365 olmayan) Microsoft hizmetleri için kullanılacak mı?** <br/> |Hayır  <br/> |
 |**Bu şirket içi uç nokta İnternet'te kullanıcılar/sistemler tarafından kullanılacak mı?** <br/> |Evet  <br/> |
 |**Genel uç noktalar aracılığıyla yayımlanan iç sistemler** <br/> |Exchange Server istemci erişim rolü (şirket içi) 192.168.101, 192.168.102, 192.168.103  <br/> |
 |**Genel uç noktanın IP tanıtımı** <br/> |**İnternet'e**: 5.5.0.0/ **16-ExpressRoute**: 5.5.5.0/24  <br/> |
@@ -129,7 +129,7 @@ Aşağıda yalnızca giden bir hizmet örneği verilmiştir:
 |**Şirket içi uç nokta (kaynak)** <br/> |Kullanıcı iş istasyonu  <br/> |
 |**Genel Office 365 uç noktası (hedef)** <br/> |SharePoint Online (IP adresleri)  <br/> |
 |**Genel (İnternet) DNS girişi** <br/> |\*.sharepoint.com (ve daha fazla FQDN)  <br/> |
-|**CDN Referansları** <br/> |cdn.sharepointonline.com (ve daha fazla FQDN) - CDN sağlayıcıları tarafından tutulan IP adresleri)  <br/> |
+|**CDN Başvuruları** <br/> |cdn.sharepointonline.com (ve daha fazla FQDN) - CDN sağlayıcıları tarafından tutulan IP adresleri)  <br/> |
 |**IP tanıtımı ve NAT kullanımda** <br/> |**İnternet yolu/Kaynak NAT**: 1.1.1.0/24  <br/> **ExpressRoute yolu/Kaynak NAT**: 1.1.2.0/24 (Chicago) ve 1.1.3.0/24 (Dallas)  <br/> |
 |**Bağlantı yöntemi** <br/> |**İnternet**: katman 7 ara sunucusu (.pac dosyası) aracılığıyla  <br/> **ExpressRoute**: doğrudan yönlendirme (ara sunucu yok)  <br/> |
 |**Güvenlik/Çevre Denetimleri** <br/> |**İnternet yolu**: DeviceID_002  <br/> **ExpressRoute yolu**: DeviceID_003  <br/> |
@@ -242,7 +242,7 @@ Uygulama planınız hem ExpressRoute'u yapılandırmayla ilgili teknik ayrıntı
 ### <a name="plan-your-bandwidth-security-high-availability-and-failover"></a>Bant genişliğinizi, güvenliğinizi, yüksek kullanılabilirliğinizi ve yük devretmenizi planlama
 <a name="availability"> </a>
 
-Her ana Office 365 iş yükü için gereken bant genişliği için bir plan oluşturun. Exchange Online, çevrimiçi SharePoint ve Skype Kurumsal Çevrimiçi bant genişliği gereksinimlerini ayrı ayrı tahmin edin. başlangıç noktası olarak Exchange Online ve Skype Kurumsal için sağladığımız tahmin hesaplayıcılarını kullanabilirsiniz; ancak kuruluşunuzun bant genişliği gereksinimlerini tam olarak anlamak için kullanıcı profillerinin ve konumlarının temsili bir örneğini içeren bir pilot test gereklidir.
+Her ana Office 365 iş yükü için gereken bant genişliği için bir plan oluşturun. Exchange Online, SharePoint Online ve Skype Kurumsal Online bant genişliği gereksinimlerini ayrı ayrı tahmin edin. başlangıç noktası olarak Exchange Online ve Skype Kurumsal için sağladığımız tahmin hesaplayıcılarını kullanabilirsiniz; ancak kuruluşunuzun bant genişliği gereksinimlerini tam olarak anlamak için kullanıcı profillerinin ve konumlarının temsili bir örneğini içeren bir pilot test gereklidir.
   
 Her İnternet'te ve ExpressRoute çıkış konumunda güvenliğin nasıl işleneceğini planınıza ekleyin, genel eşlemeyi kullanmak Office 365 için tüm ExpressRoute bağlantılarını unutmayın ve yine de dış ağlara bağlanmaya yönelik şirketinizin güvenlik ilkelerine uygun olarak korunması gerekir.
   
@@ -275,9 +275,9 @@ Office 365 için ExpressRoute'un yabancı olabilecek *giden* ağ gereksinimleri 
 
 3. Uç noktalar, aynı veya daha fazla tercih edilen yönlendirme ölçümüyle İnternet'e tanıtılmamalıdır.
 
-4. ExpressRoute üzerinden yapılandırılmamış Microsoft hizmetleri bağlantı için uç noktalar kullanılmamalıdır.
+4. Uç noktalar, ExpressRoute üzerinden yapılandırılmamış Microsoft hizmetlerine bağlantı için kullanılmamalıdır.
 
-Ağ tasarımınız bu gereksinimleri karşılamıyorsa, kullanıcılarınızın siyah hol veya asimetrik yönlendirme yönlendirmesi nedeniyle Office 365 ve diğer Microsoft hizmetleri bağlantı hatalarıyla karşılaşma riski yüksektir. Bu durum, Microsoft hizmetleri istekleri ExpressRoute üzerinden yönlendirildiğinde, ancak yanıtlar İnternet üzerinden geri yönlendirildiğinde (veya tam tersi) ve yanıtlar güvenlik duvarları gibi durum bilgisi olan ağ cihazları tarafından bırakıldığında oluşur.
+Ağ tasarımınız bu gereksinimleri karşılamıyorsa, kullanıcılarınızın siyah hol veya asimetrik yönlendirme yönlendirmesi nedeniyle Office 365 ve diğer Microsoft hizmetlerine bağlantı hataları yaşama riski yüksektir. Bu durum, Microsoft hizmetlerine yönelik istekler ExpressRoute üzerinden yönlendirildiğinde, ancak yanıtlar İnternet üzerinden geri yönlendirildiğinde (veya tam tersi) ve yanıtlar güvenlik duvarları gibi durum bilgisi olan ağ cihazları tarafından bırakıldığında oluşur.
   
 Yukarıdaki gereksinimleri karşılamak için kullanabileceğiniz en yaygın yöntem, ağınızın bir parçası olarak uygulanan veya ExpressRoute operatörünüz tarafından sağlanan kaynak NAT'yi kullanmaktır. Kaynak NAT, internet ağınızın ayrıntılarını ve özel IP adreslemesini ExpressRoute'tan soyutlamanızı sağlar ve; uygun IP yolu tanıtımlarıyla birleştiğinde, yol simetrisini sağlamak için kolay bir mekanizma sağlar. ExpressRoute eşleme konumlarına özgü durum bilgisi olan ağ cihazları kullanıyorsanız yol simetrisini sağlamak için her ExpressRoute eşlemesi için ayrı NAT havuzları uygulamanız gerekir.
   
@@ -288,7 +288,7 @@ Ağ topolojisi diyagramına giden bağlantı için değişiklikleri ekleyin.
 ### <a name="design-inbound-service-connectivity"></a>Gelen hizmet bağlantısını tasarlama
 <a name="inbound"> </a>
 
-Çoğu kurumsal Office 365 dağıtımı, Exchange, SharePoint ve Skype Kurumsal karma senaryoları, posta kutusu geçişleri ve ADFS altyapısını kullanarak kimlik doğrulaması gibi Office 365 şirket içi hizmetlere bir tür gelen bağlantı olduğunu varsayar. ExpressRoute, giden bağlantı için şirket içi ağınız ile Microsoft arasında ek bir yönlendirme yolu etkinleştirdiğinizde, bu akışların İnternet'i kullanmaya devam etmesi amaçlanmış olsa bile bu gelen bağlantılar yanlışlıkla asimetrik yönlendirmeden etkilenebilir. Office 365'dan şirket içi sistemlere İnternet tabanlı gelen akışları etkilemediğinden emin olmak için aşağıda açıklanan birkaç önlem önerilir.
+Kurumsal Office 365 dağıtımlarının çoğu Exchange, SharePoint ve Skype Kurumsal karma senaryoları, posta kutusu geçişleri ve ADFS altyapısı kullanılarak kimlik doğrulaması gibi Office 365 şirket içi hizmetlere bir tür gelen bağlantı olduğunu varsayar. ExpressRoute, giden bağlantı için şirket içi ağınız ile Microsoft arasında ek bir yönlendirme yolu etkinleştirdiğinizde, bu akışların İnternet'i kullanmaya devam etmesi amaçlanmış olsa bile bu gelen bağlantılar yanlışlıkla asimetrik yönlendirmeden etkilenebilir. Office 365'dan şirket içi sistemlere İnternet tabanlı gelen akışları etkilemediğinden emin olmak için aşağıda açıklanan birkaç önlem önerilir.
   
 Gelen ağ trafiği akışları için asimetrik yönlendirme risklerini en aza indirmek için, tüm gelen bağlantıların ağınızın segmentlerine yönlendirilmeden önce kaynak NAT kullanması gerekir ve bu da ExpressRoute'a yönlendirme görünürlüğü sağlar. Kaynak NAT olmadan ExpressRoute'a yönlendirme görünürlüğü olan bir ağ kesimine gelen bağlantılara izin verilirse, Office 365 kaynaklı istekler İnternet'ten girer, ancak Office 365 geri gönderilen yanıt ExpressRoute ağ yolunu Microsoft ağına geri tercih eder ve bu da asimetrik yönlendirmeye neden olur.
   
@@ -310,7 +310,7 @@ Bazı gelen akışları ExpressRoute bağlantıları üzerinden yönlendirmeyi s
 
 4. Bu gelen ağ trafiği akışlarını dikkatle değerlendirerek şirketinizin güvenlik ve ağ ilkelerine uygun güvenlik ve ağ denetimlerinin uygulandığını doğrulayın.
 
-5. Şirket içi gelen uç noktalarınız ExpressRoute üzerinden Microsoft'a tanıtıldıktan sonra ExpressRoute, Office 365 dahil olmak üzere tüm Microsoft hizmetleri için bu uç noktaların tercih edilen yönlendirme yolu haline gelir. Bu, bu uç nokta alt ağlarının yalnızca Office 365 hizmetleriyle iletişim için ve Microsoft ağındaki diğer hizmetlerle iletişim için kullanılması gerektiği anlamına gelir. Aksi takdirde, tasarımınız diğer Microsoft hizmetleri gelen bağlantıların ExpressRoute üzerinden gelen bağlantıları yönlendirmeyi tercih ettiği asimetrik yönlendirmeye neden olurken, dönüş yolu İnternet'i kullanır.
+5. Şirket içi gelen uç noktalarınız ExpressRoute üzerinden Microsoft'a tanıtıldıktan sonra ExpressRoute, Office 365 dahil olmak üzere tüm Microsoft hizmetleri için bu uç noktaların tercih edilen yönlendirme yolu haline gelir. Bu, bu uç nokta alt ağlarının yalnızca Office 365 hizmetleriyle iletişim için ve Microsoft ağındaki diğer hizmetlerle iletişim için kullanılması gerektiği anlamına gelir. Aksi takdirde, tasarımınız diğer Microsoft hizmetlerinden gelen bağlantıların ExpressRoute üzerinden gelen bağlantıları yönlendirmeyi tercih ettiği asimetrik yönlendirmeye neden olurken, dönüş yolu İnternet'i kullanır.
 
 6. ExpressRoute bağlantı hattının veya meet-me konumunun devre dışı olması durumunda, şirket içi gelen uç noktaların istekleri ayrı bir ağ yolu üzerinden kabul etmek için hala kullanılabilir olduğundan emin olmanız gerekir. Bu, bu uç noktaların alt ağlarını birden çok ExpressRoute bağlantı hattı üzerinden tanıtma anlamına gelebilir.
 
@@ -478,9 +478,9 @@ Test etkinliklerine örnek olarak aşağıdakiler verilebilir.
 
 9. Exchange Online için uygulama düzeyi işlevselliğini test edin.
 
-  - Test Outlook Exchange Online bağlanabilir ve e-posta gönderebilir/alabilir.
+  - Outlook'un Exchange Online bağlanıp e-posta gönderip alabilmesini test edin.
 
-  - Test Outlook çevrimiçi modu kullanabilir.
+  - Outlook'un çevrimiçi modu kullanabileceğini test edin.
 
   - Akıllı telefon bağlantısını ve gönderme/alma özelliğini test edin.
 
@@ -488,7 +488,7 @@ Test etkinliklerine örnek olarak aşağıdakiler verilebilir.
 
   - Eşitleme istemcisini test OneDrive İş.
 
-  - Çevrimiçi SharePoint web erişimini test edin.
+  - SharePoint Online web erişimini test edin.
 
 11. Skype Kurumsal çağırma senaryoları için uygulama düzeyi işlevselliğini test edin:
 

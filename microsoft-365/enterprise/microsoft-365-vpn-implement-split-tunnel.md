@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 3/3/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 365 için VPN bölünmüş tüneli uygulama
-ms.openlocfilehash: 6b578b9b1801921644c6982c15c160bce5fbb4dd
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: db406c36a7395f3d8c4faad6d7d7f4b34c83ff55
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941096"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560537"
 ---
 # <a name="implementing-vpn-split-tunneling-for-microsoft-365"></a>Microsoft 365 için VPN bölünmüş tüneli uygulama
 
@@ -67,9 +67,9 @@ Geçerli İyileştirme URL'leri aşağıdaki tabloda bulunabilir. Çoğu durumda
 | URL'leri iyileştirme | Bağlantı Noktası/Protokol | Amaç |
 | --- | --- | --- |
 | <https://outlook.office365.com> | TCP 443 | Bu, Outlook'un Exchange Online sunucusuna bağlanmak için kullandığı birincil URL'lerden biridir ve yüksek hacimli bant genişliği kullanımına ve bağlantı sayısına sahiptir. Anlık arama, diğer posta kutusu takvimleri, serbest/meşgul arama, kuralları ve uyarıları yönetme, Exchange çevrimiçi arşivi, giden kutusundan ayrılan e-postalar gibi çevrimiçi özellikler için düşük ağ gecikme süresi gereklidir. |
-| <https://outlook.office.com> | TCP 443 | Bu URL, Outlook Online Web Access'in Exchange Online sunucusuna bağlanması için kullanılır ve ağ gecikme süresine duyarlıdır. SharePoint Online ile büyük dosya yükleme ve indirme için özellikle bağlantı gereklidir. |
+| <https://outlook.office.com> | TCP 443 | Bu URL, Exchange Online sunucusuna bağlanmak için Outlook Online Web Access için kullanılır ve ağ gecikmesine duyarlıdır. SharePoint Online ile büyük dosya yükleme ve indirme için özellikle bağlantı gereklidir. |
 | \<tenant\>https://.sharepoint.com | TCP 443 | Bu, SharePoint Online için birincil URL'dir ve yüksek bant genişliği kullanımına sahiptir. |
-| \<tenant\>https://-my.sharepoint.com | TCP 443 | Bu, OneDrive İş için birincil URL'dir ve oneDrive İş Eşitleme aracından yüksek bant genişliği kullanımına ve büyük olasılıkla yüksek bağlantı sayımına sahiptir. |
+| \<tenant\>https://-my.sharepoint.com | TCP 443 | Bu, OneDrive İş için birincil URL'dir ve OneDrive İş Eşitleme aracından yüksek bant genişliği kullanımına ve muhtemelen yüksek bağlantı sayımına sahiptir. |
 | Teams Medya IP'leri (URL yok) | UDP 3478, 3479, 3480 ve 3481 | Geçiş Bulma ayırma ve gerçek zamanlı trafik. Bunlar Skype Kurumsal ve Microsoft Teams Medya trafiği (aramalar, toplantılar vb.) için kullanılan uç noktalardır. Çoğu uç nokta, Microsoft Teams istemcisi bir çağrı oluşturduğunda sağlanır (ve hizmet için listelenen gerekli IP'lerin içinde bulunur). En iyi medya kalitesi için UDP protokolünün kullanılması gerekir.   |
 
 Yukarıdaki örneklerde **kiracı** , Microsoft 365 kiracı adınız ile değiştirilmelidir. Örneğin **, contoso.onmicrosoft.com** _contoso.sharepoint.com_ ve _contoso-my.sharepoint.com_ kullanır.
@@ -162,7 +162,7 @@ VPN istemcisi, **Optimize** IP'lerine giden trafiğin bu şekilde yönlendirilme
 
 Bu bölümde, bu alanda en yaygın iş ortaklarından gelen Microsoft 365 trafiği için bölünmüş tünel uygulamayla ilgili ayrıntılı kılavuzların bağlantıları sağlanır. Kullanılabilir hale geldikçe ek kılavuzlar ekleyeceğiz.
 
-- **Windows 10 VPN istemcisi**: [Yerel Windows 10 VPN istemcisi ile uzak çalışanlar için Microsoft 365 trafiğini iyileştirme](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
+- **Windows 10 VPN istemcisi**: [Yerel Windows 10 VPN istemcisine sahip uzak çalışanlar için Microsoft 365 trafiğini iyileştirme](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
 - **Cisco Anyconnect**: [Office365 için Anyconnect Split Tunnel'ı en iyi duruma getirme](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
 - **Palo Alto GlobalProtect**: [VPN Split Tunnel Exclude Access Route aracılığıyla Microsoft 365 Trafiğini İyileştirme](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **F5 Networks BIG-IP APM**: [BIG-IP APM kullanırken VPN'ler aracılığıyla Uzaktan Erişimde Microsoft 365 trafiğini iyileştirme](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
@@ -190,7 +190,7 @@ Bu bölümde, bu alanda en yaygın iş ortaklarından gelen Microsoft 365 trafi�
 
 [Günümüzün benzersiz uzaktan çalışma senaryolarında modern güvenlik denetimleri elde etmek için güvenlik uzmanları ve BT için alternatif yollar (Microsoft Güvenlik Ekibi blogu)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
-[Microsoft'ta VPN performansını geliştirme: Otomatik bağlantılara izin vermek için Windows 10 VPN profillerini kullanma](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
+[Microsoft'ta VPN performansını geliştirme: otomatik bağlantılara izin vermek için Windows 10 VPN profillerini kullanma](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
 [VPN üzerinde çalıştırma: Microsoft uzak iş gücünü nasıl bağlı tutuyor?](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -25,19 +25,19 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Kullanıcı hesaplarına tek tek veya grup üyeliğine dayalı olarak Microsoft 365 lisansların nasıl atandığı açıklanır.
-ms.openlocfilehash: ab9769aa4dee6a9f7982f72f377b0c7e0d3f444e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft 365 lisanslarının kullanıcı hesaplarına bireysel olarak veya grup üyeliği temelinde nasıl atandığı açıklanır.
+ms.openlocfilehash: 7d81cbc3a261080a1e834e7d44fabea67042bb12
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091423"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560735"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Kullanıcı hesaplarına Microsoft 365 lisansları atama
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-Yalnızca bulut kimlik modeli için, Microsoft 365 lisansları nasıl oluşturduğunuza bağlı olarak kullanıcı hesaplarına oluşturuldukları şekilde atayabilirsiniz.
+Yalnızca bulut kimlik modeli için, microsoft 365 lisanslarını nasıl oluşturduğunuza bağlı olarak kullanıcı hesaplarına oluşturuldukları şekilde atayabilirsiniz.
 
 Karma kimlik modeli için, Active Directory Domain Services (AD DS) kullanıcı hesapları ilk kez eşitlendiğinde, bunlara otomatik olarak bir konum veya Microsoft 365 lisansı atanamaz. **Lisans atamadan önce veya atamadan önce her kullanıcı hesabını bir kullanıcı konumuyla yapılandırmanız gerekir.**
 
@@ -45,7 +45,7 @@ Her iki durumda da, kullanıcılarınızın e-posta ve Microsoft Teams gibi Micr
 
 Kullanıcı hesaplarına lisansları tek tek veya grup üyeliği aracılığıyla otomatik olarak atayabilirsiniz.
 
-Tek tek kullanıcı hesaplarına Microsoft 365 lisansları atamak için şunları kullanabilirsiniz:
+Bireysel kullanıcı hesaplarına Microsoft 365 lisansları atamak için şunları kullanabilirsiniz:
 
 - [Microsoft 365 yönetim merkezi](../admin/manage/assign-licenses-to-users.md)
 - [PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)

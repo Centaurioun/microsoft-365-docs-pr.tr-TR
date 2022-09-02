@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -19,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Kullanıcılarınızın çok faktörlü kimlik doğrulaması (MFA) ve diğer özelliklerle güvenli bir şekilde oturum açmasını zorunlu kılar.
-ms.openlocfilehash: 56ccd1df24bbfb09920cb0c7138ed2e5dc9ca3cb
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: c0b78128ec9f08cd099bebcfa61a3bc2f25452b9
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749978"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67556512"
 ---
 # <a name="step-3-protect-your-microsoft-365-user-accounts"></a>3. Adım: Microsoft 365 kullanıcı hesaplarınızı koruma
 
@@ -49,7 +49,7 @@ Azure AD Parola Koruması bilinen zayıf parolaları ve bunların çeşitlemeler
 
 Daha fazla bilgi için bkz. [Azure AD parola korumasını yapılandırma](/azure/active-directory/authentication/concept-password-ban-bad).
 
-## <a name="mfa"></a>MFA
+## <a name="mfa"></a>Mfa
 
 MFA, kullanıcı oturum açma işlemleri için kullanıcı hesabı parolasının ötesinde ek bir doğrulamaya tabi olmasını gerektirir. Kötü amaçlı bir kullanıcı bir kullanıcı hesabı parolası belirlese bile, erişim verilmeden önce akıllı telefona gönderilen kısa mesaj gibi ek bir doğrulamaya yanıt verebilmelidir.
 

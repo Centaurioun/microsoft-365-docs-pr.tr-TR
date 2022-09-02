@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 7/13/2017
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Ön ek filtreleme, güvenlik ve uyumluluk gibi yapılandırmaya yönelik ortak alanlar da dahil olmak üzere Office 365 için ExpressRoute'u yönetmeyi öğrenin.
-ms.openlocfilehash: 493a7c0ca14d05a2b84763b9e9485f828574a930
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 50f4e345c1a0a2095f53e1ad85ffe30297140584
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753880"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560097"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Office 365 bağlantısı için ExpressRoute'u yönetme
 
@@ -45,7 +45,7 @@ ExpressRoute genel eşlemesi genelinde yol sahipliğinin ek doğrulamasına ihti
 
 - Office 365 URL'leri ve IP adresi aralıkları, yönlendirmeyi değil güvenlik duvarı izin veren listeleri ve Ara Sunucu altyapısını yönetmek için tasarlanmıştır.
 
-- Office 365 URL'leri ve IP adresi aralıkları, ExpressRoute bağlantılarınızın kapsamında olabilecek diğer Microsoft hizmetleri kapsamaz.
+- Office 365 URL'leri ve IP adresi aralıkları, ExpressRoute bağlantılarınızın kapsamında olabilecek diğer Microsoft hizmetlerini kapsamaz.
 
 |**Seçeneği**|**Karmaşık -lığı**|**Denetimi Değiştir**|
 |:-----|:-----|:-----|
@@ -86,11 +86,11 @@ Microsoft'un ağınıza bağlantı başlatmasını gerektiren birkaç isteğe ba
 
 - Exchange Online kiracıdan şirket içi konağa posta.
 
-- SharePoint Online'dan şirket içi bir konağa gönderilen Çevrimiçi Posta'SharePoint.
+- SharePoint Online'dan şirket içi bir konağa gönderilen SharePoint Online Postası.
 
-- [Federasyon karma arama SharePoint](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
+- [SharePoint federasyon karma araması](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
 
-- [karma BCS SharePoint](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
+- [SharePoint karma BCS](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
 
 - [Karma](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) ve/veya [Skype Kurumsal federasyonu Skype Kurumsal](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).
 

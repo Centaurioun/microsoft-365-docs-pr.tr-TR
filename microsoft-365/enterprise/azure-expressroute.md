@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/5/2019
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Azure ExpressRoute'u Office 365 ile nasıl kullanacağınızı ve onunla dağıtım yaptığınız ağ uygulama projesini nasıl planlayacağınızı öğrenin.
-ms.openlocfilehash: 1350bf73fdddd2141a2df1cbcec5edebeacf7ad4
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: ecaab47f3b7f5e5dcd203f6b8d2cdfb15143e182
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754300"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560713"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365 için Azure ExpressRoute
 
@@ -39,7 +39,7 @@ Azure ExpressRoute'un Office 365 ile nasıl kullanıldığını ve Office 365 il
 > Uç Nokta için Microsoft Defender, Azure ExpressRoute ile tümleştirme sağlamaz. Bu, müşterilerin özel bir ağdan Uç Nokta için Microsoft Defender bulut hizmetlerine bağlantıyı sağlayan ExpressRoute kuralları tanımlamasını engellemese de, hizmet veya bulut altyapısı geliştikçe kuralların korunması müşteriye aittir.
 
 > [!NOTE]
-> Çoğu durumda hizmet için en iyi bağlantı modelini sağlamadığından Microsoft 365 için ExpressRoute'u önermeyiz. Bu nedenle, Microsoft 365 için bu bağlantı modelini kullanmak için Microsoft yetkilendirmesi gerekir. Tüm müşteri isteklerini gözden geçiriyor ve ExpressRoute'u yalnızca gerekli olduğu nadir senaryolarda Microsoft 365 için yetkilendiriyoruz. Daha fazla bilgi [için lütfen Microsoft 365 için ExpressRoute kılavuzunu](https://aka.ms/erguide) okuyun ve üretkenlik, ağ ve güvenlik ekiplerinizle belgenin kapsamlı bir incelemesini takiben, gerekirse özel durum göndermek için Microsoft hesap ekibinizle birlikte çalışın. Office 365 için yol filtreleri oluşturmaya çalışan yetkisiz abonelikler [bir hata iletisi](https://support.microsoft.com/kb/3181709) alır.
+> Çoğu durumda hizmet için en iyi bağlantı modelini sağlamadığından Microsoft 365 için ExpressRoute'u önermeyiz. Bu nedenle, Microsoft 365 için bu bağlantı modelini kullanmak için Microsoft yetkilendirmesi gerekir. Microsoft 365 için expressRoute'u yalnızca gerekli olduğu nadir senaryolarda gözden geçiriyor ve yetkilendiriyoruz. Daha fazla bilgi [için lütfen Microsoft 365 için ExpressRoute kılavuzunu](https://aka.ms/erguide) okuyun ve üretkenlik, ağ ve güvenlik ekiplerinizle birlikte belgenin kapsamlı bir incelemesini takip edin, gerekirse bir özel durum göndermek için Microsoft hesabı ekibinizle birlikte çalışın. Office 365 için yol filtreleri oluşturmaya çalışan yetkisiz abonelikler [bir hata iletisi](https://support.microsoft.com/kb/3181709) alır.
 
 ## <a name="planning-azure-expressroute-for-office-365"></a>Office 365 için Azure ExpressRoute'u planlama
 
@@ -51,7 +51,7 @@ Office 365, Windows Update ve TechNet gibi tüm Microsoft uygulamalarına erişm
 
 ![Ağ bağlantısını Office 365.](../media/9d8bc622-4a38-4a3b-a0f3-68657712d460.png)
 
-Şimdi Office 365 bağlanmak için hem İnternet'i hem de ExpressRoute'u kullanan bir Office 365 müşterisini gösteren güncelleştirilmiş diyagrama bakın. Genel DNS ve Content Delivery Network düğümleri gibi bazı bağlantıların hala genel İnternet bağlantısı gerektirdiğine dikkat edin. Ayrıca Müşterinin ExpressRoute bağlantılı binasında yer almayan kullanıcılarının İnternet üzerinden bağlandıklarına da dikkat edin.
+Şimdi Office 365 bağlanmak için hem İnternet'i hem de ExpressRoute'u kullanan bir Office 365 müşterisini gösteren güncelleştirilmiş diyagrama bakın. Genel DNS ve İçerik Teslim Ağı düğümleri gibi bazı bağlantıların hala genel İnternet bağlantısı gerektirdiğine dikkat edin. Ayrıca Müşterinin ExpressRoute bağlantılı binasında yer almayan kullanıcılarının İnternet üzerinden bağlandıklarına da dikkat edin.
 
 ![ExpressRoute ile bağlantıyı Office 365.](../media/251788c4-0937-4584-9b2c-df08e11611fc.png)
 
@@ -64,10 +64,10 @@ Aşağıdaki tabloda ExpressRoute üzerinden desteklenen Office 365 hizmetleri l
 
 | Dahil edilen uygulamalar |
 |:-----|
-|Exchange Online <sup>1</sup> <br/> Exchange Online Protection <sup>1</sup> <br/> Delve <sup>1</sup> <br/> |
+|Exchange Online <sup>1</sup> <br/> Exchange Online Protection <sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype Kurumsal Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive İş <sup>1</sup> <br/> Project Online <sup>1</sup> <br/> |
-|Portal ve paylaşılan<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Bağlan <sup>1</sup> <br/> Office <sup>1</sup> <br/> |
+|Portal ve paylaşılan<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
 <sup>1</sup> Bu uygulamaların her birinin ExpressRoute üzerinden desteklenmeyen İnternet bağlantı gereksinimleri vardır. Daha fazla bilgi için [Office 365 uç noktaları makalesine](./urls-and-ip-address-ranges.md) bakın.
 

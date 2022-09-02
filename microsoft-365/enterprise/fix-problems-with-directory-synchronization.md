@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 f1.keywords:
 - CSH
@@ -21,12 +21,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365 dizin eşitlemesiyle ilgili sorunların yaygın nedenlerini açıklar ve bunları gidermeye ve çözmeye yardımcı olacak birkaç yöntem sağlar.
-ms.openlocfilehash: 248ccc888f047a57f474dfc55b501f4450cb116e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 175230057460785669d2667f74e8e9bc76aeafe6
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101017"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560603"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Microsoft 365 için dizin eşitleme sorunlarını düzeltme
 
@@ -36,19 +36,19 @@ Dizin eşitlemesi ile şirket içi kullanıcıları ve grupları yönetmeye deva
 
 Microsoft 365 yönetim merkezi'daki DirSync Durumu kutucuğu bir sorun olduğunu gösterdiğinde bir sorun olduğunun ilk göstergesidir.
   
-Ayrıca, Microsoft 365 kiracınızın dizin eşitleme hatalarıyla karşılaştığını belirten bir posta (alternatif e-postaya ve yönetici e-postanıza) alırsınız. Ayrıntılar için bkz. [Microsoft 365 dizin eşitleme hatalarını tanımlama](identify-directory-synchronization-errors.md).
+Ayrıca, Microsoft 365'ten kiracınızın dizin eşitleme hatalarıyla karşılaştığını belirten bir posta (alternatif e-postaya ve yönetici e-postanıza) alırsınız. Ayrıntılar için bkz. [Microsoft 365'te dizin eşitleme hatalarını tanımlama](identify-directory-synchronization-errors.md).
   
-## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Azure Active Directory Bağlan aracı edinmek Nasıl yaparım??
+## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Azure Active Directory Connect aracını Nasıl yaparım? edinin?
 
 [Microsoft 365 yönetim merkezi](https://admin.microsoft.com) **Etkin Kullanıcılar'a** \> gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a> **Diğer** menüsüne (üç nokta) tıklayın ve **Dizin eşitlemesi'ni** seçin. 
   
-Azure AD Bağlan indirmek için [sihirbazdaki yönergeleri](set-up-directory-synchronization.md) izleyin. 
+Azure AD [Connect'i indirmek için sihirbazdaki yönergeleri](set-up-directory-synchronization.md) izleyin. 
   
-Azure Active Directory (Azure AD) Eşitleme (DirSync) kullanmaya devam ediyorsanız, [Microsoft 365'da Azure Active Directory Eşitleme Aracı yükleme ve Yapılandırma Sihirbazı hata iletilerini giderme](/troubleshoot/azure/active-directory/installation-configuration-wizard-errors) bölümüne göz atın  dirsync'i yüklemek için sistem gereksinimleri, ihtiyacınız olan izinler ve yaygın hataları giderme hakkında bilgi için. 
+Azure Active Directory (Azure AD) Eşitleme (DirSync) kullanmaya devam ediyorsanız Dirsync'i yüklemek için sistem gereksinimleri, ihtiyacınız olan izinler ve yaygın hataları giderme hakkında bilgi için [Microsoft 365'te Azure Active Directory Eşitleme Aracı yükleme ve Yapılandırma Sihirbazı hata iletilerini](/troubleshoot/azure/active-directory/installation-configuration-wizard-errors) giderme makalesine göz atın. 
   
-Azure AD Eşitleme'den Azure AD Bağlan'ye güncelleştirmek için [yükseltme yönergelerine](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started) bakın.
+Azure AD Eşitleme'den Azure AD Connect'e güncelleştirmek için [yükseltme yönergelerine](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started) bakın.
   
-## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-microsoft-365"></a>Microsoft 365'de dizin eşitlemesiyle ilgili sorunların yaygın nedenlerini çözme
+## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-microsoft-365"></a>Microsoft 365'te dizin eşitleme sorunlarının yaygın nedenlerini çözme
 
 ### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>Eşitlenmiş nesneler çevrimiçi olarak görünmüyor veya güncelleştirilmiyor veya Hizmetten eşitleme hata raporları alıyorum.
 
@@ -64,7 +64,7 @@ Azure AD Eşitleme'den Azure AD Bağlan'ye güncelleştirmek için [yükseltme y
 - [Azure AD Connect eşitlemesiyle parola karması eşitlemesini uygulama](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>Nesne kotası aşıldığını belirten bir uyarı görüyorum
-- Hizmetin korunmasına yardımcı olmak için yerleşik bir nesne kotamız var. Dizininizde Microsoft 365 eşitlemesi gereken çok fazla nesne varsa kotanızı artırmak [için İş ürünleri için desteğe başvurmanız](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) gerekir.
+- Hizmetin korunmasına yardımcı olmak için yerleşik bir nesne kotamız var. Dizininizde Microsoft 365 ile eşitlemesi gereken çok fazla nesne varsa kotanızı artırmak [için İş ürünleri için desteğe başvurmanız](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) gerekir.
 
 ### <a name="i-need-to-know-which-attributes-are-synchronized"></a>Hangi özniteliklerin eşitleneceğini bilmem gerekiyor
 - Şirket içi ile bulut arasında eşitlenen tüm özniteliklerin listesini [burada](https://go.microsoft.com/fwlink/p/?LinkId=396719) bulabilirsiniz.

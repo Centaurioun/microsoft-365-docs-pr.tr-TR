@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 06/29/2022
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -20,12 +20,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Bu makalede, Office 365 ABD Kamu GCC Yüksek planlarını kullanan müşteriler için erişilebilir uç noktalar bulacaksınız.
 hideEdit: true
-ms.openlocfilehash: 1a1c95eb203ee0425ea53fc83203388423355c3a
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: e893d9944201de7af43488077460cac383fb2c58
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969934"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560581"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 ABD Hükümeti GCC Yüksek uç noktaları
 

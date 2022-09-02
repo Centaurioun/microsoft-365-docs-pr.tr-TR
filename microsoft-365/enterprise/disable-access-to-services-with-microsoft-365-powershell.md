@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/27/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,26 +19,26 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: Bu makalede, kullanıcılar için Microsoft 365 hizmetlerine erişimi devre dışı bırakmak için PowerShell'i kullanmayı öğrenin.
-ms.openlocfilehash: 0acd174fce25e0332aa8f927595657e4d0a464b9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Bu makalede, Kullanıcılar için Microsoft 365 hizmetlerine erişimi devre dışı bırakmak için PowerShell kullanmayı öğrenin.
+ms.openlocfilehash: c84c1c783d6c20b2dd41e51c7375f0834519ff45
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097722"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560119"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>PowerShell ile Microsoft 365 hizmetlerine erişimi devre dışı bırakma
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-Bir lisans planından bir Microsoft 365 hesabına lisans atandığında, Microsoft 365 hizmetler söz konusu lisanstan kullanıcının kullanımına sunulur. Ancak, kullanıcının erişebileceği Microsoft 365 hizmetlerini denetleyebilirsiniz. Örneğin, lisans SharePoint Online hizmetine erişime izin verse de, bu hizmete erişimi devre dışı bırakabilirsiniz. PowerShell'i kullanarak belirli bir lisans planı için herhangi bir sayıda hizmete erişimi devre dışı bırakabilirsiniz:
+Bir Microsoft 365 hesabına lisans planından lisans atandığında, Microsoft 365 hizmetleri söz konusu lisanstan kullanıcının kullanımına sunulur. Ancak, kullanıcının erişebileceği Microsoft 365 hizmetlerini denetleyebilirsiniz. Örneğin, lisans SharePoint Online hizmetine erişime izin verse de, bu hizmete erişimi devre dışı bırakabilirsiniz. PowerShell'i kullanarak belirli bir lisans planı için herhangi bir sayıda hizmete erişimi devre dışı bırakabilirsiniz:
 
 - Tek bir hesap.
 - Bir hesap grubu.
 - Kuruluşunuzdaki tüm hesaplar.
 
 >[!Note]
->Diğer hizmetler buna bağımlı olduğunda belirli bir hizmeti devre dışı bırakmanızı engelleyebilecek Microsoft 365 hizmet bağımlılıkları vardır.
+>Microsoft 365 hizmet bağımlılıkları, diğer hizmetler buna bağımlı olduğunda belirtilen bir hizmeti devre dışı bırakmanızı engelleyebilir.
 >
 
 ## <a name="use-the-microsoft-graph-powershell-sdk"></a>Microsoft Graph PowerShell SDK'sını kullanma
@@ -65,7 +65,7 @@ Bu konudaki yordamların önce ve sonra sonuçlarını görmek için bkz. [Power
 
 ### <a name="disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan"></a>Belirli bir lisans planı için belirli kullanıcılar için belirli Microsoft 365 hizmetlerini devre dışı bırakma
   
-Belirli bir lisans planı için kullanıcılara yönelik belirli bir Microsoft 365 hizmetini devre dışı bırakmak için aşağıdaki adımları uygulayın:
+Belirli bir lisans planında kullanıcılar için belirli bir Microsoft 365 hizmeti kümesini devre dışı bırakmak için aşağıdaki adımları uygulayın:
   
 #### <a name="step-1-identify-the-undesired-services-in-the-licensing-plan-by-using-the-following-syntax"></a>1. Adım: Aşağıdaki söz dizimini kullanarak lisans planındaki istenmeyen hizmetleri belirleyin:
 
@@ -191,7 +191,7 @@ Bu konuda açıklanan yordamları otomatik hale getiren bir PowerShell betiği m
     
 ### <a name="disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan"></a>Belirli bir lisans planı için belirli kullanıcılar için belirli Microsoft 365 hizmetlerini devre dışı bırakma
   
-Belirli bir lisans planı için kullanıcılara yönelik belirli bir Microsoft 365 hizmetini devre dışı bırakmak için aşağıdaki adımları uygulayın:
+Belirli bir lisans planında kullanıcılar için belirli bir Microsoft 365 hizmeti kümesini devre dışı bırakmak için aşağıdaki adımları uygulayın:
   
 #### <a name="step-1-identify-the-undesired-services-in-the-licensing-plan-by-using-the-following-syntax"></a>1. Adım: Aşağıdaki söz dizimini kullanarak lisans planındaki istenmeyen hizmetleri belirleyin:
     
@@ -233,7 +233,7 @@ Bu örnek, kullanıcı BelindaN@litwareinc.com için hizmetleri devre dışı b�
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
 ```
 
-1. Adım'da açıklanan hizmetleri tüm mevcut lisanslı kullanıcılar için devre dışı bırakmak için **Get-MsolAccountSku** cmdlet'inin (**litwareinc:ENTERPRISEPACK** gibi) görüntüsünden Microsoft 365 planınızın adını belirtin ve ardından aşağıdaki komutları çalıştırın:
+1. Adım'da açıklanan hizmetleri tüm mevcut lisanslı kullanıcılar için devre dışı bırakmak için **Get-MsolAccountSku** cmdlet'inin ( **litwareinc:ENTERPRISEPACK** gibi) görüntüsünden Microsoft 365 planınızın adını belirtin ve ardından aşağıdaki komutları çalıştırın:
     
 ```powershell
 $acctSKU="<AccountSkuId>"

@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -18,18 +18,18 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Microsoft 365 gruplarında üyeliği korumak için PowerShell'i kullanmayı öğrenin.
-ms.openlocfilehash: 48720d5f3922598feec5a64eaa2c2532e17248ad
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1657abfebeb32cd6aba85174b8a38667fe1d43d3
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095696"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560471"
 ---
 # <a name="maintain-security-group-membership-with-powershell"></a>PowerShell ile güvenlik grubu üyeliğini koruma
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-Microsoft 365'da güvenlik grubu üyeliğini korumak için Microsoft 365 yönetim merkezi alternatif olarak Microsoft 365 için PowerShell'i kullanabilirsiniz. 
+Microsoft 365'te güvenlik grubu üyeliğini korumak için Microsoft 365 yönetim merkezi alternatif olarak Microsoft 365 için PowerShell'i kullanabilirsiniz. 
 
 >[!Note]
 >[Microsoft 365 yönetim merkezi ile Microsoft 365 grup üyeliğini korumayı öğrenin](../admin/create-groups/add-or-remove-members-from-groups.md). Ek kaynakların listesi için bkz. [Kullanıcıları ve grupları yönetme](/admin).
@@ -74,7 +74,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ### <a name="add-or-remove-groups-as-members-of-a-group"></a>Grupları grubun üyesi olarak ekleme veya kaldırma
 
-Güvenlik grupları, üye olarak diğer grupları içerebilir. Ancak Microsoft 365 gruplar bunu yapamaz. Bu bölüm, yalnızca bir güvenlik grubu için grup eklemek veya kaldırmak için PowerShell komutlarını içerir.
+Güvenlik grupları, üye olarak diğer grupları içerebilir. Ancak Microsoft 365 grupları bunu yapamaz. Bu bölüm, yalnızca bir güvenlik grubu için grup eklemek veya kaldırmak için PowerShell komutlarını içerir.
 
 **Bir grubu görünen adına göre eklemek için**, ekleyeceğiniz grubun görünen adını ve üye grubu içerecek grubun görünen adını doldurun ve bu komutları PowerShell penceresinde veya PowerShell ISE'de çalıştırın.
 
@@ -133,7 +133,7 @@ Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.DisplayNa
 
 ### <a name="add-or-remove-groups-as-members-of-a-group"></a>Grupları grubun üyesi olarak ekleme veya kaldırma
 
-Güvenlik grupları, üye olarak diğer grupları içerebilir. Ancak Microsoft 365 gruplar bunu yapamaz. Bu bölüm, yalnızca bir güvenlik grubu için grup eklemek veya kaldırmak için PowerShell komutlarını içerir.
+Güvenlik grupları, üye olarak diğer grupları içerebilir. Ancak Microsoft 365 grupları bunu yapamaz. Bu bölüm, yalnızca bir güvenlik grubu için grup eklemek veya kaldırmak için PowerShell komutlarını içerir.
 
 **Bir grubu görünen adına göre eklemek için**, ekleyeceğiniz grubun görünen adını ve üye grubu içerecek grubun görünen adını doldurun ve bu komutları PowerShell penceresinde veya PowerShell ISE'de çalıştırın.
 

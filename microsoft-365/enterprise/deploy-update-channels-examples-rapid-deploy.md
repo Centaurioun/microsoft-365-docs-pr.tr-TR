@@ -8,19 +8,19 @@ manager: scotv
 ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: En son sürümü dağıtan bir kuruluşun Windows 10 ve Microsoft 365 uygulamaları için kanalları nasıl kullandığı.
-ms.openlocfilehash: 43cd5deed9801de6ff044781bebf9d96cdac7c12
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 538759d0b7edd0711cfbc6d9862f496d36e1b5f2
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754720"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560625"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>En son sürümler için geniş dağıtım örneği
 
@@ -65,7 +65,7 @@ Genel hedef, bir grup temsilci kullanıcı ve cihazları tarafından Sürüm Ön
 
 | Sahne | Kanal | Dağıtım grubu |
 |:-------|:-------|:-----|
-| Pilot |  **Sürüm Önizleme Kanalı**  <ul><li>Amaç: Özellik güncelleştirmelerinin, temsili cihazlarda ve yapılandırmalarda (diller, üçüncü taraf uygulamalar) doğrulanması için BT personeline ve erken benimseyenlere dağıtımı. </li><li> Durum: Ticari müşteriler için tam uyumlu ve desteklenir ve destek sözleşmelerinize göre sayılmaz. </li></ul> | **Win10ReleasePreviewChannel** (örnek ad) <br><br> Üyeler şunlar içeren gruplardır: <ul><li> Departmanlar ve konumlar arasında meraklıları Windows </li><li> Doğrulama gerektiren yapılandırmalara sahip personel </li><li> BT yöneticileri ve BT dağıtım personeli </li><li> Değişiklik yöneticileri </li><li> İç eğitim personeli </li></ul> |
+| Pilot |  **Sürüm Önizleme Kanalı**  <ul><li>Amaç: Özellik güncelleştirmelerinin, temsili cihazlarda ve yapılandırmalarda (diller, üçüncü taraf uygulamalar) doğrulanması için BT personeline ve erken benimseyenlere dağıtımı. </li><li> Durum: Ticari müşteriler için tam uyumlu ve desteklenir ve destek sözleşmelerinize göre sayılmaz. </li></ul> | **Win10ReleasePreviewChannel** (örnek ad) <br><br> Üyeler şunlar içeren gruplardır: <ul><li> Departmanlar ve konumlar arasında Windows meraklıları </li><li> Doğrulama gerektiren yapılandırmalara sahip personel </li><li> BT yöneticileri ve BT dağıtım personeli </li><li> Değişiklik yöneticileri </li><li> İç eğitim personeli </li></ul> |
 | Üretim |  **Altı Aylık Kanal**  <ul><li>Amaç: En son özellik güncelleştirmelerinin kuruluşun geri kalanına geniş kapsamlı dağıtımı. </li><li> Durum: Tam uyumlu ve desteklenir. </li></ul> | **Win10SemiAnnualChannel** (örnek ad) <br><br> Üyeler Win10ReleasePreviewChannel grubunda olmayan tüm kullanıcılardır. |
 ||||
 
@@ -89,7 +89,7 @@ Genel hedef, bir grup temsilci kullanıcı tarafından Geçerli Kanal (Önizleme
 
 | Sahne | Kanal | Dağıtım grubu |
 |:-------|:-------|:-----|
-| Pilot |  **Geçerli Kanal (Önizleme)** <ul><li> Amaç: {bir grup temsilci kullanıcıya yeni Microsoft 365 Uygulamaları özelliklere göz atın} Özellik güncelleştirmelerinin Güncel Kanal (Önizleme) kullanıcıları ile test edilir ve üretime hazır oldukları anda dağıtımı. </li><li> Durum: Tam uyumlu ve desteklenir.</li><li> Ne sıklıkta: Her ay 2-3 kez güncelleştirir. </li></ul> | **AppsCurrentChannelPreview** (örnek ad) <br><br> Üyeler şunlar içeren gruplardır: <ul><li> Departmanlar ve konumlar arasında uygulama meraklılarını Office </li><li> Doğrulama gerektiren yapılandırmalara sahip personel </li><li> BT yöneticileri ve BT dağıtım personeli </li><li> Değişiklik yöneticileri </li><li> İç eğitim personeli </li></ul>|
+| Pilot |  **Geçerli Kanal (Önizleme)** <ul><li> Amaç: {bir grup temsilci kullanıcıya yeni Microsoft 365 Uygulamaları özelliklere göz atın} Özellik güncelleştirmelerinin Güncel Kanal (Önizleme) kullanıcıları ile test edilir ve üretime hazır oldukları anda dağıtımı. </li><li> Durum: Tam uyumlu ve desteklenir.</li><li> Ne sıklıkta: her ay 2-3 kez Güncelleştirmeler. </li></ul> | **AppsCurrentChannelPreview** (örnek ad) <br><br> Üyeler şunlar içeren gruplardır: <ul><li> Departmanlar ve konumlar genelinde office uygulamaları meraklıları </li><li> Doğrulama gerektiren yapılandırmalara sahip personel </li><li> BT yöneticileri ve BT dağıtım personeli </li><li> Değişiklik yöneticileri </li><li> İç eğitim personeli </li></ul>|
 | Üretim | **Geçerli Kanal** <ul><li> Amaç: En son özellik güncelleştirmelerinin kuruluşun geri kalanına geniş kapsamlı dağıtımı. </li><li> Durum: Tam uyumlu ve desteklenir. </li></ul> |  **AppsCurrentChannel** (örnek ad) <br><br> Üyeler, AppsCurrentChannelPreview grubunda olmayan tüm kullanıcılardır. |
 |||
 

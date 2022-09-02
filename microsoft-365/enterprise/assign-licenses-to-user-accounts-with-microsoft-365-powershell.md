@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Bu makalede, PowerShell'i kullanarak lisanssız kullanıcılara Microsoft 365 lisansı atamayı öğrenin.
-ms.openlocfilehash: 94c3c8dd58ed0ac424e027b30a7d83fd6dda1556
-ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.openlocfilehash: 72814810d6ad1c762505d2a2caeac371812f63e1
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2022
-ms.locfileid: "67336166"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560757"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>PowerShell ile kullanıcı hesaplarına Microsoft 365 lisansları atama
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: c6a2f676839caefc34b9dff03f860d04a260de0c
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 3e9111edf7400ff09b366783a45ee40397bec81a
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384948"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560251"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Uç Nokta için Microsoft Defender canlı yanıt sorunlarını giderme
 
@@ -64,9 +64,8 @@ Canlı yanıt oturumu sırasında bir eylem gerçekleştirmeye çalışırken do
 
 Canlı yanıt, Windows'da WNS hizmetiyle Uç Nokta için Defender algılayıcı kaydı hizmetinden yararlanıyor. Canlı yanıtla ilgili bağlantı sorunlarınız varsa aşağıdaki ayrıntıları onaylayın:
 
-1. `notify.windows.com` ortamınızda engellenmez. Daha fazla bilgi için bkz. [Cihaz ara sunucusu ve İnternet bağlantı ayarlarını yapılandırma](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
-2. WpnService (Windows Anında İletme Bildirimleri Sistem Hizmeti) devre dışı bırakılmamış.
-3. WNS bulutuyla WpnService bağlantısı, grup ilkesi veya MDM ayarı aracılığıyla devre dışı bırakılmaz. ['Bildirimlerin ağ kullanımını kapat'](/windows/client-management/mdm/policy-csp-notifications) ayarı '1' olarak ayarlanmamalıdır.
+1. WpnService (Windows Anında İletme Bildirimleri Sistem Hizmeti) devre dışı bırakılmamış.
+2. WNS bulutuyla WpnService bağlantısı, grup ilkesi veya MDM ayarı aracılığıyla devre dışı bırakılmaz. ['Bildirimlerin ağ kullanımını kapat'](/windows/client-management/mdm/policy-csp-notifications) ayarı '1' olarak ayarlanmamalıdır.
 
 WpnService hizmetinin davranışını ve gereksinimlerini tam olarak anlamak için aşağıdaki makalelere bakın:
 

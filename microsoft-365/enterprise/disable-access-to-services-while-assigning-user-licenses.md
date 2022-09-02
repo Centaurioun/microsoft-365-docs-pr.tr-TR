@@ -7,7 +7,7 @@ ms.date: 04/24/2020
 audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,19 +17,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
-description: Microsoft 365 için PowerShell kullanarak kullanıcı hesaplarına lisans atamayı ve belirli hizmet planlarını aynı anda devre dışı bırakmayı öğrenin.
-ms.openlocfilehash: 6c0c3a3860da8a1935152fcaefb29f2f355cfa49
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft 365 için PowerShell'i kullanarak kullanıcı hesaplarına lisans atamayı ve belirli hizmet planlarını aynı anda devre dışı bırakmayı öğrenin.
+ms.openlocfilehash: ef469a39136e030a5ff769af9a40f397c0714043
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095740"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560207"
 ---
 # <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Kullanıcı lisansları atarken Microsoft 365 hizmetlerine erişimi devre dışı bırakma
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-Microsoft 365 abonelikler tek tek hizmetler için hizmet planları ile birlikte gelir. Microsoft 365 yöneticilerin genellikle kullanıcılara lisans atarken belirli planları devre dışı bırakması gerekir. Bu makaledeki yönergelerle, tek bir kullanıcı hesabı veya birden çok kullanıcı hesabı için PowerShell kullanarak belirli hizmet planlarını devre dışı bırakırken bir Microsoft 365 lisansı atayabilirsiniz.
+Microsoft 365 abonelikleri, tek tek hizmetler için hizmet planları ile birlikte gelir. Microsoft 365 yöneticilerinin genellikle kullanıcılara lisans atarken belirli planları devre dışı bırakması gerekir. Bu makaledeki yönergelerle, tek bir kullanıcı hesabı veya birden çok kullanıcı hesabı için PowerShell kullanarak belirli hizmet planlarını devre dışı bırakırken bir Microsoft 365 lisansı atayabilirsiniz.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph için Azure Active Directory PowerShell modülünü kullanma
 
@@ -81,7 +81,7 @@ Get-MsolAccountSku
 
 Komutun görüntüsünde  `Get-MsolAccountSku` :
 
-- **AccountSkuId**, kuruluşunuz için biçimindeki \<OrganizationName>\<Subscription> bir aboneliktir. \<OrganizationName>, Microsoft 365 kaydolduğunuz sırada sağladığınız değerdir ve kuruluşunuz için benzersizdir. \<Subscription> Değer belirli bir aboneliğe yöneliktir. Örneğin, litwareinc:ENTERPRISEPACK için kuruluş adı litwareinc, abonelik adı ise ENTERPRISEPACK (Office 365 Kurumsal E3) şeklindedir.
+- **AccountSkuId**, kuruluşunuz için biçimindeki \<OrganizationName>\<Subscription> bir aboneliktir. \<OrganizationName>, Microsoft 365'e kaydolduğunuz sırada sağladığınız değerdir ve kuruluşunuz için benzersizdir. \<Subscription> Değer belirli bir aboneliğe yöneliktir. Örneğin, litwareinc:ENTERPRISEPACK için kuruluş adı litwareinc, abonelik adı ise ENTERPRISEPACK (Office 365 Kurumsal E3) şeklindedir.
 
 - **ActiveUnits** , abonelik için satın aldığınız lisans sayısıdır.
 
@@ -101,7 +101,7 @@ Bu komutun görüntüsünden, kullanıcılara lisans atarken hangi hizmet planla
 
 Hizmet planlarının ve ilgili Microsoft 365 hizmetlerinin kısmi listesi aşağıdadır.
 
-Aşağıdaki tabloda Microsoft 365 hizmet planları ve bunların en yaygın hizmetler için kolay adları gösterilmektedir. Hizmet planlarınızın listesi farklı olabilir.
+Aşağıdaki tabloda, Microsoft 365 hizmet planları ve bunların en yaygın hizmetler için kolay adları gösterilmektedir. Hizmet planlarınızın listesi farklı olabilir.
 
 |**Hizmet planı**|**Açıklama**|
 |:-----|:-----|

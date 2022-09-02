@@ -1,12 +1,12 @@
 ---
-title: şirket içi ağı Microsoft Azure bir sanal ağa Bağlan
+title: Şirket içi ağı Microsoft Azure sanal ağına bağlama
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,25 +19,25 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
-description: 'Özet: Siteler arası VPN bağlantısıyla Office sunucu iş yükleri için şirket içi Azure sanal ağını yapılandırmayı öğrenin.'
-ms.openlocfilehash: 8f9d8336bb50821374ada700613d2ae6142baf6d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 'Özet: Siteler arası VPN bağlantısıyla Office sunucusu iş yükleri için şirket içi Azure sanal ağını yapılandırmayı öğrenin.'
+ms.openlocfilehash: 1c890987bd12504e475c10b85a556cc642e27aec
+ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094868"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67560405"
 ---
-# <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>şirket içi ağı Microsoft Azure bir sanal ağa Bağlan
+# <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Şirket içi ağı Microsoft Azure sanal ağına bağlama
 
 Şirket içi ağınıza bağlı olan şirket içi Azure sanal ağı, ağınızı Azure altyapı hizmetlerinde barındırılan alt ağları ve sanal makineleri içerecek şekilde genişletir. Bu bağlantı, şirket içi ağınızdaki bilgisayarların Azure'daki sanal makinelere doğrudan erişmesine olanak tanır ve tam tersi de geçerlidir. 
 
-Örneğin, Azure sanal makinesinde çalışan bir dizin eşitleme sunucusunun hesaplarda yapılan değişiklikleri şirket içi etki alanı denetleyicilerinizi sorgulaması ve bu değişiklikleri Microsoft 365 aboneliğinizle eşitlemesi gerekir. Bu makalede, Azure sanal makinelerini barındırmaya hazır bir siteden siteye sanal özel ağ (VPN) bağlantısı kullanarak şirket içi Azure sanal ağının nasıl ayarlanacağı gösterilmektedir.
+Örneğin, Azure sanal makinesinde çalışan bir dizin eşitleme sunucusunun hesaplardaki değişiklikleri şirket içi etki alanı denetleyicilerinizi sorgulaması ve bu değişiklikleri Microsoft 365 aboneliğinizle eşitlemesi gerekir. Bu makalede, Azure sanal makinelerini barındırmaya hazır bir siteden siteye sanal özel ağ (VPN) bağlantısı kullanarak şirket içi Azure sanal ağının nasıl ayarlanacağı gösterilmektedir.
 
 ## <a name="configure-a-cross-premises-azure-virtual-network"></a>Şirket içi Azure sanal ağını yapılandırma
 
 Azure'daki sanal makinelerinizin şirket içi ortamınızdan yalıtılması gerekmez. Azure sanal makinelerini şirket içi ağ kaynaklarınıza bağlamak için bir şirket içi Azure sanal ağı yapılandırmanız gerekir. Aşağıdaki diyagramda, Azure'da bir sanal makine ile şirket içi azure sanal ağını dağıtmak için gerekli bileşenler gösterilmektedir.
   
-![Siteden siteye VPN bağlantısıyla Microsoft Azure bağlı şirket içi ağ.](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+![Siteden siteye VPN bağlantısıyla Microsoft Azure'a bağlı şirket içi ağ.](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
  
 Diyagramda, siteden siteye VPN bağlantısıyla bağlanan iki ağ vardır: şirket içi ağ ve Azure sanal ağı. Siteden siteye VPN bağlantısı:
 
@@ -54,7 +54,7 @@ Azure sanal ağınızla şirket içi ağınız arasında VPN bağlantısını ay
   
 1. **Şirket içi:** Azure sanal ağının adres alanı için şirket içi VPN cihazınızı işaret eden bir şirket içi ağ yolu tanımlayın ve oluşturun.
     
-2. **Microsoft Azure:** Siteden siteye VPN bağlantısına sahip bir Azure sanal ağı oluşturun. 
+2. **Microsoft Azure:** Siteden siteye VPN bağlantısıyla bir Azure sanal ağı oluşturun. 
     
 3. **Şirket içi:** İnternet Protokolü güvenliğini (IPsec) kullanan VPN bağlantısını sonlandırmak için şirket içi donanım veya yazılım VPN cihazınızı yapılandırın.
     
@@ -210,7 +210,7 @@ Elde edilen yapılandırmanız aşağıdadır.
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>2. Aşama: Azure'da şirket içi sanal ağı oluşturma
 <a name="Phase2"></a>
 
-İlk olarak bir Azure PowerShell istemi açın. Azure PowerShell yüklemediyseniz bkz. [Azure PowerShell ile Kullanmaya başlayın](/powershell/azure/get-started-azureps).
+İlk olarak bir Azure PowerShell istemi açın. Azure PowerShell yüklemediyseniz bkz. [Azure PowerShell kullanmaya başlama](/powershell/azure/get-started-azureps).
 
  
 Ardından, bu komutla Azure hesabınızda oturum açın.
@@ -320,7 +320,7 @@ Elde edilen yapılandırmanız aşağıdadır.
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>3. Aşama (İsteğe bağlı): Sanal makine ekleme
 
-Azure'da ihtiyacınız olan sanal makineleri oluşturun. Daha fazla bilgi için bkz. [Azure portal ile Windows sanal makine oluşturma](https://go.microsoft.com/fwlink/p/?LinkId=393098).
+Azure'da ihtiyacınız olan sanal makineleri oluşturun. Daha fazla bilgi için bkz. [Azure portal ile Windows sanal makinesi oluşturma](https://go.microsoft.com/fwlink/p/?LinkId=393098).
   
 Aşağıdaki ayarları kullanın:
   
@@ -336,4 +336,4 @@ Elde edilen yapılandırmanız aşağıdadır.
   
 ## <a name="next-step"></a>Sonraki adım
   
-[Microsoft Azure'da Microsoft 365 Dizin Eşitlemesini Dağıtma](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Microsoft Azure'da Microsoft 365 Dizin Eşitleme'yi dağıtma](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
