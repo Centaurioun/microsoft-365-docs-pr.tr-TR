@@ -2,7 +2,7 @@
 title: Windows Yönetim Araçları'nı kullanarak virüsten koruma taramaları zamanlama
 description: WMI kullanarak virüsten koruma taramaları zamanlama
 keywords: hızlı tarama, tam tarama, WMI, zamanlama, virüsten koruma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,27 +13,27 @@ ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 875acc362a9e8ecb6707c7ab59096f219cae0fda
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8d9bf798a3bfb8e6d7e393152fd50afb0168ab19
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417512"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586038"
 ---
 # <a name="schedule-antivirus-scans-using-windows-management-instrumentation-wmi"></a>Windows Yönetim Araçları'nı (WMI) kullanarak virüsten koruma taramaları zamanlama
 
 **Şunlar için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft Defender Virüsten Koruma
 
 **Platform**
 - Windows
 
-Bu makalede WMI kullanılarak zamanlanmış taramaların nasıl yapılandırıldığı açıklanır. Taramaları zamanlama ve tarama türleri hakkında daha fazla bilgi edinmek için bkz[. Zamanlanmış hızlı veya tam Microsoft Defender Virüsten Koruma taramalarını yapılandırma](schedule-antivirus-scans.md). 
+Bu makalede WMI kullanılarak zamanlanmış taramaların nasıl yapılandırıldığı açıklanır. Taramaları zamanlama ve tarama türleri hakkında daha fazla bilgi edinmek için bkz [. Zamanlanmış hızlı veya tam Microsoft Defender Virüsten Koruma taramalarını yapılandırma](schedule-antivirus-scans.md). 
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-scans"></a>Taramaları zamanlamak için Windows Yönetim Yönergesi'ni (WMI) kullanma
 
@@ -84,7 +84,7 @@ ScanScheduleQuickScanTime
 Daha fazla bilgi ve izin verilen parametreler için bkz. [Windows Defender WMIv2 API'leri](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

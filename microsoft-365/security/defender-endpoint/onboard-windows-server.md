@@ -2,7 +2,7 @@
 title: Uç Nokta için Defender Windows Server'a ekleme
 description: Windows Server'ı Uç Nokta için Microsoft Defender'a ekleme.
 keywords: ekleme, Uç Nokta için Microsoft Defender ekleme, sccm, grup ilkesi, mdm, yerel betik, algılama testi
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: b25d60be243dd5d375fb6ed0f795e4a901a504b2
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.subservice: mde
+ms.openlocfilehash: 6bc6bfa6848d613b23fab0bf00d137d3c62b80e3
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66862102"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585630"
 ---
 # <a name="defender-for-endpoint-onboarding-windows-server"></a>Uç Nokta için Defender Windows Server'a ekleme
 
@@ -46,14 +46,15 @@ Bu konu başlığında, belirli Windows sunucularının Uç Nokta için Microsof
 
 Windows sunucuları için Windows Güvenliği Taban Çizgilerini indirme ve kullanma hakkında yönergeler için bkz[. Windows Güvenliği Temeller.](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)
 
+## <a name="license-requirement"></a>Lisans gereksinimi
+
+Uç Nokta için Microsoft Defender Server SKU'su satın almaya uygun olmak için, aşağıdakilerden en az birini zaten satın almış olmanız gerekir: Windows E5/A5, Microsoft 365 E5/A5 veya Microsoft 365 E5 Güvenlik abonelik lisansları. Lisanslama hakkında daha fazla bilgi için bkz. [Ürün Koşulları](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).
+
 ## <a name="windows-server-onboarding-overview"></a>Windows Server eklemeye genel bakış
 
 Sunucuları başarıyla eklemek için aşağıdaki genel adımları tamamlamanız gerekir: 2008 R2, 2012 R2, 2016, 2019, 2022.
 
 :::image type="content" source="images/server-onboarding.png" alt-text="Sunucu Ekleme" lightbox="images/server-onboarding.png":::
-
-> [!NOTE]
-> Sunucular yalnızca GP'ler kullanılarak eklenir.
 
 ### <a name="windows-server-2012-r2-and-windows-server-2016"></a>R2 ve Windows Server 2016 Windows Server 2012
 - Yükleme ve ekleme paketlerini indirin.
@@ -63,9 +64,6 @@ Sunucuları başarıyla eklemek için aşağıdaki genel adımları tamamlamanı
 ### <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019"></a>Windows Server Semi-Annual Enterprise Channel ve Windows Server 2019
 - Ekleme paketini indirin.
 - İlgili araç için ekleme adımlarını izleyin.
-
-> [!IMPORTANT]
-> Uç Nokta için Microsoft Defender Server SKU'su satın almaya uygun olmak için, aşağıdakilerden herhangi birini(Windows E5/A5, Microsoft 365 E5/A5 veya Microsoft 365 E5 Güvenlik abonelik lisanslarından en az birini) zaten satın almış olmanız gerekir. Lisanslama hakkında daha fazla bilgi için bkz. [Ürün Koşulları](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).
 
 ## <a name="offboard-windows-servers"></a>Windows sunucularını çıkarma
 

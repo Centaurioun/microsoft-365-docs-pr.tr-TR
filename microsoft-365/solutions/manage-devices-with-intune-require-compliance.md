@@ -10,7 +10,7 @@ manager: dougeby
 audience: ITPro
 description: kullanıcılar herhangi bir konumdaki herhangi bir cihazdan çalışırken şirket verilerinin güvenliğini sağlayarak uyumlu cihazlar gerektirmek için Azure AD'de bir koşullu erişim ilkesi oluşturun.
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - Conditional access policy
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - zerotrust-solution
 ms.custom: ''
-ms.openlocfilehash: 61191da794c065a46d709d443982849ec4c4d3e3
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 407611cbad022bdc59f6f16dbcd7b0fbe33d1435
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66747955"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585696"
 ---
 # <a name="step-4-require-healthy-and-compliant-devices-with-intune"></a>Adım 4. Intune ile iyi durumda ve uyumlu cihazlar gerektirme
 

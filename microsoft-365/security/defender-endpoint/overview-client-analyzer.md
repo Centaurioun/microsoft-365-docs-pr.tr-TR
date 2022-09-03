@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender İstemci Çözümleyicisi'ni kullanarak algılayıcı sistem durumu sorunlarını giderme
 description: Algılayıcı verilerini veya özelliğini etkileyen olası yapılandırma, ortam, bağlantı veya telemetri sorununu belirlemek için cihazlarda algılayıcı sistem durumu sorunlarını giderin.
 keywords: algılayıcı, algılayıcı durumu, yanlış yapılandırılmış, etkin değil, algılayıcı verileri yok, algılayıcı verileri, iletişim bozukluğu, iletişim
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: cad957dff57da6598e7b7db470998979d2bd0f63
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.subservice: m365d
+ms.openlocfilehash: d689589def68ba98dd952dbd3991eecee38ec4be
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685602"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586456"
 ---
 # <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Uç Nokta için Microsoft Defender İstemci Çözümleyicisi'ni kullanarak algılayıcı sistem durumu sorunlarını giderme
 

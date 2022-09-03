@@ -2,7 +2,7 @@
 title: Windows'ta Microsoft Defender Çevrimdışı
 description: Microsoft Defender Çevrimdışı'nı doğrudan Microsoft Defender Virüsten Koruma uygulamasından kullanabilirsiniz. Ayrıca ağınızda nasıl dağıtılacağı da yönetilebilir.
 keywords: tarama, defender, çevrimdışı
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 350ab278281cc436bb49c6d27827ac73ae2bea43
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5af9893222b389315632bb84887fe65effe824dc
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476538"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586060"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Microsoft Defender çevrimdışı tarama sonuçlarını gözden geçirin ve çalıştırın
 

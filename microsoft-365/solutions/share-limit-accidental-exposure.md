@@ -1,11 +1,11 @@
 ---
-title: Kazara maruz kalmayı sınırla
+title: Kazara maruz kalmayı sınırlayın
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
@@ -16,101 +16,101 @@ ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
-description: Kuruluş dışındaki kişiler ile dosya paylaştığınızda yanlışlıkla bilgilerin maruz kalmalarını sınırlamayı öğrenin.
-ms.openlocfilehash: c1bf6424e2be70118dd2d85671a857a8a33ef2f9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Kuruluşunuz dışındaki kişilerle dosya paylaşırken bilgilerin yanlışlıkla açığa çıkmalarını nasıl sınırlayacağınızı öğrenin.
+ms.openlocfilehash: 66d55a59175b812d305ab3e1c4868f7be689cbaa
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329065"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586104"
 ---
-# <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Kuruluş dışından kişilerle paylaşım sırasında dosyalarda yanlışlıkla açık kalma sürelerini sınırlama
+# <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Kuruluşunuzun dışındaki kişilerle paylaşım yaparken dosyaların yanlışlıkla açığa çıkmalarını sınırlayın
 
-Dosyalarınızı ve klasörlerinizi kuruluş dışındakilerle paylaştığınızda, yanlışlıkla hassas bilgileri paylaşma riskini azaltmak için çeşitli seçenekler bulunur. Bu makaledeki seçenekleri, kuruma en uygun şekilde karşılayacak şekilde seçebilirsiniz.
+Kuruluşunuz dışındaki kişilerle dosya ve klasör paylaşırken, hassas bilgilerin yanlışlıkla paylaşılması olasılığını azaltmak için çeşitli seçenekler vardır. Kuruluşunuzun gereksinimlerini en iyi şekilde karşılamak için bu makaledeki seçenekler arasından seçim yapabilirsiniz.
 
 ## <a name="use-best-practices-for-anyone-links"></a>Herkes bağlantıları için en iyi yöntemleri kullanma
 
-Kuruluşta kişilerin kimliği doğrulanmamış paylaşım yapmaları gerekiyorsa, ancak kimliği doğrulanmamış kişilerin içeriği değiştirmesi konusunda endişeleniyorsanız, Kurumda [](best-practices-anonymous-sharing.md) kimliği doğrulanmamış paylaşımla çalışma konusunda yol gösterici kılavuzlar için Kimliği doğrulanmamış paylaşım için en iyi yöntemler makalesini okuyun.
+Kuruluşunuzdaki kişilerin kimliği doğrulanmamış paylaşım yapması gerekiyorsa ancak kimliği doğrulanmamış kişilerin içeriği değiştirmesinden endişe duyuyorsanız, kuruluşunuzda [kimliği doğrulanmamış paylaşımla çalışma yönergeleri için Doğrulanmamış paylaşım için en iyi yöntemler](best-practices-anonymous-sharing.md) makalesini okuyun.
 
 ## <a name="turn-off-anyone-links"></a>Herkes bağlantılarını kapatma
 
-Uygun içerik için *Herkes* bağlantılarını etkin bırakmanızı öneririz, çünkü bu paylaşım yapmanın en kolay yolu olup, KULLANıCıLARıN, BILGI bölümünizin denetimi dışında başka çözümler arama riskini azaltmaya yardımcı olabilir. *Herkes* bağlantıları başkalarına iletebilirsiniz, ancak dosya erişimi yalnızca bağlantıya sahip olanlar tarafından kullanılabilir.
+Paylaşmanın en kolay yolu olduğundan ve kullanıcıların BT departmanınızın denetimi dışında kalan diğer çözümleri arama riskini azaltmaya yardımcı olabileceğinden uygun içerik için *Herkes* bağlantılarının etkin kalmasını öneririz. *Herhangi bir* bağlantı başkalarına iletilebilir, ancak dosya erişimi yalnızca bağlantıya sahip olanlar tarafından kullanılabilir.
 
-Kuruluş dışından kişilerin SharePoint, Groups veya Teams'ta içeriğe erişirken her zaman kimlik doğrulaması yapmalarını Teams, Herkes *paylaşımını kapatabilirsiniz*. Bu, kullanıcıların içeriğin kimliği doğrulanmamış paylaşımını engellemek için.
+Kuruluşunuz dışındaki kişilerin SharePoint, Gruplar veya Teams'deki içeriğe erişirken her zaman kimlik doğrulamasını istiyorsanız *, Herkes* paylaşım özelliğini kapatabilirsiniz. Bu, kullanıcıların kimliği doğrulanmamış içerik paylaşımını engeller.
 
-Herkes bağlantılarını devre *dışı bıraksanız* bile kullanıcılar Belirli kişiler bağlantılarını kullanarak kolayca *konuklarla paylaşabilir* . Bu durumda, paylaşılan içeriğe erişmek için, kuruluş dışındaki tüm kişilerin kimlik doğrulaması yapmaları gerekir.
+*Herkes* bağlantılarını devre dışı bırakırsanız, kullanıcılar *Belirli kişiler* bağlantılarını kullanarak konuklarla kolayca paylaşımda bulunabilir. Bu durumda, kuruluşunuzun dışındaki tüm kişilerin paylaşılan içeriğe erişebilmeleri için kimlik doğrulamasından geçmesi gerekir.
 
-Gereksinimlerinize bağlı olarak, belirli siteler için veya tüm *organizasyonunız* için Herkes bağlantılarını devre dışı abilirsiniz.
+gereksinimlerinize bağlı olarak, belirli siteler veya tüm kuruluşunuz için *Herkes* bağlantılarını devre dışı bırakabilirsiniz.
 
-Sizin için herkes *bağlantılarını* kapatmak için
+Kuruluşunuz için *Herkes* bağlantılarını kapatmak için
 
-1. SharePoint yönetim merkezinde, sol gezinti bölmesinde Paylaşım'ı <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**seçin**</a>.
-2. Dış SharePoint ayarlarını Yeni ve var **olan konuklar olarak ayarlayın**.
+1. SharePoint yönetim merkezinde, sol gezinti bölmesinde <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Paylaşım'ı**</a> seçin.
+2. SharePoint dış paylaşım ayarlarını **Yeni ve mevcut konuklar** olarak ayarlayın.
 
-   ![Site dış paylaşım ayarları SharePoint düzeyi ayarlarının ekran görüntüsü.](../media/sharepoint-organization-external-sharing-controls-new-users.png)
+   ![Kuruluş düzeyinde SharePoint sitesi dış paylaşım ayarlarının ekran görüntüsü.](../media/sharepoint-organization-external-sharing-controls-new-users.png)
 
 3. **Kaydet**'e tıklayın.
 
-Site için *herkes* bağlantılarını kapatmak için
+Sitenin *Herkes* bağlantılarını kapatmak için
 
-1. Genel SharePoint, sol gezinti bölmesinde Siteler'i genişletin **ve Etkin** <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**siteler'i seçin**</a>.
+1. SharePoint yönetim merkezinde, sol gezinti bölmesinde **Siteler'i** genişletin ve <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Etkin siteler'i**</a> seçin.
 2. Yapılandırmak istediğiniz siteyi seçin.
-3. Şeritte Paylaşım'ı **seçin**.
-4. Paylaşımın Yeni ve mevcut konuklar **olarak ayar olduğundan emin olmak**.
+3. Şeritte **Paylaşım'ı** seçin.
+4. Paylaşımın **Yeni ve mevcut konuklar** olarak ayarlandığından emin olun.
 
-   ![Sitenin dış paylaşım SharePoint düzeyi ayarlarının ekran görüntüsü.](../media/sharepoint-site-external-sharing-settings.png)
+   ![Site düzeyinde SharePoint sitesi dış paylaşım ayarlarının ekran görüntüsü.](../media/sharepoint-site-external-sharing-settings.png)
 
-5. Değişiklik yaptıysanız Kaydet'i **seçin**.
+5. Değişiklik yaptıysanız **Kaydet'i** seçin.
 
 ## <a name="domain-filtering"></a>Etki alanı filtreleme
 
-Etki alanı izin listelerini kullanarak veya reddederek, kullanıcılarının kuruluş dışındaki kullanıcılarla paylaşımda kullanabileceği etki alanlarını belirtebilirsiniz.
+Kullanıcılarınızın kuruluşunuz dışındaki kişilerle paylaşım yaparken hangi etki alanlarını kullanabileceğini belirtmek için etki alanına izin verme veya reddetme listelerini kullanabilirsiniz.
 
-İzin ver listesiyle, bir etki alanı listesi belirtebilirsiniz; burada, kuruluş dışındaki kullanıcılarla kuruluş dışındaki kullanıcılarla paylaşımda ekleyebilirsiniz. Diğer etki alanlarıyla paylaşım engellenir. Organizasyonunız yalnızca belirli etki alanları listesinden gelen kişiler ile işbirliği yapıyorsa, diğer etki alanlarıyla paylaşımı önlemek için bu özelliği kullanabilirsiniz.
+İzin verme listesiyle, kuruluşunuzdaki kullanıcıların kuruluşunuz dışındaki kişilerle paylaşabileceği etki alanlarının listesini belirtebilirsiniz. Diğer etki alanlarıyla paylaşım engellenir. Kuruluşunuz yalnızca belirli etki alanları listesinden kişilerle işbirliğiiyorsa, diğer etki alanlarıyla paylaşımı önlemek için bu özelliği kullanabilirsiniz.
 
-Reddedenler listesiyle, etki alanlarının listesini belirtebilirsiniz; bu liste, kurum dışındaki kullanıcılarla organizasyon dışındaki kullanıcılarla paylaşamaz. Listelenen etki alanlarıyla paylaşım engellenir. Bu özellik, örneğin kimlerin kuruluşta yer alan içeriğe erişmesini engellemek istediğiniz rakipler varsa kullanışlı olabilir.
+Reddetme listesiyle, kuruluşunuzdaki kullanıcıların kuruluşunuz dışındaki kişilerle paylaşamayacağı etki alanlarının listesini belirtebilirsiniz. Listelenen etki alanlarıyla paylaşım engellenir. Örneğin kuruluşunuzdaki içeriğe erişmesini engellemek istediğiniz rakipleriniz varsa bu yararlı olabilir.
 
-İzin ver ve reddet listeleri yalnızca konuklarla paylaşımı etkiler. Kullanıcılar, devre dışı olmadığınız Herkes bağlantılarını kullanarak yasak etki *alanlarını* kullanan kullanıcılarla paylaşımda ılabilir. Etki alanı izin verme ve reddetme listelerinde en iyi sonuçları elde etmek için yukarıda *açıklandığı gibi Herkes* bağlantılarını devre dışı bırakmayı göz önünde bulundurabilirsiniz.
+İzin ver ve reddet listeleri yalnızca konuklarla paylaşımı etkiler. Kullanıcılar, devre dışı bırakmıyorsanız *Herkes* bağlantılarını kullanarak yasaklanmış etki alanlarından kişilerle paylaşmaya devam edebilir. Etki alanı izin verme ve reddetme listeleriyle ilgili en iyi sonuçları elde etmek için yukarıda açıklandığı gibi *Herkes* bağlantılarını devre dışı bırakmayı göz önünde bulundurun.
 
-Etki alanı izin verme veya reddedilenler listesi ayarlamak için
+Etki alanı izin verme veya reddetme listesi ayarlamak için
 
-1. SharePoint yönetim merkezinde, sol gezinti bölmesinde Paylaşım'ı <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**seçin**</a>
-2. Dış **paylaşım için gelişmiş ayarlar'ın** altında Dış paylaşımı **etki alanına göre sınırla onay** kutusunu seçin.
-3. Etki alanı **ekle'ye tıklayın**.
-4. Etki alanlarını engellemek isteyip istemediklerini seçin, etki alanlarını yazın ve Tamam'a **tıklayın**.
+1. SharePoint yönetim merkezinde, sol gezinti bölmesinde <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Paylaşım'ı** seçin</a>
+2. **Dış paylaşım için gelişmiş ayarlar'ın** altında **Dış paylaşımı etki alanına göre sınırla** onay kutusunu seçin.
+3. **Etki alanı ekle'ye** tıklayın.
+4. Etki alanlarını engellemek isteyip istemediğinizi seçin, etki alanlarını yazın ve **Tamam'a** tıklayın.
 
-   ![Dış paylaşımı SharePoint etki alanına göre sınırla ayarının ekran görüntüsü.](../media/sharepoint-sharing-block-domain.png)
+   ![SharePoint dış paylaşımı etki alanına göre sınırla ayarının ekran görüntüsü.](../media/sharepoint-sharing-block-domain.png)
 
 5. **Kaydet**'e tıklayın.
 
-Etki alanına göre paylaşımı SharePoint ve OneDrive'den daha yüksek bir düzeyde sınırlamak için Azure Active Directory'de belirli kuruluşlardan [B2B](/azure/active-directory/b2b/allow-deny-list) kullanıcılarına davetlere izin ve Azure Active Directory. (Bu ayarların etki [SharePoint OneDrive için Azure AD B2B Preview ile Azure AD B2B Preview](/sharepoint/sharepoint-azureb2b-integration-preview) SharePoint ve OneDrive.)
+Etki alanına göre paylaşımı SharePoint ve OneDrive'dan daha yüksek bir düzeyde sınırlamak istiyorsanız, Azure Active Directory'deki [belirli kuruluşların B2B kullanıcılarına yönelik davetlere izin verebilir veya bunları engelleyebilirsiniz](/azure/active-directory/b2b/allow-deny-list) . (Bu ayarların [SharePoint ve OneDrive'ı etkilemesi için SharePoint ve OneDrive tümleştirmesini Azure AD B2B Preview ile](/sharepoint/sharepoint-azureb2b-integration-preview) yapılandırmanız gerekir.)
 
-## <a name="limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups"></a>Dosyaların, klasörlerin ve sitelerin paylaşımını belirli güvenlik gruplarıyla sınırlama
+## <a name="limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups"></a>Dosya, klasör ve site paylaşımını kuruluşunuzun dışındaki kişilerle belirtilen güvenlik gruplarıyla sınırlayın
 
-Dosyaların, klasörlerin ve sitelerin paylaşımını belirli bir güvenlik grubunun üyeleriyle, kuruluş dışındaki çalışanlarla sınırlandırabilirsiniz. Bu özellik, dış paylaşımı etkinleştirmek, ancak onay iş akışı veya istek süreciyle etkinleştirmek istediğiniz durumlarda kullanışlıdır. Alternatif olarak, kullanıcılarınızı güvenlik grubuna eklenmeden ve dış paylaşıma izin verilmeden önce bir eğitim kursını tamamlamalarını gerektirmeniz gerekir.
+Dosya, klasör ve site paylaşımını kuruluşunuzun dışındaki kişilerle belirli bir güvenlik grubunun üyeleriyle kısıtlayabilirsiniz. Dış paylaşımı etkinleştirmek istiyorsanız ancak onay iş akışı veya istek işlemiyle bu yararlı olur. Alternatif olarak, kullanıcılarınızın güvenlik grubuna eklenmeden ve dışarıdan paylaşmalarına izin verilmeden önce bir eğitim kursu tamamlamalarını isteyebilirsiniz.
 
 Dış paylaşımı bir güvenlik grubunun üyeleriyle sınırlamak için
 
-1. Genel SharePoint, sol gezinti bölmesinde, İlkeler'in altında **Paylaşım'ı** <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**seçin**</a>.
-2. Dış **paylaşım'ın** altında Diğer **dış paylaşım ayarları'nın genişletin**.
+1. SharePoint yönetim merkezinde, sol gezinti bölmesinde, **İlkeler'in** altında <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Paylaşım'ı**</a> seçin.
+2. **Dış paylaşım'ın** altında **Diğer dış paylaşım ayarları'nı** genişletin.
 
-3. Yalnızca **belirli güvenlik gruplarında yer alan kullanıcıların dışarıdan paylaşıma izin ver'i seçin ve** sonra da Güvenlik gruplarını **yönet'i seçin**.
+3. **Yalnızca belirli güvenlik gruplarındaki kullanıcıların dış paylaşımlarına izin ver'i** ve ardından **Güvenlik gruplarını yönet'i** seçin.
 
     ![Güvenlik gruplarını yönet panelinin ekran görüntüsü.](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
-4. Güvenlik **grubu ekle kutusunda** , güvenlik grubu için bir ad girin. Güvenlik grubu kutusu görüntülenir.
+4. **Güvenlik grubu ekle kutusuna güvenlik grubu** için bir ad girin. Güvenlik grubu kutusu görüntülenir.
 
-5. Güvenlik grubu adının yanındaki Paylaş şu **seçeneklerden** birini seçin:
+5. Güvenlik grubu adının yanındaki **Şununla paylaşabilir** açılan listesinden birini seçin:
 
     - **Yalnızca kimliği doğrulanmış konuklar** (varsayılan)
-    - **Herkes**
+    - **Kimse**
 
 6. **Kaydet**'i seçin.
 
-Bunun dosyaları, klasörleri ve siteleri etkilediğini, ancak grupların veya sitelerin Microsoft 365 etkileyeceğini Teams. Üyeler konukları özel bir Microsoft 365 özel bir gruba veya Microsoft Teams bir ekipe davet etmek için davet, onay için gruba veya ekip sahibine gönderilir.
+Bunun dosyaları, klasörleri ve siteleri etkilediğini ancak Microsoft 365 gruplarını veya Teams'i etkilemediğini unutmayın. Üyeler özel bir Microsoft 365 grubuna veya Microsoft Teams'deki özel bir ekise konuk davet ettiğinde, davet onay için grup veya ekip sahibine gönderilir.
 
 ## <a name="see-also"></a>Ayrıca Bkz
 
 [Güvenli bir konuk paylaşım ortamı oluşturma](create-secure-guest-sharing-environment.md)
 
-[Anonim kullanıcılarla dosya ve klasör paylaşmak için en iyi yöntemler](best-practices-anonymous-sharing.md)
+[Anonim kullanıcılarla dosya ve klasör paylaşmaya yönelik en iyi yöntemler](best-practices-anonymous-sharing.md)

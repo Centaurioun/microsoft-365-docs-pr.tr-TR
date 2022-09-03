@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Grup hizmetleri etkileşimleri
-ms.openlocfilehash: 884ee06ed3e345d2a9b1e88f7aa201875d599b32
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: ab1bda8b3065518736468a6603e9356e9a2d0d25
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056778"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585762"
 ---
 # <a name="groups-services-interactions"></a>Grup hizmetleri etkileşimleri
 

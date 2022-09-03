@@ -2,7 +2,7 @@
 title: Web içeriği filtreleme
 description: web sitelerine erişimi içerik kategorilerine göre izlemek ve düzenlemek için Uç Nokta için Microsoft Defender'de web içeriği filtrelemeyi kullanın.
 keywords: web koruması, web tehdit koruması, web'e göz atma, izleme, raporlar, kartlar, etki alanı listesi, güvenlik, kimlik avı, kötü amaçlı yazılım, yararlanma, web siteleri, ağ koruması, Edge, Internet Explorer, Chrome, Firefox, web tarayıcısı
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 7b195f595592b5c3b284b6dee4fd65b66d80e06a
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mde
+ms.openlocfilehash: 294549d49c37024d0f1c9ed94a325990aacbf572
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489386"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585872"
 ---
 # <a name="web-content-filtering"></a>Web içeriği filtreleme
 
@@ -31,7 +31,7 @@ ms.locfileid: "66489386"
 - [İş için Microsoft Defender](../defender-business/mdb-overview.md)
 
 > [!TIP]
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 ## <a name="what-is-web-content-filtering"></a>Web içeriği filtreleme nedir?
 

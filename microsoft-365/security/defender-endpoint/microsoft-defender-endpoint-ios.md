@@ -3,7 +3,7 @@ title: iOS'ta Uç Nokta için Microsoft Defender
 ms.reviewer: ''
 description: iOS'ta Uç Nokta için Microsoft Defender yükleme ve kullanma işlemleri açıklanır
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, ios, genel bakış, yükleme, dağıtma, kaldırma, intune
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: ac2c34359686da45998fab1076b7501357651318
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.subservice: mde
+ms.openlocfilehash: 3c8a63668ee427bf732f8ee2229667e232310d3e
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695889"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585994"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS'ta Uç Nokta için Microsoft Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "66695889"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 **iOS'ta Uç Nokta için Microsoft Defender**, web sitelerinden, e-postalardan ve uygulamalardan gelen kimlik avına ve güvenli olmayan ağ bağlantılarına karşı koruma sağlar. Tüm uyarılar, Microsoft 365 Defender portalındaki tek bir cam bölmeden kullanılabilir. Portal, güvenlik ekiplerine diğer platformlarla birlikte iOS cihazlarında tehditlerin merkezi bir görünümünü sağlar.
 

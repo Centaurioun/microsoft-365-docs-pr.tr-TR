@@ -4,7 +4,7 @@ description: Yanıtla ilgili belirli Uç Nokta için Microsoft Defender API ça�
 keywords: yanıt api'leri, graf api'leri, desteklenen API'ler, aktör, uyarılar, cihaz, kullanıcı, etki alanı, ip, dosya
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 8dd36e06b90726a01168ccd3ebf12886c127b101
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.subservice: mde
+ms.openlocfilehash: cc13b1fcb9c396133d63cb0019a49933d34e10f9
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050974"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585916"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>Desteklenen Uç Nokta için Microsoft Defender sorgu API'leri
 

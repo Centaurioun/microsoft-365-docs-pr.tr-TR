@@ -2,7 +2,7 @@
 title: Cihazları ekleyin ve Uç Nokta için Microsoft Defender işlevlerini yapılandırın
 description: Windows 10 cihazları, sunucuları, Windows dışı cihazları ekleme ve algılama testi çalıştırmayı öğrenin.
 keywords: ekleme, Uç Nokta için Microsoft Defender ekleme, sccm, grup ilkesi, mdm, yerel betik, algılama testi
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 365226ece74ec4e0a46e0de75d92c875457bdab5
-ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
+ms.subservice: mde
+ms.openlocfilehash: 1640355cf1312a84d1e4c5d5c4da49b5abe4ade1
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67445126"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586368"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Cihazları ekleyin ve Uç Nokta için Microsoft Defender işlevlerini yapılandırın
 

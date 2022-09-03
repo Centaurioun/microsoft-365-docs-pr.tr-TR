@@ -1,10 +1,10 @@
 ---
-title: Cihaz zaman çizelgesinde kullanılan teknikler
-description: Zaman çizelgesinde cihaz zaman çizelgesini Uç Nokta için Microsoft Defender
+title: Cihaz zaman çizelgesindeki teknikler
+description: Uç Nokta için Microsoft Defender'de cihaz zaman çizelgesini anlama
 keywords: cihaz zaman çizelgesi, uç nokta, MITRE, MITRE ATT&CK, teknikler, taktikler
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,83 +15,83 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d724b7663bd4484c630e97362eb5766490e1fa8e
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 89e29ccddb3ee7da6affb6133665b43a4d5dffdb
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465915"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586302"
 ---
-# <a name="techniques-in-the-device-timeline"></a>Cihaz zaman çizelgesinde kullanılan teknikler
+# <a name="techniques-in-the-device-timeline"></a>Cihaz zaman çizelgesindeki teknikler
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-Belirli bir cihazda olan olayları çözümerek araştırmalarda daha fazla içgörü elde edebilirsiniz. İlk olarak, Cihazlar listesinde ilgi istediğiniz cihazı [seçin](machines-view-overview.md). Cihaz sayfasında, cihazda meydana gelen **tüm olayları** görüntülemek için Zaman Çizelgesi sekmesini seçin.
+Belirli bir cihazda gerçekleşen olayları analiz ederek bir araştırmada daha fazla içgörü elde edebilirsiniz. İlk olarak, [Cihazlar listesinden ilgilendiğim](machines-view-overview.md) cihazı seçin. Cihaz sayfasında, cihazda gerçekleşen tüm olayları görüntülemek için **Zaman Çizelgesi** sekmesini seçebilirsiniz.
 
-## <a name="understand-techniques-in-the-timeline"></a>Zaman çizelgesinin tekniklerini anlama
+## <a name="understand-techniques-in-the-timeline"></a>Zaman çizelgesindeki teknikleri anlama
 
 > [!IMPORTANT]
-> Bazı bilgiler, genel önizlemede yer alan ve ticari olarak piyasaya sürmeden önce önemli ölçüde değiştirilmiş olan, önceden değiştirilebilir bir ürün özelliğiyle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
+> Bazı bilgiler, genel önizlemede kullanıma sunulan ve ticari olarak yayınlanmadan önce önemli ölçüde değiştirilebilen önceden yayımlanmış bir ürün özelliğiyle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
 
-Teknikler **Uç Nokta için Microsoft Defender, etkinlik** zaman çizelgesinde ek bir veri türü olur. Teknikler, CK tekniklerini veya [alt tekniklerini kullanarak MITRE ATT&etkinliklerle](https://attack.mitre.org/) ilgili daha fazla içgörü sağlar.
+Uç Nokta için Microsoft Defender'de **Teknikler**, olay zaman çizelgesinde ek bir veri türüdür. Teknikler [, MITRE ATT&CK](https://attack.mitre.org/) teknikleri veya alt teknikleriyle ilişkili etkinlikler hakkında daha fazla içgörü sağlar.
 
-Bu özellik analistlerin bir cihazda gözlemlenen etkinlikleri anlarına yardımcı olarak araştırma deneyimini basitler. Analistler bundan sonra daha fazla araştırma yapmak için karar verir.
+Bu özellik, analistlerin bir cihazda gözlemlenen etkinlikleri anlamasına yardımcı olarak araştırma deneyimini basitleştirir. Analistler daha fazla araştırma yapmaya karar verebilir.
 
-Genel önizleme için, Teknikler varsayılan olarak kullanılabilir ve cihazın zaman çizelgesi görüntü olduğunda etkinliklerle birlikte gösterilir.
+Genel önizleme için Teknikler varsayılan olarak kullanılabilir ve cihazın zaman çizelgesi görüntülendiğinde olaylarla birlikte gösterilir.
 
-:::image type="content" source="images/device-timeline-2.png" alt-text="Cihaz zaman çizelgesinde Teknikler" lightbox="images/device-timeline-2.png":::
+:::image type="content" source="images/device-timeline-2.png" alt-text="Cihaz zaman çizelgesindeki Teknikler" lightbox="images/device-timeline-2.png":::
 
-Teknikler kalın metinle vurgulanır ve solda mavi bir simgeyle gösterilir. Buna karşılık gelen MITRE ATT&CK Kimliği ve teknik adı da Ek bilgi altında etiket olarak görünür.
+Teknikler kalın metinle vurgulanır ve solda mavi bir simgeyle gösterilir. Karşılık gelen MITRE ATT&CK kimliği ve teknik adı da Ek bilgiler altında etiketler olarak görünür.
 
-Teknikler için Arama ve Dışarı Aktarma seçenekleri de kullanılabilir.
+Teknikler için Arama ve Dışarı Aktarma seçenekleri de sağlanır.
 
 ## <a name="investigate-using-the-side-pane"></a>Yan bölmeyi kullanarak araştırma
 
-İlgili yan bölmesini açmak için bir Teknik seçin. Burada, CK tekniklerini, taktiklerini ve açıklamalarını&ATT tekniklerini ve öngörüleri görebilirsiniz.
+İlgili yan bölmesini açmak için bir Teknik seçin. Burada ilgili ATT&CK teknikleri, taktikler ve açıklamalar gibi ek bilgileri ve içgörüleri görebilirsiniz.
 
-İlgili ATT *tekniklerini açmak* için ilgili ATT&CK tekniği sayfasını seçin. Bu sayfa hakkında daha fazla bilgi bulabilirsiniz.
+İlgili ATT&CK tekniği sayfasını açmak için ilgili *Saldırı tekniğini* seçin. Bu sayfa hakkında daha fazla bilgi bulabilirsiniz.
 
-Sağlarda mavi bir simge gördüğünüzde, varlığın ayrıntılarını kopyaabilirsiniz. Örneğin, ilgili bir dosyanın SHA1'ini kopyalamak için mavi sayfa simgesini seçin.
+Sağ tarafta mavi bir simge gördüğünüzde varlığın ayrıntılarını kopyalayabilirsiniz. Örneğin, ilgili bir dosyanın SHA1 dosyasını kopyalamak için mavi sayfa simgesini seçin.
 
-:::image type="content" source="images/techniques-side-pane-clickable.png" alt-text="Varlık ayrıntılarının kopyaları" lightbox="images/techniques-side-pane-clickable.png":::
+:::image type="content" source="images/techniques-side-pane-clickable.png" alt-text="Varlık ayrıntılarını kopyalamak için" lightbox="images/techniques-side-pane-clickable.png":::
 
-Komut satırları için de aynı şeyi yapabiliriz.
+Komut satırları için de aynısını yapabilirsiniz.
 
-:::image type="content" source="images/techniques-side-pane-command.png" alt-text="Komut satırı kopyalama seçeneği" lightbox="images/techniques-side-pane-command.png":::
+:::image type="content" source="images/techniques-side-pane-command.png" alt-text="Komut satırını kopyalama seçeneği" lightbox="images/techniques-side-pane-command.png":::
 
 ## <a name="investigate-related-events"></a>İlgili olayları araştırma
 
-Seçilen Teknik [ile ilgili etkinlikleri](advanced-hunting-overview.md) bulmak üzere gelişmiş av kullanmak için İlgili etkinlikler için **Tekni'yi seçin**. Bu, Teknik ile ilgili olayları bulmak için bir sorgunun olduğu gelişmiş arama sayfasına doğru ilerler.
+Seçili Teknikle ilgili olayları bulmak için [gelişmiş avcılığı](advanced-hunting-overview.md) kullanmak **için İlgili olayları avla'yı** seçin. Bu, Technique ile ilgili olayları bulmak için bir sorgu içeren gelişmiş tehdit avcılığı sayfasına yol açar.
 
-:::image type="content" source="images/techniques-hunt-for-related-events.png" alt-text="İlgili etkinlikler için hunt seçeneği" lightbox="images/techniques-hunt-for-related-events.png":::
+:::image type="content" source="images/techniques-hunt-for-related-events.png" alt-text="İlgili olayları avla seçeneği" lightbox="images/techniques-hunt-for-related-events.png":::
 
 > [!NOTE]
-> Bir Teknik yan **bölmesindeki İlgili etkinlikler** için Tekni düğmesini kullanarak sorgulama, tanımlanan teknikle ilgili tüm olayları görüntüler, ancak Sorgu sonuçlarına Teknik'in kendisini eklemez.
+> Teknik yan bölmesindeki **İlişkili olayları ara** düğmesini kullanarak sorgulama, tanımlanan teknikle ilgili tüm olayları görüntüler, ancak sorgu sonuçlarına Tekniğin kendisini içermez.
 
-## <a name="customize-your-device-timeline"></a>Cihazınızın zaman çizelgesini özelleştirme
+## <a name="customize-your-device-timeline"></a>Cihaz zaman çizelgenizi özelleştirme
 
-Cihaz zaman çizelgesinin sağ üst tarafında, zaman çizelgesinde yer alan olay ve teknik sayısını sınırlamak için bir tarih aralığı seçebilirsiniz.
+Cihaz zaman çizelgesinin sağ üst tarafında, zaman çizelgesindeki olay ve teknik sayısını sınırlamak için bir tarih aralığı seçebilirsiniz.
 
-Hangi sütunların açığa çıkar özelleştirebileceğinizi özelleştirebilirsiniz. Ayrıca, bayraklı olaylar için veri türüne veya olay grubuna göre de filtre uygulamanız gerekir.
+Hangi sütunların kullanıma açık olduğunu özelleştirebilirsiniz. Bayrak eklenmiş olayları veri türüne veya olay grubuna göre de filtreleyebilirsiniz.
 
-### <a name="choose-columns-to-expose"></a>Açığa çıkarmak istediğiniz sütunları seçin
+### <a name="choose-columns-to-expose"></a>Kullanıma açık sütunları seçme
 
-Sütunları seç düğmesini seçerek zaman çizelgesinde hangi sütunların açık **olduğunu seçebilirsiniz** .
+Sütunları seç düğmesini seçerek zaman çizelgesinde hangi **sütunların gösterileceğini seçebilirsiniz** .
 
 :::image type="content" source="images/filter-customize-columns.png" alt-text="Sütunları özelleştirebileceğiniz bölme" lightbox="images/filter-customize-columns.png":::
 
 
-Buradan, hangi bilgilerin dahil etmek için ayara ayarlan hazır olduğunu seçin.
+Buradan hangi bilgilerin dahil olacağını seçebilirsiniz.
 
-### <a name="filter-to-view-techniques-or-events-only"></a>Yalnızca teknikleri veya olayları görüntülemek için filtre uygulama
+### <a name="filter-to-view-techniques-or-events-only"></a>Yalnızca teknikleri veya olayları görüntülemek için filtreleyin
 
-Yalnızca etkinlikleri veya teknikleri görüntülemek için cihaz zaman çizelgesinden **Filtreler'i** seçin ve görüntülemek için tercih ettiğiniz Veri türünü seçin.
+Yalnızca olayları veya teknikleri görüntülemek için cihaz zaman çizelgesinden **Filtreler'i** seçin ve görüntülemek için tercih ettiğiniz Veri türünü seçin.
 
 :::image type="content" source="images/device-timeline-filters.png" alt-text="Filtreler bölmesi" lightbox="images/device-timeline-filters.png":::
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Cihazlar listesini görüntüleme ve düzenleme](machines-view-overview.md)
-- [Uç Nokta için Microsoft Defender zaman çizelgesi olay bayraklarını ekleme](device-timeline-event-flag.md)
+- [cihaz zaman çizelgesi olay bayraklarını Uç Nokta için Microsoft Defender](device-timeline-event-flag.md)

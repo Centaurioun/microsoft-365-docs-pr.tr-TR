@@ -2,7 +2,7 @@
 title: İstemci çözümleyicisini Windows’da çalıştırın
 description: Windows'da Uç Nokta için Microsoft Defender İstemci Çözümleyicisi'ni çalıştırmayı öğrenin.
 keywords: istemci çözümleyicisi, sorun giderme algılayıcısı, çözümleyici, mdeanalyzer, windows
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 7a60e76c332c7fb41107535f4394816b020f55e2
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.subservice: m365d
+ms.openlocfilehash: f70b42f685afbbebff64cd6bc5e6aab203f51e8a
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686107"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586434"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>İstemci çözümleyicisini Windows’da çalıştırın
 
