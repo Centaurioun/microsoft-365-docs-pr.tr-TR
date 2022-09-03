@@ -3,7 +3,7 @@ title: PowerShell API'siyle Gelişmiş Avcılık Temelleri
 ms.reviewer: ''
 description: PowerShell kullanarak Uç Nokta için Microsoft Defender API'sini sorgulamanın temellerini öğrenin.
 keywords: api'ler, desteklenen API'ler, gelişmiş avcılık, sorgu
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 535f978333d867641ce2e3a8564e3764e59d4333
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 0023be82a47dcc3a05d7d10b045b5b5140b53202
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331477"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578696"
 ---
 # <a name="advanced-hunting-using-powershell"></a>PowerShell ile Gelişmiş Av
 

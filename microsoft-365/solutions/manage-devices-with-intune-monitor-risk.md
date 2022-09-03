@@ -11,7 +11,7 @@ manager: dougeby
 audience: ITPro
 description: Uç Nokta için Defender'a Microsoft Intune bağlamayı ve erişim koşulu olarak cihaz riskini izlemeyi öğrenin.
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -21,12 +21,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: eab30a8a0801dcbdf95bee3c33f54a920850a6db
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: e7b0b80cc2a44b0dcbb24a793e6549385d00e51b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749253"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585718"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>6. Adım. Cihaz riskini ve güvenlik temel hatlarına uyumluluğu izleyin
 
@@ -40,7 +40,7 @@ Uç Nokta için Microsoft Defender dağıtımı, ekleme uç noktalarını içeri
 Bu çizimde:
 - Uç Nokta için Microsoft Defender, cihazlar için tehdit korumasının karmaşıklık düzeyini büyük ölçüde artırır. 
 - Microsoft Intune, Uygulama Koruma İlkeleri ayarlamanıza ve cihazları yönetmenize (yapılandırma değişiklikleri dahil) olanak tanırken, Uç Nokta için Defender cihazlarınızı sürekli olarak tehditlere karşı izler ve saldırıları düzeltmek için otomatik eylem gerçekleştirebilir. 
-- Uç Nokta için Defender'a cihaz eklemek için Intune kullanabilirsiniz. Bunu yaptığınızda, bu cihazların Microsoft Purview Endpoint veri kaybı önleme (Endpoint DLP) ile çalışmasını da etkinleştirebilirsiniz.
+- Uç Nokta için Defender'a cihaz eklemek için Intune kullanabilirsiniz. Bunu yaptığınızda, bu cihazların Microsoft Purview Endpoint veri kaybı önleme (Endpoint DLP) ile çalışmasını da sağlarsınız.
 
 Bu makale şu adımları içerir:
 - Cihaz riskini izleme

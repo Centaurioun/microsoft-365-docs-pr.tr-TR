@@ -3,7 +3,7 @@ title: Linux'ta Uç Nokta için Microsoft Defender ile ilgili Denetimli performa
 ms.reviewer: ''
 description: Linux için Microsoft Defender ile karşılaşabileceğiniz AuditD ile ilgili performans sorunlarının nasıl giderildiğini açıklar.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, linux, sorun giderme, AuditD, XMDEClientAnalyzer, yükleme, dağıtma, kaldırma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 840961a39f2e298bfc11eecdbb1344fc9c252c3a
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.subservice: mde
+ms.openlocfilehash: 0c953eef32dc3851fa9618f6204dec6b19e23bff
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099073"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584231"
 ---
 # <a name="troubleshoot-auditd-performance-issues-with-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender ile ilgili Denetimli performans sorunlarını giderme 
 
@@ -32,7 +32,7 @@ Bu makale, Linux'ta Uç Nokta için Microsoft Defender karşılaşabileceğiniz 
 
 - Linux işletim sistemi dağıtımlarında Uç Nokta için Microsoft Defender, belirli türlerdeki telemetri olaylarını toplamak için AuditD çerçevesini kullanır. 
 
-- 'a `/etc/audit/rules.d/` eklenen kurallar tarafından yakalanan sistem olayları denetim.log'lere eklenir ve konak denetimini ve yukarı akış toplamayı etkileyebilir.  
+- 'a `/etc/audit/rules.d/` eklenen kurallar tarafından yakalanan sistem olayları audit.log'lara eklenir ve konak denetimini ve yukarı akış koleksiyonunu etkileyebilir.  
 
 - Linux'ta Uç Nokta için Microsoft Defender tarafından eklenen olaylar anahtarla `mdatp` etiketlenir. 
 
@@ -42,7 +42,7 @@ Bazı sunucu iş yüklerinde iki sorun gözlemlenebilir:
 
 - **_mdatp_audisp_plugin_** işlemden **yüksek CPU** kaynak tüketimi. 
 
-- ***/var/log/audit/audit.log*** büyük veya sık dönen hale geliyor. 
+- ***/var/log/audit/audit.log*** büyük veya sık sık dönüyor. 
 
 Bu sorunlar, AuditD'yi basan birçok olayı olan sunucularda oluşabilir.  
 

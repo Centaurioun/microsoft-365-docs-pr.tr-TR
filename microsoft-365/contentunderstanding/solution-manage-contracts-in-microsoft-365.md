@@ -1,5 +1,5 @@
 ---
-title: Yeni bir çözüm kullanarak Microsoft 365 yönetin
+title: Microsoft 365 çözümü kullanarak sözleşmeleri yönetme
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,24 +7,24 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - m365solution-managecontracts
 - m365solution-overview
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: Liste, posta listesi, liste Microsoft 365 çözümlerini SharePoint Syntex kullanarak SharePoint Microsoft Teams yönet Power Automate.
-ms.openlocfilehash: 86ccbeef283b165e178b12debd3ae99f982afc04
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: SharePoint Syntex, SharePoint Listeleri, Microsoft Teams ve Power Automate'in Microsoft 365 çözümünü kullanarak sözleşmeleri yönetmeyi öğrenin.
+ms.openlocfilehash: d5c19b93f90996269788bd4571bbf350f7e5887d
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985154"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583142"
 ---
-# <a name="manage-contracts-using-a-microsoft-365-solution"></a>Yeni bir çözüm kullanarak Microsoft 365 yönetin
+# <a name="manage-contracts-using-a-microsoft-365-solution"></a>Microsoft 365 çözümü kullanarak sözleşmeleri yönetme
 
-Bu makalede, organizasyonlarının sözleşme ve bileşenlerini kullanarak SharePoint Syntex yönetim çözümünün nasıl oluşturul Microsoft 365. Bu hizmet size, benzersiz iş ihtiyaçlarına uygun bir çözüm planlamanıza ve oluşturmanıza yardımcı olacak bir çerçeve sağlar. Bu çözüm sözleşme yönetiminden konuşsa da, bunu uyarlanabilir ve iş veya fatura faturaları gibi başka belge yönetim çözümleri oluşturabilirsiniz.
+Bu makalede, Microsoft 365'in SharePoint Syntex ve bileşenlerini kullanarak kuruluşunuz için sözleşme yönetimi çözümünün nasıl oluşturulacağı açıklanır. Benzersiz iş gereksinimlerinize uygun bir çözüm planlamanıza ve oluşturmanıza yardımcı olacak bir çerçeve sağlar. Bu çözüm sözleşme yönetiminden bahsetse de, iş veya fatura deyimleri gibi başka belge yönetimi çözümleri oluşturmak için uyarlayabilirsiniz.
 
 </br>
 
@@ -32,72 +32,72 @@ Bu makalede, organizasyonlarının sözleşme ve bileşenlerini kullanarak Share
 
 </br>
 
-## <a name="identify-the-business-problem"></a>İş sorununu belirleme
+## <a name="identify-the-business-problem"></a>İş sorununu tanımlama
 
-Sözleşme yönetim sistemini planlamanın ilk adımı, çözmeye çalıştığınızı anlamaktır. Bu çözüm için dört önemli sorunu ele alınması gerekir:
+Sözleşme yönetim sisteminizi planlamanın ilk adımı çözmeye çalıştığınız sorunu anlamaktır. Bu çözüm için dört önemli sorunun çözülmesi gerekir:
 
-- **Sözleşmeleri tanımlama**. Organizasyonunız faturalar, sözleşmeler, iş faturaları gibi birçok belgeyle çalışır.  Bazıları e-postayla gönderilen dijital varlıklar, bazıları ise geleneksel posta yoluyla gönderilen kağıt varlıklardır. Diğer tüm belgelerden tüm müşteri sözleşmelerini tanımlama ve sonra bu şekilde sınıflendirme için bir yol gerekir.
+- **Sözleşmeleri tanımlama**. Kuruluşunuz faturalar, sözleşmeler, iş ekstreleri gibi birçok belgeyle çalışır.  Bazıları e-posta yoluyla gönderilen dijital varlıklar, bazıları ise geleneksel postalar aracılığıyla gönderilen kağıt varlıklardır. Diğer tüm belgelerden tüm müşteri sözleşmelerini tanımlamanın ve sonra bunları bu şekilde sınıflandırmanın bir yolunu kullanmanız gerekir.
 
-- **Sözleşme onaylarının geçmişini izleyebilirsiniz**. Organizasyonun, sözleşmelerin onaylandıktan veya reddedilmiş olup olmadığını ve ödemenin işlendiğinden emin bir yol elde etmek için güvenilir bir yol gerekir. 
+- **Sözleşme onaylarının geçmişini izleyin**. Kuruluşunuzun, sözleşmelerin onaylanıp onaylanmamış olup olmadığını ve ödemenin işlenip işlenmediğini bulmak için güvenilir bir yönteme ihtiyacı vardır. 
 
-- **Sözleşme onaylarını yönetmek için site**. Kuruluş, tüm gerekli paydaşların sözleşmeleri kolayca gözden geçirebiliyor olduğu bir işbirliği sitesi ayarlamalı. Paydaşlar gerekirse sözleşmenin tamamını gözden geçirebiliyor olmalı, ancak çoğunlukla her sözleşmenin bazı önemli alanlarını (örneğin, müşteri adı, POSTA hizmetleri numarası ve toplam maliyeti) görmekte fayda vardır. Paydaşlar gelen sözleşmeleri kolayca onaylıyor veya reddedebiliyor olmalı.
+- **Sözleşme onaylarını yönetmek için site**. Kuruluşunuzun tüm gerekli paydaşların sözleşmeleri kolayca gözden geçirebileceği işbirliğine dayalı bir site ayarlaması gerekir. Paydaşlar gerekirse sözleşmenin tamamını gözden geçirebilmelidir, ancak çoğunlukla her sözleşmeden birkaç önemli alan (örneğin, müşteri adı, PO numarası ve toplam maliyet) görmeyi önemser. Paydaşlar gelen sözleşmeleri kolayca onaylayabilmeli veya reddedebilmelidir.
 
-- **Gözden geçirme sözleşmelerini yönlendir**. Onaylanan ve reddedilen sözleşmelerin belirli bir iş akışı aracılığıyla yönlendirilmesi gerekir. Onaylanan sözleşmelerin ödeme işlemleri için üçüncü taraf bir uygulamaya yönlendirn olması gerekir. Reddedilen sözleşmelerin ek inceleme için yönlendirilmesi gerekir.
+- **Gözden geçirilmiş sözleşmeleri yönlendirme**. Onaylanan ve reddedilen sözleşmelerin belirli bir iş akışı üzerinden yönlendirilmesi gerekir. Onaylanan sözleşmelerin ödeme işleme için üçüncü taraf bir uygulamaya yönlendirilmesi gerekir. Reddedilen sözleşmelerin ek gözden geçirme için yönlendirilmesi gerekir.
 
 ## <a name="overview-of-the-solution"></a>Çözüme genel bakış
 
-  ![Liste, liste veya SharePoint Syntex SharePoint kullanarak Teams diyagramı Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
+  ![SharePoint Syntex, SharePoint listeleri, Teams ve Power Automate kullanan çözümün diyagramı.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
 
-Bu sözleşme yönetim çözümü kılavuzu, dört bileşeni Microsoft 365:
+Bu sözleşme yönetimi çözümü kılavuzu, Microsoft 365'in dört bileşenini içerir:
 
-- **Microsoft SharePoint Syntex**: Sözleşme dosyalarınızı tanımlamak ve sınıflandırmak ve sonra da bu dosyalardan uygun verileri ayıklamak için modeller oluşturun.
+- **Microsoft SharePoint Syntex**: Sözleşme dosyalarınızı tanımlamak ve sınıflandırmak ve ardından bunlardan uygun verileri ayıklamak için modeller oluşturun.
 
-- **Microsoft SharePoint listeleri**: Sözleşmeleri iş kullanımına uygun bir SharePoint sunmak için modern listelerde bulunan biçimlendirmeyi kullanın.
+- **Microsoft SharePoint listeleri**: Sözleşmeleri iş dostu bir biçimde sunmak için modern SharePoint listelerinde sağlanan biçimlendirmeyi kullanın.
 
-- **Microsoft Teams**: Proje katılımcılarının sözleşmeleri gözden geçirmesine ve yönetmesine Teams bir kanal ve ilişkili sekmelerin işlevselliğini kullanın.
+- **Microsoft Teams**: Proje katılımcılarınızın sözleşmeleri gözden geçirmesine ve yönetmesine olanak sağlamak için Teams kanalının ve ilişkili sekmelerin işlevselliğini kullanın.
 
-- **Power Automate**: Onay sürecinde sözleşmelere ve sonra ödeme için üçüncü taraf bir uygulamaya yönlendiren akışlar kullanın.
+- **Power Automate**: Sözleşmeleri onay süreci boyunca ve ardından ödeme için üçüncü taraf bir uygulamaya yönlendirmek için akışları kullanın.
 
-### <a name="how-it-all-works"></a>Nasıl çalışır?
+### <a name="how-it-all-works"></a>Her şey nasıl çalışır?
 
-  ![Belgeleri karşıya yüklemek, veri ayıklamak, paydaşları bildirmek ve sözleşmeyi onaylamak veya reddetmek için iş akışını gösteren çözümün diyagramı.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
+  ![Belgeleri karşıya yüklemek, verileri ayıklamak, proje katılımcılarını bilgilendirmek ve sözleşmeyi onaylamak veya reddetmek için iş akışını gösteren çözümün diyagramı.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. Belgeler bir belge kitaplığına SharePoint karşıya yüklenen. Belge SharePoint Syntex bir belge anlama modeli uygulanmıştır. Her dosyayı, eğitimleri olan bir "sözleşme" içerik türüyle eş olup eşleşmesi için denetler. Eşleşme bulursa, dosyayı "sözleşme" olarak sınıflandırır ve belgenin içerik türünü ler.
+1. Belgeler bir SharePoint belge kitaplığına yüklenir. Belge kitaplığına SharePoint Syntex belge anlama modeli uygulandı. Aranacak şekilde eğitilen bir "sözleşme" içerik türüyle eşleşip eşleşmediğini görmek için her dosyayı denetler. Eşleşme bulursa, dosyayı "sözleşme" olarak sınıflandırır ve belgenin içerik türünü güncelleştirir.
 
-2. Model, proje katılımcılarının görmekle ilgilendiği her sözleşme dosyasından İstemci, Yüklenici ve Ücret tutarı *gibi belirli* *verileri de çeker*.
+2. Model ayrıca paydaşların görmekle ilgilendiği her sözleşme dosyasından *Müşteri*, *Yüklenici* ve *Ücret tutarı* gibi belirli verileri çeker.
 
-    Aşağıdaki sayfa, modelin tanımlayacak şekilde eğitilmiş bir sözleşme örneğidir.
+    Aşağıdaki sayfada modelin tanımlamak üzere eğitilmiş olduğu bir sözleşme örneği verilmiştir.
 
       ![Sözleşme örneği.](../media/content-understanding/contract.png)
 
-3. Proje Microsoft Teams tüm paydaşlar, belge kitaplığında tüm sözleşmelerin onay veya reddedilmek için görünür durumda olduğu güvenli bir Teams kanalının üyeleridir. Proje Teams kullanarak, yeni sözleşmelerin gözden geçirilecek olması gerekirken tüm paydaşlara bu durumu bildirin.
+3. Microsoft Teams'de tüm paydaşlar, belge kitaplığındaki tüm sözleşmelerin onay veya reddedilmek üzere görünür olduğu güvenli bir Teams kanalının üyeleridir. Teams işlevselliği kullanılarak, yeni sözleşmelerin gözden geçirilmesi gerektiğinde tüm paydaşlara bildirim gönderilir.
 
-4. Sözleşmeler Power Automate, sözleşmeler onay süreci boyunca Sözleşmeler kanalında Teams taşınır. Bir üye bir sözleşmeyi onaylarsa, sözleşme durumu onaylanır, tüm üyelere bir Teams gönderisi üzerinden bilgi oluşturulur ve sözleşmenin ödeme için hazır olduğunu göstermek için bir satır öğesi oluşturulur. Bu işlem doğrudan üçüncü taraf bir mali uygulamaya yazılacak şekilde uzatılabilir.
+4. Power Automate kullanılarak sözleşmeler Teams kanalındaki onay sürecine taşınır. Bir üye bir sözleşmeyi onayladığında, sözleşme durumu onaylandı olarak değiştirilir, tüm üyelere bir Teams gönderisi aracılığıyla bildirim gönderilir ve sözleşmenin ödemeye hazır olduğunu göstermek için bir satır öğesi oluşturulur. Bu işlem, ödeme için doğrudan üçüncü taraf bir finansal uygulamaya yazılacak şekilde uzatılabilir.
 
-5. Bir üye bir sözleşmeyi reddederse, durum reddedilmiş olarak değiştirilir ve tüm üyelere bir iş gönderisi üzerinden Teams olur.
+5. Bir üye bir sözleşmeyi reddettiği zaman, durum reddedildi olarak değiştirilir ve tüm üyeler bir Teams gönderisi aracılığıyla bildirilir.
 
-6. Bu çözümün sonunda, işletmeniz için otomatik bir iş süreci elde edildi. Çalışanlar belgelerinizin onay iş akışını başlatmak Teams için Teams kutucuk görünümünü kolayca kullanabilir. 
+6. Bu çözümün sonucu, kuruluşunuz için otomatik bir iş sürecidir. Çalışanlar, belgelerinizin onay iş akışını başlatmak ve izlemek için Teams'deki özel kutucuk görünümünü kolayca kullanabilir. 
 
      ![Sözleşmeler sekmesi.](../media/content-understanding/tile-view.png)
 
 ### <a name="licensing-requirements"></a>Lisans gereksinimleri
 
-Bu çözüm, tüm bu işlevlerin bir Microsoft 365 Kurumsal (E1, E3, E5, F3) veya İş (Temel, Standart veya Premium) lisansı kapsamında sunulmaktadır:
+Bu çözüm, tümü Microsoft 365 Kurumsal (E1, E3, E5, F3) veya İş (Temel, Standart veya Premium) lisansının parçası olarak kullanılabilen aşağıdaki işlevlere dayanır:
 
 - Microsoft SharePoint Syntex
 - Microsoft Teams
 - Power Automate
 
-### <a name="learn-how-to-use-sharepoint-syntex"></a>SharePoint Syntex'i kullanmayı SharePoint Syntex
+### <a name="learn-how-to-use-sharepoint-syntex"></a>SharePoint Syntex kullanmayı öğrenin
 
-Yeni misiniz? SharePoint Syntex? AI kullanarak içeriği yönetmek SharePoint Syntex nasıl kullanabileceğinizi öğrenin.
+SharePoint Syntex'da yeni misiniz? yapay zeka kullanarak içeriği yönetmek için SharePoint Syntex kullanmayı öğrenin.
 
-[SharePoint Syntex ile](/learn/paths/syntex-get-started) çalışmaya başlama öğrenme yolu, belgeleri sınıflandırmak, metin ayıklamak ve hızlı ve kolay bilgi yönetimi için belgelerinizi etiketlemek için belge anlama ve form işleme modellerini nasıl kullanabileceğinizi öğretecek.
+[SharePoint Syntex kullanmaya başlama](/learn/paths/syntex-get-started) öğrenme yolu, belgeleri sınıflandırmak, metin ayıklamak ve hızlı ve kolay bilgi yönetimi için belgelerinizi etiketlemek için belge anlama ve form işleme modellerini nasıl kullanabileceğinizi öğretir.
 
-## <a name="create-the-solution"></a>Çözümü oluşturun
+## <a name="create-the-solution"></a>Çözümü oluşturma
 
-Sonraki bölümlerde sözleşme yönetim çözümlerinizi yapılandırma hakkında ayrıntılı bilgi ve olacaktır. Üç adıma bölünmüştir:
+Sonraki bölümlerde sözleşme yönetimi çözümünüzü yapılandırma hakkında ayrıntılı bilgi verilecektir. Üç adıma ayrılmıştır:
 
-- [1. Adım. Sözleşme SharePoint Syntex tanımlamak ve veri ayıklamak için veri ayıklamayı kullanma](solution-manage-contracts-step1.md)
-- [2. Adım. Sözleşme Microsoft Teams kanalınızı oluşturmak için Sözleşmeler'i kullanma](solution-manage-contracts-step2.md)
-- [3. Adım. Sözleşmelerinizi Power Automate akışı oluşturmak için Sözleşmelerinizi kullanma](solution-manage-contracts-step3.md)
+- [1. Adım. Sözleşme dosyalarını tanımlamak ve verileri ayıklamak için SharePoint Syntex kullanma](solution-manage-contracts-step1.md)
+- [2. Adım. Sözleşme yönetim kanalınızı oluşturmak için Microsoft Teams'i kullanma](solution-manage-contracts-step2.md)
+- [3. Adım. Anlaşmalarınızı işlemek üzere akış oluşturmak için Power Automate'i kullanma](solution-manage-contracts-step3.md)

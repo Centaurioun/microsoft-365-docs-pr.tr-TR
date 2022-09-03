@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Kuruluşunuz dışındaki kişilerin MFA ve uyumlu cihazlar gibi koşullu erişim denetimlerini geçirmesini nasıl zorunlu kacağınızı öğrenin.
-ms.openlocfilehash: a9a48bd891810530fba4f78824f675d2b0f0556e
-ms.sourcegitcommit: c33af120921d3c4fb5c362dac3e74f0ab3d1e58d
+ms.openlocfilehash: 1beada2bb844804e380ed549c3d826169a21aa59
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "66861563"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584992"
 ---
 # <a name="require-conditional-access-for-people-outside-your-organization"></a>Kuruluşunuzun dışındaki kişiler için koşullu erişim gerektirme
 
@@ -35,13 +35,13 @@ Teams'de paylaşılan kanallar gibi Azure AD B2B doğrudan bağlantı kullanırk
 
 ## <a name="planning-considerations-for-conditional-access"></a>Koşullu erişim için planlama konuları
 
-Çok faktörlü kimlik doğrulaması herhangi bir dış hesapla kullanılabilir. Kuruluşunuz diğer Azure AD kuruluşlarının çok faktörlü kimlik doğrulamasına güvenmiyorsa, kuruluşunuzdaki kaynaklara erişirken bu kuruluşların kullanıcılarının çok faktörlü kimlik doğrulaması gerçekleştirmesi gerekir. Üçüncü taraf e-posta adresleri olan (Microsoft tarafından barındırılmayan) kişilerden her zaman çok faktörlü kimlik doğrulaması istenir.
+Çok faktörlü kimlik doğrulaması herhangi bir dış hesapla kullanılabilir. Kuruluşunuz diğer Azure AD kuruluşlarının çok faktörlü kimlik doğrulamasına güvenmiyorsa, kuruluşunuzdaki kaynaklara erişirken bu kuruluşların kullanıcılarının çok faktörlü kimlik doğrulaması gerçekleştirmesi gerekir. Üçüncü taraf e-posta adresleriyle (Microsoft tarafından barındırılmayan) Kişiler her zaman çok faktörlü kimlik doğrulaması istenir.
 
-**Cihazın uyumlu olarak işaretlenmesini gerektir** ve **Karma Azure AD katılmış cihaz gerektir** seçenekleri, Azure AD'de yönetilen cihazlar gerektirir. Bu seçenekleri etkinleştirmeyi seçerseniz, kuruluşunuzun dışındaki kişilerin kuruluşunuz veya güvendiğiniz bir kuruluş tarafından yönetilen cihazları kullanıyor olması gerekir. Yönetilen cihazları olmayan kişiler engellenir, örneğin:
+**Cihazın uyumlu olarak işaretlenmesini gerektir** ve **Karma Azure AD katılmış cihaz gerektir** seçenekleri, Azure AD'de yönetilen cihazlar gerektirir. Bu seçenekleri etkinleştirmeyi seçerseniz, kuruluşunuzun dışındaki kişilerin kuruluşunuz veya güvendiğiniz bir kuruluş tarafından yönetilen cihazları kullanıyor olması gerekir. Yönetilen cihazlar olmadan Kişiler engellenir, örneğin:
 
-- Üçüncü taraf veya tüketici e-posta adresleri olan kişiler
-- Cihazları yönetmeyen Microsoft 365 veya Azure AD kuruluşlarından kişiler
-- Microsoft 365 veya Azure AD kuruluşlarından, kuruluşunuzun koşullu erişim ayarlarına güvenmediği yönetilen cihazlara ihtiyaç duyan kişiler.
+- Üçüncü taraf veya tüketici e-posta adresleriyle Kişiler
+- Cihazları yönetmeyen Microsoft 365 veya Azure AD kuruluşlarından Kişiler
+- Kuruluşunuzun koşullu erişim ayarlarına güvenmediği yönetilen cihazlar gerektiren Microsoft 365 veya Azure AD kuruluşlarından Kişiler.
 
 Uyumlu veya karma Azure AD birleştirilmiş cihazlar gerektiğinde dikkatli olmanız önerilir çünkü bu durum birçok dış işbirliği senaryolarını engeller. Tüm iş ortağı kuruluşlarınızın cihazlarını yönettiğinden ve kuruluşunuzun ayarlarına güvendiğinden emin olun.
 
@@ -89,7 +89,7 @@ Belirli bir kuruluşun koşullu erişim ayarlarına güvenmek için
 
 Kuruluşunuzun dışındaki kişiler için koşullu erişim ilkesi ayarlamak aşağıdakileri etkiler:
 
-- Konuk hesaplarını kullanan kişiler (B2B işbirliği kullanıcıları Azure AD)
+- Konuk hesaplarını (B2B işbirliği kullanıcıları Azure AD) kullanarak Kişiler
 - Teams paylaşılan kanallarındaki dış katılımcılar (B2B doğrudan bağlantı kullanıcıları Azure AD)
 
 > [!IMPORTANT]

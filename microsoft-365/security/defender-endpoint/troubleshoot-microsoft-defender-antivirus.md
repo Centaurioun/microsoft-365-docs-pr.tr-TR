@@ -2,7 +2,7 @@
 title: Microsoft Defender Virüsten Koruma olay kimlikleri ve hata kodları
 description: Microsoft Defender Virüsten Koruma olay kimliklerinin ve hatalarının nedenlerini ve çözümlerini arayın
 keywords: olay, hata kodu, siem, günlüğe kaydetme, sorun giderme, wef, windows olay iletme
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,14 +13,14 @@ ms.custom: nextgen
 ms.date: 08/04/2022
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: af697062c7ce7a0d5f3fd4879a622970962c1083
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 7d70d6e39e31619341c3f6041a06fc87d64d5509
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275864"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580541"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma ile ilgili sorunları gidermek için olay günlüklerini ve hata kodlarını inceleyin
 

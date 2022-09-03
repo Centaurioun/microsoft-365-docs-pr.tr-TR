@@ -1,5 +1,5 @@
 ---
-title: Adım 3. Kimlikleri koruma
+title: Adım 3. Kimlikleri koruyun
 author: dansimp
 f1.keywords:
 - NOCSH
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -15,66 +15,66 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: fidye yazılımı, insan tarafından işletilen fidye yazılımı, insan tarafından işletilen fidye yazılımı, HumOR, extortion saldırısı, fidye yazılımı saldırı, şifreleme, cryptovirology, sıfır güven
-description: Kullanıcı kaynaklarınızı fidye yazılımı saldırılarından korumak için güvenli oturum açma Microsoft 365 Koşullu Erişim'i kullanın.
-ms.openlocfilehash: 548e0649d7180ef39f693049210a91c1e0dce312
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+keywords: fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, HumOR, gasp saldırısı, fidye yazılımı saldırısı, şifreleme, kriptoviroloji, sıfır güven
+description: Microsoft 365 kaynaklarınızı fidye yazılımı saldırılarına karşı korumak için güvenli oturum açma işlemlerini ve Koşullu Erişim'i kullanın.
+ms.openlocfilehash: f2713231cb0b763339935de7d8b5f7abae6aa1de
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320235"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580061"
 ---
-# <a name="step-3-protect-identities"></a>Adım 3. Kimlikleri koruma
+# <a name="step-3-protect-identities"></a>Adım 3. Kimlikleri koruyun
 
-Genelde daha büyük bir fidye yazılımı saldırılarının ilk aşaması olan kimlik bilgileri güvenliğinden korumak için aşağıdaki bölümleri kullanın.
+Kuruluşunuzu genellikle daha büyük bir fidye yazılımı saldırısının ilk aşaması olan kimlik bilgileri güvenliğinin aşılmasına karşı korumak için aşağıdaki bölümleri kullanın.
 
-## <a name="increase-sign-in-security"></a>Oturum açma güvenliğini artırma
+## <a name="increase-sign-in-security"></a>Oturum açma güvenliğini artırın
 
-[Azure Active Directory'da](/azure/active-directory/authentication/howto-authentication-passwordless-deployment) (Azure AD) kullanıcı hesapları için Azure Active Directory kimlik doğrulaması kullanın.
+Azure Active Directory'deki (Azure AD) kullanıcı hesapları için [parolasız kimlik doğrulamasını](/azure/active-directory/authentication/howto-authentication-passwordless-deployment) kullanın.
 
-Parolasız kimlik doğrulamaya geçiş sırasında, parola kimlik doğrulaması kullanan kullanıcı hesapları için şu en iyi yöntemleri kullanın:
+Parolasız kimlik doğrulamasına geçiş sırasında, parola kimlik doğrulamasını kullanmaya devam eden kullanıcı hesapları için şu en iyi yöntemleri kullanın:
 
-- Azure AD Parola Koruması ile zayıf ve özel olarak [bilinen parolaları engelin](/azure/active-directory/authentication/concept-password-ban-bad).
-- Azure AD Parola Koruması ile şirket içi Active Directory Etki Alanı Hizmetlerinize [(AD DS) bilinen zayıf ve özel parolaların engellenmesini uzatın](/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
-- Kendi Kendine Parola Sıfırlama [(SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) ile kullanıcılarınızı kendi parolalarını değiştirmelerine izin verme.
+- [Azure AD Parola Koruması](/azure/active-directory/authentication/concept-password-ban-bad) ile bilinen zayıf ve özel parolaları engelleyin.
+- Azure AD Parola Koruması ile bilinen zayıf ve özel parolaların engellenmesini [şirket içi Active Directory Etki Alanı Hizmetlerinize (AD DS)](/azure/active-directory/authentication/concept-password-ban-bad-on-premises) genişletin.
+- [Self Servis Parola Sıfırlama (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) ile kullanıcılarınızın kendi parolalarını değiştirmesine izin verin.
 
-Ardından, Ortak kimlik [ve cihaz erişimi ilkelerini kullanın](/microsoft-365/security/office-365-security/identity-access-policies). Bu ilkeler, bulut hizmetleriyle ilgili hizmetlere Microsoft 365 daha yüksek güvenlik sağlar. 
+Ardından [, Ortak kimlik ve cihaz erişim ilkelerini](/microsoft-365/security/office-365-security/identity-access-policies) uygulayın. Bu ilkeler, Microsoft 365 bulut hizmetlerine erişim için daha yüksek güvenlik sağlar. 
 
-Kullanıcı oturum açma bilgileri için bu ilkeler şunlardır:
+Kullanıcı oturum açma işlemleri için bu ilkeler şunlardır:
 
-- Öncelik hesapları (hemen) için [çok faktörlü](/microsoft-365/admin/setup/priority-accounts) kimlik doğrulaması (MFA) gerekir ve sonunda tüm kullanıcı hesapları kullanılır.
-- MFA kullanmak için yüksek riskli oturum açma işlemleri gerektiren.
-- Parolalarını değiştirmek için yüksek riskli oturum açmaları olan kullanıcıları gerektirme.
+- [Öncelikli hesaplar](/microsoft-365/admin/setup/priority-accounts) (hemen) ve sonunda tüm kullanıcı hesapları için çok faktörlü kimlik doğrulaması (MFA) gerektirme.
+- MFA kullanmak için yüksek riskli oturum açma işlemleri gerektirme.
+- Yüksek riskli oturum açma işlemleri olan yüksek riskli kullanıcıların parolalarını değiştirmesini zorunlu kıl.
 
-## <a name="prevent-privilege-escalation"></a>Ayrıcalık yükseltmeyi önleme
+## <a name="prevent-privilege-escalation"></a>Ayrıcalık yükseltmesini önleme
 
 Şu en iyi yöntemleri kullanın:
 
-- En az ayrıcalık [ilkesi uygulama](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) ve oturum açma parolalarını kullanmaya devam eden [](#increase-sign-in-security) bu kullanıcı hesapları için oturum açma güvenliğini artırma konusunda açıklandığı gibi parola koruması kullanma. 
-- Etki alanı genelinde yönetici düzeyinde hizmet hesaplarının kullanımından kaçının. 
-- Uzak Erişim Truvaları (RAT) ve diğer istenmeyen uygulamaların yüklemesini sınırlamak için yerel yönetim ayrıcalıklarını kısıtla.
-- Yönetim portallarına erişime izin vermeden önce, kullanıcıların ve iş istasyonlarının güvenlerini açıkça doğrulamak için Azure AD Koşullu Erişim'i kullanın. Azure [portalı için](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) bu örneğine bakın.
+- [En az ayrıcalık](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) ilkesini uygulayın ve oturum açma işlemleri için parola kullanmaya devam eden kullanıcı hesapları için [oturum açma güvenliğini artırma](#increase-sign-in-security) bölümünde açıklandığı gibi parola koruması kullanın. 
+- Etki alanı genelinde, yönetici düzeyinde hizmet hesaplarını kullanmaktan kaçının. 
+- Uzaktan Erişim Truva Atları (RAT) ve diğer istenmeyen uygulamaların yüklenmesini sınırlandırmak için yerel yönetim ayrıcalıklarını kısıtlayın.
+- Yönetim portallarına erişime izin vermeden önce kullanıcıların ve iş istasyonlarının güvenini açıkça doğrulamak için Azure AD Koşullu Erişim'i kullanın. Azure portal için [bu örne](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) bakın.
 - Yerel Yönetici parola yönetimini etkinleştirin.
-- Üst düzeyde ayrıcalıklı hesapların oturum açma ve kimlik bilgilerini ortaya çıkarma yerini belirleme. Yüksek derecede ayrıcalıklı hesaplar iş istasyonlarında mevcut olmayacaktır.
-- Parolaların ve kimlik bilgilerinin yerel depolamasını devre dışı bırak.
+- Yüksek ayrıcalıklı hesapların nerede oturum açıp kimlik bilgilerini açığa çıkarttığını belirleyin. İş istasyonlarında yüksek ayrıcalıklı hesaplar bulunmamalıdır.
+- Parolaların ve kimlik bilgilerinin yerel depolamasını devre dışı bırakın.
 
-## <a name="impact-on-users-and-change-management"></a>Kullanıcılar üzerindeki etkisi ve değişiklik yönetimi
+## <a name="impact-on-users-and-change-management"></a>Kullanıcılar ve değişiklik yönetimi üzerindeki etkisi
 
-Organizasyon'daki kullanıcıları şulardan haberdar etmek gerekir:
+Kuruluşunuzdaki kullanıcıları aşağıdakilerden haberdar etmeniz gerekir:
 
 - Daha güçlü parolalar için yeni gereksinimler.
-- MFA'nın gerekli kullanımı ve MFA ikincil kimlik doğrulama yöntemi kaydı gibi oturum açma süreçlerde yapılan değişiklikler.
-- SSPR ile parola bakımı kullanımı. Örneğin, parola sıfırlama için yardım masasına artık çağrı yok.
-- Risk altında olduğu belirlenen oturum açmalarda MFA'nın veya parola değişikliğinin gerekli olması isteniyor.
+- MFA'nın gerekli kullanımı ve MFA ikincil kimlik doğrulama yöntemi kaydı gibi oturum açma işlemlerindeki değişiklikler.
+- SSPR ile parola bakımı kullanımı. Örneğin, parola sıfırlama için yardım masasına başka çağrı yapılmaz.
+- Riskli olduğu belirlenen oturum açma işlemleri için MFA veya parola değişikliği gerektirme istemi.
 
 ## <a name="resulting-configuration"></a>Sonuçta elde edilen yapılandırma
 
-İşte, 1.ve 3. adımlar için kiracınız için fidye yazılımı koruması.
+1-3 arası adımlar için kiracınız için fidye yazılımı koruması aşağıdadır.
 
-![3. Adım'dan Microsoft 365 kiracınız için fidye yazılımı koruması](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step3.png)
+![3. Adımdan sonra Microsoft 365 kiracınız için fidye yazılımı koruması](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step3.png)
 
 ## <a name="next-step"></a>Sonraki adım
 
-[![Yazılımla fidye yazılımı koruması için 4. Microsoft 365](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-step4.png)](ransomware-protection-microsoft-365-devices.md)
+[![Microsoft 365 ile fidye yazılımı koruması için 4. Adım](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-step4.png)](ransomware-protection-microsoft-365-devices.md)
 
-Kiracınıza [cihazları (uç](ransomware-protection-microsoft-365-devices.md) noktalar) korumak için 4. Adım Microsoft 365 devam edin. 
+Microsoft 365 kiracınızdaki cihazları (uç noktaları) korumak için [4. Adımla](ransomware-protection-microsoft-365-devices.md) devam edin. 

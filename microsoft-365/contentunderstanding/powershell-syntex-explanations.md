@@ -1,35 +1,35 @@
 ---
-title: PowerShell'de belge anlama modeli açıklamaları ile çalışma
+title: PowerShell'de model açıklamalarını anlama belgesiyle çalışma
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: PowerShell'de SharePoint Syntex açıklamaları anlama hakkında bilgi edinmek için bu belgeyle çalışma hakkında bilgi öğrenin.
-ms.openlocfilehash: 12bdb4c7019b34ee7d2c1f4315673d78cbfb7ba1
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: PowerShell'de model açıklamalarını anlama SharePoint Syntex çalışma hakkında bilgi edinin.
+ms.openlocfilehash: f81281e28977e842188e1dcc02906eedaad09738
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525702"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578366"
 ---
-# <a name="work-with-document-understanding-model-explanations-in-powershell"></a>PowerShell'de belge anlama modeli açıklamaları ile çalışma
+# <a name="work-with-document-understanding-model-explanations-in-powershell"></a>PowerShell'de model açıklamalarını anlama belgesiyle çalışma
 
 > [!IMPORTANT]
-> En SharePoint Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, bunlar için destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlarıdır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
+> SharePoint Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, bunlar için destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlardır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
 
-Özel açıklama şablonları, içerik merkezi içindeki bir listede depolanır. Bu açıklamalar liste öğeleri olarak depolandığı için, bu açıklamalarla etkileşim kurmak için PowerShell kullanılabilir.
+Özel açıklama şablonları, içerik merkezi içindeki bir listede depolanır. Bu açıklamalar liste öğeleri olarak depolandığından, PowerShell bunlarla etkileşime geçmek için kullanılabilir.
 
-## <a name="list-saved-explanations"></a>Kaydedilen açıklamaları listele
+## <a name="list-saved-explanations"></a>Kaydedilen açıklamaları listeleme
 
-Bu örnekte, belirli bir içerik merkezine kaydedilmiş olan tüm özel açıklama şablonlarının nasıl görüntü olduğu gösterir.
+Bu örnekte, belirli bir içerik merkezine kaydedilmiş tüm özel açıklama şablonlarının nasıl görüntülendiği gösterilmektedir.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -69,7 +69,7 @@ $explanationOutput
 
 ## <a name="create-a-phrase-list-explanation"></a>Tümcecik listesi açıklaması oluşturma
 
-Bu örnekte, özel bir tümcecik listesi açıklama şablonunun nasıl oluşturul açık olduğu görüntülenir.
+Bu örnekte özel tümcecik listesi açıklama şablonunun nasıl oluşturulacağı gösterilmektedir.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -106,7 +106,7 @@ Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationN
 
 ## <a name="create-a-regular-expression-explanation"></a>Normal ifade açıklaması oluşturma
 
-Bu örnekte, özel bir normal ifade açıklaması şablonunun nasıl oluşturularak oluşturul olduğu gösterir.
+Bu örnekte özel bir normal ifade açıklama şablonunun nasıl oluşturulacağı gösterilmektedir.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -131,9 +131,9 @@ $explanationContent = "{`"id`":`"$guid`",`"kind`":`"regexFeature`",`"name`":`"$e
 Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationName; "ExplanationName" = $explanationName; "ExplanationDescription" = $explanationDescription; "ExplanationContent" = $explanationContent}
 ```
 
-## <a name="create-a-phrase-list-explanation-based-on-a-term-set"></a>Terim kümesine dayalı bir tümcecik listesi açıklaması oluşturma
+## <a name="create-a-phrase-list-explanation-based-on-a-term-set"></a>Terim kümesini temel alan tümcecik listesi açıklaması oluşturma
 
-Bu örnekte, bir terim kümesinden değerleri alarak özel bir tümcecik listesi açıklama şablonunun nasıl oluşturul olduğu görüntülenir. Tercih edilen terim adları ve tüm eş anlamlılar buna dahildir.
+Bu örnekte, bir terim kümesindeki değerleri alarak özel tümcecik listesi açıklama şablonunun nasıl oluşturulacağı gösterilmektedir. Bu, tercih edilen terim adlarını ve tüm eş anlamlıları içerir.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"

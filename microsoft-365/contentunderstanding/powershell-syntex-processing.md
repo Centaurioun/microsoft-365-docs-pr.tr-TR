@@ -1,35 +1,35 @@
 ---
-title: Belge anlama modeliyle işlem yapmak isteği için PowerShell kullanma
+title: Belge anlama modeliyle işleme isteğinde bulunmak için PowerShell kullanma
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Belge anlama modeliyle iş yapmayı talep etmek için PowerShell SharePoint Syntex kullanmayı öğrenin.
-ms.openlocfilehash: 8f66a0cc5e59ad2ccb6b92d98cfaee8ce84470f2
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: SharePoint Syntex belge anlama modeliyle işlem isteğinde bulunmak için PowerShell'i kullanmayı öğrenin.
+ms.openlocfilehash: f0b2292b68ce8f1c22c892ef3a807d3d54f91b85
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526452"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580914"
 ---
-# <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>Belge anlama modeliyle işlem yapmak isteği için PowerShell kullanma
+# <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>Belge anlama modeliyle işleme isteğinde bulunmak için PowerShell kullanma
 
 > [!IMPORTANT]
-> En SharePoint Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, bunlar için destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlarıdır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
+> SharePoint Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, bunlar için destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlardır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
 
-Belge anlama modelleri, yeni karşıya yüklenen dosyaları kitaplı kitaplılara işler. Ayrıca kullanıcı arabiriminde el ile işlem yapmak da mümkündür. Bununla birlikte, PowerShell aracılığıyla işlemeyi tetiklemenin daha verimli olduğu senaryolar olabilir.
+Belge anlama modelleri, kitaplığa yeni yüklenen dosyaları işler. Kullanıcı arabiriminde işlemeyi el ile istemek de mümkündür. Ancak, PowerShell aracılığıyla işlemeyi tetiklemenin daha verimli olduğu senaryolar olabilir.
 
-## <a name="request-processing-of-all-items-that-have-not-been-previously-classified"></a>Daha önce sınıflandırılmış tüm öğelerin işlemini talep
+## <a name="request-processing-of-all-items-that-have-not-been-previously-classified"></a>Daha önce sınıflandırılmamış tüm öğelerin işlenmesini isteme
 
-Kitaplıkta daha önce sınıflandırılmış olan tüm öğeler için şu komutu kullanarak işleme isteğinde bulunmaktadır:
+Bu komutu kullanarak kitaplıktaki daha önce sınıflandırılmamış tüm öğeler için işleme isteğinde bulunabilirsiniz:
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -38,11 +38,11 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/finance"
 Request-PnPSyntexClassifyAndExtract -List "Documents"
 ```
 
-Daha düşük öncelikli işleme için, kiracınız bulunduğu iş saatleri dışında iş için dosyaları sıraya alan -OffPeak parametresini kullanmayı da göz önünde bulundurabilirsiniz. Daha [fazla ayrıntı için bkz. Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html) .
+Düşük öncelikli işleme için, kiracınızın bulunduğu iş saatleri dışında işlenmek üzere dosyaları kuyruğa alan -OffPeak parametresini de kullanmayı düşünebilirsiniz. Diğer ayrıntılar için bkz. [Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html) .
 
-## <a name="request-processing-of-all-items-in-a-library"></a>Kitaplıkta tüm öğelerin işlemesini talep edin
+## <a name="request-processing-of-all-items-in-a-library"></a>Kitaplıktaki tüm öğelerin işlenmesini isteme
 
-Daha önce sınıflandırılmış olsalar bile kitaplıkta tüm dosyaların işlemesini talep edin. Bir modeli güncelleştirilmiş veya kitaplı kitaplara başka bir model eklenmişse, bu yararlı olabilir.
+Daha önce sınıflandırılmış olsalar bile kitaplıktaki tüm dosyaların işlenmesini isteyebilirsiniz. Bu, bir modeli güncelleştirdiyseniz veya kitaplığa başka bir model eklediyseniz yararlı olabilir.
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -52,11 +52,11 @@ Request-PnPSyntexClassifyAndExtract -List "Documents" -Force
 ```
 
 > [!NOTE]
-> -Force seçeneğini 5000'den fazla öğeyle kullanmak tepe işlemeyi otomatik olarak etkinleştirir.
+> -Force seçeneğinin 5000'den fazla öğeyle kullanılması otomatik olarak yoğun olmayan işlemeyi etkinleştirir.
 
-## <a name="request-processing-of-all-items-based-on-a-property"></a>Bir özele dayalı olarak tüm öğelerin işlemesi isteği
+## <a name="request-processing-of-all-items-based-on-a-property"></a>Bir özelliğe göre tüm öğelerin işlenmesini isteme
 
-İşlemeyi kitaplıkta belirli bir öğe alt kümesiyle sınırlandır etmek için, betik kullanarak belirli bir dosya grubunu seçin. Aşağıdaki örnekte, betik bir alanın seçili ve bir alan değerine göre filtre uygulamana izin verir. [Get-PnPListItem kullanılarak daha karmaşık sorgular tamamlandıktan sonra](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html).
+İşlemeyi bir kitaplıktaki öğelerin belirli bir alt kümesiyle sınırlamak istiyorsanız, belirli bir dosya grubunu seçmek için betik kullanabilirsiniz. Aşağıdaki örnekte betik, bir alanın seçilmesine ve filtreleme ölçütü olarak bir alan değerine izin verir. [Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html) kullanılarak daha karmaşık sorgular tamamlanabilir.
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -82,9 +82,9 @@ foreach ($listItem in $targetItems) {
 Invoke-PnPBatch -Batch $batch
 ```
 
-## <a name="request-processing-of-specific-files"></a>Belirli dosyaların işlemesi isteği
+## <a name="request-processing-of-specific-files"></a>Belirli dosyaların işlenmesini isteme
 
-Belirli dosyalar için işlemenin de istenen bir işlem olması gerekir.
+belirli dosyalar için işleme de istenebilir.
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -93,7 +93,7 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/finance"
 Request-PnPSyntexClassifyAndExtract -FileUrl "/sites/finance/documents/contoso contract.docx"
 ```
 
-Dosya modeline göre dosya toplu işlemi de destekler:
+Dosya modeline göre dosya, toplu işlemi de destekler:
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process

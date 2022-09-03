@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
@@ -20,12 +20,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Microsoft 365'te bulunan ve kuruluşunuzun dışındaki kişilerle paylaşımı etkileyebilecek konuk paylaşım ayarları hakkında bilgi edinin.
-ms.openlocfilehash: 574e2ab6b3ca01de31d4489b80c5b6aefddd6a9f
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6362a1a1aa7c30d1449b8b626b567b45cbaa16bd
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949469"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579544"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 konuk paylaşımı ayarları başvurusu
 
@@ -201,7 +201,7 @@ OneDrive, SharePoint içindeki sitelerin hiyerarşisi olduğundan, kuruluş düz
 |Yalnızca belirli güvenlik gruplarındaki kullanıcıların harici olarak paylaşmasına izin ver|Devre Dışı|SharePoint ve OneDrive'da kimlerin konuklarla paylaşabileceğini sınırlamak istiyorsanız, paylaşımı belirtilen güvenlik gruplarındaki kişilerle sınırlayarak bunu yapabilirsiniz. Bu ayarlar Microsoft 365 Grupları veya Teams aracılığıyla paylaşımı etkilemez. Bir grup veya ekip aracılığıyla davet edilen konuklar da ilişkili siteye erişebilir, ancak belge ve klasör paylaşımı yalnızca belirtilen güvenlik gruplarındaki kişiler tarafından yapılabilir. <p> Belirtilen her grup için, bu kullanıcılardan hangilerinin Herkes bağlantılarıyla paylaşabileceğini seçebilirsiniz.|
 |Konuklar, paylaşım davetlerinin gönderildiği hesabı kullanarak oturum açmalıdır|Devre Dışı|Konukların, davetin gönderildiğinden farklı bir e-posta adresi kullanarak site paylaşım davetlerini kullanmasını engeller. <p> [Azure AD B2B (Önizleme) ile SharePoint ve OneDrive tümleştirmesi](/sharepoint/sharepoint-azureb2b-integration-preview) bu ayarı kullanmaz çünkü tüm konuklar davetin gönderildiği e-posta adresine göre dizine eklenir. Siteye erişmek için alternatif e-posta adresleri kullanılamaz.|
 |Konukların sahip olmadığı öğeleri paylaşmasına izin ver|-Inı|**Açık olduğunda**, konuklar sahip olmadığı öğeleri diğer kullanıcılarla veya konuklarla paylaşabilir; **Kapalıyken** yapamazlar. Konuklar her zaman tam denetime sahip oldukları ürünleri paylaşabilirler.|
-|Doğrulama kodu kullanan kişilerin bu kadar gün sonra yeniden kimlik doğrulaması yapması gerekir|Devre Dışı|Bu ayar, tek seferlik geçiş koduyla kimlik doğrulayan kullanıcıların belirli sayıda gün sonra yeniden kimlik doğrulaması yapmasını zorunlu kılmanızı sağlar.|
+|Doğrulama kodu kullanan Kişiler bu kadar gün sonra yeniden kimlik doğrulaması yapmalıdır|Devre Dışı|Bu ayar, tek seferlik geçiş koduyla kimlik doğrulayan kullanıcıların belirli sayıda gün sonra yeniden kimlik doğrulaması yapmasını zorunlu kılmanızı sağlar.|
 |Bir siteye veya OneDrive'a konuk erişiminin süresi bu kadar gün sonra otomatik olarak dolacak|-Inı|Yöneticiniz konuk erişimi için bir süre sonu süresi ayarladıysa, siteye davet ettiğiniz veya tek tek dosya ve klasörleri paylaştığınız her konuk için belirli sayıda gün boyunca erişim verilir. Daha fazla bilgi [için, Bir site için konuk süre sonunu yönetme](https://support.microsoft.com/en-us/office/manage-guest-expiration-for-a-site-25bee24f-42ad-4ee8-8402-4186eed74dea) sayfasını ziyaret edin
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>SharePoint ve OneDrive dosya ve klasör bağlantısı ayarları

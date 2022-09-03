@@ -5,47 +5,47 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: enabler-strategic
 ms.localizationpriority: high
 description: SharePoint taksonomisi için SKOS biçim başvurusu
-ms.openlocfilehash: c9dbaae4242155522eec2fff0f7fd4d721e697cc
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: b3e0e60345e46fde8f82af536101f4f8b09daf24
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139683"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575855"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>SharePoint taksonomisi için SKOS biçim başvurusu
 
-Bu makale[, SharePoint taksonomiyi](/dotnet/api/microsoft.sharepoint.taxonomy) temsil etmek için kullanılan RDF sözcük dağarcığını içerir ve [SKOS'a](https://www.w3.org/TR/skos-primer/) dayanır. Bu RDF söz diziminin seri hale getirilmesi için RDF [TURTLE](https://www.w3.org/TR/turtle/) kullanın.
+Bu makale [, SharePoint taksonomisini](/dotnet/api/microsoft.sharepoint.taxonomy) temsil etmek için kullanılan RDF sözcük dağarcığını içerir ve [SKOS'a](https://www.w3.org/TR/skos-primer/) dayanır. Bu RDF söz diziminin seri hale getirilmesi için RDF [TURTLE](https://www.w3.org/TR/turtle/) kullanın.
 
-Aşağıdaki tabloda[, SharePoint taksonomi](/dotnet/api/microsoft.sharepoint.taxonomy) sözlüğü için [SKOS](https://www.w3.org/TR/skos-primer/) eşdeğerleri gösterilmektedir. SharePoint, SharePoint taksonomi eşdeğeri olmayan [SKOS](https://www.w3.org/TR/skos-primer/) değerlerini desteklemez.
+Aşağıdaki tabloda[, SharePoint taksonomi](/dotnet/api/microsoft.sharepoint.taxonomy) sözlüğü için [SKOS](https://www.w3.org/TR/skos-primer/) eşdeğerleri gösterilmektedir. SharePoint, SharePoint taksonomisi eşdeğeri olmayan [SKOS](https://www.w3.org/TR/skos-primer/) değerlerini desteklemez.
 
 |SharePoint taksonomisi|SKOS eşdeğeri|
 |:-----------------|:--------------|
-|sharepoint-taksonomisi:Terim|skos:Concept|
-|sharepoint-taksonomisi:TermSet|skos:ConceptScheme|
-|sharepoint-taxonomy:inTermSet|skos:inScheme|
-|sharepoint-taxonomy:hasTopLevelTerm|skos:hasTopConcept|
-|sharepoint-taxonomy:topLevelTermOf|skos:topConceptOf|
-|sharepoint-taxonomy:defaultLabel|skos:prefLabel|
-|sharepoint-taxonomy:termSetName|skos:prefLabel|
-|sharepoint-taxonomy:propertyName|skos:prefLabel|
-|sharepoint-taksonomisi:otherLabel|skos:altLabel|
-|sharepoint-taxonomy:description|skos:definition|
-|sharepoint-taxonomy:parent|skos:broader|
-|sharepoint-taxonomy:child|skos:narrower|
+|sharepoint-taksonomisi: Terim|skos: Kavram|
+|sharepoint-taksonomisi: TermSet|skos: ConceptScheme|
+|sharepoint-taksonomisi: inTermSet|skos: inScheme|
+|sharepoint-taksonomisi: hasTopLevelTerm|skos: hasTopConcept|
+|sharepoint-taksonomisi: topLevelTermOf|skos: topConceptOf|
+|sharepoint-taksonomisi: defaultLabel|skos: prefLabel|
+|sharepoint-taxonomy: termSetName|skos: prefLabel|
+|sharepoint-taksonomisi: propertyName|skos: prefLabel|
+|sharepoint-taksonomisi: otherLabel|skos: altLabel|
+|sharepoint-taksonomisi: açıklama|skos: tanım|
+|sharepoint-taksonomisi: üst|skos: daha geniş|
+|sharepoint-taksonomisi: alt öğe|skos: daha dar|
 
-Aşağıdaki tabloda, [OWL'dan](https://www.w3.org/TR/owl2-primer/) türetilmiş SharePoint taksonomi sözlüğü varlıkları gösterilmektedir.
+Aşağıdaki tabloda, [OWL'den](https://www.w3.org/TR/owl2-primer/) türetilen SharePoint taksonomi sözlüğü varlıkları gösterilmektedir.
 
 |SharePoint taksonomi sözlüğü|OWL'dan türetilmiş|
 |:-----------------------------|:----------------------|
-|sharepoint-taxonomy:isAvailableForTagging|owl:datatypeproperty|
-|sharepoint-taxonomy:SharedCustomPropertyForTerm|owl:ObjectProperty|
-|sharepoint-taxonomy:LocalCustomPropertyForTerm|owl:ObjectProperty|
-|sharepoint-taxonomy:CustomPropertyForTermSet|owl:ObjectProperty|
+|sharepoint-taksonomisi: isAvailableForTagging|baykuş: datatypeproperty|
+|sharepoint-taxonomy: SharedCustomPropertyForTerm|baykuş: ObjectProperty|
+|sharepoint-taxonomy: LocalCustomPropertyForTerm|baykuş: ObjectProperty|
+|sharepoint-taxonomy: CustomPropertyForTermSet|baykuş: ObjectProperty|
 
 ## <a name="sharepoint-taxonomy-vocabulary"></a>SharePoint taksonomi sözlüğü
 
@@ -55,7 +55,7 @@ Taksonomi resmi bir sınıflandırma sistemidir. Taksonomi, bir şeyi açıklaya
 
 Yönetilen meta veri hiyerarşisindeki bir Terimi veya Anahtar Sözcüğü temsil eder.
 
-[Terim](/dotnet/api/microsoft.sharepoint.taxonomy.term), SharePoint [TermStore'nun atomik birimidir](/dotnet/api/microsoft.sharepoint.taxonomy.termstore). Her [Terim](/dotnet/api/microsoft.sharepoint.taxonomy.term), bir [TermGroup'a](/dotnet/api/microsoft.sharepoint.taxonomy.group) ait bir [TermSet'e](/dotnet/api/microsoft.sharepoint.taxonomy.termset) aittir.
+[Terim](/dotnet/api/microsoft.sharepoint.taxonomy.term), SharePoint TermStore'nun atomik [birimidir](/dotnet/api/microsoft.sharepoint.taxonomy.termstore). Her [Terim](/dotnet/api/microsoft.sharepoint.taxonomy.term), bir [TermGroup'a](/dotnet/api/microsoft.sharepoint.taxonomy.group) ait bir [TermSet'e](/dotnet/api/microsoft.sharepoint.taxonomy.termset) aittir.
 
 [Terim](/dotnet/api/microsoft.sharepoint.taxonomy.term) tanımlama söz dizimi aşağıdaki gibidir:
 
@@ -70,14 +70,14 @@ ex:TermA    a    sharepoint-taxonomy:Term;
 
 [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.term) içinde zorunlu olarak bir [Terim](/dotnet/api/microsoft.sharepoint.taxonomy.termset) var. DefaultLabel, görsel gösterimde göründüğü gibi [Terimin](/dotnet/api/microsoft.sharepoint.taxonomy.term) adıdır. [Terim](/dotnet/api/microsoft.sharepoint.taxonomy.term) tanımlamak için gereken alanlar şunlardır:
 
-- sharepoint-taxonomy:defaultLabel
-- sharepoint-taxonomy:inTermSet
+- sharepoint-taksonomisi: defaultLabel
+- sharepoint-taksonomisi: inTermSet
 
 [Terim şu](/dotnet/api/microsoft.sharepoint.taxonomy.term) şekilde olabilir:
 
 - Hem [Koşulların](/dotnet/api/microsoft.sharepoint.taxonomy.term) aynı [TermSet'e](/dotnet/api/microsoft.sharepoint.taxonomy.termset) ait olduğu sağlanan başka bir [Terimle](/dotnet/api/microsoft.sharepoint.taxonomy.term) hiyerarşik olarak ilgili olun.
 - Birden çok alt [Terime](/dotnet/api/microsoft.sharepoint.taxonomy.term) sahip olur, ancak yalnızca tek bir üst [Terime sahip olur](/dotnet/api/microsoft.sharepoint.taxonomy.term).
-- TopLevelTermOf a [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) [ise, tanımlanmış](/dotnet/api/microsoft.sharepoint.taxonomy.term) bir üst Terim yoktur.
+- TopLevelTermOf a [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.term) ise, tanımlanmış bir üst [Terim](/dotnet/api/microsoft.sharepoint.taxonomy.termset) yoktur.
 - [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) çalışma dili başına bir varsayılanLabel kullanın.
 - Üst [Terim](/dotnet/api/microsoft.sharepoint.taxonomy.term) içermiyorsa veya topLevelTermOf a [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) ise mevcut değildir.
 - Aynı hiyerarşik düzeyde yalnızca benzersiz bir defaultLabel'e sahip olur.
@@ -99,13 +99,13 @@ ex:TermSetA    a    sharepoint-taxonomy:TermSet;
 
 [TermSet'ler](/dotnet/api/microsoft.sharepoint.taxonomy.termset)[, TermGroup'larda](/dotnet/api/microsoft.sharepoint.taxonomy.group) mantıksal olarak birlikte gruplandırılır. [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) tanımlamak için gereken alan:
 
-- sharepoint-taxonomy:termSetName
+- sharepoint-taxonomy: termSetName
 
-SağlananSetName teriminin [TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group) içinde benzersiz olmaması durumunda, SharePoint termSetName'lerin benzersizliğini korumak için adın sonuna bir sayı ekler.
+Sağlanan TermSetName terimi [TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group) içinde benzersiz değilse, SharePoint termSetName'lerin benzersizliğini korumak için adın sonuna bir sayı ekler.
 
 **sharepoint-taxonomy:hasTopLevelTerm**
 
-SharePoint, giriş noktası [termset](/dotnet/api/microsoft.sharepoint.taxonomy.term) içindeki [Terimler](/dotnet/api/microsoft.sharepoint.taxonomy.term) hiyerarşisine giriş noktası olan [TermSet'in](/dotnet/api/microsoft.sharepoint.taxonomy.termset) en üstteki Terimi eşlemek için bu özelliği [kullanır.](/dotnet/api/microsoft.sharepoint.taxonomy.termset) Bu, sharepoint-taxonomy:topLevelTermOf ile ters bir ilişkidir.
+SharePoint bu özelliği kullanarak [TermSet'teki](/dotnet/api/microsoft.sharepoint.taxonomy.termset) en üstteki [Terim'i](/dotnet/api/microsoft.sharepoint.taxonomy.term) eşler ve bu da giriş noktası olarak Terim [Kümesindeki](/dotnet/api/microsoft.sharepoint.taxonomy.termset) [Terimler](/dotnet/api/microsoft.sharepoint.taxonomy.term) hiyerarşisini kullanır. Bu, sharepoint-taksonomisi ile ters bir ilişkidir: topLevelTermOf.
 
 Bunu tanımlamak için söz dizimi şöyledir:
 
@@ -118,7 +118,7 @@ ex:TermSetA    sharepoint-taxonomy:hasTopLevelTerm    ex:TermA.
 
 **sharepoint-taxonomy:topLevelTermOf**
 
-Sharepoint-taksonomisi:topLevelTermOf, sharepoint-taxonomy:hasTopLevelTerm'nin tersidir
+Sharepoint-taksonomisi: topLevelTermOf, sharepoint-taksonomisinin tersidir: hasTopLevelTerm
 
 Bunu tanımlamak için söz dizimi şöyledir:
 
@@ -166,7 +166,7 @@ Geçerli TermSet nesnesinin özellik adını alır ve ayarlar.
 
 Bu, Bir [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) çalışma dilinde sharepoint-taxonomy:SharedCustomPropertyForTerm, sharepoint-taxonomy:LocalCustomPropertyForTerm ve sharepoint-taxonomy:CustomPropertyForTermSet sözcük temelli etiketidir.
 
-sharepoint-taxonomy:propertyName, CustomProperty anahtarının anahtarı olarak değerlendirilir.
+sharepoint-taxonomy: propertyName, CustomProperty anahtarının anahtarı olarak değerlendirilir.
 
 bir propetyName tanımlamak için söz dizimi:
 
@@ -220,11 +220,11 @@ Bu, TermA'nın üst öğe, TermA'nın ise alt öğe olduğu anlamına gelir.
 
 ## <a name="documentation-notes"></a>Belge notları
 
-Bu bölümde, Microsoft'ta ayrıntılı olarak açıklanan taksonomi ele alınmaktadır. SharePoint. Taksonomi Ad Alanı.
+Bu bölümde, Microsoft.SharePoint.Taxonomy Ad Alanında ayrıntılı olarak açıklanan taksonomi ele alınmaktadır.
 
 **sharepoint-taxonomy:description**
 
-Bu, [herhangi bir SharePoint taksonomi sözlüğü varlığının](/dotnet/api/microsoft.sharepoint.taxonomy) ayrıntılı bir açıklamasıdır.
+Bu, herhangi bir [SharePoint taksonomi sözlüğü varlığının](/dotnet/api/microsoft.sharepoint.taxonomy) ayrıntılı bir açıklamasıdır.
 
 Açıklama eklemek için söz dizimi şu şekildedir:
 
@@ -263,7 +263,7 @@ ex:TermA    ex:CustomProp2    “5 cm”@en-us.
 ```
 **sharepoint-taxonomy:LocalCustomPropertyForTerm**
 
-Terim için özel özelliğin [](/dotnet/api/microsoft.sharepoint.taxonomy.term) [Terimle](/dotnet/api/microsoft.sharepoint.taxonomy.term) birlikte taşınması gerekmiyorsa, Terimi başka bir yerde [](/dotnet/api/microsoft.sharepoint.taxonomy.term)yeniden kullandığınızda, bunu LocalCustomPropertyForTerm altında tanımlamanız gerekir.
+[Terimin](/dotnet/api/microsoft.sharepoint.taxonomy.term) özel özelliğinin [Terimle](/dotnet/api/microsoft.sharepoint.taxonomy.term) birlikte taşınması gerekmiyorsa, [Terimi](/dotnet/api/microsoft.sharepoint.taxonomy.term) başka bir yerde yeniden kullandığınızda, bunu LocalCustomPropertyForTerm altında tanımlamanız gerekir.
 
 Bunu tanımlamak için söz dizimi şöyledir:
 
@@ -290,7 +290,7 @@ ex:TermA    sharepoint-taxonomy:isAvailableForTagging     "true"^^xsd:Boolean;
 
 ## <a name="domain-and-range"></a>Etki alanı ve aralık
 
-Aşağıdaki tabloda, SharePoint taksonomi sözlüğü etki alanı ve aralığı açıklanmaktadır.
+Aşağıdaki tabloda SharePoint taksonomi sözlüğü etki alanı ve aralığı açıklanmaktadır.
 
 |Koşul/fiil|Anlamı|Etki alanı|Aralığı|
 |:--------------|:------|:-----|:----|
@@ -310,13 +310,13 @@ Propertyname|Özellik Etiketi Var|SharedCustomPropertyForTerm, LocalCustomProper
 |LocalCustomPropertyForTerm|Yerel özel özelliğe sahiptir|Terim|Boole, Dize, Tamsayı, Ondalık, Çift|
 |CustomPropertyForTermSet|Özel Özelliği Var|TermSet|Boole, Dize, Tamsayı, Ondalık, Çift|
 
-[Taksonomi SharePoint](/dotnet/api/microsoft.sharepoint.taxonomy) izin vermeyen [geçerli SKOS](https://www.w3.org/TR/skos-primer/) senaryoları:
+[SharePoint taksonominin](/dotnet/api/microsoft.sharepoint.taxonomy) izin vermediği [geçerli SKOS](https://www.w3.org/TR/skos-primer/) senaryoları:
 
-- Hiyerarşik yedeklilik - [Bir SKOS](https://www.w3.org/TR/skos-primer/) kavramı aynı anda birkaç daha geniş kavramlara eklenebilir, ancak sharepoint-taksonomisi:Terim yalnızca bir sharepoint-taksonomisi:üst öğeye sahip olabilir, bu nedenle Terimlerin döngüsel bağımlılığına da izin verilmez.
-- SharePoint taksonomisinde yalnız bırakılmış terimlere izin verilmez. Her sharepoint-taksonomisi:Terim sharepoint-taksonomisi:parent olmalıdır veya sharepoint-taxonomy:topLevelTermOf a TermSet olmalıdır.
-- SharePoint taksonomi, ilişkilendirici ilişkileri desteklemez.
-- SharePoint taksonomisi yalnızca 2 tür Hiyerarşik ilişkiye izin verir: sharepoint-taksonomi:parent ve sharepoint-Taksonomi:child.
-- [SKOS'un](https://www.w3.org/TR/skos-primer/) aksine, SharePoint taksonomi sözlüğündeki hiyerarşik ilişki, yalnızca aynı TermSet içindeki Terimler ile oluşturulabilir.
+- Hiyerarşik yedeklilik - [Bir SKOS](https://www.w3.org/TR/skos-primer/) kavramı aynı anda birkaç daha geniş kavramlara eklenebilir, ancak bir sharepoint-taksonomisi:Terimin yalnızca bir sharepoint-taksonomisi:üst öğesi olabilir, bu nedenle Terimlerin döngüsel bağımlılığına da izin verilmez.
+- SharePoint taksonomisinde yalnız bırakılmış terimlere izin verilmez. Her sharepoint-taksonomisi: Terimin bir sharepoint-taksonomisi olmalıdır: üst veya sharepoint-taksonomisi olmalıdır: topLevelTermOf a TermSet.
+- SharePoint taksonomisi ilişkilendirici ilişkileri desteklemez.
+- SharePoint taksonomisi yalnızca iki tür Hiyerarşik ilişkiye izin verir: sharepoint-taksonomisi: üst ve sharepoint-Taksonomi: alt.
+- [SKOS'un](https://www.w3.org/TR/skos-primer/) aksine, SharePoint taksonomi sözlüğündeki hiyerarşik ilişki yalnızca aynı Terim Kümesi içindeki Terimler ile oluşturulabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

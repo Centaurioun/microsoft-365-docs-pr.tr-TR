@@ -2,8 +2,8 @@
 title: Uç Nokta için Microsoft Defender geçiş - Kurulum
 description: Uç Nokta için Defender'a geçiş yapın. Microsoft Defender Virüsten Koruma'yı yüklemeyi de içeren kurulum işlemini gözden geçirin.
 keywords: geçiş, Uç Nokta için Microsoft Defender, virüsten koruma, pasif mod, kurulum işlemi
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: article
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 07b8c6f945cbf71a2474d7668884eeede504e2fe
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 39bc16b1e43858741a8c9f93be9cc236805c93d9
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480028"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583572"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Uç Nokta için Microsoft Defender Geçiş - 2. Aşama: Kurulum
 

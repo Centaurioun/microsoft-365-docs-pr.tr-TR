@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender Virüsten Koruma'de isteğe bağlı taramaları çalıştırma ve özelleştirme
-description: PowerShell, Windows Yönetim Araçları veya Windows Güvenliği uygulamasıyla uç noktalarda tek tek kullanarak isteğe bağlı taramaları çalıştırma ve yapılandırma
+title: Microsoft Defender Virüsten Koruma'da isteğe bağlı taramaları çalıştırma ve özelleştirme
+description: PowerShell, Windows Yönetim Araçları'nı kullanarak veya Windows Güvenliği uygulamasıyla uç noktalarda tek tek isteğe bağlı taramaları çalıştırma ve yapılandırma
 keywords: tarama, isteğe bağlı, dos, intune, anlık tarama
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,26 +14,26 @@ ms.custom: nextgen
 ms.date: 10/22/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b22e59f5f54b556b32140640f1210e04389148cb
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 582edcff46b6576b1e11ddff0e10cd1e1b43facb
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415562"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584561"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>İsteğe bağlı Microsoft Defender Virüsten Koruma taramalarını yapılandırın ve çalıştırın
 
 **Şunlar için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft Defender Virüsten Koruma
 
 **Platform**
 - Windows
 
-Tek tek uç noktalarda isteğe bağlı tarama çalıştırabilirsiniz. Bu taramalar hemen başlar ve tarama için konum veya tür gibi parametreler tanımlayabilirsiniz. Taramayı çalıştırdığınızda üç tür arasından seçim yapabilirsiniz: Hızlı tarama, tam tarama ve özel tarama. Çoğu durumda hızlı tarama kullanın. Hızlı tarama, kayıt defteri anahtarları ve bilinen Windows başlangıç klasörleri gibi sistemle başlamak için kötü amaçlı yazılımların kaydedilebileceği tüm konumları gözden geçirin.
+Tek tek uç noktalarda isteğe bağlı tarama çalıştırabilirsiniz. Bu taramalar hemen başlar ve tarama için konum veya tür gibi parametreler tanımlayabilirsiniz. Taramayı çalıştırdığınızda üç tür arasından seçim yapabilirsiniz: Hızlı tarama, tam tarama ve özel tarama. Çoğu durumda hızlı tarama kullanın. Hızlı tarama, kayıt defteri anahtarları ve bilinen Windows başlangıç klasörleri gibi sistemle başlamak için kayıtlı kötü amaçlı yazılımların bulunabileceği tüm konumları gözden geçirin.
 
 Her zaman açık, gerçek zamanlı koruma ile birlikte, dosyalar açıldığında ve kapatıldığında incelenir ve bir kullanıcı bir klasöre her gittiği zaman hızlı tarama, sistem ve çekirdek düzeyinde kötü amaçlı yazılımlarla başlayan kötü amaçlı yazılımlara karşı güçlü koruma sağlamaya yardımcı olur. Çoğu durumda hızlı tarama yeterlidir ve zamanlanmış veya isteğe bağlı taramalar için önerilen seçenektir. [Tarama türleri hakkında daha fazla bilgi edinin](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
 
@@ -63,7 +63,7 @@ Aşağıdaki `-scan` parametreyi kullanın:
 mpcmdrun.exe -scan -scantype 1
 ```
 
-Tam tarama başlatma veya yol tanımlama dahil olmak üzere aracın ve ek parametrelerin nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma yapılandırmak ve yönetmek için mpcmdrun.exe komut satırı aracını kullanma](command-line-arguments-microsoft-defender-antivirus.md).
+Aracın ve tam tarama başlatma veya yol tanımlama gibi ek parametrelerin nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma'yı yapılandırmak ve yönetmek için mpcmdrun.exe komut satırı aracını kullanma](command-line-arguments-microsoft-defender-antivirus.md).
 
 ## <a name="use-microsoft-intune-to-run-a-scan"></a>Tarama çalıştırmak için Microsoft Intune kullanma
 
@@ -85,7 +85,7 @@ Aşağıdaki cmdlet'i kullanın:
 Start-MpScan
 ```
 
-PowerShell'i Microsoft Defender Virüsten Koruma ile kullanma hakkında daha fazla bilgi için bkz. Microsoft Defender Virüsten Koruma ve [Defender Virüsten Koruma cmdlet'lerini](/powershell/module/defender/) [yapılandırmak ve çalıştırmak için PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) cmdlet'lerini kullanma.
+PowerShell'i Microsoft Defender Virüsten Koruma ile kullanma hakkında daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma ve Defender Virüsten Koruma cmdlet'lerini yapılandırmak ve çalıştırmak için PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlet'lerini](/powershell/module/defender/) kullanma.
 
 ## <a name="use-windows-management-instruction-wmi-to-run-a-scan"></a>Tarama çalıştırmak için Windows Yönetim Yönergesi'ni (WMI) kullanma
 
@@ -94,7 +94,7 @@ PowerShell'i Microsoft Defender Virüsten Koruma ile kullanma hakkında daha faz
 İzin verilen parametreler hakkında daha fazla bilgi için bkz. [WMIv2 API'lerini Windows Defender](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

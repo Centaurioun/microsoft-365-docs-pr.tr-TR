@@ -2,7 +2,7 @@
 title: İstemci çözümleyicisini macOS veya Linux'ta çalıştırın
 description: macOS veya Linux'ta Uç Nokta için Microsoft Defender İstemci Çözümleyicisi'ni çalıştırmayı öğrenin
 keywords: istemci çözümleyicisi, sorun giderme algılayıcısı, çözümleyici, mdeanalyzer, macos, linux, mdeanalyzer
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 3e7490f4f7141aaf5c350a146c56de2432d58d21
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.subservice: m365d
+ms.openlocfilehash: 5cdc15e67a4fb9b6ae1a2cf743366f2eb72d20f2
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300399"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579973"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS ve Linux üzerinde istemci çözümleyicisini çalıştırma
 

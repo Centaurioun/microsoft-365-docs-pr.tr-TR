@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - M365-collaboration
 - m365solution-securecollab
@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Teams'de konuk işbirliği ile paylaşılan kanallar arasındaki farkı ve hangisinin kullanılacağını seçmeyi öğrenin.
-ms.openlocfilehash: 3a6bc5c7f0b07208e3543bfab9d1d5f0d51fc225
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: bf381482939525c8c78d43c488439dbe72897f31
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "66861718"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576857"
 ---
 # <a name="plan-external-collaboration-with-channel-conversations-file-collaboration-and-shared-apps"></a>Kanal konuşmaları, dosya işbirliği ve paylaşılan uygulamalarla dış işbirliği planlama
 

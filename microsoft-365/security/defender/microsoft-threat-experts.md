@@ -19,12 +19,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: c7d8363e75df92ecfa0c85e12856678c8e32096c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5d01c803f087ec04372300eff4be6a9edcd7002c
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476604"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585520"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 365'te Microsoft Tehdit Uzmanları genel bakış
 
@@ -54,8 +54,9 @@ Zaten Uç Nokta için Microsoft Defender ve Microsoft 365 Defender varsa, uç no
 Uygulamanız onaylandıktan sonra Tehdit Uzmanları ortamınıza yönelik bir tehdit algıladığı her durumda uç nokta saldırı bildirimleri almaya başlarsınız.
 
 ## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Microsoft Tehdit Uzmanları Abone Olma - İsteğe Bağlı Uzmanlar
+
 > [!NOTE]
-> İsteğe Bağlı Uzmanlar bir güvenlik olayı yanıt hizmeti değildir. Kuruluşunuzu etkileyen karmaşık tehditlerin daha iyi anlaşılmasını sağlamak için tasarlanmıştır. Acil güvenlik olayı yanıt sorunlarını çözmek için kendi güvenlik olayı yanıt ekibinizle etkileşime geçin. Kendi güvenlik olayı yanıt ekibiniz yoksa ve Microsoft'un yardımını istiyorsanız [Premier Services Hub](/services-hub/)![görüntüsünde bir destek isteği oluşturun](https://user-images.githubusercontent.com/11750124/187275203-87c65c03-d5c5-4fd0-a045-f795f6976336.png)
+> İsteğe Bağlı Uzmanlar bir güvenlik olayı yanıt hizmeti değildir. Kuruluşunuzu etkileyen karmaşık tehditlerin daha iyi anlaşılmasını sağlamak için tasarlanmıştır. Acil güvenlik olayı yanıt sorunlarını çözmek için kendi güvenlik olayı yanıt ekibinizle etkileşime geçin. Kendi güvenlik olayı yanıt ekibiniz yoksa ve Microsoft'un yardımını istiyorsanız [Premier Services Hub'da](/services-hub/) bir destek isteği oluşturun.
 
 İsteğe Bağlı Uzmanlar'a abone olmak için Microsoft temsilcinizle iletişime geçin.  Tüm ayrıntılar için bkz[. Microsoft Tehdit Uzmanları özelliklerini yapılandırma](./configure-microsoft-threat-experts.md).
 

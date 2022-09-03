@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
@@ -18,12 +18,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Microsoft 365 ortamınızdaki kişisel verileri yönetmek için Microsoft 365 bekletme etiketlerini ve ilkelerini kullanın.
-ms.openlocfilehash: 2643e183b9121e7e82a3237bde4d977315667008
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 4a9f094aa1555db87956e247f83c83f6c7eefa9f
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748791"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585300"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>Veri gizliliği düzenlemesine tabi olan bilgileri idare etme
 

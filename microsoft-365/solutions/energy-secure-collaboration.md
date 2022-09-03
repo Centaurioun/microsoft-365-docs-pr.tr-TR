@@ -9,16 +9,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 description: Microsoft 365, enerji kuruluşlarının modern bir işbirliği platformuna geçmesine yardımcı olurken, verilerin ve sistemlerin güvenli ve yönetmeliklerle uyumlu kalmasına yardımcı olur.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 03c4c3c6228239fa97d9d15abe47d02b35d2aee6
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
+ms.openlocfilehash: f0e4bdf1111dfd530a5cba71484ea90449ea73c6
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285075"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580497"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Enerji Sektörü için Temel Uyumluluk ve Güvenlik Konuları
 

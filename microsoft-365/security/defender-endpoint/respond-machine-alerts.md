@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender'da bir cihazda yanıt eylemleri gerçekleştirme
 description: Cihazlarda yalıtma, araştırma paketi toplama, etiketleri yönetme, av taraması çalıştırma ve uygulama yürütmeyi kısıtlama gibi yanıt eylemleri gerçekleştirin.
 keywords: yanıt verme, yalıtma, cihazı yalıtma, araştırma paketini toplama, işlem merkezi, etiketleri kısıtlama, yönetme, av tarama, uygulamayı kısıtlama
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 65799821ab4d6b2ad8076c68c9991074465d1435
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: 6534e43b63e1413d4e6ffba5511f07c5fa385644
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387231"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576285"
 ---
 # <a name="take-response-actions-on-a-device"></a>Cihazda yanıt eylemleri gerçekleştirin
 

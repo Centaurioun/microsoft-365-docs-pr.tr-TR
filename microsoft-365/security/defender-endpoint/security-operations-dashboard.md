@@ -2,7 +2,7 @@
 title: Microsoft Defender Güvenlik Merkezi Güvenlik işlemleri panosu
 description: Panoyu kullanarak risk altındaki cihazları belirleyin, hizmetin durumunu izleyin ve cihazlar ve uyarılar hakkındaki istatistikleri ve bilgileri görün.
 keywords: pano, uyarılar, yeni, devam ediyor, çözüldü, risk, risk altındaki cihazlar, bulaşmalar, raporlama, istatistikler, grafikler, grafikler, sistem durumu, etkin kötü amaçlı yazılım algılamaları, tehdit kategorisi, kategoriler, parola çalan, fidye yazılımı, yararlanma, tehdit, düşük önem düzeyi, etkin kötü amaçlı yazılım
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: aa55d3ab9fe082d00d957cfc404ccf2a6cf35301
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: 4215c196cd92506f672a84c86f0dd0d1114f6852
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331499"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584539"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender Güvenlik Merkezi Güvenlik işlemleri panosu
 

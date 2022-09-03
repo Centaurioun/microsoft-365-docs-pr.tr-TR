@@ -3,7 +3,7 @@ title: Saldırı yüzeyini azaltmayı (ASR) anlama ve kullanma
 ms.reviewer: ''
 description: Uç Nokta için Microsoft Defender saldırı yüzeyi azaltma özellikleri hakkında bilgi edinin.
 keywords: asr, saldırı yüzeyi azaltma, saldırı yüzeyi azaltma kuralları, Uç Nokta için Microsoft Defender, microsoft defender, virüsten koruma, av, windows defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,17 +14,17 @@ manager: dansimp
 audience: ITPro
 ms.custom: asr
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
-ms.openlocfilehash: bbed1512f5d51860f8f24ea29c2b0f73cbe7d9eb
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 08143912df1a8607b616cadfb4df0942a0054343
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787204"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582438"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Saldırı yüzeyi azaltma özelliklerini anlama ve kullanma
 
@@ -41,7 +41,7 @@ ms.locfileid: "66787204"
 - Windows
 
 > [!TIP]
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Saldırı yüzeyleri, kuruluşunuzun siber tehditlere ve saldırılara karşı savunmasız olduğu tüm yerlerdir. Uç Nokta için Defender, saldırı yüzeylerinizi azaltmaya yardımcı olacak çeşitli özellikler içerir. Saldırı yüzeyini azaltma hakkında daha fazla bilgi edinmek için aşağıdaki videoyu izleyin.
 
@@ -73,9 +73,9 @@ Ortamınızda saldırı yüzeyi azaltmayı yapılandırmak için şu adımları 
 
 9. Ağ güvenlik duvarınızı ayarlayın.
 
-   1. [Gelişmiş güvenlikle Windows Defender Güvenlik Duvarı](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) genel bakış elde edin.
-   2. Güvenlik duvarı ilkelerinizi nasıl tasarlamak istediğinize karar vermek için [Windows Defender Güvenlik Duvarı tasarım kılavuzunu](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) kullanın.
-   3. Kuruluşunuzun güvenlik duvarını gelişmiş güvenlikle ayarlamak için [Windows Defender Güvenlik Duvarı dağıtım kılavuzunu](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) kullanın.
+   1. [Gelişmiş güvenlik özelliklerine sahip Windows Defender Güvenlik Duvarı'na](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) genel bir bakış edinin.
+   2. Güvenlik duvarı ilkelerinizi nasıl tasarlamak istediğinize karar vermek için Windows Defender Güvenlik Duvarı [tasarım kılavuzunu](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) kullanın.
+   3. Kuruluşunuzun [güvenlik duvarını](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) gelişmiş güvenlikle ayarlamak için Windows Defender Güvenlik Duvarı dağıtım kılavuzunu kullanın.
 
 > [!TIP]
 > Çoğu durumda, saldırı yüzeyi azaltma özelliklerini yapılandırırken çeşitli yöntemler arasından seçim yapabilirsiniz:
@@ -244,30 +244,30 @@ Bu olaylara Windows Olay Görüntüleyicisi'nde erişebilirsiniz:
 
 |Özellik|Sağlayıcı/kaynak|Olay Kimliği|Açıklama|
 |---|---|:---:|---|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|1|ACG denetimi|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|2|ACG zorlama|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|3|Alt işlemlerin denetimine izin verme|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|4|Alt işlemler bloğuna izin verme|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|5|Düşük bütünlük görüntü denetimini engelleme|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|6|Düşük bütünlükte görüntüleri engelleme bloğu|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|7|Uzak görüntüleri engelleme denetimi|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|8|Uzak görüntüleri engelle bloğu|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|9|win32k sistem çağrıları denetimini devre dışı bırakma|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|10|win32k sistem çağrıları bloğunu devre dışı bırakma|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|11|Kod bütünlüğü koruma denetimi|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|12|Kod bütünlüğü koruma bloğu|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|13|EAF denetimi|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|14|EAF zorlama|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|15|EAF+ denetimi|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|16|EAF+ zorlama|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|17|IAF denetimi|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|18|IAF zorlama|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|19|ROP StackPivot denetimi|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|20|ROP StackPivot zorlama|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|21|ROP Çağıranı Denetimi denetleme|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|22|ROP CallerCheck zorlama|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|23|ROP SimExec denetimi|
-|Exploit Protection|Security-Mitigations (Çekirdek Modu/Kullanıcı Modu)|24|ROP SimExec zorlama|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|1|ACG denetimi|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|2|ACG zorlama|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|3|Alt işlemlerin denetimine izin verme|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|4|Alt işlemler bloğuna izin verme|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|5|Düşük bütünlük görüntülerin denetimini engelle|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|6|Düşük bütünlükte görüntüleri engelleme bloğu|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|7|Uzak görüntülerin denetimini engelle|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|8|Uzak görüntüleri engelle bloğu|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|9|win32k sistem çağrıları denetimini devre dışı bırak|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|10|win32k sistem çağrıları bloğunu devre dışı bırakma|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|11|Kod bütünlüğü koruyucusu denetimi|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|12|Kod bütünlüğü koruma bloğu|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|13|EAF denetimi|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|14|EAF zorlama|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|15|EAF+ denetimi|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|16|EAF+ zorlama|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|17|IAF denetimi|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|18|IAF zorlama|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|19|ROP StackPivot denetimi|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|20|ROP StackPivot zorlama|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|21|ROP Çağıranı Denetimi denetleme|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|22|ROP CallerCheck zorlama|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|23|ROP SimExec denetimi|
+|Exploit Protection|Güvenlik-Risk Azaltmaları (Çekirdek Modu/Kullanıcı Modu)|24|ROP SimExec zorlama|
 |Exploit Protection|WER-Diagnostics|5|CFG Bloğu|
 |Exploit Protection|Win32K (Operasyonel)|260|Güvenilmeyen Yazı Tipi|
 |Ağ koruması|Windows Defender (Operasyonel)|5007|Ayarlar değiştirildiğinde gerçekleşen olay|

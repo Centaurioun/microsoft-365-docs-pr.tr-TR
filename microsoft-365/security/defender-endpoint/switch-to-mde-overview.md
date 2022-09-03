@@ -2,7 +2,7 @@
 title: Microsoft dışı uç nokta korumasından Uç Nokta için Microsoft Defender geçiş yapma
 description: Uç nokta koruma çözümünüz için Microsoft Defender Virüsten Koruma'yı içeren Uç Nokta için Microsoft Defender geçiş yapın.
 keywords: geçiş, windows defender, gelişmiş uç nokta koruması, virüsten koruma, kötü amaçlı yazılımdan koruma, pasif mod, etkin mod
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +21,13 @@ ms.topic: overview
 ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.technology: mde
-ms.openlocfilehash: 5194200b942870f27f784b11c55cd8dbba2e816f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mde
+ms.openlocfilehash: d244fb96db686b34a201122f604f9b5aa1c2bd17
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67470695"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581568"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Microsoft dışı uç nokta korumasından Uç Nokta için Microsoft Defender geçiş yapma
 

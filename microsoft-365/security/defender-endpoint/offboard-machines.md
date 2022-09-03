@@ -2,7 +2,7 @@
 title: cihazları Uç Nokta için Microsoft Defender hizmetinden çıkarma
 description: Uç Nokta için Microsoft Defender hizmetinden Windows cihazlarını, sunucularını, Windows dışı cihazları ekleme
 keywords: çıkarma, Uç Nokta için Microsoft Defender çıkarma, çıkarma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 4cdd61ffaf91f6ddf88825f243abba38ffe78cd9
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: 2b43d818f1cc871c843ec6f1d29f770d96d06d45
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67323671"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580651"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>cihazları Uç Nokta için Microsoft Defender hizmetinden çıkarma
 

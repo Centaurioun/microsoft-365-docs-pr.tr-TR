@@ -5,7 +5,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
@@ -18,18 +18,18 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Güvenlik için benzersiz duyarlılık etiketine sahip bir ekip oluşturmayı öğrenin.
-ms.openlocfilehash: 15f155255518df38921288f68dcc9365703e4f2a
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 4596f8b5612472108a68466635a975a6761bf28a
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393120"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582526"
 ---
 # <a name="configure-a-team-with-security-isolation-by-using-a-unique-sensitivity-label"></a>Benzersiz bir duyarlılık etiketi kullanarak ekibi güvenlik yalıtımıyla yapılandırma
 
-Bu makalede, Microsoft Teams'da özel bir ekip yapılandırma ve dosyaları yalnızca ekip üyelerinin şifresini çözebilmesi için benzersiz bir duyarlılık etiketi kullanma önerileri ve adımları sağlanır.
+Bu makalede, Microsoft Teams'de özel bir ekip yapılandırma ve dosyaları yalnızca ekip üyelerinin şifresini çözebilmesi için benzersiz bir duyarlılık etiketi kullanmak için öneriler ve adımlar sağlanır.
 
-Özel erişimin ötesinde, bu makalede, bir ekip kanalının **Dosyalar** bölümünden erişebileceğiniz ilişkili SharePoint sitesinin, yüksek düzeyde düzenlenmiş verileri depolamak için gereken ek güvenlik için nasıl yapılandırıldığı açıklanır.
+Özel erişimin ötesinde, bu makalede, bir ekip kanalının **Dosyalar** bölümünden erişebileceğiniz ilişkili SharePoint sitesinin, yüksek oranda düzenlenmiş verileri depolamak için gereken ek güvenlik için nasıl yapılandırıldığı açıklanır.
 
 Güvenlik yalıtımı olan bir ekip için yapılandırmanın öğeleri şunlardır:
 
@@ -38,21 +38,21 @@ Güvenlik yalıtımı olan bir ekip için yapılandırmanın öğeleri şunlard�
   - Site üyelerinin siteyi başkalarıyla paylaşmasını engeller.
   - Site üyesi olmayanların siteye erişim istemesini engeller.
 - Bu takıma özel olarak şu duyarlılık etiketi:
-    - Yönetilmeyen cihazlardan SharePoint içeriğe erişimi engeller
+    - Yönetilmeyen cihazlardan SharePoint içeriğine erişimi engeller
     - Gereksinimlerinize bağlı olarak takıma konuk erişimine izin verir veya erişimi reddeder
     - Etiketin uygulandığı belgeleri şifreler
 
 > [!IMPORTANT]
-> Bu [makaledeki adımlara geçmeden önce Microsoft Teams, Office 365 grupları ve SharePoint sitelerdeki içeriği korumak için duyarlılık etiketlerini](../compliance/sensitivity-labels-teams-groups-sites.md) etkinleştirdiğinizden emin olun.
+> Bu [makaledeki adımlara geçmeden önce Microsoft Teams, Office 365 grupları ve SharePoint sitelerindeki içeriği korumak için duyarlılık etiketlerini](../compliance/sensitivity-labels-teams-groups-sites.md) etkinleştirdiğinizden emin olun.
 
 Dağıtım işlemine genel bir bakış için bu videoyu izleyin.
 <br>
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
-<a name="poster"></a>Bu senaryonun 1 sayfalık özeti için [güvenlik yalıtımlı Microsoft Teams posterini](../downloads/team-security-isolation-poster.pdf) inceleyin.
+<a name="poster"></a> Bu senaryonun 1 sayfalık özeti için [bkz. Güvenlik yalıtımlı Microsoft Teams posteri](../downloads/team-security-isolation-poster.pdf).
 
-[![güvenlik yalıtım posteri ile Microsoft Teams.](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
+[![Güvenlik yalıtım posteri içeren Microsoft Teams.](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 Ayrıca bu posteri [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) veya [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) biçimlerinde indirebilir ve mektup, yasal veya tabloid (11 x 17) boyutlu kağıda yazdırabilirsiniz.
 
@@ -62,9 +62,9 @@ Contoso Corporation'ın [bu örnek olay incelemesinde](contoso-team-for-top-secr
 
 ## <a name="initial-protections"></a>İlk korumalar
 
-Takıma ve onun temel SharePoint sitesine erişimi korumaya yardımcı olmak için aşağıdaki en iyi yöntemleri gözden geçirin:
+Takıma ve onun temel alınan SharePoint sitesine erişimin korunmasına yardımcı olmak için aşağıdaki en iyi yöntemleri gözden geçirin:
 - [Kimlik ve cihaz erişim ilkeleri](../security/office-365-security/identity-access-policies.md)
-- [çevrimiçi erişim ilkelerini SharePoint](../security/office-365-security/sharepoint-file-access-policies.md)
+- [SharePoint Online erişim ilkeleri](../security/office-365-security/sharepoint-file-access-policies.md)
 - [Temel koruma ile ekipleri dağıtma](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>Konuk paylaşımı
@@ -76,19 +76,19 @@ Konuklarla güvenli bir şekilde paylaşma hakkında ayrıntılı bilgi için a�
 - [Kuruluşunuzun dışındaki kişilerle paylaşım yaparken dosyaların yanlışlıkla açığa çıkmalarını sınırlayın](./share-limit-accidental-exposure.md)
 - [Güvenli bir konuk paylaşım ortamı oluşturma](./create-secure-guest-sharing-environment.md)
 
-Konuk paylaşımına izin vermek veya bunları engellemek için ekip için duyarlılık etiketinin ve ilişkili SharePoint sitesi için site düzeyinde paylaşım denetimlerinin bir bileşimini kullanırız. Her ikisi de daha sonra ele alınmalıdır.
+Konuk paylaşımına izin vermek veya bunları engellemek için, ekip için duyarlılık etiketinin ve ilişkili SharePoint sitesi için site düzeyinde paylaşım denetimlerinin bir bileşimini kullanırız ve her ikisi de daha sonra ele alınmalıdır.
 
 ## <a name="create-a-private-team"></a>Özel ekip oluşturma
 
 Bu ekip için özel olarak bir duyarlılık etiketi oluşturduğumuz için bir sonraki adım ekibi oluşturmaktır. Mevcut bir ekibiniz varsa bunu kullanabilirsiniz.
 
 Hassas bilgiler için ekip oluşturmak için
-1. Teams'da, uygulamanın sol tarafındaki **Teams'e** tıklayın ve ardından ekip listesinin en altında **Katıl'a veya ekip oluştur'a** tıklayın.
+1. Teams'de, uygulamanın sol tarafındaki **Teams'e** tıklayın ve ardından ekip listesinin en altında **Katıl'a veya ekip oluştur'a** tıklayın.
 2. **Ekip oluştur'a** tıklayın (ilk kart, sol üst köşe).
 3. **Sıfırdan ekip oluştur'u** seçin.
 4. **Duyarlılık** listesinde varsayılanı koruyun.
 5. **Gizlilik'in** altında **Özel'e** tıklayın.
-6. Takım için hassas projenizle ilgili bir ad yazın. Örneğin, **Satürn'Project**.
+6. Takım için hassas projenizle ilgili bir ad yazın. Örneğin, **Project Saturn**.
 7. **Oluştur'a** tıklayın.
 8. Takıma kullanıcı ekleyin ve **kapat'a** tıklayın.
 
@@ -107,7 +107,7 @@ Hassas bilgiler için ekip oluşturmak için
 
 Ekibi güvenlik yalıtımı için yapılandırmak için bu ekip için özel olarak oluşturulmuş bir duyarlılık etiketi kullanacağız. Bu etiket, konuk paylaşımını denetlemek ve yönetilmeyen cihazlardan erişimi engellemek için ekip düzeyinde kullanılır. Ayrıca yalnızca ekip sahiplerinin ve üyelerin açabilmesi için ekipteki tek tek dosyaları sınıflandırmak ve şifrelemek için de kullanılabilir.
 
-Şifrelenmiş belgeleri görüntüleyebilmesi ancak düzenlememesi gereken bir iç iş ortağınız veya paydaş grubunuz varsa, bunları etikete yalnızca görüntüleme izinleriyle ekleyebilirsiniz. Daha sonra bu kişileri okuyucu izinleriyle ekibin SharePoint sitesine ekleyebilirsiniz. Bu kişiler, belgelerin tutulduğu siteye salt okunur erişime sahip olur ancak ekibin kendisine erişemez.
+Şifrelenmiş belgeleri görüntüleyebilmesi ancak düzenlememesi gereken bir iç iş ortağınız veya paydaş grubunuz varsa, bunları etikete yalnızca görüntüleme izinleriyle ekleyebilirsiniz. Daha sonra bu kişileri Okuyucu izinleriyle ekibin SharePoint sitesine ekleyebilirsiniz. Bu kişiler, belgelerin tutulduğu siteye salt okunur erişime sahip olur, ancak ekibin kendisine erişemez.
 
 Duyarlılık etiketi oluşturmak için
 
@@ -130,9 +130,9 @@ Duyarlılık etiketi oluşturmak için
 14. *Dosyalar ve e-postalar için otomatik etiketleme** sayfasında **İleri'ye** tıklayın.
 15. **Gruplar ve siteler için koruma ayarlarını tanımla** sayfasında **Gizlilik ve dış kullanıcı erişim ayarları ile** **Cihaz erişimi ve dış paylaşım ayarları'nı seçin ve** **İleri'ye** tıklayın.
 16. **Gizlilik ve dış kullanıcı erişimi ayarlarını tanımla** sayfasındaki **Gizlilik'in** altında **Özel** seçeneğini belirleyin.
-17. Konuk erişimine izin vermek istiyorsanız **Dış kullanıcı erişimi'nin** altında **Grup sahiplerinin kuruluşunuz dışındaki kişileri gruba konuk olarak eklemesine izin Microsoft 365'ı** seçin.
+17. Konuk erişimine izin vermek istiyorsanız, **Dış kullanıcı erişimi'nin** altında **Microsoft 365 Grubu sahiplerinin kuruluşunuz dışındaki kişileri gruba konuk olarak eklemesine izin ver'i** seçin.
 18. **İleri**'ye tıklayın.
-19. **Dış paylaşım ve cihaz erişim ayarlarını tanımla** sayfasında **Etiketli SharePoint sitelerden dış paylaşımı denetle'yi** seçin.
+19. **Dış paylaşım ve cihaz erişim ayarlarını tanımla** sayfasında, **Etiketli SharePoint sitelerinden dış paylaşımı denetle'yi** seçin.
 20. **İçerik paylaşılabilir** altında, konuk erişimine izin verirseniz **Yeni ve mevcut konuklar'ı** veya **Yalnızca kuruluşunuzdaki kişiler** (paylaşmıyorsanız) seçeneğini belirleyin.
 21. **Yönetilmeyen cihazlardan erişim'in** altında **Erişimi engelle'yi** seçin.
 22. **İleri**'ye tıklayın.
@@ -158,7 +158,7 @@ Duyarlılık etiketi yayımlamak için:
 
 ## <a name="apply-the-label-to-the-team"></a>Etiketi takıma uygulama
 
-Etiket yayımlandıktan sonra, konuk paylaşım ve yönetilen cihaz ayarlarının etkili olması için etiketi takıma uygulamanız gerekir. Bu işlem SharePoint yönetim merkezinde yapılır. Etiketin yayımlandıktan sonra kullanılabilir duruma gelmesi biraz zaman alabilir.
+Etiket yayımlandıktan sonra, konuk paylaşım ve yönetilen cihaz ayarlarının etkili olması için etiketi takıma uygulamanız gerekir. Bu, SharePoint yönetim merkezinde yapılır. Etiketin yayımlandıktan sonra kullanılabilir duruma gelmesi biraz zaman alabilir.
 
 Duyarlılık etiketini uygulamak için
 
@@ -169,17 +169,17 @@ Duyarlılık etiketini uygulamak için
 
 ## <a name="sharepoint-settings"></a>SharePoint ayarları
 
-SharePoint'da yapılması gereken üç adım vardır:
+SharePoint'te yapılması gereken üç adım vardır:
 
-- SharePoint yönetim merkezinde sitenin konuk paylaşım ayarlarını, etiketi oluştururken seçtiklerinizle eşleşecek şekilde güncelleştirin ve varsayılan paylaşım bağlantısını *Mevcut erişimi olan kişiler'e* güncelleştirin.
+- SharePoint yönetim merkezinde sitenin konuk paylaşım ayarlarını, etiketi oluştururken seçtiğinizle eşleşecek şekilde güncelleştirin ve varsayılan paylaşım bağlantısını *mevcut erişimle Kişiler* olarak güncelleştirin.
 - Üyelerin dosya, klasör veya site paylaşmasını önlemek ve erişim isteklerini kapatmak için sitedeki site paylaşım ayarlarını güncelleştirin.
-- Etikete Görüntüleyici izinleriyle kişi veya gruplar eklediyseniz, bunları Okuma izinleriyle SharePoint sitesine ekleyebilirsiniz.
+- Etikete Görüntüleyici izinlerine sahip kişiler veya gruplar eklediyseniz, bunları Okuma izinleriyle SharePoint sitesine ekleyebilirsiniz.
 
-### <a name="sharepoint-guest-settings"></a>Konuk ayarlarını SharePoint
+### <a name="sharepoint-guest-settings"></a>SharePoint konuk ayarları
 
 Etiketi oluştururken seçtiğiniz konuk paylaşım ayarı (yalnızca ekip üyeliğini etkiler) aşağıdaki gibi ilişkili SharePoint sitesinin konuk paylaşım ayarlarıyla eşleşmelidir:
 
-|Etiket ayarı|site ayarını SharePoint|
+|Etiket ayarı|SharePoint site ayarı|
 |:------------|:----------------------|
 |**Office 365 grup sahiplerinin seçilen gruba kuruluş dışındaki kişileri eklemesine izin ver**|**Yeni ve mevcut konuklar** (yeni ekipler için varsayılan)|
 |**Office 365 grup sahiplerinin seçili olmayan gruba kuruluş dışındaki kişileri eklemesine izin verin**|**Yalnızca kuruluşunuzdaki kişiler**|
@@ -192,7 +192,7 @@ Site ayarlarını güncelleştirmek için
 1. Ekiple ilişkili siteyi seçin.
 1. **İlkeler** sekmesinde, **Dış paylaşım'ın** altında **Düzenle'yi** seçin.
 1. Hassas etiketi oluştururken konuk paylaşımına izin verdiyseniz **Yeni ve mevcut konukların** seçili olduğundan emin olun. Etiketi oluştururken paylaşıma izin vermediyseniz **Yalnızca kuruluşunuzdaki kişiler'i** seçin.
-1. Varsayılan paylaşım bağlantı türü'nün altında **Kuruluş düzeyi ayarıyla aynı** onay kutusunu temizleyin ve **Mevcut erişimi olan kişiler'i** seçin.
+1. Varsayılan paylaşım bağlantı türü'nün altında **Kuruluş düzeyi ayarıyla aynı** onay kutusunu temizleyin ve **var olan erişimle Kişiler'yi** seçin.
 1. **Kaydet**'i seçin.
 
 #### <a name="private-channels"></a>Özel kanallar
@@ -206,19 +206,19 @@ Ekibinizle özel kanallar kullanmayı planlamıyorsanız, ekip üyelerinin ekip 
 
 ### <a name="site-sharing-settings"></a>Site paylaşım ayarları
 
-SharePoint sitesinin ekip üyesi olmayan kişilerle paylaşılmamasını sağlamaya yardımcı olmak için bu tür paylaşımları sahiplerle sınırlandırıyoruz. Ayrıca dosya ve klasörlerin paylaşımını ekip sahiplerine de sınırlandırıyoruz. Bu, ekip dışındaki biriyle her dosya paylaşıldığında sahiplerin farkında olmasını sağlamaya yardımcı olur.
+SharePoint sitesinin ekip üyesi olmayan kişilerle paylaşılmamasını sağlamaya yardımcı olmak için, bu tür paylaşımı sahiplerle sınırlandırıyoruz. Ayrıca dosya ve klasörlerin paylaşımını ekip sahiplerine de sınırlandırıyoruz. Bu, ekip dışındaki biriyle her dosya paylaşıldığında sahiplerin farkında olmasını sağlamaya yardımcı olur.
 
 Yalnızca sahipler için site paylaşımını yapılandırmak için
-1. Teams'da güncelleştirmek istediğiniz ekibin **Genel** sekmesine gidin.
+1. Teams'de, güncelleştirmek istediğiniz ekibin **Genel** sekmesine gidin.
 2. Ekibin araç çubuğunda **Dosyalar'a** tıklayın.
-3. Üç noktaya tıklayın ve ardından **SharePoint aç'a** tıklayın.
+3. Üç noktaya ve ardından **SharePoint'te Aç'a** tıklayın.
 4. Temel alınan SharePoint sitesinin araç çubuğunda ayarlar simgesine ve ardından **Site izinleri'ne** tıklayın.
-5. Site izinleri bölmesinde, **Paylaşım Ayarlar** altında **Paylaşım ayarlarını değiştir'e** tıklayın.
+5. Site izinleri bölmesinde, **Paylaşım Ayarları'nın** altında **Paylaşım ayarlarını değiştir'e** tıklayın.
 6. **Paylaşım izinleri'nin** altında **Yalnızca site sahipleri dosyaları, klasörleri ve siteyi paylaşabilir'i seçin ve** **Kaydet'e** tıklayın.
 
 ### <a name="custom-site-permissions"></a>Özel site izinleri
 
-Duyarlılık etiketine Görüntüleyici izinlerine sahip kişileri eklediyseniz, dosyalara kolayca erişebilmeleri için bunları Okuma erişimi ile SharePoint sitesine ekleyebilirsiniz.
+Duyarlılık etiketine Görüntüleyici izinlerine sahip kişileri eklediyseniz, dosyalara kolayca erişebilmeleri için okuma erişimiyle bunları SharePoint sitesine ekleyebilirsiniz.
 
 Siteye kullanıcı eklemek için
 1. Sitede ayarlar simgesine ve ardından **Site izinleri'ne** tıklayın.
@@ -263,7 +263,7 @@ Eğitimden sonraki haftalarda:
 
 - Ekip üyesi geri bildirimlerini hızla ele alın ve ilkeler ile yapılandırmalar için ince ayar yapın.
 - Ekip için kullanımı analiz edin ve kullanım beklentileriyle karşılaştırın.
-- Yüksek oranda düzenlenmiş dosyaların duyarlılık etiketiyle düzgün şekilde etiketlendiğini doğrulayın. (SharePoint'da bir klasörü görüntüleyerek ve **Sütun** **ekle'nin** **Sütunları göster/gizle** seçeneği aracılığıyla Duyarlılık sütununu ekleyerek hangi dosyaların atanmış olduğunu görebilirsiniz.
+- Yüksek oranda düzenlenmiş dosyaların duyarlılık etiketiyle düzgün şekilde etiketlendiğini doğrulayın. (SharePoint'te bir klasörü görüntüleyerek ve **Sütun** **ekle'nin** **Sütunları göster/gizle** seçeneği aracılığıyla Duyarlılık sütununu ekleyerek hangi dosyaların atanmış olduğunu görebilirsiniz.
 
 Kullanıcılarınızı gerektiği gibi yeniden eğitin.
 

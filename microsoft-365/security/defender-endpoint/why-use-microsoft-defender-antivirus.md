@@ -2,7 +2,7 @@
 title: Microsoft Defender Virüsten Koruma'nın neden Uç Nokta için Microsoft Defender ile birlikte kullanılması gerekir?
 description: En iyi sonuçları elde için Microsoft Defender Virüsten Koruma'yı diğer Microsoft tekliflerinizle birlikte kullanın.
 keywords: windows defender, virüsten koruma, üçüncü taraf av
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,14 +13,14 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 61a70535cc875d75432fb63730cccdb821bfdb99
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c5f22aa22b81aca5dc4be86e9386b153ad729bcd
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67330399"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577617"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-microsoft-defender-for-endpoint"></a>Birlikte daha iyi: Microsoft Defender Virüsten Koruma ve Uç Nokta için Microsoft Defender
 

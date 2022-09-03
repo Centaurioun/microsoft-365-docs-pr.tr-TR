@@ -1,8 +1,8 @@
 ---
-title: Uç nokta olayı için Microsoft Defender'ı stream
-description: Etkinlik Hub'ları veya Azure depolama hesabına Gelişmiş Av etkinliklerini akışı için Uç nokta için Microsoft Defender'ı yapılandırmayı öğrenin
-keywords: ham veri dışarı aktarma, akış API'si, API, Etkinlik hub'ları, Azure depolama, depolama hesabı, Gelişmiş Koruma, ham veri paylaşımı
-ms.prod: m365-security
+title: Stream Uç Nokta için Microsoft Defender olayı
+description: Gelişmiş Tehdit Avcılığı olaylarını Event Hubs'a veya Azure depolama hesabına akışla aktaracak Uç Nokta için Microsoft Defender yapılandırmayı öğrenin
+keywords: ham veri dışarı aktarma, akış API'si, API, Olay hub'ları, Azure depolama, depolama hesabı, Gelişmiş Tehdit Avcılığı, ham veri paylaşımı
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,27 +13,27 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 94a815a6fc734c8e8e310a17f2e73931f4ffab5c
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: eab403c259264879e2207e1acd68131ee5f89957
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996494"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585608"
 ---
 # <a name="raw-data-streaming-api"></a>Ham Veri Akışı API'si
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
-## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Etkinlik Hub'ları ve/veya Azure depolama hesabına Gelişmiş Av etkinliklerini akışla izle
+## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Event Hubs'a ve/veya Azure depolama hesabına Gelişmiş Tehdit Avcılığı olaylarını akışla aktarma
 
-Uç Nokta için Microsoft Defender, Etkinlik Hub'ları [](../defender/advanced-hunting-overview.md) ve/veya Azure [](/azure/event-hubs/) depolama hesabına Gelişmiş Avla aracılığıyla kullanılabilen [akış olaylarını destekler](/azure/storage/common/storage-account-overview).
+Uç Nokta için Microsoft Defender, [Event Hubs](/azure/event-hubs/) ve/veya [Azure depolama hesabına](/azure/storage/common/storage-account-overview) [Gelişmiş Tehdit Avcılığı](../defender/advanced-hunting-overview.md) aracılığıyla sağlanan akış olaylarını destekler.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r4ga]
 
@@ -41,11 +41,11 @@ Uç Nokta için Microsoft Defender, Etkinlik Hub'ları [](../defender/advanced-h
 
 Konu|Açıklama
 :---|:---
-[Uç nokta olaylarının Microsoft Defender'ı Azure Olay Hub'lara akışı](raw-data-export-event-hub.md)|Kiracınıza akış API'sini etkinleştirme hakkında bilgi edinin ve Gelişmiş Av'ı Etkinlik Hub'lara akışla akışı yapmak için Uç Nokta için [Defender'ı](advanced-hunting-overview.md) yapılandırmayı öğrenin.
-[Azure depolama hesabınıza Uç nokta olayları için Stream Defender](raw-data-export-storage.md)|Kiracınıza akış API'sini etkinleştirme hakkında bilgi edinin ve Azure depolama hesabınıza Gelişmiş Ekinlik [](advanced-hunting-overview.md) akışı yapmak için Uç Nokta için Defender'ı yapılandırın.
+[Uç Nokta için Microsoft Defender olaylarını Azure Event Hubs akışla aktar](raw-data-export-event-hub.md)|Kiracınızda akış API'sini etkinleştirme hakkında bilgi edinin ve Uç Nokta için Defender'ı [Gelişmiş Avcılık'ı](advanced-hunting-overview.md) Event Hubs'a akışla aktaracak şekilde yapılandırın.
+[Uç Nokta için Stream Defender olaylarını Azure depolama hesabınıza gönderme](raw-data-export-storage.md)|Kiracınızda akış API'sini etkinleştirme hakkında bilgi edinin ve Uç Nokta için Defender'ı [Gelişmiş Tehdit Avcılığı'nı](advanced-hunting-overview.md) Azure depolama hesabınıza akışla aktaracak şekilde yapılandırın.
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Gelişmiş Ava Genel Bakış](advanced-hunting-overview.md)
-- [Azure Olay Hub'ları belgeleri](/azure/event-hubs/)
+- [Gelişmiş Avcılık'a Genel Bakış](advanced-hunting-overview.md)
+- [Azure Event Hubs belgeleri](/azure/event-hubs/)
 - [Azure Depolama Hesabı belgeleri](/azure/storage/common/storage-account-overview)

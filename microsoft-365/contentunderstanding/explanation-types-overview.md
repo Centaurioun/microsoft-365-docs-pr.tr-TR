@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da tümcecik listesi, normal ifade ve yakınlık açıklaması türleri hakkında daha fazla bilgi edinin.
-ms.openlocfilehash: ae31ee3e4d9550c54f884360f3beea960db47b20
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: acf691561e2935d982786fb60a0fe8cb4b410f42
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824794"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580958"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da açıklama türleri
 
@@ -48,9 +48,9 @@ Büyük/küçük harf duyarlılığı etiketinizi tanımlamada bir gereksinimse,
 
 *Telefon numarası* örneği için, modelin tanımladığını tüm Tıbbi Referans belgelerinden başvuran her doktorun telefon numarasını ayıklarsınız. Açıklamayı oluşturduğunuzda, olası varyasyonları yakalayabilmeniz için belgenizde telefon numarasının görüntüleyebileceği farklı biçimleri yazın.
 
-![Telefon sayı tümceciği desenleri.](../media/content-understanding/pattern-list.png)
+![Telefon numarası tümcecik desenleri.](../media/content-understanding/pattern-list.png)
 
-Bu örnekte **, Gelişmiş Ayarlar** tümcecik listenizde kullanılan her "0" değerinin 0 ile 9 arasında herhangi bir rakam olduğunu tanımak için **0-9** arasında herhangi bir basamak onay kutusunu seçin.
+Bu örnekte **Gelişmiş Ayarlar'da** **0-9 arasında herhangi bir basamak** onay kutusunu seçerek tümcecik listenizde kullanılan her "0" değerin 0 ile 9 arasında herhangi bir rakam olduğunu belirleyin.
 
 ![0-9 arası herhangi bir rakam.](../media/content-understanding/digit-identity.png)
 
@@ -111,9 +111,9 @@ Normal ifade açıklama türü eklemek için:
 
 2. **Normal ifade** metin kutusuna bir ifade yazabilir veya **Şablondan normal ifade ekle'yi** seçebilirsiniz.
 
-   Şablon kullanarak normal ifade eklediğinizde, ad ve normal ifade otomatik olarak metin kutusuna eklenir. Örneğin, **E-posta adresi** şablonunu seçerseniz, **Açıklama oluştur** paneli doldurulur.
+   Şablon kullanarak normal ifade eklediğinizde, ad ve normal ifade otomatik olarak metin kutusuna eklenir. Örneğin, **Email adres** şablonunu seçerseniz Açıklama **oluştur** paneli doldurulur.
 
-   ![E-posta adresi şablonunun uygulandığı Açıklama oluştur panelini gösteren ekran görüntüsü.](../media/content-understanding/create-regular-expression-email.png)
+   ![Email adres şablonunun uygulandığı Açıklama oluştur panelini gösteren ekran görüntüsü.](../media/content-understanding/create-regular-expression-email.png)
 
 ### <a name="limitations"></a>Sınırlamalar
 

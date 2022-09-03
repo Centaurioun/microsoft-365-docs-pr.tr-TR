@@ -1,56 +1,56 @@
 ---
-title: Microsoft 365 mimarisi diyagramı şablonları ve simgeleri
-description: Bu Microsoft 365, kalıplar ve Visio içinde diyagramlar oluşturabilirsiniz.
+title: Microsoft 365 mimari diyagramı şablonları ve simgeleri
+description: Visio'da bu simgeler, kalıplar ve şablonlarla Microsoft 365 mimari diyagramları oluşturun.
 ms.author: samanro
 author: samanro
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 8fd6815b94e44094ec01d405c22f33232f101503
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 04ffecec64a415c22834c6be43f6ca8fc8bc3559
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62999046"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585828"
 ---
-# <a name="microsoft-365-architecture-templates-and-icons"></a>Microsoft 365 mimarisi şablonları ve simgeleri
+# <a name="microsoft-365-architecture-templates-and-icons"></a>Microsoft 365 mimari şablonları ve simgeleri
 
-İş ortaklarımıza ve müşterilerimizin yeni çözümler tasarlamalarına ve tasarlamalarına yardımcı olmak önemlidir. Kılavuzlarımıza dahil edilenlere benzer mimari diyagramları, tasarım kararlarını ve bir ortamdaki bileşenler arasındaki ilişkilerin iletişim kurmasına yardımcı olabilir. Bir dizi simgeyi ve simgeyi, Visio şablonlarıyla birlikte, ürünümüze göre mimari diyagramları oluşturmak için kullanıyoruz ve sonraki çözümünüz için özel bir mimari diyagramı oluşturmanıza yardımcı olmak için bu araçları burada sağlıyoruz.
+İş ortaklarımıza ve müşterilerimize yeni çözümler tasarlama ve tasarlama konusunda yardımcı olmak önemlidir. Kılavuzumuza dahil edilenler gibi mimari diyagramları, tasarım kararlarının ve bir ortamdaki bileşenler arasındaki ilişkilerin iletişim kurmalarına yardımcı olabilir. Ürünlediğimiz mimari diyagramlarını oluşturmak için Visio şablonlarıyla birlikte bir dizi simge ve simge kullanıyoruz ve burada bir sonraki çözümünüz için özel bir mimari diyagramı oluşturmanıza yardımcı olacak bu araçları sağlıyoruz.
 
-Aşağıdaki sayfalarda bulunan indirilebilir dosyalarda bu simgeleri, simgeleri ve şablonları iş üzerinde görebilirsiniz:
+Aşağıdaki sayfalarda bulunan indirilebilir dosyalarda bu simgeleri, simgeleri ve şablonları iş başında görebilirsiniz:
 
 - [Üretkenlik çizimleri](productivity-illustrations.md)
 - [Microsoft bulut mimarisi modelleri](cloud-architecture-models.md)
 
-## <a name="terms-and-download"></a>Hükümler ve indirme
+## <a name="terms-and-download"></a>Koşullar ve indirme
 
-Microsoft bu simgelerin mimari diyagramlarında, eğitim malzemelerinde veya belgelerde kullanımına izin almaktadır. Simgeleri Microsoft tarafından açık bir izin verilmedikçe yalnızca izin verilen kullanım için kopyalayıp dağıtabilirsiniz ve görüntüebilirsiniz. Microsoft reserves all other rights.
+Microsoft bu simgelerin mimari diyagramlarda, eğitim malzemelerinde veya belgelerde kullanılmasına izin verir. Microsoft tarafından açık izin verilmediği sürece simgeleri yalnızca izin verilen kullanım için kopyalayabilir, dağıtabilir ve görüntüleyebilirsiniz. Microsoft reserves all other rights.
 
 
  > [!div class="button"]
  > [SVG ve PNG simgelerini indirme](https://go.microsoft.com/fwlink/?linkid=869455)
 
  > [!div class="button"]
- > [Diğer Visio ve kalıpları indirme](https://go.microsoft.com/fwlink/?linkid=2056186)
+ > [Visio şablonlarını ve kalıplarını indirme](https://go.microsoft.com/fwlink/?linkid=2056186)
 
 ## <a name="example-architecture-diagrams"></a>Örnek mimari diyagramları
 
 Aşağıdaki örnekler gibi diyagramlar oluşturmak için bu simgeleri ve şablonları kullanabilirsiniz:
 
-1. Aşağıdakilere örnek arama mimarisi SharePoint:
+1. SharePoint için örnek arama mimarisi diyagramı:
 
-    ![Daha fazla bilgi için örnek SharePoint.](../media/configure-search-for-multi-geo-image1-1.png)
+    ![SharePoint için örnek arama mimarisi.](../media/configure-search-for-multi-geo-image1-1.png)
 
-2. Teams yaşam döngüsü mimarisi diyagramı:
+2. Teams bekletme yaşam döngüsü mimarisi diyagramı:
 
-    ![Teams tutma yaşam döngüsüne göre devam edin.](../media/TeamsRetentionLifecycle.png)
+    ![Teams saklama yaşam döngüsü.](../media/TeamsRetentionLifecycle.png)
 
-## <a name="more-icon-sets-from-microsoft"></a>Microsoft'tan diğer simge kümeleri
+## <a name="more-icon-sets-from-microsoft"></a>Microsoft'tan daha fazla simge kümesi
 
-- [Azure mimari simgeleri](/azure/architecture/icons/)
+- [Azure mimarisi simgeleri](/azure/architecture/icons/)
 - [Dynamics 365 mimari simgeleri](/dynamics365/get-started/icons)
 - [Microsoft Power Platform simgeleri](/power-platform/guidance/icons)

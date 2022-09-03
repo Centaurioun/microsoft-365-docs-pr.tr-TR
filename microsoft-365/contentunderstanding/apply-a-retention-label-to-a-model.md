@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: SharePoint Syntex'da bir modele bekletme etiketi uygulamayı öğrenin.
-ms.openlocfilehash: 362b370fa34193e66802e9b0d2c5788785ea92c5
-ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
+ms.openlocfilehash: 2176826634b1f682f86989d418b251f9706100ed
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65349796"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585674"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>SharePoint Syntex'da modele bekletme etiketi uygulama
 
@@ -128,8 +128,8 @@ Sahip olduğunuz mevcut form işleme modeline, modelin uygulandığı belge kita
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflandırıcı oluşturma](create-a-classifier.md)
+[Sınıflandırıcı oluştur](create-a-classifier.md)
 
-[Ayıklayıcı oluşturma](create-an-extractor.md)
+[Ayıklayıcı oluştur](create-an-extractor.md)
 
 [Document Understanding'e genel bakış](document-understanding-overview.md)

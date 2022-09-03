@@ -1,11 +1,11 @@
 ---
-title: Adım 3. Kurumsal kiracılar için Microsoft 365 kimlik
+title: Adım 3. Kurumsal kiracılar için Microsoft 365'inizin kimliği
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -15,99 +15,99 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - Ent_Solutions
-description: Kiracınız için doğru kimlik modelini Microsoft 365 güçlü kullanıcı oturum açmalarını zorunlu kılın.
-ms.openlocfilehash: cb57b62f18afcd669b3dd84c25096e5dd72b25d0
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+description: Microsoft 365 kiracılarınız için doğru kimlik modelini dağıtın ve güçlü kullanıcı oturum açma işlemleri uygulayın.
+ms.openlocfilehash: 2b4474e657f2e16fe3315e531724e574b3be28ef
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "63027588"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579522"
 ---
-# <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>Adım 3. Kurumsal kiracılar için Microsoft 365 kimlik
+# <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>Adım 3. Kurumsal kiracılar için Microsoft 365'inizin kimliği
 
-Sizin Microsoft 365 kiracınız, oturum Azure Active Directory kimliklerini ve kimlik doğrulamasını yönetecek bir Kullanıcı Adı (Azure AD) kiracısı içerir. Kimlik altyapınızı doğru şekilde yapılandırmak, kullanıcıların erişimini Microsoft 365 izinlerini yönetme açısından çok önemlidir.
+Microsoft 365 kiracınız, oturum açma işlemleri için kimlikleri ve kimlik doğrulamasını yönetmek için bir Azure Active Directory (Azure AD) kiracısı içerir. Kimlik altyapınızın doğru yapılandırılmasını sağlamak, Kuruluşunuz için Microsoft 365 kullanıcı erişimini ve izinlerini yönetmek için çok önemlidir.
 
-## <a name="cloud-only-vs-hybrid"></a>Yalnızca bulut ve karma karşılaştırması
+## <a name="cloud-only-vs-hybrid"></a>Yalnızca bulut ile hibrit karşılaştırması
 
-İki tür kimlik modeli ve bunların en uygun ve avantajları aşağıdaki gibidir.
+İki tür kimlik modeli ve bunların en uygun ve avantajlarını aşağıda bulabilirsiniz.
 
 
-| Model | Açıklama | Kullanıcı Microsoft 365 kimlik doğrulaması nasıl olur? | En iyi | En büyük avantaj |
+| Modeli | Açıklama | Microsoft 365 kullanıcı kimlik bilgilerini nasıl doğrular? | Için en iyi | En büyük avantaj |
 |:-------|:-----|:-----|:-----|:-----|
-| Yalnızca bulut | Kullanıcı hesabı, kiracınız için yalnızca Azure AD Microsoft 365 vardır. | Kiracınız için Azure AD kiracısı Microsoft 365 kimlik doğrulamasını bulut kimliği hesabıyla gerçekleştirir. | Şirket içi Active Directory'si olmayan veya buna gerek olmayan kuruluşlar. | Kullanımı kolaydır. Fazladan dizin aracı veya sunucu gerekmez. |
-| Karma |  Kullanıcı hesabı şirket içi Active Directory Etki Alanı Hizmetleri'niz (AD DS) içinde yer alır ve bu hesabın bir kopyası da etki alanı kiracınız için Azure AD Microsoft 365 bulunur. Azure AD Bağlan, Azure AD kiracınıza AD DS değişikliklerini eşitlemek için şirket içi bir sunucuda çalışır. Azure AD'de kullanıcı hesabı, zaten karma olarak karma olarak karma bir AD DS kullanıcı hesabı parolasının karma sürümünü de içerebilir. | Kiracınız için Azure AD kiracısı Microsoft 365 kimlik doğrulama işlemini ele alır veya kullanıcıyı başka bir kimlik sağlayıcısına yeniden yönlendirebilir. | AD DS veya başka bir kimlik sağlayıcısı kullanan kuruluşlar. | Kullanıcılar, şirket içi veya bulut tabanlı kaynaklara erişirken aynı kimlik bilgilerini kullanabilir. |
+| Yalnızca bulut | Kullanıcı hesabı yalnızca Microsoft 365 kiracınızın Azure AD kiracısında bulunur. | Microsoft 365 kiracınızın Azure AD kiracısı, kimlik doğrulamasını bulut kimliği hesabıyla gerçekleştirir. | şirket içi Active Directory olmayan veya ihtiyacı olmayan kuruluşlar. | Kullanımı basit. Ek dizin araçları veya sunucuları gerekmez. |
+| Karma |  Kullanıcı hesabı şirket içi Active Directory Etki Alanı Hizmetleri'nizde (AD DS) var ve bir kopyası da Microsoft 365 kiracınızın Azure AD kiracısında yer alır. Azure AD Connect, AD DS değişikliklerini Azure AD kiracınızla eşitlemek için şirket içi sunucuda çalışır. Azure AD'daki kullanıcı hesabı, zaten karma ad DS kullanıcı hesabı parolasının karma sürümünü de içerebilir. | Microsoft 365 kiracınızın Azure AD kiracısı, kimlik doğrulama işlemini işler veya kullanıcıyı başka bir kimlik sağlayıcısına yönlendirir. | AD DS veya başka bir kimlik sağlayıcısı kullanan kuruluşlar. | Kullanıcılar şirket içi veya bulut tabanlı kaynaklara erişirken aynı kimlik bilgilerini kullanabilir. |
 ||||||
 
-Burada, yalnızca bulut kimliğinin temel bileşenleri ve bilgileri ve bilgileri ve hizmetleri ve diğer bileşenleri ve daha sonralarını açıklarız.
+Burada yalnızca bulut kimliğinin temel bileşenleri yer alır.
 
 ![Yalnızca bulut kimliğinin temel bileşenleri.](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-Bu çizimde, şirket içi ve uzak kullanıcılar kendi kiracılarının Azure AD kiracısı hesaplarıyla oturum Microsoft 365 vardır.
+Bu çizimde, şirket içi ve uzak kullanıcılar Microsoft 365 kiracılarının Azure AD kiracısında hesaplarla oturum açar.
 
-Karma kimliğin temel bileşenleri aşağıdaki gibidir.
+Karma kimliğin temel bileşenleri aşağıdadır.
 
 ![Karma kimliğin temel bileşenleri.](../media/about-microsoft-365-identity/hybrid-identity.png)
 
-Bu çizimde, şirket içi ve uzak kullanıcılar, şirket içi AD DS'lerinden kopyalanmış olan Azure AD kiracısı hesaplarıyla kendi Microsoft 365 kiracılarında oturum gösterir.
+Bu çizimde, şirket içi ve uzak kullanıcılar, şirket içi AD DS'lerinden kopyalanmış Azure AD kiracıdaki hesaplarla Microsoft 365 kiracılarında oturum açar.
 
 ## <a name="synchronizing-your-on-premises-ad-ds"></a>Şirket içi AD DS'nizi eşitleme
 
-İş gereksinimlerinize ve teknik gereksinimlerinize bağlı olarak, karma kimlik modeli ve dizin eşitlemesi, kurumsal müşterileri benimsemek için en yaygın Microsoft 365. Dizin eşitlemesi, AD DS'niz içinde kimlikleri yönetmenize olanak sağlar ve kullanıcı hesapları, gruplar ve kişilerde yapılan tüm güncelleştirmeler, kullanıcı ad kiracınıza bağlı Azure AD kiracıyla Microsoft 365 eşitlenir.
+İş gereksinimlerinize ve teknik gereksinimlerinize bağlı olarak karma kimlik modeli ve dizin eşitlemesi, Microsoft 365'i benimseyen kurumsal müşteriler için en yaygın seçenektir. Dizin eşitleme, AD DS'nizdeki kimlikleri yönetmenize olanak tanır ve kullanıcı hesaplarına, gruplara ve kişilere yönelik tüm güncelleştirmeler Microsoft 365 kiracınızın Azure AD kiracısı ile eşitlenir.
 
 > [!NOTE]
-> AD DS kullanıcı hesapları ilk kez eşitlenirken, bu hesaplara otomatik olarak Microsoft 365 lisansı atanamaz ve e-Microsoft 365 hizmetlere erişamaz. Öncelikle onlara bir kullanım konumu atamalısiniz. Ardından, bu kullanıcı hesaplarına tek tek veya grup üyeliği aracılığıyla dinamik olarak lisans attayabilirsiniz.
+> AD DS kullanıcı hesapları ilk kez eşitlendiğinde, bunlara otomatik olarak bir Microsoft 365 lisansı atanamaz ve e-posta gibi Microsoft 365 hizmetlerine erişemez. Önce onlara bir kullanım konumu atamanız gerekir. Ardından, grup üyeliği aracılığıyla bu kullanıcı hesaplarına tek tek veya dinamik olarak bir lisans atayın.
 
-Karma kimlik modelini kullanırken iki kimlik doğrulama türü şu şekildedir.
+Karma kimlik modeli kullanılırken iki kimlik doğrulaması türü aşağıdadır.
 
 | Kimlik doğrulama türü | Açıklama |
 |:-------|:-----|
-| Yönetilen kimlik doğrulaması | Azure AD, parolanın yerel olarak depolanan karma sürümünü kullanarak kimlik doğrulama işlemini ele alır veya kimlik bilgilerini şirket içi AD DS tarafından kimlik doğrulaması yapılan bir şirket içi yazılım aracısına gönderir. <br> <br>  İki tür yönetilen kimlik doğrulaması vardır: Parola karması eşitlemesi (PHS) ve Geçişli kimlik doğrulaması (PTA). PHS ile, Azure AD kimlik doğrulamayı kendisine gerçekleştirir. PTA ile, Azure AD'nin kimlik doğrulamayı gerçekleştirmesi için AD DS'ye sahip olur. |
-| Federasyon kimlik doğrulaması | Azure AD, kimlik doğrulaması talep etmek için istemci bilgisayarı başka bir kimlik sağlayıcısına yeniden yönlendirmektedir. |
+| Yönetilen kimlik doğrulaması | Azure AD, parolanın yerel olarak depolanan karma sürümünü kullanarak kimlik doğrulama işlemini işler veya kimlik bilgilerini şirket içi AD DS tarafından kimlik doğrulaması için şirket içi yazılım aracısına gönderir. <br> <br>  İki tür yönetilen kimlik doğrulaması vardır: Parola karması eşitlemesi (PHS) ve Geçişli kimlik doğrulaması (PTA). PHS ile Azure AD kimlik doğrulamasının kendisini gerçekleştirir. PTA ile Azure AD kimlik doğrulamasını AD DS gerçekleştirir. |
+| Şirket Dışı Kimlik Doğrulaması | Azure AD, kimlik doğrulaması isteyen istemci bilgisayarı başka bir kimlik sağlayıcısına yönlendirir. |
 |  |  |
 
-Daha [fazla bilgi edinmek için bkz. doğru](/azure/active-directory/hybrid/choose-ad-authn) kimlik doğrulama yöntemini seçme.
+Daha fazla bilgi edinmek için [doğru kimlik doğrulama yöntemini seçme](/azure/active-directory/hybrid/choose-ad-authn) bölümüne bakın.
 
-## <a name="enforcing-strong-sign-ins"></a>Güçlü oturum açmaları zorlama
+## <a name="enforcing-strong-sign-ins"></a>Güçlü oturum açma işlemleri uygulama
 
-Kullanıcı oturum açmalarının güvenliğini artırmak için, aşağıdaki tabloda yer alan özellik ve özellikleri kullanın.
+Kullanıcı oturum açma bilgilerinin güvenliğini artırmak için aşağıdaki tabloda yer alan özellikleri ve özellikleri kullanın.
 
-| Özellik | Açıklama | Daha fazla bilgi | Lisans gereksinimleri |
+| Yeteneği | Açıklama | Daha fazla bilgi | Lisans gereksinimleri |
 |:-------|:-----|:-----|:-----|:-----|
-| Windows Hello Kurumsal | Bir cihazda oturum aken parolaları güçlü iki faktörlü kimlik doğrulamasıyla Windows değiştirir. Bu iki etmen bir cihaza bağlı olan yeni bir kullanıcı kimlik bilgileri türü ve bir biyometrik veya PIN'tir. | [Windows Hello Kurumsal'a Genel Bakış](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 E5 |
-| Azure AD Parola Koruması | Bilinen zayıf parolaları ve değişkenlerini algılar ve engeller; ayrıca, organizasyonuma özgü ek zayıf terimleri de engelleyebilir. | [Azure AD parola korumasını yapılandırma](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 E5 |
-| Çok faktörlü kimlik doğrulamasını (MFA) kullanma | MFA, kullanıcı oturum açma işlemlerinin, akıllı telefon uygulaması ile doğrulama veya akıllı telefona gönderilen KıSA mesaj gibi kullanıcı hesabı parolasının ötesinde başka bir doğrulamaya tabi olması gerekir. Kullanıcıların [MFA'nın](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) nasıl ayarlandısı ile ilgili yönergeler için bu videoyu izleyin. | [Kurumsal için Microsoft 365 MFA](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 E5 |
-| Kimlik ve cihaz erişimi yapılandırmaları | Ayarlar önkoşul özellikleri ve ayarlarıyla Koşullu Erişim, Intune ve Azure AD Kimlik Koruması ilkeleriyle bir araya gelen ve belirli bir erişim isteğinin hangi koşullar altında verilmesi gerektiğini belirleyen ilkeler ve ilkeler.  | [Kimlik ve cihaz erişimi yapılandırmaları](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 E5 |
-| Azure AD Identity Protection | Bir saldırganın, kuruluşun bulut hizmetlerine ve verilerine erişmek için kullanıcının hesap adını ve parolasını belirlemesi ve kimlik bilgilerinin güvenliğinin tehlikeye atabilmesini sağlar. | [Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5 koruma Microsoft 365 E3 kimliği ile & veya kimlik doğrulama |
+| İş İçin Windows Hello | Windows cihazında oturum açarken parolaları güçlü iki faktörlü kimlik doğrulamasıyla değiştirir. İki faktör, bir cihaza ve biyometrik veya PIN'e bağlı yeni bir kullanıcı kimlik bilgisi türüdür. | [İş İçin Windows Hello Genel Bakış](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 veya E5 |
+| Parola Koruması'Azure AD | Bilinen zayıf parolaları ve bunların değişkenlerini algılar ve engeller ve ayrıca kuruluşunuza özgü ek zayıf terimleri engelleyebilir. | [parola korumasını Azure AD yapılandırma](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 veya E5 |
+| Çok faktörlü kimlik doğrulamasını (MFA) kullanma | MFA, kullanıcı oturum açma bilgilerinin, akıllı telefon uygulamasıyla doğrulama veya akıllı telefona gönderilen kısa mesaj gibi kullanıcı hesabı parolasının ötesinde başka bir doğrulamaya tabi olmasını gerektirir. Kullanıcıların MFA'yı nasıl kurduğuna ilişkin yönergeler için [bu videoya](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) bakın. | [Kuruluş için Microsoft 365 MFA](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 veya E5 |
+| Kimlik ve cihaz erişimi yapılandırmaları | Belirli bir erişim isteğinin verilip verilmeyeceğini ve hangi koşullar altında verilmesi gerektiğini belirleyen Koşullu Erişim, Intune ve Azure AD Kimlik Koruması ilkeleriyle birlikte önerilen önkoşul özelliklerinden ve bunların ayarlarından oluşan ayarlar ve ilkeler.  | [Kimlik ve cihaz erişimi yapılandırmaları](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 veya E5 |
+| Azure AD Kimlik Koruması | Bir saldırganın bir kuruluşun bulut hizmetlerine ve verilerine erişim elde etmek için kullanıcının hesap adını ve parolasını belirlediği kimlik bilgileri güvenliğinin aşılmasına karşı koruma sağlayın. | [Azure AD Kimlik Koruması](/azure/active-directory/active-directory-identityprotection) | Kimlik & Tehdit Koruması eklentisiyle Microsoft 365 E5 veya Microsoft 365 E3 |
 |  |  |  |
 
 
 
-## <a name="results-of-step-3"></a>Adım 3'in sonuçları
+## <a name="results-of-step-3"></a>3. Adımın Sonuçları
 
-Kiracınız için kimlik Microsoft 365, belirlediniz:
+Microsoft 365 kiracınızın kimliği için şunları belirlediniz:
 
-- Hangi kimlik modelinin kullanımı gerekir.
-- Güçlü kullanıcı ve cihaz erişimini nasıl zorunlu kılınacak?
+- Kullanılacak kimlik modeli.
+- Güçlü kullanıcı ve cihaz erişimini nasıl zorunlu kılacağınız.
 
-Yeni karma kimlik öğelerinin vurgulu olduğu bir kiracıya örnek olarak aşağıdaki örnek ve şekildedir.
+Burada, yeni karma kimlik öğelerinin vurgulandığı bir kiracı örneği verilmiştir.
 
 ![Kiracı için karma kimlik örneği.](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
 
-Bu çizimde, kiracının sahip olduğu:
+Bu çizimde kiracının şunları vardır:
 
-- Dizin eşitleme sunucusu ve Azure AD kiracısı kullanılarak Azure AD kiracısı ile eşitlenen bir AD DS ormanı Bağlan.
-- AD DS kullanıcı hesaplarının ve ad DS ormanındaki diğer nesnelerin kopyası.
-- Kullanıcı hesabına dayalı olarak güvenli kullanıcı oturum açmalarını ve erişimi zorunlu kılınan bir dizi Koşullu Erişim ilkesi.
+- Dizin eşitleme sunucusu kullanılarak Azure AD kiracısıyla eşitlenen ve Connect'i Azure AD bir AD DS ormanı.
+- AD DS kullanıcı hesaplarının ve AD DS ormanındaki diğer nesnelerin bir kopyası.
+- Kullanıcı hesabına göre güvenli kullanıcı oturum açmalarını ve erişimi zorlamak için bir dizi Koşullu Erişim ilkesi.
 
-## <a name="ongoing-maintenance-for-identity"></a>Kimlik için sürekli bakım
+## <a name="ongoing-maintenance-for-identity"></a>Kimlik için devam eden bakım
 
-Sürekli olarak şunları yapmak zorundayabilirsiniz:
+Sürekli olarak şunları yapmanız gerekebilir:
 
-- Kullanıcı hesapları ve grupları ekleme veya değiştirme. Yalnızca bulut kimlikleri için, bulut tabanlı kullanıcılarınızı ve gruplarınızı Azure AD araçlarıyla (Microsoft 365 yönetim merkezi PowerShell gibi) korumanız gerekir. Karma kimlik için, AD DS araçlarıyla şirket içi kullanıcılarınızı ve gruplarınızı koruyabilirsiniz.
-- Oturum açma güvenlik gereksinimlerini zorunlu k olmak için kimlik ve cihaz erişimi yapılandırmanızı ekleyin veya değiştirebilirsiniz.
+- Kullanıcı hesaplarını ve gruplarını ekleyin veya değiştirin. Yalnızca bulut kimliği için bulut tabanlı kullanıcılarınızın ve gruplarınızın bakımını Microsoft 365 yönetim merkezi veya PowerShell gibi Azure AD araçlarıyla gerçekleştirirsiniz. Karma kimlik için şirket içi kullanıcılarınızın ve gruplarınızın bakımını AD DS araçlarıyla gerçekleştirirsiniz.
+- Oturum açma güvenlik gereksinimlerini zorunlu kılmak için kimlik ve cihaz erişim yapılandırmanızı ekleyin veya değiştirin.
 
 ## <a name="next-step"></a>Sonraki adım
 
-[![Adım 4. Şirket içi posta sunucularınızı Office verileri geçirme.](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
+[![4. Adım. Şirket içi Office sunucularınızı ve verilerinizi geçirin.](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
 
-Şirket içi [sunucularınızı](tenant-management-migration.md) ve onların verilerini başka Office geçirmek için geçişe Microsoft 365.
+Şirket içi Office sunucularınızı ve verilerini Microsoft 365'e geçirmek için [geçişe](tenant-management-migration.md) devam edin.

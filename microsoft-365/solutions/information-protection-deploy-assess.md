@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
@@ -18,12 +18,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Veri gizliliği düzenlemelerini, ilgili senaryoları, hazır olma durumunuzu ve Microsoft 365 ortamınızdaki hassas bilgi türlerini belirleyin.
-ms.openlocfilehash: e881ff4eb9561525fed42775d8f56b6842dc1719
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: a9eb6e975e223014006d34ecea33851c116baab9
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748318"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585498"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Microsoft 365 ile veri gizliliği risklerini değerlendirme ve hassas öğeleri belirleme
 
@@ -49,13 +49,13 @@ ISO 27001 gibi diğer standartlara uygunluk, çeşitli Avrupa denetim otoriteler
 
 Diğer önemli veri gizliliği düzenlemeleri de kişisel verilerin işlenmesine yönelik gereksinimleri belirtir.
 
-Birleşik Devletler bunlar California Tüketici Koruma Yasası ([CCPA](/compliance/regulatory/ccpa-faq)), HIPAA-HITECH (Birleşik Devletler sağlık hizmetleri gizlilik yasası) ve Graham Leach Bliley Yasası (GLBA) içerir. Devlete özgü ek düzenlemeler de yerinde veya geliştirme aşamasındadır.
+Birleşik Devletler bunlar California Tüketici Koruma Yasası ([CCPA](/compliance/regulatory/ccpa-faq)), HIPAA-HITECH (Birleşik Devletler sağlık hizmetleri gizlilik yasası) ve Graham Leach Bliley Yasası (GLBA) içerir. Devlete özgü diğer düzenlemeler de yerinde veya geliştirme aşamasındadır.
 
-Diğer örnekler arasında Almanya'nın Ulusal GDPR Uygulama Yasası (BDSG), Brezilya Veri Koruma Yasası (LGPD) ve diğerleri sayılabilir.
+Dünya çapında, Almanya'nın Ulusal GDPR Uygulama Yasası (BDSG), Brezilya Veri Koruma Yasası (LGPD) ve diğerleri daha birçok örnek verilebilir.
 
 ## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Microsoft 365 teknik denetim kategorilerine düzenleme eşlemesi
 
-Veri gizliliğiyle ilgili düzenlemelerin çoğu çakışan gereksinimlere sahiptir, bu nedenle herhangi bir teknik denetim şeması geliştirmeden önce hangi düzenlemelere tabi olduklarını anlamalısınız.
+Veri gizliliğiyle ilgili düzenlemelerin çoğu çakışan gereksinimlere sahiptir, bu nedenle herhangi bir teknik denetim şeması geliştirmeden önce hangi düzenlemelere tabi olduklarını anlamanız gerekir.
 
 Bu genel çözümün makalelerinde daha sonra başvurmak için, bu tabloda veri gizliliği düzenlemelerinin örneklemesinden alıntılar sağlanır.
 
@@ -76,7 +76,7 @@ Bu genel çözümün makalelerinde daha sonra başvurmak için, bu tabloda veri 
 ||45 C.F.R. 164.308(a)(6)(ii)|Şüpheli veya bilinen güvenlik olaylarını belirleme ve yanıtlama; kapsamına alınan varlık veya iş ortağı tarafından bilinen güvenlik olaylarının uygulanabilir, zararlı etkilerini azaltmak; ve güvenlik olaylarını ve bunların sonuçlarını belgelemektedir.|Keşfetme ve yanıtlama|
 ||45 C.F.R. 164.312(b)|Elektronik korumalı sistem durumu bilgilerini içeren veya kullanan bilgi sistemlerinde etkinliği kaydeden ve inceleyen donanım, yazılım ve yordam mekanizmaları uygulayın.|Keşfetme ve yanıtlama|
 |CCPA|1798.105(c)|Bir tüketiciden, bu bölümün (a) bölümü uyarınca tüketicinin kişisel bilgilerini silmek için doğrulanabilir bir istek alan bir işletme, tüketicinin kişisel bilgilerini kayıtlarından silecek ve tüm hizmet sağlayıcılarını tüketicinin kişisel bilgilerini kayıtlarından silmeye yönlendirecektir|Keşfetme ve yanıtlama|
-||1798.105(d)|(1798.105(c) özel durumları <br> bir işletmenin veya hizmet sağlayıcısının, tüketicinin kişisel bilgilerini şu şekilde tutması gerekiyorsa, bir işletmenin veya hizmet sağlayıcısının tüketicinin kişisel bilgilerini silme isteğine uyması gerekmeyecektir: (ek bilgi için geçerli yönetmeliğe bakın).|Keşfetme ve yanıtlama|
+||1798.105(d)|(1798.105(c) özel durumları <br> bir işletmenin veya hizmet sağlayıcısının, tüketicinin kişisel bilgilerini korumak için gerekli olması durumunda bir işletmenin veya hizmet sağlayıcısının tüketicinin kişisel bilgilerini silme isteğine uyması gerekmeyecektir: (ek bilgi için geçerli yönetmeliğe bakın).|Keşfetme ve yanıtlama|
 |||||
 
 > [!IMPORTANT]
@@ -84,7 +84,7 @@ Bu genel çözümün makalelerinde daha sonra başvurmak için, bu tabloda veri 
 
 ## <a name="knowing-your-data"></a>Verilerinizi öğrenme
 
-Tabi olduğunuz düzenlemelere bakılmaksızın, kuruluşunuzun içindeki ve dışındaki farklı kullanıcı veri türlerinin sistemlerinizle etkileşime geçtiği durumlarda, kuruluşunuz için geçerli olan sektör ve kamu düzenlemelerine tabi olarak, genel kişisel veri koruma stratejinizi etkileyebilecek tüm önemli faktörlerdir. Bu, kişisel verilerin nerede depolandığını, ne tür olduğunu, ne kadarının bulunduğunu ve hangi koşullarda toplandığını içerir.
+Tabi olduğunuz düzenlemelere bakılmaksızın, kuruluşunuzun içindeki ve dışındaki farklı kullanıcı veri türlerinin sistemlerinizle etkileşim kurması, kuruluşunuz için geçerli olan sektör ve kamu düzenlemelerine tabi olarak genel kişisel veri koruma stratejinizi etkileyebilecek tüm önemli faktörlerdir. Bu, kişisel verilerin nerede depolandığını, ne tür olduğunu, ne kadarının bulunduğunu ve hangi koşullarda toplandığını içerir.
 
 ![Verilerinizi öğrenme: Ne tür olduğunu, ne kadarının bulunduğunu ve hangi koşullar altında toplandığını öğrenin.](../media/information-protection-deploy-assess/information-protection-deploy-assess-knowing-data.png)
 
@@ -121,7 +121,7 @@ Burada, bir kuruluşun tipik bölümleri için farklı veri türlerinin bir örn
 
 Veri gizliliği düzenlemesine tabi olan kişisel verilerin çoğu genellikle Microsoft 365 dışında toplanır ve depolanır. Tüketiciye yönelik web veya mobil uygulamalardan gelen tüm kişisel verilerin Microsoft 365'te veri gizliliği incelemesine tabi olması için bu tür uygulamalardan Microsoft 365'e aktarılmış olması gerekir.
 
-Microsoft 365'te verilerinizin gizliliğine maruz kalmanız, web uygulamalarınıza ve CRM sistemlerinize göre daha sınırlı olabilir ve bu çözüm bu çözümle ilgili değildir.
+Microsoft 365'te verilerinizin gizliliğine açık hale getirmek, web uygulamalarınıza ve CRM sistemlerinize göre daha sınırlı olabilir ve bu çözüm bu çözümle ilgili değildir.
 
 Risk profilinizi değerlendirirken aşağıdaki yaygın veri gizliliği uyumluluk güçlükleri hakkında düşünmek de önemlidir:
 
@@ -131,7 +131,7 @@ Risk profilinizi değerlendirirken aşağıdaki yaygın veri gizliliği uyumlulu
 - **Kişisel veri saklama.** Geçerli iş nedenleriyle kişisel verileri içeren bilgilerin ne kadar süreyle saklanması gerekiyor ve iş sürekliliği için saklama gereksinimleriyle dengelenmiş, geçmişteki sonsuza kadar saklama uygulamalarından nasıl kaçınılır?
 - **Veri sahibi isteklerini işleme.** Veri sahibi isteklerini (DSR) ve anonimleştirme, yeniden düzenleme ve silme gibi herhangi bir düzeltme eylemini işlemek için hangi mekanizmalar gerekir?
 - **Sürekli izleme ve raporlama.** Farklı veri türleri ve kaynakları için günlük izleme, araştırma ve raporlama teknikleri ne tür kullanılabilir?
-- **Veri işlemeyle ilgili sınırlamalar.** Kuruluşun gizlilik denetimlerinde yansıtması gereken bu yöntemler aracılığıyla toplanan veya depolanan bilgiler için veri kullanımıyla ilgili sınırlamalar var mı? Örneğin, satış personeli tarafından kişisel verilerin kullanılmayacağı taahhütleri, kuruluşunuzun bu bilgilerin satış kuruluşuyla ilişkili sistemlerde aktarılmasını veya depolanmasını önlemek için mekanizmalar koymasını gerektirebilir.
+- **Veri işlemeyle ilgili sınırlamalar.** Kuruluşun gizlilik denetimlerinde yansıtması gereken bu yöntemler aracılığıyla toplanan veya depolanan bilgiler için veri kullanımıyla ilgili sınırlamalar var mı? Örneğin, kişisel verilerin satış personeli tarafından kullanılmayacağı taahhütleri, kuruluşunuzun bu bilgilerin satış kuruluşuyla ilişkili sistemlerde aktarılmasını veya depolanmasını önlemek için mekanizmalar koymasını gerektirebilir.
 
 ### <a name="employee-data-required-to-carry-out-day-to-day-business-functions"></a>Günlük iş işlevlerini gerçekleştirmek için gereken çalışan verileri
 
@@ -182,7 +182,7 @@ GDPR değerlendirmesi şu bölümlerden oluşur:
 |Bölüm|Açıklama|
 |:-------|:-----|
 |İdare|<ol><li>Gizlilik ilkeniz hangi veri bilgilerinin işlendiğini açıkça belirtir mi? </li><li>Gizlilik Etkisi Değerlendirmelerini (PIA) düzenli olarak çalıştırıyor musunuz? </li><li> Kişisel bilgileri (PI) yönetmek için bir araç kullanıyor musunuz? </li><li> Belirli bir kişi üzerinde PI verilerini kullanarak iş yapma konusunda yasal yetkiniz var mı? Veriler için onayı izliyor musunuz? </li><li> Denetim denetimlerini izliyor, uyguluyor ve yönetiyor musunuz? Veri sızıntılarını izliyor musunuz? </li></ol>|
-|Silme ve bildirim|<ol><li>Kullanıcıların verilerine nasıl erişilebileceği hakkında açık yönergeler veriyor musunuz? </li><li> Onay almayı geri çevirme işlemini işlemek için belgelenmiş süreçleriniz var mı? </li><li> Veriler için Otomatik Silme işleminiz var mı? </li><li> Müşteriyle etkileşime geçtiğinde kimliği doğrulama işleminiz var mı? </li></ol>|
+|Silme ve bildirim|<ol><li>Kullanıcıların verilerine nasıl erişilebileceği hakkında açık yönergeler veriyor musunuz? </li><li> Geri çevirme onayının işlenmesi için belgelenmiş süreçleriniz var mı? </li><li> Veriler için Otomatik Silme işleminiz var mı? </li><li> Müşteriyle etkileşime geçtiğinde kimliği doğrulama işleminiz var mı? </li></ol>|
 |Risk azaltma ve bilgi güvenliği|<ol><li>Yapılandırılmamış verileri taramak için araçlar kullanıyor musunuz? </li><li>Tüm sunucular güncel mi ve bunları korumak için güvenlik duvarlarından yararlanıyor musunuz? </li><li>Sunucularınızın düzenli yedeklemelerini çalıştırıyor musunuz? </li><li>Veri sızıntılarını etkin bir şekilde izliyor musunuz? </li><li>Bekleyen ve iletimdeki verilerinizi şifreler misiniz? </li></ol>|
 |İlke yönetimi|<ol><li>Bağlama Şirket Kurallarınızı (BCR) nasıl yönetirsiniz? </li><li>Veriler için onayı izliyor musunuz? </li><li> Tamamen kapsanan 1 ile 5 arasında bir ölçekte sözleşmeleriniz veri sınıflandırmalarını ve işleme gereksinimlerini kapsıyor mu? </li><li>Bir olay yanıt planınız var mı ve düzenli olarak test mi edindiniz? </li><li>Erişimi yönetmek için hangi ilkeyi kullanırsınız? </li></ol>|
 |||
@@ -213,7 +213,7 @@ Daha fazla bilgi için şu makalelere bakın:
 - [Hassas bilgi türleri hakkında daha fazla bilgi edinme](../compliance/sensitive-information-type-learn-about.md)
 - [Güvenlik & Uyumluluk Merkezi'nde özel hassas bilgi türü oluşturma](../compliance/create-a-custom-sensitive-information-type.md)
 - [Güvenlik & Uyumluluk Merkezi PowerShell'de özel hassas bilgi türü oluşturma](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Tam Veri Eşleşmesi tabanlı sınıflandırma ile özel hassas bilgi türleri oluşturma](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview?view=o365-worldwide)
+- [Tam Veri Eşleşmesi tabanlı sınıflandırma ile özel hassas bilgi türleri oluşturma](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview)
 
 ### <a name="content-explorer"></a>İçerik Gezgini
 

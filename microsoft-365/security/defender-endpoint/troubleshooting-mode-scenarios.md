@@ -4,7 +4,7 @@ description: Çeşitli virüsten koruma sorunlarını gidermek için Uç Nokta i
 keywords: virüsten koruma, sorun giderme, sorun giderme modu, kurcalama koruması, uyumluluk
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c4824c603fda14d95487abdbc4f3b4949fdf0e97
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.subservice: mde
+ms.openlocfilehash: aa942a8751986ea7b9ed8e64c7772c9d62000375
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66861928"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583076"
 ---
 # <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de sorun giderme modu senaryoları 
 

@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Belge anlama ve form işleme modellerinizin performansı hakkında daha fazla bilgi bulmayı öğrenin.
-ms.openlocfilehash: 830a56ab4dd0145f1385d628405ee4287de19595
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 7c998304472db04d94b430fd1cb98111a1fbdd0a
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754764"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582636"
 ---
 # <a name="analyze-how-your-models-are-used-in-microsoft-sharepoint-syntex"></a>Modellerinizin Microsoft SharePoint Syntex'de nasıl kullanıldığını analiz etme
 

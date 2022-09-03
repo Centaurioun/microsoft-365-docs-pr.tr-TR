@@ -11,7 +11,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 description: Uzak çalışanlar için koruma oluştururken fidye yazılımlarına karşı koruma sağlayarak uç nokta cihazlarınızı Sıfır Güven güvenlik mimarinizin bir parçası olarak Microsoft Intune kaydedin.
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -20,12 +20,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 40e4e87b7a0d955c41a130ae512913b3a1133688
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: a7aa25fe7d174fd9d4ca310381312764a4883464
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748043"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576021"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Intune Genel Bakış ile cihazları yönetme
 

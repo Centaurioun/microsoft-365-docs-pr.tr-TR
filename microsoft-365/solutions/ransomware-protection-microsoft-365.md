@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -17,13 +17,13 @@ ms.collection:
 - m365solution-overview
 ms.custom: seo-marvel-jun2020
 keywords: fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, HumOR, gasp saldırısı, fidye yazılımı saldırısı, şifreleme, kriptoviroloji, sıfır güven
-description: Microsoft 365 kaynaklarınızı fidye yazılımı saldırılarına karşı koruma adımlarını atın.
-ms.openlocfilehash: fde24132341512d76467284cb2f9c9b11b7d88cc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: Microsoft 365 kaynaklarınızı fidye yazılımı saldırılarına karşı koruma adımlarını uygulayın.
+ms.openlocfilehash: 1552e6d71101a74abbd36ac4543eaff1006663b5
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943249"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575427"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Microsoft 365 kiracınız için fidye yazılımı koruması dağıtın
 
@@ -34,7 +34,7 @@ Saldırı tamamlandıktan sonra, saldırgan silinen dosyalar, şifrelenmiş dosy
 İnsan tarafından işletilen bir fidye yazılımı saldırısı, her büyüklükteki işletmeler için yıkıcı olabilir ve temizlenmesi zor olabilir ve gelecekteki saldırılara karşı koruma sağlamak için tam saldırgan çıkarma gerektirir. Ticari fidye yazılımlarının aksine, insan tarafından çalıştırılan fidye yazılımı ilk fidye isteğinden sonra işletme işlemlerini tehdit etmeye devam edebilir.
 
 >[!Note]
->bir Microsoft 365 kiracısına yönelik fidye yazılımı saldırısı, saldırganın bir kiracı için geçerli kullanıcı hesabı kimlik bilgilerine sahip olduğunu ve kullanıcı hesabına izin verilen tüm dosya ve kaynaklara erişimi olduğunu varsayar. Geçerli kullanıcı hesabı kimlik bilgileri olmayan bir saldırganın bekleyen verilerin şifresini çözmesi Microsoft 365 varsayılan ve gelişmiş şifreleme ile şifrelenir. Daha fazla bilgi için bkz [. Şifreleme ve anahtar yönetimine genel bakış](/compliance/assurance/assurance-encryption). 
+>Microsoft 365 kiracısına yönelik fidye yazılımı saldırısı, saldırganın bir kiracı için geçerli kullanıcı hesabı kimlik bilgilerine sahip olduğunu ve kullanıcı hesabına izin verilen tüm dosya ve kaynaklara erişimi olduğunu varsayar. Geçerli kullanıcı hesabı kimlik bilgileri olmayan bir saldırganın bekleyen verilerin şifresini çözmesi gerekir ve bu veriler Microsoft 365 varsayılan ve gelişmiş şifreleme ile şifrelenir. Daha fazla bilgi için bkz [. Şifreleme ve anahtar yönetimine genel bakış](/compliance/assurance/assurance-encryption). 
 >
 
 Microsoft ürünleri genelinde fidye yazılımı koruması hakkında daha fazla bilgi için bu [ek fidye yazılımı kaynaklarına](#additional-ransomware-resources) bakın.
@@ -50,23 +50,23 @@ Bu özellikleri ve sorumlulukları birleştirerek fidye yazılımı saldırısı
 
 ## <a name="ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365"></a>Microsoft 365 ile sağlanan fidye yazılımı azaltma ve kurtarma özellikleri
 
-bir Microsoft 365 kiracıya sızan bir fidye yazılımı saldırganı, kuruluşunuzu fidye için şu şekilde tutabilir:
+Bir Microsoft 365 kiracısını sızmış bir fidye yazılımı saldırganı kuruluşunuzu fidye için şu şekilde tutabilir:
 
 - Dosyaları veya e-postayı silme
 - Dosyaları şifreleme yerinde
 - Kiracınızın dışına dosya kopyalama (veri sızdırma)
 
-Ancak Microsoft 365 çevrimiçi hizmetler, müşteri verilerini fidye yazılımı saldırılarına karşı korumak için birçok yerleşik özelliğe ve denetime sahiptir. Aşağıdaki bölümlerde bir özet sağlanır. Microsoft'un [Microsoft 365'da müşteri verilerini, Kötü amaçlı yazılım ve fidye yazılımı korumasını](/compliance/assurance/assurance-malware-and-ransomware-protection) nasıl koruduğu hakkında daha fazla bilgi için.
+Ancak Microsoft 365 çevrimiçi hizmetler, müşteri verilerini fidye yazılımı saldırılarına karşı korumak için birçok yerleşik özelliğe ve denetime sahiptir. Aşağıdaki bölümlerde bir özet sağlanır. Microsoft'un müşteri verilerini, [Microsoft 365'te kötü amaçlı yazılım ve fidye yazılımı korumasını](/compliance/assurance/assurance-malware-and-ransomware-protection) nasıl koruduğu hakkında daha fazla bilgi için.
 
 >[!Note]
->bir Microsoft 365 kiracısına yönelik fidye yazılımı saldırısı, saldırganın bir kiracı için geçerli kullanıcı hesabı kimlik bilgilerine sahip olduğunu ve kullanıcı hesabına izin verilen tüm dosya ve kaynaklara erişimi olduğunu varsayar. Geçerli kullanıcı hesabı kimlik bilgileri olmayan bir saldırganın bekleyen verilerin şifresini çözmesi Microsoft 365 varsayılan ve gelişmiş şifreleme ile şifrelenir. Daha fazla bilgi için bkz [. Şifreleme ve anahtar yönetimine genel bakış](/compliance/assurance/assurance-encryption). 
+>Microsoft 365 kiracısına yönelik fidye yazılımı saldırısı, saldırganın bir kiracı için geçerli kullanıcı hesabı kimlik bilgilerine sahip olduğunu ve kullanıcı hesabına izin verilen tüm dosya ve kaynaklara erişimi olduğunu varsayar. Geçerli kullanıcı hesabı kimlik bilgileri olmayan bir saldırganın bekleyen verilerin şifresini çözmesi gerekir ve bu veriler Microsoft 365 varsayılan ve gelişmiş şifreleme ile şifrelenir. Daha fazla bilgi için bkz [. Şifreleme ve anahtar yönetimine genel bakış](/compliance/assurance/assurance-encryption). 
 >
 
 ### <a name="deleting-files-or-email"></a>Dosyaları veya e-postayı silme
 
 SharePoint ve OneDrive İş dosyaları şunlarla korunur:
 
-- Sürüm 
+- Sürüm oluşturma 
 
    Microsoft 365 varsayılan olarak bir dosyanın en az 500 sürümünü korur ve daha fazlasını korumak için yapılandırılabilir. 
 
@@ -80,14 +80,14 @@ SharePoint ve OneDrive İş dosyaları şunlarla korunur:
 
 - [Dosyaları Geri Yükleme](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
-   SharePoint ve OneDrive için, yöneticilerin ve son kullanıcıların son 30 gün içinde herhangi bir noktadan dosyaları geri yüklemesine olanak tanıyan eksiksiz bir self servis kurtarma çözümü.
+   SharePoint ve OneDrive için yöneticilerin ve son kullanıcıların son 30 gün içinde herhangi bir noktadan dosyaları geri yüklemesine olanak tanıyan eksiksiz bir self servis kurtarma çözümü.
 
    Güvenlik ve BT yardım masası personelinizin yükünü en aza indirmek için kullanıcılarınızı [Dosyalar Geri Yükleme](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15) konusunda eğitin.
 
 
-OneDrive ve SharePoint dosyaları için, toplu bir saldırıyla çarpılırsanız Microsoft 14 güne kadar önceki bir noktaya geri dönebilir.
+OneDrive ve SharePoint dosyaları için, toplu bir saldırıyla karşınıza çıkarsa Microsoft 14 güne kadar önceki bir noktaya geri dönebilir.
 
-E-posta şu şekilde korunur:
+Email şu şekilde korunur:
 
 - Yanlışlıkla veya kötü amaçlı erken silme işleminden sonra bir posta kutusunda öğeleri kurtarabileceğiniz [tek öğe kurtarma](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery) ve posta kutusu saklama. Varsayılan olarak 14 gün içinde silinen ve 30 güne kadar yapılandırılabilen posta iletilerini geri alabilirsiniz.
 
@@ -97,11 +97,11 @@ E-posta şu şekilde korunur:
 
 Daha önce açıklandığı gibi, SharePoint ve OneDrive İş dosyaları aşağıdakilerle kötü amaçlı şifrelemeye karşı korunur:
 
-- Sürüm
+- Sürüm oluşturma
 - Geri dönüşüm kutusu
 - Koruma Bekletme kitaplığı
 
-Ek ayrıntılar için bkz[. Microsoft 365'de veri bozulmasıyla ilgilenme](/compliance/assurance/assurance-dealing-with-data-corruption).
+Ek ayrıntılar için bkz. [Microsoft 365'te veri bozulmasıyla ilgilenme](/compliance/assurance/assurance-dealing-with-data-corruption).
 
 ### <a name="copying-files-outside-your-tenant"></a>Kiracınızın dışına dosya kopyalama 
 
@@ -119,7 +119,7 @@ Fidye yazılımı saldırganlarının kiracınızın dışındaki dosyaları kop
 
     Dosyalar gibi hassas bilgilerin indirilmelerini engelleyin. 
 
-    Ayrıca Bulut için Defender [Uygulamaları Koşullu Erişim Uygulama Denetimi](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization) için oturum ilkelerini kullanarak kullanıcıyla uygulama arasındaki bilgi akışını gerçek zamanlı olarak izleyebilirsiniz.
+    Ayrıca, bir kullanıcı ve uygulama arasındaki bilgi akışını gerçek zamanlı olarak izlemek [için Cloud Apps için Defender Koşullu Erişim Uygulama Denetimi](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization) oturum ilkelerini de kullanabilirsiniz.
 
 ## <a name="whats-in-this-solution"></a>Bu çözümde neler var?
 
@@ -137,7 +137,7 @@ Bu çözümdeki adımlar şunlardır:
 
 Microsoft 365 kiracınız için dağıtılan çözümün beş adımı aşağıdadır.
 
-![Microsoft 365 kiracı için fidye yazılımı koruması](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture.png)
+![Microsoft 365 kiracısı için fidye yazılımı koruması](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture.png)
 
 Bu çözüm[, Sıfır Güven](/security/zero-trust/) ilkelerini kullanır: 
 
@@ -155,10 +155,10 @@ Microsoft 365 kiracınızı fidye yazılımı saldırılarına karşı korumak i
 
 | Yetenek veya özellik | Açıklama | Yardımcı olur... | Lisanslama |
 |:-------|:-----|:-------|:-------|
-| Microsoft Güvenlik Puanı |  bir Microsoft 365 kiracısının güvenlik duruşunu ölçer. | Güvenlik yapılandırmanızı değerlendirin ve iyileştirmeler önerin. | Microsoft 365 E3 veya Microsoft 365 E5 |
+| Microsoft Güvenlik Puanı |  Microsoft 365 kiracısının güvenlik duruşunu ölçer. | Güvenlik yapılandırmanızı değerlendirin ve iyileştirmeler önerin. | Microsoft 365 E3 veya Microsoft 365 E5 |
 | Saldırı yüzeyini azaltma kuralları | Çeşitli yapılandırma ayarlarını kullanarak kuruluşunuzun siber saldırılara karşı güvenlik açığını azaltır. | Şüpheli etkinlikleri ve güvenlik açığı olan içeriği engelleyin. | Microsoft 365 E3 veya Microsoft 365 E5 |
-| E-posta ayarlarını Exchange |  Kuruluşunuzun güvenlik açığını e-posta tabanlı bir saldırıyla azaltan hizmetlere olanak tanır. | Kimlik avı ve diğer e-posta tabanlı saldırılar aracılığıyla kiracınıza ilk erişimi engelleyin.  | Microsoft 365 E3 veya Microsoft 365 E5 |
-| Enterprise ayarları için Microsoft Windows, Microsoft Edge ve Microsoft 365 Uygulamaları | Yaygın olarak bilinen ve iyi test edilmiş endüstri standardı güvenlik yapılandırmaları sağlar. | Enterprise için Windows, Edge ve Microsoft 365 Uygulamaları üzerinden saldırıları önleyin. | Microsoft 365 E3 veya Microsoft 365 E5 |
+| Exchange e-posta ayarları |  Kuruluşunuzun güvenlik açığını e-posta tabanlı bir saldırıyla azaltan hizmetlere olanak tanır. | Kimlik avı ve diğer e-posta tabanlı saldırılar aracılığıyla kiracınıza ilk erişimi engelleyin.  | Microsoft 365 E3 veya Microsoft 365 E5 |
+| Kurumsal ayarlar için Microsoft Windows, Microsoft Edge ve Microsoft 365 Uygulamaları | Yaygın olarak bilinen ve iyi test edilmiş endüstri standardı güvenlik yapılandırmaları sağlar. | Enterprise için Windows, Edge ve Microsoft 365 Uygulamaları üzerinden saldırıları önleyin. | Microsoft 365 E3 veya Microsoft 365 E5 |
 |
 
 ### <a name="2-detection-and-response"></a>2. Algılama ve yanıt
@@ -177,7 +177,7 @@ Microsoft 365 kiracınızı fidye yazılımı saldırılarına karşı korumak i
 
 | Yetenek veya özellik | Açıklama | Önlemeye yardımcı olur... | Lisanslama |
 |:-------|:-----|:-------|:-------|
-|Azure AD Parola Koruması | Ortak bir listeden ve özel girdilerden parolaları engelleyin. | Bulut veya şirket içi kullanıcı hesabı parola belirleme. |Microsoft 365 E3 veya Microsoft 365 E5|
+|Parola Koruması'Azure AD | Ortak bir listeden ve özel girdilerden parolaları engelleyin. | Bulut veya şirket içi kullanıcı hesabı parola belirleme. |Microsoft 365 E3 veya Microsoft 365 E5|
 |Koşullu Erişim ile zorunlu kılınan MFA | Koşullu Erişim ilkeleriyle kullanıcı oturum açma özelliklerinin temelinde MFA gerektirme. | Kimlik bilgisi güvenliğinin aşılmasına ve erişime. | Microsoft 365 E3 veya Microsoft 365 E5|
 |Risk tabanlı Koşullu Erişim ile zorunlu kılınan MFA | Azure AD Kimlik koruması ile kullanıcı oturum açma riskine bağlı olarak MFA gerektirme. |Kimlik bilgisi güvenliğinin aşılmasına ve erişime. | Microsoft 365 E5 Güvenlik eklentisiyle Microsoft 365 E5 veya Microsoft 365 E3|
 |
@@ -206,14 +206,14 @@ Windows 11 veya 10 cihaz için:
 | Yetenek veya özellik | Açıklama | Yardımcı olur... | Lisanslama |
 |:-------|:-----|:-------|:-------|
 | Denetimli klasör erişimi | Uygulamaları bilinen, güvenilen uygulamalar listesine karşı denetleyerek verilerinizi korur. | Dosyaların fidye yazılımı tarafından değiştirilmesini veya şifrelenmesini önleyin. | Microsoft 365 E3 veya Microsoft 365 E5 |
-| Microsoft Purview Information Protection | Fidye için kullanılabilir bilgilere duyarlılık etiketlerinin uygulanmasını sağlar | Dosyadan çıkarılmış bilgilerin kullanımını önleme. | Microsoft 365 E3 veya Microsoft 365 E5 |
+| Microsoft Purview Bilgi Koruması | Fidye için kullanılabilir bilgilere duyarlılık etiketlerinin uygulanmasını sağlar | Dosyadan çıkarılmış bilgilerin kullanımını önleme. | Microsoft 365 E3 veya Microsoft 365 E5 |
 | Veri kaybı önleme (DLP) | Hassas verileri korur ve kullanıcıların uygunsuz bir şekilde paylaşmasını engelleyerek riski azaltır. | Veri sızdırmayı önleyin. | Microsoft 365 E3 veya Microsoft 365 E5 |
 | Bulut Uygulamaları için Defender | Bulma, araştırma ve idare için bir bulut erişimi güvenlik aracısı. | Yanal hareketi algılayın ve veri sızdırmayı önleyin. | Microsoft 365 E5 Güvenlik eklentisiyle Microsoft 365 E5 veya Microsoft 365 E3 |
 |
 
 ## <a name="impact-on-users-and-change-management"></a>Kullanıcılar ve değişiklik yönetimi üzerindeki etkisi
 
-Microsoft 365 kiracınız için ek güvenlik özellikleri dağıtmak ve gereksinimleri ve güvenlik ilkelerini uygulamak kullanıcılarınızı etkileyebilir. 
+Ek güvenlik özellikleri dağıtmak ve Microsoft 365 kiracınız için gereksinimleri ve güvenlik ilkelerini uygulamak kullanıcılarınızı etkileyebilir. 
 
 Örneğin, kullanıcıların kuruluştaki tüm kullanıcılar için daha kolay bir ekip oluşturmak yerine üye olarak kullanıcı hesaplarının listesiyle belirli kullanımlar için yeni ekipler oluşturmasını gerektiren yeni bir güvenlik ilkesi uygulayabilirsiniz. Bu, fidye yazılımı saldırganlarının güvenliği aşılmış kullanıcı hesabı için kullanılamayan ekipleri keşfetmesini ve sonraki saldırıda bu ekibin kaynaklarını hedeflemesini önlemeye yardımcı olabilir.
 
@@ -267,7 +267,7 @@ Microsoft Azure:
 
 Microsoft Defender for Cloud Apps:
 
--  [Bulut için Defender Uygulamalarında anomali algılama ilkeleri oluşturma](/cloud-app-security/anomaly-detection-policy)
+-  [Cloud Apps için Defender'da anomali algılama ilkeleri oluşturma](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft Güvenlik ekibi blog gönderileri:
 

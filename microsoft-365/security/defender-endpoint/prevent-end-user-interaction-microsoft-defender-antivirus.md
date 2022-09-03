@@ -2,7 +2,7 @@
 title: Microsoft Defender Virüsten Koruma arabirimini gizleme
 description: Windows Güvenliği uygulamasında virüs ve tehdit koruması kutucuğunu gizleyebilirsiniz.
 keywords: ui kilitleme, başsız mod, uygulamayı gizleme, ayarları gizleme, arabirimi gizleme
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 072207248192d158169e52a8e0ca860678b4f63f
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 5b0ed6ace2aafba9270e757b7bef9ab313e92ccc
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388539"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575757"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya bu arabirimle etkileşim kurmasını engelleme
 
@@ -67,7 +67,7 @@ Windows 10 önceki sürümlerinde, ayar Windows Defender istemci arabirimini giz
 
 4. **Ağacı Microsoft Defender Virüsten Koruma > İstemci arabirimi > Windows bileşenlerine** genişletin.
 
-5. **Başsız UI modunu etkinleştir** ayarına çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. **Tamam**'ı tıklatın.
+5. **Başsız UI modunu etkinleştir** ayarına çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. **Tamam**'a tıklayın.
 
 Kullanıcıların bilgisayarlarında korumayı değiştirmesini engelleme hakkında daha fazla seçenek için bkz. Kullanıcıların [ilke ayarlarını yerel olarak](configure-local-policy-overrides-microsoft-defender-antivirus.md) değiştirmesini engelleme.
 
@@ -88,7 +88,7 @@ Kullanıcıların taramaları duraklatmasını engelleyebilirsiniz. Bu, zamanlan
 
 4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Taraması** olarak genişletin.
 
-5. **Kullanıcıların taramayı duraklatmasına izin ver ayarına** çift tıklayın ve seçeneği **Devre Dışı** olarak ayarlayın. **Tamam**'ı tıklatın.
+5. **Kullanıcıların taramayı duraklatmasına izin ver ayarına** çift tıklayın ve seçeneği **Devre Dışı** olarak ayarlayın. **Tamam**'a tıklayın.
 
 > [!TIP]
 > Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:

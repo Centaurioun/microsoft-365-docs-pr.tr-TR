@@ -4,12 +4,12 @@ ms.reviewer: ''
 description: Microsoft Tehdit Uzmanları, Uç Nokta için Microsoft Defender için ek bir uzmanlık katmanı sağlar.
 keywords: yönetilen tehdit avcılığı hizmeti, yönetilen tehdit avcılığı, yönetilen algılama ve yanıt (MDR) hizmeti, MTE, Microsoft Tehdit Uzmanları, uç nokta saldırı bildirimi, Uç Nokta Saldırısı Bildirimi, Defender Uzmanlarına Sorun
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: dolmont
+author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -17,13 +17,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 907f69bc081033002c45cd37b690e174d0b530ed
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: 304c53b02846db6d08e84a7e51493f6f935193e8
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67323988"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581778"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft Tehdit Uzmanları
 
@@ -69,6 +69,8 @@ Endpoint Attack Notifications (daha önce Microsoft Tehdit Uzmanları - Hedefli 
 - Hızlı SOC yanıtını etkinleştirmek için güvenliğin aşılması ve mümkün olduğunca çok bağlamın hızlı bir şekilde teslim edilmesi.
 
 ## <a name="microsoft-threat-experts---experts-on-demand"></a>Microsoft Tehdit Uzmanları - İsteğe Bağlı Uzmanlar
+> [!NOTE]
+> İsteğe Bağlı Uzmanlar bir güvenlik olayı yanıt hizmeti değildir. Kuruluşunuzu etkileyen karmaşık tehditlerin daha iyi anlaşılmasını sağlamak için tasarlanmıştır. Acil güvenlik olayı yanıt sorunlarını çözmek için kendi güvenlik olayı yanıt ekibinizle etkileşime geçin. Kendi güvenlik olayı yanıt ekibiniz yoksa ve Microsoft'un yardımını istiyorsanız [Premier Services Hub'da](/services-hub/) bir destek isteği oluşturun.
 
 Müşteriler, yanıtlarını almak için doğrudan Microsoft 365 Defender portalından güvenlik uzmanlarımızla etkileşime geçebilir. Uzmanlar, uyarı sorgularından, risk altındaki cihazlardan, şüpheli ağ bağlantısının kök nedenlerinden devam eden gelişmiş kalıcı tehdit kampanyalarıyla ilgili daha fazla tehdit zekasına kadar kuruluşunuzu etkileyen karmaşık tehditleri daha iyi anlamak için gereken içgörüleri sağlar. Bu özellik ile şunları yapabilirsiniz:
 

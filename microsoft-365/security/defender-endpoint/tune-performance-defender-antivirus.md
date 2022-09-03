@@ -2,7 +2,7 @@
 title: Microsoft Defender Virüsten Koruma için performans çözümleyicisi
 description: Microsoft Defender Virüsten Koruma'nın performansını ayarlama yordamını açıklar.
 keywords: tune, performance, uç nokta için microsoft defender, defender virüsten koruma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ ms.date: 08/13/2022
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: ac8bb15d38e7eb517911ba2c63e25a50e4918e7e
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: 155a335dc0d3a744b226e59551bfd0da732366ca
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67383864"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577860"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma için performans çözümleyicisi
 

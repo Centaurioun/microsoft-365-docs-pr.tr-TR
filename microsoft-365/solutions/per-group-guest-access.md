@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -16,24 +16,24 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Konukların belirli bir gruba eklenmesini nasıl önleyeceğinizi öğrenin
-ms.openlocfilehash: f050011427ceeeff8347c2acd5b6d3fbbcf11bec
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 366acaa609dd8ef3c5f500c87c27b2a637d62bec
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285324"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584033"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Konukların belirli bir Microsoft 365 grubuna veya Microsoft Teams ekibine eklenmesini engelleme
 
 Çoğu gruba ve takıma konuk erişimine izin vermek istiyorsanız ancak konuk erişimini engellemek istediğiniz bir yere sahipseniz, tek tek gruplar ve ekipler için konuk erişimini engelleyebilirsiniz. (Takıma konuk erişimini engelleme işlemi, ilişkili gruba konuk erişimini engelleyerek yapılır.) Bu, yeni konukların eklenmesini engeller ancak zaten grupta veya ekipte olan konukları kaldırmaz.
 
-Kuruluşunuzda duyarlılık etiketleri kullanıyorsanız, grup başına konuk erişimini denetlemek için bunları kullanmanızı öneririz. Bunun nasıl yapılacağını öğrenmek için Microsoft Teams[, Microsoft 365 grupları ve SharePoint sitelerindeki içeriği korumak için duyarlılık etiketlerini kullanın](../compliance/sensitivity-labels-teams-groups-sites.md). Önerilen yaklaşım budur.
+Kuruluşunuzda duyarlılık etiketleri kullanıyorsanız, grup başına konuk erişimini denetlemek için bunları kullanmanızı öneririz. Bunun nasıl yapılacağını öğrenmek için [Microsoft Teams, Microsoft 365 grupları ve SharePoint sitelerindeki içeriği korumak için duyarlılık etiketlerini kullanın](../compliance/sensitivity-labels-teams-groups-sites.md). Önerilen yaklaşım budur.
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>Microsoft PowerShell kullanarak grup ayarlarını değiştirme
 
 Ayrıca PowerShell'i kullanarak tek tek gruplara yeni konuklar eklenmesini engelleyebilirsiniz. (Ekibin ilişkili SharePoint sitesinde [ayrı konuk paylaşım denetimleri](/sharepoint/change-external-sharing-site) olduğunu unutmayın.)
 
-Grup düzeyinde konuk erişimi ayarını değiştirmek [için Graph için Azure Active Directory PowerShell'in](/powershell/azure/active-directory/install-adv2) önizleme sürümünü (modül adı **AzureADPreview**) kullanmanız gerekir:
+Grup düzeyinde konuk erişimi ayarını değiştirmek [için Graph için Azure Active Directory PowerShell'in](/powershell/azure/active-directory/install-adv2) önizleme sürümünü ( **modül adı AzureADPreview**) kullanmanız gerekir:
 
 - Azure AD PowerShell modülünün herhangi bir sürümünü daha önce yüklemediyseniz bkz[. Azure AD Modülünü Yükleme](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) ve genel önizleme sürümünü yüklemek için yönergeleri izleyin.
 
@@ -113,6 +113,6 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 [Microsoft 365 yönetim merkezi Grup üyeliğini yönetme](../admin/create-groups/add-or-remove-members-from-groups.md)
   
-[erişim gözden geçirmelerini Azure Active Directory](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
+[Azure Active Directory erişim gözden geçirmeleri](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser)

@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: SharePoint Syntex'da modele duyarlılık etiketi uygulamayı öğrenin.
-ms.openlocfilehash: 4ab530fbd4a187f03617b01b6b9661332ad1a7d9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bb694f1a406565986fef86f1089254a57d3cc53f
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945615"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581146"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da modele duyarlılık etiketi uygulama
 
@@ -29,7 +29,7 @@ Duyarlılık etiketleri, modellerinizin tanımladığınız belgelere şifreleme
 Modelinizin giriş sayfasındaki model ayarlarınızdan modelinize önceden var olan bir duyarlılık etiketi uygulayabilirsiniz. Etiket, model ayarlarından seçilebilmek için zaten yayımlanmış olmalıdır. Etiketler Word (.docx), PowerPoint (.pptx) ve Excel (.xlsx) için Office dosyalarına uygulanır. 
 
 > [!Important]
-> Duyarlılık etiketlerinin belge anlama modellerinize uygulanabilmek için, [bunların Microsoft Purview uyumluluk portalında oluşturulması ve yayımlanması](../admin/security-and-compliance/set-up-compliance.md) gerekir.
+> Duyarlılık etiketlerinin belge anlama modellerinize uygulanabilmek için [Microsoft Purview uyumluluk portalı oluşturulması ve yayımlanması](../admin/security-and-compliance/set-up-compliance.md) gerekir.
 
 ## <a name="add-a-sensitivity-label-to-a-document-understanding-model"></a>Belge anlama modeline duyarlılık etiketi ekleme
 
@@ -119,10 +119,10 @@ You can add a sensitivity label to an existing form processing model that you ow
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bekletme etiketi uygulama](apply-a-retention-label-to-a-model.md)
+[Bekletme etiketi uygula](apply-a-retention-label-to-a-model.md)
 
-[Sınıflandırıcı oluşturma](create-a-classifier.md)
+[Sınıflandırıcı oluştur](create-a-classifier.md)
 
-[Ayıklayıcı oluşturma](create-an-extractor.md)
+[Ayıklayıcı oluştur](create-an-extractor.md)
 
 [Document Understanding'e genel bakış](document-understanding-overview.md)

@@ -1,8 +1,8 @@
 ---
-title: Yeni Uç Nokta için Microsoft Defender'de tehdit Uç Nokta için Microsoft Defender
-description: Tehdit koruması raporunu kullanarak uyarı algılamalarını, kategorileri ve önem derecelerini izleme
-keywords: uyarı algılama, kaynak, kategoriye göre uyarı, önem derecesi, uyarı sınıflandırması, belirleme
-ms.prod: m365-security
+title: Uç Nokta için Microsoft Defender'de tehdit koruma raporu
+description: Tehdit koruma raporunu kullanarak uyarı algılamalarını, kategorilerini ve önem derecesini izleme
+keywords: uyarı algılama, kaynak, kategoriye göre uyarı, uyarı önem derecesi, uyarı sınıflandırması, belirleme
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,38 +13,38 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 55a620343aa7cda05def64acc9027925aaa96a1e
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 2e920be103f3008f7a3669d9d6913007cd5e9943
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472605"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585410"
 ---
-# <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Yeni Uç Nokta için Microsoft Defender'de tehdit Uç Nokta için Microsoft Defender
+# <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de tehdit koruma raporu
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-Tehdit koruması raporu, kurumda oluşturulan uyarılar hakkında üst düzey bilgiler sağlar. Rapor, zaman içinde algılama kaynaklarını, kategorileri, önem önemlerini, durumları, sınıflandırmaları ve uyarıların belirlenmesini gösteren popüler bilgileri içerir.
+Tehdit koruması raporu, kuruluşunuzda oluşturulan uyarılar hakkında üst düzey bilgiler sağlar. Rapor, zaman içinde uyarıların algılama kaynaklarını, kategorilerini, önem derecelerini, durumlarını, sınıflandırmalarını ve belirlemelerini gösteren popüler bilgileri içerir.
 
-Pano iki bölüm halinde yapılandırılmıştır:
+Pano iki bölümde yapılandırılmıştır:
 
 :::image type="content" source="images/threat-protection-reports.png" alt-text="Tehdit koruması raporu" lightbox="images/threat-protection-reports.png":::
 
 Bölüm|Açıklama
 ---|---
-1|Uyarılar eğilimleri
+1|Uyarı eğilimleri
 2|Uyarı özeti
 
-## <a name="alert-trends"></a>Eğilimleri uyarın
-Varsayılan olarak, uyarı eğilimleri 30 günlük dönemdeki uyarı bilgilerini en son tam gün içinde sona erdirer. Kuruluşta oluşan eğilimlere daha iyi bir bakış açısı elde etmek için gösterilen zaman dönemini ayarlayarak raporlama dönemine ince ayarlarabilirsiniz. Zaman aralığını ayarlamak için, açılan liste seçeneklerinden bir zaman aralığı seçin:
+## <a name="alert-trends"></a>Uyarı eğilimleri
+Varsayılan olarak, uyarı eğilimleri en son tam gün ile biten 30 günlük dönemdeki uyarı bilgilerini görüntüler. Kuruluşunuzda gerçekleşen eğilimlere daha iyi bir bakış açısı elde etmek için, gösterilen zaman aralığını ayarlayarak raporlama dönemine ince ayar yapabilirsiniz. Zaman aralığını ayarlamak için açılan seçeneklerden bir zaman aralığı seçin:
 
 - 30 gün
 - 3 ay
@@ -56,37 +56,37 @@ Varsayılan olarak, uyarı eğilimleri 30 günlük dönemdeki uyarı bilgilerini
 
 ## <a name="alert-summary"></a>Uyarı özeti
 
-Uyarı eğilimleri popüler uyarı bilgilerini gösterirken, uyarı özeti geçerli gün kapsamındaki uyarı bilgilerini gösterir.
+Uyarı eğilimleri popüler uyarı bilgilerini gösterirken, uyarı özetinde geçerli güne kadar kapsamı belirlenmiş uyarı bilgileri gösterilir.
 
- Uyarı özeti, ilgili filtrenin uygulandığı belirli bir uyarı kuyruğunda detaya gitmelerini sağlar. Örneğin, Algılama kaynakları EDR çubuğundaki Arama çubuğuna tıklanması, yalnızca algılama algılamaları sonucunda oluşturulan uyarıların sonuçlarıyla birlikte uyarıların EDR getirir.
+ Uyarı özeti, ilgili filtrenin uygulandığı belirli bir uyarı kuyruğunda detaya gitmenizi sağlar. Örneğin, Algılama kaynakları kartında EDR çubuğuna tıklanması, yalnızca EDR algılamalarından oluşturulan uyarıları gösteren sonuçlarla birlikte uyarılar kuyruğunu size getirir.
 
 > [!NOTE]
-> Özet bölümüne yansıtilen veriler, geçerli tarihten 180 gün önce kapsamdadır. Örneğin, bugünün tarihi 5 Kasım 2019 ise, özet bölümündeki veriler 5 Mayıs 2019'dan 5 Kasım 2019'a kadar olan sayıları yansıtacak.
+> Özet bölümüne yansıtılan verilerin kapsamı geçerli tarihten 180 gün öncesine kadar belirlenmiştir. Örneğin bugünün tarihi 5 Kasım 2019 ise, özet bölümündeki veriler 5 Mayıs 2019 ile 5 Kasım 2019 arasında başlayan sayıları yansıtır.
 >
 > Eğilimler bölümüne uygulanan filtre özet bölümüne uygulanmaz.
 
 ## <a name="alert-attributes"></a>Uyarı öznitelikleri
 
-Rapor, aşağıdaki uyarı özniteliklerini görüntüleyen kartlardan yapılır:
+Rapor, aşağıdaki uyarı özniteliklerini görüntüleyen kartlardan oluşur:
 
-- **Algılama kaynakları**: Uyarıları tetiklemek için alıcılar tarafından kullanılan verileri sağlayan algılayıcılar ve Uç Nokta için Microsoft Defender teknolojileri hakkında bilgi gösterir.
-- **Tehdit kategorileri**: Güvenlik işlemleriniz için olası odak alanlarını gösteren uyarıları tetikleyen tehdit veya saldırı etkinlik türlerini gösterir.
-- **Önem derecesi**: Uyarıların önem düzeyi gösterir ve uyarıların, organizasyon açısından tehditlere yönelik kolektif olası etkilerini ve bu uyarıların yanıt düzeyini gösterir.
-- **Durum**: El ile uyarı yanıtlarının verimliliğini ve otomatik düzeltmenin (etkinse) ne kadar verimli olduğunu gösteren uyarıların çözüm durumunu gösterir.
-- **Sınıflandırma & belirleme**: Uyarıları gerçek tehdit (doğru uyarılar) veya yanlış algılama (yanlış uyarılar) olarak sınıflandırılmış olun, çözüm üzerine nasıl sınıflandırılmış olduğunu gösterir. Bu kartlarda, çözülmüş uyarıların belirlenmesi, bulunan gerçek tehdit türleri veya yanlış algılanmış yasal etkinlikler gibi ek içgörüler de gösterir.
+- **Algılama kaynakları**: uyarıları tetikleme amacıyla Uç Nokta için Microsoft Defender tarafından kullanılan verileri sağlayan algılayıcılar ve algılama teknolojileri hakkındaki bilgileri gösterir.
+- **Tehdit kategorileri**: Uyarıları tetikleyen tehdit veya saldırı etkinliği türlerini gösterir ve bu da güvenlik işlemleriniz için olası odak alanlarını gösterir.
+- **Önem derecesi**: Tehditlerin kuruluşunuza yönelik toplu olası etkisini ve bunları ele almak için gereken yanıt düzeyini gösteren uyarıların önem derecesini gösterir.
+- **Durum**: Uyarıların çözüm durumunu gösterir; el ile verilen uyarı yanıtlarınızın ve otomatik düzeltmenin verimliliğini gösterir (etkinleştirilirse).
+- **Sınıflandırma & belirleme**: Çözüme göre uyarıları gerçek tehditler (doğru uyarılar) veya yanlış algılamalar (yanlış uyarılar) olarak sınıflandırmanız fark ederek nasıl sınıflandırdığınız gösterilir. Bu kartlar, bulunan gerçek tehdit türleri veya yanlış algılanan meşru etkinlikler gibi ek içgörüler sağlayarak çözümlenen uyarıların belirlenmesini de gösterir.
 
-## <a name="filter-data"></a>Verilere filtre uygulama
+## <a name="filter-data"></a>Verileri filtreleme
 
-Belirli özniteliklere yönelik uyarıları eklemek veya dışarıda tutmak için sağlanan filtreleri kullanın.
+Belirli özniteliklere sahip uyarıları dahil etmek veya hariç tutmak için sağlanan filtreleri kullanın.
 
 > [!NOTE]
-> Bu filtreler **rapora** tüm kartlar için uygulanır.
+> Bu filtreler rapordaki **tüm** kartlar için geçerlidir.
 
-Örneğin, yalnızca yüksek önem düzeyi uyarıları ile ilgili verileri göstermek için:
+Örneğin, yalnızca yüksek önem dereceli uyarılarla ilgili verileri göstermek için:
 
-1. Uyarılar **için & Filtreleri ve** \> **Önem Derecesi** \> **> altında Yüksek'i** **seçin**.
-2. Önem Derecesi'nin altındaki diğer tüm **seçeneklerin seçiminin** kaldırıldığından emin olmak.
-3. **Uygula'ya seçin**.
+1. **Olaylar & uyarılar** \> **Uyarı** \> **Filtreleri > Önem Derecesi'nin** altında **Yüksek'i** seçin.
+2. **Önem Derecesi** altındaki diğer tüm seçeneklerin seçimi kaldırıldığından emin olun.
+3. **Uygula'yı** seçin.
 
 ## <a name="related-topic"></a>İlgili konu
 

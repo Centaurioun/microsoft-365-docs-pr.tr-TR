@@ -2,7 +2,7 @@
 title: Makine varlığı API'sini güncelleştirme
 description: Bu API'yi kullanarak makine etiketlerini güncelleştirmeyi öğrenin. Etiketleri ve cihaz değeri özelliklerini güncelleştirebilirsiniz.
 keywords: api'ler, graf api'si, desteklenen API'ler, alma, uyarı, bilgi, kimlik
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 5674f9b8038bba646d86b02fe775525ad433dcac
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: a7f24d69d8be5ce996c902fa00b6fdde05c6905d
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67330685"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577023"
 ---
 # <a name="update-machine"></a>Makineyi güncelleştir 
 

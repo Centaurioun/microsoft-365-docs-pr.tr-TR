@@ -1,26 +1,26 @@
 ---
-title: İçerik türlerini hub'a itme
-description: İçerik türlerini hub'a itme hakkında bilgi
+title: İçerik türlerini hub'a gönderme
+description: İçerik türlerini hub'a göndermeyi öğrenin
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 4a7a84023f3155c2b6f1405a3da5d8c5776d0047
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f3e3e314d0527e48cb2566b45e48f2e7158f0cf4
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322065"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584627"
 ---
-# <a name="push-content-types-to-a-hub"></a>İçerik türlerini hub'a itme
+# <a name="push-content-types-to-a-hub"></a>İçerik türlerini hub'a gönderme
 
 </br>
 
@@ -29,21 +29,21 @@ ms.locfileid: "63322065"
 </br>
 
 
-Önemli içerik türlerinin daha tutarlı bir şekilde kullanılabilir SharePoint için, bunları seçtiğiniz hub'lara basabilirsiniz. İçerik türleri itilirken, bu türler merkez ile ilişkili sitelerde oluşturulmuş tüm yeni listelere ve kitaplıklara ve hub'a eklenen tüm yeni sitelere otomatik olarak eklenir. Bu özellik için lisans [SharePoint Syntex](index.md) gerekir.
+Önemli içerik türlerini SharePoint kitaplıkları ve listelerinde daha tutarlı bir şekilde kullanılabilir hale getirmek için bunları seçtiğiniz hub'lara gönderebilirsiniz. İçerik türlerinin gönderilmesi, bunları otomatik olarak hub ile ilişkilendirilmiş sitelerde oluşturulan tüm yeni listelere ve kitaplıklara ve hub'a eklenen tüm yeni sitelere ekler. Bu özellik [için SharePoint Syntex](index.md) lisansı gerekir.
 
-Bu özelliğin çalışması için, yayımlanan içerik türlerinin zaten yayımlanmış olması gerekir.
+Bu özelliğin çalışması için gönderilen içerik türlerinin zaten yayımlanması gerekir.
 
-İçerik türlerini hub'lara itmek için
+İçerik türlerini hub'lara göndermek için
 
-1. genel yönetim SharePoint, İçerik **hizmetleri'ni genişletin ve** ardından İçerik türü <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">**galerisi'ni seçin**</a>.
-2. Hub'lara itmek istediğiniz içerik türünü seçin.
-3. Komut **çubuğunda** Düzenle'yi seçin.
-4. Merkez **siteleri seç'i seçin**.
-5. İstediğiniz merkez sitelerini seçin ve ardından Tamam'ı **seçin**.
+1. SharePoint yönetim merkezinde **İçerik hizmetleri'ni** genişletin ve <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">**İçerik türü galerisi'ni**</a> seçin.
+2. Hub'lara göndermek istediğiniz içerik türünü seçin.
+3. Komut çubuğunda **Düzenle'yi** seçin.
+4. **Hub sitelerini seçin'i** seçin.
+5. İstediğiniz hub sitelerini seçin ve ardından **Tamam'ı** seçin.
 6. **Kaydet**'i seçin.
 
-Bir içerik türünü var olan bir hub'a & ilişkili siteleri için ilk kez bir bağlantı kullanırsanız, ayarların sitede güncelleştirilme süresi, hub'ın veya ilişkili sitelerin ziyaret güncelleştirmesi bir saat kadar zaman alır. Hub ile yapılan tüm yeni ilişkilendirmeler bu beklemeyi gerektirmez ve ayarların birkaç dakika içinde yansıttır yan tüm ayarlarınız olur.
+İçerik türünü mevcut bir hub'a & mevcut ilişkili sitelerine ilk kez gönderdiğinizde, ayarların sitede güncelleştirilip güncelleştirilmediğinden, hub'ın veya ilişkili sitelerin ziyaretinden itibaren bir saat kadar sürebilir. Hub'a yönelik yeni ilişkilendirmeler için bu bekleme gerekmez ve ayarlar birkaç dakika içinde yansıtılır.
 
-Ayarlar güncelleştirildikten sonra, bu ayarların olduğu içerik türü birkaç dakika içinde merkez ile yeni ilişkili tüm sitelerde kullanılabilir olacak. Varsayılan kitaplık görünümü, otomatik olarak oluşturulan bu görünümlerden biri olarak değiştirilir. Aynı kitaplı kitaplıma itilen birden çok içerik türü varsa, en son içerik türleri (bu içerik türlerini bu kitaplığın ait olduğu hub'a itme eyleminin sırasına bağlı olarak), varsayılan görünüm olarak ayarlanır.  Ardından, oluşturulan tüm yeni liste veya kitaplıklar, oluşturduktan sonra birkaç dakika içinde içerik türüne otomatik olarak eklenir. Bir belge kitaplığına, ancak doğrudan veya dolaylı olarak Belge içerik türünden türetilen ve bir içerik türü listeye yalnızca doğrudan veya dolaylı olarak Belge içerik türünden türetilen bir içerik türü eklenmezse eklenecektir.
+Ayarlar güncelleştirildikten sonra, bu ayarlara sahip içerik türü birkaç dakika içinde hub ile yeni ilişkilendirilen herhangi bir sitede kullanılabilir. Varsayılan kitaplık görünümü, otomatik olarak oluşturulan bu görünümlerden biriyle değiştirilir. Aynı kitaplığa gönderilen birden çok içerik türü varsa, en son olan (bu içerik türlerini bu kitaplığın ait olduğu hub'a gönderme eyleminin sırasına göre) varsayılan görünüm olarak ayarlanacaktır.  Ardından, oluşturulan tüm yeni liste veya kitaplıklar, oluşturulduktan sonra birkaç dakika içinde içerik türüne otomatik olarak eklenir. Gönderilen içerik türü belge kitaplığına yalnızca Belge içerik türünden doğrudan veya dolaylı olarak türetilirse eklenir ve bir içerik türü yalnızca Belge içerik türünden doğrudan veya dolaylı olarak türetilmezse listeye eklenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.

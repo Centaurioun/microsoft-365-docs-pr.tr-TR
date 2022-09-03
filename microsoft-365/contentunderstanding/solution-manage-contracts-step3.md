@@ -1,5 +1,5 @@
 ---
-title: Adım 3. Sözleşmelerinizi Power Automate akışı oluşturmak için Sözleşmelerinizi kullanma
+title: Adım 3. Anlaşmalarınızı işlemek üzere akış oluşturmak için Power Automate'i kullanma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,51 +7,51 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: Sözleşmelerinizi işlemeye Power Automate için Hızlı Çözüm'den nasıl Microsoft 365 öğrenin.
-ms.openlocfilehash: d83fb6e5ca911cbafc6f064c615ab15ae0f570c7
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+description: Microsoft 365 çözümü kullanarak sözleşmelerinizi işlemek üzere akışınızı oluşturmak için Power Automate'i kullanmayı öğrenin.
+ms.openlocfilehash: 0a449fbac6fe7a0dd9c66e49a0ba6dd57b649b15
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "63010824"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578862"
 ---
-# <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Adım 3. Sözleşmelerinizi Power Automate akışı oluşturmak için Sözleşmelerinizi kullanma
+# <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Adım 3. Anlaşmalarınızı işlemek üzere akış oluşturmak için Power Automate'i kullanma
 
-Sözleşme Yönetimi kanalınızı oluşturdunız ve belge kitaplığınıza SharePoint ekleyebilirsiniz. Sonraki adım, sözleşmelerinizi işlemeye Power Automate bir akış oluşturmak, SharePoint Syntex modelinizin tanımını ve sınıflarını oluşturmasıdır. Bu adımı, belge [kitaplığınıza bir Power Automate akışı oluşturarak SharePoint ebilirsiniz](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
+Sözleşme Yönetimi kanalınızı oluşturdunuz ve SharePoint belge kitaplığınızı iliştirdiniz. Sonraki adım, SharePoint Syntex modelinizin tanımladığını ve sınıflaştırdığını sözleşmelerinizi işlemek için bir Power Automate akışı oluşturmaktır. [SharePoint belge kitaplığınızda bir Power Automate akışı oluşturarak](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01) bu adımı gerçekleştirebilirsiniz.
 
-Sözleşme yönetimi çözümünüz için, aşağıdaki eylemleri Power Automate bir sözleşme akışı oluşturmak istiyoruz:
+Sözleşme yönetimi çözümünüz için aşağıdaki eylemleri gerçekleştirmek üzere bir Power Automate akışı oluşturmak istiyorsunuz:
 
--  Bir sözleşme, sınıf modeliniz tarafından SharePoint Syntex sonra, sözleşme durumunu Gözden geçirmede **olarak değiştirebilirsiniz**.
-- Sözleşme daha sonra gözden geçirilir ve onaylanır veya reddedilir.
-- Onaylanan sözleşmeler için sözleşme bilgileri, ödeme işlemeye ilişkin bir sekmeye yayınlanır.
-- Reddedilen sözleşmeler için, ekip daha fazla çözümleme yapmak için bu durumu bilgilemektedir. 
+-  Bir sözleşme SharePoint Syntex modeliniz tarafından sınıflandırıldıktan sonra sözleşme durumunu **Gözden geçirildi** olarak değiştirin.
+- Ardından sözleşme gözden geçirilir ve onaylanır veya reddedilir.
+- Onaylanan sözleşmeler için, sözleşme bilgileri ödeme işleme için bir sekmeye nakledilir.
+- Reddedilen sözleşmeler için takıma daha fazla analiz için bildirim gönderilir. 
 
-Aşağıdaki diyagramda sözleşme yönetim Power Automate akış akışlarını gösterir.
+Aşağıdaki diyagramda, sözleşme yönetimi çözümü için Power Automate akışı gösterilmektedir.
 
-![Flow gösteren bir diyagram oluşturun.](../media/content-understanding/flow-entire-process.png)
+![Çözümün tamamını gösteren akış diyagramı.](../media/content-understanding/flow-entire-process.png)
 
 ## <a name="prepare-your-contract-for-review"></a>Sözleşmenizi gözden geçirme için hazırlama
 
-Bir sözleşme, belgenizi anlama modelinize göre tanımlandı SharePoint Syntex sınıflandırılmışsa, Power Automate akışı önce durumu Gözden geçirmede **olarak değiştirir**.
+Bir sözleşme SharePoint Syntex belge anlama modelinize göre tanımlanıp sınıflandırıldığında Power Automate akışı önce durumu **Gözden geçirildi** olarak değiştirir.
 
 ![Güncelleştirme durumu.](../media/content-understanding/flow-overview.png)
 
-Dosyayı gözden geçirdikten sonra, durum değerini Gözden geçirildi **olarak değiştirebilirsiniz**.
+Dosyayı kullanıma aldıktan sonra durum değerini **Gözden geçirildi** olarak değiştirin.
 
 ![Gözden geçirme durumunda.](../media/content-understanding/in-review.png)
 
-Sonraki adım, sözleşmenin gözden geçirmeyi bekleyen ve Sözleşme Yönetimi kanalına göndererek, uyarlanabilir bir kart oluşturmaktır.
+Sonraki adım, sözleşmenin gözden geçirmeyi beklediğini ve Sözleşme Yönetimi kanalına göndermeyi beklediğini belirten uyarlamalı bir kart oluşturmaktır.
 
 ![Sözleşme gözden geçirme gönderisi.](../media/content-understanding/contract-approval-post.png)
 
 
-![Gözden geçirmek için uyarlanabilir kart oluşturun.](../media/content-understanding/adaptive-card.png)
+![Gözden geçirmek için uyarlamalı kart oluşturun.](../media/content-understanding/adaptive-card.png)
 
-Aşağıdaki kod, iş akışında bu adım için kullanılan JSON Power Automate dir.
+Aşağıdaki kod, Power Automate akışında bu adım için kullanılan JSON kodudur.
 
 ```JSON
 {
@@ -129,51 +129,51 @@ Aşağıdaki kod, iş akışında bu adım için kullanılan JSON Power Automate
 
 ## <a name="conditional-context"></a>Koşullu bağlam
 
-Akışınıza göre, bundan sonra sözleşmenizin onaylandırılacak veya reddedilecek bir  [koşul oluşturmanız](#if-the-contract-is-approved) [gerekir](#if-the-contract-is-rejected).
+Akışınızda, daha sonra sözleşmenizin  [onaylanacağı](#if-the-contract-is-approved) veya [reddedileceği](#if-the-contract-is-rejected) bir koşul oluşturmanız gerekir.
 
 ![Koşullu.](../media/content-understanding/condition.png)
 
 ## <a name="if-the-contract-is-approved"></a>Sözleşme onaylanırsa
 
-Bir sözleşme onaylandıktan sonra aşağıdakiler gerçekleşir:
+Bir sözleşme onaylandığında aşağıdaki işlemler gerçekleşir:
 
-- Sözleşmeler **sekmesinde** , sözleşme kartının durumu Onaylandı olarak **değişir**.
+- **Sözleşmeler** sekmesinde, sözleşme kartındaki durum **Onaylandı** olarak değişir.
 
    ![Kart durumu onaylandı.](../media/content-understanding/approved-contracts-tab.png)
 
-- Akışınız içinde durum Onaylandı olarak **değiştirilir**.
+- Akışınızda durum **Onaylandı** olarak değiştirilir.
 
-   ![Flow onaylandı.](../media/content-understanding/status-approved.png)
+   ![Akış durumu onaylandı.](../media/content-understanding/status-approved.png)
 
-- Bu çözümde, sözleşme verileri Ödeme için sekmesine **eklenir ve böylelikle** ödemelerin yönetilebilirsiniz. Bu işlem, akışın üçüncü taraf bir mali uygulama (örneğin, Dynamics CRM) ile ödeme sözleşmelerini göndermesine olanak verecek şekilde uzatılabilir.
+- Bu çözümde, ödemelerin yönetilebilmesi için sözleşme verileri **Ödeme İçin** sekmesine eklenecektir. Bu işlem, akışın üçüncü taraf bir finansal uygulama (örneğin, Dynamics CRM) tarafından ödeme için sözleşmeleri göndermesine izin verecek şekilde uzatılabilir.
 
    ![Sözleşme Ödeme'ye taşındı.](../media/content-understanding/for-payout.png)
 
-- Akış içinde, onaylanan sözleşmeleri Ödeme sekmesine taşımak için aşağıdaki **öğeyi oluşturun** .
+- Akışta, onaylanan sözleşmeleri **Ödeme İçin** sekmesine taşımak için aşağıdaki öğeyi oluşturursunuz.
 
-   ![Flow ödemeye taşımak için bir öğe seçin.](../media/content-understanding/ready-for-payout.png)
+   ![Ödeme Yöntemine taşınacak akış öğesi.](../media/content-understanding/ready-for-payout.png)
 
-    Yeni karttan gereken bilgilerle ilgili ifadeleri Teams aşağıdaki tabloda gösterilen değerleri kullanın.
+    Teams kartından gereken bilgilerin ifadelerini almak için aşağıdaki tabloda gösterilen değerleri kullanın.
  
     |Name     |Expression |
     |---------|-----------|
-    | Onay durumu  | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response)? ['submitActionId']         |
-    | Onaylandı     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response)? ['yanıtlayan'] ['displayName']        |
-    | Onay tarihi     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response)? ['responseTime']         |
-    | Açıklama ekleme     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response)? ['data']? ['acComments']         |
+    | Onay durumu  | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['submitActionId']         |
+    | Onaylanan     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['yanıtlayıcı'] ['displayName']        |
+    | Onay tarihi     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['responseTime']         |
+    | Açıklama ekleme     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['data']? ['acComments']         |
     
-    Aşağıdaki örnekte, formül kutusunun bir ifade yazmak için Power Automate şekilde olduğu görüntülenir.
+    Aşağıdaki örnekte, Power Automate'te ifade yazmak için formül kutusunun nasıl kullanılacağı gösterilmektedir.
 
-   ![Power Automate formülünü gösteren ekran görüntüsü.](../media/content-understanding/expression-formula-power-automate.png)    
+   ![Power Automate'te bir ifade formülünü gösteren ekran görüntüsü.](../media/content-understanding/expression-formula-power-automate.png)    
 
-- Sözleşmenin onaylandıktan sonra bir uyarlamalı kart oluşturulur ve Sözleşme Yönetimi kanalına gönderilen bir kart.
+- Sözleşmenin onaylandığını belirten uyarlamalı bir kart oluşturulur ve Sözleşme Yönetimi kanalına gönderilir.
 
-   ![Sözleşme onayı gönderildi.](../media/content-understanding/adaptive-card-approval.png)
+   ![Sözleşme onayı deftere nakledildi.](../media/content-understanding/adaptive-card-approval.png)
 
    ![Uyarlamalı kart onayı.](../media/content-understanding/adaptive-card.png)
 
 
-   Aşağıdaki kod, iş akışında bu adım için kullanılan JSON Power Automate dir.
+   Aşağıdaki kod, Power Automate akışında bu adım için kullanılan JSON kodudur.
 
 ```JSON
 { 
@@ -255,21 +255,21 @@ Bir sözleşme onaylandıktan sonra aşağıdakiler gerçekleşir:
 
 ## <a name="if-the-contract-is-rejected"></a>Sözleşme reddedilirse
 
-Bir sözleşme reddedilirse, aşağıdakiler gerçekleşir:
+Bir sözleşme reddedildiğinde aşağıdaki işlemler gerçekleşir:
 
-- Sözleşmeler **sekmesinde** , sözleşme kartının durumu Reddedildi olarak **değişir**.
+- **Sözleşmeler** sekmesinde, sözleşme kartındaki durum **Reddedildi** olarak değişir.
 
    ![Kart durumu reddedildi.](../media/content-understanding/rejected-contracts-tab.png)
 
-- Akışınıza göre, sözleşme dosyasını iade edin, durumu Reddedildi olarak **değiştirir ve sonra** da dosyayı yeniden iade edin.
+- Akışınızda sözleşme dosyasını kullanıma alır, durumu **Reddedildi** olarak değiştirir ve sonra dosyayı yeniden iade edebilirsiniz.
 
-   ![Flow dosyasında reddedildi durumunu gösterir.](../media/content-understanding/reject-flow.png)
+   ![Sözleşme dosyasında akış durumu reddedildi.](../media/content-understanding/reject-flow.png)
 
-- Akışınız içinde, sözleşmenin reddedilmiş olduğunu belirten uyarlanabilir bir kart oluşturun.
+- Akışınızda, sözleşmenin reddedildiğini belirten uyarlamalı bir kart oluşturursunuz.
 
-   ![Flow uyarlanabilir kartta reddedildi durumunu gösterir.](../media/content-understanding/reject-flow-item.png)
+   ![Akış durumu uyarlamalı kartta reddedildi durumunu gösterir.](../media/content-understanding/reject-flow-item.png)
 
-Aşağıdaki kod, iş akışında bu adım için kullanılan JSON Power Automate dir.
+Aşağıdaki kod, Power Automate akışında bu adım için kullanılan JSON kodudur.
 
 ```JSON
 { 
@@ -349,6 +349,6 @@ Aşağıdaki kod, iş akışında bu adım için kullanılan JSON Power Automate
 }
 ```
 
-- Kart Sözleşme Yönetimi kanalına gönderildi.
+- Kart Sözleşme Yönetimi kanalına gönderilir.
 
-   ![Flow uyarlanabilir bir kart.](../media/content-understanding/rejected.png)
+   ![Reddedilmesi için akış uyarlamalı kart.](../media/content-understanding/rejected.png)

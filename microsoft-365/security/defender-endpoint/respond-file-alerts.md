@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender'da bir dosya üzerinde yanıt eylemleri gerçekleştirme
 description: Dosyayla ilgili uyarılarda bir dosyayı durdurup quarantinleyerek veya bir dosyayı engelleyerek ve etkinlik ayrıntılarını denetleyerek yanıt eylemleri gerçekleştirin.
 keywords: yanıt verme, durdurma ve karantinaya al, dosyayı engelle, derin analiz
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: a70602f9b482196ee949a8f9922f2979b04b3ff4
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.subservice: mde
+ms.openlocfilehash: 53f9516c327272d2bee517e1a4236caaaedbe736
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669308"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581656"
 ---
 # <a name="take-response-actions-on-a-file"></a>Dosyada yanıt eylemleri gerçekleştirin
 
@@ -69,7 +69,7 @@ Kötü amaçlı işlemi durdurarak ve dosyanın gözlemlendiği yerde durarak ku
 >
 > - Üzerinde işlem yaptığınız cihaz Windows 10, sürüm 1703 veya üzerini çalıştırıyor ve Windows 11
 > - Dosya güvenilen üçüncü taraf yayımcılara ait değil veya Microsoft tarafından imzalanmaz
-> - Microsoft Defender Virüsten Koruma en azından Pasif modda çalışıyor olmalıdır. Daha fazla bilgi için bkz. [uyumluluk Microsoft Defender Virüsten Koruma](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - Microsoft Defender Virüsten Koruma en azından Pasif modda çalışıyor olmalıdır. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma uyumluluğu](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 **Dosyayı Durdur ve Karantinaya Al** eylemi, çalışan işlemleri durdurmayı, dosyaları quarantining'i ve kayıt defteri anahtarları gibi kalıcı verileri silmeyi içerir.
 
@@ -151,11 +151,11 @@ Varsayılan olarak, karantinadaki dosyaları indirebilmeniz gerekir.
 
 ### <a name="download-quarantined-files"></a>Karantinaya alınan dosyaları indirme
 
-Microsoft Defender Virüsten Koruma veya güvenlik ekibiniz tarafından karantinaya alınan dosyalar[, örnek gönderim yapılandırmalarınıza](enable-cloud-protection-microsoft-defender-antivirus.md) göre uyumlu bir şekilde kaydedilir. Güvenlik ekibiniz dosyaları doğrudan dosyanın ayrıntı sayfasından "Dosyayı indir" düğmesi aracılığıyla indirebilir. **Bu özellik varsayılan olarak 'Açık'tır**.
+Microsoft Defender Virüsten Koruma veya güvenlik ekibiniz tarafından karantinaya alınan dosyalar [, örnek gönderim yapılandırmalarınıza](enable-cloud-protection-microsoft-defender-antivirus.md) göre uyumlu bir şekilde kaydedilir. Güvenlik ekibiniz dosyaları doğrudan dosyanın ayrıntı sayfasından "Dosyayı indir" düğmesi aracılığıyla indirebilir. **Bu özellik varsayılan olarak 'Açık'tır**.
 
 Konum, kuruluşunuzun coğrafi ayarlarına (AB, Birleşik Krallık veya ABD) bağlıdır. Karantinaya alınan bir dosya kuruluş başına yalnızca bir kez toplanır. Hizmet Güveni Portalı'ndan https://aka.ms/STPMicrosoft'un veri koruması hakkında daha fazla bilgi edinin.
 
-Bu ayarın açık olması, güvenlik ekiplerinin kötü olabilecek dosyaları incelemesine ve olayları hızlı ve daha az riskli bir şekilde araştırmalarına yardımcı olabilir. Ancak, bu ayarı kapatmanız gerekiyorsa, ayarı ayarlamak için **Ayarlar** \> **Uç Noktalar** \> **Gelişmiş özellikler** \> **Karantinaya alınan dosyaları indir'e** gidin. [Gelişmiş özellikler hakkında daha fazla bilgi edinin](advanced-features.md)
+Bu ayarın açık olması, güvenlik ekiplerinin kötü olabilecek dosyaları incelemesine ve olayları hızlı ve daha az riskli bir şekilde araştırmalarına yardımcı olabilir. Ancak, bu ayarı kapatmanız gerekiyorsa **Ayarlar** \> **Uç Noktalar** \> **Gelişmiş özellikler** \> **Karantinaya alınan dosyaları indir'e** giderek ayarı ayarlayın. [Gelişmiş özellikler hakkında daha fazla bilgi edinin](advanced-features.md)
 
 #### <a name="backing-up-quarantined-files"></a>Karantinaya alınan dosyaları yedekleme
 
@@ -170,7 +170,7 @@ Bu ayarın açık olması, güvenlik ekiplerinin kötü olabilecek dosyaları in
 > - Virüsten koruma altyapısı sürümü 1.1.17300.4 veya üzeridir. [Bkz. Aylık platform ve altyapı sürümleri](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 > - Bulut tabanlı koruma etkindir. Bkz [. Bulut tabanlı korumayı açma](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - Örnek gönderim açık
-> - Cihazların Windows 10 sürümü 1703 veya üzeri ya da Windows server 2016 veya 2019 ya da Windows Server 2022 veya Windows 11
+> - Cihazların Windows 10 sürümü 1703 veya üzeri ya da Windows Server 2016 veya 2019 ya da Windows Server 2022 ya da Windows 11
 
 ### <a name="collect-files"></a>Dosyaları toplama
 
@@ -198,7 +198,7 @@ Kötü amaçlı olabilecek dosyaları veya şüpheli kötü amaçlı yazılımla
 
 ### <a name="enable-the-block-file-feature"></a>Blok dosyası özelliğini etkinleştirme
 
-Dosyaları engellemeye başlamak için önce Ayarlar'de [**Engelle veya izin ver** özelliğini açmanız](advanced-features.md) gerekir.
+Dosyaları engellemeye başlamak için önce [Ayarlar'da **Engelle veya izin ver** özelliğini açmanız](advanced-features.md) gerekir.
 
 ### <a name="allow-or-block-file"></a>Dosyaya izin ver veya dosyayı engelle
 
@@ -210,7 +210,7 @@ Dosyalarda uyarıları engelleme ve tetikleme hakkında daha fazla bilgi için [
 
 Bir dosyayı engellemeyi durdurmak için göstergeyi kaldırın. Bunu, dosyanın profil sayfasındaki **Göstergeyi Düzenle** eylemi aracılığıyla yapabilirsiniz. Bu eylem, göstergeyi eklemeden önce **Gösterge Ekle** eylemiyle aynı konumda görünür.
 
-Ayrıca, **Ayarlar sayfasından, Kural** \> **Göstergeleri'nin** altında göstergeleri düzenleyebilirsiniz. Göstergeler bu alanda dosya karması tarafından listelenir.
+Ayrıca **, Ayarlar** sayfasında, **Kural** \> **Göstergeleri'nin** altında göstergeleri düzenleyebilirsiniz. Göstergeler bu alanda dosya karması tarafından listelenir.
 
 ## <a name="consult-a-threat-expert"></a>Tehdit uzmanına danışın
 

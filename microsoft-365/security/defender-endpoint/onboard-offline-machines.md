@@ -3,7 +3,7 @@ title: Uç Nokta için Microsoft Defender İnternet erişimi olmayan cihazları 
 ms.reviewer: ''
 description: algılayıcı verilerini Uç Nokta için Microsoft Defender algılayıcıya gönderebilmeleri için İnternet erişimi olmayan cihazları ekleme
 keywords: ekleme, sunucular, vm, şirket içi, oms ağ geçidi, log analytics, azure log analytics, mma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9c3dc16904672d32ab8399e693c2066b8e04c187
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.subservice: mde
+ms.openlocfilehash: fcfc84fe2cf4efa17087f166dc5d44a436103805
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969824"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580039"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender İnternet erişimi olmayan cihazları ekleme
 
@@ -31,7 +31,7 @@ ms.locfileid: "66969824"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Doğrudan İnternet bağlantısı olmayan cihazlar için önerilen yaklaşım ara sunucu çözümünün kullanılmasıdır. Önceki MMA tabanlı çözüm kullanılarak eklenen eski Windows cihazları için OMS ağ geçidi çözümünün kullanılması alternatif bir yaklaşım sağlar. Ekleme yöntemleri hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 - [Windows'un önceki sürümlerini ekleyin](/microsoft-365/security/defender-endpoint/onboard-downlevel)

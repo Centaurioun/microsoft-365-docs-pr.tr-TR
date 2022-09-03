@@ -1,12 +1,12 @@
 ---
-title: Ayarlar Grupları ile Microsoft 365 arasındaki etkileşimleri SharePoint
+title: Microsoft 365 Grupları ile SharePoint arasındaki etkileşimleri ayarlar
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -15,45 +15,45 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: Gruplar ve Grup grupları arasındaki Microsoft 365 etkileşimleri hakkında bilgi SharePoint
-ms.openlocfilehash: 76f3772685dbf67e61d68a47373f514ab2dabfbc
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+description: Microsoft 365 Grupları ve SharePoint arasındaki ayarlar etkileşimleri hakkında bilgi edinin
+ms.openlocfilehash: 8b17a868c31273a1e2ec4c5c8b8fbda8a59ef273
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "63005419"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579611"
 ---
-# <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Ayarlar Grupları ile Microsoft 365 arasındaki etkileşimleri SharePoint
+# <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Microsoft 365 Grupları ile SharePoint arasındaki etkileşimleri ayarlar
 
-Grup Gruplarında Microsoft 365 ayarları SharePoint, Microsoft 365 paylaşma ve grup ve ekip sitesi oluşturmayla ilgili ayarlar birbiriyle çakışır. Bu makalede, bu etkileşimlerin açıklamaları ve bu ayarlarla nasıl çalışıla ilgili en iyi yöntemler yer almaktadır.
+Microsoft 365'te özellikle paylaşım ve grup ve ekip sitesi oluşturmayla ilgili bazı Microsoft 365 Grupları ve SharePoint ayarları birbiriyle çakışıyor. Bu makale, bu etkileşimlerin açıklamalarını ve bu ayarlarla çalışmaya yönelik en iyi yöntemleri sağlar.
 
-![Venn diyagramında SharePoint, Yammer özellikleri vardır.](../media/groups-sharepoint-venn.png)
+![SharePoint, Yammer ve grup özelliklerinin Venn diyagramı.](../media/groups-sharepoint-venn.png)
 
-## <a name="the-effects-of-sharepoint-settings-on-microsoft-365-groups"></a>Gruplarda SharePoint ayarlarının Microsoft 365.
+## <a name="the-effects-of-sharepoint-settings-on-microsoft-365-groups"></a>SharePoint ayarlarının Microsoft 365 grupları üzerindeki etkileri
 
-|SharePoint ayarı|Açıklama|Grupların Microsoft 365 efekti|Öneri|
+|SharePoint ayarı|Açıklama|Microsoft 365 grupları üzerindeki etkisi|Öneri|
 |:-----------------|:----------|:-----------------------------|:-------------|
-|Kuruluş ve site için dış paylaşım|Sitelerin, dosyaların ve klasörlerin kuruluş dışındaki kişilerle paylaş verip paylaşılanamay olacağını belirler.|Grup SharePoint ayarları eşleşmezse, gruptaki konukların siteye erişimi engellenmiş olabilir veya grupta değil de, sitede dış erişim olabilir.|Paylaşım ayarlarını değiştirirken, hem Grup ayarlarını hem de SharePoint ekip siteleri için site ayarlarını kontrol edin.<br><br>Bkz [. Sitede konuklarla işbirliği yapma](./collaborate-in-site.md).|
-|Etki alanı izin verme/engelleme|Belirtilen etki alanlarıyla içeriğin paylaşılmasını izin verir veya önler.|Gruplar izin listeleri veya SharePoint tanımaz. E-posta izin verilmeyen etki SharePoint kullanıcılar, grup aracılığıyla SharePoint erişim elde edeylem.|Azure AD için etki alanı izinlistelerini veya engellemelerini yönetin ve SharePoint birlikte yönetin. Etki alanlarına izin verme ve engelleme işlemleri için kuruluş genelinde bir yönetim süreci oluşturun.<br><br>Etki [SharePoint ve](/sharepoint/restricted-domains-sharing) [Azure AD etki alanı ayarlarını değiştirme](/azure/active-directory/b2b/allow-deny-list)|
-|Yalnızca belirli güvenlik gruplarında yer alan kullanıcıların dışarıdan paylaşımda  olmasına izin verme|Siteleri, klasörleri ve dosyaları dışarıdan paylaşan güvenlik gruplarını belirtir.|Bu ayar, grup sahiplerinin grupları harici olarak paylaşmalarını etkilemez. Grup konukları, ilişkili sitenin SharePoint erişim iznine sahip olabilir.||
-|SharePoint paylaşımı ayarlarını değiştirme|Siteyi grup üyeliğinin dışında doğrudan kimlerin paylaştıranı belirler. Bu, grup veya site sahibi tarafından yapılandırılır.|Bu ayar grubu doğrudan etkilemez, ancak kullanıcıların bir siteye eklenmelerine ve diğer grup kaynaklarına erişimleri izin vermez|Sitenin paylaşımını doğrudan sınırlamak ve grup aracılığıyla site erişimini yönetmek için bu ayarı kullanmayı düşünebilirsiniz.|
-|Kullanıcıların ilk sayfadan ve son SharePoint site oluşturmasına izin OneDrive|Kullanıcıların yeni site oluştura olup SharePoint belirtir.|Bu ayar kapalı durumda olursa, kullanıcılar yine de grup oluşturarak grup bağlantılı ekip siteleri oluşturabilir.||
+|Kuruluş ve site için dış paylaşım|Sitelerin, dosyaların ve klasörlerin kuruluş dışındaki kişilerle paylaşılıp paylaşılmadığını belirler.|SharePoint ve grup ayarları eşleşmiyorsa, gruptaki konukların siteye erişimi engellenebilir veya dış erişim grupta değil, sitede kullanılabilir olabilir.|Paylaşım ayarlarını değiştirirken, gruba bağlı ekip siteleri için hem Gruplar ayarlarını hem de SharePoint site ayarlarını denetleyin.<br><br>Bkz. [Sitedeki konuklarla işbirliği yapma](./collaborate-in-site.md).|
+|Etki alanına izin ver/engelle|İçeriğin belirtilen etki alanlarıyla paylaşılmasına izin verir veya engeller.|Gruplar SharePoint izin verilenler listelerini veya blok listelerini tanımaz. SharePoint'te izin verilmeyen etki alanlarından kullanıcılar bir grup aracılığıyla SharePoint'e erişim sağlayabilir.|Azure AD ve SharePoint için etki alanı izin verilenler listelerini veya blok listelerini birlikte yönetin. Etki alanlarına izin vermek ve etki alanlarını engellemek için kuruluş genelinde bir idare süreci oluşturun.<br><br>Bkz[. SharePoint etki alanı ayarları](/sharepoint/restricted-domains-sharing) ve [Azure AD etki alanı ayarları](/azure/active-directory/b2b/allow-deny-list)|
+|Yalnızca belirli güvenlik gruplarındaki kullanıcıların harici olarak paylaşmasına izin ver|Siteleri, klasörleri ve dosyaları harici olarak paylaşabilecek güvenlik gruplarını belirtir.|Bu ayar, grupları dış olarak paylaşan grup sahiplerini etkilemez. Grup konukları ilişkili SharePoint sitesine erişebilir.||
+|SharePoint site paylaşım ayarları|Siteyi doğrudan grup üyeliği dışında paylaşabilecek kişileri belirler. Bu, grup veya site sahibi tarafından yapılandırılır.|Bu ayar grubu doğrudan etkilemez, ancak kullanıcıların bir siteye eklenmesine ve diğer grup kaynaklarına erişimi olmamasına izin verebilir|Site paylaşımını doğrudan sınırlamak ve grup üzerinden site erişimini yönetmek için bu ayarı kullanmayı göz önünde bulundurun.|
+|Kullanıcıların SharePoint başlangıç sayfasından ve OneDrive'dan site oluşturmasına izin verme|Kullanıcıların yeni SharePoint siteleri oluşturup oluşturamadığını belirtir.|Bu ayar kapalıysa, kullanıcılar grup oluşturarak gruba bağlı ekip siteleri oluşturmaya devam edebilir.||
 
-## <a name="the-effects-of-microsoft-365-groups-setting-on-sharepoint"></a>Çalışma Microsoft 365 grupları ayarının SharePoint
+## <a name="the-effects-of-microsoft-365-groups-setting-on-sharepoint"></a>SharePoint'te Microsoft 365 grupları ayarının etkileri
 
-|Microsoft 365 grupları ayarını ayarlama|Açıklama|Efektin SharePoint|Öneri|
+|Microsoft 365 grupları ayarı|Açıklama|SharePoint üzerindeki etkisi|Öneri|
 |:---------------------------|:----------|:-------------------|:-------------|
-|Adlandırma ilkeleri|Grup adı öneklerini ve soneklerini ve grup oluşturma için engellenen sözcükleri belirtir|İlkeler, grup bağlantılı ekip siteleri oluşturan kullanıcılar için zorunludur ancak diğer şablonlarla iletişim siteleri veya siteler oluşturmaz.|Gerekirse iletişim siteleri için ayrı adlandırma kılavuzu oluşturun.|
-|Grup konuk erişimi|Kuruluş dışındaki kişilerin gruplara eklen olup olacağını belirtir.|Grup SharePoint ayarları eşleşmezse, gruptaki konukların siteye erişimi engellenmiş olabilir veya grupta değil de, sitede dış erişim olabilir.|Paylaşım ayarlarını değiştirirken, hem Grup ayarlarını hem de SharePoint ekip siteleri için site ayarlarını kontrol edin.<br><br>Bkz [. Sitede konuklarla işbirliği yapma](./collaborate-in-site.md)|
-|Güvenlik grubuna göre grup oluşturma|Gruplar yalnızca belirli bir güvenlik grubunun üyeleri tarafından oluşturulabilir.|Güvenlik grubunun üyesi olmayan kullanıcılar grup bağlantılı bir ekip sitesi oluşturabilecektir.|Grup isteğinde bulunan işlemde site talepe ilişkin yönergeler olduğundan emin olun.|
-|Grup süre sonu ilkesi|Etkin olarak kullanılmadan grupların otomatik olarak silinecek olduğu bir zaman dönemini belirtir.|Grup silindiğinde, ilişkili SharePoint site de silinir. Bekletme ilkeleri tarafından korunan içerikler korunur.|Kullanılmayan grup ve sitelerden kaçınmak için süre sonu ilkelerini kullanın.|
+|Adlandırma ilkeleri|Grup adı ön eklerini ve soneklerini ve grup oluşturma için engellenen sözcükleri belirtir|İlkeler, grup bağlantılı ekip siteleri oluşturan kullanıcılar için uygulanır, ancak diğer şablonlarla iletişim siteleri veya siteler için uygulanmaz.|Gerekirse iletişim siteleri için ayrı adlandırma kılavuzu oluşturun.|
+|Grup konuk erişimi|Kuruluş dışındaki kişilerin gruplara eklenip eklenebileceğini belirtir.|SharePoint ve grup ayarları eşleşmiyorsa, gruptaki konukların siteye erişimi engellenebilir veya dış erişim grupta değil, sitede kullanılabilir olabilir.|Paylaşım ayarlarını değiştirirken, gruba bağlı ekip siteleri için hem Gruplar ayarlarını hem de SharePoint site ayarlarını denetleyin.<br><br>Bkz. [Sitedeki konuklarla işbirliği yapma](./collaborate-in-site.md)|
+|Güvenlik grubuna göre grup oluşturma|Gruplar yalnızca belirli bir güvenlik grubunun üyeleri tarafından oluşturulabilir.|Güvenlik grubunun üyesi olmayan kullanıcılar, gruba bağlı bir ekip sitesi oluşturamaz.|Grup isteme işleminizde site isteğinde bulunma yönergelerinin bulunduğuna emin olun.|
+|Grup süre sonu ilkesi|Etkin olarak kullanılmayan grupların otomatik olarak silineceği süreyi belirtir.|Grup silindiğinde, ilişkili SharePoint sitesi de silinir. Bekletme ilkeleri tarafından korunan içerik korunur.|Kullanılmayan grupların ve sitelerin yayılmasını önlemek için süre sonu ilkelerini kullanın.|
 
 ## <a name="related-topics"></a>İlgili konular
 
-[İşbirliği yönetim planlaması önerileri](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
+[İşbirliği idaresi planlama önerileri](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
-[İşbirliği yönetim planınızı oluşturma](collaboration-governance-first.md)
+[İşbirliği idare planınızı oluşturma](collaboration-governance-first.md)
 
-[Kuruluş dışındaki çalışanlarla işbirliği](./collaborate-with-people-outside-your-organization.md)
+[Kuruluşunuzun dışındaki kişilerle işbirliği](./collaborate-with-people-outside-your-organization.md)
 
-[Web sitesinde site SharePoint](/sharepoint/manage-site-creation)
+[SharePoint'te site oluşturmayı yönetme](/sharepoint/manage-site-creation)

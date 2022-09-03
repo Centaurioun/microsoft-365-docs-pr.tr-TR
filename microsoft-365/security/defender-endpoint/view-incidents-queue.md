@@ -3,7 +3,7 @@ title: Olay sırasını görüntüleyin ve düzenleyin
 ms.reviewer: ''
 description: Olay listesine bakın ve listeyi sınırlamak ve daha odaklanmış bir görünüm elde etmek için filtre uygulamayı öğrenin.
 keywords: görüntüleme, düzenleme, olaylar, toplama, araştırma, kuyruk, ttp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: a2d75b935c19a20c37ecdbdb77feff73bbed4a79
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.subservice: mde
+ms.openlocfilehash: 079b1272d88098bd64f0b34056ee085ca9409363
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714651"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585366"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Uç Nokta için Microsoft Defender Olayları sırasını görüntüleme ve düzenleme
 

@@ -1,11 +1,11 @@
 ---
-title: Adım 2. Kurumsal kiracılar için Microsoft 365 ağınız için en iyi ağ
+title: Adım 2. Kurumsal kiracılar için Microsoft 365'iniz için en iyi ağ
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -15,168 +15,168 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - Ent_Solutions
-description: Kiracınıza ağ erişimini en Microsoft 365.
-ms.openlocfilehash: 2ee0f5cd784112909cbba465b94031ac2429963f
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+description: Microsoft 365 kiracılarınıza ağ erişimini iyileştirin.
+ms.openlocfilehash: f9b5bd30ace8044f1c36e5a1b190ab3d6a4c6203
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "63011787"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579500"
 ---
-# <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Adım 2. Kurumsal kiracılar için Microsoft 365 ağınız için en iyi ağ
+# <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Adım 2. Kurumsal kiracılar için Microsoft 365'iniz için en iyi ağ
 
-Microsoft 365 uygulamaları, Teams ve Exchange Online gibi bulut üretkenlik uygulamalarının yanı sıra birçok Microsoft Intune kimlik ve güvenlik hizmetlerini de Microsoft Azure. Bu bulut tabanlı hizmetlerin hepsi, şirket içi ağ veya İnternet'in herhangi bir yerindeki istemci cihazlarından gelen bağlantıların güvenliğine, performansına ve güvenilirliğine güvenir. 
+Kuruluşlar için Microsoft 365, Teams ve Exchange Online gibi bulut üretkenlik uygulamalarını ve Microsoft Intune yanı sıra Microsoft Azure'ın birçok kimlik ve güvenlik hizmetini içerir. Bu bulut tabanlı hizmetlerin tümü, şirket içi ağınızdaki istemci cihazlardan veya İnternet'te herhangi bir konumdan gelen bağlantıların güvenliğine, performansına ve güvenilirliğine dayanır. 
 
-Kiracınız için ağ erişimini en iyi duruma getirmek için şunları gerekir:
+Kiracınızın ağ erişimini iyileştirmek için şunları yapmanız gerekir:
 
-- Şirket içi kullanıcılarınız ve Microsoft Genel Ağı'nın en yakın konumu arasındaki yolu en iyi duruma getirme.
-- Uzaktan erişim VPN çözümü kullanan uzak kullanıcılarınız için Microsoft Genel Ağa erişimi en iyi duruma getirme.
-- Ofis Analizler ağ çevresini tasarlamak için Ağ Ağı iletişimini kullanın.
-- Sitelerde barındırılan belirli varlıklara erişimi SharePoint en iyi duruma Office 365 CDN.
-- Proxy ve ağ uç cihazları, uç Microsoft 365 listesiyle güvenli trafiğin işleniyorlarını atlayan ve değişiklikler yapılırken listenin güncelleştiril sürecini otomatik hale edecek şekilde yapılandırın.
+- Şirket içi kullanıcılarınız ile Microsoft Global Network'e en yakın konum arasındaki yolu iyileştirin.
+- Uzaktan erişim VPN çözümü kullanan uzak kullanıcılarınız için Microsoft Genel Ağı'na erişimi iyileştirin.
+- Ofis konumlarınızın ağ çevresini tasarlamak için Ağ İçgörüleri'ni kullanın.
+- Office 365 CDN ile SharePoint sitelerinde barındırılan belirli varlıklara erişimi iyileştirin.
+- Uç noktalar listesiyle Microsoft 365 güvenilen trafiği için işlemeyi atlamak için ara sunucu ve ağ uç cihazlarını yapılandırın ve değişiklikler yapıldıkçe listenin güncelleştirilmesini otomatikleştirin.
 
-## <a name="enterprise-on-premises-workers"></a>Enterprise çalışanları
+## <a name="enterprise-on-premises-workers"></a>Kurumsal şirket içi çalışanlar
 
-Kurumsal ağlarda, istemciler ve en yakın ağ uç noktaları arasında en yüksek performans gösteren ağ erişimini etkinleştirerek son kullanıcı Microsoft 365 en iyi duruma getirmelisiniz. Son kullanıcı deneyiminin kalitesi, doğrudan kullanıcının kullanmakta olduğu uygulamanın performansı ve yanıt süresiyle ilgilidir. Örneğin, Microsoft Teams görüşmeleri, konferansları ve paylaşılan ekran işbirliğinin hatasız olması için düşük gecikme süresine dayandırılır.
+Kurumsal ağlar için, istemcilerle en yakın Microsoft 365 uç noktaları arasında en yüksek performanslı ağ erişimini etkinleştirerek son kullanıcı deneyimini iyileştirmeniz gerekir. Son kullanıcı deneyiminin kalitesi, kullanıcının kullandığı uygulamanın performansı ve yanıt hızıyla doğrudan ilgilidir. Örneğin Microsoft Teams, kullanıcı telefon aramaları, konferanslar ve paylaşılan ekran işbirliklerinin sorunsuz olması için düşük gecikme süresine dayanır.
 
-Ağ tasarımında temel amaç, istemci cihazlarından Microsoft Global Network'e gidiş dönüş süresini (RTT) azaltarak gecikmeyi en aza indirmek ve Microsoft'un tüm veri merkezleriyle düşük gecikme süresi, ön kapı olarak bilinen yüksek kullanılabilir bulut uygulaması giriş noktalarıyla bağlantılı olan genel ağ omurgasını dünyanın her yerine yaslamalı olmalıdır.
+Ağ tasarımındaki birincil hedef, istemci cihazlardan Microsoft'un tüm veri merkezlerini düşük gecikme süresi, yüksek kullanılabilirlik bulut uygulaması giriş noktalarıyla birbirine bağlayan microsoft genel ağ omurgası olan Microsoft Global Network'e gidiş dönüş süresini (RTT) azaltarak gecikme süresini en aza indirmek olmalıdır.
 
-Geleneksel kurumsal ağın bir örneği şu şekildedir.
+Burada geleneksel kurumsal ağ örneği verilmiştir.
 
 ![İnternet'e merkezi erişime sahip geleneksel bir kurumsal ağ.](../media/tenant-management-overview/tenant-management-networking-traditional.png)
 
-Bu çizimde, şubeler geniş alan ağı (WAN) cihazları ve WAN omurgasını kullanarak merkezi bir ofislere bağlanmektedir. İnternet erişimi, merkezi ofisin ağ kenarında bulunan bir güvenlik veya ara sunucu cihazı ve İnternet servis sağlayıcısı (ISS) üzerindendir. İnternet üzerinden, Microsoft Global Network'te dünyanın her bölgesinde bir dizi ön kapı vardır. Kuruluşlar ara konumları, ek paket işleme ve trafik güvenliği için de kullanabilir. Bir kuruluşun kiracısı Microsoft 365 Microsoft Genel Ağı'nın içinde yer alıyor.
+Bu çizimde, şubeler geniş alan ağı (WAN) cihazları ve WAN omurgası aracılığıyla merkezi bir ofise bağlanır. İnternet erişimi, merkezi ofisin ağ kenarındaki bir güvenlik veya ara sunucu cihazı ve bir İnternet servis sağlayıcısı (ISS) üzerinden gerçekleştirilir. İnternet'te, Microsoft Global Network'ün dünyanın dört bir yanındaki bölgelerde bir dizi ön kapı vardır. Kuruluşlar ayrıca ek paket işleme ve trafik güvenliği için ara konumları da kullanabilir. Bir kuruluşun Microsoft 365 kiracısı Microsoft Global Network'ün içinde yer alır.
 
-Bulut hizmetleri için bu yapılandırmada Microsoft 365 sorunlar:
+Microsoft 365 bulut hizmetleri için bu yapılandırmayla ilgili sorunlar şunlardır:
 
-- Şubelerde bulunan kullanıcılar için trafik, yerel olmayan ön kapılara gönderilir ve bu da gecikme süresini artırıyor.
-- Trafiğin ara konumlara gönderilmesi, güvenilir trafikte yinelenen paket işlemesi gerçekleştirerek gecikmeyi artıran ağ A-T'leri oluşturabilir.
-- Ağ uç cihazları güvenilen trafikte gerekli olmayan ve yinelenen paket işlemesi gerçekleştirerek gecikmeyi artırıyor.
+- Şubelerdeki kullanıcılar için trafik yerel olmayan ön kapılara gönderilerek gecikme süresini artırır.
+- Ara konumlara trafik göndermek, güvenilen trafikte yinelenen paket işleme gerçekleştiren ağ saç tokaları oluşturarak gecikme süresini artırır.
+- Ağ uç cihazları, güvenilir trafikte gereksiz ve yinelenen paket işleme gerçekleştirerek gecikme süresini artırır.
 
-Ağ Microsoft 365 iyileştirmenin karmaşık olması gerek değildir. Birkaç temel ilkeyi kullanarak mümkün olan en iyi performansı elde etmek için:
+Microsoft 365 ağ performansını iyileştirmenin karmaşık olması gerekmez. Birkaç temel ilkeyi izleyerek mümkün olan en iyi performansı elde edebilirsiniz:
 
-- Microsoft Microsoft 365 hizmetlerini hedef alan güvenilen ağ trafiğini tanımlama.
-- Kullanıcıların ağ trafiğinin, kullanıcıların Microsoft 365 her konumdan İnternet'e yerel dalı çıkışlarına izin Microsoft 365.
-- Ağ Ağın Ası'larından kaçının.
-- Geçiş Microsoft 365, aracıları ve paket denetleme cihazlarını atlar.
+- Microsoft bulut hizmetlerine yönelik güvenilir trafik olan Microsoft 365 ağ trafiğini belirleyin.
+- Kullanıcıların Microsoft 365'e bağlandığı her konumdan İnternet'e microsoft 365 ağ trafiğinin yerel dal çıkışına izin verin.
+- Ağ saç tokalarından kaçının.
+- Microsoft 365 trafiğinin proxy'leri ve paket denetleme cihazlarını atlamasına izin verin.
 
-Bu ilkeleri uygulamaya devam ediyorsanız, iş ağınız için iyileştirilmiş bir Microsoft 365.
+Bu ilkeleri uygularsanız Microsoft 365 için iyileştirilmiş bir kurumsal ağ elde edersiniz.
 
-![İşletmeler için iyileştirilmiş kurumsal Microsoft 365.](../media/tenant-management-overview/tenant-management-networking-optimized.png)
+![Microsoft 365 için iyileştirilmiş bir kurumsal ağ.](../media/tenant-management-overview/tenant-management-networking-optimized.png)
 
-Bu çizimde, şubelerin yazılım tanımlı bir WAN cihazı (SDWAN) cihazı üzerinden kendi İnternet bağlantıları vardır ve bu ofisler güvenilen iş Microsoft 365 yakın ön kapıya güvenilir bir trafik gönderir. Merkezi ofiste, güvenilen Microsoft 365 güvenlik veya ara cihaz ve ara cihazlar artık kullanılmamaktadır.
+Bu çizimde şubelerin, bölgesel olarak en yakın ön kapıya güvenilir Microsoft 365 trafiği gönderen yazılım tanımlı WAN cihazı (SDWAN) cihazı aracılığıyla kendi İnternet bağlantıları vardır. Merkezi ofiste güvenilen Microsoft 365 trafiği güvenlik veya ara sunucu cihazını atlar ve ara cihazlar artık kullanılmaz.
 
-En iyi duruma getirilmiş yapılandırma, geleneksel bir kurumsal ağın gecikme sorunlarını şöyle çözer:
+İyileştirilmiş yapılandırmanın geleneksel bir kurumsal ağın gecikme sorunlarını nasıl çözdüğü aşağıda anlatılır:
 
-- Güvenilen Microsoft 365 WAN omurgasını atlar ve gecikme süresini azaltarak tüm ofislerin yerel ön kapılarına gönderilir.
-- Yinelenen paket işlemesi gerçekleştirmekte olan ağ geri yüklemeleri güvenilen Microsoft 365 için atlanır ve gecikme süresi kısalır.
-- Gerekli olmayan ve yinelenen paket işlemesi gerçekleştiren ağ uç cihazları güvenilen trafikte Microsoft 365 azaltarak atlanır.
+- Güvenilen Microsoft 365 trafiği WAN omurgasını atlar ve tüm ofisler için yerel ön kapılara gönderilerek gecikme süresini kısaltılır.
+- Yinelenen paket işleme gerçekleştiren ağ saç tokaları Microsoft 365 güvenilen trafiği için atlanır ve gecikme süresini kısaltır.
+- Gereksiz ve yinelenen paket işleme gerçekleştiren ağ uç cihazları, Microsoft 365 güvenilen trafiği için atlanır ve gecikme süresini kısaltır.
 
-Daha fazla bilgi için bkz. [Microsoft 365 bağlantısına genel bakış](../enterprise/microsoft-365-networking-overview.md).
+Daha fazla bilgi için bkz. [Microsoft 365 ağ bağlantısına genel bakış](../enterprise/microsoft-365-networking-overview.md).
 
-## <a name="remote-workers"></a>Uzaktan çalışanlar
+## <a name="remote-workers"></a>Uzak çalışanlar
 
-Uzaktan çalışanlarınız kuruluş ağınıza uzaktan erişim elde etmek için geleneksel bir VPN istemcisi kullanıyorsa VPN istemcisinin bölünmüş şifreleme desteğine sahip olduğunu doğrulayın. Bölünmüş bölme olmadan, uzaktan iş trafiğinizin hepsi VPN bağlantısı üzerinden gönderilir, bu trafik kuruluşun uç cihazlarına ilet olmalı, işlenmeli ve İnternet'e gönderilir. İşte bir örnek.
+Uzak çalışanlarınız kuruluş ağınıza uzaktan erişim elde etmek için geleneksel bir VPN istemcisi kullanıyorsa, VPN istemcisinin bölünmüş tünel desteğine sahip olduğunu doğrulayın. Bölünmüş tünel olmadan, tüm uzaktan çalışma trafiğiniz VPN bağlantısı üzerinden gönderilir; burada kuruluşunuzun uç cihazlarına iletilmesi, işlenmesi ve ardından İnternet'e gönderilmesi gerekir. Burada bir örnek verilmiştir.
 
-![VPN istemcilerinden gelen ağ trafiğine hiçbir şey olunmaz.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
+![Tünel oluşturmadan VPN istemcilerinden gelen ağ trafiği.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-Bu çizimde Microsoft 365 trafiğin, VPN istemcisinin fiziksel konumunun çok dışında bir Microsoft Global Network ön kapıya yönlendirilen dolaylı bir yol olması gerekir. Bu dolaylı yol ağ trafiğine gecikme ekler ve genel performansı düşürer. 
+Bu çizimde, Microsoft 365 trafiğinin kuruluşunuz üzerinden dolaylı bir yol alması gerekir ve bu yol VPN istemcisinin fiziksel konumundan uzak bir Microsoft Global Network ön kapısına iletilebilir. Bu dolaylı yol ağ trafiğine gecikme ekler ve genel performansı azaltır. 
 
-Bölünmüş bölmeyle, VPN istemcinizi kuruluş ağına VPN bağlantısı üzerinden gönderilen trafiğin belirli türlerini dışarıda bırakacak şekilde yapılandırabilirsiniz.
+Bölünmüş tünel ile VPN istemcinizi, belirli trafik türlerinin kuruluş ağına VPN bağlantısı üzerinden gönderilmesini dışlamak üzere yapılandırabilirsiniz.
 
-Bulut kaynaklarına erişimi Microsoft 365 için bölünmüş VPN istemcilerinizi yapılandırarak trafiği VPN bağlantısı üzerinden en iyi duruma Microsoft 365 uç noktalarını iyileştirmek için  kullanın. Daha fazla bilgi için bkz[. Office 365 uç noktası](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) kategorilerini [yapılandırma ve](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) Bölünmüş geçiş için kategori uç noktalarını en iyi duruma getirme listeleri.
+Microsoft 365 bulut kaynaklarına erişimi iyileştirmek için bölünmüş tünel VPN istemcilerinizi VPN bağlantısı üzerinden **En İyi Duruma Getir** kategorisi Microsoft 365 uç noktalarına trafiği hariç tutacak şekilde yapılandırın. Daha fazla bilgi için bkz. [uç nokta kategorilerini Office 365](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) ve bölünmüş tünel için kategori uç noktalarını iyileştirme [listeleri](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling).
 
-Bölünmüş olay için sonuçta ortaya çıkan trafik akışı yer alsa da bulut uygulamalarının trafiğin büyük bir Microsoft 365 VPN bağlantısını atlar.
+Aşağıda, Microsoft 365 bulut uygulamalarına giden trafiğin çoğunun VPN bağlantısını atladığı bölünmüş tünel için ortaya çıkan trafik akışı gösterilir.
 
-![VPN istemcilerinden gelen ağ trafiği ve tarak.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
+![Tünel ile VPN istemcilerinden gelen ağ trafiği.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
-Bu çizimde, VPN istemcisi doğrudan İnternet üzerinden Microsoft 365 Microsoft Genel Ağı'nın en yakın ön kapısını gönderir ve önemli bir bulut hizmeti trafiği alır.
+Bu çizimde, VPN istemcisi önemli Microsoft 365 bulut hizmeti trafiğini doğrudan İnternet üzerinden ve en yakın ön kapıya Microsoft Global Network'e gönderir ve alır.
 
-Daha fazla bilgi ve rehberlik için bkz. [VPN bölünmüş Office 365 kullanan uzak kullanıcılar için en iyi duruma getirme](../enterprise/microsoft-365-vpn-split-tunnel.md).
+Daha fazla bilgi ve kılavuz için bkz[. VPN bölünmüş tünel kullanarak uzak kullanıcılar için Office 365 bağlantısını iyileştirme](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
-## <a name="using-network-insights-preview"></a>Ağ bağlantı Analizler (önizleme) kullanma
+## <a name="using-network-insights-preview"></a>Network Insights'ı kullanma (önizleme)
 
-Ağ içgörüleri, ofis konumlarınızı Microsoft 365 ağ çevrelerini tasarlamanıza yardımcı olacak şekilde kiracınız tarafından toplanan performans ölçümleridir. Her içgörü, şirket içi kullanıcıların kiracınıza eriştiği her coğrafi konum için belirli bir soruna ilişkin performans özellikleri hakkında canlı ayrıntılar sağlar.
+Ağ içgörüleri, Microsoft 365 kiracınızdan toplanan ve ofis konumlarınız için ağ çevreleri tasarlamanıza yardımcı olan performans ölçümleridir. Her içgörü, şirket içi kullanıcıların kiracınıza eriştiği her coğrafi konum için belirtilen sorunun performans özellikleri hakkında canlı ayrıntılar sağlar.
 
-Kiracı için iki kiracı düzeyinde ağ içgörüleri gösterebilirsiniz:
+Kiracı için gösterilebilen iki kiracı düzeyi ağ içgörüleri vardır:
 
-- [Exchange sorundan etkilenen örnek bağlantılar](../enterprise/office-365-network-mac-perf-insights.md#exchange-sampled-connections-affected-by-connectivity-issues)
-- [SharePoint sorundan etkilenen örnek bağlantıların sayısı](../enterprise/office-365-network-mac-perf-insights.md#sharepoint-sampled-connections-affected-by-connectivity-issues)
+- [Bağlantı sorunlarından etkilenen Exchange örnekli bağlantıları](../enterprise/office-365-network-mac-perf-insights.md#exchange-sampled-connections-affected-by-connectivity-issues)
+- [Bağlantı sorunlarından etkilenen SharePoint örnekli bağlantıları](../enterprise/office-365-network-mac-perf-insights.md#sharepoint-sampled-connections-affected-by-connectivity-issues)
 
-Her ofis konumu için belirli ağ içgörüleri bunlardır:
+Her ofis konumu için belirli ağ içgörüleri şunlardır:
 
-- [Geri dönülen ağ çıkış](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
-- [Yakın gelecekte bulunan müşteriler için daha iyi performans algılandı](../enterprise/office-365-network-mac-perf-insights.md#better-performance-detected-for-customers-near-you)
-- [En iyi olmayan ön Exchange Online kapı kullanımı](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-exchange-online-service-front-door)
-- [En iyi olmayan çevrimiçi hizmet SharePoint ön kapı kullanımı](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-sharepoint-online-service-front-door)
-- [Ön kapılardan düşük SharePoint indirme hızı](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
-- [Çin kullanıcısı en iyi ağ çıkış](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
+- [Yeniden vurgulanmış ağ çıkışı](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
+- [Yakınınızda bulunan müşteriler için daha iyi performans algılandı](../enterprise/office-365-network-mac-perf-insights.md#better-performance-detected-for-customers-near-you)
+- [En uygun olmayan Exchange Online hizmeti ön kapı kullanımı](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-exchange-online-service-front-door)
+- [En uygun olmayan SharePoint Online hizmeti ön kapısı kullanımı](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-sharepoint-online-service-front-door)
+- [SharePoint ön kapısından düşük indirme hızı](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
+- [Çin kullanıcı en uygun ağ çıkışı](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
 
 > [!IMPORTANT]
-> Ağ içgörüleri, performans önerileri ve değerlendirmeleri Microsoft 365 Yönetici şu anda önizleme durumundadır. Yalnızca özellik Microsoft 365 programda kayıtlı olan tüm kiracılar tarafından kullanılabilir.
+> Microsoft 365 Yönetici Merkezi'ndeki ağ içgörüleri, performans önerileri ve değerlendirmeler şu anda önizleme durumundadır. Yalnızca özellik önizleme programına kaydedilmiş Microsoft 365 kiracıları için kullanılabilir.
 
-Daha fazla bilgi için bkz. [Microsoft 365 Ağ Analizler](../enterprise/office-365-network-mac-perf-insights.md).
+Daha fazla bilgi için bkz. [Microsoft 365 Ağ İçgörüleri](../enterprise/office-365-network-mac-perf-insights.md).
 
-## <a name="sharepoint-performance-with-the-office-365-cdn"></a>SharePoint performansı Office 365 CDN
+## <a name="sharepoint-performance-with-the-office-365-cdn"></a>Office 365 CDN ile SharePoint performansı
 
-Bulut tabanlı bir Content Delivery Network (CDN) yükleme sürelerini azaltmaya, bant genişliğini kaydetmeye ve hızlı yanıt hızına olanak sağlar. Bir CDN, onlardan talep eden tarayıcılara daha yakın olan grafik veya video dosyaları gibi statik varlıkları önbelleğe alma işleminin performansını artırır ve bu da indirmeleri hızlandırmak ve gecikmeyi azaltmaya yardımcı olur. Microsoft 365 E3 ve E5'te SharePoint'e dahil olan yerleşik Office 365 Content Delivery Network (CDN) varlıklarını kullanarak, statik varlıkları ana bilgisayar sayfalarınıza daha iyi bir performans SharePoint sabilirsiniz.
+Bulut tabanlı Content Delivery Network (CDN), yük sürelerini azaltmanıza, bant genişliğinden tasarruf etmenizi ve hızlı yanıt vermenizi sağlar. CDN, grafik veya video dosyaları gibi statik varlıkları isteyen tarayıcılara daha yakın önbelleğe alarak performansı artırır ve bu da indirmeleri hızlandırmaya ve gecikme süresini azaltmaya yardımcı olur. SharePoint sayfalarınız için daha iyi performans sağlamak üzere statik varlıkları barındırmak için Microsoft 365 E3 ve E5'te SharePoint'te bulunan yerleşik Office 365 Content Delivery Network'u (CDN) kullanabilirsiniz.
 
-Kaynak Office 365 CDN birden çok konumda veya kaynakta statik varlıkları barındırmana ve bunları genel yüksek hızlı ağlardan hizmet vermesine olanak sağlayan birden çok CDN'den oluşur. Kaynak 2013'te barındırmak istediğiniz içeriğin türüne bağlı olarak, Office 365 CDN veya **her ikisini birden** ebilirsiniz.
+Office 365 CDN, statik varlıkları birden çok konumda veya _kaynakta_ barındırmanıza ve bunları küresel yüksek hızlı ağlardan sunmanıza olanak sağlayan birden çok CDN'den oluşur. Office 365 CDN'de barındırmak istediğiniz içerik türüne bağlı olarak, **genel** kaynaklar, **özel** kaynaklar veya her ikisini birden ekleyebilirsiniz.
 
-İnternet'Office 365 CDN ve özel kaynaklarda yer alan varlıklar, dağıtıldığında ve yapılandırıldığında karşıya yükler ve İnternet'Office 365 CDN kullanıcılara hızlı erişim için kullanılabilir.
+Office 365 CDN dağıtıldığında ve yapılandırıldığında, varlıkları genel ve özel kaynaklardan karşıya yükler ve bunları İnternet genelinde bulunan kullanıcılara hızlı erişim için kullanılabilir hale getirir.
 
-![Office 365 CDN dağıtılan uygulama.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN için dağıtılan uygulama")
+![Office 365 kullanıcılar için dağıtılan CDN.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 kullanıcılar için dağıtılan CDN")
 
-Daha fazla bilgi için bkz[. Office 365 CDN Online ile SharePoint kullanma](../enterprise/use-microsoft-365-cdn-with-spo.md).
+Daha fazla bilgi için bkz. [SharePoint Online ile Office 365 CDN kullanma](../enterprise/use-microsoft-365-cdn-with-spo.md).
 
 ## <a name="automated-endpoint-listing"></a>Otomatik uç nokta listesi
 
-Şirket içi istemcilerinizi, uç cihazlarınızı ve bulut tabanlı paket çözümleme hizmetlerinizin güvenilen Microsoft 365 trafiğini işlemeyi atlasını sağlamak için, bunları Microsoft 365 hizmetlerinize karşılık gelen uç noktalar kümesiyle (IP adresi aralıkları ve DNS adları) yapılandırmanız gerekir. Bu uç noktalar güvenlik duvarlarında ve diğer uç güvenlik cihazlarında el ile yaslanır, istemci bilgisayarların istemci bilgisayarlarına yönelik PAC dosyaları ya da şubelerde yer alan SD-WAN cihazları atlanır. Bununla birlikte, uç noktalar zaman içinde değişir ve bu konumlarda uç nokta listelerinin sürekli el ile bakımını gerektirir.
+Şirket içi istemcilerinizin, uç cihazlarınızın ve bulut tabanlı paket analizi hizmetlerinizin güvenilir Microsoft 365 trafiğinin işlenmesini atlamasını sağlamak için, bunları Microsoft 365 hizmetlerine karşılık gelen uç nokta kümesiyle (IP adresi aralıkları ve DNS adları) yapılandırmanız gerekir. Bu uç noktalar güvenlik duvarlarında ve diğer uç güvenlik cihazlarında, proxy'leri atlayacak istemci bilgisayarlar için PAC dosyalarında veya şube ofislerindeki SD-WAN cihazlarında el ile yapılandırılabilir. Ancak, uç noktalar zaman içinde değişir ve bu konumlardaki uç nokta listelerinin sürekli el ile bakımını gerektirir.
 
-İstemci PAC dosyalarınız ve ağ cihazlarınız Microsoft 365 uç noktalarında liste işlemini otomatikleştirmek ve değişiklik yönetimini otomatikleştirmek için, Office 365 IP Adresi ve [URL REST tabanlı web hizmetini kullanın](../enterprise/microsoft-365-ip-web-service.md). Bu hizmet ağ trafiğini daha iyi tanımlamanıza Microsoft 365 ayırmanıza yardımcı olur ve en son değişiklikleri değerlendirmeniz, yapılandırmanız ve güncel kalmanızı kolaylaştırır.
+İstemci PAC dosyalarınızda ve ağ cihazlarınızda Microsoft 365 uç noktaları için listeleme ve değişiklik yönetimini otomatikleştirmek için [Office 365 IP Adresi ve URL REST tabanlı web hizmetini](../enterprise/microsoft-365-ip-web-service.md) kullanın. Bu hizmet, Microsoft 365 ağ trafiğini daha iyi tanımlamanıza ve ayırt etmenize yardımcı olur ve en son değişiklikleri değerlendirmenizi, yapılandırmanızı ve güncel kalmanızı kolaylaştırır.
 
-Zaman içinde uç noktalara yapılan değişiklikleri belirlemek ve PAC dosyalarınızı ve kenar ağ cihazlarınızı yapılandırmak için PowerShell, Python veya diğer dilleri kullanabilirsiniz.
+Zaman içinde uç noktalarda yapılan değişiklikleri belirlemek ve PAC dosyalarınızı ve uç ağ cihazlarınızı yapılandırmak için PowerShell, Python veya diğer dilleri kullanabilirsiniz.
 
-Temel süreç şöyledir:
+Temel işlem:
 
-1. PAC Office 365 ağ cihazlarınızı geçerli MICROSOFT 365 uç noktaları kümesiyle yapılandırmak için tercihinizin yapılandırma ip adresi ve URL web hizmetini ve yapılandırma Microsoft 365 kullanın.
-2. Uç noktaların değişikliklerini kontrol etmek veya bildirim yöntemini kullanmak için günlük yinelenen bir çalışma yapın.
-3. Değişiklikler algılandığında, istemci bilgisayarlar için PAC dosyasını yeniden oluşturma ve yeniden dağıtarak ağ cihazlarınıza değişiklikleri yapın.
+1. PAC dosyalarınızı ve ağ cihazlarınızı geçerli Microsoft 365 uç noktaları kümesiyle yapılandırmak için Office 365 IP Adresi ve URL web hizmetini ve seçtiğiniz yapılandırma mekanizmasını kullanın.
+2. Uç noktalarda değişiklik olup olmadığını denetlemek veya bir bildirim yöntemi kullanmak için günlük yineleme çalıştırın.
+3. Değişiklikler algılandığında PAC dosyasını istemci bilgisayarlar için yeniden oluşturun ve yeniden dağıtın ve değişiklikleri ağ cihazlarınızda yapın.
 
-Daha fazla bilgi için BKZ[. IP Office 365 URL web hizmetini yapılandırma](../enterprise/microsoft-365-ip-web-service.md).
+Daha fazla bilgi için bkz. [OFFICE 365 IP Adresi ve URL web hizmeti](../enterprise/microsoft-365-ip-web-service.md).
 
-## <a name="results-of-step-2"></a>Adım 2'nin sonuçları
+## <a name="results-of-step-2"></a>2. Adımın Sonuçları
 
-En Microsoft 365 ağı olan kiracınız için, şunları belirlediniz:
+En uygun ağa sahip Microsoft 365 kiracınız için şunları belirlediniz:
 
-- Tüm şubelere İnternet bağlantıları ekleyerek ve ağ A-A'larını ortadan kaldırarak şirket içi kullanıcıların ağ performansını iyileştirme.
-- İstemci tabanlı PAC dosyalarınız, ağ cihazlarınız ve hizmetleriniz için, devam eden güncelleştirmeler de dahil olmak üzere (en uygun kurumsal ağlar için) otomatik güvenilen uç nokta listesini nasıl uygulayabilirsiniz?
+- Tüm şube ofislerine İnternet bağlantıları ekleyerek ve ağ saç tokalarını ortadan kaldırarak şirket içi kullanıcılar için ağ performansını iyileştirme.
+- İstemci tabanlı PAC dosyalarınız ve devam eden güncelleştirmeler (kurumsal ağlar için en uygun) dahil olmak üzere ağ cihazlarınız ve hizmetleriniz için otomatik güvenilen uç nokta listelemesi uygulama.
 - Uzak çalışanların şirket içi kaynaklara erişimini destekleme.
-- Ağ Bağlantıları nasıl Analizler
-- Dağıtımın nasıl Office 365 CDN.
+- Ağ İçgörüleri'ni kullanma
+- Office 365 CDN'yi dağıtma.
 
-Burada, en iyi ağ iletişimi olan bir kurumsal kuruluş ve onun kiracısı örneği ve ve bir örneği yer alan.
+Aşağıda, kurumsal bir kuruluşa ve en uygun ağa sahip kiracısına bir örnek verilmiştir.
 
-![En uygun ağ için bir kiracı örneği.](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
+![En uygun ağa sahip bir kiracı örneği.](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
-[Bu resmin daha büyük bir sürümüne bakın](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-management-overview/tenant-management-tenant-build-step2.png)
+[Bu görüntünün daha büyük bir sürümünü görün](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
-Bu çizimde, bu kurumsal kuruluşun kiracısına aşağıdakiler gösterilmiştir:
+Bu çizimde, bu kurumsal kuruluşun kiracısı şunları içerir:
 
-- Güvenilir postane trafiğini yerel bir ön kapıya ileten SDWAN Microsoft 365 her şube için yerel İnternet erişimi.
-- Ağ Apin'i yok.
-- Güvendiği trafiği yerel bir ön Microsoft 365 ileten merkezi ofis güvenliği ve ara sunucu uç cihazları.
+- Güvenilen Microsoft 365 trafiğini yerel bir ön kapıya ileden bir SDWAN cihazı ile her şube ofisi için yerel İnternet erişimi.
+- Ağ saç tokası yok.
+- Microsoft 365 güvenilen trafiğini yerel bir ön kapıya ileten merkezi ofis güvenliği ve ara sunucu uç cihazları.
 
 ## <a name="ongoing-maintenance-for-optimal-networking"></a>En iyi ağ için sürekli bakım
 
-Sürekli olarak şunları yapmak zorundayabilirsiniz:
+Sürekli olarak şunları yapmanız gerekebilir:
 
-- Uç noktalarda değişiklikler için uç cihazlarınızı güncelleştirin ve PAC dosyalarını dağıtın veya otomatik işleminizin düzgün çalıştığını doğrulayın.
-- Varlıklarınızı diğer Office 365 CDN.
-- Uç noktalarda yapılan değişiklikler için VPN istemcilerinizin bölünmüş bölme yapılandırmasını güncelleştirin.
+- Uç noktalardaki değişiklikler için uç cihazlarınızı ve dağıtılan PAC dosyalarınızı güncelleştirin veya otomatik işleminizin düzgün çalıştığını doğrulayın.
+- Office 365 CDN'deki varlıklarınızı yönetin.
+- Uç noktalardaki değişiklikler için VPN istemcilerinizdeki bölünmüş tünel yapılandırmasını güncelleştirin.
 
 ## <a name="next-step"></a>Sonraki adım
 
-[![3. Adım. Kimliklerinizi eşitler ve güvenli oturum açmaları zorlar.](../media/tenant-management-overview/tenant-management-step-grid-identity.png)](tenant-management-identity.md)
+[![3. Adım. Kimliklerinizi eşitleyin ve güvenli oturum açma işlemleri uygulayın.](../media/tenant-management-overview/tenant-management-step-grid-identity.png)](tenant-management-identity.md)
 
-Şirket içi [hesaplarınızı](tenant-management-identity.md) ve gruplarınızı eşitlemek ve güvenli kullanıcı oturum açmalarını zorlamak için kimlikle devam.
+Şirket içi hesaplarınızı ve gruplarınızı eşitlemek ve güvenli kullanıcı oturum açma işlemleri uygulamak için [kimlikle](tenant-management-identity.md) devam edin.

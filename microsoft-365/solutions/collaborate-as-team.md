@@ -1,11 +1,11 @@
 ---
-title: Ekipte konuklarla işbirliği yapma
+title: Ekipteki konuklarla işbirliği yapma
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
@@ -20,178 +20,178 @@ ms.custom:
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
-description: Konuk ekibin Microsoft 365, konuşma ve belgelerle işbirliği yapmak için gerekli yapılandırma adımları hakkında bilgi Teams.
-ms.openlocfilehash: 0fd723a86f79f97703eca96c0693882fbc05f13a
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+description: Teams'de konuklarla görev, konuşma ve belge işbirliği için bir ekip ayarlamak için gereken Microsoft 365 yapılandırma adımları hakkında bilgi edinin.
+ms.openlocfilehash: 0034c401f58aa9782c477d25ea75b588fdf15dbb
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63712916"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577992"
 ---
-# <a name="collaborate-with-guests-in-a-team"></a>Ekipte konuklarla işbirliği yapma
+# <a name="collaborate-with-guests-in-a-team"></a>Ekipteki konuklarla işbirliği yapma
 
-Konuklarla belgeler, görevler ve konuşmalar arasında işbirliği yapmak için bu belgeleri Microsoft Teams. Teams, kalıcı sohbet ve birleşik bir kullanıcı deneyiminde özelleştirilebilir ve genişletilebilir bir işbirliği araçları kümesiyle Office ve SharePoint'te kullanılabilen tüm işbirliği özelliklerini sağlar.
+Belgeler, görevler ve konuşmalar arasında konuklarla işbirliği yapmanız gerekiyorsa Microsoft Teams'i kullanmanızı öneririz. Teams, kalıcı sohbet ve birleşik bir kullanıcı deneyiminde özelleştirilebilir ve genişletilebilir işbirliği araçları ile Office ve SharePoint'te kullanılabilen tüm işbirliği özelliklerini sağlar.
 
-Bu makalede, konuklarla işbirliğine Microsoft 365 için gerekli tüm yapılandırma adımlarını takip edeceğiz. Konuk erişimini yapılandırdıktan sonra, Teams'de ek ekiplere konuk ekleme'de yer alan [adımları kullanarak konukları ekiplere Teams](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f).
+Bu makalede, konuklarla işbirliği için bir ekip ayarlamak için gereken Microsoft 365 yapılandırma adımlarını inceleyeceğiz. Konuk erişimini yapılandırdıktan sonra, Teams'de bir takıma konuk ekleme sayfasındaki adımları izleyerek [konukları ekiplere](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f) davet edebilirsiniz.
 
 > [!NOTE]
-> [Paylaşılan kanallar](collaborate-teams-direct-connect.md), diğer farklı kuruluşlarla işbirliği için konuk hesaplarından daha sorunsuz bir Microsoft 365 sunar. Paylaşılan kanallar, dış katılımcıların kuruluşta oturum açmasına gerek kalmadan Teams kanallarını kullanarak kuruluş dışındaki kullanıcılarla işbirliğine olanak sağlar. Herhangi bir senaryo için [konuklarla işbirliği](plan-external-collaboration.md) yapmak yerine, paylaşılan kanalların daha iyi bir seçenek olup olduğunu görmek için dış işbirliği planlamayı gözden geçirmenizi öneririz.
+> [Paylaşılan kanallar](collaborate-teams-direct-connect.md) , diğer Microsoft 365 kuruluşlarıyla işbirliği yaparken konuk hesaplarından daha sorunsuz bir deneyim sunar. Paylaşılan kanallar, dış katılımcıların kuruluşunuzda oturum açmasına gerek kalmadan Teams kanallarını kullanarak kuruluşunuzun dışındaki kişilerle işbirliği yapmanıza olanak tanır. Paylaşılan kanalların belirli bir senaryo için konuklarla işbirliği yapmaya kıyasla daha iyi bir seçenek olup olmadığını görmek için [Dış işbirliği planlayın'ı](plan-external-collaboration.md) gözden geçirmenizi öneririz.
 
 ## <a name="video-demonstration"></a>Video tanıtımı
 
-Bu videoda, bu belgede açıklanan yapılandırma adımları gösterir.</br>
+Bu videoda, bu belgede açıklanan yapılandırma adımları gösterilmektedir.</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
 ## <a name="azure-external-collaboration-settings"></a>Azure Dış işbirliği ayarları
 
-Dış Microsoft 365, çalışma sayfasındaki [B2B dış işbirliği ayarları tarafından en yüksek Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). Azure AD'de konuk paylaşımı devre dışı bırakılmış veya kısıtlanmışsa, bu ayar Microsoft 365.
+Microsoft 365'te paylaşım, [Azure Active Directory'deki B2B dış işbirliği ayarları](/azure/active-directory/external-identities/delegate-invitations) tarafından en üst düzeyde yönetilir. Konuk paylaşımı Azure AD devre dışı bırakıldıysa veya kısıtlandıysa, bu ayar Microsoft 365'te yapılandırdığınız paylaşım ayarlarını geçersiz kılar.
 
-Konuklarla paylaşımın engellenmiş olduğundan emin olmak için B2B dış işbirliği ayarlarını kontrol edin.
+Konuklarla paylaşımın engellenmediğinden emin olmak için B2B dış işbirliği ayarlarını denetleyin.
 
-![Kurumsal İlişkiler Azure Active Directory sayfası Ayarlar ekran görüntüsü.](../media/azure-ad-organizational-relationships-settings.png)
+![Azure Active Directory Kuruluş İlişkileri Ayarları sayfasının ekran görüntüsü.](../media/azure-ad-organizational-relationships-settings.png)
 
 Dış işbirliği ayarlarını ayarlamak için
 
-1. Azure Active Directory'ta oturum açma[https://aad.portal.azure.com](https://aad.portal.azure.com).
-2. Sol gezinti bölmesinde Ekle'ye **Azure Active Directory**.
-3. Dış **kimlikler'e tıklayın**.
-4. Çalışmaya başlama **ekranında,** sol gezinti bölmesinde Dış işbirliği **ayarları'ne tıklayın**.
-5. Belirli yönetici **rollerine atanan** Üye kullanıcıların ve kullanıcıların, konuk kullanıcılar (üye izinleri olan konuklar dahil) davet etme veya Kuruluşta herkes konuk kullanıcılar (konuklar ve yönetici olmayanlar) seçili olarak davet olabilir.
-6. Değişiklikler yaptıysanız Kaydet'e **tıklayın**.
+1. adresinden Azure Active Directory'de [https://aad.portal.azure.com](https://aad.portal.azure.com)oturum açın.
+2. Sol gezinti bölmesinde **Azure Active Directory'ye** tıklayın.
+3. **Dış kimlikler'e** tıklayın.
+4. **Başlarken** ekranında, sol gezinti bölmesinde **Dış işbirliği ayarları'na** tıklayın.
+5. **Üye kullanıcıların ve belirli yönetici rollerine atanan kullanıcıların, üye izinlerine sahip konuklar dahil konuk kullanıcıları davet etmelerini** sağlayın veya **Kuruluştaki herkes konuk kullanıcıları davet edebilir(konuklar ve yönetici olmayanlar dahil)** seçilidir.
+6. Değişiklik yaptıysanız **Kaydet'e** tıklayın.
 
-İşbirliği kısıtlamaları bölümündeki **ayarlara dikkat** edin. Konukların işbirliği yapmak istediğiniz etki alanlarının engellenmiş olduğundan emin olun.
+**İşbirliği kısıtlamaları** bölümündeki ayarları not edin. İşbirliği yapmak istediğiniz konukların etki alanlarının engellenmediğinden emin olun.
 
-Birden çok kuruluştan konuklarla çalışıyorsanız, dizin verilerine erişim izinlerini kısıtlamak istemeyebilirsiniz. Bu, dizinde başka kimlerin konuk olduğunu görmelerini önler. Bunu yapmak için Konuk kullanıcı erişimi kısıtlamaları'nın **altında Konuk kullanıcıların** özelliklere erişimi ve dizin nesneleri ayarları üyeliği sınırlı seçeneğini veya Konuk kullanıcı erişimi kendi dizin nesnelerinin özellik ve üyelikleriyle **sınırlıdır**.
+Birden çok kuruluşun konuklarıyla çalışıyorsanız, dizin verilerine erişimlerini kısıtlamak isteyebilirsiniz. Bu, dizinde başka kimlerin konuk olduğunu görmelerini engeller. Bunu yapmak için **Konuk kullanıcı erişim kısıtlamaları'nın** altında **Konuk kullanıcılar dizin nesneleri ayarlarının özelliklerine ve üyeliğine sınırlı erişime sahip** veya **Konuk kullanıcı erişimi kendi dizin nesnelerinin özellikleri ve üyelikleriyle sınırlıdır'ı** seçin.
 
-## <a name="teams-guest-access-settings"></a>Teams erişimi ayarlarını değiştirme
+## <a name="teams-guest-access-settings"></a>Teams konuk erişim ayarları
 
-Teams erişim için bir ana açma/kapatma anahtarına ve konukların bir ekipte neler yaplarını denetlemeye uygun çeşitli ayarlar vardır. İş yerizde **konuk erişimine izin ver Teams** **ana anahtarı**, konuk erişiminin açık olması Teams.
+Teams,konuk erişimi için bir ana açma/kapatma anahtarına ve konukların bir ekipte neler yapabileceğini denetlemek için çeşitli ayarlara sahiptir. **Teams'de konuk erişiminin çalışması için Teams'de konuk erişimine izin ver** ana anahtarı **Açık** olmalıdır.
 
-Konuk erişiminin her gün etkinleştirildiğinden emin Teams ve konuk ayarlarında iş ihtiyaçlarına göre ayarlamalar yapın. Bu ayarların tüm ekipleri etkileyeceğini unutmayın.
+Teams'de konuk erişiminin etkinleştirildiğinden emin olun ve işletme gereksinimlerinize göre konuk ayarlarında herhangi bir ayarlama yapın. Bu ayarların tüm ekipleri etkilediğini unutmayın.
 
-![Konuk erişimi Teams iki durumlu düğmenin ekran görüntüsü.](../media/teams-guest-access-toggle-on.png)
+![Teams konuk erişimi iki durumlu düğmesinin ekran görüntüsü.](../media/teams-guest-access-toggle-on.png)
 
-Konuk erişimi Teams ayarlarını yapmak için
+Teams konuk erişim ayarlarını ayarlamak için
 
-1. hesabıyla oturum Microsoft 365 yönetim merkezi.[https://admin.microsoft.com](https://admin.microsoft.com)
-2. Sol gezinti bölmesinde, Hepsini **göster'e tıklayın**.
-3. Yönetim **merkezleri altında,** Yönetim **Merkezi'nin Teams**.
-4. Teams yönetim merkezinde, sol gezinti bölmesinde <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**UsersGuest access öğesini**</a> >  seçin.
-5. **E-postada konuk erişimine izin ver Teams'in** On olarak ayar olduğundan emin **olun**.
-6. Ek konuk ayarlarında istediğiniz değişiklikleri yapın ve ardından Kaydet'e **tıklayın**.
+1. konumundaki Microsoft 365 yönetim merkezi oturum [https://admin.microsoft.com](https://admin.microsoft.com)açın.
+2. Sol gezinti bölmesinde **Tümünü göster'e** tıklayın.
+3. **Yönetici merkezleri'nin** altında **Teams'e** tıklayın.
+4. Teams yönetim merkezinde, sol gezinti bölmesinde **Kullanıcılar** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Konuk erişimi'ni**</a> seçin.
+5. **Teams'de konuk erişimine izin ver seçeneğinin** **Açık** olarak ayarlandığından emin olun.
+6. Ek konuk ayarlarında istediğiniz değişiklikleri yapın ve **kaydet'e** tıklayın.
 
-Konuk Teams açıkken, isteğe bağlı olarak duyarlılık etiketlerini kullanarak tek tek ekiplere ve konukla ilişkilendirilmiş SharePoint erişimini kontrol edin. Daha fazla bilgi için bkz. Site site sitelerine, [gruplara ve sitelere Microsoft Teams Microsoft 365 için duyarlılık SharePoint kullanma](../compliance/sensitivity-labels-teams-groups-sites.md).
+Teams konuk erişimi açıldıktan sonra, duyarlılık etiketlerini kullanarak isteğe bağlı olarak tek tek ekiplere ve ilişkili SharePoint sitelerine konuk erişimini denetleyebilirsiniz. Daha fazla bilgi için bkz. [Microsoft Teams, Microsoft 365 grupları ve SharePoint sitelerindeki içeriği korumak için duyarlılık etiketlerini kullanma](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 > [!NOTE]
-> Bu ayarın etkin olması için konuk ayarlarının Teams olması yirmi dört saat kadar sürebilir.
+> Teams konuk ayarlarını açtıktan sonra etkin hale gelmesi yirmi dört saat kadar sürebilir.
 
-## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 Grupları konuk ayarlarını değiştirme
+## <a name="microsoft-365-groups-guest-settings"></a>Konuk ayarlarını Microsoft 365 Grupları
 
-Teams üyeliği Microsoft 365 grupları kullanır. Konuk Microsoft 365 için grup gruplarında konuk ayarlarının açık olması gerekir. Bu Teams gerekir.
+Teams, ekip üyeliği için Microsoft 365 Grupları kullanır. Teams'te konuk erişiminin çalışabilmesi için Microsoft 365 Grupları konuk ayarlarının açık olması gerekir.
 
-![Grup Grup Microsoft 365 ayarlarının ekran Microsoft 365 yönetim merkezi.](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 yönetim merkezi Microsoft 365 Grupları konuk ayarlarının ekran görüntüsü.](../media/office-365-groups-guest-settings.png)
 
-Grup konuk Microsoft 365 ayarlarını ayarlamak için
+Microsoft 365 Grupları konuk ayarlarını ayarlamak için
 
-1. Gezinti Microsoft 365 yönetim merkezi gezinti bölmesinde Gezinti **Bölmesi'ni Ayarlar**.
-2. Kuruluş **ayarları'ne tıklayın**.
-3. Listede Grup **Ekle'Microsoft 365 tıklayın**.
-4. Grup sahiplerinin kuruluş **dışından kişi eklemesine izin ver Microsoft 365 Grupları** konuk olarak ekle ve Konuk grup üyelerinin grup içeriğine erişmesine izin **ver onay** kutularının her ikisi de işaretlidir.
-5. Değişiklik yaptıysanız, Değişiklikleri **kaydet'e tıklayın**.
-
-
-## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint düzeyinde paylaşım ayarlarını değiştirme
-
-Teams, klasörler ve listeler gibi tüm içerikler dosya veya kitaplıkta SharePoint. Konukların Teams'ta bu öğelere erişimi olması için, SharePoint düzeyinde paylaşım ayarlarının konuklarla paylaşım için izin vermesi gerekir.
-
-Kuruluş düzeyindeki ayarlar, ekiplerle ilişkilendirilmiş siteler dahil olmak üzere tek tek siteler için hangi ayarların kullanılabilir olduğunu belirler. Site ayarları, kuruluş düzeyindeki ayarlardan daha izinli olamaz.
-
-Kimliği doğrulanmamış kullanıcılarla dosya ve klasör paylaşımına izin vermek için Herkes'i **seçin**. Tüm konukların kimlik doğrulaması yapmak zorunda olduğundan emin olmak için Yeni ve mevcut **konuklar'ı seçin**. Kuruluş herhangi bir site tarafından gerekli olacak en izinli ayarı seçin.
-
-![Kuruluş düzeyi SharePoint ayarlarının ekran görüntüsü.](../media/sharepoint-organization-external-sharing-controls.png)
+1. Microsoft 365 yönetim merkezi, sol gezinti bölmesinde **Ayarlar'ı** genişletin.
+2. **Kuruluş ayarları'na** tıklayın.
+3. Listede **Microsoft 365 Grupları'e** tıklayın.
+4. **Grup sahiplerinin Microsoft 365 Grupları için kuruluşunuz dışındaki kişileri konuk olarak eklemesine izin ver** ve **Konuk grup üyelerinin grup içeriğine erişmesine izin ver** onay kutularının da işaretli olduğundan emin olun.
+5. Değişiklik yaptıysanız Değişiklikleri **kaydet'e** tıklayın.
 
 
-Kuruluş SharePoint paylaşım ayarlarını ayarlamak için
+## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint kuruluş düzeyi paylaşım ayarları
 
-1. Gezinti <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a>, sol gezinti bölmesindeki Yönetim **merkezleri'nin altında** **Seçenekler'i SharePoint**.
-2. SharePoint yönetim merkezinde, sol gezinti bölmesinde İlkeler'i **genişletin ve sonra** Paylaşım'ı <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**seçin**</a>.
-3. Dış paylaşım için dış SharePoint Herkes veya Yeni **ve var olan** **konuklar olarak ayarlayın**.
-4. Değişiklik yaptıysanız Kaydet'i **seçin**.
+Dosyalar, klasörler ve listeler gibi Teams içeriğinin tümü SharePoint'te depolanır. Konukların Teams'de bu öğelere erişebilmesi için SharePoint kuruluş düzeyinde paylaşım ayarlarının konuklarla paylaşıma izin vermesi gerekir.
+
+Kuruluş düzeyindeki ayarlar, ekiplerle ilişkilendirilmiş siteler de dahil olmak üzere tek tek siteler için hangi ayarların kullanılabilir olduğunu belirler. Site ayarları, kuruluş düzeyindeki ayarlardan daha izinli olamaz.
+
+Kimliği doğrulanmamış kişilerle dosya ve klasör paylaşımına izin vermek istiyorsanız **Herkes'i** seçin. Tüm konukların kimlik doğrulaması yapmak zorunda olduğundan emin olmak istiyorsanız **Yeni ve mevcut konuklar'ı** seçin. Kuruluşunuzdaki herhangi bir sitenin ihtiyaç duyduğu en izin veren ayarı seçin.
+
+![SharePoint kuruluş düzeyinde paylaşım ayarlarının ekran görüntüsü.](../media/sharepoint-organization-external-sharing-controls.png)
 
 
-## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint düzeyinde varsayılan bağlantı ayarlarını değiştirme
+SharePoint kuruluş düzeyinde paylaşım ayarlarını ayarlamak için
 
-Varsayılan dosya ve klasör bağlantısı ayarları, bir dosya veya klasör paylaştıklarda kullanıcılara varsayılan olarak gösterilecek bağlantı seçeneğini belirler. Kullanıcılar,  istediklerinizi paylaşmadan önce bağlantı türünü diğer seçeneklerden biri ile değiştirebilir.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a> sol gezinti bölmesindeki **Yönetici merkezleri'nin** altında **SharePoint'i** seçin.
+2. SharePoint yönetim merkezinde, sol gezinti bölmesinde **İlkeler'i** genişletin ve <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**paylaşım'ı**</a> seçin.
+3. SharePoint için dış paylaşımın **Herkes** veya **Yeni ve mevcut konuklar olarak ayarlandığından** emin olun.
+4. Değişiklik yaptıysanız **Kaydet'i** seçin.
 
-Bu ayarın tüm ekipleri ve tüm ekiplerini SharePoint etkileyeceğini unutmayın.
 
-Kullanıcılar dosya ve klasör paylaştığında varsayılan olarak seçilen aşağıdaki bağlantı türlerinden herhangi birini seçin:
+## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint kuruluş düzeyinde varsayılan bağlantı ayarları
 
-- **Bağlantısı olan herkes** - Çok fazla sayıda kimliği doğrulanmamış dosya ve klasör paylaşımı görmeyi bekliyorsanız bu seçeneği belirtin. Herkes bağlantılarına izin *vermek istiyor* ancak kimliği doğrulanmamış paylaşım konusunda endişeleniyorsanız, varsayılan olarak diğer seçeneklerden birini kullanın. Bu bağlantı türü yalnızca Herkes paylaşımını **etkinleştirdiysen** kullanılabilir.
-- **Yalnızca kuruluş içindeki kişiler** - Çoğu dosya ve klasör paylaşımının kuruluş içindeki kişilerle olmasını bekliyorsanız bu seçeneği belirleyin.
-- **Belirli kişiler** - Konuklarla çok fazla dosya ve klasör paylaşımı olmasını bekliyorsanız, bu seçeneği göz önünde bulundurabilirsiniz. Bu bağlantı türü konuklar için çalışır ve konukların kimlik doğrulamasını gerektirir.
+Varsayılan dosya ve klasör bağlantısı ayarları, kullanıcılara bir dosya veya klasör paylaştıklarında varsayılan olarak gösterilecek bağlantı seçeneğini belirler. Kullanıcılar, isterseniz bağlantı türünü paylaşmadan önce diğer seçeneklerden biriyle değiştirebilir.
+
+Bu ayarın kuruluşunuzdaki tüm ekipleri ve SharePoint sitelerini etkilediğini unutmayın.
+
+Kullanıcılar dosya ve klasörleri paylaştığında varsayılan olarak seçilecek aşağıdaki bağlantı türlerinden birini seçin:
+
+- **Bağlantıya sahip herkes** - Dosya ve klasörlerin kimliği doğrulanmamış çok sayıda paylaşımını yapmayı bekliyorsanız bu seçeneği belirtin. *Herkes* bağlantılarına izin vermek istiyorsanız ancak yanlışlıkla kimliği doğrulanmamış paylaşımla ilgileniyorsanız, diğer seçeneklerden birini varsayılan olarak göz önünde bulundurun. Bu bağlantı türü yalnızca **Herkes** paylaşımını etkinleştirdiyseniz kullanılabilir.
+- **Yalnızca kuruluşunuzdaki kişiler** - Çoğu dosya ve klasör paylaşımının kuruluşunuzdaki kişilerle olmasını bekliyorsanız bu seçeneği belirleyin.
+- **Belirli kişiler** - Konuklarla çok fazla dosya ve klasör paylaşımı yapmayı bekliyorsanız bu seçeneği göz önünde bulundurun. Bu bağlantı türü konuklarla birlikte çalışır ve kimlik doğrulaması yapılmasını gerektirir.
  
-![Kuruluş düzeyi SharePoint klasörleri paylaşma ayarlarının ekran görüntüsü.](../media/sharepoint-organization-files-folders-sharing-settings.png)
+![SharePoint kuruluş düzeyinde dosya ve klasör paylaşım ayarlarının ekran görüntüsü.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
-Kuruluş düzeyinde SharePoint bağlantı ayarlarını ayarlamak için
+SharePoint kuruluş düzeyinde varsayılan bağlantı ayarlarını ayarlamak için
 
-1. Yönetim <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**merkezinde Paylaşım**</a> SharePoint gidin.
-2. Dosya **ve klasör bağlantıları'nın** altında, kullanmak istediğiniz varsayılan paylaşım bağlantısını seçin.
-3. Değişiklik yaptıysanız Kaydet'i **seçin**.
+1. SharePoint yönetim merkezinde <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Paylaşım'a**</a> gidin.
+2. **Dosya ve klasör bağlantıları'nın** altında, kullanmak istediğiniz varsayılan paylaşım bağlantısını seçin.
+3. Değişiklik yaptıysanız **Kaydet'i** seçin.
 
 ## <a name="create-a-team"></a>Ekip oluşturma
 
-Sonraki adım, konuklarla işbirliği yapmak için kullanmayı planlayın ekibi oluşturmak olur.
+Sonraki adım, konuklarla işbirliği yapmak için kullanmayı planladığınız ekibi oluşturmaktır.
 
 Ekip oluşturmak için
-1. Giriş Teams, Oluştur **Teams** sol **bölmenin alt kısmında Bulunan** ekle veya ek ekip oluştur'a tıklayın.
-2. Ekip **oluştur'a tıklayın**.
-3. **Sıfırdan ekip oluşturma'ya tıklayın**.
-4. Özel  veya **Genel'i seçin**.
-5. Ekip için bir ad ve açıklama yazın, ardından Oluştur'a **tıklayın**.
-6. **Atla'ya tıklayın**.
+1. Teams'te, **Teams** sekmesinde, sol bölmenin alt kısmındaki **Katıl'a tıklayın veya ekip oluşturun** .
+2. **Ekip oluştur'a** tıklayın.
+3. **Sıfırdan ekip oluştur'a** tıklayın.
+4. **Özel** veya **Genel'i** seçin.
+5. Ekip için bir ad ve açıklama yazın ve **Oluştur'a** tıklayın.
+6. **Atla'ya** tıklayın.
 
-Kullanıcıları daha sonra davetacağız. Daha sonra, ekiple ilişkili sitenin site SharePoint paylaşım ayarlarını denetlemeniz önemlidir.
+Kullanıcıları daha sonra davet edeceğiz. Ardından, ekiple ilişkilendirilmiş SharePoint sitesinin site düzeyinde paylaşım ayarlarını denetlemek önemlidir.
 
-## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint düzeyinde paylaşım ayarlarını değiştirme
+## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint site düzeyinde paylaşım ayarları
 
-Bu ekip için istediğiniz erişim türüne izin vermek için site düzeyinde paylaşım ayarlarını kontrol edin. Örneğin, kuruluş düzeyi ayarlarını Herkes olarak ayarlarsanız **ancak tüm** konukların bu ekip için kimlik doğrulaması yapmalarını istiyorsanız, site düzeyinde paylaşım ayarlarının Yeni ve mevcut konuklar olarak ayarlanmış olduğundan **emin olun**.
+Bu ekip için istediğiniz erişim türüne izin verdiklerinden emin olmak için site düzeyinde paylaşım ayarlarını denetleyin. Örneğin, kuruluş düzeyi ayarlarını **Herkes** olarak ayarladıysanız ancak tüm konukların bu ekip için kimlik doğrulaması yapmasını istiyorsanız, site düzeyinde paylaşım ayarlarının **Yeni ve mevcut konuklar** olarak ayarlandığından emin olun.
 
-![Site dış SharePoint ayarlarının ekran görüntüsü.](../media/sharepoint-site-external-sharing-settings.png)
+![SharePoint sitesi dış paylaşım ayarlarının ekran görüntüsü.](../media/sharepoint-site-external-sharing-settings.png)
 
 Site düzeyinde paylaşım ayarlarını ayarlamak için
-1. Gezinti SharePoint gezinti bölmesinde Siteler'i genişletin ve **Etkin** <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**siteler'i seçin**</a>.
+1. SharePoint yönetim merkezinde, sol gezinti bölmesinde **Siteler'i** genişletin ve <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Etkin siteler'i**</a> seçin.
 2. Yeni oluşturduğunuz ekip için siteyi seçin.
-3. Şu seçeneği seçin: ... ve **Paylaşım'ı seçin**.
-4. Paylaşımın Herkes veya Yeni ve mevcut **konuklar** **olarak ayarlanmış olduğundan emin olmak**.
-5. Değişiklik yaptıysanız Kaydet'i **seçin**.
+3. Seçin... ve **Paylaşım'ı** seçin.
+4. Paylaşımın **Herkes** veya **Yeni ve mevcut konuklar olarak ayarlandığından** emin olun.
+5. Değişiklik yaptıysanız **Kaydet'i** seçin.
 
-## <a name="invite-users"></a>Kullanıcıları davet et
+## <a name="invite-users"></a>Kullanıcıları davet etme
 
-Konuk paylaşım ayarları artık yapılandırılmıştır, böylece iç kullanıcıları ve konukları takımınıza eklemeye başlayabilirsiniz. 
+Artık konuk paylaşım ayarları yapılandırıldığından, ekibinize dahili kullanıcılar ve konuklar eklemeye başlayabilirsiniz. 
 
-İç kullanıcıları bir takıma davet etmek için
-1. Ekipte Diğer seçenekler () **ve ardından****\*\*\*** Üye **ekle'ye tıklayın**.
+Takıma iç kullanıcıları davet etmek için
+1. Ekipte **Diğer seçenekler** ()**\*\*\*** öğesine ve ardından **Üye ekle'ye** tıklayın.
 2. Davet etmek istediğiniz kişinin adını yazın.
-3. **Ekle'yi** ve ardından Kapat'ı **tıklatın**.
+3. **Ekle'ye** ve ardından **Kapat'a** tıklayın.
 
-Konukları bir takıma davet etmek için
-1. Ekipte Diğer seçenekler () **ve ardından****\*\*\*** Üye **ekle'ye tıklayın**.
+Bir takıma konuk davet etmek için
+1. Ekipte **Diğer seçenekler** ()**\*\*\*** öğesine ve ardından **Üye ekle'ye** tıklayın.
 2. Davet etmek istediğiniz konuğun e-posta adresini yazın.
-3. Konuk **bilgilerini düzenle'ye tıklayın**.
+3. **Konuk bilgilerini düzenle'ye** tıklayın.
 4. Konuğun tam adını yazın ve onay işaretine tıklayın.
-5. **Ekle'yi** ve ardından Kapat'ı **tıklatın**.
+5. **Ekle'ye** ve ardından **Kapat'a** tıklayın.
 
 > [!NOTE]
-> İş veya okul hesabı olan konuklar yalnızca Kullanıcı Asıl Adı (UPN) (örneğin, Okul Adı) kullanılarak davet adele@contoso.com. EAS KIMLIĞI veya diğer e-posta biçimlerini kullanarak konuk davet etme desteklenemektedir.
+> İş veya okul hesabı olan konuklar yalnızca Kullanıcı Asıl Adı (UPN) (örneğin, adele@contoso.com) kullanılarak davet edilebilir. EAS Kimliği veya diğer e-posta biçimlerini kullanarak konukları davet etme desteklenmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kimliği doğrulanmamış kullanıcılarla dosya ve klasör paylaşmak için en iyi yöntemler](best-practices-anonymous-sharing.md)
+[Kimliği doğrulanmamış kullanıcılarla dosya ve klasör paylaşmaya yönelik en iyi yöntemler](best-practices-anonymous-sharing.md)
 
-[Konuklarla paylaşım sırasında dosyalarda yanlışlıkla açık kalma sürelerini sınırlama](share-limit-accidental-exposure.md)
+[Konuklarla paylaşırken dosyaların yanlışlıkla açığa alınmasını sınırlayın](share-limit-accidental-exposure.md)
 
 [Güvenli bir konuk paylaşım ortamı oluşturma](create-secure-guest-sharing-environment.md)
 

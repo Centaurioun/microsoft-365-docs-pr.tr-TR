@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Konuk paylaşımını belirli Azure AD veya Microsoft 365 kuruluşlarıyla sınırlamayı öğrenin.
-ms.openlocfilehash: 75cfe739e1cdde2e0bd959382b2444487ea726be
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: d6ee18f91955b1975baa85086a7f54942bfb1541
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "66861395"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585740"
 ---
 # <a name="limit-guest-sharing-to-specific-organizations"></a>Konuk paylaşımını belirli kuruluşlarla sınırlayın
 

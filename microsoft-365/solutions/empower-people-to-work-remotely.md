@@ -1,5 +1,5 @@
 ---
-title: Karma çalışma için altyapınızı ayarlama Microsoft 365
+title: Microsoft 365 ile karma çalışma için altyapınızı ayarlama
 author: dansimp
 f1.keywords:
 - NOCSH
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -17,114 +17,114 @@ ms.collection:
 - m365solution-overview
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
-keywords: evden çalışma, evden çalışma, karma, uzaktan çalışan, karma iş, uzak çalışanlar, karma bağlantı, uzaktan erişim, telekom, telework, teleworking, teleworking, mobil iş, uzaktan iş, her yerden çalışma, esnek çalışma
-description: Karma çalışanlarının güvenli bir şekilde şirket içi kaynaklara ve kaynak kullanımına erişmesi için altyapı katmanlarında Microsoft 365 geçin.
-ms.openlocfilehash: 87d72307f3e6a2b254bdbde21d07fc146806b89d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+keywords: evden çalışma, evden çalışma, hibrit, uzaktan çalışan, hibrit iş, uzak çalışanlar, hibrit bağlantı, uzaktan erişim, uzaktan erişim, uzaktan çalışma, telework, teleworking, mobil iş, uzak iş, her yerden çalışma, esnek çalışma alanı
+description: Hibrit çalışanlarınızın şirket içi ve Microsoft 365 kaynaklarına güvenli bir şekilde erişebilmesi için altyapı katmanlarında ilerleyin.
+ms.openlocfilehash: 37ccb9ff5194654916cf420191477929b3434f36
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318585"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584738"
 ---
-# <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Karma çalışma için altyapınızı ayarlama Microsoft 365
+# <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Microsoft 365 ile karma çalışma için altyapınızı ayarlama
 
-Çalışanın üretkenliğini ve işbirliğini güvence altına almak ve iyileştirmek için, site içi ve uzak çalışanların kolayca ve güvenli bir şekilde kurum içi ve bulut tabanlı bilgilerine, araçlarına ve kaynaklarına erişmesine izin verebilirsiniz. Bu çözüm, çalışanlarınızı nerede olursa olsunlar en iyi çalışmalarını yapmaları için güçlendiren önemli altyapı katmanlarının dağıtımında adım adımlarını ilerler.
+Çalışanınızın üretkenliğini ve işbirliğini güvenli hale getirmek ve iyileştirmek için, yerinde ve uzak çalışanların kuruluşunuzun şirket içi ve bulut tabanlı bilgilerine, araçlarına ve kaynaklarına kolayca ve güvenli bir şekilde erişmesine izin vermeniz gerekir. Bu çözüm, çalışanlarınızın nerede olurlarsa olsunlar en iyi işlerini yapmalarını sağlayan temel altyapı katmanlarının dağıtımında adım adım ilerler.
 
-Karma çalışanlar çeşitli konumlarda sitede veya uzaktan çalışabiliyor. Geleneksel bir ofisten uzakta çalışanların çalışmasına izin verme, birçok kuruluşun şunları yapmak için önemlidir:
+Karma çalışanlar yerinde veya uzaktan konumların bir birleşiminde çalışabilir. Çalışanların geleneksel bir ofisten uzak çalışmasına izin vermek birçok kuruluşun şunları sağlaması açısından önemlidir:
 
-- Taşınmak istemeyen veya esnek bir çalışma ortamı gerektiren çalışanları işe alma ve işe alma.
-- Çalışanların iletişimini azaltarak çalışanların üretken olmak için daha fazla zamanı olmalı ve iş dışındaki etkinlikleri stres altında azaltabilirsiniz.
-- Ofis alanı tasarrufu sağlar.
+- Yeniden taşınmak istemeyen veya esnek bir çalışma ortamı gerektiren çalışanları işe alma ve tutma.
+- Çalışanların işe gidişlerini azaltın, işçileri üretken olmaya ve iş dışındaki stres azaltıcı etkinliklere daha fazla zaman bırakın.
+- Ofis alanından tasarruf edin.
 
-Microsoft 365, karma çalışanlarınızı sitede veya uzaktan çalışma gücü veren özelliklere sahip olur.
+Microsoft 365, hibrit çalışanlarınızı yerinde veya uzaktan çalışma konusunda güçlendiren özelliklere sahiptir.
 
-![Karma çalışanlarınızı daha iyi Microsoft 365.](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
+![Microsoft 365 ile hibrit çalışanlarınızı güçlendirin.](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
 > [!NOTE]
-> Bu kaynaklara yeni Microsoft 365, bu [kaynaklara bakın](https://www.microsoft.com/microsoft-365).
+> Microsoft 365'i yeni kullanıyorsanız [bu kaynaklara](https://www.microsoft.com/microsoft-365) bakın.
 
-Dağıtım sürecine genel bir bakış için bu videoyu izleyin.
+Dağıtım işlemine genel bir bakış için bu videoyu izleyin.
 <br>
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-Karma çalışan üretkenliğini etkinleştirmek için site içi ve bulut tabanlı altyapıyı yöneten BT uzmanları için, bu çözüm şu önemli özellikleri sağlar:
+Hibrit çalışan üretkenliğini sağlamak için yerinde ve bulut tabanlı altyapıyı yöneten BT uzmanları için bu çözüm şu temel özellikleri sağlar:
 
 - Bağlı
 
-  Dünyanın herhangi bir yerinde ve istediğiniz zaman, çalışanlarınız şunların erişimine sahip olabilir:
+  Dünyanın her yerinden ve herhangi bir zamanda çalışanlarınız şunlara erişebilir:
 
-  - Yeni aboneliğinize bulut tabanlı Microsoft 365 verileri.
+  - Microsoft 365 aboneliğinizdeki bulut tabanlı hizmetler ve veriler.
 
   - Şirket içi uygulama veri merkezleri tarafından sunulanlar gibi kuruluş kaynakları.
 
 - Güvenli
 
-  Oturum açmalar, çok faktörlü kimlik doğrulaması (MFA) ile ve Microsoft 365'nin yerleşik güvenlik özellikleriyle güvence altına alınır ve Windows 11 veya 10, kötü amaçlı yazılımlara, kötü amaçlı saldırılara ve veri kaybına karşı koruma sağlar.
+  Oturum açma işlemleri, Microsoft 365'in çok faktörlü kimlik doğrulaması (MFA) ve yerleşik güvenlik özellikleri ile güvenlik altına alınır ve kötü amaçlı yazılımlara, kötü amaçlı saldırılara ve veri kaybına karşı Windows 11 veya 10 koruma sağlar.
 
 - Yönetilen
 
-  Karma çalışanın cihazları güvenlik ayarları ve izin verilen uygulamalarla buluttan yönetilebilir ve sistem durumuna uyumluluk gerektirir.
+  Hibrit çalışanınızın cihazları güvenlik ayarları, izin verilen uygulamalar ve sistem durumuyla uyumluluk gerektirmek için buluttan yönetilebilir.
 
-- İşbirliği ve üretken
+- İşbirliğine dayalı ve üretken
 
-  Karma çalışanlarınız, şu son derece işbirliğine dayalı bir şekilde şirket içi çalışanlar kadar üretken olabilir:
+  Hibrit çalışanlarınız, şirket içi kadar üretken olabilir ve bunlarla son derece işbirliğine dayalı olabilir:
 
-  - Çevrimiçi toplantılar ve sohbet oturumları Teams.
+  - Teams ile çevrimiçi toplantılar ve sohbet oturumları.
 
-  - Bulut tabanlı dosya depolaması için paylaşılan çalışma alanları; genel erişilebilirlik ve erişilebilirlik özellikleriyle ve erişilebilirlik özellikleriyle gerçek SharePoint OneDrive.
+  - SharePoint ve OneDrive ile genel erişilebilirlik ve gerçek zamanlı işbirliği ile bulut tabanlı dosya depolama için paylaşılan çalışma alanları.
 
-  - Işi bölmek ve iş yapmak için paylaşılan görevler ve iş akışları.
+  - İşi bölmek ve işleri halletmek için paylaşılan görevler ve iş akışları.
 
-Sorunsuz oturum açma deneyimi için, şirket içi Active Directory Etki Alanı Hizmetleri (AD DS) kullanıcı hesaplarınız Azure Active Directory (Azure AD) ile eşitlenmiş olmalıdır. Windows 11 veya 10 cihazla korumak için Intune'a kaydolmaları gerekir. Burada, altyapının üst düzey bir görünümü ve daha sonra yer var.
+Sorunsuz bir oturum açma deneyimi için şirket içi Active Directory Domain Services (AD DS) kullanıcı hesaplarınız Azure Active Directory (Azure AD) ile eşitlenmelidir. Windows 11 veya 10 cihazınızı korumak için Intune'a kayıtlı olmaları gerekir. Altyapının üst düzey bir görünümü aşağıdadır.
 
-![Karma çalışanları için temel altyapıya sahip Microsoft 365.](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+![Microsoft 365 ile karma çalışanlar için temel altyapı.](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-Karma çalışanlarınız için Microsoft 365 özelliklerini etkinleştirmek üzere bu özellik Microsoft 365 kullanın.
+Karma çalışanlarınız için Microsoft 365'in özelliklerini etkinleştirmek için bu Microsoft 365 özelliklerini kullanın.
 
-|Özellik veya özellik|Açıklama|Lisanslama|
+|Yetenek veya özellik|Açıklama|Lisanslama|
 |---|---|---|
-|Güvenlik varsayılanları ile zorunlu kılınan MFA|Oturum açma işlemleri için ikinci bir kimlik doğrulama biçimi gerektirerek güvenliği tehlikeye atılmış kimliklere ve cihazlara karşı koruyun. Güvenlik varsayılanları, tüm kullanıcı hesapları için MFA gerektirir.|Microsoft 365 E3 E5|
-|Koşullu Erişim ile zorunlu kılınan MFA|Koşullu Erişim ilkeleriyle oturum açmanın özelliklerine bağlı olarak MFA gerektirme.|Microsoft 365 E3 E5|
-|Risk tabanlı Koşullu Erişim ile zorunlu kılınan MFA|Kullanıcının Azure AD Kimlik Koruması ile oturum açma riski temel alarak MFA gerektirme.|Microsoft 365 E5 lisansları olan E3 Azure AD Premium P2 E3|
-|Self-Service Sıfırlama (SSPR)|Kullanıcılarının parolalarını veya hesaplarını sıfırlamasına veya kilidini açmasına izin ver.|Microsoft 365 E3 E5|
-|Azure AD Uygulama Ara Sunucusu|intranet sunucularında barındırılan web tabanlı uygulamalar için güvenli uzaktan erişim sağlar.|Ayrı ücretli Azure aboneliği gerektirir|
-|Azure Noktadan Siteye VPN|Azure sanal ağı aracılığıyla uzak çalışanın cihazından intranet'inize güvenli bir bağlantı oluşturun.|Ayrı ücretli Azure aboneliği gerektirir|
-|Windows 365|Yalnızca kişisel ve yönetimsiz cihazlarını 365 Bulut pc'lerle Windows uzaktan çalışanları desteklemektedir.|Ayrı ücretli Azure aboneliği gerektirir|
-|Uzak Masaüstü |Çalışanların intranet'inize Windows tabanlı bilgisayarlara bağlanmasına izin ver.|Microsoft 365 E3 E5|
-|Uzak Masaüstü Hizmetleri Ağ Geçidi|İletişimi şifreler ve RDS ana bilgisayarlarının doğrudan İnternet'e açık açıklarını önler.|Ayrı Windows Server lisansları gerektirir|
-|Microsoft Intune|Cihazları ve uygulamaları yönetin.|Microsoft 365 E3 E5|
-|Yapılandırma Yöneticisi|Cihazlarınıza yazılım yüklemelerini, güncelleştirmelerini ve ayarlarını yönetme|Ayrı Configuration Manager lisansları gerektirir|
-|Endpoint Analytics|İstemcilerinizi güncelleştirme hazırlığı Windows.|Ayrı Configuration Manager lisansları gerektirir|
-|AutoPilot Windows'i çalıştırın|Üretken kullanım için 11 veya 10 Windows cihazı ayarlayın ve önceden yapılandırın.|Microsoft 365 E3 E5|
-|Microsoft Teams, Exchange Online, SharePoint Online ve OneDrive, Microsoft 365 Uygulamaları, Microsoft Power Platform ve Yammer|Oluşturma, iletişim kurma ve işbirliği yapma.|Microsoft 365 E3 E5|
+|Güvenlik varsayılanlarıyla zorunlu kılınan MFA|Oturum açma işlemleri için ikinci bir kimlik doğrulaması biçimi gerektirerek güvenliği aşılmış kimliklere ve cihazlara karşı koruma sağlayın. Güvenlik varsayılanları tüm kullanıcı hesapları için MFA gerektirir.|Microsoft 365 E3 veya E5|
+|Koşullu Erişim ile zorunlu kılınan MFA|Koşullu Erişim ilkeleriyle oturum açma özelliklerini temel alarak MFA gerektirme.|Microsoft 365 E3 veya E5|
+|Risk tabanlı Koşullu Erişim ile zorunlu kılınan MFA|Azure AD Kimlik Koruması ile kullanıcının oturum açma riskine bağlı olarak MFA gerektirir.|Azure AD Premium P2 lisansları olan Microsoft 365 E5 veya E3|
+|parola sıfırlamayı (SSPR) Self-Service|Kullanıcılarınızın parolalarını veya hesaplarını sıfırlamasına veya kilidini açmasına izin verin.|Microsoft 365 E3 veya E5|
+|Azure AD Uygulama Ara Sunucusu|İntranet sunucularında barındırılan web tabanlı uygulamalar için güvenli uzaktan erişim sağlayın.|Ayrı ücretli Azure aboneliği gerektirir|
+|Azure Noktadan Siteye VPN|Azure sanal ağı üzerinden uzak çalışanın cihazından intranetinize güvenli bir bağlantı oluşturun.|Ayrı ücretli Azure aboneliği gerektirir|
+|Windows 365|Kişisel ve yönetilmeyen cihazlarını yalnızca Windows 365 Bulut bilgisayarlarıyla kullanabilen uzak çalışanları destekleyin.|Ayrı ücretli Azure aboneliği gerektirir|
+|Uzak Masaüstü |Çalışanların intranetinizdeki Windows tabanlı bilgisayarlara bağlanmasına izin verin.|Microsoft 365 E3 veya E5|
+|Uzak Masaüstü Hizmetleri Ağ Geçidi|İletişimleri şifreleyin ve RDS konaklarının doğrudan İnternet'e açık olmasını engelleyin.|Ayrı Windows Server lisansları gerektirir|
+|Microsoft Intune|Cihazları ve uygulamaları yönetme.|Microsoft 365 E3 veya E5|
+|Yapılandırma Yöneticisi|Cihazlarınızda yazılım yüklemelerini, güncelleştirmelerini ve ayarlarını yönetme|Ayrı Configuration Manager lisansları gerektirir|
+|Uç Nokta Analizi|Windows istemcilerinizin güncelleştirmeye hazır olup olmadığını belirleyin.|Ayrı Configuration Manager lisansları gerektirir|
+|Windows Autopilot|Yeni Windows 11 veya 10 cihazı üretken kullanım için ayarlayın ve önceden yapılandırın.|Microsoft 365 E3 veya E5|
+|Microsoft Teams, Exchange Online, SharePoint Online ve OneDrive, Microsoft 365 Uygulamaları, Microsoft Power Platform ve Yammer|Oluşturma, iletişim kurma ve işbirliği yapma.|Microsoft 365 E3 veya E5|
 ||||
 
-Güvenlik ve uyumluluk ölçütleri için bkz [. Uzak çalışanlar için güvenlik ve uyumluluğu dağıtma](empower-people-to-work-remotely-security-compliance.md).
+Güvenlik ve uyumluluk ölçütleri için bkz. [Uzak çalışanlar için güvenlik ve uyumluluk dağıtma](empower-people-to-work-remotely-security-compliance.md).
 
-<a name="poster"></a> Bu çözümün 2 sayfalık bir özeti için Karma çalışanları [güçlendir posterini bakın](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf).
+<a name="poster"></a> Bu çözümün 2 sayfalık özeti için [Hibrit çalışanları güçlendirme posteri'ne](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) bakın.
 
-[![Karma çalışanların posterini güçlendirin.](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
+[![Hibrit çalışan posterini güçlendirin.](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
 
-## <a name="provide-hybrid-working-for-all-of-your-workers"></a>Tüm çalışanlarınız için karma çalışma sağlama
+## <a name="provide-hybrid-working-for-all-of-your-workers"></a>Tüm çalışanlarınız için karma çalışma sağlayın
 
-Bu cihazlarla tüm çalışanlarınızı üretken bir şekilde her yerde üretken hale etkinleştirebilirsiniz:
+Bu cihazlarla tüm çalışanlarınızın her yerden üretken kalmasını sağlayabilirsiniz:
 
-- Surface dizüstü bilgisayar ve Windows 11 veya 10 gibi, web üzerinden Microsoft 365 bulut uygulamalarına ve hizmetlere erişmeye yönelik özelliklere, güvenlik ve performansa sahip modern bir cihaz.
+- Surface dizüstü bilgisayar ve Windows 11 veya 10 gibi microsoft 365 bulut uygulamalarına ve hizmetlerine doğrudan web üzerinden erişme özelliklerine, güvenliğine ve performansına sahip modern bir cihaz.
 
-- Evden kullanılan eski dizüstü ve masaüstleri dahil olmak üzere herhangi bir cihaz Microsoft 365 365 Bulut Bilgisayarı aracılığıyla dolaylı olarak Windows bulut uygulamalarına ve [hizmetlere erişim sağlar](empower-people-to-work-remotely-remote-access.md#deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices). Bu seçenek yüksek performans, güçlü güvenlik ve basitleştirilmiş bir IT yönetimi sağlar.
+- Microsoft 365 bulut uygulamalarına ve hizmetlerine bir [Windows 365 Bulut PC](empower-people-to-work-remotely-remote-access.md#deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices) aracılığıyla dolaylı olarak erişebilen, eski dizüstü bilgisayarlar veya evden kullanılan masaüstleri de dahil olmak üzere tüm cihazlar. Bu seçenek yüksek performans, güçlü güvenlik ve basitleştirilmiş BT yönetimi sağlar.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu adımları kullanarak, kurumnizin sunucularına ve bulut hizmetlerine güvenli ve en iyi şekilde erişimi en iyi duruma getirmek ve karma çalışma çalışanlarının üretkenliğini en üst düzeye çıkarmak için bu adımları kullanın.
+Kuruluşunuzun sunucularına ve bulut hizmetlerine erişimin güvenliğini sağlamak ve iyileştirmek ve karma çalışanınızın üretkenliğini en üst düzeye çıkarmak için bu adımları kullanın.
 
 1. [MFA ile oturum açma güvenliğini artırma](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Şirket içi uygulama ve hizmetlere uzaktan erişim sağlama](empower-people-to-work-remotely-remote-access.md)
 3. [Güvenlik ve uyumluluk hizmetlerini dağıtma](empower-people-to-work-remotely-security-compliance.md)
-4. [Cihazlarınız, bilgisayarlarınız ve diğer uç noktalarınız için uç nokta yönetimini dağıtma](empower-people-to-work-remotely-manage-endpoints.md)
-5. [Karma çalışan üretkenlik uygulamalarını ve hizmetlerini dağıtma](empower-people-to-work-remotely-teams-productivity-apps.md)
-6. [Çalışanlarınızı eğitin ve kullanım geri bildirimlerini bildirin](empower-people-to-work-remotely-train-monitor-usage.md)
+4. [Cihazlarınız, bilgisayarlarınız ve diğer uç noktalarınız için uç nokta yönetimi dağıtma](empower-people-to-work-remotely-manage-endpoints.md)
+5. [Karma çalışan üretkenliği uygulamalarını ve hizmetlerini dağıtma](empower-people-to-work-remotely-teams-productivity-apps.md)
+6. [Çalışanlarınızı eğitin ve kullanım geri bildirimlerini ele alın](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![Karma çalışmayla karma çalışma için altyapınızı ayarlama adımları Microsoft 365.](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![Microsoft 365 ile karma çalışma için altyapınızı ayarlama adımları.](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-Kurgusal ama temsili çok uluslu bir kuruluşun karma çalışma için altyapısını nasıl ayarladı hakkında bilgi için bkz. [Contoso'nun COVID-19 yanıtı ve altyapısı karma çalışma için](contoso-remote-onsite-work.md).
+Kurgusal ama temsili çok uluslu bir kuruluşun hibrit çalışma için altyapısını nasıl ayarlamış olduğunu görmek için bkz. [Contoso'nun COVID-19 yanıtı ve karma çalışma altyapısı](contoso-remote-onsite-work.md).

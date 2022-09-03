@@ -2,7 +2,7 @@
 title: Hatalı sitelere macOS bağlantılarını önlemeye yardımcı olmak için ağ korumasını kullanma
 description: macOS kullanıcılarının bilinen kötü amaçlı ve şüpheli ağ adreslerine erişmesini engelleyerek ağınızı koruyun
 keywords: Ağ koruması, MacOS açıklarından yararlanma, kötü amaçlı web sitesi, ip, etki alanı, etki alanları, komut ve denetim, SmartScreen, bildirim
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,18 +13,18 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.subservice: mde
 ms.topic: overview
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 103268e8b1cd1090d2ec6815a414164a63e83606
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 7d887cd3e21927ec56adbbf54a6188f04db3e017
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497059"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575789"
 ---
 # <a name="network-protection-for-macos"></a>macOS için ağ koruması
 

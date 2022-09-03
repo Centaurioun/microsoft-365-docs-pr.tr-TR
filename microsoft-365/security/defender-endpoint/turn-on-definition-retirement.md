@@ -1,10 +1,10 @@
 ---
-title: Emeklilik için tanımın sonlarını Microsoft Defender Virüsten Koruma
-description: Emeklilik için tanımın sonlarını Microsoft Defender Virüsten Koruma.
-keywords: Microsoft Defender Virüsten Koruma, kötü amaçlı yazılımdan koruma, güvenlik, defender, tanım emeklilik
+title: Microsoft Defender Virüsten Koruma için tanımı kullanımdan kaldırmayı açma
+description: Microsoft Defender Virüsten Koruma için tanımı kullanımdan kaldırmayı açın.
+keywords: Microsoft Defender Virüsten Koruma, kötü amaçlı yazılımdan koruma, güvenlik, defender, tanımı kullanımdan kaldırma
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,39 +14,39 @@ ms.date: 06/10/2021
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: dd9cd313dec962547acef85c6da326d3b6e5c58f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0dbe84760518480883daecd1739eb4f12b5805cf
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62997486"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577089"
 ---
-# <a name="turn-on-definition-retirement"></a>Tanımın sonlarını kapatma
+# <a name="turn-on-definition-retirement"></a>Tanım kullanımdan kaldırılmasını aç
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Grup İlkesi'yi kullanarak tanımın emeklilikni yapılandırsanız. Tanımın emeklilik, bilgisayarın belirli bir güvenlik açığına karşı korunması için gerekli güvenlik güncelleştirmelerine sahip olup olduğunu denetler. Sistem, bir tanım tarafından algılanan açıktan yararlanmaya açık değilse, bu tanım "kaldırıldı" olur. Verilen protokolün tüm güvenlik zekası kaldırıldısa, bu protokol artık ayrıştırıcı olmaz. Bu özelliğin etkinleştirilmesi, performansı artırmaya yardımcı olur. En son güvenlik güncelleştirmelerinin hepsiyle birlikte güncel olan bir bilgisayarda, ağ korumasının ağ performansı üzerinde hiçbir etkisi olmaz.
+grup ilkesi kullanarak tanımın kullanımdan kaldırılmasını yapılandırabilirsiniz. Tanım kullanımdan kaldırma, bilgisayarın belirli bir güvenlik açığına karşı korumak için gerekli güvenlik güncelleştirmelerine sahip olup olmadığını denetler. Sistem bir tanım tarafından algılanan açıklara karşı savunmasız değilse, bu tanım "kullanımdan kaldırılmıştır". Belirli bir protokolün tüm güvenlik bilgileri kullanımdan kaldırılırsa bu protokol artık ayrıştırılır. Bu özelliğin etkinleştirilmesi performansı artırmaya yardımcı olur. En son güvenlik güncelleştirmelerinin tümünün güncel olduğu bir bilgisayarda ağ korumasının ağ performansı üzerinde hiçbir etkisi olmaz.
 
-## <a name="use-group-policy-to-configure-definition-retirement"></a>Kullanımdan kullanımdan kullanım tanımını yapılandırmak için Grup İlkesi kullanma
+## <a name="use-group-policy-to-configure-definition-retirement"></a>Tanımın kullanımdan kaldırılmasını yapılandırmak için grup ilkesi kullanma
 
-1. Grup İlkesi yönetim uç noktanız üzerinde, Grup İlkesi [Yönetim Konsolu'nu açın](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
+1. grup ilkesi yönetim uç noktanızda [grup ilkesi Yönetim Konsolu'nu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) açın.
 
-2. Ağ İnceleme **Sistemi için** \> **Bilgisayar Yapılandırması Windows** \> **Bileşenleri** **Microsoft Defender Virüsten Koruma'e** \> \> gidin.
+2. **Bilgisayar Yapılandırması** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Ağ İnceleme Sistemi'ne** gidin.
 
-3. Tanımın **emeklilik için aç'ı seçin**. Varsayılan olarak, bu ilke etkindir. Yapılandırılmadı **olarak ayarlanırsa**, tanımın emeklilik etkinleştirilir.
+3. **Tanımın kullanımdan kaldırılmasını aç'ı** seçin. Bu ilke varsayılan olarak etkindir. **Yapılandırılmadı** olarak ayarlanırsa, tanımın kullanımdan kaldırılması etkinleştirilir.
 
-4. İlkeyi düzenlemek için, ilke **ayarını düzenle bağlantısını** seçin.
+4. İlkeyi düzenlemek için **ilke ayarını düzenle** bağlantısını seçin.
 
-5. **Etkin'i** ve sonra Tamam'ı **seçin**.
+5. **Etkin'i** ve ardından **Tamam'ı** seçin.
 
-6. Güncelleştirilmiş Grup İlkesi Nesnenizi dağıtın. Bkz [. Grup İlkesi Yönetim Konsolu](/windows/win32/srvnodes/group-policy).
+6. Güncelleştirilmiş grup ilkesi Nesnenizi dağıtın. Bkz. [yönetim konsolu grup ilkesi](/windows/win32/srvnodes/group-policy).
 
 > [!TIP]
-> Şirket içinde Grup İlkesi Nesneleri mi kullanıyorsunuz? Buluttaki çevirinin nasıl olduğunu öğrenin. [Grup İlkesi çözümlemesini kullanarak şirket içi grup ilkesi nesnelerinizi Çözümleme - Microsoft Endpoint Manager.](/mem/intune/configuration/group-policy-analytics)
+> Şirket içinde grup ilkesi Nesneleri mi kullanıyorsunuz? Bulutta nasıl çeviri yaptıklarını görün. [Microsoft Endpoint Manager - Önizleme'de grup ilkesi analizini kullanarak şirket içi grup ilkesi nesnelerinizi analiz](/mem/intune/configuration/group-policy-analytics) edin.

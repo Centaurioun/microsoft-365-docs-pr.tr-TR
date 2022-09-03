@@ -1,12 +1,12 @@
 ---
-title: Grupların ve grupların yönetimi için Microsoft 365 yaşam döngüsü Microsoft Teams
+title: Microsoft 365 grupları ve Microsoft Teams için kuruluş ve yaşam döngüsü idaresini planlama
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -15,71 +15,71 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: Microsoft 365'da işbirliği araçları için yaşam döngüsü yönetim Microsoft 365
-ms.openlocfilehash: a0f4622afd1a22b8cd6574865012b7f636fc06c5
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+description: Microsoft 365'te işbirliği araçları için yaşam döngüsü idare seçenekleri hakkında bilgi edin
+ms.openlocfilehash: ef47d7f9000cb6c350f8f90c47881e65d58d3128
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "63005017"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575691"
 ---
-# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Grupların ve grupların yönetimi için Microsoft 365 yaşam döngüsü Microsoft Teams
+# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Microsoft 365 grupları ve Microsoft Teams için kuruluş ve yaşam döngüsü idaresini planlama
 
-Microsoft 365 gruplarda, kuruma gereken yönetim özelliklerini uygulamaya yardımcı olacak zengin bir araç kümesi vardır. 
+Microsoft 365 grupları, kuruluşunuzun gerektirdiği idare özelliklerini uygulamak için zengin bir araç kümesine sahiptir. 
 
-Aşağıdaki bölümde özellikleri açıklar, en iyi uygulamaları önerip, yönetim gereksinimlerini ve bunları nasıl karşılayacaklarını belirlemek için doğru soruları sorma konusunda yol gösterici bilgiler sağlar.
+Aşağıdaki bölümde özellikler açıklanır, en iyi yöntemler önerilir ve idare gereksinimlerini ve bunların nasıl karşıleneceğini belirlemek için doğru soruları sormak için rehberlik sağlanır.
 
-## <a name="control-who-can-create-microsoft-365-groups"></a>Kimlerin grup oluştur Microsoft 365 denetleme
+## <a name="control-who-can-create-microsoft-365-groups"></a>Microsoft 365 gruplarını kimlerin oluşturabileceğini denetleme
 
-Gruplar; birden çok uç nokta (son kullanıcılar tarafından Outlook, SharePoint, Teams ve diğer ortamlar dahil olmak üzere) oluşturulabilir.
+Gruplar son kullanıcılar tarafından Outlook, SharePoint, Teams ve diğer ortamlar da dahil olmak üzere birden çok son noktadan oluşturulabilir.
 
-![resim desc.](../media/04.png)
+![görüntü desc.](../media/04.png)
 
-Grup sahiplerini güçlendirmek ve kullanıcıların daha kolay çalışmalarını yapmalarına yardımcı olmak için self servis öneririz. Birçok farklı hizmet, hizmetin çalışması için grupların oluşturulmasını Microsoft 365, grup ve ekip oluşturmanın sınırlayıcı olması kullanıcıların üretkenliğini yavaşlatabilirsiniz.
+Grup sahiplerini güçlendirmek ve kullanıcıların işlerini daha kolay yapmalarına yardımcı olmak için self servis kullanmanızı kesinlikle öneririz. Birçok Microsoft 365 hizmeti hizmetin çalışması için grupların oluşturulmasını gerektirdiğinden, grup ve ekip oluşturmayı sınırlamak kullanıcıların üretkenliğini yavaşlatabilir.
 
-Grupların oluşturulması için aşağıdaki yönetim seçeneklerini göz önünde önünden düşünün:
+Grup oluşturma için aşağıdaki idare seçeneklerini göz önünde bulundurun:
 
-- Grupları sınırlamak için, kullanılmamaktadır grupları [otomatik olarak](microsoft-365-groups-expiration-policy.md) silmek için grupların süre sonu ilkelerini kullanın.
-- Grup oluşturma işlemi, örneğin [tam zamanlı çalışanlar gibi dinamik üyelik](/azure/active-directory/users-groups-roles/groups-create-rule) içeren bir güvenlik gruplarının üyeleriyle sınırlandırın.
-- Grup oluşturma işlemini bir güvenlik grubuyla sınırlandırarak kullanıcıların güvenlik grubunun üyesi olmak için, kuruluşlarının grup kullanımı ilkelerinde eğitimi tamamlamalarını gerekli hale getirir.
+- Grup yayılmasını sınırlamak için, kullanılmayan grupları otomatik olarak silmek için [grupların süre sonu ilkelerini](microsoft-365-groups-expiration-policy.md) kullanın.
+- Grup oluşturmayı, tüm tam zamanlı çalışanlar gibi [dinamik üyeliği olan bir güvenlik grubunun üyeleriyle](/azure/active-directory/users-groups-roles/groups-create-rule) sınırlayın.
+- Grup oluşturmayı bir güvenlik grubuyla sınırlayın ve kullanıcıların güvenlik grubuna üye olmak için kuruluşunuzun grup kullanım ilkelerindeki eğitimi tamamlamasını zorunlu kılar.
 
-Kimlerin grup oluştur sınırlaması yapmak için bkz. Kimlerin grup [oluştur](manage-creation-of-groups.md) Microsoft 365 yönetme.
+Kimlerin grup oluşturabileceğini sınırlamak istiyorsanız, bunu yapılandırma hakkında bilgi için bkz. [Microsoft 365 gruplarını kimlerin oluşturabileceğini yönetme](manage-creation-of-groups.md) .
 
 ## <a name="group-delete-restore-and-archiving"></a>Grup silme, geri yükleme ve arşivleme
 
-Grup Microsoft 365 silindiğinde, varsayılan olarak 30 gün boyunca korunur. Bu 30 günlük süre "geçici silme" olarak adlandırılır, çünkü grubu hala geri yükleyebilirsiniz. 30 gün sonra, grup ve onunla ilişkilendirilmiş içerik kalıcı olarak silinir ve geri yüklenemez.
+Bir Microsoft 365 grubu silindiğinde, varsayılan olarak 30 gün boyunca korunur. Bu 30 günlük süre "geçici silme" olarak adlandırılır, çünkü grubu hala geri yükleyebilirsiniz. 30 gün sonra, grup ve onunla ilişkilendirilmiş içerik kalıcı olarak silinir ve geri yüklenemez.
 
-Sohbeti, dosyaları veya postayı korumak için bekletme ilkeleriniz varsa, grup silindikten sonra bu öğeler korunur. Ayrıntılar [için bkz. Bekletme ilkeleri hakkında](../compliance/retention.md) bilgi.
+Sohbeti, dosyaları veya postayı korumak için bekletme ilkeleriniz varsa, grup silindikten sonra bu öğeler korunur. Ayrıntılar için bkz [. Bekletme ilkeleri hakkında bilgi edinin](../compliance/retention.md) .
 
-Grubu silmek ama grup bağlantılı bir veya birden çok hizmetten içeriği korumak için bkz. Grupları, ekipleri ve grupları [Yammer](end-life-cycle-groups-teams-sites-yammer.md) bilgi.
+Bir grubu silmek ancak gruba bağlı bir veya daha fazla hizmetten içeriği korumak istiyorsanız, bilgi için [bkz. Grupları, ekipleri ve Yammer'ı arşivleyin](end-life-cycle-groups-teams-sites-yammer.md) .
 
 ## <a name="group-naming-policy"></a>Grup adlandırma ilkesi
 
-Grup adlandırma ilkesi, grupları iki şekilde yönetmeye yardımcı olabilir:
+Grupları adlandırma ilkesi, grupları iki şekilde yönetmenize yardımcı olabilir:
 
-- Grup adının başında veya sonunda sabit dizeleri veya Azure AD özniteliklerini ve bu grupla ilişkilendirilmiş e-posta adresini zorunlu kılınan bir ön ek/son ek adlandırma ilkesi kullanılabilir. Bunu yaparak, örneğin bölüm adlarının veya bölgelerin grup adlarında dahil edilmesini s belirttiysiniz.
-- Engellenen sözcükler ilkesi, yöneticiler adları gibi bazı sözcüklerin grup adlarında kullanılmamalarını sağlar.
+- Bir ön ek/sonek adlandırma ilkesi, bir grup adının başında veya sonunda sabit dizeleri veya Azure AD özniteliklerini ve ilişkili e-posta adresini zorunlu kılmak için kullanılabilir. Bunu yaparak, bölüm adlarının veya bölgelerin grup adlarında eklenmesini sağlayabilirsiniz.
+- Engellenen sözcükler ilkesi, yöneticilerin adları gibi belirli sözcüklerin grup adlarında kullanılmamasını sağlayabilir.
 
-Adlandırma ilkeleri, grup bağlantılı hizmetlerden grup oluşturulduğunda uygulanır.
+Adlandırma ilkeleri, grup bağlantılı hizmetlerden herhangi birinden gruplar oluşturulduğunda uygulanır.
 
-Gruplar için adlandırma ilkelerini kullanmaya karar verdiyseniz Gruplar adlandırma [Microsoft 365 bkz](groups-naming-policy.md).
+Gruplar için adlandırma ilkeleri kullanmaya karar verirseniz bkz. [adlandırma ilkesi Microsoft 365 Grupları](groups-naming-policy.md).
 
 ## <a name="group-expiration-policy"></a>Grup süre sonu ilkesi
 
-Bir son kullanma süresi belirtebilir ve bu dönemin sonuna ulaşan ancak yenilenmemiş olan tüm grup silinir. Son kullanma süresi, grubun oluşturulma tarihi veya son yenileme tarihiyle başlar.
+Bir süre sonu belirtebilirsiniz ve bu sürenin sonuna ulaşan ve yenilenmeyen tüm gruplar silinir. Süre sonu, grup oluşturulduğunda veya son yenilendiği tarihte başlar.
 
-Grupların süresini sona erecek şekilde ayar defa ayarlayın:
-- Grubun sahipleri, süre sonu sona ererken grubu yenilemeleri hakkında bilgi edinzler.
+Grupların süresinin dolmasına ayarladıktan sonra:
+- Süre sonu yaklaştığında grubun sahiplerine grubu yenilemeleri bildirilir.
 - Etkin gruplar otomatik olarak yenilenir.
-- Yenilenmemiş olan tüm grup silinir.
-- Silinen tüm grup, 30 gün içinde grup sahipleri veya yöneticisi tarafından geri yüklenebilir.
+- Yenilenmeyen tüm gruplar silinir.
+- Silinen tüm gruplar, grup sahipleri veya yönetici tarafından 30 gün içinde geri yüklenebilir.
 
-Süre sonu ilkeleri, artık kullanımda yer alan grupların silinmemesiyle grupları sınırlandırmanın iyi bir yoludur. Grup süre sonu ilkesi oluşturmak için Gruplar Süre Sonu Microsoft 365 [bakın](microsoft-365-groups-expiration-policy.md).
+Süre sonu ilkeleri, artık kullanımda olmayan grupların silindiğinden emin olarak grup yayılmasını sınırlamanın iyi bir yoludur. Grup süre sonu ilkesi oluşturmak istiyorsanız bkz. [Microsoft 365 Grupları Süre Sonu İlkesi](microsoft-365-groups-expiration-policy.md).
 
 ## <a name="related-topics"></a>İlgili konular
 
-[İşbirliği yönetim planlaması önerileri](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
+[İşbirliği idaresi planlama önerileri](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
-[İşbirliği yönetim planınızı oluşturma](collaboration-governance-first.md)
+[İşbirliği idare planınızı oluşturma](collaboration-governance-first.md)
 
-[Eski çalışanı kaldırma ve verilerin güvenliğini sağlama](/microsoft-365/admin/add-users/remove-former-employee)
+[Eski bir çalışanı kaldırın ve verileri güvenli hale getirin](/microsoft-365/admin/add-users/remove-former-employee)

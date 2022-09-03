@@ -7,19 +7,19 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.custom: intro-get-started
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Örnek model aracılığıyla modelleri anlama hakkında bilgi edinin.
-ms.openlocfilehash: 210d5865a6e3208faff16fe1ce14748ee66d63c8
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: d23009233f4eb9b5dba9fc7e38c152b6170a85b4
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916215"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580369"
 ---
 # <a name="import-a-sample-document-understanding-model-for-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex için örnek belge anlama modelini içeri aktarma
 
@@ -48,10 +48,10 @@ Modelin nasıl yapıldığını daha iyi anlamak için örnek modeli analiz etme
 Belge anlama modellerinin farklı kullanım desenlerini gösteren topluluk örneklerini içeren [SharePoint Syntex Örnekleri deposuna](https://github.com/pnp/syntex-samples) erişebilirsiniz. Bu depodaki örnekler hem belge anlama modeli dosyalarını hem de modeli eğitmek için kullanılan dosyaları içerir. İçeri aktarıldıktan sonra, dosyaları işlemek ve sınıflandırıcı ile ayıklayıcıları görüntülemek ve düzenlemek için bu modelleri kullanabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Sınıflandırıcı oluşturma](create-a-classifier.md)
+[Sınıflandırıcı oluştur](create-a-classifier.md)
 
-[Ayıklayıcı oluşturma](create-an-extractor.md)
+[Ayıklayıcı oluştur](create-an-extractor.md)
 
 [Document Understanding'e genel bakış](document-understanding-overview.md)
 
-[Form işleme modeli oluşturma](create-a-form-processing-model.md)  
+[Form işleme modeli oluştur](create-a-form-processing-model.md)  

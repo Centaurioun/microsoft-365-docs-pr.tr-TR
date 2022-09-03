@@ -2,7 +2,7 @@
 title: Linux'ta Uç Nokta için Microsoft Defender'da Anacron kullanarak virüsten koruma taraması zamanlama
 description: Kuruluşunuzun varlıklarının daha iyi korunması için Linux'ta Uç Nokta için Microsoft Defender virüsten koruma taraması zamanlamayı öğrenin.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, linux, scans, virüsten koruma, linux üzerinde uç nokta için microsoft defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: e9afb3fe925e0b8191cc18b99f8c561735571f8d
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.subservice: mde
+ms.openlocfilehash: 5d5bfe5beced2375900930c7fb7a85218f8d5eeb
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439628"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579951"
 ---
 # <a name="schedule-an-antivirus-scan-using-anacron-in-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender'da Anacron kullanarak virüsten koruma taraması zamanlama
 

@@ -1,5 +1,5 @@
 ---
-title: Adım 5. Bilgileri koruyun
+title: Adım 5. Bilgileri koruma
 author: dansimp
 f1.keywords:
 - NOCSH
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -16,17 +16,17 @@ ms.collection:
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, HumOR, gasp saldırısı, fidye yazılımı saldırısı, şifreleme, kriptoviroloji, sıfır güven
-description: Microsoft 365 hassas verilerinizi korumak için denetimli klasör erişimi, Microsoft Purview Information Protection, DLP ve Microsoft Defender for Cloud Apps kullanın.
-ms.openlocfilehash: e32c214688adb60fa39fc3c392512f46ec94aecf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: Microsoft 365 hassas verilerinizi korumak için denetimli klasör erişimi, Microsoft Purview Bilgi Koruması, DLP ve Microsoft Defender for Cloud Apps kullanın.
+ms.openlocfilehash: 94d5a55178d5e13ad7ba22df1c4f7226a176c1c6
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945141"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575625"
 ---
-# <a name="step-5-protect-information"></a>Adım 5. Bilgileri koruyun
+# <a name="step-5-protect-information"></a>Adım 5. Bilgileri koruma
 
-Fidye yazılımı saldırganları dosya, veritabanı ve diğer sunucu türlerinde bulunan şirket içi verilerinize de göz atacağından, bu verileri korumanın en iyi yollarından biri, verileri Microsoft 365 kiracınıza geçirmektir. Oraya vardıktan sonra [sürüm oluşturma, geri dönüşüm kutusu ve Dosyalar Geri Yükleme](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365) gibi yerleşik azaltma ve kurtarma özellikleriyle korunabilir.
+Fidye yazılımı saldırganları dosya, veritabanı ve diğer sunucu türlerinde bulunan şirket içi verilerinize de göz atacağından, bu verileri korumanın en iyi yollarından biri verileri Microsoft 365 kiracınıza geçirmektir. Oraya vardıktan sonra [sürüm oluşturma, geri dönüşüm kutusu ve Dosyalar Geri Yükleme](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365) gibi yerleşik azaltma ve kurtarma özellikleriyle korunabilir.
 
 Microsoft 365 kiracınızdaki hassas bilgilerin ek korumasını sağlamak için:
 
@@ -35,7 +35,7 @@ Microsoft 365 kiracınızdaki hassas bilgilerin ek korumasını sağlamak için:
 - Hassas bilgilerinizi koruyun.
 
 >[!Note]
->Microsoft 365 kiracıdaki bilgi korumasına yönelik ayrıntılı dağıtım kılavuzu için bkz[. Veri gizliliği düzenlemeleri için bilgi korumasını dağıtma](information-protection-deploy.md). Veri gizliliği düzenlemelerine yönelik olsa da kılavuzun çoğu fidye yazılımı koruması için de geçerlidir.
+>Microsoft 365 kiracısında bilgi korumasına yönelik ayrıntılı dağıtım kılavuzu için bkz. [Veri gizliliği düzenlemeleri için bilgi korumasını dağıtma](information-protection-deploy.md). Veri gizliliği düzenlemelerine yönelik olsa da kılavuzun çoğu fidye yazılımı koruması için de geçerlidir.
 >
 
 ## <a name="locate-your-sensitive-information"></a>Hassas bilgilerinizi bulma
@@ -51,7 +51,7 @@ Her hassas bilgi türü için aşağıdakileri belirleyin:
 
 - Bilgilerin kuruluşunuza kullanımı
 - Fidye için tutulduysa parasal değerinin göreli ölçüsü (yüksek, orta, düşük gibi)
-- OneDrive veya SharePoint klasörü ya da Microsoft Teams ekibi gibi işbirliği yeri gibi geçerli konumu
+- OneDrive veya SharePoint klasörü gibi geçerli konumu veya Microsoft Teams ekibi gibi işbirliği mekanı
 - Şunlardan oluşan geçerli izinler:
 
    - Erişimi olan kullanıcı hesapları
@@ -60,7 +60,7 @@ Her hassas bilgi türü için aşağıdakileri belirleyin:
 
 ## <a name="implement-strict-permissions-for-locations-with-sensitive-information"></a>Hassas bilgiler içeren konumlar için katı izinler uygulama
 
-Microsoft 365 kiracınızda katı izinler uygulamak, Microsoft 365 genellikle klasörler, SharePoint siteler ve klasörler ve ekipler OneDrive konumlar ve iletişim yerleri için en az ayrıcalık ilkesini kullanır. 
+Microsoft 365 kiracınızda katı izinler uygulamak, Microsoft 365'te genellikle OneDrive klasörleri, SharePoint siteleri ve klasörleri ve ekipleri olan konumlar ve iletişim yerleri için en az ayrıcalık ilkesini kullanır. 
 
 Hassas bilgiler için geniş erişimli (örneğin, kuruluşunuzdaki herkesin varsayılanı) dosya depolama konumları veya ekipler oluşturmak daha kolay olsa da, izin verilen kullanıcı hesapları ve izin verilen eylemler işbirliği ve iş gereksinimlerini karşılamak için gereken minimum kümeyle sınırlandırılmalıdır.
 
@@ -80,7 +80,7 @@ Aşağıdaki adımlarla kiracınızda katı izinler sağlayabilirsiniz:
 3. Hassas bilgiler için gelecekteki konumların katı izinlerle oluşturulması ve korunması için kullanıcılarınız için değişiklik yönetimi gerçekleştirin.
 4. Geniş izinlerin verilmediğinden emin olmak için hassas bilgiler için konumları denetleyin ve izleyin.
 
-Ayrıntılı yönergeler için bkz. [Microsoft Teams ile güvenli dosya paylaşımını ve işbirliğini ayarlama](setup-secure-collaboration-with-teams.md). Hassas bilgiler için katı izinlere sahip bir iletişim ve işbirliği mekanına örnek olarak [güvenlik yalıtımına sahip bir ekip gösteriliyor](/microsoft-365/solutions/secure-teams-security-isolation).
+Ayrıntılı yönergeler için bkz. [Microsoft Teams ile güvenli dosya paylaşımını ve işbirliğini ayarlama](setup-secure-collaboration-with-teams.md) . Hassas bilgiler için katı izinlere sahip bir iletişim ve işbirliği mekanına örnek olarak [güvenlik yalıtımına sahip bir ekip gösteriliyor](/microsoft-365/solutions/secure-teams-security-isolation).
 
 ## <a name="protect-your-sensitive-information"></a>Hassas bilgilerinizi koruma
 
@@ -88,11 +88,11 @@ Fidye yazılımı saldırganına erişim elde etme ihtimaline karşı hassas bil
 
 - Yetkisiz uygulamaların [denetimli klasörlerdeki](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) verileri değiştirmesini zorlaştırmak için denetimli klasör erişimini kullanın.
 
-- [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) ve duyarlılık etiketlerini kullanın ve bunları hassas bilgilere uygulayın. Duyarlılık etiketleri, tanımlı kullanıcı hesapları ve izin verilen eylemlerle ek şifreleme ve izinler için yapılandırılabilir. Kiracınızdan sızan bu tür duyarlılık etiketiyle etiketlenmiş bir dosya yalnızca etikette tanımlanan bir kullanıcı hesabı için kullanılabilir.
+- [Microsoft Purview Bilgi Koruması](/microsoft-365/compliance/information-protection) ve duyarlılık etiketlerini kullanın ve bunları hassas bilgilere uygulayın. Duyarlılık etiketleri, tanımlı kullanıcı hesapları ve izin verilen eylemlerle ek şifreleme ve izinler için yapılandırılabilir. Kiracınızdan sızan bu tür duyarlılık etiketiyle etiketlenmiş bir dosya yalnızca etikette tanımlanan bir kullanıcı hesabı için kullanılabilir.
 
 - Microsoft Purview [Veri Kaybı Önleme'yi (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) kullanarak hem şirket içinde hem de dışında duyarlılık etiketlerine dayalı olarak kişisel veya gizli bilgiler içeren verilerin riskli, yanlışlıkla veya uygunsuz bir şekilde paylaşılmalarını algılayın, uyarın ve engelleyin.
 
-- Dosyalar gibi hassas bilgilerin indirilmelerini engellemek için [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) kullanın. Yüksek oranda dosya karşıya yükleme veya dosya silme etkinliğini algılamak için [Bulut için Defender Uygulamaları anomali algılama ilkelerini](/cloud-app-security/anomaly-detection-policy#ransomware-activity) de kullanabilirsiniz.
+- Dosyalar gibi hassas bilgilerin indirilmelerini engellemek için [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) kullanın. Ayrıca, yüksek oranda dosya yükleme veya dosya silme etkinliğini algılamak [için Cloud Apps için Defender anomali algılama ilkelerini](/cloud-app-security/anomaly-detection-policy#ransomware-activity) de kullanabilirsiniz.
 
 ## <a name="impact-on-users-and-change-management"></a>Kullanıcılar ve değişiklik yönetimi üzerindeki etkisi
 
@@ -146,7 +146,7 @@ Microsoft Azure:
 
 Microsoft Defender for Cloud Apps:
 
--  [Bulut için Defender Uygulamalarında anomali algılama ilkeleri oluşturma](/cloud-app-security/anomaly-detection-policy)
+-  [Cloud Apps için Defender'da anomali algılama ilkeleri oluşturma](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft Güvenlik ekibi blog gönderileri:
 

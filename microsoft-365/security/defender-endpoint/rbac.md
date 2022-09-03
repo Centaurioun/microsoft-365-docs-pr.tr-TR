@@ -1,8 +1,8 @@
 ---
-title: Portala ince grenli erişim vermek için rol tabanlı Microsoft 365 Defender kullanın
-description: Portala erişim vermek için güvenlik işlemlerinizin içinde roller ve gruplar oluşturun.
+title: Microsoft 365 Defender portalına ayrıntılı erişim vermek için rol tabanlı erişim denetimini kullanma
+description: Portala erişim vermek için güvenlik işlemlerinizde roller ve gruplar oluşturun.
 keywords: rbac, rol, tabanlı, erişim, denetim, gruplar, denetim, katman, aad
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,71 +13,71 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 8c1ff743aa6c9c215c3894185a4096c9a35a16e0
-ms.sourcegitcommit: 6b24f65c987e5ca06e6d5f4fc10804cdbe68b034
+ms.subservice: mde
+ms.openlocfilehash: 97388c93008112c6131365d9887e1995ad2efe47
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "62996612"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585212"
 ---
-# <a name="manage-portal-access-using-role-based-access-control"></a>Rol tabanlı erişim denetimi kullanarak portal erişimini yönetme
+# <a name="manage-portal-access-using-role-based-access-control"></a>Rol tabanlı erişim denetimini kullanarak portal erişimini yönetme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Azure Active Directory
 - Office 365
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
 
-Rol tabanlı erişim denetimi (RBAC) kullanarak, portala uygun erişim izni vermek için güvenlik işlemleri ekibi içinde roller ve gruplar oluşturabilirsiniz. Oluşturdukları rollere ve gruplara bağlı olarak, portala erişimi olan kullanıcıların neler göreceği ve neler göreceği üzerinde daha fazla denetime sahip oluruz. 
+Rol tabanlı erişim denetimini (RBAC) kullanarak, portala uygun erişim vermek için güvenlik operasyonları ekibinizde roller ve gruplar oluşturabilirsiniz. Oluşturduğunuz rollere ve gruplara bağlı olarak, portala erişimi olan kullanıcıların görebilecekleri ve yapabilecekleri üzerinde ayrıntılı denetime sahip olursunuz. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bJ2a]
 
-Coğrafi olarak dağıtılmış büyük güvenlik işlemleri ekipleri normalde güvenlik portallarına erişimi atamak ve yetkilendirmek için katman tabanlı bir model benimser. Normal katmanlar aşağıdaki üç düzeyi içerir:
+Büyük coğrafi olarak dağıtılmış güvenlik operasyonları ekipleri genellikle güvenlik portallarına erişim atamak ve erişim yetkisi vermek için katman tabanlı bir model benimser. Tipik katmanlar aşağıdaki üç düzeyi içerir:
 
-Katman|Açıklama|
+Katmanı|Açıklama|
 :---|:---|
-Katman 1|**Yerel güvenlik işlemleri ekibi / IT ekibi** <br> Bu ekip genellikle coğrafi konum içindeki uyarıları önceler ve araştırır ve etkin bir düzeltmenin gerekli olduğu durumlarda Katman 2'ye ilerler.|
-Katman 2|**Bölgesel güvenlik işlemleri ekibi** <br> Bu ekip bölge için tüm cihazları görebilir ve düzeltme eylemleri gerçekleştirebilirsiniz.|
-Katman 3|**Global güvenlik işlemleri ekibi** <br> Bu ekip güvenlik uzmanlarından oluşur ve portaldan tüm eylemleri görmeye ve gerçekleştirmeye yetkilidir.|
+Katman 1|**Yerel güvenlik operasyonları ekibi / BT ekibi** <br> Bu ekip genellikle coğrafi konum içinde yer alan uyarıları önceliklendirmek ve araştırmakta ve etkin bir düzeltmenin gerekli olduğu durumlarda Katman 2'ye yükseltmektedir.|
+Katman 2|**Bölgesel güvenlik operasyonları ekibi** <br> Bu ekip, bölgelerinin tüm cihazlarını görebilir ve düzeltme eylemleri gerçekleştirebilir.|
+Katman 3|**Küresel güvenlik operasyonları ekibi** <br> Bu ekip güvenlik uzmanlarından oluşur ve portaldan tüm eylemleri görme ve gerçekleştirme yetkisine sahip.|
 
 > [!NOTE]
-> Katman 0 varlıkları için, [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) ve Uç Nokta için Microsoft Defender üzerinde daha ayrıntılı denetim sağlamak için güvenlik yöneticilerine Microsoft 365 Defender.  
+> Katman 0 varlıkları için güvenlik yöneticilerinin Uç Nokta için Microsoft Defender ve [Microsoft 365 Defender](/azure/active-directory/privileged-identity-management/pim-configure) daha ayrıntılı denetimi sağlamak için Privileged Identity Management bakın.  
 
-Endpoint RBAC için Defender, katman veya rol tabanlı tercih modelinizi destekleyecek şekilde tasarlanmıştır ve hangi rolleri görebilirler, bu roller, erişildeki cihazlar ve gerçekleştir işlemler üzerinde ayrıntılı denetim sağlar. RBAC framework aşağıdaki denetimlerin çevresinde ortalandı:
+Uç Nokta için Defender RBAC, tercih ettiğiniz katman veya rol tabanlı modeli destekleyecek şekilde tasarlanmıştır ve size hangi rollerin görebileceği, erişebileceği cihazlar ve gerçekleştirebilecekleri eylemler üzerinde ayrıntılı denetim sağlar. RBAC çerçevesi aşağıdaki denetimlerin etrafında ortalanır:
 
-- **Belirli bir işlemde kimlerin işlemde yer ala bir işlemde olduğunu denetleme**
-  - Özel roller oluşturun ve uç nokta özellikleri için Defender'ın ayrıntı bilgilerinden hangilerine erişeyle erişemelerini kontrol altındalar.
-- **Belirli cihaz grubu veya gruplarda bilgileri kimlerin göreceğini denetleme**
-  - [Adlar,](machine-groups.md) etiketler, etki alanları ve diğerleri gibi belirli ölçütlerle cihaz grupları oluşturun, ardından belirli bir Azure Active Directory (Azure AD) kullanıcı grubunu kullanarak onlara rol erişimi ve iznini verir.
+- **Belirli eylemleri kimin gerçekleştirebileceğini denetleme**
+  - Özel roller oluşturun ve ayrıntı düzeyiyle erişebilecekleri Uç Nokta için Defender özelliklerini denetleyin.
+- **Belirli cihaz grubu veya gruplarıyla ilgili bilgileri kimlerin görebileceğini denetleme**
+  - Adlar, etiketler, etki alanları ve diğerleri gibi belirli ölçütlere göre [cihaz grupları oluşturun](machine-groups.md), ardından belirli bir Azure Active Directory (Azure AD) kullanıcı grubunu kullanarak bunlara rol erişimi verin.
 
-Rol tabanlı erişim uygulamak için yönetici rolleri tanımlamanız, karşılık gelen izinleri atamanız ve rollere atanmış Azure AD kullanıcı grupları atamanız gerekir.
+Rol tabanlı erişim uygulamak için yönetici rollerini tanımlamanız, ilgili izinleri atamanız ve rollere atanmış Azure AD kullanıcı grubu atamanız gerekir.
 
 ### <a name="before-you-begin"></a>Başlamadan önce
 
-RBAC'yi kullanmadan önce, izin ver gereken rolleri ve RBAC'yi açmanın sonuçlarını anlamanız önemlidir.
+RBAC'yi kullanmadan önce, izin verebilen rolleri ve RBAC'yi açmanın sonuçlarını anlamanız önemlidir.
 
 > [!WARNING]
-> Özelliği etkinleştirmeden önce, Azure AD'de Bir Genel Yönetici rolüne veya Güvenlik Yöneticisi rolüne sahip olmak ve portala kilitlenme riskini azaltmaya hazır Azure AD gruplarınız olması önemlidir. 
+> Özelliği etkinleştirmeden önce, Azure AD'da Genel Yönetici rolüne veya Güvenlik Yöneticisi rolüne sahip olmanız ve Azure AD gruplarınızın portaldan kilitlenme riskini azaltmaya hazır olması önemlidir. 
 
-Portalda ilk kez oturum Microsoft 365 Defender, size tam erişim veya salt okunur erişim izni ve okunur. Azure AD'de Güvenlik Yöneticisi veya Genel Yönetici rolüne sahip kullanıcılara tam erişim hakları vermektedir. Azure AD'de Güvenlik Okuyucusu rolüne sahip kullanıcılara salt okunur erişim izni verildi. 
+Microsoft 365 Defender portalında ilk kez oturum açtığınızda size tam erişim veya salt okunur erişim verilir. Azure AD'da Güvenlik Yöneticisi veya Genel Yönetici rollerine sahip kullanıcılara tam erişim hakları verilir. Azure AD'de Güvenlik Okuyucusu rolüne sahip kullanıcılara salt okunur erişim verilir. 
 
-Uç Nokta için Defender Genel yönetici rolüne sahip olan birinin, cihaz grubu ilişkilendirmesi ve Azure AD kullanıcı grubu atamalarına bakılmaksızın tüm cihazlara sınırsız erişimi vardır.
+Uç Nokta için Defender Genel yönetici rolüne sahip biri, cihaz grubu ilişkilendirmesi ve Azure AD kullanıcı grupları atamalarından bağımsız olarak tüm cihazlara sınırsız erişime sahiptir.
 
 > [!WARNING]
-> Başlangıçta, yalnızca Azure AD Genel Yöneticisi veya Güvenlik Yöneticisi hakları olan kullanıcılar Microsoft 365 Defender portalında rol oluşturabilir ve atayabilecektir; dolayısıyla, doğru grupların Azure AD'de hazır olması önemlidir.
+> Başlangıçta, Microsoft 365 Defender portalında yalnızca Azure AD Genel Yönetici veya Güvenlik Yöneticisi haklarına sahip olanlar rol oluşturabilir ve atayabilir, bu nedenle Azure AD'de doğru grupların hazır olması önemlidir.
 >
-> **Rol tabanlı erişim denetimi açma, salt okunur izinleri olan kullanıcıların (örneğin, Azure AD Güvenlik okuyucu rolüne atanan kullanıcılar) bir role atanana kadar erişimi kaybetmelerine neden olur.** 
+> **Rol tabanlı erişim denetiminin etkinleştirilmesi, salt okunur izinlere sahip kullanıcıların (örneğin, Azure AD Güvenlik okuyucusu rolüne atanan kullanıcılar) bir role atanana kadar erişimi kaybetmesine neden olur.** 
 >
->Yönetici izinleri olan kullanıcılara otomatik olarak tam izinlere sahip Uç nokta genel yönetici rolü için varsayılan yerleşik Defender atanır. RBAC kullanmayı tercih ettikten sonra, Azure AD Global veya Güvenlik Yöneticileri dışında başka kullanıcıları Uç nokta genel yönetici rolü için Defender'a atabilirsiniz. 
+>Yönetici izinlerine sahip kullanıcılara otomatik olarak tam izinlere sahip varsayılan Yerleşik Uç Nokta için Defender genel yönetici rolü atanır. RBAC kullanmayı kabul ettikten sonra, Genel veya Güvenlik Yöneticileri Azure AD olmayan ek kullanıcıları Uç Nokta için Defender genel yönetici rolüne atayabilirsiniz. 
 >
-> RBAC kullanmayı kabul ettikten sonra, portalda ilk oturum açtığınız gibi ilk rollere geri dönamazsınız.
+> RBAC'yi kullanmayı kabul ettikten sonra, portalda ilk oturum açtığınızda olduğu gibi ilk rollere geri dönemezsiniz.
 
 ## <a name="related-topic"></a>İlgili konu
 
 - [RBAC rolleri](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
-- [Uç Nokta için Microsoft Defender'da cihaz grupları oluşturma ve yönetme](machine-groups.md)
+- [Uç Nokta için Microsoft Defender'de cihaz grupları oluşturma ve yönetme](machine-groups.md)

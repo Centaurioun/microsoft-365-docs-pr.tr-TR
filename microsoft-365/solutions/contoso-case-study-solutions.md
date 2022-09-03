@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Corporation için en iyi çözümler
+title: Contoso Corporation için Microsoft 365 çözümleri
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -8,34 +8,34 @@ manager: scotv
 ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
-description: Kurgusal ama temsili bir küresel kuruluşun nasıl farklı çözümler Microsoft 365 dağıtıldı.
-ms.openlocfilehash: 5154dfb0aead04eb5a580dfc6bb9a60d96a517fd
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+description: Kurgusal ama temsili bir küresel kuruluşun Microsoft 365 çözümlerini nasıl dağıttığını.
+ms.openlocfilehash: 62b7fe51e369e672e1393a50cd4987914c87d7db
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "63011782"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576395"
 ---
-# <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Microsoft 365 Corporation için en iyi çözümler
+# <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Contoso Corporation için Microsoft 365 çözümleri
 
-Contoso Corporation, Fransa'daki merkeziyle birlikte kurgusal ama temsili bir üretim merkeziyle bire birdir. Contoso ağ, kimlik, Microsoft 365 Kurumsal Windows 10 Enterprise, Kurumlar için Microsoft 365 Uygulamaları, mobil cihaz yönetimi, bilgi koruması ve güvenlik ile ilgili önemli tasarım kararlarını ve uygulama ayrıntılarını dağıttı ve önemli tasarım kararlarına değindi . 
+Contoso Corporation, merkezi Fransa'nın Paris kentinde bulunan kurgusal ama temsili bir küresel üretim holdingidir. Contoso Microsoft 365 Kurumsal dağıttı ve ağ, kimlik, Windows 10 Enterprise, Kurumlar için Microsoft 365 Uygulamaları, mobil cihaz yönetimi, bilgi koruması ve güvenlik için önemli tasarım kararlarını ve uygulama ayrıntılarını ele almıştır . 
 
-Microsoft 365 Kurumsal için Contoso'un genel hedefi, çalışanlarını, ortaklarını, verilerini ve süreçlerini bir araya getirerek müşteri değeri oluşturmak ve dijital dünyada rekabetçi avantajını korumak için bulut hizmetlerini kullanarak dijital dönüşümlerini hızlandırmaktır.
+Contoso'nun Microsoft 365 Kurumsal için genel hedefi, müşteri değeri oluşturmak ve dijital öncelikli bir dünyada rekabet avantajını korumak için çalışanlarını, iş ortaklarını, verilerini ve süreçlerini bir araya getirmek üzere bulut hizmetlerini kullanarak dijital dönüşümlerini hızlandırmaktır.
 
-İlk olarak, [Contoso Corporation](../enterprise/contoso-overview.md), dünya çapında ofisleri ve ofisleri hakkında bilgi edinmek ve şirket genelinde dağıtılan tasarım Microsoft 365 Kurumsal.
+İlk olarak [Contoso Corporation](../enterprise/contoso-overview.md), dünya çapındaki ofisleri ve Microsoft 365 Kurumsal dağıtılırken ele alınan tasarım konuları hakkında bilgi edinin.
 
-Ardından, Contoso'nın bu çözümler Microsoft 365 senaryolar için E-Posta'da nasıl kullandığına bakın:
+Ardından contoso'nın bu çözümler ve senaryolar için Microsoft 365'i nasıl kullandığına bakın:
 
-- [Karma çalışma için COVID-19 yanıtı ve altyapısı](contoso-remote-onsite-work.md)
+- [Hibrit çalışma için COVID-19 yanıtı ve altyapısı](contoso-remote-onsite-work.md)
 
 - [Çok gizli bir proje için yalıtılmış bir ekip](contoso-team-for-top-secret-project.md)
 
-- [Birleşik iletişim, işbirliği ve ses için Teams kullanıcılarının şirket içi kullanıcılarını geçiş](/MicrosoftTeams/voice-case-study-overview)
+- [Şirket içi kullanıcılarının birleşik iletişim, işbirliği ve ses için Teams'e geçişi](/MicrosoftTeams/voice-case-study-overview)
 
-- [İletişimleri devre dışı Microsoft Teams, Exchange ve Yammer için rahatsız Yammer ilkesi yapılandırma](../compliance/communication-compliance-case-study.md)
+- [Microsoft Teams, Exchange ve Yammer iletişimleri için rahatsız edici bir dil ilkesi yapılandırma](../compliance/communication-compliance-case-study.md)

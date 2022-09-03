@@ -2,7 +2,7 @@
 title: Gösterge kaynak türü
 description: Varlık ayrıntılarını belirtin ve Uç Nokta için Microsoft Defender kullanarak göstergenin süre sonunu tanımlayın.
 keywords: api'ler, desteklenen api'ler, get, TiIndicator, Indicator, recent
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: dcdba63fe99d092f2ce6a9839a94f5e4c297ee66
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 48ca73f30b087f18adacd24008de30bab2dba5ae
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67330773"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585124"
 ---
 # <a name="indicator-resource-type"></a>Gösterge kaynak türü
 

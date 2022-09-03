@@ -1,66 +1,66 @@
 ---
-title: Microsoft 365 için görsel bilgi görselleri
-description: Bu bilgi grafikleriyle, kuruluş veya kuruluş Microsoft 365 Microsoft Teams öğrenmenize yardımcı olur.
+title: Kullanıcılar için Microsoft 365 bilgi grafikleri
+description: Kuruluşunuzdaki kullanıcıların bu bilgi grafikleri ile Microsoft 365 ve Microsoft Teams'i kullanmayı öğrenmesine yardımcı olun.
 ms.author: samanro
 author: samanro
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.date: 02/11/2022
 ms.localizationpriority: medium
 ms.collection:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: f70980e280d63ad9b829240bafae00ef1089da81
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 1c0b45a8e6d1c00ad86ddf7da303c8254577326d
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63011820"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582086"
 ---
-# <a name="microsoft-365-and-microsoft-teams-infographics-for-your-users"></a>Microsoft 365 için Microsoft Teams bilgi görselleri ve görselleri
+# <a name="microsoft-365-and-microsoft-teams-infographics-for-your-users"></a>Kullanıcılarınız için Microsoft 365 ve Microsoft Teams bilgi grafikleri
 
-Bu bilgi görselleri, iş birliği içinde çalışmak ve işbirliği yapmak için en Microsoft 365. Dosyaları güvenli depolama ve paylaşmadan yararlanmalarına, işbirliğine dayalı toplantılar düzenlediklerinden ve daha fazlasını yaparak bu dosyaları kullanıcılarınız ile paylaşın.
+Bu bilgi grafikleri, Microsoft 365'te çalışmaya ve işbirliğine yönelik en iyi yöntemleri temsil eder. Dosyalar için güvenli depolama ve paylaşım avantajlarından yararlanmalarına, işbirliğine dayalı toplantılar düzenlemelerine ve daha fazlasına yardımcı olmak için bunları kullanıcılarınızla paylaşın.
 
-Bu yeni [eğitim Office daha fazla indirilebilir](https://support.microsoft.com/office/great-ways-to-work-with-office-6fe70269-b9a4-4ef0-a96e-7a5858b3bd5a) video [Microsoft 365](https://support.microsoft.com/training) bulabilirsiniz.
+[Microsoft 365 eğitim](https://support.microsoft.com/training) sitesinde daha fazla [indirilebilir Office bilgi grafiği](https://support.microsoft.com/office/great-ways-to-work-with-office-6fe70269-b9a4-4ef0-a96e-7a5858b3bd5a) bulun.
 
-## <a name="microsoft-365-security-tips-infographic"></a>Microsoft 365 ipuçları bilgi grafiği
+## <a name="microsoft-365-security-tips-infographic"></a>Microsoft 365 güvenlik ipuçları bilgi grafiği
 
-İster iş ister kar amacı gütmeyen bir kuruluş olsun, ekibinizin üyelerine yönelik güvenlik ipuçları (örneğin, bir iş kampanyası veya kar amacı gütmeyen bir kuruluş olsun) için bu bilgi görselini indirin:
+Ekibinizin politik kampanya gibi bir iş veya kar amacı gütmeyen kuruluş olup olmadığı konusunda ekibinizin üyelerine yönelik güvenlik ipuçlarını içeren bu bilgi grafiğini indirin:
 
 | Öğe | Açıklama |
 |:-----|:-----|
-|[![Kampanya bilgilerinizin korunmasına yardımcı olur grafiği.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) <br/> [PDF olarak indirme](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) \  [Dosya olarak PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)| Kuruluş bilgilerini güvenlik altında tutmak için bu en iyi yöntemleri iş arkadaşlarınızla Microsoft 365. Bu bilgi grafiği, daha gelişmiş korsanlar tarafından hedef alındıklarından, bu kampanya personelini desteklemek için oluşturulmuştır. Bu bilgi görselini kendi PowerPoint için siteyi kullanabilirsiniz. İlgili makale: [Bu konu için güvenlik Microsoft 365 kullanıcılarınızı nasıl etkiler?](../business-premium/m365-campaigns-users.md)|
+|[![Kampanya bilgilerinizin korunmasına yardımcı olan grafik.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) <br/> [PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) \  olarak indirme [PowerPoint olarak indirme](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)| Microsoft 365 ile kuruluşunuzun bilgilerinin güvenliğini sağlamak için bu en iyi yöntemleri paylaşın. Bu bilgi grafiği, siyasi kampanya personelini desteklemek için oluşturulmuştur çünkü bunlar gelişmiş korsanlar tarafından hedeflenmiştir. Bu bilgi grafiğini kendi kuruluşunuz için özelleştirmek için PowerPoint'i kullanabilirsiniz. İlgili makale: [Microsoft 365 güvenlik önerileri kullanıcılarınızı nasıl etkiler](../business-premium/m365-campaigns-users.md)?|
 
-## <a name="share-your-business-files-with-teams-sharepoint-and-onedrive"></a>İş dosyalarınızı e-Teams, SharePoint ve OneDrive
+## <a name="share-your-business-files-with-teams-sharepoint-and-onedrive"></a>İş dosyalarınızı Teams, SharePoint ve OneDrive ile paylaşma
 
-İş dosyalarınızı paylaşma yöntemlerine hızlı bir genel bakış için bilgi görselini indirin:
+İş dosyalarınızı paylaşmanın yollarına hızlı bir genel bakış elde etmek için bilgi grafiğini indirin:
   
 | Öğe | Açıklama |
 |:-----|:-----|
-|[![İş dosyalarınızı paylaşma bilgi grafiği için küçük resim.](../media/solutions-architecture-center/m365-smbscenarios-shareyourfiles-square.png)](https://go.microsoft.com/fwlink/?linkid=2079435) <br/> [PDF olarak indirme](https://go.microsoft.com/fwlink/?linkid=2079435) \  [Dosya olarak PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) | İş dosyalarını paylaşırken ve bunlar üzerinde işbirliği yapmak için bu en iyi yöntemleri kullanın, böylece bilgilerin güvenli ve korumalı tutulabilirsiniz. E-postada veya Teams'de paylaşın ve dosyaları e-posta SharePoint depolama OneDrive. İlgili makale: [İş dosyalarını paylaşmaya genel bakış](../business-video/overview-file-sharing.md)|
+|[![İş dosyalarınızı paylaşma bilgi grafiği için başparmak resmi.](../media/solutions-architecture-center/m365-smbscenarios-shareyourfiles-square.png)](https://go.microsoft.com/fwlink/?linkid=2079435) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) \  olarak indirme [PowerPoint olarak indirme](https://go.microsoft.com/fwlink/?linkid=2079438) | Bilgilerinizi güvenli ve korumalı tutabilmeniz için iş dosyalarını paylaşırken ve bunlar üzerinde işbirliği yaparken bu en iyi yöntemleri kullanın. E-postayla veya Teams'de paylaşın ve dosyaları SharePoint ve OneDrive'da depolayın. İlgili makale: [İş dosyalarını paylaşmaya genel bakış](../business-video/overview-file-sharing.md)|
 
-## <a name="host-online-meetings-in-microsoft-teams"></a>Microsoft Teams'da çevrimiçi toplantılar Microsoft Teams
+## <a name="host-online-meetings-in-microsoft-teams"></a>Microsoft Teams'de çevrimiçi toplantılar düzenleme
 
-Çevrimiçi toplantılara katılma veya toplantılara katılma veya toplantılara ev sahipliğiyle ilgili hızlı bir genel bakış için bilgi görselini Microsoft Teams:
-
-| Öğe | Açıklama |
-|:-----|:-----|
-|[![Çevrimiçi toplantılara ev sahipliği bilgi grafiği için küçük resim.](../media/solutions-architecture-center/m365-smbscenarios-hostteammeetings-square.png)](https://go.microsoft.com/fwlink/?linkid=2078712) <br/> [PDF olarak indirme](https://go.microsoft.com/fwlink/?linkid=2078712) \  [Dosya olarak PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) | Toplantılara ev sahipliği yapmak veya toplantıyla çevrimiçi toplantıya katılmak için Microsoft Teams. 
-
-## <a name="work-from-anywhere-with-onedrive-and-microsoft-365"></a>Her yerden çalışma ve OneDrive ile Microsoft 365
-
-Dosya ve dosyalarla istediğiniz yerden çalışmaya ilgili ipuçları almak için bir bilgi görseli OneDrive Microsoft 365 Uygulamaları:
+Microsoft Teams ile çevrimiçi toplantıya katılma veya toplantı düzenleme hakkında hızlı bir genel bakış elde etmek için bilgi grafiğini indirin:
 
 | Öğe | Açıklama |
 |:-----|:-----|
-|[![Her yerden çalışma için küçük resim bilgi grafiği.](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png)](https://go.microsoft.com/fwlink/?linkid=2079451) <br/> [PDF olarak indirme](https://go.microsoft.com/fwlink/?linkid=2079451) \  [Dosya olarak PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455) | Mobil cihazlarınızı farklı cihazlar ve tabletlerle istediğiniz yerden çalışmanıza olanak sağlayacak şekilde ayarlama Microsoft 365 Uygulamaları OneDrive. İlgili makale: [Her yerden çalışma](../business-video/work-from-anywhere.md)|
+|[![Çevrimiçi toplantılar düzenleyin bilgi grafiği için başparmak görüntüsü.](../media/solutions-architecture-center/m365-smbscenarios-hostteammeetings-square.png)](https://go.microsoft.com/fwlink/?linkid=2078712) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) \  olarak indirme [PowerPoint olarak indirme](https://go.microsoft.com/fwlink/?linkid=2079515) | Microsoft Teams ile çevrimiçi toplantı düzenleme veya toplantıya katılma hakkında hızlı bir giriş. 
 
-## <a name="survey-customers-with-forms-in-microsoft-365"></a>Microsoft 365'de Forms ile anket Microsoft 365
+## <a name="work-from-anywhere-with-onedrive-and-microsoft-365"></a>OneDrive ve Microsoft 365 ile her yerden çalışma
 
-Microsoft Forms ile müşterilere (iç veya dış) anket uygulama hakkında bilgi görseli Microsoft 365:
+OneDrive ve Microsoft 365 Uygulamaları dosyalarıyla her yerden çalışmaya yönelik ipuçları almak için bilgi grafiğini indirin:
 
 | Öğe | Açıklama |
 |:-----|:-----|
-|[![Forms bilgi grafiğiyle Anket müşterileri için küçük resim.](../media/solutions-architecture-center/m365-smbscenarios-surveywithforms-square.png)](https://go.microsoft.com/fwlink/?linkid=2079526) <br/> [PDF olarak indirme](https://go.microsoft.com/fwlink/?linkid=2079526) \  [Dosya olarak PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079446) | Müşterilerin neler düşünmesi olduğunu bulmak için Microsoft Forms'u kullanın. İlgili makale: [Microsoft Forms ile bilgi toplama](https://support.microsoft.com/topic/collect-information-with-microsoft-forms-a55d6e0d-04f6-45b8-b05f-b141b8ecb4d5)|
+|[![Her yerden iş için başparmak resmi bilgi grafiği.](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png)](https://go.microsoft.com/fwlink/?linkid=2079451) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2079451) \  olarak indirme [PowerPoint olarak indirme](https://go.microsoft.com/fwlink/?linkid=2079455) | Microsoft 365 Uygulamaları ve OneDrive ile her yerden çalışmanıza olanak sağlamak için mobil cihazlarınızı ayarlama ipuçlarına bakın. İlgili makale: [Her yerden çalışma](../business-video/work-from-anywhere.md)|
+
+## <a name="survey-customers-with-forms-in-microsoft-365"></a>Microsoft 365'te Forms ile müşterileri anket
+
+Microsoft 365'te Microsoft Forms ile müşterileri (iç veya dış) nasıl ankete ekleyebileceğinizi öğrenmek için bilgi grafiğini indirin:
+
+| Öğe | Açıklama |
+|:-----|:-----|
+|[![Form bilgi grafiğine sahip Anket müşterileri için başparmak resmi.](../media/solutions-architecture-center/m365-smbscenarios-surveywithforms-square.png)](https://go.microsoft.com/fwlink/?linkid=2079526) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2079526) \  olarak indirme [PowerPoint olarak indirme](https://go.microsoft.com/fwlink/?linkid=2079446) | Müşterilerinizin ne düşündüğünü öğrenmek için Microsoft Forms kullanın. İlgili makale: [Microsoft Forms ile bilgi toplama](https://support.microsoft.com/topic/collect-information-with-microsoft-forms-a55d6e0d-04f6-45b8-b05f-b141b8ecb4d5)|

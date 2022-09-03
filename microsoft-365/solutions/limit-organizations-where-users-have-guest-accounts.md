@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Kullanıcılarınızın hangi kuruluşlarda konuk hesabı olabileceğini belirtmeyi öğrenin.
-ms.openlocfilehash: 00db14560c491461435e41e30c106c2554d9ad61
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 8fa2134c59f42924224fc2161c16e26f92532aa1
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "66861386"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580105"
 ---
 # <a name="limit-organizations-where-users-can-have-guest-accounts"></a>Kullanıcıların konuk hesaplarına sahip olabileceği kuruluşları sınırlama
 

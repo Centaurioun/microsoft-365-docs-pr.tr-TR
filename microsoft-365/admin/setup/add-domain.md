@@ -30,12 +30,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: DNS ana bilgisayarınızda bir DNS kaydı ekleyerek etki alanınızı Microsoft 365 yönetim merkezi Microsoft 365'e eklemek için kurulum sihirbazını kullanın.
-ms.openlocfilehash: 13699b4a565c0762baa6f383330ed2e87517ac6d
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: ef19ad68e36313dbc221ef84fe4c9a16ef1a18f3
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087363"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576813"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365'e etki alanı ekleme
 
@@ -98,7 +98,7 @@ Etki alanı eklemek, ayarlamak veya ayarlamaya devam etmek için bu adımları i
     1. Kayıt şirketiniz [Domain Connect'i](#domain-connect-registrars-integrating-with-microsoft-365) destekliyorsa **DNS kayıtlarını benim için ekle'yi** seçin; Microsoft kayıt şirketinizde oturum açıp Microsoft 365 bağlantısını onaylamanızı sağlayarak [kayıtlarınızı otomatik olarak ayarlar](../get-help-with-domains/domain-connect.md).
     2. Etki alanınıza yalnızca belirli Microsoft 365 hizmetlerini eklemek istiyorsanız veya bunu şimdilik atlayıp daha sonra yapmak istiyorsanız **DNS kayıtlarını kendim ekleyeceğim'i** seçin. **Bu seçeneği, tam olarak ne yaptığınızı biliyorsanız kullanın.**
 
-7. *DNS kayıtlarını kendiniz eklemeyi* seçtiyseniz **, İleri'yi** seçtiğinizde etki alanınızı ayarlamak için kayıt şirketleri web sitenize eklemeniz gereken tüm kayıtları içeren bir sayfa görürsünüz. 
+7. *DNS kayıtlarını kendiniz eklemeyi* seçtiyseniz **İleri'yi** seçtiğinizde, etki alanınızı ayarlamak için kayıt şirketleri web sitenize eklemeniz gereken tüm kayıtları içeren bir sayfa görürsünüz. 
 
     Portal kayıt şirketinizi tanımazsa [bu genel yönergeleri izleyebilirsiniz.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
     
@@ -138,7 +138,7 @@ Sihirbazda yalnızca etki alanının sahibi olduğunuzu onaylayacak ve ardından
 - [1&amp;1 IONOS](https://www.1and1.com/)
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
-- [GoDaddy](https://www.godaddy.com/)
+- [Godaddy](https://www.godaddy.com/)
 - [WordPress.com](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
@@ -159,7 +159,7 @@ Her Microsoft 365 kuruluşunda en fazla beş onmicrosoft.com etki alanı olabili
 
 > [!NOTE]
 > Etki alanı eklemek için Genel yönetici veya Etki Alanı Adı yöneticisi olmanız gerekir.
-> Ek bir .onmicrosoft etki alanı oluşturmak ve bunu varsayılan olarak kullanmak SharePoint Online için yeniden adlandırma yapmaz. .onmicrosoft SharePoint etki alanınızda değişiklik yapmak için [SharePoint etki alanı yeniden adlandırma önizlemesini](/sharepoint/change-your-sharepoint-domain-name) kullanmanız gerekir (şu anda 1.000'den az sitesi olan tüm kiracılarda kullanılabilir).
+> Ek bir .onmicrosoft etki alanı oluşturmak ve bunu varsayılan olarak kullanmak SharePoint Online için yeniden adlandırma yapmaz. .onmicrosoft SharePoint etki alanınızda değişiklik yapmak için [SharePoint etki alanı yeniden adlandırma önizlemesini](/sharepoint/change-your-sharepoint-domain-name) kullanmanız gerekir (şu anda 10.000'den az sitesi olan tüm kiracılar tarafından kullanılabilir).
 > Microsoft 365 posta hizmetlerini kullanıyorsanız, ilk .onmicrosoft etki alanınızın kaldırılması desteklenmez.
 
 

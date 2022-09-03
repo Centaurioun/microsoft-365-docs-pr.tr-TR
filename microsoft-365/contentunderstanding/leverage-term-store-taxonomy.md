@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex belge anlama modelinizde ayıklayıcı oluştururken terim deposu taksonomisini kullanın.
-ms.openlocfilehash: d3f2acf32231558f9f56a62b18c6dd7ffbc4e20f
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 551acd46d2ccf8336bbdf6b6fda7e7cb448dd66c
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861498"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579280"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da ayıklayıcı oluştururken terim deposu taksonomisini kullanma
 
@@ -37,7 +37,7 @@ SharePoint Syntex kullanarak belge anlama modelinizde bir ayıklayıcı oluştur
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Ayıklayıcınızda Yönetilen meta veri sütunu kullanma
 
-Terim kümeleri, <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint yönetim merkezindeki</a> Yönetilen Meta Veri hizmetleri (MMS) terim deposunda yapılandırılır. Aşağıdaki örnekte *Sözleşme Hizmetleri* [terim kümesi](/sharepoint/managed-metadata#term-set)*, Creative* dahil olmak üzere çeşitli terimler içerecek şekilde yapılandırılmıştır.  Bunun ayrıntıları, terimin üç eş anlamlıya (*Tasarım*, *Grafik* ve *Topografi*) sahip olduğunu ve eş anlamlıların *Creative'e* çevrilmesi gerektiğini gösterir. 
+Terim kümeleri <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">, SharePoint yönetim merkezindeki</a> Yönetilen Meta Veri hizmetleri (MMS) terim deposunda yapılandırılır. Aşağıdaki örnekte *Sözleşme Hizmetleri* [terim kümesi](/sharepoint/managed-metadata#term-set)*, Creative* dahil olmak üzere çeşitli terimler içerecek şekilde yapılandırılmıştır.  Bunun ayrıntıları, terimin üç eş anlamlıya (*Tasarım*, *Grafik* ve *Topografi*) sahip olduğunu ve eş anlamlıların *Creative'e* çevrilmesi gerektiğini gösterir. 
 
    ![Terim kümesi.](../media/content-understanding/term-store.png)</br>
 
@@ -57,6 +57,6 @@ Modelinizi belge kitaplığına uyguladıktan sonra, belgeler kitaplığa yükle
 ## <a name="see-also"></a>Ayrıca bkz.
 [Yönetilen Meta Verilere Giriş](/sharepoint/managed-metadata#terms)
 
-[Ayıklayıcı oluşturma](create-an-extractor.md)
+[Ayıklayıcı oluştur](create-an-extractor.md)
 
 [Yönetilen meta veri sütunu oluşturma](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)

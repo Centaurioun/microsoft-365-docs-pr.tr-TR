@@ -3,7 +3,7 @@ title: Uç Nokta için Microsoft Defender'de iş ortağı uygulamaları
 ms.reviewer: ''
 description: Platformun algılama, araştırma ve tehdit bilgileri özelliklerini geliştirmek için desteklenen iş ortağı uygulamalarını görüntüleme
 keywords: partners, applications, third-party, connections, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, better mobile
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 2c0dd284b75d5dd1752259930b937502aaca60e1
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.subservice: mde
+ms.openlocfilehash: f122a52b8df76d0f0beb5c315911750727b440e3
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874018"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581700"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de iş ortağı uygulamaları
 
@@ -30,7 +30,7 @@ ms.locfileid: "65874018"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Uç Nokta için Defender, platformun algılama, araştırma ve tehdit bilgileri özelliklerini geliştirmeye yardımcı olmak için üçüncü taraf uygulamaları destekler.
 
@@ -59,7 +59,7 @@ Logo|İş ortağı adı|Açıklama
 ![Micro Focus ArcSight logosunun resmi.](images/arcsight-logo.png)|[Mikro Odak ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548)|Uç Nokta algılamaları için Defender'ı çekmek için Mikro Odak ArcSight kullanma
 ![RSA NetWitness logosunun resmi.](images/rsa-netwitness-logo.png)|[RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566)|Microsoft Graph Güvenlik API'si kullanarak RSA NetWitness'e Uç Nokta Uyarıları için Stream Defender
 ![SafeBreach logosunun resmi.](images/safebreach-logo.png)|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)|SafeBreach simülasyonlarıyla otomatik olarak ilişkilendirilmiş Uç Nokta için Defender güvenlik olaylarına ilişkin görünürlük elde edin
-![Skybox Güvenlik Açığı Denetimi logosunun resmi.](images/skybox-logo.png)|[Skybox Güvenlik Açığı Denetimi](https://go.microsoft.com/fwlink/?linkid=2127467)|Skybox Güvenlik Açığı Denetimi, en riskli güvenlik açıklarınızı ortaya çıkarmak için iş, ağ ve tehdit bağlamını ilişkilendirerek güvenlik açığı yönetimi gürültüsünü azaltır
+![Skybox Güvenlik Açığı Denetimi logosunun resmi.](images/skybox-logo.png)|[Skybox Güvenlik Açığı Denetimi](https://go.microsoft.com/fwlink/?linkid=2127467)|Skybox Güvenlik Açığı Denetimi, güvenlik açığı yönetiminin gürültüsünü ortadan kaldırır ve en riskli güvenlik açıklarınızı ortaya çıkarmak için iş, ağ ve tehdit bağlamını ilişkilendirir
 ![Splunk logosunun resmi.](images/splunk-logo.png)|[Splunk](https://go.microsoft.com/fwlink/?linkid=2129805)|Uç Nokta için Defender Eklentisi, Splunk kullanıcılarının tüm uyarıları ve destekleyici bilgileri Splunk'larına almalarına olanak tanır
 ![XM Cyber logosunun resmi.](images/xmcyber-logo.png)|[XM Cyber](/microsoft-365/compliance/insider-risk-management-configure)|Risk faktörlerine ve yüksek değerli varlıklara göre uyarıya yanıtınızın önceliğini belirleme
 
@@ -101,16 +101,16 @@ Logo|İş ortağı adı|Açıklama
 ![Bitdefender logosunun resmi.](images/bitdefender-logo.png)|[Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)|Bitdefender GravityZone, karmaşık siber tehditlere karşı kapsamlı koruma sunan katmanlı bir yeni nesil uç nokta koruma platformudur
 ![Better Mobile logosunun resmi.](images/bettermobile-logo.png)|[Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)|Kimlik avı & mobil tehditleri durdurmak için yapay zeka tabanlı MTD çözümü. Kullanıcı gizliliğini korumak için özel İnternet'e gözatma
 ![Corrata logosunun resmi.](images/corrata-logo.png)|[Corrata](https://go.microsoft.com/fwlink/?linkid=2081148)|Mobil çözüm - Corrata'dan ayrıntılı görünürlük ve denetim ile mobil cihazlarınızı koruma
-![Lookout logosunun resmi.](images/lookout-logo.png)|[Uyanık](https://go.microsoft.com/fwlink/?linkid=866935)|Android ve iOS mobil cihazlar için Lookout Mobile Threat Protection telemetri alın
+![Lookout logosunun resmi.](images/lookout-logo.png)|[Uyanık](https://go.microsoft.com/fwlink/?linkid=866935)|Android ve iOS mobil cihazlar için Lookout Mobile Threat Protection telemetrisini edinin
 ![Symantec Endpoint Protection Mobile logosunun resmi.](images/symantec-logo.png)|[Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)|SEP Mobile, işletmelerin mobil cihazlardaki güvenlik tehditlerini ve güvenlik açıklarını tahmin etmenize, algılamalarına ve önlemelerine yardımcı olur
-![Zimperium logosunun resmi.](images/zimperium-logo.png)|[Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Uç Nokta için Defender'ınızı Machine Learning tabanlı Mobile Threat Defense ile iOS ve Android genişletme
+![Zimperium logosunun resmi.](images/zimperium-logo.png)|[Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Machine Learning tabanlı Mobile Threat Defense ile Uç Nokta için Defender'ınızı iOS ve Android'e genişletme
 
 ## <a name="other-integrations"></a>Diğer tümleştirmeler
 
 Logo|İş ortağı adı|Açıklama
 :---|:---|:---
 ![Cyren Web Filtresi logosunun resmi.](images/cyren-logo.png)|[Cyren Web Filtresi](https://go.microsoft.com/fwlink/?linkid=2108221)|Gelişmiş Web Filtrelemesi ile Uç Nokta için Defender'ınızı geliştirme
-![Morphisec logosunun resmi.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Hareketli Hedef Savunma destekli gelişmiş tehdit önleme sağlar. Uyarıların önceliklerini belirlemeye, risk altındaki cihaz puanını belirlemeye ve iç bellek bilgileri de dahil olmak üzere tam saldırı zaman çizelgesini görselleştirmeye yardımcı olmak için adli tıp verilerini doğrudan WD Bulut için Defender panolarıyla tümleştirir
+![Morphisec logosunun resmi.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Hareketli Hedef Savunma destekli gelişmiş tehdit önleme sağlar. Uyarıların önceliğini belirlemeye, risk altındaki cihaz puanını belirlemeye ve iç bellek bilgileri de dahil olmak üzere tam saldırı zaman çizelgesini görselleştirmeye yardımcı olmak için adli tıp verilerini doğrudan Bulut için WD Defender panolarıyla tümleştirir
 ![THOR Bulut logosunun resmi.](images/nextron-thor-logo.png)|[THOR Bulutu](https://go.microsoft.com/fwlink/?linkid=862988)|Kalıcı tehditlere odaklanan bir imza tabanı kullanarak isteğe bağlı canlı adli tıp taramaları sağlar
 
 ## <a name="siem-integration"></a>SIEM tümleştirmesi
@@ -141,6 +141,6 @@ Uç Nokta için Defender, bu çözümlerle tümleştirmenize ve uyarılar oluşt
 
 Uç Nokta için Defender şu anda dosya ve ağ göstergeleri için IOC eşleştirme ve düzeltmeyi desteklemektedir. Engelleme, dosya göstergeleri için desteklenir.
 
-## <a name="support-for-non-windows-platforms"></a>Windows olmayan platformlar için destek
+## <a name="support-for-non-windows-platforms"></a>Windows dışı platformlar için destek
 
-Uç Nokta için Defender, mobil cihazlar da dahil olmak üzere Windows ve Windows olmayan platformlar için merkezi bir güvenlik işlemleri deneyimi sağlar. Portalda desteklenen çeşitli işletim sistemlerinden (OS) gelen uyarıları görebilir ve kuruluşunuzun ağını daha iyi koruyabilirsiniz.
+Uç Nokta için Defender, Windows ve mobil cihazlar da dahil olmak üzere Windows dışı platformlar için merkezi bir güvenlik işlemleri deneyimi sağlar. Portalda desteklenen çeşitli işletim sistemlerinden (OS) gelen uyarıları görebilir ve kuruluşunuzun ağını daha iyi koruyabilirsiniz.

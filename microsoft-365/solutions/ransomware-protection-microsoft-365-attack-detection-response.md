@@ -1,5 +1,5 @@
 ---
-title: Adım 2. Saldırı algılamayı ve yanıtı dağıtın
+title: Adım 2. Saldırı algılama ve yanıt dağıtın
 author: dansimp
 f1.keywords:
 - NOCSH
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -15,78 +15,78 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: fidye yazılımı, insan tarafından işletilen fidye yazılımı, insan tarafından işletilen fidye yazılımı, HumOR, extortion saldırısı, fidye yazılımı saldırı, şifreleme, cryptovirology, sıfır güven
-description: Microsoft 365 Defender kaynaklarınızı fidye yazılımlarına karşı korumak için Microsoft 365 ve güvenlik sinyali kaynaklarını kullanın.
-ms.openlocfilehash: bf365693505b658dc61ab349c86541cfb9543de9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+keywords: fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, HumOR, gasp saldırısı, fidye yazılımı saldırısı, şifreleme, kriptoviroloji, sıfır güven
+description: Microsoft 365 kaynaklarınızı fidye yazılımı saldırılarına karşı korumak için Microsoft 365 Defender ve güvenlik sinyali kaynaklarını kullanın.
+ms.openlocfilehash: d24d89019dc5ecf5a2bb30d8e85f974bcebd1ec8
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325719"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582658"
 ---
-# <a name="step-2-deploy-attack-detection-and-response"></a>Adım 2. Saldırı algılamayı ve yanıtı dağıtın
+# <a name="step-2-deploy-attack-detection-and-response"></a>Adım 2. Saldırı algılama ve yanıt dağıtın
 
-Fidye yazılımı saldırı algılaması ve Microsoft 365 kiracınıza yanıt olarak, fidye yazılımı saldırı algılama ve yanıt için önerilen bir başlangıç adımı [olarak, yazılım](/microsoft-365/security/defender/eval-overview) yazılımlarının özelliklerini ve özelliklerini değerlendirmek için bir deneme Microsoft 365 Defender.
+Microsoft 365 kiracınızda fidye yazılımı saldırı algılaması ve yanıtı için kesinlikle önerilen bir başlangıç adımı olarak, Microsoft 365 Defender özelliklerini ve özelliklerini değerlendirmek için [bir deneme ortamı ayarlayın](/microsoft-365/security/defender/eval-overview).
 
-Daha fazla bilgi için bu kaynaklara bakın.
+Ek bilgi için bu kaynaklara bakın.
 
-| Özellik | Açıklama | Nereden başlayacak? | Algılama ve yanıt için nasıl kullanılır? |
+| Özellik | Açıklama | Nereden başlayacağız? | Algılama ve yanıt için kullanma |
 |:-------|:-----|:-------|:-------|
-| [Microsoft 365 Defender](/microsoft-365/security/defender) | Sinyal ve ek özellikler özelliklerini tek bir çözümde birleştirir. <br><br> Güvenlik uzmanlarının tehdit sinyallerini bir araya getirdir ve bir tehdidin tam kapsamını ve etkisini belirler. <br><br> Saldırıyı ve etkilenen kendi kendine etkilenen posta kutularını, uç noktaları ve kullanıcı kimliklerini önlemeye veya durdurmaya yönelik eylemleri otomatikleştirir. | [Başlarken](/microsoft-365/security/defender/get-started) | [Olay yanıtı](/microsoft-365/security/defender/incidents-overview) |
-| [Kimlik için Microsoft Defender](/defender-for-identity/what-is) |  Bulut tabanlı bir güvenlik arabirimi aracılığıyla, şirket içi Active Directory Etki Alanı Hizmetleri (AD DS) sinyallerini kullanarak, gelişmiş tehditleri, güvenliği tehlikeye kimlikleri ve kötü amaçlı insider eylemlerini tanımlar, algılar ve araştırın. | [Genel bakış](/defender-for-identity/what-is) | [Kimlik için Microsoft Defender portalıyla çalışma](/defender-for-identity/workspace-portal) |
-| [Office 365 için Microsoft Defender](/microsoft-365/security/office-365-security) | E-posta iletileri, bağlantılar (URL'ler) ve işbirliği araçları tarafından tehditlere karşı organizasyonlarınızı korur. <br><br> Kötü amaçlı yazılımlara, kimlik avına, kimlik sahtelerine ve diğer saldırı türlerine karşı koruma sağlar. | [Genel bakış](/microsoft-365/security/office-365-security/overview) | [Tehdit avı](/microsoft-365/security/office-365-security/threat-hunting-in-threat-explorer) |
-| [Uç Nokta için Microsoft Defender](/microsoft-365/security/defender-endpoint) | Uç noktalar (cihazlar) genelinde gelişmiş tehditleri algılamayı ve buna yanıt verir. | [Genel bakış](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)  | [Uç nokta algılama ve yanıt](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) |
-| [Azure Active Directory (Azure AD) Kimlik Koruması](/azure/active-directory/identity-protection/) | Kimlik tabanlı riskleri algılamayı ve düzeltmeyi, bu riskleri incelemeyi otomatik haleler. | [Genel bakış](/azure/active-directory/identity-protection/overview-identity-protection) | [Riski araştırma](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk) |
-| [Bulut Uygulamaları için Microsoft Defender](/cloud-app-security) | Tüm Microsoft ve üçüncü taraf bulut hizmetleriniz genelinde keşif, araştırma ve yönetim için bulut erişimi güvenlik aracısı. | [Genel bakış](/cloud-app-security/what-is-cloud-app-security) | [Araştır](/cloud-app-security/investigate) |
+| [Microsoft 365 Defender](/microsoft-365/security/defender) | Sinyalleri birleştirir ve özellikleri tek bir çözümde düzenler. <br><br> Güvenlik uzmanlarının tehdit sinyallerini birleştirmesini ve bir tehdidin tam kapsamını ve etkisini belirlemesini sağlar. <br><br> Saldırıyı önleme veya durdurma eylemlerini otomatikleştirir ve etkilenen posta kutularını, uç noktaları ve kullanıcı kimliklerini kendi kendine iyileştirir. | [Başlarken](/microsoft-365/security/defender/get-started) | [Olay yanıtı](/microsoft-365/security/defender/incidents-overview) |
+| [Kimlik için Microsoft Defender](/defender-for-identity/what-is) |  Bulut tabanlı bir güvenlik arabirimi aracılığıyla kuruluşunuza yönlendirilen gelişmiş tehditleri, güvenliği aşılmış kimlikleri ve kötü amaçlı insider eylemlerini tanımlar, algılar ve araştırır şirket içi Active Directory Domain Services (AD DS) sinyallerinizi kullanır. | [Genel Bakış](/defender-for-identity/what-is) | [Kimlik için Microsoft Defender portalıyla çalışma](/defender-for-identity/workspace-portal) |
+| [Office 365 için Microsoft Defender](/microsoft-365/security/office-365-security) | Kuruluşunuzu e-posta iletileri, bağlantılar (URL'ler) ve işbirliği araçları tarafından ortaya konan kötü amaçlı tehditlere karşı korur. <br><br> Kötü amaçlı yazılımlara, kimlik avına, kimlik sahtekarlığına ve diğer saldırı türlerine karşı koruma sağlar. | [Genel Bakış](/microsoft-365/security/office-365-security/overview) | [Tehdit avcılığı](/microsoft-365/security/office-365-security/threat-hunting-in-threat-explorer) |
+| [Uç Nokta için Microsoft Defender](/microsoft-365/security/defender-endpoint) | Uç noktalar (cihazlar) genelindeki gelişmiş tehditleri algılamayı ve yanıtlamayı etkinleştirir. | [Genel Bakış](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)  | [Uç nokta algılama ve yanıt](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) |
+| [Azure Active Directory (Azure AD) Kimlik Koruması](/azure/active-directory/identity-protection/) | Kimlik tabanlı riskleri algılamayı ve düzeltmeyi ve bu risklerin araştırılması işlemini otomatikleştirir. | [Genel Bakış](/azure/active-directory/identity-protection/overview-identity-protection) | [Riski araştırma](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk) |
+| [Bulut Uygulamaları için Microsoft Defender](/cloud-app-security) | Tüm Microsoft ve üçüncü taraf bulut hizmetlerinizde bulma, araştırma ve idare için bir bulut erişim güvenlik aracısı. | [Genel Bakış](/cloud-app-security/what-is-cloud-app-security) | [Araştır](/cloud-app-security/investigate) |
 
 >[!Note]
->Bu hizmetlerin hepsi, Microsoft 365 E5 eklentiyle Microsoft 365 E3 veya Microsoft 365 E5 Güvenlik gerektirir.
+>Bu hizmetlerin tümü için Microsoft 365 E5 Güvenlik eklentisiyle Microsoft 365 E5 veya Microsoft 365 E3 gerekir.
 >
 
-Fidye yazılımı yazılımı yazılımına yönelik aşağıdaki yaygın tehditleri tespit etmek ve bunlara yanıt vermek için bu hizmetleri kullanın:
+Fidye yazılımı saldırganlarının aşağıdaki yaygın tehditlerini algılamak ve yanıtlamak için bu hizmetleri kullanın:
 
-- Kimlik bilgileri hırsızlığı
+- Kimlik bilgisi hırsızlığı
 
-   - Azure AD Identity Protection
-   - Kimlik için Defender
+   - Azure AD Kimlik Koruması
+   - Kimlik için Microsoft Defender
    - Office 365 için Defender
 
-- Cihaz güvenliği
+- Cihaz güvenliğinin aşılmasına neden olan
 
    - Uç Nokta için Defender
    - Office 365 için Defender
 
-- Ayrıcalık yükseltme
+- Ayrıcalığı yükseltme
 
-   - Azure AD Identity Protection
+   - Azure AD Kimlik Koruması
    - Bulut Uygulamaları için Defender
 
 - Kötü amaçlı uygulama davranışı
 
    - Bulut Uygulamaları için Defender
 
-- Veri sızıntısı, silinmesi veya karşıya yükleme
+- Veri sızdırma, silme veya karşıya yükleme
 
    - Office 365 için Defender
-   - Anormal algılama ilkeleriyle [Bulut Uygulamaları için](/cloud-app-security/anomaly-detection-policy#ransomware-activity) Defender
+   - [Anomali algılama ilkeleriyle](/cloud-app-security/anomaly-detection-policy#ransomware-activity) Cloud Apps için Defender
 
-Aşağıdaki hizmetler, Microsoft 365 Defender portalı (https://security.microsoft.com)yaygın bir tehdit toplama ve çözümleme noktası olarak) kullanır:
+Aşağıdaki hizmetler Microsoft 365 Defender ve portalını (https://security.microsoft.com)yaygın bir tehdit toplama ve analiz noktası olarak) kullanır:
 
-- Kimlik için Defender
+- Kimlik için Microsoft Defender
 - Office 365 için Defender
 - Uç Nokta için Defender
 - Bulut Uygulamaları için Defender
 
-Microsoft 365 Defender, güvenlik analistlerinin fidye yazılımı saldırılarının aşamalarını daha hızlı algılaylarını, inceleylerini ve düzeltmek için tehdit sinyallerini uyarılarda ve bağlantılı uyarılarda bir olayda birleştirir.
+Microsoft 365 Defender, güvenlik analistlerinizin fidye yazılımı saldırısı aşamalarını daha hızlı algılaması, araştırması ve düzeltmesi için tehdit sinyallerini uyarılara ve bağlı uyarıları bir olaya birleştirir.
 
 ## <a name="resulting-configuration"></a>Sonuçta elde edilen yapılandırma
 
-İşte, 1. ve 2. adımlar için kiracınız için fidye yazılımı koruması.
+1. ve 2. adımlarda kiracınız için fidye yazılımı koruması aşağıdadır.
 
-![2. Adım'dan Microsoft 365 kiracınız için fidye yazılımı koruması](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step2.png)
+![2. Adımdan sonra Microsoft 365 kiracınız için fidye yazılımı koruması](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step2.png)
 
 ## <a name="next-step"></a>Sonraki adım
 
-[![Yazılımla fidye yazılımına karşı 3. Microsoft 365](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-step3.png)](ransomware-protection-microsoft-365-identities.md)
+[![Microsoft 365 ile fidye yazılımı koruması için 3. Adım](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-step3.png)](ransomware-protection-microsoft-365-identities.md)
 
-Kiracınıza [kimlikleri korumak için 3](ransomware-protection-microsoft-365-identities.md). Adıma Microsoft 365 geçin.
+Microsoft 365 kiracınızdaki kimlikleri korumak için 3. [Adımla](ransomware-protection-microsoft-365-identities.md) devam edin.

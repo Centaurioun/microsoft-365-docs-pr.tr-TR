@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da sınıflandırıcı oluşturmayı öğrenin.
-ms.openlocfilehash: 6c47d2fe2f7f2b67533587f0956281c2b577dbe0
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 6069f22466372b09b744056218827119b6a73f34
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882384"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583857"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de sınıflandırıcı oluşturma
 
@@ -62,7 +62,7 @@ Modelinizi oluşturmanın ilk adımı, modelinize bir ad vermektir:
 
 Model oluşturduğunuzda, yeni bir site içerik türü de oluşturursunuz. İçerik türü, ortak özelliklere sahip bir belge kategorisini temsil eder ve söz konusu içerik için bir sütun veya meta veri özellikleri koleksiyonunu paylaşır. SharePoint içerik türleri [İçerik türleri galerisi](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f) aracılığıyla yönetilir. Bu örnekte, modeli oluşturduğunuzda yeni bir *Sözleşme Yenileme* içerik türü oluşturacaksınız.
 
-Bu modeli, şemasını kullanmak üzere SharePoint <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">İçerik türü galerisindeki</a> mevcut bir kurumsal içerik türüyle eşlemek istiyorsanız **Gelişmiş ayarlar'ı** seçin. Enterprise içerik türleri, SharePoint yönetim merkezindeki İçerik Türü Hub'ında depolanır ve kiracıdaki tüm sitelere dağıtılır. Tanımlama ve sınıflandırma konusunda yardımcı olması için şemasından yararlanmak için mevcut bir içerik türünü kullanabilirsiniz ancak modelinizi yine de tanımlamış olduğu dosyalardan bilgi ayıklamak için eğitmeniz gerektiğini unutmayın.</br>
+Bu modeli, şemasını kullanmak üzere SharePoint <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">İçerik türü galerisindeki</a> mevcut bir kurumsal içerik türüyle eşlemek istiyorsanız **Gelişmiş ayarlar'ı** seçin. Kurumsal içerik türleri, SharePoint yönetim merkezindeki İçerik Türü Hub'ında depolanır ve kiracıdaki tüm sitelere dağıtılır. Tanımlama ve sınıflandırma konusunda yardımcı olması için şemasından yararlanmak için mevcut bir içerik türünü kullanabilirsiniz ancak modelinizi yine de tanımlamış olduğu dosyalardan bilgi ayıklamak için eğitmeniz gerektiğini unutmayın.</br>
 
 ![Gelişmiş ayarlar.](../media/content-understanding/advanced-settings.png)
 
@@ -87,7 +87,7 @@ Modelinizi eğitmek için en az beş pozitif örnek ve en az bir negatif örnek 
 Örnek dosyalar eklemek için:
 
 1. Model giriş sayfasındaki **Örnek dosya ekle** kutucuğunda **Dosya ekle'ye** tıklayın.
-2. **Modelinizin örnek dosyalarını seçin** sayfasında, içerik merkezindeki Eğitim dosyaları kitaplığından örnek dosyalarınızı seçin. Bunları henüz oraya yüklemediyseniz, eğitim dosyaları kitaplığına kopyalamak için **Upload** tıklayarak şimdi karşıya yüklemeyi seçin.
+2. **Modelinizin örnek dosyalarını seçin** sayfasında, içerik merkezindeki Eğitim dosyaları kitaplığından örnek dosyalarınızı seçin. Henüz karşıya yüklemediyseniz, Eğitim dosyaları kitaplığına kopyalamak için **Karşıya Yükle'ye** tıklayarak şimdi karşıya yüklemeyi seçin.
 3. Modeli eğitmek için kullanılacak örnek dosyalarınızı seçtikten sonra **Ekle'ye** tıklayın.
 
     ![Örnek dosyaları seçin.](../media/content-understanding/select-sample.png) 
@@ -148,7 +148,7 @@ Etiketli örnek dosyalarınızda bir eşleşme aldıysanız, artık modelinizi m
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ayıklayıcı oluşturma](create-an-extractor.md)
+[Ayıklayıcı oluştur](create-an-extractor.md)
 
 [Document Understanding'e genel bakış](document-understanding-overview.md)
 

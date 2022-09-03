@@ -2,7 +2,7 @@
 title: Uç Nokta için Defender Windows İstemcisi'ni ekleme
 description: Windows İstemcisi'ni ekleme.
 keywords: ekleme, Uç Nokta için Microsoft Defender ekleme, sccm, grup ilkesi, mdm, yerel betik, algılama testi
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 60b7e78902dff29278e3fe960e016e38c10cf296
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.subservice: mde
+ms.openlocfilehash: 32a126d8b108139707605a57e9466052e93a354d
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66862555"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581744"
 ---
 # <a name="defender-for-endpoint-onboarding-windows-client"></a>Uç Nokta için Defender Windows İstemcisi'ni ekleme
 

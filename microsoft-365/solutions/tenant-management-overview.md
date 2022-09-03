@@ -1,11 +1,11 @@
 ---
-title: Kurumsal kiracılar için Microsoft 365 yönetimi
+title: Kuruluş için Microsoft 365 kiracı yönetimi
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -15,139 +15,139 @@ ms.collection:
 - tenant-management
 ms.custom:
 - Ent_Solutions
-description: Kiracılarınızı planlamaya, dağıtmaya ve devam eden işlemlere Microsoft 365 genel bakış.
-ms.openlocfilehash: 7a9545800c3f5f08b8094290c4173b4368caff4d
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+description: Microsoft 365 kiracılarınızın planlama, dağıtım ve sürekli çalışmasına genel bakış.
+ms.openlocfilehash: eff083147d4d11e3bcb2837a12cfb9dad487c1c0
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "63011786"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585036"
 ---
-# <a name="tenant-management-for-microsoft-365-for-enterprise"></a>Kurumsal kiracılar için Microsoft 365 yönetimi
+# <a name="tenant-management-for-microsoft-365-for-enterprise"></a>Kuruluş için Microsoft 365 kiracı yönetimi
 
-Bulut bilgi işlem ile organizasyonlu dijital dönüşümüne bir yol oluşturmak, çalışanlarının üretkenlik, işbirliği, performans, gizlilik, uyumluluk ve güvenlikten güven güveneceği kesin bir temel gerektirir.
+Bulut bilgi işlemle kuruluşunuzun dijital dönüşümüne yönelik bir yol oluşturmak için çalışanlarınızın üretkenlik, işbirliği, performans, gizlilik, uyumluluk ve güvenlik için güvenebileceği sağlam bir temel gerekir.
 
-Kiracılar için doğru yapılandırma Microsoft 365 temel, çalışanlarınızı çalışmalarınızı yapmaları için ve IT departmanınızı ek iş değeri sağlayan  uç çözümlere odaklanmaya bırakarak bu temelin sağlar.
+Microsoft 365 kiracılarınızın doğru yapılandırılması bu temeli sağlar ve çalışanlarınızın işlerini yapmaya ve BT departmanınızın ek iş değeri sağlayan uçtan uca çözümlere odaklanmasına olanak tanır.
 
-Bu çözüm, şu adımlarda temelin yapılandırmasında size yol gösterir:
+Bu çözüm, aşağıdaki adımlarda bu temelin yapılandırmasında size yol göstermektedir:
 
 1. Kiracılarınızı belirleme
-2. Ağ için en iyi duruma getirme
-3. Kimliklerinizi eşitleme ve güvenli oturum açmaları zorunlu hale uygulama
-4. Windows cihazlarınızı, Office istemcilerinizi ve şirket içi sunucularınızı Office verileri geçirme
+2. Ağınızı iyileştirme
+3. Kimliklerinizi eşitleme ve güvenli oturum açma işlemleri uygulama
+4. Windows cihazlarınızı, Office istemcilerinizi ve şirket içi Office sunucularınızı ve verilerinizi geçirme
 5. Cihaz ve uygulama yönetimini dağıtma
 
-Ama ilk olarak, bir kiracının ne olduğunu ve firma temelini sağlayan bir kiracının nasıl göründüğünü anlamak için bir dakikanız var.
+Ancak öncelikle kiracının ne olduğunu ve sağlam bir temel sağlayan bir kiracının nasıl göründüğünü anlamak için biraz zaman ayıralım.
 
-## <a name="a-microsoft-365-tenant-defined"></a>Tanımlanmış Microsoft 365 kiracı
+## <a name="a-microsoft-365-tenant-defined"></a>Microsoft 365 kiracısı tanımlı
 
-Kiracı Microsoft 365, Avrupa veya Kuzey Amerika gibi belirli bir varsayılan konumda depolanan Microsoft 365 hizmetlerinizin ve kuruluş verilerinizin özel bir örneğidir. Bu konum, kiracıyı kurum için  oluşturmak üzere belirttiğinizde belirtilir. Her Microsoft 365 kiracı farklı, benzersiz ve diğer tüm kiracılardan Microsoft 365 olur. Microsoft'tan Microsoft 365 veya E5 gibi bir veya daha fazla ürün satın Microsoft 365 E3 ve her biri için bir lisans kümesi satın alan bir kiracı oluşturabilirsiniz.
+Microsoft 365 kiracısı, Microsoft 365 hizmetlerinin ve Avrupa veya Kuzey Amerika gibi belirli bir varsayılan konumda depolanan kuruluş verilerinizin ayrılmış bir örneğidir. Bu konum, kuruluşunuz için kiracı oluşturduğunuzda belirtilir. Her Microsoft 365 kiracısı ayrı, benzersiz ve diğer tüm Microsoft 365 kiracılarından ayrıdır. Microsoft'tan Microsoft 365 E3 veya E5 gibi bir veya daha fazla ürün ve her biri için bir lisans kümesi satın aldığınızda bir Microsoft 365 kiracısı oluşturursunuz.
 
-Ayrıca Microsoft 365 kiracınız, Azure Active Directory hesapları, gruplar ve diğer nesneler için Azure AD'nin özel bir örneği olan bir Azure AD (Azure AD) kiracısı da içerir. Her Azure AD kiracısı, birbirinden ayrı, benzersiz ve diğer tüm Azure AD kiracılarından ayrıdır. Kurumda, Azure abonelikleriyle ayar kullanabileceğiniz birden çok Azure AD kiracısı olabilir, ancak Microsoft 365 kiracı, kiracıyı oluşturulduğunda oluşturulan tek bir Azure AD kiracısı kullanabilir.
+Microsoft 365 kiracınız ayrıca kullanıcı hesapları, gruplar ve diğer nesneler için ayrılmış bir Azure AD örneği olan bir Azure Active Directory (Azure AD) kiracısı içerir. Her Azure AD kiracı ayrı, benzersiz ve diğer tüm Azure AD kiracılardan ayrıdır. Kuruluşunuzun Azure abonelikleriyle ayarlayabileceğiniz birden çok Azure AD kiracısı olsa da, Microsoft 365 kiracıları yalnızca kiracıyı oluşturduğunuzda oluşturulan tek bir Azure AD kiracısını kullanabilir.
 
-İşte bir örnek:
+Aşağıda bir örnek verilmiştir:
 
-![Kiracıya Microsoft 365 Azure AD kiracısına örnek.](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![Azure AD kiracısı olan örnek bir Microsoft 365 kiracısı.](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
-*Kiracı yönetimi*, kiracılarınızı planlama, dağıtım ve devam eden Microsoft 365 olur.
+*Kiracı yönetimi* , Microsoft 365 kiracılarınızın planlama, dağıtım ve devam eden işlemidir.
 
-## <a name="attributes-of-a-well-designed-and-operating-tenant"></a>İyi tasarlanmış ve işletim kiracısı öznitelikleri
+## <a name="attributes-of-a-well-designed-and-operating-tenant"></a>İyi tasarlanmış ve çalışan bir kiracının öznitelikleri
 
-Kiracınız için doğru ad ve konumun ötesinde, Microsoft Teams ve Exchange Online&mdash; gibi bulut üretkenlik uygulamalarıyla kullanıcı deneyimlerinizi etkili,&mdash; güvenli ve performans sahibi olduğundan emin olmak için planlamanız, dağıtmanız ve yönetmeniz gereken ek öğeler de vardır.
+Kiracınız için doğru adın ve konumun ötesinde, Microsoft Teams gibi bulut üretkenlik uygulamalarıyla&mdash;kullanıcı deneyimlerinizin etkili, güvenli ve performanslı olmasını sağlamak için planlamanız, dağıtmanız ve yönetmeniz Exchange Online gereken&mdash; ek öğeler vardır.
 
-Bu öğeler şöyledir:
+Öğeler şunlardır:
 
-- Doğru ürün (abonelik) ve lisans kümeniz var.
-  - Ürün kümesi işletmeniz, IT ve güvenlik ihtiyaçlarını karşılar.
-  - Çalışanlarınız için yeterli sayıda lisans var ve personel çalışmalarında beklenen değişiklikler var.
+- Doğru ürün (abonelik) ve lisans kümesine sahipsiniz.
+  - Ürün kümesi işletmenize, BT'ye ve güvenlik gereksinimlerinize uygun.
+  - Çalışanlarınız için yeterli sayıda lisans ve personelde beklenen değişiklikler vardır.
 - Ağ için:
-  - Doğru DNS etki alanı adlarını yapılandırdınız.
-  - Kurumsal ağlar için, site içi çalışanlar için ağ trafiğini Microsoft ağına en iyi duruma gönderdiysiniz.
-  - VPN istemcisi kullanan uzak çalışanlar için ağ trafiğini en iyi duruma kapattınız.
-- Active Directory Etki Alanı Hizmetleri (AD DS) hesaplarınızı, gruplarınızı ve diğer nesneleri eşitleebilirsiniz.
-  - Azure AD kiracı hesaplarınız, e-posta adresleri Exchange Online DNS etki alanlarına sahip posta kutularıyla eşlenmiştir.
-  - Kullanıcı hesaplarınıza, satın alınan doğru ürünlerden (Microsoft 365 E3 E5 gibi) doğru lisanslar atandı.
-- Güçlü kimlik ve erişim yönetimi yapılandırıldı.
-  - Parolasız veya çok faktörlü kimlik doğrulamasıyla (MFA) güvenli kullanıcı oturum açmasını gerektirirsiniz.
-  - Daha yüksek güvenlik düzeyleri için oturum açma gereksinimlerini ve kısıtlamaları zorunlu bulunduran Koşullu Erişim ilkeleriniz vardır.
-- Şirket içi Office sunucuları ve verileri bulut uygulamalarına geçirildi veya karma bir yapılandırmada kullanılıyor.
-- Yerleşik Intune veya Temel Mobil Kullanım ve Güvenlik ile cihaz yönetimini Microsoft 365.
-  - Kuruluşa ait cihazlarınız kaydedildi ve yönetilir.
+  - Doğru DNS etki alanı adlarını yapılandırmışsınız.
+  - Kurumsal ağlar için, şirket içi çalışanlar için Microsoft ağına yönelik ağ trafiğini iyileştirdiniz.
+  - VPN istemcisi kullanan uzak çalışanlar için ağ trafiğini iyileştirdiniz.
+- Active Directory Domain Services (AD DS) hesaplarınızı, gruplarınızı ve diğer nesneleri eşitlediniz.
+  - Azure AD kiracı hesaplarınız, e-posta adresleri için doğru DNS etki alanlarına sahip Exchange Online posta kutularıyla eşlenir.
+  - Kullanıcı hesaplarınıza doğru satın alınan ürünlerden (Microsoft 365 E3 veya E5 gibi) doğru lisanslar atanmıştır.
+- Güçlü kimlik ve erişim yönetimi yapılandırmışsınız.
+  - Parolasız veya çok faktörlü kimlik doğrulaması (MFA) ile güvenli kullanıcı oturum açması istiyorsunuz.
+  - Daha yüksek güvenlik düzeyleri için oturum açma gereksinimlerini ve kısıtlamalarını zorunlu kılan Koşullu Erişim ilkeleriniz vardır.
+- Şirket içi Office sunucuları ve verileri bulut uygulamalarına geçirilmiş veya karma bir yapılandırmada kullanılıyor.
+- Microsoft 365'e yerleşik Intune veya Temel Mobilite ve Güvenlik ile cihaz yönetimi yapıyorsunuz.
+  - Kuruluşunuza ait cihazlar kaydedilir ve yönetilir.
   - Kişisel cihazlar için uygulamalar yönetilir.
 
-Burada, tüm bu öğelerin Microsoft 365 bir kiracının yer alan bir örneği ve ve bir örneği yer alıyor.
+Burada, tüm bu öğelerin olduğu bir Microsoft 365 kiracısı örneği verilmiştir.
 
-![Kiracıya Microsoft 365.](../media/tenant-management-overview/tenant-management-tenant-config.png)
+![Örnek bir Microsoft 365 kiracısı.](../media/tenant-management-overview/tenant-management-tenant-config.png)
 
-Bu çizimde, kiracıya Microsoft 365 içerir:
+Bu çizimde, Microsoft 365 kiracısı şunları içerir:
 
-- Ürünler ve E5 lisansları Microsoft 365 E3 lisansları.
-- Microsoft 365 uygulamalarınızı oluşturun.
-- Kayıtlı cihazlarla cihaz ve uygulama ilkeleriyle Intune.
+- Microsoft 365 E3 ve E5 için ürünler ve lisanslar.
+- Microsoft 365 üretkenlik uygulamaları.
+- Kayıtlı cihazlar ve cihaz ve uygulama ilkeleriyle Intune.
 - Eşitlenmiş kullanıcı hesabı (gruplar ve diğer dizin nesneleri gösterilmez), etki alanları ve Koşullu Erişim ilkelerine sahip bir Azure AD kiracısı.
 
-## <a name="tenant-capabilities-for-microsoft-365-for-enterprise"></a>Kurumsal kiracılar için Microsoft 365 özellikleri
+## <a name="tenant-capabilities-for-microsoft-365-for-enterprise"></a>Kuruluş için Microsoft 365 kiracı özellikleri
 
-Aşağıdaki bölümlerde ve tabloda, bu çözümde yer alan adımlara uygulanacak temel özellikler ve lisanslama listelanmaktadır.
+Aşağıdaki bölümlerde ve tabloda, bu çözümdeki adımlar için temel özellikler ve lisanslama listelenir.
 
 ### <a name="tenant"></a>Kiracı
 
-|Özellik veya özellik|Açıklama|Lisanslama|
+|Yetenek veya özellik|Açıklama|Lisanslama|
 |---|---|---|
-|Birden çok kiracı|Her Microsoft 365 kiracı farklı, benzersiz ve diğer tüm kiracılardan Microsoft 365 olur. Birden çok kiracıyla, bunları yönetme ve kullanıcılarınıza hizmet sağlama konusunda kısıtlamalar ve dikkate alınması gereken başka noktalar vardır.|Microsoft 365 E3 E5|
-|Kiracılar arası posta kutusu geçişi|Kiracı yöneticileri, şirket içi sistemlerinde en düşük altyapı bağımlılıkları olan posta kutularını kiracılar arasında hareket ettirebilirsiniz. Bu işlem, alan dışı posta kutuları ve ekleme ihtiyacı ortadan kaldırır.|Microsoft 365 E3 E5|
-|Multi-Geo|Kiracınız, veri yerleşim gereksinimlerini karşılamayı seçtiğiniz diğer veri merkezi coğrafi konumlarında rest rest konumunu depolar.|Microsoft 365 E3 E5|
-|Temel verileri yeni bir veri merkezi coğrafi olarak taşıma|Microsoft ek kapasite ve bilgi işlem kaynakları için yeni veri merkezi coğrafi olarak ekley isteğinde bulundurarak, çekirdek müşteri verileriniz için bir veri merkezi coğrafi olarak taşınmasını talep edilebilir.|Microsoft 365 E3 E5|
+|Birden çok kiracı|Her Microsoft 365 kiracısı ayrı, benzersiz ve diğer tüm Microsoft 365 kiracılarından ayrıdır. Birden çok kiracıda, bunları yönetirken ve kullanıcılarınıza hizmet sağlarken kısıtlamalar ve dikkat edilmesi gereken ek noktalar vardır.|Microsoft 365 E3 veya E5|
+|Kiracılar arası posta kutusu geçişi|Kiracı yöneticileri, şirket içi sistemlerinde en az altyapı bağımlılığı olan kiracılar arasında posta kutularını taşıyabilir. Bu, posta kutularının kullanıma dışı ve ekleme gereksinimini ortadan kaldırır.|Microsoft 365 E3 veya E5|
+|Multi-Geo|Kiracınız bekleyen verileri, veri yerleşimi gereksinimlerini karşılamak için seçtiğiniz diğer veri merkezi coğrafi konumlarında depolayabilir.|Microsoft 365 E3 veya E5|
+|Temel verileri yeni bir veri merkezi coğrafi konumuna taşıma|Microsoft ek kapasite ve işlem kaynakları için yeni veri merkezi coğrafi alanları ekledikten sonra, temel müşteri verileriniz için coğrafi veri yerleşimi için veri merkezi coğrafi taşıma isteğinde bulunabilirsiniz.|Microsoft 365 E3 veya E5|
 ||||
 
 ### <a name="networking"></a>Ağ
 
-|Özellik veya özellik|Açıklama|Lisanslama|
+|Yetenek veya özellik|Açıklama|Lisanslama|
 |---|---|---|
-|Ağ Analizler|Office konumlar için ağ Microsoft 365 tasarlamanıza yardımcı olmak için kiracı kiracınız tarafından toplanan ağ performansı ölçümleri.|Microsoft 365 E3 E5|
-|Uç nokta güncelleştirmelerini otomatikleştirme|İstemci PAC dosyalarınız, ağ cihazlarınız ve Microsoft 365 hizmetlerinizin tüm uç noktaları için yapılandırmasını ve devam eden güncelleştirmeleri otomatikleştirin.|Microsoft 365 E3 E5|
+|Ağ İçgörüleri|Microsoft 365 kiracınızdan toplanan ağ performansı ölçümleri, ofis konumlarınız için ağ çevreleri tasarlamanıza yardımcı olur.|Microsoft 365 E3 veya E5|
+|Uç nokta güncelleştirmelerini otomatikleştirme|İstemci PAC dosyalarınızda ve ağ cihazlarınızda ve hizmetlerinizde Microsoft 365 uç noktaları için yapılandırmayı ve devam eden güncelleştirmeleri otomatikleştirin.|Microsoft 365 E3 veya E5|
 ||||
 
 ### <a name="identity"></a>Kimlik
 
-|Özellik veya özellik|Açıklama|Lisanslama|
+|Yetenek veya özellik|Açıklama|Lisanslama|
 |---|---|---|
-|Şirket içi Active Directory Etki Alanı Hizmetleri'i (AD DS) Azure AD kiracınız ile eşitleme|Kullanıcı hesapları, gruplar ve diğer nesneler için şirket içi kimlik sağlayıcınızdan faydalanın.|Microsoft 365 E3 E5|
-|Güvenlik varsayılanları ile zorunlu kılınan MFA|Oturum açma işlemleri için ikinci bir kimlik doğrulama biçimi gerektirerek güvenliği tehlikeye atılmış kimliklere ve cihazlara karşı koruyun. Güvenlik varsayılanları, tüm kullanıcı hesapları için MFA gerektirir.|Microsoft 365 E3 E5|
-|Koşullu Erişim ile zorunlu kılınan MFA|Koşullu Erişim ilkeleriyle oturum açma özniteliklerini temel alarak MFA gerektirme.|Microsoft 365 E3 E5|
-|Risk tabanlı Koşullu Erişim ile zorunlu kılınan MFA|Kullanıcının Kimlik için Microsoft Defender ile oturum açma riski temel alarak MFA gerektirme.|Microsoft 365 E5 lisansları olan E3 Azure AD Premium P2 E3|
-|Self-Service Sıfırlama (SSPR)|Kullanıcılarının parolalarını veya hesaplarını sıfırlamasına veya kilidini açmasına izin ver.|Microsoft 365 E3 E5|
+|şirket içi Active Directory Domain Services'i (AD DS) Azure AD kiracınızla eşitleme|Kullanıcı hesapları, gruplar ve diğer nesneler için şirket içi kimlik sağlayıcınızdan yararlanın.|Microsoft 365 E3 veya E5|
+|Güvenlik varsayılanlarıyla zorunlu kılınan MFA|Oturum açma işlemleri için ikinci bir kimlik doğrulaması biçimi gerektirerek güvenliği aşılmış kimliklere ve cihazlara karşı koruma sağlayın. Güvenlik varsayılanları tüm kullanıcı hesapları için MFA gerektirir.|Microsoft 365 E3 veya E5|
+|Koşullu Erişim ile zorunlu kılınan MFA|Koşullu Erişim ilkeleriyle oturum açma özniteliklerine göre MFA gerektir.|Microsoft 365 E3 veya E5|
+|Risk tabanlı Koşullu Erişim ile zorunlu kılınan MFA|kullanıcının Kimlik için Microsoft Defender ile oturum açma riskine bağlı olarak MFA gerektirme.|Azure AD Premium P2 lisansları olan Microsoft 365 E5 veya E3|
+|parola sıfırlamayı (SSPR) Self-Service|Kullanıcılarınızın parolalarını veya hesaplarını sıfırlamasına veya kilidini açmasına izin verin.|Microsoft 365 E3 veya E5|
 ||||
 
 ### <a name="migration"></a>Geçiş
 
-|Özellik veya özellik|Açıklama|Lisanslama|
+|Yetenek veya özellik|Açıklama|Lisanslama|
 |---|---|---|
-|Geçiş Windows 10|7 veya 12 Windows çalıştıracak Windows 8.1 cihazlarınızı Windows 10 Enterprise.|Windows 10 Enterprise veya E5'e dahil Microsoft 365 E3 lisansları|
-|Geçiş Kurumlar için Microsoft 365 Uygulamaları|Word Office ve PowerPoint gibi istemci uygulamalarınızı buluttan yeni özelliklerle güncelleştirilen sürümlere geçirme.|Microsoft 365 E3 E5|
-|Şirket içi sunucuları ve verileri başka sunuculara Microsoft 365|Paylaşılan posta Exchange, sitelerinizi SharePoint ve Skype Kurumsal Online'Microsoft 365 geçirebilirsiniz.|Microsoft 365 E3 E5|
+|Windows 10 geçiş|Windows 7 veya Windows 8.1 çalıştıran cihazlarınızı Windows 10 Enterprise'a geçirin.|Microsoft 365 E3 veya E5'e dahil Windows 10 Enterprise lisansları|
+|Kurumlar için Microsoft 365 Uygulamaları geçiş|Word ve PowerPoint gibi Office istemci uygulamalarınızı buluttan yüklenen ve yeni özelliklerle güncelleştirilen sürümlere geçirin.|Microsoft 365 E3 veya E5|
+|Şirket içi sunucuları ve verileri Microsoft 365'e geçirme|Exchange posta kutularınızı, SharePoint sitelerinizi ve Skype Kurumsal Online'ı Microsoft 365 bulut hizmetlerine geçirin.|Microsoft 365 E3 veya E5|
 ||||
 
 ### <a name="device-and-app-management"></a>Cihaz ve uygulama yönetimi
 
-|Özellik veya özellik|Açıklama|Lisanslama|
+|Yetenek veya özellik|Açıklama|Lisanslama|
 |---|---|---|
-|Microsoft Intune|Cep telefonları, tabletler ve dizüstü bilgisayarlar dahil olmak üzere kuruluş uygulamanın ve cihazların nasıl kullanlıklarını denetlemeniz için mobil cihaz yönetimi (MDM) ve mobil uygulama yönetimi (MAM) sağlayan bulut tabanlı bir hizmet.|Microsoft 365 E3 E5|
-|Temel Hareketlilik ve Güvenlik|Bu yerleşik hizmetle kullanıcılarının iPhone, iPad, Android ve Windows mobil cihazlarının güvenliğini sağlama ve yönetme.|Microsoft 365 E3 E5|
+|Microsoft Intune|Cep telefonları, tabletler ve dizüstü bilgisayarlar dahil olmak üzere kuruluşunuzun uygulamasının ve cihazların nasıl kullanıldığını denetlemek için mobil cihaz yönetimi (MDM) ve mobil uygulama yönetimi (MAM) sağlayan bulut tabanlı bir hizmet.|Microsoft 365 E3 veya E5|
+|Temel Hareketlilik ve Güvenlik|Bu yerleşik hizmetle iPhone, iPad, Android ve Windows telefonlar gibi kullanıcılarınızın mobil cihazlarının güvenliğini sağlayın ve yönetin.|Microsoft 365 E3 veya E5|
 ||||
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Kiracılarınızı ayarlamak ve yönetmek için bu Microsoft 365 kullanın.
+Microsoft 365 kiracılarınızı ayarlamak ve yönetmek için bu adımları kullanın.
 
 1. [Kiracılarınızı belirleme](tenant-management-tenants.md)
-2. [Ağ için en iyi duruma getirme](tenant-management-networking.md)
-3. [Kimliklerinizi eşitleme ve güvenli oturum açmaları zorunlu hale uygulama](tenant-management-identity.md)
-4. [Şirket içi veri sunucularınızı Office verileri geçirme](tenant-management-migration.md)
+2. [Ağınızı iyileştirme](tenant-management-networking.md)
+3. [Kimliklerinizi eşitleme ve güvenli oturum açma işlemleri uygulama](tenant-management-identity.md)
+4. [Şirket içi Office sunucularınızı ve verilerinizi geçirme](tenant-management-migration.md)
 5. [Cihaz ve uygulama yönetimini dağıtma](tenant-management-device-management.md)
 
-[![Kiracıyı dağıtma ve yönetme Microsoft 365.](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
+[![Microsoft 365 kiracısını dağıtma ve yönetme adımları.](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
 
-Her adım dağıtım seçeneklerini açıklar, sonuçları ve sürekli bakım görevlerini özetler.
+Her adım dağıtım seçeneklerini açıklar, sonuçları ve devam eden bakım görevlerini özetler.
 
-Kendi kiracılarının öğelerini nasıl kurgusal ama temsili bir çok uluslu kuruluşun farklı bir kiracıya Microsoft 365 olduğunu anlamak için[, Contoso örnek olay incelemesini incelenin](../enterprise/contoso-case-study.md).
+Kurgusal ama temsili çok uluslu bir kuruluşun Microsoft 365 kiracısının öğelerini nasıl dağıtmış olduğunu anlamak için [contoso örnek olay incelemesine](../enterprise/contoso-case-study.md) bakın.

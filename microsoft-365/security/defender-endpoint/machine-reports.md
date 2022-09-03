@@ -17,19 +17,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 58be3951f8937e095e68f2238119271973811210
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 57db94df3cfd8fae60ab335f2f4a3c8c02f3c9cf
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522522"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584870"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da cihaz durumu ve uyumluluk raporu
 
 **Şunlar için geçerlidir:**
 
-- [Uç Nokta için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Uç Nokta için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [İş için Microsoft Defender](../defender-business/mdb-overview.md)
 
 > Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -190,7 +193,7 @@ Tıkladığınız sürüm numarası şuysa:
 
 #### <a name="new-microsoft-defender-antivirus-filter-definitions"></a>Yeni Microsoft Defender Virüsten Koruma filtre tanımları
 
-Aşağıdaki tabloda, Microsoft Defender Virüsten Koruma raporlamasına yeni eklenen bir liste terimleri yer alır.
+Aşağıdaki tabloda, Microsoft Defender Virüsten Koruma raporlamasına yeni eklenen terimlerin listesi yer alır.
 
 | Sütun adı | Açıklama |
 |:---|:---|
@@ -306,7 +309,7 @@ Güncel kartlar  **Virüsten Koruma altyapısı, Virüsten Koruma**  **platf
 
 Aşağıdaki her kart için _güncel_, _güncel olmayan_ ve _no_data_available_ tanımları sağlanır.
 
-Microsoft Defender Virüsten Koruma (MDAV) güncel raporları aşağıdaki ölçütlere göre belirlemeler yapar:
+Microsoft Defender Virüsten Koruma (MDAV), aşağıdaki ölçütlere göre güncel raporlar ve belirlemeler yapar:
 
 - **Altyapı & platformu güncelleştirmeleri** için: istemci olaylarının en son güncel raporlar için alındığı saat ("İmza Yenileme zamanı") ve Güvenlik Zekası Yayımlama Zamanı (güvenlik zekası VDM'leri altyapı & platform sürümlerini belirlemek için de kullanılır)
 - **Güvenlik bilgileri güncelleştirmeleri için**: İstemci olaylarının en son güncel raporlar için alındığı saat ("İmza Yenileme zamanı"), Güvenlik Zekası Yayımlama Zamanı ve istemciden iletilen son güncel durum
@@ -327,7 +330,9 @@ Yukarıda belirtilen terimler hakkında daha fazla bilgi için şu bölüme bak�
 >*Şu anda güncel raporlama yalnızca Windows cihazları için kullanılabilir. Mac ve Linux gibi platformlar arası cihazlar "kullanılabilir veri yok" altında listelenir
 >
 
-##### <a name="up-to-date-examples"></a>Güncel örnekler
+##### <a name="up-to-date-definitions"></a>Güncel tanımlar
+
+Altyapı ve platform için güncel tanımlar aşağıdadır:
 
 | Cihazdaki motor/platform dikkate alınır: | Eğer: |
 |:---|:---|
@@ -335,7 +340,11 @@ Yukarıda belirtilen terimler hakkında daha fazla bilgi için şu bölüme bak�
 | **Güncel** | cihaz, son 7 gün içinde Defender rapor olayıyla ('İmza yenileme süresi') iletişim kurar ve son 7 gün içinde güvenlik zekası yayımlama süresine sahiptir ancak Altyapı veya Platform sürümü derleme süresi 60 günden eskidir. |
 | **bilinmiyor (kullanılabilir veri yok)** | cihaz 7 günden uzun süredir rapor olayıyla ('İmza yenileme süresi') iletişim kurmadı veya güvenlik bilgileri yayımlama süresi 7 günden uzundur. |
 
-**Güvenlik bilgileri güncelleştirmesi güncel olarak kabul edilir** Cihazdaki güvenlik bilgileri sürümü son 7 gün içinde yazılmışsa ve cihaz son 7 gün içinde rapor olayıyla iletişim kurmuşsa
+Güvenlik zekası için güncel tanımlar aşağıdadır:
+
+| Güvenlik bilgileri güncelleştirmesi dikkate alınır | Eğer: |
+|:---|:---|
+|Güncel | cihazdaki güvenlik bilgileri sürümü son 7 gün içinde yazılmıştır ve cihaz son 7 gün içinde rapor olayıyla iletişim kurar. |
 
 Bunlar hakkında daha fazla bilgi için bkz:
 
@@ -353,7 +362,7 @@ Aşağıdaki tabloda **Virüsten Koruma Altyapısı** için güncel raporlar iç
 
 | Olayın Son Yenileme Zamanı (raporlarda "İmza Yenileme Zamanı" olarak da bilinir) | Güvenlik Zekası Yayımlama Zamanı | _Bildirilen Durum_: |
 |:----|:----|:----|
-| < 7 gün (yeni) | < 7 gün (yeni) | _Güncel/ Güncel Değil/ Bilinmiyor (istemcinin bildirmiş olduğu her şey)_ |
+| < 7 gün (yeni) | < 7 gün (yeni) | _Güncel Olmayan <br/> Bilinmeyen (istemci raporları ne olursa olsun) güncel <br/> değil_ |
 | > 7 gün (eski) | > 7 gün (eski) | _Unknown_ |
 | < 7 gün (yeni) | > 7 gün (eski) | _Unknown_ |
 | > 7 gün (eski) | < 7 gün (yeni) | _Unknown_ |
@@ -370,7 +379,7 @@ Aşağıdaki tabloda **Virüsten Koruma Platformu** için olası güncel rapor d
 
 | Olayın Son Yenileme Zamanı (raporlarda "İmza Yenileme Zamanı" olarak da bilinir) | Güvenlik Zekası Yayımlama Zamanı | _Bildirilen Durum_: |
 |:----|:----|:----|
-| < 7 gün (yeni) | < 7 gün (yeni) | _Güncel/ Güncel Değil/ Bilinmiyor (istemcinin bildirmiş olduğu her şey)_ |
+| < 7 gün (yeni) | < 7 gün (yeni) | _Güncel Olmayan <br/> Bilinmeyen (istemci raporları ne olursa olsun) güncel <br/> değil_ |
 | > 7 gün (eski) | > 7 gün (eski) | _Unknown_ |
 | < 7 gün (yeni) | > 7 gün (eski) | _Unknown_ |
 | > 7 gün (eski) | < 7 gün (yeni) | _Unknown_ |
@@ -385,16 +394,16 @@ Bu kart, güncel ve güncel olmayan güvenlik bilgileri sürümlerine sahip ciha
 
 Aşağıdaki tabloda **Güvenlik Bilgileri** güncelleştirmeleri için olası güncel rapor değerleri yer alır. Bildirilen değerler raporlama olayının son alındığı zamanı ve güvenlik zekası yayımlama süresini temel alır.
 
-| Olayın Son Yenileme Zamanı (raporlarda "İmza Yenileme Zamanı" olarak da bilinir) | Güvenlik Zekası Yayımlama Zamanı | _Bildirilen Durum_: |
-|:----|:----|:----|
+| Olayın Son Yenileme Zamanı <br/> (raporlarda "İmza Yenileme Zamanı" olarak da bilinir) | Güvenlik Zekası Yayımlama Zamanı | İstemciden alınan son durum | _Bildirilen Durum_: |
+|:----|:----|:----|:----|
 | >7 gün (eski) | >7 gün (eski) | Modern | _Unknown_ |
 | <7 gün (yeni) | >7 gün (eski) | Modern | _Unknown_ |
 | >7 gün (eski) | <7 gün (yeni) | Modern |  _Unknown_ |
 | <7 gün (yeni) | <7 gün (yeni) | Unknown | _Unknown_|
 | <7 gün (yeni) | <7 gün (yeni) | Modern | _Modern_ |
-| >7 gün (eski) | <7 gün (yeni) | Güncel değil | _Güncel Değil_ |
-| >7 gün (eski) | >7 gün (eski) | Güncel değil | _Güncel Değil_ |
-| <7 gün (yeni) | >7 gün (eski) | Güncel Değil | _Güncel Değil_ |
+| >7 gün (eski) | <7 gün (yeni) | Güncel değil | _Güncel değil_ |
+| >7 gün (eski) | >7 gün (eski) | Güncel değil | _Güncel değil_ |
+| <7 gün (yeni) | >7 gün (eski) | Güncel değil | _Güncel değil_ |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

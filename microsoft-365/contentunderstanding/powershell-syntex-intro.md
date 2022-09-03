@@ -6,19 +6,19 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
 description: PowerShell ile SharePoint Syntex yönetmeyi öğrenin.
-ms.openlocfilehash: 5a0efa3a67ad6366c6160dc58a46bb1559345b9d
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 6067c8f892581a3b89ff5939b21ea10a4bf15b0c
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599199"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584948"
 ---
 # <a name="manage-sharepoint-syntex-by-using-powershell"></a>PowerShell kullanarak SharePoint Syntex yönetme
 

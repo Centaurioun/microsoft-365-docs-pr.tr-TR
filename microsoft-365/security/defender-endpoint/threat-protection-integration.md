@@ -3,7 +3,7 @@ title: Uç Nokta için Microsoft Defender diğer Microsoft çözümleriyle tüml
 description: Uç Nokta için Microsoft Defender Kimlik için Microsoft Defender ve Bulut için Microsoft Defender dahil olmak üzere diğer Microsoft çözümleriyle nasıl tümleştireceğinizi öğrenin.
 author: mjcaparas
 ms.author: macapara
-ms.prod: m365-security
+ms.service: microsoft-365-security
 keywords: microsoft 365 defender, koşullu erişim, office, Uç Nokta için Microsoft Defender, kimlik için microsoft defender, Office için Microsoft Defender, Bulut için Microsoft Defender, microsoft bulut uygulaması güvenliği, azure sentinel
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 24244fa9b0cbb9ed452c8b09b6a108055ac6f770
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mde
+ms.openlocfilehash: 62a822e64ef739c4d2e81103b5627d9f1259e712
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489436"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586258"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Uç Nokta için Microsoft Defender ve diğer Microsoft çözümleri
 
@@ -30,7 +30,7 @@ ms.locfileid: "66489436"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="integrate-with-other-microsoft-solutions"></a>Diğer Microsoft çözümleriyle tümleştirme
 

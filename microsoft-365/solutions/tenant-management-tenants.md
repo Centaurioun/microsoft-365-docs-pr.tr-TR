@@ -1,11 +1,11 @@
 ---
-title: Adım 1. Kurumsal Microsoft 365 için veritabanınız
+title: Adım 1. Kurumsal kiracılar için Microsoft 365 kiracınız
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -15,145 +15,145 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - Ent_Solutions
-description: Birden çok coğrafi konum ve Microsoft 365 seçenekleriyle birden çok kiracıyı dağıtın ve yönetin.
-ms.openlocfilehash: 305d7683413d5682c0dddda418e87de0a0a682b7
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+description: Çoklu coğrafi ve hareketli konum seçenekleriyle tek veya birden çok Microsoft 365 kiracısını dağıtın ve yönetin.
+ms.openlocfilehash: 39f7a2d4fb8f41366d5e18b6e95b15aaf81a7931
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "63027593"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585014"
 ---
-# <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>Adım 1. Kurumsal Microsoft 365 için veritabanınız
+# <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>Adım 1. Kurumsal kiracılar için Microsoft 365 kiracınız
 
-Kiracıyla ilgili ilk kararlardan biri, bu kararların kaç tane olduğudır. Her Microsoft 365 kiracı farklı, benzersiz ve diğer tüm kiracılardan Microsoft 365 olur. Buna karşılık gelen Azure AD kiracısı da diğer tüm kiracılardan ayrı, Microsoft 365 vardır.
+İlk kiracı kararlarınızdan biri kaç tane olmasıdır. Her Microsoft 365 kiracısı ayrı, benzersiz ve diğer tüm Microsoft 365 kiracılarından ayrıdır. Buna karşılık gelen Azure AD kiracısı da ayrı, benzersiz ve diğer tüm Microsoft 365 kiracılarından ayrıdır.
 
 ## <a name="single-tenant"></a>Tek kiracı
-Tek bir kiracıya sahip olmak, tek kiracı kullanımınızı birçok açıdan basit Microsoft 365. Tek bir kiracı, tek bir hesap, grup ve ilke kümesi olan tek bir Azure AD kiracısı anlamına gelir. Bu merkezi kimlik sağlayıcısı aracılığıyla, kuruluş genelinde izinler ve kaynak paylaşımı yapılabilir.
+Tek bir kiracıya sahip olmak, kuruluşunuzun Microsoft 365'i kullanmasının birçok yönünü basitleştirir. Tek bir kiracı, tek bir hesap, grup ve ilke kümesine sahip tek bir Azure AD kiracı anlamına gelir. Kuruluşunuz genelindeki kaynakların izinleri ve paylaşımı bu merkezi kimlik sağlayıcısı aracılığıyla gerçekleştirilebilir.
 
-Tek bir kiracı, kullanıcılarınız için en zengin özellik ve basitleştirilmiş işbirliği ve üretkenlik deneyimini sağlar.
+Tek bir kiracı, kullanıcılarınız için en zengin ve basitleştirilmiş işbirliği ve üretkenlik deneyimini sağlar.
 
-Burada, bir kiracının varsayılan konumunu ve Azure AD kiracısı'Microsoft 365 örneği ve ardından bir Microsoft 365 ve ve bir örnek 2013'Microsoft 365 tıklayın.
+Microsoft 365 kiracısının varsayılan konumunu ve Azure AD kiracısını gösteren bir örnek aşağıda verilmiştir.
 
-![Azure AD Microsoft 365 tek bir kiracı.](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![Azure AD kiracısı olan tek bir Microsoft 365 kiracısı.](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 ## <a name="multiple-tenants"></a>Birden çok kiracı
 
-Kuruluşta birden çok kiracıya sahip nedenleri olabilir:
+Kuruluşunuzun birden çok kiracıya sahip olmasının birçok nedeni vardır:
 
-- Yönetime yalıtma
-- 1. Yer: 12.000'
-- Geçmiş kararlar
-- Şirket birleşmeleri, alımlar veya şirket birleşmeleri
-- Diğer kuruluşlar için markalama konusunda net ayrım
+- Yönetim yalıtımı
+- Merkezi olmayan BT
+- Geçmişe dönük kararlar
+- Birleştirmeler, devralmalar veya dalgıçlar
+- Holding kuruluşları için markalamanın net bir şekilde ayrılması
 - Üretim öncesi, test veya korumalı alan kiracıları
 
-Burada, aynı varsayılan veri merkezinde coğrafi olarak iki kiracısı (Kiracı A ve Kiracı B) olan bir kuruluş örneği ve almaktadır. Her kiracı ayrı bir Azure AD kiracısı olarak.
+Burada, aynı varsayılan veri merkezi coğrafi alanında iki kiracısı (A Kiracısı ve B Kiracısı) olan bir kuruluş örneği verilmiştir. Her kiracı ayrı bir Azure AD kiracısı olarak.
 
-![Kendi Microsoft 365 Azure AD kiracıları olan birden çok kiracı.](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
+![Kendi Azure AD kiracıları olan birden çok Microsoft 365 kiracısı.](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
 
-Birden çok kiracınız varsa, bunları yönetme ve kullanıcılarınıza hizmet sağlama konusunda kısıtlamalar ve dikkate alınması gereken başka noktalar vardır.
+Birden çok kiracınız olduğunda, bunları yönetirken ve kullanıcılarınıza hizmet sağlarken kısıtlamalar ve ek dikkat edilmesi gerekenler vardır.
 
 ### <a name="inter-tenant-collaboration"></a>Kiracılar arası işbirliği
 
-Kullanıcılarının güvenli bir şekilde farklı Microsoft 365 kiracılarında daha etkili bir şekilde işbirliği yapmalarını sağlamak için, dosyalar ve konuşmalar için merkezi bir konum kullanma, takvimleri paylaşma, iletişim için IM, sesli/görüntülü aramalar kullanma ve kaynaklarla uygulamalara erişimi güvenlik altına alma seçenekleri yer almaktadır.
+Kullanıcılarınızın farklı Microsoft 365 kiracılarında güvenli bir şekilde daha etkili bir şekilde işbirliği yapmalarını istiyorsanız, kiracılar arası işbirliği seçenekleri arasında dosyalar ve konuşmalar için merkezi bir konum kullanma, takvimleri paylaşma, anlık ileti kullanma, iletişim için sesli/görüntülü aramalar kullanma ve kaynaklara ve uygulamalara erişimin güvenliğini sağlama yer alır.
 
-Daha fazla bilgi için bkz [Microsoft 365 kiracılar arası işbirliği.](../enterprise/microsoft-365-inter-tenant-collaboration.md)
+Daha fazla bilgi için bkz. [Microsoft 365 kiracılar arası işbirliği](../enterprise/microsoft-365-inter-tenant-collaboration.md).
 
 ### <a name="cross-tenant-mailbox-migration-preview"></a>Kiracılar arası posta kutusu geçişi (önizleme)
 
-Kiracılar arası posta kutusu geçişi öncesinde (önizlemede), Exchange Online posta kutularını kiracılar arasında taşımadan önce, kullanıcı posta kutusunu geçerli kiracıdan (kaynak kiracı) şirket içinde tamamen çıkartırın ve sonra bu posta kutusunu yeni bir kiracıya (hedef kiracı) alın. Yeni kiracılar arası posta kutusu geçiş özelliğiyle, hem kaynak hem de hedef kiracılar için kiracı yöneticileri, şirket içi sistemlerinde en düşük altyapı bağımlılıkları olan kiracılar arasında posta kutularını hareket ettirebilirsiniz. Bu işlem, alan dışı posta kutuları ve ekleme ihtiyacı ortadan kaldırır.
+Kiracılar arası posta kutusu geçişi öncesinde (önizlemede), kiracılar arasında Exchange Online posta kutularını taşırken, bir kullanıcı posta kutusunu geçerli kiracısından (kaynak kiracı) şirket içi ortamına tamamen çıkarmanız ve sonra bunları yeni bir kiracıya (hedef kiracı) eklemeniz gerekir. Yeni kiracılar arası posta kutusu geçiş özelliğiyle, hem kaynak hem de hedef kiracılardaki kiracı yöneticileri, şirket içi sistemlerinde en az altyapı bağımlılığı olan kiracılar arasında posta kutularını taşıyabilir. Bu, posta kutularının kullanıma dışı ve ekleme gereksinimini ortadan kaldırır.
 
-Kiracılar arası posta kutusu geçişi öncesinde iki örnek kiracı ve onların posta kutuları burada ve ve daha sonra bu kiracıların posta kutuları yer almaktadır.
+Aşağıda, kiracılar arası posta kutusu geçişi öncesinde iki örnek kiracı ve bunların posta kutuları verilmiştir.
 
-![Birden Microsoft 365 kiracıları ve onların posta kutuları.](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
+![Birden çok Microsoft 365 kiracısı ve posta kutuları.](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
 
-Bu çizimde, iki ayrı kiracının kendi etki alanları ve posta kutuları Exchange vardır.
+Bu çizimde, iki ayrı kiracının kendi etki alanları ve Exchange posta kutuları kümesi vardır.
 
-Kiracılar arası posta kutusu geçişi sonrasında hedef kiracı (Kiracı A) buradadır.
+Kiracılar arası posta kutusu geçişi sonrasında hedef kiracı (Kiracı A) aşağıdadır.
 
-![Kiracılar arası posta kutusu geçişini sonrasında hedef kiracı.](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-after.png)
+![Kiracılar arası posta kutusu geçişi sonrasında hedef kiracı.](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-after.png)
 
-Bu çizimde, tek bir kiracının hem etki alanları hem de her iki grup Exchange vardır.
+Bu çizimde, tek bir kiracının hem etki alanları hem de exchange posta kutusu kümeleri vardır.
 
-Daha fazla bilgi için bkz [. Kiracılar arası posta kutusu geçişi](../enterprise/cross-tenant-mailbox-migration.md).
+Daha fazla bilgi için bkz. [Kiracılar arası posta kutusu geçişi](../enterprise/cross-tenant-mailbox-migration.md).
 
 ### <a name="tenant-to-tenant-migrations"></a>Kiracıdan kiracıya geçişler
 
-Birleşmeler, alımlar, ayrımlar ve mevcut bir Microsoft 365 kiracıyı yeni bir kiracıya geçirmeniz için size yol açmayacak diğer senaryolar için çeşitli mimari yaklaşımlar vardır. 
+Var olan bir Microsoft 365 kiracısını yeni bir kiracıya geçirmenize yol açabilecek birleştirmeler, devralmalar, dalgıçlar ve diğer senaryolar için çeşitli mimari yaklaşımlar vardır. 
 
-Ayrıntılı bilgi için bkz [Microsoft 365 kiracıdan kiracıya geçişleri taşıma](../enterprise/microsoft-365-tenant-to-tenant-migrations.md).
+Ayrıntılı yönergeler için bkz. [Microsoft 365 kiracıdan kiracıya geçişler](../enterprise/microsoft-365-tenant-to-tenant-migrations.md).
 
 ## <a name="multi-geo-for-a-tenant"></a>Kiracı için Multi-Geo
 
-Microsoft 365 Multi-Geo ile, veri yerleşim gereksinimlerini karşılamayı seçtiğiniz diğer veri merkezi coğrafi konumlarında verilerin sağlanmasına ve depo gereksinimlerinin sağlanmasına ve aynı zamanda çalışanlarınıza küresel modern üretkenlik deneyimlerinin global olarak sağlanmasına olanak sunun.
+Microsoft 365 Multi-Geo ile veri yerleşimi gereksinimlerini karşılamak için seçtiğiniz diğer veri merkezi coğrafi konumlarında bekleyen verileri sağlayabilir ve depolayabilir ve aynı zamanda çalışanlarınıza modern üretkenlik deneyimlerinin küresel sunumunu sağlayabilirsiniz.
 
-Multi-Geo ortamında, Microsoft 365 kiracınız Microsoft 365 aboneliğinizin ilk olarak oluşturulmuş olduğu varsayılan veya merkezi bir konumdan ve bir veya birden çok uydu konumdan oluşur. Çok coğrafi kiracıda, coğrafi konumlar, gruplar ve kullanıcı bilgileriyle ilgili bilgiler genel Azure AD kiracılarında ustalık sahibi olur. Kiracı bilginiz merkezi bir konumda hakimdir ve her coğrafi konumla eşitlenmiş olduğundan, şirketiniz dahil herkes tarafından yapılan işbirliği deneyimleri konumlar arasında paylaşılır.
+Multi-Geo ortamında Microsoft 365 kiracınız, Microsoft 365 aboneliğinizin ilk oluşturulduğu varsayılan veya merkezi bir konumdan ve bir veya daha fazla uydu konumundan oluşur. Çok coğrafi kiracılı bir kiracıda, coğrafi konumlar, gruplar ve kullanıcı bilgileri hakkındaki bilgiler genel Azure AD kiracısında ana şablon olarak yer alır. Kiracı bilgileriniz merkezi olarak yönetildiğinden ve her coğrafi konuma eşitlendiğinden, şirketinizden herhangi bir kişiyi içeren işbirliği deneyimleri konumlar arasında paylaşılır.
 
-Burada, Avrupa'da varsayılan konumu olan bir kuruluş ve Kuzey Amerika'da bir uydu konumu olan bir örnek vemektedir. Her iki konum da tek bir kiracı için aynı genel Azure AD Microsoft 365 paylaşır.
+Burada, Avrupa'da varsayılan konumuna ve Kuzey Amerika uydu konumuna sahip bir kuruluş örneği verilmiştir. Her iki konum da tek Bir Microsoft 365 kiracısı için aynı genel Azure AD kiracısını paylaşır.
 
-![Multi-geo Microsoft 365 örneği.](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
+![Çok coğrafi microsoft 365 kiracısı örneği.](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 
-Daha fazla bilgi için bkz[. Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md).
+Daha fazla bilgi için bkz. [Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md).
 
-## <a name="moving-core-data-to-a-new-datacenter-geo"></a>Temel verileri yeni bir veri merkezi coğrafi olarak taşıma
+## <a name="moving-core-data-to-a-new-datacenter-geo"></a>Çekirdek verileri yeni bir veri merkezi coğrafi konumuna taşıma
 
-Microsoft, yeni veri merkezi coğrafi verilerini Microsoft 365 devam ediyor. Bu yeni veri merkezi, sürekli müşteri talebi ve kullanım büyümemizi desteklemek için kapasite ve bilgi işlem kaynakları ekler. Buna ek olarak, yeni veri merkezi coğrafi konum, çekirdek müşteri verileri için coğrafi olarak yer sağlar.
+Microsoft, Microsoft 365 hizmetleri için yeni veri merkezi coğrafi bölgelerini açmaya devam ediyor. Bu yeni veri merkezi coğrafi alanları, devam eden müşteri talebimizi ve kullanım büyümemizi desteklemek için kapasite ve işlem kaynakları ekler. Ayrıca yeni veri merkezi coğrafi bölgeleri, temel müşteri verileri için coğrafi veri yerleşimi sunar.
 
-Yeni bir veri merkezi açmak sizi ve zaten var olan bir veri merkezinde depolanan çekirdek verilerinizi coğrafi olarak etkilemese de Microsoft, geri kalan temel müşteri verilerini yeni bir veri merkezi coğrafi olarak erken geçiş isteğinde bulundurmanıza olanak sağlar.
+Yeni bir veri merkezi coğrafi alanının açılması sizi ve mevcut bir veri merkezi coğrafi alanında depolanan temel verilerinizi etkilemez ancak Microsoft, bekleyen kuruluşunuzun temel müşteri verilerinin yeni bir veri merkezi coğrafi alanına erken geçişini istemenizi sağlar.
 
-Bu örnekte, bir Microsoft 365 kiracı Avrupa Birliği (AB) veri merkezinden Birleşik Krallık'ta (İngiltere) bulunana coğrafi olarak taşınmıştır.
+Burada, bir Microsoft 365 kiracısının Avrupa Birliği (AB) veri merkezi coğrafi bölgesinden Birleşik Krallık'ta (Birleşik Krallık) bulunan coğrafi bölgeye taşındığı bir örnek verilmiştir.
 
-![Veri merkezi coğrafi Microsoft 365 bir kiracı taşıma örneği.](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
+![Microsoft 365 kiracısının veri merkezi coğrafi bölgeleri arasında taşınması örneği.](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
 
-Daha fazla bilgi için bkz[. Temel verileri yeni veri Microsoft 365 coğrafilere taşıma](../enterprise/moving-data-to-new-datacenter-geos.md).
+Daha fazla bilgi için bkz [. Temel verileri yeni Microsoft 365 veri merkezi coğrafi bölgelerine taşıma](../enterprise/moving-data-to-new-datacenter-geos.md).
 
 ## <a name="products-and-licenses-for-a-tenant"></a>Kiracı için ürünler ve lisanslar
 
-Kiracınız Microsoft 365 satın aldığınız zaman oluşturulur (örneğin, kiracınız Microsoft 365 E3. Ürünle birlikte, aylık veya yıllık ücret tahsil olan lisanslar da vardır. Ardından bir yönetici, ürünlerinizin biri üzerinden, doğrudan veya grup üyeliği aracılığıyla bir kullanıcı hesabına kullanılabilir bir lisans atar. Kuruluşlarının iş gereksinimlerine bağlı olarak, her biri kendi lisans havuzlarına sahip bir ürün kümeniz olabilir. 
+microsoft 365 kiracınız, Microsoft 365 E3 gibi ilk ürününüzü satın aldığınızda oluşturulur. Ürünle birlikte aylık veya yıllık ücret tahsil edilen lisanslar da vardır. Ardından bir yönetici, ürünlerinizden birinden kullanıcı hesabına doğrudan veya grup üyeliği aracılığıyla kullanılabilir bir lisans atar. Kuruluşunuzun iş gereksinimlerine bağlı olarak, her biri kendi lisans havuzuna sahip bir ürün kümeniz olabilir. 
 
-Ürün kümelerini ve lisans sayısını belirlemek için bazı planlamalar yapmak gerekir:
+Ürün kümesini ve her biri için lisans sayısını belirlemek için bazı planlamalar yapılması gerekir:
 
-- Gelişmiş özelliklere ihtiyaç olan kullanıcı hesapları için yeterli lisansa sahip olduğundan emin olun.
-- Kurum kurum personelinde yapılan değişikliklere bağlı olarak lisansları çalışmamanızı veya çok fazla atanmamış lisans sahibi kalmanızı engelin.
+- Gelişmiş özelliklere ihtiyaç duyan kullanıcı hesapları için yeterli lisansa sahip olduğunuzdan emin olun.
+- Kuruluşunuzdaki personel değişikliklerine bağlı olarak lisanslarınızın bitmesini veya çok fazla atanmamış lisansa sahip olmanıza engel olur.
 
 
-## <a name="results-of-step-1"></a>Adım 1'in sonuçları
+## <a name="results-of-step-1"></a>1. Adımın Sonuçları
 
-Kurumsal kiracılar Microsoft 365 için kararlarınızı şu şekilde belirlediniz:
+Kurumsal kiracılar için Microsoft 365 kiracılarınız için şunları belirlediniz:
 
-- Kaç kiracınız var veya buna ihtiyacınız var.
-- Her kiracı için, hangi ürün ve lisansların satın alımı gerekir.
-- Veri ikamet gereksinimlerini karşılamak için kiracının Multi-Geo olması gerekip gerekip gerek olmadığı.
-- Kiracılar arası işbirliğini ayarlamanız gerekip gerekip gerek olmadığı.
-- Bir kiracıyı diğerine geçirmeniz gerekip gerekip gerek olmadığı.
-- Temel verileri bir veri merkezinden coğrafi olarak yeni bir veri merkezine taşımaya gerek olup olmadığı.
+- Kaç kiracınız olduğunu veya ihtiyacınız olduğunu.
+- Her kiracı için, satın alınması gereken ürünler ve lisanslar.
+- Veri yerleşimi gereksinimlerine uymak için kiracının Multi-Geo olması gerekip gerekmediği.
+- Kiracılar arası işbirliğini ayarlamanız gerekip gerekmediği.
+- Bir kiracıyı diğerine geçirmeniz gerekip gerekmediği.
+- Çekirdek verileri bir veri merkezi coğrafi alanından yenisine taşımanız gerekip gerekmediği.
 
-Yeni bir kiracı örneği burada ve açık bir şekilde ve şekilde açık ve açık bir
+Burada yeni bir kiracı örneği verilmiştir.
 
 ![Yeni kiracı örneği.](../media/tenant-management-overview/tenant-management-tenant-build-step1.png)
 
-Bu çizimde, kiracının sahip olduğu:
+Bu çizimde kiracının şunları vardır:
 
-- Veri merkezi coğrafi olarak Microsoft 365 varsayılan konum.
-- Ürün ve lisans kümesi.
-- Bazıları ürünlere özel bulut üretkenlik uygulamaları kümesidir.
+- Microsoft 365 veri merkezi coğrafi konumuna karşılık gelen varsayılan konum.
+- Bir dizi ürün ve lisans.
+- Bazıları ürünlere özgü bulut üretkenlik uygulamaları kümesi.
 - Genel yönetici hesaplarını ve ilk DNS etki alanı adını içeren bir Azure AD kiracısı.
 
-Bu çözümün ek adımlarını ilerlerken bu şekilde bir adım atacağız.
+Bu çözümün ek adımlarını ilerlerken bu rakamı oluşturacağız.
 
 ## <a name="ongoing-maintenance-for-tenants"></a>Kiracılar için sürekli bakım
 
-Sürekli olarak şunları yapmak zorundayabilirsiniz:
+Sürekli olarak şunları yapmanız gerekebilir:
 
-- Yeni kiracı ekleyin.
-- Kiracıya, başlangıç lisans sayısına sahip yeni ürünler ekleyin.
-- Kiracıda bir ürünün lisans kümelerini değiştirerek personel gereksinimlerini değiştirebilirsiniz.
-- Temel verilerinizi kiracıdan yeni bir veri merkezi coğrafi konuma taşıma.
-- Veri ikamet gereksinimleri için Multi-Geo ekleyin.
-- Kiracılar arası işbirliğini ayarlayın.
+- Yeni bir kiracı ekleyin.
+- Kiracıya ilk lisans sayısıyla yeni ürünler ekleyin.
+- Değişen personel gereksinimlerini ayarlamak için kiracıdaki bir ürünün lisans kümesini değiştirin.
+- Temel verilerinizi bir kiracıdan yeni bir veri merkezi coğrafi konumuna taşıyın.
+- Veri yerleşimi gereksinimleri için Multi-Geo ekleyin.
+- Kiracılar arası işbirliğini ayarlama.
 
 ## <a name="next-step"></a>Sonraki adım
 
-[![2. Adım. Kiracınızı erişim için ağ için en iyi duruma getirme.](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
+[![2. Adım. Erişim için kiracınızı ağ için iyileştirin.](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
 
-Çalışanlardan [bulut](tenant-management-networking.md) hizmetlerini en iyi şekilde sunmak için ağ Microsoft 365 devam edin.
+Çalışanlarınızdan Microsoft 365 bulut hizmetlerine en uygun ağı sağlamak için [ağ](tenant-management-networking.md) iletişimi ile devam edin.

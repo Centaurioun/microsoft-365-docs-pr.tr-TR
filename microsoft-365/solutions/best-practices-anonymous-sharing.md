@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Bu makalede, kimliği doğrulanmamış kullanıcılarla dosya ve klasör paylaşmaya yönelik en iyi yöntemler hakkında bilgi edineceksiniz.
-ms.openlocfilehash: 783dfce365b34b694f048c7e65e3158678bea244
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bf2ae411d4ff396152b8f643455e2e6d82cedf26
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017996"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581389"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Kimliği doğrulanmamış kullanıcılarla dosya ve klasör paylaşmaya yönelik en iyi yöntemler
 
@@ -45,17 +45,17 @@ Kuruluş genelindeki Herkes bağlantıları için son kullanma tarihi ayarlamak 
 
 1. SharePoint yönetim merkezini açın, **İlkeler'i** genişletin ve <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**paylaşım'ı**</a> seçin.
 1. **Herkes bağlantıları için süre sonu ve izin seçeneklerini seçin** altında **, Bu bağlantıların süresi bu kadar gün içinde dolmalıdır** onay kutusunu seçin.</br>
-   ![Kuruluş düzeyinde Herkes bağlantısı süre sonu ayarlarının SharePoint ekran görüntüsü.](../media/sharepoint-organization-anyone-link-expiration.png)
+   ![SharePoint kuruluş düzeyinde Herkes bağlantısı süre sonu ayarlarının ekran görüntüsü.](../media/sharepoint-organization-anyone-link-expiration.png)
 1. Kutuya gün sayısı yazın ve **Kaydet'e** tıklayın.
 
 Süre sonu süresini değiştirirseniz, yeni ayar daha uzunsa mevcut bağlantılar geçerli süre sonu süresini tutar veya yeni ayar daha kısaysa yeni ayara güncelleştirilir.
 
 Belirli bir sitedeki Herkes bağlantıları için son kullanma tarihi ayarlamak için
 
-1. SharePoint yönetim merkezini açın, **Siteler'i** genişletin ve <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**ardından Etkin siteler'i**</a> seçin.
+1. SharePoint yönetim merkezini açın, **Siteler'i** genişletin ve <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**etkin siteler'i**</a> seçin.
 1. Değiştirmek istediğiniz siteyi ve ardından **Paylaşım'ı** seçin.
 1. **Herkes bağlantıları için Gelişmiş ayarlar'ın** altında, **Herkes bağlantılarının Süre Sonu'nun** altında **Kuruluş düzeyi ayarıyla aynı** onay kutusunu temizleyin.</br>
-   ![Site düzeyinde Herkes bağlantısı süre sonu ayarlarını SharePoint ekran görüntüsü.](../media/sharepoint-organization-anyone-link-expiration-site.png)
+   ![SharePoint site düzeyi Herkes bağlantısı süre sonu ayarlarının ekran görüntüsü.](../media/sharepoint-organization-anyone-link-expiration-site.png)
 1. **Bu bağlantıların süresi bu kadar gün içinde dolmalıdır** seçeneğini belirleyin ve kutuya birkaç gün yazın.
 1. **Kaydet**'i seçin.
 
@@ -77,7 +77,7 @@ Kuruluş genelindeKim bağlantılar için izinleri ayarlamak için
 
 1. SharePoint yönetim merkezini açın ve <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Paylaşım'ı**</a> seçin.
 1. **"Herkes" bağlantıları için gelişmiş ayarlar'ın** altında, kullanmak istediğiniz dosya ve klasör izinlerini seçin.</br>
-   ![Kuruluş düzeyindeki Herkes bağlantısı izin ayarlarının SharePoint ekran görüntüsü.](../media/sharepoint-organization-anyone-link-permissions.png)
+   ![SharePoint kuruluş düzeyinde Herkes bağlantısı izin ayarlarının ekran görüntüsü.](../media/sharepoint-organization-anyone-link-permissions.png)
 
 *Herkes* bağlantıları **Görüntüle** olarak ayarlandığında, kullanıcılar dosya ve klasörleri konuklarla paylaşmaya ve *Belirli kişiler* bağlantılarını kullanarak düzenleme izinleri vermeye devam edebilir. Bu bağlantılar, kuruluşunuz dışındaki kişilerin konuk olarak kimlik doğrulamasını gerektirir ve bu bağlantılarla paylaşılan dosya ve klasörlerdeki konuk etkinliğini izleyebilir ve denetleyebilirsiniz.
 
@@ -98,17 +98,17 @@ Kuruluş için varsayılan dosya ve klasör paylaşım bağlantısını ayarlama
 
 Belirli bir site için varsayılan dosya ve klasör paylaşım bağlantısını ayarlamak için:
 
-1. SharePoint yönetim merkezini açın, **Siteler'i** genişletin ve <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**ardından Etkin siteler'i**</a> seçin.
+1. SharePoint yönetim merkezini açın, **Siteler'i** genişletin ve <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**etkin siteler'i**</a> seçin.
 1. Değiştirmek istediğiniz siteyi ve ardından **Paylaşım'ı** seçin.
 1. **Varsayılan paylaşım bağlantı türü'nün** altında **Kuruluş düzeyi ayarıyla aynı** onay kutusunu temizleyin.
 
-   ![Site düzeyinde varsayılan bağlantı türü ayarlarını SharePoint ekran görüntüsü.](../media/sharepoint-organization-anyone-link-permissions-site.png)
+   ![SharePoint site düzeyi varsayılan bağlantı türü ayarlarının ekran görüntüsü.](../media/sharepoint-organization-anyone-link-permissions-site.png)
 
 1. **Yalnızca kuruluşunuzdaki kişiler** seçeneğini ve ardından **Kaydet'i** seçin.
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>Hassas içeriğin kimliği doğrulanmamış olarak paylaşılmasını engelleme
 
-Hassas içeriğin kimliği doğrulanmamış şekilde paylaşılmasını önlemek için [Microsoft Purview Veri Kaybı Önleme'yi (DLP)](../compliance/dlp-learn-about-dlp.md) kullanabilirsiniz. Veri kaybı önleme, dosyanın duyarlılık etiketine, bekletme etiketine veya dosyanın kendisindeki hassas bilgilere göre işlem yapabilir.
+Hassas içeriğin kimliği doğrulanmamış paylaşımını önlemek için [Microsoft Purview Veri Kaybı Önleme (DLP)](../compliance/dlp-learn-about-dlp.md) kullanabilirsiniz. Veri kaybı önleme, dosyanın duyarlılık etiketine, bekletme etiketine veya dosyanın kendisindeki hassas bilgilere göre işlem yapabilir.
 
 DLP kuralı oluşturmak için:
 
@@ -116,7 +116,7 @@ DLP kuralı oluşturmak için:
 2. **İlke oluştur'a** tıklayın.
 3. **Özel'i** seçin ve **İleri'ye** tıklayın.
 4. İlke için bir ad yazın ve **İleri'ye** tıklayın.
-5. **İlkenin uygulanacağı konumlar** sayfasında **, SharePoint siteler** ve **OneDrive hesapları** dışındaki tüm ayarları kapatın ve ardından **İleri'ye** tıklayın.
+5. **İlkenin uygulanacağı konumlar** sayfasında **, SharePoint siteleri** ve **OneDrive hesapları** dışındaki tüm ayarları kapatın ve **ardından İleri'ye** tıklayın.
 6. **İlke ayarlarını tanımla** sayfasında **İleri'ye** tıklayın.
 7. **Gelişmiş DLP kurallarını özelleştir** sayfasında **Kural oluştur'a** tıklayın ve kural için bir ad yazın.
 8. **Koşullar'ın** altında **Koşul ekle'ye** tıklayın ve **İçerik içerir'i** seçin.
@@ -124,8 +124,8 @@ DLP kuralı oluşturmak için:
 
    ![Koşul seçeneklerinin, hassas bilgi türlerinin, duyarlılık etiketlerinin ve bekletme etiketlerinin ekran görüntüsü.](../media/limit-accidental-exposure-dlp-conditions.png)
 
-10. **Eylemler'in** altında **Eylem ekle'ye** tıklayın ve **Erişimi kısıtla veya Microsoft 365 konumlardaki içeriği şifrele'yi** seçin.
-11. **Erişimi kısıtla veya Microsoft 365 konumlardaki içeriği şifrele** onay kutusunu seçin ve ardından **"Bağlantıya sahip herkes" seçenekleri aracılığıyla yalnızca içeriğe erişim verilmiş kişiler** seçeneğini belirleyin.
+10. **Eylemler'in** altında **Eylem ekle'ye** tıklayın ve **Erişimi kısıtla veya Microsoft 365 konumlarındaki içeriği şifrele'yi** seçin.
+11. **Erişimi kısıtla veya Microsoft 365 konumlarındaki içeriği şifrele** onay kutusunu seçin ve ardından **"Bağlantıya sahip herkes" seçenekleri aracılığıyla yalnızca içeriğe erişim izni verilen kişiler** seçeneğini belirleyin.
 
       ![DLP kuralı eylem seçeneklerinin ekran görüntüsü.](../media/limit-accidental-exposure-dlp-anyone-links.png)
 
@@ -135,11 +135,11 @@ DLP kuralı oluşturmak için:
 
 ## <a name="protect-against-malicious-files"></a>Kötü amaçlı dosyalara karşı koruma
 
-Anonim kullanıcıların dosyaları karşıya yüklemesine izin verdiğinizde, birinin kötü amaçlı bir dosyayı karşıya yükleme riski artar. Office 365 için Microsoft Defender Plan 1 veya Plan 2 lisanslarına sahip kuruluşlarda (örneğin, Microsoft 365 E5 veya eklenti olarak), karşıya yüklenen dosyaları korumalı bir sanal ortamda patlatıp güvenli olmayan dosyaları karantinaya almak için *Kasa Ekleri* özelliğini kullanabilirsiniz.
+Anonim kullanıcıların dosyaları karşıya yüklemesine izin verdiğinizde, birinin kötü amaçlı bir dosyayı karşıya yükleme riski artar. Office 365 için Microsoft Defender Plan 1 veya Plan 2 lisanslarına sahip kuruluşlarda (örneğin, Microsoft 365 E5 veya eklenti olarak), karşıya yüklenen dosyaları korumalı bir sanal ortamda patlatıp güvenli olmayan dosyaları karantinaya almak için *Güvenli Ekler* özelliğini kullanabilirsiniz.
 
-Yönergeler için bkz. [SharePoint, OneDrive ve Microsoft Teams için Kasa Eklerini açma](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md).
+Yönergeler için bkz. [SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler'i açma](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md).
 
-Microsoft 365 A5 veya E5 Güvenlik lisanslarınız varsa, *Kasa Belgeleri* özelliğini de açabilirsiniz (ve kullanabilirsiniz). Daha fazla bilgi için bkz[. Microsoft 365 A5 veya E5 Güvenliğinde belgeler Kasa](../security/office-365-security/safe-docs.md).
+Microsoft 365 A5 veya E5 Güvenlik lisanslarınız varsa *, Güvenli Belgeler* özelliğini de açabilirsiniz (ve kullanabilirsiniz). Daha fazla bilgi için bkz. [Microsoft 365 A5 veya E5 Güvenliğinde Güvenli Belgeler](../security/office-365-security/safe-docs.md).
 
 ## <a name="add-copyright-information-to-your-files"></a>Dosyalarınıza telif hakkı bilgileri ekleme
 
@@ -156,7 +156,7 @@ Etiketli bir dosyaya alt bilgi eklemek için
    ![Duyarlılık etiketi için içerik işaretleme ayarlarının ekran görüntüsü.](../media/content-marking-for-anonymous-sharing.png)
 7. Sihirbazın sonuna ulaşmak için **İleri'ye** tıklayın ve ardından **Etiketi kaydet'e** tıklayın.
 
-Etiket için içerik işaretleme etkinleştirildiğinde, kullanıcı bu etiketi uyguladığında belirttiğiniz metin Office belgelere eklenir.
+Etiket için içerik işaretleme etkinleştirildiğinde, kullanıcı bu etiketi uyguladığında belirttiğiniz metin Office belgelerine eklenir.
 
 ## <a name="see-also"></a>Ayrıca Bkz
 

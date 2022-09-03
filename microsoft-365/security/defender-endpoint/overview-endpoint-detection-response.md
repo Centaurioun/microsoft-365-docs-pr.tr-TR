@@ -3,7 +3,7 @@ title: Uç nokta algılama ve yanıt özelliklerine genel bakış
 ms.reviewer: ''
 description: Uç Nokta için Microsoft Defender'deki uç nokta algılama ve yanıt özellikleri hakkında bilgi edinin
 keywords: Uç Nokta için Microsoft Defender, uç nokta algılama ve yanıt, yanıt, algılama, siber güvenlik, koruma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 757064e8867cda8676fd0cf20a662ff04d130e9c
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.subservice: mde
+ms.openlocfilehash: ee59fa65c8b17bb893dd24a2f7d743026058f2cd
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554521"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581090"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Uç nokta algılama ve yanıta genel bakış
 
@@ -28,7 +28,7 @@ ms.locfileid: "66554521"
 - [Uç Nokta için Microsoft Defender Plan 1 ve 2](defender-endpoint-plan-1-2.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Uç Nokta için Defender'daki uç nokta algılama ve yanıt özellikleri, neredeyse gerçek zamanlı ve eyleme dönüştürülebilir gelişmiş saldırı algılamaları sağlar. Güvenlik analistleri uyarıların önceliklerini etkili bir şekilde belirleyebilir, ihlal kapsamının tamamını görebilir ve tehditleri düzeltmek için yanıt eylemleri gerçekleştirebilir.
 

@@ -1,5 +1,5 @@
 ---
-title: Contoso Corporation'ın çok gizli bir projesi için yalıtılmış ekip
+title: Contoso Corporation'ın çok gizli projesi için yalıtılmış ekip
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -8,99 +8,99 @@ manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
-description: 'Özet: Contoso,yeni bir ürün ve hizmet paketi geliştirmek için çok gizli bir proje için güvenlik yalıtımlı bir ekibi nasıl kullandı.'
-ms.openlocfilehash: 5b6bc72a6476301cf3239aeb7f68486f15ebbac8
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+description: "Özet: Contoso'nun yeni bir ürün ve hizmet paketi geliştirmek için çok gizli bir proje için güvenlik yalıtımına sahip bir ekibi nasıl kullandığı."
+ms.openlocfilehash: 83f09050858651634f5c4dc7d2cfbdd374239ba9
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "63027590"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585102"
 ---
-# <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation'ın çok gizli bir projesi için yalıtılmış ekip
+# <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation'ın çok gizli projesi için yalıtılmış ekip
 
-Yönetici şirket dışından bir şirket dışından sonra, Contoso'nun CEO'su önümüzdeki beş yıl içinde Contoso'nun karını iki katına çıkaracak yeni bir ürün ve hizmet paketi geliştirmeyi sipariş etti. İşletmeyi, mühendislikyi ve pazar planını geliştirmek için en gizli proje **Project 2X** olarak adlandırılmıştır ve şirket genelindeki önemli personel işe alın olmuştur. 
+Contoso'nun CEO'su, bir yöneticinin kuruluş dışından sonraki beş yıl içinde Contoso'nun kârını iki katına çıkarabilecek yeni bir ürün ve hizmet paketinin geliştirilmesini emretti. İş, mühendislik ve pazar planını geliştirmeye yönelik çok gizli proje **Project 2X** olarak adlandırıldı ve şirket genelinde önemli personel işe alındı. 
 
-Araştırma ve geliştirme için zaman çizelgeleri sıkıydı, bu da işbirliğinin verimli olması ve güvenli toplantılar, devam eden konuşmalar ve dosya depolaması için olanak sağlamak zorunda olduğu anlamına geliyor.
+Araştırma ve geliştirme zaman çizelgeleri sıkıydı, bu da işbirliğinin verimli olması ve güvenli toplantılar, devam eden konuşmalar ve dosya depolama sağlaması gerektiği anlamına geliyordu.
 
-Project 2X için sonuç olarak teslim edilebilirler; word, Excel ve PowerPoint dosyaları şeklinde iş planları, ürün ve mühendislik belirtimleri, pazarlama malzemeleri ve zamanlamalardır. 
+Project 2X için elde edilen teslim edilebilir öğeler iş planları, ürün ve mühendislik belirtimleri ile Word, Excel ve PowerPoint dosyaları biçiminde pazarlama malzemeleri ve zamanlamalarıydı. 
 
-Hassas doğası gereği, bu dosyalara erişim şöyledir:
+Hassas doğası gereği bu dosyalara erişim şunlardır:
 
-- 2X ekip Project üst düzey liderlik ekibiyle sınırlı.
-- Şifrelenmiş ve izinlerle korunarak, dosyalar güvenli klasörlerinin dışında dağıtılsa bile yalnızca 2X ekip üyelerine ve üst düzey lidere Project izinler ile korunur.
+- Project 2X ekip üyeleri ve üst düzey liderlik ile sınırlıdır.
+- Dosyalar güvenli klasörlerinin dışına dağıtılmış olsa bile yalnızca Project 2X ekip üyelerine ve üst düzey liderlere erişim izni verme izinleriyle şifrelenir ve korunur.
 
-Contoso IT personeli, [2X'te güvenlik Project](secure-teams-security-isolation.md) bu adımları olan bir ekip kullandı.
+Contoso BT personeli, Project 2X ve bu adımlar için [güvenlik yalıtımına sahip bir ekip](secure-teams-security-isolation.md) kullandı.
 
 ## <a name="step-1-created-a-private-team"></a>1. Adım: Özel ekip oluşturma
 
-İlk olarak, ekibin temel SharePoint erişimini korumak için Contoso IT yöneticileri önerilen güvenlik ve erişim [SharePoint yapılandırdı](../security/office-365-security/sharepoint-file-access-policies.md).
+İlk olarak, ekip için temel alınan SharePoint sitesine erişimi korumak için Contoso BT yöneticileri [önerilen SharePoint erişim ilkelerini](../security/office-365-security/sharepoint-file-access-policies.md) yapılandırdı.
 
-Ardından, Contoso IT yöneticisi Project 2X adlı yeni bir özel ekip oluşturdu ve 2X personelinin kullanıcı hesaplarını üye Project olarak ekledi. Ayrıca, ekibi yalnızca 2X'Project özel kanallar oluşturacağı şekilde yapılandırdı.
+Ardından Contoso BT yöneticisi Project 2X adlı yeni bir özel ekip oluşturdu ve Project 2X personelinin kullanıcı hesaplarını üye olarak ekledi. Ayrıca ekibi yalnızca Project 2X ekip sahiplerinin özel kanallar oluşturabilmesi için yapılandırdılar.
 
 Yapılandırma ayrıntıları için bkz. [Özel ekip oluşturma](secure-teams-security-isolation.md#create-a-private-team).
 
-## <a name="step-2-created-a-sensitivity-label-for-the-project-2x-team"></a>2. Adım: 2X ekibi için Project etiketi oluşturuldu
+## <a name="step-2-created-a-sensitivity-label-for-the-project-2x-team"></a>2. Adım: Project 2X ekibi için duyarlılık etiketi oluşturuldu
 
-Contoso yöneticileri, şu ifadeyi alan **2X'e Project duyarlılık etiketi oluşturdu**:
+Contoso yöneticileri **, Project 2X** adlı şu yeni bir duyarlılık etiketi oluşturdu:
 
 - Şifreleme etkinleştirildi.
-- Co-Author 2X grup için izin Project izin Microsoft 365 verilir.
+- Project 2X Microsoft 365 grubu için izin Co-Author izinler.
 - Üst Düzey Liderlik grubu için İzin Verilen Görüntüleyici izinleri.
-- Unmaned access to unmaned devices.
+- Yönetilmeyen cihazlara erişim engellendi.
 
-Sitenin **temel** 2X Project Belgeler SharePoint dosyalar:
+Temel alınan Project 2X SharePoint sitesinin **Belgeler** bölümündeki dosyalar şu şekilde korundu:
 
-- Yalnızca 2X grup üyelerine tam izinler sağlayan ve Üst Düzey Liderlik Project 2X Microsoft 365 izinlerini okuma izni sağlayan site izinleri.
-- Site Project veya kopyalanan dosyayla birlikte gelen şifreleme ve izinlerle birlikte en iyi 2X duyarlılık etiketini içerir.
+- Yalnızca Project 2X Microsoft 365 grubunun üyelerine tam izin veren ve Üst Düzey Liderlik grubuna yönelik okuma izinlerine izin veren site izinleri.
+- Siteden taşındığında veya kopyalandığında dosyayla birlikte gelen şifreleme ve izinlere sahip Project 2X duyarlılık etiketi.
 
-Yapılandırma ayrıntıları için bkz [. Duyarlılık etiketi oluşturma](secure-teams-security-isolation.md#create-a-sensitivity-label).
+Yapılandırma ayrıntıları için bkz. [Duyarlılık etiketi oluşturma](secure-teams-security-isolation.md#create-a-sensitivity-label).
 
-## <a name="step-3-configured-the-underlying-sharepoint-site"></a>3. Adım: Temel SharePoint yapılandırıldı
+## <a name="step-3-configured-the-underlying-sharepoint-site"></a>3. Adım: Temel alınan SharePoint sitesini yapılandırdı
 
-İlk olarak, ekibin temel SharePoint erişimini korumak için Contoso IT yöneticileri önerilen güvenlik ve erişim [SharePoint yapılandırdı](../security/office-365-security/sharepoint-file-access-policies.md).
+İlk olarak, ekip için temel alınan SharePoint sitesine erişimi korumak için Contoso BT yöneticileri [önerilen SharePoint erişim ilkelerini](../security/office-365-security/sharepoint-file-access-policies.md) yapılandırdı.
 
-Ardından, site için ek izin ayarlarını yapılandırdı:
+Ardından site için ek izin ayarları yapılandırdılar:
 
-- 2X Project erişimini engellemek için. Yapılandırma ayrıntıları için bkz. [SharePoint için güvenlik yalıtımlı bir ekibin ayarlarını değiştirme](secure-teams-security-isolation.md#sharepoint-settings).
-- Üst Düzey Liderlik grubunun Okuma izinleri için.
+- Project 2X grup üyelerinin siteye erişimi paylaşmasını önlemek için. Yapılandırma ayrıntıları için bkz. [Güvenlik yalıtımı olan bir ekip için SharePoint ayarları](secure-teams-security-isolation.md#sharepoint-settings).
+- Üst Düzey Liderlik grubu için Okuma izinleri için.
 
-Ardından, 2X grup üyelerinin siteye erişimini paylaşmalarını engellemek Project ek izin ayarlarını yapılandırdı. 
+Daha sonra, Project 2X grup üyelerinin siteye erişimi paylaşmasını önlemek için site için ek izin ayarları yapılandırdılar. 
 
-Grup 2X için özel Project kanalları oluşturulurken, grup sahibi konuk paylaşımını devre dışı bırakarak varsayılan paylaşım bağlantısını Belirli kişiler **değerine** ayarlar.
+Project 2X için özel kanallar oluşturulurken, grup sahibi konuk paylaşımını devre dışı bırakmış ve varsayılan paylaşım bağlantısını **Belirli kişiler** değerine ayarlamıştır.
 
-İşte, güvenlik yalıtlığı olan Project 2X ekibinin sonuç yapılandırması.
+Project 2X ekibinin güvenlik yalıtımıyla elde edilen yapılandırması aşağıdadır.
 
-![Sonuçta 2X ekibinin Project yapılandırması.](../media/contoso-team-for-top-secret-project.png)
+![Project 2X ekibinin sonuçta elde edilen yapılandırması.](../media/contoso-team-for-top-secret-project.png)
 
- ## <a name="step-4-trained-project-2x-team-members"></a>4. Adım: 2X ekip Project eğitilmiş
+ ## <a name="step-4-trained-project-2x-team-members"></a>4. Adım: Eğitilmiş Project 2X ekip üyeleri
 
-Contoso güvenlik personeli, Project bir kursta 2X ekip üyelerini eğitmiş:
+Contoso güvenlik personeli Project 2X ekip üyelerini aşağıdaki adımlardan geçen zorunlu bir kursta eğitti:
 
-- 2X'te yeni Project, toplantıları ve sohbetleri kullanma ve ekip dosyaları üzerinde işbirliği yapma.
+- Yeni Project 2X ekibine erişme, toplantıları ve sohbetleri kullanma ve ekip dosyaları üzerinde işbirliği yapma.
 - Ekipte yeni dosyalar oluşturma ve yerel olarak oluşturulan yeni dosyaları karşıya yükleme.
-- Dosyaları 2X duyarlılık Project etikete sahip olarak etiketleme.
-- Bu 2X Project, ekipten ayrıldığında bile bir dosyayı nasıl koruma şeklinde bir gösteri.
+- Project 2X duyarlılık etiketiyle dosyaları etiketleme.
+- Project 2X etiketinin bir dosyayı ekipten ayrıldığında bile nasıl koruyup koruyup koruyamayacaklarını gösteren bir gösterim.
 
-Sonuçta, 2X ekip üyelerinin sohbetler, Project ve dosyalar için güvenli bir ortamda işbirliği yaptıkları güvenli bir ortam elde edildi.
+Sonuç olarak, Project 2X ekip üyelerinin sohbetler, toplantılar ve dosyalar için güvenli bir ortamda işbirliği yapmış olduğu güvenli bir ortam elde edildi.
 
-Burada, temel alınan Project 2X duyarlılık etiketinin atandığı Project bir dosya örneği yer almaktadır.
+Aşağıda, Project 2X duyarlılık etiketinin atandığı temel Project 2X sitesinde depolanan bir dosya örneği verilmiştir.
 
-![Temel 2X sitesinde depolanan bir Project.](../media/contoso-team-for-top-secret-project-example.png)
+![Temel alınan Project 2X sitesinde depolanan bir dosya örneği.](../media/contoso-team-for-top-secret-project-example.png)
 
-Birkaç örnekte, 2X Project üyeleri Project 2X etiketiyle korunan dosyaları çevrimdışı çalışma için yerel bir sürücüye indirdiler. 
+Birkaç örnekte, Project 2X ekip üyeleri çevrimdışı çalışma için Project 2X etiketiyle korunan dosyaları yerel bir sürücüye indirdi. 
 
-Ancak, açılan kimlik bilgileri istendikten sonra, hatalarının farkına vararak bunları siliyorlar.
+Ancak, bunları açarken kimlik bilgileri istendikten sonra, hatalarını fark ettiler ve onları sildiler.
 
-Teams'Teams birlikte çalışma ortamı ve Microsoft 365'nin güvenlik özellikleri nedeniyle, Project 2X'in ayrıntıları projenin süresi boyunca gizli tutulmaktadır. Contoso planlarını duyurur ve yeni ürün ve hizmetleri müşterilerinin ve yatırımcılardan ve rakiplerinin bu akdini memnun etmek için sunmak için bir sürecindedir.
+Teams'in işbirliği ortamı ve Microsoft 365'in güvenlik özellikleri nedeniyle Project 2X'in ayrıntıları proje süresi boyunca gizli tutuldu. Contoso planlarını duyurdu ve yeni ürün ve hizmetleri müşterilerinin ve yatırımcılarının ve rakiplerinin zevkine sunma sürecinde.
 
 ## <a name="next-step"></a>Sonraki adım
 
-[Kuruluşta güvenlik yalıtlığı olan](secure-teams-security-isolation.md) bir ekibi dağıtın.
+Kuruluşunuzda [güvenlik yalıtımı olan bir ekip dağıtın](secure-teams-security-isolation.md).
 

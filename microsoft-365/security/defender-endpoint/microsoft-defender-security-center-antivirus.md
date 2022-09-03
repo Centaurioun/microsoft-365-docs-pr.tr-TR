@@ -3,7 +3,7 @@ title: Windows Güvenliği uygulamasında Microsoft Defender Virüsten Koruma
 description: Microsoft Defender Virüsten Koruma artık Windows Güvenliği uygulamasına eklendiğinde, sık kullanılan görevleri gözden geçirebilir, karşılaştırabilir ve gerçekleştirebilirsiniz.
 keywords: wdav, virüsten koruma, güvenlik duvarı, güvenlik, windows, microsoft defender virüsten koruma
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e661667802f5d170261c51bd6bc706eddfdcbf42
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: f075a612c18ea1c44d9110a212b9ba7d2f8ec379
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387429"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67577595"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Windows Güvenliği uygulamasında Microsoft Defender Virüsten Koruma
 

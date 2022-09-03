@@ -1,8 +1,8 @@
 ---
-title: Uç Nokta için Microsoft Defender'da tehdit zekası kavramlarını anlama
-description: Organizasyonunız için özel tehdit uyarıları oluşturun ve Uç Nokta için Microsoft Defender'da tehdit İstihbaratı ile ilgili kavramları öğrenin
-keywords: tehdit zekası, uyarı tanımları, tehdit göstergeleri, güvenlik uyarıları, güvenlik göstergeleri,
-ms.prod: m365-security
+title: Uç Nokta için Microsoft Defender'daki tehdit bilgileri kavramlarını anlama
+description: Kuruluşunuz için özel tehdit uyarıları oluşturun ve Uç Nokta için Microsoft Defender'de tehdit bilgileriyle ilgili kavramları öğrenin
+keywords: tehdit bilgileri, uyarı tanımları, güvenliğin aşılmasına ilişkin göstergeler, ioc
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,51 +13,51 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 440f788c4adb757013611bb05621b4eb4f4e9715
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.subservice: mde
+ms.openlocfilehash: 9b859e5ae75b2d00a1592c40f67838d6cdfce5fd
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "62996596"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585146"
 ---
-# <a name="understand-threat-intelligence-concepts"></a>Tehdit zekası kavramlarını anlama
+# <a name="understand-threat-intelligence-concepts"></a>Tehdit bilgileri kavramlarını anlayın
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-threatindicator-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-threatindicator-abovefoldlink)
 
-Gelişmiş siber güvenlik saldırıları, birden çok karmaşık kötü amaçlı olaydan, özniteliklerden ve bağlamsal bilgilerden oluşur. Bu etkinliklerden hangilerinin şüpheli olarak nitelendirildiklerinin belirlenmesi ve bunlara karar vermek zor bir görev olabilir. Sektörünize özgü bilinen öznitelikler ve anormal etkinlikler hakkında bilginiz, gözlemlenen bir davranışı ne zaman şüpheli olarak çağıracağız konusunda bilgi sahibi olmak için temel bir özelliktir.
+Gelişmiş siber güvenlik saldırıları birden fazla karmaşık kötü amaçlı olay, öznitelik ve bağlamsal bilgiden oluşur. Bu etkinliklerden hangilerinin şüpheli olarak nitelendirildiğine karar vermek zor bir görev olabilir. Sektörünüzle ilgili bilinen öznitelikler ve anormal etkinlikler hakkında bilgi sahibi olmak, gözlemlenen bir davranışın ne zaman şüpheli olarak adlandırıldığını bilmeniz açısından önemlidir.
 
-Microsoft 365 Defender ile, organizasyon uygulamanıza yönelik olası saldırı etkinliklerini takip etmeye yardımcı olacak özel tehdit uyarıları oluşturabilirsiniz. Şüpheli olayları bayrakla bayrakla kesip ipucunu bir araya durdurabilir ve muhtemelen bir saldırı zincirini durdurarak devam edeceğiz. Bu özel tehdit uyarıları yalnızca kuruluşta görünür ve izlemesi için ayarmış olduğunu olayları bayrakla bayraklar.
+Microsoft 365 Defender ile kuruluşunuzdaki olası saldırı etkinliklerini izlemenize yardımcı olabilecek özel tehdit uyarıları oluşturabilirsiniz. Şüpheli olayları işaretleyebilir ve ipuçlarını bir araya getirerek bir saldırı zincirini durdurabilirsiniz. Bu özel tehdit uyarıları yalnızca kuruluşunuzda görünür ve izlemek üzere ayarladığınız olayları bayrakla işaretler.
 
-Özel tehdit uyarıları oluşturmadan önce, uyarı tanımlarının ve güvenlik göstergelerinin (IOC) ardındaki kavramları ve aralarındaki ilişkiyi bilmek önemlidir.
+Özel tehdit uyarıları oluşturmadan önce, uyarı tanımlarının ve güvenlik ihlal göstergelerinin (ICS) arkasındaki kavramların ve aralarındaki ilişkinin bilinmesi önemlidir.
 
 ## <a name="alert-definitions"></a>Uyarı tanımları
-Uyarı tanımları, olası siber güvenlik saldırılarının erken ipucunu belirlemek için toplu olarak kullanılmaktadır. Bu göstergeler tipik olarak bir saldırgan tarafından bir saldırının amacına başarıyla elde etmek için  alınan etkinliklerin, karakteristiklerin ve eylemlerin bir bileşimidir. Öznitelik bileşimlerinin izlenmesi, saldırılara karşı bir görüş noktası kazanmada ve bir saldırgan amacına ulaşmadan önce olay zincirini engellemede çok önemlidir.
+Uyarı tanımları, olası bir siber güvenlik saldırısıyla ilgili erken ipuçlarını belirlemek için toplu olarak kullanılabilecek bağlamsal özniteliklerdir. Bu göstergeler genellikle bir saldırganın saldırı hedefine başarıyla ulaşmak için gerçekleştirilen etkinliklerin, özelliklerin ve eylemlerin bir birleşimidir. Bu öznitelik birleşimlerinin izlenmesi, saldırılara karşı bir bakış noktası elde etme ve bir saldırganın amacına ulaşılamadan önce olay zincirine müdahale etme açısından kritik öneme sahiptir.
 
-## <a name="indicators-of-compromise-ioc"></a>Güvenlik göstergeleri (IOC)
-IOC'ler tek tek bilinen ve bir ağ veya cihazın zaten ihlal edildi olduğunu belirten kötü amaçlı olaylardır. Uyarı tanımlarının aksine, bu göstergeler ihlal kanıtı olarak kabul edilir. Bu tür konuşmalar genellikle bir saldırı gerçekleştirildikten ve exfiltration gibi bir hedefe ulaştıktan sonra görülür. İTA'ları izlemek araştırma araştırmaları sırasında da önemlidir. Bir saldırı zinciriyle müdahale etmek mümkün olamsa da, gelecekteki olası saldırılar için daha iyi savunma oluşturmak için bu göstergeleri toplamak yararlı olabilir.
+## <a name="indicators-of-compromise-ioc"></a>Güvenliğin aşılmasına ilişkin göstergeler (IOC)
+GÇC'ler, bir ağ veya cihazın zaten ihlal edildiğini gösteren tek tek bilinen kötü amaçlı olaylardır. Uyarı tanımlarından farklı olarak, bu göstergeler ihlal kanıtı olarak kabul edilir. Genellikle bir saldırı yapıldıktan ve filtrasyon gibi hedefe ulaşıldıktan sonra görülürler. Adli araştırmalar sırasında GÇC'lerin izlenmesi de önemlidir. Bir saldırı zincirine müdahale edemeyebilir ancak bu göstergeleri toplamak, gelecekteki olası saldırılar için daha iyi savunmalar oluşturmada yararlı olabilir.
 
-## <a name="relationship-between-alert-definitions-and-iocs"></a>Uyarı tanımları ile IOC'ler arasındaki ilişki
-Microsoft 365 Defender Uç Nokta için Microsoft Defender bağlamında, uyarı tanımları IOS için kapsayıcılardır ve belirli bir IOC eşleşmesi için yükseltilmiş meta veriler de içinde olmak üzere uyarıyı tanımlar. Uyarı tanımlarının bir parçası olarak çeşitli meta veriler sağlanır. Saldırının uyarı tanımı adı, önem derecesi ve açıklama gibi meta veriler diğer seçeneklerle birlikte sağlanır.
+## <a name="relationship-between-alert-definitions-and-iocs"></a>Uyarı tanımları ile ICS arasındaki ilişki
+Microsoft 365 Defender ve Uç Nokta için Microsoft Defender bağlamında, uyarı tanımları IOC'ler için kapsayıcılardır ve belirli bir IOC eşleşmesi için tetiklenen meta veriler de dahil olmak üzere uyarıyı tanımlar. Uyarı tanımlarının bir parçası olarak çeşitli meta veriler sağlanır. Saldırının uyarı tanımı adı, önem derecesi ve açıklama gibi meta veriler diğer seçeneklerle birlikte sağlanır.
 
-Her IOC; türü, değeri ve eylemine dayalı olarak, hangi beton algılama mantığını tanımlar ve hangi yöntemin eşleşmesi olduğunu belirler. Algılamanın konsolda nasıl uyarı olarak görüntüleniyor olduğunu tanımlayan belirli bir uyarı tanımıyla Microsoft 365 Defender gerekir.
+Her IOC, somut algılama mantığını türüne, değerine ve eylemine göre tanımlar ve bunun nasıl eşleştirileceğini belirler. Algılamanın Microsoft 365 Defender konsolunda uyarı olarak nasıl görüntüleneceğini tanımlayan belirli bir uyarı tanımına bağlıdır.
 
-İşte bir IOC örneği:
+IOC örneği aşağıda verilmiştir:
 - Tür: Sha1
 - Değer: 92cfceb39d57d914ed8b14d0e37643de0797ae56
 - Eylem: Eşittir
 
-IOC'lerin uyarı tanımları ile bire bir ilişkisi vardır, örneğin uyarı tanımının buna karşılık gelen birçok IOC'si olabilir.
+IOC'lerin uyarı tanımlarıyla çoka bir ilişkisi vardır. Bu ilişki uyarı tanımına karşılık gelen birçok GÇ'ye sahip olabilir.
 
 
 ## <a name="related-topics"></a>İlgili konular
-- [Göstergeleri yönetme](manage-indicators.md)
+- [Göstergeleri yönetin](manage-indicators.md)

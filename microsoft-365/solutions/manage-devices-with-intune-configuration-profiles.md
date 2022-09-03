@@ -10,7 +10,7 @@ manager: dougeby
 audience: ITPro
 description: Bu güvenlik denetimlerini buluta geçiş yapmak için Intune kullanarak cihazlarda güvenli ayarları zorunlu kılmak için yapılandırma profillerini kullanmaya başlayın.
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -19,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 3b8993c02ce6a5c1885997f6c56c40c22ee85321
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 1ba63a147821da6e5d62629cff9083d688a6166a
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749319"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584694"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Adım 5. Microsoft Intune'de cihaz profillerini dağıtma
 
@@ -35,7 +35,7 @@ Bu makale, yapılandırma profillerini kullanmaya başlama konusunda rehberlik s
 
 ![Cihazları yönetme adımları](../media/devices/intune-mdm-step-4.png#lightbox)
 
-Yapılandırma profilleri, önemli korumayı yapılandırmanızı ve cihazları kaynaklarınıza erişebilmeleri için uyumlu hale getirmenizi sağlar. Daha önce, bu tür yapılandırma değişiklikleri Active Directory Domain Services grup ilkesi ayarları kullanılarak yapılandırıldı. Modern bir güvenlik stratejisi, güvenlik denetimlerini bu denetimlerin uygulanması şirket içi kaynaklara ve erişime bağımlı olmayan buluta taşımayı içerir. Intune yapılandırma profilleri, bu güvenlik denetimlerini buluta aktarmanın yoludur. 
+Yapılandırma profilleri, önemli korumayı yapılandırmanızı ve cihazları kaynaklarınıza erişebilmeleri için uyumlu hale getirmenizi sağlar. Daha önce, bu tür yapılandırma değişiklikleri Active Directory Domain Services grup ilkesi ayarları kullanılarak yapılandırıldı. Modern bir güvenlik stratejisi, güvenlik denetimlerinin şirket içi kaynaklara ve erişime bağımlı olmadığı buluta taşınmasını içerir. Intune yapılandırma profilleri, bu güvenlik denetimlerini buluta aktarmanın yoludur. 
 
 Oluşturabileceğiniz yapılandırma profilleri hakkında fikir vermek için bkz. [Microsoft Intune'de cihaz profillerini kullanarak cihazlarınıza özellik ve ayar uygulama](/mem/intune/configuration/device-profiles).
 
@@ -60,7 +60,6 @@ Yapılandırma profillerini kullanarak yapılandırabileceğiniz birçok ayar a�
 ![cihaz profili kategorilerini Intune](../media/devices/intune-device-profile-categories.png#lightbox)
 
 Aşağıdaki tabloda çizim açıklanmaktadır.
-
 
 |Kategori |Açıklama |Örnekler  |
 |---------|---------|---------|

@@ -2,7 +2,7 @@
 title: Microsoft Endpoint Configuration Manager aracılığı ile katılım
 description: Microsoft Endpoint Configuration Manager kullanarak Uç Nokta için Microsoft Defender eklemeyi öğrenin
 keywords: ekleme, yapılandırma, dağıtma, dağıtım, uç nokta yapılandırma yöneticisi, Uç Nokta için Microsoft Defender, koleksiyon oluşturma, uç nokta algılama yanıtı, yeni nesil koruma, saldırı yüzeyi azaltma, microsoft uç nokta yapılandırma yöneticisi
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection:
 - m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: e4ddd903047fd3bdb2fb8c77019c83721fbe156f
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: 37dd9e55422520fbd2fe1cce88d052503a331b9b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387407"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575833"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager aracılığı ile katılım
 

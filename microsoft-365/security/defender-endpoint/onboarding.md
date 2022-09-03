@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender hizmetine ekleme
 description: Uç noktaları Uç Nokta için Microsoft Defender hizmetine eklemeyi öğrenin
 keywords: uç nokta için microsoft defender, ekleme, dağıtma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,15 @@ ms.collection:
 - m365solution-endpointprotect
 - m365solution-scenario
 - m365-initiative-defender-endpoint
+- highpri
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: da4dc661754a94dbdfa25579426edba8356a7497
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: fd1bf46c7d56cddf81b7daf99017e2fc8fb705eb
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331663"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576373"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Uç Nokta için Microsoft Defender hizmetine ekleme
 

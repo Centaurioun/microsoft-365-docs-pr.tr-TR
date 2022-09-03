@@ -3,7 +3,7 @@ title: Gelişmiş Avcılık API'si
 ms.reviewer: ''
 description: Uç Nokta için Microsoft Defender üzerinde gelişmiş sorgular çalıştırmak için gelişmiş tehdit avcılığı API'sini kullanmayı öğrenin. Sınırlamalar hakkında bilgi edinin ve bir örne bakın.
 keywords: api'ler, desteklenen API'ler, gelişmiş avcılık, sorgu
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 6a686892a0a0e3753038c9296a14a4eaa36cbd3f
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: fc24f1f1d26dad083067d5b0089b7bf22c5e9567
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560273"
+ms.locfileid: "67585564"
 ---
 # <a name="advanced-hunting-api"></a>Gelişmiş tehdit avcılığı API'si
 

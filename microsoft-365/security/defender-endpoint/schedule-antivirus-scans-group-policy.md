@@ -2,7 +2,7 @@
 title: grup ilkesi kullanarak virüsten koruma taramaları zamanlama
 description: Virüsten koruma taramalarını ayarlamak için grup ilkesi kullanma
 keywords: hızlı tarama, tam tarama, zamanlama, grup ilkesi, virüsten koruma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,32 +13,32 @@ ms.custom: nextgen
 ms.date: 11/10/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 21b30bc9ce43c4d6a04e6e6e33f55f6d8e3d6d1b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 522c565d98c2b90f3eec6faef699d627b5e941f0
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415528"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582240"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>grup ilkesi kullanarak virüsten koruma taramaları zamanlama
 
 **Şunlar için geçerlidir:**
 
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft Defender Virüsten Koruma
 
 **Platform**
 - Windows
 
-Bu makalede, grup ilkesi kullanarak zamanlanmış taramaların nasıl yapılandırıldığı açıklanır. Taramaları zamanlama ve tarama türleri hakkında daha fazla bilgi edinmek için bkz[. Zamanlanmış hızlı veya tam Microsoft Defender Virüsten Koruma taramalarını yapılandırma](schedule-antivirus-scans.md). 
+Bu makalede, grup ilkesi kullanarak zamanlanmış taramaların nasıl yapılandırıldığı açıklanır. Taramaları zamanlama ve tarama türleri hakkında daha fazla bilgi edinmek için bkz [. Zamanlanmış hızlı veya tam Microsoft Defender Virüsten Koruma taramalarını yapılandırma](schedule-antivirus-scans.md). 
 
 ## <a name="configure-antivirus-scans-using-group-policy"></a>grup ilkesi kullanarak virüsten koruma taramalarını yapılandırma
 
-1. grup ilkesi yönetim makinenizdeki grup ilkesi Düzenleyicisi'nde **Bilgisayar yapılandırması** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma Tarama'ya** \> gidin.
+1. grup ilkesi yönetim makinenizdeki grup ilkesi Düzenleyicisi'nde **Bilgisayar yapılandırması** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Taraması'na** gidin.
 
 2. Yapılandırmak istediğiniz grup ilkesi Nesnesine sağ tıklayın ve **düzenle'yi** seçin.
 
@@ -51,7 +51,7 @@ Bu makalede, grup ilkesi kullanarak zamanlanmış taramaların nasıl yapıland�
 > [!NOTE]
 > Zamanlanmış taramaları yapılandırırken, **Zamanlanmış taramayı yalnızca bilgisayar açıkken ancak kullanımda değilken başlat** ayarı varsayılan olarak etkindir, makinenin önce boşta olmasını gerektirerek beklenen zamanlanmış süreyi etkileyebilir.
 >
-> Haftalık taramalar için, Windows Sunucusu'nda varsayılan davranış, makine boştayken otomatik bakımın dışında tarama yapmaktır. Windows 10 ve sonraki sürümlerde varsayılan ayar, makine boştayken otomatik bakım sırasında tarama yapmaktır. Bu davranışı değiştirmek için **ScanOnlyIfIdle'ı** devre dışı bırakarak ayarları değiştirin ve ardından bir zamanlama tanımlayın.
+> Haftalık taramalar için Windows Server'da varsayılan davranış, makine boştayken otomatik bakım dışında tarama yapmaktır. Windows 10 ve sonraki sürümlerde varsayılan ayar, makine boştayken otomatik bakım sırasında tarama yapmaktır. Bu davranışı değiştirmek için **ScanOnlyIfIdle'ı** devre dışı bırakarak ayarları değiştirin ve ardından bir zamanlama tanımlayın.
 
 Daha fazla bilgi için [Koruma güncelleştirmelerinin ne zaman indirilip uygulanacağını yönetme ve](manage-protection-update-schedule-microsoft-defender-antivirus.md) [Kullanıcıların ilke ayarlarını yerel olarak değiştirmesini engelleme veya değiştirmesine izin verme](configure-local-policy-overrides-microsoft-defender-antivirus.md) konularına bakın.
 
@@ -62,7 +62,7 @@ Daha fazla bilgi için [Koruma güncelleştirmelerinin ne zaman indirilip uygula
 | Tarama | Zamanlanmış tarama için kullanılacak tarama türünü belirtme | Hızlı tarama |
 | Tarama | Zamanlanmış taramanın çalıştırıldığı haftanın gününü belirtme | Tarama çalıştırılacak günü (veya hiçbir zaman) belirtin. | Hiç |
 | Tarama | Zamanlanmış taramanın çalıştırıldığı günün saatini belirtme | Gece yarısından sonraki dakika sayısını belirtin (örneğin, 01: **00 için 60** girin). | 2:00'de. |
-| Kök | Zamanlanmış görev sürelerini rastgele belirleme |Microsoft Defender Virüsten Koruma, taramanın başlangıç saatini 0 ile 23 saat arasında herhangi bir zaman aralığına rastgele olarak ayarlayın. <p>[SCEP'te](/mem/intune/protect/certificates-scep-configure) taramaları herhangi bir aralık artı veya eksi 30 dakikaya rastgele ayarlayın. Bu, sanal makinelerde veya VDI dağıtımlarında yararlı olabilir. | Etkin |
+| Kök | Zamanlanmış görev sürelerini rastgele belirleme |Microsoft Defender Virüsten Koruma'da taramanın başlangıç saatini 0 ile 23 saat arasında herhangi bir zaman aralığına rastgele ayarlayın. <p>[SCEP'te](/mem/intune/protect/certificates-scep-configure) taramaları herhangi bir aralık artı veya eksi 30 dakikaya rastgele ayarlayın. Bu, sanal makinelerde veya VDI dağıtımlarında yararlı olabilir. | Etkin |
 
 ## <a name="group-policy-settings-for-scheduling-scans-for-when-an-endpoint-is-not-in-use"></a>Uç nokta kullanımda olmadığında taramaları zamanlamak için grup ilkesi ayarları
 
@@ -94,7 +94,7 @@ Daha fazla bilgi için [Koruma güncelleştirmelerinin ne zaman indirilip uygula
 | İmza güncelleştirmeleri | Güvenlik bilgileri güncelleştirmesinin ardından taramayı açma | Yeni bir koruma güncelleştirmesi indirildikten hemen sonra tarama gerçekleşir | Etkin |
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

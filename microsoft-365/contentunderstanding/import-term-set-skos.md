@@ -1,52 +1,51 @@
 ---
-title: SKOS tabanlı bir biçim kullanarak terim kümesi içeri aktarma
-description: SKOS tabanlı bir biçim kullanarak terim kümelerini içeri aktarmayı öğrenin
+title: SKOS tabanlı biçim kullanarak terim kümesini içeri aktarma
+description: SKOS tabanlı biçim kullanarak terim kümesini içeri aktarmayı öğrenin
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: admin
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.topic: article
-ms.service: ''
 ms.collection: enabler-strategic
 ms.custom: admindeeplinkSPO
 search.appverid: ''
 ms.localizationpriority: high
-ms.openlocfilehash: c7a23b8da32f5ae9132a41661a1141f34df48a6b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4e9d091eaf92940b2bdfce95712a9d5e4947cf92
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318207"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67580936"
 ---
-# <a name="import-a-term-set-using-a-skos-based-format"></a>SKOS tabanlı bir biçim kullanarak terim kümesi içeri aktarma
+# <a name="import-a-term-set-using-a-skos-based-format"></a>SKOS tabanlı biçim kullanarak terim kümesini içeri aktarma
 
-Terim kümelerini SKOS tabanlı bir biçim kullanarak içeri aktarabilirsiniz. Biçim hakkında ayrıntılı bilgi için bkz[. SharePoint SKOS biçim başvurusu](skos-format-reference.md). Bu özellik için lisans [SharePoint Syntex](index.md) gerekir.
+SKOS tabanlı bir biçim kullanarak terim kümesini içeri aktarabilirsiniz. Biçim hakkında ayrıntılı bilgi için bkz. [SharePoint taksonomisi SKOS biçimi başvurusu](skos-format-reference.md). Bu özellik [için SharePoint Syntex](index.md) lisansı gerekir.
 
-İçeri aktarma dosyalarınızı 20.000'den az terimle tutmanızı öneririz. Daha büyük dosyaların geçerlilik ve içeri aktarma için alınma süresi artabilir.
+İçeri aktarma dosyalarınızı 20.000'den az terimle tutmanızı öneririz. Daha büyük dosyalar doğrulama ve içeri aktarma için geçen süreyi artırabilir.
 
-1. Yönetim merkezinde SharePoint **hizmetleri'ni genişletin ve Terim** <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">**deposu'ni seçin**</a>.
+1. SharePoint yönetim merkezinde **İçerik hizmetleri'ni** genişletin ve ardından <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">**Terim deposu'na**</a> tıklayın.
 
-2. Terim grubunu seçin ve terim grubunu içeri aktarın.
+2. Terim kümesini içeri aktarmak istediğiniz terim grubunu seçin.
 
-3. Komut çubuğunda Terim kümesi içeri **aktar'a tıklayın**.
+3. Komut çubuğunda **Terim kümesini içeri aktar'a** tıklayın.
 
-4. Şablon olarak kullanmak üzere bir örnek dosya indirmek için örnek meta **veri.ttl'ye** tıklayın ve SKOS tabanlı biçimi kullanan örnek bir dosya alın.
+4. Şablon olarak kullanmak üzere örnek bir dosya indirmek istiyorsanız, SKOS tabanlı biçimi kullanan bir örnek dosya almak için **sample-metadata.ttl** dosyasına tıklayın.
 
-5. İçeri aktarma işlemi yapmak istediğiniz terim ve terim & içeri aktarma dosyasını oluşturun.
+5. İçeri aktarmak istediğiniz terimleri & terim kümelerini içeren içeri aktarma dosyasını oluşturun.
 
-6. Dosya **biçimi'nin** altında **SKOS (*.ttl) öğesini seçin**.
+6. **Dosya biçimi'nin** altında **SKOS (*.ttl) öğesini** seçin.
 
-7. **Gözat'a** tıklayın ve içeri aktarma dosyasına gidin ve dosyanızı ekleyin.
+7. **Gözat'a** tıklayın ve içeri aktarma dosyanıza gidin ve dosyanızı ekleyin.
 
-8. İçeri **Aktar'a tıklayın**. İçeri aktarma işlemi tamamlandıktan sonra paneli kapatabilirsiniz.
+8. **İçeri Aktar'a** tıklayın. İçeri aktarma tamamlanana kadar paneli kapatmayın.
 
-Dosyayı başarılı bir şekilde içeri aktarma işlemi başarılı bir şekilde içeri aktarlendiğinde bir başarı iletisi görüntülenir, terim deposu yenilenir ve yeni oluşturulan terim kümelere gezinebilirsiniz.
+Dosya başarıyla içeri aktarıldığında bir başarı iletisi görüntülenir ve depo terimi yenilenir ve yeni oluşturulan terim kümelerine gidebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Yönetilen meta verilere giriş](/sharepoint/managed-metadata)
 
-[Belgeyi anlamaya genel bakış](document-understanding-overview.md)
+[Belge anlamaya genel bakış](document-understanding-overview.md)
 
 [Terim kümelerini içeri aktarma (site düzeyi)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)

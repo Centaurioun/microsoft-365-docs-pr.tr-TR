@@ -1,10 +1,10 @@
 ---
-title: Dosyaları canlı yanıt kitaplığına Upload
+title: Canlı yanıt kitaplığına dosya yükleme
 description: Canlı yanıt kitaplığına dosya yüklemeyi öğrenin.
 keywords: api'ler, graf api'leri, desteklenen API'ler, kitaplığa yükleme
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,16 +18,16 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: reference
-MS.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 8e0bc9ca78a7e0baad7c07e73790215618aff9ab
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: f834add078e36d2439440d1decb4c7f534b5dec7
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873749"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579853"
 ---
-#  <a name="upload-files-to-the-live-response-library"></a>Dosyaları canlı yanıt kitaplığına Upload  
+#  <a name="upload-files-to-the-live-response-library"></a>Canlı yanıt kitaplığına dosya yükleme  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "65873749"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+>Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "65873749"
 
 ## <a name="api-description"></a>API açıklaması
 
-Dosyayı canlı yanıt kitaplığına Upload.
+Dosyayı canlı yanıt kitaplığına yükleyin.
 
 ## <a name="limitations"></a>Sınırlamalar
 
@@ -54,7 +54,7 @@ Dosyayı canlı yanıt kitaplığına Upload.
 
 ## <a name="permissions"></a>İzinler
 
-Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi için bkz. [Kullanmaya başlayın](apis-intro.md).
+Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin nasıl seçileceği de dahil olmak üzere daha fazla bilgi edinmek için bkz. [Kullanmaya başlama](apis-intro.md).
 
 
 | İzin türü                    | Izni     | İzin görünen adı        |
@@ -64,7 +64,7 @@ Bu API'yi çağırmak için aşağıdaki izinlerden biri gereklidir. İzinlerin 
 
 ## <a name="http-request"></a>HTTP isteği
 
-Upload
+Yüklemek
 
 ```HTTP
 POST https://api.securitycenter.microsoft.com/api/libraryfiles

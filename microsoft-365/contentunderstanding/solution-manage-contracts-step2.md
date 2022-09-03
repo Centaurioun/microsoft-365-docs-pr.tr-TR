@@ -1,5 +1,5 @@
 ---
-title: Adım 2. Sözleşme yönetimi kanalınızı oluşturmak için Microsoft Teams kullanma
+title: Adım 2. Sözleşme yönetim kanalınızı oluşturmak için Microsoft Teams'i kullanma
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -7,36 +7,36 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
-description: Microsoft 365 çözümü kullanarak sözleşme yönetimi kanalınızı oluşturmak için Microsoft Teams kullanmayı öğrenin.
-ms.openlocfilehash: 6020b6e57af285e96c7998454dc46e5eb19bc5f9
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+description: Microsoft Teams'i kullanarak bir Microsoft 365 çözümü kullanarak sözleşme yönetimi kanalınızı oluşturmayı öğrenin.
+ms.openlocfilehash: 10d7598400f095dce34ed5fbb572608a7bd01306
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368055"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579214"
 ---
-# <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Adım 2. Sözleşme yönetimi kanalınızı oluşturmak için Microsoft Teams kullanma
+# <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Adım 2. Sözleşme yönetim kanalınızı oluşturmak için Microsoft Teams'i kullanma
 
-Kuruluşunuz bir sözleşme yönetimi çözümü ayarlarken paydaşların sözleşmeleri gözden geçirebileceği ve yönetebileceği merkezi bir konuma ihtiyacınız vardır. Bu amaçla[, Microsoft Teams](/microsoftteams/) kullanarak bir Teams kanalı ayarlayabilir ve Teams özelliklerini kullanarak şunları yapabilirsiniz:
+Kuruluşunuz bir sözleşme yönetimi çözümü ayarlarken paydaşların sözleşmeleri gözden geçirebileceği ve yönetebileceği merkezi bir konuma ihtiyacınız vardır. Bu amaçla [, Microsoft Teams'i](/microsoftteams/) kullanarak bir Teams kanalı ayarlayabilir ve Teams'deki özellikleri kullanarak şunları yapabilirsiniz:
 
-- **Eylem gerektiren tüm sözleşmeleri kolayca görmek için paydaşlar için bir konum oluşturun.** Örneğin, Teams Sözleşme Yönetimi kanalında üyelerin onay gerektiren tüm **sözleşmelerin** yararlı bir kutucuk görünümünü görebileceği bir Sözleşmeler sekmesi oluşturabilirsiniz. Ayrıca görünümü, her bir "kart"ın ilgilendiğiniz önemli verileri ( *İstemci*, *Yüklenici* ve *Ücret tutarı* gibi) listelemesi için yapılandırabilirsiniz.
+- **Eylem gerektiren tüm sözleşmeleri kolayca görmek için paydaşlar için bir konum oluşturun.** Örneğin, Teams'de Sözleşme Yönetimi kanalında üyelerin onay gerektiren tüm sözleşmelerin yararlı bir kutucuk görünümünü görebileceği bir **Sözleşmeler** sekmesi oluşturabilirsiniz. Ayrıca görünümü, her bir "kart"ın ilgilendiğiniz önemli verileri ( *İstemci*, *Yüklenici* ve *Ücret tutarı* gibi) listelemesi için yapılandırabilirsiniz.
 
      ![Sözleşmeler sekmesi.](../media/content-understanding/tile-view.png)
 
-- **Üyelerin birbirleriyle etkileşim kuracakları ve önemli olayları görebilecekleri bir konum elde edin.** Örneğin, Teams'da **Gönderiler** sekmesi konuşma yapmak, güncelleştirmeleri almak ve eylemleri görmek (bir sözleşmeyi reddeden üye gibi) için kullanılabilir. Bir şey olduğunda (onay için gönderilen yeni bir sözleşme gibi), **Gönderiler** sekmesi yalnızca bunu duyurmak için değil, aynı zamanda kaydı tutmak için de kullanılabilir. Üyeler bildirimlere abone olursa, bir güncelleştirme olduğunda bildirim alır.
+- **Üyelerin birbirleriyle etkileşim kuracakları ve önemli olayları görebilecekleri bir konum elde edin.** Örneğin, Teams'de **Gönderiler** sekmesi konuşma yapmak, güncelleştirmeleri almak ve eylemleri görmek (bir sözleşmeyi reddeden üye gibi) için kullanılabilir. Bir şey olduğunda (onay için gönderilen yeni bir sözleşme gibi), **Gönderiler** sekmesi yalnızca bunu duyurmak için değil, aynı zamanda kaydı tutmak için de kullanılabilir. Üyeler bildirimlere abone olursa, bir güncelleştirme olduğunda bildirim alır.
 
      ![Gönderiler sekmesi.](../media/content-understanding/posts.png)
 
-- **Üyelerin ödeme için ne zaman gönderilebileceğini bilmesi için onaylanmış sözleşmeleri görmeleri için bir konum belirleyin.** SharePoint bir **Ödeme için** listesi oluşturmanız ve sütun türü olarak **Tek satır metni** seçerek **İstemci**, **Yüklenici** ve **Ücret tutarı** sütunlarını eklemeniz gerekir. Sözleşmeler sekmesinde [yaptığınıza](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab)benzer şekilde, **Ödeme İçin** listesini Sözleşme Yönetimi kanalında Teams sekmesi olarak eklemeniz gerekir. **Ödeme İçin** sekmesi, ödeme için gönderilmesi gereken tüm sözleşmeleri listeler. Bu çözümü kolayca genişleterek bu bilgileri doğrudan üçüncü taraf bir finansal uygulamaya (örneğin Dynamics CRM) yazabilirsiniz. 
+- **Üyelerin ödeme için ne zaman gönderilebileceğini bilmesi için onaylanmış sözleşmeleri görmeleri için bir konum belirleyin.** SharePoint'te Bir **Ödeme için** listesi oluşturmanız ve sütun türü olarak **Tek satır metni** seçerek **İstemci**, **Yüklenici** ve **Ücret tutarı** sütunlarını eklemeniz gerekir. [**Sözleşmeler** sekmesinde yaptığınıza](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab) benzer şekilde, **Ödeme İçin** listesini Sözleşme Yönetimi kanalına Teams sekmesi olarak eklemeniz gerekir. **Ödeme İçin** sekmesi, ödeme için gönderilmesi gereken tüm sözleşmeleri listeler. Bu çözümü kolayca genişleterek bu bilgileri doğrudan üçüncü taraf bir finansal uygulamaya (örneğin Dynamics CRM) yazabilirsiniz. 
 
 
 ## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>SharePoint belge kitaplığınızı Sözleşmeler sekmesine ekleme
 
-Sözleşme Yönetimi kanalınızda bir **Sözleşmeler** sekmesi oluşturduktan sonra [, SharePoint belge kitaplığınızı buna eklemeniz](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) gerekir. Eklemek istediğiniz SharePoint belge kitaplığı, önceki bölümde SharePoint Syntex belge anlama modelinizi uyguladığınız kitaplıktır.
+Sözleşme Yönetimi kanalınızda bir **Sözleşmeler** sekmesi oluşturduktan sonra, [SharePoint belge kitaplığınızı buna eklemeniz](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) gerekir. Eklemek istediğiniz SharePoint belge kitaplığı, önceki bölümde SharePoint Syntex belge anlama modelinizi uyguladığınız kitaplıktır.
 
 SharePoint belge kitaplığını ekledikten sonra, tüm sınıflandırılmış sözleşmeleri varsayılan liste görünümü aracılığıyla görüntüleyebilirsiniz.
 
@@ -55,7 +55,7 @@ Kullandığınız özel kutucuk görünümü, geçerli kutucuk görünümünü b
 
 Teams kanalınızda görünümünüz için JSON kodunu görmek veya değiştirmek istiyorsanız, Teams kanalında görünüm açılan menüsünü ve ardından **Geçerli görünümü biçimlendir'i** seçin.
 
-   ![Teams kanaldaki json biçiminin ekran görüntüsü.](../media/content-understanding/jason-format.png)
+   ![Teams kanalındaki json biçiminin ekran görüntüsü.](../media/content-understanding/jason-format.png)
 
 ## <a name="card-size-and-shape"></a>Kart boyutu ve şekli
 
@@ -208,4 +208,4 @@ Bu bölüm, "Sınıflandırma"nın kartta nasıl görüntüleneceğini tanımlar
 
 ## <a name="next-step"></a>Sonraki adım
 
-[3. Adım. Sözleşmelerinizi işlemek üzere akış oluşturmak için Power Automate kullanma](solution-manage-contracts-step3.md)
+[3. Adım. Anlaşmalarınızı işlemek üzere akış oluşturmak için Power Automate'i kullanma](solution-manage-contracts-step3.md)

@@ -6,19 +6,19 @@ manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da ayıklayıcıyı nasıl ve neden yeniden adlandıracağınızı öğrenin.
-ms.openlocfilehash: feba0d8850a534e7f5e5d985bf3424f931e0ceb0
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 81c325e937378b5c00bac354f14e43d9ab676724
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916171"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576835"
 ---
 # <a name="rename-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de ayıklayıcıyı yeniden adlandırma
 
@@ -29,7 +29,7 @@ Güncelleştirilmiş modelinizi SharePoint belge kitaplığınızla eşitlediği
 > [!IMPORTANT]
 >  Güncelleştirilmiş modelinizi, yeni sütun adının görüntülenmesi için daha önce uyguladığınız belge kitaplıklarına eşitlediğinizden emin olun. 
 
-## <a name="rename-an-extractor"></a>Ayıklayıcıyı yeniden adlandırma
+## <a name="rename-an-extractor"></a>Ayıklayıcıyı yeniden adlandır
 
 Varlık ayıklayıcısını yeniden adlandırmak için bu adımları izleyin.
 
@@ -52,15 +52,15 @@ Varlık ayıklayıcısını yeniden adlandırmak için bu adımları izleyin.
 5. **Yeniden Adlandır'ı** seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Ayıklayıcı oluşturma](create-an-extractor.md)
+[Ayıklayıcı oluştur](create-an-extractor.md)
 
-[Sınıflandırıcı oluşturma](create-a-classifier.md)
+[Sınıflandırıcı oluştur](create-a-classifier.md)
 
-[Modeli yeniden adlandırma](rename-a-model.md)
+[Modeli yeniden adlandır](rename-a-model.md)
 
 [Açıklama türleri](explanation-types-overview.md)
 
-[Ayıklayıcı oluştururken terim deposu taksonomisini kullanma](leverage-term-store-taxonomy.md)
+[Ayıklayıcı oluştururken terim deposu taksonomisini kullan](leverage-term-store-taxonomy.md)
 
 [Document Understanding'e genel bakış](document-understanding-overview.md)
 

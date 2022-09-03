@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender'da uyarıları gözden geçirme
 description: Görselleştirilmiş bir uyarı hikayesi ve zincirin her adımına ilişkin ayrıntılar da dahil olmak üzere uyarı bilgilerini gözden geçirin.
 keywords: olay, olaylar, makineler, cihazlar, kullanıcılar, uyarılar, uyarı, araştırma, grafik, kanıt
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.pagetype: security
 f1.keywords:
 - NOCSH
@@ -16,13 +16,13 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.date: 5/1/2020
-ms.technology: mde
-ms.openlocfilehash: 76503c180dfdd2314254efc9315235c0802ab7f8
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.subservice: mde
+ms.openlocfilehash: 079dfd696e630246a332cdf1457ed4134c101e89
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607553"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67575779"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da uyarıları gözden geçirme
 

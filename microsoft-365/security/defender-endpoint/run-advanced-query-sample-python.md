@@ -3,7 +3,7 @@ title: Python API'siyle Gelişmiş Avcılık Kılavuzu
 ms.reviewer: ''
 description: Örneklerle python kullanarak Uç Nokta için Microsoft Defender API'sini kullanarak sorgulamayı öğrenin.
 keywords: api'ler, desteklenen API'ler, gelişmiş avcılık, sorgu
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 6751098c58e53c06cf9b62f7b93cd48aa35f5374
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c75c39f898a6e94e9f0f96402d28c477a5819efa
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67331389"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585168"
 ---
 # <a name="advanced-hunting-using-python"></a>Python ile Gelişmiş Avcılık
 

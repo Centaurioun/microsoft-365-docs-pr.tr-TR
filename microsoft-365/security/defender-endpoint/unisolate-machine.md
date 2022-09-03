@@ -3,7 +3,7 @@ title: Cihazı yalıtım API'sinden serbest bırakma
 description: Bir cihazı yalıtımdan serbest bırakmakla ilgili çağrılar oluşturmak için bu API'yi kullanın.
 keywords: api'ler, graph API'leri, desteklenen API'ler, cihazı yalıtımdan kaldırma
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 58b6d548697e5604d7a22578bc1544a681559284
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: d2277c70efa845d3b983c67203b67e065ae4f7c7
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67330729"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581477"
 ---
 # <a name="release-device-from-isolation-api"></a>Cihazı yalıtım API'sinden serbest bırakma
 

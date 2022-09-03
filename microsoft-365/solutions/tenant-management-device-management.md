@@ -1,11 +1,11 @@
 ---
-title: Adım 5. Kurumsal kiracılar için Microsoft 365 cihaz ve uygulama yönetimi
+title: Adım 5. Kurumsal kiracılar için Microsoft 365 kiracılarınız için cihaz ve uygulama yönetimi
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -16,25 +16,25 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Microsoft 365 kiracılarınız için cihaz ve uygulama yönetimi için doğru seçeneği dağıtın.
-ms.openlocfilehash: 3999d30aaeee9ebfc2af90b0aeeeaea1b46986fb
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 827e3aa06e81e1d10bf4f6b83c4baeb5c143c206
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419472"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586082"
 ---
-# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Adım 5. Kurumsal kiracılar için Microsoft 365 cihaz ve uygulama yönetimi
+# <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Adım 5. Kurumsal kiracılar için Microsoft 365 kiracılarınız için cihaz ve uygulama yönetimi
 
-kuruluş için Microsoft 365, mobil cihaz yönetimi (MDM) ve mobil uygulama yönetimi (MAM) ile cihazları yönetmeye ve kuruluşunuzdaki cihazlardaki uygulamaların kullanımına yardımcı olan özellikler içerir. Verileriniz dahil olmak üzere kuruluşunuzun kaynaklarına erişimi korumak için iOS, Android, macOS ve Windows cihazları yönetebilirsiniz. Örneğin, e-postaların kuruluşunuzun dışındaki kişilere gönderilmesini engelleyebilir veya çalışanınızın kişisel cihazlarında kuruluş verilerini kişisel verilerden yalıtabilirsiniz.
+Kuruluş için Microsoft 365, mobil cihaz yönetimi (MDM) ve mobil uygulama yönetimi (MAM) ile cihazları yönetmeye ve kuruluşunuzdaki cihazlardaki uygulamaların kullanımına yardımcı olan özellikler içerir. Verileriniz dahil olmak üzere kuruluşunuzun kaynaklarına erişimi korumak için iOS, Android, macOS ve Windows cihazlarını yönetebilirsiniz. Örneğin, e-postaların kuruluşunuzun dışındaki kişilere gönderilmesini engelleyebilir veya çalışanınızın kişisel cihazlarında kuruluş verilerini kişisel verilerden yalıtabilirsiniz.
 
-Aşağıda kullanıcıların, cihazlarının ve Microsoft Teams gibi yerel ve bulut üretkenlik uygulamalarının doğrulanması ve yönetilmesine ilişkin bir örnek verilmiştir.
+Aşağıda kullanıcıların, cihazlarının ve Microsoft Teams gibi yerel ve bulut üretkenlik uygulamalarının doğrulanması ve yönetimine bir örnek verilmiştir.
 
 ![Kullanıcıların, cihazların ve uygulamaların doğrulanması ve yönetimi.](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
 
-Kuruluşunuzun kaynaklarının güvenliğini sağlamanıza ve korumanıza yardımcı olmak için, Microsoft 365 kurumsal cihazlar ve uygulamalara erişimlerini yönetmeye yardımcı olacak özellikler içerir. Cihaz yönetimi için iki seçenek vardır:
+Kuruluşunuzun kaynaklarının güvenliğini sağlamanıza ve korumanıza yardımcı olmak için, kuruluşlar için Microsoft 365 cihazları ve uygulamalara erişimlerini yönetmeye yardımcı olacak özellikler içerir. Cihaz yönetimi için iki seçenek vardır:
 
 - kuruluşlar için kapsamlı bir cihaz ve uygulama yönetimi çözümü olan Microsoft Intune.
-- Kuruluşunuzdaki cihazları yönetmek için tüm Microsoft 365 ürünlerine dahil edilen Intune hizmetlerinin bir alt kümesi olan Temel Mobilite ve Güvenlik. Daha fazla bilgi için bkz. [Temel Mobilite ve Güvenlik Özellikleri](../admin/basic-mobility-security/capabilities.md).
+- Kuruluşunuzdaki cihazları yönetmek için tüm Microsoft 365 ürünlerine dahil edilen Intune hizmetlerinin bir alt kümesi olan Basic Mobility and Security. Daha fazla bilgi için bkz. [Temel Mobilite ve Güvenlik Özellikleri](../admin/basic-mobility-security/capabilities.md).
 
 Microsoft 365 E3 veya E5 kullanıyorsanız Intune kullanmalısınız.
 
@@ -42,7 +42,7 @@ Microsoft 365 E3 veya E5 kullanıyorsanız Intune kullanmalısınız.
 
 [MDM](/mem/intune/fundamentals/planning-guide) veya MAM kullanarak kuruluşunuza erişimi yönetmek için Microsoft Intune kullanırsınız. MDM, kullanıcıların cihazlarını Intune "kaydettiği" durumdur. Bir cihaz kaydedildikten sonra yönetilen bir cihazdır ve kuruluşunuzun ilkelerini, kurallarını ve ayarlarını alabilir. Örneğin, belirli uygulamaları yükleyebilir, parola ilkesi oluşturabilir, VPN bağlantısı yükleyebilir ve daha fazlasını yapabilirsiniz.
 
-Kendi kişisel cihazları olan kullanıcılar cihazlarını kaydetmek istemeyebilir veya Intune ve kuruluşunuzun ilkeleri tarafından yönetilebilir. Ancak yine de kuruluşunuzun kaynaklarını ve verilerini korumanız gerekir. Bu senaryoda, MAM kullanarak uygulamalarınızı koruyabilirsiniz. Örneğin, cihazda SharePoint erişirken kullanıcının PIN girmesini gerektiren bir MAM ilkesi kullanabilirsiniz.
+Kendi kişisel cihazları olan kullanıcılar cihazlarını kaydetmek istemeyebilir veya Intune ve kuruluşunuzun ilkeleri tarafından yönetilebilir. Ancak yine de kuruluşunuzun kaynaklarını ve verilerini korumanız gerekir. Bu senaryoda, MAM kullanarak uygulamalarınızı koruyabilirsiniz. Örneğin, cihazda SharePoint'e erişirken kullanıcının PIN girmesini gerektiren bir MAM ilkesi kullanabilirsiniz.
 
 Ayrıca kişisel cihazları ve kuruluşa ait cihazları nasıl yöneteceğini de belirlersiniz. Cihazları kullanımlarına bağlı olarak farklı şekilde ele almak isteyebilirsiniz.
 
@@ -55,7 +55,7 @@ Microsoft, güvenli ve üretken bir iş gücü sağlamak için [kimlik ve cihaz 
 - Kimlik Koruması kullanıcı risk ilkelerini Azure AD
 - Bulut uygulamalarının ek ilkeleri
 
-Aşağıda, kullanıcıları, cihazlarını ve Microsoft Teams gibi yerel ve bulut üretkenlik uygulamalarının kullanımını doğrulamak ve kısıtlamak için bu ayarların ve ilkelerin bir örneği verilmiştir.
+Aşağıda, kullanıcıları, cihazlarını ve Microsoft Teams gibi yerel ve bulut üretkenlik uygulamalarının kullanımını doğrulamak ve kısıtlamak için bu ayarların ve ilkelerin uygulamasına bir örnek verilmiştir.
 
 ![Kullanıcılar, cihazları ve uygulama kullanımıyla ilgili gereksinimler ve kısıtlamalar için kimlik ve cihaz erişim yapılandırmaları.](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
 
@@ -66,7 +66,7 @@ Cihaz erişimi ve uygulama yönetimi için şu makalelerdeki yapılandırmaları
 
 ## <a name="results-of-step-5"></a>5. Adımın Sonuçları
 
-Microsoft 365 kiracınızın cihaz ve uygulama yönetimi için, kullanıcıları, cihazlarını ve yerel ve bulut üretkenlik uygulamalarının kullanımını doğrulamak ve kısıtlamak için Intune ayarlarını ve ilkelerini belirlediniz.
+Microsoft 365 kiracınız için cihaz ve uygulama yönetimi için kullanıcıları, cihazlarını ve yerel ve bulut üretkenlik uygulamalarının kullanımını doğrulamak ve kısıtlamak için Intune ayarlarını ve ilkelerini belirlediniz.
 
 Aşağıda, yeni öğelerin vurgulandığı Intune cihaz ve uygulama yönetimine sahip bir kiracı örneği verilmiştir.
 

@@ -4,7 +4,7 @@ description: Sunucularınızı önceki MMA tabanlı çözümden geçerli Uç Nok
 keywords: sunucuyu geçirme, sunucu, 2012r2, 2016, sunucu geçişi, cihaz yönetimi, Uç Nokta için Microsoft Defender sunucuları yapılandırma, Uç Nokta için Microsoft Defender sunucuları ekleme
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 1c9eff6831f08a243aad830d258c9d9277a89531
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.subservice: mde
+ms.openlocfilehash: 38ac919e11160406f31606703153ce0208a3c416
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306448"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584804"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Önceki MMA tabanlı Uç Nokta için Microsoft Defender çözümünden sunucu geçişi senaryoları
 
@@ -32,8 +32,6 @@ ms.locfileid: "67306448"
 - Windows Server 2012 R2
 - Windows Server 2016
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 > [!NOTE]
 > Yükleme veya yükseltme işlemine devam etmeden önce her zaman işletim sisteminin ve Windows Server 2016'da Microsoft Defender Virüsten Koruma'nın tamamen güncelleştirildiğinden emin olun. EDR Algılayıcı bileşenine yönelik düzenli ürün iyileştirmeleri ve düzeltmeleri almak için[, Windows Update KB5005292'nin](https://go.microsoft.com/fwlink/?linkid=2168277) yüklendiğinden veya yüklendikten sonra onay aldığından emin olun. Ayrıca, koruma bileşenlerini güncel tutmak için lütfen [Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama makalesine](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) başvurun.

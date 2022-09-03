@@ -1,8 +1,8 @@
 ---
-title: macOS'ta Uç Nokta için Microsoft Defender'da bulut bağlantı sorunlarını giderme
-description: Bu konu başlığında, macOS üzerinde Uç Nokta için Microsoft Defender'da bulut bağlantısı sorunlarının nasıl giderilir
-keywords: microsoft, defender, Endpoint için Microsoft Defender, mac, yükleme, dağıtma, kaldırma, intune, jamf, macos, catalina, mojave, high sierra
-ms.prod: m365-security
+title: macOS'ta Uç Nokta için Microsoft Defender için bulut bağlantısı sorunlarını giderme
+description: Bu konuda, macOS'ta Uç Nokta için Microsoft Defender için bulut bağlantısı sorunlarını giderme adımları açıklanmaktadır
+keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,29 +13,29 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 677737f530e35ed52a2a1f3fe7a8d6f18c26e7b6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.subservice: mde
+ms.openlocfilehash: ac6cb30d14f0d2295667227dc3f94d1f86159413
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326576"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584209"
 ---
-# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender'da bulut bağlantı sorunlarını giderme
+# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender için bulut bağlantısı sorunlarını giderme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Platform** macOS
 
-Bu konu başlığında, macOS üzerinde Uç Nokta için Microsoft Defender'da bulut bağlantısı sorunlarını giderme başlığı açıklanmıştır.
+Bu konuda, macOS'ta Uç Nokta için Microsoft Defender için bulut bağlantısı sorunlarını giderme adımları açıklanmaktadır.
 
 ## <a name="run-the-connectivity-test"></a>Bağlantı testini çalıştırma
-Mac'te Uç Nokta için Defender'ın geçerli ağ ayarlarıyla buluta iletişim kurap kura geçeylene kadar test etmek için, komut satırdan bir bağlantı testi çalıştırın:
+Mac'te Uç Nokta için Defender'ın geçerli ağ ayarlarıyla bulutla iletişim kurarak iletişim kuramadığını test etmek için komut satırından bir bağlantı testi çalıştırın:
 
 ```Bash
 mdatp connectivity test
@@ -59,26 +59,26 @@ Testing connection with https://uk-v20.events.data.microsoft.com/ping ... [OK]
 Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 ```
 
-Bağlantı testi başarısız olursa, cihazın İnternet erişimi olup denetleyin ve ürün için gereken uç [](microsoft-defender-endpoint-mac.md#network-connections) noktalardan herhangi biri bir ara sunucu veya güvenlik duvarı tarafından engellenmişse.
+Bağlantı testi başarısız olursa cihazın İnternet erişimi olup olmadığını ve [ürünün gerektirdiği uç noktalardan herhangi birinin](microsoft-defender-endpoint-mac.md#network-connections) ara sunucu veya güvenlik duvarı tarafından engellenip engellenmediğini denetleyin.
 
-35 veya 60 hatasını hataları sertifika sabitleme reddetmesi gösterir ve bu da SSL veya HTTPS incelemesinde olası bir sorunu gösterir. SSL denetleme yapılandırmasıyla ilgili aşağıdaki yönergelere bakın.
+Curl hatası 35 veya 60 olan hatalar sertifika sabitleme reddini gösterir ve bu da SSL veya HTTPS incelemesiyle ilgili olası bir sorunu gösterir. SSL inceleme yapılandırmasıyla ilgili aşağıdaki yönergelere bakın.
 
-## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-proxy-autoconfig-pac-or-with-web-proxy-autodiscovery-protocol-wpad"></a>Ara sunucu olmayan veya Proxy otomatik yapılandırması (PAC) veya Web Proxy Otomatik Bulma Protokolü (WPAD) ile ortamlar için sorun giderme adımları
-Proxy olmayan veya Proxy otomatik yapılandırması (PAC) veya Web Proxy Otomatik Bulma Protokolü (WPAD) ile bir ortamda bağlantının engel olmadığını test etmek için aşağıdaki yordamı kullanın.
+## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-proxy-autoconfig-pac-or-with-web-proxy-autodiscovery-protocol-wpad"></a>Ara sunucu içermeyen veya Ara Sunucu otomatik yapılandırması (PAC) veya Web Proxy Otomatik Bulma Protokolü (WPAD) olan ortamlar için sorun giderme adımları
+Ara sunucu olmayan bir ortamda, Ara Sunucu otomatik yapılandırması (PAC) veya Web Proxy Otomatik Bulma Protokolü (WPAD) ile bağlantının engellenmediğini test etmek için aşağıdaki yordamı kullanın.
 
-Bir ara sunucu veya güvenlik duvarı anonim trafiği engelliyorsa, anonim trafiğin daha önce listelenen URL'lerde izin verildiğindan emin olun.
+Bir ara sunucu veya güvenlik duvarı anonim trafiği engelliyorsa, önceden listelenen URL'lerde anonim trafiğe izin verildiğinden emin olun.
 
 > [!WARNING]
-> Kimliği doğrulanmışxler desteklanmaz. Yalnızca PAC, WPAD veya statik ara sunucu kullanılırken emin olma. SSL incelemesi ve kesişme prox'leri güvenlik nedenleriyle de desteklanmaz. macOS'ta Uç Nokta için Microsoft Defender'dan kesme noktası olmadan ilgili URL'lere doğrudan geçmek üzere SSL incelemesi ve proxy sunucunuz için bir özel durum yapılandırın. Kesme noktası sertifikanızı genel mağazaya eklemek kesme noktası engellemesine izin vermez.
-Bağlantının engel olmadığını test etmek için: Mac veya Safari https://x.cp.wd.microsoft.com/api/report https://cdn.x.cp.wd.microsoft.com/pingiçin Microsoft Edge ve .
+> Kimliği doğrulanmış proxy'ler desteklenmez. Yalnızca PAC, WPAD veya statik ara sunucu kullanıldığından emin olun. GÜVENLIK nedeniyle SSL denetimi ve ara sunucuları da desteklenmez. SSL denetimi ve ara sunucunuzun macOS'ta Uç Nokta için Microsoft Defender verileri kesmeden ilgili URL'lere doğrudan geçirmesi için bir özel durum yapılandırın. Kesme sertifikanızı genel depoya eklemek kesmeye izin vermez.
+Bir bağlantının engellenmediğini test etmek için: Mac için Microsoft Edge veya Safari gibi bir tarayıcıda ve https://cdn.x.cp.wd.microsoft.com/ping'yi açınhttps://x.cp.wd.microsoft.com/api/report.
 
-İsteğe bağlı olarak, Terminal'de aşağıdaki komutu çalıştırın:
+İsteğe bağlı olarak Terminal'de aşağıdaki komutu çalıştırın:
 
 ```Bash
 curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping' 
 ```
 
-Bu komutun çıkışı aşağıdakine benzer olmalı:
+Bu komutun çıkışı şuna benzer olmalıdır:
 ```bash
 OK https://x.cp.wd.microsoft.com/api/report
 OK https://cdn.x.cp.wd.microsoft.com/ping

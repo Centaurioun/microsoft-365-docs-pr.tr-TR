@@ -2,7 +2,7 @@
 title: Depolama hesabınıza Uç Nokta için Microsoft Defender olayları akışla aktarma
 description: Depolama hesabınıza Gelişmiş Tehdit Avcılığı olaylarının akışını yapmak için Uç Nokta için Microsoft Defender yapılandırmayı öğrenin.
 keywords: ham veri dışarı aktarma, akış API'si, API, Event Hubs, Azure depolama, depolama hesabı, Gelişmiş Tehdit Avcılığı, ham veri paylaşımı
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: c94830e4f9dbfe16a8dfafba35aecb5a36efddf5
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9b4e23e764c600799e80cff4d1154c9a5e086d68
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493453"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584826"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Depolama hesabınıza Gelişmiş Tehdit Avcılığı olaylarının akışını yapmak için Uç Nokta için Microsoft Defender yapılandırma
 

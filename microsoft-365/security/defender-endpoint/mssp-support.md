@@ -1,8 +1,8 @@
 ---
-title: Yönetilen güvenlik hizmeti sağlayıcısı (MSSP) ortaklığı fırsatları
-description: Uç Nokta için Microsoft Defender'ın yönetilen güvenlik hizmeti sağlayıcılarıyla (MSSP) nasıl tümleştiril olduğunu anlama
+title: Yönetilen güvenlik hizmeti sağlayıcısı (MSSP) iş ortaklığı fırsatları
+description: Uç Nokta için Microsoft Defender yönetilen güvenlik hizmeti sağlayıcılarıyla (MSSP) nasıl tümleştirildiğini anlama
 keywords: mssp, tümleştirme, yönetilen, güvenlik, hizmet, sağlayıcı
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,42 +13,42 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: f29c40e9c813ec27a1d8976f53ed958cb3a8d1d4
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.subservice: mde
+ms.openlocfilehash: 39b4eb415e609fb56f415f20f8407652b508c8c5
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63034237"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578266"
 ---
-# <a name="managed-security-service-provider-partnership-opportunities"></a>Yönetilen güvenlik hizmeti sağlayıcısı ortaklık fırsatları
+# <a name="managed-security-service-provider-partnership-opportunities"></a>Yönetilen güvenlik hizmeti sağlayıcısı iş ortaklığı fırsatları
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 
-Güvenlik, bir kuruluşu çalıştırmada önemli bir bileşen olarak kabul edilen bir kuruluştur, ancak bazı kuruluşlar uç noktalarının ve ağlarının güvenliğini yönetmek için ayrılmış bir güvenlik işlemleri ekibine sahip olmak için kapasiteye veya uzmanlıka sahip olamasa da, diğerleri ağlarında uyarıları gözden geçirmek için ikinci bir göz kümesine sahip olmak ister.
+Güvenlik, bir kuruluşun çalıştırılmasında önemli bir bileşen olarak kabul edilir, ancak bazı kuruluşlar uç noktalarının ve ağlarının güvenliğini yönetmek için ayrılmış bir güvenlik operasyonları ekibine sahip olacak kapasiteye veya uzmanlığa sahip olmayabilir, diğerleri ise ağlarındaki uyarıları gözden geçirmek için ikinci bir göz kümesine sahip olmak isteyebilir.
 
 
-Bu talebi karşılamak için, yönetilen güvenlik hizmeti sağlayıcıları (MSSP) Uç Nokta için Defender'ın üst kısmında yönetilen algılama ve yanıt (MDR) hizmetleri sunmasını teklif ediyor. 
+Bu talebi gidermek için, yönetilen güvenlik hizmeti sağlayıcıları (MSSP), Uç Nokta için Defender'ın üzerine yönetilen algılama ve yanıt (MDR) hizmetleri sunmayı teklif eder. 
 
 
-Uç Nokta için Defender bu senaryo için ortaklık fırsatları ekler ve MSSP'lerin aşağıdaki eylemleri gerçekleştiresini sağlar:
+Uç Nokta için Defender bu senaryo için ortaklık fırsatları ekler ve MSSP'lerin aşağıdaki eylemleri gerçekleştirmesine olanak tanır:
 
-- MSSP müşterisi posta portalına Microsoft 365 Defender alma
-- E-posta bildirimlerini alın ve 
-- Güvenlik bilgileri ve olay yönetimi (SIEM) araçlarıyla uyarıları getirme
+- MSSP müşteri Microsoft 365 Defender portalına erişme
+- E-posta bildirimlerini alma ve 
+- Güvenlik bilgileri ve olay yönetimi (SIEM) araçları aracılığıyla uyarıları getirme
 
 
 ## <a name="related-topic"></a>İlgili konu
-- [Yönetilen güvenlik hizmeti sağlayıcısı tümleştirmesi yapılandırma](configure-mssp-support.md)
+- [Güvenlik hizmeti sağlayıcısı tümleştirmesini yapılandırın](configure-mssp-support.md)
 
 
 

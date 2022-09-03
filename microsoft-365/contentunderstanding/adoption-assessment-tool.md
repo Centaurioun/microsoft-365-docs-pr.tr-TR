@@ -7,7 +7,7 @@ ms.reviewer: jaeccles
 ms.date: ''
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
@@ -17,19 +17,19 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: Kuruluşunuzun SharePoint Syntex nasıl yararlanabileceğini görmek için benimseme değerlendirme aracını kullanmayı öğrenin.
-ms.openlocfilehash: 8b4ffc6358487ec6cb66830fd56541bfc0b3df4f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: f993530d9eea57bfa0cd8b03336f8a132588acdf
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015736"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578950"
 ---
 # <a name="discover-opportunities-in-sharepoint-syntex-by-using-the-microsoft-365-assessment-tool"></a>Microsoft 365 Değerlendirme aracını kullanarak SharePoint Syntex fırsatlarını keşfedin
 
 > [!NOTE]
 > Microsoft 365 Değerlendirme aracı yalnızca SharePoint Online'da çalıştırılabilir. 
 
-Microsoft 365 Değerlendirme aracını kullanarak SharePoint Syntex kuruluşunuza nasıl fayda sağlayacağını değerlendirebilirsiniz. Değerlendirmeyi çalıştırdığınızda, SharePoint bilgi mimarinizin SharePoint Syntex nerede değerli olabileceğini gösteren yönlerini özetleyen bir Power BI raporu oluşturacaksınız.
+Microsoft 365 Değerlendirme aracını kullanarak SharePoint Syntex kuruluşunuza nasıl fayda sağlayacağını değerlendirebilirsiniz. Değerlendirmeyi çalıştırdığınızda, SharePoint bilgi mimarinizin SharePoint Syntex değere sahip olabileceğini gösteren göstergeleri özetleyen bir Power BI raporu oluşturacaksınız.
 
 ![Power BI özetindeki üç örnek rapor sayfası görüntüsü.](../media/content-understanding/assessment-tool-reports.png)
 
@@ -59,7 +59,7 @@ Değerlendirme raporu aşağıdaki bilgileri içerir:
 
 SharePoint Syntex değerlendirmesi, Microsoft 365 Değerlendirme aracındaki bir modüldür. Değerlendirmeyi çalıştırmak için: 
 
-1. Daha fazla bilgi edinmek için [Microsoft 365 Değerlendirme aracı belgelerini ziyaret edin](https://pnp.github.io/pnpassessment/index.html).
+1. Daha fazla bilgi edinmek için [Microsoft 365 Değerlendirme aracı belgelerini ziyaret edin](https://pnp.github.io/pnpassessment/index.html) .
 
 2. [Aracı indirin](https://pnp.github.io/pnpassessment/using-the-assessment-tool/download.html). 
 

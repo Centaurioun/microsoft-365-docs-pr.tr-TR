@@ -2,7 +2,7 @@
 title: Uyarı varlığı API'sini güncelleştirme
 description: Bu API'yi kullanarak bir Uç Nokta için Microsoft Defender uyarısını güncelleştirmeyi öğrenin. Durum, belirleme, sınıflandırma ve assignedTo özelliklerini güncelleştirebilirsiniz.
 keywords: api'ler, graf api'si, desteklenen API'ler, alma, uyarı, bilgi, kimlik
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: f0748ce997c461dc89162aff49eccf509b056f83
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 6a521515dedcf426c237a4a559bfc18ca956549f
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67330681"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582130"
 ---
 # <a name="update-alert"></a>Uyarıyı güncelleştirme
 

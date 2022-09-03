@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: lauris
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Belge anlama modeli ile form işleme modeli arasındaki temel farklar hakkında bilgi edinin.
-ms.openlocfilehash: 31f70983b90e758516f92081217010bb6a64acd4
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 18235caa31876aa4d9a7b1733885d924804f7e46
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603802"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67581822"
 ---
 # <a name="differences-between-custom-models-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da özel modeller arasındaki farklar 
 

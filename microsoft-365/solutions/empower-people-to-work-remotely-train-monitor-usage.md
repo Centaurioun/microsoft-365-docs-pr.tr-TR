@@ -1,5 +1,5 @@
 ---
-title: '6. Adım: Çalışanlarınızı eğitin ve kullanım geri bildirimini adresine bildirin'
+title: '6. Adım: Çalışanlarınızı eğitin ve kullanım geri bildirimlerini ele alın'
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -16,37 +16,37 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: Kullanıcılarınızı eğitin ve sorunları hızlıca halledin.
-ms.openlocfilehash: cb9fa844a9359318d4458fc8f800f834fd9e6f02
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Kullanıcılarınızı eğitin ve sorunların hızlı bir şekilde ele alındığından emin olun.
+ms.openlocfilehash: 04da36703cdcd94f0e32a841599ba0314829bd09
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314035"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67586148"
 ---
-# <a name="step-6-train-your-workers-and-address-usage-feedback"></a>6. Adım: Çalışanlarınızı eğitin ve kullanım geri bildirimini adresine bildirin
+# <a name="step-6-train-your-workers-and-address-usage-feedback"></a>6. Adım: Çalışanlarınızı eğitin ve kullanım geri bildirimlerini ele alın
 
-Karma çalışanlarınızı şu üzerinde eğitin:
+Hibrit çalışanlarınızı şu konuda eğitin:
 
-- Ek doğrulama yöntemi kaydetme de dahil olmak üzere MFA kullanarak uygun oturum açma yordamları.
-- Cihazların kullanımı ve uç nokta yönetimi ilkelerinin uyumlu olmayan veya yönetilmeyen cihazlara erişimi engellemek için nasıl kullanıla bir yoludur.
-- İzin verilen uygulamaların kullanımı ve bazı uygulamaların kullanımını engellemek için uç nokta yönetimi uygulama İlkelerinin nasıl kullanıl?
-- Windows 11 veya 10 Enterprise özellikleri içerir.
-- Sohbet, [Teams](/microsoftteams/training-microsoft-teams-landing-page) tabanlı konferans, belge paylaşımı ve dizili konuşmalar için Görüntülü Konferans'ın kullanımı.
-- [Outlook-posta](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) ve zamanlama için kullanma.
-- Ekip veya [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) siteleri ile [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) kitaplığında ve bir gruba ait olan dosyalarda gezinmek ve bu dosyalar üzerinde işbirliği yapmak için ekip veya iletişim sitelerini kullanma.
+- Ek doğrulama yöntemi kaydetmek de dahil olmak üzere MFA kullanarak düzgün oturum açma yordamları.
+- Cihazların kullanımı ve uç nokta yönetim ilkelerinin uyumlu olmayan veya yönetilmeyen cihazlarda erişimi engellemek için nasıl kullanılabileceğini.
+- İzin verilen uygulamaların kullanımı ve uç nokta yönetimi uygulama ilkeleri bazı uygulamaların kullanımını engellemek için nasıl kullanılabilir?
+- Windows 11 veya 10 Kurumsal güvenlik özelliği.
+- [Teams'i](/microsoftteams/training-microsoft-teams-landing-page) sohbet, video tabanlı konferans, belge paylaşımı ve yazışma konuşmaları için kullanma.
+- E-posta ve zamanlama için [Outlook'u](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) kullanma.
+- Kullanıcının kitaplığındaki dosyalara ve bir gruba ait dosyalara göz atmak ve dosyalar üzerinde işbirliği yapmak için [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) ekibini veya iletişim sitelerini ve [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) klasörlerini kullanma.
 
-Çalışanlarının bu becerileri ve sonuçlarını elde edinlerine yardımcı olmak için uygulamalı alıştırmalar bu eğitimde yer almaktadır.
+Bu eğitim, çalışanlarınızın bu özellikleri ve sonuçlarını deneyimleyebilmesi için uygulamalı alıştırmalar içermelidir.
 
-Çalışanlarınızı soru sormak veya ekip ya da grup gibi sorunları gideren bir forum Yammer oluşturun.
+Çalışanlarınızın soru sorması veya ekip veya Yammer grubu gibi sorunları gidermesi için bir forum oluşturun.
 
-Eğitimden sonra haftalar içinde:
+Eğitimden sonraki haftalarda:
 
-- Forumda çalışan geri bildirimlerine hızlıca hitap edin ve çalışan ilkelerinizi ve yapılandırmalarınızı gereken şekilde ayarlayın.
-- Ekipler, e-posta, SharePoint siteleri ve diğer klasörlerin kullanımını OneDrive ve bunu kullanıcı benimseme beklentileriniz ile karşılaştırın.
+- Forumunuzda çalışan geri bildirimlerini hızla ele alın ve çalışan ilkelerinizi ve yapılandırmalarınızı gerektiği gibi ayarlayın.
+- Ekipler, e-posta, SharePoint siteleri ve OneDrive klasörlerinin kullanımını analiz edin ve kullanıcı benimseme beklentilerinizle karşılaştırın.
 
-Ardından, kullanıcılarınızı gereken şekilde yeniden kısıtlayın.
+Ardından, kullanıcılarınızı gerektiği gibi yeniden eğitin.
 
-## <a name="results-of-step-6"></a>Adım 6'nın sonuçları
+## <a name="results-of-step-6"></a>6. Adımın Sonuçları
 
-Karma çalışanlarınız eğitimlidir ve onlar için güvenlik, uyumluluk, uzaktan erişim ve üretkenlik uygulamalarıyla ilgili geri bildirim ve gönderi sorunları sağlayan hızlı ve açık bir forum vardır.
+Hibrit çalışanlarınız eğitilir ve güvenlik, uyumluluk, uzaktan erişim ve üretkenlik uygulamalarıyla ilgili geri bildirim sağlamak ve sorun göndermek için yanıt veren ve açık bir forum vardır.

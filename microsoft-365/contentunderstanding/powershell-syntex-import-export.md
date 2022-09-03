@@ -1,35 +1,35 @@
 ---
-title: PowerShell ile modelleri anlamak için belgeyi dışarı ve içeri aktarma
+title: PowerShell ile belge anlama modellerini dışarı ve içeri aktarma
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: PowerShell'de modelleri anlamak için belgeyi dışarı ve içeri aktarmayı ve SharePoint Syntex.
-ms.openlocfilehash: dc35d298ebd79752684c91ce944333277fcef621
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: SharePoint Syntex'de PowerShell ile belge anlama modellerini dışarı ve içeri aktarma hakkında bilgi edinin.
+ms.openlocfilehash: a022ee3be11470892cc62dda06173e83ee50f865
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63527012"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585234"
 ---
-# <a name="export-and-import-document-understanding-models-with-powershell"></a>PowerShell ile modelleri anlamak için belgeyi dışarı ve içeri aktarma
+# <a name="export-and-import-document-understanding-models-with-powershell"></a>PowerShell ile belge anlama modellerini dışarı ve içeri aktarma
 
 > [!IMPORTANT]
-> En SharePoint Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, bunlar için destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlarıdır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
+> SharePoint Syntex PowerShell cmdlet'leri ve diğer tüm PnP bileşenleri, bunlar için destek sağlayan etkin bir topluluk tarafından desteklenen açık kaynak araçlardır. Resmi Microsoft destek kanallarından açık kaynak araç desteği için SLA yoktur.
 
-SharePoint Syntex PnP şablonları olarak dışarı aktararak içerik merkezleri veya kiracılar arasında yeniden kullanımı etkinleştirebilirsiniz.
+SharePoint Syntex modeller PnP şablonları olarak dışarı aktarılabilir ve böylece içerik merkezleri veya kiracılar arasında yeniden kullanılabilir.
 
-## <a name="export-all-models-in-a-content-center"></a>İçerik merkezinde tüm modelleri dışarı aktarma
+## <a name="export-all-models-in-a-content-center"></a>İçerik merkezindeki tüm modelleri dışarı aktarma
 
-İçerik merkezinde bulunan tüm modelleri tek bir PnP şablonuna dışarı aktarma için aşağıdaki [PnP PowerShell](https://pnp.github.io/powershell/) cmdlet'lerini kullanın:
+İçerik merkezindeki tüm modelleri tek bir PnP şablonuna aktarmak için aşağıdaki [PnP PowerShell](https://pnp.github.io/powershell/) cmdlet'lerini kullanın:
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -39,7 +39,7 @@ Get-PnPSiteTemplate -Out MyModels.pnp -Handlers SyntexModels
 
 ## <a name="export-specific-models"></a>Belirli modelleri dışarı aktarma
 
-İçerik merkezinden PnP şablonuna belirli modelleri dışarı aktarma için, aşağıdaki [PnP PowerShell](https://pnp.github.io/powershell/) cmdlet'lerini kullanın:
+belirli modelleri bir içerik merkezinden PnP şablonuna aktarmak için aşağıdaki [PnP PowerShell](https://pnp.github.io/powershell/) cmdlet'lerini kullanın:
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -47,9 +47,9 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
 Get-PnPSiteTemplate -Out MyModels.pnp -Configuration .\extract.json
 ```
 
-extract.json dışarı aktarmak istediğiniz modelleri tanımlar ve modele göre ad veya kimlikle belirtmek ve isteğe bağlı olarak eğitim verilerini ayıklamak için yapılandırmaya izin verir.
+extract.json, hangi modelleri dışarı aktarmak istediğinizi tanımlar ve modeli ada veya kimliğe göre belirtmeye ve isteğe bağlı olarak eğitim verilerini ayıklamamak için yapılandırmaya olanak tanır.
 
-### <a name="example---specify-model-by-name"></a>Örnek - Modeli adına göre belirtin
+### <a name="example---specify-model-by-name"></a>Örnek - Modeli ada göre belirtme
 
 ```json
 {
@@ -68,7 +68,7 @@ extract.json dışarı aktarmak istediğiniz modelleri tanımlar ve modele göre
 }
 ```
 
-### <a name="example---specify-model-by-id"></a>Örnek - Modele Göre Kimlik Belirtme
+### <a name="example---specify-model-by-id"></a>Örnek - Model kimliğine göre belirtme
 
 ```json
 {
@@ -88,15 +88,15 @@ extract.json dışarı aktarmak istediğiniz modelleri tanımlar ve modele göre
 }
 ```
 
-"includeTrainingData" özelliğini dahil etmek yoksa, varsayılan davranış şunları eklemektir.
+"includeTrainingData" özelliğini eklemezseniz, varsayılan davranış dahil edilir.
 
 > [!NOTE]
-> Bir modelin hedef içerik merkezine aktarılabilir olması için eğitim verileri gereklidir.
+> Modelin hedef içerik merkezine aktarıldığında düzenlenebilir olması için eğitim verileri gereklidir.
 
 ## <a name="import-models-to-a-content-center"></a>Modelleri içerik merkezine aktarma
-PnP şablonlarına dışarı aktarılan modelleri anlama belgesi, herhangi bir kiracının içerik merkezine aktarıldı. Dışarı aktarmada eğitim verileri varsa, model bir kez aktarıldıktan sonra düzenlenebilir.
+PnP şablonlarına aktarılan belgeleri anlama modelleri herhangi bir kiracıdaki içerik merkezine aktarılabilir. Dışarı aktarma işlemi eğitim verilerini de içerdiyse, model içeri aktarıldıktan sonra düzenlenebilir.
 
-Bir modeli içeri aktarma işlemi için aşağıdaki komutları kullanın:
+Modeli içeri aktarmak için aşağıdaki komutları kullanın:
 
 ```PowerShell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"

@@ -1,8 +1,8 @@
 ---
 title: Ağ koruması ile ilgili sorunları giderme
-description: Pertahanan Microsoft untuk Titik Akhir'de Ağ koruması ile ilgili sorunları gidermek için kaynaklar ve örnek kod.
-keywords: sorun giderme, hata, düzeltme, windows defender eg, asr, kurallar, kalçalar, sorun giderme, denetim, dışlama, hatalı pozitif, bozuk, engelleme, Pertahanan Microsoft untuk Titik Akhir
-ms.prod: m365-security
+description: Uç Nokta için Microsoft Defender'de Ağ korumasıyla ilgili sorunları gidermek için kaynaklar ve örnek kod.
+keywords: sorun giderme, hata, düzeltme, windows defender eg, asr, kurallar, kalçalar, sorun giderme, denetim, dışlama, hatalı pozitif, bozuk, engelleme, Uç Nokta için Microsoft Defender
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,27 +12,27 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fbb3a9e038dcd9f342065d538762b41c0673f7e6
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 6b901bf480bda34318042cefb2f8edc8b1f920fb
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783171"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579919"
 ---
 # <a name="troubleshoot-network-protection"></a>Ağ koruması sorunlarını giderme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Şunlar için geçerlidir:**
-- [Pertahanan Microsoft untuk Titik Akhir Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Uç Nokta için Defender'ı deneyimlemek mi istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Bu makalede, [ağ koruması](network-protection.md) için aşağıdaki gibi durumlarda sorun giderme bilgileri sağlanır:
 
@@ -82,7 +82,7 @@ Denetim modunda ağ korumasını etkinleştirebilir ve ardından özelliğin tan
 
 Özelliği tanıtım sitesiyle ve denetim moduyla test ettiyseniz ve ağ koruması önceden yapılandırılmış senaryolar üzerinde çalışıyor ancak belirli bir bağlantı için beklendiği gibi çalışmıyorsa ağ koruması için hatalı negatif veya hatalı pozitif raporlamak için [Windows Defender Güvenlik Zekası web tabanlı gönderim formunu](https://www.microsoft.com/wdsi/filesubmission) kullanın. E5 aboneliğiyle [, ilişkili uyarıların bağlantısını da sağlayabilirsiniz](alerts-queue.md).
 
-Bkz[. Pertahanan Microsoft untuk Titik Akhir hatalı pozitif/negatifleri adresle](defender-endpoint-false-positives-negatives.md).
+Bkz[. Uç Nokta için Microsoft Defender hatalı pozitif/negatifleri adresle](defender-endpoint-false-positives-negatives.md).
 
 ## <a name="add-exclusions"></a>Dışlama ekleme
 
@@ -90,7 +90,7 @@ Geçerli dışlama seçenekleri şunlardır:
 
 1. Özel bir izin verme göstergesi ayarlama.
 2. IP dışlamalarını kullanma: `Add-MpPreference -ExclusionIpAddress 192.168.1.1`
-3. İşlemin tamamını dışlama. Daha fazla bilgi için bkz. [dışlamalar Microsoft Defender Virüsten Koruma](configure-exclusions-microsoft-defender-antivirus.md). 
+3. İşlemin tamamını dışlama. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma dışlamaları](configure-exclusions-microsoft-defender-antivirus.md). 
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>Dosya gönderimleri için tanılama verilerini toplama
 
@@ -128,7 +128,7 @@ Kayıt defteri anahtarını PowerShell, Microsoft Endpoint Manager veya grup ilk
 
 - [Kayıt Defteri Anahtarları ile Çalışma](/powershell/scripting/samples/working-with-registry-keys)
 - [Endpoint Protection için özel istemci ayarlarını yapılandırma](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
-- [Endpoint Protection yönetmek için grup ilkesi ayarlarını kullanma](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
+- [Endpoint Protection'ı yönetmek için grup ilkesi ayarlarını kullanma](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

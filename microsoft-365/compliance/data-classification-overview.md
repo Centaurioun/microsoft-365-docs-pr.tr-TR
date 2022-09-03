@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Veri sınıflandırma panosu, kuruluşunuzda ne kadar hassas veri bulunduğunu ve sınıflandırıldığını size gösterir.
-ms.openlocfilehash: dccc33715b2a3cd489d7fd65fa47773952cf8727
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 188cb8b28f2a1468fd72236cf160a01e99c16634
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917595"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67579346"
 ---
 # <a name="learn-about-data-classification"></a>Veri sınıflandırması hakkında daha fazla bilgi edinme
 
@@ -46,9 +46,9 @@ Bu özellikleri veri sınıflandırma sayfasında da yönetirsiniz:
 
 Veri sınıflandırmasını <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview uyumluluk portalı</a> veya <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalı</a> > **Sınıflandırma** > **Veri Sınıflandırması'nda** bulabilirsiniz.
 
-<!--Take a video tour of our data classification features.
+Veri sınıflandırma özelliklerimiz için video turuna katılın.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]-->
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
 
 Veri sınıflandırması, herhangi bir ilke oluşturmadan önce hassas içeriğinizi ve etiketli içeriğinizi tarar. Buna **sıfır değişiklik yönetimi** adı verilir. Bu, ortamınızdaki tüm saklama ve duyarlılık etiketlerinin etkisini görmenizi sağlar ve koruma ve idare ilkesi gereksinimlerinizi değerlendirmeye başlamanızı sağlar.
 

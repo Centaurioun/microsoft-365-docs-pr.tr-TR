@@ -6,23 +6,23 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: dfb4841ac80b1018ec1839a6fa36ec36c4ba298b
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: a1b32883d1928dae9af564be46d17f93711cd2ee
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753980"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584892"
 ---
 # <a name="term-store-reports"></a>Terim deposu raporları
 
-<a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">Terim deposu</a> raporlarına SharePoint yönetim merkezinden erişebilirsiniz. Bu özellik [için SharePoint Syntex](index.md) lisansı gerekir.
+<a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">SharePoint yönetim merkezinde Terim deposu</a> raporlarına erişebilirsiniz. Bu özellik [için SharePoint Syntex](index.md) lisansı gerekir.
 
 **Raporlar'ı** genişletin ve **İçerik hizmetleri'ne** tıklayın.
 

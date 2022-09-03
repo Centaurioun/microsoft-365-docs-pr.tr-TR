@@ -6,7 +6,7 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
@@ -15,12 +15,12 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: high
 description: SharePoint Syntex ayarlama
-ms.openlocfilehash: 3511719e4f396141217a2b4711f642c675ac781e
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 1db23fc1d1d5af03358867aaca901a279b0fe7a1
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617248"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584926"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex ayarlama
 

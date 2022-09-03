@@ -3,7 +3,7 @@ title: Uç Nokta için Microsoft Defender - Mobil Tehdit Savunması
 ms.reviewer: ''
 description: Uç Nokta için Microsoft Defender'da Mobile Threat Defense'e genel bakış
 keywords: mobile, defender, Uç Nokta için Microsoft Defender, ios, mtd, android, security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: f02dc28eb3204922386d0fae26bc1191779641e6
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: 0f94cab9a414a2d5dc8343ff01cd4dcb10636ef2
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67327211"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578090"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Uç Nokta için Microsoft Defender - Mobil Tehdit Savunması
 

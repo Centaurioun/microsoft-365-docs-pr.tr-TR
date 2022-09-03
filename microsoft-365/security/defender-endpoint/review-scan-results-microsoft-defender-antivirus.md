@@ -2,7 +2,7 @@
 title: Microsoft Defender Virüsten Koruma taramalarının sonuçlarını gözden geçirin
 description: Microsoft Endpoint Configuration Manager, Microsoft Intune veya Windows Güvenliği uygulamasını kullanarak taramaların sonuçlarını gözden geçirin
 keywords: tarama sonuçları, düzeltme, tam tarama, hızlı tarama
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,35 +13,35 @@ ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3bbaa19401823eada5b1b9769c259e8296f75924
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: f11d10d3c2f4d030252ad99a772e586f0546dbee
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417578"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585190"
 ---
-# <a name="review-microsoft-defender-antivirus-scan-results"></a>Tarama sonuçlarını Microsoft Defender Virüsten Koruma gözden geçirme
+# <a name="review-microsoft-defender-antivirus-scan-results"></a>Microsoft Defender Virüsten Koruma tarama sonuçlarını gözden geçirin
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Şunlar için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Virüsten Koruma
 
 **Platform**
 - Windows
 
-bir Microsoft Defender Virüsten Koruma taraması tamamlandıktan sonra, [ister isteğe bağlı](run-scan-microsoft-defender-antivirus.md) ister [zamanlanmış bir tarama](scheduled-catch-up-scans-microsoft-defender-antivirus.md) olsun, sonuçlar kaydedilir ve sonuçları görüntüleyebilirsiniz. 
+Microsoft Defender Virüsten Koruma taraması tamamlandıktan sonra, [ister isteğe bağlı](run-scan-microsoft-defender-antivirus.md) ister [zamanlanmış bir tarama](scheduled-catch-up-scans-microsoft-defender-antivirus.md) olsun, sonuçlar kaydedilir ve sonuçları görüntüleyebilirsiniz. 
 
 
 ## <a name="use-configuration-manager-to-review-scan-results"></a>Tarama sonuçlarını gözden geçirmek için Configuration Manager kullanma
 
-Bkz[. Endpoint Protection durumunu izleme](/configmgr/protect/deploy-use/monitor-endpoint-protection).
+Bkz [. Endpoint Protection durumunu izleme](/configmgr/protect/deploy-use/monitor-endpoint-protection).
 
 ## <a name="use-powershell-cmdlets-to-review-scan-results"></a>Tarama sonuçlarını gözden geçirmek için PowerShell cmdlet'lerini kullanma
 
@@ -63,14 +63,14 @@ Get-MpThreat
 
 :::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell kodu" lightbox="../../media/wdav-get-mpthreat.png":::
 
-[PowerShell'i Microsoft Defender Virüsten Koruma](use-powershell-cmdlets-microsoft-defender-antivirus.md) ile kullanma hakkında daha fazla bilgi için bkz. Microsoft Defender Virüsten Koruma yapılandırmak ve çalıştırmak için PowerShell [cmdlet'lerini kullanma ve Defender Virüsten Koruma cmdlet'leri](/powershell/module/defender/).
+[PowerShell'i Microsoft Defender Virüsten Koruma ile](use-powershell-cmdlets-microsoft-defender-antivirus.md) kullanma hakkında daha fazla bilgi için bkz. Microsoft Defender [Virüsten Koruma ve Defender Virüsten Koruma cmdlet'lerini](/powershell/module/defender/) yapılandırmak ve çalıştırmak için PowerShell cmdlet'lerini kullanma.
 
 ## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>Tarama sonuçlarını gözden geçirmek için Windows Yönetim Yönergesi'ni (WMI) kullanma
 
 [**MSFT_MpThreat** ve **MSFT_MpThreatDetection** sınıflarının **Get** yöntemini](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) kullanın.
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

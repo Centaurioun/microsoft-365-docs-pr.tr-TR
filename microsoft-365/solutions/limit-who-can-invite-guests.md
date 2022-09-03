@@ -1,11 +1,11 @@
 ---
-title: Konukları davet edecek kişileri sınırlama
+title: Kimlerin konuk davet edebileceğini sınırlayın
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
@@ -15,53 +15,53 @@ ms.collection:
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
-description: Kimlerin, organizasyona konuk davet edecek kişileri sınırlandırma hakkında bilgi öğrenin.
-ms.openlocfilehash: d8eb9452abb76916940d10fa042dae479358568a
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+description: Kuruluşunuza konuk davet eden kişileri sınırlamayı öğrenin.
+ms.openlocfilehash: ac8417f2fb564c1dcd85b375318f3b3943555974
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63717348"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582724"
 ---
-# <a name="limit-who-can-invite-guests"></a>Konukları davet edecek kişileri sınırlama
+# <a name="limit-who-can-invite-guests"></a>Kimlerin konuk davet edebileceğini sınırlayın
 
-Organizasyonda kimlerin konuk davet edey davetiyesi a sınırlaması  olabilir. Konuk hesapları, ekipleri paylaşmak, siteleri, SharePoint ve klasörleri kuruluş dışındaki diğer kişilerle paylaşmak için kullanılabilir.
+Kuruluşunuzda kimlerin konuk davet edebileceğini sınırlayabilirsiniz. Konuk hesapları ekipleri, SharePoint sitelerini, dosyalarını ve klasörlerini kuruluşunuzun dışındaki kişilerle paylaşmak için kullanılabilir.
 
-İş süreçleriniz için kimlerin konukla paylaşımda sınırlayabileceklerini sınırlamanız gerekiyorsa veya kullanıcıların eğitimi tamamlamak için konuklarla paylaşabileceklerini sınırlandırabilirsiniz. Bunun için, işletmede konuk davetli rolünü kullanarak kimleri paylaşabileceklerini Azure Active Directory.
+İş süreçleriniz, konuklarla paylaşabilecek kişileri sınırlamanızı gerektiriyorsa veya kullanıcıların konuklarla paylaşabilmeleri için eğitimi tamamlamalarını istiyorsanız, Azure Active Directory'de Konuk davet eden rolünü kullanarak kimlerin paylaşabileceğini sınırlayabilirsiniz.
 
-## <a name="create-a-security-group-for-people-allowed-to-invite-guests"></a>Konuk davet etmelerine izin verilen kişiler için güvenlik grubu oluşturma
+## <a name="create-a-security-group-for-people-allowed-to-invite-guests"></a>Konuk davet etmesine izin verilen kişiler için bir güvenlik grubu oluşturma
 
-İlk adım, konukları davet etme izni olan kullanıcılar için bir güvenlik grubu oluşturmaktır. Bu grubu Azure AD rolüne izin verecek şekilde yapılandırdığınızdan emin olun ve ardından buna Konuk davetli rolü attayın.
+İlk adım, konukları davet etmelerine izin verilecek kullanıcılar için bir güvenlik grubu oluşturmaktır. Bu grubu bir Azure AD rolüne izin verecek şekilde yapılandırdığınızdan emin olun ve ardından konuk davet eden rolü atayın.
 
-Konuk davetliler için güvenlik grubu oluşturmak için
-1. Genel yönetici veya [Azure Active Directory](https://aad.portal.azure.com) Yöneticisi hesabını kullanarak e-posta hesabınızla oturum açın.
-1. **Active Directory sayfasında Gruplar'ı** ve **ardından** Yeni **grup'a tıklayın**.
-1. Grup **türü** için **Güvenlik'i seçin**.
-1. Bir Grup **adı yazın.** 
+Konuk davetliler için bir güvenlik grubu oluşturmak için
+1. Genel yönetici veya Güvenlik yöneticisi hesabı kullanarak [Azure Active Directory'de](https://aad.portal.azure.com) oturum açın.
+1. **Active Directory** sayfasında **Gruplar'ı** ve ardından **Yeni grup'ı** seçin.
+1. **Grup türü** için **Güvenlik'i** seçin.
+1. **Bir Grup adı yazın.** 
 1. İsteğe bağlı olarak, grup için bir açıklama ekleyin.
-1. Azure **AD rolleri gruba atanabilir için Evet'i** **seçin**.
-1. Grup sahipleri ve üyeleri ekleyin.
-1. **Roller'in** altında Rol **yok seçili'yi seçin**.
-1. Konuk davetlisi rolünü **arayın ve** seçin, ardından Seç'i **seçin**.
-1. **Oluştur'a** seçin ve bir gruba hangi rollerin atanabilir olduğunu onaylayın. Grubunuz oluşturulur ve üye eklemeniz için hazır olur.
+1. **Gruba Azure AD rol atanabilmesi için** **Evet'i** seçin.
+1. Grup sahiplerini ve üyelerini ekleyin.
+1. **Roller'in** altında **Seçili rol yok'a** tıklayın.
+1. **Konuk davet eden** rolünü arayıp seçin ve ardından **Seç'i** seçin.
+1. **Oluştur'u** seçin ve rollerin atanabileceği bir grup istediğinizi onaylayın. Grubunuz oluşturulur ve üye eklemeniz için hazır.
 
 ## <a name="configure-external-collaboration-settings"></a>Dış işbirliği ayarlarını yapılandırma
 
-Güvenlik grubunu oluşturduktan ve konukları davet etmek istediğiniz kullanıcıları eklediktan sonra, bir sonraki adım Azure AD dış işbirliği ayarlarını yalnızca Konuk davetlisi rolüne sahip olan kullanıcıların konuk davet etmelerine izin verecek şekilde yapılandırmaktır.
+Güvenlik grubunu oluşturduktan ve konuk davet etmek istediğiniz kullanıcıları ekledikten sonraki adım, Azure AD dış işbirliği ayarlarını yalnızca Konuk davet eden rolüne sahip kullanıcıların konuk davet etmelerine izin verecek şekilde yapılandırmaktır.
 
-Genel yöneticilerin bu ayardan bağımsız olarak her zaman konukları davet ety defterine bakabilirsiniz.
+Genel yöneticilerin bu ayardan bağımsız olarak her zaman konukları davet edebildiğini unutmayın.
 
 > [!NOTE]
-> Kiracılar arası erişim ayarlarında yapılan değişikliklerin yürürlüğe girecekleri iki saat sürebilir.
+> Kiracılar arası erişim ayarlarında yapılan değişikliklerin etkili olması iki saat sürebilir.
 
-Azure AD'yi konuk davetlerini Konuk davetlisi rolüyle sınırlandır olacak şekilde yapılandırmak için
-1. Dış [Azure Active Directory'i](https://aad.portal.azure.com/) **seçin**.
-1. Dış **işbirliği ayarları'ı seçin**.
-1. Konuk **daveti ayarları'nın** altında Yalnızca **belirli yönetici rollerine atanan kullanıcılar konukları davet edebilirsiniz'i seçin**.
+konuk davetlerini Konuk davet eden rolüyle sınırlamak için Azure AD yapılandırmak için
+1. [Azure Active Directory'de](https://aad.portal.azure.com/) **Dış kimlikler'i** seçin.
+1. **Dış işbirliği ayarları'nı** seçin.
+1. **Konuk daveti ayarları'nın** altında **Yalnızca belirli yönetici rollerine atanan kullanıcılar konuk davet edebilir'i** seçin.
 1. **Kaydet**'i seçin.
 
 ## <a name="related-topics"></a>İlgili konular
 
-[Yalnızca belirli güvenlik gruplarında yer alan kullanıcıların dış paylaşımda ve gruplarda SharePoint izin OneDrive](/sharepoint/manage-security-groups)
+[Yalnızca belirli güvenlik gruplarındaki kullanıcıların SharePoint ve OneDrive'da harici olarak paylaşmasına izin ver](/sharepoint/manage-security-groups)
 
 [B2B dış işbirliğini etkinleştirme ve konukları kimlerin davet edebileceğini yönetme](/azure/active-directory/external-identities/delegate-invitations)

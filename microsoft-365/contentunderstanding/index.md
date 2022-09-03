@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex'e giriş
+title: Microsoft SharePoint Syntex'ye giriş
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -9,29 +9,29 @@ ms.topic: landing-page
 ms.custom:
 - intro-overview
 - intro-get-started
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex için kaynakları nasıl bu SharePoint Syntex.
-ms.openlocfilehash: 1b57283b5818a7fa502e112d903f873863a6e1b6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
-ms.translationtype: HT
+description: Microsoft SharePoint Syntex kaynaklarını bulmayı öğrenin.
+ms.openlocfilehash: 55714bdf4f362978ee77e152dea7a4dfccbd9f00
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682074"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583725"
 ---
-# <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'e giriş
+# <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'ye giriş
 
-SharePoint Syntex, kuruluşların Microsoft 365 yardımcı olan bir hizmettir:
+SharePoint Syntex, kuruluşların şunları yapmaya yardımcı olan bir Microsoft 365 hizmetidir:
 
-- İnsan deneyimlerini güçlendiren gelişmiş AI ve makine öğretimini kullanın
+- İnsan deneyimlerini yükseltmek için gelişmiş yapay zeka ve makine öğretimi kullanma
 - İçerik işlemeyi otomatikleştirme
 - İçeriği bilgiye dönüştürme
 
-Bu sayfada yer alan kaynaklar, kuruluşta diğer kaynakları ve kaynakları SharePoint Syntex başlamanıza yardımcı olacak şekilde tasarlanmıştır.
+Bu sayfadaki kaynaklar, kuruluşunuzdaki SharePoint Syntex hakkında bilgi edinmeye ve kullanmaya başlamanızı sağlamak için tasarlanmıştır.
 
 </br>
 
@@ -41,76 +41,76 @@ Bu sayfada yer alan kaynaklar, kuruluşta diğer kaynakları ve kaynakları Shar
 
 ## <a name="get-started"></a>Kullanmaya başlayın
 
-Bu bölümdeki kaynaklar, bir ekibin kullandığı veri sınıflandırma ve ayıklama yöntemleri hakkında daha fazla bilgi SharePoint Syntex. İki özel model türü vardır: [belgeyi anlama](document-understanding-overview.md) ve [form işleme ve](form-processing-overview.md) önceden [oluşturulmuş](prebuilt-overview.md) model türü.
+Bu bölümdeki kaynaklar, SharePoint Syntex tarafından kullanılan veri sınıflandırma ve ayıklama yöntemleri hakkında daha fazla bilgi edinmenize yardımcı olur. [belge anlama](document-understanding-overview.md) ve [form işleme](form-processing-overview.md) olmak üzere iki özel model türü ve [önceden oluşturulmuş](prebuilt-overview.md) bir model türü vardır.
 
 > [!NOTE]
-> SharePoint yönetim merkezinden bir içerik merkezi oluşturarak bu [SharePoint Syntex satın almadan SharePoint başlatabilirsiniz](create-a-content-center.md). Lisanssız kullanıcılar belge anlama modelleri oluşturabilir, ancak bunları belge kitaplığına uygulayamaz.
+> [SharePoint yönetim merkezinden bir içerik merkezi oluşturarak](create-a-content-center.md) lisans satın almadan SharePoint Syntex kullanmaya başlayabilirsiniz. Lisanssız kullanıcılar belge anlama modelleri oluşturabilir ancak bunları belge kitaplığına uygulayamaz.
 
-| Bu bilgileri arıyorsanız: | Bu kaynağa gidin: |
+| Bu bilgileri arıyorsanız: | Şu kaynağa gidin: |
 |:-----|:-----|
-|Belgeyi anlama hakkında daha fazla bilgi|[Belgeyi anlamaya genel bakış](./document-understanding-overview.md)|
-|Form işleme hakkında daha fazla bilgi|[Form işlemeye genel bakış](./form-processing-overview.md)|
+|Belge anlama hakkında daha fazla bilgi edinin|[Belge anlamaya genel bakış](./document-understanding-overview.md)|
+|Form işleme hakkında daha fazla bilgi edinin|[Form işlemeye genel bakış](./form-processing-overview.md)|
 |İki yöntem arasındaki farkları anlama|[Belge anlama ve form işleme modelleri arasındaki fark](./difference-between-document-understanding-and-form-processing-model.md)|
-|Microsoft Tech Teknik Kaynak Merkezi'Community kaynakları görme|[SharePoint Syntex - Microsoft 365'de içerik hizmetleri](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
-|SharePoint Syntex Tech Kaynak Merkezi'nde Community hakkında SSS |[SharePoint Syntex - SSS](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
-|Nasıl SharePoint Syntex |[SharePoint Syntex sayfası](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
-|E-SharePoint Syntex |[SharePoint Syntex yolunu öğrenme](/learn/paths/syntex-get-started)|
+|Microsoft Tech Community Kaynak Merkezi'nde kaynaklara bakın|[SharePoint Syntex - Microsoft 365'teki içerik hizmetleri](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
+|Microsoft Tech Community Kaynak Merkezi hakkında SharePoint Syntex SSS |[SharePoint Syntex - SSS](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
+|SharePoint Syntex alma |[SharePoint Syntex ürün sayfası](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
+|SharePoint Syntex kullanmayı öğrenin |[SharePoint Syntex öğrenme yolu](/learn/paths/syntex-get-started)|
 
 ## <a name="adoption"></a>Benimseme
 
-İşle ilgili sorunlarınızı çözmenize yardımcı olmak için SharePoint Syntex sorunları nasıl kullanabileceğiniz ve uygulay çocuklar hakkında daha fazla bilgi edinin.
+İş sorunlarınızı çözmenize yardımcı olmak için kuruluşunuzda SharePoint Syntex kullanma ve uygulama hakkında daha fazla bilgi edinin.
 
-| Bu bilgileri arıyorsanız: | Bu kaynağa gidin: |
+| Bu bilgileri arıyorsanız: | Şu kaynağa gidin: |
 |:-----|:-----|
-|SharePoint Syntex'i kullanmayı planlamaya nasıl başlayacağını SharePoint Syntex |[SharePoint Syntex benimseme: çalışmaya başlama](./adoption-getstarted.md)| 
-|Örnek senaryolara bakarak, size bu senaryoları SharePoint Syntex hakkında fikir verme |[Durumlar için senaryolar ve kullanım SharePoint Syntex](./adoption-scenarios.md)| 
-|Deneme sürümü için bir deneme pilot programı ayarlayın SharePoint Syntex |[Deneme sürümü çalıştırma](./trial-syntex.md)|
-|Belge işlemlerini otomatikleştirmek için SharePoint Syntex kullanma hakkında bilgi |[Yeni bir çözüm kullanarak Microsoft 365 yönetin](./solution-manage-contracts-in-microsoft-365.md)| 
-|Sözleşmeleri yönetmeye yardımcı olmak SharePoint özelleştirilebilir bir site şablonu deneyin |[Sözleşme Yönetimi site şablonunu kullanma](./use-contracts-management-site.md)| 
-|Modeller hakkında daha fazla bilgi edinmek için, yönergeli bir İçerik Merkezi site şablonunu deneyin |[İçerik Merkezi site şablonunu kullanma](./use-content-center-site.md)| 
+|SharePoint Syntex kullanmayı planlamayı öğrenin |[benimsemeyi SharePoint Syntex: kullanmaya başlama](./adoption-getstarted.md)| 
+|Kuruluşunuzda SharePoint Syntex nasıl kullanabileceğiniz hakkında fikir vermek için örnek senaryolara bakın |[SharePoint Syntex için senaryolar ve kullanım örnekleri](./adoption-scenarios.md)| 
+|SharePoint Syntex için deneme pilot programı ayarlama ve çalıştırma |[Deneme sürümü çalıştırın](./trial-syntex.md)|
+|Belge işlemlerini otomatikleştirmek için SharePoint Syntex kullanmayı öğrenin |[Microsoft 365 çözümü kullanarak sözleşmeleri yönetme](./solution-manage-contracts-in-microsoft-365.md)| 
+|Sözleşmeleri yönetmeye yardımcı olmak için özelleştirilebilir bir SharePoint site şablonu deneyin |[Sözleşme Yönetimi site şablonunu kullanma](./use-contracts-management-site.md)| 
+|Modeller hakkında daha fazla bilgi edinmek için yönerge içerik merkezi site şablonunu deneyin |[İçerik Merkezi site şablonunu kullanma](./use-content-center-site.md)| 
 
-## <a name="set-up-sharepoint-syntex"></a>Ayarlama SharePoint Syntex
+## <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex ayarlama
 
-Bu bölümdeki kaynaklar, aynı ortamda organizasyon yöneticinizin Microsoft SharePoint Syntex ayarlaması ve Microsoft 365 yardımcı olur.
+Bu bölümdeki kaynaklar, kuruluşunuzdaki yöneticinizin Microsoft 365 ortamınızda Microsoft SharePoint Syntex ayarlamasına ve yapılandırmasına yardımcı olur.
 
-| Bu bilgileri arıyorsanız: | Bu kaynağa gidin: |
+| Bu bilgileri arıyorsanız: | Şu kaynağa gidin: |
 |:-----|:-----|
-|E-postayı ayarlama ve SharePoint Syntex|[Ayarlama SharePoint Syntex](./set-up-content-understanding.md)|
-|Lisanslama hakkında bilgi SharePoint Syntex|[Lisanslama SharePoint Syntex](./syntex-licensing.md)|
-|Resim etiketleme ve devre dışı bırakma hakkında bilgi|[Resim etiketleme SharePoint Syntex](./image-tagging.md)|
-|Veri yönetimi için PowerShell SharePoint Syntex|[PowerShell SharePoint Syntex yönetme](./powershell-syntex-intro.md)|
+|SharePoint Syntex ayarlama ve yapılandırma|[SharePoint Syntex ayarlama](./set-up-content-understanding.md)|
+|SharePoint Syntex için lisanslama hakkında bilgi edinin|[SharePoint Syntex lisansı](./syntex-licensing.md)|
+|Görüntü etiketleme ve devre dışı bırakma hakkında bilgi edinin|[SharePoint Syntex resim etiketleme](./image-tagging.md)|
+|SharePoint Syntex yönetmek için PowerShell kullanma|[PowerShell ile SharePoint Syntex yönetme](./powershell-syntex-intro.md)|
 
-## <a name="models"></a>Modeller
+## <a name="models"></a>Model
 
-Bu bölümdeki kaynaklar, kullanıcılarınızı belge anlama ve form işleme modellerini oluşturma ve yapılandırmayı öğrenmesine yardımcı olur.
+Bu bölümdeki kaynaklar, kullanıcılarınızın belge anlama ve form işleme modelleri oluşturmayı ve yapılandırmayı öğrenmesine yardımcı olur.
 
-| Bu bilgileri arıyorsanız: | Bu kaynağa gidin: |
+| Bu bilgileri arıyorsanız: | Şu kaynağa gidin: |
 |:-----|:-----|
-|Modellerle çalışma hakkında bilgi|[İçerik merkezi oluşturma](./create-a-content-center.md)<br><br>[Sınıflandırıcı oluşturma](./create-a-classifier.md)<br><br>[Modeli çoğaltma](./duplicate-a-model.md)<br><br>[Modeli yeniden adlandırma](./rename-a-model.md)<br><br>[Ayıklaıcı oluşturma](./create-an-extractor.md)<br><br>[Ayıklayı yeniden adlandırma](./rename-an-extractor.md)<br><br>[Form işleme modeli oluşturma](./create-a-form-processing-model.md)<br><br>[Açıklama türleri](./explanation-types-overview.md)<br><br>[Açıklama şablonlarını kullanma](./explanation-templates.md)<br><br>[Belge anlama modeli uygulama](./apply-a-model.md)<br><br>[Örnek model aracılığıyla modelleri anlama belgeyi anlama hakkında bilgi alın](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
+|Modellerle çalışmayı öğrenin|[İçerik merkezi oluştur](./create-a-content-center.md)<br><br>[Sınıflandırıcı oluştur](./create-a-classifier.md)<br><br>[Modeli çoğalt](./duplicate-a-model.md)<br><br>[Modeli yeniden adlandır](./rename-a-model.md)<br><br>[Ayıklayıcı oluştur](./create-an-extractor.md)<br><br>[Ayıklayıcıyı yeniden adlandır](./rename-an-extractor.md)<br><br>[Form işleme modeli oluştur](./create-a-form-processing-model.md)<br><br>[Açıklama türleri](./explanation-types-overview.md)<br><br>[Açıklama şablonlarını kullanın](./explanation-templates.md)<br><br>[Bir belge anlama modeli uygulayın](./apply-a-model.md)<br><br>[Örnek model aracılığıyla modelleri anlama belgesi hakkında bilgi edinin](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |Modelinize bekletme etiketi uygulama|[Belge anlama modeline bekletme etiketi uygulama](./apply-a-retention-label-to-a-model.md)|
-|Modelinize duyarlılık etiketi uygulama|[Belge anlama modeline duyarlılık etiketi ekleme](./apply-a-sensitivity-label-to-a-model.md)|
-|Belgelerden bilgi ayıklamak için önceden oluşturulmuş modelleri kullanma |[Faturalardan veya faturalardan bilgi ayıklamak için önceden oluşturulmuş bir model kullanın](./prebuilt-models.md)|
-|Aynı sitede modelleri yerel olarak oluşturma SharePoint eğitin |[Yerel bir site üzerinde model SharePoint oluşturma](./create-local-model.md)|
-|Diğer içerik merkezlerinde eğitim modellerini kullanma |[Modellerin anlaşılması için belge yayımlama ve keşfetme](./model-discovery.md)|
-|Belge kitaplıklarında meta veri tabanlı sorgular gerçekleştirme|[Belge kitaplıklarında meta veri arama](./metadata-search.md)|
-|Ayıklaıcı oluştururken Yönetilen Meta Veri hizmetleri terim deposu taksonomisini kullanma|[Ayıklaıcı oluştururken terim deposu taksonomilerinden faydalanma](./leverage-term-store-taxonomy.md)|
-|Modelleriniz hakkında verileri nasıl göreceğinizi öğrenin|[Model kullanım analizi](./model-usage-analytics.md)|
-|Model eğitimleri için erişilebilirlik modunu kullanmayı öğrenin|[SharePoint Syntex modu](./accessibility-mode.md)|
+|Modelinize duyarlılık etiketi uygulama|[Belge anlama modeline duyarlılık etiketi uygulama](./apply-a-sensitivity-label-to-a-model.md)|
+|Belgelerden bilgi ayıklamak için önceden oluşturulmuş modelleri kullanma |[Faturalardan veya makbuzlardan bilgi ayıklamak için önceden oluşturulmuş bir model kullanma](./prebuilt-models.md)|
+|SharePoint sitesinde modelleri yerel olarak oluşturma ve eğitma |[Yerel SharePoint sitesinde model oluşturma](./create-local-model.md)|
+|Eğitilmiş modelleri diğer içerik merkezlerinde kullanma |[Belge anlama modellerini yayımlama ve keşfetme](./model-discovery.md)|
+|Belge kitaplıklarında meta veri tabanlı sorgular gerçekleştirme|[Belge kitaplıklarında meta verileri arama](./metadata-search.md)|
+|Ayıklayıcı oluştururken Yönetilen Meta Veri hizmetleri terim deposu taksonomisini kullanma|[Ayıklayıcı oluştururken terim deposu taksonomisini kullan](./leverage-term-store-taxonomy.md)|
+|Modellerinizle ilgili verileri nasıl göreceğinizi öğrenin|[Model kullanım analizi](./model-usage-analytics.md)|
+|Modeli eğitirken erişilebilirlik modunu kullanmayı öğrenin|[erişilebilirlik modunu SharePoint Syntex](./accessibility-mode.md)|
 
-## <a name="premium-services"></a>Premium hizmetleri
+## <a name="premium-services"></a>Premium hizmetler
 
-Yeni SharePoint Syntex lisansı, kullanıcılarınıza bu ortamda size ek işlevler veren premium içerik Microsoft 365 verir. Bu bölümdeki kaynaklar, bu özellikler ve bunların nasıl kullanımı hakkında daha fazla ayrıntı sağlar.
+SharePoint Syntex lisansı, kullanıcılarınıza Microsoft 365 ortamınızda ek işlevsellik sağlayan premium içerik hizmetleri sağlar. Bu bölümdeki kaynaklar, bu özellikler ve bunların nasıl kullanılacağı hakkında daha fazla ayrıntı sağlar.
 
-| Bu bilgileri arıyorsanız: | Bu kaynağa gidin: |
+| Bu bilgileri arıyorsanız: | Şu kaynağa gidin: |
 |:-----|:-----|
-|Basit Bilgi Kuruluş Sistemi tabanlı biçimi kullanarak veri kümesi içeri aktarma hakkında bilgi|[SKOS tabanlı bir biçim kullanarak terim kümesi içeri aktarma](./import-term-set-skos.md)<br><br>[Taksonomi için SKOS SharePoint başvurusu](./skos-format-reference.md)<br><br>|
-|İçerik türlerinin kitaplık ve listelerde daha tutarlı bir SharePoint şekilde nasıl kullanılabilir olduğunu öğrenin|[İçerik türlerini hub'a itme](./push-content-type-to-hub.md)|
-|Size uygun terim deposu raporları hakkında bilgi|[Terim deposu raporları](./term-store-analytics.md)|
+|Basit Bilgi Kuruluşu Sistemi tabanlı biçimi kullanarak veri kümesini içeri aktarma hakkında bilgi edinin|[SKOS tabanlı biçim kullanarak terim kümesini içeri aktarma](./import-term-set-skos.md)<br><br>[SharePoint taksonomisi için SKOS biçim başvurusu](./skos-format-reference.md)<br><br>|
+|İçerik türlerini SharePoint kitaplıkları ve listelerinde daha tutarlı bir şekilde nasıl kullanılabilir hale getireceğinizi öğrenin|[İçerik türlerini hub'a gönderme](./push-content-type-to-hub.md)|
+|Kullanabileceğiniz terim deposu raporları hakkında bilgi edinin|[Terim deposu raporları](./term-store-analytics.md)|
 
 ## <a name="extensibility"></a>Genişletilebilirlik
 
-REST API'lerini kullanarak belge anlama modeli oluşturun, modeli bir veya daha fazla kitaplıka uygulayarak veya kaldırın, modelle ilgili bilgileri alın veya güncelleştirin.
+Belge anlama modeli oluşturmak, modeli bir veya daha fazla kitaplıkta uygulamak veya kaldırmak ve model hakkındaki bilgileri almak veya güncelleştirmek için REST API'lerini kullanın.
 
-| Bu bilgileri arıyorsanız: | Bu kaynağa gidin: |
+| Bu bilgileri arıyorsanız: | Şu kaynağa gidin: |
 |:-----|:-----|
-|Modelleri belgeyle anlamak için REST API'lerini kullanma|[SharePoint Syntex anlama modeli REST API'si](/sharepoint/dev/apis/syntex/syntex-model-rest-api)|
+|Modelleri belge anlamak için REST API'lerini kullanma|[Belgenin model REST API'sini anlamasını SharePoint Syntex](/sharepoint/dev/apis/syntex/syntex-model-rest-api)|

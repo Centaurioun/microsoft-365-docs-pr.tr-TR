@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.custom: admindeeplinkSPO
 ms.collection:
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da içerik merkezi oluşturmayı öğrenin.
-ms.openlocfilehash: c630bba8bafad8bcbf9749e7a4d08ae1e86f4d68
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: b0151ad464a84e06cc613c9baf06db03a831ceae
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882230"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67583230"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de içerik merkezi oluşturma
 
@@ -34,20 +34,20 @@ Belge anlama modelleri oluşturmak ve yönetmek için önce bir içerik merkezi 
 
    ![Bir belge kitaplığı seçin.](../media/content-understanding/content-center-page.png)
 
-[Kurulum](set-up-content-understanding.md) sırasında varsayılan bir içerik merkezi oluşturursunuz. Ancak SharePoint yöneticisi gerektiğinde ek merkezler oluşturmayı da seçebilir. Tüm model etkinliklerinin toplanmasını istediğiniz ortamlar için tek bir içerik merkezi uygun olsa da, kuruluşunuzdaki birden çok departman için, modelleri için farklı gereksinimlere ve izin gereksinimlerine sahip olabilecek ek merkezleriniz olmasını isteyebilirsiniz.
+[Kurulum](set-up-content-understanding.md) sırasında varsayılan bir içerik merkezi oluşturursunuz. Ancak bir SharePoint yöneticisi gerektiğinde ek merkezler oluşturmayı da seçebilir. Tüm model etkinliklerinin toplanmasını istediğiniz ortamlar için tek bir içerik merkezi uygun olsa da, kuruluşunuzdaki birden çok departman için, modelleri için farklı gereksinimlere ve izin gereksinimlerine sahip olabilecek ek merkezleriniz olmasını isteyebilirsiniz.
 
 Ayrıca, SharePoint Syntex denemek istiyorsanız, lisans satın almadan bu makaledeki yönergeleri kullanarak bir içerik merkezi oluşturabilirsiniz. Lisanssız kullanıcılar belge anlama modelleri oluşturabilir ancak bunları belge kitaplığına uygulayamaz.
 
 > [!NOTE]
 > [Microsoft 365 Multi-Geo ortamında](../enterprise/microsoft-365-multi-geo.md), merkezi konumunuzda tek bir varsayılan içerik merkeziniz varsa, yalnızca bu konumdan model etkinliğinin bir toplu işlemini sağlayabilirsiniz. Şu anda Multi-Geo ortamında grup sınırları boyunca model etkinliğinin bir toplu işlemini alamazsınız. 
 
-## <a name="create-a-content-center"></a>İçerik merkezi oluşturma
+## <a name="create-a-content-center"></a>İçerik merkezi oluştur
 
-bir SharePoint yöneticisi, yönetim merkezi sitesi sağlama paneli aracılığıyla [başka bir SharePoint sitesi oluşturmak](/sharepoint/create-site-collection) gibi bir içerik merkezi sitesi oluşturabilir.
+SharePoint yöneticisi, yönetim merkezi sitesi sağlama paneli aracılığıyla [başka bir SharePoint sitesi oluşturacağı](/sharepoint/create-site-collection) gibi bir içerik merkezi sitesi oluşturabilir.
 
 Yeni bir içerik merkezi oluşturmak için:
 
-1. Microsoft 365 yönetim merkezi <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**etkin siteler** > SharePoint yönetim merkezine</a> gidin.
+1. Microsoft 365 yönetim merkezi, <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Etkin siteler** > SharePoint yönetim merkezine</a> gidin.
 
 2. **Etkin Siteler** sayfasında **Oluştur'a** tıklayın ve **ardından Diğer seçenekler'i** seçin.
 
@@ -60,7 +60,7 @@ Yeni bir içerik merkezi oluşturmak için:
 
 5. **Bitti'yi** seçin.
  
-bir içerik merkezi sitesi oluşturduktan sonra, SharePoint yönetim merkezindeki <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Etkin sitelerde**</a> listelendiğini görürsünüz. 
+bir içerik merkezi sitesi oluşturduktan sonra, siteyi SharePoint yönetim merkezindeki <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Etkin sitelerde**</a> listelenmiş olarak görürsünüz. 
 
 ### <a name="give-access-to-additional-users"></a>Ek kullanıcılara erişim verme
  
@@ -79,14 +79,14 @@ Varsayılan içerik merkezi görünümündeki **Modeller** kitaplığı, oluştu
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflandırıcı oluşturma](create-a-classifier.md)
+[Sınıflandırıcı oluştur](create-a-classifier.md)
 
-[Ayıklayıcı oluşturma](create-an-extractor.md)
+[Ayıklayıcı oluştur](create-an-extractor.md)
 
-[İçerik merkezi oluşturma](create-a-content-center.md)
+[İçerik merkezi oluştur](create-a-content-center.md)
 
 [Belge anlamaya genel bakış](document-understanding-overview.md)
 
-[Form işleme modeli oluşturma](create-a-form-processing-model.md)
+[Form işleme modeli oluştur](create-a-form-processing-model.md)
 
 [Model uygulama](apply-a-model.md)

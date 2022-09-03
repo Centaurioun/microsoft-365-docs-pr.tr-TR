@@ -1,8 +1,8 @@
 ---
-title: Pertahanan Microsoft untuk Titik Akhir dağıtımı ayarlama
-description: Pertahanan Microsoft untuk Titik Akhir için dağıtımı ayarlamayı öğrenin
+title: Uç Nokta için Microsoft Defender dağıtımı ayarlama
+description: Uç Nokta için Microsoft Defender için dağıtımı ayarlamayı öğrenin
 keywords: dağıtma, kurulum, lisans doğrulama, kiracı yapılandırması, ağ yapılandırması
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,17 +15,18 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-scenario
+- highpri
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bae66223494d8de98737516cef1a2c407d7d1a6a
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.subservice: mde
+ms.openlocfilehash: abfa6200a1250ff9fda8cf30c6106a39eff4f25b
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783545"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584848"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Pertahanan Microsoft untuk Titik Akhir dağıtımı ayarlama
+# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Uç Nokta için Microsoft Defender dağıtımı ayarlama
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +35,7 @@ ms.locfileid: "64783545"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Pertahanan Microsoft untuk Titik Akhir mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Uç Nokta için Defender'ın dağıtılması üç aşamalı bir işlemdir:
 
@@ -51,13 +52,13 @@ Bu dağıtım senaryosunda aşağıdaki adımlarda size yol gösterilir:
 - Ağ yapılandırması
 
 > [!NOTE]
-> Tipik bir dağıtımda size yol göstermek amacıyla, bu senaryo yalnızca Microsoft Endpoint Configuration Manager kullanımını kapsar. Uç Nokta için Defender diğer ekleme araçlarının kullanımını destekler ancak dağıtım kılavuzunda bu senaryoları kapsamaz. Daha fazla bilgi için bkz[. cihazları Pertahanan Microsoft untuk Titik Akhir ekleme](onboard-configure.md).
+> Tipik bir dağıtımda size yol göstermek amacıyla, bu senaryo yalnızca Microsoft Endpoint Configuration Manager kullanımını kapsar. Uç Nokta için Defender diğer ekleme araçlarının kullanımını destekler ancak dağıtım kılavuzunda bu senaryoları kapsamaz. Daha fazla bilgi için bkz[. Cihazları Uç Nokta için Microsoft Defender ekleme](onboard-configure.md).
 
 ## <a name="check-license-state"></a>Lisans durumunu denetleme
 
-Lisans durumunu ve doğru şekilde sağlanıp sağlanmadığını denetleme işlemi yönetim merkezi veya **Microsoft Azure portalı** üzerinden yapılabilir.
+Lisans durumunu ve doğru şekilde sağlanıp sağlanmadığını denetleme işlemi yönetim merkezi veya **Microsoft Azure portal** aracılığıyla yapılabilir.
 
-1. Lisanslarınızı görüntülemek için **Microsoft Azure portalına** gidin ve [Microsoft Azure portalı lisans bölümüne gidin](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
+1. Lisanslarınızı görüntülemek için **Microsoft Azure portal** ve [Microsoft Azure portal lisansı bölümüne](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products) gidin.
 
    :::image type="content" source="images/atp-licensing-azure-portal.png" alt-text="Azure Lisanslama sayfası" lightbox="images/atp-licensing-azure-portal.png":::
 
@@ -73,30 +74,30 @@ Lisans durumunu ve doğru şekilde sağlanıp sağlanmadığını denetleme işl
 
 1. **İş ortağı portalından** **Hizmetleri > Office 365 yönet'i** seçin.
 
-2. **İş ortağı portalı** bağlantısına tıklanması **, Yönetici adına** seçeneğini açar ve size müşteri yönetim merkezine erişim verir.
+2. **İş ortağı portalı** bağlantısına tıklanması **, Yönetici adına** seçeneğini açar ve müşteri yönetim merkezine erişmenizi sağlar.
 
    :::image type="content" source="images/atp-O365-admin-portal-customer.png" alt-text="Office 365 yönetim portalı" lightbox="images/atp-O365-admin-portal-customer.png":::
 
 ## <a name="tenant-configuration"></a>Kiracı Yapılandırması
 
-Pertahanan Microsoft untuk Titik Akhir eklemek kolaydır. Gezinti menüsünde Uç Noktalar bölümünden herhangi bir öğeyi veya ekleme işlemini başlatmak için Olaylar, Tehdit Avcılığı, İşlem merkezi veya Tehdit analizi gibi herhangi bir Microsoft 365 Defender özelliğini seçin.
+Uç Nokta için Microsoft Defender eklemek kolaydır. Gezinti menüsünde Uç Noktalar bölümünden herhangi bir öğeyi veya ekleme işlemini başlatmak için Olaylar, Tehdit Avcılığı, İşlem merkezi veya Tehdit analizi gibi herhangi bir Microsoft 365 Defender özelliğini seçin.
 
 Web tarayıcısından <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalına</a> gidin.
 
 ## <a name="data-center-location"></a>Veri merkezi konumu
-Pertahanan Microsoft untuk Titik Akhir verileri [Microsoft 365 Defender tarafından kullanılan konumda](/microsoft-365/security/defender/m365d-enable) depolar ve işler. Microsoft 365 Defender henüz açılmadıysa, Pertahanan Microsoft untuk Titik Akhir'a ekleme işlemi de Microsoft 365 Defender açar ve etkin konumuna bağlı olarak yeni bir veri merkezi konumu otomatik olarak seçilir güvenlik hizmetlerini Microsoft 365. Seçili veri merkezi konumu ekranda gösterilir.
+Uç Nokta için Microsoft Defender verileri [Microsoft 365 Defender tarafından kullanılan konumda](/microsoft-365/security/defender/m365d-enable) depolar ve işler. Microsoft 365 Defender henüz açılmadıysa, Uç Nokta için Microsoft Defender'a ekleme işlemi de Microsoft 365 Defender açar ve etkin Microsoft 365 güvenlik hizmetlerinin konumuna bağlı olarak yeni bir veri merkezi konumu otomatik olarak seçilir. Seçili veri merkezi konumu ekranda gösterilir.
 
 ## <a name="network-configuration"></a>Ağ yapılandırması
 
 Kuruluş, uç noktaların İnternet'e erişmek için Ara Sunucu kullanmasını gerektirmiyorsa bu bölümü atlayın.
 
-Pertahanan Microsoft untuk Titik Akhir algılayıcısı, algılayıcı verilerini raporlamak ve Pertahanan Microsoft untuk Titik Akhir hizmetiyle iletişim kurmak için Microsoft Windows HTTP (WinHTTP) gerektirir. Ekli Pertahanan Microsoft untuk Titik Akhir algılayıcısı LocalSystem hesabını kullanarak sistem bağlamında çalışır. Algılayıcı, Pertahanan Microsoft untuk Titik Akhir bulut hizmetiyle iletişimi etkinleştirmek için Microsoft Windows HTTP Hizmetleri'ni (WinHTTP) kullanır. WinHTTP yapılandırma ayarı, Windows İnternet (WinINet) internet gözatma proxy ayarlarından bağımsızdır ve yalnızca aşağıdaki bulma yöntemlerini kullanarak bir ara sunucuyu bulabilir:
+Uç Nokta için Microsoft Defender algılayıcısı, algılayıcı verilerini raporlamak ve Uç Nokta için Microsoft Defender hizmetiyle iletişim kurmak için Microsoft Windows HTTP (WinHTTP) gerektirir. Ekli Uç Nokta için Microsoft Defender algılayıcısı LocalSystem hesabını kullanarak sistem bağlamında çalışır. Algılayıcı, Uç Nokta için Microsoft Defender bulut hizmetiyle iletişimi etkinleştirmek için Microsoft Windows HTTP Hizmetleri'ni (WinHTTP) kullanır. WinHTTP yapılandırma ayarı, Windows internet (WinINet) internet gözatma proxy ayarlarından bağımsızdır ve yalnızca aşağıdaki bulma yöntemlerini kullanarak bir ara sunucuyu bulabilir:
 
 - **Otomatik bulma yöntemleri**:
   - Saydam ara sunucu
   - Web Proxy Otomatik Bulma Protokolü (WPAD)
 
-  Ağ topolojisinde Saydam ara sunucu veya WPAD uygulanmışsa, özel yapılandırma ayarlarına gerek yoktur. Ara sunucudaki PERTAHANAN MICROSOFT UNTUK TITIK AKHIR URL dışlamaları hakkında daha fazla bilgi için, izin veren URL'ler listesi için bu belgedeki [Ara Sunucu Hizmeti URL'leri](production-deployment.md#proxy-service-urls) bölümüne veya [Cihaz ara sunucusu ve İnternet bağlantısı ayarlarını yapılandırma](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) bölümüne bakın.
+  Ağ topolojisinde Saydam ara sunucu veya WPAD uygulanmışsa, özel yapılandırma ayarlarına gerek yoktur. Proxy'de URL dışlamaları Uç Nokta için Microsoft Defender hakkında daha fazla bilgi için, izin veren URL'ler listesi için bu belgedeki [Ara Sunucu Hizmeti URL'leri](production-deployment.md#proxy-service-urls) bölümüne veya [Cihaz ara sunucusu ve İnternet bağlantısı ayarlarını yapılandırma](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) bölümüne bakın.
 
 - **El ile statik proxy yapılandırması**:
   - Kayıt defteri tabanlı yapılandırma
@@ -106,24 +107,24 @@ Pertahanan Microsoft untuk Titik Akhir algılayıcısı, algılayıcı verilerin
 
 ### <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Ara sunucuyu kayıt defteri tabanlı statik proxy kullanarak el ile yapılandırma
 
-Bir bilgisayarın İnternet'e bağlanmasına izin verilmiyorsa, yalnızca Pertahanan Microsoft untuk Titik Akhir algılayıcısının tanılama verilerini raporlamasına ve Pertahanan Microsoft untuk Titik Akhir hizmetleriyle iletişim kurmasına izin verecek şekilde kayıt defteri tabanlı statik proxy yapılandırın. Statik proxy, grup ilkesi (GP) aracılığıyla yapılandırılabilir. Grup ilkesi aşağıdakiler altında bulunabilir:
+Bir bilgisayarın İnternet'e bağlanmasına izin verilmiyorsa, yalnızca Uç Nokta için Microsoft Defender algılayıcının tanılama verilerini raporlamasına ve Uç Nokta için Microsoft Defender hizmetleriyle iletişim kurmasına izin verecek şekilde kayıt defteri tabanlı statik proxy yapılandırın. Statik proxy, grup ilkesi (GP) aracılığıyla yapılandırılabilir. Grup ilkesi aşağıdakiler altında bulunabilir:
 
 - Yönetim Şablonları \> Windows Bileşenleri \> Veri Toplama ve Önizleme Derlemeleri \> Bağlı Kullanıcı Deneyimi ve Telemetri Hizmeti için Kimliği Doğrulanmış Proxy kullanımını yapılandırma
 - **Etkin** olarak ayarlayın ve **Kimliği Doğrulanmış Proxy kullanımını devre dışı bırak'ı** seçin
 
 1. Grup İlkesi Yönetim Konsolu'nu açın.
 2. Kuruluş uygulamalarını temel alarak bir ilke oluşturun veya mevcut bir ilkeyi düzenleyin.
-3. grup ilkesi düzenleyin ve **Yönetim Şablonları \> Windows Bileşenler \> Veri Toplama ve Önizleme Derlemeleri \> Bağlı Kullanıcı Deneyimi ve Telemetri Hizmeti için Kimliği Doğrulanmış Proxy kullanımını yapılandır'a** gidin.
+3. grup ilkesi düzenleyin ve **Bağlı Kullanıcı Deneyimi ve Telemetri Hizmeti için Yönetim Şablonları \> Windows Bileşenleri \> Veri Toplama ve Önizleme Derlemeleri \> Kimliği Doğrulanmış Proxy kullanımını yapılandır'a** gidin.
 
    :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="Kullanım ilkesinin yapılandırmasıyla ilgili seçenekler" lightbox="images/atp-gpo-proxy1.png":::
 
-4. **Etkin'i** seçin.
+4. **Etkin**'i seçin.
 5. **Kimliği Doğrulanmış Proxy kullanımını devre dışı bırak'ı** seçin.
-6. **Yönetim Şablonları \> Windows Bileşenler \> Veri Toplama ve Önizleme Derlemeleri \> Bağlı kullanıcı deneyimlerini ve telemetrisini yapılandır'a** gidin.
+6. **Yönetim Şablonları \> Windows Bileşenleri \> Veri Toplama ve Önizleme Derlemeleri \> Bağlı kullanıcı deneyimlerini ve telemetrisini yapılandır'a** gidin.
 
    :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="Bağlı kullanıcı deneyiminin ve telemetrinin yapılandırmasıyla ilgili seçenekler" lightbox="images/atp-gpo-proxy2.png":::
 
-7. **Etkin'i** seçin.
+7. **Etkin**'i seçin.
 8. **Ara Sunucu Adı'nı** girin.
 
 İlke, iki kayıt defteri değerini `TelemetryProxyServer` REG_SZ ve `DisableEnterpriseAuthProxy` kayıt defteri anahtarı `HKLM\Software\Policies\Microsoft\Windows\DataCollection`altında REG_DWORD olarak ayarlar.
@@ -167,7 +168,7 @@ Down-Level cihazlar Windows 7 SP1 ve Windows 8.1 iş istasyonlarının yanı sı
 
 Bunlara v20 içeren URL'ler yalnızca Windows 10, sürüm 1803 veya Windows 11 cihazlarınız varsa gereklidir. Örneğin, `us-v20.events.data.microsoft.com` yalnızca cihaz Windows 10, sürüm 1803 veya Windows 11 ise gereklidir.
 
-Pertahanan Microsoft untuk Titik Akhir algılayıcısı sistem bağlamından bağlandığından bir ara sunucu veya güvenlik duvarı anonim trafiği engelliyorsa, listelenen URL'lerde anonim trafiğe izin verildiğinden emin olun.
+Uç Nokta için Microsoft Defender algılayıcısı sistem bağlamından bağlandığından bir ara sunucu veya güvenlik duvarı anonim trafiği engelliyorsa, listelenen URL'lerde anonim trafiğe izin verildiğinden emin olun.
 
 Aşağıdaki indirilebilir elektronik tablo, ağınızın bağlanabilmesi gereken hizmetleri ve bunların ilişkili URL'lerini listeler. Bu URL'lere erişimi reddedecek bir güvenlik duvarı veya ağ filtreleme kuralı olmadığından emin olun veya bunlar için özel olarak bir *izin verme* kuralı oluşturmanız gerekebilir.
 
@@ -178,9 +179,9 @@ Aşağıdaki indirilebilir elektronik tablo, ağınızın bağlanabilmesi gereke
 
 |Etki alanları listesinin elektronik tablosu| Açıklama|
 |---|---|
-|Ticari müşteriler için Pertahanan Microsoft untuk Titik Akhir URL listesi| Ticari müşteriler için hizmet konumları, coğrafi konumlar ve işletim sistemi için belirli DNS kayıtlarının elektronik tablosu. <p> [Elektronik tabloyu buradan indirin.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Gov/GCC/DoD için Pertahanan Microsoft untuk Titik Akhir URL listesi | Gov/GCC/DoD müşterileri için hizmet konumları, coğrafi konumlar ve işletim sistemi için belirli DNS kayıtlarının elektronik tablosu. <p> [Elektronik tabloyu buradan indirin.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|Ticari müşteriler için Uç Nokta için Microsoft Defender URL listesi| Ticari müşteriler için hizmet konumları, coğrafi konumlar ve işletim sistemi için belirli DNS kayıtlarının elektronik tablosu. <p> [Elektronik tabloyu buradan indirin.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Gov/GCC/DoD için Uç Nokta için Microsoft Defender URL listesi | Gov/GCC/DoD müşterileri için hizmet konumları, coğrafi konumlar ve işletim sistemi için belirli DNS kayıtlarının elektronik tablosu. <p> [Elektronik tabloyu buradan indirin.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 ## <a name="next-step"></a>Sonraki adım
 
-[![**Aşama 3: Ekleme**.](images/onboard.png#lightbox)] <br> [3. Aşama: Ekleme](onboarding.md): Pertahanan Microsoft untuk Titik Akhir hizmetinin algılayıcı verilerini alabilmesi için cihazları hizmete ekleme.
+[![**Aşama 3: Ekleme**.](images/onboard.png#lightbox)] <br> [3. Aşama: Ekleme](onboarding.md): Uç Nokta için Microsoft Defender hizmetinin algılayıcı verilerini alabilmesi için cihazları hizmete ekleme.

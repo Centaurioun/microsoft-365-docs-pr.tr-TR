@@ -8,7 +8,7 @@ manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkSPO
 description: Çalışanlarınızın her yerden ve her zaman uzaktan çalışmasını sağlayan güvenlik ve altyapıyı yapılandırın.
-ms.openlocfilehash: 0e54d3840e9207fd7e8b5c50415ad2ca60751059
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 261680912a0204d18b28db5c8eff70f2a23e99a9
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934257"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582944"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Geliştirme/test ortamında bir ekibi güvenlik yalıtımıyla yapılandırma
 
@@ -50,7 +50,7 @@ Bu aşamada, kurgusal kuruluşunuz için bir Azure AD grubu ve kullanıcıları 
 
 1. Tarayıcınızda ayrı bir sekme oluşturun ve konumundaki Azure portal [https://portal.azure.com](https://portal.azure.com)gidin. Gerekirse, Microsoft 365 E5 deneme sürümünüz veya ücretli aboneliğiniz için genel yönetici hesabının kimlik bilgileriyle oturum açın.
 
-2. Azure portal Azure Active Directory > **Grupları'na** tıklayın.
+2. Azure portal **Azure Active Directory > Grupları'na** tıklayın.
 
 3. **Gruplar - Tüm gruplar** dikey penceresinde **+ Yeni grup'a** tıklayın.
 
@@ -66,7 +66,7 @@ Bu aşamada, kurgusal kuruluşunuz için bir Azure AD grubu ve kullanıcıları 
 
 Ardından, yeni **C-Suite** grubu üyelerine otomatik olarak bir Microsoft 365 E5 lisansı atanması için otomatik lisanslamayı yapılandırın.
 
-1. Azure portal Azure Active Directory > **Lisanslar > Tüm ürünler'e** tıklayın.
+1. Azure portal **Azure Active Directory > Lisanslar > Tüm ürünler'e** tıklayın.
 
 2. Listede **Microsoft 365 Kurumsal E5'i** seçin ve **ata'ya** tıklayın.
 
@@ -116,16 +116,16 @@ Grup tabanlı lisanslamanın düzgün çalıştığını doğrulamak için bu ad
 
 Bu aşamada, üst düzey liderlik ekibinin üyelerinin şirket stratejisi üzerinde işbirliği yapmasına yönelik güvenlik yalıtımına sahip bir ekip oluşturup yapılandıracaksınız.
 
-İlk olarak, [bu makaledeki](../compliance/sensitivity-labels-teams-groups-sites.md) adımlara geçmeden önce Microsoft Teams, Office 365 grupları ve SharePoint sitelerdeki içeriği korumak için duyarlılık etiketlerini etkinleştirin.
+İlk olarak, [bu makaledeki](../compliance/sensitivity-labels-teams-groups-sites.md) adımlara geçmeden önce Microsoft Teams, Office 365 grupları ve SharePoint sitelerindeki içeriği korumak için duyarlılık etiketlerini etkinleştirin.
 
 Ardından ekibi oluşturun:
 
-1. Teams'da, uygulamanın sol tarafındaki **Teams'e** tıklayın ve ardından ekip listesinin en altında **Katıl'a veya ekip oluştur'a** tıklayın.
+1. Teams'de, uygulamanın sol tarafındaki **Teams'e** tıklayın ve ardından ekip listesinin en altında **Katıl'a veya ekip oluştur'a** tıklayın.
 2. **Ekip oluştur'a** tıklayın (ilk kart, sol üst köşe).
 3. **Sıfırdan ekip oluştur'u** seçin.
 4. **Duyarlılık** listesinde varsayılanı koruyun.
 5. **Gizlilik'in** altında **Özel'e** tıklayın.
-6. **Şirket Stratejisi** yazın ve Ardından **OluşturKapat'a** >  tıklayın.
+6. **Şirket Stratejisi** yazın ve **Kapat** **Oluştur'a** >  tıklayın.
 
 Ardından, özel kanalların oluşturulmasını Şirket Stratejisi grubunun sahipleriyle kısıtlayın.
 
@@ -141,7 +141,7 @@ Ardından, aşağıdaki ayarlarla bir duyarlılık etiketi yapılandırmanız ge
 
 Şu adımları izleyin:
 
-1. Microsoft Purview uyumluluk portalını açın, **Çözümler'in** altında <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Bilgi koruması'nı**</a> seçin.
+1. Microsoft Purview uyumluluk portalı açın, **Çözümler'in** altında <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Bilgi koruması'nı**</a> seçin.
 1. **Etiket oluştur'a** tıklayın.
 1. Etiket adı için **Şirket Stratejisi** yazın.
 1. Araç ipucu olarak **Üst düzey liderlik şirketi stratejisi belgelerini** yazın ve **İleri'ye** tıklayın.
@@ -157,12 +157,12 @@ Ardından, aşağıdaki ayarlarla bir duyarlılık etiketi yapılandırmanız ge
 1. **Gruba bağlı Office 365 ekip sitelerinin gizliliği** açılan listesinde **Özel'i seçin. Siteye yalnızca üyeler erişebilir**.
 1. **Yönetilmeyen cihazlar'ın** altında **Erişimi engelle'yi** seçin.
 1. **İleri**'ye tıklayın.
-1. **Office uygulamalar için otomatik etiketleme** sayfasında **İleri'ye** tıklayın.
+1. **Office uygulamaları için otomatik etiketleme** sayfasında **İleri'ye** tıklayın.
 1. **Gönder'e** ve ardından **Bitti'ye** tıklayın.
 
 Ardından, yeni etiketi şu adımlarla yayımlayın:
 
-1. Microsoft Purview uyumluluk portalında <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**, Bilgi koruması'nda**</a> **Etiket ilkeleri** sekmesini seçin.
+1. Microsoft Purview uyumluluk portalı <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**, Bilgi korumasında**</a> **Etiket ilkeleri** sekmesini seçin.
 2. **Etiketleri yayımla'ya** tıklayın.
 3. **Yayımlamak için duyarlılık etiketlerini seçin sayfasında, Yayımlamak** **için duyarlılık etiketlerini seçin'e** tıklayın.
 4. **Şirket Stratejisi'ne** tıklayın ve **ekle'ye** tıklayın.
@@ -185,20 +185,20 @@ Ardından, yeni etiketinizi **Şirket Stratejisi** ekibine uygulayın ve dosya v
 1. **Şirket Stratejisi** etiketini ve ardından **Kaydet'i** seçin.
 1. **İlkeler** sekmesinde, **Dış paylaşım'ın** altında **Düzenle'yi** seçin.
 1. **Yalnızca kuruluşunuzdaki kişileri** seçin.
-1. **Varsayılan paylaşım** bağlantı türü'nün altında **Kuruluş düzeyi ayarıyla aynı** onay kutusunu temizleyin ve **Mevcut erişimi olan kişiler'i** seçin.
+1. **Varsayılan paylaşım** bağlantı türü'nün altında **Kuruluş düzeyi ayarıyla aynı** onay kutusunu temizleyin ve **var olan erişimle Kişiler'yi** seçin.
 1. **Kaydet**'i seçin.
 
 Ardından, **Şirket Stratejisi** ekibi için yalnızca sahiplere yönelik site paylaşımını yapılandırın.
 
-1. Teams'da **Şirket Stratejisi** ekibinin **Genel** sekmesine gidin.
+1. Teams'de **, Şirket Stratejisi** ekibinin **Genel** sekmesine gidin.
 2. Ekibin araç çubuğunda **Dosyalar'a** tıklayın.
-3. Üç noktaya tıklayın ve ardından **SharePoint aç'a** tıklayın.
+3. Üç noktaya ve ardından **SharePoint'te Aç'a** tıklayın.
 4. Temel alınan SharePoint sitesinin araç çubuğunda ayarlar simgesine ve ardından **Site izinleri'ne** tıklayın.
 5. Site izinleri bölmesinde, **Site Paylaşımı'nın** altında Üyelerin **paylaşım şeklini değiştir'e** tıklayın.
 6. **Paylaşım izinleri'nin** altında **Yalnızca site sahipleri dosyaları, klasörleri ve siteyi paylaşabilir'i seçin ve** **Kaydet'e** tıklayın.
 7. **İzinler** ve **Ayarlar** bölmelerini kapatın.
 
-Şirket Stratejisi grubunun üyesi olarak oturum açarsanız, Word, Excel ve PowerPoint Giriş araç **çubuğundaki Duyarlılık** seçeneğinde **Şirket Stratejisi'ni** görürsünüz. Etiketi bir dosyaya atamak için **Duyarlılık** seçeneğinden **Şirket Stratejisi** etiketini seçin.
+Şirket Stratejisi grubunun üyesi olarak oturum açarsanız, Word, Excel ve PowerPoint'in Giriş araç **çubuğundaki Duyarlılık** seçeneğinde **Şirket Stratejisi'ni** görürsünüz. Etiketi bir dosyaya atamak için **Duyarlılık** seçeneğinden **Şirket Stratejisi** etiketini seçin.
 
 Şirket Stratejisi ekibi için elde edilen yapılandırma aşağıdadır.
 

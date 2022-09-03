@@ -3,7 +3,7 @@ title: Kuruluşunuzu web tehditlerine karşı koruma
 description: Uç Nokta için Microsoft Defender'da web koruması ve kuruluşunuzu nasıl koruyabileceği hakkında bilgi edinin.
 keywords: web koruması, web tehdit koruması, web'e göz atma, güvenlik, kimlik avı, kötü amaçlı yazılım, yararlanma, web siteleri, ağ koruması, Edge, Internet Explorer, Chrome, Firefox, web tarayıcısı
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bd63b74990dd058f6a9158cd85f02f303d7dc4aa
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mde
+ms.openlocfilehash: f5df3cdfa8b7bb699126e9362de53a7cfa52b8fc
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408407"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67576241"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Kuruluşunuzu web tehditlerine karşı koruma
 

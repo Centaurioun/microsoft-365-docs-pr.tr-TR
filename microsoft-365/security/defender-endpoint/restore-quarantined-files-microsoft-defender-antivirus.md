@@ -2,7 +2,7 @@
 title: Microsoft Defender Virüsten Koruma’da karantinaya alınan dosyaları geri yükleyin
 description: Microsoft Defender Virüsten Koruma tarafından karantinaya alınan dosya ve klasörleri geri yükleyebilirsiniz.
 keywords: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ ms.custom: nextgen
 ms.date: 10/19/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 52e83cf75385b36f87efbe72df9c865415f15452
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 415c16677669277e75f88ec91d1ef18cefd00ee0
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417358"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67585586"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma’da karantinaya alınan dosyaları geri yükleyin
 
@@ -29,14 +29,14 @@ ms.locfileid: "65417358"
 
 
 **Şunlar için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Virüsten Koruma
 
 **Platform**
 - Windows
 
-Microsoft Defender Virüsten Koruma cihazınızdaki tehditleri algılayıp düzeltecek şekilde yapılandırılmışsa Microsoft Defender Virüsten Koruma şüpheli dosyaları karantinaya alır. Karantinaya alınan bir dosyanın tehdit oluşturmadığından eminseniz dosyayı geri yükleyebilirsiniz.
+Microsoft Defender Virüsten Koruma, cihazınızdaki tehditleri algılayıp düzeltecek şekilde yapılandırılmışsa, Microsoft Defender Virüsten Koruma şüpheli dosyaları karantinaya alır. Karantinaya alınan bir dosyanın tehdit oluşturmadığından eminseniz dosyayı geri yükleyebilirsiniz.
 
 1. **Windows Güvenliği** açın.
 2. **Virüs & tehdit koruması'nın** ardından **Koruma geçmişi'ne** tıklayın.
@@ -47,7 +47,7 @@ Microsoft Defender Virüsten Koruma cihazınızdaki tehditleri algılayıp düze
 > Bir dosyayı karantinadan geri yükleme işlemi Komut İstemi kullanılarak da yapılabilir. Bkz. [Dosyayı karantinadan geri yükleme](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts#restore-file-from-quarantine). 
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -62,4 +62,4 @@ Microsoft Defender Virüsten Koruma cihazınızdaki tehditleri algılayıp düze
 - [Tarama sonuçlarını gözden geçirme](review-scan-results-microsoft-defender-antivirus.md)
 - [Dosya adı, uzantı ve klasör konumuna göre dışlamaları yapılandırma ve doğrulama](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [İşlemler tarafından açılan dosyalar için dışlamaları yapılandırma ve doğrulama](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Windows Sunucusu'nda Microsoft Defender Virüsten Koruma dışlamalarını yapılandırma](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Windows Server'da Microsoft Defender Virüsten Koruma dışlamalarını yapılandırma](configure-server-exclusions-microsoft-defender-antivirus.md)

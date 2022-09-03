@@ -1,5 +1,5 @@
 ---
-title: Adım 4. Cihazlarınız, bilgisayarlarınız ve diğer uç noktalarınız için uç nokta yönetimini dağıtma
+title: Adım 4. Cihazlarınız, bilgisayarlarınız ve diğer uç noktalarınız için uç nokta yönetimi dağıtma
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -16,75 +16,75 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: Cihazlarınızı Microsoft Endpoint Manager bilgisayarlarınızı ve diğer uç noktaları yönetmek için Diğer Uç Noktaları Yönet'i kullanın.
-ms.openlocfilehash: d18a001021486c617aaf0fa04972e9464a5c2016
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Cihazlarınızı, bilgisayarlarınızı ve diğer uç noktalarınızı yönetmek için Microsoft Endpoint Manager kullanın.
+ms.openlocfilehash: 62b8e106ebd4350cc1d706ae15f599676b03dbc9
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328631"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584121"
 ---
-# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Adım 4. Cihazlarınız, bilgisayarlarınız ve diğer uç noktalarınız için uç nokta yönetimini dağıtma
+# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Adım 4. Cihazlarınız, bilgisayarlarınız ve diğer uç noktalarınız için uç nokta yönetimi dağıtma
 
-Karma çalışanlarla, giderek artan sayıda kişisel cihazı desteklemeniz gerekir. Uç nokta yönetimi, cihazların kaynaklara erişim izni verilmeden önce belirli ölçütlere uymalarını gerektiren, ilke tabanlı bir güvenlik yaklaşımıdır. Microsoft Endpoint Manager, verilerinizi bulutta ve şirket içinde güvende tutmak için modern yönetim özellikleri sunar. 
+Hibrit çalışanlarla, giderek artan sayıda kişisel cihazı desteklemeniz gerekir. Uç nokta yönetimi, cihazlara kaynaklara erişim verilmeden önce belirli ölçütlere uymasını gerektiren ilke tabanlı bir güvenlik yaklaşımıdır. Microsoft Endpoint Manager, verilerinizi bulutta ve şirket içinde güvenli tutmak için modern yönetim özellikleri sunar. 
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) zaten biliyor ve kullanıyor olduğunuz aşağıdaki hizmetleri birleştirerek mobil cihazları, masaüstü bilgisayarları, sanal makineleri, ekli cihazları ve sunucuları yönetmek için hizmetler ve araçlar sağlar.
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview), önceden bildiğiniz ve kullanıyor olabileceğiniz aşağıdaki hizmetleri birleştirerek mobil cihazları, masaüstü bilgisayarları, sanal makineleri, ekli cihazları ve sunucuları yönetmeye yönelik hizmetler ve araçlar sağlar.
 
-:::image type="content" source="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png" alt-text="Uç nokta yönetiminin bileşenleri Microsoft 365" lightbox="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png":::
+:::image type="content" source="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png" alt-text="Microsoft 365 için uç nokta yönetimi bileşenleri" lightbox="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png":::
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Microsoft Intune, mobil cihaz yönetimi (MDM) ve mobil uygulama yönetimine (MAM) odaklanan bulut tabanlı bir hizmettir ve Microsoft 365. 
+Microsoft Intune, Microsoft 365'te bulunan mobil cihaz yönetimi (MDM) ve mobil uygulama yönetimine (MAM) odaklanan bulut tabanlı bir hizmettir. 
 
-- **MDM:** Kuruluşa ait cihazlar için, ayarlar, özellikler ve güvenlik gibi tam denetimler edinebilirsiniz. Cihazlar Intune'da "kayıtlı" olarak yer alır ve burada kurallar ve ayarlarla Intune ilkeleri alırlar. Örneğin, parola ve PIN gereksinimlerini ayarlama, VPN bağlantısı oluşturma, tehdit koruması ayarlama gibi daha fazlasını kullanabilirsiniz.
+- **MDM:** Kuruluşa ait cihazlar için ayarlar, özellikler ve güvenlik dahil olmak üzere tam denetim kullanabilirsiniz. Cihazlar, kurallar ve ayarlarla Intune ilkeleri aldıkları Intune "kaydedilir". Örneğin, parola ve PIN gereksinimlerini ayarlayabilir, VPN bağlantısı oluşturabilir, tehdit korumasını ayarlayabilir ve daha fazlasını yapabilirsiniz.
 
-- **MAM:** Uzaktan çalışanlar kendi cihazlarınızı (BYOD) getir olarak da bilinen kişisel cihazları üzerinde tam denetim sahibi olmak istemeyebilirsiniz. Karma çalışanlarınıza seçenekler sağlıyor ve yine de organizasyonlarınızı koruyabilirsiniz. Örneğin, karma çalışanlar, kuruluş kaynaklarınıza tam erişime sahip olmak isterken cihazlarını kaydolabilirsiniz. Ya da bu kullanıcılar yalnızca e-postaya veya postaya Microsoft Teams, bu uygulamaları kullanmak için çok faktörlü kimlik doğrulaması (MFA) gerektiren uygulama koruma ilkelerini kullanın.
+- **MAM:** Uzaktan çalışanlar, kendi cihazını getir (KCG) cihazları olarak da bilinen kişisel cihazları üzerinde tam denetim sahibi olmanız istemeyebilir. Karma çalışanlarınıza seçenekler verebilir ve kuruluşunuzu korumaya devam edebilirsiniz. Örneğin, karma çalışanlar kuruluş kaynaklarınıza tam erişim istediklerinde cihazlarını kaydedebilir. Ya da bu kullanıcılar yalnızca e-postaya veya Microsoft Teams'e erişmek istiyorsa, bu uygulamaları kullanmak için çok faktörlü kimlik doğrulaması (MFA) gerektiren uygulama koruma ilkelerini kullanın.
 
-Daha fazla bilgi için [bkz. Intune Foundation çözümüyle](manage-devices-with-intune-overview.md) cihazları yönetme.
+Daha fazla bilgi için bkz. [Intune temel çözümüyle cihazları yönetme](manage-devices-with-intune-overview.md).
 
 ## <a name="configuration-manager"></a>Yapılandırma Yöneticisi
 
-Configuration Manager ağ üzerinde veya internet tabanlı olan masaüstlerini, sunucuları ve dizüstü bilgisayarları yönetmek için şirket içi bir yönetim çözümüdür. Uygulamaları, yazılım güncelleştirmelerini ve işletim sistemlerini dağıtmak için Configuration Manager'i kullanın. Ayrıca, gerçek zamanlı olarak istemcilerin uyumluluğunu, sorgusunu ve üzerinde eylemde bulundurarak daha fazlasını da izleyebilirsiniz. Intune, Azure AD, Uç Nokta için Microsoft Defender ve diğer bulut hizmetleriyle tümleştirebilirsiniz. 
+Configuration Manager, ağınızdaki veya İnternet tabanlı masaüstlerini, sunucuları ve dizüstü bilgisayarları yönetmek için bir şirket içi yönetim çözümüdür. Uygulamaları, yazılım güncelleştirmelerini ve işletim sistemlerini dağıtmak için Configuration Manager kullanın. Ayrıca uyumluluğu izleyebilir, istemcileri gerçek zamanlı olarak sorgulayabilir ve üzerinde işlem yapabilir ve çok daha fazlasını yapabilirsiniz. Intune, Azure AD, Uç Nokta için Microsoft Defender ve diğer bulut hizmetleriyle tümleştirmek için buluta etkinleştirebilirsiniz. 
 
-Daha fazla bilgi için, Configuration [Manager'a genel bakış bilgilerine bakın](/mem/configmgr/core/understand/introduction).
+Daha fazla bilgi için bu [Configuration Manager genel bakışına](/mem/configmgr/core/understand/introduction) bakın.
 
-## <a name="co-management"></a>Birlikte yönetim
+## <a name="co-management"></a>Ortak yönetim
 
-Birlikte yönetim, Intune ve diğer bulut hizmetlerini kullanarak mevcut şirket içi Configuration Manager yatırımını bulutla Microsoft 365 birleştirir. Farklı iş yükleri için yönetim yetkilisi Olarak Yapılandırma Yöneticisi mi yoksa Intune mu olduğunu seçersiniz. 
+Ortak yönetim, Intune ve diğer Microsoft 365 bulut hizmetlerini kullanarak mevcut şirket içi Configuration Manager yatırımınızı bulutla birleştirir. farklı iş yükleri için yönetim yetkilisinin Configuration Manager mi yoksa Intune mi olduğunu seçersiniz. 
 
-Birlikte yönetim, Koşullu Erişim ve cihaz uyumluluğunu zorlama da dahil olmak üzere Intune tabanlı bulut özelliklerini kullanır. Bazı görevleri şirket içinde saklayırken, bulutta başka görevleri de çalıştırabilirsiniz.
+Ortak yönetim, Koşullu Erişim ve cihaz uyumluluğunu zorunlu tutma gibi Intune tabanlı bulut özelliklerini kullanır. Bazı görevleri şirket içinde tutarken, diğer görevleri bulutta çalıştırırsınız.
 
-Daha fazla bilgi için, bu [birlikte yönetime genel bakış bilgilerine bakın](/mem/configmgr/comanage/overview).
+Daha fazla bilgi için bkz. [Ortak yönetime genel bakış](/mem/configmgr/comanage/overview).
 
-## <a name="endpoint-analytics"></a>Endpoint Analytics
+## <a name="endpoint-analytics"></a>Uç Nokta Analizi
 
 Uç nokta analizi, kullanıcı deneyimine ilişkin içgörüler sağlayarak kullanıcı verimliliğini artırmayı ve BT destek maliyetlerini düşürmeyi amaçlar. İçgörüler, BT'nin proaktif destekle son kullanıcı deneyimini iyileştirmesini ve yapılandırma değişikliklerinin kullanıcı etkisini değerlendirerek kullanıcı deneyimindeki gerilemeleri tespit etmesini sağlar.
 
-Daha fazla bilgi için bkz. [Endpoint Analytics'e genel bakış](/mem/analytics/overview)
+Daha fazla bilgi için bkz [. Endpoint Analytics'e genel bakış](/mem/analytics/overview)
 
-## <a name="windows-autopilot"></a>AutoPilot Windows'i çalıştırın
+## <a name="windows-autopilot"></a>Windows Autopilot
 
-Windows AutoPilot sıfır dokunuşla, self servis ve Windows platformudur. Yeni cihazları ayarlamak ve önceden yapılandırmak, bu cihazları üretken kullanım için hazır hale getirirken kullanabileceğiniz bir teknoloji koleksiyonu içerir. Cihazları sıfırlamak, yeniden Windows etmek ve kurtarmak için AutoPilot'a da kullanabilirsiniz. 
+Windows Autopilot, sıfır dokunmatik, self servis bir Windows dağıtım platformudur. Yeni cihazları ayarlamak ve önceden yapılandırmak ve üretken kullanıma hazır hale getirmek için kullandığınız bir teknoloji koleksiyonu içerir. Cihazları sıfırlamak, yeniden kullanmak ve kurtarmak için Windows Autopilot'ı da kullanabilirsiniz. 
 
-Windows AutoPilot, altyapısı çok az olan ve altyapısı olmayan cihazları kolay ve basit bir işlemle önceden yapılandırmaya olanak tanır. 
+Windows Autopilot, bt departmanının kolay ve basit bir işlemle yönetecek çok az ve hiç altyapısı olmayan cihazları önceden yapılandırmasına olanak tanır. 
 
-- Kullanıcının bakış açısından bakıldığında, yalnızca birkaç basit işlemle cihazı kullanıma hazır hale getirildi. 
-- IT profesyonellerinin bakış açısından bakıldığında, son kullanıcının tek gerekli etkileşimi bir ağa bağlanmak ve bu kullanıcının kimlik bilgilerini doğrulamaktır.
+- Kullanıcının bakış açısından, cihazını kullanıma hazır hale getirmek yalnızca birkaç basit işlem gerektirir. 
+- BT uzmanı açısından bakıldığında, son kullanıcıdan gereken tek etkileşim bir ağa bağlanmak ve kimlik bilgilerini doğrulamaktır.
 
-Daha fazla bilgi için Bkz. [AutoPilot'a Windows genel bakış](/windows/deployment/windows-autopilot/windows-autopilot).
+Daha fazla bilgi için bkz. [Windows Autopilot'a genel bakış](/windows/deployment/windows-autopilot/windows-autopilot).
 
-## <a name="admin-technical-resources-for-endpoint-management"></a>Uç nokta yönetimi için yönetici teknik kaynakları
+## <a name="admin-technical-resources-for-endpoint-management"></a>Uç nokta yönetimi için teknik kaynakları Yönetici
 
-- [Mobil cihaz yönetimi yol Microsoft 365](../enterprise/device-management-roadmap-microsoft-365.md)
+- [Microsoft 365 için cihaz yönetimi yol haritası](../enterprise/device-management-roadmap-microsoft-365.md)
 - [Mobil cihaz yönetimi için farklı cihaz türlerini kaydetme](/mem/intune/enrollment/device-enrollment)
-- [Son kullanıcılarınızı yeni kullanıcılarla nasıl eğitebilirsiniz Microsoft Intune](/mem/intune/fundamentals/end-user-educate)
+- [Son kullanıcılarınızı Microsoft Intune hakkında eğitme](/mem/intune/fundamentals/end-user-educate)
  
-## <a name="results-of-step-4"></a>Adım 4'in sonuçları
+## <a name="results-of-step-4"></a>4. Adımın Sonuçları
 
-Mobil cihazları, masaüstü bilgisayarları, sanal makineleri, ekli cihazları ve sunucuları yönetmek için Endpoint Manager özellikleri ve yetenekleri paketini kullanıyorsanız.
+Mobil cihazları, masaüstü bilgisayarları, sanal makineleri, ekli cihazları ve sunucuları yönetmek için Endpoint Manager özellik ve özellikler paketini kullanıyorsunuz.
 
 ## <a name="next-step"></a>Sonraki adım
 
-[![5. Adım: Uzaktan çalışan üretkenlik uygulamalarını ve hizmetlerini dağıtın.](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
+[![5. Adım: Uzaktan çalışan üretkenliği uygulamalarını ve hizmetlerini dağıtma.](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
 
-Karma [çalışanlarınızı eğitim ve](empower-people-to-work-remotely-teams-productivity-apps.md) eğitim gibi üretkenlik uygulamalarını Microsoft 365 için 5. Adım Microsoft Teams.
+Hibrit çalışanlarınızın Microsoft Teams gibi Microsoft 365 üretkenlik uygulamalarını kullanmasını sağlamak için 5. [Adımla](empower-people-to-work-remotely-teams-productivity-apps.md) devam edin.

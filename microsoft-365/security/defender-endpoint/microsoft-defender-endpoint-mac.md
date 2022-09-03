@@ -3,7 +3,7 @@ title: Mac'te Uç Nokta için Microsoft Defender
 ms.reviewer: ''
 description: Mac'te Uç Nokta için Microsoft Defender yüklemeyi, yapılandırmayı, güncelleştirmeyi ve kullanmayı öğrenin.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, deploy, uninstallation, intune, jamf, macos, monterey, big sur, catalina, mojave, mde for mac
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 97f7477c1216bfa25e25f6fc3086cf62a8b4b5a3
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: b441d170b9edc716c204993253aabc2a759444c2
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384106"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67578840"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac'te Uç Nokta için Microsoft Defender
 

@@ -7,17 +7,17 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: Microsoft 365 çözümü kullanarak sözleşme dosyalarını tanımlamak ve verileri ayıklamak için SharePoint Syntex kullanmayı öğrenin.
-ms.openlocfilehash: 2d9967cc432cb4d75bebbc67b7b9b0a812baa031
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 115c1e3fbcd18bcc766132afaff308d25cf989fe
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631991"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582504"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Adım 1. Sözleşme dosyalarını tanımlamak ve verileri ayıklamak için SharePoint Syntex kullanma
 

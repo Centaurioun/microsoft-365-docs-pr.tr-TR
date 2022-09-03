@@ -1,9 +1,9 @@
 ---
-title: Microsoft Defender Virüsten Koruma için bulut koruma düzeyini belirtin
+title: Microsoft Defender Virüsten Koruma için bulut koruma düzeyini belirtme
 description: Microsoft Defender Virüsten Koruma için bulut koruma düzeyinizi ayarlayın.
 keywords: Microsoft Defender Virüsten Koruma, kötü amaçlı yazılımdan koruma, güvenlik, defender, bulut, saldırganlık, koruma düzeyi
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,20 +14,20 @@ ms.date: 08/26/2021
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
+ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1f71e5cc2a944ce409a19b6493bda1b40747a066
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: c3eb27a4eb4ae2f2b99f70f1534da2121c8fdc91
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417490"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67582196"
 ---
 # <a name="specify-the-cloud-protection-level"></a>Bulut koruma düzeyini belirleyin
 
 **Şunlar için geçerlidir:**
 
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft Defender Virüsten Koruma
 
@@ -61,7 +61,7 @@ Bulut koruması, geleneksel güvenlik bilgileri güncelleştirmelerinden çok da
 > [!TIP]
 > Yardıma mı ihtiyacınız var? Aşağıdaki kaynaklara bakın:
 >
-> - [Endpoint Protection yapılandırma](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
+> - [Endpoint Protection'ı yapılandırma](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 > - [Intune'de uç nokta koruma ayarları ekleme](/mem/intune/protect/endpoint-protection-configure)
 
 ## <a name="use-group-policy-to-specify-the-level-of-cloud-protection"></a>Bulut koruma düzeyini belirtmek için grup ilkesi kullanma
@@ -72,7 +72,7 @@ Bulut koruması, geleneksel güvenlik bilgileri güncelleştirmelerinden çok da
 
 3. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar Yapılandırması** \> **Yönetim şablonları'na** gidin.
 
-4. **MpEngine** **Microsoft Defender Virüsten Koruma Bileşenleri** \> **Windows** \> ağacı genişletin.
+4. Ağacı **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **MpEngine** olarak genişletin.
 
 5. **Bulut koruma düzeyini seçin** ayarına çift tıklayın ve **Etkin** olarak ayarlayın. Koruma düzeyini seçin:
 
@@ -88,10 +88,10 @@ Bulut koruması, geleneksel güvenlik bilgileri güncelleştirmelerinden çok da
 7. Güncelleştirilmiş grup ilkesi Nesnenizi dağıtın. Bkz. [grup ilkesi Yönetim Konsolu](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
-> Şirket içinde grup ilkesi Nesneleri mi kullanıyorsunuz? Bulutta nasıl çeviri yaptıklarını görün. [Microsoft Endpoint Manager - Önizleme'de grup ilkesi analiz kullanarak şirket içi grup ilkesi nesnelerinizi analiz](/mem/intune/configuration/group-policy-analytics) edin.
+> Şirket içinde grup ilkesi Nesneleri mi kullanıyorsunuz? Bulutta nasıl çeviri yaptıklarını görün. [Microsoft Endpoint Manager - Önizleme'de grup ilkesi analizini kullanarak şirket içi grup ilkesi nesnelerinizi analiz](/mem/intune/configuration/group-policy-analytics) edin.
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

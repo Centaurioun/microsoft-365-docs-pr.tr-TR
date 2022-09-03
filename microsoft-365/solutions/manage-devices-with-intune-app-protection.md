@@ -12,7 +12,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 description: Belirtilen kurumsal verilerin kopyalanıp diğer uygulamalara yapıştırılmasını önlemek için App Protection ilkeleri (APP) ile mobil uygulama korumasını yapılandırın.
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
@@ -21,12 +21,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 829d650b6d815a84203e43e7256442bfee6bac0d
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 3288f0d472a53d3281110ae29b7eea6061c10050
+ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749297"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67584099"
 ---
 # <a name="step-1-implement-app-protection-policies"></a>Adım 1. Uygulama Koruma İlkeleri Uygulama
 
