@@ -11,17 +11,17 @@ ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: none
 ms.date: 08/11/2022
+ms.reviewer: shlomiakirav
+f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.reviewer: shlomiakirav
-f1.keywords: NOCSH
-ms.openlocfilehash: c1a2dda2fc826dc7f9600ac2a42fa82a1da4dd23
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 416fe2501b6e3a30f3384d443327d801002e7284
+ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598141"
+ms.locfileid: "67600454"
 ---
 # <a name="how-to-get-microsoft-defender-for-business-servers-preview"></a>İş için Microsoft Defender sunucuları nasıl alınır (önizleme)
 

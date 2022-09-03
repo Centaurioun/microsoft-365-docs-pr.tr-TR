@@ -1,5 +1,5 @@
 ---
-title: Office 365 için Microsoft Defender kullanıcı etiketleri
+title: Office 365 için Microsoft Defender'da kullanıcı etiketleri
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,17 +14,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-description: Yöneticiler, Office 365 için Microsoft Defender Plan 2'de kullanıcı etiketleri olan belirli kullanıcı gruplarını tanımlamayı öğrenebilir. Etiket filtreleme, etiketlenen kullanıcıları hızlı bir şekilde tanımlamak için Office 365 için Microsoft Defender uyarılarda, raporlarda ve araştırmalarda kullanılabilir.
-ms.subservice: mdo
-ms.service: microsoft-365-security
-ms.openlocfilehash: 14fe268b07f253a66da8a88418153326279867da
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+description: Yöneticiler, Office 365 Plan 2 için Microsoft Defender'da kullanıcı etiketlerine sahip belirli kullanıcı gruplarını tanımlamayı öğrenebilir. Etiket filtreleme, etiketli kullanıcıları hızla tanımlamak amacıyla Office 365 için Microsoft Defender'daki uyarılar, raporlar ve araştırmalarda kullanılabilir.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3e3fd5ad26e97e3d0bc04164d9595fb88be60427
+ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599549"
+ms.locfileid: "67600411"
 ---
-# <a name="user-tags-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender kullanıcı etiketleri
+# <a name="user-tags-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da kullanıcı etiketleri
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -32,12 +32,12 @@ ms.locfileid: "67599549"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Kullanıcı etiketleri, [Office 365 için Microsoft Defender'deki](defender-for-office-365.md) belirli kullanıcı gruplarının tanımlayıcılarıdır. İki tür kullanıcı etiketi vardır:
+Kullanıcı etiketleri, [Office 365 için Microsoft Defender'da belirli kullanıcı gruplarının](defender-for-office-365.md) tanımlayıcılarıdır. İki tür kullanıcı etiketi vardır:
 
 - **Sistem etiketleri**: Şu anda tek sistem etiketi türü [Öncelik hesaplarıdır](../../admin/setup/priority-accounts.md) .
 - **Özel etiketler**: Bu kullanıcı etiketlerini kendiniz oluşturursunuz.
 
-Kuruluşunuzda Office 365 için Defender Plan 2 (aboneliğinize dahil veya eklenti olarak) varsa, öncelik hesapları etiketini kullanmanın yanı sıra özel kullanıcı etiketleri de oluşturabilirsiniz.
+Kuruluşunuzda Office 365 için Defender Plan 2 (aboneliğinize dahil veya eklenti olarak) varsa, öncelik hesapları etiketini kullanmaya ek olarak özel kullanıcı etiketleri de oluşturabilirsiniz.
 
 > [!NOTE]
 > Şu anda yalnızca posta kutusu kullanıcılarına kullanıcı etiketleri uygulayabilirsiniz.
@@ -75,11 +75,11 @@ Kullanıcı etiketlerinin yüksek etkili kullanıcı hesaplarını korumaya yard
 
   > [!NOTE]
   >
-  > - kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365 Defender portalında gerekli izinleri _ve_ Microsoft 365'teki diğer özellikler için izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+  > - kullanıcıları Microsoft 365 系統管理中心 karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365 Defender portalında gerekli izinleri _ve_ Microsoft 365'teki diğer özellikler için izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
   >
   > - Kullanıcı etiketi yönetimi, **Etiket Okuyucusu** ve **Etiket Yöneticisi** rolleri tarafından denetlenilir.
 
-- Ayrıca Microsoft 365 yönetim merkezi öncelik hesaplarını yönetebilir ve izleyebilirsiniz. Yönergeler için bkz. [Öncelik hesaplarını yönetme ve izleme](../../admin/setup/priority-accounts.md).
+- Ayrıca Microsoft 365 系統管理中心 öncelik hesaplarını yönetebilir ve izleyebilirsiniz. Yönergeler için bkz. [Öncelik hesaplarını yönetme ve izleme](../../admin/setup/priority-accounts.md).
 
 - _Ayrıcalıklı hesapların (yönetici hesaplarının_) güvenliğini sağlama hakkında bilgi için [bu konuya](/security/compass/critical-impact-accounts) bakın.
 

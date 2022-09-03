@@ -11,18 +11,17 @@ ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
-ms.date: 07/19/2022
 f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365solution-mdb-setup
 - highpri
-ms.openlocfilehash: c9727f22ff7976626e8ba6a799cab92eb8ba72fc
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: d59f22b8325f63a2f10164cb56f7604465e54569
+ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595683"
+ms.locfileid: "67600279"
 ---
 # <a name="set-up-email-notifications"></a>E-posta bildirimlerini ayarlama
 
