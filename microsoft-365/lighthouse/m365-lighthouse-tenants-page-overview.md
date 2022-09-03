@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: kywirpel
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Kiracılar sayfası hakkında bilgi edinin.
-ms.openlocfilehash: e6da14bb6ad87b54f33b2c0a6bf612c2ba025725
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: f36255a7fa1d5ec4c0ad244f11f3d9f495a6f3c3
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056756"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599230"
 ---
 # <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Kiracılar sayfasına genel bakış
 

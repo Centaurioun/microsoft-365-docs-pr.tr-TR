@@ -16,14 +16,14 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Yöneticiler, kullanıcılar tarafından bildirilen istenmeyen posta ve kimlik avı iletilerini toplamak için özel bir posta kutusunu (kullanıcı gönderimleri posta kutusu olarak da bilinir) nasıl tanımlayacağınızı öğrenebilir. Diğer ayarlar, kullanıcılar iletileri raporladığında raporlama deneyimini tamamlar.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: e09b5f7d6f34ac1daa98430f1bc868b4ca644777
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: b2f3f9b07c0d2d6c856fc786bf437bda76399ca1
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276316"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599571"
 ---
 # <a name="user-reported-message-settings"></a>Kullanıcı tarafından bildirilen ileti ayarları
 
@@ -125,7 +125,7 @@ Posta kutusunun bu gereksinimleri karşıladığını doğruladıktan sonra, kul
   >
   > **Kuruluşum'un posta kutusunu** seçerseniz, bildirilen iletiler konumundaki **Gönderimler** sayfasındaki <https://security.microsoft.com/reportsubmission>**Kullanıcı tarafından bildirilen iletiler** sekmesinde görünür. Ancak iletiler yeniden taranmadığı için bu iletilerin **Sonuç** değeri her zaman boş olacaktır.
   >
-  > [Kimlik avı simülasyonları yapmak için Saldırı simülasyonu eğitimi](attack-simulation-training-get-started.md) veya üçüncü taraf bir ürün kullanıyorsanız, bu makalenin önceki bölümlerinde kullanıcı gönderimleri posta kutusu yapılandırma gereksinimleri bölümünde daha önce açıklandığı gibi [kullanıcı gönderimleri posta kutusunu SecOps posta kutusu](#configuration-requirements-for-the-user-submissions-mailbox) olarak yapılandırmanız gerekir. Bunu yapmazsanız, ileti bildiren bir kullanıcı kimlik avı simülasyonu ürününde eğitim atamasını tetikleyebilir.
+  > Kimlik avı simülasyonları yapmak için [Saldırı simülasyonu eğitimi](attack-simulation-training-get-started.md) veya üçüncü taraf bir ürün kullanıyorsanız, kullanıcı gönderimleri posta kutusunu, bu makalenin önceki bölümlerindeki [Kullanıcı gönderimleri posta kutusu için yapılandırma gereksinimleri](#configuration-requirements-for-the-user-submissions-mailbox) bölümünde daha önce açıklandığı gibi bir SecOps posta kutusu olarak yapılandırmanız gerekir. Bunu yapmazsanız, ileti bildiren bir kullanıcı kimlik avı simülasyonu ürününde eğitim atamasını tetikleyebilir.
 
   Seçiminizden bağımsız olarak, **bildirilen iletileri gönder** bölümünde aşağıdaki ayarlar da kullanılabilir:
 

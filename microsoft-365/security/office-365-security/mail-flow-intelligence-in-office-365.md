@@ -1,5 +1,5 @@
 ---
-title: Posta akış zekası
+title: Posta akışı zekası
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -12,125 +12,125 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
-description: Yöneticiler, bağlayıcıları (posta akış zekası olarak da bilinir) kullanarak ileti teslimi ile ilişkili hata kodlarını öğrenebilir.
-ms.technology: mdo
-ms.prod: m365-security
+description: Yöneticiler, bağlayıcıları (posta akışı zekası olarak da bilinir) kullanarak ileti teslimiyle ilişkili hata kodları hakkında bilgi edinebilir.
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2536120dfc336145ec9fdba1db34a8da1f56c1b4
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b83b2011af516359d219061ee88f06c7ac170369
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681006"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599010"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP'de posta akışı zekası
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Geçerli olduğu yer:**
+**Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [1. plan Office 365 plan 2 için Microsoft Defender](defender-for-office-365.md)
+- [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarına posta kutusu olan Exchange Online kuruluşlarda, normalde EOP'den e-posta iletilerini şirket içi e-posta ortamınıza yönlendiren bir bağlayıcı kullanırsınız. İletileri iş ortağı kuruluşundan iş ortağı bir Microsoft 365 için de kullanabilirsiniz. Microsoft 365 bu iletileri bağlayıcı üzerinden teslim edeyene kadar teslim e-posta göndere Microsoft 365. Microsoft 365 24 saat boyunca her iletinin teslimi yeniden denenecek. 24 saat sonra kuyruğa alınan iletinin süresi dolar ve ileti özgün gönderene teslim edil iletisi (NDR veya geri dönen ileti olarak da bilinir) içinde döndürülür.
+Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarında, e-posta iletilerini EOP'den şirket içi e-posta ortamınıza yönlendirmek için genellikle bir bağlayıcı kullanırsınız. Microsoft 365'ten gelen iletileri bir iş ortağı kuruluşuna yönlendirmek için bağlayıcı da kullanabilirsiniz. Microsoft 365 bu iletileri bağlayıcı aracılığıyla teslim etmediğinde Microsoft 365'te kuyruğa alınır. Microsoft 365, 24 saat boyunca her ileti için teslimi yeniden denemeye devam edecektir. 24 saat sonra, kuyruğa alınan iletinin süresi dolar ve ileti teslim edilemeyen bir raporda (NDR veya geri dönen ileti olarak da bilinir) özgün gönderene döndürülür.
 
-Microsoft 365 bir bağlayıcı kullanarak bir ileti teslimi başarısız olduğunda hata verir. En yaygın hatalar ve çözümleri bu makalede açıklanmıştır. Bağlayıcılar aracılığıyla gönderilen teslim edilemeyen iletiler için toplu olarak kuyruğa alma ve bildirim hataları, posta akış _zekası olarak bilinir_.
+Microsoft 365, bağlayıcı kullanılarak ileti teslim edilemiyorsa bir hata oluşturur. En yaygın hatalar ve çözümleri bu makalede açıklanmıştır. Bağlayıcılar aracılığıyla gönderilen teslim edilemeyen iletiler için toplu olarak kuyruğa alma ve bildirim hataları _posta akışı zekası_ olarak bilinir.
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>Hata kodu: 450 4.4.312 DNS sorgusu başarısız oldu
 
-Normalde, bu hata Microsoft 365 bağlayıcıda belirtilen akıllı ana bilgisayara bağlanmayı denemesi ancak akıllı ana bilgisayarının IP adreslerini bulmak için DNS sorgusunun başarısız olduğu anlamına gelir. Bu hatanın olası nedenleri:
+Bu hata genellikle Microsoft 365'in bağlayıcıda belirtilen akıllı ana bilgisayara bağlanmayı denediğini ancak akıllı ana bilgisayarın IP adreslerini bulmak için DNS sorgusunun başarısız olduğu anlamına gelir. Bu hatanın olası nedenleri şunlardır:
 
-- Etki alanınıza ilişkin DNS barındırma hizmette (etki alanınız için yetkili ad sunucularının bakımını yapan taraf) bir sorun vardır.
+- Etki alanınızın DNS barındırma hizmetiyle (etki alanınız için yetkili ad sunucularını barındıran taraf) bir sorun var.
 
-- Etki alanınız kısa süre önce sona erdi, dolayısıyla MX kaydı alınamıyor.
+- Etki alanınızın süresi kısa süre önce doldu, bu nedenle MX kaydı alınamıyor.
 
-- Etki alanınıza ilişkin MX kaydı yakın zamanda değişmiştir ve DNS sunucuları daha önce etki alanınız için DNS bilgilerini önbelleğe alınmış olarak hala vardır.
+- Etki alanınızın MX kaydı kısa süre önce değişti ve DNS sunucuları etki alanınız için daha önce önbelleğe alınmış DNS bilgilerine sahip.
 
-### <a name="how-do-i-fix-error-code-450-44312"></a>Hata kodu 450 4.4.312'i nasıl düzeltebilirim?
+### <a name="how-do-i-fix-error-code-450-44312"></a>Hata kodu 450 4.4.312 Nasıl yaparım? düzeltildi?
 
-- Etki alanınız ile ilgili sorunu tanımlamak ve gidermek için DNS barındırma hizmetiniz ile birlikte çalışabilirsiniz.
+- Etki alanınızla ilgili sorunu belirlemek ve düzeltmek için DNS barındırma hizmetinizle çalışın.
 
-- Hata iş ortağı kuruluştansa (örneğin, üçüncü taraf bulut hizmeti sağlayıcısı), sorunu düzeltmek için iş ortağınıza başvurun.
+- Hata iş ortağı kuruluşunuzdan geliyorsa (örneğin, üçüncü taraf bir bulut hizmeti sağlayıcısı), sorunu çözmek için iş ortağınıza başvurun.
 
-## <a name="error-code-450-44315-connection-timed-out"></a>Hata kodu: 450 4.4.315 Bağlantı zamanlandı
+## <a name="error-code-450-44315-connection-timed-out"></a>Hata kodu: 450 4.4.315 Bağlantı zaman aşımına uğradı
 
-Normalde, bu Microsoft 365 e-posta sunucusunun hedef e-posta sunucusuna bağlanamay olduğu anlamına gelir. Hata ayrıntıları sorunu açıklar. Örneğin:
+Bu durum genellikle Microsoft 365'in hedef e-posta sunucusuna bağlanamazsınız anlamına gelir. Hata ayrıntıları sorunu açıklar. Örneğin:
 
-- Şirket içi e-posta sunucunuz yok.
+- Şirket içi e-posta sunucunuz çalışmıyor.
 
-- Bağlayıcının akıllı ana bilgisayar ayarlarında bir hata var, dolayısıyla Microsoft 365 IP adresine bağlanmaya çalışıyor.
+- Bağlayıcının akıllı ana bilgisayar ayarlarında bir hata olduğundan Microsoft 365 yanlış IP adresine bağlanmaya çalışıyor.
 
-### <a name="how-do-i-fix-error-code-450-44315"></a>Hata kodu 450 4.4.315'i nasıl düzeltirim?
+### <a name="how-do-i-fix-error-code-450-44315"></a>Hata kodu 450 4.4.315 Nasıl yaparım? düzeltildi?
 
-- Sizin için hangi senaryonun geçerli olduğunu bulun ve gerekli düzeltmeleri yapın. Örneğin, posta akışı düzgün çalışıyorsa ve bağlayıcı ayarlarını değiştirmemişsanız, sunucunun aşağıda olup olmadığını veya ağ altyapıda herhangi bir değişiklik olup olmadığını görmek için şirket içi e-posta ortamınızı denetlemeniz gerekir (örneğin, İnternet servis sağlayıcıları değiştirdiniz, dolayısıyla artık farklı IP adresleriniz var).
+- Hangi senaryonun sizin için geçerli olduğunu öğrenin ve gerekli düzeltmeleri yapın. Örneğin, posta akışı düzgün çalışıyorsa ve bağlayıcı ayarlarını değiştirmediyseniz, sunucunun devre dışı olup olmadığını veya ağ altyapınızda herhangi bir değişiklik olup olmadığını görmek için şirket içi e-posta ortamınızı denetlemeniz gerekir (örneğin, İnternet servis sağlayıcılarını değiştirdiyseniz, dolayısıyla artık farklı IP adresleriniz vardır).
 
-- Hata iş ortağı kuruluştansa (örneğin, üçüncü taraf bulut hizmeti sağlayıcısı), sorunu düzeltmek için iş ortağınıza başvurun.
+- Hata iş ortağı kuruluşunuzdan geliyorsa (örneğin, üçüncü taraf bir bulut hizmeti sağlayıcısı), sorunu çözmek için iş ortağınıza başvurun.
 
 ## <a name="error-code-450-44316-connection-refused"></a>Hata kodu: 450 4.4.316 Bağlantı reddedildi
 
-Normalde, bu hata Microsoft 365 e-posta sunucusuna bağlanmaya çalışıldı hatasıyla karşılaştığınız anlamına gelir. Bu hatanın olası bir nedeni güvenlik duvarının IP adreslerinden gelen bağlantıları Microsoft 365 olmasıdır. Şirket içi e-posta sisteminizi Microsoft 365-posta ortamınıza tamamen geçirmeniz ve kapatmanız, tasarımdan da bir hata olabilir.
+Bu hata genellikle Microsoft 365'in hedef e-posta sunucusuna bağlanmaya çalışırken bir bağlantı hatasıyla karşılaştığı anlamına gelir. Bu hatanın olası bir nedeni, güvenlik duvarınızın Microsoft 365 IP adreslerinden gelen bağlantıları engellemesidir. Ya da şirket içi e-posta sisteminizi Tamamen Microsoft 365'e geçirdiyseniz ve şirket içi e-posta ortamınızı kapattıysanız bu hata tasarım gereği olabilir.
 
-### <a name="how-do-i-fix-error-code-450-44316"></a>Hata kodu 450 4.4.316'da nasıl düzeltebilirim?
+### <a name="how-do-i-fix-error-code-450-44316"></a>Hata kodu 450 4.4.316 Nasıl yaparım? düzeltildi?
 
-- Şirket içi ortamınıza posta kutularınız varsa, TCP bağlantı noktası 25'te yer alan Microsoft 365 IP adreslerinden şirket içi e-posta sunucularına bağlantılara izin vermek için güvenlik duvarı ayarlarınızı değiştirmeniz gerekir. IP adreslerinin nasıl Microsoft 365 için bkz. MICROSOFT 365 [ve IP adresi aralıkları](../../enterprise/urls-and-ip-address-ranges.md).
+- Şirket içi ortamınızda posta kutularınız varsa, güvenlik duvarı ayarlarınızı, 25 numaralı TCP bağlantı noktasındaki Microsoft 365 IP adreslerinden şirket içi e-posta sunucularınıza bağlantılara izin verecek şekilde değiştirmeniz gerekir. Microsoft 365 IP adreslerinin listesi için bkz. [Microsoft 365 URL'leri ve IP adresi aralıkları](../../enterprise/urls-and-ip-address-ranges.md).
 
-- Şirket içi ortamınıza başka ileti teslimi gerektirsinse, Uyarıda Şimdi  düzelt'e tıklayın; böylece Microsoft 365 iletileri geçersiz alıcılara hemen reddedebilir. Bu, normal ileti teslimini etkileyabilecek geçersiz alıcılar için kuruluş kotasını aşma riskini azaltır. Sorunu kendiniz çözmek için aşağıdaki yönergeleri de kullanabilirsiniz:
+- Şirket içi ortamınıza başka ileti teslim edilmemesi gerekiyorsa, Microsoft 365'in geçersiz alıcıları olan iletileri hemen reddedebilmesi için uyarıda **Şimdi düzelt'e** tıklayın. Bu, kuruluşunuzun geçersiz alıcılar için kotasını aşma riskini azaltır ve bu da normal ileti teslimini etkileyebilir. Ya da sorunu el ile düzeltmek için aşağıdaki yönergeleri kullanabilirsiniz:
 
-  - Exchange yönetim merkezinde, şirket içi e-posta ortamınıza e-posta teslim Microsoft 365 devre dışı bırak veya sil:
+  - Exchange yönetim merkezinde, Microsoft 365'ten şirket içi e-posta ortamınıza e-posta teslim eden bağlayıcıyı devre dışı bırakın veya silin:
 
-    1. Aşağıdaki EAC'de, <https://admin.exchange.microsoft.com>Posta akışı **Bağlayıcıları'ne** \> **gidin**. Doğrudan Bağlayıcılar **sayfasına gitmek için** kullanın <https://admin.exchange.microsoft.com/#/connectors>.
+    1. konumundaki EAC'de <https://admin.exchange.microsoft.com>**Posta akışı** \> **Bağlayıcıları'na** gidin. Doğrudan **Bağlayıcılar** sayfasına gitmek için kullanın <https://admin.exchange.microsoft.com/#/connectors>.
 
-    2. from value **Office 365 ve** **To** değeri Your **organization's email server ile bağlayıcıyı** seçin ve aşağıdaki adımlardan birini uygulayın:
-       - Kaldır Simgesini Sil'e tıklayarak **bağlayıcıyı** ![silin.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
-       - Düzenle simgesini tıklatarak bağlayıcıyı **devre dışı** ![bırakabilirsiniz.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) ve **Aç'ın temizlerini temizleme**.
+    2. **Kimden** değeri **Office 365** ve **To** değeri **Kuruluşunuzun e-posta sunucusuna** sahip bağlayıcıyı seçin ve aşağıdaki adımlardan birini yapın:
+       - **Kaldır** simgesine tıklayarak ![bağlayıcıyı silin.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - **Düzenle** ![simgesine tıklayarak bağlayıcıyı devre dışı bırakın.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) ve **Aç'ı** temizleyin.
 
-  - Şirket içi e-Microsoft 365 ortamıyla ilişkilendirilmiş etki alanında kabul edilen etki alanını İç Geçişten **Yetkili'ye değiştirebilirsiniz**. Yönergeler için bkz. [Etki alanlarında kabul edilen etki Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+  - Microsoft 365'te şirket içi e-posta ortamınızla ilişkili kabul edilen etki alanını **İç Geçişten** **Yetkili** olarak değiştirin. Yönergeler için bkz. [Exchange Online'da kabul edilen etki alanlarını yönetme](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-  **Not**: Normalde, bu değişikliklerin etkili olmak için 30 dakika ile bir saat arasında sürer. Bir saat sonra, hatayı artık alma almay postasını doğrulayın.
+  **Not**: Bu değişikliklerin geçerlilik kazanması genellikle 30 dakika ile bir saat arasında sürer. Bir saat sonra artık hata almadığınızdan emin olun.
 
-- Hata iş ortağı kuruluştansa (örneğin, üçüncü taraf bulut hizmeti sağlayıcısı), sorunu çözmek için iş ortağınıza başvurun.
+- Hata iş ortağı kuruluşunuzdan geliyorsa (örneğin, üçüncü taraf bir bulut hizmeti sağlayıcısı), sorunu çözmek için iş ortağınıza başvurmanız gerekir.
 
-## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Hata kodu: 450 4.4.317 Uzak sunucuya bağlanamıyor
+## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Hata kodu: 450 4.4.317 Uzak sunucuya bağlanılamıyor
 
-Normalde, bu hata Microsoft 365 e-posta sunucusuna bağlı olduğu, ancak sunucunun hemen bir hatayla yanıt verdi olduğu veya bağlantı gereksinimlerini karşılamıyor olduğu anlamına gelir. Hata ayrıntıları sorunu açıklar. Örneğin:
+Bu hata genellikle hedef e-posta sunucusuna bağlı Microsoft 365 anlamına gelir, ancak sunucu hemen bir hatayla yanıt verir veya bağlantı gereksinimlerini karşılamaz. Hata ayrıntıları sorunu açıklar. Örneğin:
 
-- Hedef e-posta sunucusu "Hizmet kullanılamıyor" hatasıyla yanıt verdi ve bu da sunucunun Şu adresle iletişimi sürdüre olmadığını Microsoft 365.
+- Hedef e-posta sunucusu, sunucunun Microsoft 365 ile iletişimi sürdüremediğini belirten "Hizmet kullanılamıyor" hatasıyla yanıt verdi.
 - Bağlayıcı TLS gerektirecek şekilde yapılandırılmıştır, ancak hedef e-posta sunucusu TLS'yi desteklemez.
 
-### <a name="how-do-i-fix-error-code-450-44317"></a>Hata kodu 450 4.4.317'i nasıl düzeltebilirim?
+### <a name="how-do-i-fix-error-code-450-44317"></a>Hata kodu 450 4.4.317 Nasıl yaparım? düzeltildi?
 
-- Şirket içi e-posta sunucular ve bağlayıcıda TLS ayarlarını ve sertifikalarını doğrulayın.
-- Hata iş ortağı kuruluştansa (örneğin, üçüncü taraf bulut hizmeti sağlayıcısı), sorunu çözmek için iş ortağınıza başvurun.
+- Şirket içi e-posta sunucularınızdaki TLS ayarlarını ve sertifikalarını ve bağlayıcıdaki TLS ayarlarını doğrulayın.
+- Hata iş ortağı kuruluşunuzdan geliyorsa (örneğin, üçüncü taraf bir bulut hizmeti sağlayıcısı), sorunu çözmek için iş ortağınıza başvurmanız gerekir.
 
-## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>Hata kodu: 450 4.4.318 Bağlantısı ani bir şekilde kapatıldı
+## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>Hata kodu: 450 4.4.318 Bağlantı aniden kapatıldı
 
-Normalde, bu hata Microsoft 365 şirket içi e-posta ortamınız ile iletişim kurmakta güçlük veya sorun olduğu anlamına gelir; dolayısıyla bağlantı atıldı. Bu hatanın olası nedenleri:
+Bu hata genellikle Microsoft 365'in şirket içi e-posta ortamınızla iletişim kurmakta zorlandığı ve dolayısıyla bağlantının kesildiği anlamına gelir. Bu hatanın olası nedenleri şunlardır:
 
-- Güvenlik duvarınız SMTP paket kabul kurallarını kullanıyor ve bu kurallar düzgün çalışmıyor.
-- Şirket içi e-posta sunucunuz düzgün çalışmıyor (örneğin, hizmet kilitleniyor, kilitleniyor veya düşük sistem kaynakları); bu da sunucunun zaman kapanmasına ve sunucuyla bağlantının kapanmasına neden Microsoft 365.
-- Şirket içi ortamınız ile şirket içi ortamınız arasında ağ Microsoft 365.
+- Güvenlik duvarınız SMTP paket inceleme kurallarını kullanıyor ve bu kurallar düzgün çalışmıyor.
+- Şirket içi e-posta sunucunuz düzgün çalışmıyor (örneğin, hizmet kilitleniyor, kilitleniyor veya düşük sistem kaynakları), bu da sunucunun zaman aşımına uğrmasına ve Microsoft 365 bağlantısını kapatmasına neden oluyor.
+- Şirket içi ortamınız ile Microsoft 365 arasında ağ sorunları vardır.
 
-### <a name="how-do-i-fix-error-code-450-44318"></a>Hata kodu 450 4.4.318'i nasıl düzeltebilirim?
+### <a name="how-do-i-fix-error-code-450-44318"></a>Hata kodu 450 4.4.318 Nasıl yaparım? düzeltildi?
 
-- Sizin için hangi senaryonun geçerli olduğunu bulun ve gerekli düzeltmeleri yapın.
-- Sorun, şirket içi ortamınız ile şirket içi ortamınız arasındaki ağ sorun Microsoft 365, sorunu gidermek için ağ ekibiyle iletişime geçin.
-- Hata iş ortağı kuruluştansa (örneğin, üçüncü taraf bulut hizmeti sağlayıcısı), sorunu çözmek için iş ortağınıza başvurun.
+- Hangi senaryonun sizin için geçerli olduğunu öğrenin ve gerekli düzeltmeleri yapın.
+- Soruna şirket içi ortamınız ile Microsoft 365 arasındaki ağ sorunları neden oluyorsa, sorunu gidermek için ağ ekibinize başvurun.
+- Hata iş ortağı kuruluşunuzdan geliyorsa (örneğin, üçüncü taraf bir bulut hizmeti sağlayıcısı), sorunu çözmek için iş ortağınıza başvurmanız gerekir.
 
-## <a name="error-code-450-47320-certificate-validation-failed"></a>Hata kodu: 450 4.7.320 Sertifika doğrulaması başarısız
+## <a name="error-code-450-47320-certificate-validation-failed"></a>Hata kodu: 450 4.7.320 Sertifika doğrulaması başarısız oldu
 
-Normalde, bu hata Microsoft 365 hedef e-posta sunucusunun sertifikasını doğrulamaya çalışırken bir hatayla karşılaştığınız anlamına gelir. Hata ayrıntıları hatayı açıklar. Örneğin:
+Genellikle bu hata, Microsoft 365'in hedef e-posta sunucusunun sertifikasını doğrulamaya çalışırken bir hatayla karşılaştığı anlamına gelir. Hata ayrıntıları hatayı açıklar. Örneğin:
 
 - Sertifikanın süresi doldu
-- Sertifika konusu eşleşmeyenleri
+- Sertifika konusu uyuşmazlığı
 - Sertifika artık geçerli değil
 
-### <a name="how-do-i-fix-error-code-450-47320"></a>Hata kodu 450 4.7.320'i nasıl düzeltebilirim?
+### <a name="how-do-i-fix-error-code-450-47320"></a>Hata kodu 450 4.7.320 Nasıl yaparım? düzeltildi?
 
-- Bekleyen iletilerin teslim Microsoft 365 için bağlayıcının sertifikasını veya Microsoft 365 düzeltin.
-- Hata iş ortağı kuruluştansa (örneğin, üçüncü taraf bulut hizmeti sağlayıcısı), sorunu çözmek için iş ortağınıza başvurun.
+- Microsoft 365'te kuyruğa alınmış iletilerin teslim edilebilmesi için sertifikayı veya bağlayıcıdaki ayarları düzeltin.
+- Hata iş ortağı kuruluşunuzdan geliyorsa (örneğin, üçüncü taraf bir bulut hizmeti sağlayıcısı), sorunu çözmek için iş ortağınıza başvurmanız gerekir.
 
 ## <a name="other-error-codes"></a>Diğer hata kodları
 
-Microsoft 365 şirket içi veya iş ortağı e-posta sunucunuza ileti teslim etmekte zor oluyor. Hatada **Hedef sunucu** bilgilerini kullanarak ortamınıza sorunu incelemek veya yapılandırma hatası varsa bağlayıcıyı değiştirmek için kullanın.
+Microsoft 365, şirket içi veya iş ortağı e-posta sunucunuza ileti göndermekte zorlanıyor. Ortamınızdaki sorunu incelemek için hatadaki **Hedef sunucu** bilgilerini kullanın veya yapılandırma hatası varsa bağlayıcıyı değiştirin.
 
-Hata iş ortağı kuruluştansa (örneğin, üçüncü taraf bulut hizmeti sağlayıcısı), sorunu çözmek için iş ortağınıza başvurun.
+Hata iş ortağı kuruluşunuzdan geliyorsa (örneğin, üçüncü taraf bir bulut hizmeti sağlayıcısı), sorunu çözmek için iş ortağınıza başvurmanız gerekir.

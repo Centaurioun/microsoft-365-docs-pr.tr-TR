@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Yöneticiler, Güvenlik & Uyumluluk Merkezi'ndeki Posta akışı panosunda Otomatik iletilen iletiler raporu hakkında bilgi edinebilir.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 2f102f4fbea558f0972fbd4f3e8f4a4bea257bf4
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 86c3e7f530f31d6827bb5ce4396f3b9ed6229605
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131052"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598769"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'nde otomatik iletilen iletiler içgörüleri
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -54,7 +54,7 @@ Pencere öğesindeki ileti sayısına tıkladığınızda, otomatik iletilen ile
 
 :::image type="content" source="../../media/mfi-auto-forwarded-messages-details.png" alt-text="Güvenlik & Uyumluluk Merkezi'ndeki Otomatik iletilen iletiler pencere öğesi" lightbox="../../media/mfi-auto-forwarded-messages-details.png":::
 
-## <a name="insights"></a>Analizler
+## <a name="insights"></a>Bilgi Edinme
 
 Rapor verilerine göre iki içgörü oluşturulur:
 

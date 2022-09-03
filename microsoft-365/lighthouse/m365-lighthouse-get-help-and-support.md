@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: crimora
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için yardım ve destek almayı öğrenin.
-ms.openlocfilehash: cf0f9e9fd689f8e683b63af4cc8db7a09a1f6240
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: 5648c17aa87f41164c89113f35615a0226d6d433
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139329"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599308"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse için yardım ve destek alma 
 
@@ -37,10 +37,10 @@ Yardıma ihtiyacınız varsa çeşitli seçenekler mevcuttur. İlk olarak biline
 
     1. konumundaki Microsoft 365 yönetim merkezi <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>gidin.
     2. Sol gezinti bölmesinde **Sistem Durumu** >  **Hizmet durumu'nı** seçin.
-    3. Hizmetler listesinde **, Microsoft 365 paketini** bulun ve paketteki tüm hizmetleri gösterecek şekilde genişletin.
+    3. Hizmetler listesinde **Microsoft 365 paketini** bulun ve paketteki tüm hizmetleri gösterecek şekilde genişletin.
     4. **Microsoft 365 Lighthouse** bulun ve durumunu denetleyin.
 
-- Sorunun [Microsoft 365 Lighthouse ile ilgili bilinen sorunlar](/microsoft-365/lighthouse/m365-lighthouse-known-issues?view=o365-worldwide) bölümünde listelenip listelenmediğini görün.
+- Sorunun [Microsoft 365 Lighthouse ile ilgili bilinen sorunlar](/microsoft-365/lighthouse/m365-lighthouse-known-issues) bölümünde listelenip listelenmediğini görün.
 
 Bu kaynakların hiçbirinde listelenmeyen bir sorunla karşılaşıyorsanız, kendi kendine yardım seçeneklerini görüntülemek veya bir hizmet isteği oluşturmak için bu makaledeki yönergeleri izleyin.
 

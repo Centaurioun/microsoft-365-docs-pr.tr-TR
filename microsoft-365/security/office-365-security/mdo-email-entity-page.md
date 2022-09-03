@@ -8,8 +8,8 @@ manager: dansimp
 ms.date: 08/12/2022
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
-ms.technology: mdo
+ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.localizationpriority: medium
 search.appverid: ''
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Office 365 için Microsoft Defender E5, P1 ve P2 müşterileri artık e-posta varlık sayfasıyla her e-postanın 360 derecelik görünümünü alabilir.
-ms.openlocfilehash: 9e4546f6ed8689ed218b4b7fc209918c44d53cb9
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: a6417173e25342fdef483bc38da64d6c1c48b96e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67368933"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598791"
 ---
 # <a name="the-email-entity-page"></a>E-posta varlığı sayfası
 

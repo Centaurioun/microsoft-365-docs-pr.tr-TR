@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Donanım tabanlı yalıtımda en son bilgileri edinin. Açıklardan yararlanmalar veya kötü amaçlı bağlantılar gibi mevcut ve yeni ortaya çıkan saldırıların çalışanların üretkenliğini ve kurumsal güvenliğini kesintiye uğratmasını önleyin.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 9a7e820a4aedb4338111ef0fc76a35de480ea1f8
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 49056945f7c507c6f1d7c62684035e518c7ce549
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530936"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599703"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Yöneticiler için Office için Application Guard
 

@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: Yöneticiler Microsoft 365'te tehdit koruması hakkında bilgi edinebilir ve bunu kuruluşunuz için nasıl kullanacağınızı yapılandırabilir.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: f4a7dd91dde78e816ed579d2f16744ec90b67675
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 747fe0563222b34b5ff63673a6bc350db9207b83
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772138"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598725"
 ---
 # <a name="protect-against-threats"></a>Tehditlere karşı korunun
 

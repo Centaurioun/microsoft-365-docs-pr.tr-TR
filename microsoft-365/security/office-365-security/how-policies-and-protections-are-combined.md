@@ -15,25 +15,25 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, Exchange Online Protection'de (EOP) korumaların uygulama sırası ve koruma ilkelerindeki öncelik değerinin hangi ilkenin uygulandığını nasıl belirlediği hakkında bilgi edinebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 8b7bf48de0939ec913982feb399b38dc2c540157
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: b976c738bb77d6a6e3264e1e1cde76a7afdfe005
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417764"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598373"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>E-posta korumasının sırası ve önceliği
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarda, gelen e-postalar birden çok koruma biçimiyle işaretlenebilir. Örneğin, EOP'de tüm Microsoft 365 müşterilerin kullanımına sunulan yerleşik kimlik avı önleme ilkeleri ve Office 365 için Microsoft Defender müşterilerin kullanımına sunulan daha sağlam kimlik avı önleme ilkeleri. İletiler ayrıca kötü amaçlı yazılım, istenmeyen posta, kimlik avı vb. için birden çok algılama taramasından geçer. Tüm bu etkinlik göz önünde bulundurulduğunda, ilkenin hangi ilkenin uygulandığı konusunda bazı karışıklıklar olabilir.
+Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarında, gelen e-postalar birden çok koruma biçimiyle işaretlenebilir. Örneğin, EOP'de tüm Microsoft 365 müşterilerinin kullanımına sunulan yerleşik kimlik avı önleme ilkeleri ve Office 365 için Microsoft Defender müşterilerin kullanımına sunulan daha sağlam kimlik avı önleme ilkeleri. İletiler ayrıca kötü amaçlı yazılım, istenmeyen posta, kimlik avı vb. için birden çok algılama taramasından geçer. Tüm bu etkinlik göz önünde bulundurulduğunda, ilkenin hangi ilkenin uygulandığı konusunda bazı karışıklıklar olabilir.
 
 Genel olarak, bir iletiye uygulanan bir ilke **CAT (Category)** özelliğindeki **X-Forefront-Antispam-Report** üst bilgisinde tanımlanır. Daha fazla bilgi için bkz [. İstenmeyen postadan koruma iletisi üst bilgileri](anti-spam-message-headers.md).
 
@@ -41,7 +41,7 @@ Genel olarak, bir iletiye uygulanan bir ilke **CAT (Category)** özelliğindeki 
 
 - **E-posta koruma türü için işleme sırası**: Bu sıra yapılandırılamaz ve aşağıdaki tabloda açıklanmıştır:
 
-  |Sipariş|E-posta koruması|Kategori|Yönetileceği yer|
+  |Sipariş|Email koruması|Kategori|Yönetileceği yer|
   |:---:|---|---|---|
   |1|Malware|CAT:MALW|[EOP'de kötü amaçlı yazılımdan koruma ilkelerini yapılandırma](configure-anti-malware-policies.md)|
   |2|Kimlik Avı|CAT:PHSH|[EOP'de istenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md)|
@@ -63,8 +63,8 @@ Genel olarak, bir iletiye uygulanan bir ilke **CAT (Category)** özelliğindeki 
 
 |İlke adı|Öncelik|Kullanıcı kimliğe bürünme|Kimlik sahtekarlığı önleme|
 |---|:---:|:---:|:---:|
-|İlke A|1|-Inı|Kapalı|
-|İlke B|2|Kapalı|-Inı|
+|İlke A|1|-Inı|Devre Dışı|
+|İlke B|2|Devre Dışı|-Inı|
 
 1. Kimlik sahtekarlığı (4) kullanıcı kimliğine bürünmeden önce değerlendirildiğinden ileti kimlik sahtekarlığı olarak tanımlanır (5).
 2. İlke A, İlke B'den daha yüksek bir önceliğe sahip olduğundan önce uygulanır.

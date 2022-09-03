@@ -6,22 +6,23 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ms.prod: m365-security
-ms.technology: mdb
+ms.date: 09/02/2022
+ms.service: microsoft-365-security
+ms.subservice: mdb
 search.appverid:
 - MOE150
 - MET150
 description: Bu playbook ile İş için Defender denemenizden en iyi şekilde geçin. Hızlı bir şekilde ayarlayın ve yeni güvenlik özelliklerinizi kullanmaya başlayın.
 ms.custom: trial-playbook
-ms.openlocfilehash: dafd2cc871db96453d38c753b7bd10568ec7123d
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: 0ebe58b5083127cfe281c4444f425d214f3c4153
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343053"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598505"
 ---
 # <a name="trial-playbook-microsoft-defender-for-business"></a>Deneme playbook'u: İş için Microsoft Defender
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 için Microsoft Defender'ın Uç Nokta için Microsoft Defender ile birlikte kullanılması
+title: Uç Nokta için Microsoft Defender ile birlikte Office 365 için Microsoft Defender kullanma
 f1.keywords:
 - NOCSH
 keywords: integrate, Microsoft Defender, Uç Nokta için Microsoft Defender
@@ -15,25 +15,25 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Cihazlarınıza ve e-posta içeriğinize yönelik tehditler hakkında daha ayrıntılı bilgi edinmek için Office 365 için Microsoft Defender'ı Uç Nokta için Microsoft Defender ile birlikte kullanın.
+description: Cihazlarınıza yönelik tehditler ve e-posta içeriği hakkında daha ayrıntılı bilgi edinmek için Office 365 için Microsoft Defender Uç Nokta için Microsoft Defender birlikte kullanın.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 8df364538e6a799557956a8d624b0561c626e4fd
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: be951f29924300bfa14c92df549c7959a995c7ef
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971120"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598395"
 ---
-# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Office 365 için Microsoft Defender'ın Uç Nokta için Microsoft Defender ile birlikte kullanılması
+# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender ile birlikte Office 365 için Microsoft Defender kullanma
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-[Office 365 için Microsoft Defender, Uç Nokta için Microsoft Defender](defender-for-office-365.md) ile çalışacak şekilde yapılandırılabilir.[](/windows/security/threat-protection)
+[Office 365 için Microsoft Defender](defender-for-office-365.md) [Uç Nokta için Microsoft Defender](/windows/security/threat-protection) ile çalışacak şekilde yapılandırılabilir.
 
-Office 365 için Microsoft Defender'ı Uç Nokta için Microsoft Defender ile tümleştirmek, güvenlik operasyonları ekibinizin kullanıcıların cihazları risk altındaysa hızlı bir şekilde izlemenize ve harekete geçmenize yardımcı olabilir. Örneğin, tümleştirme etkinleştirildikten sonra güvenlik operasyonları ekibiniz algılanan bir e-posta iletisinden etkilenmiş olabilecek cihazları ve bu cihazlar için Uç Nokta için Microsoft Defender'de oluşturulan son uyarıları görebilir.
+Office 365 için Microsoft Defender Uç Nokta için Microsoft Defender ile tümleştirmek, güvenlik operasyonları ekibinizin kullanıcıların cihazları risk altındaysa hızlı bir şekilde izlemenize ve harekete geçmenize yardımcı olabilir. Örneğin, tümleştirme etkinleştirildikten sonra güvenlik operasyonları ekibiniz algılanan bir e-posta iletisinden etkilenmiş olabilecek cihazları ve bu cihazlar için Uç Nokta için Microsoft Defender'de oluşturulan son uyarıları görebilir.
 
 Aşağıdaki görüntüde **, Uç Nokta için Microsoft Defender** tümleştirme etkinleştirildiğinde Cihazlar sekmesinin nasıl göründüğü gösterilir:
 
@@ -46,27 +46,27 @@ Bu örnekte, algılanan e-posta iletisinin alıcılarının dört cihazı olduğ
 
 ## <a name="requirements"></a>Gereksinimler
 
-- Kuruluşunuzun Office 365 (veya Office 365 E5) ve Uç Nokta için Microsoft Defender için Microsoft Defender'a sahip olması gerekir.
+- Kuruluşunuzun Office 365 için Microsoft Defender (veya Office 365 E5) ve Uç Nokta için Microsoft Defender olması gerekir.
 
-- Microsoft 365'de genel yönetici veya güvenlik yöneticisi rolü atanmış olmalıdır. Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında İzinler](permissions-microsoft-365-security-center.md).
+- Microsoft 365'te genel yönetici veya güvenlik yöneticisi rolü atanmış olmalıdır. Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında İzinler](permissions-microsoft-365-security-center.md).
 
 - [Gezgin'e (veya gerçek zamanlı algılamalara)](threat-explorer.md) erişiminiz olmalıdır.
 
-## <a name="to-integrate-microsoft-defender-for-office-365-with-microsoft-defender-for-endpoint"></a>Office 365 için Microsoft Defender'ı Uç Nokta için Microsoft Defender ile tümleştirmek için
+## <a name="to-integrate-microsoft-defender-for-office-365-with-microsoft-defender-for-endpoint"></a>Office 365 için Microsoft Defender Uç Nokta için Microsoft Defender ile tümleştirmek için
 
-Office 365 için Microsoft Defender'ı Uç Nokta için Microsoft Defender ile tümleştirmek hem Uç Nokta için Defender hem de Office 365 için Defender'da ayarlanır.
+Office 365 için Microsoft Defender Uç Nokta için Microsoft Defender ile tümleştirme hem Uç Nokta için Defender'da hem de Office 365 için Defender ayarlanır.
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın.
 
-2. **E-posta & işbirliği** \> **Gezgini'ne** gidin.
+2. **Email & işbirliği** \> **Gezgini'ne** gidin.
 
-3. **Gezgin** sayfasında, ekranın sağ üst köşesinde **MDE Ayarlar'i** seçin.
+3. **Gezgin** sayfasında, ekranın sağ üst köşesinde **MDE Ayarları'nı** seçin.
 
-3. Görüntülenen **Uç Nokta için Microsoft Defender bağlantı** açılır penceresinde **, Uç Nokta için Microsoft Defender Bağlan** açın (![Aç/kapat](../../media/scc-toggle-on.png))**'ı seçin**.
+3. Görüntülenen **Uç Nokta için Microsoft Defender bağlantı** açılır penceresinde **, Uç Nokta için Microsoft Defender Bağlan** 'ı (![Aç/](../../media/scc-toggle-on.png)kapat) açın ve **kapat'ı** seçin.
 
    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE Bağlantısı sayfası" lightbox="../../media/explorer-mdeconnection-dialognew.png":::
 
-4. Gezinti bölmesinde **Ayarlar'yi** seçin. **Ayarlar** sayfasında **Uç Noktalar'ı** seçin
+4. Gezinti bölmesinde **Ayarlar'ı** seçin. **Ayarlar** sayfasında **Uç Noktalar'ı** seçin
 
 5. Açılan **Uç Noktalar** sayfasında **Gelişmiş özellikler'i** seçin.
 

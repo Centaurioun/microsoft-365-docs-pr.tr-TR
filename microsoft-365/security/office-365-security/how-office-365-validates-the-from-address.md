@@ -17,25 +17,25 @@ ms.collection:
 - M365-security-compliance
 description: Yöneticiler, kimlik avının önlenmesine yardımcı olmak için Exchange Online Protection (EOP) ve Outlook.com tarafından kabul edilen veya reddedilen e-posta adresi türleri hakkında bilgi edinebilir.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: c8b9fb5c9e2b67a656948684838b61b4a9c33a8d
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: a4687ca9d9135a8feef66f4caabfcb7a3a2313b4
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319560"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598417"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP kimlik avının önlenmesi için Kimden adresini nasıl doğrular?
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Kimlik avı saldırıları, herhangi bir e-posta kuruluşu için sürekli bir tehdit oluşturur. Sahte [(sahte) gönderen e-posta adreslerini](anti-spoofing-protection.md) kullanmaya ek olarak, saldırganlar genellikle Kimden adresinde İnternet standartlarını ihlal eden değerler kullanır. Bu tür kimlik avının önlenmesine yardımcı olmak için, Exchange Online Protection (EOP) ve Outlook.com artık bu makalede açıklandığı gibi gelen iletilerin RFC uyumlu bir Kimden adresi içermesini gerektirir. Bu zorlama Kasım 2017'de etkinleştirildi.
+Kimlik avı saldırıları, herhangi bir e-posta kuruluşu için sürekli bir tehdit oluşturur. Sahte [(sahte) gönderen e-posta adreslerini](anti-spoofing-protection.md) kullanmaya ek olarak, saldırganlar genellikle Kimden adresinde İnternet standartlarını ihlal eden değerler kullanır. Bu tür kimlik avının önlenmesine yardımcı olmak için, Exchange Online Protection (EOP) ve Outlook.com artık bu makalede açıklandığı gibi gelen iletilerin RFC uyumlu bir Kimden adresi içermesi gerekir. Bu zorlama Kasım 2017'de etkinleştirildi.
 
 **Notlar**:
 
@@ -90,7 +90,7 @@ Aşağıdaki Kimden e-posta adresleri geçerlidir:
 
 Aşağıdaki Kimden e-posta adresleri geçersiz:
 
-- **Kimden adresi yok**: Bazı otomatik iletiler Kimden adresi içermez. Geçmişte, Microsoft 365 veya Outlook.com Kimden adresi olmayan bir ileti aldığında, hizmet iletiyi teslim edilebilir hale getirmek için şu varsayılan Kimden: adresini eklemiştir:
+- **Kimden adresi yok**: Bazı otomatik iletiler Kimden adresi içermez. Geçmişte Microsoft 365 veya Outlook.com Kimden adresi olmayan bir ileti aldığında, hizmet iletiyi teslim edilebilir hale getirmek için şu varsayılan Kimden: adresini eklemiştir:
 
   `From: <>`
 
@@ -130,10 +130,10 @@ Null MX yayımlama hakkında daha fazla bilgi için bkz. [RFC 7505](https://tool
 
 ## <a name="override-from-address-enforcement"></a>Adres zorlamasından geçersiz kıl
 
-Gelen e-postanın Kimden adresi gereksinimlerini atlamak için, [Microsoft 365'de güvenilir gönderen listeleri oluşturma](create-safe-sender-lists-in-office-365.md) başlığı altında açıklandığı gibi IP İzin Verme Listesi (bağlantı filtreleme) veya posta akışı kurallarını (aktarım kuralları olarak da bilinir) kullanabilirsiniz.
+Gelen e-postanın Kimden adresi gereksinimlerini atlamak için, [Microsoft 365'te güvenilir gönderen listeleri oluşturma](create-safe-sender-lists-in-office-365.md) başlığı altında açıklandığı gibi IP İzin Verme Listesi (bağlantı filtreleme) veya posta akışı kurallarını (aktarım kuralları olarak da bilinir) kullanabilirsiniz.
 
-Microsoft 365 gönderdiğiniz giden e-posta için Kimden adresi gereksinimlerini geçersiz kılamazsınız. Ayrıca Outlook.com, destek aracılığıyla bile herhangi bir tür geçersiz kılmaya izin vermez.
+Microsoft 365'ten gönderdiğiniz giden e-posta için Kimden adresi gereksinimlerini geçersiz kılamazsınız. Ayrıca Outlook.com, destek aracılığıyla bile herhangi bir türde geçersiz kılmaya izin vermez.
 
-## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Microsoft 365'da siber suçlardan korunmanın ve korunmanın diğer yolları
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Microsoft 365'te siber suçları önlemenin ve bu suçlara karşı korumanın diğer yolları
 
-Kuruluşunuzu kimlik avına, istenmeyen postalara, veri ihlallerine ve diğer tehditlere karşı nasıl güçlendirebileceğiniz hakkında daha fazla bilgi için bkz. [İş planları için Microsoft 365 güvenliğini sağlamaya yönelik en iyi yöntemler](../../admin/security-and-compliance/secure-your-business-data.md).
+Kuruluşunuzu kimlik avına, istenmeyen postalara, veri ihlallerine ve diğer tehditlere karşı nasıl güçlendirebileceğiniz hakkında daha fazla bilgi için bkz. [İş için Microsoft 365 planlarının güvenliğini sağlamaya yönelik en iyi yöntemler](../../admin/security-and-compliance/secure-your-business-data.md).

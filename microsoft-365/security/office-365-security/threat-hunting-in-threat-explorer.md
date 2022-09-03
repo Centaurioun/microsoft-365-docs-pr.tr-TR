@@ -15,14 +15,14 @@ ms.collection:
 description: Tehditleri verimli bir şekilde araştırmak ve yanıtlamak için Microsoft 365 Defender portalında Tehdit Gezgini'ni veya Gerçek zamanlı algılamaları kullanın.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 2c99bc2ce004156320ec8f53f6b956f7989ee056
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: c1fa07fd22d0bb03cf9713dd210e24de8fa66e2b
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648833"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598703"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender için Tehdit Gezgini'nde tehdit avcılığı
 
@@ -35,12 +35,12 @@ ms.locfileid: "65648833"
 Bu makalede:
 
 - [Tehdit Gezgini kılavuzu](#threat-explorer-walk-through)
-- [E-posta araştırması](#email-investigation)
-- [E-posta düzeltme](#email-remediation)
+- [Email araştırma](#email-investigation)
+- [düzeltmeyi Email](#email-remediation)
 - [Tehdit avcılığı deneyiminde iyileştirmeler](#improvements-to-threat-hunting-experience)
 
 > [!NOTE]
-> Bu, **Tehdit Gezgini (Gezgin)**, **e-posta güvenliği**, **Gezgin ve Gerçek zamanlı algılamalar** (araçlar arasındaki farklar ve bunları çalıştırmak için gereken izinler gibi) ile ilgili **3 makalelik bir serinin** parçasıdır. Bu serideki diğer iki makale, [Tehdit Gezgini ve Tehdit Gezgini ile E-posta güvenliği](email-security-in-microsoft-defender.md) [ve Gerçek zamanlı algılamalardır](real-time-detections.md).
+> Bu, **Tehdit Gezgini (Gezgin)**, **e-posta güvenliği**, **Gezgin ve Gerçek zamanlı algılamalar** (araçlar arasındaki farklar ve bunları çalıştırmak için gereken izinler gibi) ile ilgili **3 makalelik bir serinin** parçasıdır. Bu serideki diğer iki makale[, Tehdit Gezgini ve Tehdit Gezgini ile güvenlik Email](email-security-in-microsoft-defender.md) [ve Gerçek zamanlı algılamalardır](real-time-detections.md).
 
 **Uygulandığı öğe**
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
@@ -48,16 +48,16 @@ Bu makalede:
 
 Kuruluşunuzun [Office 365 için Microsoft Defender](defender-for-office-365.md) varsa ve [izinleriniz varsa, tehditleri](#required-licenses-and-permissions) algılamak ve düzeltmek için **Gezgin** veya **Gerçek zamanlı algılamaları** kullanabilirsiniz.
 
-konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**E-posta & işbirliği'ne** gidin ve **Ardından Gezgin** veya **Gerçek zamanlı algılamalar'ı** seçin. Doğrudan sayfaya gitmek için veya <https://security.microsoft.com/realtimereports>kullanın<https://security.microsoft.com/threatexplorer>.
+konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Email & işbirliğine** gidin ve **ardından Gezgin** veya **Gerçek zamanlı algılamalar'ı** seçin. Doğrudan sayfaya gitmek için veya <https://security.microsoft.com/realtimereports>kullanın<https://security.microsoft.com/threatexplorer>.
 
 Bu araçlarla şunları yapabilirsiniz:
 
-- Microsoft 365 güvenlik özellikleri tarafından algılanan kötü amaçlı yazılımlara bakın
+- Bkz. Microsoft 365 güvenlik özellikleri tarafından algılanan kötü amaçlı yazılım
 - Kimlik avı URL'sini görüntüleyin ve karar verilerine tıklayın
 - Gezgin'deki bir görünümden otomatik araştırma ve yanıt işlemi başlatma
 - Kötü amaçlı e-postaları ve daha fazlasını araştırma
 
-Daha fazla bilgi için bkz. [Tehdit Gezgini ile e-posta güvenliği](email-security-in-microsoft-defender.md).
+Daha fazla bilgi için bkz. [Tehdit Gezgini ile güvenlik Email](email-security-in-microsoft-defender.md).
 
 Office 365 için Microsoft Defender kullanarak e-posta ve işbirliği tabanlı tehditleri nasıl avlayıp araştıracağınızı öğrenmek için bu kısa videoyu izleyin. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyPRU]
@@ -101,15 +101,15 @@ Tablodaki en yararlı bilgi türlerini almak için **Sütun seçenekleri** düğ
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/column-options.png" alt-text="Sütunlar'daki kullanılabilir seçenekler" lightbox="../../media/column-options.png":::
 
-Aynı mien'de görüntü seçeneklerinizi test edin. Farklı hedef kitleler, aynı verilerin farklı sunularına iyi tepki gösterir. Bazı izleyiciler için **E-posta Kaynakları** haritası, bir tehdidin hemen yanındaki **Kampanya görüntüleme** seçeneğinden daha yaygın veya daha hızlı olduğunu gösterebilir. Sec Ops, güvenlik ve koruma gereksiniminin altını çizen noktaları en iyi şekilde oluşturmak veya eylemlerinin etkinliğini göstermek için daha sonra karşılaştırma yapmak için bu ekranları kullanabilir.
+Aynı mien'de görüntü seçeneklerinizi test edin. Farklı hedef kitleler, aynı verilerin farklı sunularına iyi tepki gösterir. Bazı izleyiciler için **Email Origins** haritası, bir tehdidin yaygın olduğunu veya hemen yanındaki **Kampanya görüntüleme** seçeneğinden daha hızlı olduğunu gösterebilir. Sec Ops, güvenlik ve koruma gereksiniminin altını çizen noktaları en iyi şekilde oluşturmak veya eylemlerinin etkinliğini göstermek için daha sonra karşılaştırma yapmak için bu ekranları kullanabilir.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/threat-explorer-email-origin-map.png" alt-text="E-posta Çıkış Noktaları haritası" lightbox="../../media/threat-explorer-email-origin-map.png":::
+> :::image type="content" source="../../media/threat-explorer-email-origin-map.png" alt-text="Email Origins haritası" lightbox="../../media/threat-explorer-email-origin-map.png":::
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/threat-explorer-campaign-display.png" alt-text="Kampanya görüntüleme seçenekleri" lightbox="../../media/threat-explorer-campaign-display.png":::
 
-### <a name="email-investigation"></a>E-posta araştırması
+### <a name="email-investigation"></a>Email araştırma
 
 Şüpheli bir e-posta gördüğünüzde, sağ taraftaki açılır öğeyi genişletmek için ada tıklayın. Burada, Sec Ops'ın [e-posta varlık sayfasını](mdo-email-entity-page.md) görmesine olanak tanıyan başlık kullanılabilir.
 
@@ -121,12 +121,12 @@ Bu aşamaya ulaştığınızda, e-posta varlık sayfası son adım (*düzeltme*)
 > :::image type="content" source="../../media/threat-explorer-email-entity-page.png" alt-text="E-posta varlığı sayfası" lightbox="../../media/threat-explorer-email-entity-page.png":::
 
 > [!TIP]
-> Patlatılmış Eklerin sonuçları, eklenen URL'ler için bulgular ve güvenli E-posta önizlemesi de dahil olmak üzere zengin e-posta varlık sayfası (aşağıda **Analiz** sekmesinde görülmektedir) hakkında daha fazla bilgi edinmek için [buraya](mdo-email-entity-page.md) tıklayın.
+> Patlatılmış Eklerin sonuçları, eklenen URL'ler için bulgular ve güvenli Email önizlemesi de dahil olmak üzere zengin e-posta varlığı sayfası (aşağıda **Analiz** sekmesinde görülmektedir) hakkında daha fazla bilgi edinmek için [buraya](mdo-email-entity-page.md) tıklayın.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/threat-explorer-analysis-tab.png" alt-text="E-posta varlığı sayfasının Analiz sekmesi" lightbox="../../media/threat-explorer-analysis-tab.png":::
 
-### <a name="email-remediation"></a>E-posta düzeltme
+### <a name="email-remediation"></a>düzeltmeyi Email
 
 Bir Sec Ops kişisi bir e-postanın bir tehdit olduğunu belirledikten sonra, bir sonraki Gezgin veya Gerçek zamanlı algılama adımı tehditle ilgilenir ve bunu düzelter. Bu, Tehdit Gezgini'ne dönüp sorun e-postasının onay kutusunu seçerek ve **Eylemler** düğmesini kullanarak yapılabilir.
 
@@ -154,7 +154,7 @@ Son olarak, uyarı kimliği URL'ye eklenir, örneğin: `https://https://security
 
 ### <a name="extending-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants"></a>Deneme kiracıları için Gezgin (ve Gerçek zamanlı algılamalar) veri saklama ve arama sınırını genişletme
 
-Bu değişiklik kapsamında analistler, Tehdit Gezgini'nde 30 gün boyunca (yedi günden daha fazla) e-posta verilerini ve hem Office için Defender P1 hem de P2 deneme kiracıları için gerçek zamanlı algılamaları arayabilir ve filtreleyebilecektir. Bu, hem P1 hem de P2 E5 müşterileri için, bekletme varsayılanı zaten 30 gün olan üretim kiracılarını etkilemez.
+Bu değişikliğin bir parçası olarak analistler, Hem Office P1 için Defender hem de P2 deneme kiracıları için Tehdit Gezgini'nde 30 gün boyunca (yedi günden daha fazla) ve gerçek zamanlı algılamalarda e-posta verilerini arayabilir ve filtreleyebilecektir. Bu, hem P1 hem de P2 E5 müşterileri için, bekletme varsayılanı zaten 30 gün olan üretim kiracılarını etkilemez.
 
 ### <a name="updated-export-limit"></a>Dışarı aktarma sınırı güncelleştirildi
 
@@ -163,13 +163,13 @@ Tehdit Gezgini'nden dışarı aktarılabilen E-posta kayıtlarının sayısı ş
 ### <a name="tags-in-threat-explorer"></a>Tehdit Gezgini'ndeki etiketler
 
 > [!NOTE]
-> Kullanıcı etiketleri özelliği Önizleme aşamasındadır ve herkes tarafından kullanılamayabilir. Ayrıca Önizlemeler değiştirilebilir. Yayın zamanlaması hakkında bilgi için Microsoft 365 yol haritasına göz atın.
+> Kullanıcı etiketleri özelliği Önizleme aşamasındadır ve herkes tarafından kullanılamayabilir. Ayrıca Önizlemeler değiştirilebilir. Sürüm zamanlaması hakkında bilgi için Microsoft 365 yol haritasına bakın.
 
 Kullanıcı etiketleri, Office 365 için Microsoft Defender'daki belirli kullanıcı gruplarını tanımlar. Lisanslama ve yapılandırma dahil olmak üzere etiketler hakkında daha fazla bilgi için bkz. [Kullanıcı etiketleri](user-tags.md).
 
 Tehdit Gezgini'nde aşağıdaki deneyimlerde kullanıcı etiketleri hakkındaki bilgileri görebilirsiniz.
 
-#### <a name="email-grid-view"></a>E-posta kılavuzu görünümü
+#### <a name="email-grid-view"></a>kılavuz görünümünü Email
 
 Analistler e-posta kılavuzundaki **Etiketler** sütununa baktığında, gönderen veya alıcı posta kutularına uygulanmış olan tüm etiketleri görür. Varsayılan olarak, *önce öncelik hesapları* gibi sistem etiketleri gösterilir.
 
@@ -185,14 +185,14 @@ Etiketler filtre olarak kullanılabilir. Yalnızca öncelikli hesaplar arasında
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/tags-filter-not.png" alt-text="Filtrelenmemiş etiketler" lightbox="../../media/tags-filter-not.png":::
 
-#### <a name="email-detail-flyout"></a>E-posta ayrıntıları açılır öğesi
+#### <a name="email-detail-flyout"></a>Email ayrıntı açılır öğesi
 
 Gönderenin ve alıcının etiketlerini tek tek görüntülemek için bir e-posta seçerek ileti ayrıntıları açılır öğesini açın. **Özet** sekmesinde, gönderen ve alıcı etiketleri ayrı ayrı gösterilir. Gönderen ve alıcı için tek tek etiketler hakkındaki bilgiler CSV verileri olarak dışarı aktarılabilir.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/tags-flyout.png" alt-text="E-posta Ayrıntıları etiketleri" lightbox="../../media/tags-flyout.png":::
+> :::image type="content" source="../../media/tags-flyout.png" alt-text="Email Ayrıntıları etiketleri" lightbox="../../media/tags-flyout.png":::
 
-Etiket bilgileri, URL tıklamaları açılır öğesinde de gösterilir. Bunu görmek için Url'ler veya **URL Tıklamaları** sekmesi > Kimlik Avı veya  Tüm E-posta görünümü'ne gidin. Tek bir URL açılır öğesini seçerek ilgili URL'ye yönelik tıklamalar hakkında, bu tıklamayla ilişkili etiketler de dahil olmak üzere ek ayrıntıları görebilirsiniz.
+Etiket bilgileri, URL tıklamaları açılır öğesinde de gösterilir. Bunu görmek için Url'ler veya URL **Tıklamaları** sekmesi > Kimlik Avı veya Tüm Email görünümü'ne  gidin. Bu tıklamayla ilişkilendirilmiş etiketler de dahil olmak üzere, bu URL'ye yönelik tıklamalarla ilgili ek ayrıntıları görmek için tek bir URL açılır öğesi seçin.
 
 ### <a name="updated-timeline-view"></a>Güncelleştirilmiş Zaman Çizelgesi Görünümü
 
@@ -205,25 +205,25 @@ Etiket bilgileri, URL tıklamaları açılır öğesinde de gösterilir. Bunu g�
 
 ### <a name="top-targeted-users"></a>En çok hedeflenen kullanıcılar
 
-En İyi Kötü Amaçlı Yazılım Aileleri, Kötü Amaçlı Yazılım bölümünde **en çok hedeflenen kullanıcıları** gösterir. En çok hedeflenen kullanıcılar Kimlik Avı ve Tüm E-posta görünümleri aracılığıyla da genişletilir. Analistler, hedeflenen ilk beş kullanıcıyı ve her görünümdeki her kullanıcı için deneme sayısını görebilir.
+En İyi Kötü Amaçlı Yazılım Aileleri, Kötü Amaçlı Yazılım bölümünde **en çok hedeflenen kullanıcıları** gösterir. En çok hedeflenen kullanıcılar Kimlik Avı ve Tüm Email görünümleri aracılığıyla da genişletilir. Analistler, hedeflenen ilk beş kullanıcıyı ve her görünümdeki her kullanıcı için deneme sayısını görebilir.
 
 Her e-posta görünümü için çevrimdışı analiz için hedeflenen kullanıcıların listesini, yapılan deneme sayısıyla birlikte 3.000 sınırına kadar dışarı aktarabilen güvenlik işlemleri. Ayrıca, deneme sayısını seçtiğinizde (örneğin, aşağıdaki görüntüde 13 deneme) Tehdit Gezgini'nde filtrelenmiş bir görünüm açılır; böylece e-postalar ve bu kullanıcıya yönelik tehditler hakkında daha fazla ayrıntı görebilirsiniz.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/Top_Targeted_Users.png" alt-text="En çok hedeflenen kullanıcılar" lightbox="../../media/Top_Targeted_Users.png":::
 
-### <a name="exchange-transport-rules"></a>aktarım kurallarını Exchange
+### <a name="exchange-transport-rules"></a>Exchange aktarım kuralları
 
-Güvenlik operasyonları ekibi, bir iletiye uygulanan tüm Exchange aktarım kurallarını (veya Posta akışı kurallarını) E-posta kılavuzu görünümünde görebilir. Kılavuzda **Sütun seçenekleri'ni** ve ardından sütun seçeneklerinden **Exchange Taşıma Kuralı Ekle'yi** seçin. Exchange aktarım kuralları seçeneği, e-postadaki **Ayrıntılar** açılır öğesinde de görünür.
+Güvenlik operasyonları ekibi, bir iletiye uygulanan tüm Exchange aktarım kurallarını (veya Posta akışı kurallarını) Email kılavuz görünümünde görebilir. Kılavuzda **Sütun seçenekleri'ni** ve ardından sütun seçeneklerinden **Exchange Aktarım Kuralı Ekle'yi** seçin. Exchange aktarım kuralları seçeneği, e-postadaki **Ayrıntılar** açılır öğesinde de görünür.
 
 İletiye uygulanan aktarım kurallarının adları ve GUID'leri görüntülenir. Analistler, aktarım kuralının adını kullanarak iletileri arayabilir. Bu bir CONTAINS aramasıdır, yani kısmi aramalar da yapabilirsiniz.
 
 > [!IMPORTANT]
-> Exchange aktarım kuralı arama ve ad kullanılabilirliği size atanan role bağlıdır. Aktarım kuralı adlarını görüntülemek ve arama yapmak için aşağıdaki rollerden veya izinlerden birine sahip olmanız gerekir. Ancak, aşağıdaki roller veya izinler olmasa bile, analist E-posta Ayrıntıları'nda aktarım kuralı etiketini ve GUID bilgilerini görebilir. E-posta Kılavuzları, E-posta açılırları, Filtreler ve Dışarı Aktarma'daki diğer kayıt görüntüleme deneyimleri etkilenmez.
+> Exchange aktarım kuralı arama ve ad kullanılabilirliği, size atanan belirli role bağlıdır. Aktarım kuralı adlarını görüntülemek ve arama yapmak için aşağıdaki rollerden veya izinlerden birine sahip olmanız gerekir. Ancak, aşağıdaki roller veya izinler olmasa bile, analist Email Ayrıntıları'nda aktarım kuralı etiketini ve GUID bilgilerini görebilir. Email Kılavuzları, Email açılır Email Filtreler ve Dışarı Aktarma'daki diğer kayıt görüntüleme deneyimleri etkilenmez.
 >
 > - Yalnızca Exchange Online - veri kaybını önleme: Tümü
 > - Yalnızca Exchange Online - O365SupportViewConfig: Tümü
-> - Microsoft Azure Active Directory veya Exchange Online - Güvenlik Yöneticisi: Tümü
+> - Microsoft Azure Active Directory veya Exchange Online - Güvenlik Yönetici: Tümü
 > - Azure Active Directory veya Exchange Online - Güvenlik Okuyucusu: Tümü
 > - Yalnızca Exchange Online - Aktarım Kuralları: Tümü
 > - Yalnızca Exchange Online - View-Only Yapılandırması: Tümü
@@ -231,11 +231,11 @@ Güvenlik operasyonları ekibi, bir iletiye uygulanan tüm Exchange aktarım kur
 > E-posta kılavuzu, Ayrıntılar açılır öğesi ve Dışarı Aktarılan CSV'nin içinde ETR'lere aşağıda gösterildiği gibi bir Ad/GUID gösterilir.
 >
 > > [!div class="mx-imgBorder"]
-> > :::image type="content" source="../../media/ETR_Details.png" alt-text="Exchange Aktarım kuralları" lightbox="../../media/ETR_Details.png":::
+> > :::image type="content" source="../../media/ETR_Details.png" alt-text="Exchange Transport'daki kurallar" lightbox="../../media/ETR_Details.png":::
 
 ### <a name="inbound-connectors"></a>Gelen bağlayıcılar
 
-Bağlayıcılar, e-postanızın Microsoft 365 veya Office 365 kuruluşunuzdan nasıl aktığını özelleştiren yönergelerden oluşan bir koleksiyondır. Tüm güvenlik kısıtlamalarını veya denetimlerini uygulamanıza olanak tanır. Tehdit Gezgini'nde, bir e-postayla ilgili bağlayıcıları görüntüleyebilir ve bağlayıcı adlarını kullanarak e-postaları arayabilirsiniz.
+Bağlayıcılar, e-postanızın Microsoft 365 veya Office 365 kuruluşunuza nasıl aktığını özelleştiren yönergelerden oluşan bir koleksiyondır. Tüm güvenlik kısıtlamalarını veya denetimlerini uygulamanıza olanak tanır. Tehdit Gezgini'nde, bir e-postayla ilgili bağlayıcıları görüntüleyebilir ve bağlayıcı adlarını kullanarak e-postaları arayabilirsiniz.
 
 Bağlayıcı arama bir CONTAINS sorgusudur ve kısmi anahtar sözcük aramalarının işe yarayabileceği anlamına gelir:
 
@@ -271,8 +271,8 @@ Roller ve izinler hakkında daha fazla bilgi edinmek için aşağıdaki kaynakla
 ## <a name="more-information"></a>Daha fazla bilgi
 
 - [Teslim edilen kötü amaçlı e-postayı bulma ve araştırma](investigate-malicious-email-that-was-delivered.md)
-- [SharePoint Online, OneDrive ve Microsoft Teams'da algılanan kötü amaçlı dosyaları görüntüleme](mdo-for-spo-odb-and-teams.md)
+- [SharePoint Online, OneDrive ve Microsoft Teams'de algılanan kötü amaçlı dosyaları görüntüleme](mdo-for-spo-odb-and-teams.md)
 - [Tehdit Gezgini'ndeki görünümlere (ve Gerçek zamanlı algılamalara) genel bakış elde edin](threat-explorer-views.md)
 - [Tehdit koruması durum raporu](view-email-security-reports.md#threat-protection-status-report)
 - [Microsoft Tehdit Koruması'nda otomatik araştırma ve yanıt](automated-investigation-response-office.md)
-- [E-posta Varlık Sayfası ile e-postaları araştırma](mdo-email-entity-page.md)
+- [Email Varlık Sayfası ile e-postaları araştırma](mdo-email-entity-page.md)

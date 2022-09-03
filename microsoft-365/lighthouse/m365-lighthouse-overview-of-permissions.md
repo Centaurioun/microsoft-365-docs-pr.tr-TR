@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: magarlan, chrigreen
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Lighthouse izin gereksinimleri hakkında daha fazla bilgi edinin.
-ms.openlocfilehash: 0ccc47fd151fa681b0231b2f776de3d2c46c5784
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b808c90cf660303e8794e18a1ce4e1be90fb63c0
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66861850"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599098"
 ---
 # <a name="overview-of-permissions-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse izinlerine genel bakış
 
 Yönetilen Hizmet Sağlayıcılarının (MSP) Microsoft 365 Lighthouse kullanabilmesi için müşteri kiracılarına temsilci erişimi gerekir. Ayrıntılı Temsilcili Yönetici Ayrıcalıkları (GDAP), [Azure Active Directory (Azure AD) yerleşik rolleri](/azure/active-directory/roles/permissions-reference) aracılığıyla müşteri erişimi sağlayarak MSP'lere yüksek düzeyde denetim ve esneklik sağlar. GDAP aracılığıyla göreve göre en az ayrıcalıklı rolleriN MSP teknisyenlerine atanması hem MSP'ler hem de müşteriler için güvenlik riskini azaltır. Göreve göre en az ayrıcalıklı roller hakkında daha fazla bilgi için bkz. Azure Active Directory'de [en az ayrıcalıklı roller - İş Ortağı Merkezi](/partner-center/gdap-least-privileged-roles-by-task) ve [Göreve göre en az ayrıcalıklı roller](/azure/active-directory/roles/delegate-by-task). Müşteri kiracısıyla GDAP ilişkisi ayarlama hakkında daha fazla bilgi için bkz. Müşterinin [hizmetini yönetmek için ayrıntılı yönetici izinleri alma - İş Ortağı Merkezi.](/partner-center/gdap-obtain-admin-permissions-to-manage-customer)
 
-Her grubun müşteri adına gerçekleştirmesi gereken görevlere göre MSP teknisyenleri gruplarına roller atamanızı öneririz. Örneğin, Hizmet Masası Teknisyenlerinin yalnızca müşteri kiracı verilerini okuması veya kullanıcı parolalarını sıfırlaması gerekebilir. Buna karşılık, Yükseltme Mühendislerinin müşteri kiracısı güvenlik ayarlarını güncelleştirmek için daha düzeltici eylemler gerçekleştirmesi gerekebilir. Müşteri ve iş ortağı verilerinin güvende tutulması için bir görevi tamamlamak için gereken en az izin veren rolü atamak en iyi yöntemdir. Gerekirse Genel Yönetici rolüne zaman kapsamlı erişimi etkinleştirmek için Privileged Identity Management (PIM) kullanmanızı öneririz. Çok fazla kullanıcıya genel erişim vermek bir güvenlik riskidir ve bunu mümkün olduğunca sınırlamanızı öneririz. PIM'i etkinleştirme hakkında daha fazla bilgi için bkz[. AZURE AD PIM'i ayarlama.](m365-lighthouse-configure-portal-security.md#set-up-azure-ad-privileged-identity-management-pim)
+Her grubun müşteri adına gerçekleştirmesi gereken görevlere göre MSP teknisyenleri gruplarına roller atamanızı öneririz. Örneğin, Service Desk Teknisyenlerinin yalnızca müşteri kiracı verilerini okuması veya kullanıcı parolalarını sıfırlaması gerekebilir. Buna karşılık, Yükseltme Mühendislerinin müşteri kiracısı güvenlik ayarlarını güncelleştirmek için daha düzeltici eylemler gerçekleştirmesi gerekebilir. Müşteri ve iş ortağı verilerinin güvende tutulması için bir görevi tamamlamak için gereken en az izin veren rolü atamak en iyi yöntemdir. Gerekirse Genel Yönetici rolüne zaman kapsamlı erişimi etkinleştirmek için Privileged Identity Management (PIM) kullanmanızı öneririz. Çok fazla kullanıcıya genel erişim vermek bir güvenlik riskidir ve bunu mümkün olduğunca sınırlamanızı öneririz. PIM'i etkinleştirme hakkında daha fazla bilgi için bkz[. AZURE AD PIM'i ayarlama.](m365-lighthouse-configure-portal-security.md#set-up-azure-ad-privileged-identity-management-pim)
 
 Sonraki bölümdeki tablolarda, hangi GDAP rollerinin müşteri verilerini okuma ve Lighthouse'daki müşteri kiracıları üzerinde eylem gerçekleştirme izni vermesi açıklanmaktadır. Lighthouse varlıklarını yönetmek için gereken ek roller (örneğin, etiketler ve Lighthouse hizmet istekleri) için bu [makaledeki iş ortağı kiracısında izinler](#permissions-in-the-partner-tenant) bölümüne bakın.
 
@@ -36,13 +36,13 @@ Sonraki bölümdeki tablolarda, hangi GDAP rollerinin müşteri verilerini okuma
 
 Aşağıdaki tabloda bazı örnek MSP hizmet katmanları için önerilen GDAP rolleri listelenmiştir. 
 
-|| Hesap Yöneticileri| Hizmet Masası Teknisyenleri | Sistem Yöneticileri | Yükseltme Mühendisleri|
+|| Hesap Yöneticileri| Servis Masası Teknisyenleri | Sistem Yöneticileri | Yükseltme Mühendisleri|
 |---|---|---|---|---|
 | **Önerilen GDAP rolleri** |<ul><li>Yardım Masası Yöneticisi</li></ul> |<ul><li>Güvenlik Okuyucusu<br>+</li><li>Yardım Masası Yöneticisi</li></ul> |<ul><li>Genel Okuyucu<br>+</li><li>Kullanıcı Yöneticisi<br>+</li><li>Kimlik Doğrulama Yöneticisi</li></ul> |<ul><li>Genel Okuyucu<br>+</li><li>Kullanıcı Yöneticisi<br>+</li><li>Intune Yöneticisi<br>+</li><li>Güvenlik Yöneticisi</li></ul>|
 
 Aşağıdaki tabloda, örnek MSP hizmet katmanlarının atanan GDAP rolleri (önceki tabloda belirtilmiştir) tarafından belirlenen farklı Lighthouse sayfalarında gerçekleştirebileceği eylemler listelenmiştir.
 
-| Deniz Feneri sayfası | Hesap Yöneticilerine izin verilen eylemler| teknisyenlere izin verilen eylemleri Hizmet Masası |Sistem Yöneticilerine izin verilen eylemler | Yükseltme Mühendislerine izin verilen eylemler|
+| Deniz Feneri sayfası | Hesap Yöneticilerine izin verilen eylemler| Hizmet Masası Teknisyenlerine izin verilen eylemler |Sistem Yöneticilerine izin verilen eylemler | Yükseltme Mühendislerine izin verilen eylemler|
 |---|---|---|---|---|
 | Home  | <ul><li>Tüm verileri görüntüleme</li></ul> | <ul><li>Tüm verileri görüntüleme</li></ul> | <ul><li>Tüm verileri görüntüleme</li></ul> | <ul><li>Tüm verileri görüntüleme</li></ul> | 
 | Kiracı     | <ul><li>Kiracı listesini görüntüleme</li><li>Müşteri kişilerini ve web sitesini güncelleştirme</li><li>Dağıtım planlarını görüntüleme</li></ul>  | <ul><li>Kiracı listesini görüntüleme</li><li>Müşteri kişilerini ve web sitesini güncelleştirme</li><li>Dağıtım planlarını görüntüleme</li></ul>   |  <ul><li>Kiracı listesini görüntüleme</li><li>Müşteri kişilerini ve web sitesini güncelleştirme</li><li>Dağıtım planlarını görüntüleme</li><li>Microsoft 365 hizmetleri kullanımını görüntüleme</li></ul> | <ul><li>Kiracı listesini görüntüleme</li><li>Müşteri kişilerini ve web sitesini güncelleştirme</li><li>Dağıtım planlarını görüntüleme</li><li>Microsoft 365 hizmetleri kullanımını görüntüleme</li></ul>  |
@@ -51,8 +51,8 @@ Aşağıdaki tabloda, örnek MSP hizmet katmanlarının atanan GDAP rolleri (ön
 | Tehdit yönetimi  | <ul><li>Tüm verileri görüntüleme</li></ul> | <ul><li>Tüm verileri görüntüleme</li></ul> | <ul><li>Tüm verileri görüntüleme</li></ul> | <ul><li>Tüm verileri görüntüleme</li><li>Tam tarama çalıştırma</li><li>Hızlı tarama çalıştırma</li><li>Virüsten korumayı güncelleştirme</li><li>Cihazı yeniden başlatma</li></ul>|
 | Temel    | <ul><li>Tüm verileri görüntüleme</li></ul> | <ul><li>Tüm verileri görüntüleme</li></ul> | <ul><li>Tüm verileri görüntüleme</li></ul>  | <ul><li>Tüm verileri görüntüleme</li></ul> |
 | Windows 365 | <ul><li>Tüm verileri görüntüleme</li></ul> | <ul><li>Tüm verileri görüntüleme</li></ul> | <ul><li>Tüm verileri görüntüleme</li></ul> | <ul><li>Tüm verileri görüntüleme</li></ul> |
-| Hizmet durumu**| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOK | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOK | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOK | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOK |
-| Denetim günlükleri**| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOK | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOK | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOK | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOK |
+| Hizmet durumu**| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yok | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yok | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yok | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yok |
+| Denetim günlükleri**| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yok | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yok | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yok | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yok |
 
 *Bkz. Müşteri kiracı yöneticilerinin [parolalarını sıfırlamak](/azure/active-directory/roles/permissions-reference#password-reset-permissions) için hangi rollerin gerekli olduğunu listeleyen bir tablo için parola sıfırlama izinleri.
 

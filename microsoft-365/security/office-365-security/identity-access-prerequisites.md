@@ -4,7 +4,7 @@ description: Bu makalede, Sıfır Güven kimlik ve cihaz erişim ilkelerini ve y
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords:
@@ -20,13 +20,13 @@ ms.collection:
 - m365solution-scenario
 - zerotrust-solution
 - highpri
-ms.technology: mdo
-ms.openlocfilehash: 27c6557219db62d17ebb90e3e5b36169fc397874
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.openlocfilehash: 5afe945131dc1bf77064f88ff35f6b533ab8b69e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67477351"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599681"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Sıfır Güven kimlik ve cihaz erişim ilkelerini uygulamak için önkoşul çalışması
 

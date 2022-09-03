@@ -7,22 +7,22 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/30/2022
 ms.reviewer: shlomiakirav
-f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 9dd50b88bc26ddd16d0d99a28cdeaf6746272df7
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+f1.keywords: NOCSH
+ms.openlocfilehash: 622b1ab33ea2168ee7da050d0ad6a06ff7bf5ba0
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67471974"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598163"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Küçük ve orta ölçekli işletmeler için Microsoft 365 planlarındaki güvenlik özelliklerini karşılaştırma
 

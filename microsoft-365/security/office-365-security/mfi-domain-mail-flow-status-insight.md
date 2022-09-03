@@ -1,5 +1,5 @@
 ---
-title: Posta akışı panosunda en üst etki alanı posta akışı durumu içgörü
+title: Posta akışı panosundaki en iyi etki alanı posta akışı durumu içgörüleri
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -12,45 +12,45 @@ ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Yöneticiler, MX kayıtlarıyla ilgili posta akışı sorunlarını gidermek için Güvenlik & ve Uyumluluk Merkezi'nde Posta akışı panosunda En üst etki alanı posta akışı durumu içgörüsini kullanmayı öğrenebilirler.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 1a22589ece98e497c55d61d29256b2480a2f55d3
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Yöneticiler, MX kayıtlarıyla ilgili posta akışı sorunlarını gidermek için Güvenlik & Uyumluluk Merkezi'ndeki Posta akışı panosundaki En iyi etki alanı posta akışı durumu içgörülerini kullanmayı öğrenebilir.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 525a424babac6d7be1da0abf73a61da723857e8e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679730"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599615"
 ---
-# <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Güvenlik ve Uyumluluk Merkezi'nde en üstteki etki & durumu içgörü
+# <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'ndeki en iyi etki alanı posta akışı durumu içgörüleri
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Geçerli olduğu yer:**
+**Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [1. plan Office 365 plan 2 için Microsoft Defender](defender-for-office-365.md)
+- [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Güvenlik **ve Uyumluluk Merkezi'nin** Posta akışı panosundaki En üst etki [alanı posta akışı](https://protection.office.com) durumu &, size kuruluşun geçerli posta akışı durumunu verir.[](mail-flow-insights-v2.md)
+[Güvenlik & Uyumluluk Merkezi'ndeki](https://protection.office.com) [Posta akışı panosundaki](mail-flow-insights-v2.md) **En iyi etki alanı posta akışı durumu** içgörüleri, kuruluşunuzun geçerli posta akışı durumunu verir.
 
-Bu içgörü, posta akışı sorunları yaşayan etki alanlarını tanımlamanıza ve ***gidermenize yardımcı*** olur. Örneğin, etki alanının süresi sona erdiğinde veya etki alanında yanlış bir MX kaydı olduğundan etki alanı dış e-posta alınamıyor.
+Bu içgörü ***, posta akışı*** sorunları yaşayan etki alanlarını belirlemenize ve gidermenize yardımcı olur. Örneğin, etki alanının süresi dolduğundan veya etki alanının MX kaydı yanlış olduğundan etki alanı dış e-posta alamıyor.
 
-![Güvenlik ve Uyumluluk Merkezi'nde Posta akışı panosunda en üst & durumu widget'ı.](../../media/mfi-top-domain-mail-flow-status-widget.png)
+:::image type="content" source="../../media/mfi-top-domain-mail-flow-status-widget.png" alt-text="Güvenlik & Uyumluluk Merkezi'ndeki Posta akışı panosundaki En iyi etki alanı akışı durumu pencere öğesi" lightbox="../../media/mfi-top-domain-mail-flow-status-widget.png":::
 
-Widget'ta **Ayrıntıları görüntüle'ye** tıklarken, her bir etki alanının durumuyla ilgili daha fazla ayrıntı gösteren bir Etki Alanı durumu açılır öğesi görüntülenir:
+Pencere öğesinde **Ayrıntıları görüntüle'ye** tıkladığınızda, her **etki alanının durumuyla** ilgili daha fazla ayrıntı gösteren bir Etki alanı durumu açılır öğesi görüntülenir:
 
 - **Etki alanı**
 - **Önceki MX kaydı**
 - **Geçerli MX kaydı**
-- **E-posta alma durumu**
-- **Etki** alanı durumu: Yeşil onay işareti, geçerli MX kaydının (widget'a tıklarken) kayıtta yer alan değerle eş olduğunu ve etki alanının son iki saat içinde e-posta aldığına işaret ediyor.
+- **alma durumunu Email**
+- **Etki alanı durumu**: Yeşil onay işareti geçerli MX kaydının (pencere öğesine tıkladığınızda) kayıtta sahip olduğumuz değerle eşleşdiğini ve etki alanının son iki saat içinde e-posta aldığını gösterir.
 
-  Kırmızı X, MX kaydının değiştirdiğini ve etki alanının son 6 saat içinde hiç e-posta ala olmadığını gösterir. Bu, büyük olasılıkla etki alan adınızın süresinin dolmuş olduğunu veya MX kaydının yanlış güncelleştirilmiş olduğunu gösterir. Etki alanının süresinin dolmuş olup olduğunu veya etki alanının MX kaydının yanlış olduğunu görmek için etki alanı kayıt şirketinizi veya DNS barındırma hizmetinizi kontrol edin.
+  Kırmızı X, MX kaydının değiştirildiğini ve etki alanının son 6 saat içinde e-posta almadığını gösterir. Bu, etki alanınızın süresinin dolduğunu veya MX kaydının yanlış güncelleştirildiğini gösterir. Etki alanının süresinin dolduğunu veya etki alanının MX kaydının yanlış olup olmadığını görmek için etki alanı kayıt şirketinize veya DNS barındırma hizmetinize danışın.
 
-Daha fazla etki **alanıyla ilgili aynı** bilgileri görmek için Daha fazla görüntüle'ye tıkabilirsiniz.
+Daha fazla etki alanı için aynı bilgileri görmek için **Daha fazla görüntüle'ye** tıklayabilirsiniz.
 
-![En üst etki alanı posta akışı durumu içgörüsinde Ayrıntılar uçarak çıkış.](../../media/mfi-top-domain-mail-flow-status-view-details.png)
+:::image type="content" source="../../media/mfi-top-domain-mail-flow-status-view-details.png" alt-text="Üst etki alanı posta akışı durumu içgörüsünde Ayrıntılar açılır öğesi" lightbox="../../media/mfi-top-domain-mail-flow-status-view-details.png":::
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-Posta akışı panosunda yer alan diğer içgörüler hakkında bilgi için, Güvenlik ve Uyumluluk Merkezi'nde [Posta & bakın](mail-flow-insights-v2.md).
+Posta akışı panosundaki diğer içgörüler hakkında bilgi için [Bkz. Güvenlik & Uyumluluk Merkezi'ndeki Posta akışı içgörüleri](mail-flow-insights-v2.md).

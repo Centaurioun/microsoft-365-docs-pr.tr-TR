@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da İçerik Merkezi site şablonunu sağlamayı ve kullanmayı öğrenin.
-ms.openlocfilehash: e3d0e50d755a2fe771513389d4028c0306702520
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: b82f649788f06dbd73cede83d635061894b50105
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583813"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599769"
 ---
 # <a name="use-the-content-center-site-template-for-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex için İçerik Merkezi site şablonunu kullanma
 
@@ -47,7 +47,7 @@ Bu sitede modeller kendi içeriğiniz kullanılarak eğitilebilir ve değerlendi
 
 3. E-posta adresinizi (sitenizin kullanıma hazır olduğu zaman bildirimi için), kullanmak istediğiniz site URL'sini ve siteniz için kullanmak istediğiniz başlığı girin. 
 
-    ![İçerik Merkezi site şablonu sağlama sayfasının ekran görüntüsü.](../media/content-understanding/content-center-email-and-url.png)
+    ![İçerik Merkezi site şablonu sağlama sayfasını gösteren ekran görüntüsü.](../media/content-understanding/content-center-email-and-url.png)
 
 4. **Sağla'yı** seçtiğinizde, kısa bir süre içinde siteniz kullanıma hazır olur. İçerik Merkezi site şablonunu sağlama isteğinizin tamamlandığını belirten bir e-posta alırsınız (sağladığınız e-posta adresine gönderilir).
 

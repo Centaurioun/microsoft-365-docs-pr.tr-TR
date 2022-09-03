@@ -15,14 +15,14 @@ ms.custom:
 - seo-marvel-apr2020
 - adminvideo
 description: Bu makale dış e-posta iletme, Otomatik iletme, 5.7.520 Erişim Reddedildi iletileri, dış iletmeyi devre dışı bırakma, 'Yöneticiniz dış iletmeyi devre dışı bırakmış' iletileri ve giden istenmeyen posta önleme ilkesi gibi konuları kapsar.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: e540fc99cb06b18d8a602ffa33f290e8969a7ad5
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 5a427236386c5afe4f289b8b1eb1ef4045f7f5d6
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385241"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598461"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Microsoft 365'te otomatik dış e-posta iletmeyi denetleme
 

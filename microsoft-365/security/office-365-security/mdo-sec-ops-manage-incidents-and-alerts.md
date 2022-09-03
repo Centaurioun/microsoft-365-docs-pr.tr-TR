@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: SecOps personeli, Office 365 için Microsoft Defender'daki olayları yönetmek için Microsoft 365 Defender'daki Olaylar kuyruğunun nasıl kullanılacağını öğrenebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: ef744ec88f8ee81d33e537b5ffc9d128c724f84f
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: dd7a9f5cf6d2b58c834fdc6657246ecfde606bb6
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67383842"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599637"
 ---
 # <a name="manage-incidents-and-alerts-from-microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft 365 Defender'da Office 365 için Microsoft Defender olayları ve uyarıları yönetme
 

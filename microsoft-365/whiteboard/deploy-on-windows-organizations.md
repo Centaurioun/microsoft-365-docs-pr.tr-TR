@@ -7,17 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard'u Windows 10 veya sonraki sürümleri çalıştıran cihazlara dağıtmayı öğrenin.
-ms.openlocfilehash: bdea83d61a22ecfa3b26feecf7d7711549ace463
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: b4c85775014e792e462a5042b5eeb9784eb3fc8f
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67367719"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599505"
 ---
 # <a name="deploy-microsoft-whiteboard-on-windows-10-devices"></a>Windows 10 cihazlarda Microsoft Whiteboard'u dağıtma
 

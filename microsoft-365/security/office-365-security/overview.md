@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Office 365'te güvenlik, EOP’den Office 365 için Defender Plan 1 ve 2’ye, Standart ve Katı güvenlik yapılandırmaları ve daha fazlası. Neye sahip olduğunuzu ve özelliklerinizi nasıl güvence altına alacağınızı anlayın.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 adobe-target: true
-ms.openlocfilehash: 2b141e50ab3db79dfd0a072c6738d1894e27e0ad
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
-ms.translationtype: HT
+ms.openlocfilehash: ad636b1d8b67b69722373ee778ef332da6010611
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004549"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598747"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Office 365 için Microsoft Defender güvenliğine genel bakış
 

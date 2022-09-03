@@ -4,7 +4,7 @@ description: Sıfır Güven için güvenli e-posta, belgeler ve uygulama ilkeler
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords:
@@ -21,13 +21,13 @@ ms.collection:
 - m365solution-zero-trust
 - zerotrust-solution
 - highpri
-ms.technology: mdo
-ms.openlocfilehash: 7480fdcf3d394e152ff3b1de738d48f5723d7b75
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.openlocfilehash: 8178c3bf98e5171fa5e7c6c257ce43e1b00f62e9
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481206"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598351"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Sıfır Güven kimlik ve cihaz erişimi yapılandırmaları
 
