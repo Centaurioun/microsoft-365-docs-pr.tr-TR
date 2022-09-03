@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, Exchange Online Protection (EOP) içindeki iletilere uygulanan istenmeyen posta güvenilirlik düzeyi (SCL) hakkında bilgi edinebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 8febc1d0e0c4fd98b33fb0016beee89a30802241
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 4f041fe92d6ba295a11dab7904316b238686a34f
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647919"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595949"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP'de istenmeyen posta güvenilirlik düzeyi (SCL)
 
@@ -33,16 +33,16 @@ ms.locfileid: "65647919"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarda, gelen iletiler EOP'de istenmeyen posta filtrelemeden geçer ve bir istenmeyen posta puanı atanır. Bu puan, X üst bilgisindeki iletiye eklenen tek bir istenmeyen posta güvenilirlik düzeyine (SCL) eşlenir. Daha yüksek bir SCL, iletinin istenmeyen posta olma olasılığının daha yüksek olduğunu gösterir. EOP, ileti üzerinde SCL'yi temel alarak işlem uygular.
+posta kutuları Exchange Online olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarında, gelen iletiler EOP'de istenmeyen posta filtrelemeden geçer ve bir istenmeyen posta puanı atanır. Bu puan, X üst bilgisindeki iletiye eklenen tek bir istenmeyen posta güvenilirlik düzeyine (SCL) eşlenir. Daha yüksek bir SCL, iletinin istenmeyen posta olma olasılığının daha yüksek olduğunu gösterir. EOP, ileti üzerinde SCL'yi temel alarak işlem uygular.
 
 SCL'nin anlamı ve iletilerde gerçekleştirilen varsayılan eylemler aşağıdaki tabloda açıklanmıştır. İstenmeyen posta filtreleme kararına göre iletilerde gerçekleştirebileceğiniz eylemler hakkında daha fazla bilgi için bkz. [EOP'de istenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md).
 
-|SCL|Tanım|Varsayılan eylem|
+|Scl|Tanım|Varsayılan eylem|
 |:---:|---|---|
 |-1|İleti istenmeyen posta filtrelemeyi atladı. Örneğin, ileti güvenilir bir gönderenden, güvenilir bir alıcıya gönderildi veya IP İzin Ver Listesi'nde bir e-posta kaynak sunucusundan geliyor. Daha fazla bilgi için bkz. [EOP'de güvenilir gönderen listeleri oluşturma](create-safe-sender-lists-in-office-365.md).|İletiyi alıcıların gelen kutusuna teslim edin.|
 |0, 1|İstenmeyen posta filtreleme, iletinin istenmeyen posta olmadığını belirledi.|İletiyi alıcıların gelen kutusuna teslim edin.|
-|5, 6|İstenmeyen posta filtrelemesi iletiyi **İstenmeyen Posta** olarak işaretledi|İletiyi alıcıların Gereksiz E-posta klasörüne teslim edin.|
-|9|İstenmeyen posta filtrelemesi iletiyi **Yüksek güvenilirlikli istenmeyen posta** olarak işaretledi|İletiyi alıcıların Gereksiz E-posta klasörüne teslim edin.|
+|5, 6|İstenmeyen posta filtrelemesi iletiyi **İstenmeyen Posta** olarak işaretledi|İletiyi alıcıların Önemsiz Email klasörüne teslim edin.|
+|9|İstenmeyen posta filtrelemesi iletiyi **Yüksek güvenilirlikli istenmeyen posta** olarak işaretledi|İletiyi alıcıların Önemsiz Email klasörüne teslim edin.|
 
 SCL 2, 3, 4, 7 ve 8'in istenmeyen posta filtrelemesi tarafından kullanılmadığını fark edeceksiniz.
 
@@ -52,4 +52,4 @@ SCL'ye benzer şekilde, toplu şikayet düzeyi (BCL) hatalı toplu e-postayı ( 
 
 ****
 
-![LinkedIn Learning kısa simgesi.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Microsoft 365'da yeni misiniz?** LinkedIn Learning tarafından size getirilen **Microsoft 365 yöneticileri ve BT uzmanlarına** yönelik ücretsiz video kurslarını keşfedin.
+![LinkedIn Learning kısa simgesi.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Microsoft 365'i yeni mi kullanıyorsunuz?** LinkedIn Learning tarafından size getirilen **Microsoft 365 yöneticileri ve BT uzmanları** için ücretsiz video kurslarını keşfedin.

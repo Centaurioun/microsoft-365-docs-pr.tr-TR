@@ -19,14 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 için Microsoft Defender Planı'nda tehdit araştırması ve yanıt özellikleri hakkında bilgi edinin.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: f38e5b51e930bde2fb3218864fa0e57c31949e28
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 8cd390c394b90e6b6abce77d5f351aa5daa48e63
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67325847"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590798"
 ---
 # <a name="threat-investigation-and-response"></a>Tehdit araştırması ve yanıtı
 

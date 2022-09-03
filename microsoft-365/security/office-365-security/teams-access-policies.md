@@ -3,7 +3,7 @@ title: Önerilen Teams ilkeleri - Kurumsal | için Microsoft 365 Microsoft Docs
 description: Teams iletişiminin ve dosya erişiminin güvenliğini sağlama hakkında Microsoft önerilerine yönelik ilkeleri açıklar.
 author: MicrosoftHeidi
 manager: serdars
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 audience: Admin
 f1.keywords:
@@ -20,13 +20,13 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
-ms.technology: mdo
-ms.openlocfilehash: 0e26923925416db48b0547bd9d044e367b56cef7
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.subservice: mdo
+ms.openlocfilehash: b9b3129d0d7668673696fe18dcac9501fecc5c73
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750044"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590644"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Teams sohbetlerinin, gruplarının ve dosyalarının güvenliğini sağlamaya yönelik ilke önerileri
 
@@ -123,9 +123,9 @@ Teams ve kanallar, Microsoft Teams'de yaygın olarak kullanılan iki öğedir ve
 
 Varsayılan ilkenin değiştirilmesi veya özel ilkeler oluşturulması önerilir ve ilkelerinizi yönetme hakkında daha fazla bilgiyi şu bağlantıdan öğrenebilirsiniz: [Microsoft Teams'de ekip ilkelerini yönetme](/microsoftteams/teams-policies).
 
-### <a name="messaging-policies"></a>Microsoft Mesajlaşma ilkeleri
+### <a name="messaging-policies"></a>Mesajlaşma ilkeleri
 
-Microsoft Mesajlaşma veya sohbet, varsayılan genel ilke veya özel ilkeler aracılığıyla da yönetilebilir ve bu, kullanıcılarınızın kuruluşunuza uygun bir şekilde birbirleriyle iletişim kurmasını sağlayabilir. Bu bilgiler [Teams'de mesajlaşma ilkelerini yönetme](/microsoftteams/messaging-policies-in-teams) bölümünde gözden geçirilebilir.
+Mesajlaşma veya sohbet, varsayılan genel ilke veya özel ilkeler aracılığıyla da yönetilebilir ve bu, kullanıcılarınızın kuruluşunuza uygun bir şekilde birbirleriyle iletişim kurmasını sağlayabilir. Bu bilgiler [Teams'de mesajlaşma ilkelerini yönetme](/microsoftteams/messaging-policies-in-teams) bölümünde gözden geçirilebilir.
 
 ### <a name="meeting-policies"></a>Toplantı ilkeleri
 

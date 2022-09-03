@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Sıraya alınan, ertelenen ve geri dönen iletiler için SSS
+  title: EOP kuyruğa alınmış, ertelenmiş ve geri dönen iletiler SSS
   f1.keywords:
   - NOCSH
   ms.author: chrisda
@@ -13,45 +13,45 @@ metadata:
   ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
   ms.custom:
   - seo-marvel-apr2020
-  description: EOP) filtreleme işlemi sırasında sıraya alınan, ertelenmiş veya geri dönen iletiler hakkında en Exchange Online Protection soruların yanıtlarını bulabilirsiniz.
-  ms.technology: mdo
-  ms.prod: m365-security
-  ms.openlocfilehash: 52e05fd61ef439e294ec3c0cc8212d7f826d7fcd
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  description: Exchange Online Protection (EOP) filtreleme işlemi sırasında kuyruğa alınan, ertelenen veya geri dönen iletiler hakkında en yaygın soruların yanıtlarını bulun.
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
+  ms.openlocfilehash: e23d2bb332481e3c0f5e19ac1cf0ec8621542587
+  ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63683197"
-title: Sıraya alınan, ertelenen ve geri dönen iletiler için SSS
+  ms.lasthandoff: 09/03/2022
+  ms.locfileid: "67596015"
+title: EOP kuyruğa alınmış, ertelenmiş ve geri dönen iletiler SSS
 summary: >
-  [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+  [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 
-  **Geçerli olduğu yer:**
+  **Uygulandığı öğe**
 
   - [Exchange Online Protection](exchange-online-protection-overview.md)
 
-  - [1. plan Office 365 plan 2 için Microsoft Defender](defender-for-office-365.md)
+  - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  Bu konu başlığı, grup (EOP) filtreleme işlemi sırasında sıraya alınan, ertelenmiş veya geri dönen iletiler Exchange Online Protection sorulan soruların yanıtlarını sağlar.
+  Bu konu, Exchange Online Protection (EOP) filtreleme işlemi sırasında kuyruğa alınan, ertelenen veya geri dönen iletiler hakkında sık sorulan soruların yanıtlarını sağlar.
 sections:
 - name: Yok sayıldı
   questions:
   - question: >
-      Posta kuyruğa alma nedendir?
+      Posta neden kuyruğa giriyor?
     answer: >
-      Hizmet, teslim için alıcı sunucusuna bağlantı alamasa da, iletiler sıraya gönderilir veya ertelenmiş olur. Alıcı ağına 500 seri hatası döndürülürse bu ileti ertelemez.
+      Hizmet teslim için alıcı sunucuyla bağlantı kuramazsa iletiler kuyruğa alınır veya ertelenirse. Alıcı ağından 500 serisi hatası döndürülürse iletileri ertelemez.
   - question: >
-      İleti nasıl ertelenmiş olabilir?
+      İleti nasıl ertelenmiş olur?
     answer: >
-      İletiler, alıcı sunucusuyla bağlantı kurama geldiğinde ve alıcının sunucusu bağlantıda zaman çıkma, bağlantı reddedildi veya 400 seri hatası gibi "geçici hata" döndüren durumlarda sınanacak. 500 seri hatası gibi kalıcı bir hata varsa, ileti gönderene döndürülür.
+      Alıcı sunucusuna bağlantı yapılamadığında ve alıcının sunucusu bağlantı zaman aşımı, bağlantı reddedildi veya 400 serisi hatası gibi bir "geçici hata" döndürdükten sonra iletiler tutulur. 500 serisi hatası gibi kalıcı bir hata varsa, ileti gönderene döndürülür.
   - question: >
-      İleti ne kadar süre ertelenme süresinde kalır ve yeniden deneme aralığı nedir?
+      İleti erteleme süresi ne kadardır ve yeniden deneme aralığı nedir?
     answer: >
-      Ertelenen mesajlar 1 gün boyunca kuyruklarımızda kalacaktır. İleti yeniden deneme deneme denemeleri, alıcının posta sisteminden geri alınan hataya dayalıdır. İlk birkaç erteleme süresi 15 dakika veya daha kısadır ve sonraki yeniden deneme süresi (sonraki yarım düzine kadar), birden çok tekrarlı denemede aralığı 60 dakika en fazla 60 dakikaya kadar artırarak devam eder. Aralık süresi genişletmesi dinamiktir ve kuyruk boyutları ve iç ileti önceliği gibi birden çok değişkeni dikkate alır. Temel olarak, başlamak için 15 dakika (veya daha az) zaman alır ve sonraki birkaç saat içinde buradan en fazla 60 dak.
+      Ertelenen iletiler 1 gün boyunca kuyruklarımızda kalır. İleti yeniden deneme girişimleri, alıcının posta sisteminden aldığımız hataya dayanır. İlk birkaç erteleme 15 dakika veya daha kısadır ve sonraki yeniden denemeler (sonraki yarım düzine veya daha fazla) birden çok yeniden denemenin aralığını en fazla 60 dakikaya yükseltir. Aralık süresi genişletmesi dinamiktir ve kuyruk boyutları ve iç ileti önceliği gibi birden çok değişken dikkate alınır. Temel olarak, başlangıç 15 dakikadır (veya daha kısadır), ardından önümüzdeki birkaç saat içinde oradan en fazla 60 dakikaya kadar genişler.
   - question: >
-      E-posta sunucunuz geri yüklendikten sonra, sıraya alınan iletiler nasıl dağıtılır?
-    answer: E-posta sunucunuz geri yüklendikten sonra, sıraya alınan tüm iletiler, sunucu kullanılamayacak duruma geldiğinde alınıldı ve sıraya alındıktan sonra sıraya alındıktan sonra otomatik olarak işlenir.
+      E-posta sunucunuz geri yüklendikten sonra kuyruğa alınan iletiler nasıl dağıtılır?
+    answer: E-posta sunucunuz geri yüklendikten sonra, kuyruğa alınan tüm iletiler, sunucu kullanılamaz duruma geldiğinde alındığı ve kuyruğa alındığı sırada otomatik olarak işlenir.

@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: katmartin
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Windows 365 Bulut PC Microsoft 365 Lighthouse'da yeniden sağlamayı öğrenin.
-ms.openlocfilehash: b4e4c4596718ccb09c490d582396de3494eeabf7
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: a8600d5049ab6d77e8ebdf57207d082045c7f155
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056493"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597183"
 ---
 # <a name="reprovision-a-windows-365-cloud-pc-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Windows 365 Bulut PC yeniden sağlama
 

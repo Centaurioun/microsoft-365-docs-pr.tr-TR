@@ -15,14 +15,14 @@ ms.collection:
 - m365solution-ransomware
 - highpri
 description: Microsoft 365 yöneticileri fidye yazılımı saldırısından kurtarmayı öğrenebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 23cc51d34244ebdb0d37141879df25da7e8429df
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 6fc5aef45ab6fbced903dc46e2734a32d2dc0948
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481140"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597768"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Microsoft 365'te fidye yazılımı saldırısından kurtarma
 

@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Kullanıcılara güvenlik veya uyumluluk özelliklerinden herhangi birini yönetebilmeleri için önce Microsoft 365 Güvenlik & Uyumluluk Merkezi'nde izinlerin atanması gerekir.
+description: Kullanıcılara, güvenlik veya uyumluluk özelliklerinden herhangi birini yönetebilmeleri için önce Microsoft 365 Güvenlik & Uyumluluk Merkezi'nde izinlerin atanması gerekir.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 4e0ca3874f03d9f0c386a84c9e8b56ea58bbfe72
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 922606623ef8834f7e39d48ebc758d9c6e6c414e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018018"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596499"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Kullanıcılara Güvenlik ve Uyumluluk Merkezi'ne erişim izni verme
 
@@ -64,7 +64,7 @@ Güvenlik & Uyumluluk Merkezi'nde kullanıcılara verebileceğiniz farklı izinl
 
 ## <a name="use-security--compliance-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'ne başka bir kullanıcıya erişim vermek için Güvenlik & Uyumluluğu PowerShell'i kullanın
 
-1. [Güvenlik & Uyumluluğu PowerShell'e Bağlan](/powershell/exchange/connect-to-scc-powershell).
+1. [Güvenlik & Uyumluluğu PowerShell'e bağlanın](/powershell/exchange/connect-to-scc-powershell).
 
 2. Aşağıdaki sözdizimini kullanın:
 

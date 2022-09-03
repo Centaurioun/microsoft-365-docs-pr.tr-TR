@@ -11,26 +11,26 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft, EOP için kendi kendine destek ve yardımlı destek de dahil olmak üzere çeşitli yer ve yöntemler için yardım sağlar.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 144e816a19f47960a70ef98de8f947d040348631
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 8b1b96df91081f2fd8bff3f4d80f8c4c8e016b46
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131228"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595795"
 ---
 # <a name="help-and-support-for-eop"></a>EOP için yardım ve destek
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarda, bu makalede listelenen teknik destek kaynakları, sorun yaşıyorsanız yanıt bulmanıza yardımcı olur EOP. Microsoft, EOP için kendi kendine destek ve yardımlı destek de dahil olmak üzere çeşitli yer ve yöntemler için yardım sağlar.
+posta kutuları Exchange Online olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarında, bu makalede listelenen teknik destek kaynakları EOP ile sorun yaşıyorsanız yanıt bulmanıza yardımcı olur. Microsoft, EOP için kendi kendine destek ve yardımlı destek de dahil olmak üzere çeşitli yer ve yöntemler için yardım sağlar.
 
 ## <a name="self-support-options"></a>Kendi kendine destek seçenekleri
 

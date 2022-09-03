@@ -14,18 +14,18 @@ ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection ve Exchange Online DKIM imzalı iletileri doğrulama hakkında bilgi edinin
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: dcdd251ba1266033671ac524426d1ac3d2f56a10
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 8921dbf6c27de98c2d7af4de3edc10a539d75e75
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130724"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595883"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>DKIM imzalı iletileri doğrulama desteği
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -43,4 +43,4 @@ DKIM, ileti üst bilgilerinin DKIM-Signature üst bilgisinde görünen dijital o
 > [!NOTE]
 > Authentication-Results üst bilgisi hakkında daha fazla bilgi için bkz. RFC 7001 ([İleti Kimlik Doğrulama Durumunu Belirtmek için İleti Üst Bilgisi Alanı](https://www.rfc-editor.org/rfc/rfc7001.txt)). Microsoft'un DKIM uygulaması bu RFC ile uyumlu.
 
-Yöneticiler DKIM doğrulamasının sonuçlarında Exchange [posta akışı kuralları](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (taşıma kuralları olarak da bilinir) oluşturabilir. Bu posta akışı kuralları, yöneticilerin iletileri gerektiği gibi filtrelemesine veya yönlendirmesine olanak tanır.
+Yöneticiler, DKIM doğrulamasının sonuçlarında Exchange [posta akışı kuralları](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (taşıma kuralları olarak da bilinir) oluşturabilir. Bu posta akışı kuralları, yöneticilerin iletileri gerektiği gibi filtrelemesine veya yönlendirmesine olanak tanır.

@@ -18,14 +18,14 @@ ms.collection:
 - highpri
 ms.custom: ''
 description: Google Postini, Barracuda İstenmeyen Posta ve Virüs Güvenlik Duvarı veya Cisco IronPort gibi üçüncü taraf koruma hizmetlerinden veya cihazlardan Office 365 için Microsoft Defender korumaya geçiş yapmak için doğru yolu öğrenin.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: d833f264fc222a5199f3a2406f85cbe8108aadbd
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: d54208fd99f54b1b7ee754d602aaefa432fcbc5b
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479873"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597315"
 ---
 # <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>Üçüncü taraf koruma hizmetinden veya cihazından Office 365 için Microsoft Defender geçiş
 

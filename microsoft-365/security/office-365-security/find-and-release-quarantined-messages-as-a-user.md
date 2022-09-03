@@ -18,15 +18,15 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Kullanıcılar, kendilerine teslim edilmesi gereken Exchange Online Protection (EOP) içinde karantinaya alınan iletileri görüntülemeyi ve yönetmeyi öğrenebilir.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 adobe-target: true
-ms.openlocfilehash: 845e72f2cf3eeb97d7d5f90224967a4fe5068cf1
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 69fa7f15aa95f85d298209d4e24e37ada6868bba
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607685"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597922"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Karantinaya alınan iletileri EOP'de kullanıcı olarak bulma ve bırakma
 
@@ -55,7 +55,7 @@ Normal bir kullanıcı (yönetici değil) olarak, karantinaya alınmış bir ile
 |Office 365 için Defender'de kimliğine bürünülen etki alanı koruması|![Onay işareti.](../../media/checkmark.png)|![Onay işareti.](../../media/checkmark.png)|![Onay işareti.](../../media/checkmark.png)|
 |Office 365 için Defender'da posta kutusu zekası koruması|![Onay işareti.](../../media/checkmark.png)|![Onay işareti.](../../media/checkmark.png)|![Onay işareti.](../../media/checkmark.png)|
 |**Kötü amaçlı yazılımdan koruma ilkeleri**||||
-|Kötü amaçlı yazılım olarak karantinaya alınan ekleri içeren e-posta iletileri.||||
+|Kötü amaçlı yazılım olarak karantinaya alınan ekleri olan iletileri Email.||||
 |**Office 365 için Defender'da Güvenli Ekler**||||
 |Kötü amaçlı ekler içeren e-posta iletilerini kötü amaçlı yazılım olarak karantinaya veren Güvenli Ekler ilkeleri.||||
 |Kötü amaçlı dosyaları kötü amaçlı yazılım olarak karantinaya alan SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler.||||
@@ -79,7 +79,7 @@ Karantinaya alınan iletilerinizi Microsoft 365 Defender portalında veya (yöne
 > [!NOTE]
 > Karantinaya alınan iletileri görüntüleme olanağınız [, karantinaya](quarantine-policies.md) alınan ileti türüne (karantina [nedeniyle varsayılan karantina ilkesi](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) olabilir) uygulanan karantina ilkesi tarafından denetlenmektedir.
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**E-posta & işbirliği** \> **Karantinayı Gözden Geçir'e** \> gidin. Doğrudan **Karantina** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantine>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Email & işbirliğine** \> gidip **Karantinayı** **Gözden Geçir'e** \> gidin. Doğrudan **Karantina** sayfasına gitmek için kullanın <https://security.microsoft.com/quarantine>.
 
 2. **Karantina** sayfasında, kullanılabilir bir sütun üst bilgisine tıklayarak sonuçları sıralayabilirsiniz. Gösterilen sütunları değiştirmek için **Sütunları özelleştir'e**  tıklayın. Varsayılan değerler yıldız işaretiyle (<sup>\*</sup>):
 

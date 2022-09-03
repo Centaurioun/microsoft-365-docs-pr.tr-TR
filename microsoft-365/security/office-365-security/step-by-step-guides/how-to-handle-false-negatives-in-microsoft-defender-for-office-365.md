@@ -3,7 +3,7 @@ title: (Yanlış Negatifler) Office 365 için Microsoft Defender kullanılarak a
 description: İş kaybını önlemek için son kullanıcılara ve gelen kutularına gelen kötü amaçlı e-postaları (Hatalı Negatifler olarak) Office 365 için Microsoft Defender ile işleme adımları.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: decbece049ea4f91deb529d2fd640816bf3f1d0c
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.subservice: mdo
+ms.openlocfilehash: f81234f750946eed8efac6908aa1bc7481687622
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042156"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596709"
 ---
 # <a name="how-to-handle-malicious-emails-that-are-delivered-to-recipients-false-negatives-using-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender kullanarak alıcılara teslim edilen kötü amaçlı e-postaları işleme (Hatalı Negatifler)
 
@@ -38,7 +38,7 @@ Office 365 için Defender e-postaların neden teslim alınıyor olduğunu, durum
 ## <a name="handling-malicious-emails-in-the-inbox-folder-of-end-users"></a>Son kullanıcıların Gelen Kutusu klasöründe kötü amaçlı e-postaları işleme
 
 1. Son kullanıcılardan Microsoft İleti Eklentisi veya Microsoft Kimlik Avı eklentisini veya Outlook düğmelerini kullanarak e-postayı **kimlik avı** veya **gereksiz** olarak bildirmelerini isteyin.
-2. Son kullanıcılar, bu gönderenden gelen e-postaların gelen kutularına teslim edilmesini önlemek için Outlook'daki [engellenen gönderenler listesine](https://support.microsoft.com/en-us/office/block-a-mail-sender-b29fd867-cac9-40d8-aed1-659e06a706e4#:~:text=1%20On%20the%20Home%20tab%2C%20in%20the%20Delete,4%20Click%20OK%20in%20both%20open%20dialog%20boxes..) de göndereni ekleyebilir.
+2. Son kullanıcılar, bu gönderenden gelen e-postaların gelen kutularına teslim edilmesini önlemek için, göndereni Outlook'taki [engellenen gönderenler listesine](https://support.microsoft.com/en-us/office/block-a-mail-sender-b29fd867-cac9-40d8-aed1-659e06a706e4#:~:text=1%20On%20the%20Home%20tab%2C%20in%20the%20Delete,4%20Click%20OK%20in%20both%20open%20dialog%20boxes..) de ekleyebilir.
 3. Yöneticiler, kullanıcı tarafından bildirilen [iletileri kullanıcı tarafından bildirilen içerik](/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide#view-user-submissions-to-microsoft&preserve-view=true) portalından önceliklendirme yapabilir.
 4. Bu bildirilen iletilerden yöneticiler, bu e-postaya neden izin verildiğini öğrenmek [için analiz için Microsoft'a](/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide#notify-users-from-within-the-portal&preserve-view=true) **gönderebilir**.
 5. Gerekirse, yöneticiler analiz için Microsoft'a gönderirken [, gönderenin](/microsoft-365/security/office-365-security/manage-tenant-blocks?view=o365-worldwide&preserve-view=true) sorunu azaltması için bir blok oluşturabilir.

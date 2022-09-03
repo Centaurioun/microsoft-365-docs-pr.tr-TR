@@ -15,18 +15,18 @@ ms.collection:
 - m365initiative-defender-office365
 description: Microsoft 365 Defender portalında tehditleri araştırmak ve yanıtlamak için Tehdit Gezgini'ni ve gerçek zamanlı algılama raporunu kullanmayı öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: ccc26bef5209dd297df0b3008b841edb56cdd160
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: d6d666285baa2e31c8e2099eb1359c370ac660ae
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971164"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596577"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Tehdit Gezgini'nde görünümler ve gerçek zamanlı algılamalar
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
@@ -36,18 +36,18 @@ ms.locfileid: "64971164"
 
 [Tehdit Gezgini](threat-explorer.md) (ve gerçek zamanlı algılamalar raporu), Güvenlik operasyonları ekiplerinin Microsoft 365 Defender portalındaki tehditleri araştırmasına ve yanıtlamasına yardımcı olan güçlü ve neredeyse gerçek zamanlı bir araçtır. Explorer (ve gerçek zamanlı algılamalar raporu), e-postada ve Office 365'deki dosyalarda şüpheli kötü amaçlı yazılım ve kimlik avı ile ilgili bilgilerin yanı sıra kuruluşunuza yönelik diğer güvenlik tehditleri ve riskleri görüntüler.
 
-- Office 365 Plan 2 [için Microsoft Defender'larınız](defender-for-office-365.md) varsa Gezgin'iniz vardır.
-- Office 365 Plan 1 için Microsoft Defender'larınız varsa gerçek zamanlı algılamalarınız vardır.
+- [Office 365 için Microsoft Defender](defender-for-office-365.md) Plan 2'niz varsa Gezgin'e sahipsiniz demektir.
+- Plan 1 Office 365 için Microsoft Defender varsa gerçek zamanlı algılamalarınız vardır.
 
-Explorer'ı (veya gerçek zamanlı algılama raporunu) ilk kez açtığınızda, varsayılan görünüm son 7 güne ilişkin e-posta kötü amaçlı yazılım algılamalarını gösterir. Bu rapor, Kasa Bağlantıları tarafından algılanan kötü amaçlı URL'ler ve [Kasa Ekleri](safe-links.md) tarafından algılanan kötü amaçlı dosyalar gibi Office 365 [algılamaları](safe-attachments.md) için Microsoft Defender'ı da gösterebilir. Bu rapor son 30 güne ilişkin verileri gösterecek şekilde değiştirilebilir (Office 365 P2 ücretli aboneliği için Microsoft Defender ile). Deneme abonelikleri yalnızca son yedi güne ilişkin verileri içerir.
+Explorer'ı (veya gerçek zamanlı algılama raporunu) ilk kez açtığınızda, varsayılan görünüm son 7 güne ilişkin e-posta kötü amaçlı yazılım algılamalarını gösterir. Bu rapor, Güvenli Bağlantılar tarafından algılanan kötü amaçlı URL'ler ve [Güvenli Ekler](safe-links.md) tarafından algılanan kötü amaçlı dosyalar gibi Office 365 için Microsoft Defender [algılamalarını](safe-attachments.md) da gösterebilir. Bu rapor son 30 güne ilişkin verileri gösterecek şekilde değiştirilebilir (Office 365 için Microsoft Defender P2 ücretli aboneliğiyle). Deneme abonelikleri yalnızca son yedi güne ilişkin verileri içerir.
 
 |Abonelik|Yardımcı programı|Veri Günleri|
 |---|---|---|
-|Office 365 için Microsoft Defender P1 deneme sürümü|Gerçek zamanlı algılamalar|7|
-|Office 365 P1 için Microsoft Defender ücretli|Gerçek zamanlı algılamalar|30|
-|Office 365 P1 için Microsoft Defender Office 365 P2 deneme sürümü için ücretli test Defender|Tehdit Gezgini|7|
-|Office 365 için Microsoft Defender P2 deneme sürümü|Tehdit Gezgini|7|
-|Office 365 P2 için Microsoft Defender ücretli|Tehdit Gezgini|30|
+|P1 deneme sürümünü Office 365 için Microsoft Defender|Gerçek zamanlı algılamalar|7|
+|Office 365 için Microsoft Defender P1 ödendi|Gerçek zamanlı algılamalar|30|
+|Office 365 için Microsoft Defender P1 ücretli test Office 365 için Defender P2 deneme sürümü|Tehdit Gezgini|7|
+|P2 deneme sürümünü Office 365 için Microsoft Defender|Tehdit Gezgini|7|
+|Office 365 için Microsoft Defender P2 ödendi|Tehdit Gezgini|30|
 
 > [!NOTE]
 > Yakında Gezgin (ve Gerçek zamanlı algılamalar) veri saklama ve deneme kiracıları için arama sınırını 7 günden 30 güne uzatacağız. Bu değişiklik, 70544 no'lu yol haritası öğesinin bir parçası olarak izleniyor ve şu anda bir dağıtım aşamasında.
@@ -58,9 +58,9 @@ Görüntülenecek bilgileri değiştirmek için **Görünüm** menüsünü kulla
 
 Bir görünüm seçtikten sonra filtreler uygulayabilir ve daha fazla analiz gerçekleştirmek için sorgular ayarlayabilirsiniz. Aşağıdaki bölümlerde Gezgin'de (veya gerçek zamanlı algılamalarda) bulunan çeşitli görünümlere kısa bir genel bakış sağlanır.
 
-## <a name="email--malware"></a>E-posta > Kötü Amaçlı Yazılım
+## <a name="email--malware"></a>kötü amaçlı yazılım Email >
 
-Bu raporu görüntülemek için Gezgin'de (veya gerçek zamanlı algılamalarda) **E-posta** \> **Kötü Amaçlı Yazılımını** **Görüntüle'yi** \> seçin. Bu görünüm, kötü amaçlı yazılım içerdiği belirlenen e-posta iletileri hakkındaki bilgileri gösterir.
+Bu raporu görüntülemek için Gezgin'de (veya gerçek zamanlı algılamalarda) **Kötü Amaçlı Yazılım** **Email** \> **Görüntüle'yi** \> seçin. Bu görünüm, kötü amaçlı yazılım içerdiği belirlenen e-posta iletileri hakkındaki bilgileri gösterir.
 
 :::image type="content" source="../../media/detection-technology.png" alt-text="Kötü amaçlı yazılım olarak tanımlanan e-posta hakkındaki verileri görüntüleme" lightbox="../../media/detection-technology.png":::
 
@@ -74,9 +74,9 @@ Grafiğin altında belirli iletiler hakkında daha fazla ayrıntı görüntüley
 
 :::image type="content" source="../../media/ThreatExplorerMalwareItemSelectedFlyout.png" alt-text="Açılır öğe açılan Tehdit Gezgini" lightbox="../../media/ThreatExplorerMalwareItemSelectedFlyout.png":::
 
-## <a name="email--phish"></a>E-posta > Kimlik Avı
+## <a name="email--phish"></a>kimlik avı Email >
 
-Bu raporu görüntülemek için Gezgin'de (veya gerçek zamanlı algılamalarda) **E-posta** \> **Kimlik** **Avı'nı Görüntüle'yi** \> seçin. Bu görünüm, kimlik avı girişimi olarak tanımlanan e-posta iletilerini gösterir.
+Bu raporu görüntülemek için Gezgin'de (veya gerçek zamanlı algılamalarda) **Kimlik Avı** **Email** \> **Görüntüle'yi** \> seçin. Bu görünüm, kimlik avı girişimi olarak tanımlanan e-posta iletilerini gösterir.
 
 :::image type="content" source="../../media/phish.png" alt-text="Kimlik avı girişimleri olarak tanımlanan e-posta hakkındaki verileri görüntüleme" lightbox="../../media/phish.png":::
 
@@ -94,11 +94,11 @@ Listede algılanan URL gibi bir öğeyi seçtiğinizde, seçtiğiniz öğe hakk�
 
 :::image type="content" source="../../media/ThreatExplorerEmailPhishURLDetails.png" alt-text="Algılanan URL ile ilgili ayrıntılar" lightbox="../../media/ThreatExplorerEmailPhishURLDetails.png":::
 
-## <a name="email--submissions"></a>E-posta > Gönderimleri
+## <a name="email--submissions"></a>gönderileri Email >
 
-Bu raporu görüntülemek için Gezgin'de (veya gerçek zamanlı algılamalarda) **E-posta** \> **Gönderimlerini** **Görüntüle'yi** \> seçin. Bu görünüm, kullanıcıların gereksiz olarak değil gereksiz olarak bildirdiği e-postayı veya kimlik avı e-postasını gösterir.
+Bu raporu görüntülemek için Gezgin'de (veya gerçek zamanlı algılamalarda) **Görünüm** \> **Email** \> **Gönderimler'i** seçin. Bu görünüm, kullanıcıların gereksiz olarak değil gereksiz olarak bildirdiği e-postayı veya kimlik avı e-postasını gösterir.
 
-:::image type="content" source="../../media/ThreatExplorerEmailUserReportedViewOptions.png" alt-text="Kullanıcılar tarafından bildirilen E-posta iletileri" lightbox="../../media/ThreatExplorerEmailUserReportedViewOptions.png":::
+:::image type="content" source="../../media/ThreatExplorerEmailUserReportedViewOptions.png" alt-text="Kullanıcılar tarafından bildirilen Email iletileri" lightbox="../../media/ThreatExplorerEmailUserReportedViewOptions.png":::
 
 Görüntüleme seçenekleri listenizi açmak için **Gönderen'e** tıklayın. Gönderene, alıcılara, rapor türüne (kullanıcının e-postanın gereksiz, gereksiz veya kimlik avı değil gereksiz olduğunu belirlemesi) ve daha fazlasına göre bilgileri görüntülemek için bu listeyi kullanın.
 
@@ -112,9 +112,9 @@ Grafiğin altında konu satırı, gönderenin IP adresi, iletiyi gereksiz değil
 
 Ek ayrıntıları görüntülemek için listeden bir öğe seçin.
 
-## <a name="email--all-email"></a>E-posta > Tüm e-postalar
+## <a name="email--all-email"></a>Tüm e-postaları Email >
 
-Bu raporu görüntülemek için Gezgin'de **Tüm E-postaları Görüntüle'yi** \>  \> seçin. Bu görünümler, kimlik avı veya kötü amaçlı yazılım nedeniyle kötü amaçlı olarak tanımlanan e-postalar ve kötü amaçlı olmayan tüm postalar (normal e-posta, istenmeyen posta ve toplu posta) dahil olmak üzere e-posta etkinliğinin genel görünümünü gösterir.
+Bu raporu görüntülemek için Gezgin'de **Tüm postalar** **Email** \> **Görüntüle'yi** \> seçin. Bu görünümler, kimlik avı veya kötü amaçlı yazılım nedeniyle kötü amaçlı olarak tanımlanan e-postalar ve kötü amaçlı olmayan tüm postalar (normal e-posta, istenmeyen posta ve toplu posta) dahil olmak üzere e-posta etkinliğinin genel görünümünü gösterir.
 
 > [!NOTE]
 > **Görüntülenecek çok fazla veri** var hatasını alırsanız filtre ekleyin ve gerekirse görüntülemekte olduğunuz tarih aralığını daraltın.
@@ -127,7 +127,7 @@ Grafiğin altında konu satırı, alıcı, gönderen, durum vb. gibi belirli e-p
 
 ## <a name="content--malware"></a>İçerik > Kötü Amaçlı Yazılım
 
-Bu raporu görüntülemek için Gezgin'de (veya gerçek zamanlı algılamalarda) **İçerik** \> **Kötü Amaçlı Yazılımını** **Görüntüle'yi** \> seçin. Bu görünümde, [SharePoint Online, OneDrive İş ve Microsoft Teams Office 365 için Microsoft Defender](mdo-for-spo-odb-and-teams.md) tarafından kötü amaçlı olarak tanımlanan dosyalar gösterilir.
+Bu raporu görüntülemek için Gezgin'de (veya gerçek zamanlı algılamalarda) **İçerik** \> **Kötü Amaçlı Yazılımını** **Görüntüle'yi** \> seçin. Bu görünümde [SharePoint Online, OneDrive İş ve Microsoft Teams'de Office 365 için Microsoft Defender](mdo-for-spo-odb-and-teams.md) tarafından kötü amaçlı olarak tanımlanan dosyalar gösterilir.
 
 Kötü amaçlı yazılım ailesine, algılama teknolojisine (kötü amaçlı yazılımın nasıl algılandığı) ve iş yüküne (OneDrive, SharePoint veya Teams) göre bilgileri görüntüleyin.
 
@@ -143,9 +143,9 @@ Gezgin (ve gerçek zamanlı algılamalar) ile bir tıklamayla filtre uygulayabil
 
 Bu grafikte **ATP Patlama'ya tıklanması** aşağıdaki gibi bir görünüme neden olur:
 
-:::image type="content" source="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png" alt-text="Gezgin yalnızca Office 365 için Defender'ı gösterecek şekilde filtrelendi." lightbox="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png":::
+:::image type="content" source="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png" alt-text="Gezgin yalnızca Office 365 için Defender Patlama sonuçlarını görüntüleyecek şekilde filtrelendi" lightbox="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png":::
 
-Bu görünümde, Kasa [Ekleri](safe-attachments.md) tarafından patlatılan dosyalara yönelik verileri inceliyoruz. Grafiğin altında, ekleri Kasa Ekler tarafından algılanan belirli e-posta iletileriyle ilgili ayrıntıları görebiliriz.
+Bu görünümde artık [Güvenli Ekler](safe-attachments.md) tarafından patlatılan dosyalara yönelik verileri inceliyoruz. Grafiğin altında, Güvenli Ekler tarafından algılanan ekleri olan belirli e-posta iletileriyle ilgili ayrıntıları görebiliriz.
 
 :::image type="content" source="../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png" alt-text="Algılanan ekleri olan e-posta iletileriyle ilgili belirli ayrıntılar" lightbox="../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png":::
 

@@ -404,6 +404,8 @@
           href: step-by-step-guides/step-by-step-guide-overview.md
         - name: Yapılandırın
           items:
+            - name: E-posta güvenliği için derinlemesine savunma yapılandırmasıyla çalışmaya başlama
+              href: step-by-step-guides/defense-in-depth-guide.md
             - name: Karantina izinleri ve ilkeleri nasıl yapılandırılır?
               href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
             - name: Office 365 için Microsoft Defender'da Standart veya Katı önceden ayarlanmış güvenlik ilkeleri için adımları ayarlama
@@ -418,6 +420,8 @@
               href: step-by-step-guides/utilize-microsoft-defender-for-office-365-in-sharepoint-online.md
         - name: Kullanım
           items:
+            - name: Office 365 için Microsoft Defender'da kampanyalar görünümüyle yeni ortaya çıkan güvenlik tehditlerini izleme ve yanıtlama
+              href: step-by-step-guides/track-and-respond-to-emerging-threats-with-campaigns.md
             - name: İleti merkezinden Office 365 için Microsoft Defender yapılan değişikliklerin özet bildirimini ayarlama
               href: step-by-step-guides/stay-informed-with-message-center.md
             - name: 'Microsoft 365 Defender''da olaylar nasıl Önceliklendirilir, Yönetilir, Araştırılır ve Yanıtlanır?'

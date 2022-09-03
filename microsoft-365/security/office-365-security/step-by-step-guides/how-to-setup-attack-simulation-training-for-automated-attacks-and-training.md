@@ -3,7 +3,7 @@ title: Saldırı simülasyon eğitiminde otomatik saldırılar ve eğitim nasıl
 description: Saldırı Benzetimi eğitimini otomatikleştirme ve hedef kullanıcılara yük gönderme adımları. Bu kılavuzu izleyerek, belirli tekniklere ve yüklere sahip otomatik saldırı akışları oluşturmayı öğreneceksiniz.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,17 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: c522c9602874ca8b385a135a64c34ef0643abe82
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.subservice: mdo
+ms.openlocfilehash: 8bb4b0ef91eac55dae814150a39c4fc2dbe0875d
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106853"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596643"
 ---
 # <a name="how-to-setup-automated-attacks-and-training-within-attack-simulation-training"></a>Saldırı simülasyon eğitiminde otomatik saldırılar ve eğitim nasıl kurulur?
 
-Saldırı simülasyonu eğitimi, kimlik avı riskinizi değerlendirmek ve kullanıcılarınıza kimlik avı saldırılarından nasıl daha iyi kaçınabileceğinizi öğretmek için kuruluşunuzda zararsız saldırı simülasyonları çalıştırmanıza olanak tanır. Bu kılavuzu izleyerek, otomatik akışları belirli tekniklerle ve belirtilen koşullar karşılandığında çalıştırılan yüklerle yapılandıracak ve kuruluşunuzda simülasyonlar başlatacaksınız.
+Saldırı simülasyonu eğitimi, kimlik avı riskinizi değerlendirmek ve kullanıcılarınıza kimlik avı saldırılarından nasıl daha iyi kaçınacaklarını öğretmek için kuruluşunuzda zararsız saldırı simülasyonları çalıştırmanıza olanak tanır. Bu kılavuzu izleyerek, otomatik akışları belirli tekniklerle ve belirtilen koşullar karşılandığında çalıştırılan yüklerle yapılandıracak ve kuruluşunuzda simülasyonlar başlatacaksınız.
 
 ## <a name="what-youll-need"></a>İhtiyacınız olan şey
 
@@ -36,7 +36,7 @@ Saldırı simülasyonu eğitimi, kimlik avı riskinizi değerlendirmek ve kullan
 
 ## <a name="send-a-payload-to-target-users"></a>Hedef kullanıcılara yük gönderme
 
-1. [Saldırı benzetimi eğitimi'ne](https://security.microsoft.com/attacksimulator) gidin.
+1. [Saldırı simülasyonu eğitimi'a](https://security.microsoft.com/attacksimulator) gidin.
 1. Üst gezinti çubuğundan **Simülasyon otomasyonları'nı** seçin.
 1. **Otomasyon oluştur'a** basın.
 1. Simülasyon otomasyonunu ilgili ve akılda kalıcı bir adla adlandırın. *İleri'yi seçin*.
@@ -55,4 +55,4 @@ Saldırı simülasyonu eğitimi, kimlik avı riskinizi değerlendirmek ve kullan
 
 ## <a name="learn-more"></a>Daha Fazla Bilgi Edinin
 
-[Saldırı simülasyonu eğitimi için simülasyon otomasyonları - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training-simulation-automations.md).
+Saldırı simülasyonu eğitimi [için simülasyon otomasyonları - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training-simulation-automations.md).

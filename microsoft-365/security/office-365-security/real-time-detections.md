@@ -15,14 +15,14 @@ ms.collection:
 description: Tehditleri verimli bir şekilde araştırmak ve yanıtlamak için Gezgin veya Gerçek zamanlı algılamaları kullanın.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 510064136db8ed374c27ac8039ef78214945e002
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 3c431b60abfe728cfb823ea45719d922ef0b1c93
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873842"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596797"
 ---
 # <a name="explorer-and-real-time-detections"></a>Gezgin ve Gerçek zamanlı algılamalar
 
@@ -39,13 +39,13 @@ Bu makalede:
 - [Gerekli lisanslar ve izinler](#required-licenses-and-permissions)
 
 > [!NOTE]
-> Bu, **Gezgin (Tehdit Gezgini olarak da bilinir)**, **e-posta güvenliği** ve **Gezgin ile Gerçek zamanlı algılama temelleri** (araçlar arasındaki farklar ve bunları çalıştırmak için gereken izinler gibi) hakkındaki **3 makalelik serinin** bir parçasıdır. Bu serideki diğer iki makale [Gezgin'de tehdit avcılığı ve Explorer](threat-hunting-in-threat-explorer.md) [ile E-posta güvenliğidir](email-security-in-microsoft-defender.md).
+> Bu, **Gezgin (Tehdit Gezgini olarak da bilinir)**, **e-posta güvenliği** ve **Gezgin ile Gerçek zamanlı algılama temelleri** (araçlar arasındaki farklar ve bunları çalıştırmak için gereken izinler gibi) hakkındaki **3 makalelik serinin** bir parçasıdır. Bu serideki diğer iki makale[, Explorer'da tehdit avcılığı ve Explorer](threat-hunting-in-threat-explorer.md) [ile güvenliği Email](email-security-in-microsoft-defender.md).
 
 Bu makalede, Explorer ile gerçek zamanlı algılama raporlaması arasındaki fark, Explorer ile güncelleştirilmiş deneyim ve eski ve yeni deneyimler arasında geçiş yapabileceğiniz gerçek zamanlı algılamalar ile gerekli lisanslar ve izinler açıklanmaktadır.
 
 [Kuruluşunuzda Office 365 için Microsoft Defender](defender-for-office-365.md) varsa ve [izinlere](#required-licenses-and-permissions) sahipseniz, tehditleri algılamak ve düzeltmek için **Gezgin'i** (**Tehdit Gezgini** olarak da bilinir) veya **Gerçek zamanlı algılamaları** kullanabilirsiniz.
 
-konumundaki Microsoft 365 Defender portalında<https://security.microsoft.com>**, E-posta & işbirliği'ne** gidin ve **Gezgin** _veya_ **Gerçek zamanlı algılamalar'ı** seçin. Doğrudan sayfaya gitmek için veya <https://security.microsoft.com/realtimereports>kullanın<https://security.microsoft.com/threatexplorer>.
+konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Email & işbirliğine** gidin ve **ardından Gezgin** _veya_ **Gerçek zamanlı algılamalar'ı** seçin. Doğrudan sayfaya gitmek için veya <https://security.microsoft.com/realtimereports>kullanın<https://security.microsoft.com/threatexplorer>.
 
 Bu araçlarla şunları yapabilirsiniz:
 
@@ -54,7 +54,7 @@ Bu araçlarla şunları yapabilirsiniz:
 - Explorer'daki bir görünümden otomatik araştırma ve yanıt işlemi başlatın.
 - Kötü amaçlı e-postaları ve daha fazlasını araştırın.
 
-Daha fazla bilgi için bkz. [Explorer ile e-posta güvenliği](email-security-in-microsoft-defender.md).
+Daha fazla bilgi için bkz. [Explorer ile güvenlik Email](email-security-in-microsoft-defender.md).
 
 ## <a name="differences-between-explorer-and-real-time-detections"></a>Gezgin ile Gerçek zamanlı algılamalar arasındaki farklar
 
@@ -129,7 +129,7 @@ Bu deneyimlerdeki yaygın bileşenler şunlardır:
 
     - IP, alıcı ve URL gibi tek tek varlık açılırları aynı bilgileri yansıtır, ancak tek bir sekme tabanlı görünümde sunulur ve gereksinime göre farklı bölümleri genişletme ve daraltma özelliği sunulur.  
 
-    - URL'ler gibi açılır listelerde **Tüm E-postaları Görüntüle'ye** veya **Tüm Tıklamaları Görüntüle'ye** tıklayarak bu URL'yi içeren e-postaların/tıklamaların tamamını görüntüleyebilir ve sonuç kümesini dışarı aktarabilirsiniz.  
+    - URL'ler gibi açılır listelerde **Tüm Email görüntüle'ye** veya **Tüm Tıklamaları Görüntüle'ye** tıklayarak bu URL'yi içeren e-postaların/tıklamaların tamamını görüntüleyebilir ve sonuç kümesini dışarı aktarabilirsiniz.  
 
 - Eylem
 
@@ -144,7 +144,7 @@ Bu deneyimlerdeki yaygın bileşenler şunlardır:
     > [!div class="mx-imgBorder"]
     > ![Grafik verilerini dışarı aktarma](../../media/explorer-new-experience-export-chart-data.png)
 
-Bu özelliklere ek olarak *, Üst URL'ler*, *En çok tıklamalar*, *En çok hedeflenen kullanıcılar* ve *E-posta kaynağı* gibi güncelleştirilmiş deneyimler de elde edersiniz. *En çok kullanılan URL'ler*, *En çok tıklanan tıklamalar* ve *En çok hedeflenen kullanıcılar* , Gezgin'de uyguladığınız filtreye göre daha fazla filtrelenebilir. 
+Bu özelliklere ek olarak *, Üst URL'ler*, *En çok tıklamalar*, *En çok hedeflenen kullanıcılar* ve *Email kaynağı* gibi güncelleştirilmiş deneyimler de elde edersiniz. *En çok kullanılan URL'ler*, *En çok tıklanan tıklamalar* ve *En çok hedeflenen kullanıcılar* , Gezgin'de uyguladığınız filtreye göre daha fazla filtrelenebilir. 
 
 ## <a name="required-licenses-and-permissions"></a>Gerekli lisanslar ve izinler
 
@@ -176,6 +176,6 @@ Roller ve izinler hakkında daha fazla bilgi edinmek için aşağıdaki makalele
 
 - [Tehdit Gezgini, e-posta varlığı sayfasında e-posta ayrıntılarını toplar](mdo-email-entity-page.md)
 - [Teslim edilen kötü amaçlı e-postayı bulma ve araştırma](investigate-malicious-email-that-was-delivered.md)
-- [SharePoint Online, OneDrive ve Microsoft Teams'da algılanan kötü amaçlı dosyaları görüntüleme](mdo-for-spo-odb-and-teams.md)
+- [SharePoint Online, OneDrive ve Microsoft Teams'de algılanan kötü amaçlı dosyaları görüntüleme](mdo-for-spo-odb-and-teams.md)
 - [Tehdit koruması durum raporu](view-email-security-reports.md#threat-protection-status-report)
 - [Microsoft Tehdit Koruması'nda otomatik araştırma ve yanıt](automated-investigation-response-office.md)

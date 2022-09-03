@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
-description: Yönetici, Exchange Online Protection (EOP) içinde posta akışını ve yönlendirmeyi yapılandırma seçenekleri hakkında bilgi edinebilir.
-ms.technology: mdo
-ms.prod: m365-security
+description: Yönetici Exchange Online Protection(EOP) içinde posta akışını ve yönlendirmeyi yapılandırma seçenekleri hakkında bilgi edinebilir.
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e0267af0297dce41657c76e97964e5c02fbe5815
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 15a0bf969a1b1c8254845be3c4c06eb556366bf1
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648755"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597878"
 ---
 # <a name="mail-flow-in-eop"></a>EOP'de posta akışı
 
@@ -32,7 +32,7 @@ ms.locfileid: "65648755"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online posta kutusu olan Microsoft 365 kuruluşlarda veya Exchange Online posta kutusu olmayan tek başına Exchange Online Protection (EOP) kuruluşlarında, kuruluşunuza gönderilen tüm iletiler kullanıcılar görmeden önce EOP'yi geçer. kullanıcı posta kutularına yönlendirilmeden önce EOP'nin içinden geçen iletileri işleme için yönlendirme hakkında seçenekleriniz vardır.
+Exchange Online posta kutusu olan Microsoft 365 kuruluşlarında veya Exchange Online posta kutusu olmayan tek başına Exchange Online Protection (EOP) kuruluşlarında, kuruluşunuza gönderilen tüm iletiler kullanıcılar görmeden önce EOP'ye geçer. kullanıcı posta kutularına yönlendirilmeden önce EOP'nin içinden geçen iletileri işleme için yönlendirme hakkında seçenekleriniz vardır.
 
 ## <a name="working-with-messages-and-message-access-options"></a>İletiler ve ileti erişim seçenekleriyle çalışma
 
@@ -48,7 +48,7 @@ Kuruluşunuza alt etki alanları eklerseniz, EOP hizmetiniz bunları yönetmeniz
 
 [Bağlayıcılar için Gelişmiş Filtreleme](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) , postanız EOP'ye gitmeden önce bir hizmete veya cihaza yönlendirilmişse bağlayıcıların nasıl yapılandırıldığını açıklar.
 
-EOP'nin şirket içi Exchange posta kutularını koruduğu karma ortamlarda, şirket içi Exchange posta akışı kurallarını (aktarım kuralları olarak da bilinir) yapılandırmanız gerekir. Bu posta akışı kuralları, posta kutusunda gereksiz e-posta kuralının iletiyi Gereksiz E-posta klasörüne taşıyabilmesi için EOP istenmeyen posta filtreleme kararını çevirir. Ayrıntılar için bkz. [Karma ortamlarda Gereksiz E-posta klasörüne istenmeyen posta göndermek için EOP'yi yapılandırma](/exchange/standalone-eop/configure-eop-spam-protection-hybrid). İletileri her kullanıcının Gereksiz E-posta klasörüne taşımak istemiyorsanız, istenmeyen posta önleme ilkelerinizi (içerik filtresi ilkeleri olarak da bilinir) düzenleyerek başka bir eylem seçebilirsiniz. Daha fazla bilgi için bkz. [İstenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md).
+EOP'nin şirket içi Exchange posta kutularını koruduğu karma ortamlarda, şirket içi Exchange'de posta akışı kurallarını (aktarım kuralları olarak da bilinir) yapılandırmanız gerekir. Bu posta akışı kuralları, posta kutusunda gereksiz e-posta kuralının iletiyi Gereksiz Email klasörüne taşıyabilmesi için EOP istenmeyen posta filtreleme kararını çevirir. Ayrıntılar için bkz. [Karma ortamlarda gereksiz Email klasörüne istenmeyen posta göndermek için EOP'yi yapılandırma](/exchange/standalone-eop/configure-eop-spam-protection-hybrid). İletileri her kullanıcının Gereksiz Email klasörüne taşımak istemiyorsanız, istenmeyen posta önleme ilkelerinizi (içerik filtresi ilkeleri olarak da bilinir) düzenleyerek başka bir eylem seçebilirsiniz. Daha fazla bilgi için bkz. [İstenmeyen posta önleme ilkelerini yapılandırma](configure-your-spam-filter-policies.md).
 
 ## <a name="verify-mail-flow"></a>Posta akışını doğrulama
 

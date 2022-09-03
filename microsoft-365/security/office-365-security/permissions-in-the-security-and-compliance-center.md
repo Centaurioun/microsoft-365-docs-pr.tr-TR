@@ -18,14 +18,14 @@ search.appverid:
 description: Yöneticiler, Microsoft 365'teki Güvenlik & Uyumluluk Merkezi'nde bulunan izinler hakkında bilgi edinebilir.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 0b9b5fda44f3c85a20bc29e8eb4a36edbeba72ec
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: fb0d5496acddebb591d368d78f35f1be567773a9
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756803"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595993"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Güvenlik ve Uyumluluk Merkezi’ndeki İzinler
 

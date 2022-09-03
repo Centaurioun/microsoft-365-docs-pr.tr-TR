@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, Exchange Online Protection(EOP) içindeki tüm kullanıcılar için karantinaya alınan iletileri görüntülemeyi ve yönetmeyi öğrenebilir. Office 365 için Microsoft Defender sahip kuruluşlardaki yöneticiler, SharePoint Online, OneDrive İş ve Microsoft Teams'de karantinaya alınan dosyaları da yönetebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 392b6d2b8a64908c66a7c84302f893d8f61a4680
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: c9603827fbd58472dde025cb2bae294e29128f74
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67343853"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596477"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Karantinaya alınan iletileri ve dosyaları EOP'de yönetici olarak yönetme
 

@@ -12,14 +12,14 @@ ms.localizationpriority: medium
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Yöneticiler, Güvenlik & Uyumluluk Merkezi'ndeki Posta akışı panosunda bulunan içgörüler ve raporlar hakkında bilgi edinebilir.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 5850612fbd0de89e5eafe101f55d368b0f4b0c8f
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 49b6a6e326225f3d0715a4eaf722014b78541958
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648733"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595529"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Güvenlik ve Uyumluluk Merkezi'ndeki posta akışı içgörüleri
 
@@ -37,11 +37,11 @@ Yöneticiler eğilimleri, içgörüleri keşfetmek ve kuruluşlarındaki posta a
 Kullanılabilir içgörüler şunlardır:
 
 - [Otomatik iletilen iletiler içgörüsü](mfi-auto-forwarded-messages-report.md)
-- [Olası posta döngüsü içgörülerini düzeltme1](mfi-mail-loop-insight.md)<sup></sup>
-- [Yavaş posta akışı kuralları içgörülerini düzeltme1](mfi-slow-mail-flow-rules-insight.md)<sup></sup>
+- [Olası posta döngüsü içgörülerini düzeltme](mfi-mail-loop-insight.md)<sup>1</sup>
+- [Yavaş posta akışı kurallarını düzeltme içgörü](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 - [Posta akışı haritası](mfi-mail-flow-map-report.md)
-- [İletilen yeni etki alanları e-posta içgörüleri2](mfi-new-domains-being-forwarded-email.md)<sup></sup>
-- [E-posta içgörülerini ileten yeni kullanıcılar2](mfi-new-users-forwarding-email.md)<sup></sup>
+- [İletilen yeni etki alanları e-posta içgörüleri](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
+- [E-posta iletmeye yönelik yeni kullanıcılar içgörüleri](mfi-new-users-forwarding-email.md)<sup>2</sup>
 - [Kabul edilmeyen etki alanı raporu](mfi-non-accepted-domain-report.md)
 - [Teslim edilemedi raporu](mfi-non-delivery-report.md)
 - [Giden ve gelen posta akışı içgörüsü](mfi-outbound-and-inbound-mail-flow.md)
@@ -59,9 +59,9 @@ Posta akışı panosu aşağıdaki rol gruplarının üyeleri tarafından kullan
 
 - Güvenlik & Uyumluluk Merkezi'nde **Kuruluş Yönetimi** (genel yöneticiler).
 
-- **[Azure Active Directory'da yönetici](/azure/active-directory/roles/permissions-reference#exchange-administrator)** Exchange.
+- Azure Active Directory'de **[Exchange Yöneticisi](/azure/active-directory/roles/permissions-reference#exchange-administrator)**.
 
-- Güvenlik & Uyumluluk Merkezi'nde **MailFlow Yöneticisi**. Hesap aynı zamanda Kuruluş Yönetimi'nin veya Exchange Yönetici rol gruplarının üyesi değilse aşağıdaki sorunları göz önünde bulundurun:
+- Güvenlik & Uyumluluk Merkezi'nde **MailFlow Yöneticisi**. Hesap aynı zamanda Kuruluş Yönetimi veya Exchange Yöneticisi rol gruplarının üyesi değilse aşağıdaki sorunları göz önünde bulundurun:
   - Kullanıcının doğrudan adresinde Güvenlik & Uyumluluk Merkezi'nde oturum açması <https://protection.office.com>gerekir.
   - Kullanıcının Posta akışı panosu üzerinde yalnızca salt okunur izni olur.
   - Kullanıcının Microsoft 365 yönetim merkezi erişimi olmaz.

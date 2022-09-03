@@ -7,17 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Whiteboard erişimini etkinleştirmeyi, devre dışı bırakmayı ve yönetmeyi öğrenin.
-ms.openlocfilehash: 934036417e0879cdec9c21bacefd51b9753336b4
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: fd41a4280d6f4b9fd243ee82551496281de9be18
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67367697"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596302"
 ---
 # <a name="manage-data-for-microsoft-whiteboard-in-gcc-high-environments"></a>GCC High ortamlarında Microsoft Whiteboard için verileri yönetme
 

@@ -1,7 +1,7 @@
 ---
 title: Konuk ve dış kullanıcı B2B erişimine izin vermek için kimlik ve cihaz erişim ilkeleri - Kurumsal | için Microsoft 365 Microsoft Docs
 description: Önerilen Koşullu Erişim'i ve konukların ve dış kullanıcıların erişimini korumaya yönelik ilgili ilkeleri açıklar.
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 ms.author: dansimp
 author: dansimp
@@ -20,13 +20,13 @@ ms.collection:
 - m365solution-scenario
 - zerotrust-solution
 - highpri
-ms.technology: mdo
-ms.openlocfilehash: 872d5e5fc7774a32619e637bdb6dceb6e07b324e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.openlocfilehash: d4f047272d11d8c4cd5d40a578bd508403d1b527
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67466909"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596863"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Konuk erişimine ve B2B dış kullanıcı erişimine izin verme ilkeleri
 

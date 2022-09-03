@@ -13,18 +13,18 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, kuruluşunuzdaki gönderenlerden gelen teslim dışı raporlarda (NDR'ler veya geri dönen iletiler olarak da bilinir) en sık karşılaşılan hata kodlarını izlemek için Güvenlik & Uyumluluk Merkezi'ndeki Posta akışı panosundaki Teslim edilmedi ayrıntıları raporunu kullanmayı öğrenebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 663e145bcf9d6dc95f0f71b3b0b50a78419ed989
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: a9b7b12ece4f860051e2c6f2b7800370a64062c7
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973519"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597448"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'nde teslim edilmedi raporu
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

@@ -12,18 +12,18 @@ ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Yöneticiler, Güvenlik & Uyumluluk Merkezi'ndeki Posta akışı panosunda Giden ve gelen posta akışı içgörüleri hakkında bilgi edinebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: f856e2b9a4829531966802f2594f26c19e6ab7e5
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: f9e6cc058ff479ea13253f0e6b4ecd7c28281eda
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131206"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597426"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'nde giden ve gelen posta akışı içgörüleri
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -36,11 +36,11 @@ Pencere öğesi, kuruluşunuza ve kuruluşunuzdan iletiler teslim edildiğinde b
 
 :::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png" alt-text="Güvenlik & Uyumluluk Merkezi'ndeki Posta akışı panosundaki Giden ve gelen posta akışı pencere öğesi" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png":::
 
-Pencere öğesindeki bilgiler, Microsoft 365'deki bağlayıcılar ve TLS ileti korumasıyla ilgilidir. Daha fazla bilgi için şu konulara bakın:
+Pencere öğesindeki bilgiler, Microsoft 365'teki bağlayıcılar ve TLS ileti koruması ile ilgilidir. Daha fazla bilgi için şu konulara bakın:
 
 - [Bağlayıcıları kullanarak posta akışını yapılandırma](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 - [Exchange Online, e-posta bağlantılarının güvenliğini sağlamak için TLS'yi nasıl kullanır?](../../compliance/exchange-online-uses-tls-to-secure-email-connections.md)
-- [Microsoft 365'de şifreleme hakkında teknik başvuru ayrıntıları](../../compliance/technical-reference-details-about-encryption.md)
+- [Microsoft 365'te şifreleme hakkında teknik başvuru ayrıntıları](../../compliance/technical-reference-details-about-encryption.md)
 
 ## <a name="message-protected-in-transit-by-tls"></a>İleti aktarımda korunuyor (TLS tarafından)
 
@@ -59,7 +59,7 @@ Kullanılan TLS şifrelemesini geliştirmek için kendi e-posta sunucularınız�
 - **Gelen İş Ortağı bağlayıcısı önemli TLS1.0 posta akışı görüyor**
 - **Gelen OnPremises bağlayıcısı önemli TLS1.0 posta akışı görüyor**
 
-TLS 1.0 bağlantılarında, TLS 1.0 desteği sonunda Microsoft 365 kullanım dışı bırakıldığında herhangi bir sorun yaşanmaması için e-posta sunucunuzu veya iş ortağınızın sunucusunu yükseltmeniz veya düzeltmeniz gerekir.
+TLS 1.0 bağlantıları için, TLS 1.0 desteği sonunda Microsoft 365'te kullanım dışı bırakıldığında herhangi bir sorun yaşanmaması için e-posta sunucunuzu veya iş ortağınızın sunucusunu yükseltmeniz veya düzeltmeniz gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

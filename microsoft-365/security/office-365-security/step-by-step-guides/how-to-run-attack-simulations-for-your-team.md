@@ -3,7 +3,7 @@ title: Ekibiniz için saldırı simülasyonları nasıl çalıştırılır?
 description: Eğitim için ekibiniz veya kuruluşunuz için hedef kullanıcılarınıza Saldırı Benzetimi yükü gönderme adımları. Sanal saldırılar, kuruluşunuzu gerçek bir saldırı etkilemeden önce savunmasız kullanıcıları, ilkeleri ve uygulamaları belirlemenize ve bulmanıza yardımcı olabilir.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,17 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: d3ce22386d0ebde6dbc3035056b683894cdd6131
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.subservice: mdo
+ms.openlocfilehash: f9955b8c72323a6a924c516ba54ec89a5acead84
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107381"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67593957"
 ---
 # <a name="how-to-run-attack-simulations-for-your-team"></a>Ekibiniz için saldırı simülasyonları nasıl çalıştırılır?
 
-Saldırı simülasyonu eğitimi, kuruluşunuzda gerçekçi ama zararsız siber saldırı senaryoları çalıştırmanızı sağlar. Sanal saldırılar, kuruluşunuzu gerçek bir saldırı etkilemeden önce savunmasız kullanıcıları, ilkeleri ve uygulamaları belirlemenize ve bulmanıza yardımcı olabilir, riski azaltmak ve son kullanıcıları tehditler hakkında daha iyi eğitmek için oluşturulmuş veya özel eğitimden yararlanabilir.
+Saldırı simülasyonu eğitimi, kuruluşunuzda gerçekçi ama zararsız siber saldırı senaryoları çalıştırmanıza olanak tanır. Sanal saldırılar, kuruluşunuzu gerçek bir saldırı etkilemeden önce savunmasız kullanıcıları, ilkeleri ve uygulamaları belirlemenize ve bulmanıza yardımcı olabilir, riski azaltmak ve son kullanıcıları tehditler hakkında daha iyi eğitmek için oluşturulmuş veya özel eğitimden yararlanabilir.
 
 ## <a name="what-youll-need"></a>İhtiyacınız olan şey
 

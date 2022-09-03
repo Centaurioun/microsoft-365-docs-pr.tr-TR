@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Özel etki alanınızdan gönderilen iletilerin hedef e-posta sistemleri tarafından güvenilir olduğundan emin olmak için DomainKeys Identified Mail'i (DKIM) Microsoft 365 ile kullanmayı öğrenin.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: ce6550b442f4a863c87bfa5272e8d5b707b7f096
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: e35e11ba0e46ea85566bb311f8e7fcd69642b2a2
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281723"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597724"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Özel etki alanınıza gönderilen giden e-postayı doğrulamak için DKIM'yi kullanma
 

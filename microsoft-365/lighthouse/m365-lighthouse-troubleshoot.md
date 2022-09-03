@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: crimora
 audience: Admin
 ms.topic: troubleshooting
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için hata iletilerini ve sorunlarını giderme konusunda yardım alın.
-ms.openlocfilehash: a93e6816effdc68253c4ec465fa79213258d7581
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: f92914ae4257ec7c94192dac0036642cc023479c
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057839"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595705"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse hata iletilerini ve sorunlarını giderme
 
@@ -38,7 +38,7 @@ Bu makalede, Microsoft 365 Lighthouse kullanırken karşılaşabileceğiniz hata
 
 ### <a name="message-when-trying-to-access-lighthouse-you-must-be-an-indirect-reseller-or-direct-bill-partner-to-use-this-service"></a>Lighthouse'a erişmeye çalışırken ileti: "Bu hizmeti kullanmak için dolaylı bayi veya doğrudan fatura iş ortağı olmanız gerekir"
 
-**Neden:** Lighthouse'a erişmeye çalıştınız ve Bir Microsoft iş ortağı değilsiniz. Lighthouse kullanmak için Bulut Çözümü Sağlayıcısı (CSP) programına dolaylı bayi veya doğrudan fatura iş ortağı olarak kaydolmanız gerekir.
+**Neden:** Lighthouse'a erişmeye çalıştınız ve Bir Microsoft iş ortağı değilsiniz. Lighthouse'un kullanılabilmesi için Bulut Çözümü Sağlayıcısı (CSP) programına dolaylı bayi veya doğrudan fatura iş ortağı olarak kaydolmanız gerekir.
 
 **Çözünürlük:** Niteliklerin ve gereksinimlerin tam listesi için bkz [. Microsoft 365 Lighthouse gereksinimleri](m365-lighthouse-requirements.md). Lighthouse'a erişmeye uygunsanız ve bu iletiyi hatayla aldığınıza inanıyorsanız Desteğe başvurun. Daha fazla bilgi için bkz. [Microsoft 365 Lighthouse için yardım ve destek alma](m365-lighthouse-get-help-and-support.md).
 
@@ -60,7 +60,7 @@ Bu makalede, Microsoft 365 Lighthouse kullanırken karşılaşabileceğiniz hata
 
 **Çözünürlük:** Aşağıdaki tabloda eylem gerektiren farklı kiracı durumları ve bunların nasıl çözümlendiği açıklanmaktadır.
 
-Müşterileri Lighthouse'a eklemek için Ayrıntılı Yönetici Ayrıcalıkları (GDAP) ve dolaylı bayi ilişkisi ya da Temsilci Yönetici Ayrıcalıkları (DAP) ilişkisi gerekir. MÜŞTERI kiracısında DAP ve GDAP birlikte varsa, GDAP özellikli güvenlik gruplarındaki MSP teknisyenleri için GDAP izinleri önceliklidir. Yakında yalnızca GDAP ilişkilerine (dolaylı kurumsal bayi ilişkileri olmadan) sahip müşteriler Lighthouse'a eklenecek.<br><br>
+Müşterileri Lighthouse'a eklemek için Ayrıntılı Temsilcili Yönetici Ayrıcalıkları (GDAP) ve dolaylı bayi ilişkisi ya da Temsilci Yönetici Ayrıcalıkları (DAP) ilişkisi gerekir. MÜŞTERI kiracısında DAP ve GDAP birlikte varsa, GDAP özellikli güvenlik gruplarındaki MSP teknisyenleri için GDAP izinleri önceliklidir. Yakında yalnızca GDAP ilişkilerine (dolaylı kurumsal bayi ilişkileri olmadan) sahip müşteriler Lighthouse'a eklenecek.<br><br>
 
 | Durum | Açıklama | Çözüm |
 |--|--|--|
@@ -81,7 +81,7 @@ Müşteri kiracınızın ekleme ölçütlerini karşıladığını ve hala Light
 
 **Çözünürlük:** İş ortağı kiracınızdan uygun izinlere sahip bir yöneticinin sizi Azure AD'de doğru GDAP güvenlik grubuna atadığından ve size İş Ortağı Merkezi'nde doğru rolü atadığından emin olun. Ayrıca Lighthouse'daki bazı eylemlerin Genel yönetici olmanız gerektiğini unutmayın. GDAP rolleri ve her rolün yapabilecekleri hakkında daha fazla bilgi edinmek için bkz. [Microsoft 365 Lighthouse'de izinlere genel bakış](m365-lighthouse-overview-of-permissions.md). Tüm Azure AD yerleşik rollerin ve GDAP izinlerinin ayrıntılı açıklaması için bkz. [yerleşik roller Azure AD](/azure/active-directory/roles/permissions-reference).
 
-DAP ilişkileri olan müşteriler için, iş ortağı yöneticisinin sizi İş Ortağı Merkezi'ndeki Yönetici aracısı veya Yardım masası aracısı rolüne ataması gerekir. Tüm İş Ortağı Merkezi rollerinin ve izinlerinin ayrıntılı açıklaması için bkz. [Kullanıcılara rol ve izin atama](/partner-center/permissions-overview).
+DAP ilişkileri olan müşteriler için iş ortağı yöneticisinin sizi İş Ortağı Merkezi'ndeki Yönetici aracısı veya Yardım masası aracısı rolüne ataması gerekir. Tüm İş Ortağı Merkezi rollerinin ve izinlerinin ayrıntılı açıklaması için bkz. [Kullanıcılara rol ve izin atama](/partner-center/permissions-overview).
 
 ### <a name="i-dont-see-complete-data-in-certain-areas-of-lighthouse-or-i-cant-perform-certain-tasks-or-i-cant-access-certain-tenants"></a>Lighthouse'un belirli alanlarında tam veri görmüyorum veya belirli görevleri gerçekleştiremiyorum veya belirli kiracılara erişemiyorum
 

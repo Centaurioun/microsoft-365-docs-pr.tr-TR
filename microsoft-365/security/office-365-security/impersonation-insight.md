@@ -18,14 +18,14 @@ ms.collection:
 description: Yöneticiler kimliğe bürünme içgörülerinin nasıl çalıştığını öğrenebilir. E-posta kimlik doğrulama denetimlerini (SPF, DKIM veya DMARC) geçirmeyen etki alanlarından kuruluşlarına hangi gönderenlerin yasal olarak e-posta gönderdiğini hızla belirleyebilir.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: c54bdbb4ee8c3bf068b40df8cd5ca0a58da2392f
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 34cb0cfe920751c40685d2df51b7f61f5ba02dbb
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787770"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596841"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Office 365 için Defender'de kimliğe bürünme içgörüleri
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 için Microsoft Defender'de Tehdit Gezgini ile e-posta güvenliği
+title: Office 365 için Microsoft Defender'de Tehdit Gezgini ile güvenliği Email
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -15,16 +15,16 @@ ms.collection:
 description: Kötü amaçlı yazılım kimlik avı girişimlerini görüntüleyin ve araştırın.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 637e387ca457c9795892791a1a6d9326107fc6fb
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: cd3d2ca5dee7d3857bb889ded9dc83e6279f2e51
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648205"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596037"
 ---
-# <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de Tehdit Gezgini ile e-posta güvenliği
+# <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de Tehdit Gezgini ile güvenliği Email
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -45,15 +45,15 @@ Bu makalede, Microsoft 365 güvenlik özellikleri tarafından e-postada algılan
 
 ## <a name="view-malware-detected-in-email"></a>E-postada algılanan kötü amaçlı yazılımları görüntüleme
 
-E-postada kötü amaçlı yazılımların Microsoft 365 teknolojisine göre sıralanmış olduğunu görmek için Explorer'ın [**E-posta \> Kötü Amaçlı Yazılım**](threat-explorer-views.md#email--malware) görünümünü (veya Gerçek zamanlı algılamaları) kullanın. Kötü amaçlı yazılım varsayılan görünümdür, bu nedenle Gezgin'i açar açmaz seçilebilir.
+Microsoft 365 teknolojisine göre sıralanmış e-postada kötü amaçlı yazılım algılanması için Explorer'ın [**Email \> Kötü Amaçlı Yazılım**](threat-explorer-views.md#email--malware) görünümünü (veya Gerçek zamanlı algılamaları) kullanın. Kötü amaçlı yazılım varsayılan görünümdür, bu nedenle Gezgin'i açar açmaz seçilebilir.
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**E-posta & işbirliği'ne** gidin ve **Ardından Gezgin** veya **Gerçek zamanlı algılamalar'ı** seçin. Doğrudan sayfaya gitmek için veya <https://security.microsoft.com/realtimereports>kullanın<https://security.microsoft.com/threatexplorer>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Email & işbirliğine** gidin ve **ardından Gezgin** veya **Gerçek zamanlı algılamalar'ı** seçin. Doğrudan sayfaya gitmek için veya <https://security.microsoft.com/realtimereports>kullanın<https://security.microsoft.com/threatexplorer>.
 
    Bu örnekte **Gezgin** kullanılır.
 
    Buradan Görünüm'den başlayın, araştırmak için belirli bir zaman dilimi seçin (gerekirse) ve [Gezgin kılavuzuna](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through) göre filtrelerinizi odaklayın.
 
-2. **Görünüm** açılan listesinde **E-posta** \> **Kötü Amaçlı Yazılım'ın** seçili olduğunu doğrulayın.
+2. **Görünüm** açılan listesinde **Email Kötü Amaçlı Yazılım'ın** **seçili olduğunu** \> doğrulayın.
 
 3. **Gönderen'e** tıklayın ve açılan listede **Temel** \> **Algılama teknolojisi'ni** seçin.
 
@@ -71,9 +71,9 @@ E-postada kötü amaçlı yazılımların Microsoft 365 teknolojisine göre sır
 
 Bir iletiyi hatalı pozitif olarak bildirmek için Gezgin'de **Temiz** raporla seçeneğini kullanabilirsiniz. 
 
-1. Microsoft 365 Defender portalında **E-posta & işbirliği** \> **Gezgini'ne** gidin ve **Görünüm** açılan listesinde **Kimlik Avı'nın** seçili olduğunu doğrulayın.
+1. Microsoft 365 Defender portalında **Email & işbirliği** \> **Gezgini'ne** gidin ve **Görünüm** açılan listesinde **Kimlik Avı'nın** seçili olduğunu doğrulayın.
 
-2. **E-posta** sekmesinde olduğunuzu doğrulayın ve bildirilen iletiler listesinden temiz olarak bildirmek istediğiniz iletileri seçin. 
+2. **Email** sekmesinde olduğunuzu doğrulayın ve bildirilen iletiler listesinden temiz olarak bildirmek istediğiniz iletileri seçin. 
 
 3. Seçenekler listesini genişletmek için **Eylemler'e** tıklayın.
 
@@ -86,13 +86,13 @@ Bir iletiyi hatalı pozitif olarak bildirmek için Gezgin'de **Temiz** raporla s
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Kimlik avı URL'sini görüntüleyin ve karar verilerine tıklayın
 
-İzin verilen, engellenen ve geçersiz kılınan URL'lerin listesi de dahil olmak üzere, e-postadaki URL'ler aracılığıyla kimlik avı girişimlerini görüntüleyebilirsiniz. Tıklanan URL'leri tanımlamak için [Kasa Bağlantıların](safe-links.md) yapılandırılması gerekir. [Kasa Bağlantıları ilkelerini](set-up-safe-links-policies.md) tıklama zamanı koruması ve Kasa Bağlantıları ile tıklama kararlarının günlüğe kaydedilmesi için ayarladığınızdan emin olun.
+İzin verilen, engellenen ve geçersiz kılınan URL'lerin listesi de dahil olmak üzere, e-postadaki URL'ler aracılığıyla kimlik avı girişimlerini görüntüleyebilirsiniz. Tıklanan URL'leri tanımlamak için [Güvenli Bağlantılar](safe-links.md) yapılandırılmalıdır. Güvenli Bağlantılar tarafından tıklama zamanı koruması ve tıklama kararlarının günlüğe kaydedilmesi için [Güvenli Bağlantılar ilkelerini](set-up-safe-links-policies.md) ayarladığınızdan emin olun.
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**E-posta & işbirliği'ne** gidin ve **Ardından Gezgin** veya **Gerçek zamanlı algılamalar'ı** seçin. Doğrudan sayfaya gitmek için veya <https://security.microsoft.com/realtimereports>kullanın<https://security.microsoft.com/threatexplorer>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Email & işbirliğine** gidin ve **ardından Gezgin** veya **Gerçek zamanlı algılamalar'ı** seçin. Doğrudan sayfaya gitmek için veya <https://security.microsoft.com/realtimereports>kullanın<https://security.microsoft.com/threatexplorer>.
 
    Bu örnekte **Gezgin** kullanılır.
 
-2. **Görünüm** açılan listesinde **E-posta** \> **Kimlik Avı'nı** seçin.
+2. **Görünüm** açılan listesinde **Kimlik Avı'nı Email** \> seçin.
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/ExplorerViewEmailPhishMenu.png" alt-text="Kimlik avı bağlamında Gezgin için Görünüm menüsü" lightbox="../../media/ExplorerViewEmailPhishMenu.png":::
@@ -107,7 +107,7 @@ Bir iletiyi hatalı pozitif olarak bildirmek için Gezgin'de **Temiz** raporla s
 
    - **En çok kullanılan URL'ler** , filtrelediğiniz iletilerdeki URL'ler ve her URL için e-posta teslim eylemi sayısıdır. Kimlik avı e-posta görünümünde bu liste genellikle geçerli URL'ler içerir. Saldırganlar, teslim etmeye çalışmak için iletilerine iyi ve kötü URL'lerin bir karışımını ekler, ancak kötü amaçlı bağlantıların daha ilginç görünmesini sağlar. URL tablosu toplam e-posta sayısına göre sıralanır, ancak görünümü basitleştirmek için bu sütun gizlenir.
 
-   - **En üstteki tıklamalar**, tıklanan ve toplam tıklama sayımına göre sıralanmış Kasa Bağlantılar sarmalanmış URL'leridir. Görünümü basitleştirmek için bu sütun da görüntülenmez. Sütuna göre toplam sayımlar, tıklanan her URL için Kasa Bağlantıları tıklama kararı sayısını gösterir. Kimlik avı e-posta görünümünde bunlar genellikle şüpheli veya kötü amaçlı URL'lerdir. Ancak görünümde tehdit olmayan ancak kimlik avı iletilerinde bulunan URL'ler yer alabilir. Açılmamış bağlantılarda URL tıklamaları burada gösterilmez.
+   - **En çok tıklananlar** , tıklanan Güvenli Bağlantılar sarmalanmış URL'leridir ve toplam tıklama sayımına göre sıralanır. Görünümü basitleştirmek için bu sütun da görüntülenmez. Sütuna göre toplam sayı, tıklanan her URL için Güvenli Bağlantılar tıklama kararı sayısını gösterir. Kimlik avı e-posta görünümünde bunlar genellikle şüpheli veya kötü amaçlı URL'lerdir. Ancak görünümde tehdit olmayan ancak kimlik avı iletilerinde bulunan URL'ler yer alabilir. Açılmamış bağlantılarda URL tıklamaları burada gösterilmez.
 
    İki URL tablosu, teslim eylemine ve konuma göre kimlik avı e-posta iletilerindeki en iyi URL'leri gösterir. Tablolar, uyarıya rağmen engellenen veya ziyaret edilen URL tıklamalarını gösterir, böylece kullanıcılara hangi olası hatalı bağlantıların sunulduğunu ve kullanıcıların tıkladığını görebilirsiniz. Buradan daha fazla analiz gerçekleştirebilirsiniz. Örneğin, grafiğin altında, kuruluşunuzun ortamında engellenen e-posta iletilerinde en çok kullanılan URL'leri görebilirsiniz.
 
@@ -121,7 +121,7 @@ Bir iletiyi hatalı pozitif olarak bildirmek için Gezgin'de **Temiz** raporla s
 
 ### <a name="interpretation-of-click-verdicts"></a>Tıklama kararlarının yorumlanması
 
-E-posta veya URL açılır listelerinde, İlk Tıklamalar'da ve filtreleme deneyimlerimizde farklı tıklama kararı değerleri görürsünüz:
+Email veya URL açılır listelerinde, İlk Tıklamalar'da ve filtreleme deneyimlerimizde farklı tıklama kararı değerleri görürsünüz:
 
 - **Hiçbiri:** URL için karar alınamadı. Kullanıcı URL'ye tıklaymış olabilir.
 - **Izin verilen:** Kullanıcının URL'ye gitmesine izin verildi.
@@ -141,4 +141,4 @@ E-posta veya URL açılır listelerinde, İlk Tıklamalar'da ve filtreleme deney
 
 ## <a name="other-articles"></a>Diğer makaleler
 
-[E-posta Varlık Sayfası ile e-postaları araştırma](mdo-email-entity-page.md)
+[Email Varlık Sayfası ile e-postaları araştırma](mdo-email-entity-page.md)

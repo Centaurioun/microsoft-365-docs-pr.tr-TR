@@ -18,14 +18,14 @@ ms.collection:
 description: Tehditleri verimli bir şekilde araştırmak ve yanıtlamak için Microsoft 365 Defender portalında Gezgin ve Gerçek zamanlı algılamaları kullanın.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 0920439345b026879b86ad3b2ce104d3ea8174d1
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 7710b2eb156845ccc0e79550a76a9b61ac90327f
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649449"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597271"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Tehdit Gezgini ve Gerçek zamanlı algılamalar
 
@@ -47,7 +47,7 @@ Explorer veya Gerçek zamanlı algılamalar, güvenlik operasyonları ekibinizin
 
 Bu raporla şunları yapabilirsiniz:
 
-- [Microsoft 365 güvenlik özellikleri tarafından algılanan kötü amaçlı yazılımlara bakın](#see-malware-detected-in-email-by-technology)
+- [Bkz. Microsoft 365 güvenlik özellikleri tarafından algılanan kötü amaçlı yazılım](#see-malware-detected-in-email-by-technology)
 - [Kimlik avı URL'sini görüntüleyin ve karar verilerine tıklayın](#view-phishing-url-and-click-verdict-data)
 - [Gezgin'deki bir görünümden otomatik araştırma ve yanıt işlemi başlatma](#start-automated-investigation-and-response) (yalnızca Plan 2 Office 365 için Defender)
 - [Kötü amaçlı e-postaları ve daha fazlasını araştırma](#more-ways-to-use-explorer-and-real-time-detections)
@@ -69,23 +69,23 @@ Uyarı kimliği, tek bir uyarıyı görüntülerken URL'nin içinde kullanılabi
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>Gezgin (ve Gerçek zamanlı algılamalar) veri saklama ve deneme kiracıları için arama sınırını 7 günden 30 güne genişletme
 
-Bu değişikliğin bir parçası olarak, Hem Office için Defender P1 hem de P2 deneme kiracıları için Tehdit Gezgini'nde/Gerçek zamanlı algılamalarda e-posta verilerini 30 gün boyunca (önceki 7 güne göre bir artış) arayabilir ve filtreleyebilirsiniz.
+Bu değişikliğin bir parçası olarak, Hem Office P1 için Defender hem de P2 deneme kiracıları için Tehdit Gezgini'nde/Gerçek zamanlı algılamalarda e-posta verilerini 30 gün boyunca (önceki 7 güne göre bir artış) arayabilir ve filtreleyebilirsiniz.
 Bu, hem P1 hem de P2/E5 müşterileri için 30 günlük veri saklama ve arama özelliklerine sahip olan üretim kiracılarını etkilemez.
 
 ### <a name="updated-limits-for-export-of-records-for-threat-explorer"></a>Tehdit Gezgini için kayıtları dışarı aktarma sınırları güncelleştirildi
 
-Bu güncelleştirmenin bir parçası olarak, Tehdit Gezgini'nden dışarı aktarılabilir E-posta kayıtlarının satır sayısı 9990'dan 200.000 kayda artırılır. Şu anda dışarı aktarılabilir sütun kümesi aynı kalır, ancak satır sayısı geçerli sınırdan artacaktır.
+Bu güncelleştirme kapsamında, Tehdit Gezgini'nden dışarı aktarılabilir Email kayıtların satır sayısı 9990'dan 200.000 kayda artırılır. Şu anda dışarı aktarılabilir sütun kümesi aynı kalır, ancak satır sayısı geçerli sınırdan artacaktır.
 
 ### <a name="tags-in-threat-explorer"></a>Tehdit Gezgini'ndeki etiketler
 
 > [!NOTE]
-> Kullanıcı etiketleri özelliği *Önizleme* aşamasındadır, herkes tarafından kullanılamaz ve değiştirilebilir. Yayın zamanlaması hakkında bilgi için Microsoft 365 yol haritasına göz atın.
+> Kullanıcı etiketleri özelliği *Önizleme* aşamasındadır, herkes tarafından kullanılamaz ve değiştirilebilir. Sürüm zamanlaması hakkında bilgi için Microsoft 365 yol haritasına bakın.
 
 Kullanıcı etiketleri, Office 365 için Microsoft Defender'daki belirli kullanıcı gruplarını tanımlar. Lisanslama ve yapılandırma dahil olmak üzere etiketler hakkında daha fazla bilgi için bkz. [Kullanıcı etiketleri](user-tags.md).
 
 Tehdit Gezgini'nde aşağıdaki deneyimlerde kullanıcı etiketleri hakkındaki bilgileri görebilirsiniz.
 
-#### <a name="email-grid-view"></a>E-posta kılavuzu görünümü
+#### <a name="email-grid-view"></a>kılavuz görünümünü Email
 
 E-posta kılavuzundaki **Etiketler** sütunu, gönderen veya alıcı posta kutularına uygulanmış olan tüm etiketleri içerir. Varsayılan olarak, önce öncelik hesapları gibi sistem etiketleri gösterilir.
 
@@ -101,15 +101,15 @@ Etiketleri filtre olarak kullanabilirsiniz. Öncelikli hesaplarda veya belirli k
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/tags-filter-not.png" alt-text="Filtrelenmemiş etiketler" lightbox="../../media/tags-filter-not.png":::
 
-#### <a name="email-detail-flyout"></a>E-posta ayrıntıları açılır öğesi
+#### <a name="email-detail-flyout"></a>Email ayrıntı açılır öğesi
 
 Gönderenin ve alıcının etiketlerini tek tek görüntülemek için konuyu seçerek ileti ayrıntıları açılır öğesini açın. **Özet** sekmesinde, e-posta için varsa gönderen ve alıcı etiketleri ayrı olarak gösterilir.
 Gönderen ve alıcıya yönelik tek tek etiketlerle ilgili bilgiler, bu ayrıntıları iki ayrı sütunda görebileceğiniz dışarı aktarılan CSV verilerine de genişletilir.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/tags-flyout.png" alt-text="E-posta Ayrıntıları etiketleri" lightbox="../../media/tags-flyout.png":::
+> :::image type="content" source="../../media/tags-flyout.png" alt-text="Email Ayrıntıları etiketleri" lightbox="../../media/tags-flyout.png":::
 
-Etiket bilgileri, URL tıklamaları açılır öğesinde de gösterilir. Bunu görüntülemek için Kimlik Avı veya Tüm E-posta görünümüne ve ardından **URL'ler** veya **URL Tıklamaları** sekmesine gidin. Tek bir URL açılır öğesini seçerek ilgili URL'ye yönelik tıklamalar hakkında, bu tıklamayla ilişkili etiketler de dahil olmak üzere ek ayrıntıları görüntüleyin.
+Etiket bilgileri, URL tıklamaları açılır öğesinde de gösterilir. Bunu görüntülemek için Kimlik Avı veya Tüm Email görünümüne gidin ve ardından **URL'ler** veya **URL Tıklamaları** sekmesine gidin. Bu tıklamayla ilişkilendirilmiş etiketler de dahil olmak üzere ilgili URL'ye yönelik tıklamalarla ilgili ek ayrıntıları görüntülemek için tek bir URL açılır öğesi seçin.
 
 ### <a name="updated-timeline-view"></a>Güncelleştirilmiş Zaman Çizelgesi Görünümü
 
@@ -128,7 +128,7 @@ Bu güncelleştirmelerden sonra, iletiyi etkileyen farklı teslim sonrası olayl
 
 Kötü amaçlı yazılım ve kimlik avı tehditlerini göstermenin yanı sıra, e-postayla ilişkili istenmeyen posta kararını görürsünüz. E-postanın içinde, ilgili algılama teknolojileriyle birlikte e-postayla ilişkili tüm tehditlere bakın. Bir e-postanın sıfır, bir veya birden çok tehdidi olabilir. Geçerli tehditleri e-posta açılır öğesinin **Ayrıntılar** bölümünde görürsünüz. Birden çok tehdit (kötü amaçlı yazılım ve kimlik avı gibi) için **Algılama teknolojisi** alanı, tehdidi tanımlayan algılama teknolojisi olan tehdit algılama eşlemesini gösterir.
 
-Algılama teknolojileri kümesi artık yeni algılama yöntemlerinin yanı sıra istenmeyen posta algılama teknolojilerini de içerir. Sonuçları farklı e-posta görünümlerinde (Kötü Amaçlı Yazılım, Kimlik Avı, Tüm E-postalar) filtrelemek için aynı algılama teknolojileri kümesini kullanabilirsiniz.
+Algılama teknolojileri kümesi artık yeni algılama yöntemlerinin yanı sıra istenmeyen posta algılama teknolojilerini de içerir. Sonuçları farklı e-posta görünümlerinde (Kötü Amaçlı Yazılım, Kimlik Avı, Tüm Email) filtrelemek için aynı algılama teknolojileri kümesini kullanabilirsiniz.
 
 > [!NOTE]
 > Karar çözümlemesi varlıklara bağlı olmayabilir. Örneğin, bir e-posta kimlik avı veya istenmeyen posta olarak sınıflandırılabilir, ancak kimlik avı/istenmeyen posta kararıyla damgalanmış URL'ler yoktur. Bunun nedeni, filtrelerin bir karar atamadan önce e-postanın içeriğini ve diğer ayrıntılarını da değerlendirmesidir.
@@ -165,7 +165,7 @@ Zaman çizelgesi görünümü tüm teslim ve teslim sonrası olayları tanımlar
 > [!NOTE]
 > **Teslim konumu** ve **Teslim eyleminin** "bilinmeyen" olarak gösterebileceği birkaç durum vardır:
 >
-> - İleti teslim edildiyse **Teslim konumu** "teslim edildi" ve **Teslim konumu** "bilinmiyor" olarak görünebilir, ancak Gelen Kutusu kuralı iletiyi Gelen Kutusu veya Gereksiz E-posta klasörü yerine varsayılan bir klasöre (Taslak veya Arşiv gibi) taşıdı.
+> - İleti teslim edildiyse **Teslim konumu** "teslim edildi" ve **Teslim konumu** "bilinmiyor" olarak görünebilir, ancak Gelen Kutusu kuralı iletiyi Gelen Kutusu veya Gereksiz Email klasörü yerine varsayılan bir klasöre (Taslak veya Arşiv gibi) taşıdı.
 >
 > - Bir yönetici/sistem eylemi (ZAP gibi) denendiyse ancak ileti bulunamadıysa **en son teslim konumu** bilinmiyor olabilir. Eylem genellikle kullanıcı iletiyi taşıdıktan veya sildikten sonra gerçekleşir. Bu gibi durumlarda, zaman çizelgesi görünümünde **Sonuç/Ayrıntılar** sütununu doğrulayın. "İleti kullanıcı tarafından taşındı veya silindi" deyimini arayın.
 
@@ -184,7 +184,7 @@ E-posta teslim edildikten sonra *ek eylemler* uygulandı. *Zap*, *el ile düzelt
 
 ### <a name="system-overrides"></a>Sistem geçersiz kılmaları
 
-*Sistem geçersiz kılmaları* , bir iletinin hedeflenen teslim konumunda özel durumlar oluşturmanıza olanak tanır. Sistem tarafından sağlanan teslim konumunu, filtreleme yığını tarafından tanımlanan tehditlere ve diğer algılamalara göre geçersiz kılarsınız. Sistem geçersiz kılmaları, ilke tarafından önerilen iletiyi teslim etmek için kiracı veya kullanıcı ilkesi aracılığıyla ayarlanabilir. Geçersiz kılmalar, kullanıcı tarafından ayarlanan çok geniş bir Kasa Gönderen ilkesi gibi yapılandırma boşlukları nedeniyle kötü amaçlı iletilerin yanlışlıkla teslimini belirleyebilir. Bu geçersiz kılma değerleri şunlar olabilir:
+*Sistem geçersiz kılmaları* , bir iletinin hedeflenen teslim konumunda özel durumlar oluşturmanıza olanak tanır. Sistem tarafından sağlanan teslim konumunu, filtreleme yığını tarafından tanımlanan tehditlere ve diğer algılamalara göre geçersiz kılarsınız. Sistem geçersiz kılmaları, ilke tarafından önerilen iletiyi teslim etmek için kiracı veya kullanıcı ilkesi aracılığıyla ayarlanabilir. Geçersiz kılmalar, kullanıcı tarafından ayarlanan çok geniş bir Güvenilir Gönderen ilkesi gibi yapılandırma boşlukları nedeniyle kötü amaçlı iletilerin yanlışlıkla teslimini belirleyebilir. Bu geçersiz kılma değerleri şunlar olabilir:
 
 - Kullanıcı ilkesi tarafından izin verilir: Kullanıcı, etki alanlarına veya gönderenlere izin vermek için posta kutusu düzeyinde ilkeler oluşturur.
 
@@ -241,7 +241,7 @@ Artık tehditlerin kapsamını hızla kavramak için sistem veya özel kullanıc
 
 ### <a name="timezone-improvements"></a>Saat dilimi iyileştirmeleri
 
-Portalda e-posta kayıtlarının ve dışarı aktarılan verilerin saat dilimini görürsünüz. E-posta Kılavuzu, Ayrıntılar açılır öğesi, E-posta Zaman Çizelgesi ve Benzer E-postalar gibi deneyimlerde görünür, böylece sonuç kümesinin saat dilimi net olur.
+Portalda e-posta kayıtlarının ve dışarı aktarılan verilerin saat dilimini görürsünüz. Email Kılavuzu, Ayrıntılar açılır öğesi, Email Zaman Çizelgesi ve Benzer E-postalar gibi deneyimlerde görünür, böylece sonuç kümesinin saat dilimi açık olur.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/TimezoneImprovements.png" alt-text="Gezgin'de saat dilimini görüntüleme" lightbox="../../media/TimezoneImprovements.png":::
@@ -273,21 +273,21 @@ Artık ürün içinde, kılavuzdaki arama sonuçlarının toplam sayısı gibi e
 
 ### <a name="top-targeted-users"></a>En çok hedeflenen kullanıcılar
 
-Bugün, E-postalar için Kötü Amaçlı Yazılım görünümünde en çok hedeflenen kullanıcıların listesini **En İyi Kötü Amaçlı Yazılım Aileleri** bölümünde kullanıma sunun. Bu görünümü Kimlik Avı ve Tüm E-posta görünümlerinde de genişleteceğiz. Hedeflenen ilk beş kullanıcıyı ve ilgili görünüm için her kullanıcı için deneme sayısını görebilirsiniz. Örneğin, Kimlik Avı görünümü için Kimlik Avı denemelerinin sayısını görürsünüz.
+Bugün, E-postalar için Kötü Amaçlı Yazılım görünümünde en çok hedeflenen kullanıcıların listesini **En İyi Kötü Amaçlı Yazılım Aileleri** bölümünde kullanıma sunun. Bu görünümü Kimlik Avı ve Tüm Email görünümlerinde de genişleteceğiz. Hedeflenen ilk beş kullanıcıyı ve ilgili görünüm için her kullanıcı için deneme sayısını görebilirsiniz. Örneğin, Kimlik Avı görünümü için Kimlik Avı denemelerinin sayısını görürsünüz.
 
 Hedeflenen kullanıcıların listesini, her e-posta görünümü için çevrimdışı çözümleme denemelerinin sayısıyla birlikte 3.000 sınırına kadar dışarı aktarabilirsiniz. Buna ek olarak, deneme sayısını seçtiğinizde (örneğin, aşağıdaki resimde 13 deneme) Tehdit Gezgini'nde filtrelenmiş bir görünüm açılır; böylece bu kullanıcıya yönelik e-postalar ve tehditler hakkında daha fazla ayrıntı görebilirsiniz.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/Top_Targeted_Users.png" alt-text="En çok hedeflenen kullanıcılar" lightbox="../../media/Top_Targeted_Users.png":::
 
-### <a name="exchange-transport-rules"></a>aktarım kurallarını Exchange
+### <a name="exchange-transport-rules"></a>Exchange aktarım kuralları
 
-Veri zenginleştirmenin bir parçası olarak, iletiye uygulanan tüm farklı Exchange aktarım kurallarını (ETR) görebilirsiniz. Bu bilgiler E-posta kılavuzu görünümünde kullanılabilir. Bunu görüntülemek için kılavuzda **Sütun seçenekleri'ni** ve ardından sütun seçeneklerinden **Exchange Taşıma Kuralı Ekle'yi** seçin. Ayrıca e-postadaki **Ayrıntılar** açılır öğesinde de görünür.
+Veri zenginleştirmenin bir parçası olarak, bir iletiye uygulanan tüm farklı Exchange aktarım kurallarını (ETR) görebilirsiniz. Bu bilgiler Email kılavuz görünümünde kullanılabilir. Bunu görüntülemek için kılavuzdaki **Sütun seçenekleri'ni** ve ardından sütun seçeneklerinden **Exchange Aktarım Kuralı Ekle'yi** seçin. Ayrıca e-postadaki **Ayrıntılar** açılır öğesinde de görünür.
 
 İletiye uygulanan aktarım kurallarının hem GUID'sini hem de adını görebilirsiniz. Aktarım kuralının adını kullanarak iletileri arayabilirsiniz. Bu bir "İçerir" aramasıdır, yani kısmi aramalar da yapabilirsiniz.
 
 > [!IMPORTANT]
-> ETR arama ve ad kullanılabilirliği, size atanan belirli role bağlıdır. ETR adlarını görüntülemek ve arama yapmak için aşağıdaki rollerden/izinlerden birine sahip olmanız gerekir. Size bu rollerden herhangi biri atanmamışsa, aktarım kurallarının adlarını göremez veya ETR adlarını kullanarak iletileri arayamazsınız. Ancak E-posta Ayrıntıları'nda ETR etiketini ve GUID bilgilerini görebilirsiniz. E-posta Kılavuzları, E-posta açılırları, Filtreler ve Dışarı Aktarma'daki diğer kayıt görüntüleme deneyimleri etkilenmez.
+> ETR arama ve ad kullanılabilirliği, size atanan belirli role bağlıdır. ETR adlarını görüntülemek ve arama yapmak için aşağıdaki rollerden/izinlerden birine sahip olmanız gerekir. Size bu rollerden herhangi biri atanmamışsa, aktarım kurallarının adlarını göremez veya ETR adlarını kullanarak iletileri arayamazsınız. Ancak, Email Ayrıntıları'nda ETR etiketini ve GUID bilgilerini görebilirsiniz. Email Kılavuzları, Email açılır Email Filtreler ve Dışarı Aktarma'daki diğer kayıt görüntüleme deneyimleri etkilenmez.
 >
 > - Yalnızca EXO - veri kaybı önleme: Tümü
 > - Yalnızca EXO - O365SupportViewConfig: Tümü
@@ -303,7 +303,7 @@ Veri zenginleştirmenin bir parçası olarak, iletiye uygulanan tüm farklı Exc
 
 ### <a name="inbound-connectors"></a>Gelen bağlayıcılar
 
-Bağlayıcılar, e-postanızın Microsoft 365 veya Office 365 kuruluşunuzdan nasıl aktığını özelleştiren yönergelerden oluşan bir koleksiyondır. Tüm güvenlik kısıtlamalarını veya denetimlerini uygulamanıza olanak tanır. Tehdit Gezgini'nde artık bir e-postayla ilgili bağlayıcıları görüntüleyebilir ve bağlayıcı adlarını kullanarak e-postaları arayabilirsiniz.
+Bağlayıcılar, e-postanızın Microsoft 365 veya Office 365 kuruluşunuza nasıl aktığını özelleştiren yönergelerden oluşan bir koleksiyondır. Tüm güvenlik kısıtlamalarını veya denetimlerini uygulamanıza olanak tanır. Tehdit Gezgini'nde artık bir e-postayla ilgili bağlayıcıları görüntüleyebilir ve bağlayıcı adlarını kullanarak e-postaları arayabilirsiniz.
 
 Bağlayıcı aramasının doğası gereği "içerir" olması, kısmi anahtar sözcük aramalarının da işe yaraması gerektiği anlamına gelir. Ana kılavuz görünümünde, Ayrıntılar açılır öğesinde ve Dışarı Aktarılan CSV'de, bağlayıcılar burada gösterildiği gibi Ad/GUID biçiminde gösterilir:
 
@@ -314,20 +314,20 @@ Bağlayıcı aramasının doğası gereği "içerir" olması, kısmi anahtar sö
 
 - [Kimliğine bürünülen kullanıcılara ve etki alanlarına gönderilen kimlik avı e-postalarını görüntüleme](#view-phishing-emails-sent-to-impersonated-users-and-domains)
 - [E-posta üst bilgisini önizleme ve e-posta gövdesini indirme](#preview-email-header-and-download-email-body)
-- [E-posta zaman çizelgesi](#email-timeline)
+- [Email zaman çizelgesi](#email-timeline)
 - [URL tıklama verilerini dışarı aktarma](#export-url-click-data)
 
 ### <a name="view-phishing-emails-sent-to-impersonated-users-and-domains"></a>Kimliğine bürünülen kullanıcılara ve etki alanlarına gönderilen kimlik avı e-postalarını görüntüleme
 
 Kimliğine bürünülen kullanıcılara ve etki alanlarına yönelik kimlik avı girişimlerini tanımlamak için *, korunacak Kullanıcılar* listesine eklenmelidir. Etki alanları için, yöneticilerin *Kuruluş etki alanlarını* etkinleştirmesi veya *korumak için Etki Alanları'na* bir etki alanı adı eklemesi gerekir. Korunacak etki alanları *Kimliğe Bürünme* bölümündeki *Kimlik Avı önleme ilkesi sayfasında* bulunur.
 
-Kimlik avı iletilerini gözden geçirmek ve kimliğine bürünülen kullanıcıları veya etki alanlarını aramak için [Explorer'ın E-posta > Kimlik Avı görünümünü](threat-explorer-views.md) kullanın.
+Kimlik avı iletilerini gözden geçirmek ve kimliğine bürünülen kullanıcıları veya etki alanlarını aramak için [Explorer'ın Email > Kimlik Avı görünümünü](threat-explorer-views.md) kullanın.
 
 Bu örnekte Tehdit Gezgini kullanılır.
 
 1. [Güvenlik & Uyumluluk Merkezi'nde](https://protection.office.com) (https://protection.office.com)Tehdit yönetimi > Gezgini'ni (veya Gerçek zamanlı algılamalar) seçin.
 
-2. Görünüm menüsünde E-posta > Kimlik Avı'nı seçin.
+2. Görünüm menüsünde Kimlik Avı'nı Email > seçin.
 
    Burada **kimliğine bürünülen etki alanını** veya **kimliğine bürünülen kullanıcıyı** seçebilirsiniz.
 
@@ -335,21 +335,21 @@ Bu örnekte Tehdit Gezgini kullanılır.
 
    Örneğin *contoso,* *contoso.com* veya *contoso.com.au* gibi korumalı etki alanı adlarını arayın.
 
-4. Kimliğe Bürünülen Etki Alanı / Algılanan konum gibi ek kimliğe bürünme bilgilerini görmek için E-posta sekmesinin > Ayrıntılar sekmesinin altındaki herhangi bir iletinin Konusu'nu seçin.
+4. Kimliğe Bürünülen Etki Alanı / Algılanan konum gibi ek kimliğe bürünme bilgilerini görmek için Email sekmesinin > Ayrıntılar sekmesinin altındaki herhangi bir iletinin Konusu'nu seçin.
 
-    **VEYA**
+    **Veya**
 
     **Kimliğine Bürünülen kullanıcı'ya** tıklayın ve metin kutusuna korumalı bir kullanıcının e-posta adresini yazın.
 
     > [!TIP]
     > **En iyi sonuçları elde** etmek için, korumalı kullanıcılarda arama yapmak için *tam e-posta adreslerini* kullanın. Örneğin, kullanıcı kimliğine bürünme işlemini araştırırken *firstname.lastname@contoso.com* ararsanız korunan kullanıcınızı daha hızlı ve daha başarılı bir şekilde bulabilirsiniz. Korumalı bir etki alanı ararken, arama kök etki alanını (örneğin contoso.com) ve etki alanı adını (*contoso*) alır. Kök etki alanı *contoso.com* aranırken hem *contoso.com* kimliğine bürünmeler hem de contoso etki alanı adı *döndürülecektir*.
 
-5. Kullanıcı veya etki alanı hakkında ek kimliğe bürünme bilgilerini ve *Algılanan konumu* görmek için **E-posta** **sekmesiDetails** >  sekmesinin altındaki herhangi bir iletinin **Konusu'nu** seçin.
+5. Kullanıcı veya etki alanı hakkında ek kimliğe bürünme bilgilerini ve *Algılanan konumu* görmek için **Email sekmesi** > **Ayrıntılar sekmesinin** altındaki herhangi bir iletinin **Konusu'nu** seçin.
 
     :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Algılama konumunu ve algılanan tehdidi gösteren korumalı bir kullanıcının Tehdit Gezgini ayrıntılar bölmesi (burada kullanıcının kimlik avı kimliğine bürünülmesi)" lightbox="../../media/threat-ex-views-impersonated-user-image.png":::
 
 > [!NOTE]
-> 3. veya 5. adımda **, Algılama Teknolojisi'ni** ve sırasıyla **Kimliğe Bürünme etki alanı** veya **Kimliğe Bürünme kullanıcısı'nı** seçerseniz, **E-posta sekmesinde** >  kullanıcı veya etki alanı hakkındaki **bilgiler Ve** *Algılanan konum* yalnızca *Kimlik Avı önleme ilkesi* sayfasında listelenen kullanıcı veya etki alanıyla ilgili iletilerde gösterilir.
+> 3 veya 5. adımda **, Algılama Teknolojisi'ni** ve sırasıyla **Kimliğe Bürünme etki alanı** veya **Kimliğe Bürünme kullanıcısı'nı** seçerseniz, **Email sekmesinde** >  kullanıcı veya etki alanı hakkındaki **ayrıntılar sekmesindeki** bilgiler ve *Algılanan konum* yalnızca *Kimlik Avı önleme ilkesi* sayfasında listelenen kullanıcı veya etki alanıyla ilgili iletilerde gösterilir.
 
 ### <a name="preview-email-header-and-download-email-body"></a>E-posta üst bilgisini önizleme ve e-posta gövdesini indirme
 
@@ -372,7 +372,7 @@ Bu nasıl yapılır? Teslim durumu artık iki sütuna ayrılmıştır:
 
 |Teslim|Gereksiz|Engellenen|Değiştirilir|
 |---|---|---|---|
-|E-posta bir kullanıcının gelen kutusuna veya klasörüne teslim edildi ve kullanıcı bu e-postaya erişebilir.|Kullanıcının Gereksiz veya Silinmiş klasörüne e-posta gönderildi ve kullanıcı bu klasöre erişebilir.|Karantinaya alınan, başarısız olan veya bırakılan e-postalar. Bu postalara kullanıcı erişemez.|E-postanın kötü amaçlı ekleri, ekin kötü amaçlı olduğunu belirten .txt dosyalarıyla değiştirildi.|
+|Email kullanıcının gelen kutusuna veya klasörüne teslim edildi ve kullanıcı bu klasöre erişebilir.|Email kullanıcının Gereksiz veya Silinmiş klasörüne gönderildi ve kullanıcı bu klasöre erişebilir.|Karantinaya alınan, başarısız olan veya bırakılan e-postalar. Bu postalara kullanıcı erişemez.|Email kötü amaçlı eklerin yerini, ekin kötü amaçlı olduğunu belirten .txt dosyaları aldı.|
 
 Kullanıcının görebileceği ve göremeyecekleri şunlardır:
 
@@ -391,19 +391,19 @@ Kullanıcının görebileceği ve göremeyecekleri şunlardır:
 - *Başarısız*: E-posta posta kutusuna ulaşamadı.
 - *Bırakılan*: E-posta, posta akışında bir yerde kayboldu.
 
-### <a name="email-timeline"></a>E-posta zaman çizelgesi
+### <a name="email-timeline"></a>Email zaman çizelgesi
 
-**E-posta zaman çizelgesi**, yöneticiler için tehdit avcılığı deneyimini geliştiren yeni bir Gezgin özelliğidir. Olayı anlamaya çalışmak için farklı konumları denetlemek için harcanan süreyi kısar. Bir e-posta geldiğinde birden çok olay gerçekleştiğinde veya yaklaştığında, bu olaylar zaman çizelgesi görünümünde görüntülenir. Teslim sonrası e-postanızda gerçekleşen bazı olaylar **Özel eylem** sütununda yakalanır. Yöneticiler, ilkelerin nasıl çalıştığı, postanın son olarak nereye yönlendirildiği ve bazı durumlarda son değerlendirmenin ne olduğu hakkında içgörü elde etmek için zaman çizelgesindeki bilgileri posta teslimi sonrasında gerçekleştirilen özel eylemle birleştirebilir.
+**Email zaman çizelgesi**, yöneticiler için tehdit avcılığı deneyimini geliştiren yeni bir Gezgin özelliğidir. Olayı anlamaya çalışmak için farklı konumları denetlemek için harcanan süreyi kısar. Bir e-posta geldiğinde birden çok olay gerçekleştiğinde veya yaklaştığında, bu olaylar zaman çizelgesi görünümünde görüntülenir. Teslim sonrası e-postanızda gerçekleşen bazı olaylar **Özel eylem** sütununda yakalanır. Yöneticiler, ilkelerin nasıl çalıştığı, postanın son olarak nereye yönlendirildiği ve bazı durumlarda son değerlendirmenin ne olduğu hakkında içgörü elde etmek için zaman çizelgesindeki bilgileri posta teslimi sonrasında gerçekleştirilen özel eylemle birleştirebilir.
 
 Daha fazla bilgi için bkz[. Office 365'de teslim edilen kötü amaçlı e-postaları araştırma ve düzeltme](investigate-malicious-email-that-was-delivered.md).
 
 ### <a name="export-url-click-data"></a>URL tıklama verilerini dışarı aktarma
 
-Artık URL tıklamalarının raporlarını dışarı aktararak Microsoft Excel **ağ iletisi kimliğini** görüntüleyebilir ve **karara tıklayabilirsiniz**. Bu da URL tıklama trafiğinizin nereden kaynaklandığını açıklamaya yardımcı olur. Şu şekilde çalışır: Office 365 hızlı başlatma çubuğundaki Tehdit Yönetimi'nde şu zinciri izleyin:
+Artık URL tıklamalarının raporlarını Microsoft Excel'e aktararak **ağ iletisi kimliğini** görüntüleyebilir ve **karara tıklayabilirsiniz**. Bu da URL tıklama trafiğinizin nereden kaynaklandığını açıklamaya yardımcı olur. Şu şekilde çalışır: Office 365 hızlı başlatma çubuğundaki Tehdit Yönetimi'nde şu zinciri izleyin:
 
 **Explorer** \> **Kimlik Avı** \> Görüntüle **Tıklama** \> **En çok kullanılan URL'ler** veya **URL Üst Tıklamalar**\>, URL açılır öğesini açmak için herhangi bir kaydı seçer.
 
-Listeden bir URL seçtiğinizde açılır panelde yeni bir **Dışarı Aktar** düğmesi görürsünüz. Daha kolay raporlama için verileri Excel bir elektronik tabloya taşımak için bu düğmeyi kullanın.
+Listeden bir URL seçtiğinizde açılır panelde yeni bir **Dışarı Aktar** düğmesi görürsünüz. Daha kolay raporlama için verileri excel elektronik tablosuna taşımak için bu düğmeyi kullanın.
 
 Gerçek zamanlı algılamalar raporunda aynı konuma ulaşmak için bu yolu izleyin:
 
@@ -417,11 +417,11 @@ Gerçek zamanlı algılamalar raporunda aynı konuma ulaşmak için bu yolu izle
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Teknolojiye göre e-postada algılanan kötü amaçlı yazılımlara bakın
 
-E-postada kötü amaçlı yazılımların algılanmasını Microsoft 365 teknolojiye göre sıralanmış olarak görmek istediğinizi varsayalım. Bunu yapmak için Explorer'ın (veya Gerçek zamanlı algılamaların) [E-posta > Kötü Amaçlı Yazılım](threat-explorer-views.md#email--malware) görünümünü kullanın.
+Microsoft 365 teknolojisine göre sıralanmış e-postada kötü amaçlı yazılım algılanmasını istediğinizi varsayalım. Bunu yapmak için Explorer'ın [Email > Kötü Amaçlı Yazılım](threat-explorer-views.md#email--malware) görünümünü (veya gerçek zamanlı algılamaları) kullanın.
 
 1. Güvenlik & Uyumluluk Merkezi'nde (<https://protection.office.com> ) **Tehdit yönetimi** \> **Gezgini'ni** (veya **Gerçek zamanlı algılamalar**) seçin. (Bu örnekte Gezgin kullanılır.)
 
-2. **Görünüm** menüsünde **E-posta** \> **Kötü Amaçlı Yazılım'ı** seçin.
+2. **Görünüm** menüsünde **Kötü Amaçlı Yazılım** **Email'ı** \> seçin.
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/ExplorerViewEmailMalwareMenu.png" alt-text="Gezgin için Görünüm menüsü" lightbox="../../media/ExplorerViewEmailMalwareMenu.png":::
@@ -442,13 +442,13 @@ Rapor, seçtiğiniz teknoloji seçeneğini kullanarak kötü amaçlı yazılıml
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Kimlik avı URL'sini görüntüleyin ve karar verilerine tıklayın
 
-İzin verilen, engellenen ve geçersiz kılınan URL'lerin listesi de dahil olmak üzere e-postadaki URL'ler aracılığıyla kimlik avı girişimlerini görmek istediğinizi varsayalım. Tıklanan URL'leri tanımlamak için [Kasa Bağlantıların](safe-links.md) yapılandırılması gerekir. [Kasa Bağlantıları ilkelerini](set-up-safe-links-policies.md) tıklama zamanı koruması ve Kasa Bağlantıları ile tıklama kararlarının günlüğe kaydedilmesi için ayarladığınızdan emin olun.
+İzin verilen, engellenen ve geçersiz kılınan URL'lerin listesi de dahil olmak üzere e-postadaki URL'ler aracılığıyla kimlik avı girişimlerini görmek istediğinizi varsayalım. Tıklanan URL'leri tanımlamak için [Güvenli Bağlantılar](safe-links.md) yapılandırılmalıdır. Güvenli Bağlantılar tarafından tıklama zamanı koruması ve tıklama kararlarının günlüğe kaydedilmesi için [Güvenli Bağlantılar ilkelerini](set-up-safe-links-policies.md) ayarladığınızdan emin olun.
 
-İletilerdeki kimlik avı URL'lerini gözden geçirmek ve kimlik avı iletilerindeki URL'lere tıklamak için Explorer'ın [**EmailPhish** > ](threat-explorer-views.md#email--phish) görünümünü veya Gerçek zamanlı algılamaları kullanın.
+İletilerdeki kimlik avı URL'lerini gözden geçirmek ve kimlik avı iletilerindeki URL'lere tıklamak için Explorer veya Gerçek zamanlı algılamaların [**Email** >  **Fark**](threat-explorer-views.md#email--phish) görünümünü kullanın.
 
 1. Güvenlik & Uyumluluk Merkezi'nde (<https://protection.office.com> ) **Tehdit yönetimi** \> **Gezgini'ni** (veya **Gerçek zamanlı algılamalar**) seçin. (Bu örnekte Gezgin kullanılır.)
 
-2. **Görünüm** menüsünde **E-posta** \> **Kimlik Avı'nı** seçin.
+2. **Görünüm** menüsünde **Kimlik Avı'nı Email** \> seçin.
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/ExplorerViewEmailPhishMenu.png" alt-text="Kimlik avı bağlamında Gezgin için Görünüm menüsü" lightbox="../../media/ExplorerViewEmailPhishMenu.png":::
@@ -464,7 +464,7 @@ Rapor, seçtiğiniz teknoloji seçeneğini kullanarak kötü amaçlı yazılıml
 
    - **En çok kullanılan URL'ler** , filtrelediğiniz iletilerdeki URL'ler ve her URL için e-posta teslim eylemi sayısıdır. Kimlik avı e-posta görünümünde bu liste genellikle geçerli URL'ler içerir. Saldırganlar, teslim etmeye çalışmak için iletilerine iyi ve kötü URL'lerin bir karışımını ekler, ancak kötü amaçlı bağlantıların daha ilginç görünmesini sağlar. URL tablosu toplam e-posta sayısına göre sıralanır, ancak görünümü basitleştirmek için bu sütun gizlenir.
 
-   - **En üstteki tıklamalar**, tıklanan ve toplam tıklama sayımına göre sıralanmış Kasa Bağlantılar sarmalanmış URL'leridir. Görünümü basitleştirmek için bu sütun da görüntülenmez. Sütuna göre toplam sayımlar, tıklanan her URL için Kasa Bağlantıları tıklama kararı sayısını gösterir. Kimlik avı e-posta görünümünde bunlar genellikle şüpheli veya kötü amaçlı URL'lerdir. Ancak görünümde tehdit olmayan ancak kimlik avı iletilerinde bulunan URL'ler yer alabilir. Açılmamış bağlantılarda URL tıklamaları burada gösterilmez.
+   - **En çok tıklananlar** , tıklanan Güvenli Bağlantılar sarmalanmış URL'leridir ve toplam tıklama sayımına göre sıralanır. Görünümü basitleştirmek için bu sütun da görüntülenmez. Sütuna göre toplam sayı, tıklanan her URL için Güvenli Bağlantılar tıklama kararı sayısını gösterir. Kimlik avı e-posta görünümünde bunlar genellikle şüpheli veya kötü amaçlı URL'lerdir. Ancak görünümde tehdit olmayan ancak kimlik avı iletilerinde bulunan URL'ler yer alabilir. Açılmamış bağlantılarda URL tıklamaları burada gösterilmez.
 
    İki URL tablosu, teslim eylemine ve konuma göre kimlik avı e-posta iletilerindeki en iyi URL'leri gösterir. Tablolarda uyarıya rağmen engellenen veya ziyaret edilen URL tıklamaları gösterilir, böylece kullanıcılara hangi olası hatalı bağlantıların sunulduğunu ve kullanıcının tıklandığını görebilirsiniz. Buradan daha fazla analiz gerçekleştirebilirsiniz. Örneğin, grafiğin altında, kuruluşunuzun ortamında engellenen e-posta iletilerinde en çok kullanılan URL'leri görebilirsiniz.
 
@@ -478,7 +478,7 @@ Rapor, seçtiğiniz teknoloji seçeneğini kullanarak kötü amaçlı yazılıml
 
 ### <a name="interpretation-of-click-verdicts"></a>Tıklama kararlarının yorumlanması
 
-E-posta veya URL açılır listelerinde, İlk Tıklamalar'da ve filtreleme deneyimlerimizde farklı tıklama kararı değerleri görürsünüz:
+Email veya URL açılır listelerinde, İlk Tıklamalar'da ve filtreleme deneyimlerimizde farklı tıklama kararı değerleri görürsünüz:
 
 - **Hiçbiri:** URL için karar alınamadı. Kullanıcı URL'ye tıklaymış olabilir.
 - **Izin verilen:** Kullanıcının URL'ye gitmesine izin verildi.
@@ -491,11 +491,11 @@ E-posta veya URL açılır listelerinde, İlk Tıklamalar'da ve filtreleme deney
 
 ## <a name="review-email-messages-reported-by-users"></a>Kullanıcılar tarafından bildirilen e-posta iletilerini gözden geçirme
 
-Kuruluşunuzdaki kullanıcıların [Rapor İletisi eklentisi veya Rapor](enable-the-report-message-add-in.md) [Kimlik Avı eklentisi](enable-the-report-phish-add-in.md) aracılığıyla *Gereksiz*, *Gereksiz Değil* veya *Kimlik Avı* olarak bildirdiği e-posta iletilerini görmek istediğinizi varsayalım. Bunları görmek için Explorer'ın [**EmailSubmissions** > ](threat-explorer-views.md#email--submissions) görünümünü (veya Gerçek zamanlı algılamaları) kullanın.
+Kuruluşunuzdaki kullanıcıların [Rapor İletisi eklentisi veya Rapor](enable-the-report-message-add-in.md) [Kimlik Avı eklentisi](enable-the-report-phish-add-in.md) aracılığıyla *Gereksiz*, *Gereksiz Değil* veya *Kimlik Avı* olarak bildirdiği e-posta iletilerini görmek istediğinizi varsayalım. Bunları görmek için [**Explorer'ın** >  (veya Gerçek zamanlı **algılamaların) Email Submissions**](threat-explorer-views.md#email--submissions) görünümünü kullanın.
 
 1. Güvenlik & Uyumluluk Merkezi'nde (<https://protection.office.com> ) **Tehdit yönetimi** \> **Gezgini'ni** (veya **Gerçek zamanlı algılamalar**) seçin. (Bu örnekte Gezgin kullanılır.)
 
-2. **Görünüm** menüsünde **E-posta** \> **Gönderimleri'ni** seçin.
+2. **Görünüm** menüsünde **Email** \> **Gönderimler'i** seçin.
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/explorer-view-menu-email-user-reported.png" alt-text="E-postalar için Explorer'ın Görünüm menüsü" lightbox="../../media/explorer-view-menu-email-user-reported.png":::
@@ -521,7 +521,7 @@ Rapor, kuruluşunuzdaki kişilerin kimlik avı girişimi olarak bildirdiği e-po
 Bu makalede açıklanan senaryolara ek olarak, Gezgin (veya Gerçek zamanlı algılamalar) ile sunulan daha birçok raporlama seçeneğiniz vardır. Aşağıdaki makalelere bakın:
 
 - [Teslim edilen kötü amaçlı e-postayı bulma ve araştırma](investigate-malicious-email-that-was-delivered.md)
-- [SharePoint Online, OneDrive ve Microsoft Teams'da algılanan kötü amaçlı dosyaları görüntüleme](./mdo-for-spo-odb-and-teams.md)
+- [SharePoint Online, OneDrive ve Microsoft Teams'de algılanan kötü amaçlı dosyaları görüntüleme](./mdo-for-spo-odb-and-teams.md)
 - [Tehdit Gezgini'ndeki görünümlere (ve Gerçek zamanlı algılamalara) genel bakış elde edin](threat-explorer-views.md)
 - [Tehdit koruması durum raporu](view-email-security-reports.md#threat-protection-status-report)
 - [Microsoft 365 Defender'de otomatik araştırma ve yanıt](../defender/m365d-autoir.md)
@@ -563,4 +563,4 @@ Roller ve izinler hakkında daha fazla bilgi edinmek için aşağıdaki kaynakla
 
 ## <a name="other-articles"></a>Diğer makaleler
 
-[E-posta Varlık Sayfası ile e-postaları araştırma](mdo-email-entity-page.md)
+[Email Varlık Sayfası ile e-postaları araştırma](mdo-email-entity-page.md)

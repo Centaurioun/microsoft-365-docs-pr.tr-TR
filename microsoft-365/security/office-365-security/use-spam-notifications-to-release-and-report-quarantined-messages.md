@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365'de bildirimleri (son kullanıcı istenmeyen posta bildirimleri) karantinaya alın
+title: Microsoft 365'te karantina bildirimleri (son kullanıcı istenmeyen posta bildirimleri)
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,14 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, Exchange Online Protection(EOP) içinde karantinaya alınan iletiler için son kullanıcı istenmeyen posta bildirimleri hakkında bilgi edinebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 44ed83a95fe8f588369f0a1bbae4809f32581f87
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 57d794e601250cac554226cdb8e1210f15ed08ef
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043483"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597658"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>Karantinaya alınan iletileri serbest bırakmak ve bildirmek için karantina bildirimlerini kullanma
 
@@ -37,7 +37,7 @@ ms.locfileid: "66043483"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online posta kutusu olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları olan Microsoft 365 kuruluşlarda karantina, potansiyel olarak tehlikeli veya istenmeyen iletileri barındırıyor. Daha fazla bilgi için bkz. [EOP'de karantinaya alınan iletiler](quarantine-email-messages.md).
+posta kutuları olmayan Exchange Online veya tek başına Exchange Online Protection (EOP) kuruluşlarında posta kutuları Exchange Online olan Microsoft 365 kuruluşlarında karantina, potansiyel olarak tehlikeli veya istenmeyen iletileri barındırıyor. Daha fazla bilgi için bkz. [EOP'de karantinaya alınan iletiler](quarantine-email-messages.md).
 
 _Karantina ilkeleri_ , kullanıcıların karantinaya alınan iletilere ne yapmalarına izin verildiğini, iletinin neden karantinaya alındığına (desteklenen özellikler için) göre tanımlar. Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md). Karantina ilkeleri, etkilenen alıcıların (paylaşılan posta kutuları dahil) karantinaya alınan iletileriyle ilgili düzenli _karantina bildirimleri_ alıp almadığını da denetler. Karantina bildirimleri, tüm desteklenen koruma özellikleri (yalnızca istenmeyen posta önleme ilkesi kararları değil) için son kullanıcı istenmeyen posta bildirimlerinin yerini alır.
 
@@ -50,7 +50,7 @@ Yöneticiler ayrıca karantina ilkelerindeki genel ayarları kullanarak göndere
 Paylaşılan posta kutuları için karantina bildirimleri yalnızca paylaşılan posta kutusuna FullAccess izni verilen kullanıcılar için desteklenir. Daha fazla bilgi için bkz. [Paylaşılan posta kutusu temsilcisini düzenlemek için EAC kullanma](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation).
 
 > [!NOTE]
-> Varsayılan olarak, yüksek güvenilirlikli kimlik avı, kötü amaçlı yazılım, posta akışı kuralları (aktarım kuralları olarak da bilinir) veya Office 365 için Defender Kasa Ekler ilkeleri olarak karantinaya alınan iletiler yalnızca yöneticiler tarafından kullanılabilir (varsayılan olarak AdminOnlyAccessPolicy karantina ilkesi kullanılır). Daha fazla bilgi için bkz. [Karantinaya alınan iletileri ve dosyaları EOP'de yönetici olarak yönetme](manage-quarantined-messages-and-files.md).
+> Varsayılan olarak, Office 365 için Defender'da yüksek güvenilirlikli kimlik avı, kötü amaçlı yazılım, posta akışı kuralları (aktarım kuralları olarak da bilinir) veya Güvenli Ekler ilkeleri olarak karantinaya alınan iletiler yalnızca yöneticiler tarafından kullanılabilir (varsayılan olarak AdminOnlyAccessPolicy karantina ilkesi kullanılır). Daha fazla bilgi için bkz. [Karantinaya alınan iletileri ve dosyaları EOP'de yönetici olarak yönetme](manage-quarantined-messages-and-files.md).
 >
 > Dağıtım gruplarına veya posta etkin güvenlik gruplarına gönderilen iletiler için karantina bildirimleri tüm grup üyelerine gönderilir.
 >
@@ -73,4 +73,4 @@ Varsayılan olarak, istenmeyen posta, yüksek güvenilirlikli istenmeyen posta v
 :::image type="content" source="../../media/end-user-spam-notification.png" alt-text="Karantina bildirimi örneği" lightbox="../../media/end-user-spam-notification.png":::
 
 > [!NOTE]
-> Engellenen bir gönderen size posta göndermeye devam edebilir. Bu gönderenden gelen ve posta kutunuza gönderen tüm iletiler hemen Gereksiz E-posta klasörüne taşınır. Bu gönderenden gelecek iletiler Gereksiz E-posta klasörünüze veya karantinaya alınacaktır. Bu iletilerin yerine vardığınızda silinmesini istiyorsanız, gelen iletileri silmek için [posta akışı kurallarını](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (taşıma kuralları olarak da bilinir) kullanın.
+> Engellenen bir gönderen size posta göndermeye devam edebilir. Bu gönderenden gelen ve posta kutunuza gönderen tüm iletiler hemen Gereksiz Email klasörüne taşınır. Bu gönderenden gelecek iletiler Gereksiz Email klasörünüze veya karantinaya alınacaktır. Bu iletilerin yerine vardığınızda silinmesini istiyorsanız, gelen iletileri silmek için [posta akışı kurallarını](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (taşıma kuralları olarak da bilinir) kullanın.

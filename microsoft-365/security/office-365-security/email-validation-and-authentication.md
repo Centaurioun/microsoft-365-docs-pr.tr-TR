@@ -17,14 +17,14 @@ ms.collection:
 ms.custom: TopSMBIssues
 ms.localizationpriority: high
 description: Yöneticiler, kimlik sahtekarlığı, kimlik avı ve istenmeyen postaları önlemeye yardımcı olmak için EOP'nin e-posta kimlik doğrulamasını (SPF, DKIM ve DMARC) nasıl kullandığını öğrenebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 0722e586a19dab70bfe4433bd2909098dd8a3ac1
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 95d448337034eb9e7a20cbad4247a30367abcd5c
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385737"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597944"
 ---
 # <a name="email-authentication-in-eop"></a>EOP'de kimlik doğrulaması Email
 

@@ -11,31 +11,31 @@ ms.custom: ''
 ms.localizationpriority: medium
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Yöneticiler, şirket içi veya iş ortağı kuruluşlarına giden bağlayıcılar üzerinden yapılan başarısız posta akışını izlemek için Güvenlik & Uyumluluk Merkezi'ndeki Posta akışı panosundaki Kuyruklar pencere öğesini kullanmayı öğrenebilir.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 146ce26c32f1ff80a451b85fd343990db547a131
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 2d9e35e90870ef8b9dba97f8b10fa4d09090551a
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972661"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597404"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'ndeki kuyruklar içgörüleri
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Bağlayıcılar kullanılarak kuruluşunuzdan şirket içi veya iş ortağı e-posta sunucularınıza ileti gönderilemediyse, iletiler Microsoft 365 kuyruğa alınır. Bu koşula neden olan yaygın örnekler şunlardır:
+Bağlayıcılar kullanılarak kuruluşunuzdan şirket içi veya iş ortağı e-posta sunucularınıza ileti gönderilemiyorsa, iletiler Microsoft 365'te kuyruğa alınır. Bu koşula neden olan yaygın örnekler şunlardır:
 
 - Bağlayıcı yanlış yapılandırılmış.
 - Şirket içi ortamınızda ağ veya güvenlik duvarı değişiklikleri yapıldı.
 
-Microsoft 365 24 saat boyunca teslime yeniden denemeye devam edecektir. 24 saat sonra iletilerin süresi dolar ve teslim edilemeyen raporlarda (NDR veya geri dönen iletiler olarak da bilinir) gönderenlere döndürülür.
+Microsoft 365, 24 saat boyunca teslimi yeniden denemeye devam edecektir. 24 saat sonra iletilerin süresi dolar ve teslim edilemeyen raporlarda (NDR veya geri dönen iletiler olarak da bilinir) gönderenlere döndürülür.
 
 Kuyruğa alınan e-posta birimi önceden tanımlanmış eşiği aşarsa (varsayılan değer 200 iletidir), bilgiler aşağıdaki konumlarda kullanılabilir:
 
@@ -61,12 +61,12 @@ Kuyruğa alınan e-posta birimi önceden tanımlanmış eşiği aşarsa (varsay�
 
    - **Durum**: Uyarıyı açıp kapatabilirsiniz.
 
-   - **E-posta alıcıları** ve **Günlük bildirim sınırı**: **Düzenle'ye** tıklayarak aşağıdaki ayarları yapılandırın:
+   - **Alıcıları** ve **Günlük bildirim sınırını** Email: Aşağıdaki ayarları yapılandırmak için **Düzenle'ye** tıklayın:
 
 4. Bildirim ayarlarını yapılandırmak için **Düzenle'ye** tıklayın. Görüntülenen **İlkeyi düzenle** açılır penceresinde aşağıdaki ayarları yapılandırın:
 
    - **E-posta bildirimleri gönder**: Varsayılan değer açıktır.
-   - **E-posta alıcıları**: Varsayılan değer **TenantAdmins'tir**.
+   - **alıcıları Email**: Varsayılan değer **TenantAdmins'tir**.
    - **Günlük bildirim sınırı**: Varsayılan değer **Sınır yok'dur**.
    - **Eşik**: Varsayılan değer 200'dür.
 

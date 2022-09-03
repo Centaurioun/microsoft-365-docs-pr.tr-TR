@@ -20,14 +20,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, tehlikeli veya istenmeyen iletilerin bulunduğu Exchange Online Protection (EOP) içinde karantina hakkında bilgi edinebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: c61154054669032a23c9cbdb0d11344ef78ec281
-ms.sourcegitcommit: e852dafda3c0d1dfdde492600093aa17a3dcf5a6
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: af99da8ddaddcbf8c9fd746496a66242c57abd5b
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67002482"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596819"
 ---
 # <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>EOP ve Office 365 için Defender'de karantinaya alınmış e-posta iletileri
 

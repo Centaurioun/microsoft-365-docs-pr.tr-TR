@@ -15,18 +15,18 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft, kullanıcılarımızı kötü amaçlı, istenmeyen veya kötü amaçlı e-postalara karşı korumaya yardımcı olmak için çeşitli ilkeler, yordamlar geliştirmiş ve sektördeki en iyi yöntemleri benimsemiştir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 815fea8981fdab8825a109dae69abaf8232997f9
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: a2b047b7a7c528f76131f84ecf34203cb7be2352
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130373"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67594199"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Başvuru: İlkeler, uygulamalar ve yönergeler
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -39,29 +39,29 @@ Bu ilkeler ve yönergelerle uyumlu değilseniz destek ekibimizin size yardımcı
 
 ## <a name="general-microsoft-policies"></a>Genel Microsoft ilkeleri
 
-Microsoft 365 kullanıcılarına gönderilen e-postalar, e-posta iletimini ve Microsoft 365 kullanımını yöneten tüm Microsoft ilkeleriyle uyumlu olmalıdır.
+Microsoft 365 kullanıcılarına gönderilen Email, Microsoft 365'in e-posta iletimini ve kullanımını yöneten tüm Microsoft ilkeleriyle uyumlu olmalıdır.
 
-- Microsoft 365 için geçerli hizmet koşulları; özellikle de hizmeti istenmeyen posta veya kötü amaçlı yazılım dağıtmak için kullanma yasağı.
+- Microsoft 365 için geçerli olan Hizmet Koşulları; özellikle, istenmeyen posta veya kötü amaçlı yazılım dağıtmak için hizmeti kullanma yasağı.
 
 - [Microsoft Hizmet Sözleşmesi](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>Resmi düzenlemeler
 
-Microsoft 365 kullanıcılarına gönderilen e-postalar, geçerli yargı yetkisindeki e-posta iletişimlerini yöneten tüm geçerli yasalara ve düzenlemelere uymalıdır.
+Microsoft 365 kullanıcılarına gönderilen Email, ilgili yargı yetkisindeki e-posta iletişimini yöneten tüm geçerli yasa ve düzenlemelere uymalıdır.
 
 - [CAN-SPAM Yasası: İş İçin Uyumluluk Kılavuzu](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
-- ["Beni Kaldır" Yanıtları ve Sorumlulukları: E-posta Pazarlamacıları "Abonelikten Çıkma" Taleplerine Saygı Göstermelidir](https://www.lawpublish.com/ftc-emai-marketers-unsubscribe-claims.html)
+- ["Beni Kaldır" Yanıtları ve Sorumlulukları: Email Pazarlamacıların "Abonelikten Çıkma" Taleplerini Yerine Getirmelidir](https://www.lawpublish.com/ftc-emai-marketers-unsubscribe-claims.html)
 
 ## <a name="technical-guidelines"></a>Teknik yönergeler
 
-Microsoft 365'a gönderilen e-postalar, aşağıdaki belgelerde listelenen geçerli önerilerle uyumlu olmalıdır (bazı bağlantılar yalnızca İngilizce olarak sağlanır).
+Microsoft 365'e gönderilen Email aşağıdaki belgelerde listelenen geçerli önerilerle uyumlu olmalıdır (bazı bağlantılar yalnızca İngilizce olarak sağlanır).
 
-- [RFC 2505: SMTP MTA'ları için İstenmeyen Posta önleme Öneriler](https://www.ietf.org/rfc/rfc2505.txt)
+- [RFC 2505: SMTP MTA'ları için İstenmeyen Posta Önleme Önerileri](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920: Komut Kanal Oluşturma için SMTP Hizmet Uzantısı](https://www.ietf.org/rfc/rfc2920.txt)
 
-Ayrıca, Microsoft 365 bağlanan e-posta sunucuları aşağıdaki gereksinimlere uymalıdır:
+Ayrıca, Microsoft 365'e bağlanan e-posta sunucularının aşağıdaki gereksinimlere uyması gerekir:
 
 - Rfc 5321, RFC 5322 ve diğerleri de dahil olmak üzere Internet Society'nin Internet Engineering Task Force (IETF) tarafından yayımlanan gönderenin İnternet e-posta iletimi için tüm teknik standartlara uyması beklenir.
 
@@ -75,7 +75,7 @@ Ayrıca, Microsoft 365 bağlanan e-posta sunucuları aşağıdaki gereksinimlere
 
 - Dinamik IP alanından bağlantılar kabul edilemeyebilir.
 
-- E-posta sunucularının geçerli ters DNS kayıtları olmalıdır.
+- Email sunucuların geçerli ters DNS kayıtları olmalıdır.
 
 ## <a name="reputation-management"></a>Saygınlık yönetimi
 
@@ -83,9 +83,9 @@ Gönderenler, ISS'ler ve diğer hizmet sağlayıcıları, giden IP adreslerinizi
 
 ## <a name="microsoft-365-limits"></a>Microsoft 365 sınırları
 
-Gönderenler, Exchange Online Protection [Sınırları'nda listelenen Microsoft 365](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits) sınırlarına uymalıdır.
+Gönderenler[, Exchange Online Protection Sınırları'nda](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits) listelenen Microsoft 365 sınırlarına uymalıdır.
 
-## <a name="email-delivery-resources-and-organizations"></a>E-posta teslim kaynakları ve kuruluşları
+## <a name="email-delivery-resources-and-organizations"></a>Email teslim kaynakları ve kuruluşları
 
 Microsoft, internet ve e-posta ekosistemini geliştirmek için sektör kuruluşları ve hizmet sağlayıcılarıyla etkin bir şekilde çalışır. Bu kuruluşlar, desteklediğimiz ve gönderenlerin bağlı kalmasını önerdiğimiz en iyi uygulama belgelerini yayımladı. Bu, dünyanın dört bir yanındaki çeşitli e-posta hizmeti sağlayıcıları arasında e-posta teslim etme becerinizi geliştirir.
 
@@ -93,7 +93,7 @@ Microsoft, internet ve e-posta ekosistemini geliştirmek için sektör kuruluşl
 
 - [Online Trust Alliance](https://www.internetsociety.org/ota/)
 
-- [E-posta Gönderen & Sağlayıcı Koalisyonu](https://www.espcoalition.org/)
+- [Email Gönderen & Sağlayıcı Koalisyonu](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>Kötüye kullanım ve istenmeyen posta raporlama
 

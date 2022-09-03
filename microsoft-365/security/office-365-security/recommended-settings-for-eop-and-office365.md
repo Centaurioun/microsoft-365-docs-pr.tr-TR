@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Exchange Online Protection (EOP) ve Office 365 için Defender güvenlik ayarları için en iyi yöntemler nelerdir? Standart koruma için geçerli öneriler neleri içerir? Daha katı olmak istiyorsanız ne kullanılmalıdır? Ayrıca Office 365 için Defender kullanıyorsanız ne kadar ekstra alırsınız?
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 5fb969422791f0b0e211ad49b2d321ebd3de816c
-ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 15bc518a7bc9fa939bfd33e7f272929d190378c2
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67417422"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597790"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP ve Office 365 için Microsoft Defender güvenliği için önerilen ayarlar
 

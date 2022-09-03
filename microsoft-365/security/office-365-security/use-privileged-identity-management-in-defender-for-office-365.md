@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Azure PIM'i tümleştirerek kullanıcılara Office 365 için Microsoft Defender'da yükseltilmiş ayrıcalık görevleri gerçekleştirmeleri için tam zamanında ve sınırlı erişim vermek ve verilerinize yönelik riski azaltmayı öğrenin.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 32bc21130d98687f95af2ce6664c0759a716f362
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 6a198c25fd329c0bce79e85af8831a673b30cd1a
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010244"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597680"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) ve neden Office 365 için Microsoft Defender
@@ -46,8 +46,8 @@ Bu örnekte güvenlik ekibimizin bir üyesi olan ve Office 365 içinde sıfır e
 
 ***1. Adım***. Aboneliğinizin Azure PIM konsolunda kullanıcıyı (Alex) Azure Güvenlik Okuyucusu rolüne ekleyin ve etkinleştirmeyle ilgili güvenlik ayarlarını yapılandırın.
 
-1. [Azure AD Yönetim Merkezi'de](https://aad.portal.azure.com/) oturum açın ve **Azure Active Directory** >  **Roller ve yöneticiler'i** seçin.
-2. Rol **listesinden Güvenlik Okuyucusu'na** tıklayın ve **ardından Ayarlar** >  **Düzenle'ye tıklayın**
+1. [Azure AD Yönetici Merkezi'nde](https://aad.portal.azure.com/) oturum açın ve **Azure Active Directory** > **Rolleri ve yöneticileri'ni** seçin.
+2. Rol **listesinden Güvenlik Okuyucusu'na** ve ardından **Ayarlar** > **Düzenle'ye tıklayın**
 3. **Azure MFA** **gerektirmek için 'Etkinleştirme maksimum süresi (saat)**' değerini normal bir çalışma gününe ve 'Etkinleştirme açık' olarak ayarlayın.
 4. Bu Alex'in günlük işlemler için normal ayrıcalık düzeyi olduğundan Etkinleştirme için **gerekçe gerektir'in** > **Güncelleştirme** seçeneğini kaldıracağız.
 5. **Ödev** >  Ekle **Üye seçilmedi'yi** seçin > doğru üyeyi aramak için adı seçin veya yazın.
@@ -68,25 +68,25 @@ Kullanıcınızın adı (burada 'Alex'), sonraki sayfada Uygun atamalar altında
 
 Microsoft 365 Defender portalında, istediğimiz izinleri içeren özel bir rol grubu oluşturun.
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**İzinler & Roller'e** gidin ve **E-posta ve İşbirliği'nin** altında **Roller'i** seçin. **doğrudan İzinler** sayfasına gitmek için kullanın<https://security.microsoft.com/emailandcollabpermissions>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**İzinler & Roller'e** gidin ve **Email ve İşbirliği** altında **Roller'i** seçin. **doğrudan İzinler** sayfasına gitmek için kullanın<https://security.microsoft.com/emailandcollabpermissions>.
 2. **İzinler** sayfasında Oluştur simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Oluştur'u seçin**.
 3. Grubunuzu amacını yansıtacak şekilde adlandırarak 'PIM'i Ara ve Temizle' gibi bir ad verin.
 4. Üye eklemeyin, grubu kaydedin ve bir sonraki bölüme geçin!
 
 ### <a name="create-the-security-group-in-azure-ad-for-elevated-permissions"></a>Yükseltilmiş izinler için Azure AD'de güvenlik grubunu oluşturma
 
-1. [Azure AD Yönetim Merkezi'ne](https://aad.portal.azure.com/) geri gidin ve **Azure AD** >  **Groups** > **Yeni Grubu'na** gidin.
+1. [Azure AD Yönetici Merkezi'ne](https://aad.portal.azure.com/) geri gidin ve **Azure AD** >  **Groups** > **Yeni Grubu'na** gidin.
 2. Azure AD grubunuzu amacını yansıtacak şekilde adlandır, şu anda **sahip veya üye gerekmez**.
 3. **Azure AD rolleri gruba** **Evet** olarak atayabilirsiniz.
 4. Hiçbir rol, üye veya sahip eklemeyin, grubu oluşturun.
 5. Yeni oluşturduğunuz gruba Geri dön ve **Ayrıcalıklı Erişim Ayrıcalıklı Erişimi** > **Etkinleştir'i** seçin.
 6. Grubun içinde **Uygun atamalar** > **Atama ekle'yi** seçin > Arama & Temizleme'ye ihtiyacı olan kullanıcıyı **Üye** rolü olarak ekleyin.
-7. Grubun Ayrıcalıklı Erişim **bölmesindeki Ayarlar** yapılandırın. **Üye** rolünün ayarlarını **düzenle'yi** seçin.
+7. Grubun Ayrıcalıklı Erişim **bölmesindeki Ayarlar'ı** yapılandırın. **Üye** rolünün ayarlarını **düzenle'yi** seçin.
 8. Etkinleştirme süresini kuruluşunuza uyacak şekilde değiştirin. Bu örnekte **Güncelleştir'i** seçmeden önce *Azure MFA*, *gerekçe* ve *bilet bilgileri* gerekir.
 
 ### <a name="nest-the-newly-created-security-group-into-the-role-group"></a>Yeni oluşturulan güvenlik grubunu rol grubuna iç içe yerleştirme
 
-1. [Güvenlik & Uyumluluğu PowerShell'e Bağlan](/powershell/exchange/connect-to-scc-powershell) ve aşağıdaki komutu çalıştırın:
+1. [Güvenlik & Uyumluluğu PowerShell'e bağlanın](/powershell/exchange/connect-to-scc-powershell) ve aşağıdaki komutu çalıştırın:
 
    ```powershell
    Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`
@@ -99,7 +99,7 @@ Microsoft 365 Defender portalında, istediğimiz izinleri içeren özel bir rol 
 3. Tehdit Gezgini'yi kullanarak bir e-postayı temizlemeye çalışırsanız ek izinlere ihtiyacınız olduğunu belirten bir hata alırsınız.
 4. PIM, daha yükseltilmiş role ikinci kez girer ve kısa bir gecikmeden sonra artık e-postaları sorunsuz bir şekilde temizleyebilirsiniz.
 
-   :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="E-posta sekmesinin altındaki Eylemler bölmesi" lightbox="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG":::
+   :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="Email sekmesinin altındaki Eylemler bölmesi" lightbox="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG":::
 
 Arama ve Temizleme Rolü gibi yönetim rollerinin ve izinlerinin kalıcı olarak atanması Sıfır Güven güvenlik girişiminde yer almaz, ancak gördüğünüz gibi PIM, gerekli araç kümesine tam zamanında erişim vermek için kullanılabilir.
 

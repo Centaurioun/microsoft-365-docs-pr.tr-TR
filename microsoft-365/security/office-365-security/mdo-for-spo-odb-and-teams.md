@@ -1,5 +1,5 @@
 ---
-title: Kasa, Bağlantı SharePoint OneDrive için Ekleri Microsoft Teams
+title: SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,58 +20,58 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: SharePoint Online, OneDrive İş ve diğer OneDrive İş hakkında bilgi Microsoft Teams. Office 365 için Microsoft Defender
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 220bb976ebe701e5db5f03370a1a7c188f197cb1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+description: SharePoint Online, OneDrive İş ve Microsoft Teams'deki dosyalar için Office 365 için Microsoft Defender hakkında bilgi edinin.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 6767abfc3c658675484c05d506ee69ca9d198539
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475773"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597514"
 ---
-# <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Kasa, Bağlantı SharePoint OneDrive için Ekleri Microsoft Teams
+# <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Geçerli olduğu yer:**
+**Uygulandığı öğe**
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Kasa SharePoint, OneDrive ve Microsoft Teams ekleri, [Office 365 için Microsoft Defender'te](whats-new-in-defender-for-office-365.md) ortak virüs algılama altyapısı tarafından zaman uyumsuz olarak taranmış dosyalar için ek bir koruma katmanı sağlar [ Microsoft 365](virus-detection-in-spo.md). Kasa. SharePoint, OneDrive ve Microsoft Teams ekleri, ekip sitelerinde ve belge kitaplıklarında kötü amaçlı olarak tanımlanan mevcut dosyaları algılamaya ve engellemeye yardımcı olur.
+[Office 365 için Microsoft Defender'daki](whats-new-in-defender-for-office-365.md) SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler, [Microsoft 365'teki ortak virüs algılama altyapısı](virus-detection-in-spo.md) tarafından zaman uyumsuz olarak zaten taranmış dosyalar için ek bir koruma katmanı sağlar. SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler, ekip sitelerinde ve belge kitaplıklarında kötü amaçlı olarak tanımlanan mevcut dosyaları algılamaya ve engellemeye yardımcı olur.
 
-Kasa, SharePoint, OneDrive ve Microsoft Teams için ekler varsayılan olarak etkin değildir. Bu eklentiyi açmak için bkz[. Kasa, E-posta SharePoint OneDrive' Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler varsayılan olarak etkin değildir. Bu özelliği açmak için bkz. [SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekleri açma](turn-on-mdo-for-spo-odb-and-teams.md).
 
-## <a name="how-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-works"></a>E Kasa, SharePoint, OneDrive ve Microsoft Teams nasıl çalışır?
+## <a name="how-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-works"></a>SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler nasıl çalışır?
 
-Kasa, SharePoint, OneDrive ve Microsoft Teams ekleri etkinleştirildiğinde ve bir dosyayı kötü amaçlı olarak tanımıyorsa, dosya depolarla doğrudan tümleştirme kullanılarak kilitlenir. Aşağıdaki resimde, kitaplıkta algılanan kötü amaçlı bir dosyanın örneği bulunmaktadır.
+SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler etkinleştirildiğinde ve bir dosyayı kötü amaçlı olarak tanımladığında, dosya depolarıyla doğrudan tümleştirme kullanılarak kilitlenir. Aşağıdaki görüntüde, kitaplıkta algılanan kötü amaçlı bir dosya örneği gösterilmektedir.
 
-:::image type="content" source="../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png" alt-text="Dosyada kötü OneDrive İş biri ile algılanan dosyalar" lightbox="../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png":::
+:::image type="content" source="../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png" alt-text="kötü amaçlı olarak algılanan OneDrive İş dosyaları" lightbox="../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png":::
 
-Engellenen dosya belge kitaplığında ve web, mobil veya masaüstü uygulamalarında listelenmiş olsa da, kişiler dosyayı açamıyor, kopyalayıp taşıyamıyor veya paylaşamıyor. Ancak engellenen dosyayı silebilirler.
+Engellenen dosya belge kitaplığında ve web, mobil veya masaüstü uygulamalarında listelenmeye devam etse de, kişiler dosyayı açamaz, kopyalayamaz, taşıyamaz veya paylaşamaz. Ancak engellenen dosyayı silebilirler.
 
-İşte mobil cihazda engellenen dosyanın nasıl göründüğünün bir örneği:
+Mobil cihazda engellenen bir dosyanın nasıl göründüğüne ilişkin bir örnek aşağıda verilmişti:
 
-:::image type="content" source="../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png" alt-text="Engellenen dosyayı mobil uygulamadan OneDrive İş silme OneDrive seçeneği" lightbox="../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png":::
+:::image type="content" source="../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png" alt-text="Engellenen bir dosyayı OneDrive mobil uygulamasından OneDrive İş silme seçeneği" lightbox="../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png":::
 
-Varsayılan olarak, kişiler engellenen bir dosyayı indirebilir. Engellenen bir dosyayı indirme işlemi mobil cihaza şöyle olur:
+Varsayılan olarak, kişiler engellenen bir dosyayı indirebilir. Engellenen bir dosyayı mobil cihazda indirme işlemi şöyle görünür:
 
-:::image type="content" source="../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png" alt-text="OneDrive İş'te engellenen bir dosyayı indirme OneDrive İş" lightbox="../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png":::
+:::image type="content" source="../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png" alt-text="OneDrive İş'de engellenen bir dosyayı indirme seçeneği" lightbox="../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png":::
 
-SharePoint Online yöneticileri kişilerin kötü amaçlı dosyaları indirmesini önlenebilir. Yönergeler için bkz. [SharePoint kötü amaçlı dosyaları indirmelerini engellemek için SharePoint Online PowerShell kullanma](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
+SharePoint Online yöneticileri, kişilerin kötü amaçlı dosyaları indirmesini engelleyebilir. Yönergeler için bkz. [Kullanıcıların kötü amaçlı dosyaları indirmesini önlemek için SharePoint Online PowerShell kullanma](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 
-Bir dosya kötü amaçlı olarak algılandığında kullanıcı deneyimi hakkında daha fazla bilgi edinmek için bkz. [SharePoint Online'da, OneDrive'de](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2) veya başka bir Microsoft Teams.
+Bir dosya kötü amaçlı olarak algılandığında kullanıcı deneyimi hakkında daha fazla bilgi edinmek için bkz. [SharePoint Online, OneDrive veya Microsoft Teams'de kötü amaçlı bir dosya bulunduğunda yapılması gerekenler](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2).
 
-## <a name="view-information-about-malicious-files-detected-by-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Dosya, Dosya ve Dosya Ekleri Kasa tarafından algılanan kötü amaçlı dosyalar SharePoint OneDrive bilgileri Microsoft Teams
+## <a name="view-information-about-malicious-files-detected-by-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler tarafından algılanan kötü amaçlı dosyalar hakkındaki bilgileri görüntüleme
 
-Kasa, SharePoint, OneDrive ve Microsoft Teams ekleri tarafından kötü amaçlı olarak tanımlanan dosyalar Office 365 için Microsoft Defender ve [Explorer'daki raporlarda (](threat-explorer.md)ve gerçek zamanlı algılamalar) gösterir.[](view-reports-for-mdo.md)
+SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler tarafından kötü amaçlı olarak tanımlanan dosyalar[, Office 365 için Microsoft Defender için raporlarda](view-reports-for-mdo.md) ve [Gezgin'de (ve gerçek zamanlı algılamalarda)](threat-explorer.md) gösterilir.
 
-Dosya Kasa, SharePoint OneDrive ve Microsoft Teams ekleri ile kötü amaçlı olarak tanımlandısa, dosya karantinada da kullanılabilir, ancak yalnızca yöneticiler tarafından kullanılabilir. Daha fazla bilgi için bkz[. Karantinaya alınmış dosyaları tek tek Office 365 için Defender](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
+Bir dosya SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler tarafından kötü amaçlı olarak tanımlandığında, dosya karantinada da kullanılabilir, ancak yalnızca yöneticiler tarafından kullanılabilir. Daha fazla bilgi için bkz. [Office 365 için Defender'de karantinaya alınan dosyaları yönetme](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
 
-## <a name="keep-these-points-in-mind"></a>Bu noktaları gözlerde tutma
+## <a name="keep-these-points-in-mind"></a>Bu noktaları göz önünde bulundurun
 
-- Office 365 için Defender, SharePoint Online, OneDrive İş veya Microsoft Teams'te tek tek Microsoft Teams. Bu, tasarımdan kaynaklanır. Dosyalar zaman uyumsuz olarak taranır. Bu işlemde, kötü amaçlı dosyaları tanımlamak için paylaşım ve konuk etkinliği etkinliklerinin yanı sıra akıllı heuristler ve tehdit işaretleri de kullanılır.
+- Office 365 için Defender SharePoint Online, OneDrive İş veya Microsoft Teams'deki her dosyayı taramaz. Bu, tasarımdan kaynaklanır. Dosyalar zaman uyumsuz olarak taranır. Bu işlem, kötü amaçlı dosyaları tanımlamak için akıllı buluşsal yöntemler ve tehdit sinyalleriyle birlikte paylaşım ve konuk etkinliği olaylarını kullanır.
 
-- En son SharePoint Modern deneyimi kullanmak üzere yapılandırıldığından [emin olun](/sharepoint/guide-to-sharepoint-modern-experience). Office 365 için Defender koruması Hem Modern deneyim hem de Klasik görünüm kullanılırken geçerlidir; bununla birlikte, bir dosyanın engellenmiş olduğu görsel göstergeler yalnızca Modern deneyimde kullanılabilir.
+- SharePoint sitelerinizin [Modern deneyimi](/sharepoint/guide-to-sharepoint-modern-experience) kullanacak şekilde yapılandırıldığından emin olun. Office 365 için Defender koruması, Modern deneyimin veya Klasik görünümün kullanılıp kullanılmadığını uygular; ancak bir dosyanın engellendiğine ilişkin görsel göstergeler yalnızca Modern deneyimde kullanılabilir.
 
-- Kasa SharePoint, OneDrive ve Microsoft Teams ekleri, Exchange Online Protection'te (EOP) istenmeyen posta ve kötü amaçlı yazılımdan koruma ile kötü amaçlı yazılımdan korumayı içeren genel tehdit koruma stratejisinde yer alan Kasa Bağlantılar'dır ve Kasa'de Ekleri Office 365 için Microsoft Defender. Daha fazla bilgi edinmek için bkz[. Güvenlik tehditlerine Office 365](protect-against-threats.md).
+- SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler, kuruluşunuzun Exchange Online Protection'de (EOP) istenmeyen posta ve kötü amaçlı yazılımdan korumanın yanı sıra Office 365 için Microsoft Defender'daki Güvenli Bağlantılar ve Güvenli Ekler'i de içeren genel tehdit koruma stratejisinin bir parçasıdır. Daha fazla bilgi için bkz[. Office 365 tehditlere karşı koruma](protect-against-threats.md).

@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: crimora
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -18,12 +18,12 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: Yönetilen Hizmet Sağlayıcıları (MSP' ler) için Microsoft 365 Lighthouse tek bir konumdaki müşteri kiracılarının güvenliğini sağlamanıza ve yönetmenize nasıl yardımcı olabileceğini öğrenin.
-ms.openlocfilehash: 9b8c2b897b5a5d726435700f50afd6030a340ec0
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 8bba3dbe14cf1370d3074872852eb4af9a2f0e11
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007184"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596170"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'a genel bakış
 
@@ -31,12 +31,12 @@ Microsoft 365 Lighthouse, Yönetilen Hizmet Sağlayıcılarının (MSP' ler) kü
 
 Lighthouse, SMB müşterilerine özel güvenlik yapılandırma temelleri önererek ve tüm müşteri ortamlarında çok kiracılı görünümler sağlayarak müşteri kiracılarının eklemeyi kolaylaştırır. Lighthouse ile MSP'ler müşterilerinin yönetimini ölçeklendirebilir, en önemli şeylere odaklanabilir, riskleri hızla bulabilir ve araştırabilir ve müşterilerini sağlıklı ve güvenli bir duruma getirmek için harekete geçebilir.
 
-Lighthouse'un Microsoft 365 hizmetlerini ve bağlı cihazları yönetmek için kullanılmasıyla ilgili ek maliyet yoktur. Lighthouse, SMB müşterilerine hizmet veren Bulut Çözümü Sağlayıcısı (CSP) programına kayıtlı MSP'ler tarafından kullanılabilir. Bu, doğrudan Microsoft ile işlem yapan CSP iş ortaklarını ve dolaylı bir sağlayıcı (dağıtımcı) aracılığıyla işlem yapanları içerir.
+Microsoft 365 hizmetlerini ve bağlı cihazları yönetmek için Lighthouse kullanımıyla ilgili ek maliyet yoktur. Lighthouse, SMB müşterilerine hizmet veren Bulut Çözümü Sağlayıcısı (CSP) programına kayıtlı MSP'ler tarafından kullanılabilir. Bu, doğrudan Microsoft ile işlem yapan CSP iş ortaklarını ve dolaylı bir sağlayıcı (dağıtımcı) aracılığıyla işlem yapanları içerir.
 
 > [!IMPORTANT] 
 > Lighthouse'un kullanılabilmesi için MSP'lerin ve müşteri kiracılarının [Microsoft 365 Lighthouse gereksinimlerinde listelenen gereksinimleri](m365-lighthouse-requirements.md) karşılaması gerekir.
 
-CSP programı hakkında daha fazla bilgi için bkz. [Bulut Çözümü Sağlayıcısı programa genel bakış](/partner-center/csp-overview).
+CSP programı hakkında daha fazla bilgi için bkz. [Bulut Çözümü Sağlayıcısı programına genel bakış](/partner-center/csp-overview).
 
 > [!NOTE]  
 > Benzer bir teklif olan Azure Lighthouse, hizmet sağlayıcılarının Azure platformunda yerleşik olarak bulunan kapsamlı ve sağlam yönetim araçlarını kullanarak Azure hizmetleri için yönetilen hizmetler sunmalarına yardımcı olur. Daha fazla bilgi edinmek için bkz. [Azure Lighthouse nedir?](/azure/lighthouse/overview)   
@@ -47,7 +47,7 @@ CSP programı hakkında daha fazla bilgi için bkz. [Bulut Çözümü Sağlayıc
 
 ## <a name="microsoft-365-lighthouse-benefits"></a>Microsoft 365 Lighthouse avantajları
 
-Lighthouse, MSP'lerin Microsoft 365 hizmetlerinin ve bağlı uç noktaların güvenliğini sağlamalarına ve yönetmelerine yardımcı olur:
+Lighthouse, MSP'lerin microsoft 365 hizmetlerini ve bağlı uç noktaları şu ölçeklerde güvenli ve yönetebilir:
 
 - Teknisyenlerin müşteri kiracılarını güvenli hale getirmek ve yapılandırmak için tutarlı bir dizi adımı izleyebilmesi için kiracı dağıtım yolculukları sağlama. 
 - Küçük ve orta ölçekli işletme kiracılarını hedefleyen en iyi yöntemleri belirten varsayılan bir SMB güvenlik temeli kullanma. 
@@ -56,7 +56,7 @@ Lighthouse, MSP'lerin Microsoft 365 hizmetlerinin ve bağlı uç noktaların gü
 - Kullanıcıların benimsemesini sağlamaya yardımcı olacak araçlar da dahil olmak üzere çok faktörlü kimlik doğrulamasını ve self servis parola sıfırlamayı yapılandırma. 
 - Riskli oturum açma işlemlerine karşı koruma ve anlama.
 - Windows 10 cihazlardaki tehditleri yönetmek için Microsoft 365 Defender tarafından algılanan tehditlerle ilgili ayrıntılar ve sorunları çözmek ve cihazları güncel tutmak için yapılması gereken eylemler.
-- Yönettiği müşteri kiracılarını etkileyen Microsoft 365 hizmet olayları ve danışmanları hakkında içgörüler sağlama.
+- Yönettiği müşteri kiracılarını etkileyen Microsoft 365 hizmet olayları ve önerileri hakkında içgörüler sağlama.
 
 > [!NOTE] 
 > Kaydolma hakkında daha fazla bilgi için bkz. [Microsoft 365 Lighthouse için kaydolma](m365-lighthouse-sign-up.md).

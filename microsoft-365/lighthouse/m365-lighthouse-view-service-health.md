@@ -7,7 +7,7 @@ manager: scotv
 ms-reviewer: chboyd
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için kiracı hizmeti durumunu görüntülemeyi öğrenin.
-ms.openlocfilehash: 53424b98dc47e16971322260a93e30eb707161a7
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 968cea20e26a2b15bceb7cb28474e65e96a6afc0
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007162"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590754"
 ---
 # <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>kiracı hizmetinin durumunu Microsoft 365 Lighthouse görüntüleme
 

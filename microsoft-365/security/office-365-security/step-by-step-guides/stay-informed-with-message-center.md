@@ -3,7 +3,7 @@ title: Office 365 için Microsoft Defender için ileti merkezi değişikliklerin
 description: Office 365 için Microsoft Defender değişiklikleri hakkında güncel kalmak için ileti merkezi etkinliğinin haftalık özet e-postasını ayarlama adımları.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: a7df8a0ec777e68b273b246ac6d92adca44539b7
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.openlocfilehash: 27d6483c8a0a92f912421fe2f7feb7f62e99e5bb
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67470497"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596599"
 ---
 # <a name="set-up-a-digest-notification-of-changes-to-microsoft-defender-for-office-365-using-the-message-center"></a>İleti merkezini kullanarak Office 365 için Microsoft Defender yapılan değişikliklerin özet bildirimini ayarlama
 

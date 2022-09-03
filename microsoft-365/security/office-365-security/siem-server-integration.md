@@ -15,15 +15,15 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 - seo-marvel-apr2020
-description: Microsoft 365 bulut hizmetleriniz ve uygulamalarınızla Güvenlik Bilgileri ve Olay Yönetimi (SIEM) sunucusu tümleştirmesine genel bakış elde edin
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: ffb457a378539691627eff3ad24b24ef782705c1
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+description: Microsoft 365 bulut hizmetleriniz ve uygulamalarınızla Güvenlik Bilgileri ve Olay Yönetimi (SIEM) sunucusu tümleştirmesine genel bakış edinin
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 9f76a4d80844b491a5896db489a23b58db9bb153
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670212"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595971"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Microsoft 365 hizmetleri ve uygulamalarıyla Güvenlik Bilgileri ve Olay Yönetimi (SIEM) sunucusu tümleştirmesi
 
@@ -50,18 +50,18 @@ SIEM sunucusuna ihtiyacınız olup olmadığı, kuruluşunuzun güvenlik gereksi
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>Microsoft 365 ile SIEM sunucusu tümleştirmesi
 
-SIEM sunucusu, çok çeşitli Microsoft 365 hizmet ve uygulamalarından veri alabilir. Aşağıdaki tabloda, daha fazla bilgi edinmek için SIEM sunucu girişleri ve kaynaklarıyla birlikte çeşitli Microsoft 365 hizmetleri ve uygulamaları listelenmektedir.
+SIEM sunucusu çok çeşitli Microsoft 365 hizmet ve uygulamalarından veri alabilir. Aşağıdaki tabloda çeşitli Microsoft 365 hizmetleri ve uygulamalarının yanı sıra daha fazla bilgi edinmek için SIEM sunucu girişleri ve kaynakları listelenmektedir.
 
 <br/><br/>
 
-|hizmet veya uygulama Microsoft 365|SIEM sunucu girişleri/yöntemleri|Daha fazla bilgi edinmek için kaynaklar|
+|Microsoft 365 Hizmeti veya Uygulaması|SIEM sunucu girişleri/yöntemleri|Daha fazla bilgi edinmek için kaynaklar|
 |---|---|---|
 |[Office 365 için Microsoft Defender](defender-for-office-365.md)|Denetim günlükleri|[Office 365 için Microsoft Defender ile SIEM tümleştirmesi](siem-integration-with-office-365-ti.md)|
 |[Uç Nokta için Microsoft Defender](/windows/security/threat-protection/)|Azure'da barındırılan HTTPS uç noktası <p> REST API|[SIEM araçlarınıza uyarı çekme](../defender-endpoint/configure-siem.md)|
 |[Bulut Uygulamaları için Microsoft Defender](/cloud-app-security/what-is-cloud-app-security)|Günlük tümleştirmesi|[Microsoft Defender for Cloud Apps ile SIEM tümleştirmesi](/cloud-app-security/siem)|
 
 > [!TIP]
-> [Microsoft Sentinel'e](/azure/sentinel/overview) göz atın. Microsoft Sentinel, Microsoft çözümleri için bağlayıcılarla birlikte gelir. Bu bağlayıcılar "kullanıma hazır" kullanılabilir ve gerçek zamanlı tümleştirme sağlar. Microsoft Sentinel'i Office 365, Azure AD, Kimlik için Microsoft Defender gibi Microsoft 365 Defender çözümleriniz ve Microsoft 365 hizmetlerinizle birlikte kullanabilirsiniz. Microsoft Defender for Cloud Apps ve daha fazlası.
+> [Microsoft Sentinel'e](/azure/sentinel/overview) göz atın. Microsoft Sentinel, Microsoft çözümleri için bağlayıcılarla birlikte gelir. Bu bağlayıcılar "kullanıma hazır" kullanılabilir ve gerçek zamanlı tümleştirme sağlar. Microsoft Sentinel'i Office 365, Azure AD, Kimlik için Microsoft Defender gibi Microsoft 365 Defender çözümlerinizle ve Microsoft 365 hizmetleriyle birlikte kullanabilirsiniz. Microsoft Defender for Cloud Apps ve daha fazlası.
 
 ### <a name="audit-logging-must-be-turned-on"></a>Denetim günlüğü açık olmalıdır
 
@@ -78,9 +78,9 @@ Geçerli planınızın Microsoft Sentinel tümleştirmesine izin verdiğinden (�
 1. Ekranın sol tarafındaki gezinti bölmesinde **Yapılandırma** > **Verileri bağlayıcıları**.
 1. Microsoft 365 Defender **arayın** ve **Microsoft 365 Defender (önizleme) bağlayıcısını** seçin.
 1. Ekranınızın sağ tarafında **Bağlayıcı Sayfasını Aç'ı** seçin.
-1. **Yapılandırma** > altında **Bağlan olayları & uyarıları** seçin
+1. **Yapılandırma** > altında **Olayları & uyarıları bağla'yı** seçin
     1. Seçili olan ürünler için tüm Microsoft olay oluşturma kurallarını kapatın.
-1. Sayfayı  kaydırarak sayfanın **Bağlan olayları bölümünde Office 365 için Microsoft Defender**.
+1. Sayfayı kaydırarak sayfanın **Olayları bağlama** bölümünde **Office 365 için Microsoft Defender**.
 
 Son adımı tamamlarken yararlı ve uygulanabilir bulduğunuz *diğer tüm Microsoft Defender ürünlerinden* tablo seçebileceğinizi unutmayın (aşağıda).
 
@@ -88,6 +88,6 @@ Son adımı tamamlarken yararlı ve uygulanabilir bulduğunuz *diğer tüm Micro
 
 ## <a name="more-resources"></a>Diğer kaynaklar
 
-[güvenlik çözümlerini Bulut için Microsoft Defender'de tümleştirme](/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
+[Bulut için Microsoft Defender'da güvenlik çözümlerini tümleştirme](/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
 [Microsoft Graph Güvenlik API'si uyarılarını SIEM ile tümleştirme](/graph/security-integration)

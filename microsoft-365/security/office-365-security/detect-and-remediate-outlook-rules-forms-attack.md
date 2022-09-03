@@ -16,31 +16,31 @@ search.appverid:
 - MET150
 description: Office 365'de Outlook kurallarını ve özel form ekleme saldırılarını tanımayı ve düzeltmeyi öğrenin
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 370fa7cf6e8003954044290b7c19c3d839b0a145
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 108a03544b4ad7dcb889f2b1c3381dcae48ae6e7
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016042"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596081"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Outlook Kurallarını ve Özel Form Ekleme Saldırılarını Algılama ve Düzeltme
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Özet** Office 365'da Outlook kurallarını ve özel Forms ekleme saldırılarını tanıyıp düzeltmeyi öğrenin.
+**Özet** Office 365'de Outlook kurallarını ve özel Forms ekleme saldırılarını tanıyıp düzeltmeyi öğrenin.
 
 ## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Outlook Kuralları ve Özel Form ekleme saldırısı nedir?
 
-Bir saldırgan kuruluşunuza erişim elde ettikten sonra, bulunduğu yerde kalmak veya bulunduktan sonra geri dönmek için bir koruma alanı oluşturmaya çalışır. Bu etkinliğe *kalıcılık mekanizması oluşturma* adı verilir. Bir saldırganın kalıcılık mekanizması oluşturmak için Outlook kullanabileceği iki yol vardır:
+Bir saldırgan kuruluşunuza erişim elde ettikten sonra, bulunduğu yerde kalmak veya bulunduktan sonra geri dönmek için bir koruma alanı oluşturmaya çalışır. Bu etkinliğe *kalıcılık mekanizması oluşturma* adı verilir. Bir saldırganın kalıcılık mekanizması oluşturmak için Outlook'u kullanabilmesi için iki yol vardır:
 
-- Outlook kuralları kullanarak.
-- Outlook özel formlar ekleyerek.
+- Outlook kurallarını kullanarak.
+- Outlook'a özel formlar ekleyerek.
 
-Outlook yeniden yüklemek ve hatta etkilenen kişiye yeni bir bilgisayar vermek yardımcı olmaz. yeni Outlook yüklemesi posta kutusuna bağlandığında, tüm kurallar ve formlar buluttan eşitlenir. Kurallar veya formlar genellikle uzak kod çalıştırmak ve yerel makineye kötü amaçlı yazılım yüklemek için tasarlanmıştır. Kötü amaçlı yazılım kimlik bilgilerini çalar veya diğer yasadışı etkinlikleri gerçekleştirir.
+Outlook'u yeniden yüklemek, hatta etkilenen kişiye yeni bir bilgisayar vermek bile yardımcı olmaz. Outlook'un yeni yüklemesi posta kutusuna bağlandığında, tüm kurallar ve formlar buluttan eşitlenir. Kurallar veya formlar genellikle uzak kod çalıştırmak ve yerel makineye kötü amaçlı yazılım yüklemek için tasarlanmıştır. Kötü amaçlı yazılım kimlik bilgilerini çalar veya diğer yasadışı etkinlikleri gerçekleştirir.
 
-İyi haber şudur: Outlook istemcilerinize en son sürüme düzeltme eki uygulamazsanız, geçerli Outlook istemci varsayılanları her iki mekanizmayı da engellediğinden tehditlere karşı savunmasız olmazsınız.
+İyi haber şudur: Outlook istemcilerinize en son sürüme düzeltme eki uygulamazsanız, geçerli Outlook istemcisi varsayılan olarak her iki mekanizmayı da engellediğinden, bu tehdide karşı savunmasız değilsinizdir.
 
 Saldırılar genellikle şu desenleri izler:
 
@@ -101,9 +101,9 @@ Saldırıyı onaylamak için aşağıdaki yöntemlerden birini kullanabilirsiniz
 
 ### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>Outlook istemcisini kullanarak Kural Saldırısını Onaylama
 
-1. kullanıcı Outlook istemcisini kullanıcı olarak açın. Kullanıcının posta kutularındaki kuralları inceleme konusunda yardımınıza ihtiyacı olabilir.
+1. Kullanıcı olarak kullanıcılar Outlook istemcisini açın. Kullanıcının posta kutularındaki kuralları inceleme konusunda yardımınıza ihtiyacı olabilir.
 
-2. Outlook'da kural arabirimini açma yordamları için Kural [kullanarak e-posta iletilerini yönetme](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) makalesine bakın.
+2. Outlook'ta kural arabirimini açma yordamları için Kural [kullanarak e-posta iletilerini yönetme](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) makalesine bakın.
 
 3. Kullanıcının oluşturmadığı kuralları veya şüpheli adlara sahip beklenmeyen kuralları veya kuralları arayın.
 
@@ -113,11 +113,11 @@ Saldırıyı onaylamak için aşağıdaki yöntemlerden birini kullanabilirsiniz
 
 ### <a name="steps-to-confirm-the-forms-attack-using-the-outlook-client"></a>Outlook istemcisini kullanarak Forms saldırısını onaylama adımları
 
-1. kullanıcı Outlook istemcisini kullanıcı olarak açın.
+1. Kullanıcı olarak Outlook istemcisini açın.
 
-2. Kullanıcının Outlook [sürümünün Geliştirici sekmesini gösterme](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) bölümünde yer alan adımları izleyin.
+2. Kullanıcının Outlook [sürümünün Geliştirici sekmesini gösterme](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) başlığı altındaki adımları izleyin.
 
-3. Outlook'da görünür durumdaki geliştirici sekmesini açın ve **form tasarla'ya** tıklayın.
+3. Outlook'ta görünür durumdaki geliştirici sekmesini açın ve **form tasarla'ya** tıklayın.
 
 4. Bak listesinden **Gelen** **Kutusu'nu** seçin. Herhangi bir özel form arayın. Özel formlar, özel formlarınız varsa daha derin bir görünüme değer olacak kadar nadirdir.
 
@@ -153,11 +153,11 @@ Betik, kuralları ve formları okumak için kiracıdaki her posta kutusuna bağl
 
 - ***MailboxFormsExport-yyyy-mm-dd*.csv**: Genel olarak, özel formların kullanımı nadirdir. Bu çalışma kitabında herhangi bir posta kutusu bulursanız, kullanıcının posta kutusunu açar ve formun kendisini incelersiniz. Kuruluşunuz bunu kasıtlı olarak koymadıysa, büyük olasılıkla kötü amaçlıdır.
 
-## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>Outlook Kuralları ve Formları saldırısını durdurma ve düzeltme
+## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>Outlook Kuralları ve Forms saldırısını durdurma ve düzeltme
 
 Bu saldırılardan herhangi biriyle ilgili herhangi bir kanıt bulursanız, düzeltme basittir, kuralı veya formu posta kutusundan silmeniz gerekir. Bunu Outlook istemcisiyle veya kuralları kaldırmak için Exchange PowerShell kullanarak yapabilirsiniz.
 
-### <a name="using-outlook"></a>Outlook kullanma
+### <a name="using-outlook"></a>Outlook'u kullanma
 
 1. Kullanıcının Outlook ile kullandığı tüm cihazları tanımlayın. Bunların tümünün olası kötü amaçlı yazılımlardan temizlenmesi gerekir. Tüm cihazlar temizlenene kadar kullanıcının oturum açmasına ve e-posta kullanmasına izin verme.
 
@@ -165,7 +165,7 @@ Bu saldırılardan herhangi biriyle ilgili herhangi bir kanıt bulursanız, düz
 
 3. Diğer kötü amaçlı yazılımların varlığından emin değilseniz, tüm yazılımı cihaza biçimlendirebilir ve yeniden yükleyebilirsiniz. Mobil cihazlar için üretici adımlarını izleyerek cihazı fabrika görüntüsüne sıfırlayabilirsiniz.
 
-4. Outlook en güncel sürümlerini yükleyin. Outlook geçerli sürümünün bu saldırının her iki türünü de varsayılan olarak engellediğini unutmayın.
+4. Outlook'un en güncel sürümlerini yükleyin. Outlook'un geçerli sürümünün bu saldırının her iki türünü de varsayılan olarak engellediğini unutmayın.
 
 5. Posta kutusunun tüm çevrimdışı kopyaları kaldırıldıktan sonra, kullanıcının parolasını sıfırlayın (yüksek kaliteli bir parola kullanın) ve MFA henüz etkinleştirilmemişse [kullanıcılar için çok faktörlü kimlik doğrulamasını ayarlama](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) başlığı altında yer alan adımları izleyin. Bu, kullanıcının kimlik bilgilerinin başka yollarla (kimlik avı veya parola yeniden kullanımı gibi) gösterilmemesini sağlar.
 
@@ -173,9 +173,9 @@ Bu saldırılardan herhangi biriyle ilgili herhangi bir kanıt bulursanız, düz
 
 Tehlikeli kuralları kaldırmak veya devre dışı bırakmak için kullanabileceğiniz iki Exchange PowerShell cmdlet'i vardır. Adımları izlemen yeter.
 
-#### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Exchange sunucusundaki posta kutuları için adımlar
+#### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Exchange sunucusunda bulunan posta kutuları için adımlar
 
-1. Uzak PowerShell veya Exchange Yönetim Kabuğu'nu kullanarak Exchange sunucusuna Bağlan. [Uzak PowerShell kullanarak sunucuları Exchange için Bağlan'deki](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell) adımları izleyin veya [Exchange Yönetim Kabuğunu açın](/powershell/exchange/open-the-exchange-management-shell).
+1. Uzak PowerShell veya Exchange Yönetim Kabuğu'nu kullanarak Exchange sunucusuna bağlanın. [Uzak PowerShell kullanarak Exchange sunucularına bağlanma](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell) veya [Exchange Yönetim Kabuğunu Açma adımlarını](/powershell/exchange/open-the-exchange-management-shell) izleyin.
 
 2. Bir posta kutusundan tek bir kuralı, birden çok kuralı veya tüm kuralları tamamen kaldırmak istiyorsanız [Remove-InboxRule cmdlet'ini](/powershell/module/exchange/Remove-InboxRule) kullanın.
 
@@ -183,7 +183,7 @@ Tehlikeli kuralları kaldırmak veya devre dışı bırakmak için kullanabilece
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Exchange Online'da posta kutuları için adımlar
 
-1. [PowerShell'i Exchange Online için Bağlan'deki](/powershell/exchange/connect-to-exchange-online-powershell) adımları izleyin.
+1. [Exchange Online PowerShell'e bağlanma'daki](/powershell/exchange/connect-to-exchange-online-powershell) adımları izleyin.
 
 2. Bir posta kutusundan tek bir kuralı, birden çok kuralı veya tüm kuralları tamamen kaldırmak istiyorsanız [Gelen Kutusu Kuralını Kaldır cmdlet'ini](/powershell/module/exchange/Remove-InboxRule) kullanın.
 
@@ -209,7 +209,7 @@ Kullanıcı hesaplarınızı ve özellikle de yönetici hesaplarınızı koruman
 
 ### <a name="second-keep-your-outlook-clients-current"></a>İkinci: Outlook istemcilerinizi güncel tutun
 
-Outlook 2013 ve 2016'nın tam olarak güncelleştirilmiş ve düzeltme eki eklenmiş sürümleri varsayılan olarak "Uygulamayı Başlat" kuralı/form eylemini devre dışı bırakır. Bu, bir saldırgan hesabı ihlal ederse bile kural ve form eylemlerinin engellenmesini sağlar. Güncelleştirmeleri yükleme Office adımlarını izleyerek en son güncelleştirmeleri ve güvenlik düzeltme [eklerini](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5) yükleyebilirsiniz.
+Outlook 2013'ün tam olarak güncelleştirilmiş ve düzeltme eki eklenmiş sürümleri ve 2016, varsayılan olarak "Uygulamayı Başlat" kuralını/form eylemini devre dışı bırakır. Bu, bir saldırgan hesabı ihlal ederse bile kural ve form eylemlerinin engellenmesini sağlar. Office güncelleştirmelerini yükleme bölümünde yer alan adımları izleyerek en son güncelleştirmeleri ve güvenlik düzeltme [eklerini](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5) yükleyebilirsiniz.
 
 Outlook 2013 ve 2016 istemcileriniz için düzeltme eki sürümleri şunlardır:
 
@@ -227,19 +227,19 @@ Tek tek güvenlik düzeltme ekleri hakkında daha fazla bilgi için bkz:
 
 Düzeltme ekleri ve güncelleştirmeler yüklü olsa bile, bir saldırganın "Uygulamayı Başlat" davranışını yeniden etkinleştirmek için yerel makine yapılandırmasını değiştirmesinin mümkün olduğunu unutmayın. İstemcilerinizde yerel makine ilkelerini izlemek ve zorunlu kılmak için [Gelişmiş grup ilkesi Yönetimi'ni](/microsoft-desktop-optimization-pack/agpm/) kullanabilirsiniz.
 
-Windows'nin [64 bit sürümlerini kullanarak sistem kayıt defterini görüntüleme'deki](https://support.microsoft.com/help/305097) bilgileri kullanarak kayıt defterindeki bir geçersiz kılma aracılığıyla "Uygulamayı Başlat" özelliğinin yeniden etkinleştirilip etkinleştirilmediğini görebilirsiniz. Şu alt anahtarları denetleyin:
+[Windows'un 64 bit sürümlerini kullanarak sistem kayıt defterini görüntüleme'deki](https://support.microsoft.com/help/305097) bilgileri kullanarak kayıt defterindeki bir geçersiz kılma aracılığıyla "Uygulamayı Başlat"ın yeniden etkinleştirilip etkinleştirilmediğini görebilirsiniz. Şu alt anahtarları denetleyin:
 
 - **Outlook 2016**:`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
-- **Outlook 2013**:`HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
+- **Outlook 2013**: `HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
 
-EnableUnsafeClientMailRules anahtarını arayın. Oradaysa ve 1 olarak ayarlandıysa, Outlook güvenlik düzeltme eki geçersiz kılınmıştır ve bilgisayar Form/Kurallar saldırısına karşı savunmasızdır. Değer 0 ise, "Uygulamayı Başlat" eylemi devre dışı bırakılır. Outlook güncelleştirilmiş ve düzeltme eki uygulanmış sürümü yüklüyse ve bu kayıt defteri anahtarı yoksa, sistem bu saldırılara karşı savunmasız değildir.
+EnableUnsafeClientMailRules anahtarını arayın. Oradaysa ve 1 olarak ayarlandıysa, Outlook güvenlik düzeltme eki geçersiz kılınmıştır ve bilgisayar Form/Kurallar saldırısına karşı savunmasızdır. Değer 0 ise, "Uygulamayı Başlat" eylemi devre dışı bırakılır. Outlook'un güncelleştirilmiş ve düzeltme eki uygulanmış sürümü yüklüyse ve bu kayıt defteri anahtarı yoksa, sistem bu saldırılara karşı savunmasız değildir.
 
-Şirket içi Exchange yüklemeleri olan müşteriler, düzeltme ekleri bulunmayan eski Outlook sürümlerini engellemeyi düşünmelidir. Bu işlemle ilgili ayrıntılara [Outlook istemci engellemeyi yapılandırma](/exchange/configure-outlook-client-blocking-exchange-2013-help) makalesinde bulunabilir.
+Şirket içi Exchange yüklemeleri olan müşteriler, Düzeltme ekleri bulunmayan eski Outlook sürümlerini engellemeyi göz önünde bulundurmalıdır. Bu işlemle ilgili ayrıntılar [Outlook istemci engellemesini yapılandırma](/exchange/configure-outlook-client-blocking-exchange-2013-help) makalesinde bulunabilir.
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Siber güvenlik uzmanı gibi güvenli Microsoft 365
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Microsoft 365'i bir siber güvenlik uzmanı gibi güvenli bir şekilde sağlama
 
-Microsoft 365 aboneliğiniz, verilerinizi ve kullanıcılarınızı korumak için kullanabileceğiniz güçlü bir güvenlik özellikleri kümesiyle birlikte gelir. microsoft'un Microsoft 365 kiracınızın güvenliğini sağlamaya yönelik önerilen en iyi yöntemleri uygulamak [için Microsoft 365 güvenlik yol haritası - İlk 30 gün, 90 gün ve sonrasındaki en önemli öncelikleri](security-roadmap.md) kullanın.
+Microsoft 365 aboneliğiniz, verilerinizi ve kullanıcılarınızı korumak için kullanabileceğiniz güçlü bir güvenlik özellikleri kümesiyle birlikte gelir. Microsoft 365 kiracınızın güvenliğini sağlamak için Microsoft tarafından önerilen en iyi yöntemleri uygulamak [için Microsoft 365 güvenlik yol haritası - İlk 30 gün, 90 gün ve sonrasındaki en önemli öncelikleri](security-roadmap.md) kullanın.
 
 - İlk 30 günde gerçekleştirecek görevler. Bunlar hemen etkili olur ve kullanıcılarınız için düşük etkiye sahiptir.
 
@@ -249,11 +249,11 @@ Microsoft 365 aboneliğiniz, verilerinizi ve kullanıcılarınızı korumak içi
 
 ## <a name="see-also"></a>Ayrıca bkz:
 
-- Kurallar Vektör hakkında SilentBreak Güvenlik Gönderisi'nin [Kötü Amaçlı Outlook Kuralları](https://silentbreaksecurity.com/malicious-outlook-rules/), Outlook Kurallarının nasıl yapıldığını ayrıntılı bir şekilde gözden geçirmenizi sağlar.
+- Kurallar Vektör hakkında SilentBreak Güvenlik Gönderisinin [Kötü Amaçlı Outlook Kuralları](https://silentbreaksecurity.com/malicious-outlook-rules/), Outlook Kurallarının nasıl yapıldığını ayrıntılı bir şekilde gözden geçirmenizi sağlar.
 
 - Mailrule Pwnage hakkındaki Sensepost blogundaki [HTTP ve Mailrule Pwnage üzerinden MAPI](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/), Outlook kuralları aracılığıyla posta kutularında yararlanmanıza olanak tanıyan Cetvel adlı bir aracı ele alır.
 
-- Formlar Tehdit Vektörüne ilişkin Sensepost bloguna [formlar ve kabuklar Outlook](https://sensepost.com/blog/2017/outlook-forms-and-shells/).
+- Forms Threat Vector hakkındaki Sensepost blogundaki [Outlook formları ve kabukları](https://sensepost.com/blog/2017/outlook-forms-and-shells/).
 
 - [Cetvel Kod Tabanı](https://github.com/sensepost/ruler)
 

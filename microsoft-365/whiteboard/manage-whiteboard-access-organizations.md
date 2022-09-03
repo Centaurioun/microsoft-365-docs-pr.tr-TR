@@ -7,17 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft 365 yönetim merkezi kuruluşunuz için Microsoft Whiteboard'u ayarlamayı öğrenin.
-ms.openlocfilehash: 12c16c428d6cd03459d6de4bb4e372d471b1ba36
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: 5e72dd78229c1bb4690c47fa3b637d52965eb0d7
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67369849"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596543"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-your-organization"></a>Kuruluşunuz için Microsoft Whiteboard erişimini yönetme
 

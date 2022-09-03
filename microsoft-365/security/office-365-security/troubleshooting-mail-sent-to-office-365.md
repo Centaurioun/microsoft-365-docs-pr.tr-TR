@@ -16,25 +16,25 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Bu makalede, Microsoft 365 müşterilere toplu posta göndermeye yönelik en iyi yöntemler Microsoft 365 & gelen kutularına e-posta göndermeyle ilgili sorun giderme bilgileri sağlanır.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 37703ccb0ffb37163033bb2fdca24566a33bb275
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+description: Bu makalede, Microsoft 365 müşterilerine toplu posta göndermek için en iyi yöntemler & Microsoft 365'te gelen kutularına e-posta göndermeyle ilgili sorun giderme bilgileri sağlanır.
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 661cdbb58b7ce0b8d7f77cfbea4677ad3af6a42d
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128444"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597746"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Microsoft 365'e gönderilen posta sorunlarını giderme
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 
-Bu makalede, Microsoft 365 gelen kutularına e-posta göndermeye çalışırken sorun yaşayan gönderenler için sorun giderme bilgileri ve müşterilere toplu posta göndermeye yönelik en iyi yöntemler sağlanır.
+Bu makalede, Microsoft 365'te gelen kutularına e-posta göndermeye çalışırken sorun yaşayan gönderenler için sorun giderme bilgileri ve müşterilere toplu posta göndermeye yönelik en iyi yöntemler sağlanır.
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>IP'nizin ve etki alanınızın gönderen itibarını yönetiyor musunuz?
 
@@ -62,7 +62,7 @@ Ters DNS araması başarısız olan gönderenlerden gelen e-postaları kabul etm
 
 Bazı teslim sorunları, gönderenin IP adresinin Microsoft tarafından engellenmesinin veya kullanıcı hesabının önceki istenmeyen posta etkinliği nedeniyle yasaklanmış gönderen olarak tanımlanmasının sonucudur. NDR'yi hatayla aldığınıza inanıyorsanız, sorunu çözmek için önce NDR iletisindeki yönergeleri izleyin.
 
-Aldığınız hata hakkında daha fazla bilgi için Exchange Online'da [E-posta teslim edilmedi raporlarındaki](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) hata kodlarının listesine bakın.
+Aldığınız hata hakkında daha fazla bilgi için Exchange Online Email [teslim edilmedi raporlarındaki](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online) hata kodlarının listesine bakın.
 
  Örneğin, aşağıdaki NDR'yi alırsanız, gönderen IP adresinin Microsoft tarafından engellendiğini gösterir:
 
@@ -70,7 +70,7 @@ Aldığınız hata hakkında daha fazla bilgi için Exchange Online'da [E-posta 
 
 Bu listeden kaldırma isteğinde bulunmak için [Listeden kaldırma portalını kullanarak kendinizi engellenen gönderenler listesinden kaldırabilirsiniz](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
-## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>E-postam alıcının Gereksiz E-posta klasörüne geldi
+## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>E-postam alıcının Önemsiz Email klasörüne geldi
 
 EOP tarafından hatalı bir şekilde istenmeyen posta olarak tanımlanan bir ileti varsa, alıcıyla birlikte çalışarak bu hatalı pozitif iletiyi Microsoft İstenmeyen Posta Çözümleme Ekibi'ne gönderebilirsiniz. Bu ileti, iletiyi değerlendirir ve analiz eder. Daha fazla bilgi için bkz. [İletileri ve dosyaları Microsoft'a bildirme](report-junk-email-messages-to-microsoft.md).
 
@@ -82,13 +82,13 @@ EOP'den IP adresinizin EOP tarafından kısıtlandığını belirten bir NDR al�
 
 IP adresinden şüpheli etkinlik algılandığından ve daha fazla değerlendirilirken geçici olarak kısıtlandığından NDR'yi aldınız. Değerlendirme yoluyla şüphe giderilirse, bu kısıtlama kısa süre sonra kaldırılacaktır.
 
-## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Microsoft 365'da gönderenlerden e-posta alamıyorum
+## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Microsoft 365'te gönderenlerden e-posta alamıyorum
 
  Kullanıcılarımızdan ileti almak için ağınızın EOP'nin veri merkezlerimizde kullandığı IP adreslerinden bağlantılara izin verdiğinden emin olun. Daha fazla bilgi için bkz. [IP adreslerini Exchange Online Protection](../../enterprise/urls-and-ip-address-ranges.md).
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Microsoft 365 kullanıcılara toplu e-posta göndermek için en iyi yöntemler
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Microsoft 365 kullanıcılarına toplu e-posta göndermek için en iyi yöntemler
 
-Kullanıcıları Microsoft 365 için sık sık toplu e-posta kampanyaları yürütüyorsanız ve e-postalarınızın güvenli ve zamanında ulaştığından emin olmak istiyorsanız, bu bölümdeki ipuçlarını izleyin.
+Microsoft 365 kullanıcılarına sık sık toplu e-posta kampanyaları yürütüyorsanız ve e-postalarınızın güvenli ve zamanında ulaştığından emin olmak istiyorsanız, bu bölümdeki ipuçlarını izleyin.
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Kimden adının iletiyi gönderen kişiyi yansıtdığından emin olun
 

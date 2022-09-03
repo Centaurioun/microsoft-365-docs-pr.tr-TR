@@ -20,14 +20,14 @@ description: Office 365 için Microsoft Defender'de otomatik araştırma ve yan�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 0fda154f8eb52ddab024a7f5bb02f980c9a05894
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 9d7a486e97356ca960ad0ac519445e30a997750e
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617162"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596368"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de otomatik araştırma ve yanıt (AIR)
 
@@ -93,8 +93,8 @@ Microsoft 365, Exchange yönetici izinlerinin kötüye kullanımı, kötü amaç
 |---|---|---|
 |Kötü amaçlı olabilecek bir URL tıklaması algılandı|**Yüksek**|Aşağıdakilerden herhangi biri gerçekleştiğinde bu uyarı oluşturulur: <ul><li>Kuruluşunuzdaki [Güvenli Bağlantılar](safe-links.md) tarafından korunan bir kullanıcı kötü amaçlı bir bağlantıya tıklar</li><li>URL'ler için karar değişiklikleri Office 365 için Microsoft Defender</li><li>Kullanıcılar Güvenli Bağlantılar uyarı sayfalarını (kuruluşunuzun [Güvenli Bağlantılar ilkesine](set-up-safe-links-policies.md) göre) geçersiz kılar.</li></ul> <p> Bu uyarıyı tetikleyen olaylar hakkında daha fazla bilgi için bkz. [Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).|
 |E-posta iletisi bir kullanıcı tarafından kötü amaçlı yazılım veya kimlik avı olarak bildirilir|**Bilgi**|Kuruluşunuzdaki kullanıcılar, [Rapor İletisi eklentisini veya Rapor](enable-the-report-message-add-in.md) Kimlik [Avı](enable-the-report-phish-add-in.md) eklentisini kullanarak iletileri kimlik avı e-postası olarak bildirdiğinde bu uyarı oluşturulur.|
-|Kötü amaçlı yazılım içeren e-posta iletileri teslimden sonra kaldırılır|**Bilgi**|Kötü amaçlı yazılım içeren tüm e-posta iletileri kuruluşunuzdaki posta kutularına teslim edildiğinde bu uyarı oluşturulur. Bu olay oluşursa, Microsoft [sıfır saatlik otomatik temizleme (ZAP)](zero-hour-auto-purge.md) kullanarak virüslü iletileri Exchange Online posta kutularından kaldırır.|
-|Kimlik avı URL'lerini içeren e-posta iletileri teslimden sonra kaldırılır|**Bilgi**|Bu uyarı, kimlik avı içeren iletiler kuruluşunuzdaki posta kutularına teslim edildiğinde oluşturulur. Bu olay oluşursa, Microsoft [zap](zero-hour-auto-purge.md) kullanarak Exchange Online posta kutularından virüslü iletileri kaldırır.|
+|Kötü amaçlı yazılım içeren Email iletileri teslimden sonra kaldırılır|**Bilgi**|Kötü amaçlı yazılım içeren tüm e-posta iletileri kuruluşunuzdaki posta kutularına teslim edildiğinde bu uyarı oluşturulur. Bu olay oluşursa, Microsoft [sıfır saatlik otomatik temizleme (ZAP)](zero-hour-auto-purge.md) kullanarak virüslü iletileri Exchange Online posta kutularından kaldırır.|
+|Kimlik avı URL'lerini içeren Email iletileri teslimden sonra kaldırılır|**Bilgi**|Bu uyarı, kimlik avı içeren iletiler kuruluşunuzdaki posta kutularına teslim edildiğinde oluşturulur. Bu olay oluşursa, Microsoft [zap](zero-hour-auto-purge.md) kullanarak Exchange Online posta kutularından virüslü iletileri kaldırır.|
 |Şüpheli e-posta gönderme desenleri algılandı|**Orta**|Bu uyarı, kuruluşunuzdaki biri şüpheli e-posta gönderdiğinde ve e-posta göndermesi kısıtlanma riskiyle karşılandığında oluşturulur. Uyarı, hesabın gizliliğinin ihlal edilmiş olduğunu ancak kullanıcıyı kısıtlayabilecek kadar ciddi olmadığını gösteren davranışlar için erken uyarıdır. <p> Nadir olsa da, bu ilke tarafından oluşturulan bir uyarı bir anomali olabilir. Ancak [, kullanıcı hesabının gizliliğinin ihlal edilip edilmediğini denetlemek iyi bir fikirdir](responding-to-a-compromised-email-account.md).|
 |Kullanıcının e-posta göndermesi kısıtlandı|**Yüksek**|Kuruluşunuzdaki birinin giden posta göndermesi kısıtlandığında bu uyarı oluşturulur. Bu uyarı genellikle [bir e-posta hesabının güvenliği aşıldığında sonuçlanır](responding-to-a-compromised-email-account.md). <p> Kısıtlı kullanıcılar hakkında daha fazla bilgi için bkz. [Microsoft 365'teki Kısıtlı Kullanıcılar portalından engellenen kullanıcıları kaldırma](removing-user-from-restricted-users-portal-after-spam.md).|
 
@@ -108,7 +108,7 @@ Microsoft 365, Exchange yönetici izinlerinin kötüye kullanımı, kötü amaç
 |Görev|Gerekli rol veya rol|
 |---|---|
 |AIR özelliklerini ayarlama|Aşağıdaki rollerden biri: <ul><li>Genel Yönetici</li><li>Güvenlik Yöneticisi</li></ul> <p> Bu roller [Azure Active Directory'de](/azure/active-directory/roles/permissions-reference) veya [Microsoft 365 Defender portalında](permissions-microsoft-365-security-center.md) atanabilir.|
-|Otomatik araştırma başlatın <p> --- veya --- <p> Önerilen eylemleri onaylama veya reddetme|[Azure Active Directory'de](/azure/active-directory/roles/permissions-reference) veya [Microsoft 365 Defender portalında](permissions-microsoft-365-security-center.md) atanan aşağıdaki rollerden biri: <ul><li>Genel Yönetici</li><li>Güvenlik Yöneticisi</li><li>Güvenlik İşleci</li><li>Güvenlik Okuyucusu <br> --- ve --- </li><li>Arama ve Temizleme (bu rol yalnızca [Microsoft 365 Defender portalında](permissions-microsoft-365-security-center.md) atanır. Orada yeni bir **E-posta & işbirliği** rol grubu oluşturmanız ve arama ve temizleme rolünü bu yeni rol grubuna eklemeniz gerekebilir.</li></ul>|
+|Otomatik araştırma başlatın <p> --- veya --- <p> Önerilen eylemleri onaylama veya reddetme|[Azure Active Directory'de](/azure/active-directory/roles/permissions-reference) veya [Microsoft 365 Defender portalında](permissions-microsoft-365-security-center.md) atanan aşağıdaki rollerden biri: <ul><li>Genel Yönetici</li><li>Güvenlik Yöneticisi</li><li>Güvenlik İşleci</li><li>Güvenlik Okuyucusu <br> --- ve --- </li><li>Arama ve Temizleme (bu rol yalnızca [Microsoft 365 Defender portalında](permissions-microsoft-365-security-center.md) atanır. Orada yeni bir **Email & işbirliği** rol grubu oluşturmanız ve arama ve temizleme rolünü bu yeni rol grubuna eklemeniz gerekebilir.</li></ul>|
 
 ## <a name="required-licenses"></a>Gerekli lisanslar
 
@@ -142,7 +142,7 @@ Aşağıdaki tabloda, Office 365 için Microsoft Defender'de AIR'e gelen değiş
 |---|---|
 |**Araştırma sayfası**|Güncelleştirilmiş **Araştırma sayfası**[, Uç Nokta için Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) gördüklerinizle daha tutarlıdır. Yeni, birleşik **Araştırma görünümüyle** uyumlu bazı genel biçim ve stil değişiklikleri görürsünüz. Örneğin, araştırma grafiği daha birleşik bir biçime sahiptir.|
 |**Kullanıcılar** sekmesi|**Kullanıcılar** sekmesi artık **Posta Kutuları** sekmesidir. Kullanıcılarla ilgili ayrıntılar **Posta Kutusu** sekmesinde listelenir.|
-|**E-posta** sekmesi|**E-posta** sekmesi kaldırıldı; e-posta ve e-posta kümesi öğelerinin listesini görmek için **Varlıklar** sekmesini ziyaret edin.|
+|**Email** sekmesi|**Email** sekmesi kaldırıldı; e-posta ve e-posta kümesi öğelerinin listesini görmek için **Varlıklar** sekmesini ziyaret edin.|
 |**Varlıklar** sekmesi|**Varlıklar** sekmesi, tüm özet görünümünü ve varlık türüne göre filtreleme özelliğini içeren bir sekme içinde sekme stiline sahiptir. **Varlıklar** sekmesi artık **Gezginde Aç** seçeneğine ek olarak bir **Go avcılığı** seçeneği de içerir. Artık varlıkları ve tehditleri bulmak ve sonuçları filtrelemek için [Gezgin'i](threat-explorer.md) veya [gelişmiş avcılığı](../defender-endpoint/advanced-hunting-overview.md) kullanabilirsiniz.|
 |**Eylemler** sekmesi|Güncelleştirilmiş **Eylemler** sekmesi artık **Bekleyen eylemler** sekmesi ve **Eylemler geçmişi** sekmesi içerir. Eylemler, bekleyen bir eylemi seçtiğinizde açılan bir yan bölmede onaylanabilir (veya reddedilebilir).|
 |**Kanıt** sekmesi|Yeni **bir Kanıt** sekmesi, eylemlerle ilgili temel varlık bulgularını gösterir. Her kanıt parçasıyla ilgili eylemler, bekleyen bir eylemi seçtiğinizde açılan bir yan bölmede onaylanabilir (veya reddedilebilir).|

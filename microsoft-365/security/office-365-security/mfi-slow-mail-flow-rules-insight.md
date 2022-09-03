@@ -14,18 +14,18 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, kuruluşlarındaki verimli olmayan veya bozuk posta akışı kurallarını (taşıma kuralları olarak da bilinir) tanımlamak ve düzeltmek için Güvenlik & Uyumluluk Merkezi'ndeki Yavaş posta akışı kurallarını düzeltme içgörülerini kullanmayı öğrenebilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 650389529f2a5d811f71b7c3f755d93e7e734d81
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: edc173463d6dd5882693f2734c8df09b487e1032
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128750"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597382"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'nde yavaş posta akışı kuralları içgörülerini düzeltme
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Uygulandığı öğe**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -48,7 +48,7 @@ Bu bildirimi, posta akışı gecikmelerini azaltmaya yardımcı olmak üzere pos
 
 Pencere öğesinde **Ayrıntıları görüntüle'ye** tıkladığınızda, daha fazla bilgi içeren bir açılır pencere görüntülenir:
 
-- **Kural**: Kuralın tüm koşullarını, özel durumlarını ve eylemlerini görmek için özetin üzerine gelebilirsiniz. Özete tıklayarak Exchange yönetim merkezinde (EAC) <https://admin.exchange.microsoft.com/#/transportrules>kuralı düzenleyebilirsiniz.
+- **Kural**: Kuralın tüm koşullarını, özel durumlarını ve eylemlerini görmek için özetin üzerine gelebilirsiniz. Kuralı düzenlemek için özete adresinden Exchange yönetim merkezinde (EAC) <https://admin.exchange.microsoft.com/#/transportrules>tıklayabilirsiniz.
 - **Değerlendirilen ileti sayısı**: Kuraldan etkilenen **iletilerin bir** örneğinin [ileti izleme](message-trace-scc.md) sonuçlarını görmek için Örnek iletileri görüntüle'ye tıklayabilirsiniz.
 - **Her ileti için harcanan ortalama süre**
 - **İletide harcanan ortanca süre**: Üst yarısını alt yarıdaki verilerden ayıran orta değerdir.

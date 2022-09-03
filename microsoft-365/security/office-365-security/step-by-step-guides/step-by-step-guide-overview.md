@@ -3,7 +3,7 @@ title: Office 365 için Microsoft Defender adım adım kılavuzlar ve bunların 
 description: Office 365 için Microsoft 365 Defender için adım adım kılavuzlar nelerdir? *Yalnızca bir görevi tamamlamak ve özellikleri ayarlamak için gereken adımlara* bakın. Deneme aboneliklerinde ve üretimde kullanım bilgileri. Bilgilerin aşırı yüklenmesini en aza indirmek ve yapılandırmanızı ve kullanımınızı hızlandırmak için tasarlanmış yönergeler.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: overview
-ms.technology: mdo
-ms.openlocfilehash: 6c31edcbcc523ce1946bb01e723541e48699c1b5
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.subservice: mdo
+ms.openlocfilehash: adec3c67a611c48f01b6c4c5550ef5368d47662c
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66861895"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67593835"
 ---
 # <a name="welcome-to-the-microsoft-defender-for-office-365-step-by-step-guides"></a>Office 365 için Microsoft Defender adım kılavuzlara hoş geldiniz
 
