@@ -22,12 +22,12 @@ ms.custom: ''
 description: Yöneticiler, Microsoft 365 kuruluşlarında güvenlik ayarlarını yükseltmeyi ve öncelikli hesaplar için raporları, uyarıları ve araştırmaları kullanmayı öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 047c4aaffdad5831ec7b5bca76449cb909fe870d
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 6193ebcce086c741b84af1f3dc701e6ac0340537
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497279"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67598922"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365'te öncelikli hesaplar için güvenlik önerileri
 
@@ -98,7 +98,7 @@ Ayrıca, öncelik hesaplarınızı daha fazla tanımlamak ve sınıflandırmak i
 
 |Özellik|Açıklama|
 |---|---|
-|Uyarılar|Etkilenen kullanıcıların kullanıcı etiketleri görünür ve Microsoft 365 Defender portalındaki **Uyarılar** sayfasında filtre olarak kullanılabilir. Daha fazla bilgi için bkz [. Uyarıları görüntüleme](../../compliance/alert-policies.md#viewing-alerts).|
+|Uyarılar|Etkilenen kullanıcıların kullanıcı etiketleri görünür ve Microsoft 365 Defender portalındaki **Uyarılar** sayfasında filtre olarak kullanılabilir. Daha fazla bilgi için bkz [. Uyarıları görüntüleme](../../compliance/alert-policies.md#view-alerts).|
 |Explorer <p> Gerçek zamanlı algılamalar|**Gezgin'de** (Office 365 için Defender Plan 2) veya **Gerçek zamanlı algılamalarda** (Office 365 için Defender Plan 1), kullanıcı etiketleri Email kılavuz görünümünde ve Email ayrıntıları açılır penceresinde görünür. Kullanıcı etiketleri filtrelenebilir bir özellik olarak da kullanılabilir. Daha fazla bilgi için bkz.  [Explorer'da Etiketler](threat-explorer.md#tags-in-threat-explorer).|
 |Kampanya Görünümleri|Kullanıcı etiketleri, Office 365 için Microsoft Defender Plan 2'deki Kampanya Görünümlerinde filtrelenebilir özelliklerden biridir. Daha fazla bilgi için bkz. [Kampanya Görünümleri](campaigns.md).|
 |Tehdit koruması durum raporu|**Tehdit koruması durum raporundaki** neredeyse tüm görünümlerde ve ayrıntı tablolarında, sonuçları **öncelik hesaplarına** göre filtreleyebilirsiniz. Daha fazla bilgi için bkz [. Tehdit koruması durum raporu](view-email-security-reports.md#threat-protection-status-report).|

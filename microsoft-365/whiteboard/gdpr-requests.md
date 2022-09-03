@@ -7,17 +7,17 @@ ms.reviewer: ''
 audience: admin
 ms.topic: article
 ms.custom: ''
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard'dan kişisel bilgileri dışarı aktarmayı, aktarmayı veya silmeyi öğrenin.
-ms.openlocfilehash: 696e21ef3b48a9823554746fa7cc24b11e421af7
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: cdfd9f43cd28fb35c44fe3af0413e03ba693d0f7
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67369821"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67593791"
 ---
 # <a name="manage-gdpr-data-subject-requests-in-microsoft-whiteboard"></a>Microsoft Whiteboard'da GDPR veri sahibi isteklerini yönetme
 

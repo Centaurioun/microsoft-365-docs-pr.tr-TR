@@ -3,7 +3,7 @@ title: Karantina izinleri ve ilkeleri nasıl yapılandırılır?
 description: AdminOnlyPolicy, sınırlı erişim, tam erişim ve güvenlik yöneticilerine ve kullanıcılara hatalı pozitif klasörleri yönetmek için basit bir yol sağlama gibi farklı gruplar arasında karantina ilkeleri ve izinleri yapılandırma adımları.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: 709656cafc15333559ac8abe50e21ccde690d09a
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.subservice: mdo
+ms.openlocfilehash: 2da7583ed6c326fc0bea68e0d74d76e893a816b0
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106963"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596753"
 ---
 # <a name="how-to-configure-quarantine-permissions-and-policies"></a>Karantina izinleri ve ilkeleri nasıl yapılandırılır?
 

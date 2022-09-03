@@ -3,7 +3,7 @@ title: Otomatik Araştırma ve Yanıt (AIR) önceliklerini belirleme ve yönetme
 description: AIR eylemlerini doğrudan İşlem Merkezi'nden analiz etme ve onaylama adımları. Uyarılar tetiklendiğinde, Otomatik Araştırma ve Yanıt (AIR), kuruluşunuzdaki bir tehdidin etkisinin kapsamını belirler ve önerilen düzeltme eylemleri sağlar.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: 4b0b5f09e97127aa2270a1fd088f6ab3b339d77e
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.subservice: mdo
+ms.openlocfilehash: 40ce1503fe2100cdfcfc8667a607f8c62e6741a2
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106415"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67593979"
 ---
 # <a name="prioritize-and-manage-automated-investigations-and-response-air"></a>Otomatik Araştırmalara ve Yanıtlara Öncelik Ver ve Yönet (AIR)
 

@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: SecOps personelinin Office 365 için Microsoft Defender yönetmesi için açıklayıcı bir playbook.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 32beb27564475c988b95da1a1f41f1943de1220e
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 2c22dd6e0d6fef3607bc51325d66691e2b9fc979
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441712"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67595773"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>Office 365 için Microsoft Defender Güvenlik İşlemleri Kılavuzu
 

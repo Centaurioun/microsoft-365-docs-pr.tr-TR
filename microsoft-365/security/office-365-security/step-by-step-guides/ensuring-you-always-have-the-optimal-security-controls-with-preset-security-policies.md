@@ -3,7 +3,7 @@ title: Office 365 için Microsoft Defender için Standart veya Katı önceden ay
 description: Ürün tarafından önerilen güvenliği elde etmek için Office 365 için Microsoft Defender'da önceden ayarlanmış güvenlik ilkelerini ayarlama adımı. Önceden ayarlanmış ilkeler *, Standart* veya *Katı* bir güvenlik profili ayarlar. Bunları ayarlayın ve Office 365 için Microsoft Defender bu güvenlik denetimlerini sizin için yönetir ve korur.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: 095826d1633dddc55e055278d00148ce446a3719
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.subservice: mdo
+ms.openlocfilehash: 8d99f68169b19b26d89a883d1975fffe61ee2ac7
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482350"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67594133"
 ---
 # <a name="set-up-steps-for-the-standard-or-strict-preset-security-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Standart veya Katı önceden ayarlanmış güvenlik ilkeleri için adımları ayarlama
 

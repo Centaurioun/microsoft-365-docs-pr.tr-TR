@@ -17,12 +17,12 @@ ms.custom: ''
 description: Bir kuruluştaki kritik kişileri tanımlamayı ve onlara ek koruma sağlamak için öncelik hesabı etiketini eklemeyi öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ff8617f84c7e774d2dd119f3706ad08ea7591e31
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 342c23269d3cc7f1c4ee3dd90148de4f14a275d5
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482570"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596126"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de Öncelik hesaplarını yapılandırma ve gözden geçirme
 
@@ -77,7 +77,7 @@ Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender'de kullanıcı 
 Öncelik hesabı korumasının etkileri aşağıdaki özelliklerde görünür:
 
 - [Uyarılar](alerts.md)
-- [Özel uyarı ilkeleri](../../compliance/alert-policies.md#viewing-alerts)
+- [Özel uyarı ilkeleri](../../compliance/alert-policies.md#view-alerts)
 - [Tehdit Gezgini ve gerçek zamanlı algılamalar](threat-explorer.md)
 - [Güvenliği aşılmış kullanıcı raporu](view-email-security-reports.md#compromised-users-report)
 - [varlık sayfasını Email](mdo-email-entity-page.md#other-innovations)

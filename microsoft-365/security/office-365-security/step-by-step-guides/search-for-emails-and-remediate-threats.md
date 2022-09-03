@@ -3,7 +3,7 @@ title: Microsoft 365 Defender'da Tehdit Gezgini’ni kullanarak e-postaları ara
 description: Microsoft 365 Defender'da Tehdit Gezgini'nde el ile düzeltme gerçekleştirme adımları, en iyi performansı elde etme ve düzeltmeyi çağıran senaryolar da dahil olmak üzere.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: c6d887e7b50c3bfeddb967340045f6b2dbf96b0c
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.subservice: mdo
+ms.openlocfilehash: 8361b8148e8b6634da7bf8d0ea418729eb7e1737
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107337"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67593869"
 ---
 # <a name="steps-to-use-manual-email-remediation-in-threat-explorer"></a>Tehdit Gezgini'nde el ile e-posta düzeltmeyi kullanma adımları
 

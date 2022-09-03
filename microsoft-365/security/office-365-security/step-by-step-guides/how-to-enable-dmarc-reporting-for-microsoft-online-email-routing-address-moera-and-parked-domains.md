@@ -3,7 +3,7 @@ title: Microsoft Online Email Yönlendirme Adresi (MOERA) ve park edilmiş Etki 
 description: MOERA ve park edilmiş etki alanları için DMARC'yi yapılandırma adımları.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: 9705f0b11167e148dcc79a9913ae78e3e3828217
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.subservice: mdo
+ms.openlocfilehash: 62e003112280e6326b2d5cf698a18d0daf7f6209
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106568"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596731"
 ---
 # <a name="how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains"></a>Microsoft Online Email Yönlendirme Adresi (MOERA) ve park edilmiş Etki Alanları için DMARC Raporlama'yı etkinleştirme
 

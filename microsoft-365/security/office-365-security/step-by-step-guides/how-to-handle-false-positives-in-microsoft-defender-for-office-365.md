@@ -3,7 +3,7 @@ title: (Yanlış Pozitifler) Office 365 için Microsoft Defender kullanarak meş
 description: İş kaybı yaşanmasını önlemek için Office 365 için Microsoft Defender tarafından engellenen geçerli e-postayı (Hatalı Pozitif) işleme adımları.
 search.product: ''
 search.appverid: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +16,13 @@ manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
-ms.openlocfilehash: abf348fd4de02f521dfa9c5f8d7c16346753c5de
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.subservice: mdo
+ms.openlocfilehash: ae7b66a2dc8c8b4fb96360ca2bc0625bfcdf6b43
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043653"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67596687"
 ---
 # <a name="how-to-handle-legitimate-emails-getting-blocked-false-positive-using-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender kullanarak Engellenen geçerli e-postaları işleme (Hatalı Pozitif)
 
@@ -37,7 +37,7 @@ Office 365 için Microsoft Defender, yanlışlıkla tehdit olarak engellenen ön
 ## <a name="handling-legitimate-emails-in-to-junk-folder-of-end-users"></a>Son kullanıcıların Gereksiz klasöründeki geçerli e-postaları işleme
 
 1. Son kullanıcılardan Microsoft İleti Eklentisi'ni veya Outlook düğmelerini kullanarak e-postayı **gereksiz değil** olarak bildirmelerini isteyin.
-2. Son kullanıcılar, gereksiz klasörüne gelen bu [**gönderenlerden**](https://support.microsoft.com/en-us/office/safe-senders-in-outlook-com-470d4ee6-e3b6-402b-8cd9-a6f00eda7339) gelen e-postaları önlemek için Outlook'daki güvenilir gönderen listesine de göndereni ekleyebilir.
+2. Son kullanıcılar, Gereksiz klasörüne gelen bu [**gönderenlerden**](https://support.microsoft.com/en-us/office/safe-senders-in-outlook-com-470d4ee6-e3b6-402b-8cd9-a6f00eda7339) gelen e-postaları engellemek için, göndereni Outlook'taki güvenilir gönderen listesine de ekleyebilir.
 3. Yöneticiler, kullanıcı tarafından bildirilen içerik portalından [kullanıcı tarafından bildirilen](/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide#view-user-submissions-to-microsoft&preserve-view=true) iletileri önceliklendirme yapabilir.
 4. Bu bildirilen iletilerden yöneticiler [**analiz için Microsoft'a**](/microsoft-365/security/office-365-security/admin-submission?view=o365-worldwide#notify-users-from-within-the-portal&preserve-view=true) gönderebilir ve bu e-postanın neden ilk etapta engellendiğini anlayabilir.
 5. Gerekirse, yöneticiler analiz için Microsoft'a gönderirken, [ bir gönderenin](/microsoft-365/security/office-365-security/manage-tenant-allows?view=o365-worldwide#add-sender-allows-using-the-submissions-portal&preserve-view=true) sorunu hafifletebilmesi için bir izin oluşturabilir.

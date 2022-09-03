@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: ''
 description: Yöneticiler, güvenlik & Uyumluluk Merkezi'nde e-posta iletmeye yönelik Yeni kullanıcılar içgörülerini kullanarak kuruluşlarındaki kullanıcıların iletileri yeni etki alanlarına ne zaman ilettiğini araştırabilir.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 43938a8d6648d5e0ed510ebb6badb1721bacc961
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: a95c353ac64160d03f8ae54bad46079bd9594a3c
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037632"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67597834"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'nde e-posta içgörülerini ileten yeni kullanıcılar
 

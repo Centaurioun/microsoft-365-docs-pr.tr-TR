@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender Plan 2'de kullanıcı etiketleri olan belirli kullanıcı gruplarını tanımlamayı öğrenebilir. Etiket filtreleme, etiketlenen kullanıcıları hızlı bir şekilde tanımlamak için Office 365 için Microsoft Defender uyarılarda, raporlarda ve araştırmalarda kullanılabilir.
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 24509489259a368fb35773603e3708a265f8ed76
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 14fe268b07f253a66da8a88418153326279867da
+ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873280"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67599549"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender kullanıcı etiketleri
 
@@ -45,21 +45,21 @@ Kuruluşunuzda Office 365 için Defender Plan 2 (aboneliğinize dahil veya eklen
 Kullanıcılara sistem etiketleri veya özel etiketler uyguladıktan sonra, bu etiketleri uyarılarda, raporlarda ve araştırmalarda filtre olarak kullanabilirsiniz:
 
 - [Uyarılar](alerts.md)
-- [Özel uyarı ilkeleri](../../compliance/alert-policies.md#viewing-alerts)
+- [Özel uyarı ilkeleri](../../compliance/alert-policies.md#view-alerts)
 - [Tehdit Gezgini ve gerçek zamanlı algılamalar](threat-explorer.md)
 - [Güvenliği aşılmış kullanıcı raporu](view-email-security-reports.md#compromised-users-report)
-- [E-posta varlık sayfası](mdo-email-entity-page.md#other-innovations)
+- [varlık sayfasını Email](mdo-email-entity-page.md#other-innovations)
 - [Tehdit koruması durum raporu](view-email-security-reports.md#threat-protection-status-report)
 - [En çok gönderenler ve alıcılar raporu](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Saldırı benzetimi](attack-simulation-training.md#target-users)
 - [Kampanya Görünümleri](campaigns.md)
 - [Yönetici ve kullanıcı gönderimleri](admin-submission.md)
 - [Karantina](quarantine.md)
-- Öncelik hesapları için, Exchange yönetim merkezinde (EAC) [öncelik hesapları için e-posta sorunları raporunu](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) kullanabilirsiniz.
+- Öncelik hesapları için, Exchange yönetim merkezinde (EAC) [öncelik hesapları için Email sorunları raporunu](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) kullanabilirsiniz.
 
 Bu makalede, Microsoft 365 Defender portalında kullanıcı etiketlerini yapılandırma açıklanmaktadır. Microsoft 365 Defender portalında kullanıcı etiketlerini yönetmek için cmdlet yoktur.
 
-Kullanıcı etiketlerinin yüksek etkili kullanıcı hesaplarını korumaya yardımcı olan stratejinin bir parçası olduğunu görmek için bkz. [Microsoft 365'da öncelik hesapları için güvenlik önerileri](security-recommendations-for-priority-accounts.md).
+Kullanıcı etiketlerinin yüksek etkili kullanıcı hesaplarını korumaya yardımcı olan stratejinin bir parçası olduğunu görmek için bkz. [Microsoft 365'te öncelik hesapları için güvenlik önerileri](security-recommendations-for-priority-accounts.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
@@ -67,7 +67,7 @@ Kullanıcı etiketlerinin yüksek etkili kullanıcı hesaplarını korumaya yard
 
 - Bu makaledeki yordamları gerçekleştirebilmeniz için önce Microsoft 365 Defender portalında size izinler atanmalıdır:
   - Özel kullanıcı etiketleri oluşturmak, değiştirmek ve silmek için **Kuruluş Yönetimi** veya **Güvenlik Yöneticisi** rol gruplarının üyesi olmanız gerekir.
-  - Öncelik Hesabı sistem etiketine üye eklemek ve kaldırmak için **Güvenlik Yöneticisi'nin** ve **Exchange Yönetici** rol gruplarının üyesi olmanız gerekir.
+  - Öncelik Hesabı sistem etiketine üye eklemek ve kaldırmak için **Güvenlik Yöneticisi** ve **Exchange Yönetici** rol gruplarının üyesi olmanız gerekir.
   - Mevcut özel kullanıcı etiketlerine üye eklemek ve kaldırmak için **Kuruluş Yönetimi** veya **Güvenlik Yöneticisi** rol gruplarının üyesi olmanız gerekir.
   - Kullanıcı etiketlerine salt okunur erişim için **Genel Okuyucu**, **Güvenlik operatörü** veya **Güvenlik Okuyucusu** rol gruplarının üyesi olmanız gerekir.
 
@@ -75,7 +75,7 @@ Kullanıcı etiketlerinin yüksek etkili kullanıcı hesaplarını korumaya yard
 
   > [!NOTE]
   >
-  > - kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365 Defender portalında gerekli izinleri _ve_ Microsoft 365'deki diğer özellikler için izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+  > - kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Microsoft 365 Defender portalında gerekli izinleri _ve_ Microsoft 365'teki diğer özellikler için izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
   >
   > - Kullanıcı etiketi yönetimi, **Etiket Okuyucusu** ve **Etiket Yöneticisi** rolleri tarafından denetlenilir.
 
@@ -85,7 +85,7 @@ Kullanıcı etiketlerinin yüksek etkili kullanıcı hesaplarını korumaya yard
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>Kullanıcı etiketleri oluşturmak için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Ayarlar** \> **E-posta & işbirliği** \> **Kullanıcı etiketleri'ne** gidin. Doğrudan **Kullanıcı etiketleri** sayfasına gitmek için kullanın <https://security.microsoft.com/securitysettings/userTags>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Ayarlar** \> **Email & işbirliği** \> **Kullanıcı etiketleri'ne** gidin. Doğrudan **Kullanıcı etiketleri** sayfasına gitmek için kullanın <https://security.microsoft.com/securitysettings/userTags>.
 
 2. **Kullanıcı etiketleri** sayfasında Etiket oluştur simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Etiket oluşturun**.
 
@@ -117,7 +117,7 @@ Kullanıcı etiketlerinin yüksek etkili kullanıcı hesaplarını korumaya yard
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-user-tags"></a>Kullanıcı etiketlerini görüntülemek için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Ayarlar** \> **E-posta & işbirliği** \> **Kullanıcı etiketleri'ne** gidin. Doğrudan **Kullanıcı etiketleri** sayfasına gitmek için kullanın <https://security.microsoft.com/securitysettings/userTags>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Ayarlar** \> **Email & işbirliği** \> **Kullanıcı etiketleri'ne** gidin. Doğrudan **Kullanıcı etiketleri** sayfasına gitmek için kullanın <https://security.microsoft.com/securitysettings/userTags>.
 
 2. **Kullanıcı etiketleri** sayfasında, kullanıcı etiketleri listesinde aşağıdaki özellikler görüntülenir:
 
@@ -130,7 +130,7 @@ Kullanıcı etiketlerinin yüksek etkili kullanıcı hesaplarını korumaya yard
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-user-tags"></a>Kullanıcı etiketlerini değiştirmek için Microsoft 365 Defender portalını kullanma
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Ayarlar** \> **E-posta & işbirliği** \> **Kullanıcı etiketleri'ne** gidin. Doğrudan **Kullanıcı etiketleri** sayfasına gitmek için kullanın <https://security.microsoft.com/securitysettings/userTags>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Ayarlar** \> **Email & işbirliği** \> **Kullanıcı etiketleri'ne** gidin. Doğrudan **Kullanıcı etiketleri** sayfasına gitmek için kullanın <https://security.microsoft.com/securitysettings/userTags>.
 
 2. **Kullanıcı etiketleri** sayfasında, listeden kullanıcı etiketini seçin ve etiketi düzenle simgesine tıklayın![.](../../media/m365-cc-sc-edit-icon.png) **Etiketi düzenle'yi seçin**.
 
@@ -146,7 +146,7 @@ Kullanıcı etiketlerinin yüksek etkili kullanıcı hesaplarını korumaya yard
 > [!NOTE]
 > Yerleşik **Öncelik hesabı** sistem etiketini kaldıramazsınız.
 
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Ayarlar** \> **E-posta & işbirliği** \> **Kullanıcı etiketleri'ne** gidin. Doğrudan **Kullanıcı etiketleri** sayfasına gitmek için kullanın <https://security.microsoft.com/securitysettings/userTags>.
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Ayarlar** \> **Email & işbirliği** \> **Kullanıcı etiketleri'ne** gidin. Doğrudan **Kullanıcı etiketleri** sayfasına gitmek için kullanın <https://security.microsoft.com/securitysettings/userTags>.
 
 2. **Kullanıcı etiketleri** sayfasında, listeden kullanıcı etiketini seçin ve ardından Etiketi sil simgesine tıklayın![.](../../media/m365-cc-sc-delete-icon.png) **Etiketi silin**.
 
