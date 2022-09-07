@@ -9,7 +9,8 @@ f1.keywords:
 - ZTDProfileSettings
 - O365E_ZTDProfileSettings
 - BCS365_ZTDProfileSettings
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection: ''
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Autopilot profilleri, Windows'un kullanıcı cihazlarına nasıl yükleneceğini denetlemenize yardımcı olur. Profiller, Cortana yüklemesini atlama gibi varsayılan ve isteğe bağlı ayarları içerir.
-ms.openlocfilehash: 9fcec0d34a23a56943a1a17d7e7f74435910055e
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 52f69c5de63c5c35bb07df27269aa567b5eba442
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894733"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612933"
 ---
 # <a name="about-autopilot-profile-settings"></a>Autopilot Profili ayarları hakkında
 

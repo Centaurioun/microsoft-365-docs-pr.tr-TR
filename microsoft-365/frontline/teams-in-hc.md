@@ -28,12 +28,12 @@ description: Microsoft 365 ve Microsoft Teams'deki teletıp özellikleri ve bunl
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 0ce08e71a2bec105b2c9f2efe59cc7f440225b4e
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
+ms.openlocfilehash: 36e47c683a61657d799750f7410a2de23e1444a1
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66827168"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612862"
 ---
 # <a name="get-started-with-microsoft-365-for-healthcare-organizations"></a>Sağlık kuruluşları için Microsoft 365'i kullanmaya başlama
 
@@ -80,6 +80,14 @@ Ayrıca Microsoft Teams'in sağlık kuruluşunuz için çalışmasına yardımc�
 | [Güvenli mesajlaşma](#secure-messaging) | Acil iletilere daha hızlı dikkat edin ve iletinin alınıp okunduğuna güvenin. | Kullanıcıların uygun lisansa* sahip olması gerekir.  |
 | [Teams şablonları](#teams-templates-for-healthcare-organizations) | Bir koğuş, pod veya departman içinde veya hastane içindeki birden çok koğuş, pod ve departman arasında iletişim ve işbirliği için önceden yüklenmiş ayarlar, kanallar ve önceden yüklenmiş uygulamalar içeren önceden tanımlanmış bir şablon içeren ekipler oluşturun. | Kullanıcıların uygun lisansa* sahip olması gerekir.  |
 
+### <a name="download-a-poster-with-scenario-overviews"></a>Senaryoya genel bakış içeren bir poster indirme
+
+Kuruluşunuzun ön cephe çalışanları için Microsoft 365 ile neler yapabileceğini tahmin etmeye başlamak için aşağıdaki posteri kullanın.
+
+| Öğe | Açıklama |
+|:-----|:-----|
+|[![Ön cephe çalışanları için Microsoft 365: Sağlık senaryoları.](media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Eylül 2022'de güncelleştirildi   |Bu poster, bir sağlık ortamında ön cephedeki iş gücünüz için uygulayabileceğiniz senaryolara genel bir bakış sağlar.|
+
 ## <a name="virtual-appointments-and-electronic-healthcare-record-ehr-integration"></a>Sanal randevular ve Elektronik Sağlık Kaydı (EHR) tümleştirmesi
 
 Hastalarla sanal randevular zamanlamak, yönetmek ve yürütmek için Teams'deki toplantı platformunun tamamını kullanın.
@@ -108,7 +116,7 @@ Güvenli mesajlaşma, çeşitli yeni özellikler de dahil olmak üzere sağlık 
 
 Bu özellikler birlikte acil iletilere daha hızlı dikkat ve iletinin alınıp okunduğuna güven sağlar. Bu özellikleri kullanan yeni sağlık ekipleri hasta bazında oluşturulabilir. Bu özellikler ilke tabanlıdır ve kişilere veya Teams'in tamamına atanabilir.
 
-Daha fazla bilgi edinmek için bkz. [Sağlık kuruluşları için Güvenli Microsoft Mesajlaşma ilkelerini kullanmaya başlama](messaging-policies-hc.md).
+Daha fazla bilgi edinmek için bkz. [Healthcare kuruluşları için Güvenli Mesajlaşma ilkelerini kullanmaya başlama](messaging-policies-hc.md).
 
 Ayrıca güvenli mesajlaşma ile ilgili olarak Healthcare kuruluşları tarafından federasyona sahip diğer kiracıların olması ve daha zengin kiracılar arası iletişime olanak sağlamasıdır. (Bkz. [Microsoft Teams'de dış toplantıları ve sohbeti yönetme](/microsoftteams/manage-external-access)).
 
@@ -135,6 +143,12 @@ Ayrıca ekibiniz Teams'deki uygulamaları kullanarak şunları da yapabilir:
 - Görevler uygulamasıyla görevleri izleme ve izleme
 - Onaylar uygulamasıyla onayları kolaylaştırma
 - Vardiyalar uygulamasıyla zamanlama oluşturma, yönetme ve paylaşma
+
+### <a name="coordinate-over-email-with-exchange-online"></a>Exchange Online ile e-posta üzerinden eşgüdümlü
+
+Email çoğu iş yeri için temel bir iletişim aracıdır. Ön cephe yöneticilerinizin ve çalışanlarınızın diğer konumlardaki bakım ekibi üyeleriyle eşgüdüm kurmasına yardımcı olmak için [Exchange Online ile e-posta ayarlayın](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) veya bakım planlarını tartışmak için toplantılar planlayın. E-posta posta kutusuna sahip olmak için kullanıcıların F3 lisansı olmalıdır.
+
+Ayrıca, paylaşılan posta kutularını müşterilerden gelen postalara (örneğin, müşteri hizmetleri veya zamanlama istekleri için) izin verecek şekilde ayarlayabilir ve info@contoso.com gibi genel bir e-posta diğer adını izleyen ve gönderen bir grup çalışana sahip olabilirsiniz. Paylaşılan posta kutuları hakkında daha fazla bilgi için bkz. [Paylaşılan posta kutuları hakkında](../admin/email/about-shared-mailboxes.md) ve [Outlook'ta paylaşılan posta kutusunu açma ve kullanma](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).
 
 ### <a name="share-lists-and-track-information-with-the-lists-app"></a>Listeler uygulamasıyla listeleri paylaşma ve bilgileri izleme
 

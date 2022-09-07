@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 511e1d69ada1281592ddfe3a840ad4a0e057365d
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 2935b54d6be6f68833f018c1e0710db3e71a1d51
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67577353"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611158"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 üretkenlik çizimleri
 
@@ -30,6 +30,17 @@ Microsoft Teams ile önde gelen Microsoft 365'teki üretkenlik hizmetlerinin man
 | Öğe | Açıklama |
 |:-----|:-----|
 |[![Teams mantıksal mimari posteri.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Ocak 2021'de güncelleştirildi   |Microsoft, veri idaresi, güvenlik ve uyumluluk özellikleriyle işbirliği deneyimleri sağlamak için birlikte çalışan bir üretkenlik hizmetleri paketi sağlar. <br/> <br/>Bu çizim serisi, Microsoft Teams ile önde gelen kurumsal mimarlar için üretkenlik hizmetlerinin mantıksal mimarisine yönelik bir görünüm sağlar.|
+
+## <a name="microsoft-365-for-frontline-workers-scenarios"></a>Ön cephe çalışanları için Microsoft 365 senaryoları
+Ön cephe çalışanları için Microsoft 365, iş gücünüzle bağlantı kurmanıza, iş gücü yönetiminizi geliştirmenize ve operasyonel verimliliği artırmanıza yardımcı olabilir. Microsoft Teams'den SharePoint, Viva Bağlantılar, Yammer ve Power Platform'a kadar ön cephe çalışanları için Microsoft 365'te bulunan özellikleri kullanabilir ya da mevcut sistemlerle bağlantı kurmak veya işletmeniz için özel çözümler oluşturmak için dijital ekosistemdeki iş ortaklarımızdan çözümler ekleyebilirsiniz.
+
+Kuruluşunuzun ön cephe çalışanları için Microsoft 365 ile neler yapabileceğini tahmin etmeye başlamak için aşağıdaki posterleri kullanın.
+
+| Öğe | Açıklama |
+|:-----|:-----|
+|[![Ön çalışan senaryoları için Microsoft 365.](/microsoft-365/frontline/media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Eylül 2022'de güncelleştirildi   |Bu poster, iletişimleri artırmak, refahı ve katılımı geliştirmek, çalışanlarınızı eğitmek ve eklemek, iş gücünüzü ve operasyonlarınızı yönetmek için ön cephedeki iş gücünüz için uygulayabileceğiniz senaryolara genel bir bakış sağlar.<br/><br/>**İlgili çözüm kılavuzları** <br/> <ul><li>[Ön saf çalışanları için Microsoft 365](/microsoft-365/frontline/flw-overview)|
+|[![Ön cephe çalışanları için Microsoft 365: Sağlık senaryoları.](/microsoft-365/frontline/media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Eylül 2022'de güncelleştirildi   |Bu poster, bir sağlık ortamında ön cephedeki iş gücünüz için uygulayabileceğiniz senaryolara genel bir bakış sağlar.<br/><br/>**İlgili çözüm kılavuzları** <br/> <ul><li>[Sağlık kuruluşları için Microsoft 365'i kullanmaya başlama](/microsoft-365/frontline/teams-in-hc)|
+|[![Ön cephe çalışanları için Microsoft 365: Perakende senaryoları.](/microsoft-365/frontline/media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Eylül 2022'de güncelleştirildi   |Bu poster, bir perakende ortamında ön cephe iş gücünüz için uygulayabileceğiniz senaryolara genel bir bakış sağlar.<br/><br/>**İlgili çözüm kılavuzları** <br/> <ul><li>[Perakende kuruluşları için Microsoft 365'i kullanmaya başlama](/microsoft-365/frontline/teams-for-retail-landing-page)|
 
 ## <a name="corporate-communications-with-microsoft-365--a-contoso-case-study"></a>Microsoft 365 ile kurumsal iletişimler — Contoso örnek olay incelemesi
 Çalışan katılımı, herhangi bir kuruluşta çalışma alanı memnuniyeti, elde tutma ve üretkenlik açısından önemli bir katkıda bulunur. Microsoft 365 genelinde, hedef kitlenizle iletişim kurmanın ve etkileşim kurmanın birden çok yolu vardır. 

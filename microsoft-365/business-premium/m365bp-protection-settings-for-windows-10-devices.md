@@ -9,7 +9,8 @@ f1.keywords:
 - Win10AppPolicy
 - O365E_Win10AppPolicy
 - BCS365_Win10AppPolicy
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection: ''
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Kullanıcılarınızın kişisel Windows cihazlarında uygulama yönetimi ilkeleri oluşturmayı veya düzenlemeyi ve iş dosyalarını korumayı öğrenin.
-ms.openlocfilehash: d02b406f98aadcaaf21005686212b4da9e4fac2c
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 067cacfdd52b2d0a10bb221d426c54e8cbe9bb16
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893933"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611617"
 ---
 # <a name="set-or-edit-application-protection-settings-for-windows-devices"></a>Windows cihazları için uygulama koruma ayarlarını ayarlama veya düzenleme
 

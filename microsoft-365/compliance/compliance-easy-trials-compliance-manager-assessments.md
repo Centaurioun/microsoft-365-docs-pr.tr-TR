@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Uyumluluk Yöneticisi premium değerlendirme denemeleri hakkında.
-ms.openlocfilehash: 50950cc39d9a987239a7b10c70f68aece5647085
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1d76817f6521a7922424fd4257cb647d1b35942b
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631281"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611377"
 ---
 # <a name="about-the-free-trial-for-microsoft-purview-compliance-manager-premium-assessments"></a>Microsoft Purview Uyumluluk Yöneticisi premium değerlendirmeleri için ücretsiz deneme hakkında
 
@@ -50,9 +50,15 @@ Deneme sürümünüzü başlattıktan sonra Uyumluluk Yöneticisi'ndeki **Değer
 
 Uyumluluk Yöneticisi şablonlarını kullanma ve yönetme hakkında daha fazla bilgi için bkz. [Değerlendirme şablonlarıyla çalışma](compliance-manager-templates.md).
 
-## <a name="permissions"></a>İzinler
+## <a name="required-roles-for-starting-the-trial"></a>Denemeyi başlatmak için gerekli roller
 
-Kuruluşunuzda Uyumluluk Yöneticisi'ne erişim izinleri olan tüm kullanıcılar premium değerlendirme denemesine kaydolabilir. [Uyumluluk Yöneticisi için gereken izinler ve roller](compliance-manager-setup.md#set-user-permissions-and-assign-roles) hakkında daha fazla bilgi edinin.
+Kullanıcıların bir deneme sürümüne kaydolmak veya bu denemeyi sonlandırmak için aşağıdaki yönetici rollerinden birine sahip olması gerekir:
+- Faturalama Yöneticisi
+- Uyumluluk Yöneticisi
+- Genel Yönetici
+- Uyumluluk Verileri Yöneticisi
+
+[Microsoft 365 denemelerini başlatma rolleri](compliance-easy-trials-roles.md) hakkında daha fazla bilgi edinin.
 
 ## <a name="during-your-trial"></a>Denemeniz sırasında
 

@@ -15,12 +15,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 3249de86a92d41fabe10c74701461a86e7b57ece
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 27456ce239e896c5beb2f988f1c1377c68c9c10c
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824772"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614230"
 ---
 # <a name="start-with-a-pilot-deployment-of-microsoft-365-for-frontline-workers"></a>Ön cephe çalışanları için Microsoft 365'in pilot dağıtımıyla başlayın
 
@@ -44,7 +44,7 @@ Pilot program çalıştırmak, genel benimseme sürecinin bir parçasıdır. Kur
 - [Ön cephe çalışanlarınızı Microsoft Teams ile etkinleştirme](https://adoption.microsoft.com/microsoft-teams/frontline-workers/)
 - [Karma bir dünyada ön cephe çalışanlarını desteklemenin 3 yolu](https://www.microsoft.com/microsoft-365/blog/2021/10/19/3-ways-to-support-frontline-workers-in-a-hybrid-world/)
 
-Şu 30 dakikalık öğrenme yolunu tamamlayarak dağıtıma hazırlanmanızı öneririz: [Microsoft 365 ile Teams dağıtımına hazırlanma](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/).
+Şu 30 dakikalık öğrenme yolunu tamamlayarak dağıtıma hazırlanmanızı öneririz: [Microsoft 365 ile Teams dağıtımına hazırlanma](/learn/modules/m365-teams-collab-prepare-deployment/).
 
 ## <a name="steps-to-run-a-pilot-program"></a>Pilot programı çalıştırma adımları
 
@@ -63,14 +63,14 @@ Saha çalışanları için Teams pilotunuz için proje katılımcısı ve karar 
 
 Ardından, 1. aşama pilot topluluğunuzu tanımlayın ve kuruluşunuz için en küçük mantıksal gruplandırmada gerçek ön cephe çalışanlarını içerdiğinden emin olun. Örneğin, bir restoran, bir departman, bir mağaza, bir klinik koğuş, bir bölge, bir tesis, bir dağıtım merkezi vb. Önemli olan, ortalama ön cephe çalışanının yalnızca bir ekibin parçası olması için iyileştirme yapmaktır. Yöneticiler veya uzmanlar birden fazla kişi olabilir.
 
-![En iyi yöntemler şerit simgesi.](https://docs.microsoft.com/office/media/icons/best-practices-teams.png) **En iyi yöntem**  
+![En iyi yöntemler şerit simgesi.](/office/media/icons/best-practices-teams.png) **En iyi yöntem**  
 
 Değerli içgörüleri ortaya çıkarmak ve modern iletişim senaryolarını etkinleştirmek için yöneticilerden yarı zamanlı veya mevsimlik çalışanlara kadar en küçük mantıksal gruplandırma içinde tüm rollerin dahil edilmesi önemlidir. En küçük personeliniz sizi şaşırtacak! Örnek müşterilerle pilot çalışma sırasında ortaya çıkarılan bazı önemli keyifli ve istenmeyen değerli senaryolar şunlardır:
 
 - Standartlaştırılmış Beklentiler ve Eğitim: Mutfak personeline temiz bir ocak resmi çekerek temiz demektir. "Böyle görünmüyorsa, temiz değildir!"
 - Küçültmeyi azaltma: Bilinen bir mağaza hırsızının fotoğrafını çekmek ve diğer çalışanları hemen bilgilendirmek. Gelecekteki vardiyalardaki ekipler, gelecekteki riski azaltmak için bu resmi de görecektir.
 
-![İşlem/akış grafiği simgesi.](https://docs.microsoft.com/office/media/icons/process-flow-teams.png) **Karar noktaları:**
+![İşlem/akış grafiği simgesi.](/office/media/icons/process-flow-teams.png) **Karar noktaları:**
 
 Bu aşamanın sonunda şu soruları yanıtlayabilmelisiniz:
 
@@ -100,7 +100,7 @@ Kullanıcılarınızın bugün kullandığı araçların, özelliklerin ve senar
 
 Mobil cihazlarda Sohbet'te Teams için normal geleneksel sohbet düzenine veya Sohbet'te sık kullanılan kanalları içeren bir düzene sahip olabilirsiniz. Bu ikinci basitleştirilmiş kullanıcı arabirimi, yalnızca bir ekipte yer alan ve önerilen en iyi uygulama olan ön cephe çalışanları için iyi çalışır. "Sık kullanılan kanalları sohbette göster" yapılandırması, işlev kaybı olmadan son kullanıcı deneyimini daha da kolaylaştırmak ve basitleştirmek için ön cephe çalışan uygulaması kurulum ilkesinden 'Teams' düğmesini kaldırma fırsatı da oluşturur. Birden çok ekipte yer alacak kullanıcılar için önerilmez. Neyse ki bu, kullanıcı başına yapılandırılabilir ve gerektiğinde karmaşıklık içinde büyüyebilir.
 
-![En iyi yöntemler şerit simgesi.](https://docs.microsoft.com/office/media/icons/best-practices-teams.png) **En iyi yöntem**  
+![En iyi yöntemler şerit simgesi.](/office/media/icons/best-practices-teams.png) **En iyi yöntem**  
 
 Ön cephe Teams deneyiminin 1. Aşaması'nı, bu kullanıcıların zaten kullanmakta olduğu tüketici araçlarını taklit etmek için yapılandırın! Basitleştirilmiş iletişimler ve Vardiyalar (isteğe bağlı) için ön cephe çalışanları için pilotunuzu "Sohbette sık kullanılan kanalları göster" ile başlatmanızı öneririz.
 
@@ -108,7 +108,7 @@ Mobil cihazlarda Sohbet'te Teams için normal geleneksel sohbet düzenine veya S
 |---------------|------------------|
 |:::image type="content" source="media/firstline-worker-chat-with-shifts.png" alt-text="Vardiyalar eklenmiş telefon ekranının ekran görüntüsü":::    |:::image type="content" source="media/firstline-worker-chat-without-shifts.png" alt-text="Vardiyalar eklenmeden telefon ekranının ekran görüntüsü":::|
 
-![İşlem/akış grafiği simgesi.](https://docs.microsoft.com/office/media/icons/process-flow-teams.png) **Karar noktaları:**
+![İşlem/akış grafiği simgesi.](/office/media/icons/process-flow-teams.png) **Karar noktaları:**
 
 - Ön cephe çalışanları için pilotunuzun 1. Aşamasında hangi özellikler olacak?
 - Ön cephe çalışanlarınızın Vardiyalara ihtiyacı var mı?
@@ -136,12 +136,12 @@ Sihirbaz, en az bir [F lisansı](https://www.microsoft.com/microsoft-365/enterpr
 
 Adım adım yönergeler için bkz [. Ön cephe çalışanlarınızı çalışır duruma getirmek için Ön Cephe Çalışanı ekleme sihirbazını kullanma](flw-onboarding-wizard.md).
 
-![İşlem/akış grafiği simgesi.](https://docs.microsoft.com/office/media/icons/process-flow-teams.png) **Karar noktaları:**
+![İşlem/akış grafiği simgesi.](/office/media/icons/process-flow-teams.png) **Karar noktaları:**
 
 - Pilotunuz için kaç kanal/konuşma konusu istiyorsunuz?
 - Senaryolarınız için uygun olan konular hangileridir?
 
-![En iyi yöntemler şerit simgesi.](https://docs.microsoft.com/office/media/icons/best-practices-teams.png) **En iyi yöntem**  
+![En iyi yöntemler şerit simgesi.](/office/media/icons/best-practices-teams.png) **En iyi yöntem**  
 
 **Kanalları basit tutun**. Konuşmanın olası her konusu için bir kanal oluşturma isteğine karşı koymanızı ve bunun yerine işleri çok basit tutmanızı öneririz. Kanalların zaman içinde gerektiği gibi oluşturulması sorun değildir.
 
@@ -157,7 +157,7 @@ Teams'i ayarladıktan ve ekiplerinizi ve kanallarınızı oluşturduktan sonra p
 
 Ön cephe çalışanlarınızı pilota katılımları, pilot hedefleri hakkında bilgilendirin ve gerekirse temel işlevler hakkında eğitim verin. Çoğu müşteri için bu kullanıcılara kişisel mobil cihazlarında Google Play veya Apple Store'a gitmeleri, Microsoft Teams uygulamasını indirmeleri ve şirket kimlik bilgileriyle oturum açmaları için basit bir yönerge olabilir. Microsoft Teams'i ön cephe çalışanlarının çoğunun sezgisel bulması gereken basit ve kullanımı kolay bir arabirimle tasarladık.
 
-![En iyi yöntemler şerit simgesi.](https://docs.microsoft.com/office/media/icons/best-practices-teams.png) **En iyi yöntem**  
+![En iyi yöntemler şerit simgesi.](/office/media/icons/best-practices-teams.png) **En iyi yöntem**  
 
 Yöneticilerinizi Vardiyalar üzerinde eğitmeni unutmayın! Vardiyaları pilotunuza dahil edecekseniz yöneticilerinizle ekiplerine zamanlama oluşturma, yönetme ve yayımlama konusunda ayrı bir eğitim oturumu gerçekleştirdiğinizden emin olun. Ek eğitim malzemeleri ve iletişim şablonları istiyorsanız bunları Ön Cephe Pilotunuzda bir Kutuda bulabilirsiniz.
 
@@ -165,7 +165,7 @@ Yöneticilerinizi Vardiyalar üzerinde eğitmeni unutmayın! Vardiyaları pilotu
 
 Ön cephe çalışanlarınızı güçlendirmek teknolojiden çok insanlarla ilgili. Teams'in etkisini anlamak için ön cephe çalışanlarınızın deneyimine odaklanın. İhtiyaçlarını, acı noktalarını ve tepkilerini anlamak için pilot öncesinde, sırasında ve sonrasında bunları araştırma. Pilotunuzu yinelemeye devam ediyorsanız ve zaman içinde yeni özellikler ekliyorsanız, bu geri bildirim sipariş, hız ve hatta ek özelliklerin gerekli olup olmadığı konusunda yol göstermesine yardımcı olabilir. Pilotunuzun başarısını değerlendirmenize yardımcı olmak için bunları ön cephedeki Pilotunuzda bir Kutuda bulabilirsiniz.
 
-![En iyi yöntemler şerit simgesi.](https://docs.microsoft.com/office/media/icons/best-practices-teams.png) **En iyi yöntem**  
+![En iyi yöntemler şerit simgesi.](/office/media/icons/best-practices-teams.png) **En iyi yöntem**  
 
 **Şampiyonlarınızı yetiştirin ve galibiyetlerinizi vurgulayın**. Ön cephe çalışanlarınızı bu yeni araçları kucaklamaları ve şirketiniz için iş sonuçlarıyla ilgili yenilikçi yöntemlerle kullanmaları için ödüllendirin. Bu, her şeyden önce Teams'in sürekli benimsenmesini ve şirketinize değer katmasını sağlar.
 

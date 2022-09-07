@@ -258,6 +258,7 @@
 ###### [Saldırı yüzeyini azaltma (ASR) kurallarını etkinleştirme](attack-surface-reduction-rules-deployment-implement.md)
 ###### [Saldırı yüzeyini azaltma (ASR) kurallarını kullanıma hazır hale getirme](attack-surface-reduction-rules-deployment-operationalize.md)
 ##### [Saldırı yüzeyini azaltma (ASR) kuralları başvurusu](attack-surface-reduction-rules-reference.md)
+##### [Saldırı yüzeyi azaltma kuralları raporu](attack-surface-reduction-rules-report.md)
 ##### [Saldırı yüzeyi azaltma (ASR) kurallarında sorun giderme](troubleshoot-asr-rules.md)
 ##### [ASR kurallarına alternatif yapılandırma yöntemlerini etkinleştirin](enable-attack-surface-reduction.md)
 #### [Saldırı yüzeyini azaltma ile ilgili SSS](attack-surface-reduction-faq.yml)

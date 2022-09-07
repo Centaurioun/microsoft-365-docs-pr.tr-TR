@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection: ''
@@ -17,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Kullanıcılarınızın cihazlarında veya Windows bilgisayarlarında bulunan şirket verilerini kaldırmak için İş için Microsoft 365'i nasıl kullanacağınızı keşfedin.
-ms.openlocfilehash: a89aff7c18a8470647c03f391a82dc00a3966b09
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 59cf6822d3f3c08b5711c4fcfcb084d9a85aef09
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892847"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612012"
 ---
 # <a name="remove-company-data-from-devices"></a>Şirket verilerini cihazlardan kaldırma
 

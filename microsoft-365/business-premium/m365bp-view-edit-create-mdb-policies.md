@@ -7,19 +7,20 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: d628df3109eafd3d342041784d70b9857e260d81
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6ae58083c2bd0e239cda7dfe007ffbdca2711424
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486043"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613614"
 ---
 # <a name="view-and-edit-device-protection-policies"></a>Cihaz koruma ilkelerini görüntüleme ve düzenleme
 

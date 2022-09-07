@@ -7,18 +7,19 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection: ''
 ms.custom: ''
 description: Microsoft 365 yönetim merkezi, iş işlevlerine eşlenen ve belirli görevleri gerçekleştirme izinleri veren bazı Microsoft Intune rolleri yönetmenize olanak tanır.
-ms.openlocfilehash: ee411f188a5efc996dbd4af622e81b182b1f115b
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: d3f7ff980bb87ac70fb2400f55ff54bdbd511eab
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894931"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614956"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi yönetici rollerini Intune
 

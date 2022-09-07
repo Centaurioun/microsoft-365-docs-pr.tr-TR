@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection: ''
@@ -18,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Kuruluşunuzun ağına ve iç sistemlerine yeni bir çalışan veya kullanıcı ekleme. Şirketinize yeni bir çalışan katıldığında, bunları ağa güvenli bir şekilde eklemeniz gerekir.
-ms.openlocfilehash: d0137d9c7814191573e1c82c01b16db915bb280e
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: b8bd94f939fc6c509698f65afcffe226d73ac156
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894185"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67615396"
 ---
 # <a name="add-a-new-employee-in-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'de yeni bir çalışan ekleme
 

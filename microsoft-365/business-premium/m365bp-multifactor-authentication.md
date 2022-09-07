@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Business Premium'da telefonlar için çok faktörlü kimlik doğrulamasını ayarlayın. Microsoft Business Premium'un telefonunuz için MFA özelliklerini kullanarak güvenliğinizi artırın.
-ms.openlocfilehash: 8bf278f3dc91dfe1a9e8d5388e2868e9dddb577d
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 499173e041b482fdd4329dbbf1f9645395c44d55
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275000"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614890"
 ---
 # <a name="set-up-mfa"></a>MFA'yı ayarlama
 

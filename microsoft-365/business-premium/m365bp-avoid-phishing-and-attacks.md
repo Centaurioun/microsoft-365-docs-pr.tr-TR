@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection:
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 İş Ekstra ile kimlik avına ve diğer saldırılara karşı koruma sağlayın.
-ms.openlocfilehash: 374e88fb1f329c0705bb9ebcc8044030fe4cc4e5
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 649016808a8a7d8082326393298f51f53d114de6
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893243"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614296"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Kendinizi kimlik avına ve diğer saldırılara karşı koruma
 

@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/24/2022
 ms.collection:
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Yönetilen cihazları güvenlik tehditlerine ve siber saldırılara karşı ayarlamaya ve güvenli bir şekilde korumaya yönelik genel bakış. Tüm cihazları kaydedip ekleme yoluyla siber güvenlik savunmalarını ve uç nokta korumasını uygulayın. Cihaz ilkelerini ayarlamayı ve cihaz gruplarını yönetmeyi öğrenin.
-ms.openlocfilehash: 32f76d20130a07031266ad001f5ac1ce7b476d14
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: 7a70510655669ed8729d8155315948474893f730
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433520"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612801"
 ---
 # <a name="set-up-and-secure-managed-devices"></a>Yönetilen cihazları ayarlama ve güvenliğini sağlama
 

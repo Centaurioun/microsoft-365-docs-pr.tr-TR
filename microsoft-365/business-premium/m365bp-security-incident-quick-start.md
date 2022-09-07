@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection:
@@ -18,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 'Günlük, haftalık veya aylık işlemler söz konusu olduğunda Defender portalında çalışmalarınızı odaklamanıza yönelik bir dizi öneri. '
-ms.openlocfilehash: ab444aad5980af224b2005209dc5596fcb10f899
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 2d7464741af66ba31764a1330e323c0fab08bf6b
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894087"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612823"
 ---
 # <a name="microsoft-365-business-premium-security-operations-guide"></a>Microsoft 365 İş Ekstra güvenlik işlemleri kılavuzu
 

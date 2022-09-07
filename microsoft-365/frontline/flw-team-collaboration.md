@@ -22,12 +22,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: a2c354b575436d93713bb2487c35f2dca6807f19
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: 84b855e34d2612aa10b1e8eaed33d584590cd424
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432385"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614186"
 ---
 # <a name="frontline-team-collaboration"></a>Ön saf ekip işbirliği
 
@@ -202,22 +202,21 @@ Uygulamalarla ekibinizdekileri geliştirin. Microsoft Teams yönetim merkezinde 
 
 Kullanıcılarınız ekiplerine izin verilen tüm uygulamaları ekleyebilir. Nasıl yapıldığını göstermek için bu eğitimi kullanıcılarınızla paylaşın: [Uygulamaları bulma ve kullanma](https://support.microsoft.com/office/find-and-use-apps-6e22a734-c002-4da0-ba63-681f155b142d).
 
+## <a name="communicate-over-email-with-exchange-online-and-outlook"></a>Exchange Online ve Outlook ile e-posta üzerinden iletişim kurma
 
-### <a name="use-viva-connections-to-create-a-personalized-experience"></a>Kişiselleştirilmiş bir deneyim oluşturmak için Viva Bağlantılar kullanma
+Email çoğu iş yeri için temel bir iletişim aracıdır. Ön cephe yöneticilerinizin ve çalışanlarınızın birbirleriyle, diğer konumlardaki çalışanlarla veya genel merkezle iletişim kurmasını sağlamak için [Exchange Online ile e-posta ayarlayın](flw-setup-microsoft-365.md#set-up-email-with-exchange-online). E-posta posta kutusuna sahip olmak için kullanıcıların F3 lisansı olmalıdır.
+
+Ayrıca, paylaşılan posta kutularını müşterilerden gelen postalara (örneğin, müşteri hizmetleri veya zamanlama istekleri için) izin verecek şekilde ayarlayabilir ve info@contoso.com gibi genel bir e-posta diğer adını izleyen ve gönderen bir grup çalışana sahip olabilirsiniz. Paylaşılan posta kutuları hakkında daha fazla bilgi için bkz. [Paylaşılan posta kutuları hakkında](../admin/email/about-shared-mailboxes.md) ve [Outlook'ta paylaşılan posta kutusunu açma ve kullanma](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).
+
+## <a name="use-viva-connections-to-create-a-personalized-experience"></a>Kişiselleştirilmiş bir deneyim oluşturmak için Viva Bağlantılar kullanma
 
 Viva Bağlantılar[, Microsoft Viva paketinin](/viva/microsoft-viva-overview) bir parçasıdır ve Teams'de kişiselleştirilmiş bir giriş deneyimi oluşturmanıza olanak tanır. 
 
 ![Mobil cihazda Viva Bağlantılar Panosunun ekran görüntüsü.](media/flw-shifts-praise-tasks-approvals.png)
 
-
-Viva Bağlantılar Panosu'nu kullanın ve Vardiyalar, Görevler ve Onaylar kartlarını ekleyin. Kartlar Teams'deki Vardiyalar, Görevler ve Onaylar uygulamalarına bağlanır. Kartlardaki içerik kullanıcı için dinamik ve kişiselleştirilmiştir. 
+Viva Bağlantılar Panosu'nu kullanın ve Vardiyalar, Görevler ve Onaylar kartlarını ekleyin. Kartlar Teams'deki Vardiyalar, Görevler ve Onaylar uygulamalarına bağlanır. Kartlardaki içerik kullanıcı için dinamik ve kişiselleştirilmiştir.
 
 [Viva Bağlantılar alma](/viva/connections/viva-connections-overview) ve [Viva Bağlantılar Panosu oluşturma](/viva/connections/create-dashboard) hakkında daha fazla bilgi edinin. 
-
-
-
-
-
 
 ## <a name="learn-more-about-teams-capabilities-for-specific-industries"></a>Belirli sektörlere yönelik Teams özellikleri hakkında daha fazla bilgi edinin
 

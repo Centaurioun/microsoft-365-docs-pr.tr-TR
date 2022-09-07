@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) ve Office 365 için Defender güvenlik ayarları için en iyi yöntemler nelerdir? Standart koruma için geçerli öneriler neleri içerir? Daha katı olmak istiyorsanız ne kullanılmalıdır? Ayrıca Office 365 için Defender kullanıyorsanız ne kadar ekstra alırsınız?
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 15bc518a7bc9fa939bfd33e7f272929d190378c2
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: a91e8f6c517ad37c7311be09956c7f71fc2893db
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597790"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612728"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP ve Office 365 için Microsoft Defender güvenliği için önerilen ayarlar
 
@@ -179,7 +179,7 @@ Ek güvenlik avantajları, Office 365 için Microsoft Defender bir abonelikle bi
 >
 > - Office 365 için Microsoft Defender'daki varsayılan kimlik avı önleme ilkesi, tüm alıcılar için [kimlik sahtekarlığı koruması](set-up-anti-phishing-policies.md#spoof-settings) ve posta kutusu zekası sağlar. Ancak, diğer kullanılabilir [kimliğe bürünme koruması](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) özellikleri ve [gelişmiş ayarlar](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) varsayılan ilkede yapılandırılmaz veya etkinleştirilmez. Tüm koruma özelliklerini etkinleştirmek için varsayılan kimlik avı önleme ilkesini değiştirin veya ek kimlik avı önleme ilkeleri oluşturun.
 >
-> - Varsayılan Güvenli Ekler ilkesi veya Güvenli Bağlantılar ilkesi olmasa **da, yerleşik koruma** önceden ayarlanmış güvenlik ilkesi, özel Güvenli Ekler ilkelerine veya Güvenli Bağlantılar ilkelerine henüz dahil olmayan alıcılara Güvenli Ekler koruması ve Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).
+> - Varsayılan Güvenli Ekler ilkesi veya Güvenli Bağlantılar ilkesi olmasa **da, Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi tüm alıcılara Güvenli Ekler koruması ve Güvenli Bağlantılar koruması sağlar (Standart veya Katı önceden ayarlanmış güvenlik ilkeleri veya özel Güvenli Ekler ilkeleri veya Güvenli Bağlantılar ilkeleri içinde tanımlanmayan kullanıcılar). Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).
 >
 > - [SharePoint, OneDrive ve Microsoft Teams koruması ve](mdo-for-spo-odb-and-teams.md) [Güvenli Belgeler](safe-docs.md) koruması için Güvenli Ekler'in Güvenli Bağlantılar ilkelerine bağımlılığı yoktur.
 
@@ -227,7 +227,7 @@ Bunlar [, EOP'deki istenmeyen posta önleme ilkesi ayarlarında kullanılabilen 
 
 Office 365 için Microsoft Defender'daki Güvenli Ekler, Güvenli Ekler ilkeleriyle ilişkisi olmayan genel ayarları ve her Güvenli Bağlantı ilkesine özgü ayarları içerir. Daha fazla bilgi için bkz. [Office 365 için Defender'da Güvenli Ekler](safe-attachments.md).
 
-Varsayılan Güvenli Ekler ilkesi olmasa **da yerleşik koruma** ön ayarı güvenlik ilkesi, özel Güvenli Ekler ilkelerine henüz dahil olmayan tüm alıcılara Güvenli Ekler koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).
+Varsayılan Güvenli Ekler ilkesi olmasa **da, Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi tüm alıcılara Güvenli Ekler koruması sağlar (Standart veya Katı önceden ayarlanmış güvenlik ilkeleri veya özel Güvenli Ekler ilkelerinde tanımlanmayan kullanıcılar). Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).
 
 #### <a name="global-settings-for-safe-attachments"></a>Güvenli Ekler için genel ayarlar
 
@@ -253,7 +253,7 @@ Bu ayarları yapılandırmak için bkz. [Office 365 için Defender'da Güvenli E
 PowerShell'de, bu ayarlar için [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy) ve [Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safelinkspolicy) cmdlet'lerini kullanırsınız.
 
 > [!NOTE]
-> Daha önce açıklandığı gibi, varsayılan Güvenli Ekler ilkesi yoktur, ancak [**Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi](preset-security-policies.md) tarafından tüm alıcılara Güvenli Ekler koruması atanır.
+> Daha önce açıklandığı gibi, varsayılan Güvenli Ekler ilkesi yoktur, ancak Güvenli Ekler koruması, [**yerleşik koruma** önceden ayarlanmış güvenlik ilkesi](preset-security-policies.md) (hiçbir Güvenli Ek ilkesinde tanımlanmayan kullanıcılar) tarafından tüm alıcılara atanır.
 >
 > **Özel sütunda Varsayılan**, oluşturduğunuz yeni Güvenli Ekler ilkelerindeki varsayılan değerleri ifade eder. Kalan sütunlar, karşılık gelen önceden belirlenmiş güvenlik ilkelerinde yapılandırılan değerleri belirtir (aksi belirtilmedikçe).
 
@@ -268,7 +268,7 @@ PowerShell'de, bu ayarlar için [New-SafeAttachmentPolicy](/powershell/module/ex
 
 Office 365 için Defender'deki Güvenli Bağlantılar, etkin Güvenli Bağlantılar ilkelerine dahil edilen tüm kullanıcılar için geçerli olan genel ayarları ve her Güvenli Bağlantı ilkesine özgü ayarları içerir. Daha fazla bilgi için bkz. [Office 365 için Defender'de Güvenli Bağlantılar](safe-links.md).
 
-Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, yerleşik koruma** ön ayarı güvenlik ilkesi tüm alıcılara Güvenli Bağlantılar koruması sağlar (özel Güvenli Bağlantılar ilkelerinde veya Standart veya Katı ön ayarlı güvenlik ilkelerinde tanımlanmayan kullanıcılar). Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).
+Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, Yerleşik koruma** ön ayarı güvenlik ilkesi tüm alıcılara (Standart veya Katı önceden belirlenmiş güvenlik ilkeleri veya özel Güvenli Bağlantılar ilkelerinde tanımlanmayan kullanıcılar) Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).
 
 #### <a name="global-settings-for-safe-links"></a>Güvenli Bağlantılar için genel ayarlar
 
@@ -292,7 +292,7 @@ Bu ayarları yapılandırmak için bkz. [Office 365 için Microsoft Defender'de 
 PowerShell'de, bu ayarlar için [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy) ve [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy) cmdlet'lerini kullanırsınız.
 
 > [!NOTE]
-> Daha önce açıklandığı gibi, varsayılan Güvenli Bağlantılar ilkesi yoktur, ancak [**Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi](preset-security-policies.md) tarafından tüm alıcılara Güvenli Bağlantılar koruması atanır.
+> Daha önce açıklandığı gibi, varsayılan Güvenli Bağlantılar ilkesi yoktur, ancak Güvenli Bağlantılar koruması yerleşik [**koruma** önceden ayarlanmış güvenlik ilkesi](preset-security-policies.md) (aksi takdirde hiçbir Güvenli Bağlantı ilkesine dahil olmayan kullanıcılar) tarafından tüm alıcılara atanır.
 >
 > **Özel sütunda Varsayılan**, oluşturduğunuz yeni Güvenli Bağlantılar ilkelerindeki varsayılan değerleri ifade eder. Kalan sütunlar, karşılık gelen önceden belirlenmiş güvenlik ilkelerinde yapılandırılan değerleri belirtir (aksi belirtilmedikçe).
 

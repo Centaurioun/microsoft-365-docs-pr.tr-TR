@@ -19,12 +19,12 @@ ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender'da Güvenli Bağlantılar için genel ayarları ('Aşağıdaki URL'leri engelle' listesi ve Office 365 uygulamaları için koruma) görüntülemeyi ve yapılandırmayı öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: fb9e5159b4bee43d7e376af569151293aefd20f0
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: ed217c73b626d2b6320c1f5b6d391545f5854015
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481162"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613131"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Bağlantılar için genel ayarları yapılandırma
 
@@ -49,7 +49,7 @@ Genel Güvenli Bağlantılar ayarlarını Microsoft 365 Defender portalında vey
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
-- Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, yerleşik koruma** ön ayarı güvenlik ilkesi tüm alıcılara Güvenli Bağlantılar koruması sağlar (özel Güvenli Bağlantılar ilkelerinde veya Standart veya Katı ön ayarlı güvenlik ilkelerinde tanımlanmayan kullanıcılar). Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Belirli kullanıcılara, gruplara veya etki alanlarına uygulamak için Güvenli Bağlantılar ilkeleri de oluşturabilirsiniz. Yönergeler için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).
+- Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, Yerleşik koruma** ön ayarı güvenlik ilkesi tüm alıcılara (Standart veya Katı önceden belirlenmiş güvenlik ilkeleri veya özel Güvenli Bağlantılar ilkelerinde tanımlanmayan kullanıcılar) Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Belirli kullanıcılara, gruplara veya etki alanlarına uygulamak için Güvenli Bağlantılar ilkeleri de oluşturabilirsiniz. Yönergeler için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).
 
 - Microsoft 365 Defender portalını adresinde <https://security.microsoft.com>açarsınız. Doğrudan **Güvenli Bağlantılar** sayfasına gitmek için kullanın <https://security.microsoft.com/safelinksv2>.
 

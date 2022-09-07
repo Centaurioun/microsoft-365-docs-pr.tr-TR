@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection: ''
@@ -18,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: İş için Microsoft 365'teki Yönetici giriş Yönetici Cihaz eylemleri listesinde yer alan çeşitli cihaz durumları hakkında bilgi edinin.
-ms.openlocfilehash: 8de91d71576bd9b6993583a0b30506431f9a02ac
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: ed11ec8d9f043a04960e6d2ffc2bc9adf10bc6d3
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894968"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611595"
 ---
 # <a name="device-states-in-microsoft-365-for-business"></a>İş için Microsoft 365'teki cihaz durumları
 

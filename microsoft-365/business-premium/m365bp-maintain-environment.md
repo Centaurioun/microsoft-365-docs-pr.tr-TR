@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection:
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Kuruluşunuzun ağ ve sistem güvenlik ortamını koruma ve siber saldırılara karşı savunma hakkında genel bakış.
-ms.openlocfilehash: e25d093322001e01057afaf94b59f276785958a0
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 47754e243bdf01d2acb2c5521e233785f5c789d8
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917968"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611573"
 ---
 # <a name="maintain-your-environment"></a>Ortamınızı koruma
 

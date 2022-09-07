@@ -6,7 +6,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: medium
 ms.date: 07/19/2022
 ms.collection:
@@ -16,12 +17,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Windows cihazlarınızda Microsoft Defender Virüsten Koruma tarafından algılanan tehditleri gözden geçirmeyi ve yönetmeyi öğrenin.
-ms.openlocfilehash: e389eea971c2d9763816f7b1184cf98b3f41113a
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 99af78e2cd7a9ddb6db3ace0bd43e2f9cd7b978f
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893594"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613570"
 ---
 # <a name="review-detected-threats"></a>Algılanan tehditleri gözden geçirme
 

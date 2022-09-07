@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/18/2022
 ms.collection:
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra'de koruma düzeyini artırma konusunda yardım alın
-ms.openlocfilehash: 24e92f47586e9576d8cfbb0616d3b25f28f7482a
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 1a723de38467f62cf191ac485714423fba9b63e4
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67386549"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613988"
 ---
 # <a name="protect-against-malware-and-other-cyberthreats-with-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra ile kötü amaçlı yazılımlara ve diğer siber tehditlere karşı koruma
 

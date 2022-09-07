@@ -16,12 +16,12 @@ ms.custom: ''
 description: Yöneticiler, Exchange Online Protection (EOP) ve Office 365 için Microsoft Defender koruma özellikleri arasında Standart ve Katı ilke ayarlarının nasıl uygulanacağını öğrenebilir
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 82c1a314aebae90ca6c0f2252180d9704a5ed27c
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 95880c0af06525610b3ad039c5bd7925d87e24b8
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595485"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614450"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP ve Office 365 için Microsoft Defender'da önceden ayarlanmış güvenlik ilkeleri
 
@@ -64,7 +64,7 @@ Profil, koruma düzeyini belirler. Aşağıdaki profiller kullanılabilir:
 
     > [!NOTE]
     >  Dinamik dağıtım grupları desteklenmez.
-    
+
   - **Etki alanları**: Kuruluşunuzda belirtilen [kabul edilen etki alanlarındaki](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) tüm alıcılar.
 
   Bir koşulu veya özel durumu yalnızca bir kez kullanabilirsiniz, ancak koşul veya özel durum için birden çok değer belirtebilirsiniz. Aynı koşula veya özel duruma ait birden çok değer OR mantığını kullanır (örneğin, _\<recipient1\>_ veya _\<recipient2\>_). Farklı koşullar veya özel durumlar AND mantığını kullanır (örneğin, _\<recipient1\>_ ve _\<member of group 1\>_).
@@ -72,17 +72,14 @@ Profil, koruma düzeyini belirler. Aşağıdaki profiller kullanılabilir:
   > [!IMPORTANT]
   > Birden çok farklı koşul veya özel durum türü ek değildir; Onlar kapsayıcı. Önceden ayarlanmış güvenlik ilkesi _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
   >
-  > - Alıcı: romain@contoso.com
-  > - Alıcı şu üyelerin üyesidir: Yöneticiler
+  > - Kullanıcılar: romain@contoso.com
+  > - Gruplar: Yöneticiler
   >
   > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
   >
   > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
 
 - **Yerleşik koruma** (yalnızca Office 365 için Defender): Yalnızca Güvenli Bağlantılar ve Güvenli Ekler korumasını etkinleştiren bir profil. Bu profil, hiçbir zaman varsayılan ilkeleri olmayan Güvenli Bağlantılar ve Güvenli Ekler için varsayılan ilkeler sağlar.
-
-  > [!NOTE]
-  > Yerleşik koruma önayarlı güvenlik ilkesi dağıtılıyor ve kuruluşunuzda kullanılamayabilir.
 
   **Yerleşik koruma** için, tüm Office 365 için Defender müşteriler için önceden ayarlanmış güvenlik ilkesi varsayılan olarak açıktır. Bunu önermesek de, korumanın belirli kullanıcılara uygulanmaması için **Kullanıcılar**, **Gruplar** ve **Etki Alanları** temelinde özel durumlar da yapılandırabilirsiniz.
 
@@ -518,8 +515,8 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz [. Enable-EOPProtectio
 > [!IMPORTANT]
   > Birden çok farklı koşul veya özel durum türü ek değildir; Onlar kapsayıcı. Önceden ayarlanmış güvenlik ilkesi _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
   >
-  > - Alıcı: romain@contoso.com
-  > - Alıcı şu üyelerin üyesidir: Yöneticiler
+  > - Kullanıcılar: romain@contoso.com
+  > - Gruplar: Yöneticiler
   >
   > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
   >

@@ -22,12 +22,12 @@ ms.custom:
 description: Yöneticiler, tehlikeli veya istenmeyen iletilerin bulunduğu Exchange Online Protection (EOP) içinde karantina hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: af99da8ddaddcbf8c9fd746496a66242c57abd5b
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: fde70d38090b3069c404d904b10a16bf056f67a0
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596819"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612735"
 ---
 # <a name="quarantined-email-messages-in-eop-and-defender-for-office-365"></a>EOP ve Office 365 için Defender'de karantinaya alınmış e-posta iletileri
 
@@ -65,7 +65,7 @@ Hem kullanıcılar hem de yöneticiler karantinaya alınmış iletilerle çalı�
   |Kötü amaçlı yazılımdan koruma ilkeleri (kötü amaçlı yazılım iletileri) tarafından karantinaya alınan iletiler.|30 gün|Hayır||
   |Office 365 için Defender'da Güvenli Ekler ilkeleri tarafından karantinaya alınan iletiler (kötü amaçlı yazılım iletileri).|30 gün|Hayır||
   |Posta akışı kuralları tarafından karantinaya alınan iletiler: eylem, **İletiyi barındırılan karantinaya teslim etme** (_Karantina_) eylemidir.|30 gün|Hayır||
-  |SharePoint, OneDrive ve Microsoft Teams (kötü amaçlı yazılım dosyaları) için Güvenli Ekler tarafından karantinaya alınan dosyalar.|30 gün|Hayır||
+  |SharePoint, OneDrive ve Microsoft Teams (kötü amaçlı yazılım dosyaları) için Güvenli Ekler tarafından karantinaya alınan dosyalar.|30 gün|Hayır|SharePoint veya OneDrive'da karantinaya alınan dosyalar 30 gün sonra fom karantinadan kaldırılır, ancak engellenen dosyalar SharePoint veya OneDrive'da engellenmiş durumda kalır.|
 
   Bir iletinin karantina süresi dolduğunda, bu iletiyi kurtaramazsınız.
 

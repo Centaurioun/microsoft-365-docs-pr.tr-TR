@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/08/2022
 ms.collection:
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Siber saldırıları önlemek için kullanabileceğiniz çok faktörlü kimlik doğrulaması gibi siber güvenlik araçları sağlayan Microsoft 365 İş Ekstra için güvenliğe genel bakış.
-ms.openlocfilehash: a6302f38b70ed634237a83751d0026d2ef160695
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
+ms.openlocfilehash: 3b6bac00ddd85b4db80ccca47e443c855991b1b8
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285175"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614604"
 ---
 # <a name="bump-up-security"></a>Güvenliği artırın
 

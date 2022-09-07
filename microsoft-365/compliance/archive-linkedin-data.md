@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Yöneticilerin LinkedIn Şirket Sayfasından Microsoft 365'e veri aktarmak için yerel bağlayıcı & nasıl kurabileceğini öğrenin.
-ms.openlocfilehash: d018237a7cd0d4171be8a9f104ee4ccd745f2228
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 204d1da0a89ea0eb5afcb6b14ca2a5247093c8f5
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630643"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614560"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>LinkedIn verilerini arşivleye bağlayıcı ayarlama
 
@@ -58,7 +58,7 @@ LinkedIn Şirket sayfası verileri bir posta kutusunda depolandıktan sonra, Lin
 
 6. Öğeleri arşivlemesini istediğiniz şirket sayfasını seçin ve ardından **İleri'ye** tıklayın.
 
-7. **Depolama konumu seçin** sayfasında, kutuya tıklayın, LinkedIn öğelerinin içeri aktarılacağı Microsoft 365 posta kutusunun e-posta adresini seçin ve ardından **İleri'ye** tıklayın. Öğeler bu posta kutusundaki gelen kutusu klasörüne aktarılır.
+7. **Depolama konumu seçin** sayfasında, kutuya tıklayın, LinkedIn öğelerinin içeri aktarılacağı Microsoft 365 posta kutusunun e-posta adresini seçin ve ardından **İleri'ye** tıklayın. Öğeler bu posta kutusundaki gelen kutusu klasörüne aktarılır. Kullanılan posta kutusunun Exchange Online Plan 1 veya Plan 2 lisansı olmalıdır.
 
 8. Bağlayıcı ayarlarını gözden geçirmek için **İleri'ye** tıklayın ve ardından bağlayıcı kurulumunu tamamlamak için **Son'a** tıklayın.
 

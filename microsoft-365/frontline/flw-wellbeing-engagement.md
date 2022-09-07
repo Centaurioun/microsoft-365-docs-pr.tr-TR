@@ -22,12 +22,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 14cde97d085faf859b5f096ed708d72cdc2ae8f0
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 1197cc585f5725cf3569699d23d01ebf1894e2dc
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824668"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614164"
 ---
 # <a name="engage-your-frontline-workers-and-focus-on-wellbeing"></a>Ön cephe çalışanlarınızla etkileşim kurun ve refaha odaklanın
 
@@ -63,7 +63,7 @@ Viva Bağlantılar, araçları ve kaynakları vurgulamak için farklı yollarla 
 |Bileşen |Açıklama |Yetenek -lerini |
 |:---------|:-----------|:------------|
 |Pano |Pano, çalışanınızın dijital araç takımıdır ve popüler görevlere hızlı erişim sağlar. |Ön cephe çalışanlarının giriş ve çıkış gibi popüler görevleri gerçekleştirmelerine veya atanan görevleri görüntülemelerine yardımcı olan kartların önceliklerini belirleyin. Kartlar farklı rollere ve bölgelere hedeflenebilir. |
-|Besleme |Akış, kişiselleştirilmiş bir haber akışını görüntülemek için Yammer, SharePoint haberleri ve Stream'den içerik toplar. |Akıştaki içerik, kullanıcının takip eden sitelere ve Yammer topluluklarına göre otomatik olarak toplanır. İçerik, Akışta daha belirgin bir şekilde görüntülenecek şekilde önceliklendirilebilir. |
+|Besleme |Akış, kişiselleştirilmiş bir haber akışını görüntülemek için Yammer, SharePoint haberleri ve Stream'den içerik toplar. |Akıştaki içerik, kullanıcının takip eden sitelere ve Yammer topluluklarına göre otomatik olarak toplanır. İçerik, Akışta daha belirgin bir şekilde görüntülenecek şekilde önceliklendirilebilir. İçeriği belirli hedef kitlelere görüntülemek için hedef kitle hedeflemesini kullanın. |
 |Kaynaklar |Kaynaklar, popüler SharePoint portallarına ve diğer içeriğe bağlantılar sunar. |Kaynaklar SharePoint'teki genel gezintiden devralınır. İk avantajları ve eğitim kaynakları gibi popüler SharePoint portallarına bağlantı. Modern SharePoint portalları, mümkün olan en iyi görüntüleme deneyimini sağlamak için Teams'de görüntülenir. |
 
 İş gücünüzle iletişim kurmak için Viva Bağlantılar kullanmanın çeşitli yolları vardır. Viva Bağlantılar[, haberlerin, Yammer'daki içeriklerin ve videoların izleyicinin takip ettiği sitelere ve](/viva/connections/viva-connections-overview#viva-connections-feed) topluluklara göre kişiselleştirilmiş bir görünümde toplandığı ve görüntülendiği bir Akış içerir. [Pano](/viva/connections/create-dashboard), önemli haber kaynaklarına bağlanan belirli kartları vurgulamak için de kullanılabilir.
@@ -87,7 +87,7 @@ Desteklenecek senaryolara öncelik ve uyum sağlarken, belirli araçların ve ka
 Sağlık ve refah yönetimi söz konusu olduğunda ön cephe çalışanlarının ek desteğe ihtiyacı vardır. İşleri hızlı ilerlemekle kalmaz, aynı zamanda fiziksel ve duygusal olarak da zorlu olabilir.
 
 - **Panoda**: Surface günlük sağlık denetimleri, sağlıklı yaşam anımsatıcıları ve [insanların bağlı ve üretken hissetmesini sağlayan diğer üçüncü taraf çözümleri](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
-- **Akışta**: Sağlıklı yaşam ve sağlık kaynaklarını öne çıkarma amacıyla [SharePoint haber gönderilerini](https://support.microsoft.com/office/create-and-share-news-on-your-sharepoint-sites-495f8f1a-3bef-4045-b33a-55e5abe7aed7#:~:text=In%20SharePoint%20Online%2C%20you%20can%20add%20news%20posts,instructions%20Create%20the%20news%20post%20.%20See%20More) ve [Video haber bağlantılarını](/viva/connections/video-news-links) kullanın.
+- **Akışta**: Sağlıklı yaşam ve sağlık kaynaklarını öne çıkarma amacıyla [SharePoint haber gönderilerini](https://support.microsoft.com/office/create-and-share-news-on-your-sharepoint-sites-495f8f1a-3bef-4045-b33a-55e5abe7aed7#:~:text=In%20SharePoint%20Online%2C%20you%20can%20add%20news%20posts,instructions%20Create%20the%20news%20post%20.%20See%20More) ve [Video haber bağlantılarını](/viva/connections/video-news-links) kullanın. Gönderilerin en ilgili kişilere ulaştığından emin olmak için hedef kitle hedeflemeyi kullanabilirsiniz.
 - **Kaynaklar:** Çalışanlarınıza sağlık ve sağlık kaynakları bağlantısı istediğiniz zaman erişebilir.
 
 ### <a name="create-a-supportive-digital-ecosystem"></a>Destekleyici bir dijital ekosistem oluşturma
@@ -146,7 +146,7 @@ Kuruluşunuz zaten Microsoft Teams kullanıyorsa, ekip üyelerinin kaçırdıkla
 
 Toplantı SharePoint'e kaydedildikten ve kaydedildikten sonra, şirket iletişim ekibiniz ön cephe ekibiniz için kolayca erişilebilir hale getirmek için [Viva Bağlantılar bir kart ekleyebilir](/viva/connections/create-dashboard#create-a-dashboard-and-add-cards).
 
-### <a name="host-live-events-and-share-content-on-microsoft-stream"></a>Canlı etkinlikleri barındırma ve Microsoft Stream içerik paylaşma
+### <a name="host-live-events-and-share-video-content-on-microsoft-stream"></a>Canlı etkinlikleri barındırma ve Microsoft Stream video içeriği paylaşma
 
 Microsoft Stream kuruluşunuzun kendi akış video platformudur. Stream ile kuruluşunuzdaki herkes paylaşacak videoları kaydedebilir ve karşıya yükleyebilir. Stream'i ön cephe çalışanlarınızla etkileşim kurmak için kullanmanın yolları şunlardır:
 

@@ -1,6 +1,6 @@
 ---
-title: Uç Nokta için Microsoft Defender'da cihaz durumu ve uyumluluk raporu
-description: Cihaz durumunu, virüsten koruma durumunu ve sürümlerini, işletim sistemi platformlarını ve Windows 10 sürümlerini izlemek için cihaz durumu ve uyumluluk raporunu kullanın.
+title: Uç Nokta için Microsoft Defender'da cihaz durumu raporu
+description: Cihaz durumunu, virüsten koruma durumunu ve sürümlerini, işletim sistemi platformlarını ve Windows 10 sürümlerini izlemek için cihaz durumu raporunu kullanın.
 keywords: sistem durumu, virüsten koruma, işletim sistemi platformu, windows 10 sürümü, sürüm, sistem durumu, uyumluluk, durum
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -11,18 +11,19 @@ ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
 localization_priority: Normal
-ms.date: 09/01/2022
+ms.date: 09/06/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 57db94df3cfd8fae60ab335f2f4a3c8c02f3c9cf
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.reviewer: mkaminska
+ms.openlocfilehash: 1acfb53905d5f122ce548b1e1a90cf7ca1b0ee75
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584870"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614582"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da cihaz durumu ve uyumluluk raporu
 
@@ -36,7 +37,7 @@ ms.locfileid: "67584870"
 
 > Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Cihazlar durum raporu, kuruluşunuzdaki cihazlar hakkında üst düzey bilgiler sağlar. Rapor algılayıcı durumunu, virüsten koruma durumunu, işletim sistemi platformlarını ve Windows 10 sürümlerini gösteren popüler bilgiler içerir.
+Cihaz Durumu raporu, kuruluşunuzdaki cihazlar hakkında üst düzey bilgiler sağlar. Rapor algılayıcı durumunu, virüsten koruma durumunu, işletim sistemi platformlarını, Windows 10 sürümlerini ve Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini gösteren popüler bilgileri içerir.
 
 > [!IMPORTANT]
 > Windows&nbsp;Server&nbsp;2012&nbsp;R2 ve Windows&nbsp;Server&nbsp;2016'nın cihaz durumu raporlarında görünmesi için bu cihazların modern birleşik çözüm paketi kullanılarak eklenmesi gerekir. Daha fazla bilgi için bkz. [Windows Server 2012 R2 ve 2016 için modern birleşik çözümde yeni işlevler](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
@@ -49,7 +50,7 @@ Cihaz durumu ve uyumluluk panosu iki sekmede yapılandırılmıştır:
   - [İşletim sistemleri ve platformlar kartı](#operating-systems-and-platforms-card)
   - [Windows 10 sürüm kartı](#windows-10-versions-card)
 
-- [**Microsoft Defender Virüsten Koruma sistem durumu sekmesinde Microsoft**](#microsoft-defender-antivirus-health-tab) Defender Virüsten Koruma'nın özelliklerini bildiren sekiz kart vardır:
+- [**Microsoft Defender Virüsten Koruma sistem durumu sekmesinde,**](#microsoft-defender-antivirus-health-tab) Microsoft Defender Virüsten Koruma'nın (MDAV) özelliklerini bildiren sekiz kart vardır:
   - [Virüsten koruma modu kartı](#antivirus-mode-card)
   - [Virüsten koruma altyapısı sürüm kartı](#antivirus-engine-version-card)
   - [Virüsten koruma güvenlik bilgileri sürüm kartı](#antivirus-security-intelligence-version-card)
@@ -172,7 +173,7 @@ Güncel raporlama, aşağıdaki ölçütlere uyan cihazlar için bilgi oluşturu
 - Bulut koruması etkin
 - Windows işletim sistemi*
 
-*Şu anda güncel raporlama yalnızca Windows cihazları için kullanılabilir. Mac ve Linux gibi platformlar arası cihazlar "kullanılabilir veri yok" altında listelenir
+*Şu anda güncel raporlama yalnızca Windows cihazları için kullanılabilir. Mac ve Linux gibi platformlar arası cihazlar "Kullanılabilir veri yok"/Bilinmiyor altında listelenir
 
 >:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Microsoft Defender Virüsten Koruma Durumu sekmesini gösterir." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
@@ -227,7 +228,7 @@ API kullanarak dışarı aktarma hakkında bilgi için aşağıdaki makalelere b
 
 > [!IMPORTANT]
 >
-> Şu anda yalnızca **Virüsten Koruma Durumu JSON Yanıtı** genel kullanıma sunulmuştur. **Dosyalar aracılığıyla Virüsten Koruma Sistem Durumu API'sini** şu anda yalnızca genel önizlemede kullanabilirsiniz.
+> Şu anda yalnızca **Virüsten Koruma Durumu JSON Yanıtı** genel kullanıma sunulmuştur. **Dosyalar aracılığıyla Virüsten Koruma Sistem Durumu API'sini** yalnızca genel önizlemede kullanabilirsiniz.
 >
 > **Gelişmiş Tehdit Avcılığı özel sorgusu** şu anda sorgular hala görünür olsa bile yalnızca genel önizlemede kullanılabilir.
 
@@ -307,12 +308,12 @@ Geçerli sürümler ve farklı Microsoft Defender Virüsten Koruma bileşenlerin
 
 Güncel kartlar  **Virüsten Koruma altyapısı, Virüsten Koruma**  **platformu** ve **Güvenlik bilgileri** güncelleştirme sürümleri için güncel durumu gösterir. Üç olası durum vardır:  _Güncel_ ('Doğru'), _güncel değil_ ('Yanlış') ve _kullanılabilir veri yok_ ('Bilinmiyor').
 
-Aşağıdaki her kart için _güncel_, _güncel olmayan_ ve _no_data_available_ tanımları sağlanır.
+Aşağıdaki her kart için  _Güncel_, date_ dışında ve _kullanılabilir veri yok_ tanımları sağlanmıştır.
 
-Microsoft Defender Virüsten Koruma (MDAV), aşağıdaki ölçütlere göre güncel raporlar ve belirlemeler yapar:
+MDAV raporları, aşağıdaki ölçütlere göre güncel belirlemeleri ve raporları oluşturur:
 
-- **Altyapı & platformu güncelleştirmeleri** için: istemci olaylarının en son güncel raporlar için alındığı saat ("İmza Yenileme zamanı") ve Güvenlik Zekası Yayımlama Zamanı (güvenlik zekası VDM'leri altyapı & platform sürümlerini belirlemek için de kullanılır)
-- **Güvenlik bilgileri güncelleştirmeleri için**: İstemci olaylarının en son güncel raporlar için alındığı saat ("İmza Yenileme zamanı"), Güvenlik Zekası Yayımlama Zamanı ve istemciden iletilen son güncel durum
+- **Altyapı & platformu güncelleştirmeleri için**: "İmza Yenileme Zamanı" (istemci olaylarının en son güncel raporlar için alındığı saat) ve "Güvenlik Zekası Yayımlama Zamanı" (güvenlik zekası VDM'leri altyapı & platform sürümlerini belirlemek için kullanılır)
+- **Güvenlik bilgileri güncelleştirmeleri için**: "İmza Yenileme Zamanı" (istemci olaylarının en son güncel raporlar için alındığı saat), Güvenlik Zekası Yayımlama Zamanı ve istemciden iletilen son güncel durum
 
 Yukarıda belirtilen terimler hakkında daha fazla bilgi için şu bölüme bakın: [Yeni Microsoft Defender Virüsten Koruma filtre tanımları](#new-microsoft-defender-antivirus-filter-definitions)
 
@@ -337,7 +338,7 @@ Altyapı ve platform için güncel tanımlar aşağıdadır:
 | Cihazdaki motor/platform dikkate alınır: | Eğer: |
 |:---|:---|
 | **Güncel** | cihaz, son 7 gün içinde Defender rapor olayıyla ('İmza yenileme süresi') iletişim kurar ve son 7 gün içinde bir güvenlik zekası yayımlama süresine sahiptir ve Altyapı veya Platform sürümü derleme süresi son 60 gün içindedir. |
-| **Güncel** | cihaz, son 7 gün içinde Defender rapor olayıyla ('İmza yenileme süresi') iletişim kurar ve son 7 gün içinde güvenlik zekası yayımlama süresine sahiptir ancak Altyapı veya Platform sürümü derleme süresi 60 günden eskidir. |
+| **Güncel** | cihaz, son 7 gün içinde Defender rapor olayıyla ('İmza yenileme süresi') iletişim kurar ve son 7 gün içinde bir güvenlik zekası yayımlama süresine sahiptir, ancak Altyapı veya Platform sürümü derleme süresi 60 günden eskidir. |
 | **bilinmiyor (kullanılabilir veri yok)** | cihaz 7 günden uzun süredir rapor olayıyla ('İmza yenileme süresi') iletişim kurmadı veya güvenlik bilgileri yayımlama süresi 7 günden uzundur. |
 
 Güvenlik zekası için güncel tanımlar aşağıdadır:
@@ -356,7 +357,7 @@ Bunlar hakkında daha fazla bilgi için bkz:
 
 Bu kart, virüsten koruma altyapısı sürümleri güncel ve güncel olmayan cihazları tanımlar.
 
-**'_Güncel_' genel tanımı** - cihazdaki altyapı sürümü en son altyapı sürümüdür (Motor _genellikle_ Windows Update (WU) aracılığıyla aylık olarak yayınlanır). Windows Update (WU) serbest bırakıldığından itibaren üç günlük yetkisiz kullanım süresi vardır.
+**'_Güncel_' genel tanımı** - Cihazdaki altyapı sürümü en son altyapı sürümüdür. Motor _genellikle_ Windows Update (WU) aracılığıyla aylık olarak serbest bırakılır. Windows Update (WU) serbest bırakıldığından itibaren üç günlük yetkisiz kullanım süresi vardır.
 
 Aşağıdaki tabloda **Virüsten Koruma Altyapısı** için güncel raporlar için olası değerler yer alır. Bildirilen Durum, raporlama olayının son alındığı zamanı ve güvenlik zekası yayımlama süresini temel alır.  
 
@@ -373,7 +374,7 @@ Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini yönetme hakk
 
 Bu kart, Virüsten Koruma platformu sürümlerinin güncel ve güncel olmayan cihazları tanımlar.
 
-**'Güncel' genel tanımı** Cihazdaki platform sürümü en son platform sürümüdür (Platform genellikle Windows Update aracılığıyla aylık olarak yayınlanır). WU'nun serbest bırakıldığından itibaren üç günlük yetkisiz kullanım süresi vardır.
+**'Güncel' genel tanımı** Cihazdaki platform sürümü en son platform sürümüdür. Platform genellikle Windows Update) aracılığıyla aylık olarak yayınlanır. WU serbest bırakıldığından itibaren üç günlük yetkisiz kullanım süresi vardır.
 
 Aşağıdaki tabloda **Virüsten Koruma Platformu** için olası güncel rapor değerleri yer almaktadır. Bildirilen değerler raporlama olayının son alındığı zamanı ve güvenlik zekası yayımlama süresini temel alır.
 
@@ -392,7 +393,7 @@ Bu kart, güncel ve güncel olmayan güvenlik bilgileri sürümlerine sahip ciha
 
 **'Güncel' genel tanımı** – cihazdaki güvenlik zekası sürümü son 7 gün içinde yazılmıştır.
 
-Aşağıdaki tabloda **Güvenlik Bilgileri** güncelleştirmeleri için olası güncel rapor değerleri yer alır. Bildirilen değerler raporlama olayının son alındığı zamanı ve güvenlik zekası yayımlama süresini temel alır.
+Aşağıdaki tabloda **Güvenlik Bilgileri** güncelleştirmeleri için olası güncel rapor değerleri yer alır. Bildirilen değerler raporlama olayının son alındığı zamanı, güvenlik zekası yayımlama süresini ve istemciden alınan son durumu temel alır.
 
 | Olayın Son Yenileme Zamanı <br/> (raporlarda "İmza Yenileme Zamanı" olarak da bilinir) | Güvenlik Zekası Yayımlama Zamanı | İstemciden alınan son durum | _Bildirilen Durum_: |
 |:----|:----|:----|:----|

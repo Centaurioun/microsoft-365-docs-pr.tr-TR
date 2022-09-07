@@ -360,6 +360,14 @@
           href: team-security-isolation-dev-test.md
 - name: Sektöre özel rehberlik
   items:
+    - name: Ön saf çalışanları için Microsoft 365
+      items:
+        - name: Genel bakış
+          href: /microsoft-365/frontline/flw-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Adım 1. Senaryolarınızı seçin
+          href: /microsoft-365/frontline/flw-choose-scenarios?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Adım 2. Ön cephe çalışanları için Microsoft 365'i ayarlama
+          href: /microsoft-365/frontline/flw-deploy-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Finansal hizmetler
       items:
         - name: Genel bakış
@@ -375,7 +383,7 @@
         - name: Genel bakış
           href: healthcare-overview.md
         - name: Sağlık Hizmetleri için Teams
-          href: /frontline/teams-in-hc
+          href: /microsoft-365/frontline/teams-in-hc
     - name: Education
       items:
         - name: Eğitim için Teams
@@ -391,7 +399,7 @@
         - name: Genel bakış
           href: retail-overview.md
         - name: Perakende için Teams
-          href: /frontline/teams-for-retail-landing-page
+          href: /microsoft-365/frontline/teams-for-retail-landing-page
 - name: Kurumsal mimari tasarım ilkeleri
   items:
     - name: Genel bakış

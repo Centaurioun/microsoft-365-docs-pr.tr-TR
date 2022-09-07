@@ -19,12 +19,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection(EOP) içindeki tüm kullanıcılar için karantinaya alınan iletileri görüntülemeyi ve yönetmeyi öğrenebilir. Office 365 için Microsoft Defender sahip kuruluşlardaki yöneticiler, SharePoint Online, OneDrive İş ve Microsoft Teams'de karantinaya alınan dosyaları da yönetebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: c9603827fbd58472dde025cb2bae294e29128f74
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 8c28e4dc142136075e220ac6f011be4acf76e813
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596477"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611465"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Karantinaya alınan iletileri ve dosyaları EOP'de yönetici olarak yönetme
 
@@ -284,6 +284,9 @@ Diğer eylemler simgesine tıkladıktan ![sonra aşağıdaki eylemler kullanıla
 > Bu bölümdeki karantinaya alınan dosyalara yönelik yordamlar yalnızca Plan 1 veya Plan 2 abonelerine Office 365 için Microsoft Defender kullanılabilir.
 
 Office 365 için Defender olan kuruluşlarda yöneticiler SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler tarafından karantinaya alınan dosyaları yönetebilir. Bu dosyalar için korumayı etkinleştirmek için bkz. [SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler'i açma](turn-on-mdo-for-spo-odb-and-teams.md).
+
+> [!NOTE]
+> SharePoint veya OneDrive'da karantinaya alınan dosyalar 30 gün sonra fom karantinadan kaldırılır, ancak engellenen dosyalar SharePoint veya OneDrive'da engellenmiş durumda kalır.
 
 ### <a name="view-quarantined-files"></a>Karantinaya alınan dosyaları görüntüleme
 

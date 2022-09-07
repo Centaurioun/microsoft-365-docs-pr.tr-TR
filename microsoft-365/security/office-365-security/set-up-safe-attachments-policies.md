@@ -18,12 +18,12 @@ description: Kuruluşunuzu e-postadaki kötü amaçlı dosyalardan korumak için
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 3b47007eb3653c6f1d10cfc808d4052f6899e996
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: ad5b68ca377a03ff42044b85c3125339bcbc8b62
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496625"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611902"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de Güvenli Ekler ilkelerini ayarlama
 
@@ -38,7 +38,7 @@ ms.locfileid: "67496625"
 
 Güvenli Ekler[, Exchange Online Protection](whats-new-in-defender-for-office-365.md) 'de [(EOP) kötü amaçlı yazılımdan koruma](anti-malware-protection.md) tarafından tarandıktan sonra gelen e-posta iletilerindeki ekleri denetlemek için, ancak alıcılara teslim etmeden önce sanal bir ortam kullanan Office 365 için Microsoft Defender bir özelliktir. Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender Güvenli Ekler](safe-attachments.md).
 
-Varsayılan Güvenli Ekler ilkesi olmasa **da, Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi tüm alıcılara (özel Güvenli Ekler ilkelerinde tanımlanmayan kullanıcılar) Güvenli Ekler koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Belirli kullanıcılar, gruplar veya etki alanları için geçerli olan Güvenli Ekler ilkeleri oluşturmak için bu makaledeki yordamları da kullanabilirsiniz.
+Varsayılan Güvenli Ekler ilkesi olmasa **da, Yerleşik koruma** önayarlı güvenlik ilkesi tüm alıcılara Güvenli Ekler koruması sağlar (Standart veya Katı önceden ayarlanmış güvenlik ilkeleri veya özel Güvenli Ekler ilkelerinde tanımlanmayan kullanıcılar). Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Belirli kullanıcılar, gruplar veya etki alanları için geçerli olan Güvenli Ekler ilkeleri oluşturmak için bu makaledeki yordamları da kullanabilirsiniz.
 
 Güvenli Ekler ilkelerini Microsoft 365 Defender portalında veya PowerShell'de (Exchange Online Exchange Online posta kutuları olan uygun Microsoft 365 kuruluşları için PowerShell'de; Exchange Online posta kutusu olmayan kuruluşlar için tek başına EOP PowerShell'de yapılandırabilirsiniz , ancak Office 365 için Defender eklenti abonelikleri ile).
 
@@ -111,8 +111,8 @@ Microsoft 365 Defender portalında özel Güvenli Ekler ilkesi oluşturmak, her 
    > [!IMPORTANT]
    > Birden çok farklı koşul veya özel durum türü ek değildir; Onlar kapsayıcı. İlke _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
    >
-   > - Alıcı: romain@contoso.com
-   > - Alıcı şu üyelerin üyesidir: Yöneticiler
+   > - Kullanıcılar: romain@contoso.com
+   > - Gruplar: Yöneticiler
    >
    > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
    >

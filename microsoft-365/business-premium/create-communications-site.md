@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.collection:
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 İş Ekstra ile kampanyanız veya işletmeniz için neden ve nasıl SharePoint iletişim sitesi oluşturacağınızı öğrenin ve yanlış dosya paylaşımı nedeniyle ekibi siber saldırılara ve kötü amaçlı yazılımlara ve diğer tehditlere karşı koruyun.
-ms.openlocfilehash: 48eaa0afabb83b66b797fc0bc47234888fc5e176
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 63831f527aa63909ae055304cdeb7decc1ed62c5
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489260"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612999"
 ---
 # <a name="create-a-communications-site"></a>İletişim sitesi oluşturma
 

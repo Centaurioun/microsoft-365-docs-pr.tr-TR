@@ -17,12 +17,12 @@ ms.custom: ''
 description: Yöneticiler, desteklenen belirli senaryolarda (üçüncü taraf kimlik avı simülasyonları ve güvenlik işlemleri (SecOps) posta kutularına teslim edilen iletiler) filtrelenmemesi gereken iletileri belirlemek için Exchange Online Protection (EOP) içinde gelişmiş teslim ilkesini kullanmayı öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 82d1f38430769b00cdb8fc5cc7c9cd02884f66d1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 8f779a3f26fe1c5570ce89cf4d42b76f997faeb1
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67483002"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613043"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Üçüncü taraf kimlik avı simülasyonlarının kullanıcılara ve filtrelenmemiş iletilerin SecOps posta kutularına teslimini yapılandırma
 
@@ -333,7 +333,7 @@ PowerShell'de üçüncü taraf kimlik avı simülasyonu yapılandırmak çok ad�
 
 #### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>1. Adım: Kimlik avı benzetimi geçersiz kılma ilkesini oluşturmak için PowerShell kullanma
 
-[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) bu örnek, kimlik avı benzetimi geçersiz kılma ilkesini oluşturur.
+[Güvenlik & Uyumluluğu PowerShell'de](/powershell/exchange/connect-to-scc-powershell), bu örnek kimlik avı simülasyonu geçersiz kılma ilkesini oluşturur.
 
 ```powershell
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
@@ -345,7 +345,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [New-PhishSimOverride
 
 #### <a name="step-2-use-powershell-to-create-the-phishing-simulation-override-rule"></a>2. Adım: Kimlik avı benzetimi geçersiz kılma kuralını oluşturmak için PowerShell kullanma
 
-[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki söz dizimini kullanın:
+[Güvenlik & Uyumluluk PowerShell'de](/powershell/exchange/connect-to-scc-powershell) aşağıdaki söz dizimini kullanın:
 
 ```powershell
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
@@ -387,7 +387,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [New-TenantAllowBlock
 
 ### <a name="use-powershell-to-view-the-phishing-simulation-override-policy"></a>Kimlik avı benzetimi geçersiz kılma ilkesini görüntülemek için PowerShell kullanma
 
-[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) bu örnek, tek ve tek kimlik avı benzetimi geçersiz kılma ilkesi hakkında ayrıntılı bilgi döndürür.
+[Güvenlik & Uyumluluğu PowerShell'de](/powershell/exchange/connect-to-scc-powershell) bu örnek, tek ve tek kimlik avı benzetimi geçersiz kılma ilkesi hakkında ayrıntılı bilgi döndürür.
 
 ```powershell
 Get-PhishSimOverridePolicy
@@ -397,7 +397,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-PhishSimOverride
 
 ### <a name="use-powershell-to-view-phishing-simulation-override-rules"></a>Kimlik avı benzetimi geçersiz kılma kurallarını görüntülemek için PowerShell kullanma
 
-[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) bu örnek, kimlik avı benzetimi geçersiz kılma kuralları hakkında ayrıntılı bilgi döndürür.
+[Güvenlik & Uyumluluğu PowerShell'de](/powershell/exchange/connect-to-scc-powershell), bu örnek kimlik avı simülasyonu geçersiz kılma kuralları hakkında ayrıntılı bilgi döndürür.
 
 ```powershell
 Get-PhishSimOverrideRule
@@ -427,7 +427,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-TenantAllowBlock
 
 ### <a name="use-powershell-to-modify-the-phishing-simulation-override-policy"></a>Kimlik avı benzetimi geçersiz kılma ilkesini değiştirmek için PowerShell kullanma
 
-[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki söz dizimini kullanın:
+[Güvenlik & Uyumluluk PowerShell'de](/powershell/exchange/connect-to-scc-powershell) aşağıdaki söz dizimini kullanın:
 
 ```powershell
 Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy [-Comment "<DescriptiveText>"] [-Enabled <$true | $false>]
@@ -443,7 +443,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-PhishSimOverride
 
 ### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>Kimlik avı benzetimi geçersiz kılma kurallarını değiştirmek için PowerShell kullanma
 
-[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki söz dizimini kullanın:
+[Güvenlik & Uyumluluk PowerShell'de](/powershell/exchange/connect-to-scc-powershell) aşağıdaki söz dizimini kullanın:
 
 ```powershell
 Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
@@ -484,7 +484,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-TenantAllowBlock
 
 ### <a name="use-powershell-to-remove-a-phishing-simulation-override-policy"></a>Kimlik avı benzetimi geçersiz kılma ilkesini kaldırmak için PowerShell kullanma
 
-[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) bu örnek, kimlik avı benzetimi geçersiz kılma ilkesini ve buna karşılık gelen kuralı kaldırır.
+[Güvenlik & Uyumluluğu PowerShell'de](/powershell/exchange/connect-to-scc-powershell), bu örnek kimlik avı simülasyonu geçersiz kılma ilkesini ve buna karşılık gelen kuralı kaldırır.
 
 ```powershell
 Remove-PhishSimOverridePolicy -Identity PhishSimOverridePolicy
@@ -494,7 +494,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz [. Remove-PhishSimOver
 
 ### <a name="use-powershell-to-remove-phishing-simulation-override-rules"></a>Kimlik avı benzetimi geçersiz kılma kurallarını kaldırmak için PowerShell kullanma
 
-[Exchange Online PowerShell'de](/powershell/exchange/connect-to-exchange-online-powershell) aşağıdaki söz dizimini kullanın:
+[Güvenlik & Uyumluluk PowerShell'de](/powershell/exchange/connect-to-scc-powershell) aşağıdaki söz dizimini kullanın:
 
 ```powershell
 Remove-PhishSimOverrideRule -Identity <RuleIdentity>

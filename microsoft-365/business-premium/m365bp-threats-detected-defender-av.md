@@ -6,17 +6,18 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: medium
 ms.date: 07/19/2022
 search.appverid: MET150
 description: Microsoft Defender Virüsten Koruma'nın Windows cihazlarınızı virüs, kötü amaçlı yazılım ve casus yazılım gibi yazılım tehditlerine karşı nasıl koruyup korumayacağınızı öğrenin.
-ms.openlocfilehash: 293ea476783e81f34856a3c7cc80d40ed254e4ac
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: a1dccd7e6283bf50d1929539e16b5fa81af39cbe
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893089"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613548"
 ---
 # <a name="overview-of-threat-protection-by-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'nın tehdit korumasına genel bakış
 

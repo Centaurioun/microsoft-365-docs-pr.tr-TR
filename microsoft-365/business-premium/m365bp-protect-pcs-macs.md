@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: yönetilmeyen veya kendi cihazını getir (KCG) Microsoft 365 İş Ekstra ile siber saldırılara karşı koruyun. Windows bilgisayarlar ve Mac'ler için siber güvenliği ayarlama.
-ms.openlocfilehash: c6010661d11be2af064ddd3d5250f1cf9baacc09
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: f19635ea8874383725e8f19946f1f45035063b8a
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894371"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613658"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'da yönetilmeyen Windows bilgisayarlarını ve Mac'leri koruma
 
@@ -54,9 +55,9 @@ Windows Update, bilgisayarınızın güvende kalmasına ve tehditlere karşı ko
 
 Windows'un önceki bir sürümüne sahipseniz ve Microsoft Security Essentials kullanıyorsanız, Windows Güvenliği geçmek iyi bir fikirdir. Daha fazla bilgi için bkz. [Windows Güvenliği ile cihazımın korunmasına yardımcı olun](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
 
-### <a name="turn-on-windows-defender-firewall"></a>Windows Defender Güvenlik Duvarı açma
+### <a name="turn-on-windows-defender-firewall"></a>Windows Defender Güvenlik Duvarı'nı açma
 
-Başka bir güvenlik duvarı açık olsa bile her zaman Windows Defender Güvenlik Duvarı çalıştırmanız gerekir. Windows Defender Güvenlik Duvarı kapatıldığında cihazınız (ve varsa ağınız) yetkisiz erişime karşı daha savunmasız hale gelebilir. Yönergeler için bkz [. Windows Güvenlik Duvarı'nı açma veya kapatma](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) .
+Başka bir güvenlik duvarı açık olsa bile Windows Defender Güvenlik Duvarı'nı her zaman çalıştırmanız gerekir. Windows Defender Güvenlik Duvarı'nı kapatmak cihazınızı (ve varsa ağınızı) yetkisiz erişime karşı daha savunmasız hale getirir. Yönergeler için bkz [. Windows Güvenlik Duvarı'nı açma veya kapatma](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) .
 
 ## <a name="next-mission"></a>Sonraki görev
 

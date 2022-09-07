@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/05/2022
 ms.collection:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Kampanyalar veya diğer işletmeler için Microsoft 365 İş kurulumuna genel bakış
-ms.openlocfilehash: 90de3294ffb7bfe1ebc2890375433ba432cdca4c
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: d3bcf371961de8870f9892bd0818341b0288b385
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276842"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613395"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>Kampanyalar için Microsoft 365 İş kurulumu
 

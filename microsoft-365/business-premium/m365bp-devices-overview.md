@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 08/05/2022
 ms.collection:
@@ -19,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Siber saldırılara ve diğer kötü amaçlı tehditlere ve güvenlik açıklarına karşı koruma ile kendi cihazını getir (KCG) ayarlamaya genel bakış.
-ms.openlocfilehash: ccff524b32bb0042d3072abf8cc339c49e9517d8
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 3ef4509dadf5b03e1dc6b66fe7c004a1689c934c
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67274836"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67615352"
 ---
 # <a name="set-up-unmanaged-byod-devices"></a>Yönetilmeyen (KCG) cihazları ayarlama
 

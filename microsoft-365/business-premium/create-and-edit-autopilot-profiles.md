@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.collection:
 - Adm_O365
@@ -28,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Bir Autopilot profili oluşturmayı ve bunu bir cihaza uygulamayı, bir profili düzenlemeyi veya silmeyi ya da bir cihazdan profil kaldırmayı öğrenin.
-ms.openlocfilehash: 6f019e494eb073f47921f4adef454c0e48541b49
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 2a74bf007f0dcac400033248813afe9558f0b2f8
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66862021"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613021"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Autopilot profili oluşturma ve düzenleme
 

@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.collection: ''
 ms.localizationpriority: high
 ms.date: 08/18/2022
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Windows Autopilot'ı kullanarak işletmeniz için yeni Windows 10 cihazları çalışanların kullanımına hazır olacak şekilde ayarlamayı öğrenin.
-ms.openlocfilehash: 7286d22a92b8d989b8cb00c949f45f25f501a1a3
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 80f14c2a516560897bd87dd47a0a57b4277a8db4
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388596"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613373"
 ---
 # <a name="use-this-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Autopilot cihazları ve profili eklemek için bu adım adım kılavuzu kullanın
 

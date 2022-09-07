@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
@@ -27,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Microsoft 365 İş Ekstra uygulama koruma ayarlarının kullanıcılarınızın Windows 10 cihazlarında etkili olduğunu doğrulamayı öğrenin.
-ms.openlocfilehash: fe91d0b1588d860ee510f2542bc3f11a8cf2812a
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: bab1eea1bff77d559e160b8c363ad7c0a91b4100
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66861988"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614274"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-or-11-pcs"></a>Windows 10 veya 11 bilgisayar için cihaz koruma ayarlarını doğrulama
 

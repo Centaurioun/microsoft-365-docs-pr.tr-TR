@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection: ''
@@ -17,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra'deki koruma özelliklerinin Intune ayarlarıyla nasıl eş olduğunu öğrenin. Abonelik, Intune ayarlarını değiştirmek için size bir lisans sağlar.
-ms.openlocfilehash: b3a428e43bc42eb0d23cacc584afc370ab27dc10
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: de373c590617b7b6a30ecd5dbcb1fb1bac5c0c97
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893177"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614912"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Microsoft 365 İş Ekstra koruma özellikleri Intune ayarlarıyla nasıl eşler?
 

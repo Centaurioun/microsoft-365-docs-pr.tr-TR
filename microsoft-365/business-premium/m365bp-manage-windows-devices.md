@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection: ''
@@ -17,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Yalnızca birkaç adımda Yerel Active Directory'ye katılmış Windows 10 cihazları korumak için Microsoft 365'i etkinleştirmeyi öğrenin.
-ms.openlocfilehash: 427010f073eb86a7fe685335189550cf48ea9549
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: fd49bdd0ca866644c39e7e2a52d2061f6bee1b01
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893199"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612691"
 ---
 # <a name="manage-windows-devices-with-microsoft-365-business-premium"></a>windows cihazlarını Microsoft 365 İş Ekstra ile yönetme
 

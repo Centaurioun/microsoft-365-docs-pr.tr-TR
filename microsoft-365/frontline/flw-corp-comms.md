@@ -21,12 +21,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: ff0abacf0961bf1df7751ca3e1fca8293902887c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 5e8753511c0171dcbb864528a31c0a65209726c7
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67474083"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67615084"
 ---
 # <a name="corporate-communications-with-frontline-workers"></a>Ön saf çalışanları ile kurumsal iletişim
 
@@ -62,3 +62,7 @@ Yammer hakkında daha fazla bilgi:
 
 - Yöneticiler için: [Yammer'i yönetme](/yammer)
 - Kullanıcılar için: [Yammer kullanma](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c)
+
+## <a name="connect-over-email-with-exchange-online-and-outlook"></a>Exchange Online ve Outlook ile e-posta üzerinden bağlanma
+
+Email çoğu iş yeri için temel bir iletişim aracıdır. [Exchange Online ile e-posta ayarlayın ve e-posta](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) üzerinden yayın iletişimleri gönderebilmeniz için ön cephe çalışanlarınız ve yöneticileriniz için posta kutuları oluşturun. E-posta posta kutusuna sahip olmak için kullanıcıların F3 lisansı olmalıdır.

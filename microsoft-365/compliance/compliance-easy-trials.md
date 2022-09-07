@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview çözümleri deneme sürümü ve nasıl kaydolacağınızı öğrenin.
-ms.openlocfilehash: dd223402153048b0d7f452b202804e6bf1853b97
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 42a29a40df1b452b32ae74110c0d9d166361d5fe
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640126"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614670"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Microsoft Purview çözümleri deneme sürümü hakkında
 
@@ -47,7 +47,7 @@ Kullanıcıların bir deneme sürümüne kaydolmak veya bu denemeyi sonlandırma
 - Genel Yönetici
 - Uyumluluk Verileri Yöneticisi
 
-[Rollerle ilgili ayrıntıları yönetici rolleri hakkında](../admin/add-users/about-admin-roles.md) sayfasından edinebilirsiniz.
+[Microsoft 365 denemelerini başlatma rolleri](compliance-easy-trials-roles.md) hakkında daha fazla bilgi edinin.
 
 ## <a name="how-to-sign-up-for-the-trial"></a>Deneme sürümüne kaydolma
 

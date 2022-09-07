@@ -19,12 +19,12 @@ ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender'da Güvenli Bağlantılar ilkelerini ve genel Güvenli Bağlantılar ayarlarını görüntülemeyi, oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: a0e9a805038e3cb3ae586d84229a00e24631d7e0
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: ac2c6a2fb5ca151ba50176ae9faf06ec7b8cd0ab
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496911"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611333"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama
 
@@ -39,7 +39,7 @@ ms.locfileid: "67496911"
 
 [Office 365 için Microsoft Defender'deki](defender-for-office-365.md) Güvenli Bağlantılar, gelen e-posta iletilerinin posta akışında URL taramasına ve e-posta iletilerindeki ve diğer konumlardaki URL'lerin ve bağlantıların tıklamayla doğrulanmasını sağlar. Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar](safe-links.md).
 
-Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, Yerleşik koruma** ön ayarı güvenlik ilkesi tüm alıcılara Güvenli Bağlantılar koruması sağlar (özel Güvenli Bağlantılar veya Standart veya Katı ön ayarlı güvenlik ilkeleri içinde tanımlanmayan kullanıcılar). Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).
+Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, Yerleşik koruma** ön ayarı güvenlik ilkesi tüm alıcılara (Standart veya Katı önceden belirlenmiş güvenlik ilkeleri veya özel Güvenli Bağlantılar ilkelerinde tanımlanmayan kullanıcılar) Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).
 
 Belirli kullanıcılar, gruplar veya etki alanları için geçerli olan Güvenli Bağlantılar ilkeleri oluşturmak için bu makaledeki yordamları da kullanabilirsiniz.
 
@@ -120,8 +120,8 @@ Microsoft 365 Defender portalında özel bir Güvenli Bağlantılar ilkesi oluş
    > [!IMPORTANT]
    > Birden çok farklı koşul veya özel durum türü ek değildir; Onlar kapsayıcı. İlke _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
    >
-   > - Alıcı: romain@contoso.com
-   > - Alıcı şu üyelerin üyesidir: Yöneticiler
+   > - Kullanıcılar: romain@contoso.com
+   > - Gruplar: Yöneticiler
    >
    > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
    >

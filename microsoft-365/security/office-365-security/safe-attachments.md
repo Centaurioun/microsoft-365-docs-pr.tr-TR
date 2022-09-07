@@ -20,12 +20,12 @@ ms.collection:
 description: Yöneticiler, Office 365 için Microsoft Defender'daki Güvenli Ekler özelliği hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f19c0b4497cc2d6d1c08f5b3062add2dd45d64fd
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: d8439ac6dbf9ee9dae315f4da4d5f7fd38560351
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496801"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614934"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Ekler
 
@@ -37,7 +37,7 @@ ms.locfileid: "67496801"
 
 [Office 365 için Microsoft Defender'deki](defender-for-office-365.md) Güvenli Ekler, [Exchange Online Protection'de (EOP) kötü amaçlı yazılımdan koruma](anti-malware-protection.md) tarafından zaten taranmış e-posta ekleri için ek bir koruma katmanı sağlar. Özellikle, Güvenli Ekler, e-posta iletilerindeki ekleri alıcılara teslim etmeden önce denetlemek için bir sanal ortam kullanır ( _patlama_ olarak bilinen bir işlem).
 
-E-posta iletileri için Güvenli Ekler koruması, Güvenli Ekler ilkeleri tarafından denetlenmektedir. Varsayılan Güvenli Ekler ilkesi olmasa **da, Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi tüm alıcılara (özel Güvenli Ekler ilkelerinde tanımlanmayan kullanıcılar) Güvenli Ekler koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Ayrıca belirli kullanıcılar, gruplar veya etki alanları için geçerli olan Güvenli Ekler ilkeleri de oluşturabilirsiniz. Yönergeler için bkz. [Office 365 için Microsoft Defender'da Güvenli Ekler ilkelerini ayarlama](set-up-safe-attachments-policies.md).
+E-posta iletileri için Güvenli Ekler koruması, Güvenli Ekler ilkeleri tarafından denetlenmektedir. Varsayılan Güvenli Ekler ilkesi olmasa **da, Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi tüm alıcılara Güvenli Ekler koruması sağlar (Standart veya Katı önceden ayarlanmış güvenlik ilkeleri veya özel Güvenli Ekler ilkelerinde tanımlanmayan kullanıcılar). Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Ayrıca belirli kullanıcılar, gruplar veya etki alanları için geçerli olan Güvenli Ekler ilkeleri de oluşturabilirsiniz. Yönergeler için bkz. [Office 365 için Microsoft Defender'da Güvenli Ekler ilkelerini ayarlama](set-up-safe-attachments-policies.md).
 
 Dosya eki şifrelenmişse veya parola korumalıysa, Güvenli Ekler tarafından incelenemez. Eki içeren ileti teslim edilecek ve alıcı dosyanın Güvenli Ekler tarafından taranmadığına dair bir uyarı almaz.
 
@@ -62,6 +62,23 @@ Güvenli Ekler taraması, Microsoft 365 verilerinizin bulunduğu bölgede gerçe
 
 Bu bölümde, Güvenli Ekler ilkelerindeki ayarlar açıklanmaktadır:
 
+- **Alıcı filtreleri**: İlkenin kime uygulanacağını belirleyen alıcı koşullarını ve özel durumlarını belirtmeniz gerekir. Koşullar ve özel durumlar için şu özellikleri kullanabilirsiniz:
+  - **Kullanıcılar**
+  - **Gruplar**
+  - **Etki alanları**
+
+  Bir koşulu veya özel durumu yalnızca bir kez kullanabilirsiniz, ancak koşul veya özel durum birden çok değer içerebilir. Aynı koşula veya özel duruma ait birden çok değer OR mantığını kullanır (örneğin, _\<recipient1\>_ veya _\<recipient2\>_). Farklı koşullar veya özel durumlar AND mantığını kullanır (örneğin, _\<recipient1\>_ ve _\<member of group 1\>_).
+
+  > [!IMPORTANT]
+  > Birden çok farklı koşul veya özel durum türü ek değildir; Onlar kapsayıcı. İlke _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
+  >
+  > - Kullanıcılar: romain@contoso.com
+  > - Gruplar: Yöneticiler
+  >
+  > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
+  >
+  > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
+
 - **Güvenli Ekler bilinmeyen kötü amaçlı yazılım yanıtı**: Bu ayar, e-posta iletilerinde Güvenli Ekler kötü amaçlı yazılım taraması eylemini denetler. Kullanılabilir seçenekler aşağıdaki tabloda açıklanmıştır:
 
   |Seçeneği|Etkisi|Şunu yapmak istediğinizde kullanın:|
@@ -72,30 +89,13 @@ Bu bölümde, Güvenli Ekler ilkelerindeki ayarlar açıklanmaktadır:
   |**Değiştirmek**|Algılanan kötü amaçlı yazılım eklerini kaldırır. <br/><br/> Alıcılara eklerin kaldırıldığını bildirir. <br/><br/>  Kötü amaçlı ekler içeren iletiler karantinaya alınır. Varsayılan olarak, iletileri yalnızca yöneticiler (kullanıcılar değil) gözden geçirebilir, yayımlayabilir veya silebilir.<sup>\*</sup> <br/><br/> Güvenli Eklerin taranma nedeniyle güvenli iletilerin teslimi gecikebilir.|Algılanan kötü amaçlı yazılım nedeniyle eklerin kaldırıldığı alıcılara görünürlük sağlayın.|
   |**Dinamik Teslim**|İletileri hemen teslim eder, ancak Güvenli Ekler taraması tamamlanana kadar ekleri yer tutucularla değiştirir. <br/><br/> Kötü amaçlı ekler içeren iletiler karantinaya alınır. Varsayılan olarak, iletileri yalnızca yöneticiler (kullanıcılar değil) gözden geçirebilir, yayımlayabilir veya silebilir.<sup>\*</sup> <br/><br/> Ayrıntılar için, bu makalenin [devamında yer alan Güvenli Ekler ilkelerinde Dinamik Teslim](#dynamic-delivery-in-safe-attachments-policies) bölümüne bakın.|Alıcıları kötü amaçlı dosyalardan korurken ileti gecikmelerinden kaçının.|
 
-  <sup>\*</sup> Yöneticiler, _kullanıcıların karantinaya alınan iletilere_ ne yapmalarına izin verildiğini tanımlayan Güvenli Ekler ilkelerinde karantina ilkeleri oluşturabilir ve atayabilir. Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md).
+  <sup>\*</sup>**Karantina ilkesi**: Yöneticiler, _kullanıcıların karantinaya alınan iletilere_ ne yapmalarına izin verildiğini tanımlayan Güvenli Ekler ilkelerinde karantina ilkeleri oluşturabilir ve atayabilir. Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md).
 
-- **Algılama sırasında eki yeniden yönlendirme: Yeniden yönlendirmeyi etkinleştirin** ve **Eki şu e-posta adresine gönderin**: **Engelle**, **İzle** veya **Değiştir** eylemleri için, analiz ve araştırma için belirtilen iç veya dış e-posta adresine kötü amaçlı yazılım ekleri içeren iletiler gönderin.
+- **Algılanan ekleri olan iletileri yeniden yönlendirme**: **Yeniden yönlendirmeyi etkinleştirin** ve **Engellenen, izlenen veya değiştirilen ekleri içeren iletileri belirtilen e-posta adresine gönderin**: **Engelleme**, **İzleme** veya **Değiştirme** eylemleri için, analiz ve araştırma için belirtilen iç veya dış e-posta adresine kötü amaçlı yazılım ekleri içeren iletiler gönderin.
 
   Standart ve Katı ilke ayarları için öneri, yeniden yönlendirmeyi etkinleştirmektir. Daha fazla bilgi için bkz [. Güvenli Ekler ayarları](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
-- **Ekler için kötü amaçlı yazılım taraması zaman aşımına uğradıysa veya hata oluşursa yukarıdaki seçimi uygulayın**: **Güvenli Ekler bilinmeyen kötü amaçlı yazılım yanıtı** tarafından belirtilen eylem, Güvenli Ekler taraması tamamlanamadıklarında bile iletilerde gerçekleştirilir. **Yeniden yönlendirmeyi etkinleştir'i** seçerseniz her zaman bu seçeneği belirleyin. Aksi takdirde iletiler kaybolabilir.
-
-- **Alıcı filtreleri**: İlkenin kime uygulanacağını belirleyen alıcı koşullarını ve özel durumlarını belirtmeniz gerekir. Koşullar ve özel durumlar için şu özellikleri kullanabilirsiniz:
-  - **Alıcı**
-  - **Alıcı etki alanı**
-  - **Alıcı,**
-
-  Bir koşulu veya özel durumu yalnızca bir kez kullanabilirsiniz, ancak koşul veya özel durum birden çok değer içerebilir. Aynı koşula veya özel duruma ait birden çok değer OR mantığını kullanır (örneğin, _\<recipient1\>_ veya _\<recipient2\>_). Farklı koşullar veya özel durumlar AND mantığını kullanır (örneğin, _\<recipient1\>_ ve _\<member of group 1\>_).
-
-  > [!IMPORTANT]
-  > Birden çok farklı koşul veya özel durum türü ek değildir; Onlar kapsayıcı. İlke _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
-  >
-  > - Alıcı: romain@contoso.com
-  > - Alıcı şu üyelerin üyesidir: Yöneticiler
-  >
-  > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
-  >
-  > Benzer şekilde, ilkenin özel durumu olarak aynı alıcı filtresini kullanırsanız, ilke _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanmaz. Grubun üyesi değilse, ilke hala onun için geçerlidir.
+- **Tarama tamamlanamadıysa Güvenli Ekler algılama yanıtını uygulayın (zaman aşımı veya hatalar)**: **Güvenli Ekler bilinmeyen kötü amaçlı yazılım yanıtı** tarafından belirtilen eylem, Güvenli Ekler taraması tamamlanamadıklarında bile iletilere uygulanır. **Yeniden yönlendirmeyi etkinleştir'i** seçerseniz her zaman bu seçeneği belirleyin. Aksi takdirde iletiler kaybolabilir.
 
 - **Öncelik**: Birden çok ilke oluşturursanız, bunların uygulanacağı sırayı belirtebilirsiniz. hiçbir iki ilke aynı önceliğe sahip olamaz ve ilke işleme ilk ilke uygulandıktan sonra durur.
 

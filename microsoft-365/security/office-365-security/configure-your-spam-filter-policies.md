@@ -18,12 +18,12 @@ ms.custom: ''
 description: Yöneticiler, Exchange Online Protection (EOP) içinde istenmeyen posta önleme ilkelerini görüntülemeyi, oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6712359eeff1ee57ef75caea6e46452394062c43
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6c58afbaf6d8162c6c06e3ab69ec671ce4bf83e9
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482372"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613219"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP'de istenmeyen posta önleme ilkelerini yapılandırma
 
@@ -116,8 +116,8 @@ Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi olu
    > [!IMPORTANT]
    > Birden çok farklı koşul veya özel durum türü ek değildir; Onlar kapsayıcı. İlke _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
    >
-   > - Alıcı: romain@contoso.com
-   > - Alıcı şu üyelerin üyesidir: Yöneticiler
+   > - Kullanıcılar: romain@contoso.com
+   > - Gruplar: Yöneticiler
    >
    > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
    >

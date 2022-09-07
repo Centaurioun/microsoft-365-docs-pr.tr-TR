@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: c9eca5d4d805b3eb9663a3aacf82d8e922585da7
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 76ee0b786c2435e57fc4991685c4456cf82fe3dd
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497721"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611136"
 ---
 # <a name="deploy-teams-at-scale-for-frontline-workers"></a>Teams'i ön cephe çalışanları için uygun ölçekte dağıtma
 
@@ -141,7 +141,7 @@ Teams PowerShell modülünün en son sürümünü yüklemek ve bu sürüme bağl
 
 CSV dosyalarınızı oluşturduğunuza ve ortamınızı ayarladığınıza göre, ekiplerinizi dağıtmaya hazırsınız demektir.
 
-Oluşturmak üzere bir grup ekip göndermek için cmdlet'ini kullanırsınız ```New-CsBatchTeamsDeployment``` . Her toplu iş için bir düzenleme kimliği oluşturulur. Ardından cmdlet'ini ```Get-CsBatchTeamsDeploymentStatus``` kullanarak her bir toplu iş için ilerleme durumunu ve ilerleme durumunu izleyebilirsiniz.
+Oluşturulacak bir ekip grubu göndermek için [New-CsBatchTeamsDeployment](/powershell/module/teams/New-CsBatchTeamsDeployment) cmdlet'ini kullanırsınız. Her toplu iş için bir düzenleme kimliği oluşturulur. Ardından [get-CsBatchTeamsDeploymentStatus](/powershell/module/teams/Get-CsBatchTeamsDeploymentstatus) cmdlet'ini kullanarak her bir toplu iş için ilerleme durumunu izleyebilirsiniz.
 
 1. Bir ekip grubu dağıtmak için aşağıdakileri çalıştırın. Bu komutta, bu dağıtım hakkında bildirimde bulunabilmek için CSV dosyalarınızın yolunu ve en fazla beş alıcının e-posta adreslerini belirtirsiniz.
 
@@ -165,5 +165,7 @@ Oluşturmak üzere bir grup ekip göndermek için cmdlet'ini kullanırsınız ``
 
 ## <a name="related-articles"></a>İlgili makaleler
 
+- [New-CsBatchTeamsDeployment](/powershell/module/teams/New-CsBatchTeamsDeployment)
+- [Get-CsBatchTeamsDeploymentStatus](/powershell/module/teams/Get-CsBatchTeamsDeploymentstatus)
 - [Teams PowerShell'e Genel Bakış](/microsoftteams/teams-powershell-overview)
 - [Ön cephe dağıtımıyla nereden başlayacağını öğrenin](flw-deploy-overview.md)

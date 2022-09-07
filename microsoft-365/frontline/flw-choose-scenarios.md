@@ -17,12 +17,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 5265c8f4a2135fdeee800ebdd465bc3cbb53a6f5
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: d654a94fc508ee109bdeeba97684d5f7636a3a6d
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67470981"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613170"
 ---
 # <a name="choose-your-scenarios-for-microsoft-365-for-frontline-workers"></a>Ön cephe çalışanları için Microsoft 365 senaryolarınızı seçin
 
@@ -30,7 +30,13 @@ ms.locfileid: "67470981"
 
 :::image type="content" source="media/flw-maturity-model.png" alt-text="Ön cephe için etkinleştirmeden dönüşüme kadar dijital olgunluk modeli.":::
 
+## <a name="download-a-poster-with-scenario-overviews"></a>Senaryoya genel bakış içeren bir poster indirme
+
 Kuruluşunuzun ön cephe çalışanları için Microsoft 365 ile neler yapabileceğini tahmin etmeye başlamak için bu senaryoya genel bakışları kullanın, ardından bu senaryoları nasıl uygulayabileceğinizi öğrenmek için bağlantıları izleyin.
+
+| Öğe | Açıklama |
+|:-----|:-----|
+|[![Ön çalışan senaryoları için Microsoft 365.](media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Eylül 2022'de güncelleştirildi   |Bu poster, iletişimleri artırmak, refahı ve katılımı geliştirmek, çalışanlarınızı eğitmek ve eklemek, iş gücünüzü ve operasyonlarınızı yönetmek için ön cephedeki iş gücünüz için uygulayabileceğiniz senaryolara genel bir bakış sağlar.|
 
 ## <a name="communications"></a>İletişim
 
@@ -45,10 +51,10 @@ Kuruluşunuzun ön cephe çalışanları için Microsoft 365 ile neler yapabilec
 
 | Senaryo | Açıklama | Hizmetleri | Teams uygulamaları |
 | --- | --- | --- |--- |
-| [Ekip iletişimi ve işbirliği](flw-team-collaboration.md) | Ön cephe iş gücünüzün Microsoft Teams ile mağaza, vardiya veya ekip içinde iletişim kurmasına yardımcı olun. Viva Bağlantılar, ihtiyaç duydukları bilgileri cihazlarının önüne ve ortasına yerleştiren bir pano oluşturmanıza yardımcı olur, böylece gerektiğinde onlara ulaşabilirler. | Microsoft Teams<br>SharePoint<br>Viva Bağlantılar<br>Power Platform ve Power Apps | Onaylar, Sohbet, Dosyalar, Listeler, Toplantı, Övgü, Vardiyalar, Görevler, Telsiz |
-| [Kurumsal İletişimler](flw-corp-comms.md) | Çalışan katılımı, herhangi bir kuruluşta iş yeri memnuniyeti, sadakat ve üretkenlik açısından önemli bir katkıda bulunur. SharePoint, Teams, Stream ve Yammer'ı kullanarak herkesi bilgilendirmeyi ve etkileşimde tutmayı öğrenin. Hepsini Viva Bağlantılar ile bir araya getirin. | Microsoft Teams<br> SharePoint <br> Yammer <br>Viva Bağlantılar | Karşılamak |
+| [Ekip iletişimi ve işbirliği](flw-team-collaboration.md) | Ön cephe iş gücünüzün Microsoft Teams ile mağaza, vardiya veya ekip içinde iletişim kurmasına yardımcı olun. Viva Bağlantılar, ihtiyaç duydukları bilgileri cihazlarının önüne ve ortasına yerleştiren bir pano oluşturmanıza yardımcı olur, böylece gerektiğinde onlara ulaşabilirler. | Microsoft Teams<br>Outlook<br>SharePoint<br>Viva Bağlantılar<br>Power Platform ve Power Apps | Onaylar, Sohbet, Dosyalar, Listeler, Toplantı, Övgü, Vardiyalar, Görevler, Telsiz |
+| [Kurumsal İletişimler](flw-corp-comms.md) | Çalışan katılımı, herhangi bir kuruluşta iş yeri memnuniyeti, sadakat ve üretkenlik açısından önemli bir katkıda bulunur. SharePoint, Teams, Stream ve Yammer'ı kullanarak herkesi bilgilendirmeyi ve etkileşimde tutmayı öğrenin. Hepsini Viva Bağlantılar ile bir araya getirin. | Microsoft Teams<br>Outlook<br>SharePoint<br>Yammer<br>Viva Bağlantılar | Karşılamak |
 
-Yammer'ın ön cephe çalışanlarınız için nasıl çalışabileceğini öğrenmek için şu kaynaklara da bakın: [Yammer On Toplulukları](https://aka.ms/Yam10Communities) ve [Yammer Lookbook](https://aka.ms/Yammer/Lookbook)
+Yammer'ın ön cephe çalışanlarınız için nasıl çalışabileceğini öğrenmek için şu kaynaklara da bakın: [Yammer On Toplulukları](https://aka.ms/Yam10Communities) ve [Yammer Lookbook](https://aka.ms/Yammer/Lookbook).
 
 ## <a name="wellbeing--engagement"></a>Dengeli yaşam ve katılım
 
@@ -60,8 +66,6 @@ Tüm kuruluşunuzla etkileşim kurmalarına yardımcı olarak ön cephe çalış
 | --- | --- | --- |--- |
 | [Çalışanlarınızla etkileşim kurun ve çalışanların refahı üzerine odaklanın](flw-wellbeing-engagement.md) | Kuruluşunuz genelinde daha derin bağlantılar oluşturun ve kapsayıcı bir çalışma alanı oluşturun. | Microsoft Teams <br>SharePoint <br> Microsoft Stream <br>Viva Bağlantılar <br> Yammer| Övgü |
 
-Kapak: [Satır içi çeviri](/microsoftteams/inline-message-translation-teams), Takdir, hedefli iletişimler (Viva Bağlantılar), Stream veya Teams ile video yayınları.
-
 ## <a name="training--onboarding"></a>Eğitim ve işe alım
 
 :::image type="icon" source="/office/media/icons/files-teams.png":::
@@ -70,8 +74,8 @@ Kapak: [Satır içi çeviri](/microsoftteams/inline-message-translation-teams), 
 
 | Senaryo | Açıklama | Hizmetleri | Teams uygulamaları |
 | --- | --- | --- |--- |
-| [Yeni çalışanları ekleme](flw-onboarding-training.md) | Yeni çalışanların önemli kaynaklar bulabileceği, kuruluşundaki kişilerle tanışabileceği ve yeni rollerinde başarılı olmaya hazırlanabileceği hepsi bir arada karma bir çalışma ortamı geliştirerek yeni çalışanın harika bir deneyime sahip olmasını sağlayın.| SharePoint <br> Viva Öğrenme <br> Viva Bağlantılar <br> Yammer | Liste <br>Canlı toplantılar |
-| [Devam eden eğitim](flw-onboarding-training.md#ongoing-training) | Bunlar eklendikten sonra, Viva Öğrenme'da devam eden eğitimlerle iş gücünüzün becerilerini güncel tutmasına yardımcı olun. | SharePoint <br> Viva Öğrenme <br> Viva Bağlantılar <br> Yammer| |
+| [Yeni çalışanları ekleme](flw-onboarding-training.md) | Yeni çalışanların önemli kaynaklar bulabileceği, kuruluşundaki kişilerle tanışabileceği ve yeni rollerinde başarılı olmaya hazırlanabileceği hepsi bir arada karma bir çalışma ortamı geliştirerek yeni çalışanın harika bir deneyime sahip olmasını sağlayın.| SharePoint<br>Viva Öğrenme <br>Viva Bağlantılar <br>Yammer | Liste <br>Canlı toplantılar |
+| [Devam eden eğitim](flw-onboarding-training.md#ongoing-training) | Bunlar eklendikten sonra, Viva Öğrenme'da devam eden eğitimlerle iş gücünüzün becerilerini güncel tutmasına yardımcı olun. | SharePoint <br>Viva Öğrenme <br>Viva Bağlantılar <br>Yammer| |
 
 ## <a name="schedule-management"></a>Zamanlama yönetimi
 

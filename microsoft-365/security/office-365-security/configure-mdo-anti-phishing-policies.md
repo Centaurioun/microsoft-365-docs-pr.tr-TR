@@ -16,12 +16,12 @@ ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender sahip kuruluşlarda kullanılabilen gelişmiş kimlik avı önleme ilkelerini oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ae576e721fd0f2ba392ae5203d2ab31a7fc6bb0e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9a144968d112328ace78b27f2f62b4ecc3cfd921
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482614"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611223"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de kimlik avı önleme ilkelerini yapılandırma
 
@@ -115,8 +115,8 @@ Microsoft 365 Defender portalında özel kimlik avı önleme ilkesi oluşturmak,
    > [!IMPORTANT]
    > Birden çok farklı koşul veya özel durum türü ek değildir; Onlar kapsayıcı. İlke _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
    >
-   > - Alıcı: romain@contoso.com
-   > - Alıcı şu üyelerin üyesidir: Yöneticiler
+   > - Kullanıcılar: romain@contoso.com
+   > - Gruplar: Yöneticiler
    >
    > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
    >

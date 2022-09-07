@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Bir kuruluşu kimlik avına ve kötü amaçlı URL kullanan diğer saldırılara karşı korumak için Office 365 için Defender'de Güvenli Bağlantılar koruması hakkında bilgi edinin. Teams Güvenli Bağlantılar'ı keşfedin ve Güvenli Bağlantılar iletilerinin grafiklerini görün.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 63f2a129b5a02969cdc8859611822cdb3c89ec89
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 501e75e2c81d12d99b1f093991b864c7ad43519e
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497345"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67612911"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Bağlantılar
 
@@ -53,7 +53,7 @@ Office 365 için Microsoft Defender'da Güvenli Bağlantılar ile kötü amaçl�
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
 
 > [!NOTE]
-> Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, yerleşik koruma** ön ayarı güvenlik ilkesi, Office 365 için Defender lisansına sahip tüm alıcılara (özel Güvenli Bağlantılar ilkelerinde tanımlanmamış kullanıcılar veya Standart veya Katı önceden ayarlanmış güvenlik ilkeleri) e-posta iletilerinde, Microsoft Teams'de ve desteklenen Office uygulamalarındaki dosyalarda Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Ayrıca, belirli kullanıcılar, gruplar veya etki alanları için geçerli olan Güvenli Bağlantılar ilkeleri de oluşturabilirsiniz. Yönergeler için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).
+> Varsayılan Güvenli Bağlantılar ilkesi olmasa **da, yerleşik koruma** ön ayarı güvenlik ilkesi, Office 365 için Defender lisansına sahip tüm alıcılara (Standart veya Katı önceden ayarlanmış güvenlik ilkelerinde veya özel Güvenli Bağlantılar ilkelerinde tanımlanmayan kullanıcılar) e-posta iletilerinde, Microsoft Teams'de ve desteklenen Office uygulamalarındaki dosyalarda Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Ayrıca, belirli kullanıcılar, gruplar veya etki alanları için geçerli olan Güvenli Bağlantılar ilkeleri de oluşturabilirsiniz. Yönergeler için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar ilkelerini ayarlama](set-up-safe-links-policies.md).
 
 Güvenli Bağlantılar koruması aşağıdaki konumlarda kullanılabilir:
 
@@ -95,7 +95,7 @@ Aşağıdaki tabloda, Office 365 için Defender içeren Microsoft 365 ve Office 
 |Senaryo|Sonuç|
 |---|---|
 |Jean pazarlama departmanının bir üyesidir. Office uygulamaları için Güvenli Bağlantılar koruması, pazarlama departmanı üyeleri için geçerli olan Güvenli Bağlantılar ilkesinde açıktır. Jean, e-posta iletisinde bir PowerPoint sunusu açar ve ardından sunudaki bir URL'ye tıklar.|Jean, Güvenli Bağlantılar tarafından korunuyor. <p> Jean, Office uygulamaları için Güvenli Bağlantılar korumasının açık olduğu Güvenli Bağlantılar ilkesine dahildir. <p> Office uygulamalarında Güvenli Bağlantılar koruması gereksinimleri hakkında daha fazla bilgi için, bu makalenin devamında yer alan [Office uygulamaları için Güvenli Bağlantılar ayarları](#safe-links-settings-for-office-apps) bölümüne bakın.|
-|Chris'in Microsoft 365 E5 kuruluşunda Yapılandırılmış Güvenli Bağlantılar ilkesi yok. Chris, dış gönderenden, sonunda tıkladığı kötü amaçlı bir web sitesinin URL'sini içeren bir e-posta alır.|Chris, Güvenli Bağlantılar tarafından korunuyor. <p> **Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi, tüm alıcılara (özel Güvenli Bağlantılar ilkeleri veya Standart veya Katı önceden belirlenmiş güvenlik ilkeleri içinde tanımlanmayan kullanıcılar) Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).|
+|Chris'in Microsoft 365 E5 kuruluşunda Yapılandırılmış Güvenli Bağlantılar ilkesi yok. Chris, dış gönderenden, sonunda tıkladığı kötü amaçlı bir web sitesinin URL'sini içeren bir e-posta alır.|Chris, Güvenli Bağlantılar tarafından korunuyor. <p> **Yerleşik koruma** önayarlı güvenlik ilkesi, tüm alıcılara (Standart veya Katı önceden belirlenmiş güvenlik ilkeleri veya özel Güvenli Bağlantılar ilkelerinde tanımlanmayan kullanıcılar) Güvenli Bağlantılar koruması sağlar. Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md).|
 |Pat'in kuruluşunda yöneticiler Pat'i uygulayan bir Güvenli Bağlantılar ilkesi oluşturmuştur, ancak Office uygulamaları için Güvenli Bağlantılar koruması kapalıdır. Pat bir Word belgesi açar ve dosyadaki bir URL'ye tıklar.|Pat, Güvenli Bağlantılar tarafından korunmaz. <p> Pat etkin bir Güvenli Bağlantılar ilkesine dahil olsa da, bu ilkede Office uygulamaları için Güvenli Bağlantılar koruması kapatıldığından koruma uygulanamaz.|
 |Lee'nin kuruluşunda, `https://tailspintoys.com` Güvenli Bağlantılar için genel ayarlardaki **Aşağıdaki URL'leri engelle** listesinde yapılandırılır. Lee'yi içeren bir Güvenli Bağlantılar ilkesi zaten var. Lee, URL'sini `https://tailspintoys.com/aboutus/trythispage`içeren bir e-posta iletisi alır. Lee URL'ye tıklar.|URL Lee için otomatik olarak engellenebilir; listedeki URL girdisine ve Lee'nin kullandığı e-posta istemcisine bağlıdır. Daha fazla bilgi için, bu [makalenin devamında yer alan Güvenli Bağlantılar için "Aşağıdaki URL'leri engelle" listesine](#block-the-following-urls-list-for-safe-links) bakın.|
 |Jamie ve Julia contoso.com için çalışıyor. Uzun zaman önce, yöneticiler Hem Jamie hem de Julia için geçerli olan Güvenli Bağlantılar ilkeleri yapılandırdı. Jamie, e-postanın kötü amaçlı bir URL içerdiğini bilmeden Julia'ya bir e-posta gönderir.|Julia, kendisine uygulanan Güvenli Bağlantılar ilkesi iç alıcılar arasındaki iletilere uygulanacak şekilde **yapılandırılmışsa** Güvenli Bağlantılar tarafından korunur. Daha fazla bilgi için, bu makalenin devamında yer alan [e-posta iletileri için Güvenli Bağlantılar ayarları](#safe-links-settings-for-email-messages) bölümüne bakın.|
@@ -104,17 +104,17 @@ Aşağıdaki tabloda, Office 365 için Defender içeren Microsoft 365 ve Office 
 
 İlkenin kime uygulanacağını belirleyen alıcı koşullarını ve özel durumlarını belirtmeniz gerekir. Koşullar ve özel durumlar için şu özellikleri kullanabilirsiniz:
 
-- **Alıcı**
-- **Alıcı etki alanı**
-- **Alıcı,**
+- **Kullanıcılar**
+- **Gruplar**
+- **Etki alanları**
 
 Bir koşulu veya özel durumu yalnızca bir kez kullanabilirsiniz, ancak koşul veya özel durum birden çok değer içerebilir. Aynı koşula veya özel duruma ait birden çok değer OR mantığını kullanır (örneğin, _\<recipient1\>_ veya _\<recipient2\>_). Farklı koşullar veya özel durumlar AND mantığını kullanır (örneğin, _\<recipient1\>_ ve _\<member of group 1\>_).
 
 > [!IMPORTANT]
 > Birden çok farklı koşul veya özel durum türü ek değildir; Onlar kapsayıcı. İlke _yalnızca_ belirtilen alıcı filtrelerinin _tümüyle_ eşleşen alıcılara uygulanır. Örneğin, ilkede aşağıdaki değerlerle bir alıcı filtresi koşulu yapılandırabilirsiniz:
 >
-> - Alıcı: romain@contoso.com
-> - Alıcı şu üyelerin üyesidir: Yöneticiler
+> - Kullanıcılar: romain@contoso.com
+> - Gruplar: Yöneticiler
 >
 > İlke, _romain@contoso.com yalnızca_ Yöneticiler grubunun da üyesiyse uygulanır. Grubun üyesi değilse ilke ona uygulanmaz.
 >

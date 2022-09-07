@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection: ''
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 İş Ekstra'de Autopilot kullanarak cihazları karşıya yüklemeyi öğrenin. Bir cihaza veya bir cihaz grubuna profil atayabilirsiniz.
-ms.openlocfilehash: 9e02b985e5742331426210d6d3824dfa120a21d3
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 977b28949f598d827d03ef569429c599c5632dc7
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894997"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67613241"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Autopilot cihazları oluşturma ve düzenleme
 

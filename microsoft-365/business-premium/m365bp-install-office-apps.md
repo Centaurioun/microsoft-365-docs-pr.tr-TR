@@ -7,7 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-business
+ms.subservice: business-premium
 ms.localizationpriority: high
 ms.date: 07/19/2022
 ms.collection:
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: office'i Microsoft 365 İş Ekstra'deki tüm cihazlara yükleme.
-ms.openlocfilehash: 112e83a0473dc9c0e8019c2b0a63a04fb7b72f7c
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: f0edc5833446fd8ca5370ef524bad4568442a5ec
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894591"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67615330"
 ---
 # <a name="install-office-apps-on-all-devices"></a>Office uygulamalarını tüm cihazlara yükleme
 

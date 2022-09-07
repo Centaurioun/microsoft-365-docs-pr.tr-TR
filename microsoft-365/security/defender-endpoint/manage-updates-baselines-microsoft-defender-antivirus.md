@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 08/15/2022
+ms.date: 09/06/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 9550222938f6b179f72a3a2bc46db2738c819bb6
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: ef00b200b1743de9ced826585330936dcfc41702
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521499"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614472"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama
 
@@ -787,6 +787,21 @@ Windows 10 (Enterprise, Pro ve Home sürümleri), Windows Server 2019, Windows S
 Daha fazla bilgi için bkz. [Windows işletim sistemi yükleme görüntüleri için Microsoft Defender güncelleştirmesi](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220901.4</summary>
+
+&ensp;Paket sürümü: **20220901.4**<br/>
+&ensp;Platform sürümü: **4.18.2205.7**<br/>
+&ensp;Altyapı sürümü: **1.1.19500.2**<br/>
+&ensp;İmza sürümü: **1.373.1371.0**<br/>
+
+### <a name="fixes"></a>Giderir
+- Yok
+
+### <a name="additional-information"></a>Ek bilgiler
+- Yok
+
+<br/>
+</details><details>
 <summary>20220802.1</summary>
 
 &ensp;Paket sürümü: **20220802.1**<br/>

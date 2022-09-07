@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Olası tehditleri, veri kaybını ve izin sorunlarını izlemek için Microsoft Purview uyumluluk portalı veya Microsoft 365 Defender portalında uyarı ilkeleri oluşturun.
-ms.openlocfilehash: c6bded485aaaec1098b69a5f18bd813c024b21ea
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: a0d2719c18d4ff13341f10cc04387eff57e56e64
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67593681"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67611355"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365'te uyarı ilkeleri
 
@@ -234,7 +234,7 @@ Uyarıları görüntülemek için:
 - **Önem Derecesi**: Belirli bir önem derecesine atanan uyarıları gösterir.
 - **Kategori**: Bir veya daha fazla uyarı kategorisindeki uyarıları gösterin.
 - **Etiketler**:Bir veya daha fazla kullanıcı etiketinden gelen uyarıları gösterin. Etiketler, uyarılarda görünen etiketli posta kutularına veya kullanıcılara göre yansıtılır. Daha fazla bilgi için bkz. [Office 365 için Defender'de kullanıcı etiketleri](../security/office-365-security/user-tags.md).
-- **Kaynak**: Microsoft Purview portalında uyarı ilkeleri tarafından tetiklenen uyarıları veya Microsoft Defender for Cloud Apps ilkeleri tarafından tetiklenen uyarıları veya her ikisini birden göstermek için bu filtreyi kullanın. Bulut Uygulamaları Güvenliği uyarıları için Defender hakkında daha fazla bilgi için bu makalenin [Cloud Apps için Defender uyarılarını görüntüleme](#view-defender-for-cloud-apps-alerts) bölümüne bakın.
+- **Kaynak**: Microsoft Purview portalında uyarı ilkeleri tarafından tetiklenen uyarıları veya Microsoft Defender for Cloud Apps ilkeleri tarafından tetiklenen uyarıları veya her ikisini birden göstermek için bu filtreyi kullanın. Cloud Apps için Defender uyarıları hakkında daha fazla bilgi için bu makalenin [Cloud Apps için Defender uyarılarını görüntüleme](#view-defender-for-cloud-apps-alerts) bölümüne bakın.
 
 > [!IMPORTANT]
 > Kullanıcı etiketlerine göre filtreleme ve sıralama şu anda Genel Önizleme aşamasındadır ve genel kullanıma sunulmadan önce önemli ölçüde değiştirilebilir. Microsoft, bu konuda sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez.
@@ -336,7 +336,7 @@ Uyarıları yönetmek için gerçekleştirebileceğiniz bazı görevler aşağı
 
 ## <a name="view-defender-for-cloud-apps-alerts"></a>Cloud Apps için Defender uyarılarını görüntüleme
 
-Cloud Apps için Defender Güvenlik ilkeleri tarafından tetiklenen uyarılar artık Microsoft Purview portalının **Uyarılar** sayfasında görüntülenir. Bu, Etkinlik ilkeleri tarafından tetiklenen uyarıları ve Cloud Apps Güvenliği için Defender'daki anomali algılama ilkeleri tarafından tetiklenen uyarıları içerir. Bu, tüm uyarıları Microsoft Purview portalında görüntüleyebileceğiniz anlamına gelir. Bulut Uygulamaları Güvenliği için Defender yalnızca Office 365 Kurumsal E5 veya Office 365 US Government G5 aboneliği olan kuruluşlarda kullanılabilir. Daha fazla bilgi için bkz. [Cloud Apps için Defender'a genel bakış](/cloud-app-security/what-is-cloud-app-security).
+Cloud Apps için Defender ilkeleri tarafından tetiklenen uyarılar artık Microsoft Purview portalının **Uyarılar** sayfasında görüntülenir. Bu, Etkinlik ilkeleri tarafından tetiklenen uyarıları ve Cloud Apps için Defender'daki anomali algılama ilkeleri tarafından tetiklenen uyarıları içerir. Bu, tüm uyarıları Microsoft Purview portalında görüntüleyebileceğiniz anlamına gelir. Bulut Uygulamaları için Defender yalnızca Office 365 Kurumsal E5 veya Office 365 US Government G5 aboneliğine sahip kuruluşlar için kullanılabilir. Daha fazla bilgi için bkz. [Cloud Apps için Defender'a genel bakış](/cloud-app-security/what-is-cloud-app-security).
 
 Enterprise Mobility + Security E5 aboneliği veya tek başına hizmet olarak Microsoft Defender for Cloud Apps sahip kuruluşlar, uyumluluk portalında veya microsoft 365 uygulamaları ve hizmetleriyle ilgili Bulut Uygulamaları için Defender uyarılarını da görüntüleyebilir Microsoft 365 Defender portalı.
 

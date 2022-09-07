@@ -1,5 +1,5 @@
 ---
-title: Perakende için Microsoft 365
+title: Perakende kuruluşları için Microsoft 365
 description: Perakende mağazalarınız ve iş gücünüz için Teams'i yönetmek ve en iyi şekilde yararlanmak için kullanabileceğiniz yönetici kaynakları hakkında bilgi edinin.
 ms.topic: conceptual
 author: samanro
@@ -23,14 +23,14 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: db40235a7ef2b278cd532fec06745e58054580ee
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: df4094a3ae3654fd282351f5527f941cd86a1741
+ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67471996"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "67614094"
 ---
-# <a name="get-started-with-microsoft-365-for-retail"></a>Perakende için Microsoft 365'i kullanmaya başlama
+# <a name="get-started-with-microsoft-365-for-retail-organizations"></a>Perakende kuruluşları için Microsoft 365'i kullanmaya başlama
 
 Değişen zamanlamaları ve çalışan personeliyle perakende ortamlarının diğer kuruluşlardan çok farklı ihtiyaçları vardır. Perakende kuruluşunuz için en iyi avantajı elde etmek için önce Microsoft 365 ve Microsoft Teams'in günlük iş operasyonlarınızda size yardımcı olabilecek senaryoları seçersiniz ve ardından Teams ortamınızı bu senaryoları destekleyecek doğru temel bilgiler, ekipler ve uygulamalarla hazırladığınızdan emin olun.
 
@@ -49,10 +49,19 @@ Microsoft 365 ve Microsoft Teams, perakende kuruluşların günlük operasyonlar
 > [!NOTE]
 > Bu senaryolar da Microsoft Cloud for Retail bir parçasıdır. Microsoft Dynamics 365 gibi Microsoft Cloud for Retail diğer özellikleri de kullandığınızda bu senaryolarla daha fazlasını yapabilirsiniz. Azure, Dynamics 365 ve Microsoft 365'in özelliklerini [Microsoft Cloud for Retail](/industry/retail) bir araya getiren bu çözümü kullanma hakkında daha fazla bilgi edinin.
 
+### <a name="download-a-poster-with-scenario-overviews"></a>Senaryoya genel bakış içeren bir poster indirme
+
+Kuruluşunuzun ön cephe çalışanları için Microsoft 365 ile neler yapabileceğini tahmin etmeye başlamak için aşağıdaki posteri kullanın.
+
+| Öğe | Açıklama |
+|:-----|:-----|
+|[![Ön cephe çalışanları için Microsoft 365: Perakende senaryoları.](media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Eylül 2022'de güncelleştirildi   |Bu poster, bir perakende ortamında ön cephe iş gücünüz için uygulayabileceğiniz senaryolara genel bir bakış sağlar.|
+
+### <a name="video-overviews"></a>Videoya genel bakış
+
 Mağaza iş ortaklarınızın bağlanmasına ve işbirliği yapmasına nasıl yardımcı olabileceğinizi görmek için aşağıdaki videoyu izleyin:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
-
 
 Perakende ortamlarında iş süreçlerini nasıl basitleştirebileceğinizi görmek için aşağıdaki videoyu izleyin:
 
@@ -65,7 +74,7 @@ Teams ve Teams uygulamalarıyla işbirliği yapmak ve işlemleri kolaylaştırma
 
 **Önemli uygulamalar:** Vardiyalar, Walkie Talkie, Görevler, Onaylar, Sohbet, Takdir, Listeler, Dosyalar, Güncelleştirmeler
 
-**Ek hizmetler:** Viva Bağlantılar, SharePoint, Power Platform ve Power Apps
+**Ek hizmetler:** Outlook, Viva Bağlantılar, SharePoint, Power Platform ve Power Apps
 
 Daha fazla bilgi: [Ön cephe ekip işbirliği](flw-team-collaboration.md)
 
@@ -75,7 +84,7 @@ Personel üyeleri, bir bölgedeki birden çok mağaza arasında veya mağazanız
 
 **Önemli uygulamalar:** Vardiyalar, Walkie Talkie, Görevler, Onaylar, Sohbet, Takdir, Listeler, Dosyalar, Güncelleştirmeler
 
-**Ek hizmetler:** Viva Bağlantılar, Yammer, SharePoint, Power Platform ve Power Apps
+**Ek hizmetler:** Outlook, Viva Bağlantılar, Yammer, SharePoint, Power Platform ve Power Apps
 
 Daha fazla bilgi: [Ön cephe ekip işbirliği](flw-team-collaboration.md)
 
