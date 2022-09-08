@@ -6,19 +6,19 @@ ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: high
 description: SharePoint Syntex için lisanslama hakkında bilgi edinin
-ms.openlocfilehash: 86776af3184e44cb88f17e0164859f0ba0e2f334
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 22fcff4801e912e152256c49610adc46180546a6
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822279"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623643"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>SharePoint Syntex lisansı
 
@@ -35,7 +35,10 @@ Aşağıdaki görevler, bunları gerçekleştiren kullanıcı için [SharePoint 
 - Kitaplıktaki giriş noktası aracılığıyla form işleme modeli oluşturma
 - Belge anlama veya form işleme modelinin uygulandığı kitaplığa içerik yükleme
 - İsteğe bağlı olarak belge anlama modeli çalıştırma
-- Premium taksonomi hizmetlerini kullanın. (Premium taksonomi hizmetleri SKOS tabanlı terim kümesi içeri aktarmayı, kurumsal içerik türlerini hub ile ilişkili sitelere göndermeyi ve terim deposu raporlarını içerir.)
+- İçerik derlemesi ile modern bir şablon oluşturma
+- Modern bir şablondan belge oluşturma
+- Gelişmiş meta veri arama kullanımı
+- Premium taksonomi hizmetlerinin kullanımı. (Premium taksonomi hizmetleri SKOS tabanlı terim kümesi içeri aktarmayı, kurumsal içerik türlerini hub ile ilişkili sitelere göndermeyi ve terim deposu raporlarını içerir.)
 
 Lisanssız kullanıcılara içerik merkezine erişim izni verilebilir ve burada belge anlama modelleri oluşturabilir ancak bunları belge kitaplığına uygulayamaz.
  

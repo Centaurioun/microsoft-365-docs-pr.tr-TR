@@ -17,12 +17,12 @@ ms.custom: ''
 description: Yöneticiler, karantinaya alınan iletilere kullanıcıların yapabileceklerini denetlemek için karantina ilkelerini kullanmayı öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 1943a52b69c4e0bdb76769facdc1d93e7f53bd7b
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: be6661d4a40632a66a6a183d16e3bbfa0a85552f
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595463"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623753"
 ---
 # <a name="quarantine-policies"></a>Karantina ilkeleri
 
@@ -630,11 +630,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Remove-QuarantinePol
 
 ## <a name="system-alerts-for-quarantine-release-requests"></a>Karantina yayın istekleri için sistem uyarıları
 
-Varsayılan olarak, **Kullanıcı karantinaya alınmış bir iletiyi serbest bırakmak istedi** adlı varsayılan uyarı ilkesi otomatik olarak bilgilendirici bir uyarı oluşturur ve bir kullanıcı karantinaya alınmış bir iletinin yayımlanmasını istediğinde aşağıdaki rol gruplarının üyelerine bildirim iletileri gönderir:
-
-- Karantina Yöneticisi
-- Güvenlik Yöneticisi
-- Kuruluş Yönetimi (genel yönetici)
+Varsayılan olarak, **Kullanıcı karantinaya alınmış bir iletiyi serbest bırakmak istedi** adlı varsayılan uyarı ilkesi otomatik olarak bilgilendirici bir uyarı oluşturur ve bir kullanıcı karantinaya alınmış bir iletinin yayımlanmasını istediğinde Kuruluş Yönetimi'ne (genel yönetici) bildirim gönderir:
 
 Yöneticiler e-posta bildirimi alıcılarını özelleştirebilir veya daha fazla seçenek için özel bir uyarı ilkesi oluşturabilir.
 

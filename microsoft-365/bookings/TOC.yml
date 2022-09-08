@@ -33,11 +33,9 @@
           href: metrics-and-activity-tracking.md
         - name: Dil ve saat dilimi ayarlama
           href: set-language-time-zones.md
-    - name: Bookings uygulamasını edinin
-      href: get-bookings-app.md
     - name: Bookings uygulamasını Microsoft Teams’de yönetme
       href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
-    - name: Microsoft Teams ve Bookings uygulaması ile sanal vizitler
+    - name: Microsoft Teams ile sanal ziyaretler
       href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits
     - name: Karşılaştırma grafiği - web uygulaması ve Teams uygulaması
       href: comparison-chart.md

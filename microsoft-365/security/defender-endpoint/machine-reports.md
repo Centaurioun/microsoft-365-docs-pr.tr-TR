@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.reviewer: mkaminska
-ms.openlocfilehash: 1acfb53905d5f122ce548b1e1a90cf7ca1b0ee75
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: a3ae7658ecfab9b0c92be3f75a3aa24ed2dfb7a8
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614582"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623735"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da cihaz durumu ve uyumluluk raporu
 
@@ -48,7 +48,7 @@ Cihaz durumu ve uyumluluk panosu iki sekmede yapılandırılmıştır:
 - [**Algılayıcı sistem durumu & işletim** sistemi sekmesi](#sensor-health--os-tab), aşağıdaki cihaz özniteliklerini görüntüleyen üç karta ayrılmış genel işletim sistemi bilgileri sağlar:
   - [Algılayıcı sistem durumu kartı](#sensor-health-card)
   - [İşletim sistemleri ve platformlar kartı](#operating-systems-and-platforms-card)
-  - [Windows 10 sürüm kartı](#windows-10-versions-card)
+  - [Windows sürümleri kartı](#windows-versions-card)
 
 - [**Microsoft Defender Virüsten Koruma sistem durumu sekmesinde,**](#microsoft-defender-antivirus-health-tab) Microsoft Defender Virüsten Koruma'nın (MDAV) özelliklerini bildiren sekiz kart vardır:
   - [Virüsten koruma modu kartı](#antivirus-mode-card)
@@ -135,7 +135,7 @@ _İşletim sistemi sistemleri ve platformları_ , kuruluşunuzdaki cihazların g
 
 İdeal olarak, "Geçerli durum" grafiği, işletim sistemi sayısının eski sürümlere göre daha güncel işletim sistemi lehine ağırlıklı olduğunu gösterir. Aksi takdirde eğilim grafiği yeni sistemlerin benimsendiğini ve/veya eski sistemlerin güncelleştirildiğini veya değiştirildiğini gösterir.
 
-### <a name="windows-10-versions-card"></a>Windows 10 sürüm kartı
+### <a name="windows-versions-card"></a>Windows sürümleri kartı
 
 Windows 10 sürümleri kartı, Windows cihazlarının ve bunların kuruluşunuzdaki sürümlerinin dağıtımını gösterir.
 Windows 8'den Windows 10'ye yükseltmenin kuruluşunuzda güvenliği geliştirmesi gibi, Windows'un erken sürümlerinden daha güncel sürümlere geçmek olası tehditlere karşı duruşunuzu geliştirir.
@@ -310,7 +310,7 @@ Güncel kartlar  **Virüsten Koruma altyapısı, Virüsten Koruma**  **platf
 
 Aşağıdaki her kart için  _Güncel_, date_ dışında ve _kullanılabilir veri yok_ tanımları sağlanmıştır.
 
-MDAV raporları, aşağıdaki ölçütlere göre güncel belirlemeleri ve raporları oluşturur:
+Microsoft Defender Virüsten Koruma, aşağıdaki ölçütlere göre güncel raporlar ve belirlemeler yapar:
 
 - **Altyapı & platformu güncelleştirmeleri için**: "İmza Yenileme Zamanı" (istemci olaylarının en son güncel raporlar için alındığı saat) ve "Güvenlik Zekası Yayımlama Zamanı" (güvenlik zekası VDM'leri altyapı & platform sürümlerini belirlemek için kullanılır)
 - **Güvenlik bilgileri güncelleştirmeleri için**: "İmza Yenileme Zamanı" (istemci olaylarının en son güncel raporlar için alındığı saat), Güvenlik Zekası Yayımlama Zamanı ve istemciden iletilen son güncel durum

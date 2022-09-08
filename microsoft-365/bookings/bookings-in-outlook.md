@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: Başkalarının Outlook'ta sizinle toplantı zamanlamasına izin vermek için Bookings'i benimle birlikte kullanın.
-ms.openlocfilehash: 076dc353107aa2499ec170ead5299d94404e351a
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5de348a45ca7e38d6ee20cdcce4137247c63bfd7
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66862000"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623569"
 ---
 # <a name="bookings-with-me"></a>Benimle Bookings
 
@@ -62,7 +62,7 @@ Daha fazla bilgi için bkz [. Benimle rezervasyonlar Microsoft 365 Yol Haritası
 
 1. Bookings benimle ve Bookings aynı lisanslama modelini paylaşıyor. Ancak, kullanıcıların Bookings'e benimle erişmesi için kiracı ayarlarını kullanan kuruluş için Bookings'in açılması gerekmez. Kullanıcıların benimle Bookings'e erişebilmesi için Bookings uygulaması etkinleştirilmelidir.
 
-   Bookings'e erişimim olmadan Bookings'i benimle açmak için[, OWA Posta Kutusu ilkesi PowerShell komutunu](/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps) kullanarak Microsoft Bookings erişimini engelleyin veya buradaki yönergeleri izleyin: [Microsoft Bookings açma veya kapatma](turn-bookings-on-or-off.md).
+   Bookings'e erişimim olmadan Bookings'i benimle açmak için[, OWA Posta Kutusu ilkesi PowerShell komutunu](/powershell/module/exchange/set-owamailboxpolicy) kullanarak Microsoft Bookings erişimini engelleyin veya buradaki yönergeleri izleyin: [Microsoft Bookings açma veya kapatma](turn-bookings-on-or-off.md).
 
 2. Bookings'i benimle kullanmak için Takvim FreeBusy Anonim paylaşımı etkinleştirilmelidir. Bu, Bookings sayfasının Outlook takviminizdeki serbest/meşgul bilgilerine erişmesini sağlar. Durumu denetlemek için PowerShell'i kullanın.
 
@@ -70,13 +70,15 @@ Daha fazla bilgi için bkz [. Benimle rezervasyonlar Microsoft 365 Yol Haritası
      Get-SharingPolicy -Identity "Default Sharing Policy" | fl Domains 
    ```
 
-    "Anonymous:CalendarSharingFreeBusyReviewer"" yanıttaki etki alanlarından biri olmalıdır.
+    Anonymous:SharingPolicyAction yanıttaki etki alanlarından biri olmalıdır. SharingPolicyAction değeri CalendarSharingFreeBusySimple, CalendarSharingFreeBusyDetail veya CalendarSharingFreeBusyReviewer (varsayılan) olabilir.
 
    Anonim paylaşımı etkinleştirmek için aşağıdaki komutu kullanın.
 
    ```PowerShell
-     Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusyReviewer"}
+     Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
    ```
+  
+  Daha fazla bilgi için bkz [. Set-SharingPolicy](/powershell/module/exchange/set-sharingpolicy).
 
 ## <a name="turn-bookings-with-me-on-or-off"></a>Bookings'i benimle birlikte açma veya kapatma
 
@@ -99,7 +101,8 @@ PowerShell Exchange Online kullanarak aşağıdaki komutları çalıştırmanız
 
     Komut "EwsEnabled: **$true**" döndürürse 2. Adıma geçin.
 
-    Komut "EwsEnabled:" (boş varsayılandır) döndürürse, etkinleştirin ve 2. Adıma geçin.
+    Komut "EwsEnabled:" döndürüyorsa (boş varsayılandır), ancak yalnızca "Bookings with" öğesini engellemeniz gerekiyorsa etkinleştirin ve 2. Adıma geçin.
+    Aksi takdirde EwsEnabled'ın varsayılan değerleri "Bookings with me" özelliğini etkin bırakmak için yeterlidir, başka bir değişiklik yapılması gerekmez.
 
    ```PowerShell
    Set-OrganizationConfig -EwsEnabled: $true

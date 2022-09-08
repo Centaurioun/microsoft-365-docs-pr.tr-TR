@@ -1,6 +1,6 @@
 ---
-title: Saldırı yüzeyi azaltma kuralları raporlama
-description: Saldırı yüzeyi azaltma (ASR) kural algılamaları, yapılandırma, engelleme tehditleri ve temel kuralları ve dışlamaları etkinleştirme yöntemleri hakkında bilgi sağlar.
+title: Saldırı yüzeyi azaltma (ASR) kuralları raporlama
+description: Saldırı yüzeyi azaltma (ASR) kuralları algılamaları, yapılandırma, engelleme tehditleri ve üç standart kural ve dışlamayı etkinleştirme yöntemleri hakkında bilgi sağlar.
 keywords: Saldırı yüzeyi azaltma kuralları, ASR, asr kuralları, kalçalar, konak izinsiz giriş önleme sistemi, koruma kuralları, kötüye kullanıma karşı koruma kuralları, antiexploit, exploit kuralları, bulaşma önleme kuralları, Uç Nokta için Microsoft Defender, ASR kurallarını yapılandırma, ASR kuralı açıklaması
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -17,14 +17,14 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 08/25/2022
-ms.openlocfilehash: 0405bdd9afe89a72fa749f68fa448bd4d3e5be25
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: e835c9bd06bc026baecb6a35d7d16a7d25ab7ae3
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67615890"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623789"
 ---
-# <a name="attack-surface-reduction-rules-report"></a>Saldırı yüzeyi azaltma kuralları raporu
+# <a name="attack-surface-reduction-asr-rules-report"></a>Saldırı yüzeyi azaltma (ASR) kuralları raporu
 
 **Şunlar için geçerlidir:**
 
@@ -45,7 +45,7 @@ Saldırı yüzeyi azaltma (ASR) kuralları raporu, kuruluşunuzdaki cihazlara uy
 
 - algılanan tehditler
 - engellenen tehditler
-- tehditleri engellemek için temel kuralları kullanmayan cihazlar
+- tehditleri engellemek için standart koruma kurallarını kullanacak şekilde yapılandırılmamış cihazlar
 
 Ayrıca, bu rapor aşağıdakileri gerçekleştirmenizi sağlayan kullanımı kolay bir arabirim sağlar:
 
@@ -60,11 +60,11 @@ Bireysel saldırı yüzeyi azaltma kuralları hakkında daha fazla bilgi için b
 ## <a name="prerequisites"></a>Önkoşullar
 
 > [!IMPORTANT]
-> Windows&nbsp;Server&nbsp;2012&nbsp;R2 ve Windows&nbsp;Server&nbsp;2016'nın Saldırı yüzeyi azaltma kuralları raporlarında görünmesi için bu cihazların modern birleşik çözüm paketi kullanılarak eklenmesi gerekir. Daha fazla bilgi için bkz. [Windows Server 2012 R2 ve 2016 için modern birleşik çözümde yeni işlevler](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
+> Windows&nbsp;Server&nbsp;2012&nbsp;R2 ve Windows&nbsp;Server&nbsp;2016'nın **Saldırı yüzeyi azaltma kuralları raporunda** görünmesi için bu cihazların modern birleşik çözüm paketi kullanılarak eklenmesi gerekir. Daha fazla bilgi için bkz. [Windows Server 2012 R2 ve 2016 için modern birleşik çözümde yeni işlevler](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 ## <a name="report-access-permissions"></a>Rapor erişim izinleri
 
-Microsoft 365 Güvenlik panosundaki Saldırı yüzeyi azaltma kuralları raporuna erişmek için aşağıdaki izinler gereklidir:
+Microsoft 365 Güvenlik panosundaki **Saldırı yüzeyi azaltma kuralları raporuna** erişmek için aşağıdaki izinler gereklidir:
 
 | İzin türü | Izni | İzin görünen adı |
 |:---|:---|:---|
@@ -93,7 +93,7 @@ Saldırı yüzeyi azaltma kuralları raporunun özet kartlarına gitmek için
 
 ASR kurallarının özet rapor kartları aşağıdaki şekilde gösterilmiştir.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-summary.png" alt-text="Saldırı yüzeyi azaltma (ASR) kuralları rapor özet kartlarını gösterir" lightbox="images/attack-surface-reduction-rules-report-summary.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-summary.png" alt-text="ASR kuralları rapor özet kartlarını gösterir" lightbox="images/attack-surface-reduction-rules-report-summary.png":::
 
 ## <a name="asr-rules-report-summary-cards"></a>ASR kuralları rapor özet kartları
 
@@ -108,46 +108,46 @@ ASR kuralları tarafından engellenen algılanan tehdit sayısının özetini g�
 
 İki 'eylem' düğmesi sağlar:
 
-- Algılamaları görüntüle - Ana Algılamalar sekmesini > Saldırı yüzeyi azaltma kurallarını açar
-- Dışlama ekleme - Saldırı yüzeyi azaltma kurallarını > ana Dışlamalar sekmesini açar
+- Algılamaları görüntüle - Ana **Algılamalar** sekmesini > **Saldırı yüzeyi azaltma kurallarını** açar
+- Dışlama ekleme - **Saldırı yüzeyi azaltma kurallarını** > ana **Dışlamalar** sekmesini açar
 
-:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-card.png" alt-text="Saldırı yüzeyi azaltma (ASR) kuralları rapor özet algılamaları kartını gösterir." lightbox="images/attack-surface-reduction-rules-report-main-detections-card.png":::
+:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-card.png" alt-text="ASR kuralları rapor özeti algılamaları kartını gösterir." lightbox="images/attack-surface-reduction-rules-report-main-detections-card.png":::
 
 Kartın üst kısmındaki **ASR kuralları algılamaları** bağlantısına tıklanması, ana [Saldırı yüzeyi azaltma kuralları Algılamalar sekmesini](#attack-surface-reduction-rules-main-detections-tab) de açar.
 
 ### <a name="asr-rules-configuration-summary-card"></a>ASR kuralları yapılandırma özet kartı
 
-**Üst bölüm** , yaygın saldırı tekniklerine karşı koruma sağlayan önerilen üç kurala odaklanır. Bu kart, kuruluşunuzdaki bilgisayarlarla ilgili olarak **Blok modunda**, **Denetim modunda** veya **kapalı** (yapılandırılmamış) olarak ayarlanmış [üç temel saldırı yüzeyi azaltma \(ASR\) kuralına](#three-basic-asr-rules) sahip olan güncel durum bilgilerini gösterir. **Cihazları koru** düğmesi yalnızca üç kural için tam yapılandırma ayrıntılarını gösterir; müşteriler bu kuralları etkinleştirmek için hızlı bir şekilde işlem yapabilir.
+**Üst bölüm** , yaygın saldırı tekniklerine karşı koruma sağlayan önerilen üç kurala odaklanır. Bu kart, kuruluşunuzdaki aşağıdaki [Üç \(ASR\) standart koruma kuralının](#simplified-standard-protection-option) **Blok modunda**, **Denetim modunda** veya **kapalı** (yapılandırılmamış) olarak ayarlandığı bilgisayarlar hakkındaki güncel durum bilgilerini gösterir. **Cihazları koru** düğmesi yalnızca üç kural için tam yapılandırma ayrıntılarını gösterir; müşteriler bu kuralları etkinleştirmek için hızlı bir şekilde işlem yapabilir.
 
 **Alt bölümde,** kural başına korumasız cihaz sayısına göre altı kural gösterilir. "Yapılandırmayı görüntüle" düğmesi, tüm ASR kuralları için tüm yapılandırma ayrıntılarını gösterir. "Dışlama ekle" düğmesi, Güvenlik İşlem Merkezi(SOC) tarafından değerlendirilecek tüm algılanan dosya/işlem adlarının listelendiği dışlama ekle sayfasını gösterir. **Dışlama ekle** sayfası Microsoft Endpoint Manager(MEM) ile bağlantılıdır.
 
 İki 'eylem' düğmesi sağlar:
 
-- Yapılandırmayı görüntüle - Saldırı yüzeyi azaltma kurallarını > ana Algılamalar sekmesini açar
-- Dışlama ekleme - Saldırı yüzeyi azaltma kurallarını > ana Dışlamalar sekmesini açar
+- Yapılandırmayı görüntüle - Ana **Algılamalar** sekmesini > **Saldırı yüzeyi azaltma kurallarını** açar
+- Dışlama ekleme - **Saldırı yüzeyi azaltma kurallarını** > ana **Dışlamalar** sekmesini açar
 
-:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png" alt-text="Saldırı yüzeyi azaltma (ASR) kuralları rapor özet yapılandırma kartını gösterir." lightbox="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png":::
+:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png" alt-text="ASR kuralları rapor özeti yapılandırma kartını gösterir." lightbox="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png":::
 
 Kartın üst kısmındaki **ASR kuralları yapılandırma** bağlantısına tıklanması ana [Saldırı yüzeyi azaltma kuralları Yapılandırma sekmesini](#attack-surface-reduction-rules-main-configuration-tab) de açar.
 
-#### <a name="three-basic-asr-rules"></a>Üç temel ASR kuralı
+#### <a name="simplified-standard-protection-option"></a>Basitleştirilmiş standart koruma seçeneği
 
-Bu kart, cihazları üç temel kuralla **korumak** için bir düğme sağlar. Microsoft en azından üç temel saldırı yüzeyi azaltma kuralını etkinleştirmenizi önerir:
+Yapılandırma özeti kartı **, Cihazları** üç standart koruma kuralıyla korumak için bir düğme sağlar. Microsoft en azından bu üç saldırı yüzeyi azaltma standart koruma kuralını etkinleştirmenizi önerir:
 
 - [Windows yerel güvenlik yetkilisi alt sisteminden (lsass.exe) kimlik bilgilerinin çalınmalarını engelleme](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)
 - [Güvenlik açığı bulunan imzalı sürücülerin kötüye kullanılması engellendi](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 - [Windows Yönetim Araçları (WMI) olay aboneliği aracılığıyla kalıcılığı engelleme](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
 
-Üç temel kuralı etkinleştirmek için:
+Üç standart koruma kuralını etkinleştirmek için:
 
 1. **Cihazları koru'yu** seçin. Ana **Yapılandırma** sekmesi açılır.
-1. **Yapılandırma** sekmesinde, **Temel kurallar** otomatik olarak **Tüm kurallar'dan** **Etkinleştirilen Temel kurallar'a** geçiş yapar.
-1. **Cihazlar** listesinde, temel kuralların uygulanmasını istediğiniz cihazları seçin ve ardından **Kaydet'i** seçin.
+1. **Yapılandırma** sekmesinde **, Temel kurallar** otomatik olarak **Tüm kurallar'dan** **Standart koruma kuralları** etkin seçeneğine geçiş yapar.
+1. **Cihazlar** listesinde, standart koruma kurallarının uygulanmasını istediğiniz cihazları seçin ve ardından **Kaydet'i** seçin.
 
 Bu kartta iki gezinti düğmesi daha vardır:
 
-- **Yapılandırmayı görüntüle** - Ana Yapılandırma sekmesini > Saldırı yüzeyi azaltma kurallarını açar.
-- **Dışlama ekleme** - Ana Dışlamalar sekmesini > Saldırı yüzeyi azaltma kurallarını açar.
+- **Yapılandırmayı görüntüle** - Ana **Yapılandırma** sekmesini > **Saldırı yüzeyi azaltma kurallarını** açar.
+- **Dışlama ekleme** - Ana **Dışlamalar** sekmesini > **Saldırı yüzeyi azaltma kurallarını** açar.
 
 Kartın üst kısmındaki **ASR kuralları yapılandırma** bağlantısına tıklanması ana [Saldırı yüzeyi azaltma kuralları Yapılandırma sekmesini](#attack-surface-reduction-rules-main-configuration-tab) de açar.
 
@@ -163,19 +163,18 @@ ASR kuralları rapor özet kartları ASR kuralları durumunuzun hızlı özetini
 
  **Arama özelliği Algılama**, **Yapılandırma** ve **Dışlama ekle** ana sekmelerine eklenir. Bu özellik sayesinde cihaz kimliğini, dosya adını veya işlem adını kullanarak arama yapabilirsiniz.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search.png" alt-text="Saldırı yüzeyi azaltma (ASR) kuralları rapor arama özelliğini gösterir." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search.png" alt-text="ASR kuralları rapor arama özelliğini gösterir." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search.png":::
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png" alt-text="Yapılandırma sekmesindeki Saldırı yüzeyi azaltma (ASR) kuralları rapor arama özelliğini gösterir." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png" alt-text="Yapılandırma sekmesinde ASR kuralları rapor arama özelliğini gösterir." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png":::
 
 ### <a name="filtering"></a>Filtreleme
 
 Filtreleme, hangi sonuçların döndürüleceğini belirtmeniz için bir yol sağlar:
 
-- **Temel kurallar**  , sonuçları [üç temel ASR kuralıyla](#three-basic-asr-rules) sınırlamanıza olanak tanır. Varsayılan olarak, bu filtre **false** olarak ayarlanır.
 - **Tarih**  , veri sonuçları için bir tarih aralığı belirtmenize olanak tanır.
 - **Filtreler**
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-filtering.png" alt-text="Saldırı yüzeyi azaltma (ASR) kuralları rapor filtreleme özelliğini gösterir" lightbox="images/attack-surface-reduction-rules-report-main-detections-filtering.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-filtering.png" alt-text="ASR kuralları rapor filtreleme özelliğini gösterir" lightbox="images/attack-surface-reduction-rules-report-main-detections-filtering.png":::
 
 ### <a name="attack-surface-reduction-rules-main-detections-tab"></a>Saldırı yüzeyi azaltma kuralları ana algılamalar sekmesi
 
@@ -183,7 +182,7 @@ Filtreleme, hangi sonuçların döndürüleceğini belirtmeniz için bir yol sa�
 - **Engellenen Algılamalar** _Engelle_ modunda ayarlanan kurallar tarafından kaç tehdit algılamanın engellendiğini gösterir.
 - **Büyük, birleştirilmiş grafik** Engellenen ve denetlenen algılamaları gösterir.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-tab.png" alt-text="_Audit detections_ ve _Blocked detections_ ana hatlarıyla birlikte Saldırı yüzeyi azaltma (ASR) kuralları rapor ana algılamaları sekmesini gösterir." lightbox="images/attack-surface-reduction-rules-report-main-detections-tab.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-tab.png" alt-text="_Audit detections_ ve _Blocked detections_ ana hatlarıyla asr kuralları raporu ana algılamalar sekmesini gösterir." lightbox="images/attack-surface-reduction-rules-report-main-detections-tab.png":::
 
 Grafikler, görüntülenen tarih aralığı üzerinde algılama verileri sağlar ve tarihe özgü bilgileri toplamak için belirli bir konumun üzerine gelme özelliği sunar.
 
@@ -193,7 +192,7 @@ Raporun alt bölümünde algılanan tehditler (cihaz başına temelinde) aşağ�
 |:---|:---|
 | Algılanan dosya | Olası veya bilinen bir tehdit içerdiği belirlenen dosya |
 | Algılanan | Tehdidin algılandığı tarih |
-| Engellendi\/Denetlendi mi? | Algılama kuralının Engelleme veya Denetim modunda olup olmadığı  |
+| Engellendi\/Denetlendi mi? | Belirli bir olay için algılama kuralının Engelleme veya Denetim modunda olup olmadığı |
 | Kural | Tehdidi algılayan kural |
 | Kaynak uygulama | Rahatsız edici "algılanan dosyaya" çağrı yapan uygulama |
 | Cihaz | Denetim veya Engelleme olayının gerçekleştiği cihazın adı |
@@ -207,7 +206,7 @@ ASR kural denetimi ve blok modları hakkında daha fazla bilgi için bkz [. Sald
 
 "Algılama" ana sayfasında son 30 gün içindeki tüm algılamaların (dosyalar/işlemler) listesi bulunur. Detaya gitme özellikleriyle açmak için algılamalardan herhangi birini seçin.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout.png" alt-text="Saldırı yüzeyi azaltma (ASR) kuralları rapor ana algılamalar sekmesi açılır öğesini gösterir" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout.png" alt-text="ASR kuralları raporu ana algılamalar sekmesi açılır penceresini gösterir" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout.png":::
 
 **Olası dışlama ve etki** bölümü, seçilen dosya veya işlemin etkisini sağlar. Şunları yapabilirsiniz:
 
@@ -223,7 +222,7 @@ Gelişmiş avcılık hakkında daha fazla bilgi için bkz. [Microsoft 365 Defend
 
 ### <a name="attack-surface-reduction-rules-main-configuration-tab"></a>Saldırı yüzeyi azaltma kuralları ana Yapılandırma sekmesi
 
-Saldırı yüzeyi azaltma kuralları ana Yapılandırma sekmesi, özet ve cihaz başına ASR kuralları yapılandırma ayrıntıları sağlar. Yapılandırma sekmesinin üç ana yönü vardır:
+ASR kuralları ana **Yapılandırma** sekmesi, özet ve cihaz başına ASR kuralları yapılandırma ayrıntıları sağlar. Yapılandırma sekmesinin üç ana yönü vardır:
 
 **Temel kurallar** **Temel kurallar** ve **Tüm Kurallar** arasında sonuçları değiştirmek için bir yöntem sağlar. Varsayılan olarak **, Temel kurallar** seçilidir.
 
@@ -245,7 +244,7 @@ Yapılandırma sekmesinin **alt, adlandırılmamış bölümü,** cihazlarınız
 
 Bu öğeler aşağıdaki şekilde gösterilmiştir.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-configuration-tab.png" alt-text="Saldırı yüzeyi azaltma (ASR) kuralları raporu ana yapılandırma sekmesini gösterir" lightbox="images/attack-surface-reduction-rules-report-main-configuration-tab.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-configuration-tab.png" alt-text="ASR kuralları raporu ana yapılandırma sekmesini gösterir" lightbox="images/attack-surface-reduction-rules-report-main-configuration-tab.png":::
 
 ASR kurallarını etkinleştirmek için:
 
@@ -256,7 +255,7 @@ ASR kurallarını etkinleştirmek için:
 
 > [NOT!] Farklı ASR kurallarının uygulanmasını gerektiren cihazlarınız varsa, bu cihazları tek tek yapılandırmanız gerekir.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png" alt-text="Cihazlara ASR kuralları eklemek için Saldırı yüzeyi azaltma (ASR) kurallarının açılır öğesini gösterir" lightbox="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png" alt-text="Cihazlara ASR kuralları eklemek için ASR kuralları açılır öğesini gösterir" lightbox="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png":::
 
 ### <a name="attack-surface-reduction-rules-add-exclusions-tab"></a>Saldırı yüzeyi azaltma kuralları Dışlama ekle sekmesi
 
@@ -266,7 +265,7 @@ ASR kurallarını etkinleştirmek için:
 - **Algılamalar** Adlandırılmış dosya için algılanan olayların toplam sayısı. Tek tek cihazlar birden çok ASR kuralı olayını tetikleyebilir.
 - **Aygıtları** Algılamanın gerçekleştiği cihaz sayısı.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-exclusion-tab.png" alt-text="Saldırı yüzeyi azaltma (ASR) kuralları raporu dışlama ekleme sekmesini gösterir" lightbox="images/attack-surface-reduction-rules-report-exclusion-tab.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-exclusion-tab.png" alt-text="ASR kural raporu dışlama ekleme sekmesini gösterir" lightbox="images/attack-surface-reduction-rules-report-exclusion-tab.png":::
 
 > [!IMPORTANT]
 > Dosya veya klasörlerin dışlanması ASR kuralları tarafından sağlanan korumayı ciddi ölçüde azaltabilir. Dışlanan dosyaların çalıştırılmasına izin verilir ve hiçbir rapor veya olay kaydedilmez.

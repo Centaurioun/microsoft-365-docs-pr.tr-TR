@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2935b54d6be6f68833f018c1e0710db3e71a1d51
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 9f804fbc9d8a9e3bace06ae0ca1f10b7f5f98a32
+ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611158"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67623775"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 üretkenlik çizimleri
 
@@ -38,9 +38,9 @@ Kuruluşunuzun ön cephe çalışanları için Microsoft 365 ile neler yapabilec
 
 | Öğe | Açıklama |
 |:-----|:-----|
-|[![Ön çalışan senaryoları için Microsoft 365.](/microsoft-365/frontline/media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Eylül 2022'de güncelleştirildi   |Bu poster, iletişimleri artırmak, refahı ve katılımı geliştirmek, çalışanlarınızı eğitmek ve eklemek, iş gücünüzü ve operasyonlarınızı yönetmek için ön cephedeki iş gücünüz için uygulayabileceğiniz senaryolara genel bir bakış sağlar.<br/><br/>**İlgili çözüm kılavuzları** <br/> <ul><li>[Ön saf çalışanları için Microsoft 365](/microsoft-365/frontline/flw-overview)|
-|[![Ön cephe çalışanları için Microsoft 365: Sağlık senaryoları.](/microsoft-365/frontline/media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Eylül 2022'de güncelleştirildi   |Bu poster, bir sağlık ortamında ön cephedeki iş gücünüz için uygulayabileceğiniz senaryolara genel bir bakış sağlar.<br/><br/>**İlgili çözüm kılavuzları** <br/> <ul><li>[Sağlık kuruluşları için Microsoft 365'i kullanmaya başlama](/microsoft-365/frontline/teams-in-hc)|
-|[![Ön cephe çalışanları için Microsoft 365: Perakende senaryoları.](/microsoft-365/frontline/media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Eylül 2022'de güncelleştirildi   |Bu poster, bir perakende ortamında ön cephe iş gücünüz için uygulayabileceğiniz senaryolara genel bir bakış sağlar.<br/><br/>**İlgili çözüm kılavuzları** <br/> <ul><li>[Perakende kuruluşları için Microsoft 365'i kullanmaya başlama](/microsoft-365/frontline/teams-for-retail-landing-page)|
+|[![Ön çalışan senaryoları için Microsoft 365.](/microsoft-365/frontline/media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Eylül 2022'de güncelleştirildi   |**Ön cephe çalışanı senaryoları**<br><br>Bu poster, iletişimleri artırmak, refahı ve katılımı geliştirmek, çalışanlarınızı eğitmek ve eklemek, iş gücünüzü ve operasyonlarınızı yönetmek için ön cephedeki iş gücünüz için uygulayabileceğiniz senaryolara genel bir bakış sağlar.<br/><br/>**İlgili çözüm kılavuzları** <br/> <ul><li>[Ön saf çalışanları için Microsoft 365](/microsoft-365/frontline/flw-overview)|
+|[![Ön cephe çalışanları için Microsoft 365: Sağlık senaryoları.](/microsoft-365/frontline/media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Eylül 2022'de güncelleştirildi   |**Sağlık senaryoları**<br><br>Bu poster, bir sağlık ortamında ön cephedeki iş gücünüz için uygulayabileceğiniz senaryolara genel bir bakış sağlar.<br/><br/>**İlgili çözüm kılavuzları** <br/> <ul><li>[Sağlık kuruluşları için Microsoft 365'i kullanmaya başlama](/microsoft-365/frontline/teams-in-hc)|
+|[![Ön cephe çalışanları için Microsoft 365: Perakende senaryoları.](/microsoft-365/frontline/media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Eylül 2022'de güncelleştirildi   |**Perakende senaryoları**<br><br>Bu poster, bir perakende ortamında ön cephe iş gücünüz için uygulayabileceğiniz senaryolara genel bir bakış sağlar.<br/><br/>**İlgili çözüm kılavuzları** <br/> <ul><li>[Perakende kuruluşları için Microsoft 365'i kullanmaya başlama](/microsoft-365/frontline/teams-for-retail-landing-page)|
 
 ## <a name="corporate-communications-with-microsoft-365--a-contoso-case-study"></a>Microsoft 365 ile kurumsal iletişimler — Contoso örnek olay incelemesi
 Çalışan katılımı, herhangi bir kuruluşta çalışma alanı memnuniyeti, elde tutma ve üretkenlik açısından önemli bir katkıda bulunur. Microsoft 365 genelinde, hedef kitlenizle iletişim kurmanın ve etkileşim kurmanın birden çok yolu vardır. 
