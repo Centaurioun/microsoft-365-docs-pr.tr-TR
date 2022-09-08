@@ -23,12 +23,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Öğeleri otomatik olarak kullanıcının arşiv posta kutusuna taşımak için özel mesajlaşma kayıtları yönetimi (MRM) arşivleme ve silme ilkesi oluşturma.
-ms.openlocfilehash: d9a4af2b5518480e45ab98ca1a76b11aea36efd8
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 08037607aa183462c560fb95641e3b0bc50da2e7
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67360423"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631314"
 ---
 # <a name="customize-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Kuruluşunuzdaki posta kutuları için arşiv ve silme ilkesini özelleştirme
 
@@ -69,7 +69,7 @@ Kendi kuruluşunuzdaki posta kutuları için arşiv ve silme ilkesi ayarlamak i�
 
 İlk adım, kuruluşunuzdaki her kullanıcının bir arşiv posta kutusuna sahip olduğundan emin olmaktır. "Arşive Taşı" bekletme eylemine sahip bir bekletme etiketinin saklama süresi dolduktan sonra öğeyi taşıyabilmesi için kullanıcının arşiv posta kutusunun etkinleştirilmesi gerekir.
 
-Arşiv posta kutularını etkinleştirme yönergeleri için bkz[. Microsoft Purview uyumluluk portalı arşiv posta kutularını etkinleştirme](enable-archive-mailboxes.md).
+Arşiv posta kutularını etkinleştirme yönergeleri için bkz [. Microsoft 365'te arşiv posta kutularını etkinleştirme](enable-archive-mailboxes.md).
   
 > [!NOTE]
 > Bu işlem sırasında, işlemi tamamlamadan önce belirli bir noktada etkinleştirildiği sürece arşiv posta kutularını istediğiniz zaman etkinleştirebilirsiniz. Arşiv posta kutusu etkinleştirilmemişse, kendisine atanmış arşiv veya silme ilkesi olan öğeler üzerinde hiçbir işlem yapılmaz.

@@ -19,16 +19,19 @@ search.appverid:
 - MET150
 description: Microsoft 365 kuruluşunuzdaki kullanıcıların ve yöneticilerin etkinliklerini denetlemeyi öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a9b00590c0a1904f0f2a9b786414e9ee303c3572
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c98d1ab6e430d22f5e4c2aad2d881061fcf32c90
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637493"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631460"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Microsoft Purview'da denetim çözümleri
 
 Microsoft Purview denetim çözümleri, kuruluşların güvenlik olaylarına, adli araştırmalara, iç araştırmalara ve uyumluluk yükümlülüklerine etkili bir şekilde yanıt vermelerine yardımcı olmak için tümleşik bir çözüm sağlar. Onlarca Microsoft 365 hizmeti ve çözümünde gerçekleştirilen binlerce kullanıcı ve yönetici işlemi kuruluşunuzun birleşik denetim günlüğünde yakalanır, kaydedilir ve saklanır. Bu olaylar için denetim kayıtları güvenlik işlemleri, BT yöneticileri, insider risk ekipleri ve kuruluşunuzdaki uyumluluk ve hukuk araştırmacıları tarafından aranabilir. Bu özellik, Microsoft 365 kuruluşunuz genelinde gerçekleştirilen etkinliklere görünürlük sağlar.
+
+> [!NOTE]
+> Microsoft Purview denetimi, birleşik denetim günlüğünün yeni adıdır.
 
 ## <a name="microsoft-purview-auditing-solutions"></a>Microsoft Purview denetim çözümleri
 

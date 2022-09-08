@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Kullanıcılarınızın Microsoft ürünleri hakkında Microsoft'a gönderebileceği geri bildirimleri yönetin.
-ms.openlocfilehash: 24b421598815c163599932d761908b0765acea1b
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: b6c54780277cf57a66aa3064f4222a360c270486
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67406222"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631438"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Kuruluşunuz için Microsoft geri bildirimlerini yönetme
 
@@ -44,13 +44,13 @@ Aşağıdaki tablo, aşağıdaki geri bildirim ilkeleri tablosunda gösterilen g
 |**Intune Şirket Portalı (Android)**|Evet|Evet|Evet|Evet|
 |**Microsoft Stream (Android, iOS)**|Evet|Evet|Evet|Evet|
 |**Microsoft Whiteboard**|Evet|Evet|Evet|Evet|
-|**Office.com**|Çok yakında|Çok yakında|Çok yakında|Çok yakında|
+|**Office.com**|Evet|Evet|Evet|Evet|
 |**OneNote**|Evet|Evet|Evet|Evet|
 |**OneDrive**|[Şu anda diğer denetimler tarafından yönetilen bazı ayarlar.](/onedrive/disable-contact-support-send-feedback)||||
 |**Outlook (Web, iOS)**|Çok yakında|Çok yakında|Çok yakında|Çok yakında|
-|**Outlook (Masaüstü, Android, Mac)**|Çok yakında|Çok yakında|Çok yakında|Çok yakında|
+|**Outlook (Masaüstü, Android, Mac)**|Evet|Evet|Evet|Evet|
 |**PowerPoint**|Evet|Evet|Evet|Evet|
-|**Project**|Çok yakında|Çok yakında|Çok yakında|Çok yakında|
+|**Project**|Evet|Evet|Evet|Evet|
 |**Publisher**|Evet|Evet|Evet|Evet|
 |**SharePoint**|[Şu anda diğer denetimler tarafından yönetilen bazı ayarlar.](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[Şu anda diğer denetimler tarafından yönetilen bazı ayarlar.](/microsoftteams/manage-feedback-policies-in-teams)||||
@@ -58,6 +58,7 @@ Aşağıdaki tablo, aşağıdaki geri bildirim ilkeleri tablosunda gösterilen g
 |**Word**|Evet|Evet|Evet|Evet|
 |**Visio**|Evet|Evet|Evet|Evet|
 |**Viva Hedefleri**|Evet|Evet|Evet|Evet|
+|**Viva Analizler**|Evet|Evet|Evet|Evet|
 |**Tahta**|Evet|Evet|Evet|Evet|
 |**Yammer**|Evet|Evet|Evet|Evet|
 

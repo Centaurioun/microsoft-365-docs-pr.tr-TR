@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: DLP ilkelerinde koşul olarak duyarlılık etiketlerini kullanabileceğiniz hizmetler ve öğe türleri hakkında bilgi edinin
-ms.openlocfilehash: 55803a2c354890264f99753af2aa6337cf49182a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c35e2e9855875eb86c5da813bfc85dd0d285138c
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632409"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631372"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>DLP ilkelerinde duyarlılık etiketlerini koşul olarak kullanma
 
@@ -75,7 +75,7 @@ Duyarlılık etiketlerini bu öğelerde ve bu senaryolarda koşul olarak kullana
 
 - Duyarlılık etiketlerini koşul olarak kullanmak, yukarıdaki destek matrisinde belirtildiği gibi tüm iş yüklerinde desteklenir.
 
-- DLP ilkesi ipuçları, bir koşul olarak duyarlılık etiketi içeren DLP ilkeleri için iş yüklerinde (Outlook Win32 hariç) gösterilmeye devam eder.
+- DLP ilkesi ipuçları, bir koşul olarak duyarlılık etiketi içeren DLP ilkeleri için iş yüklerinde (Windows için Outlook hariç) gösterilmeye devam eder.
 
 - Duyarlılık etiketleri, bir koşul olarak duyarlılık etiketine sahip bir DLP ilkesi eşleştirilirse olay raporu e-postasının bir parçası olarak da görünür.
 
@@ -87,8 +87,8 @@ Duyarlılık etiketlerini bu öğelerde ve bu senaryolarda koşul olarak kullana
 
 |Iş yük -ünü  |desteklenen/desteklenmeyen ilke ipuçları  |
 |---------|---------|
-|OWA |    Desteklenen     |
-|Outlook Win 32    |  desteklenmiyor       |
+|Owa |    Desteklenen     |
+|Windows için Outlook   |  desteklenmiyor       |
 |SharePoint   |   Desteklenen      |
 |OneDrive İş    |    Desteklenen     |
 |uç nokta cihazları   |  desteklenmiyor       |

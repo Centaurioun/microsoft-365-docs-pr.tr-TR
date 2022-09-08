@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 09/06/2022
+ms.date: 09/08/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -19,17 +19,14 @@ ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: ef00b200b1743de9ced826585330936dcfc41702
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: ad736e8cb196fabbfd1c08112ef0aa9dc0794593
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614472"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631482"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama
-
-> [!IMPORTANT]
-> Mart 2022 Microsoft Defender altyapı güncelleştirmesini (**1.1.19100.5**) uygulayan müşteriler yüksek kaynak kullanımıyla (CPU ve/veya bellek) karşılaşmış olabilir. Microsoft, önceki sürümde sunulan hataları gideren bir güncelleştirme (**1.1.19200.5**) yayımladı. Müşterilerin virüsten koruma altyapısının (**1.1.19200.5**) en azından bu yeni altyapı derlemesine güncelleştirmeleri önerilir. Performans sorunlarının tamamen düzeltildiğinden emin olmak için, güncelleştirme uygulandıktan sonra makinelerin yeniden başlatılması önerilir. [Bkz. Aylık platform ve altyapı sürümleri](#monthly-platform-and-engine-versions) (bu makalede).
 
 **Şunlar için geçerlidir:**
 - [Uç Nokta için Microsoft Defender Plan 1 ve 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -90,6 +87,30 @@ Tüm güncelleştirmelerimiz
 - Hizmet verilebilirlik iyileştirmeleri
 - Tümleştirme geliştirmeleri (Bulut, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
+<details> 
+<summary> Ağustos-2022 (Platform: 4.18.2207.7| Motor: 1.1.19600.3)</summary> 
+ &ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.373.1647.0** <br/>
+&ensp;Yayın tarihi: **6 Eylül 2022**<br/>
+&ensp;Platform: **4.18.2207.7**<br/>
+&ensp;Motor: **1.1.19600.3**<br/>
+&ensp;Destek aşaması: **Güvenlik ve Kritik Güncelleştirmeler**<br/>
+  Altyapı sürümü: 1.1.19600.3<br/>
+Güvenlik bilgileri güncelleştirme sürümü: 1.373.1647.0<br/>
+  
+### <a name="whats-new"></a>Yenilikler 
+
+- WS2012R2 Sunucusu ve Windows Server 2016'de Birleşik aracı yükleyici sorunları düzeltildi <br/>
+- Özel algılama için düzeltme sorunu düzeltildi <br/>
+- Davranış izleme ile ilgili Yarış durumu düzeltildi <br/>
+- Defender dll'lerinde birden çok kilitlenme senaryosu çözüldü <br/>
+- ASR kuralları için Geliştirilmiş Windows bildirim sıklığı  
+  
+### <a name="known-issues"></a>Bilinen Sorunlar 
+
+Bilinen sorun yok   
+
+<br/> 
+</details> 
 <details>
 <summary>Temmuz-2022 (Platform: 4.18.2207.5 | Motor: 1.1.19500.2)</summary>
 
@@ -155,7 +176,14 @@ Güvenlik bilgileri güncelleştirme sürümü: 1.369.88.0<br/>
 Bilinen sorun yok
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Önceki sürüm güncelleştirmeleri: Yalnızca teknik yükseltme desteği
+
+Yeni bir paket sürümü yayımlandıktan sonra, önceki iki sürüme yönelik destek yalnızca teknik desteğe indirgener. Bu bölümde listelenen sürümlerden eski sürümler ve yalnızca teknik yükseltme desteği için sağlanır.<br/><br/>
+
+<details>
 <summary>Mart-2022 *UPDATE* (Platform: 4.18.2203.5 | Motor: 1.1.19200.5)</summary>
 
 *Mart 2022 Microsoft Defender altyapı güncelleştirmesini (**1.1.19100.5**) uygulayan müşteriler yüksek kaynak kullanımıyla (CPU ve/veya bellek) karşılaşmış olabilir. Microsoft, önceki sürümde sunulan hataları gideren bir güncelleştirme (**1.1.19200.5**) yayımladı. Müşterilerin virüsten koruma altyapısının (**1.1.19200.5**) en azından bu yeni altyapı derlemesine güncelleştirmeleri önerilir. Performans sorunlarının tamamen düzeltildiğinden emin olmak için, güncelleştirme uygulandıktan sonra makinelerin yeniden başlatılması önerilir.*
@@ -164,7 +192,7 @@ Bilinen sorun yok
 &ensp;Yayın tarihi: **22 Nisan 2022**<br/>
 &ensp;Platform: **4.18.2203.5**<br/>
 &ensp;Motor: **1.1.19200.5**<br/>
-&ensp;Destek aşaması: **Güvenlik ve Kritik Güncelleştirmeler**<br/>
+&ensp;Destek aşaması: **Teknik yükseltme desteği (yalnızca)**<br/>
 
 Altyapı sürümü: 1.1.19200.5 <br/>
 Güvenlik bilgileri güncelleştirme sürümü: 1.363.817.0<br/>
@@ -185,7 +213,7 @@ Bilinen sorun yok
 &ensp;Yayın tarihi: **7 Nisan 2022**<br/>
 &ensp;Platform: **4.18.2203.5**<br/>
 &ensp;Motor: **1.1.19100.5**<br/>
-&ensp;Destek aşaması: **Güvenlik ve Kritik Güncelleştirmeler**<br/>
+&ensp;Destek aşaması: **Teknik yükseltme desteği (yalnızca)**<br/>
 
 Altyapı sürümü: 1.1.19100.5 <br/>
 Güvenlik bilgileri güncelleştirme sürümü: 1.361.1449.0<br/>
@@ -203,14 +231,7 @@ Güvenlik bilgileri güncelleştirme sürümü: 1.361.1449.0<br/>
 - Yüksek kaynak kullanımı olasılığı (CPU ve/veya bellek). Mart 2022 için Platform 4.18.2203.5 ve Motor 1.1.19200.5 güncelleştirmesine bakın.
 
 <br/><br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Önceki sürüm güncelleştirmeleri: Yalnızca teknik yükseltme desteği
-
-Yeni bir paket sürümü yayımlandıktan sonra, önceki iki sürüme yönelik destek yalnızca teknik desteğe indirgener. Bu bölümde listelenen sürümlerden eski sürümler ve yalnızca teknik yükseltme desteği için sağlanır.<br/><br/>
-
-<details>
+</details><details>
 <summary>Şubat-2022 (Platform: 4.18.2202.4 | Motor: 1.1.19000.8)</summary>
 
 &ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.361.14.0**<br/>

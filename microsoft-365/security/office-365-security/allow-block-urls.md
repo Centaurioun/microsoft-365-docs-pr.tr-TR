@@ -16,12 +16,12 @@ ms.collection:
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde URL'lere nasıl izin vereceğinizi veya url'leri nasıl engelleyebileceğinizi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: f29e410a6457a4810bf98436f912a57866978241
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: be94c967a156ac61b3fdddedf533980bb5391c43
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67495115"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631526"
 ---
 # <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini kullanarak URL'lere izin verme veya URL’leri engelleme
 
@@ -370,7 +370,6 @@ Geçerli URL girişleri ve sonuçları aşağıdaki bölümlerde açıklanmışt
 **Giriş**: `*.contoso.com`
 
 - **Blok eşleşmesi**:
-  - contoso.com
   - xyz.abc.contoso.com
 
 - **Blok eşleşmiyor**:

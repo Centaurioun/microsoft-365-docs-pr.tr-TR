@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Yöneticiler, lisans gereksinimleri ve kuruluşunuzun verilerinin yaşam döngüsünü yöneten yaygın senaryolar için açıklayıcı adımlar.
-ms.openlocfilehash: 9a304a9bbde5bd77a146c3e18246cf5115634f8f
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 0ed0abe1edee323bfae69836f9db49ca9d7e88e5
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67105999"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631285"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>Veri yaşam döngüsü yönetimini kullanmaya başlama
 
@@ -41,7 +41,7 @@ Tutmanız gereken içeriği koruyarak ve tutmadığınız içeriği silerek kuru
     
     Gerekirse, [özel durumlarınız için bekletme etiketleri oluşturun ve uygulayın](create-retention-labels-information-governance.md).
 
-3. Kullanıcılara ek posta kutusu depolama alanı sağlamak için posta kutusu **arşivlemeyi etkinleştirme**: [Microsoft Purview uyumluluk portalı](enable-archive-mailboxes.md)
+3. Kullanıcılara ek posta kutusu depolama alanı sağlamak için posta kutusu **arşivlemeyi etkinleştirme**: [Microsoft 365'te arşiv posta kutularını etkinleştirme](enable-archive-mailboxes.md)
     
     Arşiv posta kutularını desteklemek için gerekirse:
     
@@ -82,7 +82,7 @@ Bu izinler yalnızca bekletme ilkeleri ve bekletme etiketleri oluşturmak, yapı
 |Yapmak istiyorum...|Belge|
 |----------------|---------------|
 |Microsoft 365 hizmetleri için verileri verimli bir şekilde saklama veya silme: <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 Grupları <br />- Ekipler <br />- Yammer <br />- Skype Kurumsal |[Bekletme ilkeleri oluşturma ve yapılandırma](create-retention-policies.md)|
-|Kullanıcılara ek posta kutusu depolama alanı sağlama |[Microsoft Purview uyumluluk portalındaki arşiv posta kutularını etkinleştirme](enable-archive-mailboxes.md)|
+|Kullanıcılara ek posta kutusu depolama alanı sağlama |[Microsoft 365'te arşiv posta kutularını etkinleştirme](enable-archive-mailboxes.md)|
 |Çalışanlar kuruluştan ayrıldıktan sonra posta kutusu verilerini saklama |[Etkin olmayan posta kutuları oluşturma ve yönetme](create-and-manage-inactive-mailboxes.md)|
 |PST dosyalarından posta kutusu verilerini karşıya yükleme |[PST dosyalarını içe aktarmak için ağ yüklemesini kullanma](use-network-upload-to-import-pst-files.md)|
 

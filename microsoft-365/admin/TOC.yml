@@ -352,6 +352,8 @@
               href: manage/servicenow-testing-the-configuration.md
             - name: Sorun giderme
               href: manage/servicenow-troubleshooting.md
+            - name: ServiceNow için Microsoft 365 destek tümleştirmesini etkinleştirme
+              href: manage/servicenow-support-integration.md
     - name: Abonelikleri ve faturalandırmayı yönetme
       href: ../commerce/index.yml
     - name: Kuruluşunuzun güvenliğini sağlayın

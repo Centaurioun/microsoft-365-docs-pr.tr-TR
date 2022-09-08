@@ -4,7 +4,7 @@ description: Bulut hizmetiyle iletişimi etkinleştirmek için Uç Nokta için M
 keywords: yapılandırma, proxy, internet, internet bağlantısı, ayarlar, proxy ayarları, netsh, winhttp, proxy sunucusu
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +17,13 @@ ms.collection:
 - m365-security-compliance
 - m365-initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c579c72ab4918bf7ce0ebb5df80c05d9a4a45518
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mde
+ms.openlocfilehash: c0c26b391f46f7186aa9d9c54e8ef63f98ad6093
+ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388737"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67631504"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Cihaz ara sunucusu ve İnternet bağlantısı ayarlarını yapılandırma
 
@@ -94,6 +94,14 @@ Statik proxy, grup ilkesi (GP) aracılığıyla yapılandırılabilir; grup ilke
 |:---|:---|:---|:---|
 | Bağlı kullanıcı deneyimi ve telemetri hizmeti için kimliği doğrulanmış proxy kullanımını yapılandırma | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `DisableEnterpriseAuthProxy` | 1 (REG_DWORD) |
 | Bağlı kullanıcı deneyimlerini ve telemetriyi yapılandırma | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> Örneğin: ```10.0.0.6:8080``` (REG_SZ) |
+
+> [!NOTE]
+> Aksi halde **tamamen çevrimdışı** olan cihazlarda 'TelemetryProxyServer' ayarını kullanıyorsanız, değerine `1`sahip ek kayıt defteri ayarını `PreferStaticProxyForHttpRequest` eklemeniz önerilir.<br>
+> "PreferStaticProxyForHttpRequest" için üst kayıt defteri yolu konumu "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"<br>
+> Kayıt defteri değerini doğru konuma eklemek için aşağıdaki komut kullanılabilir:<br>
+> ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```
+
+
 
 ## <a name="configure-a-static-proxy-for-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma için statik proxy yapılandırma
 
