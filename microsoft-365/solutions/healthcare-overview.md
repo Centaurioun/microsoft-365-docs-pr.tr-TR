@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 11217af0186f6f935435865df7234f02ad214350
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 6475d42cb9a4d0aa5c57cf3cf6f28f7889b59864
+ms.sourcegitcommit: 80fddb7a071eee4801204929788531e93f7ba087
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585322"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67634766"
 ---
 # <a name="microsoft-365-solutions-for-the-healthcare-industry"></a>Sağlık sektörü için Microsoft 365 çözümleri
 
@@ -39,7 +39,8 @@ Sağlık çözümünüzü dijitalleştirmek, modernleştirmek ve geliştirmek i�
 |[Microsoft Teams ve Bookings uygulaması ile sanal vizitler](/microsoftteams/expand-teams-across-your-org/bookings-virtual-visits)  |      Microsoft Teams'deki Bookings uygulaması, kuruluşlara personel ve katılımcılar için sanal randevu zamanlama ve yönetme için basit bir yol sağlar. Sağlık ziyaretleri, finansal danışmanlıklar, görüşmeler, müşteri desteği, sanal alışveriş deneyimleri, eğitim ofisi saatleri ve daha fazlası gibi sanal randevular zamanlamak için kullanın.   |
 |[Sağlık hizmetleri için Microsoft 365](/microsoft-365/frontline/teams-in-hc)    |  Microsoft Teams, hastaneler ve diğer Sağlık kuruluşları için yararlı olan bir dizi teletıp özelliği sunar. <br>- Sanal ziyaretler ve Elektronik Sağlık Kaydı (EHR) tümleştirmesi<br>- Teams ilke paketleri<br>- Güvenli mesajlaşma<br>- Teams şablonları<br>- Bakım koordinasyonu ve işbirliği      |
 |[Sağlık Hizmetleri için Microsoft Cloud](/industry/healthcare/overview)  | Sağlık hizmetleri için Microsoft Bulut ve hasta katılımını geliştiren, sağlık ekibi işbirliğini güçlendiren, karar alma ve operasyonel verimlilikleri geliştirmek için klinik ve operasyonel veri içgörülerini geliştiren güvenilir özellikleri müşteriler ve iş ortaklarıyla nasıl bir araya getirdiğini öğrenin.     |
-| [Sağlık hizmetleri için Azure mimarisi ve çözümleri](/azure/architecture/industries/healthcare)| Sağlık hizmetleri için Azure'da sağlık çözümünüzü dijitalleştirmek, modernleştirmek ve iyileştirmek için Microsoft Azure hizmetlerini nasıl kullanabileceğinizi öğrenin|
+|[Microsoft Cloud for Healthcare başvuru mimarileri](/industry/healthcare/architecture/overview) | Sağlık kuruluşlarının proje yöneticileri, kurumsal mimarlar ve BT yöneticilerinin Microsoft Cloud for Healthcare'i uygulama konusunda etkili bir şekilde işbirliği yapmasına ve iletişim kurmasına yardımcı olacak başvuru mimarileri bulun. |
+|[Sağlık hizmetleri için Azure mimarisi ve çözümleri](/azure/architecture/industries/healthcare)| Sağlık hizmetleri için Azure'da sağlık çözümünüzü dijitalleştirmek, modernleştirmek ve iyileştirmek için Microsoft Azure hizmetlerini nasıl kullanabileceğinizi öğrenin|
 
 ## <a name="videos-you-can-share-with-your-team"></a>Ekibinizle paylaşabileceğiniz videolar
 

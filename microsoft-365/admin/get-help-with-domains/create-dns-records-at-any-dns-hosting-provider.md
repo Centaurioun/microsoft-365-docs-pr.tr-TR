@@ -24,12 +24,12 @@ ms.custom:
 - AdminTemplateSet
 - business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: d4175cc9cdf0e0a2b7e58d0b9bc0cf295cc3683c
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.openlocfilehash: 4e0b89b390133ac6fa0f6a88f092f60ed2ce926d
+ms.sourcegitcommit: 80fddb7a071eee4801204929788531e93f7ba087
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67083959"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67634788"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Etki alanınızı bağlamak için DNS kayıtları ekleme
 
@@ -38,6 +38,8 @@ ms.locfileid: "67083959"
 Bu adımların sonunda, etki alanınız onu satın aldığınız barındırma sağlayıcısında kayıtlı durumda kalır ancak Microsoft 365 bunu e-posta adresleriniz (kullanıcı@etkialanınız.com gibi) ve diğer hizmetler için kullanabilir.
 
 Etki alanı eklemezseniz, siz ekleyene kadar kuruluşunuzdaki kişiler e-posta adresleri için onmicrosoft.com etki alanını kullanır. Kullanıcıları eklemeden önce etki alanınızı eklemek önemlidir; böylelikle onları iki kez ayarlamanız gerekmez.
+
+Daha önce kullanıcılar oluşturduysanız ve etki alanını değiştirmek istiyorsanız, [e-posta adresinizi Microsoft 365 yönetim merkezi kullanarak özel etki alanınızı kullanacak şekilde değiştirme](/microsoft-365/admin/email/change-email-address#change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center) başlığı altında açıklanan adımları izleyin.
 
 Aradığınızı aşağıda bulamazsanız, [Etki Alanları SSS sayfasını inceleyin](../setup/domains-faq.yml).
 
