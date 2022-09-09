@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Microsoft SharePoint Syntex'da yayımlanmış bir modelin SharePoint belge kitaplığına nasıl uygulanacağını öğrenin.
-ms.openlocfilehash: a3c1ca971853234bb4b203d8b1b3e40aec7c1d7d
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+description: Microsoft SharePoint Syntex'da sharepoint belge kitaplığına yayımlanmış bir model uygulamayı öğrenin.
+ms.openlocfilehash: c11e4ba11cdf7da57a344dae774dab7518a72369
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882406"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639646"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da belge anlama modeli uygulama
 
@@ -28,7 +28,7 @@ ms.locfileid: "64882406"
 
 </br>
 
-Belge anlama modelinizi yayımladıktan sonra, Microsoft 365 kiracınızdaki bir veya daha fazla SharePoint belge kitaplığına uygulayabilirsiniz.
+Belge anlama modelinizi yayımladıktan sonra, bunu Microsoft 365 kiracınızdaki bir veya daha fazla SharePoint belge kitaplığına uygulayabilirsiniz.
 
 > [!NOTE]
 > Modeli yalnızca erişiminiz olan belge kitaplıklarına uygulayabilirsiniz.
@@ -61,9 +61,9 @@ Modelinizi bir SharePoint belge kitaplığına uygulamak için:
 
 5. Modeli kitaplığa uygulamak için **Ekle'yi** seçin.
 
-6. Modelin giriş sayfasındaki **Modelin uygulandığı yer** bölümünde, listelenen SharePoint sitesinin adını görmeniz gerekir.
+6. Modelin giriş sayfasındaki **Modelin uygulandığı yer** bölümünde SharePoint sitesinin adını listelenmiş olarak görmeniz gerekir.
 
-7. Belge kitaplığınıza gidin ve modelin belge kitaplığı görünümünde olduğunuzdan emin olun. **AutomateView** **document understanding models (Belgeleri** >  anlama modellerini görüntüle) öğesini seçin.
+7. Belge kitaplığınıza gidin ve modelin belge kitaplığı görünümünde olduğunuzdan emin olun. **Belge anlama modellerini görüntülemeyi** **otomatikleştir'i** >  seçin.
 
 8. **Modelleri gözden geçir ve yenilerini uygula** sayfasında, belge kitaplığına uygulanan modelleri görmek için **Uygulanan** sekmesini seçin.
 
@@ -109,7 +109,7 @@ Uygulanan bir model, uygulandıktan sonra belge kitaplığına yüklenen tüm do
 3. Seçtiğiniz dosya ve klasörler işlenecek kuyruğa eklenir.
 
     > [!NOTE]
-    > Sınıflandırmanın ne kadar sürebileceğini belirten bir ileti alırsınız. Yalnızca dosyaları seçtiyseniz sınıflandırma 30 dakika kadar sürebilir. Bir veya daha fazla klasör seçtiyseniz sınıflandırma 24 saat kadar sürebilir.
+    > Bir veya daha fazla klasör seçtiyseniz veya büyük bir dosya kümesini geçiriyorsanız sınıflandırma 24 saate kadar sürebilir.
 
 ### <a name="classification-date-field"></a>Sınıflandırma Tarihi alanı
 
@@ -117,17 +117,17 @@ Belge kitaplığına SharePoint Syntex belge anlama modeli (veya form işleme mo
 
    ![Sınıflandırma Tarihi sütununu gösteren belge kitaplığının ekran görüntüsü.](../media/content-understanding/class-date-column.png) 
 
-**Sınıflandırma Tarihi** alanı, bir model bir dosya veya klasörün içeriğini işlemeyi bitirdikten ve **Sınıflandırma Tarihi** alanını güncelleştirdikten sonra bir Power Automate akışı çalıştırmak için bir dosya [**içerik anlama modeli tetikleyicisi tarafından sınıflandırıldığında**](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) tarafından kullanılır.
+**Sınıflandırma Tarihi** alanı, bir model dosya veya klasörün içeriğini işlemeyi bitirdikten ve **Sınıflandırma Tarihi** alanını güncelleştirdikten sonra Power Automate akışını çalıştırmak için bir dosya [**içerik anlama modeli tetikleyicisi tarafından sınıflandırıldığında**](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) tarafından kullanılır.
 
-   ![Flow tetikleyici.](../media/content-understanding/trigger.png)
+   ![Akış tetikleyicisi.](../media/content-understanding/trigger.png)
 
 Bir **dosya bir içerik anlama modeli tarafından sınıflandırıldığında** tetikleyicisi, dosya veya klasörden ayıklanan bilgileri kullanarak akış başlatmak için kullanılabilir.
 
-Örneğin, bir model **Sınıflandırma Tarihi** ile damgalandığında, kullanıcılara SharePoint belge kitaplığındaki bir model tarafından yeni bir dosyanın işlendiğini ve sınıflandırıldığını bildirmek için SharePoint Syntex **dosya akışını işledikten sonra e-posta gönder'i** kullanabilirsiniz.
+Örneğin, bir model **Sınıflandırma Tarihi** ile damgalandığında, Kullanıcılara SharePoint belge kitaplığındaki bir model tarafından yeni bir dosyanın işlendiğini ve sınıflandırıldığını bildirmek için **SharePoint Syntex dosya akışını işledikten sonra e-posta gönder'i** kullanabilirsiniz.
 
 Akışı çalıştırmak için:
 
-1. Bir dosya seçin ve ardından **Tümleştir** >  **Power Automate** >  **Akış oluştur'u** seçin.
+1. Bir dosya seçin ve ardından **Power Automate'i tümleştir** >  >  **Akış oluştur'u** seçin.
 
 2. **Akış oluştur** panelinde, **SharePoint Syntex bir dosyayı işledikten sonra e-posta gönder'i** seçin.
 
@@ -139,8 +139,8 @@ Akışı çalıştırmak için:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflandırıcı oluşturma](create-a-classifier.md)
+[Sınıflandırıcı oluştur](create-a-classifier.md)
 
-[Ayıklayıcı oluşturma](create-an-extractor.md)
+[Ayıklayıcı oluştur](create-an-extractor.md)
 
 [Document Understanding'e genel bakış](document-understanding-overview.md)

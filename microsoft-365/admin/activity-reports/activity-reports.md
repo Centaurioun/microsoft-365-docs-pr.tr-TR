@@ -2,8 +2,8 @@
 title: etkinlik raporlarını Microsoft 365 yönetim merkezi
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Kuruluşunuzdaki kişilerin Microsoft 365 hizmetlerini nasıl kullandığını gösteren düzenli bir rapor alın ve daha fazla içgörü için her grafikte detaya gidin.
-ms.openlocfilehash: 05bee2950cb50b0b5a21ef67e9f73cec5e78b07a
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 79c4c4bcdb7036fcf32e8d8ee98f29ce49e4c3dd
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601618"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639602"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Yönetim merkezinde Microsoft 365 Raporları
 
@@ -38,9 +38,9 @@ YouTube'da [Microsoft 365 küçük işletme yardımına](https://go.microsoft.co
   
 Son 7 gün, son 30 gün, son 90 gün ve son 180 güne yönelik raporlar sağlanır. Tüm raporlama dönemlerine ilişkin veriler hemen hazır olmaz. Raporlar 48 saat içinde sunulur.
 
-## <a name="watch-act-on-a-usage-report-in-office-365"></a>İzleme: Office 365'de kullanım raporu üzerinde işlem yapma
+## <a name="watch-act-on-a-usage-report-in-microsoft-365"></a>Izleyin: Microsoft 365'te kullanım raporu üzerinde işlem yapma
   
-[YouTube kanalımızda](https://go.microsoft.com/fwlink/?linkid=2198103) bu videoya ve diğer videolara göz atın.
+[YouTube kanalımızda](https://go.microsoft.com/fwlink/?linkid=2198103) bu videoya ve diğer videolara göz atın.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
 
@@ -90,7 +90,7 @@ Daha fazla bilgi edinmek için bkz. [Yönetici rolleri hakkında](../add-users/a
 
 Aboneliğinize bağlı olarak, tüm ortamlardaki kullanılabilir raporlar aşağıdadır.
 
-|Rapor|Kamu|GCC|GCC-High|Dod|21Vianet tarafından sağlanan Office 365|
+|Rapor|Kamu|Gcc|GCC-High|Dod|21Vianet tarafından sağlanan Office 365|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |[Microsoft tarayıcı kullanımı](browser-usage-report.md)|Evet|<sup>Hayır 1</sup>|<sup>Hayır 1</sup>|<sup>Hayır 1</sup>|<sup>Hayır 1</sup>|
 |[E-posta etkinliği](email-activity-ww.md)|Evet|Evet|Evet|Evet|Evet|

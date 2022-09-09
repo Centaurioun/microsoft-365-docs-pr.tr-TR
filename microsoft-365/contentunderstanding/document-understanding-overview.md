@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da belge anlama hakkında bilgi edinin.
-ms.openlocfilehash: 7ce1a44a8101a45bf55007b98cc310c734d26895
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 7ee016f228a050cf36d048ccd37c3ad8615823ed
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584970"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639580"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de belge anlamaya genel bakış
 
@@ -79,13 +79,6 @@ OCR işleme, aşağıdaki gereksinimleri karşılayan belgelerde en iyi sonucu s
 - Kağıt belgelerden taranıyorsa taramalar yüksek kaliteli görüntüler olmalıdır.
 
 - Latin alfabesini (İngilizce karakterler) kullanmalıdır.
-
-> [!NOTE]
-> AI Builder şu anda aşağıdaki form işleme giriş verilerini desteklemez:
->
-> - Onay kutuları veya radyo düğmeleri
-> - Imza
-> - Doldurulabilir PDF'ler
 
 ### <a name="supported-file-types"></a>Desteklenen dosya türleri
 

@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard için paylaşımı yönetmeyi öğrenin.
-ms.openlocfilehash: 7b4fdfd6eb183cac34c31a16f12804d84731bcea
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 53409c352a3be95a720d6ebfc0759270140c7400
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599483"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639514"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Microsoft Whiteboard için paylaşımı yönetme
 
@@ -63,6 +63,11 @@ Bu değişikliklerin kiracınız genelinde uygulanması yaklaşık 60 dakika sü
 |Beyaz tahtayı masaüstünden veya mobil cihazdan başlatma|Depolama: OneDrive İş<br><br>Sahip: Beyaz tahtayı oluşturan kullanıcı|Etkin|Kiracı içi kullanıcılar: Oluşturabilir, görüntüleyebilir ve işbirliği yapabilir<br><br>Dış kullanıcılar: Yalnızca toplantı sırasında görüntüleyebilir ve işbirliği yapabilir (beyaz tahtayı paylaşma düğmesi dış kullanıcılar için görünmez)<br><br>Paylaşılan cihaz hesapları: Yalnızca toplantı sırasında görüntüleyebilir ve işbirliği yapabilir|
 |Beyaz tahtayı masaüstünden veya mobil cihazdan başlatma|Depolama: OneDrive İş<br><br>Sahip: Beyaz tahtayı oluşturan kullanıcı|Devre dışı|Kiracı içi kullanıcılar: Başlatabilir, görüntüleyebilir ve işbirliği yapabilir<br><br>Dış kullanıcılar: Görüntülenemez veya işbirliği yapılamaz<br><br>Paylaşılan cihaz hesapları: Görüntülenemez veya işbirliği yapılamaz|
 |Beyaz tahtayı Surface Hub'dan veya Microsoft Teams Odaları başlatma|Depolama: Azure (Whiteboard dosyaları gelecekte OneDrive İş taşınacaktır)<br><br>Sahip: Toplantı katılımcısı|Geçerli değil|Kiracı içi kullanıcılar: Başlatabilir, görüntüleyebilir ve işbirliği yapabilir<br><br>Dış kullanıcılar: Yalnızca toplantı sırasında görüntüleyebilir ve işbirliği yapabilir<br><br> Paylaşılan cihaz hesapları: Yalnızca toplantı sırasında görüntüleyebilir ve işbirliği yapabilir|
+
+> [!NOTE]
+>Beyaz Tahta OneDrive'da depolanıyorsa ve zaten bir toplantıya bağlıysa, Surface Hub'da veya Microsoft Teams Odaları cihazda başlatılamaz. Başka bir cihazdaki kimliği doğrulanmış bir kullanıcının bunu yapması gerekir. Bu sorun için bir düzeltme üzerinde çalışıyoruz.
+
+
 
 ## <a name="add-as-a-tab-in-teams-channels-and-chats"></a>Teams kanallarında ve sohbetlerinde sekme olarak ekleme
 

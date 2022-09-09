@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams sohbetleri ve kanalları Veri Kaybı Önleme (DLP) ilkelerini destekler.
-ms.openlocfilehash: 5d2ee7cefc23a85aec1a75fbe9fe121feacbb51f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ae9f7b273dc84d16c499a13f4c491d517d804cd2
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638377"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639624"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Veri kaybı önleme ve Microsoft Teams
 
@@ -31,7 +31,12 @@ Kuruluşunuzda Microsoft Purview Veri Kaybı Önleme (DLP) varsa, kişilerin bir
     > [!NOTE]
     > Microsoft Teams için DLP, aşağıdakilere sahip Microsoft Teams kullanıcıları ile paylaşıldığında hassas içeriği engeller:<br/>- ekiplerde ve kanallarda [konuk erişimi](/MicrosoftTeams/guest-access); Veya<br/>- [toplantılarda](/MicrosoftTeams/manage-external-access) ve sohbet oturumlarında dış erişim. <p>Dış sohbet oturumları için DLP yalnızca hem gönderen hem de alıcı Yalnızca Teams modundaysa ve [Microsoft Teams yerel federasyonu](/microsoftteams/manage-external-access) kullanıyorsa çalışır. Teams için DLP, Skype Kurumsal veya yerel olmayan federasyon sohbet oturumlarıyla [birlikte çalışmadaki](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) iletileri engellemez.
 
-- **Örnek 2: Belgelerde hassas bilgileri koruma**. Birinin microsoft teams kanalında veya sohbette konuklarla belge paylaşmaya çalıştığını ve belgenin hassas bilgiler içerdiğini varsayalım. Bunu önlemek için tanımlanmış bir DLP ilkeniz varsa, belge bu kullanıcılar için açılmaz. Korumanın uygulanabilmesi için DLP ilkenizin SharePoint ve OneDrive'ı içermesi gerekir. Bu, SharePoint için Microsoft Teams'de görüntülenen ve bu nedenle kullanıcıların Office 365 DLP lisansına sahip olmasını gerektiren (Office 365 E3 dahil) ancak kullanıcıların Office 365 Gelişmiş Uyumluluk lisansına sahip olmasını gerektirmeyen bir DLP örneğidir.)
+- **Örnek 2: Belgelerde hassas bilgileri koruma**. Birinin microsoft teams kanalında veya sohbette konuklarla belge paylaşmaya çalıştığını ve belgenin hassas bilgiler içerdiğini varsayalım. Bunu önlemek için tanımlanmış bir DLP ilkeniz varsa, belge bu kullanıcılar için açılmaz. Korumanın uygulanabilmesi için DLP ilkenizin SharePoint ve OneDrive'ı içermesi gerekir. Bu, SharePoint için Microsoft Teams'de görüntülenen ve bu nedenle kullanıcıların Office 365 DLP lisansına sahip olmasını gerektiren (Office 365 E3 dahil) ancak kullanıcıların Office 365 Gelişmiş Uyumluluk lisansına sahip olmasını gerektirmeyen bir DLP örneğidir. 
+   
+DLP **İlkeleri** başlığından **Otomatik dosya koruması'nı** seçerek Teams **DLP** >  ilkesini SharePoint Online ve OneDrive İş kapsayacak şekilde genişletebilirsiniz. Bu, Teams sohbetlerinde ve kanallarında paylaşılan tüm dosyalar için Teams iletileri için geçerli olan kurallarla DLP koruması sağlar. Etkinleştirildikten sonra, uzantı mevcut tüm Teams DLP ilkelerine ve gelecekteki Teams DLP ilkelerine uygulanır, böylece SharePoint ve Dosya koruması için OneDrive için ayrı ilkeler oluşturmanız gerekmez. 
+
+> [!NOTE]
+> Yalnızca microsoft **365'ten içerik içeren veya microsoft 365'ten paylaşılan içerik** içeren veya içerik **içeren** veya özel durumlarla ilgili kuralları olan Teams ilkeleri otomatik dosya koruması için genişletilebilir. Koşul veya özel durum **yapılandırmasında Gönderen**, **gönderen etki alanı**, **alıcı ve alıcı** **etki alanı varsa** , bu koşullar SharePoint ve OneDrive için geçerli olmadığından uzantı eylemi başarısız olur.
 
 - **Örnek 3: Teams Paylaşılan Kanallarında iletişimleri koruma**. Paylaşılan kanallar için konak Teams ekibi DLP ilkesi uygulanır. Örneğin Contoso'nun TeamA'sına ait paylaşılan bir kanal olduğunu varsayalım. TeamA'nın bir DLP ilkesi P1'i vardır. Kanalı paylaşmanın 3 yolu vardır:
     - **Üyeyle paylaşma**: Contoso'dan user1'i TeamA üyesi yapmadan paylaşılan kanala katılmaya davet edebilirsiniz. Kullanıcı1 dahil olmak üzere bu paylaşılan kanaldaki herkes P1 kapsamında olacaktır.

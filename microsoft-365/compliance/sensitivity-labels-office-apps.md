@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b395aaf4d506fcb933b34135d3871e9669a5efaa
-ms.sourcegitcommit: d60d78e6a05845747af0ad25131c7e526d58064d
+ms.openlocfilehash: c757b9b2b6f9dc649832f2c32a2a0137f4804779
+ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67498493"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67639557"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -191,20 +191,27 @@ Anlamlı raporlama ile daha tutarlı bir etiket deneyimi için, kullanıcıları
 > [!NOTE]
 > Kullanıcılar SharePoint veya OneDrive'da depolanan etiketli bir belgeden şifrelemeyi el ile kaldırırsa ve [SharePoint ve OneDrive'daki Office dosyaları için duyarlılık etiketlerini etkinleştirdiyseniz](sensitivity-labels-sharepoint-onedrive-files.md), belgeye bir sonraki erişildiğinde veya indirildiğinde etiket şifrelemesi otomatik olarak geri yüklenir. 
 
+## <a name="encryption-based-label-matching-for-documents"></a>Belgeler için şifreleme tabanlı etiket eşleştirme
 
-## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Dosyalara, e-postalara ve eklere duyarlılık etiketleri uygulama
+Bir belge yönetici tanımlı izinlerle şifrelendiğinde, şifreleme bilgileri eşleşen bir duyarlılık etiketi hakkındaki bilgileri içerir. Sonuç olarak, bir kullanıcı bu belgeyi bir Office uygulamasında açtığında, eşleşen etiket Office uygulamasında görüntülenir ve belge kaydedilirse kalıcı olur.
 
-Kullanıcılar her belge veya e-posta için aynı anda yalnızca bir etiket uygulayabilir.
+Bu senaryoda, eşleşen duyarlılık etiketi etiketlenmemiş bir belgeyi etiketleyebilir ve şifreleme uygulamayan mevcut bir etiketi değiştirebilir. Örneğin, **Genel** etiketi **Gizli / Tüm Çalışanlar** ile değiştirilir. Belge daha önce etiketlenmemişse ve AIP Eklentisini kullanmıyorsanız, eşleşen etiketten içerik işaretleri otomatik olarak uygulanmaz.
 
-Ekleri olan bir e-posta iletisini etiketlediğinizde, ekler yalnızca e-posta iletisine uyguladığınız etiket şifreleme uygularsa ve ek bir Office belgesi zaten şifrelenmemişse etiketi devralır. Devralınan etiket şifreleme uyguladığından, ek yeni şifrelenir.
+Bu senaryo, eski şifreleme çözümlerini koruma şablonlarından şifreleme uygulayan duyarlılık etiketlerine taşımaya yardımcı olur.
 
-E-posta iletisine uygulanan etiket şifreleme uygulamadığında veya ek zaten şifrelendiğinde, ek e-posta iletisinden etiketleri devralamaz.
+Ancak, bu davranışı alıcı tarafından açıldığında e-posta ekleri için bir etiketleme senaryosuyla da görürsünüz. Örneğin:
 
-**Gizli** etiketinin şifreleme uyguladığı ve **Genel** etiketinin şifreleme uygulamadığı etiket devralma örnekleri:
+1. Kullanıcı bir e-posta oluşturur ve şifrelenmemiş bir Office belgesi ekler ve ardından e-postaya bir etiket uygular.
+    
+    Etiket, İletme veya Encrypt-Only seçenekleri yerine yönetici tarafından ayarlanan izinlerle şifreleme uygular. Örneğin, etiket yapılandırması için yönetici **Şimdi izin ata'yı** seçer ve tüm çalışanların okuma erişimine sahip olduğunu belirtir.
 
-- Kullanıcı yeni bir e-posta iletisi oluşturur ve Bu iletiye **Gizli** etiketini uygular. Ardından etiketlenmemiş veya şifrelenmemiş bir Word belgesi eklerler. Devralma sonucunda, belge yeni **Gizli** olarak etiketlendi ve şimdi bu etiketten şifreleme uygulandı.
+2. E-posta gönderildiğinde, [ek otomatik olarak şifrelemeyi devralır, ancak etiketi devralmaz](encryption-sensitivity-labels.md#email-attachments-for-encrypted-email-messages).
 
-- Kullanıcı yeni bir e-posta iletisi oluşturur ve Bu iletiye **Gizli** etiketini uygular. Daha sonra **Genel** etiketli bir Word belgesi ekler ve bu dosya şifrelenmez. Devralma sonucunda, belge **Gizli** olarak yeniden etiketlenir ve artık bu etiketten şifreleme uygulanmıştır.
+3. Aynı kiracıdaki bir alıcı şifrelenmiş belgeyi açtığında, belge için yönetici tanımlı izinler için eşleşen bir etiket otomatik olarak görüntülenir ve belge kaydedilirse kalıcı olur.
+    
+    Etkinlik Gezgini'nde görüntülenen bir denetim olayı olarak, bu kullanıcı e-posta göndereni değil etiketi uyguladı.
+
+Şifreleme tabanlı etiket eşleştirmesi yalnızca kiracı içinde, yönetici tanımlı izinler için çalışır ve eşleşen duyarlılık etiketi belgeyi açan kullanıcıya yayımlanmalıdır.
 
 ## <a name="sensitivity-label-compatibility"></a>Duyarlılık etiketi uyumluluğu
 
