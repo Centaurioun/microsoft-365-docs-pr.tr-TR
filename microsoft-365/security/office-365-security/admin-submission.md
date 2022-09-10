@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Yöneticiler, Microsoft 365 Defender portalında Gönderiler portalını kullanarak engellenen, şüpheli e-posta, şüpheli kimlik avı e-postası, istenmeyen posta, diğer zararlı olabilecek iletiler, URL'ler ve e-posta eklerini yeniden keşfetmek üzere Microsoft'a yasal e-posta göndermeyi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b5b54a0d6d8e760d392578997461be44a19cf92a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 56d61a09b3180a22cb525be1e97872b6f1616056
+ms.sourcegitcommit: 71643c8c73d1e6a4d909177656f8d2bd440b1022
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480547"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67642724"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Şüpheli istenmeyen posta, kimlik avı, URL'ler, engellenen meşru e-postalar ve e-posta eklerini Microsoft'a göndermek için Gönderimler portalını kullanın
 
@@ -115,8 +115,6 @@ Değerlendirme için Microsoft'a ileti göndermek üzere Office 365 için Micros
 > Kimlik [sahtekarlık zekası](learn-about-spoof-intelligence.md) tarafından yanlış engellenen iletiler için, Kiracı İzin Ver/Engelle Listesinde etki alanı çifti için bir blok girdisi oluşturulmaz.
 >
 > [Etki alanı veya kullanıcı kimliğe bürünme koruması](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) tarafından yanlış engellenen iletiler için, Kiracı İzin Ver/Engelle Listesi'nde etki alanı veya gönderen için bir engelleme girdisi oluşturulmaz. Bunun yerine, etki alanı veya gönderen, iletiyi algılayan [kimlik avı önleme ilkesinin](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) **Güvenilen gönderenler ve etki alanları bölümüne** eklenir.
->
-> Bir dosyayı **Engellenmemeli (Hatalı pozitif)** olarak raporlamak için bkz. [gönderimler portalında etki alanları ve e-posta adresleri için izin verme girdileri oluşturmak üzere Microsoft 365 Defender portalını kullanma](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
 
 ## <a name="report-questionable-email-attachments-to-microsoft"></a>Sorgulanabilir e-posta eklerini Microsoft'a bildirme
 
@@ -157,9 +155,6 @@ Değerlendirme için Microsoft'a ileti göndermek üzere Office 365 için Micros
 
 > :::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Defender portalındaki Gönderimler sayfasında analiz için Microsoft'a hatalı negatif (hatalı) bir e-posta eki gönderin." lightbox="../../media/admin-submission-file-block.png":::
 
- > [!NOTE]
- > Bir dosyayı **Engellenmemeli (Hatalı pozitif)** olarak raporlamak için bkz. [Gönderimler portalında dosyalar için izin verme girdileri oluşturmak üzere Microsoft 365 Defender portalını kullanma](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal).
-
 ## <a name="report-questionable-urls-to-microsoft"></a>Sorgulanabilir URL'leri Microsoft'a bildirme
 
 1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Eylemler & Gönderimler sayfasındaki Gönderimler** \> **sayfasına gidin**. Doğrudan **Gönderimler** sayfasına gitmek için kullanın <https://security.microsoft.com/reportsubmission>.
@@ -199,8 +194,17 @@ Değerlendirme için Microsoft'a ileti göndermek üzere Office 365 için Micros
 
 > :::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Defender portalındaki Gönderimler sayfasında analiz için Microsoft'a hatalı negatif (hatalı) bir URL gönderin." lightbox="../../media/admin-submission-url-block.png":::
 
- > [!NOTE]
- > Url'yi **Engellenmemesi Gerekir (Hatalı pozitif)** olarak bildirmek için bkz. [Gönderimler portalında URL'ler için izin veren girişler oluşturmak üzere Microsoft 365 Defender portalını kullanma](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal).
+## <a name="report-good-email-to-microsoft"></a>Microsoft'a iyi e-posta bildirin
+
+İzin verilmesi gereken engellenen e-posta iletilerini (hatalı negatifler) bildirmek için bkz. [gönderimler portalında etki alanları ve e-posta adresleri için izin verilen girişler oluşturmak üzere Microsoft 365 Defender portalını kullanma](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
+
+## <a name="report-good-email-attachments-to-microsoft"></a>Microsoft'a iyi e-posta ekleri bildirin
+
+İzin verilmesi gereken engellenen e-posta eklerini (hatalı negatifler) bildirmek için bkz. [gönderimler portalındaki dosyalar için izin verilen girdiler oluşturmak üzere Microsoft 365 Defender portalını kullanma](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal).
+
+## <a name="report-good-urls-to-microsoft"></a>Microsoft'a iyi URL'ler bildirin
+
+İzin verilmesi gereken engellenen URL'leri (hatalı negatifler) bildirmek için bkz. [gönderimler portalında URL'ler için izin verilen girişler oluşturmak üzere Microsoft 365 Defender portalını kullanma](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal).
 
 ## <a name="view-email-admin-submissions-to-microsoft"></a>Microsoft'a e-posta yöneticisi gönderimlerini görüntüleme
 
