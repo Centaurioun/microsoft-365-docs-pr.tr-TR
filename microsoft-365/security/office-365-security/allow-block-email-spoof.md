@@ -16,12 +16,12 @@ ms.collection:
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde e-postalara ve sahte gönderen girişlerine izin verme veya bunları engelleme hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 1537b32d56046da776024cef3acbd9eb2d8a4da3
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 752877aab39ce6c06b10b76c192b2188a9fb138d
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497571"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644015"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini kullanarak e-postalara izin verme veya e-postaları engelleme
 
@@ -81,7 +81,7 @@ Sahte gönderenler için blok girdileri oluşturmak için, bu [makalenin devamı
 
 #### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-domains-and-email-addresses-in-the-submissions-portal"></a>gönderimler portalında etki alanları ve e-posta adresleri için blok girdileri oluşturmak için Microsoft 365 Defender portalını kullanın
 
-E-posta iletilerini **engellenmiş olması gerekir (Hatalı negatif)** olarak raporlamak için adresinde <https://security.microsoft.com/reportsubmission> Gönderimler portalını kullandığınızda, Kiracı İzin Ver/Engelle Listesi'nde etki alanı veya gönderen için bir engelleme girdisi eklemek üzere **Bu alıcıdan gelen tüm e-postaları engelle'yi** seçebilirsiniz.
+E-posta iletilerini **Engellenmeli (Hatalı negatif)** olarak raporlamak için adresinden <https://security.microsoft.com/reportsubmission> Gönderimler portalını kullandığınızda, Kiracı İzin Ver/Engelle Listesi'ndeki **Etki Alanları & adresleri** sekmesinde gönderen için bir engelleme girdisi eklemek üzere **Bu alıcıdan gelen tüm e-postaları** engelle'yi seçebilirsiniz.
 
 Yönergeler için bkz. [Sorgulanabilir e-postayı Microsoft'a bildirme](admin-submission.md#report-questionable-email-to-microsoft).
 
@@ -133,7 +133,9 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [New-TenantAllowBlock
 
 ### <a name="use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal"></a>Gönderimler portalında etki alanları ve e-posta adresleri için izin verme girdileri oluşturmak için Microsoft 365 Defender portalını kullanın
 
-Etki alanları ve e-posta adresleri için izin verme girdilerini doğrudan Kiracı İzin Ver/Engelle Listesi'nde oluşturamazsınız. Bunun yerine, iletiyi hatalı pozitif olarak raporlamak için adresinde <https://security.microsoft.com/reportsubmission> Gönderimler portalını kullanırsınız. Yönetici gönderimleri hakkında daha fazla bilgi için bkz [. Şüpheli istenmeyen postaları, kimlik avı, URL'leri, engellenen meşru e-postaları ve e-posta eklerini Microsoft'a göndermek için Gönderimler portalını kullanma](admin-submission.md).
+Etki alanları ve e-posta adresleri için izin verme girdilerini doğrudan Kiracı İzin Ver/Engelle Listesi'nde oluşturamazsınız. Bunun yerine, iletiyi hatalı pozitif olarak raporlamak için konumundaki <https://security.microsoft.com/reportsubmission> Gönderimler portalını kullanırsınız ve bu da Kiracı İzin Verilen/EngellenenLer Listesi'ndeki **Etki Alanları & adresleri** sekmesinde gönderen için bir izin girişi ekler.
+
+Yönergeler için bkz. [Microsoft'a iyi e-posta bildirme](admin-submission.md#report-good-email-to-microsoft).
 
 > [!NOTE]
 > Microsoft sizin için izin verme girdilerini yönettiği için etki alanları ve e-posta adresleri için gereksiz izin verme girdileri kaldırılır. Bu davranış, kuruluşunuzu korur ve yanlış yapılandırılmış izin verme girdilerinin önlenmesine yardımcı olur. Karara katılmıyorsanız, iletinin neden hala kötü kabul edildiğini saptamak için bir destek olayı açmanız gerekebilir.
@@ -143,48 +145,6 @@ Etki alanları ve e-posta adresleri için izin verme girdilerini doğrudan Kirac
 > İletinin yanlış engellenmiş hatalı bir pozitif olduğu belirlendiği çoğu durumda, belirtilen son kullanma tarihinde izin ver girişi kaldırılır.
 >
 > Sahte gönderenler için izin verme girdileri oluşturmak için, bu makalenin devamında Sahte [gönderenler için izin verme girdileri oluşturma](#create-allow-entries-for-spoofed-senders) bölümüne bakın.
-
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Eylemler & Gönderimler sayfasındaki Gönderimler** \> **sayfasına gidin**. Doğrudan **Gönderimler** sayfasına gitmek için kullanın <https://security.microsoft.com/reportsubmission>.
-
-2. **Gönderimler** sayfasında **E-postalar** sekmesinin seçili olduğunu doğrulayın.
-
-3. **E-postalar** sekmesinde Analiz için Microsoft'a gönder simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Analiz için Microsoft'a gönderin**.
-
-4. Görüntülenen **Analiz için Microsoft'a gönder** açılır öğesinde aşağıdaki bilgileri girin:
-
-   - **Gönderim türünü seçin**: **Email** değerinin seçili olduğunu doğrulayın.
-
-   - **Ağ iletisi kimliğini ekleyin veya e-posta dosyasını karşıya yükleyin**: Aşağıdaki seçeneklerden birini seçin:
-
-     - **E-posta ağ iletisi kimliğini ekleyin**: Bu, karantinaya alınan iletilerdeki **X-MS-Exchange-Organization-Network-Message-Id** üst bilgisinde veya **X-MS-Office365-Filtering-Correlation-Id** üst bilgisinde bulunan bir GUID değeridir.
-
-     - **E-posta dosyasını (.msg veya .eml) karşıya yükleyin**: **Dosyalara gözat'a** tıklayın. Açılan iletişim kutusunda .eml veya .msg dosyasını bulup seçin ve **aç'a** tıklayın.
-
-   - **Sorunu olan bir alıcı seçin**: İlke denetimini çalıştırmak istediğiniz alıcıyı belirtin. İlke denetimi, e-postanın kullanıcı veya kuruluş ilkeleri nedeniyle engellenip engellenmediğini belirler.
-
-   - **Microsoft'a göndermek için bir neden seçin**: **Engellenmemeli (Hatalı pozitif)** seçeneğini belirleyin ve ardından aşağıdaki ayarları yapılandırın:
-
-     - **Benzer özniteliklere (URL, gönderen vb.) sahip e-postalara izin ver**: Bu ayarı ![Aç..](../../media/scc-toggle-on.png).
-
-         - **İzin ver girdisini kaldır:** Varsayılan değer **30 gündür**, ancak aşağıdaki değerlerden birini seçebilirsiniz:
-           - **1 gün**
-           - **7 gün**
-           - **30 gün**
-           - **Belirli bir tarih**: En yüksek değer bugünden itibaren 30 gündür.
-
-         - **Giriş notuna izin ver**: Bu e-postaya neden izin kullandığınızla ilgili isteğe bağlı bilgileri girin.
-
-   İşiniz bittiğinde **Gönder'e** ve ardından **Bitti'ye** tıklayın.
-
-   :::image type="content" source="../../media/admin-submission-email-allow.png" alt-text="Defender portalındaki Gönderimler sayfasında analiz için Microsoft'a hatalı pozitif (iyi) bir e-posta gönderin." lightbox="../../media/admin-submission-email-allow.png":::
-
-5. Birkaç dakika sonra İzin **Ver/Engelle Listesi** sayfasındaki **Etki Alanları & adresleri** sekmesinde izin ver girişi görünür.
-
-> [!NOTE]
->
-> - İletinin kötü amaçlı olduğunu belirleyen filtrelere bağlı olarak posta akışı sırasında izinler eklenir. Örneğin, gönderen ve iletideki bir URL'nin hatalı olduğu belirlendiyse, gönderen için bir izin girdisi oluşturulur ve URL için bir izin girdisi oluşturulur.
-> - Bu varlıkla (etki alanı veya e-posta adresi, URL, dosya) yeniden karşılaşıldığında, bu varlıkla ilişkili tüm filtreler atlanır.
-> - Posta akışı sırasında, etki alanından veya e-posta adresinden gelen iletiler filtreleme yığınında başka denetimler geçirirse, iletiler teslim edilecek. Örneğin, [e-posta kimlik doğrulaması](email-validation-and-authentication.md) geçerse, izin ver girişindeki bir gönderenden gelen bir ileti teslim edilecek.
 
 ### <a name="use-the-microsoft-365-defender-portal-to-view-allow-or-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesi'nde etki alanları ve e-posta adresleri için izin verme veya engelleme girdilerini görüntülemek için Microsoft 365 Defender portalını kullanın
 
@@ -238,7 +198,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-TenantAllowBlock
 
 ### <a name="use-the-microsoft-365-defender-portal-to-modify-allow-or-block-entries-for-domains-and-email-addresses-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesi'nde etki alanları ve e-posta adresleri için izin verme veya engelleme girdilerini değiştirmek için Microsoft 365 Defender portalını kullanın
 
-Kiracı İzin Ver/Engelle listesindeki etki alanları ve e-posta adresleri için izin ver veya engelle girdisini değiştirdiğinizde, yalnızca son kullanma tarihini ve notları değiştirebilirsiniz.
+Kiracı İzin Ver/Engelle listesinde etki alanları ve e-posta adresleri için izin ver veya engelle girdilerini değiştirdiğinizde, yalnızca son kullanma tarihini ve notları değiştirebilirsiniz.
 
 1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**İlkeler & kuralları** \> **Tehdit İlkeleri** \> **Kuralları** bölümüne **Kiracı İzin Ver/Listeleri Engelle** bölümüne \> gidin. Ya da doğrudan **Kiracı İzin Ver/Engelle Listesi** sayfasına gitmek için kullanın <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -327,19 +287,14 @@ Sahte gönderenler için blok girdileri oluşturmak için aşağıdaki seçenekl
 
 #### <a name="use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-submissions-portal"></a>Gönderiler portalında sahte gönderenler için izin verme girdileri oluşturmak için Microsoft 365 Defender portalını kullanın
 
-[Sahtekarlık zekası](learn-about-spoof-intelligence.md) tarafından engellenen iletilerin **Gönderimler** sayfasından Microsoft'a gönderilmesi, göndereni Kiracı İzin Ver/Engelle **Listesi'ndeki Kimlik Sahtekarı gönderenler** sekmesinde izin ver girişi olarak ekler.
+Adresinden **Gönderiler** portalında <https://security.microsoft.com/reportsubmission> microsoft'a sahte [zeka](learn-about-spoof-intelligence.md) tarafından engellenen iletilerin gönderilmesi, göndereni Kiracı İzin Ver/Engelle **Listesi'ndeki Sahte gönderenler sekmesinde gönderen** için izin verme girdisi olarak ekler.
+
+Yönergeler için bkz. [Microsoft'a iyi e-posta bildirme](admin-submission.md#report-good-email-to-microsoft).
 
 > [!NOTE]
 > Sahte zeka içgörüsünde kararı geçersiz kıldığınızda, sahte gönderen yalnızca Kiracı İzin Ver/Engelle Listesi'ndeki Sahte **Gönderenler** sekmesinde görünen el ile izin ver veya engelle girdisine dönüşür.
 >
 > Gönderen kimlik bilgileri sahtekarlığına engellenmemişse, e-posta iletisinin Microsoft'a gönderilmesi Kiracı İzin Ver/Engelle Listesi'nde izin verme girdisi oluşturmaz.
-
-İletiyi raporlama yönergeleri, [Gönderiler portalında etki alanları ve e-posta adresleri için izin veren girişler oluşturmak üzere Microsoft 365 Defender portalını kullanma başlığındaki adımlarla](#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal) neredeyse aynıdır.
-
-Tek farklar şunlardır:
-
-- 4. Adımdaki **İzin ver girdisini kaldır** ayarı anlamsızdır çünkü sahte gönderenlerin girdilerinin süresi hiçbir zaman dolmaz.
-- 4. Adım'daki **Giriş notuna izin ver** ayarı, Kiracı İzin Ver/Engelle Listesindeki sahte gönderenlerin girdilerine uygulanmaz.
 
 #### <a name="use-the-microsoft-365-defender-portal-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesi'nde sahte gönderenler için izin verme girdileri oluşturmak için Microsoft 365 Defender portalını kullanın
 

@@ -15,14 +15,14 @@ ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 description: Outlook, OneDrive ve Teams verilerinizi Microsoft 365 İş Standart geçirme
-ms.openlocfilehash: 2bb4b401266b61832c5d9ae2fcd8dd45314b4418
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: c7050890b6e93f32ff632a7b2536121a790378a9
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085103"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644301"
 ---
-# <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>Verileri Microsoft 365 İş Standart aboneliğime geçirme
+# <a name="migrate-data-to-my-microsoft-365-for-business-subscription"></a>İş için Microsoft 365 aboneliğime veri geçirme
 
 OneDrive, Outlook ve Teams verilerinizi Microsoft 365 İş Standart aboneliğinize taşımak için bu makaledeki adımları izleyin.
 

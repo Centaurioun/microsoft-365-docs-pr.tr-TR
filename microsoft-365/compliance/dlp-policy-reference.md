@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ilkesi bileşeni ve yapılandırma başvurusu
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 12c416af0a6f715ce56c193830ddb0db0ad9eba1
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: f9d5b5065925805c346f865706b34bb05c268571
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67615242"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67643905"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Veri Kaybı Önleme ilkesi başvurusu
 
@@ -313,8 +313,8 @@ Kullanılabilir bağlam seçenekleri, seçtiğiniz konuma bağlı olarak değiş
 ##### <a name="conditions-devices-supports"></a>Cihazların desteklediği koşullar
 
 - İçerik içeriği
-- (önizleme) Belge veya ek parola korumalıdır/dosya şifrelenir. (.pdf, Office dosyaları tam olarak desteklenir. Yalnızca pgp şifrelenmiş dosyaları desteklenir)
-- (önizleme) İçerikte duyarlılık etiketi uygulanmaz.
+- (önizleme) Belge veya ek parola korumalıdır (.pdf, Office dosyaları ve Symantec PGP şifrelenmiş dosyaları tam olarak desteklenir). Bu koşul, dijital haklarla yönetilen (DRM) şifrelenmiş veya izin korumalı dosyaları algılamaz. 
+- (önizleme) İçerik etiketlenmez (.pdf, Office dosyaları tam olarak desteklenir). Bu koşul, duyarlılık etiketi uygulanmamış içeriği algılar. Yalnızca desteklenen dosya türlerinin algılandığından emin olmak için bu koşulu **Dosya uzantısı veya Dosya** **türü koşulları** ile kullanmanız gerekir.
 - (önizleme) Kullanıcı Edge'den hassas bir web sitesine erişmiş. Daha fazla bilgi için bkz[. Senaryo 6 Hassas hizmet etki alanlarındaki kullanıcı etkinliklerini izleme veya kısıtlama (önizleme).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) 
 - Dosya uzantısı
 - Dosya türü:

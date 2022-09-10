@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Microsoft Purview çözümleri deneme playbook'u.
 ms.custom: trial-playbook
-ms.openlocfilehash: 8a8b4acc4626e82186aede35d553b665d0f98e74
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: e79986eb4b74e675770825fa621cdfdfd59ac047
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67370113"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67643883"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Deneme playbook'u: Microsoft Purview çözümleri
 
@@ -305,7 +305,7 @@ Insider Risk Management'ın işlevselliğinden tam olarak yararlanmak için, kur
 
 **Mevzuat uyumluluğu ilkesi ihlallerini belirleme**
 
-Microsoft Purview İletişim Uyumluluğu kuruluşların hassas veya gizli bilgilerin uygunsuz şekilde paylaşılması da dahil olmak üzere SEC veya FINRA yükümlülükleri gibi açık mevzuat uyumluluğu ihlallerini algılamalarına yardımcı olur. Yerleşik iş akışları sayesinde çözüm, olası mevzuat uyumluluğu ihlallerini araştırmanıza ve düzeltmenize yardımcı olabilir. Tasarım gereği gizlilikle oluşturulan bu çözüm varsayılan olarak takma adlara sahiptir, rol tabanlı erişim denetimleri yerleşiktir, araştırmacıların bir yönetici tarafından açıkça bir ilkeye eklenmesi gerekir ve denetim günlükleri kullanıcı düzeyinde gizliliğin sağlanmasına yardımcı olur.
+Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (ör. SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamak için kullanılır.
 
 ### <a name="step-1-enable-permissions-for-communication-compliance"></a>1. Adım: İletişim uyumluluğu için izinleri etkinleştirme
 

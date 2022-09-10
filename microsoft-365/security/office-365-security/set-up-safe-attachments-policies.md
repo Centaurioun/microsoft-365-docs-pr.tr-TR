@@ -18,12 +18,12 @@ description: Kuruluşunuzu e-postadaki kötü amaçlı dosyalardan korumak için
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ad5b68ca377a03ff42044b85c3125339bcbc8b62
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 11d6a276d40441092b3d4f060933cfb2968e0a8e
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611902"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644213"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'de Güvenli Ekler ilkelerini ayarlama
 
@@ -126,7 +126,7 @@ Microsoft 365 Defender portalında özel Güvenli Ekler ilkesi oluşturmak, her 
      - **Kapalı**: Genellikle bu değeri önermeyiz.
      - **Monitör**
      - **Engelle**: Bu varsayılan değerdir ve Standart ve Katı [önceden ayarlanmış güvenlik ilkelerinde](preset-security-policies.md) önerilen değerdir.
-     - **Değiştirmek**
+     - **Değiştir**: Bu eylem kullanım dışı bırakılacak. Daha fazla bilgi için bkz. [MC424901](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC424901).
      - **Dinamik Teslim (Önizleme özelliği)**
 
      Bu değerler [Güvenli Ekler ilke ayarlarında](safe-attachments.md#safe-attachments-policy-settings) açıklanmıştır.
@@ -137,7 +137,8 @@ Microsoft 365 Defender portalında özel Güvenli Ekler ilkesi oluşturmak, her 
 
    - **Algılanan ekleri olan iletileri yeniden yönlendirme**: **Yeniden yönlendirmeyi etkinleştir'i** seçerseniz, Analiz ve araştırma amacıyla kötü amaçlı yazılım **ekleri içeren iletiler göndermek üzere Belirtilen e-posta adresine engellenen, izlenen veya değiştirilen ekler içeren iletileri gönder kutusunda bir e-posta** adresi belirtebilirsiniz.
 
-     Standart ve Katı ilke ayarları için öneri, yeniden yönlendirmeyi etkinleştirmektir. Daha fazla bilgi için bkz [. Güvenli Ekler ayarları](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
+     > [!NOTE]
+     > Yeniden yönlendirme yakında yalnızca **İzleyici** eylemi için kullanılabilir olacak. Daha fazla bilgi için bkz. [MC424899](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter/:/messages/MC424899).
 
    - **Tarama tamamlanamadıysa Güvenli Ekler algılama yanıtını uygulayın (zaman aşımı veya hatalar)**: **Güvenli Ekler bilinmeyen kötü amaçlı yazılım yanıtı** tarafından belirtilen eylem, Güvenli Ekler taraması tamamlanamadıklarında bile iletilere uygulanır. Bu seçeneği belirlediyseniz, her zaman **Yeniden yönlendirmeyi etkinleştir'i** seçin ve kötü amaçlı yazılım ekleri içeren iletiler göndermek için bir e-posta adresi belirtin. Aksi takdirde iletiler kaybolabilir.
 

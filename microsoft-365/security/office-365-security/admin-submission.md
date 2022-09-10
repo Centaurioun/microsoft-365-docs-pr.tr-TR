@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Yöneticiler, Microsoft 365 Defender portalında Gönderiler portalını kullanarak engellenen, şüpheli e-posta, şüpheli kimlik avı e-postası, istenmeyen posta, diğer zararlı olabilecek iletiler, URL'ler ve e-posta eklerini yeniden keşfetmek üzere Microsoft'a yasal e-posta göndermeyi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 56d61a09b3180a22cb525be1e97872b6f1616056
-ms.sourcegitcommit: 71643c8c73d1e6a4d909177656f8d2bd440b1022
+ms.openlocfilehash: 9a2620df6f7cb6eba490fba289c019240e172679
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/10/2022
-ms.locfileid: "67642724"
+ms.locfileid: "67643971"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Şüpheli istenmeyen posta, kimlik avı, URL'ler, engellenen meşru e-postalar ve e-posta eklerini Microsoft'a göndermek için Gönderimler portalını kullanın
 
@@ -109,7 +109,7 @@ Değerlendirme için Microsoft'a ileti göndermek üzere Office 365 için Micros
 
    İşiniz bittiğinde **Gönder'e** ve ardından **Bitti'ye** tıklayın.
 
-> :::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Defender portalındaki Gönderimler sayfasında analiz için Microsoft'a hatalı negatif (hatalı) bir e-posta gönderin." lightbox="../../media/admin-submission-email-block.png":::
+:::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Defender portalındaki Gönderimler sayfasında analiz için Microsoft'a hatalı negatif (hatalı) bir e-posta gönderin." lightbox="../../media/admin-submission-email-block.png":::
 
 > [!NOTE]
 > Kimlik [sahtekarlık zekası](learn-about-spoof-intelligence.md) tarafından yanlış engellenen iletiler için, Kiracı İzin Ver/Engelle Listesinde etki alanı çifti için bir blok girdisi oluşturulmaz.
@@ -153,7 +153,7 @@ Değerlendirme için Microsoft'a ileti göndermek üzere Office 365 için Micros
 
    İşiniz bittiğinde **Gönder'e** ve ardından **Bitti'ye** tıklayın.
 
-> :::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Defender portalındaki Gönderimler sayfasında analiz için Microsoft'a hatalı negatif (hatalı) bir e-posta eki gönderin." lightbox="../../media/admin-submission-file-block.png":::
+:::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Defender portalındaki Gönderimler sayfasında analiz için Microsoft'a hatalı negatif (hatalı) bir e-posta eki gönderin." lightbox="../../media/admin-submission-file-block.png":::
 
 ## <a name="report-questionable-urls-to-microsoft"></a>Sorgulanabilir URL'leri Microsoft'a bildirme
 
@@ -192,19 +192,129 @@ Değerlendirme için Microsoft'a ileti göndermek üzere Office 365 için Micros
 
    İşiniz bittiğinde **Gönder'e** ve ardından **Bitti'ye** tıklayın.
 
-> :::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Defender portalındaki Gönderimler sayfasında analiz için Microsoft'a hatalı negatif (hatalı) bir URL gönderin." lightbox="../../media/admin-submission-url-block.png":::
+:::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Defender portalındaki Gönderimler sayfasında analiz için Microsoft'a hatalı negatif (hatalı) bir URL gönderin." lightbox="../../media/admin-submission-url-block.png":::
 
 ## <a name="report-good-email-to-microsoft"></a>Microsoft'a iyi e-posta bildirin
 
-İzin verilmesi gereken engellenen e-posta iletilerini (hatalı negatifler) bildirmek için bkz. [gönderimler portalında etki alanları ve e-posta adresleri için izin verilen girişler oluşturmak üzere Microsoft 365 Defender portalını kullanma](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Eylemler & Gönderimler sayfasındaki Gönderimler** \> **sayfasına gidin**. Doğrudan **Gönderimler** sayfasına gitmek için kullanın <https://security.microsoft.com/reportsubmission>.
+
+2. **Gönderimler** sayfasında **E-postalar** sekmesinin seçili olduğunu doğrulayın.
+
+3. **E-postalar** sekmesinde Analiz için Microsoft'a gönder simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Analiz için Microsoft'a gönderin**.
+
+4. Görüntülenen **Analiz için Microsoft'a gönder** açılır öğesinde aşağıdaki bilgileri girin:
+
+   - **Gönderim türünü seçin**: **Email** değerinin seçili olduğunu doğrulayın.
+
+   - **Ağ iletisi kimliğini ekleyin veya e-posta dosyasını karşıya yükleyin**: Aşağıdaki seçeneklerden birini seçin:
+
+     - **E-posta ağ iletisi kimliğini ekleyin**: Bu, karantinaya alınan iletilerdeki **X-MS-Exchange-Organization-Network-Message-Id** üst bilgisinde veya **X-MS-Office365-Filtering-Correlation-Id** üst bilgisinde bulunan bir GUID değeridir.
+
+     - **E-posta dosyasını (.msg veya .eml) karşıya yükleyin**: **Dosyalara gözat'a** tıklayın. Açılan iletişim kutusunda .eml veya .msg dosyasını bulup seçin ve **aç'a** tıklayın.
+
+   - **Sorunu olan bir alıcı seçin**: İlke denetimini çalıştırmak istediğiniz alıcıyı belirtin. İlke denetimi, e-postanın kullanıcı veya kuruluş ilkeleri nedeniyle engellenip engellenmediğini belirler.
+
+   - **Microsoft'a göndermek için bir neden seçin**: **Engellenmemeli (Hatalı pozitif)** seçeneğini belirleyin ve ardından aşağıdaki ayarları yapılandırın:
+
+     - **Benzer özniteliklere (URL, gönderen vb.) sahip e-postalara izin ver**: Bu ayarı ![Aç..](../../media/scc-toggle-on.png).
+
+         - **İzin ver girdisini kaldır:** Varsayılan değer **30 gündür**, ancak aşağıdaki değerlerden birini seçebilirsiniz:
+           - **1 gün**
+           - **7 gün**
+           - **30 gün**
+           - **Belirli bir tarih**: En yüksek değer bugünden itibaren 30 gündür.
+
+           Sahte gönderenler için bu değer anlamsızdır çünkü sahte gönderenlerin girdilerinin süresi hiçbir zaman dolmaz.
+
+         - **Giriş notuna izin ver**: Bu e-postaya neden izin kullandığınızla ilgili isteğe bağlı bilgileri girin.
+
+           Sahte gönderenler için, buraya girdiğiniz herhangi bir değer Kiracı **İzin Ver/Engelle Listesi'ndeki** Sahte **gönderenler** sekmesindeki İzin Ver girişinde gösterilmez.
+
+   İşiniz bittiğinde **Gönder'e** ve ardından **Bitti'ye** tıklayın.
+
+   :::image type="content" source="../../media/admin-submission-email-allow.png" alt-text="Defender portalındaki Gönderimler sayfasında analiz için Microsoft'a hatalı pozitif (iyi) bir e-posta gönderin." lightbox="../../media/admin-submission-email-allow.png":::
+
+Birkaç dakika sonra İzin **Ver/Engelle Listesi** sayfasındaki **Etki Alanları & adresleri** veya **Sahte gönderenler** sekmesinde izin ver girişi görünür.
+
+> [!NOTE]
+>
+> - Sahte zeka içgörüsünde kararı geçersiz kıldığınızda, sahte gönderen yalnızca Kiracı İzin Ver/Engelle Listesi'ndeki Sahte **Gönderenler** sekmesinde görünen el ile izin ver veya engelle girdisine dönüşür.
+> - Gönderen henüz engellenmemişse, e-posta iletisinin Microsoft'a gönderilmesi Kiracı İzin Ver/Engelle Listesinde izin verme girdisi oluşturmaz.
+> - İletinin kötü amaçlı olduğunu belirleyen filtrelere bağlı olarak posta akışı sırasında izinler eklenir. Örneğin, gönderen ve iletideki bir URL'nin hatalı olduğu belirlendiyse, gönderen için bir izin girdisi oluşturulur ve URL için bir izin girdisi oluşturulur.
+> - Bu varlıkla (etki alanı veya e-posta adresi, URL, dosya) yeniden karşılaşıldığında, bu varlıkla ilişkili tüm filtreler atlanır.
+> - Posta akışı sırasında, etki alanından veya e-posta adresinden gelen iletiler filtreleme yığınında başka denetimler geçirirse, iletiler teslim edilecek. Örneğin, [e-posta kimlik doğrulaması](email-validation-and-authentication.md) geçerse, izin ver girişindeki bir gönderenden gelen bir ileti teslim edilecek.
 
 ## <a name="report-good-email-attachments-to-microsoft"></a>Microsoft'a iyi e-posta ekleri bildirin
 
-İzin verilmesi gereken engellenen e-posta eklerini (hatalı negatifler) bildirmek için bkz. [gönderimler portalındaki dosyalar için izin verilen girdiler oluşturmak üzere Microsoft 365 Defender portalını kullanma](allow-block-files.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal).
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Eylemler & Gönderimler sayfasındaki Gönderimler** \> **sayfasına gidin**. Doğrudan **Gönderimler** sayfasına gitmek için kullanın <https://security.microsoft.com/reportsubmission>.
+
+2. **Gönderiler** sayfasında **ekleri Email** sekmesini seçin.
+
+3. **Email ekler** sekmesinde Analiz için Microsoft'a Gönder simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Analiz için Microsoft'a gönderin**.
+
+4. Görüntülenen **Analiz için Microsoft'a gönder** açılır öğesinde aşağıdaki bilgileri girin:
+
+   - **Gönderim türünü seçin**: **Ekin seçili Email** değeri doğrulayın.
+
+   - **Dosya**: Dosyalara **gözat'a** tıklayarak göndermek istediğiniz dosyayı bulun ve seçin.
+
+   - **Microsoft'a göndermek için bir neden seçin**: **Engellenmemeli (Hatalı pozitif)** seçeneğini belirleyin ve ardından aşağıdaki ayarları yapılandırın:
+
+     - **Bu dosyaya izin ver**: Bu ayarı ![aç Aç.](../../media/scc-toggle-on.png).
+
+         - **İzin ver girdisini kaldır:** Varsayılan değer **30 gündür**, ancak aşağıdaki değerlerden birini seçebilirsiniz:
+           - **1 gün**
+           - **7 gün**
+           - **30 gün**
+           - **Belirli bir tarih**: En yüksek değer bugünden itibaren 30 gündür.
+
+         - **Giriş notuna izin ver**: Bu dosyaya neden izin kullandığınızla ilgili isteğe bağlı bilgileri girin.
+
+   İşiniz bittiğinde **Gönder'e** ve ardından **Bitti'ye** tıklayın.
+
+   :::image type="content" source="../../media/admin-submission-file-allow.png" alt-text="Defender portalındaki Gönderimler sayfasında analiz için Microsoft'a hatalı pozitif (iyi) bir e-posta eki gönderin." lightbox="../../media/admin-submission-file-allow.png":::
+
+Birkaç dakika sonra, **Kiracı İzin Ver/Engelle Listesi** sayfasındaki **Dosyalar** sekmesinde bir izin ver girişi görüntülenir.
+
+> [!NOTE]
+> Dosyayla yeniden karşılaşıldığında, [Güvenli Ekler](safe-attachments.md) patlama veya dosya saygınlığı denetimleri için gönderilmez ve diğer tüm dosya tabanlı filtreler atlanır. Posta akışı sırasında, dosyayı içeren iletiler filtreleme yığınında diğer dosya dışı denetimleri geçirirse, iletiler teslim edilecek.
 
 ## <a name="report-good-urls-to-microsoft"></a>Microsoft'a iyi URL'ler bildirin
 
-İzin verilmesi gereken engellenen URL'leri (hatalı negatifler) bildirmek için bkz. [gönderimler portalında URL'ler için izin verilen girişler oluşturmak üzere Microsoft 365 Defender portalını kullanma](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal).
+1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Eylemler & Gönderimler sayfasındaki Gönderimler** \> **sayfasına gidin**. Doğrudan **Gönderimler** sayfasına gitmek için kullanın <https://security.microsoft.com/reportsubmission>.
+
+2. **Gönderimler** sayfasında **URL'ler** sekmesini seçin
+
+3. **URL'ler** sekmesinde Analiz için Microsoft'a Gönder simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Analiz için Microsoft'a gönderin**.
+
+4. Görüntülenen **Analiz için Microsoft'a gönder** açılır öğesinde aşağıdaki bilgileri girin:
+
+   - **Gönderme türünü seçin**: Değer **URL'sinin** seçili olduğunu doğrulayın.
+
+   - **URL**: Tam URL'yi (örneğin, `https://www.fabrikam.com/marketing.html`) girin ve görüntülenen kutudan seçin.
+
+   - **Microsoft'a göndermek için bir neden seçin**: **Engellenmemeli (Hatalı pozitif)** seçeneğini belirleyin ve ardından aşağıdaki ayarları yapılandırın:
+
+     - **Bu URL'ye izin ver**: Bu ayarı ![aç Aç..](../../media/scc-toggle-on.png)
+
+         - **İzin ver girdisini kaldır:** Varsayılan değer **30 gündür**, ancak aşağıdaki değerlerden birini seçebilirsiniz:
+           - **1 gün**
+           - **7 gün**
+           - **30 gün**
+           - **Belirli bir tarih**: En yüksek değer bugünden itibaren 30 gündür.
+
+         - **Giriş notuna izin ver**: Bu URL'ye neden izin kullandığınızla ilgili isteğe bağlı bilgileri girin.
+
+   İşiniz bittiğinde **Gönder'e** ve ardından **Bitti'ye** tıklayın.
+
+   :::image type="content" source="../../media/admin-submission-url-allow.png" alt-text="Defender portalındaki Gönderimler sayfasında analiz için Microsoft'a hatalı pozitif (iyi) bir URL gönderin." lightbox="../../media/admin-submission-url-allow.png":::
+
+Birkaç dakika sonra, **Kiracı İzin Ver/Engelle Listesi** sayfasındaki **URL** sekmesinde bir izin ver girişi görüntülenir. Kiracı İzin Ver/Engelle Listesi hakkında daha fazla bilgi için bkz. [Kiracı İzin Ver/Engelle Listesi'nde izin verme ve bloklarınızı yönetme](manage-tenant-allow-block-list.md).
+
+> [!NOTE]
+>
+> - URL yeniden algılandığında Güvenli [Bağlantılar](safe-links.md) patlama veya URL saygınlığı denetimleri için gönderilmez ve diğer tüm URL tabanlı filtreler atlanır.
+> - Posta akışı sırasında, URL'yi içeren iletiler filtreleme yığınında URL olmayan diğer denetimleri geçirirse, iletiler teslim edilecek.
 
 ## <a name="view-email-admin-submissions-to-microsoft"></a>Microsoft'a e-posta yöneticisi gönderimlerini görüntüleme
 

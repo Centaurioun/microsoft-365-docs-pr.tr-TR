@@ -7,6 +7,8 @@
       href: 'https://go.microsoft.com/fwlink/?linkid=2197659'
     - name: Kullanmaya başlayın
       items:
+        - name: Microsoft 365 İş nedir?
+          href: ../admin/admin-overview/what-is-microsoft-365-for-business.md
         - name: Kaydolma
           href: admin-overview/sign-up-for-office-365.md
         - name: Microsoft 365'i deneme veya satın alma
@@ -21,13 +23,11 @@
               href: ../admin/simplified-signup/signup-business-standard.md
             - name: Microsoft 365 İş Standart'ı ayarlama
               href: ../admin/setup/setup-business-standard.md
-            - name: Kullanıcıları Microsoft 365 İş Standart'a davet etme
+            - name: Kullanıcıları İş için Microsoft 365 aboneliğine davet etme
               href: ../admin/simplified-signup/admin-invite-business-standard.md
-            - name: Microsoft 365 İş nedir?
-              href: ../admin/admin-overview/what-is-microsoft-365-for-business.md
-            - name: Microsoft 365 İş Standart için e-posta davetini kabul etme
+            - name: İş için Microsoft 365 aboneliğine e-posta daveti kabul etme
               href: ../admin/simplified-signup/user-invite-business-standard.md
-            - name: 'Outlook, Yahoo, Gmail veya başka bir hesap kullanarak Microsoft 365 İş Standart abonelik kuruluşuna e-posta davetini kabul etme'
+            - name: 'Outlook, Yahoo, Gmail veya başka bir hesap kullanarak iş için Microsoft 365 aboneliğine e-posta daveti kabul etme'
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: Verileri Microsoft 365 İş Standart aboneliğime geçirme
               href: ../admin/simplified-signup/migrate-data-business-standard.md
@@ -37,9 +37,11 @@
               href: setup/signup--apps-business.md
             - name: İş için Microsoft 365 Uygulamaları'nı ayarlama
               href: setup/setup-apps-for-business.md
-        - name: Microsoft 365 İş Temel’i ayarlama
+        - name: Microsoft 365 İş Temel için kaydolun
           items:
-            - name: Microsoft 365 Küçük İşletme
+            - name: Microsoft 365 İş Temel için kaydolun
+              href: setup/signup-business-basic.md
+            - name: Microsoft 365 İş Temel’i ayarlama
               href: setup/setup-business-basic.md
         - name: Kurulum sayfasını ve sihirbazı keşfetme
           href: setup/o365-setup-wizard-and-setup-page.md

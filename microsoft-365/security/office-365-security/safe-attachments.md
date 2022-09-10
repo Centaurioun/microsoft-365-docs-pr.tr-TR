@@ -20,12 +20,12 @@ ms.collection:
 description: Yöneticiler, Office 365 için Microsoft Defender'daki Güvenli Ekler özelliği hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: d8439ac6dbf9ee9dae315f4da4d5f7fd38560351
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 667d25d4647583690e2257c5ad885f2d941260c2
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614934"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644169"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Ekler
 
@@ -86,7 +86,7 @@ Bu bölümde, Güvenli Ekler ilkelerindeki ayarlar açıklanmaktadır:
   |**Devre Dışı**|Ekler, Güvenli Ekler tarafından kötü amaçlı yazılımlara karşı taranmıyor. EOP'de kötü amaçlı yazılımdan [koruma tarafından iletiler yine de kötü amaçlı yazılımlara](anti-malware-protection.md) karşı taranır.|Seçili alıcılar için taramayı kapatın. <br/><br/> İç posta yönlendirmede gereksiz gecikmeleri önleyin. <br/><br/> **Bu seçenek çoğu kullanıcı için önerilmez. Bu seçeneği yalnızca güvenilir gönderenlerden yalnızca ileti alan alıcılar için Güvenli Ekler taramasını kapatmak için kullanmalısınız. Güvenli Ekler kapatılırsa ve kötü amaçlı yazılım sinyali alınmazsa ZAP iletileri karantinaya almayacaktır. Ayrıntılar için bkz. [Sıfır saatlik otomatik temizleme](zero-hour-auto-purge.md)**|
   |**Monitör**|Ekleri olan iletileri teslim eder ve ardından algılanan kötü amaçlı yazılımla ne olduğunu izler. <br/><br/> Güvenli Eklerin taranma nedeniyle güvenli iletilerin teslimi gecikebilir.|Algılanan kötü amaçlı yazılımların kuruluşunuzda nereye gittiğini görün.|
   |**Engelle**|Algılanan kötü amaçlı yazılım eklerine sahip iletilerin teslim edilmesini engeller. <br/><br/> İletiler karantinaya alınır. Varsayılan olarak, iletileri yalnızca yöneticiler (kullanıcılar değil) gözden geçirebilir, yayımlayabilir veya silebilir.<sup>\*</sup> <br/><br/> İletilerin ve eklerin gelecekteki örneklerini otomatik olarak engeller. <br/><br/> Güvenli Eklerin taranma nedeniyle güvenli iletilerin teslimi gecikebilir.|Aynı kötü amaçlı yazılım eklerini kullanarak kuruluşunuzu tekrarlanan saldırılara karşı korur. <br/><br/> Bu varsayılan değerdir ve Standart ve Katı [önceden belirlenmiş güvenlik ilkeleri](preset-security-policies.md) için önerilen değerdir.|
-  |**Değiştirmek**|Algılanan kötü amaçlı yazılım eklerini kaldırır. <br/><br/> Alıcılara eklerin kaldırıldığını bildirir. <br/><br/>  Kötü amaçlı ekler içeren iletiler karantinaya alınır. Varsayılan olarak, iletileri yalnızca yöneticiler (kullanıcılar değil) gözden geçirebilir, yayımlayabilir veya silebilir.<sup>\*</sup> <br/><br/> Güvenli Eklerin taranma nedeniyle güvenli iletilerin teslimi gecikebilir.|Algılanan kötü amaçlı yazılım nedeniyle eklerin kaldırıldığı alıcılara görünürlük sağlayın.|
+  |**Değiştirmek**|**Not**: Bu eylem kullanım dışı bırakılacaktır. Daha fazla bilgi için bkz. [MC424901](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC424901). <br/><br/> Algılanan kötü amaçlı yazılım eklerini kaldırır. <br/><br/> Alıcılara eklerin kaldırıldığını bildirir. <br/><br/>  Kötü amaçlı ekler içeren iletiler karantinaya alınır. Varsayılan olarak, iletileri yalnızca yöneticiler (kullanıcılar değil) gözden geçirebilir, yayımlayabilir veya silebilir.<sup>\*</sup> <br/><br/> Güvenli Eklerin taranma nedeniyle güvenli iletilerin teslimi gecikebilir.|Algılanan kötü amaçlı yazılım nedeniyle eklerin kaldırıldığı alıcılara görünürlük sağlayın.|
   |**Dinamik Teslim**|İletileri hemen teslim eder, ancak Güvenli Ekler taraması tamamlanana kadar ekleri yer tutucularla değiştirir. <br/><br/> Kötü amaçlı ekler içeren iletiler karantinaya alınır. Varsayılan olarak, iletileri yalnızca yöneticiler (kullanıcılar değil) gözden geçirebilir, yayımlayabilir veya silebilir.<sup>\*</sup> <br/><br/> Ayrıntılar için, bu makalenin [devamında yer alan Güvenli Ekler ilkelerinde Dinamik Teslim](#dynamic-delivery-in-safe-attachments-policies) bölümüne bakın.|Alıcıları kötü amaçlı dosyalardan korurken ileti gecikmelerinden kaçının.|
 
   <sup>\*</sup>**Karantina ilkesi**: Yöneticiler, _kullanıcıların karantinaya alınan iletilere_ ne yapmalarına izin verildiğini tanımlayan Güvenli Ekler ilkelerinde karantina ilkeleri oluşturabilir ve atayabilir. Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md).
@@ -94,6 +94,9 @@ Bu bölümde, Güvenli Ekler ilkelerindeki ayarlar açıklanmaktadır:
 - **Algılanan ekleri olan iletileri yeniden yönlendirme**: **Yeniden yönlendirmeyi etkinleştirin** ve **Engellenen, izlenen veya değiştirilen ekleri içeren iletileri belirtilen e-posta adresine gönderin**: **Engelleme**, **İzleme** veya **Değiştirme** eylemleri için, analiz ve araştırma için belirtilen iç veya dış e-posta adresine kötü amaçlı yazılım ekleri içeren iletiler gönderin.
 
   Standart ve Katı ilke ayarları için öneri, yeniden yönlendirmeyi etkinleştirmektir. Daha fazla bilgi için bkz [. Güvenli Ekler ayarları](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
+
+  > [!NOTE]
+  > Yeniden yönlendirme yakında yalnızca **İzleyici** eylemi için kullanılabilir olacak. Daha fazla bilgi için bkz. [MC424899](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter/:/messages/MC424899).
 
 - **Tarama tamamlanamadıysa Güvenli Ekler algılama yanıtını uygulayın (zaman aşımı veya hatalar)**: **Güvenli Ekler bilinmeyen kötü amaçlı yazılım yanıtı** tarafından belirtilen eylem, Güvenli Ekler taraması tamamlanamadıklarında bile iletilere uygulanır. **Yeniden yönlendirmeyi etkinleştir'i** seçerseniz her zaman bu seçeneği belirleyin. Aksi takdirde iletiler kaybolabilir.
 

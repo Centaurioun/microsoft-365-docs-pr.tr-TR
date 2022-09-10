@@ -16,12 +16,12 @@ ms.collection:
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde URL'lere nasıl izin vereceğinizi veya url'leri nasıl engelleyebileceğinizi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: be94c967a156ac61b3fdddedf533980bb5391c43
-ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.openlocfilehash: ccfbd345edf69a1ebc0aef3bdfe5ab070659d819
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67631526"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644323"
 ---
 # <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini kullanarak URL'lere izin verme veya URL’leri engelleme
 
@@ -75,7 +75,7 @@ URL'ler için blok girdileri oluşturmak için aşağıdaki seçeneklere sahipsi
 
 ### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-submissions-portal"></a>Gönderimler portalında URL'ler için blok girişleri oluşturmak için Microsoft 365 Defender portalını kullanın
 
-URL'leri **Engellenmiş Olması Gerekir (Hatalı negatif)** olarak bildirmek için adresinde <https://security.microsoft.com/reportsubmission> Gönderimler portalını kullandığınızda, Kiracı İzin Ver/Engelle Listesi'nde URL için bir blok girişi eklemek üzere **Bu dosyayı engelle'yi** seçebilirsiniz.
+Url'leri **Engellenmiş Olması Gerektiği (Hatalı negatif)** olarak bildirmek için adresinden <https://security.microsoft.com/reportsubmission> Gönderimler portalını kullandığınızda, Kiracı İzin Ver/Engelle Listesi'ndeki **URL'ler** sekmesinde bir blok girişi eklemek için **Bu URL'yi engelle'yi** seçebilirsiniz.
 
 Yönergeler için bkz. [Sorgulanabilir URL'leri Microsoft'a bildirme](admin-submission.md#report-questionable-urls-to-microsoft).
 
@@ -114,7 +114,7 @@ Bu engellenen URL'leri içeren Email iletiler *yüksek güvenilirlikli kimlik av
 New-TenantAllowBlockListItems -ListType Url -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate <Date> | -NoExpiration> [-Notes <String>]
 ```
 
-Bu örnek, contoso.com ve tüm alt etki alanları (örneğin, contoso.com ve xyz.abc.contoso.com) için bir blok URL girişi ekler. ExpirationDate veya NoExpiration parametrelerini kullanmadığımız için girdinin süresi 30 gün sonra dolar.
+Bu örnek, URL contoso.com ve tüm alt etki alanları (örneğin, contoso.com ve xyz.abc.contoso.com) için bir blok girdisi ekler. ExpirationDate veya NoExpiration parametrelerini kullanmadığımız için girdinin süresi 30 gün sonra dolar.
 
 ```powershell
 New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
@@ -124,47 +124,12 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [New-TenantAllowBlock
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal"></a>Gönderimler portalında URL'ler için izin verme girdileri oluşturmak için Microsoft 365 Defender portalını kullanın
 
-URL izin verme girdilerini doğrudan Kiracı İzin Ver/Engelle Listesi'nde oluşturamazsınız. Bunun yerine, iletiyi hatalı pozitif olarak raporlamak için adresinde <https://security.microsoft.com/reportsubmission> Gönderimler portalını kullanırsınız. Yönetici gönderimleri hakkında daha fazla bilgi için bkz [. Şüpheli istenmeyen postaları, kimlik avı, URL'leri, engellenen meşru e-postaları ve e-posta eklerini Microsoft'a göndermek için Gönderimler portalını kullanma](admin-submission.md).
+URL izin verme girdilerini doğrudan Kiracı İzin Ver/Engelle Listesi'nde oluşturamazsınız. Bunun yerine, URL'yi hatalı pozitif olarak raporlamak için adresinden <https://security.microsoft.com/reportsubmission> Gönderimler portalını kullanırsınız ve bu da Kiracı İzin Verilen/EngellenenLer Listesi'ndeki **URL'ler** sekmesine bir izin girişi ekler.
 
-**Gönderimler** sayfasında URL'yi hatalı pozitif olarak raporlamak, Kiracı İzin Verme/Engelleme Listesi'nde URL için bir izin girişi ekler.
+Yönergeler için bkz. [İyi URL'leri Microsoft'a bildirme](admin-submission.md#report-good-urls-to-microsoft).
 
 > [!IMPORTANT]
 > Microsoft sizin için izin verme girdilerini yönettiği için, gereksiz URL izin verme girişleri kaldırılır. Bu davranış, kuruluşunuzu korur ve yanlış yapılandırılmış izin verme girdilerinin önlenmesine yardımcı olur. Karara katılmıyorsanız, URL'nin neden hala kötü kabul edildiğini saptamaya yardımcı olmak için bir destek olayı açmanız gerekebilir.
-
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Eylemler & Gönderimler sayfasındaki Gönderimler** \> **sayfasına gidin**. Doğrudan **Gönderimler** sayfasına gitmek için kullanın <https://security.microsoft.com/reportsubmission>.
-
-2. **Gönderimler** sayfasında **URL'ler** sekmesini seçin
-
-3. **URL'ler** sekmesinde Analiz için Microsoft'a Gönder simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Analiz için Microsoft'a gönderin**.
-
-4. Görüntülenen **Analiz için Microsoft'a gönder** açılır öğesinde aşağıdaki bilgileri girin:
-
-   - **Gönderme türünü seçin**: Değer **URL'sinin** seçili olduğunu doğrulayın.
-
-   - **URL**: Tam URL'yi (örneğin, `https://www.fabrikam.com/marketing.html`) girin ve görüntülenen kutudan seçin.
-
-   - **Microsoft'a göndermek için bir neden seçin**: **Engellenmemeli (Hatalı pozitif)** seçeneğini belirleyin ve ardından aşağıdaki ayarları yapılandırın:
-
-     - **Bu URL'ye izin ver**: Bu ayarı ![aç Aç..](../../media/scc-toggle-on.png)
-
-         - **İzin ver girdisini kaldır:** Varsayılan değer **30 gündür**, ancak aşağıdaki değerlerden birini seçebilirsiniz:
-           - **1 gün**
-           - **7 gün**
-           - **30 gün**
-           - **Belirli bir tarih**: En yüksek değer bugünden itibaren 30 gündür.
-
-         - **Giriş notuna izin ver**: Bu URL'ye neden izin kullandığınızla ilgili isteğe bağlı bilgileri girin.
-
-   İşiniz bittiğinde **Gönder'e** ve ardından **Bitti'ye** tıklayın.
-
-   :::image type="content" source="../../media/admin-submission-url-allow.png" alt-text="Defender portalındaki Gönderimler sayfasında analiz için Microsoft'a hatalı pozitif (iyi) bir URL gönderin." lightbox="../../media/admin-submission-url-allow.png":::
-
-5. Birkaç dakika sonra, URL izin ver girişi **Kiracı İzin Ver/Engelle Listesi** sayfasındaki **URL** sekmesinde görünür.
-
-> [!NOTE]
->
-> - URL yeniden algılandığında Güvenli [Bağlantılar](safe-links.md) patlama veya URL saygınlığı denetimleri için gönderilmez ve diğer tüm URL tabanlı filtreler atlanır.
-> - Posta akışı sırasında, URL'yi içeren iletiler filtreleme yığınında URL olmayan diğer denetimleri geçirirse, iletiler teslim edilecek.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-allow-or-block-entries-for-urls-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesindeki URL'ler için izin verme veya engelleme girdilerini görüntülemek için Microsoft 365 Defender portalını kullanın
 
@@ -218,7 +183,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-TenantAllowBlock
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-allow-or-block-entries-for-urls-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesindeki URL'ler için izin verme veya engelleme girdilerini değiştirmek için Microsoft 365 Defender portalını kullanın
 
-Kiracı İzin Ver/Engelle listesindeki bir izin ver veya engelle URL girdisini değiştirdiğinizde, yalnızca son kullanma tarihini ve notları değiştirebilirsiniz.
+Kiracı İzin Ver/Engelle listesindeki URL'ler için izin ver veya engelle girdilerini değiştirdiğinizde, yalnızca son kullanma tarihini ve notları değiştirebilirsiniz.
 
 1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**İlkeler & kuralları** \> **Tehdit İlkeleri** \> **Kuralları** bölümüne **Kiracı İzin Ver/Listeleri Engelle** bölümüne \> gidin. Ya da doğrudan **Kiracı İzin Ver/Engelle Listesi** sayfasına gitmek için kullanın <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -247,7 +212,7 @@ Kiracı İzin Ver/Engelle listesindeki bir izin ver veya engelle URL girdisini d
 Set-TenantAllowBlockListItems -ListType Url <-Ids <Identity value> | -Entries <Value value>> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
 ```
 
-Bu örnek, belirtilen blok URL'si girişinin sona erme tarihini değiştirir.
+Bu örnek, belirtilen URL için blok girişinin sona erme tarihini değiştirir.
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType Url -Entries "~contoso.com" -ExpirationDate "9/1/2022"
@@ -279,7 +244,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Set-TenantAllowBlock
 Remove-TenantAllowBlockListItems -ListType Url <-Ids <Identity value> | -Entries <Value value>>
 ```
 
-Bu örnek, belirtilen blok URL'si girişini Kiracı İzin Ver/Engelle Listesinden kaldırır.
+Bu örnek, belirtilen URL için blok girişini Kiracı İzin Ver/Engelle Listesinden kaldırır.
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType Url -Entries "~cohovineyard.com

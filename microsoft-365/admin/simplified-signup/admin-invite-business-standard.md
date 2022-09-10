@@ -1,5 +1,5 @@
 ---
-title: Kullanıcıları yeni bir Microsoft 365 İş Standart davet etme
+title: Kullanıcıları Microsoft 365 iş aboneliğine davet etme
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,82 +13,82 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-description: Kullanıcıları kuruluşa katılmaya Microsoft 365 İş Standart davet etme
-ms.openlocfilehash: bdf5c9e0f5957c07a024b14384fa825858618ba4
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: Kullanıcıları Microsoft 365 İş Standart kuruluşa katılmaya davet etme
+ms.openlocfilehash: 30896a963c3a60e3124e0d1a750bb17a44941037
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63012878"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644257"
 ---
-# <a name="invite-users-to-microsoft-365-business-standard-admin"></a>Kullanıcıları davet etme (Microsoft 365 İş Standart)
+# <a name="invite-users-to-a-microsoft-365-for-business-subscription-admin"></a>Kullanıcıları iş için Microsoft 365 aboneliğine davet etme (Yönetici)
 
 > [!IMPORTANT]
-> Bu adımlar, Microsoft 365 İş Standart ve İş için Microsoft 365 Uygulamaları.
+> Bu adımlar Microsoft 365 İş Standart, Microsoft 365 İş Temel ve İş için Microsoft 365 Uygulamaları için geçerlidir.
 
-Microsoft 365 İş Standart aboneliğinin yöneticisi olarak, iş arkadaşlarınızı ve iş arkadaşlarınızı Microsoft 365 aboneliğinizi paylaşmaya ve kullanmaya davet edebilirsiniz. İş arkadaşlarınızı ve iş arkadaşlarınızı aboneliğinize davet etmek için tüm aşağıdaki özellikleri ve hizmetleri paylaşırsınız:
+Microsoft 365 İş Standart aboneliğinin yöneticisi olarak iş arkadaşlarınızı ve iş arkadaşlarınızı microsoft 365 iş aboneliğinizi paylaşmaya ve kullanmaya davet edebilirsiniz. İş arkadaşlarınızı ve iş arkadaşlarınızı aboneliğinize davet ettiğinizde, aşağıdaki tüm özellikleri ve hizmetleri paylaşırsınız:
 
-- Outlook Office, Word, Excel, PowerPoint ve OneNote (artı olarak Access ve Publisher yalnızca PC için) gibi Publisher uygulamalarının masaüstü sürümlerini edinin.
-- Ekip çalışması için, iş yerlerinin iletişim kur olduğu bir Microsoft Teams.
-- 1 TB depolama alanı ve kullanıcı başına OneDrive depolama alanı ile dosyaları depolar ve paylaşın.
-- Beş mobil cihaz, beş tablet ve kullanıcı Office bilgisayar veya Mac bilgisayara tümüyle yüklenmiş uygulama uygulamalarını kapsayacak şekilde bir lisans kullanın.
-- Microsoft'un 24 saat telefon ve web desteği ile istediğiniz zaman yardım almak.
+- Outlook, Word, Excel, PowerPoint ve OneNote gibi Office uygulamalarının masaüstü sürümlerini edinin (ayrıca yalnızca Bilgisayar için Access ve Publisher).
+- Microsoft Teams kullanarak kişileri bağlamak için ekip çalışması için bir merkez oluşturun.
+- Kullanıcı başına 1 TB OneDrive bulut depolama alanı ile dosyaları depolayın ve paylaşın.
+- Tam yüklü Office uygulamalarını beş mobil cihazda, beş tablette ve kullanıcı başına beş pc veya Mac bilgisayarda kapsayacak şekilde bir lisans kullanın.
+- Microsoft'tan 24 saat telefon ve web desteği ile istediğiniz zaman yardım alın.
 
 > [!Note]
-> İş için İş'e Microsoft 365 (genellikle işletme sahibi) otomatik olarak kuruluşun teknik yöneticisi olur. Diğer kişilerinizi yönetici olarak ekleyebilir ve hizmetlerinizi yönetmede yardım Microsoft 365 edin. Daha fazla [bilgi için Yönetici rolleri](../add-users/assign-admin-roles.md) atama'ya bakın.
+> İşletmeler için Microsoft 365'e kaydolan kişi (genellikle işletme sahibi), otomatik olarak kuruluşun teknik yöneticisi olur. Microsoft 365 hizmetlerinizi yönetme konusunda yardım almak istiyorsanız diğer kişileri yönetici olarak ekleyebilirsiniz. Daha fazla bilgi için [Yönetici rolleri atama'ya](../add-users/assign-admin-roles.md) göz atın.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Microsoft 365 İş Standart [veya İş için Microsoft 365 Uygulamaları için](signup-business-standard.md) zaten İş için Microsoft 365 Uygulamaları. Ayrıca, İş Standartı kuruluşlarınızı [zaten ayarlamış veya](../setup/setup-business-standard.md) İş Standartı [Ayarla'ya İş için Microsoft 365 Uygulamaları](../setup/setup-apps-for-business.md). Bu adımları tamamlandıktan sonra kullanıcılarınıza bir davet paylaşabilirsiniz.
+[Microsoft 365 İş Standart veya İş için Microsoft 365 Uygulamaları için zaten kaydolmuş](signup-business-standard.md) olduğunuzdan emin olun. Ayrıca [İş Standardı kuruluşunuzu](../setup/setup-business-standard.md) veya [İş için Microsoft 365 Uygulamaları'ı ayarladığınızdan](../setup/setup-apps-for-business.md) emin olun. Bu adımları tamamladıktan sonra kullanıcılarınıza davet paylaşabilirsiniz.
 
-## <a name="share-an-invitation-to-a-microsoft-365-business-standard-subscription"></a>Microsoft 365 İş Standart aboneliğine davet paylaşma
+## <a name="share-an-invitation-to-a-microsoft-365-for-business-subscription"></a>İş için Microsoft 365 aboneliği daveti paylaşma
 
-1. Arama Microsoft 365 yönetim merkezi Kişileri davet **et'i Microsoft 365**.
+1. Microsoft 365 yönetim merkezi **Kişileri Microsoft 365'e davet et'i** seçin.
 
-2. Davet etmek istediğiniz kişilerin kullanıcı adlarını ve e-posta adreslerini ekleyin ve Gönder'i **seçin**. Seçtiğiniz tüm kullanıcılara bir davet e-postası gönderilir ve seçtiğiniz kullanıcılara kullanıcı hesabı bilgilerini bu Microsoft 365.
+2. Davet etmek istediğiniz kişilerin kullanıcı adlarını ve e-posta adreslerini ekleyin ve **Gönder'i** seçin. Kullanıcı hesabı bilgilerini Microsoft 365'e eklemek için seçtiğiniz tüm kullanıcılara bir davet e-postası gönderilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Kullanıcılarınızı izleyin ve bu abonelik paylaşımı hakkında gönderilen e-posta davetini almalarını Microsoft 365 İş Standart olun.
+Kullanıcılarınızı takip edin ve Microsoft 365 İş Standart aboneliğinizi paylaşma hakkında gönderdiğiniz e-posta davetini aldıklarını doğrulayın.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
-### <a name="i-shared-an-email-invite-but-the-user-didnt-receive-the-email"></a>Bir e-posta daveti paylaştım ancak kullanıcı e-postayı almadı mı?
+### <a name="i-shared-an-email-invite-but-the-user-didnt-receive-the-email"></a>Bir e-posta daveti paylaştım ama kullanıcı e-postayı almadı mı?
 
-- Kullanıcıdan istenmeyen posta klasörünü denetlemesini iste.
-- E-posta daveti gönder iletişim Microsoft 365 yönetim merkezi. Yönetim merkezinde, kullanıcının üzerine gelin ve e-posta daveti yeniden göndermek için eylemi seçin.
+- Kullanıcıdan istenmeyen posta klasörünü denetlemesini isteyin.
+- davet e-postasını Microsoft 365 yönetim merkezi yeniden gönderin. Yönetim merkezinde kullanıcının üzerine gelin ve e-posta davetini yeniden gönderme eylemini seçin.
 - Kullanıcınız için girdiğiniz e-posta adresinin doğru olduğundan emin olun.
 
-### <a name="how-can-i-help-an-employee-join-my-business-and-leave-another-business"></a>Bir çalışanın işletmeme katılmasına ve başka bir işletmeden ayrılmalarına nasıl yardımcı olabilirim?
+### <a name="how-can-i-help-an-employee-join-my-business-and-leave-another-business"></a>Bir çalışanın işletmeme katılmasına ve başka bir işletmeden ayrılmasına nasıl yardımcı olabilirim?
 
 Bu durumda birkaç seçenek vardır:  
 
-1. Diğer işletmenin sahibine veya yöneticisine başvurarak o işletmeden kaldırılmasını ister. Daha sonra bunları organizasyona  eklersiniz.  
+1. Diğer işletmenin sahibine veya yöneticisine başvurabilir ve bu işletmeden kaldırılmasını isteyebilirler. Daha sonra bunları kuruluşunuza ekleyebilirsiniz.  
 
-2. Aşağıdaki adımları takip edince kendilerini kaldırabilirler:
+2. Aşağıdaki adımları izleyerek kendilerini kaldırabilirler:
 
     1. https://myapps.microsoft.com/ adresine gidin.
-    2. Sign in to your account and select your profile initials.
-    3. Hesabı **görüntüle'yi** >  **seçmeY kuruluşuage kuruluşa kaydetme** > 
-    4. **LeaveOK'u** >  **seçin**.
+    2. Hesabınızda oturum açın ve profil baş harflerinizi seçin.
+    3. **Hesabı** >  görüntüle **Kuruluşları yönet Kuruluşa** > **ayrıl'ı** seçin
+    4. **Tamam Bırak'ı** >  seçin.
 
-### <a name="how-do-i-help-someone-install-microsoft-office"></a>Birinin e-Microsoft Office yüklemesi için nasıl yardımcı Microsoft Office?
+### <a name="how-do-i-help-someone-install-microsoft-office"></a>Birinin Microsoft Office'i yüklemesinde yardımcı Nasıl yaparım??
 
-Şu makaleyi onlara gönderin: PC veya MAC Office Microsoft 365 Office ya da [Office 2019'u indirip yükleyin](https://support.microsoft.com/office/download-and-install-or-reinstall-microsoft-365-or-office-2019-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658).
+Office'i yüklemelerine yardımcı olması için bu makaleyi gönderin: [Pc veya MAC'e Microsoft 365 Office veya Office 2019'u indirip yükleyin](https://support.microsoft.com/office/download-and-install-or-reinstall-microsoft-365-or-office-2019-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658).
 
-### <a name="how-do-i-meet-common-gdpr-general-data-protection-regulation-obligations-for-my-organization"></a>Kuruluşum için ortak GDPR (Genel Veri Koruma Yönetmeliği) yükümlülüklerini nasıl karşılarım?
+### <a name="how-do-i-meet-common-gdpr-general-data-protection-regulation-obligations-for-my-organization"></a>Kuruluşum için genel GDPR (Genel Veri Koruma Yönetmeliği) yükümlülüklerini Nasıl yaparım? karşılıyor?
 
-GDPR kapsamında bir çalışan veya müşteri, Microsoft bulut uygulamanıza bu bilgilerle ilgili tüm bilgileri almak veya silmek için izin alabilir. Daha fazla bilgi için Veri Konusu [İstekleri'ne göz atabilirsiniz](/compliance/regulatory/gdpr-data-subject-requests).
+GDPR kapsamında, bir çalışan veya müşteri Microsoft bulutunuzda bu kişi hakkındaki tüm bilgileri almanızı veya silmenizi isteyebilir. Daha fazla bilgi için [Bkz. Veri Sahibi İstekleri](/compliance/regulatory/gdpr-data-subject-requests).
 
-Microsoft 365 Business aboneliğinizin bir parçası olarak Microsoft buluta kaydedilmiş verileri aramak için, [https://account.microsoft.com/account/privacy](https://account.microsoft.com/account/privacy) davet etmiş olduğunuz her kullanıcıyla birlikte sizin ve davet edilen her kullanıcının, sizin gibi konumlarda veri araması için OneDrive.  Buna ek olarak, sizin (iş veya yönetici) portalında kayıtlı çalışan hesabı verilerini [aramanız Azure Active Directory.](/compliance/regulatory/gdpr-dsr-office365)
+Microsoft 365 İş aboneliğinizin bir parçası olarak Microsoft bulutunda kaydedilen verileri aramak için, sizin ve davet ettiğiniz her kullanıcının OneDrive gibi konumlardaki verileri aramak için ziyaret [https://account.microsoft.com/account/privacy](https://account.microsoft.com/account/privacy) etmeniz gerekir.  Ayrıca, sizin (işletme veya yönetici) [Azure Active Directory portalına](/compliance/regulatory/gdpr-dsr-office365) kaydedilen çalışan hesabı verilerini aramanız gerekebilir.
 
-Sizin ve diğer kullanıcıların belgeleri nasıl kayded türüne bağlı olarak, davet etmiş olduğunuz her kullanıcıyla birlikte, Windows PC veya Mac'inize, akıllı telefonlarda iş uygulamalarına ve Microsoft'a yönelik olmayan uygulama ve sitelerde kaydedilenleri keşfetmek için yerleşik arama ve silme işlevlerini kullanabilirsiniz.
+Sizin ve diğer kullanıcıların belgeleri nasıl kaydettiğine bağlı olarak, sizin ve davet ettiğiniz her kullanıcının windows bilgisayarlarınıza veya Mac'lerinize, akıllı telefonlardaki iş uygulamalarına ve Microsoft dışı uygulama ve sitelere kaydedilenleri keşfetmek için yerleşik arama ve silme işlevlerini kullanmanız gerekebilir.
 
 > [!NOTE]
-> Bir etki alanı eklenince ve siz ve kullanıcılarınız verileri Microsoft bulutuna kaydetmek için iş hesaplarını kullandıktan sonra, [GDPR ve CCPA](/compliance/regulatory/gdpr-dsr-office365) konusunda yer alan Office 365 Veri Sahibi İstekleri'nde yer alan rehbere uarak tüm kullanıcılar adına veri konusu istekleri gerçekleştirebilirsiniz.
+> Bir etki alanı eklediğinizde ve siz ve kullanıcılarınız verileri Microsoft bulutuna kaydetmek için iş hesaplarını kullandıktan sonra, [GDPR ve CCPA için Office 365 Veri Sahibi İstekleri](/compliance/regulatory/gdpr-dsr-office365) başlığı altında yer alan yönergeleri izleyerek tüm kullanıcılar adına veri sahibi istekleri gerçekleştirebilirsiniz.
 
 ## <a name="related-content"></a>İlgili içerik
 
-[E-Microsoft 365 İş Standart](../setup/setup-business-standard.md)
+[Microsoft 365 İş Standart'ı ayarlama](../setup/setup-business-standard.md)
 
-[Kullanıcı davetlerini kabul Microsoft 365 İş Standart (Kullanıcı)](user-invite-business-standard.md)
+[Microsoft 365 İş Standart daveti kabul et (Kullanıcı)](user-invite-business-standard.md)

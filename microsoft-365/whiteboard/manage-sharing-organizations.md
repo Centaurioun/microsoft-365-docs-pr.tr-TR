@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard için paylaşımı yönetmeyi öğrenin.
-ms.openlocfilehash: 53409c352a3be95a720d6ebfc0759270140c7400
-ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+ms.openlocfilehash: 2aba307ceae06639e67c8af35e2452edd648f451
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67639514"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644279"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Microsoft Whiteboard için paylaşımı yönetme
 
@@ -65,7 +65,7 @@ Bu değişikliklerin kiracınız genelinde uygulanması yaklaşık 60 dakika sü
 |Beyaz tahtayı Surface Hub'dan veya Microsoft Teams Odaları başlatma|Depolama: Azure (Whiteboard dosyaları gelecekte OneDrive İş taşınacaktır)<br><br>Sahip: Toplantı katılımcısı|Geçerli değil|Kiracı içi kullanıcılar: Başlatabilir, görüntüleyebilir ve işbirliği yapabilir<br><br>Dış kullanıcılar: Yalnızca toplantı sırasında görüntüleyebilir ve işbirliği yapabilir<br><br> Paylaşılan cihaz hesapları: Yalnızca toplantı sırasında görüntüleyebilir ve işbirliği yapabilir|
 
 > [!NOTE]
->Beyaz Tahta OneDrive'da depolanıyorsa ve zaten bir toplantıya bağlıysa, Surface Hub'da veya Microsoft Teams Odaları cihazda başlatılamaz. Başka bir cihazdaki kimliği doğrulanmış bir kullanıcının bunu yapması gerekir. Bu sorun için bir düzeltme üzerinde çalışıyoruz.
+>Beyaz Tahta OneDrive'da depolanıyorsa ve zaten bir toplantıya bağlıysa, Surface Hub'da veya Microsoft Teams Odaları cihazda başlatılamaz. Başka bir cihazdaki kimliği doğrulanmış bir kullanıcının bunu yapması gerekir. Bu işlevi gelecek bir sürümde etkinleştirmeyi planlıyoruz.
 
 
 

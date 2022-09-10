@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 İş Standart e-posta daveti kabul etme (Kullanıcı)
+title: İş için Microsoft 365 aboneliğine e-posta daveti kabul etme (Kullanıcı)
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,15 +14,18 @@ ms.collection:
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
-description: Microsoft 365 İş Standart kuruluşuna katılma daveti kabul etme
-ms.openlocfilehash: a956057d25dfe9c724441007ca30a4ecc88ad2c8
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+description: İş için Microsoft 365 kuruluşuna katılma daveti kabul etme
+ms.openlocfilehash: a1727e6c2d03a7617a986acf08c4182cbcef05dd
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086879"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644235"
 ---
-# <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>Microsoft 365 İş Standart aboneliğine e-posta daveti kabul etme (Kullanıcı)
+# <a name="accept-an-email-invitation-to-a-microsoft-365-for-business-subscription-user"></a>İş için Microsoft 365 aboneliğine e-posta daveti kabul etme (Kullanıcı)
+
+> [!IMPORTANT]
+> Bu adımlar Microsoft 365 İş Standart, Microsoft 365 İş Temel ve İş için Microsoft 365 Uygulamaları için geçerlidir.
 
 Microsoft 365 İş'i gmail, Outlook, Yahoo (veya benzeri) bir e-posta adresiyle zaten kullanıyorsanız, birisi (örneğin yöneticiniz veya işletme sahibiniz) sizi profesyonel markalı e-posta kullanmaya başlamak için Microsoft 365'i yükseltmeye davet edebilir.  Bu senaryoda, e-posta adresini değiştirip yükseltmeyi öğreneceksiniz.
 
@@ -31,9 +34,9 @@ Microsoft 365 İş'i gmail, Outlook, Yahoo (veya benzeri) bir e-posta adresiyle 
 Kullanıcıların gmail, Outlook, Yahoo veya benzer e-posta adreslerini kullanmaya devam ettiği bir kuruluşun yöneticisiyseniz ve markalı e-postayı nasıl ayarlayabileceğinizi öğrenmek istiyorsanız, bunun yerine şu adımlara göz atın: [Microsoft 365'e etki alanı ekleme](../setup/add-domain.md) ve [Kuruluşunuzu e-posta ve bulut depolama ile ayarlama](../setup/setup-business-standard.md#finish-setting-up).
 
 > [!IMPORTANT]
-> Yöneticiyseniz ve kullanıcıya Microsoft 365 İş Standart aboneliğinize davet gönderme adımlarını arıyorsanız [Kullanıcıları Microsoft 365 İş Standart davet etme (Yönetici)](admin-invite-business-standard.md) bölümüne bakın.
+> Yöneticiyseniz ve bir kullanıcıya iş için Microsoft 365 aboneliğinize davet gönderme adımlarını arıyorsanız [Kullanıcıları Microsoft 365 İş Standart davet etme (Yönetici)](admin-invite-business-standard.md) bölümüne bakın.
 
-## <a name="join-a-business-microsoft-365-business-standard-organization"></a>bir iş Microsoft 365 İş Standart kuruluşuna katılma
+## <a name="join-a-microsoft-365-for-business-organization"></a>İş için Microsoft 365 kuruluşuna katılma
 
 Bu adımları başlatmadan önce geçerli hesabınızın oturum açma ayrıntılarına sahip olduğunuzdan emin olun.
 
@@ -53,9 +56,9 @@ Bu adımları başlatmadan önce geçerli hesabınızın oturum açma ayrıntıl
 
 8. **Microsoft Teams'e yeni hesap ekle sayfasında Teams'i** ayarlama adımlarını izleyin. İşiniz **bittiğinde bitti'yi** seçin.
 
-### <a name="next-steps---migrate-your-data-to-microsoft-365-business-standard"></a>Sonraki adımlar - Verilerinizi Microsoft 365 İş Standart geçirme
+### <a name="next-steps---migrate-your-data-to-microsoft-365-for-business"></a>Sonraki adımlar - Verilerinizi İş için Microsoft 365'e geçirme
 
-OneDrive, Outlook ve Teams verilerinizi taşımak [için Verileri Microsoft 365 İş Standart aboneliğime](migrate-data-business-standard.md) geçirme bölümündeki adımları izleyin.
+OneDrive, Outlook ve Teams verilerinizi taşımak [için İş için Microsoft 365 aboneliğime veri](migrate-data-business-standard.md) geçirme bölümündeki adımları izleyin.
 
 ### <a name="no-data-to-migrate"></a>Geçirecek veri yok mu?
 
@@ -73,7 +76,7 @@ Microsoft 365 aboneliğinizi yükseltmenize yardımcı olabilecek küçük işle
 
 ### <a name="what-happens-to-my-data-and-account-when-i-upgrade"></a>Yükseltme yaptığımda verilerime ve hesabıma ne olur?
 
-Verileriniz eski hesabınızda kalır, hiçbir şey silinmez.  Eski Gmail, Outlook, Yahoo veya daha önce yaptığınız gibi başka bir e-posta hesabınızda oturum açabilirsiniz. Şimdi iş dosyalarınızı yeni iş hesabınıza taşımalısınız. Bunu nasıl yapacağınızı burada öğrenin: [Verileri Microsoft 365 İş Standart aboneliğime geçirme](migrate-data-business-standard.md).
+Verileriniz eski hesabınızda kalır, hiçbir şey silinmez.  Eski Gmail, Outlook, Yahoo veya daha önce yaptığınız gibi başka bir e-posta hesabınızda oturum açabilirsiniz. Şimdi iş dosyalarınızı yeni iş hesabınıza taşımalısınız. Bunu nasıl yapacağınızı burada öğrenin: [Verileri İş için Microsoft 365 aboneliğime geçirme](migrate-data-business-standard.md).
 
 ### <a name="how-can-i-copy-data-to-my-business-account"></a>Verileri işletme hesabıma nasıl kopyalarım?
 
@@ -82,7 +85,7 @@ Verileriniz eski hesabınızda kalır, hiçbir şey silinmez.  Eski Gmail, Outlo
 
 ### <a name="why-does-it-say-my-admin-now-handles-my-data"></a>Neden yöneticimin verilerimi işlediğini söylüyor?
 
-Yükseltilmiş bir Microsoft 365 İş hesabı kullanırken, Microsoft Office'te (ve Microsoft 365 İş Standart'deki diğer uygulamalarda) oluşturduğunuz belgeleriniz, e-postanız ve verileriniz kuruluşunuzdaki teknik yöneticiye aittir. Örneğin, size davet e-postasını gönderen kişi veya işletme sahibiniz.
+Yükseltilmiş bir Microsoft 365 İş hesabı kullanırken, Microsoft Office'te (ve iş için Microsoft 365 aboneliklerindeki diğer uygulamalarda) oluşturduğunuz belgeleriniz, e-postanız ve verileriniz kuruluşunuzdaki teknik yöneticiye aittir. Örneğin, size davet e-postasını gönderen kişi veya işletme sahibiniz.
 
 ### <a name="how-do-i-get-started-with-my-new-account"></a>Yeni hesabımı kullanmaya Nasıl yaparım??
 

@@ -17,12 +17,12 @@ search.appverid:
 description: Office 365 için Microsoft Defender çözümleri deneme playbook'u.
 ms.subservice: mdo
 ms.custom: trial-playbook
-ms.openlocfilehash: 0fcd44b3bf82e4eca1322bf1c8ceaff1613a04cd
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: cc54c427649fc98b9807522017830017f038264f
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598273"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67643861"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Deneme playbook'u: Office 365 için Microsoft Defender
 
@@ -56,7 +56,7 @@ Başlayalım!
 
 #### <a name="start-your-microsoft-defender-for-office-365-trial"></a>Office 365 için Microsoft Defender denemenizi başlatın
 
-Deneme sürümünü başlattıktan ve [kurulum işlemini](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-in-blocking-mode) tamamladıktan sonra değişikliklerin geçerli olması 2 saate kadar sürebilir.
+Deneme sürümünü başlattıktan ve [kurulum işlemini](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-or-trial-in-blocking-mode) tamamladıktan sonra değişikliklerin geçerli olması 2 saate kadar sürebilir.
 
 Ortamınızda [önceden ayarlanmış güvenlik ilkelerini](preset-security-policies.md) otomatik olarak yapılandırdık. Bu ilkeler, çoğu kullanıcı için uygun bir temel koruma profilini temsil eder. Standart koruma şunları içerir:
 
@@ -168,7 +168,7 @@ Tehditleri tanımlamak ve şüpheli iletileri Office 365 için Defender Saldır�
 
 #### <a name="start-your-defender-for-office-365-evaluation"></a>Office 365 için Defender değerlendirmenizi başlatın
 
-[Kurulum işlemini](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-in-audit-mode) tamamladıktan sonra değişikliklerin etkili olması 2 saat kadar sürebilir. Ortamınızda Önceden Belirlenmiş Değerlendirme ilkelerini otomatik olarak yapılandırdık.
+[Kurulum işlemini](try-microsoft-defender-for-office-365.md#set-up-an-evaluation-or-trial-in-audit-mode) tamamladıktan sonra değişikliklerin etkili olması 2 saat kadar sürebilir. Ortamınızda Önceden Belirlenmiş Değerlendirme ilkelerini otomatik olarak yapılandırdık.
 
 Değerlendirme ilkeleri, Office 365 için Defender tarafından algılanan e-postalarda hiçbir işlem yapılmamasını sağlar.
 
@@ -186,7 +186,7 @@ Daha fazla bilgi edinmek için bu videoyu izleyin: [Analiz için ileti gönderme
 
 Ortamınız hakkında daha fazla bilgi edinmek için Office 365 için Defender'deki raporlama özelliklerini kullanın.
 
-- [Değerlendirme panosu](try-microsoft-defender-for-office-365.md#reporting-in-audit-mode), değerlendirme sırasında Office 365 için Defender tarafından algılanan tehditlerin kolay bir görünümünü sağlar.
+- [Değerlendirme panosu](try-microsoft-defender-for-office-365.md#reports-for-audit-mode-only), değerlendirme sırasında Office 365 için Defender tarafından algılanan tehditlerin kolay bir görünümünü sağlar.
 - [Tehdit koruması durum raporuyla](view-email-security-reports.md#threat-protection-status-report) e-posta ve işbirliği araçlarına alınan tehditleri anlayın.
 
 ### <a name="step-2-intermediate-steps-in-auditing-mode"></a>2. Adım: Denetim modunda ara adımlar

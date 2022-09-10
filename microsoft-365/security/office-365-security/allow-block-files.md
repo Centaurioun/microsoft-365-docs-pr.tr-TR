@@ -16,12 +16,12 @@ ms.collection:
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde dosyalara izin verme veya dosyaları engelleme hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 61d9a3f2c1ae370183d88afce0077ecaea6a422c
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 0b2af1b8cad13c2c0a74424263e5452d45b12183
+ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497126"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67644367"
 ---
 # <a name="allow-or-block-files-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini kullanarak dosyalara izin verme veya dosyaları engelleme
 
@@ -81,7 +81,7 @@ Dosyalar için blok girdileri oluşturmak için aşağıdaki seçeneklere sahips
 
 ### <a name="use-the-microsoft-365-defender-portal-to-create-block-entries-for-files-in-the-submissions-portal"></a>Gönderimler portalında dosyalar için blok girdileri oluşturmak için Microsoft 365 Defender portalını kullanma
 
-Dosyaları **engellenmiş olmalıdır (Hatalı negatif)** olarak raporlamak için konumundaki <https://security.microsoft.com/reportsubmission> Gönderimler portalını kullandığınızda, Kiracı İzin Ver/Engelle Listesi'nde dosya için bir blok girdisi eklemek üzere **Bu dosyayı engelle'yi** seçebilirsiniz.
+Dosyaları **engellenmiş olması gerektiği (Hatalı negatif)** olarak raporlamak için adresinden <https://security.microsoft.com/reportsubmission> Gönderimler portalını kullandığınızda, Kiracı İzin Ver/Engelle Listesi'ndeki **Dosyalar** sekmesinde bir blok girdisi eklemek için **Bu dosyayı engelle'yi** seçebilirsiniz.
 
 Yönergeler için bkz. [Sorgulanabilir e-posta eklerini Microsoft'a bildirme](admin-submission.md#report-questionable-email-attachments-to-microsoft).
 
@@ -120,7 +120,7 @@ Email bu engellenen dosyaları içeren iletiler *kötü amaçlı yazılım* olar
 New-TenantAllowBlockListItems -ListType <FileHash> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
 ```
 
-Bu örnek, belirtilen dosyalar için hiçbir zaman süresi dolmamış bir blok dosyası girdisi ekler.
+Bu örnek, belirtilen dosyalar için hiçbir zaman süresi dolmamış bir blok girdisi ekler.
 
 ```powershell
 New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
@@ -130,45 +130,12 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [New-TenantAllowBlock
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-allow-entries-for-files-in-the-submissions-portal"></a>Gönderimler portalında dosyalar için izin verme girdileri oluşturmak için Microsoft 365 Defender portalını kullanın
 
-Dosyalar için izin verme girdilerini doğrudan Kiracı İzin Ver/Engelle Listesi'nde oluşturamazsınız. Bunun yerine, iletiyi hatalı pozitif olarak raporlamak için adresinde <https://security.microsoft.com/reportsubmission> Gönderimler portalını kullanırsınız. Yönetici gönderimleri hakkında daha fazla bilgi için bkz [. Şüpheli istenmeyen postaları, kimlik avı, URL'leri, engellenen meşru e-postaları ve e-posta eklerini Microsoft'a göndermek için Gönderimler portalını kullanma](admin-submission.md).
+Dosyalar için izin verme girdilerini doğrudan Kiracı İzin Ver/Engelle Listesi'nde oluşturamazsınız. Bunun yerine, ileti ekini hatalı pozitif olarak raporlamak için adresinden <https://security.microsoft.com/reportsubmission> Gönderimler portalını kullanırsınız ve bu da Kiracı İzin Ver/Engelle Listesi'ndeki **Dosyalar** sekmesine bir izin verme girdisi ekler.
 
-**Dosyayı Gönderiler** sayfasında hatalı pozitif olarak raporlamak, Kiracı İzin Ver/Engelle Listesi'nde dosya için bir izin girdisi ekler.
+Yönergeler için bkz. [Microsoft'a iyi e-posta eklerini bildirme](admin-submission.md#report-good-email-attachments-to-microsoft).
 
 > [!IMPORTANT]
 > Microsoft sizin için izin girdilerini yönettiği için, dosyalar için gereksiz izin verme girdileri kaldırılır. Bu davranış, kuruluşunuzu korur ve yanlış yapılandırılmış izin verme girdilerinin önlenmesine yardımcı olur. Karara katılmıyorsanız, bir dosyanın neden hala kötü kabul edildiğini saptamaya yardımcı olmak için bir destek olayı açmanız gerekebilir.
-
-1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**Eylemler & Gönderimler sayfasındaki Gönderimler** \> **sayfasına gidin**. Doğrudan **Gönderimler** sayfasına gitmek için kullanın <https://security.microsoft.com/reportsubmission>.
-
-2. **Gönderiler** sayfasında **ekleri Email** sekmesini seçin.
-
-3. **Email ekler** sekmesinde Analiz için Microsoft'a Gönder simgesine tıklayın![.](../../media/m365-cc-sc-create-icon.png) **Analiz için Microsoft'a gönderin**.
-
-4. Görüntülenen **Analiz için Microsoft'a gönder** açılır öğesinde aşağıdaki bilgileri girin:
-
-   - **Gönderim türünü seçin**: **Ekin seçili Email** değeri doğrulayın.
-
-   - **Dosya**: Dosyalara **gözat'a** tıklayarak göndermek istediğiniz dosyayı bulun ve seçin.
-
-   - **Microsoft'a göndermek için bir neden seçin**: **Engellenmemeli (Hatalı pozitif)** seçeneğini belirleyin ve ardından aşağıdaki ayarları yapılandırın:
-
-     - **Bu dosyaya izin ver**: Bu ayarı ![aç Aç.](../../media/scc-toggle-on.png).
-
-         - **İzin ver girdisini kaldır:** Varsayılan değer **30 gündür**, ancak aşağıdaki değerlerden birini seçebilirsiniz:
-           - **1 gün**
-           - **7 gün**
-           - **30 gün**
-           - **Belirli bir tarih**: En yüksek değer bugünden itibaren 30 gündür.
-
-         - **Giriş notuna izin ver**: Bu dosyaya neden izin kullandığınızla ilgili isteğe bağlı bilgileri girin.
-
-   İşiniz bittiğinde **Gönder'e** ve ardından **Bitti'ye** tıklayın.
-
-   :::image type="content" source="../../media/admin-submission-file-allow.png" alt-text="Defender portalındaki Gönderimler sayfasında analiz için Microsoft'a hatalı pozitif (iyi) bir e-posta eki gönderin." lightbox="../../media/admin-submission-file-allow.png":::
-
-5. Birkaç dakika sonra İzin Ver girişi **Kiracı İzin Ver/Engelle Listesi** sayfasındaki **Dosyalar** sekmesinde görünür.
-
-> [!NOTE]
-> Dosyayla yeniden karşılaşıldığında, [Güvenli Ekler](safe-attachments.md) patlama veya dosya saygınlığı denetimleri için gönderilmez ve diğer tüm dosya tabanlı filtreler atlanır. Posta akışı sırasında, dosyayı içeren iletiler filtreleme yığınında diğer dosya dışı denetimleri geçirirse, iletiler teslim edilecek.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-allow-or-block-entries-for-files-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesindeki dosyalar için izin ver veya engelle girdilerini görüntülemek için Microsoft 365 Defender portalını kullanın
 
@@ -228,7 +195,7 @@ Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-TenantAllowBlock
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-allow-or-block-entries-for-files-in-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesindeki dosyalar için izin ver veya engelle girdilerini değiştirmek için Microsoft 365 Defender portalını kullanın
 
-Kiracı İzin Ver/Engelle listesinde bir izin ver veya engelle dosya girdisini değiştirdiğinizde, yalnızca son kullanma tarihini ve notları değiştirebilirsiniz.
+Kiracı İzin Ver/Engelle listesindeki dosyalar için izin ver veya engelle girdilerini değiştirdiğinizde, yalnızca son kullanma tarihini ve notları değiştirebilirsiniz.
 
 1. konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>**İlkeler & kuralları** \> **Tehdit İlkeleri** \> **Kuralları** bölümüne **Kiracı İzin Ver/Listeleri Engelle** bölümüne \> gidin. Ya da doğrudan **Kiracı İzin Ver/Engelle Listesi** sayfasına gitmek için kullanın <https://security.microsoft.com/tenantAllowBlockList>.
 
