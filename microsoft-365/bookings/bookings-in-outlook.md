@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: Başkalarının Outlook'ta sizinle toplantı zamanlamasına izin vermek için Bookings'i benimle birlikte kullanın.
-ms.openlocfilehash: 5de348a45ca7e38d6ee20cdcce4137247c63bfd7
-ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
+ms.openlocfilehash: 44993db5aee7a322bb6cdfdc6afd5e08084a365c
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67623569"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648669"
 ---
 # <a name="bookings-with-me"></a>Benimle Bookings
 
@@ -25,9 +25,9 @@ Outlook'ta **benimle yapılan rezervasyonlar**, Outlook takviminizdeki serbest/m
 
 Benimle yapılan rezervasyonların iki farklı görünümü var:
 
-- **Düzenleyici görünümü** Başkalarının sizinle rezervasyon yapabilecekleri toplantı türleri oluşturabileceğiniz kişisel bir rezervasyon sayfası. Özel toplantı türleri, toplantı yapmak istediğiniz zamanları ve bu toplantı türünün başkalarıyla nasıl paylaşıldığını özelleştirmenizi sağlar. Her toplantı türünün zamanlama sayfanızda genel mi yoksa özel mi olduğunu ve yalnızca belirli bir kişi grubu tarafından erişilip erişilemeyeceğini denetlersiniz. Ayrıca Benimle Rezervasyonlar sayfanız aracılığıyla rezervasyonu yapılan tüm toplantılara bir Teams toplantısı eklemeyi de seçebilirsiniz. Benimle Bookings sayfanıza Web üzerinde Outlook üzerinden erişebilirsiniz. Sayfanızı ayarladıktan ve yayımladıktan sonra başkalarıyla paylaşabilirsiniz. Örneğin, outlook imzanıza ekleyebilirsiniz.
+- [Benimle rezervasyonlar: kurulum ve paylaşım](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2) Başkalarının sizinle rezervasyon yapabilecekleri toplantı türleri oluşturabileceğiniz kişisel bir rezervasyon sayfası. Özel toplantı türleri, toplantı yapmak istediğiniz zamanları ve bu toplantı türünün başkalarıyla nasıl paylaşıldığını özelleştirmenizi sağlar. Her toplantı türünün zamanlama sayfanızda genel mi yoksa özel mi olduğunu ve yalnızca belirli bir kişi grubu tarafından erişilip erişilemeyeceğini denetlersiniz. Ayrıca Benimle Rezervasyonlar sayfanız aracılığıyla rezervasyonu yapılan tüm toplantılara bir Teams toplantısı eklemeyi de seçebilirsiniz. Benimle Bookings sayfanıza Web üzerinde Outlook üzerinden erişebilirsiniz. Sayfanızı ayarladıktan ve yayımladıktan sonra başkalarıyla paylaşabilirsiniz. Örneğin, outlook imzanıza ekleyebilirsiniz.
 
-- **Katılımcı görünümü** Bookings'ler sayfanızı başkalarıyla paylaştığınızda katılımcılar görünümüne bakacaktır. Düzenleyici, Bookings sayfasını sizinle paylaştıysa tüm genel toplantı türlerini görebilirsiniz. Düzenleyici bir toplantı bağlantısı paylaştıysa, yalnızca bu toplantıyı görüntüleyebilirsiniz.
+- [Katılımcı görünümü](https://support.microsoft.com/office/select-a-meeting-time-in-bookings-with-me-8f3bbe5b-4bc6-4073-bf61-57383c00b43a) Bookings'ler sayfanızı başkalarıyla paylaştığınızda katılımcılar görünümüne bakacaktır. Düzenleyici, Bookings sayfasını sizinle paylaştıysa tüm genel toplantı türlerini görebilirsiniz. Düzenleyici bir toplantı bağlantısı paylaştıysa, yalnızca bu toplantıyı görüntüleyebilirsiniz.
   - Genel toplantılar, Bookings with me sayfa bağlantısına sahip olan herkes tarafından görüntülenebilir ve zamanlanabilir. Bu bağlantıyı kimlerle paylaştığınız sizin denetiminizdedir. Tüm genel toplantı türleri, Bookings with me sayfa bağlantısına sahip olan herkes tarafından görülebilir.
   - Özel toplantılar yalnızca bu toplantı türü için bağlantıya sahip kişiler tarafından görüntülenebilir. Genel toplantılar ile özel toplantılar arasındaki fark, özel toplantıların farklı bağlantılara sahip olması ve bağlantıların süresinin 90 gün sonra dolmasıdır. Ayrıca, tek seferlik bir rezervasyondan sonra özel bağlantıların süresinin dolmasına da ayarlayabilirsiniz. Özel bir toplantının zamanlama görünümüne erişirken yalnızca bu toplantı türü görünür.
 
@@ -221,13 +221,13 @@ Benimle yapılan rezervasyonlar, dünya çapındaki tüm kurumsal kullanıcılar
 
 ### <a name="who-can-access-my-public-bookings-page"></a>Genel Bookings sayfama kimler erişebilir?
 
-Ortak toplantı türlerine Bookings with me sayfa adresinize sahip olan herkes erişebilir. Bookings sayfa adresinizi kimlerle paylaştığınıza siz karar verin.
+Ortak toplantı türlerine Bookings with me sayfa adresinize sahip olan herkes erişebilir. Bookings sayfa adresinizi kimlerle paylaştığınıza siz karar verin. Daha fazla bilgi için bkz. [Bookings'te benimle toplantı saati seçme](https://support.microsoft.com/office/select-a-meeting-time-in-bookings-with-me-8f3bbe5b-4bc6-4073-bf61-57383c00b43a).
 
 ### <a name="what-is-the-difference-between-public-and-private-meeting-types"></a>Genel ve özel toplantı türleri arasındaki fark nedir?
 
 Toplantı türleri genel veya özel olabilir. Genel toplantı türleri, Bookings sayfa bağlantınızı paylaştığınız herkes tarafından kullanılabilir. Özel toplantı türleri yalnızca bireysel özel toplantı türünü paylaştığınız kişiler tarafından kullanılabilir.  
 
-Özel toplantı türleri tek kullanımlık bağlantılar da oluşturabilir. Tek kullanımlık bağlantıların süresi ilk rezervasyondan sonra sona erer.
+Özel toplantı türleri tek kullanımlık bağlantılar da oluşturabilir. Tek kullanımlık bağlantıların süresi ilk rezervasyondan sonra sona erer. Daha fazla bilgi için bkz [. Bookings'i benimle toplantı türleriyle ayarlama](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2).
 
 ### <a name="do-people-need-to-have-a-microsoft-account-or-bookings-license-to-schedule-time-with-me"></a>İnsanların benimle zaman zamanlamak için bir Microsoft hesabına veya Bookings lisansına sahip olması gerekiyor mu?
 

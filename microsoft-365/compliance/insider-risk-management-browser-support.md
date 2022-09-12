@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: d70c5a568e1b694229f3c2f1ba11fe9a2be807f6
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 20501814ccf87cfbbda6080b60515be374516cd2
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634191"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648625"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection"></a>Insider risk yönetimi tarayıcısı sinyal algılama hakkında bilgi edinin ve yapılandırın
 
@@ -30,6 +30,7 @@ Web tarayıcıları genellikle kullanıcılar tarafından bir kuruluştaki hem h
 - Yerel veya ağ cihazlarına yazdırılan dosyalar
 - Ağ paylaşımına aktarılan veya kopyalanan dosyalar
 - USB cihazlarına kopyalanan dosyalar
+- Riskli web sitelerine göz atma
 
 Bu olaylara yönelik sinyaller Microsoft Edge'de yerleşik tarayıcı özellikleri ve *Microsoft Uyumluluk Uzantısı* eklentisi kullanılarak algılanmıştır. Google Chrome'da müşteriler sinyal algılama için *Microsoft Uyumluluk Uzantısı'nı* kullanır.
 
@@ -41,6 +42,7 @@ Aşağıdaki tabloda, her tarayıcı için algılanan etkinlikler ve uzantı des
 | Yerel veya ağ cihazlarına yazdırılan dosyalar      | Yerel             | Uzantısı         |
 | Ağ paylaşımına aktarılan veya kopyalanan dosyalar | Uzantısı          | Uzantısı         |
 | USB cihazlarına kopyalanan dosyalar                    | Uzantısı          | Uzantısı         |
+| Riskli web sitelerine göz atma                        | Uzantısı          | Uzantısı         |
 
 ## <a name="common-requirements"></a>Yaygın gereksinimler
 
@@ -52,18 +54,22 @@ Microsoft Edge eklentisini veya Google Chrome uzantısını yüklemeden önce m�
 
 Belirli tarayıcı yapılandırma gereksinimleri için bu makalenin devamında yer alan Microsoft Edge ve Google Chrome bölümlerine bakın.
 
+## <a name="additional-requirements"></a>Ek gereksinimler
+
+*Riskli tarayıcı kullanım* şablonunu temel alan ilkeler kullanıyorsanız **, Insider risk yönetimi** > **Ayarları** > **İlke göstergelerinde** en az bir *Gözatma göstergesi* seçilmelidir.
+
 ## <a name="configure-browser-signal-detection-for-microsoft-edge"></a>Microsoft Edge için tarayıcı sinyali algılamayı yapılandırma
 
 ### <a name="microsoft-edge-browser-requirements"></a>Microsoft Edge tarayıcı gereksinimleri
 
 - Ortak gereksinimleri karşılama
-- Microsoft Edge x64, 91.0.864.41 veya üzeri
-- *Microsoft Uyumluluk Uzantısı* eklentisi sürüm 1.0.0.44 veya üzeri
+- En son Microsoft Edge x64, sürüm (91.0.864.41 veya üzeri)
+- En son *Microsoft Uyumluluk Uzantısı* eklentisi (1.0.0.44 veya üzeri)
 - Edge.exe, izin verilmeyen bir tarayıcı olarak yapılandırılmadı
 
 ### <a name="option-1-basic-setup-recommended-for-testing-with-edge"></a>Seçenek 1: Temel kurulum (Edge ile test için önerilir)
 
-Tarayıcı sinyal algılamayı test ederken kuruluşunuzdaki her cihaz için tek makineli selfhost yapılandırmak için bu seçeneği kullanın.
+Tarayıcı sinyali algılamayı test ederken kuruluşunuzdaki her cihaz için tek bir makine selfhost yapılandırmak için bu seçeneği kullanın.
 
 Temel kurulum seçeneği için aşağıdaki adımları tamamlayın:
 
@@ -120,7 +126,7 @@ Google Chrome için Insider risk yönetimi tarayıcısı sinyal algılama deste�
 
 - Yaygın gereksinimleri karşılama
 - Google Chrome x64'ün en son sürümü
-- *Microsoft Uyumluluk Uzantısı* sürüm 2.0.0.183 veya üzeri
+- En son *Microsoft Uyumluluk Uzantısı* sürümü (2.0.0.183 veya üzeri)
 - Chrome.exe, izin verilmeyen bir tarayıcı olarak yapılandırılmadı
 
 ### <a name="option-1-basic-setup-recommended-for-testing-with-chrome"></a>1. Seçenek: Temel kurulum (Chrome ile test için önerilir)

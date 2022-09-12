@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: db99267bc7d55e6e069e984dc4b419ed379fd088
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 5b82aa83a790a96f8196f89f75f2aaf905fc0a14
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787220"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648713"
 ---
 # <a name="learn-about-insider-risk-management"></a>İçeriden risk yönetimi hakkında daha fazla bilgi edinme
 
@@ -169,7 +169,7 @@ Kullanıcılar kuruluşta kendi istekleriyle veya sonlandırmanın bir sonucu ol
 - [Öncelikli kullanıcılara göre veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Bozuk kullanıcılar tarafından veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 
-## <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Kasıtlı veya kasıtsız güvenlik ilkesi ihlalleri (önizleme)
+### <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Kasıtlı veya kasıtsız güvenlik ilkesi ihlalleri (önizleme)
 
 Kullanıcılar genellikle cihazlarını modern çalışma alanında yönetirken büyük ölçüde denetime sahiptir. Bu denetim, görevlerinin performansında gereken uygulamaları yükleme veya kaldırma izinlerini veya cihaz güvenlik özelliklerini geçici olarak devre dışı bırakma özelliğini içerebilir. Bu etkinliğin yanlışlıkla, yanlışlıkla veya kötü amaçlı olması fark etmeksizin, bu davranış kuruluşunuz için risk oluşturabilir ve en aza indirmek için tanımlamak ve harekete geçmek önemlidir. Aşağıdaki insider risk yönetimi güvenlik ilkesi ihlal şablonları, bu riskli güvenlik etkinliklerini tanımlamaya yardımcı olmak için güvenlik riski göstergelerini puanlar ve güvenlikle ilgili etkinliklere yönelik içgörüler sağlamak için Uç Nokta için Microsoft Defender uyarılarını kullanır:
 
@@ -178,25 +178,31 @@ Kullanıcılar genellikle cihazlarını modern çalışma alanında yönetirken 
 - [Öncelikli kullanıcılara göre güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Dağıtılmamış kullanıcıların güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
-## <a name="policies-for-users-based-on-position-access-level-or-risk-history-preview"></a>Kullanıcılar için konum, erişim düzeyi veya risk geçmişine dayalı ilkeler (önizleme)
+### <a name="policies-for-users-based-on-position-access-level-or-risk-history-preview"></a>Kullanıcılar için konum, erişim düzeyi veya risk geçmişine dayalı ilkeler (önizleme)
 
 Kuruluşunuzdaki kullanıcılar konumlarına, hassas bilgilere erişim düzeylerine veya risk geçmişine bağlı olarak farklı risk düzeylerine sahip olabilir. Bu yapı, kuruluşunuzun yönetici liderlik ekibinin üyelerini, kapsamlı veri ve ağ erişim ayrıcalıklarına sahip BT yöneticilerini veya geçmişte riskli etkinlikler geçmişi olan kullanıcıları içerebilir. Bu durumlarda daha yakın inceleme ve daha agresif risk puanlaması, araştırma ve hızlı işlem için uyarıların ortaya konulmalarına yardımcı olmak için önemlidir. Bu tür kullanıcılar için riskli etkinlikleri tanımlamaya yardımcı olmak için, aşağıdaki ilke şablonlarından öncelikli kullanıcı grupları oluşturabilir ve ilkeler oluşturabilirsiniz:
 
 - [Öncelikli kullanıcılara göre güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Öncelikli kullanıcılara göre veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 
-## <a name="healthcare-preview"></a>Healthcare (önizleme)
+### <a name="healthcare-preview"></a>Healthcare (önizleme)
 
 Sağlık sektöründeki kuruluşlar için yapılan son çalışmalar, insider ile ilgili veri ihlallerinin çok yüksek oranda olduğunu tespit etti. Hasta verilerinin ve sağlık kaydı bilgilerinin kötüye kullanımını algılamak, hasta gizliliğini korumanın ve Sağlık Sigortası Taşınabilirlik ve Sorumluluk Yasası (HIPAA) ve Ekonomik ve Klinik Sağlık için Sağlık Bilgi Teknolojisi (HITECH) Yasası gibi uyumluluk düzenlemelerine uymanın kritik bir bileşenidir. Hasta verilerinin kötüye kullanılması, ayrıcalıklı hasta kayıtlarına erişmekten kötü amaçlı olarak aile veya komşulardan gelen hastaların kayıtlarına erişmeye kadar değişebilir. Aşağıdaki insider risk yönetimi ilkesi şablonları, bu tür riskli etkinliklerin kimliğini belirlemeye yardımcı olmak için Microsoft 365 HR bağlayıcısını ve sağlık hizmetlerine özgü bir veri bağlayıcısını kullanarak elektronik ısı kaydı (EHR) sistemlerinizde oluşabilecek davranışlarla ilgili risk göstergelerini puanlamaya başlar:
 
 - [Genel hasta verilerini kötüye kullanma (önizleme)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 
-## <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Dağıtılmamış kullanıcıların eylemleri ve davranışları (önizleme)
+### <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Dağıtılmamış kullanıcıların eylemleri ve davranışları (önizleme)
 
 Çalışma stresi olayları, kullanıcı davranışını insider riskleriyle ilgili çeşitli şekillerde etkileyebilir. Bu stresörler kötü bir performans incelemesi, konum indirgeme veya performans gözden geçirme planına yerleştirilen kullanıcı olabilir. Kullanıcıların çoğu bu olaylara kötü amaçlı olarak yanıt vermese de, bu eylemlerin stresi bazı kullanıcıların normal koşullarda normalde dikkate almayabilecekleri şekilde davranmalarına neden olabilir. Aşağıdaki insider risk yönetimi ilkesi şablonları, bu tür riskli etkinlikleri tanımlamaya yardımcı olmak için Microsoft 365 HR bağlayıcısını kullanır ve istihdam stresi olayları yakınlarında oluşabilecek davranışlarla ilgili risk göstergelerini puanlama işlemini başlatır:
 
 - [Bozuk kullanıcılar tarafından veri sızıntıları (önizleme)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Dağıtılmamış kullanıcıların güvenlik ilkesi ihlalleri (önizleme)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+
+### <a name="risky-browser-usage-that-could-result-in-a-security-incident-preview"></a>Güvenlik olayına neden olabilecek riskli tarayıcı kullanımı (önizleme)
+
+Çoğu kuruluş, kullanıcılara bir kuruluşun cihazlarının ve İnternet erişiminin nasıl kullanılması gerektiğini netleştiren kurallar ve yönergeler sağlar. Bu ilkeler hem kuruluşun hem de kullanıcıların güvenlik ve mevzuat risklerinden korunmasına yardımcı olur. Aşağıdaki insider risk yönetimi ilkesi şablonu, bu tür riskli eylemlerin kimliğini belirlemeye yardımcı olmak için, kötü amaçlı yazılım veya korsanlık araçları sağlayan siteleri ziyaret etme gibi bir veri güvenliği olayına neden olabilecek web gözatma davranışları için risk puanlamanın algılanıp etkinleştirilmesine yardımcı olabilir.
+
+- [Genel riskli tarayıcı kullanımı (önizleme)](insider-risk-management-policies.md#general-risky-browser-usage-preview)
 
 ## <a name="ready-to-get-started"></a>Başlamaya hazır mısınız?
 

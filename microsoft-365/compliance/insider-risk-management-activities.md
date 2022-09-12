@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 53b56c8e96beb3e68c56fd968ac87e58994bc2ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7f2a2f40d79db0fd344ca2a78f09840fd39939c8
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622975"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648735"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Insider risk yönetimi etkinliklerini araştırma
 
@@ -141,6 +141,7 @@ Bu sekme, kullanıcının uyarı etkinliği için risk faktörlerinin özetini a
 - **Öncelik içeriği**: Öncelik içeriğiyle ilişkili etkinlikleri görüntüler.
 - **İzin verilmeyen etki alanları**: İzin verilmeyen etki alanlarıyla ilişkili olayların etkinliklerini görüntüler.
 - **Sistem durumu kaydı erişimi: Sistem** durumu kayıtlarına erişimle ilişkili olayların etkinliklerini görüntüler.
+- **Riskli tarayıcı kullanımı**: Uygunsuz olabilecek web sitelerine göz atmayla ilişkili olaylara yönelik etkinlikleri görüntüler.
 
 Bu filtrelerle yalnızca bu risk faktörlerine sahip uyarıları görürsünüz, ancak uyarı oluşturan etkinlik bu kategorilerden hiçbirine girmeyebilir. Örneğin, kullanıcı bir USB cihazına dosya kopyaladığından, sıra etkinliklerini içeren bir uyarı oluşturulmuş olabilir.
 
@@ -161,7 +162,7 @@ Bu sekme Etkinlik gezginini açar. Daha fazla bilgi için bu makaledeki Etkinlik
 1. **Zaman filtreleri**: Varsayılan olarak, Kullanıcı etkinlik grafiğinde görüntülenen etkinliklerin son üç ayıdır. Kabarcık grafiğinde *6 Ay*, *3 Ay* veya *1 Ay* sekmelerini seçerek grafik görünümünü kolayca filtreleyebilirsiniz.
 2. **Risk uyarısı etkinliği ve ayrıntıları**: Risk etkinlikleri, Kullanıcı etkinlik grafiğinde renkli kabarcıklar olarak görsel olarak görüntülenir. Kabarcıklar farklı risk kategorileri ve için oluşturulur. Her risk etkinliğinin ayrıntılarını görüntülemek için bir kabarcık seçin. Ayrıntılar şunlardır:
     - Risk etkinliğinin **tarihi**.
-    - **Risk etkinliği kategorisi**. Örneğin, *SharePoint Online'dan indirilen* *kuruluş veya Dosyalar dışında gönderilen ekleri içeren e-postalar*.
+    - **Risk etkinliği kategorisi**. Örneğin, Email ve *sharepoint online'dan indirilen* *dosya veya kuruluş dışına gönderilen ekleri* içerir.
     - Uyarı için **risk puanı**. Bu puan, uyarı riski önem düzeyi için sayısal puandır.
     - Uyarıyla ilişkili olay sayısı. Risk etkinliğiyle ilişkili her dosyaya veya e-postaya bağlantılar da sağlanır.
 3. **Filtreler ve sıralama (önizleme)**:
@@ -202,6 +203,7 @@ Aşağıdaki alanlara yönelik etkinlikleri ve içgörüleri görüntülemek ve 
   - Sıra etkinlikleri
   - Kümülatif sızdırma etkinlikleri
   - Sistem durumu kaydı erişim etkinlikleri
+  - Riskli tarayıcı kullanımı
 
 ![Insider risk yönetimi etkinlik gezginine genel bakış.](../media/insider-risk-activity-explorer.png)
 
@@ -274,4 +276,4 @@ Modern çalışma alanı kullanıcıları genellikle zamanlarında çok çeşitl
 
 - **Analist ve araştırmacı çalışmalarını öncelikle en yüksek risk uyarılarına odakla**. İlkelerinize bağlı olarak, risk azaltma çabalarınızı farklı derecelerde etkileyebilecek etkinlikleri yakalayıyor ve uyarılar oluşturuyor olabilirsiniz. Uyarıları önem derecesine göre [filtreleyin](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) ve *Yüksek önem derecesi* uyarılarının önceliklerini belirleyin.
 - **Kullanıcıları analist ve araştırmacı olarak atayın**. Doğru kullanıcıya uygun roller atanmak, insider risk uyarısı gözden geçirme sürecinin önemli bir parçasıdır. *Insider Risk Yönetimi Analistleri ve Insider Risk Yönetimi Araştırmacıları* rol gruplarına uygun kullanıcıları *atadığınızdan* emin olun.  
-- **En yüksek risk etkinliklerini keşfetmeye yardımcı olmak için otomatik insider risk özelliklerini kullanın**. Insider risk yönetimi [dizisi algılama](insider-risk-management-policies.md#sequence-detection) ve [kümülatif sızdırma algılama](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) özellikleri, kuruluşunuzdaki riskleri bulmanın daha zor olduğunu hızla keşfetmenize yardımcı olabilir. [Risk puanı artırıcılarınızı](insider-risk-management-settings.md#indicators), [dosya türü dışlamalarınızı](insider-risk-management-settings.md#file-type-exclusions), [etki alanlarınızı](insider-risk-management-settings.md#domains) ve ilkeleriniz için minimum [gösterge eşiği ayarlarını](insider-risk-management-settings.md#indicator-level-settings-preview) ince ayarlamayı göz önünde bulundurun.
+- **En yüksek risk etkinliklerini keşfetmeye yardımcı olmak için otomatik insider risk özelliklerini kullanın**. Insider risk yönetimi [dizisi algılama](insider-risk-management-policies.md#sequence-detection-preview) ve [kümülatif sızdırma algılama](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) özellikleri, kuruluşunuzdaki riskleri bulmanın daha zor olduğunu hızla keşfetmenize yardımcı olabilir. [Risk puanı artırıcılarınızı](insider-risk-management-settings.md#indicators), [dosya türü dışlamalarınızı](insider-risk-management-settings.md#file-type-exclusions), [etki alanlarınızı](insider-risk-management-settings.md#domains) ve ilkeleriniz için minimum [gösterge eşiği ayarlarını](insider-risk-management-settings.md#indicator-level-settings-preview) ince ayarlamayı göz önünde bulundurun.

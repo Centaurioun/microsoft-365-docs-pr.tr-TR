@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: c85d126d92e27080d1e38f9b25deed1108eb0ea9
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: f000ece5715667b07222d31a9e131fed3eab552f
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306668"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648691"
 ---
 # <a name="get-started-with-insider-risk-management"></a>İçeriden risk yönetimini kullanmaya başlama
 
@@ -247,7 +247,7 @@ Güvenlik ihlali ilkeleri oluşturursanız, kuruluşunuzda Uç Nokta için Micro
     - [Dosya türü dışlamaları](insider-risk-management-settings.md#file-type-exclusions)
     - [Olağan dışı etkinlikler için puanı artırmak için en az günlük etkinlik sayısı](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
     - [Uyarı ses düzeyi](insider-risk-management-settings.md#alert-volume)
-    - [Uyarı durumunu Uç Nokta için Microsoft Defender](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
+    - [Uyarı durumunu Uç Nokta için Microsoft Defender](insider-risk-management-settings.md#microsoft-defender-for-endpoint-alert-statuses-preview)
     - [Etki alanı ayarları](insider-risk-management-settings.md#domains)
 6. **Uyarıları dışarı aktar** sayfasında, gerekirse Office 365 Yönetimi API'lerini kullanarak insider risk uyarısı bilgilerinin dışarı aktarılabilmesini sağlayın.
 7. **Öncelik kullanıcı grupları** sayfasında, bir öncelik kullanıcı grubu oluşturun ve **3. Adımda** oluşturulmadıysa kullanıcıları ekleyin.
@@ -312,6 +312,7 @@ Insider risk yönetimi ilkeleri atanmış kullanıcıları içerir ve uyarılar 
 
     En az bir *Office* veya *Cihaz* göstergesi seçtiyseniz **, Risk puanı güçlendiricilerini** uygun şekilde seçin. Risk puanı güçlendiricileri yalnızca seçili göstergeler için geçerlidir.
     *Veri hırsızlığı* veya *Veri sızıntıları* ilke şablonu seçtiyseniz, ilkeye uygulanacak bir veya daha fazla **Sıra algılama** yöntemi ve **bir Kümülatif sızdırma algılama** yöntemi seçin.
+    *Riskli tarayıcı kullanım* ilkesi şablonunu seçtiyseniz **Gözatma göstergelerinden** birini veya daha fazlasını seçin.
 
 20. Devam etmek için **İleri'yi** seçin.
 21. **Varsayılan veya özel gösterge eşiklerini kullanmaya karar ver** sayfasında, seçtiğiniz ilke göstergeleri için özel veya varsayılan eşikleri seçin. **Tüm göstergeler için varsayılan eşikleri kullan'ı** veya Seçili ilke göstergeleri için **özel eşikler belirtin'i** seçin. Özel eşikleri belirtin'i seçtiyseniz, her ilke göstergesi için istenen etkinlik uyarı düzeyini oluşturmak için uygun düzeyi seçin.

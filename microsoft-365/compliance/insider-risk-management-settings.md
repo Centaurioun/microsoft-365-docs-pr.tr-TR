@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 50eab9a7cf521258119597f10a1e2d27d49192d0
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 30804601a463a47f2c11b0d8054a2435acdca486
+ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67472468"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67648757"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Insider risk yönetimi ayarlarını kullanmaya başlama
 
@@ -200,7 +200,7 @@ Insider risk ilkeleri tarafından algılanan kullanıcı etkinliklerine, uyarı 
 - **Varsayılan birim**: Tüm yüksek önem dereceli uyarıları ve dengeli miktarda orta ve düşük önem derecesi uyarılarını görürsünüz.
 - **Daha fazla uyarı**: Tüm orta ve yüksek önem dereceli uyarıları ve en düşük önem derecesi uyarılarını görürsünüz. Bu ayar düzeyi daha fazla hatalı pozitif sonuç verebilir.
 
-### <a name="microsoft-defender-for-endpoint-preview"></a>Uç Nokta için Microsoft Defender (önizleme)
+### <a name="microsoft-defender-for-endpoint-alert-statuses-preview"></a>Uyarı durumlarını Uç Nokta için Microsoft Defender (önizleme)
 
 [Uç Nokta için Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), kurumsal ağların gelişmiş tehditleri engellemesine, algılamasına, araştırmasına ve yanıtlamasına yardımcı olmak için tasarlanmış bir kurumsal uç nokta güvenlik platformudur. Kuruluşunuzdaki güvenlik ihlallerini daha iyi görmek için, insider risk yönetimi güvenlik ihlali ilke şablonlarından oluşturulan ilkelerde kullanılan etkinlikler için Uç Nokta için Defender uyarılarını içeri aktarabilir ve filtreleyebilirsiniz.
 
@@ -236,6 +236,72 @@ Aşağıdaki etki alanı ayarlarının her biri için en fazla 500 etki alanı g
     Ayarlarda izin verilen etki alanları belirtildiğinde, bu etki alanlarıyla yapılan bu etkinlik, iç kuruluş etkinliğinin nasıl ele alındıklarına benzer şekilde değerlendirilir. Örneğin, buraya etkinliklerle eşlenen etki alanları, kuruluşunuzun dışındaki biriyle (gmail.com adresi olan birine e-posta göndermek gibi) içerik paylaşmayı içerebilir.
 
 - **Üçüncü taraf etki alanları:** Kuruluşunuz iş amacıyla (bulut depolama gibi) üçüncü taraf etki alanları kullanıyorsa, cihaz göstergesiyle ilgili etkinlik uyarıları alabilmeniz için bunları buraya ekleyin. *Üçüncü taraf bir siteden içerik indirmek için tarayıcı kullanın*.
+
+### <a name="file-path-exclusions"></a>Dosya yolu dışlamaları
+
+Hariç tutulacak dosya yolları tanımlanarak, belirli göstergelerle eşleyen ve bu dosya yolu konumlarında gerçekleşen kullanıcı etkinlikleri ilke uyarıları oluşturmaz. Bazı örnekler, dosyaları bir sistem klasörüne veya ağ paylaşımı yoluna kopyalamak veya taşımaktır. Dışlamak için en fazla 500 dosya yolu girebilirsiniz.
+
+Dışlamak üzere dosya yolları eklemek için aşağıdaki adımları tamamlayın:
+
+1. Uyumluluk portalında **Insider risk yönetimi** > **Ayarları** > **Akıllı algılamalar'a** gidin. 
+2. **Dosya yolu dışlama** bölümünde **Dışlamak için dosya yolları ekle'yi** seçin.
+3. **Dosya yolu ekle** bölmesinde, risk puanlamadan dışlamak için tam bir ağ paylaşımı veya cihaz yolu girin. Ayrıca hariç tutulacak belirli klasörleri ve alt klasörleri belirtmek için * ve *([0-9]) kullanabilirsiniz.
+4. Dosya yolu dışlamalarını yapılandırmak için Hariç tutulacak dosya **yolları ekle'yi** veya değişiklikleri atmak için **Kapat'ı** seçin. 
+
+Dosya yolu dışlamasını silmek için dosya yolu dışlamasını seçin ve **Sil'i** seçin.
+
+### <a name="default-file-path-exclusions"></a>Varsayılan dosya yolu dışlamaları
+
+Varsayılan olarak, birkaç dosya yolu otomatik olarak ilke uyarıları oluşturmanın dışında tutulur. Bu dosya yollarındaki etkinlikler genellikle zararsızdır ve eyleme dönüştürülemeyen uyarıların hacmini artırabilir. Gerekirse, bu konumlardaki etkinlikler için risk puanlama özelliğini etkinleştirmek için bu varsayılan dosya yolu dışlamaları seçimini iptal edebilirsiniz.
+
+Varsayılan dosya yolu dışlamaları şunlardır:
+
+- \Users\\\*\AppData
+- \Users\\\*\AppData\Local
+- \Users\\\*\AppData\Local\Roaming
+- \Users\\\*\AppData\Local\Local\Temp
+
+Bu yollardaki joker karakterler, \Users ve \AppData arasındaki tüm klasör düzeylerinin dışlamada yer aldığına ilişkin bilgiler içerir. Örneğin, *C:\Users\Test1\AppData\Local* ve *C:\Users\Test2\AppData\Local*, *C:\Users\Test3\AppData\Local* (vb.) içindeki etkinliklerin tümü dahil edilir ve *\Users\\\*\AppData\Local* dışlama seçiminin bir parçası olarak risk açısından puanlanmaz.
+
+### <a name="site-url-exclusions"></a>Site URL'si dışlamaları
+
+SharePoint'te (ve Ekip kanalı siteleriyle ilişkili SharePoint sitelerinde) gerçekleşen olası risk etkinliklerinin ilke uyarıları oluşturmasını önlemek için site URL'si dışlamalarını yapılandırın. Paydaşlarla veya genel olarak paylaşılabilen hassas olmayan dosyalar ve veriler içeren siteleri ve kanalları dışlamak isteyebilirsiniz. Dışlamak için en fazla 500 site URL yolu girebilirsiniz.
+
+Dışlamak üzere site URL'si yolları eklemek için aşağıdaki adımları tamamlayın:
+
+1. Uyumluluk portalında **Insider risk yönetimi** > **Ayarları** > **Akıllı algılamalar'a** gidin.
+2. **Site URL'si dışlama** bölümünde **SharePoint siteleri ekle veya düzenle'yi** seçin.
+3. **SharePoint siteleri ekle veya düzenle** bölmesinde, risk puanlamadan dışlamak için SharePoint sitesini girin veya arayın. Yalnızca erişim izniniz olan SharePoint sitelerini görürsünüz.
+4. Site URL'si dışlamalarını yapılandırmak için **Ekle'yi** veya değişiklikleri atmak için **İptal'i** seçin.
+
+Hariç tutulacak site URL yollarını düzenlemek için aşağıdaki adımları tamamlayın:
+
+1. Uyumluluk portalında **Insider risk yönetimi** > **Ayarları** > **Akıllı algılamalar'a** gidin.
+2. **Site URL'si dışlama** bölümünde **SharePoint siteleri ekle veya düzenle'yi** seçin.
+3. **SharePoint siteleri ekle veya düzenle** bölmesinde, risk puanlamadan dışlamak için SharePoint sitesini girin veya arayın. Yalnızca erişim izniniz olan SharePoint sitelerini görürsünüz.
+4. Site URL'si dışlamalarını yapılandırmak için **Düzenle'yi** veya değişiklikleri atmak için **İptal'i** seçin.
+
+Site URL'si dışlamasını silmek için site URL'si dışlama seçeneğini belirleyin ve **Sil'i** seçin.
+
+### <a name="keyword-exclusions"></a>Anahtar sözcük dışlamaları
+
+Dosya adlarında, dosya yollarında veya e-posta iletisi konu satırlarında görünen anahtar sözcükler için dışlamaları yapılandırın. Bu, kuruluşunuz için belirtilen iyi huylu terimlerin etiketlenmesi nedeniyle olası uyarı gürültüsünü azaltması gereken kuruluşlar için esneklik sağlar. Anahtar sözcüğü içeren dosyalar veya e-posta konularıyla ilgili bu tür etkinlikler, insider risk yönetimi ilkeleriniz tarafından yoksayılır ve uyarı oluşturmaz. Dışlamak için en fazla 500 anahtar sözcük girebilirsiniz. 
+
+Dışlama için yoksayılan belirli terim gruplandırmalarını tanımlamak için **yalnızca Dışla** alanını kullanın. Örneğin, 'eğitim' anahtar sözcüğünü dışlamak, ancak 'uyumluluk eğitimini' dışlamak istemiyorsanız Dışla alanına yalnızca alanı ve **'** eğitim' **içermemesi durumunda** 'uyumluluk eğitimi' girersiniz.
+
+Yalnızca belirli tek başına terimleri dışlamak istiyorsanız, koşulları Yalnızca **içerir alanına** girin.
+
+Dışlamak üzere tek başına anahtar sözcükler eklemek için aşağıdaki adımları tamamlayın:
+
+1. Uyumluluk portalında **Insider risk yönetimi** > **Ayarları** > **Akıllı algılamalar'a** gidin.
+2. **Anahtar sözcük dışlama** bölümünde, **Ancak içeriyor** alanına tek başına anahtar sözcükleri girin.
+3. Anahtar sözcük dışlamalarını yapılandırmak için **Kaydet'i** seçin.
+
+Dışlamak üzere tek başına anahtar sözcüğü silmek için aşağıdaki adımları tamamlayın:
+
+1. Uyumluluk portalında **Insider risk yönetimi** > **Ayarları** > **Akıllı algılamalar'a** gidin. 
+2. **Anahtar sözcük dışlama** bölümünde, **Ancak içeriyor** alanında belirli bir tek başına anahtar sözcük için *X* işaretini seçin. Birden çok anahtar sözcüğü kaldırmak için gerektiğinde yineleyin.
+3. Anahtar sözcük dışlamalarını silmek için **Kaydet'i** seçin.
 
 ## <a name="export-alerts"></a>Uyarıları dışarı aktarma
 
