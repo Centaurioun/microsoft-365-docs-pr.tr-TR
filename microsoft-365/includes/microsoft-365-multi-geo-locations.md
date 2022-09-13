@@ -13,6 +13,7 @@
 |Kore                        |KOR     |Güneydoğu veya Doğu Asya veri merkezleri|
 |Kuzey Amerika                |NAM     |ABD veri merkezleri                    |
 |Norveç                       |NOR     |(eKeşif veri konumu yakında kullanıma sunulacak)|
+|Katar                        |Qat     |(eKeşif veri konumu yakında kullanıma sunulacak)|
 |South Africa                 |ZAF     |Avrupa veri merkezleri                |
 |İsveç                       |SWE     |Avrupa veri merkezleri                |
 |İsviçre                  |CHE     |Avrupa veri merkezleri                |
