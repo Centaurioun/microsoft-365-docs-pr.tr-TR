@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint ve OneDrive'daki siteler ve belgeler için varsayılan paylaşım bağlantı türünü yapılandırmak için duyarlılık etiketlerini kullanın.
-ms.openlocfilehash: 0e2fbe762483ff3997484b32448ce96711147e43
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 69d623ab275fb345f4d48f6d79fb2e41bb76be7e
+ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663184"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67651501"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>SharePoint ve OneDrive'da siteler ve belgeler için varsayılan paylaşım bağlantı türünü yapılandırmak için duyarlılık etiketlerini kullanma
 
@@ -56,7 +56,7 @@ Siteler için varsayılan paylaşım bağlantı türünü uygulamak için kapsay
 
 SharePoint ve OneDrive'daki belgeler için varsayılan paylaşım bağlantı türünü uygulamak için, bu hizmetler için duyarlılık etiketlerinin etkinleştirilmesi gerekir. Bu özellik kiracınız için henüz etkinleştirilmediyse bkz. [SharePoint ve OneDrive için duyarlılık etiketlerini etkinleştirme (kabul etme)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in).
 
-PowerShell oturumunda, varsayılan paylaşım bağlantı türü [ayarlarını yapılandırmak için Office 365 Güvenlik & Uyumluluğu PowerShell'e bağlanmanız](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) gerekir.
+PowerShell oturumunda, varsayılan paylaşım bağlantı türü ayarlarını yapılandırmak için [Güvenlik & Uyumluluğu PowerShell'e bağlanmanız](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) gerekir.
 
 > [!NOTE]
 > Gerekli olmasa da, önce [Microsoft Purview uyumluluk portalı duyarlılık etiketleri oluşturup yapılandırmak ve](create-sensitivity-labels.md) ardından bu etiketleri varsayılan paylaşım bağlantı türünü yapılandıran ayarlarla değiştirmek en kolay seçenektir.
@@ -66,15 +66,17 @@ PowerShell oturumunda, varsayılan paylaşım bağlantı türü [ayarlarını ya
 Varsayılan paylaşım bağlantı türünün yapılandırma ayarları [, Güvenlik & Uyumluluğu](/powershell/exchange/scc-powershell) PowerShell'in [Set-Label](/powershell/module/exchange/set-label) ve [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlet'leri ile PowerShell *AdvancedSettings* parametresini kullanır:
 
 - **DefaultSharingScope**: Kullanılabilir değerler şunlardır:
-    - **SpecificPeople**: Site için varsayılan paylaşım bağlantısını "Belirli kişiler" bağlantısına ayarlar
-    - **Kuruluş**: Site için varsayılan paylaşım bağlantısını "kuruluş" bağlantısına veya şirket tarafından paylaşılabilir bağlantıya ayarlar
-    - **Herkes**: Site için varsayılan paylaşım bağlantısını Anonim Erişim veya Herkes bağlantısına ayarlar
+    - **SpecificPeople**: Varsayılan paylaşım bağlantısını belirli kişilere ayarlar (yalnızca kullanıcının belirttiği kişiler)
+    - **Kuruluş**: Yalnızca kuruluşunuzdaki kişiler için varsayılan paylaşım bağlantısını ayarlar
+    - **Herkes**: Varsayılan paylaşım bağlantısını, anonim erişime eşdeğer olan bağlantıya sahip herkese ayarlar
 
 - **DefaultShareLinkPermission**: Kullanılabilir değerler şunlardır:
-    - **Görünüm**: Site için varsayılan bağlantı iznini "görüntüleme" izinlerini ayarlar
-    - **Düzenle**: Site için varsayılan bağlantı iznini "düzenleme" izinlerine ayarlar
+    - **Görünüm**: İzinleri görüntülemek için varsayılan bağlantı iznini ayarlar
+    - **Düzenle**: İzinleri düzenlemek için varsayılan bağlantı iznini ayarlar
 
 Bu iki ayar ve değer, [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet'indeki *DefaultSharingScope* ve *DefaultShareLinkPermission* parametrelerinin eşdeğeridir.
+
+Varsayılan paylaşım bağlantı türü için başka bir yapılandırma, [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet'indeki *DefaultLinkToExistingAccess parametresinin eşdeğeri olan DefaultShareLinkToExistingAccess* gelişmiş ayarını kullanmaktır. Bu değeri **True** olarak ayarladığınızda, diğer iki gelişmiş ayarı ve bunların değerlerini geçersiz kılar.
 
 Duyarlılık etiketi **GUID'sinin 8faca7b8-8d20-48a3-8ea2-0f96310a848e** olduğu PowerShell örnekleri:
 
@@ -90,9 +92,15 @@ Duyarlılık etiketi **GUID'sinin 8faca7b8-8d20-48a3-8ea2-0f96310a848e** olduğu
     Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
     ````
 
+- Varsayılan paylaşım bağlantı türünü mevcut erişimi olan kişilere ayarlamak için:
+    
+    ````powershell
+    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkToExistingAccess="True"}
+    ````
+
 PowerShell gelişmiş ayarlarını belirtme konusunda daha fazla yardım için bkz. [Gelişmiş ayarları belirtmek için PowerShell ipuçları](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
 
-Bir sitenin varsayılan paylaşım bağlantı türünün ayarlarını yapılandırmak için, [duyarlılık etiketinin kapsamı](sensitivity-labels.md#label-scopes), duyarlılık etiketini Microsoft Purview uyumluluk portalı oluştururken **Gruplar & sitelerini** içermelidir. Oluşturulduktan sonra, bunu **Etiketler** sayfasındaki **Kapsam** sütununda **Site, UnifiedGroup** olarak ve PowerShell *ContentType* ayarı da aynı değeri görüntüler. Belgeler için kapsam, **Dosya, E-posta** olarak görüntülenen **Öğeler'i** içermelidir. Sonra:
+Bir sitenin varsayılan paylaşım bağlantı türünün ayarlarını yapılandırmak için, [duyarlılık etiketinin kapsamı](sensitivity-labels.md#label-scopes), duyarlılık etiketini Microsoft Purview uyumluluk portalı oluştururken **Gruplar & sitelerini** içermelidir. Oluşturulduktan sonra, bunu **Etiketler** sayfasındaki **Kapsam** sütununda **Site, UnifiedGroup** olarak ve PowerShell *ContentType* ayarı da aynı değeri görüntüler. Belgeler için kapsam, Dosya olarak görüntülenen **Öğeler** **Email** içermelidir. Sonra:
 
 - Kapsam **Gruplar & siteleri** içerdiğinde, etiketi bir siteye uygulayarak bu site için varsayılan paylaşım bağlantı türünü ayarlayabilirsiniz. Siteye duyarlılık etiketi uygulama hakkında bilgi için bkz. [Kapsayıcılara duyarlılık etiketleri uygulama](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
 

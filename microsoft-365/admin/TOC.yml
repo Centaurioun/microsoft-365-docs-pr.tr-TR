@@ -396,8 +396,6 @@
               href: basic-mobility-security/create-an-apns-certificate-for-ios-devices.md
             - name: Cihaz erişim ayarlarını yönetme
               href: basic-mobility-security/manage-device-access-settings.md
-            - name: Yönetilen cihazlar hakkında ayrıntılı bilgi edinme
-              href: basic-mobility-security/get-details-about-managed-devices.md
             - name: Kayıtlı cihazları yönetme
               href: basic-mobility-security/manage-enrolled-devices.md
             - name: Mobil cihazınızı kaydetme
@@ -410,8 +408,6 @@
               href: basic-mobility-security/wipe-mobile-device.md
             - name: Temel Hareketlilik ve Güvenlik'i kapatma
               href: basic-mobility-security/turn-off.md
-            - name: Sorun giderme
-              href: basic-mobility-security/troubleshoot.md
     - name: Google Workspace'ten M365'e geçiş yapma
       items:
         - name: Genel bakış

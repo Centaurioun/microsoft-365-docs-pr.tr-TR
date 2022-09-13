@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Temel Hareketlilik ve Güvenlik’i ayarlayıp kullanarak Microsoft 365 kuruluşunuza bağlı mobil cihazları yönetin ve güvenliklerini sağlayın.
-ms.openlocfilehash: b49b02b37df615aafb87b2fc520737d4ad16d515
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.openlocfilehash: c205ce6cc8b14017eae65f3cf1b74d78c89fd253
+ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084509"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67651462"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Microsoft 365 için Temel Hareketlilik ve Güvenlik'e genel bakış
 
@@ -66,4 +66,3 @@ Yalnızca kendi cihazlarında iş projelerini güncelleştiren kişiler için mo
 [Temel Hareketlilik ve Güvenlik Ayarlama](set-up.md) (makale)\
 [Mobil cihazınızı Temel Hareketlilik ve Güvenlik kullanarak kaydetme](enroll-your-mobile-device.md) (makale)\
 [Microsoft 365 için Mobil Cihaz Yönetimi'ne kayıtlı cihazları yönetme](manage-enrolled-devices.md) (makale)\
-[Temel Hareketlilik ve Güvenlik tarafından yönetilen cihazlarla ilgili ayrıntıları öğrenme](get-details-about-managed-devices.md) (makale)

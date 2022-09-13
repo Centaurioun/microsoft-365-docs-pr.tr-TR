@@ -18,17 +18,17 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 - MET150
-description: cihazınızla Microsoft 365 hizmetlerini kullanabilmeniz için önce Microsoft 365 için Basic Mobility ve Security'ye kaydetmeniz gerekebilir.
-ms.openlocfilehash: 714102cf252e4dc483794f4e4280420256bfb0c3
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Cihazınızla Microsoft 365 hizmetlerini kullanabilmeniz için önce microsoft 365 için Temel Mobilite ve Güvenlik'e kaydetmeniz gerekebilir.
+ms.openlocfilehash: c507f307325cd8ac7245df80c0fa7afcef8e519d
+ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781149"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67651392"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Basic Mobility ve Security kullanarak mobil cihazınızı kaydetme
 
-İş için telefonunuzu, tabletinizi ve diğer mobil cihazlarınızı kullanmak, ofisten uzaktayken bilgi sahibi olmak ve iş projelerinde çalışmak için harika bir yoldur. cihazınızla Microsoft 365 hizmetlerini kullanabilmeniz için önce Microsoft Intune Şirket Portalı kullanarak Microsoft 365 için Basic Mobility ve Security'ye kaydetmeniz gerekebilir.
+İş için telefonunuzu, tabletinizi ve diğer mobil cihazlarınızı kullanmak, ofisten uzaktayken bilgi sahibi olmak ve iş projelerinde çalışmak için harika bir yoldur. Cihazınızla Microsoft 365 hizmetlerini kullanabilmeniz için önce Microsoft Intune Şirket Portalı kullanarak Microsoft 365 için Temel Mobilite ve Güvenlik'e kaydetmeniz gerekebilir.
 
 Kuruluşlar, çalışanların iş e-postasına, takvimlerine ve belgelerine güvenli bir şekilde erişmek için mobil cihazlarını kullanabilmesi için Temel Mobilite ve Güvenlik'i seçerken, işletme önemli verilerin güvenliğini sağlar ve uyumluluk gereksinimlerini karşılar. Daha fazla bilgi edinmek için bkz. [Microsoft 365 için Temel Mobilite ve Güvenliğe Genel Bakış](overview.md). Daha fazla bilgi için bkz. [Cihazımı kaydettiğimde kuruluşum hangi bilgileri görebilir?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
@@ -48,7 +48,7 @@ Intune hizmeti tarafından barındırılan Microsoft 365 için Temel Mobilite ve
 Cihazınız yukarıda listelenmiyorsa ve Temel Mobilite ve Güvenlik ile kullanmanız gerekiyorsa iş veya okul yöneticinize başvurun.
 
 > [!TIP]
-> Cihazınızı kaydederken sorun yaşıyorsanız bkz. [Temel Mobilite ve Güvenlik Sorunlarını Giderme](troubleshoot.md).
+> Cihazınızı kaydederken sorun yaşıyorsanız bkz. [Temel Mobilite ve Güvenlik Sorunlarını Giderme](frequently-asked-questions.yml).
 
 ## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>mobil cihazınızı Intune ve Temel Mobilite ve Güvenlik ile ayarlama
 
@@ -70,14 +70,14 @@ iOS telefonunuzu veya tabletinizi Şirket portalıyla Office 365 bağlamak ve ya
 
 Google Play mağazasına gidin ve Intune Şirket Portalı indirip yükleyin.
 
-Android telefonunuzu veya tabletinizi Şirket portalıyla Microsoft 365 bağlamak ve yapılandırmak için bkz. [Cihazınızı Şirket Portalı ile kaydetme](/mem/intune/user-help/enroll-device-android-company-portal).
+Android telefonunuzu veya tabletinizi Şirket portalıyla Microsoft 365'e bağlamak ve yapılandırmak için bkz. [Cihazınızı Şirket Portalı ile kaydetme](/mem/intune/user-help/enroll-device-android-company-portal).
 
 ### <a name="windows-81-and-windows-10"></a>Windows 8.1 ve Windows 10
 
-Microsoft Store gidin ve Intune Şirket Portalı indirip yükleyin
+Microsoft Store'a gidin ve Intune Şirket Portalı indirip yükleyin
 
-Windows telefonunuzu veya bilgisayarınızı Şirket portalıyla Microsoft 365 bağlamak ve yapılandırmak için bkz. [Intune Şirket Portalı'da cihaz kaydını Windows](/intune-user-help/windows-enrollment-company-portal).
+Windows telefonunuzu veya bilgisayarınızı Şirket portalıyla Microsoft 365'e bağlamak ve yapılandırmak için bkz. [Intune Şirket Portalı'de Windows cihaz kaydı](/intune-user-help/windows-enrollment-company-portal).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Cihazınız Temel Mobilite ve Güvenlik'e kaydedildikten sonra, e-posta, takvim, kişiler ve belgelerle çalışmak için cihazınızdaki Office uygulamaları kullanmaya başlayabilirsiniz.
+Cihazınız Temel Mobilite ve Güvenlik'e kaydedildikten sonra, e-posta, takvim, kişiler ve belgelerle çalışmak için cihazınızdaKi Office uygulamalarını kullanmaya başlayabilirsiniz.

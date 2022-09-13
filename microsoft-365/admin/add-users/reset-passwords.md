@@ -31,12 +31,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: İş için Microsoft 365 aboneliğiniz olduğunda kullanıcıların parolalarını sıfırlamak için Microsoft 365 yönetici hesabınızla oturum açın.
-ms.openlocfilehash: 39dc2dfdc4a50e8e55ef919a438895c4cefd0ed7
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8ae60825c411345afb756072f16b599dbdf042d3
+ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084663"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67651326"
 ---
 # <a name="reset-passwords-in-microsoft-365-for-business"></a>İş için Microsoft 365'te parolaları sıfırlama
 
@@ -82,6 +82,16 @@ Bu videoyu faydalı bulduysanız, [küçük işletmelere ve Microsoft 365’i il
 ## <a name="let-users-reset-their-own-passwords"></a>Kullanıcıların kendi parolalarını sıfırlamasına izin verme
 
 Self servis parola sıfırlamayı ayarlamanızı kesinlikle öneririz. Bu şekilde kullanıcılarınız için parolaları el ile sıfırlamanız gerekmez. İşiniz azalır! Nasıl yapılacağını öğrenmek için bkz. [kullanıcıların Office 365 kendi parolalarını sıfırlamasına izin verme](let-users-reset-passwords.md).
+
+## <a name="resend-user-password"></a>Kullanıcı parolasını yeniden gönderme
+  
+1. Yönetici merkezinde, **Kullanıcılar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Etkin kullanıcılar</a> sayfasına gidin.
+
+2. **Etkin kullanıcılar** sayfasında kullanıcıyı ve ardından **Parolayı sıfırla'yı** seçin.
+
+3. Kullanıcı için otomatik olarak yeni bir parola oluşturmak veya onlar için bir parola oluşturmak için **Parolayı sıfırla** sayfasındaki yönergeleri izleyin ve ardından **Sıfırla'yı** seçin.  
+
+4. Yeni parolayı almak için kullanıcının ulaşabileceği bir e-posta adresi girin ve bu parolayı aldığından emin olmak için bu adresi takip edin.
 
 ## <a name="reset-my-admin-password"></a>Yönetici parolamı sıfırla
 
@@ -130,6 +140,24 @@ Genel bakış bilgileri için bkz. [PowerShell ile Microsoft 365'i yönetme](../
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>İşletmenizdeki tüm kullanıcılar için parola değiştirmeyi zorunlu tutma
 
 Microsoft MVP'si Vasil Michev'in bu harika blog gönderisine göz atın: [Office 365'te tüm kullanıcılar için parola değiştirmeyi zorunlu tutma](https://go.microsoft.com/fwlink/?linkid=853693).
+
+## <a name="set-strong-passwords"></a>Güçlü parolalar ayarlama
+
+1. [PowerShell ile Microsoft 365'e bağlanın](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+2. PowerShell'i kullanarak, aşağıdaki komutu kullanarak tüm kullanıcılar için güçlü parola gereksinimlerini kapatabilirsiniz:
+
+    ```powershell
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
+
+3. You can turn **OFF** strong password requirements for specific users with this command:
+
+    ```powershell
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    ```
+
+> [!NOTE]
+> userPrincipalName, kullanıcı adının ardından at işareti (@) ve bir etki alanı adının geldiği İnternet stilinde oturum açma biçiminde olmalıdır. Örneğin: user@contoso.com.
   
 ## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>İş için Microsoft 365 aboneliğim yok
 

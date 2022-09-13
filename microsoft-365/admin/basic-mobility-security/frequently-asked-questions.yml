@@ -20,14 +20,14 @@ metadata:
   search.appverid:
   - MET150
   description: Temel Mobilite ve Güvenlik hakkında sık sorulan sorular.
-  ms.openlocfilehash: c404ff1c80952ec3db600e96ceef5cce97c182cd
-  ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+  ms.openlocfilehash: ecd87fab3c72fdc263c38647fe11c556edcdd4bc
+  ms.sourcegitcommit: 974922d1d8d9ce7bc2eb49ab80ecca9da4a911f9
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 06/03/2022
-  ms.locfileid: "65863020"
+  ms.lasthandoff: 09/13/2022
+  ms.locfileid: "67651414"
 title: Temel Mobilite ve Güvenlik hakkında sık sorulan sorular (SSS)
-summary: Bu makale, Microsoft 365'da mobil cihazları yönetmenize ve güvenli bir şekilde korumanıza yardımcı olan Basic Mobility ve Security hakkında sık sorulan soruları içerir. Sorunuzun yanıtını bulamazsanız sayfaya bir yorum yazarak farkında olmamızı sağlayın ki biz de sorunuzu bu makaleye eklemeyi değerlendirebilelim.
+summary: Bu makalede, Microsoft 365'te mobil cihazları yönetmenize ve güvenli bir şekilde korumanıza yardımcı olan Basic Mobility ve Security hakkında sık sorulan sorular yer alır. Sorunuzun yanıtını bulamazsanız sayfaya bir yorum yazarak farkında olmamızı sağlayın ki biz de sorunuzu bu makaleye eklemeyi değerlendirebilelim.
 sections:
 - name: Yok sayıldı
   questions:
@@ -40,22 +40,95 @@ sections:
       2.  Cihaz yönetimi > Veri kaybını önleme bölümüne gidin.
   - question: >
       Basic Mobility ve Security'de cihaz yönetimini kullanmaya nasıl başlayabilirim?
-    answer: "Basic Mobility ve Security'yi kullanmaya başlamanın dört adımı vardır: \n\n1. [Office 365 Güvenlik & Uyumluluğu'na](https://protection.office.com/) giderek Temel Mobilite ve Güvenlik'i etkinleştirin.\n\n2. [Temel Mobilite ve Güvenlik (Önizleme)](https://compliance.microsoft.com/basicmobilityandsecurity) bölümüne gidin.\n    \n3. Cihaz yönetimi ilkeleri oluşturun ve bunları güvenlik gruplarında ayarlanmış kullanıcı gruplarına uygulayın. İlkeleri küçük bir test grubuna dağıtarak başlamanızı öneririz. Daha fazla bilgi için bkz. [Basic Mobility ve Security'de cihaz güvenlik ilkeleri oluşturma](create-device-security-policies.md).\n\n4. Kendilerine ilke uygulanmış kullanıcılardan, Microsoft 365 verilere erişmeye çalıştıklarında cihazlarını kaydetmeleri istenir. Daha fazla bilgi için bkz. [Mobil cihazınızı Temel Hareketlilik ve Güvenlik kullanarak kaydettirin](enroll-your-mobile-device.md).\n\nDiğer ayrıntılar için bkz. [Basic Mobility ve Security'yi ayarlama](set-up.md).\n"
+    answer: "Basic Mobility ve Security'yi kullanmaya başlamanın dört adımı vardır: \n\n1. [Office 365 Güvenlik & Uyumluluğu'na](https://protection.office.com/) giderek Temel Mobilite ve Güvenlik'i etkinleştirin.\n\n2. [Temel Mobilite ve Güvenlik (Önizleme)](https://compliance.microsoft.com/basicmobilityandsecurity) bölümüne gidin.\n    \n3. Cihaz yönetimi ilkeleri oluşturun ve bunları güvenlik gruplarında ayarlanmış kullanıcı gruplarına uygulayın. İlkeleri küçük bir test grubuna dağıtarak başlamanızı öneririz. Daha fazla bilgi için bkz. [Basic Mobility ve Security'de cihaz güvenlik ilkeleri oluşturma](create-device-security-policies.md).\n\n4. Kendilerine ilke uygulanmış olan kullanıcılardan Microsoft 365 verilerine erişmeye çalıştıklarında cihazlarını kaydetmeleri istenir. Daha fazla bilgi için bkz. [Mobil cihazınızı Temel Hareketlilik ve Güvenlik kullanarak kaydettirin](enroll-your-mobile-device.md).\n\nDiğer ayrıntılar için bkz. [Basic Mobility ve Security'yi ayarlama](set-up.md).\n"
   - question: >
       Basic Mobility ve Security'yi ayarlamaya çalışıyorum ama takılı kalmış gibi görünüyor. Microsoft 365 Hizmet Durumu bir süredir "sağlama" gösteriyor. Ne yapabilirim?
     answer: >
       Hizmetin sizin için hazır olması biraz zaman alabilir. Sağlama tamamlandığında Temel Mobilite ve Güvenlik sayfasını görürsünüz. 24 saat beklediyseniz ve durum hala sağlanma aşamasındaysa lütfen Destek birimine başvurun. Sorunun ne olduğunu bulmamıza yardımcı olacağız.
   - question: >
+      Cihazı Basic Mobility ve Security'ye kaydetmeye çalışırken sorunlarla karşılaşıyorum. Ne yapabilirim?
+    answer: >
+      Başlamak için aşağıdakileri denetleyin:
+
+
+      - Cihazın Intune gibi başka bir mobil cihaz yönetimi sağlayıcısına kayıtlı olmadığından emin olun.
+
+
+      - Cihazın doğru tarih ve saate ayarlandığından emin olun.
+
+
+      - Cihazda farklı bir WIFI'ye veya hücresel ağa geçin.
+
+
+      - Android veya iOS cihazları için Intune Şirket Portalı uygulamasını kaldırıp cihaza yeniden yükleyin.
+  - question: >
+      iOS telefonumda veya tabletimde Basic Mobility ve Security'i ayarlarken sorun yaşıyorum. Ne yapabilirim?
+    answer: >
+      - Bir APNs sertifikası ayarladığınızdan emin olun. Daha fazla bilgi için bkz. [iOS cihazları için APNs Sertifikası oluşturma](create-an-apns-certificate-for-ios-devices.md).
+
+
+      - **Ayarlar** > **Genel** > **Profili'nde (veya Cihaz Yönetimi)** bir Yönetim Profili'nin yüklü olmadığından emin olun. Varsa kaldırın.
+
+
+      - "Cihaz kaydedilemedi" hata iletisini görürseniz Microsoft 365'te oturum açın ve cihazda oturum açan kullanıcıya Exchange Online içeren bir lisansın atandığından emin olun.
+
+
+      - "Profil yüklenemedi" hata iletisini görürseniz aşağıdakilerden birini deneyin:
+
+        - Safari'nin cihazdaki varsayılan tarayıcı olduğundan ve tanımlama bilgilerinin devre dışı bırakılmadığından emin olun.
+
+        - Cihazı yeniden başlatın ve portal.manage.microsoft.com gidin. Microsoft 365 kullanıcı kimliğiniz ve parolanızla oturum açın ve profili el ile yüklemeyi deneyin.
+  - question: >
+      Windows RT'da Basic Mobility ve Security'i ayarlarken sorun yaşıyorum. Ne yapabilirim?
+    answer: >
+      - Etki alanınızın Microsoft 365'te Basic Mobility ve Security ile çalışacak şekilde ayarlandığından emin olun. Daha fazla bilgi için bkz. [Basic Mobility ve Security'yi ayarlama](set-up.md).
+
+
+      - Kullanıcının **Katıl'ın** yerine **Aç'ın** seçildiğinden emin olun.
+  - question: >
+      Windows 10 bilgisayarda Basic Mobility ve Security'i ayarlarken sorun yaşıyorum. Ne yapabilirim?
+    answer: >
+      - Etki alanınızın Microsoft 365'te Basic Mobility ve Security ile çalışacak şekilde ayarlandığından emin olun. Daha fazla bilgi için bkz. [Basic Mobility ve Security'yi ayarlama](set-up.md).
+
+
+      - Azure Active Directory Premium yoksa, kullanıcının **Bağlan'ı** seçmek yerine **yalnızca Cihaz Yönetimi Kaydol'u** seçtiğinden emin olun.
+  - question: >
+      Android telefon veya tablette Basic Mobility ve Security'i ayarlarken sorun yaşıyorum. Ne yapabilirim?
+    answer: >
+      - Cihazın Android çalıştırdığından emin olun.
+
+
+      - Chrome'un güncel olduğundan ve varsayılan tarayıcı olarak ayarlandığından emin olun.
+
+
+      - "Bu cihazı kaydedemedik" hata iletisini görürseniz Microsoft 365'te oturum açın ve cihazda oturum açan kullanıcıya Exchange Online içeren bir lisansın atandığından emin olun.
+
+
+      - Gerekli son kullanıcı eylemlerinin beklemede olup olmadığını görmek için cihazdaki Bildirim Alanı'nı denetleyin ve bekliyorsa eylemleri tamamlayın.
+  - question: >
       Cihaz kaydı başarısız olursa ne yapabilirim?
-    answer: "Bir cihazı kaydederken sorun yaşıyorsanız önce aşağıdakileri denetleyin:\n\n- Cihazın Intune gibi başka bir mobil cihaz yönetimi sağlayıcısına kayıtlı olmadığından emin olun.\n\n- Cihazın doğru tarih ve saate ayarlandığından emin olun.\n\n- Cihazda farklı bir WIFI'ye veya hücresel ağa geçin.\n\n- Android veya iOS cihazlar için Intune Şirket Portalı uygulamasını kaldırıp cihaza yeniden yükleyin.\n    \nKayıt hala çalışmıyorsa bkz. [Temel Mobilite ve Güvenlik Sorunlarını Giderme](troubleshoot.md).\n"
+    answer: >
+      Bir cihazı kaydederken sorun yaşıyorsanız önce aşağıdakileri denetleyin:
+
+
+      - Cihazın Intune gibi başka bir mobil cihaz yönetimi sağlayıcısına kayıtlı olmadığından emin olun.
+
+
+      - Cihazın doğru tarih ve saate ayarlandığından emin olun.
+
+
+      - Cihazda farklı bir WIFI'ye veya hücresel ağa geçin.
+
+
+      - Android veya iOS cihazları için Intune Şirket Portalı uygulamasını kaldırıp cihaza yeniden yükleyin.
   - question: >
       Intune ile Temel Mobilite ve Güvenlik arasındaki fark nedir?
     answer: >
-      Temel Mobilite ve Güvenlik, Intune hizmeti tarafından barındırılır. Microsoft 365 ek bir avantaj olarak sunulan Intune hizmetlerinin bir alt kümesidir ve kuruluşunuzdaki cihazları yönetmek için yerleşik bir bulut tabanlı çözümdür. Intune veya Microsoft 365 için Temel Mobilite ve Güvenlik kullanmanın size en uygun olup olmadığını belirlemenize yardımcı olacak iki hizmetin yan yana karşılaştırması için bkz. [Basic Mobility Security ile Intune arasında seçim yapma](choose-between-basic-mobility-and-security-and-intune.md).
+      Temel Mobilite ve Güvenlik, Intune hizmeti tarafından barındırılır. Microsoft 365'e ek bir avantaj olarak sunulan Intune hizmetlerinin bir alt kümesidir ve kuruluşunuzdaki cihazları yönetmek için yerleşik bir bulut tabanlı çözümdür. microsoft 365 için Intune veya Temel Mobilite ve Güvenlik kullanmanın size en uygun olup olmadığını belirlemenize yardımcı olacak iki hizmetin yan yana karşılaştırması için bkz. [Temel Mobility Security ile Intune arasında seçim yapma](choose-between-basic-mobility-and-security-and-intune.md).
   - question: >
       İlkeler Temel Mobilite ve Güvenlik için nasıl çalışır? Nasıl yaparım? ayarladın? Devre dışı bırakılasın mı?
     answer: >
-      Temel Mobilite ve Güvenlik için ilk kurulumu tamamladıktan sonra, ilkeler oluşturur ve bunları Güvenlik & Uyumluluk Merkezi'ndeki kullanıcı gruplarına uygularsınız. İlkeler, cihazın Microsoft 365 verilere erişmek için kullanılabilmesi için ilke kullanıcılarının cihazlarını Basic Mobility ve Security'ye kaydetmesini gerektirir. Ayarladığınız ilkeler, mobil cihazlar için parolaların ne sıklıkta sıfırlanması gerektiği veya veri şifrelemesi gerekip gerekmediği gibi ayarları belirler. Daha fazla bilgi için bkz. [Temel Mobilite ve Güvenlik ve Microsoft Purview uyumluluk portalı cihaz güvenlik ilkeleri oluşturma](create-device-security-policies.md).[](../../compliance/microsoft-365-compliance-center.md)
+      Temel Mobilite ve Güvenlik için ilk kurulumu tamamladıktan sonra, ilkeler oluşturur ve bunları Güvenlik & Uyumluluk Merkezi'ndeki kullanıcı gruplarına uygularsınız. İlkeler, cihazın Microsoft 365 verilerine erişmek için kullanılabilmesi için ilke kullanıcılarının cihazlarını Temel Mobilite ve Güvenlik'e kaydetmelerini gerektirir. Ayarladığınız ilkeler, mobil cihazlar için parolaların ne sıklıkta sıfırlanması gerektiği veya veri şifrelemesi gerekip gerekmediği gibi ayarları belirler. Daha fazla bilgi için bkz. [Temel Mobilite ve Güvenlik ve Microsoft Purview uyumluluk portalı cihaz güvenlik ilkeleri oluşturma](create-device-security-policies.md).[](../../compliance/microsoft-365-compliance-center.md)
 
 
       Cihaz ilkeleri oluşturma ve dağıtmaya yönelik adım adım yönergeler için bkz. [Temel Mobilite ve Güvenlik'te cihaz güvenlik ilkeleri oluşturma](create-device-security-policies.md).
@@ -63,12 +136,12 @@ sections:
 
       Belirli bir kullanıcı grubunu ilkelerden etkilenmekten dışlamak istiyorsanız, dışlama grubuna bir grup ekleyebilirsiniz.
   - question: >
-      Exchange ActiveSync cihaz yönetiminden Microsoft 365 için Temel Mobilite ve Güvenlik'e geçebilir miyim?
+      Exchange ActiveSync cihaz yönetiminden Microsoft 365 için Temel Mobilite ve Güvenlik'e geçiş yapabilir miyim?
     answer: >
       Mobil cihazları yönetmek için zaten Exchange ActiveSync ilkeleri kullanıyorsanız, Basic Mobility ve Security'yi ayarlama adımlarını izleyerek Basic Mobility ve Security kullanmaya başlayabilirsiniz. Daha fazla bilgi için bkz. [Kullanıcı ve cihaz erişimini koruma ve](../../compliance/protect-access-to-data-and-services.md) [Temel Mobilite ve Güvenliği Ayarlama](set-up.md).
 
 
-      Basic Mobility ve Security'de oluşturduğunuz ilkeleri kullanıcı gruplarına uyguladığınızda, bu ilkeler daha önce bu kullanıcılar için <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange yönetim merkezinde oluşturduğunuz Exchange ActiveSync</a> mobil cihaz posta kutusu ilkelerini ve cihaz erişim kurallarını geçersiz kılar.
+      Basic Mobility ve Security'de oluşturduğunuz ilkeleri kullanıcı gruplarına uyguladığınızda, bu ilkeler daha önce bu kullanıcılar için <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange yönetim merkezinde</a> oluşturduğunuz mobil cihaz posta kutusu ilkelerini ve cihaz erişim kurallarını Exchange ActiveSync geçersiz kılar.
 
 
       Bir cihaz Temel Hareket ve Güvenlik'e kaydedildikten sonra, cihaza uygulanan Exchange ActiveSync mobil cihaz posta kutusu ilkesi veya cihaz erişim kuralı yoksayılır.
