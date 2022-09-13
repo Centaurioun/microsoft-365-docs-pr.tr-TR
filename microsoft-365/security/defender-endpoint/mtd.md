@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 0f94cab9a414a2d5dc8343ff01cd4dcb10636ef2
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 28f5ea1f30567622e176ad20058f6f1674edba5c
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578090"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652461"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Uç Nokta için Microsoft Defender - Mobil Tehdit Savunması
 
@@ -41,8 +41,6 @@ Android ve iOS'ta Uç Nokta için Microsoft Defender **mobil tehdit savunması �
 
 Android ve iOS'ta Uç Nokta için Microsoft Defender aşağıdaki temel özellikleri sağlar. En son özellikler ve avantajlar hakkında bilgi için [duyurularımızı](https://aka.ms/mdeblog) okuyun.
 
-<br>
-
 |Yeteneği|Açıklama|
 |---|---|
 |Web Koruması|Kimlik avı önleme, güvenli olmayan ağ bağlantılarını engelleme ve özel göstergeler için destek.|
@@ -50,13 +48,12 @@ Android ve iOS'ta Uç Nokta için Microsoft Defender aşağıdaki temel özellik
 |Jailbreak Algılama (yalnızca iOS)|Jailbreak uygulanmış cihazların algılanması.|
 |Microsoft Defender Güvenlik Açığı Yönetimi (MDVM) |Eklenen mobil cihazların güvenlik açığı değerlendirmesi. Uç Nokta için Microsoft Defender'da Microsoft Defender Güvenlik Açığı Yönetimi hakkında daha fazla bilgi edinmek için bu [sayfayı](next-gen-threat-and-vuln-mgt.md) ziyaret edin. *Bu önizlemede yalnızca iOS işletim sistemi güvenlik açıklarının desteklendiğini unutmayın.*|
 |Ağ Koruması *(Genel Önizleme)*| Wi-Fi ilgili tehditlere ve sahte sertifikalara karşı koruma; Intune'de kök CA ve özel kök CA sertifikalarını listeleme olanağı; uç noktalarla güven oluşturma.|
-|Birleşik uyarı|Birleşik M365 güvenlik konsolundaki tüm platformlardan uyarılar|
-|Koşullu Erişim, Koşullu başlatma|Riskli cihazların şirket kaynaklarına erişmesini engelleme. Uç Nokta için Defender risk sinyalleri, uygulama koruma ilkelerine (MAM) de eklenebilir|
-|Gizlilik Denetimleri. Önizlemede (aşağıdaki nota bakın)|Uç Nokta için Microsoft Defender tarafından gönderilen verileri denetleyerek tehdit raporlarında gizliliği yapılandırın. *Gizlilik denetimlerinin şu anda yalnızca kayıtlı cihazlarda kullanılabildiğini unutmayın. Kaydı kaldırılan cihazlar için denetimler daha sonra eklenecek*|
+|Birleşik uyarı|Birleşik M365 güvenlik konsolundaki tüm platformlardan uyarılar.|
+|Koşullu Erişim, Koşullu başlatma|Riskli cihazların şirket kaynaklarına erişmesini engelleme. Uç Nokta için Defender risk sinyalleri, uygulama koruma ilkelerine (MAM) de eklenebilir.|
+|Gizlilik Denetimleri|Uç Nokta için Microsoft Defender tarafından gönderilen verileri denetleyerek tehdit raporlarında gizliliği yapılandırın. Gizlilik denetimleri yönetici ve son kullanıcılar tarafından kullanılabilir. Kayıtlı ve kaydı kaldırılmış cihazlar için de oradadır.|
 |Microsoft Tunnel ile tümleştirme|Tek bir uygulamada güvenliği ve bağlantıyı etkinleştirmek için bir VPN ağ geçidi çözümü olan Microsoft Tunnel ile tümleştirebilir. Android'de kullanılabilir ve artık iOS'ta da genel kullanıma sunulmuştur.|
 
 Tüm bu özellikler Uç Nokta için Microsoft Defender lisans sahipleri için kullanılabilir. Daha fazla bilgi için bkz [. Lisanslama gereksinimleri](minimum-requirements.md#licensing-requirements).
-
 
 ## <a name="overview-and-deploy"></a>Genel Bakış ve Dağıtma
 
@@ -86,7 +83,7 @@ Aşağıdaki tabloda, Android ve iOS'ta Uç Nokta için Microsoft Defender nası
 |--------------------|-------------|
 |Intune Birleşik Endpoint Manager sahip denetimli cihazlar (Microsoft Endpoint Manager)|1. [iOS mağazası uygulaması olarak dağıtma](ios-install.md)<br/>2. [Denetimli iOS cihazları için VPN olmadan Web Koruması kurma](ios-install.md#complete-deployment-for-supervised-devices)|
 |Intune UEM(Microsoft Endpoint Manager) ile kaydedilen denetimsiz (KCG) cihazlar|[iOS mağazası uygulaması olarak dağıtma](ios-install.md)|
-|Yönetilmeyen KCG VEYA diğer UEM'ler tarafından yönetilen cihazlar / Uygulama koruma ilkesi (MAM) kurulumu|[Uygulama koruma ilkesinde (MAM) Defender risk sinyallerini yapılandırma](ios-install-unmanaged.md)|
+|Diğer UEM'ler tarafından yönetilen yönetilmeyen KCG VEYA cihazlar / Uygulama koruma ilkesini ayarlama (MAM)|[Uygulama koruma ilkesinde (MAM) Defender risk sinyallerini yapılandırma](ios-install-unmanaged.md)|
 
 ### <a name="end-user-onboarding"></a>Son kullanıcı ekleme
 

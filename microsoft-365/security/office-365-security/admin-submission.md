@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Yöneticiler, Microsoft 365 Defender portalında Gönderiler portalını kullanarak engellenen, şüpheli e-posta, şüpheli kimlik avı e-postası, istenmeyen posta, diğer zararlı olabilecek iletiler, URL'ler ve e-posta eklerini yeniden keşfetmek üzere Microsoft'a yasal e-posta göndermeyi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9a2620df6f7cb6eba490fba289c019240e172679
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 9013f8c336ec7179c3934d6e352afc1b8a862461
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67643971"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652439"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Şüpheli istenmeyen posta, kimlik avı, URL'ler, engellenen meşru e-postalar ve e-posta eklerini Microsoft'a göndermek için Gönderimler portalını kullanın
 
@@ -291,7 +291,8 @@ Birkaç dakika sonra, **Kiracı İzin Ver/Engelle Listesi** sayfasındaki **Dosy
 
    - **Gönderme türünü seçin**: Değer **URL'sinin** seçili olduğunu doğrulayın.
 
-   - **URL**: Tam URL'yi (örneğin, `https://www.fabrikam.com/marketing.html`) girin ve görüntülenen kutudan seçin.
+   - **URL**: Tam URL'yi (örneğin, `https://www.fabrikam.com/marketing.html`) girin ve görüntülenen kutudan seçin. Ayrıca bir üst düzey etki alanı (örneğin, `https://www.fabrikam.com/*`) sağlayabilir ve ardından görüntülenen kutudan bu etki alanını seçebilirsiniz. 
+
 
    - **Microsoft'a göndermek için bir neden seçin**: **Engellenmemeli (Hatalı pozitif)** seçeneğini belirleyin ve ardından aşağıdaki ayarları yapılandırın:
 

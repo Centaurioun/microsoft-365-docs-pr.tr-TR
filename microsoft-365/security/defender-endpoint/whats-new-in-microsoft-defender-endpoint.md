@@ -11,19 +11,19 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/06/2022
+ms.date: 09/12/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: ae828a6437849de86ea23b52397d0541e9d821d2
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 1aa80af7ff13f1ec5eccf207042458adae5c9208
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613504"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652402"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender’daki yenilikler
 
@@ -64,6 +64,10 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 ## <a name="september-2022"></a>Eylül 2022
 
 - [Cihaz durumu raporlaması genel kullanıma sunuldu](machine-reports.md). <br/>Cihaz durumu raporu, uç noktalarınızın durumu ve güvenliği hakkında üst düzey bilgiler sağlar. Rapor algılayıcı durumunu, virüsten koruma durumunu, işletim sistemi platformlarını, Windows 10 sürümlerini ve Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini gösteren popüler bilgileri içerir.
+- [Sorun giderme modu](enable-troubleshooting-mode.md) artık modern, birleşik çözümü çalıştıran Windows Server 2012 R2 ve 2016 makineleri için kullanılabilir. Sorun giderme modu sırasında cihazınızda kurcalama korumasını geçici olarak devre dışı bırakmak ve gerekli yapılandırma değişikliklerinizi yapmak için kullanın `Set-MPPreference -DisableTamperProtection $true` . Sorun giderme modunu kullanmadan önce aşağıdaki bileşenlerin tümünün güncel olduğundan emin olun:
+   - Sense sürüm 10.8049.22439.1084 (KB5005292) veya üzeri
+   - Microsoft Defender Virüsten Koruma - Platform: 4.18.2207.7 (KB4052623) veya üzeri 
+   - Microsoft Defender Virüsten Koruma - Altyapı: 1.1.19500.2 (KB2267602) veya üzeri
 
 ## <a name="august-2022"></a>Ağustos 2022
 

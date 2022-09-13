@@ -10,24 +10,21 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2020
+ms.date: 09/06/2022
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bb63bb3ec898e7ba6f7b957288e95da7ec49f17c
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 650dae61e71b17e4f63598f60177ab7c193c50b7
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585894"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652351"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'nın yapılandırılması ve yönetilmesi için PowerShell cmdlet'lerini kullanma
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Şunlar için geçerlidir:**
 - [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -37,14 +34,14 @@ ms.locfileid: "67585894"
 **Platform**
 - Windows
 
-PowerShell'i kullanarak Windows Defender'da çeşitli işlevler gerçekleştirebilirsiniz. Komut istemine veya komut satırına benzer şekilde PowerShell, özellikle sistem yönetimi için tasarlanmış görev tabanlı bir komut satırı kabuğu ve betik dilidir. Msdn'deki [PowerShell hub'ında](/previous-versions/msdn10/mt173057(v=msdn.10)) bu konuda daha fazla bilgi edinebilirsiniz.
+PowerShell'i kullanarak Windows Defender'da çeşitli işlevler gerçekleştirebilirsiniz. Komut istemine veya komut satırına benzer şekilde PowerShell, özellikle sistem yönetimi için tasarlanmış görev tabanlı bir komut satırı kabuğu ve betik dilidir. [PowerShell belgelerinde](/powershell/scripting/overview) bu konuda daha fazla bilgi edinebilirsiniz.
 
 Cmdlet'lerin, işlevlerinin ve kullanılabilir parametrelerin listesi için [Defender Virüsten Koruma cmdlet'leri](/powershell/module/defender) konusuna bakın.
 
 PowerShell cmdlet'leri en çok, yazılımı yapılandırmak için grafik kullanıcı arabirimine (GUI) güvenmeyen Windows Server ortamlarında kullanışlıdır.
 
 > [!NOTE]
-> PowerShell cmdlet'leri [Microsoft Endpoint Configuration Manager, grup ilkesi](/configmgr) [Yönetim Konsolu](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) veya [Microsoft Defender Virüsten Koruma grup ilkesi ADMX şablonları](https://www.microsoft.com/download/101445) gibi tam ağ ilkesi yönetim altyapısının yerine kullanılmamalıdır.
+> PowerShell cmdlet'leri [Microsoft Endpoint Configuration Manager, grup ilkesi](/configmgr) [Yönetim Konsolu](use-group-policy-microsoft-defender-antivirus.md) veya [Microsoft Defender Virüsten Koruma grup ilkesi ADMX şablonları](https://www.microsoft.com/download/101445) gibi tam ağ ilkesi yönetim altyapısının yerine kullanılmamalıdır.
 
 PowerShell ile yapılan değişiklikler, değişikliklerin dağıtıldığı veya yapıldığı uç noktadaki yerel ayarları etkiler. Bu, grup ilkesi, Microsoft Endpoint Configuration Manager veya Microsoft Intune ile ilke dağıtımlarının PowerShell ile yapılan değişikliklerin üzerine yazabileceği anlamına gelir.
 

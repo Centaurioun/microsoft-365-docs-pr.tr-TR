@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: a40f5074b2e9caf85eeda01e8061c9b5fcaca6d2
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: da6124fcce55bc8fe0f40158f9849a0fd02b40e1
+ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522135"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67652519"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS özelliklerinde Uç Nokta için Microsoft Defender’ı yapılandırın
 
@@ -194,7 +194,7 @@ Müşteriler artık iOS'ta Uç Nokta için Microsoft Defender tarafından gönde
 
 1. **Son Kullanıcı Gizlilik Denetimleri** Bu denetimler, son kullanıcının kendi kuruluşuyla paylaşılan bilgileri yapılandırmasına yardımcı olur.
     - Denetimli cihazlar için Son Kullanıcı denetimleri görünmez. Yönetici ayarlara karar verir ve ayarları denetler.
-    - Ancak Denetimsiz cihazlar için denetim **Ayarlar-> Gizlilik** altında görüntülenir
+    - Ancak Denetimsiz cihazlar için denetim **Ayarlar > Gizlilik** altında görüntülenir
         - Kullanıcılar **Güvenli Olmayan Site Bilgileri** için bir geçiş düğmesi görür.
         - Bu iki durumlu düğme yalnızca Yönetici **DefenderExcludeURLInReport = true** olarak ayarlamışsa görünür
         - kullanıcılar, Yönetici tarafından etkinleştirilirse, güvenli olmayan site bilgilerini Kuruluşlarına göndermek isteyip istemediklerine karar verebilir.
@@ -205,7 +205,7 @@ Yukarıdaki gizlilik denetimlerini açmak veya kapatmak, cihaz uyumluluk denetim
 
 ## <a name="optional-permissions"></a>İsteğe Bağlı İzinler
 
-iOS'ta Uç Nokta için Microsoft Defender, ekleme akışında **İsteğe Bağlı İzinler'i** etkinleştirir. Şu anda ekleme akışında MDE için gereken izinler zorunlu. Bu özellik sayesinde yönetici, ekleme sırasında zorunlu **VPN İznini** zorunlu tutmadan KCG cihazlarına MDE dağıtabilir. Son Kullanıcılar zorunlu izinler olmadan uygulamayı ekleyebilir ve daha sonra bu izinleri gözden geçirebilir. Bu özellik şu anda yalnızca kayıtlı cihazlar (MDM) için mevcuttur.
+iOS'ta Uç Nokta için Microsoft Defender, ekleme akışında **İsteğe Bağlı İzinler'i** etkinleştirir. Şu anda ekleme akışında Uç Nokta için Defender'ın gerektirdiği izinler zorunludur. Bu özellik sayesinde yöneticiler, ekleme sırasında zorunlu **VPN İznini** zorunlu tutmadan KCG cihazlarına Uç Nokta için Defender'ı dağıtabilir. Son kullanıcılar zorunlu izinler olmadan uygulamayı ekleyebilir ve daha sonra bu izinleri gözden geçirebilir. Bu özellik şu anda yalnızca kayıtlı cihazlar (MDM) için mevcuttur.
 
 ### <a name="configure-optional-permission"></a>İsteğe Bağlı İzni Yapılandırma
 
@@ -230,7 +230,7 @@ iOS'ta Uç Nokta için Microsoft Defender, ekleme akışında **İsteğe Bağlı
     - Daha sonra Kullanıcı, uygulamasını Uygulamanın içinden etkinleştirebilir `Web Protection` . Bu, cihaza VPN yapılandırmasını yükler.
 
 > [!NOTE]
->**İsteğe bağlı İzin****, Web Korumasını Devre Dışı Bırak'tan** farklıdır. İsteğe bağlı VPN İzni yalnızca ekleme sırasında iznin atlanmasına yardımcı olur, ancak son kullanıcının daha sonra gözden geçirip etkinleştirmesi için kullanılabilir. **Web Korumasını Devre Dışı Bırak** özelliği kullanıcıların Web Koruması olmadan MDE uygulamasını eklemesine olanak tanır. Daha sonra etkinleştirilemez.
+>**İsteğe bağlı İzin****, Web Korumasını Devre Dışı Bırak'tan** farklıdır. İsteğe bağlı VPN İzni yalnızca ekleme sırasında iznin atlanmasına yardımcı olur, ancak son kullanıcının daha sonra gözden geçirip etkinleştirmesi için kullanılabilir. **Web Korumasını Devre Dışı Bırak** özelliği kullanıcıların Web Koruması olmadan Uç Nokta için Defender uygulamasını eklemesine olanak tanır. Daha sonra etkinleştirilemez.
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>Jailbreak uygulanmış cihazlara karşı uyumluluk ilkesini yapılandırma
 
@@ -241,7 +241,7 @@ iOS'ta Uç Nokta için Microsoft Defender, ekleme akışında **İsteğe Bağlı
 
 Jailbreak uygulanmış cihazlara karşı uyumluluk ilkesi oluşturmak için aşağıdaki adımları izleyin.
 
-1. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Cihaz** -> **Uyumluluk ilkeleri** -> **İlke Oluştur'a** gidin. Platform olarak "iOS/iPadOS" öğesini seçin ve **Oluştur'a** tıklayın.
+1. [Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) **Cihaz** > **Uyumluluk ilkeleri** > **İlke Oluştur'a** gidin. Platform olarak "iOS/iPadOS" öğesini seçin ve **Oluştur'a** tıklayın.
 
    :::image type="content" source="images/ios-jb-policy.png" alt-text="İlke Oluştur sekmesi" lightbox="images/ios-jb-policy.png":::
 
@@ -266,6 +266,50 @@ iOS'ta Uç Nokta için Defender, yöneticilerin iOS cihazlarında da özel göst
 > [!NOTE]
 > iOS üzerinde Uç Nokta için Defender yalnızca IP adresleri ve URL'ler/etki alanları için özel göstergeler oluşturmayı destekler.
 
+## <a name="configure-vulnerability-assessment-of-apps"></a>Uygulamaların güvenlik açığı değerlendirmesini yapılandırma
+
+>[!Note]
+>iOS için Uç Nokta için Microsoft Defender'deki uygulamaların Güvenlik Açığı Değerlendirmesi artık genel önizleme aşamasındadır. Aşağıdaki bilgiler, ürünün ticari olarak piyasaya sürülmeden önce önemli ölçüde değiştirilebilen ön sürümüyle ilgilidir. Microsoft, burada sağlanan bilgilerle ilgili olarak açık veya zımni hiçbir garanti vermez. Önizlemeye katılmak istiyorsanız lütfen kiracı adınızı ve kimliğinizi **mdatpmobile@microsoft.com** bizimle paylaşın.
+
+iOS üzerinde Uç Nokta için Defender, yalnızca kayıtlı (MDM) cihazlar için uygulamaların güvenlik açığı değerlendirmelerini destekler.
+
+Yöneticiler, uygulamaların güvenlik açığı değerlendirmesini yapılandırmak için aşağıdaki adımları kullanabilir.
+
+### <a name="on-a-supervised-device"></a>Denetimli Cihazda
+
+1. Cihazın [Denetimli modda](ios-install.md#complete-deployment-for-supervised-devices) yapılandırıldığından emin olun.
+1. [Özelliği Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) etkinleştirmek için **Endpoint Security** >  **Uç Nokta için Microsoft Defender** >  **iOS/iPadOS cihazları için Uygulama eşitlemeyi etkinleştir'e** gidin.
+
+     :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="Uygulama eşitleme iki durumlu düğmesiSup" lightbox="images/tvm-app-sync-toggle.png":::
+
+### <a name="on-an-unsupervised-device"></a>Denetimsiz Cihazda
+
+1. [Özelliği Microsoft Endpoint Manager yönetim merkezinde](https://go.microsoft.com/fwlink/?linkid=2109431) etkinleştirmek için **Endpoint Security** >  **Uç Nokta için Microsoft Defender** >  **iOS/iPadOS cihazları için Uygulama eşitlemeyi etkinleştir'e** gidin.
+
+   :::image type="content" source="images/tvm-app-sync-toggle.png" alt-text="Uygulama eşitleme iki durumlu düğmesi" lightbox="images/tvm-app-sync-toggle.png":::
+
+1. Yönetilmeyen uygulamalar da dahil olmak üzere tüm uygulamaların listesini almak için **, Kişisel iOS/iPad OS Cihazlarında Tam uygulama envanteri verilerini gönder** iki durumlu düğmesini etkinleştirin.
+
+    :::image type="content" source="images/tvm-full-app-data.png" alt-text="Tam Uygulama Verileri" lightbox="images/tvm-full-app-data.png":::
+
+1. Gizlilik ayarını yapılandırmak için aşağıdaki adımları kullanın.
+    - **Uygulamalar** > **Uygulama yapılandırma ilkeleri** > **Yönetilen cihazlar** **ekle'ye** >  gidin.
+    - İlkeye **Platform** > **iOS/iPadOS** adını verin.
+    - Hedef uygulama olarak **Uç Nokta için Microsoft Defender'ı** seçin.
+    - Ayarlar sayfasında Yapılandırma tasarımcısını kullan'ı seçin ve anahtar ve değer türü olarak **DefenderTVMPrivacyMode** değerini **Dize** olarak ekleyin
+        - Gizliliği devre dışı bırakmak ve yüklü uygulamaların listesini toplamak için olarak `False` değer girin ve bu ilkeyi kullanıcılara atayın. 
+        - Bu değer, denetimsiz cihazlar için varsayılan olarak olarak ayarlanır `True` .
+        - anahtarı olarak `False`ayarlanmış kullanıcılar için Uç Nokta için Defender, güvenlik açığı değerlendirmesi için cihazda yüklü uygulamaların listesini gönderir.
+    - **İleri'ye** tıklayın ve bu profili hedeflenen cihazlara/kullanıcılara atayın.
+    - Yukarıdaki gizlilik denetimlerini açmak veya kapatmak, cihaz uyumluluk denetimini veya koşullu erişimi etkilemez.
+1. Yapılandırma uygulandıktan sonra, son kullanıcının gizlilik ayarını **onaylaması** için uygulamayı açması gerekir.
+    - Gizlilik onayı ekranı yalnızca denetimsiz cihazlar için gelir.
+    - Yalnızca son kullanıcı gizliliği onaylarsa uygulama bilgileri Uç Nokta için Defender konsoluna gönderilir.
+
+        :::image type="content" source="images/tvm-user-privacy.png" alt-text="TVM Gizliliği" lightbox="images/tvm-user-privacy.png":::
+
+İstemci sürümleri hedef iOS cihazlarına dağıtıldıktan sonra işlem başlatılır. Bu cihazlarda bulunan güvenlik açıkları Defender Güvenlik Açığı Yönetimi panosunda gösterilmeye başlar. İşlemin tamamlanması birkaç saat (en fazla 24 saat) sürebilir. Özellikle tüm uygulama listesinin yazılım envanterinde gösterilmesi için.
+
 ## <a name="configure-option-to-send-in-app-feedback"></a>Uygulama içi geri bildirim gönderme seçeneğini yapılandırma
 
 Müşteriler artık Uç Nokta için Defender uygulamasında Microsoft'a geri bildirim verileri gönderme özelliğini yapılandırma seçeneğine sahiptir. Geri bildirim verileri, Microsoft'un ürünleri geliştirmelerine ve sorunları gidermelerine yardımcı olur.
@@ -282,9 +326,9 @@ Microsoft'a geri bildirim verileri gönderme seçeneğini yapılandırmak için 
 1. Hedef uygulama olarak **Uç Nokta için Microsoft Defender'ı** seçin.
 
 1. Ayarlar sayfasında **Yapılandırma tasarımcısını kullan'ı** seçin ve anahtar ve değer türü olarak **DefenderSendFeedback** değerini **Boole olarak** ekleyin.
-   
+
    - Son kullanıcıların geri bildirim sağlama becerisini kaldırmak için değeri olarak `false` ayarlayın ve bu ilkeyi kullanıcılara atayın. Varsayılan olarak, bu değer olarak `true`ayarlanır. US Government müşterileri için varsayılan değer 'false' olarak ayarlanır.
-   
+
    - anahtar kümesi olan `true`kullanıcılar için, uygulama içinde Microsoft'a Geri Bildirim verileri gönderme seçeneği vardır (Menü > Geri Bildirim & Yardım > Microsoft'a Geri Bildirim Gönder)
 
 1. **İleri'ye** tıklayın ve bu profili hedeflenen cihazlara/kullanıcılara atayın.
