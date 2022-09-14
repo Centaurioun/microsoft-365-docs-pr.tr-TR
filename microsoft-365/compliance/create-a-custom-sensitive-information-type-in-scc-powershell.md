@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Uyumluluk merkezinde ilkeler için özel bir hassas bilgi türü oluşturmayı ve içeri aktarmayı öğrenin.
-ms.openlocfilehash: b71893afad2d68f9820f23e60ae9c3b15531f976
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ea8e20cbc5f74ed04099f8abe9b772d670b4fef7
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625599"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67683923"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>PowerShell kullanarak özel hassas bilgi türü oluşturma
 
@@ -317,7 +317,7 @@ E-posta için ileti gövdesinin ve her ekin ayrı öğeler olarak ele alındığ
 
 Bir desenin gerektirdiği kanıt ne kadar fazlaysa, desen eşleştiğinde gerçek bir varlığın (çalışan kimliği gibi) belirlendiğinden o kadar emin olursunuz. Örneğin, dokuz basamaklı kimlik numarası, işe alma tarihi ve anahtar sözcük gerektiren bir desene, yalnızca dokuz basamaklı kimlik numarası gerektiren bir düzende olduğundan daha fazla güvenirsiniz.
 
-Pattern öğesinin gerekli bir confidenceLevel özniteliği vardır. ConfidenceLevel değerini (1 ile 100 arasında bir tamsayı) bir varlıktaki her desen için benzersiz bir kimlik olarak düşünebilirsiniz; bir varlıktaki desenlerin atadığınız farklı güvenilirlik düzeylerine sahip olması gerekir. Tamsayının tam değeri önemli değildir; uyumluluk ekibiniz için anlamlı sayılar seçmeniz yeterlidir. Özel hassas bilgi türünüzü karşıya yükleyip bir ilke oluşturduktan sonra, oluşturduğunuz kuralların koşullarında bu güvenilirlik düzeylerine başvurabilirsiniz.
+Pattern öğesinin gerekli bir confidenceLevel özniteliği vardır. ConfidenceLevel değerini (Düşük/Orta/Yüksek güvenilirlik düzeylerini gösteren 65/75/85 arasındaki bir değer) bir varlıktaki her desen için benzersiz bir kimlik olarak düşünebilirsiniz. Özel hassas bilgi türünüzü karşıya yükleyip bir ilke oluşturduktan sonra, oluşturduğunuz kuralların koşullarında bu güvenilirlik düzeylerine başvurabilirsiniz.
 
 ![confidenceLevel özniteliği için farklı değerlere sahip Desen öğelerini gösteren XML işaretlemesi.](../media/sit-xml-markedup-2.png)
 

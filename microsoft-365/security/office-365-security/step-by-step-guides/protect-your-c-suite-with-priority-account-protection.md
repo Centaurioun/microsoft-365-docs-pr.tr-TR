@@ -2,8 +2,7 @@
 title: Office 365 için Microsoft Defender Plan 2'de c-suite'inizi Öncelik hesabı koruması ile koruma
 description: C paketinizi öncelikli hesap korumasıyla koruma adımları. Bir hesabın Öncelik hesabı olarak etiketlenmesi, şirket yöneticilerini hedefleyen posta akışı düzenleri için ayarlanmış ek korumanın yanı sıra raporlarda, uyarılarda ve araştırmalarda ek görünürlük sağlar.
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
-ms.openlocfilehash: d3c7d1cff44d1b8d3070a9a6ed1160ad25e2d260
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+ms.openlocfilehash: ad7ebb6b8ab42f5f2b733360f468b56462ea38bc
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596621"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67681941"
 ---
 # <a name="protect-your-c-suite-with-priority-account-protection"></a>C-paketinizi öncelikli hesap korumasıyla koruyun
 

@@ -15,12 +15,13 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 07/01/2022
 ms.subservice: mde
-ms.openlocfilehash: 6d9f60886c02cd4b6af929b2b403316b1bfea0a2
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 46ac26b8351c4b0d85f6d34c196f49b230cd3726
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67577309"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67682999"
 ---
 # <a name="move-to-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender taşı
 

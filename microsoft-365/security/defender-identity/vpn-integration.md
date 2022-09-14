@@ -1,6 +1,6 @@
 ---
-title: Kimlik için Microsoft Defender VPN tümleştirmesi Microsoft 365 Defender
-description: VPN'i farklı bir ağ ile bütünleştirerek finansal Kimlik için Microsoft Defender toplamayı Microsoft 365 Defender
+title: Microsoft 365 Defender'da VPN tümleştirmesi Kimlik için Microsoft Defender
+description: Kimlik için Microsoft Defender için VPN'i Microsoft 365 Defender ile tümleştirerek muhasebe bilgilerini toplamayı öğrenin
 ms.date: 06/07/2021
 ms.topic: how-to
 author: dcurwin
@@ -9,28 +9,29 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a5c45ecda43b32e37f7309b9a2de33810d60bd15
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+search.appverid: met150
+ms.openlocfilehash: 02a0ecf0dea5b4e3fc820280a389c30b79b5fb43
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469173"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67682293"
 ---
-# <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Microsoft 365 Defender'te Identity VPN tümleştirmesi için Defender
+# <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Microsoft 365 Defender'de Kimlik için Defender VPN tümleştirmesi
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
 - Microsoft 365 Defender
 - Kimlik için Microsoft Defender
 
-Bu makalede, VPN'nin 2013'te [Kimlik için Microsoft Defender](/defender-for-identity) ile [tümleştirileri Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+Bu makalede vpn'i [Microsoft 365 Defender'da Kimlik için Microsoft Defender](/defender-for-identity) ile tümleştirme açıklanmaktadır[](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
->Sonuçların yakınmasının bir <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">parçası Microsoft 365 Defender</a>, kimlik için Defender portalında yer alan konumlarından bazı seçenekler ve ayrıntılar değiştirilmiştir. Hem tanıdık hem de yeni özellikleri nerede bulamıyorum? bulmak için lütfen aşağıdaki ayrıntıları okuyun.
+><a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> ile yakınsama kapsamında bazı seçenekler ve ayrıntılar Kimlik için Defender portalındaki konumlarından değişti. Hem tanıdık hem de yeni özellikleri nerede bulabileceğinizi öğrenmek için lütfen aşağıdaki ayrıntıları okuyun.
 
-[!INCLUDE [Product long](includes/product-long.md)] VPN çözümlerinden finansal bilgileri toplayabilirsiniz. Yapılandırıldığında, kullanıcının profil sayfasında VPN bağlantılarından alınan IP adresleri ve bağlantıların kaynaklandığı konumlar gibi bilgiler yer almaktadır. Bu, hem kullanıcı etkinliği hakkında ek bilgi hem de olağandışı VPN bağlantıları için yeni bir algılama sağlayarak araştırma sürecini tamamlar. Dış IP adresini bir konuma çözümleme çağrısı anonimdir. Bu aramada hiçbir kişisel tanımlayıcı gönderilmez.
+[!INCLUDE [Product long](includes/product-long.md)] VPN çözümlerinden muhasebe bilgilerini toplayabilir. Yapılandırıldığında, kullanıcının profil sayfası VPN bağlantılarından ip adresleri ve bağlantıların kaynaklandığı konumlar gibi bilgileri içerir. Bu, kullanıcı etkinliği hakkında ek bilgiler ve anormal VPN bağlantıları için yeni bir algılama sağlayarak araştırma sürecini tamamlar. Dış IP adresini bir konuma çözümleme çağrısı anonimdir. Bu çağrıda hiçbir kişisel tanımlayıcı gönderilmez.
 
-[!INCLUDE [Product short](includes/product-short.md)] VPN çözümünüzle tümleştirerek algılayıcılara iletili YARıÇAP muhasebe olaylarını dinleyerek [!INCLUDE [Product short](includes/product-short.md)] tümleşiktir. Bu mekanizma standart YARıÇAP Finansal ([RFC 2866](https://tools.ietf.org/html/rfc2866)) tabanlıdır ve aşağıdaki VPN satıcıları desteklemektedir:
+[!INCLUDE [Product short](includes/product-short.md)] algılayıcılara iletilen [!INCLUDE [Product short](includes/product-short.md)] RADIUS muhasebe olaylarını dinleyerek VPN çözümünüzle tümleşir. Bu mekanizma standart RADIUS Accounting'i ([RFC 2866](https://tools.ietf.org/html/rfc2866)) temel alır ve aşağıdaki VPN satıcıları desteklenir:
 
 - Microsoft
 - F5
@@ -39,52 +40,52 @@ Bu makalede, VPN'nin 2013'te [Kimlik için Microsoft Defender](/defender-for-ide
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-VPN tümleştirmeyi etkinleştirmek için aşağıdaki parametreleri ayar mutlaka ayarlayın:
+VPN tümleştirmesini etkinleştirmek için aşağıdaki parametreleri ayarladığınızdan emin olun:
 
-- Algılayıcılar ve/veya tek başına algılayıcılar [!INCLUDE [Product short](includes/product-short.md)] üzerinde bağlantı noktası [!INCLUDE [Product short](includes/product-short.md)] UDP 1813'ü açın.
+- Algılayıcılarınızda ve/veya [!INCLUDE [Product short](includes/product-short.md)] tek başına algılayıcılarınızda [!INCLUDE [Product short](includes/product-short.md)] UDP 1813 bağlantı noktasını açın.
 
 > [!NOTE]
 >
-> - Yarıçap **Finansal'ı** etkinleştirerek, [!INCLUDE [Product short](includes/product-short.md)] **[!INCLUDE [Product long](includes/product-long.md)]** algılayıcı UDP 1813'te gelen RADIUS Accounting'e izin vermek için Algılayıcı olarak adlandırılan önceden Windows güvenlik duvarı ilkesi etkinleştirir.
-> - FEDERAL Bilgi İşleme Standartlarına (FIPS) bağlı ortamlarda VPN tümleştirmesi desteklenmiyor
+> - Algılayıcı, [!INCLUDE [Product short](includes/product-short.md)] **Radius Accounting'i** etkinleştirerek UDP 1813 numaralı bağlantı noktasında gelen RADIUS Accounting'e izin vermek için Algılayıcı adlı **[!INCLUDE [Product long](includes/product-long.md)]** önceden sağlanan bir Windows güvenlik duvarı ilkesini etkinleştirir.
+> - VPN tümleştirmesi, Federal Bilgi İşleme Standartlarına (FIPS) bağlı ortamlarda desteklenmez
 
-Aşağıdaki örnekte VPN yapılandırma işlemini açıklamak için Microsoft Yönlendirme ve Uzak Erişim Sunucusu (RRAS) kullanılır.
+Aşağıdaki örnekte VPN yapılandırma işlemini açıklamak için Microsoft Yönlendirme ve Uzaktan Erişim Sunucusu (RRAS) gerçekleştirilir.
 
-Üçüncü taraf bir VPN çözümü kullanıyorsanız, YARıÇAP Finansal'ı etkinleştirme yönergeleri için onların belgelerine bakın.
+Üçüncü taraf VPN çözümü kullanıyorsanız RADIUS Accounting'i etkinleştirme yönergeleri için onların belgelerine bakın.
 
 ## <a name="configure-radius-accounting-on-the-vpn-system"></a>VPN sisteminde RADIUS Accounting'i yapılandırma
 
 RRAS sunucunuzda aşağıdaki adımları gerçekleştirin.
 
-1. Yönlendirme ve **Uzaktan Erişim konsolu'nu** açın.
-1. Sunucu adına sağ tıklayın ve Özellikler'i **seçin**.
-1. Güvenlik **sekmesindeki Finansal** sağlayıcı'nın **altında YARıÇAP** **Finansal'ı seçin ve ardından** **Yapılandır'ı seçin**.
+1. **Yönlendirme ve Uzaktan Erişim** konsolunu açın.
+1. Sunucu adına sağ tıklayın ve **Özellikler'i** seçin.
+1. **Güvenlik** sekmesindeki **Muhasebe sağlayıcısı'nın** altında **RADIUS Accounting'i** ve **ardından Yapılandır'ı** seçin.
 
-   :::image type="content" source="../../media/defender-identity/radius-setup.png" alt-text="YARıÇAP kurulumu" lightbox="../../media/defender-identity/radius-setup.png":::
+   :::image type="content" source="../../media/defender-identity/radius-setup.png" alt-text="RADIUS kurulumu" lightbox="../../media/defender-identity/radius-setup.png":::
 
-1. YARıÇAP Sunucusu **Ekle penceresinde** , en yakın **algılayıcının** (ağ bağlantısı olan [!INCLUDE [Product short](includes/product-short.md)] ) Sunucu adını yazın. Yüksek kullanılabilirlik için YARıÇAP Sunucuları olarak ek [!INCLUDE [Product short](includes/product-short.md)] algılayıcılar eklemeniz gerekir. Bağlantı **Noktası altında**, varsayılan 1813'in yapılandırılmış olduğundan emin olun. **Değiştir'i** seçin ve yeni bir alfasayısal karakter paylaşılan gizli dize yazın. Yeni paylaşılan gizli dizeyi, daha sonra Yapılandırma sırasında doldurmanız gerekeceğimiz şekilde not [!INCLUDE [Product short](includes/product-short.md)] alır. YARıÇAP Hesabını **Gönder Açık ve Finansal Kapalı iletilerini işaretleyin ve** tüm **açık iletişim** kutularında Tamam'ı seçin.
+1. **RADIUS Sunucusu Ekle** penceresinde, en [!INCLUDE [Product short](includes/product-short.md)] yakın algılayıcının (ağ bağlantısı olan) **Sunucu adını** yazın. Yüksek kullanılabilirlik için RADIUS Sunucuları olarak ek [!INCLUDE [Product short](includes/product-short.md)] algılayıcılar ekleyebilirsiniz. **Bağlantı noktası'nın** altında varsayılan 1813'ün yapılandırıldığından emin olun. **Değiştir'i** seçin ve alfasayısal karakterlerden oluşan yeni bir paylaşılan gizli dizi yazın. Yeni paylaşılan gizli dizi dizesini not alın çünkü daha sonra Yapılandırma sırasında [!INCLUDE [Product short](includes/product-short.md)] doldurmanız gerekir. **RADIUS Hesabı Açık ve Hesap Dışı İletileri Gönder** kutusunu işaretleyin ve tüm açık iletişim kutularında **Tamam'ı** seçin.
 
    :::image type="content" source="../../media/defender-identity/vpn-set-accounting.png" alt-text="VPN kurulumu" lightbox="../../media/defender-identity/vpn-set-accounting.png":::
 
-## <a name="configure-vpn-in-defender-for-identity"></a>Kimlik için Defender'da VPN'yi yapılandırma
+## <a name="configure-vpn-in-defender-for-identity"></a>Kimlik için Defender'da VPN yapılandırma
 
-[!INCLUDE [Product short](includes/product-short.md)] bilgisayarların ağa bağlanarak şüpheli VPN bağlantılarını algılayabilecek konumların profillerini oluşturmalarına yardımcı olan VPN verilerini toplar.
+[!INCLUDE [Product short](includes/product-short.md)] bilgisayarların ağa bağlandığı konumların profilinin alınmasına ve şüpheli VPN bağlantılarının algılanabilmesine yardımcı olan VPN verilerini toplar.
 
-VPN verilerini aynı Microsoft 365 Defender[!INCLUDE [Product short](includes/product-short.md)]:
+Microsoft 365 Defender'de [!INCLUDE [Product short](includes/product-short.md)] VPN verilerini yapılandırmak için:
 
-1. Daha <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, Kimlikler'Ayarlar'e **gidin**.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender'da</a> **Ayarlar'a** ve ardından **Kimlikler'e** gidin.
 
    :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="Ayarlar menü öğesinin altındaki Kimlikler seçeneği" lightbox="../../media/defender-identity/settings-identities.png":::
 
-1. **VPN'yi seçin**.
-1. Yarıçap **muhasebeini etkinleştir'i** seçin ve daha **önce** RRAS VPN Sunucunuzda yapılandırmış olduğunuz Paylaşılan Gizli'yi yazın. Ardından **Kaydet'i seçin**.
+1. **VPN'i** seçin.
+1. **Yarıçap hesaplamasını etkinleştir'i** seçin ve RRAS VPN Sunucunuzda daha önce yapılandırdığınız **Paylaşılan Gizli Dizi'yi** yazın. Ardından **Kaydet'i** seçin.
 
    :::image type="content" source="../../media/defender-identity/vpn-integration.png" alt-text="VPN tümleştirmesi" lightbox="../../media/defender-identity/vpn-integration.png":::
 
-Bu etkinleştirildikten sonra tüm Identity algılayıcıları için Defender algılayıcıları YARıÇAP finansal olayları için 1813 bağlantı noktasını dinler ve VPN kurulumunuz tamamlanır.
+Bu etkinleştirildikten sonra, tüm Kimlik için Defender algılayıcıları RADIUS muhasebe olayları için 1813 numaralı bağlantı noktasını dinler ve VPN kurulumunuz tamamlanır.
 
-Kimlik için Defender algılayıcısı VPN olaylarını aldığında ve bunları işleme için Identity bulut hizmeti için Defender'a gönderdikten sonra, varlık profili ayrı erişilen VPN konumlarını ve profilde bulunan etkinliklerin konumları belirtecek.
+Kimlik için Defender algılayıcısı VPN olaylarını aldıktan ve bunları işlemek üzere Kimlik için Defender bulut hizmetine gönderdikten sonra varlık profili, farklı erişimli VPN konumlarını ve profildeki etkinliklerin konumları göstereceğini gösterir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [E-postada uyarıları Microsoft 365 Defender](../defender/investigate-alerts.md)
+- [Microsoft 365 Defender'da uyarıları araştırma](../defender/investigate-alerts.md)

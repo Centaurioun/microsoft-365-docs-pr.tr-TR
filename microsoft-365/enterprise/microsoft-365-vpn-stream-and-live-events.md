@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 3/3/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: VPN ortamlarında Akış ve canlı etkinlikler için özel dikkat edilmesi gerekenler
-ms.openlocfilehash: 7970bef10eb7483af633f41eb19f9e224de58ee6
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: e0a31ee619ecc072ce62b7e893526d48b37078fd
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662475"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67681919"
 ---
 # <a name="special-considerations-for-stream-and-live-events-in-vpn-environments"></a>VPN ortamlarında Akış ve canlı etkinlikler için özel dikkat edilmesi gerekenler
 

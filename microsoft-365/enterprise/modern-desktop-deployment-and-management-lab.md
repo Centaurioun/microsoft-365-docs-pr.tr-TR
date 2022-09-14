@@ -9,19 +9,19 @@ ms.reviewer: alainme
 ms.date: 05/11/2022
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows ve Office Dağıtım Laboratuvar Seti'ne nereden erişeceğinizi öğrenin.
-ms.openlocfilehash: 3457d949887877f6ba3e514d68ca145ef3d155b3
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: e2fcb99a28d5d8625a8a333fcb7b2e2109b0f3e4
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497615"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67681833"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Windows ve Office 365 dağıtım laboratuvarı seti
 

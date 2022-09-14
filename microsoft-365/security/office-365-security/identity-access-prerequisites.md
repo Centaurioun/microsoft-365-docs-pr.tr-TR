@@ -21,12 +21,13 @@ ms.collection:
 - zerotrust-solution
 - highpri
 ms.subservice: mdo
-ms.openlocfilehash: 5afe945131dc1bf77064f88ff35f6b533ab8b69e
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 522836485d9c7759fd1044f47b11ac577c03f2f8
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599681"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67686581"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Sıfır Güven kimlik ve cihaz erişim ilkelerini uygulamak için önkoşul çalışması
 

@@ -14,12 +14,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9ffc61bc8426b2592728ae9d4dfed7766337c832
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 0c40e3396baac6cdf066e8371c6633094f68ef8d
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584760"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67684309"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Üçüncü taraf bir çözümden geçirirken Microsoft Defender Virüsten Koruma sorunlarını giderin
 

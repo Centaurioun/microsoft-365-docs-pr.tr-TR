@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard'u ayarlama ve yönetme hakkında kaynakları bulun.
-ms.openlocfilehash: 23fc56fd3fd69c384f787a4b4b27abc159392d12
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 5ea00fc7871a39b9342e13b9db7152a68f1bacd0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598878"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67681917"
 ---
 # <a name="introduction-to-microsoft-whiteboard"></a>Microsoft Whiteboard'a giriş
 
@@ -54,6 +54,10 @@ Bu bölümdeki kaynaklar, kuruluşunuzdaki yöneticinin Microsoft 365 ortamını
 
 | Bu bilgileri arıyorsanız | Bu kaynağa git |
 |:-----|:-----|
+|US Government GCC ortamları için Whiteboard erişimini ayarlamayı ve yönetmeyi öğrenin|[Whiteboard erişimini yönetme - GCC](manage-whiteboard-access-gcc.md)|
+|Whiteboard içeriğinizin ve verilerinizin Azure'da nerede depolandığını ve US Government GCC ortamlarında OneDrive İş bulma  |[Whiteboard için verileri yönetme - GCC](manage-data-gcc.md)  |
+|Teams'deki paylaşım deneyimi ve ABD Kamu GCC ortamlarındaki belirli kullanıcılarla bağlantı paylaşma hakkında bilgi edinin  |[Whiteboard için paylaşımı yönetme - GCC](manage-sharing-gcc.md)  |
+|ABD Kamu GCC ortamlarında Whiteboard için şu anda hangi istemcilerin desteklendiği hakkında bilgi edinin  |[Whiteboard için istemcileri yönetme - GCC](manage-clients-gcc.md)       |
 |US Government GCC High ortamları için Whiteboard erişimini ayarlamayı ve yönetmeyi öğrenin|[Whiteboard'a erişimi yönetme - GCC High](manage-whiteboard-access-gcc-high.md)|
 |Whiteboard içeriğinizin ve verilerinizin Azure'da nerede depolandığını ve US Government GCC High ortamlarında OneDrive İş bulma  |[Whiteboard için verileri yönetme - GCC High](manage-data-gcc-high.md)  |
 |Teams'deki paylaşım deneyimi ve US Government GCC High ortamlarındaki belirli kullanıcılarla bağlantı paylaşma hakkında bilgi edinin  |[Whiteboard için paylaşımı yönetme - GCC High](manage-sharing-gcc-high.md)  |
@@ -64,6 +68,3 @@ Bu bölümdeki kaynaklar, kuruluşunuzdaki yöneticinin Microsoft 365 ortamını
 | Bu bilgileri arıyorsanız | Bu kaynağa git |
 |:-----|:-----|
 |Microsoft Whiteboard'u yönetmek için PowerShell cmdlet'i yardım başvurularını bulma|[Beyaz Tahta için PowerShell](/powershell/module/whiteboard/)|
-
-
-

@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 21fbdd1e10fc929711944c2586e262c76e7a3905
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: a02442bed929b8611eb902d7e1485815cd46f635
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67519764"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67686349"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Uç Nokta için Microsoft Defender (Linux) ile tarama zamanlama
 
@@ -161,7 +162,7 @@ crontab -l
 crontab -u username -l
 ```
 
-### <a name="to-backup-crontab-entries"></a>Crontab girdilerini yedeklemek için
+### <a name="to-back-up-crontab-entries"></a>Crontab girdilerini yedeklemek için
 
 ```bash
 crontab -l > /var/tmp/cron_backup.dat
@@ -211,6 +212,6 @@ crontab -u username -r
 +—————- dakika (değerler: 0 - 59) (özel karakterler: , \- \* /)  <br>
 | +————- saat (değerler: 0 - 23) (özel karakterler: , \- \* /) <br>
 | | +———- ayın günü (değerler: 1 - 31) (özel karakterler: , \- \* / L W C)  <br>
-| | | +——- ay (değerler: 1 - 12) (özel karakterler: , \- \* / )  <br>
+| | | +——- ay (değerler: 1 - 12) (özel karakterler: , \- \* /)  <br>
 | | | | +—- haftanın günü (değerler: 0 - 6) (Pazar=0 veya 7) (özel karakterler: , \- \* / L W C) <br>
 yürütülecek | | | | |****komut

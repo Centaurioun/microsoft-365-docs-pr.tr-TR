@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 55451d169df705e7be0a93178490cc64e2b03809
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: b93330f549089cd0a5252fa871a0ef63c8249a3b
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581002"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67684497"
 ---
 # <a name="restrict-app-execution-api"></a>Uygulama yürütme API'sini kısıtlama
 

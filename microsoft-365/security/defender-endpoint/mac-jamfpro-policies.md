@@ -15,12 +15,13 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: e0e2fdba969eeb72b13d451da2546c2e440af57e
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: cf892956a517591b8f55eb3b704056421c482a7c
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67519698"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67684121"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Jamf Pro'da macOS ilkelerinde Uç Nokta için Microsoft Defender ayarlama
 
