@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender'de Koşullu Erişimi Yapılandırma
 description: Koşullu erişim uygulamak için Intune, Microsoft 365 Defender ve Azure'da gerçekleştirmeniz gereken adımlar hakkında bilgi edinin
 keywords: koşullu erişim, koşullu, erişim, cihaz riski, risk düzeyi, tümleştirme, intune tümleştirmesi
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: b476cc6085c3ec65d638a77e34444d687a86aa11
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.subservice: mde
+ms.openlocfilehash: a565fc87c538fa6f9f590a4037ff9c346118c3cf
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306470"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67680194"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de Koşullu Erişimi Yapılandırma
 
