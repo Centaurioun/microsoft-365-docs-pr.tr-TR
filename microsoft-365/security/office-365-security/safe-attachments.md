@@ -20,12 +20,12 @@ ms.collection:
 description: Yöneticiler, Office 365 için Microsoft Defender'daki Güvenli Ekler özelliği hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 667d25d4647583690e2257c5ad885f2d941260c2
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 4ee9bfea06d1bc3e4b5b49bc4759b9d59166cd1f
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644169"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671401"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Ekler
 
@@ -38,8 +38,6 @@ ms.locfileid: "67644169"
 [Office 365 için Microsoft Defender'deki](defender-for-office-365.md) Güvenli Ekler, [Exchange Online Protection'de (EOP) kötü amaçlı yazılımdan koruma](anti-malware-protection.md) tarafından zaten taranmış e-posta ekleri için ek bir koruma katmanı sağlar. Özellikle, Güvenli Ekler, e-posta iletilerindeki ekleri alıcılara teslim etmeden önce denetlemek için bir sanal ortam kullanır ( _patlama_ olarak bilinen bir işlem).
 
 E-posta iletileri için Güvenli Ekler koruması, Güvenli Ekler ilkeleri tarafından denetlenmektedir. Varsayılan Güvenli Ekler ilkesi olmasa **da, Yerleşik koruma** önceden ayarlanmış güvenlik ilkesi tüm alıcılara Güvenli Ekler koruması sağlar (Standart veya Katı önceden ayarlanmış güvenlik ilkeleri veya özel Güvenli Ekler ilkelerinde tanımlanmayan kullanıcılar). Daha fazla bilgi için bkz. [EOP'de önceden ayarlanmış güvenlik ilkeleri ve Office 365 için Microsoft Defender](preset-security-policies.md). Ayrıca belirli kullanıcılar, gruplar veya etki alanları için geçerli olan Güvenli Ekler ilkeleri de oluşturabilirsiniz. Yönergeler için bkz. [Office 365 için Microsoft Defender'da Güvenli Ekler ilkelerini ayarlama](set-up-safe-attachments-policies.md).
-
-Dosya eki şifrelenmişse veya parola korumalıysa, Güvenli Ekler tarafından incelenemez. Eki içeren ileti teslim edilecek ve alıcı dosyanın Güvenli Ekler tarafından taranmadığına dair bir uyarı almaz.
 
 Aşağıdaki tabloda, Office 365 için Microsoft Defender içeren Microsoft 365 ve Office 365 kuruluşlarında Güvenli Ekler senaryoları açıklanmaktadır (başka bir deyişle, lisans eksikliği örneklerde hiçbir zaman sorun oluşturmaz).
 

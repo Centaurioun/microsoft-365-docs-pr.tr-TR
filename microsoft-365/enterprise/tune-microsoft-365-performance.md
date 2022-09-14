@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 04/09/2019
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -16,19 +16,19 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
-description: Microsoft 365 performansını nasıl artırabileceğinizi gösteren eğitim kurslarına, bloglara, makalelere ve diğer kaynaklara bağlantılar.
-ms.openlocfilehash: ede2c6ff63ad0525448a61b14d6dd18ac77f1d65
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft 365'in performansını nasıl artırabileceğinizi gösteren eğitim kurslarına, bloglara, makalelere ve diğer kaynaklara bağlantılar.
+ms.openlocfilehash: 798d542a4ea2fe0ba5b6eb9b13e00f6826f2051b
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091995"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670553"
 ---
 # <a name="tune-microsoft-365-performance"></a>Microsoft 365 performansını ayarlama
 
-Bu makale, Microsoft 365 performansını nasıl artırabileceğinizi gösteren eğitim kurslarına, bloglara, makalelere ve diğer kaynaklara bağlantı sağlar.
+Bu makale, Microsoft 365'in performansını nasıl artırabileceğinizi gösteren eğitim kurslarına, bloglara, makalelere ve diğer kaynaklara bağlantı sağlar.
   
-Bu makale, [Microsoft 365 projesi için ağ planlama ve performans ayarlamanın](./network-planning-and-performance.md) bir parçasıdır.
+Bu makale, [Microsoft 365 için ağ planlama ve performans ayarlama](./network-planning-and-performance.md) projesinin bir parçasıdır.
 
 ## <a name="articles-about-fine-tuning-microsoft-365-and-office-365-performance"></a>Microsoft 365 ve Office 365 performansında ince ayarlama hakkındaki makaleler
 

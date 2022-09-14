@@ -1,12 +1,12 @@
 ---
-title: çevrimiçi SharePoint performansını ayarlama
+title: SharePoint Online performansını ayarlama
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 10/2/2019
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,20 +19,20 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: SharePoint Online için sayfa indirme sürelerinin performansını nasıl artırabileceğinizi gösteren diğer makalelerin bağlantılarını içerir.
-ms.openlocfilehash: 196dbb502c813ec0f877069008d4c90494170665
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5cd50fb409a1da255dc1b6ce9e794ddbc09f910d
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099135"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671929"
 ---
-# <a name="tune-sharepoint-online-performance"></a>çevrimiçi SharePoint performansını ayarlama
+# <a name="tune-sharepoint-online-performance"></a>SharePoint Online performansını ayarlama
 
 Bu makale, SharePoint Online için sayfa indirme sürelerinin performansını nasıl artırabileceğinizi gösteren diğer makalelerin bağlantılarını içerir. Bu makale, [Office 365 projesi için ağ planlama ve performans ayarlamanın](./network-planning-and-performance.md) bir parçasıdır.
 
-## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>çevrimiçi performans SharePoint ince ayarlama hakkında makaleler
+## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>SharePoint Online performansını ayarlama hakkındaki makaleler
 
-çevrimiçi performans SharePoint ince ayar yapmak için bu makaleleri kullanın.
+SharePoint Online performansına ince ayar yapmak için bu makaleleri kullanın.
   
 - [SharePoint Online için performans ayarlamaya giriş](introduction-to-performance-tuning-for-sharepoint-online.md)
 
@@ -48,7 +48,7 @@ Bu makale, SharePoint Online için sayfa indirme sürelerinin performansını na
 
 - [SharePoint Online'da küçültme ve paketleme](minification-and-bundling-in-sharepoint-online.md)
 
-- [SharePoint Online ile Office 365 Content Delivery Network (CDN) kullanma](use-microsoft-365-cdn-with-spo.md)
+- [SharePoint Online ile Office 365 Content Delivery Network'i (CDN) kullanma](use-microsoft-365-cdn-with-spo.md)
 
 - [SharePoint Online'da performansı geliştirmek için İçerik Sorgusu Web Bölümü yerine İçerik Arama Web Bölümü kullanma](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
 
@@ -64,8 +64,8 @@ Bu makale, SharePoint Online için sayfa indirme sürelerinin performansını na
 
 - [SharePoint Online modern portal sayfalarında web bölümü performansını iyileştirme](modern-web-part-optimization.md)
 
-- [SharePoint Çevrimiçi modern portal sayfalarında sayfa çağrılarını iyileştirme](modern-page-call-optimization.md)
+- [SharePoint Online modern portal sayfalarında sayfa çağrılarını iyileştirme](modern-page-call-optimization.md)
 
-- [SharePoint Çevrimiçi modern portal sayfalarında sayfa kalınlığını iyileştirme](modern-page-weight-optimization.md)
+- [SharePoint Online modern portal sayfalarında sayfa kalınlığını iyileştirme](modern-page-weight-optimization.md)
 
 - [SharePoint Online modern portal sayfalarında resimleri iyileştirme](modern-image-optimization.md)

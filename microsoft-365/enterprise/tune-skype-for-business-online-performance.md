@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 9/29/2016
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
 description: Bu makalede ağ bant genişliği gereksinimlerini planlayan veya Skype Kurumsal Online'ın performansını geliştiren sistem yöneticilerine yönelik bağlantılar sağlanır.
-ms.openlocfilehash: 2316f919d564216cd015b398641278e2f3a11567
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f1cdd649a80e41fe67dae52abcdd9aff1c7eccf4
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077375"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671885"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Skype Kurumsal Çevrimiçi Sürüm performansını ayarlama
 
@@ -40,7 +40,7 @@ Bu makalede, ağ bant genişliği gereksinimlerini planlamak isteyen veya Skype 
     
 ## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>Skype Kurumsal Çevrimiçi performansını geliştirmenin diğer yolları
 
-- [Skype Kurumsal Online'da ExpressRoute ve QoS](/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online): Office 365 ve Skype Kurumsal Online için Azure ExpressRoute kullanarak ayrılmış bir ağ bağlantısı üzerinden Office 365 Bağlan. 
+- [Skype Kurumsal Online'da ExpressRoute ve QoS: Office 365](/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online) ve Skype Kurumsal Online için Azure ExpressRoute kullanarak ayrılmış bir ağ bağlantısı üzerinden Office 365 bağlanın. 
     
 - [Skype Kurumsal Online'da Arama Kalitesi Panosu'nu açma ve kullanma](/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard): Çağrı Kalitesi Panosu (CQD), Skype Kurumsal hizmetleri kullanılarak yapılan çağrıların kalitesini izlemenize ve bunlar hakkında içgörüler elde etmenize olanak tanır. 
     
@@ -52,7 +52,7 @@ Bu makalede, ağ bant genişliği gereksinimlerini planlamak isteyen veya Skype 
     
 - [Arama Planlarını Ayarlama (Skype Kurumsal)](/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
     
-- [Office 365'da Telefon Sistemi ile şunları elde edersiniz Office 365](/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
+- [Office 365'de Telefon Sistemi ile şunları elde edersiniz:](/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
     
 ## <a name="see-also"></a>Ayrıca bkz.
 

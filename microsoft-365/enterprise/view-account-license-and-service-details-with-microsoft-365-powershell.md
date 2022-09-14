@@ -1,12 +1,12 @@
 ---
-title: PowerShell ile Microsoft 365 hesabı lisansı ve hizmet ayrıntılarını görüntüleme
+title: PowerShell ile Microsoft 365 hesap lisansı ve hizmet ayrıntılarını görüntüleme
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,18 +19,18 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Kullanıcılara atanmış Microsoft 365 hizmetlerini belirlemek için PowerShell'in nasıl kullanılacağını açıklar.
-ms.openlocfilehash: 01f8865faeb187bef23c5757a0373fbc8be2d139
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a148a2ed1e12507a3a004555e90060c48a7a54c6
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095586"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669748"
 ---
-# <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>PowerShell ile Microsoft 365 hesabı lisansı ve hizmet ayrıntılarını görüntüleme
+# <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>PowerShell ile Microsoft 365 hesap lisansı ve hizmet ayrıntılarını görüntüleme
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-Microsoft 365'de lisans planlarından (SKU'lar veya Microsoft 365 planları olarak da adlandırılır) lisanslar, kullanıcılara bu planlar için tanımlanan Microsoft 365 hizmetlerine erişim sağlar. Ancak, bir kullanıcının şu anda kendisine atanmış bir lisansta bulunan tüm hizmetlere erişimi olmayabilir. Kullanıcı hesaplarında hizmetlerin durumunu görüntülemek için Microsoft 365 için PowerShell'i kullanabilirsiniz.
+Microsoft 365'te lisans planlarından alınan lisanslar (SKU'lar veya Microsoft 365 planları olarak da adlandırılır) kullanıcılara bu planlar için tanımlanan Microsoft 365 hizmetlerine erişim sağlar. Ancak, bir kullanıcının şu anda kendisine atanmış bir lisansta bulunan tüm hizmetlere erişimi olmayabilir. Kullanıcı hesaplarında hizmetlerin durumunu görüntülemek için Microsoft 365 için PowerShell'i kullanabilirsiniz.
 
 Lisans planları, lisans ve hizmetler hakkında daha fazla bilgi için bkz. [PowerShell ile lisansları ve hizmetleri görüntüleme](view-licenses-and-services-with-microsoft-365-powershell.md).
 

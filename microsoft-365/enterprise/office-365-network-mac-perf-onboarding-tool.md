@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 1/18/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 ağ bağlantısı test aracı
-ms.openlocfilehash: 39eb2fd4bd5032ee99cd675838ad96b864d5a782
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: e4045a8fde1d33bdc0072fbce9368d0ef8774ae7
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281783"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670575"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 ağ bağlantısı test aracı
 

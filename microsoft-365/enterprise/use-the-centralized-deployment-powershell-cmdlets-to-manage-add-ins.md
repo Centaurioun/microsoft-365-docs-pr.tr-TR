@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 1/24/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,17 +19,17 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: Microsoft 365 kuruluşunuz için Office Eklentileri dağıtmanıza ve yönetmenize yardımcı olması için Merkezi Dağıtım PowerShell cmdlet'lerini kullanın.
-ms.openlocfilehash: 07e0f69cd95bc1553adea96242bf44eb9f1217f1
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft 365 kuruluşunuz için Office Eklentilerini dağıtmanıza ve yönetmenize yardımcı olması için Merkezi Dağıtım PowerShell cmdlet'lerini kullanın.
+ms.openlocfilehash: e76e6bd4c096d74b3712ef9b79b649f8d716eac6
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078479"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671756"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Eklentileri yönetmek için Merkezi Dağıtım PowerShell cmdlet'lerini kullanma
 
-Microsoft 365 genel yöneticisi olarak, Office Eklentileri Merkezi Dağıtım özelliği aracılığıyla kullanıcılara dağıtabilirsiniz (bkz. [Yönetim merkezinde Office Eklentileri dağıtma](../admin/manage/manage-deployment-of-add-ins.md). Microsoft 365 yönetim merkezi aracılığıyla Office Eklentileri dağıtmanın yanı sıra Microsoft PowerShell'i de kullanabilirsiniz. [Windows PowerShell için O365 Merkezi Add-In Dağıtım Modülünü](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) yükleyin.
+Microsoft 365 genel yöneticisi olarak, Merkezi Dağıtım özelliği aracılığıyla kullanıcılara Office Eklentileri dağıtabilirsiniz (bkz. [Yönetim merkezinde Office Eklentilerini dağıtma](../admin/manage/manage-deployment-of-add-ins.md). Office Eklentilerini Microsoft 365 yönetim merkezi aracılığıyla dağıtmanın yanı sıra Microsoft PowerShell'i de kullanabilirsiniz. [Windows PowerShell için O365 Merkezi Add-In Dağıtım Modülünü](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) yükleyin.
 
 Modülü indirdikten sonra normal bir Windows PowerShell penceresi açın ve aşağıdaki cmdlet'i çalıştırın:
 
@@ -37,19 +37,19 @@ Modülü indirdikten sonra normal bir Windows PowerShell penceresi açın ve aş
  Import-Module -Name O365CentralizedAddInDeployment
 ```
 
-## <a name="connect-using-your-admin-credentials"></a>Yönetici kimlik bilgilerinizi kullanarak Bağlan
+## <a name="connect-using-your-admin-credentials"></a>Yönetici kimlik bilgilerinizi kullanarak bağlanma
 
 Merkezi Dağıtım cmdlet'lerini kullanabilmeniz için önce oturum açmanız gerekir.
 
 1. PowerShell'i başlatın.
 
-2. Şirket yöneticisi kimlik bilgilerinizi kullanarak PowerShell'e Bağlan. Aşağıdaki cmdlet'i çalıştırın.
+2. Şirket yöneticisi kimlik bilgilerinizi kullanarak PowerShell'e bağlanın. Aşağıdaki cmdlet'i çalıştırın.
 
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. **Kimlik Bilgilerini Girin** sayfasında, Microsoft 365 **Kullanıcı Yöneticisi** veya **Genel yönetici** kimlik bilgilerinizi girin. Alternatif olarak, kimlik bilgilerinizi doğrudan cmdlet'ine girebilirsiniz.
+3. **Kimlik Bilgilerini Girin** sayfasında Microsoft 365 **Kullanıcı Yönetici** veya **Genel yönetici** kimlik bilgilerinizi girin. Alternatif olarak, kimlik bilgilerinizi doğrudan cmdlet'ine girebilirsiniz.
 
     Şirket yöneticisi kimlik bilgilerinizi PSCredential nesnesi olarak belirterek aşağıdaki cmdlet'i çalıştırın.
 
@@ -60,9 +60,9 @@ Merkezi Dağıtım cmdlet'lerini kullanabilmeniz için önce oturum açmanız ge
   ```
 
 > [!NOTE]
-> PowerShell kullanma hakkında daha fazla bilgi için bkz. [PowerShell ile Microsoft 365 için Bağlan](./connect-to-microsoft-365-powershell.md).
+> PowerShell kullanma hakkında daha fazla bilgi için bkz. [PowerShell ile Microsoft 365'e bağlanma](./connect-to-microsoft-365-powershell.md).
 
-## <a name="upload-an-add-in-manifest"></a>Eklenti bildirimi Upload
+## <a name="upload-an-add-in-manifest"></a>Eklenti bildirimini karşıya yükleme
 
 Dosya konumu veya URL olabilecek bir yoldan eklenti bildirimini karşıya yüklemek için **New-OrganizationAdd-In cmdlet'ini** çalıştırın. Aşağıdaki örnekte  _, ManifestPath_ parametresinin değeri için bir dosya konumu gösterilmektedir.
 
@@ -76,9 +76,9 @@ Aşağıdaki örnekte gösterildiği gibi, bir eklentiyi karşıya yüklemek ve 
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a>Office Store'dan bir eklenti Upload
+## <a name="upload-an-add-in-from-the-office-store"></a>Office Mağazası'ndan eklenti yükleme
 
-Office Store'dan bir bildirim yüklemek için **New-OrganizationAddIn** cmdlet'ini çalıştırın.
+Office Mağazası'ndan bir bildirim yüklemek için **New-OrganizationAddIn** cmdlet'ini çalıştırın.
 
 Aşağıdaki örnekte **, New-OrganizationAddIn** cmdlet'i bir Birleşik Devletler konumu ve içerik pazarı için eklentinin AssetId değerini belirtir.
 
@@ -86,12 +86,12 @@ Aşağıdaki örnekte **, New-OrganizationAddIn** cmdlet'i bir Birleşik Devletl
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-_AssetId_ parametresinin değerini belirlemek için, eklentinin Office Store web sayfasının URL'sinden kopyalayabilirsiniz. AssetId'ler her zaman "WA" ile başlar ve ardından bir sayı gelir. Örneğin, önceki örnekte WA104099688 AssetId değerinin kaynağı eklentinin Office Store web sayfası URL'sidir: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).
+_AssetId_ parametresinin değerini belirlemek için, eklentinin Office Mağazası web sayfasının URL'sinden kopyalayabilirsiniz. AssetId'ler her zaman "WA" ile başlar ve ardından bir sayı gelir. Örneğin, önceki örnekte, WA104099688 AssetId değerinin kaynağı, eklentinin Office Mağazası web sayfası URL'sidir: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).
 
 _Locale_ parametresi ve _ContentMarket_ parametresinin değerleri aynıdır ve eklentiyi yüklemeye çalıştığınız ülkeyi/bölgeyi gösterir. Biçim en-US, fr-FR şeklindedir. ve benzeri.
 
 > [!NOTE]
-> Office Store'dan yüklenen eklentiler, Office Store'da kullanıma sunulan en son güncelleştirmeden sonra birkaç gün içinde otomatik olarak güncelleştirilir.
+> Office Mağazası'ndan yüklenen eklentiler, Office Mağazası'nda en son güncelleştirmenin kullanıma sunulmasından sonra birkaç gün içinde otomatik olarak güncelleştirilir.
 
 ## <a name="get-details-of-an-add-in"></a>Eklentinin ayrıntılarını alma
 
@@ -162,7 +162,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
 ```
 
 > [!NOTE]
-> Office Store'dan yüklenen eklentiler, Office Store'da kullanıma sunulan en son güncelleştirmeden sonra birkaç gün içinde otomatik olarak güncelleştirilir.
+> Office Mağazası'ndan yüklenen eklentiler, Office Mağazası'nda en son güncelleştirmenin kullanıma sunulmasından sonra birkaç gün içinde otomatik olarak güncelleştirilir.
 
 ## <a name="delete-an-add-in"></a>Eklentiyi silme
 

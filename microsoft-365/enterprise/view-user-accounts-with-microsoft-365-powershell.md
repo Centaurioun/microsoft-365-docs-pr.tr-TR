@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: PowerShell ile Microsoft 365 kullanıcı hesaplarınızı farklı şekillerde görüntülemeyi, listelemeyi veya görüntülemeyi öğrenin.
-ms.openlocfilehash: cbbb188c50e4d163d5ef4226a83968c64e8a260c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bf3e8841272cfd744a41675a6b3bca1c81586116
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090739"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672787"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>PowerShell ile Microsoft 365 kullanıcı hesaplarını görüntüleme
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-Microsoft 365 kiracınızın hesaplarını görüntülemek için Microsoft 365 yönetim merkezi kullanabilirsiniz. Microsoft 365 için PowerShell bunu etkinleştirir ancak ek işlevler de sağlar.
+microsoft 365 kiracınızın hesaplarını görüntülemek için Microsoft 365 yönetim merkezi kullanabilirsiniz. Microsoft 365 için PowerShell bunu etkinleştirir ancak ek işlevler de sağlar.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph için Azure Active Directory PowerShell modülünü kullanma
 
@@ -76,7 +76,7 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 
 Varsayılan olarak, **Get-AzureADUser** cmdlet'i hesapların yalnızca *ObjectID*, *DisplayName* ve *UserPrincipalName* özelliklerini görüntüler.
 
-Görüntülenecek özellikler hakkında daha seçici olmak için Select cmdlet'ini **Get-AzureADUser** cmdlet'iyle birlikte kullanın. İki cmdlet'i birleştirmek için, Azure Active Directory PowerShell'e Graph için bir komutun sonuçlarını alıp sonraki komuta göndermesini bildiren "kanal" karakterini ("|") kullanın. Her kullanıcı hesabı için *DisplayName*, *Department* ve *UsageLocation* değerlerini görüntüleyen örnek bir komut aşağıda verilmiştir:
+Görüntülenecek özellikler hakkında daha seçici olmak için Select cmdlet'ini **Get-AzureADUser** cmdlet'iyle birlikte kullanın. İki cmdlet'i birleştirmek için Graph için Azure Active Directory PowerShell'e bir komutun sonuçlarını alıp sonraki komuta göndermesini söyleyen "kanal" karakterini ("|") kullanın. Her kullanıcı hesabı için *DisplayName*, *Department* ve *UsageLocation* değerlerini görüntüleyen örnek bir komut aşağıda verilmiştir:
   
 ```powershell
 Get-AzureADUser | Select DisplayName,Department,UsageLocation
@@ -106,7 +106,7 @@ Kullanıcı hesaplarının iki kaynağı vardır:
 
 - şirket içi AD'den buluta eşitlenen hesaplar olan Windows Server Active Directory (AD).
 
-- doğrudan bulutta oluşturulan Azure Active Directory (Azure AD) hesapları.
+- Doğrudan bulutta oluşturulan Azure Active Directory (Azure AD) hesapları.
 
 **Şirket içi** AD'den eşitlenen hesapları bulmak için aşağıdaki komutu kullanabilirsiniz. PowerShell'e *DirSyncEnabled* özniteliği *True* olarak ayarlanmış olan tüm kullanıcıları alma talimatını sağlar. 
 
@@ -123,13 +123,13 @@ Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
 
 ### <a name="view-accounts-based-on-a-common-property"></a>Ortak bir özelliğe göre hesapları görüntüleme
 
-Görüntülenecek hesap listesi hakkında daha seçici olmak için **Get-AzureADUser** cmdlet'iyle birlikte **Where** cmdlet'ini kullanabilirsiniz. İki cmdlet'i birleştirmek için, Azure Active Directory PowerShell'e Graph için bir komutun sonuçlarını alıp sonraki komuta göndermesini bildiren "kanal" karakterini ("|") kullanın. Aşağıda, yalnızca belirtilmemiş kullanım konumuna sahip olan kullanıcı hesaplarını görüntüleyen örnek bir komut verilmiştir:
+Görüntülenecek hesap listesi hakkında daha seçici olmak için **Get-AzureADUser** cmdlet'iyle birlikte **Where** cmdlet'ini kullanabilirsiniz. İki cmdlet'i birleştirmek için Graph için Azure Active Directory PowerShell'e bir komutun sonuçlarını alıp sonraki komuta göndermesini söyleyen "kanal" karakterini ("|") kullanın. Aşağıda, yalnızca belirtilmemiş kullanım konumuna sahip olan kullanıcı hesaplarını görüntüleyen örnek bir komut verilmiştir:
   
 ```powershell
 Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
 ```
 
-Bu komut, Graph için Azure Active Directory PowerShell'e şu yönergeleri sağlar:
+Bu komut Graph için Azure Active Directory PowerShell'e şunları yönerge eder:
   
 1. Kullanıcı hesaplarıyla ilgili tüm bilgileri (**Get-AzureADUser**) alın ve sonraki komuta (**|**) gönderin.
     
@@ -178,7 +178,7 @@ AnneWlitwareinc.onmicrosoft.com       Anne Wallace          True
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-**Get-MsolUser** cmdlet'i, görüntülenen kullanıcı hesapları kümesini filtrelemek için bir dizi parametreye de sahiptir. Örneğin, lisanssız kullanıcıların listesi için (Microsoft 365 eklenmiş ancak henüz hizmetlerden herhangi birini kullanma lisansına sahip olmayan kullanıcılar) şu komutu çalıştırın:
+**Get-MsolUser** cmdlet'i, görüntülenen kullanıcı hesapları kümesini filtrelemek için bir dizi parametreye de sahiptir. Örneğin, lisanssız kullanıcıların listesi (Microsoft 365'e eklenmiş ancak henüz herhangi bir hizmeti kullanma lisansına sahip olmayan kullanıcılar) için şu komutu çalıştırın:
   
 ```powershell
 Get-MsolUser -UnlicensedUsersOnly
@@ -258,7 +258,7 @@ Varsayılan olarak **, Get-MsolUser** cmdlet'i kullanıcı hesaplarının şu ü
 
 - isLicensed
 
-Kullanıcının çalıştığı departman ve Microsoft 365 hizmetlerini kullandığı ülke/bölge gibi ek özelliklere ihtiyacınız varsa, kullanıcı hesabı özelliklerinin listesini belirtmek için **Get-MsolUser'ı** **Seç** cmdlet'iyle birlikte çalıştırabilirsiniz. İşte bir örnek:
+Kullanıcının çalıştığı departman ve Microsoft 365 hizmetlerini kullandığı ülke/bölge gibi ek özelliklere ihtiyacınız varsa **Get-MsolUser'ı** **Seç** cmdlet'iyle birlikte çalıştırarak kullanıcı hesabı özelliklerinin listesini belirtebilirsiniz. İşte bir örnek:
   
 ```powershell
 Get-MsolUser | Select DisplayName, Department, UsageLocation
@@ -312,9 +312,9 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-Microsoft 365 kullanıcılarınızı oluşturmak ve yönetmek için dizin eşitlemesi kullanıyorsanız, Microsoft 365 kullanıcının yansıtıldığı yerel hesabı görüntüleyebilirsiniz. Aşağıdaki örnekte şu varsayımlar yer alır:
+Microsoft 365 kullanıcılarınızı oluşturmak ve yönetmek için dizin eşitlemesi kullanıyorsanız, microsoft 365 kullanıcısının yansıtıldığı yerel hesabı görüntüleyebilirsiniz. Aşağıdaki örnekte şu varsayımlar yer alır:
 
-- Azure AD Bağlan, ObjectGUID'nin varsayılan kaynak bağlantı noktasını kullanacak şekilde yapılandırılmıştır. (Kaynak tutturucu yapılandırma hakkında daha fazla bilgi için bkz. [Azure AD Bağlan: Tasarım kavramları](/azure/active-directory/hybrid/plan-connect-design-concepts)).
+- Azure AD Connect, ObjectGUID'nin varsayılan kaynak bağlayıcısını kullanacak şekilde yapılandırılmıştır. (Kaynak tutturucu yapılandırma hakkında daha fazla bilgi için bkz. [Azure AD Bağlan: Tasarım kavramları](/azure/active-directory/hybrid/plan-connect-design-concepts)).
 - PowerShell için Active Directory Domain Services modülü yüklendi (bkz[. RSAT araçları](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)).
 
 ```powershell
@@ -327,4 +327,4 @@ Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipa
   
 [PowerShell ile Microsoft 365’i yönetme](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Microsoft 365 için PowerShell ile Kullanmaya başlayın](getting-started-with-microsoft-365-powershell.md)
+[Microsoft 365 için PowerShell'i kullanmaya başlama](getting-started-with-microsoft-365-powershell.md)

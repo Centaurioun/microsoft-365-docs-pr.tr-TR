@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: SharePoint Online'ın kullanıcıların karşıya yüklediği dosyalarda virüsleri nasıl algılayıp kullanıcıların dosyaları indirmesini veya eşitlemesini nasıl önlediği hakkında bilgi edinin.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: e57865d0c8ec3993080c822438b7c4037ccab765
-ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: e24219c6ef4298410e02efb010cd49c6f2c1206f
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/27/2022
-ms.locfileid: "67450069"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672809"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online, OneDrive ve Microsoft Teams'de yerleşik virüs koruması
 

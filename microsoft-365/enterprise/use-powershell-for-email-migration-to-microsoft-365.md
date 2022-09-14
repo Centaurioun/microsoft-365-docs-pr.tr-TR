@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,19 +15,19 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
-description: PowerShell kullanarak e-postayı mevcut sisteminizden Microsoft 365 geçirmeyi öğrenin.
-ms.openlocfilehash: 26c8b6038db090559a1c3cc908689918a8c2be11
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: PowerShell kullanarak e-postayı mevcut sisteminizden Microsoft 365'e geçirmeyi öğrenin.
+ms.openlocfilehash: d4eebdcc80e058244d11ed8c375aefb5461d5ec1
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098196"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672743"
 ---
-# <a name="how-to-use-powershell-to-migrate-email-to-microsoft-365"></a>E-postayı Microsoft 365 geçirmek için PowerShell'i kullanma
+# <a name="how-to-use-powershell-to-migrate-email-to-microsoft-365"></a>E-postayı Microsoft 365'e geçirmek için PowerShell'i kullanma
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-Yöneticiler, Microsoft 365 ilk kez ayarlarken genellikle mevcut sistemlerden e-postayı geçirir. Aşağıdaki makalelerde, Windows PowerShell kullanarak e-posta geçirme açıklanmaktadır:
+Yöneticiler genellikle Microsoft 365'i ilk kez kurarken mevcut sistemlerden e-postayı geçirir. Aşağıdaki makalelerde, Windows PowerShell kullanarak e-posta geçirme açıklanmaktadır:
   
 - [Microsoft 365'e geçiş geçişi gerçekleştirmek için PowerShell'i kullanma](use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md)
     
@@ -41,10 +41,10 @@ Yöneticiler, Microsoft 365 ilk kez ayarlarken genellikle mevcut sistemlerden e-
   
 [Microsoft 365 için PowerShell'i kullanmaya başlama](getting-started-with-microsoft-365-powershell.md)
   
-[PowerShell ile SharePoint yönetme](manage-sharepoint-online-with-microsoft-365-powershell.md)
+[SharePoint'i PowerShell ile yönetme](manage-sharepoint-online-with-microsoft-365-powershell.md)
   
-[Microsoft 365'de rapor oluşturmak için Windows PowerShell kullanma](use-windows-powershell-to-create-reports-in-microsoft-365.md)
+[Microsoft 365'te rapor oluşturmak için Windows PowerShell kullanma](use-windows-powershell-to-create-reports-in-microsoft-365.md)
 
-[Microsoft 365 PowerShell'i neden kullanmanız gerekiyor?](why-you-need-to-use-microsoft-365-powershell.md)
+[Neden Microsoft 365 PowerShell kullanmanız gerekiyor?](why-you-need-to-use-microsoft-365-powershell.md)
   
 [PowerShell ile Microsoft 365 kullanıcı hesaplarını, lisanslarını ve gruplarını yönetme](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)

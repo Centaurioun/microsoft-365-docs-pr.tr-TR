@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: efe3ea8feb30e1177ff2c156fd6ccb284708a5b4
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 2ffe38f5c2bbd248968df709644972d2468b4826
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523324"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672347"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de sorun giderme modunu kullanmaya başlama 
 
@@ -85,6 +85,14 @@ Uç Nokta için Microsoft Defender sorun giderme modu, çeşitli Microsoft Defen
   Windows Server 2022|>=20348.617|[KB5011558: Microsoft Update Kataloğu](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011558)
   Windows Server 2019 (RS5)|>=17763.2746|[KB5011551: Microsoft Update Kataloğu](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011551)
 
+- Sorun giderme modu, Windows Server 2012 R2 ve Windows Server 2016 için modern, birleşik çözümü çalıştıran makineler için de kullanılabilir. Sorun giderme modu sırasında cihazınızda kurcalama korumasını geçici olarak devre dışı bırakmak ve gerekli yapılandırma değişikliklerinizi yapmak için kullanın `Set-MPPreference -DisableTamperProtection $true` . Sorun giderme modunu kullanmadan önce aşağıdaki bileşenlerin tümünün güncel olduğundan emin olun:
+
+  - Sense sürüm 10.8049.22439.1084 veya üzeri ([KB5005292: Microsoft Update Kataloğu](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005292))
+
+  - Defender Virüsten Koruma - Platform: 4.18.2207.7 veya üzeri ([KB4052623: Microsoft Update Kataloğu](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623))
+
+  - Defender Virüsten Koruma - Altyapı: 1.1.19500.2 veya üzeri ([KB2267602: Microsoft Update Kataloğu](https://www.microsoft.com/en-us/wdsi/defenderupdates))
+
 - Sorun giderme modunun uygulanabilmesi için Uç Nokta için Microsoft Defender cihazda kiracıya kaydedilmiş ve etkin olmalıdır.
 
 - Cihazın etkin olarak Microsoft Defender Virüsten Koruma, sürüm 4.18.2203 veya üzerini çalıştırıyor olması gerekir.
@@ -110,7 +118,9 @@ Uç Nokta için Microsoft Defender sorun giderme modu, çeşitli Microsoft Defen
 Ortamınızda gerçekleşen sorun giderme olaylarına görünürlük sağlamak için önceden oluşturulmuş bazı gelişmiş avcılık sorgularını aşağıda bulabilirsiniz. Bu sorguları, cihazlar sorun giderme modundayken sizi uyaracak [algılama kuralları oluşturmak](/defender/custom-detection-rules.md#create-a-custom-detection-rule) için de kullanabilirsiniz.
 
 ### <a name="get-troubleshooting-events-for-a-particular-device"></a>Belirli bir cihaz için sorun giderme olaylarını alma
-İlgili satırları açıklama satırı yaparak deviceId veya deviceName ölçütüne göre arama gerçekleştirin.  
+
+İlgili satırları açıklama satırı yaparak deviceId veya deviceName ölçütüne göre arama gerçekleştirin. 
+ 
 ```kusto
 //let deviceName = "<deviceName>";   // update with device name
 let deviceId = "<deviceID>";   // update with device id

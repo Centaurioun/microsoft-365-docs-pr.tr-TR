@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/08/2021
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -23,12 +23,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Ortaya çıkan sorunları erken algılamanıza yardımcı olmak için istemci bilgisayar bağlantılarınızın geçmişini denetlemeyi öğrenin.
-ms.openlocfilehash: ceb56f88d057d3a003f158369c9d35223852c7fa
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2a4d904fe0b5a09851da5dc83ca238eb70638f9a
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100445"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670509"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Temelleri ve performans geçmişini kullanarak performans ayarlamayı Office 365
 
@@ -46,7 +46,7 @@ Office 365, otomasyon ve gerçek kişiler tarafından izlenen yüksek kapasiteli
 Performans iyileştirmeleri bulutta hiçbir zaman durmaz, bu nedenle bulutu sağlıklı ve hızlı tutma deneyimi de yoktur. Konumunuzdan Office 365'a bağlanırken bir performans sorununuz varsa, destek olayıyla başlamamak veya beklememek en iyisidir. Bunun yerine, sorunu 'içeriden dışa' araştırmaya başlamanız gerekir. Başka bir ifadeyle ağınızın içinden başlayın ve Office 365... Destek ile bir servis talebi açmadan önce, verileri toplayabilir ve sorunu keşfedecek ve çözebilecek eylemler gerçekleştirebilirsiniz.
   
 > [!IMPORTANT]
-> Office 365 kapasite planlaması ve sınırları hakkında bilgi edinin. Bu bilgiler, bir performans sorununu çözmeye çalışırken sizi eğrinin önüne koyar. burada [Microsoft 365 ve Office 365 hizmet açıklamalarının bağlantısı yer alır](/office365/servicedescriptions/office-365-service-descriptions-technet-library). Bu merkezi bir merkezdir ve Office 365 tarafından sunulan tüm hizmetlerin buradan kendi Hizmet Açıklamalarına giden bir bağlantısı vardır. Başka bir deyişle, SharePoint Online'ın standart sınırlarını görmeniz gerekirse, örneğin Çevrimiçi [Hizmet Açıklaması'nı SharePoint](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description) tıklayıp [SharePoint Çevrimiçi Sınırlar bölümünü](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) bulursunuz.
+> Office 365 kapasite planlaması ve sınırları hakkında bilgi edinin. Bu bilgiler, bir performans sorununu çözmeye çalışırken sizi eğrinin önüne koyar. Microsoft [365 ve Office 365 hizmet açıklamalarının bağlantısı aşağıdadır](/office365/servicedescriptions/office-365-service-descriptions-technet-library). Bu merkezi bir merkezdir ve Office 365 tarafından sunulan tüm hizmetlerin buradan kendi Hizmet Açıklamalarına giden bir bağlantısı vardır. Başka bir deyişle, SharePoint Online için standart sınırları görmeniz gerekiyorsa, örneğin, [SharePoint Online Hizmet Açıklaması'na](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description) tıklayıp [SharePoint Online Sınırları bölümünü](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) bulursunuz.
   
 Performansın kayan bir ölçek olduğunu anlayarak sorun giderme işleminize girdiğinizden emin olun. Bu idealleştirilmiş bir değer elde etmek ve kalıcı olarak korumakla ilgili değildir. Çok sayıda kullanıcıya ekleme veya büyük veri geçişleri yapma gibi bazen yüksek bant genişliğine sahip görevler stresli olacaktır, bu nedenle performans etkilerini *planlayın* . Performans hedefleriniz hakkında kabaca bir fikriniz olmalıdır, ancak birçok değişken performansa dahil olduğundan performans değişir.
   
@@ -56,9 +56,9 @@ Performans sorunlarını giderme, belirli hedeflere ulaşmak ve bu sayıları s�
 
 İlk olarak, karşılaştığınız şeyin gerçekten bir hizmet olayı değil performans sorunu olduğundan emin olmanız gerekir. Performans sorunu, Office 365 hizmet olayından farklıdır. Bunları nasıl ayırt etmek istediğiniz aşağıda anlatılıyor.
   
-Hizmet Olayları, Office 365 hizmetinin kendisi sorun yaşadığında gerçekleşir. Microsoft 365 yönetim merkezi **Geçerli sistem durumu** altında kırmızı veya sarı simgeler görebilirsiniz. Office 365 bağlanan istemci bilgisayarlarda performansın yavaş olduğunu fark edebilirsiniz. Örneğin Geçerli sistem durumu kırmızı bir simge bildirirse ve Exchange yanında **Araştırılıyor** ifadesini görüyorsanız, kuruluşunuzda Exchange Online kullanan istemci posta kutularının yavaş olduğundan şikayet eden kişilerden de arama alabilirsiniz. Bu durumda, Exchange Online performansınızın Hizmet sorunlarının kurbanı olduğunu varsaymak mantıklıdır.
+Hizmet Olayları, Office 365 hizmetinin kendisi sorun yaşadığında gerçekleşir. Microsoft 365 yönetim merkezi **Geçerli sistem durumu** altında kırmızı veya sarı simgeler görebilirsiniz. Office 365 bağlanan istemci bilgisayarlarda performansın yavaş olduğunu fark edebilirsiniz. Örneğin, Geçerli sistem durumu kırmızı bir simge bildirirse ve Exchange'in yanında **Araştırılıyor** ifadesini görüyorsanız, kuruluşunuzda Exchange Online kullanan istemci posta kutularının yavaş olduğundan şikayet eden kişilerden de arama alabilirsiniz. Bu durumda, Exchange Online performansınızın Hizmet sorunlarının kurbanı olduğunu varsaymak mantıklıdır.
   
-![Exchange hariç tüm iş yüklerinin yeşil gösterildiği ve Hizmetin Geri Yüklendiği'ni gösteren Office 365 Sistem Durumu panosu.](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
+![Hizmet Geri Yüklendi'yi gösteren Exchange dışında tüm iş yüklerinin yeşil gösterildiği Office 365 Sistem Durumu panosu.](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
 Bu noktada, Office 365 yöneticisi olarak sistem bakımı hakkında güncel bilgiler edinmek için **Geçerli sistem durumunu** denetlemeniz **ve ardından Ayrıntıları ve geçmişi görüntüle** seçeneğini sık sık denetlemeniz gerekir. **Geçerli sistem durumu** panosu, hizmetteki değişiklikler ve sorunlar hakkında sizi güncelleştirmek için yapılmıştır. Sistem durumu geçmişine, yöneticiden yöneticiye yazılan notlar ve açıklamalar, ölçmenize ve devam eden çalışmalar hakkında sizi haberdar etmeye yardımcı olur.
   
@@ -82,7 +82,7 @@ Performans sorunları genellikle zaman içinde ortaya çıkar, bu nedenle gerçe
   
 - Gelen Kutumdan Takvimime geçmek eskiden fark etmediğim bir şeydi ve şimdi kahve molası oldu. Eskiden olduğu gibi davranmasını sağlayabilir misin?
     
-- Dosyalarımı SharePoint Online'a yüklemek sonsuza kadar sürüyor. Neden öğleden sonra yavaş oluyor ama başka bir zaman hızlı oluyor? Hızlı olamaz mı?
+- Dosyalarımı SharePoint Online'a yükleme işlemi sonsuza kadar sürüyor. Neden öğleden sonra yavaş oluyor ama başka bir zaman hızlı oluyor? Hızlı olamaz mı?
     
 Yukarıdaki sorun ifadelerinin neden olduğu birçok büyük zorluk vardır. Özellikle, ilgilenemeyecek kadar çok belirsizlik var. Örneğin:
   
@@ -110,7 +110,7 @@ Kullanıcılar bir performans sorunu bildirdiğinde toplayacak çok fazla bilgi 
     
 - Dünyanın neresindesin?
     
-Bu soruların bazıları diğerlerinden daha belirgindir. Çoğu kullanıcı sorun gidericinin sorunu yeniden oluşturmak için tam adımlara ihtiyacı olduğunu anlar. Sonuçta, sorunun ne olduğunu başka nasıl kaydedebilirsiniz ve sorunun düzeltilip gidermediğini başka nasıl test edebilirsiniz? "Sorunu hangi tarih ve saatle gördünüz?" ve "Dünyanın neresinde bulunuyorsunuz?", birlikte kullanılabilecek bilgiler gibi şeyler daha az açıktır. Kullanıcının ne zaman çalıştığına bağlı olarak, birkaç saatlik zaman farkı, şirketinizin ağının bazı bölümlerinde bakımın zaten devam ettiği anlamına gelebilir. Örneğin, şirketinizin hem SharePoint Online hem de Şirket İçi SharePoint Server 2013 örneğindeki arama dizinlerini sorgulayan karma SharePoint Arama gibi karma bir uygulaması vardır; güncelleştirmeler şirket içi grubunda devam ediyor olabilir. Şirketinizin tamamı buluttaysa, sistem bakımı ağ donanımı eklemeyi veya kaldırmayı, şirket genelinde güncelleştirmeleri dağıtmayı ya da DNS'de veya diğer temel altyapıda değişiklik yapmayı içerebilir.
+Bu soruların bazıları diğerlerinden daha belirgindir. Çoğu kullanıcı sorun gidericinin sorunu yeniden oluşturmak için tam adımlara ihtiyacı olduğunu anlar. Sonuçta, sorunun ne olduğunu başka nasıl kaydedebilirsiniz ve sorunun düzeltilip gidermediğini başka nasıl test edebilirsiniz? "Sorunu hangi tarih ve saatle gördünüz?" ve "Dünyanın neresinde bulunuyorsunuz?", birlikte kullanılabilecek bilgiler gibi şeyler daha az açıktır. Kullanıcının ne zaman çalıştığına bağlı olarak, birkaç saatlik zaman farkı, şirketinizin ağının bazı bölümlerinde bakımın zaten devam ettiği anlamına gelebilir. Örneğin, şirketinizin hem SharePoint Online'daki hem de şirket içi SharePoint Server 2013 örneğindeki arama dizinlerini sorgulayan karma SharePoint Araması gibi karma bir uygulaması vardır. Güncelleştirmeler şirket içi grubunda devam ediyor olabilir. Şirketinizin tamamı buluttaysa, sistem bakımı ağ donanımı eklemeyi veya kaldırmayı, şirket genelinde güncelleştirmeleri dağıtmayı ya da DNS'de veya diğer temel altyapıda değişiklik yapmayı içerebilir.
   
 Bir performans sorununu giderirken, bu biraz olay yeri gibidir, kanıttan herhangi bir sonuç elde etmek için hassas ve dikkatli olmanız gerekir. Bunu yapmak için kanıt toplayarak iyi bir sorun bildirimi almanız gerekir. Bilgisayarın bağlamını, kullanıcının bağlamını, sorunun ne zaman başladığını ve performans sorununu ortaya çıkarmış tam adımları içermelidir. Bu sorun deyimi notlarınızdaki en üstteki sayfa olmalıdır ve kalmalıdır. Çözüm üzerinde çalıştıktan sonra sorun bildiriminde yeniden gezinerek, gerçekleştirdiğiniz eylemlerin sorunu çözmüş olup olmadığını test etmek ve kanıtlamak için adımları atmış olursunuz. Bu, işinizin ne zaman yapıldığını bilmek için kritik öneme sahiptir.
   
@@ -120,7 +120,7 @@ Eğer şanssızsan, kimse bilmiyor. Kimsenin numarası yoktu. Başka bir deyişl
   
 Performans temeli burada eksik mi?
   
-Temeller, performansınız için bir bağlam sağlar. Şirketinizin gereksinimlerine bağlı olarak zaman zaman taban çizgisini sık sık almalısınız. Daha büyük bir şirketseniz, Operasyon ekibiniz şirket içi ortamınız için temelleri zaten alabilir. Örneğin, ayın ilk Pazartesi günü tüm Exchange sunucularına ve üçüncü Pazartesi günü tüm SharePoint sunucularınıza düzeltme eki uygularsanız, Operasyon ekibinizin büyük olasılıkla kritik işlevlerin çalışır durumda olduğunu kanıtlamak için düzeltme eki uygulama sonrasında çalıştırdığı görevlerin ve senaryoların bir listesi vardır. Örneğin, Gelen Kutusu'nu açmak, Gönder/Al'a tıklamak ve klasörlerin güncelleştirilmesini sağlamak veya SharePoint, sitenin ana sayfasına göz atmak, kurumsal Arama sayfasına gitmek ve sonuçları döndüren bir arama yapmak.
+Temeller, performansınız için bir bağlam sağlar. Şirketinizin gereksinimlerine bağlı olarak zaman zaman taban çizgisini sık sık almalısınız. Daha büyük bir şirketseniz, Operasyon ekibiniz şirket içi ortamınız için temelleri zaten alabilir. Örneğin, ayın ilk Pazartesi günü tüm Exchange sunucularına düzeltme eki uygularsanız ve üçüncü Pazartesi günü tüm SharePoint sunucularınız için düzeltme eki uygularsanız, operasyon ekibinizin büyük olasılıkla kritik işlevlerin çalışır durumda olduğunu kanıtlamak için düzeltme eki uygulama sonrasında çalıştırdığı görevlerin ve senaryoların bir listesi vardır. Örneğin, Gelen Kutusu'nu açmak, Gönder/Al'a tıklamak ve klasörlerin güncelleştirilmesini sağlamak veya SharePoint'te sitenin ana sayfasına göz atmak, kurumsal Arama sayfasına gitmek ve sonuçları döndüren bir arama yapmak.
   
 Uygulamalarınız Office 365 ise, en temel taban çizgilerinden bazıları ağınızdaki bir istemci bilgisayardan, çıkış noktasına veya ağınızdan ayrılıp Office 365 çıktığınız noktaya kadar geçen süreyi (milisaniye cinsinden) ölçebilirsiniz. Araştırabileceğiniz ve kaydedebileceğiniz bazı yararlı temeller şunlardır:
   
@@ -317,17 +317,17 @@ Performans temeli almak bu yöntemin basit bir parçasıdır ve adımların ço�
   
 - SPO için temel liste - ** 1. Adım: ** SPO web sitesinin giriş sayfasına göz atın ve bir ağ izlemesi yapın. İzlemeyi kaydedin. 
     
-- SPO için temel liste - **2. Adım:** Enterprise Ara ve ağ izlemesi yaparak terim (şirketinizin adı gibi) arayın. İzlemeyi kaydedin. 
+- SPO için temel liste - **2. Adım:** Kurumsal Arama aracılığıyla terim (şirketinizin adı gibi) arayın ve bir ağ izlemesi yapın. İzlemeyi kaydedin. 
     
-- SPO için temel liste - **3. Adım:** Büyük bir dosyayı SharePoint Çevrimiçi belge kitaplığına Upload ve ağ izlemesi yapın. İzlemeyi kaydedin. 
+- SPO için temel liste - **3. Adım:** SharePoint Online belge kitaplığına büyük bir dosya yükleyin ve ağ izlemesi yapın. İzlemeyi kaydedin. 
     
 - SPO için temel liste - **4. Adım:** OneDrive web sitesinin giriş sayfasına göz atın ve bir ağ izlemesi yapın. İzlemeyi kaydedin. 
     
-Bu liste, kullanıcıların SharePoint Online'a karşı gerçekleştirebilecekleri en önemli yaygın eylemleri içermelidir. OneDrive İş giden izlemenin son adımının, SharePoint Online giriş sayfasının yükü (genellikle şirketler tarafından özelleştirilir) ile nadiren özelleştirilen OneDrive İş giriş sayfası arasında bir karşılaştırma oluşturduğuna dikkat edin. Yavaş yüklenen SharePoint Online sitesine gelince bu temel bir testtir. Testinizde bu farkın kaydını oluşturabilirsiniz.
+Bu liste, kullanıcıların SharePoint Online'a karşı gerçekleştirebilecekleri en önemli yaygın eylemleri içermelidir. OneDrive İş giden izleme işleminin son adımının, SharePoint Online giriş sayfasının yükü (genellikle şirketler tarafından özelleştirilir) ile nadiren özelleştirilen OneDrive İş giriş sayfası arasında bir karşılaştırma içerdiğine dikkat edin. Yavaş yüklenen bir SharePoint Online sitesi söz konusu olduğunda bu temel bir testtir. Testinizde bu farkın kaydını oluşturabilirsiniz.
   
 Bir performans sorununun ortasındaysanız, adımların çoğu temel alma işlemiyle aynıdır. Ağ izlemeleri kritik hale gelir, bu nedenle sonraki önemli izlemeleri  *nasıl*  alacağımıza bakacağız. 
   
-Bir performans sorununu çözmek için,  *şu anda* performans sorununu yaşadığınız sırada bir izleme almanız gerekir. Günlükleri toplamak için uygun araçlara sahip olmanız ve bir eylem planına, yani mümkün olan en iyi bilgileri toplamak için gerçekleştirebileceğiniz sorun giderme eylemlerinin listesine ihtiyacınız vardır. Yapılacak ilk şey, dosyaların zamanlamayı yansıtan bir klasöre kaydedilebilmesi için testin tarih ve saatini kaydetmektir. Ardından, sorun adımlarını daraltın. Bunlar test için kullanacağınız tam adımlardır. Temel bilgileri unutmayın: Sorun yalnızca Outlook ile ilgiliyse, sorun davranışının yalnızca bir Office 365 hizmetinde oluştuğundan emin olun. Bu sorunun kapsamını daraltmak, çözebileceğiniz bir şeye odaklanmanıza yardımcı olur. 
+Bir performans sorununu çözmek için,  *şu anda* performans sorununu yaşadığınız sırada bir izleme almanız gerekir. Günlükleri toplamak için uygun araçlara sahip olmanız ve bir eylem planına, yani mümkün olan en iyi bilgileri toplamak için gerçekleştirebileceğiniz sorun giderme eylemlerinin listesine ihtiyacınız vardır. Yapılacak ilk şey, dosyaların zamanlamayı yansıtan bir klasöre kaydedilebilmesi için testin tarih ve saatini kaydetmektir. Ardından, sorun adımlarını daraltın. Bunlar test için kullanacağınız tam adımlardır. Temel bilgileri unutmayın: Sorun yalnızca Outlook'taysa, sorun davranışının yalnızca bir Office 365 hizmetinde gerçekleştiğini kaydettiğinizden emin olun. Bu sorunun kapsamını daraltmak, çözebileceğiniz bir şeye odaklanmanıza yardımcı olur. 
   
 ## <a name="see-also"></a>Ayrıca bkz.
 

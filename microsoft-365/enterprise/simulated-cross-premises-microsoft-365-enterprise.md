@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,13 +16,13 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
-description: "Özet: Microsoft Azure'da Microsoft 365 test ortamı olarak sanal bir şirket içi sanal ağ oluşturun."
-ms.openlocfilehash: a3bc5c130ad03d1896abcf98ba9fc26d9ff2f422
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: "Özet: Microsoft Azure'da Microsoft 365 test ortamı olarak sanal bir şirket içi sanal ağ oluşturma."
+ms.openlocfilehash: c4920976d8e817c260f95ba76aa15136b7c8266d
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099179"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670255"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 test ortamında şirket içi sanal ağın benzetimi
 
@@ -59,12 +59,12 @@ Bu test ortamını ayarlamanın üç ana aşaması vardır:
 > [!NOTE]
 > Bu yapılandırma ücretli bir Azure aboneliği gerektirir. 
 
-Elde edilen ortamı, ek [Test Laboratuvarı Kılavuzları](m365-enterprise-test-lab-guides.md) ile veya kendi başınıza [kuruluş için Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise) özelliklerini ve işlevselliğini test etmek için kullanabilirsiniz.
+Sonuçta elde edilen ortamı, ek [Test Laboratuvarı Kılavuzları](m365-enterprise-test-lab-guides.md) ile veya kendi başınıza [kuruluş için Microsoft 365'in](https://www.microsoft.com/microsoft-365/enterprise) özelliklerini ve işlevselliğini test etmek için kullanabilirsiniz.
 
 ![Microsoft bulutu için Test Laboratuvarı Kılavuzları.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> [Kurumsal Test Laboratuvarı Kılavuzu yığınındaki Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf) tüm makalelere görsel bir harita için kurumsal Test Laboratuvarı Kılavuz Yığını için Microsoft 365 gidin.
+> [Kuruluş için Microsoft 365 Test Laboratuvarı Kılavuzu](../downloads/Microsoft365EnterpriseTLGStack.pdf) yığınındaki tüm makalelere yönelik görsel bir harita için Kurumsal Test Laboratuvarı Kılavuz Yığını için Microsoft 365'e gidin.
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>1. Aşama: TestLab sanal ağını yapılandırma
 
@@ -81,7 +81,7 @@ Bu aşamada yeni XPrem sanal ağını oluşturup yapılandıracak ve ardından V
 İlk olarak, yerel bilgisayarınızda bir Azure PowerShell istemi başlatın.
   
 > [!NOTE]
-> Aşağıdaki komut kümeleri Azure PowerShell en son sürümünü kullanır. Bkz. [Azure PowerShell cmdlet'lerle Kullanmaya başlayın](/powershell/azureps-cmdlets-docs/). 
+> Aşağıdaki komut kümeleri Azure PowerShell en son sürümünü kullanır. Bkz[. Azure PowerShell cmdlet'leri kullanmaya başlama](/powershell/azureps-cmdlets-docs/). 
   
 Bu komutla Azure hesabınızda oturum açın.
   
@@ -179,7 +179,7 @@ Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
-Hem CORPUser1\\ parolasını hem de Dizin Hizmetleri Geri Yükleme Modu (DSRM) parolasını sağlamanız ve DC2'yi yeniden başlatmanız istendiğini unutmayın. 
+Hem CORP\\User1 parolasını hem de Dizin Hizmetleri Geri Yükleme Modu (DSRM) parolasını sağlamanız ve DC2'yi yeniden başlatmanız istendiğini unutmayın. 
   
 Artık XPrem sanal ağının kendi DNS sunucusu (DC2) olduğuna göre, XPrem sanal ağını bu DNS sunucusunu kullanacak şekilde yapılandırmanız gerekir. Bu komutları yerel bilgisayarınızdaki Azure PowerShell komut isteminden çalıştırın.
   
@@ -190,7 +190,7 @@ Set-AzVirtualNetwork -VirtualNetwork $vnet
 Restart-AzVM -ResourceGroupName $rgName -Name "DC2"
 ```
 
-Yerel bilgisayarınızdaki Azure portal CORPUser1\\ kimlik bilgileriyle DC1'e bağlanın. BILGISAYARLARıN ve kullanıcıların kimlik doğrulaması için yerel etki alanı denetleyicilerini kullanacak şekilde CORP etki alanını yapılandırmak için bu komutları DC1'de yönetici düzeyinde bir Windows PowerShell komut isteminden çalıştırın.
+Yerel bilgisayarınızdaki Azure portal CORP\\User1 kimlik bilgileriyle DC1'e bağlanın. BILGISAYARLARıN ve kullanıcıların kimlik doğrulaması için yerel etki alanı denetleyicilerini kullanacak şekilde CORP etki alanını yapılandırmak için bu komutları DC1'de yönetici düzeyinde bir Windows PowerShell komut isteminden çalıştırın.
   
 ```powershell
 New-ADReplicationSite -Name "TestLab" 
@@ -205,7 +205,7 @@ Bu, geçerli yapılandırmanızdır.
   
 Sanal Azure hibrit bulut ortamınız artık test için hazır.
   
-Artık [kurumsal Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise) ek özellikleriyle deneme yapmaya hazırsınız.
+Artık [kuruluş için Microsoft 365'in](https://www.microsoft.com/microsoft-365/enterprise) ek özellikleriyle deneme yapmaya hazırsınız.
   
 ## <a name="next-steps"></a>Sonraki adımlar
 
@@ -217,7 +217,7 @@ Bu ek Test Laboratuvarı Kılavuzları kümelerini keşfedin:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kurumsal Test Laboratuvarı Kılavuzları için Microsoft 365](m365-enterprise-test-lab-guides.md)
+[Kurumsal test laboratuvarı kılavuzları için Microsoft 365](m365-enterprise-test-lab-guides.md)
 
 [Microsoft 365 Kurumsal’a genel bakış](microsoft-365-overview.md)
 

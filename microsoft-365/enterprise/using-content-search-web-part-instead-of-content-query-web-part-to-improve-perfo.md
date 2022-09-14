@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 4/20/2015
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: İçerik Sorgusu Web Bölümü'nü SharePoint Server 2013 ve SharePoint Online'daki İçerik Arama Web Bölümü ile değiştirerek performansı artırmayı öğrenin.
-ms.openlocfilehash: 4c8a97d24320d5380eccc089737947df9b1a0d0b
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: b286688e3a3ed958eec5c31e3e106f79ecfa7b3c
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139507"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671797"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>SharePoint Online'da performansı geliştirmek için İçerik Sorgusu Web Bölümü yerine İçerik Arama Web Bölümü kullanma
 
@@ -58,17 +58,17 @@ Internet Explorer'da, yanıt üst bilgisinin ayrıntılarına bakmak için F12 g
   
 ![924 istek süresini gösteren ekran görüntüsü.](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
   
- **SPRequestDuration** , sayfayı hazırlamak için sunucuda yapılan çalışma miktarını gösterir. Arama Web Bölümleri İçerik ile Sorgu Web Bölümleri İçeriği değiştirmek, sayfayı işlemek için gereken süreyi önemli ölçüde azaltır. Buna karşılık, eşdeğer bir İçerik Arama Web Bölümü olan ve aynı sayıda sonuç döndüren bir sayfanın **SPRequestDuration** değeri bu ekran görüntüsünde gösterildiği gibi 106 milisaniyedir: 
+ **SPRequestDuration** , sayfayı hazırlamak için sunucuda yapılan çalışma miktarını gösterir. Arama Web Bölümlerine Göre İçerikle Web Bölümlerini Sorgulayarak İçerik Değiştirmek, sayfayı işlemek için gereken süreyi önemli ölçüde azaltır. Buna karşılık, eşdeğer bir İçerik Arama Web Bölümü olan ve aynı sayıda sonuç döndüren bir sayfanın **SPRequestDuration** değeri bu ekran görüntüsünde gösterildiği gibi 106 milisaniyedir: 
   
 ![İstek Süresi 106'nın gösterildiği ekran görüntüsü.](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
   
 ## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>SharePoint Online'da İçerik Arama Web Bölümü Ekleme
 
-İçerik Arama Web Bölümü eklemek, normal İçerik Sorgusu Web Bölümüne benzer. SharePoint'da *İçerik Arama Web Bölümü* Yapılandırma bölümündeki "[İçerik Arama Web Bölümü](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a) Ekleme" bölümüne bakın.
+İçerik Arama Web Bölümü eklemek, normal İçerik Sorgusu Web Bölümüne benzer. [SharePoint'te](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a) *İçerik Arama Web Bölümü Yapılandırma bölümündeki "İçerik Arama Web Bölümü Ekleme"* bölümüne bakın.
   
 ## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>İçerik Arama Web Bölümünüz için doğru arama sorgusunu oluşturma
 
-İçerik Arama Web Bölümü ekledikten sonra, aramayı daraltabilir ve istediğiniz öğeleri döndürebilirsiniz. Bunun nasıl yapılacağına ilişkin ayrıntılı yönergeler için, *SharePoint'da İçerik Arama Web Bölümü Yapılandırma bölümündeki "İçerik Arama Web Bölümünde gelişmiş sorgu yapılandırarak içeriği görüntüleme"* bölümüne [](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a)bakın.
+İçerik Arama Web Bölümü ekledikten sonra, aramayı daraltabilir ve istediğiniz öğeleri döndürebilirsiniz. Bunun nasıl yapılacağına ilişkin ayrıntılı yönergeler için [SharePoint'te İçerik Arama Web Bölümü Yapılandırma](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a) bölümündeki *"İçerik Arama Web Bölümünde gelişmiş sorgu yapılandırarak içeriği görüntüleme"* bölümüne bakın.
   
 ## <a name="query-building-and-testing-tool"></a>Sorgu oluşturma ve test aracı
 

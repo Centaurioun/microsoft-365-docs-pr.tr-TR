@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 09/08/2022
+ms.date: 09/13/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: ad736e8cb196fabbfd1c08112ef0aa9dc0794593
-ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.openlocfilehash: 24b5d6be3e4b0a226617623b68c49d2043475045
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67631482"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672237"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama
 
@@ -87,31 +87,32 @@ Tüm güncelleştirmelerimiz
 - Hizmet verilebilirlik iyileştirmeleri
 - Tümleştirme geliştirmeleri (Bulut, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
-<details> 
-<summary> Ağustos-2022 (Platform: 4.18.2207.7| Motor: 1.1.19600.3)</summary> 
- &ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.373.1647.0** <br/>
+<details>
+<summary>Ağustos-2022 (Platform: 4.18.2207.7 | Motor: 1.1.19600.3)</summary>
+
+&ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.373.1647.0**<br/>
 &ensp;Yayın tarihi: **6 Eylül 2022**<br/>
 &ensp;Platform: **4.18.2207.7**<br/>
 &ensp;Motor: **1.1.19600.3**<br/>
 &ensp;Destek aşaması: **Güvenlik ve Kritik Güncelleştirmeler**<br/>
-  Altyapı sürümü: 1.1.19600.3<br/>
-Güvenlik bilgileri güncelleştirme sürümü: 1.373.1647.0<br/>
-  
-### <a name="whats-new"></a>Yenilikler 
 
-- WS2012R2 Sunucusu ve Windows Server 2016'de Birleşik aracı yükleyici sorunları düzeltildi <br/>
-- Özel algılama için düzeltme sorunu düzeltildi <br/>
-- Davranış izleme ile ilgili Yarış durumu düzeltildi <br/>
-- Defender dll'lerinde birden çok kilitlenme senaryosu çözüldü <br/>
-- ASR kuralları için Geliştirilmiş Windows bildirim sıklığı  
-  
-### <a name="known-issues"></a>Bilinen Sorunlar 
+Altyapı sürümü: 1.1.19600.3<br/>
+Güvenlik bilgileri güncelleştirme sürümü: 1.373.1647.0 <br/>
 
-Bilinen sorun yok   
+### <a name="whats-new"></a>Yenilikler
 
-<br/> 
-</details> 
-<details>
+- WS2012R2 Sunucusu ve Windows Server 2016'de Birleşik aracı yükleyici sorunları düzeltildi
+- Özel algılama için düzeltme sorunu düzeltildi
+- Davranış izleme ile ilgili Yarış durumu düzeltildi
+- Defender dll'lerinde birden çok kilitlenme senaryosu çözüldü
+- ASR kuralları için Geliştirilmiş Windows bildirim sıklığı
+
+### <a name="known-issues"></a>Bilinen Sorunlar
+
+- Yok
+
+<br/><br/>
+</details><details>
 <summary>Temmuz-2022 (Platform: 4.18.2207.5 | Motor: 1.1.19500.2)</summary>
 
 &ensp;Güvenlik bilgileri güncelleştirme sürümü: **1.373.219.0**<br/>

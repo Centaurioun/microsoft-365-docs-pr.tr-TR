@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: landing-page
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: Yönetici olarak, Skype Kurumsal Online'ın ağınız, toplantılarınız ve anlık iletiniz ve kullanıcılar için dış erişimi dahil olmak üzere bölümlerini ayarlama konusunda yardım bulun.
-ms.openlocfilehash: d9c290cbf756cb0ec7a8a6f042409498d7a379b4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 05fbf45bd54f0a8a1c1d19fdaf376885a1e306d9
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092083"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669749"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Office 365'te Skype Kurumsal Çevrimiçi Sürüm - Yönetici Yardımı
 
 ## <a name="were-here-to-help"></a>We're here to help!
 
-İşletmeler için Office 365 yöneticisi olarak, bilgili destek aracılarımıza ücretsiz erişim sağlayabilirsiniz. İhtiyacınız olan bilgileri bu web sitesinde bulamazsanız **[, İş ürünleri için desteğe başvurun - Yönetici Yardımı](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+İşletmeler için Office 365 yöneticisi olarak, bilgili destek aracılarımıza ücretsiz erişim sağlayabilirsiniz. İhtiyacınız olan bilgileri bu web sitesinde bulamazsanız **[, İş ürünleri için desteğe başvurun - yardım Yönetici](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
   
 ## <a name="let-your-users-contact-external-skype-or-skype-for-business-users"></a>Kullanıcılarınızın dış Skype veya Skype Kurumsal kullanıcılarına izin verme
 
@@ -41,7 +41,7 @@ Skype Kurumsal kullanıcılarının kuruluşunuzun dışındaki kullanıcılara 
   
 - [Kullanıcıların kuruluş dışındaki Skype Kurumsal kullanıcılarıyla bağlantı kurmasına izin verme](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)
     
-- [kullanıcıların Skype kişi eklemesine izin Skype Kurumsal](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
+- [Skype Kurumsal kullanıcıların Skype kişileri eklemesine izin ver](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
     
 ## <a name="improve-call-and-video-quality"></a>Çağrı ve görüntü kalitesini geliştirin
 

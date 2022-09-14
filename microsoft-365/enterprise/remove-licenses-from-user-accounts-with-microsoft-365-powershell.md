@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,13 +19,13 @@ ms.custom:
 - LIL_Placement
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: Daha önce kullanıcılara atanmış Microsoft 365 lisansları kaldırmak için PowerShell'in nasıl kullanılacağını açıklar.
-ms.openlocfilehash: b036f58686ac179fc93c1a0605ed2b585ea89c30
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Daha önce kullanıcılara atanmış olan Microsoft 365 lisanslarını kaldırmak için PowerShell'in nasıl kullanılacağını açıklar.
+ms.openlocfilehash: e726136fb2661d4855b3dcc828537b7be6e35c6c
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096336"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670729"
 ---
 # <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>PowerShell ile kullanıcı hesaplarından Microsoft 365 lisanslarını kaldırma
 
@@ -86,7 +86,7 @@ Lisans boşaltmanın bir diğer yolu da kullanıcı hesabını silmektir. Daha f
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph için Azure Active Directory PowerShell modülünü kullanma
 
->Set-AzureADUserLicense cmdlet'i kullanımdan kaldırılacak şekilde zamanlanmıştır. Lütfen betiklerinizi yukarıda açıklandığı gibi Microsoft Graph SDK'sının Set-MgUserLicense cmdlet'ine geçirin. Daha fazla bilgi için bkz[. Microsoft Graph lisans yönetimi API'lerine erişmek için uygulamalarınızı geçirme](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
+>Set-AzureADUserLicense cmdlet'i kullanımdan kaldırılacak şekilde zamanlanmıştır. Lütfen betiklerinizi yukarıda açıklandığı gibi Microsoft Graph SDK'sının Set-MgUserLicense cmdlet'ine geçirin. Daha fazla bilgi için bkz [. Microsoft Graph'tan lisans yönetimi API'lerine erişmek için uygulamalarınızı geçirme](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
 >
 
 İlk olarak [Microsoft 365 kiracınıza bağlanın](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
@@ -134,7 +134,7 @@ if($userList.Count -ne 0) {
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell için Microsoft Azure Active Directory Modülünü kullanma
 
 >[!Note]
->Set-MsolUserLicense ve New-MsolUser (-LicenseAssignment) cmdlet'leri kullanımdan kaldırılacak şekilde zamanlanmıştır. Lütfen betiklerinizi yukarıda açıklandığı gibi Microsoft Graph SDK'sının Set-MgUserLicense cmdlet'ine geçirin. Daha fazla bilgi için bkz[. Microsoft Graph lisans yönetimi API'lerine erişmek için uygulamalarınızı geçirme](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
+>Set-MsolUserLicense ve New-MsolUser (-LicenseAssignment) cmdlet'leri kullanımdan kaldırılacak şekilde zamanlanmıştır. Lütfen betiklerinizi yukarıda açıklandığı gibi Microsoft Graph SDK'sının Set-MgUserLicense cmdlet'ine geçirin. Daha fazla bilgi için bkz [. Microsoft Graph'tan lisans yönetimi API'lerine erişmek için uygulamalarınızı geçirme](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
 >
 
 İlk olarak [Microsoft 365 kiracınıza bağlanın](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).

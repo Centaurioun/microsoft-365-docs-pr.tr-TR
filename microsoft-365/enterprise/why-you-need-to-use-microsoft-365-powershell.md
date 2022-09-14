@@ -1,33 +1,33 @@
 ---
-title: Microsoft 365 için neden PowerShell kullanmanız gerekiyor?
+title: Microsoft 365 için PowerShell'i neden kullanmanız gerekiyor?
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/17/2020
 audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
 ms.custom: admindeeplinkEXCHANGE
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
-description: 'Özet: Microsoft 365 yönetmek için neden PowerShell kullanmanız gerektiğini, bazı durumlarda daha verimli ve diğer durumlarda gerekliliği anlayın.'
-ms.openlocfilehash: 0da00ffe3c492b3bac3da9f435ece89219b4113f
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+description: "Özet: Microsoft 365'i yönetmek için neden PowerShell'i kullanmanız gerektiğini, bazı durumlarda daha verimli ve diğer durumlarda gerekliliği anlayın."
+ms.openlocfilehash: 0ce4417a76acaa898e6d5a29c0763bb24f9d9de0
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139373"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670167"
 ---
-# <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Microsoft 365 için neden PowerShell kullanmanız gerekiyor?
+# <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Microsoft 365 için PowerShell'i neden kullanmanız gerekiyor?
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
 Microsoft 365 yönetim merkezi ile Microsoft 365 kullanıcı hesaplarınızı ve lisanslarınızı yönetebilirsiniz. Exchange Online, Teams ve SharePoint Online gibi Microsoft 365 hizmetlerinizi de yönetebilirsiniz. Bunun yerine bu hizmetleri yönetmek için PowerShell kullanıyorsanız hız, otomasyon ve ek özellikler için komut satırı ve betik dili ortamından yararlanabilir ve bu ortamdan yararlanabilirsiniz.
 
-Bu makalede, powershell kullanarak Microsoft 365 nasıl yönetileceğini gösterir:
+Bu makalede, Microsoft 365'i yönetmek için PowerShell'in nasıl kullanılacağı gösterilmektedir:
 
 - Microsoft 365 yönetim merkezi göremediğiniz ek bilgileri gösterme
 
@@ -41,7 +41,7 @@ Bu makalede, powershell kullanarak Microsoft 365 nasıl yönetileceğini göster
 
 - Hizmetler arasında yönetme
 
-Microsoft 365 için PowerShell'in Windows tabanlı hizmetler ve platformlar için bir komut satırı ortamı olan Windows PowerShell için bir dizi modül olduğunu unutmayın. Bu ortam, ek modüllerle genişletilebilen bir komut kabuğu dili oluşturur. Basit veya karmaşık komutlar veya betikler yürütmek için bir yol sağlar. Örneğin, Microsoft 365 modülleri için PowerShell'i yükledikten ve Microsoft 365 aboneliğinize bağlandıktan sonra, Microsoft Exchange Online tüm kullanıcı posta kutularını listelemek için aşağıdaki komutu çalıştırabilirsiniz:
+Microsoft 365 için PowerShell'in Windows tabanlı hizmetler ve platformlar için bir komut satırı ortamı olan Windows PowerShell için bir dizi modül olduğunu unutmayın. Bu ortam, ek modüllerle genişletilebilen bir komut kabuğu dili oluşturur. Basit veya karmaşık komutlar veya betikler yürütmek için bir yol sağlar. Örneğin, Microsoft 365 için PowerShell modüllerini yükledikten ve Microsoft 365 aboneliğinize bağlandıktan sonra, Microsoft Exchange Online için tüm kullanıcı posta kutularını listelemek için aşağıdaki komutu çalıştırabilirsiniz:
 
 ```powershell
 Get-Mailbox
@@ -49,25 +49,25 @@ Get-Mailbox
 
 Posta kutularının listesini Microsoft 365 yönetim merkezi kullanarak da alabilirsiniz, ancak tüm web uygulamalarınız için tüm siteler için tüm listelerdeki öğeleri saymak kolay değildir.
 
-Microsoft 365 için PowerShell, Microsoft 365 yönetim merkezi değiştirmek yerine Microsoft 365 yönetmenize yardımcı olmak için tasarlanmıştır. Yalnızca Microsoft 365 komutlar için PowerShell aracılığıyla gerçekleştirilebilecek bazı yapılandırma yordamları olduğundan yöneticilerin Microsoft 365 için PowerShell'i kullanabilmesi gerekir. Bu durumlarda şunların nasıl yapılacağını bilmeniz gerekir:
+Microsoft 365 için PowerShell, Microsoft 365 yönetim merkezi değiştirmek yerine Microsoft 365'i yönetmenize yardımcı olmak için tasarlanmıştır. Yalnızca Microsoft 365 için PowerShell komutları aracılığıyla gerçekleştirilebilecek bazı yapılandırma yordamları olduğundan yöneticilerin Microsoft 365 için PowerShell'i kullanabilmesi gerekir. Bu durumlarda şunların nasıl yapılacağını bilmeniz gerekir:
 
-- Microsoft 365 modülleri için PowerShell'i yükleyin (her yönetici bilgisayar için yalnızca bir kez yapılır).
+- Microsoft 365 için PowerShell modüllerini yükleyin (her yönetici bilgisayar için yalnızca bir kez yapılır).
 
-- Microsoft 365 aboneliğinize (her PowerShell oturumu için bir kez) Bağlan.
+- Microsoft 365 aboneliğinize bağlanın (her PowerShell oturumu için bir kez).
 
-- Microsoft 365 komutları için gerekli PowerShell'i çalıştırmak için gereken bilgileri toplayın.
+- Microsoft 365 için gerekli PowerShell komutlarını çalıştırmak için gereken bilgileri toplayın.
 
-- Microsoft 365 komutları için PowerShell'i çalıştırın.
+- Microsoft 365 için PowerShell komutlarını çalıştırın.
 
 Bu temel becerileri öğrendikte, **Posta Kutusu Al** komutunu kullanarak posta kutusu kullanıcılarınızı listelemeniz gerekmez. Ayrıca, tüm web uygulamalarınız için tüm sitelerin tüm listelerindeki tüm öğeleri saymak için daha önce alıntı yapılan komut gibi yeni bir komutun nasıl oluşturulacağını da anlamanız gerekmez. Microsoft ve yöneticiler topluluğu, gerektiğinde bu tür görevlerde size yardımcı olabilir.
 
-## <a name="powershell-for-microsoft-365-can-reveal-information-that-you-cant-see-with-the-microsoft-365-admin-center"></a>Microsoft 365 için PowerShell, Microsoft 365 yönetim merkezi ile göremediğiniz bilgileri açabilir
+## <a name="powershell-for-microsoft-365-can-reveal-information-that-you-cant-see-with-the-microsoft-365-admin-center"></a>Microsoft 365 için PowerShell, Microsoft 365 yönetim merkezi
 
-Microsoft 365 yönetim merkezi birçok yararlı bilgi görüntüler. Ancak kullanıcılar, lisanslar, posta kutuları ve siteler hakkında Microsoft 365 tüm olası bilgileri görüntülemez. Microsoft 365 yönetim merkezi *kullanıcılar ve gruplar* için bir örnek aşağıda verilmiştır:
+Microsoft 365 yönetim merkezi birçok yararlı bilgi görüntüler. Ancak Microsoft 365'in kullanıcılar, lisanslar, posta kutuları ve siteler hakkında sakladığı tüm olası bilgileri görüntülemez. Microsoft 365 yönetim merkezi *kullanıcılar ve gruplar* için bir örnek aşağıda verilmiştır:
 
 ![Microsoft 365 yönetim merkezi kullanıcıların ve grupların görüntülenmesi örneği.](../media/o365-powershell-users-and-groups.png)
 
-Bu görünüm, birçok durumda ihtiyacınız olan bilgileri sağlar. Ancak, daha fazlasına ihtiyaç duyduğunuz zamanlar vardır. Örneğin, Microsoft 365 lisanslama (ve kullanıcının kullanabileceği Microsoft 365 özellikleri) kısmen kullanıcının coğrafi konumuna bağlıdır. Birleşik Devletler yaşayan bir kullanıcıya genişletebileceğiniz ilkeler ve özellikler, Hindistan veya Belçika'daki bir kullanıcıya genişletebileceğiniz ilkeler ve özelliklerle aynı olmayabilir. Kullanıcının coğrafi konumunu belirlemek için Microsoft 365 yönetim merkezi şu adımları izleyin:
+Bu görünüm, birçok durumda ihtiyacınız olan bilgileri sağlar. Ancak, daha fazlasına ihtiyaç duyduğunuz zamanlar vardır. Örneğin, Microsoft 365 lisanslaması (ve bir kullanıcının kullanabileceği Microsoft 365 özellikleri) kısmen kullanıcının coğrafi konumuna bağlıdır. Birleşik Devletler yaşayan bir kullanıcıya genişletebileceğiniz ilkeler ve özellikler, Hindistan veya Belçika'daki bir kullanıcıya genişletebileceğiniz ilkeler ve özelliklerle aynı olmayabilir. Kullanıcının coğrafi konumunu belirlemek için Microsoft 365 yönetim merkezi şu adımları izleyin:
 
 1. Kullanıcının **Görünen Adı'na** çift tıklayın.
 
@@ -79,7 +79,7 @@ Bu görünüm, birçok durumda ihtiyacınız olan bilgileri sağlar. Ancak, daha
 
      ![Microsoft 365 yönetim merkezi bir kullanıcının bölge bilgileri örneği.](../media/o365-powershell-usage-location.png)
 
-5. Kullanıcının görünen adını ve konumunu bir kağıda yazın veya kopyalayıp Not Defteri yapıştırın.
+5. Kullanıcının görünen adını ve konumunu bir kağıda yazın veya kopyalayıp Not Defteri'ne yapıştırın.
 
 Bu yordamı her kullanıcı için yinelemeniz gerekir. Çok sayıda kullanıcınız varsa, bu işlem yorucu olabilir. Microsoft 365 için PowerShell ile aşağıdaki komutu kullanarak tüm kullanıcılarınız için bu bilgileri görüntüleyebilirsiniz:
 
@@ -107,7 +107,7 @@ David Longmuir                            BR
 
 Bu PowerShell komutunun yorumu şöyledir: Geçerli Microsoft 365 aboneliğindeki tüm kullanıcıları alın (**Get-AzureADUser**), ancak yalnızca her kullanıcının adını ve konumunu görüntüleyin (**DisplayName, UsageLocation'ı seçin**).
 
-Microsoft 365 için PowerShell komut kabuğu dilini desteklediğinden, **Get-AzureADUser** komutuyla elde edilen bilgileri daha fazla işleyebilirsiniz. Örneğin, bu kullanıcıları konumlarına göre sıralamak, tüm Brezilyalı kullanıcıları birlikte gruplandırmak, tüm Birleşik Devletler kullanıcıları birlikte gruplandırmak vb. Komut şu şekildedir:
+Microsoft 365 için PowerShell bir komut kabuğu dilini desteklediğinden, **Get-AzureADUser** komutuyla elde edilen bilgileri daha fazla işleyebilirsiniz. Örneğin, bu kullanıcıları konumlarına göre sıralamak, tüm Brezilyalı kullanıcıları birlikte gruplandırmak, tüm Birleşik Devletler kullanıcıları birlikte gruplandırmak vb. Komut şu şekildedir:
 
 ```powershell
 Get-AzureADUser | Select DisplayName, UsageLocation | Sort UsageLocation, DisplayName
@@ -166,7 +166,7 @@ Bu PowerShell komut kümesinin yorumu şöyledir:
 1. Geçerli Microsoft 365 aboneliğindeki tüm kullanıcıları alın ve bilgileri $x (**$x = Get-AzureADUser**) adlı bir değişkende depolayın.
 1.  *$x* değişkeninin içeriğini görüntüleyin, ancak yalnızca her kullanıcının adını ve konumunu ekleyin (**$x | DisplayName, UsageLocation'ı seçin**).
 
-## <a name="microsoft-365-has-features-that-you-can-only-configure-with-powershell-for-microsoft-365"></a>Microsoft 365 yalnızca Microsoft 365 için PowerShell ile yapılandırabileceğiniz özelliklere sahiptir
+## <a name="microsoft-365-has-features-that-you-can-only-configure-with-powershell-for-microsoft-365"></a>Microsoft 365'in yalnızca Microsoft 365 için PowerShell ile yapılandırabileceğiniz özellikleri vardır
 
 Microsoft 365 yönetim merkezi, çoğu ortam için geçerli olan yaygın, yararlı yönetim görevlerine erişim sağlamak için tasarlanmıştır. Başka bir deyişle, Microsoft 365 yönetim merkezi tipik yöneticinin en yaygın yönetim görevlerini gerçekleştirebilmesi için tasarlanmıştır. Ancak yönetim merkezinde yapılamaz bazı görevler vardır.
 
@@ -203,15 +203,15 @@ Bu varsayılan ayarları geri yüklemek (seçenekleri etkinleştirmek) için şu
 Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceRecording $True -DesignateAsPresenter "Company"
 ```
 
-Benzer başka senaryolar da vardır. Bu nedenle yöneticiler, Microsoft 365 komutlar için PowerShell'i nasıl çalıştıracaklarını bilmelidir.
+Benzer başka senaryolar da vardır. Bu nedenle yöneticiler Microsoft 365 için PowerShell komutlarını nasıl çalıştıracaklarını bilmelidir.
 
-## <a name="powershell-for-microsoft-365-is-great-for-bulk-operations"></a>Microsoft 365 için PowerShell, toplu işlemler için harikadır
+## <a name="powershell-for-microsoft-365-is-great-for-bulk-operations"></a>Microsoft 365 için PowerShell toplu işlemler için harikadır
 
 Microsoft 365 yönetim merkezi gibi görsel arabirimler, yapmanız gereken tek bir işlem olduğunda en değerlidir. Örneğin, bir kullanıcı hesabını devre dışı bırakmanız gerekiyorsa, bir onay kutusunu hızla bulup temizlemek için yönetim merkezini kullanabilirsiniz. Bu, PowerShell'de benzer bir işlem gerçekleştirmekten daha kolay olabilir.
 
-Ancak, büyük bir dizi başka şey içinde birçok şeyi veya bazı seçili öğeleri değiştirmeniz gerekiyorsa, Microsoft 365 yönetim merkezi en iyi araç olmayabilir. Örneğin, binlerce telefon numarasındaki ön eki değiştirmeniz veya belirli bir kullanıcı *olan Ken Myer'ı* tüm SharePoint Çevrimiçi sitelerinden kaldırmanız gerekeceğini varsayalım. bunu Microsoft 365 yönetim merkezi nasıl yaparsın?
+Ancak, büyük bir dizi başka şey içinde birçok şeyi veya bazı seçili öğeleri değiştirmeniz gerekiyorsa, Microsoft 365 yönetim merkezi en iyi araç olmayabilir. Örneğin, binlerce telefon numarasındaki ön eki değiştirmeniz veya belirli bir kullanıcı *olan Ken Myer'ı* tüm SharePoint Online sitelerinden kaldırmanız gerekeceğini varsayalım. bunu Microsoft 365 yönetim merkezi nasıl yaparsın?
 
-Son örnekte, birkaç yüz SharePoint Çevrimiçi siteniz olduğunu ve Ken Meyer'in hangilerinin üyesi olduğunu bilmediğinizi varsayalım. Microsoft 365 yönetim merkezi başlayıp her site için şu yordamı uygulamanız gerekir:
+Son örnekte, yüzlerce SharePoint Online siteniz olduğunu ve Ken Meyer'in hangilerinin üyesi olduğunu bilmediğinizi varsayalım. Microsoft 365 yönetim merkezi başlayıp her site için şu yordamı uygulamanız gerekir:
 
 1. Sitenin **URL'sini** seçin.
 
@@ -229,34 +229,34 @@ Son örnekte, birkaç yüz SharePoint Çevrimiçi siteniz olduğunu ve Ken Meyer
 
 Bu, birkaç yüz site için *uzun* sürebilir.
 
-Alternatif olarak, Ken Myer'ı tüm sitelerinden kaldırmak üzere Microsoft 365 için PowerShell'de aşağıdaki komutu çalıştırmaktır:
+Alternatif olarak, Ken Myer'ı tüm sitelerinden kaldırmak için Microsoft 365 için PowerShell'de aşağıdaki komutu çalıştırmaktır:
 
 ```powershell
 Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwareinc.com"}
 ```
 
 > [!NOTE]
-> Bu komut[, SharePoint Online PowerShell modülünü](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) yüklemenizi gerektirir.
+> Bu komut, [SharePoint Online PowerShell modülünü](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) yüklemenizi gerektirir.
 
-Bu PowerShell komutunun yorumu şöyledir: Geçerli Microsoft 365 aboneliğindeki (**Get-SPOSite**) tüm SharePoint sitelerini alın ve her site için Ken Meyer'i buna erişebilen kullanıcılar listesinden kaldırın (**ForEach {Remove-SPOUser -Site $\_). Url -LoginName "kenmyer\@litwareinc.com"}**).
+Bu PowerShell komutunun yorumu şöyledir: Geçerli Microsoft 365 aboneliğindeki (**Get-SPOSite**) tüm SharePoint sitelerini alın ve her site için Ken Meyer'i erişebilecek kullanıcılar listesinden kaldırın (**ForEach {Remove-SPOUser -Site $\_). Url -LoginName "kenmyer\@litwareinc.com"}**).
 
-Microsoft 365 Ken Meyer'i erişimi olmayanlar da dahil olmak üzere her siteden kaldırmasını söyleriz. Bu nedenle sonuçlar, erişimi olmayan sitelerle ilgili hatalar gösterir. Ken Meyer'i yalnızca oturum açma listelerinde bulunan sitelerden kaldırmak için bu komutta ek bir koşul kullanabiliriz. Ancak döndürülen hatalar sitelerin kendilerine zarar vermez. Bu komutun yüzlerce site üzerinde çalışması birkaç dakika sürebilir, Microsoft 365 yönetim merkezi üzerinden çalışma saatleri yerine.
+Microsoft 365'e Ken Meyer'i erişimi olmayanlar da dahil olmak üzere her siteden kaldırmasını söyleriz. Bu nedenle sonuçlar, erişimi olmayan sitelerle ilgili hatalar gösterir. Ken Meyer'i yalnızca oturum açma listelerinde bulunan sitelerden kaldırmak için bu komutta ek bir koşul kullanabiliriz. Ancak döndürülen hatalar sitelerin kendilerine zarar vermez. Bu komutun yüzlerce site üzerinde çalışması birkaç dakika sürebilir, Microsoft 365 yönetim merkezi üzerinden çalışma saatleri yerine.
 
-İşte başka bir toplu işlem örneği. Yeni bir SharePoint yöneticisi *olan Bonnie Kearney'i* kuruluştaki tüm sitelere eklemek için bu komutu kullanın:
+İşte başka bir toplu işlem örneği. Yeni bir SharePoint yöneticisi olan *Bonnie Kearney'i* kuruluştaki tüm sitelere eklemek için bu komutu kullanın:
 
 ```powershell
 Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}
 ```
 
-Bu PowerShell komutunun yorumu şöyledir: Geçerli Microsoft 365 aboneliğindeki tüm SharePoint siteleri alın ve her site için bonnie Kearney'e sitenin Üyeler grubuna oturum açma adını ekleyerek erişim izni verin (**ForEach {Add-SPOUser -Site $\_). Url -LoginName "bkearney\@litwareinc.com" -Group "Members"}**).
+Bu PowerShell komutunun yorumu şöyledir: Geçerli Microsoft 365 aboneliğindeki tüm SharePoint sitelerini alın ve her site için bonnie Kearney'e sitenin Üyeler grubuna oturum açma adını ekleyerek izin verin (**ForEach {Add-SPOUser -Site $\_). Url -LoginName "bkearney\@litwareinc.com" -Group "Members"}**).
 
 ## <a name="powershell-for-microsoft-365-is-great-at-filtering-data"></a>Microsoft 365 için PowerShell, verileri filtreleme konusunda harikadır
 
-Microsoft 365 yönetim merkezi, hedeflenen bir bilgi alt kümesini kolayca bulmak için verilerinizi filtrelemek için çeşitli yollar sağlar. Örneğin Exchange, kullanıcı posta kutusunun hemen her özelliğine göre filtrelemeyi kolaylaştırır. Örneğin, Bloomington şehrinde yaşayan tüm kullanıcıların posta kutularının listesi aşağıdadır:
+Microsoft 365 yönetim merkezi, hedeflenen bir bilgi alt kümesini kolayca bulmak için verilerinizi filtrelemek için çeşitli yollar sağlar. Örneğin, Exchange kullanıcı posta kutusunun hemen hemen tüm özelliklerine göre filtrelemeyi kolaylaştırır. Örneğin, Bloomington şehrinde yaşayan tüm kullanıcıların posta kutularının listesi aşağıdadır:
 
 ![Bloomington şehrinde yaşayan tüm kullanıcıların posta kutuları listesi için Microsoft 365 yönetim merkezi gelişmiş arama yapma örneği.](../media/o365-powershell-advanced-search.png)
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange yönetim merkezi</a>, filtre ölçütlerini birleştirmenizi de sağlar. Örneğin, Bloomington'da yaşayan ve Finans departmanında çalışan tüm kişilerin posta kutularını bulabilirsiniz.
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange yönetim merkezi</a>, filtre ölçütlerini birleştirmenize de olanak tanır. Örneğin, Bloomington'da yaşayan ve Finans departmanında çalışan tüm kişilerin posta kutularını bulabilirsiniz.
 
 Ancak Exchange Yönetici merkezinde yapabileceklerinin sınırlamaları vardır. Örneğin, Bloomington veya San Diego'da yaşayan kişilerin posta kutularını *veya* Bloomington'da yaşamayan tüm kişilerin posta kutularını kolayca bulamazsınız.
 
@@ -304,7 +304,7 @@ Garth Fort                                Tulsa
 Janet Schorr                              Bellevue
 ```
 
-Bu PowerShell komutunun yorumu şöyledir: Geçerli Microsoft 365 aboneliğindeki, Bloomington şehrinde bulunmayan posta kutusu olan tüm kullanıcıları alın (**{$\_. RecipientTypeDetails -eq "UserMailbox" -ve $\_. City -ne "Bloomington"}**) ve ardından her birine ilişkin adı ve şehri görüntüleyin.
+Bu PowerShell komutunun yorumu şöyledir: Geçerli Microsoft 365 aboneliğinde, Bloomington şehrinde bulunmayan posta kutusu olan tüm kullanıcıları alın (**{$\_. RecipientTypeDetails -eq "UserMailbox" -ve $\_. City -ne "Bloomington"}**) ve ardından her birine ilişkin adı ve şehri görüntüleyin.
 
 ### <a name="use-wildcards"></a>Joker karakter kullanma
 
@@ -334,7 +334,7 @@ Microsoft 365 yönetim merkezi, veri listelerini görüntülemenizi sağlar. Sky
 
 Bu bilgileri bir dosyaya kaydetmek için bir belgeye veya Microsoft Excel çalışma sayfasına yapıştırmanız gerekir. Her iki durumda da ek biçimlendirme gerekebilir. Ayrıca, Microsoft 365 yönetim merkezi görüntülenen listeyi doğrudan yazdırmak için bir yol sağlamaz.
 
-Neyse ki, PowerShell'i yalnızca listeyi görüntülemek için değil, Excel kolayca içeri aktarılabilir bir dosyaya kaydetmek için de kullanabilirsiniz. Aşağıda, Skype Kurumsal Çevrimiçi kullanıcı verilerini virgülle ayrılmış değerler (CSV) dosyasına kaydetmeye yönelik örnek bir komut verilmiştir ve bu komut daha sonra Excel çalışma sayfasında kolayca tablo olarak içeri aktarılabilir:
+Neyse ki, PowerShell'i yalnızca listeyi görüntülemekle kalmayıp Excel'e kolayca aktarılabilir bir dosyaya kaydetmek için de kullanabilirsiniz. Aşağıda, Skype Kurumsal Çevrimiçi kullanıcı verilerini virgülle ayrılmış değerler (CSV) dosyasına kaydetmeye yönelik örnek bir komut verilmiştir. Bu komut, excel çalışma sayfasında kolayca tablo olarak içeri aktarılabilir:
 
 ```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export-Csv -Path "C:\Logs\SfBUsers.csv" -NoTypeInformation
@@ -344,11 +344,11 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export
 
 ![Virgülle ayrılmış değerler dosyasına kaydedilmiş Skype Kurumsal Çevrimiçi kullanıcı verileri için Excel çalışma sayfasına aktarılan tablo örneği.](../media/o365-powershell-data-in-excel.png)
 
-Bu PowerShell komutunun yorumu şöyledir: Geçerli Microsoft 365 aboneliğindeki tüm Skype Kurumsal Online kullanıcılarını alın (**Get-CsOnlineUser**); yalnızca kullanıcı adını, UPN'yi ve konumu (**DisplayName, UserPrincipalName, UsageLocation'ı seçin**) alın ve bu bilgileri C:Logs\\SfBUsers.csv adlı bir CSV dosyasına kaydedin (Export-Csv -Path "C:\\**\\Logs\\SfBUsers.csv" -NoTypeInformation**).
+Bu PowerShell komutunun yorumu şöyledir: Geçerli Microsoft 365 aboneliğindeki tüm Skype Kurumsal Çevrimiçi kullanıcıları alın (**Get-CsOnlineUser**); yalnızca kullanıcı adını, UPN'yi ve konumu (**DisplayName, UserPrincipalName, UsageLocation'ı seçin**) alın ve bu bilgileri C:Logs\\SfBUsers.csv (**Export-Csv -Path "C:\\Logs\\SfBUsers.csv" -NoTypeInformation)** adlı bir CSV dosyasına kaydedin.\\
 
-Bu listeyi XML dosyası veya HTML sayfası olarak kaydetmek için seçenekleri de kullanabilirsiniz. Aslında, ek PowerShell komutlarıyla, istediğiniz özel biçimlendirmeyle doğrudan Excel dosyası olarak kaydedebilirsiniz.
+Bu listeyi XML dosyası veya HTML sayfası olarak kaydetmek için seçenekleri de kullanabilirsiniz. Aslında, ek PowerShell komutlarıyla, istediğiniz özel biçimlendirmeyle doğrudan bir Excel dosyası olarak kaydedebilirsiniz.
 
-Ayrıca, listeyi görüntüleyen bir PowerShell komutunun çıkışını doğrudan Windows'deki varsayılan yazıcıya gönderebilirsiniz. Aşağıda örnek bir komut verilmişti:
+Ayrıca, liste görüntüleyen bir PowerShell komutunun çıkışını doğrudan Windows'taki varsayılan yazıcıya gönderebilirsiniz. Aşağıda örnek bir komut verilmişti:
 
 ```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Printer
@@ -356,15 +356,15 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Pr
 
 Yazdırılan belgeniz şöyle görünür:
 
-![Windows'da doğrudan varsayılan yazıcıya gönderilen bir PowerShell komutunun çıktısı olan yazdırılan belge örneği.](../media/o365-powershell-printed-data.png)
+![Doğrudan Windows'taki varsayılan yazıcıya gönderilen bir PowerShell komutunun çıktısı olan yazdırılan belge örneği.](../media/o365-powershell-printed-data.png)
 
-Bu PowerShell komutunun yorumu şöyledir: Geçerli Microsoft 365 aboneliğindeki tüm Skype Kurumsal Çevrimiçi kullanıcıları alın; yalnızca kullanıcı adını, UPN'yi ve konumu alın ve bu bilgileri varsayılan Windows yazıcıya (**Yazıcı Dışında**) gönderin.
+Bu PowerShell komutunun yorumu şöyledir: Geçerli Microsoft 365 aboneliğindeki tüm Skype Kurumsal Çevrimiçi kullanıcıları alın; yalnızca kullanıcı adını, UPN'yi ve konumu alın ve bu bilgileri varsayılan Windows yazıcısına (**Yazıcı Dışı**) gönderin.
 
 Yazdırılan belge, PowerShell komut penceresindeki görüntüyle aynı basit biçimlendirmeye sahiptir. Basılı kopya almak için **| Komutun sonuna kadar Yazıcı Dışı** ...
 
 ## <a name="powershell-for-microsoft-365-lets-you-manage-across-server-products"></a>Microsoft 365 için PowerShell, sunucu ürünleri arasında yönetmenizi sağlar
 
-Microsoft 365 oluşturan bileşenler birlikte çalışacak şekilde tasarlanmıştır. Örneğin, Microsoft 365 yeni bir kullanıcı eklediğinizi ve kullanıcının departmanı ve telefon numarası gibi bilgileri belirttiğinizi varsayalım. Bu bilgiler daha sonra kullanıcının bilgilerine Microsoft 365 hizmetlerden herhangi birinde erişerek kullanılabilir: Skype Kurumsal Çevrimiçi, Exchange veya SharePoint.
+Microsoft 365'i oluşturan bileşenler birlikte çalışacak şekilde tasarlanmıştır. Örneğin, Microsoft 365'e yeni bir kullanıcı eklediğinizi ve kullanıcının departmanı ve telefon numarası gibi bilgileri belirttiğinizi varsayalım. Daha sonra kullanıcının bilgilerine Microsoft 365 hizmetlerinden herhangi birinde eriştiyseniz bu bilgiler kullanılabilir: Skype Kurumsal Online, Exchange veya SharePoint.
 
 Ancak bu, ürün paketini kapsayan yaygın bilgiler içindir. Kullanıcının Exchange posta kutusuyla ilgili bilgiler gibi ürüne özgü bilgiler genellikle pakette kullanılamaz. Örneğin, kullanıcının posta kutusunun etkinleştirilip etkinleştirilmediğiyle ilgili bilgiler yalnızca Exchange yönetim merkezinde kullanılabilir.
 
@@ -372,13 +372,13 @@ Tüm kullanıcılarınız için aşağıdaki bilgileri gösteren bir rapor oluş
 
 - Kullanıcının görünen adı
 
-- Kullanıcının Microsoft 365 için lisanslanıp lisanslanmayacağı
+- Kullanıcının Microsoft 365 lisansına sahip olup olmadığı
 
 - Kullanıcının Exchange posta kutusunun etkinleştirilip etkinleştirilmediği
 
 - Kullanıcının Skype Kurumsal Online için etkinleştirilip etkinleştirilmediği
 
-Microsoft 365 yönetim merkezi kolayca böyle bir rapor oluşturamazsınız. Bunun yerine, bilgileri depolamak için Excel çalışma sayfası gibi ayrı bir belge oluşturmanız gerekir. Ardından, Microsoft 365 yönetim merkezi tüm kullanıcı adlarını ve lisans bilgilerini alın, <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange yönetim merkezinden</a> posta kutusu bilgilerini alın, Skype Kurumsal Online Yönetici Skype Kurumsal Online bilgilerini alın  ortalayıp bu bilgileri birleştirin.
+Microsoft 365 yönetim merkezi kolayca böyle bir rapor oluşturamazsınız. Bunun yerine, excel çalışma sayfası gibi bilgileri depolamak için ayrı bir belge oluşturmanız gerekir. Ardından, Microsoft 365 yönetim merkezi tüm kullanıcı adlarını ve lisans bilgilerini alın, <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange yönetim merkezinden</a> posta kutusu bilgilerini alın, Skype Kurumsal Online Yönetici merkezinden Skype Kurumsal Online bilgilerini alın ve bu bilgileri birleştirin.
 
 Alternatif olarak, raporu sizin için derlemek için bir PowerShell betiği kullanabilirsiniz.
 
@@ -416,7 +416,7 @@ Molly Dempsey           False        True               False
 
 Bu PowerShell betiğinin yorumu şöyledir:
 
-1. Geçerli Microsoft 365 aboneliğindeki tüm kullanıcıları alın ve bilgileri *$x* (**$x = Get-AzureADUser**) adlı bir değişkende depolayın.
+1. Geçerli Microsoft 365 aboneliğindeki tüm kullanıcıları alın ve bilgileri *$x* adlı bir değişkende **depolayın ($x = Get-AzureADUser**).
 1. $x değişkenindeki tüm kullanıcıların üzerinde çalışan bir döngü başlatın **(foreach ($x'de $i)**).
 1. *$y* adlı bir değişken tanımlayın ve kullanıcının posta kutusu bilgilerini içinde depolayın (**$y = Get-Mailbox -Identity $i.UserPrincipalName**).
 1. *IsMailBoxEnabled* adlı kullanıcı bilgilerine yeni bir özellik ekleyin. Kullanıcı posta kutusunun IsMailBoxEnabled özelliğinin değerine ayarlayın (**$i | Add-Member -MemberType NoteProperty -Name IsMailboxEnabled -Value $y.IsMailboxEnabled**).
@@ -426,8 +426,8 @@ Bu PowerShell betiğinin yorumu şöyledir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft 365 için PowerShell ile Kullanmaya başlayın](getting-started-with-microsoft-365-powershell.md)
+[Microsoft 365 için PowerShell'i kullanmaya başlama](getting-started-with-microsoft-365-powershell.md)
 
 [PowerShell ile Microsoft 365 kullanıcı hesaplarını, lisanslarını ve gruplarını yönetme](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 
-[Microsoft 365'de rapor oluşturmak için Windows PowerShell kullanma](use-windows-powershell-to-create-reports-in-microsoft-365.md)
+[Microsoft 365'te rapor oluşturmak için Windows PowerShell kullanma](use-windows-powershell-to-create-reports-in-microsoft-365.md)

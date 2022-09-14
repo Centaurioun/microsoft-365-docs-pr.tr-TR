@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 12/29/2016
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Özet: Office 365 bağlanmak için kullanılan ağ kapasitesi, WAN hızlandırıcıları ve yük dengeleme cihazlarıyla ilgili dikkat edilmesi gereken noktaları açıklar.'
-ms.openlocfilehash: 3b79e73f292ecf1db38a90364db3d2e475723158
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: eddb7cd45e872b41fa25dbf0cd1786ccb40de1e2
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622821"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672083"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Office 365 hizmetlerine bağlanan ağ cihazlarını planlama
 
@@ -60,7 +60,7 @@ Kuruluşunuz geniş alan ağı (WAN) hızlandırma proxy gereçleri kullanıyors
   
 ## <a name="hardware-and-software-load-balancing-devices"></a>Donanım ve Yazılım Yük Dengeleme Cihazları
 
-Kuruluşunuzun, istekleri Active Directory Federasyon Hizmetleri (AD FS) (AD FS) sunucularınıza ve/veya Exchange karma sunucularınıza dağıtmak için bir donanım yük dengeleyici (HLB) veya Ağ Yükü Dengeleme (NLB) çözümü kullanması gerekir. Yük dengeleme cihazları, şirket içi sunuculara yönelik ağ trafiğini denetler. Bu sunucular, çoklu oturum açma ve karma dağıtım Exchange kullanılabilirliğini sağlamaya yardımcı olması açısından çok önemlidir.
+Kuruluşunuzun, istekleri Active Directory Federasyon Hizmetleri (AD FS) (AD FS) sunucularınıza ve/veya Exchange karma sunucularınıza dağıtmak için bir donanım yük dengeleyici (HLB) veya Ağ Yükü Dengeleme (NLB) çözümü kullanması gerekir. Yük dengeleme cihazları, şirket içi sunuculara yönelik ağ trafiğini denetler. Bu sunucular çoklu oturum açma ve Exchange karma dağıtımının kullanılabilirliğini sağlamaya yardımcı olması açısından çok önemlidir.
   
 Windows Server'da yerleşik olarak bulunan yazılım tabanlı bir NLB çözümü sunuyoruz. Office 365, yük dengeleme gerçekleştirmek için bu çözümü destekler.
   

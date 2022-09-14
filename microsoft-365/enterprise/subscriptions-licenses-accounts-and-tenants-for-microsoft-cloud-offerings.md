@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Microsoft bulut tekliflerindeki kuruluşların, aboneliklerin, lisansların, kullanıcı hesaplarının ve kiracıların ilişkilerini anlayın.
-ms.openlocfilehash: 9a3f41af3945055ebfc3217837b0bdaf8aab411a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9bb46712ba6d5794027915a12aa329dfa9c2d91f
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101171"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669837"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Microsoft'un bulut teklifleri için abonelikler, lisanslar, hesaplar ve kiracılar
 
@@ -52,7 +52,7 @@ Abonelik, Kullanıcı başına lisans ücretine veya bulut tabanlı kaynak tüke
  
 Deneme aboneliği de kullanabilirsiniz, ancak aboneliğin süresi belirli bir süre veya tüketim ücretinden sonra dolar. Deneme aboneliğini ücretli aboneliğe dönüştürebilirsiniz.
   
-Kuruluşlar Microsoft'un bulut teklifleri için birden fazla aboneliğe sahip olabilir. Şekil 1'de birden çok Microsoft 365 aboneliği, Dynamics 365 aboneliği ve birden çok Azure aboneliği olan tek bir kuruluş gösterilmektedir.
+Kuruluşlar Microsoft'un bulut teklifleri için birden fazla aboneliğe sahip olabilir. Şekil 1'de birden çok Microsoft 365 aboneliği, dynamics 365 aboneliği ve birden çok Azure aboneliği olan tek bir kuruluş gösterilmektedir.
 
 **Şekil 1: Bir kuruluş için birden çok abonelik örneği**
 
@@ -74,25 +74,25 @@ Azure PaaS tabanlı bulut hizmetleri için yazılım lisansları hizmet fiyatlan
   
 Azure IaaS tabanlı sanal makineler için, bir sanal makine görüntüsünde yüklü olan yazılımı veya uygulamayı kullanmak için ek lisanslar gerekebilir. Bazı sanal makine görüntülerinde yazılımın lisanslı sürümleri yüklüdür ve maliyet sunucu için dakika başına ücrete dahil edilir. SQL Server 2014 ve SQL Server 2016 için sanal makine görüntüleri örnek olarak verilebilir. 
   
-Bazı sanal makine görüntülerinde uygulamaların deneme sürümleri yüklüdür ve deneme süresinden sonra kullanılmak üzere ek yazılım uygulama lisanslarına ihtiyaç duyar. Örneğin, SharePoint Server 2016 Deneme sanal makinesi görüntüsü, önceden yüklenmiş SharePoint Server 2016'nın deneme sürümünü içerir. Deneme süre sonu tarihinden sonra SharePoint Server 2016'yı kullanmaya devam etmek için Microsoft'tan SharePoint Server 2016 lisansı ve istemci lisansları satın almalısınız. Bu ücretler Azure aboneliğinden ayrıdır ve sanal makineyi çalıştırmak için dakika başına ücret uygulanır.
+Bazı sanal makine görüntülerinde uygulamaların deneme sürümleri yüklüdür ve deneme süresinden sonra kullanılmak üzere ek yazılım uygulama lisanslarına ihtiyaç duyar. Örneğin, SharePoint Server 2016 Deneme sanal makinesi görüntüsü, SharePoint Server 2016'nın önceden yüklenmiş bir deneme sürümünü içerir. Deneme süresi sona erme tarihinden sonra SharePoint Server 2016'yı kullanmaya devam etmek için, Microsoft'tan bir SharePoint Server 2016 lisansı ve istemci lisansları satın almalısınız. Bu ücretler Azure aboneliğinden ayrıdır ve sanal makineyi çalıştırmak için dakika başına ücret uygulanır.
   
 ### <a name="user-accounts"></a>Kullanıcı hesapları
 
-Microsoft'un tüm bulut tekliflerinin kullanıcı hesapları, kullanıcı hesaplarını ve gruplarını içeren bir Azure Active Directory (Azure AD) kiracısında depolanır. Azure AD kiracısı, Windows sunucu tabanlı bir hizmet olan Azure AD Bağlan kullanılarak mevcut Active Directory Domain Services (AD DS) hesaplarınızla eşitlenebilir. Bu, dizin eşitlemesi olarak bilinir.
+Microsoft'un tüm bulut tekliflerinin kullanıcı hesapları, kullanıcı hesaplarını ve gruplarını içeren bir Azure Active Directory (Azure AD) kiracısında depolanır. Azure AD kiracı, Windows sunucu tabanlı bir hizmet olan Azure AD Connect kullanılarak mevcut Active Directory Domain Services (AD DS) hesaplarınızla eşitlenebilir. Bu, dizin eşitlemesi olarak bilinir.
   
 Şekil 3'de, kuruluşun hesaplarını içeren ortak bir Azure AD kiracısı kullanan bir kuruluşun birden çok aboneliği örneği gösterilmektedir.
   
 **Şekil 3: Bir kuruluşun aynı Azure AD kiracısını kullanan birden çok aboneliği**
 
-![Tümü aynı Azure AD kiracısını kullanan birden çok aboneliği olan örnek bir kuruluş.](../media/Subscriptions/Subscriptions-Fig3.png)
+![Tümü aynı Azure AD kiracıyı kullanan birden çok aboneliği olan örnek bir kuruluş.](../media/Subscriptions/Subscriptions-Fig3.png)
   
 ### <a name="tenants"></a>Kiracı
 
-SaaS bulut teklifleri için kiracı, bulut hizmetleri sağlayan sunucuları barındıran bölgesel konumdur. Örneğin Contoso Corporation, Paris'teki 15.000 çalışanın Microsoft 365, EMS ve Dynamics 365 aboneliklerini barındırmak için Avrupa bölgesini seçti.
+SaaS bulut teklifleri için kiracı, bulut hizmetleri sağlayan sunucuları barındıran bölgesel konumdur. Örneğin Contoso Corporation, Paris'teki genel merkezinde 15.000 çalışan için Microsoft 365, EMS ve Dynamics 365 aboneliklerini barındırmak üzere Avrupa bölgesini seçti.
   
 Azure IaaS'de barındırılan Azure PaaS hizmetleri ve sanal makine tabanlı iş yükleri, dünyanın farklı yerlerindeki herhangi bir Azure veri merkezinde kiracıya sahip olabilir. IaaS iş yükünün Azure PaaS uygulamasını veya hizmetini veya öğesini oluştururken konum olarak bilinen Azure veri merkezini belirtirsiniz.
   
-Azure AD kiracısı, hesapları ve grupları içeren belirli bir Azure AD örneğidir. Microsoft 365 veya Dynamics 365 ücretli veya deneme abonelikleri ücretsiz bir Azure AD kiracısı içerir. Bu Azure AD kiracısı diğer Azure hizmetlerini içermez ve Azure deneme sürümü veya ücretli abonelikle aynı değildir.
+Azure AD kiracı, hesapları ve grupları içeren belirli bir Azure AD örneğidir. Microsoft 365 veya Dynamics 365'in ücretli veya deneme abonelikleri ücretsiz bir Azure AD kiracısı içerir. Bu Azure AD kiracısı diğer Azure hizmetlerini içermez ve Azure deneme sürümü veya ücretli abonelikle aynı değildir.
   
 ### <a name="summary-of-the-hierarchy"></a>Hiyerarşinin özeti
 
@@ -104,7 +104,7 @@ Hızlı bir özet aşağıda verilmiştir:
     
   - Lisanslar tek tek kullanıcı hesaplarına atanabilir
     
-  - Kullanıcı hesapları bir Azure AD kiracısında depolanır
+  - Kullanıcı hesapları Azure AD kiracıda depolanır
     
 Aşağıda kuruluşların, aboneliklerin, lisansların ve kullanıcı hesaplarının ilişkisine bir örnek verilmiştir:
   
@@ -118,7 +118,7 @@ Aşağıda kuruluşların, aboneliklerin, lisansların ve kullanıcı hesapları
     
     Birden çok Azure aboneliği.
     
-  - Kuruluşun ortak bir Azure AD kiracısında bulunan kullanıcı hesapları.
+  - Kuruluşun ortak bir Azure AD kiracıdaki kullanıcı hesapları.
     
 Birden çok Microsoft bulut teklifi aboneliği, ortak kimlik sağlayıcısı işlevi gören aynı Azure AD kiracısını kullanabilir. Şirket içi AD DS'nizin eşitlenmiş hesaplarını içeren merkezi bir Azure AD kiracısı, kuruluşunuz için bulut tabanlı Hizmet Olarak Kimlik (IDaaS) sağlar. 
   
@@ -126,7 +126,7 @@ Birden çok Microsoft bulut teklifi aboneliği, ortak kimlik sağlayıcısı iş
 
 ![Kuruluşunuz için Hizmet Olarak Kimlik (IaaS) IDaaS.](../media/Subscriptions/Subscriptions-Fig4.png)
   
-Şekil 4'te ortak bir Azure AD kiracısını Microsoft'un SaaS bulut teklifleri, Azure PaaS uygulamaları ve Azure IaaS'de Azure AD Domain Services kullanan sanal makineler tarafından nasıl kullanıldığı gösterilmektedir. Azure AD Bağlan, şirket içi AD DS ormanını Azure AD kiracısıyla eşitler.
+Şekil 4'te ortak bir Azure AD kiracının Microsoft'un SaaS bulut teklifleri, Azure PaaS uygulamaları ve Azure AD Etki Alanı Hizmetleri kullanan Azure IaaS'deki sanal makineler tarafından nasıl kullanıldığı gösterilmektedir. Azure AD Connect, şirket içi AD DS ormanını Azure AD kiracısıyla eşitler.
   
 ## <a name="combining-subscriptions-for-multiple-microsoft-cloud-offerings"></a>Birden çok Microsoft bulut teklifi için abonelikleri birleştirme
 
@@ -134,29 +134,29 @@ Aşağıdaki tabloda, bir bulut teklifi türü için zaten bir aboneliğe sahip 
   
 ||**Microsoft 365**|**Azure**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Microsoft 365** <br/> |NA  <br/> |Azure portal kuruluşunuza bir Azure aboneliği eklersiniz.  <br/> |kuruluşunuza Microsoft 365 yönetim merkezi bir Dynamics 365 aboneliği eklersiniz.  <br/> |
-|**Azure** <br/> |Kuruluşunuza bir Microsoft 365 aboneliği eklersiniz.  <br/> |NA  <br/> |Kuruluşunuza dynamics 365 aboneliği eklersiniz.  <br/> |
-|**Dynamics 365** <br/> |Kuruluşunuza bir Microsoft 365 aboneliği eklersiniz.  <br/> |Azure portal kuruluşunuza bir Azure aboneliği eklersiniz.  <br/> |NA  <br/> |
+|**Microsoft 365** <br/> |Na  <br/> |Azure portal kuruluşunuza bir Azure aboneliği eklersiniz.  <br/> |kuruluşunuza Microsoft 365 yönetim merkezi bir Dynamics 365 aboneliği eklersiniz.  <br/> |
+|**Azure** <br/> |Kuruluşunuza bir Microsoft 365 aboneliği eklersiniz.  <br/> |Na  <br/> |Kuruluşunuza dynamics 365 aboneliği eklersiniz.  <br/> |
+|**Dynamics 365** <br/> |Kuruluşunuza bir Microsoft 365 aboneliği eklersiniz.  <br/> |Azure portal kuruluşunuza bir Azure aboneliği eklersiniz.  <br/> |Na  <br/> |
    
 Microsoft SaaS tabanlı hizmetler için kuruluşunuza abonelik eklemenin kolay bir yolu yönetim merkezidir:
   
-1. **Kullanıcı Yöneticiniz** veya **Genel yönetici** hesabınızla Microsoft 365 yönetim merkezi ([https://admin.microsoft.com](https://admin.microsoft.com)) oturum açın.
+1. Kullanıcı Yönetici veya **Genel yönetici** hesabınızla **Microsoft 365 yönetim merkezi** ([https://admin.microsoft.com](https://admin.microsoft.com)) oturum açın.
     
-2. **Yönetim merkezi** giriş sayfasının sol gezinti bölmesinde **Faturalama'ya** ve ardından **Hizmetleri satın al'a** tıklayın.
+2. **Yönetici merkezi** giriş sayfasının sol gezinti bölmesinde **Faturalama'ya** ve ardından **Hizmetleri satın al'a** tıklayın.
     
 3. **Hizmetleri satın al** sayfasında yeni aboneliklerinizi satın alın.
     
-Yönetim merkezi, Microsoft 365 aboneliğinizin kuruluş ve Azure AD kiracısını SaaS tabanlı bulut teklifleri için yeni aboneliklere atar.
+Yönetim merkezi, SaaS tabanlı bulut teklifleri için yeni aboneliklere Microsoft 365 aboneliğinizin kuruluş ve Azure AD kiracısını atar.
   
-Microsoft 365 aboneliğinizle aynı kuruluşa ve Azure AD kiracısına sahip bir Azure aboneliği eklemek için:
+Microsoft 365 aboneliğinizle aynı kuruluşa ve Azure AD kiracıya sahip bir Azure aboneliği eklemek için:
   
-1. Microsoft 365 **Azure AD DC yöneticiniz** veya **Genel yönetici** hesabınızla Azure portal ([https://portal.azure.com](https://portal.azure.com)) oturum açın.
+1. Microsoft 365 Azure AD **DC yöneticiniz** veya **Genel yönetici** hesabınızla Azure portal ([https://portal.azure.com](https://portal.azure.com)) oturum açın.
     
 2. Sol gezinti bölmesinde **Abonelikler'e** ve ardından **Ekle'ye** tıklayın.
     
 3. **Abonelik ekle** sayfasında bir teklif seçin ve ödeme bilgilerini ve sözleşmeyi tamamlayın.
     
-Azure ve Microsoft 365 aboneliklerini ayrı olarak satın aldıysanız ve Azure aboneliğinizden Microsoft 365 Azure AD kiracısına erişmek istiyorsanız, [Azure Active Directory kiracınıza var olan bir Azure aboneliğini ekleme](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) başlığı altında yer alan yönergelere bakın.
+Azure ve Microsoft 365 aboneliklerini ayrı olarak satın aldıysanız ve Azure aboneliğinizden Microsoft 365 Azure AD kiracısına erişmek istiyorsanız Azure [Active Directory kiracınıza var olan bir Azure aboneliğini ekleme](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) başlığı altında yer alan yönergelere bakın.
  
 ## <a name="see-also"></a>Ayrıca bkz.
 

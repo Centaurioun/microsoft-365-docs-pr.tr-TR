@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 11/19/2019
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Bu genel bakış adımları ağınızı ayarlamanıza, kimliklerinizi oluşturmanıza, Microsoft 365 Uygulamaları dağıtmanıza ve verilerinizi geçirmenize yardımcı olmak için tasarlanmıştır.
-ms.openlocfilehash: 216a06cbd8291bfe01944b01de45f3fce6908b05
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1562e92c082c27ba349d0f5611cc7bbbc4d55035
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091555"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67673029"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>Kuruluşunuz için Microsoft 365 Kurumsal dağıtma
 
@@ -36,7 +36,7 @@ Bu makalede, ister yardım ister kendi başınıza yapıyor olun iki dağıtım 
 
 ## <a name="guided-microsoft-365-enterprise-setup-process-with-fasttrack"></a>FastTrack ile destekli Microsoft 365 Kurumsal kurulum işlemi
 
-**[Microsoft 365 için FastTrack, Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** dağıtmak için en iyi yöntemdir. FastTrack, en yaygın dağıtım yapılandırmalarında size yol gösterir ve dağıtım sırasında sorularınızı yanıtlayabilir. 
+**[Microsoft 365 için FastTrack, Microsoft 365'i](https://www.microsoft.com/fasttrack/microsoft-365)** dağıtmak için en iyi yöntemdir. FastTrack, en yaygın dağıtım yapılandırmalarında size yol gösterir ve dağıtım sırasında sorularınızı yanıtlayabilir. 
 
 Bir dizi kurulum kılavuzuna erişmek için Microsoft 365 aboneliğinizde oturum açın ve kurulum [kılavuzu'na](https://aka.ms/o365fasttrack) gidin.
 
@@ -56,7 +56,7 @@ Planlamanızı tamamladıktan sonra Microsoft 365 Kurumsal kendiniz dağıtmak i
  
 2. [Kimliklerinizi ayarlama](protect-your-global-administrator-accounts.md)
 
-   Bir kimlik modelini (yalnızca bulutta veya karma) belirlemeyi ve karma kimlik için şirket içi Active Directory Etki Alanı Hizmetleri (AD DS) ile Microsoft 365 aboneliğiniz arasında dizin eşitlemesini ayarlamayı içerir.
+   Bir kimlik modeli (yalnızca bulut veya karma) belirlemeyi ve karma kimlik için şirket içi Active Directory Domain Services (AD DS) ile Microsoft 365 aboneliğiniz arasında dizin eşitlemesini ayarlamayı içerir.
 
 3. [Güvenlik uygulama](/office365/securitycompliance/security-roadmap)
 
@@ -64,7 +64,7 @@ Planlamanızı tamamladıktan sonra Microsoft 365 Kurumsal kendiniz dağıtmak i
  
 4. [İstemci yazılımını dağıtma](/DeployOffice/deployment-guide-microsoft-365-apps)
 
-   Office paketinin bulutta güncelleştirilmiş ve her zaman güncel sürümü olan Kurumlar için Microsoft 365 Uygulamaları (eski adıyla Office 365 ProPlus), cihazlarınıza dağıtmayı (Word, Excel, PowerPoint ve diğerleri) içerir. Her Microsoft 365 istemci lisansı, Kurumlar için Microsoft 365 Uygulamaları için bir lisans içerir.
+   Kurumlar için Microsoft 365 Uygulamaları (eski adıyla Office 365 ProPlus), Office paketinin bulut tarafından güncelleştirilmiş ve her zaman güncel sürümünü (Word, Excel, PowerPoint ve diğerleri) cihazlarınıza dağıtmayı içerir. Her Microsoft 365 istemci lisansı, Kurumlar için Microsoft 365 Uygulamaları lisansı içerir.
  
 5. [Mobil cihaz yönetimini ayarlama](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
@@ -72,11 +72,11 @@ Planlamanızı tamamladıktan sonra Microsoft 365 Kurumsal kendiniz dağıtmak i
  
 6. [Hizmetleri ve uygulamaları yapılandırma](configure-services-and-applications.md)
 
-   Verilerinizin geçişi hakkında bilgi ve Exchange Online, SharePoint Online ve Teams gibi önemli Microsoft 365 üretkenlik uygulamalarına başlamanızı sağlayan makalelere bağlantılar içerir.
+   Verilerinizin geçişiyle ilgili bilgileri ve Exchange Online, SharePoint Online ve Teams gibi önemli Microsoft 365 üretkenlik uygulamalarına başlamanızı sağlayan makalelerin bağlantılarını içerir.
  
 7. [Kullanıcılarınızı eğitme](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
-   Kullanıcılarınızın Microsoft 365 hızlı bir şekilde en iyi şekilde elde etmelerine yardımcı olan kısa videolar içerir.
+   Kullanıcılarınızın Microsoft 365'i hızla en iyi şekilde kullanmaya başlamasını sağlayan kısa videolar içerir.
  
 
 >[!Note]

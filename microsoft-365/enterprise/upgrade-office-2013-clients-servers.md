@@ -5,16 +5,16 @@ author: dhb-msft
 manager: dougeby
 audience: ITPro
 ms.topic: overview
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 description: Destek 11 Nisan 2023'te sona erdiğinden Office 2013 istemcilerinden ve sunucularından yükseltmenizi planlayın.
-ms.openlocfilehash: 3acce92a419382420b21dee64ce77c196eeb8a42
-ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
+ms.openlocfilehash: 271b290278d66582e6cf29da85c5b8c9ee87bc8c
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "66861414"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669045"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2013-clients-and-servers"></a>Office 2013 istemcilerinden ve sunucularından yükseltmenize yardımcı olacak kaynaklar
 
@@ -32,7 +32,7 @@ Aşağıdaki tabloda, bu Office 2013 istemcilerinden ve sunucularından yükselt
 
 |Ürün|Kaynak planlama|
 |---|---|
-|Office 2013 (masaüstü uygulamaları)<br/>Project 2013<br/>Visio 2013|[Office'in eski sürümlerinden Microsoft 365 Uygulamaları yükseltme planlama](/deployoffice/endofsupport/plan-upgrade-older-versions-office.md)|
+|Office 2013 (masaüstü uygulamaları)<br/>Project 2013<br/>Visio 2013|[Office'in eski sürümlerinden Microsoft 365 Uygulamaları yükseltme planlama](/deployoffice/endofsupport/plan-upgrade-older-versions-office)|
 |Exchange Server 2013|[Exchange 2013 destek sonu yol haritası](exchange-2013-end-of-support.md)|
 |SharePoint Server 2013 <br/> SharePoint Foundation 2013|[SharePoint 2013'ten yükseltme](upgrade-from-sharepoint-2013.md)|
 |Project Server 2013|[Project Server 2013 destek sonu yol haritası](project-server-2013-end-of-support.md)|

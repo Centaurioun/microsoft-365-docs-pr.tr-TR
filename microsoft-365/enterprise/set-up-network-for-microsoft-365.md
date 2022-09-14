@@ -1,12 +1,12 @@
 ---
-title: Ağınızı Microsoft 365 için ayarlama
+title: Microsoft 365 için ağınızı ayarlama
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 11/19/2019
 audience: ITPro
 ms.topic: landing-page
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,15 +19,15 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: ''
-description: Ağ bağlantısına genel bakış ve uç noktaların listesi de dahil olmak üzere ağınızı Microsoft 365 için ayarlamanıza yardımcı olacak bilgiler içeren makalelerin bağlantılarını bulun.
-ms.openlocfilehash: 8651fa23983cddf243081248bf1e03fb067232e2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Ağ bağlantısına genel bakış ve uç noktaların listesi de dahil olmak üzere Ağınızı Microsoft 365 için ayarlamanıza yardımcı olacak bilgiler içeren makalelerin bağlantılarını bulun.
+ms.openlocfilehash: c15935d2b3801bb072c2fdf189726545fa6700ce
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092855"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670873"
 ---
-# <a name="set-up-your-network-for-microsoft-365"></a>Ağınızı Microsoft 365 için ayarlama
+# <a name="set-up-your-network-for-microsoft-365"></a>Microsoft 365 için ağınızı ayarlama
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
@@ -45,7 +45,7 @@ Microsoft 365 bağlantısına genel bakış için şu makalelere bakın:
 
 Performansı geliştirme hakkında öneriler için bkz. [Microsoft 365 için ağ planlama ve performans ayarlama](network-planning-and-performance.md).
 
-## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Ağ ekipmanı satıcısı olarak ağ Microsoft 365 desteği
+## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Ağ ekipmanı satıcısı olarak Microsoft 365 ağını destekleme
 
 Ağ ekipmanı satıcısıysanız [Office 365 Ağ İş Ortağı Programı](microsoft-365-networking-partner-program.md) katılın. Ürünlerinize ve çözümlerinize Office 365 ağ bağlantısı ilkeleri oluşturmak için programa kaydolın. 
 
@@ -61,9 +61,9 @@ Ayrıntılar için bkz[. Office 365 uç noktalarını yönetme](managing-office-
 
 |  Uç Noktaları | Açıklama |
 |:-------|:-----|
-| [Dünya çapında uç noktalar](urls-and-ip-address-ranges.md) | Birleşik Devletler Government Community Cloud (GCC) içeren dünya çapındaki Office 365 aboneliklerinin uç noktaları. |
+| [Dünya çapında uç noktalar](urls-and-ip-address-ranges.md) | Birleşik Devletler Kamu Topluluk Bulutu'nun (GCC) dahil olduğu dünya çapındaki Office 365 abonelikleri için uç noktalar. |
 | [ABD Hükümeti DoD uç noktaları](microsoft-365-u-s-government-dod-endpoints.md) | Birleşik Devletler Savunma Bakanlığı (DoD) aboneliklerinin uç noktaları. |
-| [ABD Hükümeti GCC High uç noktaları](microsoft-365-u-s-government-gcc-high-endpoints.md) | Birleşik Devletler Government Community Cloud High (GCC High) aboneliklerinin uç noktaları. |
+| [ABD Hükümeti GCC High uç noktaları](microsoft-365-u-s-government-gcc-high-endpoints.md) | Birleşik Devletler Government Community Cloud High (GCC High) abonelikleri için uç noktalar. |
 | [21Vianet uç noktaları tarafından sağlanan Office 365](urls-and-ip-address-ranges-21vianet.md) | 21Vianet tarafından sağlanan ve Çin'deki Office 365 ihtiyaçlarını karşılamak için tasarlanmış Office 365 uç noktaları. |
 |||
 

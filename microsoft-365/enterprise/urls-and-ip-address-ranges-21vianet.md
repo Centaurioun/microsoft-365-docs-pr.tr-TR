@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/28/2022
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: Bu makalede, Çin'de 21Vianet tarafından çalıştırıldığında Office 365 için URL'ler ve IP adresi aralıkları listelenir.
 hideEdit: true
-ms.openlocfilehash: 11c1740ef976f616306c01e476d94883b2e836db
-ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
+ms.openlocfilehash: a91cd61a665846790660bbb2eb62db6ef59d4af8
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67294445"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670101"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet tarafından sağlanan Office 365 için URL'ler ve IP adresi aralıkları
 

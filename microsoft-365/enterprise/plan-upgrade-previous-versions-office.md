@@ -1,11 +1,11 @@
 ---
-title: Office 2007 veya 2010 sunucu ve istemcilerinden yükseltmenizi planlama
+title: Office 2007 veya 2010 sunucularından ve istemcilerinden yükseltmenizi planlama
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: overview
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -16,31 +16,31 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Bu makale, yükseltmelerini planlamalarına yardımcı olmak için Office 2007 veya Office 2010 kullanan kullanıcılara yönelik kaynaklar içerir.
-ms.openlocfilehash: ba57eb9f6f1b3c0d573b19b63da1fdd2c1a2b879
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c8c574f2001b0897f2656113e8c46fcd9e60e473
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100269"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67673073"
 ---
-# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 veya Office 2010 sunucu ve istemcilerinden yükseltmenizi planlama
+# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 veya Office 2010 sunucularından ve istemcilerinden yükseltmenizi planlama
 
-*Bu makale hem Enterprise için Microsoft 365 hem de Enterprise için Office 365 için geçerlidir.*
+*Bu makale hem Kurumsal için Microsoft 365 hem de Kurumsal için Office 365 için geçerlidir.*
 
-Kuruluşunuz Office ürünlerinin ve sunucularının eski sürümlerini kullanıyorsa şimdi yükseltmenizi planlamaya başlamak için harika bir zaman. Office 2007 ürün ve hizmetleri [destek sonuna](upgrade-from-office-2007-servers-and-products.md) ulaşmıştır. Office 2010 ürün ve hizmetleri için:
+Kuruluşunuz Office ürünlerinin ve sunucularının eski sürümlerini kullanıyorsa, yükseltmenizi planlamaya başlamak için şimdi harika bir zaman. Office 2007 ürün ve hizmetleri [destek sonuna](upgrade-from-office-2007-servers-and-products.md) ulaştı. Office 2010 ürün ve hizmetleri için:
 
 - Office 2010 ve Exchange 2010 *, 13 Ekim 2020'de* destek sonuna ulaştı. 
 - SharePoint 2010 ve Project Server 2010 *, 13 Nisan 2021'de* destek sonuna ulaşacaktır. 
 
-Daha fazla bilgi için bkz[. Office 2010 sunucularından ve istemcilerinden yükseltme](upgrade-from-office-2010-servers-and-products.md).
+Daha fazla bilgi için bkz. [Office 2010 sunucularından ve istemcilerinden yükseltme](upgrade-from-office-2010-servers-and-products.md).
 
 Yükseltmenize başlamak için bu makaledeki kaynakları kullanın.
 
 ## <a name="what-is-microsoft-365"></a>Microsoft 365 nedir?
 
-[Microsoft 365](https://www.microsoft.com/microsoft-365), daha fazlasını başarmanıza yardımcı olmak için tasarlanmış yenilikçi Office uygulamaları, akıllı bulut hizmetleri ve birinci sınıf güvenliğin bir birleşimidir.
+[Microsoft 365](https://www.microsoft.com/microsoft-365) , daha fazlasını başarmanıza yardımcı olmak için tasarlanmış yenilikçi Office uygulamalarının, akıllı bulut hizmetlerinin ve birinci sınıf güvenliğin bir birleşimidir.
 
-Microsoft 365, kuruluşunuzun en son Windows işletim sistemi üzerinde çalıştığından emin olmak için lisansları ve özellikleri içerir. Ayrıca Windows, iOS ve Android cihazlarınızın kimlik doğrulaması ve veri koruması gerektiren ilkelerle kaydedilmesini ve güvenliğinin sağlanmasını sağlar. Ayrıca, Windows 10 ve Enterprise (eski adıyla Office 365 ProPlus) istemci yazılımı için Microsoft 365 Uygulamaları en son özellikleri ve güvenlik güncelleştirmelerini içerecek şekilde sürekli olarak güncelleştirilir.
+Microsoft 365, kuruluşunuzun en son Windows işletim sistemi üzerinde çalıştığından emin olmak için lisansları ve özellikleri içerir. Ayrıca Windows, iOS ve Android cihazlarınızın kimlik doğrulaması ve veri koruması gerektiren ilkelerle kaydedilmesini ve güvenliğinin sağlanmasını sağlar. Ayrıca, Windows 10 ve Kurumsal Microsoft 365 Uygulamaları (eski adıyla Office 365 ProPlus) istemci yazılımınız, en son özellikleri ve güvenlik güncelleştirmelerini içerecek şekilde sürekli olarak güncelleştirilir.
   
 Microsoft 365, Microsoft bulutu tarafından etkinleştirilen ve güvenliği sağlanan cihazları ve üretkenlik deneyimlerini sürekli geliştirerek işletmenizi dijital olarak dönüştürmenin yoludur.
  
@@ -49,18 +49,18 @@ Microsoft 365, Microsoft bulutu tarafından etkinleştirilen ve güvenliği sağ
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|Microsoft 365 sürümleri hakkında bilgi edinin.|
 |[İş için Microsoft 365 belgeleri](../admin/index.yml)|Küçük ve orta ölçekli işletmeler için Microsoft 365 sürümü hakkında ayrıntılı bilgi edinin.|
 |[Eğitim için Microsoft 365 belgeleri](/microsoft-365/education/)|Eğitim kuruluşları için Microsoft 365 sürümü hakkında ayrıntılı bilgi edinin.|
-|[Enterprise belgeleri için Microsoft 365](./index.yml)|Kurumsal kuruluşlar için Microsoft 365 sürümü hakkında ayrıntılı bilgi edinin.|
+|[Kurumsal için Microsoft 365 belgeleri](./index.yml)|Kurumsal kuruluşlar için Microsoft 365 sürümü hakkında ayrıntılı bilgi edinin.|
 |||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Yükseltme yapmazsam ne olur?
 
-Şu anda yükseltmemeyi seçebilirsiniz. Şirket içi sunucularınız ve uygulamalarınız çalışmaya devam eder. Ancak artık güvenlik güncelleştirmeleri veya destek seçenekleri almadığınızda, kuruluşunuz güvenlik ihlallerine karşı savunmasız olabilir. Yükseltmenizi yakında planlamanızı kesinlikle öneririz. şirket içi sunucularınızın ve uygulamalarınızın Microsoft 365 veya daha yeni sürümlerine yükseltebilirsiniz.
+Şu anda yükseltmemeyi seçebilirsiniz. Şirket içi sunucularınız ve uygulamalarınız çalışmaya devam eder. Ancak artık güvenlik güncelleştirmeleri veya destek seçenekleri almadığınızda, kuruluşunuz güvenlik ihlallerine karşı savunmasız olabilir. Yükseltmenizi yakında planlamanızı kesinlikle öneririz. Microsoft 365'e veya şirket içi sunucularınızın ve uygulamalarınızın daha yeni sürümlerine yükseltebilirsiniz.
 
 ## <a name="what-upgrade-options-are-available"></a>Hangi yükseltme seçenekleri kullanılabilir?      
 
 Kuruluşlar çeşitli yükseltme seçeneklerini dikkate almalıdır:
 
-- **Şirket içi sunucularınızı ve uygulamalarınızı yükseltin.** şirket içinde Office ürünleri ve sunucu uygulamalarını kullanıyorsanız aşağıdaki planlama içeriğine bakın:<br/> 
+- **Şirket içi sunucularınızı ve uygulamalarınızı yükseltin.** Şirket içinde Office ürünleri ve sunucu uygulamaları kullanıyorsanız aşağıdaki planlama içeriğine bakın:<br/> 
 
   |Office 2007 ürün ve hizmetleri|Office 2010 ürün ve hizmetleri|
   |---|---|
@@ -89,21 +89,21 @@ Yükseltmenizi planlama konusunda yardım istiyorsanız aşağıdaki seçenekler
 
 Evde Office 2007 veya Office 2010 kullanıyorsanız aşağıdaki yükseltme seçeneklerini göz önünde bulundurun:
 
-- **tarayıcıda ücretsiz olarak Office kullanın.** Tarayıcınızda Office dosyaları oluşturun, görüntüleyin ve düzenleyin. İnternet erişimi olan herhangi bir cihazdan bu dosyalara erişim elde edin. 
+- **Office'i tarayıcıda ücretsiz kullanın.** Tarayıcınızda Office dosyalarını oluşturun, görüntüleyin ve düzenleyin. İnternet erişimi olan herhangi bir cihazdan bu dosyalara erişim elde edin. 
 
-  [Web üzerinde Office](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) [Web için Word](https://go.microsoft.com/fwlink/p/?linkid=746664), [Web için Excel](https://go.microsoft.com/fwlink/p/?linkid=746665), [Web için PowerPoint, Web için OneNote](https://go.microsoft.com/fwlink/p/?linkid=746666), [Sway](https://go.microsoft.com/fwlink/p/?linkid=746674), [E-posta](https://go.microsoft.com/fwlink/p/?linkid=746676), [](https://go.microsoft.com/fwlink/p/?linkid=746675) [Takvim](https://go.microsoft.com/fwlink/p/?linkid=746678) ve [OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). Başlamak için [Office.com](https://office.com) adresini ziyaret edin ve [Microsoft hesabınızı](https://account.microsoft.com/account) kullanarak oturum açın. Microsoft hesabınız yoksa [Office.com](https://office.com) adresinden bir hesap oluşturabilirsiniz.
+  [Web üzerinde Office](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) [web için Word](https://go.microsoft.com/fwlink/p/?linkid=746664), [Web için Excel, Web için PowerPoint](https://go.microsoft.com/fwlink/p/?linkid=746665), [Web için OneNote](https://go.microsoft.com/fwlink/p/?linkid=746666), [Sway](https://go.microsoft.com/fwlink/p/?linkid=746674), [Email](https://go.microsoft.com/fwlink/p/?linkid=746675), [Takvim](https://go.microsoft.com/fwlink/p/?linkid=746678), [](https://go.microsoft.com/fwlink/p/?linkid=746676) ve [OneDrive'ı seçin](https://go.microsoft.com/fwlink/p/?linkid=746679). Başlamak için [Office.com](https://office.com) ziyaret edin ve [Microsoft hesabınızı](https://account.microsoft.com/account) kullanarak oturum açın. Microsoft hesabınız yoksa [, Office.com'da](https://office.com) bir hesap oluşturabilirsiniz.
 
 - **Microsoft 365 Aile deneyin.** Sizin için nasıl çalıştığını görmek için [bir Microsoft 365 Aile](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab) deneme sürümü başlatın. Microsoft 365 Aile ile OneDrive ile bulut depolamanın keyfini çıkaracaksınız.
 
-  Windows 7 desteği [14 Ocak 2020'de sona erdi](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support). Office 365 Ev veya Office 365 Personal ile sağlanan ve Windows 7 cihazda çalışan Word, Excel, PowerPoint, Outlook, Publisher ve Access sürümleri güvenlik güncelleştirmeleri alır ancak özellik güncelleştirmelerini almaz. Bu uygulamaların özellik güncelleştirmelerini almaya devam etmek için [Windows 7 cihazlarınızı Windows 10 yükseltin](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
+  Windows 7 desteği [14 Ocak 2020'de sona erdi](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support). Office 365 Ev veya Office 365 Personal ile sağlanan ve Windows 7 cihazlarında çalışan Word, Excel, PowerPoint, Outlook, Publisher ve Access sürümleri güvenlik güncelleştirmelerini alır ancak özellik güncelleştirmelerini almaz. Bu uygulamaların özellik güncelleştirmelerini almaya devam etmek için [Windows 7 cihazlarınızı Windows 10 yükseltin](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
     
-- **Ev &amp; öğrenci Office satın alın.** Bu seçeneği belirlerseniz, tek seferlik satın alma işlemi yapar ve Windows PC veya Mac bilgisayarınıza Office yüklersiniz. Bu satın alma bir abonelik değil; bir bilgisayar için tek seferlik, kalıcı kullanım lisansıdır. [Gereksinimleri](https://office.com/systemrequirements) görüntüleyin ve bir sürüm seçin.
+- **Office Ev &amp; Öğrencisi satın alın.** Bu seçeneği belirlerseniz, tek seferlik satın alma işlemi yapar ve Ardından Office'i Windows PC veya Mac bilgisayarınıza yüklersiniz. Bu satın alma bir abonelik değil; bir bilgisayar için tek seferlik, kalıcı kullanım lisansıdır. [Gereksinimleri](https://office.com/systemrequirements) görüntüleyin ve bir sürüm seçin.
 
-  - Windows bilgisayarınız Windows 10 çalıştırıyorsa, [Office Ev & Öğrenci 2019'u](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8) almayı göz önünde bulundurun.
+  - Windows bilgisayarınız Windows 10 çalıştırıyorsa[, Office Ev & Öğrenci 2019'u](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8) edinin.
 
-  - Windows bilgisayarınız Windows 7, 8 veya 8.1 çalıştırıyorsa ve şu anda Windows 10 yükseltmiyorsanız, Office Home & Student 2016'yı veya başka bir Microsoft Office sürümünü almayı göz önünde bulundurun. Yetkili bir satıcıdan alabilirsiniz.
+  - Windows bilgisayarınızda Windows 7, 8 veya 8.1 yüklüyse ve şu anda Windows 10 yükseltmiyorsanız, Office Ev & Öğrenci 2016'yı veya Microsoft Office'in başka bir sürümünü edinin. Yetkili bir satıcıdan alabilirsiniz.
      
-    Windows 7 desteği [14 Ocak 2020'de sona erdi](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support). Microsoft artık bunun için güvenlik güncelleştirmeleri sağlamaz. Windows 7 cihazlarınızı sürekli güvenlik, özellik güncelleştirmeleri ve sürekli destek için Windows 10 yükseltin.
+    Windows 7 desteği [14 Ocak 2020'de sona erdi](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support). Microsoft artık bunun için güvenlik güncelleştirmeleri sağlamaz. Sürekli güvenlik, özellik güncelleştirmeleri ve sürekli destek için Windows 7 cihazlarınızı Windows 10 yükseltin.
 
 Şimdi yükseltmemeyi seçerseniz, Office uygulamalarınız [zaman çizelgelerine](https://support.microsoft.com/lifecycle/search/13615) göre çalışmaya devam eder. Ancak, güvenlik güncelleştirmelerini veya yeni ve geliştirilmiş özellikleri almak için yükseltmeniz gerekir.
    

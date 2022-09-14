@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,19 +17,19 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Kurumsal Microsoft 365 için sanal bir kurumsal test ortamı oluşturmak için bu Test Laboratuvarı Kılavuzu'nu kullanın.
-ms.openlocfilehash: 9c52bf657e91ceca9ef6e43f20a523a57a7b5042
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Kuruluş için Microsoft 365'e yönelik bir sanal kurumsal test ortamı oluşturmak için bu Test Laboratuvarı Kılavuzu'nu kullanın.
+ms.openlocfilehash: 7f90046c75c2b95c288cdf2134734d1cc9898125
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078723"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672985"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Sanal kurumsal temel yapılandırma
 
 *Bu Test Laboratuvarı Kılavuzu hem kurumsal hem de Office 365 Kurumsal test ortamları için Microsoft 365 için kullanılabilir.*
 
-Bu makalede, aşağıdakileri içeren kuruluş için Microsoft 365 için basitleştirilmiş bir ortamın nasıl oluşturulacağı açıklanır:
+Bu makalede, microsoft 365 kurumsal için aşağıdakileri içeren basitleştirilmiş bir ortamın nasıl oluşturulacağı açıklanmaktadır:
 
 - Microsoft 365 E5 deneme sürümü veya ücretli abonelik.
 - Bir Azure sanal ağındaki üç sanal makineden (DC1, APP1 ve CLIENT1) oluşan, internete bağlı basitleştirilmiş bir kuruluş intraneti.
@@ -40,18 +40,18 @@ Basitleştirilmiş bir test ortamı oluşturmak iki aşamayı içerir:
 - [1. Aşama: Simülasyon intraneti oluşturma](#phase-1-create-a-simulated-intranet)
 - [2. Aşama: Microsoft 365 E5 aboneliğinizi oluşturma](#phase-2-create-your-microsoft-365-e5-subscription)
 
-Elde edilen ortamı, ek [Test Laboratuvarı Kılavuzları](m365-enterprise-test-lab-guides.md) ile veya kendi başınıza [kuruluş için Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise) özelliklerini ve işlevselliğini test etmek için kullanabilirsiniz.
+Sonuçta elde edilen ortamı, ek [Test Laboratuvarı Kılavuzları](m365-enterprise-test-lab-guides.md) ile veya kendi başınıza [kuruluş için Microsoft 365'in](https://www.microsoft.com/microsoft-365/enterprise) özelliklerini ve işlevselliğini test etmek için kullanabilirsiniz.
 
 ![Microsoft bulutu için Test Laboratuvarı Kılavuzları.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Kurumsal Test Laboratuvarı Kılavuzu yığınındaki Microsoft 365 tüm makalelere yönelik görsel bir harita için [kurumsal Test Laboratuvarı Kılavuzu Yığını için Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf) bölümüne gidin.
+> Microsoft 365 kurumsal Test Laboratuvarı Kılavuzu yığınındaki tüm makalelere yönelik görsel bir harita için [, Kurumsal Test Laboratuvarı Kılavuz Yığını için Microsoft 365'e](../downloads/Microsoft365EnterpriseTLGStack.pdf) gidin.
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>1. Aşama: Simülasyon intraneti oluşturma
 
 Bu aşamada Azure altyapı hizmetlerinde Active Directory Domain Services (AD DS) etki alanı denetleyicisi, uygulama sunucusu ve istemci bilgisayar içeren bir intranet simülasyonu oluşturun.
 
-Karma kimliği ve diğer özellikleri yapılandırmak ve göstermek [için bu bilgisayarları kurumsal Test Laboratuvarı Kılavuzları için ek Microsoft 365](m365-enterprise-test-lab-guides.md) kullanacaksınız.
+Karma kimliği ve diğer özellikleri yapılandırmak ve göstermek için bu bilgisayarları [kurumsal Test Laboratuvarı kılavuzları için ek Microsoft 365'te](m365-enterprise-test-lab-guides.md) kullanacaksınız.
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>Yöntem 1: Azure Resource Manager şablonuyla simülasyon intranetinizi oluşturma
 
@@ -84,7 +84,7 @@ Bu adımda, bir Azure sanal ağı oluşturur ve AD DS etki alanı için etki ala
 İlk olarak, yerel bilgisayarınızda bir Windows PowerShell komut istemi başlatın.
   
 > [!NOTE]
-> Aşağıdaki komut kümeleri Azure PowerShell en son sürümünü kullanır. Bkz. [Azure PowerShell cmdlet'lerle Kullanmaya başlayın](/powershell/azureps-cmdlets-docs/). 
+> Aşağıdaki komut kümeleri Azure PowerShell en son sürümünü kullanır. Bkz[. Azure PowerShell cmdlet'leri kullanmaya başlama](/powershell/azureps-cmdlets-docs/). 
   
 Aşağıdaki komutla Azure hesabınızda oturum açın.
   
@@ -160,19 +160,19 @@ DC1'de yerel yönetici hesabı için bir kullanıcı adı ve parola girmeniz ist
   
 Ardından DC1 sanal makinesine bağlanın:
   
-1. [Azure portal](https://portal.azure.com) **Kaynak Grupları'nı** seçin > <**_yeni kaynak grubunuzun adı_*_> > _* DC1** >  **Bağlan**.
+1. [Azure portal](https://portal.azure.com) **Kaynak Grupları'nı** seçin > <**_yeni kaynak grubunuzun adını_*_> > _* DC1** > **Bağlan'ı seçin**.
     
-2. Açık bölmede **RDP dosyasını indir'i** seçin. İndirilen DC1.rdp dosyasını açın ve **Bağlan'ı** seçin.
+2. Açık bölmede **RDP dosyasını indir'i** seçin. İndirilen DC1.rdp dosyasını açın ve **bağlan'ı** seçin.
     
 3. DC1 yerel yönetici hesabı adını belirtin:
     
    - Windows 7 için:
     
-     **Windows Güvenliği** iletişim kutusunda **Başka bir hesap kullan'ı** seçin. **Kullanıcı adı** alanına **DC1local\\**< *yönetici hesabı adını*> girin.
+     **Windows Güvenliği** iletişim kutusunda **Başka bir hesap kullan'ı** seçin. **Kullanıcı adı** alanına **> DC1\\**<*yerel yönetici hesabı adını* girin.
     
    - Windows 8 veya Windows 10 için:
     
-     **Windows Güvenliği** iletişim kutusunda **Diğer seçenekler'i** ve ardından **Farklı bir hesap kullan'ı** seçin. **Kullanıcı adı** alanına **DC1local\\**< *yönetici hesabı adını*> girin.
+     **Windows Güvenliği** iletişim kutusunda **Diğer seçenekler'i** ve ardından **Farklı bir hesap kullan'ı** seçin. **Kullanıcı adı** alanına **> DC1\\**<*yerel yönetici hesabı adını* girin.
     
 4. **Parola** alanına yerel yönetici hesabının parolasını girin ve **Tamam'ı** seçin.
     
@@ -197,11 +197,11 @@ Bu komutların tamamlanmasının birkaç dakika sürebileceğini unutmayın.
   
 DC1 yeniden başlatıldıktan sonra DC1 sanal makinesine yeniden bağlanın.
   
-1. [Azure portal](https://portal.azure.com) kaynak *grubu adınızı* **DC1** >  Bağlan> >  > <**Kaynak Grupları'nı** **seçin.**
+1. [Azure portal](https://portal.azure.com) **Kaynak Grupları'nı** seçin > <*kaynak grubu adınızı* **DC1** > **Connect**> > .
     
-2. İndirilen DC1.rdp dosyasını çalıştırın ve **Bağlan'ı** seçin.
+2. İndirilen DC1.rdp dosyasını çalıştırın ve **bağlan'ı** seçin.
     
-3. **Windows Güvenliği'da** **Başka bir hesap kullan'ı** seçin. **Kullanıcı adı** alanına **TESTLABlocal\\**< *yönetici hesabı adını*> girin.
+3. **Windows Güvenliği'da** **Başka bir hesap kullan'ı** seçin. **Kullanıcı adı** alanına **TESTLAB\\**<*yerel yönetici hesabı adını*> girin.
     
 4. **Parola** kutusuna yerel yönetici hesabının parolasını girin ve **Tamam'ı** seçin.
     
@@ -226,7 +226,7 @@ $groupNames=@("Domain Admins","Enterprise Admins","Schema Admins")
 ForEach ($name in $groupNames) {Add-ADPrincipalGroupMembership -Identity $userSID -MemberOf (Get-ADGroup -Identity $name).SID.Value}
 ```
 
-DC1 ile Uzak Masaüstü oturumunu kapatın ve TESTLABUser1\\ hesabını kullanarak yeniden bağlanın.
+DC1 ile Uzak Masaüstü oturumunu kapatın ve TESTLAB\\User1 hesabını kullanarak yeniden bağlanın.
   
 Ardından, Ping aracının trafiğine izin vermek için bu komutu yönetici düzeyinde Windows PowerShell komut isteminde çalıştırın.
   
@@ -271,9 +271,9 @@ Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
-**Add-Computer** komutunu çalıştırdıktan sonra TESTLABUser1\\ etki alanı hesabı kimlik bilgilerini sağlamanız gerektiğini unutmayın.
+**Add-Computer** komutunu çalıştırdıktan sonra TESTLAB\\User1 etki alanı hesabı kimlik bilgilerini sağlamanız gerektiğini unutmayın.
   
-APP1 yeniden başlatıldıktan sonra TESTLABUser1\\ hesabını kullanarak buna bağlanın ve ardından yönetici düzeyinde bir Windows PowerShell komut istemi açın.
+APP1 yeniden başlatıldıktan sonra TESTLAB\\User1 hesabını kullanarak buna bağlanın ve ardından yönetici düzeyinde bir Windows PowerShell komut istemi açın.
   
 Ardından, APP1'de yönetici düzeyinde Windows PowerShell komut isteminde bu komutla APP1'i bir web sunucusu yapın.
   
@@ -298,7 +298,7 @@ Geçerli yapılandırmanız şöyle görünür:
 Bu adımda, intranette tipik bir dizüstü bilgisayar, tablet veya masaüstü bilgisayar işlevi gören CLIENT1'i oluşturup yapılandıracaksınız.
 
 > [!NOTE]  
-> Aşağıdaki komut kümesi, datacenter Windows Server 2016 çalıştıran client1'i oluşturur ve bu işlem tüm Azure abonelik türleri için yapılabilir. Visual Studio tabanlı bir Azure aboneliğiniz varsa, Azure portal ile Windows 10 çalıştıran client1 oluşturabilirsiniz[.](https://portal.azure.com)
+> Aşağıdaki komut kümesi, datacenter Windows Server 2016 çalıştıran client1'i oluşturur ve bu işlem tüm Azure abonelik türleri için yapılabilir. Visual Studio tabanlı bir Azure aboneliğiniz varsa, [Azure portal](https://portal.azure.com) ile Windows 10 çalıştıran client1 oluşturabilirsiniz.
   
 İsteMCİ1 için Azure Sanal Makinesi oluşturmak için kaynak grubunuzun adını doldurun ve yerel bilgisayarınızda komut isteminde bu komutları çalıştırın.
   
@@ -329,9 +329,9 @@ Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
-**Add-Computer** komutunu çalıştırdıktan sonra TESTLABUser1\\ etki alanı hesabı kimlik bilgilerinizi sağlamanız gerektiğini unutmayın.
+**Add-Computer** komutunu çalıştırdıktan sonra TESTLAB\\User1 etki alanı hesabı kimlik bilgilerinizi sağlamanız gerektiğini unutmayın.
   
-İsteMCİ1 yeniden başlatıldıktan sonra TESTLABUser1\\ hesap adını ve parolasını kullanarak bağlanın ve ardından yönetici düzeyinde bir Windows PowerShell komut istemi açın.
+İsteMCİ1 yeniden başlatıldıktan sonra TESTLAB\\User1 hesap adını ve parolasını kullanarak bağlanın ve ardından yönetici düzeyinde bir Windows PowerShell komut istemi açın.
   
 Ardından, APP1'de web ve dosya paylaşımı kaynaklarına İstemci1'den erişebildiğinizden emin olun.
   
@@ -347,7 +347,7 @@ Ardından, APP1'de web ve dosya paylaşımı kaynaklarına İstemci1'den erişeb
     
 6. Masaüstü görev çubuğunda Dosya Gezgini simgesini seçin.
     
-7. Adres çubuğuna **app1Files\\ yazın\\\\** ve **Enter tuşuna** basın. Dosyalar paylaşılan klasörünün içeriğini içeren bir klasör penceresi görmeniz gerekir.
+7. Adres çubuğuna **app1\\Files yazın\\\\** ve **Enter tuşuna** basın. Dosyalar paylaşılan klasörünün içeriğini içeren bir klasör penceresi görmeniz gerekir.
     
 8. **Paylaşılan dosyalar** klasörü penceresinde **Example.txt** dosyasına çift tıklayın. Example.txt dosyasının içeriğini görmeniz gerekir.
     
@@ -381,7 +381,7 @@ Yeni Office 365 E5 deneme aboneliğinizi yapılandırmak için basit temel yapı
 
 Yalnızca bir Office 365 test ortamına ihtiyacınız varsa, bu makalenin geri kalanını okumanız gerekmez.
 
-Hem Microsoft 365 hem de Office 365 için geçerli olan ek [Test Laboratuvarı Kılavuzları için bkz. Kurumsal Test Laboratuvarı Kılavuzları için Microsoft 365](m365-enterprise-test-lab-guides.md).
+Hem Microsoft 365 hem de Office 365 için geçerli olan ek [Test Laboratuvarı Kılavuzları için bkz. Kurumsal Test Laboratuvarı kılavuzları için Microsoft 365](m365-enterprise-test-lab-guides.md).
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Microsoft 365 E5 deneme aboneliği ekleme
 
@@ -400,7 +400,7 @@ Son yapılandırmanız şöyle görünür:
   
 ![Sanal kurumsal temel yapılandırmanın 2. aşaması.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-Artık [kurumsal Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise) ek özellikleriyle deneme yapmaya hazırsınız.
+Artık [kuruluş için Microsoft 365'in](https://www.microsoft.com/microsoft-365/enterprise) ek özellikleriyle deneme yapmaya hazırsınız.
   
 ## <a name="next-steps"></a>Sonraki adımlar
 
@@ -412,7 +412,7 @@ Bu ek Test Laboratuvarı Kılavuzları kümelerini keşfedin:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kurumsal Test Laboratuvarı Kılavuzları için Microsoft 365](m365-enterprise-test-lab-guides.md)
+[Kurumsal test laboratuvarı kılavuzları için Microsoft 365](m365-enterprise-test-lab-guides.md)
 
 [Microsoft 365 Kurumsal’a genel bakış](microsoft-365-overview.md)
 

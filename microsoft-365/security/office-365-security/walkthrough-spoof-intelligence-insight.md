@@ -18,15 +18,15 @@ ms.collection:
 description: Yöneticiler, kimlik sahtekarlığına neden olan gönderenlere izin vermek veya bunları engellemek için kimlik sahtekarlık zekası ilkesini ve sahte zeka içgörülerini kullanmayı öğrenebilir.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e9cb7fc02a3e84f7fa0909e509f47c21b63050ab
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: ed7c369dbb2adcd9664bb4d196f2984932b3905d
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384868"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672765"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>EOP'de sahte zeka ilkesini ve sahte zeka içgörülerini kullanarak sahte gönderenleri yönetme
 

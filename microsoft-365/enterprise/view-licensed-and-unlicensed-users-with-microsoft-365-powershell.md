@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/21/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: Bu makalede, lisanslı ve lisanssız Microsoft 365 kullanıcı hesaplarını görüntülemek için PowerShell'in nasıl kullanılacağı açıklanmaktadır.
-ms.openlocfilehash: 65dcc8e397f9ad56679b880f50caa99a51e4a4c5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a1dc6b77f249d9c7af7c7b4c067e4ce4b6a3e66e
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095542"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669969"
 ---
 # <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>PowerShell ile lisanslı ve lisanssız Microsoft 365 kullanıcılarını görüntüleme
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-Microsoft 365 kuruluşunuzdaki kullanıcı hesaplarının, kuruluşunuzda bulunan lisans planlarından kendilerine atanmış olan lisansların bir kısmı, tümü veya hiçbiri olabilir. Kuruluşunuzdaki lisanslı ve lisanssız kullanıcıları hızla bulmak için Microsoft 365 için PowerShell'i kullanabilirsiniz.
+Microsoft 365 kuruluşunuzdaki kullanıcı hesaplarına kuruluşunuzda sağlanan lisans planlarından atanmış olan lisansların bir kısmı, tümü veya hiçbiri olabilir. Kuruluşunuzdaki lisanslı ve lisanssız kullanıcıları hızla bulmak için Microsoft 365 için PowerShell'i kullanabilirsiniz.
 
 ## <a name="use-the-microsoft-graph-powershell-sdk"></a>Microsoft Graph PowerShell SDK'sını kullanma
 

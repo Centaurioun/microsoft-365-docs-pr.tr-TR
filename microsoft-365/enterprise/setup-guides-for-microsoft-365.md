@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Kiracınızın lisanslarındaki özellikleri planlamak, geçirmek ve uygulamak için adım adım araçlar edinin. Çalıştırmanız gereken bir hizmeti veya uygulamayı ayarlamaya yönelik bir kılavuz bulun.
-ms.openlocfilehash: f1d16517d92e059fc6ca2646fc64ae7ba63ce3a8
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 0f81170270b509cd0da66aafba585a8da8b7a2eb
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491667"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671577"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 ve Office 365 hizmetleri için kurulum kılavuzları
 
@@ -55,9 +55,9 @@ Kurulum kılavuzları, Microsoft 365 yönetim merkezi [Kurulum kılavuzu](https:
 
 [Ortamınızı hazırlama](https://aka.ms/prepareyourenvironment) kılavuzu, kuruluşunuzun ortamını Microsoft 365 ve Office 365 hizmetleri için hazırlamanıza yardımcı olur. Hedefleriniz ne olursa olsun, başarılı bir dağıtım sağlamak için tamamlamanız gereken görevler vardır. Ortamınızı hazırlarken herhangi bir hata olmaması için, etki alanınızı bağlama, kullanıcı ekleme, lisans atama, Exchange Online ile e-posta ayarlama ve Office uygulamalarını yükleme veya dağıtma adım adım yönergeler sağlanır.
 
-### <a name="email-setup-guide"></a>E-posta kurulum kılavuzu
+### <a name="email-setup-guide"></a>kurulum kılavuzu Email
 
-[E-posta kurulum kılavuzu](https://aka.ms/office365setup), kuruluşunuz için Exchange Online yapılandırmak için gereken adım adım yönergeleri sağlar. Bu kılavuz, yeni e-posta hesaplarını ayarlamayı, e-postayı geçirmeyi ve e-posta korumasını yapılandırmayı içerir. Başarılı bir e-posta kurulumu için bu danışmanı kullanın; kuruluşunuzun geçerli posta sistemine, geçirilen posta kutularının sayısına ve kullanıcıları ve erişimlerini nasıl yönetmek istediğinize bağlı olarak önerilen geçiş yöntemini alırsınız.
+[Email kurulum kılavuzu](https://aka.ms/office365setup), kuruluşunuz için Exchange Online yapılandırmak için gereken adım adım yönergeleri sağlar. Bu kılavuz, yeni e-posta hesaplarını ayarlamayı, e-postayı geçirmeyi ve e-posta korumasını yapılandırmayı içerir. Başarılı bir e-posta kurulumu için bu danışmanı kullanın; kuruluşunuzun geçerli posta sistemine, geçirilen posta kutularının sayısına ve kullanıcıları ve erişimlerini nasıl yönetmek istediğinize bağlı olarak önerilen geçiş yöntemini alırsınız.
 
 ### <a name="migrate-gmail-contacts-and-calendar-items"></a>Gmail kişilerini ve takvim öğelerini geçirme
 

@@ -1,70 +1,70 @@
 ---
-title: Microsoft 365 değerlendirmesini geri ayanız
+title: Microsoft 365 ağ değerlendirmesi
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365 değerlendirmesini geri ayanız
-ms.openlocfilehash: 5ff858ef652c7fc536310c9d27887863d156fb5d
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+description: Microsoft 365 ağ değerlendirmesi
+ms.openlocfilehash: 8c5e6d41e5aa8ba6eaa1c38454f6f2e1d428f9d0
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63495018"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670443"
 ---
-# <a name="microsoft-365-network-assessment"></a>Microsoft 365 değerlendirmesini geri ayanız
+# <a name="microsoft-365-network-assessment"></a>Microsoft 365 ağ değerlendirmesi
 
-Ağ Microsoft 365 Yönetici'nin ağ bağlantısında **, ağ** değerlendirmeleri birçok ağ performansı ölçümünü bir toplamını kurumsal ağ çevre durumu bilginizin anlık görüntüsü olarak tasarlanmıştır. Ağ değerlendirmesinde, müşteriden sorumlu olan ağ tasarımının proje kullanıcı deneyimini Office 365 olduğu anlat. Ağ değerlendirmeleri hem kiracının tamamını hem de kullanıcıların kiracınıza bağladığı coğrafi konumların tamamını kapsıyor. Değerlendirmeler, Microsoft 365 bir şekilde şirketin ağ durumu hakkında bilgi almak ve herhangi bir genel ofis konumu için ayrıntılı rapora hızla gitmek için kolay bir yol sağlar.
+Microsoft 365 Yönetici Merkezi'nin ağ bağlantısında, **ağ değerlendirmeleri** birçok ağ performansı ölçümünün toplamını kurumsal ağ çevrenizin sistem durumunun anlık görüntüsüne dalar. Ağ değerlendirmesi, müşteriden sorumlu ağ tasarımının Office 365 kullanıcı deneyimini ne kadar etkilediğini bildirir. Ağ değerlendirmelerinin kapsamı hem tüm kiracıya hem de kullanıcıların kiracınıza bağlandığı her coğrafi konuma göre belirlenir. Değerlendirmeler, Microsoft 365 yöneticilerine kuruluşun ağ durumu hakkında anında fikir edinmenin ve herhangi bir genel ofis konumu için ayrıntılı raporun detayına gitmenin kolay bir yolunu sunar.
 
-Ağ değerlendirme noktaları değeri 0 ile 100 arasındadır ve TCP gecikme süresinin, indirme hızının ve UDP bağlantı kalitesi ölçümlerinin ortalamasıdır. Bu ölçümler günde bir kez der edilir. Microsoft'a ait ağların performans ölçümleri, değerlendirme sonuçlarının belirsiz ve şirket ağına özgü olduğundan emin olmak için bu ölçümler dışında tutuldur.
+Ağ değerlendirme noktası değeri 0 ile 100 arasındadır ve ortalama TCP gecikme süresi, indirme hızı ve UDP bağlantı kalitesi ölçümleridir. Bu ölçümler günde bir kez derlenir. Microsoft'a ait ağlara yönelik performans ölçümleri, değerlendirme sonuçlarının belirsiz ve kurumsal ağa özgü olduğundan emin olmak için bu ölçümlerin dışında tutulur.
 
 > [!div class="mx-imgBorder"]
 > ![Ağ değerlendirme değeri.](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
-Ağ değerlendirme değeri çok düşükse, Microsoft 365 istemcilerinin kiracıya bağlanırken veya hızlı yanıt veren kullanıcı deneyimini sürdürmede önemli sorunlar yaşamaları önermektedir. Yüksek bir değer, düzgün yapılandırılmış bir ağı birkaç devam eden performans sorunuyla gösterir. %80 değeri, sağlıklı bir taban çizgisini temsil eder ve üstünde ağ performansından dolayı Microsoft 365 bağlantısı veya yanıt süresi hakkında normal kullanıcı şikayetleri almayabilirsiniz. Iterative ağ bağlantısı geliştirmeleri yapılırken, kullanıcı deneyimiyle birlikte bu değer de artar.
+Çok düşük bir ağ değerlendirme değeri, Microsoft 365 istemcilerinin kiracıya bağlanırken veya yanıt veren bir kullanıcı deneyimini sürdürürken önemli sorunlarla karşılaşacağını gösterir. Yüksek bir değer, devam eden birkaç performans sorunuyla düzgün yapılandırılmış bir ağı gösterir. %80 değeri iyi durumda bir temeli temsil eder. Bunun üzerinde, ağ performansı nedeniyle Microsoft 365 bağlantısı veya yanıt hızı hakkında düzenli kullanıcı şikayetleri almayı beklememelisiniz. Yinelemeli ağ bağlantısı geliştirmeleri yapıldıkçe, bu değer kullanıcı deneyimiyle birlikte artacaktır.
 
 | Ağ değerlendirmesi | Beklenen kullanıcı deneyimi |
 | :----------------- | :----------------------- |
 | 100                | En iyi                     |
-| 80                 | Önerilere karşılama    |
+| 80                 | Önerileri karşılar    |
 | 60                 | Kabul edilebilir               |
-| 40                 | Kullanıcılar sorun yaşanıyor olabilir |
-| 20                 | Kullanıcılar şikayetçi olabilir       |
-| 0                  | Ağ sorunları yaygın bir tartışma konusu |
+| 40                 | Kullanıcılar sorunlarla karşılaşabilir |
+| 20                 | Kullanıcılar şikayet edebilir       |
+| 0                  | Ağ sorunları yaygın bir tartışma konusudur |
 
 ## <a name="network-assessment-panel"></a>Ağ değerlendirme paneli
 
-Kiracının kapsamındaki veya belirli bir ofis konumu kapsamındaki her ağ değerlendirmesinde, değerlendirmeyle ilgili ayrıntıların yer alan bir panel gösterilir. Bu panelde, değerlendirmenin bir yüzdelik çubuk grafiği ve yalnızca ölçü verileri alınan iş yükleri de dahil olmak üzere her bileşen iş yükünün toplam noktaları olarak gösterilir. Ofis konumu ağ değerlendirmesi için, ofis konumuyla aynı şehirde veri bildirilen beş Microsoft 365 müşterilerden her biri için müşterilerden yüzdeyle karşılaştırmayı da gösteririz.
+Kapsamı kiracı veya belirli bir ofis konumu olan her ağ değerlendirmesi, değerlendirmeyle ilgili ayrıntıları içeren bir panel gösterir. Bu panelde değerlendirmenin hem yüzde olarak hem de yalnızca ölçüm verilerinin alındığı iş yükleri dahil olmak üzere her bileşen iş yükü için toplam puan olarak çubuk grafiği gösterilir. Bir ofis konumu ağ değerlendirmesi için, ofis konumunuzla aynı şehirde veri bildiren beş beşli kuruluşun her birinde Microsoft 365 müşterilerinin yüzdesiyle bir karşılaştırma da gösteririz.
 
 > [!div class="mx-imgBorder"]
 > ![Örnek ağ değerlendirme değeri.](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
-**Panelde yer** alan Değerlendirme dökümü, bileşen iş yüklerinin her biri için değerlendirmeyi gösterir.
+Paneldeki **Değerlendirme dökümü** , bileşen iş yüklerinin her biri için değerlendirmeyi gösterir.
 
-Değerlendirme **geçmişi,** değerlendirme ve karşılaştırmanın son 30 günü gösterir. Ayrıca, geçmiş sekmesini kullanarak herhangi bir ofis konumunun metrik geçmişini iki yıl boyunca raporleyebilirsiniz. Geçmiş sekmesi, rapor etmek istediğiniz öznitelikleri seçmenize olanak sağlar. Rapor zaman dilimini seçerek, ağ güncelleştirme projesinin etkisini vurgular ve ağ değerlendirmenize ilişkin iyileştirmeleri görüntüebilirsiniz.
+**Değerlendirme geçmişi**, değerlendirmenin son 30 gününü ve karşılaştırmayı gösterir. Ayrıca geçmiş sekmesini kullanarak herhangi bir ofis konumunun ölçüm geçmişini iki yıla kadar raporlayabilirsiniz. Geçmiş sekmesi, raporlamak istediğiniz öznitelikleri seçmenize olanak tanır. Bir rapor zaman çerçevesi seçerek bir ağ güncelleştirme projesinin etkisini vurgulayabilir ve ağ değerlendirmenizde yapılan iyileştirmeyi görebilirsiniz.
 
 ## <a name="tenant-network-assessments-and-office-location-network-assessments"></a>Kiracı ağ değerlendirmeleri ve ofis konumu ağ değerlendirmeleri
 
-Ağ değerlendirmesi, ofis konumunun ağ çevresini Microsoft'un ağına yönelik tasarımı ölçüleri. Ağ çevresini iyileştirmeler her ofis konumu için en iyi şekilde yapılır.
+Ağ değerlendirmesi, bir ofis konumunun ağ çevresinin Tasarımını Microsoft'un ağına ölçer. Ağ çevresi iyileştirmeleri en iyi şekilde her ofis konumunda yapılır.
 
-Ağ performansına genel bakış sayfasında tüm kiracı Microsoft 365 bir ağ değerlendirme değeri gösteririz. Bu değer, tüm ofis konumları için ağ değerlendirmelerinin ağırlıklı ortalamasıdır. Ayrıca, bu konumun özet sayfasında algılanan her ofis konumu için belirli bir ağ değerlendirme değeri vardır.
+Ağ performansına genel bakış sayfasında Tüm Microsoft 365 kiracısı için bir ağ değerlendirme değeri gösteririz. Bu değer, tüm ofis konumları için ağ değerlendirmelerinin ağırlıklı ortalamasıdır. Ayrıca, o konumun özet sayfasında algılanan her ofis konumu için belirli bir ağ değerlendirme değeri vardır.
 
 ## <a name="exchange-online"></a>Exchange Online
 
-Daha Exchange Online için, istemci makineden Exchange ön Exchange TCP gecikme süresi ölçülür. Ağın müşterilerin LAN ve WAN'ı üzerinden uzaklığı bu gecikme süresini etkilemektedir. Ayrıca, ağ aracı cihaz veya hizmetlerden de etki olabilir ve bu da bağlantının gecikmesini sağlar veya paketlerin yeniden gönderilene neden olur. Ayrıca, en yakın ön Exchange kapılardan etkilenmez. Önceki üç gün boyunca tüm ölçümlerde orta değer (50. yüzdebirlik veya P50 ölçüsü olarak da bilinir) alınır.
+Exchange Online için istemci makinesinden Exchange hizmeti ön kapısına TCP gecikmesi ölçülür. Bu gecikme süresi, ağın müşterilerin LAN ve WAN üzerinden kat ettiği uzaklıktan etkilenebilir. Ayrıca, bağlantıyı geciktiren veya paketlerin yeniden gönderilmesine neden olan ağ aracı cihazları veya hizmetlerinden de etkilenebilir. Ve en yakın Exchange hizmeti ön kapısının ne kadar uzakta olduğundan etkilenir. Ortanca değer (50. yüzdebirlik veya P50 ölçüsü olarak da bilinir) önceki üç gün içindeki tüm ölçümler için alınır.
 
-Aşağıdaki Exchange Online kullanılarak değerlendirme yapılır. Eşikler arasındaki herhangi bir TCP gecikme sayısı bant içinde doğrusal olarak noktalara atanır.
+Exchange Online değerlendirmesi aşağıdaki tablo kullanılarak yapılır. Eşikler arasındaki tüm TCP gecikme süresi numaraları, bant içinde doğrusal olarak noktalara atanır.
 
-| TCP Gecikme Süresi   | Puanlar |
+| TCP Gecikme Süresi   | Puan |
 | :------------ | :----- |
 | 10 ms veya daha az  | 100    |
 | 25 ms          | 80     |
@@ -75,11 +75,11 @@ Aşağıdaki Exchange Online kullanılarak değerlendirme yapılır. Eşikler ar
 
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-Çevrimiçi SharePoint Online için kullanıcının belgeye İnternet'SharePoint veya Siteden OneDrive hızı ölçülür. İstemci makinesi ile Microsoft'un ağı arasındaki ağ devreleri üzerindeki bant genişliği bu etkiyi etkiler. Ayrıca, karmaşık ağ cihazlarında performans sorunları veya bu alanlarda yetersiz kapsamda olan ağ tıkanıklığı da çoğunlukla Wi-Fi etkiler. İndirme hızı saniye başına megabayt cinsinden ölçülür ve bu da saniyede megabit olarak derecelendirilmiş bir devrenin yaklaşık onda biridir. İkinci birim başına MegaBayt yararlı olur, çünkü 1 saniye içinde hangi boyut dosyasının indirilemediklerine doğrudan bakabilirsiniz. Önceki üç gün boyunca yapılan tüm ölçümlerde, 25. yüzdebirlik (P25 ölçüsü olarak da bilinir) alınır. Bu 25. yüzdebirlik, zaman içinde değişen tıkanıklığı azaltmaya yardımcı olur.
+SharePoint Online için, kullanıcının SharePoint veya OneDrive'dan bir belgeye erişmesi için kullanılabilecek indirme hızı ölçülür. Bu, istemci makine ile Microsoft'un ağı arasındaki ağ bağlantı hatlarında bulunan bant genişliğinden etkilenebilir. Ayrıca genellikle karmaşık ağ cihazlarında veya yetersiz kapsama Wi-Fi alanlarındaki performans sorunlarına neden olan ağ tıkanıklığı da etkilenir. İndirme hızı saniyede megabayt cinsinden ölçülür ve bu da saniyede megabit olarak derecelendirilmiş bir bağlantı hattının yaklaşık onda biridir. 1 saniye içinde hangi boyut dosyasının indirilebileceğini doğrudan görebildiğiniz için saniyedeki MegaByte birimi yararlı olur. 25. yüzdebirlik değer (P25 ölçüsü olarak da bilinir) önceki üç gün içindeki tüm ölçümler için alınır. Bu 25. yüzdebirlik dilim, zaman içinde değişen tıkanıklıkların etkisini azaltmaya yardımcı olur.
 
-Aşağıdaki SharePoint Online değerlendirmesi yapılır. Eşikler arasındaki herhangi bir indirme hızı numarasına bant içinde doğrusal olarak puan atanır.
+SharePoint Online değerlendirmesi aşağıdaki tablo kullanılarak yapılır. Eşikler arasındaki herhangi bir indirme hızı numarası, bant içinde doğrusal olarak noktalara atanır.
 
-| İndirme hızı | Puanlar |
+| İndirme hızı | Puan |
 | :------------- | :----- |
 | 20MBps veya daha fazlası | 100    |
 | 14MBps         | 80     |
@@ -90,16 +90,16 @@ Aşağıdaki SharePoint Online değerlendirmesi yapılır. Eşikler arasındaki 
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Daha Microsoft Teams Ağ kalitesi UDP gecikme süresi, UDP değişimi ve UDP paket kaybı olarak ölçülür. UDP, iş akışı için arama ve konferans ses ve video medya bağlantısı Microsoft Teams. UDP daha yaygın TCP protokolüne ayrı olarak yapılandırıldığından, bu durum ağın UDP desteğinde bağlantı boşluklarını ve indirme hızının yanı sıra gecikme süresi ve indirme hızıyla aynı faktörlerden etki edilebilir. Önceki üç gün boyunca tüm ölçümlerde orta değer (50. yüzdebirlik veya P50 ölçüsü olarak da bilinir) alınır. 
+Microsoft Teams için Ağ kalitesi UDP gecikme süresi, UDP değişimi ve UDP paket kaybı olarak ölçülür. UDP, Microsoft Teams için arama ve konferans ses ve video medya bağlantısı için kullanılır. Bu durum, bir ağın UDP desteğindeki bağlantı boşluklarına ek olarak gecikme süresi ve indirme hızıyla aynı faktörlerden etkilenebilir çünkü UDP daha yaygın TCP protokolüne ayrı olarak yapılandırılır. Ortanca değer (50. yüzdebirlik veya P50 ölçüsü olarak da bilinir) önceki üç gün içindeki tüm ölçümler için alınır. 
 
-Bir ile beş arasında bir ölçek için bu UDP ölçümlerinden ortalama bir görüş puanı hesaplarız. Bunu, ağ değerlendirmesi için 0-100 puanlık Microsoft Teams eşlemiz.  İyi genel olarak 87,5 puan, genel olarak kötü de 50 puan altında olur.
+Bir ile beş arasında bir ölçek için bu UDP ölçümlerinden ortalama bir görüş puanı hesaplıyoruz. Ardından bunu Microsoft Teams ağ değerlendirmesi için 0-100 puan ölçeğiyle eşleriz.  Genel iyi 87,5 puanın üzerinde ve genel kötü ise 50 puanın altında.
 
 ## <a name="related-topics"></a>İlgili konular
 
-[Ağ Merkezi'nde Microsoft 365 Yönetici bağlantısı](office-365-network-mac-perf-overview.md)
+[Microsoft 365 Yönetici Merkezi'nde ağ bağlantısı](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 performansı içgörüleri hakkında bilgi edinin](office-365-network-mac-perf-insights.md)
+[Microsoft 365 ağ performansı içgörüleri](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 bağlantı test aracı](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 ağ bağlantısı test aracı](office-365-network-mac-perf-onboarding-tool.md)
 
-[Microsoft 365 Bağlantısı Konum Hizmetleri'ne Bağlan'a](office-365-network-mac-location-services.md)
+[Microsoft 365 Ağ Bağlantısı Konum Hizmetleri](office-365-network-mac-location-services.md)

@@ -1,12 +1,12 @@
 ---
-title: PowerShell ile Microsoft 365 lisansları ve hizmetleri görüntüleme
+title: PowerShell ile Microsoft 365 lisanslarını ve hizmetlerini görüntüleme
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -20,24 +20,24 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Microsoft 365 kuruluşunuzda bulunan lisans planları, hizmetler ve lisanslar hakkındaki bilgileri görüntülemek için PowerShell'in nasıl kullanılacağını açıklar.
-ms.openlocfilehash: 1d0d514cc0d821e8958a35c3598b41554260716d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 739c79fe66871125a5ea9d35226d9acd6f99abf4
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091951"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669793"
 ---
-# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>PowerShell ile Microsoft 365 lisansları ve hizmetleri görüntüleme
+# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>PowerShell ile Microsoft 365 lisanslarını ve hizmetlerini görüntüleme
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
 Her Microsoft 365 aboneliği aşağıdaki öğelerden oluşur:
 
-- **Lisanslama planları** Bunlar lisans planları veya Microsoft 365 planları olarak da bilinir. Lisans planları, kullanıcıların kullanabileceği Microsoft 365 hizmetlerini tanımlar. Microsoft 365 aboneliğiniz birden çok lisans planı içerebilir. Örnek bir lisans planı Microsoft 365 E3.
+- **Lisanslama planları** Bunlar lisans planları veya Microsoft 365 planları olarak da bilinir. Lisans planları, kullanıcıların kullanımına sunulan Microsoft 365 hizmetlerini tanımlar. Microsoft 365 aboneliğiniz birden çok lisans planı içerebilir. Örnek bir lisans planı Microsoft 365 E3.
     
-- **Hizmetleri** Bunlar hizmet planları olarak da bilinir. Hizmetler, Exchange Online ve Kurumlar için Microsoft 365 Uygulamaları (eski adıyla Office 365 ProPlus) gibi her lisans planında kullanılabilen Microsoft 365 ürünleri, özellikleri ve özellikleridir. Kullanıcılara farklı hizmetlere erişim izni veren farklı lisans planlarından atanmış birden çok lisans olabilir.
+- **Hizmetleri** Bunlar hizmet planları olarak da bilinir. Hizmetler, Exchange Online ve Kurumlar için Microsoft 365 Uygulamaları (daha önce Office 365 ProPlus olarak adlandırılıyordu) gibi her lisans planında kullanılabilen Microsoft 365 ürünleri, özellikleri ve özellikleridir. Kullanıcılara farklı hizmetlere erişim izni veren farklı lisans planlarından atanmış birden çok lisans olabilir.
     
-- **Lisans** Her lisans planı satın aldığınız lisans sayısını içerir. Lisans planı tarafından tanımlanan Microsoft 365 hizmetlerini kullanabilmeleri için kullanıcılara lisans atarsınız. Her kullanıcı hesabı, Microsoft 365 oturum açabilmesi ve hizmetleri kullanabilmesi için bir lisans planından en az bir lisans gerektirir.
+- **Lisans** Her lisans planı satın aldığınız lisans sayısını içerir. Lisans planı tarafından tanımlanan Microsoft 365 hizmetlerini kullanabilmeleri için kullanıcılara lisans atarsınız. Her kullanıcı hesabı, Microsoft 365'te oturum açabilmesi ve hizmetleri kullanabilmesi için bir lisans planından en az bir lisans gerektirir.
     
 Microsoft 365 kuruluşunuzdaki kullanılabilir lisans planları, lisanslar ve hizmetler hakkındaki ayrıntıları görüntülemek için Microsoft 365 için PowerShell'i kullanabilirsiniz. Farklı Office 365 aboneliklerinde kullanılabilen ürünler, özellikler ve hizmetler hakkında daha fazla bilgi için bkz. [Plan Seçenekleri Office 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
@@ -186,7 +186,7 @@ Get-MsolAccountSku
 
 Sonuçlar aşağıdaki bilgileri içerir:
   
-- **AccountSkuId:** söz dizimini `<CompanyName>:<LicensingPlan>`kullanarak kuruluşunuz için kullanılabilir lisans planlarını gösterin.  _\<CompanyName>_, Microsoft 365 kaydolduğunuz sırada sağladığınız değerdir ve kuruluşunuz için benzersizdir. Değer _\<LicensingPlan>_ herkes için aynıdır. Örneğin, değerinde `litwareinc:ENTERPRISEPACK`şirket adı `litwareinc`, lisans planı adı `ENTERPRISEPACK`ise Office 365 Kurumsal E3 için sistem adıdır.
+- **AccountSkuId:** söz dizimini `<CompanyName>:<LicensingPlan>`kullanarak kuruluşunuz için kullanılabilir lisans planlarını gösterin.  _\<CompanyName>_ , Microsoft 365'e kaydolduğunuz sırada sağladığınız değerdir ve kuruluşunuz için benzersizdir. Değer _\<LicensingPlan>_ herkes için aynıdır. Örneğin, değerinde `litwareinc:ENTERPRISEPACK`şirket adı `litwareinc`, lisans planı adı `ENTERPRISEPACK`ise Office 365 Kurumsal E3 için sistem adıdır.
     
 - **ActiveUnits:** Belirli bir lisans planı için satın aldığınız lisansların sayısı.
     
@@ -200,7 +200,7 @@ Tüm lisans planlarınızda kullanılabilen Microsoft 365 hizmetleriyle ilgili a
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-Aşağıdaki tabloda Microsoft 365 hizmet planları ve bunların en yaygın hizmetler için kolay adları gösterilmektedir. Hizmet planlarınızın listesi farklı olabilir. 
+Aşağıdaki tabloda, Microsoft 365 hizmet planları ve bunların en yaygın hizmetler için kolay adları gösterilmektedir. Hizmet planlarınızın listesi farklı olabilir. 
   
 |**Hizmet planı**|**Açıklama**|
 |:-----|:-----|

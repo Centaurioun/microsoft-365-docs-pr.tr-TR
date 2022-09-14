@@ -19,14 +19,14 @@ ms.collection:
 description: Yöneticiler, Microsoft 365 Defender portalında bulunan Office 365 için Defender raporlarını bulmayı ve kullanmayı öğrenebilir.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: f7a207d28fdc2afe046bc4f53e524dde2ef328a0
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: e318f44488492f3d0e3bd2a0457570387cfecc7b
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67407987"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670961"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında Office 365 için Defender raporları görüntüleme
 

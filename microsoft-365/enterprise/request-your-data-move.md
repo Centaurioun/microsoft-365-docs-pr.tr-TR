@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Mevcut Office 365 müşterileri, ülkelerinin Microsoft 365 hizmet verilerini yeni coğrafi bölgelerine taşımaları için son tarihten önce bir istek göndermelidir.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 821aa47c2101c2370e95372a7f9b9eb302199918
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: c4a3c2fb77fe3efb26f77ce7e905bba3c43724a0
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476220"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671115"
 ---
 # <a name="how-to-request-your-data-move"></a>Veri taşıma isteğinde bulunma
 

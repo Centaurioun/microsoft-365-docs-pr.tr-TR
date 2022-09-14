@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: overview
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:
@@ -21,14 +21,14 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Office 2010 sunucularından ve istemci uygulamalarından yükseltmenizi planlamaya başlayın çünkü destek yakında sona eriyor ve özel destek sözleşmeleri sağlanmaz.
+description: Destek yakında sona erdiğinden ve özel destek sözleşmeleri kullanılamaydıkça Office 2010 sunucularından ve istemci uygulamalarından yükseltmenizi planlamaya başlayın.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9a27787a3b00f9a77e563c65a9d5bf68ce188b35
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1f3c03270bc8e1a86a451f1bc30b77cb4279d274
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099113"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67671489"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 sunucularından ve istemcilerinden yükseltmenize yardımcı olacak kaynaklar
 
@@ -38,17 +38,17 @@ Office 2010 ve Exchange 2010 **, 13 Ekim 2020'de** destek sonuna ulaştı.
 
 SharePoint 2010 ve Project Server 2010 **, 13 Nisan 2021'de** destek sonuna ulaşacaktır.
 
-Yükseltmenizi planlarken Microsoft 365 geçmeyi göz önünde bulundurun.
+Yükseltmenizi planlarken Microsoft 365'e geçmeyi göz önünde bulundurun.
 
-- Microsoft 365 Office 2010 sunucu ürünleri için Exchange Server ve SharePoint Server gibi bulut tabanlı hizmetlerin yanı sıra Teams ve OneDrive İş gibi hizmetlere sahiptir.
+- Microsoft 365,Office 2010 sunucu ürünleri için Exchange Server ve SharePoint Server gibi bulut tabanlı hizmetlere ve Teams ve OneDrive İş gibi hizmetlere sahiptir.
 
-- Microsoft 365 E3 ve E5 ile birlikte gelen Kurumlar için Microsoft 365 Uygulamaları (*eski adıyla* Office 365 ProPlus), yerel cihazınıza yüklediğiniz Office istemci uygulamaları kümesidir. Microsoft bulutundan düzenli olarak yeni üretkenlik ve güvenlik özellikleriyle güncelleştirilir.
+- Microsoft 365 E3 ve E5 ile birlikte gelen Kurumlar için Microsoft 365 Uygulamaları (*eski adı Office 365 ProPlus*), yerel cihazınıza yüklediğiniz Office istemci uygulamaları kümesidir. Microsoft bulutundan düzenli olarak yeni üretkenlik ve güvenlik özellikleriyle güncelleştirilir.
 
 Office 2010 istemcileri ve sunucuları ile Windows 7 için yükseltme, geçiş ve buluta taşıma seçeneklerinin görsel bir özeti için [destek sonu posterine](../downloads/Office2010Windows7EndOfSupport.pdf) bakın.
 
-[![Office 2010 istemcileri ve sunucuları ile Windows 7 posteri için destek sonu.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 istemcileri ve sunucuları ve Windows 7 posteri için destek sonu.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-Bu tek sayfalık posterde, Office 2010 istemci ve sunucu ürünlerini işlemek için izleyebileceğiniz çeşitli yollar ve destek sonuna ulaşana kadar Windows 7 özetlenmiştir. Microsoft 365 Kurumsal tercih edilen yollar ve seçenek desteği vurgulanır.
+Bu tek sayfalık poster, Office 2010 istemci ve sunucu ürünleri ile Windows 7'nin destek sonuna ulaşmasını sağlamak için izleyebileceğiniz çeşitli yolları özetler. Microsoft 365 Kurumsal tercih edilen yollar ve seçenek desteği vurgulanır.
 
 Ayrıca bu posteri [indirebilir](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) ve mektup, yasal veya tabloid (11 x 17) biçiminde yazdırabilirsiniz.
 
@@ -64,7 +64,7 @@ Ayrıca bu posteri [indirebilir](https://github.com/MicrosoftDocs/microsoft-365-
 
 ## <a name="im-a-home-user-what-do-i-do"></a>Ev kullanıcısıyım. Ne yapacağım?
 
-Evde Office 2010 ürünleri ve uygulamaları kullanıyorsanız [bu bilgilere](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do) bakın.
+Evde Office 2010 ürünlerini ve uygulamalarını kullanıyorsanız [bu bilgilere](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do) bakın.
 
 ## <a name="related-topics"></a>İlgili konular
 
@@ -72,4 +72,4 @@ Evde Office 2010 ürünleri ve uygulamaları kullanıyorsanız [bu bilgilere](pl
 
 [Microsoft Yaşam Döngüsü İlkesi](/lifecycle/)
 
-[Office 2007 veya Office 2010 sunucu ve istemcilerinden yükseltmenizi planlama](plan-upgrade-previous-versions-office.md)
+[Office 2007 veya Office 2010 sunucularından ve istemcilerinden yükseltmenizi planlama](plan-upgrade-previous-versions-office.md)

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: 10 Ekim 2017'de Project Server 2007, Project Portfolio Server ve Project 2007 desteği sona erdi. Yükseltmenizi şimdi planlamak için bu makaleyi kullanın.
-ms.openlocfilehash: a99b65bde9f2e3eb559351fddcf62141c1bfa323
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 465ca15555484e958776d6addce4a7b1a48175dc
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67473733"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672281"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Project Server 2007 destek sonu yol haritası
 

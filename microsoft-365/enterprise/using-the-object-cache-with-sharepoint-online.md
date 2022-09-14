@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 4/20/2015
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -18,19 +18,19 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
-description: Bu makalede, SharePoint Server 2013 şirket içi ve SharePoint Online'da nesne önbelleğini kullanma arasındaki fark açıklanmaktadır.
-ms.openlocfilehash: db0a150927bc3a2078d4dc0ca7491471b7973f2d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Bu makalede, şirket içi SharePoint Server 2013'te nesne önbelleğini kullanma ile SharePoint Online arasındaki fark açıklanmaktadır.
+ms.openlocfilehash: 0cfb961c7a93653526ca2fee68c4172a8bd2bbf7
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077794"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67669133"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>SharePoint Online ile nesne önbelleğini kullanma
 
-Bu makalede, SharePoint Server 2013 şirket içi ve SharePoint Online'da nesne önbelleğini kullanma arasındaki fark açıklanmaktadır.
+Bu makalede, şirket içi SharePoint Server 2013'te nesne önbelleğini kullanma ile SharePoint Online arasındaki fark açıklanmaktadır.
   
-SharePoint Online dağıtımında nesne önbelleğine güvenmenin önemli bir olumsuz etkisi vardır. SharePoint Online'daki nesne önbelleğine bağımlılık, sayfanızın güvenilirliğini azaltır. 
+SharePoint Online dağıtımında nesne önbelleğine güvenmenin önemli bir olumsuz etkisi vardır. SharePoint Online'da nesne önbelleğine olan bağımlılıklar sayfanızın güvenilirliğini azaltır. 
   
 ## <a name="how-the-sharepoint-online-and-sharepoint-server-2013-object-cache-works"></a>SharePoint Online ve SharePoint Server 2013 nesne önbelleği nasıl çalışır?
 
@@ -48,7 +48,7 @@ Aşağıdaki şekilde, her nokta kullanıcının istediği ve önbelleğe aldı�
   
 Diyagramda görebileceğiniz gibi, belirli bir kullanıcının sayfalarının önbelleğe alınmış sürümüyle bir sunucuya çarpma olasılığı düşüktür. Ayrıca, büyük aktarım hızı ve sunucuların birçok site arasında paylaşılması nedeniyle önbellek, önbelleğe alma için yalnızca çok fazla alan olduğundan uzun sürmez.
   
-Tüm bu nedenlerden dolayı, kullanıcıların önbelleğe alınmış nesneler almasına güvenmek, SharePoint Online'da kaliteli bir kullanıcı deneyimi ve sayfa yükleme süreleri sağlamanın etkili bir yolu değildir.
+Tüm bu nedenlerden dolayı, kullanıcıların önbelleğe alınmış nesneler almasına güvenmek, SharePoint Online'da kaliteli bir kullanıcı deneyimi ve sayfa yükleme süreleri sağlamak için etkili bir yol değildir.
   
 ## <a name="if-we-cant-rely-on-the-object-cache-to-improve-performance-in-sharepoint-online-what-do-we-use-instead"></a>SharePoint Online'da performansı artırmak için nesne önbelleğine güvenemezsek bunun yerine ne kullanırız?
 
@@ -58,7 +58,7 @@ SharePoint Online'da önbelleğe alma özelliğini kullanmamanız gerektiğinden
     
 - [SharePoint Online'da küçültme ve paketleme](minification-and-bundling-in-sharepoint-online.md)
     
-- [SharePoint Online ile Office 365 Content Delivery Network (CDN) kullanma](use-microsoft-365-cdn-with-spo.md)
+- [SharePoint Online ile Office 365 Content Delivery Network'i (CDN) kullanma](use-microsoft-365-cdn-with-spo.md)
     
 - [SharePoint Online'da görüntülerin ve JavaScript'in yüklenmesini geciktirme](delay-loading-images-and-javascript-in-sharepoint-online.md)
     

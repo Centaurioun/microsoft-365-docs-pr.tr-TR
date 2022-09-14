@@ -24,18 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Kuruluşunuzu parola saldırılarına karşı daha güvenli hale getirin ve yaygın parolaları yasaklayın ve risk tabanlı çok faktörlü kimlik doğrulamasını etkinleştirin.
-ms.openlocfilehash: 83b122df96302d9a06bb950528d1063cb8c38c8d
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: ab997d544a2789a4e2c6e28caa6a601a51a32bc7
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661771"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670763"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Microsoft 365 parolaları için parola ilkesi önerileri
 
 Bir kuruluşun yöneticisi olarak, kuruluşunuzdaki kullanıcılar için parola ilkesini ayarlamak sizin sorumluluğunuzdadır. Parola ilkesini ayarlamak karmaşık ve kafa karıştırıcı olabilir ve bu makalede kuruluşunuzun parola saldırılarına karşı daha güvenli olmasını sağlamak için öneriler sağlanır.
 
-Yalnızca buluta özel Microsoft hesapları, değiştirilemeyen önceden tanımlanmış bir parola ilkesine sahiptir. Değiştirebileceğiniz tek öğeler, parolanın süresinin dolmasına kadar olan gün sayısı ve parolaların süresinin dolup dolmayacağıdır. 
+Yalnızca buluta özel Microsoft hesapları, değiştirilemeyen önceden tanımlanmış bir parola ilkesine sahiptir. Değiştirebileceğiniz tek öğeler, parolanın süresinin dolmasına kadar olan gün sayısı ve parolaların süresinin dolup dolmayacağıdır.
   
 Kuruluşunuzda Microsoft 365 parolalarının süresinin ne sıklıkta doldığını belirlemek için bkz. [Microsoft 365 için parola süre sonu ilkesi ayarlama](../manage/set-password-expiration-policy.md).
 
@@ -62,7 +62,6 @@ Microsoft 365 parolaları hakkında daha fazla bilgi için bkz:
 ## <a name="password-guidelines-for-administrators"></a>Yöneticiler için parola kılavuzları
 
 Daha güvenli bir parola sisteminin birincil hedefi, parola çeşitliliğidir. Parola ilkenizin birçok farklı ve tahmin etmesi zor parolalar içermesi gerekir. Aşağıda, kuruluşunuzun mümkün olduğunca güvenli tutulması için bazı öneriler bulabilirsiniz.
-  
 
 - Sekiz karakterlik minimum uzunluk gereksinimini koruma
 
@@ -96,9 +95,11 @@ Bunlar en sık kullanılan parola yönetimi uygulamalarından bazılardır, anca
 
 Parola süre sonu gereksinimleri, kullanıcıların birbiriyle yakından ilişkili sıralı sözcükler ve sayılardan oluşan öngörülebilir parolalar seçmesine neden olduğundan, parola süre sonu gereksinimleri faydadan daha fazla zarara neden olur. Bu gibi durumlarda yeni parola, önceki parolaya bakılarak tahmin edilebilir. Parola süre sonu gereksinimleri hiçbir kapsama avantajı sunmaz çünkü siber suçlular neredeyse her zaman kimlik bilgilerini tehlikeye girer girmez kullanırlar. Daha fazla bilgi [için Zorunlu parola değişikliklerini yeniden düşünme zamanı'na](https://go.microsoft.com/fwlink/p/?linkid=861018) göz atın.
   
-### <a name="requiring-long-passwords"></a>Uzun parolalar gerektirme
+### <a name="minimum-password-length-requirements"></a>En düşük parola uzunluğu gereksinimleri
 
-Parola uzunluğu gereksinimleri (10 karakterden uzun), tahmin edilebilir ve istenmeyen kullanıcı davranışına neden olabilir. Örneğin, 16 karakterlik parola belirlemesi istenen kullanıcılar, **dörtdörtdörtdört** veya **parolaparola** karakter uzunluğu gereksinimini karşılayan ama tahmin edilmesi zor olmayan, tekrar eden kalıplar seçebilir. Ayrıca, uzunluk gereksinimleri kullanıcıların parolalarını yazma, yeniden kullanılma veya belgelerinde şifrelenmemiş olarak depolama gibi diğer güvenli olmayan uygulamaları benimseme olasılığını artırır. Kullanıcıları benzersiz bir parola kullanmaya teşvik etmek için, en az 8 karakterlik makul bir en az uzunluk gereksinimi benimsenmesini öneririz.
+<!--Password length requirements (greater than about 10 characters) can result in user behavior that is predictable and undesirable. For example, users who are required to have a 16-character password may choose repeating patterns like **fourfourfourfour** or **passwordpassword** that meet the character length requirement but aren't hard to guess. Additionally, length requirements increase the chances that users will adopt other insecure practices, such as writing down their passwords, reusing them, or storing them unencrypted in their documents.-->
+
+Kullanıcıları benzersiz bir parola hakkında düşünmeye teşvik etmek için makul bir 14 karakterlik minimum uzunluk gereksinimini korumanızı öneririz.
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>Birden çok karakter kümesinin kullanılmasını gerektirme
 

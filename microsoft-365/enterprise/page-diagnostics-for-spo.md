@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: SharePoint Online modern portalını ve klasik yayımlama sayfalarını önceden tanımlanmış bir performans ölçütleri kümesine göre çözümlemek için SharePoint için Sayfa Tanılama aracını kullanın.
-ms.openlocfilehash: b89534fe45daf34082b7ee3b735a7ba67851f9f4
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 0d89d16ead05a5a683fbfbf7b1dde35cde4dcde9
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941118"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67670211"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint için Sayfa Tanılama aracını kullanma
 
@@ -90,7 +90,7 @@ Analiz için veri toplamaya başlamak için **Başlat'ı** seçin.
     > [!div class="mx-imgBorder"]
     > ![Sayfa tanılama ayrıntıları.](../media/page-diagnostics-for-spo/pagediag-details.PNG)
 
-   - **CorrelationID** , belirli bir sayfa için daha fazla tanılama verisi toplamalarına olanak tanıdığından, Microsoft Desteği ile çalışırken önemli bir öğedir.
+   - **CorrelationID**, belirli bir sayfa için daha fazla tanılama verisi toplamalarına olanak sağladığından Microsoft Desteği ile çalışırken önemli bir öğedir.
    - **SPRequestDuration** , SharePoint'in sayfayı işlemesi için geçen süredir. Yapısal gezinti, büyük görüntüler ve çok sayıda API çağrısı daha uzun sürelere katkıda bulunabilir.
    - **SPIISLatency** , SharePoint Online'ın sayfayı yüklemeye başlaması için geçen milisaniye cinsinden süredir. Bu değer, web uygulamasının yanıt vermesi için geçen süreyi içermez.
    - **Sayfa yükleme süresi** , istek saatinden yanıtın alındığı ve tarayıcıda işlendiği zamana kadar sayfa tarafından kaydedilen toplam süredir. Bu değer ağ gecikme süresi, bilgisayarın performansı ve tarayıcının sayfayı yükleme süresi gibi çeşitli faktörlerden etkilenir.
@@ -156,11 +156,11 @@ Başlangıç'a tıklamadan önce bu özellik etkinleştirilmelidir. Bu, tarayıc
 
 ## <a name="engaging-with-microsoft-support"></a>Microsoft Desteği ile etkileşime geçilmesi
 
-Yalnızca doğrudan bir destek olayı üzerinde çalışırken kullanılması gereken bir **Microsoft Destek düzeyi özelliği** ekledik. Bu özelliğin kullanılması, destek ekibi katılımı olmadan kullanıldığında size hiçbir fayda sağlamaz ve sayfanın önemli ölçüde daha yavaş performans göstermesini sağlayabilir. Hizmetteki günlüğe ek bilgiler eklendiğinden araçta bu özellik kullanılırken ek bilgi yoktur.
+Yalnızca doğrudan bir destek olayı üzerinde çalışırken kullanılması gereken **Microsoft Desteği düzeyinde bir özellik** dahil ettik. Bu özelliğin kullanılması, destek ekibi katılımı olmadan kullanıldığında size hiçbir fayda sağlamaz ve sayfanın önemli ölçüde daha yavaş performans göstermesini sağlayabilir. Hizmetteki günlüğe ek bilgiler eklendiğinden araçta bu özellik kullanılırken ek bilgi yoktur.
 
 Etkinleştirdiğiniz bildirilmesi ve sayfa performansınızın etkinken performansın 2-3 kat daha yavaş olması dışında hiçbir değişiklik görünmez. Yalnızca belirli bir sayfa ve etkin oturumla ilgili olacaktır. Bu nedenle, bu, yalnızca destekle etkin bir şekilde etkileşime geçtiğinde düzenli olarak kullanılmalıdır.
 
-### <a name="to-enable-the-microsoft-support-level-feature"></a>Microsoft Destek düzeyi özelliğini etkinleştirmek için
+### <a name="to-enable-the-microsoft-support-level-feature"></a>Microsoft Desteği düzeyi özelliğini etkinleştirmek için
 
 1. SharePoint için Sayfa Tanılama aracını açın.
 2. Klavyenizde **ALT-Shift-L tuşlarına** basın. Bu, **Destek günlüğünü etkinleştir** onay kutusunu görüntüler.
@@ -181,4 +181,4 @@ Etkinleştirdiğiniz bildirilmesi ve sayfa performansınızın etkinken performa
 
 [İçerik teslim ağları](content-delivery-networks.md)
 
-[SharePoint Online ile Office 365 İçerik Teslim Ağı'nı (CDN) kullanma](use-microsoft-365-cdn-with-spo.md)
+[SharePoint Online ile Office 365 Content Delivery Network'i (CDN) kullanma](use-microsoft-365-cdn-with-spo.md)

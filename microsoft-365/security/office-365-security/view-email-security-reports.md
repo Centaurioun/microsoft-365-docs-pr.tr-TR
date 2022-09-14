@@ -18,14 +18,14 @@ ms.collection:
 description: Yöneticiler, Microsoft 365 Defender portalında bulunan e-posta güvenlik raporlarını bulmayı ve kullanmayı öğrenebilir.
 ms.custom:
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 4129a5ff76409e531376adb069c99218686fbec6
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 28f5a19abd0a2a1ddc0d2bab3863176d2470c980
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67409212"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67672435"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında e-posta güvenlik raporlarını görüntüleme
 
