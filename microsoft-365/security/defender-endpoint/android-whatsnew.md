@@ -2,7 +2,7 @@
 title: Android'de Uç Nokta için Microsoft Defender'deki yenilikler
 description: Android'de önceki Uç Nokta için Microsoft Defender sürümlerine yönelik önemli değişiklikler hakkında bilgi edinin.
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mac, installation, macos, whatsnew
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
-ms.technology: mde
-ms.openlocfilehash: 4300aadd6ab57561592621a0d1aeb54887d70320
-ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
+ms.subservice: mde
+ms.openlocfilehash: 3ebaab5770cfc8a4c474b66b8c1cbd6717c8f36a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67437793"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679602"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Android'de Uç Nokta için Microsoft Defender'deki yenilikler
 

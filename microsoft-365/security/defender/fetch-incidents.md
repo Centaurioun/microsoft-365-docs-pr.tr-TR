@@ -1,10 +1,11 @@
 ---
-title: Olayları Microsoft 365 Defender getirme
-description: Müşteri kiracılarından Microsoft 365 Defender olayları getirmeyi öğrenin
+title: Defender Microsoft 365 getirin
+description: Müşteri kiracısından Microsoft 365 Defender olayları getirmeyi öğrenin
 keywords: yönetilen güvenlik hizmeti sağlayıcısı, mssp, yapılandırma, tümleştirme
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,86 +16,85 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 1ea39bfce5303360165a56d6361908d1014d370f
-ms.sourcegitcommit: e110f00dc6949a7a1345187375547beeb64225b2
+ms.openlocfilehash: 707041bb9c1a7692086f696e3ae7f648ed484de6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "62990611"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679767"
 ---
-# <a name="fetch-microsoft-365-defender-incidents"></a>Olayları Microsoft 365 Defender getirme 
+# <a name="fetch-microsoft-365-defender-incidents"></a>Defender Microsoft 365 getirin 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 - [Uç Nokta için Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > [!NOTE]
-> Bu eylem MSSP tarafından  alınır.
+> Bu eylem MSSP tarafından gerçekleştirilen.
 
 Uyarıları getirmenin iki yolu vardır:
 
 - SIEM yöntemini kullanma
 - API'leri kullanma
 
-## <a name="fetch-incidents-into-your-siem"></a>Olayları SIEM'nize getirme
+## <a name="fetch-incidents-into-your-siem"></a>Olayları SIEM'inize getirme
 
-Olayları SIEM sisteminize getirmek için, aşağıdaki adımları atılması gerekir:
+Olayları SIEM sisteminize getirmek için aşağıdaki adımları uygulamanız gerekir:
 
-- 1. Adım: Üçüncü taraf uygulaması oluşturma
-- 2. Adım: Müşterinizin kiracısına erişim ve yenileme belirteçleri alın
-- 3. Adım: Uygulamanıza izin Microsoft 365 Defender
+- 1. Adım: Üçüncü taraf uygulama oluşturma
+- 2. Adım: Müşterinizin kiracısından erişim ve yenileme belirteçleri alma
+- 3. Adım: uygulamanızın Microsoft 365 Defender
 
-### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>1. Adım: Azure Active Directory (Azure AD) uygulamasında uygulama oluşturma
+### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>1. Adım: Azure Active Directory'de uygulama oluşturma (Azure AD)
 
-Bir uygulama oluşturmanız ve müşterinizin kiracıdan uyarı alma Microsoft 365 Defender gerekir.
+Bir uygulama oluşturmanız ve müşterinizin Microsoft 365 Defender kiracısından uyarı getirme izni vermeniz gerekir.
 
-1. [Azure AD portalında oturum açın](https://aad.portal.azure.com/).
+1. [Azure AD portalında](https://aad.portal.azure.com/) oturum açın.
 
-2. Uygulama **Azure Active Directory** \> **seçin**.
+2. **Azure Active Directory** \> **Uygulama kayıtları'ı** seçin.
 
-3. Yeni **kayıt'a tıklayın**.
+3. **Yeni kayıt'a** tıklayın.
 
 4. Aşağıdaki değerleri belirtin:
 
     - Ad: \<Tenant_name\> SIEM MSSP Bağlayıcısı (Tenant_name kiracı görünen adıyla değiştirin)
 
-    - Desteklenen hesap türleri: Yalnızca bu kuruluş dizininde yer alan hesap
-    - Yeniden yönlendirme URI'si: Web'i seçin `https://<domain_name>/SiemMsspConnector`ve yazın (<domain_name> kiracı adıyla değiştirin)
+    - Desteklenen hesap türleri: Yalnızca bu kuruluş dizinindeki hesap
+    - Yeniden yönlendirme URI'si: Web'i seçin ve yazın `https://<domain_name>/SiemMsspConnector`(<domain_name> kiracı adıyla değiştirin)
 
-5. **Kaydol'a tıklayın**. Uygulama, sahibi olduğunuz uygulamalar listesinde görüntülenir.
+5. **Kaydet'e** tıklayın. Uygulama, sahip olduğunuz uygulamalar listesinde görüntülenir.
 
-6. Uygulamayı seçin ve genel bakış'a **tıklayın**.
+6. Uygulamayı seçin ve genel **bakış'a** tıklayın.
 
-7. Uygulama **(istemci) kimliği alanından değeri** güvenli bir yere kopyalayın; bir sonraki adımda buna ihtiyacınız olacak.
+7. **Uygulama (istemci) Kimliği** alanındaki değeri güvenli bir yere kopyalayın; sonraki adımda buna ihtiyacınız olacaktır.
 
-8. Yeni **& panelinde Sertifika** gizlileri'ni seçin.
+8. Yeni uygulama panelinde **Sertifika & gizli dizileri'ni** seçin.
 
-9. Yeni istemci **sırrı'ya tıklayın**.
+9. **Yeni istemci gizli dizisi'ne** tıklayın.
 
     - Açıklama: Anahtar için bir açıklama girin.
-    - Son kullanma tarihi: **1 yıl içinde'yi seçin**
+    - Süre sonu: **1 yıl içinde** seçin
 
-10. **Ekle'ye** tıklayın, istemci sırrı değerini güvenli bir yere kopyalayın; bir sonraki adımda buna ihtiyacınız olacak.
+10. **Ekle'ye** tıklayın, istemci gizli dizisinin değerini güvenli bir yere kopyalayın, sonraki adımda buna ihtiyacınız olacaktır.
 
-### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>2. Adım: Müşterinizin kiracısına erişim ve yenileme belirteçleri alın
+### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>2. Adım: Müşterinizin kiracısından erişim ve yenileme belirteçleri alma
 
-Bu bölüm, belirteçleri müşterinizin kiracıdan almak için PowerShell betiği kullanma hakkında size yol sağlar. Bu betik, OAuth Authorization Code kod dosyası kullanılarak erişim ve yenileme belirteçlerine erişmek ve belirteçleri yenilemek için önceki Flow.
+Bu bölüm, müşterinizin kiracısından belirteçleri almak için PowerShell betiğini kullanma konusunda size yol gösterir. Bu betik, OAuth Yetkilendirme Kodu Akışı'nı kullanarak erişim ve yenileme belirteçlerini almak için önceki adımdaki uygulamayı kullanır.
 
-Kimlik bilgilerinizi verdikten sonra, uygulamanın müşterinin kiracısına sağlanması için uygulamaya izin verebilirsiniz.
+Kimlik bilgilerinizi sağladıktan sonra, uygulamanın müşterinin kiracısında sağlanması için uygulamaya onay vermeniz gerekir.
 
-1. Yeni bir klasör oluşturun ve bunu şu şekilde isim edin: `MsspTokensAcquisition`.
+1. Yeni bir klasör oluşturun ve şu adı verin: `MsspTokensAcquisition`.
 
-2. [LoginBrowser.psm1 modülünü indirin](https://github.com/shawntabrizi/Microsoft-Authentication-with-PowerShell-and-MSAL/blob/master/Authorization%20Code%20Grant%20Flow/LoginBrowser.psm1) ve klasöre `MsspTokensAcquisition` kaydedin.
+2. [LoginBrowser.psm1 modülünü](https://github.com/shawntabrizi/Microsoft-Authentication-with-PowerShell-and-MSAL/blob/master/Authorization%20Code%20Grant%20Flow/LoginBrowser.psm1) indirin ve klasöre `MsspTokensAcquisition` kaydedin.
 
     > [!NOTE]
-    > Satır 30'da, ile `authorzationUrl` değiştirin `authorizationUrl`.
+    > 30. satırda değerini ile `authorizationUrl`değiştirin`authorzationUrl`.
 
-3. Aşağıdaki içeriği içeren bir dosya oluşturun ve bu dosyayı adla `MsspTokensAcquisition.ps1` klasöre kaydedin:
+3. Aşağıdaki içeriğe sahip bir dosya oluşturun ve klasöre adıyla `MsspTokensAcquisition.ps1` kaydedin:
 
     ```powershell
     param (
@@ -142,41 +142,41 @@ Kimlik bilgilerinizi verdikten sonra, uygulamanın müşterinin kiracısına sa�
     Write-Host " ----------------------------------- REFRESH TOKEN ---------------------------------- "
     Write-Host $refreshToken
     ```
-4. Klasörde yükseltilmiş bir PowerShell komut istemini `MsspTokensAcquisition` açın.
+4. Klasörde yükseltilmiş bir PowerShell komut istemi `MsspTokensAcquisition` açın.
 
 5. Aşağıdaki konumu çalıştırın: `Set-ExecutionPolicy -ExecutionPolicy Bypass`
 
 6. Aşağıdaki komutları girin: `.\MsspTokensAcquisition.ps1 -clientId <client_id> -secret <app_key> -tenantId <customer_tenant_id>`
 
-    - Önceki \<client_id\> adımda **sahip olduğunuz Uygulama (istemci)** kimliğiyle değiştirin.
-    - Önceki \<app_key\> adımda **oluşturduğunuz İstemci** Sırrı ile değiştirin.
-    - Müşterinizin \<customer_tenant_id\> Kiracı Kimliği ile **değiştirin**.
+    - değerini önceki adımda aldığınız **Uygulama (istemci) kimliğiyle** değiştirin\<client_id\>.
+    - değerini önceki adımda oluşturduğunuz **İstemci Gizli Anahtarı** ile değiştirin\<app_key\>.
+    - değerini müşterinizin **Kiracı Kimliği** ile değiştirin\<customer_tenant_id\>.
 
-7. Kimlik bilgilerinizi ve onay bilgilerinizi sağlamanız istenir. Sayfa yönlendirmesini yoksayın.
+7. Kimlik bilgilerinizi ve onayınızı sağlamanız istenir. Sayfa yeniden yönlendirmesini yoksayın.
 
 8. PowerShell penceresinde bir erişim belirteci ve yenileme belirteci alırsınız. SIEM bağlayıcınızı yapılandırmak için yenileme belirtecini kaydedin.
 
-### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>3. Adım: Uygulamanıza izin Microsoft 365 Defender
+### <a name="step-3-allow-your-application-on-microsoft-365-defender"></a>3. Adım: Uygulamanızın Microsoft 365 Defender'de izin verme
 
-Bu uygulamada oluşturduğunuz uygulamaya izin Microsoft 365 Defender.
+Microsoft 365 Defender'de oluşturduğunuz uygulamaya izin vermeniz gerekir.
 
-Uygulamaya izin vermek için **Portal sistemi ayarlarını yönetme** izninizin olmasına gerek vardır. Aksi takdirde, müşteriden sizin için uygulamaya izin vermelerini isteğiniz gerekir.
+Uygulamaya izin vermek için **Portal sistem ayarlarını yönet** iznine sahip olmanız gerekir. Aksi takdirde müşterinizden uygulamaya sizin için izin vermelerini istemeniz gerekir.
 
-1. Şu yere `https://security.microsoft.com?tid=<customer_tenant_id>` gidin ( \<customer_tenant_id\> müşterinin kiracı kimliğiyle değiştirin).
+1. adresine `https://security.microsoft.com?tid=<customer_tenant_id>` gidin (değerini müşterinin kiracı kimliğiyle değiştirin \<customer_tenant_id\> .
 
-2. Uç **Ayarlar** \> **API'leri** \>  \> **SIEM'ye tıklayın**.
+2. **Ayarlar** \> **Uç Noktaları API'leri** \>  \> **SIEM'i** tıklatın.
 
-3. **MSSP sekmesini** seçin.
+3. **MSSP** sekmesini seçin.
 
-4. İlk adımda **Uygulama Kimliğini** ve Kiracı **Kimliği'nizi girin**.
+4. İlk adımdaki **Uygulama Kimliğini** ve **Kiracı Kimliğinizi** girin.
 
-5. Uygulamayı **yetkilendir'e tıklayın**.
+5. **Uygulamayı yetkile'ye** tıklayın.
 
-Artık SIEM'niz için ilgili yapılandırma dosyasını indirebilir ve MICROSOFT 365 DEFENDER API'nize bağlanabilirsiniz. Daha fazla bilgi için bkz [. SIEM araçlarınıza uyarı çekme](../defender-endpoint/configure-siem.md).
+Artık SIEM'iniz için ilgili yapılandırma dosyasını indirebilir ve Microsoft 365 Defender API'sine bağlanabilirsiniz. Daha fazla bilgi için bkz. [SIEM araçlarınıza uyarılar çekme](../defender-endpoint/configure-siem.md).
 
-- ArcSight yapılandırma dosyası / Splunk Kimlik Doğrulama Özellikleri dosyasında, gizli değeri ayarerek uygulama anahtarınızı el ile yazın.
-- Portalda bir yenileme belirteci almak yerine, betiği bir yenileme belirteci almak (veya başka bir şekilde almak) için önceki adımdan kullanın.
+- ArcSight yapılandırma dosyası / Splunk Kimlik Doğrulama Özellikleri dosyasında gizli dizi değerini ayarlayarak uygulama anahtarınızı el ile yazın.
+- Portalda yenileme belirteci almak yerine bir yenileme belirteci almak (veya başka bir yolla almak) için önceki adımdaki betiği kullanın.
 
-## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>API'leri kullanarak MSSP müşteri kiracısına uyarılar getirme
+## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>API'leri kullanarak MSSP müşteri kiracısından uyarıları getirme
 
-REST API kullanarak uyarı alma hakkında bilgi için bkz. [REST API kullanarak uyarıları çekme](../defender-endpoint/pull-alerts-using-rest-api.md).
+REST API kullanarak uyarıları getirme hakkında bilgi için bkz. [REST API kullanarak uyarıları çekme](../defender-endpoint/pull-alerts-using-rest-api.md).

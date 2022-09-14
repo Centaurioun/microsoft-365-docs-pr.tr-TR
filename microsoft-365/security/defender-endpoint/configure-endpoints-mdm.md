@@ -2,7 +2,7 @@
 title: Intune kullanarak Windows cihazlarını Uç Nokta için Defender'a ekleme
 description: Uç Nokta için Defender hizmetine eklenmeleri için yapılandırma paketini cihazlara dağıtmak için Microsoft Intune kullanın.
 keywords: mdm kullanarak cihazları ekleme, cihaz yönetimi, Uç Nokta için Microsoft Defender cihazları ekleme, mdm
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 90c6ec688b19f328f89e2bcabe70b7955086e8da
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.subservice: mde
+ms.openlocfilehash: b2114591ae4314f48836a296092a169e27a422b6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531066"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680381"
 ---
 # <a name="onboard-windows-devices-to-defender-for-endpoint-using-intune"></a>Intune kullanarak Windows cihazlarını Uç Nokta için Defender'a ekleme 
 

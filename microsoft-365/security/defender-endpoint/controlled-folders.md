@@ -2,7 +2,7 @@
 title: Önemli klasörleri fidye yazılımlarından, dosyalarınızı denetimli klasör erişimiyle şifrelemeye karşı koruma
 description: Varsayılan klasörlerdeki dosyalar kötü amaçlı uygulamalar tarafından değiştirilmeye karşı korunabilir. Fidye yazılımlarının dosyalarınızı şifrelemesini önleyin.
 keywords: denetimli klasör erişimi, windows 10, windows defender, fidye yazılımı, koruma, dosyalar, klasörler
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +13,16 @@ audience: ITPro
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 00c2f6f490a09e76e097a20419f8d8137b32a467
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 2d300c085ae066688be92faf7d1904b1d88398ae
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717304"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679503"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Denetimli klasör erişimiyle önemli klasörleri koruma
 

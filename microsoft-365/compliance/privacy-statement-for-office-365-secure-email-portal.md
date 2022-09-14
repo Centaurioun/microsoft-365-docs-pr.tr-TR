@@ -1,5 +1,5 @@
 ---
-title: Güvenli E-posta Portalı gizlilik bildirimi
+title: Güvenli Email Portalı gizlilik bildirimi
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,33 +17,33 @@ ms.collection:
 - M365-security-compliance
 description: 'Son Güncelleştirme: Mayıs 2017'
 ms.openlocfilehash: 45a1f4f4409f7e45648daf6d998db66d325710da
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63019501"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67679635"
 ---
-# <a name="privacy-statement-for-secure-email-portal"></a>Güvenli E-posta Portalı gizlilik bildirimi
+# <a name="privacy-statement-for-secure-email-portal"></a>Güvenli Email Portalı gizlilik bildirimi
 
 Son Güncelleştirme: Mayıs 2017
   
-Bu gizlilik bildirimi yeni OME Office 365 Portalı'nın ("yeni OME özellikleri Portalı") geçerli olduğunu ifade eder. Önceki sürümler Büyük Office 365 İleti Şifrelemesi (OME) ve "OME Portalı" olarak biliniyor. Bu gizlilik bildirimi diğer çevrimiçi veya çevrimdışı Microsoft siteleri, ürünleri veya hizmetleri için geçerli değildir. Ayrıca, yeni OME özellikleri Portalı üzerinden işlemeniz gereken veriler için, örneğin Microsoft hesabının gizlilik bildirimi (kimlik doğrulaması için kullanılıyorsa) veya cihazınızla ilişkili gizlilik bildirimi gibi diğer gizlilik deyimleri de uygulanabilir.
+Bu gizlilik bildirimi, yeni OME özellikleri Portalı'nın ("yeni OME özellikleri Portalı") Office 365 yönetir. Önceki sürümler Office 365 İleti Şifrelemesi (OME) ve "OME Portalı" olarak biliniyordu. Bu gizlilik bildirimi diğer çevrimiçi veya çevrimdışı Microsoft siteleri, ürünleri veya hizmetleri için geçerli değildir. Microsoft hesabının gizlilik bildirimi (kimlik doğrulaması için kullanılıyorsa) veya cihazınızla ilişkilendirilmiş gizlilik bildirimi gibi diğer gizlilik bildirimleri yeni OME özellikleri Portalı aracılığıyla işlediğiniz veriler için de geçerli olabilir.
   
-## <a name="collection-processing-and-use-of-your-information"></a>Bilgilerin Toplanması, İşlemesi ve Kullanımı
+## <a name="collection-processing-and-use-of-your-information"></a>Bilgilerinizi Toplama, İşleme ve Kullanma
 
-Yeni OME özellikleri Portalı, masaüstü bilgisayarlar veya mobil cihazlar gibi çeşitli uç noktalardan Office 365 şifrelenen e-postaları görüntülemenizi sağlar. Şifreli e-posta, posta kutunuza normal bir postaya HTML eki olarak gelir. Posta Microsoft hesabınıza, iş veya okul hesabınıza ya da Gmail hesabınıza gönderilirse, bu hesabı kullanarak web tabanlı yeni OME özellikleri Portalında oturum açmanız istenecek. Şifreli posta Microsoft Hesabı, iş veya okul hesabı veya Gmail hesabı dışında bir hesaba gönderilirse, bir Microsoft hesabı oluşturmanız ve bu hesabı şifreli iletinin gönderildiği hesapla ilişkilendirmeniz istenir; alternatif olarak, şifrelenmiş iletinin gönderildiği e-posta adresine gönderilecek olan kimlik doğrulaması için tek seferlik geçiş kodu talep etmek de seçebilirsiniz. Başarılı bir kimlik doğrulamasının ardından ileti şifreleri çözülecek ve yeni OME özellikleri Portalı aracılığıyla görüntülenir.
+Yeni OME özellikleri Portalı, masaüstü bilgisayarlar veya mobil cihazlar gibi çeşitli uç noktalardan Office 365 ile şifrelenmiş e-postaları görüntülemenizi sağlar. Şifrelenmiş e-posta, posta kutunuza normal bir postaya HTML eki olarak ulaşır. Posta Microsoft hesabınıza, iş veya okul hesabınıza veya Gmail hesabınıza gönderilirse, bu hesapla web tabanlı yeni OME özellikleri Portalı'nda oturum açmanız istenir. Şifrelenmiş posta Microsoft Hesabı, iş veya okul hesabı veya Gmail hesabı dışında bir hesaba gönderilirse, bir Microsoft hesabı oluşturmanız ve şifrelenmiş iletinin gönderildiği hesapla ilişkilendirmeniz istenir; alternatif olarak, şifrelenmiş iletinin gönderildiği e-posta adresine gönderilecek kimlik doğrulaması için tek seferlik bir geçiş kodu isteyebilirsiniz. Kimlik doğrulaması başarılı olduktan sonra iletinin şifresi çözülür ve yeni OME özellikleri Portalı aracılığıyla görüntülenir.
   
-Microsoft hesabına, iş veya okul hesabına ya da Gmail hesabına ilişkin kimlik bilgileri ve tek seferlik geçiş kodu yalnızca kimlik doğrulaması için kullanılır; yeni OME özellikleri Portalında depolanmaz veya yeni OME özellikleri tarafından başka bir amaçla kullanılmaz.
+Microsoft hesabına, iş veya okul hesabına veya Gmail hesabına ve tek seferlik geçiş koduna ilişkin kimlik bilgileriniz yalnızca kimlik doğrulaması için kullanılır; yeni OME özellikleri Portalı'nda depolanmaz veya yeni OME özellikleri tarafından başka bir amaçla kullanılmaz.
   
-Şifre çözme işlemi sırasında, alırsınız şifreli posta yeni OME özellikleri Portalı tarafından depolanmaz; yeni OME özellikleri Portalı'nın dışına herhangi bir zamanda aktarılamaz.
+Şifre çözme işlemi sırasında, aldığınız şifrelenmiş posta yeni OME özellikleri Portalı tarafından depolanmaz; herhangi bir zamanda yeni OME özellikleri Portalı'nın dışına aktarılmaz.
   
-Yeni OME özellikleri Portalı, bazı durumlarda yeni OME yeteneklerinin kullanımı ve performansıyla ilgili veri noktaları toplayabilirsiniz (örneğin, şifreli iletilerin ne sıklıkta görüntülenme sayısı, tarayıcı veya uygulama kullanılır ve karşılaşılan hatalar), bu ve diğer Microsoft uygulamalarının kalitesini, güvenliğini ve bütünlüğünü geliştirmek amacıyla bir araya toplanmış olabilir,  ürünler veya hizmetler için daha fazla bilgi sağlar. Bu bilgiler sizi tanımlamak, iletişim kurmak veya sizi hedef alan reklamlar yapmak için kullanılamaz.
+Yeni OME özellikleri Portalı, bazı durumlarda, bu ve diğer Microsoft uygulamalarının kalitesini, güvenliğini ve bütünlüğünü geliştirmek amacıyla toplu olarak analiz edilebilen yeni OME özelliklerinin (örneğin, şifrelenmiş iletilerin ne sıklıkta görüntülendiği, tarayıcı veya uygulama kullanıldığı ve karşılaşılan hatalar) kullanımı ve performansı hakkında veri noktaları toplayabilir,  ürün veya hizmetler. Bu bilgiler kimliğinizi belirlemek, sizinle iletişim kurmak veya size reklam yönlendirmek için kullanılmaz.
   
-## <a name="for-more-information"></a>Daha Fazla Bilgi Için
+## <a name="for-more-information"></a>Daha fazla bilgi için
 
-Lütfen gizlilikle ilgili sorgular için Microsoft'a [](mailto:omepriv@microsoft.com)omepriv@microsoft.com veya aşağıdaki adresten posta yoluyla doğrudan gönderin:
+Lütfen gizlilikle ilgili sorguları [omepriv@microsoft.com](mailto:omepriv@microsoft.com) aracılığıyla veya posta yoluyla Microsoft'a aşağıdaki adresten yönlendirin:
   
-Microsoft Gizliliği - Bilgi Koruması
+Microsoft Gizlilik - Information Protection
   
 Microsoft Corporation
   
@@ -51,8 +51,8 @@ One Microsoft Way
   
 Redmond, Washington 98052 ABD
   
-## <a name="changes"></a>Değişiklikler
+## <a name="changes"></a>Değişiklik
 
-Bu bildirimin değişikliklerini yayınla yayınla yer değiştiririz, bildirimin en üstünde yer alan "son güncelleştirme" verilerini değiştiririz. Gizlilik uygulamalarına yönelik değişiklikler hakkında daha fazla bilgi edinmek için, hizmetlerine erişiminizi sağlayan kuruluşa danışın.
+Bu bildirimde değişiklikler yayınlarsak, bildirimin en üstündeki "son güncelleştirme" verilerini düzeltiriz. Gizlilik uygulamalarında yapılan değişiklikler hakkında daha fazla bilgi edinmek için hizmetlerine erişmenizi sağlayan kuruluşa başvurun.
   
 

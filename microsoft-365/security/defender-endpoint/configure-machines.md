@@ -1,8 +1,8 @@
 ---
 title: Cihazlarınızı doğru yapılandırıldığından emin olun
-description: Cihazları uygun şekilde yapılandırarak tehditlere karşı genel güvenliğinizi geliştirin ve saldırılara algıla ve yanıt verme yeteneğinizi geliştirin.
-keywords: onboard, Intune yönetimi, Uç Nokta için Microsoft Defender, Microsoft Defender, Windows Defender, saldırı yüzeyini azaltma, ASR, güvenlik temeli
-ms.prod: m365-security
+description: Tehditlere karşı genel dayanıklılığı artırmak ve saldırıları algılama ve yanıtlama yeteneğinizi geliştirmek için cihazları düzgün bir şekilde yapılandırın.
+keywords: ekleme, Intune yönetimi, Uç Nokta için Microsoft Defender, Microsoft Defender, Windows Defender, saldırı yüzeyini azaltma, ASR, güvenlik temeli
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,82 +14,82 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 47c3cb5d680899a28e6467b24ef398a428851a07
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 74fe25476a336f04b5d419f93a4554becbb6b6f7
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476169"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679434"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Cihazlarınızı doğru yapılandırıldığından emin olun
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Uygun şekilde yapılandırılan cihazlarla, tehditlere karşı genel güvenliği artırarak saldırılar tespit etme ve yanıt verme yeteneğinizi geliştirebilirsiniz. Güvenlik yapılandırması yönetimi cihazlarınızı şu şekilde sağlamaya yardımcı olur:
+Düzgün yapılandırılmış cihazlarla tehditlere karşı genel dayanıklılığı artırabilir ve saldırıları algılama ve yanıtlama yeteneğinizi geliştirebilirsiniz. Güvenlik yapılandırma yönetimi, cihazlarınızın şunlardan emin olmasını sağlar:
 
-- Uç Nokta için Microsoft Defender'e Uç Nokta için Microsoft Defender
-- Uç nokta güvenlik taban çizgisi yapılandırması için Defender'ı karşılama veya aşma
-- Stratejik saldırı yüzeyini azaltmaları yerleştirin
+- Uç Nokta için Microsoft Defender ekleme
+- Uç Nokta için Defender güvenlik temeli yapılandırmasını karşılama veya aşma
+- Stratejik saldırı yüzeyi risk azaltmaları var
 
-Cihaz **yapılandırma yönetimi** sayfasını açmak için, gezinti menüsünde Yapılandırma yönetimi'ne tıklayın.
+Cihaz **yapılandırma yönetimi** sayfasını açmak için gezinti menüsünden Yapılandırma yönetimi'ne tıklayın.
 
-:::image type="content" source="images/secconmgmt_main.png" alt-text="Güvenlik yapılandırması yönetimi sayfası" lightbox="images/secconmgmt_main.png":::
+:::image type="content" source="images/secconmgmt_main.png" alt-text="Güvenlik yapılandırma yönetimi sayfası" lightbox="images/secconmgmt_main.png":::
 
-*Cihaz yapılandırma yönetim sayfası*
+*Cihaz yapılandırma yönetimi sayfası*
 
-Kuruluş düzeyinde yapılandırma durumunu izleyebilir ve işe alım kapsamı kötü, uyumluluk sorunları ve iyileştirilmiş saldırı alanı risk azaltmalarına doğrudan, Microsoft Intune ve <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a> cihaz yönetimi sayfalarına yönelik derin bağlantılar aracılığıyla hızlı bir şekilde harekete geçebilirsiniz.
+Yapılandırma durumunu kuruluş düzeyinde izleyebilir ve Microsoft Intune ve <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalındaki</a> cihaz yönetimi sayfalarına doğrudan, ayrıntılı bağlantılar aracılığıyla kötü ekleme kapsamı, uyumluluk sorunları ve kötü iyileştirilmiş saldırı yüzeyi risk azaltmalarına yanıt olarak hızla eyleme geçebilirsiniz.
 
-Bunu yaparken, şunları yapma avantajından faydalan oluruz:
+Bunu yaparken şu avantajlardan yararlanabilirsiniz:
 
-- Cihazlarınız üzerinde etkinliklerin kapsamlı görünürlüğü
-- Ham etkinlikleri işlemeye, ihlal etkinliğini ve tehdit göstergelerini belirlemeye yönelik güçlü tehdit zekası ve güçlü cihaz öğrenme teknolojileri
-- Kötü amaçlı dosyaların yüklemesini, sistem dosyalarını ve işlemlerini ele geçirerek, veri sızıntısını ve diğer tehdit etkinliklerini etkili bir şekilde durdurmak üzere yapılandırılan tam güvenlik özellikleri yığını
-- Saldırı yüzeyini azaltmayı en iyi duruma getirmek, tehdit etkinliklerine karşı stratejik savunmayı en üst düzeye çıkarma ve üretkenliği en aza indirme
+- Cihazlarınızdaki olayların kapsamlı görünürlüğü
+- Ham olayları işlemeye ve ihlal etkinliğini ve tehdit göstergelerini tanımlamaya yönelik güçlü tehdit bilgileri ve güçlü cihaz öğrenme teknolojileri
+- Kötü amaçlı implantların yüklenmesini, sistem dosyalarının ve işlemlerinin ele geçirilmesi, veri sızdırma ve diğer tehdit etkinliklerinin etkili bir şekilde durdurulması için yapılandırılmış tam bir güvenlik özellikleri yığını
+- Tehdit etkinliğine karşı stratejik savunmaları en üst düzeye çıkarırken üretkenlik üzerindeki etkiyi de en aza indiren iyileştirilmiş saldırı yüzeyi risk azaltmaları
 
-## <a name="enroll-devices-to-intune-management"></a>Cihazları okul yönetimine Intune kaydetme
+## <a name="enroll-devices-to-intune-management"></a>Cihazları Intune yönetimine kaydetme
 
-Cihaz yapılandırma yönetimi, Intune cihazların envanterini ve temel güvenlik yapılandırmasını kurmak için cihaz yönetimiyle yakın bir şekilde çalışır. Tek tek yönetilen cihazlarda yapılandırma sorunlarını izleyebilir ve Intune Windows yönetebilirsiniz.
+Cihaz yapılandırma yönetimi, kuruluşunuzdaki cihazların envanterini ve temel güvenlik yapılandırmasını oluşturmak için Intune cihaz yönetimiyle yakından çalışır. Intune yönetilen Windows cihazlarında yapılandırma sorunlarını izleyebilir ve yönetebilirsiniz.
 
-Cihazlarınızı düzgün yapılandırıldığından emin olmadan önce, cihazlarınızı daha iyi Intune. Intune güçlü bir kayıttır ve güvenilir cihazlar için çeşitli Windows vardır. Kayıt seçeneklerini ayarlama hakkında Intune için, Windows için kaydı [ayarlama hakkında Windows okuyun](/intune/windows-enroll).
+Cihazlarınızın düzgün yapılandırıldığından emin olmadan önce bunları Intune yönetimine kaydedin. Intune kaydı güçlüdür ve Windows cihazları için çeşitli kayıt seçeneklerine sahiptir. Intune kayıt seçenekleri hakkında daha fazla bilgi [için Windows cihazları için kaydı ayarlama](/intune/windows-enroll) hakkında bilgi edinin.
 
 > [!NOTE]
-> Cihazları Windows kaydetmek Intune, yöneticilere zaten lisans atanmış olması gerekir. [Cihaz kaydı için lisans atama hakkında bilgi alın](/intune/licenses-assign).
+> Windows cihazlarını Intune kaydetmek için yöneticilere zaten lisans atanmış olmalıdır. [Cihaz kaydı için lisans atama hakkında bilgi edinin](/intune/licenses-assign).
 
 > [!TIP]
-> Mobil cihaz aracılığıyla cihaz yönetimini en Intune için, [Intune Için Defender'a bağlanabilirsiniz](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
+> Intune aracılığıyla cihaz yönetimini iyileştirmek [için Intune Uç Nokta için Defender'a bağlayın](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
 
 ## <a name="obtain-required-permissions"></a>Gerekli izinleri alma
 
-Varsayılan olarak, yalnızca Genel Yönetici'ye veya Azure AD'de Intune Hizmet Yöneticisi rolüne atanmış kullanıcılar, ekleme cihazları için gereken cihaz yapılandırma profillerini yönetebilir ve ataabilir ve güvenlik temeli dağıtabilir.
+Varsayılan olarak, yalnızca Azure AD'de Genel Yönetici veya Intune Hizmet Yöneticisi rolü atanmış kullanıcılar cihazları ekleme ve güvenlik temelini dağıtma için gereken cihaz yapılandırma profillerini yönetebilir ve atayabilir.
 
 Size başka roller atanmışsa gerekli izinlere sahip olduğunuzdan emin olun:
 
-- Cihaz yapılandırmaları için tam izinler
-- Güvenlik taban çizgilerine tam izinler
-- Cihaz uyumluluk ilkeleri için okuma izinleri
-- Kuruluş izinlerini okuma
+- Cihaz yapılandırmalarına yönelik tam izinler
+- Güvenlik temellerine yönelik tam izinler
+- Cihaz uyumluluk ilkelerine yönelik okuma izinleri
+- Kuruluşa yönelik okuma izinleri
 
 :::image type="content" source="images/secconmgmt_intune_permissions.png" alt-text="Intune'da gerekli izinler" lightbox="images/secconmgmt_intune_permissions.png":::
 
-*Mobil cihazda cihaz yapılandırma Intune*
+*Intune cihaz yapılandırma izinleri*
 
 > [!TIP]
-> Belirli bir konuda izin atama hakkında daha fazla bilgi Intune [özel roller oluşturma hakkında bilgi okuyun](/intune/create-custom-role#to-create-a-custom-role).
+> Intune izin atama hakkında daha fazla bilgi edinmek için [özel roller oluşturma hakkında bilgi edinin](/intune/create-custom-role#to-create-a-custom-role).
 
 ## <a name="in-this-section"></a>Bu bölümde
 
 Konu|Açıklama
 :---|:---
-[Cihazları Uç Nokta için Defender'a ekleme](configure-machines-onboarding.md)|Tek tek yönetilen cihazların Intune ve mobil cihaz aracılığıyla daha fazla cihaz Intune. 
-[Uç nokta güvenlik temeli için Defender'a uyumluluğu artırma](configure-machines-security-baseline.md)|Taban çizgisi uyumluluğunu ve uyumluluğunu takip edin. Güvenlik taban çizgisini daha fazla Intune cihazlara dağıtın.
-[ASR kuralı dağıtımını ve algılamalarını en iyi duruma getirme](configure-machines-asr.md)|Microsoft 365 Defender portalında etki çözümleme araçlarını kullanarak kural dağıtımını ve <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ince Microsoft 365 Defender gözden geçirebilirsiniz</a>.
+[Uç Nokta için Defender'a eklenen cihazları alma](configure-machines-onboarding.md)|Intune yönetilen cihazların ekleme durumunu izleyin ve Intune aracılığıyla daha fazla cihaz ekleme. 
+[Uç Nokta için Defender güvenlik temeline uyumluluğu artırma](configure-machines-security-baseline.md)|Temel uyumluluğu ve uyumsuzluğu izleyin. Güvenlik temelini daha Intune yönetilen cihazlara dağıtın.
+[ASR kuralı dağıtım ve algılamalarını iyileştirme](configure-machines-asr.md)|<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalındaki</a> etki analizi araçlarını kullanarak kural dağıtımını ve ince ayar algılamalarını gözden geçirin.
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

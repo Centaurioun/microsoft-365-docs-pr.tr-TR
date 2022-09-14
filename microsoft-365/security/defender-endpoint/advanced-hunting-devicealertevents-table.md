@@ -2,7 +2,7 @@
 title: Gelişmiş tehdit avcılığı şemasındaki DeviceAlertEvents tablosu
 description: Gelişmiş tehdit avcılığı şemasının DeviceAlertEvents tablosunda uyarı oluşturma olayları hakkında bilgi edinin
 keywords: gelişmiş avcılık, tehdit avcılığı, siber tehdit avcılığı, mdatp, microsoft defender atp, uç nokta için microsoft defender, wdatp arama, sorgu, telemetri, şema başvurusu, kusto, tablo, sütun, veri türü, açıklama, DeviceAlertEvents, uyarı, önem derecesi, kategori
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
-ms.technology: mde
-ms.openlocfilehash: 1742c674cb982282d8edbe73e43e6ea59fedf8f6
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.subservice: mde
+ms.openlocfilehash: fa6d6ef9954da4e11e4d6af5ecc1e8fa4658cdcb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281849"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67678657"
 ---
 # <a name="devicealertevents"></a>CihazUyarıEtkinlikleri
 

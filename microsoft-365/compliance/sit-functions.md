@@ -20,11 +20,11 @@ ms.custom:
 recommendations: false
 description: Hassas bilgi türü işlevlerinin neleri arayacağınızı öğrenin.
 ms.openlocfilehash: 7c2ce289cab93e4a0491cbf13379c169a01e7fbf
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760261"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67679723"
 ---
 # <a name="sensitive-information-type-functions"></a>Hassas bilgi türü işlevleri
 

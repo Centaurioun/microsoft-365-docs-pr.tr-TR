@@ -1,8 +1,8 @@
 ---
-title: Destek Uç Nokta için Microsoft Defender başvurun
-description: Destek için nasıl Uç Nokta için Microsoft Defender öğrenin
+title: Uç Nokta için Microsoft Defender destek hattı ile iletişime geçin
+description: Uç Nokta için Microsoft Defender desteğine nasıl başvuracağınızı öğrenin
 keywords: destek, iletişim, premier destek, çözümler, sorunlar, vaka
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,84 +13,84 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: bbf7be489f969007badb4d00fb25ce22eb991f55
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 3314a21a82583cb32ad3c7af1008a24c03fdfd8a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475355"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680339"
 ---
-# <a name="contact-microsoft-defender-for-endpoint-support"></a>Destek Uç Nokta için Microsoft Defender başvurun
+# <a name="contact-microsoft-defender-for-endpoint-support"></a>Uç Nokta için Microsoft Defender destek hattı ile iletişime geçin
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Uç nokta için Defender yakın zamanda daha modern ve gelişmiş bir destek deneyimi sunmak için destek işlemini yükseltti.
+Uç Nokta için Defender kısa süre önce daha modern ve gelişmiş bir destek deneyimi sunmak için destek sürecini yükseltti.
 
-Yeni widget müşterilerin şunları şunları izin verir:
+Yeni pencere öğesi müşterilerin şunları yapmasına olanak tanır:
 
-- Sık karşılaşılan sorunların çözümlerini bulun
-- Microsoft destek ekibine destek durumu gönderme
+- Yaygın sorunların çözümlerini bulma
+- Microsoft destek ekibine destek talebi gönderme
 
 ## <a name="prerequisites"></a>Önkoşullar
 
 Destek olaylarını açma izni olan belirli rolleri bilmek önemlidir.
 
-En azından Hizmet Desteği Yöneticisi veya Yardım **masası Yöneticisi** rolüne sahip olmak gerekir.
+En azından Hizmet Desteği Yöneticisi **veya** Yardım Masası Yöneticisi rolüne sahip olmanız gerekir.
 
-Hangi rollerin izni olduğu hakkında daha fazla bilgi için bkz. [Güvenlik Yöneticisi izinleri](/azure/active-directory/roles/permissions-reference#security-administrator). Eylemi içeren roller vakayı `microsoft.office365.supportTickets/allEntities/allTasks` gönder olabilir.
+Hangi rollerin izni olduğu hakkında daha fazla bilgi için bkz. [Güvenlik Yöneticisi izinleri](/azure/active-directory/roles/permissions-reference#security-administrator). Eylemi `microsoft.office365.supportTickets/allEntities/allTasks` içeren roller bir servis talebi gönderebilir.
 
 Yönetici rolleri hakkında genel bilgi için bkz. [Yönetici rolleri hakkında](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
 
-## <a name="access-the-widget"></a>Widget'a erişme
+## <a name="access-the-widget"></a>Pencere öğesine erişme
 
-Yeni destek widget'sine erişim iki şekilde yapılabilir:
+Yeni destek pencere öğesine erişmek iki yoldan biriyle yapılabilir:
 
-1. Portalın sağ üst kısmında yer alan soru işaretine ve ardından "Microsoft desteğine" tıklayın:
+1. Portalın sağ üst kısmındaki soru işaretine ve ardından "Microsoft desteği"ne tıklayın:
 
-   :::image type="content" source="../../media/contactsupport.png" alt-text="Portalda Microsoft Microsoft 365 Defender simgesi" lightbox="../../media/contactsupport.png":::
+   :::image type="content" source="../../media/contactsupport.png" alt-text="Microsoft 365 Defender portalındaki Microsoft destek simgesi" lightbox="../../media/contactsupport.png":::
 
-2. Yardım mı gerekiyor **?**  düğmesini Microsoft 365 Defender:
+2. **Yardım mı gerekiyor?**  Microsoft 365 Defender portalının sağ alt kısmındaki düğme:
 
-   :::image type="content" source="images/need-help-option.png" alt-text="Yardıma ihtiyacınız var düğmesi" lightbox="images/need-help-option.png":::
+   :::image type="content" source="images/need-help-option.png" alt-text="Yardım gerekiyor düğmesi" lightbox="images/need-help-option.png":::
 
-Widget'ta iki seçenek sunulur:
+Pencere öğesinde size iki seçenek sunulur:
 
-- Sık karşılaşılan sorunların çözümlerini bulun
+- Yaygın sorunların çözümlerini bulma
 - Hizmet isteği açma
 
-## <a name="find-solutions-to-common-problems"></a>Sık karşılaşılan sorunların çözümlerini bulun
+## <a name="find-solutions-to-common-problems"></a>Yaygın sorunların çözümlerini bulma
 
-Bu seçenek, sor olabileceğiniz soruyla ilgili makaleleri içerir. Yalnızca arama kutusuna soruyu yazmaya başlayın; aramanız ile ilgili makaleler ortaya çıkar.
+Bu seçenek, sorabileceğiniz soruyla ilgili olabilecek makaleleri içerir. Soruyu arama kutusuna yazmaya başlamanız gerekir ve aramanızla ilgili makaleler görüntülenir.
 
-:::image type="content" source="../../media/contactsupport1.png" alt-text="Nasıl yardımcı olabiliriz?" lightbox="../../media/contactsupport1.png":::
+:::image type="content" source="../../media/contactsupport1.png" alt-text="Nasıl yardım edebiliriz?" lightbox="../../media/contactsupport1.png":::
 
-Önerilen makaleler yeterli olmayabilir ve bir hizmet isteği açabilirsiniz.
+Önerilen makalelerin yeterli olmaması durumunda bir hizmet isteği açabilirsiniz.
 
 ## <a name="open-a-service-request"></a>Hizmet isteği açma
 
-Uç nokta desteği için Defender'a başvurarak destek biletlerini açmayı öğrenin.
+Uç Nokta için Defender desteğine başvurarak destek biletlerini açmayı öğrenin.
 
 > [!NOTE]
-> Microsoft ile bir premier destek sözleşmem varsa widget'ta premier destek etiketini orada görüyorsunuz. Bu bağlantı yoksa Microsoft hesap yöneticinize ulaşın.
+> Microsoft ile bir premier destek sözleşmeniz varsa, pencere öğesinde premier etiketini görürsünüz. Aksi takdirde Microsoft hesap yöneticinize başvurun.
 
 ### <a name="contact-support"></a>Destek ekibine başvurun
 
-:::image type="content" source="../../media/contactsupport2.png" alt-text="Destek ile iletişime geçin 2" lightbox="../../media/contactsupport2.png"::: </br>
+:::image type="content" source="../../media/contactsupport2.png" alt-text="İlgili kişi desteği 2" lightbox="../../media/contactsupport2.png"::: </br>
 
-1. Karşılaştığınız sorun, size ulaşlarımız için telefon numarası ve e-posta adresi gibi bir başlık ve açıklama girin.
-2. (İsteğe bağlı) Destek durumu için ek bağlam sağlamak için sorunla ilgili en çok beş ek iliştirin.
-3. Saat diliminizi ve varsa alternatif dili seçin. İstek Tüm Ekiplere Microsoft Desteği. Ekip, hizmet isteğinizi kısa süre içinde yanıtlanacak.
+1. Karşılaştığınız sorun, size ulaşacağımız telefon numarası ve e-posta adresi için bir başlık ve açıklama girin.
+2. (İsteğe bağlı) Destek olayı için ek bağlam sağlamak üzere sorunla ilgili en fazla beş ek ekleyin.
+3. Saat diliminizi ve varsa alternatif bir dil seçin. İstek Microsoft Desteği Ekibine gönderilir. Ekip kısa süre sonra hizmet isteğinize yanıt verecektir.
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Hizmet sorunlarını giderme](troubleshoot-mdatp.md)
+- [Hizmet sorunlarını giderin](troubleshoot-mdatp.md)
 - [Hizmet durumunu denetleme](/microsoft-365/enterprise/view-service-health)

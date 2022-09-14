@@ -2,7 +2,7 @@
 title: veri depolama ve gizliliği Uç Nokta için Microsoft Defender
 description: Uç Nokta için Microsoft Defender'ın topladığı gizlilik ve verileri nasıl işlediği hakkında bilgi edinin.
 keywords: Uç Nokta için Microsoft Defender, veri depolama ve gizlilik, depolama, gizlilik, lisanslama, coğrafi konum, veri saklama, veriler
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: d1d8ad0a16129e909476891291c0b2c0f0d54956
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.subservice: mde
+ms.openlocfilehash: 8725063629ffe2f162307a6fce6ddb198640c732
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554157"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679251"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>veri depolama ve gizliliği Uç Nokta için Microsoft Defender
 

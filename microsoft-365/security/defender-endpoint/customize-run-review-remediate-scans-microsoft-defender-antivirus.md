@@ -1,9 +1,9 @@
 ---
 title: Zamanlanmış ve isteğe bağlı taramaları çalıştırın ve özelleştirin.
-description: Ağ genelinde uç Microsoft Defender Virüsten Koruma taramalarını özelleştirme ve başlatma
+description: Ağınızdaki uç noktalarda Microsoft Defender Virüsten Koruma taramalarını özelleştirme ve başlatma
 keywords: tarama, zamanlama, özelleştirme, dışlamalar, dosyaları dışlama, düzeltme, tarama sonuçları, karantina, tehdit kaldırma, hızlı tarama, tam tarama, Microsoft Defender Virüsten Koruma
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,35 +14,35 @@ ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9acac2868b0bd2449338f4a61f663d8cfe8a8ee4
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: a250e39b04b621be90fce001a8154f54cc6d9ddb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "62997055"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680295"
 ---
-# <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>Bu taramaları ve düzeltmeleri sonucunda Microsoft Defender Virüsten Koruma, başlatma ve gözden geçirme
+# <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>Microsoft Defender Virüsten Koruma taramalarının ve düzeltmelerinin sonuçlarını özelleştirme, başlatma ve gözden geçirme
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Yeni taramalar yapılandırmak için Grup İlkesi, PowerShell Windows Yönetim Aracı'Microsoft Defender Virüsten Koruma kullanabilirsiniz. 
+Microsoft Defender Virüsten Koruma taramalarını yapılandırmak için grup ilkesi, PowerShell ve Windows Yönetim Araçları(WMI) kullanabilirsiniz. 
 
 ## <a name="in-this-section"></a>Bu bölümde
 
 Konu | Açıklama
 ---|---
-[Taramalarda dosya, klasör ve işlem açık durumdaki dosya dışlamalarını yapılandırma Microsoft Defender Virüsten Koruma doğrulama](configure-exclusions-microsoft-defender-antivirus.md) | Dosyaları (belirtilen işlemler tarafından değiştirilen dosyalar dahil) ve klasörleri isteğe bağlı taramalardan, zamanlanmış taramalardan ve her zaman gerçek zamanlı koruma izleme ve taramadan çıkarabilirsiniz
-[Tarama Microsoft Defender Virüsten Koruma yapılandırma](configure-advanced-scan-types-microsoft-defender-antivirus.md) | Dosyaları, Microsoft Defender Virüsten Koruma tür e-posta depolama dosyalarını, noktaları, arşivlenmiş dosyaları (örneğin, .zip dosyaları) içerecek şekilde yapılandırabilirsiniz. Ağ dosyası taramayı da etkinleştirebilirsiniz
-[Taramalar için düzeltmeyi yapılandırma](configure-remediation-microsoft-defender-antivirus.md) | Bir Microsoft Defender Virüsten Koruma algılayana kadar ne olacağını ve karantina klasöründe ne kadar süreyle karantinada tutmaları gerektiğini yapılandırma
-[Zamanlanmış taramaları yapılandırma](scheduled-catch-up-scans-microsoft-defender-antivirus.md) | Ne zaman çalıştıracakları ve tam veya hızlı tarama olarak çalıştırıp çalışmamaları da dahil olmak üzere yinelenen (zamanlanmış) taramalar ayarlayın
-[Taramaları yapılandırma ve çalıştırma](run-scan-microsoft-defender-antivirus.md) | PowerShell kullanarak isteğe bağlı taramaları, Windows Araçları'Windows veya Windows Güvenliği uygulamasıyla uç noktaları çalıştırma ve yapılandırma
-[Tarama sonuçlarını gözden geçirme](review-scan-results-microsoft-defender-antivirus.md) | Microsoft Endpoint Configuration Manager, Microsoft Intune veya Windows Güvenliği uygulamasını kullanarak taramaların sonuçlarını gözden geçirme
+[Microsoft Defender Virüsten Koruma taramalarında dosya, klasör ve işlem tarafından açılan dosya dışlamalarını yapılandırma ve doğrulama](configure-exclusions-microsoft-defender-antivirus.md) | Dosyaları (belirtilen işlemler tarafından değiştirilen dosyalar dahil) ve klasörleri isteğe bağlı taramaların, zamanlanmış taramaların ve her zaman açık gerçek zamanlı koruma izleme ve taramanın dışında tutabilirsiniz
+[Microsoft Defender Virüsten Koruma tarama seçeneklerini yapılandırın](configure-advanced-scan-types-microsoft-defender-antivirus.md) | Microsoft Defender Virüsten Koruma'yı belirli türlerdeki e-posta depolama dosyalarını, yedekleme veya yeniden ayrıştırma noktalarını ve arşivlenmiş dosyaları (.zip dosyaları gibi) taramalara dahil etmek üzere yapılandırabilirsiniz. Ağ dosyası taramasını da etkinleştirebilirsiniz
+[Taramalar için düzeltmeyi yapılandırma](configure-remediation-microsoft-defender-antivirus.md) | Microsoft Defender Virüsten Koruma'nın bir tehdit algıladığında ne yapacağını ve karantinaya alınan dosyaların karantina klasöründe ne kadar süreyle tutulacaklarını yapılandırın
+[Zamanlanmış taramaları yapılandırma](scheduled-catch-up-scans-microsoft-defender-antivirus.md) | Ne zaman çalıştırılmaları gerektiği ve tam veya hızlı tarama olarak çalıştırılıp çalıştırılmadıkları da dahil olmak üzere yinelenen (zamanlanmış) taramalar ayarlama
+[Taramaları yapılandırma ve çalıştırma](run-scan-microsoft-defender-antivirus.md) | PowerShell, Windows Yönetim Araçları'nı kullanarak veya Windows Güvenliği uygulamasıyla uç noktalarda tek tek isteğe bağlı taramaları çalıştırma ve yapılandırma
+[Tarama sonuçlarını gözden geçirme](review-scan-results-microsoft-defender-antivirus.md) | Microsoft Endpoint Configuration Manager, Microsoft Intune veya Windows Güvenliği uygulamasını kullanarak taramaların sonuçlarını gözden geçirin

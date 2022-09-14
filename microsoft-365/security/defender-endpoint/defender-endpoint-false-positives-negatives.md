@@ -2,8 +2,8 @@
 title: Uç Nokta için Microsoft Defender'da yanlış pozitifleri/negatifleri ele alın
 description: Uç Nokta için Microsoft Defender'da hatalı pozitifleri veya hatalı negatifleri işlemeyi öğrenin.
 keywords: virüsten koruma, özel durum, dışlama, Uç Nokta için Microsoft Defender, hatalı pozitif, yanlış negatif, engellenen dosya, engellenen URL
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,18 +17,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 - m365solution-overview
 - m365solution-fpfn
+- highpri
 ms.topic: how-to
 ms.date: 12/02/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: 5cae5a4b305846617130ecdf7c267ffc4ca13037
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 852ca45c6936933c5ee3a9e19f2ea80d2c65078a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603978"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679185"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da yanlış pozitifleri/negatifleri ele alın
 

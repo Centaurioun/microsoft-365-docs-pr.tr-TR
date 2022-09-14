@@ -2,7 +2,7 @@
 title: İşletmenizde Microsoft Defender Virüsten Koruma'ya yönetme
 description: Microsoft Defender Virüsten Koruma'yı yönetmek için grup ilkesi, Configuration Manager, PowerShell, WMI, Intune ve komut satırını kullanmayı öğrenin
 keywords: grup ilkesi, gpo, yapılandırma yöneticisi, sccm, scep, powershell, wmi, intune, defender, virüsten koruma, kötü amaçlı yazılımdan koruma, güvenlik, koruma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +13,15 @@ ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c26f3e045efa5ea1c538796b9165bef5fa763c98
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: c3b446989a6146245ceb9bbadb34cad1b3c5835e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388825"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679031"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>İşletmenizde Microsoft Defender Virüsten Koruma'ya yönetme
 

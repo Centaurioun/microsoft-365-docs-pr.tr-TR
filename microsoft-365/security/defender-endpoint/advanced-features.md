@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender'de gelişmiş özellikleri yapılandırma
 description: Uç Nokta için Microsoft Defender'da blok dosyası gibi gelişmiş özellikleri açın.
 keywords: gelişmiş özellikler, ayarlar, blok dosyası, otomatik araştırma, otomatik çözüm, skype, kimlik için microsoft defender, office 365, azure information protection, intune
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d9824a738468f14ebfc7cd7bdc3c612c21a0e43c
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mde
+ms.openlocfilehash: 5d1aea5fe5d8d1baaae3f616137f23dd93714f95
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493119"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679657"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Uç Nokta için Defender'da gelişmiş özellikleri yapılandırma
 

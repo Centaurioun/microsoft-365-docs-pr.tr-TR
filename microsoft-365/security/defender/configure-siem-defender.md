@@ -4,7 +4,8 @@ description: REST API'yi kullanmayı ve algılamaları almak ve çekmek için de
 keywords: siem, güvenlik bilgileri ve olay yönetimi araçlarını yapılandırma, splunk, arcsight, özel göstergeler, rest API, uyarı tanımları, risk göstergeleri
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +16,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 3e2772fd458c60e48f78c0d4b816cdac8ca25940
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 042474bb8c9e456dd97f14cf3e924a7958c172a9
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530329"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680075"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-365-defender"></a>SIEM araçlarınızı Microsoft 365 Defender ile tümleştirin
 

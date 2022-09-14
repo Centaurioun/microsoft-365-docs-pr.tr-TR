@@ -1,8 +1,8 @@
 ---
 title: Yönetilen güvenlik hizmeti sağlayıcısı desteğini yapılandırma
-description: Uç Nokta için Microsoft Defender ile MSSP tümleştirmesini yapılandırmak için gerekli adımları izleyin
+description: MSSP tümleştirmesini Uç Nokta için Microsoft Defender yapılandırmak için gerekli adımları uygulayın
 keywords: yönetilen güvenlik hizmeti sağlayıcısı, mssp, yapılandırma, tümleştirme
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,70 +13,70 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 1a9a7e24bc08338549a78fcf9e9b2756701cd83f
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.subservice: mde
+ms.openlocfilehash: b14a9f9e888c345038c4fc66948438d08b635177
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63014051"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680060"
 ---
-# <a name="configure-managed-security-service-provider-integration"></a>Yönetilen güvenlik hizmeti sağlayıcısı tümleştirmesi yapılandırma
+# <a name="configure-managed-security-service-provider-integration"></a>Güvenlik hizmeti sağlayıcısı tümleştirmesini yapılandırın
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Yönetilen güvenlik hizmeti sağlayıcısı (MSSP) tümleştirmeyi etkinleştirmek için aşağıdaki yapılandırma adımlarını atabilirsiniz.
+Yönetilen güvenlik hizmeti sağlayıcısı (MSSP) tümleştirmesini etkinleştirmek için aşağıdaki yapılandırma adımlarını uygulamanız gerekir.
 
 > [!NOTE]
-> Bu makalede, hizmet sağlayıcıyla hizmet tüketicisi arasında ayrım yapmak için aşağıdaki terimler kullanılır:
+> Hizmet sağlayıcısı ile hizmet tüketicisi arasında ayrım yapmak için bu makalede aşağıdaki terimler kullanılır:
 >
-> - MSSP'ler: Bir kuruluş için güvenlik cihazlarını izleme ve yönetme teklif sunan güvenlik kuruluşları.
-> - MSSP müşterileri: MSSP'ler hizmetleriyle etkileşime girmeleri için kuruluşlar.
+> - MSSP'ler: Bir kuruluşun güvenlik cihazlarını izlemeyi ve yönetmeyi teklif eden güvenlik kuruluşları.
+> - MSSP müşterileri: MSSP hizmetlerini devreye alan kuruluşlar.
 
-Tümleştirme, MSSP'lere aşağıdaki eylemleri gerçekleştirecek:
+Tümleştirme, MSSP'lerin aşağıdaki eylemleri gerçekleştirmesine olanak sağlar:
 
-- MSSP müşterisi posta portalına Microsoft 365 Defender alma
-- E-posta bildirimlerini alın ve
-- Güvenlik bilgileri ve olay yönetimi (SIEM) araçlarıyla uyarıları getirme
+- MSSP müşteri Microsoft 365 Defender portalına erişme
+- E-posta bildirimlerini alma ve
+- Güvenlik bilgileri ve olay yönetimi (SIEM) araçları aracılığıyla uyarıları getirme
 
-MSSP'ler bu eylemleri gerçekleştiremeden önce, MSSP müşterisi portala erişmek için kendi Uç Nokta kiracısı için Defender'a erişim izni ver yapmalıdır.
+MSSP'lerin bu eylemleri gerçekleştirebilmesi için ÖNCE MSSP müşterisinin Uç Nokta için Defender kiracısına erişim vermesi gerekir, böylece MSSP portala erişebilir.
 
-MSSP müşterileri normalde, MSSP'lere Güvenlik Merkezi kiracılarına erişim vermek için Windows Defender adımlarını alır. Erişim verildikten sonra, diğer yapılandırma adımları MSSP müşterisi veya MSSP tarafından yapılabilir.
+MSSP müşterileri genellikle Windows Defender Security Central kiracılarına MSSP erişimi vermek için ilk yapılandırma adımlarını uygular. Erişim verildikten sonra, diğer yapılandırma adımları MSSP müşterisi veya MSSP tarafından yapılabilir.
 
-Genelde aşağıdaki yapılandırma adımlarının benim alınması gerekir:
+Genel olarak, aşağıdaki yapılandırma adımlarının izlenmesi gerekir:
 
-- **E-postanıza MSSP Microsoft 365 Defender**
+- **MSSP'ye Microsoft 365 Defender erişimi verme**
 
-  Bu eylemin MSSP müşterisi tarafından yapılması gerekir. MSSP'ye, Uç nokta kiracısı için MSSP müşterisi Defender'a erişim izni sağlar.
+  Bu eylemin MSSP müşterisi tarafından yapılması gerekir. MSSP müşterisinin Uç Nokta için Defender kiracısına MSSP erişimi verir.
 
 - **MSSP'lere gönderilen uyarı bildirimlerini yapılandırma**
 
-  Bu eylem, MSSP müşterisi veya MSSP tarafından  alınır. Böylece MSSP'ler, MSSP müşterisi için hangi uyarılara ihtiyaçları olduğunu biliyor olur.
+  Bu eylem, MSSP müşterisi veya MSSP tarafından yapılabilir. Bu, MSSP'lerin MSSP müşterisi için hangi uyarıları ele almak zorunda olduklarını bilmesini sağlar.
 
-- **MSSP müşterisini kiracıdan SIEM sistemine uyarıları getirme**
+- **MSSP müşteri kiracısından SIEM sistemine uyarı getirme**
 
-  Bu eylem MSSP tarafından  alınır. MSSP'lerin SIEM araçlarında uyarı getirmesini sağlar.
+  Bu eylem MSSP tarafından gerçekleştirilen. MSSP'lerin SIEM araçlarında uyarıları getirmesine olanak tanır.
 
-- **API'leri kullanarak MSSP müşteri kiracısına uyarılar getirme**
+- **API'leri kullanarak MSSP müşteri kiracısından uyarıları getirme**
 
-  Bu eylem MSSP tarafından  alınır. MSSP'lerin API'leri kullanarak uyarı getirmesini sağlar.
+  Bu eylem MSSP tarafından gerçekleştirilen. MSSP'lerin API'leri kullanarak uyarıları getirmesine olanak tanır.
 
 ## <a name="multi-tenant-access-for-mssps"></a>MSSP'ler için çok kiracılı erişim
 
-Çok kiracılı temsilcili erişim uygulama hakkında bilgi için bkz. Yönetilen Güvenlik Hizmeti Sağlayıcıları [için Çok Kiracılı Erişim](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/multi-tenant-access-for-managed-security-service-providers/ba-p/1533440).
+Çok kiracılı temsilci erişimi uygulama hakkında bilgi için bkz. [Yönetilen Güvenlik Hizmeti Sağlayıcıları için çok kiracılı erişim](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/multi-tenant-access-for-managed-security-service-providers/ba-p/1533440).
 
 ## <a name="related-topics"></a>İlgili konular
 
 - [Portala MSSP erişimi ver](grant-mssp-access.md)
-- [MSSP müşteri portalına erişme](access-mssp-portal.md)
-- [Uyarı bildirimlerini yapılandırma](configure-mssp-notifications.md)
-- [Müşteri kiracısı uyarılarını getirme](fetch-alerts-mssp.md)
+- [MSSP müşteri portalına erişin](access-mssp-portal.md)
+- [Uyarı bildirimlerini yapılandırın](configure-mssp-notifications.md)
+- [Müşteri kiracı uyarılarını getir](fetch-alerts-mssp.md)

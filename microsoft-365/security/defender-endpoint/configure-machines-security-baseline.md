@@ -1,8 +1,8 @@
 ---
-title: Temel güvenlik Uç Nokta için Microsoft Defender uyumluluğu artırma
-description: Temel Uç Nokta için Microsoft Defender, en iyi korumayı sağlamak için güvenlik denetimlerini ayarlar.
+title: Uç Nokta için Microsoft Defender güvenlik temeline uyumluluğu artırma
+description: Uç Nokta için Microsoft Defender güvenlik temeli, güvenlik denetimlerini en iyi korumayı sağlayacak şekilde ayarlar.
 keywords: Intune yönetimi, Uç Nokta için Microsoft Defender, Microsoft Defender, Uç Nokta için Microsoft Defender ASR, güvenlik temeli
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,102 +13,102 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 1980567c93364f35923a9a7f2433733e05878e61
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: 462a3df8ca9bdff5e769e2d15d58bab4d36b5e7c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467983"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680229"
 ---
-# <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Temel güvenlik Uç Nokta için Microsoft Defender uyumluluğu artırma
+# <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Uç Nokta için Microsoft Defender güvenlik temeline uyumluluğu artırma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Güvenlik taban çizgisi, güvenlik özelliklerinin hem güvenlik uzmanlarının hem de uzman ve sistem yöneticilerinin kılavuzlarına Windows emin olur. Dağıtıldığında, en iyi korumayı sağlamak için Uç nokta güvenlik temeli için Defender, Uç nokta güvenlik denetimleri için Defender'ı ayarlar.
+Güvenlik temelleri, güvenlik özelliklerinin hem güvenlik uzmanlarının hem de uzman Windows sistem yöneticilerinin yönergelerine göre yapılandırılmasını sağlar. Dağıtıldığında, Uç Nokta için Defender güvenlik temeli, en iyi korumayı sağlamak için Uç Nokta için Defender güvenlik denetimlerini ayarlar.
 
-Güvenlik taban çizgilerini ve bunların yapılandırma profillerini kullanarak nasıl Intune için bu SSS [bölümünü okuyun](/intune/security-baselines#q--a).
+Güvenlik temellerini ve yapılandırma profillerini kullanarak Intune nasıl atandıklarını anlamak için [bu SSS bölümünü okuyun](/intune/security-baselines#q--a).
 
-Güvenlik taban çizgilerine uyumluluğu dağıtmadan ve izlemeden önce:
+Güvenlik temellerine uyumluluk dağıtmadan ve izlemeden önce:
 
-- [Cihazlarınızı okul yönetimine Intune kaydetme](configure-machines.md#enroll-devices-to-intune-management)
-- [Gerekli izinlere sahip olduğundan emin olun](configure-machines.md#obtain-required-permissions)
+- [Cihazlarınızı Intune yönetimine kaydetme](configure-machines.md#enroll-devices-to-intune-management)
+- [Gerekli izinlere sahip olduğunuzdan emin olun](configure-machines.md#obtain-required-permissions)
 
-## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Güvenlik Uç Nokta için Microsoft Defender temelleri Windows Intune karşılaştırma
+## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Uç Nokta için Microsoft Defender ve Windows Intune güvenlik temellerini karşılaştırma
 
-Windows Intune güvenlik temeli, tarayıcı ayarları, PowerShell ayarları ve Microsoft Defender Virüsten Koruma gibi bazı güvenlik özellikleri için ayarlar da dahil olmak üzere, Windows çalıştıran cihazları güvenli bir şekilde yapılandırmak için gereken kapsamlı bir önerilen ayarlar Microsoft Defender Virüsten Koruma. Buna karşılık, Uç nokta için Defender taban çizgisi, uç noktada algılama ve yanıtlama (EDR) ayarları ile aynı zamanda Windows Intune güvenlik temeli içinde bulunan ayarlar da dahil olmak üzere Uç nokta için Defender yığınında tüm güvenlik denetimlerini en iyi duruma Windows Intune ayarlar sağlar. Her taban çizgisi hakkında daha fazla bilgi için bkz:
+Windows Intune güvenlik temeli, Tarayıcı ayarları, PowerShell ayarları ve Microsoft Defender Virüsten Koruma gibi bazı güvenlik özellikleri için ayarlar da dahil olmak üzere Windows çalıştıran cihazları güvenli bir şekilde yapılandırmak için gereken kapsamlı bir dizi önerilen ayar sağlar. Buna karşılık, Uç Nokta için Defender temeli uç nokta algılama ve yanıt (EDR) ayarlarının yanı sıra Windows Intune güvenlik temelinde bulunan ayarlar da dahil olmak üzere Uç Nokta için Defender yığınındaki tüm güvenlik denetimlerini iyileştirici ayarlar sağlar. Her temel hakkında daha fazla bilgi için bkz:
 
-- [Windows için güvenlik temeli ayarlarını Intune](/intune/security-baseline-settings-windows)
-- [Uç Nokta için Microsoft Defender için temel Intune](/intune/security-baseline-settings-defender-atp)
+- [Intune için Windows güvenlik temeli ayarları](/intune/security-baseline-settings-windows)
+- [Intune için temel ayarları Uç Nokta için Microsoft Defender](/intune/security-baseline-settings-defender-atp)
 
-İdeal olarak, Uç nokta için Defender'a ekli cihazlar, başlangıçta Windows'in güvenliğini sağlamak için Windows Intune güvenlik temeli ve uç nokta güvenlik denetimleri için Defender'ı en iyi şekilde yapılandırmak üzere en üstteki uç nokta güvenlik temeli için Defender.) dağıtılır. Riskler ve tehditlerle ilgili en son verilerden faydalanmek ve taban çizgisi geliştikçe çakışmaları en aza indirmek için, piyasaya çıktıları yayımlanan tüm ürünlerde taban çizgilerinin en son sürümlerini her zaman kullanın.
+İdeal olarak, Uç Nokta için Defender'a eklenen cihazlar her iki taban çizgisine de dağıtılır: Başlangıçta Windows'un güvenliğini sağlamak için Windows Intune güvenlik temeli ve ardından Uç Nokta için Defender güvenlik denetimlerini en iyi şekilde yapılandırmak için üst katmanda yer alan Uç Nokta için Defender güvenlik temeli. Riskler ve tehditlerle ilgili en son verilerden yararlanmak ve temeller geliştikçe çakışmaları en aza indirmek için, kullanıma sunuldukları anda her zaman temellerin en son sürümlerini tüm ürünlere uygulayın.
 
 > [!NOTE]
-> Uç nokta güvenlik temeli için Defender fiziksel cihazlar için iyileştirilmiştir ve şu anda sanal makine (VMs) veya VDI uç noktalarında kullanmak için önerilmez. Bazı taban çizgisi ayarları, sanallaştırılmış ortamlardaki uzak etkileşimli oturumları etkileyenin.
+> Uç Nokta için Defender güvenlik temeli fiziksel cihazlar için iyileştirilmiştir ve şu anda sanal makine (VM) veya VDI uç noktaları üzerinde kullanılması önerilmez. Bazı temel ayarlar, sanallaştırılmış ortamlardaki uzak etkileşimli oturumları etkileyebilir.
 
-## <a name="monitor-compliance-to-the-defender-for-endpoint-security-baseline"></a>Uç nokta güvenlik temeli için Defender'a uyumluluğu izleme
+## <a name="monitor-compliance-to-the-defender-for-endpoint-security-baseline"></a>Uç Nokta için Defender güvenlik temeline uyumluluğu izleme
 
-Cihaz **yapılandırma yönetimine** [ilişkin güvenlik](configure-machines.md) taban çizgisi kartı, uç nokta güvenlik Windows 10 Için Defender Windows 11 atanmış cihazlar genelinde uyumlulukla ilgili genel bir bakış sağlar.
+[Cihaz yapılandırma yönetimindeki](configure-machines.md) **Güvenlik temeli** kartı, Uç Nokta için Defender güvenlik temeli atanmış Windows 10 ve Windows 11 cihazlarda uyumlulukla ilgili genel bir bakış sağlar.
 
-:::image type="content" source="images/secconmgmt_baseline_card.png" alt-text="Güvenlik taban çizgisi kartı" lightbox="images/secconmgmt_baseline_card.png":::
+:::image type="content" source="images/secconmgmt_baseline_card.png" alt-text="Güvenlik temel kartı" lightbox="images/secconmgmt_baseline_card.png":::
 
-*Uç nokta güvenlik temeli için Defender'a uyumluluğu gösteren kart*
+*Uç Nokta için Defender güvenlik temeline uyumluluğu gösteren kart*
 
 Her cihaza aşağıdaki durum türlerinden biri verilir:
 
-- **Taban çizgisiyle** eşler: Cihaz ayarları, taban çizgisinin tüm ayarlarıyla eşler.
-- **Taban çizgisi eşleşmez**: En az bir cihaz ayarı taban çizgisiyle eş değildir.
-- **Yanlış Yapılandırılmış: En** az bir temel ayarı cihazda düzgün yapılandırılmamış ve çakışma, hata veya bekleme durumuna göredir.
-- **Uygulanamaz**: Cihazda en az bir taban çizgisi ayarı geçerli değildir.
+- **Taban çizgisiyle eşleşir**: Cihaz ayarları temeldeki tüm ayarlarla eşleşir.
+- **Taban çizgisiyle eşleşmiyor**: En az bir cihaz ayarı taban çizgisiyle eşleşmiyor.
+- **Yanlış yapılandırılmış**: Cihazda en az bir temel ayar düzgün yapılandırılmamış ve çakışma, hata veya bekleme durumunda.
+- **Uygulanamaz**: Cihazda en az bir temel ayar geçerli değildir.
 
-Belirli cihazları gözden geçirmek için kart **üzerinde Güvenlik temeli yapılandır'ı** seçin. Bu sizi cihaz yönetimine Intune alır. Buradan, cihazların **adları ve** durumları için Cihaz durumu'seçin.
+Belirli cihazları gözden geçirmek için kartta **Güvenlik temelini yapılandır'ı** seçin. Bu sizi Intune cihaz yönetimine götürür. Buradan, cihazların adları ve **durumları için Cihaz durumu'nu** seçin.
 
 > [!NOTE]
-> Cihaz yapılandırma yönetimi sayfasında görüntülenen toplanan verilerde ve cihaz yapılandırma yönetim sayfasında genel bakış ekranlarında görüntülenen verilerde farklılıklar Intune.
+> Cihaz yapılandırma yönetimi sayfasında ve Intune genel bakış ekranlarında görüntülenen toplu verilerde tutarsızlıklarla karşılaşabilirsiniz.
 
-## <a name="review-and-assign-the-microsoft-defender-for-endpoint-security-baseline"></a>Temel güvenlik Uç Nokta için Microsoft Defender gözden geçirme ve atama
+## <a name="review-and-assign-the-microsoft-defender-for-endpoint-security-baseline"></a>Uç Nokta için Microsoft Defender güvenlik temelini gözden geçirin ve atayın
 
-Cihaz yapılandırma yönetimi, yalnızca güvenlik Windows 10 temel Windows 11 atanmış olan tüm cihaz ve cihaz Uç Nokta için Microsoft Defender izler. Temeli rahatça gözden geçirebilirsiniz ve uygun bir şekilde cihaz yönetimiyle Intune atabilirsiniz.
+Cihaz yapılandırma yönetimi yalnızca özel olarak Uç Nokta için Microsoft Defender güvenlik temeli atanmış Windows 10 ve Windows 11 cihazların temel uyumluluğunu izler. Temeli rahatça gözden geçirebilir ve Intune cihaz yönetimindeki cihazlara atayabilirsiniz.
 
-1. Cihaz **yönetimiyle ilgili daha** fazla **bilgi için Güvenlik temeli** kartında Güvenlik temeli Intune seçin. Temel uyumluluğuna benzer bir genel bakış görüntülenir.
+1. Intune cihaz yönetimine gitmek için **Güvenlik temeli kartında Güvenlik temelini** **yapılandır'ı** seçin. Taban çizgisi uyumluluğuna benzer bir genel bakış görüntülenir.
 
    > [!TIP]
-   > Alternatif olarak, Tüm hizmetler ve Cihaz güvenliği > Microsoft Defender ATP temeli için, Microsoft Azure portalında Uç nokta güvenlik temeli için Defender> Intune > Uç nokta **güvenlik > > Defender'a gidin**.
+   > Alternatif olarak, Microsoft Defender ATP temeli > **Tüm hizmetler > Intune > Cihaz güvenliği > Güvenlik temelleri'nden Microsoft Azure portal Uç Nokta için Defender güvenlik temeline** gidebilirsiniz.
 
-2. Yeni profil oluşturma.
+2. Yeni bir profil oluşturun.
 
-   :::image type="content" source="images/secconmgmt_baseline_intuneprofile1.png" alt-text="Web siteniz için güvenlik Uç Nokta için Microsoft Defender temele genel bakış altında Profil Intune" lightbox="images/secconmgmt_baseline_intuneprofile1.png":::<br>
-   *Uç Nokta için Microsoft Defender temele genel bakış Intune*
+   :::image type="content" source="images/secconmgmt_baseline_intuneprofile1.png" alt-text="Intune'daki Uç Nokta için Microsoft Defender güvenlik temeli genel bakış sayfasındaki Profil oluştur sekmesi" lightbox="images/secconmgmt_baseline_intuneprofile1.png":::<br>
+   *Intune güvenlik temeli Uç Nokta için Microsoft Defender genel bakış*
 
-3. Profil oluşturma sırasında, temel üzerinde belirli ayarları gözden geçirebilirsiniz ve ayarlayabilirsiniz.
+3. Profil oluşturma sırasında, temeldeki belirli ayarları gözden geçirebilir ve ayarlayabilirsiniz.
 
-   :::image type="content" source="images/secconmgmt_baseline_intuneprofile2.png" alt-text="Temel çalışma sırasında profil oluşturma sırasında güvenlik temeli Intune" lightbox="images/secconmgmt_baseline_intuneprofile2.png":::<br>
-   *E-Intune'de profil oluşturma sırasında güvenlik temeli Intune*
+   :::image type="content" source="images/secconmgmt_baseline_intuneprofile2.png" alt-text="Intune profil oluşturma sırasında güvenlik temeli seçenekleri" lightbox="images/secconmgmt_baseline_intuneprofile2.png":::<br>
+   *Intune profil oluşturma sırasında güvenlik temeli seçenekleri*
 
-4. Profili uygun cihaz grubuna attayabilirsiniz.
+4. Profili uygun cihaz grubuna atayın.
 
-   :::image type="content" source="images/secconmgmt_baseline_intuneprofile3.png" alt-text="Temel güvenlik taban çizgisi Intune" lightbox="images/secconmgmt_baseline_intuneprofile3.png":::<br>
-   *Temel çalışma alanına güvenlik temeli profili Intune*
+   :::image type="content" source="images/secconmgmt_baseline_intuneprofile3.png" alt-text="Intune'de Güvenlik temel profilleri" lightbox="images/secconmgmt_baseline_intuneprofile3.png":::<br>
+   *Intune güvenlik temeli profilini atama*
 
-5. Profili oluşturmak için kaydedin ve atanan cihaz grubuna dağıtın.
+5. Profili oluşturarak kaydedin ve atanan cihaz grubuna dağıtın.
 
-   :::image type="content" source="images/secconmgmt_baseline_intuneprofile4.png" alt-text="Temel güvenlik temeli atama Intune" lightbox="images/secconmgmt_baseline_intuneprofile4.png":::<br>
-   *Temel veride güvenlik temeli profili Intune*
+   :::image type="content" source="images/secconmgmt_baseline_intuneprofile4.png" alt-text="Intune güvenlik temeli atama" lightbox="images/secconmgmt_baseline_intuneprofile4.png":::<br>
+   *Intune'de güvenlik temeli profili oluşturma*
 
 > [!TIP]
-> Temel güvenlik Intune cihazlarınızı kapsamlı olarak korumak ve korumak için kullanışlı bir yol sağlar. [Temel güvenlik taban çizgisi hakkında daha fazla bilgi Intune](/intune/security-baselines).
+> Intune üzerindeki güvenlik temelleri, cihazlarınızı kapsamlı bir şekilde güvenli hale getirmek ve korumak için kullanışlı bir yol sağlar. [Intune güvenlik temelleri hakkında daha fazla bilgi edinin](/intune/security-baselines).
 
-> Bu deneyimi Uç Nokta için Microsoft Defender? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>İlgili konular
 
 - [Cihazlarınızı doğru yapılandırıldığından emin olun](configure-machines.md)
-- [Cihaz ekleme ve Uç Nokta için Microsoft Defender](configure-machines-onboarding.md)
-- [ASR kuralı dağıtımını ve algılamalarını en iyi duruma getirme](configure-machines-asr.md)
+- [cihazları Uç Nokta için Microsoft Defender ekleme](configure-machines-onboarding.md)
+- [ASR kuralı dağıtım ve algılamalarını iyileştirme](configure-machines-asr.md)

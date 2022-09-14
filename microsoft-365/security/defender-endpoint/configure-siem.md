@@ -3,7 +3,7 @@ title: SIEM araçlarınızı Uç Nokta için Microsoft Defender ile tümleştirm
 description: Olayları ve uyarıları almayı ve SIEM araçlarını tümleştirmeyi öğrenin.
 keywords: siem, güvenlik bilgileri ve olay yönetimi araçlarını yapılandırma, splunk, arcsight, özel göstergeler, rest API, uyarı tanımları, risk göstergeleri
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 3bdb35b4251725dc4b2e69fc077d0edf29693cef
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.subservice: mde
+ms.openlocfilehash: b00a9f02f4cd370985dfa5c094c6be36aa34ab1e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020593"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679525"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>SIEM araçlarınızı Uç Nokta için Microsoft Defender ile tümleştirme
 

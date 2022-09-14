@@ -2,7 +2,7 @@
 title: Android’de Uç Nokta için Defender’ı Microsoft Intune ile dağıtın
 description: Microsoft Intune ile Android'de Uç Nokta için Microsoft Defender dağıtmayı açıklar
 keywords: microsoft, defender, Uç Nokta için Microsoft Defender, mde, android, installation, deploy, uninstallation,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 9c00ea16bddb7aa9094b41b30692493b530acbb3
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.subservice: mde
+ms.openlocfilehash: eda60083ff28188022ab0713ac4ec9d9fedcae44
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823174"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679097"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Android’de Uç Nokta için Defender’ı Microsoft Intune ile dağıtın
 
@@ -31,7 +31,7 @@ ms.locfileid: "66823174"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Microsoft Defender mı yaşamak istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Kayıtlı Intune Şirket Portalı cihazlarda Android'de Uç Nokta için Defender'ı dağıtmayı öğrenin. Intune cihaz kaydı hakkında daha fazla bilgi için bkz. [Cihazınızı kaydetme](/mem/intune/user-help/enroll-device-android-company-portal).
 

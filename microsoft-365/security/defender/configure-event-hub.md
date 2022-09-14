@@ -4,7 +4,8 @@ description: Event Hubs'ınızı yapılandırmayı öğrenin
 keywords: olay hub'ı, yapılandırma, içgörüler
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,13 +19,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-MS.technology: m365d
-ms.openlocfilehash: 7121dcd1bc904188ce3c0356325a611bc0919877
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 1af62c9618b3212d15d7d81af2c8297505851721
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67329123"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679701"
 ---
 # <a name="configure-your-event-hubs"></a>Event Hubs'ınızı yapılandırma
 

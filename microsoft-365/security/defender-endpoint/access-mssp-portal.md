@@ -1,8 +1,8 @@
 ---
-title: MSSP Microsoft 365 Defender portalına erişme
-description: MSSP Microsoft 365 Defender portalına erişme
+title: Microsoft 365 Defender MSSP müşteri portalına erişme
+description: Microsoft 365 Defender MSSP müşteri portalına erişme
 keywords: yönetilen güvenlik hizmeti sağlayıcısı, mssp, yapılandırma, tümleştirme
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,47 +13,47 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: b1c133048e6600d553f0530e135ebfc2c441dd84
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.subservice: mde
+ms.openlocfilehash: d404e89e3891b7a6325323e2fcc953e4968657d5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323675"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679476"
 ---
-# <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>MSSP Microsoft 365 Defender portalına erişme
+# <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>Microsoft 365 Defender MSSP müşteri portalına erişme
 
-**Aşağıdakiler için geçerlidir:**
-- [ Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [ Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-> Uç Nokta için Microsoft Defender'ı mı deneyimliysiniz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
+> Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 > [!NOTE]
-> Bu adım kümesi MSSP'ye yöneliktir.
+> Bu adım kümesi MSSP'ye yönlendirilir.
 
-Varsayılan olarak, MSSP müşterileri aşağıdaki URL Microsoft 365 Defender kiracılarına erişim sağlar: `https://security.microsoft.com/`.
+Varsayılan olarak, MSSP müşterileri Microsoft 365 Defender kiracılarına şu URL aracılığıyla erişmektedir: `https://security.microsoft.com/`.
 
-Ancak MSSP'lerin kiracıya özgü URL'leri aşağıdaki biçimde kullanmaları gerekir:  `https://security.microsoft.com?tid=customer_tenant_id` MSSP müşteri portalına erişmek için.
+Ancak MSSP'lerin kiracıya özgü bir URL'yi şu biçimde kullanması gerekir:  `https://security.microsoft.com?tid=customer_tenant_id` MSSP müşteri portalına erişmek için.
 
-Genel olarak, MSSP'ler yönetmeyi amaçlasa da, MSSP müşterilerinin Azure AD'sinde yer alan her bir kullanıcıya eklenmiştir.
+Genel olarak, MSSP müşterisinin yönetmeyi amaçladıkları Azure AD her birine MSSP'lerin eklenmesi gerekir.
 
-MSSP müşteri kiracı kimliğini almak için aşağıdaki adımları izleyin ve sonra da kimliği kullanarak kiracıya özgü URL'ye erişin:
+MSSP müşteri kiracı kimliğini almak için aşağıdaki adımları kullanın ve kiracıya özgü URL'ye erişmek için kimliği kullanın:
 
-1. MSSP olarak, kimlik bilgilerinizle Azure AD'de oturum açma.
+1. MSSP olarak kimlik bilgilerinizle Azure AD oturum açın.
 
-2. Dizinden MSSP müşterisi kiracısına geçiş.
+2. Dizini MSSP müşterisinin kiracısına geçirin.
 
-3. **Özellikler'Azure Active Directory > seçin**. Kiracı kimliğini Dizin Kimliği alanında bulabilirsiniz.
+3. **Azure Active Directory > Özellikleri'ni** seçin. Kiracı kimliğini Dizin Kimliği alanında bulabilirsiniz.
 
-4. MSSP müşteri portalına, değeri aşağıdaki `customer_tenant_id` URL'de değiştirerek erişin: `https://security.microsoft.com/?tid=customer_tenant_id`.
+4. Aşağıdaki URL'deki değeri değiştirerek MSSP müşteri portalına `customer_tenant_id` erişin: `https://security.microsoft.com/?tid=customer_tenant_id`.
 
 ## <a name="related-topics"></a>İlgili konular
 
 - [Portala MSSP erişimi ver](grant-mssp-access.md)
-- [Uyarı bildirimlerini yapılandırma](configure-mssp-notifications.md)
-- [Müşteri kiracısı uyarılarını getirme](fetch-alerts-mssp.md)
+- [Uyarı bildirimlerini yapılandırın](configure-mssp-notifications.md)
+- [Müşteri kiracı uyarılarını getir](fetch-alerts-mssp.md)

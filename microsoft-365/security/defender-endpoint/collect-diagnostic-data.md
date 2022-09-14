@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus'ün tanılama verilerini toplayın
 description: Microsoft Defender Virüsten Koruma sorunlarını gidermek için veri toplamak için bir araç kullanma
 keywords: sorun giderme, hata, düzeltme, uyumluluk güncelleştirme, oms, izleme, rapor, Microsoft Defender av, grup ilkesi nesnesi, ayar, tanılama verileri, Microsoft Defender Virüsten Koruma
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ ms.custom: nextgen
 ms.date: 06/29/2020
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 017f4304b1d049a202da460cbf2f31a4fa8f955b
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 02225524e2b0c38e652fa2567564b086e412a2e8
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388001"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679481"
 ---
 # <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>Microsoft Defender Virüsten Koruma tanılama verilerini toplama
 

@@ -1,5 +1,5 @@
 ---
-title: E Exchange Online, e-posta sırlarınızı nasıl güvence altına alır?
+title: Exchange Online, e-posta sırlarınızı nasıl güvence altına alır?
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,40 +15,40 @@ search.appverid:
 ms.assetid: 989ba10c-f73f-4efb-ad1b-af3322e5f376
 ms.collection:
 - M365-security-compliance
-description: Microsoft'Office 365 Güvenlik, Gizlilik ve Uyumluluk Bilgileri sağlayan Microsoft 365 Güven Merkezi'ne ek olarak, Microsoft'un veri merkezlerinde depola verilerinizin korunmasına nasıl yardımcı olduğunu da bilmek istiyor olabilirsiniz. Dağıtılmış Anahtar Yöneticisi (DKM) adlı bir teknoloji kullanıyoruz.
+description: Microsoft 365 için Güvenlik, Gizlilik ve Uyumluluk Bilgileri sağlayan Office 365 Güven Merkezi'ne ek olarak, Microsoft'un veri merkezlerinde depoladığınız gizli dizileri korumaya nasıl yardımcı olduğunu bilmek isteyebilirsiniz. Dağıtılmış Anahtar Yöneticisi (DKM) adlı bir teknoloji kullanıyoruz.
 ms.openlocfilehash: a1d939ebfc1ecba1e7cb8b97111f677f754894b1
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63019490"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67679053"
 ---
-# <a name="how-exchange-online-secures-your-email-secrets"></a>E Exchange Online, e-posta sırlarınızı nasıl güvence altına alır?
+# <a name="how-exchange-online-secures-your-email-secrets"></a>Exchange Online, e-posta sırlarınızı nasıl güvence altına alır?
 
-Bu makalede, Microsoft'un e-posta sırlarınızı veri merkezlerinde nasıl güvenli hale geldiği açıklanır.
+Bu makalede, Microsoft'un veri merkezlerindeki e-posta gizli dizilerinizi nasıl güvenli bir şekilde sakladığı açıklanmaktadır.
   
-## <a name="how-do-we-secure-secret-information-provided-by-you"></a>Sizin sağladığımız gizli bilgileri nasıl güvence altına alarız?
+## <a name="how-do-we-secure-secret-information-provided-by-you"></a>Sizin sağladığınız gizli bilgileri nasıl güvence altına alıyacağız?
 
-Microsoft'un Office 365 [Office 365](./get-started-with-service-trust-portal.md), Gizlilik ve Uyumluluk Bilgilerini sağlayan Office 365 Güven Merkezi'ne ek olarak, Microsoft'un veri merkezlerinde sağladığınız sırları korumaya nasıl yardımcı olduğunu da bilmek istiyor olabilirsiniz. Dağıtılmış Anahtar Yöneticisi (DKM) adlı bir teknoloji kullanıyoruz.
+Office 365 [için Güvenlik, Gizlilik ve Uyumluluk Bilgileri sağlayan Office 365](./get-started-with-service-trust-portal.md) Güven Merkezi'ne ek olarak, Microsoft'un veri merkezlerinde sağladığınız gizli dizilerin korunmasına nasıl yardımcı olduğunu bilmek isteyebilirsiniz. Dağıtılmış Anahtar Yöneticisi (DKM) adlı bir teknoloji kullanıyoruz.
   
-[Dağıtılmış Anahtar Yöneticisi](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) (DKM), bilgileri şifrelemek ve şifrelerini çözmek için bir dizi gizli anahtar kullanan istemci tarafı işlevleridir. DKM ile şifrelenen verilerin şifresini çözmek için yalnızca Active Directory Etki Alanı Hizmetleri'nin belirli bir güvenlik grubunun üyeleri bu anahtarlara erişim sağlar. Başka Exchange Online, bu güvenlik grubunun yalnızca Exchange işlemlerinin çalıştır olduğu belirli hizmet hesapları vardır. Veri merkezinde standart işletim yordamı kapsamında, bu güvenlik grubunun bir parçası olan hiçbir insana kimlik bilgisi verilmiştir ve dolayısıyla hiçbir insan bu sırların şifresini çözebilecek anahtarlara erişemmektedir.
+[Dağıtılmış Anahtar Yöneticisi](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) (DKM), bilgileri şifrelemek ve şifresini çözmek için bir dizi gizli anahtar kullanan bir istemci tarafı işlevidir. DKM tarafından şifrelenen verilerin şifresini çözmek için yalnızca Active Directory Domain Services'daki belirli bir güvenlik grubunun üyeleri bu anahtarlara erişebilir. Exchange Online yalnızca Exchange işlemlerinin çalıştırıldığı belirli hizmet hesapları bu güvenlik grubunun bir parçasıdır. Veri merkezinde standart çalışma yordamının bir parçası olarak, hiçbir insana bu güvenlik grubunun parçası olan kimlik bilgileri verilmez ve bu nedenle hiçbir insan bu gizli dizilerin şifresini çözebilecek anahtarlara erişemez.
   
-Hata ayıklama, sorun giderme veya denetim amaçlarına yönelik olarak, veri merkezi yöneticisinin güvenlik grubunun parçası olan geçici kimlik bilgileri elde etmek için yükseltilmiş erişim isteğinde  olması gerekir. Bu işlem için birden çok yasal onay düzeyi gerekir. Erişim verildiyse, tüm etkinlikler günlüğe kaydedilir ve denetlener. Buna ek olarak, yalnızca süresi otomatik olarak dolacak olan, daha sonra süresi dolana kadar erişim de verilir.
+Hata ayıklama, sorun giderme veya denetim amacıyla, bir veri merkezi yöneticisinin güvenlik grubunun parçası olan geçici kimlik bilgilerini kazanmak için yükseltilmiş erişim istemesi gerekir. Bu işlem için birden fazla yasal onay düzeyi gerekir. Erişim verilirse tüm etkinlikler günlüğe kaydedilir ve denetlener. Ayrıca erişim yalnızca otomatik olarak sona erdiği belirli bir süre için verilir.
   
-Ek koruma için DKM teknolojisi otomatik anahtar dağıtım ve arşivleme içerir. Bu ayrıca, aynı anahtarı süresiz olarak güvenmek zorunda kalmadan eski içeriğinize erişmeye devamnızı sağlar.
+Ek koruma için DKM teknolojisi otomatik anahtar geçişi ve arşivleme içerir. Bu ayrıca aynı anahtara süresiz olarak güvenmek zorunda kalmadan eski içeriğinize erişmeye devam edebilirsiniz.
   
-## <a name="where-does-exchange-online-make-use-of-dkm"></a>DKM'Exchange Online nereden kullanabilirim?
+## <a name="where-does-exchange-online-make-use-of-dkm"></a>Exchange Online DKM'Exchange Online nereden yararlanır?
 
-Microsoft, [dağıtılmış Anahtar Yöneticisi'ni](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) kullanarak gizli Exchange Online kullanır. Örneğin:
+Microsoft, Exchange Online veri merkezlerinde gizli dizilerinizi şifrelemek için [Dağıtılmış Anahtar Yöneticisi'ni](office-365-bitlocker-and-distributed-key-manager-for-encryption.md) kullanır. Örneğin:
   
-- Bağlı hesaplar için e-posta hesabı kimlik bilgileri. Bağlı hesaplar Hotmail, Gmail ve Yahoo! e-posta hesaplarıyla oturum açın.
+- Bağlı hesaplar için hesap kimlik bilgilerini Email. Bağlı hesaplar Hotmail, Gmail ve Yahoo! gibi üçüncü taraf hesaplardır posta hesapları.
 
-- Müşteri anahtarı. Müşteri Anahtarı ile [Hizmet şifrelemesi kullanıyorsanız](customer-key-overview.md), sırlarınızı korumak için [Azure Anahtar Kasasını](/azure/key-vault/key-vault-whatis) kullanırsanız.
+- Müşteri anahtarı. [Müşteri Anahtarı ile Hizmet şifrelemesi](customer-key-overview.md) kullanıyorsanız, gizli dizilerinizi korumak için [Azure Key Vault](/azure/key-vault/key-vault-whatis) kullanırsınız.
 
 ## <a name="related-topics"></a>İlgili konular
 
-[Şifreleme Office 365](encryption.md)
+[Office 365'de şifreleme](encryption.md)
   
 [Şifreleme hakkında teknik başvuru ayrıntıları](technical-reference-details-about-encryption.md)
   
-[Güvenlik Uyumluluk Merkezi'nde &amp; Hizmet güvencesi](./service-assurance.md)
+[Güvenlik &amp; Uyumluluk Merkezi'nde hizmet güvencesi](./service-assurance.md)

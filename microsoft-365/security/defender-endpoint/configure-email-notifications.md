@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender'de uyarı bildirimlerini yapılandırma
 description: Güvenlik uyarıları için önem derecesine ve diğer ölçütlere göre e-posta bildirim ayarlarını yapılandırmak için Uç Nokta için Microsoft Defender kullanabilirsiniz.
 keywords: e-posta bildirimleri, uyarı bildirimlerini yapılandırma, Uç Nokta için Microsoft Defender, Uç Nokta için Microsoft Defender bildirimleri, Uç Nokta için Microsoft Defender uyarıları, Windows Enterprise, Windows Education
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: fde5ce238a44b6722770338378ae33c54a38a450
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.subservice: mde
+ms.openlocfilehash: 9325fa56232428b1c923817631826202155bc6f1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587500"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679789"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de uyarı bildirimlerini yapılandırma
 
@@ -49,7 +49,7 @@ E-posta bildirimi uyarı hakkında temel bilgileri ve daha fazla araştırma yap
 ## <a name="create-rules-for-alert-notifications"></a>Uyarı bildirimleri için kurallar oluşturma
 Ve bildirim alıcıları için e-posta bildirimleri göndermek için cihazları ve uyarı önem derecelerini belirleyen kurallar oluşturabilirsiniz.
 
-1. Gezinti bölmesinde **Uç Noktalar** \> **Genel** \> **E-posta** **bildirimleri'ni Ayarlar** \> seçin.
+1. Gezinti bölmesinde **Ayarlar** \> **Uç Noktaları** \> **Genel** \> **Email bildirimleri'ni** seçin.
 
 2. **Öğe ekle'ye** tıklayın.
 
@@ -95,7 +95,7 @@ Bu bölümde, uyarılar için e-posta bildirimlerini kullanırken karşılaşabi
 
 **Çözüm:** Bildirimlerin e-posta filtreleri tarafından engellenmediğinden emin olun:
 
-1. Uç Nokta için Defender e-posta bildirimlerinin Gereksiz E-posta klasörüne gönderilmediğinden emin olun. Bunları Gereksiz değil olarak işaretleyin.
+1. Uç Nokta için Defender e-posta bildirimlerinin Gereksiz Email klasörüne gönderilmediğinden emin olun. Bunları Gereksiz değil olarak işaretleyin.
 2. E-posta güvenlik ürününüzün Uç Nokta için Defender'dan gelen e-posta bildirimlerini engellemediğinden emin olun.
 3. Uç Nokta için Defender e-posta bildirimlerinizi yakalayıp taşıyabilecek e-posta uygulama kurallarınızı denetleyin.
 

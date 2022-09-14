@@ -1,10 +1,10 @@
 ---
-title: Virüsten koruma çözümü ile Uç Nokta için Defender uyumluluğu
-description: Uç nokta için Microsoft Defender Windows Defender nasıl çalıştığını öğrenin. Ayrıca, üçüncü taraf kötü amaçlı yazılımdan koruma istemcisi kullanılırken Uç Nokta için Defender'ın nasıl çalıştığını da öğrenin.
-keywords: windows Defender uyumluluğu, Defender, Uç Nokta için Microsoft Defender, uç nokta için Defender, virüsten koruma, mde
+title: Uç Nokta için Defender ile virüsten koruma çözümü uyumluluğu
+description: Uç Nokta için Microsoft Defender ile Windows Defender nasıl çalıştığı hakkında bilgi edinin. Ayrıca bir üçüncü taraf kötü amaçlı yazılımdan koruma istemcisi kullanıldığında Uç Nokta için Defender'ın nasıl çalıştığını da öğrenin.
+keywords: windows defender uyumluluğu, defender, Uç Nokta için Microsoft Defender, uç nokta için defender, virüsten koruma, mde
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,36 +16,36 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/06/2021
-ms.technology: mde
-ms.openlocfilehash: a8384ed28e8c65871f61241dc522461390106be0
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.subservice: mde
+ms.openlocfilehash: 2fcab2ab95623b8d2a7d551b697765bc317d2e42
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "62998072"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679811"
 ---
-# <a name="antivirus-solution-compatibility-with-microsoft-defender-for-endpoint"></a>Uç nokta için Microsoft Defender ile virüsten koruma çözümü uyumluluğu
+# <a name="antivirus-solution-compatibility-with-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender ile virüsten koruma çözümü uyumluluğu
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
-- [Uç Nokta Planı 1 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**Şunlar için geçerlidir:**
+- [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-defendercompat-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-defendercompat-abovefoldlink)
 
-Uç nokta aracısı için Microsoft Defender Microsoft Defender Virüsten Koruma tarama gibi bazı özelliklere bağlı olarak değişir.
+Uç Nokta için Microsoft Defender aracısı, dosya tarama gibi bazı özellikler için Microsoft Defender Virüsten Koruma'ya bağlıdır.
 
 > [!IMPORTANT]
-> Uç Nokta için Defender Microsoft Defender Virüsten Koruma Dışlamalar ayarlarına uymaz.
+> Uç Nokta için Defender, Microsoft Defender Virüsten Koruma Dışlamaları ayarlarına bağlı değildir.
 
-Etkin kötü amaçlı yazılımdan koruma olsa da, Uç nokta cihazları için Defender Microsoft Defender Virüsten Koruma Güvenlik zekası güncelleştirmelerini yapılandırmanız gerekir. Daha fazla bilgi için bkz[. Güncelleştirmeleri Microsoft Defender Virüsten Koruma ve taban çizgilerini uygulama](manage-updates-baselines-microsoft-defender-antivirus.md).
+Microsoft Defender Virüsten Koruma etkin kötü amaçlı yazılımdan koruma olsun veya olmasın Uç Nokta için Defender cihazlarında Güvenlik bilgileri güncelleştirmelerini yapılandırmanız gerekir. Daha fazla bilgi için bkz [. Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-Yerleşik bir cihaz üçüncü taraf kötü amaçlı yazılımdan koruma istemcisi tarafından korunuyorsa, Microsoft Defender Virüsten Koruma böyle bir uç noktada pasif moduna girer.
+Eklenen bir cihaz üçüncü taraf kötü amaçlı yazılımdan koruma istemcisi tarafından korunuyorsa, söz konusu uç noktadaki Microsoft Defender Virüsten Koruma pasif moda girer.
 
-Microsoft Defender Virüsten Koruma almaya devam edecektir ve *mspeng.exe* işlemi çalışan bir hizmet olarak listelenir. Ancak, taramalar gerçekleştirmez ve çalışan üçüncü taraf kötü amaçlı yazılımdan koruma istemcisini değiştirmez.
+Microsoft Defender Virüsten Koruma güncelleştirmeleri almaya devam eder ve *mspeng.exe* işlemi çalışan bir hizmet olarak listelenir. Ancak tarama gerçekleştirmez ve çalışan üçüncü taraf kötü amaçlı yazılımdan koruma istemcisinin yerini almaz.
 
-Microsoft Defender Virüsten Koruma arabirimi devre dışı bırakılır. Cihaza bağlı kullanıcılar isteğe bağlı taramalar Microsoft Defender Virüsten Koruma veya seçeneklerin çoğunu yapılandırmak için e-posta oturumlarını kullanamazsanız.
+Microsoft Defender Virüsten Koruma arabirimi devre dışı bırakılır. Cihazdaki kullanıcılar, isteğe bağlı taramalar gerçekleştirmek veya çoğu seçeneği yapılandırmak için Microsoft Defender Virüsten Koruma'yi kullanamaz.
 
-Daha fazla bilgi için uç [nokta uyumluluğu Microsoft Defender Virüsten Koruma Defender'ın nasıl sıralanmıştır? başlığına bakın](microsoft-defender-antivirus-compatibility.md).
+Daha fazla bilgi için Bkz. [Microsoft Defender Virüsten Koruma ve Uç Nokta için Defender uyumluluk konusu](microsoft-defender-antivirus-compatibility.md).

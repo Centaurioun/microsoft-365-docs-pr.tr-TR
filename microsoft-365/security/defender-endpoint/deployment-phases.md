@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender dağıtımına genel bakış
 description: Uç noktaları hazırlayarak, ayarlayarak ve bu hizmete ekleyerek Uç Nokta için Microsoft Defender dağıtmayı öğrenin
 keywords: dağıtma, hazırlama, kurulum, ekleme, aşama, dağıtım, dağıtma, benimseme, yapılandırma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-endpointprotect
 - m365solution-overview
+- highpri
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 3520d249e7241eb1b890c3939fe6e6165d5c6011
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.subservice: mde
+ms.openlocfilehash: b5e664fb40d549d669d1b3bba6d55feb96ccc843
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607619"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679163"
 ---
 # <a name="microsoft-defender-for-endpoint-deployment-overview"></a>Uç Nokta için Microsoft Defender dağıtımına genel bakış
 

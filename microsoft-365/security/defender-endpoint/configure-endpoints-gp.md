@@ -1,8 +1,8 @@
 ---
-title: Mobil Windows cihazları Uç Nokta için Microsoft Defender için grup ilkesi
-description: Grup ilkesi' i kullanarak yapılandırma paketini Windows için uygun cihazlara dağıtın.
-keywords: Grup ilkesi, cihaz yönetimi, cihazları yapılandırma, cihazları Uç Nokta için Microsoft Defender, cihaz ekleme Uç Nokta için Microsoft Defender, grup ilkesi kullanarak cihazları yapılandırma
-ms.prod: m365-security
+title: windows cihazlarını grup ilkesi aracılığıyla Uç Nokta için Microsoft Defender ekleme
+description: Yapılandırma paketini hizmete eklenmesi için Windows cihazlarına dağıtmak için grup ilkesi kullanın.
+keywords: grup ilkesi kullanarak cihazları yapılandırma, cihaz yönetimi, Uç Nokta için Microsoft Defender cihazları yapılandırma, Uç Nokta için Microsoft Defender cihazları ekleme, grup ilkesi
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,318 +15,318 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
-ms.technology: mde
-ms.openlocfilehash: e05927829ec680a303972090dc050514c31cdbc6
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: c197cf243d983ee93d1a2f11b49e87933f81c58d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468975"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680449"
 ---
-# <a name="onboard-windows-devices-using-group-policy"></a>Windows kullanarak diğer cihazları grup ilkesi 
+# <a name="onboard-windows-devices-using-group-policy"></a>Windows araçlarını Grup İlkesi kullanarak ekleyin 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
 - Grup İlkesi
-- [Uç Nokta için Microsoft Defender Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Uç Nokta için Defender'ı deneyimli yapmak mı istiyor musunuz? [Ücretsiz deneme için kaydol'](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 > [!NOTE]
-> Paketin grup ilkesi GP) güncelleştirmelerini kullanmak için, Windows Server 2008 R2 veya sonraki bir işletim sistemi kullanıyor olun.
+> Paketi dağıtmak için grup ilkesi (GP) güncelleştirmelerini kullanmak için Windows Server 2008 R2 veya sonraki bir sürümde olmanız gerekir.
 >
-> Windows Server 2019 ve Windows Server 2022 için, kaynak tercihin oluşturduğu XML dosyasının NT AUTHORITY\SYSTEM ile NT AUTHORITY\Well-Known-System-Account yerine NT AUTHORITY\SYSTEM grup ilkesi değiştirmeniz gerekir.
+> Windows Server 2019 ve Windows Server 2022 için, grup ilkesi tercihinin oluşturduğu XML dosyasının NT AUTHORITY\Well-Known-System-Account yerine NT AUTHORITY\SYSTEM kullanmanız gerekebilir.
 
 > [!NOTE]
-> Windows Server 2012 R2 ve 2016 için yeni, birleşik Uç Nokta için Microsoft Defender çözümünü kullanıyorsanız, doğru veri ilkesi seçeneklerine erişmek için lütfen merkezi mağazanıza en son ADMX dosyalarını Uç Nokta için Microsoft Defender emin olun. Lütfen [Windows Yönetim](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) Şablonları için Merkezi Mağaza grup ilkesi oluşturma ve yönetme hakkında bilgi edinebilirsiniz ve Windows 10 için en son **dosyaları indirebilirsiniz**.
+> Windows Server 2012 R2 ve 2016 için yeni, birleşik Uç Nokta için Microsoft Defender çözümünü kullanıyorsanız, doğru Uç Nokta için Microsoft Defender ilkesi seçeneklerine erişmek için lütfen merkezi deponuzdaki en son ADMX dosyalarını kullandığınızdan emin olun. Lütfen [Windows'da grup ilkesi Yönetim Şablonları için Merkezi Mağaza oluşturma ve yönetme](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) makalesine başvurun ve **Windows 10 ile kullanmak üzere** en son dosyaları indirin.
 
-Uç Nokta için [Defender'Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) çeşitli yolları görmek için PDF veya Dosya Ayarları'ne göz atabilirsiniz.[](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)
+Uç Nokta için Defender'ı dağıtma ile ilgili çeşitli yolları görmek için [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  veya  [Visio'ya](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) göz atın.
 
-1. Hizmet ekleme sihirbazından indirdiğiniz GP yapılandırma paketi dosyasını (`WindowsDefenderATPOnboardingPackage.zip`) açın. Paketi şu portaldan da <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>:
+1. Hizmet ekleme sihirbazından indirdiğiniz GP yapılandırma paketi dosyasını (`WindowsDefenderATPOnboardingPackage.zip`) açın. Paketi <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalından</a> da alabilirsiniz:
 
-    1. Gezinti bölmesinde, Gezinti **Bölmesi'Ayarlar** >  **EndpointsDevice** >  **managementOnboarding**  >  öğesini seçin.
+    1. Gezinti bölmesinde **Ayarlar** > **Uç Noktaları** > **Cihaz yönetimi**  > **Ekleme'yi** seçin.
 
     1. İşletim sistemini seçin.
 
-    1. Dağıtım yöntemi **alanında** Grup **ilkesi'ne seçin**.
+    1. **Dağıtım yöntemi** alanında **Grup ilkesi'ni** seçin.
 
-    1. Paketi **indir'e** tıklayın ve .zip kaydedin.
+    1. **Paketi indir'e** tıklayın ve .zip dosyasını kaydedin.
 
-2. .zip dosyasının içeriğini cihaz tarafından erişilebilen, salt okunur bir konuma ayıklar. *optionalParamsPolicy* adlı bir klasörünüz ve *WindowsDefenderATPOnboardingScript.cmd dosyası olmalıdır*.
+2. .zip dosyasının içeriğini, cihaz tarafından erişilebilen paylaşılan, salt okunur bir konuma ayıklayın. *OptionalParamsPolicy* adlı bir klasörünüz ve *WindowsDefenderATPOnboardingScript.cmd* dosyası olmalıdır.
 
-3. Yeni bir GPO oluşturmak için, [Grup ilkesi](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) Yönetim Konsolu'nu (GPMC) açın, yapılandırmak istediğiniz grup ilkesi Nesneleri  Ekle'ye sağ tıklayın ve Yeni'ye **tıklayın**. Görüntülenen iletişim kutusuna yeni GPO'nun adını girin ve Tamam'a **tıklayın**.
+3. Yeni bir GPO oluşturmak için [grup ilkesi Yönetim Konsolu'nu](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) açın, yapılandırmak istediğiniz **nesneler grup ilkesi** sağ tıklayın ve **Yeni'ye** tıklayın. Görüntülenen iletişim kutusuna yeni GPO'nun adını girin ve **Tamam'a** tıklayın.
 
-4. GPMC [grup ilkesi'nu açın](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), yapılandırmak istediğiniz grup ilkesi Nesnesine (GPO) sağ tıklayın ve Düzenle'ye **tıklayın**.
+4. [grup ilkesi Yönetim Konsolu'nu](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) açın, yapılandırmak istediğiniz grup ilkesi Nesnesine (GPO) sağ tıklayın ve **Düzenle'ye** tıklayın.
 
-5. Denetim **Masası grup ilkesi, Bilgisayar** yapılandırması'nı, **Tercihler'i** ve denetim masası **ayarları'nı seçin**.
+5. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na**, **Tercihler'e** ve ardından **Denetim masası ayarları'na** gidin.
 
-6. Zamanlanmış **görevler'e sağ tıklayın**, **Yeni'nin** üzerine gelin ve Anlık Görev **(En az 7 Windows) tıklayın**.
+6. **Zamanlanmış görevler'e** sağ tıklayın, **Yeni'nin** üzerine gelin ve **ardından Anında Görev 'e (En az Windows 7)** tıklayın.
 
-7. Açılan **Görev** penceresinde Genel **sekmesine** gidin. Güvenlik **seçenekleri'nin** altında **Kullanıcı veya Grubu Değiştir'e** tıklayın, SİSS SISTEMI yazın ve Adları **Denetleme'ye ve Tamam'a** **tıklayın**. NT AUTHORITY\SYSTEM, görevin çalıştıracak olduğu kullanıcı hesabı olarak görünür.
+7. Açılan **Görev** penceresinde **Genel** sekmesine gidin. **Güvenlik seçenekleri'nin** altında **Kullanıcıyı veya Grubu Değiştir'e** tıklayın ve SİSTEM yazın ve ardından **Adları Denetle'ye** ve ardından **Tamam'a** tıklayın. NT AUTHORITY\SYSTEM, görevin çalıştırılacağı kullanıcı hesabı olarak görünür.
 
-8. Kullanıcının **oturum açmış olup olmadığını çalıştır'ı seçin ve** En yüksek **ayrıcalıklarla çalıştır onay** kutusunu işaretleyin.
+8. **Kullanıcının oturum açıp açmadığını çalıştır'ı** seçin ve **En yüksek ayrıcalıklarla çalıştır** onay kutusunu işaretleyin.
 
-9. Ad alanına, zamanlanmış görev için uygun bir ad yazın (örneğin, Uç Nokta Dağıtımı için Defender).
+9. Ad alanına zamanlanmış görev için uygun bir ad yazın (örneğin, Uç Nokta Dağıtımı için Defender).
 
-10. Eylemler sekmesine **gidin** ve Yeni **... öğesini seçin.** Eylem alanında **Program başlat'ın** seçili olduğundan **emin** olun. Paylaşılan *WindowsDefenderATPOnboardingScript.cmd* dosyasının dosya sunucusunun tam etki alanı adını (FQDN) kullanarak UNC yolunu girin.
+10. **Eylemler** sekmesine gidin ve **Yeni...** öğesini seçin. **Eylem** alanında **Program başlat'ın** seçili olduğundan emin olun. Paylaşılan *WindowsDefenderATPOnboardingScript.cmd* dosyasının tam etki alanı adını (FQDN) kullanarak UNC yolunu girin.
 
-11. **Tamam'ı** seçin ve tüm açık GPMC pencerelerini kapatın.
+11. **Tamam'ı** seçin ve açık GPMC pencerelerini kapatın.
 
-12. GPO'nun Kuruluş Birimine (OU) bağlantısını eklemek için sağ tıklayın ve Varolan **bir GPO'ya bağlantı ekle'yi seçin**. Görüntülenen iletişim kutusunda, grup ilkesi Nesne Seçin'i seçin. **Tamam**'a tıklayın.
+12. GPO'yu Bir Kuruluş Birimine (OU) bağlamak için sağ tıklayın ve **Var olan bir GPO'yu bağla'ya** tıklayın. Görüntülenen iletişim kutusunda, bağlamak istediğiniz grup ilkesi Nesnesi'ni seçin. **Tamam**'a tıklayın.
 
 > [!TIP]
-> Cihazı işe seçtikten sonra, cihazın hizmete düzgün bir şekilde yer olduğunu doğrulamak için bir algılama testi çalıştırmayı seçebilirsiniz. Daha fazla bilgi için bkz [. Uç nokta cihazı için yeni eklenen bir Defender'da algılama testi çalıştırma](run-detection-test.md).
+> Cihazı ekledikten sonra, cihazın hizmete düzgün şekilde eklendiğini doğrulamak için bir algılama testi çalıştırmayı seçebilirsiniz. Daha fazla bilgi için bkz. [Yeni eklenen Uç Nokta için Defender cihazında algılama testi çalıştırma](run-detection-test.md).
 
-## <a name="additional-defender-for-endpoint-configuration-settings"></a>Uç nokta yapılandırma ayarları için Ek Defender
+## <a name="additional-defender-for-endpoint-configuration-settings"></a>Uç Nokta için Ek Defender yapılandırma ayarları
 
-Her cihazda, derin çözümleme için bir dosya göndermek için bir istek göndererek, Microsoft 365 Defender örneklerin cihazdan toplanabilir olup olmadığını ifade edebilirsiniz.
+Her cihaz için, ayrıntılı analiz için bir dosya göndermek üzere Microsoft 365 Defender üzerinden bir istek yapıldığında cihazdan örneklerin toplanıp toplanamayacağını belirtebilirsiniz.
 
-Bu (GP) grup ilkesi, derin çözümleme özelliğinde kullanılan örnek paylaşım ayarları gibi ayarları yapılandırmak için kullanabilirsiniz.
+Derin analiz özelliğinde kullanılan örnek paylaşımının ayarları gibi ayarları yapılandırmak için grup ilkesi (GP) kullanabilirsiniz.
 
 ### <a name="configure-sample-collection-settings"></a>Örnek koleksiyon ayarlarını yapılandırma
 
-1. GP yönetim aygıtınızda, yapılandırma paketinden aşağıdaki dosyaları kopyalayın:
+1. GP yönetim cihazınızda, yapılandırma paketinden aşağıdaki dosyaları kopyalayın:
 
-    - _AtpConfiguration.admx'i_ _C:\\Windows\\ PolicyDefinitions içine kopyalama_
+    - _AtpConfiguration.admx_ dosyasını _C:\\Windows\\PolicyDefinitions_ içine kopyalama
 
-    - _AtpConfiguration.adml_ dosyasını _C:\\Windows\\ PolicyDefinitionsen-US\\ içine kopyalama_
+    - _AtpConfiguration.adml_ dosyasını _C:\\Windows\\PolicyDefinitions\\en-US_ içine kopyalayın
 
-    Yönetim Şablonlarını Oluşturmak için [Merkezi grup ilkesi kullanıyorsanız](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), yapılandırma paketinden aşağıdaki dosyaları kopyalayın:
+    [grup ilkesi Yönetim Şablonları için Merkezi Mağaza](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) kullanıyorsanız, yapılandırma paketinden aşağıdaki dosyaları kopyalayın:
 
-    - _AtpConfiguration.admx_ _\\\\\\\<forest.root\>dosyasını SysVolPoliciesPolicyDefinitions\\\<forest.root\>\\\\ içine kopyalama_
+    - _AtpConfiguration.admx_ dosyasını _SysVol\\\<forest.root\>\\İlkeleri\\\\\\\<forest.root\>\\ İlkesiDefinitions_ içine kopyalama
 
-    - _AtpConfiguration.adml_ _\\\\\\\<forest.root\>dosyasını SysVolPoliciesPolicyDefinitionsen-US\\\\\<forest.root\>\\\\ içine kopyalama_
+    - _AtpConfiguration.adml_ dosyasını _SysVol\<forest.root\>\\\\İlkeleri\\\<forest.root\>\\\\\\ İlkesiDefinitions\\en-US_ içine kopyalama
 
-2. Yönetim [grup ilkesi açın, yapılandırmak](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) istediğiniz GPO'ya sağ tıklayın ve Düzenle'ye **tıklayın**.
+2. [grup ilkesi Yönetim Konsolu'nu](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) açın, yapılandırmak istediğiniz GPO'ya sağ tıklayın ve **Düzenle'ye** tıklayın.
 
-3. Sistem Grup ilkesi **Düzenleyicisi'nde** Bilgisayar **yapılandırması'ne gidin**.
+3. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na** gidin.
 
-4. **İlkeler'e** ve **ardından Yönetim şablonları'ne tıklayın**.
+4. **İlkeler'e** ve ardından **Yönetim şablonları'nı** tıklatın.
 
-5. Bileşenleri **Windows ve** **ATP'Windows Defender tıklayın**.
+5. **Windows bileşenleri'ne** tıklayın ve **ATP'yi Windows Defender**.
 
-6. Cihazlarından örnek paylaşımı etkinleştirmeyi veya devre dışı bırakmayı seçin.
+6. Cihazlarınızdan örnek paylaşımı etkinleştirmeyi veya devre dışı bırakmayı seçin.
 
 > [!NOTE]
-> Değer ayarlay önce varsayılan değer örnek koleksiyonu etkinleştirmektir.
+> Bir değer ayarlamazsanız, varsayılan değer örnek koleksiyonu etkinleştirmektir.
 
 ## <a name="other-recommended-configuration-settings"></a>Önerilen diğer yapılandırma ayarları
 
 ### <a name="update-endpoint-protection-configuration"></a>Uç nokta koruma yapılandırmasını güncelleştirme
 
-Ekleme betiği yapılandır olduktan sonra, uç nokta koruma yapılandırmaları eklemek için aynı grup ilkesi düzenlemeye devam edin. Tüm gerekli güvenlik özelliklerine sahip olmak için Windows 10 veya Server 2019, Windows 11 veya Windows Server 2022 çalıştıran bir sistemden grup ilkesi düzenlemeleri Microsoft Defender Virüsten Koruma gerçekleştirin. Defender ATP yapılandırma ayarlarını kaydetmek için grup ilkesi nesnesini kapatıp yeniden açabilirsiniz.
+Ekleme betiğini yapılandırdıktan sonra, uç nokta koruma yapılandırmaları eklemek için aynı grup ilkesini düzenlemeye devam edin. Tüm gerekli Microsoft Defender Virüsten Koruma özelliklerine sahip olduğunuzdan emin olmak için Windows 10 veya Server 2019, Windows 11 veya Windows Server 2022 çalıştıran bir sistemden grup ilkesi düzenlemeleri gerçekleştirin. Defender ATP yapılandırma ayarlarını kaydetmek için grup ilkesi nesnesini kapatıp yeniden açmanız gerekebilir.
 
-Tüm ilkeler altında yer almaktadır `Computer Configuration\Policies\Administrative Templates`.
+Tüm ilkeler altında `Computer Configuration\Policies\Administrative Templates`bulunur.
 
 **İlke konumu:** \Windows Components\Windows Defender ATP
 
-İlke|Ayar
+Ilkesi|Ayar
 ---|---
-Örnek koleksiyonunu etkinleştir\Devre Dışı Bırak|Etkin - "Makinelerde örnek koleksiyonu etkinleştir" işaretli
+Örnek koleksiyonu etkinleştir\devre dışı bırak|Etkin - "Makinelerde örnek koleksiyonu etkinleştir" işaretlendi
 
 <br>
 
-**İlke konumu:** \Windows Components\Microsoft Defender Virüsten Koruma
+**İlke konumu:**  \Windows Components\Microsoft Defender Virüsten Koruma
 
-İlke|Ayar
+Ilkesi|Ayar
 ---|---
-İstenmeyen olabilecek uygulamaları algılamayı yapılandırma|Etkin, Engelle
+İstenmeyebilecek uygulamalar için algılamayı yapılandırma|Etkin, Engelle
 
 <br>
 
-**İlke konumu:** \Windows Bileşenler\Microsoft Defender Virüsten Koruma\HARITALAR
+**İlke konumu:** \Windows Components\Microsoft Defender Virüsten Koruma\MAPS
 
-İlke|Ayar
+Ilkesi|Ayar
 ---|---
-Microsoft MAPS'a katılma|Etkin, Gelişmiş HARITALAR
-Daha fazla çözümleme gerektiğinde dosya örnekleri gönderme | Etkin, Güvenli örnekler gönderme
+Microsoft MAPS'e katılma|Etkin, Gelişmiş MAPS
+Daha fazla analiz gerektiğinde dosya örnekleri gönderme | Etkin, Güvenli örnekler gönderme
 
 <br>
 
-**İlke konumu:** \Windows Components\Microsoft Defender Virüsten Koruma\Real-time Protection
+**İlke konumu:** \Windows Components\Microsoft Defender Virüsten Koruma\Gerçek Zamanlı Koruma
 
-İlke|Ayar
+Ilkesi|Ayar
 ---|---
 Gerçek zamanlı korumayı kapatma|Devre dışı
 Davranış izlemeyi açma|Etkin
-İndirilen tüm dosyaları ve ekleri tarama|Etkin
+İndirilen tüm dosyaları ve ekleri tara|Etkin
 Bilgisayarınızda dosya ve program etkinliğini izleme|Etkin
 
 <br>
 
-**İlke konumu:** \Windows Components\Microsoft Defender Virüsten Koruma\Scan
+**İlke konumu:**  \Windows Components\Microsoft Defender Virüsten Koruma\Tarama
 
-Bu ayarlar, uç noktanın düzenli olarak tarar. Haftalık hızlı tarama ve performansa izin verilen bir performans gerçekleştirmenizi öneririz.
+Bu ayarlar, uç noktanın düzenli taramalarını yapılandırıyor. Performansa izin verilen haftalık bir hızlı tarama gerçekleştirmenizi öneririz.
 
-İlke|Ayar
+Ilkesi|Ayar
 ---|---
-Zamanlanmış bir tarama çalıştırmadan önce en son virüs ve casus yazılım güvenlik zekasını denetleme |Etkin
+Zamanlanmış tarama çalıştırmadan önce en son virüs ve casus yazılım güvenlik bilgilerini denetleyin |Etkin
 
 <br>
 
-**İlke konumu:** \Windows Components\Microsoft Defender Virüsten Koruma\Microsoft Defender Exploit Guard\Attack Surface Azaltma
+**İlke konumu:** \Windows Components\Microsoft Defender Virüsten Koruma\Microsoft Defender Exploit Guard\Saldırı Yüzeyi Azaltma
 
-Saldırı yüzeyini azaltma kuralları GUID'lerinin geçerli listesini Saldırı yüzeyini azaltma kuralları dağıtımı [Adım 3: ASR kurallarını uygulama'dan edin.](attack-surface-reduction-rules-deployment-implement.md) Kural başına ek ayrıntılar için saldırı yüzeyini azaltma [kuralları başvurusu'ne bakın](attack-surface-reduction-rules-reference.md).
+Saldırı yüzeyi azaltma kuralları GUID'lerinin geçerli listesini [Saldırı yüzeyi azaltma kuralları dağıtımı 3. Adım: ASR kurallarını uygulama bölümünden](attack-surface-reduction-rules-deployment-implement.md) alın. Kural ayrıntılarına göre ek bilgi için bkz [. Saldırı yüzeyi azaltma kuralları başvurusu](attack-surface-reduction-rules-reference.md)
 
-1. Saldırı Yüzeyini **Azaltmayı Yapılandır ilkeyi** açın.
+1. **Saldırı Yüzeyi Azaltmayı Yapılandır** ilkesini açın.
 
-1. **Etkin'i seçin**.
+1. **Etkin**'i seçin.
 
-1. Göster **düğmesini** seçin.
+1. **Göster** düğmesini seçin.
 
-1. Değer Adı alanına HER GUID **değerini** 2 değeriyle ekleyin.
+1. **Değer Adı** alanına her GUID'yi 2 değeriyle ekleyin.
 
-   Bu, her biri yalnızca denetim için ayarlanır.
+   Bu, her bir ayarı yalnızca denetim için ayarlar.
 
-   :::image type="content" source="images/asr-guid.png" alt-text="Saldırı yüzeyini azaltma yapılandırması" lightbox="images/asr-guid.png":::
+   :::image type="content" source="images/asr-guid.png" alt-text="Saldırı yüzeyi azaltma yapılandırması" lightbox="images/asr-guid.png":::
 
-İlke|Konum|Ayar
+Ilkesi|Konum|Ayar
 ---|---|---
-Denetimli klasör erişimini yapılandırma| \Windows Components\Microsoft Defender Virüsten Koruma\Microsoft Defender Exploit Guard\Controlled Folder Access| Etkin, Denetim Modu
+Denetimli klasör erişimini yapılandırma| \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Controlled Folder Access| Etkin, Denetim Modu
 
-## <a name="run-a-detection-test-to-verify-onboarding"></a>Eklemeyi doğrulamak için bir algılama testi çalıştırma
+## <a name="run-a-detection-test-to-verify-onboarding"></a>Ekleme işlemini doğrulamak için algılama testi çalıştırma
 
-Cihazı işe seçtikten sonra, bir cihazın hizmete düzgün bir şekilde yer olduğunu doğrulamak için bir algılama testi çalıştırmayı seçebilirsiniz. Daha fazla bilgi için bkz[. Yeni eklenen bir cihazda algılama Uç Nokta için Microsoft Defender çalıştırma](run-detection-test.md).
+Cihazı ekledikten sonra, bir cihazın hizmete düzgün şekilde eklendiğini doğrulamak için bir algılama testi çalıştırmayı seçebilirsiniz. Daha fazla bilgi için bkz. [Yeni eklenen Uç Nokta için Microsoft Defender cihazında algılama testi çalıştırma](run-detection-test.md).
 
-## <a name="offboard-devices-using-group-policy"></a>Grup ilkesi kullanan offboard grup ilkesi
+## <a name="offboard-devices-using-group-policy"></a>grup ilkesi kullanarak cihazları çıkarma
 
-Güvenlik nedeniyle, Offboard cihazları için kullanılan paketin süresi, indirildikten 30 gün sonra sona erer. Bir cihaza gönderilen süresi dolmuş offboard paketleri reddedilir. Bir çıkartan kullanım paketi indirirken paketlerin son kullanma tarihi size bildirilecek ve paket adına bu paket de dahil edilecektir.
+Güvenlik nedeniyle, cihazları kullanıma almak için kullanılan paketin süresi, indirildiği tarihten 30 gün sonra dolar. Bir cihaza gönderilen süresi dolan çıkarma paketleri reddedilir. Bir çıkarma paketini indirirken paketlerin son kullanma tarihi size bildirilir ve paket adına da eklenir.
 
 > [!NOTE]
-> Ekleme ve çıkarma ilkeleri aynı cihazda aynı anda dağıtıldığından, öngörülemeyen zararlara neden olur.
+> Ekleme ve çıkarma ilkeleri aynı cihazda aynı anda dağıtılmamalıdır, aksi takdirde bu öngörülemeyen çakışmalara neden olur.
 
-1. Aşağıdaki portaldan çıkar çıkar paketini <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender:</a>
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalından</a> çıkarma paketini alın:
 
-    1. Gezinti bölmesinde, Ayarlar  > **EndpointsDevice** >  **managementOffboarding** >  öğesini seçin.
+    1. Gezinti bölmesinde **Ayarlar** > **Uç Noktaları** > **Cihaz yönetimi** > **Çıkarma'yı** seçin.
 
     1. İşletim sistemini seçin.
     
-    1. Dağıtım yöntemi **alanında** Grup **ilkesi'ne seçin**.
+    1. **Dağıtım yöntemi** alanında **Grup ilkesi'ni** seçin.
 
-    1. Paketi **indir'e** tıklayın ve .zip kaydedin.
+    1. **Paketi indir'e** tıklayın ve .zip dosyasını kaydedin.
 
-2. .zip dosyasının içeriğini cihaz tarafından erişilebilen, salt okunur bir konuma ayıklar. *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd adlı bir dosyanız olmalıdır*.
+2. .zip dosyasının içeriğini, cihaz tarafından erişilebilen paylaşılan, salt okunur bir konuma ayıklayın. *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* adlı bir dosyanız olmalıdır.
 
-3. GPMC [grup ilkesi'nu açın](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), yapılandırmak istediğiniz grup ilkesi Nesnesine (GPO) sağ tıklayın ve Düzenle'ye **tıklayın**.
+3. [grup ilkesi Yönetim Konsolu'nu](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC) açın, yapılandırmak istediğiniz grup ilkesi Nesnesine (GPO) sağ tıklayın ve **Düzenle'ye** tıklayın.
 
-4. Denetim **Masası grup ilkesi, Bilgisayar** yapılandırması'nı **, Tercihler'i** **ve denetim masası** **ayarları'nı seçin**.
+4. **grup ilkesi Yönetim Düzenleyicisi'nde** **Bilgisayar yapılandırması'na,** **Tercihler'e** ve ardından **Denetim masası ayarları'na** gidin.
 
-5. Zamanlanmış **görevler'e sağ tıklayın**, **Yeni'nin üzerine gelin** ve Anlık **görev'e tıklayın**.
+5. **Zamanlanmış görevler'e** sağ tıklayın, **Yeni'nin** üzerine gelin ve **hemen görev'e** tıklayın.
 
-6. Açılan **Görev** penceresinde Genel **sekmesine** gidin. Güvenlik seçenekleri'nin altında yerel SYSTEM kullanıcı hesabını (BUILTIN\SYSTEM) **seçin**.
+6. Açılan **Görev** penceresinde **Genel** sekmesine gidin. **Güvenlik seçenekleri'nin** altında yerel SYSTEM kullanıcı hesabını (BUILTIN\SYSTEM) seçin.
 
-7. Kullanıcının **oturum açmış olup olmadığını çalıştır'ı seçin ve** En yüksek **ayrıcalıklarla çalıştır onay** kutusunu işaretleyin.
+7. **Kullanıcının oturum açıp açmadığını çalıştır'ı** seçin ve **En yüksek ayrıcalıklarla çalıştır** onay kutusunu işaretleyin.
 
-8. Ad alanına, zamanlanmış görev için uygun bir ad yazın (örneğin, Uç Nokta Dağıtımı için Defender).
+8. Ad alanına zamanlanmış görev için uygun bir ad yazın (örneğin, Uç Nokta Dağıtımı için Defender).
 
-9. Eylemler sekmesine **gidin** ve Yeni... **öğesini seçin**. Eylem alanında **Program başlat'ın** seçili olduğundan **emin** olun. Paylaşılan *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* dosyasının dosya sunucusunun tam etki alanı adını (FQDN) kullanarak UNC yolunu girin.
+9. **Eylemler** sekmesine gidin ve **Yeni...** öğesini seçin. **Eylem** alanında **Program başlat'ın** seçili olduğundan emin olun. Paylaşılan *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* dosyasının dosya sunucusunun tam etki alanı adını (FQDN) kullanarak UNC yolunu girin.
 
-10. **Tamam'ı** seçin ve tüm açık GPMC pencerelerini kapatın.
+10. **Tamam'ı** seçin ve açık GPMC pencerelerini kapatın.
 
 > [!IMPORTANT]
-> Offboard, cihazın algılayıcı verilerini portala göndermeyi durdurmaya neden olur, ancak sahip olduğu uyarılara başvuru da dahil olmak üzere cihazdan alınan veriler 6 ay süreyle korunur.
+> Kullanıma alma, cihazın portala algılayıcı verileri göndermeyi durdurmasına neden olur, ancak sahip olduğu uyarılara başvuru da dahil olmak üzere cihazdaki veriler 6 aya kadar saklanır.
 
 ## <a name="monitor-device-configuration"></a>Cihaz yapılandırmasını izleme
 
-Diğer grup ilkesi, ilkelerin cihazlara dağıtımını izleme seçeneği yok. İzleme doğrudan portalda veya farklı dağıtım araçları kullanılarak yapılabilir.
+grup ilkesi ile cihazlarda ilkelerin dağıtımını izleme seçeneği yoktur. İzleme doğrudan portalda veya farklı dağıtım araçları kullanılarak yapılabilir.
 
 ## <a name="monitor-devices-using-the-portal"></a>Portalı kullanarak cihazları izleme
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender gidin</a>.
-2. Cihazlar **envanteri'ne tıklayın**.
-3. Cihazların görüntüde olduğunu doğrulayın.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalına</a> gidin.
+2. **Cihaz envanteri'ne** tıklayın.
+3. Cihazların görüntülendiğini doğrulayın.
 
 > [!NOTE]
-> Cihazların Cihazlar listesinde göstermeye başlaması birkaç gün **kadar zaman alıyor**. İlkelerin cihaza dağıtılması için gereken süre, kullanıcı oturum amadan önce geçen süre ve uç noktanın raporlamaya başlaması için geçen süre de buna dahildir.
+> Cihazların **Cihazlar listesinde** gösterilmeye başlaması birkaç gün sürebilir. Bu, ilkelerin cihaza dağıtılması için gereken süreyi, kullanıcının oturum açacağı süreyi ve uç noktanın raporlamaya başlaması için geçen süreyi içerir.
 
-## <a name="setup-defender-av-policies"></a>Setup Defender AV ilkeleri
+## <a name="setup-defender-av-policies"></a>Defender AV ilkelerini ayarlama
 
-Bu ayarları grup ilkesi ilkelerle birlikte yeni bir grup oluşturun veya grup oluşturun. Bu, müşteri ortamına ve farklı kuruluş birimlerini (OU) hedefleerek hizmeti nasıl sunmak istediğinize bağlıdır.
+Yeni bir grup ilkesi oluşturun veya bu ayarları diğer ilkelerle birlikte gruplandırın. Bu, müşterilerin ortamına ve farklı kuruluş birimlerini (OU) hedefleyerek hizmeti nasıl kullanıma sunmak istediklerine bağlıdır.
 
-1. GP'yi seçtikten veya yeni bir GP oluşturdukta, GP'yi düzenleyin.
+1. GP'yi seçtikten veya yeni bir tane oluşturduktan sonra GP'yi düzenleyin.
 
-2. **Computer** **ConfigurationPoliciesAdministrative** >  >  **Templates** >  **Windows Components** >  **Microsoft Defender Virüsten Koruma Gerçek** >  **zamanlı Koruma'ya göz atabilirsiniz**.
+2. **Bilgisayar Yapılandırma** > **İlkeleri** > **Yönetim Şablonları** > **Windows Bileşenleri** > **Microsoft Defender Virüsten Koruma** > **Gerçek Zamanlı Koruma'ya** göz atın.
 
     :::image type="content" source="images/realtime-protect.png" alt-text="Gerçek zamanlı koruma" lightbox="images/realtime-protect.png":::
 
-1. Karantina klasöründe, öğeleri Karantina klasöründen kaldırmayı yapılandırabilirsiniz.
+1. Karantina klasöründe, Karantina klasöründeki öğelerin kaldırılmasını yapılandırın.
 
-    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="Öğeleri karantinaya almak için klasörü kaldırma" lightbox="images/removal-items-quarantine1.png":::
+    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="Kaldırma öğeleri karantina klasörü" lightbox="images/removal-items-quarantine1.png":::
 
-    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="config-removal karantina" lightbox="images/config-removal-items-quarantine2.png":::
+    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="yapılandırma kaldırma karantinası" lightbox="images/config-removal-items-quarantine2.png":::
 
-4. Tarama klasöründe, tarama ayarlarını yapılandırabilirsiniz.
+4. Tarama klasöründe tarama ayarlarını yapılandırın.
 
     :::image type="content" source="images/gpo-scans.png" alt-text="gpo taramaları" lightbox="images/gpo-scans.png":::
 
-### <a name="monitor-all-files-in-real-time-protection"></a>Gerçek zamanlı korumada tüm dosyaları izleme
+### <a name="monitor-all-files-in-real-time-protection"></a>Tüm dosyaları gerçek zamanlı korumada izleme
 
-Gerçek Zamanlı **Koruma için** \> **Bilgisayar** \> **Yapılandırma** \> **İlkeleri Windows Microsoft Defender Virüsten Koruma** \>  \> **Şablonları'ne gidin**.
+**Bilgisayar Yapılandırma** \> **İlkeleri** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Gerçek Zamanlı Koruma'ya** göz atın.
 
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="Gelen giden dosya etkinliği için izlemeyi yapılandırma" lightbox="images/config-monitor-incoming-outgoing-file-act.png":::
 
-### <a name="configure-windows-defender-smartscreen-settings"></a>SmartScreen Windows Defender yapılandırma
+### <a name="configure-windows-defender-smartscreen-settings"></a>Windows Defender SmartScreen ayarlarını yapılandırma
 
-1. SmartScreen **Gezgini'nde** \> **,** \> **Bilgisayar** \> **Yapılandırma Windows Yönetim** \> **Windows Defender'ne** \> **gidin**.
+1. **Bilgisayar Yapılandırma** \> **İlkeleri** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Windows Defender SmartScreen** \> **Gezgini'ne** gidin.
 
    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Windows Defender akıllı ekran gezginini yapılandırma" lightbox="images/config-windows-def-smartscr-explorer.png":::
  
-2. Bilgisayar **YapılandırmasıPoliciesAdministrative** >  >  Şablonlar **Windows** >  Bileşenler **Windows Defender** >  **SmartScreen Microsoft Edge** > .
+2. **Bilgisayar Yapılandırma** > **İlkeleri** > **Yönetim Şablonları** > **Windows Bileşenleri** >  **Windows Defender SmartScreen** > **Microsoft Edge'e** göz atın.
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Windows Defender akıllı ekran Edge'i yapılandırma" lightbox="images/config-windows-def-smartscr-explorer.png":::
 
-### <a name="configure-potentially-unwanted-applications"></a>İstenmeyen olabilecek uygulamaları yapılandırma
+### <a name="configure-potentially-unwanted-applications"></a>İstenmeyebilecek Uygulamaları Yapılandırma
 
-Bilgisayar Yapılandırma **İlkeleri** \> **Yönetim** \> **Şablonları ve Bileşenleri** **Windows'Microsoft Defender Virüsten Koruma** \> \>.
+**Bilgisayar Yapılandırma** \> **İlkeleri** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma'ya** göz atın.
 
-:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="Config potansiyel istenmeyen uygulama" lightbox="images/config-potential-unwanted-apps.png":::
+:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="Olası istenmeyen uygulamayı yapılandırma" lightbox="images/config-potential-unwanted-apps.png":::
 
-:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="yapılandırma potansiyel" lightbox="images/config-potential-unwanted-apps2.png":::
+:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="yapılandırma potansiyeli" lightbox="images/config-potential-unwanted-apps2.png":::
 
-### <a name="configure-cloud-deliver-protection-and-send-samples-automatically"></a>Bulut Teslim Koruması'nı yapılandırma ve örnekleri otomatik olarak gönderme
+### <a name="configure-cloud-deliver-protection-and-send-samples-automatically"></a>Cloud Deliver Protection'ı yapılandırma ve örnekleri otomatik olarak gönderme
 
-**HARITALAR'da Bilgisayar Yapılandırma** \> **İlkeleri**  \> Yönetim \> **Windows'Microsoft Defender Virüsten Koruma** \>  \> **gidin**.
+**Bilgisayar Yapılandırma** \> **İlkeleri** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **MAPS'e** göz atın.
 
-:::image type="content" source="images/gpo-maps1.png" alt-text="haritalar" lightbox="images/gpo-maps1.png":::
+:::image type="content" source="images/gpo-maps1.png" alt-text="Haritalar" lightbox="images/gpo-maps1.png":::
 
 :::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="İlk görüşte engelle" lightbox="images/gpo-maps-block-atfirst-sight.png":::
 
-:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="Microsoft haritalara katılın" lightbox="images/gpo-maps-join-ms-maps.png":::
+:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="Microsoft Haritalar'a katılma" lightbox="images/gpo-maps-join-ms-maps.png":::
 
-:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="Daha fazla çözümleme gerektiğinde dosya örneği gönder" lightbox="images/send-file-sample-further-analysis-require.png":::
+:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="Daha fazla analiz gerektiğinde dosya örneği gönderme" lightbox="images/send-file-sample-further-analysis-require.png":::
 
 > [!NOTE]
-> Tüm **örnekleri gönder seçeneği** ikili dosyalar/betikler/belgeler için en iyi çözümlemeyi sağlar ve bu da güvenlik mezbenizi artırır.
-Güvenli **örnekler gönder seçeneği** çözüm edülen ikili dosya/betik/belge türünü sınırlar ve güvenlik postürlerini azalttır. 
+> **Tüm örnekleri gönder** seçeneği, güvenlik duruşunu artıran ikili dosyalar/betikler/belgeler için en fazla çözümlemeyi sağlar.
+**Güvenli örnekler gönder** seçeneği analiz edilen ikili dosyaların/betiklerin/belgelerin türünü sınırlar ve güvenlik duruşunu azaltır. 
 
-Daha fazla bilgi için bkz[.](enable-cloud-protection-microsoft-defender-antivirus.md) Microsoft Defender Virüsten Koruma'de bulut korumasını açma ve E-posta'da bulut [koruması ve Microsoft Defender Virüsten Koruma.](cloud-protection-microsoft-antivirus-sample-submission.md)
+Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma'da bulut korumasını açma ve Microsoft Defender Virüsten](enable-cloud-protection-microsoft-defender-antivirus.md) [Koruma'da bulut koruması ve örnek gönderme.](cloud-protection-microsoft-antivirus-sample-submission.md)
 
 ### <a name="check-for-signature-update"></a>İmza güncelleştirmesini denetleme
 
-Güvenlik **Zekası Güncelleştirmeleri** \> **için** \> **Bileşenleri ve** \> **Windows İlkeleri** \> **yönetim Microsoft Defender Virüsten Koruma** \> **göz atabilirsiniz**.
+**Bilgisayar Yapılandırma** \> **İlkeleri** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Güvenlik Bilgileri Güncelleştirmeler'ne** göz atın.
 
 :::image type="content" source="images/signature-update-1.png" alt-text="İmza güncelleştirmesi" lightbox="images/signature-update-1.png":::
 
 :::image type="content" source="images/signature-update-2.png" alt-text="İmza tanımı güncelleştirmesi" lightbox="images/signature-update-2.png":::
 
-### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>Bulut zaman aşımı ve koruma düzeyini yapılandırma
+### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>Bulut teslimi zaman aşımı ve koruma düzeyini yapılandırma
 
-Bilgisayar Yapılandırma **İlkeleri** \> **Yönetim** \> **Şablonları ve** \> **Bileşenleri Windows MpEngine** \> **Microsoft Defender Virüsten Koruma** \> **göz atabilirsiniz**.
-Bulut koruma düzeyi ilkesi varsayılan kimlik engelleme Microsoft Defender Virüsten Koruma **ilkeyi** devre dışı bırakır. Koruma düzeyini varsayılan pencerelere ayarlamak için gereken de budur.
+**Bilgisayar Yapılandırma** \> **İlkeleri** \> **Yönetim Şablonları** \> **Windows Bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **MpEngine'e** göz atın.
+Bulut koruma düzeyi ilkesini **Varsayılan Microsoft Defender Virüsten Koruma engelleme ilkesi** olarak yapılandırdığınızda, ilke devre dışı bırakılır. Koruma düzeyini windows varsayılanı olarak ayarlamak için gereken budur.
 
-:::image type="content" source="images/config-extended-cloud-check.png" alt-text="config genişletilmiş bulut denetimi" lightbox="images/config-extended-cloud-check.png":::
+:::image type="content" source="images/config-extended-cloud-check.png" alt-text="yapılandırma genişletilmiş bulut denetimi" lightbox="images/config-extended-cloud-check.png":::
 
-:::image type="content" source="images/cloud-protection-level.png" alt-text="yapılandırma bulut koruma düzeyi" lightbox="images/cloud-protection-level.png":::
+:::image type="content" source="images/cloud-protection-level.png" alt-text="bulut koruma düzeyini yapılandırma" lightbox="images/cloud-protection-level.png":::
 
 ## <a name="related-topics"></a>İlgili konular
-- [Microsoft Endpoint Configuration Manager kullanarak Windows cihazları Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Mobil Windows araçlarını kullanarak diğer Cihaz Yönetimi cihaza ekleme](configure-endpoints-mdm.md)
-- [Yerel Windows kullanarak cihazları ekleme](configure-endpoints-script.md)
+- [Microsoft Endpoint Configuration Manager kullanarak Windows cihazlarını ekleyin](configure-endpoints-sccm.md)
+- [Mobil Cihaz Yönetimi araçlarını kullanarak Windows cihazlarını ekleyin](configure-endpoints-mdm.md)
+- [Windows araçlarını yerel betik kullanarak ekleyin](configure-endpoints-script.md)
 - [Kalıcı olmayan sanal masaüstü altyapısı (VDI) cihazlarının katılımı](configure-endpoints-vdi.md)
-- [Yeni eklenen cihazlarda algılama testi Uç Nokta için Microsoft Defender çalıştırma](run-detection-test.md)
+- [Yeni eklenen Uç Nokta için Microsoft Defender cihazlarda algılama testi çalıştırma](run-detection-test.md)
 - [Uç Nokta için Microsoft Defender ekleme sorunlarını giderme](troubleshoot-onboarding.md)

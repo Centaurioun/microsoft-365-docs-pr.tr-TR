@@ -23,11 +23,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Bilgilerin ne kadar süreyle tutulacaklarını denetlemek ve bilgileri kimin kullandığını izlemek için bilgi yönetimi ilkesi ayarlamayı öğrenin.
 ms.openlocfilehash: d62eea4c43e6c171bf8c640e341933e81a23e0d0
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758981"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67678921"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Bilgi yönetimi ilkeleri oluşturma ve uygulama
 
@@ -46,13 +46,13 @@ Daha fazla bilgi için bkz. [Bilgi yönetimi ilkelerine giriş](intro-to-info-mg
 
 Bir bilgi ilkesinin site koleksiyonu içindeki belirli bir türdeki tüm belgelere uygulandığından emin olmak için, ilkeyi site koleksiyonu düzeyinde oluşturmayı ve daha sonra ilkeyi içerik türlerine uygulamayı göz önünde bulundurun. Bunlar site koleksiyonu ilkeleri olarak adlandırılır.
 
-1. Site koleksiyonu giriş sayfasında \> başlık çubuğundaki **Ayarlar**![ SharePoint 2016 Ayarlar düğmesi.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \>**Site Ayarlar**.
+1. Site koleksiyonu giriş sayfasında \>, başlık çubuğundaki **Ayarlar**![SharePoint 2016 Ayarları düğmesi.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \>**Site Ayarları**.
 
-    Gruba bağlı SharePoint bir sitede **, Ayarlar'a** tıklayın, **Site İçeriği'ne** tıklayın ve ardından **Site Ayarlar'ne** tıklayın.
+    SharePoint grubuna bağlı bir sitede **Ayarlar'a**, **Site İçeriği'ne** ve ardından **Site Ayarları'nı** tıklatın.
 
-2. Site Ayarlar sayfasında, **Site Koleksiyonu Yönetimi** \> **İçerik Türü İlke Şablonları** altında.
+2. Site Ayarları sayfasında, **Site Koleksiyonu Yönetimi** \> **İçerik Türü İlke Şablonları** altında.
 
-   ![Site Ayarlar sayfasındaki İçerik Türü İlkesi Şablonu bağlantısı.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+   ![Site Ayarları sayfasında İçerik Türü İlkesi Şablonu bağlantısı.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
 
 3. İlkeler sayfasında \> **Oluştur'u seçin**.
 
@@ -69,17 +69,17 @@ Bir bilgi ilkesinin site koleksiyonu içindeki belirli bir türdeki tüm belgele
 
  Ayrıca, listelere özgü bir içerik türüne bilgi yönetimi ilkesi de ekleyebilirsiniz. Bu, ilkeyi yalnızca bu listedeki içerik türünü kullanan öğelere uygulama etkisine sahiptir.
 
-1. Site koleksiyonu giriş sayfasında \> başlık çubuğundaki **Ayarlar**![ SharePoint 2016 Ayarlar düğmesi.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \>**Site Ayarlar**.
+1. Site koleksiyonu giriş sayfasında \>, başlık çubuğundaki **Ayarlar**![SharePoint 2016 Ayarları düğmesi.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \>**Site Ayarları**.
 
-    Gruba bağlı SharePoint bir sitede **, Ayarlar'a** tıklayın, **Site İçeriği'ne** tıklayın ve ardından **Site Ayarlar'ne** tıklayın.
+    SharePoint grubuna bağlı bir sitede **Ayarlar'a**, **Site İçeriği'ne** ve ardından **Site Ayarları'nı** tıklatın.
 
-2. Site Ayarlar sayfasında, **Web Tasarımcısı Galerileri** \> **Site içerik türleri** altında.
+2. Site Ayarları sayfasında, **Web Tasarımcısı Galerileri** \> **Site içerik türleri** altında.
 
-   ![Site Ayarlar sayfasında site içerik türleri bağlantısı.](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
+   ![Site Ayarları sayfasında site içerik türleri bağlantısı.](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
 
-3. Site İçerik Türü Ayarlar sayfasında, ilke eklemek istediğiniz içerik türünü seçin.
+3. Site İçerik Türü Ayarları sayfasında, ilke eklemek istediğiniz içerik türünü seçin.
 
-4. Site İçerik Türü sayfasında, **Ayarlar** \> **Bilgi yönetimi ilkesi ayarları** altında.
+4. Site İçerik Türü sayfasında, **Ayarlar** \> **Bilgileri yönetim ilkesi ayarları'nın** altında.
 
 5. İlkeyi Düzenle sayfasında, ilke için bir ad ve açıklama girin ve kullanıcılara ilkenin ne için olduğunu açıklayan kısa bir açıklama yazın.
 
@@ -121,11 +121,11 @@ Bir bilgi ilkesinin site koleksiyonu içindeki belirli bir türdeki tüm belgele
 
    Denetim İlkesi özelliği, kuruluşların belgeler için denetim izleri oluşturmasına ve çözümlemesine ve görev listeleri, sorun listeleri, tartışma grupları ve takvimler gibi öğeleri listelemesine olanak tanır. Bu ilke özelliği, içeriğin görüntülendiği, düzenlendiği veya silindiği durumlar gibi olayları kaydeden bir denetim günlüğü sağlar.
 
-   Denetim bir bilgi yönetimi ilkesinin parçası olarak etkinleştirildiğinde, yöneticiler denetim verilerini Microsoft Excel temel alan ve geçerli kullanımı özetleyen ilke kullanım raporlarında görüntüleyebilir. Yöneticiler, bilgilerin kuruluş içinde nasıl kullanıldığını belirlemek için bu raporları kullanabilir. Bu raporlar, kuruluşların mevzuat uyumluluğunu doğrulamalarına ve belgelemelerine veya olası endişeleri araştırmalarına da yardımcı olabilir.
+   Denetim bir bilgi yönetimi ilkesinin parçası olarak etkinleştirildiğinde, yöneticiler denetim verilerini Microsoft Excel'de temel alınan ve geçerli kullanımı özetleyen ilke kullanım raporlarında görüntüleyebilir. Yöneticiler, bilgilerin kuruluş içinde nasıl kullanıldığını belirlemek için bu raporları kullanabilir. Bu raporlar, kuruluşların mevzuat uyumluluğunu doğrulamalarına ve belgelemelerine veya olası endişeleri araştırmalarına da yardımcı olabilir.
 
    Denetim günlüğü şu bilgileri kaydeder: olay adı, olayın tarih ve saati ve eylemi gerçekleştiren kullanıcının sistem adı.
 
-9. Barkodlar bir ilkenin parçası olarak etkinleştirildiğinde belge özelliklerine eklenir ve barkodun uygulandığı belgenin üst bilgi alanında görüntülenir. Etiketler gibi barkodlar da belgeden el ile kaldırılabilir. Bir öğeyi yazdırırken veya kaydederken kullanıcılardan barkodu eklemelerinin istenip istenmeyeceğini veya barkodu 2010 Office yayın programlarındaki **Ekle** sekmesi kullanılarak el ile eklenip eklenmeyeceğini belirtebilirsiniz.
+9. Barkodlar bir ilkenin parçası olarak etkinleştirildiğinde belge özelliklerine eklenir ve barkodun uygulandığı belgenin üst bilgi alanında görüntülenir. Etiketler gibi barkodlar da belgeden el ile kaldırılabilir. Kullanıcılardan bir öğeyi yazdırırken veya kaydederken barkodu eklemelerinin istenip istenmeyeceğini ya da 2010 Office sürüm programlarında Ekle sekmesi kullanılarak barkodu el ile **eklenip** eklenmeyeceğini belirtebilirsiniz.
 
    Barkodları etkinleştirmek için:
 
@@ -148,7 +148,7 @@ Bir bilgi ilkesinin site koleksiyonu içindeki belirli bir türdeki tüm belgele
 
     2. Etiket eklendikten sonra değiştirilemeyecek şekilde kilitlemek için Etiket **eklendikten sonra etiket değişikliklerini engelle'yi** seçin.
 
-       Bu ayar, etiket word, Excel veya PowerPoint gibi bir istemci uygulaması içindeki bir öğeye eklendikten sonra etiket metninin güncelleştirilmesini engeller. Bu belgenin veya öğenin özellikleri güncelleştirildiğinde etiketin güncelleştirilmesini istiyorsanız, bu onay kutusunu seçmeyin.
+       Bu ayar, etiket Word, Excel veya PowerPoint gibi bir istemci uygulaması içindeki bir öğeye eklendikten sonra etiket metninin güncelleştirilmesini engeller. Bu belgenin veya öğenin özellikleri güncelleştirildiğinde etiketin güncelleştirilmesini istiyorsanız, bu onay kutusunu seçmeyin.
 
     3. Etiket biçimi kutusuna etiketin metnini görüntülenmesini istediğiniz şekilde girin. Etiketler en fazla 10 sütun başvurusu içerebilir ve bunların her biri en fazla 255 karakter uzunluğunda olabilir. Etiketinizin biçimini oluşturmak için aşağıdaki adımları uygulayın:
        - Etikete eklemek istediğiniz sütunların adlarını, görünmesini istediğiniz sırayla yazın. İlkeyi Düzenle sayfasındaki örnekte gösterildiği gibi sütun adlarını köşeli ayraçlar ({} ) içine alın.
@@ -185,15 +185,15 @@ Liste veya kitaplığın bilgi yönetimi ilkesi ayarlarını değiştirmek için
 
 1. Bilgi yönetimi ilkesi belirtmek istediğiniz listeye veya kitaplığa gidin.
 
-2. Şeritte **Kitaplık** veya **Liste** sekmesi \> **Kitaplık Ayarlar** veya **Liste Ayarlar** seçin.
+2. Şeritte **Kitaplık** veya **Liste** sekmesi \> **Kitaplık Ayarları** veya **Liste Ayarları'nı** seçin.
 
-   SharePoint Online'da **Ayarlar** ve ardından **Liste ayarları'nı** veya **Kitaplık ayarları'nı** tıklatın.
+   SharePoint Online'da **Ayarlar'a** ve ardından **Liste ayarları'nı** veya **Kitaplık ayarları'nı** tıklatın.
 
 3. **İzinler ve Yönetim**\> **Bilgileri yönetim ilkesi ayarları** altında.
 
    ![Belge kitaplığının ayarlar sayfasında bilgi yönetimi ilkeleri bağlantısı.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
 
-4. Bilgi Yönetimi İlkesi Ayarlar sayfasında, liste veya kitaplık için bekletme kaynağının Kitaplık ve Klasörler olarak ayarlandığından emin olun.
+4. Bilgi Yönetimi İlkesi Ayarları sayfasında, liste veya kitaplık için bekletme kaynağının Kitaplık ve Klasörler olarak ayarlandığından emin olun.
 
    Kaynak olarak **İçerik Türü** görünüyorsa **, Kaynağı Değiştir'e** ve ardından **Kitaplık ve Klasörler'e** tıklayın. İçerik türü saklama ilkelerinin yoksayılacağı konusunda uyarılırsınız. **Tamam**'ı seçin.
 
@@ -232,9 +232,9 @@ Siteniz için bilgi yönetimi ilkeleri site koleksiyonu ilkeleri olarak zaten ol
 
 1. İlke uygulamak istediğiniz içerik türünü içeren listeye veya kitaplığa gidin.
 
-2. Şeritte **Kitaplık** veya **Liste** sekmesi \> **Kitaplık Ayarlar** veya **Liste Ayarlar** seçin.
+2. Şeritte **Kitaplık** veya **Liste** sekmesi \> **Kitaplık Ayarları** veya **Liste Ayarları'nı** seçin.
 
-   SharePoint Online'da **Ayarlar** ve ardından **Liste ayarları'nı** veya **Kitaplık ayarları'nı** tıklatın.
+   SharePoint Online'da **Ayarlar'a** ve ardından **Liste ayarları'nı** veya **Kitaplık ayarları'nı** tıklatın.
 
 3. **İzinler ve Yönetim** \> **Bilgileri yönetim ilkesi ayarları** altında.
 
@@ -267,13 +267,13 @@ Bir bilgi yönetimi ilkesi tanımlayabilir ve ardından birden çok site koleksi
 ### <a name="export-a-policy"></a>İlkeyi dışarı aktarma
 <a name="__toc260646790"> </a>
 
-1. Site koleksiyonu giriş sayfasında, **Site Ayarlar** yerini alan Ayarlar ![Small Ayarlar dişlisini seçin.](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Site Ayarlar**.
+1. Site koleksiyonu giriş sayfasında, Site Ayarları'nın yerini alan **Ayarlar**![Küçük Ayarlar dişlisini seçin.](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Site Ayarları**.
 
-   Gruba bağlı SharePoint bir sitede **, Ayarlar'a** tıklayın, **Site İçeriği'ne** tıklayın ve ardından **Site Ayarlar'ne** tıklayın.
+   SharePoint grubuna bağlı bir sitede **Ayarlar'a**, **Site İçeriği'ne** ve ardından **Site Ayarları'nı** tıklatın.
 
-2. Site Ayarlar sayfasında, **Site Koleksiyonu Yönetimi** \> **İçerik Türü İlke Şablonları** altında.
+2. Site Ayarları sayfasında, **Site Koleksiyonu Yönetimi** \> **İçerik Türü İlke Şablonları** altında.
 
-   ![Site Ayarlar sayfasındaki İçerik Türü İlkesi Şablonu bağlantısı.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+   ![Site Ayarları sayfasında İçerik Türü İlkesi Şablonu bağlantısı.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
 
 3. Dışarı \> aktarmak istediğiniz ilkeyi seçerek en alttaki \> **Dışarı Aktar'a** gidin.
 
@@ -286,11 +286,11 @@ Bir bilgi yönetimi ilkesi tanımlayabilir ve ardından birden çok site koleksi
 
 Bilgi yönetimi ilkesini içeri aktarmak, bu ilkeyi belirli bir site koleksiyonundaki site veya liste düzeyindeki birden çok içerik türüne uygulamanızı sağlar. Bunu yapmanın avantajları iki katına çıkar: her içerik türünde ilkeyi yeniden tanımlamanız ve uygulamanız gerekmez ve ilkede tek bir yerde değişiklik yaparak ilke değişikliklerini daha kolay yönetebilirsiniz.
 
-1. İlkeyi uygulamak istediğiniz site koleksiyonunun giriş sayfasında Site Ayarlar yerini alan **Ayarlar**![ Tüm Ayarlar dişlisini seçin.](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Site Ayarlar**.
+1. İlkeyi uygulamak istediğiniz site koleksiyonunun giriş sayfasında, Site Ayarları'nın yerini alan **Ayarlar**![Küçük Ayarlar dişlisini seçin.](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png)\> **Site Ayarları**.
 
-   Gruba bağlı SharePoint bir sitede **, Ayarlar'a** tıklayın, **Site İçeriği'ne** tıklayın ve ardından **Site Ayarlar'ne** tıklayın.
+   SharePoint grubuna bağlı bir sitede **Ayarlar'a**, **Site İçeriği'ne** ve ardından **Site Ayarları'nı** tıklatın.
 
-2. Site Ayarlar sayfasında, **Site Koleksiyonu Yönetimi** \> **İçerik Türü İlke Şablonları** altında.
+2. Site Ayarları sayfasında, **Site Koleksiyonu Yönetimi** \> **İçerik Türü İlke Şablonları** altında.
 
 3. İlkeler sayfasında\>, ilkenin XML dosyasını bulmak için **Gözat'ı** **içeri aktarın**\>.
 

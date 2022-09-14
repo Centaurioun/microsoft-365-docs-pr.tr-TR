@@ -1,8 +1,8 @@
 ---
-title: Cihaz bulma'yi yapılandırma
-description: Temel veya standart bulma kullanarak Microsoft 365 Defender bulma'nın nasıl yapılandırıldığından emin olun
-keywords: temel, standart, uç nokta bulma yapılandırma, cihaz bulma
-ms.prod: m365-security
+title: Cihaz keşif ayarlarını yapılandırın
+description: Temel veya standart bulma kullanarak Microsoft 365 Defender'de cihaz bulmayı yapılandırmayı öğrenin
+keywords: temel, standart, uç nokta bulmayı yapılandırma, cihaz bulma
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,88 +18,88 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 77dbdb290a0f8643bd24e1a3c561b823e5c2e4b3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.subservice: mde
+ms.openlocfilehash: e181d279fa7d3d73578c440d51d2871346b00252
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330601"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67680427"
 ---
-# <a name="configure-device-discovery"></a>Cihaz bulma'yi yapılandırma
+# <a name="configure-device-discovery"></a>Cihaz keşif ayarlarını yapılandırın
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Aşağıdakiler için geçerlidir:**
+**Şunlar için geçerlidir:**
 
-- [Uç Nokta Planı 2 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-Bulma, standart veya temel modda olacak şekilde yalıtabilirsiniz. Ağ ınız içinde etkin bir şekilde cihazları bulmak için standart seçeneği kullanın. Bu seçenek, uç noktaları bulmanızı daha iyi garanti ve daha zengin bir cihaz sınıflandırması sağlar.
+Bulma, standart veya temel modda olacak şekilde yapılandırılabilir. Ağınızdaki cihazları etkin bir şekilde bulmak için standart seçeneği kullanın. Bu seçenek uç noktaların bulunmasını daha iyi garanti eder ve daha zengin cihaz sınıflandırması sağlar.
 
-Standart keşif gerçekleştirmek için kullanılan cihazların listesini özelleştirebilirsiniz. Bu özelliği de destekleyen tüm yerleşik cihazlarda (şu anda - Windows 10 veya daha sonraki bir sürümü ve yalnızca Windows Server 2019 veya daha sonraki cihazlar) standart bulma özelliğini etkinleştirebilirsiniz veya cihaz etiketlerini belirterek cihazlarınızı bir alt küme veya alt küme olarak belirleyebilirsiniz.
+Standart bulma gerçekleştirmek için kullanılan cihazların listesini özelleştirebilirsiniz. Bu özelliği de destekleyen tüm eklenen cihazlarda standart bulmayı etkinleştirebilirsiniz (şu anda - Windows 10 veya üzeri ve yalnızca Windows Server 2019 veya üzeri cihazlar) ya da cihaz etiketlerini belirterek cihazlarınızın alt kümesini veya alt kümelerini seçebilirsiniz.
 
-## <a name="set-up-device-discovery"></a>Cihaz bulma'ya ayarlama
+## <a name="set-up-device-discovery"></a>Cihaz bulmayı ayarlama
 
-Cihaz bulma ayarlarını yapmak için, bu portalda aşağıdaki <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender izleyin</a>:
+Cihaz bulmayı ayarlamak için <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a> aşağıdaki yapılandırma adımlarını uygulayın:
 
-Ekran den **Ayarlar** >  **bulma'ya gidin**
+**Ayarlar** > **Cihaz bulma'ya** gidin
 
-1. Yerleşik cihazlarınıza kullanmak üzere bulma modu olarak Basic'i yapılandırmak için Temel'i ve ardından Kaydet'i **seçin.** 
-2. Standart keşif'i kullanmayı seçtiysanız, etkin olasılıklar için hangi cihazları kullanıcaz: tüm cihazlar veya bir alt küme üzerinde cihaz etiketlerini belirterek seçin ve sonra da Kaydet'i **seçin**
-
-> [!NOTE]
->Standart keşif, ağdaki etkin şekilde cihazlarında etkin olarak cihaz sağlamak için çeşitli PowerShell betikleri kullanır. Bu PowerShell betikleri Microsoft tarafından imzalanmış ve şu konumdan yürütülür: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`. Örneğin, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
-
-## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>Cihazları, standart keşiflerde etkin bir şekilde bulmanın dışında tutabilirsiniz
-
-Ağ üzerinde etkin bir şekilde taranmaması gereken cihazlar (örneğin, başka bir güvenlik aracı için amasya olarak kullanılan cihazlar) varsa, taranmalarını önlemek için bir dışlama listesi de tanımlayabilirsiniz. Cihazlar yine Temel bulma modu kullanılarak bulunamaktadır ve her zaman tekrar bulma denemeleri yoluyla da bulunabilirsiniz. Bu cihazlar pasif olarak keşfeder ancak etkin bir şekilde sahip olunmaz.
-
-Cihazları Dışlamalar sayfasında hariç tutulacak **şekilde yapılandırabilirsiniz** .
-
-## <a name="select-networks-to-monitor"></a>Izlenir ağları seçme
-
-Uç Nokta için Microsoft Defender ağı analiz eder ve bunun izlenmesi gereken bir şirket ağı mı yoksa yoksayılabilir şirket dışı bir ağ mı olduğunu belirler. Ağı şirket olarak tanımlamak için, ağ tanımlayıcılarını tüm kiracının istemcilerinde ve kuruluşta yer alan cihazların çoğunluğunun aynı ağ adına bağlı olduğunu raporla aynı varsayılan ağ geçidi ve ATM sunucu adresiyle tüm kiracılarla bağlantılı olarak ayarlarsanız, bunun bir şirket ağı olduğunu varsay ediyoruz. Şirket ağları genelde izleniyor olarak seçilir. Bununla birlikte, şirket dışı ağların bulunduğu cihazları izlemeyi seçerek bu kararı geçersiz kılabilirsiniz.
-
-Hangi ağların iz olacağını belirterek, cihaz bulmanın nerede gerçekleştiril olacağını yapılandırabilirsiniz. Ağ izlenirken, bu ağ üzerinde cihaz bulma yapılabilir.
-
-izlenen ağlar sayfasında cihaz bulmanın gerçekleştiril olduğu **ağların listesi** görüntülenir.
+1. Temel'i eklenen cihazlarınızda kullanılacak bulma modu olarak yapılandırmak istiyorsanız **Temel'i** ve ardından **Kaydet'i** seçin
+2. Standart bulma'yı kullanmayı seçtiyseniz, etkin yoklama için hangi cihazların kullanılacağını seçin: tüm cihazlar veya cihaz etiketlerini belirterek bir alt kümede ve ardından **Kaydet'i** seçin
 
 > [!NOTE]
-> Listede, şirket ağları olarak tanımlanan ağlar görüntülenir. 50'den az ağ şirket ağı olarak tanımlandı ise, listede en çok kullanılan cihaza sahip 50 ağ yer adede kadar görüntülenir.
+>Standart bulma, ağdaki cihazları etkin bir şekilde araştırmak için çeşitli PowerShell betikleri kullanır. Bu PowerShell betikleri Microsoft tarafından imzalanmıştır ve şu konumdan yürütülür: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`. Örneğin, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
 
-izlenen ağlar listesi, son 7 gün içinde ağ üzerinde görülen toplam cihaz sayısına göre sıralenir.
+## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>Cihazları standart bulmada etkin bir şekilde yoklamanın dışında tutma
 
-Aşağıdaki ağ bulma durumları arasında herhangi birini görüntülemek için filtre uygulayabilirsiniz:
+Ağınızda etkin olarak taranmaması gereken cihazlar varsa (örneğin, başka bir güvenlik aracı için bal arısı olarak kullanılan cihazlar), taranmalarını önlemek için bir dışlama listesi de tanımlayabilirsiniz. Cihazların hala Temel bulma modu kullanılarak bulunabileceğini ve çok noktaya yayın bulma denemeleri aracılığıyla da bulunabileceğini unutmayın. Bu cihazlar pasif olarak bulunacaktır ancak etkin bir şekilde yoklamayacaktır.
 
-- **izlenen ağlar** - Cihaz bulmanın gerçekleştir olduğu ağlar.
-- **Yoksayılan** ağlar - Bu ağ yoksayılır ve bu ağ üzerinde cihaz bulma işlemi gerçekleştir won won't.
-- **Hepsi** - Hem izlenen hem de yoksayılan ağlar görüntülenir.
+**Dışlamalar** sayfasında cihazları dışlamak üzere yapılandırabilirsiniz.
 
-### <a name="configure-the-network-monitor-state"></a>Ağ izleme durumunu yapılandırma
+## <a name="select-networks-to-monitor"></a>İzlenecek ağları seçin
 
-Cihaz bulmanın nerede olduğunu siz kontrol edebilirsiniz. izlenen ağlar, cihaz bulmanın gerçekleştiril genellikle şirket ağları olduğu ağlarıdır. Ayrıca ağları yoksayma veya durumu değiştirdikten sonra ilk bulma sınıflandırmayı seçmeyi de seçebilirsiniz.
+Uç Nokta için Microsoft Defender bir ağı analiz eder ve bunun izlenmesi gereken bir şirket ağı mı yoksa yoksa yoksayılabilir kurumsal olmayan bir ağ mı olduğunu belirler. Bir ağı şirket olarak tanımlamak için, ağ tanımlayıcılarını tüm kiracının istemcileri arasında ilişkilendiriyoruz ve kuruluştaki cihazların çoğu aynı ağ adına bağlı olduklarını bildiriyorsa, aynı varsayılan ağ geçidi ve DHCP sunucusu adresiyle bunun bir kurumsal ağ olduğunu varsayarız. Şirket ağları genellikle izlenmesi için seçilir. Ancak, eklenen cihazların bulunduğu şirket dışı ağları izlemeyi seçerek bu kararı geçersiz kılabilirsiniz.
 
-İlk bulma sınıflandırması seçme, sistem tarafından yapılan varsayılan ağ izleme durumunu uygulama anlamına gelir. Varsayılan sistem tarafından yapılan ağ izleme durumunun seçimi, şirket olarak tanımlanan, şirket dışı olarak tanımlanan ağların ve şirket dışı olarak tanımlanan ağların otomatik olarak yok sayılacak olması anlamına gelir.
+Hangi ağların izleneceğini belirterek cihaz bulmanın nerede gerçekleştirilebileceğini yapılandırabilirsiniz. Bir ağ izlendiğinde, üzerinde cihaz bulma işlemi gerçekleştirilebilir.
 
-1. Cihaz **bulma Ayarlar > seçin**.
-2. izlenen **ağlar'ı seçin**.
-3. Ağ listesini görüntüleme.
+cihaz bulma işleminin gerçekleştirilebileceği ağların listesi **, İzlenen ağlar** sayfasında gösterilir.
+
+> [!NOTE]
+> Listede, şirket ağları olarak tanımlanan ağlar gösterilir. 50'den az ağ kurumsal ağ olarak tanımlanırsa, liste en çok eklenen cihazlara sahip en fazla 50 ağ gösterir.
+
+İzlenen ağların listesi, ağda son 7 gün içinde görülen toplam cihaz sayısına göre sıralanır.
+
+Aşağıdaki ağ bulma durumlarından herhangi birini görüntülemek için bir filtre uygulayabilirsiniz:
+
+- **İzlenen ağlar** - Cihaz bulma işleminin gerçekleştirildiği ağlar.
+- **Yoksayılan ağlar** - Bu ağ yoksayılır ve cihaz bulma işlemi gerçekleştirilmez.
+- **Tümü** - Hem izlenen hem de yoksayılan ağlar görüntülenir.
+
+### <a name="configure-the-network-monitor-state"></a>Ağ izleyici durumunu yapılandırma
+
+Cihaz bulmanın nerede gerçekleşeceği sizin denetiminizdir. İzlenen ağlar, cihaz bulma işleminin gerçekleştirileceği yerdir ve genellikle kurumsal ağlardır. Ayrıca, bir durumu değiştirdikten sonra ağları yoksaymayı veya ilk bulma sınıflandırmasını seçebilirsiniz.
+
+İlk bulma sınıflandırmasını seçmek, varsayılan sistem tarafından yapılmış ağ izleyici durumunun uygulanması anlamına gelir. Sistem tarafından yapılan varsayılan ağ izleme durumunun seçilmesi, şirket olduğu belirlenen ağların izleneceği ve şirket dışı olarak tanımlanan ağların otomatik olarak yoksayılacağı anlamına gelir.
+
+1. **Cihaz bulma > Ayarlar'ı** seçin.
+2. **İzlenen ağlar'ı** seçin.
+3. Ağ listesini görüntüleyin.
 4. Ağ adının yanındaki üç noktayı seçin.
-5. İlk keşif sınıflandırmayı izlemek, yoksaymak veya kullanmak isteyip istemediknizi seçin.
+5. İlk bulma sınıflandırmasını izlemek, yoksaymak veya kullanmak isteyip istemediğinizi seçin.
 
     > [!WARNING]
     >
-    > - Şirket ağı olarak Uç Nokta için Microsoft Defender tarafından tanımilmeyen bir ağı izlemenin izlenmesi, şirket ağınız dışında cihaz keşfine neden olabilir ve bu nedenle ev cihazlarını veya şirket dışı diğer cihazları algılanabilir.
-    > - Ağı yoksaymak, o ağda cihazları izleme ve keşfetmeyi durdurur. Önceden keşfedilen cihazlar stoktan çıkarılamaz, ancak artık güncelleştirilmez ve uç nokta için Defender'ın veri bekletme süresi sona erinceye kadar ayrıntılar korunur.
-    > - Şirket dışı ağları izlemeyi seçmeden önce, bunu yapma izniniz olduğundan emin olun. <br>
+    > - Uç Nokta için Microsoft Defender tarafından şirket ağı olarak tanımlanmayan bir ağı izlemeyi seçmek, şirket ağınızın dışında cihaz bulma işlemine neden olabilir ve bu nedenle ev veya şirket dışı cihazları algılayabilir.
+    > - Bir ağı yoksaymayı seçmek, o ağdaki cihazları izlemeyi ve bulmayı durdurur. Önceden bulunan cihazlar envanterden kaldırılmaz, ancak artık güncelleştirilmez ve Uç Nokta için Defender'ın veri saklama süresi dolana kadar ayrıntılar korunur.
+    > - Şirket dışı ağları izlemeyi seçmeden önce, bunu yapmak için izniniz olduğundan emin olmanız gerekir. <br>
 
-6. Değişikliği yapmak istediğinize onaylayın.
+6. Değişikliği yapmak istediğinizi onaylayın.
 
-## <a name="explore-devices-in-the-network"></a>Ağ'daki cihazları keşfedin
+## <a name="explore-devices-in-the-network"></a>Ağdaki cihazları keşfetme
 
-Ağ listesinde açıklanan her ağ adı hakkında daha fazla bağlam elde etmek için aşağıdaki gelişmiş arama sorgusunu kullanabilirsiniz. Sorgu, son 7 gün içinde belirli bir ağa bağlı olan tüm yerleşik cihazları listeler.
+Ağ listesinde açıklanan her ağ adı hakkında daha fazla bağlam elde etmek için aşağıdaki gelişmiş tehdit avcılığı sorgusunu kullanabilirsiniz. Sorgu, son 7 gün içinde belirli bir ağa bağlı olan tüm eklenen cihazları listeler.
 
 ```kusto
 DeviceNetworkInfo
@@ -112,9 +112,9 @@ DeviceNetworkInfo
 | summarize arg_max(Timestamp, *) by DeviceId
 ```
 
-## <a name="get-information-on-device"></a>Cihaz hakkında bilgi al
+## <a name="get-information-on-device"></a>Cihazla ilgili bilgi alma
 
-Belirli bir cihaza en son tam bilgileri almak için aşağıdaki gelişmiş arama sorgusunu kullanabilirsiniz.
+Belirli bir cihazda en son eksiksiz bilgileri almak için aşağıdaki gelişmiş tehdit avcılığı sorgusunu kullanabilirsiniz.
 
 ```kusto
 DeviceInfo
@@ -125,4 +125,4 @@ DeviceInfo
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Cihaz keşfine genel bakış](device-discovery.md)
-- [Cihaz bulma SSS](device-discovery-faq.md)
+- [Cihaz bulma hakkında SSS](device-discovery-faq.md)

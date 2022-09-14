@@ -4,7 +4,8 @@ ms.reviewer: ''
 description: Bu bölümde karşılamanız gereken temel altyapı gereksinimleri ve veri erişimi ve uyumluluğuyla ilgili önemli bilgiler özetlenmiştir
 keywords: yönetilen tehdit avcılığı hizmeti, yönetilen tehdit avcılığı, yönetilen algılama ve yanıt (MDR) hizmeti, MTE, Microsoft Tehdit Uzmanları, MTE-TAN, defender uzmanları bildirimi, Hedefli Saldırı Bildirimi, tehdit avcılığı ve analiz için Microsoft Defender Uzmanları.
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 51e882c879f9365fbdc5b4a70d2ade106d061d51
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 5c91ef8dc31faa733d50417c2a9279e50f8bd202
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276230"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679833"
 ---
 # <a name="before-you-begin-using-defender-experts-for-hunting"></a>Avcılık için Defender Uzmanlarını kullanmaya başlamadan önce
 

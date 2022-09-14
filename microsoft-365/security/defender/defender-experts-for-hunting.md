@@ -4,7 +4,8 @@ ms.reviewer: ''
 description: Avcılık için Defender Uzmanları, uç noktalar arasında avlanmak için uç noktanın ötesine geçen proaktif bir tehdit avcılığı hizmetidir
 keywords: savunma uzmanları bildirimleri, yönetilen tehdit avcılığı, yönetilen algılama ve yanıt (MDR) hizmeti, MTE, Microsoft Tehdit Uzmanları, MTE-TAN, hedefli saldırı bildirimi, Hedefli Saldırı Bildirimi, tehdit avcılığı ve analiz için Microsoft Defender Uzmanları.
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 899e7052d5091e8ef161dc122b83b6f34532de2c
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 9577c2bf6b9b1d384f172c4f5c55e5df44a290c5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275878"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67678679"
 ---
 # <a name="microsoft-defender-experts-for-hunting"></a>Avcılık için Microsoft Defender Uzmanları
 

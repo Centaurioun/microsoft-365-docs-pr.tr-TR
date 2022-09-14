@@ -2,7 +2,7 @@
 title: Gelişmiş tehdit avcılığı şeması başvurusu
 description: Tehdit avcılığı sorguları çalıştırabileceğiniz verileri anlamak için gelişmiş tehdit avcılığı şemasındaki tablolar hakkında bilgi edinin.
 keywords: gelişmiş avcılık, tehdit avcılığı, siber tehdit avcılığı, mdatp, microsoft defender atp, uç nokta için microsoft defender, wdatp arama, sorgu, telemetri, şema başvurusu, kusto, tablo, veriler
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
-ms.technology: mde
-ms.openlocfilehash: 76c9f55e99ba13417403a6f9ac2d03913f792326
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.subservice: mde
+ms.openlocfilehash: d53f0cb437a79e4a6841293833dd0f76c014154d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326331"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679745"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de gelişmiş tehdit avcılığı şemasını anlama
 

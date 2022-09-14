@@ -3,7 +3,7 @@ title: Olaylar için Akış ayarlamak için Power Automate Bağlayıcısı'nı k
 ms.reviewer: ''
 description: Kiracınızda yeni bir olay oluştuğunda tetiklenecek bir akış oluşturmak için Uç Nokta için Microsoft Defender Flow bağlayıcısını kullanın.
 keywords: akış, desteklenen api'ler, api, Microsoft flow, sorgu, otomasyon, power automate
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.technology: mde
+ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 2c800b5e36f7c3f19a3ed11e7a33e9040ffffad2
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 4cacdf602f732478133d8a6c98ea3be3efa1a69f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328024"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67679295"
 ---
 # <a name="how-to-use-power-automate-connector-to-set-up-a-flow-for-events"></a>Olaylar için Akış ayarlamak için Power Automate Bağlayıcısı'nı kullanma
 
