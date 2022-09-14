@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - zerotrust-solution
 description: Kuruluşunuz için Microsoft Purview Bilgi Koruması dağıtmaya yönelik açıklayıcı kılavuz.
-ms.openlocfilehash: 4954680126bc4390f88c28819950032aab36348b
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: f1d358454e54a41c2cb20ec4dc31ec47db5d92a8
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069465"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663289"
 ---
 # <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Microsoft Purview ile bilgi koruma çözümü dağıtma
 
@@ -108,4 +108,4 @@ Danışmanlar ve yöneticiler için öğrenme modülleri:
 
 Kullanıcılarınızı kendileri için yapılandırdığınız duyarlılık etiketlerini uygulama ve kullanma konusunda eğitmeye yardımcı olmak için [duyarlılık etiketleri için son kullanıcı belgelerine](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels) bakın.
 
-Teams için veri kaybı önleme ilkelerini dağıttığınızda, bu teknolojiye giriş olarak aşağıdaki son kullanıcı kılavuzunu, görebileceği bazı olası iletilerle yararlı bulabilirsiniz: [Veri kaybını önleme (DLP) ve iletişim uyumluluk ilkeleriyle ilgili Teams iletileri ](https://support.microsoft.com/office/teams-messages-about-data-loss-prevention-dlp-and-communication-compliance-policies-c5631c3f-f61b-4306-a6ac-6603d9fc5ff0).
+Teams için veri kaybı önleme ilkeleri dağıttığınızda, bu teknolojiye giriş olarak aşağıdaki son kullanıcı kılavuzunu, görebilecekleri bazı olası iletilerle yararlı bulabilirsiniz: [Veri kaybı önleme (DLP) ve iletişim uyumluluk ilkeleriyle ilgili Teams iletileri](https://support.microsoft.com/office/teams-messages-about-data-loss-prevention-dlp-and-communication-compliance-policies-c5631c3f-f61b-4306-a6ac-6603d9fc5ff0).

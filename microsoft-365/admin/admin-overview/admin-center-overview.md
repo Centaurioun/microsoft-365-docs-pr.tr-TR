@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ortak görevleri yönetmek için Microsoft 365 yönetim merkezi basitleştirilmiş görünümü veya daha karmaşık ayarlar ve görevler için pano görünümünü kullanın.
-ms.openlocfilehash: 285769f9d7d91169dbf505ee125cab1a15d5adcd
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 993440c3d3fbd634b50f90305075ad626b6b4c4a
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084685"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662299"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezine genel bakış
 
@@ -186,29 +187,29 @@ Microsoft 365 yönetim merkezi 40 dilde tamamen yerelleştirilmiştir.
 |---------|---------|
 |Arapça | Ar |
 |Bulgarian | Bg |
-|Catalan | CA |
-|Czech | bilgisayar bilimi |
-|Danish | da |
+|Catalan | Ca |
+|Czech | Cs |
+|Danish | Savcı |
 |German | de |
 |Greek | El |
 |Spanish | Es |
 |English | en |
 |Estonian | et |
-|Basque | AB |
-|Finnish | fi |
+|Basque | Ab |
+|Finnish | Fi |
 |French | Fr |
 |Galician | Gl |
-|Hebrew | o |
+|Hebrew | Hge |
 |Croatian | Hr |
 |Hungarian | Hu |
 |Indonesian  | Kimliği |
-|Italian | o |
+|Italian | bu |
 |Japanese | Ja |
 |Korean | ko |
-|Lithuanian | Lt |
+|Lithuanian | Teğmen |
 |Latvian | Lv |
 |Dutch | Nl |
-|Norveç dili | Hayır |
+|Norveç dili | No |
 |Polish | Pl |
 |Portekizce (Brezilya) | Pt |
 |Portekizce (Portekiz) | pt-pt |
@@ -219,9 +220,9 @@ Microsoft 365 yönetim merkezi 40 dilde tamamen yerelleştirilmiştir.
 |Sırpça (Kiril)  | sr-cyrl |
 |Serbian Latin | Sr |
 |Swedish | Sv |
-|Thai | lik |
+|Thai | th |
 |Turkish | tr |
-|Ukrainian | Birleşik Krallık |
+|Ukrainian | Ingiltere |
 |Vietnamese | Vı |
 |Chinese Simplified | zh-hans |
 |Chinese Traditional | zh-hant |

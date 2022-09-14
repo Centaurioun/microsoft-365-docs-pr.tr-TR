@@ -1,5 +1,5 @@
 ---
-title: VPN ortamlarında Stream ve canlı etkinlikler için dikkat edilmesi gereken noktalar
+title: VPN ortamlarında Akış ve canlı etkinlikler için özel dikkat edilmesi gerekenler
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -16,85 +16,85 @@ ms.collection:
 - remotework
 f1.keywords:
 - NOCSH
-description: VPN ortamlarında Stream ve canlı etkinlikler için dikkat edilmesi gereken noktalar
-ms.openlocfilehash: eb2e57b844f06bc3b1e005aa1095794b176bba94
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: VPN ortamlarında Akış ve canlı etkinlikler için özel dikkat edilmesi gerekenler
+ms.openlocfilehash: 7970bef10eb7483af633f41eb19f9e224de58ee6
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63705262"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662475"
 ---
-# <a name="special-considerations-for-stream-and-live-events-in-vpn-environments"></a>VPN ortamlarında Stream ve canlı etkinlikler için dikkat edilmesi gereken noktalar
+# <a name="special-considerations-for-stream-and-live-events-in-vpn-environments"></a>VPN ortamlarında Akış ve canlı etkinlikler için özel dikkat edilmesi gerekenler
 
 >[!NOTE]
->Bu makale, uzak kullanıcılar için iyileştirmeyi Microsoft 365 makale kümelerinin bir bölümüdir.
+>Bu makale, uzak kullanıcılar için Microsoft 365 iyileştirmesini ele alan bir makale kümesinin parçasıdır.
 
->- Uzak kullanıcılar için Microsoft 365 bağlantısını en iyi duruma getirmek için VPN bölünmüş şifreleme kullanma hakkında genel bir bakış için bkz[.](microsoft-365-vpn-split-tunnel.md) Genel Bakış: Vpn bölünmüş Microsoft 365.
->- VPN bölünmüş bölmeyi uygulama hakkında ayrıntılı kılavuz için bkz. [VPN bölünmüş bölmeyi uygulama Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
->- VPN bölünmüş bölme senaryolarının ayrıntılı listesi için bkz. Daha fazla bilgi için bkz. Genel [VPN bölünmüş Microsoft 365](microsoft-365-vpn-common-scenarios.md).
->- VPN bölünmüş trafiğinde Teams trafiğinin güvenliğini sağlama kılavuzu için bkz. VPN bölünmüş trafiği için Teams trafiğinin güvenliğini [sağlama](microsoft-365-vpn-securing-teams.md).
->- Çin'deki kullanıcılar için Microsoft 365 kiracı performansını iyileştirme hakkında bilgi için bkz. [Microsoft 365 için performans iyileştirme.](microsoft-365-networking-china.md)
+>- Uzak kullanıcılar için Microsoft 365 bağlantısını iyileştirmek üzere VPN bölünmüş tünel kullanmaya genel bakış için bkz [. Genel Bakış: Microsoft 365 için VPN bölünmüş tünel oluşturma](microsoft-365-vpn-split-tunnel.md).
+>- VPN bölünmüş tüneli uygulama hakkında ayrıntılı yönergeler için bkz. [Microsoft 365 için VPN bölünmüş tüneli uygulama](microsoft-365-vpn-implement-split-tunnel.md).
+>- VPN bölünmüş tünel senaryolarının ayrıntılı listesi için bkz. [Microsoft 365 için yaygın VPN bölünmüş tünel senaryoları](microsoft-365-vpn-common-scenarios.md).
+>- VPN bölünmüş tünel ortamlarında Teams medya trafiğinin güvenliğini sağlama yönergeleri için bkz. [VPN bölünmüş tüneli için Teams medya trafiğinin güvenliğini sağlama](microsoft-365-vpn-securing-teams.md).
+>- Çin'deki kullanıcılar için Microsoft 365 dünya çapında kiracı performansını iyileştirme hakkında bilgi için bkz. [Çin kullanıcıları için Microsoft 365 performans iyileştirmesi](microsoft-365-networking-china.md).
 
-Microsoft 365 Canlı Etkinlikler trafiği (bu, Teams tarafından üretilen canlı etkinliklere katılanları ve Teams, Stream veya Yammer aracılığıyla dış kodlayıcıyla üretilenleri içerir) ve isteğe bağlı Stream trafiği şu anda hizmet için [URL/IP](urls-and-ip-address-ranges.md) listesinde Varsayılan yerine En İyi Duruma getirmek için kategorilere ayrılmıştır.  Bu uç noktalar, diğer hizmetler **tarafından** da kullanılmaktadır ve CDN'lerde barındırıldıkları için Varsayılan olarak kategorilere ayrılmıştır. Müşteriler genel olarak bu trafik türüne ara sunucu olmayı ve bunlar gibi uç noktalarda normalde yapılan güvenlik öğelerini uygulamayı tercih eder.
+Microsoft 365 Canlı Etkinlikler trafiği (Teams tarafından üretilen canlı etkinliklere katılanları ve Teams, Stream veya Yammer aracılığıyla bir dış kodlayıcıyla üretilenleri içerir) ve isteğe bağlı Akış trafiği şu anda [hizmetin URL/IP listesinde](urls-and-ip-address-ranges.md) **Varsayılan** ve **İyileştir** olarak kategorilere ayrılmıştır. Bu uç noktalar, diğer hizmetler tarafından da kullanılabilecek CDN'lerde barındırıldığından **Varsayılan** olarak kategorilere ayrılmıştır. Müşteriler genellikle bu tür trafiğe ara sunuculuk yapmak ve normalde bunlar gibi uç noktalara yapılan tüm güvenlik öğelerini uygulamayı tercih eder.
 
-Birçok müşteri VPN altyapısı üzerinden yüksek hacimli ve gecikmeli trafiği yönlendirmek yerine kullanıcılarını doğrudan yerel İnternet bağlantılarından Stream/Live Events'e bağlamak için gereken URL/IP verilerini istedi. Normalde, hem ayrılmış ad alanları hem de uç noktalar için doğru IP bilgileri olmadan mümkün değildir ve varsayılan olarak kategorilere ayrılmış Microsoft 365 uç noktaları için **sağ değildir**.
+Birçok müşteri, yüksek hacimli ve gecikmeye duyarlı trafiği VPN altyapısı üzerinden yönlendirmek yerine kullanıcılarını doğrudan yerel internet bağlantılarından Stream/Live Events'e bağlamak için gereken URL/IP verilerini istedi. Genellikle, hem ayrılmış ad alanları hem de uç noktalar için doğru IP bilgileri olmadan bu mümkün değildir. Bu bilgiler **Varsayılan** olarak kategorilere ayrılmış Microsoft 365 uç noktaları için sağlanmaz.
 
-Zorlamalı bir VPN kullanan istemcilerden Stream/Live Events hizmetine doğrudan bağlantı sağlamak için aşağıdaki adımları kullanın. Bu çözüm, müşterilere evden çalışma senaryolarından dolayı yüksek ağ trafiği varken CANLı Etkinlikler trafiğini VPN üzerinden yönlendirmeyi önleme seçeneği sağlamak üzere tasarlanmıştır. Mümkünse, hizmete denetimli bir proxy aracılığıyla erişmeniz önerilir.
+Zorlamalı tünel VPN'i kullanan istemcilerden Stream/Live Events hizmeti için doğrudan bağlantıyı etkinleştirmek için aşağıdaki adımları kullanın. Bu çözüm, müşterilere evden çalışma senaryoları nedeniyle yüksek ağ trafiği varken Canlı Olaylar trafiğini VPN üzerinden yönlendirmekten kaçınma seçeneği sunmak için tasarlanmıştır. Mümkünse, inceleyen bir ara sunucu aracılığıyla hizmete erişmeniz önerilir.
 
 >[!NOTE]
->Bu çözümün kullanımı, sağlanan IP adreslerine çözüm olmayan ve dolayısıyla VPN'den çapraz geçiş yapılan hizmet öğeleri olabilir, ancak akış verileri gibi yüksek hacimli trafiklerin toplu olması gerekir. Canlı Etkinlikler/Akış kapsamının dışında bu yüklemeyle karşılaşan başka öğeler de olabilir, ancak doğrudan gitmeden önce hem FQDN'ye hem de IP eşleşmesini karşılamaları gerektiği  için bunlar sınırlı olacaktır.
+>Bu çözümü kullanarak, sağlanan IP adreslerine çözümlanmayan ve dolayısıyla VPN'yi geçen hizmet öğeleri olabilir, ancak akış verileri gibi yüksek hacimli trafiğin toplu olması gerekir. Canlı Etkinlikler/Akış kapsamı dışında bu yükten yakalanan başka öğeler de olabilir, ancak doğrudan gitmeden önce hem FQDN'yi hem de IP eşleşmesini karşılamaları gerektiğinden bunlar  sınırlı olmalıdır.
 
 >[!IMPORTANT]
->Müşterilere Canlı Etkinlikler için performans artışı üzerinden VPN'i atlayan daha fazla trafik gönderme riskini değerlendirmeleri önerilir.
+>Müşterilerin Canlı Etkinlikler için performans artışı üzerinden VPN'i atlayan daha fazla trafik gönderme riskini tartmaları önerilir.
 
-Canlı Etkinlikler ve Akış için zorunlu Teams özel durumu uygulamak için aşağıdaki adımlar uygulanmalıdır:
+Teams Live Events ve Stream için zorlamalı tünel özel durumunu uygulamak için aşağıdaki adımlar uygulanmalıdır:
 
-## <a name="1-configure-external-dns-resolution"></a>1. Dış DNS çözümlemelerini yapılandırma
+## <a name="1-configure-external-dns-resolution"></a>1. Dış DNS çözümlemeyi yapılandırma
 
-İstemcilerin IP adreslerinde aşağıdaki ana bilgisayar adlarının çözümlensin diye harici, tekrarlayan DNS çözümlemesi kullanılabilir olması gerekir.
+İstemcilerin, aşağıdaki ana bilgisayar adlarının IP adreslerine çözümlenebilmesi için dış, özyinelemeli DNS çözümlemesinin kullanılabilir olması gerekir.
 
 - \*.azureedge.net
 - \*.media.azure.net
 - \*.bmc.cdn.office.net
 
-**\*.azureedge.net** Stream olayları için kullanılır (Microsoft Stream'de canlı akış için kodlayıcıları yapılandırma [- Microsoft Stream | Microsoft Docs](/stream/live-encoder-setup)).
+**\*.azureedge.net** Stream olayları için kullanılır ([kodlayıcıları Microsoft Stream canlı akış için yapılandırma - Microsoft Stream | Microsoft Docs](/stream/live-encoder-setup)).
 
-**\*.media.azure.net** **ve\* .bmc.cdn.office.net**, Teams istemcisinde zamanlanan Teams tarafından üretilen Canlı Etkinlikler (Hızlı Başlangıç etkinlikleri, RTMP-In desteklenen etkinlikler [Yol Haritası Kimliği 84960]) için kullanılır.
+**\*.media.azure.net** ve **\*.bmc.cdn.office.net** , Teams istemcisinden zamanlanan Teams tarafından üretilen Canlı Etkinlikler (Hızlı Başlangıç olayları RTMP-In desteklenen etkinlikler [Yol Haritası Kimliği 84960]) için kullanılır.
 
- Bu uç noktaların bazıları Stream/Live Events dışındaki diğer öğelerle paylaşılır, VPN çözümünüzde (IP yerine FQDN'de çalışıyor olması gibi) teknik olarak mümkün olsa bile VPN yüklemesini yapılandırmak için yalnızca bu FQDN'leri kullanmak iyi değildir.
+ Bu uç noktalardan bazıları Stream/Live Events dışındaki diğer öğelerle paylaşılır; VPN çözümünüzde teknik olarak mümkün olsa bile (örneğin, IP yerine FQDN'de çalışıyorsa) VPN boşaltmayı yapılandırmak için yalnızca bu FQDN'leri kullanmanız önerilmiyor.
 
-FQDN'ler VPN yapılandırmasında gerekli değildir, yalnızca ILGILI trafiği doğrudan göndermek üzere IP'lerle birlikte PAC dosyalarında kullanılabilir.
+FQDN'ler VPN yapılandırmasında gerekli değildir, yalnızca ILGILI trafiği doğrudan göndermek için IP'lerle birlikte PAC dosyalarında kullanım içindir.
 
 ## <a name="2-implement-pac-file-changes-where-required"></a>2. PAC dosyası değişikliklerini uygulama (gerektiğinde)
 
-VPN'deyken trafiği ara sunucu üzerinden yönlendiren PAC dosyası kullanan kuruluşlarda, bu normalde FQDN'ler kullanılarak elde edilir. Bununla birlikte, Stream/Live Events'de, **\*** sağlanan ana bilgisayar adları .azureedge.net gibi joker karakterler içerir ve bu aynı zamanda tam IP listeleri sağlamak mümkün olmayan diğer öğeleri de kapsar. Dolayısıyla, istek tek başına DNS joker karakteri eşleşmesine göre doğrudan gönderilirse, bu makalenin [sonraki 3](#3-configure-routing-on-the-vpn-to-enable-direct-egress) . Adımlarında isteğin doğrudan yolu üzerinden hiçbir yönlendirme yoksa bu uç noktalara giden trafik engellenir.
+VPN'deyken trafiği bir ara sunucu üzerinden yönlendirmek için PAC dosyası kullanan kuruluşlarda bu normalde FQDN'ler kullanılarak gerçekleştirilir. Ancak, Stream/Live Events ile, sağlanan konak adları **.azureedge.net gibi\*** joker karakterler içerir ve tam IP listeleri sağlamanın mümkün olmadığı diğer öğeleri de kapsar. Bu nedenle, istek yalnızca DNS joker karakteri eşleşmesine göre doğrudan gönderilirse, bu uç noktalara giden trafik engellenir, aksi takdirde bu makalenin [sonraki 3. adımında](#3-configure-routing-on-the-vpn-to-enable-direct-egress) bu uç noktalara yönelik doğrudan yol üzerinden giden trafik engellenir.
 
-Bu sorunu çözmek için, aşağıdaki IP'leri sağlanmıştır ve 1. Adımda açıklandığı gibi örnek PAC dosyasında ana bilgisayar adlarla [birlikte kullanabiliriz](#1-configure-external-dns-resolution). PAC dosyası, URL'nin Stream/Live Events için kullanılanlarla eş olup eşleşmesi ve eş olup eşleşmesinin ardından, DNS aramalarından döndürülen IP'nin hizmet için sağlananlarla eş olup eşleşmesi için de kontrol yapar. Her _iki_ eşleşme de aynı olursa, trafik doğrudan yönlendirildi. Öğeden biri (FQDN/IP) eş eş olmuyorsa trafik ara sunucuya gönderilir. Sonuç olarak, yapılandırma hem IP hem de tanımlanmış ad alanlarının kapsamı dışında IP'ye çözüm olarak her şeyin VPN üzerinden proxy'den normalde çapraz geçiş yapmasını sağlar.
+Bunu çözmek için aşağıdaki IP'leri sağlayabilir ve [bunları 1. Adımda](#1-configure-external-dns-resolution) açıklandığı gibi örnek bir PAC dosyasındaki konak adlarıyla birlikte kullanabiliriz. PAC dosyası, URL'nin Stream/Live Events için kullanılanlarla eşleşip eşleşmediğini denetler ve eşleşiyorsa, bir DNS aramasından döndürülen IP'nin hizmet için sağlananlarla eşleşip eşleşmediğini de denetler. _Her ikisi de_ eşleşirse trafik doğrudan yönlendirilir. Herhangi bir öğe (FQDN/IP) eşleşmiyorsa, trafik ara sunucuya gönderilir. Sonuç olarak yapılandırma, hem IP hem de tanımlı ad alanlarının kapsamı dışında bir IP'ye çözümlenen her şeyin vpn üzerinden normal şekilde ara sunucudan geçişini sağlar.
 
-### <a name="gathering-the-current-lists-of-cdn-endpoints"></a>Uç Noktaların geçerli CDN toplama
+### <a name="gathering-the-current-lists-of-cdn-endpoints"></a>GEÇERLI CDN Uç Noktaları listelerini toplama
 
-Canlı Etkinlikler, en CDN, kalite ve güvenlik için müşterilere akış sağlamak için birden fazla kullanıcı sağlayıcısı kullanır. Şu anda hem Microsoft'Azure CDN hem de Verizon'dan gelen e-postaların her ikisi de kullanılır. Zamanla bu durum bölgesel kullanılabilirlik gibi durumlar nedeniyle değiştirilebilir. Bu makale, IP aralıklarında güncel bilgi alamama olanak sağlayan bir kaynaktır.
+Canlı Etkinlikler, müşterilere akış sağlamak, en iyi kapsamı, kaliteyi ve dayanıklılığı sağlamak için birden çok CDN sağlayıcısı kullanır. Şu anda hem Microsoft'tan hem de Verizon'dan Azure CDN kullanılmaktadır. Zaman içinde bu durum bölgesel kullanılabilirlik gibi durumlardan dolayı değiştirilebilir. Bu makale, IP aralıklarında güncel kalmanızı sağlayan bir kaynaktır.
 
-Microsoft'tan Azure CDN için listeyi Azure IP Aralıkları ve Hizmet Etiketlerini İndir [( Resmi Microsoft İndirme](https://www.microsoft.com/download/details.aspx?id=56519) Merkezi'nden Genel Bulut - JSON hizmet etiketi *AzureFrontdoor.Frontend* için özel olarak bakmanız gerekir; *addressPrefixes*, IPv4/IPv6 alt ağlarını gösterir. Zaman içinde IP'ler değişebilir, ancak hizmet etiket listesi her zaman kullanımdan önce güncelleştirilir.
+Microsoft'tan Azure CDN için, Resmi [Microsoft İndirme Merkezi'nden Azure IP Aralıklarını ve Hizmet Etiketlerini – Genel Bulutu İndir](https://www.microsoft.com/download/details.aspx?id=56519) - listesinden listeyi indirebilirsiniz; JSON'da *AzureFrontdoor.Frontend* hizmet etiketine özel olarak bakmanız gerekir; *addressPrefixes* , IPv4/IPv6 alt ağlarını gösterir. Zaman içinde IP'ler değişebilir, ancak hizmet etiketi listesi kullanılmadan önce her zaman güncelleştirilir.
 
-Verizon (Edgecast) [https://docs.microsoft.com/rest/api/cdn/edge-nodes/list](/rest/api/cdn/edge-nodes/list) Azure CDN için kapsamlı bir liste bulmak için (Dene'ye **tıklayın) -** **Premium\_ Verizon** bölümüne özel olarak bakabilirsiniz. Bu API'nin tüm Edgecast IP'lerini (origin ve Anycast) gösterir. Şu anda API'nin kaynak ile Anycast arasındaki farkı ayırt etme mekanizması yok.
+Verizon'dan Azure CDN (Edgecast) için [Edge Düğümleri - Liste](/rest/api/cdn/edge-nodes/list) ( **Dene'ye** tıklayın) kullanarak kapsamlı bir liste bulabilirsiniz.  **Özel olarak Premium\_Verizon**  bölümüne bakmanız gerekir. Bu API'nin tüm Edgecast IP'lerini (origin ve Anycast) gösterdiğini unutmayın. Şu anda API'nin kaynak ile Anycast arasında ayrım yapma mekanizması yoktur.
 
-Bunu bir PAC dosyasında uygulamak için, FQDN aracılığıyla Microsoft 365 Trafiği doğrudan en iyi duruma getirme (önerilen en iyi yöntem) ve kritik Stream/Live Events trafiğini doğrudan FQDN ve döndürülen IP adresinin bir bileşimiyle gönderen aşağıdaki örneği kullanabilirsiniz. _Contoso_ yer tutucu adı, kiracınız adına göre düzenlenemez; burada _Contoso_ yer tutucu contoso.onmicrosoft.com
+Bunu bir PAC dosyasında uygulamak için FQDN aracılığıyla Microsoft 365 En iyi duruma getirme trafiğini doğrudan (en iyi yöntem önerilir) ve FQDN ile döndürülen IP adresinin bir bileşimi aracılığıyla doğrudan kritik Akış/Canlı Olaylar trafiğini gönderen aşağıdaki örneği kullanabilirsiniz. Contoso yer tutucu adının _, contoso'nun_ contoso.onmicrosoft.com 
 
 #### <a name="example-pac-file"></a>Örnek PAC dosyası
 
-PAC dosyalarını oluşturma örneği:
+PAC dosyalarının nasıl oluşturulacağıyla ilgili bir örnek aşağıda verilmiştir:
 
-1. Aşağıdaki betiği yerel sabit diske kaydedtik olarak _Get-TLEPacFile.ps1_.
-1. [Verizon URL'sine](/rest/api/cdn/edge-nodes/list#code-try-0) gidin ve sonuçta elde edilen JSON'u indirin (bunu cdnedgenodes.json gibi bir dosyaya yapıştırın)
-1. Dosyayı betikle aynı klasöre koyma.
-1. PowerShell penceresinde aşağıdaki komutu çalıştırın. SPO URL'leri için kiracı adını başka bir adla değiştirebilirsiniz. Bu, Tür 2'dir, dolayısıyla **En İyi Duruma** **Getirme** ve İzin Ver (1 türü yalnızca En İyi Duruma Getirme'dir).
+1. Aşağıdaki betiği yerel sabit diskinize _Get-TLEPacFile.ps1_ olarak kaydedin.
+1. [Verizon URL'sine](/rest/api/cdn/edge-nodes/list#code-try-0) gidin ve sonuçta elde edilen JSON dosyasını indirin (kopyalayıp cdnedgenodes.json gibi bir dosyaya yapıştırın)
+1. Dosyayı betikle aynı klasöre yerleştirin.
+1. PowerShell penceresinde aşağıdaki komutu çalıştırın. SPO URL'lerini istiyorsanız başka bir şey için kiracı adını değiştirin. Bu Tür 2 olduğundan **İyileştir** ve **İzin Ver** (Tür 1 yalnızca İyileştir'dir).
 
    ```powershell
    .\Get-TLEPacFile.ps1 -Instance Worldwide -Type 2 -TenantName <contoso> -CdnEdgeNodesFilePath .\cdnedgenodes.json -FilePath TLE.pac
    ```
 
-5. TLE.pac dosyası tüm ad alanlarını ve IPv4/IPv6'ları içerir.
+5. TLE.pac dosyası tüm ad alanlarını ve IP'leri (IPv4/IPv6) içerir.
 
 ##### <a name="get-tlepacfileps1"></a>Get-TLEPacFile.ps1
 
@@ -500,78 +500,78 @@ else
 }
 ```
 
-Betik, **AzurefrontDoor.Frontend'ın** indirme [URL'sini](https://www.microsoft.com/download/details.aspx?id=56519) ve anahtarlarını temel alarak Azure listesini otomatik olarak ayrıştıracaktır, dolayısıyla onu el ile almak gerekmez.
+Betik, Azure listesini **azurefrontdoor.frontend** dosyasının [indirme URL'sine](https://www.microsoft.com/download/details.aspx?id=56519) ve anahtarlarına göre otomatik olarak ayrıştırır, bu nedenle el ile almanıza gerek yoktur.
 
-Bir kez daha, yalnızca FQDN'leri kullanarak VPN yüklemesi gerçekleştirmeniz tavsiye edilir; hem FQDN'leri hem de işlevde IP adreslerini kullanmak, bu yüklemenin Canlı Etkinlikler/Akış da dahil sınırlı bir uç nokta kümesi için kullanımının kapsamının açıklarını sağlar. İşlevin yapılandırılmış olması, FQDN'ler için, istemci tarafından doğrudan listelenenlerle eşleşen bir DNS araması yapılmasına, yani kalan ad alanlarının DNS çözümlemesi değişmeden kalır.
+Ayrıca, yalnızca FQDN'leri kullanarak VPN boşaltması gerçekleştirmeniz önerilmiyor; işlevindeki **hem FQDN'lerin hem de** IP adreslerinin kullanılması, bu yük boşaltmanın kapsamını Canlı Etkinlikler/Akış gibi sınırlı bir uç nokta kümesiyle sınırlandırmaya yardımcı olur. İşlevin yapılandırılma şekli, FQDN için doğrudan istemci tarafından listelenenlerle eşleşen bir DNS araması yapılmasına neden olur; diğer bir deyişle, kalan ad alanlarının DNS çözümlemesi değişmeden kalır.
 
-Canlı Etkinlikler ve Akışla ilgili uç noktaların yükleme riskini sınırlamak isterseniz, **\*bu** riskin büyük bir çoğunun bulunduğu yapılandırmadan .azureedge.net etki alanını kaldırabilirsiniz çünkü bu, tüm Azure CDN müşterileri için kullanılan paylaşılan bir etki alanıdır. Bunun dezavantajı, dış kodlayıcı kullanan her olayın en iyi duruma tabi olmayacak olmasıdır, ancak bu kod içinde üretilen/düzenlenen Teams olur.
+Canlı Etkinlikler ve Akış ile ilgili olmayan uç noktaları boşaltma riskini sınırlamak isterseniz, .azureedge.net etki alanını yapılandırmadan kaldırabilirsiniz. Bu, tüm Azure CDN müşterileri için kullanılan paylaşılan bir etki alanı olduğu için bu riskin büyük bir kısmının bulunduğu yapılandırmadan kaldırabilirsiniz **\***. Bunun dezavantajı, dış kodlayıcı kullanan herhangi bir etkinliğin iyileştirilmeyeceği ancak Teams'de üretilen/düzenlenen etkinliklerin olmasıdır.
 
 ## <a name="3-configure-routing-on-the-vpn-to-enable-direct-egress"></a>3. Doğrudan çıkışı etkinleştirmek için VPN'de yönlendirmeyi yapılandırma
 
-Son adım, trafiğin VPN'ye zorunlu geçiş yoluyla gönderilmeyeceğiden emin olmak için **geçerli CDN** Uç Noktaları listelerini VPN yapılandırmasına toplama konusunda açıklanan Canlı Etkinlik IP'leri için doğrudan bir yönlendirme eklemektir. Daha fazla bilgi için bunun nasıl Microsoft 365 en iyi duruma getirme uç noktalarını, [MICROSOFT 365 için VPN](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) bölünmüş bölmeyi uygulama bölümünde [bulabilirsiniz](microsoft-365-vpn-implement-split-tunnel.md). Bu belgede listelenen Stream/Live Events IP'leri için bu işlem tamamen aynıdır.
+Son adım, trafiğin zorlamalı tünel üzerinden VPN'ye gönderilmediğinden emin olmak için **GEÇERLI CDN Uç Noktaları listelerini** VPN yapılandırmasına toplama bölümünde açıklanan Canlı Etkinlik IP'leri için doğrudan bir yol eklemektir. Microsoft 365 İyileştirme uç noktaları için bunun nasıl gerçekleştirileceği hakkında ayrıntılı bilgi, [Microsoft 365 için VPN bölünmüş tüneli uygulama'nın VPN bölünmüş tüneli](microsoft-365-vpn-implement-split-tunnel.md) uygulama bölümünde bulunabilir.[](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) İşlem, bu belgede listelenen Stream/Live Events IP'leri için tamamen aynıdır.
 
-VPN yapılandırması için yalnızca IP'ler (FQDN'ler değil) CDN Uç [noktaları](#gathering-the-current-lists-of-cdn-endpoints) toplama bağlantısında kullanılacaktır.
+VPN yapılandırması için yalnızca [GEÇERLI CDN Uç Noktaları listelerini toplama bölümünden](#gathering-the-current-lists-of-cdn-endpoints) IP'lerin (FQDN'ler değil) kullanılması gerektiğini unutmayın.
 
 ## <a name="faq"></a>SSS
 
-### <a name="will-this-send-all-my-traffic-to-the-service-direct"></a>Bu tüm trafiğimi doğrudan hizmete gönderecek mi?
+### <a name="will-this-send-all-my-traffic-to-the-service-direct"></a>Bu işlem tüm trafiğimi doğrudan hizmete gönderir mi?
 
-Hayır, bu işlem Canlı Etkinlik veya Video akışı için gecikmeye duyarlı akış trafiğini doğrudan gönderir, diğer tüm trafik yayımlanmış IP'lere çözüm vermezse VPN bağlantısını kullanmaya devam eder.
+Hayır, bu bir Canlı Etkinlik veya Akış videosu doğrudan için gecikmeye duyarlı akış trafiği gönderir; yayımlanan IP'lere çözümlenmezse diğer tüm trafik VPN tünelini kullanmaya devam eder.
 
-### <a name="do-i-need-to-use-the-ipv6-addresses"></a>IPv6 Adreslerini kullanmam gerekir mi?
+### <a name="do-i-need-to-use-the-ipv6-addresses"></a>IPv6 Adreslerini kullanmam gerekiyor mu?
 
-Hayır, bağlantı yalnızca gerekli olduğu zaman IPv4 olabilir.
+Hayır, bağlantı yalnızca gerektiğinde IPv4 olabilir.
 
-### <a name="why-are-these-ips-not-published-in-the-microsoft-365-urlip-service"></a>Bu IP'ler neden URL/IP Microsoft 365 yayımlanmaz?
+### <a name="why-are-these-ips-not-published-in-the-microsoft-365-urlip-service"></a>Bu IP'ler neden Microsoft 365 URL/IP hizmetinde yayımlanmaz?
 
-Microsoft'un, müşterilerin uç nokta kategorisine göre güvenli ve en iyi yönlendirmeyi uygulamak için bilgileri güvenilir bir şekilde kullanamalarını sağlamak için hizmette yer alan bilgilerin biçimi ve türüyle ilgili sıkı denetimler vardır.
+Microsoft, müşterilerin uç nokta kategorisine göre güvenli ve en iyi yönlendirmeyi uygulamak için bilgileri güvenilir bir şekilde kullanabilmesini sağlamak için hizmetteki bilgilerin biçimi ve türüyle ilgili sıkı denetimlere sahiptir.
 
-Varsayılan **uç** nokta kategorisinin çeşitli nedenlerle sağlanan IP bilgileri yoktur (Varsayılan uç noktalar Microsoft'un denetimi dışında olabilir, çok sık değişebilir veya diğer öğelerle paylaşılan bloklar içinde olabilir). Bu nedenle, Varsayılan uç noktalar normal web trafiği gibi denetimli bir ara sunucuya FQDN yoluyla gönderilmek üzere tasarlanmıştır.
+**Varsayılan** uç nokta kategorisinde çok sayıda nedenden dolayı IP bilgisi sağlanmadı (Varsayılan uç noktalar Microsoft'un denetiminin dışında olabilir, çok sık değişebilir veya diğer öğelerle paylaşılan bloklarda olabilir). Bu nedenle Varsayılan uç noktalar, normal web trafiği gibi FQDN aracılığıyla incelenen bir ara sunucuya gönderilecek şekilde tasarlanmıştır.
 
-Bu durumda, yukarıdaki uç noktalar Canlı Etkinlikler veya Akış dışında Microsoft tarafından denetlenen olmayan öğeler tarafından kullanılmaktadır ve dolayısıyla trafik doğrudan gönderilmesi, bu IP'lere çözüm olan başka her şeyi de istemciden gönderme anlamına da gelecektir. Microsoft, küresel krizin benzersiz doğası gereği ve müşterilerimizin kısa vadeli  ihtiyaçlarını karşılamak için yukarıdaki bilgileri, müşterilerin uygun olduğunu göre kullanmaları için sağlanmıştır.
+Bu durumda, yukarıdaki uç noktalar Canlı Etkinlikler veya Stream dışında Microsoft tarafından denetlenmeyen öğeler tarafından kullanılabilecek CDN'lerdir ve bu nedenle trafiğin doğrudan gönderilmesi, bu IP'lere çözümlenen başka bir şeyin de istemciden doğrudan gönderileceği anlamına gelir. Mevcut küresel krizin benzersiz doğası ve müşterilerimizin kısa vadeli ihtiyaçlarını karşılamak için Microsoft, müşterilerin uygun gördükleri şekilde kullanabilmeleri için yukarıdaki bilgileri sağlamıştır.
 
-Microsoft, Live Events uç noktalarını gelecekte uç nokta kategorilerine dahil etmelerine izin verecek şekilde yeniden yapılandırmak için çalışıyor.
+Microsoft, Canlı Etkinlikler uç noktalarını gelecekte İzin Ver/İyileştir uç nokta kategorilerine dahil edilebilmeleri için yeniden yapılandırmaya çalışmaktadır.
 
-### <a name="do-i-only-need-to-allow-access-to-these-ips"></a>Yalnızca bu IP'lere erişim izni vermem gerekir mi?
+### <a name="do-i-only-need-to-allow-access-to-these-ips"></a>Yalnızca bu IP'lere erişime izin vermem mi gerekiyor?
 
-Hayır, HIZMETIN çalışması için URL/IP hizmetinin Gerekli olarak işaretlenmiş [uç noktalarına](urls-and-ip-address-ranges.md) erişim çok önemlidir. Ayrıca, Stream için işaretlenmiş isteğe bağlı uç noktalar (ID 41-45) gereklidir.
+Hayır, HIZMETIN çalışması için [URL/IP hizmetindeki](urls-and-ip-address-ranges.md) **Gerekli** işaretli uç noktaların tümüne erişim önemlidir. Buna ek olarak, Stream (ID 41-45) için işaretlenmiş herhangi bir İsteğe bağlı uç nokta gereklidir.
 
-### <a name="what-scenarios-will-this-advice-cover"></a>Bu öneri hangi senaryoları kapsıyor?
+### <a name="what-scenarios-will-this-advice-cover"></a>Bu öneri hangi senaryoları kapsar?
 
-1. Teams Uygulaması'nın içinde üretilen canlı Teams.
+1. Teams Uygulamasında oluşturulan canlı etkinlikler
 2. Stream'de barındırılan içeriği görüntüleme
-3. Dış cihaz (kodlayıcı) tarafından üretilen etkinlikler
+3. Harici cihaz (kodlayıcı) tarafından üretilen olaylar
 
 ### <a name="does-this-advice-cover-presenter-traffic"></a>Bu öneri sunucu trafiğini kapsıyor mu?
 
-Bu, yukarıda belirtilen tavsiyenin yalnızca hizmeti tüketenler için olduğunu ifade ederiz. Teams'den sunum yapmak, sunucu trafiğinin URL/IP hizmeti satır 11'de listelenen URL/IP hizmeti satır 11'de işaretlenmiş UDP uç noktalarını en iyi duruma getirme bölümüne akdığını ve [Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md) için VPN bölünmüş bölme uygulama bölümünde açıklanan ayrıntılı [VPN](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) yükleme önerilerini gösterir.
+Bunu yapmaz, yukarıdaki öneriler yalnızca hizmeti kullananlar içindir. Teams'in içinden sunum yapılırken sunucunun url/IP hizmeti satırı 11'de listelenen İşaretli UDP uç noktalarına akan trafiği ve [Microsoft 365 için](microsoft-365-vpn-implement-split-tunnel.md) [VPN bölünmüş tüneli uygulama bölümündeki AYRıNTıLı VPN](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) boşaltma önerisi gösterilir.
 
-### <a name="does-this-configuration-risk-traffic-other-than-live-events-amp-stream-being-sent-direct"></a>Bu yapılandırmada Canlı Etkinlikler Akışı dışında bir trafiğin doğrudan &amp; gönderilme riski var mı?
+### <a name="does-this-configuration-risk-traffic-other-than-live-events-amp-stream-being-sent-direct"></a>Bu yapılandırma, Canlı Etkinlik &amp; Akışı dışındaki trafiğin doğrudan gönderilmesine neden oluyor mu?
 
-Evet, hizmetin bazı öğeleri için kullanılan paylaşılan FQDN'lerden dolayı bu kaçınılmazdır. Bu trafik genelde inceleme uygulayabilecek bir şirket ara sunucusu aracılığıyla gönderilir. VPN bölme senaryosunda, hem FQDN'ler hem de IP'ler kullanılarak bu risk en düşük kapsamda olacak, ancak yine de mevcut olacaktır. Müşteriler yükleme yapılandırmasından .azureedge.net etki alanını kaldırabilir ve bu riski minimum düzeyde azaltabilirsiniz ancak bu, Stream tarafından desteklenen Canlı Etkinlikler 'in (Teams zamanlanmış, dış kodlayıcı olayları, Teams Yammer zamanlanmış dış kodlayıcı olaylarında üretilen Yammer olayları ve Stream'den zamanlanmış veya isteğe bağlı olarak görüntüleme) yüklemesini kaldırır.**\*** Bu şekilde zamanlanan ve Teams etkinlikler etkilenmez.
+Evet, hizmetin bazı öğeleri için kullanılan paylaşılan FQDN'ler nedeniyle bu kaçınılmazdır. Bu trafik normalde inceleme uygulayabilen bir şirket ara sunucusu aracılığıyla gönderilir. VPN bölünmüş tünel senaryosunda, hem FQDN'leri hem de IP'leri kullanmak bu riskin kapsamını en düşük düzeyde azaltacaktır, ancak yine de mevcut olacaktır. Müşteriler .azureedge.net etki alanını yük boşaltma yapılandırmasından kaldırabilir **\*** ve bu riski en aza indirebilir, ancak bu, Stream tarafından desteklenen Canlı Etkinliklerin (Teams tarafından zamanlanan, dış kodlayıcı olayları, Teams'de oluşturulan Yammer olayları, Yammer zamanlanmış dış kodlayıcı olayları ve Stream'den zamanlanmış etkinlikleri veya isteğe bağlı görüntüleme) yükünü kaldırır. Teams'te zamanlanan ve oluşturulan etkinlikler etkilenmez.
 
 ## <a name="related-articles"></a>İlgili makaleler
 
-[Genel bakış: VPN bölme bölme Microsoft 365](microsoft-365-vpn-split-tunnel.md)
+[Genel bakış: Microsoft 365 için VPN bölünmüş tüneli](microsoft-365-vpn-split-tunnel.md)
 
-[VPN bölmeli bölme Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
+[Microsoft 365 için VPN bölünmüş tüneli uygulama](microsoft-365-vpn-implement-split-tunnel.md)
 
-[Kullanıcılar için yaygın VPN bölme bölme Microsoft 365](microsoft-365-vpn-common-scenarios.md)
+[Microsoft 365 için yaygın VPN bölünmüş tünel senaryoları](microsoft-365-vpn-common-scenarios.md)
 
 [VPN bölünmüş tüneli için Teams medya trafiğinin güvenliğini sağlama](microsoft-365-vpn-securing-teams.md)
 
-[Microsoft 365 kullanıcıları için performans iyileştirmeyi iyileştirme](microsoft-365-networking-china.md)
+[Çin kullanıcıları için Microsoft 365 performans iyileştirmesi](microsoft-365-networking-china.md)
 
-[Microsoft 365 Ağ Bağlantısı İlkeleri](microsoft-365-network-connectivity-principles.md)
+[Microsoft 365 Ağ Bağlantı İlkeleri](microsoft-365-network-connectivity-principles.md)
 
 [Microsoft 365 ağ bağlantısını değerlendirme](assessing-network-connectivity.md)
 
-[Microsoft 365 ve performans ayarını yapılandırma](network-planning-and-performance.md)
+[Microsoft 365 ağ ve performans ayarlama](network-planning-and-performance.md)
 
-[Günümüzün benzersiz uzaktan çalışma senaryolarında güvenlik uzmanlarının ve BT'nin modern güvenlik denetimlerini elde etmenin alternatif yolları (Microsoft Güvenlik Ekibi blogu)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+[Günümüzün benzersiz uzaktan çalışma senaryolarında modern güvenlik denetimleri elde etmek için güvenlik uzmanları ve BT için alternatif yollar (Microsoft Güvenlik Ekibi blogu)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
-[Microsoft'ta VPN performansını geliştirme: otomatik Windows 10 izin vermek için VPN profillerini kullanma](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
+[Microsoft'ta VPN performansını geliştirme: otomatik bağlantılara izin vermek için Windows 10 VPN profillerini kullanma](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
-[VPN ile çalışma: Microsoft uzaktan iş gücüne nasıl bağlı tutarak](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
+[VPN üzerinde çalıştırma: Microsoft uzak iş gücünü nasıl bağlı tutuyor?](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
-[Microsoft genel ağı](/azure/networking/microsoft-global-network)
+[Microsoft küresel ağı](/azure/networking/microsoft-global-network)

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -28,12 +29,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 İş Standart satın aldığınızda, sahip olduğunuz bir etki alanını kullanma veya kayıt sırasında bir etki alanı satın alma seçeneğiniz vardır.
-ms.openlocfilehash: e991118fd645c01e4cc733f80bde7d9424f297c1
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 93d97a75aea1bf1a59284ea3c6e4e52997ab1e90
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085147"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663770"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Yeni veya var olan bir etki alanıyla Microsoft 365 İş Standart ayarlama
 

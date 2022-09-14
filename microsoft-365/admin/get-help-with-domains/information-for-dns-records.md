@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: Etki alanınızı Microsoft 365 aboneliğinize bağlamak için DNS kayıtları oluşturmak için ihtiyacınız olan değerleri/bilgileri toplayın.
-ms.openlocfilehash: 653161734a8b0a2f188c8f8a54909ed86bf3fd5f
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: dbc6aa42351e8533d3af6be7f9c59866e2aa8358
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084026"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663857"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS kayıtları oluşturmak için ihtiyacınız olan bilgileri toplayın
 

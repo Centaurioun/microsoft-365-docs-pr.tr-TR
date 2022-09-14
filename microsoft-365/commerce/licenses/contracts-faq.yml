@@ -12,12 +12,12 @@ metadata:
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: Microsoft 365 lisans sözleşmeleri hakkında sık sorulan sorular.
-  ms.openlocfilehash: eb952324472e11bc541f972f324252a27d383655
-  ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+  ms.openlocfilehash: 2bfe08ca51aad01a6bb21bd2a7d3f34ae1a073d2
+  ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 05/26/2022
-  ms.locfileid: "65692833"
+  ms.lasthandoff: 09/13/2022
+  ms.locfileid: "67663639"
 title: Sözleşmeler Hakkında Sık Sorulan Sorular
 summary: ''
 sections:
@@ -38,7 +38,7 @@ sections:
       Lisans kimliği, bir kuruluş tarafından siparişlerin verilebileceği program düzeyini tanımlar. Aşağıdakilerden herhangi birini temsil edebilir:
 
 
-      - Kayıt (Enterprise veya Program seçme)
+      - Kayıt (Kurumsal veya Programları seçin)
 
       - Sözleşme (Açık Değer programı)
 
@@ -54,7 +54,7 @@ sections:
       Microsoft Ürün ve Hizmet Sözleşmesi (MPSA) lisans bilgileri [Microsoft İş Merkezi'nde](https://businessaccount.microsoft.com/Customer) veya [İş İçin Microsoft Store](https://businessstore.microsoft.com/store) yönetilir. Bu sözleşme listesinde HIÇBIR MPSA bilgisi görüntülenmez. MPSA hakkında daha fazla bilgi edinmek için bkz [. Toplu lisanslama](https://www.microsoft.com/Licensing/MPSA/default.aspx).
   - question: >
       Kuruluşum için bazı Lisanslama kimlikleri neden listede görüntülenmiyor?
-    answer: "Lisans Kimliği yalnızca oturum açan kullanıcının Lisans Kimliği ayrıntılarını görüntüleme izni varsa görüntülenir. Aşağıdaki ölçütlerden birini karşılıyorsanız, kuruluşunuz adına belirli bir Lisans kimliğini görüntüleme izni verilir:\n\n- Yasal Toplu Lisanslama Programı formunda sözleşmeler için ilgili kişi olarak listelenirsiniz. Kişi türleri Birincil Kişi, Bildirim Muhabiri, Çevrimiçi Erişim Kişisi, Yazılım Güvencesi Yöneticisi, Online Services Manager veya Abonelikler Yöneticisi'ni içerir.\n- Sözleşmelere erişimi olan Yönetici sizsiniz.\n\nToplu Lisanslama izin rolleri ve izin verilebilen eylemleri hakkında daha fazla bilgi için [bkz. İzinler SSS](https://docs.microsoft.com/licensing/permissions-faq). \n"
+    answer: "Lisans Kimliği yalnızca oturum açan kullanıcının Lisans Kimliği ayrıntılarını görüntüleme izni varsa görüntülenir. Aşağıdaki ölçütlerden birini karşılıyorsanız, kuruluşunuz adına belirli bir Lisans kimliğini görüntüleme izni verilir:\n\n- Yasal Toplu Lisanslama Programı formunda sözleşmeler için ilgili kişi olarak listelenirsiniz. Kişi türleri Birincil Kişi, Bildirim Muhabiri, Çevrimiçi Erişim Kişisi, Yazılım Güvencesi Yöneticisi, Online Services Manager veya Abonelikler Yöneticisi'ni içerir.\n- Sözleşmelere erişimi olan Yönetici sizsiniz.\n\nToplu Lisanslama izin rolleri ve izin verilebilen eylemleri hakkında daha fazla bilgi için [bkz. İzinler SSS](/licensing/permissions-faq). \n"
   - question: >
       Yeni lisans siparişlerinin sözleşmeler listesinde görünmesi ne kadar sürer?
     answer: >
@@ -86,7 +86,7 @@ sections:
     answer: >
       Lisans Özeti, izin kümenizdeki tüm etkin ve etkin olmayan Lisans kimlikleri için Microsoft ürün ailesi ve sürümü başına gerçek zamanlı Toplu Lisans yetkilendirmelerini görüntüler.
 
-      Lisans Özeti, 1994'te başlayan geleneksel Microsoft Toplu Lisans programlarına ilişkin satın alma bilgilerini görüntüler. Bu programlar Açık, Değer Aç, Seç, Artı Seç ve Enterprise içerir ancak bunlarla sınırlı değildir.
+      Lisans Özeti, 1994'te başlayan geleneksel Microsoft Toplu Lisans programlarına ilişkin satın alma bilgilerini görüntüler. Bu programlar Open, Open Value, Select, Select Plus ve Enterprise programlarını içerir ancak bunlarla sınırlı değildir.
 
       MPSA programı kapsamında satın alınan lisanslar VLSC İlişki Özeti'ne dahil değildir ve [Microsoft İş Merkezi'nde](https://businessaccount.microsoft.com/customer) ayrı olarak görüntülenebilir.
 
@@ -138,7 +138,7 @@ sections:
 
       - Sistemler (örneğin, Windows işletim sisteminin sürümleri)
 
-      - Sunucular (örneğin, Exchange Server, SQL Server ve Windows Sunucusu)
+      - Sunucular (örneğin, Exchange Server, SQL Server ve Windows Server)
   - question: >
       Lisans Verme nedir?
     answer: "Bazen, Microsoft Toplu Lisanslama belirli bir ürünün satın alınması müşteriye başka bir ürünün kullanımına hak kazandığı bir promosyon sunar. Promosyonlar genellikle satın alınan üründeki etkin Yazılım Güvencesi veya Yükseltme Avantajı kapsamına bağlıdır. Örneğin:\n\n- Bir müşteri Exchange Server 2016 için bir lisans satın alır.\n- İşlem, teklif sırasında etkin Yazılım Güvencesi veya Yükseltme Avantajı kapsamına sahiptir.\n- Microsoft, Exchange Server 2016 satın alma işlemiyle bir Skype Kurumsal Sunucu lisansı için promosyon sunar.\n\nLisans Verme, müşteriye promosyon ürününü kullanma hakkı veren veya \"veren\"dir. Yukarıdaki örnekte müşteriye Skype Kurumsal Sunucu kullanımı verilmiştir.\n\nLisans Vermeler hakkında daha fazla bilgi için bkz. [Microsoft Ürün Koşulları](https://www.microsoft.com/licensing/terms/welcome/welcomepage). \n"
@@ -148,4 +148,4 @@ sections:
       Lisans Verme işlemleri Sözleşmeler listesine ve İndirilenler & Anahtarları'na yansıtılır. Ürünler listesinde, Lisans Vermeleri'nden alınan ürünler, özgün satın alma işleminin bir parçası olmadıklarını belirtmek için yıldız işareti (*) ile gösterilir.
   - question: >
       Microsoft Desteği nasıl iletişim kurabilirim?
-    answer: Telefonla veya Web Formu ile desteğe başvurmak için bkz. [Bize Ulaşın](https://docs.microsoft.com/licensing/contact-us). Microsoft, Web Formu gönderimlerine 24 saat içinde yanıt verir.
+    answer: Telefonla veya Web Formu ile desteğe başvurmak için bkz. [Bize Ulaşın](/licensing/contact-us). Microsoft, Web Formu gönderimlerine 24 saat içinde yanıt verir.

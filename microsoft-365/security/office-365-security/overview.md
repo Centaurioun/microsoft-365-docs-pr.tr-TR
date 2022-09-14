@@ -17,12 +17,12 @@ description: Office 365'te güvenlik, EOP’den Office 365 için Defender Plan 1
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
-ms.openlocfilehash: ad636b1d8b67b69722373ee778ef332da6010611
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 6a2c9841a894ad46614cca4b1ee768eac1fd2a35
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598747"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661837"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Office 365 için Microsoft Defender güvenliğine genel bakış
 
@@ -141,7 +141,7 @@ Bu hızlı başvuru, her Office 365 için Microsoft Defender aboneliğiyle hangi
 - Office 365 için Microsoft Defender P2 müşterileri, olayları ve uyarıları verimli bir şekilde algılamak, gözden geçirmek ve yanıtlamak için **Microsoft 365 Defender tümleştirmesine** erişebilir.
 
 > [!TIP]
-> ***Insider ipucu** _. Office 365 için EOP ve Microsoft Defender hakkında bilgi edinmek için docs.microsoft.com içindekiler tablosunu kullanabilirsiniz. [Office 365 Güvenliğine genel bakış](index.yml) sayfasına geri dönün, yan çubukta içindekiler organizasyonunun olduğunu göreceksiniz. Dağıtım (geçiş dahil) ile başlar ve ardından önleme, algılama, araştırma ve yanıt ile devam eder. <p> Bu yapı, _ *Güvenlik Yönetimi** konularını **Güvenlik İşlemleri** konuları takip edecek şekilde bölünmüştür. Her iki iş rolünün de yeni bir üyesiyseniz, alanı öğrenmenize yardımcı olması için bu ipucundaki bağlantıyı ve içindekiler bilginizi kullanın. Gittiğinizde *geri bildirim bağlantılarını* kullanmayı ve *makaleleri derecelendirmeyi* unutmayın. Geri bildirim, size sunduğumuz hizmeti geliştirmemize yardımcı olur.
+> ***Insider ipucu** _. EOP ve Office 365 için Microsoft Defender hakkında bilgi edinmek için Microsoft Docs içindekiler tablosunu kullanabilirsiniz. [Office 365 Güvenliğine genel bakış](index.yml) sayfasına geri dönün, yan çubukta içindekiler organizasyonunun olduğunu göreceksiniz. Dağıtım (geçiş dahil) ile başlar ve ardından önleme, algılama, araştırma ve yanıt ile devam eder. <p> Bu yapı, _ *Güvenlik Yönetimi** konularını **Güvenlik İşlemleri** konuları takip edecek şekilde bölünmüştür. Her iki iş rolünün de yeni bir üyesiyseniz, alanı öğrenmenize yardımcı olması için bu ipucundaki bağlantıyı ve içindekiler bilginizi kullanın. Gittiğinizde *geri bildirim bağlantılarını* kullanmayı ve *makaleleri derecelendirmeyi* unutmayın. Geri bildirim, size sunduğumuz hizmeti geliştirmemize yardımcı olur.
 
 ## <a name="where-to-go-next"></a>Sonra nereye gitmeli
 

@@ -7,20 +7,20 @@ ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: 4b2a5369e6c22dcff0fa1e22642ac6fcb4c30ea2
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 9a728cef7c23d65f2a6f39c1211854cb8c91c53f
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67172761"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661069"
 ---
 # <a name="data-sets"></a>Veri kümeleri
 
 Microsoft, çok sayıda veri kümesini tek bir platformda (Microsoft Defender Tehdit Analizi (Defender TI) merkezileştirerek Microsoft topluluğunun ve müşterilerinin altyapı analizi gerçekleştirmesini kolaylaştırır. Microsoft'un birincil odak noktası, çeşitli güvenlik kullanım örneklerini desteklemek için İnternet altyapısı hakkında mümkün olduğunca çok veri sağlamaktır.
 
-Microsoft, kullanıcıların tehditleri algılamasına ve yanıtlamasına, olaylara öncelik vermesine ve saldırganların kuruluşlarını hedefleyen aktör gruplarıyla ilişkili altyapılarını proaktif olarak belirlemesine yardımcı olmak için İnternet verilerini toplar, analiz eder ve dizinler. Microsoft, PDNS algılayıcı ağı, sanal kullanıcılardan oluşan genel ara sunucu ağı, bağlantı noktası taramaları aracılığıyla internet verilerini toplar ve kötü amaçlı yazılım ve eklenen Etki Alanı Adı Sistemi (DNS) verileri için üçüncü taraf kaynaklardan yararlanmaktadır.
+Microsoft, kullanıcıların tehditleri algılamasına ve yanıtlamasına, olayları önceliklendirmesine ve erkenden harekete geçerek kullanıcıların kuruluşlarını hedefleyen aktör gruplarıyla ilişkili saldırganların altyapılarını belirlemesine yardımcı olmak için İnternet verilerini toplar, analiz eder ve dizinler. Microsoft, İnternet verilerini toplamak için PDNS algılayıcı ağı, sanal kullanıcılardan oluşan genel ara sunucu ağı, bağlantı noktası taramalarını kullanırken kötü amaçlı yazılım ve eklenen Etki Alanı Adı Sistemi (DNS) verileri için üçüncü taraf kaynaklardan yararlanır.
 
-Bu internet verileri iki ayrı gruba ayrılır: geleneksel ve gelişmiş. Geleneksel veri kümeleri Çözümler, Whois, SSL Sertifikaları, Alt Etki Alanları, Karmalar, DNS, Ters DNS ve Hizmetler'i içerir. Gelişmiş veri kümeleri arasında İzleyiciler, Bileşenler, Konak Çiftleri ve Tanımlama Bilgileri bulunur. İzleyiciler, Bileşenler, Konak Çiftleri ve Tanımlama Bilgileri veri kümeleri, gezinilen web sayfalarının Belge Nesne Modeli (DOM) gözlemlenmesinden toplanır. Ayrıca, Bileşenler ve İzleyiciler, bağlantı noktası taramalarından veya SSL Sertifikası ayrıntılarından gelen başlık yanıtlarına göre tetiklenen algılama kurallarından da gözlemlenir.
+Bu internet verileri iki ayrı gruba ayrılır: geleneksel ve gelişmiş. Geleneksel veri kümeleri Çözümler, Whois, SSL Sertifikaları, Alt Etki Alanları, Karmalar, DNS, Ters DNS ve Hizmetler'i içerir. Gelişmiş veri kümeleri grubunda İzleyiciler, Bileşenler, Konak Çiftleri ve Tanımlama Bilgileri bulunur. İzleyiciler, Bileşenler, Konak Çiftleri ve Tanımlama Bilgileri veri kümeleri, gezinilen web sayfalarının Belge Nesne Modelinin (DOM) gözlemlenmesi ile toplanır. Bileşenler ve İzleyiciler veri kümeleri ayrıca, bağlantı noktası taramalarından veya SSL Sertifikası ayrıntılarından gelen başlık yanıtlarına göre tetiklenen algılama kurallarından da gözlemlenir.
 
 ![Veri Kümeleri Edge Ekran Görüntüsü](media/dataSetsEdgeScreenshot.png)
 
@@ -229,7 +229,7 @@ Kullanıcı SHA1 karması üzerinde genişlediğinde aşağıdakiler hakkındaki
 
 ## <a name="subdomains"></a>Alt
 
-Alt etki alanı, birincil etki alanının parçası olan bir internet etki alanıdır. Alt etki alanları "konak" olarak da adlandırılır. Örneğin, "docs.microsoft.com" "microsoft.com" alt etki alanıdır. Her alt etki alanı için, etki alanının çözümlendiği yeni bir IP adresleri kümesi olabilir ve bu, ilgili altyapıyı bulmak için harika bir veri kaynağı olabilir.
+Alt etki alanı, birincil etki alanının parçası olan bir internet etki alanıdır. Alt etki alanları "konak" olarak da adlandırılır. Örneğin,`docs.microsoft.com` bir alt etki alanıdır `microsoft.com`. Her alt etki alanı için, etki alanının çözümlendiği yeni bir IP adresleri kümesi olabilir ve bu, ilgili altyapıyı bulmak için harika bir veri kaynağı olabilir.
 
 Alt etki alanı verilerimiz şunları içerir:
 

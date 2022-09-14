@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Posta sunucuları arasındaki e-posta iletişiminin güvenliğini sağlamak için SMTP DNS Tabanlı Adlandırılmış Varlıkların Kimlik Doğrulamasının (DANE) nasıl çalıştığını öğrenin.
-ms.openlocfilehash: 2202cccc3c1feb9f50cc35dbb3e38d6b443675fd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5c0cc4a7a194cea1b18f528f4c72323a16fab73e
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625159"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663223"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Adlandırılmış Varlıkların SMTP DNS Tabanlı Kimlik Doğrulaması (DANE) nasıl çalışır?
 
@@ -108,9 +108,9 @@ SMTP DANE hatasının e-postanın engellenmesine neden olacağı yalnızca iki s
 |Teknoloji|Ek Bilgiler|
 |---|---|
 |**Posta Aktarım Aracısı - Katı Aktarım Güvenliği (MTA-STS),** hedef e-posta sunucusunun TLS'yi destekleyip desteklemediğini ve TLS üzerinde anlaşmaya varılamadığında yapılması gerekenleri belirten etki alanı ilkelerini ayarlamaya yönelik bir mekanizma sağlayarak (örneğin, iletimi durdurma) devre dışı bırakma ve OrtaDaki Adam saldırılarını önlemeye yardımcı olur.|Exchange Online'in gelecek gelen ve giden MTA-STS desteği hakkında daha fazla bilgi bu yılın sonlarında yayımlanacaktır. <br/><br/> [Exchange Online Transport News from Microsoft Ignite 2020 - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699) <br/><br/> [rfc8461 (ietf.org)](https://datatracker.ietf.org/doc/html/rfc8461)|
-|**Sender Policy Framework (SPF),** hedef e-posta sistemlerinin özel etki alanınızdan gönderilen iletilere güvenmesini sağlamak için IP bilgilerini kullanır.|[Sender Policy Framework (SPF) kimlik sahtekarlığına nasıl engel oluyor - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)|
-|**DomainKeys Identified Mail (DKIM),** hedef e-posta sistemlerinin özel etki alanınızdan giden iletilere güvenmesini sağlamak için X.509 sertifika bilgilerini kullanır.|[Özel etki alanınızda e-posta için DKIM kullanma - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)|
-|**Etki Alanı Tabanlı İleti Kimlik Doğrulaması, Raporlama ve Uyumluluk (DMARC),** gönderenlerin kimliğini doğrulamak ve hedef e-posta sistemlerinin etki alanınızdan gönderilen iletilere güvenmesini sağlamak için Sender Policy Framework ve DomainKeys Identified Mail ile birlikte çalışır.|[E-postayı doğrulamak için DMARC kullanma, kurulum adımları - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)|
+|**Sender Policy Framework (SPF),** hedef e-posta sistemlerinin özel etki alanınızdan gönderilen iletilere güvenmesini sağlamak için IP bilgilerini kullanır.|[Sender Policy Framework (SPF) kimlik sahtekarlıklarını nasıl önler?](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)|
+|**DomainKeys Identified Mail (DKIM),** hedef e-posta sistemlerinin özel etki alanınızdan giden iletilere güvenmesini sağlamak için X.509 sertifika bilgilerini kullanır.|[Özel etki alanınızda e-posta için DKIM kullanma](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)|
+|**Etki Alanı Tabanlı İleti Kimlik Doğrulaması, Raporlama ve Uyumluluk (DMARC),** gönderenlerin kimliğini doğrulamak ve hedef e-posta sistemlerinin etki alanınızdan gönderilen iletilere güvenmesini sağlamak için Sender Policy Framework ve DomainKeys Identified Mail ile birlikte çalışır.|[E-postayı doğrulamak için DMARC kullanma, kurulum adımları](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)|
 
 ## <a name="troubleshooting-sending-emails-with-smtp-dane"></a>SMTP DANE ile E-posta Gönderme Sorunlarını Giderme
 

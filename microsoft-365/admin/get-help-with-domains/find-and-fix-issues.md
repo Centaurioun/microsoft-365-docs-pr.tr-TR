@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: DNS kayıtlarının doğru ayarlandığından emin olarak özel bir etki alanı ayarlarken karşılaştığınız sorunları izlemeyi öğrenin.
-ms.openlocfilehash: 2e4f69b19fd87f45017a304414018995e90703a7
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 89eca074425581b7e939bc4599ec86b7d7cdd2f6
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085169"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660497"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Kendi etki alanınızı veya DNS kayıtlarınızı ekledikten sonra sorunları bulma ve düzeltme
 
@@ -95,7 +96,7 @@ Etki alanınızın DNS kurulumuyla ilgili sorunları düzeltmenize yardımcı ol
 
 Tüm DNS sorunlarını çözdüyseniz ve hala sorun yaşıyorsanız, aşağıdakilerden birini deneyin.
   
-- kişiler *contoso.com* web sitenize ulaşamıyor: [Web sitesi sorunlarını izleme](../setup/add-domain.md)
+- Kişiler web sitenize *contoso.com*: [Web sitesi sorunlarını izleme](../setup/add-domain.md)
     
 - A kaydınızı veya CNAME kaydınızı web sitenize işaret eden şekilde güncelleştiremezsiniz: [Microsoft 365'te özel DNS kayıtlarını güncelleştirme](../setup/add-domain.md)
 

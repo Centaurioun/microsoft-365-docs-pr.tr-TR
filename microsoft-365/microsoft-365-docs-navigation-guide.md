@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 gezinti ipuçları
-description: 'Microsoft 365 İpuçları teknik belgelerde gezinmenin püf noktaları ve püf noktaları: Merkez sayfası, içindekiler tablosu, üst bilgi ve içerikcrumları kullanma ve sürüm filtresinin nasıl kullanımı gibi bilgileri açıklar.'
+title: Microsoft 365 belgeleri gezinti ipuçları
+description: Microsoft 365 teknik belgelerinde gezinmeye yönelik ipuçları ve püf noktaları; merkez sayfası, içindekiler tablosu, üst bilgi ve içerik haritalarının nasıl kullanılacağı ve sürüm filtresinin nasıl kullanılacağı gibi bilgileri açıklar.
 ms.date: 08/12/2020
 ms.prod: sql
 ms.technology: release-landing
@@ -11,61 +11,61 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 ms.collection: Adm_TOC
-ms.openlocfilehash: c2c7c73b4f49ab5d8b76b8a7574f900f414d1d1f
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: c6a481497a682cbbad896a2d7ec9e88b84c64d10
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "62990627"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660255"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 belgeleri gezinti kılavuzu
 
-Bu konu başlığında, teknik belge alanı içinde gezinmeye Microsoft 365 ve püf noktaları bulabilirsiniz.  
+Bu konuda, Microsoft 365 teknik belge alanında gezinmek için bazı ipuçları ve püf noktaları sağlanır.  
 
-## <a name="hub-page"></a>Merkez sayfası
+## <a name="hub-page"></a>Hub sayfası
 
-En Microsoft 365 hub sayfası, ilgili veri [https://aka.ms/microsoft365docs](./index.yml) türü içeriğini bulmanın giriş Microsoft 365 olur.
+Microsoft 365 hub sayfası adresinde bulunabilir [https://aka.ms/microsoft365docs](./index.yml) ve ilgili Microsoft 365 içeriğini bulmak için giriş noktasıdır.
 
-İstediğiniz zaman, teknik belge kümesi içindeki her **sayfanın üst Microsoft 365** üst bilgiden Başlık'ı seçerek bu Microsoft 365 dönebilirsiniz:
+Microsoft **365** teknik belge kümesindeki her sayfanın üst kısmındaki üst bilgiden Microsoft 365'i seçerek istediğiniz zaman bu sayfaya geri dönebilirsiniz:
 
-![Microsoft 365 üst bilgide.](media/m365-header-cursor.png)
+![Üst bilgide Microsoft 365.](media/m365-header-cursor.png)
 
-## <a name="toc-search"></a>ToC araması 
-İçerik docs.microsoft.com, üst sıradaki filtre arama kutusunu kullanarak içindekiler tablosundaki içerikte aramaabilirsiniz:
+## <a name="toc-search"></a>İçindekiler tablosu araması 
+Microsoft Docs, üstteki filtre arama kutusunu kullanarak içindekiler tablosundaki içeriği arayabilirsiniz:
 
-![Filtre kutusunu kullan.](media/m365-filter-by-title.png)
+![Filtre kutusunu kullanın.](media/m365-filter-by-title.png)
 
 ## <a name="version-filter"></a>Sürüm filtresi
-Teknik Microsoft 365 belgesinde, 21 Vianet (Çin) tarafından işletilen Office 365 Almanya ve Office 365 ürünleri dahil olmak üzere ek ürünler için içerik sağlar. Özellikler bu sürümler arasında değişiklik gösterebilir ve bu nedenle bazen içeriğin kendisi farklılık gösterebilir.
+Microsoft 365 teknik belgeleri, Office 365 Almanya ve 21 Vianet (Çin) tarafından sağlanan Office 365 dahil olmak üzere ek ürünler için içerik sağlar. Özellikler bu sürümler arasında farklılık gösterebilir ve bu nedenle bazen içeriğin kendisi farklılık gösterebilir.
 
-sürüm filtresinin uygun sürümüne uygun içeriği görüyor olmasını sağlamak için Microsoft 365:
+Microsoft 365'in uygun sürümü için içerik gördüğünüzden emin olmak için sürüm filtresini kullanabilirsiniz:
 
-![Microsoft 365 filtresini seçin.](media/m365-version-filter.png)
+![Microsoft 365 sürüm filtresi.](media/m365-version-filter.png)
 
-## <a name="breadcrumbs"></a>Breadcrumbs
+## <a name="breadcrumbs"></a>Kırıntı -ları
 
-İçerikcrumları üstbilginin altında ve içindekiler tablosu üzerinde bulunabilir ve geçerli makalenin içindekiler tablosunda nerede bulunduğu belirtebilirsiniz.  Bu, bağlamı okumakta olduğu içerik türüne ayarlamakla aynı zamanda içindekiler tablosu ağacına geri dönmenizi de sağlar:
+İçerik haritaları üst bilginin altında ve içindekiler tablosunun üstünde bulunabilir ve geçerli makalenin içindekiler tablosunda nerede bulunduğunu gösterir.  Bu, bağlamı okuduğun içerik türüne ayarlamaya yardımcı olmakla kalmaz, aynı zamanda içindekiler ağacına geri dönmenize de olanak tanır:
 
-![Microsoft 365 crumları.](media/m365-breadcrumb.png)
+![Microsoft 365 içerik haritaları.](media/m365-breadcrumb.png)
 
-## <a name="article-section-navigation"></a>Makale bölüm gezintisi
+## <a name="article-section-navigation"></a>Makale bölümü gezintisi
 
-Sağ gezinti bölmesi, makalenin içindeki bölümlere hızla gezinmenizi ve makale içindeki yerlerinizi tanımlamanızı sağlar.  
+Sağ gezinti bölmesi, bir makalenin içindeki bölümlere hızla gitmenize ve makalenin içindeki konumunuzu belirlemenize olanak tanır.  
 
 ![Sağ gezinti.](media/m365-article-sections.png)
 
 ## <a name="submit-docs-feedback"></a>Belge geri bildirimi gönderme
 
-Bir makalede yanlış bir şey bulursanız, sayfayı aşağı kaydırarak ve İçerik geri bildirimi'yi seçerek bu makalenin SQL İçerik **ekibine geri bildirim gönderebilirsiniz**.
+Bir makalenin içinde yanlış bir şey bulursanız, sayfanın en altına gidip İçerik geri bildirimi'ni seçerek bu makale için SQL İçerik ekibine **geri bildirim** gönderebilirsiniz.
 
-![Sorun içerik geri bildirimi'ne gidin.](media/m365-article-feedback.png)
+![Git Sorun içeriği geri bildirimi.](media/m365-article-feedback.png)
 
-## <a name="contribute-to-microsoft-365-documentation"></a>Belgelere katkıda Microsoft 365 sağlama
+## <a name="contribute-to-microsoft-365-documentation"></a>Microsoft 365 belgelerine katkıda bulunma
 
-İçeriği kendi kendinize düzenleyemezsiniz, biliyor docs.microsoft.com var mıydı? Bunu yaparsanız, belgelerimiz geliştir olmaz, aynı zamanda sayfaya katkıda bulunan olarak da kredi ödemesi yapar. Başlamak için bkz:
+İçeriği Microsoft Docs kendiniz düzenleyebildiğinizi biliyor muydunuz? Bunu yaparsanız, belgelerimizi geliştirmekle kalmaz, aynı zamanda sayfaya katkıda bulunan olarak da kabul edilirsiniz. Başlamak için bkz.
 
-- [Microsoft Docs katılımcı kılavuzu](/contribute/)
+- [Microsoft Docs katkıda bulunan kılavuzu](/contribute/)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Teknik belgelere Microsoft 365 [başlama](index.yml).
+- [Microsoft 365 teknik belgelerini](index.yml) kullanmaya başlayın.

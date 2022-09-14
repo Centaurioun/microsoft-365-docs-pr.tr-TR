@@ -10,17 +10,18 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - Adm_TOC
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 description: İş aboneliği kapsamında Microsoft Teams'e kaydolmak için bu makaledeki adımları izleyin.
-ms.openlocfilehash: 7acf40e6c4ba199abab8eb97c5d87b357f012830
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 12c6de03fb012aa73e459bff6d356ff2d6c35d4f
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086113"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660959"
 ---
 # <a name="sign-up-for-microsoft-teams-as-part-of-a-business-subscription"></a>İş aboneliğinin bir parçası olarak Microsoft Teams'e kaydolma
 

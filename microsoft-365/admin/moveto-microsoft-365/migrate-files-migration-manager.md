@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: SharePoint Geçiş Yöneticisi'ni kullanarak Google dosyalarını İş için Microsoft 365'e geçirmeyi öğrenin.
-ms.openlocfilehash: 55dd5740192914b89e7be1da070b97b4f6983c97
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8f99796dab2f1683931188d2023886ea38b1d3a2
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085580"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663792"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business-with-migration-manager"></a>Migration Manager ile Google dosyalarını İş için Microsoft 365'e geçirme
 

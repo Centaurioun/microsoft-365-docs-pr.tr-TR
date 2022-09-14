@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - TRN_SMB
@@ -30,12 +31,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Office 365 kaydolma işlemine geçmeden önce Office programlarının en son sürümleri hakkında bilmeniz gerekenleri anlayın.
 ms.date: 03/17/2021
-ms.openlocfilehash: 25e74a80f4f1a023f93037c31d61a6d458619bc0
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: f3749dd8f97e2304173f5b47ed377fcfbb9c2d7a
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111614"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662948"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Kaydolma - Yönetici Yardımı
 

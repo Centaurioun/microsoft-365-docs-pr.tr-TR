@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Microsoft 365'te gezinti çubuğunun üst kısmındaki varsayılan temayı değiştirmeyi ve şirket logonuzla veya renginizle eşleşecek şekilde özelleştirmeyi öğrenin.
-ms.openlocfilehash: 6af086c9fff4ce30d52456103dac14d7fb93ee36
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: fe42d3750a97d475f2f3a6e4ea789fe725f2e204
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086571"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662849"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Kuruluşunuz için Microsoft 365 temasını özelleştirme
 
@@ -48,7 +49,7 @@ Tüm kuruluş temaları aşağıdaki sekmeler kullanılarak özelleştirilebilir
 |Sekme|Ne yapabilirsin ki?|
 |---|---|
 |[Genel](#general-modify-a-theme)|Tema adını değiştirin ve en fazla beş gruba (varsa) atayın.|
-|[Deyi](#logos-specify-your-theme-logos)|Koyu tema için alternatif logo da dahil olmak üzere kuruluşunuzun logosunu ekleyin.|
+|[Logo](#logos-specify-your-theme-logos)|Koyu tema için alternatif logo da dahil olmak üzere kuruluşunuzun logosunu ekleyin.|
 |[Renk](#colors-choose-theme-colors)|Gezinti çubuğu, vurgu, metin ve simge renkleri belirterek renk düzenini özelleştirin.|
 
 ## <a name="general-modify-a-theme"></a>Genel: Temayı değiştirme

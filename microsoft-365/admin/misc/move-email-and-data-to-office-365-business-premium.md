@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -24,12 +25,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: Verileri yeni iş kimliğinize taşımayı öğrenin.
-ms.openlocfilehash: 59835134635c86a8970929fcb01f2d8de6320ca5
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 5edc7de9775693f1ff3ad80652a5375757ea987d
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085629"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661420"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>E-postayı ve verileri Microsoft 365 İş Standart taşıma
 

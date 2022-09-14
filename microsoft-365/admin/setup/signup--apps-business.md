@@ -10,17 +10,18 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - Adm_TOC
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 description: İş için Microsoft 365 Uygulamaları için kaydolun.
-ms.openlocfilehash: b63b2436a901257d5d6a79c71901be6f7566e389
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: b9b0e3c0725137218c8fb82e94acfdbccb9b32ab
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086135"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660277"
 ---
 # <a name="sign-up-for-a-microsoft-365-apps-for-business-subscription"></a>İş için Microsoft 365 Uygulamaları aboneliğine kaydolma
 

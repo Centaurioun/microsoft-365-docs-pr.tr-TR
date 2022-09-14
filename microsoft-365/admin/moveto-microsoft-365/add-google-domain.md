@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Etki alanınızı Google Workspace'ten Microsoft 365 İş'e taşımayı öğrenin.
-ms.openlocfilehash: 896de05a70d67ce6ad6e5eadcdb4f0e0bfa95a58
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8c544979434dbe5231a62a116d42b384ca82b1ed
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086813"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661705"
 ---
 # <a name="add-your-google-workspace-domain-to-microsoft-365"></a>Google Workspace etki alanınızı Microsoft 365'e ekleme
 

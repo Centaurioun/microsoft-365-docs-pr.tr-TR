@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c757b9b2b6f9dc649832f2c32a2a0137f4804779
-ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+ms.openlocfilehash: c627d21c4416cecf5be98c6730e508d332dcad9b
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67639557"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663552"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -104,7 +104,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Eğitilebilir sınıflandırıcıları kullanma                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | İnceleme altında           | İnceleme altında               | Evet |
 |[Varsayılan etiket ve zorunlu etiketleme için farklı ayarlar](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Evet |
 |[PDF desteği](#pdf-support) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım|  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
-|[S/MIME koruması uygulama](#configure-a-label-to-apply-smime-protection-in-outlook)                    | İnceleme altında | Kullanıma sunulacak: 16.61+ <sup>\*</sup>                   | Kullanıma sunulacak: 4.2226+ | Kullanıma sunulacak: 4.2203+ | İnceleme altında |
+|[S/MIME koruması uygulama](#configure-a-label-to-apply-smime-protection-in-outlook) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım | Kullanıma sunulacak: 16.61+ <sup>\*</sup>                   | Kullanıma sunulacak: 4.2226+ | Kullanıma sunulacak: 4.2203+ | İnceleme altında |
 
 **Dipnot:**
 

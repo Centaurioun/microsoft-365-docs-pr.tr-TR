@@ -10,6 +10,7 @@ ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
@@ -26,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Microsoft Business Premium, Microsoft 365 İş Standart, Microsoft 365 İş Temel, İş için Microsoft 365 Uygulamaları veya Office 365 Eğitim aboneliğinizi ayarlamayı öğrenin.
-ms.openlocfilehash: ce471a4cb43864edf7884e6df93b39b9d1afbe15
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: fa1f117cd00c4d40689d606e1ec7582c18a7e7fd
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086091"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660607"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>İş için Microsoft 365'i ayarlama
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: E-postayı, kişileri ve takvimi Google Çalışma Alanı'ndan İş için Microsoft 365'e geçirmeyi öğrenin.
-ms.openlocfilehash: aeb369ce41863fe4556544e314f10b347eaa6b05
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: b0e2350c91b19e8a4097723efcfb6a34e674448b
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087385"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661375"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Google Workspace'ten iş e-postası ve takvimini geçirme
 
@@ -69,7 +70,7 @@ Geçiş işlemi birkaç adım alır ve geçirmekte olduğunuz veri miktarına ba
 1. [API'ler sayfasına](https://console.developers.google.com/apis/library) gidin. 
 1. Arama çubuğuna **Gmail API'sini** girin.
 1. Seçin ve ardından **Etkinleştir'i** seçin.
-1. Google Takvim API'sinde, Kişiler API'sinde ve Kişiler API'sinde bu işlemi yineleyin. 
+1. Google Takvim API'si, Kişiler API'si ve Kişiler API'si için bu işlemi yineleyin. 
 
 ### <a name="grant-access-to-the-service-account"></a>Hizmet hesabına erişim izni verme
 

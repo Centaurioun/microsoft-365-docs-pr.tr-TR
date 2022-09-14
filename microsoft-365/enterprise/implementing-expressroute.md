@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: İnternet'e yönelik birçok Office 365 hizmeti için alternatif yönlendirme yolu sağlayan Office 365 için ExpressRoute'u uygulamayı öğrenin.
-ms.openlocfilehash: e3a63aea6f0947127d05de6e8bd90e386646dc59
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 07f79298749784bda9362410e8790f27407bb55a
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560317"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663267"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365 için ExpressRoute Uygulama
 
@@ -47,7 +47,7 @@ Bu uygulama kılavuzu başlatılmadan önce aşağıdaki önkoşulların tamamla
 
 2. Bir ExpressRoute ağ hizmeti sağlayıcısı seçtiniz. [ExpressRoute iş ortakları ve eşleme konumları](/azure/expressroute/expressroute-locations) hakkındaki ayrıntıları bulun.
 
-3. [ExpressRoute belgelerini](https://azure.microsoft.com/documentation/services/expressroute/) zaten okuyup anlamışsınızdır ve iç ağınız ExpressRoute önkoşullarını uçtan uca karşılayabilir.
+3. [ExpressRoute belgelerini](/azure/expressroute/) zaten okuyup anlamışsınızdır ve iç ağınız ExpressRoute önkoşullarını uçtan uca karşılayabilir.
 
 4. Ekibiniz , [https://aka.ms/ert](https://aka.ms/ert)konumundaki tüm genel rehberliği ve belgeleri [https://aka.ms/expressrouteoffice365](./azure-expressroute.md)okudu ve aşağıdakiler gibi kritik teknik ayrıntıları anlamak için Channel 9'daki [Office 365 için Azure ExpressRoute Eğitim](https://channel9.msdn.com/series/aer) serisini izledi:
 

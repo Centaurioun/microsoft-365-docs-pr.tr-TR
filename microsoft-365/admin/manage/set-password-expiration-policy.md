@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Bir yöneticinin Microsoft 365 yönetim merkezi'da işletmeniz, okuluniz veya kar amacı gütmeyen kuruluşunuz için parola süre sonu ilkesi ayarlamayı öğrenin.
-ms.openlocfilehash: 48dfd933cad12d309a6c00ec15a7226ae918e79d
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 71174355dbc01d03fb64ad261dc058d901fafb20
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084018"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660488"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Kuruluşunuzun parola süre sonu ilkesini belirleyin
 
@@ -70,7 +71,7 @@ Belirli bir süre sonra kullanıcı parolalarının süresinin dolmasını ayarl
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>Parola süre sonu özelliği hakkında bilmeniz gereken önemli noktalar
   
-Yalnızca Outlook uygulamasını kullanan kişiler, önbellekte süresi dolana kadar Microsoft 365 parolalarını sıfırlamak zorunda kalmaz. Bu, gerçek sona erme tarihinden sonra birkaç gün sürebilir. Bu durumun yönetici düzeyinde geçici çözümü yoktur.
+Yalnızca Outlook uygulamasını kullanan Kişiler, önbellekte süresi dolana kadar Microsoft 365 parolasını sıfırlamak zorunda kalmaz. Bu, gerçek sona erme tarihinden sonra birkaç gün sürebilir. Bu durumun yönetici düzeyinde geçici çözümü yoktur.
 
 ## <a name="prevent-last-password-from-being-used-again"></a>Son parolanın yeniden kullanılmasını engelleme
 

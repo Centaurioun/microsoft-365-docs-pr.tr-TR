@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Bu makalede, Office 365 ile kullanılmak üzere Azure ExpressRoute yönlendirme gereksinimleri, bağlantı hatları ve yönlendirme etki alanları hakkında bilgi edinin.
-ms.openlocfilehash: c63e3ae14c9b369265622f17c2e542818620aa3e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4596f3fb05b39b8044c645db3bfcb1bd5fbe8c18
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092921"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660827"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365 için ExpressRoute ile Yönlendirme
 
@@ -59,17 +59,17 @@ Office 365 ön uç sunucularına hem İnternet'te hem de ExpressRoute'ta erişil
   
 Aşağıda, Office 365'dan şirket içi ağınıza iletişimin başlatılacağı senaryolar yer alır. Ağ tasarımınızı basitleştirmek için aşağıdakileri İnternet yolu üzerinden yönlendirmenizi öneririz.
   
-- Exchange Online kiracıdan şirket içi konağa gönderilen posta veya SharePoint Online'dan şirket içi konağa gönderilen SharePoint Çevrimiçi Posta gibi SMTP hizmetleri. SMTP protokolü, Microsoft'un ağı içinde ExpressRoute bağlantı hatları üzerinden paylaşılan yol ön eklerinden daha geniş bir şekilde kullanılır ve ExpressRoute üzerinden şirket içi SMTP sunucularının reklamı bu diğer hizmetlerde hatalara neden olur.
+- Exchange Online kiracıdan şirket içi konağa posta veya SharePoint Online'dan şirket içi konağa gönderilen SharePoint Online Posta gibi SMTP hizmetleri. SMTP protokolü, Microsoft'un ağı içinde ExpressRoute bağlantı hatları üzerinden paylaşılan yol ön eklerinden daha geniş bir şekilde kullanılır ve ExpressRoute üzerinden şirket içi SMTP sunucularının reklamı bu diğer hizmetlerde hatalara neden olur.
 
 - Oturum açmak için parola doğrulaması sırasında ADFS.
 
 - [Karma dağıtımları Exchange Server](/exchange/exchange-hybrid).
 
-- [Federasyon karma arama SharePoint](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
+- [SharePoint federasyon karma araması](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
 
-- [karma BCS SharePoint](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
+- [SharePoint karma BCS](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
 
-- [Karma](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) ve/veya [Skype Kurumsal federasyonu Skype Kurumsal](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).
+- [Karma](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=/SkypeForBusiness/breadcrumb/toc.json&toc=/SkypeForBusiness/toc.json) ve/veya [Skype Kurumsal federasyonu Skype Kurumsal](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).
 
 - [Bulut Bağlayıcısı'nı Skype Kurumsal](/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
 

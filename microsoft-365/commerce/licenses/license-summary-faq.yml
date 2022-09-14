@@ -12,12 +12,12 @@ metadata:
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: Microsoft 365 yönetim merkezi lisans sözleşmeleri hakkında sık sorulan sorular.
-  ms.openlocfilehash: bcc97969b283d51194dd8f1eb213340bd8f0334e
-  ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+  ms.openlocfilehash: b9085d38f3411ad32b383621f1ca19df8dd12991
+  ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 04/19/2022
-  ms.locfileid: "64953693"
+  ms.lasthandoff: 09/13/2022
+  ms.locfileid: "67663574"
 title: Sözleşmeler Hakkında Sık Sorulan Sorular
 summary: ''
 sections:
@@ -38,7 +38,7 @@ sections:
       Lisans kimliği, bir kuruluş tarafından siparişlerin verilebileceği program düzeyini tanımlar. Aşağıdakilerden herhangi birini temsil edebilir:
 
 
-      - Kayıt (Enterprise veya Program seçme)
+      - Kayıt (Kurumsal veya Programları seçin)
 
       - Sözleşme (Açık Değer programı)
 
@@ -63,7 +63,7 @@ sections:
       - Sözleşmelere erişimi olan Yönetici sizsiniz.
 
 
-      VL izin rolleri ve izin verilebilen eylemleri hakkında daha fazla bilgi için [bkz. İzinler SSS](https://docs.microsoft.com/licensing/permissions-faq).
+      VL izin rolleri ve izin verilebilen eylemleri hakkında daha fazla bilgi için [bkz. İzinler SSS](/licensing/permissions-faq).
   - question: >
       Yeni lisans siparişlerinin sözleşmeler listesinde görünmesi ne kadar sürer?
     answer: >
@@ -96,7 +96,7 @@ sections:
       Lisans Özeti, izin kümenizdeki tüm etkin ve etkin olmayan Lisans kimlikleri için Microsoft ürün ailesi ve sürümü başına gerçek zamanlı Toplu Lisans yetkilendirmelerini görüntüler.
 
 
-      Lisans Özeti, 1994'te başlayan geleneksel Microsoft Toplu Lisans programlarına ilişkin satın alma bilgilerini görüntüler. Bu programlar Açık, Değer Aç, Seç, Artı Seç ve Enterprise içerir ancak bunlarla sınırlı değildir.
+      Lisans Özeti, 1994'te başlayan geleneksel Microsoft Toplu Lisans programlarına ilişkin satın alma bilgilerini görüntüler. Bu programlar Open, Open Value, Select, Select Plus ve Enterprise programlarını içerir ancak bunlarla sınırlı değildir.
 
 
       MPSA programı kapsamında satın alınan lisanslar VLSC İlişki Özeti'ne dahil değildir ve [Microsoft İş Merkezi'nde](https://businessaccount.microsoft.com/customer) ayrı olarak görüntülenebilir.
@@ -107,7 +107,7 @@ sections:
 
       1. Microsoft 365 yönetim merkezi oturum açın.
 
-      2. **BillingYour** >  **productsVolume** >  **licensingContracts** >  bölümüne gidin.
+      2. **Ürünlerinizi** >  **Faturalama** > **Toplu lisanslama** > **Sözleşmeleri'ne** gidin.
 
 
       Lisans Özetinde görüntülenecek Lisans Kimliklerini filtreleme
@@ -169,7 +169,7 @@ sections:
 
       - Sistemler (örneğin, Windows işletim sisteminin sürümleri)
 
-      - Sunucular (örneğin, Exchange Server, SQL Server ve Windows Sunucusu)
+      - Sunucular (örneğin, Exchange Server, SQL Server ve Windows Server)
   - question: >
       Lisans Verme nedir?
     answer: >
@@ -193,4 +193,4 @@ sections:
       Lisans Verme işlemleri Sözleşmeler listesine ve İndirilenler & Anahtarları'na yansıtılır. Ürünler listesinde, Lisans Vermeleri'nden alınan ürünler, özgün satın alma işleminin bir parçası olmadıklarını belirtmek için yıldız işareti (*) ile gösterilir.
   - question: >
       Yardımlı Desteğe Başvurun
-    answer: Müşteriler ayrıca telefonla veya Web Formu ile [Bize Başvurabilir](https://docs.microsoft.com/licensing/contact-us) . Microsoft, Web Formu gönderimlerine 24 saat içinde yanıt verir.
+    answer: Müşteriler ayrıca telefonla veya Web Formu ile [Bize Başvurabilir](/licensing/contact-us) . Microsoft, Web Formu gönderimlerine 24 saat içinde yanıt verir.

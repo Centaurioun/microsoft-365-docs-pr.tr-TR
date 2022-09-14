@@ -10,6 +10,7 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: İş için Microsoft 365'in Genel Veri Koruma Yönetmeliği (GDPR) sürecinde size nasıl yardımcı olabileceğini öğrenin.
-ms.openlocfilehash: dbba3f42bbe058229c0429cfaf8d790916228f46
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: b0d0131c807d111a3b5f9b5024a07040ca47fdfd
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085588"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664285"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR basitleştirilmiş: Küçük işletmeniz için bir kılavuz
 
@@ -51,7 +52,7 @@ GDPR tamamen veriler ve nasıl kullanıldığıyla ilgilidir. Verileri yaşam d�
   
 GDPR aşağıdaki veri türleriyle ilgilidir: 
   
-- **Kişisel veri:** Verileri bir bireye bağlayıp tanımlayabilirseniz bu veriler GDPR ile ilgili olarak kişisel olarak kabul edilir. Kişisel verilere örnek olarak ad, adres, doğum tarihi ve IP adresi verilebilir. GDPR, veriler bir bireye bağlanabiliyorsa verilerin ne kadar belirsiz veya teknik olduğuna bakılmaksızın kodlanmış bilgileri ("takma ad" bilgileri olarak da bilinir) kişisel veriler olarak kabul eder.
+- **Kişisel veriler:** Verileri bir bireye bağlayıp tanımlayabilirseniz bu veriler GDPR ile ilgili olarak kişisel olarak kabul edilir. Kişisel verilere örnek olarak ad, adres, doğum tarihi ve IP adresi verilebilir. GDPR, veriler bir bireye bağlanabiliyorsa verilerin ne kadar belirsiz veya teknik olduğuna bakılmaksızın kodlanmış bilgileri ("takma ad" bilgileri olarak da bilinir) kişisel veriler olarak kabul eder.
     
 - **Hassas kişisel veriler** Bu, kişisel verilere daha fazla ayrıntı ekleyen verilerdir. Örnek olarak din, sendika üyeliği, etnik köken vb. verilebilir. Hassas kişisel veriler biyometrik verileri ve DNA'ları da içerir. GDPR kapsamında, hassas verilerin kişisel verilerden daha sıkı koruma kuralları vardır. 
     

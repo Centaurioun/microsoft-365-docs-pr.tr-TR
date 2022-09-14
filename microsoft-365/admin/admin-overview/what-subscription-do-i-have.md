@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Ürünleriniz sayfasına giderek kuruluşunuzun hangi Microsoft 365 aboneliklerine sahip olduğunu doğrulamayı öğrenin.
 ms.date: 01/21/2021
-ms.openlocfilehash: 5a6bf93c40ceb15df091cd1e9f7dcb952812e5b2
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 9940062d3d36ae24ab98dcb13483910ff39f57bc
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111681"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662211"
 ---
 # <a name="which-microsoft-365-subscription-do-i-have"></a>Hangi Microsoft 365 aboneliğine sahibim?
 

@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -23,12 +24,12 @@ ms.custom:
 search.appverid: MET150
 description: İş için Microsoft 365 faturanızda veya faturanızda ücretleri, faturalamayı ve ödeme bilgilerini yorumlamayı öğrenin.
 ms.date: 05/24/2022
-ms.openlocfilehash: 041e0636cf5e1797d0716ddceb550e2544085e46
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 41dfca0b8b10d1c481ccb704c3fff5508eede6ef
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384846"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664735"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>İş için Microsoft 365 faturanızı veya faturanızı anlama
 

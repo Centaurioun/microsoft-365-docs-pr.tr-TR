@@ -10,17 +10,18 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - VSBFY23
 description: Microsoft 365 İş Standart satın alın ve kuruluşunuzu ayarlayın.
-ms.openlocfilehash: 83841af8a538b861b43003c39bfb92a24a4e47aa
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: f97d2d28b4ca85cacbbfa9cb02d27b1620c85269
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085081"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661091"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Microsoft 365 İş Standart aboneliğine kaydolma
 

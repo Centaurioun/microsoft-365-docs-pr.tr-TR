@@ -11,6 +11,7 @@ f1.keywords:
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft iş ürünleri için faturanızı veya faturanızı nasıl okuyacağınızı ve anlayacağınızı öğrenin.
 ms.date: 08/08/2022
-ms.openlocfilehash: 258c2dc0f2dd6f10330c400f78cfadb1d9f986e5
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 9647d5f606e1167120fd075733a3911088d50224
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281300"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664153"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Fatura ekstrenizi veya faturanızı anlama
 

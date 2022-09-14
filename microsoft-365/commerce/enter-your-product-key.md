@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
@@ -23,12 +24,12 @@ ms.custom:
 - AdminTemplateSet
 description: Perakende satış mağazasından Microsoft 365 İş Standart satın aldıysanız ürün anahtarını kullanmayı ve aboneliğinizi etkinleştirmeyi öğrenin.
 ms.date: 08/18/2022
-ms.openlocfilehash: 57208bc75a70f423e69065ae72eda6816145601b
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: d5af4dc5ccb82e738c6419e5831760aa5e9c0cc2
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384736"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660211"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 İş Standart için ürün anahtarınızı girin
 

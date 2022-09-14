@@ -17,12 +17,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: İş e-postanızı ve verilerinizi fidye yazılımı, kimlik avı ve kötü amaçlı ekler gibi siber tehditlere karşı koruyun.
-ms.openlocfilehash: bc1dd84e83e5c5f1828e65203585d38acc28de5e
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 1d1b2a102b22725aeb6538d83befdc964e3d57f5
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617270"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663157"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Güvenlik ekiplerinin evden çalışmayı desteklemesi için en önemli 12 görev
 
@@ -212,7 +212,7 @@ Microsoft 365, kuruluşunuzdaki kullanıcıları bilgilendirmeye yardımcı olma
 |Kavram|Kaynaklar|
 |---|---|
 |Microsoft 365|[Özelleştirilebilir öğrenme yolları](/office365/customlearning/) <p>Bu kaynaklar, kuruluşunuzdaki son kullanıcılar için eğitimi bir araya getirebilmenize yardımcı olabilir|
-|Microsoft 365 güvenliği|[Öğrenme modülü: Microsoft 365'ten yerleşik ve akıllı güvenlikle kuruluşunuzun güvenliğini sağlama](/learn/modules/security-with-microsoft-365) <p>Bu modül, Microsoft 365 güvenlik özelliklerinin birlikte nasıl çalıştığını açıklamanızı ve bu güvenlik özelliklerinin avantajlarını açıklamanızı sağlar.|
+|Microsoft 365 güvenlik|[Öğrenme modülü: Microsoft 365'ten yerleşik ve akıllı güvenlikle kuruluşunuzun güvenliğini sağlama](/learn/modules/security-with-microsoft-365) <p>Bu modül, Microsoft 365 güvenlik özelliklerinin birlikte nasıl çalıştığını açıklamanızı ve bu güvenlik özelliklerinin avantajlarını açıklamanızı sağlar.|
 |Çok faktörlü kimlik doğrulaması|[İki aşamalı doğrulama: Ek doğrulama sayfası nedir?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Bu makale, son kullanıcıların çok faktörlü kimlik doğrulamasının ne olduğunu ve kuruluşunuzda neden kullanıldığını anlamasına yardımcı olur.|
 
 Microsoft, bu kılavuza ek olarak, kullanıcılarınızın bu makalede açıklanan eylemleri gerçekleştirmelerini önerir: [Hesabınızı ve cihazlarınızı korsanlara ve kötü amaçlı yazılımlara karşı koruma](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Bu eylemler şunlardır:
@@ -250,4 +250,4 @@ Microsoft 365, durumu izlemenin ve uygun eylemleri gerçekleştirmenin çeşitli
 
 Tebrikler! En önemli güvenlik korumalarından bazılarını hızlı bir şekilde uyguladınız ve kuruluşunuz çok daha güvenlidir. Artık tehdit koruma özellikleri (Uç Nokta için Microsoft Defender dahil), veri sınıflandırma ve koruma özellikleri ve yönetim hesaplarının güvenliğini sağlama konusunda daha da ileri gitmeye hazırsınız. Microsoft 365 için daha ayrıntılı ve yöntemli bir güvenlik önerileri kümesi için bkz. [İş İçin Microsoft 365 Güvenliği Karar Alıcılar (BDM'ler).](Microsoft-365-security-for-bdm.md)
 
-Microsoft'un yeni Bulut için Defender [on docs.microsoft.com/security'ni](/security) de ziyaret edin.
+Ayrıca Microsoft'un yeni Bulut için Defender [güvenlik belgelerini](/security) de ziyaret edin.

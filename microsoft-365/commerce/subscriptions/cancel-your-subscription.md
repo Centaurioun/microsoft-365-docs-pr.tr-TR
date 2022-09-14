@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 yönetim merkezinde Dynamics 365, Intune, Power Platform ve İş için Microsoft 365 deneme veya ücretli aboneliklerinizi nasıl iptal edebileceğinizi öğrenin.
 ms.date: 07/07/2022
-ms.openlocfilehash: 7918690c20466769129875620e98fb162f3d3be5
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+ms.openlocfilehash: b78054d4da625fdc78b86b26aa3c7ba9b8b186a6
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112119"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67660915"
 ---
 # <a name="cancel-your-microsoft-subscription"></a>Microsoft aboneliğinizi iptal etme
 

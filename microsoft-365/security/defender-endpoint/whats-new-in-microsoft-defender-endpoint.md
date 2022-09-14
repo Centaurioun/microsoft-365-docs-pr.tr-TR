@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 1aa80af7ff13f1ec5eccf207042458adae5c9208
-ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
+ms.openlocfilehash: 131fb7dfc4894b62428ed67fa41e48bedaa0c603
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/13/2022
-ms.locfileid: "67652402"
+ms.locfileid: "67661903"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender’daki yenilikler
 
@@ -141,7 +141,7 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 
 ## <a name="august-2021"></a>Ağustos 2021
 
-- (Önizleme) [Uç Nokta için Microsoft Defender Plan 1 ](defender-endpoint-plan-1.md) <br/>Uç Nokta Planı 1 için Defender (önizleme), yeni nesil koruma, saldırı yüzeyini azaltma, merkezi yönetim ve raporlama ve API'leri içeren bir uç nokta koruma çözümüdür. Uç Nokta Için Defender Plan 1 (önizleme), uç nokta koruma özelliklerimizi denemek, Microsoft 365 E3 sahip olmak ve henüz Microsoft 365 E5 sahip olmayan müşteriler için yeni bir tekliftir. 
+- (Önizleme) [Uç Nokta için Microsoft Defender Plan 1](defender-endpoint-plan-1.md) <br/>Uç Nokta Planı 1 için Defender (önizleme), yeni nesil koruma, saldırı yüzeyini azaltma, merkezi yönetim ve raporlama ve API'leri içeren bir uç nokta koruma çözümüdür. Uç Nokta Için Defender Plan 1 (önizleme), uç nokta koruma özelliklerimizi denemek, Microsoft 365 E3 sahip olmak ve henüz Microsoft 365 E5 sahip olmayan müşteriler için yeni bir tekliftir. 
 
    Daha fazla bilgi için bkz. [Plan 1 (önizleme) Uç Nokta için Microsoft Defender](defender-endpoint-plan-1.md). Mevcut [Uç Nokta için Defender özellikleri, Uç Nokta](microsoft-defender-endpoint.md) Için Defender Plan 2 olarak bilinir. 
 - (Önizleme) [Web İçeriği Filtreleme](web-content-filtering.md)<br>  Web içeriği filtreleme, Uç Nokta için Microsoft Defender'daki web koruma özelliklerinin bir parçasıdır. Kuruluşunuzun web sitelerine erişimi içerik kategorilerine göre izlemesine ve düzenlemesine olanak tanır. Bu web sitelerinin çoğu kötü amaçlı olmasa da uyumluluk düzenlemeleri, bant genişliği kullanımı veya diğer endişeler nedeniyle sorunlu olabilir.

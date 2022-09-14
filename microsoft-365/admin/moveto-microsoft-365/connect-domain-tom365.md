@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Etki alanınızı Microsoft 365'e bağlamayı öğrenin.
-ms.openlocfilehash: b03f7fa149ed4abddeecb5ab3b89372a9f0e008f
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: cd82a1151ccb985de1e13ed77e05a9400a33cb82
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085607"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661727"
 ---
 # <a name="connect-your-domain-to-microsoft-365-for-business"></a>Etki alanınızı İş için Microsoft 365'e bağlama
 

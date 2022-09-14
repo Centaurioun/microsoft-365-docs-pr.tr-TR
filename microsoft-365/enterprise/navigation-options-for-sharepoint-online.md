@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Bu makalede, SharePoint Online'da SharePoint Yayımlama'nın etkinleştirildiği gezinti seçenekleri siteleri açıklanmaktadır.
-ms.openlocfilehash: c95666a0fdb78fa584d9ca32ce19f10e4db89753
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: da06987e0136b3ae92f7bcdc9b561e6478439a01
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940942"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662255"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online için gezinti seçenekleri
 
@@ -99,7 +99,7 @@ Gezinti yapısı genellikle sitenin tüm kullanıcıları için tutarlı olduğu
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>Yönetilen gezintiyi ve sonuçları uygulama
 
-yönetilen gezintinin ayrıntıları hakkında docs.microsoft.com birkaç makale vardır. Örneğin, bkz. [SharePoint Server'da yönetilen gezintiye genel bakış](/sharepoint/administration/overview-of-managed-navigation).
+yönetilen gezintinin ayrıntıları hakkında Microsoft Docs hakkında birkaç makale vardır. Örneğin, bkz. [SharePoint Server'da yönetilen gezintiye genel bakış](/sharepoint/administration/overview-of-managed-navigation).
 
 Yönetilen gezintiyi uygulamak için, sitenin gezinti yapısına karşılık gelen URL'lerle terimler ayarlarsınız. Yönetilen gezinti, çoğu durumda yapısal gezintiyi değiştirmek için el ile de kullanılabilir. Örneğin:
 

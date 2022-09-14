@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -32,12 +33,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Gmail'den veya başka bir e-posta sağlayıcısından kişileri, takvimleri ve e-postaları içeri aktarmayı ve microsoft 365'e geçirmeyi öğrenin.
-ms.openlocfilehash: 769ac7b2ee1a84767fe71d45ee9214927044213b
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 2b0ecdcd7867353ebf7bd9c45bf8cb435efffa99
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086923"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662761"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>E-posta ve kişileri Microsoft 365'e geçirme
 

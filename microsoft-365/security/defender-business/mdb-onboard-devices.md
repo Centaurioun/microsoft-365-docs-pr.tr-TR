@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/29/2022
+ms.date: 09/13/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mdb-setup
 - highpri
-ms.openlocfilehash: f986d6a50e638c4d75b6f95e87cdf7f3d0e541a3
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: b16207902e8dfe198d8ab99370ab63e4ea64031c
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595639"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664647"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Cihazları İş için Microsoft Defender ekleme
 
@@ -51,7 +51,11 @@ Windows istemci cihazlarını İş için Defender'a eklemek için aşağıdaki s
 
 ### <a name="local-script-for-windows-10-and-11"></a>Windows 10 ve 11 için yerel betik
 
-Windows istemci cihazlarını eklemek için yerel bir betik kullanabilirsiniz. Bir cihazda ekleme betiğini çalıştırdığınızda, bu güven yoksa Azure Active Directory ile bir güven oluşturur; henüz kaydedilmemişse cihazı Microsoft Intune kaydeder ve ardından cihazı İş için Defender'a ekler. Yerel betik yöntemi şu anda Intune sahip olmasanız bile çalışır ve bu, İş için Defender müşterileri için önerilen yöntemdir.
+Windows istemci cihazlarını eklemek için yerel bir betik kullanabilirsiniz. Bir cihazda ekleme betiğini çalıştırdığınızda: 
+
+- Bu güven henüz yoksa Azure Active Directory ile bir güven oluşturur.
+- Henüz kaydedilmemişse cihazı Microsoft Intune kaydeder ve ardından cihazı İş için Defender'a ekler. 
+- Yerel betik yöntemi şu anda Intune sahip olmasanız bile çalışır ve bu, İş için Defender müşterileri için önerilen yöntemdir.
 
 > [!TIP]
 > Yerel betik yöntemini kullanırken bir kerede en fazla 10 cihaz eklemenizi öneririz.
@@ -159,7 +163,11 @@ Mac'i eklemek için aşağıdaki seçeneklerden birini belirleyin:
 
 ### <a name="local-script-for-mac"></a>Mac için yerel betik
 
-Mac'te yerel betiği çalıştırdığınızda, bu güven yoksa Azure Active Directory ile bir güven oluşturur; Mac'i Microsoft Intune kaydeder( henüz kaydedilmemişse) ve ardından Mac'i İş için Defender'a ekler. Bu yöntemi kullanarak bir kerede en fazla 10 cihaz eklemenizi öneririz.
+Mac'te yerel betiği çalıştırdığınızda: 
+
+- Bu güven henüz yoksa Azure Active Directory ile bir güven oluşturur.
+- Henüz kaydedilmemişse Mac'i Microsoft Intune kaydeder ve ardından Mac'i İş için Defender'a ekler. 
+- Bu yöntemi kullanarak bir kerede en fazla 10 cihaz eklemenizi öneririz.
 
 1. Microsoft 365 Defender portalına ()[https://security.microsoft.com](https://security.microsoft.com) gidin ve oturum açın.
 
@@ -336,12 +344,15 @@ Bir Linux Server örneğini İş için Defender'a eklemek için aşağıdaki yö
 
 ## <a name="mobile-devices"></a>Mobil cihazlar
 
-Android ve iOS/iPadOS cihazları gibi mobil cihazları eklemek için Microsoft Intune kullanabilirsiniz. Bu cihazları Intune kaydetme konusunda yardım almak için aşağıdaki kaynaklara bakın:
+Android ve iOS/iPadOS cihazları gibi mobil cihazları eklemek için Microsoft Intune kullanın. Bu cihazları Intune kaydetme konusunda yardım almak için aşağıdaki kaynaklara bakın:
 
 - [Android cihazları kaydetme](/mem/intune/enrollment/android-enroll)
 - [iOS veya iPadOS cihazlarını kaydetme](/mem/intune/enrollment/ios-enroll)
 
 Bir cihaz Intune kaydedildikten sonra cihaz grubuna ekleyebilirsiniz. [İş için Defender'da cihaz grupları hakkında daha fazla bilgi edinin](mdb-create-edit-device-groups.md).
+
+> [!NOTE]
+> Tek başına İş için Defender, iOS ve Android cihazları eklemek için gereken Intune lisansını içermez. mobil cihazları eklemek için İş için Defender aboneliğinize Intune ekleyebilirsiniz.
 
 ## <a name="view-a-list-of-onboarded-devices"></a>Eklenen cihazların listesini görüntüleme
 

@@ -22,12 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0656ec0d5194ea14deec293a505c5563a74ec939
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: e619457ce420665ba1867480740a327aacdb618c
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481096"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664691"
 ---
 # <a name="train-your-security-staff-for-microsoft-365-defender"></a>Güvenlik personelinizi Microsoft 365 Defender için eğitin
 
@@ -45,9 +45,9 @@ Kuruluşunuzu ve verilerini saldırganlardan korumanın aciliyetiyle, güvenlik 
 
 İçerik, birden çok modülle üç farklı bilgi düzeyine göre yapılandırılmıştır: Temel Bilgiler, Ara ve Uzman. Her düzey, malzemeyi anlamanızı test etmek için bir bilgi kontrolü içerir.
 
-## <a name="microsoft-learn-learning-paths"></a>Microsoft Learn öğrenme yolları
+## <a name="learning-paths"></a>Öğrenme yolları
 
-Microsoft 365 Defender ve Uç Nokta için Microsoft Defender, tek seferde bir modül ve birim hakkında bilgi edinmek için bu Microsoft Learn öğrenme yollarını ve modüllerini kullanın.
+Microsoft 365 Defender ve Uç Nokta için Microsoft Defender, tek seferde bir modül ve birim hakkında bilgi edinmek için bu öğrenme yollarını ve modüllerini kullanın.
 
  - [Microsoft 365 Defender ile siber saldırıları algılama ve yanıtlama](/learn/paths/defender-detect-respond/)
 
@@ -72,4 +72,3 @@ Microsoft 365 Defender ve Uç Nokta için Microsoft Defender, tek seferde bir mo
 ## <a name="simulating-an-attack"></a>Saldırı benzetimi
 
 Güvenlik personelinizi bir siber saldırıyı algılama ve yanıtlama yetenekleri konusunda test etmek için simülasyon saldırısı kullanın. Daha fazla bilgi için bkz. [Microsoft 365 Defender portalıyla saldırıların benzetimini yapma](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal). 
-

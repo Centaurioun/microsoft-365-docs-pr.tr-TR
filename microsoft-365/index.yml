@@ -13,12 +13,12 @@ metadata:
   ms.author: samanro
   ms.date: 06/08/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: f9285d4777d65d9bf46bdfcdc5505524143d01d9
-  ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+  ms.openlocfilehash: 5e63d62606766a49440d0258bfb2fd1f42eae024
+  ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 09/03/2022
-  ms.locfileid: "67599329"
+  ms.lasthandoff: 09/13/2022
+  ms.locfileid: "67664597"
 highlightedContent:
   items:
   - title: Hibrit çalışma için altyapınızı ayarlayın
@@ -37,7 +37,7 @@ productDirectory:
   title: Microsoft 365 çözümleri ve senaryoları
   items:
   - title: Microsoft 365 çözümleri
-    imageSrc: https://docs.microsoft.com/office/media/icons/secure-document-blue.svg
+    imageSrc: /office/media/icons/secure-document-blue.svg
     links:
     - url: solutions/empower-people-to-work-remotely.md
       text: Hibrit çalışma için altyapınızı ayarlayın
@@ -50,7 +50,7 @@ productDirectory:
     - url: business-premium/index.md
       text: Küçük işletmeler ve kampanyalar için Microsoft 365
   - title: Tanışın ve iletişim kurun
-    imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
+    imageSrc: /office/media/icons/call-phone-blue.svg
     links:
     - url: /sharepoint/corporate-communications-overview
       text: Kurumsal iletişimler
@@ -63,7 +63,7 @@ productDirectory:
     - url: /MicrosoftTeams/cloud-voice-landing-page
       text: Microsoft telefon çözümleri
   - title: Ekibinizle işbirliği yapın
-    imageSrc: https://docs.microsoft.com/office/media/icons/users-people.svg
+    imageSrc: /office/media/icons/users-people.svg
     links:
     - url: solutions/collaborate-with-people-outside-your-organization.md
       text: Dış paylaşımı yapılandırın
@@ -76,7 +76,7 @@ productDirectory:
     - url: solutions/collaboration-governance-overview.md
       text: İşbirliği idaresi
   - title: Mimari kaynakları
-    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
+    imageSrc: /office/media/icons/cloud-architecture2.svg
     links:
     - url: solutions/productivity-illustrations.md
       text: Microsoft 365 üretkenlik çizimleri
@@ -89,7 +89,7 @@ productDirectory:
     - url: solutions/architecture-icons-templates.md
       text: Mimari simgeleri ve şablonları
   - title: Kuruluşunuzun güvenliğini sağlayın
-    imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
+    imageSrc: /office/media/icons/security-blue.svg
     links:
     - url: security/top-security-tasks-for-remote-work.md
       text: Güvenlik ekiplerinin evden çalışmayı desteklemesi için en önemli görevler
@@ -104,7 +104,7 @@ productDirectory:
     - url: security/office-365-security/microsoft-365-policies-configurations.md
       text: Kimlik ve cihaz erişim korumasını yapılandırın
   - title: Bilgilerinizi koruyun ve yasal düzenlemelere uyun
-    imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
+    imageSrc: /office/media/icons/certificate-blue.svg
     links:
     - url: /microsoft-365/compliance/purview-compliance
       text: Microsoft Purview risk ve uyumluluk çözümleri
@@ -119,7 +119,7 @@ productDirectory:
     - url: /microsoft-365/compliance/auditing-solutions-overview
       text: Denetim çözümleri
   - title: Masaüstlerinizi ve cihazlarınızı dağıtın ve yönetin
-    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+    imageSrc: /office/media/icons/deploy-blue.svg
     links:
     - url: /DeployOffice/plan-microsoft-365-apps
       text: Microsoft 365 Uygulamaları’nı dağıtın
@@ -130,7 +130,7 @@ productDirectory:
     - url: /mem/intune/fundamentals/what-is-intune
       text: Cihaz yönetimi ve Microsoft Intune
   - title: Microsoft 365'e geçiş
-    imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
+    imageSrc: /office/media/icons/migration-blue.svg
     links:
     - url: /MicrosoftTeams/journey-skypeforbusiness-teams
       text: Microsoft Teams'e geçiş
@@ -139,7 +139,7 @@ productDirectory:
     - url: /Exchange/mailbox-migration/mailbox-migration
       text: Birden çok e-posta hesabını Office 365'e geçirin
   - title: Sektöre özgü çözümler ve senaryolar
-    imageSrc: https://docs.microsoft.com/office/media/icons/on-premises-blue.svg
+    imageSrc: /office/media/icons/on-premises-blue.svg
     links:
     - url: frontline/index.yml
       text: Ön cephe kuruluşları için Microsoft 365

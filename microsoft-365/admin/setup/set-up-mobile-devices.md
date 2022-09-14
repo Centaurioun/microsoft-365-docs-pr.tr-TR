@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - M365-identity-device-management
 - Adm_TOC
@@ -28,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Office'i bir iPhone'a veya Android telefona yüklediğinizde, Office uygulamalarındaki iş dosyalarınız İş için Microsoft 365 tarafından korunur.
-ms.openlocfilehash: ca0f08ec4fd8488e2eaca4acff5cc3c0f1f6dd78
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 4121c417eb65bf4994d07b173f5cc4a5b976f81b
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085213"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663835"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>İşletmeler için Microsoft 365 kullanıcıları için mobil cihazları ayarlama
 
@@ -43,7 +44,7 @@ Bu örnek Outlook üzerinden hazırlanmıştır, ancak bahsedilen işlemler yük
   
 ## <a name="set-up-mobile-devices"></a>Mobil cihazları ayarlama
 
-## <a name="iphone"></a>[iPhone](#tab/iPhone)
+## <a name="iphone"></a>[Iphone](#tab/iPhone)
   
 İş için Microsoft 365 ile iOS cihazlarda Office uygulamalarını ayarlama hakkında kısa bir video izleyin.<br><br>
 

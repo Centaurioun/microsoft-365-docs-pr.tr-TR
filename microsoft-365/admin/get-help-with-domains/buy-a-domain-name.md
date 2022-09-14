@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Microsoft 365'te etki alanı adı satın almayı öğrenin.
-ms.openlocfilehash: 2f238698892e1a1d97c7d50fdad281e8973cb515
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 78e43b13731839d791d00b93000567b12bd07a80
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085191"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661925"
 ---
 # <a name="buy-a-domain-name"></a>Etki alanı adı satın alma
 
@@ -80,7 +81,7 @@ Bir etki alanı satın alma ile ücretsiz bir Etki Alanı Gizlilik Aboneliği su
 [GoDaddy](https://www.godaddy.com) dışında bir etki alanı kayıt şirketinden etki alanı satın almak istiyorsanız, aşağıdaki otomatik kurulumu (Etki Alanı Bağlantısı) destekleyen bir etki alanı kullanmanızı öneririz. 
   
 - [1&amp;1 IONOS](https://www.1and1.com/)
-- [WordPress](https://www.wordpress.com) 
+- [Wordpress](https://www.wordpress.com) 
 
    
 ## <a name="transfer-your-domain-to-a-different-domain-registrar"></a>Etki alanınızı başka bir etki alanı kayıt şirketine aktarma

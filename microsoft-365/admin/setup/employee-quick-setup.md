@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Çalışanlarınızın Microsoft 365 İş Ekstra ile elde ettikleri Office uygulamalarını ayarlamayı öğrenmesine yardımcı olun.
-ms.openlocfilehash: 435b1627e5a86a1981a5aedb09d7e69fdaf4d2a3
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 5f10bf4f6e7dc24ba5698cd915a6b232e8a9ba09
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086505"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662827"
 ---
 # <a name="employee-quick-setup-in-microsoft-365-for-business"></a>İş için Microsoft 365'te çalışan hızlı kurulumu
 
@@ -47,7 +48,7 @@ ms.locfileid: "67086505"
     - Microsoft Edge/IE'de, önce **Kaydet**'i sonra da **Çalıştır**'ı seçin.
     
     Uygulamanın değişiklik yapmasına izin verip vermediğiniz sorulursa **Evet**'i seçin. Office kurulumunu başlatın.
-    - Mac'te Microsoft **Office_2016_Installer.pkg'yi** açın
+    - Mac'te Microsoft **Office_2016_Installer.pkg** dosyasını açın
 
 ## <a name="3-open-outlook-and-add-your-account"></a>3. Outlook'u açın ve hesabınızı ekleyin
 

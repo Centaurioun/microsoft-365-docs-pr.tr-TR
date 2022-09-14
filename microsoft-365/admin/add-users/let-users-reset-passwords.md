@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -29,12 +30,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Kullanıcıların self servis parola sıfırlama aracını kullanarak kendi parolalarını sıfırlamasına izin vermek için Microsoft 365 yönetim merkezi bir ilke ayarlamayı öğrenin.
-ms.openlocfilehash: 2d00158b55b429c5bd59b213834dc7219e75ed87
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 7ee0d3aa8053c4156eba999a77a5ea5d1643cd98
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084729"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662343"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Kullanıcıların kendi parolalarını sıfırlamasına izin verme
 

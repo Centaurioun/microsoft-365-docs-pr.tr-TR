@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: E-posta ve Skype Kurumsal Online gibi hizmetlerinizin kendi etki alanı adınızı kullanması için Microsoft 365'te etki alanınızı eklemeyi ve ayarlamayı öğrenin.
-ms.openlocfilehash: fecd9a5171586eb61a96be7f8d4f1f6a422d212e
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: 7904006377f27f53edde9e654a6d44bffd145e5e
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67406178"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661543"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Microsoft 365'i herhangi bir etki alanı kayıt şirketiyle ayarlamak için ad sunucularını değiştirme
 

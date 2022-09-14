@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.subservice: mde
-ms.openlocfilehash: 877cf9b7db508798a35cc99f8a163d0de0b91f37
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 8cddb2ab6a1f56fddb9be30d33a0934e3189845b
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520851"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661025"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -34,6 +34,24 @@ Bu makale, Linux'ta Uç Nokta için Microsoft Defender'nin en son sürümlerinde
 
 - [macOS'ta Uç Nokta için Defender'daki yenilikler](mac-whatsnew.md)
 - [iOS'ta Uç Nokta için Defender'daki yenilikler](ios-whatsnew.md)
+
+<details>
+  <summary>Eylül 2022 (Derleme: 101.80.97 | Sürüm: 30.122072.18097.0)</summary>
+
+&ensp;Yayın tarihi: **14 Eylül 2022**<br/>
+&ensp;Yayımlanma Tarihi: **14 Eylül 2022**<br/>
+&ensp;Derleme: **101.80.97**<br/>
+&ensp;Sürüm: **30.122072.18097.0**<br/>
+&ensp;Altyapı sürümü: **1.1.19300.3**<br/>
+&ensp;İmza sürümü: **1.369.395.0**<br/>
+
+**Yenilikler**
+
+- mdatp sürüm 101.75.43 çalıştıran belirli müşteri iş yüklerinde gözlemlenen çekirdek kilitlenmesini düzeltir. RCA'nın ardından bu, bir algılayıcı dosya tanımlayıcısının sahipliğini serbest bırakırken bir yarış durumuna atfedildi. Kapatma yolundaki son ürün değişikliği nedeniyle yarış durumu ortaya çıktı. Daha yeni Çekirdek sürümleri (5.1+) üzerindeki müşteriler bu sorundan etkilenmez.
+</br>
+
+<br/><br/>
+</details>
 
 <details>
   <summary>Ağustos 2022 (Derleme: 101.75.43 | Sürüm: 30.122071.17543.0)</summary>

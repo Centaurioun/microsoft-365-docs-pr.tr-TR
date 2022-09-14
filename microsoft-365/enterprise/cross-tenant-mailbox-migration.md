@@ -4,7 +4,7 @@ description: Posta kutularını Microsoft 365 veya Office 365 kiracıları aras�
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,16 +16,16 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: a0146159ebbb5e960bb375228e87fbfe43c0276e
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 44a80d3d1a7845461e7c97ed2a4466a6557a52bd
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497170"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664241"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Kiracılar arası posta kutusu geçişi (önizleme)
 
-Genellikle, birleştirmeler veya bakışlar sırasında, kullanıcınızın Exchange Online posta kutusunu yeni bir kiracıya taşıyabilmeniz gerekir. Kiracılar arası posta kutusu geçişi, kiracı yöneticilerinin kullanıcıları yeni kuruluşlarına geçiş yapmak için Exchange Online PowerShell ve MRS gibi iyi bilinen arabirimleri kullanmasına olanak tanır.
+Genellikle, birleştirmeler veya dalışlar sırasında, kullanıcılarınızın Exchange Online posta kutularını yeni bir kiracıya taşıyabilmeniz gerekir. Kiracılar arası posta kutusu geçişi, kiracı yöneticilerinin kullanıcıları yeni kuruluşlarına geçiş yapmak için Exchange Online PowerShell ve MRS gibi iyi bilinen arabirimleri kullanmasına olanak tanır.
 
 Yöneticiler, kiracılar arası taşımaları yürütmek için _Posta Kutularını Taşı_ yönetim rolü aracılığıyla sağlanan **New-MigrationBatch** cmdlet'ini kullanabilir.
 
@@ -429,9 +429,9 @@ Get-MoveRequest -Flags "CrossTenant"
    Start-ADSyncSyncCycle
    ```
 
-### <a name="how-do-we-access-outlook-on-day-1-after-the-use-mailbox-is-moved"></a>Kullanım posta kutusu taşındıktan sonra 1. Günde Outlook'a nasıl erişebiliriz?
+### <a name="how-do-we-access-outlook-on-day-1-after-the-user-mailbox-is-moved"></a>Kullanıcı posta kutusu taşındıktan sonra 1. Günde Outlook'a nasıl erişebiliriz?
 
-Bir etki alanına yalnızca bir kiracı sahip olabileceğinden, posta kutusu taşıma işlemi tamamlandığında eski birincil SMTPAddress hedef kiracıdaki kullanıcıyla ilişkilendirilmez; yalnızca yeni kiracıyla ilişkili etki alanları. Outlook, hizmette kimlik doğrulaması yapmak için kullanıcıların yeni UPN'sini kullanır ve Outlook profili, hedef sistemdeki posta kutusuyla eşleşecek eski birincil SMTPAddress'i bulmayı bekler. Eski adres hedef Sistemde olmadığından, outlook profili yeni taşınan posta kutusunu bulmak için bağlanmayacak.
+Bir etki alanına yalnızca bir kiracı sahip olabileceğinden, posta kutusu taşıma işlemi tamamlandığında eski birincil SMTPAddress hedef kiracıdaki kullanıcıyla ilişkilendirilmez; yalnızca yeni kiracıyla ilişkili etki alanları. Outlook, hizmette kimlik doğrulaması yapmak için kullanıcının yeni UPN'sini kullanır ve Outlook profili, hedef sistemdeki posta kutusuyla eşleşecek eski birincil SMTPAddress değerini bulmayı bekler. Eski adres hedef Sistemde olmadığından, outlook profili yeni taşınan posta kutusunu bulmak için bağlanmayacak.
 
 Bu ilk dağıtım için kullanıcıların profillerini yeni UPN, birincil SMTP adresleri ve yeniden eşitleme OST içeriğiyle yeniden oluşturmaları gerekir.
 

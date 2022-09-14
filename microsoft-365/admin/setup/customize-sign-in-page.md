@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Azure Active Directory'yi kullanarak Microsoft 365 oturum açma sayfasını özelleştirin. Oturum açma sayfasına çizim, logo ve metin ekleyebilirsiniz.
-ms.openlocfilehash: 9ac46be83d9bf25ee76067e54530e75ed5769d14
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 98ff05af3669787b9ad6b68e80eb6abe78bd36b9
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086945"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663333"
 ---
 # <a name="add-your-company-branding-to-the-microsoft-365-sign-in-page"></a>Microsoft 365 oturum açma sayfasına şirketinizin markasını ekleme
 

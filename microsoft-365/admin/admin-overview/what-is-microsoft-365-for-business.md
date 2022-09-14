@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +23,12 @@ search.appverid:
 description: BT bölümünü sizin için halleden bir abonelik hizmeti olan İş için Microsoft 365 hakkında bilgi edinin.
 feedback_system: None
 ms.date: ''
-ms.openlocfilehash: f6183d77ea130f78c87e2dd036652f66d9f6aebc
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: a175149d1674b8614572bc3aa221a2a86266654a
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084553"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67662970"
 ---
 # <a name="what-is-microsoft-365-for-business"></a>Microsoft 365 İş nedir?
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - M365-identity-device-management
 - Adm_TOC
@@ -25,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Office 365 için Microsoft Defender ayarlayın ve hassas verileri kimlik avına, kötü amaçlı yazılımlara ve diğer tehditlere karşı koruma altına alın.
-ms.openlocfilehash: 3eee2afebdd3ffe2085029388e70b6b45de420e7
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 41eed29cdc87e4334270efdb4d0039147254988c
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085543"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67661376"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-for-business"></a>İş için Microsoft 365 için tehdit korumasını artırma
 
@@ -181,7 +182,7 @@ En önemli kullanıcılarınızı ve özel etki alanınızı korumak için bir i
 
 [YouTube kanalımızda](https://go.microsoft.com/fwlink/?linkid=2198019) bu videoya ve diğer videolara göz atın.
 
-Kişiler belgeler, sunular, elektronik tablolar ve daha fazlası gibi ekleri düzenli olarak gönderir, alır ve paylaşır. Yalnızca e-posta iletisine bakarak bir ekin güvenli mi yoksa kötü amaçlı mı olduğunu söylemek her zaman kolay değildir. Daha önce Microsoft 365 ATP veya Gelişmiş Tehdit Koruması olarak adlandırılan Office 365 için Microsoft Defender, Güvenli Ek koruması içerir, ancak bu koruma varsayılan olarak açık değildir. Bu korumayı kullanmaya başlamak için yeni bir kural oluşturmanızı öneririz. Bu koruma SharePoint, OneDrive ve Microsoft Teams'deki dosyalara genişletir.
+Kişiler belgeler, sunular, elektronik tablolar ve daha fazlası gibi ekleri düzenli olarak gönderin, alın ve paylaşın. Yalnızca e-posta iletisine bakarak bir ekin güvenli mi yoksa kötü amaçlı mı olduğunu söylemek her zaman kolay değildir. Daha önce Microsoft 365 ATP veya Gelişmiş Tehdit Koruması olarak adlandırılan Office 365 için Microsoft Defender, Güvenli Ek koruması içerir, ancak bu koruma varsayılan olarak açık değildir. Bu korumayı kullanmaya başlamak için yeni bir kural oluşturmanızı öneririz. Bu koruma SharePoint, OneDrive ve Microsoft Teams'deki dosyalara genişletir.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
 

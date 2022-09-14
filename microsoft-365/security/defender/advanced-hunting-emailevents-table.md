@@ -18,12 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5ac64dfbfd42d76e350d27a5d7a1594e6c055cba
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9f6624122a2b1b6989e83757b246a82b01e33bbb
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482064"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67664682"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -81,6 +81,7 @@ Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi iç
 | `UserLevelPolicy` | `string` | E-postada gerçekleştirilen eylemi tetikleyen son kullanıcı posta kutusu ilkesi |
 | `ReportId` | `long` | Yinelenen sayacı temel alan olay tanımlayıcısı. Benzersiz olayları tanımlamak için bu sütunun DeviceName ve Timestamp sütunlarıyla birlikte kullanılması gerekir. |
 | `AuthenticationDetails` | `string` | DMARC, DKIM, SPF gibi e-posta kimlik doğrulama protokollerine göre veya birden çok kimlik doğrulama türünün (CompAuth) birleşimine göre geçiş veya başarısız kararların listesi |
+| `BulkComplaintLevel` | `int` | Toplu postacılardan gelen e-postaya atanan eşik, yüksek toplu şikayet düzeyi (BCL), e-postanın şikayet oluşturma olasılığının daha yüksek olduğu ve dolayısıyla istenmeyen posta olma olasılığının daha yüksek olduğu anlamına gelir |
 
 ## <a name="related-topics"></a>İlgili konular
 

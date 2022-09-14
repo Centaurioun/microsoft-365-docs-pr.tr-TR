@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -26,12 +27,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Etki alanı adı sistemi bilgisayar ana bilgisayar adlarını IP adresleriyle eşler ve DNS ve etki alanı kayıt şirketi temellerini anlamak etki alanlarını yönetmenize yardımcı olabilir.
-ms.openlocfilehash: 308f41c6b1c899ae731d1dcf3e7fc02e5a3cb5ed
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: f0f70c39b465437f49b2a833779e8597b25fe433
+ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085937"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67663988"
 ---
 # <a name="dns-basics"></a>DNS ile ilgili temel bilgiler
 

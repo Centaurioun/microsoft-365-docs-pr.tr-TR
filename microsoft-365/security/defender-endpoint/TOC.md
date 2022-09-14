@@ -417,7 +417,7 @@
 ##### [Dosyaları araştırın](investigate-files.md)
 ##### [Cihazları araştırın](investigate-machines.md)
 ##### [IP adresini araştırın](investigate-ip.md)
-##### [Etki alanını araştırın](investigate-domain.md)
+##### [Uç Nokta için Microsoft Defender uyarısıyla ilişkili etki alanlarını ve URL'leri araştırma](investigate-domain.md)
 ###### [Forward proxy’lerin arkasında oluşan bağlantı olaylarını araştırın](investigate-behind-proxy.md)
 ##### [Kullanıcı hesabını araştırın](investigate-user.md)
 
