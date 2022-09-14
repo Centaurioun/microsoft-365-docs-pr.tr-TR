@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 304e493f813bcd3254a981481e0739feaabaa1c7
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: a75592f5aba01684fea49e2e1c92a063e0308556
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67578322"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688561"
 ---
 # <a name="supported-managed-security-service-providers"></a>Desteklenen güvenlik hizmeti sağlayıcıları
 

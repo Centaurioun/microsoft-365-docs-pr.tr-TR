@@ -15,12 +15,13 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: da6124fcce55bc8fe0f40158f9849a0fd02b40e1
-ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
+search.appverid: met150
+ms.openlocfilehash: 66abe1f492ee5b79b1ee1ec8bff0942eacb5d4c2
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67652519"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687229"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS özelliklerinde Uç Nokta için Microsoft Defender’ı yapılandırın
 

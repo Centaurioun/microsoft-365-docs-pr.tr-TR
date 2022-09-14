@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: c1ff7eff6627ed231754dbdf9c31f740e053f154
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: ad6cf3d61efec199d9a30ba67e06829b6f1feccb
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67519896"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688131"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Uç Nokta için Microsoft Defender Cihazlar listesindeki cihazları araştırma
 
@@ -202,18 +203,25 @@ Olayı ve ilgili olayları daha fazla incelemek **için, ilgili olayları avla'y
 
 ### <a name="device-health-status"></a>Cihaz durumu
 
-**Cihaz sistem durumu** kartı, belirli bir cihaz için özetlenmiş bir sistem durumu raporu gösterir. Cihazın genel durumunu belirtmek için kartın üst kısmında aşağıdaki durumlardan biri görüntülenir:
+**Cihaz sistem durumu** kartı, belirli bir cihaz için özetlenmiş bir sistem durumu raporu gösterir. Cihazın genel durumunu belirtmek için kartın üst kısmında aşağıdaki iletilerden biri görüntülenir (en yüksek ve en düşük önceliğe göre listelenir):
 
-- Cihaz güncel
-- Platform güncel değil
-- Tam tarama başarısız oldu
-- Hızlı tarama başarısız oldu
-- Altyapı güncel değil
-- Güvenlik bilgileri güncel değil
 - Defender Virüsten Koruma etkin değil
+- Güvenlik bilgileri güncel değil
+- Altyapı güncel değil
+- Hızlı tarama başarısız oldu
+- Tam tarama başarısız oldu
+- Platform güncel değil
+- Güvenlik bilgileri güncelleştirme durumu bilinmiyor
+- Altyapı güncelleştirme durumu bilinmiyor
+- Hızlı tarama durumu bilinmiyor
+- Tam tarama durumu bilinmiyor
+- Platform güncelleştirme durumu bilinmiyor
+- Cihaz güncel
 - macOS & Linux için durum kullanılamıyor
 
 Karttaki diğer bilgiler şunlardır: son tam tarama, son hızlı tarama, güvenlik zekası güncelleştirme sürümü, altyapı güncelleştirme sürümü, platform güncelleştirme sürümü ve Defender Virüsten Koruma modu. 
+
+Gri dairenin verilerin bilinmediğini gösterdiğini lütfen unutmayın. 
 
 >[!NOTE]
 >macOS ve Linux cihazları için genel durum iletisi şu anda 'MacOS & Linux için durum kullanılamıyor' olarak görünüyor. Şu anda durum özeti yalnızca Windows cihazları için kullanılabilir. Tablodaki diğer tüm bilgiler, desteklenen tüm platformlar için her cihaz sistem durumu sinyalinin tek tek durumlarını göstermek için günceldir. 

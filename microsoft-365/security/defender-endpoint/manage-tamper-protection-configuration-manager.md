@@ -20,12 +20,13 @@ ms.subservice: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 32ea905c1ab6aaaa3a49cd7e2e40b0cadbf05284
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: e32024dc81bad797f96a41592375b6c64e1a615f
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521937"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689819"
 ---
 # <a name="manage-tamper-protection-using-tenant-attach-with-configuration-manager-version-2006"></a>Configuration Manager, sürüm 2006 ile kiracı ekleme kullanarak kurcalama korumasını yönetme
 

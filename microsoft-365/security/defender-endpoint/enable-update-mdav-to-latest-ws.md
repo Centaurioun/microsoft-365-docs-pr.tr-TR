@@ -18,12 +18,13 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 9e09dae01233f0f1a41d576bc33100c8d72fd65b
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: cd76cdee6eedb64c070346ed95ece9a583a8bfc8
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521399"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690322"
 ---
 # <a name="enable-and-update-defender-antivirus-to-the-latest-version-on-windows-server"></a>Defender Virüsten Koruma'yı etkinleştirme ve Windows Server'da en son sürüme güncelleştirme
 

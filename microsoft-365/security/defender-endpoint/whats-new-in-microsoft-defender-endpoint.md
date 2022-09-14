@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 131fb7dfc4894b62428ed67fa41e48bedaa0c603
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 8930006a4748d090de15ef76c84fd39b8f7527ec
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661903"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690827"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender’daki yenilikler
 
@@ -64,10 +64,7 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 ## <a name="september-2022"></a>Eylül 2022
 
 - [Cihaz durumu raporlaması genel kullanıma sunuldu](machine-reports.md). <br/>Cihaz durumu raporu, uç noktalarınızın durumu ve güvenliği hakkında üst düzey bilgiler sağlar. Rapor algılayıcı durumunu, virüsten koruma durumunu, işletim sistemi platformlarını, Windows 10 sürümlerini ve Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini gösteren popüler bilgileri içerir.
-- [Sorun giderme modu](enable-troubleshooting-mode.md) artık modern, birleşik çözümü çalıştıran Windows Server 2012 R2 ve 2016 makineleri için kullanılabilir. Sorun giderme modu sırasında cihazınızda kurcalama korumasını geçici olarak devre dışı bırakmak ve gerekli yapılandırma değişikliklerinizi yapmak için kullanın `Set-MPPreference -DisableTamperProtection $true` . Sorun giderme modunu kullanmadan önce aşağıdaki bileşenlerin tümünün güncel olduğundan emin olun:
-   - Sense sürüm 10.8049.22439.1084 (KB5005292) veya üzeri
-   - Microsoft Defender Virüsten Koruma - Platform: 4.18.2207.7 (KB4052623) veya üzeri 
-   - Microsoft Defender Virüsten Koruma - Altyapı: 1.1.19500.2 (KB2267602) veya üzeri
+- [Sorun giderme modu](enable-troubleshooting-mode.md) artık Windows Server 2012 R2 ve üzeri dahil olmak üzere daha fazla Windows işletim sistemi için kullanılabilir. Gerekli güncelleştirmeler hakkında daha fazla bilgi için lütfen makaleye bakın.
 
 ## <a name="august-2022"></a>Ağustos 2022
 

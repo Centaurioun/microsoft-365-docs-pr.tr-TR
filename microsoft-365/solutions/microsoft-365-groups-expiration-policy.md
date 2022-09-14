@@ -7,7 +7,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Microsoft 365 grupları süre sonu ilkeleri hakkında bilgi edinin.
-ms.openlocfilehash: d91f3f09ccc1ffd562d87f5018953a6cd4fc8574
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: a9a488da353fdf85c1e28ed86e61821d98a08e45
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388407"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689021"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 grup süre sonu ilkesi
 

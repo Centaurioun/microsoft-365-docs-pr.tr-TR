@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.subservice: mde
-ms.openlocfilehash: c4dba4a85985bdbfa2bcc03421327bd35ae35928
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: eabaf627d882544d377e0cea61d83c5858fe3ac7
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585542"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690820"
 ---
 # <a name="troubleshoot-service-issues"></a>Hizmet sorunlarını giderin
 
@@ -78,7 +79,7 @@ Aşağıdaki tarih ve saat biçimleri şu anda desteklenmiyor:
 
 ### <a name="use-of-comma-to-indicate-thousand"></a>Bini belirtmek için virgül kullanımı
 
-Sayılarda ayırıcı olarak virgül kullanımı desteği desteklenmez. Bir sayının bini belirtmek için virgülle ayrıldığı bölgeler, yalnızca ayırıcı olarak nokta kullanımını görür. Örneğin, 15,5K 15,5K olarak görüntülenir.
+Sayılarda ayırıcı olarak virgül kullanımı desteği desteklenmez. Bir sayının bini belirtmek için virgülle ayrıldığı bölgeler, yalnızca ayırıcı olarak nokta kullanımını görür. Örneğin, 15,5 K 15,5 K olarak görüntülenir.
 
 > Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 

@@ -15,12 +15,13 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.subservice: mde
-ms.openlocfilehash: f590d8dfba215117269687ac952f9c181c570c7a
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 9d7d3bd2636ff877c36656cc5769cb655e48f53b
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67519918"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688955"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Uç Nokta için Microsoft Defender uyarısıyla ilişkili bir dosyayı araştırma
 

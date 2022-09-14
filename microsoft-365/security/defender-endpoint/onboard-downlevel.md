@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: c6a1ead70762ca2eae91d9d697c372dd3b924662
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 9a06824d606cc84e5e552f99a2d2d0b9c0652e04
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584583"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67692057"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Windows'un önceki sürümlerini ekleyin
 

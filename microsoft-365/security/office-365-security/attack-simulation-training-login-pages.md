@@ -12,12 +12,13 @@ ms.collection:
 - m365initiative-defender-office365
 description: Yöneticiler, Office 365 için Microsoft Defender Plan 2'de kimlik avı saldırıları simülasyonu için oturum açma sayfaları oluşturmayı ve yönetmeyi öğrenebilir.
 ms.subservice: mdo
-ms.openlocfilehash: d0a129bfdd43009a854bffea27a18717bf95df7b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 34c662665fcd70bf6314fcd6832643693358b26a
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480161"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690903"
 ---
 # <a name="login-pages-in-attack-simulation-training"></a>Saldırı simülasyonu eğitimindeki oturum açma sayfaları
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Hata Hata Programı Hakkında
-description: Güvenlik araştırmacısı isanız bir Microsoft ürünü, hizmeti veya cihazıyla ilgili bir güvenlik açığını bildirme ödülü kazanabilirsiniz.
+title: Microsoft Hata Ödülü Programı hakkında
+description: Güvenlik araştırmacısıysanız, Bir Microsoft ürünü, hizmeti veya cihazındaki bir güvenlik açığını bildirdiğiniz için ödül alabilirsiniz.
 ms.prod: m365-security
 audience: ITPro
 author: dansimp
@@ -11,17 +11,18 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: ''
 ms.technology: m365d
-ms.openlocfilehash: c7df4b834ecdbc859e33e75a4f2bb32117bde815
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+search.appverid: met150
+ms.openlocfilehash: 449a607d3d92a1d57f994e5e22dc07047fece318
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63705992"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688999"
 ---
-# <a name="about-the-microsoft-bug-bounty-program"></a>Microsoft Hata Hata Programı Hakkında
+# <a name="about-the-microsoft-bug-bounty-program"></a>Microsoft Hata Ödülü Programı hakkında
 
-Güvenlik araştırmacısı mısınız? Bir Microsoft ürünü, hizmeti veya cihazıyla ilgili bir güvenlik açığı olduğunu mu oldu? Öyleyse, size haber almak istiyorum!
+Güvenlik araştırmacısı mısınız? Microsoft ürün, hizmet veya cihazında bir güvenlik açığı buldunuz mu? Öyleyse, sizden haber almak istiyoruz!
 
-Güvenlik açığı raporunuz aşağıdaki programlardan birinin kapsamında olan bir ürünü veya hizmeti etkiliyorsa, program açıklamalarına göre bir başarı ödülü alırsınız.
+Güvenlik açığı raporunuz aşağıdaki ödül programlarımızdan biri kapsamındaki bir ürünü veya hizmeti etkiliyorsa, program açıklamalarına göre ödül ödülü alabilirsiniz.
 
-Tüm ayrıntılar [için Microsoft Hata Hata Programı](https://www.microsoft.com/en-us/msrc/bounty?rtc=1) sitesini ziyaret edin!
+Tüm ayrıntılar için [Microsoft Hata Ödülü Programı sitesini](https://www.microsoft.com/en-us/msrc/bounty?rtc=1) ziyaret edin!

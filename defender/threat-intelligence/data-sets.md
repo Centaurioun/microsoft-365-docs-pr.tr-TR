@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: 9a728cef7c23d65f2a6f39c1211854cb8c91c53f
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 03d058101296968f0b2f3e02e249f6b4c00be157
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661069"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687757"
 ---
 # <a name="data-sets"></a>Veri kümeleri
 
@@ -20,7 +20,7 @@ Microsoft, çok sayıda veri kümesini tek bir platformda (Microsoft Defender Te
 
 Microsoft, kullanıcıların tehditleri algılamasına ve yanıtlamasına, olayları önceliklendirmesine ve erkenden harekete geçerek kullanıcıların kuruluşlarını hedefleyen aktör gruplarıyla ilişkili saldırganların altyapılarını belirlemesine yardımcı olmak için İnternet verilerini toplar, analiz eder ve dizinler. Microsoft, İnternet verilerini toplamak için PDNS algılayıcı ağı, sanal kullanıcılardan oluşan genel ara sunucu ağı, bağlantı noktası taramalarını kullanırken kötü amaçlı yazılım ve eklenen Etki Alanı Adı Sistemi (DNS) verileri için üçüncü taraf kaynaklardan yararlanır.
 
-Bu internet verileri iki ayrı gruba ayrılır: geleneksel ve gelişmiş. Geleneksel veri kümeleri Çözümler, Whois, SSL Sertifikaları, Alt Etki Alanları, Karmalar, DNS, Ters DNS ve Hizmetler'i içerir. Gelişmiş veri kümeleri grubunda İzleyiciler, Bileşenler, Konak Çiftleri ve Tanımlama Bilgileri bulunur. İzleyiciler, Bileşenler, Konak Çiftleri ve Tanımlama Bilgileri veri kümeleri, gezinilen web sayfalarının Belge Nesne Modelinin (DOM) gözlemlenmesi ile toplanır. Bileşenler ve İzleyiciler veri kümeleri ayrıca, bağlantı noktası taramalarından veya SSL Sertifikası ayrıntılarından gelen başlık yanıtlarına göre tetiklenen algılama kurallarından da gözlemlenir.
+Bu internet verileri iki ayrı gruba ayrılır: geleneksel ve gelişmiş. Geleneksel veri kümeleri Çözümler, Whois, SSL Sertifikaları, Alt Etki Alanları, DNS, Ters DNS ve Hizmetler'i içerir. Gelişmiş veri kümeleri grubunda İzleyiciler, Bileşenler, Konak Çiftleri ve Tanımlama Bilgileri bulunur. İzleyiciler, Bileşenler, Konak Çiftleri ve Tanımlama Bilgileri veri kümeleri, gezinilen web sayfalarının Belge Nesne Modelinin (DOM) gözlemlenmesi ile toplanır. Bileşenler ve İzleyiciler veri kümeleri ayrıca, bağlantı noktası taramalarından veya SSL Sertifikası ayrıntılarından gelen başlık yanıtlarına göre tetiklenen algılama kurallarından da gözlemlenir.
 
 ![Veri Kümeleri Edge Ekran Görüntüsü](media/dataSetsEdgeScreenshot.png)
 
@@ -380,37 +380,6 @@ Konak çifti verilerimiz şunları içerir:
 - Kullanıcılar nereden/nereye yönlendiriliyor?
 
 - Ne tür bir yeniden yönlendirme gerçekleştirilmektedir?
-
-## <a name="hashes"></a>Karmalar
-
-Microsoft, kullanıcı aramasıyla ilişkili etki alanı, konak veya IP adresiyle ilişkili MD5 [kötü amaçlı yazılım](/microsoft-365/security/intelligence/malware-naming) karmalarını ortaya getirmek için Proofpoint ile iş ortağıdır. Kullanıcıların, MD5 karma ayrıntılarını analiz etmek istediklerinde Proofpoint tarafından Yeni Ortaya Çıkan Tehditler lisansı satın almaları teşvik edilir. Bu veriler, kullanıcıların bir saldırganın aktör özelliklerini, amacını ve motivasyonlarını anlamasına yardımcı olurken altyapının birbirine bağlanmasına da yardımcı olur. Her sonuç benzersiz bir karma içerir.
-
-Karma verilerimiz şunları içerir:
-
-- **Kaynak:** Karmayı algılamak için kullanılan kaynak.
-- **Örnek:** Algılanan karma için benzersiz tanımlama kodu.
-- **Toplama Tarihi:** Karma örneğin belirlenen kaynak tarafından toplandığı gün.
-
-![Veri Sekmesi Karmaları](media/dataTabHashes.png)
-
-**Bu veri kümesinin yanıtlamaya yardımcı olabileceği sorular:**
-
-- Etki alanı kötü amaçlı yazılıma bağlanıyor mu?
-
-    ![Veri Kümeleri Karmaları](media/dataSetsHashes.png)
-
-- Bu IP adresinin kendisiyle ilişkilendirilmiş kötü amaçlı yazılımları var mı?
-    ![Veri Kümeleri IP Karmaları](media/dataSetsIPHashes.png)
-
-- Karmalar kötü amaçlı yazılımla ilişkili olarak toplanıyor mu?
-
-- Bu şüpheli etkinlik ne kadar süre önce gözlemlendi?
-
-- Hangi satıcılar/kaynaklar kötü amaçlı ikili dosyalar gözlemledi?
-
-- Sorgulanan IP veya etki alanı kötü amaçlı yazılım için bir komut ve denetim sunucusu olarak hizmet etti mi?
-
-- Belirli bir sorgunun karmasıyla ilişkili dosyayı değerlendirmek beni tehdit avcılığı amacıyla diğer göstergelere yönlendirebilir mi?
 
 ## <a name="cookies"></a>Tanımlama bilgileri
 

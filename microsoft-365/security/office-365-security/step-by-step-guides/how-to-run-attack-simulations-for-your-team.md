@@ -2,8 +2,7 @@
 title: Ekibiniz için saldırı simülasyonları nasıl çalıştırılır?
 description: Eğitim için ekibiniz veya kuruluşunuz için hedef kullanıcılarınıza Saldırı Benzetimi yükü gönderme adımları. Sanal saldırılar, kuruluşunuzu gerçek bir saldırı etkilemeden önce savunmasız kullanıcıları, ilkeleri ve uygulamaları belirlemenize ve bulmanıza yardımcı olabilir.
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
-ms.openlocfilehash: f9955b8c72323a6a924c516ba54ec89a5acead84
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+search.appverid: met150
+ms.openlocfilehash: 527cf8f04d7ffee1dc649f6075451d7e9b1e4eeb
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67593957"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688263"
 ---
 # <a name="how-to-run-attack-simulations-for-your-team"></a>Ekibiniz için saldırı simülasyonları nasıl çalıştırılır?
 

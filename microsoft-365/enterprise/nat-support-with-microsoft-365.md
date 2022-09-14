@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 1/24/2017
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: Bu makalede, NAT kullanarak kuruluşunuzda IP adresi başına kullanabileceğiniz istemci sayısına yaklaşık olarak nasıl bağlanabileceğiniz hakkında ayrıntılar sağlanır.
-ms.openlocfilehash: 71c9d54ddf88d9b69c890609fea7ece8cac0de33
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 74c202f9f1ce8550f05a107fac9237dfc86b724f
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097392"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687185"
 ---
 # <a name="nat-support-with-office-365"></a>Office 365 ile NAT desteği
 
@@ -42,7 +42,7 @@ Kuruluşlar, özel IP adresi alanındaki cihazlara İnternet erişimi sağlamak 
   
 ## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Office 365 için aynı anda neden bu kadar çok bağlantı açmanız gerekiyor?
 
-Outlook sekiz veya daha fazla bağlantı açabilir (eklentilerin, paylaşılan takvimlerin, posta kutularının vb. olduğu durumlarda). Windows tabanlı bir NAT cihazında en fazla 64.000 bağlantı noktası olduğundan, bağlantı noktaları tükenmeden önce IP adresinin arkasında en fazla 8.000 kullanıcı olabilir. Müşteriler NAT için Windows işletim sistemi tabanlı olmayan cihazlar kullanıyorsa, kullanılabilir toplam bağlantı noktalarının hangi NAT cihazının veya yazılımının kullanıldığına bağlı olduğunu unutmayın. Bu senaryoda maksimum bağlantı noktası sayısı 64.000'den az olabilir. Bağlantı noktalarının kullanılabilirliği, 4.000 bağlantı noktasını kendi kullanımı için kısıtlamak Windows gibi diğer faktörlerden de etkilenir ve bu da toplam kullanılabilir bağlantı noktası sayısını 60.000'e düşürür. Internet Explorer gibi aynı anda bağlanabilen ve ek bağlantı noktaları gerektiren başka uygulamalar da olabilir.
+Outlook sekiz veya daha fazla bağlantı açabilir (eklentilerin, paylaşılan takvimlerin, posta kutularının vb. olduğu durumlarda). Windows tabanlı NAT cihazında en fazla 64.000 bağlantı noktası olduğundan, bağlantı noktaları tükenmeden önce ip adresinin arkasında en fazla 8.000 kullanıcı olabilir. Müşterilerin NAT için Windows işletim sistemi tabanlı olmayan cihazlar kullanıyorsa, kullanılabilir toplam bağlantı noktalarının hangi NAT cihazının veya yazılımının kullanıldığına bağlı olduğunu unutmayın. Bu senaryoda maksimum bağlantı noktası sayısı 64.000'den az olabilir. Bağlantı noktalarının kullanılabilirliği, Windows'un kendi kullanımı için 4.000 bağlantı noktasını kısıtlaması gibi diğer faktörlerden de etkilenir ve bu da toplam kullanılabilir bağlantı noktası sayısını 60.000'e düşürür. Internet Explorer gibi aynı anda bağlanabilen ve ek bağlantı noktaları gerektiren başka uygulamalar da olabilir.
   
 ## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Office 365 ile tek bir genel IP adresinin arkasında desteklenen en fazla cihazı hesaplama
 
@@ -62,7 +62,7 @@ Tek bir genel IP adresi arkasında desteklenen en yüksek cihaz sayısı = (64.0
 
 Ardından, tek bir genel IP adresi = (64.000 - 4.000)/(6 + 4) = 6.000'in arkasında desteklenen en fazla cihaz
   
-Microsoft Office Outlook 2007 için Eylül 2011 veya Microsoft Outlook 2010 için Kasım 2011 güncelleştirmelerinde yer alan Office 365 barındırma paketinin yayımlanmasıyla birlikte, Outlook bağlantı sayısı (her ikisi de Office Outlook 2007 Service Pack 2 ve Outlook 2010) Exchange 2'ye kadar olabilir. Ağınızın en yüksek düzeyde ihtiyaç duyacağı en düşük ve en fazla bağlantı noktası sayısını belirlemek için farklı işletim sistemlerini, kullanıcı davranışlarını vb. dikkate almanız gerekir.
+Microsoft Office Outlook 2007 için Eylül 2011 ya da Microsoft Outlook 2010 için Kasım 2011 veya sonraki bir güncelleştirmede yer alan Office 365 barındırma paketinin yayımlanmasıyla birlikte, Outlook'tan (Service Pack 2 ve Outlook 2010 ile Office Outlook 2007) Exchange'e yapılan bağlantı sayısı 2'ye kadar olabilir. Ağınızın en yüksek düzeyde ihtiyaç duyacağı en düşük ve en fazla bağlantı noktası sayısını belirlemek için farklı işletim sistemlerini, kullanıcı davranışlarını vb. dikkate almanız gerekir.
   
 Tek bir genel IP adresinin arkasında daha fazla cihaz desteklemek istiyorsanız, desteklenebilen en fazla cihaz sayısını değerlendirmek için ana hatlarıyla verilen adımları izleyin:
   

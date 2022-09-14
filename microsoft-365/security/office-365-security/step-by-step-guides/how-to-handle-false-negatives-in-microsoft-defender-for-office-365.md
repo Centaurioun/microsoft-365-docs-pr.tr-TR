@@ -2,8 +2,7 @@
 title: (Yanlış Negatifler) Office 365 için Microsoft Defender kullanılarak alıcılara teslim edilen kötü amaçlı e-postalar ile nasıl başa çıkılır?
 description: İş kaybını önlemek için son kullanıcılara ve gelen kutularına gelen kötü amaçlı e-postaları (Hatalı Negatifler olarak) Office 365 için Microsoft Defender ile işleme adımları.
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,14 @@ manager: jarogers
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
-ms.openlocfilehash: f81234f750946eed8efac6908aa1bc7481687622
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+search.appverid: met150
+ms.openlocfilehash: f93d210482fe66bddfbaee7ef059ec85afe0186b
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596709"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688241"
 ---
 # <a name="how-to-handle-malicious-emails-that-are-delivered-to-recipients-false-negatives-using-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender kullanarak alıcılara teslim edilen kötü amaçlı e-postaları işleme (Hatalı Negatifler)
 

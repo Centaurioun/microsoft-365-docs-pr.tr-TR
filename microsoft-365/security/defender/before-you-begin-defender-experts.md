@@ -18,12 +18,13 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: conceptual
-ms.openlocfilehash: 5c91ef8dc31faa733d50417c2a9279e50f8bd202
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 05b88bdb0d77f1844d70d3d1954dff192fe43135
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679833"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67687471"
 ---
 # <a name="before-you-begin-using-defender-experts-for-hunting"></a>Avcılık için Defender Uzmanlarını kullanmaya başlamadan önce
 

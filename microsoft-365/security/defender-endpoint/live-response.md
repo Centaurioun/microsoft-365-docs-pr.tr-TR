@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: f25537cc3ccbfc1cf7bc957a56d074755f4852e7
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: c163244cae52455718049195cd198ee403abd522
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67519676"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67688769"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Canlı yanıt kullanarak cihazlardaki varlıkları araştırma
 

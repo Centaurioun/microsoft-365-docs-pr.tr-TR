@@ -18,12 +18,13 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.subservice: mde
-ms.openlocfilehash: 970126ba749a746b325a629d78dcfa8f3b817c44
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 4bad45f7ed9e6c5e82f1bbc52603deeb6c104af1
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521213"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67689907"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Otomatik bir araştırmanın ardından düzeltme eylemlerini gözden geçirin
 

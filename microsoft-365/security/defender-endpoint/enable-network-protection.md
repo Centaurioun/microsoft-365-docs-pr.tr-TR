@@ -15,12 +15,13 @@ manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: ffb0e9f05c8858f189a5ae2bcc05296d8cfd5ba3
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 731f8215a3b22ebf7569930d40dc0a39ff1f00c3
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67524072"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67690476"
 ---
 # <a name="turn-on-network-protection"></a>Ağ korumasını açın
 
