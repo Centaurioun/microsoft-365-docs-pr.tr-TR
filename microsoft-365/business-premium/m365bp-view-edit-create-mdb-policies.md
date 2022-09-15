@@ -10,26 +10,27 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.subservice: business-premium
 ms.localizationpriority: high
+ms.date: 09/14/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 6ae58083c2bd0e239cda7dfe007ffbdca2711424
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 7956c330b2df483ae2459f2d4fc23a54e8387c4e
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613614"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710927"
 ---
 # <a name="view-and-edit-device-protection-policies"></a>Cihaz koruma ilkelerini görüntüleme ve düzenleme
 
-Microsoft 365 İş Ekstra'de, yönetilen cihazlar için güvenlik ayarları Microsoft Defender'ın güvenlik merkezinde veya Yönetici merkezinde cihaz koruma ilkeleri aracılığıyla yapılandırılır. Kurulumu ve yapılandırmayı basitleştirmeye yardımcı olmak için, kuruluşunuzun cihazlarının eklenir eklenmez korunmasına yardımcı olan önceden yapılandırılmış ilkeler vardır. Varsayılan ilkeleri kullanabilir, mevcut ilkeleri düzenleyebilir veya kendi ilkelerinizi oluşturabilirsiniz.
+Microsoft 365 İş Ekstra'da, yönetilen cihazlar için güvenlik ayarları Microsoft 365 Defender portalında veya Microsoft Endpoint Manager yönetim merkezinde cihaz koruma ilkeleri aracılığıyla yapılandırılır. Kurulumu ve yapılandırmayı basitleştirmeye yardımcı olmak için, kuruluşunuzun cihazlarının eklenir eklenmez korunmasına yardımcı olan önceden yapılandırılmış ilkeler vardır. Varsayılan ilkeleri kullanabilir, mevcut ilkeleri düzenleyebilir veya kendi ilkelerinizi oluşturabilirsiniz.
 
 **Bu kılavuzda aşağıdakilerin nasıl yapılacağını açıklar**:
 
 - Varsayılan ilkelerinize genel bakış elde edin
-- Defender güvenlik merkezinde, Yönetici merkezinde ve Intune cihaz ilkeleriyle çalışın.
+- Microsoft 365 Defender portalında veya Microsoft Endpoint Manager yönetim merkezinde (Intune) cihaz ilkeleriyle çalışın.
 
 ## <a name="about-the-default-device-protection-policies"></a>Varsayılan cihaz koruma ilkeleri hakkında
 
@@ -39,15 +40,15 @@ Microsoft 365 İş Ekstra, kuruluşunuzun cihazlarını korumak için iki ana il
 
 - Kuruluşunuzun cihazlarına hangi ağ trafiğinin akışına izin verileceğini belirleyen **güvenlik duvarı ilkeleri**.
 
-Bu ilkeler, Microsoft 365 İş Ekstra aboneliğinize dahil edilen İş için Microsoft Defender bir parçasıdır. Microsoft Defender güvenlik merkezindeki ilkelerle çalışmanın yanı sıra Yönetici merkezi ve Intune ilkelerle çalışma hakkında bilgi sağlanır.
+Bu ilkeler, Microsoft 365 İş Ekstra aboneliğinize dahil edilen İş için Microsoft Defender bir parçasıdır. Microsoft 365 Defender portalında veya Microsoft Endpoint Manager yönetim merkezinde ilkelerle çalışmaya yönelik bilgiler sağlanır.
 
-## <a name="working-with-device-polices-in-the-microsoft-defender-security-center"></a>Microsoft Defender güvenlik merkezinde cihaz ilkeleriyle çalışma
+## <a name="working-with-device-polices-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında cihaz ilkeleriyle çalışma
 
 Güvenlik merkezinde ilkelerinizle çalışma konusunda aşağıdaki ayrıntılar geçerlidir.
 
 ### <a name="view-existing-device-protection-policies"></a>Mevcut cihaz koruma ilkelerini görüntüleme
 
-Güvenlik merkezinde mevcut cihaz koruma ilkelerinizi görüntülemek için:
+Mevcut cihaz koruma ilkelerinizi Microsoft 365 Defender portalında görüntülemek için:
 
 1. Microsoft 365 Defender portalına ()[https://security.microsoft.com](https://security.microsoft.com) gidin ve oturum açın.
 
@@ -130,33 +131,7 @@ Yeni bir cihaz koruma ilkesi oluşturmak için:
    - **Düzenle'yi** seçerek gerekli değişiklikleri yapın.
    - Devam etmeye hazır olduğunuzda **İlke oluştur'u** seçin.
 
-## <a name="using-device-policies-in-the-admin-center"></a>Yönetici merkezinde cihaz ilkelerini kullanma
-
-Aşağıdaki bilgiler, Microsoft Business Premium Yönetici merkezinde ilkeleri görüntülemeyi ve yönetmeyi açıklar.
-
-### <a name="working-with-device-policies"></a>Cihaz ilkeleriyle çalışma
-
-Yönetici merkezinde ilkelerle çalışmak için:
-
-1.  Şuradan yönetim merkezine gidin: <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
-
-1. Sol gezinti bölmesinde **Cihaz** \> **İlkeleri'ni** seçin.
-
-    Bu sayfada, hedef grubu oluşturabilir, düzenleyebilir, değiştirebilir veya bir ilkeyi silebilirsiniz.
-
-    ![İlkeler sayfasının ekran görüntüsü.](../media/devicepolicies.png)
-  
-### <a name="view-and-manage-devices"></a>İlkeleri ve cihazları görüntüleme
-
-İlkeleri görüntülemek ve yönetmek için:
-
-1. Sol gezinti bölmesinde **Cihazlar** \> **Yönet'i** seçin.
-
-    Bu sayfada, bir veya daha fazla cihaz seçebilir ve şirket verilerini kaldırabilirsiniz. Cihaz koruma ayarlarını yaptığınız Windows 10 cihazlar için, cihazı fabrika ayarlarına sıfırlamayı da seçebilirsiniz.
-  
-   ![Cihazları yönet sayfası.](../media/devicesmanage.png)
-
-## <a name="working-with-device-policies-in-intune"></a>Intune'da cihaz ilkeleriyle çalışma
+## <a name="working-with-device-policies-in-the-microsoft-endpoint-manager-admin-center"></a>Microsoft Endpoint Manager yönetim merkezinde cihaz ilkeleriyle çalışma
 
 Microsoft Endpoint Manager yönetim merkezinde Uç nokta güvenliği aracılığıyla yapılan Intune cihaz ilkeleri oluşturmak ve yönetmek için aşağıdaki bilgileri kullanın.
 

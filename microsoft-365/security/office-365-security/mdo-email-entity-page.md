@@ -11,18 +11,18 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.localizationpriority: medium
-search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
 description: Office 365 için Microsoft Defender E5, P1 ve P2 müşterileri artık e-posta varlık sayfasıyla her e-postanın 360 derecelik görünümünü alabilir.
-ms.openlocfilehash: a6417173e25342fdef483bc38da64d6c1c48b96e
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: eed9d53a290d4c8b22de533d6d66edd011806861
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598791"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711587"
 ---
 # <a name="the-email-entity-page"></a>E-posta varlığı sayfası
 
@@ -122,7 +122,7 @@ Kullanıcılar, e-postalarında bulunan ve belirli bir kiracı için patlatılan
 
 - *Birincil Geçersiz Kılma: Kaynak:* Birincil geçersiz kılma ve kaynak, e-postanın teslimini etkileyen ve sistem tarafından verilen teslim konumunu geçersiz kılan kiracı veya kullanıcı ayarına (tehdit ve algılama teknolojisine göre) başvurur. Örneğin, kiracı tarafından yapılandırılmış aktarım kuralı nedeniyle engellenen bir e-posta veya Güvenilir Gönderenler için son kullanıcı ayarı nedeniyle izin verilen bir e-posta olabilir. 
 
-- *Tüm Geçersiz Kılmalar*: Tüm Geçersiz Kılmalar, e-postaya uygulanmış olan ve e-postanın teslimini etkileyebilecek veya etkilememiş olabilecek geçersiz kılmaların (kiracı veya kullanıcı ayarları) listesine başvurur. Örneğin, kiracı tarafından yapılandırılmış taşıma kuralının yanı sıra kiracı tarafından yapılandırılmış bir ilke ayarı (örneğin, Kiracı İzin Verme Engelleme listesinden) bir e-postaya uygulanırsa, her ikisi de bu alanda listelenir. E-postanın teslimini etkileyen ayarı belirlemek için birincil geçersiz kılma alanını de kontrol edebilirsiniz. 
+- *Tüm Geçersiz Kılmalar*: Tüm Geçersiz Kılmalar, e-postaya uygulanmış olan ve e-postanın teslimini etkileyebilecek veya etkilememiş olabilecek geçersiz kılmaların (kiracı veya kullanıcı ayarları) listesine başvurur. Örneğin, kiracı tarafından yapılandırılmış taşıma kuralının yanı sıra kiracı tarafından yapılandırılmış bir ilke ayarı (örneğin, Kiracı İzin Verme Engelleme listelerinden) bir e-postaya uygulanırsa, her ikisi de bu alanda listelenir. E-postanın teslimini etkileyen ayarı belirlemek için birincil geçersiz kılma alanını de kontrol edebilirsiniz. 
 
 - *Toplu Şikayet Düzeyi (BCL)*: İletinin toplu şikayet düzeyi (BCL). Daha yüksek bir BCL, toplu posta iletisinin şikayet oluşturma olasılığının daha yüksek olduğunu belirtir (e-postanın istenmeyen posta olma olasılığı varsa doğal sonuç).
 
@@ -130,11 +130,11 @@ Kullanıcılar, e-postalarında bulunan ve belirli bir kiracı için patlatılan
 
 - *İstemci türü*: E-postanın REST gibi gönderildiği İstemci türünü gösterir.
 
-- *İletme*: Autoforwaridng içeren senaryolar için, iletme kullanıcısının yanı sıra ETR veya SMTP iletme gibi iletme türünü gösterir. 
+- *İletme*: Otomatik zorlamalı senaryolar için, iletme kullanıcısının yanı sıra ETR veya SMTP iletme gibi iletme türünü gösterir.
 
 - *Dağıtım listesi*: Alıcı e-postayı listenin bir üyesi olarak aldıysa dağıtım listesini gösterir. İç içe dağıtım listeleri varsa en üst düzey dağıtım listesini gösterir.  
 
-- *Kime, Bilgi*: E-postanın Kime, Bilgi alanlarında listelenen adresleri gösterir. Bu alanlardaki bilgiler 5000 karakterle sınırlıdır. 
+- *Kime, Bilgi*: E-postanın Kime, Bilgi alanlarında listelenen adresleri gösterir. Bu alanlardaki bilgiler 5000 karakterle sınırlıdır.
 
 - *Etki Alanı Adı*: Gönderen etki alanı adıdır.
 
@@ -158,7 +158,7 @@ Kullanıcılar, e-postalarında bulunan ve belirli bir kiracı için patlatılan
 - DomainKeys Tanımlanan Posta (**DKIM**):
   - Geçiş: Geçirilen ileti için DKIM denetimini gösterir.
   - Başarısız (neden): İleti için DKIM denetiminin başarısız olduğunu ve nedenini gösterir. Örneğin, ileti imzalanmamışsa veya imza doğrulanmamışsa.
-  - Yok: İletinin imzalanmadığını gösterir. Bu, etki alanının DKIM kaydı olduğunu veya DKIM kaydının bir sonuç olarak değerlendirilmediğini, yalnızca bu iletinin imzalanmadığını gösterebilir veya göstermeyebilir.
+  - Yok: İletinin imzalı olmadığını gösterir. Bu, etki alanının DKIM kaydı olduğunu veya DKIM kaydının bir sonuç olarak değerlendirilmediğini, yalnızca bu iletinin imzalanmadığını gösterebilir veya göstermeyebilir.
 
 - Etki Alanı Tabanlı İleti Kimlik Doğrulaması, Raporlama ve Uyumluluk (**DMARC**):
   - Geçiş: Geçirilen ileti için DMARC denetimini gösterir.
@@ -169,9 +169,9 @@ Kullanıcılar, e-postalarında bulunan ve belirli bir kiracı için patlatılan
 *Bileşik Kimlik Doğrulaması*: Bu, Microsoft 365 tarafından iletinin orijinal olup olmadığını belirlemek üzere SPF, DKIM ve DMARC gibi e-posta kimlik doğrulamasını birleştirmek için kullanılan bir değerdir. Değerlendirmenin temeli olarak postanın *Kimden:* etki alanını kullanır.
 ## <a name="actions-into-email-entity-page"></a>Email varlık Sayfasına yönelik eylemler
 
-Güvenlik ekipleri artık geçici silme ve sabit silme gibi e-posta eylemleri gerçekleştirebilir, gereksiz öğeye geçebilir, gelen kutusuna geçebilir, araştırma başlatabilir, gözden geçirme için Microsoft'a gönderebilir ve diğer işlemleri gerçekleştirebilir. Dosya ve URL veya gönderen gibi **kiracı düzeyi blok** eylemleri de varlık sayfasından Email.  
+Güvenlik ekipleri artık geçici silme ve sabit silme gibi e-posta eylemleri gerçekleştirebilir, gereksiz öğeye geçebilir, gelen kutusuna geçebilir, araştırma başlatabilir, gözden geçirme için Microsoft'a gönderebilir ve diğer işlemleri gerçekleştirebilir. Dosya ve URL veya gönderen gibi **kiracı düzeyinde blok** eylemleri de Email varlık sayfasından tetiklenebilir.  
 
-Varlık sayfasının sağ üst köşesinden **Eylem gerçekleştir'e** tıklayabilirsiniz ve bu işlem, ihtiyacınız olan eylemi seçmeniz için Eylem sihirbazını açar. 
+Varlık sayfasının sağ üst köşesinden **Eylem gerçekleştir'i** seçebilirsiniz ve bu işlem, ihtiyacınız olan eylemi seçmeniz için Eylem sihirbazını açar. 
 ![Varlık sayfasından eylem gerçekleştirme.](../../media/Take-ActionWizard-Email-entity.png)
 
 Eylem sihirbazında aynı yan bölmede e-posta eylemleri, e-posta gönderimleri, gönderen ve gönderen etki alanını engelleme, araştırma eylemleri ve iki adımlı onay (düzeltmeye ekleme) gerçekleştirebilirsiniz. Bu, kullanım kolaylığı için tutarlı bir akış izler. Eylem sihirbazı, Örneğin, Gezgin eylemleri (Silme, Göndermeler ve Araştırma eylemleri için) tarafından kullanılanla aynı sistemi kullanır. Bu eylemleri [Birleşik işlem merkezinde](https://security.microsoft.com/action-center/history) (silinen e-postalar için), [Gönderim portalında](https://security.microsoft.com/reportsubmission) (gönderimler için) ve Kiracı [İzin Ver/Engelle Listeleri](https://security.microsoft.com/tenantAllowBlockList) sayfasında (TABL blokları) görebilir ve izleyebilirsiniz. 
@@ -184,7 +184,7 @@ Bu eylemleri yapmak için gereken [izinlere](permissions-microsoft-365-security-
  
 ### <a name="email-summary-panel"></a>Email özet paneli
 
-E-posta özeti paneli, tam e-posta varlık sayfasının özetlenmiş bir görünümüdür. E-posta (örneğin algılamalar) hakkında standartlaştırılmış ayrıntıların yanı sıra bağlama özgü bilgiler (örneğin, Karantina veya Gönderimler meta verileri için) içerir. E-posta özeti paneli geleneksel Gerçek Zamanlı Algılamalar, Tehdit Gezgini, Gönderimler ve Raporlama açılır bileşenlerinin yerini alır.
+E-posta özeti paneli, tam e-posta varlık sayfasının özetlenmiş bir görünümüdür. E-postayla ilgili standartlaştırılmış ayrıntıları (örneğin, algılamalar) ve bağlama özgü bilgileri (örneğin, Karantinaya Alma veya Gönderimler meta verileri) içerir. E-posta özeti paneli geleneksel Gerçek Zamanlı Algılamalar, Tehdit Gezgini, Gönderimler ve Raporlama açılır bileşenlerinin yerini alır.
 
 > [!div class="mx-imgBorder"]
 > ![E-posta varlığı bağlantısını açın.](../../media/open-email-entity-mdo.png)
@@ -198,11 +198,11 @@ E-posta özet paneli aşağıdaki bölümlere ayrılmıştır:
 
 - *Email ayrıntıları*: Gönderen adı, gönderen adresi, alınan süre, kimlik doğrulama ayrıntıları ve diğer diğer birçok ayrıntı gibi e-posta özellikleri hakkında bilgi içerir.
 
-- *URL'ler*: Varsayılan olarak, 3 URL ve karşılık gelen tehditlerini görürsünüz. **Tüm URL'leri** genişletip görmek ve dışarı aktarmak için istediğiniz zaman Tüm URL'leri görüntüle'ye tıklayabilirsiniz.  
+- *URL'ler*: Varsayılan olarak, 3 URL ve karşılık gelen tehditlerini görürsünüz. **Tüm URL'leri** genişletmek ve görmek ve dışarı aktarmak için her zaman Tüm URL'leri görüntüle'yi seçebilirsiniz.  
 
-- *Ekler*: Varsayılan olarak 3 ek görürsünüz. Tüm ekleri genişletmek ve görmek için her zaman **Tüm ekleri görüntüle'ye** tıklayabilirsiniz. 
+- *Ekler*: Varsayılan olarak 3 ek görürsünüz. Tüm ekleri genişletmek ve görmek için her zaman **Tüm ekleri görüntüle'yi** seçebilirsiniz. 
 
-Yukarıdaki bölümlere ek olarak, özet paneliyle tümleştirilen birkaç deneyime özgü bölümler de görürsünüz: 
+Yukarıdaki bölümlere ek olarak, özet paneliyle tümleştirilmiş birkaç deneyime özgü bölümler de görürsünüz: 
 
 - Gönderi: 
 

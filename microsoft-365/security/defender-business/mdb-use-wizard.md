@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: c0b9666a280b159df4e1b985b733c73565477241
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: f0b24d0476ad3efb579f3d86aabba9d0a94a372e
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597536"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710707"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'da kurulum sihirbazını kullanma
 
@@ -38,7 +38,7 @@ ms.locfileid: "67597536"
 
 Kurulum sihirbazı, şirketinizdeki biri Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com)) ilk kez oturum açtığında çalışacak şekilde tasarlanmıştır. 
 
-Şirketiniz Microsoft 365 İş Ekstra kullanıyorsa, birisi **Endpoints** > **Cihaz envanterine** ilk kez gittiğinde İş için Defender kurulum sihirbazı çalıştırılır. 
+Şirketiniz Microsoft 365 İş Ekstra kullanıyorsa, birisi **Varlık** > **Cihazları'na** ilk kez gittiğinde İş için Defender kurulum sihirbazı çalıştırılır. 
 
 Kurulum sihirbazı başlangıç ekranı aşağıdaki görüntüye benzer:
 

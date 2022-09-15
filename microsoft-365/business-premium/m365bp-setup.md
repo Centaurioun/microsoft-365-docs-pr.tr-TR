@@ -10,18 +10,18 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.subservice: business-premium
 ms.localizationpriority: high
-ms.date: 08/05/2022
+ms.date: 09/14/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 254240fb52eae757ac252627ef1e171e5ae8ac43
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: d7df566b384e7c014d98447f85e0c64edf68b0fc
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613790"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710751"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'yı ayarlama
 
@@ -54,7 +54,7 @@ Microsoft 365 İş Ekstra destekli bir işlem içerir. Aşağıdaki videoda, Mic
 Kılavuzlu kurulum işlemini tamamladıktan sonra [güvenliği artırmaya](m365bp-security-overview.md) devam ettiğinizden emin olun.
 
 > [!TIP]
-> - Kullanıcıları ekledikten sonra, onlara [Çalışan hızlı kurulum kılavuzunun](../admin/setup/employee-quick-setup.md) bağlantısını verin. Kılavuz, oturum açma, Office uygulamalarını alma ve dosyaları kaydetme, kopyalama ve paylaşma işlemlerinde onlara yol gösterir.
+> Kullanıcıları ekledikten sonra, onlara [Çalışan hızlı kurulum kılavuzunun](../admin/setup/employee-quick-setup.md) bağlantısını verin. Kılavuz, oturum açma, Office uygulamalarını alma ve dosyaları kaydetme, kopyalama ve paylaşma işlemlerinde onlara yol gösterir.
 
 
 ## <a name="work-with-a-microsoft-partner"></a>Bir Microsoft iş ortağıyla çalışma

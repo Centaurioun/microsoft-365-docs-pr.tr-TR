@@ -14,12 +14,13 @@ description: Office 365 için Microsoft Defender'daki tehdit filtreleme yığın
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 14dfa4b369c8f555f2368a7065648e518ca741e2
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 6fdd05c5a6afdb9736594c19ca447d8212269a7c
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67590688"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709079"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da adım adım tehdit koruması
 

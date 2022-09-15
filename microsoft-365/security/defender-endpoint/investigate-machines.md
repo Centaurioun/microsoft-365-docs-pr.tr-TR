@@ -15,12 +15,12 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ad6cf3d61efec199d9a30ba67e06829b6f1feccb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6b8529338522df41c25dafb30d25b879a5790861
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688131"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709471"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Uç Nokta için Microsoft Defender Cihazlar listesindeki cihazları araştırma
 
@@ -200,7 +200,6 @@ Olayı ve ilgili olayları daha fazla incelemek **için, ilgili olayları avla'y
 
 :::image type="content" source="images/security-assessments.png" alt-text="Güvenlik değerlendirmeleri kartı" lightbox="images/security-assessments.png":::
 
-
 ### <a name="device-health-status"></a>Cihaz durumu
 
 **Cihaz sistem durumu** kartı, belirli bir cihaz için özetlenmiş bir sistem durumu raporu gösterir. Cihazın genel durumunu belirtmek için kartın üst kısmında aşağıdaki iletilerden biri görüntülenir (en yüksek ve en düşük önceliğe göre listelenir):
@@ -223,14 +222,12 @@ Karttaki diğer bilgiler şunlardır: son tam tarama, son hızlı tarama, güven
 
 Gri dairenin verilerin bilinmediğini gösterdiğini lütfen unutmayın. 
 
->[!NOTE]
->macOS ve Linux cihazları için genel durum iletisi şu anda 'MacOS & Linux için durum kullanılamıyor' olarak görünüyor. Şu anda durum özeti yalnızca Windows cihazları için kullanılabilir. Tablodaki diğer tüm bilgiler, desteklenen tüm platformlar için her cihaz sistem durumu sinyalinin tek tek durumlarını göstermek için günceldir. 
+> [!NOTE]
+> macOS ve Linux cihazları için genel durum iletisi şu anda 'MacOS & Linux için durum kullanılamıyor' olarak görünüyor. Şu anda durum özeti yalnızca Windows cihazları için kullanılabilir. Tablodaki diğer tüm bilgiler, desteklenen tüm platformlar için her cihaz sistem durumu sinyalinin tek tek durumlarını göstermek için günceldir. 
 
 Cihaz durumu raporunun ayrıntılı bir görünümünü elde etmek için **Raporlar > Cihaz durumu'na** gidebilirsiniz. Daha fazla bilgi için bkz[. Uç Nokta için Microsoft Defender'de cihaz durumu ve uyumluluk raporu](/microsoft-365/security/defender-endpoint/machine-reports). 
 
 :::image type="content" source="images/device-health-status.png"  alt-text="Cihaz sistem durumu kartı" lightbox="images/device-health-status.png":::
-
-
 
 ## <a name="related-topics"></a>İlgili konular
 

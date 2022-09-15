@@ -21,12 +21,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 42e7b179fe958b93e7ba3064cce55cb0add715ef
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 04047f078f887687db4cf9f10d49c620125fc4d6
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787176"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710510"
 ---
 # <a name="learn-about-communication-compliance"></a>İletişim uyumluluğu hakkında daha fazla bilgi edinme
 
@@ -130,6 +130,10 @@ Uyarılar, ilke eşleşmeleri, eylemler ve eğilimler için yeni etkileşimli pa
 - **Üçüncü taraf kaynaklar**: Microsoft 365 kuruluşunuzdaki posta kutularına aktarılan veriler için [üçüncü taraf kaynaklardan](/microsoft-365/compliance/archiving-third-party-data) gelen iletileri tarayabilirsiniz. İletişim uyumluluğu, Instant Bloomberg ve diğerleri dahil olmak üzere çeşitli popüler platformlarla bağlantıları destekler.
 
 İletişim uyumluluk ilkelerindeki mesajlaşma kanalı desteği hakkında daha fazla bilgi edinmek için bkz. [İletişim uyumluluğu ile kanal sinyallerini algılama](/microsoft-365/compliance/communication-compliance-channels).
+
+## <a name="get-started-with-recommended-actions-preview"></a>Önerilen eylemleri kullanmaya başlama (önizleme)
+
+İletişim uyumluluğunu ilk kez ayarlarken veya yeni ilkeler oluşturmaya başlarken, [önerilen yeni eylemler](/microsoft-365/compliance/communication-compliance-configure#recommended-actions-preview) deneyimi, iletişim uyumluluk özelliklerinden en iyi şekilde yararlanmak için size yardımcı olabilir. Önerilen eylemler arasında izinler ayarlama, dağıtım grupları oluşturma, ilke oluşturma ve daha fazlası yer alır
 
 ## <a name="workflow"></a>Iş akışı
 

@@ -22,12 +22,13 @@ ms.collection:
 - zerotrust-solution
 - highpri
 ms.subservice: mdo
-ms.openlocfilehash: 8178c3bf98e5171fa5e7c6c257ce43e1b00f62e9
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 8030547629167f0d2ac8840ab150f988380aa196
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598351"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710861"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Sıfır Güven kimlik ve cihaz erişimi yapılandırmaları
 

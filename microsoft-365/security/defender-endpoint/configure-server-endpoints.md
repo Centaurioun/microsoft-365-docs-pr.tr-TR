@@ -19,12 +19,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 39d6c455790d5f87adcd2b0791c5603e449de6d1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6e0b53da9117577ec0d0cee98431e30d265f96dc
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67680207"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711553"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme
 
@@ -115,6 +115,7 @@ Sunucularınızı daha önce MMA kullanarak ekleme yaptıysanız, yeni çözüme
 
 Aşağıdaki ayrıntılar Windows Server 2012 R2 ve 2016 için yeni birleşik çözüm paketi için geçerlidir:
 
+- İşletim sistemi güncelleştirmesi, hizmet yüklemesinde zaman aşımı nedeniyle diskleri yavaş olan makinelerde yükleme sorununa neden olabilir. Yükleme "c:\program files\windows defender\mpasdesc.dll bulunamadı, - 310 WinDefend" iletisiyle başarısız oluyor. Gerekirse başarısız yüklemenin temizlenmesine yardımcı olmak için lütfen en son yükleme paketini ve en son [install.ps1](https://github.com/microsoft/mdefordownlevelserver) betiğini kullanın.
 - [Proxy sunucusundaki Uç Nokta için Microsoft Defender hizmet URL'lerine erişimi etkinleştirme](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) bölümünde belirtildiği gibi bağlantı gereksinimlerinin karşılandığından emin olun. Bunlar, Windows Server 2019 için bu gereksinimlere eşdeğerdir.
 - Statik TelemetryProxyServer kullanıldığında **ve** sertifika iptal listesi (CRL) URL'lerine SYSTEM hesabı bağlamından ulaşılamadığında buluta Windows Server 2012 R2 bağlantısıyla ilgili bir sorun tespit ettik. Hemen azaltma, bu tür bir bağlantı sağlayan alternatif bir proxy seçeneği ("sistem genelinde") kullanmak veya SYSTEM hesabı bağlamında WinInet ayarı aracılığıyla aynı proxy'yi yapılandırmaktır.
 Alternatif olarak, geçici bir çözüm olarak sertifika yüklemek [için bağlantısı kesilmiş makinelerde TelemetryProxyServer ile ilgili bilinen bir sorun için Geçici Çözüm'de](#workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines) sağlanan yönergeleri kullanın.

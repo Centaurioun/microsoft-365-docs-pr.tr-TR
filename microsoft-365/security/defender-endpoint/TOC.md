@@ -269,7 +269,11 @@
 ##### [Denetimli klasör erişimini özelleştirin](customize-controlled-folders.md)
 #### [Cihaz Denetimi]()
 ##### [Çıkarılabilir Depolama Koruması](device-control-removable-storage-protection.md)
-##### [Çıkarılabilir Depolama Erişim Denetimi](device-control-removable-storage-access-control.md)
+##### [Çıkarılabilir Depolama Erişim Denetimi]()
+###### [Genel Bakış](device-control-removable-storage-access-control.md)
+###### [Intune kullanarak dağıtma ve yönetme](deploy-manage-removable-storage-intune.md)
+###### [Grup ilkesini kullanarak dağıtma ve yönetme](deploy-manage-removable-storage-group-policy.md)
+###### [Sık sorulan sorular](device-control-removable-storage-access-control-faq.md)
 ##### [Cihaz Yüklemesi](mde-device-control-device-installation.md)
 ##### [Cihaz Denetimi Yazıcı Koruması](printer-protection.md)
 ##### [Cihaz Denetimi Raporları](device-control-report.md)
@@ -525,8 +529,8 @@
 ####### [Yazılım güvenlik açığı değerlendirmesini dışarı aktar](get-assessment-software-vulnerabilities.md)
 
 ###### [Tarayıcı uzantıları]()
-####### [Broswer ekstensiyonlarını dışarı aktarma değerlendirmesi](get-assessment-browser-extensions.md)
-####### [Tarayıcı ekstensiyonları permisson bilgilerini alma](get-browser-extensions-permission-info.md)
+####### [Tarayıcı kapsamlarını dışarı aktarma değerlendirmesi](get-assessment-browser-extensions.md)
+####### [Tarayıcı kapsamları izin bilgilerini alma](get-browser-extensions-permission-info.md)
 
 ###### [Otomatik araştırma]()
 ####### [Araştırma yöntemleri ve özellikleri](investigation.md)

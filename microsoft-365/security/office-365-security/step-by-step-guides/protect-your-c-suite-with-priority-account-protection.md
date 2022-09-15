@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: ad7ebb6b8ab42f5f2b733360f468b56462ea38bc
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+search.appverid: met150
+ms.openlocfilehash: f29f4d0a82c5c6111dccb6128af87851d503f022
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681941"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711509"
 ---
 # <a name="protect-your-c-suite-with-priority-account-protection"></a>C-paketinizi öncelikli hesap korumasıyla koruyun
 

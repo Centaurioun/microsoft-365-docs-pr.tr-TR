@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/13/2022
+ms.date: 09/14/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mdb-setup
 - highpri
-ms.openlocfilehash: b16207902e8dfe198d8ab99370ab63e4ea64031c
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 49ce0164004582ccc61f8c509fd34e3eb4123489
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664647"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711356"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Cihazları İş için Microsoft Defender ekleme
 
@@ -47,7 +47,7 @@ Windows istemci cihazlarını İş için Defender'a eklemek için aşağıdaki s
 
 - [Yerel betik](#local-script-for-windows-10-and-11) (cihazları Microsoft 365 Defender portalında el ile ekleme için)
 - [grup ilkesi](#group-policy-for-windows-10-and-11) (kuruluşunuzda zaten grup ilkesi kullanıyorsanız)
-- [Microsoft Intune](#intune-for-windows-10-and-11)
+- [Microsoft Intune](#intune-for-windows-10-and-11) (zaten Intune kullanıyorsanız)
 
 ### <a name="local-script-for-windows-10-and-11"></a>Windows 10 ve 11 için yerel betik
 
@@ -129,7 +129,7 @@ Windows cihazlarını İş için Defender'a ekledikten sonra, her şeyin düzgü
 
 1. Windows cihazında bir klasör oluşturun: `C:\test-MDATP-test`.
 
-2. Bir komut istemini yönetici olarak açın.
+2. Yönetici olarak Komut İstemi'ni açın.
 
 3. Komut İstemi penceresinde aşağıdaki PowerShell komutunu çalıştırın:
 
@@ -141,7 +141,7 @@ Komut çalıştırıldıktan sonra Komut İstemi penceresi otomatik olarak kapat
 
 ## <a name="view-a-list-of-onboarded-devices"></a>Eklenen cihazların listesini görüntüleme
 
-İş için Defender'a eklenen cihazların listesini görüntülemek için Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com) ) gidin. Gezinti bölmesindeki **Uç Noktalar'ın** altında **Cihaz envanteri'ni** seçin.
+İş için Defender'a eklenen cihazların listesini görüntülemek için Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com) ) gidin. Gezinti bölmesinde **Varlık** > **Cihazları'na** gidin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
@@ -159,7 +159,7 @@ Komut çalıştırıldıktan sonra Komut İstemi penceresi otomatik olarak kapat
 Mac'i eklemek için aşağıdaki seçeneklerden birini belirleyin:
 
 - [Mac için yerel betik](#local-script-for-mac) (*önerilir*)
-- [Mac için Intune](#intune-for-mac)
+- [Mac için Intune](#intune-for-mac) (zaten Intune kullanıyorsanız)
 
 ### <a name="local-script-for-mac"></a>Mac için yerel betik
 
@@ -193,7 +193,7 @@ Mac Intune kaydedildikten sonra bir cihaz grubuna ekleyebilirsiniz. [İş için 
 
 ### <a name="intune-for-mac"></a>Mac için Intune
 
-Microsoft Endpoint Manager yönetim merkezini ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) kullanarak Mac bilgisayarları Intune'a kaydedebilirsiniz. Mac'i Intune'a kaydetmek için kullanılabilecek çeşitli yöntemler vardır. Aşağıdaki yöntemlerden birini öneririz:
+Zaten Intune varsa, Microsoft Endpoint Manager yönetim merkezini ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) kullanarak Mac bilgisayarları kaydedebilirsiniz. Mac'i Intune'a kaydetmek için kullanılabilecek çeşitli yöntemler vardır. Aşağıdaki yöntemlerden birini öneririz:
 
 - [Şirkete ait Mac için bir seçenek belirleyin](#options-for-company-owned-mac)
 - [Kullanıcılardan kendi Mac'lerini Intune kaydetmelerini isteyin](#ask-users-to-enroll-their-own-mac-in-intune)
@@ -234,7 +234,7 @@ Bir cihaz Intune kaydedildikten sonra cihaz grubuna ekleyebilirsiniz. [İş içi
 
 ## <a name="view-a-list-of-onboarded-devices"></a>Eklenen cihazların listesini görüntüleme
 
-İş için Defender'a eklenen cihazların listesini görüntülemek için Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com) ) gidin. Gezinti bölmesindeki **Uç Noktalar'ın** altında **Cihaz envanteri'ni** seçin.
+İş için Defender'a eklenen cihazların listesini görüntülemek için Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com) ) gidin. Gezinti bölmesinde **Varlık** > **Cihazları'na** gidin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
@@ -300,7 +300,7 @@ Windows Server uç noktanızı İş için Defender'a ekledikten sonra, her şeyi
 
 1. Windows Server cihazında bir klasör oluşturun: `C:\test-MDATP-test`.
 
-2. Bir komut istemini yönetici olarak açın.
+2. Yönetici olarak Komut İstemi'ni açın.
 
 3. Komut İstemi penceresinde aşağıdaki PowerShell komutunu çalıştırın:
 
@@ -332,7 +332,7 @@ Bir Linux Server örneğini İş için Defender'a eklemek için aşağıdaki yö
 
 ## <a name="view-a-list-of-onboarded-devices"></a>Eklenen cihazların listesini görüntüleme
 
-İş için Defender'a eklenen cihazların listesini görüntülemek için Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com) ) gidin. Gezinti bölmesindeki **Uç Noktalar'ın** altında **Cihaz envanteri'ni** seçin.
+İş için Defender'a eklenen cihazların listesini görüntülemek için Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com) ) gidin. Gezinti bölmesinde **Varlık** > **Cihazları'na** gidin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
@@ -352,11 +352,11 @@ Android ve iOS/iPadOS cihazları gibi mobil cihazları eklemek için Microsoft I
 Bir cihaz Intune kaydedildikten sonra cihaz grubuna ekleyebilirsiniz. [İş için Defender'da cihaz grupları hakkında daha fazla bilgi edinin](mdb-create-edit-device-groups.md).
 
 > [!NOTE]
-> Tek başına İş için Defender, iOS ve Android cihazları eklemek için gereken Intune lisansını içermez. mobil cihazları eklemek için İş için Defender aboneliğinize Intune ekleyebilirsiniz.
+> İş için Defender'ın tek başına sürümü, iOS ve Android cihazlarını eklemek için gereken Intune lisansını içermez. mobil cihazları eklemek için İş için Defender aboneliğinize Intune ekleyebilirsiniz. Intune Microsoft 365 İş Ekstra dahildir.
 
 ## <a name="view-a-list-of-onboarded-devices"></a>Eklenen cihazların listesini görüntüleme
 
-İş için Defender'a eklenen cihazların listesini görüntülemek için Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com) ) gidin. Gezinti bölmesindeki **Uç Noktalar'ın** altında **Cihaz envanteri'ni** seçin.
+İş için Defender'a eklenen cihazların listesini görüntülemek için Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com) ) gidin. Gezinti bölmesinde **Varlık** > **Cihazları'na** gidin.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

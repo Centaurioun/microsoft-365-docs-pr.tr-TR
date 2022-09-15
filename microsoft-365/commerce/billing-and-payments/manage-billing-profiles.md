@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Faturalama profillerinin faturaları nasıl desteklediğini öğrenin.
 ms.date: 04/02/2021
-ms.openlocfilehash: 18e1eb23d0fcbdfd6eb374032f780a4f89a48cee
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 34e56474106974e543640eb25b2cea4db0a2efc8
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685887"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711400"
 ---
 # <a name="understand-billing-profiles"></a>Faturalama profillerini anlama
 
@@ -33,7 +33,7 @@ Faturalama profili bir ödeme yöntemi, Fatura adresi bilgileri ve satın alma s
 
 > [!NOTE]
 >
-> Tüm hesapların faturalama profili yoktur. Bir profiliniz olup olmadığından emin değilseniz [faturalama profillerinizin listesini görüntüleyebilirsiniz] (manage-billing-profiles.md#view-my-billing-profiles).
+> Tüm hesapların faturalama profili yoktur. Bir profiliniz olup olmadığından emin değilseniz [faturalama profillerinizin listesini görüntüleyebilirsiniz](manage-billing-profiles.md#view-my-billing-profiles).
 
 ## <a name="what-are-billing-profile-roles"></a>Faturalama profili rolleri nelerdir?
 

@@ -21,12 +21,13 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.openlocfilehash: 18010826e9db2d325205d255395a4eb4df6d417e
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+- met150
+ms.openlocfilehash: 08028611b6be37843a9653b8837a3f55400115b9
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67474610"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710817"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender'da uyarıları araştırma
 

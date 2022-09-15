@@ -21,12 +21,13 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.openlocfilehash: 088cb74f16fae1155b86b1bfa6b5c72aae287720
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+- met150
+ms.openlocfilehash: 4afcc1d2b1ed8da1dca14575776dd720a56cda11
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482108"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711037"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Şüpheli e-posta iletme etkinliği için uyarı notları
 

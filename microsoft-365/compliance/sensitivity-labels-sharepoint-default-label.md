@@ -16,19 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Yeni ve etiketsiz belgeler için SharePoint belge kitaplığı için varsayılan duyarlılık etiketini yapılandırın.
-ms.openlocfilehash: 4ffb0dacac36c79593a8cdfbeed0f4360e246f35
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 6f3146f8ce59f88eafc311cd9bf382f06103eb94
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276447"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710773"
 ---
 # <a name="configure-a-default-sensitivity-label-for-a-sharepoint-document-library"></a>SharePoint belge kitaplığı için varsayılan duyarlılık etiketini yapılandırma
 
 >*[Güvenlik & uyumluluğu için Microsoft 365 lisanslama kılavuzu](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Bu özellik önizleme aşamasında aşamalı olarak kullanıma sunulmuştur ve değiştirilebilir. Ayrıca, özellik genel kullanıma sunulduğunda (GA) lisans ayrıntılarının sağlandığı premium bir özelliktir.
+> Bu özellik önizleme aşamasındadır ve değiştirilebilir. Ayrıca, özellik genel kullanıma sunulduğunda (GA) lisans ayrıntılarının sağlandığı premium bir özelliktir.
 > 
 > Önizleme duyurusunu okumak için [blog gönderisine](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/public-preview-default-label-for-a-document-library-in/ba-p/3585136) bakın.
 
@@ -89,8 +89,7 @@ Mevcut belge kitaplığı için:
 
 Yeni bir belge kitaplığı oluşturuyorsanız, **Belge kitaplığı oluştur** açılır penceresinden aynı **Varsayılan duyarlılık etiketleri** ayarını yapılandırabilirsiniz.
 
-> [!NOTE]
-> Bu yeni ayarlar kiracılara aşamalı olarak dağıtılır. Bunları görmüyorsanız birkaç gün içinde yeniden deneyin.
+SharePoint kitaplığı için varsayılan duyarlılık etiketini ayarlamak ve değiştirmek için gereken izinler devralınır. Kitaplık adını ve açıklamasını değiştirme özelliğinde olduğu gibi, herhangi bir SharePoint site üyesi bu izne sahiptir.
 
 ## <a name="monitoring-application-of-library-default-sensitivity-labels"></a>Kitaplık varsayılan duyarlılık etiketlerinin izleme uygulaması
 

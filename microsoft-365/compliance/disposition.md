@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Bir değerlendirme gözden geçirmesi kullandığınızda veya kayıt olarak işaretlenen öğeler yapılandırdığınız ayarlara göre otomatik olarak silinirken içerik elden çıkarma işlemini izleyin ve yönetin.
-ms.openlocfilehash: d72cc68bb093c3b49c7f79847916c5cbc5fe5a2d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 645c48ab13a54a6b95b5d0b0732213efcab59fd7
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630113"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710488"
 ---
 # <a name="disposition-of-content"></a>İçeriğin konumu
 
@@ -151,7 +151,7 @@ Gözden geçirenlerinizi belirttikten sonra, onlara **Disposition Management** r
 
 Gözden geçirene gönderilen örnek varsayılan e-posta bildirimi:
 
-![Bir öğe değerlendirme gözden geçirmeye hazır olduğunda varsayılan metin içeren e-posta bildirimi örneği.](../media/disposition-review-email.png)
+![Email bir öğe değerlendirmeye hazır olduğunda varsayılan metin içeren bildirim örneğini kullanın.](../media/disposition-review-email.png)
 
 İlk bildirim ve ardından anımsatıcılar için değerlendirme gözden geçirenlere gönderilen e-posta iletilerini özelleştirebilirsiniz.
 
@@ -159,7 +159,7 @@ Microsoft Purview uyumluluk portalı kayıt yönetimi sayfalarından herhangi bi
 
 ![Kayıt yönetimi ayarları.](../media/record-management-settings.png)
 
-**Değerlendirme** sekmesindeki **Değerlendirme gözden geçirmeleri için e-posta bildirimleri** bölümünde, yalnızca varsayılan e-posta iletisini kullanmak isteyip istemediğinizi seçin ve belirtin veya varsayılan iletiye kendi metninizi ekleyin. Özel metniniz, bekletme etiketi hakkındaki bilgilerin ardından ve sonraki adım yönergelerinden önce e-posta yönergelerine eklenir.
+**Değerlendirme** sekmesindeki **Email değerlendirme bildirimleri** bölümünde, yalnızca varsayılan e-posta iletisini kullanmak isteyip istemediğinizi seçin ve belirtin veya varsayılan iletiye kendi metninizi ekleyin. Özel metniniz, bekletme etiketi hakkındaki bilgilerin ardından ve sonraki adım yönergelerinden önce e-posta yönergelerine eklenir.
 
 Tüm diller için metin eklenebilir, ancak biçimlendirme ve resimler desteklenmez. URL'ler ve e-posta adresleri metin olarak girilebilir ve e-posta istemcisine bağlı olarak, özelleştirilmiş e-postada köprü veya biçimlendirilmemiş metin olarak görüntülenebilir.
 
@@ -187,7 +187,7 @@ Gösterilen örnekte görebileceğiniz gibi desteklenen eylemler şunlardır:
   
 - **Elden çıkarmayı onayla**:
     - Bu eylem, bir değerlendirme gözden geçirmesinin geçici aşaması için seçildiğinde (birden çok aşama yapılandırdıysanız): Öğe bir sonraki değerlendirme aşamasına geçer.
-    - Bu eylem, değerlendirme gözden geçirmesinin son aşaması için seçildiğinde veya yalnızca bir değerlendirme aşaması varsa: Öğe kalıcı silme için uygun olarak işaretlenir ve bu süreölçer işi 7 gün içinde gerçekleştirilen eylemlerdir. Öğenin kalıcı olarak silinecek tam zamanlaması iş yüküne bağlıdır. Daha fazla bilgi için bkz [. SharePoint ve OneDrive için bekletme nasıl çalışır](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) ve [Exchange için bekletme nasıl çalışır](retention-policies-exchange.md#how-retention-works-for-exchange)?
+    - Bu eylem, değerlendirme gözden geçirmesinin son aşaması için seçildiğinde veya yalnızca bir değerlendirme aşaması varsa: Öğe kalıcı silme için uygun olarak işaretlenir ve bu işlem 15 gün içinde gerçekleşir.
 
 - **Yeniden etiketleme**:
     - Bu eylem seçildiğinde, öğe özgün etiket için değerlendirme gözden geçirme işleminden çıkar. Daha sonra öğe, yeni seçilen bekletme etiketinin bekletme ayarlarına tabidir.

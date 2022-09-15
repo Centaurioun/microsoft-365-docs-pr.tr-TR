@@ -16,12 +16,13 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.subservice: mde
-ms.openlocfilehash: 808c19a046f2987332af6bc8c3acbd2cdd9abf26
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+search.appverid: met150
+ms.openlocfilehash: 07db85f18bf680291a07ad40f31399025986d56b
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662548"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711136"
 ---
 # <a name="investigate-domains-and-urls-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Uç Nokta için Microsoft Defender uyarısıyla ilişkili etki alanlarını ve URL'leri araştırma
 

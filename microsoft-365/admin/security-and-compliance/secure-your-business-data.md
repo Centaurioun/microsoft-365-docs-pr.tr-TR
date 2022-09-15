@@ -1,5 +1,5 @@
 ---
-title: Verilerinizin güvenliğini sağlamanın en iyi 10 yolu - Küçük ve orta ölçekli işletmeler için en iyi yöntemler
+title: İşletmenizin güvenliğini sağlamanın en iyi 10 yolu
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.date: 08/24/2022
+ms.date: 09/14/2022
 ms.collection:
 - highpri
 - Adm_O365
@@ -29,15 +29,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Fidye yazılımı, kimlik avı ve kötü amaçlı ekler dahil olmak üzere işletmenizi korumanın en iyi 10 yolunu öğrenin.
-ms.openlocfilehash: fc3ce4ec991cea5096ac7806eda534a3b33dea5f
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+description: İşletmenizi fidye yazılımlarından, kimlik avından ve kötü amaçlı URL'lerden veya eklerden korumaya yönelik en iyi yöntemler.
+ms.openlocfilehash: da1fba7bddabba0ccd95429dc36f06bfb302db48
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663421"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711487"
 ---
-# <a name="top-10-ways-to-secure-your-data---best-practices-for-small-and-medium-sized-businesses"></a>Verilerinizin güvenliğini sağlamanın en iyi 10 yolu - Küçük ve orta ölçekli işletmeler için en iyi yöntemler
+# <a name="top-10-ways-to-secure-your-business---best-practices-to-follow"></a>İşletmenizin güvenliğini sağlamanın en iyi 10 yolu - İzleyebileceğiniz en iyi yöntemler
 
 **Uygulandığı öğe**
 
@@ -45,7 +45,10 @@ ms.locfileid: "67663421"
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
 
-İş için Microsoft 365 planları, antiphishing, antispam ve kötü amaçlı yazılım koruması gibi güvenlik özelliklerini içerir. Microsoft 365 İş Ekstra cihaz yönetimi, gelişmiş tehdit koruması ve bilgi koruması gibi daha fazla özellik içerir. Bu makalede, iş verilerinizin güvenliğini sağlamak için atabileceğiniz adımlar açıklanır ve [microsoft 365 İş planlarının özelliklerini karşılaştırır](#comparing-microsoft-365-for-business-plans).
+> [!NOTE]
+> Bu makale, 300'e kadar kullanıcısı olan küçük ve orta ölçekli işletmeler için tasarlanmıştır. Kurumsal bir kuruluşsanız bkz. [Microsoft 365 kiracınız için fidye yazılımı koruması dağıtma](../../solutions/ransomware-protection-microsoft-365.md).
+
+İş için Microsoft 365 planları, antiphishing, antispam ve kötü amaçlı yazılım koruması gibi güvenlik özelliklerini içerir. Microsoft 365 İş Ekstra cihaz güvenliği, gelişmiş tehdit koruması ve bilgi koruması gibi daha da fazla özellik içerir. Bu makalede işletmenizin güvenliğini sağlama açıklanır ve [microsoft 365 İş planlarının özellikleri karşılaştırılmaktadır](#comparing-microsoft-365-for-business-plans).
 
 :::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="İş verilerinin güvenliğini sağlamanın en iyi 10 yolunu listeleyen diyagram.":::
 
@@ -64,7 +67,7 @@ ms.locfileid: "67663421"
 
 ## <a name="comparing-microsoft-365-for-business-plans"></a>İş için Microsoft 365 planlarını karşılaştırma
 
-İş için Microsoft 365 planları güvenli e-posta, işbirliği ve dosya depolama için Microsoft Exchange, Microsoft Teams, SharePoint ve OneDrive'ı içerir. Bu planlar ayrıca antiphishing, antimalware ve antispam koruma içerir. Microsoft 365 İş Ekstra ile cihaz yönetimi, gelişmiş tehdit koruması ve bilgi koruması gibi daha fazla özelliğe sahip olursunuz. 
+İş için Microsoft 365 planları güvenli e-posta, işbirliği ve dosya depolama için Microsoft Exchange, Microsoft Teams, SharePoint ve OneDrive'ı içerir. Bu planlar temel antiphishing, antimalware ve antispam koruması da içerir. Microsoft 365 İş Ekstra ile cihaz yönetimi, gelişmiş tehdit koruması ve bilgi koruması gibi daha fazla özelliğe sahip olursunuz. 
 
 Aşağıdaki tabloda İş için Microsoft 365 planlarındaki özellikler karşılaştırilmektedir. 
 
@@ -81,11 +84,11 @@ Aşağıdaki tabloda İş için Microsoft 365 planlarındaki özellikler karşı
 
 (<a id="fn1">1</a>) Microsoft Publisher ve Microsoft Access yalnızca Windows dizüstü ve masaüstü bilgisayarlarda çalışır.
 
-(<a id="fn2">2</a>) Microsoft Intune bazı Microsoft 365 planlarıyla birlikte sağlanır. Temel Mobilite ve Güvenlik özellikleri Microsoft 365 İş Temel ve Standart'ın bir parçasıdır. [Temel Mobilite ve Güvenlik veya Intune arasında seçim yapın](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
+(<a id="fn2">2</a>) Microsoft Intune, Microsoft 365 İş Ekstra gibi belirli Microsoft 365 planlarıyla birlikte sağlanır. Temel Mobilite ve Güvenlik özellikleri Microsoft 365 İş Temel ve Standard'a dahildir. [Temel Mobilite ve Güvenlik veya Intune arasında seçim yapın](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md).
 
-(<a id="fn3">3</a>) İş için Defender Microsoft 365 İş Ekstra dahildir. Ayrıca Microsoft 365 İş Temel veya Microsoft 365 İş Standart için eklenti olarak da satın alınabilir. Bkz. [İş için Defender'ı edinme](/microsoft-365/security/defender-business/get-defender-business).
+(<a id="fn3">3</a>) İş için Defender Microsoft 365 İş Ekstra dahildir. İş için Defender, Microsoft 365 İş Temel veya Standart'a da eklenebilir. Bkz. [İş için Defender'ı edinme](/microsoft-365/security/defender-business/get-defender-business).
 
-(<a id="fn4">4</a>) Office 365 için Defender Plan 1 Microsoft 365 İş Ekstra dahil edilir. Ayrıca Microsoft 365 İş Temel veya Microsoft 365 İş Standart için eklenti olarak da satın alınabilir. Bkz. [Plan 1 ve Plan 2](../../security/office-365-security/overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) Office 365 için Defender.
+(<a id="fn4">4</a>) Office 365 için Defender Plan 1 Microsoft 365 İş Ekstra dahil edilir. Office 365 için Defender Plan 1, Microsoft 365 İş Temel veya Standart'a da eklenebilir. Bkz. [Plan 1 ve Plan 2](../../security/office-365-security/overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) Office 365 için Defender.
 
 > [!TIP]
 > Her planın neler içerdiği hakkında daha fazla bilgi için bkz. [Microsoft 365 ve Microsoft Teams ile üretkenliği yeniden](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c) planlama.

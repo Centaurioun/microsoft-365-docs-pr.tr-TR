@@ -19,12 +19,13 @@ ms.collection:
 - m365solution-scenario
 - highpri
 ms.subservice: mdo
-ms.openlocfilehash: a6c6816148820cb40287449fcea94cc4d2b6c633
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 7e47cfc93c3514ed206cd7235dcbb1d31e64b89b
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597337"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710795"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>Microsoft 365 için sürekli erişim değerlendirmesi
 

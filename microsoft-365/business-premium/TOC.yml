@@ -70,28 +70,20 @@
       items:
         - name: Genel bakış
           href: m365bp-protect-devices.md
-        - name: Yönetilen cihazları ayarlama
-          href: m365bp-managed-devices-setup.md
+        - name: Windows 10 Pro’ya yükseltme (gerekirse)
+          href: m365bp-upgrade-windows-10-pro.md
         - name: Kayıtlı cihazları ekleme ve ilkeleri uygulama
           href: m365bp-onboard-devices-mdb.md
-        - name: Windows cihazlarını koruma
-          items:
-            - name: Windows cihazlarının güvenliğini sağlama
-              href: m365bp-secure-windows-devices.md
-            - name: Windows 10 Pro’ya yükseltme (gerekirse)
-              href: m365bp-upgrade-windows-10-pro.md
-            - name: Windows cihazları yönetme
-              href: m365bp-manage-windows-devices.md
-            - name: Office istemci dağıtımı hazırlığı
-              href: m365bp-prepare-for-office-client-deployment.md
-            - name: Windows cihazları için uygulama koruma ayarları oluşturma
-              href: m365bp-protection-settings-for-windows-10-devices.md
-            - name: Windows cihazlarında uygulama ayarlarını doğrulama
-              href: m365bp-validate-settings-on-windows-10-pcs.md
-    - name: Cihaz ilkelerini gözden geçirme ve düzenleme
-      href: m365bp-view-edit-create-mdb-policies.md
-    - name: Cihaz gruplarını yönetme
-      href: m365bp-device-groups-mdb.md
+        - name: Cihazları ayarlamak veya sıfırlamak için Windows Autopilot kullanma
+          href: /mem/autopilot/windows-autopilot?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+        - name: Cihazlara Microsoft 365 Uygulamaları yükleme
+          href: ../admin/setup/install-applications.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Eklenen cihazları izleme
+      items:
+        - name: Cihaz ilkelerini gözden geçirme ve düzenleme
+          href: m365bp-view-edit-create-mdb-policies.md
+        - name: Cihaz gruplarını yönetme
+          href: m365bp-device-groups-mdb.md
 - name: Güvenlik olayı yönetimi
   items:
     - name: Genel bakış
@@ -122,6 +114,8 @@
       href: m365bp-reset-devices-to-factory-settings.md
 - name: Başvuru
   items:
+    - name: bir işletmenin güvenliğini sağlamanın en iyi 10 yolu
+      href: ../admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Terimler sözlüğü
       href: m365bp-glossary.yml
     - name: Microsoft 365 Business Premium SSS
@@ -142,15 +136,5 @@
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: Uyumluluk Yöneticisi
       href: m365bp-set-up-compliance.md
-    - name: Windows Autopilot
-      items:
-        - name: Autopilot cihazı ve profili ekleme
-          href: m365bp-add-Autopilot-devices-and-profile.md
-        - name: Autopilot profil ayarları
-          href: m365bp-Autopilot-profile-settings.md
-        - name: Autopilot profili oluşturma ve düzenleme
-          href: m365bp-create-and-edit-Autopilot-devices.md
-    - name: Android ve iOS için Uygulama koruma ayarları
-      href: m365bp-app-protection-settings-for-android-and-ios.md
-    - name: Android ve iOS'ta uygulama ayarlarını doğrulama
-      href: m365bp-validate-settings-on-android-or-ios.md
+    - name: Windows Autopilot senaryoları ve özellikleri
+      href: /mem/autopilot/windows-autopilot-scenarios

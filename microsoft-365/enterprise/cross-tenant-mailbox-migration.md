@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 44a80d3d1a7845461e7c97ed2a4466a6557a52bd
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 560178688950de7c66a2dcb6093912520a7aed38
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664241"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710466"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Kiracılar arası posta kutusu geçişi (önizleme)
 
@@ -37,8 +37,12 @@ Kiracılar arası Exchange posta kutusu geçişleri yalnızca karma veya bulutta
 
 Bu makalede, kiracılar arası posta kutusu taşıma işlemi açıklanır ve Exchange Online posta kutusu içeriği taşımaları için kaynak ve hedef kiracıların nasıl hazırlandığına ilişkin yönergeler sağlanır.
 
-   > [!NOTE]
-   > Kısa süre önce, kiracılar arası posta kutusu geçişine artık Azure Key Vault gerektiremeyecek şekilde kurulum adımlarımızı güncelleştirdik! Bu önizlemeye ilk kez ekleniyorsanız herhangi bir işlem yapmanız gerekmez ve devam edip bu belgede ayrıntılarıyla gösterilen adımları izleyebilirsiniz. Kiracılarınızı önceki AKV yöntemini kullanarak yapılandırmaya başladıysanız, bu yeni yöntemi kullanmaya başlamak için bu yapılandırmayı durdurmanızı veya kaldırmanızı kesinlikle öneririz. Önceki AKV yöntemiyle devam eden posta kutusu geçişleriniz varsa, mevcut geçişlerinizin tamamlanmasını bekleyin ve yeni basitleştirilmiş yöntemi etkinleştirmek için aşağıdaki adımları izleyin. Azure Key Vault gerekli kurulum adımları arşivlenir ancak başvuru için **[burada](https://github.com/microsoft/cross-tenant/wiki/V1-Content#cross-tenant-mailbox-migration-preview)** bulunabilir.
+> [!IMPORTANT]
+> Bu özellik ile bir posta kutusu Kiracılar Arası geçirildiğinde, dava için tutulan e-postalar da dahil olmak üzere tüm e-postalar geçirilir. Geçiş başarılı olduktan sonra kaynak posta kutusu silinir. Bu, geçiş sonrasında hiçbir koşulda (dava veya bekletme saklamadaki posta kutuları dahil) kaynak kiracıda kullanılabilir, bulunabilir veya erişilebilir kaynak posta kutusu olduğu anlamına gelir.  
+> Şu anda bazı senaryolarda Teams sohbet verilerinin de posta kutusunda tutulmasına rağmen Teams sohbet verilerinin geçirilmemesi sorununu araştırıyoruz. Teams sohbet verilerinin korunması gerekiyorsa, posta kutusunu geçirmek için bu özelliği kullanmayın.
+
+> [!NOTE]
+> Kiracılar arası posta kutusu geçişlerinizin yanı sıra e-posta için yeni Etki Alanı Paylaşımı özelliğimizin önizlemesini oluşturmak istiyorsanız lütfen [formu aka.ms/domainshringpreview'da](https://aka.ms/domainshringpreview) tamamlayın. E-posta için etki alanı paylaşımı, ayrı Microsoft 365 kiracılarındaki kullanıcıların aynı özel etki alanındaki adresleri kullanarak e-posta gönderip almasını sağlar. Bu özellik, ayrı kiracılardaki kullanıcıların e-posta adreslerinde ortak bir kurumsal markayı temsil etmeleri gereken senaryoları çözmeye yöneliktir. Geçerli önizleme, kiracılar arası posta kutusu geçişi birlikte kullanılabilirliği sırasında etki alanlarının süresiz olarak paylaşılması ve paylaşılan etki alanlarının paylaşılması için destek sağlar.
 
 ## <a name="preparing-source-and-target-tenants"></a>Kaynak ve hedef kiracıları hazırlama
 
@@ -54,8 +58,8 @@ Aboneliğin kiracı kimliğini almak için [Microsoft 365 yönetim merkezi](http
 
 ### <a name="configuration-steps-to-enable-your-tenants-for-cross-tenant-mailbox-migrations"></a>Kiracılarınızın kiracılar arası posta kutusu geçişlerini etkinleştirmeye yönelik yapılandırma adımları
 
-   > [!NOTE]
-   > Önce hedefi (hedefi) yapılandırmanız gerekir. Bu adımları tamamlamak için hem kaynak hem de hedef kiracı için kiracı yöneticisi kimlik bilgilerine sahip olmanız veya bunları bilmeniz gerekmez. Adımlar, farklı yöneticiler tarafından her kiracı için ayrı ayrı gerçekleştirilebilir.
+> [!NOTE]
+> Önce hedefi (hedefi) yapılandırmanız gerekir. Bu adımları tamamlamak için hem kaynak hem de hedef kiracı için kiracı yöneticisi kimlik bilgilerine sahip olmanız veya bunları bilmeniz gerekmez. Adımlar, farklı yöneticiler tarafından her kiracı için ayrı ayrı gerçekleştirilebilir.
 
 ### <a name="prepare-the-target-destination-tenant-by-creating-the-migration-application-and-secret"></a>Geçiş uygulamasını ve gizli diziyi oluşturarak hedef (hedef) kiracıyı hazırlama
 
@@ -111,8 +115,8 @@ Aboneliğin kiracı kimliğini almak için [Microsoft 365 yönetim merkezi](http
 
 18. İstemci gizli dizisi ekle penceresinde bir açıklama girin ve istediğiniz süre sonu ayarlarını yapılandırın.
 
-      > [!NOTE]
-      > Bu, geçiş uç noktanızı oluştururken kullanılacak paroladır. Bu parolayı panonuza kopyalamanız veya bu parolayı güvenli/gizli parola güvenli konumuna kopyalamanız son derece önemlidir. Bu parolayı yalnızca bu kez görebilirsiniz! Bir şekilde kaybederseniz veya sıfırlamanız gerekiyorsa Azure portal yeniden oturum açabilir, Uygulama kayıtları gidebilir, geçiş uygulamanızı bulabilir, Gizli diziler & sertifikalar'ı seçebilir ve uygulamanız için yeni bir gizli dizi oluşturabilirsiniz.
+    > [!NOTE]
+    > Bu, geçiş uç noktanızı oluştururken kullanılacak paroladır. Bu parolayı panonuza kopyalamanız veya bu parolayı güvenli/gizli parola güvenli konumuna kopyalamanız son derece önemlidir. Bu parolayı yalnızca bu kez görebilirsiniz! Bir şekilde kaybederseniz veya sıfırlamanız gerekiyorsa Azure portal yeniden oturum açabilir, Uygulama kayıtları gidebilir, geçiş uygulamanızı bulabilir, Gizli diziler & sertifikalar'ı seçebilir ve uygulamanız için yeni bir gizli dizi oluşturabilirsiniz.
 
 19. Geçiş uygulamasını ve gizli diziyi başarıyla oluşturduğunuza göre, uygulamaya onay vermeniz gerekir. Uygulamaya onay vermek için Azure Active Directory giriş sayfasına dönün, sol gezinti bölmesinde Kurumsal uygulamalar'a tıklayın, oluşturduğunuz geçiş uygulamanızı bulun, uygulamayı seçin ve sol gezinti bölmesinde İzinler'i seçin.
 
@@ -226,19 +230,20 @@ Geçiş yapılan kullanıcılar, kiracılar arası taşımaları etkinleştirmek
 
 Hedef kuruluşta aşağıdaki nesnelerin ve özniteliklerin ayarlandığından emin olun.
 
->[!TIP]
->Microsoft, aşağıdaki bölümdeki özniteliklerin çoğunu ayarlamak için güvenli bir otomatik yöntem sağlayan bir özellik geliştirmektedir. Kiracılar Arası Kimlik Eşlemesi adlı bu özellik şu anda küçük bir özel önizlemeye katılmak isteyen müşterileri arıyor. Bu yayın öncesi özellik ve kiracılar arası geçiş işlemlerinizi nasıl basitleştirebileceği hakkında daha fazla bilgi için **[Kiracılar Arası Kimlik Eşleme](cross-tenant-identity-mapping.md)** makalesine bakın.
+> [!TIP]
+> Microsoft, aşağıdaki bölümdeki özniteliklerin çoğunu ayarlamak için güvenli bir otomatik yöntem sağlayan bir özellik geliştirmektedir. Kiracılar Arası Kimlik Eşlemesi adlı bu özellik şu anda küçük bir özel önizlemeye katılmak isteyen müşterileri arıyor. Bu yayın öncesi özellik ve kiracılar arası geçiş işlemlerinizi nasıl basitleştirebileceği hakkında daha fazla bilgi için **[Kiracılar Arası Kimlik Eşleme](cross-tenant-identity-mapping.md)** makalesine bakın.
 
 1. Kaynak kuruluştan taşınan herhangi bir posta kutusu için, Hedef kuruluşta bir MailUser nesnesi sağlamalısınız:
 
    - Hedef PostaKullanıcısı kaynak posta kutusundan bu özniteliklere sahip olmalı veya yeni User nesnesiyle atanmış olmalıdır:
-      - ExchangeGUID (kaynaktan hedefe doğrudan akış): Posta kutusu GUID'sinin eşleşmesi gerekir. Bu hedef nesnede yoksa taşıma işlemi devam etmez.
-      - ArchiveGUID (kaynaktan hedefe doğrudan akış): Arşiv GUID'sinin eşleşmesi gerekir. Bu hedef nesnede yoksa taşıma işlemi devam etmez. (Bu yalnızca kaynak posta kutusu Arşiv etkinse gereklidir).
-      - LegacyExchangeDN (proxyAddress, "x500:\<LegacyExchangeDN>" olarak akış): LegacyExchangeDN hedef MailUser üzerinde x500: proxyAddress olarak bulunmalıdır. Ayrıca, kaynak posta kutusundan hedef posta kullanıcısına tüm x500 adreslerini kopyalamanız gerekir. Bunlar hedef nesnede yoksa taşıma işlemleri devam etmez.
-      - UserPrincipalName: UPN, kullanıcının NEW kimliğine veya hedef şirketine hizalanır (örneğin, user@northwindtraders.onmicrosoft.com).
-      - Birincil SMTPAddress: Birincil SMTP adresi kullanıcının YENİ şirketiyle (örneğin, user@northwind.com) hizalanır.
-      - TargetAddress/ExternalEmailAddress: MailUser, kullanıcının kaynak kiracıda barındırılan geçerli posta kutusuna (örneğin user@contoso.onmicrosoft.com) başvurur. Bu değeri atarken, PrimarySMTPAddress'i atadığınızdan/atadığınızdan emin olun; aksi takdirde bu değer PrimarySMTPAddress değerini ayarlar ve bu da taşıma hatalarına neden olur.
-      - Hedef MailUser'a kaynak posta kutusundan eski smtp proxy adresleri ekleyemezsiniz. Örneğin, fabrikam.onmicrosoft.com kiracı nesnelerinde MEU'da contoso.com koruyamazsınız). Etki alanları yalnızca bir Azure AD veya Exchange Online kiracıyla ilişkilendirilir.
+
+     - ExchangeGUID (kaynaktan hedefe doğrudan akış): Posta kutusu GUID'sinin eşleşmesi gerekir. Bu hedef nesnede yoksa taşıma işlemi devam etmez.
+     - ArchiveGUID (kaynaktan hedefe doğrudan akış): Arşiv GUID'sinin eşleşmesi gerekir. Bu hedef nesnede yoksa taşıma işlemi devam etmez. (Bu yalnızca kaynak posta kutusu Arşiv etkinse gereklidir).
+     - LegacyExchangeDN (proxyAddress, "x500:\<LegacyExchangeDN>" olarak akış): LegacyExchangeDN hedef MailUser üzerinde x500: proxyAddress olarak bulunmalıdır. Ayrıca, kaynak posta kutusundan hedef posta kullanıcısına tüm x500 adreslerini kopyalamanız gerekir. Bunlar hedef nesnede yoksa taşıma işlemleri devam etmez.
+     - UserPrincipalName: UPN, kullanıcının NEW kimliğine veya hedef şirketine hizalanır (örneğin, user@northwindtraders.onmicrosoft.com).
+     - Birincil SMTPAddress: Birincil SMTP adresi kullanıcının YENİ şirketiyle (örneğin, user@northwind.com) hizalanır.
+     - TargetAddress/ExternalEmailAddress: MailUser, kullanıcının kaynak kiracıda barındırılan geçerli posta kutusuna (örneğin user@contoso.onmicrosoft.com) başvurur. Bu değeri atarken, PrimarySMTPAddress'i atadığınızdan/atadığınızdan emin olun; aksi takdirde bu değer PrimarySMTPAddress değerini ayarlar ve bu da taşıma hatalarına neden olur.
+     - Hedef MailUser'a kaynak posta kutusundan eski smtp proxy adresleri ekleyemezsiniz. Örneğin, fabrikam.onmicrosoft.com kiracı nesnelerinde MEU'da contoso.com koruyamazsınız). Etki alanları yalnızca bir Azure AD veya Exchange Online kiracıyla ilişkilendirilir.
 
      Örnek **hedef** MailUser nesnesi:
 
@@ -280,15 +285,15 @@ Hedef kuruluşta aşağıdaki nesnelerin ve özniteliklerin ayarlandığından e
 
 2. Kaynak posta kutusu LitigationHold üzerindeyse ve kaynak posta kutusu Kurtarılabilir Öğeler boyutu veritabanı varsayılanımızdan (30 GB) büyükse, hedef kota kaynak posta kutusu boyutundan küçük olduğundan taşıma işlemi devam etmeyecektir. Hedef MailUser nesnesini, ELC posta kutusu bayraklarını kaynak ortamdan hedefe geçirerek hedef sistemi tetikleyerek MailUser kotasını 100 GB'a genişleterek hedefe taşınmasını sağlayabilirsiniz. ELC bayraklarını damgalama komutları kiracı yöneticilerine gösterilmediğinden, bu yönergeler yalnızca Azure AD Connect çalıştıran karma kimlik için çalışır.
 
-    > [!NOTE]
-    > ÖRNEK – OLDUĞU GIBI, GARANTİ YOK
-    >
-    > Bu betik, hem kaynak posta kutusuna (kaynak değerleri almak için) hem de hedef şirket içi Active Directory (ADUser nesnesini damgalamak için) bir bağlantı olduğunu varsayar. Kaynakta dava açma veya tek öğe kurtarma etkinleştirildiyse, bunu hedef hesapta ayarlayın.  Bu, hedef hesabın dökümü boyutunu 100 GB'a yükseltecektir.
+   > [!NOTE]
+   > ÖRNEK – OLDUĞU GIBI, GARANTİ YOK
+   >
+   > Bu betik, hem kaynak posta kutusuna (kaynak değerleri almak için) hem de hedef şirket içi Active Directory (ADUser nesnesini damgalamak için) bir bağlantı olduğunu varsayar. Kaynakta dava açma veya tek öğe kurtarma etkinleştirildiyse, bunu hedef hesapta ayarlayın. Bu, hedef hesabın dökümü boyutunu 100 GB'a yükseltecektir.
 
-    ```powershell
-    $ELCValue = 0
-    if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}}
-    ```
+   ```powershell
+   $ELCValue = 0
+   if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}}
+   ```
 
 3. Karma olmayan hedef kiracılar, MailUser nesnesinde Litigation Hold özelliğini etkinleştirmek ve kotayı 100 GB'a yükseltmek için aşağıdaki komutu çalıştırarak geçiş öncesinde MailUsers için Kurtarılabilir Öğeler klasöründeki kotayı değiştirebilir:
 
@@ -300,46 +305,46 @@ Hedef kuruluşta aşağıdaki nesnelerin ve özniteliklerin ayarlandığından e
 
 4. Hedef kuruluştaki kullanıcıların, kuruluş için uygun Exchange Online abonelikleri ile lisanslanması gerekir. Posta kutusu taşımadan önce lisans uygulayabilirsiniz, ancak HEDEF MailUser ExchangeGUID ve proxy adresleriyle düzgün bir şekilde ayarlandıktan sonra. ExchangeGUID uygulanmadan önce lisans uygulanması, hedef kuruluşta yeni bir posta kutusunun sağlanmasına neden olur.
 
-    > [!NOTE]
-    > Posta Kutusu veya MailUser nesnesine lisans uyguladığınızda, Exchange EmailAddresses dizisine yalnızca doğrulanmış etki alanlarının dahil edildiğinden emin olmak için tüm SMTP türü proxyAddresses temizlenir.
+   > [!NOTE]
+   > Posta Kutusu veya MailUser nesnesine lisans uyguladığınızda, Exchange EmailAddresses dizisine yalnızca doğrulanmış etki alanlarının dahil edildiğinden emin olmak için tüm SMTP türü proxyAddresses temizlenir.
 
 5. Hedef MailUser'da Kaynak ExchangeGuid ile eşleşmeyen önceki ExchangeGuid olmadığından emin olmanız gerekir. Hedef MEU daha önce Exchange Online lisansına sahipse ve bir posta kutusu sağlandıysa bu durum oluşabilir. Hedef MailUser daha önce Source ExchangeGuid ile eşleşmeyen bir ExchangeGuid lisansına sahipse veya bir ExchangeGuid'e sahipse, bulut MEU'sunu temizlemeniz gerekir. Bu bulut MEU'ları için komutunu çalıştırabilirsiniz `Set-User <identity> -PermanentlyClearPreviousMailboxInfo`.
 
-    > [!CAUTION]
-    > Bu işlem geri alınamaz. Nesnenin softDeleted posta kutusu varsa, bu noktadan sonra geri yüklenemez. Ancak temizlendikten sonra, doğru ExchangeGuid'i hedef nesneyle eşitleyebilirsiniz ve MRS kaynak posta kutusunu yeni oluşturulan hedef posta kutusuna bağlar. (Yeni parametrede EHLO blogu başvurusu.)
+   > [!CAUTION]
+   > Bu işlem geri alınamaz. Nesnenin softDeleted posta kutusu varsa, bu noktadan sonra geri yüklenemez. Ancak temizlendikten sonra, doğru ExchangeGuid'i hedef nesneyle eşitleyebilirsiniz ve MRS kaynak posta kutusunu yeni oluşturulan hedef posta kutusuna bağlar. (Yeni parametrede EHLO blogu başvurusu.)
 
-    Bu komutu kullanarak daha önce posta kutusu olan nesneleri bulun.
+   Bu komutu kullanarak daha önce posta kutusu olan nesneleri bulun.
 
-    ```powershell
-    Get-User <identity> | select Name, *recipient* | Format-Table -AutoSize
-    ```
+   ```powershell
+   Get-User <identity> | select Name, *recipient* | Format-Table -AutoSize
+   ```
 
-    Burada bir örnek verilmiştir.
+   Burada bir örnek verilmiştir.
 
-    ```powershell
-    Get-User John@northwindtraders.com |select name, *recipient*| Format-Table -AutoSize
+   ```powershell
+   Get-User John@northwindtraders.com |select name, *recipient*| Format-Table -AutoSize
 
-    Name       PreviousRecipientTypeDetails     RecipientType RecipientTypeDetails
-    ----       ---------------------------- ------------- --------------------
-    John       UserMailbox                  MailUser      MailUser
-    ```
+   Name       PreviousRecipientTypeDetails     RecipientType RecipientTypeDetails
+   ----       ---------------------------- ------------- --------------------
+   John       UserMailbox                  MailUser      MailUser
+   ```
 
-    Bu komutu kullanarak geçici olarak silinen posta kutusunu temizleyin.
+   Bu komutu kullanarak geçici olarak silinen posta kutusunu temizleyin.
 
-    ```powershell
-    Set-User <identity> -PermanentlyClearPreviousMailboxInfo
-    ```
+   ```powershell
+   Set-User <identity> -PermanentlyClearPreviousMailboxInfo
+   ```
 
-    Burada bir örnek verilmiştir.
+   Burada bir örnek verilmiştir.
 
-    ```powershell
-    Set-User John@northwindtraders.com -PermanentlyClearPreviousMailboxInfo -Confirm
+   ```powershell
+   Set-User John@northwindtraders.com -PermanentlyClearPreviousMailboxInfo -Confirm
 
-    Are you sure you want to perform this action?
-    Delete all existing information about user "John@northwindtraders.com"?. This operation will clear existing values from Previous home MDB and Previous Mailbox GUID of the user. After deletion, reconnecting to the previous mailbox that existed in the cloud will not be possible and any content it had will be unrecoverable PERMANENTLY.
-    Do you want to continue?
-    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"): Y
-    ```
+   Are you sure you want to perform this action?
+   Delete all existing information about user "John@northwindtraders.com"?. This operation will clear existing values from Previous home MDB and Previous Mailbox GUID of the user. After deletion, reconnecting to the previous mailbox that existed in the cloud will not be possible and any content it had will be unrecoverable PERMANENTLY.
+   Do you want to continue?
+   [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"): Y
+   ```
 
 ### <a name="perform-mailbox-migrations"></a>Posta kutusu geçişlerini gerçekleştirme
 
@@ -364,7 +369,7 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 >
 > [Örnek bir CSV dosyası için buraya tıklayın](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
 
-Geçiş toplu işlemi gönderimi, kiracılar arası seçenek belirlenirken yeni <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange yönetim merkezinden</a> de desteklenir.
+Geçiş toplu işlemi gönderimi, kiracılar arası seçenek belirlenirken yeni [Exchange yönetim merkezinden](https://go.microsoft.com/fwlink/p/?linkid=2059104) de desteklenir.
 
 ### <a name="update-on-premises-mailusers"></a>Şirket içi MailUsers'i güncelleştirme
 
@@ -374,7 +379,7 @@ Posta kutusu kaynaktan hedefe geçtikten sonra, hem kaynak hem de hedefteki şir
 
 ### <a name="do-we-need-to-update-remotemailboxes-in-source-on-premises-after-the-move"></a>Taşıma sonrasında şirket içi kaynaktaki RemoteMailbox'ları güncelleştirmemiz gerekiyor mu?
 
-Evet, kaynak kiracı posta kutusu hedef kiracıya geçtiğinde kaynak şirket içi kullanıcıların targetAddress (RemoteRoutingAddress/ExternalEmailAddress) güncelleştirmeniz gerekir.  Posta yönlendirme, farklı targetAddresses'e sahip birden çok posta kullanıcısı arasındaki başvuruları izleyebilirken, posta kullanıcıları için Serbest/Meşgul aramaları posta kutusu kullanıcısının konumunu hedeflemeLIDIR. Serbest/Meşgul aramaları birden çok yeniden yönlendirmeyi kovalamaz.
+Evet, kaynak kiracı posta kutusu hedef kiracıya geçtiğinde kaynak şirket içi kullanıcıların targetAddress (RemoteRoutingAddress/ExternalEmailAddress) güncelleştirmeniz gerekir. Posta yönlendirme, farklı targetAddresses'e sahip birden çok posta kullanıcısı arasındaki başvuruları izleyebilirken, posta kullanıcıları için Serbest/Meşgul aramaları posta kutusu kullanıcısının konumunu hedeflemeLIDIR. Serbest/Meşgul aramaları birden çok yeniden yönlendirmeyi kovalamaz.
 
 ### <a name="do-teams-meetings-migrate-cross-tenant"></a>Teams toplantıları kiracılar arası geçiş yapar mı?
 
@@ -382,7 +387,7 @@ Toplantılar taşınır, ancak öğeler kiracılar arası geçiş yaparken Teams
 
 ### <a name="does-the-teams-chat-folder-content-migrate-cross-tenant"></a>Teams sohbet klasörü içeriği kiracılar arası geçiş yapar mı?
 
-Hayır, Teams sohbet klasörü içeriği kiracılar arası geçiş yapmaz.
+Hayır, Teams sohbet klasörü içeriği kiracılar arası geçiş yapmaz. Bu özellik ile bir posta kutusu Kiracılar Arası geçirildiğinde, dava için tutulan e-postalar da dahil olmak üzere tüm e-postalar geçirilir. Geçiş başarılı olduktan sonra kaynak posta kutusu silinir. Bu, geçiş sonrasında hiçbir koşulda (dava veya bekletme saklamadaki posta kutuları dahil) kaynak kiracıda kullanılabilir, bulunabilir veya erişilebilir kaynak posta kutusu olduğu anlamına gelir.
 
 ### <a name="how-can-i-see-just-moves-that-are-cross-tenant-moves-not-my-onboarding-and-off-boarding-moves"></a>Ekleme ve biniş dışı hareketlerimi değil, yalnızca kiracılar arası taşımalar olan taşımaları nasıl görebilirim?
 
@@ -395,39 +400,39 @@ Get-MoveRequest -Flags "CrossTenant"
 ### <a name="can-you-provide-example-scripts-for-copying-attributes-used-in-testing"></a>Testte kullanılan öznitelikleri kopyalamak için örnek betikler sağlayabilir misiniz?
 
 > [!NOTE]
-> ÖRNEK – OLDUĞU GIBI GARANTİ YOK Bu betik, hem kaynak posta kutusuna (kaynak değerleri almak için) hem de etki alanı hizmetleri şirket içi Active Directory hedefine (ADUser nesnesini damgalama amacıyla) bir bağlantı olduğunu varsayar. Kaynakta dava açma veya tek öğe kurtarma etkinleştirildiyse, bunu hedef hesapta ayarlayın.  Bu, hedef hesabın dökümü boyutunu 100 GB'a yükseltecektir.
+> ÖRNEK – OLDUĞU GIBI GARANTİ YOK Bu betik, hem kaynak posta kutusuna (kaynak değerleri almak için) hem de etki alanı hizmetleri şirket içi Active Directory hedefine (ADUser nesnesini damgalama amacıyla) bir bağlantı olduğunu varsayar. Kaynakta dava açma veya tek öğe kurtarma etkinleştirildiyse, bunu hedef hesapta ayarlayın. Bu, hedef hesabın dökümü boyutunu 100 GB'a yükseltecektir.
 
-   ```powershell
-   # This will export users from the source tenant with the CustomAttribute1 = "Cross-Tenant-Project"
-   # These are the 'target' users to be moved to the Northwind org tenant
-   $outFileUsers = "$home\desktop\UsersToMigrate.txt"
-   $outFileUsersXML = "$home\desktop\UsersToMigrate.xml"
-   Get-Mailbox -Filter "CustomAttribute1 -like 'Cross-Tenant-Project'" -ResultSize Unlimited | Select-Object -ExpandProperty  Alias | Out-File $outFileUsers
-   $mailboxes = Get-Content $outFileUsers
-   $mailboxes | ForEach-Object {Get-Mailbox $_} | Select-Object PrimarySMTPAddress,Alias,SamAccountName,FirstName,LastName,DisplayName,Name,ExchangeGuid,ArchiveGuid,LegacyExchangeDn,EmailAddresses | Export-Clixml $outFileUsersXML
-   ```
+```powershell
+# This will export users from the source tenant with the CustomAttribute1 = "Cross-Tenant-Project"
+# These are the 'target' users to be moved to the Northwind org tenant
+$outFileUsers = "$home\desktop\UsersToMigrate.txt"
+$outFileUsersXML = "$home\desktop\UsersToMigrate.xml"
+Get-Mailbox -Filter "CustomAttribute1 -like 'Cross-Tenant-Project'" -ResultSize Unlimited | Select-Object -ExpandProperty  Alias | Out-File $outFileUsers
+$mailboxes = Get-Content $outFileUsers
+$mailboxes | ForEach-Object {Get-Mailbox $_} | Select-Object PrimarySMTPAddress,Alias,SamAccountName,FirstName,LastName,DisplayName,Name,ExchangeGuid,ArchiveGuid,LegacyExchangeDn,EmailAddresses | Export-Clixml $outFileUsersXML
+```
 
-   ```powershell
-   # Copy the file $outfile to the desktop of the target on-premises then run the below to create MEU in Target
-   $mailboxes = Import-Clixml $home\desktop\UsersToMigrate.xml
-   add-type -AssemblyName System.Web
-   foreach ($m in $mailboxes) {
-       $organization = "@contoso.onmicrosoft.com"
-       $mosi = $m.Alias+$organization
-       $Password = [System.Web.Security.Membership]::GeneratePassword(16,4) | ConvertTo-SecureString -AsPlainText -Force
-       $x500 = "x500:" +$m.LegacyExchangeDn
-       $tmpUser = New-MailUser -MicrosoftOnlineServicesID $mosi -PrimarySmtpAddress $mosi -ExternalEmailAddress $m.PrimarySmtpAddress -FirstName $m.FirstName -LastName $m.LastName -Name $m.Name -DisplayName $m.DisplayName -Alias $m.Alias -Password $Password
-       $tmpUser | Set-MailUser -EmailAddresses @{add=$x500} -ExchangeGuid $m.ExchangeGuid -ArchiveGuid $m.ArchiveGuid -CustomAttribute1 "Cross-Tenant-Project"
-       $tmpx500 = $m.EmailAddresses | ?{$_ -match "x500"}
-       $tmpx500 | %{Set-MailUser $m.Alias -EmailAddresses @{add="$_"}}
-       }
-   ```
+```powershell
+# Copy the file $outfile to the desktop of the target on-premises then run the below to create MEU in Target
+$mailboxes = Import-Clixml $home\desktop\UsersToMigrate.xml
+add-type -AssemblyName System.Web
+foreach ($m in $mailboxes) {
+    $organization = "@contoso.onmicrosoft.com"
+    $mosi = $m.Alias+$organization
+    $Password = [System.Web.Security.Membership]::GeneratePassword(16,4) | ConvertTo-SecureString -AsPlainText -Force
+    $x500 = "x500:" +$m.LegacyExchangeDn
+    $tmpUser = New-MailUser -MicrosoftOnlineServicesID $mosi -PrimarySmtpAddress $mosi -ExternalEmailAddress $m.PrimarySmtpAddress -FirstName $m.FirstName -LastName $m.LastName -Name $m.Name -DisplayName $m.DisplayName -Alias $m.Alias -Password $Password
+    $tmpUser | Set-MailUser -EmailAddresses @{add=$x500} -ExchangeGuid $m.ExchangeGuid -ArchiveGuid $m.ArchiveGuid -CustomAttribute1 "Cross-Tenant-Project"
+    $tmpx500 = $m.EmailAddresses | ?{$_ -match "x500"}
+    $tmpx500 | %{Set-MailUser $m.Alias -EmailAddresses @{add="$_"}}
+    }
+```
 
-   ```powershell
-   # Now sync the changes from On-Premises to Azure and Exchange Online in the Target tenant
-   # This action should create the target mail enabled users (MEUs) in the Target tenant
-   Start-ADSyncSyncCycle
-   ```
+```powershell
+# Now sync the changes from On-Premises to Azure and Exchange Online in the Target tenant
+# This action should create the target mail enabled users (MEUs) in the Target tenant
+Start-ADSyncSyncCycle
+```
 
 ### <a name="how-do-we-access-outlook-on-day-1-after-the-user-mailbox-is-moved"></a>Kullanıcı posta kutusu taşındıktan sonra 1. Günde Outlook'a nasıl erişebiliriz?
 
@@ -500,9 +505,9 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 > [!NOTE]
 > Bu X500 proxy'sine ek olarak, kaynaktaki posta kutusundan hedefteki posta kutusuna tüm X500 proxy'lerini kopyalamanız gerekir.
 
-### <a name="can-the-source-and-target-tenant-utilize-the-same-domain-name"></a>Kaynak ve hedef kiracı aynı etki alanı adını kullanabilir mi?
+### <a name="can-the-source-and-target-tenants-utilize-the-same-domain-name"></a>Kaynak ve hedef kiracılar aynı etki alanı adını kullanabilir mi?
 
-Hayır. Kaynak ve hedef kiracı etki alanı adları benzersiz olmalıdır. Örneğin, contoso.com kaynak etki alanı ve fourthcoffee.com hedef etki alanı.
+Hayır, kaynak kiracı ve hedef kiracı etki alanı adları benzersiz olmalıdır. Örneğin, contoso.com kaynak etki alanı ve fourthcoffee.com hedef etki alanı.
 
 ### <a name="will-shared-mailboxes-move-and-still-work"></a>Paylaşılan posta kutuları taşınacak ve çalışmaya devam edecek mi?
 
@@ -526,11 +531,11 @@ Geçişinizi planlamanıza yardımcı olmak için [buradaki](/exchange/mailbox-m
 
 Bu özelliğin şu anda önizlemede ve SLA'da olduğunu ve ilgili Hizmet Düzeylerinin bu özelliğin önizleme durumu sırasındaki performans veya kullanılabilirlik sorunları için geçerli olmadığını unutmayın.
 
-### <a name="protecting-documents-in-the-source-tenant-consumable-by-users-in-the-destination-tenant"></a>Hedef kiracıdaki kullanıcılar tarafından kullanılabilir kaynak kiracıdaki belgeleri koruma.**
+### <a name="protecting-documents-in-the-source-tenant-consumable-by-users-in-the-destination-tenant"></a>Kaynak kiracıdaki belgeleri koruma hedef kiracıdaki kullanıcılar tarafından kullanılabilir.\*\*
 
 Kiracılar arası geçiş yalnızca posta kutusu verilerini geçirir ve başka bir şey geçirmez. Aşağıdaki blog gönderisinde belgelenen ve yardımcı olabilecek birden çok seçenek daha vardır: <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/mergers-and-spinoffs/ba-p/910455>
 
-### <a name="can-i-have-the-same-labels-in-the-destination-tenant-as-you-had-in-the-source-tenant-either-as-the-only-set-of-labels-or-an-additional-set-of-labels-for-the-migrated-users-depending-on-alignment-between-the-organizations"></a>Hedef kiracıda, kuruluşlar arasındaki hizalamaya bağlı olarak, geçirilen kullanıcılar için tek etiket kümesi veya ek bir etiket kümesi olarak kaynak kiracıda sahip olduğunuz etiketlerin aynısını alabilir miyim.**
+### <a name="can-i-have-the-same-labels-in-the-destination-tenant-as-you-had-in-the-source-tenant-either-as-the-only-set-of-labels-or-an-additional-set-of-labels-for-the-migrated-users-depending-on-alignment-between-the-organizations"></a>Hedef kiracıda, kuruluşlar arasındaki hizalamaya bağlı olarak, geçirilen kullanıcılar için tek etiket kümesi veya ek bir etiket kümesi olarak kaynak kiracıda sahip olduğunuz etiketlerin aynısını alabilir miyim?\*\*
 
 Kiracılar arası geçişler etiketleri dışarı aktarmadığından ve kiracılar arasında etiketleri paylaşmanın bir yolu olmadığından, bunu yalnızca hedef kiracıdaki etiketleri yeniden oluşturarak gerçekleştirebilirsiniz.
 
@@ -568,12 +573,12 @@ Geçiş tamamlanmadan önce bu yapılabilir, ancak _ExchangeGuid_ özniteliğini
     SMTP:LaraN@contoso.onmicrosoft.com {SMTP:lara.newton@northwind.com}
     ```
 
-   > [!NOTE]
-   > _contoso.onmicrosoft.com_ adresi EmailAddresses / proxyAddresses dizisinde _yok_.
+  > [!NOTE]
+  > _contoso.onmicrosoft.com_ adresi EmailAddresses / proxyAddresses dizisinde _yok_.
 
 - **Sorun: "Dış" birincil SMTP adreslerine sahip MailUser nesneleri değiştiriliyor / "şirket tarafından talep edilen" etki alanlarına sıfırlanıyor**
 
-  MailUser nesneleri, yerel olmayan posta kutularının işaretçileridir. Kiracılar arası posta kutusu geçişleri söz konusu olduğunda, kaynak posta kutusunu (hedef kuruluşun perspektifinden) veya hedef posta kutusunu (kaynak kuruluşun perspektifinden) temsil etmek için MailUser nesnelerini kullanırız. MailUsers, gerçek posta kutusunun smtp adresine (ProxyTest@fabrikam.onmicrosoft.com) ve dizinde posta kutusu kullanıcısının görüntülenen SMTP adresini temsil eden primarySMTP adresine işaret eden bir ExternalEmailAddress (targetAddress) içerir. Bazı kuruluşlar, birincil SMTP adresini yerel kiracının sahip olduğu/doğruladığı bir adres olarak değil dış SMTP adresi olarak (contoso.com yerine fabrikam.com gibi) görüntülemeyi tercih eder.  Ancak, lisanslama işlemleri aracılığıyla MailUser'a bir Exchange hizmet planı nesnesi uygulandıktan sonra, birincil SMTP adresi yerel kuruluş (contoso.com) tarafından doğrulanmış bir etki alanı olarak gösterilecek şekilde değiştirilir. İki olası neden vardır:
+  MailUser nesneleri, yerel olmayan posta kutularının işaretçileridir. Kiracılar arası posta kutusu geçişleri söz konusu olduğunda, kaynak posta kutusunu (hedef kuruluşun perspektifinden) veya hedef posta kutusunu (kaynak kuruluşun perspektifinden) temsil etmek için MailUser nesnelerini kullanırız. MailUsers, gerçek posta kutusunun smtp adresine (ProxyTest@fabrikam.onmicrosoft.com) ve dizinde posta kutusu kullanıcısının görüntülenen SMTP adresini temsil eden primarySMTP adresine işaret eden bir ExternalEmailAddress (targetAddress) içerir. Bazı kuruluşlar, birincil SMTP adresini yerel kiracının sahip olduğu/doğruladığı bir adres olarak değil dış SMTP adresi olarak (contoso.com yerine fabrikam.com gibi) görüntülemeyi tercih eder. Ancak, lisanslama işlemleri aracılığıyla MailUser'a bir Exchange hizmet planı nesnesi uygulandıktan sonra, birincil SMTP adresi yerel kuruluş (contoso.com) tarafından doğrulanmış bir etki alanı olarak gösterilecek şekilde değiştirilir. İki olası neden vardır:
 
   - MailUser'a herhangi bir Exchange hizmet planı uygulandığında, yerel kuruluşun başka bir kiracıdan posta gönderemediğinden, kimlik sahtekarlığına veya posta gönderemediğinden emin olmak için Azure AD işlemi ara sunucu temizlemeyi zorlamaya başlar. Bu hizmet planlarına sahip bir alıcı nesnesi üzerindeki tüm SMTP adresleri, adres yerel kuruluş tarafından doğrulanmazsa kaldırılır. Örnekte olduğu gibi, Fabikam.com etki alanı contoso.onmicrosoft.com kiracı tarafından doğrulanmaz, bu nedenle temizleme işlemi bu fabrikam.com etki alanını kaldırır. Geçiş öncesinde veya geçiş sonrasında bu dış etki alanlarını MailUser'da kalıcı hale getirmek istiyorsanız, geçiş işlemlerinizi taşıma tamamlandıktan sonra veya taşımadan önce kullanıcıların beklenen dış markanın uygulandığından emin olmak için lisansları kaldıracak şekilde değiştirmeniz gerekir. Posta kutusu nesnesinin posta hizmetini etkilemeyecek şekilde düzgün lisanslandığından emin olmanız gerekir.
   - contoso.onmicrosoft.com kiracısında MailUser'daki hizmet planlarını kaldırmaya yönelik örnek betik burada gösterilmiştir.
@@ -583,7 +588,7 @@ Geçiş tamamlanmadan önce bu yapılabilir, ancak _ExchangeGuid_ özniteliğini
     Set-MsolUserLicense -UserPrincipalName ProxyTest@contoso.com LicenseOptions $lo
     ```
 
-       Atanan ServicePlans kümesindeki sonuçlar burada gösterilir.
+    Atanan ServicePlans kümesindeki sonuçlar burada gösterilir.
 
     ```powershell
     (Get-MsolUser -UserPrincipalName ProxyTest@contoso.com).licenses | Select-Object -ExpandProperty ServiceStatus |sort ProvisioningStatus -Descending
@@ -644,7 +649,7 @@ Geçiş tamamlanmadan önce bu yapılabilir, ancak _ExchangeGuid_ özniteliğini
 
       | Name                                             |
       | ------------------------------------------------ |
-      | eBulma (Premium) Depolama (500 GB)             |
+      | eBulma (Premium) Depolama (500 GB)            |
       | Müşteri Kasası                                 |
       | Veri Kaybı Önleme                             |
       | Exchange Enterprise CAL Services (EOP, DLP)      |
@@ -661,23 +666,23 @@ Geçiş tamamlanmadan önce bu yapılabilir, ancak _ExchangeGuid_ özniteliğini
       | Exchange Online Plan 1                           |
       | Exchange Online POP                              |
       | Exchange Online Protection                       |
-      | Dizinli Graph Bağlayıcıları Arama                |
+      | Dizinli Graph Bağlayıcıları Arama               |
       | Bilgi Engelleri                             |
       | Office 365 için Information Protection - Premium  |
       | Office 365 için Information Protection - Standart |
       | MyAnalytics İçgörüleri                          |
       | Microsoft Bilgi İdaresi                 |
-      | Microsoft Purview Denetim (Premium)                  |
+      | Microsoft Purview Denetim (Premium)                |
       | Microsoft Kayıtları                               |
       | Microsoft İş Merkezi                        |
       | Microsoft Veri Araştırmaları                    |
-      | Microsoft MyAnalytics (Tam)       
-      | Microsoft İletişim Uyumluluğu               |
+      | Microsoft MyAnalytics (Tam)                     |
+      | Microsoft İletişim Uyumluluğu              |
       | Microsoft Communications DLP                     |
       | Microsoft Müşteri Anahtarı                           |
       | Microsoft 365 Gelişmiş Denetim                  |
       | Microsoft Kayıt Yönetimi                     |
-      | Office 365 eKeşif (Premium)                   |
+      | Office 365 eKeşif (Premium)                  |
       | Office 365 Gelişmiş eKeşif                    |
       | Office 365 için Microsoft Defender (Plan 1)       |
       | Office 365 için Microsoft Defender (Plan 2)       |

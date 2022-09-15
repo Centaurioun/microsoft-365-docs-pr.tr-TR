@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 7dcce2bb3f71ebf6400ece3296da71a7f686db10
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+search.appverid: met150
+ms.openlocfilehash: 56580ea904747549057ef86ba4d3c75bb99ad16f
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691199"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711059"
 ---
 # <a name="optimize-and-correct-security-policies-with-configuration-analyzer"></a>Yapılandırma çözümleyicisi ile güvenlik ilkelerini iyileştirin ve düzeltin
 

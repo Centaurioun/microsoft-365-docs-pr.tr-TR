@@ -17,12 +17,13 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 3806daf2cc4e0a7dbb277943cf3aa1a3abe70fb9
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 8aed77cb861aa02e07ed6059b82a6b3c2716c142
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67577221"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710949"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Ağ cihazı bulma ve güvenlik açığı yönetimi
 

@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 9d2e929486a45590f2c6b273b5af28f7fbb9526a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 3fbcb8b512258b4307cf691ff2b720f78f5d7796
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67680273"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709450"
 ---
 # <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Veri depolama konumunu doğrulama ve Uç Nokta için Microsoft Defender için veri saklama ayarlarını güncelleştirme
 

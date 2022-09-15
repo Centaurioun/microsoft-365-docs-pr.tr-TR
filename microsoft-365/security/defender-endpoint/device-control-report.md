@@ -14,12 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bc763de37b0bfffa8eaa30703db3da3f9acc81c2
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: ebe0902d917ccc99dca7c8de97eb452b777f2e8c
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522774"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67711290"
 ---
 # <a name="device-control-report"></a>Cihaz denetimi raporu
 

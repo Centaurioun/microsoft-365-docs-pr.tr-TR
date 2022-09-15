@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 'Günlük, haftalık veya aylık işlemler söz konusu olduğunda Defender portalında çalışmalarınızı odaklamanıza yönelik bir dizi öneri. '
-ms.openlocfilehash: 2d7464741af66ba31764a1330e323c0fab08bf6b
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: ab9d7eddd9f0150c8cfcb4596fc9f6772a9c37b0
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67612823"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710993"
 ---
 # <a name="microsoft-365-business-premium-security-operations-guide"></a>Microsoft 365 İş Ekstra güvenlik işlemleri kılavuzu
 
@@ -224,7 +224,7 @@ Kuruluşunuza en uygun raporları vurgulayarak geçerli tehdit ortamına genel b
 
 Microsoft 365 İş Ekstra çeşitli düzeltme eylemleri içerir. Bu eylemler el ile yanıt eylemlerini, otomatik araştırmadan sonraki eylemleri ve canlı yanıt eylemlerini içerir.
 
-1. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) gezinti bölmesinde **Cihaz envanteri'ni** seçin.
+1. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) gezinti bölmesinde **Varlık** > **Cihazları'na** gidin.
 
    :::image type="content" source="./../media/defender-business/mdb-deviceinventory.png" alt-text="Cihaz envanterinin ekran görüntüsü":::
 

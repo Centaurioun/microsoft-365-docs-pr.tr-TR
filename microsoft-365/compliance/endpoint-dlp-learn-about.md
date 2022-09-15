@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Uç nokta veri kaybını önleme, dosya etkinliklerinin ve bu dosyalar için koruyucu eylemlerin izlenmesini uç noktalara genişletir. Dosyalar Uyumluluk çözümlerinde görünür hale getiriliyor '
-ms.openlocfilehash: adcfd8576d942581f2f4f0afae2e73e7dea2cf7e
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 862353d3b0f63cdaf6867ddbe1b9ff7e304096cc
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67615220"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67709211"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>Uç nokta veri kaybı önleme hakkında daha fazla bilgi edinme
 
@@ -77,7 +77,7 @@ Uç nokta DLP, ilke aracılığıyla bu dosya türlerinin izlenmesini destekler:
 - dosyaları .txt
 - .rtf dosyaları
 - .c dosyaları
-- .class dosyaları
+- .class dosyaları (yalnızca Windows)
 - .cpp dosyaları
 - .cs dosyaları
 - .h dosyaları
@@ -151,7 +151,7 @@ Ekleme ve çıkarma işlemleri, Cihaz yönetim merkezinden indirdiğiniz betikle
 
  Cihazları eklemek için [Microsoft 365 Uç Nokta DLP ile çalışmaya başlama'daki](endpoint-dlp-getting-started.md) yordamları kullanın.
 
-[Cihazları Uç Nokta için Microsoft Defender](../security/defender-endpoint/configure-machines-onboarding.md) aracılığıyla eklediyseniz, bu cihazlar otomatik olarak cihaz listesinde gösterilir. Bunun nedeni, Defender'a eklemenin cihazları da DLP'ye eklemesidir. Yalnızca uç nokta DLP'sini kullanmak için **cihaz izlemeyi açmanız** gerekir. .
+[Cihazları Uç Nokta için Microsoft Defender](../security/defender-endpoint/configure-machines-onboarding.md) aracılığıyla eklediyseniz, bu cihazlar otomatik olarak cihaz listesinde gösterilir. Bunun nedeni, Defender'a eklemenin cihazları da DLP'ye eklemesidir. Yalnızca uç nokta DLP'sini kullanmak için **cihaz izlemeyi açmanız** gerekir.
 
 > [!div class="mx-imgBorder"]
 > ![yönetilen cihazlar listesi.](../media/endpoint-dlp-learn-about-2-device-list.png)

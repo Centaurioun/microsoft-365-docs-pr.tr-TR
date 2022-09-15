@@ -11,38 +11,38 @@ ms.collection: m365-security-compliance
 ms.service: microsoft-365-business
 ms.subservice: business-premium
 ms.localizationpriority: high
-ms.date: 08/24/2022
+ms.date: 09/14/2022
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 İş Ekstra denemenizden en iyi şekilde geçin. Temel üretkenlik ve güvenlik özelliklerinden bazılarını deneyin.
-ms.openlocfilehash: 52b38d8145c43eac2eeef34b063a3a327f2d5a3f
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 7b8d3c2b0a0b090ee763c80acdcb2f5dc71fa495
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611858"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710641"
 ---
 # <a name="trial-playbook-microsoft-365-business-premium"></a>Deneme playbook'u: Microsoft 365 İş Ekstra
 
-Microsoft Business Premium deneme playbook'una hoş geldiniz. Bu playbook, Microsoft 365 İş Ekstra üretkenliği nasıl artırdığını deneyimleyerek 30 günlük ücretsiz denemenizden en iyi şekilde yararlanabilir ve kuruluşunuzun gelişmiş güvenlik özellikleriyle korunmasına yardımcı olur. Microsoft önerilerini kullanarak tehdit koruma özelliklerinizi ayarlamayı, algılanan tehditleri analiz etmeyi ve siber saldırılara yanıt vermeyi öğrenin.
+Microsoft Business Premium deneme playbook'una hoş geldiniz! Bu playbook, 30 günlük ücretsiz denemenizden en iyi şekilde yararlanabilirsiniz. Microsoft 365 İş Ekstra üretkenliği nasıl artırdığını ve gelişmiş güvenlik özellikleriyle kuruluşunuzun korunmasına nasıl yardımcı olduğunu ilk elden görebilirsiniz. Tehdit koruması özelliklerinizi ayarlamak, algılanan tehditleri analiz etmek ve siber saldırılara yanıt vermek için bu playbook'u kullanın.
 
 ## <a name="set-up-the-microsoft-365-business-premium-trial"></a>Microsoft 365 İş Ekstra deneme sürümünü ayarlama
 
 [Deneme sürümü başlattığınızda veya Microsoft 365 İş Ekstra satın](get-microsoft-365-business-premium.md) aldığınızda, ilk adımınız her şeyi ayarlamaktır.
 
 > [!TIP]
-> Bu playbook'u tarayıcı sık kullanılanlarınıza kaydedin. Playbook'taki bağlantılar sizi bu konumdan uzaklaştırdığında, devam etmek için bu playbook'a dönmeniz yeterlidir.
+> Bu playbook'u tarayıcı sık kullanılanlarınıza kaydedin. Playbook'taki bağlantılar sizi bu konumdan uzaklaştırdığında, devam etmek için bu playbook'a dönmek daha kolay olacaktır.
 
-İlk olarak [, denemenizi ayarlayın](../business-premium/m365bp-setup.md)!
+1. [Denemenizi ayarlayın](../business-premium/m365bp-setup.md)!
 
-Deneme sürümünü başlattıktan ve kurulum işlemini tamamladıktan sonra değişikliklerin geçerli olması iki saate kadar sürebilir.
+   Deneme sürümünü başlattıktan ve kurulum işlemini tamamladıktan sonra değişikliklerin geçerli olması iki saate kadar sürebilir.
 
-Microsoft 365 İş Ekstra ortamınızda kullanabileceğiniz [Önceden Ayarlanmış güvenlik ilkeleri](/security/office-365-security/preset-security-policies.md) içerir. Bu ilkeler, çoğu kullanıcı için uygun bir temel koruma profilini temsil eder. Standart koruma şunları içerir:
+2. [Önceden ayarlanmış güvenlik ilkelerinizi](/security/office-365-security/preset-security-policies.md) kullanın. Bu ilkeler, çoğu kullanıcı için uygun bir temel koruma profilini temsil eder. Standart koruma şunları içerir:
 
-- Tüm kiracı veya deneme kurulum işlemi sırasında seçmiş olabileceğiniz kullanıcı alt kümesini kapsayan [Güvenli Bağlantılar](../security/office-365-security/safe-links.md), [Güvenli Ekler](../security/office-365-security/safe-attachments.md) ve [Kimlik Avı](../security/office-365-security/anti-phishing-protection.md) önleme ilkeleri. (Deneme aboneliğiniz en fazla 25 kullanıcıya yöneliktir.)
+   - Tüm kiracı veya deneme kurulum işlemi sırasında seçmiş olabileceğiniz kullanıcı alt kümesini kapsayan [Güvenli Bağlantılar](../security/office-365-security/safe-links.md), [Güvenli Ekler](../security/office-365-security/safe-attachments.md) ve [Kimlik Avı](../security/office-365-security/anti-phishing-protection.md) önleme ilkeleri. (Deneme aboneliğiniz en fazla 25 kullanıcıya yöneliktir.)
 
-- [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [Office uygulamaları](/deployoffice/about-microsoft-365-apps) ve [Microsoft Teams](/microsoftteams/teams-overview) gibi üretkenlik uygulamaları için koruma.
+   - [SharePoint](/sharepoint/introduction), [OneDrive](/onedrive/one-drive-quickstart-small-business), [Office uygulamaları](/deployoffice/about-microsoft-365-apps) ve [Microsoft Teams](/microsoftteams/teams-overview) gibi üretkenlik uygulamaları için koruma.
 
 ## <a name="add-a-domain"></a>Etki alanı ekleme
 
@@ -70,7 +70,7 @@ Microsoft 365 İş Ekstra, cihazları korumaya yönelik yeni bir güvenlik çöz
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın.
 
-2. [Kurulum sihirbazını](../security/defender-business/mdb-use-wizard.md) çalıştırın.
+2. **Varlık Cihazları'na** >  gidin. İş için Defender henüz ayarlanmamışsa [, kurulum sihirbazını](../security/defender-business/mdb-use-wizard.md) çalıştırmanız istenir.
 
 3. [Cihazları ekleme](../security/defender-business/mdb-onboard-devices.md).
 

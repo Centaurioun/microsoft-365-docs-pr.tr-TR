@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: eKeşif'te (Premium) Microsoft Teams'den içerik korumayı, toplamayı, gözden geçirmeyi ve dışarı aktarmayı öğrenin.
-ms.openlocfilehash: ec3a1029c1a1b8de44a675d1856812aee0a77689
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2ac249426fad360d5f1dbb2ba2df14022c762e83
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629111"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710532"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Microsoft Teams'de içerik için eBulma (Premium) iş akışı
 
@@ -41,7 +41,11 @@ eKeşif (Premium) kullanarak toplayabileceğiniz ve işleyebileceğiniz altı Te
 
 ## <a name="where-teams-content-is-stored"></a>Teams içeriğinin depolandığı yer
 
-eBulma'da (Premium) Teams içeriğini yönetmenin önkoşullarından biri, eBulma'da (Premium) toplayabileceğiniz, işleyebileceğiniz ve gözden geçirebileceğiniz Teams içeriğinin türünü ve bu içeriğin Microsoft 365'te nerede depolandığını anlamaktır. Aşağıdaki tabloda Teams içerik türü ve bunların nerede depolandığı listelenmiştir.
+eBulma'da (Premium) Teams içeriğini yönetmenin önkoşullarından biri, eBulma'da (Premium) toplayabileceğiniz, işleyebileceğiniz ve gözden geçirebileceğiniz Teams içeriğinin türünü ve bu içeriğin Microsoft 365'te nerede depolandığını anlamaktır.
+
+Teams verileri Azure Cosmos DB'de depolanır. Alt katman tarafından yakalanan Teams uyumluluk kayıtları Exchange Online ve ebulma için kullanılabilir. 
+
+Aşağıdaki tabloda Teams içerik türü ve her biri şikayet amacıyla nerede depolandığı listelenmiştir. Exchange Online'da depolanan veriler istemcilerden gizlenir. eBulma hiçbir zaman Azure Cosmos DB'de kalan gerçek Teams ileti verileriyle çalışmaz.
 
 |&nbsp;|Sohbet iletilerinin ve gönderilerinin konumu|Dosyaların ve eklerin konumu|
 |---|---|---|

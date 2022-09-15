@@ -10,19 +10,19 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 09/14/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: b45eae435abdc10d48aa88237b245a9287c57b35
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: bb774fdc3b6fb2eac29c3fc09ec48cfc4841df7a
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596951"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710663"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'de cihazları yönetme
 
@@ -40,7 +40,7 @@ ms.locfileid: "67596951"
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın.
 
-2. Gezinti bölmesinde **Cihaz envanteri'ni** seçin.
+2. Gezinti bölmesinde **Varlık** > **Cihazları'na** gidin.
 
 3. Durumu hakkında daha fazla bilgi edinebileceğiniz ve eylem gerçekleştirebileceğiniz açılır panelini açmak için bir cihaz seçin. 
 
@@ -50,7 +50,7 @@ ms.locfileid: "67596951"
 
 :::image type="content" source="../../media/defender-business/mdb-selected-device.png" alt-text="Ayrıntıları ve eylemleri içeren seçili bir cihazın ekran görüntüsü":::
 
-1. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) gezinti bölmesinde **Cihaz envanteri'ni** seçin. 
+1. Microsoft 365 Defender portalında ([https://security.microsoft.com](https://security.microsoft.com) ) gezinti bölmesinde **Varlık** > **Cihazları'na** gidin. 
 
 2. Açılır panelini açmak için bir cihaz seçin ve görüntülenen bilgileri gözden geçirin.
 

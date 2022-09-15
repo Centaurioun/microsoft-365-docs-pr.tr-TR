@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Erişimi ve kullanımı kısıtlayarak verilerinizi koruyan şifreleme için duyarlılık etiketlerini yapılandırın.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 091b78e2b11633eddec41809748e54ba333c09be
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fcd1dd49aa1bf985794d9bb2dd0c270de01e8bc2
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701082"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710554"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Şifreleme uygulamak için hassasiyet etiketleri kullanarak içeriğe erişimi kısıtlama
 
@@ -67,6 +67,10 @@ Bu şifreleme çözümünü kullandığınızda **süper kullanıcı** özelliğ
 - Ağ gereksinimlerini denetleme
     
     Ağ cihazlarınızda güvenlik duvarları gibi bazı değişiklikler yapmanız gerekebilir. Ayrıntılar için Azure Information Protection belgelerindeki [Güvenlik duvarları ve ağ altyapısı](/azure/information-protection/requirements#firewalls-and-network-infrastructure) bölümüne bakın.
+
+- Azure AD yapılandırmanızı denetleme
+    
+    Şifrelenmiş içeriğe yetkili erişimi engelleyebilecek bazı Azure Active Directory (Azure AD) yapılandırmaları vardır. Örneğin, kiracılar arası erişim ayarları ve Koşullu Erişim ilkeleri. Daha fazla bilgi için bkz. [Şifrelenmiş içerik için yapılandırma Azure AD](encryption-azure-ad-configuration.md).
 
 - Azure Information Protection için Exchange'i yapılandırma
     

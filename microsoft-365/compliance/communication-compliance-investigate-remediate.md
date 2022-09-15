@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8db03cbae752481166055a7b84a0dc248a1b3e84
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 1cf97b9d573ee5cdcd0c2c4ddcc5aba66a5f70bc
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787858"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710729"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>İletişim uyumluluğu uyarılarını araştırma ve çözümleme
 
@@ -104,7 +104,7 @@ Uyarıları veya yapılandırdığınız filtrelemeyi gözden geçirmeye nereden
 
 - **Ekler**: Bu seçenek, ilke koşullarıyla eşleşen Modern ekleri incelemenize olanak tanır. Modern ekler içeriği metin olarak ayıklanır ve bir ilke için Bekleyen uyarılar panosunda görüntülenebilir. Daha fazla bilgi için bkz [. İletişim uyumluluğu özelliği başvurusu](/microsoft-365/compliance/communication-compliance-channels).
 - **Kaynak**: Bu görünüm, web tabanlı mesajlaşma platformlarının çoğunda yaygın olarak görülen standart ileti görünümüdür. Üst bilgi normal stilde biçimlendirilir ve ileti gövdesi, imbedded grafik dosyalarını ve sözcük kaydırılan metni destekler. İlke için [optik karakter tanıma (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) etkinleştirildiyse, ilke koşulluyla eşleşen yazdırılmış veya el yazısı metin içeren görüntüler, bu görünümdeki ilişkili ileti için alt öğe olarak görüntülenir.
-- **Düz metin**: Metin görünümü, iletinin satır numaralı yalnızca metin görünümünü görüntüler ve hassas bilgi türü terimleri veya ilişkili iletişim uyumluluk ilkesinde eşleşen anahtar sözcükler için iletilerde ve eklerde anahtar sözcük vurgulama içerir. Anahtar sözcük vurgulama, uzun iletileri ve ekleri ilgilendiğiniz alan için hızla taramanıza yardımcı olabilir. Bazı durumlarda, vurgulanan metin yalnızca ilke koşullarıyla eşleşen iletiler için eklerde olabilir. Anahtar sözcük vurgulama, bir ilkeye atanan yerleşik sınıflandırıcılar tarafından tanımlanan terimler için desteklenmez. Katıştırılmış dosyalar görüntülenmez ve bu görünümün satır numaralandırması, birden çok gözden geçiren arasında ilgili ayrıntılara başvurmak için yararlıdır.
+- **Düz metin**: İletinin yalnızca satır numaralı bir görünümünü görüntüleyen ve hassas bilgi türü terimleri, bir ilkeye atanan yerleşik sınıflandırıcılar tarafından tanımlanan terimler veya ilkeye atanmış ayrılmış anahtar sözcük sözlüğüne dahil edilen terimler için iletilerde ve eklerde anahtar sözcük vurgulama içeren metin görünümü. Anahtar sözcük vurgulama, uzun iletilerde ve eklerde ilginizi çeken alana yönlendirmenize yardımcı olabilir. Bazı durumlarda, vurgulanan metin yalnızca ilke koşullarıyla eşleşen iletiler için eklerde olabilir. Katıştırılmış dosyalar görüntülenmez ve bu görünümdeki satır numaralandırması, birden çok gözden geçiren arasında ilgili ayrıntılara başvurmak için yararlıdır.
 - **Konuşma (önizleme)**: Microsoft Teams sohbet iletileri için kullanılabilir olan bu görünüm, gözden geçirenlerin etkinliği konuşma bağlamında görüntülemesine yardımcı olmak için bir uyarı iletisinden önce ve sonra en fazla beş ileti görüntüler. Bu bağlam, gözden geçirenlerin iletileri hızla değerlendirmesine ve daha bilinçli ileti çözümleme kararları vermesine yardımcı olur. Teams'de bulunan tüm satır içi resimler, emojiler ve çıkartmalar da dahil olmak üzere konuşmalara gerçek zamanlı ileti eklemeleri görüntülenir. İletilere resim veya metin dosyası ekleri görüntülenmez. Düzenlenen iletiler veya konuşma penceresinden silinmiş iletiler için bildirimler otomatik olarak görüntülenir. İleti çözümlendiğinde, ilişkili konuşma iletileri çözümlenen iletiyle birlikte korunmaz. Konuşma iletileri, uyarı iletisi tanımlandıktan sonra 60 güne kadar kullanılabilir.
 - **Kullanıcı geçmişi**: Kullanıcı geçmişi görünümü, iletiyi gönderen kullanıcı için herhangi bir iletişim uyumluluk ilkesi tarafından oluşturulan diğer tüm uyarıları görüntüler.
 - **Desen algılandı bildirimi**: Zaman içinde birçok taciz ve zorbalık eylemi ve aynı davranışın örneklerinin bir kullanıcı tarafından yeniden yinelenmesi gerekir. *Desen algılandı* bildirimi uyarı ayrıntılarında görüntülenir ve uyarıya dikkat çekmektedir. Desenlerin algılanması ilke başına temel alınır ve gönderen tarafından aynı alıcıya en az iki ileti gönderildiğinde son 30 gün içindeki davranışı değerlendirir. Araştırmacılar ve gözden geçirenler, uyarıyı uygun şekilde değerlendirmek üzere yinelenen davranışı belirlemek için bu bildirimi kullanabilir.

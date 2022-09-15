@@ -22,12 +22,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c641a8699f59454bcc756cb0910f18a125d953e6
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: a63f93062a5941dbbb30202f6bb224de4ee10ee6
+ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787682"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67710576"
 ---
 # <a name="get-started-with-communication-compliance"></a>İletişim uyumluluğunu kullanmaya başlama
 
@@ -54,15 +54,37 @@ Mevcut bir Office 365 Kurumsal E5 planınız yoksa ve iletişim uyumluluğunu de
 > [!NOTE]
 > Office 365 Gelişmiş Uyumluluk artık tek başına abonelik olarak satılmaz. Geçerli aboneliklerin süresi dolduğunda, müşterilerin aynı veya ek uyumluluk özelliklerini içeren yukarıdaki aboneliklerden birine geçiş yapması gerekir.
 
-## <a name="recommended-actions"></a>Önerilen eylemler
+## <a name="recommended-actions-preview"></a>Önerilen eylemler (önizleme)
 
-Önerilen eylemler, kuruluşunuzun iletişim uyumluluk özelliklerini kullanmaya başlamasına ve mevcut ilkelerinizden en iyi şekilde yararlanmak için yardımcı olabilir. **İlkeler** sayfasına eklenen önerilen eylemler içgörüler sağlar ve kuruluşunuzdaki iletişimlerdeki hassas bilgi türlerini ve uygunsuz içerik etkinliklerini özetler. İçgörüler [, veri sınıflandırması](/microsoft-365/compliance/data-classification-overview) ve duyarlılık etiketlerinin, bekletme etiketlerinin ve hassas bilgi türü sınıflandırmasının uygulanması tarafından desteklenir. Bu içgörüler, kuruluşunuzdaki kullanıcılar için kişisel bilgileri (PII) içermez.
+Önerilen eylemler, kuruluşunuzun iletişim uyumluluğunu hızlı bir şekilde kullanmaya başlamasına yardımcı olabilir. **Genel Bakış** sayfasına eklenen önerilen eylemler, ilkeleri yapılandırma ve dağıtma adımlarında size yol gösterir.
+
+İletişim uyumluluk yapılandırmanızı kullanmaya başlamanıza veya en üst düzeye çıkarmanıza yardımcı olmak için aşağıdaki öneriler sağlanır:
+
+- **İletişim uyumluluğunu tanımaya başlayın**: Bir şeyler ayarlamadan önce, kuruluşunuzda iletişim uyumluluğu hakkında bilgi edinmek, bunları planlamak ve dağıtmak için resmi belgelerimizi gözden geçirin.
+- **Ekibinizin işlerini tamamlayabilmesi için izinler atayın**: İletişim uyumluluk özelliklerini yönetmek ve uyarıları araştırmak ve gözden geçirmekle sorumlu ekip üyeleri atayarak yalnızca uygun proje katılımcılarının çözüme erişebildiğinden emin olun.
+- **İletişimlerini algılamak istediğiniz kullanıcılar için dağıtım grupları oluşturun**: İletişim uyumluluk ilkelerine dahil edilecek kullanıcıları içeren dağıtım grupları oluşturmanızı öneririz.
+- **İletişimleri algılamaya başlamak için ilk ilkenizi oluşturun**: Olası mevzuat uyumluluğu ihlallerini araştırmak için önce kuruluşunuzun iç ve/veya dış iletişimlerinde olası ihlalleri algılayan bir ilke ayarlamanız gerekir.
+- **Algılanan iletileri araştırmak ve eyleme geçmek için uyarıları gözden geçirin**: İlkenin koşullarıyla eşleşen iletiler, bir ilke ihlaliyle ilgili bağlam sağlayan uyarılar tetikler, böylece gerekirse araştırabilir ve eylem gerçekleştirebilirsiniz.
+- **İlkelerin performansıyla ilgili hızlı içgörüler için raporları gözden geçirin**: İlkelerinizin performansı hakkında hızlı içgörüler edinin, ayrıntılı raporları görüntüleyerek detaya gidin ve daha fazla analiz için sonuçları dışarı aktarın.
+
+Bu deneyime dahil edilen önerilen her eylemin üç özniteliği vardır:
+
+- **Eylem**: Önerilen eylemin adı ve açıklaması.
+- **Önerilen, gerekli veya isteğe bağlı**: İletişim uyumluluk özelliklerinin beklendiği gibi çalışması için önerilen eylemin kesinlikle önerilip önerilmediği, gerekli veya isteğe bağlı olup olmadığı.
+- **Tahmini tamamlanma süresi**: Önerilen eylemin dakika cinsinden tamamlanması için tahmini süre.
+
+İletişim uyumluluğunu yapılandırmaya başlamak için listeden bir öneri seçin. Önerilen her eylem, gereksinimler, beklenecekler ve özelliğin kuruluşunuzdaki yapılandırmasının etkisi de dahil olmak üzere öneri için gerekli etkinliklerde size yol gösterir. Bazı önerilen eylemler yapılandırıldığında otomatik olarak tamamlandı olarak işaretlenir. Aksi takdirde, yapılandırıldığında eylemi tamamlandı olarak el ile seçmeniz gerekir.
+
+İlkeler sayfasında da yer alan önerilen eylemler içgörüleri, kuruluşunuzdaki iletişimlerdeki geçerli hassas bilgi türlerini ve olası mevzuat uyumluluğu ihlallerini özetlemenize yardımcı olur. İçgörüler [, veri sınıflandırması](/microsoft-365/compliance/data-classification-overview) ve duyarlılık etiketlerinin, bekletme etiketlerinin ve hassas bilgi türü sınıflandırmasının uygulanması tarafından desteklenir. Bu içgörüler toplanır ve kuruluşunuzdaki kullanıcılar için kişisel bilgileri (PII) içermez.
 
 ![İletişim uyumluluğu önerilen eylemler.](../media/communication-compliance-recommended-actions.png)
 
-Uygunsuz içerik içeren iletilerdeki etkinlik, uygunsuz içerik şablonunu veya uygunsuz içerik için [sınıflandırıcıları](/microsoft-365/compliance/communication-compliance-policies#classifiers) kullanan özel ilkeleri kullanan mevcut ilkelerden sınıflandırıcı türüne göre toplanır. İlkeleriniz için Uyarı panosunda bu iletilere yönelik uyarıları araştırın.
+İletilerdeki etkinlik, *Uygun olmayan metin* ilkesi şablonunu veya [sınıflandırıcıları](/microsoft-365/compliance/communication-compliance-policies#classifiers) kullanan özel ilkeleri kullanan mevcut ilkelerden sınıflandırıcı türüne göre toplanır. İlkeleriniz için **Uyarı panosunda** bu iletilere yönelik uyarıları araştırın.
 
-[Hassas bilgi türlerini](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) içeren etkinlik, mevcut ilkelerde kapsanan iletilerde ve mevcut ilkeler kapsamında olmayan iletiler için algılanır. İçgörüler, kuruluşunuzun daha önce mevcut bir iletişim uyumluluk ilkesinde tanımlanmamış olanlar da dahil olmak üzere tüm hassas bilgi türleri için toplanır. Yeni bir iletişim uyumluluk ilkesi oluşturmak veya mevcut ilkeleri güncelleştirmek için bu içgörüleri kullanın.
+[Hassas bilgi türlerini](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) içeren etkinlik, mevcut ilkelerde kapsanan iletilerde ve mevcut ilkeler kapsamında olmayan iletiler için algılanır. Mevcut ilkelerin kapsamına alınmayan içgörü iletileri araştırılamaz ve düzeltilebilir, gelecekteki iletilerde benzer etkinlikleri algılamak ve düzeltmek için yeni bir ilke oluşturulmalıdır. İçgörüler, kuruluşunuzun daha önce mevcut bir iletişim uyumluluk ilkesinde tanımlanmamış olanlar da dahil olmak üzere tüm hassas bilgi türleri için toplanır. Yeni bir iletişim uyumluluk ilkesi oluşturmak veya mevcut ilkeleri güncelleştirmek için bu içgörüleri kullanın. Yeni bir ilke oluşturduktan sonra, bu ilke için ileti uyarıları benzer bir içgörüde tanımlanan eşit sayıda iletiyle eşleşebilir veya eşleşmeyebilir. İlkenizin farklı koşulları, farklı sayıda kapsam içi kullanıcısı olabilir ve yalnızca ilke etkin olduktan sonra gerçekleşen ileti etkinliğini algılar.
+
+>[!TIP]
+>Önerilen eylem içgörülerini görmek istemiyor musunuz? Kuruluşunuzda bu içgörü pencere öğelerinin görüntülenmesini devre dışı bırakmak için Microsoft Desteği ile bir istek açın.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>1. Adım (gerekli): İletişim uyumluluğu için izinleri etkinleştirme
 
