@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/23/2020
 ms.subservice: mde
-ms.openlocfilehash: e53e453bb60a203dfaf32669ad7995ec6e96a839
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: d9df75e54807435351ff043da7f94c791e41d1a9
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67516422"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67704886"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de iyi durumda olmayan algılayıcıları düzeltme
 

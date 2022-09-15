@@ -19,12 +19,13 @@ ms.collection:
 - highpri
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: fd1bf46c7d56cddf81b7daf99017e2fc8fb705eb
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: dfce50825b3cdf2c63dd90377672c7b843147859
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576373"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67704248"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Uç Nokta için Microsoft Defender hizmetine ekleme
 

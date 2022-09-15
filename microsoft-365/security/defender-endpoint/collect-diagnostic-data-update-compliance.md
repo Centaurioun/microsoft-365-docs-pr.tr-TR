@@ -17,12 +17,13 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b21201d5b3a24c570819ac903eb3a38058c362c8
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 0cf46c7cdb7b36d07fafb87e1ad5b114e66ec51b
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479830"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703192"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Microsoft Defender Virüsten Koruma değerlendirmesi için güncelleştirme uyumluluğu tanılama verilerini toplama
 

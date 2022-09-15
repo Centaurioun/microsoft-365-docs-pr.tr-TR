@@ -17,12 +17,13 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 08/25/2022
-ms.openlocfilehash: e835c9bd06bc026baecb6a35d7d16a7d25ab7ae3
-ms.sourcegitcommit: 02a9c7f915d3a795a373b62dbdee2925966703f5
+search.appverid: met150
+ms.openlocfilehash: 949f458f93db5dd7471dcd4f731ab7eeec06a095
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67623789"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703356"
 ---
 # <a name="attack-surface-reduction-asr-rules-report"></a>Saldırı yüzeyi azaltma (ASR) kuralları raporu
 

@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.collection: Strat_SP_gtc
@@ -15,12 +15,12 @@ description: Çok coğrafi bir ortamda belirli bir tercih edilen veri konumuna s
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-ms.openlocfilehash: ff9b6ae6949ab1e6af1ee102abfcf2cb132fed9f
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: ee2bc775f7274722ad2a59a253d8da8ce6795ce6
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940722"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67705194"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>Tercih edilen belirli bir veri konumuna sahip bir Microsoft 365 grubu oluşturma
 
@@ -60,6 +60,6 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 
 ## <a name="related-topics"></a>İlgili konular
 
-[Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell)
+[Exchange Online PowerShell’e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell)
 
-[Graph API'lerini kullanarak belirli bir tercih edilen veri konumuna sahip gruplar oluşturma](/graph/api/group-post-groups)
+[Graph API kullanarak belirli bir tercih edilen veri konumuna sahip gruplar oluşturma](/graph/api/group-post-groups)

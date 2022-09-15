@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview eKeşif (Premium) içinde bir gözden geçirme kümesine kaydedilmiş taslak koleksiyonlar ve koleksiyonlar için istatistiklere ve raporlara erişmeyi ve bunları kullanmayı öğrenin.
-ms.openlocfilehash: 1f9047a047e5c2c4abd01f0cac39ab6cb97e27da
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6e8374fb339c98aae9a34da9f5fc22488c37506a
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626853"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703488"
 ---
 # <a name="collection-statistics-and-reports-in-microsoft-purview-ediscovery-premium"></a>Microsoft Purview eKeşif'de toplama istatistikleri ve raporları (Premium)
 
@@ -139,5 +139,7 @@ Taslak koleksiyondaki tahmini sonuçların gerçek taahhüt edilen sonuçlardan 
 - **Taslak koleksiyonları tahmin etme ve işleme zamanları arasında gerçekleşen değişiklikler**. Bir gözden geçirme kümesine taslak koleksiyon işlediğinizde, arama dizininde arama ölçütlerine uyan en son öğeleri toplamak için arama yeniden çalıştırılır. Taslak koleksiyonun son çalıştırıldığı zaman ile taslak koleksiyonun bir gözden geçirme kümesine kabul edildiği zaman arasında arama ölçütlerini karşılayan ek öğeler oluşturulmuş, gönderilmiş veya silinmiş olabilir. Ayrıca, taslak koleksiyon sonuçları tahmin edildiğinde arama dizininde yer alan öğelerin, koleksiyonu işlemeden önce bir veri kaynağından temizlendikleri için artık orada olmaması da mümkündür. Bu sorunu azaltmanın bir yolu, koleksiyon için bir tarih aralığı belirtmektir. Bir diğer yol da öğelerin korunması ve temizlenememeleri için içerik konumlarına ayrı tutmaktır.
 
 - **Dizine alınmamış öğeler**. Taslak koleksiyon tüm Exchange posta kutularını veya tüm SharePoint sitelerini aramayı içeriyorsa, yalnızca koleksiyon ölçütlerine uyan öğeleri içeren içerik konumlarından dizine alınmamış öğeler gözden geçirme kümesine eklenir. Başka bir deyişle, bir posta kutusunda veya sitede sonuç bulunamazsa, bu posta kutusu veya sitedeki dizine alınmamış öğeler gözden geçirme kümesine eklenmez. Ancak, tüm içerik konumlarındaki dizine alınmamış öğeler (koleksiyon sorgusuyla eşleşen öğeler içermeyen öğeler bile) tahmini koleksiyon sonuçlarına dahil edilir.
+
+- **Kısmen dizine alınan öğeler**: Bu seçeneğin seçimi, ek veri kaynaklarından kısmen dizine alınan öğeleri gözden geçirme kümesine ekler. Koleksiyon ek veri kaynakları aradıysa (koleksiyonlar sihirbazındaki **Ek konumlar** sayfasında belirtildiği gibi), bu konumlardan gözden geçirme kümesine eklemek istediğiniz kısmen dizine alınan öğeler olabilir. Gözetim ve gözetim dışı veri kaynakları genellikle kısmen dizine alınan öğelere sahip değildir. Bunun nedeni, Bir servis talebine gözetim ve gözetim dışı veri kaynakları eklendiğinde Gelişmiş dizin oluşturma işleminin öğeleri yeniden dizine eklemesidir. Ayrıca, kısmen dizinlenmiş öğeler eklemek, gözden geçirme kümesine eklenen öğe sayısını artırır. <p> Kısmen dizinlenmiş öğeler gözden geçirme kümesine eklendikten sonra, bu öğeleri özellikle görüntülemek için bir filtre uygulayabilirsiniz. Daha fazla bilgi için bkz [. Kısmen dizinlenmiş öğeleri filtreleme](review-set-search.md#filter-partially-indexed-items)
 
     Alternatif olarak, taslak koleksiyonda belirli içerik konumları varsa (yani taslak koleksiyon sihirbazındaki **Ek konumlar** sayfasında belirtilen belirli posta kutuları veya siteler), aramada belirtilen içerik konumlarından dizine alınmamış öğeler (koleksiyon ölçütleri tarafından hariç tutulmaz) dışarı aktarılır. Bu durumda, tahmini dizinlenmemiş öğe sayısı ve gözden geçirme kümesine eklenen dizinlenmemiş öğe sayısı aynı olmalıdır.

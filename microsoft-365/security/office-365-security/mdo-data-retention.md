@@ -11,17 +11,17 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.localizationpriority: medium
-search.appverid: ''
+search.appverid: met150
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Office 365 için Microsoft Defender veri saklama bilgileriThreat Explorer/ Real-Time algılamaları
-ms.openlocfilehash: d57865649dbba96dc4e2d66c0618dc6d52d87205
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 350c4e41c8e2ae6ba008bdc9032dfc3994203487
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596412"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703632"
 ---
 # <a name="data-retention-information-for-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender için veri saklama bilgileri
 
@@ -50,7 +50,7 @@ plan 1 özelliklerini Office 365 için Defender ayrıca:
 |Özellik|Bekletme süresi|
 |---|---|
 |İşlem Merkezi | 180 gün, 30 gün (Office İşlem merkezi)   |
-|Gelişmiş Avcılık | 30 gün |
+|Gelişmiş avcılık | 30 gün |
 |AIR (Otomatik Araştırma ve Yanıt) | 60 gün (araştırma meta verileri için)<br> 30 gün (e-posta meta verileri için)  |
 |Saldırı Benzetimi Verileri | 18 ay |
 |Kampanya | 30 gün |

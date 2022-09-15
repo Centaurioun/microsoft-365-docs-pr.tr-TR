@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: c0c26b391f46f7186aa9d9c54e8ef63f98ad6093
-ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.openlocfilehash: 4ec9f997cca5b118745a82ea11e7557383303ba5
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67631504"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67702940"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Cihaz ara sunucusu ve İnternet bağlantısı ayarlarını yapılandırma
 
@@ -99,7 +99,8 @@ Statik proxy, grup ilkesi (GP) aracılığıyla yapılandırılabilir; grup ilke
 > Aksi halde **tamamen çevrimdışı** olan cihazlarda 'TelemetryProxyServer' ayarını kullanıyorsanız, değerine `1`sahip ek kayıt defteri ayarını `PreferStaticProxyForHttpRequest` eklemeniz önerilir.<br>
 > "PreferStaticProxyForHttpRequest" için üst kayıt defteri yolu konumu "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"<br>
 > Kayıt defteri değerini doğru konuma eklemek için aşağıdaki komut kullanılabilir:<br>
-> ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```
+> ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```<br>
+> Yukarıdaki kayıt defteri değeri yalnızca MsSense.exe sürüm 10.8210.* ve üzeri ya da 10.8049.* ve sonraki bir sürümle (Birleşik aracıyla Windows Server 2012R2/2016'da) başlayarak geçerlidir
 
 
 

@@ -16,12 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: c75c39f898a6e94e9f0f96402d28c477a5819efa
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 70ddbcc017a487f917b48d7c0123aeac29b2adf8
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585168"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67704161"
 ---
 # <a name="advanced-hunting-using-python"></a>Python ile Gelişmiş Avcılık
 

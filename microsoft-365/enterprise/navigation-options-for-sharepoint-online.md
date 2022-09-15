@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 4/7/2020
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Bu makalede, SharePoint Online'da SharePoint Yayımlama'nın etkinleştirildiği gezinti seçenekleri siteleri açıklanmaktadır.
-ms.openlocfilehash: da06987e0136b3ae92f7bcdc9b561e6478439a01
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: d9790be9aa07c2fe8a13404aa0c52662c717ed93
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662255"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67705172"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online için gezinti seçenekleri
 

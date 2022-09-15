@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: ce4bade277363cea284f38864f0abf0fb99ee062
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: b3c7fd0a8121c675018987a0bd700ffde09839a3
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520027"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67705040"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>MSSP müşteri kiracısından uyarıları getirme
 

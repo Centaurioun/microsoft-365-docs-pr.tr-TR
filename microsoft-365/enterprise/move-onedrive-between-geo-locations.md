@@ -1,12 +1,12 @@
 ---
-title: Bir OneDrive konumunu farklı bir coğrafi konuma taşıma
+title: OneDrive sitesini farklı bir coğrafi konuma taşıma
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
@@ -14,55 +14,55 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
-description: Site taşımanın nasıl zamanlamayı OneDrive ve beklentilerin kullanıcılara iletki iletişim kurması da dahil olmak üzere, site sitesini farklı bir coğrafi konuma taşıma hakkında bilgi bulabilirsiniz.
-ms.openlocfilehash: f0a9e319d20c7b56701d776e85a0618ed30e5f78
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+description: OneDrive sitesini farklı bir coğrafi konuma taşıma hakkında, site taşımalarını zamanlama ve beklentileri kullanıcılara iletme gibi bilgileri bulun.
+ms.openlocfilehash: a6de4b0efc2b45652d89d5261b71dff415c740d6
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569611"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703324"
 ---
-# <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Bir OneDrive konumunu farklı bir coğrafi konuma taşıma
+# <a name="move-a-onedrive-site-to-a-different-geo-location"></a>OneDrive sitesini farklı bir coğrafi konuma taşıma
 
-Coğrafi OneDrive ile, kullanıcının bilgilerini farklı OneDrive konuma taşıabilirsiniz. OneDrive coğrafi taşıma işlemi SharePoint Online yöneticisi veya Microsoft 365 yöneticisi tarafından gerçekleştirilir. Coğrafi olarak OneDrive başlamadan önce, hesabı taşınan kullanıcıya OneDrive ve taşıma süresi boyunca tüm dosyaları kapatmalarını önerin. (Kullanıcının, taşıma sırasında Office istemcisini kullanarak açık bir belgesi varsa, taşıma tamamlandığında belgenin yeni konuma kaydedilmiş olması gerekir.) Taşıma,  İstenen sonraki bir zaman için zamanlanmış olabilir.
+OneDrive coğrafi taşıma ile kullanıcının OneDrive'sını farklı bir coğrafi konuma taşıyabilirsiniz. OneDrive coğrafi taşıma işlemi SharePoint Online yöneticisi veya Microsoft 365 genel yöneticisi tarafından gerçekleştirilir. OneDrive coğrafi taşımayı başlatmadan önce, OneDrive'ı taşınan kullanıcıya bildirmeyi unutmayın ve taşıma süresi boyunca tüm dosyaları kapatmasını öneririz. (Taşıma sırasında kullanıcının Office istemcisini kullanarak açık bir belgesi varsa, taşıma tamamlandıktan sonra belgenin yeni konuma kaydedilmesi gerekir.) taşıma, isterseniz gelecek bir süre için zamanlanabilir.
 
-İçerik OneDrive depolamak için Azure Blob Depolama bilgileri kullanır. Kullanıcının Depolama blob'unla ilişkilendirilmiş OneDrive, kullanıcının kullanımına açık olan hedef OneDrive sonra kaynak konumdan hedef coğrafi konuma OneDrive taşınır. Kullanıcının posta hedefine erişim OneDrive, kullanılabilir olduğu anda OneDrive yüklenir.
+OneDrive hizmeti, içeriği depolamak için Azure Blob Depolama kullanır. Kullanıcının OneDrive'ı ile ilişkili Depolama blobu, hedef OneDrive'ın kullanılabilmesinden sonra 40 gün içinde kaynaktan hedef coğrafi konuma taşınır. Hedef OneDrive kullanılabilir olduğunda kullanıcının OneDrive erişimi geri yüklenir.
 
-Coğrafi OneDrive penceresinde (yaklaşık 2-6 saat) kullanıcının OneDrive salt okunur olarak ayarlanır. Kullanıcı, dosyalarına SharePoint Online'daki OneDrive eşitleme uygulaması veya OneDrive site üzerinden SharePoint. Coğrafi OneDrive tamamlandıktan sonra kullanıcı, OneDrive uygulama başlatıcıda OneDrive'a gezindikten sonra hedef coğrafi konumdaki Microsoft 365 bağlantısında olur. Eşitleme uygulaması yeni konumdan eşitlemeye otomatik olarak başlar.
+OneDrive coğrafi taşıma penceresi (yaklaşık 2-6 saat) sırasında kullanıcının OneDrive'ı salt okunur olarak ayarlanır. Kullanıcı dosyalarına OneDrive eşitleme uygulaması veya SharePoint Online'daki OneDrive sitesi aracılığıyla erişmeye devam edebilir. OneDrive coğrafi taşıma işlemi tamamlandıktan sonra kullanıcı, Microsoft 365 uygulama başlatıcısında OneDrive'a gittiği zaman hedef coğrafi konumdaki OneDrive'larına otomatik olarak bağlanır. Eşitleme uygulaması otomatik olarak yeni konumdan eşitlemeye başlar.
 
-Bu makaledeki yordamlar için [PowerShell Microsoft Office SharePoint Online gerekir](https://www.microsoft.com/download/details.aspx?id=35588).
+Bu makaledeki yordamlar [Microsoft Office SharePoint Online PowerShell Modülü](https://www.microsoft.com/download/details.aspx?id=35588) gerektirir.
 
 ## <a name="communicating-to-your-users"></a>Kullanıcılarınıza iletişim kurma
 
-Site OneDrive coğrafi konumlar arasında hareket ettirilen sitelerde, kullanıcılarınızı neler beklemeleri gerekenleri haberimiz önemlidir. Bu, kullanıcının kafa karışıklığını ve yardım masasına yapılan aramaları azaltmaya yardımcı olabilir. Taşımadan önce kullanıcılarınıza e-posta gönderin ve aşağıdaki bilgileri haber verme:
+OneDrive sitelerini coğrafi konumlar arasında taşırken kullanıcılarınıza ne bekleyebileceğinizi bildirmek önemlidir. Bu, kullanıcı karışıklığını ve yardım masanıza yapılan aramaları azaltmaya yardımcı olabilir. Taşımadan önce kullanıcılarınızı Email ve aşağıdaki bilgileri onlara bildirin:
 
-- Taşımanın ne zaman başlaması ve ne kadar süreyle başlaması beklendiği
-- Bu konumun OneDrive coğrafi konum ve yeni konuma erişmek için URL
-- Taşıma sırasında düzenleme yapmalarını değil dosyalarını kapatmaları gerekir.
-- Taşıma sonucunda dosya izinleri ve paylaşım değişmez.
-- Çok coğrafi bir [ortamda kullanıcı deneyiminden neler beklemeleri gerekir?](multi-geo-user-experience.md)
+- Taşıma işleminin ne zaman başlaması ve ne kadar sürmesi beklenir?
+- OneDrive'ın taşındığı coğrafi konum ve yeni konuma erişmek için URL
+- Taşıma sırasında düzenleme yapmamaları ve dosyalarını kapatmaları gerekir.
+- Taşımanın sonucunda dosya izinleri ve paylaşım değişmez.
+- [Çok coğrafi bir ortamda kullanıcı deneyiminden neler beklenmeli](multi-geo-user-experience.md)?
 
-Taşıma başarıyla tamamlandığında kullanıcılarınıza bir e-posta göndermeyi, bu kullanıcılara proje içinde çalışmaya devam edeceklerini haber OneDrive.
+Taşıma işlemi başarıyla tamamlandığında kullanıcılarınıza OneDrive'da çalışmaya devam etmelerini bildiren bir e-posta gönderdiğinizden emin olun.
 
-## <a name="scheduling-onedrive-site-moves"></a>Site OneDrive zamanlaması taşınır
+## <a name="scheduling-onedrive-site-moves"></a>OneDrive sitesi taşımalarını zamanlama
 
-Sitenin önceden OneDrive zamanlamayı zaman edebilirsiniz (bu makalenin devamsında açıklanmıştır). İş akışlarınızı ve iletişim stratejilerinizi doğrulamak için az sayıda kullanıcıyla başlamanızı öneririz. İşleme rahat bir şekilde başladıktan sonra, aşağıdaki gibi hareket zamanlamanız da mümkün olur:
+OneDrive sitesi taşımalarını önceden zamanlayabilirsiniz (bu makalenin ilerleyen bölümlerinde açıklanmaktadır). İş akışlarınızı ve iletişim stratejilerinizi doğrulamak için az sayıda kullanıcıyla başlamanızı öneririz. İşlemi rahatça tamamladıktan sonra, taşımaları aşağıdaki gibi zamanlayabilirsiniz:
 
-- Bir defada en çok 4.000 hareket zamanabilirsiniz.
-- Hareketler baş ettiğinde, sırada ve belirli bir zamanda en çok 4.000 bekleyen hareket olacak şekilde daha fazla zamanlamayı zamanabilirsiniz.
-- Taşınacak en büyük OneDrive 1 terabayt (1 TB) olur.
+- Bir kerede en fazla 4.000 taşıma zamanlayabilirsiniz.
+- Taşımalar başladığında, kuyrukta ve belirli bir zamanda bekleyen en fazla 4.000 taşıma ile daha fazla zamanlayabilirsiniz.
+- Taşınabilecek OneDrive boyutu üst sınırı 1 terabayttır (1 TB).
 
-## <a name="moving-a-onedrive-site"></a>Site OneDrive taşıma
+## <a name="moving-a-onedrive-site"></a>OneDrive sitesini taşıma
 
-Coğrafi olarak OneDrive için, önce kiracı yöneticisinin kullanıcının Tercih Edilen Veri Konumu'nun (PDL) uygun coğrafi konumu olarak ayarlaması gerekir. PDL ayarlanarak, PDF'nin coğrafi olarak taşınmaya başlamadan önce PDL güncelleştirmesini coğrafi konumlar arasında eşitlemesi için OneDrive bekleyin.
+OneDrive coğrafi taşıma gerçekleştirmek için, kiracı yöneticisinin önce kullanıcının Tercih Edilen Veri Konumu'na (PDL) uygun coğrafi konumu ayarlaması gerekir. PDL ayarlandıktan sonra, OneDrive coğrafi taşıma işlemini başlatmadan önce PDL güncelleştirmesinin coğrafi konumlar arasında eşitlenmesi için en az 24 saat bekleyin.
 
-Geo move cmdlet'lerini kullanırken, aşağıdaki söz dizimlerini kullanarak kullanıcının geçerli OneDrive SPO Hizmeti'ne bağlanabilirsiniz:
+Coğrafi taşıma cmdlet'lerini kullanırken, aşağıdaki söz dizimini kullanarak kullanıcının geçerli OneDrive coğrafi konumunda SPO Hizmeti'ne bağlanın:
 
 ```powershell
 Connect-SPOService -url https://<tenantName>-admin.sharepoint.com
 ```
 
-Örneğin: 'OneDrive' kullanıcısını taşımak için, kullanıcının hesabı EURO coğrafi Matt@contosoenergy.onmicrosoft.com olduğu için EURO SharePoint OneDrive Yönetim merkezine bağlanin:
+Örneğin: 'Matt@contosoenergy.onmicrosoft.com' kullanıcısının OneDrive'ını taşımak için, kullanıcının OneDrive'ı EUR coğrafi konumunda olduğundan EUR SharePoint Yönetici merkezine bağlanın:
 
 ```powershell
 Connect-SPOService -url https://contosoenergyeur-admin.sharepoint.com
@@ -72,27 +72,27 @@ Connect-SPOService -url https://contosoenergyeur-admin.sharepoint.com
 
 ## <a name="validating-the-environment"></a>Ortamı doğrulama
 
-Coğrafi olarak taşımaya OneDrive, ortamı doğrulamanızı öneririz.
+OneDrive coğrafi taşımayı başlatmadan önce ortamı doğrulamanızı öneririz.
 
-Tüm coğrafi konumların uyumlu olduğundan emin olmak için şunları çalıştırın:
+Tüm coğrafi konumların uyumlu olduğundan emin olmak için şunu çalıştırın:
 
 ```powershell
 Get-SPOGeoMoveCrossCompatibilityStatus
 ```
 
-Coğrafi konumlarınızı ve içeriğin taşınıp taşınmayacaklarını liste olarak "Uyumlu" olarak ifade ettiysiniz. Komut "Uyumsuz" döndürürse, lütfen daha sonraki bir tarihte durumu doğrulamayı yeniden deneyin.
+Coğrafi konumlarınızın listesini görürsünüz ve içeriğin arasında taşınıp taşınamayacağınız "Uyumlu" olarak belirtilir. Komut "Uyumsuz" döndürürse, lütfen durumu daha sonraki bir tarihte doğrulamayı yeniden deneyin.
 
-Örneğin OneDrive site içeren bir site varsa, bu site taşınamaz. OneDrive taşınanın Start-SPOUserAndContentMove doğrulamak için OneDrive -ValidationOnly parametresiyle kullanabilirsiniz:
+OneDrive bir alt site içeriyorsa, örneğin, bu site taşınamaz. OneDrive'ın taşınıp taşınamadığını doğrulamak için -ValidationOnly parametresiyle Start-SPOUserAndContentMove cmdlet'ini kullanabilirsiniz:
 
 ```powershell
 Start-SPOUserAndContentMove -UserPrincipalName <UPN> -DestinationDataLocation <DestinationDataLocation> -ValidationOnly
 ```
 
-Taşımayı önleyen yasal bir OneDrive bir engelleme veya alt site varsa, Çalışma Alanı taşınmaya hazırsa Başarılı'ya veya Başarısız'a döner. Dosyanın taşınmaya hazır OneDrive doğrulandıktan sonra, taşımaya başlayabilirsiniz.
+Bu, OneDrive taşınmaya hazırsa Başarılı veya taşımayı engelleyecek yasal bir ayrı tutma veya alt site varsa Başarısız döndürür. OneDrive'ın taşınmaya hazır olduğunu doğruladıktan sonra taşıma işlemini başlatabilirsiniz.
 
-## <a name="start-a-onedrive-geo-move"></a>Coğrafi olarak OneDrive başlatma
+## <a name="start-a-onedrive-geo-move"></a>OneDrive coğrafi taşımayı başlatma
 
-Taşımayı başlatmak için şu çalıştırın:
+Taşımayı başlatmak için şunu çalıştırın:
 
 ```powershell
 Start-SPOUserAndContentMove -UserPrincipalName <UserPrincipalName> -DestinationDataLocation <DestinationDataLocation>
@@ -100,101 +100,101 @@ Start-SPOUserAndContentMove -UserPrincipalName <UserPrincipalName> -DestinationD
 
 Şu parametreleri kullanarak:
 
-- _UserPrincipalName_ – Kimlik bilgileri taşınan kullanıcının OneDrive UPN'i.
-- _DestinationDataLocation_ – Geo-Location olması OneDrive yere taşınır. Bu, kullanıcının tercih ettiği veri konumuyla aynı olması gerekir.
+- _UserPrincipalName_ – OneDrive'ın taşındığı kullanıcının UPN'i.
+- _DestinationDataLocation_ – OneDrive'ın taşınması gereken yeri Geo-Location. Bu, kullanıcının tercih ettiği veri konumuyla aynı olmalıdır.
 
-Örneğin, euro olan OneDrive euro matt@contosoenergy.onmicrosoft.com AUS'a taşımak için şu çalıştırın:
+Örneğin, matt@contosoenergy.onmicrosoft.com OneDrive'ını EUR'tan AUS'ye taşımak için şunu çalıştırın:
 
 ```powershell
 Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS
 ```
 
-![PowerShell penceresinin cmdlet'i Start-SPOUserAndContentMove ekran görüntüsü.](../media/move-onedrive-between-geo-locations-image2.png)
+![Start-SPOUserAndContentMove cmdlet'ini gösteren PowerShell penceresinin ekran görüntüsü.](../media/move-onedrive-between-geo-locations-image2.png)
 
-Coğrafi taşımayı daha sonraki bir zaman için zaman yapmak için, aşağıdaki parametrelerden birini kullanın:
+Coğrafi taşımayı daha sonra zamanlamak için aşağıdaki parametrelerden birini kullanın:
 
-- _PreferredMoveBeginDate_ – Taşıma, büyük olasılıkla belirtilen zamanda başlayacaktır. Saat, Eşgüdümli Evrensel Saat (UTC) içinde belirtilmelidir.
-- _PreferredMoveEndDate_ – Taşıma büyük olasılıkla belirtilen zamanda, en iyi çabayla tamamlanır. Saat, Eşgüdümli Evrensel Saat (UTC) içinde belirtilmelidir.
+- _PreferredMoveBeginDate_ – Taşıma büyük olasılıkla belirtilen zamanda başlayacaktır. Saat Eşgüdümlü Evrensel Saat (UTC) içinde belirtilmelidir.
+- _PreferredMoveEndDate_ – Taşıma işlemi büyük olasılıkla belirtilen zamana kadar en iyi çaba temelinde tamamlanacaktır. Saat Eşgüdümlü Evrensel Saat (UTC) içinde belirtilmelidir.
 
-## <a name="cancel-a-onedrive-geo-move"></a>Coğrafi olarak OneDrive iptal etme
+## <a name="cancel-a-onedrive-geo-move"></a>OneDrive coğrafi taşımayı iptal etme
 
-Şu cmdlet'i kullanarak, OneDrive veya tamamlanmadı ise, kullanıcının kullanıcı postalarının coğrafi olarak taşınmalarını durdursanız:
+Taşıma işlemi devam etmemesi veya cmdlet'ini kullanarak tamamlanması koşuluyla kullanıcının OneDrive'ının coğrafi taşımasını durdurabilirsiniz:
 
 ```powershell
 Stop-SPOUserAndContentMove – UserPrincipalName <UserPrincipalName>
 ```
 
-Burada _UserPrincipalName_, adı taşımak istediğiniz kullanıcının OneDrive UPN'dir.
+Burada _UserPrincipalName_ , OneDrive taşımasını durdurmak istediğiniz kullanıcının UPN'sini oluşturur.
 
 ## <a name="determining-current-status"></a>Geçerli durumu belirleme
 
-OneDrive Get-SPOUserAndContentMoveState cmdlet'ini kullanarak, bağlı olduğunu coğrafi olarak hareket ettiren veya dışarı doğru hareket ettiren bir Get-SPOUserAndContentMoveState kontrol edin.
+Get-SPOUserAndContentMoveState cmdlet'ini kullanarak bağlandığınız coğrafi bölgede oneDrive coğrafi taşımasının durumunu de kontrol edebilirsiniz.
 
 Taşıma durumları aşağıdaki tabloda açıklanmıştır.
 
 |Durum|Açıklama|
 |---|---|
-|NotStarted|Taşıma başlamadı|
-|Çıkış (*n*/4)|Aşağıdaki eyaletlerden biri için taşıma devam etmektedir: <ul><li>Doğrulama (1/4)</li><li>Yedekleme (2/4)</li><li>Geri Yükleme (3/4)</li><li>Temizleme (4/4)</li></ul>|
-|Başarılı|Taşıma başarıyla tamamlandı.|
+|Başlamadı|Taşıma başlatılmadı|
+|InProgress (*n*/4)|Taşıma işlemi aşağıdaki durumlardan birinde devam ediyor: <ul><li>Doğrulama (1/4)</li><li>Yedekleme (2/4)</li><li>Geri Yükleme (3/4)</li><li>Temizleme (4/4)</li></ul>|
+|Başarı|Taşıma işlemi başarıyla tamamlandı.|
 |Başarısız|Taşıma başarısız oldu.|
 
-Belirli bir kullanıcının taşıma durumunu bulmak için *UserPrincipalName parametresini* kullanın:
+Belirli bir kullanıcının taşıma durumunu bulmak için *UserPrincipalName* parametresini kullanın:
 
 ```powershell
 Get-SPOUserAndContentMoveState -UserPrincipalName <UPN>
 ```
 
-Bağlı olduğunu coğrafi konuma taşıma veya taşımanın tüm durumlarını bulmak için *MoveState* parametresini şu değerlerden birini kullanarak kullanın: NotStarted, InProgress, Success, Failed, All.
+Bağlandığınız coğrafi konumdaki veya coğrafi konumdaki tüm taşımaların durumunu bulmak için *MoveState* parametresini şu değerlerden biriyle kullanın: NotStarted, InProgress, Success, Failed, All.
 
 ```powershell
 Get-SPOUserAndContentMoveState -MoveState <value>
 ```
 
-Ayrıca, taşıma *durumunun ayrıntılı açıklamaları için Verbose* parametresini de ekleyebilirsiniz.
+Taşıma *durumunun daha* ayrıntılı açıklamaları için Ayrıntılı parametresini de ekleyebilirsiniz.
 
 ## <a name="user-experience"></a>Kullanıcı Deneyimi
 
-Farklı OneDrive konumlarına taşınan kullanıcıların, OneDrive aksaklıkları çok az fark olması gerekir. Taşıma sırasında kısa bir salt okunur durumunun dışında, taşıma tamamlandıktan sonra da var olan bağlantılar ve izinler beklendiği gibi çalışmaya devam eder.
+OneDrive kullanıcıları, OneDrive'ları farklı bir coğrafi konuma taşınırsa en düşük kesintiyi fark etmelidir. Taşıma sırasında kısa bir salt okunur durum dışında, taşıma tamamlandıktan sonra mevcut bağlantılar ve izinler beklendiği gibi çalışmaya devam eder.
 
-### <a name="users-onedrive"></a>Kullanıcının OneDrive
+### <a name="users-onedrive"></a>Kullanıcının OneDrive'ı
 
-Taşıma devam ederken kullanıcının OneDrive salt okunur olarak ayarlanır. Taşıma tamamlandıktan sonra OneDrive, kullanıcı Microsoft 365 uygulama başlatıcısında veya web tarayıcısında OneDrive coğrafi konumdaki Microsoft 365 kullanıcısına yönlendirildi.
+Taşıma işlemi devam ederken kullanıcının OneDrive'ı salt okunur olarak ayarlanır. Taşıma tamamlandıktan sonra, kullanıcı OneDrive'a Microsoft 365 uygulama başlatıcısına veya bir web tarayıcısına gittiği zaman yeni coğrafi konumda onedrive'larına yönlendirilir.
 
-### <a name="permissions-on-onedrive-content"></a>İçerik OneDrive izinleri
+### <a name="permissions-on-onedrive-content"></a>OneDrive içeriğindeki izinler
 
-İçerik üzerinde izin OneDrive kullanıcılar, taşıma sırasında ve tamamlandıktan sonra içeriğe erişmeye devam eder.
+OneDrive içeriğine izinleri olan kullanıcılar, taşıma sırasında ve tamamlandıktan sonra içeriğe erişmeye devam eder.
 
 ### <a name="onedrive-sync-app"></a>OneDrive eşitleme uygulaması
 
-Mobil OneDrive eşitleme, coğrafi taşıma tamamlandıktan sonra eşitlemeyi otomatik olarak algılar OneDrive yeni OneDrive konuma sorunsuz bir şekilde aktaracaktır. Kullanıcının yeniden oturum açması veya başka bir işlem yapma ihtiyacı olmaz.  (Eşitleme uygulamasının 17.3.6943.0625 veya daha sonraki bir sürümü gereklidir.)
+OneDrive eşitleme uygulaması, OneDrive coğrafi taşıma işlemi tamamlandıktan sonra eşitlemeyi otomatik olarak algılar ve yeni OneDrive konumuna sorunsuz bir şekilde aktarır. Kullanıcının yeniden oturum açması veya başka bir işlem gerçekleştirmesi gerekmez.  (Eşitleme uygulamasının sürüm 17.3.6943.0625 veya üzeri gereklidir.)
 
-Kullanıcı coğrafi olarak taşıma devam ederken OneDrive dosyayı güncellerse, eşitleme uygulaması taşıma devam ederken dosya karşıya yüklemelerinin beklemede olduğunu bildirecek.
+OneDrive coğrafi taşıma işlemi devam ederken bir kullanıcı dosyayı güncelleştirirse, eşitleme uygulaması taşıma işlemi devam ederken dosya yüklemelerinin beklemede olduğunu bildirir.
 
 ### <a name="sharing-links"></a>Paylaşım bağlantıları
 
-Coğrafi OneDrive tamamlandığında, taşınan dosyaların var olan paylaşılan bağlantıları otomatik olarak yeni coğrafi konuma yeniden yönlendirilir.
+OneDrive coğrafi taşıma tamamlandıktan sonra, taşınan dosyaların mevcut paylaşılan bağlantıları otomatik olarak yeni coğrafi konuma yönlendirilir.
 
 ### <a name="onenote-experience"></a>OneNote Deneyimi
 
-OneNote win32 istemcisi ve UWP (Evrensel) Uygulaması coğrafi taşıma tamamlandıktan sonra not defterlerini otomatik olarak yeni OneDrive konuma otomatik olarak OneDrive eşitler. Kullanıcının yeniden oturum açması veya başka bir işlem yapma ihtiyacı olmaz. Kullanıcının tek görünür göstergesi, coğrafi olarak taşıma devam eden bir OneDrive not defteri eşitlemenin başarısız olmasıdır. Bu deneyim, aşağıdaki istemci OneNote kullanılabilir:
+OneDrive coğrafi taşıma tamamlandıktan sonra OneNote win32 istemcisi ve UWP (Evrensel) Uygulaması not defterlerini otomatik olarak algılar ve yeni OneDrive konumuyla sorunsuz bir şekilde eşitler. Kullanıcının yeniden oturum açması veya başka bir işlem gerçekleştirmesi gerekmez. Kullanıcıya görünen tek gösterge, OneDrive coğrafi taşıma işlemi devam ederken not defteri eşitlemesinin başarısız olmasıdır. Bu deneyim aşağıdaki OneNote istemci sürümlerinde kullanılabilir:
 
-- OneNote win32 – Sürüm 16.0.8326.2096 (ve sonrası)
-- OneNote UWP – Sürüm 16.0.8431.1006 (ve sonrası)
-- OneNote Uygulaması – Sürüm 16.0.8431.1011 (ve sonrası)
+- OneNote win32 – Sürüm 16.0.8326.2096 (ve üzeri)
+- OneNote UWP – Sürüm 16.0.8431.1006 (ve üzeri)
+- OneNote Mobil Uygulaması – Sürüm 16.0.8431.1011 (ve üzeri)
 
 ### <a name="teams-app"></a>Teams uygulaması
 
-Coğrafi OneDrive tamamlandığında, kullanıcılar mobil uygulamada OneDrive dosyalarına Teams sahip olur. Buna ek olarak, Teams coğrafi taşıma öncesinde sohbet OneDrive dosyaları taşıma işlemi tamamlandıktan sonra da çalışmaya devam edecektir.
+OneDrive coğrafi taşıma tamamlandıktan sonra kullanıcılar Teams uygulamasından OneDrive dosyalarına erişebilir. Ayrıca, coğrafi taşıma öncesinde OneDrive'larından Teams sohbeti aracılığıyla paylaşılan dosyalar taşıma tamamlandıktan sonra çalışmaya devam eder.
 
-### <a name="onedrive-mobile-app-ios"></a>OneDrive Uygulaması (iOS)
+### <a name="onedrive-mobile-app-ios"></a>OneDrive Mobil Uygulaması (iOS)
 
-Coğrafi OneDrive tamamlandıktan sonra, kullanıcının yeni mobil konuma eşitlemek için iOS Mobil Uygulamasında oturum açması ve yeniden OneDrive gerekir.
+OneDrive coğrafi olarak taşıma tamamlandıktan sonra, kullanıcının yeni OneDrive konumuyla eşitlemek için iOS Mobil Uygulamasında oturumu kapatıp yeniden oturum açması gerekir.
 
-### <a name="existing-followed-groups-and-sites"></a>Var olan takip edilen gruplar ve siteler
+### <a name="existing-followed-groups-and-sites"></a>Mevcut takip edilen gruplar ve siteler
 
-Takip edilen siteler ve gruplar coğrafi konumlarından bağımsız OneDrive kullanıcının posta bilgisinde gösterilemez. Başka bir coğrafi konumda barındırılan siteler ve gruplar ayrı bir sekmede açılır.
+Takip edilen siteler ve gruplar, coğrafi konumlarından bağımsız olarak kullanıcının OneDrive'ında gösterilir. Başka bir coğrafi konumda barındırılan siteler ve gruplar ayrı bir sekmede açılır.
 
-### <a name="delve-geo-url-updates"></a>Delve URL güncelleştirmelerini güncelleştirme
+### <a name="delve-geo-url-updates"></a>Delve Geo URL güncelleştirmeleri
 
-Kullanıcılar, PDL'lerine Delve coğrafi olarak GÖNDERILEN ONEDRIVE yeni coğrafi bölgeye taşındıktan sonra.
+Kullanıcılar, PDL'lerine karşılık gelen Delve coğrafi konumuna yalnızca OneDrive'ları yeni coğrafi bölgeye taşındıktan sonra gönderilir.

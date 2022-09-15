@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 2/14/2018
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Bu makalede, Office 365 için Azure ExpressRoute hakkında bilgi edinecek ve ağ planlaması için nasıl kullanacağınızı öğreneceksiniz.
-ms.openlocfilehash: 59fa69a58bedf6babf2cf277a627d42293487ab1
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: aa5890a6a735f3418a90ae7234173eb504ce16d7
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042924"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67703422"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365 için ExpressRoute ile Ağ planlaması
 
