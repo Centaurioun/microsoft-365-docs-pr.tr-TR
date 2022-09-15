@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - ransomware
@@ -18,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, HumOR, gasp saldırısı, fidye yazılımı saldırısı, şifreleme, kriptoviroloji, sıfır güven
 description: Microsoft 365 kaynaklarınızı fidye yazılımı saldırılarına karşı koruma adımlarını uygulayın.
-ms.openlocfilehash: 1552e6d71101a74abbd36ac4543eaff1006663b5
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 04cce5e1001e456a1e590e5abcc7cef8138f0084
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67575427"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730934"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Microsoft 365 kiracınız için fidye yazılımı koruması dağıtın
 

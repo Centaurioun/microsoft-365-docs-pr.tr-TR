@@ -19,18 +19,20 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4810f76d2d0fc7446c15c3c52fd6577e763918fe
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 13b5d83a5b5993e90938a774dff3063bc1da5f86
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686407"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731132"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>İletişim uyumluluk raporlarını ve denetimlerini kullanma
 
 ## <a name="reports"></a>Raporlar
 
-Yeni **Raporlar** panosu, tüm iletişim uyumluluk raporlarını görüntülemek için merkezi konumdur. Rapor pencere öğeleri, iletişim uyumluluk etkinliklerinin durumunun genel değerlendirmesi için en yaygın olarak gereken içgörülerin hızlı bir görünümünü sağlar. Rapor pencere öğelerinde yer alan bilgiler dışarı aktarılamaz. Ayrıntılı raporlar, belirli iletişim uyumluluk alanlarıyla ilgili ayrıntılı bilgiler sağlar ve gözden geçirirken bilgileri filtreleme, gruplandırma, sıralama ve dışarı aktarma olanağı sunar. 
+**Raporlar** panosu, tüm iletişim uyumluluk raporlarını görüntülemek için merkezi konumdur. Raporları görüntülemek ve yönetmek için kullanıcıların *İletişim Uyumluluğu Görüntüleyicileri* rol grubuna atanması gerekir.
+
+Rapor pencere öğeleri, iletişim uyumluluk etkinliklerinin durumunun genel değerlendirmesi için en yaygın olarak gereken içgörülerin hızlı bir görünümünü sağlar. Rapor pencere öğelerinde yer alan bilgiler dışarı aktarılamaz. Ayrıntılı raporlar, belirli iletişim uyumluluk alanlarıyla ilgili ayrıntılı bilgiler sağlar ve gözden geçirirken bilgileri filtreleme, gruplandırma, sıralama ve dışarı aktarma olanağı sunar.
 
 Tarih aralığı filtresi için, olayların tarih ve saati Eşgüdümlü Evrensel Saat (UTC) içinde listelenir. Raporlar için iletileri filtrelerken, istekte bulunan kullanıcının yerel tarih/saatinin UTC'ye dönüştürülmesi temelinde sonuçları belirler. Örneğin, ABD Pasifik Yaz Saati (PDT) içindeki bir kullanıcı 30.08.2021 ile 31.08.2021 saat 00:00 arasında bir raporu filtrelerse, rapor 30.08.2021 07:00 UTC ile 31.08.2021 07:00 UTC arası iletileri içerir. Saat 00:00'da filtreleme yaparken aynı kullanıcı ABD Doğu Yaz Saati'nde (EDT) bulunuyorsa, rapor 30.08.2021 04:00 UTC ile 31.08.2021 04:00 UTC arası iletileri içerir.
 
@@ -89,7 +91,7 @@ Tüm ayrıntılı raporların rapor ayrıntılarını içeren bir .csv dosyası 
 
 - **Konum başına hassas bilgi türü** (önizleme): Hassas bilgi türlerinin ve iletişim uyumluluk ilkelerindeki ilişkili kaynakların algılanması hakkındaki bilgileri gözden geçirin ve dışarı aktarın. Kuruluşunuzda yapılandırılan kaynaklarda hassas bilgi türü örneklerinin toplamını ve belirli dökümünü içerir. Her üçüncü taraf kaynağın değerleri .csv dosyasındaki ayrı sütunlarda görüntülenir. Örnekler şunlardır:
 
-    - **E-posta**: Exchange e-posta iletilerinde hassas bilgi türleri algılandı.
+    - **Email**: Exchange e-posta iletilerinde hassas bilgi türleri algılandı.
     - **Teams**: Microsoft Teams kanallarında ve sohbet iletilerinde hassas bilgi türleri algılandı.
     - **Yammer**: Yammer gelen kutularında, gönderilerinde, sohbetlerde ve yanıtlarda hassas bilgi türleri algılandı.
     - **Üçüncü taraf kaynaklar**: Kuruluşunuzda yapılandırılan üçüncü taraf bağlayıcılarla ilişkili etkinlikler için hassas bilgi türleri algılandı. Rapordaki belirli bir hassas bilgi türünün üçüncü taraf kaynaklarının dökümünü görüntülemek için farenizi Üçüncü taraf kaynak sütunundaki hassas bilgi türünün değerinin üzerine getirin.

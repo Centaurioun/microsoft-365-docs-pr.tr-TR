@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - m365solution-collabgovernance
@@ -19,12 +20,12 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: Grup üyelerinin Microsoft 365 grubu olarak e-posta göndermesine veya microsoft 365 grubu adına e-posta göndermesine nasıl izin vereceğinizi öğrenin.
-ms.openlocfilehash: 73d5e8ea27294b78b6e4c626ac2adba15f000967
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d6e334a2fffcc1be760ccef045a50d1e9b154bc4
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681221"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67728439"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Üyelerin grup adına göndermesine veya göndermesine izin verme
 

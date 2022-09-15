@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için güvenlik risklerini görüntülemeyi öğrenin.
-ms.openlocfilehash: cc50842f303d300f4e5e60f2c661d0edb8cf2ef4
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 81a5b09f28d00bcde0915534e604429954774319
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/15/2022
-ms.locfileid: "67709161"
+ms.locfileid: "67731110"
 ---
 # <a name="overview-of-the-device-security-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse'da Cihaz güvenliği sayfasına genel bakış
 

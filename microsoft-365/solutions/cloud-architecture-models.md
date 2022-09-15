@@ -9,16 +9,17 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: cda43236f04c7a84342d85e56798cc2ecb56c61c
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 2cbba71b19105b0587609ec835d72be889100ee0
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576109"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731650"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>BT mimarları için Microsoft bulutu çizimleri
 

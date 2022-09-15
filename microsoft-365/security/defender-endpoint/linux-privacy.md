@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: bd81c53bd392e161325fa3bc085f97ae15a493d0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6eea1b25da4a81f17ee1f22322f69dcd5088548d
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704600"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730539"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender için gizlilik
 
@@ -179,7 +179,7 @@ Tanılama günlükleri yalnızca geri bildirim gönderme özelliğinin bir parç
 
 - */var/log/microsoft/mdatp* altındaki tüm dosyalar
 - Linux üzerinde Uç Nokta için Defender tarafından oluşturulan ve kullanılan */etc/opt/microsoft/mdatp* altındaki dosyaların alt kümesi
-- */var/log/microsoft_mdatp_\*.log* altında ürün yükleme ve kaldırma günlükleri
+- /var/log/microsoft/mdatp/*.log altında ürün yükleme ve kaldırma günlükleri
 
 ### <a name="optional-diagnostic-data"></a>İsteğe bağlı tanılama verileri
 

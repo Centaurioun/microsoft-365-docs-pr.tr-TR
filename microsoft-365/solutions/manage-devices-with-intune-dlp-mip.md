@@ -12,6 +12,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - endpoint dlp
 - data loss prevention
 - dlp policies
@@ -22,12 +23,12 @@ ms.collection:
 ms.custom: ''
 keywords: ''
 description: Kuruluşunuz için DLP ilkeleri oluşturmak üzere bilgi koruma ve idare ekibinizle birlikte çalışarak Uç Nokta DLP'sini uygulayın.
-ms.openlocfilehash: 5a20f7e128890d75ec051667c41d3251639fadab
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: dcfb37cd1039495da811cb7b123522bdc28305a8
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585476"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731474"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>7. Adım. Bilgi koruma yetenekleriyle veri kaybı önleme (DLP) uygulayın
 

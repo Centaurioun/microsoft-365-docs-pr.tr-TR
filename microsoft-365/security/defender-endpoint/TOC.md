@@ -299,7 +299,6 @@
 ###### [Web tehditlerine yanıt verin](web-protection-response.md)
 ##### [Web içeriği filtreleme](web-content-filtering.md)
 
-
 ### Yeni nesil koruma
 #### [Yeni nesil korumaya genel bakış](next-generation-protection.md)
 ##### [Microsoft Defender Virüsten Koruma’ya Genel Bakış](microsoft-defender-antivirus-windows.md)
@@ -379,7 +378,9 @@
 ##### [Sorun giderme modu senaryoları](troubleshooting-mode-scenarios.md)
 
 #### Microsoft Defender Virüsten Koruma için tanılama ve performans
-##### [Cihaz durumu ve uyumluluk raporları](machine-reports.md)
+##### [Cihaz durumu raporları](device-health-reports.md)
+###### [Microsoft Defender Virüsten Koruma sistem durumu raporu](device-health-microsoft-defender-antivirus-health.md)
+###### [Algılayıcı durumu ve işletim sistemi raporu](device-health-sensor-health-os.md)
 ##### [Gerçek zamanlı korumayla ilgili performans sorunlarını giderin](troubleshoot-performance-issues.md) 
 ##### [Güncelleştirme Uyumluluğunda Microsoft Defender Virüsten Koruma raporlama sorunlarını giderin](troubleshoot-reporting.md)
 ##### [Microsoft Defender Antivirus'ün tanılama verilerini toplayın](collect-diagnostic-data.md)
@@ -529,8 +530,8 @@
 ####### [Yazılım güvenlik açığı değerlendirmesini dışarı aktar](get-assessment-software-vulnerabilities.md)
 
 ###### [Tarayıcı uzantıları]()
-####### [Tarayıcı kapsamlarını dışarı aktarma değerlendirmesi](get-assessment-browser-extensions.md)
-####### [Tarayıcı kapsamları izin bilgilerini alma](get-browser-extensions-permission-info.md)
+####### [Tarayıcı uzantılarını dışarı aktarma değerlendirmesi](get-assessment-browser-extensions.md)
+####### [Tarayıcı uzantıları izin bilgilerini alma](get-browser-extensions-permission-info.md)
 
 ###### [Otomatik araştırma]()
 ####### [Araştırma yöntemleri ve özellikleri](investigation.md)

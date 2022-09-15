@@ -9,17 +9,18 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-identity-device-management
 - M365-security-compliance
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 23a25385d437551fa85599e9fe47c7ee7fc902fd
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 123f05cd89dbfc3c0e751b78695350cd41c1a2a9
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586126"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730890"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>Kimlik ve ötesine—Mimarlardan birinin bakış açısı
 

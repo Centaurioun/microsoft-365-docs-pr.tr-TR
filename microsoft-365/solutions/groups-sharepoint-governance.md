@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom:
@@ -16,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Microsoft 365 Grupları ve SharePoint arasındaki ayarlar etkileşimleri hakkında bilgi edinin
-ms.openlocfilehash: 8b17a868c31273a1e2ec4c5c8b8fbda8a59ef273
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 2e29132b59b0b63917a87915185cacaacc01bbad
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579611"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67727644"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Microsoft 365 Grupları ile SharePoint arasındaki etkileşimleri ayarlar
 

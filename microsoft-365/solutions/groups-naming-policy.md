@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Adm_O365
 - m365solution-collabgovernance
@@ -18,12 +19,12 @@ search.appverid:
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
 description: Microsoft 365 grupları için adlandırma ilkesi oluşturmayı öğrenin.
-ms.openlocfilehash: 4311f58ab40760975441b31e273d2ce6636214e9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 00a1a6cae02b6ddbff784f0151cee4257818841e
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686327"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731276"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 grupları adlandırma ilkesi
 

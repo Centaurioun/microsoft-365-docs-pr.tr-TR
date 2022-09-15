@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
@@ -18,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Kişisel veri olaylarını izlemek ve yanıtlamak için denetim ve uyarı ilkelerini ve veri sahibi isteklerini kullanın.
-ms.openlocfilehash: f86020a26842fed07e46cec70357cd3c7ade340b
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: a3e80c01154258fdd322b488cbf57637b817ac47
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581954"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730275"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Kuruluşunuzdaki veri gizliliği olaylarını izleme ve yanıtlama
 

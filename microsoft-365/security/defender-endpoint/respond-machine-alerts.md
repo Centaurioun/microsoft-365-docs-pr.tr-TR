@@ -1,6 +1,6 @@
 ---
 title: Uç Nokta için Microsoft Defender'da bir cihazda yanıt eylemleri gerçekleştirme
-description: Cihazlarda yalıtma, araştırma paketi toplama, etiketleri yönetme, av taraması çalıştırma ve uygulama yürütmeyi kısıtlama gibi yanıt eylemleri gerçekleştirin.
+description: Bir cihazda cihazları yalıtma, araştırma paketi toplama, etiketleri yönetme, av taraması çalıştırma ve uygulama yürütmeyi kısıtlama gibi yanıt eylemleri gerçekleştirin.
 keywords: yanıt verme, yalıtma, cihazı yalıtma, araştırma paketini toplama, işlem merkezi, etiketleri kısıtlama, yönetme, av tarama, uygulamayı kısıtlama
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1fef5cebe54ce739604ce0084723b67a7504877b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 2f5ef49d9b8fd1d558fb0b646295615d9352b915
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694049"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67728680"
 ---
 # <a name="take-response-actions-on-a-device"></a>Cihazda yanıt eylemleri gerçekleştirin
 
@@ -126,7 +126,7 @@ Paket aşağıdaki klasörleri içerir:
 |Zamanlanmış görevler|Otomatik olarak çalışacak şekilde ayarlanmış şüpheli kodu aramak üzere seçilen bir cihazda otomatik olarak gerçekleştirilen yordamları tanımlamak için kullanılabilen zamanlanmış görevlerin listelendiği .CSV bir dosya içerir.|
 |Güvenlik olay günlüğü|Oturum açma veya oturumu kapatma etkinliğinin kayıtlarını veya sistemin denetim ilkesi tarafından belirtilen güvenlikle ilgili diğer olayları içeren güvenlik olay günlüğünü içerir. <p><div class="alert"><b>NOT:</b> Olay görüntüleyicisini kullanarak olay günlüğü dosyasını açın.</div>|
 |Hizmetleri|Hizmetleri ve durumlarını listeleyen bir .CSV dosyası içerir.|
-|Windows Server İleti Bloğu (SMB) oturumları|Dosyalara, yazıcılara ve seri bağlantı noktalarına paylaşılan erişimi ve ağdaki düğümler arasındaki çeşitli iletişimleri listeler. Bu, veri sızdırmayı veya yanal hareketi tanımlamaya yardımcı olabilir. <p> SMBInboundSessions ve SMBOutboundSession dosyalarını içerir. <p> <div class="alert"><b>NOT:</b> Hiçbir oturum (gelen veya giden) yoksa, hiçbir SMB oturumu bulunamadığını belirten bir metin dosyası alırsınız.</div>|
+|Windows Server İleti Bloğu (SMB) oturumları|Dosyalara, yazıcılara ve seri bağlantı noktalarına paylaşılan erişimi ve ağdaki düğümler arasındaki çeşitli iletişimleri listeler. Bu, veri sızdırmayı veya yanal hareketi tanımlamaya yardımcı olabilir. <p> SMBInboundSessions ve SMBOutboundSession dosyalarını içerir. <p> <div class="alert"><b>NOT:</b> Hiçbir oturum (gelen veya giden) yoksa, hiç SMB oturumu bulunamadığını bildiren bir metin dosyası alırsınız.</div>|
 |Sistem Bilgileri|İşletim sistemi sürümü ve ağ kartları gibi sistem bilgilerini listeleyen bir SystemInformation.txt dosyası içerir.|
 |Geçici Dizinler|Sistemdeki her kullanıcı için %Temp% içinde bulunan dosyaları listeleyen bir dizi metin dosyası içerir. <p> Bu, saldırganın sisteme düşürmüş olabileceği şüpheli dosyaları izlemeye yardımcı olabilir. <p> <div class="alert"><b>NOT:</b> Dosya şu iletiyi içeriyorsa: "Sistem belirtilen yolu bulamıyor", bu kullanıcı için geçici dizin olmadığı anlamına gelir ve bunun nedeni kullanıcının sistemde oturum açmamış olması olabilir.</div>|
 |Kullanıcılar ve Gruplar|Her birinin bir grubu ve üyelerini temsil eden dosyaların listesini sağlar.|
@@ -185,7 +185,7 @@ Bir uygulama kısıtlandığında, kullanıcıya bir uygulamanın çalışmasın
 Saldırının önem derecesine ve cihazın duyarlılığına bağlı olarak, cihazı ağdan yalıtmak isteyebilirsiniz. Bu eylem, saldırganın güvenliği aşılmış cihazı denetlemesini ve veri sızdırma ve yanal hareket gibi başka etkinlikler gerçekleştirmesini önlemeye yardımcı olabilir.
 
 > [!IMPORTANT]
-> - Cihazları ağdan yalıtmak şu anda macOS veya Linux çalıştıran cihazlar için desteklenmiyor. Eylemi çalıştırmak için canlı yanıtı kullanın. Canlı yanıt hakkında daha fazla bilgi için bkz [. Canlı yanıt kullanarak cihazlarda varlıkları araştırma](live-response.md).
+> - Cihazları ağdan yalıtmak şu anda macOS veya Linux çalıştıran cihazlar için desteklenmiyor. macOS için eylemi çalıştırmak için canlı yanıtı kullanın. Canlı yanıt hakkında daha fazla bilgi için bkz [. Canlı yanıt kullanarak cihazlarda varlıkları araştırma](live-response.md).
 > - Windows 11, Windows 10, sürüm 1703 veya üzeri, Windows Server 2022, Windows Server 2019 ve Windows Server 2016 çalıştıran cihazlar için tam yalıtım kullanılabilir.
 > - Seçmeli yalıtım, Windows 10, sürüm 1709 veya üzeri ve Windows 11 çalıştıran cihazlar için kullanılabilir.
 > - Bir cihazı yalıtırken yalnızca belirli işlemlere ve hedeflere izin verilir. Bu nedenle, tam VPN tünelinin arkasındaki cihazlar, cihaz yalıtıldıktan sonra Uç Nokta için Microsoft Defender bulut hizmetine erişemez. Uç Nokta için Microsoft Defender ve Microsoft Defender Virüsten Koruma bulut tabanlı korumayla ilgili trafik için bölünmüş tünel VPN kullanmanızı öneririz.

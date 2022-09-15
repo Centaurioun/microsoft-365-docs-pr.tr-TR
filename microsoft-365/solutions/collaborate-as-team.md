@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.collection:
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
@@ -21,12 +22,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Teams'de konuklarla görev, konuşma ve belge işbirliği için bir ekip ayarlamak için gereken Microsoft 365 yapılandırma adımları hakkında bilgi edinin.
-ms.openlocfilehash: 0034c401f58aa9782c477d25ea75b588fdf15dbb
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: aacf03129f5b383bddae5424830e524d0f2058cb
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67577992"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730341"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Ekipteki konuklarla işbirliği yapma
 

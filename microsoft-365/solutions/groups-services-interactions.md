@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom:
@@ -16,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Grup hizmetleri etkileşimleri
-ms.openlocfilehash: ab1bda8b3065518736468a6603e9356e9a2d0d25
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: d3091027c2c5850129b351507a2a09db0a999c58
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585762"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731022"
 ---
 # <a name="groups-services-interactions"></a>Grup hizmetleri etkileşimleri
 

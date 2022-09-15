@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
@@ -16,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Microsoft 365 kiracılarınız için Windows cihazlarınızı, Office istemci uygulamalarınızı ve Office sunucularınızı geçirin.
-ms.openlocfilehash: 4ab57aa0ca1a3abae7d7d189be0a11824e5b2511
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: b0c08bb17edba7e19639c48829724457643b02cb
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585058"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730781"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Adım 4. Kurumsal kiracılar için Microsoft 365 kiracılarınız için geçiş
 

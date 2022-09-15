@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 2e9fae2aa286204c51fdb485b8dd1dccac765110
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 11520c0ef4e565065e41d91bdfb300069618b83c
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689239"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67727989"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de tehdit koruma raporu
 
@@ -91,4 +91,4 @@ Belirli özniteliklere sahip uyarıları dahil etmek veya hariç tutmak için sa
 
 ## <a name="related-topic"></a>İlgili konu
 
-- [Cihaz durumu ve uyumluluk raporu](machine-reports.md)
+- [Cihaz durumu ve uyumluluk raporu](device-health-reports.md)

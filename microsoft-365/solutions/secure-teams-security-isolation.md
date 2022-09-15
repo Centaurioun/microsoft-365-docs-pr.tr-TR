@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-3tiersprotection
@@ -18,12 +19,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Güvenlik için benzersiz duyarlılık etiketine sahip bir ekip oluşturmayı öğrenin.
-ms.openlocfilehash: 4596f8b5612472108a68466635a975a6761bf28a
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: f8e6ba02d21c380a21efe0f3551d3a1ad17c9e9a
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582526"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730825"
 ---
 # <a name="configure-a-team-with-security-isolation-by-using-a-unique-sensitivity-label"></a>Benzersiz bir duyarlılık etiketi kullanarak ekibi güvenlik yalıtımıyla yapılandırma
 

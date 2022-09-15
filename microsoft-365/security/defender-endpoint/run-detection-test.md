@@ -9,6 +9,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 09/13/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -16,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 49be12c14f04cc441165aff500479760cdc24c02
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 37d02195cc3acf9dfbdcae55ceb9534b6d68d722
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586412"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67727980"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Yeni eklenen bir Uç Nokta için Microsoft Defender cihazında algılama testi çalıştırma
 
@@ -49,8 +50,7 @@ Bir cihazın hizmete başarıyla eklendiğinden emin olmak veya doğrulamak, da�
 
 Uç Nokta için Defender hizmetine düzgün bir şekilde raporlandığını doğrulamak için yeni eklenen bir cihazda aşağıdaki PowerShell betiğini çalıştırın.
 
-1. Bir klasör oluşturun: 'C:\test-MDATP-test'.
-2. Cihazda yükseltilmiş bir komut satırı istemi açın ve betiği çalıştırın:
+1. Cihazda yükseltilmiş bir komut satırı istemi açın ve betiği çalıştırın:
 
    1. **Başlangıç'a** gidin ve **cmd** yazın.
 
@@ -58,7 +58,7 @@ Uç Nokta için Defender hizmetine düzgün bir şekilde raporlandığını doğ
 
       :::image type="content" source="images/run-as-admin.png" alt-text="Yönetici olarak çalıştır'ı işaret eden Başlat menüsü" lightbox="images/run-as-admin.png":::
     
-3. İstemde aşağıdaki komutu kopyalayıp çalıştırın:
+2. İstemde aşağıdaki komutu kopyalayıp çalıştırın:
 
    ```powershell
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'

@@ -20,16 +20,21 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1cf97b9d573ee5cdcd0c2c4ddcc5aba66a5f70bc
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 1dffcf448bf3273cc845aae269a29ab3653a5bea
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710729"
+ms.locfileid: "67728154"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>İletişim uyumluluğu uyarılarını araştırma ve çözümleme
 
-[İletişim uyumluluk ilkelerinizi](/microsoft-365/compliance/communication-compliance-policies) yapılandırdıktan sonra, [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) ilke koşullarınızla eşleşen ileti sorunları için uyarılar almaya başlarsınız. Uyarı sorunlarını araştırmak ve düzeltmek için buradaki iş akışı yönergelerini izleyin.
+[İletişim uyumluluk ilkelerinizi](/microsoft-365/compliance/communication-compliance-policies) yapılandırdıktan sonra, [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) ilke koşullarınızla eşleşen ileti sorunları için uyarılar almaya başlarsınız. Uyarıları görüntülemek ve üzerinde işlem yapmak için kullanıcıların aşağıdaki izinlere sahip olması gerekir:
+
+- *İletişim Uyumluluk Analistlerine* veya *İletişim Uyumluluğu Araştırmacıları* rol grubuna atanmalıdır
+- Uyarıyla ilişkili ilkede gözden geçiren olarak atanmalıdır
+
+Gerekli izinlere sahip olduktan sonra, uyarı sorunlarını araştırmak ve düzeltmek için buradaki iş akışı yönergelerini izleyin.
 
 ## <a name="investigate-alerts"></a>Uyarıları araştırın
 

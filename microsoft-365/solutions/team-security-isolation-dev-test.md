@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
@@ -18,12 +19,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkSPO
 description: Çalışanlarınızın her yerden ve her zaman uzaktan çalışmasını sağlayan güvenlik ve altyapıyı yapılandırın.
-ms.openlocfilehash: 261680912a0204d18b28db5c8eff70f2a23e99a9
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: d38a9459def8603322d32abc46b3802172fb811d
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67582944"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731342"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Geliştirme/test ortamında bir ekibi güvenlik yalıtımıyla yapılandırma
 

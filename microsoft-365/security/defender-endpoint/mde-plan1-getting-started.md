@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: 77dca20a3168033df520a7735bcc9037d315790e
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 9e046c877eab1c422d660ba24b7ec2da45c2006a
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67516576"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731088"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Uç Nokta için Microsoft Defender Plan 1'i kullanmaya başlama
 
@@ -75,7 +75,7 @@ Ekranın sol tarafındaki gezinti çubuğu olaylar, uyarılar, İşlem merkezi, 
 |  **Bitiş noktası** >  **Yapılandırma & temelleri** | **Güvenlik temellerini** ve **Yapılandırma yönetimini** gösterecek şekilde genişletir. |
 |  **Bitiş noktası** >  **Yapılandırma & temelleri** >  **Güvenlik temelleri** | Güvenlik temelleri, önerilen güvenlik ayarlarını verimli ve etkili bir şekilde uygulamanıza yardımcı olabilecek önceden yapılandırılmış ilkeler ve ayar gruplarıdır. Temeller, endüstrinin en iyi yöntemlerini temel alan ayarları içerir. Varsayılan ayarları tutabilir veya temellerinizi kuruluşunuzun gereksinimlerine uyacak şekilde özelleştirebilirsiniz. <br/><br/> Daha fazla bilgi için bkz. [Intune'da Windows 10 cihazları yapılandırmak için güvenlik temellerini kullanma](/mem/intune/protect/security-baselines). |
 |  **Bitiş noktası** >  **Yapılandırma & temelleri** >  **Yapılandırma yönetimi** | Eklenen cihazlar hakkındaki bilgileri görüntüleyebileceğiniz ve daha fazla cihaz ekleme adımlarını uygulayabileceğiniz **Cihaz yapılandırma yönetimi** sayfasına gider. |
-| **Raporlar** | [Tehdit koruması raporunuz](threat-protection-reports.md), [Cihaz durumu ve uyumluluk raporunuz ve](machine-reports.md) [Web koruma raporunuz](web-protection-overview.md) gibi raporlarınıza gider. |
+| **Raporlar** | [Tehdit koruması raporunuz](threat-protection-reports.md), [Cihaz durumu ve uyumluluk raporunuz ve](device-health-reports.md) [Web koruma](web-protection-overview.md) raporunuz gibi raporlarınıza gider. |
 | **Hizmet Durumu** | **Hizmet durumu** ve **İleti merkezi** bağlantılarını içerir.  |
 | **Sağlık** >  **Hizmet durumu** | Microsoft 365 yönetim merkezi Hizmet durumu sayfasına gider. Bu sayfa, kuruluşunuzun aboneliklerinde kullanılabilen tüm hizmetler genelinde sistem durumunu görüntülemenizi sağlar.   |
 | **Sağlık** >  **İleti merkezi** | Microsoft 365 yönetim merkezi İleti merkezine gider. İleti merkezi planlı değişiklikler hakkında bilgi sağlar. Her ileti, gelenleri, kullanıcıları nasıl etkileyebileceğini ve değişikliklerin nasıl yönetileceğini açıklar. |  
@@ -158,7 +158,7 @@ Cihaz durumu raporunuzla erişmek için Microsoft 365 Defender portalında **Rap
 Her listedeki tüm görünümleri görmek için aşağı kaydırın. Varsayılan olarak, **Cihaz eğilimleri sütunundaki görünümler** son 30 güne ilişkin verileri görüntüler, ancak görünümü son üç aya, son altı aya veya özel bir zaman aralığına (180 güne kadar) ilişkin verileri görüntüleyecek şekilde değiştirebilirsiniz. **Cihaz özet** görünümleri, önceki iş gününün anlık görüntüleridir.
 
 > [!TIP]
-> Daha fazla bilgi için bkz [. Cihaz durumu](machine-reports.md).
+> Daha fazla bilgi için bkz [. Cihaz durumu](device-health-reports.md).
 
 ### <a name="web-protection-report"></a>Web koruma raporu
 

@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom:
@@ -16,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: İşbirliği idare planınızı oluşturmayı öğrenin
-ms.openlocfilehash: 2844239556a4ef9e07bbcd00dedc7a11132a4a5f
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 82b1d58fe11e96a305b5658024ed61a372841636
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583054"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67727754"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>İşbirliği idare planınızı oluşturma
 

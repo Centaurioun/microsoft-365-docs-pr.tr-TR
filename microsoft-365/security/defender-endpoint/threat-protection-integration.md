@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: c24b990bacbe1d55aac5d735ad9e98059aecfb33
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0aa33086c1db708d861351a2f4469f9bf3161a1d
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689261"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67727998"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Uç Nokta için Microsoft Defender ve diğer Microsoft çözümleri
 
@@ -39,7 +39,7 @@ Uç Nokta için Microsoft Defender çeşitli Microsoft çözümleriyle doğrudan
 
 ### <a name="microsoft-defender-for-cloud"></a>Bulut için Microsoft Defender
 
-Uç Nokta için Microsoft Defender, Windows Sunucularında uç nokta algılama ve yanıt (EDR) özellikleri de dahil olmak üzere kapsamlı bir sunucu koruma çözümü sağlar.
+Bulut için Microsoft Defender, Windows Server'larda uç nokta algılama ve yanıt (EDR) özellikleri de dahil olmak üzere kapsamlı bir sunucu koruma çözümü sağlar.
 
 ### <a name="microsoft-sentinel"></a>Microsoft Sentinel
 

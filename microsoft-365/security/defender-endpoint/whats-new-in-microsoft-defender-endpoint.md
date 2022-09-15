@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 8930006a4748d090de15ef76c84fd39b8f7527ec
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: fd587baa44a40b7c3543839116bc169a07873efc
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690827"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730231"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender’daki yenilikler
 
@@ -63,8 +63,7 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 
 ## <a name="september-2022"></a>Eylül 2022
 
-- [Cihaz durumu raporlaması genel kullanıma sunuldu](machine-reports.md). <br/>Cihaz durumu raporu, uç noktalarınızın durumu ve güvenliği hakkında üst düzey bilgiler sağlar. Rapor algılayıcı durumunu, virüsten koruma durumunu, işletim sistemi platformlarını, Windows 10 sürümlerini ve Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini gösteren popüler bilgileri içerir.
-- [Sorun giderme modu](enable-troubleshooting-mode.md) artık Windows Server 2012 R2 ve üzeri dahil olmak üzere daha fazla Windows işletim sistemi için kullanılabilir. Gerekli güncelleştirmeler hakkında daha fazla bilgi için lütfen makaleye bakın.
+- [Cihaz durumu raporlaması genel kullanıma sunuldu](device-health-reports.md). <br/>Cihaz durumu raporu, uç noktalarınızın durumu ve güvenliği hakkında bilgi sağlar. Rapor algılayıcı durumunu, virüsten koruma durumunu, işletim sistemi platformlarını, Windows 10 sürümlerini ve Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini gösteren popüler bilgileri içerir.
 
 ## <a name="august-2022"></a>Ağustos 2022
 
@@ -145,7 +144,7 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 
 ## <a name="july-2021"></a>Temmuz 2021
 
-- (Önizleme) [Cihaz durumu ve uyumluluk raporu](machine-reports.md) <br>  Cihaz durumu ve uyumluluk raporu, kuruluşunuzdaki cihazlar hakkında üst düzey bilgiler sağlar.
+- (Önizleme) [Cihaz durumu ve uyumluluk raporu](device-health-reports.md) <br>  Cihaz durumu ve uyumluluk raporu, kuruluşunuzdaki cihazlar hakkında üst düzey bilgiler sağlar.
 
 ## <a name="june-2021"></a>Haziran 2021
 
@@ -159,7 +158,7 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 
 - [Cihaz grubu tanımları](/microsoft-365/security/defender-endpoint/machine-groups) artık her koşul için birden çok değer içerebilir. Tek bir cihaz grubunun tanımına birden çok etiket, cihaz adı ve etki alanı ayarlayabilirsiniz.
 - [Mobil Uygulama yönetimi desteği](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Bu geliştirme, mobil uygulamaları yönetmek için Intune kullanılırken bir kuruluşun yönetilen uygulama içindeki verilerinin Uç Nokta için Microsoft Defender korunmasını sağlar. Mobil uygulama yönetimi hakkında daha fazla bilgi için [bu belgelere bakın](/mem/intune/apps/mam-faq).
-- [Microsoft Tunnel VPN tümleştirmesi](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN özellikleri artık Android için Uç Nokta için Microsoft Defender uygulamasıyla tümleştirilmiştir. Bu birleştirme, kuruluşların tek bir güvenlik uygulamasıyla basitleştirilmiş bir son kullanıcı deneyimi sunabilmesini sağlar. Hem mobil tehdit savunması hem de mobil cihazlarından şirket içi kaynaklara erişim olanağı sunarken, güvenlik ve BT ekipleri de tanıdıkları yönetici deneyimlerini sürdürebiliyor.
+- [Microsoft Tunnel VPN tümleştirmesi](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN özellikleri artık Android için Uç Nokta için Microsoft Defender uygulamasıyla tümleştirilmiştir. Bu birleştirme, kuruluşların tek bir güvenlik uygulamasıyla basitleştirilmiş bir son kullanıcı deneyimi sunabilmesini sağlar. Bu sayede hem mobil tehdit savunması hem de mobil cihazlarından şirket içi kaynaklara erişim olanağı sunarken, güvenlik ve BT ekipleri de tanıdıkları yönetici deneyimlerini sürdürebiliyor.
 - [iOS'ta jailbreak algılama](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> iOS'ta Uç Nokta için Microsoft Defender jailbreak algılama özelliği genel kullanıma sunuldu. Bu, zaten var olan kimlik avı korumasına eklenir.  Daha fazla bilgi için bkz. [Cihaz risk sinyallerine göre Koşullu Erişim İlkesi'ni ayarlama](/microsoft-365/security/defender-endpoint/ios-configure-features).
 
 

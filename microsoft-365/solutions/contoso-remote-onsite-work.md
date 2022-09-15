@@ -10,16 +10,17 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso Corporation'ın COVID-19 pandemisine nasıl yanıt verdiğini ve hibrit çalışma için yazılım yükleme ve güncelleştirme altyapısını nasıl hazırladığını anlayın.
-ms.openlocfilehash: f856113b3e71220bedf06f9b1dd5ea44e422d81d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 557d9b7bbfab2ea6db65fb1e033b190436590346
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691265"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730495"
 ---
 # <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Contoso'nun COVID-19 yanıtı ve hibrit çalışma desteği
 

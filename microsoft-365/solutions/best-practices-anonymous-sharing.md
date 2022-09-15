@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.collection:
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
@@ -19,12 +20,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Bu makalede, kimliği doğrulanmamış kullanıcılarla dosya ve klasör paylaşmaya yönelik en iyi yöntemler hakkında bilgi edineceksiniz.
-ms.openlocfilehash: bf2ae411d4ff396152b8f643455e2e6d82cedf26
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 2eccf02ee2481eb1e44230148aa778d1d43eeb52
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581389"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67731176"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Kimliği doğrulanmamış kullanıcılarla dosya ve klasör paylaşmaya yönelik en iyi yöntemler
 

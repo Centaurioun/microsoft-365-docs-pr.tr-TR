@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 560178688950de7c66a2dcb6093912520a7aed38
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 3867be6d179ee8b014563c898562c3eaeb20546e
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710466"
+ms.locfileid: "67731364"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Kiracılar arası posta kutusu geçişi (önizleme)
 
@@ -387,7 +387,7 @@ Toplantılar taşınır, ancak öğeler kiracılar arası geçiş yaparken Teams
 
 ### <a name="does-the-teams-chat-folder-content-migrate-cross-tenant"></a>Teams sohbet klasörü içeriği kiracılar arası geçiş yapar mı?
 
-Hayır, Teams sohbet klasörü içeriği kiracılar arası geçiş yapmaz. Bu özellik ile bir posta kutusu Kiracılar Arası geçirildiğinde, dava için tutulan e-postalar da dahil olmak üzere tüm e-postalar geçirilir. Geçiş başarılı olduktan sonra kaynak posta kutusu silinir. Bu, geçiş sonrasında hiçbir koşulda (dava veya bekletme saklamadaki posta kutuları dahil) kaynak kiracıda kullanılabilir, bulunabilir veya erişilebilir kaynak posta kutusu olduğu anlamına gelir.
+Hayır, Teams sohbet klasörü içeriği kiracılar arası geçiş yapmaz. Bu özellik ile bir posta kutusu Kiracılar Arası geçirildiğinde, dava için tutulan e-postalar da dahil olmak üzere tüm e-postalar geçirilir. Geçiş başarılı olduktan sonra kaynak posta kutusu silinir. Bu, geçiş sonrasında hiçbir koşulda (dava veya bekletme saklamadaki posta kutuları dahil) kaynak kiracıda kullanılabilir, bulunabilir veya erişilebilir kaynak posta kutusu olduğu anlamına gelir. Şu anda bazı senaryolarda Teams sohbet verilerinin de posta kutusunda tutulmasına rağmen Teams sohbet verilerinin geçirilmemesi sorununu araştırıyoruz. Teams sohbet verilerinin korunması gerekiyorsa, posta kutusunu geçirmek için bu özelliği kullanmayın.
 
 ### <a name="how-can-i-see-just-moves-that-are-cross-tenant-moves-not-my-onboarding-and-off-boarding-moves"></a>Ekleme ve biniş dışı hareketlerimi değil, yalnızca kiracılar arası taşımalar olan taşımaları nasıl görebilirim?
 

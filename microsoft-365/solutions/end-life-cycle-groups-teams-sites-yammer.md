@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom:
@@ -16,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Gruplar, ekipler ve Yammer için yaşam döngüsü sonu seçenekleri.
-ms.openlocfilehash: a5240f0f9e38fe6f4a044ffa782cb7f536db7ffc
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: a3b5ec7a0a15c2bd5dc5e19420adbbd7503dc8dd
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584716"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730163"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Gruplar, ekipler ve Yammer için yaşam döngüsü sonu seçenekleri
 

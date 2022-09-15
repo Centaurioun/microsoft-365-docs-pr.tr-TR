@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.collection:
+- highpri
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
@@ -20,12 +21,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Microsoft 365'te bulunan ve kuruluşunuzun dışındaki kişilerle paylaşımı etkileyebilecek konuk paylaşım ayarları hakkında bilgi edinin.
-ms.openlocfilehash: 6362a1a1aa7c30d1449b8b626b567b45cbaa16bd
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 6451a4ecdd3aec88e6fbd66300c82c0fce267de6
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579544"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67727358"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 konuk paylaşımı ayarları başvurusu
 

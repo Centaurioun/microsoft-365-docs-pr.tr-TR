@@ -13,15 +13,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- highpri
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: "Özet: Contoso'nun yeni bir ürün ve hizmet paketi geliştirmek için çok gizli bir proje için güvenlik yalıtımına sahip bir ekibi nasıl kullandığı."
-ms.openlocfilehash: 83f09050858651634f5c4dc7d2cfbdd374239ba9
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 2afc993245e2ad1a67242855dd658a38de5e628a
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585102"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730671"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation'ın çok gizli projesi için yalıtılmış ekip
 

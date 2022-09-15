@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
@@ -16,12 +17,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Microsoft 365 kiracılarınız için doğru kimlik modelini dağıtın ve güçlü kullanıcı oturum açma işlemleri uygulayın.
-ms.openlocfilehash: 2b4474e657f2e16fe3315e531724e574b3be28ef
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 149b433a78dd163abc5a6a6a4080de81d69a93ce
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579522"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67727622"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>Adım 3. Kurumsal kiracılar için Microsoft 365'inizin kimliği
 

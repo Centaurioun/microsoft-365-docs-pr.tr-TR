@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
@@ -18,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Veri gizliliği düzenlemelerini, ilgili senaryoları, hazır olma durumunuzu ve Microsoft 365 ortamınızdaki hassas bilgi türlerini belirleyin.
-ms.openlocfilehash: a9eb6e975e223014006d34ecea33851c116baab9
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 8ce944c8caee3c89def04d7367efbd4f46bf51e7
+ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585498"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67730803"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Microsoft 365 ile veri gizliliği risklerini değerlendirme ve hassas öğeleri belirleme
 
