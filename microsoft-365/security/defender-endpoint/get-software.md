@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: af7f375160812257598b82ce191e04e4958a3057
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 2395b93c585894d5cc5f0f56b1032b55d4899f7c
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523038"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67695141"
 ---
 # <a name="list-software-inventory-api"></a>Yazılım envanteri API'sini listeleme
 

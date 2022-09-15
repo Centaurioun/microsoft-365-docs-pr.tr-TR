@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 36648d50033cb00893e9f973641f421274e6e3d8
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 9b826bab435f293f48486bb533a77535b2f74037
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280387"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697429"
 ---
 # <a name="sorting-filtering-and-downloading-data"></a>Verileri sıralama, filtreleme ve indirme
 
@@ -29,7 +29,6 @@ Bu nasıl yapılır makalesinde, aşağıdaki veri kümeleri için verileri sır
 - Izci
 - Bileşen
 - Konak Çiftleri
-- Karmalar
 - Tanımlama bilgileri
 - Hizmetleri
 - DNS
@@ -212,13 +211,6 @@ Konak Çiftleri verilerinin indirilmesi sonucunda aşağıdaki üst bilgiler dı
 | **attributeCause**         | Üst ve alt konak adı arasındaki ilişkinin nedeni |
 | **Etiketler**                   | Yapıtla ilişkilendirilmiş özel veya sistem etiketleri |
 
-Karmalar verilerinin indirilmesi sonucunda aşağıdaki üst bilgiler dışarı aktarılır:
-
-| &nbsp;             | &nbsp;                     |
-|--------------------|----------------------------|
-| **Kaynak**         | MD5 karma örneğini gözlemleyen kaynak |
-| **Örnek**                  | MD5 karması |
-| **koleksiyon tarihi**         | Kaynak tarafından yakalanan koleksiyon tarihi |
 
 Tanımlama bilgileri verilerinin indirilmesi sonucunda aşağıdaki üst bilgiler dışarı aktarılır:
 
@@ -258,7 +250,7 @@ Aşağıdaki üst bilgiler, tehdit bilgileri genel veya riskq göstergelerini in
 
 | &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
-| **Türü**                | Gösterge türü (ör. ip, sertifika, etki alanı, hash_sha256) |
+| **Türü**                | Gösterge türü (ör. ip, sertifika, etki alanı, _sha256) |
 | **Değer**               | Göstergenin değeri (ör. IP adresi, etki alanı, ana bilgisayar adı) |
 | **Kaynak**              | Gösterge kaynağı (RiskIQ veya OSINT) |
 

@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 02732bd43b6096224a1670c61aa08731b5e77029
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 0f1deca02b30c1a94ea63ea2316065ad75754c94
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520589"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697593"
 ---
 # <a name="get-alert-related-files-information-api"></a>Uyarıyla ilgili dosya bilgileri API'lerini alma
 

@@ -1,12 +1,12 @@
 ---
-title: 'Genel bakış: VPN bölme bölme Microsoft 365'
+title: 'Genel bakış: Microsoft 365 için VPN bölünmüş tüneli'
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.date: 3/3/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,188 +17,188 @@ ms.collection:
 - m365initiative-coredeploy
 f1.keywords:
 - NOCSH
-description: Uzak kullanıcılar için bağlantıları en iyi duruma getirmek Microsoft 365 ile VPN bölünmüş bölmelerine genel bakış.
-ms.openlocfilehash: 67ce8a38b536dab12af679ba860aac6d974db60e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Uzak kullanıcılar için bağlantıyı iyileştirmek için Microsoft 365 ile VPN bölünmüş tüneline genel bakış.
+ms.openlocfilehash: bec540182e72c40d5229afe8b35f092da4c5797e
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329079"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67696649"
 ---
-# <a name="overview-vpn-split-tunneling-for-microsoft-365"></a>Genel bakış: VPN bölme bölme Microsoft 365
+# <a name="overview-vpn-split-tunneling-for-microsoft-365"></a>Genel bakış: Microsoft 365 için VPN bölünmüş tüneli
 
 >[!NOTE]
->Bu makale, uzak kullanıcılar için iyileştirmeyi Microsoft 365 makale kümelerinin bir bölümüdir.
+>Bu makale, uzak kullanıcılar için Microsoft 365 iyileştirmesini ele alan bir makale kümesinin parçasıdır.
 
->- VPN bölünmüş bölmeyi uygulama hakkında ayrıntılı kılavuz için bkz. [VPN bölünmüş bölmeyi uygulama Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
->- VPN bölünmüş bölme senaryolarının ayrıntılı listesi için bkz. Daha fazla bilgi için bkz. Genel [VPN bölünmüş Microsoft 365](microsoft-365-vpn-common-scenarios.md).
->- VPN bölünmüş trafiğinde Teams trafiğinin güvenliğini sağlama kılavuzu için bkz. VPN bölünmüş trafiği için Teams trafiğinin güvenliğini [sağlama](microsoft-365-vpn-securing-teams.md).
->- VPN ortamlarında Stream ve canlı etkinlikleri yapılandırma hakkında bilgi için bkz. VPN ortamlarında akış ve canlı etkinlikler [için dikkat edilmesi gereken noktalar](microsoft-365-vpn-stream-and-live-events.md).
->- Çin'deki kullanıcılar için Microsoft 365 kiracı performansını iyileştirme hakkında bilgi için bkz. [Microsoft 365 için performans iyileştirme.](microsoft-365-networking-china.md)
+>- VPN bölünmüş tüneli uygulama hakkında ayrıntılı yönergeler için bkz. [Microsoft 365 için VPN bölünmüş tüneli uygulama](microsoft-365-vpn-implement-split-tunnel.md).
+>- VPN bölünmüş tünel senaryolarının ayrıntılı listesi için bkz. [Microsoft 365 için yaygın VPN bölünmüş tünel senaryoları](microsoft-365-vpn-common-scenarios.md).
+>- VPN bölünmüş tünel ortamlarında Teams medya trafiğinin güvenliğini sağlama yönergeleri için bkz. [VPN bölünmüş tüneli için Teams medya trafiğinin güvenliğini sağlama](microsoft-365-vpn-securing-teams.md).
+>- VPN ortamlarında Stream ve canlı etkinlikleri yapılandırma hakkında bilgi için bkz. [VPN ortamlarında Akış ve canlı etkinlikler için dikkat edilmesi gereken özel noktalar](microsoft-365-vpn-stream-and-live-events.md).
+>- Çin'deki kullanıcılar için Microsoft 365 dünya çapında kiracı performansını iyileştirme hakkında bilgi için bkz. [Çin kullanıcıları için Microsoft 365 performans iyileştirmesi](microsoft-365-networking-china.md).
 
-Kuruluşlar, geleneksel olarak kullanıcıları için güvenli uzak deneyimleri desteklemek üzere VPN'ler kullanmaktadır. Temel iş yükleri şirket içinde kalırken, uzak kullanıcıların şirket kaynaklarına erişmesi için birincil yöntem, şirket ağının veri merkezi aracılığıyla yönlendirilen uzak istemciden VPN'tir. Kuruluşlar bu bağlantıları korumak için VPN yolları boyunca ağ güvenlik çözümlerinin katmanlarını oluşturmaz. Bu güvenlik, iç altyapıyı korumak ve trafiği VPN'ye yeniden yönlendirerek ve sonra da şirket içi İnternet çevresi üzerinden dışarı doğru yönlendirerek dış web sitelerini mobil taramayı korumak için yerleşik olarak kullanılır. VPN'ler, ağ çevreleri ve ilişkili güvenlik altyapısı genellikle amaca yönelik olarak yerleşik ve tanımlı bir trafik hacmi için ölçeklendirildi; bunlar genellikle çoğu bağlantı şirket ağının içinde ve büyük bir çoğu da iç ağ sınırları içinde kalıyor.
+Kuruluşlar, kullanıcıları için güvenli uzak deneyimleri desteklemek için geleneksel olarak VPN'leri kullanır. Çekirdek iş yükleri şirket içinde kalırken, uzak istemciden gelen ve şirket ağındaki bir veri merkezinden yönlendirilen VPN, uzak kullanıcıların şirket kaynaklarına erişmesi için birincil yöntemdi. Kuruluşlar, bu bağlantıları korumak için VPN yolları boyunca ağ güvenlik çözümleri katmanları oluşturur. Bu güvenlik, iç altyapıyı korumak ve trafiği VPN'ye ve ardından şirket içi İnternet çevresi üzerinden dışarı yönlendirerek dış web sitelerinin mobil taramasını korumak için oluşturulmuştu. VPN'ler, ağ çevreleri ve ilişkili güvenlik altyapısı genellikle amaç doğrultusunda oluşturulmuş ve tanımlanmış bir trafik hacmi için ölçeklendirilmiştir; genellikle bağlantının çoğu şirket ağı içinden başlatılır ve çoğu iç ağ sınırları içinde kalır.
 
-Bir süredir, uzak kullanıcı cihazından gelen tüm bağlantıların şirket içi ağa geri yönlendirdiği VPN modelleri (zorlamalı kaza olarak _bilinir), uzak_ kullanıcıların eş zamanlı ölçeği normal olduğu ve VPN'den çapraz geçen trafik hacminin düşük olduğu sürece büyük ölçüde sürdürülebilirdi.  Bazı müşteriler, uygulamaları şirket çevresi içinden genel SaaS bulutlarına taşındıktan sonra bile VPN zorlamasını status quo olarak kullanmaya devam etti.
+Uzak kullanıcı cihazının tüm bağlantılarının şirket içi ağa ( _zorlamalı tünel_ olarak bilinir) geri yönlendirildiği VPN modelleri, uzak kullanıcıların eşzamanlı ölçeği mütevazı olduğu ve VPN'den geçen trafik birimlerinin düşük olduğu sürece büyük ölçüde sürdürülebilirdi.  Bazı müşteriler, uygulamaları kurumsal çevreden genel SaaS bulutlarına taşındıktan sonra bile durum quo olarak VPN zorlamalı tünel kullanmaya devam etti.
 
-Dağıtılmış ve performansa duyarlı bulut uygulamalarına bağlanmak için zorlamalı VPN'lerin kullanımı alt bir uygulamadır, ancak güvenlik durumu güvenliğinin korunması için bazı kuruluşlar bunu kabul eder. Bu senaryoya örnek bir diyagram aşağıdan görülebilir:
+Dağıtılmış ve performansa duyarlı bulut uygulamalarına bağlanmak için zorlamalı tünelli VPN'lerin kullanılması yetersizdir, ancak güvenlik durumunu korumak için bazı kuruluşlar tarafından olumsuz etkiler kabul edilmiştir. Bu senaryonun örnek diyagramı aşağıda görülebilir:
 
-![VPN Tunnel zorunlu.](../media/vpn-split-tunneling/enterprise-network-traditional.png)
+![Zorlamalı Tünel VPN yapılandırması.](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
-_Şekil 1: Geleneksel Zorunlu vpn Tunnel çözümü._
+_Şekil 1: Geleneksel bir Zorlamalı Tünel VPN çözümü._
 
-Birçok müşteri ağ trafiği desenlerinin önemli bir değişimini raporlamaktadır ve bu sorun yıllar boyunca büyüyen bir sorundur. Şirket içinde kalmak için kullanılan trafik artık dış bulut uç noktalarına bağlanır. Birçok Microsoft müşterisi, daha önce ağ trafiğinin yaklaşık %80'inin bir iç kaynakta (yukarıdaki diyagramda noktalı çizgiyle gösterildiği) olduğunu bildirmiştir. 2020'de bu sayı, büyük iş yüklerini buluta kaydırarak yaklaşık %20 veya daha düşük bir sayıya düşürdü. Bu eğilimler diğer kuruluşlarda az görülen bir eğilim değildir. Bulut yolculuğu ilerledikçe yukarıdaki model giderek zahmetli ve zahmetsiz hale gelir ve kuruluşun ilk bulut dünyasında çevik olması önlenebilir hale gelir.
+Bu sorun uzun yıllardır artmaktadır ve birçok müşteri ağ trafiği desenlerinin önemli bir değişimini bildirmektedir. Eskiden şirket içinde kalan trafik artık dış bulut uç noktalarına bağlanıyor. Birçok Microsoft müşterisi, daha önce ağ trafiğinin yaklaşık %80'inin bir iç kaynağa (yukarıdaki diyagramdaki noktalı çizgiyle gösterilir) olduğunu bildirmektedir. 2020'de büyük iş yüklerini buluta kaydıran bu sayı yaklaşık %20'ye veya daha düşük bir sayıya düştü. Bu eğilimler diğer kuruluşlarda sık rastlanmayan bir durumdur. Zaman içinde, bulut yolculuğu ilerledikçe yukarıdaki model giderek daha hantal ve sürdürülebilir hale gelir ve kuruluşun bulut öncelikli bir dünyaya geçerken çevik olmasını önler.
 
-Dünya çapında COVID-19 krizi bu sorunu acil düzeltme gerektirecek şekilde İlerledi. Kurumsal IT üzerinde, ev dışından üretkenliği muazzam bir ölçekte desteklemek için çalışan güvenliğinin sağlanmasıyla ilgili talepler üretmektedir. Microsoft 365 müşterilerin bu talebi karşılamalarına yardımcı olmak için iyi bir konumdadır, ancak evden çalışan kullanıcıların yüksek eşzamanlılığı nedeniyle zorunlu VPN ve şirket içi ağ çevrelerine yönlendirilen çok büyük miktarda Microsoft 365 trafiği, doygunluğa neden olur ve VPN altyapısını kapasitenin dışında çalıştırır. Bu yeni gerçeklikte, Microsoft 365'e erişmek için VPN kullanmak artık yalnızca bir performans taadı değildir; yalnızca Microsoft 365'ı değil, aynı zamanda vpn'in çalışması için güvenmek zorunda olduğu kritik iş işlemlerini de etkileyen sıkı bir duvardır.
+Dünya genelindeki COVID-19 krizi, hemen düzeltilmesini gerektirmek için bu sorunu daha da ilerletmektedir. Çalışanların güvenliğini sağlama ihtiyacı, büyük ölçekte evden çalışma üretkenliğini desteklemek için kurumsal BT'de eşi görülmemiş talepler oluşturdu. Microsoft 365, müşterilerin bu talebi karşılamasına yardımcı olmak için iyi bir konuma sahiptir, ancak evden çalışan kullanıcıların yüksek eşzamanlılığı, zorlamalı tünel VPN ve şirket içi ağ çevreleri üzerinden yönlendirilirse hızlı doygunluğa neden olan ve VPN altyapısını kapasite dışında çalıştıran büyük miktarda Microsoft 365 trafiği oluşturur. Bu yeni gerçeklikte, Microsoft 365'e erişmek için VPN kullanmak artık yalnızca bir performans engeli değil, yalnızca Microsoft 365'i değil, aynı zamanda çalışmak için VPN'ye güvenmesi gereken kritik iş operasyonlarını da etkileyen bir sabit duvardır.
 
-Microsoft, kendi hizmetlerimizden bu sorunlara etkili ve modern çözümler sunmak ve endüstrinin en iyi uygulamasıyla uyumlu olmak için müşterilerle ve daha geniş bir endüstriyle birlikte çalışıyor. [Yeni Hizmet Hizmeti'Microsoft 365](./microsoft-365-network-connectivity-principles.md) bağlantı ilkeleri, kuruluşun bağlantı üzerinde güvenlik ve denetime sahip çalışmasına olanak sağlarken, uzak kullanıcılar için etkili bir şekilde çalışacak şekilde tasarlanmıştır. Bu çözümler sınırlı çalışmayla da hızlı bir şekilde uygulanarak, yine de yukarıda belirtilen sorunlar üzerinde önemli olumlu bir etki elde edildi.
+Microsoft, bu sorunlara kendi hizmetlerimizin içinden etkili, modern çözümler sunmak ve sektörün en iyi uygulamalarıyla uyum sağlamak için müşterilerle ve daha geniş bir sektörle yakın bir şekilde çalışmaktadır. Microsoft 365 hizmeti için [bağlantı ilkeleri](./microsoft-365-network-connectivity-principles.md), uzak kullanıcılar için verimli bir şekilde çalışacak şekilde tasarlanmıştır ve bir yandan da bir kuruluşun kendi bağlantıları üzerinde güvenlik ve denetim sağlamasına olanak sağlar. Bu çözümler, sınırlı çalışma ile hızlı bir şekilde uygulanabilir, ancak yukarıda özetlenen sorunlar üzerinde önemli bir olumlu etki sağlar.
 
-Uzaktan çalışan cihazlarını VPN üzerinden şirket ağına veya bulut altyapısına bağlamak isteyen müşteriler için Microsoft, Microsoft 365, **Microsoft Teams SharePoint** **Online** ve **Exchange Online** gibi önemli Microsoft 365 senaryolarının _VPN_ bölünmüş yapılandırmaları üzerinden yönlendirilmez. COVID-19 kriz gibi evden gelen büyük ölçekli etkinlikler sırasında çalışan üretkenliğinin devamını kolaylaştıran ilk satır stratejisi olarak bu durum özellikle önemli hale gelir.
+Uzak çalışan cihazlarını VPN üzerinden şirket ağına veya bulut altyapısına bağlayan müşteriler için Microsoft, Microsoft Teams, **SharePoint Online** ve **Exchange Online** temel **Microsoft** 365 senaryolarının _BIR VPN bölünmüş tünel_ yapılandırması üzerinden yönlendirildiğini önerir. Bu, COVID-19 krizi gibi büyük ölçekli evden çalışma olayları sırasında çalışanların sürekli üretkenliğini kolaylaştırmaya yönelik ilk hat stratejisi olarak özellikle önemlidir.
 
-![VPN Tunnel bölün.](../media/vpn-split-tunneling/vpn-model-2.png)
+![Bölünmüş Tünel VPN yapılandırması.](../media/vpn-split-tunneling/vpn-model-2.png)
 
-_Şekil 2: Doğrudan hizmete gönderilen tanımlı veya özel Microsoft 365 VPN bölünmüş olay çözümü. Diğer tüm trafik hedeften bağımsız olarak VPN trafiği üzerinden çapraz geçiş yaptı._
+_Şekil 2: Doğrudan hizmete gönderilen tanımlı Microsoft 365 özel durumlarına sahip bir VPN bölünmüş tünel çözümü. Diğer tüm trafik, hedef ne olursa olsun VPN tünelinden geçer._
 
-Bu yaklaşımın özünü, kuruluşlara VPN altyapısının doygunluğu riskini azaltmak ve mümkün olan en kısa zaman diliminde Microsoft 365 performansı önemli ölçüde artırmak için basit bir yöntem sağlamaktır. VPN istemcilerini VPN hedeflerini atlayarak en kritik, Microsoft 365 hacmini ve trafiğin aşağıdaki avantajları elde edene izin verecek şekilde yapılandırılması:
+Bu yaklaşımın özü, kuruluşlara VPN altyapısı doygunluğu riskini azaltmak ve Microsoft 365 performansını mümkün olan en kısa zaman diliminde önemli ölçüde geliştirmek için basit bir yöntem sunmaktır. VPN istemcilerini VPN tünelini atlamak için en kritik, yüksek hacimli Microsoft 365 trafiğine izin verecek şekilde yapılandırmak aşağıdaki avantajları sağlar:
 
-- Kurumsal VPN mimarisinde müşteri tarafından bildirilen performans ve ağ kapasitesi sorunlarının büyük bir çoğunluğunun kullanıcı deneyimini etkileyen temel Microsoft 365 etkisini anında azaltmak
+- Microsoft 365 kullanıcı deneyimini etkileyen kurumsal VPN mimarilerinde müşteri tarafından bildirilen performans ve ağ kapasitesi sorunlarının çoğunun kök nedenini hemen azaltır
   
-  Önerilen çözüm özellikle URL'ler Microsoft 365 IP adresi aralıkları için konu başlığında En Microsoft 365  olarak [kategorilere ayrılmış hizmet uç noktalarını hedefler](./urls-and-ip-address-ranges.md). Bu uç noktalara gelen trafik gecikme süresi ve bant genişliği azaltmaya son derece duyarlıdır ve VPN trafiğini atlayarak son kullanıcı deneyimini önemli ölçüde geliştirebilecektir ve şirket ağ yükünü düşürebilirsiniz. Microsoft 365 genişliğinin veya kullanıcı deneyiminin kap kaplanı çoğunluğunu oluşturmaz bağlantılar, İnternet'e bağlı trafiğin geri kalanıyla birlikte VPN trafiği yoluyla yönlendirilene kadar devam eder. Daha fazla bilgi için bkz[. VPN bölünmüş strateji.](#the-vpn-split-tunnel-strategy)
+  Önerilen çözüm özellikle Microsoft 365 [URL'leri ve IP adresi aralıkları](./urls-and-ip-address-ranges.md) konusunda **İyileştir** olarak kategorilere ayrılmış Microsoft 365 hizmet uç noktalarını hedefler. Bu uç noktalara gelen trafik gecikme süresine ve bant genişliği azaltmaya karşı son derece hassastır ve VPN tünelini atlamasına olanak tanıyarak son kullanıcı deneyimini önemli ölçüde geliştirebilir ve kurumsal ağ yükünü azaltabilir. Bant genişliğinin veya kullanıcı deneyimi ayak izinin çoğunu oluşturmayan Microsoft 365 bağlantıları, İnternet'e bağlı trafiğin geri kalanıyla birlikte VPN tüneli üzerinden yönlendirilmeye devam edebilir. Daha fazla bilgi için bkz. [VPN bölünmüş tünel stratejisi](#the-vpn-split-tunnel-strategy).
 
-- Müşteriler tarafından hızlı bir şekilde yafta edilebilir, test edilebilir ve hızlı bir şekilde uygulansa da ek altyapı veya uygulama gereksinimleri yoktur.
+- Müşteriler tarafından hızlı bir şekilde ve ek altyapı veya uygulama gereksinimleri olmadan yapılandırılabilir, test edilebilir ve uygulanabilir
 
-  VPN platformuna ve ağ mimarisine bağlı olarak, uygulama birkaç saat kadar sürebilir. Daha fazla bilgi için bkz [. VPN bölünmüş tarak uygulama](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling).
+  VPN platformuna ve ağ mimarisine bağlı olarak uygulama birkaç saat kadar sürebilir. Daha fazla bilgi için bkz. [VPN bölünmüş tüneli uygulama](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling).
 
-- İnternet trafiği dahil olmak üzere diğer bağlantıların nasıl yönlendirildiklerini değiştirmeerek müşteri VPN uygulamalarının güvenlik nedenlerini korur
+- İnternet'e giden trafik de dahil olmak üzere diğer bağlantıların yönlendirilme şeklini değiştirmeyerek müşteri VPN uygulamalarının güvenlik duruşunu korur
 
-  Önerilen yapılandırma, VPN trafiği özel  durumları için en az ayrıcalık ilkesine sahiptir ve müşterilerin bölünmüş vpn VPN'lerini, kullanıcıları veya altyapıyı ek güvenlik risklerine açık yapmadan uygulamalarına olanak sağlar. Doğrudan Microsoft 365 uç noktalarına yönlendirilen ağ trafiği şifrelenir, Office istemci uygulaması yığınları tarafından bütünlük için doğrulanır ve hem uygulama hem de ağ düzeyinde ayrılmış Microsoft 365 hizmetleri için ayrılmış IP adresleri kapsamındadır. Daha fazla bilgi için, günümüzün benzersiz uzaktan çalışma senaryolarında modern güvenlik denetimlerine ulaşmak için güvenlik uzmanları ve [BT'nin alternatif yolları (Microsoft Güvenlik Ekibi blogu) makalelerine bakın](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/).
+  Önerilen yapılandırma, VPN trafiği özel durumları için **en düşük ayrıcalık** ilkesini izler ve müşterilerin kullanıcıları veya altyapıyı ek güvenlik risklerine maruz bırakmadan bölünmüş tünel VPN'i uygulamasına olanak tanır. Doğrudan Microsoft 365 uç noktalarına yönlendirilen ağ trafiği şifrelenir, Office istemci uygulama yığınları tarafından bütünlük için doğrulanır ve hem uygulama hem de ağ düzeyinde sağlamlaştırılmış Microsoft 365 hizmetlerine ayrılmış IP adresleri kapsamına alınır. Daha fazla bilgi için bkz [. Günümüzün benzersiz uzaktan çalışma senaryolarında modern güvenlik denetimleri elde etmek için güvenlik uzmanları ve BT için alternatif yollar (Microsoft Güvenlik Ekibi blogu)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/).
 
-- Kurumsal VPN platformlarının çoğu yerel olarak destekler
+- Çoğu kurumsal VPN platformu tarafından yerel olarak desteklenir
 
-  Microsoft, iş ortaklarının yukarıdaki önerilere uygun olarak çözümleri için hedefli kılavuz ve yapılandırma şablonları geliştirmelerine yardımcı olmak için ticari VPN çözümleri üreten sektör ortaklarıyla işbirliğine devam etmektedir. Daha fazla bilgi için bkz. [Yaygın VPN platformları için HOWTO kılavuzları](microsoft-365-vpn-implement-split-tunnel.md#howto-guides-for-common-vpn-platforms).
+  Microsoft, iş ortaklarının yukarıdaki önerilere uygun olarak çözümleri için hedefli rehberlik ve yapılandırma şablonları geliştirmelerine yardımcı olmak için ticari VPN çözümleri üreten sektör iş ortaklarıyla işbirliği yapmaya devam ediyor. Daha fazla bilgi için bkz. [Yaygın VPN platformları için HOWTO kılavuzları](microsoft-365-vpn-implement-split-tunnel.md#howto-guides-for-common-vpn-platforms).
 
 >[!TIP]
->Microsoft, ayrık hizmetler için ayrılmış ayrılmış IP aralıklarına bölünmüş VPN yapılandırmasının Microsoft 365 önermektedir. FQDN veya AppID tabanlı bölünmüş yapılandırmalar varken, bazı VPN istemci platformlarında mümkün olduğunca anahtar Microsoft 365 senaryolarını tam olarak kapatmayabiliyor ve IP tabanlı VPN yönlendirme kurallarıyla çakışabiliyor. Bu nedenle, Microsoft bölünmüş vpn'leri yapılandırmak Microsoft 365 FQDN'ler kullanılması önerilmez. FQDN yapılandırmasının kullanımı, .pac dosyası özelleştirmeleri veya proxy atlamaları uygulama gibi diğer ilgili senaryolarda yararlı olabilir.
+>Microsoft, Bölünmüş tünel VPN yapılandırmasının Microsoft 365 hizmetleri için belgelenmiş ayrılmış IP aralıklarına odaklanmasını önerir. FQDN veya AppID tabanlı bölünmüş tünel yapılandırmaları, bazı VPN istemci platformlarında mümkün olsa da önemli Microsoft 365 senaryolarını tam olarak kapsamayabilir ve IP tabanlı VPN yönlendirme kurallarıyla çakışabilir. Bu nedenle Microsoft, bölünmüş tünel VPN'sini yapılandırmak için Microsoft 365 FQDN'lerinin kullanılmasını önermez. FQDN yapılandırmasının kullanılması, .pac dosyası özelleştirmeleri gibi diğer ilgili senaryolarda veya ara sunucu atlama uygulamak için yararlı olabilir.
 
-Tam uygulama kılavuzu için bkz[. MICROSOFT 365 için VPN bölünmüş Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
+Tam uygulama kılavuzu için bkz. [Microsoft 365 için VPN bölünmüş tüneli uygulama](microsoft-365-vpn-implement-split-tunnel.md).
 
-Uzak çalışanların e-postalarını yapılandırmaya Microsoft 365 adım adım işlem için bkz[. Uzak çalışma için altyapınızı ayarlama](..\solutions\empower-people-to-work-remotely.md)
+Uzaktan çalışanlar için Microsoft 365'i yapılandırmaya yönelik adım adım bir işlem için bkz. [Uzaktan çalışma için altyapınızı ayarlama](..\solutions\empower-people-to-work-remotely.md)
 
-## <a name="the-vpn-split-tunnel-strategy"></a>VPN bölünmüş strateji
+## <a name="the-vpn-split-tunnel-strategy"></a>VPN bölünmüş tünel stratejisi
 
-Geleneksel şirket ağları çoğunlukla, kullanıcıların çoğunluğunda olduğu gibi en önemli verilerin, hizmetlerin, uygulamaların şirket içinde barındır yer alan ve doğrudan şirket içi ağa bağlı olduğu bulut öncesi bir dünyada güvenli bir şekilde çalışacak şekilde tasarlanmıştır. Dolayısıyla bu şubelerde bu öğelerin çevresinde ağ altyapısı yerleşik olarak kullanılır ve ofislerin genel ofisleri _Multiprotocol Label Switching (MPLS)_ ağları üzerinden bağlanır ve uzak kullanıcıların hem şirket içi uç noktalara hem de İnternet'e erişmek için şirket ağına VPN üzerinden bağlanması gerekir. Bu modelde, uzak kullanıcılardan gelen tüm trafik şirket ağına çapraz geçiş yaptı ve ortak bir çıkış noktasından bulut hizmetine yönlendirildi.
+Geleneksel kurumsal ağlar genellikle en önemli verilerin, hizmetlerin, uygulamaların şirket içinde barındırıldığı ve kullanıcıların çoğu gibi doğrudan iç şirket ağına bağlı olduğu bulut öncesi bir dünyada güvenli bir şekilde çalışacak şekilde tasarlanmıştır. Bu nedenle, şube ofislerinin merkez ofise _Multiprotocol Label Switching (MPLS)_ ağları aracılığıyla bağlandığını ve uzak kullanıcıların hem şirket uç noktalarına hem de İnternet'e erişmek için bir VPN üzerinden şirket ağına bağlanması gereken bu öğelerin etrafında ağ altyapısı oluşturulmuştur. Bu modelde, uzak kullanıcılardan gelen tüm trafik şirket ağından geçer ve ortak bir çıkış noktası üzerinden bulut hizmetine yönlendirilir.
 
-![Zorunlu VPN yapılandırması.](../media/vpn-split-tunneling/vpn-model-1.png)
+![Zorlamalı VPN yapılandırması.](../media/vpn-split-tunneling/vpn-model-1.png)
 
-_Şekil 2: Hedeften bağımsız olarak tüm trafiğin şirket ağına geri dönüş yapmak zorunda olduğu uzak kullanıcılar için ortak bir VPN çözümü_
+_Şekil 2: Hedef ne olursa olsun tüm trafiğin şirket ağına geri zorlandığı uzak kullanıcılar için yaygın bir VPN çözümü_
 
-Kuruluşlar verileri ve uygulamaları buluta taşıydıklarında, bu model hızlı şekilde zahmetli, pahalı ve sıralanmamış hale geldi ve kullanıcıların ağ performansını ve verimliliğini önemli ölçüde etkilemektedir ve kuruluşun değişen ihtiyaçlara uyum sağlama becerisini kısıtlamaktadır. Çok sayıda Microsoft müşterisi, birkaç yıl önce ağ trafiğinin %80'inin iç hedefe bağlandı, ancak 2020'de %80 artı trafik, bulut tabanlı bir dış kaynağa bağlandı.
+Kuruluşlar verileri ve uygulamaları buluta taşıdıkça, bu model hızla hantal, pahalı ve hesaplanamaz hale geldiğinden, kullanıcıların ağ performansını ve verimliliğini önemli ölçüde etkilediğinden ve kuruluşun değişen gereksinimlere uyum sağlama becerisini kısıtladıkça daha az etkili olmaya başlamıştır. Çok sayıda Microsoft müşterisi, birkaç yıl önce ağ trafiğinin %80'inin bir iç hedefe olduğunu, ancak 2020'de trafiğin %80'inin harici bulut tabanlı bir kaynağa bağlandığını bildirdi.
 
-COVID-19 krizi, kuruluşların büyük çoğunluğu için acil çözümler gerektirmesi bu sorunu aştı. Birçok müşteri zorlanan VPN modelinin, bu kriz gibi %100 uzaktan çalışma senaryolarına yetecek kadar ölçeklendirilebilir veya performanslı olmadığını buldu. Bu kuruluşların verimli bir şekilde çalışmaya devam etmek için hızlı çözümler gereklidir.
+COVID-19 krizi, kuruluşların büyük çoğunluğu için acil çözümler gerektirmek için bu sorunu daha da ağırlaştırdı. Birçok müşteri, zorlanan VPN modelinin bu krizin gerektirdiği gibi %100 uzaktan çalışma senaryoları için yeterince ölçeklenebilir veya performanslı olmadığını tespit etti. Bu kuruluşların verimli bir şekilde çalışmaya devam etmesi için hızlı çözümler gerekir.
 
-Microsoft 365 hizmeti için, Microsoft hizmet için bağlantı gereksinimlerini bu sorunu kare kare olarak tasarlar; burada odaklanmış, sıkı denetimli ve görece statik bir hizmet uç noktaları kümesi çok basit ve hızlı bir şekilde en iyi duruma gelebilir; böylelikle hizmete erişen kullanıcılar için yüksek performans sunmak ve vpn altyapısı üzerindeki yükü azaltarak hala onu gerektiren trafik tarafından kullanılabilir.
+Microsoft 365 hizmeti için Microsoft, hizmete erişen kullanıcılar için yüksek performans sunmak ve VPN altyapısının yükünü azaltmak ve hala gerektiren trafik tarafından kullanılabilmesi için odaklanmış, sıkı denetimli ve görece statik bir hizmet uç noktası kümesinin çok basit ve hızlı bir şekilde iyileştirilebileceği bu sorunu göz önünde bulundurarak hizmet için bağlantı gereksinimlerini tasarlamıştır.
 
-Microsoft 365 için gerekli uç noktaları üç kategoriye **Microsoft 365 kategorilere** ayrılır: En İyi Duruma Getirme, **İzin Ver** **ve Varsayılan**. **En** iyi duruma getirme uç noktaları buradadır ve aşağıdaki özelliklere sahiptir:
+Microsoft 365, Microsoft 365 için gerekli uç noktaları üç kategoriye ayırır: **İyileştir**, **İzin Ver** ve **Varsayılan**. **En iyi duruma getirme** uç noktaları burada odak noktamızdır ve aşağıdaki özelliklere sahiptir:
 
-- Microsoft'un sahip olduğu ve yönetilen uç noktaları Microsoft altyapısında barındırılan mı
-- Exchange Online, SharePoint Online, Skype Kurumsal Online ve Microsoft Teams gibi temel Microsoft 365 iş yüklerini Microsoft Teams
-- IP'ler sağlanıyor mu?
-- Düşük değişiklik oranına sahip olması ve sayı olarak az kalması beklenir (şu anda 20 IP alt ağı)
-- Yüksek hacim ve/veya gecikmeye duyarlıdır
-- Ağ üzerinde satır içi yerine hizmette gerekli güvenlik öğelerini sağlanıyor olabilir
-- Hizmet hizmetine gelen trafik hacminin yaklaşık %70-80'i Microsoft 365 hesaba Microsoft 365
+- Microsoft'un sahip olduğu ve yönetilen uç noktaları, Microsoft altyapısında barındırılıyor mu?
+- Exchange Online, SharePoint Online, Skype Kurumsal Online ve Microsoft Teams gibi temel Microsoft 365 iş yüklerine ayrılmıştır
+- IP'ler sağlandı mı?
+- Düşük değişiklik oranı ve sayı olarak küçük kalması beklenir (şu anda 20 IP alt ağı)
+- Yüksek hacim ve/veya gecikme süresine duyarlıdır
+- Ağdaki satır içi öğeler yerine hizmette gerekli güvenlik öğelerinin sağlanmasına sahip olabilir
+- Microsoft 365 hizmetine yönelik trafik hacminin yaklaşık %70-80'ini oluşturur
 
-Bu sıkı kapsamı olan bu uç nokta kümesi zorlanan VPN hedeflerine ayrılarak, kullanıcının yerel arabirimi üzerinden güvenli bir şekilde ve doğrudan Microsoft 365 hizmetine gönderebilirsiniz. Bu, bölünmüş **kazıma olarak bilinir**.
+Bu sıkı kapsamlı uç nokta kümesi, zorlamalı VPN tünelinden ayrılabilir ve kullanıcının yerel arabirimi aracılığıyla güvenli bir şekilde ve doğrudan Microsoft 365 hizmetine gönderilebilir. Bu, **bölünmüş tünel** olarak bilinir.
 
-DLP, AV koruması, kimlik doğrulama ve erişim denetimi gibi güvenlik öğelerinin hepsi hizmet içindeki farklı katmanlarda bu uç noktalara karşı çok daha verimli bir şekilde teslim edilir. Ayrıca trafik hacmini VPN çözümünden yönlendiren bir sistem olduğu için VPN kapasitesine hala bağlı olan iş açısından kritik trafik için VPN kapasitesi serbesttir. Ayrıca, bu yeni işletim sistemiyle başa çıkılacak şekilde uzun ve maliyetli bir yükseltme programından geçerek, birçok durumda ihtiyacı kaldırması gerekir.
+DLP, AV koruması, kimlik doğrulaması ve erişim denetimi gibi güvenlik öğelerinin tümü hizmet içindeki farklı katmanlarda bu uç noktalara karşı çok daha verimli bir şekilde teslim edilebilir. Ayrıca trafik hacminin büyük bir kısmını VPN çözümünden uzaklaştırdığımız için bu, VPN kapasitesini hala buna bağlı olan iş açısından kritik trafik için boşaltır. Ayrıca, bu yeni çalışma yöntemiyle başa çıkmak için uzun ve maliyetli bir yükseltme programından geçmek için birçok durumda gereksinimi ortadan kaldırmalıdır.
 
-![Bölünmüş Tunnel VPN yapılandırma ayrıntıları.](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![Bölünmüş Tünel VPN yapılandırma ayrıntıları.](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
-_Şekil 3: Doğrudan hizmete gönderilen tanımlı özel Microsoft 365 VPN bölünmüş olay çözümü. Diğer tüm trafik hedeflere bakılmaksızın şirket ağına geri zorunludur._
+_Şekil 3: Tanımlı Microsoft 365 özel durumlarının doğrudan hizmete gönderildiği bir VPN bölünmüş tünel çözümü. Diğer tüm trafik, hedef ne olursa olsun şirket ağına geri dönmeye zorlanır._
 
-Güvenlik açısından bakıldığında, Microsoft'un bir dizi güvenlik özelliği vardır ve bu özellikler şirket içi güvenlik yığınları tarafından satır içi denetimle yapılan denetimlere göre benzer, hatta gelişmiş güvenlik sağlamak için kullanılabilir. Microsoft Güvenlik ekibinin blog gönderisi Günümüzün benzersiz uzaktan çalışma senaryolarında modern güvenlik denetimlerine ulaşmak için güvenlik uzmanları ve [BT'nin](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) alternatif yolları, kullanılabilen özelliklerin net bir özetini içerir ve bu makalede daha ayrıntılı kılavuzu bulabilirsiniz. Ayrıca, Microsoft'un VPN üzerinde çalışma: Microsoft uzaktan iş gücü bağlantısını nasıl bağlı tutmuştur makalesinde VPN bölünmüş izleme uygulaması [hakkında da bilgi okuyabilirsiniz](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
+Güvenlik açısından bakıldığında, Microsoft'un şirket içi güvenlik yığınları tarafından satır içi inceleme ile sunulana benzer, hatta gelişmiş güvenlik sağlamak için kullanılabilecek bir dizi güvenlik özelliği vardır. Microsoft Güvenlik ekibinin blog gönderisi [Güvenlik uzmanları ve BT'nin günümüzün benzersiz uzaktan çalışma senaryolarında modern güvenlik denetimlerine ulaşmanın alternatif yolları](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) , sağlanan özelliklerin net bir özetini içerir ve bu makalede daha ayrıntılı yönergeler bulabilirsiniz. Microsoft'un VPN'de çalışan bölünmüş tünel uygulaması hakkında bilgi edinmek için [bkz. Microsoft uzak iş gücünü nasıl bağlı tutuyor](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)?
 
-Birçok durumda, bu uygulama birkaç saat içinde sağlanıyor olabilir ve kuruluşların karşılaştığı en önemli sorunlardan biri olan hızlı çözüme olanak sağlamak için hızlı bir şekilde hızlı bir şekilde, hızlı bir şekilde uzak ölçekte çalışmaya geçiş yapmaktır. VPN bölünmüş şifreleme uygulama kılavuzu için bkz[. Daha fazla bilgi için VPN bölünmüş Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
+Çoğu durumda, bu uygulama birkaç saat içinde gerçekleştirilebilir ve bu sayede kuruluşların karşılaştığı en acil sorunlardan birinin hızlı bir şekilde tam ölçekli uzaktan çalışmaya geçişini sağlar. VPN bölünmüş tünel uygulama kılavuzu için bkz. [Microsoft 365 için VPN bölünmüş tüneli uygulama](microsoft-365-vpn-implement-split-tunnel.md).
 
 ## <a name="faq"></a>SSS
 
-Microsoft Güvenlik Ekibi, günümüzün benzersiz uzaktan çalışma senaryolarında modern güvenlik denetimleri elde etmek için güvenlik uzmanları ve BT'nin modern güvenlik denetimlerine ulaşmak için alternatif yollar yayımladığı blog gönderisinde, güvenlik uzmanlarının ve [BT'nin](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) günümüzün benzersiz uzaktan çalışma senaryolarında modern güvenlik denetimlerini elde etmenin önemli yollarını özetler. Buna ek olarak, bu konuda sık sorulan müşteri sorularının ve yanıtlarının bazıları aşağıda verilmiştir.
+Microsoft Güvenlik Ekibi, [günümüzün benzersiz uzaktan çalışma senaryolarında modern güvenlik denetimleri elde etmek için güvenlik uzmanları ve BT için alternatif yollar](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) yayımladı. Bu gönderi, güvenlik uzmanları için temel yolları özetleyen bir blog gönderisi ve BT günümüzün benzersiz uzaktan çalışma senaryolarında modern güvenlik denetimleri elde edebilir. Ayrıca, bu konuyla ilgili sık sorulan müşteri sorularından ve yanıtlarından bazıları aşağıdadır.
 
-### <a name="how-do-i-stop-users-accessing-other-tenants-i-do-not-trust-where-they-could-exfiltrate-data"></a>Kullanıcıların diğer kiracılara erişimini nasıl durdurabilirim? Güvenim yok, ama verileri bu kullanıcılardan kesebilirler?
+### <a name="how-do-i-stop-users-accessing-other-tenants-i-do-not-trust-where-they-could-exfiltrate-data"></a>Nasıl yaparım? kullanıcıların verileri çıkarabilecekleri yere güvenmediğim diğer kiracılara erişmesini durdurmak mı?
 
-Yanıtı kiracı kısıtlamaları [adı verilen bir özelliktir](/azure/active-directory/manage-apps/tenant-restrictions). Kimlik doğrulama trafiği yüksek hacimde değildir ve özellikle gecikmeye duyarlı değildir, bu nedenle özelliğin uygulandığı şirket içi ara sunucuya VPN çözümü aracılığıyla gönderebilirsiniz. Burada, güvenilir kiracıların izin verme listesi korunur ve istemci güvenilir olmayan bir kiracıya belirteç almak için çalışırsa, ara sunucu yalnızca isteği reddettir. Kiracı güvenilirse, kullanıcının doğru kimlik bilgilerine ve haklara sahip olduğu bir belirteçe erişilebilir.
+Yanıt, [kiracı kısıtlamaları adlı bir özelliktir](/azure/active-directory/manage-apps/tenant-restrictions). Kimlik doğrulama trafiği yüksek hacimli veya özellikle gecikmeye duyarlı olmadığından, VPN çözümü aracılığıyla özelliğin uygulandığı şirket içi ara sunucuya gönderilebilir. Güvenilen kiracıların izin verme listesi burada tutulur ve istemci güvenilir olmayan bir kiracıya belirteç almayı denerse, proxy yalnızca isteği reddeder. Kiracıya güveniliyorsa, kullanıcı doğru kimlik bilgilerine ve haklara sahipse belirteç erişilebilir.
 
-Dolayısıyla kullanıcı söz konusu kiracıya erişmek için geçerli bir belirteç olmadan yukarıdaki İşaretli uç noktaları en iyi duruma getirme bağlantısına TCP/UDP bağlantısı alsa da, oturum açamaz ve hiçbir veriye erişamaz/verileri taşıyamaz.
+Bu nedenle, bir kullanıcı yukarıdaki İşaretli uç noktaları iyileştir'e TCP/UDP bağlantısı oluşturabilse de, söz konusu kiracıya erişmek için geçerli bir belirteç olmadan oturum açamaz ve verilere erişemez/veri taşıyamaz.
 
-### <a name="does-this-model-allow-access-to-consumer-services-such-as-personal-onedrive-accounts"></a>Bu model kişisel kişisel hesap hesapları gibi tüketici hizmetlerine OneDrive olanak sağlar mı?
+### <a name="does-this-model-allow-access-to-consumer-services-such-as-personal-onedrive-accounts"></a>Bu model kişisel OneDrive hesapları gibi tüketici hizmetlerine erişime izin verir mi?
 
-Hayır, değil, Microsoft 365 uç noktaları tüketici hizmetleriyle (örnek olarak Onedrive.live.com) aynı değildir, dolayısıyla bölünmüş bölme kullanıcının doğrudan tüketici hizmetlerine erişmesine izin vermez. Tüketici uç noktalarına yönelik trafik VPN trafiğini kullanmaya devam edecektir ve var olan ilkeler de uygulanır.
+Hayır, etmez, Microsoft 365 uç noktaları tüketici hizmetleriyle aynı değildir (örnek olarak Onedrive.live.com), bu nedenle bölünmüş tünel kullanıcının tüketici hizmetlerine doğrudan erişmesine izin vermez. Tüketici uç noktalarına yönelik trafik VPN tünelini kullanmaya devam eder ve mevcut ilkeler uygulanmaya devam eder.
 
-### <a name="how-do-i-apply-dlp-and-protect-my-sensitive-data-when-the-traffic-no-longer-flows-through-my-on-premises-solution"></a>Trafik artık şirket içi çözümümde akmasa da DLP'i nasıl uygulayabilirim ve hassas verilerimi nasıl koruyabilirim?
+### <a name="how-do-i-apply-dlp-and-protect-my-sensitive-data-when-the-traffic-no-longer-flows-through-my-on-premises-solution"></a>Nasıl yaparım? şirket içi çözümüm üzerinden trafik akışı olmadığında DLP uygulamak ve hassas verilerimi korumak mı?
 
-Hassas bilgilerin yanlışlıkla açıklanmasına yardımcı olmak için Microsoft 365 çok zengin bir [araç kümesi vardır](../compliance/information-protection.md). Uygunsuz şekilde depolanan veya paylaşılan hassas [bilgileri algılamak](../compliance/dlp-learn-about-dlp.md) için Teams ve SharePoint DLP özelliklerini kullanabilirsiniz. Uzaktan çalışma stratejinizin bir parçası kendi cihazınızı getirme (BYOD) ilkesi içeriyorsa, hassas verilerin kullanıcıların kişisel cihazlarına indirilsini önlemek için uygulama tabanlı Koşullu Erişim'i kullanabilirsiniz [](/azure/active-directory/conditional-access/app-based-conditional-access)
+Microsoft 365, hassas bilgilerin yanlışlıkla açığa çıkmasını önlemenize yardımcı olmak için zengin bir [yerleşik araçlar](../compliance/information-protection.md) kümesine sahiptir. Uygun olmayan şekilde depolanan veya paylaşılan hassas bilgileri algılamak için Teams ve SharePoint'in yerleşik [DLP özelliklerini](../compliance/dlp-learn-about-dlp.md) kullanabilirsiniz. Uzaktan çalışma stratejinizin bir bölümü kendi cihazını getir (KCG) ilkesini içeriyorsa, hassas verilerin kullanıcıların kişisel cihazlarına indirilmesini önlemek için [uygulama tabanlı Koşullu Erişim'i](/azure/active-directory/conditional-access/app-based-conditional-access) kullanabilirsiniz
 
-### <a name="how-do-i-evaluate-and-maintain-control-of-the-users-authentication-when-they-are-connecting-directly"></a>Doğrudan bağlanıyorken kullanıcının kimlik doğrulamasını nasıl değerlendirir ve denetimlerini sürdürürim?
+### <a name="how-do-i-evaluate-and-maintain-control-of-the-users-authentication-when-they-are-connecting-directly"></a>Nasıl yaparım? doğrudan bağlanırken kullanıcının kimlik doğrulaması denetimini değerlendirmek ve korumak?
 
-Q1'de belirtilen kiracı kısıtlamaları özelliğine ek [olarak, kimlik](/azure/active-directory/conditional-access/overview) doğrulama isteğinin riskini dinamik olarak değerlendirmek ve uygun şekilde ifade etmek için koşullu erişim ilkeleri de uygulanabilir. Microsoft zaman içinde [Sıfır Güven modelinin](https://www.microsoft.com/security/zero-trust?rtc=1) uygulanmasını önermektedir ve mobil ve ilk bulutta denetimi korumak için Azure AD koşullu erişim ilkelerini kullanabiliriz. Koşullu erişim ilkeleri, kimlik doğrulama isteğinin başarılı olup olmadığı konusunda gerçek zamanlı olarak karar vermede kullanılabilir. Örneğin:
+Q1'de belirtilen kiracı kısıtlamaları özelliğine ek olarak, kimlik doğrulama isteğinin riskini dinamik olarak değerlendirmek ve uygun şekilde tepki vermek için [koşullu erişim ilkeleri](/azure/active-directory/conditional-access/overview) uygulanabilir. Microsoft[, Sıfır Güven modelinin](https://www.microsoft.com/security/zero-trust?rtc=1) zaman içinde uygulanmasını önerir ve mobil ve bulut öncelikli bir dünyada denetimi korumak için Azure AD koşullu erişim ilkelerini kullanabiliriz. Koşullu erişim ilkeleri, kimlik doğrulama isteğinin başarılı olup olmadığına ilişkin gerçek zamanlı bir karar vermek için aşağıdakiler gibi çeşitli faktörlere göre kullanılabilir:
 
-- Cihaz, bilinen/güvenilen/Etki Alanı katılmış cihaz mı?
-- IP – Kimlik doğrulama isteği bilinen bir şirket IP adresinden mi geliyor? Yoksa güven güvenmemiz gereken bir ülkede mi?
+- Cihaz, cihaz biliniyor mu/güvenilen/Etki alanına katılmış mı?
+- IP – Kimlik doğrulama isteği bilinen bir kurumsal IP adresinden mi geliyor? Yoksa güvenmediğimiz bir ülkeden mi?
 - Uygulama – Kullanıcı bu uygulamayı kullanma yetkisine sahip mi?
 
-Bundan sonra onaylama, MFA'ya yönelik kimlik doğrulamayı tetikleme veya bu ilkelere dayalı kimlik doğrulamayı engelleme gibi ilkeler tetikl olabilir.
+Daha sonra bu ilkelere göre onaylama, MFA'yı tetikleme veya kimlik doğrulamasını engelleme gibi ilkeler tetikleyebiliriz.
 
-### <a name="how-do-i-protect-against-viruses-and-malware"></a>Virüslere ve kötü amaçlı yazılımlara nasıl koruma yapabilirim?
+### <a name="how-do-i-protect-against-viruses-and-malware"></a>Virüslere ve kötü amaçlı yazılımlara karşı koruma Nasıl yaparım??
 
-Ayrıca, Microsoft 365 bu belgede ana hatlarıyla açıklanan, hizmetin kendi içinde yer alan çeşitli katmanlarda en iyi duruma getirme uç noktaları için [de koruma sağlar](/office365/Enterprise/office-365-malware-and-ransomware-protection). Burada da olduğu gibi, bu güvenlik öğelerini, protokolleri/trafiği tam olarak anlamayan cihazlarla uyumlu olarak yerine hizmette sağlamak çok daha verimlidir. Varsayılan olarak, SharePoint Online [bilinen kötü amaçlı yazılım için dosya karşıya yüklemelerini](../security/office-365-security/virus-detection-in-spo.md) otomatik olarak tarar
+Microsoft 365, hizmetin kendisindeki çeşitli katmanlarda işaretlenen uç noktaları en iyi duruma getirme için [bu belgede açıklanan](/office365/Enterprise/office-365-malware-and-ransomware-protection) korumayı da sağlar. Belirtildiği gibi, bu güvenlik öğelerini protokolleri/trafiği tam olarak anlamayabilecek cihazlara uygun olarak yapmaya çalışmak yerine hizmetin kendisinde sağlamak çok daha verimlidir. Varsayılan olarak, SharePoint Online bilinen kötü amaçlı yazılım için [dosya yüklemelerini otomatik olarak tarar](../security/office-365-security/virus-detection-in-spo.md)
 
-Yukarıda listelenen Exchange uç noktaları için, [Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) ve [Microsoft 365 için Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) hizmette trafiğin güvenliğini sağlama konusunda mükemmel bir iş yapar.
+Yukarıda listelenen Exchange uç noktaları için [Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) ve [Microsoft 365 için Microsoft Defender](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), hizmete yönelik trafiğin güvenliğini sağlamak için mükemmel bir iş yapar.
 
-### <a name="can-i-send-more-than-just-the-optimize-traffic-direct"></a>Trafiği doğrudan en iyi duruma getirme hakkında daha fazla şey gönderebilir miyim?
+### <a name="can-i-send-more-than-just-the-optimize-traffic-direct"></a>Yalnızca Trafiği en iyi duruma getirme doğrudanından fazlasını gönderebilir miyim?
 
-En iyi duruma getirmek **için en iyi** duruma getirme uç noktalarına öncelik ver verilmesi gerekir, bu da düşük bir çalışma düzeyi için en yüksek avantaj sağlar. Öte yandan isterseniz, hizmetin çalışması için İşaretli uç noktalara izin ver gerekir ve gerekirse  kullanılan uç noktalar için IP adresleri sağlanır.
+Düşük çalışma düzeyi için en yüksek avantajı sağlayacağından, işaretlenen uç noktaları **iyileştir'e** öncelik verilmelidir. Ancak isterseniz, hizmetin çalışması için İşaretli uç noktalara izin ver ve gerekirse kullanılabilecek uç noktalar için IP adreslerinin sağlanması gerekir.
 
-Ayrıca, genel web'e gözatma için merkezi güvenlik, denetim ve şirket ilkesi uygulaması sağlayan güvenli _web_ ağ geçitleri olarak adlandırılan bulut tabanlı ara sunucu/güvenlik çözümleri sunan çeşitli satıcılar da vardır. Bu çözümler yüksek düzeyde kullanılabilir, performansı yüksekse ve kullanıcıya yakın bulut tabanlı bir konumdan güvenli İnternet erişimi sağlayarak kullanıcılarınıza yakın bir konumda sağlandısa, bu çözümler ilk bulutta işe kullanılabilir. Bu işlem, genel göz atma trafiği için VPN/şirket ağına göz atma ihtiyacını ortadan kaldırır ve yine de merkezi güvenlik denetimine izin verir.
+Genel web tarama için merkezi güvenlik, denetim ve şirket ilkesi uygulaması sağlayan _güvenli web ağ geçitleri_ olarak adlandırılan bulut tabanlı ara sunucu/güvenlik çözümleri sunan çeşitli satıcılar da vardır. Bu çözümler, yüksek oranda kullanılabilirse, yüksek oranda kullanılabilir, yüksek performanslı ve kullanıcılarınızın yakınında sağlanmış bulut tabanlı bir konumdan güvenli İnternet erişiminin kullanıcıya yakın bir konumdan teslim edilmesine izin vererek bulut öncelikli bir dünyada iyi çalışabilir. Bu, genel göz atma trafiği için VPN/kurumsal ağ üzerinden bir saç tokası gereksinimini ortadan kaldırırken, merkezi güvenlik denetimine de izin verir.
 
-Ancak bu çözümler yerine hiç gönderilmese bile Microsoft, Trafiğin Microsoft 365 olarak en iyi duruma getirmenin doğrudan hizmete gönderilmelerini kesinlikle önermektedir.
+Ancak bu çözümler geçerli olsa bile, Microsoft işaretlenen Microsoft 365 trafiğini en iyi duruma getirmenin doğrudan hizmete gönderilmesini kesinlikle önerir.
 
-Azure Sanal Ağına doğrudan erişim izni vermeyle ilgili kılavuz için bkz. [Azure VPN Ağ Geçidi Noktadan siteye kullanılarak uzaktan çalışma](/azure/vpn-gateway/work-remotely-support).
+Azure Sanal Ağ doğrudan erişime izin verme yönergeleri için bkz. Noktadan [siteye Azure VPN Gateway kullanarak uzaktan çalışma](/azure/vpn-gateway/work-remotely-support).
 
-### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>Bağlantı noktası 80 neden gereklidir? Trafik temiz olarak gönderilir mi?
+### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>Bağlantı noktası 80 neden gereklidir? Trafik temiz mi gönderildi?
 
-Bağlantı noktası 80 yalnızca bağlantı noktası 443 oturumuna yeniden yönlendirme gibi şeyler için kullanılır, müşteri verileri gönderilmez veya bağlantı noktası 80 üzerinden erişilebilir olmaz. [Şifreleme](../compliance/encryption.md), toplu taşımadaki ve kalan verilerin ana hatlarını Microsoft 365 türleri ve medya trafiğini korumak için [](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic) SRTP'yi nasıl Teams ana hatlarıyla gösterir.
+80 numaralı bağlantı noktası yalnızca bağlantı noktası 443 oturumuna yeniden yönlendirme, hiçbir müşteri verisi gönderilmez veya 80 numaralı bağlantı noktası üzerinden erişilebilir olması gibi işlemler için kullanılır. [Şifreleme](../compliance/encryption.md) , Microsoft 365 için aktarımdaki ve bekleyen veriler için şifrelemeyi özetler ve [Trafik türleri](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic) , Teams medya trafiğini korumak için SRTP'yi nasıl kullandığımızı özetler.
 
-### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-microsoft-365"></a>Bu öneri dünya çapında bir örnek kullanan Çin'deki kullanıcılar için geçerli Microsoft 365?
+### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-microsoft-365"></a>Bu öneri, Microsoft 365'in dünya çapında bir örneğini kullanan Çin kullanıcıları için geçerli mi?
 
-**Hayır**, yok. Yukarıdaki tavsiyeye bir uyarı, Dünya çapında bir örnekle bağlantılı olan ÇÇY'de yer alan kullanıcılardır ve bu Microsoft 365. Bölgede çapraz ağ tıkanıklığı sık ortaya çıkma nedeniyle, doğrudan İnternet çıkış performansı değişken olabilir. Bölgedeki çoğu müşteri, trafiği şirket ağına getirmek için VPN kullanarak çalışır ve en iyi duruma getirilmiş bir yol üzerinden ülke dışına çıkışa benzer şekilde yetkili MPLS devrelerini kullanır. Bu durum, Çin kullanıcılarına performans iyileştirme [Microsoft 365 ilgili makalede daha ayrıntılı olarak açıklanmıştır](microsoft-365-networking-china.md).
+**Hayır**, etmiyor. Yukarıdaki önerilerden biri, PRC'deki microsoft 365'in dünya çapındaki bir örneğine bağlanan kullanıcılardır. Bölgede sınır ötesi ağ tıkanıklığının yaygın olarak ortaya çıkması nedeniyle, doğrudan İnternet çıkış performansı değişken olabilir. Bölgedeki müşterilerin çoğu trafiği kurumsal ağa getirmek için VPN kullanarak çalışır ve iyileştirilmiş bir yol aracılığıyla yetkili MPLS devrelerini veya ülke dışına çıkışa benzer bir şekilde kullanır. Bu, [Çin kullanıcıları için Microsoft 365 performans iyileştirme](microsoft-365-networking-china.md) makalesinde daha ayrıntılı olarak açıklanmıştır.
 
-### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>Bölünmüş yapılandırma yapılandırması bir tarayıcıda Teams için çalışıyor mu?
+### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>Bölünmüş tünel yapılandırması tarayıcıda çalışan Teams için çalışır mı?
 
-Evet, uyarılarla birlikte. en Teams işlevleri, Şu tarayıcılar için istemci [al'da listelenen tarayıcılarda Microsoft Teams](/microsoftteams/get-clients#web-client).
+Evet, uyarılarla. Teams işlevlerinin çoğu [, Microsoft Teams için istemcileri alma](/microsoftteams/get-clients#web-client) bölümünde listelenen tarayıcılarda desteklenir.
 
-Buna ek Microsoft Edge **96** ve üzeri, Edge [WebRtcRespectOsRoutingTableEnabled](/deployedge/microsoft-edge-policies#webrtcrespectosroutingtableenabled) ilkesi etkinleştirerek eşler arası trafik için VPN bölünmüş trafiği destekler. Şu anda, diğer tarayıcılar eşler arası trafik için VPN bölünmüş eşlemeyi desteklemeyebilirsiniz.
+Ayrıca Microsoft Edge **96 ve üzeri** , Edge [WebRtcRespectOsRoutingTableEnabled](/deployedge/microsoft-edge-policies#webrtcrespectosroutingtableenabled) ilkesini etkinleştirerek eşler arası trafik için VPN bölünmüş tünel oluşturmayı destekler. Şu anda diğer tarayıcılar eşler arası trafik için VPN bölünmüş tünel oluşturmayı desteklemeyebilir.
 
 ## <a name="related-articles"></a>İlgili makaleler
 
-[VPN bölmeli bölme Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
+[Microsoft 365 için VPN bölünmüş tüneli uygulama](microsoft-365-vpn-implement-split-tunnel.md)
 
-[Kullanıcılar için yaygın VPN bölme bölme Microsoft 365](microsoft-365-vpn-common-scenarios.md)
+[Microsoft 365 için yaygın VPN bölünmüş tünel senaryoları](microsoft-365-vpn-common-scenarios.md)
 
-[VPN bölünmüş Teams için medya trafiğinin güvenliğini sağlama](microsoft-365-vpn-securing-teams.md)
+[VPN bölünmüş tüneli için Teams medya trafiğinin güvenliğini sağlama](microsoft-365-vpn-securing-teams.md)
 
-[VPN ortamlarında Stream ve canlı etkinlikler için dikkat edilmesi gereken noktalar](microsoft-365-vpn-stream-and-live-events.md)
+[VPN ortamlarında Akış ve canlı etkinlikler için özel dikkat edilmesi gerekenler](microsoft-365-vpn-stream-and-live-events.md)
 
-[Microsoft 365 kullanıcıları için performans iyileştirmeyi iyileştirme](microsoft-365-networking-china.md)
+[Çin kullanıcıları için Microsoft 365 performans iyileştirmesi](microsoft-365-networking-china.md)
 
-[Microsoft 365 Ağ Bağlantısı İlkeleri](microsoft-365-network-connectivity-principles.md)
+[Microsoft 365 Ağ Bağlantı İlkeleri](microsoft-365-network-connectivity-principles.md)
 
-[Ağ Microsoft 365 değerlendirme](assessing-network-connectivity.md)
+[Microsoft 365 ağ bağlantısını değerlendirme](assessing-network-connectivity.md)
 
-[Microsoft 365 ve performans ayarını yapılandırma](network-planning-and-performance.md)
+[Microsoft 365 ağ ve performans ayarlama](network-planning-and-performance.md)
 
-[Günümüzün benzersiz uzaktan çalışma senaryolarında güvenlik uzmanlarının ve BT'nin modern güvenlik denetimlerini elde etmenin alternatif yolları (Microsoft Güvenlik Ekibi blogu)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+[Günümüzün benzersiz uzaktan çalışma senaryolarında modern güvenlik denetimleri elde etmek için güvenlik uzmanları ve BT için alternatif yollar (Microsoft Güvenlik Ekibi blogu)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
-[Microsoft'ta VPN performansını geliştirme: otomatik Windows 10 izin vermek için VPN profillerini kullanma](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
+[Microsoft'ta VPN performansını geliştirme: otomatik bağlantılara izin vermek için Windows 10 VPN profillerini kullanma](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
-[VPN ile çalışma: Microsoft uzaktan iş gücüne nasıl bağlı tutarak](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
+[VPN üzerinde çalıştırma: Microsoft uzak iş gücünü nasıl bağlı tutuyor?](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
-[Microsoft genel ağı](/azure/networking/microsoft-global-network)
+[Microsoft küresel ağı](/azure/networking/microsoft-global-network)

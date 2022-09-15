@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c627d21c4416cecf5be98c6730e508d332dcad9b
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 7bb760eb29f54554f58efedaa54ab9ca1cadf312
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663552"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67696671"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -193,7 +193,7 @@ Anlamlı raporlama ile daha tutarlı bir etiket deneyimi için, kullanıcıları
 
 ## <a name="encryption-based-label-matching-for-documents"></a>Belgeler için şifreleme tabanlı etiket eşleştirme
 
-Bir belge yönetici tanımlı izinlerle şifrelendiğinde, şifreleme bilgileri eşleşen bir duyarlılık etiketi hakkındaki bilgileri içerir. Sonuç olarak, bir kullanıcı bu belgeyi bir Office uygulamasında açtığında, eşleşen etiket Office uygulamasında görüntülenir ve belge kaydedilirse kalıcı olur.
+Bir belge yönetici tanımlı izinlerle şifrelendiğinde, şifreleme ilkesi belgeye eklenir. Bu, etiketlemeden bağımsız olarak gerçekleşir. Örneğin, bir Office eki bir e-posta iletisinden şifrelemeyi devraldığında veya bir kullanıcı Kendi Office uygulamasında Bilgi Hakları Yönetimi (IRM) kullanarak bir koruma şablonu uyguladığında. Kiracıdaki bir duyarlılık etiketi aynı şifreleme ilkesiyle eşleşiyorsa, Office uygulamaları bu eşleşen etiketi belgeye otomatik olarak atar.
 
 Bu senaryoda, eşleşen duyarlılık etiketi etiketlenmemiş bir belgeyi etiketleyebilir ve şifreleme uygulamayan mevcut bir etiketi değiştirebilir. Örneğin, **Genel** etiketi **Gizli / Tüm Çalışanlar** ile değiştirilir. Belge daha önce etiketlenmemişse ve AIP Eklentisini kullanmıyorsanız, eşleşen etiketten içerik işaretleri otomatik olarak uygulanmaz.
 
@@ -211,7 +211,7 @@ Ancak, bu davranışı alıcı tarafından açıldığında e-posta ekleri için
     
     Etkinlik Gezgini'nde görüntülenen bir denetim olayı olarak, bu kullanıcı e-posta göndereni değil etiketi uyguladı.
 
-Şifreleme tabanlı etiket eşleştirmesi yalnızca kiracı içinde, yönetici tanımlı izinler için çalışır ve eşleşen duyarlılık etiketi belgeyi açan kullanıcıya yayımlanmalıdır.
+Şifreleme tabanlı etiket eşleştirmesi yalnızca kiracı içinde, yönetici tanımlı izinler için çalışır ve eşleşen duyarlılık etiketi belgeyi açan kullanıcıya yayımlanmalıdır. Belge kaydedilirse eşleşen etiket kalır.
 
 ## <a name="sensitivity-label-compatibility"></a>Duyarlılık etiketi uyumluluğu
 

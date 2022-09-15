@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.subservice: mde
-ms.openlocfilehash: 22d8e5e394ef1deca06c5cec75c356ed31847d13
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 68d1d7335f0a6f7c20759ae2bb8a52a84b465773
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679393"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67693245"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Uç Nokta için Microsoft Defender Topluluk Merkezine erişin
 

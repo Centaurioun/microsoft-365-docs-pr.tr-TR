@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 8ae4ff58ae71ef51d09716761d2660d239f51083
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 0ff6d8074131e1595ee651c40e59a0b9b03eb063
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523830"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67692607"
 ---
 # <a name="investigate-agent-health-issues"></a>Sistem durumu sorunlarını araştırın
 

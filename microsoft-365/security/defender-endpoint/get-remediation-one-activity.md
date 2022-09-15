@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: c6542f111ce6868a00805de41b3274546dfcc535
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 7db063e886fc32fcd758d6be2f893116eb75bb3c
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523500"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67696714"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Kimlikle bir düzeltme etkinliği al
 
@@ -99,14 +100,14 @@ Vendorıd|Dize|İlgili satıcı adı|Microsoft
 ### <a name="request-example"></a>İstek örneği
 
 ```http
-GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c
+GET https://api.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c
 ```
 
 ### <a name="response-example"></a>Yanıt örneği
 
 ```json
 {
-    "@odata.context": "https://wpatdadi-luna-stg.cloudapp.net/api/$metadata#RemediationTasks/$entity",
+    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#RemediationTasks/$entity",
     "id": "03942ef5-aecb-4c6e-b555-d6a97013844c",
     "title": "Update Microsoft Silverlight",
     "createdOn": "2021-02-10T13:20:36.4718166Z",

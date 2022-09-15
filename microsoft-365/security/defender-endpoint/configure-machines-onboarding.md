@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 8a4a97e082e0f3b6d129e8c1bf86c6918de29b89
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 1ce8e10269e90c7b48a541e806847cc5f896e971
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67678613"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67695725"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>cihazları Uç Nokta için Microsoft Defender ekleme
 

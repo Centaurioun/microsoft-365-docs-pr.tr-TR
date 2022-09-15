@@ -16,12 +16,13 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5b0ed6ace2aafba9270e757b7bef9ab313e92ccc
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: 6e507eb344f1dabc485bd89e68e9dcef8213419b
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67575757"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67694005"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya bu arabirimle etkileşim kurmasını engelleme
 

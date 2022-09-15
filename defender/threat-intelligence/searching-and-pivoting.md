@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: e5c621eaf22b00a8d0c29aa17063882e2873be2b
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: dbd62f4455b29bd2c23061096e126454d5c0d089
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387209"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67693609"
 ---
 # <a name="searching-and-pivoting"></a>Arama ve özetleme
 
@@ -228,11 +228,6 @@ Daha fazla bilgi için bkz. [Projeleri kullanma](using-projects.md).
 
 ![Özet Sekmesi Projeleri](media/summaryTabProjects.png)
 
-### <a name="hashes"></a>Karmalar
-
-Microsoft, karma veri kümesini doldurmak üzere sorgulanan altyapıyla eşleştirmek için çeşitli ticari ve açık kaynak kötü amaçlı yazılım veri depolarıyla iş ortağıdır. Günümüzde kötü amaçlı yazılım depoları Proofpoint'in Yeni Ortaya Çıkan Tehditleri, Hibrit Analizi ve VirusTotal'ı içerir. Bu veriler, kullanıcıların bir saldırganın aktör özelliklerini, amacını ve motivasyonlarını anlamasına yardımcı olurken altyapının birbirine bağlanmasına da yardımcı olur. Her sonuç benzersiz bir karma içerir. Karma verilerimiz algılama kaynağını, örneğini ve toplama tarihini içerir.
-
-![Özet Sekmesi Karmaları](media/summaryTabHashes.png)
 
 ## <a name="data-tab"></a>Veri sekmesi
 
@@ -253,7 +248,6 @@ Aşağıdaki veri kümeleri Defender TI'de kullanılabilir:
 - Alt
 - Bileşen
 - Konak Çiftleri
-- Karmalar
 - Tanımlama bilgileri
 - Hizmetleri
 - DNS
@@ -412,17 +406,6 @@ Konak çifti verilerimiz şunları içerir:
 
 ![Veri Sekmesi Konak Çiftleri](media/dataTabHostPairs.png)
 
-### <a name="hashes"></a>Karmalar
-
-Microsoft, karma veri kümesini doldurmak üzere sorgulanan altyapıyla eşleştirmek için çeşitli ticari ve açık kaynak kötü amaçlı yazılım veri depolarıyla iş ortağıdır. Günümüzde kötü amaçlı yazılım depoları Proofpoint'in Yeni Ortaya Çıkan Tehditleri, Hibrit Analizi ve VirusTotal'ı içerir. Bu veriler, kullanıcıların bir saldırganın aktör özelliklerini, amacını ve motivasyonlarını anlamasına yardımcı olurken altyapının birbirine bağlanmasına da yardımcı olur. Her sonuç benzersiz bir karma içerir.
-
-Karma verilerimiz şunları içerir:
-
-1. **Kaynak:** Karmayı algılamak için kullanılan kaynak.
-2. **Örnek:** Algılanan karma için benzersiz tanımlama kodu.
-3. **Toplama Tarihi:** Karma örneğin belirlenen kaynak tarafından toplandığı gün.
-
-![Veri Sekmesi Karmaları](media/dataTabHashes.png)
 
 ### <a name="cookies"></a>Tanımlama bilgileri
 

@@ -14,12 +14,13 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 16f46ad95b2de0b871ef1baa5dbf8ae979eebe16
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 55a66dc6a5de372e0ccec7320982fd0a7fc89a70
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67524116"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67693091"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Sanal Masaüstü Altyapısı (VDI) ortamında Microsoft Defender Virüsten Koruma için dağıtım klavuzu
 

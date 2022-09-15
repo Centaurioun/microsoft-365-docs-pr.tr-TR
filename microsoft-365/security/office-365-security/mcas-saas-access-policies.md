@@ -17,12 +17,13 @@ ms.collection:
 - zerotrust-solution
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: d92d0c39b1a5c240df4a119c2c775ab108df5efd
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: d078ad914b3238eed690910d62151de43559a0a2
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596434"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67693631"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>SaaS uygulamaları için önerilen Microsoft Defender for Cloud Apps ilkeleri
 

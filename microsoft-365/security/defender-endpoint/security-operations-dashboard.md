@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 4215c196cd92506f672a84c86f0dd0d1114f6852
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: be52ed0d0c4ac2d2388f4d8dd3009e56ee6dbcab
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584539"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67693983"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender Güvenlik Merkezi Güvenlik işlemleri panosu
 

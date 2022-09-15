@@ -16,12 +16,13 @@ ms.subservice: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d147ef775d012628ff6e5a4410f800d08a792adb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 7dd4c18a9f35e1209ff47f003bc8bb523ff3a2f8
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481888"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67696561"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Bulut engelleme zaman aşımı dönemini yapılandırın
 

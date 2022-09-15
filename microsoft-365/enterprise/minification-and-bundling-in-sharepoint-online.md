@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 1/18/2022
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: HTTP isteklerini ve SharePoint Online'da sayfaları yükleme süresini azaltmak için Web Essentials ile küçültme ve paketleme tekniklerini kullanmayı öğrenin.
-ms.openlocfilehash: b02cf095b1d7f05a82df1cf98a590ff762453f8a
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 38149275f2f3987fe5c989b355fc1f5aa5368f69
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637637"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67694513"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>SharePoint Online'da küçültme ve paketleme
 
@@ -41,7 +41,7 @@ JavaScript ve CSS dosyaları için, boşluk ve gerekli olmayan diğer karakterle
 CSS ve JavaScript dosyalarını paketlemek için Web Essentials gibi üçüncü taraf yazılımları kullanabilirsiniz.
   
 > [!IMPORTANT]
-> Web Essentials üçüncü taraf, açık kaynaklı, topluluk tabanlı bir projedir. Yazılım, Visual Studio 2012 ve Visual Studio 2013 için bir uzantıdır ve Microsoft tarafından desteklenmez. Web Essentials'ı indirmek için [Web Essentials 2012'deki](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebEssentials2012) web sitesini ziyaret edin.
+> Web Essentials üçüncü taraf, açık kaynaklı, topluluk tabanlı bir projedir. Yazılım, Visual Studio 2012 ve Visual Studio 2013 bir uzantısıdır ve Microsoft tarafından desteklenmez. Web Essentials'ı indirmek için [Web Essentials 2012'deki](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebEssentials2012) web sitesini ziyaret edin.
   
 Web Essentials iki tür paketleme sunar:
  
@@ -54,7 +54,7 @@ Web Essentials iki tür paketleme sunar:
   
 ### <a name="to-create-a-te000127218-and-css-bundle-in-web-essentials"></a>Web Essentials'ta TE000127218 ve CSS paketi oluşturmak için
   
-1. Visual Studio,Çözüm Gezgini'da pakete eklemek istediğiniz dosyaları seçin.
+1. Visual Studio'da, Çözüm Gezgini paketine eklemek istediğiniz dosyaları seçin.
 2. Seçili dosyalara sağ tıklayın ve bağlam **menüsünden Web Essentials** \> **JavaScript paket dosyası oluştur'u** seçin. Örneğin:
 
     ![Web Temel Parçalar menü seçeneklerini gösteren ekran görüntüsü.](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
@@ -89,7 +89,7 @@ JavaScript ve CSS dosyalarını nasıl paketlediğinize benzer şekilde, birçok
   
 ### <a name="to-create-an-image-sprite-in-web-essentials"></a>Web Essentials'ta görüntü sprite'i oluşturmak için**
   
-1. Visual Studio,Çözüm Gezgini'da pakete eklemek istediğiniz dosyaları seçin.
+1. Visual Studio'da, Çözüm Gezgini paketine eklemek istediğiniz dosyaları seçin.
 2. Seçili dosyalara sağ tıklayın ve bağlam **menüsünden Web Essentials** \> **Görüntü sprite oluştur'u** seçin. Örneğin:
 
     ![Görüntü sprite'i oluşturmayı gösteren ekran görüntüsü.](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)

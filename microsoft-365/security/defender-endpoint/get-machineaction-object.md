@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 4cf04ebcb1d08eb582215fe7fbefd57440aa808c
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 7b3bff28afaa622bb8b9beb94beeb3169167c9ba
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67522267"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67694843"
 ---
 # <a name="get-machineaction-api"></a>machineAction API'lerini alma
 

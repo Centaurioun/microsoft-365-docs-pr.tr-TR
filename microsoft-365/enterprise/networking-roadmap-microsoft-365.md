@@ -1,5 +1,5 @@
 ---
-title: Web siteleri için ağ Microsoft 365
+title: Microsoft 365 için ağ yol haritası
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -8,69 +8,69 @@ manager: scotv
 ms.date: 03/03/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Ağ oluşturma, planlama, uygulama ve yönetmeye Microsoft 365 haritası.
-ms.openlocfilehash: cfefd668f91eb074259d056b3b573b9c0f636bb6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Microsoft 365 ağını planlama, uygulama ve yönetme yol haritası.
+ms.openlocfilehash: f9c88e2f6e9181b39cfb35508b07e6b57da43b9d
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325201"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67695854"
 ---
-# <a name="networking-roadmap-for-microsoft-365"></a>Web siteleri için ağ Microsoft 365
+# <a name="networking-roadmap-for-microsoft-365"></a>Microsoft 365 için ağ yol haritası
 
-Microsoft 365 uygulamaları işbirliği ve üretkenlik bulut hizmetlerini, iş birliği Microsoft Intune çeşitli kimlik ve güvenlik hizmetlerini Microsoft Azure. Bu bulut tabanlı hizmetlerin hepsi, istemci cihazlarından İnternet veya özel devreler üzerinden  alınan bağlantıların güvenliğine, performansına ve güvenilirliğine güvenir. Microsoft, bu hizmetleri barındırmak ve dünyanın her tarafından müşterilerin kullanımına sunmak için, performansı ve tümleştirmeyi vurgulayan bir ağ altyapısı tasarmiştir.
+Kuruluşlar için Microsoft 365 işbirliği ve üretkenlik bulut hizmetlerini, Microsoft Intune ve Microsoft Azure'ın birçok kimlik ve güvenlik hizmetini içerir. Bu bulut tabanlı hizmetlerin tümü, İnternet veya ayrılmış devreler üzerinden istemci cihazlardan gelen bağlantıların güvenliğine, performansına ve güvenilirliğine dayanır. Microsoft, bu hizmetleri barındırmak ve tüm dünyadaki müşterilerin kullanımına sunmak için performans ve tümleştirmeyi vurgulayan bir ağ altyapısı tasarlamıştır.
 
-Kullanıcı eklemeye giriş Microsoft 365 önemli bir parçası, ağ ve İnternet bağlantılarının en iyi duruma getirilmiş erişim için ayarlanmış olduğundan emin olmaktır. Genel olarak dağıtılmış Hizmet Olarak Yazılım (SaaS) buluta erişmek için şirket içi ağın yapılandırılması, şirket içi veri merkezlerine trafiğin en iyi duruma getirilmiş geleneksel ağdan ve merkezi bir İnternet bağlantısından farklıdır.
+Microsoft 365 ekleme işleminin önemli bir parçası, ağ ve İnternet bağlantılarınızın iyileştirilmiş erişim için ayarlandığından emin olmaktır. Şirket içi ağınızı genel olarak dağıtılmış bir Hizmet Olarak Yazılım (SaaS) buluta erişecek şekilde yapılandırmak, şirket içi veri merkezlerine giden trafik ve merkezi İnternet bağlantısı için iyileştirilmiş geleneksel bir ağdan farklıdır.
 
-Bu makaleler, önemli farklılıkları anlamak ve şirket içi kullanıcılarınız için en iyi performansı elde etmek üzere uç cihazlarınızı, istemci bilgisayarlarınızı ve şirket içi ağlarınızı değiştirmek için kullanın.
+Temel farklılıkları anlamak ve şirket içi kullanıcılarınız için en iyi performansı elde etmek üzere uç cihazlarınızı, istemci bilgisayarlarınızı ve şirket içi ağınızı değiştirmek için bu makaleleri kullanın.
 
 ## <a name="plan"></a>Plan
 
-Ağ uygulamanın planlama aşamasında:
+Ağ uygulamanızın planlama aşamasında:
 
-- [Microsoft 365 ağının nasıl çalıştığını anlama](microsoft-365-networking-overview.md)
-- [Ağ bağlantısı ilkeleri hakkında bilgi](microsoft-365-network-connectivity-principles.md)
+- [Microsoft 365 ağlarının nasıl çalıştığını anlama](microsoft-365-networking-overview.md)
+- [Ağ bağlantısı ilkeleri hakkında bilgi edinin](microsoft-365-network-connectivity-principles.md)
 - [Geçerli ağ bağlantınızı değerlendirme](assessing-network-connectivity.md)
-- [ExpressRoute'un kurum için doğru olup olmadığını belirleme](network-planning-with-expressroute.md)
-- [Ağ cihazlarınızı planlama](plan-for-network-devices.md)
-- [Anızı geçiş için ayarlama](network-and-migration-planning.md)
+- [ExpressRoute'un kuruluşunuz için uygun olup olmadığını belirleme](network-planning-with-expressroute.md)
+- [Ağ cihazlarınız için planlama](plan-for-network-devices.md)
+- [Geçiş için ağınızı ayarlama](network-and-migration-planning.md)
 
-## <a name="deploy"></a>Dağıtma
+## <a name="deploy"></a>Dağıtım
 
-Ağ uygulamanın dağıtım aşamasında:
+Ağ uygulamanızın dağıtım aşamasında:
 
-- [Kurumsal ağın kurumsal ağ bağlantısının en Microsoft 365 emin olun](set-up-network-for-microsoft-365.md)
-- [Dns etki alanlarını organizasyonunız için ekleme](../admin/setup/add-domain.md)
-- [VPN bölünmüş tingin kullanarak uzak çalışanların bağlantısını en iyi duruma getirme](microsoft-365-vpn-split-tunnel.md)
-- [Ağ CDN iyileştirmek için yapılandırma](office-365-cdn-quickstart.md)
-- [Yeni uç noktalarla bağlantınızı Microsoft 365 iyileştirme](microsoft-365-ip-web-service.md)
-- Gerekirse [ExpressRoute'u yapılandırma](azure-expressroute.md)
+- [Kurumsal ağınızın Microsoft 365 bağlantısı için iyileştirildiğinden emin olun](set-up-network-for-microsoft-365.md)
+- [Kuruluşunuz için DNS etki alanlarını ekleme](../admin/setup/add-domain.md)
+- [VPN bölünmüş tüneli kullanarak uzak çalışanlar için bağlantıyı iyileştirme](microsoft-365-vpn-split-tunnel.md)
+- [Ağ performansını geliştirmek için CDN'yi yapılandırma](office-365-cdn-quickstart.md)
+- [Microsoft 365 uç noktalarına bağlantınızı iyileştirme](microsoft-365-ip-web-service.md)
+- Gerekirse [ExpressRoute'u yapılandırın](azure-expressroute.md)
 
 ## <a name="manage"></a>Yönetme
 
-Ağ uygulamanın yönetim aşamasında:
+Ağ uygulamanızın yönetim aşamasında:
 
 - [Microsoft 365 ağ bağlantısı test aracını kullanarak test etme ve iyileştirme](office-365-network-mac-perf-onboarding-tool.md)
-- [Ağ cihazlarınızı en son mobil cihaz uç noktalarını Office 365 emin olun](microsoft-365-endpoints.md)
+- [Ağ cihazlarınızın en son Office 365 uç noktalarını kullandığından emin olun](microsoft-365-endpoints.md)
 - [Ağ performansınızı izleme ve ayarlama](network-planning-and-performance.md)
 - [Microsoft 365 bağlantınızı izleme](monitor-connectivity.md)
 
 ## <a name="network-equipment-vendors"></a>Ağ ekipmanı satıcıları
 
-Bir ağ donanımı satıcısı iyebilirsiniz ve bu [satıcıya Microsoft 365 Ağ İş Ortağı Programı](microsoft-365-networking-partner-program.md). Ürün ve çözümlerinize ağ Microsoft 365 ilkeleri oluşturmak için programa kaydolabilirsiniz.
+Ağ ekipmanı satıcısıysanız [Microsoft 365 Ağ İş Ortağı Programı](microsoft-365-networking-partner-program.md) katılın. Ürünlerinize ve çözümlerinize Microsoft 365 ağ bağlantısı ilkeleri oluşturmak için programa kaydolın.
 
-## <a name="how-contoso-did-networking-for-microsoft-365"></a>Contoso'da ağ nasıl Microsoft 365
+## <a name="how-contoso-did-networking-for-microsoft-365"></a>Contoso Microsoft 365 için ağ iletişimi nasıl yaptı?
 
-Kurgusal ama çok uluslu bir işletme olan Contoso Corporation'ın, bulut hizmetleri için ağ cihazlarını ve [İnternet](contoso-networking.md) bağlantılarını nasıl Microsoft 365 öğrenin.
+Kurgusal ama temsili çok uluslu bir işletme olan Contoso Corporation'ın microsoft 365 bulut hizmetleri için [ağ cihazlarını ve İnternet bağlantılarını nasıl iyileştirdiğini](contoso-networking.md) görün.
 
 ![The Contoso Corporation.](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Sonraki adım
 
-Ağ bağlantısına genel bakış Microsoft 365 [ağ planlamanıza başlayabilirsiniz](microsoft-365-networking-overview.md).
+[Microsoft 365 ağ bağlantısına genel bakış ile ağ](microsoft-365-networking-overview.md) planlamanızı başlatın.
