@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 0398a1263ca396284398bb4ef48b0ebda50c84ff
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 3393096d7911012918108f3ad04de5c2fd19048f
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523918"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701048"
 ---
 # <a name="get-machine-by-id-api"></a>Id API'lerine göre makine alma
 
@@ -81,13 +82,13 @@ Boş
 ## <a name="response"></a>Yanıt
 
 Başarılıysa ve cihaz varsa - Gövdedeki [makine](machine.md) varlığıyla 200 Tamam.
-Belirtilen kimlikte makine bulunamadıysa - 404 Bulunamadı.
+Belirtilen kimlikli makine bulunamadıysa - 404 Bulunamadı.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="request-example"></a>İstek örneği
 
-burada isteğin bir örneği verilmiştir.
+burada isteğin bir örneği verilmiş.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07
@@ -95,7 +96,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c29
 
 ### <a name="response-example"></a>Yanıt örneği
 
-Yanıtın bir örneği aşağıda verilmiştir.
+Yanıtın bir örneğini aşağıda bulabilirsiniz.
 
 ```http
 HTTP/1.1 200 OK

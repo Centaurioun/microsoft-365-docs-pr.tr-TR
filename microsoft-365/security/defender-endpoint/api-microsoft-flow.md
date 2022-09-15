@@ -16,12 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 4cacdf602f732478133d8a6c98ea3be3efa1a69f
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 0b90fd4ecade2f79cac895c61a4a7327de8aaf66
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679295"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701972"
 ---
 # <a name="how-to-use-power-automate-connector-to-set-up-a-flow-for-events"></a>Olaylar için Akış ayarlamak için Power Automate Bağlayıcısı'nı kullanma
 

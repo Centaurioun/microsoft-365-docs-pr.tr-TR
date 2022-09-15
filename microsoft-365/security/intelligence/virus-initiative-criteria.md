@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7b7586a75c95202e2737bab857ab1ffebd04d6c4
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+search.appverid: met150
+ms.openlocfilehash: 546ed32abfbcf211190aed77a99458aa478c31c0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187744"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67699642"
 ---
 # <a name="microsoft-virus-initiative"></a>Microsoft Virüs Girişimi
 
@@ -31,15 +32,15 @@ Kötü amaçlı yazılımdan koruma veya virüsten koruma teknolojisi geliştire
 
 MVI programına hak kazanmak için kuruluşunuzun aşağıdaki tüm gereksinimleri karşılaması gerekir:
 
-1. Güvenlik çözümünüz Microsoft Defender Virüsten Koruma değiştirir veya tamamlayıcıdır.
+1. Güvenlik çözümünüz, Microsoft Defender Virüsten Koruma'nın yerini alır veya tamamlayıcıdır.
 
-2. Kuruluşunuz, Windows uyumluluğu ele alan son müşterilere uygulama güncelleştirmeleri geliştirmek ve dağıtmakla sorumludur.
+2. Kuruluşunuz, Windows ile uyumluluğu ele alan son müşterilere uygulama güncelleştirmeleri geliştirmek ve dağıtmakla sorumludur.
 
 3. Kuruluşunuzun kötü amaçlı yazılımdan koruma sektöründe etkin olması ve endüstri konferanslarına katılımın kanıtladığı veya AV-Comparatives, OPSWAT veya Gartner gibi endüstri standardı bir raporda gözden geçirildiği için olumlu bir üne sahip olması gerekir.
 
 4. Kuruluşunuzun Microsoft ile bir gizlilik sözleşmesi (NDA) imzalaması gerekir.
 
-5. Kuruluşunuzun bir program lisans sözleşmesi imzalaması gerekir. Bu lisans sözleşmesinin korunması, kötü amaçlı yazılımdan koruma uygulamaları için tüm program gereksinimlerine uymanızı gerektirir. Bu gereksinimler, Windows düzgün etkileşim sağlamak için gereken kötü amaçlı yazılımdan koruma uygulamalarının davranışını tanımlar.
+5. Kuruluşunuzun bir program lisans sözleşmesi imzalaması gerekir. Bu lisans sözleşmesinin korunması, kötü amaçlı yazılımdan koruma uygulamaları için tüm program gereksinimlerine uymanızı gerektirir. Bu gereksinimler, Windows ile düzgün etkileşim sağlamak için gereken kötü amaçlı yazılımdan koruma uygulamalarının davranışını tanımlar.
 
 6. Uygulamanızı düzenli performans testi ve özellik incelemesi için Microsoft'a göndermeniz gerekir.
 
@@ -53,7 +54,7 @@ MVI programına hak kazanmak için kuruluşunuzun aşağıdaki tüm gereksinimle
 |SKD Laboratuvarları|Sertifikasyon Gereksinimleri Ürünü: Virüsten koruma veya kötü amaçlı yazılımdan koruma </br> <http://www.skdlabs.com/html/english/> </br> <http://www.skdlabs.com/cert/>|SKD Labs Yıldız Denetimi Sertifikasyon Gereksinimleri geçiş >= %98,5 İsteğe Bağlı, Erişimde ve Toplam Algılama testleriyle|
 |VB 100|VB100 Sertifika Testi V1.1 </br> <https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/>|VB100 Sertifikası|
 |West Coast Labs|Onay İşareti Sertifikalı </br> <http://www.checkmarkcertified.com/sme/>|Ürün Güvenliği Performansında "A" Derecelendirmesi|
-|SE Labs|Koruma, Küçük İşletme veya Enterprise EP Koruma Testi  </br> <https://selabs.uk/en/reports/consumers/>|Koruma Derecelendirme veya Küçük İşletme EP A derecelendirmesi veya Enterprise EP Koruması A derecelendirmesi |
+|SE Labs|Koruma, Küçük İşletme veya Kurumsal EP Koruma Testi  </br> <https://selabs.uk/en/reports/consumers/>|Koruma Derecelendirme veya Küçük İşletme EP A derecelendirmesi veya Kurumsal EP Koruması A derecelendirmesi |
 
 ## <a name="apply-now"></a>Şimdi uygula
 

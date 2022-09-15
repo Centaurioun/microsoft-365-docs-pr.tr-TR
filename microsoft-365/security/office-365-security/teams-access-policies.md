@@ -21,12 +21,13 @@ ms.collection:
 - m365solution-scenario
 - zerotrust-solution
 ms.subservice: mdo
-ms.openlocfilehash: b9b3129d0d7668673696fe18dcac9501fecc5c73
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 6eb9e7e1f8177bd32cdb76fe817bee0edb4f2af4
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67590644"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67699576"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Teams sohbetlerinin, gruplarının ve dosyalarının güvenliğini sağlamaya yönelik ilke önerileri
 

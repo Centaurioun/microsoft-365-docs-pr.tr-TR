@@ -16,12 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: c7e05b51b7c56edb16a0984912970205ea77a1e8
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 7e8ae384d6fc3cc1ddeac12be00d1027d5aca34d
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520049"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697659"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>Desteklenen Uç Nokta için Microsoft Defender API'leri
 

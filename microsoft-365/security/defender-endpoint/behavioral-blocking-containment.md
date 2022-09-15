@@ -17,12 +17,13 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: f6544a14891a98523d202c19634d0e70a3e839e2
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+search.appverid: met150
+ms.openlocfilehash: 203eaf79058908ff9814cdc0628d1fbe8214b9b0
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416804"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67698253"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Davranışsal engelleme ve kapsama
 
@@ -34,7 +35,7 @@ ms.locfileid: "65416804"
 **Platform**
 - Windows
 
-> Uç Nokta için Defender'ı deneyimlemek mi istiyorsunuz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>Genel bakış
 
@@ -46,11 +47,11 @@ Davranış engelleme ve kapsama özellikleri, tehdit yürütmeye başladığınd
 
 Davranış engelleme ve kapsama özellikleri, saldırıları hemen durdurmak ve saldırıların ilerlemesini önlemek için Uç Nokta için Defender'ın birden çok bileşeni ve özelliğiyle çalışır.
 
-- [Yeni nesil koruma](microsoft-defender-antivirus-in-windows-10.md) (Microsoft Defender Virüsten Koruma içerir) davranışları analiz ederek tehditleri algılayabilir ve çalışmaya başlayan tehditleri durdurabilir.
+- [Yeni nesil koruma](microsoft-defender-antivirus-in-windows-10.md) (Microsoft Defender Virüsten Koruma'yı içerir) davranışları analiz ederek tehditleri algılayabilir ve çalışmaya başlayan tehditleri durdurabilir.
 
 - [Uç nokta algılama ve yanıt](overview-endpoint-detection-response.md) (EDR), ağınız, cihazlarınız ve çekirdek davranışınız genelinde güvenlik sinyalleri alır. Tehditler algılandıktan sonra uyarılar oluşturulur. Aynı türdeki birden çok uyarı olaylar halinde toplanır ve bu da güvenlik operasyonları ekibinizin araştırmasını ve yanıtlamasını kolaylaştırır.
 
-- [Uç Nokta için Defender](overview-endpoint-detection-response.md), EDR aracılığıyla alınan ağ, uç nokta ve çekirdek davranışı sinyallerine ek olarak kimlikler, e-posta, veriler ve uygulamalar arasında çok çeşitli optiklere sahiptir. [Microsoft 365 Defender](../defender/microsoft-365-defender.md) bileşeni olan Uç Nokta için Defender bu sinyalleri işler ve ilişkilendirir, algılama uyarıları oluşturur ve olaylardaki ilgili uyarıları bağlar.
+- [Uç Nokta için Defender](overview-endpoint-detection-response.md) , EDR aracılığıyla alınan ağ, uç nokta ve çekirdek davranışı sinyallerine ek olarak kimlikler, e-posta, veriler ve uygulamalar arasında çok çeşitli optiklere sahiptir. [Microsoft 365 Defender](../defender/microsoft-365-defender.md) bileşeni olan Uç Nokta için Defender bu sinyalleri işler ve ilişkilendirir, algılama uyarıları oluşturur ve olaylardaki ilgili uyarıları bağlar.
 
 Bu özelliklerle, çalışmaya başlasalar bile daha fazla tehdit önlenebilir veya engellenebilir. Şüpheli davranış algılandığında, tehdit kapsanıyor, uyarılar oluşturuluyor ve tehditler kendi izlerinde durdurulur.
 
@@ -66,7 +67,7 @@ Aşağıdaki görüntüde davranış engelleme ve kapsama özellikleri tarafınd
 
 - **[Geri bildirim döngüsü engelleme](feedback-loop-blocking.md)** (hızlı koruma olarak da adlandırılır) Tehdit algılamaları davranış zekası aracılığıyla gözlemlenir. Tehditler durdurulur ve diğer uç noktalarda çalıştırılması engellenir. (Geri bildirim döngüsü engelleme varsayılan olarak etkindir.)
 
-- **[Blok modunda uç nokta algılama ve yanıt (EDR)](edr-in-block-mode.md)** İhlal sonrası koruma aracılığıyla gözlemlenen kötü amaçlı yapıtlar veya davranışlar engellenir ve kapsanmaktadır. Blok modundaki EDR, birincil virüsten koruma çözümü Microsoft Defender Virüsten Koruma olmasa bile çalışır. (Blok modunda EDR varsayılan olarak etkin değildir; Microsoft 365 Defender'da açarsınız.)
+- **[Blok modunda uç nokta algılama ve yanıt (EDR)](edr-in-block-mode.md)** İhlal sonrası koruma aracılığıyla gözlemlenen kötü amaçlı yapıtlar veya davranışlar engellenir ve kapsanmaktadır. Blok modunda EDR, Birincil virüsten koruma çözümü Microsoft Defender Virüsten Koruma olmasa bile çalışır. (Blok modunda EDR varsayılan olarak etkin değildir; Microsoft 365 Defender'de açarsınız.)
 
 Microsoft tehdit koruma özelliklerini ve özelliklerini geliştirmeye devam ettiğinden davranış engelleme ve kapsama alanında daha fazlasının gelmesini bekleyin. Planlanan ve kullanıma sunulanları görmek için [Microsoft 365 yol haritasını](https://www.microsoft.com/microsoft-365/roadmap) ziyaret edin.
 
@@ -120,7 +121,7 @@ Yapıt engellendikten birkaç dakika sonra aynı dosyanın birden çok örneği 
 Bu örnek, davranış engelleme ve kapsama özellikleriyle tehditlerin otomatik olarak algılandığını, kapsandığını ve engellendiğini gösterir.
 
 > [!TIP]
-> Diğer platformlar için Virüsten Koruma ile ilgili bilgileri arıyorsanız bkz:
+> Diğer platformlar için Antivirüs ile ilgili bilgi arıyorsanız bkz:
 > - [MacOS'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın](mac-preferences.md)
 > - [Mac'te Uç Nokta için Microsoft Defender](microsoft-defender-endpoint-mac.md)
 > - [Intune için Microsoft Defender için macOS Virüsten Koruma ilke ayarları](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -135,7 +136,7 @@ Bu örnek, davranış engelleme ve kapsama özellikleriyle tehditlerin otomatik 
 
 - [Saldırı yüzeyi azaltma kurallarınızı yapılandırma](attack-surface-reduction.md)
 
-- [Blok modunda EDR etkinleştirme](edr-in-block-mode.md)
+- [Blok modunda EDR'yi etkinleştirme](edr-in-block-mode.md)
 
 - [En son küresel tehdit etkinliğine bakın](https://www.microsoft.com/wdsi/threats)
 

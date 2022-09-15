@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 5c68c99195f54bfdf7315b95029d6bfa37a6c19a
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 8c8854d06c3ecc83e6a250b6c09e71f5384730b4
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520533"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67700894"
 ---
 # <a name="get-domain-related-machines-api"></a>Etki alanıyla ilgili makineler API'lerini alma
 

@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Yeni Office 365 veri merkezi coğrafi alanları ve çekirdek verilerinizin yeni bir coğrafi bölgeye taşınmasını istemek için veri yerleşimi seçeneğini kullanmayı öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f93ba661f723a3f26473a8a08b81d408fd1b99d0
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 7d17c0906d26b8b5ff0d1758255cb9f74ab94c82
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020395"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67702258"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Temel verileri yeni Microsoft 365 veri merkezi coğrafi bölgelerine taşıma
 

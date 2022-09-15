@@ -15,12 +15,13 @@ ms.subservice: mde
 ms.topic: article
 ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: edb2460700fee2f30247926b5911b53b49ad0acc
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 55cc82f03a193f94909268317b59370ef62ca79f
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67472358"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701532"
 ---
 # <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'da bulut koruması ve örnek gönderme
 

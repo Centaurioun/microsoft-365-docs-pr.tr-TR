@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 5d5bfe5beced2375900930c7fb7a85218f8d5eeb
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+search.appverid: met150
+ms.openlocfilehash: a450ae393b4054c8d983ab03fe574af00f17dd77
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579951"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67699904"
 ---
 # <a name="schedule-an-antivirus-scan-using-anacron-in-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender'da Anacron kullanarak virüsten koruma taraması zamanlama
 

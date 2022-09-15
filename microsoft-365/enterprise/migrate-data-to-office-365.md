@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:
@@ -16,30 +16,30 @@ ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: Bu makalede, kuruluş verilerinizi Microsoft 365 geçirmenize yardımcı olacak kaynakları bulacaksınız.
-ms.openlocfilehash: 97846f3a35fdc415b172cbc5670739ca10204b70
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+description: Bu makalede, kuruluş verilerinizi Microsoft 365'e geçirmenize yardımcı olacak kaynakları bulacaksınız.
+ms.openlocfilehash: ac7f3251c7a3a077e071de4e7441b988eb2db87b
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753440"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67702324"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>Kuruluş verilerinizi Microsoft 365 Kurumsal geçirme
 
-## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>Verilerinizi Microsoft 365 geçirmeye hazır mısınız?
+## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>Verilerinizi Microsoft 365'e geçirmeye hazır mısınız?
 
-[Temel kurulum yönergelerimiz](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), Microsoft 365 hizmetlerinizi ve uygulamalarınızı mümkün olan en kısa sürede kullanan herkese yardımcı olur. Bu, karma senaryoları ve Microsoft 365 geçiş için daha gelişmiş yöntemleri atlar. 
+[Temel kurulum yönergelerimiz](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), Microsoft 365 hizmetlerinizi ve uygulamalarınızı mümkün olan en kısa sürede kullanan herkese yardımcı olur. Bu, karma senaryoları ve Microsoft 365'e geçiş için daha gelişmiş yöntemleri atlar. 
   
-Microsoft 365 kurulumu konusunda yardım almak istiyorsanız[, Microsoft 365](https://fasttrack.microsoft.com/office) dağıtmanın en kolay yolu FastTrack, oturum açabilir ve [Microsoft 365 hizmetleri için Kurulum kılavuzlarını](setup-guides-for-microsoft-365.md) da kullanabilirsiniz.
+Microsoft 365 kurulumuyla ilgili yardım almak istiyorsanız [FastTrack](https://fasttrack.microsoft.com/office) , Microsoft 365'i dağıtmanın en kolay yoludur. Ayrıca oturum açabilir ve [Microsoft 365 hizmetleri için Kurulum kılavuzlarını](setup-guides-for-microsoft-365.md) kullanabilirsiniz.
 
-## <a name="migrate-email-to-microsoft-365"></a>E-postayı Microsoft 365 geçirme
+## <a name="migrate-email-to-microsoft-365"></a>E-postayı Microsoft 365'e geçirme
 - Exchange [Dağıtım Yardımcısı'nı kullanarak Exchange](https://technet.microsoft.com/exdeploy2013) Karma ile geçiş. (Yönetici)
-- [E-postayı Microsoft 365 geçirmenin farklı yolları](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842) hakkında daha fazla bilgi edinin.
+- [E-postayı Microsoft 365'e geçirmenin farklı yolları](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842) hakkında daha fazla bilgi edinin.
 - [Kuruluşunuzdaki kişilerin kendi e-postalarını, kişilerini ve takvimlerini geçirmenin](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e) alternatif yollarını bulun.
 
 ## <a name="migrate-files-and-folders"></a>Dosya ve klasörleri geçirme
-- [SharePoint Online'a ve OneDrive geçiş](/sharepointmigration/migrate-to-sharepoint-online). (Yönetici)
-- [SharePoint Sunucusu karma yapılandırma yol haritaları](/SharePoint/hybrid/configuration-roadmaps). (Yönetici)
+- [SharePoint Online ve OneDrive'a geçiş](/sharepointmigration/migrate-to-sharepoint-online). (Yönetici)
+- [SharePoint Server karma yapılandırma yol haritaları](/SharePoint/hybrid/configuration-roadmaps). (Yönetici)
 
 ## <a name="migrate-skype-for-business-users"></a>Skype Kurumsal kullanıcıları geçirme
 - [Skype Kurumsal Online'a geçiş](/SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json). (Yönetici)

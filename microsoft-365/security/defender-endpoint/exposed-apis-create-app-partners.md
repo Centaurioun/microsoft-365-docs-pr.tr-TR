@@ -16,12 +16,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 8d866ee513720b71eaf44bf0682b2e411ee7bcfa
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 78eb829a936d5e07abde3ff46d90c71b5004e956
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67520115"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67697835"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Uç Nokta için Microsoft Defender API'leri aracılığıyla iş ortağı erişimi
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Erişimi ve kullanımı kısıtlayarak verilerinizi koruyan şifreleme için duyarlılık etiketlerini yapılandırın.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72cf2196add9e6c1ee58475c492136ca9be7ce37
-ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.openlocfilehash: 091b78e2b11633eddec41809748e54ba333c09be
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67434383"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67701082"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Şifreleme uygulamak için hassasiyet etiketleri kullanarak içeriğe erişimi kısıtlama
 
@@ -91,9 +91,9 @@ Bu şifreleme çözümünü kullandığınızda **süper kullanıcı** özelliğ
 
 4.  **Şifreleme** sayfasında aşağıdaki seçeneklerden birini belirleyin:
     
-    - **Dosya veya e-posta şifrelenmişse şifrelemeyi kaldırın**: Bu seçenek yalnızca Azure Information Protection birleşik etiketleme istemcisi tarafından desteklenir. Bu seçeneği belirlediğinizde ve yerleşik etiketleme kullandığınızda, etiket uygulamalarda görüntülenmeyebilir veya görüntülenip şifreleme değişikliği yapılmayabilir.
+    - **Dosya veya e-posta şifrelenmişse şifrelemeyi kaldır**: Bu seçeneği belirlediğinizde etiketin uygulanması, duyarlılık etiketinden bağımsız olarak uygulanmış olsa bile mevcut şifrelemeyi kaldırır.
         
-        Bu senaryo hakkında daha fazla bilgi [için bir etiket uygulandığında mevcut şifrelemeye ne olur](#what-happens-to-existing-encryption-when-a-labels-applied) bölümüne bakın. Bu ayarın kullanıcıların yeterli izinleri olmadığında uygulayamayacakları bir duyarlılık etiketine neden olabileceğini anlamak önemlidir.
+        Bu ayarın, kullanıcıların mevcut şifrelemeyi kaldırmak için yeterli izinleri olmadığında uygulayamayacakları bir duyarlılık etiketine neden olabileceğini anlamak önemlidir. Bu senaryo hakkında daha fazla bilgi [için bir etiket uygulandığında mevcut şifrelemeye ne olur](#what-happens-to-existing-encryption-when-a-labels-applied) bölümüne bakın.
     
     - **Şifreleme ayarlarını yapılandırma**: Şifrelemeyi açar ve şifreleme ayarlarını görünür hale getirir:
         
@@ -102,9 +102,6 @@ Bu şifreleme çözümünü kullandığınızda **süper kullanıcı** özelliğ
         Bu ayarların yönergeleri aşağıdaki [Şifreleme ayarlarını yapılandırma](#configure-encryption-settings) bölümündedir.
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Bir etiket uygulandığında mevcut şifrelemeye ne olur?
-
-> [!NOTE]
-> **Dosya veya e-posta şifrelenmişse Şifrelemeyi kaldır** seçeneği yalnızca Azure Information Protection birleşik etiketleme istemcisi tarafından desteklenir. Bir posta [akışı kuralı yapılandırarak e-postalar](define-mail-flow-rules-to-encrypt-email.md#use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-microsoft-purview-message-encryption) için de aynı etkiyi elde edebilirsiniz.
 
 Şifrelenmemiş içeriğe duyarlılık etiketi uygulanırsa, seçebileceğiniz şifreleme seçeneklerinin sonucu açıklayıcıdır. Örneğin, **Dosyaları ve e-postaları şifrele'yi** seçmediyseniz içerik şifrelenmemiş olarak kalır.
 
@@ -116,15 +113,11 @@ Ancak içerik zaten şifrelenmiş olabilir. Örneğin, başka bir kullanıcı uy
 
 Aşağıdaki tabloda, söz konusu içeriğe duyarlılık etiketi uygulandığında var olan şifrelemeye ne olacağı tanımlanmıştır:
 
-| | Şifreleme: Seçili değil | Şifreleme: Yapılandırıldı | Şifreleme: Kaldır <sup>\*</sup> |
+| | Şifreleme: Seçili değil | Şifreleme: Yapılandırıldı | Şifreleme: Kaldır |
 |:-----|:-----|:-----|:-----|
 |**Kullanıcı tarafından belirtilen izinler**|Özgün şifreleme korunur|Yeni etiket şifrelemesi uygulandı|Özgün şifreleme kaldırıldı|
 |**Koruma şablonu**|Özgün şifreleme korunur|Yeni etiket şifrelemesi uygulandı|Özgün şifreleme kaldırıldı|
 |**Yönetici tanımlı izinlerle etiket**|Özgün şifreleme kaldırıldı|Yeni etiket şifrelemesi uygulandı|Özgün şifreleme kaldırıldı|
-
-**Dipnot:**
-
-<sup>\*</sup>Yalnızca Azure Information Protection birleşik etiketleme istemcisi tarafından desteklenir
 
 Yeni etiket şifrelemesinin uygulandığı veya özgün şifrelemenin kaldırıldığı durumlarda, bu durum yalnızca etiketi uygulayan kullanıcının bu eylemi destekleyen bir kullanım hakkı veya rolü varsa gerçekleşir:
 

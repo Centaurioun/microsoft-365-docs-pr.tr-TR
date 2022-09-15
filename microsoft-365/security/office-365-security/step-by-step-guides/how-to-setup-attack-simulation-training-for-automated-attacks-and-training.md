@@ -2,8 +2,7 @@
 title: Saldırı simülasyon eğitiminde otomatik saldırılar ve eğitim nasıl kurulur?
 description: Saldırı Benzetimi eğitimini otomatikleştirme ve hedef kullanıcılara yük gönderme adımları. Bu kılavuzu izleyerek, belirli tekniklere ve yüklere sahip otomatik saldırı akışları oluşturmayı öğreneceksiniz.
 search.product: ''
-search.appverid: ''
-ms.service: microsoft-365-security
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
-ms.openlocfilehash: 8bb4b0ef91eac55dae814150a39c4fc2dbe0875d
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.technology: mdo
+search.appverid: met150
+ms.openlocfilehash: fa5452654c035b454655ea9e5b7a83050524601a
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596643"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67699533"
 ---
 # <a name="how-to-setup-automated-attacks-and-training-within-attack-simulation-training"></a>Saldırı simülasyon eğitiminde otomatik saldırılar ve eğitim nasıl kurulur?
 

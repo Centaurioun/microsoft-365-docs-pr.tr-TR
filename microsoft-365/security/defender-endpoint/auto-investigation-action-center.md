@@ -18,12 +18,13 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.technology: mde
-ms.openlocfilehash: 6a2cc5d4315c5dd64a852c74176272061789b1ba
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+search.appverid: met150
+ms.openlocfilehash: 851dbb40ed32e371597820539ce6a1ed8ccf8fed
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535414"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67698275"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Düzeltme eylemlerini görmek için İşlem merkezini ziyaret edin
 
@@ -48,7 +49,7 @@ Aşağıdaki tablo, yeni, birleşik İşlem merkezini önceki İşlem merkeziyle
 |---------|---------|
 |Tek bir konumdaki cihazlar ve e-postalar için bekleyen ve tamamlanan eylemleri listeler <br/>([Uç Nokta için Microsoft Defender](microsoft-defender-endpoint.md) artı [Office 365 için Microsoft Defender](/microsoft-365/security/office-365-security/office-365-atp))|Cihazlar için bekleyen ve tamamlanan eylemleri listeler <br/> (yalnızca [Uç Nokta için Microsoft Defender](microsoft-defender-endpoint.md))   |
 |Şu konumda bulunur:<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Şu konumda bulunur:<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a> **İşlem merkezi'ni** seçin. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Microsoft 365 Defender portalında İşlem Merkezi'ne gezinti bölmesi" lightbox="images/action-center-nav-new.png"::: | Microsoft 365 Defender portalında **Otomatik araştırmalarAction** >  **merkezi'ni** seçin. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Microsoft 365 Defender portalında İşlem Merkezi'ne gezinti bölmesinin eski bir sürümü" lightbox="images/action-center-nav-old.png":::  |
+| <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalında</a> **İşlem merkezi'ni** seçin. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Microsoft 365 Defender portalında İşlem Merkezi'ne gezinti bölmesi" lightbox="images/action-center-nav-new.png"::: | Microsoft 365 Defender portalında **Otomatik araştırma İşlem** > **merkezi'ni** seçin. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Microsoft 365 Defender portalında İşlem Merkezi'ne gezinti bölmesinin eski bir sürümü" lightbox="images/action-center-nav-old.png":::  |
 
 Birleşik İşlem merkezi, Uç Nokta için Defender ve Office 365 için Defender genelinde düzeltme eylemlerini bir araya getirir. Tüm düzeltme eylemleri için ortak bir dil tanımlar ve birleşik bir araştırma deneyimi sağlar.
 
@@ -72,7 +73,7 @@ Geliştirilmiş Microsoft 365 Defender portalında birleşik İşlem merkezine u
    |Sekme|Açıklama|
    |---|---|
    |**Bekleyen**|Dikkat gerektiren eylemlerin listesini görüntüler. Eylemleri birer birer onaylayabilir veya reddedebilir ya da aynı eylem türüne sahipse ( **Karantina dosyası** gibi) birden çok eylem seçebilirsiniz. <p> **İpucu**: Otomatik araştırmalarınızın zamanında tamamlayabilmesi için bekleyen eylemleri en kısa sürede [gözden geçirip onayladığınızdan (veya reddettiğinizden)](manage-auto-investigation.md) emin olun.|
-   |**Geçmiş**|Aşağıdakiler gibi gerçekleştirilen eylemler için bir denetim günlüğü görevi görür: <ul><li>Otomatik araştırmalar sonucunda gerçekleştirilen düzeltme eylemleri</li><li>Güvenlik operasyonları ekibiniz tarafından onaylanan düzeltme eylemleri</li><li>Canlı Yanıt oturumları sırasında uygulanan çalıştırılan komutlar ve düzeltme eylemleri</li><li>Microsoft Defender Virüsten Koruma tehdit koruması özellikleri tarafından gerçekleştirilen düzeltme eylemleri</li></ul> <p> Belirli eylemleri geri almak için bir yol sağlar (bkz. [Tamamlanan eylemleri geri alma](manage-auto-investigation.md#undo-completed-actions)).|
+   |**Geçmiş**|Aşağıdakiler gibi gerçekleştirilen eylemler için bir denetim günlüğü görevi görür: <ul><li>Otomatik araştırmalar sonucunda gerçekleştirilen düzeltme eylemleri</li><li>Güvenlik operasyonları ekibiniz tarafından onaylanan düzeltme eylemleri</li><li>Canlı Yanıt oturumları sırasında uygulanan çalıştırılan komutlar ve düzeltme eylemleri</li><li>Microsoft Defender Virüsten Koruma'daki tehdit koruması özellikleri tarafından gerçekleştirilen düzeltme eylemleri</li></ul> <p> Belirli eylemleri geri almak için bir yol sağlar (bkz. [Tamamlanan eylemleri geri alma](manage-auto-investigation.md#undo-completed-actions)).|
 
 4. İşlem merkezindeki verileri özelleştirmek, sıralamak, filtrelemek ve dışarı aktarmak için aşağıdaki adımlardan birini veya daha fazlasını uygulayın:
 
