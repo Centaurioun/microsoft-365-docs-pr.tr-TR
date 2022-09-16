@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.subservice: m365d
+ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 678b72b3b162f07b189fa42448952a16aaa7e676
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d348a1c48ac44a0e05768eea684efd3ad27dcb4f
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691595"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741642"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>İstemci çözümleyicisini Windows’da çalıştırın
 

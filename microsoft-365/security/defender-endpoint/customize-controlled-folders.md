@@ -14,14 +14,13 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: 9ba66be25a066b08d68878379a0371bc6f671bb0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 711696d8b5ca745d55dc8dc7cac9259e4fe22807
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683527"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742618"
 ---
 # <a name="customize-controlled-folder-access"></a>Denetimli klasör erişimini özelleştirin
 

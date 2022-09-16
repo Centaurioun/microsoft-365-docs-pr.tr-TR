@@ -3,16 +3,17 @@ title: '&amp; Microsoft Defender Tehdit Analizi ile özet arama (Defender TI)'
 description: Microsoft Defender Tehdit Analizi (Defender TI) kullanarak İnternet veri kümelerini, tehdit makalelerini, güvenlik açığı makalelerini ve projeleri aramayı ve özetlemeyi öğrenin.
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: dbd62f4455b29bd2c23061096e126454d5c0d089
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6bb98e3427b902c6559f9f3fa88559f90152b540
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693609"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741686"
 ---
 # <a name="searching-and-pivoting"></a>Arama ve özetleme
 

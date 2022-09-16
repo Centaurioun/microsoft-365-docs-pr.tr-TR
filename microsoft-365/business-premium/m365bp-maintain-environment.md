@@ -1,5 +1,5 @@
 ---
-title: Ortamı koruma
+title: Ortamınızı koruma
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 07/19/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,17 +19,17 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Kuruluşunuzun ağ ve sistem güvenlik ortamını koruma ve siber saldırılara karşı savunma hakkında genel bakış.
-ms.openlocfilehash: 47754e243bdf01d2acb2c5521e233785f5c789d8
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+description: Siber saldırılara karşı korunmaya yardımcı olmak için sistemlerinizi, kullanıcı hesaplarınızı ve ilkelerinizi koruyun.
+ms.openlocfilehash: 955f4b845b135c9d7f1ecad6732f9d7389770b54
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611573"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741752"
 ---
 # <a name="maintain-your-environment"></a>Ortamınızı koruma
 
-Güvenlik olayı yönetimine ek olarak, şirketinizin bir bakım ve operasyon planına ihtiyacı vardır. Kurulum ve yapılandırma işlemi sırasında tamamladığınız görevler, sistemlerinizin güvenliğini sağlamayla ilgiliydi. Ancak buna ek olarak, kullanıcıları ekleme veya kaldırma, parolaları sıfırlama ve cihazları fabrika ayarlarına sıfırlama gibi belirli görevleri de gerektiği gibi gerçekleştirebilmek gerekir.
+Bildiğiniz gibi güvenlik olayı yönetimi önemlidir. Tehditler algılandıkçe bu tehditler gözden geçirilmeli ve ele alınmalıdır. İşletmenizin bir bakım ve operasyon planına da ihtiyacı vardır. Kurulum ve yapılandırma işlemi sırasında tamamladığınız görevler sistemlerinizin, kullanıcılarınızın ve verilerinizin güvenliğini sağlamayla ilgiliydi. Şimdi kullanıcı ekleme veya kaldırma, parolaları sıfırlama ve cihazları fabrika ayarlarına sıfırlama gibi belirli görevleri gerektiği gibi gerçekleştirmeniz gerekir. Ortamınızı korumanın tüm anlamı budur.
 
 Daha fazla ayrıntı için aşağıdaki makalelere bakın: 
 

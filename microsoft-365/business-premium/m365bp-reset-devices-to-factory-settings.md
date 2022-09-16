@@ -7,22 +7,22 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 07/19/2022
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: yönettiğiniz Windows cihazlarını satın alma sırasında orijinal ayarlarına geri döndürerek fabrika ayarlarına sıfırlamak için Microsoft 365 İş Ekstra kullanmayı öğrenin.
-ms.openlocfilehash: 16b9b16cc59bf69fab27ad9e3576f929eea2b120
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: ab7a78f9b222b068bc8c0ef7d574533565c50f38
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613592"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741730"
 ---
 # <a name="reset-windows-devices-to-factory-settings"></a>Windows cihazlarını fabrika ayarlarına sıfırlama
 

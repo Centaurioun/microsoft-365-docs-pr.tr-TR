@@ -3,7 +3,7 @@ title: Dosyasız tehditler
 ms.reviewer: ''
 description: Arazide yaşayan dosyasız tehditler ve kötü amaçlı yazılım kategorileri hakkında bilgi edinin
 keywords: dosyasız, dosyasız kötü amaçlı yazılım, arazide yaşayan, lolbins, amsi, davranış izleme, bellek tarama, önyükleme kesimi koruması, güvenlik, kötü amaçlı yazılım, Windows Defender ATP, virüsten koruma, AV, Microsoft Defender ATP, yeni nesil koruma
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,13 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 4db82cfc20bb1e27b2ef9a75793170c451c3868a
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 35235e529e0c377c7799e22d6243ceffba532bfd
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665348"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742409"
 ---
 # <a name="fileless-threats"></a>Dosyasız tehditler
 
@@ -96,9 +95,9 @@ Geniş kategorileri tanımladıktan sonra, artık ayrıntıları inceleyebilir v
 
 **Dosya tabanlı** (Tür III: yürütülebilir dosyalar, DLL'ler, LNK dosyaları, zamanlanmış görevler): Bu standart yürütme vektördür. Basit bir yürütülebilir dosya, bellekte ek yük çalıştırmak için birinci aşama kötü amaçlı yazılım olarak başlatılabilir veya diğer meşru çalışan işlemlere eklenebilir.
 
-**Makro tabanlı** (Tür III: Office belgeler): [VBA dili](/office/vba/Library-Reference/Concepts/getting-started-with-vba-in-office), düzenleme görevlerini otomatikleştirmek ve belgelere dinamik işlevsellik eklemek için tasarlanmış esnek ve güçlü bir araçtır. Bu nedenle, şifre çözme, çalıştırma veya yürütülebilir yük ekleme gibi kötü amaçlı işlemleri gerçekleştirmek, hatta [qkG örneğinde](https://blog.trendmicro.com/trendlabs-security-intelligence/qkg-filecoder-self-replicating-document-encrypting-ransomware/) olduğu gibi fidye yazılımının tamamını uygulamak saldırganlar tarafından kötüye kullanılabilir. Makrolar bir Office işlemi (örneğin, Winword.exe) bağlamında yürütülür ve bir betik dilinde uygulanır. Virüsten koruma yazılımının inceleyebilecek ikili yürütülebilir dosyası yoktur. Office uygulamalar bir belgedeki makroları yürütmek için kullanıcıdan açık onay isterken, saldırganlar kullanıcıları makroların yürütülmesine izin verecek şekilde kandırmak için sosyal mühendislik tekniklerini kullanır.
+**Makro tabanlı** (Tür III: Office belgeleri): [VBA dili](/office/vba/Library-Reference/Concepts/getting-started-with-vba-in-office) , düzenleme görevlerini otomatikleştirmek ve belgelere dinamik işlevsellik eklemek için tasarlanmış esnek ve güçlü bir araçtır. Bu nedenle, şifre çözme, çalıştırma veya yürütülebilir yük ekleme gibi kötü amaçlı işlemleri gerçekleştirmek, hatta [qkG örneğinde](https://blog.trendmicro.com/trendlabs-security-intelligence/qkg-filecoder-self-replicating-document-encrypting-ransomware/) olduğu gibi fidye yazılımının tamamını uygulamak saldırganlar tarafından kötüye kullanılabilir. Makrolar bir Office işlemi bağlamında yürütülür (örneğin, Winword.exe) ve bir betik dilinde uygulanır. Virüsten koruma yazılımının inceleyebilecek ikili yürütülebilir dosyası yoktur. Office uygulamaları bir belgedeki makroları yürütmek için kullanıcıdan açık onay isterken, saldırganlar makroların yürütülmesine izin vermek için kullanıcıları kandırmak için sosyal mühendislik tekniklerini kullanır.
 
-**Betik tabanlı** (Tür II: dosya, hizmet, kayıt defteri, WMI deposu, kabuk): JavaScript, VBScript ve PowerShell betik oluşturma dilleri varsayılan olarak Windows platformlarda kullanılabilir. Betikler makrolarla aynı avantajlara sahiptir; bunlar metinsel dosyalardır (ikili yürütülebilir dosyalar değildir) ve temiz ve meşru bir bileşen olan yorumlayıcı bağlamında (wscript.exe, powershell.exe gibi) çalışır. Betikler çok yönlü bir özelliktir ve bir dosyadan (çift tıklayarak) çalıştırılabilir veya doğrudan yorumlayıcının komut satırında yürütülebilir. Komut satırında çalıştırmak, kötü amaçlı yazılımların kötü amaçlı betikleri wmi deposundan [WMI olay abonelikleri](https://www.fireeye.com/blog/threat-research/2017/03/dissecting_one_ofap.html) olarak [otomatik çalıştırma kayıt defteri anahtarları içinde otomatik](https://www.gdatasoftware.com/blog/2014/07/23947-poweliks-the-persistent-malware-without-a-file) başlangıç hizmetleri olarak kodlamasına olanak tanır. Ayrıca, virüslü bir makineye erişim elde eden bir saldırgan komut istemine betiği giriş yapabilir.
+**Betik tabanlı** (Tür II: dosya, hizmet, kayıt defteri, WMI deposu, kabuk): JavaScript, VBScript ve PowerShell betik dilleri varsayılan olarak Windows platformlarında kullanılabilir. Betikler makrolarla aynı avantajlara sahiptir; bunlar metinsel dosyalardır (ikili yürütülebilir dosyalar değildir) ve temiz ve meşru bir bileşen olan yorumlayıcı bağlamında (wscript.exe, powershell.exe gibi) çalışır. Betikler çok yönlü bir özelliktir ve bir dosyadan (çift tıklayarak) çalıştırılabilir veya doğrudan yorumlayıcının komut satırında yürütülebilir. Komut satırında çalıştırmak, kötü amaçlı yazılımların kötü amaçlı betikleri wmi deposundan [WMI olay abonelikleri](https://www.fireeye.com/blog/threat-research/2017/03/dissecting_one_ofap.html) olarak [otomatik çalıştırma kayıt defteri anahtarları içinde otomatik](https://www.gdatasoftware.com/blog/2014/07/23947-poweliks-the-persistent-malware-without-a-file) başlangıç hizmetleri olarak kodlamasına olanak tanır. Ayrıca, virüslü bir makineye erişim elde eden bir saldırgan komut istemine betiği giriş yapabilir.
 
 **Disk tabanlı** (Tür II: Önyükleme Kaydı): Önyükleme Kaydı bir diskin veya birimin ilk kesimidir ve işletim sisteminin önyükleme işlemini başlatmak için gereken yürütülebilir kodu içerir. [Petya](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/27/new-ransomware-old-techniques-petya-adds-worm-capabilities/?source=mmpc) gibi tehditler, önyükleme kaydının üzerine kötü amaçlı kod yazarak bulaşabilir. Makine önyüklendiğinde, kötü amaçlı yazılım hemen denetime geçer. Önyükleme Kaydı dosya sisteminin dışında yer alır, ancak işletim sistemi tarafından erişilebilir. Modern virüsten koruma ürünleri tarama ve geri yükleme özelliğine sahiptir.
 

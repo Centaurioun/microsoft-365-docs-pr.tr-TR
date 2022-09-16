@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Uyumluluk Yöneticisi ulusal, bölgesel ve sektör düzenlemelerine, standartlarına ve yasalarına uygun değerlendirmeler oluşturmak için şablonlar sağlar.
-ms.openlocfilehash: 2870378d25a66661cdc720c8073e5bbab283790b
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: e5f2b7665c7992daba367814d124595c255dfe3b
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66895107"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741049"
 ---
 # <a name="compliance-manager-templates-list"></a>Uyumluluk Yöneticisi şablonları listesi
 
@@ -138,7 +138,7 @@ Aşağıda listelenen şablonlar kuruluşunuz tarafından satın alınabilir.
 - Tüketici Finansal ve Sağlık Bilgilerinin Gizliliği Yönetmeliği, NAIC MDL-672, Q2 2017  
 - Operasyonel risklerin ses yönetimine yönelik ilkelerde yapılan düzeltmeler (Basel III Operasyon Riskleri)  
 - StandartLaştırılmış Bilgi Toplama (SIG) Anketi  
-- [Güvenilir Bilgi Güvenliği Değerlendirme Değişimi](/compliance/regulatory/offering-tisax-germany)
+- [Güvenilir Bilgi Güvenliği Değerlendirme Değişimi (TISAX) 5.1](/compliance/regulatory/offering-tisax-germany)
 
 ### <a name="us-government"></a>ABD Hükümeti
 
@@ -214,7 +214,7 @@ Aşağıda listelenen şablonlar kuruluşunuz tarafından satın alınabilir.
 - Connecticut Genel Tüzük - Gizli bilgi alan devlet yüklenicileri için Genel Hükümler  
 - Kişisel Bilgileri Korumak için Connecticut Bilgi Güvenliği Programı  
 - Connecticut Eyalet Yasası - Kişisel bilgileri içeren yeniden bilgisayarlı güvenlik verilerinin ihlali  
-- DC. Kanun 16-237 - Tüketici Kişisel Bilgi Güvenliği İhlali Bildirim Yasası  
+- Dc. Kanun 16-237 - Tüketici Kişisel Bilgi Güvenliği İhlali Bildirim Yasası  
 - Delaware - Öğrenci Verilerinin Gizliliğini Koruma Yasası  
 - Delaware Bilgisayar Güvenliği İhlalleri- Ticaret ve Ticaret Alt Başlığı II - 12B-100 - 12B-104
 - Florida Başlığı XXXII, Bölüm 501, Bölüm 501.171, Gizli kişisel bilgilerin güvenliği  
@@ -251,7 +251,7 @@ Aşağıda listelenen şablonlar kuruluşunuz tarafından satın alınabilir.
 - New York - 23 NYCRR Bölüm 500  
 - New York City Yönetim Kodu - Güvenlik İhlali Bildirimi  
 - New York Genel İş Hukuku - Veri Güvenliği İhlali Bildirimi ve Veri Güvenliği Korumaları  
-- New York Gizlilik Yasası - TASLAK  
+- New York Gizlilik Yasası  
 - Kuzey Carolina - Kimlik Hırsızlığını Koruma Yasası  
 - North Dakota Bölüm 51-30 Kişisel Bilgiler için Güvenlik İhlali Bildirimi  
 - Ohio - Güvenlik İhlali Bildirimi  
@@ -286,16 +286,18 @@ Aşağıda listelenen şablonlar kuruluşunuz tarafından satın alınabilir.
 - Avustralya - ASD Essential 8 Olgunluk Düzeyi 3
 - Avustralya - Ulusal Arşivler Yasası
 - Avustralya - Kamu Kayıtları Office Victoria Kayıt Tutma Standartları  
-- Avustralya - İstenmeyen Posta Yasası 2003  
+- Avustralya - İstenmeyen Posta Yasası 2003
 - Avustralya Gizlilik (Kredi Raporlama) Kodu  
-- Avustralya Gizlilik Yasası  
+- Avustralya Gizlilik Yasası
+- Avustralya Genel Kayıt Yasası
 - Avustralya Enerji Sektörü Siber Güvenlik Çerçevesi (AESCSF)  
-- [Australian Information Security Kayıtlı Değerlendirici Programı (IRAP) Sürüm 3](/compliance/regulatory/offering-ccsl-irap-australia)  
+- [ISM Sürüm 3.5 ile Avustralya Bilgi Güvenliği Kayıtlı Değerlendirici Programı (IRAP) - Resmi](/compliance/regulatory/offering-ccsl-irap-australia)
+- [ISM Sürüm 3.5 ile Avustralya Bilgi Güvenliği Kayıtlı Değerlendirici Programı (IRAP) - Korumalı](/compliance/regulatory/offering-ccsl-irap-australia)
 - [Avustralya Prudential Regülasyon Yetkilisi CPS](/compliance/regulatory/offering-apra-australia)  
 - Victoria Koruyucu Veri Güvenliği Standartları V2.0 (VPDSS 2.0)  
 - Avustralya Hükümeti için Bilgi Yönetimi Standardı - Avustralya Ulusal Arşivleri (NAA)  
 - Çin - Kişisel Bilgi Güvenliği Belirtimi  
-- Çin Halk Cumhuriyeti Siber Güvenlik Yasası
+- Kişiler Çin Cumhuriyeti Siber Güvenlik Yasası
 - Hong Kong - Bankacılık Uygulaması ve Ödeme Kartı Kodu
 - Hong Kong - Kişisel Veri (Gizlilik) Sıralı  
 - Hindistan Bilgi Teknolojisi (Makul Güvenlik Uygulamaları ve Yordamları ve Hassas Kişisel Veriler veya Bilgiler) Kuralları

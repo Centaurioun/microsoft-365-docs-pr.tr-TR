@@ -2,7 +2,8 @@
 title: api sürüm notlarını Uç Nokta için Microsoft Defender
 description: Uç Nokta için Microsoft Defender API kümesinde yapılan güncelleştirmeler için sürüm notları.
 keywords: Uç Nokta için Microsoft Defender API sürüm notları, mde, API'ler, Uç Nokta için Microsoft Defender API'leri, güncelleştirmeler, notlar, sürüm
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 50eee5a10311e08a706c8cc412c4a01e95ffad57
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1a0d5fc868c9b024125e4c5ff27adab24a033211
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698473"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742037"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>api sürüm notlarını Uç Nokta için Microsoft Defender
 

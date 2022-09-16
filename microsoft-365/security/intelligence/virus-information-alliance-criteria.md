@@ -3,7 +3,7 @@ title: Virus Information Alliance
 ms.reviewer: ''
 description: Microsoft Virus Information Alliance (VIA), siber suçlarla mücadele eden kuruluşlar için işbirliğine dayalı bir kötü amaçlı yazılımdan koruma programıdır.
 keywords: güvenlik, kötü amaçlı yazılım, Microsoft, MMPC, Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi, iş ortakları, paylaşım, örnekler, satıcı değişimi, CSS, ittifak, WDSI
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,14 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
 search.appverid: met150
-ms.openlocfilehash: e43cfdd10de9ea0b6f698007079ad90e70c11ff3
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 98060c3fb41283bff671057947ef3dfb35af1b50
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710839"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742299"
 ---
 # <a name="virus-information-alliance"></a>Virus Information Alliance
 

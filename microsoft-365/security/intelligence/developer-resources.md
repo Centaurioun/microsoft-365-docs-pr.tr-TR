@@ -4,7 +4,7 @@ ms.reviewer: ''
 description: Bu sayfada geliştiriciler için algılama ölçütleri, geliştirici soruları ve yazılımınızı Güvenlik bilgilerine karşı denetleme gibi bilgiler sağlanır.
 keywords: wdsi, yazılım, geliştirici, kaynaklar, algılama, ölçütler, sorular, tarama, yazılım, tanımlar, bulut, koruma, güvenlik zekası
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -15,14 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
 search.appverid: met150
-ms.openlocfilehash: 390d05a5550616885262b2ebae9c41312adc116a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d116c933414f52e9158ad20f07d98406a1032737
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687383"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740873"
 ---
 # <a name="software-developer-resources"></a>Yazılım geliştirici kaynakları
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-ms.date: 06/25/2021
+ms.date: 09/15/2022
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ ms.collection:
 - zerotrust-solution
 - highpri
 ms.topic: conceptual
-ms.openlocfilehash: 5689dd9f493ce148b02146ddca7ca7c570e005e4
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: d7e2a6e68f91be81bd53638c16f50ed250555217
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481668"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741488"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>Microsoft 365 Defender'ı değerlendirme ve pilot
 
@@ -84,8 +84,8 @@ Microsoft 365 Defender, birlikte çalışan bu güvenlik teknolojilerinden oluş
 |Bileşen|Açıklama|Başvuru malzemesi|
 |---|---|---|
 |Kimlik için Microsoft Defender|Kimlik için Microsoft Defender gelişmiş tehditleri, güvenliği aşılmış kimlikleri ve kuruluşunuza yönelik kötü amaçlı insider eylemlerini tanımlamak, algılamak ve araştırmak için Active Directory sinyallerini kullanır.|[Kimlik için Microsoft Defender nedir?](/defender-for-identity/what-is)|
-|Exchange Online Protection|Exchange Online Protection, kuruluşunuzu istenmeyen postalara ve kötü amaçlı yazılımlara karşı korumaya yardımcı olan yerel bulut tabanlı SMTP geçişi ve filtreleme hizmetidir.|[Exchange Online Protection (EOP) genel bakış - Office 365](../office-365-security/overview.md)|
-|Office 365 için Microsoft Defender|Office 365 için Microsoft Defender, kuruluşunuzu e-posta iletileri, bağlantılar (URL'ler) ve işbirliği araçları tarafından ortaya konan kötü amaçlı tehditlere karşı korur.|[Office 365 için Microsoft Defender - Office 365](../office-365-security/overview.md)|
+|Exchange Online Protection|Exchange Online Protection, kuruluşunuzu istenmeyen postalara ve kötü amaçlı yazılımlara karşı korumaya yardımcı olan yerel bulut tabanlı SMTP geçişi ve filtreleme hizmetidir.|[Exchange Online Protection (EOP) genel bakış - Office 365](/microsoft-365/office-365-security/overview.md)|
+|Office 365 için Microsoft Defender|Office 365 için Microsoft Defender, kuruluşunuzu e-posta iletileri, bağlantılar (URL'ler) ve işbirliği araçları tarafından ortaya konan kötü amaçlı tehditlere karşı korur.|[Office 365 için Microsoft Defender - Office 365](/microsoft-365/office-365-security/overview.md)|
 |Uç Nokta için Microsoft Defender|Uç Nokta için Microsoft Defender cihaz koruması, ihlal sonrası algılama, otomatik araştırma ve önerilen yanıt için birleşik bir platformdur.|[Uç Nokta için Microsoft Defender - Windows güvenliği](../defender-endpoint/microsoft-defender-endpoint.md)|
 |Bulut Uygulamaları için Microsoft Defender|Microsoft Defender for Cloud Apps, bulut uygulamalarınıza derin görünürlük, güçlü veri denetimleri ve gelişmiş tehdit koruması getiren kapsamlı bir SaaS çözümüdür.|[Cloud Apps için Defender nedir?](/cloud-app-security/what-is-cloud-app-security)|
 |Azure AD Kimlik Koruması|Azure AD Kimlik Koruması milyarlarca oturum açma girişiminden kaynaklanan risk verilerini değerlendirir ve ortamınızda her oturum açma riskini değerlendirmek için bu verileri kullanır. Bu veriler, Koşullu Erişim ilkelerinin nasıl yapılandırıldığına bağlı olarak hesap erişimine izin vermek veya erişimi engellemek için Azure AD tarafından kullanılır. Azure AD Kimlik Koruması, Microsoft 365 Defender ayrı olarak lisanslanır. Azure Active Directory Premium P2'a dahildir.|[Kimlik Koruması nedir?](/azure/active-directory/identity-protection/overview-identity-protection)|

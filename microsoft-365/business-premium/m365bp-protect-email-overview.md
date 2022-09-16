@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/05/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: E-postada neleri izleyeceğini bilin. Microsoft 365 İş Ekstra dahil edilen siber güvenlik araçlarını kullanarak ekibinizi kötü amaçlı yazılımlara, kimlik avına ve diğer kötü amaçlı siber saldırılara karşı korunmaya eğitin.
-ms.openlocfilehash: 62e88c37b071bf7ec038115f1bf01599685e82ce
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 461887abfc17647cda62b1822a8a6c6626b4ffa4
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611399"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740817"
 ---
 # <a name="protect-all-email"></a>Tüm e-postaları koruma
 

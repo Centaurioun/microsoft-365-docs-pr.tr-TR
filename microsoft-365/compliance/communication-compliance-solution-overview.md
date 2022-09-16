@@ -3,7 +3,7 @@ title: İletişim uyumluluğu
 description: Microsoft Purview'da iletişim uyumluluğunu yapılandırmayı öğrenin.
 keywords: Microsoft 365, insider riski, uyumluluk
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: cf6a2ec63de23eab72d33f9e9cbff13854f6cc3d
-ms.sourcegitcommit: 244ab1b8fe98363f2bfeec337bf68e88ab31d789
+ms.openlocfilehash: 9746255d67fe0a03ec9a537025c19d4a2cb06302
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687114"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741334"
 ---
 # <a name="communication-compliance"></a>İletişim uyumluluğu
 

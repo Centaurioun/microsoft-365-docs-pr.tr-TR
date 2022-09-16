@@ -20,12 +20,13 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b0fc2035ff1b47c41d928f885c105aef59e9cb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: 951fd10307b1ceff61285f2a006845339d9d90d4
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67467129"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67740038"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Microsoft 365 Defender'de tehdit analizi
 
@@ -85,7 +86,7 @@ _Tehdit analizi panosu. Ayrıca, okumak istediğiniz tehdit analizi raporuyla il
 
 Her tehdit analizi raporu çeşitli bölümlerde bilgi sağlar:
 
-- [**Genel Bakış**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses)
+- [**Genel bakış**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses)
 - [**Analist raporu**](#analyst-report-get-expert-insight-from-microsoft-security-researchers)
 - [**İlgili olaylar**](#related-incidents-view-and-manage-related-incidents)
 - [**Etkilenen varlıklar**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)

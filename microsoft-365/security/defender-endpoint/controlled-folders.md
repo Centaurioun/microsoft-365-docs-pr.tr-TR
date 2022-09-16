@@ -16,14 +16,13 @@ ms.custom: asr
 ms.subservice: mde
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: c6a6b1885c01fd380432cc7a2e82bc6644963c94
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 2085ca229880b96cf64609f8cd25f6454882ef42
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683637"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742640"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Denetimli klasör erişimiyle önemli klasörleri koruma
 

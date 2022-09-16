@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: medium
-ms.date: 07/19/2022
 search.appverid:
 - BCS160
 - MET150
@@ -18,12 +18,12 @@ search.appverid:
 - BEA160
 - GEA150
 description: Microsoft 365 İş Ekstra kullanıcıların parolalarını sıfırlayın.
-ms.openlocfilehash: 00d40ac62df6ca0c8af8beccf8db55e4ca9bf017
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 1d38b19222280d14ce953fb793c4be903f0a8793
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613834"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67739950"
 ---
 # <a name="reset-passwords-in-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra'da parolaları sıfırlama
 

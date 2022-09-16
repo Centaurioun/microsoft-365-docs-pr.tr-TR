@@ -2,7 +2,8 @@
 title: Microsoft Defender Güvenlik Merkezi erişmek için temel izinleri kullanma
 description: Uç Nokta için Microsoft Defender portalına erişmek için temel izinleri kullanmayı öğrenin.
 keywords: kullanıcı rolleri atama, okuma ve yazma erişimi atama, salt okunur erişim atama, kullanıcı, kullanıcı rolleri, roller
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,14 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
 search.appverid: met150
-ms.openlocfilehash: 2b5590dd2e66a0b86c067e11b1fce5f9b85893b6
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3b2d8aa7fcb2142e114985037fcbfdc34f375168
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702456"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741839"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Portala erişmek için temel izinleri kullanın
 

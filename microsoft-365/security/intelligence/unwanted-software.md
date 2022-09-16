@@ -3,7 +3,7 @@ title: İstenmeyen yazılım
 ms.reviewer: ''
 description: İstenmeyen yazılımların izniniz olmadan varsayılan ayarlarınızı nasıl değiştirebileceği ve kendinizi korumak için yapabilecekleriniz hakkında bilgi edinin.
 keywords: güvenlik, kötü amaçlı yazılım, koruma, istenmeyen, yazılım, alter, enfekte, istenmeyen yazılım, yazılım paketleyiciler, tarayıcı değiştiriciler, gizlilik, güvenlik, bilgi işlem deneyimi, bulaşmayı önleme, çözüm, WDSI, MMPC, Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi, virüs araştırma tehditleri, araştırma kötü amaçlı yazılımları, Pc koruması, bilgisayar bulaşması, virüs bulaşması, açıklamalar, düzeltme, en son tehditler
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,17 +14,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 654730571de934552d983e1135f24a3299567741
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: db9a37bf18296e23763e6652bc25d0c50fd282cc
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666690"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742321"
 ---
 # <a name="unwanted-software"></a>İstenmeyen yazılım
 
-İstenmeyen yazılımlar, onayınız veya denetiminiz olmadan Windows deneyimini değiştiren programlardır. Bu, değiştirilmiş gözatma deneyimi, indirmeler ve yükleme üzerinde denetim eksikliği, yanıltıcı iletiler veya Windows ayarlarına yetkisiz değişiklikler şeklinde olabilir.
+İstenmeyen yazılımlar, onayınız veya denetiminiz olmadan Windows deneyimini değiştiren programlardır. Bu, değiştirilmiş gözatma deneyimi, indirmeler ve yükleme üzerinde denetim eksikliği, yanıltıcı iletiler veya Windows ayarlarında yetkisiz değişiklikler olabilir.
 
 ## <a name="how-unwanted-software-works"></a>İstenmeyen yazılımlar nasıl çalışır?
 
@@ -46,11 +45,11 @@ Microsoft, istenmeyen yazılımları tanımlamak için kapsamlı bir [değerlend
 
 ## <a name="how-to-protect-against-unwanted-software"></a>İstenmeyen yazılımlara karşı koruma
 
-İstenmeyen yazılım bulaşmasını önlemek için, yazılımı yalnızca resmi web sitelerinden veya Microsoft Store indirin. Üçüncü taraf sitelerden yazılım indirmeye karşı dikkatli olun.
+İstenmeyen yazılım bulaşmasını önlemek için yalnızca resmi web sitelerinden veya Microsoft Store'dan yazılım indirin. Üçüncü taraf sitelerden yazılım indirmeye karşı dikkatli olun.
 
-İnternet'e göz atarken [Microsoft Edge](/microsoft-edge/deploy/index) kullanın. Microsoft Edge, tarayıcı ayarlarınızı değiştirebilen tarayıcı değiştiricilerini etkili bir şekilde engelleyen ek korumalar içerir. Microsoft Edge, [Windows Defender SmartScreen](/microsoft-edge/deploy/index) (Internet Explorer tarafından da kullanılır) kullanarak istenmeyen yazılımları barındıran bilinen web sitelerini de engeller.
+İnternet'e göz atarken [Microsoft Edge'i](/microsoft-edge/deploy/index) kullanın. Microsoft Edge, tarayıcı ayarlarınızı değiştirebilen tarayıcı değiştiricilerini etkili bir şekilde engelleyen ek korumalar içerir. Microsoft Edge, [Windows Defender SmartScreen](/microsoft-edge/deploy/index) (Internet Explorer tarafından da kullanılır) kullanarak istenmeyen yazılımları barındıran bilinen web sitelerini de engeller.
 
-[Windows 10'da Microsoft Defender Virüsten Koruma](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) etkinleştirin. Tehditlere karşı gerçek zamanlı koruma sağlar ve bilinen istenmeyen yazılımları algılar ve kaldırır.
+[Windows 10'da Microsoft Defender Virüsten Koruma'yı](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) etkinleştirin. Tehditlere karşı gerçek zamanlı koruma sağlar ve bilinen istenmeyen yazılımları algılar ve kaldırır.
 
 Windows 7 veya Windows Vista'da gerçek zamanlı koruma için [Microsoft Security Essentials'ı](https://www.microsoft.com/download/details.aspx?id=5201) indirin.
 
@@ -60,9 +59,9 @@ Daha genel ipuçları için bkz. [Kötü amaçlı yazılım bulaşmasını önle
 
 İstenmeyen yazılıma sahip olduğunuzdan şüpheleniyorsanız dosyaları [analiz için gönderebilirsiniz](https://www.microsoft.com/wdsi/filesubmission).
 
-İstenmeyen bazı yazılımlar kaldırma girdileri ekler; başka bir deyişle **bunları Ayarlar kullanarak kaldırabilirsiniz**.
+İstenmeyen bazı yazılımlar kaldırma girdileri ekler. Bu, **bunları Ayarlar'ı kullanarak kaldırabileceğiniz** anlamına gelir.
 1. Başlangıç düğmesini seçin
-2. **Ayarlar > Uygulamaları > Uygulamalar & özellikleri'ne** gidin.
+2. **Ayarlar > Uygulamalar > Uygulamalar & özellikleri'ne** gidin.
 3. Kaldırmak istediğiniz uygulamayı seçin ve **kaldır'a** tıklayın.
 
 İstenmeyen yazılım bulaşma belirtilerini yalnızca yakın zamanda fark ettiyseniz, uygulamaları yükleme tarihine göre sıralamayı ve ardından yüklemediğiniz en son uygulamaları kaldırmayı düşünün.

@@ -19,12 +19,13 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 376d9021d06f120bc4f84b9194c26f45479492d1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+search.appverid: met150
+ms.openlocfilehash: aaf1ab874eddaae385cf3eaf3f0e3fb0bea8d877
+ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67481008"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67741576"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Microsoft 365 Defender'da gelişmiş arama ile tehditleri proaktif olarak avlama
 

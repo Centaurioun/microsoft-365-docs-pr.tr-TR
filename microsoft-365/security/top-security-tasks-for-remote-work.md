@@ -7,8 +7,7 @@ author: brendacarter
 manager: dansimp
 audience: Admin
 ms.topic: tutorial
-ms.prod: m365-security
-ms.technology: m365d
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -17,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: İş e-postanızı ve verilerinizi fidye yazılımı, kimlik avı ve kötü amaçlı ekler gibi siber tehditlere karşı koruyun.
-ms.openlocfilehash: 1d1b2a102b22725aeb6538d83befdc964e3d57f5
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: dcf2d81828ff12ef857b10ec81595613d1e4f98a
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663157"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741378"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Güvenlik ekiplerinin evden çalışmayı desteklemesi için en önemli 12 görev
 

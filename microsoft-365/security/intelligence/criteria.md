@@ -3,7 +3,7 @@ title: Microsoft kötü amaçlı yazılımları ve istenmeyebilecek uygulamalar�
 ms.reviewer: ''
 description: Microsoft'un kötü amaçlı yazılım mı yoksa istenmeyebilecek bir uygulama mı olduğunu belirlemek için yazılımı gizlilik ihlalleri ve diğer olumsuz davranışlara karşı nasıl gözden geçireceğini öğrenin.
 keywords: güvenlik, kötü amaçlı yazılım, virüs araştırma tehditleri, araştırma kötü amaçlı yazılımları, cihaz koruması, bilgisayar bulaşması, virüs bulaşması, açıklamalar, düzeltme, en son tehditler, MMdevice, Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi, PUA, istenmeyebilecek uygulamalar
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -15,13 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 12/13/2021
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 1f210ee98c8fc51cfa6900b19bb3cb5d5465dbb3
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 4938a221cd23f3d99a9bdd32b981a28828c0eff3
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663558"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67739972"
 ---
 # <a name="how-microsoft-identifies-malware-and-potentially-unwanted-applications"></a>Microsoft kötü amaçlı yazılımları ve istenmeyebilecek uygulamaları nasıl tanımlar?
 
@@ -172,7 +171,7 @@ Microsoft, [analiz için yazılım gönderebileceğiniz](https://www.microsoft.c
 
 ## <a name="potentially-unwanted-application-pua"></a>İstenmeyebilecek uygulama (PUA)
 
-PUA korumamız, kullanıcı üretkenliğini korumayı ve keyifli Windows deneyimler sağlamayı amaçlar. Bu koruma daha üretken, performanslı ve keyifli Windows deneyimler sunmaya yardımcı olur. Chromium tabanlı Microsoft Edge ve Microsoft Defender Virüsten Koruma PUA korumasını etkinleştirme hakkında yönergeler için bkz. [İstenmeyebilecek uygulamaları algılama ve engelleme](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+PUA korumamız, kullanıcı üretkenliğini korumayı ve keyifli Windows deneyimleri sağlamayı amaçlar. Bu koruma daha üretken, performanslı ve keyifli Windows deneyimleri sunmaya yardımcı olur. Chromium tabanlı Microsoft Edge ve Microsoft Defender Virüsten Koruma'da PUA korumasını etkinleştirme hakkında yönergeler için bkz. [İstenmeyebilecek uygulamaları algılama ve engelleme](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 *PUA'lar kötü amaçlı yazılım olarak kabul edilmez.*
 
@@ -180,9 +179,9 @@ Microsoft, yazılımları PUA olarak sınıflandırmak için belirli kategoriler
 
 * **Reklam yazılımı:** Reklamlar veya promosyonlar görüntüleyen ya da kendi dışındaki yazılımlardaki diğer ürünler veya hizmetler için anketleri tamamlamanızı isteyen yazılım. Bu, web sayfalarına reklam ekleyen yazılımları içerir.
 
-* **Torrent yazılımı (yalnızca Enterprise):** Özel olarak eşler arası dosya paylaşım teknolojileriyle kullanılan torrentleri veya diğer dosyaları oluşturmak veya indirmek için kullanılan yazılım.
+* **Torrent yazılımı (yalnızca Enterprise):** Özel olarak eşler arası dosya paylaşım teknolojileriyle kullanılan torrent veya diğer dosyaları oluşturmak veya indirmek için kullanılan yazılım.
 
-* **Şifreleme yazılımı (yalnızca Enterprise):** Kripto para madencileri için cihaz kaynaklarınızı kullanan yazılım.
+* **Cryptomining yazılımı (yalnızca Kurumsal):** Kripto para madencileri için cihaz kaynaklarınızı kullanan yazılım.
 
 * **Paketleme yazılımı:** Aynı varlık tarafından geliştirilmeyen veya yazılımın çalışması için gerekli olmayan diğer yazılımları yüklemeyi teklif eden yazılım. Ayrıca, bu belgede belirtilen ölçütlere göre PUA olarak nitelendirilen diğer yazılımları yüklemeyi teklif eden yazılımlar.
 

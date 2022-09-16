@@ -2,7 +2,8 @@
 title: Kötü amaçlı yazılım bulaşmasını önlemek için saldırı yüzeyi azaltma kurallarını kullanma
 description: Saldırı yüzeyi azaltma kuralları, uygulamalara ve betiklere kötü amaçlı yazılım bulaştırmak için açıklardan yararlanmanın önlenmesine yardımcı olabilir.
 keywords: Saldırı yüzeyi azaltma kuralları, asr, kalçalar, konak izinsiz giriş önleme sistemi, koruma kuralları, anti-exploit, antiexploit, exploit, enfeksiyon önleme, Uç Nokta için Microsoft Defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,18 +16,17 @@ manager: dansimp
 ms.custom:
 - asr
 - admindeeplinkDEFENDER
-ms.technology: mde
 ms.topic: article
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 search.appverid: met150
-ms.openlocfilehash: 7f76c92ab6f8b488ea8d43402527ac6d74cf2b21
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: c41def8113a701b1da47ad58861b87dd96c72fdc
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693223"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67741927"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Saldırı yüzeyi azaltma kurallarına genel bakış
 

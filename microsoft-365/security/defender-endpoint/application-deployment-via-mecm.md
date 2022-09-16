@@ -3,7 +3,8 @@ title: Sunucuları Microsoft Monitoring Agent'tan birleşik çözüme geçirme
 description: Bu makaledeki alt düzey sunucuları Microsoft Monitoring Agent'tan yeni birleşik çözüme adım adım geçirmeyi öğrenin.
 keywords: sunucuyu geçirme, sunucu, 2012r2, 2016, sunucu geçişi Uç Nokta için Microsoft Defender sunucuları, MECM, Microsoft Monitoring Agent, MMA, alt düzey sunucu, birleşik çözüm, UA
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 67d1f15ef79f932ad8515d8c8f6b5339845eb4f4
-ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
+ms.openlocfilehash: f2a3e28c52fa1182808fd17b78ab4a278bd69ab4
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67444932"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742190"
 ---
 # <a name="migrating-servers-from-microsoft-monitoring-agent-to-the-unified-solution"></a>Sunucuları Microsoft Monitoring Agent'tan birleşik çözüme geçirme
 

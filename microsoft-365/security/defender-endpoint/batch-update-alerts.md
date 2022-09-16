@@ -2,7 +2,8 @@
 title: Batch Update uyarı varlıkları API'si
 description: Bu API'yi kullanarak toplu Uç Nokta için Microsoft Defender uyarılarını güncelleştirme hakkında bilgi edinin. Durum, belirleme, sınıflandırma ve assignedTo özelliklerini güncelleştirebilirsiniz.
 keywords: api'ler, graf api'si, desteklenen API'ler, alma, uyarı, bilgi, kimlik
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,15 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 8c7579eef9c3e688e16c66bcb1a6031715b6a6a9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: db35b357844c8af944449cbaaa57dfc0ad2ee188
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67698297"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740543"
 ---
 # <a name="batch-update-alerts"></a>Grup güncelleştirme uyarıları
 

@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b930181681d5849af4e99bf41d2b8643329175a5
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: de77f14d998c0be2f174c74e4d95cc265ee94bfb
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482240"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67740521"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Adım 1. İlk olayınızı önceliklendirme ve analiz etme
 
@@ -48,7 +48,7 @@ Microsoft 365 Defender, tümsel bir resim ve kötü amaçlı etkinlik bağlamı 
 - [Uç Nokta için Microsoft Defender](../defender-endpoint/microsoft-defender-endpoint.md), Microsoft Defender virüsten koruma ve Microsoft Güvenlik Grafı kullanarak bulut özellikli gelişmiş tehdit koruması kullanan bir uç nokta algılama ve yanıt çözümüdür (EDR). Uç Nokta için Defender, önleyici koruma, ihlal sonrası algılama, otomatik araştırma ve yanıt için birleşik bir platformdur. Uç noktaları siber tehditlere karşı korur, gelişmiş saldırıları ve veri ihlallerini algılar, güvenlik olaylarını otomatikleştirir ve güvenlik duruşunu geliştirir.
 - [Kimlik için Microsoft Defender](/defender-for-identity/what-is), şirket içi Active Directory Etki Alanı Hizmetleri (AD DS) sinyallerinizi kullanarak gelişmiş tehditleri, güvenliği aşılmış kimlikleri ve kuruluşunuza yönelik kötü amaçlı insider eylemlerini tanımlamak, algılamak ve araştırmak için kullanılan bulut tabanlı bir güvenlik çözümüdür.
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/), kullanıcılarınızın bulunduğu her yerde ve kullandıkları cihazdan bağımsız olarak, kurumsal kullanıcılarınız ve kullandıkları bulut kaynakları arasında gerçek zamanlı olarak erişime aracılık etmek için bir ağ geçidi denetleyicisi görevi görür.
-- [Office 365 için Microsoft Defender](../office-365-security/overview.md), kuruluşunuzu e-posta iletileri, bağlantılar (URL'ler) ve işbirliği araçlarındaki kötü amaçlı tehditlere karşı korur.
+- [Office 365 için Microsoft Defender](/microsoft-365/office-365-security/overview), kuruluşunuzu e-posta iletileri, bağlantılar (URL'ler) ve işbirliği araçlarındaki kötü amaçlı tehditlere karşı korur.
 - [Azure Güvenlik Merkezi](/azure/security-center/security-center-introduction), veri merkezlerinizin güvenlik duruşunu güçlendiren ve buluttaki ve şirket içindeki hibrit iş yükleriniz genelinde gelişmiş tehdit koruması sağlayan birleşik bir altyapı güvenlik yönetim sistemidir.
 
 

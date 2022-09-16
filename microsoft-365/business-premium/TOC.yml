@@ -125,7 +125,7 @@
     - name: İş için Microsoft Defender
       href: ../security/defender-business/index.yml
     - name: Office 365 için Microsoft Defender
-      href: ../security/office-365-security/overview.md
+      href: /microsoft-365/security/office-365-security/overview
     - name: Microsoft 365 Lighthouse
       href: ../lighthouse/m365-lighthouse-overview.md
     - name: Microsoft Defender Virüsten Koruma tarafından tehdit koruması
