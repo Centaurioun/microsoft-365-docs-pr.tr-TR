@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/15/2022
+ms.date: 09/15/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 20d1bf0cb045e3ee2efc70a6b0c68fec8b8436ca
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 7d15b3fad4e9cb05fd49ae977e66206314a71235
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598098"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736486"
 ---
 # <a name="visit-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalını ziyaret edin
 
@@ -50,7 +50,7 @@ Olaylarınıza erişmek, raporları görüntülemek ve güvenlik ilkelerinizi y�
 | **Bitiş noktası** >  **Öğreticiler** | Tehdit koruması özelliklerinizin nasıl çalıştığı hakkında daha fazla bilgi edinmenize yardımcı olmak için kılavuzlara ve simülasyonlara erişim sağlar. Her öğretici için simülasyon dosyasını almaya çalışmadan önce **İzlenecek yol bağlantısını okuyun'u** seçin. Bazı simülasyonlar, izlenecek kılavuzu okumak için Microsoft Word gibi Office uygulamalarını gerektirir. |
 | **Bitiş noktası** >  **Yapılandırma yönetimi** >  **Cihaz yapılandırması** | Güvenlik ilkelerinizi işletim sistemine ve türe göre listeler. Güvenlik ilkeleriniz hakkında daha fazla bilgi edinmek için bkz. [İş için Defender'da ilkeleri görüntüleme veya düzenleme](mdb-view-edit-policies.md). |
 | **Bitiş noktası** >  **Yapılandırma yönetimi** >  **Cihaz yönetimi raporlaması** | İş için Defender'a eklenen cihazları, işletim sistemi sürümleri, algılayıcı sistem durumu ve en son ne zaman güncelleştirildiklerini listeler. |
-| **Email & işbirliği** > **İlkeleri & kuralları** | Aboneliğinizde Exchange Online Protection veya Office 365 için Microsoft Defender varsa, bu bölüm e-posta ve işbirliği hizmetleri için güvenlik ilkelerinizi ve ayarlarınızı yöneteceğiniz yerdir. [Office 365 güvenliği hakkında daha fazla bilgi edinin](../office-365-security/overview.md). *İş için Defender'ın tek başına sürümü e-posta & işbirliği ilkelerini içermez, ancak Microsoft 365 İş Ekstra Exchange Online Protection ve Office 365 için Defender Plan 1'i içerir*. [Küçük ve orta ölçekli işletmeler için Microsoft 365 planlarındaki güvenlik özelliklerini karşılaştırın](compare-mdb-m365-plans.md).  |
+| **Email & işbirliği** > **İlkeleri & kuralları** | Aboneliğinizde Exchange Online Protection veya Office 365 için Microsoft Defender varsa, bu bölüm e-posta ve işbirliği hizmetleri için güvenlik ilkelerinizi ve ayarlarınızı yöneteceğiniz yerdir. [Office 365 güvenliği hakkında daha fazla bilgi edinin](/microsoft-365/office-365-security/overview). *İş için Defender'ın tek başına sürümü e-posta & işbirliği ilkelerini içermez, ancak Microsoft 365 İş Ekstra Exchange Online Protection ve Office 365 için Defender Plan 1'i içerir*. [Küçük ve orta ölçekli işletmeler için Microsoft 365 planlarındaki güvenlik özelliklerini karşılaştırın](compare-mdb-m365-plans.md).  |
 | **Bulut uygulamaları** >  **Uygulama idaresi** | Aboneliğiniz [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) içeriyorsa[, uygulama idaresini](/defender-cloud-apps/app-governance-manage-app-governance) ekleyebilirsiniz ve bu bölümde bu özellikleri görüntüleyip bunlara erişebilirsiniz. *İş için Defender ve Microsoft 365 İş Ekstra, Cloud Apps için Defender'ı içermez*. |
 | **Raporlar** | Kullanılabilir güvenlik raporlarını listeler. Bu raporlar güvenlik eğilimlerinizi görmenizi, tehdit algılamaları ve uyarıları hakkındaki ayrıntıları görüntülemenizi ve şirketinizin savunmasız cihazları hakkında daha fazla bilgi edinmenizi sağlar. |
 | **Hizmet Durumu** | Hizmet durumu durumunuzu görüntülemenizi ve yaklaşan değişiklikleri planlamanızı sağlar. <br/>- Şirketinizin aboneliğine dahil edilen Microsoft 365 hizmetlerinin sistem durumunu görüntülemek için **Hizmet durumu** seçin.<br/>- Planlı değişiklikler ve bekleyebileceğiniz şeyler hakkında bilgi edinmek için **İleti merkezi'ne** tıklayın.  |

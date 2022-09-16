@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/05/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra veya Kampanyalar için Microsoft 365 kurulum sürecini başlatın.
-ms.openlocfilehash: 7534b83891d6b487bc4687528452feae4b78563e
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 05e4d9cbd1a5781a8c25a49c85f3b085ba1e7042
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614538"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738739"
 ---
 # <a name="fortify-your-environment-with-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra ile ortamınızı güçlendirin
 

@@ -2,8 +2,8 @@
 title: Teknik Destek Dolandırıcılıkları
 ms.reviewer: ''
 description: Microsoft güvenlik yazılımı sizi kötü amaçlı yazılım veya virüs taraması iddia eden ve ardından sahte algılamalar ve uyarılar gösteren teknik destek dolandırıcılıklarından koruyabilir.
-keywords: güvenlik, kötü amaçlı yazılım, teknik destek, dolandırıcılık, koruma, hile, sahtekarlık, sahte, hata iletileri, rapor, sahte güvenlik yazılımı, sahte, virüsten koruma, sahte yazılım, sahte, tehditler, ücret, kaldırma ücreti, yükseltme, kaldırma için ödeme, tam sürüm yükleme, deneme, çok sayıda tehdit, tarayıcı, tarama, temiz, bilgisayar, güvenlik, program, XP ev güvenliği, sahte Microsoft, etkinleştirme, taramayı etkinleştirme, virüsten koruma, uyarılar, açılır pencereler, güvenlik uyarıları, güvenlik açılır pencereleri teknik destek dolandırıcılıkları,  sahte Microsoft hata bildirimi, sahte virüs uyarısı, sahte ürün süre sonu, sahte Windows etkinleştirme, dolandırıcılık web sayfaları, dolandırıcılık telefon numaraları, telefon numaraları, MMPC, WDSI, Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi, teknik destek dolandırıcılığı numaraları
-ms.prod: m365-security
+keywords: güvenlik, kötü amaçlı yazılım, teknik destek, dolandırıcılık, koruma, hile, sahtekarlık, sahte, hata iletileri, rapor, sahte güvenlik yazılımı, sahte, virüsten koruma, sahte yazılım, sahte, tehditler, ücret, kaldırma ücreti, yükseltme, kaldırma için ödeme, tam sürüm yükleme, deneme, çok sayıda tehdit, tarayıcı, tarama, temiz, bilgisayar, güvenlik, program, XP ev güvenliği, sahte Microsoft, etkinleştirme, taramayı etkinleştirme, virüsten koruma, uyarılar, açılır pencereler, güvenlik uyarıları, güvenlik açılır pencereleri teknik destek dolandırıcılıkları,  sahte Microsoft hata bildirimi, sahte virüs uyarısı, sahte ürün süre sonu, sahte Windows etkinleştirmesi, dolandırıcılık web sayfaları, dolandırıcılık telefon numaraları, telefon numaraları, MMPC, WDSI, Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi, teknik destek dolandırıcılığı numaraları
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,13 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 28347f3e6ac0d51c9c46bbf9de33a4e46b9da705
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 9af3446010f213beba72a894af8b7c6cad862ec0
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663104"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737246"
 ---
 # <a name="tech-support-scams"></a>Teknik destek dolandırıcılığı
 
@@ -48,17 +47,17 @@ Aşağıdakileri göz önünde bulundurmak da önemlidir:
 
 * Açılır pencerelerdeki numarayı aramayın. Microsoft'un hata ve uyarı iletileri hiçbir zaman telefon numarası içermez.
 
-* Yazılımı yalnızca resmi satıcı web sitelerinden veya Microsoft Store indirin. Üçüncü taraf sitelerden yazılım indirmeye dikkat edin çünkü bazıları, dolandırıcılığı ve diğer tehditleri paketlemek için yazarın bilgisi olmadan değiştirilmiş olabilir.
+* Yazılımı yalnızca resmi satıcı web sitelerinden veya Microsoft Store'dan indirin. Üçüncü taraf sitelerden yazılım indirmeye dikkat edin çünkü bazıları, dolandırıcılığı ve diğer tehditleri paketlemek için yazarın bilgisi olmadan değiştirilmiş olabilir.
 
-* İnternet'e göz atarken [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) kullanın. Windows Defender SmartScreen (Internet Explorer tarafından da kullanılır) kullanarak bilinen destek dolandırıcılığı sitelerini engeller. Ayrıca, Microsoft Edge bu siteler tarafından kullanılan açılır iletişim kutusu döngülerini durdurabilir.
+* İnternet'e göz atarken [Microsoft Edge'i](https://www.microsoft.com/windows/microsoft-edge) kullanın. Windows Defender SmartScreen (Internet Explorer tarafından da kullanılır) kullanarak bilinen destek dolandırıcılığı sitelerini engeller. Ayrıca, Microsoft Edge bu siteler tarafından kullanılan açılır iletişim döngülerini durdurabilir.
 
-* [Windows 10'da Microsoft Defender Virüsten Koruma](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) etkinleştirin. Bilinen destek dolandırıcılığı kötü amaçlı yazılımlarını algılar ve kaldırır.
+* [Windows 10'da Microsoft Defender Virüsten Koruma'yı](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) etkinleştirin. Bilinen destek dolandırıcılığı kötü amaçlı yazılımlarını algılar ve kaldırır.
 
 ## <a name="what-to-do-if-information-has-been-given-to-a-tech-support-person"></a>Teknik destek görevlisine bilgi verildiyse yapılması gerekenler
 
 * Dolandırıcıların yüklenmesini istediği uygulamaları kaldırın. Erişim verildiyse cihazı sıfırlamayı göz önünde bulundurun
 
-* Kötü amaçlı yazılımları kaldırmak için Microsoft Defender Virüsten Koruma ile tam tarama çalıştırın. Tüm güvenlik güncelleştirmelerini kullanılabilir oldukları anda uygulayın.
+* Tüm kötü amaçlı yazılımları kaldırmak için Microsoft Defender Virüsten Koruma ile tam tarama çalıştırın. Tüm güvenlik güncelleştirmelerini kullanılabilir oldukları anda uygulayın.
 
 * Parolaları değiştirin.
 

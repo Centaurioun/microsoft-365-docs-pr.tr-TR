@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Sahipsiz bir Microsoft 365 grubunda veya Microsoft Teams'de bir ekipte sahip olmaya üyeleri otomatik olarak davet etmeyi öğrenin.
-ms.openlocfilehash: 0c64aa01784e837be1f57e0ae2ad5b0db6317e9a
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 3d140c7080feca76382e54049918d5e7866e29d5
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280883"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67743098"
 ---
 # <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>Sahipsiz Microsoft 365 gruplarını ve ekiplerini yönetme
 
 Microsoft Teams'deki bir ekip veya Bir Microsoft 365 grubu ve ilgili hizmetleri, Microsoft 365'te bir sahibin hesabı silinir veya devre dışı bırakılırsa sahipsiz hale gelebilir. Gruplar ve ekipler, bir sahibin üye eklemesini veya kaldırmasını ve grup ayarlarını değiştirmesini gerektirir.
 
-Genel yönetici sahipsiz bir grubun veya ekibin en etkin üyelerine sahipliği kabul etmelerini otomatik olarak soran bir ilke oluşturabilir. Bir üye sahip olma davetini kabul ettiğinde, eylem uyumluluk portalı denetim günlüğüne kaydedilir. Konuklar hiçbir zaman sahip olmaya davet edilmemektedir.
+Genel Yönetici, Exchange Yöneticisi veya Grup Yöneticisi sahipsiz bir grubun veya ekibin en etkin üyelerine sahipliği kabul etmelerini otomatik olarak soran bir ilke oluşturabilir. Bir üye sahip olma davetini kabul ettiğinde, eylem uyumluluk portalı denetim günlüğüne kaydedilir. Konuklar hiçbir zaman sahip olmaya davet edilmemektedir.
 
 İlkeyi oluştururken şunları belirtebilirsiniz:
 - Güvenlik grubu belirterek kimlerin sahip olmaya davet edilebileceğini sınırlamak istiyorsanız

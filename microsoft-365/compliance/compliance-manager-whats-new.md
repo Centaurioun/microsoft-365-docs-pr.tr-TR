@@ -17,16 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Uyumluluk Yöneticisi'ndeki yeniliklere ve gelecek yeniliklere ulaşın. Güncelleştirilmiş değerlendirmeler, yeni değerlendirme şablonları, yeni eylemler ve daha fazlası hakkında bilgi edinin.
-ms.openlocfilehash: be6527822798a518753897b5d104899077264ee3
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 5da92b644397ef04212468d9d918bdab270c2760
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894349"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738214"
 ---
 # <a name="whats-new-in-microsoft-purview-compliance-manager"></a>Microsoft Purview Uyumluluk Yöneticisi'ndeki yenilikler
 
 **Bu makalede:** Uyumluluk Yöneticisi'ndeki son güncelleştirmeler hakkında bilgi edinin.
+
+## <a name="august-2022"></a>Ağustos 2022
+
+Uyumluluk Yöneticisi aşağıdaki yeni değerlendirme şablonunu yayımladı:
+
+- ISM Sürüm 3.5 ile Avustralya Bilgi Güvenliği Kayıtlı Değerlendirici Programı (IRAP) - Resmi
+
+[Değerlendirme şablonlarının tam listesini](compliance-manager-templates-list.md) görüntüleyin.
 
 ## <a name="july-2022"></a>Temmuz 2022
 

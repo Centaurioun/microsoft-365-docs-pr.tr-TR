@@ -3,19 +3,20 @@ title: Microsoft Defender Tehdit Analizi'de Etiketleri Kullanma (Defender TI)
 Description: Bu nasıl yapılır makalesinde etiket türleri ve Microsoft Defender Tehdit Analizi (Defender TI) içinde özel etiketler ekleme, değiştirme, silme ve arama hakkında bilgi edinin.
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: d9e77b52e7f36bb0458a0638c0b0d2ee24e8bbff
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: e587702dcd3fef2dda0bb3a618c4db9cc90473d8
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175520"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738717"
 ---
 # <a name="using-tags"></a>Etiketleri kullanma
-Microsoft Defender Tehdit Analizi (Defender TI) etiketleri, sistem tarafından türetilen veya diğer kullanıcılar tarafından oluşturulan bir yapıt hakkında hızlı içgörü sağlamak için kullanılır. Etiketler, analistlerin mevcut olaylar ve araştırmalarla bunların geçmiş bağlamları arasındaki noktaları daha iyi analiz için bağlamalarına yardımcı oluyor.
+Microsoft Defender Tehdit Analizi (Defender TI) etiketleri, sistem tarafından türetilen veya diğer kullanıcılar tarafından oluşturulan bir yapıt hakkında hızlı içgörü sağlamak için kullanılır. Daha iyi analizlerin yapılması için etiketler, çözümleyicilerin güncel olaylar ve araştırmalarla bunların geçmiş bağlamları arasındaki bağlantıları kurmasına yardımcı olur.
 
 Defender TI platformu iki tür etiket sunar: sistem ve özel etiketler.
 
@@ -45,7 +46,7 @@ Sistem etiketleri şunları içerebilir:
 
 Gizliliği tehlikeye girme göstergelerine (ICS) bağlam getirmek ve genel raporlamadan kötü bilinen veya şirketinizin analistleri tarafından kategorilere ayrılmış olan etki alanlarını belirleyerek analizi daha da basit hale getirmek için Defender TI'nin içindeki Özel Etiketler. Bu etiketler kullanıcılar tarafından kendi araştırmalarına göre el ile oluşturulur. Bu etiketler kullanıcıların bir yapıt hakkındaki önemli içgörüleri kiracılarındaki diğer Defender TI Premium lisans kullanıcılarıyla paylaşmasına olanak tanır.
 
-![Etiketler Özel](media/tagsCustom.png)
+![Özel Etiketler](media/tagsCustom.png)
 
 ## <a name="adding-modifying-and-removing-tags"></a>Etiket Ekleme, Değiştirme ve Kaldırma
 
@@ -84,7 +85,7 @@ Kullanıcıların etiket ekleyebildiği gibi, bunları da değiştirebilir veya 
 
 Kullanıcılar bir IP, etki alanı veya konak yapıtında arama yaptıktan sonra kendileri veya kiracılarındaki diğer kişiler tarafından eklenen etiketleri görüntüleyebilir.
 
-![Etiketler Özel](media/tagsCustom.png)
+![Özel Etiketler](media/tagsCustom.png)
 
 1. [Defender Tehdit Bilgileri Portalı'na](https://ti.defender.microsoft.com/) erişin.
 2. Portala erişmek için Microsoft kimlik doğrulamasını tamamlayın.

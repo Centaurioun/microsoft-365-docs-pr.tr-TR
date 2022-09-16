@@ -3,16 +3,17 @@ title: 'Öğretici: Microsoft Defender Tehdit Analizi kullanarak Tehdit Bilgiler
 description: Bu öğreticide, tehdit zekası ve altyapı zincirini Microsoft Defender Tehdit Analizi 'de (Defender TI) tehlikeye ilişkin göstergeleri birlikte toplamayı öğrenin. Bu makalede MyPillow Magecart ihlaliyle ilgili geçmişe dönük bir araştırma ele alınacaktır.
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: tutorial
 ms.date: 08/02/2022
 ms.custom: template-tutorial
-ms.openlocfilehash: 7cdb70d72253164b24cb55d57b20cc3edb7c5a7c
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: d225345ee32e016c3e050d4dc26a94f7f47c7146
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67172861"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736100"
 ---
 # <a name="tutorial-gathering-threat-intelligence-and-infrastructure-chaining"></a>Öğretici: Tehdit bilgilerini ve altyapı zincirini toplama
 
@@ -29,7 +30,7 @@ Bu öğreticide şunları nasıl yapacağınızı öğreneceksiniz:
     > [!NOTE]
     > Defender TI Premium lisansı olmayan kullanıcılar Defender Tehdit Bilgileri Portalı'na giriş yapmaya ve ücretsiz Defender TI teklifimize erişmeye devam edebilir.
 
-## <a name="disclaimer"></a>Feragatname
+## <a name="disclaimer"></a>Reddi
 
 Microsoft Defender Tehdit Analizi (Defender TI), kötü amaçlı altyapı ve saldırgan tehdit araçları da dahil olmak üzere canlı, gerçek zamanlı gözlemleri ve tehdit göstergelerini içerebilir. Defender TI platformumuzdaki tüm IP ve etki alanı aramalarının arama yapmak güvenlidir.
 
@@ -132,7 +133,7 @@ Ancak sanal kullanıcılarımız DOM'u yakalayıp JavaScript tarafından yapıla
     a. Bu ilgili kampanya hakkında hangi bilgileri kullanabilirsiniz?
       - 'Magecart Group 8 Blends into NutriBullet.com Adding To The Growing Victims' makalesi 18 Mart 2020'de yayımlandı. Bu makalede Nutribullet, Amerisleep, ABS-CBN'nin de Magecart tehdit aktör grubunun kurbanı olduğunu öğreniyoruz.
 15. Genel Göstergeler sekmesini seçin. a. Bu kampanyayla ilgili olarak hangi GÇ'ler listeleniyor?
-      - URL'ler
+      - Url 'leri
         1. hxxps://coffemokko[.] com/tr/, hxxps://freshdepor[.] com/tr/, hxxps://prodealscenter[.] com/tr/, hxxps://scriptoscript[.] com/tr/, hxxps://swappastore[.] com/tr/
         2. Etki alanları
             - 3lift[.] org, abtasty[.] net, adaptivecss[.] org, adorebeauty[.] org, all-about-sneakers[.] org, amerisleep.github[.] io, ar500arnor[.] com, authorizecdn[.] com, bannerbuzz[.] bilgi, pil gücü[.] org, batterynart[.] com, blackriverimaging[.] org, braincdn[.] org, btosports[.] net, cdnassels[.] com, cdnmage[.] com, chicksaddlery[.] net, childsplayclothing[.] org, christohperward[.] org, citywlnery[.] org, closetlondon[.] org, cmytuok[.] top, coffemokko[.] com, coffetea[.] org, configsysrc[.] info, dahlie[.] org, davidsfootwear[.] org, dobell[.] su, elegrina[.] com, energycoffe[.] org, energytea[.] org, etradesupply[.] org, exrpesso[.] org, foodandcot[.] com, freshchat[.] info, freshdepor[.] com, greatfurnituretradingco[.] org, info-js[.] link, jewsondirect[.] com, js-cloud[.] com, kandypens[.] net, kikvape[.] org, labbe[.] biz, lamoodbighats[.] net, link js[.] link, livechatinc[.] org, londontea[.] net, mage-checkout[.] org, magejavascripts[.] com, magescripts[.] pw, magesecuritys[.] com, majsurplus[.] com, map-js[.] link, mcloudjs[.] com, mechat[.] info, melbounestorm[.] com, misshaus[.] org, mylrendyphone[.] com, mypiltow[.] com, nililotan[.] org, oakandfort[.] org, ottocap[.] kuruluş, parklar[.] su, paypaypay[.] org, pmtonline[.] su, prodealscenter[.] com, replacemyremote[.] org, sagecdn[.] org, scriptoscript[.] com, güvenlik ödemesi[.] su, shop-rnib[.] org, slickjs[.] org, slickmin[.] com, smart-js[.] link, swappastore[.] com, teacoffe[.] net, top5value[.] com, track-js[.] link, ukcoffe[.] com, verywellfitnesse[.] com, walletgear[.] org, webanalyzer[.] net, zapaljs[.] com, zoplm[.] Com
@@ -150,7 +151,7 @@ Ancak sanal kullanıcılarımız DOM'u yakalayıp JavaScript tarafından yapıla
      - İlişkinin nedenleri şunlardır:
         1. script.src
         2. iframe.src
-        3. bilinmeyen
+        3. Bilinmeyen
         4. topLevelRedirect
         5. img.src
         6. xmlhttprequest

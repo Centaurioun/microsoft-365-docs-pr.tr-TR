@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 07/19/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams ve SharePoint ile kampanyanızın içindeki dosyaları ve videoları paylaşın. Microsoft 365 İş Ekstra, dosyaları ve videoları güvenli bir şekilde paylaşmanın harika bir yolu olan Teams'i içerir.
-ms.openlocfilehash: cb597a929b68325ca063268d7e8a60a989bfd7e8
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: c6c85746ca762aba26e4e4db063878b8c888c0a8
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614714"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67735812"
 ---
 # <a name="share-files-and-videos-in-a-safe-environment"></a>Dosyaları ve videoları güvenli bir ortamda paylaşma
 

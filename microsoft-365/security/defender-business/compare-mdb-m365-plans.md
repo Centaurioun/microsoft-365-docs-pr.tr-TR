@@ -10,19 +10,19 @@ ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/30/2022
+ms.date: 09/15/2022
 ms.reviewer: shlomiakirav
 ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
 f1.keywords: NOCSH
-ms.openlocfilehash: fb43a239584ea2439b6f5c1042675cf81e4b8adc
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: e3255ed8e5e3d8a7d1ba1dcf34286a8c663da5f6
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710971"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736464"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Küçük ve orta ölçekli işletmeler için Microsoft 365 planlarındaki güvenlik özelliklerini karşılaştırma
 
@@ -45,7 +45,7 @@ Microsoft, küçük ve orta ölçekli işletmelere yönelik planlar da dahil olm
 | Plan | Açıklama |
 |:---|:---|
 | **[İş için Defender](mdb-overview.md)** (tek başına) | **Cihazlar için virüsten koruma, kötü amaçlı yazılımdan koruma ve fidye yazılımı koruması**<ul><li>[Yeni nesil koruma](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) (bulut koruması ile birlikte cihazlarda virüsten koruma/kötü amaçlı yazılımdan koruma)</li><li>[Saldırı yüzeyini azaltma](../defender-endpoint/overview-attack-surface-reduction.md) (ağ koruması, güvenlik duvarı ve saldırı yüzeyi azaltma kuralları) <sup>[[a](#fna)]</sup></li><li>[Uç nokta algılama ve yanıt](../defender-endpoint/overview-endpoint-detection-response.md) (davranış tabanlı algılama ve el ile yanıt eylemleri)</li><li>[Otomatik araştırma ve yanıt](../defender/m365d-autoir.md) (algılanan tehditler için kendi kendini düzeltme ile)</li><li>[Microsoft Defender Güvenlik Açığı Yönetimi](mdb-view-tvm-dashboard.md) (kullanıma sunulan cihazları ve önerileri görüntüleme)</li><li>Cihazlar (Windows, Mac, iOS ve Android) [için platformlar arası destek](mdb-onboard-devices.md) <sup>[[b](#fnb)]</sup></li><li>[Merkezi yönetim ve raporlama](mdb-get-started.md) (Microsoft 365 Defender portalı)</li><li>[Tümleştirme api'leri](../defender-endpoint/management-apis.md) (Microsoft iş ortakları veya özel araçlarınız ve uygulamalarınız için)</li></ul> |
-| **[Microsoft 365 Business Premium](../../business-premium/index.md)** | **Üretkenlik ve ek güvenlik özellikleriyle birlikte İş için Defender özellikleri**<ul><li>[Microsoft 365 İş Standart](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (Office uygulamaları ve hizmetleri ve Microsoft Teams)</li><li>[Paylaşılan bilgisayar etkinleştirmesi](/deployoffice/overview-shared-computer-activation) (Microsoft 365 Uygulamaları dağıtmak için)</li><li>[Windows 10/11 İş](../../business-premium/m365bp-upgrade-windows-10-pro.md) (Windows Pro'nun önceki sürümlerinden yükseltme)</li><li>[Windows Autopilot](/mem/autopilot/windows-autopilot) (Windows cihazlarını ayarlama ve yapılandırma için)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) (e-posta için antiphishing, antispam, antimalware ve sahtekarlık zekası)</li><li>[Office 365 için Microsoft Defender Plan 1](../office-365-security/overview.md) (gelişmiş antiphishing, gerçek zamanlı algılamalar, Güvenli Ekler, Güvenli Bağlantılar)</li><li>[Arşivlemeyi otomatik genişletme](../../compliance/autoexpanding-archiving.md) (e-posta için)</li><li>[Azure Active Directory Premium Plan 1](/azure/active-directory/fundamentals/active-directory-whatis) (kimlik yönetimi)</li><li>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (cihaz ekleme ve yönetim)</li><li>[Azure Information Protection Premium Plan 1](/azure/information-protection/what-is-information-protection) (hassas bilgiler için koruma)</li><li>[Azure Sanal Masaüstü](/azure/virtual-desktop/overview) (bulutta merkezi olarak yönetilen, güvenli sanal makineler)</li></ul> |
+| **[Microsoft 365 Business Premium](../../business-premium/index.md)** | **Üretkenlik ve ek güvenlik özellikleriyle birlikte İş için Defender özellikleri**<ul><li>[Microsoft 365 İş Standart](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (Office uygulamaları ve hizmetleri ve Microsoft Teams)</li><li>[Paylaşılan bilgisayar etkinleştirmesi](/deployoffice/overview-shared-computer-activation) (Microsoft 365 Uygulamaları dağıtmak için)</li><li>[Windows 10/11 İş](../../business-premium/m365bp-upgrade-windows-10-pro.md) (Windows Pro'nun önceki sürümlerinden yükseltme)</li><li>[Windows Autopilot](/mem/autopilot/windows-autopilot) (Windows cihazlarını ayarlama ve yapılandırma için)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) (e-posta için antiphishing, antispam, antimalware ve sahtekarlık zekası)</li><li>[Office 365 için Microsoft Defender Plan 1](/microsoft-365/office-365-security/overview) (gelişmiş antiphishing, gerçek zamanlı algılamalar, Güvenli Ekler, Güvenli Bağlantılar)</li><li>[Arşivlemeyi otomatik genişletme](../../compliance/autoexpanding-archiving.md) (e-posta için)</li><li>[Azure Active Directory Premium Plan 1](/azure/active-directory/fundamentals/active-directory-whatis) (kimlik yönetimi)</li><li>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (cihaz ekleme ve yönetim)</li><li>[Azure Information Protection Premium Plan 1](/azure/information-protection/what-is-information-protection) (hassas bilgiler için koruma)</li><li>[Azure Sanal Masaüstü](/azure/virtual-desktop/overview) (bulutta merkezi olarak yönetilen, güvenli sanal makineler)</li></ul> |
 
   
 (<a id="fna">a</a>) saldırı yüzeyi azaltma kurallarını değiştirmek veya özelleştirmek için Microsoft Intune gereklidir. Intune, İş için Defender'ın tek başına sürümüne eklenebilir. Intune Microsoft 365 İş Ekstra dahildir.

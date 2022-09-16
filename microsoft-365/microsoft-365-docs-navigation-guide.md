@@ -2,8 +2,7 @@
 title: Microsoft 365 belgeleri gezinti ipuçları
 description: Microsoft 365 teknik belgelerinde gezinmeye yönelik ipuçları ve püf noktaları; merkez sayfası, içindekiler tablosu, üst bilgi ve içerik haritalarının nasıl kullanılacağı ve sürüm filtresinin nasıl kullanılacağı gibi bilgileri açıklar.
 ms.date: 08/12/2020
-ms.prod: sql
-ms.technology: release-landing
+ms.service: microsoft-365-enterprise
 ms.reviewer: serdars
 ms.custom: ''
 ms.topic: conceptual
@@ -11,12 +10,12 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 ms.collection: Adm_TOC
-ms.openlocfilehash: c6a481497a682cbbad896a2d7ec9e88b84c64d10
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 95b14f45925e1b26e876474fc1a41343882ec817
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660255"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737664"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 belgeleri gezinti kılavuzu
 

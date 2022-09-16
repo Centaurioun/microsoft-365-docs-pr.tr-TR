@@ -15,12 +15,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: 681f177215c15540cb8649e74b2b319623c2db58
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+search.appverid: met150
+ms.openlocfilehash: 807a0e3a9ed56b663fd6fabd19d237175c58fcc3
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67524028"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67735678"
 ---
 # <a name="export-certificate-inventory-per-device"></a>Cihaz başına sertifika envanteri dışarı aktarma
 

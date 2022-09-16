@@ -3,18 +3,19 @@ title: 'Hızlı Başlangıç: Microsoft Defender Tehdit Analizi (Defender TI) Po
 description: Bu hızlı başlangıçta profilinizi ve tercihlerinizi yapılandırmayı ve Microsoft Defender Tehdit Analizi (Defender TI) kullanarak Defender TI'nin yardım kaynaklarına erişmeyi öğrenin.
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: quickstart
 ms.date: 08/02/2022
 ms.custom: template-quickstart
-ms.openlocfilehash: 6ef41802afd47a2e265a2617ed0eb498c7a1708a
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 7ec540da8a0042bef95543ce2197c4655e8ce641
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174685"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737136"
 ---
-# <a name="quickstart-learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal"></a>Hızlı Başlangıç: Portalınızda Microsoft Defender Tehdit Analizi erişmeyi ve özelleştirme yapmayı öğrenin
+# <a name="quickstart-learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal"></a>Hızlı Başlangıç: Microsoft Defender Tehdit Bilgileri’ne erişmeyi ve portalınızda özelleştirmeler yapmayı öğrenin
 
 Microsoft Defender Tehdit Analizi (Defender TI) Portalı'nda temanızı ayarlamayı anlamak, platformumuzu kullanırken gözlerinizi kolaylaştıracaktır. Ayrıca bu kılavuz, platformumuzda arama yaparken daha fazla sonuç görebilmeniz için kaynakları zenginleştirme için nasıl etkinleştirebileceğiniz konusunda size yol gösterir. Ayrıca Defender TI'de başarıyla oturum açmayı ve oturumu kapatmayı da öğreneceksiniz.
 

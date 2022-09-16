@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 07/20/2022
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Şirketinizi cihazlara, e-postalara, verilere ve iletişimlere yönelik siber güvenlik tehditlerinden koruyabilmeniz için Microsoft 365 İş Ekstra alın.
-ms.openlocfilehash: cf8e99f31dd378d3f91f28fc0d0ae59d0b2f728f
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 35afcc46d10f83b030db5999012a9052dd204435
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611793"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738060"
 ---
 # <a name="how-to-sign-up-for-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra için kaydolma
 

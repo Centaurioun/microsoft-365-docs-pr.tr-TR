@@ -3,7 +3,7 @@ title: Microsoft tarafından analiz için dosya gönderme
 description: Kötü amaçlı yazılım analizi için dosyaları Microsoft'a göndermeyi, gönderimlerinizi izlemeyi ve uyuşmazlık algılamalarını öğrenin.
 ms.reviewer: ''
 keywords: güvenlik, örnek gönderim yardımı, kötü amaçlı yazılım dosyası, virüs dosyası, truva atı dosyası, gönder, Microsoft'a gönder, örnek gönder, virüs, truva atı, solucan, algılanmadı, algılanmadı, e-posta microsoft, e-posta kötü amaçlı yazılım, Bu kötü amaçlı yazılım, ben bir virüs olduğunu düşünüyorum, nerede virüs gönderebilirim, bu bir virüs, MSE, algılamaz, imza yok, algılama yok, şüpheli dosya,  MMPC, Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi, araştırmacılar, analist, WDSI, güvenlik zekası
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,13 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 28dfb21cb918ca5f0b99579304f3135664e11533
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 778fd439c7c886be558eaf058ae941267bf0d52c
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112053"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736022"
 ---
 # <a name="submit-files-for-analysis"></a>Dosyaları analiz için gönderin
 

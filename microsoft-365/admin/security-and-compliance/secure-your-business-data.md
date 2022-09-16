@@ -4,12 +4,13 @@ f1.keywords:
 - CSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: medium
-ms.date: 09/14/2022
 ms.collection:
 - highpri
 - Adm_O365
@@ -30,12 +31,12 @@ search.appverid:
 - MET150
 - MOE150
 description: İşletmenizi fidye yazılımlarından, kimlik avından ve kötü amaçlı URL'lerden veya eklerden korumaya yönelik en iyi yöntemler.
-ms.openlocfilehash: da1fba7bddabba0ccd95429dc36f06bfb302db48
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: f9f28ec270a17761e7fd6fe1f7a06dfcc42f6946
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711487"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742793"
 ---
 # <a name="top-10-ways-to-secure-your-business---best-practices-to-follow"></a>İşletmenizin güvenliğini sağlamanın en iyi 10 yolu - İzleyebileceğiniz en iyi yöntemler
 
@@ -88,7 +89,7 @@ Aşağıdaki tabloda İş için Microsoft 365 planlarındaki özellikler karşı
 
 (<a id="fn3">3</a>) İş için Defender Microsoft 365 İş Ekstra dahildir. İş için Defender, Microsoft 365 İş Temel veya Standart'a da eklenebilir. Bkz. [İş için Defender'ı edinme](/microsoft-365/security/defender-business/get-defender-business).
 
-(<a id="fn4">4</a>) Office 365 için Defender Plan 1 Microsoft 365 İş Ekstra dahil edilir. Office 365 için Defender Plan 1, Microsoft 365 İş Temel veya Standart'a da eklenebilir. Bkz. [Plan 1 ve Plan 2](../../security/office-365-security/overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) Office 365 için Defender.
+(<a id="fn4">4</a>) Office 365 için Defender Plan 1 Microsoft 365 İş Ekstra dahil edilir. Office 365 için Defender Plan 1, Microsoft 365 İş Temel veya Standart'a da eklenebilir. Bkz. [Plan 1 ve Plan 2](/microsoft-365/security/security/office-365-security/overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) Office 365 için Defender.
 
 > [!TIP]
 > Her planın neler içerdiği hakkında daha fazla bilgi için bkz. [Microsoft 365 ve Microsoft Teams ile üretkenliği yeniden](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c) planlama.

@@ -2,7 +2,7 @@
 title: Rapor iletisi eklentisini dağıtma ve yapılandırma
 description: Microsoft'un güvenlik yöneticilerine yönelik kimlik avı raporlama eklentilerini dağıtma ve yapılandırma adımları.
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: fd494b27654ba137409b3e29e21d81229ff5fddb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3909f2c0d2aeb3ef2a8e71588be3e988b54d9203
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690673"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738805"
 ---
 # <a name="deploy-and-configure-the-report-message-add-in-to-users"></a>Rapor iletisi eklentisini dağıtın ve kullanıcılara yapılandırın.
 

@@ -3,16 +3,17 @@ title: projeleri Microsoft Defender Tehdit Analizi (MDTI) ile kullanma
 description: Microsoft Defender Tehdit Analizi (MDTI) kullanarak projeleri yönetmeyi öğrenin.
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: d99b760c0f2b72d628d71dd21e295f77a8f5fbd4
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 02a279f97db0d72ddb978601fb2b693c9995ac4a
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67172621"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67739234"
 ---
 # <a name="using-projects"></a>Projeleri kullanma
 

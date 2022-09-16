@@ -9,8 +9,7 @@ manager: dansimp
 audience: Admin
 description: Tehditlere karşı savunmak ve hassas verileri korumak için Ortamınıza Microsoft 365 Sıfır Güven güvenliği dağıtmayı öğrenin.
 ms.topic: tutorial
-ms.prod: m365-security
-ms.technology: m365d
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,12 +18,12 @@ ms.collection:
 - m365solution-overview
 - M365-security-compliance
 - zerotrust-solution
-ms.openlocfilehash: fb11c74e1369ec81ad3bc54008e9391e462f583d
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 4b782f930c0e5a8cb02da1b8f6daee8038c7af62
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748065"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736508"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 Sıfır Güven dağıtım planı
 

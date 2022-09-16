@@ -3,16 +3,17 @@ title: Microsoft Defender Tehdit Analizi (Defender TI) Analist İçgörüleri
 description: Bu genel bakış makalesinde Microsoft Defender Tehdit Analizi (Defender TI) analist içgörüleri özelliği hakkında bilgi edinin.
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: 9efcb78a50f8b91ab2a6d094718edbd205fcdbc4
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: c9c4ca37ba75694d905c8f737a6fceb93e30a757
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67172711"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67735590"
 ---
 # <a name="analyst-insights"></a>Çözümleyici içgörüleri
 

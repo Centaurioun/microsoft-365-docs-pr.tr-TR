@@ -22,12 +22,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 84b855e34d2612aa10b1e8eaed33d584590cd424
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 021426853286f663d78a65aebee3925c8de3e8fc
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614186"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67739168"
 ---
 # <a name="frontline-team-collaboration"></a>Ön saf ekip işbirliği
 
@@ -210,13 +210,16 @@ Ayrıca, paylaşılan posta kutularını müşterilerden gelen postalara (örne�
 
 ## <a name="use-viva-connections-to-create-a-personalized-experience"></a>Kişiselleştirilmiş bir deneyim oluşturmak için Viva Bağlantılar kullanma
 
-Viva Bağlantılar[, Microsoft Viva paketinin](/viva/microsoft-viva-overview) bir parçasıdır ve Teams'de kişiselleştirilmiş bir giriş deneyimi oluşturmanıza olanak tanır. 
+> [!NOTE]
+> Viva Bağlantılar şu anda tabletlerde kullanılamaz.
+
+Viva Bağlantılar[, Microsoft Viva paketinin](/viva/microsoft-viva-overview) bir parçasıdır ve Teams'de kişiselleştirilmiş bir giriş deneyimi oluşturmanıza olanak tanır.
 
 ![Mobil cihazda Viva Bağlantılar Panosunun ekran görüntüsü.](media/flw-shifts-praise-tasks-approvals.png)
 
 Viva Bağlantılar Panosu'nu kullanın ve Vardiyalar, Görevler ve Onaylar kartlarını ekleyin. Kartlar Teams'deki Vardiyalar, Görevler ve Onaylar uygulamalarına bağlanır. Kartlardaki içerik kullanıcı için dinamik ve kişiselleştirilmiştir.
 
-[Viva Bağlantılar alma](/viva/connections/viva-connections-overview) ve [Viva Bağlantılar Panosu oluşturma](/viva/connections/create-dashboard) hakkında daha fazla bilgi edinin. 
+[Viva Bağlantılar alma](/viva/connections/viva-connections-overview) ve [Viva Bağlantılar Panosu oluşturma](/viva/connections/create-dashboard) hakkında daha fazla bilgi edinin.
 
 ## <a name="learn-more-about-teams-capabilities-for-specific-industries"></a>Belirli sektörlere yönelik Teams özellikleri hakkında daha fazla bilgi edinin
 

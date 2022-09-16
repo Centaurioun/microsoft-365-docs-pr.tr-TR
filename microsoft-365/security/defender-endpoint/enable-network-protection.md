@@ -14,14 +14,13 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.subservice: mde
 ms.collection: m365-security-compliance
-ms.date: ''
 search.appverid: met150
-ms.openlocfilehash: 731f8215a3b22ebf7569930d40dc0a39ff1f00c3
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0523ba3cd0e9d32cd58675ead39fdabc1718b5c0
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690476"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67742969"
 ---
 # <a name="turn-on-network-protection"></a>Ağ korumasını açın
 

@@ -24,21 +24,21 @@ appliesto:
 ms.reviewer: acolonna
 description: Dışarıda durumu veya Rahatsız Etmeyin durumu olan bir kullanıcının, durum iletisinde başka bir kullanıcıyı açıkça temsilci olarak nasıl ayarlayabileceğini öğrenin.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e09883e65cf8d4036aff8933d8cc5d25b9d319df
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 33622e118bfb19a927dad8c4c559bdc234ff0937
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614137"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736772"
 ---
 # <a name="message-delegation"></a>İleti temsilcisi
 
 Microsoft Teams'deki kullanıcılar durumlarını Dışarıda veya Rahatsız Etmeyin olarak ayarlayabilir ve özel bir metin durumu iletisi ekleyebilir. Uzakta olacak bir kullanıcı, kişilerin iletişim kurabileceği bir kişiyi temsilci olarak atayabilir. İleti temsilcisi özelliği aşağıdaki gibi çalışır:
 
-1. Dışarıda olacak kullanıcı, durum iletisinde başka bir kullanıcı (temsilci) @mentions ve kullanıcılara, kullanıcı dışarıdayken bunun yerine temsilciyle iletişim kurmaları gerektiğini bildirir. 
+1. Dışarıda olacak kullanıcı, durum iletisinde başka bir kullanıcı (temsilci) @mentions ve kullanıcılara, kullanıcı dışarıdayken bunun yerine temsilciyle iletişim kurmaları gerektiğini bildirir.
 
     ![Kullanıcı temsilci olarak ayarlanmış bir durum iletisinin ekran görüntüsü.](media/message-delegation.png)
-    
+
 1. @mentioned kullanıcıya temsilci olarak aday gösterildiği bildirilir.
 1. Birisi dış kullanıcıyla bir sohbet açtığında ve durum iletisini gördüğünde, temsilcinin üzerine gelip kolayca ileti gönderebiliyor.
 
@@ -46,11 +46,11 @@ Kullanıcılar işlemi kendileri başlatabilir ve özelliği etkinleştirmek iç
 
 ## <a name="delegation-use-scenario-in-healthcare"></a>Healthcare'de temsilci kullanımı senaryosu
 
-**Temsilci ayarlamadan kullanım örneği** 
+**Temsilci ayarlamadan kullanım örneği**
 
 Dr. Franco Piccio radyoloji bölümünden aradı. Acil bir arama alır ve önümüzdeki birkaç saat için uzaklaşmak zorunda. Radyoloji departmanındaki akranlarından biri, Dr. Lena Ehrle, o yokken onu korumasını istiyor. Çağrıyı yapan dr. Ehrle'e, çağrıyı yapan acil mesajları ve pingleri dinleyen ve mevcut sorumluluklarına ek olarak Dr. Piccio adına onlara yanıt veren Dr. Ehrle'ye resmi olmayan bir şekilde teslim eder. Ekipte yer alan diğer kişiler, resmi olmayan temsilin gerçekleştiğini fark etmeyebilir. Karışıklık bir hastanın bakımıyla sonuçlanmış.
 
-**Temsilci ayarlama ile kullanım örneği** 
+**Temsilci ayarlama ile kullanım örneği**
 
 Dr. Franco Piccio radyoloji bölümünden aradı. Acil bir arama alır ve önümüzdeki birkaç saat için uzaklaşmak zorunda. Radyoloji departmanındaki akranlarından biri, Dr. Lena Ehrle'den, o yokken onun yerine onu korumasını istiyor. Özel durum iletisini "Önümüzdeki birkaç saat için kullanılamıyorum. Acil durumlar için lütfen @DrEhrle ile iletişime geçin."  Ekipteki diğer kişiler, Dr. Piccio'ya başvurmaya çalışırken temsilcinin gerçekleştiğini fark ettiler, bu arada Dr. Ehrle ile iletişime geçmeyi biliyorlar. Hastanın bakımıyla çok az karışıklığa yol açıyor.
 

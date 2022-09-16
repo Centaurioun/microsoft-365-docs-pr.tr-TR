@@ -1,7 +1,7 @@
 ---
 title: Microsoft Hata Ödülü Programı hakkında
 description: Güvenlik araştırmacısıysanız, Bir Microsoft ürünü, hizmeti veya cihazındaki bir güvenlik açığını bildirdiğiniz için ödül alabilirsiniz.
-ms.prod: m365-security
+ms.service: microsoft-365-security
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -10,14 +10,13 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: ''
-ms.technology: m365d
 search.appverid: met150
-ms.openlocfilehash: 449a607d3d92a1d57f994e5e22dc07047fece318
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6763fbbf9d241d67df8b5966576cdf5d5d403d73
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688999"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67735778"
 ---
 # <a name="about-the-microsoft-bug-bounty-program"></a>Microsoft Hata Ödülü Programı hakkında
 

@@ -1,5 +1,5 @@
 ---
-title: BT yöneticileri için Office belgelerinde etkin içeriği yönetme
+title: BT yöneticileri için Office belgelerindeki etkin içeriği yönetme
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,30 +8,30 @@ manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.localizationpriority: medium
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
-description: Yöneticiler, Office belgelerde etkin içeriği engellemek için ilke oluşturmayı öğrenebilir
-ms.openlocfilehash: 7a24c56bdd388f2dc9a8f408b52b2de1c6805a0a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Yöneticiler, Office belgelerindeki etkin içeriği engellemek için ilke oluşturmayı öğrenebilir
+ms.openlocfilehash: 000e306fd2120fa2980d384ecdeda039f8d717f8
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100951"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736398"
 ---
 # <a name="manage-active-content-in-office-documents"></a>Office belgelerinde etkin içeriği yönetme
 
 > [!NOTE]
 > Bu makalede açıklanan özellikler Önizleme aşamasındadır, herkes tarafından kullanılamaz ve değiştirilebilir.
 
-Office belgeler _etkin içerik_ içerdiğinde otomatik olarak yenilenebilir, güncelleştirilebilir veya yürütülebilir. Etkin içeriğe örnek olarak makrolar, ActiveX denetimleri ve Office Eklentileri verilebilir. Etkin içerik kullanıcılara güçlü ve kullanışlı işlevler sağlayabilir, ancak saldırganlar kötü amaçlı yazılım sunmak için etkin içeriği de kullanabilir.
+Office belgeleri _etkin içerik_ içerdiğinde otomatik olarak yenilenebilir, güncelleştirilebilir veya yürütülebilir. Etkin içeriğe örnek olarak makrolar, ActiveX denetimleri ve Office Eklentileri verilebilir. Etkin içerik kullanıcılara güçlü ve kullanışlı işlevler sağlayabilir, ancak saldırganlar kötü amaçlı yazılım sunmak için etkin içeriği de kullanabilir.
 
-Yöneticiler, etkin içerik kullanımını belirli kullanıcı kümeleriyle sınırlayan veya etkin içeriği tamamen devre dışı bırakmak için kuruluş ilkeleri (grup ilkeleri veya bulut ilkeleri) oluşturabilir. Kullanıcılar, Office Güven Merkezi'nde kendi güvenlik ve gizlilik ayarlarını **Dosya** \> **Seçenekleri** \> **Güven Merkezi'ndeki** Office uygulamalarında yapılandırabilir.
+Yöneticiler, etkin içerik kullanımını belirli kullanıcı kümeleriyle sınırlayan veya etkin içeriği tamamen devre dışı bırakmak için kuruluş ilkeleri (grup ilkeleri veya bulut ilkeleri) oluşturabilir. Kullanıcılar Kendi güvenlik ve gizlilik ayarlarını Office Güven Merkezi'nde **, Dosya** \> **Seçenekleri** \> **Güven Merkezi'ndeki** Office uygulamalarında yapılandırabilir.
 
-Daha önce, kullanıcılar belgeleri güvenilir belgeler olarak tanımladığında, bir yönetici Office belgelerde etkin içeriği engellemek için ilkeler yapılandırmış olsa bile, seçimleri etkin içeriğin çalışmasına izin verecekti. Artık yöneticiler tarafından ayarlanan ilkeler, güvenilen belgelerin kullanıcı kimliğinden önceliklidir. Davranıştaki bu değişiklik kullanıcılar için sorunlara neden olabilir.
+Daha önce, kullanıcılar belgeleri güvenilir belgeler olarak tanımladığında, bir yönetici Office belgelerindeki etkin içeriği engellemek için ilkeler yapılandırmış olsa bile, seçimleri etkin içeriğin çalışmasına izin verecekti. Artık yöneticiler tarafından ayarlanan ilkeler, güvenilen belgelerin kullanıcı kimliğinden önceliklidir. Davranıştaki bu değişiklik kullanıcılar için sorunlara neden olabilir.
 
 Güncelleştirilmiş Güven Merkezi mantığı aşağıdaki diyagramda açıklanmıştır:
 
@@ -64,7 +64,7 @@ Güncelleştirilmiş Güven Merkezi mantığı aşağıdaki diyagramda açıklan
 
 ## <a name="what-is-a-trusted-document"></a>Güvenilir belge nedir?
 
-Güvenilen belgeler, makrolar, ActiveX denetimleri ve belgedeki diğer etkin içerik türleri için güvenlik istemleri olmadan açılan Office belgelerdir. Korumalı Görünüm veya Application Guard belgeyi açmak için kullanılmaz. Kullanıcılar Güvenilen Belgeyi açtığında ve tüm etkin içerik etkinleştirildiğinde. Belgede yeni etkin içerik veya mevcut etkin içerik güncelleştirmeleri olsa bile, kullanıcılar belgeyi bir sonraki açışında güvenlik istemleri almaz.
+Güvenilen belgeler, makrolar, ActiveX denetimleri ve belgedeki diğer etkin içerik türleri için güvenlik istemleri olmadan açılan Office belgeleridir. Korumalı Görünüm veya Application Guard belgeyi açmak için kullanılmaz. Kullanıcılar Güvenilen Belgeyi açtığında ve tüm etkin içerik etkinleştirildiğinde. Belgede yeni etkin içerik veya mevcut etkin içerik güncelleştirmeleri olsa bile, kullanıcılar belgeyi bir sonraki açışında güvenlik istemleri almaz.
 
 Bu davranış nedeniyle, kullanıcılar belgelere yalnızca belge kaynağına güveniyorlarsa açıkça güvenmelidir.
 
@@ -78,19 +78,19 @@ Daha fazla bilgi için aşağıdaki makalelere bakın:
 
 ## <a name="configure-trusted-document-settings-in-office-policies"></a>Office ilkelerinde güvenilen belge ayarlarını yapılandırma
 
-Yöneticilerin kuruluştaki Office yapılandırmanın birçok yolu vardır. Örneğin:
+Yöneticilerin bir kuruluşta Office'i yapılandırmanın birçok yolu vardır. Örneğin:
 
-- **Office bulut ilkesi hizmeti**: Azure AD hesabıyla Office uygulamalarındaki dosyalara erişen tüm cihazlardaki bir kullanıcı için geçerli olan kullanıcı tabanlı bir ilke ayarlayın. [Office Bulut İlkesi Hizmeti'nde Office bulut ilkesi](https://config.office.com/officeSettings/officePolicies) [yapılandırması oluşturma](/DeployOffice/overview-office-cloud-policy-service) adımlarına bakın.
-- **Intune'da Office ilkeleri**: HKCU ilkelerini bilgisayarlara Windows 10 dağıtmak için Intune Ayarlar kataloğunu veya Yönetim şablonlarını kullanın: **CIHAZ** \> **Yapılandırma Profilleri** altındaki [MEM yönetim merkezinde](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles).
+- **Office bulut ilkesi hizmeti**: Azure AD hesabıyla Office uygulamalarındaki dosyalara erişen tüm cihazlardaki bir kullanıcı için geçerli olan kullanıcı tabanlı bir ilke ayarlayın. Office [Bulut İlkesi Hizmeti'nde](https://config.office.com/officeSettings/officePolicies) [Office bulut ilkesi yapılandırması oluşturma](/DeployOffice/overview-office-cloud-policy-service) adımlarına bakın.
+- **Intune'da Office ilkeleri**: Intune Ayarları kataloğunu veya Yönetim şablonlarını kullanarak HKCU ilkelerini Windows 10 bilgisayarlara dağıtın: [MEM yönetim merkezinde](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles)**, Cihaz** \> **Yapılandırma Profilleri'nin** altında.
   - ***Yönetim Şablonları***: [Yönetim](/mem/intune/configuration/administrative-templates-windows) Şablonlarını yapılandırmak için Windows 10 şablonları kullanma yönergelerine bakın.
   - ***Ayarlar kataloğu (önizleme)***: [Ayarlar kataloğunu (önizleme)](/mem/intune/configuration/settings-catalog) kullanma yönergelerine bakın.
 - **Grup ilkesi**: Şirket içi Active Directory'nizi kullanarak kullanıcılara ve bilgisayarlara grup ilkesi nesneleri (GPO'lar) dağıtın. Bu ayar için bir GPO oluşturmak için en son [Yönetim Şablonu dosyalarını (ADMX/ADML) ve Kurumlar için Microsoft 365 Uygulamaları, Office 2019 ve Office 2016 için Office Özelleştirme Aracı'nı](https://www.microsoft.com/download/details.aspx?id=49030) indirin.
 
 ## <a name="known-issues"></a>Bilinen sorunlar
 
-- **İlke VBA Makro bildirimleri** (Access, PowerPoint, Visio, Word) veya **Makro bildirimleri** (Excel) **Dijital olarak imzalanan makrolar dışında tümünü devre dışı bırak** değerine ayarlandığında, beklenen güven çubuğu görüntülenmez ve backstage'daki **Güvenlik Bilgileri**, ayar beklendiği gibi çalışıyor olsa bile engellenen makroların ayrıntılarını listelemez. Office ekibi bu sorunu çözmek için çalışıyor.
+- **İlke VBA Makro bildirimleri** (Access, PowerPoint, Visio, Word) veya **Makro bildirimleri** (Excel) **dijital olarak imzalanan makrolar dışında tümünü devre dışı bırak** değerine ayarlandığında, beklenen güven çubuğu görüntülenmez ve backstage'daki **Güvenlik Bilgileri**, ayar beklendiği gibi çalışıyor olsa bile engellenen makroların ayrıntılarını listelemez. Office ekibi bu sorunu çözmek için çalışıyor.
 
-## <a name="admin-options-for-restricting-active-content"></a>Etkin içeriği kısıtlamak için yönetici seçenekleri
+## <a name="admin-options-for-restricting-active-content"></a>Etkin içeriği kısıtlamaya yönelik Yönetici seçenekleri
 
 Dahili olarak oluşturulan içerikte güven düzeyinde kullanıcıların internetten indirebilecekleri içerikle karşıtlıkta büyük bir fark vardır. İç belgelerde etkin içeriğe izin vermeyi ve genel olarak İnternet'ten gelen belgelerde etkin içeriğe izin vermemeyi göz önünde bulundurun.
 
@@ -111,36 +111,36 @@ Aşağıdaki bölümlerde yer alan tablolarda etkin içeriği denetleyen ayarlar
 ****
 |Kategori|Uygulama|İlke adı|Güvenlik temeli<br>ayarı (önerilir)|Kullanıcı istemiyle ayarlama<br>ve geçersiz kılabilirsiniz?|
 |---|---|---|---|---|
-|ActiveX|Office|denetim başlatmayı ActiveX|**6**|Aşağıdaki değerler için **Evet**: <ul><li>**3**</li><li>**4**</li><li>**5**</li><li>**6**</li></ul>|
-|ActiveX|Office|Etkin X One Off Formlara İzin Ver|**Yalnızca Outlook Denetimlerini yükleme**|Hayır|
-|ActiveX|Office|nesneleri ActiveX denetleme|Güvenlik temeli ayarı değil.|Hayır|
-|ActiveX|Office|Tüm ActiveX Devre Dışı Bırak|Güvenlik temeli ayarı değil.|Aşağıdaki değerler için **Evet**: <ul><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
-|ActiveX|Office|Forms3'te Yük Denetimleri|**1**|Aşağıdaki değerler için **Evet**: <ul><li>**2**</li><li>**3**</li></ul>|
+|Activex|Office|ActiveX Denetimi Başlatma|**6**|Aşağıdaki değerler için **Evet**: <ul><li>**3**</li><li>**4**</li><li>**5**</li><li>**6**</li></ul>|
+|Activex|Office|Etkin X One Off Formlara İzin Ver|**Yalnızca Outlook Denetimlerini yükleme**|Hayır|
+|Activex|Office|ActiveX nesnelerini denetleme|Güvenlik temeli ayarı değil.|Hayır|
+|Activex|Office|Tüm ActiveX'i Devre Dışı Bırak|Güvenlik temeli ayarı değil.|Aşağıdaki değerler için **Evet**: <ul><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
+|Activex|Office|Forms3'te Yük Denetimleri|**1**|Aşağıdaki değerler için **Evet**: <ul><li>**2**</li><li>**3**</li></ul>|
 |Eklentiler & Genişletilebilirlik|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|İmzasız uygulama eklentileri için Güven Çubuğu Bildirimi'ni devre dışı bırakma ve bunları engelleme|**Etkin**|**Devre Dışı** değeri için **Evet**.|
-|Eklentiler & Genişletilebilirlik|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Uygulama eklentilerinin Güvenilen Publisher tarafından imzalandığını zorunlu Publisher|**Etkin**|Hayır|
+|Eklentiler & Genişletilebilirlik|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Uygulama eklentilerinin Güvenilen Yayımcı tarafından imzalı olmasını gerektir|**Etkin**|Hayır|
 |Eklentiler & Genişletilebilirlik|Excel|Otomatik Yeniden Yayımlama uyarısını gösterme|**Devre dışı**|Hayır|
-|Eklentiler & Genişletilebilirlik|Excel|WEBHİzMETİ İşlev Bildirimi Ayarlar|**Bildirimle tümünü devre dışı bırakma**|Aşağıdaki değerler için **Evet**: <ul><li>**Bildirimle tümünü devre dışı bırakma**</li><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
-|Eklentiler & Genişletilebilirlik|Office|yayımlanan bağlantılar için Office istemcisinin SharePoint Sunucusu'nu yoklamasını devre dışı bırakma|**Devre dışı**|Hayır|
-|Eklentiler & Genişletilebilirlik|Office|Belge ve şablonlardan kullanıcı arabirimi genişletmeyi devre dışı bırakma|Word'de İzin Verme = Doğru <p> Project = Yanlış olarak izin verme <p> Excel = True'da izin verme <p> Visio= False'ta izin verme <p> PowerPoint = Doğru olarak izin verme <p> Access'te İzin Verme = Doğru <p> Outlook = True'da İzin Verme <p> Publisher = Doğru'da izin verme <p> InfoPath'te İzin Verme = Doğru|Hayır|
-|Eklentiler & Genişletilebilirlik|Outlook|Adres defterine erişirken nesne modeli istemini Outlook yapılandırma|**Otomatik Olarak Reddet**|Aşağıdaki değerler için **Evet**: <ul><li>**Kullanıcıya sor**</li><li>**Kullanıcıdan bilgisayar güvenliğine göre iste**</li><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
-|Eklentiler & Genişletilebilirlik|Outlook|UserProperty nesnesinin Formula özelliğine erişirken Outlook nesne modeli istemini yapılandırma|**Otomatik Olarak Reddet**|Aşağıdaki değerler için **Evet**: <ul><li>**Kullanıcıya sor**</li><li>**Kullanıcıdan bilgisayar güvenliğine göre iste**</li><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
+|Eklentiler & Genişletilebilirlik|Excel|WEBHİzMETİ İşlevi Bildirim Ayarları|**Bildirimle tümünü devre dışı bırakma**|Aşağıdaki değerler için **Evet**: <ul><li>**Bildirimle tümünü devre dışı bırakma**</li><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
+|Eklentiler & Genişletilebilirlik|Office|Yayımlanan bağlantılar için Office istemcisinin SharePoint Server'ı yoklamasını devre dışı bırakma|**Devre dışı**|Hayır|
+|Eklentiler & Genişletilebilirlik|Office|Belge ve şablonlardan kullanıcı arabirimi genişletmeyi devre dışı bırakma|Word'de İzin Verme = Doğru <p> Project'te İzin Verme = Yanlış <p> Excel'de İzin Verme = Doğru <p> Visio= False'ta İzin Verme <p> PowerPoint'te izin verme = Doğru <p> Access'te İzin Verme = Doğru <p> Outlook'ta İzin Verme = Doğru <p> Publisher'da İzin Verme = Doğru <p> InfoPath'te İzin Verme = Doğru|Hayır|
+|Eklentiler & Genişletilebilirlik|Outlook|Adres defterine erişirken Outlook nesne modeli istemini yapılandırma|**Otomatik Olarak Reddet**|Aşağıdaki değerler için **Evet**: <ul><li>**Kullanıcıya sor**</li><li>**Kullanıcıdan bilgisayar güvenliğine göre iste**</li><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
+|Eklentiler & Genişletilebilirlik|Outlook|Outlook nesne modeli istemini yapılandırma UserProperty nesnesinin Formula özelliğine erişirken|**Otomatik Olarak Reddet**|Aşağıdaki değerler için **Evet**: <ul><li>**Kullanıcıya sor**</li><li>**Kullanıcıdan bilgisayar güvenliğine göre iste**</li><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
 |Eklentiler & Genişletilebilirlik|Outlook|Farklı Kaydet yürütülürken Outlook nesne modeli istemini yapılandırma|**Otomatik Olarak Reddet**|Aşağıdaki değerler için **Evet**: <ul><li>**Kullanıcıya sor**</li><li>**Kullanıcıdan bilgisayar güvenliğine göre iste**</li><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
 |Eklentiler & Genişletilebilirlik|Outlook|Adres bilgilerini okurken Outlook nesne modeli istemini yapılandırma|**Otomatik Olarak Reddet**|Aşağıdaki değerler için **Evet**: <ul><li>**Kullanıcıya sor**</li><li>**Kullanıcıdan bilgisayar güvenliğine göre iste**</li><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
-|Eklentiler & Genişletilebilirlik|Outlook|Toplantı ve görev isteklerine yanıt verirken nesne modeli istemini Outlook yapılandırma|**Otomatik Olarak Reddet**|Aşağıdaki değerler için **Evet**: <ul><li>**Kullanıcıya sor**</li><li>**Kullanıcıdan bilgisayar güvenliğine göre iste**</li><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
+|Eklentiler & Genişletilebilirlik|Outlook|Toplantı ve görev isteklerine yanıt verirken Outlook nesne modeli istemini yapılandırma|**Otomatik Olarak Reddet**|Aşağıdaki değerler için **Evet**: <ul><li>**Kullanıcıya sor**</li><li>**Kullanıcıdan bilgisayar güvenliğine göre iste**</li><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
 |Eklentiler & Genişletilebilirlik|Outlook|Posta gönderirken Outlook nesne modeli istemini yapılandırma|**Otomatik Olarak Reddet**|Aşağıdaki değerler için **Evet**: <ul><li>**Kullanıcıya sor**</li><li>**Kullanıcıdan bilgisayar güvenliğine göre iste**</li><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
-|Eklentiler & Genişletilebilirlik|Outlook|Outlook nesne modeli özel eylemler yürütme istemi ayarlama|**Otomatik Olarak Reddet**|Aşağıdaki değerler için **Evet**: <ul><li>**Kullanıcıya sor**</li><li>**Kullanıcıdan bilgisayar güvenliğine göre iste**</li><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
+|Eklentiler & Genişletilebilirlik|Outlook|Outlook nesne modeli özel eylemler yürütme istemini ayarlama|**Otomatik Olarak Reddet**|Aşağıdaki değerler için **Evet**: <ul><li>**Kullanıcıya sor**</li><li>**Kullanıcıdan bilgisayar güvenliğine göre iste**</li><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
 |Eklentiler & Genişletilebilirlik|PowerPoint|Programları Çalıştırma|**devre dışı bırakma (hiçbir programı çalıştırma)**|Etkinleştir değeri için **Evet** **(çalıştırmadan önce kullanıcıya sor)**|
 |Eklentiler & Genişletilebilirlik|Word <p> Excel|Akıllı Belge'nin bildirim kullanımını devre dışı bırakma|**Etkin**|Hayır|
-|DDE|Excel|Excel'da Dinamik Veri Exchange (DDE) sunucusunun başlatılmasına izin verme|**Etkin**|**Yapılandırılmadı** değeri için **Evet**.|
-|DDE|Excel|Excel'da Dinamik Veri Exchange (DDE) sunucu aramasına izin verme|**Etkin**|Aşağıdaki değerler için **Evet**: <ul><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
-|DDE|Word|Dinamik Veri Exchange|**Devre dışı**|Hayır|
+|Dde|Excel|Excel'de Dinamik Veri Değişimi (DDE) sunucusunun başlatılmasına izin verme|**Etkin**|**Yapılandırılmadı** değeri için **Evet**.|
+|Dde|Excel|Excel'de Dinamik Veri Değişimi (DDE) sunucusu aramasına izin verme|**Etkin**|Aşağıdaki değerler için **Evet**: <ul><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
+|Dde|Word|Dinamik Veri Değişimi|**Devre dışı**|Hayır|
 |Jscript & VBScript|Outlook|Tek seferlik Outlook formlarında betiklere izin ver|**Devre dışı**|Hayır|
-|Jscript & VBScript|Outlook|ortak klasörler için Outlook nesne modeli betiklerinin çalışmasına izin verme|**Etkin**|Hayır|
+|Jscript & VBScript|Outlook|Outlook nesne modeli betiklerinin ortak klasörler için çalışmasına izin verme|**Etkin**|Hayır|
 |Jscript & VBScript|Outlook|Paylaşılan klasörler için Outlook nesne modeli betiklerinin çalışmasına izin verme|**Etkin**|Hayır|
 |Makrolar|Excel|Makro Bildirimleri|**Dijital olarak imzalanan makrolar dışında tümünü devre dışı bırakma**|Aşağıdaki değerler için **Evet**: <ul><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
-|Makrolar|Access <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|VBA Makro Bildirimi Ayarlar|**Dijital olarak imzalanan makrolar dışında tümünü devre dışı bırakma** <p> ve <p> **Makroların güvenilir bir yayımcı tarafından imzalanması gerektir**|Aşağıdaki değerler için **Evet**: <ul><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
+|Makrolar|Access <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|VBA Makro Bildirim Ayarları|**Dijital olarak imzalanan makrolar dışında tümünü devre dışı bırakma** <p> ve <p> **Makroların güvenilir bir yayımcı tarafından imzalanması gerektir**|Aşağıdaki değerler için **Evet**: <ul><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
 |Makrolar|Access <p> Excel <p> PowerPoint <p> Visio <p> Word|Makroların İnternet'ten Office dosyalarında çalışmasını engelleme|**Etkin**|Aşağıdaki değerler için **Evet**: <ul><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
-|Makrolar|Excel|XML Çalışma Kitaplarını Açma Excel şifrelenmiş makroları tarama|**Şifrelenmiş makroları tarama (varsayılan)**|Hayır|
+|Makrolar|Excel|Excel Open XML çalışma kitaplarında şifrelenmiş makroları tarama|**Şifrelenmiş makroları tarama (varsayılan)**|Hayır|
 |Makrolar|Office|VBA'nın typelib başvurularını güvenilmeyen intranet konumlarından yola göre yüklemesine izin ver|**Devre dışı**|Hayır|
 |Makrolar|Office|Otomasyon Güvenliği|**Uygulama makro güvenlik düzeyini kullanma**|Hayır|
 |Makrolar|Office|Yerel makinedeki güvenli olmayan konumlara başvurabilen VBA kitaplık başvurularında diğer güvenlik denetimlerini devre dışı bırakma|**Devre dışı**|Hayır|
@@ -148,8 +148,8 @@ Aşağıdaki bölümlerde yer alan tablolarda etkin içeriği denetleyen ayarlar
 |Makrolar|Office|Yalnızca V3 imzaları kullanan VBA makrolarına güvenin|Güvenlik temeli ayarı değil.|Hayır|
 |Makrolar|Outlook|Outlook Güvenlik Modu|**Outlook Güvenlik grup ilkesi kullanma**|Tüm Outlook GPO ayarlarını etkinleştirmek için gereklidir. <p> Bağımlılık olarak bahsedildi (bu ilke etkin içeriğin kendisini engellemez).|
 |Makrolar|Outlook|Makrolar için güvenlik ayarı|**İmzalı için uyar, imzasızı devre dışı bırak**|Aşağıdaki değerler için **Evet**: <ul><li>**Her zaman uyar**</li><li>**İmzalı için uyar, imzasızı devre dışı bırak**</li><li>**Devre dışı**</li><li>**Yapılandırılmadı**</li></ul>|
-|Makrolar|PowerPoint|XML sunularını açma PowerPoint şifrelenmiş makroları tarama|**Şifrelenmiş makroları tarama (varsayılan)**|Hayır|
-|Makrolar|Publisher|Publisher Otomasyon Güvenlik Düzeyi|**Kullanıcı arabirimine göre (istendi)**|Hayır|
+|Makrolar|PowerPoint|PowerPoint Open XML sunularında şifrelenmiş makroları tarama|**Şifrelenmiş makroları tarama (varsayılan)**|Hayır|
+|Makrolar|Publisher|Publisher Otomasyonu Güvenlik Düzeyi|**Kullanıcı arabirimine göre (istendi)**|Hayır|
 |Makrolar|Word|Word Open XML belgelerinde şifrelenmiş makroları tarama|**Şifrelenmiş makroları tarama (varsayılan)**|Hayır|
 |
 
@@ -160,9 +160,9 @@ Aşağıdaki bölümlerde yer alan tablolarda etkin içeriği denetleyen ayarlar
 ****
 |Kategori|Uygulama|İlke adı|Güvenlik temeli<br>ayarı (önerilir)|Kullanıcı istemiyle ayarlama<br>ve geçersiz kılabilirsiniz?|
 |---|---|---|---|---|
-|ActiveX|Office|ActiveX Yüklemesini Kısıtla|excel.exe = Doğru <p> exprwd.exe = Doğru <p> groove.exe = Doğru <p> msaccess.exe = Doğru <p> mse7.exe = Doğru <p> mspub.exe = Doğru <p> onent.exe = Doğru <p> outlook.exe = Doğru <p> powerpnt.exe = Doğru <p> pptview.exe = Doğru <p> spDesign.exe = Doğru <p> visio.exe = Doğru <p> winproj.exe = Doğru <p> winword.exe = Doğru|Hayır|
+|Activex|Office|ActiveX Yüklemesini Kısıtla|excel.exe = Doğru <p> exprwd.exe = Doğru <p> groove.exe = Doğru <p> msaccess.exe = Doğru <p> mse7.exe = Doğru <p> mspub.exe = Doğru <p> onent.exe = Doğru <p> outlook.exe = Doğru <p> powerpnt.exe = Doğru <p> pptview.exe = Doğru <p> spDesign.exe = Doğru <p> visio.exe = Doğru <p> winproj.exe = Doğru <p> winword.exe = Doğru|Hayır|
 |Eklentiler & Genişletilebilirlik|Office|Eklenti Yönetimi|excel.exe = Doğru <p> exprwd.exe = Doğru <p> groove.exe = Doğru <p> msaccess.exe = Doğru <p> mse7.exe = Doğru <p> mspub.exe = Doğru <p> onent.exe = Doğru <p> outlook.exe = Doğru <p> powerpnt.exe = Doğru <p> pptview.exe = Doğru <p> spDesign.exe = Doğru <p> visio.exe = Doğru <p> winproj.exe = Doğru <p> winword.exe = Doğru|Hayır|
-|Eklentiler & Genişletilebilirlik|Office|Office belgelerde Flash etkinleştirmeyi engelleme|Microsoft 365 uygulamalarında Flash için tüm etkinleştirmeyi engellemek için COM sonlandırma bitlerinin listesi için Microsoft Güvenlik Kılavuzu ADMX/ADML dosyalarına bakın. Kurumsal Güvenlik Temelleri için ADMX/ADML dosyaları [, Güvenlik Uyumluluk Araç Seti'nde](https://www.microsoft.com/download/details.aspx?id=55319) kullanılabilir.|Hayır|
-|Jscript & VBScript|Office|Office için eski JScript yürütmeyi kısıtlama|**Etkin**: <p> Erişim: 69632 <p> Excel: 69632 <p> OneNote: 69632 <p> Outlook: 69632 <p> PowerPoint: 69632 <p> Project: 69632 <p> Publisher: 69632 <p> Visio: 69632 <p> Sözcük: 69632|Hayır|
+|Eklentiler & Genişletilebilirlik|Office|Office belgelerinde Flash etkinleştirmeyi engelleme|Microsoft 365 uygulamalarında Flash için tüm etkinleştirmeyi engellemek için COM killbit listesi için Microsoft Güvenlik Kılavuzu ADMX/ADML dosyalarına bakın. Kurumsal Güvenlik Temelleri için ADMX/ADML dosyaları [, Güvenlik Uyumluluk Araç Seti'nde](https://www.microsoft.com/download/details.aspx?id=55319) kullanılabilir.|Hayır|
+|Jscript & VBScript|Office|Office için eski JScript yürütmesini kısıtlama|**Etkin**: <p> Erişim: 69632 <p> Excel: 69632 <p> OneNote: 69632 <p> Outlook: 69632 <p> PowerPoint: 69632 <p> Proje: 69632 <p> Yayımcı: 69632 <p> Visio: 69632 <p> Sözcük: 69632|Hayır|
 |Jscript & VBScript|Office|Betikli Pencere Güvenlik Kısıtlamaları|excel.exe = Doğru <p> exprwd.exe = Doğru <p> groove.exe = Doğru <p> msaccess.exe = Doğru <p> mse7.exe = Doğru <p> mspub.exe = Doğru <p> onent.exe = Doğru <p> outlook.exe = Doğru <p> powerpnt.exe = Doğru <p> pptview.exe = Doğru <p> spDesign.exe = Doğru <p> visio.exe = Doğru <p> winproj.exe = Doğru <p> winword.exe = Doğru|Hayır|
 |

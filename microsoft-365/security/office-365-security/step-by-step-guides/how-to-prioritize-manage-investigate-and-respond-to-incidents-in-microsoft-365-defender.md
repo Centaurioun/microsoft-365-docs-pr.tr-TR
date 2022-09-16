@@ -2,7 +2,7 @@
 title: Microsoft 365 Defender'da olaylar nasıl Önceliklendirilir, Yönetilir, Araştırılır ve Yanıtlanır?
 description: Microsoft 365 Defender tetiklenen uyarıları yönetme adımları. Otomatik araştırma ve yanıt (AIR) abonelik genelinde avlanır ve bir tehdidin etkisini ve kapsamını belirler ve bilgileri tek bir Olayda birleştirir.
 search.product: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: a419268a0c2f0adf44844b5ee2db6d2eac85f11b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 942a0d6462e59d843bd3473936b1620b6af7b797
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699598"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737224"
 ---
 # <a name="prioritize-manage-investigate--respond-to-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender'da Olaylara Öncelik Verme, Yönetme, Araştırma & Yanıt Verme
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 İş Ekstra için Teams'de SharePoint iletişim sitesi oluşturma
+title: İş için Microsoft 365 ile Teams'de SharePoint iletişim sitesi oluşturma
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -7,8 +7,9 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection:
 - Adm_O365
@@ -24,13 +25,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 İş Ekstra ile kampanyanız veya işletmeniz için neden ve nasıl SharePoint iletişim sitesi oluşturacağınızı öğrenin ve yanlış dosya paylaşımı nedeniyle ekibi siber saldırılara ve kötü amaçlı yazılımlara ve diğer tehditlere karşı koruyun.
-ms.openlocfilehash: 63831f527aa63909ae055304cdeb7decc1ed62c5
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+description: Kampanyanız veya işletmeniz için bir SharePoint iletişim sitesi oluşturun ve yanlış dosya paylaşımı nedeniyle ekibinizi siber saldırılara ve kötü amaçlı yazılımlara ve diğer tehditlere karşı koruyun.
+ms.openlocfilehash: b70d2726a983d02ce5157815623936472077ad2b
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67612999"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738104"
 ---
 # <a name="create-a-communications-site"></a>İletişim sitesi oluşturma
 
@@ -52,7 +53,7 @@ ms.locfileid: "67612999"
 
 ![Bir kampanyanın ihtiyaç duyacağı ortak öğeler için alan içeren bir SharePoint İletişim sayfasının diyagramı.](../media/m365-democracy-comms-site.png)
 
-## <a name="infographic-create-a-communications-site-infographic"></a>Bilgi Grafiği: İletişim Sitesi bilgi grafiği oluşturma
+## <a name="infographic-create-a-communications-site-infographic"></a>Bilgi grafiği: İletişim sitesi bilgi grafiği oluşturma
 
 PowerPoint ve PDF için aşağıdaki bağlantılar tabloid biçiminde indirilebilir ve yazdırılabilir (kayıt defteri, 11 x 17 veya A3 olarak da bilinir).
 
@@ -62,7 +63,7 @@ PowerPoint ve PDF için aşağıdaki bağlantılar tabloid biçiminde indirilebi
 
 ## <a name="set-it-up"></a>Ayarlayın
 
-1. https://Office.com'te oturum açın.
+1. [https://Office.com](https://Office.com) sayfasında oturum açın.
 
 2. Sayfanın sol üst köşesinde uygulama başlatıcı simgesini ve ardından **SharePoint** kutucuğunu seçin. **SharePoint** kutucuğunu görmüyorsanız **Siteler** kutucuğuna veya SharePoint görünmüyorsa **Tümü'ne** tıklayın.
 

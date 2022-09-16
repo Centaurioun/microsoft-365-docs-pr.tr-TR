@@ -3,16 +3,17 @@ title: 'Microsoft Defender Tehdit Analizi (Defender TI): Altyapı Zincirleme'
 description: Bu kavram makalesinde altyapı zinciri hakkında bilgi edinin ve Microsoft Defender Tehdit Analizi (Defender TI) kullanarak tehdit altyapısı analizi gerçekleştirmek için bu işlemi nasıl uygulayabileceğinizi öğrenin.
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: 13433c34e6aafe8d08d377876ba53e05324da258
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 2f2187b2b49e41bf9751be46fab771f66b601995
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174663"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737158"
 ---
 # <a name="infrastructure-chaining"></a>Altyapı Zincirleme
 

@@ -3,7 +3,7 @@ title: Sektör işbirliği programları
 ms.reviewer: ''
 description: Microsoft endüstri genelinde kötü amaçlı yazılımdan koruma - Virus Information Alliance (VIA), Microsoft Virüs Girişimi (MVI) ve Eşgüdümlü Kötü Amaçlı Yazılım Silme (CME) ile ilgili çeşitli işbirliğine dayalı programlar vardır
 keywords: güvenlik, kötü amaçlı yazılım, virüsten koruma sektörü, kötü amaçlı yazılımdan koruma Sektörü, işbirliği programları, alliances, Virus Information Alliance, Microsoft Virüs Girişimi, Eşgüdümlü Kötü Amaçlı Yazılım Silme, WDSI, MMPC, Microsoft Kötü Amaçlı Yazılımdan Koruma Merkezi, ortaklıklar
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,14 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
 search.appverid: met150
-ms.openlocfilehash: fad3e5e95cfb8b0a07c1766b912aeff6e4ef4ca4
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 9c273652dbe0f074e112906d348eecbe65e31936
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711531"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738521"
 ---
 # <a name="industry-collaboration-programs"></a>Sektör işbirliği programları
 

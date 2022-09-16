@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: fd587baa44a40b7c3543839116bc169a07873efc
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 852677c02060e3c355ab15708b1be0a720fc5ed2
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730231"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736044"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender’daki yenilikler
 
@@ -64,6 +64,8 @@ Diğer işletim sistemleriyle ilgili Uç Nokta için Microsoft Defender hakkınd
 ## <a name="september-2022"></a>Eylül 2022
 
 - [Cihaz durumu raporlaması genel kullanıma sunuldu](device-health-reports.md). <br/>Cihaz durumu raporu, uç noktalarınızın durumu ve güvenliği hakkında bilgi sağlar. Rapor algılayıcı durumunu, virüsten koruma durumunu, işletim sistemi platformlarını, Windows 10 sürümlerini ve Microsoft Defender Virüsten Koruma güncelleştirme sürümlerini gösteren popüler bilgileri içerir.
+
+- [Sorun giderme modu](enable-troubleshooting-mode.md) artık Windows Server 2012 R2 ve üzeri dahil olmak üzere daha fazla Windows işletim sistemi için kullanılabilir. Gerekli güncelleştirmeler hakkında daha fazla bilgi için makaleye bakın.
 
 ## <a name="august-2022"></a>Ağustos 2022
 

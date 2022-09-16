@@ -1,7 +1,8 @@
 ---
 title: Grup ilkesini kullanarak Çıkarılabilir Depolama Access Control dağıtma ve yönetme
 description: Çıkarılabilir depolama erişim denetimini dağıtmak ve yönetmek için grup ilkesini kullanın.
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,16 +14,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: mde
 ms.date: 09/09/2022
 ms.reviewer: tewchen
 search.appverid: met150
-ms.openlocfilehash: 311d06a970304259b0f60ae9cfa109bd0e74f1cb
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 6a08865d6be1db39d25a4eab4259a6307a2a8418
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710376"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736750"
 ---
 # <a name="deploy-and-manage-removable-storage-access-control-using-group-policy"></a>Grup ilkesini kullanarak Çıkarılabilir Depolama Access Control dağıtma ve yönetme
 

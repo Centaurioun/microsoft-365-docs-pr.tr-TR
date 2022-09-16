@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 76ee0b786c2435e57fc4991685c4456cf82fe3dd
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: e1a3954c199c076a5f78e8488ad98fd6c8cfb492
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611136"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737620"
 ---
 # <a name="deploy-teams-at-scale-for-frontline-workers"></a>Teams'i ön cephe çalışanları için uygun ölçekte dağıtma
 
@@ -119,7 +119,7 @@ Teams PowerShell modülünün en son sürümünü yüklemek ve bu sürüme bağl
     ```
 
     Hata iletisi alırsanız, zaten hazırsınız demektir. Sonraki adıma geçin.
-1. [Teams PowerShell modülünün en son sürümünü](https://www.powershellgallery.com/packages/MicrosoftTeams) indirin ve yükleyin. 4.3.1 (önizleme) veya sonraki bir sürümü çalıştırıyor olmanız gerekir.  
+1. [Teams PowerShell modülünün en son sürümünü](https://www.powershellgallery.com/packages/MicrosoftTeams) indirin ve yükleyin. Sürüm 4.7.0 (önizleme) veya sonraki bir sürümü çalıştırıyor olmanız gerekir.  
 
 1. Teams'e bağlanmak için aşağıdakileri çalıştırın.
 

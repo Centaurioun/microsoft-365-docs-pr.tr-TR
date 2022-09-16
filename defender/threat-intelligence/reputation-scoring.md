@@ -3,29 +3,30 @@ title: Microsoft Defender Tehdit Analizi (Defender TI) Saygınlık Puanlaması
 description: Bu genel bakış makalesinde, Microsoft Defender Tehdit Analizi (Defender TI) saygınlık puanlama özelliği hakkında bilgi edinin.
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: af40ad00568cae2d69780ce06a8367bd21da6250
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 5563358e108c6461f44f777b5f2473b4f0bca0c7
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67173262"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737928"
 ---
 # <a name="reputation-scoring"></a>İtibar puanlaması
 
 Microsoft Defender Tehdit Analizi (Defender TI), herhangi bir Ana Bilgisayar, Etki Alanı veya IP Adresi için özel itibar puanları sağlar. Bu puan, bilinen veya bilinmeyen bir varlığın itibarını doğrulayarak kullanıcıların kötü amaçlı veya şüpheli altyapıyla ilgili algılanan tüm bağları hızla anlamasına yardımcı olur. Platform, bu varlıkların etkinliği hakkında hızlı bilgiler (örneğin, İlk ve Son Görülen zaman damgaları, ASN, ülke, ilişkili altyapı) ve uygun olduğunda saygınlık puanını etkileyen kuralların bir listesi sağlar.
 
-Saygınlık verileri, kendi saldırı yüzeyinizin güvenilirliğini anlamak için önemlidir ve araştırmalarda görünen bilinmeyen konakları, etki alanlarını veya IP adreslerini değerlendirirken de yararlıdır. Bu puanlar, varlığı etkileyen önceki kötü amaçlı veya şüpheli etkinlikleri veya dikkate alınması gereken diğer bilinen risk göstergelerini ortaya çıkarır.
+Saygınlık verileri, kendi saldırı yüzeyinizin güvenilirliğini anlamak için önemlidir ve araştırmalarda görünen bilinmeyen konakları, etki alanlarını veya IP adreslerini değerlendirirken de yararlıdır. Bu puanlar, daha önce varlığı etkilemiş kötü amaçlı veya şüpheli etkinlikleri veya dikkate alınması gereken diğer bilinen güvenlik ihlali göstergelerini ortaya çıkarır.
 
 ![Saygınlık Kenarı Ekran Görüntüsü](media/reputationEdgeScreenshot.png)
 ## <a name="understanding-reputation-scores"></a>Saygınlık puanlarını anlama
 
 Saygınlık Puanları, bir varlıkla ilişkili riski hızla ölçmek için tasarlanmış bir dizi algoritma tarafından belirlenir. Gezinme altyapımızdan ve dış kaynaklardan toplanan IP bilgilerinden yararlanarak mülkiyet verilerimizi temel alan İtibar Puanlarını geliştiririz.
 
-![Saygınlık Özeti Kartı](media/reputationSummaryCard.png)
+![İtibar Özet Kartı](media/reputationSummaryCard.png)
 
 ## <a name="detection-methods"></a>Algılama yöntemleri
 Saygınlık Puanları, engellenen varlıklarla bilinen ilişkilendirmeler ve riski değerlendirmek için kullanılan bir dizi makine öğrenmesi kuralı da dahil olmak üzere bir dizi faktör tarafından belirlenir.
@@ -35,7 +36,7 @@ Saygınlık Puanları, 0 ile 100 arasında bir aralığa sahip sayısal puan ola
 
 |     Puan             |     Kategori              |     Açıklama                                                                                                                                                                          |
 |-----------------------|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     75+               |     Kötü niyetli             |     Varlık, engellenenler listemizde görünen ve şüpheli etkinliği algılayan makine öğrenmesi kurallarıyla eşleşen bilinen kötü amaçlı altyapıyla ilişkilendirmeleri onayladı.      |
+|     75+               |     Kötü amaçlı             |     Varlık, engellenenler listemizde görünen ve şüpheli etkinliği algılayan makine öğrenmesi kurallarıyla eşleşen bilinen kötü amaçlı altyapıyla ilişkilendirmeleri onayladı.      |
 |     50   – 74         |     Şüpheli            |     Varlık büyük olasılıkla üç veya daha fazla makine öğrenmesi kuralıyla eşleşmelere göre şüpheli altyapıyla ilişkilendirilir.                                                           |
 |     25   – 49         |     Nötr               |     Varlık en az iki makine öğrenmesi kuralıyla eşleşir.                                                                                                                            |
 |     0   – 24          |     Bilinmiyor (Yeşil)     |     Puan "Bilinmiyor" ve yeşil ise varlık en az bir eşleşen kural döndürmüştür.                                                                                          |
@@ -43,7 +44,7 @@ Saygınlık Puanları, 0 ile 100 arasında bir aralığa sahip sayısal puan ola
 
 ## <a name="detection-rules"></a>Algılama kuralları
 
-Saygınlık puanları, bir analistin etki alanının veya adresin göreli kalitesini belirlemek için başvurabileceği birçok faktöre dayanır. Bu faktörler, itibar puanlarını oluşturan makine öğrenmesi kurallarına yansıtılır. Örneğin, ".xyz" veya ".cc" üst düzey etki alanları (TDA) genellikle ".com" veya ".org" TD'lerinden daha şüphelidir. Düşük maliyetli veya ücretsiz bir barındırma sağlayıcısı tarafından barındırılan bir ASN (Otonom Sistem Numarası), otomatik olarak imzalanan ssl sertifikası gibi kötü amaçlı etkinliklerle ilişkilendirilebilir. Bu saygınlık modeli, bir varlığın genel itibarını puanlama amacıyla bu özelliklerin hem kötü amaçlı hem de zararsız göstergeler arasındaki göreli oluşumlarına bakılarak geliştirilmiştir.
+Saygınlık puanları, bir analistin etki alanının veya adresin göreli kalitesini belirlemek için başvurabileceği birçok faktöre dayanır. Bu faktörler, itibar puanlarını oluşturan makine öğrenmesi kurallarına yansıtılır. Örneğin, ".xyz" veya ".cc" üst düzey etki alanları (TLD) genellikle ".com" veya ".org" TD'lerinden daha şüphelidir. Düşük maliyetli veya ücretsiz bir barındırma sağlayıcısı tarafından barındırılan bir ASN (Otonom Sistem Numarası), otomatik olarak imzalanan ssl sertifikası gibi kötü amaçlı etkinliklerle ilişkilendirilebilir. Bu saygınlık modeli, bir varlığın genel itibarını puanlama amacıyla bu özelliklerin hem kötü amaçlı hem de zararsız göstergeler arasındaki göreli oluşumlarına bakılarak geliştirilmiştir.
 
 Bir konağın, etki alanının veya IP adresinin şüpheliliğini belirlemek için kullanılan kural örnekleri için lütfen aşağıdaki listeye bakın. Bu listenin kapsamlı olmadığını ve sürekli değiştiğini lütfen unutmayın; algılama mantığımız ve sonuç özelliklerimiz, gelişen tehdit ortamını yansıttıkça dinamiktir. Bu nedenle, bir varlığın itibarını değerlendirmek için kullanılan makine öğrenmesi kurallarının kapsamlı bir listesini yayımlamayız.
 
@@ -75,4 +76,4 @@ Defender TI'nin saygınlık puanı, sınıflandırması, kuralları ve kurallar�
 İlişkili tüm makaleler analistin siber tehdit bilgileri ekibiyle paylaşılabilir, böylece kuruluşunu kimlerin hedeflediklerini daha net bir şekilde anlayabilirler.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-Daha fazla bilgi için bkz [. Analist içgörüleri](analyst-insights.md).
+Daha fazla bilgi için bkz. [Çözümleyici içgörüleri](analyst-insights.md).

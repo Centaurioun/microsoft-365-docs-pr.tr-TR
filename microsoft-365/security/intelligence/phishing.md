@@ -3,7 +3,7 @@ title: Kimlik avı saldırılarına karşı koruma
 ms.reviewer: ''
 description: Kimlik avının nasıl çalıştığı, kötü amaçlı yazılımların cihazlarınıza nasıl çalıştığı ve kendinizi korumak için neler yapabileceğiniz hakkında bilgi edinin
 keywords: güvenlik, kötü amaçlı yazılım, kimlik avı, bilgi, dolandırıcılık, sosyal mühendislik, yem, yem, koruma, eğilimler, hedefli saldırı
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,13 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 1f414c80d3c0b5478112cd402f8e3839908787d4
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: dda1cd5d25d75132cb6e04ad5dd7c365c4bb15ed
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666778"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67739046"
 ---
 # <a name="how-to-protect-against-phishing-attacks"></a>Kimlik avı saldırılarına karşı koruma
 
@@ -66,11 +65,11 @@ Kimlik avı dolandırıcılığıyla ilgili birkaç telltale işareti şunlardı
 
 ## <a name="software-solutions-for-organizations"></a>Kuruluşlar için yazılım çözümleri
 
-* [Microsoft Edge](/microsoft-edge/deploy/index) ve [Windows Defender Application Guard](/windows/security/microsoft-defender-application-guard/md-app-guard-overview.md), Microsoft'un sektör lideri Hyper-V sanallaştırma teknolojisini kullanarak hedeflenen saldırıların artan tehdidine karşı koruma sağlar. Göz atılan bir web sitesine güvenilmezse, Hyper-V kapsayıcısı bu cihazı ağınızın geri kalanından yalıtarak kurumsal verilerinize erişimi engeller.
+* [Microsoft Edge](/microsoft-edge/deploy/index) ve [Windows Defender Application Guard](/windows/security/microsoft-defender-application-guard/md-app-guard-overview.md), Microsoft'un sektör lideri Hyper-V sanallaştırma teknolojisini kullanarak artan hedefli saldırı tehdidine karşı koruma sağlar. Göz atılan bir web sitesine güvenilmezse, Hyper-V kapsayıcısı bu cihazı ağınızın geri kalanından yalıtarak kurumsal verilerinize erişimi engeller.
 
 * [Microsoft Exchange Online Koruması (EOP),](https://products.office.com/exchange/exchange-email-security-spam-protection) acil durumlar sırasında ve sonrasında e-posta erişimini korurken istenmeyen postalara ve kötü amaçlı yazılımlara karşı kurumsal düzeyde güvenilirlik ve koruma sunar.  EOP, çeşitli filtreleme katmanlarını kullanarak, istenmeyen posta filtreleme için toplu posta denetimleri ve uluslararası istenmeyen postalar gibi koruma hizmetlerinizi daha da geliştirecek farklı denetimler sağlayabilir.
 
-* E-postanızı, dosyalarınızı ve çevrimiçi depolama alanınızı kötü amaçlı yazılımlara karşı korumaya yardımcı olmak için [Office 365 için Microsoft Defender](https://products.office.com/exchange/online-email-threat-protection?ocid=cx-blog-mmpc) kullanın. Microsoft Teams, Word, Excel, PowerPoint, Visio, SharePoint Online ve OneDrive İş bütünsel koruma sunar. Güvenli olmayan eklere karşı koruma sağlayarak ve kötü amaçlı bağlantılara karşı korumayı genişleterek, sıfır gün daha iyi koruma sağlamak için Exchange Online Protection güvenlik özelliklerini tamamlar.
+* E-postanızı, dosyalarınızı ve çevrimiçi depolama alanınızı kötü amaçlı yazılımlara karşı korumaya yardımcı olmak için [Office 365 için Microsoft Defender](https://products.office.com/exchange/online-email-threat-protection?ocid=cx-blog-mmpc) kullanın. Microsoft Teams, Word, Excel, PowerPoint, Visio, SharePoint Online ve OneDrive İş bütünsel koruma sağlar. Güvenli olmayan eklere karşı koruma sağlayarak ve kötü amaçlı bağlantılara karşı korumayı genişleterek, sıfır gün daha iyi koruma sağlamak için Exchange Online Protection güvenlik özelliklerini tamamlar.
 
 ## <a name="what-to-do-if-youve-been-a-victim-of-a-phishing-scam"></a>Kimlik avı dolandırıcılığı kurbanıysanız yapmanız gerekenler
 
@@ -92,7 +91,7 @@ Kimlik avı saldırısı kurbanı olduğunuzu düşünüyorsanız:
 
 ### <a name="if-youre-on-a-suspicious-website"></a>Şüpheli bir web sitesindeyseniz
 
-- **Microsoft Edge**: Şüpheli bir sitedeyken **Diğer (...) simgesini** >  **Yardım ve geri bildirimGüvensiz** >  **siteyi bildir'i** seçin. Web sitesini bildirmek için görüntülenen web sayfasındaki yönergeleri izleyin.
+- **Microsoft Edge**: Şüpheli bir sitedeyken **Diğer (...) simgesini** > **Yardım ve geri bildirim** > **Güvenli olmayan siteyi bildir'i** seçin. Web sitesini bildirmek için görüntülenen web sayfasındaki yönergeleri izleyin.
 
 - **Internet Explorer**: Şüpheli bir sitedeyken dişli simgesini seçin, **Güvenlik'in** üzerine gelin ve **ardından Güvenli Olmayan Web Sitesini Bildir'i** seçin. Web sitesini bildirmek için görüntülenen web sayfasındaki yönergeleri izleyin.
 

@@ -3,16 +3,17 @@ title: Microsoft Defender Tehdit Bilgileri (Defender TI) nedir?
 description: Bu genel bakış makalesinde, Microsoft Defender Tehdit Bilgileri (Defender TI) ile birlikte gelen ana özellikler hakkında bilgi edinebilirsiniz.
 author: alexroland24
 ms.author: aroland
+manager: dolmont
 ms.service: threat-intelligence
 ms.topic: overview
 ms.date: 08/02/2022
 ms.custom: template-overview
-ms.openlocfilehash: db2d00a145f78615647e48e2f4a751df8e0e7895
-ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
+ms.openlocfilehash: bed8b4ed1aefb1a401f61256161f6dce5c593e18
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67319654"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737256"
 ---
 # <a name="what-is-microsoft-defender-threat-intelligence-defender-ti"></a>Microsoft Defender Tehdit Bilgileri (Defender TI) nedir?
 

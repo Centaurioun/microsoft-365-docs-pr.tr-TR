@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 08/11/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 İş Ekstra'da Teams'i kullanarak işbirliği yapma, dosya paylaşma ve güvenli bir şekilde iletişim kurma hakkında genel bakış. Teams tarafından sunulan kapalı ortamda dosyalar ve iletişimler siber tehditlere ve siber saldırılara karşı ücretsizdir.
-ms.openlocfilehash: 5c2cff10d10ddaa10fee524e06889ad42eda0aca
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: c313398dd1b142ae996739b359eb8b7ba7754d03
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67615000"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738937"
 ---
 # <a name="collaborate-and-share-securely"></a>Güvenli bir şekilde işbirliği yapma ve paylaşma
 

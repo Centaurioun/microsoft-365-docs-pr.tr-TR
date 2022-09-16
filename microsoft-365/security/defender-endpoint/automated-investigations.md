@@ -2,8 +2,8 @@
 title: Tehditleri araştırmak ve düzeltmek için otomatik araştırma kullanma
 description: Uç Nokta için Microsoft Defender'daki otomatik araştırma akışını anlama.
 keywords: otomatik, araştırma, algılama, Uç Nokta için Microsoft Defender
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +20,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 search.appverid: met150
-ms.openlocfilehash: a455bae862b01bcf38778fde3ba4af960f6d0e48
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ded37b41a4b4c4ec2245edc2a677cf1c0a891fbd
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703280"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736794"
 ---
 # <a name="overview-of-automated-investigations"></a>Otomatik araştırmalara genel bakış
 

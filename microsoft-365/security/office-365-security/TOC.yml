@@ -5,7 +5,7 @@
     - name: Genel bakış
       items:
         - name: Office 365 güvenliğine genel bakış
-          href: overview.md
+          href: microsoft-defender-for-office-365-product-overview.md
         - name: Office 365 için Defender
           href: defender-for-office-365.md
         - name: Office 365 için Defender'da adım adım tehdit koruması

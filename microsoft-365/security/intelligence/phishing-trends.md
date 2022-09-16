@@ -3,7 +3,7 @@ title: Kimlik avı eğilimleri ve teknikleri
 ms.reviewer: ''
 description: Kimlik avı tekniklerini belirleme hakkında bilgi edinin
 keywords: güvenlik, kötü amaçlı yazılım, kimlik avı, bilgi, dolandırıcılık, sosyal mühendislik, yem, yem, yem, koruma, eğilimler, hedefli saldırı, zıpkınla kimlik avı, balina avcılığı
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,13 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 7bfad3fdad392c2ea0795d24e21d6f8c2848f70b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 5b821d79c4f4359c3548c2904ea2febb94308188
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016086"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67743316"
 ---
 # <a name="phishing-trends-and-techniques"></a>Kimlik avı eğilimleri ve teknikleri
 

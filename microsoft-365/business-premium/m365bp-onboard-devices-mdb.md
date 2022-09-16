@@ -7,21 +7,21 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 07/19/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5d3ee78c1b6a26ff41c063a859b8d33e75d9f073
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 72d710e2db7ff160039e96e34f1f4b05d83ff681
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613900"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67736992"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>Kayıtlı cihazları İş için Microsoft Defender ekleme
 

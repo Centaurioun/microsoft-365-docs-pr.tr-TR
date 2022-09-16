@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: dd7ea89a3acb603398a261f0695e3e48f0193a15
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 4239ffe6d9560514eb3e5d5123340c97dbc7d296
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67700014"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738630"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender için en düşük gereksinimler
 
@@ -44,7 +44,7 @@ Cihazları hizmete eklemek için bazı minimum gereksinimler vardır. Cihazları
 
 ## <a name="licensing-requirements"></a>Lisans gereksinimleri
 
-[Uç Nokta Plan 1 ve Plan 2 için Defender'ın](defender-endpoint-plan-1-2.md) tek başına sürümleri sunucu lisanslarını içermez. Sunucuları bu planlara eklemek için Bulut için Defender teklifinin bir parçası olarak Sunucular için [Defender](/azure/defender-for-cloud/defender-for-cloud-introduction) Plan 1 veya Plan 2 gerekir. Daha fazla bilgi edinmek için bkz [. Sunucular için Microsoft Defender'a](/azure/defender-for-cloud/defender-for-servers-introduction) genel bakış.
+[Uç Nokta Plan 1 ve Plan 2 için Defender'ın](defender-endpoint-plan-1-2.md) tek başına sürümleri, diğer Microsft 365 planlarına dahil edildiğinde bile sunucu lisanslarını içermez. Sunucuları bu planlara eklemek için Bulut için Defender teklifinin bir parçası olarak Sunucular için [Defender](/azure/defender-for-cloud/defender-for-cloud-introduction) Plan 1 veya Plan 2 gerekir. Daha fazla bilgi edinmek için bkz [. Sunucular için Microsoft Defender'a](/azure/defender-for-cloud/defender-for-servers-introduction) genel bakış.
 
 Uç Nokta için Microsoft Defender için lisanslama gereksinimleri hakkında bilgi için bkz. [lisanslama bilgileri Uç Nokta için Microsoft Defender](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 

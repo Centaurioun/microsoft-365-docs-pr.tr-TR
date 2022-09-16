@@ -7,18 +7,18 @@ ms.reviewer: amitman, sovaish
 ms.date: 06/15/2021
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: medium
 description: Öğrenme Araçları Birlikte Çalışabilirliği (LTI) Microsoft uygulamaları hakkında bilgi edinin ve Microsoft uygulamalarını Öğrenme Yönetim Sistemine (LMS) ile tümleştirirken eğitimcilere nasıl yardımcı olacaklarını öğrenin.
-ms.openlocfilehash: 0dbaa7d02af0556015e8c531eeb09131cacf0ab5
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: b1bd3d1ad5ae5995c9c7f48a7928b83d52461a72
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385043"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67737510"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Microsoft ürünlerini Öğrenme Yönetim Sisteminizle (LMS) tümleştirme
 

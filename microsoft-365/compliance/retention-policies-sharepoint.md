@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 saklamanın SharePoint ve OneDrive'da nasıl çalıştığını, kuruluşunuz için verilerin otomatik olarak elde tutulmasını veya silinmesini yönetmek için bekletme ilkelerini ve bekletme etiketlerini kullanmayı öğrenin.
-ms.openlocfilehash: 3e21d720b2d4afa70a83011b1e2486151f6c3cd2
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 98bef6ba43fd57b2533badcf4578668cd12860dd
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67326441"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67735834"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint ve OneDrive için bekletme hakkında bilgi edinin
 
@@ -72,7 +72,7 @@ Bir zamanlayıcı işi, Koruma Bekletme kitaplığında düzenli aralıklarla ç
 
 Dosyaları Koruma Bekletme kitaplığına kopyalamak için bu davranış, bekletme ayarları uygulandığında var olan içeriğe uygulanır. Ayrıca, bekletme ilkeleri için, ilkeye eklendikten sonra oluşturulan veya siteye eklenen tüm yeni içerikler Koruma Bekletme kitaplığında saklanır. Ancak yeni içerik, ilk kez düzenlendiğinde, yalnızca silindiğinde Koruma Saklama kitaplığına kopyalanmamıştır. Dosyanın tüm sürümlerini korumak için, özgün site için [sürüm oluşturma](#how-retention-works-with-document-versions) açık olmalıdır.
   
-Kullanıcılar saklamaya tabi olan bir kitaplığı, listeyi, klasörü veya siteyi silmeye çalışırlarsa bir hata iletisi görür. İlk olarak klasördeki saklamaya tabi olan dosyaları taşırlarsa veya silerlerse klasörü silebilirler.
+Kullanıcılar saklamaya tabi olan bir kitaplığı, listeyi, klasörü veya siteyi silmeye çalışırlarsa bir hata iletisi görür. Önce klasördeki saklamaya tabi olan dosyaları taşırlarsa veya silerlerse etiketsiz bir klasörü silebilirler.
 
 Kullanıcılar aşağıdaki koşullardan herhangi birinde etiketli bir öğeyi silmeye çalışırlarsa da bir hata iletisi görür. Öğe Koruma Saklama kitaplığına kopyalanır ancak özgün konumda kalır:
 

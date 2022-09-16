@@ -7,10 +7,10 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 07/19/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Outlook kullanarak şifrelenmiş e-posta göndermeyi öğrenin.
-ms.openlocfilehash: 0754509ca7c7a5a07ab3416b5e190c695af3e1d9
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: bb33bed554786a8879e861ff88a4f5f5de60179e
+ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613746"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67738673"
 ---
 # <a name="encrypt-or-label-your-sensitive-email-in-microsoft-365"></a>Microsoft 365'te hassas e-postanızı şifreleme veya etiketleme
 
