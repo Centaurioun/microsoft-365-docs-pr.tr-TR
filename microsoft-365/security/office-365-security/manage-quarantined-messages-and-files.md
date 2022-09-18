@@ -19,12 +19,12 @@ ms.custom:
 description: Yöneticiler, Exchange Online Protection(EOP) içindeki tüm kullanıcılar için karantinaya alınan iletileri görüntülemeyi ve yönetmeyi öğrenebilir. Office 365 için Microsoft Defender sahip kuruluşlardaki yöneticiler, SharePoint Online, OneDrive İş ve Microsoft Teams'de karantinaya alınan dosyaları da yönetebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8c28e4dc142136075e220ac6f011be4acf76e813
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: fd1d9d60140ebce0f718a2f23e192ada37b2f3bd
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67611465"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797988"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Karantinaya alınan iletileri ve dosyaları EOP'de yönetici olarak yönetme
 
@@ -214,7 +214,11 @@ Diğer eylemler simgesine tıkladıktan ![sonra aşağıdaki eylemler kullanıla
 
 - ![Karantinadan sil simgesi.](../../media/m365-cc-sc-delete-icon.png) **Karantinadan sil**: Görüntülenen uyarıda **Evet'e** tıkladıktan sonra, ileti özgün alıcılara gönderilmeden hemen silinir.
 
-- ![E-posta simgesini indirin.](../../media/m365-cc-sc-download-icon.png) **E-postayı indir**: Görüntülenen açılır menüde **, Bu iletiyi indirmenin risklerini anlıyorum'ı** seçin ve ardından **İndir'e** tıklayarak iletinin yerel bir kopyasını .eml biçiminde kaydedin.
+- ![E-posta simgesini indirin.](../../media/m365-cc-sc-download-icon.png) **E-postayı indirin**: Görüntülenen açılır öğede aşağıdaki ayarları yapılandırın:
+  - **Dosya indirme nedeni**: Açıklayıcı metin girin.
+  - **Parola oluşturma** ve **Parolayı onayla**: İndirilen ileti dosyasını açmak için gereken bir parola girin.
+
+  İşiniz bittiğinde **İndir'e** ve ardından **Bitti'ye** tıklayarak iletinin yerel bir kopyasını kaydedin. .eml ileti dosyası, **İndirilenler** klasörünüzdeki Karantinaya Alınmış Messages.zip adlı sıkıştırılmış bir dosyaya kaydedilir. .zip dosyası zaten varsa, dosya adına bir sayı eklenir (örneğin, Karantinaya Alınan İletiler (1).zip).
 
 - ![Göndereni engelle simgesi.](../../media/m365-cc-sc-block-sender-icon.png) **Göndereni engelle**: Göndereni **posta** kutunuzdaki Engellenen Gönderenler listesine ekleyin. Daha fazla bilgi için bkz [. Posta göndereni engelleme](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 

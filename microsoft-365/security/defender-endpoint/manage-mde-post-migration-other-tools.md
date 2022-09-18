@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: 39f563bb32e1c388501208cfc1eb329372a29b5c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0a859003a0f66f3a7259ab4e9cacf7692ce07670
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686999"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796774"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>PowerShell, WMI ve MPCmdRun.exe ile Uç Nokta için Microsoft Defender yönetme
 
@@ -86,5 +86,4 @@ Ayrıca son kullanıcıların Microsoft Defender Güvenlik Merkezi görüp göre
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [Defender Güvenlik Açığı Yönetimi'ne genel bakış edinin](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Microsoft Defender Güvenlik Merkezi güvenlik işlemleri panosunu ziyaret edin](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [Intune ile Uç Nokta için Microsoft Defender yönetme](manage-mde-post-migration-intune.md)

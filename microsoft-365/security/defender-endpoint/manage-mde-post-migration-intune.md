@@ -18,12 +18,12 @@ ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
 search.appverid: met150
-ms.openlocfilehash: 4fd262b5590d0ce292f05e32d9681cac9d9e4bac
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: deb5727f58e0345946295a7fa009c33e59f444cb
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687021"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797436"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Intune ile Uç Nokta için Microsoft Defender yönetme
 
@@ -87,4 +87,4 @@ Henüz yapmadıysanız, Microsoft 365 Defender portalınızı uyarıları görü
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [Defender Güvenlik Açığı Yönetimi'ne genel bakış edinin](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Microsoft 365 Defender portalı güvenlik işlemleri panosunu ziyaret edin](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+

@@ -17,12 +17,12 @@ search.appverid:
 description: Office 365 için Microsoft Defender çözümleri deneme playbook'u.
 ms.subservice: mdo
 ms.custom: trial-playbook
-ms.openlocfilehash: cc54c427649fc98b9807522017830017f038264f
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: f80a49e6f5b0181f625b4d5a6067f1a1ce30cf12
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67643861"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799218"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Deneme playbook'u: Office 365 için Microsoft Defender
 
@@ -186,7 +186,7 @@ Daha fazla bilgi edinmek için bu videoyu izleyin: [Analiz için ileti gönderme
 
 Ortamınız hakkında daha fazla bilgi edinmek için Office 365 için Defender'deki raporlama özelliklerini kullanın.
 
-- [Değerlendirme panosu](try-microsoft-defender-for-office-365.md#reports-for-audit-mode-only), değerlendirme sırasında Office 365 için Defender tarafından algılanan tehditlerin kolay bir görünümünü sağlar.
+- [Değerlendirme panosu](try-microsoft-defender-for-office-365.md#reports-for-audit-mode), değerlendirme sırasında Office 365 için Defender tarafından algılanan tehditlerin kolay bir görünümünü sağlar.
 - [Tehdit koruması durum raporuyla](view-email-security-reports.md#threat-protection-status-report) e-posta ve işbirliği araçlarına alınan tehditleri anlayın.
 
 ### <a name="step-2-intermediate-steps-in-auditing-mode"></a>2. Adım: Denetim modunda ara adımlar
@@ -235,6 +235,6 @@ Tehditleri tanımlamak ve şüpheli iletileri Office 365 için Defender Saldır�
 
 - **Etkileşimli kılavuz**: Office 365 için Defender aşina değil misiniz? Nasıl başlayabileceğinizi anlamak için [etkileşimli kılavuzu](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) gözden geçirin.
 - **Hızlı İz Kullanmaya Başlama Kılavuzu**: [Office 365 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2197415)
-- **Microsoft belgeleri**: Office 365 için Defender nasıl çalıştığı ve kuruluşunuz için bunu en iyi şekilde nasıl uygulayacakları hakkında ayrıntılı bilgi edinin. [Docs'u](overview.md) ziyaret edin.
+- **Microsoft belgeleri**: Office 365 için Defender nasıl çalıştığı ve kuruluşunuz için bunu en iyi şekilde nasıl uygulayacakları hakkında ayrıntılı bilgi edinin. [Docs'u](defender-for-office-365.md) ziyaret edin.
 - **Dahil olanlar**: Ürün katmanı tarafından listelenen Office 365 e-posta güvenlik özelliklerinin tam listesi için [Özellik Matrisi'ni](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability) görüntüleyin.
 - **Neden Office 365 için Defender**: [Office 365 için Defender Veri Sayfası](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy), müşterilerin Microsoft'u seçmesinin en önemli 10 nedenini gösterir.

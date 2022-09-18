@@ -16,12 +16,12 @@ ms.collection:
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 6c85535f5b79bef0bdc2782daf9111a307b648b0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f1a77d7889411d5455140db68a5af4016747ee49
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691133"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797822"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender'deki yenilikler
 
@@ -49,6 +49,13 @@ Bu makale, Linux'ta Uç Nokta için Microsoft Defender'nin en son sürümlerinde
 **Yenilikler**
 
 - mdatp sürüm 101.75.43 çalıştıran belirli müşteri iş yüklerinde gözlemlenen çekirdek kilitlenmesini düzeltir. RCA'nın ardından bu, bir algılayıcı dosya tanımlayıcısının sahipliğini serbest bırakırken bir yarış durumuna atfedildi. Kapatma yolundaki son ürün değişikliği nedeniyle yarış durumu ortaya çıktı. Daha yeni Çekirdek sürümleri (5.1+) üzerindeki müşteriler bu sorundan etkilenmez.
+
+- mdatp sürüm 101.75.43'ten yükseltme yaparken, 101.80.97 sürümüne yükseltmeyi denemeden önce aşağıdaki komutları çalıştırın
+
+```
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
 </br>
 
 <br/><br/>

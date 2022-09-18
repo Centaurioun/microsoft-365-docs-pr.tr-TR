@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 859abb10c9e3db1b608190e79f540dc90771ab99
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 37fa8cf1acf8c557401a698710495d39882bf318
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690061"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796866"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Linux'ta statik ara sunucu bulma için Uç Nokta için Microsoft Defender yapılandırma
 
@@ -86,3 +86,5 @@ Ardından değişkeni hizmete iki yoldan biriyle yayabilirsiniz:
 ```bash
 sudo systemctl daemon-reload; sudo systemctl restart mdatp
 ```
+> [!NOTE]
+> 'yi kaldırmadan `mdatp`önce yapmış olabileceğiniz tüm eklemeleri kaldırmak için, içinden özel dosyayı `/etc/systemd/system`silin.

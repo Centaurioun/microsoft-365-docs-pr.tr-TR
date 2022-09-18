@@ -3,11 +3,10 @@ title: Saldırı yüzeyini azaltma (ASR) kuralları testi
 description: Saldırı yüzeyi azaltma (ASR) kuralları dağıtımınızı test etmek için rehberlik sağlar.
 keywords: Saldırı yüzeyi azaltma kuralları dağıtımı, ASR dağıtımı, ASR kurallarını etkinleştirme, ASR'yi yapılandırma, konak yetkisiz erişim önleme sistemi, koruma kuralları, açıktan yararlanma önleme kuralları, kötüye kullanıma karşı koruma kuralları, kötüye kullanma kuralları, bulaşma önleme kuralları, Uç Nokta için Microsoft Defender, ASR kurallarını yapılandırma
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -22,12 +21,12 @@ ms.collection:
 - highpri
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: 9927c863422c5d0bc1df9151e83f10ee92713d6d
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: dd2eefeb19670b349a0ee8dba7a7fa1982843897
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736916"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799465"
 ---
 # <a name="test-attack-surface-reduction-asr-rules"></a>Saldırı yüzeyini azaltma (ASR) kuralları testi
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ba33bc890fe2a6d07bb16e1cb36d7096a2aea4c9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: c964b8def27e13c93a4742cccdce03e02ae777b0
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699948"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797182"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Uç nokta algılama ve yanıta genel bakış
 
@@ -53,7 +53,6 @@ Yanıt özellikleri, etkilenen varlıklar üzerinde hareket ederek tehditleri he
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Güvenlik işlemleri panosu](security-operations-dashboard.md)
 - [Olay sırası](view-incidents-queue.md)
 - [Uyarı sırası](alerts-queue.md)
 - [Cihazlar listesi](machines-view-overview.md)

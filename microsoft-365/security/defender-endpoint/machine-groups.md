@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: ff038a72cccf5b79432ef15aa8bd8b396e5fb991
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 55bb0d81199755dc92899a477ce165388704ffce
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688627"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799240"
 ---
 # <a name="create-and-manage-device-groups"></a>Cihaz grupları oluşturun ve yönetin
 
@@ -79,7 +79,7 @@ Cihaz grubu oluşturma işleminin bir parçası olarak şunları yapacaksınız:
 
 ## <a name="manage-device-groups"></a>Cihaz gruplarını yönetme
 
-Eşleştirme sırasında daha yüksek veya daha düşük öncelik verilmesi için cihaz grubunun derecesini yükseltebilir veya indirgeyebilirsiniz. Bir cihaz birden fazla grupla eşleştirildiğinde, yalnızca en yüksek dereceli gruba eklenir. Grupları düzenleyebilir ve silebilirsiniz.
+Eşleştirme sırasında daha yüksek veya daha düşük öncelik verilmesi için cihaz grubunun derecesini yükseltebilir veya indirgeyebilirsiniz. 1 derecesine sahip bir cihaz grubu, en yüksek dereceli grupdur. Bir cihaz birden fazla grupla eşleştirildiğinde, yalnızca en yüksek dereceli gruba eklenir. Grupları düzenleyebilir ve silebilirsiniz.
 
 > [!WARNING]
 > Cihaz grubunun silinmesi e-posta bildirim kurallarını etkileyebilir. Bir cihaz grubu bir e-posta bildirim kuralı altında yapılandırılırsa, bu kuraldan kaldırılır. Cihaz grubu bir e-posta bildirimi için yapılandırılan tek grupsa, bu e-posta bildirim kuralı cihaz grubuyla birlikte silinir.

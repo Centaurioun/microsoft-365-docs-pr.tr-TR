@@ -24,12 +24,12 @@ ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
 search.appverid: met150
-ms.openlocfilehash: 4f6f015768873f698742b9b318965dc7a4466c7d
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 0c305a3dd19cd412238017649eae141c7e308326
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736872"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798164"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'da yanlış pozitifleri/negatifleri ele alın
 
@@ -66,7 +66,7 @@ Bu makalede açıklanan görevleri gerçekleştirdikten sonra hatalı pozitif/ne
 
 Kötü amaçlı veya şüpheli olarak algılanan ve olmaması gereken bir [uyarı](alerts.md) görürseniz bu varlık için uyarıyı gizleyebilirsiniz. Hatalı pozitif olması gerekmeyen ancak önemli olmayan uyarıları da gizleyebilirsiniz. Uyarıları da sınıflandırmanızı öneririz.
 
-Uyarılarınızı yönetmek ve doğru/yanlış pozitifleri sınıflandırmak, tehdit koruma çözümünüzü eğitmeye yardımcı olur ve zaman içinde hatalı pozitif veya hatalı negatiflerin sayısını azaltabilir. Bu adımların izlenmesi, güvenlik ekibinizin daha yüksek öncelikli iş öğelerine odaklanması için güvenlik operasyonları panonuzdaki kirliliği azaltmaya da yardımcı olur.
+Uyarılarınızı yönetmek ve doğru/yanlış pozitifleri sınıflandırmak, tehdit koruma çözümünüzü eğitmeye yardımcı olur ve zaman içinde hatalı pozitif veya hatalı negatiflerin sayısını azaltabilir. Bu adımların izlenmesi, güvenlik ekibinizin daha yüksek öncelikli iş öğelerine odaklanması için kuyruğunuzdaki gürültüyü azaltmaya da yardımcı olur.
 
 ### <a name="determine-whether-an-alert-is-accurate"></a>Uyarının doğru olup olmadığını belirleme
 
@@ -103,7 +103,7 @@ Uyarılar, Microsoft 365 Defender hatalı pozitifler veya gerçek pozitifler ola
 
 ### <a name="suppress-an-alert"></a>Uyarıyı gizleme
 
-Hatalı pozitif veya gerçek pozitif olan ancak önemli olmayan olaylar için uyarılarınız varsa, bu uyarıları Microsoft 365 Defender'da gizleyebilirsiniz. Uyarıların gizlenmesi, güvenlik işlemleri panonuzdaki gürültüyü azaltmaya yardımcı olur.
+Hatalı pozitif veya gerçek pozitif olan ancak önemli olmayan olaylar için uyarılarınız varsa, bu uyarıları Microsoft 365 Defender'da gizleyebilirsiniz. Uyarıların gizlenmesi kuyruğunuzdaki gürültüyü azaltmaya yardımcı olur.
 
 1. Microsoft 365 Defender portalına ([https://security.microsoft.com](https://security.microsoft.com)) gidin ve oturum açın.
 

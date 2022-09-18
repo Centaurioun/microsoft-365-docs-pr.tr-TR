@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Farklı Microsoft 365 hizmetlerindeki içeriği aramak için uyumluluk merkezindeki İçerik arama eBulma aracını kullanın.
-ms.openlocfilehash: 3c5e4191c34db9d31ce54494f2677e75f3cae3bf
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b2317012415929201c0a1cb8b20ef751bf85ed95
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632629"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798835"
 ---
 # <a name="create-a-content-search"></a>İçerik araması oluşturma
 
@@ -64,13 +64,13 @@ Bir arama çalıştırdıktan sonra, arama açılır sayfasında içerik konumla
 
 5. **Konumlar** sayfasında, aramak istediğiniz içerik konumlarını seçin. Posta kutuları, siteler ve ortak klasörlerde arama yapabilirsiniz.
 
-    ![Ayrı tutulacak içerik konumlarını seçin.](../media/ContentSearchLocations.png)
+    ![Aranacak içerik konumlarını seçin.](../media/ContentSearchLocations.png)
   
-   1. **Exchange posta kutuları: İki** durumlu düğmeyi **Açık** olarak ayarlayın ve ardından Beklemeye alınan posta kutularını belirtmek için **Kullanıcıları, grupları veya ekipleri seçin'e** tıklayın. Kullanıcı posta kutularını ve dağıtım gruplarını bulmak için arama kutusunu kullanın. Microsoft Ekibi (kanal iletileri için), Office 365 Grubu ve Yammer Grubu ile ilişkili posta kutusunda da arama yapabilirsiniz. Posta kutularında depolanan uygulama verileri hakkında daha fazla bilgi için bkz. [eBulma için posta kutularında depolanan içerik](what-is-stored-in-exo-mailbox.md).
+   1. **Exchange posta kutuları**: İki durumlu düğmeyi **Açık** olarak ayarlayın ve ardından Aranacak posta kutularını belirtmek için **Kullanıcıları, grupları veya ekipleri seçin'e** tıklayın. Kullanıcı posta kutularını ve dağıtım gruplarını bulmak için arama kutusunu kullanın. Microsoft Ekibi (kanal iletileri için), Office 365 Grubu ve Yammer Grubu ile ilişkili posta kutusunda da arama yapabilirsiniz. Posta kutularında depolanan uygulama verileri hakkında daha fazla bilgi için bkz. [eBulma için posta kutularında depolanan içerik](what-is-stored-in-exo-mailbox.md).
 
-   2. **SharePoint siteleri**: İki durumlu düğmeyi **Açık** olarak ayarlayın ve ardından **Site seç'e** tıklayarak SharePoint sitelerini ve OneDrive hesaplarını beklemeye alacak şekilde belirtin. Beklemeye almak istediğiniz her sitenin URL'sini yazın. Microsoft Ekibi, Office 365 Grubu veya Yammer Grubu için SharePoint sitesinin URL'sini de ekleyebilirsiniz.
+   2. **SharePoint siteleri**: İki durumlu düğmeyi **Açık** olarak ayarlayın ve ardından **Site seç'e** tıklayarak SharePoint sitelerini ve Aranacak OneDrive hesaplarını belirtin. Aramak istediğiniz her sitenin URL'sini yazın. Microsoft Ekibi, Office 365 Grubu veya Yammer Grubu için SharePoint sitesinin URL'sini de ekleyebilirsiniz.
   
-   3. **Ortak klasörleri değiştirme: Tüm ortak klasörleri** Exchange Online kuruluşunuzda beklemeye almak için iki durumlu düğmeyi **Açık** olarak ayarlayın. Beklemeye almak için belirli ortak klasörleri seçemezsiniz. Ortak klasörleri bekletmek istemiyorsanız iki durumlu düğmeyi kapalı bırakın.
+   3. **Ortak klasörleri değiştirme**: Exchange Online kuruluşunuzdaki ortak klasörlerde arama yapmak için iki durumlu düğmeyi **Açık** olarak ayarlayın. Aranacak belirli ortak klasörleri seçemezsiniz. Ortak klasörlerde arama yapmak istemiyorsanız iki durumlu düğmeyi kapalı bırakın.
   
    4. Şirket içi kullanıcılar için Teams içeriği aramak için bu onay kutusunu seçili tutun. Örneğin, kuruluştaki tüm Exchange posta kutularında arama yaparsanız ve bu onay kutusu seçiliyse, şirket içi kullanıcılar için Teams sohbet verilerini depolamak için kullanılan bulut tabanlı depolama alanı arama kapsamına eklenir. Daha fazla bilgi için bkz. [Şirket içi kullanıcılar için Teams sohbet verilerini arama](search-cloud-based-mailboxes-for-on-premises-users.md).
 

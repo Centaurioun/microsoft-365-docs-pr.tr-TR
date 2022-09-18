@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 68cdc07ea2396910acdf3d86201db4b72f17f380
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: acd80978831668890f1767b172cbbfb4d7e91403
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688539"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797966"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Uç Nokta için Microsoft Defender uyarılarını yönetme
 
@@ -34,7 +34,7 @@ ms.locfileid: "67688539"
 
 > Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 
-Uç Nokta için Defender, uyarılar aracılığıyla olası kötü amaçlı olayları, öznitelikleri ve bağlamsal bilgileri size bildirir. **Güvenlik işlemleri panosunda** yeni uyarıların özeti görüntülenir ve **Uyarılar kuyruğundaki** tüm uyarılara erişebilirsiniz.
+Uç Nokta için Defender, uyarılar aracılığıyla olası kötü amaçlı olayları, öznitelikleri ve bağlamsal bilgileri size bildirir. Yeni uyarıların özeti görüntülenir ve **Uyarılar kuyruğundaki** tüm uyarılara erişebilirsiniz.
 
 **Uyarılar kuyruğunda** bir uyarıyı veya tek bir cihaz için Cihaz sayfasının **Uyarılar** sekmesini seçerek uyarıları yönetebilirsiniz.
 

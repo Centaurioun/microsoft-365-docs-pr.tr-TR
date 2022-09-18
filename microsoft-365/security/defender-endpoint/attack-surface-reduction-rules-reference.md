@@ -2,11 +2,10 @@
 title: Saldırı yüzeyi azaltma kuralları başvurusu
 description: Saldırı yüzeyi azaltma kurallarıyla ilgili ayrıntıları kural temelinde listeler.
 keywords: Saldırı yüzeyi azaltma kuralları, ASR, asr kuralları, kalçalar, konak izinsiz giriş önleme sistemi, koruma kuralları, kötüye kullanıma karşı koruma kuralları, antiexploit, exploit kuralları, bulaşma önleme kuralları, Uç Nokta için Microsoft Defender, ASR kurallarını yapılandırma, ASR kuralı açıklaması
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -18,12 +17,12 @@ ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 08/10/2022
 search.appverid: met150
-ms.openlocfilehash: ac22b5ef9cfe8efa3729059643872342990ff1b8
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 9ccc7d5d2a14d35f1aef9dc3b8b242bfd9a49c6a
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741949"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798747"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Saldırı yüzeyi azaltma kuralları başvurusu
 

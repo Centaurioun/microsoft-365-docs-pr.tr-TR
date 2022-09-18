@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Tam veri eşleşmesine dayalı hassas bilgi türleri için tam veri eşleşmesi şeması oluşturma
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 87b90d2aabb3dd23e7f891a740bcaf98a5cb996a
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 34ae4d9150ec29fdac4184c30f053b18ca58df74
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359941"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799362"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Tam veri eşleşmesine dayalı hassas bilgi türleri için tam veri eşleşmesi şeması oluşturma
 
@@ -70,7 +70,7 @@ Aynı hassas veri tablosunu kullanan birden çok hassas bilgi türünde tek bir 
     1. **Bu alan için özel sınırlayıcılar ve noktalama işaretleri girin**
 
    > [!IMPORTANT]
-   > En az bir tane, ancak şema alanlarınızın beşten fazlası aranabilir olarak belirlenmelidir.
+   > En az bir tane, ancak şema alanlarınızdan en fazla on tanesi aranabilir olarak belirlenmelidir.
 
 7. **Kaydet**'i seçin. Şemanız artık listelenecek ve kullanıma sunulacaktır.
 

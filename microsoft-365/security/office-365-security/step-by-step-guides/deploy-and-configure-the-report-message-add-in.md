@@ -3,6 +3,7 @@ title: Rapor iletisi eklentisini dağıtma ve yapılandırma
 description: Microsoft'un güvenlik yöneticilerine yönelik kimlik avı raporlama eklentilerini dağıtma ve yapılandırma adımları.
 search.product: ''
 ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 3909f2c0d2aeb3ef2a8e71588be3e988b54d9203
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: d247bcde276729dd6a47869e41ffd0d7e721e6b2
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738805"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798769"
 ---
 # <a name="deploy-and-configure-the-report-message-add-in-to-users"></a>Rapor iletisi eklentisini dağıtın ve kullanıcılara yapılandırın.
 
@@ -49,7 +49,7 @@ Office 365 için Defender lisansınız olup olmadığına bağlı olarak, güven
 1.  Yüklenen sayfada **Uygulama Al'a** basın.
 1.  Görüntülenen sayfada, sağ üstteki Arama kutusuna **Rapor İletisi** veya **Rapor Kimlik Avı** yazın ve Ara'yı **seçin**.
 1.  Arama sonuçları içinde seçtiğiniz uygulamada **Şimdi al'a** basın (yayımcı **Microsoft Corporation'dır**).
-1.  Açılan açılır öğede eklentinin dağıtılacağı kişiyi seçin. Test etmek istiyorsanız belirli bir grubu kullanmak isteyebilirsiniz, aksi takdirde seçimi yaptığınızda tüm **kuruluş** için yapılandırın **İleri tuşuna** basın.
+1.  Açılan açılır öğede eklentinin dağıtılacağı kişiyi seçin. Test etmek için belirli bir grubu kullanmak isteyebilirsiniz, aksi takdirde seçimi yaptığınızda bunu **tüm kuruluş** için yapılandırın ve **İleri'ye** basın.
 1.  İzinleri, bilgileri ve özellikleri gözden geçirin ve **İleri'ye** basın.
 1.  **Dağıtımı bitir'e** basın (eklentinin Outlook istemcilerinde otomatik olarak görünmesi 12-24 saat sürebilir).
 
@@ -66,7 +66,7 @@ Office 365 için Defender lisansınız olup olmadığına bağlı olarak, güven
 ## <a name="optional-steps--configure-notifications"></a>İsteğe bağlı adımlar – bildirimleri yapılandırma
 
 1.  Önceki adımlarda yer alan yapılandırma sayfasında, **Kullanıcı raporlama deneyiminin** altında, isterseniz pop-up'ların önce ve sonra bildirimi başlığını ve gövdesini yapılandırın. Raporlamadan önce sor seçeneği de etkinse son kullanıcılar **raporlamadan önce** açılan penceresini görür.
-2.  Bildirimlerin kuruluş içindeki bir posta kutusundan gelmesini istiyorsanız, **gönderen olarak kullanılacak Office 365 e-posta adresini belirtin'i** seçin ve bildirimleri göndermek için kuruluşunuzda geçerli bir posta kutusu arayın.
+2.  Bildirimlerin bir iç kuruluş posta kutusundan gelmesini istiyorsanız, **gönderen olarak kullanılacak Office 365 e-posta adresini belirtin'i** seçin ve bildirimleri göndermek için kuruluşunuzda geçerli bir posta kutusu arayın.
 3.  Yönetici Bildirim **İşaretle** & Bildir'i kullanarak bildirilen bir iletiyi gözden geçirdikten sonra raporlama kullanıcılarına gönderilen metni ayarlamak için Bildirimleri özelleştir'e basın, **Kimlik Avı**, **Önemsiz** & **Tehdit bulunamadı** seçeneklerini yapılandırın.
 4.  **Alt Bilgi** sekmesinde, bildirimler için gönderilecek genel alt bilgiyi ve uygunsa kuruluşunuzun logosunu seçin.
 

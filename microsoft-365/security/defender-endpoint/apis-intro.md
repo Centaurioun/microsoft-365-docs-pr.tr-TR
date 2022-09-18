@@ -3,10 +3,9 @@ title: Uç Nokta için Microsoft Defender API’lere erişin
 ms.reviewer: ''
 description: api'leri kullanarak iş akışlarını otomatikleştirmeyi ve Uç Nokta için Microsoft Defender özelliklerine göre yenilik yapmayı öğrenin
 keywords: apis, api, wdatp, open API, uç nokta api için microsoft defender, microsoft defender atp, genel API, desteklenen API'ler, uyarılar, cihaz, kullanıcı, etki alanı, ip, dosya, gelişmiş tehdit avcılığı, sorgu
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.prod: m365-security
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
@@ -17,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: d4e009f321e5990223f6c8cf49c260ee12908bd3
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 6c046c45eb9a25a13ab3d92335490e1abb60d907
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740719"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797304"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Uç Nokta için Microsoft Defender API’lere erişin
 

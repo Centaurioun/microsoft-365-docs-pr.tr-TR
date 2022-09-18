@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 search.appverid: met150
-ms.openlocfilehash: 685e36809809baf3fd45cabf8a160abb22f7d9b0
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 353dad94d14ccfd807a946161d3879815526899d
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740565"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799098"
 ---
 # <a name="check-sensor-health-state-at-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender algılayıcı durumunu denetleme
 
@@ -34,7 +34,7 @@ ms.locfileid: "67740565"
 
 > Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-checksensor-abovefoldlink)
 
-**Algılayıcı sorunları olan cihazlar** kutucuğu Güvenlik İşlemleri panosunda bulunur. Bu kutucuk, tek bir cihazın algılayıcı verileri sağlama ve Uç Nokta için Defender hizmetiyle iletişim kurma özelliği hakkında bilgi sağlar. Kaç cihazın dikkat gerektirdiğini bildirir ve sorunlu cihazları belirlemenize ve bilinen sorunları düzeltmek için işlem yapmanıza yardımcı olur.
+**Algılayıcı sorunları olan cihazlar** kutucuğu, tek bir cihazın algılayıcı verileri sağlama ve Uç Nokta için Defender hizmetiyle iletişim kurma özelliği hakkında bilgi sağlar. Kaç cihazın dikkat gerektirdiğini bildirir ve sorunlu cihazları belirlemenize ve bilinen sorunları düzeltmek için işlem yapmanıza yardımcı olur.
 
 Kutucukta hizmete düzgün raporlama yapmayan cihazların sayısı hakkında bilgi sağlayan iki durum göstergesi vardır:
 

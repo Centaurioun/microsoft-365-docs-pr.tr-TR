@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: bba4c55065dac5409d95729118f47c4808b73c7d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8aafef819574d14871da0ee3199adfc5da6da2d0
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697385"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67798186"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Uç Nokta için Defender'da gelişmiş özellikleri yapılandırma
 
@@ -140,7 +140,6 @@ Güvenlik çözümünüzde ve temel özelliklerinde istenmeyen değişiklikleri 
 
 Azure Active Directory'de depolanan kullanıcı ayrıntılarını görebilmek için bu özelliği açın. Ayrıntılar, kullanıcı hesabı varlıklarını araştırırken kullanıcının resmi, adı, başlığı ve departman bilgilerini içerir. Kullanıcı hesabı bilgilerini aşağıdaki görünümlerde bulabilirsiniz:
 
-- Güvenlik işlemleri panosu
 - Uyarı kuyruğu
 - Cihaz ayrıntıları sayfası
 

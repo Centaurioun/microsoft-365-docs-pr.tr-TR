@@ -2,11 +2,10 @@
 title: Düzeltme eylemlerini görmek için İşlem merkezini ziyaret edin
 description: Otomatik araştırmanın ardından ayrıntıları ve sonuçları görüntülemek için işlem merkezini kullanma
 keywords: eylem, merkez, otomatikleştirme, otomatik, araştırma, yanıt, düzeltme
-ms.service: microsoft-365-security
-ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
@@ -19,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 search.appverid: met150
-ms.openlocfilehash: 0a681c896ea01f98e1fa9cb176bc3e0580b9bf89
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: cc947828d66ffd0e7220ddfddc2a366348b3c289
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67740148"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796752"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Düzeltme eylemlerini görmek için İşlem merkezini ziyaret edin
 

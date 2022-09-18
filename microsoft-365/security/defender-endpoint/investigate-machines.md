@@ -15,12 +15,12 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 6b8529338522df41c25dafb30d25b879a5790861
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 1efbbd350a229fddbcdd70c99efc39f7a8cf9d31
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67709471"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797944"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Uç Nokta için Microsoft Defender Cihazlar listesindeki cihazları araştırma
 
@@ -42,7 +42,6 @@ Etkilenen cihazları portalda her gördüğünüzde tıklayarak ilgili cihaz hak
 
 - [Cihazlar listesi](investigate-machines.md)
 - [Uyarı sırası](alerts-queue.md)
-- [Güvenlik işlemleri panosu](security-operations-dashboard.md)
 - Tek tek uyarılar
 - Tek tek dosya ayrıntıları görünümü
 - Herhangi bir IP adresi veya etki alanı ayrıntıları görünümü

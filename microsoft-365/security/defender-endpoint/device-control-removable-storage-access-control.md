@@ -14,15 +14,15 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 09/09/2022
+ms.date: 09/15/2022
 ms.reviewer: tewchen
 search.appverid: met150
-ms.openlocfilehash: 649797295a4b1adae99315d69ac3fe5490bc398f
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 9a5add52188afcecc4df6a369f65468e79452e95
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710685"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799406"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Uç Nokta için Microsoft Defender Cihaz Denetimi Çıkarılabilir Depolama birimi Access Control
 
@@ -68,8 +68,9 @@ Kötü amaçlı yazılımdan koruma istemcisi sürümü **4.18.2103.3 veya** son
 
 Çıkarılabilir Depolama Birimi Access Control Çıkarılabilir depolama grubu oluşturma ve erişim ilkesi kuralı oluşturma içerir:
 
-   - Çıkarılabilir depolama grubu, grup oluşturmanıza olanak tanır. Örneğin, yetkili USB grubu veya şifrelenmiş USB grubu.
-   - Erişim ilkesi kuralı, her çıkarılabilir depolama grubunu kısıtlamak için ilke oluşturmanıza olanak tanır. Örneğin, yalnızca yetkili kullanıcının Erişim yetkili USB grubu yazmasına izin verin.
+- Çıkarılabilir depolama grubu, grup oluşturmanıza olanak tanır. Örneğin, yetkili USB grubu veya şifrelenmiş USB grubu.
+- Erişim ilkesi kuralı, her çıkarılabilir depolama grubunu kısıtlamak için ilke oluşturmanıza olanak tanır. Örneğin, yalnızca yetkili kullanıcının Erişim yetkili USB grubu yazmasına izin verin.
+- Belirli bir çıkarılabilir depolama sınıfını engellemek ancak belirli bir medyaya izin vermek için '`IncludedIdList` aracılığıyla bir grup `PrimaryId` ve `ExcludedIDList` /etc aracılığıyla`HardwareId``DeviceId`\/ bir grup kullanabilirsiniz.' Ek yönergeler için bkz. [Intune OMA-URI kullanarak Çıkarılabilir Depolama Access Control dağıtma](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri).
 
 Grup ve ilke XML dosyalarını oluştururken kullanabileceğiniz özellikler şunlardır.
 

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 2f5ef49d9b8fd1d558fb0b646295615d9352b915
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 1714469bcfaa35db17f7ad771aa2701d5e66d2d7
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728680"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799120"
 ---
 # <a name="take-response-actions-on-a-device"></a>Cihazda yanıt eylemleri gerçekleştirin
 
@@ -59,7 +59,6 @@ Yanıt eylemleri belirli bir cihaz sayfasının üst kısmında çalışır ve �
 
  Cihaz sayfalarını aşağıdaki görünümlerden herhangi birinden bulabilirsiniz:
 
-- **Güvenlik işlemleri panosu** - Risk altındaki cihazlar kartından bir cihaz adı seçin.
 - **Uyarıları kuyruğu** - Uyarılar kuyruğundan cihaz simgesinin yanındaki cihaz adını seçin.
 - **Cihazlar listesi - Cihaz** listesinden cihaz adının başlığını seçin.
 - **Arama kutusu** - Açılan menüden Cihaz'ı seçin ve cihaz adını girin.

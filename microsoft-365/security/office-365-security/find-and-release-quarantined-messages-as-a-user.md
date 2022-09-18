@@ -21,12 +21,12 @@ description: Kullanıcılar, kendilerine teslim edilmesi gereken Exchange Online
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
-ms.openlocfilehash: 69fa7f15aa95f85d298209d4e24e37ada6868bba
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: eb53982c581dc44a4a8f0b4144803a43dfdc9aa0
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597922"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796950"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Karantinaya alınan iletileri EOP'de kullanıcı olarak bulma ve bırakma
 
@@ -191,7 +191,11 @@ Diğer eylemler simgesine tıkladıktan ![sonra aşağıdaki eylemler kullanıla
 
 - ![Karantinadan kaldır simgesi.](../../media/m365-cc-sc-delete-icon.png) **Karantinadan kaldır**: Görüntülenen uyarıda **Evet'e** tıkladıktan sonra, ileti özgün alıcılara gönderilmeden hemen silinir.
 
-- ![E-posta simgesini indirin.](../../media/m365-cc-sc-download-icon.png) **E-postayı indir**: Görüntülenen açılır menüde **, Bu iletiyi indirmenin risklerini anlıyorum'ı** seçin ve ardından **İndir'e** tıklayarak iletinin yerel bir kopyasını .eml biçiminde kaydedin.
+- ![E-posta simgesini indirin.](../../media/m365-cc-sc-download-icon.png) **E-postayı indirin**: Görüntülenen açılır öğede aşağıdaki ayarları yapılandırın:
+  - **Dosya indirme nedeni**: Açıklayıcı metin girin.
+  - **Parola oluşturma** ve **Parolayı onayla**: İndirilen ileti dosyasını açmak için gereken bir parola girin.
+
+  İşiniz bittiğinde **İndir'e** ve ardından **Bitti'ye** tıklayarak iletinin yerel bir kopyasını kaydedin. .eml ileti dosyası, **İndirilenler** klasörünüzdeki Karantinaya Alınmış Messages.zip adlı sıkıştırılmış bir dosyaya kaydedilir. .zip dosyası zaten varsa, dosya adına bir sayı eklenir (örneğin, Karantinaya Alınan İletiler (1).zip).
 
 - ![Göndereni engelle simgesi.](../../media/m365-cc-sc-block-sender-icon.png) **Göndereni engelle**: Göndereni **posta** kutunuzdaki Engellenen Gönderenler listesine ekleyin. Daha fazla bilgi için bkz [. Posta göndereni engelleme](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 

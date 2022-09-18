@@ -3,6 +3,7 @@ title: Office 365 için Microsoft Defender'ı Microsoft Sentinel'e bağlayın
 description: Office 365 için Microsoft Defender Sentinel'e bağlama adımları. Güvenlik olayı dahil olmak üzere Office 365 için Microsoft Defender verilerinizi (*ve* Microsoft 365 Defender paketinin geri kalanındaki verileri) tek bir cam bölmesi için Microsoft Sentinel'e ekleyin.
 search.product: ''
 ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +16,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 0a19cbb87d78de66e75b701ff64e23a831c2baf7
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 019dd5ff70dae2041955882ed0c63b13f20015cd
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737202"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799318"
 ---
 # <a name="connect-microsoft-defender-for-office-365-to-microsoft-sentinel"></a>Office 365 için Microsoft Defender'ı Microsoft Sentinel'e bağlayın
 
@@ -39,7 +39,7 @@ Diğer Microsoft 365 kaynaklarından alınan verilerle birlikte zengin güvenlik
 - Yeterli izinler (M365'te Güvenlik Yöneticisi & Sentinel'de Okuma/Yazma izinleri).
 
 ## <a name="add-the-microsoft-365-defender-connector"></a>Microsoft 365 Defender Bağlayıcısı'nı ekleme
-1. [Azure Portal'da oturum açın](https://portal.azure.com) ve **Microsoft Sentinel'e** gidin > Microsoft 365 Defender ile birlikte kullanmak için ilgili çalışma alanını seçin
+1. [Azure Portal'da oturum açın](https://portal.azure.com) ve **Microsoft Sentinel'e** gidin > Microsoft 365 Defender ile tümleştirmek için ilgili çalışma alanını seçin
     1. Sol taraftaki gezinti menüsünde **Yapılandırma** > **Veri bağlayıcıları'nı** seçin.
 2. Sayfa yüklendiğinde Microsoft 365 Defender **arayın** **ve Microsoft 365 Defender (önizleme) bağlayıcısını seçin**.
 3. Sağ taraftaki açılır listede **Bağlayıcı Sayfasını Aç'ı** seçin.

@@ -23,12 +23,12 @@ ms.collection:
 - zerotrust-solution
 - highpri
 ms.topic: conceptual
-ms.openlocfilehash: e23324a7d779e2dd59beda8270099f3514d57746
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: 59486fdc30fa512f10126313076fc0be7ff257f5
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67567279"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796796"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Office 365 için Microsoft Defender mimarisi gereksinimlerini ve temel kavramları gözden geçirin
 
@@ -61,14 +61,14 @@ Aşağıdaki tabloda bu çizim açıklanmaktadır.
 
 ## <a name="understand-key-concepts"></a>Temel kavramları anlama
 
-Aşağıdaki tabloda MDO değerlendirilirken, yapılandırılırken ve dağıtılırken anlaşılması gereken önemli kavramlar tanımlanmıştır.
+Aşağıdaki tabloda, Office 365 için Defender değerlendirilirken, yapılandırılırken ve dağıtılırken anlaşılması gereken önemli kavramlar tanımlanmıştır.
 
 |Kavram|Açıklama|Daha fazla bilgi|
 |---|---|---|
-|Exchange Online Protection|Exchange Online Protection (EOP), kuruluşunuzu istenmeyen postalara ve kötü amaçlı yazılım e-postalarına karşı korumaya yardımcı olan bulut tabanlı filtreleme hizmetidir. EOP, Exchange Online içeren tüm Microsoft 365 lisanslarına dahildir.|[Exchange Online Protection’a genel bakış](../office-365-security/exchange-online-protection-overview.md)|
-|Kötü amaçlı yazılımdan koruma|EXO'da posta kutuları olan kuruluşlar kötü amaçlı yazılımlara karşı otomatik olarak korunur.|[EOP'de kötü amaçlı yazılımdan koruma](../office-365-security/anti-malware-protection.md)|
-|İstenmeyen posta önleme koruma|EXO'da posta kutuları olan kuruluşlar, gereksiz posta ve istenmeyen posta ilkelerine karşı otomatik olarak korunur.|[EOP'de istenmeyen posta önleme koruması](../office-365-security/anti-spam-protection.md)|
-|Kimlik avından koruma|MDO, zıpkınla kimlik avı, balina avı, fidye yazılımı ve diğer kötü amaçlı etkinliklerle ilgili daha gelişmiş kimlik avı koruması sunar.|[Office 365 için Microsoft Defender'de ekstra kimlik avı koruması](../office-365-security/anti-phishing-protection.md)|
+|Exchange Online Protection|Exchange Online Protection (EOP), kuruluşunuzun e-postadaki istenmeyen postalara ve kötü amaçlı yazılımlara karşı korunmasına yardımcı olan bulut tabanlı filtreleme hizmetidir. EOP, Exchange Online içeren tüm Microsoft 365 lisanslarına dahildir.|[Exchange Online Protection’a genel bakış](../office-365-security/exchange-online-protection-overview.md)|
+|Kötü amaçlı yazılımdan koruma|posta kutuları Exchange Online olan kuruluşlar kötü amaçlı yazılımlara karşı otomatik olarak korunur.|[EOP'de kötü amaçlı yazılımdan koruma](../office-365-security/anti-malware-protection.md)|
+|İstenmeyen posta önleme koruma|posta kutuları Exchange Online olan kuruluşlar, gereksiz posta ve istenmeyen postalara karşı otomatik olarak korunur.|[EOP'de istenmeyen posta önleme koruması](../office-365-security/anti-spam-protection.md)|
+|Kimlik avından koruma|Office 365 için Defender, zıpkınla kimlik avı, balina avcılığı, fidye yazılımı ve diğer kötü amaçlı etkinliklerle ilgili daha gelişmiş kimlik avı koruması sunar.|[Office 365 için Microsoft Defender'de ekstra kimlik avı koruması](../office-365-security/anti-phishing-protection.md)|
 |Kimlik sahtekarlığına karşı koruma|EOP, kuruluşunuzu sahte (sahte) gönderenlerden korumaya yardımcı olan özellikler içerir.|[EOP'de kimlik sahtekarlığına karşı koruma](../office-365-security/anti-spoofing-protection.md)|
 |Güvenli Ekler|Güvenli Ekler, e-posta iletilerindeki ekleri teslim etmeden önce denetlemek ve "patlatmak" için bir sanal ortam kullanarak ek bir koruma katmanı sağlar.|[Office 365 için Microsoft Defender'da Güvenli Ekler](../office-365-security/safe-attachments.md)|
 |SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler|Ayrıca, SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler, bulut depolama depolarına yüklenmiş dosyalar için ek bir koruma katmanı sunar.|[SharePoint, OneDrive ve Microsoft Teams için Güvenli Ekler](../office-365-security/mdo-for-spo-odb-and-teams.md)|
@@ -78,7 +78,7 @@ Office için Microsoft Defender'da bulunan özellikler hakkında daha ayrıntıl
 
 ## <a name="review-architecture-requirements"></a>Mimari gereksinimleri gözden geçirin
 
-Başarılı bir MDO değerlendirmesi veya üretim pilotu aşağıdaki önkoşulları varsayar:
+Başarılı bir Office 365 için Defender değerlendirmesi veya üretim pilotu aşağıdaki önkoşulları varsayar:
 
 - Tüm alıcı posta kutularınız şu anda Exchange Online.
 - Genel MX kaydınız doğrudan EOP'ye veya bir üçüncü taraf SMTP ağ geçidine çözümlenip gelen dış e-postayı doğrudan EOP'ye aktarır.

@@ -21,12 +21,12 @@ description: Kuruluşunuzdaki kullanıcı ve yönetici etkinliğini görüntüle
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 90a40127dd1a9efbf6334e8207ad35a6e5bd2231
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d2e49138f03e82bfa2ef0130d72161b1de66d567
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628671"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67797470"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Uyumluluk portalında denetim günlüğünde arama yapma
 
@@ -44,7 +44,7 @@ Neden birleşik denetim günlüğü? Çünkü farklı Microsoft 365 hizmetlerind
 | İçerik gezgini|LabelContentExplorer|
 | Veri bağlayıcıları|ComplianceConnector|
 | Veri kaybı önleme (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
-| Dynamics 365|CRM|
+| Dynamics 365|Crm|
 | Ediscovery|Bulma, AeD|
 | Tam Veri Eşleşmesi|MipExactDataMatch|
 | Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated |
@@ -196,7 +196,7 @@ Microsoft 365'te denetim günlüğünde arama yapma işlemi aşağıdadır.
 
 - Geçerli arama ölçütlerini temizlemek için **Temizle'ye** tıklayın. Tarih aralığı, son yedi günün varsayılan değerini döndürür. Tüm seçili etkinlikleri iptal **etmek üzere tüm etkinliklerin sonuçlarını göstermek için Tümünü temizle'ye** de tıklayabilirsiniz.
 
-- 50.000 sonuç bulunursa, büyük olasılıkla arama ölçütlerine uyan 50.000'den fazla olay olduğunu varsayabilirsiniz. Arama ölçütlerini daraltabilir ve daha az sonuç döndürmek için aramayı yeniden çalıştırabilir veya Sonuçları \> **dışarı aktar** **Tüm sonuçları indir'i** seçerek arama sonuçlarının tümünü dışarı aktarabilirsiniz.
+- 50.000 sonuç bulunursa, büyük olasılıkla arama ölçütlerine uyan 50.000'den fazla olay olduğunu varsayabilirsiniz. Arama ölçütlerini daraltabilir ve daha az sonuç döndürmek için aramayı yeniden çalıştırabilir veya **Sonuçları** \> dışarı aktar **Tüm sonuçları indir'i** seçerek 50.000 arama sonucunu dışarı aktarabilirsiniz.
 
 ### <a name="step-2-view-the-search-results"></a>2. Adım: Arama sonuçlarını görüntüleme
 
@@ -627,7 +627,7 @@ Aşağıdaki tabloda, SharePoint Online'daki site yönetimi görevlerinden kayna
 |Etkin belge önizlemesi|PreviewModeEnabledSet|Site yöneticisi bir site için belge önizlemesini etkinleştirir.|
 |Etkin eski iş akışı|LegacyWorkflowEnabledSet|Site yöneticisi veya sahibi, SharePoint 2013 İş Akışı Görevi içerik türünü siteye ekler. Genel yöneticiler, SharePoint yönetim merkezinde kuruluşun tamamı için iş akışlarını da etkinleştirebilir.|
 |İsteğe Bağlı Office etkinleştirildi|OfficeOnDemandSet|Site yöneticisi, kullanıcıların Office masaüstü uygulamalarının en son sürümüne erişmesini sağlayan İsteğe Bağlı Office'i etkinleştirir. İsteğe Bağlı Office, SharePoint yönetim merkezinde etkinleştirilir ve tam yüklü Office uygulamalarını içeren bir Microsoft 365 aboneliği gerektirir.|
-|Kişi Aramaları için etkin sonuç kaynağı|PeopleResultsScopeSet|Site yöneticisi, site için Kişi Aramaları için sonuç kaynağını oluşturur.|
+|Kişiler Aramaları için etkin sonuç kaynağı|PeopleResultsScopeSet|Site yöneticisi, site için Kişiler Aramalar için sonuç kaynağını oluşturur.|
 |Etkin RSS akışları|NewsFeedEnabledSet|Site yöneticisi veya sahibi bir site için RSS akışlarını etkinleştirir. Genel yöneticiler, SharePoint yönetim merkezinde kuruluşun tamamı için RSS akışlarını etkinleştirebilir.|
 |Hub sitesine katılmış site|HubSiteJoined|Site sahibi, sitesini bir hub sitesiyle ilişkilendirir.|
 |Değiştirilen site koleksiyonu kotası|SiteCollectionQuotaModified|Site yöneticisi, site koleksiyonu kotasını değiştirir.|

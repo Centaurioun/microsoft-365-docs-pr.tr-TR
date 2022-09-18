@@ -19,12 +19,12 @@ ms.custom: ''
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS: ''
-ms.openlocfilehash: 462a2009cc52324641435da57c40d143652f68ea
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 0dc389f498587c0895399c2a2f2eee4624e1ee3d
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67643927"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67799011"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender deneyin
 
@@ -284,7 +284,11 @@ Değerlendirme veya denemenizi denetim modunda veya engelleme modunda ayarladık
 
 ## <a name="reports-for-your-evaluation-or-trial-of-defender-for-office-365"></a>Office 365 için Defender değerlendirmeniz veya denemeniz için raporlar
 
-**Denetim modunda** veya **engelleme modunda**, aşağıdaki raporlar Office 365 için Defender göre algılamaları gösterir:
+Bu bölümde, denetim modunda ve engelleme modunda kullanılabilen raporlar açıklanmaktadır.
+
+### <a name="reports-for-blocking-mode"></a>Engelleme modu raporları
+
+**Engelleme modunda**, aşağıdaki raporlar Office 365 için Defender göre algılamaları gösterir:
 
 - [Posta akışı durum raporu için Posta Akışı görünümü](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report):
 
@@ -328,9 +332,16 @@ Değerlendirme veya denemenizi denetim modunda veya engelleme modunda ayarladık
 
   - [URL koruma raporu](view-reports-for-mdo.md#url-protection-report)
 
-### <a name="reports-for-audit-mode-only"></a>Yalnızca denetim modu için raporlar
+### <a name="reports-for-audit-mode"></a>Denetim modu raporları
 
-[Tehdit Gezgini'nde](threat-explorer.md), Office 365 için Defender değerlendirmesi tarafından algılanan iletiler girişin ayrıntılarında aşağıdaki başlığı gösterir:
+**Denetim modunda**, aşağıdaki raporlar Office 365 için Defender göre algılamaları gösterir:
+
+- [Tehdit koruması durum raporu](view-email-security-reports.md#threat-protection-status-report) **Değerlendirmeye sahip: Evet/Hayır**, aşağıdaki görünümlerde filtrelenebilir bir özellik olarak:
+  - [Algılama Teknolojisine göre kimlik avı ve grafik dökümünü Email \> verileri görüntüleme](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+  - [Email Kötü Amaçlı Yazılıma göre verileri \> görüntüleme ve Algılama Teknolojisine göre grafik dökümü](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
+  - [Algılama Teknolojisine göre Email \> İstenmeyen Posta ve Grafik dökümlerine göre verileri görüntüleme](view-email-security-reports.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
+
+- [Tehdit Gezgini](threat-explorer.md)**, Hatalı ek**, **istenmeyen posta url'si + kötü amaçlı yazılım**, **Kimlik avı URL'si** ve Office 365 için Defender değerlendirmesi tarafından algılanan **kimliğe bürünme** iletileri için **Analiz** sekmesindeki ileti algılama ayrıntılarında aşağıdaki başlığı girdinin ayrıntılarında gösterir:
 
   ![İletideki bildirim başlığı, Office 365 için Defender değerlendirmesinin kötü amaçlı bir e-posta iletisi algıladığını gösterir.](../../media/evalv2-detection-banner.png)
 

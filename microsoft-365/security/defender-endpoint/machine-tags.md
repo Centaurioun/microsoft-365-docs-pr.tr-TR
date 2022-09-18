@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: cd5fcbf5142926da0d3bef2753b08a560414ab44
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1e1317826b208411536dcf79d71a29b3ae514aea
+ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683153"
+ms.lasthandoff: 09/18/2022
+ms.locfileid: "67796881"
 ---
 # <a name="create-and-manage-device-tags"></a>Cihaz etiketlerini oluşturun ve yönetin
 
@@ -48,7 +48,6 @@ API kullanarak cihaz etiketleri eklemek için bkz. [Cihaz etiketleri API'si ekle
 
 1. Etiketleri yönetmek istediğiniz cihazı seçin. Aşağıdaki görünümlerden herhangi birinden bir cihaz seçebilir veya arayabilirsiniz:
 
-   - **Güvenlik işlemleri panosu** - Etkin uyarıları olan en iyi cihazlar bölümünden cihaz adını seçin.
    - **Uyarıları kuyruğu** - Uyarılar kuyruğundan cihaz simgesinin yanındaki cihaz adını seçin.
    - **Cihaz envanteri - Cihaz** listesinden cihaz adını seçin.
    - **Arama kutusu** - Açılan menüden Cihaz'ı seçin ve cihaz adını girin.

@@ -406,7 +406,6 @@
 ## [Tehditleri araştırın ve karşı yanıt verin]()
 ### [Uç nokta algılama ve yanıt]()
 #### [Uç nokta algılamaya ve yanıta genel bakış](overview-endpoint-detection-response.md)
-#### [Güvenlik işlemleri panosu](security-operations-dashboard.md)
 #### [Dosyaları gönder](admin-submissions-mde.md)
 #### [Olay sırası]()
 ##### [Olay sırasını görüntüleyin ve düzenleyin](view-incidents-queue.md)
