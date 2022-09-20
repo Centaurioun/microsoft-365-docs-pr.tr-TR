@@ -2,8 +2,8 @@
 title: eBulma'da bulut eklerini toplama (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: 06/03/2022
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview eKeşif (Premium) içindeki koleksiyonları kullanarak bir araştırmada veya olayda gözden geçirmek üzere bulut eklerini toplayın.
-ms.openlocfilehash: e59b4720613572763b300517c0b603493ab5a9de
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3fcd45932b4caf778380fde5ed43e2dab5d05c02
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636953"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825048"
 ---
 # <a name="collect-cloud-attachments-in-microsoft-purview-ediscovery-premium"></a>Microsoft Purview eKeşif'da bulut eklerini toplama (Premium)
 

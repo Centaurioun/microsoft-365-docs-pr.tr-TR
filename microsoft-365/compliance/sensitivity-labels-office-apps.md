@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7bb760eb29f54554f58efedaa54ab9ca1cadf312
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b8090ff49a8371b4ad264030f9ebb845bf23e690
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696671"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67817850"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -78,6 +78,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Eğitilebilir sınıflandırıcıları kullanma                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | İnceleme altında | İnceleme altında | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Etiketlenmiş ve şifrelenmiş belgeler için [birlikte yazma ve Otomatik Kaydetme](sensitivity-labels-coauthoring.md) desteği | Güncel Kanal: 2107+ <br /><br> Aylık Kurumsal Kanal: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[PDF desteği](#pdf-support)| Güncel Kanal: 2208+ <br /><br> Aylık Kurumsal Kanal: 2208+ <br /><br> Semi-Annual Enterprise Channel: İnceleme altında|  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
+|[Duyarlılık çubuğu](#sensitivity-bar) ve [görüntü etiketi rengi](#label-colors) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım |  Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım | İnceleme altında | İnceleme altında | İnceleme altında |
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook'ta duyarlılık etiketi özellikleri
 
@@ -105,6 +106,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 |[Varsayılan etiket ve zorunlu etiketleme için farklı ayarlar](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Evet |
 |[PDF desteği](#pdf-support) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım|  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
 |[S/MIME koruması uygulama](#configure-a-label-to-apply-smime-protection-in-outlook) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım | Kullanıma sunulacak: 16.61+ <sup>\*</sup>                   | Kullanıma sunulacak: 4.2226+ | Kullanıma sunulacak: 4.2203+ | İnceleme altında |
+|[Duyarlılık çubuğu](#sensitivity-bar) ve [görüntü etiketi rengi](#label-colors) | İnceleme altında |  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
 
 **Dipnot:**
 
@@ -390,7 +392,7 @@ Outlook uygulaması zorunlu etiketlemeyi kapatmayı desteklemediğinde: **Kullan
 > 
 > Bir etiketi S/MIME koruması uygulamak için yapılandırıyorsanız ancak Outlook uygulaması henüz bunu desteklemiyorsa, etiket Outlook'ta görüntülenmeye devam eder ve uygulanabilir, ancak S/MIME ayarları yoksayılır. Exchange otomatik etiketleme ilkeleri için bu etiketi seçemezsiniz.
 
-Bu yapılandırma Microsoft Purview uyumluluk merkezinde kullanılamaz. Office 365 [Güvenlik & Uyumluluk Merkezi PowerShell'e bağlandıktan sonra PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) gelişmiş ayarlarını [Etiket Ayarla](/powershell/module/exchange/set-label) veya [Yeni Etiket](/powershell/module/exchange/new-label) cmd ile kullanmanız gerekir.
+Bu yapılandırma Microsoft Purview uyumluluk portalı kullanılamaz. Office 365 [Güvenlik & Uyumluluk Merkezi PowerShell'e bağlandıktan sonra PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) gelişmiş ayarlarını [Etiket Ayarla](/powershell/module/exchange/set-label) veya [Yeni Etiket](/powershell/module/exchange/new-label) cmd ile kullanmanız gerekir.
 
 Bu ayarları yalnızca çalışan bir [S/MIME dağıtımınız](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) varsa ve etiketin [Azure Information Protection Rights Management şifrelemesini kullanan varsayılan koruma](encryption-sensitivity-labels.md) yerine e-postalar için bu koruma yöntemini otomatik olarak uygulamasını istiyorsanız kullanın. Sonuçta elde edilen koruma, kullanıcının Outlook'tan S/MIME seçeneklerini el ile seçmesi ile aynı olacaktır.
 
@@ -447,6 +449,53 @@ Bu özellik hakkında daha fazla bilgi için Bkz. [Office uygulamalarıyla oluş
 
 Son kullanıcı belgeleri için bkz. [Office dosyalarından korumalı PDF'ler oluşturma](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4).
 
+## <a name="sensitivity-bar"></a>Duyarlılık çubuğu
+
+Word, Excel ve PowerPoint'te yerleşik etiketler için önizlemede yeni desteklenir, ancak henüz Outlook veya Web için Office için desteklenmez, en düşük sürümleri belirlemek için bu sayfadaki [özellikler](#support-for-sensitivity-label-capabilities-in-apps) bölümündeki tablolara bakın.
+
+Desteklenen uygulamalar için duyarlılık etiketleri artık bir duyarlılık çubuğunda görüntülenir ve üst pencere çubuğunda dosya adının yanında görüntülenir.  Örneğin:
+
+![Pencere başlık çubuğunda duyarlılık etiketleri.](../media/sensitivity-bar-example.png)
+
+Etiketler ve etiket seçme veya değiştirme özelliği hakkındaki bilgiler, kaydetme ve yeniden adlandırma, dışarı aktarma, paylaşma, yazdırma ve [PDF'ye dönüştürme](#pdf-support) gibi kullanıcı iş akışlarıyla tümleştirilir.
+
+Bu yüksek görünürlüğün bir parçası olarak, bu etiketler renkleri de destekler. Daha fazla bilgi için sonraki bölüme bakın.
+
+### <a name="label-colors"></a>Etiket renkleri
+
+> [!IMPORTANT]
+> Etiketleme uygulamalarınız bu özelliği desteklemiyorsa, yapılandırılan etiket renklerini görüntülemez.
+> 
+> Azure Information Protection birleşik etiketleme istemcisi etiket renklerini destekler. Office'te yerleşik etiketleme için, etiket renkleri şu anda Windows ve macOS üzerinde Word, Excel ve PowerPoint için önizlemede desteklenir ancak Outlook veya Web için Office için desteklenmez. Daha fazla bilgi için bu sayfadaki [özellikler](#support-for-sensitivity-label-capabilities-in-apps) bölümündeki tablolara bakın.
+
+Yeni oluşturulan etiketlerin varsayılan olarak bir rengi yoktur. Etiketleriniz [Azure Information Protection'dan geçirildiyse](/azure/information-protection/configure-policy-migrate-labels) veya Azure Information Protection birleşik etiketleme istemcisi için etiket renkleri yapılandırdıysanız, bu etiket renkleri artık bunları destekleyen uygulamalarda görüntülenir.
+
+Duyarlılık etiketleri için 10 standart renkten birini seçmek için Microsoft Purview uyumluluk portalı kullanın. Bu yapılandırma, etiket adı ve açıklamasından sonra etiket yapılandırmasının ilk sayfasındadır.
+
+Alt etiketler için renkleri seçemezsiniz çünkü bunlar etiket rengini üst etiketlerinden otomatik olarak devralır.
+
+Etiket 10 renkten birinden farklı bir renk için yapılandırılmışsa **, Özel renk** seçeneğinin seçili olduğunu ve standart renk seçeneklerinin kullanılabilir olmadığını görürsünüz:
+
+![Etiket özel bir renge sahip olduğunda duyarlılık etiketi renk yapılandırması.](../media/label-custom-color-configuration.png)
+
+Önce özel renk seçimini kaldırıp ardından standart renklerden birini seçerek özel rengi standart renklerden biriyle değiştirebilirsiniz. Ancak uyumluluk portalını kullanarak farklı bir özel renk yapılandıramazsınız. Bunun yerine, sonraki bölümde açıklandığı gibi PowerShell kullanın.
+
+#### <a name="configuring-custom-colors-by-using-powershell"></a>PowerShell kullanarak özel renkleri yapılandırma 
+
+Duyarlılık etiketi için renk ayarlamak için [Güvenlik & Uyumluluk Merkezi PowerShell](/powershell/exchange/scc-powershell) gelişmiş ayar **rengini** kullanabilirsiniz. Bu yapılandırma, Microsoft Purview uyumluluk portalı yapılandıramazsınız renkleri destekler.
+
+Renk seçiminizi belirtmek için rengin kırmızı, yeşil ve mavi (RGB) bileşenleri için onaltılık üçlü kod kullanın. Örneğin #40e0d0 turkuaz için RGB onaltılık değeridir.
+
+Bu kodlar hakkında daha fazla bilgi için MSDN web belgelerindeki sayfaya bakın [\<color>](https://developer.mozilla.org/docs/Web/CSS/color_value) ve [RapidTable'ları](https://www.rapidtables.com/web/color/RGB_Color.html) da yararlı bulabilirsiniz. Bu kodları, resimleri düzenlemenize olanak sağlayan birçok uygulamada tanımlayabilirsiniz. Örneğin, Microsoft Paint bir paletten özel bir renk seçmenize olanak tanır ve RGB değerleri otomatik olarak görüntülenir ve bunu daha sonra kopyalayabilirsiniz.
+
+Duyarlılık etiketi **GUID'sinin 8faca7b8-8d20-48a3-8ea2-0f96310a848e** olduğu örnek PowerShell komutu
+
+```PowerShell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{color="#40e0d0"}
+```
+
+Duyarlılık etiketleri için PowerShell gelişmiş ayarlarını belirtmenize yardımcı olacak daha fazla bilgi için bkz. [Gelişmiş ayarları belirtmek için PowerShell ipuçları](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
+
 ## <a name="auditing-labeling-activities"></a>Etiketleme etkinliklerini denetleme
 
 Duyarlılık etiketi etkinlikleri tarafından oluşturulan denetim olayları hakkında bilgi için, [Microsoft Purview uyumluluk portalı denetim günlüğünde arama](search-the-audit-log-in-security-and-compliance.md) bölümündeki [Duyarlılık etiketi etkinlikleri](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) bölümüne bakın.
@@ -458,7 +507,7 @@ Ayrıca [, denetim günlüğü kayıtlarını dışarı aktarıp yapılandırır
 > [!TIP]
 > Özel raporlar oluşturmaya yardımcı olmak için aşağıdaki blog gönderilerine bakın:
 > - [O365 Yönetim API'si aracılığıyla Microsoft Purview denetim günlüğü etkinlikleri - 1. Bölüm](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957171)
-> - [O365 Yönetim API'si aracılığıyla Microsoft Purview denetim günlüğü etkinlikleri - 2. Bölüm](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297)
+> - [O365 Yönetim API'si aracılığıyla Microsoft Purview denetim günlüğü etkinlikleri - 2. Bölüm](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297) 
 
 ## <a name="end-user-documentation"></a>Son kullanıcı belgeleri
 

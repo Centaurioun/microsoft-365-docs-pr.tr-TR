@@ -2,8 +2,8 @@
 title: Microsoft 365'te Cisco Jabber verilerini arşivleme bağlayıcısı ayarlama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Microsoft 365'te Cisco Jabber verilerini içeri aktarmak ve arşivleme amacıyla 17a-4 Cisco Jabber DataParser bağlayıcısını ayarlamayı ve kullanmayı öğrenin.
-ms.openlocfilehash: 2a6b5b45856de6823c53d5783ffac3532eebbfa5
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c8020ca9d9138e677b3d5133ec7f742792942e8b
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626985"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67817785"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>Cisco Jabber verilerini arşivleme amacıyla bağlayıcı ayarlama
 
@@ -37,7 +37,7 @@ Aşağıdaki genel bakışta, Microsoft 365'te Cisco Jabber verilerini arşivlem
 
 3. Microsoft Purview uyumluluk portalı oluşturduğunuz Cisco Jabber DataParser bağlayıcısı DataParser'a bağlanır ve iletileri Microsoft bulutunda güvenli bir Azure Depolama konumuna aktarır.
 
-4. Kullanıcı posta kutularında Gelen Kutusu klasöründe **Cisco Jabber DataParser** adlı bir alt klasör oluşturulur ve Cisco Jabber öğeleri bu klasöre aktarılır. Bağlayıcı, *E-posta* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her Cisco Jabber öğesi, her katılımcının e-posta adresiyle doldurulan bu özelliği içerir.
+4. Kullanıcı posta kutularında Gelen Kutusu klasöründe **Cisco Jabber DataParser** adlı bir alt klasör oluşturulur ve Cisco Jabber öğeleri bu klasöre aktarılır. Bağlayıcı, *Email* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her Cisco Jabber öğesi, her katılımcının e-posta adresiyle doldurulan bu özelliği içerir.
 
 ## <a name="before-you-set-up-a-connector"></a>Bağlayıcıyı ayarlamadan önce
 

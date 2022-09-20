@@ -2,8 +2,8 @@
 title: Facebook verilerini arşivleyemek için bağlayıcı ayarlama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/15/2022
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Facebook İş sayfalarından Microsoft 365'e & arşiv verilerini içeri aktarmak için Microsoft Purview uyumluluk portalı bağlayıcıyı ayarlamayı & kullanmayı öğrenin.
-ms.openlocfilehash: 79238bbbdcea71cf83342894d3b61e8047f5897a
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 675c4bcb427584be0afe6aa93642ac01d796d7cf
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822889"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67823661"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Facebook verilerini arşivleme (önizleme) için bağlayıcı ayarlama
 

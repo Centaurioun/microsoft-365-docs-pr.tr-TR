@@ -2,8 +2,8 @@
 title: Tek öğede hata düzeltme
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Toplu hata düzeltme işlemini izlemek zorunda kalmadan eBulma (Premium) içindeki bir gözden geçirme kümesindeki bir belgedeki işleme hatasını düzeltebilirsiniz.
-ms.openlocfilehash: cb1b7248ff02a4aafce529b764efdf7408a05386
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c4eba98581bb91fdb9c6cc414e9966380847571c
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622183"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67823969"
 ---
 # <a name="single-item-error-remediation-in-ediscovery-premium"></a>eBulma'da tek öğe hatası düzeltmesi (Premium)
 

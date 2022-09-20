@@ -68,7 +68,7 @@ Kimlik | Kategori | ER | Adresler | Bağlantı Noktaları
 67 | Varsayılan<BR>İsteğe bağlı<BR>**Notlar:** Güvenlik ve Uyumluluk Merkezi eKeşif dışarı aktarma | Hayır | `*.blob.core.windows.net` | **TCP:** 443
 68 | Varsayılan<BR>İsteğe bağlı<BR>**Notlar:** Portal ve paylaşım: 3. taraf Office tümleştirmesi. (CDNler dahil) | Hayır | `firstpartyapps.oaspapps.com, prod.firstpartyapps.oaspapps.com.akadns.net, telemetryservice.firstpartyapps.oaspapps.com, wus-firstpartyapps.oaspapps.com` | **TCP:** 443
 69 | Varsayılan<BR>Gerekli | Hayır | `*.aria.microsoft.com, *.events.data.microsoft.com` | **TCP:** 443
-70 | Varsayılan<BR>Gerekli | Hayır | `*.o365weve.com, amp.azure.net, appsforoffice.microsoft.com, assets.onestore.ms, auth.gfx.ms, c1.microsoft.com, dgps.support.microsoft.com, docs.microsoft.com, msdn.microsoft.com, platform.linkedin.com, prod.msocdn.com, shellprod.msocdn.com, support.microsoft.com, technet.microsoft.com` | **TCP:** 443
+70 | Varsayılan<BR>Gerekli | Hayır | `*.o365weve.com, amp.azure.net, appsforoffice.microsoft.com, assets.onestore.ms, auth.gfx.ms, c1.microsoft.com, dgps.support.microsoft.com, learn.microsoft.com, msdn.microsoft.com, platform.linkedin.com, prod.msocdn.com, shellprod.msocdn.com, support.microsoft.com, technet.microsoft.com` | **TCP:** 443
 71 | Varsayılan<BR>Gerekli | Hayır | `*.office365.com` | **TCP:** 443, 80
 72 | Varsayılan<BR>İsteğe bağlı<BR>**Notlar:** Azure Hak Yönetimi (RMS) ile Office 2010 İstemcileri. | Hayır | `*.cloudapp.net` | **TCP:** 443
 73 | Varsayılan<BR>Gerekli | Hayır | `*.aadrm.com, *.azurerms.com, *.informationprotection.azure.com, ecn.dev.virtualearth.net, informationprotection.hosting.portal.azure.net` | **TCP:** 443

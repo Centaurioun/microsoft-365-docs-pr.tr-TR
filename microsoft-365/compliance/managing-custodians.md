@@ -2,8 +2,8 @@
 title: eBulma'da koruyucularla çalışma (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -18,14 +18,14 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Yasal bir davaya ilişkin verileri yönetmek için eBulma'da (Premium) koruyucu yönetim aracını kullanmayı öğrenin.
-ms.openlocfilehash: e52dc21b084916f2cec2f3a638dfba0def8ca589
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fedd968cdb8a1926e3cf3c1ea747a021c018c32f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622469"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67824101"
 ---
-# <a name="work-with-custodians-and-non-custodial-data-sources-in-ediscovery-premium"></a>eKeşif'te koruyucular ve gözetimsiz veri kaynaklarıyla çalışma (Premium)
+# <a name="work-with-custodians-and-non-custodial-data-sources-in-ediscovery-premium"></a>eKeşif (Premium) içerisinde yedieminler ve velayet dışı veri kaynaklarıyla çalışma
 
 Bir kuruluş yasal bir araştırmaya yanıt verdiği zaman, ilgili olabilecek içeriği tanımlama, koruma ve toplama iş akışı, kuruluştaki ilgili verilerin koruyucuları olan kişileri temel alır. eBulma'da, bu *kişilere veri koruyucusu* (veya yalnızca *koruyucu*) denir ve "bir belge veya elektronik dosyanın yönetim denetimine sahip kişiler" olarak tanımlanır. Örneğin, bir e-posta iletisinin koruyucusunun ilgili iletiyi içeren posta kutusunun sahibi olması gerekir.
 

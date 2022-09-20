@@ -2,8 +2,8 @@
 title: Şirket içi kullanıcılar için Teams sohbet verilerini arama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Yöneticiler, Exchange karma dağıtımındaki şirket içi kullanıcılar için Teams sohbet verilerini aramak ve dışarı aktarmak için Microsoft 365'teki eBulma araçlarını kullanabilir.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16551341f6eb9f20a1f8c99cfda5d376482c44df
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 644b4c7d4cd3affbc5ab1bfebffcf6c34786fe28
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640510"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67817146"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Şirket içi kullanıcılar için Teams sohbet verilerini arama
 

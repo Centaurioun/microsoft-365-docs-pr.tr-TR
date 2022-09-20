@@ -2,8 +2,8 @@
 title: Bekletme bildirimlerini yönetme
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Yasal tutma bildirimlerinizin durumunu izlemek ve gerekirse bunları güncelleştirip yeniden göndermek için eBulma (Premium) içindeki iletişim iş akışını kullanın.
-ms.openlocfilehash: 161628061d27c17e9e606cb7f88fbbe52d22be8f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1d424b903eeadb76f78649bbbbe3364a8ba25716
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632255"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67818137"
 ---
 # <a name="manage-hold-notifications"></a>Bekletme bildirimlerini yönetme
 

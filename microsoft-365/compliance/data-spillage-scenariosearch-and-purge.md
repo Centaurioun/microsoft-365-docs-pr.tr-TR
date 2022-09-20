@@ -2,8 +2,8 @@
 title: eBulma çözüm serisi Veri taşması senaryosu - Arama ve temizleme
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: how-to
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Kuruluşunuzdaki bir veri sızıntısı olayını yönetmek ve yanıtlamak için eBulma ve arama araçlarını kullanın.
-ms.openlocfilehash: b65d6057921d310c3e22e5494218271c7693c162
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 91fc68016e8d62b0b7172dd78f6ed9512545c527
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630201"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67824233"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eBulma çözüm serisi: Veri taşması senaryosu - Arama ve temizleme
 
@@ -91,7 +91,7 @@ Gözden geçirebileceğiniz posta kutusu başına 1.000'den fazla posta kutunuz 
 
 Dökülen veriler içeren bir e-posta iletisi bulduğunuzda, iletinin alıcılarını denetledikten sonra iletinin dışarıdan paylaşılıp paylaşılmadığını belirleyin. İletiyi daha fazla izlemek için, ileti izleme günlüklerini kullanabilmeniz için gönderen bilgilerini ve tarih aralıklarını toplayabilirsiniz. Bu işlem [5. Adım'da](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared) açıklanmıştır.
 
-Arama sonuçlarını doğruladıktan sonra, bulgularınızı ikincil bir inceleme için başkalarıyla paylaşmak isteyebilirsiniz. 1. Adımda servis talebine atadığınız kişiler hem eBulma hem de Microsoft Purview eKeşif (Premium) içindeki servis talebi içeriğini gözden geçirebilir ve olay bulgularını onaylayabilir. Gerçek içeriği dışarı aktarmadan da rapor oluşturabilirsiniz. Bu raporu, [8. Adım'da](#step-8-verify-provide-a-proof-of-deletion-and-audit) açıklanan silme kanıtı olarak da kullanabilirsiniz.
+Arama sonuçlarını doğruladıktan sonra, bulgularınızı ikincil bir inceleme için başkalarıyla paylaşmak isteyebilirsiniz. 1. Adımda servis talebine atadığınız Kişiler, hem eBulma hem de Microsoft Purview eKeşif (Premium) içindeki servis talebi içeriğini gözden geçirebilir ve olay bulgularını onaylayabilir. Gerçek içeriği dışarı aktarmadan da rapor oluşturabilirsiniz. Bu raporu, [8. Adım'da](#step-8-verify-provide-a-proof-of-deletion-and-audit) açıklanan silme kanıtı olarak da kullanabilirsiniz.
   
  **İstatistiksel rapor oluşturmak için:**
   
@@ -183,7 +183,7 @@ Taşan verileri silerken aşağıdaki sınırları göz önünde bulundurun:
 - Posta kutusu başına bir kerede en fazla 10 öğe kaldırılabilir. İletileri arama ve kaldırma özelliği bir olay yanıtı aracı olması amaçlandığından, bu sınır iletilerin posta kutularından hızla kaldırılmasına yardımcı olur. Bu özellik, kullanıcı posta kutularını temizlemeye yönelik değildir.
 
 > [!IMPORTANT]
-> eBulma (Premium) durumundaki bir gözden geçirme kümesindeki e-posta öğeleri bu makaledeki yordamlar kullanılarak silinemez. Bunun nedeni, bir gözden geçirme kümesindeki öğelerin canlı hizmetteki bir Azure Depolama konumunda kopyalanıp depolanan kopyaları olmasıdır. Bu, 3. Adımda oluşturduğunuz bir içerik araması tarafından döndürülmeyecekleri anlamına gelir. Gözden geçirme kümesindeki öğeleri silmek için, gözden geçirme kümesini içeren eBulma (Premium) servis talebini silmeniz gerekir. Daha fazla bilgi için bkz. [eBulma (Premium) servis talebini kapatma veya silme](close-or-delete-case.md).
+> eBulma (Premium) durumundaki bir gözden geçirme kümesindeki Email öğeler bu makaledeki yordamlar kullanılarak silinemez. Bunun nedeni, bir gözden geçirme kümesindeki öğelerin canlı hizmetteki bir Azure Depolama konumunda kopyalanıp depolanan kopyaları olmasıdır. Bu, 3. Adımda oluşturduğunuz bir içerik araması tarafından döndürülmeyecekleri anlamına gelir. Gözden geçirme kümesindeki öğeleri silmek için, gözden geçirme kümesini içeren eBulma (Premium) servis talebini silmeniz gerekir. Daha fazla bilgi için bkz. [eBulma (Premium) servis talebini kapatma veya silme](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>8. Adım: Doğrulama, silme kanıtı sağlama ve denetim
 

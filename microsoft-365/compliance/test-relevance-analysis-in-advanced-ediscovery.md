@@ -2,8 +2,8 @@
 title: eBulma'da İlgi Analizini Test Et (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
 ms.date: ''
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: Genel işleme kalitesini test etmek, karşılaştırmak ve doğrulamak için eBulma'da (Premium) Batch hesaplamasının ardından Test sekmesini kullanmayı öğrenin.
-ms.openlocfilehash: 5c1fabf677dd305fb91d77e94af0e18304280d45
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 64f2e077b1a15bec1eeabbe6dac3f752be1e25ec
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637053"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819127"
 ---
 # <a name="test-relevance-analysis-in-ediscovery-premium"></a>eBulma'da İlgi Analizini Test Et (Premium)
   

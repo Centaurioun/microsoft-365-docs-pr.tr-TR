@@ -2,8 +2,8 @@
 title: Microsoft 365'te BlackBerry verilerini arşivleye bağlayıcı ayarlama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Microsoft 365'te BlackBerry verilerini içeri aktarmak ve arşivlemek için 17a-4 BlackBerry DataParser bağlayıcısı ayarlamayı ve kullanmayı öğrenin.
-ms.openlocfilehash: 9736ee81c5fc01a4e2e47d5c57585bee7533165d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7f26f0ffdba349a7fa767c831a90b205157813c5
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640236"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67823815"
 ---
 # <a name="set-up-a-connector-to-archive-blackberry-data"></a>BlackBerry verilerini arşivleye bağlayıcı ayarlama
 
@@ -37,7 +37,7 @@ Aşağıdaki genel bakış, Microsoft 365'te BlackBerry verilerini arşivlerken 
 
 3. Microsoft Purview uyumluluk portalı oluşturduğunuz BlackBerry DataParser bağlayıcısı DataParser'a bağlanır ve iletileri Microsoft bulutunda güvenli bir Azure Depolama konumuna aktarır.
 
-4. Kullanıcı posta kutularında **BlackBerry DataParser** adlı Gelen Kutusu klasöründe bir alt klasör oluşturulur ve BlackBerry öğeleri bu klasöre aktarılır. Bağlayıcı, *E-posta* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her BlackBerry öğesi, her katılımcının e-posta adresiyle doldurulmuş olan bu özelliği içerir.
+4. Kullanıcı posta kutularında **BlackBerry DataParser** adlı Gelen Kutusu klasöründe bir alt klasör oluşturulur ve BlackBerry öğeleri bu klasöre aktarılır. Bağlayıcı, *Email* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her BlackBerry öğesi, her katılımcının e-posta adresiyle doldurulmuş olan bu özelliği içerir.
 
 ## <a name="before-you-set-up-a-connector"></a>Bağlayıcıyı ayarlamadan önce
 

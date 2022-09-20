@@ -2,8 +2,8 @@
 title: Microsoft 365'te Skype Kurumsal Sunucu verileri arşivleye bir bağlayıcı ayarlama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Microsoft 365'te Skype Kurumsal Sunucu verilerini içeri aktarmak ve arşivlemek için 17a-4 Skype Kurumsal Sunucu DataParser bağlayıcısı ayarlamayı ve kullanmayı öğrenin.
-ms.openlocfilehash: 9b503ea1305e7997d6a66ace0a402a9557d0cc31
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 72392b6dc3999ad2d76ec341b311cb5ec8ba5d1c
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639324"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67824586"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-server-data"></a>Skype Kurumsal Sunucu verilerini arşivleye bağlayıcı ayarlama
 
@@ -37,7 +37,7 @@ Aşağıdaki genel bakış, Microsoft 365'te Skype Kurumsal Sunucu verileri arş
 
 3. Microsoft Purview uyumluluk portalı oluşturduğunuz Skype Kurumsal Sunucu DataParser bağlayıcısı DataParser'a bağlanır ve iletileri Microsoft bulutunda güvenli bir Azure Depolama konumuna aktarır.
 
-4. Kullanıcı posta kutularında **Skype Kurumsal Sunucu DataParser** adlı Gelen Kutusu klasöründe bir alt klasör oluşturulur ve Skype Kurumsal Sunucu öğeleri bu klasöre aktarılır. Bağlayıcı, *E-posta* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her Skype Kurumsal Sunucu öğesi, her katılımcının e-posta adresiyle doldurulan bu özelliği içerir.
+4. Kullanıcı posta kutularında **Skype Kurumsal Sunucu DataParser** adlı Gelen Kutusu klasöründe bir alt klasör oluşturulur ve Skype Kurumsal Sunucu öğeleri bu klasöre aktarılır. Bağlayıcı, *Email* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her Skype Kurumsal Sunucu öğesi, her katılımcının e-posta adresiyle doldurulan bu özelliği içerir.
 
 ## <a name="before-you-set-up-a-connector"></a>Bağlayıcıyı ayarlamadan önce
 

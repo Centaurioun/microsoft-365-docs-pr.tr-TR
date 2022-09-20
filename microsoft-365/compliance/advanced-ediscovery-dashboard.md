@@ -2,8 +2,8 @@
 title: Gözden geçirme kümeleri için eBulma (Premium) panosu
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/05/2022
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Gözden geçirme stratejinizi geliştirmenize yardımcı olacak eğilimleri veya önemli istatistikleri belirlemek üzere corpus'unuzu hızla analiz etmek üzere gözden geçirme kümeleri için Microsoft Purview eKeşif (Premium) panosunu kullanın.
-ms.openlocfilehash: 225cc0d732023322b87e0e04c2cca1455fb0ff87
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5d69f6caceba661546e98c5dd4dd0d52470fe9e8
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629067"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67824916"
 ---
 # <a name="ediscovery-premium-dashboard-for-review-sets"></a>Gözden geçirme kümeleri için eBulma (Premium) panosu
 

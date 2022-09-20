@@ -2,8 +2,8 @@
 title: gözden geçirme kümesindeki içeriği sorgulama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: bir Microsoft Purview eKeşif (Premium) durumunda daha verimli bir gözden geçirme için içeriği düzenlemek üzere bir gözden geçirme kümesinde sorgu oluşturmayı ve çalıştırmayı öğrenin.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b40ab6818b4063a0b160ab9a41fdded6f7e7d37e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 707d6c31567ea7179b0e055abf1108ee4777a7ef
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623771"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819237"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>Bir inceleme setindeki içeriği sorgulama ve filtreleme
 

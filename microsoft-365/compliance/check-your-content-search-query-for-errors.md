@@ -2,8 +2,8 @@
 title: Arama sorgunuzda hata olup olmadığını kontrol etme
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
 description: Aramayı çalıştırmadan önce eBulma aramaları için anahtar sözcük sorgunuzdaki hataları ve yazım hatalarını algılamayı öğrenin.
-ms.openlocfilehash: 477017c14807be7d17496e9f418cf22ba6137563
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 3bd71826e3c8036bca1e04064ef4f9df19644985
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638774"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67818555"
 ---
 # <a name="check-your-search-query-for-errors"></a>Arama sorgunuzda hata olup olmadığını kontrol etme
   

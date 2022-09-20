@@ -2,8 +2,8 @@
 title: Epic EHR verilerini içeri aktarmak için bağlayıcı ayarlama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/15/2022
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Yöneticiler, elektronik sağlık kayıtlarını (EHR) kuruluşunuzun Epic sisteminden Microsoft 365'e aktarmak için bir veri bağlayıcısı ayarlayabilir. Bu, çalışanlarınız tarafından hasta verilerine yetkisiz erişim etkinliğini algılamanıza yardımcı olmak için iç risk yönetimi ilkelerinde Epic EHR verilerini kullanmanıza olanak tanır.
-ms.openlocfilehash: 6ff5719e61e754ba907daef36bb927cb2ad71d50
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: daba1466704c14d91568f58dd63657ad4d327159
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071601"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822693"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Epic EHR denetim verilerini içeri aktarmak için bağlayıcı ayarlama (önizleme)
 
@@ -73,7 +73,7 @@ Aşağıdaki tabloda, insider risk yönetimi senaryolarını etkinleştirmek iç
 | ACCESS_LOG. *<br/>ACCESS_LOG_METRIC ACCESS_TIME. METRIC_NAME*<br/>ACCESS_LOG. WORKSTATION_ID<br/>ZC\_ÖLÇÜM\_GROUP.NAME<br/>ZC\_ACCESS\_ACTION.NAME |Bu alanlar, Epic EHR sisteminizdeki erişim etkinliği olaylarını tanımlamak için kullanılır.|
 | HASTA. PAT_MRN_ID<br/>HASTA. PAT_FIRST_NAME* <br/>HASTA. PAT_MIDDLE_NAME <br/>HASTA. PAT_LAST_NAME* <br/>HASTA. ADD_LINE_1* <br/>HASTA. ADD_LINE_2  <br/>HASTA. ŞEHİr* <br/>PATIENT.ZIP*  <br/>ZC_STATE.NAME <br/>ZC_COUNTRY.NAME <br/>CLARITY_DEP. DEPARTMENT_NAME              | Bu alanlar hasta profili bilgilerini tanımlamak için kullanılır.|
 | ZC_BTG_REASON.NAME*<br/> PAT_BTG_AUDIT. BTG_EXPLANATION | Bu alanlar kısıtlı kayıtlara erişimi tanımlamak için kullanılır.|
-| EMP. SYSTEM_LOGIN*<br/>CLARITY_EMP. USER_ID <br/> employee_last_name<sup>1</sup> <br/> employee_first_name<sup>1</sup>                | Bu alanlar, Aile/Komşu/Çalışan kayıtlarına erişimi belirlemek için gereken adres ve ad eşleştirme için çalışan profili bilgilerini tanımlamak için kullanılır. |
+| Emp. SYSTEM_LOGIN*<br/>CLARITY_EMP. USER_ID <br/> employee_last_name<sup>1</sup> <br/> employee_first_name<sup>1</sup>                | Bu alanlar, Aile/Komşu/Çalışan kayıtlarına erişimi belirlemek için gereken adres ve ad eşleştirme için çalışan profili bilgilerini tanımlamak için kullanılır. |
 |||
 
 > [!NOTE]

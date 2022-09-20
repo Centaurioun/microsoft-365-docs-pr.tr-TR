@@ -2,8 +2,8 @@
 title: Microsoft 365'te FactSet verilerini arşivlemesi için bağlayıcı ayarlama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Microsoft 365'te FactSet verilerini içeri aktarmak ve arşivlemek için 17a-4 FactSet DataParser bağlayıcısını ayarlamayı ve kullanmayı öğrenin.
-ms.openlocfilehash: e477545f157d4e175d4db12db6192fe40e2877d1
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 350494d3e3c0ecc3bfb555d4ab486350d2955ccd
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636931"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67823793"
 ---
 # <a name="set-up-a-connector-to-archive-factset-data"></a>FactSet verilerini arşivlemesi için bağlayıcı ayarlama
 
@@ -37,7 +37,7 @@ Aşağıdaki genel bakış, Microsoft 365'te FactSet verilerini arşivlerken ver
 
 3. Microsoft Purview uyumluluk portalı oluşturduğunuz FactSet DataParser bağlayıcısı DataParser'a bağlanır ve iletileri Microsoft bulutunda güvenli bir Azure Depolama konumuna aktarır.
 
-4. Kullanıcı posta kutularında **FactSet DataParser** adlı Gelen Kutusu klasöründe bir alt klasör oluşturulur ve FactSet öğeleri bu klasöre aktarılır. Bağlayıcı, *E-posta* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her FactSet öğesi, her katılımcının e-posta adresiyle doldurulmuş olan bu özelliği içerir.
+4. Kullanıcı posta kutularında **FactSet DataParser** adlı Gelen Kutusu klasöründe bir alt klasör oluşturulur ve FactSet öğeleri bu klasöre aktarılır. Bağlayıcı, *Email* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her FactSet öğesi, her katılımcının e-posta adresiyle doldurulmuş olan bu özelliği içerir.
 
 ## <a name="before-you-set-up-a-connector"></a>Bağlayıcıyı ayarlamadan önce
 

@@ -2,8 +2,8 @@
 title: eBulma (Standart) servis talebine ait içeriği dışarı aktarma ve indirme
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Microsoft 365'teki bir eBulma (Standart) servis talebine ait içeriği dışarı aktarma ve indirme işlemlerini açıklar.
-ms.openlocfilehash: 144bb7248753894c72accebbf3e87ab2d7d82d2d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: effafc5201a36abc763c0347590e95cdef361408
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634279"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67818357"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>eBulma (Standart) durumundan içeriği dışarı aktarma
 
