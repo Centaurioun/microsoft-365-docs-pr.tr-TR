@@ -181,6 +181,8 @@
               href: add-users/let-users-reset-passwords.md
             - name: Parolaları süresi hiçbir zaman dolmayacak şekilde ayarlama
               href: add-users/set-password-to-never-expire.md
+            - name: Parola ilkesi önerileri
+              href: misc/password-policy-recommendations.md
             - name: Kullanıcı parolalarını yeniden gönderme
               href: add-users/resend-user-password.md
             - name: Güçlü parolaları kapatma

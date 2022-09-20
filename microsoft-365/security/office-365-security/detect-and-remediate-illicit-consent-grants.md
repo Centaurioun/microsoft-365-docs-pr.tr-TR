@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 061760b71d46cd7ea90b90aa34d01e8b77ee5411
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 183fc5f26e50c1ca452540f683fd25c6af8e40bd
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596104"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850147"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>İzin Verme İzinlerini Algılama ve Düzeltme
 
@@ -160,14 +160,6 @@ Yasadışı izinlere sahip bir uygulama belirledikten sonra, bu erişimi kaldır
 - Ayrıca etkilenen hesap için oturum açmayı tamamen devre dışı bırakabilirsiniz ve bu da bu hesaptaki verilere uygulama erişimini devre dışı bırakır. Bu, elbette son kullanıcının üretkenliği için ideal değildir, ancak etkiyi hızla sınırlamak için çalışıyorsanız, bu uygun bir kısa vadeli düzeltme olabilir.
 
 - Kiracınız için tümleşik uygulamaları kapatabilirsiniz. Bu, son kullanıcıların kiracı genelinde onay verme yeteneğini devre dışı bırakmaya yönelik sert bir adımdır. Bu, kullanıcılarınızın yanlışlıkla kötü amaçlı bir uygulamaya erişim izni vermelerini engeller. Kullanıcılarınızın üçüncü taraf uygulamalarla üretken olma becerisini ciddi ölçüde bozarken bu kesinlikle önerilmez. Bunu yapmak için [Tümleşik Uygulamaları Açma veya Kapatma'daki adımları izleyebilirsiniz](../../admin/misc/user-consent.md).
-
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Microsoft 365'i bir siber güvenlik uzmanı gibi güvenli bir şekilde sağlama
-
-Microsoft 365 aboneliğiniz, verilerinizi ve kullanıcılarınızı korumak için kullanabileceğiniz güçlü bir güvenlik özellikleri kümesiyle birlikte gelir. Microsoft 365 kiracınızın güvenliğini sağlamak için Microsoft tarafından önerilen en iyi yöntemleri uygulamak [için Microsoft 365 güvenlik yol haritası - İlk 30 gün, 90 gün ve sonrasındaki en önemli öncelikleri](security-roadmap.md) kullanın.
-
-- İlk 30 günde gerçekleştirecek görevler. Bunlar hemen etkili olur ve kullanıcılarınız için düşük etkiye sahiptir.
-- 90 gün içinde gerçekleştirecek görevler. Bunların planlanıp uygulanması biraz daha zaman alır ancak güvenlik duruşunuzu büyük ölçüde geliştirir.
-- 90 günden fazla. Bu geliştirmeler ilk 90 günlük çalışmanızda derlemektedir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

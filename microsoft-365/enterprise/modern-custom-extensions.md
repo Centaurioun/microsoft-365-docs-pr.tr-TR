@@ -3,7 +3,7 @@ title: SharePoint Online modern site sayfalarında özel uzantıları iyileştir
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/11/2020
+ms.date: 09/19/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online modern site sayfalarında özel uzantıların performansını iyileştirmeyi öğrenin.
-ms.openlocfilehash: b2d67e0cc75ea8645ac2dd018bf01fd4bb284364
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7137deee199e8532d75cc8fa8d04d71e9cbd259d
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693421"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851402"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>SharePoint Online modern site sayfalarında özel uzantı performansını iyileştirme
 

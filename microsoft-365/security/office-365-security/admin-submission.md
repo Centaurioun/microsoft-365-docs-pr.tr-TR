@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Yöneticiler, Microsoft 365 Defender portalında Gönderiler portalını kullanarak engellenen, şüpheli e-posta, şüpheli kimlik avı e-postası, istenmeyen posta, diğer zararlı olabilecek iletiler, URL'ler ve e-posta eklerini yeniden keşfetmek üzere Microsoft'a yasal e-posta göndermeyi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 9013f8c336ec7179c3934d6e352afc1b8a862461
-ms.sourcegitcommit: db89873e22a12705ed313964c1bc2fa19d4fe719
+ms.openlocfilehash: 834f77a5c3631d7c61f287affb0347e293935d2d
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67652439"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851754"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>Şüpheli istenmeyen posta, kimlik avı, URL'ler, engellenen meşru e-postalar ve e-posta eklerini Microsoft'a göndermek için Gönderimler portalını kullanın
 
@@ -130,9 +130,6 @@ Değerlendirme için Microsoft'a ileti göndermek üzere Office 365 için Micros
 
    - **Dosya**: Dosyalara **gözat'a** tıklayarak göndermek istediğiniz dosyayı bulun ve seçin.
 
-     > [!NOTE]
-     > Dosya gönderimleri, verilerin ortamdan ayrılmasına izin verilmeyen bulutlarda kullanılamaz. **Dosyalara göz atma** gri renktedir.
-
    - **Microsoft'a göndermek için bir neden seçin**: **Engellenmiş Olması Gerektiğini Doğrula (Hatalı negatif)** öğesinin seçili olduğunu doğrulayın.
 
      - **E-posta şu şekilde kategorilere ayrılmış olmalıdır**: **Kimlik Avı** veya **Kötü Amaçlı Yazılım'ı** seçin. Emin değilseniz, en iyi kararınızı kullanın.
@@ -168,9 +165,6 @@ Değerlendirme için Microsoft'a ileti göndermek üzere Office 365 için Micros
    - **Gönderme türünü seçin**: Değer **URL'sinin** seçili olduğunu doğrulayın.
 
    - **URL**: Tam URL'yi (örneğin, `https://www.fabrikam.com/marketing.html`) girin ve görüntülenen kutudan seçin.
-
-     > [!NOTE]
-     > URL gönderimleri, verilerin ortamdan ayrılmasına izin verilmeyen bulutlarda kullanılamaz. **URL** gri renkte.
 
    - **Microsoft'a göndermek için bir neden seçin**: **Engellenmiş Olması Gerektiğini Doğrula (Hatalı negatif)** öğesinin seçili olduğunu doğrulayın.
 

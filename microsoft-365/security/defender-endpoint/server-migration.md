@@ -11,18 +11,18 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 09/19/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 38ac919e11160406f31606703153ce0208a3c416
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 602b80f93d4c2c9b0f204eaa347a5f5e75941147
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67584804"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850396"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Önceki MMA tabanlı Uç Nokta için Microsoft Defender çözümünden sunucu geçişi senaryoları
 
@@ -59,9 +59,11 @@ Microsoft Endpoint Configuration Manager henüz kullanılabilir olmadığında v
 4. Uç Nokta için Microsoft Defender yükleyin.
 5. [Microsoft 365 Defender'dan indirilen](https://security.microsoft.com) **grup ilkesi kullanmak için** ekleme betiğini uygulayın.
 
-Betiği kullanmak için, yükleme ve ekleme paketlerini de yerleştirdiğiniz bir yükleme dizinine indirin (bkz. [Sunucu uç noktalarını yapılandırma](configure-server-endpoints.md).
+Betiği kullanmak için, yükleme ve ekleme paketlerini de yerleştirdiğiniz bir yükleme dizinine indirin (bkz. [Sunucu uç noktalarını yapılandırma](configure-server-endpoints.md)).
 
 ÖRNEK: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd"
+
+Betiği kullanma hakkında daha fazla bilgi için PowerShell komutunu "get-help .\install.ps1" kullanın.
 
 ## <a name="microsoft-endpoint-configuration-manager-migration-scenarios"></a>Microsoft Endpoint Configuration Manager geçiş senaryoları 
 

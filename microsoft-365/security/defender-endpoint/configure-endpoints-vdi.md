@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/15/2022
 ms.subservice: mde
-ms.openlocfilehash: 571254220daf6b7ebf80aa837df692b2c57c015a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: ca5e4ac05df410f15c12acc8254c782cdda4f042
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67679009"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850424"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Microsoft 365 Defender kalıcı olmayan sanal masaüstü altyapısı (VDI) cihazlarını ekleme
 
@@ -193,8 +193,8 @@ Aşağıdaki yapılandırma ayarları önerilir:
   - `%TEMP%*.VHDX`
   - `%Windir%\TEMP*.VHD`
   - `%Windir%\TEMP*.VHDX`
-  - `\\stroageaccount.file.core.windows.net\share**.VHD`
-  -  `\\stroageaccount.file.core.windows.net\share**.VHDX`
+  - `\\storageaccount.file.core.windows.net\share**.VHD`
+  -  `\\storageaccount.file.core.windows.net\share**.VHDX`
 
 #### <a name="real-time-protection"></a>Gerçek Zamanlı Koruma
 

@@ -16,12 +16,12 @@ ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 246b97d6cef51d932e68b63b2d0dfae09d5862b2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ffa155a0b1d9598d19af5842553f68372f30b076
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683065"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851732"
 ---
 # <a name="machine-resource-type"></a>Makine kaynak türü
 
@@ -67,7 +67,7 @@ ms.locfileid: "67683065"
 |firstSeen|Datetimeoffset|[makinenin](machine.md) Uç Nokta için Microsoft Defender tarafından gözlemlendiği ilk tarih ve saat.|
 |lastSeen|Datetimeoffset|Son alınan tam cihaz raporunun saati ve tarihi. Bir cihaz genellikle 24 saatte bir tam rapor gönderir.|
 |osPlatform|Dize|İşletim sistemi platformu.|
-|onboardingstatus|Dize|Makine ekleme durumu. Olası değerler şunlardır: "onboarded" ve "offboarded".|
+|onboardingstatus|Dize|Makine ekleme durumu. Olası değerler şunlardır: "onboarded", "CanBeOnboarded", "Unsupported", and "InsufficientInfo".|
 |osProcessor|Dize|İşletim sistemi işlemcisi. Bunun yerine osArchitecture özelliğini kullanın.|
 |Sürüm|Dize|İşletim sistemi Sürümü.|
 |osBuild|Boş değer atanabilir uzun|İşletim sistemi derleme numarası.|

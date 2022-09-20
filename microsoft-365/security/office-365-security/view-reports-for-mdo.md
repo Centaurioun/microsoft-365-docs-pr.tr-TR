@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e318f44488492f3d0e3bd2a0457570387cfecc7b
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 8f0a7b8a13ebe47a7b95fa52ed06147f166d6d15
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670961"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851028"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender portalında Office 365 için Defender raporları görüntüleme
 
@@ -249,8 +249,3 @@ Daha fazla bilgi için bkz. [Microsoft 365 Defender portalında İzinler](permis
 
 Office 365 için Defender raporlarınızda veri görmüyorsanız ilkelerinizin doğru ayarlandığını bir kez daha denetleyin. Office 365 için Defender korumasının geçerli olması için kuruluşunuzun [Güvenli Bağlantılar ilkeleri](set-up-safe-links-policies.md) ve [Güvenli Ekler ilkeleri](set-up-safe-attachments-policies.md) tanımlanmış olmalıdır. Ayrıca bkz [. istenmeyen posta önleme](anti-spam-protection.md) ve [kötü amaçlı yazılımdan koruma](anti-malware-protection.md).
 
-## <a name="related-topics"></a>İlgili konular
-
-[Microsoft 365 Defender portalında akıllı raporlar ve içgörüler](reports-and-insights-in-security-and-compliance.md)
-
-[Yerleşik rolleri Azure AD](/azure/active-directory/roles/permissions-reference)

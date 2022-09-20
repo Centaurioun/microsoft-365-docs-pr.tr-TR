@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 13b5d83a5b5993e90938a774dff3063bc1da5f86
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: a3348ccc2458252aca84762d89d58dbeb9ebe92a
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731132"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851600"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>İletişim uyumluluk raporlarını ve denetimlerini kullanma
 
@@ -55,47 +55,47 @@ Tüm ayrıntılı raporların rapor ayrıntılarını içeren bir .csv dosyası 
 - **İlke ayarları ve durumu: İlke** yapılandırmasına ve ayarlarına ve iletilerdeki ilkenin (eşleşmeler ve eylemler) her biri için genel duruma ayrıntılı bir bakış sağlar. İlke bilgilerini ve ilkelerin kullanıcılar ve gruplarla nasıl ilişkilendirildiğini, konumları, gözden geçirme yüzdelerini, gözden geçirenleri, durumu ve ilkenin en son ne zaman değiştirildiğini içerir. Rapor ayrıntılarını içeren bir .csv dosyası oluşturmak için *Dışarı Aktar* seçeneğini kullanın.
 - **İlke başına öğeler ve eylemler: İlke başına** eşleşen öğeleri ve düzeltme eylemlerini gözden geçirin ve dışarı aktarın. İlke bilgilerini ve ilkelerin nasıl ilişkili olduğunu içerir:
 
-    - Eşleştirilen öğeler
-    - Yükseltilen öğeler
-    - Çözümlenen öğeler
-    - Uyumlu olarak etiketlendi
-    - Uyumlu değil olarak etiketlendi
-    - Sorgulanabilir olarak etiketlendi
-    - Gözden geçirmeyi bekleyen öğeler
-    - Kullanıcı bildirimde bulunu
-    - Büyük/küçük harf oluşturuldu
+  - Eşleştirilen öğeler
+  - Yükseltilen öğeler
+  - Çözümlenen öğeler
+  - Uyumlu olarak etiketlendi
+  - Uyumlu değil olarak etiketlendi
+  - Sorgulanabilir olarak etiketlendi
+  - Gözden geçirmeyi bekleyen öğeler
+  - Kullanıcı bildirimde bulunu
+  - Büyük/küçük harf oluşturuldu
 
 - **Konum başına öğe ve eylemler**: Microsoft 365 konumuna göre eşleşen öğeleri ve düzeltme eylemlerini gözden geçirin ve dışarı aktarın. İş yükü platformlarının nasıl ilişkili olduğu hakkında bilgi içerir:
 
-    - Eşleştirilen öğeler
-    - Yükseltilen öğeler
-    - Çözümlenen öğeler
-    - Uyumlu olarak etiketlendi
-    - Uyumlu değil olarak etiketlendi
-    - Sorgulanabilir olarak etiketlendi
-    - Gözden geçirmeyi bekleyen öğeler
-    - Kullanıcı bildirimde bulunu
-    - Büyük/küçük harf oluşturuldu
+  - Eşleştirilen öğeler
+  - Yükseltilen öğeler
+  - Çözümlenen öğeler
+  - Uyumlu olarak etiketlendi
+  - Uyumlu değil olarak etiketlendi
+  - Sorgulanabilir olarak etiketlendi
+  - Gözden geçirmeyi bekleyen öğeler
+  - Kullanıcı bildirimde bulunu
+  - Büyük/küçük harf oluşturuldu
 
 - **Kullanıcıya göre etkinlik: Kullanıcı** başına eşleşen öğeleri ve düzeltme eylemlerini gözden geçirin ve dışarı aktarın. Kullanıcıların nasıl ilişkili olduğu hakkında bilgi içerir:
 
-    - Eşleştirilen öğeler
-    - Yükseltilen öğeler
-    - Çözümlenen öğeler
-    - Uyumlu olarak etiketlendi
-    - Uyumlu değil olarak etiketlendi
-    - Sorgulanabilir olarak etiketlendi
-    - Gözden geçirmeyi bekleyen öğeler
-    - Kullanıcı bildirimde bulunu
-    - Büyük/küçük harf oluşturuldu
+  - Eşleştirilen öğeler
+  - Yükseltilen öğeler
+  - Çözümlenen öğeler
+  - Uyumlu olarak etiketlendi
+  - Uyumlu değil olarak etiketlendi
+  - Sorgulanabilir olarak etiketlendi
+  - Gözden geçirmeyi bekleyen öğeler
+  - Kullanıcı bildirimde bulunu
+  - Büyük/küçük harf oluşturuldu
 
 - **Konum başına hassas bilgi türü** (önizleme): Hassas bilgi türlerinin ve iletişim uyumluluk ilkelerindeki ilişkili kaynakların algılanması hakkındaki bilgileri gözden geçirin ve dışarı aktarın. Kuruluşunuzda yapılandırılan kaynaklarda hassas bilgi türü örneklerinin toplamını ve belirli dökümünü içerir. Her üçüncü taraf kaynağın değerleri .csv dosyasındaki ayrı sütunlarda görüntülenir. Örnekler şunlardır:
 
-    - **Email**: Exchange e-posta iletilerinde hassas bilgi türleri algılandı.
-    - **Teams**: Microsoft Teams kanallarında ve sohbet iletilerinde hassas bilgi türleri algılandı.
-    - **Yammer**: Yammer gelen kutularında, gönderilerinde, sohbetlerde ve yanıtlarda hassas bilgi türleri algılandı.
-    - **Üçüncü taraf kaynaklar**: Kuruluşunuzda yapılandırılan üçüncü taraf bağlayıcılarla ilişkili etkinlikler için hassas bilgi türleri algılandı. Rapordaki belirli bir hassas bilgi türünün üçüncü taraf kaynaklarının dökümünü görüntülemek için farenizi Üçüncü taraf kaynak sütunundaki hassas bilgi türünün değerinin üzerine getirin.
-    - **Diğer**: İç sistem işleme için kullanılan hassas bilgi türleri. Rapor için bu kaynağın seçilmesi veya seçiminin kaldırılması hiçbir değeri etkilemez.
+  - **Email**: Exchange e-posta iletilerinde hassas bilgi türleri algılandı.
+  - **Teams**: Microsoft Teams kanallarında ve sohbet iletilerinde hassas bilgi türleri algılandı.
+  - **Yammer**: Yammer gelen kutularında, gönderilerinde, sohbetlerde ve yanıtlarda hassas bilgi türleri algılandı.
+  - **Üçüncü taraf kaynaklar**: Kuruluşunuzda yapılandırılan üçüncü taraf bağlayıcılarla ilişkili etkinlikler için hassas bilgi türleri algılandı. Rapordaki belirli bir hassas bilgi türünün üçüncü taraf kaynaklarının dökümünü görüntülemek için farenizi Üçüncü taraf kaynak sütunundaki hassas bilgi türünün değerinin üzerine getirin.
+  - **Diğer**: İç sistem işleme için kullanılan hassas bilgi türleri. Rapor için bu kaynağın seçilmesi veya seçiminin kaldırılması hiçbir değeri etkilemez.
 
 ### <a name="message-details-report"></a>İleti ayrıntıları raporu
 
@@ -147,8 +147,8 @@ Bazı durumlarda, kullanıcı etkinliklerinin ve iletişimlerinin denetimini kan
 
 İletişim uyumluluk ilkesi güncelleştirme etkinliklerini görüntülemek için, herhangi bir **ilkenin ana sayfasında İlke güncelleştirmelerini dışarı aktar** denetimini seçin. Güncelleştirme etkinliklerini dışarı aktarmak için *Genel Yönetici* veya *İletişim Uyumluluğu Yönetici* rolleri atanmış olmalıdır. Bu eylem, aşağıdaki bilgileri içeren .csv biçiminde bir denetim dosyası oluşturur:
 
-|**Alan**|**Ayrıntılar**|
-|:-----|:-----|
+|Alan|Ayrıntılar|
+|---|---|
 | **Creationdate** | Güncelleştirme etkinliğinin bir ilkede gerçekleştirildiği tarih. |
 | **Kullanıcı Kimlikleri** | bir ilkede güncelleştirme etkinliğini gerçekleştiren kullanıcı. |
 | **Operasyonlar** | İlke üzerinde gerçekleştirilen güncelleştirme işlemleri. |
@@ -156,8 +156,8 @@ Bazı durumlarda, kullanıcı etkinliklerinin ve iletişimlerinin denetimini kan
 
 bir ilkenin iletişim uyumluluğu gözden geçirme etkinliklerini görüntülemek için, belirli bir ilkenin **Genel Bakış** sayfasında **Gözden geçirme etkinliklerini dışarı aktar** denetimini seçin. Gözden geçirme etkinliklerini dışarı aktarmak için *Genel Yönetici* veya *İletişim Uyumluluğu Yönetici* rolleri atanmış olmalıdır. Bu eylem, aşağıdaki bilgileri içeren .csv biçiminde bir denetim dosyası oluşturur:
 
-|**Alan**|**Ayrıntılar**|
-|:-----|:-----|
+|Alan|Ayrıntılar|
+|---|---|
 | **Creationdate** | gözden geçirme etkinliğinin bir ilkede gerçekleştirildiği tarih. |
 | **Kullanıcı Kimlikleri** | bir ilkede gözden geçirme etkinliğini gerçekleştiren kullanıcı. |
 | **Operasyonlar** | İlke üzerinde gerçekleştirilen gözden geçirme işlemleri. |
@@ -187,8 +187,8 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations Super
 
 bir ilkenin denetim posta kutusunun boyutunu denetlemek için aşağıdaki adımları tamamlayın:
 
-1. Modern kimlik doğrulaması kullanarak Exchange Online PowerShell'e bağlanmak için Exchange Online PowerShell V2 modülündeki [Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) cmdlet'ini kullanın.
-2. PowerShell'de aşağıdaki komutu çalıştırın:
+1. [Exchange Online PowerShell’e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
+2. Aşağıdaki komutu çalıştırın:
 
     ```PowerShell
     ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name)

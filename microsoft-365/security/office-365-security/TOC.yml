@@ -6,60 +6,80 @@
       items:
         - name: Office 365 güvenliğine genel bakış
           href: microsoft-defender-for-office-365-product-overview.md
-        - name: Office 365 için Defender
-          href: defender-for-office-365.md
-        - name: Office 365 için Defender'da adım adım tehdit koruması
-          href: protection-stack-microsoft-defender-for-office365.md
-        - name: Office 365 için Defender’ı deneme
-          items:
-            - name: Office 365 için Defender’ı deneme
-              href: try-microsoft-defender-for-office-365.md
-            - name: Office 365 için Defender deneme akış planı
-              href: trial-playbook-defender-for-office-365.md
         - name: Office 365 için Defender'daki yenilikler
           href: whats-new-in-defender-for-office-365.md
-        - name: Microsoft 365 Defender portalında Office 365 için Defender
-          href: ../defender/microsoft-365-security-center-mdo.md
-        - name: Exchange Online Protection’a genel bakış
-          href: exchange-online-protection-overview.md
-        - name: Microsoft 365 Defender portalına genel bakış
-          href: ../defender/microsoft-365-defender.md
-        - name: E-posta varlığı sayfası
-          href: mdo-email-entity-page.md
-        - name: AIR'e genel bakış
-          href: office-365-air.md
-        - name: Otomatik araştırma ve yanıt nasıl çalışır?
-          href: automated-investigation-response-office.md
-        - name: Araştırmalarda e-posta analizi
-          href: email-analysis-investigations.md
-        - name: Düzeltme eylemleri
-          href: air-remediation-actions.md
-        - name: Güvenlik Panosuna genel bakış
-          href: security-dashboard.md
-        - name: Tehdit araştırması ve yanıtı nasıl çalışır?
-          href: office-365-ti.md
-        - name: Office 365 Güvenlik Olayı Yanıtı
-          href: office365-security-incident-response-overview.md
-    - name: Dağıtım
+    - name: Kullanmaya başlayın
       items:
-        - name: Tehditlere karşı korunun
-          href: protect-against-threats.md
-        - name: Uç nokta için Defender ile Office 365 için Defender'ı tümleştirme
-          href: integrate-office-365-ti-with-mde.md
-        - name: İzinler
-          items:
-            - name: Microsoft 365 Defender portalındaki izinler
-              href: permissions-microsoft-365-security-center.md
-            - name: Güvenlik ve Uyumluluk Merkezi’ndeki İzinler
-              href: permissions-in-the-security-and-compliance-center.md
-            - name: Kullanıcılara Güvenlik ve Uyumluluk Merkezi'ne erişim izni verme
-              href: grant-access-to-the-security-and-compliance-center.md
-        - name: SIEM sunucu tümleştirmesi
-          href: siem-server-integration.md
-        - name: Office 365 için Defender ile SIEM tümleştirmesi
-          href: siem-integration-with-office-365-ti.md
+        - name: Office 365 için Defender
+          href: defender-for-office-365.md
+        - name: Tehdit koruması Office 365 için Defender'da nasıl çalışır?
+          href: protection-stack-microsoft-defender-for-office365.md
         - name: Varsayılan olarak güvenli
           href: secure-by-default.md
+        - name: Microsoft 365 Defender portalına genel bakış
+          href: ../defender/microsoft-365-defender.md
+    - name: Değerlendirmek
+      items:
+        - name: Office 365 için Defender’ı deneme
+          href: try-microsoft-defender-for-office-365.md
+        - name: Office 365 için Defender deneme akış planı
+          href: trial-playbook-defender-for-office-365.md
+    - name: Dağıtım
+      items:
+        - name: 1. Aşama - Email kimlik doğrulaması
+          items:
+            - name: E-posta kimlik doğrulaması
+              href: email-validation-and-authentication.md
+            - name: 1. Adım - Sahtekarlık önlemeye yardımcı olmak için SPF'yi ayarlama
+              href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+            - name: 2. Adım - Giden e-postayı doğrulamak için DKIM kullanma
+              href: use-dkim-to-validate-outbound-email.md
+            - name: 3. Adım - E-postayı doğrulamak için DMARC kullanma
+              href: use-dmarc-to-validate-email.md
+            - name: Gönderen ve alıcı arasındaki güvenilen cihazlar ve hizmetler için Güvenilen ARC gönderenlerini kullan
+              href: use-arc-exceptions-to-mark-trusted-arc-senders.md
+        - name: 2. Aşama - Yükleme yolunuzu seçin
+          items:
+            - name: 1. Adım - EOP ile veya EOP olmadan yükleme yolu
+              items:
+                - name: Seçenek 1 - Önceden ayarlanmış yükleme yolu (otomatik)
+                  items:
+                    - name: Koruma ilkeleri için yapılandırma çözümleyicisi
+                      href: configuration-analyzer-for-security-policies.md
+                    - name: Önceden ayarlanmış güvenlik ilkeleri
+                      href: preset-security-policies.md
+                - name: Seçenek 2 - EOP müşteri Office 365 için Defender yükleme yolu (el ile)
+                  items:
+                    - name: Office 365 için Defender
+                      href: defender-for-office-365.md
+                    - name: Tehditlere karşı korunun
+                      href: protect-against-threats.md
+                - name: Seçenek 3 - Özel EOP ve Office 365 için Defender P1 ve P2 ortamları yükleme yolu (el ile)
+                  items:
+                    - name: Exchange Online Protection’a genel bakış
+                      href: exchange-online-protection-overview.md
+                    - name: Office 365 Güvenliği için EOP ve Defender'ı yapılandırmak için önerilen ayarlar
+                      href: recommended-settings-for-eop-and-office365.md
+            - name: 2. Adım - İzinleri Yapılandırma
+              href: permissions-microsoft-365-security-center.md
+    - name: Geçirme
+      items:
+        - name: Üçüncü taraf koruma hizmetinden veya cihazından Office 365 için Defender'a geçiş yapma
+          href: migrate-to-defender-for-office-365.md
+        - name: 1. Adım - Hazırlama
+          href: migrate-to-defender-for-office-365-prepare.md
+        - name: 2. Adım - Kurulum
+          href: migrate-to-defender-for-office-365-setup.md
+        - name: 3. Adım - Ekleme
+          href: migrate-to-defender-for-office-365-onboard.md
+    - name: Koruma ve Algılama
+      items:
+        - name: Office 365 için Defender Güvenlik İşlemleri Kılavuzu
+          href: mdo-sec-ops-guide.md
+        - name: Daha fazla güvenlik için kiracınızı yapılandırma
+          href: tenant-wide-setup-for-increased-security.md
+        - name: Öncelikli hesaplar için güvenlik önerileri
+          href: security-recommendations-for-priority-accounts.md
         - name: Kötü amaçlı yazılımdan koruma
           items:
             - name: Kötü amaçlı yazılımdan koruma
@@ -68,6 +88,8 @@
               href: configure-anti-malware-policies.md
             - name: Virus detection in SharePoint Online
               href: virus-detection-in-spo.md
+            - name: Kötü amaçlı yazılımdan koruma SSS
+              href: anti-malware-protection-faq-eop.yml
         - name: İstenmeyen posta önleme koruma
           items:
             - name: İstenmeyen posta önleme koruma
@@ -84,48 +106,72 @@
               href: bulk-complaint-level-values.md
             - name: EOP'de geri yansıma
               href: backscatter-messages-and-eop.md
-            - name: Posta akışı kuralları (aktarım kuralları)
-              items:
-                - name: Posta akışı kuralları (aktarım kuralları)
-                  href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
-                - name: Yürütülebilir ekleri olan iletileri engellemek için posta akışı kurallarını kullanma
-                  href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
-                - name: Toplu postaları filtrelemek için posta akışı kurallarını kullanma
-                  href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
-                - name: İletilerde SCL'yi ayarlamak için posta akışı kurallarını kullanma
-                  href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
             - name: Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma
               href: configure-junk-email-settings-on-exo-mailboxes.md
-            - name: Bağlantı filtrelemeyi yapılandırma
-              href: configure-the-connection-filter-policy.md
-            - name: Giden istenmeyen posta koruması
+            - name: İstenmeyen posta önleme SSS
+              href: anti-spam-protection-faq.yml
+            - name: Posta akışı kuralları
               items:
-                - name: Giden istenmeyen posta koruması
-                  href: outbound-spam-controls.md
-                - name: Giden istenmeyen posta filtrelemeyi yapılandırma
-                  href: configure-the-outbound-spam-policy.md
-                - name: Otomatik dış e-posta yönlendirmeyi denetleme
-                  href: external-email-forwarding.md
-                - name: Giden teslim havuzları
-                  href: high-risk-delivery-pool-for-outbound-messages.md
+                - name: Posta akışı kuralları (aktarım kuralları) (Exchange)
+                  href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
+                - name: Posta akışı kuralı koşulları ve özel durumları (Exchange)
+                  href: /exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions
+                - name: Posta akışı kuralı eylemleri (Exchange)
+                  href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions
+                - name: Posta akışı kurallarını yönetme (Exchange)
+                  href: /exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules
+                - name: Posta akışı kuralı yapılandırma en iyi yöntemleri (Exchange)
+                  href: /exchange/security-and-compliance/mail-flow-rules/configuration-best-practices
+                - name: Posta akışı kurallarını test etme (Exchange)
+                  href: /exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules
+                - name: Posta akışı kuralı yordamları
+                  items:
+                    - name: Posta akışı kuralı yordamları (Exchange)
+                      href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures
+                    - name: Ek engelleme senaryoları için kuralları kullanma (Exchange)
+                      href: /exchange/security-and-compliance/mail-flow-rules/common-attachment-blocking-scenarios
+                    - name: Yürütülebilir ekleri olan iletileri engellemek için kuralları kullanma (Exchange)
+                      href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
+                    - name: İleti eklerini incelemek için kuralları kullanma (Exchange)
+                      href: /exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments
+                    - name: SCL'yi (Exchange) ayarlamak için kuralları kullanma
+                      href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
+                    - name: Toplu postayı filtrelemek için posta akışı kurallarını kullanma (Exchange)
+                      href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
+                    - name: Kullanıcıların Microsoft'a (Exchange) ne bildirdiğini görmek için posta akışı kurallarını kullanma
+                      href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
+        - name: Bağlantı filtreleme
+          items:
+            - name: Bağlantı filtreleme ilkesini yapılandırma
+              href: configure-the-connection-filter-policy.md
+        - name: Giden istenmeyen posta koruması
+          items:
+            - name: Giden istenmeyen posta koruması
+              href: outbound-spam-controls.md
+            - name: Giden istenmeyen posta filtrelemeyi yapılandırma
+              href: configure-the-outbound-spam-policy.md
+            - name: Otomatik dış e-posta yönlendirmeyi denetleme
+              href: external-email-forwarding.md
+            - name: Giden teslim havuzları
+              href: high-risk-delivery-pool-for-outbound-messages.md
         - name: Kimlik avından koruma
           items:
             - name: Kimlik avından koruma
               href: anti-phishing-protection.md
+            - name: Kimlik avından koruma ilkeleri
+              items:
+                - name: Kimlik avından koruma ilkeleri
+                  href: set-up-anti-phishing-policies.md
+                - name: EOP'de kimlik avı önleme ilkelerini yapılandırma
+                  href: configure-anti-phishing-policies-eop.md
+                - name: Office 365 için Defender'da kimlik avı önleme ilkelerini yapılandırma
+                  href: configure-mdo-anti-phishing-policies.md
             - name: Kimlik sahtekarlığına karşı koruma
               href: anti-spoofing-protection.md
-            - name: Kimlik avından koruma ilkeleri
-              href: set-up-anti-phishing-policies.md
-            - name: EOP'de kimlik avı önleme ilkelerini yapılandırma
-              href: configure-anti-phishing-policies-eop.md
-            - name: Office 365 için Defender'da kimlik avı önleme ilkelerini yapılandırma
-              href: configure-mdo-anti-phishing-policies.md
-            - name: 'Office 365, kimlik avını önlemek için Gönderen adresini nasıl doğrular?'
+            - name: Kimlik sahtekarlığına karşı koruma SSS
+              href: anti-spoofing-protection-faq.yml
+            - name: EOP Kimden adresini nasıl doğrular?
               href: how-office-365-validates-the-from-address.md
-        - name: Sıfır anında otomatik temizleme (ZAP)
-          href: zero-hour-auto-purge.md
-        - name: İlkeler ve korumalar nasıl birleştirilir?
-          href: how-policies-and-protections-are-combined.md
         - name: Office 365 için Defender'da Güvenli Ekler
           items:
             - name: Office 365 için Defender'da Güvenli Ekler
@@ -146,56 +192,26 @@
               href: set-up-safe-links-policies.md
             - name: Office 365 için Defender'da Güvenli Bağlantılar için genel ayarları yapılandırma
               href: configure-global-settings-for-safe-links.md
-        - name: Office 365 için Defender'da kullanıcı etiketleri
+        - name: Sıfır saatlik Otomatik Temizleme (ZAP)
           items:
-            - name: Office 365 için Defender'da kullanıcı etiketleri
-              href: user-tags.md
-            - name: Öncelikli hesapları yapılandırma ve gözden geçirme
-              href: configure-review-priority-account.md
-        - name: E-posta kimlik doğrulaması
+            - name: Sıfır anında otomatik temizleme - istenmeyen posta ve kötü amaçlı yazılımlara karşı koruma
+              href: zero-hour-auto-purge.md
+        - name: İzin ver ve engelle
           items:
-            - name: E-posta kimlik doğrulaması
-              href: email-validation-and-authentication.md
-            - name: Kimlik sahtekarlığını önlemeye yardımcı olmak için SPF'yi ayarlama
-              href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
-            - name: 'Microsoft 365, kimlik sahtekarlığını önlemek için SPF''yi nasıl kullanır?'
-              href: how-office-365-uses-spf-to-prevent-spoofing.md
-            - name: Giden e-postayı doğrulamak için DKIM kullanma
-              href: use-dkim-to-validate-outbound-email.md
-            - name: DKIM imzalı iletileri doğrulama desteği
-              href: support-for-validation-of-dkim-signed-messages.md
-            - name: E-postayı doğrulamak için DMARC kullanma
-              href: use-dmarc-to-validate-email.md
-            - name: Gönderen ve alıcı arasındaki güvenilen cihazlar ve hizmetler için Güvenilen ARC gönderenlerini kullan
-              href: use-arc-exceptions-to-mark-trusted-arc-senders.md
-        - name: EOP'de posta akışı
-          href: mail-flow-in-eop.md
-        - name: IPv6 üzerinden anonim gelen e-posta desteği ekleme
-          href: support-for-anonymous-inbound-email-messages-over-ipv6.md
-        - name: Office için Application Guard yükleme
-          href: install-app-guard.md
-    - name: Geçirme
-      items:
-        - name: Üçüncü taraf koruma hizmetinden veya cihazından Office 365 için Defender'a geçiş yapma
-          items:
-            - name: Üçüncü taraf koruma hizmetinden veya cihazından Office 365 için Defender'a geçiş yapma
-              href: migrate-to-defender-for-office-365.md
-            - name: 'Geçiş Aşaması 1: Hazırlık'
-              href: migrate-to-defender-for-office-365-prepare.md
-            - name: 'Geçiş Aşaması 2: Kurulum'
-              href: migrate-to-defender-for-office-365-setup.md
-            - name: 'Geçiş Aşaması 3: Katılım'
-              href: migrate-to-defender-for-office-365-onboard.md
-    - name: Engelle
-      items:
-        - name: Daha fazla güvenlik için kiracınızı yapılandırma
-          href: tenant-wide-setup-for-increased-security.md
-        - name: Önceden ayarlanmış güvenlik ilkeleri
-          href: preset-security-policies.md
-        - name: Koruma ilkeleri için yapılandırma çözümleyicisi
-          href: configuration-analyzer-for-security-policies.md
-        - name: Öncelikli hesaplar için güvenlik önerileri
-          href: security-recommendations-for-priority-accounts.md
+            - name: Kiracı İzin Verilenler/Engellenenler Listesini Yönetme
+              items:
+                - name: Kiracı İzin Verilenler/Engellenenler Listesini Yönetme
+                  href: manage-tenant-allow-block-list.md
+                - name: Kiracı İzin Ver/Engelle Listesi'ni kullanarak e-postaya izin verme veya e-postayı engelleme
+                  href: allow-block-email-spoof.md
+                - name: Kiracı İzin Ver/Engelle Listesini kullanarak dosyalara izin verme veya dosyaları engelleme
+                  href: allow-block-files.md
+                - name: Kiracı İzin Ver/Engelle Listesini kullanarak URL'lere izin verme veya URL’leri engelleme
+                  href: allow-block-urls.md
+            - name: Göndereni engelle listeleri oluşturma
+              href: Create-block-sender-lists-in-office-365.md
+            - name: Güvenilir gönderen listeleri oluşturma
+              href: Create-safe-sender-lists-in-office-365.md
         - name: Office 365 için Defender'da saldırı simülasyonu eğitimi
           items:
             - name: Saldırı simülasyonu eğitimini kullanmaya başlama
@@ -208,8 +224,6 @@
               href: attack-simulation-training-simulation-automations.md
             - name: Saldırı simülasyonu eğitiminde yük otomasyonları
               href: attack-simulation-training-payload-automations.md
-            - name: Saldırı simülasyonu eğitimi için özel yükler oluşturma
-              href: attack-simulation-training-payloads.md
             - name: Saldırı simülasyonu eğitimi için son kullanıcı bildirimleri
               href: attack-simulation-training-end-user-notifications.md
             - name: Saldırı simülasyonu eğitimindeki oturum açma sayfaları
@@ -218,186 +232,154 @@
               href: attack-simulation-training-insights.md
             - name: Saldırı simülasyonu eğitimi dağıtımıyla ilgili dikkat edilmesi gerekenler ve SSS
               href: attack-simulation-training-faq.md
-        - name: Üçüncü taraf kimlik avı simülasyonları ve SecOps posta kutuları için teslimatı yapılandırma
-          href: configure-advanced-delivery.md
-        - name: Office 365 Güvenliği için EOP ve Defender'ı yapılandırmak için önerilen ayarlar
-          href: recommended-settings-for-eop-and-office365.md
-        - name: AIR'i özel bir çözümle veya üçüncü taraf çözümüyle tümleştirme
-          href: air-custom-reporting.md
-        - name: Kiracı İzin Verilenler/Engellenenler Listesi
+        - name: Gelişmiş teslim ilkeleri
           items:
-            - name: Kiracı İzin Verilenler/Engellenenler Listesini Yönetme
-              href: manage-tenant-allow-block-list.md
-            - name: Kiracı İzin Ver/Engelle Listesini kullanarak e-postalara izin verme veya e-postaları engelleme
-              href: allow-block-email-spoof.md
-            - name: Kiracı İzin Ver/Engelle Listesini kullanarak URL'lere izin verme veya URL’leri engelleme
-              href: allow-block-urls.md
-            - name: Kiracı İzin Ver/Engelle Listesini kullanarak dosyalara izin verme veya dosyaları engelleme
-              href: allow-block-files.md
-        - name: Göndereni engelle listeleri oluşturma
-          href: Create-block-sender-lists-in-office-365.md
-        - name: Güvenilir gönderen listeleri oluşturma
-          href: Create-safe-sender-lists-in-office-365.md
-        - name: İleti izleme
-          href: message-trace-scc.md
-        - name: Kişisel veri sızıntılarını izleme
-          href: monitor-for-leaks-of-personal-data.md
-    - name: Algılama
-      items:
-        - name: Office 365 için Defender için Tehdit Gezgini
+            - name: Gelişmiş teslim ilkelerini yapılandırma
+              href: configure-advanced-delivery.md
+        - name: Kullanıcı etiketleri ve öncelik hesapları
           items:
-            - name: Tehdit Gezgini'nde tehdit avcılığı
-              href: threat-hunting-in-threat-explorer.md
-            - name: Tehdit Gezgini ile e-posta güvenliği
-              href: email-security-in-microsoft-defender.md
-            - name: Tehdit Gezgini ve Gerçek zamanlı algılama temelleri
-              href: real-time-detections.md
-        - name: Tehdit İzleyicileri kullanma
-          href: threat-trackers.md
+            - name: Office 365 için Defender'da kullanıcı etiketleri
+              href: user-tags.md
+            - name: Öncelikli hesapları yapılandırma ve gözden geçirme
+              href: configure-review-priority-account.md
+        - name: varlık sayfasını Email
+          items:
+            - name: E-posta varlığı sayfası
+              href: mdo-email-entity-page.md
+        - name: Tehdit İzleyiciler
+          items:
+            - name: Tehdit İzleyicileri kullanma
+              href: threat-trackers.md
         - name: Uyarı ilkeleri
-          href: ../../compliance/alert-policies.md
-        - name: Bir yönetici rol grubu raporu çalıştırma
-          href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
-    - name: Araştır
+          items:
+            - name: Uyarı ilkeleri
+              href: ../../compliance/alert-policies.md
+        - name: Denetim
+          items:
+            - name: Bir yönetici rol grubu raporu çalıştırma
+              href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
+    - name: Araştırma ve Yanıtlama
       items:
-        - name: Office 365 için Defender Güvenlik İşlemleri Kılavuzu
+        - name: Microsoft 365 Defender'de olayları ve uyarıları yönetme
+          href: mdo-sec-ops-manage-incidents-and-alerts.md
+        - name: Tehdit araştırması ve yanıtı nasıl çalışır?
+          href: office-365-ti.md
+        - name: Analiz etme ve sınıflandırma
           items:
-            - name: Office 365 için Defender Güvenlik İşlemleri Kılavuzu
-              href: mdo-sec-ops-guide.md
-            - name: Microsoft 365 Defender'da Office 365 için Defender'dan olayları ve uyarıları yönetme
-              href: mdo-sec-ops-manage-incidents-and-alerts.md
-        - name: Tehdit Gezgini görünümleri
-          href: threat-explorer-views.md
-        - name: Kampanya Görünümleri
-          href: campaigns.md
-        - name: Kötü amaçlı e-postayı araştırma
-          href: investigate-malicious-email-that-was-delivered.md
-        - name: Otomatik soruşturmanın ayrıntılarını ve sonuçlarını görüntüleme
-          href: air-view-investigation-results.md
-        - name: Yönetici denetim günlüğünü görüntüleme
-          href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
-        - name: Kimliğe bürünme içgörüleri
-          href: impersonation-insight.md
-        - name: Kimlik sahtekarlığı analizi içgörüleri
-          href: learn-about-spoof-intelligence.md
-        - name: Office 365 için EOP ve Defender'da Raporlar
-          items:
-            - name: Office 365 için EOP ve Defender'da Raporlar
-              href: reporting-and-message-trace-in-exchange-online-protection.md
+            - name: Kötü amaçlı e-postayı araştırma
+              href: investigate-malicious-email-that-was-delivered.md
+            - name: Şüpheli iletileri ve dosyaları bildirme
+              items:
+                - name: Şüpheli bir e-postayı veya dosyayı Microsoft'a nasıl bildiririm?
+                  href: report-junk-email-messages-to-microsoft.md
+                - name: Yönetici gönderimleri
+                  href: admin-submission.md
+                - name: Rapor İletisini ve Kimlik Avı Bildir eklentilerini etkinleştirme
+                  href: enable-the-report-message-add-in.md
+                - name: Outlook'ta yanlış pozitifleri ve yanlış negatifleri bildirme
+                  href: report-false-positives-and-false-negatives.md
+                - name: Kullanıcı tarafından bildirilen ileti ayarları
+                  href: user-submission.md
+                - name: Kötü amaçlı yazılımları ve kötü amaçlı olmayan yazılımları Microsoft'a gönderme
+                  href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+                - name: Bildirilen iletiler için yönetici incelemesi
+                  href: admin-review-reported-message.md
+            - name: Kampanya Görünümleri
+              href: campaigns.md
+            - name: Tehdit Gezgini
+              items:
+                - name: Tehdit Gezgini ve gerçek zamanlı algılamalar
+                  href: threat-explorer.md
+                - name: Tehdit Gezgini'nde tehdit avcılığı
+                  href: threat-hunting-in-threat-explorer.md
+                - name: Tehdit Gezgini ile e-posta güvenliği
+                  href: email-security-in-microsoft-defender.md
+                - name: Tehdit Gezgini ve Gerçek zamanlı algılama temelleri
+                  href: real-time-detections.md
+                - name: Tehdit Gezgini görünümleri
+                  href: threat-explorer-views.md
+            - name: Kimliğe bürünme içgörüleri
+              href: impersonation-insight.md
+            - name: Kimlik sahtekarlığı analizi içgörüleri
+              href: learn-about-spoof-intelligence.md
+            - name: Kimlik sahtekarlığı zekası içgörü kılavuzu
+              href: walkthrough-spoof-intelligence-insight.md
+            - name: Yönetici denetim günlüğünü görüntüleme (Exchange)
+              href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
             - name: E-posta güvenlik raporlarını görüntüleme
               href: view-email-security-reports.md
             - name: Office 365 için Defender raporlarını görüntüleme
               href: view-reports-for-mdo.md
-            - name: Güvenlik ve Uyumluluk Merkezi'nde posta akışı raporlarını görüntüleme
-              href: view-mail-flow-reports.md
-            - name: Güvenlik ve Uyumluluk Merkezi'nde akıllı raporlar ve içgörüler
-              href: reports-and-insights-in-security-and-compliance.md
-        - name: Güvenlik ve Uyumluluk Merkezi'ndeki posta akışı içgörüleri
+            - name: İleti izleme
+              href: message-trace-scc.md
+        - name: Yanıt verme ve düzeltme
           items:
-            - name: Güvenlik ve Uyumluluk Merkezi'ndeki posta akışı içgörüleri
-              href: mail-flow-insights-v2.md
-            - name: Otomatik iletilen iletiler içgörüsü
-              href: mfi-auto-forwarded-messages-report.md
-            - name: Olası posta döngüsü içgörüsünü düzeltme
-              href: mfi-mail-loop-insight.md
-            - name: Yavaş posta akışı kuralları içgörüsünü düzeltme
-              href: mfi-slow-mail-flow-rules-insight.md
-            - name: Posta akışı haritası
-              href: mfi-mail-flow-map-report.md
-            - name: Yeni alan adları yönlendiriliyor e-posta içgörüsü
-              href: mfi-new-domains-being-forwarded-email.md
-            - name: E-posta içgörüsü ileten yeni kullanıcılar
-              href: mfi-new-users-forwarding-email.md
-            - name: Kabul edilmeyen etki alanı raporu
-              href: mfi-non-accepted-domain-report.md
-            - name: Teslim edilemedi raporu
-              href: mfi-non-delivery-report.md
-            - name: Giden ve gelen posta akışı içgörüsü
-              href: mfi-outbound-and-inbound-mail-flow.md
-            - name: Kuyrukların içgörüsü
-              href: mfi-queue-alerts-and-queues.md
-            - name: SMTP Kimlik Doğrulaması istemcileri içgörüleri ve raporu
-              href: mfi-smtp-auth-clients-report.md
-            - name: En iyi etki alanı posta akışı durumu içgörüsü
-              href: mfi-domain-mail-flow-status-insight.md
-        - name: İletileri ve dosyaları Microsoft'a bildirme
+            - name: Office 365'te Risk Altındaki Bir E-posta Hesabına Yanıt Verme
+              href: responding-to-a-compromised-email-account.md
+            - name: Kötü amaçlı e-postayı düzeltme
+              href: remediate-malicious-email-delivered-office-365.md
+            - name: Otomatik Araştırma ve Yanıt (AIR)
+              items:
+                - name: AIR'e genel bakış ve izinler
+                  items:
+                    - name: AIR'e genel bakış
+                      href: office-365-air.md
+                    - name: Otomatik araştırma ve yanıt nasıl çalışır?
+                      href: automated-investigation-response-office.md
+                - name: Bekleyen eylemleri gözden geçirme ve onaylama (veya reddetme)
+                  href: air-review-approve-pending-completed-actions.md
+                - name: AIR'de hatalı pozitif ve hatalı negatifleri yönetme
+                  href: air-report-false-positives-negatives.md
+                - name: Otomatik soruşturmanın ayrıntılarını ve sonuçlarını görüntüleme
+                  href: air-view-investigation-results.md
+                - name: AIR'de düzeltme
+                  items:
+                    - name: Düzeltme eylemleri
+                      href: air-remediation-actions.md
+                    - name: Bekleyen eylemleri gözden geçirme ve onaylama (veya reddetme)
+                      href: air-review-approve-pending-completed-actions.md
+                - name: AIR'de güvenliği aşılmış kullanıcı hesaplarını algılama ve ele verme
+                  href: address-compromised-users-quickly.md
+                - name: AIR'i özel bir çözümle veya üçüncü taraf çözümüyle tümleştirme
+                  href: air-custom-reporting.md
+                - name: Araştırmalarda e-posta analizi
+                  href: email-analysis-investigations.md
+            - name: Fidye yazılımı saldırısından kurtarma
+              href: recover-from-ransomware.md
+            - name: Office 365'te Yasa Dışı İzin Vermeleri Algılama ve Düzeltme
+              href: detect-and-remediate-illicit-consent-grants.md
+            - name: Office 365'te Outlook Kuralları ve Özel Form Ekleme Saldırılarını Algılama ve Düzeltme
+              href: detect-and-remediate-outlook-rules-forms-attack.md
+        - name: Ayarlama ve güncelleştirme
           items:
-            - name: Şüpheli bir e-postayı veya dosyayı Microsoft'a nasıl bildiririm?
-              href: report-junk-email-messages-to-microsoft.md
-            - name: Yönetici gönderimleri
-              href: admin-submission.md
-            - name: Rapor İletisini ve Kimlik Avı Bildir eklentilerini etkinleştirme
-              href: enable-the-report-message-add-in.md
-            - name: Outlook'ta yanlış pozitifleri ve yanlış negatifleri bildirme
-              href: report-false-positives-and-false-negatives.md
-            - name: Kullanıcı tarafından bildirilen ileti ayarları
-              href: user-submission.md
-            - name: Kullanıcıların Microsoft'a ne bildirdiğini görmek için posta akışı kurallarını kullanma
-              href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
-            - name: Kötü amaçlı yazılımları ve kötü amaçlı olmayan yazılımları Microsoft'a gönderme
-              href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
-    - name: Yanıtla
-      items:
-        - name: Güvenliği ihlal edilmiş kullanıcı hesaplarını hızla algılama ve ele alma
-          href: address-compromised-users-quickly.md
-        - name: Office 365'te Yasa Dışı İzin Vermeleri Algılama ve Düzeltme
-          href: detect-and-remediate-illicit-consent-grants.md
-        - name: Office 365'te Outlook Kuralları ve Özel Form Ekleme Saldırılarını Algılama ve Düzeltme
-          href: detect-and-remediate-outlook-rules-forms-attack.md
-        - name: Yanlış pozitifleri/negatifleri işleme
-          href: air-report-false-positives-negatives.md
-        - name: Bildirilen iletiler için yönetici incelemesi
-          href: admin-review-reported-message.md
-        - name: Fidye yazılımı saldırısından kurtarma
-          href: recover-from-ransomware.md
-        - name: Kötü amaçlı e-postayı düzeltme
-          href: remediate-malicious-email-delivered-office-365.md
-        - name: Office 365'te Risk Altındaki Bir E-posta Hesabına Yanıt Verme
-          href: responding-to-a-compromised-email-account.md
-        - name: Risk altındaki bağlayıcıyı yanıtlama
-          href: respond-compromised-connector.md
-        - name: Engellenen varlıkları kaldırma
-          items:
-            - name: Engellenen kullanıcıları kaldırma
-              href: removing-user-from-restricted-users-portal-after-spam.md
-            - name: Engellenen bağlayıcıları kaldırma
-              href: remove-blocked-connectors.md
-        - name: Bekleyen eylemleri gözden geçirme ve onaylama (veya reddetme)
-          href: air-review-approve-pending-completed-actions.md
-        - name: Kimlik avından korumayı ayarlama
-          href: tuning-anti-phishing.md
-        - name: Karantina
-          items:
+            - name: Risk altındaki bağlayıcıyı yanıtlama
+              href: respond-compromised-connector.md
+            - name: Engellenen varlıkları kaldırma
+              items:
+                - name: Engellenen kullanıcıları kaldırma
+                  href: removing-user-from-restricted-users-portal-after-spam.md
+                - name: Engellenen bağlayıcıları kaldırma
+                  href: remove-blocked-connectors.md
+            - name: Kimlik avından korumayı ayarlama
+              href: tuning-anti-phishing.md
             - name: Karantina
-              href: quarantine-email-messages.md
-            - name: Yönetici karantinası
-              href: manage-quarantined-messages-and-files.md
-            - name: Son kullanıcı karantinası
-              href: find-and-release-quarantined-messages-as-a-user.md
-            - name: Karantina ilkeleri
-              href: quarantine-policies.md
-            - name: Karantinaya alınan iletileri paylaşılan posta kutularından serbest bırakma
-              href: view-and-release-quarantined-messages-from-shared-mailboxes.md
-            - name: Karantina bildirimleri
-              href: use-spam-notifications-to-release-and-report-quarantined-messages.md
-        - name: Engellenen gönderenler listesinden kendinizi kaldırmak için listeden kaldırma portalını kullanma
-          href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-    - name: SSS
-      items:
-        - name: Temsilci ile yönetim SSS
-          href: delegated-administration-faq.yml
-        - name: EOP genel SSS
-          href: eop-general-faq.yml
-        - name: 'EOP kuyruğa alınmış, ertelenmiş ve geri dönen iletiler SSS'
-          href: eop-queued-deferred-and-bounced-messages-faq.yml
-        - name: Kötü amaçlı yazılımdan koruma SSS
-          href: anti-malware-protection-faq-eop.yml
-        - name: İstenmeyen posta önleme SSS
-          href: anti-spam-protection-faq.yml
-        - name: Kimlik sahtekarlığına karşı koruma SSS
-          href: anti-spoofing-protection-faq.yml
-        - name: Karantinaya alma SSS
-          href: quarantine-faq.yml
+              items:
+                - name: Karantina
+                  href: quarantine-email-messages.md
+                - name: Yönetici karantinası
+                  href: manage-quarantined-messages-and-files.md
+                - name: Son kullanıcı karantinası
+                  href: find-and-release-quarantined-messages-as-a-user.md
+                - name: Karantina ilkeleri
+                  href: quarantine-policies.md
+                - name: Karantinaya alınan iletileri paylaşılan posta kutularından serbest bırakma
+                  href: view-and-release-quarantined-messages-from-shared-mailboxes.md
+                - name: Karantina bildirimleri
+                  href: use-spam-notifications-to-release-and-report-quarantined-messages.md
+                - name: Karantinaya alma SSS
+                  href: quarantine-faq.yml
+            - name: Engellenen gönderenler listesinden kendinizi kaldırmak için listeden kaldırma portalını kullanma
+              href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
     - name: Adım adım açıklamalı kılavuzlar
       items:
         - name: Office 365 için Microsoft Defender adım adım kılavuzlar ve bunların nasıl kullanılacağı
@@ -450,24 +432,44 @@
       items:
         - name: Office 365 için Defender veri saklama
           href: mdo-data-retention.md
-        - name: Güvenlik yol haritası
-          href: security-roadmap.md
-        - name: EOP için yardım ve destek
-          href: help-and-support-for-eop.md
+        - name: İlkeler ve korumalar
+          href: how-policies-and-protections-are-combined.md
         - name: Microsoft 365'e gönderilen posta sorunlarını giderme
           href: troubleshooting-mail-sent-to-office-365.md
         - name: İstenmeyen posta önleme iletisi üst bilgileri
           href: anti-spam-message-headers.md
-        - name: EOP'de posta akışı zekası
-          href: mail-flow-intelligence-in-office-365.md
-        - name: 'Başvuru: İlkeler, uygulamalar ve yönergeler'
+        - name: 'İlkeler, uygulamalar ve yönergeler'
           href: reference-policies-practices-and-guidelines.md
         - name: Office 365'e posta gönderme
           href: sending-mail-to-office-365.md
+        - name: Office 365 kimlik sahtekarlıklarını önlemek için SPF'yi nasıl kullanır?
+          href: how-office-365-uses-spf-to-prevent-spoofing.md
         - name: Müşteri olmayanlar için hizmetler
           href: services-for-non-customers.md
-        - name: EOP'yi karma olarak Önemsiz E-posta klasörlerine istenmeyen posta gönderecek şekilde yapılandırma
+        - name: EOP'yi karma (Exchange) içindeki Gereksiz Email klasörlerine istenmeyen posta teslim edecek şekilde yapılandırma
           href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
+        - name: Kişisel veri sızıntılarını izleme
+          href: monitor-for-leaks-of-personal-data.md
+        - name: SIEM sunucu tümleştirmesi
+          href: siem-server-integration.md
+        - name: SIEM tehdit bilgileri tümleştirmesi
+          href: siem-integration-with-office-365-ti.md
+        - name: Office 365 için Defender'de ayrıcalıklı kimlik yönetimi
+          href: use-privileged-identity-management-in-defender-for-office-365.md
+        - name: IPv6 üzerinden anonim gelen e-posta iletileri
+          href: support-for-anonymous-inbound-email-messages-over-ipv6.md
+        - name: DKIM imzalı iletiler için destek
+          href: support-for-validation-of-dkim-signed-messages.md
+        - name: Office için Application Guard yükleme
+          href: install-app-guard.md
+        - name: SSS
+          items:
+            - name: Temsilci ile yönetim SSS
+              href: delegated-administration-faq.yml
+            - name: EOP genel SSS
+              href: eop-general-faq.yml
+            - name: 'EOP kuyruğa alınmış, ertelenmiş ve geri dönen iletiler SSS'
+              href: eop-queued-deferred-and-bounced-messages-faq.yml
     - name: Microsoft 365 Defender belgeleri
       items:
         - name: Microsoft 365 Defender

@@ -21,12 +21,12 @@ search.appverid:
 description: Microsoft 365'te bulunan araçları kullanarak güvenliği aşılmış bir e-posta hesabını tanımayı ve yanıtlamayı öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8a3ac455a70f4e84bf6ed4dae3893d491fa7d766
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: a4b491a8a1fa3b8db000874357c5d5dbfbe91d38
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496823"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850226"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Güvenliği Aşılmış Email Hesabına Yanıt Verme
 
@@ -181,14 +181,6 @@ Posta kutusunun posta gönderme engelini kaldırmak için, [istenmeyen posta e-p
 2. Alternatif e-posta hesabı olarak bu Exchange hesabını kullanan diğer tüm hizmetler tehlikeye girmiş olabilir. İlk olarak, Microsoft 365 aboneliğiniz için bu adımları uygulayın ve ardından diğer hesaplarınız için bu adımları uygulayın.
 
 3. Telefon numaraları ve adresler gibi iletişim bilgilerinizin doğru olduğundan emin olun.
-
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Microsoft 365'i bir siber güvenlik uzmanı gibi güvenli bir şekilde sağlama
-
-Microsoft 365 aboneliğiniz, verilerinizi ve kullanıcılarınızı korumak için kullanabileceğiniz güçlü bir güvenlik özellikleri kümesiyle birlikte gelir.  Microsoft 365 kiracınızın güvenliğini sağlamak için Microsoft tarafından önerilen en iyi yöntemleri uygulamak [için Microsoft 365 güvenlik yol haritası - İlk 30 gün, 90 gün ve sonrasındaki en önemli öncelikleri](security-roadmap.md) kullanın.
-
-- İlk 30 günde gerçekleştirecek görevler. Bunlar anında etkilenir ve kullanıcılarınız için düşük etkiye sahiptir.
-- 90 gün içinde gerçekleştirecek görevler. Bunların planlanıp uygulanması biraz daha zaman alır ancak güvenlik duruşunuzu büyük ölçüde geliştirir.
-- 90 günden fazla. Bu geliştirmeler ilk 90 günlük çalışmanızda derlemektedir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

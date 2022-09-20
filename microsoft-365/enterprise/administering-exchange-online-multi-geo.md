@@ -6,44 +6,44 @@ author: chrisda
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 ms.localizationpriority: medium
 description: PowerShell ile Microsoft 365 ortamınızda çok coğrafi Exchange Online ayarlarını yönetmeyi öğrenin.
-ms.openlocfilehash: 4b0b02fa9ea974784ec93efe83520faed5fd05bd
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 9a8c9d82df0b5ded764b117583059c6ab0345d8a
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130877"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851490"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Çok coğrafi bir ortamda Exchange Online posta kutularını yönetme
 
-Exchange Online PowerShell, Microsoft 365 ortamınızdaki çok coğrafi özellikleri görüntülemek ve yapılandırmak için gereklidir. Exchange Online PowerShell'e bağlanmak için bkz. [PowerShell'Exchange Online Bağlan](/powershell/exchange/connect-to-exchange-online-powershell).
+Exchange Online PowerShell, Microsoft 365 ortamınızda çok coğrafi özellikleri görüntülemek ve yapılandırmak için gereklidir. Exchange Online PowerShell'e bağlanmak için bkz[. Exchange Online PowerShell'e bağlanma](/powershell/exchange/connect-to-exchange-online-powershell).
 
-Kullanıcı nesnelerinde **PreferredDataLocation** özelliğini görmek için v1.x'te [Microsoft Azure Active Directory PowerShell Modülü](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 veya üzeri gerekir. AAD Bağlan aracılığıyla AAD ile eşitlenen kullanıcı nesnelerinin **PreferredDataLocation** değerleri AAD PowerShell aracılığıyla doğrudan değiştirilemez. Yalnızca bulut kullanıcı nesneleri AAD PowerShell aracılığıyla değiştirilebilir. Azure AD PowerShell'e bağlanmak için bkz. [PowerShell'e Bağlan](connect-to-microsoft-365-powershell.md).
+Kullanıcı nesnelerinde **PreferredDataLocation** özelliğini görmek için v1.x'te [Microsoft Azure Active Directory PowerShell Modülü](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 veya üzeri gerekir. AAD Connect aracılığıyla AAD'ye eşitlenen kullanıcı nesnelerinin **PreferredDataLocation** değeri AAD PowerShell aracılığıyla doğrudan değiştirilemez. Yalnızca bulut kullanıcı nesneleri AAD PowerShell aracılığıyla değiştirilebilir. Azure AD PowerShell'e bağlanmak için bkz. [PowerShell'e bağlanma](connect-to-microsoft-365-powershell.md).
 
 çok coğrafi Exchange Online ortamlarda, kiracınıza coğrafi bölge eklemek için el ile herhangi bir adım uygulamanız gerekmez. Çok coğrafi konumun Exchange Online için hazır olduğunu belirten İleti Merkezi gönderisini aldıktan sonra, kullanabileceğiniz tüm coğrafi bölgeler hazır ve yapılandırılır.
 
-## <a name="connect-directly-to-a-geo-location-using-exchange-online-powershell"></a>Exchange Online PowerShell kullanarak doğrudan coğrafi konuma Bağlan
+## <a name="connect-directly-to-a-geo-location-using-exchange-online-powershell"></a>Exchange Online PowerShell kullanarak coğrafi konuma doğrudan bağlanma
 
 Genellikle, Exchange Online PowerShell merkezi coğrafi konuma bağlanır. Ancak doğrudan uydu coğrafi konumlarına da bağlanabilirsiniz. Performans geliştirmeleri nedeniyle, yalnızca bu konumdaki kullanıcıları yönetirken doğrudan uydu coğrafi konumuna bağlanmanızı öneririz.
 
-EXO V2 modülünü yükleme ve kullanma gereksinimleri [, EXO V2 modülünü yükleme ve koruma](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module) başlığında açıklanmıştır.
+Exchange Online PowerShell modülünü yükleme ve kullanma gereksinimleri, [Exchange Online PowerShell modülünü yükleme ve koruma](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module) başlığında açıklanmıştır.
 
-Exchange Online PowerShell'i belirli bir coğrafi konuma bağlamak için *ConnectionUri* parametresi normal bağlantı yönergelerinden farklıdır. Komutların ve değerlerin geri kalanı aynıdır.
+Exchange Online PowerShell'i belirli bir coğrafi konuma bağlamak için _ConnectionUri_ parametresi normal bağlantı yönergelerinden farklıdır. Komutların ve değerlerin geri kalanı aynıdır.
 
 Özellikle, _ConnectionUri_ değerinin `?email=<emailaddress>` sonuna değeri eklemeniz gerekir. `<emailaddress>` hedef coğrafi konumdaki **herhangi bir** posta kutusunun e-posta adresidir. Bu posta kutusuna ilişkin izinleriniz veya kimlik bilgilerinizle olan ilişkinin bir faktörü yoktur; e-posta adresi Exchange Online PowerShell'e nereye bağlanacaklarını söyler.
 
-Microsoft 365 veya Microsoft 365 GCC müşterilerin genellikle Exchange Online PowerShell'e bağlanmak için _ConnectionUri_ parametresini kullanmaları gerekmez. Ancak, belirli bir coğrafi konuma bağlanmak için _connectionUri_ parametresini kullanmanız gerekir, böylece değeri kullanabilirsiniz `?email=<emailaddress>` .
+Microsoft 365 veya Microsoft 365 GCC müşterilerinin genellikle Exchange Online PowerShell'e bağlanmak için _ConnectionUri_ parametresini kullanması gerekmez. Ancak, belirli bir coğrafi konuma bağlanmak için _connectionUri_ parametresini kullanmanız gerekir, böylece değeri kullanabilirsiniz `?email=<emailaddress>` .
 
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Exchange Online PowerShell'de coğrafi konuma Bağlan
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Exchange Online PowerShell'de coğrafi konuma bağlanma
 
 Aşağıdaki bağlantı yönergeleri, çok faktörlü kimlik doğrulaması (MFA) için yapılandırılmış veya yapılandırılmamış hesaplarda çalışır.
 
-1. Windows PowerShell bir pencerede aşağıdaki komutu çalıştırarak EXO V2 modülünü yükleyin:
+1. PowerShell penceresinde, aşağıdaki komutu çalıştırarak Exchange Online PowerShell modülünü yükleyin:
 
    ```powershell
    Import-Module ExchangeOnlineManagement
@@ -59,7 +59,7 @@ Aşağıdaki bağlantı yönergeleri, çok faktörlü kimlik doğrulaması (MFA)
 
 ## <a name="view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization"></a>Exchange Online kuruluşunuzda yapılandırılan kullanılabilir coğrafi konumları görüntüleme
 
-Microsoft 365 Multi-Geo'da yapılandırılmış coğrafi konumların listesini görmek için PowerShell Exchange Online de aşağıdaki komutu çalıştırın:
+Microsoft 365 Multi-Geo'da yapılandırılmış coğrafi konumların listesini görmek için PowerShell'Exchange Online aşağıdaki komutu çalıştırın:
 
 ```powershell
 Get-OrganizationConfig | Select -ExpandProperty AllowedMailboxRegions | Format-Table
@@ -108,7 +108,7 @@ MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>Mevcut yalnızca bulut posta kutusunu belirli bir coğrafi konuma taşıma
 
-Yalnızca bulut kullanıcısı, AAD Bağlan aracılığıyla kiracıyla eşitlenmemiş bir kullanıcıdır. Bu kullanıcı doğrudan Azure AD oluşturuldu. Windows PowerShell için Azure AD Modülündeki **Get-MsolUser** ve **Set-MsolUser** cmdlet'lerini kullanarak yalnızca bulut kullanıcısının posta kutusunun depolanacağı coğrafi konumu görüntüleyin veya belirtin.
+Yalnızca bulut kullanıcısı, AAD Connect aracılığıyla kiracıyla eşitlenmemiş bir kullanıcıdır. Bu kullanıcı doğrudan Azure AD oluşturuldu. Windows PowerShell için Azure AD Modülündeki **Get-MsolUser** ve **Set-MsolUser** cmdlet'lerini kullanarak yalnızca bulut kullanıcısının posta kutusunun depolanacağı coğrafi konumu görüntüleyin veya belirtin.
 
 Kullanıcının **PreferredDataLocation** değerini görüntülemek için powershell Azure AD şu söz dizimini kullanın:
 
@@ -136,7 +136,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 > [!NOTE]
 >
-> - Daha önce belirtildiği gibi, şirket içi Active Directory eşitlenmiş kullanıcı nesneleri için bu yordamı kullanamazsınız. Active Directory'de **PreferredDataLocation** değerini değiştirmeniz ve AAD Bağlan kullanarak eşitlemeniz gerekir. Daha fazla bilgi için bkz. [Azure Active Directory Bağlan eşitleme: Microsoft 365 kaynaklar için tercih edilen veri konumunu yapılandırma](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+> - Daha önce belirtildiği gibi, şirket içi Active Directory eşitlenmiş kullanıcı nesneleri için bu yordamı kullanamazsınız. Active Directory'de **PreferredDataLocation** değerini değiştirmeniz ve AAD Connect kullanarak eşitlemeniz gerekir. Daha fazla bilgi için bkz. [Azure Active Directory Connect eşitlemesi: Microsoft 365 kaynakları için tercih edilen veri konumunu yapılandırma](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 >
 > - Posta kutusunun yeni bir coğrafi konuma taşınma süresi çeşitli faktörlere bağlıdır:
 >
@@ -180,7 +180,7 @@ Belirli bir coğrafi konumda yeni bir posta kutusu oluşturmak için şu adımla
 
 - **PreferredDataLocation** değerini ayarladığınız anda bir lisans atayın.
 
-Belirli bir coğrafi konumda yeni bir yalnızca bulut lisanslı kullanıcı (AAD Bağlan eşitlenmemiş) oluşturmak için powershell Azure AD de aşağıdaki söz dizimini kullanın:
+Belirli bir coğrafi konumda yeni bir yalnızca bulut lisanslı kullanıcı (AAD Connect eşitlenmedi) oluşturmak için powershell Azure AD aşağıdaki söz dizimini kullanın:
 
 ```powershell
 New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>" [-FirstName <FirstName>] [-LastName <LastName>] [-Password <Password>] [-LicenseAssignment <AccountSkuId>] -PreferredDataLocation <GeoLocationCode>
@@ -207,7 +207,7 @@ Azure AD PowerShell'de yeni kullanıcı hesapları oluşturma ve LicenseAssignme
 
 ## <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo-location"></a>Mevcut şirket içi posta kutularını belirli bir coğrafi konuma ekleme
 
-[EAC'deki Geçiş panosu](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331) ve Exchange Online PowerShell'deki [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) cmdlet'i de dahil olmak üzere bir posta kutusunu şirket içi Exchange kuruluştan Exchange Online geçirmek için standart ekleme araçlarını ve işlemlerini kullanabilirsiniz.
+[EAC'deki Geçiş panosu](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331) ve Exchange Online PowerShell'deki [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) cmdlet'i dahil olmak üzere bir posta kutusunu şirket içi Exchange kuruluşundan Exchange Online geçirmek için standart ekleme araçlarını ve işlemlerini kullanabilirsiniz.
 
 İlk adım, eklenecek her posta kutusu için bir kullanıcı nesnesi olduğunu ve Azure AD doğru **PreferredDataLocation** değerinin yapılandırıldığını doğrulamaktır. Ekleme araçları **PreferredDataLocation** değerine saygı gösterir ve posta kutularını doğrudan belirtilen coğrafi konuma geçirir.
 
@@ -215,7 +215,7 @@ Alternatif olarak, Exchange Online PowerShell'de [New-MoveRequest](/powershell/m
 
 1. Eklenecek her posta kutusu için kullanıcı nesnesinin mevcut olduğunu ve **PreferredDataLocation** öğesinin Azure AD istenen değere ayarlandığını doğrulayın. **PreferredDataLocation** değeri, Exchange Online karşılık gelen posta kullanıcı nesnesinin **MailboxRegion** özniteliğiyle eşitlenir.
 
-2. Bu konunun önceki bölümlerinde yer alan bağlantı yönergelerini kullanarak doğrudan belirli bir uydu coğrafi konumuna Bağlan.
+2. Bu konunun önceki bölümlerinde yer alan bağlantı yönergelerini kullanarak doğrudan belirli bir uydu coğrafi konumuna bağlanın.
 
 3. Exchange Online PowerShell'de, aşağıdaki komutu çalıştırarak bir değişkende posta kutusu geçişi gerçekleştirmek için kullanılan şirket içi yönetici kimlik bilgilerini depolayın:
 
@@ -229,7 +229,7 @@ Alternatif olarak, Exchange Online PowerShell'de [New-MoveRequest](/powershell/m
    New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>
    ```
 
-5. Şirket içi Exchange şu anda bağlı olduğunuz uydu coğrafi konumuna geçirmeniz gereken her posta kutusu için 4. adımı yineleyin.
+5. Şirket içi Exchange'den şu anda bağlı olduğunuz uydu coğrafi konumuna geçirmeniz gereken her posta kutusu için 4. adımı yineleyin.
 
 6. Başka posta kutularını farklı uydu coğrafi konumlarına geçirmeniz gerekiyorsa, her bir konum için 2 ile 4 arasındaki adımları yineleyin.
 

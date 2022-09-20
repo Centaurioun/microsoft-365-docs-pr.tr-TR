@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: f312b426a94d1232f13157614e4a33a660d80a0b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ec8a5c030e56e9faae5d94dc636bea4c9c2351a7
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67702918"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850410"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Saldırı yüzeyi azaltma kurallarını etkinleştirme
 
@@ -281,6 +281,9 @@ Dışlama eklemek için [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReduc
 5. İlkeyi oluşturmak için ayarları gözden geçirin ve **İleri'yi** seçin.
 
 6. İlke oluşturulduktan sonra **Kapat**'ı seçin.
+
+> [!WARNING]
+> Gerçek bir zorlama olmadan uyumlu olarak işaretlenen Sunucu İşletim Sistemi sürümlerinde Saldırı Yüzeyi Azaltma'nın uygulanabilirliğiyle ilgili bilinen bir sorun vardır. Şu anda bunun ne zaman düzeltileceğine ilişkin bir ETA yoktur.
 
 ### <a name="group-policy"></a>Grup İlkesi
 

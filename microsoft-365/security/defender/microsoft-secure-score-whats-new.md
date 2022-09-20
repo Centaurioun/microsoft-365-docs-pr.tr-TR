@@ -21,12 +21,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: e5bea982a1cbc776a9529532bbbac4da4199fb4a
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 15d8001e27ca2ddd365370deba1c92af389701ba
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482592"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850270"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Güvenli Puan'daki yenilikler
 
@@ -37,6 +37,27 @@ Microsoft Secure Score'u güvenlik duruşunuzun daha iyi bir temsilcisi yapmak i
 Ne kadar çok geliştirme eylemi gerçekleştirirseniz, Güvenli Puanınız o kadar yüksek olur. Daha fazla bilgi için bkz. [Microsoft Güvenli Puanı](microsoft-secure-score.md).
 
 Microsoft Güvenli Puanı'na [Microsoft 365 Defender portalından](microsoft-365-defender-portal.md) ulaşabilirsiniz<https://security.microsoft.com/securescore>.
+
+## <a name="september-2022"></a>Eylül 2022
+
+Kimlik avı önleme ilkelerine yönelik yeni Office 365 için Microsoft Defender önerileri artık Güvenli Puan geliştirme eylemleri olarak kullanılabilir:
+
+- Kimlik avı e-posta düzeyi eşiğini 2 veya daha yüksek olarak ayarlama
+- Kimliğine bürünülen kullanıcı korumasını etkinleştirme
+- Kimliğine bürünülen etki alanı korumasını etkinleştirme
+- Posta kutusu zekası özelliğinin etkinleştirildiğinden emin olun
+- Kimliğe bürünme koruması için zekanın etkinleştirildiğinden emin olun
+- Kimliğine bürünülen kullanıcılardan algılanan iletileri karantinaya alma
+- Kimliğine bürünülen etki alanlarından algılanan iletileri karantinaya alma
+- Posta kutusu zekası tarafından kimliğine bürünülen kullanıcılar olarak algılanan iletileri taşıma
+- 'İlk temas emniyet ipucunu göster' seçeneğini etkinleştirin
+- Kullanıcının kimliğe bürünme güvenlik ipucunu etkinleştirme
+- Etki alanı kimliğe bürünme güvenlik ipucunu etkinleştirme
+- Kullanıcının kimliğine bürünme olağan dışı karakterlerin güvenlik ipucunu etkinleştirme
+
+Yeni bir SharePoint Online önerisi artık Güvenli Puan geliştirme eylemi olarak kullanılabilir:
+
+- SharePoint Online'da etkin olmayan kullanıcıların oturumunu kapatma
 
 ## <a name="august-2022"></a>Ağustos 2022
 

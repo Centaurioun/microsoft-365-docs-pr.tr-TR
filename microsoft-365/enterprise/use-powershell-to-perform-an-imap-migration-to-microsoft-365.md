@@ -3,7 +3,7 @@ title: Microsoft 365'e IMAP geçişi gerçekleştirmek için PowerShell'i kullan
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/17/2020
+ms.date: 09/19/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: PowerShell kullanarak Microsoft 365'e İnternet Posta Erişim Protokolü (IMAP) geçişi gerçekleştirmeyi öğrenin.
-ms.openlocfilehash: a01eaf367f6780aafe5491e5da66c6aae777040e
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 7189eba0df7cb89a55f323b69fec0050965e48a2
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671907"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851380"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Microsoft 365'e IMAP geçişi gerçekleştirmek için PowerShell'i kullanma
 

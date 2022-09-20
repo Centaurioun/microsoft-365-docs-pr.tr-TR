@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: MASAÜSTÜ, mobil ve web için Office uygulamalarında duyarlılık etiketlerini yönetmek için BT yöneticilerine yönelik bilgiler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b8090ff49a8371b4ad264030f9ebb845bf23e690
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 2062f1d03d23c3a2de029c862a332a089f2dabcc
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/20/2022
-ms.locfileid: "67817850"
+ms.locfileid: "67851622"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office uygulamalarında duyarlılık etiketlerini yönetme
 
@@ -64,7 +64,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 |[Etiketi el ile uygulama, değiştirme veya kaldırma](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Çok dilli destek](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | İnceleme altında |
 |Yeni belgelere [varsayılan etiket uygulama](sensitivity-labels.md#what-label-policies-can-do)                                         | Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|Mevcut belgelere [varsayılan etiket uygulama](sensitivity-labels.md#what-label-policies-can-do) | Güncel Kanala Dağıtım: 2208+ <br /><br> Aylık Kurumsal Kanal: İnceleme altında  <br /><br> Semi-Annual Enterprise Channel: İnceleme altında | 16,63+'a dağıtıyor | İnceleme altında | İnceleme altında | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
+|Mevcut belgelere [varsayılan etiket uygulama](sensitivity-labels.md#what-label-policies-can-do) | Güncel Kanal: 2208+ <br /><br> Aylık Kurumsal Kanal: 2207+  <br /><br> Semi-Annual Enterprise Channel: İnceleme altında | 16.63+ | İnceleme altında | İnceleme altında | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Etiketi değiştirmek için gerekçe gerektir](sensitivity-labels.md#what-label-policies-can-do)                     | Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+  <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Özel yardım sayfasına yardım bağlantısı sağlama](sensitivity-labels.md#what-label-policies-can-do)                       | Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[İçeriği işaretleme](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | Güncel Kanal: 1910+ <br /><br> Aylık Kurumsal Kanal: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -78,7 +78,7 @@ Listelenen sayılar, her özellik için gereken en düşük Office uygulaması s
 |[İçeriğe otomatik olarak bir hassasiyet etiketi uygulama](apply-sensitivity-label-automatically.md) <br /> - Eğitilebilir sınıflandırıcıları kullanma                    | Güncel Kanal: 2105+ <br /><br> Aylık Kurumsal Kanal: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | İnceleme altında | İnceleme altında | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Etiketlenmiş ve şifrelenmiş belgeler için [birlikte yazma ve Otomatik Kaydetme](sensitivity-labels-coauthoring.md) desteği | Güncel Kanal: 2107+ <br /><br> Aylık Kurumsal Kanal: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Evet - kabul et](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[PDF desteği](#pdf-support)| Güncel Kanal: 2208+ <br /><br> Aylık Kurumsal Kanal: 2208+ <br /><br> Semi-Annual Enterprise Channel: İnceleme altında|  İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
-|[Duyarlılık çubuğu](#sensitivity-bar) ve [görüntü etiketi rengi](#label-colors) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım |  Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım | İnceleme altında | İnceleme altında | İnceleme altında |
+|[Duyarlılık çubuğu](#sensitivity-bar) ve [görüntü etiketi rengi](#label-colors) | Önizleme: [Beta Kanalına](https://office.com/insider) Dağıtım | İnceleme altında | İnceleme altında | İnceleme altında | İnceleme altında |
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook'ta duyarlılık etiketi özellikleri
 
@@ -453,11 +453,11 @@ Son kullanıcı belgeleri için bkz. [Office dosyalarından korumalı PDF'ler ol
 
 Word, Excel ve PowerPoint'te yerleşik etiketler için önizlemede yeni desteklenir, ancak henüz Outlook veya Web için Office için desteklenmez, en düşük sürümleri belirlemek için bu sayfadaki [özellikler](#support-for-sensitivity-label-capabilities-in-apps) bölümündeki tablolara bakın.
 
-Desteklenen uygulamalar için duyarlılık etiketleri artık bir duyarlılık çubuğunda görüntülenir ve üst pencere çubuğunda dosya adının yanında görüntülenir.  Örneğin:
+Desteklenen uygulamalar için duyarlılık etiketleri artık üst pencere çubuğundaki dosya adının yanında bir duyarlılık çubuğunda görüntülenir. Örneğin:
 
 ![Pencere başlık çubuğunda duyarlılık etiketleri.](../media/sensitivity-bar-example.png)
 
-Etiketler ve etiket seçme veya değiştirme özelliği hakkındaki bilgiler, kaydetme ve yeniden adlandırma, dışarı aktarma, paylaşma, yazdırma ve [PDF'ye dönüştürme](#pdf-support) gibi kullanıcı iş akışlarıyla tümleştirilir.
+Etiketler ve etiket seçme veya değiştirme özelliği hakkındaki bilgiler, kaydetme ve yeniden adlandırma, dışarı aktarma, paylaşma, yazdırma ve [PDF'ye dönüştürme](#pdf-support) gibi kullanıcı iş akışlarıyla tümleştirilir. Daha fazla bilgi ve örnek ekran görüntüleri için bkz. [Windows için Office'te yeni duyarlılık çubuğu](https://insider.office.com/blog/sensitivity-bar-in-office-for-windows) blog gönderisi duyurusu.
 
 Bu yüksek görünürlüğün bir parçası olarak, bu etiketler renkleri de destekler. Daha fazla bilgi için sonraki bölüme bakın.
 
@@ -518,7 +518,3 @@ Ayrıca [, denetim günlüğü kayıtlarını dışarı aktarıp yapılandırır
     - [Duyarlılık etiketlerini otomatik olarak uygulama veya önerme ile ilgili bilinen sorunlar](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
 - [Office dosyalarından korumalı PDF'ler oluşturma](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4)
-
-
-
-

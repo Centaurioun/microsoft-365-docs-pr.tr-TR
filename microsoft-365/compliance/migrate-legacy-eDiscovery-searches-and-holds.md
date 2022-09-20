@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: ac9533beef61ddbe373a1ebeb0f3088f06d1f96b
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 2fbcc2946bb52fbf0f6d9f9cdd326e0ee3356730
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/20/2022
-ms.locfileid: "67817322"
+ms.locfileid: "67850314"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Eski eBulma aramalarını ve tutmalarını uyumluluk portalına geçirme
 
@@ -33,7 +33,7 @@ Müşterilerin yeni ve geliştirilmiş işlevsellikten yararlanmasına yardımc�
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-- Exchange Online V2 modülünü yüklemeniz gerekir. Yönergeler için bkz. [EXO V2 modülünü yükleme ve koruma](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+- Exchange Online PowerShell modülünü yüklemeniz gerekir. Yönergeler için bkz. [Exchange Online PowerShell modülünü yükleme ve koruma](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
 - Bu makalede açıklanan PowerShell komutlarını çalıştırmak için uyumluluk portalında eBulma Yöneticisi rol grubunun üyesi olmanız gerekir. Ayrıca <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">, Exchange yönetim merkezindeki</a> Bulma Yönetimi rol grubunun da üyesi olmanız gerekir.
 

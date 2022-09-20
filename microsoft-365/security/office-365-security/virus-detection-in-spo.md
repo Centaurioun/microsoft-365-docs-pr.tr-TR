@@ -20,12 +20,12 @@ description: SharePoint Online'ın kullanıcıların karşıya yüklediği dosya
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: e24219c6ef4298410e02efb010cd49c6f2c1206f
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 948f5b58f7c5113f006c0fd6ccb4d84f0ce52c9d
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672809"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851006"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online, OneDrive ve Microsoft Teams'de yerleşik virüs koruması
 
@@ -38,7 +38,7 @@ ms.locfileid: "67672809"
 Microsoft 365, kullanıcıların SharePoint Online, OneDrive ve Microsoft Teams'e yüklediği dosyaları taramak için yaygın bir virüs algılama altyapısı kullanır. Bu koruma SharePoint Online, OneDrive ve Microsoft Teams içeren tüm aboneliklere dahildir.
 
 > [!IMPORTANT]
-> Yerleşik virüsten koruma özellikleri, virüsleri kapsamaya yardımcı olmak için bir yoldur. Bunlar ortamınız için kötü amaçlı yazılımlara karşı tek bir savunma noktası olarak tasarlanmamıştır. Tüm müşterilerin çeşitli katmanlarda kötü amaçlı yazılımdan korumayı araştırmalarını ve uygulamalarını ve kurumsal altyapılarının güvenliğini sağlamak için en iyi yöntemleri uygulamalarını öneririz. Stratejiler ve en iyi yöntemler hakkında daha fazla bilgi için bkz [. Güvenlik yol haritası](security-roadmap.md).
+> Yerleşik virüsten koruma özellikleri, virüsleri kapsamaya yardımcı olmak için bir yoldur. Bunlar ortamınız için kötü amaçlı yazılımlara karşı tek bir savunma noktası olarak tasarlanmamıştır. Tüm müşterilerin çeşitli katmanlarda kötü amaçlı yazılımdan korumayı araştırmalarını ve uygulamalarını ve kurumsal altyapılarının güvenliğini sağlamak için en iyi yöntemleri uygulamalarını öneririz. 
 
 ## <a name="what-happens-if-an-infected-file-is-uploaded-to-sharepoint-online"></a>Virüslü bir dosya SharePoint Online'a yüklenirse ne olur?
 

@@ -1,5 +1,5 @@
 ---
-title: Tehdit araştırması & yanıt özellikleri - Office 365 için Microsoft Defender Plan 2
+title: Office 365 için Microsoft Defender'da tehdit araştırması & yanıt özellikleri
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -21,12 +21,12 @@ ms.custom:
 description: Office 365 için Microsoft Defender Planı'nda tehdit araştırması ve yanıt özellikleri hakkında bilgi edinin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8cd390c394b90e6b6abce77d5f351aa5daa48e63
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 0227662a5a4531a609f1011ca8a85fbcfd01ba04
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67590798"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851666"
 ---
 # <a name="threat-investigation-and-response"></a>Tehdit araştırması ve yanıtı
 
@@ -80,7 +80,6 @@ Uçuş güvenlik olaylarının listesini görmek için Olaylar listesini (buna A
 
 konumundaki Microsoft 365 Defender portalında <https://security.microsoft.com>kuruluşunuzun geçerli olaylarının listesini görüntülemek için **Olaylar & uyarılar** \> **Olaylar'a** gidin. Ya da doğrudan **Olaylar** sayfasına gitmek için kullanın <https://security.microsoft.com/incidents>.
 
-:::image type="content" source="../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png" alt-text="Güvenlik & Uyumluluk Merkezi'ndeki Gözden Geçir sayfası" lightbox="../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png":::
 
 ### <a name="attack-simulation-training"></a>Saldırı simülasyonu eğitimi
 
@@ -114,7 +113,7 @@ Office 365 için Microsoft Defender rol tabanlı erişim denetimini kullanır. �
 
 |Etkinlik|Roller ve izinler|
 |---|---|
-|Microsoft Defender Güvenlik Açığı Yönetimi panosunu (veya yeni [Güvenlik panosunu](security-dashboard.md)) kullanma <p> Son tehditler veya geçerli tehditler hakkındaki bilgileri görüntüleme|Aşağıdakilerden biri: <ul><li>**Genel Yönetici**</li><li>**Güvenlik Yöneticisi**</li><li>**Güvenlik Okuyucusu**</li></ul> <p> Bu roller Azure Active Directory'de (<https://portal.azure.com>) veya Microsoft 365 yönetim merkezi (<https://admin.microsoft.com> ) atanabilir.|
+|Microsoft Defender Güvenlik Açığı Yönetimi panosunu kullanma <p> Son tehditler veya geçerli tehditler hakkındaki bilgileri görüntüleme|Aşağıdakilerden biri: <ul><li>**Genel Yönetici**</li><li>**Güvenlik Yöneticisi**</li><li>**Güvenlik Okuyucusu**</li></ul> <p> Bu roller Azure Active Directory'de (<https://portal.azure.com>) veya Microsoft 365 yönetim merkezi (<https://admin.microsoft.com> ) atanabilir.|
 |Tehditleri analiz etmek için [Explorer'ı (ve gerçek zamanlı algılamaları)](threat-explorer.md) kullanma|Aşağıdakilerden biri: <ul><li>**Genel Yönetici**</li><li>**Güvenlik Yöneticisi**</li><li>**Güvenlik Okuyucusu**</li></ul> <p> Bu roller Azure Active Directory'de (<https://portal.azure.com>) veya Microsoft 365 yönetim merkezi (<https://admin.microsoft.com> ) atanabilir.|
 |Olayları Görüntüle (Araştırma olarak da adlandırılır) <p> Olaya e-posta iletileri ekleme|Aşağıdakilerden biri: <ul><li>**Genel Yönetici**</li><li>**Güvenlik Yöneticisi**</li><li>**Güvenlik Okuyucusu**</li></ul> <p> Bu roller Azure Active Directory'de (<https://portal.azure.com>) veya Microsoft 365 yönetim merkezi (<https://admin.microsoft.com> ) atanabilir.|
 |Bir olayda e-posta eylemlerini tetikleme <p> Şüpheli e-posta iletilerini bulma ve silme|Aşağıdakilerden biri: <ul><li>**Genel Yönetici**</li><li>**Güvenlik Yöneticisi** ve **Arama ve Temizleme** rolü</li></ul> <p> **Genel Yönetici** ve **Güvenlik Yöneticisi** rolleri Azure Active Directory'de (<https://portal.azure.com>) veya Microsoft 365 yönetim merkezi (<https://admin.microsoft.com> ) atanabilir. <p> **Arama ve Temizleme** rolü, Microsoft 36 Defender portalındaki (<https://security.microsoft.com> ) **Email & işbirliği rollerine** atanmalıdır.|

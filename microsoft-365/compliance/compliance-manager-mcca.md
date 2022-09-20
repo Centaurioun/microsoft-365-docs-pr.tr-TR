@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Uyumluluk Yöneticisi ile hızlı bir şekilde çalışmaya başlamak için Microsoft Purview için Yapılandırma Çözümleyicisi'ni nasıl kullanacağınızı öğrenin.
-ms.openlocfilehash: 96d44dd310361e8a9ca2c4239448ced863abaddc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 437e8cc730cf3df9b3034f85d2dc9a615cb5ca5d
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621171"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851180"
 ---
 # <a name="configuration-analyzer-for-microsoft-purview-camp"></a>Microsoft Purview için Yapılandırma Çözümleyicisi (CAMP)
 
@@ -47,9 +47,9 @@ CAMP'e erişmek ve bunları kullanmak ve raporlardaki bilgilere erişmek için b
 
 WINDOWS POWERSHELL kullanarak CAMP aracını yükleyebilirsiniz. Aracı indirip yükledikten sonra, raporları çalıştırmak için bu adımları yinelemeniz gerekmez. CAMP'i her açtığınızda oturum açmanızı ister ve yeni, güncelleştirilmiş bir rapor oluşturur.
 
-### <a name="step-1-install-the-exchange-online-powershell-v2-module"></a>1. Adım: Exchange Online PowerShell V2 modülünü yükleme
+### <a name="step-1-install-the-exchange-online-powershell-module"></a>1. Adım: Exchange Online PowerShell modülünü yükleme
 
-Başlamak için PowerShell galerisinde bulunan Exchange Online PowerShell modülüne (v2.0.3 veya üzeri) ihtiyacınız olacaktır. Yükleme yönergeleri için bkz. [EXO V2 modülünü yükleme ve koruma](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+Başlamak için PowerShell galerisinde bulunan Exchange Online PowerShell modülüne (v2.0.3 veya üzeri) ihtiyacınız olacaktır. Yükleme yönergeleri için bkz. [Exchange Online PowerShell modülünü yükleme ve koruma](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
 ### <a name="step-2-install-camp"></a>2. Adım: CAMP'i yükleme
 
@@ -109,7 +109,7 @@ Raporu belirli bir konuma göre çalıştırmak için şu yönergeleri izleyin:
 
   | Giriş |  Ülke veya Bölge |
   | :------------- | :------------: |
-  | 1 | Asia-Pacific |
+  | 1 | Asya Pasifik |
   | 2 | Avustralya |
   | 3 | Kanada |
   | 4 | Avrupa (Fransa hariç) / Orta Doğu / Afrika |

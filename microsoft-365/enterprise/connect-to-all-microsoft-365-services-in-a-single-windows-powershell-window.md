@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Özet: Tek bir PowerShell penceresinde tüm Microsoft 365 hizmetlerine bağlanın.'
-ms.openlocfilehash: 67ee0831a0d78a971982f75653ca49e760e61692
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: b133a4d1535005cb48447037ee0ec04937143234
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560383"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851424"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Tek bir PowerShell penceresinde tüm Microsoft 365 hizmetlerine bağlanma
 
@@ -57,7 +57,7 @@ PowerShell'in tek bir örneğinden tüm Microsoft 365'i yönetebilmeniz için a�
   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   - [SharePoint Online Yönetim Kabuğu](https://go.microsoft.com/fwlink/p/?LinkId=255251)
   - [Teams PowerShell Modülü](/microsoftteams/teams-powershell-overview)
-  - [PowerShell V2'Exchange Online](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
+  - [Exchange Online PowerShell modülünü yükleme ve koruma](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module)
   - [Teams PowerShell'e Genel Bakış](/microsoftteams/teams-powershell-overview)
 
 - PowerShell, Exchange Online, Office 365 için Defender ve Microsoft Purview uyumluluğu için imzalı betikleri çalıştıracak şekilde yapılandırılmalıdır. Yükseltilmiş bir PowerShell oturumunda ( **yönetici olarak çalıştırdığınız** bir PowerShell oturumu) aşağıdaki komutu çalıştırın.

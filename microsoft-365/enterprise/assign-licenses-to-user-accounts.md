@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Microsoft 365 lisanslarının kullanıcı hesaplarına bireysel olarak veya grup üyeliği temelinde nasıl atandığı açıklanır.
-ms.openlocfilehash: 7d81cbc3a261080a1e834e7d44fabea67042bb12
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 77fd3f911bd21c492390df2cd083f399b0bbfacf
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560735"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851468"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Kullanıcı hesaplarına Microsoft 365 lisansları atama
 
@@ -67,7 +67,7 @@ Daha fazla bilgi için bkz. [Azure AD'de grup tabanlı lisanslama](/azure/active
 
 Lisans atanmış uygun kullanıcı hesapları kümesiyle artık şunları yapmaya hazırsınız:
 
-- [Güvenlik uygulama](../security/office-365-security/security-roadmap.md)
+- [Güvenlik uygulama](/microsoft-365/security/office-365-security/overview)
 - [Microsoft 365 Uygulamaları gibi istemci yazılımlarını dağıtma](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [Cihaz yönetimini ayarlama](device-management-roadmap-microsoft-365.md)
 - [Hizmetleri ve uygulamaları yapılandırma](configure-services-and-applications.md)

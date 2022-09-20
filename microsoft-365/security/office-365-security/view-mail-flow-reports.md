@@ -19,12 +19,12 @@ description: Yöneticiler, Güvenlik & Uyumluluk Merkezi'ndeki Raporlar panosund
 ms.custom: ''
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 5dd1c851487efcc25c6a29975a3b3faa724329ac
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 26a6211e86266dad2705eb7024ad8a4b86e63e25
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671379"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851050"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'ndeki Raporlar panosunda posta akışı raporlarını görüntüleme
 
@@ -113,12 +113,3 @@ Daha fazla bilgi için bkz [. Güvenlik & Uyumluluk Merkezi'ndeki İzinler](perm
 > [!NOTE]
 > kullanıcıları Microsoft 365 yönetim merkezi karşılık gelen Azure Active Directory rolüne eklemek, kullanıcılara Güvenlik & Uyumluluk Merkezi'nde gerekli izinleri _ve_ Microsoft 365'teki diğer özellikler için izinleri verir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
 
-## <a name="related-topics"></a>İlgili konular
-
-[Güvenlik & Uyumluluk Merkezi'ndeki akıllı raporlar ve içgörüler](reports-and-insights-in-security-and-compliance.md)
-
-[Güvenlik & Uyumluluk Merkezi'nde posta akışı içgörüleri](mail-flow-insights-v2.md)
-
-[Güvenlik & Uyumluluk Merkezi'nde e-posta güvenlik raporlarını görüntüleme](view-email-security-reports.md)
-
-[Office 365 için Microsoft Defender için raporları görüntüleme](view-reports-for-mdo.md)

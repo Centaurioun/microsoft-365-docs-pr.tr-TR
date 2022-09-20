@@ -16,12 +16,12 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1d5867b8ecf641d849f3a186c11ab1ef51d3ccef
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 29f84a51f8156f3a238130ebd2b33f84c7ea5ef0
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694203"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851776"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>macOS'ta Uç Nokta için Microsoft Defender çekirdek uzantısı sorunlarını giderme
 
@@ -52,8 +52,8 @@ mdatp health
 ```
 ```Output
 ...
-real_time_protection_enabled                : false
-real_time_protection_available              : true
+real_time_protection_enabled                : true
+real_time_protection_available              : false
 ...
 ```
 

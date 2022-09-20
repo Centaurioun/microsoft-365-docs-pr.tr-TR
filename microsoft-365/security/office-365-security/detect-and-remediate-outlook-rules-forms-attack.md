@@ -18,12 +18,12 @@ description: Office 365'de Outlook kurallarını ve özel form ekleme saldırıl
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 108a03544b4ad7dcb889f2b1c3381dcae48ae6e7
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 55ecde2b4ded073e53b27abb72ebe22e25006c1b
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596081"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67850161"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Outlook Kurallarını ve Özel Form Ekleme Saldırılarını Algılama ve Düzeltme
 
@@ -236,16 +236,6 @@ Düzeltme ekleri ve güncelleştirmeler yüklü olsa bile, bir saldırganın "Uy
 EnableUnsafeClientMailRules anahtarını arayın. Oradaysa ve 1 olarak ayarlandıysa, Outlook güvenlik düzeltme eki geçersiz kılınmıştır ve bilgisayar Form/Kurallar saldırısına karşı savunmasızdır. Değer 0 ise, "Uygulamayı Başlat" eylemi devre dışı bırakılır. Outlook'un güncelleştirilmiş ve düzeltme eki uygulanmış sürümü yüklüyse ve bu kayıt defteri anahtarı yoksa, sistem bu saldırılara karşı savunmasız değildir.
 
 Şirket içi Exchange yüklemeleri olan müşteriler, Düzeltme ekleri bulunmayan eski Outlook sürümlerini engellemeyi göz önünde bulundurmalıdır. Bu işlemle ilgili ayrıntılar [Outlook istemci engellemesini yapılandırma](/exchange/configure-outlook-client-blocking-exchange-2013-help) makalesinde bulunabilir.
-
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Microsoft 365'i bir siber güvenlik uzmanı gibi güvenli bir şekilde sağlama
-
-Microsoft 365 aboneliğiniz, verilerinizi ve kullanıcılarınızı korumak için kullanabileceğiniz güçlü bir güvenlik özellikleri kümesiyle birlikte gelir. Microsoft 365 kiracınızın güvenliğini sağlamak için Microsoft tarafından önerilen en iyi yöntemleri uygulamak [için Microsoft 365 güvenlik yol haritası - İlk 30 gün, 90 gün ve sonrasındaki en önemli öncelikleri](security-roadmap.md) kullanın.
-
-- İlk 30 günde gerçekleştirecek görevler. Bunlar hemen etkili olur ve kullanıcılarınız için düşük etkiye sahiptir.
-
-- 90 gün içinde gerçekleştirecek görevler. Bunların planlanıp uygulanması biraz daha zaman alır ancak güvenlik duruşunuzu büyük ölçüde geliştirir.
-
-- 90 günden fazla. Bu geliştirmeler ilk 90 günlük çalışmanızda derlemektedir.
 
 ## <a name="see-also"></a>Ayrıca bkz:
 

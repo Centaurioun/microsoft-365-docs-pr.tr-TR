@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: Başkalarının Outlook'ta sizinle toplantı zamanlamasına izin vermek için Bookings'i benimle birlikte kullanın.
-ms.openlocfilehash: 44993db5aee7a322bb6cdfdc6afd5e08084a365c
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+ms.openlocfilehash: 6b35380769e00323dd91b2e7d816eeb98fcee241
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648669"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851094"
 ---
 # <a name="bookings-with-me"></a>Benimle Bookings
 
@@ -77,8 +77,23 @@ Daha fazla bilgi için bkz [. Benimle rezervasyonlar Microsoft 365 Yol Haritası
    ```PowerShell
      Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
    ```
-  
-  Daha fazla bilgi için bkz [. Set-SharingPolicy](/powershell/module/exchange/set-sharingpolicy).
+3.  Özelleştirilmiş bir SharingPolicy atanan posta kutuları için ilkenin etki alanlarından biri olarak Anonymous:SharingPolicyActio olması gerekir.
+
+   ```Powershell:
+      get-mailbox adam@contoso.com | Format-List SharingPolicy
+   ```
+
+   Komut döndürülüyorsa:
+
+   `SharingPolicy        : "contoso.onmicrosoft.com\Default Sharing (CONTOSO)"`
+
+   İlkeyi gerekli etki alanlarından biriyle güncelleştirmeniz gerekir:
+
+   ```Powershell
+   Set-SharingPolicy "Default Sharing (CONTOSO)" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
+   ```
+
+Daha fazla bilgi için bkz [. Set-SharingPolicy](/powershell/module/exchange/set-sharingpolicy).
 
 ## <a name="turn-bookings-with-me-on-or-off"></a>Bookings'i benimle birlikte açma veya kapatma
 

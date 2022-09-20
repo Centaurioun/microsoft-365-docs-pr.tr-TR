@@ -23,12 +23,12 @@ ms.collection:
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 8030547629167f0d2ac8840ab150f988380aa196
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 811938ba4c4b4e174e594bd3855112524771ec5e
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710861"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851688"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Sıfır Güven kimlik ve cihaz erişimi yapılandırmaları
 
@@ -89,7 +89,7 @@ Kuruluş için Microsoft 365 kimlik ve cihaz erişim yapılandırmalarına hızl
 
 ## <a name="intended-audience"></a>Hedeflenen hedef kitle
 
-Bu öneriler Azure AD (kimlik), Microsoft Intune (cihaz yönetimi) ve Microsoft Purview Bilgi Koruması (veri koruması) içeren Microsoft 365 bulut üretkenliği ve güvenlik hizmetleri hakkında bilgi sahibi olan kurumsal mimarlara ve BT uzmanlarına yöneliktir.
+Bu öneriler, Azure AD (kimlik), Microsoft Intune (cihaz yönetimi) ve Microsoft Purview Bilgi Koruması (veri koruması) gibi Microsoft 365 bulut üretkenliği ve güvenlik hizmetlerini bilen kurumsal mimarlara ve BT uzmanlarına yöneliktir.
 
 ### <a name="customer-environment"></a>Müşteri ortamı
 
@@ -180,12 +180,6 @@ Bu kılavuzda, onaylı uygulamaların kullanımını zorunlu kılmak ve bu uygul
 Bu kılavuz, Microsoft Teams, Exchange, SharePoint ve OneDrive gibi Microsoft 365 bulut hizmetlerine erişimi korumak için bir dizi ilkenin nasıl uygulandığını gösterir. Bu ilkeleri uygulamaya ek olarak, aşağıdaki kaynakları kullanarak kiracınız için koruma düzeyini yükseltmenizi öneririz:
 
 - [Daha fazla güvenlik için kiracınızı yapılandırma](tenant-wide-setup-for-increased-security.md)
-
-  Kiracınız için başlangıç noktası güvenliği için geçerli olan öneriler.
-
-- [Güvenlik yol haritası: İlk 30 gün, 90 gün ve sonrası için en önemli öncelikler](security-roadmap.md)
-
-  Günlüğe kaydetme, veri idaresi, yönetici erişimi ve tehdit koruması gibi öneriler.
 
 ### <a name="windows-11-or-windows-10-with-microsoft-365-apps-for-enterprise"></a>Kurumlar için Microsoft 365 Uygulamaları ile Windows 11 veya Windows 10
 

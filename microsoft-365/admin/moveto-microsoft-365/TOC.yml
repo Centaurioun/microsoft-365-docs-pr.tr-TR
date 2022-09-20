@@ -3,15 +3,15 @@
     - name: Genel bakış
       href: move-from-google-workspace-overview.md
     - name: Microsoft 365’e kaydolma
-      href: ../admin-overview/sign-up-for-office-365.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+      href: ../admin-overview/sign-up-for-office-365.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/breadcrumb/toc.json
     - name: Google geçişi için Microsoft 365'i ayarlayın
       href: set-up-microsoft-365-forgoogle.md
     - name: Windows cihazları için güvenlik ilkelerini ayarlayın
-      href: ../setup/secure-win-10-pcs.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+      href: /microsoft-365/business-premium/m365bp-protect-devices?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/breadcrumb/toc.json
     - name: Google Workspace Etki Alanı Ekleyin
       href: add-google-domain.md
     - name: Office uygulamalarını ve Microsoft Teams'i yükleyin
-      href: ../setup/install-applications.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+      href: ../setup/install-applications.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/breadcrumb/toc.json
     - name: 'E-posta, takvim ve kişileri Microsoft 365''e taşıyın'
       href: migrate-email.md
     - name: Etki alanınızı Microsoft 365'e bağlayın

@@ -15,15 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Yöneticiler, kullanıcılar tarafından bildirilen istenmeyen posta ve kimlik avı iletilerini toplamak için özel bir posta kutusunu (kullanıcı gönderimleri posta kutusu olarak da bilinir) nasıl tanımlayacağınızı öğrenebilir. Diğer ayarlar, kullanıcılar iletileri raporladığında raporlama deneyimini tamamlar.
+description: Yöneticiler, kullanıcılar tarafından bildirilen istenmeyen posta ve kimlik avı iletilerini toplamak için özel bir posta kutusunu (kullanıcı gönderimleri posta kutusu olarak da bilinir) tanımlamayı öğrenebilir. Diğer ayarlar, kullanıcılar iletileri raporladığında raporlama deneyimini tamamlar.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: b2f3f9b07c0d2d6c856fc786bf437bda76399ca1
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: e11b30d14a7aff37c6c33dd5e8ce36b0e922097b
+ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599571"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67851072"
 ---
 # <a name="user-reported-message-settings"></a>Kullanıcı tarafından bildirilen ileti ayarları
 
@@ -154,14 +154,14 @@ Posta kutusunun bu gereksinimleri karşıladığını doğruladıktan sonra, kul
 
   - **Gönderen olarak kullanılacak Office 365 e-posta adresini belirtin**: Bu ayarı seçin ve görüntülenen kutuya e-posta adresini girin.
   
-  - **Bildirimleri özelleştirme**: Yönetici tarafından incelenip bildirilen iletileri işaretledikten sonra gönderilen e-posta bildirimini özelleştirmek için bu bağlantıya tıklayın.
+  - **Bildirimleri özelleştirme**: Yönetici tarafından incelenip bildirilen bir iletiyi işaretledikten sonra gönderilen e-posta bildirimini özelleştirmek için bu bağlantıya tıklayın.
 
     Görüntülenen **Onay iletisini özelleştir** açılır penceresinde aşağıdaki ayarları yapılandırın:
 
     - **Kimlik avı**, **Gereksiz** ve **Tehdit bulunamadı sekmeleri** : Sekmelerden bazılarının, hiçbirinin veya tümünün **Gözden geçirme sonucu metninde** , kullanılacak özel metni girin.
     - **Alt Bilgi** sekmesi: Aşağıdaki seçenekler kullanılabilir:
       - **Alt bilgi metni**: Kullanılacak özel ileti alt bilgisi metnini girin.
-      - **Şirket logosunu görüntüle**: Bu seçeneği belirlemeden önce, özel logonuzu karşıya yüklemek [için Microsoft 365 temasını kuruluşunuz için özelleştirme](../../admin/setup/customize-your-organization-theme.md) başlığı altındaki yönergeleri izlemeniz gerekir.
+      - **Şirket logosunu görüntüle**: Bu seçeneği belirlemeden önce, özel [logonuzu karşıya yüklemek için Microsoft 365 temasını kuruluşunuz için özelleştirme](../../admin/setup/customize-your-organization-theme.md) başlığı altındaki yönergeleri izlemeniz gerekir.
 
   **Onayı özelleştir iletisi** açılır öğesinde işiniz bittiğinde **Onayla'ya** tıklayın.
 
@@ -199,6 +199,17 @@ Tek gereksinim, özgün iletilerin sıkıştırılmamış olarak eklenmesidir. E
 Özgün eklenen iletilerin bildirilme nedenini belirtmek için, kullanıcı gönderimleri posta kutusuna gönderilen iletilerin aşağıdaki ölçütlere uyması gerekir:
 
 - Özgün ileti eki değiştirilmedi.
+- Bildirilen ileti aşağıdaki gerekli üst bilgileri içermelidir:
+  - 1. X-Microsoft-Antispam-Message-Info
+  - 2. Message-Id
+  - 3. X-Ms-Exchange-Organization-Network-Message-Id
+  - 4. X-Ms-Exchange-Crosstenant-Id
+
+> [!NOTE]
+> içindeki `X-Ms-Exchange-Crosstenant-Id` TenantId değeri kiracıyla aynı olmalıdır.
+>
+> `X-Microsoft-Antispam-Message-Info` geçerli bir xmi olmalıdır.
+
 - Kullanıcı gönderimleri posta kutusuna gönderilen iletilerin Konu satırı (Zarf Başlığı) aşağıdaki ön ek değerlerinden biriyle başlamalıdır:
   - `1|`veya .`Junk:`
   - `2|`veya .`Not junk:`
