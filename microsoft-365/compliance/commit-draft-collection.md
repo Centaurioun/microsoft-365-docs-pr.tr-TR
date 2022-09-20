@@ -2,8 +2,8 @@
 title: Bir inceleme setine taslak koleksiyon atama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Taslak koleksiyonu oluşturup yineledikten sonra, bir gözden geçirme kümesine işleyebilirsiniz. Taslak koleksiyonu işlediğinizde, toplanan öğeler servis talebindeki gözden geçirme kümesine eklenir. Toplanan öğeler gözden geçirme kümesinde yer aldıktan sonra bunları analiz edebilir, gözden geçirebilir ve dışarı aktarabilirsiniz.
-ms.openlocfilehash: e635489383026df0d8097a300eb49178dcffb6b5
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e5a6e5179bc810a685047de5c2b83944496d1964
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632717"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826829"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-ediscovery-premium"></a>Taslak koleksiyonu eBulma'da (Premium) bir gözden geçirme kümesine işleme
 

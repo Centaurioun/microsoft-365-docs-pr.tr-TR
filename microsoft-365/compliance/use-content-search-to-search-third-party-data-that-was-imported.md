@@ -2,8 +2,8 @@
 title: üçüncü taraf içeri aktarılan verileri aramak için İçerik Arama'yı kullanma
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Microsoft 365'te üçüncü taraf veri kaynağından posta kutularına aktarılan öğeleri sorgular oluşturarak aramak için İçerik Arama eBulma aracını kullanın.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6d4475987cddb04e0ad49394eda14d638774c22e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ffbaf85769c5391bd1c8b1ae7b7dd2c546efb0c4
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624851"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820933"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Özel bir iş ortağı bağlayıcısı tarafından içeri aktarılan üçüncü taraf verilerde arama yapmak için İçerik Arama'yı kullanma
 
@@ -63,7 +63,7 @@ Aşağıdaki tabloda, arayabileceğiniz üçüncü taraf veri türleri ve ileti 
   
 |**Üçüncü taraf veri türü**|**Özelliğin  `itemclass:` değeri**|
 |:-----|:-----|
-|AMACI  <br/> | `ipm.externaldata.AIM*` <br/> |
+|Amacı  <br/> | `ipm.externaldata.AIM*` <br/> |
 |Amerikan Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
 |Pivot Client ile AOL  <br/> | `ipm.externaldata.Pivot.IM` <br/> |
 |Elma Suyu  <br/> | `ipm.externaldata.AppleJuice*` <br/> |
@@ -83,7 +83,7 @@ Aşağıdaki tabloda, arayabileceğiniz üçüncü taraf veri türleri ve ileti 
 |BlackBerry SMS  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
 |Bloomberg  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
 |Bloomberg Message  <br/> | `ipm.externaldata.conversation.Bloomberg Message*` <br/> |
-|Bloomberg Microsoft Mesajlaşma  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
+|Bloomberg Mesajlaşma  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Kutusu  <br/> | `ipm.externaldata.Box*` <br/> |
 |Cisco Anlık İleti &amp; İletişim Durumu Sunucusu  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
@@ -107,7 +107,7 @@ Aşağıdaki tabloda, arayabileceğiniz üçüncü taraf veri türleri ve ileti 
 |Instagram  <br/> | `ipm.externaldata.Instagram*` <br/> |
 |Instant Bloomberg  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |
 |InvestEdge  <br/> | `ipm.externaldata.InvestEdge*` <br/> |
-|IRC  <br/> | `ipm.externaldata.IRC*` <br/> |
+|Irc  <br/> | `ipm.externaldata.IRC*` <br/> |
 |Jive  <br/> | `ipm.externaldata.Jive*` <br/> |
 |JiveApiRetention  <br/> | `ipm.externaldata.JiveApiRetention*` <br/> |
 |JXTA  <br/> | `ipm.externaldata.JXTA*` <br/> |
@@ -116,13 +116,13 @@ Aşağıdaki tabloda, arayabileceğiniz üçüncü taraf veri türleri ve ileti 
 |Microsoft UC  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
 |Zihin Hizalama  <br/> | `ipm.externaldata.MindAlign*` <br/> |
 |Mobile Guard  <br/> | `ipm.externaldata.MobileGuard*` <br/> |
-|MSN  <br/> | `ipm.externaldata.MSN*` <br/> |
+|Msn  <br/> | `ipm.externaldata.MSN*` <br/> |
 |Myspace  <br/> | `ipm.externaldata.MySpace*` <br/> |
 |NEONetwork  <br/> | `ipm.externaldata.NEONetwork*` <br/> |
 |OpenNap  <br/> | `ipm.externaldata.OpenNap*` <br/> |
 |Pinterest  <br/> | `ipm.externaldata.Pinterest*` <br/> |
 |Pivot  <br/> | `ipm.externaldata.Pivot*` <br/> |
-|QQ  <br/> | `ipm.externaldata.QQ*` <br/> |
+|Qq  <br/> | `ipm.externaldata.QQ*` <br/> |
 |Microsoft SharePoint  <br/> | `ipm.externaldata.SharePoint*` <br/> |
 |Salesforce Chatter  <br/> | `ipm.externaldata.Chatter*` <br/> |
 |Skype Kurumsal  <br/> | `ipm.externaldata.Skype*` <br/> |

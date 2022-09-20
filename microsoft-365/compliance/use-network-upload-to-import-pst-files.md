@@ -2,8 +2,8 @@
 title: PST dosyalarını içe aktarmak için ağ yüklemesini kullanma
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: "Yöneticiler için: Microsoft 365'te birden çok PST dosyasını kullanıcı posta kutularına toplu olarak aktarmak için ağ yüklemeyi kullanmayı öğrenin."
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3584397f7d01ea77ad03099aadeb085b497c53f3
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 90b55e07c8118f3bcb0b416ac0e81cdaa992bf0a
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67470241"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826412"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Kuruluşunuzun PST dosyalarını Microsoft 365'e aktarmak için ağ yüklemeyi kullanma
 

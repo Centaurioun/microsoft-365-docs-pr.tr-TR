@@ -2,8 +2,8 @@
 title: eBulma'da belge meta veri alanları (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Bu makale, Microsoft 365'te Microsoft Purview eKeşif (Premium) durumunda bir inceleme kümesindeki belgelerin meta veri alanlarını tanımlar.
-ms.openlocfilehash: a6fc8479d3ecd2b89c0331220fb7f88f46bda1e4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6d882a7612046ad843b0c942e40ec7b9f8684120
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629761"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821791"
 ---
 # <a name="document-metadata-fields-in-ediscovery-premium"></a>eBulma'da belge meta veri alanları (Premium)
 
@@ -47,8 +47,8 @@ Aşağıdaki tabloda, Microsoft Purview eKeşif (Premium) durumunda bir inceleme
 |Ek İçerik Kimliği|AttachmentContentId||Öğenin ek içerik kimliği.|
 |Avukat müşteri ayrıcalık puanı|AttorneyClientPrivilegeScore||Avukat-istemci ayrıcalık modeli içerik puanı.|
 |Yazar|Yazar|Doc_authors|Belge meta verilerinden yazar.|
-|GİZLİ|Gizli|Email_bcc|İleti türleri için Gizli alanı. Biçim **DisplayName \<SMTPAddress\>** şeklindedir.|
-|CC|Cc|Email_cc|İleti türleri için Bilgi alanı. Biçim **DisplayName \<SMTPAddress\>** şeklindedir.|
+|Gizli|Gizli|Email_bcc|İleti türleri için Gizli alanı. Biçim **DisplayName \<SMTPAddress\>** şeklindedir.|
+|Cc|Cc|Email_cc|İleti türleri için Bilgi alanı. Biçim **DisplayName \<SMTPAddress\>** şeklindedir.|
 |Uyumluluk etiketleri|ComplianceLabels|Compliance_labels|Office 365 içeriğine uygulanan [bekletme etiketleri](retention.md).|
 |Bileşik Yol|CompoundPath|Compound_path|Öğenin kaynağını açıklayan okunabilir yol.|
 |İçerik*|İçerik||Öğenin ayıklanan metni.|
@@ -66,7 +66,7 @@ Aşağıdaki tabloda, Microsoft Purview eKeşif (Premium) durumunda bir inceleme
 |Teams Duyuru Başlığı|TeamsAnnouncementTitle|TeamsAnnouncementTitle|[Ekip duyurusundan](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992) başlık.|
 |||Converted_file_path|Dönüştürülen dışarı aktarma dosyasının yolu. Yalnızca iç Microsoft kullanımı için.|
 |Veli|Veli|Veli|Öğenin ilişkilendirildiği koruyucunun adı.|
-|Tarih|Tarih|Tarih|Tarih, dosya türüne bağlı olarak hesaplanan bir alandır.<p>**E-posta**: Gönderme tarihi<br>**E-posta ekleri**: Belgenin son değiştirilme tarihi; kullanılamıyorsa ebeveynin gönderilme tarihi<br>**Eklenmiş belgeler**: Belgenin son değiştirme tarihi; kullanılamıyorsa, üst öğe son değiştirme tarihi<br>**SPO belgeleri (modern ekler içerir)**: Belgenin son değiştirme tarihi; kullanılamıyorsa, SharePoint son değiştirme tarihi<br>**Office 365 olmayan belgeler**: Son değiştirme tarihi<br>**Toplantılar**: Toplantı başlangıç tarihi<br>**Sesli Mesaj**: Gönderme tarihi<br>**Anlık ileti**: Gönderme tarihi<br>**Teams**: Gönderme tarihi|
+|Tarih|Tarih|Tarih|Tarih, dosya türüne bağlı olarak hesaplanan bir alandır.<p>**Email**: Gönderme tarihi<br>**Email ekleri**: Belgenin son değiştirme tarihi; mevcut değilse, üst öğe gönderilme tarihi<br>**Eklenmiş belgeler**: Belgenin son değiştirme tarihi; kullanılamıyorsa, üst öğe son değiştirme tarihi<br>**SPO belgeleri (modern ekler içerir)**: Belgenin son değiştirme tarihi; kullanılamıyorsa, SharePoint son değiştirme tarihi<br>**Office 365 olmayan belgeler**: Son değiştirme tarihi<br>**Toplantılar**: Toplantı başlangıç tarihi<br>**Sesli Mesaj**: Gönderme tarihi<br>**Anlık ileti**: Gönderme tarihi<br>**Teams**: Gönderme tarihi|
 |Belge açıklamaları|DocComments|Doc_comments|Belge meta verilerinden açıklamalar.|
 |Belge şirketi||Doc_company|Belge meta verilerinden şirket.|
 |Belge oluşturulma tarihi|CreatedTime|Doc_date_created|Belge meta verilerinden tarih oluşturma.|
@@ -80,16 +80,16 @@ Aşağıdaki tabloda, Microsoft Purview eKeşif (Premium) durumunda bir inceleme
 |Baskın tema|BaskınTheme|Dominant_theme|Analiz için hesaplanmış baskın tema.|
 |Yinelenen alt küme||Duplicate_subset|Tam yinelemeler için grup kimliği.|
 |EmailAction*||Email_action|Değerler **Yok**, **Yanıtla** veya **İlet**; bir iletinin konu satırına göre.|
-|E-posta Teslim Bilgisi İstendi||Email_delivery_receipt|Teslim bilgisi için İnternet Üst Bilgileri'nde sağlanan e-posta adresi.|
+|Email Teslim Alındı bilgisi istendi||Email_delivery_receipt|teslim bilgisi için internet üst bilgilerinde sağlanan Email adresi.|
 |Önemi|EmailImportance|Email_importance|İletinin önemi: **0** - Düşük; **1** - Normal; **2** - Yüksek|
 |Yoksayılan işleme hataları|ErrorIgnored|Error_Ignored|Hata yoksayıldı ve düzeltilmedi.|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|E-posta iletisindeki tüm e-posta üst bilgileri kümesi|
 |EmailLevel*||Email_level|İletinin ait olduğu e-posta yazışması içindeki düzeyini gösterir; ekler, üst iletinin değerini devralır.|
-|E-posta İletiSi Kimliği||Email_message_ID|İletiden İnternet ileti kimliği.|
-|EmailReadReceiptRequested||Email_read_receipt|Okundu bilgisi için İnternet Üst Bilgilerinde sağlanan e-posta adresi.|
-|E-posta Güvenliği|EmailSecurity|Email_security|İletinin güvenlik ayarı: **0** - Yok; **1** - İmzalı; **2** - Şifrelenmiş; **3** - Şifreli ve imzalı.|
-|E-posta Duyarlılığı|EmailSensitivity|email_sensitivity|İletinin duyarlılık ayarı: **0** - Yok; **1** Kişisel; **2** - Özel; **3** - CompanyConfidential.|
-|E-posta kümesi|EmailSet|Email_set|Aynı e-posta kümesindeki tüm iletiler için grup kimliği.|
+|İleti Kimliğini Email||Email_message_ID|İletiden İnternet ileti kimliği.|
+|EmailReadReceiptRequested||Email_read_receipt|okundu bilgisi için internet üst bilgilerinde sağlanan Email adresi.|
+|Email Güvenliği|EmailSecurity|Email_security|İletinin güvenlik ayarı: **0** - Yok; **1** - İmzalı; **2** - Şifrelenmiş; **3** - Şifreli ve imzalı.|
+|Email Duyarlılığı|EmailSensitivity|email_sensitivity|İletinin duyarlılık ayarı: **0** - Yok; **1** Kişisel; **2** - Özel; **3** - CompanyConfidential.|
+|Email kümesi|EmailSet|Email_set|Aynı e-posta kümesindeki tüm iletiler için grup kimliği.|
 |EmailThread*||Email_thread|İletinin e-posta kümesi içindeki konumu; kökten geçerli iletiye düğüm kimliklerinden oluşur ve noktalarla (.) ayrılır.|
 |||Export_native_path|Dışarı aktarılan dosyanın yolu.|
 |Ayıklanan içerik türü||Native_type|Mime türü biçiminde ayıklanan içerik türü; örneğin, **image/jpeg**|
@@ -98,7 +98,7 @@ Aşağıdaki tabloda, Microsoft Purview eKeşif (Premium) durumunda bir inceleme
 |FamilyDuplicateSet*||Family_duplicate_set|Birbirinin tam yinelemesi olan aileler için sayısal tanımlayıcı (aynı içerik ve tüm aynı ekler).|
 |Aile Kimliği|FamilyId|Family_ID|E-posta ve sohbetlerdeki ekleri ve ayıklanan öğeleri üst öğesiyle birlikte gruplandırma. Buna sohbet veya e-posta ile tüm ekler ve ayıklanan öğeler dahildir.|
 |Aile Boyutu||Family_size|Ailedeki belge sayısı.|
-|Dosya sınıfı|FileClass|File_class|SharePoint ve OneDrive'dan içerik için: **Belge**. <br>Exchange içeriği için: **E-posta** veya **Ek**. <br>Teams veya Yammer içeriği için: **Konuşmalar**.|
+|Dosya sınıfı|FileClass|File_class|SharePoint ve OneDrive'dan içerik için: **Belge**. <br>Exchange içeriği için: **Email** veya **Ek**. <br>Teams veya Yammer içeriği için: **Konuşmalar**.|
 |Dosya Kimliği|FileId|File_id|Servis talebi içinde benzersiz belge tanımlayıcısı.|
 |Dosya sistemi oluşturulma tarihi||File_system_date_created|Dosya sisteminden oluşturulma tarihi (yalnızca Office 365 olmayan veriler için geçerlidir).|
 |Dosya sistemi değiştirme tarihi||File_system_date_modified|Dosya sisteminden değiştirme tarihi (yalnızca Office 365 olmayan veriler için geçerlidir).|

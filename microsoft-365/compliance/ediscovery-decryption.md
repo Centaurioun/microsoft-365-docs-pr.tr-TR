@@ -2,8 +2,8 @@
 title: eBulma'da şifre çözme
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 eKeşif araçlarının e-posta iletilerine ekli ve SharePoint Online ile OneDrive İş depolanan şifrelenmiş belgeleri nasıl işlediği hakkında bilgi edinin.
-ms.openlocfilehash: bec0b4c600f3bb7b08d10f2b32b00edb627a1165
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: d09b37fe87a32eca79a8b0573410d2fb1ddfa1b5
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798093"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821769"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Microsoft 365 eBulma araçlarında şifre çözme
 

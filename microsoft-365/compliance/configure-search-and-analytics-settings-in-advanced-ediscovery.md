@@ -2,8 +2,8 @@
 title: Arama ve analiz ayarlarını yapılandırma - eBulma (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Bir durumda tüm inceleme kümesi için geçerli olan Microsoft Purview eKeşif (Premium) ayarlarını yapılandırın. Bu, analiz ve Optik karakter tanıma ayarlarını içerir.
-ms.openlocfilehash: 315448606e99a768bacd8d7d4ac7f858c79c7bed
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 28af9b3f8f91ea1237301cc0a7b5fc789844a158
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624575"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826522"
 ---
 # <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>eBulma'da arama ve analiz ayarlarını yapılandırma (Premium)
 
@@ -50,7 +50,7 @@ Bir servis talebi için arama ve analiz ayarlarını yapılandırmak için:
 
 ## <a name="near-duplicates-and-email-threading"></a>Yakın yinelemeler ve e-posta yazışmaları
 
-Bu bölümde, yinelenen algılama, neredeyse yinelenen algılama ve e-posta iş parçacığı oluşturma için parametreler ayarlayabilirsiniz. Daha fazla bilgi için bkz [. Neredeyse yinelenen algılama](near-duplicate-detection-in-advanced-ediscovery.md) ve [E-posta iş parçacığı oluşturma](email-threading-in-advanced-ediscovery.md).
+Bu bölümde, yinelenen algılama, neredeyse yinelenen algılama ve e-posta iş parçacığı oluşturma için parametreler ayarlayabilirsiniz. Daha fazla bilgi için bkz[. Neredeyse yinelenen algılama](near-duplicate-detection-in-advanced-ediscovery.md) ve [Email iş parçacığı oluşturma](email-threading-in-advanced-ediscovery.md).
 
 - **Yakın yinelemeler/e-posta yazışmaları:** Açıldığında, bir gözden geçirme kümesindeki veriler üzerinde analiz çalıştırdığınızda, yinelenen algılama, neredeyse yinelenen algılama ve e-posta iş parçacığı oluşturma iş akışının bir parçası olarak eklenir.
 
@@ -80,7 +80,7 @@ Bu sorgu temelde gözden geçirme kümesindeki yinelenen öğeleri filtreler. Bu
 
 ## <a name="ignore-text"></a>Metni yoksay
 
-E-postanın içeriğinden bağımsız olarak e-posta iletilerine eklenen uzun sorumluluk reddi gibi belirli metinlerin analiz kalitesini azaltacağı durumlar vardır. Yoksayılması gereken metinleri biliyorsanız, metnin dışlanması gereken metin dizesini ve analiz işlevselliğini (yakın yinelemeler, E-posta yazışması, Temalar ve İlgi) belirterek bunu analizden dışlayabilirsiniz. Yoksayılan metin olarak normal ifadelerin (RegEx) kullanılması da desteklenir.
+E-postanın içeriğinden bağımsız olarak e-posta iletilerine eklenen uzun sorumluluk reddi gibi belirli metinlerin analiz kalitesini azaltacağı durumlar vardır. Yoksayılması gereken metinleri biliyorsanız, metin dizesini ve metnin dışlanması gereken analiz işlevselliğini (yakın yinelemeler, Email yazışma, Temalar ve İlgi) belirterek bunu analizden dışlayabilirsiniz. Yoksayılan metin olarak normal ifadelerin (RegEx) kullanılması da desteklenir.
 
 ## <a name="optical-character-recognition-ocr"></a>Optik karakter tanıma (OCR)
 

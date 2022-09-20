@@ -2,8 +2,8 @@
 title: eBulma için Gizli ve genişletilmiş dağıtım grubu alıcılarını koruma
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 6/19/2017
 audience: ITPro
@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place Tutma, Dava Tutma ve Microsoft 365 saklama ilkeleri, mevzuat uyumluluğu ve eBulma gereksinimlerini karşılamak için posta kutusu içeriğini korumanıza olanak tanır.
-ms.openlocfilehash: de1a04c223856e1257e03e5dd47ae6d5e88033eb
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fae5fa009d78cdd05e35cda2aa196d66e3944439
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637097"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825994"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>eBulma için Gizli ve genişletilmiş dağıtım grubu alıcılarını koruma
   
-Dava tutmaları, eBulma tutmaları ve [Microsoft 365 saklama ilkeleri](./retention.md) (Microsoft Purview uyumluluk portalı oluşturulan), mevzuat uyumluluğu ve eBulma gereksinimlerini karşılamak için posta kutusu içeriğini korumanıza olanak tanır. Bir iletinin Kime ve Bilgi alanlarında doğrudan ele alınan alıcılar hakkındaki bilgiler varsayılan olarak tüm iletilere eklenir. Ancak kuruluşunuz, iletinin tüm alıcıları hakkındaki ayrıntıları arama ve yeniden oluşturma olanağı gerektirebilir. Buna şunlar dahildir:
+Dava tutmaları, eBulma tutmaları ve [Microsoft 365 saklama ilkeleri](./retention.md) (Microsoft Purview uyumluluk portalı oluşturulan), mevzuat uyumluluğu ve eBulma gereksinimlerini karşılamak için posta kutusu içeriğini korumanıza olanak tanır. Bir iletinin Kime ve Bilgi alanlarında doğrudan ele alınan alıcılar hakkındaki bilgiler varsayılan olarak tüm iletilere eklenir. Ancak kuruluşunuz, iletinin tüm alıcıları hakkındaki ayrıntıları arama ve yeniden oluşturma olanağı gerektirebilir. Bu, şunları kapsar:
   
 - **İletinin Gizli alanı kullanılarak adreslenen alıcılar:** Gizli alıcılar, iletide gönderenin posta kutusunda depolanır, ancak alıcılara teslim edilen iletinin üst bilgilerine eklenmez. 
     

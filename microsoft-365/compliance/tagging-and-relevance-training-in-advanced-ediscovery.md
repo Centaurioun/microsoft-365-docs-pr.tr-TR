@@ -2,8 +2,8 @@
 title: eBulma'da etiketleme ve İlgi eğitimi (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
 ms.date: ''
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: eKeşif'in (Premium) İlgi eğitim aşamasında 40 dosyadan oluşan bir eğitim örneğini etiketleme ve bunlarla çalışma adımlarını öğrenin.
-ms.openlocfilehash: 8f3d92564d908344155b55b5f84dc6357324a388
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b190b1e78622f93b82e5ec9db224b3f618c862d2
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627271"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821043"
 ---
 # <a name="tagging-and-relevance-training-in-ediscovery-premium"></a>eBulma'da etiketleme ve İlgi eğitimi (Premium)
   
@@ -47,7 +47,7 @@ Değerlendirme eBulma (Premium) içinde tamamlandıktan ve İlgi eğitim aşamas
    |**Etiketleme seçeneği**|**Açıklama**|**Klavye kısayolu**|**Toplu etiketleme klavye kısayolu (birden çok sorun için)**|
    |-----|-----|-----|-----|
    |R  <br/> |Ilgili  <br/> |Z  <br/> |`Shift + Z`  <br/> |
-   |NR  <br/> |İlgili değil  <br/> |X  <br/> |`Shift + X`  <br/> |
+   |Nr  <br/> |İlgili değil  <br/> |X  <br/> |`Shift + X`  <br/> |
    |Atlamak  <br/> |Atlamak  <br/> |C  <br/> |`Shift + A`  <br/> |
    |||||
 

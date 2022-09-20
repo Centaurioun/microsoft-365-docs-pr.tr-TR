@@ -2,8 +2,8 @@
 title: eBulma için anahtar sözcük sorguları ve arama koşulları
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365'teki eBulma arama araçlarını kullanarak arama yapabileceğiniz e-posta ve belge özellikleri hakkında bilgi edinin.
-ms.openlocfilehash: ca824d0f812690711f8ec78cd21955e14b8cb47f
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.openlocfilehash: 98ff5faabbd91f2c4aa67a789b4d2c61aa7dc0b1
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439650"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826675"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>eBulma için anahtar sözcük sorguları ve arama koşulları
 

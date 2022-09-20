@@ -2,8 +2,8 @@
 title: Yeni aramayı denetleme
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: reference
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Yeni Arama Denetimi, sonuçların performans iyileştirmelerini, eksiksizliğini ve tutarlılığını doğrular.
-ms.openlocfilehash: e24831eea8c176e8fdfa7608492a5393e786e2d3
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: f200aaea76a6369ab8ce7ded0a678b6b892b200e
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090641"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826258"
 ---
 # <a name="audit-new-search-preview"></a>Yeni Aramayı Denetle (önizleme)
 
@@ -52,13 +52,13 @@ Ek bilgiler:
 - Denetim Günlüğü verileri, bir arama işinin silinmesine bakılmaksızın tanımlı saklama süresi boyunca depolanır
 - Özel Önizleme döneminde oluşturulan aramalar, Yeni Arama özelliği Genel Önizleme'ye geçtikten sonra gelecekte başvurmak üzere saklanamayabilir.
 
-## <a name="get-started-with-audit-new-search"></a>Yeni aramayı denetle ile Kullanmaya başlayın
+## <a name="get-started-with-audit-new-search"></a>Yeni aramayı denetlemeye başlama
 
 Yeni Arama Denetimi deneyimini test etmek ve doğrulamak için aşağıdaki adımları izleyin:
 
 1. compliance.microsoft.com'a gidin
 1. Giriş sayfasının sol panelinde Denetim sekmesini seçerek Denetim aracına gidin
-1. Denetim sayfasının üst kısmındaki "Yeni Arama (Önizleme)" sekmesini :::image type="content" source="../media/audit-search/audit-new-search.png" alt-text="seçin Microsoft Purview":::
+1. :::image type="content" source="../media/audit-search/audit-new-search.png" alt-text="Microsoft Purview'da"::: Denetim sayfasının üst kısmındaki "Yeni Arama (Önizleme)" sekmesini seçin
 1. Çeşitli arama ölçütlerini kullanarak Yeni Arama Denetle aracında farklı arama işlerini test edin.
 Farklı aramalara örnek olarak aşağıdaki ölçütler verilebilir. Denetim günlüğünde arama yaparken bu farklı arama yöntemlerini keşfedin.
     - Farklı zaman çerçeveleri arasında arama.
@@ -68,7 +68,7 @@ Farklı aramalara örnek olarak aşağıdaki ölçütler verilebilir. Denetim g�
       - Birkaç Ay
     - Seçili kullanıcılar arasında arama
     - Etkinlikler alanını kullanarak arama kapsamını belirleme
-    - Microsoft Purview'da belirli bir dosya, klasör veya site :::image type="content" source="../media/audit-search/audit-new-search-create.png" alt-text="Denetim Yeni Arama seçenekleri"::: ekleme
+    - :::image type="content" source="../media/audit-search/audit-new-search-create.png" alt-text="Microsoft Purview'da"::: belirli bir dosya, klasör veya site Denetim Yeni Arama seçenekleri ekleme
 1. Uyumluluk portalında başka bir 2-9 araması başlatın. Bir hesapta paralel olarak en fazla 10 arama işi çalıştırılabilir.
 1. Arama işi geçmişini keşfedin ve arama işi sonuçlarından ilgili verileri almak için farklı arama işleri seçin. Sonuçlar, tablonun üst kısmındaki ilgili düğme seçilerek oluşturulma saatlerine göre sıralanabilir.
       :::image type="content" source="../media/audit-search/audit-new-search-columns.png" alt-text="Microsoft Purview'da Yeni Arama sonucu sütun sıralama seçeneklerini denetleme":::
@@ -78,7 +78,7 @@ Farklı aramalara örnek olarak aşağıdaki ölçütler verilebilir. Denetim g�
     - IP adresi, Kullanıcı, Etkinlik, Tarih, Öğe ve Ayrıntılar'ı kullanarak arama işi genelinde filtreleme.
     - Hem filtrelenmemiş hem de filtrelenmiş aramaları dışarı aktarma
     - Sonuçları sıralamak için tablonun üst kısmındaki Tarih, IP Adresi (varsa), Kullanıcı, Etkinlik, Öğe ve Ayrıntı (uygun olduğunda) gibi ilgili düğmelere tıklayın.
-      :::image type="content" source="../media/audit-search/audit-new-search-result-details.png" alt-text="Microsoft Purview'de Yeni Arama sonucu ayrıntılarını denetleme":::
+      :::image type="content" source="../media/audit-search/audit-new-search-result-details.png" alt-text="Microsoft Purview'da Yeni Arama sonucu ayrıntılarını denetleme":::
 
 ## <a name="audit-search-job-overview"></a>Arama işine genel bakış denetimi
 

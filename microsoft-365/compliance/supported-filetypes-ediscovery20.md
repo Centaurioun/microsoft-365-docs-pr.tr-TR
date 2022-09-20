@@ -2,8 +2,8 @@
 title: eBulma'da desteklenen dosya türleri (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 eKeşif'te (Premium) desteklenen dosya türlerinin listesi; eBulma'da (Premium) OCR işlevselliği tarafından desteklenen görüntü dosyası türleri.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: faa367800653e320621336e98f9e8fc684b222ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f3c96def7561bcbce2404dcff51aaf12c801ff85
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631039"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819897"
 ---
 # <a name="supported-file-types-in-ediscovery-premium"></a>eBulma'da desteklenen dosya türleri (Premium)
 
@@ -81,7 +81,7 @@ Microsoft Purview eKeşif (Premium), birçok farklı düzeyde birçok dosya tür
 |text/vcard-contact|Evet|Evet|Evet|Evet|Evet|Vcf|
 |
 
-## <a name="email-container"></a>E-posta Kapsayıcısı
+## <a name="email-container"></a>Email Kapsayıcısı
 
 <br>
 

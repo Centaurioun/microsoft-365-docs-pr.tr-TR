@@ -2,8 +2,8 @@
 title: Yasal tutma bildirimi oluşturma
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Yasal saklama bildirimleri göndermek, toplamak ve izlemek için eBulma (Premium) durumunda İletişim aracını kullanın.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e97630c75c05412e22afa17daaa1897f8627adf1
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f316798d135d08a7aaa363140d294c62ac6cfa9b
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634687"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825686"
 ---
 # <a name="create-a-legal-hold-notice"></a>Yasal tutma bildirimi oluşturma
 

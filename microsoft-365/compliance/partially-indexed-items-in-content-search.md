@@ -2,8 +2,8 @@
 title: İçerik Arama'da kısmen dizine alınan öğeler
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 05/13/2022
 audience: Admin
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Exchange ve SharePoint'te Microsoft Purview uyumluluk portalı çalıştırdığınız bir eBulma aramasında ekleyebileceğiniz dizinlenmemiş öğeler hakkında bilgi edinin.
-ms.openlocfilehash: e4bca9995dd173ef972522f273765db03dff3524
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4e8b22a21f9ab0b9bd38fb12c3d0a79a958c9440
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622491"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825554"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>eBulma'da kısmen dizine alınan öğeler
 
@@ -162,9 +162,9 @@ SharePoint belgeleri için dizin oluşturma sınırlarının listesi için bkz. 
 
 - [Microsoft şifreleme teknolojileriyle](encryption.md) şifrelenen ve arama ölçütleriyle eşleşen bir e-posta iletisine eklenen dosyalar önizlemeye eklenebilir ve dışarı aktarıldığında şifresi çözülür. Şu anda, Microsoft şifreleme teknolojileri (ve SharePoint veya OneDrive İş'de depolanan) ile şifrelenmiş dosyalar kısmen dizine alınır. 
 
-- S/MIME ile şifrelenen e-posta iletileri kısmen dizine eklenir. Bu, dosya ekleri olan veya olmayan şifrelenmiş iletileri içerir.
+- S/MIME ile şifrelenen Email iletileri kısmen dizine eklenir. Bu, dosya ekleri olan veya olmayan şifrelenmiş iletileri içerir.
 
-- Azure Rights Management kullanılarak korunan e-posta iletileri dizine alınır ve arama sorgusuyla eşleşiyorsa arama sonuçlarına eklenir. Hak korumalı e-posta iletilerinin şifresi çözülür ve önizlenebilir ve dışarı aktarılabilir. Bu işlev, varsayılan olarak eBulma Yöneticisi rol grubuna atanan RMS Şifre Çözme rolüne atanmanızı gerektirir.
+- Azure Rights Management kullanılarak korunan Email iletiler dizine alınır ve arama sorgusuyla eşleşiyorsa arama sonuçlarına eklenir. Hak korumalı e-posta iletilerinin şifresi çözülür ve önizlenebilir ve dışarı aktarılabilir. Bu işlev, varsayılan olarak eBulma Yöneticisi rol grubuna atanan RMS Şifre Çözme rolüne atanmanızı gerektirir.
 
 - eBulma olayıyla ilişkili sorgu tabanlı bir ayrı tutma oluşturursanız, kısmen dizine alınan tüm öğeler beklemeye alınır. Bu, ayrı tutma için arama sorgusu ölçütleri ile eşleşmeyen kısmen dizine alınan öğeleri içerir. Sorgu tabanlı eBulma tutmaları oluşturma hakkında daha fazla bilgi için bkz. [eBulma ayrı tutması oluşturma](create-ediscovery-holds.md).
 

@@ -2,8 +2,8 @@
 title: Verileri içeri aktarmayla ilgili durumu görüntülemek için veri bağlayıcıları için yönetici günlüğünü kullanma
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Bağlayıcı tarafından içeri aktarılan verilere ilişkin durum bilgilerini almak için veri bağlayıcılarının yönetici günlüklerine erişmeyi ve bu günlükleri görüntülemeyi öğrenin.
-ms.openlocfilehash: de8b1de56b5e44ad199db942c3d385dcc05e1160
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 6caaebab80878f5a209ddeb57f59527f45ef0f93
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "66861591"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826785"
 ---
 # <a name="view-admin-logs-for-data-connectors"></a>Veri bağlayıcıları için yönetici günlüklerini görüntüleme
 

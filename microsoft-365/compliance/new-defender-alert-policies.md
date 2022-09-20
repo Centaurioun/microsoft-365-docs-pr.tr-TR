@@ -2,8 +2,8 @@
 title: Office 365 için Microsoft Defender'da yeni uyarı ilkeleri
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: reference
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: Office 365 için Microsoft Defender için yeni uyarı ilkeleri yayınlıyoruz. Ayrıca, yeni ilkelerle değiştirilen iki mevcut uyarı ilkesi de kullanımdan kaldırılmıştır.
-ms.openlocfilehash: 0f9a8b74febe3ea59d022baceff7c15c3ee2e5d1
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 54503dc05550adf9c58b93ea8d8016e654997f7a
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634016"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826016"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da yeni uyarı ilkeleri
 
@@ -38,12 +38,12 @@ Aşağıdaki tabloda yeni uyarı ilkeleri ve kaldırılacak mevcut uyarı ilkele
 
 |Yeni veya mevcut uyarı ilkesi|Uyarı ilkesi adı|Uyarı ilkesi kimliği|
 |---|---|---|
-|Yeni|**Kötü amaçlı URL içeren e-posta iletileri teslimden sonra kaldırıldı**|8e6ba277-ef39-404e-aaf1-294f6d9a2b88|
-|Yeni|**Kötü amaçlı dosya içeren e-posta iletileri teslimden sonra kaldırıldı**|4b1820ec-39dc-45f3-abf6-5ee80df51fd2|
-|Yeni|**Kampanyadan gelen e-posta iletileri teslim edildi ve daha sonra kaldırıldı**|c8522cbb-9368-4e25-4ee9-08d8d899dfab|
-|Yeni|**Teslimden sonra e-posta iletileri kaldırıldı**|b8f6b088-5487-4c70-037c-08d8d71a43fe|
-|Var (kaldırılacak)|**Kimlik avı URL'lerini içeren e-posta iletileri teslimden sonra kaldırıldı**|EA8169FA-0678-4751-8854-AEBEA7ADECEB|
-|Var (kaldırılacak)|**Kötü amaçlı yazılım içeren e-posta iletileri teslimden sonra kaldırıldı**|0179B3F7-3FDA-40C3-8F24-278563978DBB|
+|Yeni|**Teslimden sonra kötü amaçlı URL içeren iletilerin kaldırılmasını Email**|8e6ba277-ef39-404e-aaf1-294f6d9a2b88|
+|Yeni|**Email kötü amaçlı dosya içeren iletiler teslimden sonra kaldırıldı**|4b1820ec-39dc-45f3-abf6-5ee80df51fd2|
+|Yeni|**Kampanyadan Email iletileri teslim edildi ve daha sonra kaldırıldı**|c8522cbb-9368-4e25-4ee9-08d8d899dfab|
+|Yeni|**teslimden sonra kaldırılan iletileri Email**|b8f6b088-5487-4c70-037c-08d8d71a43fe|
+|Var (kaldırılacak)|**Kimlik avı URL'lerini içeren Email iletileri teslim sonrasında kaldırıldı**|EA8169FA-0678-4751-8854-AEBEA7ADECEB|
+|Var (kaldırılacak)|**Teslimden sonra kaldırılan kötü amaçlı yazılım içeren iletileri Email**|0179B3F7-3FDA-40C3-8F24-278563978DBB|
 
 ## <a name="alert-severity-enhancements"></a>Uyarı önem derecesi geliştirmeleri
 
@@ -52,7 +52,7 @@ Aşağıdaki tablo için önem derecesi sınıflandırmaları değiştirilen var
 |Uyarı|Uyarı ilkesi kimliği|Eski önem derecesi|Yeni önem derecesi|
 |---|---|---|---|
 |**Şüpheli e-posta iletme etkinliği**|BFD48F06-0865-41A6-85FF-ADB746423EBF|Orta|Yüksek|
-|**Kullanıcı tarafından kötü amaçlı yazılım veya kimlik avı olarak bildirilen e-posta**|B26A5770-0C38-434A-9380-3A3C2C27BBB3|Bilgi|Düşük|
+|**kullanıcı tarafından kötü amaçlı yazılım veya kimlik avı olarak bildirilen Email**|B26A5770-0C38-434A-9380-3A3C2C27BBB3|Bilgi|Düşük|
 |**Kimlik avı olarak bildirilen e-postada olağan dışı artış**|A00D8C62-9320-4EEA-A7E5-966B9AC09558|Yüksek|Orta|
 |**Yönetici Gönderim sonucu tamamlandı**|AE9B83DD-6039-4EA9-B675-6B0AC3BF4A41|Düşük|Bilgi|
 |**İletme/yeniden yönlendirme kuralı oluşturma**|D59A8FD4-1272-41EE-9408-86F7BCF72479|Düşük|Bilgi|
@@ -64,12 +64,12 @@ Aşağıdaki tabloda, yeni uyarı ilkelerinin teslim sonrası uyarıları tetikl
 
 |Uyarı ilkesi|Tarih|
 |---|---|
-|**Teslimden sonra kötü amaçlı URL içeren e-posta iletileri kaldırıldı** (yeni)|Uyarılar 11 Nisan 2021'de tetiklenecek|
-|**Kötü amaçlı dosya içeren e-posta iletileri teslimden sonra kaldırıldı** (yeni)|Uyarılar 11 Nisan 2021'de tetiklenecek|
+|**Email teslimden sonra kaldırılan kötü amaçlı URL içeren iletiler** (yeni)|Uyarılar 11 Nisan 2021'de tetiklenecek|
+|**Kötü amaçlı dosya içeren Email iletileri teslimden sonra kaldırıldı** (yeni)|Uyarılar 11 Nisan 2021'de tetiklenecek|
 |**Kampanyadan gelen e-posta iletileri teslim edildi ve daha sonra kaldırıldı** (yeni)|Uyarılar 28 Mayıs 2021'de tetiklenecek|
 |**Kötü amaçlı e-postalar teslim edildi ve daha sonra kaldırıldı** (yeni)|Uyarılar 28 Mayıs 2021'de tetiklenecek|
-|**Kimlik avı URL'lerini içeren e-posta iletileri teslimden sonra kaldırıldı** (mevcut, kaldırılacak)|Uyarı ilkesi Haziran 2021'de kaldırıldı. [Bu değişikliklere hazırlanmak için yapmanız gerekenler](#what-you-need-to-do-to-prepare-for-these-changes) bölümüne bakın.|
-|**Teslimden sonra kaldırılan kötü amaçlı yazılım içeren e-posta iletileri** (mevcut, kaldırılacak)|Uyarı ilkesi Haziran 2021'de kaldırıldı. [Bu değişikliklere hazırlanmak için yapmanız gerekenler](#what-you-need-to-do-to-prepare-for-these-changes) bölümüne bakın.|
+|**kimlik avı URL'lerini içeren Email iletiler teslimden sonra kaldırılır** (mevcut olan kaldırılır)|Uyarı ilkesi Haziran 2021'de kaldırıldı. [Bu değişikliklere hazırlanmak için yapmanız gerekenler](#what-you-need-to-do-to-prepare-for-these-changes) bölümüne bakın.|
+|**Teslimden sonra kaldırılan kötü amaçlı yazılım içeren iletileri Email** (mevcut, kaldırılacak)|Uyarı ilkesi Haziran 2021'de kaldırıldı. [Bu değişikliklere hazırlanmak için yapmanız gerekenler](#what-you-need-to-do-to-prepare-for-these-changes) bölümüne bakın.|
 
 Uyarı önem derecesi değişiklikleri 14 Mayıs 2021'e kadar tüm kuruluşlara dağıtılacaktır.
 
@@ -79,9 +79,9 @@ Yeni uyarılar tetiklenmeye başlar ve yukarıda listelenen tarihlerde kuruluşu
 
 - **Uyarılar**: Tasarım gereği, mevcut ve yeni uyarılar arasında aşağıdaki uyarı çiftlerini görürsünüz:
 
-  - **Kimlik avı URL'lerini içeren e-posta iletileri teslimden sonra kaldırıldı** VE **Kötü amaçlı URL içeren e-posta iletileri teslimden sonra kaldırıldı**
+  - **Teslimden sonra kimlik avı URL'lerini içeren iletileri Email** VE **teslim sonrasında kaldırılan kötü amaçlı URL içeren iletileri Email**
 
-  - **Kötü amaçlı yazılım içeren e-posta iletileri teslimden sonra kaldırıldı** VE **Kötü amaçlı dosya içeren e-posta iletileri teslimden sonra kaldırıldı**
+  - **teslimden sonra kaldırılan kötü amaçlı yazılım içeren iletileri Email** VE **teslim sonrasında kaldırılan kötü amaçlı dosya içeren iletileri Email**
 
   ![Yeni ve mevcut uyarılar için uyarı çiftleri.](../media/DefenderAlerts.png)
 
@@ -103,9 +103,9 @@ Kuruluşunuzun bu uyarıları nasıl kullandığı, hazırlanmak için yapmanız
 
 - Kuruluşunuzdaki uyarı hacmini azaltmak için aşağıdaki uyarı ilkelerini (kaldırılmakta olan) devre dışı bırakın:
 
-  - **Kimlik avı URL'lerini içeren e-posta iletileri teslimden sonra kaldırıldı**
+  - **Kimlik avı URL'lerini içeren Email iletileri teslim sonrasında kaldırıldı**
 
-  - **Kötü amaçlı yazılım içeren e-posta iletileri teslimden sonra kaldırıldı**
+  - **Teslimden sonra kaldırılan kötü amaçlı yazılım içeren iletileri Email**
 
 - Hiçbir şey yapma. Mevcut uyarı ilkelerini 28 Mayıs 2021'de devre dışı bırakacağız.
 
@@ -118,8 +118,8 @@ Kuruluşunuzun bu uyarıları nasıl kullandığı, hazırlanmak için yapmanız
 
 - Değişiklikleri yaptıktan sonra, kuruluşunuzdaki uyarı hacmini azaltmak için mevcut uyarı ilkelerini devre dışı bırakabilirsiniz:
 
-  - **Kimlik avı URL'lerini içeren e-posta iletileri teslimden sonra kaldırıldı**
+  - **Kimlik avı URL'lerini içeren Email iletileri teslim sonrasında kaldırıldı**
 
-  - **Kötü amaçlı yazılım içeren e-posta iletileri teslimden sonra kaldırıldı**
+  - **Teslimden sonra kaldırılan kötü amaçlı yazılım içeren iletileri Email**
 
   Alternatif olarak, bu uyarı ilkelerini 28 Mayıs 2021'de silene kadar etkin bırakabilirsiniz.

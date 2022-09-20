@@ -2,8 +2,8 @@
 title: Exchange Online posta kutularında depolanan içerik
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365'te bulut tabanlı uygulamalar tarafından üretilen içerik bir kullanıcının Exchange Online posta kutusuyla depolanır veya ilişkilendirilir. Bu içerik Microsoft eBulma araçları kullanılarak aranabilir.
-ms.openlocfilehash: a5006721166a2f56d8abae9b79442f4ad93276a4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 10caceac9bd5d3fdc499ea7132acecc4b72ff16f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641064"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825774"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>eBulma için Exchange Online posta kutularında depolanan içerik
 
@@ -36,9 +36,9 @@ Aşağıdaki tabloda verileri depolayan veya bulut tabanlı bir posta kutusuyla 
 |Microsoft 365 uygulaması|Açıklama|
 |---|---|
 |Forms<sup>*</sup>|Formlar ve bir forma verilen yanıtlar, e-posta iletilerine eklenmiş dosyalarda depolanır ve formu oluşturan kullanıcının posta kutusundaki gizli bir klasörde depolanır. Nisan 2020'de oluşturulan formlar PDF dosyası olarak depolanır. 2020'nin ardından oluşturulan formlar JSON dosyası olarak depolanır. Bir forma verilen yanıtlar CSV dosyasında depolanır. Bir PST dosyasındaki Formlardan içeriği dışarı aktardığınızda, bu veriler **applicationdataroot** klasöründe aşağıdaki genel olarak benzersiz olarak tanımlanan (GUID) adlı bir alt klasörde bulunur: **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
-|Microsoft 365 Grupları|E-posta iletileri, takvim öğeleri, kişiler (Kişiler), notlar ve görevler bir Microsoft 365 grubuyla ilişkili posta kutusunda depolanır.|
-|Outlook/Exchange Online|E-posta iletileri, takvim öğeleri, kişiler (Kişiler), notlar ve görevler kullanıcının posta kutusunda depolanır.|
-|Insanlar|Kişiler uygulamasındaki kişiler (Outlook'ta erişilebilen kişilerle aynı kişilerdir) kullanıcının posta kutusunda depolanır.|
+|Microsoft 365 Grupları|Email iletiler, takvim öğeleri, kişiler (Kişiler), notlar ve görevler bir Microsoft 365 grubuyla ilişkili posta kutusunda depolanır.|
+|Outlook/Exchange Online|Email iletiler, takvim öğeleri, kişiler (Kişiler), notlar ve görevler kullanıcının posta kutusunda depolanır.|
+|Kişiler|Kişiler uygulamasındaki kişiler (Outlook'ta erişilebilen kişilerle aynı kişiler) kullanıcının posta kutusunda depolanır.|
 |Sınıf Zamanlaması|Sınıf Zamanlaması'nda oluşturulan planlar, yeni bir plan oluşturulduğunda sağlanan ilgili Microsoft 365 Grubunun posta kutusunda depolanır. Grup posta kutusunun diğer adı planın adıdır.|
 |Skype Kurumsal|Skype Kurumsal konuşmaları kullanıcının posta kutusunda Konuşma Geçmişi klasöründe depolanır. Skype toplantısı katılımcısının posta kutusu Dava Bekletme'ye yerleştirilirse veya bekletme ilkesine atanırsa, toplantıya eklenen dosyalar katılımcıların posta kutusunda tutulur.|
 |Sway<sup>*</sup>|Sway tuvalleri, e-posta iletisine eklenmiş bir HTML dosyası olarak depolanır ve sway'i oluşturan kullanıcının posta kutusunda gizli bir klasörde depolanır. PST dosyasındaki Sway içeriği dışarı aktardığınızda, bu veriler **ApplicationDataRoot** klasöründe şu GUID ile adlandırılan bir alt klasörde bulunur: **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**.|

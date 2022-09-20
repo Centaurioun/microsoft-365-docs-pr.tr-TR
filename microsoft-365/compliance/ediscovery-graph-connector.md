@@ -2,8 +2,8 @@
 title: Microsoft Purview eKeşif Graph bağlayıcıları
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/15/2022
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 müşterileri, kurumsal arama için alınan içerikte eBulma aramaları gerçekleştirebilir.
-ms.openlocfilehash: df6f948f60b74da6868f4f3877ee3a39e97c2a46
-ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
+ms.openlocfilehash: 8b4a5435d589ba0fe4622c020bac3983a939008c
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66843825"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820425"
 ---
 # <a name="use-graph-connectors-with-ediscovery-premium"></a>Graph bağlayıcılarını eBulma ile kullanma (Premium)
 

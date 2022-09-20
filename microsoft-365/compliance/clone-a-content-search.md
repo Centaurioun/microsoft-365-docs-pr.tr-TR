@@ -2,8 +2,8 @@
 title: İçerik Araması Kopyalama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 4/26/2017
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365'teki Microsoft Purview uyumluluk portalı mevcut İçerik Aramasını hızla kopyalamak için bu makaledeki PowerShell betiğini kullanın.
-ms.openlocfilehash: 806705202865d97136713dba4afb263b605ef0f8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0ded1b6b75d1d0d6b775cbbbd03b7d6b8b02e407
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628825"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821923"
 ---
 # <a name="clone-a-content-search"></a>İçerik Araması Kopyalama
 

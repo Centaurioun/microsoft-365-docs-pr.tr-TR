@@ -2,8 +2,8 @@
 title: Kuruluşunuzda e-posta iletilerini arama ve silme
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Kuruluşunuzdaki tüm posta kutularında e-posta iletisi aramak ve silmek için Microsoft Purview uyumluluk portalı arama ve temizleme özelliğini kullanın.
-ms.openlocfilehash: d6ff40dd5c74330bdcaeeb304c42665469003174
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 415b35b0ce2109f177fe09bba82c107f49e0cf8f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628539"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820007"
 ---
 # <a name="search-for-and-delete-email-messages"></a>E-posta iletilerini arama ve silme
 
@@ -56,7 +56,7 @@ Kuruluşunuzdaki tüm posta kutularında e-posta iletilerini aramak ve silmek i�
 
 - Bu makaledeki yordam yalnızca Exchange Online posta kutularındaki ve ortak klasörlerdeki öğeleri silmek için kullanılabilir. SharePoint'ten veya OneDrive İş sitelerden içerik silmek için kullanamazsınız.
 
-- eBulma (Premium) durumundaki bir gözden geçirme kümesindeki e-posta öğeleri bu makaledeki yordamlar kullanılarak silinemez. Bunun nedeni, bir gözden geçirme kümesindeki öğelerin canlı hizmette değil Azure Depolama konumunda depolanmasıdır. Bu, 1. Adımda oluşturduğunuz içerik araması tarafından döndürülmeyecekleri anlamına gelir. Gözden geçirme kümesindeki öğeleri silmek için, gözden geçirme kümesini içeren eBulma (Premium) servis talebini silmeniz gerekir. Daha fazla bilgi için bkz. [eBulma (Premium) servis talebini kapatma veya silme](close-or-delete-case.md).
+- eBulma (Premium) durumundaki bir gözden geçirme kümesindeki Email öğeler bu makaledeki yordamlar kullanılarak silinemez. Bunun nedeni, bir gözden geçirme kümesindeki öğelerin canlı hizmette değil Azure Depolama konumunda depolanmasıdır. Bu, 1. Adımda oluşturduğunuz içerik araması tarafından döndürülmeyecekleri anlamına gelir. Gözden geçirme kümesindeki öğeleri silmek için, gözden geçirme kümesini içeren eBulma (Premium) servis talebini silmeniz gerekir. Daha fazla bilgi için bkz. [eBulma (Premium) servis talebini kapatma veya silme](close-or-delete-case.md).
 
 ## <a name="step-1-connect-to-security--compliance-powershell"></a>1. Adım: Güvenlik & Uyumluluğu PowerShell'e bağlanma
 

@@ -2,8 +2,8 @@
 title: eBulma'da İlgi analizini izleme (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
 ms.date: ''
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: eBulma (Premium) ile ilgili durum sorunları için İlgi eğitim durumunu ve sonuçlarını görüntülemeyi ve yorumlamayı öğrenin.
-ms.openlocfilehash: dce726553d5664714f9c479113ae00abd91aafff
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a9f951762336ec20cc95fa97ceb35f4a5aff10c6
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627359"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825796"
 ---
 # <a name="track-relevance-analysis-in-ediscovery-premium"></a>eBulma'da İlgi analizini izleme (Premium)
   

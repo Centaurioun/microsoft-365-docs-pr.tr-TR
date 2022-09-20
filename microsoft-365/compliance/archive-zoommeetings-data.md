@@ -2,8 +2,8 @@
 title: Microsoft 365'te Zoom Toplantıları verilerini arşivleye bağlayıcı ayarlama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Yöneticiler, Veritas Zoom Toplantıları'ndan Microsoft 365'e veri aktarıp arşivlemesi için bir bağlayıcı ayarlayabilir. Bu sayede Microsoft 365'teki üçüncü taraf veri kaynaklarından verileri arşivleyebilir, böylece kuruluşunuzun üçüncü taraf verilerini yönetmek için yasal tutma, içerik arama ve bekletme ilkeleri gibi uyumluluk özelliklerini kullanabilirsiniz.
-ms.openlocfilehash: 3a2d63071ba29baa40c8d7a656e7e7437f9348bd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 87163a3bc0ce46a1ba50df8803a01bedea9bc3b4
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631369"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820668"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Yakınlaştırma Toplantıları verilerini arşivleye bağlayıcı ayarlama
 
@@ -37,7 +37,7 @@ Aşağıdaki genel bakış, Microsoft 365'te Zoom Toplantıları verilerini arş
 
 3. Uyumluluk portalında oluşturduğunuz Yakınlaştırma Toplantıları bağlayıcısı, Veritas Merge1'e her gün bağlanır ve toplantı iletilerini Microsoft bulutunda güvenli bir Azure Depolama konumuna aktarır.
 
-4. Bağlayıcı, 3. Adımda açıklandığı gibi *, E-posta* özelliğinin ve otomatik kullanıcı eşlemesinin değerini kullanarak dönüştürülen toplantı öğelerini belirli kullanıcıların posta kutularına aktarır. Gelen Kutusu klasöründeki **Zoom Meetings** adlı yeni bir alt klasör kullanıcı posta kutularında oluşturulur ve toplantı öğeleri bu klasöre aktarılır. Bağlayıcı bunu *Email* özelliğinin değerini kullanarak yapar. Her toplantı öğesi, toplantının her katılımcısının e-posta adresiyle doldurulan bu özelliği içerir.
+4. Bağlayıcı, 3. Adımda açıklandığı gibi, *Email* özelliğinin ve otomatik kullanıcı eşlemesinin değerini kullanarak dönüştürülen toplantı öğelerini belirli kullanıcıların posta kutularına aktarır. Gelen Kutusu klasöründeki **Zoom Meetings** adlı yeni bir alt klasör kullanıcı posta kutularında oluşturulur ve toplantı öğeleri bu klasöre aktarılır. Bağlayıcı bunu *Email* özelliğinin değerini kullanarak yapar. Her toplantı öğesi, toplantının her katılımcısının e-posta adresiyle doldurulan bu özelliği içerir.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -83,7 +83,7 @@ Aşağıdaki genel bakış, Microsoft 365'te Zoom Toplantıları verilerini arş
 
 1. **Dış kullanıcıları Microsoft 365 kullanıcıları ile eşle** sayfasında otomatik kullanıcı eşlemesini etkinleştirin.
 
-   Yakınlaştırma Toplantıları öğeleri, kuruluşunuzdaki kullanıcılar için *e-posta* adreslerini içeren E-posta adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır
+   Yakınlaştırma Toplantıları öğeleri, kuruluşunuzdaki kullanıcıların e-posta adreslerini içeren *Email* adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır
 
 2. **İleri'ye** tıklayın, ayarlarınızı gözden geçirin ve yeni bağlayıcının içeri aktarma işleminin ilerleme durumunu görmek için **Veri bağlayıcıları** sayfasına gidin.
 

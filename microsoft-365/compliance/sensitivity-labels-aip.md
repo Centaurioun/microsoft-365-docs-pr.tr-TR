@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Azure Information Protection (AIP) birleşik etiketleme istemcisini kullandığınızda, AIP eklentisi yerine Office uygulamaları için yerleşik etiketleme kullanmanın avantajlarını anlayın.
-ms.openlocfilehash: 0c2f4989407d4498df3d4e3401b935f5200b2412
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 8d20190dd99c1d979f10a3f31d5616dabb652065
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497659"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825962"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office uygulamaları için AIP eklentisi yerine neden yerleşik etiketlemeyi seçmelisiniz?
 
@@ -74,16 +74,21 @@ Bazı özellikler yalnızca Office uygulamaları için yerleşik etiketleme tara
     - [Eğitilebilir sınıflandırıcılar](classifier-learn-about.md), [tam veri eşleşmesi (EDM)](sit-learn-about-exact-data-match-based-sits.md) ve [adlandırılmış varlıklar](named-entities-learn.md) içeren akıllı sınıflandırma hizmetlerine erişim
     - Kullanıcılar yazarken hassas bilgilerin algılanması
     - Word'de, kullanıcılar tanımlanan hassas içeriği gözden geçirebilir ve kaldırabilir
+- [Duyarlılık çubuğu](sensitivity-labels-office-apps.md#sensitivity-bar) mevcut kullanıcı iş akışlarıyla tümleştirilmiştir
 - [PDF desteği](sensitivity-labels-office-apps.md#pdf-support)
 - Kullanıcıların izin atamasına izin veren etiketler için kullanıcılara veya gruplara farklı izinler (Okuma veya Değiştirme) verilebilir
 - E-postalar için Encrypt-Only
-- Durum çubuğunda etiketlerin görünürlüğü
+- Durum çubuğunda etiketlerin görünürlüğü (Pencere başlığındaki duyarlılık çubuğuyla değiştirilir.)
 - Hesap değiştirme desteği
 - Kullanıcılar etiketlemeyi devre dışı bırakamıyor
 
 Kullanıcıların Word'de tanımlanan hassas içeriği nasıl gözden geçirip isteğe bağlı olarak kaldırabileceğini gösteren örnek:
 
 ![Kullanıcılara duyarlılık içeriği olarak tanımlanan ve kaldırma seçeneğine sahip kredi kartı numaraları.](../media/detect-sensitive-content.png)
+
+Duyarlılık etiketlerinin kullanıcı iş akışlarıyla nasıl tümleşik olduğunu gösteren örnek:
+
+![Bu dosyayı kaydet iletişim kutusunda duyarlılık etiketi adını ve açıklamasını gösteren örnek.](../media/sensitivity-label-in-save-dialog.png)
 
 Yerleşik etiketleme için yeni etiketleme özellikleri kullanıma sunulduğunda haberdar olmak için bkz. [Microsoft Purview'daki yenilikler](whats-new.md) ve **Duyarlılık etiketleri** bölümleri.
 
@@ -135,8 +140,8 @@ AIP eklentisinden henüz yerleşik etiketleme tarafından desteklenmeyen bir öz
 |**Kategori: Kullanıcı Deneyimi** ||
 |Şeritteki etiketleme düğmesi|![Desteklenir.](../media/yes-icon.png)|
 |Etiket adları ve araç ipuçları için çok dilli destek| ![Desteklenen.](../media/yes-icon.png) <br>[Daha fazla bilgi edinin](create-sensitivity-labels.md#example-configuration-to-configure-a-sensitivity-label-for-different-languages) |
-|Etiket renkleri| Planlama veya geliştirme aşamasında |
-|Araç çubuğunda etiketlerin görünürlüğü| Planlama veya geliştirme aşamasında |
+|Araç çubuğunda etiketlerin görünürlüğü| ![Desteklenen.](../media/yes-icon.png) <br>[Daha fazla bilgi edinin](sensitivity-labels-office-apps.md#sensitivity-bar) |
+|Etiket renkleri| ![Desteklenen.](../media/yes-icon.png) <br>[Daha fazla bilgi edinin](sensitivity-labels-office-apps.md#label-colors) |
 |**Kategori: Etiketleme eylemleri** ||
 |El ile etiketleme |  ![Desteklenen.](../media/yes-icon.png) <br>[Daha fazla bilgi edinin](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) |
 |Zorunlu etiketleme | ![Desteklenen.](../media/yes-icon.png) <br>[Daha fazla bilgi edinin](sensitivity-labels.md#what-label-policies-can-do)|

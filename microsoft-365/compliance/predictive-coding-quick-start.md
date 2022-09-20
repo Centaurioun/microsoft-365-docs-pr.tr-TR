@@ -2,8 +2,8 @@
 title: eBulma'da tahmine dayalı kodlama (Premium) - Hızlı başlangıç
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: eKeşif (Premium) içinde tahmine dayalı kodlama modülünü kullanmaya başlamayı öğrenin. Bu makale, araştırmanıza en uygun bir inceleme kümesindeki içeriği tanımlamak için tahmine dayalı kodlamayı kullanma işleminde size yol gösterir.
-ms.openlocfilehash: ddf1762545765424891108f50cceea17999f0920
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0f64af4de1800e0697f372eadd1a83a313441c3c
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625093"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67820051"
 ---
 # <a name="quick-start-predictive-coding-in-ediscovery-premium-preview"></a>Hızlı başlangıç: eBulmada tahmine dayalı kodlama (Premium) (önizleme)
 

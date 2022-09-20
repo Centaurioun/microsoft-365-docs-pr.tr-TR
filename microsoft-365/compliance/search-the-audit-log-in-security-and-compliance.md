@@ -2,8 +2,8 @@
 title: Microsoft Purview uyumluluk portalı denetim günlüğünde arama yapma
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ description: Kuruluşunuzdaki kullanıcı ve yönetici etkinliğini görüntüle
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: d2e49138f03e82bfa2ef0130d72161b1de66d567
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: c8696827aef89054e2fd88591104010c2f3a6e4f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797470"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825312"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>Uyumluluk portalında denetim günlüğünde arama yapma
 

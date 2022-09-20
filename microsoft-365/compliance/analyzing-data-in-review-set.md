@@ -2,8 +2,8 @@
 title: eBulma'da bir gözden geçirme kümesindeki verileri analiz etme (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft Purview eKeşif (Premium) servis talebini analiz ederken belge kümelerini düzenlemek için kullanılabilecek araçlar hakkında bilgi edinin.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 822c21c05b865bdf1208f7679eaff9ea35b10a9e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f5d88420c208caeec42ca44426b8b94f1dddcab0
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634841"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826368"
 ---
 # <a name="analyze-data-in-a-review-set-in-ediscovery-premium"></a>eBulma'da bir gözden geçirme kümesindeki verileri analiz etme (Premium)
 
@@ -64,15 +64,15 @@ Gözden geçirme kümesi için analiz çalıştırdıktan sonra, gözden geçirm
 
 Aşağıdaki listede, filtre sorgusunun sonucu, siz gözden geçirme kümesine uygulandıktan sonra hangi içeriğin görüntülendiğine ilişkin olarak açıklanmaktadır.
 
-- **E-posta.** **Inclusive** veya **InclusiveMinus** olarak işaretlenmiş öğeleri görüntüler. Kapsayıcı öğe, e-posta yazışmasında son iletidir. E-posta yazışmasında önceki tüm içeriği içerir. Dahil eksi, e-posta yazışmasında belirli iletiyle ilişkilendirilmiş bir veya daha fazla ek içerir. Gözden geçiren, e-posta yazışmasında hangi belirli iletilerin ilişkili ekleri olduğunu belirlemek için dahil eksi değerini kullanabilir.
+- **Email**. **Inclusive** veya **InclusiveMinus** olarak işaretlenmiş öğeleri görüntüler. Kapsayıcı öğe, e-posta yazışmasında son iletidir. E-posta yazışmasında önceki tüm içeriği içerir. Dahil eksi, e-posta yazışmasında belirli iletiyle ilişkilendirilmiş bir veya daha fazla ek içerir. Gözden geçiren, e-posta yazışmasında hangi belirli iletilerin ilişkili ekleri olduğunu belirlemek için dahil eksi değerini kullanabilir.
 
-- **Ekler**. Aynı E-posta Kümesindeki yinelenen ekleri filtreler. Yalnızca e-posta yazışmasında benzersiz olan ekler görüntülenir.
+- **Ekler**. Aynı Email Kümesindeki yinelenen ekleri filtreler. Yalnızca e-posta yazışmasında benzersiz olan ekler görüntülenir.
 
 - **Belgeler ve diğer**. Yinelenen belgeleri filtreler. Yalnızca gözden geçirme kümesinde benzersiz olan belgeler görüntülenir.
 
 - **Teams konuşmaları**. Gözden geçirme kümesindeki tüm Teams (ve Yammer) konuşmaları görüntülenir.
 
-Kapsayıcı türler ve belge benzersizliği hakkında daha fazla bilgi için bkz. [eBulma'da e-posta iş parçacığı oluşturma (Premium)](email-threading-in-advanced-ediscovery.md).
+Kapsayıcı türler ve belge benzersizliği hakkında daha fazla bilgi için bkz. [eBulmada iş parçacığı oluşturma (Premium) Email](email-threading-in-advanced-ediscovery.md).
 
 > [!NOTE]
 > eBulma'da (Premium) [yeni durum biçiminin](advanced-ediscovery-new-case-format.md) genel önizlemesi sırasında **Gözden Geçir için** filtre sorgusu, 4 Kasım 2021'den önce oluşturulan gözden geçirme kümeleri (büyük harf biçimini kullanan durumlarda) için Teams veya Yammer konuşmalarını döndürmedi. Bu sorun çözüldü. Başka bir deyişle **, Gözden Geçir için** sorgusunu büyük harf biçimini kullanan bir inceleme kümesine yeniden uygulamanız durumunda, tüm Teams veya Yammer konuşmaları dahil edildiğinden filtre sorgusuyla eşleşen daha fazla öğe görüntülenebilir.

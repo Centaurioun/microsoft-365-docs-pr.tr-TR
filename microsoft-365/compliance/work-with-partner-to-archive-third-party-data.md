@@ -2,8 +2,8 @@
 title: Üçüncü taraf verilerini arşivlemek için bir iş ortağıyla çalışma
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Salesforce Chatter, Yahoo Messenger veya Yammer gibi veri kaynaklarından üçüncü taraf verileri içeri aktarmak için özel bağlayıcı ayarlamayı öğrenin.
-ms.openlocfilehash: 7b66c16da344a0254ecbc704311c6de5fe92c232
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5f2f58e3b67e10d76a3c0a1066037f54f787eefb
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637827"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826587"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Üçüncü taraf verilerini arşivlemek için bir iş ortağıyla çalışma
 
@@ -243,7 +243,7 @@ Aşağıdaki bölümlerde, Microsoft 365'te üçüncü taraf verilerini arşivle
 
 [Smarsh](https://www.smarsh.com) aşağıdaki üçüncü taraf veri kaynaklarını destekler:
 
-- AMACI
+- Amacı
 
 - Amerikan Idol
 
@@ -331,7 +331,7 @@ Aşağıdaki bölümlerde, Microsoft 365'te üçüncü taraf verilerini arşivle
 
 - Instant Bloomberg
 
-- IRC
+- Irc
 
 - Jive
 
@@ -359,7 +359,7 @@ Aşağıdaki bölümlerde, Microsoft 365'te üçüncü taraf verilerini arşivle
 
 - Mobile Guard
 
-- MSN
+- Msn
 
 - Alanım
 
@@ -373,7 +373,7 @@ Aşağıdaki bölümlerde, Microsoft 365'te üçüncü taraf verilerini arşivle
 
 - Pivot
 
-- QQ
+- Qq
 
 - Skype Kurumsal 2015
 
@@ -564,7 +564,7 @@ Kuruluşunuz Azure Active Directory'de üçüncü taraf veri bağlayıcısını 
   |İleti özelliği|Zorunlu?|Açıklama|Örnek değer|
   |---|---|---|---|
   |**KAYNAK**|Evet|Öğeyi ilk olarak üçüncü taraf veri kaynağında oluşturan veya gönderen kullanıcı. İş ortağı bağlayıcısı, kaynak öğedeki kullanıcı kimliğini (örneğin Twitter tanıtıcısı) tüm katılımcılar için bir kullanıcı hesabıyla (KIMDEN ve TO alanlarındaki kullanıcılar) eşlemeyi dener. İletinin bir kopyası her katılımcının posta kutusuna aktarılır. Öğedeki katılımcıların hiçbiri bir kullanıcı hesabıyla eşlenemezse, öğe Microsoft 365'teki üçüncü taraf arşivleme posta kutusuna aktarılır.  <br/> <br/> Öğenin göndereni olarak tanımlanan katılımcının, öğenin içeri aktarıldığı kuruluşta etkin bir posta kutusu olmalıdır. Gönderenin etkin bir posta kutusu yoksa aşağıdaki hata döndürülür:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`|`bob@contoso.com`|
-  |**HEDEF**|Evet|Veri kaynağındaki bir öğe için uygunsa bir öğe alan kullanıcı.|`bob@contoso.com`|
+  |**Hedef**|Evet|Veri kaynağındaki bir öğe için uygunsa bir öğe alan kullanıcı.|`bob@contoso.com`|
   |**KONU**|Hayır|Kaynak öğedeki konu.|`"Mega deals with Contoso coming your way! #ContosoHolidayDeals"`|
   |**TARİH**|Evet|Öğenin ilk oluşturulduğu veya müşteri veri kaynağında deftere nakledildiği tarih. Örneğin, twitter iletisinin tweetlendiği tarih.|`01 NOV 2015`|
   |**VÜCUT**|Hayır|İletinin veya gönderinin içeriği. Bazı veri kaynakları için bu özelliğin içeriği **SUBJECT** özelliğinin içeriğiyle aynı olabilir. İçeri aktarma işlemi sırasında, iş ortağı bağlayıcısı içerik kaynağından mümkün olduğunca tam uygunluk sağlamaya çalışır. Kaynak öğenin gövdesindeki olası dosyalar, grafikler veya diğer içerikler bu özelliğe dahil edilir. Aksi takdirde, kaynak öğedeki içerik **ATTACHMENT** özelliğine eklenir. Bu özelliğin içeriği, iş ortağı bağlayıcısı ve kaynak platformun özelliğine bağlıdır.|`Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015`|

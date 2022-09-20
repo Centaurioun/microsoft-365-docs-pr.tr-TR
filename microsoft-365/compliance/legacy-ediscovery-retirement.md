@@ -2,8 +2,8 @@
 title: Eski eBulma araçları kullanımdan kaldırıldı
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Exchange Online In-Place eBulma ve In-Place Tutma (ve ilgili PowerShell cmdlet'leri) 2020'nin ilk yarısında kullanımdan kaldırılacaktır. Search-Mailbox cmdlet ve Microsoft Purview eKeşif (Premium) v1.0 da aynı süre içinde kullanımdan kaldırılıyor.
-ms.openlocfilehash: 630d72c75f318e6d4f9e68b01c61d5069958a0a1
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 29b2309223d2402a5e40756bbf02df3d085681a8
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636083"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826060"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Eski eKeşif araçlarını kullanımdan kaldırma
 
@@ -30,7 +30,7 @@ Microsoft, yıllar içinde e-posta içeriğini Exchange Online aramanıza, öniz
 
 Uyumluluk portalındaki bu yeni ve geliştirilmiş eBulma işlevinin bir sonucu olarak, Exchange Online ve Microsoft 365'te e-posta içeriğini aramayla ilgili aşağıdaki eBulma ile ilgili özellikleri ve işlevleri kullanımdan kaldırıyoruz:
 
-- Exchange yönetim merkezinde [Yerinde eKeşif](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) ve [Yerinde Tutmalar](/exchange/security-and-compliance/create-or-remove-in-place-holds).
+- Exchange yönetim merkezinde [Yerinde eBulma](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) ve [Yerinde Tutmalar](/exchange/security-and-compliance/create-or-remove-in-place-holds).
 
 - In-Place eBulma ve In-Place Tutmalarını destekleyen Exchange Online PowerShell cmdlet'leri (bu cmdlet'ler topluca **-MailboxSearch* cmdlet'leri olarak tanımlanır). Bu, aşağıdaki cmdlet'leri içerir:
 

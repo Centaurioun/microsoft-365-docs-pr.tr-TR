@@ -2,8 +2,8 @@
 title: Tahmine dayalı kodlama referansı
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Microsoft Purview eKeşif(Premium) içindeki tahmine dayalı kodlama aracının temel kavramları ve ölçümleri hakkında bilgi edinin.
-ms.openlocfilehash: 59718c033fb297a7ef583611c207794cd7b69b6f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6e49999cca5cbbff1f829997dbb1ef2201bc49cb
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640554"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67822561"
 ---
 # <a name="predictive-coding-reference-preview"></a>Tahmine dayalı kodlama başvurusu (önizleme)
 
 Bu makalede, Microsoft Purview eKeşif(Premium) içindeki tahmine dayalı kodlama aracının temel kavramları ve ölçümleri açıklanmaktadır. Makaledeki bölümler alfabetik sırada listelenmiştir.
 
-## <a name="confidence-level"></a>Güvenilirlik düzeyi
+## <a name="confidence-level"></a>Olasılık düzeyi
 
 Güvenilirlik düzeyi, tahmine dayalı bir kodlama modeli oluşturduğunuzda gelişmiş bir ayardır. Modelin performans ölçümlerinin (örneğin, zenginlik, duyarlık ve geri çekme), modelin inceleme kümesindeki öğelere atadığı tahmin puanlarının gerçek değerlerini temsil eden belirli bir aralıkta (model için tanımlanan hata kenar boşluğu belirlenir) olduğunu tanımlar. Güvenilirlik düzeyi ve hata kenar boşluğu değerleri, denetim kümesine kaç öğenin dahil olduğunu belirlemeye de yardımcı olur. Güvenilirlik düzeyi için varsayılan değer %0,95 veya %95'tir.
 

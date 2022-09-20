@@ -2,8 +2,8 @@
 title: Microsoft 365'te Skype Kurumsal verilerini arşivleye bir bağlayıcı ayarlama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Skype Kurumsal'dan Microsoft 365'e verileri içeri aktarmak ve arşivlemek için Microsoft Purview uyumluluk portalı bağlayıcı ayarlamayı ve kullanmayı öğrenin.
-ms.openlocfilehash: 4301519561c75d4c76cdd47b7adae544f5170585
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 943f13179e5943864ae558177f5bf3fedb693d4c
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632881"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821505"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Skype Kurumsal verilerini arşivleye bir bağlayıcı ayarlama
 
@@ -71,7 +71,7 @@ Aşağıdaki genel bakış, Microsoft 365'te Skype Kurumsal verilerini arşivlem
 
 Kullanıcıları eşlemek ve uyumluluk portalında bağlayıcı kurulumunu tamamlamak için şu adımları izleyin:
 
-1. **Kullanıcıları Microsoft 365 kullanıcıları ile Skype Kurumsal** eşle sayfasında otomatik kullanıcı eşlemesini etkinleştirin. Skype Kurumsal öğeleri, kuruluşunuzdaki kullanıcıların *e-posta adreslerini içeren E-posta* adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır.
+1. **Kullanıcıları Microsoft 365 kullanıcıları ile Skype Kurumsal** eşle sayfasında otomatik kullanıcı eşlemesini etkinleştirin. Skype Kurumsal öğeleri, kuruluşunuzdaki kullanıcıların e-posta adreslerini içeren *Email* adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır.
 
 2. **İleri'ye** tıklayın, ayarlarınızı gözden geçirin ve yeni bağlayıcının içeri aktarma işleminin ilerleme durumunu görmek için **Veri bağlayıcıları** sayfasına gidin.
 

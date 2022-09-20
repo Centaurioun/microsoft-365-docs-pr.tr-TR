@@ -2,8 +2,8 @@
 title: Hedeflenen koleksiyonlar için İçerik aramasını kullanma
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Belirli bir posta kutusu veya site klasöründeki öğeleri arayan hedefli bir koleksiyon gerçekleştirmek için Microsoft Purview uyumluluk portalı İçerik arama özelliğini kullanın.
-ms.openlocfilehash: ab4fda56e3ccbd04ac8b7b820c4305e9c6e45093
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0960eb35182370bbf6ae51728a37822342cfb63d
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623683"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826631"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Hedeflenen koleksiyonlar için İçerik aramasını kullanma
 
@@ -57,7 +57,7 @@ Microsoft Purview uyumluluk portalı İçerik arama aracı, Exchange posta kutul
 
 Bu ilk adımda çalıştırdığınız betik, posta kutusu klasörlerinin veya SharePoint ve OneDrive İş klasörlerinin listesini ve her klasör için ilgili klasör kimliğini veya yolunu döndürür. Bu betiği çalıştırdığınızda sizden aşağıdaki bilgileri ister.
 
-- **E-posta adresi veya site URL'si**: Exchange posta kutusu klasörlerinin ve klasör kimliklerinin listesini döndürmek için koruyucunun e-posta adresini yazın. Veya bir SharePoint sitesinin URL'sini veya belirtilen sitenin yollarının listesini döndürmek için bir OneDrive İş sitesi yazın. İşte birkaç örnek:
+- **Email adresi veya site URL'si**: Exchange posta kutusu klasörlerinin ve klasör kimliklerinin listesini döndürmek için koruyucunun e-posta adresini yazın. Veya bir SharePoint sitesinin URL'sini veya belirtilen sitenin yollarının listesini döndürmek için bir OneDrive İş sitesi yazın. İşte birkaç örnek:
 
   - **Exchange**: `stacig@contoso.onmicrosoft.com`
 

@@ -2,8 +2,8 @@
 title: Microsoft 365'te XSLT/XML verilerini arşivleye bağlayıcı ayarlama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Yöneticiler, Microsoft 365'te Veritas'tan XSLT/XML verilerini içeri aktarmak ve arşivlemek için bir bağlayıcı ayarlayabilir. Bu bağlayıcı, kuruluşunuzun üçüncü taraf verilerini yönetmek için yasal saklama, içerik arama ve bekletme ilkeleri gibi uyumluluk özelliklerini kullanabilmeniz için Microsoft 365'teki üçüncü taraf veri kaynaklarından verileri arşivleyebilmenizi sağlar.
-ms.openlocfilehash: fa4901098dcd0104406107c4fc98aa9c04006c1d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 44255c4d8e6df531d35dfdcbec8c54566a4f2e3c
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637737"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821483"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>XSLT/XML verilerini arşivleye bağlayıcı ayarlama
 
@@ -71,7 +71,7 @@ Aşağıdaki genel bakış, Microsoft 365'te XSLT/XML kaynak verilerini arşivle
 
 1. Kullanıcıları eşlemek ve uyumluluk portalında bağlayıcı kurulumunu tamamlamak için aşağıdaki adımları izleyin:
 
-2. **XSLT/XML kullanıcılarını Microsoft 365 kullanıcılarıyla eşle** sayfasında otomatik kullanıcı eşlemesini etkinleştirin. XSLT/XML öğeleri, kuruluşunuzdaki kullanıcıların *e-posta adreslerini içeren E-posta* adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır.
+2. **XSLT/XML kullanıcılarını Microsoft 365 kullanıcılarıyla eşle** sayfasında otomatik kullanıcı eşlemesini etkinleştirin. XSLT/XML öğeleri, kuruluşunuzdaki kullanıcıların e-posta adreslerini içeren *Email* adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır.
 
 3. **İleri'ye** tıklayın, ayarlarınızı gözden geçirin ve yeni bağlayıcının içeri aktarma işleminin ilerleme durumunu görmek için **Veri bağlayıcıları** sayfasına gidin.
 

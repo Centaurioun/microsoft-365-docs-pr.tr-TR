@@ -2,8 +2,8 @@
 title: Microsoft 365'te PostgreSQL verilerini arşivleme amacıyla Cisco Jabber'ı arşivleme bağlayıcısı ayarlama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: PostgreSQL'de Cisco Jabber'dan Microsoft 365'e veri içeri aktarmak ve arşivlemek için Microsoft Purview uyumluluk portalı bağlayıcıyı ayarlamayı ve kullanmayı öğrenin.
-ms.openlocfilehash: 9dd35756931c8d60538601332555dbc5cbf108b3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 53792f1bba9862a493c7dfd15709aec0dfeff2af
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636655"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67827094"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-postgresql-data"></a>PostgreSQL verilerinde Cisco Jabber'ı arşivleme bağlayıcısı ayarlama
 
@@ -74,7 +74,7 @@ Aşağıdaki genel bakış, Microsoft 365'te PostgreSQL üzerinde Cisco Jabber v
 
 Kullanıcıları eşlemek ve uyumluluk portalında bağlayıcı kurulumunu tamamlamak için şu adımları izleyin:
 
-1. **PostgreSQL kullanıcılarını Microsoft 365 kullanıcıları ile eşleme** sayfasında, otomatik kullanıcı eşlemesini etkinleştirin. PostgreSQL üzerindeki Cisco Jabber öğeleri, kuruluşunuzdaki kullanıcıların *e-posta adreslerini içeren E-posta* adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır.
+1. **PostgreSQL kullanıcılarını Microsoft 365 kullanıcıları ile eşleme** sayfasında, otomatik kullanıcı eşlemesini etkinleştirin. PostgreSQL üzerindeki Cisco Jabber öğeleri, kuruluşunuzdaki kullanıcıların e-posta adreslerini içeren *Email* adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır.
 
 2. **İleri'ye** tıklayın, ayarlarınızı gözden geçirin ve yeni bağlayıcının içeri aktarma işleminin ilerleme durumunu görmek için **Veri bağlayıcıları** sayfasına gidin.
 

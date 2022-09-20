@@ -2,8 +2,8 @@
 title: İçerik arama sonuçlarını dışarı aktarma
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -20,14 +20,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: arama sonuçlarını Microsoft Purview uyumluluk portalı bir İçerik aramasından yerel bir bilgisayara aktarın. E-posta sonuçları PST dosyaları olarak dışarı aktarılır. SharePoint ve OneDrive İş sitelerindeki içerik yerel Office belgeleri olarak dışarı aktarılır.
+description: arama sonuçlarını Microsoft Purview uyumluluk portalı bir İçerik aramasından yerel bir bilgisayara aktarın. Email sonuçları PST dosyaları olarak dışarı aktarılır. SharePoint ve OneDrive İş sitelerindeki içerik yerel Office belgeleri olarak dışarı aktarılır.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a73120b697441255e6ac53c5bd371d56931d8644
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 42d823f3d9a798b75f8d82cab46cbfa5ce900d4c
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641592"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826939"
 ---
 # <a name="export-content-search-results"></a>İçerik arama sonuçlarını dışarı aktarma
 

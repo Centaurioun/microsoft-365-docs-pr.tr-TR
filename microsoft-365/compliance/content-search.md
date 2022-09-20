@@ -2,8 +2,8 @@
 title: Microsoft Purview uyumluluk portalı İçerik araması oluşturma ve çalıştırma
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Farklı Microsoft 365 hizmetlerindeki içeriği aramak için uyumluluk merkezindeki İçerik arama eBulma aracını kullanın.
-ms.openlocfilehash: b2317012415929201c0a1cb8b20ef751bf85ed95
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 34440fed3db4f8826040c0c9771e1acf89a57ace
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67798835"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821879"
 ---
 # <a name="create-a-content-search"></a>İçerik araması oluşturma
 

@@ -1,9 +1,9 @@
 ---
-title: eBulma'da e-posta yazışması oluşturma (Premium)
+title: eBulma'da iş parçacığı oluşturma Email (Premium)
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,20 +16,20 @@ search.appverid:
 - MET150
 description: EBulma (Premium) analizi yaparken, e-posta yazışması bir e-posta konuşmasını ayrıştırıp her iletiyi farklı kategorilere ayırır.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a17f746cb0c88fb68e4654d0dd7de528135d62ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 86a3fbcccb569713b8517a8813689fd1bd678577
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629717"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67821659"
 ---
-# <a name="email-threading-in-ediscovery-premium"></a>eBulma'da e-posta yazışması oluşturma (Premium)
+# <a name="email-threading-in-ediscovery-premium"></a>eBulma'da iş parçacığı oluşturma Email (Premium)
 
-Bir süredir devam eden bir e-posta konuşmasını düşünün. Çoğu durumda, e-posta yazışmasının son iletisi önceki tüm iletilerin içeriğini içerir. Bu nedenle, son ileti gözden geçirilirken yazışmada gerçekleşen konuşmanın tam bir bağlamı gösterilir. E-posta yazışması, gözden geçirenlerin herhangi bir bağlamı kaybetmeden toplanan belgelerin bir bölümünü gözden geçirebilmesi için bu tür iletileri tanımlar.
+Bir süredir devam eden bir e-posta konuşmasını düşünün. Çoğu durumda, e-posta yazışmasının son iletisi önceki tüm iletilerin içeriğini içerir. Bu nedenle, son ileti gözden geçirilirken yazışmada gerçekleşen konuşmanın tam bir bağlamı gösterilir. Email iş parçacığı oluşturma, gözden geçirenlerin herhangi bir bağlamı kaybetmeden toplanan belgelerin bir bölümünü gözden geçirebilmesi için bu tür iletileri tanımlar.
 
 ## <a name="what-does-email-threading-do"></a>E-posta yazışmaları ne işe olur?
 
-E-posta yazışması her e-posta yazışmasını ayrıştırıp ayrı ayrı iletilere oluşturur. Her e-posta yazışması, ayrı ayrı iletiler zinciridir. Microsoft Purview eKeşif (Premium), bir e-posta iletisinin benzersiz içeriği olup olmadığını veya zincirin (üst iletiler) e-posta yazışmasında son iletide tamamen bulunup bulunmadığını belirlemek için gözden geçirme kümesindeki tüm e-posta iletilerini analiz eder. E-posta iletileri dört kapsayıcı değere ayrılır:
+Email iş parçacığı her e-posta yazışmasını ayrıştırıp ayrı ayrı iletilere oluşturur. Her e-posta yazışması, ayrı ayrı iletiler zinciridir. Microsoft Purview eKeşif (Premium), bir e-posta iletisinin benzersiz içeriği olup olmadığını veya zincirin (üst iletiler) e-posta yazışmasında son iletide tamamen bulunup bulunmadığını belirlemek için gözden geçirme kümesindeki tüm e-posta iletilerini analiz eder. Email iletileri dört kapsayıcı değere ayrılır:
 
 - **Kapsayıcı**: *Kapsayıcı* e-posta, bir e-posta yazışmasında son e-posta iletisidir ve bu e-posta yazışmasının önceki tüm içeriğini içerir.
 

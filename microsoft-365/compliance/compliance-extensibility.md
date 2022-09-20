@@ -2,8 +2,8 @@
 title: Microsoft Purview genişletilebilirliği
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Üçüncü taraf veri bağlayıcılarını ve Microsoft Graph API'lerini kullanarak Microsoft Purview çözümlerini genişletme hakkında bilgi edinin.
-ms.openlocfilehash: 7fc3bf0fb177e07011d0e6388109deec7df14c05
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 48cae8240e91e553ceb8194a283730b1f4adde50
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106437"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67826807"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Microsoft Purview ve Microsoft Priva genişletilebilirliği
 

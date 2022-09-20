@@ -2,8 +2,8 @@
 title: Microsoft 365'te Quip verilerini arşivleye bağlayıcı ayarlama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Microsoft 365'te Quip verilerini içeri aktarmak ve arşivlemek için 17a-4 Quip DataParser bağlayıcısı ayarlamayı ve kullanmayı öğrenin.
-ms.openlocfilehash: 5d2b0153be40d0f2f168e37b78836b57573c477e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1d3ff72dbf168321270a6b5f225f2083ce2f7bd5
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623385"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825752"
 ---
 # <a name="set-up-a-connector-to-archive-quip-data"></a>Quip verilerini arşivleye bağlayıcı ayarlama
 
@@ -37,7 +37,7 @@ Aşağıdaki genel bakış, Microsoft 365'te Quip verilerini arşivlerken veri b
 
 3. Microsoft Purview uyumluluk portalı oluşturduğunuz Quip DataParser bağlayıcısı DataParser'a bağlanır ve iletileri Microsoft bulutunda güvenli bir Azure Depolama konumuna aktarır.
 
-4. Kullanıcı posta kutularında Gelen Kutusu klasöründe **Quip DataParser** adlı bir alt klasör oluşturulur ve Quip öğeleri bu klasöre aktarılır. Bağlayıcı, *E-posta* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her Quip öğesi, her katılımcının e-posta adresiyle doldurulan bu özelliği içerir.
+4. Kullanıcı posta kutularında Gelen Kutusu klasöründe **Quip DataParser** adlı bir alt klasör oluşturulur ve Quip öğeleri bu klasöre aktarılır. Bağlayıcı, *Email* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her Quip öğesi, her katılımcının e-posta adresiyle doldurulan bu özelliği içerir.
 
 ## <a name="before-you-set-up-a-connector"></a>Bağlayıcıyı ayarlamadan önce
 
