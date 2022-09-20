@@ -15,12 +15,12 @@ search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: SharePoint Syntex, SharePoint Listeleri, Microsoft Teams ve Power Automate'in Microsoft 365 çözümünü kullanarak sözleşmeleri yönetmeyi öğrenin.
-ms.openlocfilehash: d5c19b93f90996269788bd4571bbf350f7e5887d
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 6d925999c70e49ec17dcb04925256a2b229007bf
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583142"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812270"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Microsoft 365 çözümü kullanarak sözleşmeleri yönetme
 
@@ -92,7 +92,7 @@ Bu çözüm, tümü Microsoft 365 Kurumsal (E1, E3, E5, F3) veya İş (Temel, St
 
 SharePoint Syntex'da yeni misiniz? yapay zeka kullanarak içeriği yönetmek için SharePoint Syntex kullanmayı öğrenin.
 
-[SharePoint Syntex kullanmaya başlama](/learn/paths/syntex-get-started) öğrenme yolu, belgeleri sınıflandırmak, metin ayıklamak ve hızlı ve kolay bilgi yönetimi için belgelerinizi etiketlemek için belge anlama ve form işleme modellerini nasıl kullanabileceğinizi öğretir.
+[SharePoint Syntex kullanmaya başlama](/training/paths/syntex-get-started) öğrenme yolu, belgeleri sınıflandırmak, metin ayıklamak ve hızlı ve kolay bilgi yönetimi için belgelerinizi etiketlemek için belge anlama ve form işleme modellerini nasıl kullanabileceğinizi öğretir.
 
 ## <a name="create-the-solution"></a>Çözümü oluşturma
 

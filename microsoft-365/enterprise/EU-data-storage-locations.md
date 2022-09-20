@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 müşteri verilerinizin Avrupa Birliği içinde nerede depolandığını belirleme
-ms.openlocfilehash: 03f67a91f25f8333a92334ef633687e2b41e80a6
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 33e898bdea6d32446630c9da97d7241a040b6916
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753660"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811952"
 ---
 # <a name="data-locations-for-the-european-union"></a>Avrupa Birliği için veri konumları
 
@@ -30,7 +30,7 @@ ms.locfileid: "65753660"
 Microsoft, iş verilerinizin gizliliğini ve gizliliğini korumanın önemini kabul eder. Verileriniz size aittir ve istediğiniz zaman verilerinize erişebilir, bunları değiştirebilir veya silebilirsiniz. Microsoft, onayınız olmadan verilerinizi kullanmaz ve izninizi aldığımızda verilerinizi yalnızca seçtiğiniz hizmetleri sağlamak için kullanırız. Hizmetlerimizden birini bırakırsanız, verileri sistemlerimizden kaldırmaya yönelik katı standartları ve süreçleri izleyerek verilerinizin sahipliğini sürdürmenizi sağlarız.
 
 > [!NOTE]
-> Müşteri verileri ("verileriniz" veya "iş verileriniz" olarak da adlandırılır), Microsoft'a sağladığınız veya Microsoft Professional Hizmetleri hariç olmak üzere Microsoft kurumsal çevrimiçi hizmetler kullanımınız aracılığıyla sizin adınıza sağlanan metin, ses, video veya görüntü dosyaları ve yazılımlar da dahil olmak üzere tüm veriler anlamına gelir. Depolama veya işleme için karşıya yüklediğiniz veriler ve Bir Microsoft kurumsal bulut hizmeti aracılığıyla dağıtım için karşıya yüklediğiniz uygulamalar olan müşteri içeriğini içerir. Örneğin, müşteri içeriği Exchange Online e-posta ve ekleri, SharePoint Çevrimiçi site içeriğini veya anlık ileti konuşmalarını içerir.
+> Müşteri verileri ("verileriniz" veya "iş verileriniz" olarak da adlandırılır), Microsoft'a sağladığınız veya Microsoft Professional Services hariç olmak üzere Microsoft kurumsal çevrimiçi hizmetler kullanımınız aracılığıyla sizin adınıza sağlanan metin, ses, video veya görüntü dosyaları ve yazılımlar da dahil olmak üzere tüm veriler anlamına gelir. Depolama veya işleme için karşıya yüklediğiniz veriler ve Bir Microsoft kurumsal bulut hizmeti aracılığıyla dağıtım için karşıya yüklediğiniz uygulamalar olan müşteri içeriğini içerir. Örneğin, müşteri içeriği Exchange Online e-posta ve ekleri, SharePoint Online site içeriğini veya anlık ileti konuşmalarını içerir.
 
 ## <a name="data-storage-and-processing"></a>Veri depolama ve işleme
 
@@ -72,13 +72,13 @@ Daha fazla bilgi edinmek için bkz. [Avrupa Birliği Model Yan Tümceleri](/comp
 > [!NOTE]
 > Sway ve Workplace Analytics için müşteri verileri, bu hizmetleri kullanmayı tercih ederseniz Birleşik Devletler depolanır ve hesaplanır.
 >
-> Microsoft 365 hizmetleri, kiracı dizin/kimlik veri bilgilerinin bölümlerini, belirli senaryoları kolaylaştırmak için gerekli olduğu durumlarda AB dışındaki bölgelerde sorgulayıp depolar. Örneğin, bölgesel e-posta yönlendirme, çağrı yönlendirme ve kimlik doğrulaması senaryolarında, Microsoft 365 sistemlerin bu istekleri düzgün yönlendirmek için AB alıcıları hakkında bazı bilgilere ihtiyacı olabilir. Microsoft 365 sistemleri de kimlik ve kimlik doğrulama işlevleri için Azure Active Directory bağlıdır. Daha fazla bilgi için bkz. [Azure Active Directory'da Avrupalı müşteriler için kimlik veri depolaması](/azure/active-directory/fundamentals/active-directory-data-storage-eu).
+> Microsoft 365 hizmetleri, kiracı dizin/kimlik verisi bilgilerinin bölümlerini, belirli senaryoları kolaylaştırmak için gereken durumlarda AB dışındaki bölgelerde sorgulayıp depolar. Örneğin, bölgesel e-posta yönlendirme, çağrı yönlendirme ve kimlik doğrulaması senaryolarında Microsoft 365 sistemlerinin bu istekleri düzgün yönlendirmek için AB alıcıları hakkında bazı bilgilere ihtiyacı olabilir. Microsoft 365 sistemleri kimlik ve kimlik doğrulama işlevleri için Azure Active Directory'ye de bağlıdır. Daha fazla bilgi için bkz. [Azure Active Directory'de Avrupalı müşteriler için kimlik veri depolaması](/azure/active-directory/fundamentals/active-directory-data-storage-eu).
 
 ## <a name="how-microsoft-protects-your-data"></a>Microsoft verilerinizi nasıl korur?
 
 ### <a name="security-measures"></a>Güvenlik önlemleri
 
-Microsoft, birden çok güvenlik ve şifreleme protokolü katmanı kullanarak verilerinizin güvenliğini sağlar. [Microsoft 365 şifreleme makalesinde](../compliance/encryption.md) Microsoft veri güvenliği özelliklerine genel bir bakış elde edin.
+Microsoft, birden çok güvenlik ve şifreleme protokolü katmanı kullanarak verilerinizin güvenliğini sağlar. Microsoft [365 şifreleme makalesinde Microsoft](../compliance/encryption.md) veri güvenliği özelliklerine genel bir bakış elde edin.
 
 Varsayılan olarak, Microsoft Yönetilen Anahtarlar müşteri verilerinizi korur. Herhangi bir fiziksel medyada kalıcı olan veriler her zaman FIPS 140-2 uyumlu şifreleme protokolleri kullanılarak şifrelenir. Ayrıca daha fazla veri koruması için müşteri tarafından yönetilen anahtarları (CMK), [çift şifrelemeyi](../compliance/double-key-encryption.md) ve/veya donanım güvenlik modüllerini (HSM) kullanabilirsiniz.
 
@@ -96,7 +96,7 @@ Müşteriler, yetkisiz erişim durumunda verilerinin okunabilir olmasını önle
 
 microsoft, çevrimiçi hizmetler kullanırken verilerinizi depolamaya ve işlemeye ek olarak sistem durumunu izlemek ve sorun giderme gibi hizmet işlemleri gerçekleştirmek için hizmet verileri oluşturur. Gizlilik koruma önlemi olarak Microsoft, gerçek kullanıcıları tanımlamadan bir kullanıcıyı diğerinden ayırt edebilmek için bu hizmet tarafından oluşturulan verilerde takma ad tanımlayıcıları oluşturur ve bunlara dayanır. Takma ad tanımlayıcıları bir kişiyi doğrudan tanımlamaz ve takma ad tanımlayıcılarının gerçek kullanıcılarla eşlenip eşlenemelerine olanak tanıyan bilgiler verilerinizin bir parçası olarak korunur.
 
-Daha fazla bilgi edinmek için bkz. [Who verilerinize erişebilir](https://www.microsoft.com/trust-center/privacy/data-access) ve hangi [terimlere ve Alt İşlemcilere ve Veri Gizliliğine](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4qVL2) erişebilir?
+Daha fazla bilgi edinmek için bkz [. Verilerinize kimlerin erişebileceği](https://www.microsoft.com/trust-center/privacy/data-access) ve hangi [terimler ile Alt İşlemciler ve Veri Gizliliği](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4qVL2).
 
 ## <a name="how-microsoft-handles-government-requests"></a>Microsoft kamu isteklerini nasıl işler?
 
@@ -115,8 +115,8 @@ Daha fazla bilgi edinmek için bkz. BULUT Yasası hakkındaki sorular da dahil o
 
 ## <a name="additional-resources"></a>Ek kaynaklar
 
-- [Güvenilir veri koruması](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn), Microsoft Online Services ve Professional Services kullandığınızda Microsoft'un verilerinizi nasıl koruduğuna genel bir bakış sağlar. Ayrıca, bu hizmetleri kullanımınızı yöneten [Microsoft Online Services Terms (OST) ve Data Protection Eki'ne (DPA)](https://www.microsoft.com/licensing/product-licensing/products) başvurmanız önerilir.
-- [GDPR için Office 365 Veri Sahibi İstekleri](/compliance/regulatory/gdpr-dsr-Office365), Microsoft 365 ürünleri, hizmetleri ve yönetim araçlarını kullanarak DSR'lere yanıt vermek için kişisel verileri veya kişisel bilgileri bulmanıza ve bunlar üzerinde işlem yapmaya yardımcı olur.
-- [Veri Koruma Etki Değerlendirmeleri: Microsoft Office 365 Kullanarak Veri Denetleyicilerine Yönelik Kılavuz](/compliance/regulatory/gdpr-dpia-office365), kuruluşunuzun bir DPIA taslağı hazırlaması gerekip gerekmediğini belirlemenize yardımcı olur, "nasıl yapılır" yönergeleri sağlar, özelleştirilebilir bir DPIA şablon belgesi içerir ve birçok Microsoft 365 hizmeti için bir DPIA Hizmet Öğeleri Matrisi sağlar.
-- [Modüllerin](/learn/paths/audit-safeguard-customer-data/) denetim, uyumluluk, risk ve genel bir anlayış arayan yasal rollerdeki kişiler için nasıl tasarlandığını öğrenin. Müşteri verilerini korumak için Microsoft 365 temel güvenlik ve gizlilik uygulamalarının ayrıntılı bir incelemesi sağlanır.
-- [Microsoft Uyumluluk Teklifleri](/compliance/regulatory/offering-home), Microsoft 365 hizmetlerinin kuruluşunuzun mevzuat uyumluluğu standartlarını karşılamaya nasıl yardımcı olduğunu gösterir.
+- [Güvenilir veri koruması](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn) , Microsoft Online Services ve Professional Services kullandığınızda Microsoft'un verilerinizi nasıl koruduğuna genel bir bakış sağlar. Ayrıca, bu hizmetleri kullanımınızı yöneten [Microsoft Online Services Terms (OST) ve Data Protection Eki'ne (DPA)](https://www.microsoft.com/licensing/product-licensing/products) başvurmanız önerilir.
+- [GDPR için Office 365 Veri Sahibi İstekleri](/compliance/regulatory/gdpr-dsr-Office365), Microsoft 365 ürünlerini, hizmetlerini ve yönetim araçlarını kullanarak DSR'lere yanıt vermek için kişisel verileri veya kişisel bilgileri bulmanıza ve bunlar üzerinde işlem yapmaya yardımcı olur.
+- [Veri Koruma Etki Değerlendirmeleri: Microsoft Office 365 Kullanarak Veri Denetleyicilerine Yönelik Yönergeler](/compliance/regulatory/gdpr-dpia-office365), kuruluşunuzun bir DPIA taslağı hazırlaması gerekip gerekmediğini belirlemenize yardımcı olur, "nasıl yapılır" yönergeleri sağlar, özelleştirilebilir bir DPIA şablon belgesi içerir ve birçok Microsoft 365 hizmeti için bir DPIA Hizmet Öğeleri Matrisi sağlar.
+- [Modüllerin](/training/paths/audit-safeguard-customer-data/) denetim, uyumluluk, risk ve genel bir anlayış arayan yasal rollerdeki kişiler için nasıl tasarlandığını öğrenin. Microsoft 365'in müşteri verilerini korumaya yönelik temel güvenlik ve gizlilik uygulamalarının ayrıntılı bir incelemesi sağlanır.
+- [Microsoft Uyumluluk Teklifleri](/compliance/regulatory/offering-home) , Microsoft 365 hizmetlerinin kuruluşunuzun mevzuat uyumluluğu standartlarını karşılamaya nasıl yardımcı olduğunu gösterir.

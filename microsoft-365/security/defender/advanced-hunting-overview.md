@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
-ms.openlocfilehash: aaf1ab874eddaae385cf3eaf3f0e3fb0bea8d877
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 0203f5df758a530c48bee22d4a3ea6371f1f57a7
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67741576"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812546"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Microsoft 365 Defender'da gelişmiş arama ile tehditleri proaktif olarak avlama
 
@@ -71,8 +71,19 @@ Gelişmiş tehdit avcılığı verileri, her biri farklı şekilde birleştirilm
 - **Olay veya etkinlik verileri**; uyarılar, güvenlik olayları, sistem olayları ve rutin değerlendirmeler hakkındaki tabloları doldurur. Gelişmiş avcılık, bu verileri toplayan algılayıcılar tarafından ilgili bulut hizmetlerine başarıyla iletildikten hemen sonra alır. Örneğin, iş istasyonlarındaki veya etki alanı denetleyicilerindeki iyi durumdaki algılayıcılardan gelen olay verilerini, Uç Nokta için Microsoft Defender ve Kimlik için Microsoft Defender kullanıma sunulduktan hemen sonra sorgulayabilirsiniz.
 - **Varlık verileri**; tabloları kullanıcılar ve cihazlar hakkındaki bilgilerle doldurur. Bu veriler hem görece statik veri kaynaklarından hem de Active Directory girişleri ve olay günlükleri gibi dinamik kaynaklardan gelir. Yeni veriler sağlamak için, tablolar her 15 dakikada bir yeni bilgilerle güncelleştirilir ve tam olarak doldurulmayabilecek satırlar eklenir. Her 24 saatte bir veriler birleştirerek her varlıkla ilgili en son ve en kapsamlı veri kümesini içeren bir kayıt eklenir.
 
+
 ## <a name="time-zone"></a>Saat dilimi
-Gelişmiş avcılıkta saat bilgileri UTC (Evrensel Saat Eşgüdümlü) saat dilimindedir.
+### <a name="queries"></a>Sorgu
+Gelişmiş tehdit avcılığı verileri UTC (Evrensel Saat Eşgüdümlü) saat dilimini kullanır. 
+![Özel zaman aralığının ekran görüntüsü.](../../media/custom-time-range.png)
+
+Sorgular UTC'de oluşturulmalıdır.
+
+### <a name="results"></a>Sonuç -ları
+Gelişmiş avlanma sonuçları, Microsoft 365 Defender'de ayarlanan [saat dilimine](m365d-time-zone.md) dönüştürülür. 
+
+
+
 
 ## <a name="related-topics"></a>İlgili konular
 - [Kılavuzlu ve gelişmiş avcılık modları arasında seçim yapma](advanced-hunting-modes.md)

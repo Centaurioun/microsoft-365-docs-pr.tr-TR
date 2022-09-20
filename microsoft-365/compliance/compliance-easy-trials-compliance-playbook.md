@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Microsoft Purview çözümleri deneme playbook'u.
 ms.custom: trial-playbook
-ms.openlocfilehash: e79986eb4b74e675770825fa621cdfdfd59ac047
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 484fddb8b9e8f4c09296a1bf67e116fa3ca1223a
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67643883"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67809583"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Deneme playbook'u: Microsoft Purview çözümleri
 
@@ -356,7 +356,7 @@ eBulma 'ya (Premium) erişmek veya eBulma (Premium) olayının üyesi olarak ekl
 
 Daha fazla kuruluş, kritik eBulma işlemleri için Microsoft 365'teki eBulma (Premium) çözümünü kullanır. Bu, mevzuat isteklerine, araştırmalara ve davalara yanıt vermeyi içerir.
 
-1. eBulmayı Yönetme (Premium) – [eBulma'yı (Premium) yapılandırmayı, Güvenlik & Uyumluluk Merkezi'ni kullanarak servis taleplerini yönetmeyi, Advanced eDiscovery iş akışını yönetmeyi ve Advanced eDiscovery arama sonuçlarını analiz etmeyi öğrenin](/learn/modules/manage-advanced-ediscovery).
+1. eBulmayı Yönetme (Premium) – [eBulma'yı (Premium) yapılandırmayı, Güvenlik & Uyumluluk Merkezi'ni kullanarak servis taleplerini yönetmeyi, Advanced eDiscovery iş akışını yönetmeyi ve Advanced eDiscovery arama sonuçlarını analiz etmeyi öğrenin](/training/modules/manage-advanced-ediscovery).
 1. [eBulma Premium'un yeni servis talebi](advanced-ediscovery-new-case-format.md) biçimini kullanarak eBulma olayı oluşturma
 1. [Bir olayı kapatma veya silme](close-or-delete-case.md) - Yasal dava veya araştırma tamamlandığında, kapatabilir veya silebilirsiniz. Kapatılan bir olayı da yeniden açabilirsiniz.
 

@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ilkesi bileşeni ve yapılandırma başvurusu
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: f9d5b5065925805c346f865706b34bb05c268571
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: 6368a534f40606d906efa2b8a9f6ca920fcd6ce1
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67643905"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812128"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Veri Kaybı Önleme ilkesi başvurusu
 
@@ -521,8 +521,8 @@ Bir eylemin etkili olup olmayacağı, ilke modunu nasıl yapılandırdığınız
 
 <!--This section introduces the business need for user notifications, what they are, their benefit, how to use them, how to customize them, and links out to 
 
-- https://docs.microsoft.com/en-us/microsoft-365/compliance/use-notifications-and-policy-tips?view=o365-worldwide
-- https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-policy-tips-reference?view=o365-worldwide
+- https://learn.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips?view=o365-worldwide
+- https://learn.microsoft.com/microsoft-365/compliance/dlp-policy-tips-reference?view=o365-worldwide
 
 for where they are used/expected behavior-->
 
@@ -672,7 +672,7 @@ Bu tabloda, Kapsamı SharePoint Online ve OneDrive İş olan ilkeler için DLP e
 
 Genellikle, kuruluşunuz bir ilkeyi ilk dağıttığında kullanıcı geçersiz kılmaları yararlıdır. Geçersiz kılma gerekçelerinden ve hatalı pozitif sonuçların belirlenmesinden elde ettiğiniz geri bildirim, ilkenin ayarlanmasına yardımcı olur. 
 
-<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
+<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
 
 - En kısıtlayıcı kuraldaki ilke ipuçları kişilerin kuralı geçersiz kılmasına izin verirse, bu kuralın geçersiz kılınmış olması, içeriğin eşleştirilen diğer kuralları da geçersiz kılar.
  
@@ -687,8 +687,8 @@ Kullanıcı geçersiz kılmaları hakkında daha fazla bilgi edinmek için bkz:
 <!--DLP interacts with other M365 information protection services, like IR. Link this to a process outline for triaging/managing/resolving DLP incidents
 
 
-https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
-https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
+https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
+https://learn.microsoft.com/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
 
 Bir kural eşleştirildiğinde, uyumluluk yöneticinize (veya seçtiğiniz kişilere) olayın ayrıntılarını içeren bir olay raporu gönderebilirsiniz. Rapor, eşleşen öğe, kuralla eşleşen gerçek içerik ve içeriği son değiştiren kişinin adı hakkında bilgi içerir. E-posta iletileri için rapor, DLP ilkesiyle eşleşen özgün iletiyi ek olarak da içerir.
 

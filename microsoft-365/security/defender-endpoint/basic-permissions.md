@@ -5,7 +5,8 @@ keywords: kullanıcı rolleri atama, okuma ve yazma erişimi atama, salt okunur 
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -14,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 57fec13384a825620633be7d59a312a4ff5926f8
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 5ff24d873352d82916f42a227c50486dfb50881a
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797260"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812600"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Portala erişmek için temel izinleri kullanın
 

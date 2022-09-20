@@ -24,12 +24,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.openlocfilehash: 6c442d0a3a3394a29ad89e81add2a1608c4d675b
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 70a262cd53bed114bd8d4a8e737c796b13bd831a
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67516554"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67809431"
 ---
 # <a name="microsoft-365-defender-portal"></a>Microsoft 365 Defender portalı
 
@@ -146,7 +146,7 @@ Ortaya çıkan tehditleri aşağıdaki Microsoft 365 Defender tehdit analiziyle 
 > Ürün filtresiyle birlikte geçerli konular, kaynak türleri (videolardan web seminerlerine), güvenlik alanları, güvenlik rolleri ve ürün özellikleriyle ilgili bilgi ve deneyim düzeyleri listelenir.
 
 > [!TIP]
-> [Microsoft Learn'de](/learn/) birçok başka öğrenme fırsatı vardır. [Kurs MS-500T02-A: Microsoft 365 Tehdit Koruması Uygulama gibi sertifika eğitimleri](/learn/certifications/courses/ms-500t02) bulacaksınız.
+> [Microsoft Learn'de](/training/) birçok başka öğrenme fırsatı vardır. [Kurs MS-500T02-A: Microsoft 365 Tehdit Koruması Uygulama gibi sertifika eğitimleri](/training/certifications/courses/ms-500t02) bulacaksınız.
 
 ## <a name="send-us-your-feedback"></a>Bize geri bildiriminizi gönderin
 
@@ -173,7 +173,7 @@ Microsoft Learn'den gelen bu öğrenme yolu ile Microsoft 365 Defender ve güven
 |![Microsoft 365 Defender eğitim simgesi.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft 365 Defender gelişmiş siber saldırılara karşı tümleşik koruma sağlamak için uç noktalar, kimlikler, e-postalar ve uygulamalar arasında tehdit sinyallerini birleştirilir. Microsoft 365 Defender, olayları araştırmak ve yanıtlamak ve devam eden kötü amaçlı siber güvenlik etkinliklerini proaktif olarak aramak için merkezi bir deneyimdir.<p> 1 sa 38 dk - Öğrenme Yolu - 5 Modül|
 
 > [!div class="nextstepaction"]
-> [Başlangıç >](/learn/paths/defender-detect-respond/)
+> [Başlangıç >](/training/paths/defender-detect-respond/)
 
 
 ## <a name="see-also"></a>Ayrıca bkz.

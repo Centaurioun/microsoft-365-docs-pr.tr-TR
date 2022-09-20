@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 1d1eb2f292d5697eb3aabfbceaa89157e48473c3
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 09c07fe5947d370c6641fac7b589dc96974d7b7d
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67495093"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811713"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender'daki yenilikler
 
@@ -32,7 +32,7 @@ Microsoft 365 Defender'deki yeni özellikleri ve işlevleri listeler.
 RSS akışı: Aşağıdaki URL'yi kopyalayıp akış okuyucunuza yapıştırarak bu sayfa güncelleştirildiğinde bildirim alın:
 
 ```http
-https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
+https://learn.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
 Diğer Microsoft Defender güvenlik ürünleriyle ilgili yenilikler hakkında daha fazla bilgi için bkz:
@@ -155,4 +155,3 @@ Güvenlik operasyonları ekibi onay bekleyen tüm eylemleri ve bu eylemlerin kar
 - [CloudAppEvents tablosu](advanced-hunting-cloudappevents-table.md)
 
   Microsoft Defender for Cloud Apps kapsamındaki çeşitli bulut uygulamaları ve hizmetlerindeki olaylar hakkında bilgi edinin. Bu tablo, daha önce tabloda bulunan `AppFileEvents` bilgileri de içerir.
-

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da form işleme modelleri oluşturmak için AI Build'i kullanmayı öğrenin.
-ms.openlocfilehash: 8bcb5874ce62b8125e385fcf9eca8dbd2ca9f0fa
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 327a8b91842f032a1176ab32e84b3f568079e8d2
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585256"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812512"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da form işlemeye genel bakış
 
@@ -68,4 +68,4 @@ Power Platform işleme için özel bir ortam (varsayılan ortam yerine) kullanı
 
 [Belge anlamaya genel bakış](document-understanding-overview.md)
 
-[Eğitim: AI Builder ile iş performansını geliştirme](/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Eğitim: AI Builder ile iş performansını geliştirme](/training/paths/improve-business-performance-ai-builder/?source=learn)

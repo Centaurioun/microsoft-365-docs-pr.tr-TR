@@ -19,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: Microsoft Teams, SharePoint ve e-posta da dahil olmak üzere GDPR ve California Tüketici Gizliliği Yasası (CCPA) gibi veri gizliliği düzenlemeleri için Microsoft 365'te bilgi korumayı yapılandırın.
-ms.openlocfilehash: dd066d3240be5fb3472491b0caa45ea29301af0f
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 2152d3dd78eba3803d06f7d9fa8f2a863de6196e
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731584"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812172"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Microsoft 365 ile veri gizliliği düzenlemeleri için bilgi koruma dağıtma
 
@@ -125,7 +125,7 @@ Microsoft Learn'den alınan bu eğitim modülleri, bilgi koruması için önemli
 |![Teams bilgi koruma eğitimi simgesi.](../media/protect-enterprise-information-microsoft-365.svg)|Kuruluşunuzun bilgilerini korumak ve güvenliğini sağlamak her zamankinden daha zordur. Microsoft 365 ile kurumsal bilgileri koruma öğrenme yolu, hassas bilgilerinizi yanlışlıkla aşırı paylaşıma veya kötüye kullanmaya karşı korumayı, verileri bulmayı ve sınıflandırmayı, duyarlılık etiketleriyle korumayı ve kaybına karşı korumak için hassas bilgilerinizi izleme ve analiz etme konularını açıklar. Bu öğrenme yolu, Microsoft 365 Sertifikalı: Güvenlik Yöneticisi İş Ortağı ve Microsoft 365 Sertifikalı: Kurumsal Yönetim Uzmanı sertifikaları için hazırlanmanıza yardımcı olabilir.<br><br>1 sa - Öğrenme Yolu - 5 Modül|
 
 > [!div class="nextstepaction"]
-> [Başlangıç >](/learn/modules/m365-security-info-overview/introduction/)
+> [Başlangıç >](/training/modules/m365-security-info-overview/introduction/)
 
 #### <a name="identity-and-access"></a>Kimlik ve erişim
 
@@ -134,4 +134,4 @@ Microsoft Learn'den alınan bu eğitim modülleri, bilgi koruması için önemli
 |![Kimlik ve erişim eğitimi simgesi.](../media/protect-identity-and-access-with-microsoft-365.svg)|Kimlik ve Erişim öğrenme yolu, en son kimlik ve erişim teknolojilerini, kimlik doğrulamasını güçlendirmeye yönelik araçları ve kuruluşunuzdaki kimlik korumasına yönelik yönergeleri kapsar. Microsoft erişim ve kimlik teknolojileri, ister şirket içinde ister bulutta olsun kuruluşunuzun kimliğinin güvenliğini sağlamanızı ve kullanıcılarınızın herhangi bir konumdan güvenli bir şekilde çalışmasını sağlamanızı sağlar. Bu öğrenme yolu, Microsoft 365 Sertifikalı: Güvenlik Yöneticisi İş Ortağı ve Microsoft 365 Sertifikalı: Kurumsal Yönetim Uzmanı sertifikaları için hazırlanmanıza yardımcı olabilir.<br><br>2 sa 52 dk - Öğrenme Yolu - 6 Modül|
 
 > [!div class="nextstepaction"]
-> [Başlangıç >](/learn/modules/m365-identity-overview/introduction/)
+> [Başlangıç >](/training/modules/m365-identity-overview/introduction/)

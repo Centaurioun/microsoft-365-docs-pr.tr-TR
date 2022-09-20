@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: SharePoint Syntex'de form işleme modeli oluşturmayı öğrenin.
-ms.openlocfilehash: 614947422e6683666fa45a32a5589338e84edc39
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: b045de5b0f67d56f0ddfe726fbe0c1dd25391866
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585278"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812292"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de form işleme modeli oluşturma
 
@@ -175,4 +175,4 @@ Akışı çalıştırmak için:
   
 [Power Automate belgeleri](/power-automate/)
 
-[Eğitim: AI Builder ile iş performansını geliştirme](/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Eğitim: AI Builder ile iş performansını geliştirme](/training/paths/improve-business-performance-ai-builder/?source=learn)

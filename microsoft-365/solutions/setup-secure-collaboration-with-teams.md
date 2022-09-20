@@ -18,12 +18,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Verilerinizi duyarlılığına göre korumak için Teams'de güvenli dosya işbirliği ve paylaşımı ayarlamak için en iyi yöntemleri öğrenin.
-ms.openlocfilehash: f222b52356b3dbcba83811b4e4bfbe862e773baa
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 40346ded5af67c7aac11e0491bfc7bd296e13c3d
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728570"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811230"
 ---
 # <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>Microsoft Teams ile güvenli dosya paylaşımı ve işbirliği ayarlama
 
@@ -141,7 +141,7 @@ Microsoft Learn'deki bu eğitim modülleri Teams ve SharePoint'teki işbirliği,
 |![Teams işbirliği eğitim simgesi.](../media/manage-team-collaboration-with-microsoft-teams.svg)|Microsoft Teams ile ekip işbirliğini yönetme, Microsoft 365'te ekip işbirliğinin merkezi olan Microsoft Teams'in özelliklerini ve özelliklerini size tanıtır. Teams'i kullanarak hem şirket içinde hem de şirket dışında, masaüstlerinden tabletlere ve telefonlara kadar çok çeşitli cihazlarda ekip çalışmasını ve iletişimi kolaylaştırırken Office 365 uygulamalarının tüm zengin işlevselliğinden nasıl yararlanabileceğinizi öğreneceksiniz. Teams'in uygulamalar ve cihazlar arasında işbirliği için nasıl kapsamlı ve esnek bir ortam sağladığını anlayacaksınız. Bu öğrenme yolu, Microsoft 365 Sertifikalı: Teams Yönetici İş Ortağı sertifikasına hazırlanmanıza yardımcı olabilir.<p>2 sa 17 dk - Öğrenme Yolu - 5 Modül|
 
 > [!div class="nextstepaction"]
-> [Başlangıç >](/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
+> [Başlangıç >](/training/modules/m365-teams-collab-prepare-deployment/introduction/)
 
 ### <a name="sharepoint"></a>SharePoint
 
@@ -150,7 +150,7 @@ Microsoft Learn'deki bu eğitim modülleri Teams ve SharePoint'teki işbirliği,
 |![SharePoint eğitim simgesi.](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Microsoft SharePoint ile paylaşılan içeriği yönetme, SharePoint'in özelliklerini ve özelliklerini ve Microsoft 365 ile nasıl çalıştığını gösterir. Merkez siteleri, bilgi koruma, raporlama ve izleme gibi farklı Türlerdeki SharePoint siteleri hakkında bilgi edineceksiniz. Ayrıca, işbirliğini iyileştirmek için SharePoint dosya ve klasör paylaşımını kullanmayı, dosyaları harici olarak paylaşmayı ve SharePoint yönetim merkezinde SharePoint sitelerini yönetmeyi de öğreneceksiniz. Bu öğrenme yolu, Microsoft 365 Sertifikalı: Ekip Çalışması Yöneticisi İş Ortağı sertifikasına hazırlanmanıza yardımcı olabilir.<p>1 sa 14 dk - Öğrenme Yolu - 4 Modül|
 
 > [!div class="nextstepaction"]
-> [Başlangıç >](/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
+> [Başlangıç >](/training/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
 
 ### <a name="information-protection"></a>Bilgi koruması
 
@@ -159,7 +159,7 @@ Microsoft Learn'deki bu eğitim modülleri Teams ve SharePoint'teki işbirliği,
 |![Teams bilgi koruma eğitimi simgesi.](../media/protect-enterprise-information-microsoft-365.svg)|Kuruluşunuzun bilgilerini korumak ve güvenliğini sağlamak her zamankinden daha zordur. Microsoft 365 ile kurumsal bilgileri koruma öğrenme yolu, hassas bilgilerinizi yanlışlıkla aşırı paylaşıma veya kötüye kullanmaya karşı korumayı, verileri bulmayı ve sınıflandırmayı, duyarlılık etiketleriyle korumayı ve kaybına karşı korumak için hassas bilgilerinizi izleme ve analiz etme konularını açıklar. Bu öğrenme yolu, Microsoft 365 Sertifikalı: Güvenlik Yöneticisi İş Ortağı ve Microsoft 365 Sertifikalı: Kurumsal Yönetim Uzmanı sertifikaları için hazırlanmanıza yardımcı olabilir.<p>1 sa - Öğrenme Yolu - 5 Modül|
 
 > [!div class="nextstepaction"]
-> [Başlangıç >](/learn/modules/m365-security-info-overview/introduction/)
+> [Başlangıç >](/training/modules/m365-security-info-overview/introduction/)
 
 ### <a name="identity-and-access"></a>Kimlik ve erişim
 
@@ -168,7 +168,7 @@ Microsoft Learn'deki bu eğitim modülleri Teams ve SharePoint'teki işbirliği,
 |![Kimlik ve erişim eğitimi simgesi.](../media/protect-identity-and-access-with-microsoft-365.svg)|Kimlik ve Erişim öğrenme yolu, en son kimlik ve erişim teknolojilerini, kimlik doğrulamasını güçlendirmeye yönelik araçları ve kuruluşunuzdaki kimlik korumasına yönelik yönergeleri kapsar. Microsoft erişim ve kimlik teknolojileri, ister şirket içinde ister bulutta olsun kuruluşunuzun kimliğinin güvenliğini sağlamanızı ve kullanıcılarınızın herhangi bir konumdan güvenli bir şekilde çalışmasını sağlamanızı sağlar. Bu öğrenme yolu, Microsoft 365 Sertifikalı: Güvenlik Yöneticisi İş Ortağı ve Microsoft 365 Sertifikalı: Kurumsal Yönetim Uzmanı sertifikaları için hazırlanmanıza yardımcı olabilir.<p>2 sa 52 dk - Öğrenme Yolu - 6 Modül|
 
 > [!div class="nextstepaction"]
-> [Başlangıç >](/learn/modules/m365-identity-overview/introduction/)
+> [Başlangıç >](/training/modules/m365-identity-overview/introduction/)
 
 ## <a name="training-for-end-users"></a>Son kullanıcılar için eğitim
 

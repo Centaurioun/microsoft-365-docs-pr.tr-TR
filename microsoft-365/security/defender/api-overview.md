@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: efa0f6a14915078a87d5b337a2ac523bc11bab26
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 52315abd458d315c166d829f973d2945d126460d
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479279"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812062"
 ---
 # <a name="overview-of-microsoft-365-defender-apis"></a>Microsoft 365 Defender API'lerine genel bakış
 
@@ -70,5 +70,5 @@ Bu Microsoft 365 Defender özgü API'lerle birlikte, diğer güvenlik ürünleri
 | [Microsoft 365 Defender API'lere çok kiracılı iş ortağı erişimine sahip bir uygulama oluşturma](api-partner-access.md) |
 | **Uygulamalarınızın sorunlarını giderme ve bakımını sağlama** |
 | [API hata kodlarını anlama](api-error-codes.md) |
-| [Azure Key Vault ile uygulamalarınızdaki gizli dizileri yönetme](/learn/modules/manage-secrets-with-azure-key-vault/) |
+| [Azure Key Vault ile uygulamalarınızdaki gizli dizileri yönetme](/training/modules/manage-secrets-with-azure-key-vault/) |
 | [Kullanıcı oturum açma için OAuth 2.0 yetkilendirmesi uygulama](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |

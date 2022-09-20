@@ -15,12 +15,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 27456ce239e896c5beb2f988f1c1377c68c9c10c
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: c916afef567c0edeebf4afe274cec5e3818f7204
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67614230"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811866"
 ---
 # <a name="start-with-a-pilot-deployment-of-microsoft-365-for-frontline-workers"></a>Ön cephe çalışanları için Microsoft 365'in pilot dağıtımıyla başlayın
 
@@ -44,7 +44,7 @@ Pilot program çalıştırmak, genel benimseme sürecinin bir parçasıdır. Kur
 - [Ön cephe çalışanlarınızı Microsoft Teams ile etkinleştirme](https://adoption.microsoft.com/microsoft-teams/frontline-workers/)
 - [Karma bir dünyada ön cephe çalışanlarını desteklemenin 3 yolu](https://www.microsoft.com/microsoft-365/blog/2021/10/19/3-ways-to-support-frontline-workers-in-a-hybrid-world/)
 
-Şu 30 dakikalık öğrenme yolunu tamamlayarak dağıtıma hazırlanmanızı öneririz: [Microsoft 365 ile Teams dağıtımına hazırlanma](/learn/modules/m365-teams-collab-prepare-deployment/).
+Şu 30 dakikalık öğrenme yolunu tamamlayarak dağıtıma hazırlanmanızı öneririz: [Microsoft 365 ile Teams dağıtımına hazırlanma](/training/modules/m365-teams-collab-prepare-deployment/).
 
 ## <a name="steps-to-run-a-pilot-program"></a>Pilot programı çalıştırma adımları
 

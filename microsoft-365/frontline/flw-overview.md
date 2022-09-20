@@ -17,12 +17,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 12e155d9b5953dcd88c5051d97dfe37389e2ebda
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 3dc183a73548d0fa8209438268373fa44de72659
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497681"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812490"
 ---
 # <a name="get-started-with-microsoft-365-for-frontline-workers"></a>Ön saf çalışanları için Microsoft 365'i kullanmaya başlama
 
@@ -90,8 +90,8 @@ Sınıfının en iyisi güvenlik ve uyumluluk özellikleriyle işletmenizin güv
 
 |Yeteneği |Lisans kullanılabilirliği |
 |-----------|---------------------|
-|[Microsoft 365'te güvenliğe giriş](/learn/modules/security-in-m365/) |Kurumsal, F1, F3 |
-|[Microsoft 365'te uyumluluk araçlarına giriş](/learn/modules/compliance-in-m365/) |Kurumsal, F1, F3 |
+|[Microsoft 365'te güvenliğe giriş](/training/modules/security-in-m365/) |Kurumsal, F1, F3 |
+|[Microsoft 365'te uyumluluk araçlarına giriş](/training/modules/compliance-in-m365/) |Kurumsal, F1, F3 |
 |[Microsoft Purview’u kullanmaya başlamak için hızlı görevler](/microsoft-365/compliance/compliance-quick-tasks) |Kurumsal, F3 için eklenti olarak kullanılabilir |
 
 ### <a name="simplify-deployment-and-management-at-scale"></a>Büyük ölçekte dağıtım ve yönetimi basitleştirme

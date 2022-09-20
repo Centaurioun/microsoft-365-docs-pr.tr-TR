@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 523aaf14d7eaecf1d69fd24587287aa4c9b89933
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a6f7f2e33966898f98d1119dcffcc165bac19cb6
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628759"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811974"
 ---
 # <a name="microsoft-purview-insider-risk-solutions"></a>Microsoft Purview içeriden risk çözümleri
 
@@ -128,8 +128,8 @@ Microsoft, kuruluşunuzdaki bu kullanıcıları bilgilendirmeye ve eğitmeye yar
 
 | Çözüm/Alan | Kaynaklar |
 |:------------------|:--------------|
-| Microsoft 365'te insider riskini yönetme |[Öğrenme yolunu tamamlama](/learn/paths/m365-compliance-insider) <br> Bu öğrenme yolu iletişim uyumluluğu, iç risk yönetimi, bilgi engelleri ve ayrıcalıklı erişim yönetimi için tüm bireysel çözüm modüllerini içerir. Tüm modülleri tamamlamak için bu öğrenme yolunu seçin. |
-| İletişim uyumluluğu | [Öğrenme modülü: İletişim uyumluluğunu hazırlama](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> Bu modül, iletişim uyumluluğu ile davranış kuralları ilkesi ihlallerini tanımlama ve düzeltme hakkında temel bilgileri öğrenmenize, iletişim uyumluluk ilkeleri oluşturmadan önce gereken önkoşulları karşılamanıza ve iletişim uyumluluğunda yerleşik, önceden tanımlanmış ilke şablonları türleri hakkında bilgi edinmenize yardımcı olur. |
-| İçeriden risk yönetimi | [Öğrenme modülü: Insider risk yönetimi](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> Bu modül, şirket içi risk yönetiminin bir kuruluştaki iç riskleri önlemeye, algılamaya ve içermeye nasıl yardımcı olabileceğini öğrenmenize, yerleşik, önceden tanımlanmış ilke şablonları türleri hakkında bilgi edinmenize, iç risk ilkeleri oluşturmadan önce gereken temel önkoşulları anlamanıza ve içeriden risk yönetimi olaylarında gerçekleştirebileceğiniz eylem türlerini açıklamanıza yardımcı olur. |
-| Bilgi engelleri | [Öğrenme modülü: Bilgi engellerini planlama](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> Bu modül, bilgi engeli ilkelerinin kuruluşunuzun ilgili endüstri standartları ve düzenlemeleriyle uyumluluğu sürdürmesine nasıl yardımcı olabileceğini öğrenmenize, bilgi engellerinin uygulanabileceği durum türlerini listelemenize, bilgi engeli ilkesi oluşturma sürecini açıklamaya ve bilgi engelleri oluştuktan sonra beklenmeyen sorunların nasıl giderileceğine ilişkin açıklamaya yardımcı olur. |
-| Ayrıcalıklı erişim yönetimi | [Öğrenme modülü: Ayrıcalıklı erişim yönetimi uygulama](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Bu modül ayrıcalıklı erişim yönetimi ile ayrıcalıklı kimlik yönetimi arasındaki farkı anlamanıza, ayrıcalıklı erişim yönetimi süreci akışını anlamanıza ve ayrıcalıklı erişim yönetimini yapılandırma ve etkinleştirmeyle ilgili temel bilgileri anlamanıza yardımcı olur. |
+| Microsoft 365'te insider riskini yönetme |[Öğrenme yolunu tamamlama](/training/paths/m365-compliance-insider) <br> Bu öğrenme yolu iletişim uyumluluğu, iç risk yönetimi, bilgi engelleri ve ayrıcalıklı erişim yönetimi için tüm bireysel çözüm modüllerini içerir. Tüm modülleri tamamlamak için bu öğrenme yolunu seçin. |
+| İletişim uyumluluğu | [Öğrenme modülü: İletişim uyumluluğunu hazırlama](/training/modules/m365-compliance-insider-prepare-communication-compliance) <br> Bu modül, iletişim uyumluluğu ile davranış kuralları ilkesi ihlallerini tanımlama ve düzeltme hakkında temel bilgileri öğrenmenize, iletişim uyumluluk ilkeleri oluşturmadan önce gereken önkoşulları karşılamanıza ve iletişim uyumluluğunda yerleşik, önceden tanımlanmış ilke şablonları türleri hakkında bilgi edinmenize yardımcı olur. |
+| İçeriden risk yönetimi | [Öğrenme modülü: Insider risk yönetimi](/training/modules/m365-compliance-insider-manage-insider-risk) <br> Bu modül, şirket içi risk yönetiminin bir kuruluştaki iç riskleri önlemeye, algılamaya ve içermeye nasıl yardımcı olabileceğini öğrenmenize, yerleşik, önceden tanımlanmış ilke şablonları türleri hakkında bilgi edinmenize, iç risk ilkeleri oluşturmadan önce gereken temel önkoşulları anlamanıza ve içeriden risk yönetimi olaylarında gerçekleştirebileceğiniz eylem türlerini açıklamanıza yardımcı olur. |
+| Bilgi engelleri | [Öğrenme modülü: Bilgi engellerini planlama](/training/modules/m365-compliance-insider-plan-information-barriers) <br> Bu modül, bilgi engeli ilkelerinin kuruluşunuzun ilgili endüstri standartları ve düzenlemeleriyle uyumluluğu sürdürmesine nasıl yardımcı olabileceğini öğrenmenize, bilgi engellerinin uygulanabileceği durum türlerini listelemenize, bilgi engeli ilkesi oluşturma sürecini açıklamaya ve bilgi engelleri oluştuktan sonra beklenmeyen sorunların nasıl giderileceğine ilişkin açıklamaya yardımcı olur. |
+| Ayrıcalıklı erişim yönetimi | [Öğrenme modülü: Ayrıcalıklı erişim yönetimi uygulama](/training/modules/m365-compliance-insider-implement-privileged-access-management) <br> Bu modül ayrıcalıklı erişim yönetimi ile ayrıcalıklı kimlik yönetimi arasındaki farkı anlamanıza, ayrıcalıklı erişim yönetimi süreci akışını anlamanıza ve ayrıcalıklı erişim yönetimini yapılandırma ve etkinleştirmeyle ilgili temel bilgileri anlamanıza yardımcı olur. |

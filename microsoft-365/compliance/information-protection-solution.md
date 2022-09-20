@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - zerotrust-solution
 description: Kuruluşunuz için Microsoft Purview Bilgi Koruması dağıtmaya yönelik açıklayıcı kılavuz.
-ms.openlocfilehash: f1d358454e54a41c2cb20ec4dc31ec47db5d92a8
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 36c2d9815ee973aaab32527448fd652164eec83e
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663289"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811996"
 ---
 # <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Microsoft Purview ile bilgi koruma çözümü dağıtma
 
@@ -101,10 +101,10 @@ Uygulamalar ve hizmetler arasında hassas verilerin uygunsuz şekilde paylaşıl
 
 Danışmanlar ve yöneticiler için öğrenme modülleri:
 
-- [Microsoft Purview'da bilgi koruma ve veri yaşam döngüsü yönetimine giriş](/learn/modules/m365-compliance-information-governance)
-- [Verileri koruma ve idare için sınıflandırma](/learn/modules/m365-compliance-information-classify-data)
-- [Microsoft Purview'da bilgileri koruma](/learn/modules/m365-compliance-information-protect-information)
-- [Microsoft Purview'da veri kaybını önleme](/learn/modules/m365-compliance-information-prevent-data-loss)
+- [Microsoft Purview'da bilgi koruma ve veri yaşam döngüsü yönetimine giriş](/training/modules/m365-compliance-information-governance)
+- [Verileri koruma ve idare için sınıflandırma](/training/modules/m365-compliance-information-classify-data)
+- [Microsoft Purview'da bilgileri koruma](/training/modules/m365-compliance-information-protect-information)
+- [Microsoft Purview'da veri kaybını önleme](/training/modules/m365-compliance-information-prevent-data-loss)
 
 Kullanıcılarınızı kendileri için yapılandırdığınız duyarlılık etiketlerini uygulama ve kullanma konusunda eğitmeye yardımcı olmak için [duyarlılık etiketleri için son kullanıcı belgelerine](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels) bakın.
 

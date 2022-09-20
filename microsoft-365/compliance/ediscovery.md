@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview; Exchange posta kutuları, SharePoint ve OneDrive İş siteleri, Microsoft 365 Grupları, Microsoft Teams ve Skype Kurumsal konuşmaları gibi farklı konumlarda bulunan içeriği aramak ve dışarı aktarmak için kullanabileceğiniz üç eBulma aracı sunar. eBulma (Standart) ve eBulma (Premium), araştırmalarınızı yönetmenize yardımcı olacak birçok ek özellik sağlar.
-ms.openlocfilehash: c35b0c92ce38fecf0aac31b72037d9cbe3e05073
-ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
+ms.openlocfilehash: a0c30c95d92a6bd0cf1e3fd81c866fde8947ba31
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67445170"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812018"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Microsoft Purview eKeşif çözümleri
 
@@ -197,4 +197,4 @@ Hangi eBulma özelliklerinin başlatıldığını, dağıtıldığını veya gel
 
 ## <a name="training"></a>Eğitim
 
-İçerik arama, eKeşif (Standart) ve eKeşif (Premium) ile ilgili temel bilgiler konusunda BT yöneticilerinizi, eBulma yöneticilerinizi ve uyumluluk araştırma ekiplerinizi eğiterek kuruluşunuzun Microsoft 365 eKeşif araçlarını kullanarak daha hızlı bir şekilde çalışmaya başlamasına yardımcı olabilirsiniz. Microsoft 365, kuruluşunuzdaki bu kullanıcıların eBulma'ya başlamalarına yardımcı olmak için aşağıdaki kaynağı sağlar: [Microsoft 365'in eBulma ve denetim özelliklerini açıklama](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+İçerik arama, eKeşif (Standart) ve eKeşif (Premium) ile ilgili temel bilgiler konusunda BT yöneticilerinizi, eBulma yöneticilerinizi ve uyumluluk araştırma ekiplerinizi eğiterek kuruluşunuzun Microsoft 365 eKeşif araçlarını kullanarak daha hızlı bir şekilde çalışmaya başlamasına yardımcı olabilirsiniz. Microsoft 365, kuruluşunuzdaki bu kullanıcıların eBulma'ya başlamalarına yardımcı olmak için aşağıdaki kaynağı sağlar: [Microsoft 365'in eBulma ve denetim özelliklerini açıklama](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

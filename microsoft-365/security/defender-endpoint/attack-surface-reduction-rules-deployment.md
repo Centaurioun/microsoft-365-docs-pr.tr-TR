@@ -6,7 +6,8 @@ search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
@@ -19,14 +20,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-asr-rules
 - highpri
-ms.date: 1/18/2022
+ms.date: 09/18/2022
 search.appverid: met150
-ms.openlocfilehash: b5c356606d3b7af532b92ef38e3fa1d4e2f05f19
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 0b1b0573db6742676fe5496856e2fd66798d7d11
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67798879"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811602"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Saldırı yüzeyini azaltma (ASR) kuralları dağıtımına genel bakış
 

@@ -10,7 +10,8 @@ f1.keywords:
 - NOCSH
 author: dansimp
 ms.author: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: aa295878f71b6dfbb4a8bbb61940eaccb760620e
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 2dba3d88b2df64a5d3ee9890e42116fb239b41b4
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799142"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811274"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Otomatik bir soruşturmanın ayrıntılarını ve sonuçlarını görüntüleyin
 

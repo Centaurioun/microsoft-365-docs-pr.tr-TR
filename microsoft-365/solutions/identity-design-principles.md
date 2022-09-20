@@ -15,12 +15,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 123f05cd89dbfc3c0e751b78695350cd41c1a2a9
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 88eec0ad7b452f0624c298ef21812dd9d8587f37
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730890"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67810747"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>Kimlik ve ötesine—Mimarlardan birinin bakış açısı
 
@@ -163,7 +163,7 @@ Yaklaşan özelliklerin önizlemesi için [Microsoft Akıcı Çerçeve](https://
 
 Genel olarak, Office 365 ile Microsoft bulutlarındaki diğer hizmetler arasında net bir çizgi çizmek zorlaşıyor. Tek bir bileşen kullansalar bile yaptığımız her şeyde toplam yenilikten yararlanabilecekleri için bunu müşterilere büyük bir avantaj olarak alıyorum. Oldukça havalı ve birçok müşteri için çok fazla etki var.
 
-Bugün birçok müşteri BT grubunun "ürünler" etrafında yapılandırıldığını düşünüyorum. Her ürün için bir uzmana ihtiyacınız olduğundan, şirket içi bir dünya için mantıklıdır. Ancak, bu hizmetler buluta taşındığından bir daha bir Active Directory veya Exchange veritabanında hata ayıklamak zorunda olmadığım için çok mutluyum. Otomasyon (bulut türü) yinelenen bazı el ile işleri kaldırır (fabrikalara ne olduğuna bakın). Ancak, bu görevler hizmetler arası etkileşimi, etkiyi, iş gereksinimlerini vb. anlamak için daha karmaşık gereksinimlerle değiştirilir. [Öğrenmeye](/learn/) istekliyseniz, bulut dönüşümü tarafından etkinleştirilen harika fırsatlar vardır. Teknolojiye atlamadan önce, BT becerilerinde ve ekip yapılarındaki değişikliği yönetme hakkında müşterilerle sık sık konuşuyorum.
+Bugün birçok müşteri BT grubunun "ürünler" etrafında yapılandırıldığını düşünüyorum. Her ürün için bir uzmana ihtiyacınız olduğundan, şirket içi bir dünya için mantıklıdır. Ancak, bu hizmetler buluta taşındığından bir daha bir Active Directory veya Exchange veritabanında hata ayıklamak zorunda olmadığım için çok mutluyum. Otomasyon (bulut türü) yinelenen bazı el ile işleri kaldırır (fabrikalara ne olduğuna bakın). Ancak, bu görevler hizmetler arası etkileşimi, etkiyi, iş gereksinimlerini vb. anlamak için daha karmaşık gereksinimlerle değiştirilir. [Öğrenmeye](/training/) istekliyseniz, bulut dönüşümü tarafından etkinleştirilen harika fırsatlar vardır. Teknolojiye atlamadan önce, BT becerilerinde ve ekip yapılarındaki değişikliği yönetme hakkında müşterilerle sık sık konuşuyorum.
 
 Tüm SharePoint hayranları ve geliştiricileri için lütfen "SharePoint online'da XYZ'yi nasıl yapabilirim?" sorusunu durdurun. İş akışı için [Power Automate](/power-automate/) 'i (veya Flow'ı) kullanın, çok daha güçlü bir platform. 500 K öğe listenize daha iyi bir UX oluşturmak için [Azure Bot Framework'i](/azure/bot-service/) kullanın. CSOM yerine [Microsoft Graph](https://developer.microsoft.com/graph/) kullanmaya başlayın. [Microsoft Teams](/MicrosoftTeams/Teams-overview) , SharePoint'i ve daha fazlasını içerir. Listeleyebileceğiniz başka birçok örnek daha var. Dışarıda muazzam ve harika bir evren var. Kapıyı açın ve [keşfetmeye başlayın]().
 

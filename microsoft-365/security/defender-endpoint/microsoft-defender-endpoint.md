@@ -18,12 +18,12 @@ ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 0d8d20777abbc211311502aa8c977a7adcc17e0b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f55b7941eb180f9e3a2af7448cb92349af7e3a9c
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67700124"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67809749"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender
 
@@ -173,4 +173,4 @@ Microsoft Learn'ün bu öğrenme yolu ile Uç Nokta için Defender'ı ve kurulu�
 |![Microsoft 365 Defender eğitim simgesi.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Uç Nokta için Defender, güvenlik açığı yönetimi, uç nokta koruması, uç nokta algılama ve yanıt, mobil tehdit savunması ve yönetilen hizmetleri tek, birleşik bir platformda sunan bir uç nokta güvenlik çözümüdür.<p> 2 sa 25 dk - Öğrenme Yolu - 9 Modül|
 
 > [!div class="nextstepaction"]
-> [Başlangıç >](/learn/paths/defender-endpoint-fundamentals/)
+> [Başlangıç >](/training/paths/defender-endpoint-fundamentals/)

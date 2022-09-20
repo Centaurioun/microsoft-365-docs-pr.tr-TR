@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: İçerik gezgini etiketli öğeleri yerel olarak görüntülemenizi sağlar.
-ms.openlocfilehash: d00d8febe5c30b438d77e3c9b82b6a8bb6011812
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 0fa17cd3f76290e130c768438733cd1db6515438
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67360467"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811152"
 ---
 # <a name="get-started-with-content-explorer"></a>İçerik gezginini kullanmaya başlama
 
@@ -145,6 +145,10 @@ Arama yapabileceğiniz yer:
 |dosya adının başındaki metin| `RES`|
 |dosya adında bir alt çizgi karakteri ( _ ) sonra gelen metin|`Resume` Veya `1234`| 
 |dosya uzantısı|`txt`|
+
+## <a name="provide-matchnot-a-match-accuracy-feedback-in-content-explorer"></a>İçerik gezgininde eşleşme/eşleşme doğruluğu geri bildirimi sağlama
+
+**İçerik gezgininde** BIR SIT veya eğitilebilir sınıflandırıcının sahip olduğu eşleşmelerin sayısını görüntüleyebilirsiniz. Ayrıca bir öğenin gerçekten eşleşme olup olmadığıyla ilgili geri bildirim sağlayabilir veya **Eşleştir**, **Eşleştir değil** geri bildirim mekanizmasını kullanabilir ve sınıflandırıcılarınızı ayarlamak için bu geri bildirimi kullanabilirsiniz. Daha fazla bilgi için bkz. [Sınıflandırıcı doğruluğunu artırma (önizleme).](data-classification-increase-accuracy.md) 
 
 
 ## <a name="see-also"></a>Ayrıca bkz.

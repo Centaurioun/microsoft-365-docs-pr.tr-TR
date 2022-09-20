@@ -18,12 +18,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Microsoft 365 Grupları, Teams, SharePoint ve Yammer gibi Microsoft 365 işbirliği araçları için en iyi idare yöntemlerini öğrenin.
-ms.openlocfilehash: d67774bbf76665f7d278339e6dd24d0e9f195c6c
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 326611359b7146405664c85623122de48204e9c7
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730561"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811296"
 ---
 # <a name="what-is-collaboration-governance"></a>İşbirliği idaresi nedir?
 
@@ -177,7 +177,7 @@ Microsoft Learn'deki bu eğitim modülleri, Microsoft 365'teki idare özellikler
 |![Bilgi koruma eğitimi simgesi.](../media/information-protection-governance.svg)|Bugün oluşturulan veri miktarı her zamankinden daha hızlı büyüyor, çalışanlar her yerde iş yapmak istiyor ve mevzuat ortamı sürekli değişiyor. Microsoft'un bilgi koruma ve idareye yönelik çözümleri, kuruluşların verilerini koruma altında tutma ve çalışanlarının üretken kalmasını sağlama arasında doğru dengeyi elde etmelerine yardımcı olur. Bu öğrenme yolu, Microsoft 365 Sertifikalı: Güvenlik Yöneticisi İş Ortağı ve Microsoft 365 Sertifikalı: Kurumsal Yönetim Uzmanı sertifikaları için hazırlanmanıza yardımcı olabilir.<br><br>5 sa 13 dk - Öğrenme Yolu - 7 Modül|
 
 > [!div class="nextstepaction"]
-> [Başlangıç >](/learn/modules/m365-compliance-information-governance/introduction/)
+> [Başlangıç >](/training/modules/m365-compliance-information-governance/introduction/)
 
 <br><br>
 
@@ -186,16 +186,16 @@ Microsoft Learn'deki bu eğitim modülleri, Microsoft 365'teki idare özellikler
 |![Teams eğitim simgesi.](../media/protect-enterprise-information-microsoft-365.svg)|Kuruluşunuzun bilgilerini korumak ve güvenliğini sağlamak her zamankinden daha zordur. Microsoft 365 ile kurumsal bilgileri koruma öğrenme yolu, hassas bilgilerinizi yanlışlıkla aşırı paylaşıma veya kötüye kullanmaya karşı korumayı, verileri bulmayı ve sınıflandırmayı, duyarlılık etiketleriyle korumayı ve kaybına karşı korumak için hassas bilgilerinizi izleme ve analiz etme konularını açıklar. Bu öğrenme yolu, Microsoft 365 Sertifikalı: Güvenlik Yöneticisi İş Ortağı ve Microsoft 365 Sertifikalı: Kurumsal Yönetim Uzmanı sertifikaları için hazırlanmanıza yardımcı olabilir.<br><br>1 sa - Öğrenme Yolu - 5 Modül|
 
 > [!div class="nextstepaction"]
-> [Başlangıç >](/learn/modules/m365-security-info-overview/introduction/)
+> [Başlangıç >](/training/modules/m365-security-info-overview/introduction/)
 
 #### <a name="security-and-compliance"></a>Güvenlik ve uyumluluk
 
 |Eğitim:|Microsoft 365 güvenlik ve uyumluluk özellikleri hakkında temel bilgileri gösterme|
 |:---|:---|
-|![Güvenlik ve uyumluluk eğitimi simgesi.](../media/microsoft-365-security-and-compliance-capabilities.svg)|Microsoft 365 güvenlik ve uyumluluk çözümleri alanları ve kuruluşların kuruluşlarının güvenliğini sağlamaya ve mevzuat gereksinimlerini karşılamaya yardımcı olacak özellikler hakkında bilgi edinin. Temel bulut bilişim kavramlarını bilmiyorsanız [Bulut Kavramları - Bulut bilişim ilkeleri'ne](/learn/modules/principles-cloud-computing/index) bakmanızı öneririz.<br><br>3 sa 11 dk - Öğrenme Yolu - 8 Modül|
+|![Güvenlik ve uyumluluk eğitimi simgesi.](../media/microsoft-365-security-and-compliance-capabilities.svg)|Microsoft 365 güvenlik ve uyumluluk çözümleri alanları ve kuruluşların kuruluşlarının güvenliğini sağlamaya ve mevzuat gereksinimlerini karşılamaya yardımcı olacak özellikler hakkında bilgi edinin. Temel bulut bilişim kavramlarını bilmiyorsanız [Bulut Kavramları - Bulut bilişim ilkeleri'ne](/training/modules/principles-cloud-computing/index) bakmanızı öneririz.<br><br>3 sa 11 dk - Öğrenme Yolu - 8 Modül|
 
 > [!div class="nextstepaction"]
-> [Başlangıç >](/learn/modules/what-is-m365/1-introduction/)
+> [Başlangıç >](/training/modules/what-is-m365/1-introduction/)
 
 ## <a name="illustrations"></a>Çizim
 

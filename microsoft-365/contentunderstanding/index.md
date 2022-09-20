@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex kaynaklarını bulmayı öğrenin.
-ms.openlocfilehash: 55714bdf4f362978ee77e152dea7a4dfccbd9f00
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 9855ec1b392ea1f2b775e5ba2c2a85b817c8b464
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583725"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67810812"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'ye giriş
 
@@ -54,7 +54,7 @@ Bu bölümdeki kaynaklar, SharePoint Syntex tarafından kullanılan veri sınıf
 |Microsoft Tech Community Kaynak Merkezi'nde kaynaklara bakın|[SharePoint Syntex - Microsoft 365'teki içerik hizmetleri](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
 |Microsoft Tech Community Kaynak Merkezi hakkında SharePoint Syntex SSS |[SharePoint Syntex - SSS](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |SharePoint Syntex alma |[SharePoint Syntex ürün sayfası](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
-|SharePoint Syntex kullanmayı öğrenin |[SharePoint Syntex öğrenme yolu](/learn/paths/syntex-get-started)|
+|SharePoint Syntex kullanmayı öğrenin |[SharePoint Syntex öğrenme yolu](/training/paths/syntex-get-started)|
 
 ## <a name="adoption"></a>Benimseme
 

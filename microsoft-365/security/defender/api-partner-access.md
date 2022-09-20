@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: 03c87d32cf850d75fb83eefdc989927fcdc6ae90
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 6925fa1fc1703ebcbf49557b0afd4fb3bccfb406
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67479564"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812216"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Microsoft 365 Defender API'lerine iş ortağı erişimi olan bir uygulama oluşturma
 
@@ -148,7 +148,7 @@ Genel olarak, API'leri kullanmak için aşağıdaki adımları uygulamanız gere
 Azure AD belirteçleri hakkında daha fazla bilgi için [Azure AD öğreticisine](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds) bakın.
 
 > [!IMPORTANT]
-> Bu bölümdeki örnekler gizli dizi değerlerini test amacıyla yapıştırmanızı teşvik etse de, üretimde çalışan bir uygulamaya **gizli dizileri hiçbir zaman sabit kodlamamalısınız** . Üçüncü bir taraf, kaynaklara erişmek için gizli dizinizi kullanabilir. [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates) kullanarak uygulamanızın gizli dizilerini güvende tutmaya yardımcı olabilirsiniz. Uygulamanızı nasıl koruyabileceğinize ilişkin pratik bir örnek için bkz. [Azure Key Vault ile sunucu uygulamalarınızda gizli dizileri yönetme](/learn/modules/manage-secrets-with-azure-key-vault/).
+> Bu bölümdeki örnekler gizli dizi değerlerini test amacıyla yapıştırmanızı teşvik etse de, üretimde çalışan bir uygulamaya **gizli dizileri hiçbir zaman sabit kodlamamalısınız** . Üçüncü bir taraf, kaynaklara erişmek için gizli dizinizi kullanabilir. [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates) kullanarak uygulamanızın gizli dizilerini güvende tutmaya yardımcı olabilirsiniz. Uygulamanızı nasıl koruyabileceğinize ilişkin pratik bir örnek için bkz. [Azure Key Vault ile sunucu uygulamalarınızda gizli dizileri yönetme](/training/modules/manage-secrets-with-azure-key-vault/).
 
 > [!TIP]
 > Aşağıdaki örneklerde, betiğin çalışıp çalışmadığını test etmek için kullanıcının kiracı kimliğini kullanın.
@@ -299,5 +299,5 @@ Aşağıdaki örnekte **, C# kullanarak** olayların listesini almak için istek
 - [Kullanıcı adına Microsoft 365 Defender API'lere erişmek için uygulama oluşturma](api-create-app-user-context.md)
 - [API sınırları ve lisanslama hakkında bilgi edinin](api-terms.md)
 - [Hata kodlarını anlama](api-error-codes.md)
-- [Azure Key Vault ile sunucu uygulamalarınızdaki gizli dizileri yönetme](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [Azure Key Vault ile sunucu uygulamalarınızdaki gizli dizileri yönetme](/training/modules/manage-secrets-with-azure-key-vault/)
 - [Kullanıcı oturum açma ve API erişimi için OAuth 2.0 yetkilendirmesi](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Microsoft Purview'da eBulma (Premium) çözümü hakkında bilgi edinin. Bu makalede, iç ve dış araştırmalarını yönetmenize yardımcı olacak bir araç olan Microsoft Purview'daki eKeşif (Premium) konusuna genel bir bakış sağlanır. Ayrıca, yasal araştırmalarınızı yönetmek için eKeşif (Premium) kullanmanın iş nedenlerini de çerçeveler.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d534012466300675a7143cdada0b43468027104
-ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
+ms.openlocfilehash: 7f6841412402761d5eeb34162269bd659582e5e8
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66855097"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67809627"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Microsoft Purview eKeşif genel bakış (Premium)
 
@@ -123,4 +123,4 @@ Burada, tek coğrafi bir ortamda ve çok coğrafi ortamda uçtan uca iş akış�
 
 ## <a name="training"></a>Eğitim
 
-EKeşif (Premium) ile ilgili temel bilgiler konusunda BT yöneticilerinizi, eBulma yöneticilerinizi ve uyumluluk araştırma ekiplerinizi eğiterek kuruluşunuzun Microsoft 365 eKeşif araçlarını kullanarak daha hızlı bir şekilde çalışmaya başlamasına yardımcı olabilirsiniz. Microsoft 365, kuruluşunuzdaki bu kullanıcıların eBulma'ya başlamalarına yardımcı olmak için aşağıdaki kaynağı sağlar: [Microsoft 365'in eBulma ve denetim özelliklerini açıklama](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+EKeşif (Premium) ile ilgili temel bilgiler konusunda BT yöneticilerinizi, eBulma yöneticilerinizi ve uyumluluk araştırma ekiplerinizi eğiterek kuruluşunuzun Microsoft 365 eKeşif araçlarını kullanarak daha hızlı bir şekilde çalışmaya başlamasına yardımcı olabilirsiniz. Microsoft 365, kuruluşunuzdaki bu kullanıcıların eBulma'ya başlamalarına yardımcı olmak için aşağıdaki kaynağı sağlar: [Microsoft 365'in eBulma ve denetim özelliklerini açıklama](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Belge anlama modeli ile form işleme modeli arasındaki temel farklar hakkında bilgi edinin.
-ms.openlocfilehash: 18235caa31876aa4d9a7b1733885d924804f7e46
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: b17ab57cd7252c9a1cee7abb5a81359a965ca477
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67581822"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812106"
 ---
 # <a name="differences-between-custom-models-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'da özel modeller arasındaki farklar 
 
@@ -89,7 +89,7 @@ Form işlemenin ne zaman kullanılacağını ve belge anlamanın ne zaman kullan
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eğitim: AI Builder ile iş performansını geliştirme](/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Eğitim: AI Builder ile iş performansını geliştirme](/training/paths/improve-business-performance-ai-builder/?source=learn)
 
 [Belge anlamaya genel bakış](document-understanding-overview.md)
 

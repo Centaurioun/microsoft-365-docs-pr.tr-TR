@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 63dc2daa95af151571515fcc855aaa91477be14e
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 25eb7c0c556218d205d1a9994a31ba657dc34bec
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67579192"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811362"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Uç Nokta için Microsoft Defender önizleme özellikleri
 
@@ -40,7 +40,7 @@ Uç Nokta için Defender hizmeti sürekli olarak yeni özellik geliştirmeleri v
 Uç Nokta için Defender önizleme sürümündeki yeni özellikler hakkında bilgi edinin ve önizleme deneyimini açarak yaklaşan özellikleri ilk deneyenlerden biri olun.
 
 > [!TIP]
-> Bu sayfa güncelleştirildiğinde aşağıdaki URL'yi kopyalayıp akış okuyucunuza yapıştırarak bildirim alın: `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
+> Bu sayfa güncelleştirildiğinde aşağıdaki URL'yi kopyalayıp akış okuyucunuza yapıştırarak bildirim alın: `https://learn.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 Genel kullanıma sunulan yeni özellikler hakkında daha fazla bilgi için bkz. [Uç Nokta için Defender'daki yenilikler](whats-new-in-microsoft-defender-endpoint.md).
 

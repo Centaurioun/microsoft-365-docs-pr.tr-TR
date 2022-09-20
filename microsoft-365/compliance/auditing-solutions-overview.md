@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 kuruluşunuzdaki kullanıcıların ve yöneticilerin etkinliklerini denetlemeyi öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c98d1ab6e430d22f5e4c2aad2d881061fcf32c90
-ms.sourcegitcommit: 6f36cb8c69090c62a006d461bfc5aa1139cf09a9
+ms.openlocfilehash: e0821744ca74d95226c16959663534c3c7e01777
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67631460"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812314"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Microsoft Purview'da denetim çözümleri
 
@@ -183,4 +183,4 @@ To implement Customer Key for auditing, you have to create a multi-workload Data
 
 ## <a name="training"></a>Eğitim
 
-Güvenlik operasyonları ekibinize, BT yöneticilerine ve uyumluluk araştırmacıları ekibinize Denetim (Standart) ve Denetim (Premium) ile ilgili temel bilgiler konusunda eğitim vermek, kuruluşunuzun araştırmalarınıza yardımcı olmak için denetimi kullanarak daha hızlı bir şekilde çalışmaya başlamasına yardımcı olabilir. Microsoft Purview, kuruluşunuzdaki bu kullanıcıların denetime başlamalarına yardımcı olmak için aşağıdaki kaynağı sağlar: [Microsoft Purview'un eKeşif ve denetim özelliklerini açıklama](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Güvenlik operasyonları ekibinize, BT yöneticilerine ve uyumluluk araştırmacıları ekibinize Denetim (Standart) ve Denetim (Premium) ile ilgili temel bilgiler konusunda eğitim vermek, kuruluşunuzun araştırmalarınıza yardımcı olmak için denetimi kullanarak daha hızlı bir şekilde çalışmaya başlamasına yardımcı olabilir. Microsoft Purview, kuruluşunuzdaki bu kullanıcıların denetime başlamalarına yardımcı olmak için aşağıdaki kaynağı sağlar: [Microsoft Purview'un eKeşif ve denetim özelliklerini açıklama](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

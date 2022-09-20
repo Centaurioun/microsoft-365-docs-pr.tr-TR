@@ -4,7 +4,8 @@ description: Saldırı yüzeyi azaltma (ASR) kuralları algılamaları, yapılan
 keywords: Saldırı yüzeyi azaltma kuralları, ASR, asr kuralları, kalçalar, konak izinsiz giriş önleme sistemi, koruma kuralları, kötüye kullanıma karşı koruma kuralları, antiexploit, exploit kuralları, bulaşma önleme kuralları, Uç Nokta için Microsoft Defender, ASR kurallarını yapılandırma, ASR kuralı açıklaması
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
@@ -17,12 +18,12 @@ ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 08/25/2022
 search.appverid: met150
-ms.openlocfilehash: 5c13fb3828629c0e2690ac129aa6c5e127a0ac49
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 2feedef05628e9e4e44975061ee331822874caf0
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799196"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812610"
 ---
 # <a name="attack-surface-reduction-asr-rules-report"></a>Saldırı yüzeyi azaltma (ASR) kuralları raporu
 

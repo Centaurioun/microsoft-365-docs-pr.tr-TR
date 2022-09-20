@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Uyumluluk veya mevzuat gereksinimleri için verilerinizi yönetmek üzere kuruluşunuz için Microsoft Purview'u dağıtmaya yönelik açıklayıcı kılavuz.
-ms.openlocfilehash: 90832541bf202f062b44c1ec375fb20d3db654c3
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: fb849668216c75839e3ffa86c7eac5e454e2b393
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106021"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812150"
 ---
 # <a name="deploy-a-data-governance-solution-with-microsoft-purview"></a>Microsoft Purview ile veri idaresi çözümü dağıtma
 
@@ -77,8 +77,8 @@ Bu çözümdeki özellikler hakkında daha fazla bilgi edinmek için bkz. [Kayı
 
 Danışmanlar ve yöneticiler için öğrenme modülleri:
 
-- [Microsoft Purview'da bilgi koruma ve veri yaşam döngüsü yönetimine giriş](/learn/modules/m365-compliance-information-governance)
-- [Microsoft Purview'da veri yaşam döngüsünü yönetme](/learn/modules/m365-compliance-information-govern-information/)
-- [Microsoft Purview'da kayıtları yönetme](/learn/modules/m365-compliance-information-manage-records/)
+- [Microsoft Purview'da bilgi koruma ve veri yaşam döngüsü yönetimine giriş](/training/modules/m365-compliance-information-governance)
+- [Microsoft Purview'da veri yaşam döngüsünü yönetme](/training/modules/m365-compliance-information-govern-information/)
+- [Microsoft Purview'da kayıtları yönetme](/training/modules/m365-compliance-information-manage-records/)
 
 Bu çözümler dağıtıldığında kullanıcıları desteklemeye yönelik belgeler için [veri yaşam döngüsü yönetimi](get-started-with-information-governance.md#end-user-documentation) ve [kayıt yönetimi](get-started-with-records-management.md#end-user-documentation) için son kullanıcı belgeleri bölümlerine bakın.

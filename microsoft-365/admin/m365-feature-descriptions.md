@@ -14,12 +14,12 @@ ms.custom:
 - Adm_ServiceDesc_top
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: Microsoft 365 özellik açıklamaları için sağlanan bilgiler hakkında bilgi edinin.
-ms.openlocfilehash: b0e9c5b1f0be3c5dc4d798efaf7c974ff55924be
-ms.sourcegitcommit: 80fddb7a071eee4801204929788531e93f7ba087
+ms.openlocfilehash: b2594cdf869073730c5483f995b3ee13259c579b
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67634700"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812040"
 ---
 # <a name="microsoft-365-feature-descriptions"></a>Microsoft 365 hizmet açıklamaları
 
@@ -197,7 +197,7 @@ Microsoft Office 365 aşağıdaki yardım ve eğitim kaynaklarını sağlar. Top
 
 **Çevrimiçi yardım:** Yardım makaleleri ve videoları, Office 365 portalın üst gezinti çubuğundaki yardım simgesi ve Microsoft 365 yönetim merkezi dahil olmak üzere hizmetteki tüm satır içi yardım bağlantılarından edinilebilir. Ayrıca, üzerinde tüm Office 365 yardımlarını [https://office.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkId=272056)da arayabilirsiniz.
 
-**Eğitim:** Eğitim videolar, kaydedilen canlı etkinlikler ve sertifikasyona yol açan sınıflar aracılığıyla sağlanır. Daha fazla bilgi için bkz. [Microsoft 365 temel video eğitimi](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb), [Yöneticiler ve BT Uzmanları için](/learn/m365/) [Microsoft 365 Eğitimi](https://support.microsoft.com/training), [küçük işletmeler için](/microsoft-365/admin/admin-video-library) [tam öğrenme kataloğuna göz atma](/learn/browse/), [Microsoft sertifikalı olma](/learn/certifications/), [tüm öğrenme seçeneklerine göz atma](/learn/browse/) ve [canlı ve kayıtlı etkinlikleri izleme](/learn/tv/).
+**Eğitim:** Eğitim videolar, kaydedilen canlı etkinlikler ve sertifikasyona yol açan sınıflar aracılığıyla sağlanır. Daha fazla bilgi için bkz. [Microsoft 365 temel video eğitimi](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb), [Yöneticiler ve BT Uzmanları için](/training/m365/) [Microsoft 365 Eğitimi](https://support.microsoft.com/training), [küçük işletmeler için](/microsoft-365/admin/admin-video-library) [tam öğrenme kataloğuna göz atma](/training/browse/), [Microsoft sertifikalı olma](/certifications/), [tüm öğrenme seçeneklerine göz atma](/training/browse/) ve [canlı ve kayıtlı etkinlikleri izleme](/training/tv/).
 
 **Comunity:** Office 365 Topluluğu, kendi kendine yardım desteği bilgileri için tek bir hedeftir. Destek forumları, wiki'ler ve bloglar aracılığıyla müşterilerin çeşitli teknik, faturalama ve hizmet sorularına yanıt bulmasına yardımcı olacak en son bilgilere sahiptir. Destek forumları, Microsoft Desteği aracıları tarafından yönetilir ve personel tarafından yönetilir. Office 365 Topluluğu giriş sayfasından müşteriler şu kaynaklara erişebilir: Forumlar, Wiki'ler, Bloglar. Daha fazla bilgi için [Office 365 topluluğuna ziyaret edin](https://techcommunity.microsoft.com/).
 

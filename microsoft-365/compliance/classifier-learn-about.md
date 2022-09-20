@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Eğitilebilir sınıflandırıcılar, etiketleme veya ilke uygulamasına bakılması için pozitif ve negatif örnekler vererek çeşitli içerik türlerini tanıyabilir.
-ms.openlocfilehash: 1699ab81ba0f8225312126f17430ab27764ae176
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 09b02f948cc765901b098b1d2ec66ade7d4bfc5f
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663617"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811174"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Eğitilebilir sınıflandırıcılar hakkında daha fazla bilgi edinme
 
@@ -161,6 +161,11 @@ Tüm özel eğitilebilir sınıflandırıcıların doğruluğunu artırmaya yard
 > Önceden eğitilmiş sınıflandırıcılar yeniden eğitilemez.
 
 ![sınıflandırıcı yeniden eğitme iş akışı.](../media/classifier-retraining-workflow.png)
+
+## <a name="provide-matchnot-a-match-accuracy-feedback-in-trainable-classifiers"></a>Eğitilebilir sınıflandırıcılarda eşleşme/eşleşme doğruluğu geri bildirimi sağlama
+
+Eğitilebilir bir sınıflandırıcının **İçerik gezgininde** ve **Eğitilebilir lassifier'larda sahip olduğu eşleşmelerin** sayısını görüntüleyebilirsiniz. Ayrıca bir öğenin gerçekten eşleşme olup olmadığıyla ilgili geri bildirim sağlayabilir veya **Eşleştir**, **Eşleştir değil** geri bildirim mekanizmasını kullanabilir ve sınıflandırıcılarınızı ayarlamak için bu geri bildirimi kullanabilirsiniz. Daha fazla bilgi için bkz. [Sınıflandırıcı doğruluğunu artırma (önizleme).](data-classification-increase-accuracy.md) 
+
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

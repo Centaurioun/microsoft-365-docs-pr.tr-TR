@@ -1026,6 +1026,8 @@
           href: data-classification-activity-explorer.md
         - name: Etkinlik gezgininde bildirilen etiketleme eylemleri
           href: data-classification-activity-explorer-available-events.md
+        - name: Sınıflandırıcı doğruluğunu artırma
+          href: data-classification-increase-accuracy.md
     - name: Duyarlılık etiketleri
       items:
         - name: Duyarlılık etiketleri hakkında bilgi edinin

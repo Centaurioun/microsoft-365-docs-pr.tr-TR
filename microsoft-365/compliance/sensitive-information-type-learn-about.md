@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Bu makale hassas bilgi türlerine ve hassas öğeleri tanımlamak için sosyal güvenlik, kredi kartı veya banka hesabı numaraları gibi hassas bilgileri nasıl algıladıklarına genel bakış sağlar
-ms.openlocfilehash: 9cc42512109f0e939ac946b39a3cd6c060283347
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+ms.openlocfilehash: 8e921a61004a52c0ee33d7005993a51374ee8dde
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309801"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811514"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Hassas bilgi türleri hakkında daha fazla bilgi edinme
 
@@ -87,9 +87,9 @@ Her hassas bilgi türü varlığı şu alanlar tarafından tanımlanır:
 
 ![Doğrulayıcı kanıt ve yakınlık penceresinin diyagramı.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-<!--Learn more about confidence levels in this short video.
+Bu kısa videoda güvenilirlik düzeyleri hakkında daha fazla bilgi edinin.
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]-->
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]
 
 ### <a name="example-sensitive-information-type"></a>Örnek hassas bilgi türü
 
@@ -199,6 +199,11 @@ Uyumluluk Merkezi'nde özel hassas bilgi türleri oluşturmak için çeşitli se
 > `(?<!\d)([4][0-9]{3}[\-?\-\t]*[0-9]{4}`
 >
 > Anahtar sözcük listesinde sözcük eşleşmesi yerine dize eşleşmesi kullanmanızı öneririz.
+
+## <a name="provide-matchnot-a-match-accuracy-feedback-in-sensitive-info-types"></a>Hassas bilgi türlerinde eşleşme/eşleşme doğruluğu geri bildirimi sağlama
+
+Sit'in sahip olduğu eşleşmelerin sayısını **Hassas bilgi türlerinde** ve **İçerik gezgininde** görüntüleyebilirsiniz. Ayrıca, bir öğenin gerçekten eşleşme olup olmadığıyla ilgili geri bildirim sağlayabilir veya **Eşleştir**, **Eşleşme Değil** geri bildirim mekanizmasını kullanabilir ve bu geri bildirimi KULLANARAK SID'lerinizi ayarlayabilirsiniz. Daha fazla bilgi için bkz. [Sınıflandırıcı doğruluğunu artırma (önizleme).](data-classification-increase-accuracy.md) 
+
 
 ## <a name="for-further-information"></a>Daha fazla bilgi için
 

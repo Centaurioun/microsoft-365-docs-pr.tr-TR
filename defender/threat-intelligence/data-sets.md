@@ -8,12 +8,12 @@ ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: d9b7b7b14ceb6ffea0c844848e185f397e2c6da6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 908d50e2fbf39bb953abbbcf7d004e78e836dd30
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67735734"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811208"
 ---
 # <a name="data-sets"></a>Veri kümeleri
 
@@ -230,7 +230,7 @@ Kullanıcı SHA1 karması üzerinde genişlediğinde aşağıdakiler hakkındaki
 
 ## <a name="subdomains"></a>Alt
 
-Alt etki alanı, birincil etki alanının parçası olan bir internet etki alanıdır. Alt etki alanları "konak" olarak da adlandırılır. Örneğin,`docs.microsoft.com` bir alt etki alanıdır `microsoft.com`. Her alt etki alanı için, etki alanının çözümlendiği yeni bir IP adresleri kümesi olabilir ve bu, ilgili altyapıyı bulmak için harika bir veri kaynağı olabilir.
+Alt etki alanı, birincil etki alanının parçası olan bir internet etki alanıdır. Alt etki alanları "konak" olarak da adlandırılır. Örneğin,`learn.microsoft.com` bir alt etki alanıdır `microsoft.com`. Her alt etki alanı için, etki alanının çözümlendiği yeni bir IP adresleri kümesi olabilir ve bu, ilgili altyapıyı bulmak için harika bir veri kaynağı olabilir.
 
 Alt etki alanı verilerimiz şunları içerir:
 

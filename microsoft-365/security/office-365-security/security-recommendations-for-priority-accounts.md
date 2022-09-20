@@ -22,12 +22,12 @@ ms.custom: ''
 description: Yöneticiler, Microsoft 365 kuruluşlarında güvenlik ayarlarını yükseltmeyi ve öncelikli hesaplar için raporları, uyarıları ve araştırmaları kullanmayı öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6193ebcce086c741b84af1f3dc701e6ac0340537
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 61a8dd68635c3ef71ca8573ce4d08451a581ba95
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598922"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811340"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365'te öncelikli hesaplar için güvenlik önerileri
 
@@ -115,7 +115,7 @@ Microsoft 365, kuruluşunuzdaki kullanıcıları bilgilendirmeye yardımcı olma
 |Kavram|Kaynaklar|Açıklama|
 |---|---|---|
 |Microsoft 365|[Özelleştirilebilir öğrenme yolları](/office365/customlearning/)|Bu kaynaklar, kuruluşunuzdaki kullanıcılar için eğitimleri bir araya getirebilmenize yardımcı olabilir.|
-|Microsoft 365 güvenlik|[Öğrenme modülü: Microsoft 365'ten yerleşik ve akıllı güvenlikle kuruluşunuzun güvenliğini sağlama](/learn/modules/security-with-microsoft-365)|Bu modül, Microsoft 365 güvenlik özelliklerinin birlikte nasıl çalıştığını açıklamanızı ve bu güvenlik özelliklerinin avantajlarını açıklamanızı sağlar.|
+|Microsoft 365 güvenlik|[Öğrenme modülü: Microsoft 365'ten yerleşik ve akıllı güvenlikle kuruluşunuzun güvenliğini sağlama](/training/modules/security-with-microsoft-365)|Bu modül, Microsoft 365 güvenlik özelliklerinin birlikte nasıl çalıştığını açıklamanızı ve bu güvenlik özelliklerinin avantajlarını açıklamanızı sağlar.|
 |Çok faktörlü kimlik doğrulaması|[İki aşamalı doğrulama: Ek doğrulama sayfası nedir?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Bu makale, son kullanıcıların çok faktörlü kimlik doğrulamasının ne olduğunu ve kuruluşunuzda neden kullanıldığını anlamasına yardımcı olur.|
 |Saldırı simülasyonu eğitimi|[Saldırı simülasyonu eğitimini kullanmaya başlama](attack-simulation-training-get-started.md)|Office 365 için Microsoft Defender Plan 2'deki Saldırı simülasyonu eğitimi, yöneticinin belirli kullanıcı gruplarına yönelik sanal kimlik avı saldırılarını yapılandırmasına, başlatmasına ve izlemesine olanak tanır.|
 

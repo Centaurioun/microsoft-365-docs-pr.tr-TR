@@ -21,12 +21,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 6ec7b3e83ec170c617f12bd74cc875219c71a523
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 5b003692f34e54944042ebae18b6a179e3665404
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730297"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811252"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Intune Genel Bakış ile cihazları yönetme
 
@@ -125,6 +125,6 @@ Cihazları yalnızca Intune yönettiğini unutmayın. Ekleme, bir cihazın belir
 
 Aşağıdaki kaynaklar yöneticilerin MEM ve Intune kullanma hakkındaki kavramları öğrenmesine yardımcı olur.
 
-[Microsoft Endpoint Manager Ile cihaz yönetimini basitleştirme](/learn/modules/simplify-device-management-with-microsoft-endpoint-manager/) Açıklama: Modern yönetim ve Microsoft Endpoint Manager hakkında bilgi edinin ve Microsoft 365'teki iş yönetimi araçlarının tüm cihazlarınızın yönetimini nasıl basitleştirebileceğini öğrenin.
+[Microsoft Endpoint Manager Ile cihaz yönetimini basitleştirme](/training/modules/simplify-device-management-with-microsoft-endpoint-manager/) Açıklama: Modern yönetim ve Microsoft Endpoint Manager hakkında bilgi edinin ve Microsoft 365'teki iş yönetimi araçlarının tüm cihazlarınızın yönetimini nasıl basitleştirebileceğini öğrenin.
 
-[Microsoft Intune Açıklamayı Ayarlama](/learn/modules/set-up-microsoft-intune/): Microsoft Endpoint Manager'nin bir parçası olan Microsoft Intune, kuruluşunuzdaki kişilerin üretken olmak için kullandığı cihazları, uygulamaları ve verileri korumanıza yardımcı olur. Bu modülü tamamladıktan sonra Microsoft Intune ayarlamış olacaksınız. Kurulum, desteklenen yapılandırmaları gözden geçirmeyi, Intune kaydolmayı, kullanıcı ve grup eklemeyi, kullanıcılara lisans atamayı, yönetici izinleri vermeyi ve MDM yetkilisini ayarlamayı içerir.
+[Microsoft Intune Açıklamayı Ayarlama](/training/modules/set-up-microsoft-intune/): Microsoft Endpoint Manager'nin bir parçası olan Microsoft Intune, kuruluşunuzdaki kişilerin üretken olmak için kullandığı cihazları, uygulamaları ve verileri korumanıza yardımcı olur. Bu modülü tamamladıktan sonra Microsoft Intune ayarlamış olacaksınız. Kurulum, desteklenen yapılandırmaları gözden geçirmeyi, Intune kaydolmayı, kullanıcı ve grup eklemeyi, kullanıcılara lisans atamayı, yönetici izinleri vermeyi ve MDM yetkilisini ayarlamayı içerir.

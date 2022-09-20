@@ -9,7 +9,7 @@ manager: dansimp
 audience: Admin
 description: Tehditlere karşı savunmak ve hassas verileri korumak için Ortamınıza Microsoft 365 Sıfır Güven güvenliği dağıtmayı öğrenin.
 ms.topic: tutorial
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 - M365-security-compliance
 - zerotrust-solution
-ms.openlocfilehash: ae32e5a40417297a1cdaec69bddb1e6bad8f3353
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 37b32968847e5948b1176c61b201ce2bce166bb3
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799296"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811669"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 Sıfır Güven dağıtım planı
 
@@ -52,7 +52,7 @@ Bu çizim, Sıfır Güven katkıda bulunan birincil öğelerin bir gösterimini 
 Sıfır Güven hakkında daha fazla bilgi için bkz. Microsoft'un [_**Sıfır Güven Rehberlik Merkezi**_](/security/zero-trust).
 
 <!---
-For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
+For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.learn.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
 -->
 
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: api
-ms.openlocfilehash: ca56847bf484714aaa7155ce756417b5263a746b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 0b282686554edb1668cf25318d349a1ed9704a21
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67482460"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812336"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Microsoft 365 Defender REST API için Merhaba Dünya
 
@@ -84,7 +84,7 @@ Bu projenin tamamlanması 5-10 dakika sürmelidir. Bu zaman tahmini, uygulamayı
 Azure Active Directory belirteçleri hakkında daha fazla bilgi [için Azure AD öğreticisine](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds) bakın.
 
 > [!IMPORTANT]
-> Bu tanıtım uygulamasındaki örnek, test amacıyla gizli dizi değerinizi yapıştırmanızı teşvik etse de, **gizli dizileri üretimde çalışan bir uygulamaya asla sabit kodlamamalısınız** . Üçüncü bir taraf, kaynaklara erişmek için gizli dizinizi kullanabilir. [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates) kullanarak uygulamanızın gizli dizilerini güvende tutmaya yardımcı olabilirsiniz. Uygulamanızı nasıl koruyabileceğinize ilişkin pratik bir örnek için bkz. [Azure Key Vault ile sunucu uygulamalarınızda gizli dizileri yönetme](/learn/modules/manage-secrets-with-azure-key-vault/).
+> Bu tanıtım uygulamasındaki örnek, test amacıyla gizli dizi değerinizi yapıştırmanızı teşvik etse de, **gizli dizileri üretimde çalışan bir uygulamaya asla sabit kodlamamalısınız** . Üçüncü bir taraf, kaynaklara erişmek için gizli dizinizi kullanabilir. [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates) kullanarak uygulamanızın gizli dizilerini güvende tutmaya yardımcı olabilirsiniz. Uygulamanızı nasıl koruyabileceğinize ilişkin pratik bir örnek için bkz. [Azure Key Vault ile sunucu uygulamalarınızda gizli dizileri yönetme](/training/modules/manage-secrets-with-azure-key-vault/).
 
 1. Aşağıdaki betiği kopyalayın ve sık kullandığınız metin düzenleyiciye yapıştırın. **Get-Token.ps1** olarak kaydedin. Kodu PowerShell ISE'de olduğu gibi de çalıştırabilirsiniz, ancak bunu kaydetmeniz gerekir çünkü sonraki bölümde olay getirme betiğini kullandığımızda yeniden çalıştırmamız gerekir.
 
@@ -179,5 +179,5 @@ Hepsi bu kadar! Başarılı bir şekilde:
 - [Kullanıcı olmadan Microsoft 365 Defender erişmek için uygulama oluşturma](api-create-app-web.md)
 - [Kullanıcı adına Microsoft 365 Defender API'lere erişmek için uygulama oluşturma](api-create-app-user-context.md)
 - [Microsoft 365 Defender API'lere çok kiracılı iş ortağı erişimine sahip bir uygulama oluşturma](api-partner-access.md)
-- [Azure Key Vault ile sunucu uygulamalarınızdaki gizli dizileri yönetme](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [Azure Key Vault ile sunucu uygulamalarınızdaki gizli dizileri yönetme](/training/modules/manage-secrets-with-azure-key-vault/)
 - [Kullanıcı oturum açma ve API erişimi için OAuth 2.0 Yetkilendirmesi](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

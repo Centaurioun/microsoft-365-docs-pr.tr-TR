@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 027ed81cadef35116a5b1f8c91e771b447d814aa
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: a0e588ac06fed79224259c52191737e0eff9c882
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67682977"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812380"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de iş ortağı uygulamaları
 
@@ -89,7 +89,7 @@ Logo|İş ortağı adı|Açıklama
 Logo|İş ortağı adı|Açıklama
 :---|:---|:---
 ![Aruba ClearPass Policy Manager logosunun resmi.](images/aruba-logo.png)|[Aruba ClearPass İlke Yöneticisi](https://go.microsoft.com/fwlink/?linkid=2127544)|Ağa erişime izin vermeden önce her uç noktaya Uç Nokta için Defender'ın yüklendiğinden ve güncelleştirildiğinden emin olun
-![Ağ logosu için Mavi Altıgen görüntüsü.](images/bluehexagon-logo.png)|[Ağ için Mavi Altıgen](/learn/modules/explore-malware-threat-protection/)|Blue Hexagon, ağ tehdit koruması için sektörün ilk gerçek zamanlı derin öğrenme platformunu kurdu
+![Ağ logosu için Mavi Altıgen görüntüsü.](images/bluehexagon-logo.png)|[Ağ için Mavi Altıgen](/training/modules/explore-malware-threat-protection/)|Blue Hexagon, ağ tehdit koruması için sektörün ilk gerçek zamanlı derin öğrenme platformunu kurdu
 ![Corelight logosunun resmi.](images/logo-corelight.png)| [Çekirdek ışığı](https://corelight.com/integrations/iot-security)| Corelight ağ gereçlerinden gönderilen verilerin kullanılması Microsoft 365 Defender, yönetilmeyen diğer cihazlarla veya dış ağlarla iletişim de dahil olmak üzere yönetilmeyen cihazların ağ etkinliklerine daha fazla görünürlük sağlar.
 ![CyberMDX logosunun resmi.](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX kapsamlı sağlık varlıklarının görünürlüğünü, tehdit önlemesini ve depolarını Uç Nokta için Defender ortamınızla tümleştirir
 ![HYAS Protect logosunun resmi.](images/hyas-logo.png)|[HYAS Koruma](https://go.microsoft.com/fwlink/?linkid=2156763)|HYAS Protect, Uç Nokta için Microsoft Defender uç noktalarını siber saldırılara karşı proaktif olarak korumak için saldırgan altyapısına yönelik yetkili bilgileri kullanır

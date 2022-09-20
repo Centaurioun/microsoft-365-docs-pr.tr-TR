@@ -21,12 +21,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 search.appverid: met150
-ms.openlocfilehash: 7ff5f29ee49d6d2da3630ea4e17f40f06cd611ec
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7762b68ea77a47b5f38aa523cde8456d4df4b7ae
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691111"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67812248"
 ---
 # <a name="manage-tamper-protection-on-an-individual-device"></a>Tek bir cihazda kurcalama korumasını yönetme
 
@@ -43,7 +43,7 @@ ms.locfileid: "67691111"
 > Kurcalama koruması, kayıt defteri aracılığıyla Microsoft Defender Virüsten Koruma ayarlarını değiştirme girişimlerini engeller.
 > Kurcalama korumasının Microsoft dışı güvenlik ürünlerini veya bu ayarları değiştiren kurumsal yükleme betiklerini engellemediğinden emin olmak için **Windows Güvenliği** gidin ve **Güvenlik zekasını** 1.287.60.0 veya sonraki bir sürüme güncelleştirin. (Bkz [. Güvenlik bilgileri güncelleştirmeleri](https://www.microsoft.com/wdsi/definitions).) Bu güncelleştirmeyi yaptıktan sonra, kurcalama koruması kayıt defteri ayarlarınızı korumaya devam eder ve hataları döndürmeden bunları değiştirmeye çalışır.
 
-Ev kullanıcısıysanız veya bir güvenlik ekibi tarafından yönetilen ayarlara tabi değilseniz, 'kurcalama korumasını' yönetmek için Windows Güvenliği uygulamasını kullanabilirsiniz. Kurcalama koruması gibi güvenlik ayarlarını değiştirmek için cihazınızda uygun yönetici izinlerine sahip olmanız gerekir.
+Ev kullanıcısıysanız veya güvenlik ekibi tarafından yönetilen ayarlara tabi değilseniz, kurcalama korumasını yönetmek için Windows Güvenliği uygulamasını kullanabilirsiniz. Kurcalama koruması gibi güvenlik ayarlarını değiştirmek için cihazınızda uygun yönetici izinlerine sahip olmanız gerekir.
 
 Windows Güvenliği uygulamasında şunları görürsünüz:
 

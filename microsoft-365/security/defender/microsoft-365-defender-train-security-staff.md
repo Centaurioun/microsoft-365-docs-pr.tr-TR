@@ -22,12 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e619457ce420665ba1867480740a327aacdb618c
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 3dcf5904bb4d1f620c9b4bbd44299408b6fc21eb
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664691"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811930"
 ---
 # <a name="train-your-security-staff-for-microsoft-365-defender"></a>Güvenlik personelinizi Microsoft 365 Defender için eğitin
 
@@ -49,9 +49,9 @@ Kuruluşunuzu ve verilerini saldırganlardan korumanın aciliyetiyle, güvenlik 
 
 Microsoft 365 Defender ve Uç Nokta için Microsoft Defender, tek seferde bir modül ve birim hakkında bilgi edinmek için bu öğrenme yollarını ve modüllerini kullanın.
 
- - [Microsoft 365 Defender ile siber saldırıları algılama ve yanıtlama](/learn/paths/defender-detect-respond/)
+ - [Microsoft 365 Defender ile siber saldırıları algılama ve yanıtlama](/training/paths/defender-detect-respond/)
 
- - [Uç Nokta için Microsoft Defender ile kuruluşunuzun güvenliğini sağlama](/learn/paths/defender-endpoint-fundamentals/)  
+ - [Uç Nokta için Microsoft Defender ile kuruluşunuzun güvenliğini sağlama](/training/paths/defender-endpoint-fundamentals/)  
 
 
 ## <a name="learning-paths-in-the-microsoft-365-defender-portal-learning-hub"></a>Microsoft 365 Defender portalı öğrenme hub'ında öğrenme yolları

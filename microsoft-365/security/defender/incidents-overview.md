@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: a797d0c96c708bd69b275cb5f9dfb7bbd669e367
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 9293cf55f769f86d16a8f63aaebee7d1a524c32c
+ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67478761"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67811558"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Microsoft 365 Defender ile olay yanıtı
 
@@ -240,7 +240,7 @@ Olayları ve uyarıları yönetmek için Microsoft 365 Defender kullanmayı anla
 |![Microsoft 365 Defender eğitim simgesiyle olayları araştırın.](../../media/incidents-overview/m365-defender-address-security-investigation.svg)| Microsoft 365 Defender birden çok hizmetten gelen tehdit verilerini birleştirir ve bunları olaylar ve uyarılar halinde birleştirmek için yapay zekayı kullanır. Sonraki yanıt ve çözüm için bir olayla yönetimi arasındaki süreyi en aza indirmeyi öğrenin. <p> 27 dk - 6 Birim |
 
 > [!div class="nextstepaction"]
-> [Başlangıç >](/learn/modules/defender-investigate-incidents/)
+> [Başlangıç >](/training/modules/defender-investigate-incidents/)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -247,6 +247,8 @@
 
 ### [Uç Nokta için Microsoft Defender’da güvenlik duvarı raporlama oturumu düzenleyin](host-firewall-reporting.md)
 
+### [Yerleşik koruma](built-in-protection.md)
+
 ### [Saldırı yüzeyini azaltma]()
 #### [Saldırı yüzeyini azaltmaya genel bakış](overview-attack-surface-reduction.md)
 #### [Saldırı yüzeyini azaltma (ASR) kuralları]()
