@@ -2,8 +2,8 @@
 title: Microsoft 365'te Slack eKeşif verilerini arşivleye bağlayıcı ayarlama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Yöneticiler, Verileri Veritas Slack eKeşif'ten Microsoft 365'e aktarmak ve arşivlemesi için bir bağlayıcı ayarlayabilir. Bu bağlayıcı, Microsoft 365'teki üçüncü taraf veri kaynaklarından verileri arşivlenizi sağlar. Bu verileri arşivledikten sonra, üçüncü taraf verilerini yönetmek için yasal tutma, içerik arama ve bekletme ilkeleri gibi uyumluluk özelliklerini kullanabilirsiniz.
-ms.openlocfilehash: e48bd25b5f444ce17eba08677f5bd1c1171af1ff
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: dc2355930ee6385ced0285310e7d382b7a5f83f2
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637759"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819567"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data"></a>Slack eKeşif verilerini arşivleye bağlayıcı ayarlama
 
@@ -37,7 +37,7 @@ Aşağıdaki genel bakış, Microsoft 365'te Slack bilgilerini arşivlerken bağ
 
 3. Uyumluluk portalında oluşturduğunuz Slack eKeşif bağlayıcısı her gün Veritas Merge1 sitesine bağlanır ve sohbet iletilerini Microsoft bulutunda güvenli bir Azure Depolama konumuna aktarır.
 
-4. Bağlayıcı, 3. Adımda açıklandığı gibi *, E-posta* özelliğinin ve otomatik kullanıcı eşlemesinin değerini kullanarak dönüştürülen sohbet iletisi öğelerini belirli kullanıcıların posta kutularına aktarır. Kullanıcı posta kutularında Gelen Kutusu klasöründe **Slack eKeşif** adlı yeni bir alt klasör oluşturulur ve sohbet iletisi öğeleri bu klasöre aktarılır. Bağlayıcı, *E-posta* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her sohbet iletisi, sohbet iletisinin her katılımcısının e-posta adresiyle doldurulmuş olan bu özelliği içerir.
+4. Bağlayıcı, 3. Adımda açıklandığı gibi, *Email özelliğinin* ve otomatik kullanıcı eşlemesinin değerini kullanarak dönüştürülen sohbet iletisi öğelerini belirli kullanıcıların posta kutularına aktarır. Kullanıcı posta kutularında Gelen Kutusu klasöründe **Slack eKeşif** adlı yeni bir alt klasör oluşturulur ve sohbet iletisi öğeleri bu klasöre aktarılır. Bağlayıcı, *Email* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her sohbet iletisi, sohbet iletisinin her katılımcısının e-posta adresiyle doldurulmuş olan bu özelliği içerir.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -73,7 +73,7 @@ Aşağıdaki genel bakış, Microsoft 365'te Slack bilgilerini arşivlerken bağ
 
 1. **Dış kullanıcıları Microsoft 365 kullanıcıları ile eşle** sayfasında otomatik kullanıcı eşlemesini etkinleştirin.
 
-   Slack eKeşif öğeleri, kuruluşunuzdaki kullanıcıların *e-posta adreslerini içeren E-posta* adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır.
+   Slack eBulma öğeleri, kuruluşunuzdaki kullanıcıların e-posta adreslerini içeren *Email* adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır.
 
 2. **İleri'ye** tıklayın, ayarlarınızı gözden geçirin ve yeni bağlayıcının içeri aktarma işleminin ilerleme durumunu görmek için **Veri bağlayıcıları** sayfasına gidin.
 

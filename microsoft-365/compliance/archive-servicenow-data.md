@@ -2,8 +2,8 @@
 title: Microsoft 365'te ServiceNow verilerini arşivleme için bağlayıcı ayarlama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Yöneticiler, ServiceNow verilerini Veritas'tan Microsoft 365'e aktarmak ve arşivlemek için bir bağlayıcı ayarlayabilir. Bu bağlayıcı, Microsoft 365'teki üçüncü taraf veri kaynaklarından verileri arşivlenizi sağlar. Bu verileri arşivledikten sonra, üçüncü taraf verilerini yönetmek için yasal tutma, içerik arama ve bekletme ilkeleri gibi uyumluluk özelliklerini kullanabilirsiniz.
-ms.openlocfilehash: eaf109aaeeeffb9d268809b0fa006868f8ec638d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fc1971322732fb13c739b452d64721b8981e236f
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628979"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819611"
 ---
 # <a name="set-up-a-connector-to-archive-servicenow-data"></a>ServiceNow verilerini arşivleme için bağlayıcı ayarlama
 
@@ -37,7 +37,7 @@ Aşağıdaki genel bakışta, Microsoft 365'te ServiceNow verilerini arşivleme 
 
 3. Uyumluluk portalında oluşturduğunuz ServiceNow bağlayıcısı her gün Veritas Merge1 sitesine bağlanır ve ServiceNow içeriğini Microsoft bulutunda güvenli bir Azure Depolama konumuna aktarır.
 
-4. Bağlayıcı, [3. Adımda](#step-3-map-users-and-complete-the-connector-setup) açıklandığı gibi otomatik kullanıcı eşlemesinin *Email* özelliğinin değerini kullanarak dönüştürülen öğeleri belirli kullanıcıların posta kutularına aktarır. Kullanıcı posta kutularında **ServiceNow** adlı Gelen Kutusu klasöründe bir alt klasör oluşturulur ve öğeler bu klasöre aktarılır. Bağlayıcı, *E-posta* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her ServiceNow öğesi, öğenin her katılımcısının e-posta adresiyle doldurulan bu özelliği içerir.
+4. Bağlayıcı, [3. Adımda](#step-3-map-users-and-complete-the-connector-setup) açıklandığı gibi otomatik kullanıcı eşlemesinin *Email* özelliğinin değerini kullanarak dönüştürülen öğeleri belirli kullanıcıların posta kutularına aktarır. Kullanıcı posta kutularında **ServiceNow** adlı Gelen Kutusu klasöründe bir alt klasör oluşturulur ve öğeler bu klasöre aktarılır. Bağlayıcı, *Email* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her ServiceNow öğesi, öğenin her katılımcısının e-posta adresiyle doldurulan bu özelliği içerir.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -73,7 +73,7 @@ Aşağıdaki genel bakışta, Microsoft 365'te ServiceNow verilerini arşivleme 
 
 Kullanıcıları eşlemek ve uyumluluk portalında bağlayıcı kurulumunu tamamlamak için şu adımları izleyin:
 
-1. **Kullanıcıları Microsoft 365 kullanıcıları ile eşleme** sayfasında otomatik kullanıcı eşlemesini etkinleştirin. ServiceNow öğeleri, kuruluşunuzdaki kullanıcıların *e-posta adreslerini içeren E-posta* adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır.
+1. **Kullanıcıları Microsoft 365 kullanıcıları ile eşleme** sayfasında otomatik kullanıcı eşlemesini etkinleştirin. ServiceNow öğeleri, kuruluşunuzdaki kullanıcıların e-posta adreslerini içeren *Email* adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır.
 
 2. **İleri'ye** tıklayın, ayarlarınızı gözden geçirin ve yeni bağlayıcının içeri aktarma işleminin ilerleme durumunu görmek için **Veri bağlayıcıları** sayfasına gidin.
 

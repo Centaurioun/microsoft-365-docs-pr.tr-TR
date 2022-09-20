@@ -2,8 +2,8 @@
 title: Güvenlik & Uyumluluk Merkezi'nde hizmet güvencesi
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Üçüncü taraf denetimleri indirin, Microsoft'un müşteri verilerini nasıl güvende tuttuğunu öğrenin ve Office 365 kullandığınızda ISO, HIPAA, FINRA ve FedRAMP ile nasıl uyumlu olabileceğinizi öğrenin.
-ms.openlocfilehash: fdd60478266ee4ef55f550aa04a62d9e1148856e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 05716bf15b06a41d63337754244f296ae9978dd3
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622403"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825224"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'nde hizmet güvencesi
 
@@ -86,7 +86,7 @@ Hizmet güvencesine ilk kez eriştiğinizde, ilk adım sektör ve bölgesel ayar
   
 |**Hizmet güvencesi sayfası**|**Kullanılabilir içerik**|**Açıklama**|
 |:-----|:-----|:-----|
-|Uyumluluk raporları  <br/> | FedRamp  <br/>  GRC Değerlendirmesi  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Office 365 Hizmet Teslim İşlemleri'nin üçüncü taraf bağımsız denetçileri tarafından gerçekleştirilen denetim değerlendirmelerini gözden geçirmek için hizmet uyumluluk raporlarını kullanın.  <br/> |
+|Uyumluluk raporları  <br/> | FedRamp  <br/>  GRC Değerlendirmesi  <br/>  Iso  <br/>  SOC/SSAE  <br/> |Office 365 Hizmet Teslim İşlemleri'nin üçüncü taraf bağımsız denetçileri tarafından gerçekleştirilen denetim değerlendirmelerini gözden geçirmek için hizmet uyumluluk raporlarını kullanın.  <br/> |
 |Belgelere güven  <br/> | SSS ve Teknik İncelemeler  <br/>  Risk Yönetimi Raporları  <br/> |İnceleme/risk değerlendirmeleriniz için gizlilik sözleşmesi kapsamında kullanımınıza sunulan teknik incelemeleri, SSS'leri, yıl sonu raporlarını ve diğer Microsoft Gizli kaynaklarını kullanın.  <br/> |
 |Denetlenen denetimler  <br/> |Office 365 uygulanan küresel standartlar ve düzenlemeler.  <br/> | Office 365 hizmetlerini değerlendirirken, eklerken veya kullanırken risk değerlendirmesiyle ilgili yardım. Öğren:  <br/> <br/>- Office 365 denetimlerinin güvenlik, uyumluluk ve gizlilik gereksinimlerini nasıl karşılıyor?  <br/>- Office 365 denetimlerin testi, bu testlerin sonuçları ve ne zaman tamamlandıkları hakkında.  <br/> |
    

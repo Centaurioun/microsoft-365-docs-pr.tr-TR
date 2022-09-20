@@ -2,8 +2,8 @@
 title: Microsoft 365'te üçüncü taraf verileri içeri aktarmak ve arşivlemek için veri bağlayıcılarını kullanma
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Sosyal medya platformlarından, anlık ileti platformlarından ve belge işbirliği platformlarından üçüncü taraf verilerini Microsoft 365 posta kutularına aktarmayı ve arşivlemeyi öğrenin.
-ms.openlocfilehash: 41a7b37980919e28ecb4dbfd6e28b5d08b905a3d
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 7653e51940c741ccc2f288c11428024f44022073
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071667"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819479"
 ---
 # <a name="learn-about-connectors-for-third-party-data"></a>Üçüncü taraf verileri için bağlayıcılar hakkında daha fazla bilgi edinme
 
@@ -269,7 +269,7 @@ Bazı veri bağlayıcıları ABD Kamu bulutunda kullanılabilir. Aşağıdaki b�
 
 ### <a name="veritas-data-connectors-in-the-us-government-cloud-preview"></a>ABD Kamu bulutundaki Veritas veri bağlayıcıları (önizleme)
 
-|Veri bağlayıcısı  |GCC  |GCC Yüksek  |Dod  |
+|Veri bağlayıcısı  |Gcc  |GCC Yüksek  |Dod  |
 |:---------|:---------|:---------|:---------|
 |CellTrust| Evet | Hayır | Hayır |
 |MS SQL üzerinde Cisco Jabber| Evet | Hayır | Hayır |
@@ -304,7 +304,7 @@ Bazı veri bağlayıcıları ABD Kamu bulutunda kullanılabilir. Aşağıdaki b�
 
 ### <a name="telemessage-data-connectors-in-the-us-government-cloud"></a>ABD Kamu bulutunda TeleMessage veri bağlayıcıları
 
-|Veri bağlayıcısı  |GCC  |GCC Yüksek  |Dod  |
+|Veri bağlayıcısı  |Gcc  |GCC Yüksek  |Dod  |
 |:---------|:---------|:---------|:---------|
 |Android Arşivleyici | Evet | Hayır | Hayır |
 |AT&T SMS/MMS Ağ Arşivleyicisi | Evet | Hayır | Hayır |
@@ -322,7 +322,7 @@ Bazı veri bağlayıcıları ABD Kamu bulutunda kullanılabilir. Aşağıdaki b�
 
 ### <a name="17a-4-data-connectors-in-the-us-government-cloud"></a>ABD Kamu bulutunda 17a-4 veri bağlayıcıları
 
-|Veri bağlayıcısı  |GCC  |GCC Yüksek  |Dod  |
+|Veri bağlayıcısı  |Gcc  |GCC Yüksek  |Dod  |
 |:---------|:---------|:---------|:---------|
 |BlackBerry DataParser | Evet | Hayır | Hayır |
 |Bloomberg DataParser  | Evet | Hayır | Hayır |
@@ -346,7 +346,7 @@ Bazı veri bağlayıcıları ABD Kamu bulutunda kullanılabilir. Aşağıdaki b�
 
 ### <a name="celltrust-data-connectors-in-the-us-government-cloud"></a>ABD Kamu bulutunda CellTrust veri bağlayıcıları
 
-|Veri bağlayıcısı  |GCC  |GCC Yüksek  |Dod  |
+|Veri bağlayıcısı  |Gcc  |GCC Yüksek  |Dod  |
 |:---------|:---------|:---------|:---------|
 |CellTrust SL2 | Evet | Hayır | Hayır |
 |||||

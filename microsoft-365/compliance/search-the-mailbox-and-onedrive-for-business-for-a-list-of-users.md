@@ -2,8 +2,8 @@
 title: Posta kutusu & OneDrive İş sitesindeki kullanıcıların listesi için İçerik Arama'yı kullanma
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 1/3/2017
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Bu makaledeki İçerik Arama'yı ve betiği kullanarak posta kutularında ve OneDrive İş sitelerinde bir kullanıcı grubu arayın.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 02ee9790d35eca411a9e27607a7e99ca962ddf05
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e819ca7838e5db29ee72b90bf96e70ebcb36be9b
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629177"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825268"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Kullanıcı listesi için posta kutusu ve OneDrive İş sitesinde arama yapmak için İçerik Arama'yı kullanma
 

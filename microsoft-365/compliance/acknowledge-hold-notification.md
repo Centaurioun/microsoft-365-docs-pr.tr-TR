@@ -2,8 +2,8 @@
 title: Bekletme bildirimini onaylama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 04/05/2022
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: E-posta yoluyla yasal saklama bildirimleri göndermek ve takip etmek ve ayrıca yükümlülük durumunu izlemek için eKeşif 'i (Premium) kullanmayı öğrenin.
-ms.openlocfilehash: 3322228dbdc27463bde16de0aa71900cbc80ca58
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 704598e2cb53529c8667f197b4f74fd18dc744a2
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627801"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67825202"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Bekletme bildirimini onaylama
 

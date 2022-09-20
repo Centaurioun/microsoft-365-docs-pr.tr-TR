@@ -2,8 +2,8 @@
 title: Microsoft 365'te CellTrust verilerini arşivleye bağlayıcı ayarlama
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Yöneticiler, CellTrust verilerini Veritas'tan Microsoft 365'e aktarmak ve arşivlemek için bir bağlayıcı ayarlayabilir. Bu bağlayıcı, Microsoft 365'teki üçüncü taraf veri kaynaklarından verileri arşivlenizi sağlar. Bu verileri arşivledikten sonra, üçüncü taraf verilerini yönetmek için yasal tutma, içerik arama ve bekletme ilkeleri gibi uyumluluk özelliklerini kullanabilirsiniz.
-ms.openlocfilehash: ce2aa6e9db07953e5b60eae4aa19777dd9edcd9e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e53b8ba3bbd9c50d621f58661c3257a5eba74505
+ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633003"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67819655"
 ---
 # <a name="set-up-a-connector-to-archive-celltrust-data"></a>CellTrust verilerini arşivleye bağlayıcı ayarlama
 
@@ -37,7 +37,7 @@ Aşağıdaki genel bakış, Microsoft 365'te CellTrust verilerini arşivlerken b
 
 3. Uyumluluk portalında oluşturduğunuz CellTrust bağlayıcısı her gün Veritas Merge1 sitesine bağlanır ve iletileri Microsoft bulutunda güvenli bir Azure Depolama konumuna aktarır.
 
-4. Bağlayıcı olarak otomatik kullanıcı eşlemesi [, 3. Adımda](#step-3-map-users-and-complete-the-connector-setup) açıklanan *e-posta* özelliğinin değerini kullanarak öğeleri belirli kullanıcıların posta kutularına aktarır. Kullanıcı posta kutularında **CellTrust** adlı Gelen Kutusu klasöründe bir alt klasör oluşturulur ve ileti öğeleri bu klasöre aktarılır. Bağlayıcı, *E-posta* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her CellTrust öğesi, her katılımcının e-posta adresiyle doldurulmuş olan bu özelliği içerir.
+4. Bağlayıcı olarak otomatik kullanıcı eşlemesi, [3. Adımda](#step-3-map-users-and-complete-the-connector-setup) açıklanan *Email* özelliğinin değerini kullanarak öğeleri belirli kullanıcıların posta kutularına aktarır. Kullanıcı posta kutularında **CellTrust** adlı Gelen Kutusu klasöründe bir alt klasör oluşturulur ve ileti öğeleri bu klasöre aktarılır. Bağlayıcı, *Email* özelliğinin değerini kullanarak öğelerin hangi posta kutusuna aktarılacağını belirler. Her CellTrust öğesi, her katılımcının e-posta adresiyle doldurulmuş olan bu özelliği içerir.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -71,7 +71,7 @@ Aşağıdaki genel bakış, Microsoft 365'te CellTrust verilerini arşivlerken b
 
 Kullanıcıları eşlemek ve uyumluluk portalında ayarlanan bağlayıcıyı tamamlamak için şu adımları izleyin:
 
-1. **CellTrust kullanıcılarını Microsoft 365 kullanıcıları ile eşle** sayfasında otomatik kullanıcı eşlemesini etkinleştirin. CellTrust öğeleri, kuruluşunuzdaki kullanıcıların *e-posta adreslerini içeren E-posta* adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır.
+1. **CellTrust kullanıcılarını Microsoft 365 kullanıcıları ile eşle** sayfasında otomatik kullanıcı eşlemesini etkinleştirin. CellTrust öğeleri, kuruluşunuzdaki kullanıcıların e-posta adreslerini içeren *Email* adlı bir özellik içerir. Bağlayıcı bu adresi bir Microsoft 365 kullanıcısı ile ilişkilendirebiliyorsa, öğeler söz konusu kullanıcının posta kutusuna aktarılır.
 
 2. **İleri'ye** tıklayın, ayarlarınızı gözden geçirin ve yeni bağlayıcının içeri aktarma işleminin ilerleme durumunu görmek için **Veri bağlayıcıları** sayfasına gidin.
 
