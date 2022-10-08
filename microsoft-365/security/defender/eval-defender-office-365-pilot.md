@@ -17,19 +17,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
-ms.openlocfilehash: 72197d6543a297bf5b17c48e5d26fb29059e9d64
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: cb1f96b5882f1f0554200053c6032c2649c60e35
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67798989"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68064354"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Pilot Office 365 için Microsoft Defender
 
@@ -125,7 +126,7 @@ Aşağıdaki tabloda özel koruma ilkelerini yapılandırmaya ve atamaya yöneli
 
 ## <a name="step-3-try-out-capabilities-and-get-familiar-with-simulation-monitoring-and-metrics"></a>3. Adım: Özellikleri deneyin ve simülasyon, izleme ve ölçümler hakkında bilgi edinin
 
-Artık pilotunuz ayarlanıp yapılandırıldığına göre, Microsoft 365 için Microsoft Defender'a özgü raporlama, izleme ve saldırı simülasyonu araçlarını tanımanız yararlı olacaktır.
+Artık pilotunuz ayarlanıp yapılandırıldığına göre, Microsoft 365 için Microsoft Defender benzersiz raporlama, izleme ve saldırı simülasyonu araçlarını tanımak yararlı olacaktır.
 
 |Yeteneği|Açıklama|Daha fazla bilgi|
 |---|---|---|

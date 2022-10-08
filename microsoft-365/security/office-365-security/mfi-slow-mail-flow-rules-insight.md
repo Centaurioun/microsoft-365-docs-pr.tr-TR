@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
@@ -16,12 +16,13 @@ ms.custom:
 description: Yöneticiler, kuruluşlarındaki verimli olmayan veya bozuk posta akışı kurallarını (taşıma kuralları olarak da bilinir) tanımlamak ve düzeltmek için Güvenlik & Uyumluluk Merkezi'ndeki Yavaş posta akışı kurallarını düzeltme içgörülerini kullanmayı öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: edc173463d6dd5882693f2734c8df09b487e1032
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 66db21eadb7578b0d20272dcdf35101122991573
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597382"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68063870"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'nde yavaş posta akışı kuralları içgörülerini düzeltme
 

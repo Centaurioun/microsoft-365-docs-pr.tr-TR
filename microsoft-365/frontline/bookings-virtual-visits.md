@@ -20,17 +20,19 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 - m365-frontline
+- highpri
+- EngageScoreSep2022
 ms.reviewer: ''
 description: Teams'de Bookings uygulamasını kullanarak sanal randevuları zamanlamayı, yönetmeyi ve yürütmeyi öğrenin.
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: ef4ca09cac8cc411e6b9b33b32b27c01265ddccf
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 2c9439e17ce62b7fdbb0186f4efc2c52ab13232e
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824851"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68063606"
 ---
 # <a name="virtual-appointments-with-microsoft-teams-and-the-bookings-app"></a>Microsoft Teams ve Bookings uygulaması ile sanal randevular
 

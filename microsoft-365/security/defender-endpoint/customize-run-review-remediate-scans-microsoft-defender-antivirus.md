@@ -1,6 +1,6 @@
 ---
-title: Zamanlanmış ve isteğe bağlı taramaları çalıştırın ve özelleştirin.
-description: Ağınızdaki uç noktalarda Microsoft Defender Virüsten Koruma taramalarını özelleştirme ve başlatma
+title: Zamanlanmış ve isteğe bağlı taramaları çalıştırın ve özelleştirin
+description: Ağınızdaki uç noktalarda virüsten koruma taramalarını özelleştirme ve Microsoft Defender başlatma
 keywords: tarama, zamanlama, özelleştirme, dışlamalar, dosyaları dışlama, düzeltme, tarama sonuçları, karantina, tehdit kaldırma, hızlı tarama, tam tarama, Microsoft Defender Virüsten Koruma
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
@@ -16,14 +16,16 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 8b0e34ece48091b3abfd6cedb6dba12b791e3625
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 94350aa289b4c2d4e0c816c3332894ec4685d65f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694887"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201671"
 ---
 # <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>Microsoft Defender Virüsten Koruma taramalarının ve düzeltmelerinin sonuçlarını özelleştirme, başlatma ve gözden geçirme
 
@@ -35,7 +37,7 @@ ms.locfileid: "67694887"
 - [Uç Nokta için Microsoft Defender Planı 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender Virüsten Koruma taramalarını yapılandırmak için grup ilkesi, PowerShell ve Windows Yönetim Araçları(WMI) kullanabilirsiniz. 
+grup ilkesi, PowerShell ve Windows Yönetim Araçları'nın (WMI) Microsoft Defender Virüsten Koruma taramalarını yapılandırmak için kullanabilirsiniz. 
 
 ## <a name="in-this-section"></a>Bu bölümde
 

@@ -14,18 +14,21 @@ ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
 - BCS160
 - MET150
 description: Siber saldırılara ve diğer kötü amaçlı tehditlere ve güvenlik açıklarına karşı koruma ile kendi cihazını getir (KCG) ayarlamaya genel bakış.
-ms.openlocfilehash: 28a4271c1ec129e0d205c9bdd7afa69762dc20ac
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 33246deae1f9284e5168dd566468a46d4f20cb96
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741356"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68093770"
 ---
 # <a name="set-up-unmanaged-byod-devices"></a>Yönetilmeyen (KCG) cihazları ayarlama
 

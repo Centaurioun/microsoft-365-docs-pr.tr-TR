@@ -7,9 +7,10 @@ author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Zaman kazanmak ve Microsoft 365 yönetim merkezi birden çok kullanıcı eklediğinizde ayarları standartlaştırmak için şablon oluşturup kullanabilirsiniz.
-ms.openlocfilehash: 0f0d737bcf600acb4084c5e2b85e5595c6387fee
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 2bd20c6d68d71156d2ea307c7b39abc504907c13
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437001"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201407"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Kullanıcıları eklemek için şablon oluşturma ve kullanma
 
@@ -33,7 +34,7 @@ Birden çok kullanıcı eklerken zaman kazanmak ve ayarları standartlaştırmak
 
 ## <a name="create-a-template"></a>Şablon oluşturma
 
-Şablonlar kolayca oluşturulabilir&mdash; **KullanıcılarAkullanıcılarKullanıcılarKullanıcılar'ı** >  >  seçip açılan listeden **Şablon ekle'yi** seçebilir veya yeni bir kullanıcı ekleyebilirsiniz ve işiniz bittiğinde girişi şablon olarak kaydetme seçeneğiniz olur.
+Şablonlar kolayca oluşturulabilir&mdash; **Kullanıcılar** > **Etkin kullanıcılar** > **Kullanıcı şablonları'nı** ve ardından açılan listeden **Şablon ekle'yi** seçebilir veya yeni bir kullanıcı ekleyebilirsiniz ve işiniz bittiğinde girişi şablon olarak kaydetme seçeneğiniz olur.
 
 Kullanıcı ekledikten sonra şablon oluşturduğunuzda, aşağıdaki ayarlar için seçtiğiniz değerler şablona kaydedilir:
 
@@ -44,13 +45,13 @@ Kullanıcı ekledikten sonra şablon oluşturduğunuzda, aşağıdaki ayarlar i�
 - Lisans seçenekleri
 - Uygulama seçenekleri
 - Rol
-- **İş profili**, **Departman**, **Office, Office** **telefon** ve **Sokak adresi** gibi profil bilgilerinin çoğu 
+- **İş profili**, **Departman**, **Office**, **Office telefonu** ve **Sokak adresi** gibi profil bilgilerinin çoğu 
 
 Aşağıdaki bilgiler kullanıcıya özgüdür ve şablona kaydedilmez:
 
 - Ad ve soyadı
 - Görünen ad
-- Kullanıcı adı
+- Kullanıcı Adı
 - Parolayı e-postayla gönderme ve parola e-postasının kime gönderildiğini seçme
 - Cep telefonu numarası
 
@@ -62,12 +63,12 @@ Bir bölümdeki bir ayarın bilgilerini girmemeyi seçerseniz, bu değer boş ol
 
 Var olan bir şablonu kullanarak kullanıcı eklemek için:
 
-1. Yönetim merkezinde **KullanıcılarEtkin** >  kullanıcılar'ı seçin.
+1. Yönetim merkezinde **Kullanıcılar** > **Etkin kullanıcılar'ı** seçin.
 
 2. **Kullanıcı şablonları'nı** seçin ve ardından açılan listeden bir şablon seçin. (Liste, diğer yöneticiler tarafından oluşturulan şablonları değil, yalnızca sizin oluşturduğunuz şablonları içerir.)
 
    > [!NOTE]
-   > Ayrıca, **Kullanıcı şablonları** >  Şablon yönet'i seçip bir şablon seçip Şablonu kullan'ı seçerek de **bir şablon** kullanabilirsiniz.
+   > Ayrıca, **Kullanıcı şablonları** >  Şablonları **yönet'i** seçip bir şablon seçip Şablonu kullan'ı seçerek de **bir şablon** kullanabilirsiniz.
 
 3. Seçtiğiniz şablondan kullanıcı oluşturmak için adımları izleyin.
 
@@ -78,7 +79,7 @@ Var olan bir şablonu kullanarak kullanıcı eklemek için:
 
 Yalnızca artık ihtiyacınız olmayan şablonları silebilir ve yenilerini ekleyebilirsiniz. Şablonu silmek için:
 
-1. Yönetim merkezinde **KullanıcılarEtkin** >  kullanıcılar'ı seçin.
+1. Yönetim merkezinde **Kullanıcılar** > **Etkin kullanıcılar'ı** seçin.
 
 2. **Şablonlar'ı** ve ardından açılan listeden **Şablonları yönet'i** seçin.
 
@@ -91,5 +92,5 @@ Yalnızca artık ihtiyacınız olmayan şablonları silebilir ve yenilerini ekle
 
 [Aynı anda kullanıcı ekleme ve lisans atama](add-users.md)
 
-[eski çalışanı Microsoft 365 kaldırma](remove-former-employee.md)
+[Eski bir çalışanı Microsoft 365'ten kaldırma](remove-former-employee.md)
   

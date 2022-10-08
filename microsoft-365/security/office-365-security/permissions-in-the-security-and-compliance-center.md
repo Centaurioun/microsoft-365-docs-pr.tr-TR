@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.AdminRoleGroups
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 search.appverid:
 - MOE150
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: fb0d5496acddebb591d368d78f35f1be567773a9
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 491f3cdff9667a77dcdb45bab470a9f7ee15d91b
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595993"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68063826"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Güvenlik ve Uyumluluk Merkezi’ndeki İzinler
 
@@ -88,12 +88,11 @@ Güvenlik & Uyumluluk Merkezi'ne erişim izni vermeyi görmek için [Bkz. Kullan
 |**Information Protection Analistleri**|DLP uyarılarına ve etkinlik gezginine erişin ve bu uyarıları yönetin. DLP ilkelerine, duyarlılık etiketlerine ve ilkelerine ve tüm sınıflandırıcı türlerine yalnızca görüntüleme erişimi.|Veri Sınıflandırma Listesi Görüntüleyicisi <br/><br/> Information Protection Analisti|
 |**Information Protection Araştırmacıları**|DLP uyarılarına, etkinlik gezginine ve içerik gezginine erişin ve bu uyarıları yönetin. DLP ilkelerine, duyarlılık etiketlerine ve ilkelerine ve tüm sınıflandırıcı türlerine yalnızca görüntüleme erişimi.|Veri Sınıflandırma İçerik Görüntüleyicisi <br/><br/> Information Protection Analisti <br/><br/> Information Protection Araştırmacısı|
 |**Information Protection Okuyucular**|DLP ilkeleri, duyarlılık etiketleri ve ilkeleri için raporlara yalnızca görüntüleme erişimi.|Information Protection Okuyucu|
-|**Insider Risk Management**|Kuruluşunuz için iç risk yönetimini tek bir grupta yönetmek için bu rol grubunu kullanın. Belirlenen yöneticiler, analistler ve araştırmacılar için tüm kullanıcı hesaplarını ekleyerek, içeriden risk yönetimi izinlerini tek bir grupta yapılandırabilirsiniz. Bu rol grubu, tüm insider risk yönetimi izin rollerini içerir. Bu, şirket içi risk yönetimini hızlı bir şekilde kullanmaya başlamanın en kolay yoludur ve ayrı kullanıcı grupları için tanımlanmış ayrı izinlere ihtiyaç duymayan kuruluşlar için uygundur.|Olay Yönetimi <br/><br/> Veri Bağlayıcısı Yönetici <br/><br/> Insider Risk Management Yönetici <br/><br/> Insider Risk Yönetimi Analizi <br/><br/> Insider Risk Yönetimi Denetimi <br/><br/> Insider Risk Yönetimi Araştırması <br/><br/> Insider Risk Yönetimi Oturumları <br/><br/> View-Only Servis Talebi|
+|**Insider Risk Management**|Kuruluşunuz için iç risk yönetimini tek bir grupta yönetmek için bu rol grubunu kullanın. Belirlenen yöneticiler, analistler ve araştırmacılar için tüm kullanıcı hesaplarını ekleyerek, içeriden risk yönetimi izinlerini tek bir grupta yapılandırabilirsiniz. Bu rol grubu, tüm insider risk yönetimi izin rollerini içerir. Bu, şirket içi risk yönetimini hızlı bir şekilde kullanmaya başlamanın en kolay yoludur ve ayrı kullanıcı grupları için tanımlanmış ayrı izinlere ihtiyaç duymayan kuruluşlar için uygundur.|Olay Yönetimi <br/><br/> Veri Bağlayıcısı Yönetici <br/><br/> Insider Risk Management Yönetici <br/><br/> Insider Risk Yönetimi Analizi <br/><br/> Insider Risk Yönetimi Denetimi <br/><br/> Insider Risk Yönetimi Araştırması <br/><br/> View-Only Servis Talebi|
 |**Insider Risk Yönetimi Yöneticileri**|Başlangıçta insider risk yönetimini yapılandırmak ve daha sonra insider risk yöneticilerini tanımlı bir gruba ayırmak için bu rol grubunu kullanın. Bu rol grubundaki kullanıcılar insider risk yönetimi ilkelerini, genel ayarları ve rol grubu atamalarını oluşturabilir, okuyabilir, güncelleştirebilir ve silebilir.|Olay Yönetimi <br/><br/> Veri Bağlayıcısı Yönetici <br/><br/> Insider Risk Management Yönetici <br/><br/> View-Only Servis Talebi|
 |**İçeriden Risk Yönetimi Analistleri**|Bu grubu, içeriden risk olayı analisti olarak davranacak kullanıcılara izin atamak için kullanın. Bu rol grubundaki kullanıcılar tüm insider risk yönetimi uyarılarına, olaylarına ve bildirim şablonlarına erişebilir. İç risk İçerik Gezgini'ne erişemezler.|Olay Yönetimi <br/><br/> Insider Risk Yönetimi Analizi <br/><br/> View-Only Servis Talebi|
 |**Insider Risk Management Denetçileri**|İç risk yönetimi etkinliklerini denetleyecek kullanıcılara izinler atamak için bu grubu kullanın. Bu rol grubundaki kullanıcılar insider risk denetim günlüğüne erişebilir.|Insider Risk Yönetimi Denetimi|
 |**İçeriden Risk Yönetimi Araştırmacıları**|Insider risk veri araştırmacısı olarak davranacak kullanıcılara izin atamak için bu grubu kullanın. Bu rol grubundaki kullanıcılar tüm iç risk yönetimi uyarılarına, servis taleplerine, bildirimler şablonlarına ve tüm durumlar için İçerik Gezgini'ne erişebilir.|Olay Yönetimi <br/><br/> Insider Risk Yönetimi Araştırması <br/><br/> View-Only Servis Talebi|
-|**Insider Risk Yönetimi Oturumu Onaylayanları**|Oturum kaydı için grup değişikliği isteklerini yönetin.|Insider Risk Yönetimi Oturumları|
 |**IRM Katkıda Bulunanları**|Bu rol grubu görünür, ancak yalnızca arka plan hizmetleri tarafından kullanılır.|Insider Risk Management Kalıcı katkı <br/><br/> Insider Risk Management Geçici katkısı|
 |**Bilgi Yöneticileri**|Bilgileri, öğrenmeyi, eğitimleri ve diğer akıllı özellikleri atamayı yapılandırın.|Bilgi Yönetici|
 |**MailFlow Yöneticisi**|Üyeler, Güvenlik & Uyumluluk Merkezi'nde posta akışı içgörülerini ve raporlarını izleyebilir ve görüntüleyebilir. Genel yöneticiler bu gruba sıradan kullanıcılar ekleyebilir, ancak kullanıcı Exchange Yönetici grubunun üyesi değilse, kullanıcının Exchange yöneticisiyle ilgili görevlere erişimi olmaz.|alıcıları View-Only|
@@ -149,7 +148,6 @@ Aşağıdaki rollerin varsayılan olarak Kuruluş Yönetimi rol grubuna atanmad�
 - Insider Risk Yönetimi Denetimi
 - Insider Risk Yönetimi Araştırması
 - Insider Risk Management Kalıcı katkı
-- Insider Risk Yönetimi Oturumları
 - Insider Risk Management Geçici katkısı
 - Bilgi Yönetici
 - Önizleme
@@ -205,7 +203,6 @@ Aşağıdaki rollerin varsayılan olarak Kuruluş Yönetimi rol grubuna atanmad�
 |**Insider Risk Yönetimi Denetimi**|Insider Risk denetim izlerini görüntülemeye izin verin.|Insider Risk Management <br/><br/> Insider Risk Management Denetçileri|
 |**Insider Risk Yönetimi Araştırması**|Tüm iç risk yönetimi uyarılarına, servis taleplerine, bildirimler şablonlarına ve tüm durumlar için İçerik Gezgini'ne erişin.|Insider Risk Management <br/><br/> İçeriden Risk Yönetimi Araştırmacıları|
 |**Insider Risk Management Kalıcı katkı**|Bu rol grubu görünür, ancak yalnızca arka plan hizmetleri tarafından kullanılır.|IRM Katkıda Bulunanları|
-|**Insider Risk Yönetimi Oturumları**|Oturum kaydı için grup değişikliği isteklerini yönetmeye izin verin.|Insider Risk Management <br/><br/> Insider Risk Yönetimi Oturumu Onaylayanları|
 |**Insider Risk Management Geçici katkısı**|Bu rol grubu görünür, ancak yalnızca arka plan hizmetleri tarafından kullanılır.|IRM Katkıda Bulunanları|
 |**Bilgi Yönetici**|Bilgileri, öğrenmeyi, eğitimleri ve diğer akıllı özellikleri atamayı yapılandırın.|Bilgi Yöneticileri|
 |**Uyarıları Yönet**|Uyarılar için ayarları ve raporları görüntüleyin ve düzenleyin.|Uyumluluk Yöneticisi <p><p> Uyumluluk Verileri Yöneticisi <p> Kuruluş Yönetimi <p> Güvenlik Yöneticisi <p> Güvenlik İşleci|

@@ -13,15 +13,16 @@ ms.localizationpriority: high
 ms.collection:
 - Teams_ITAdmin_FLW
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 0bc2940bc45a4090a4e1a5399ff1c4493326d050
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 904c45ac80db210d1701c61e008f3b7993de43d6
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100129"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066002"
 ---
 # <a name="managers---get-your-team-started-with-microsoft-365-for-frontline-workers"></a>Yöneticiler - Ekibinizin ön cephe çalışanları için Microsoft 365'i kullanmaya başlamasını sağlar
 
@@ -140,7 +141,7 @@ Ekibinizle birlikte çalıştığınız bir elektronik tablonuz varsa, bunu list
 
 ### <a name="updates"></a>Güncelleştirmeler
 
-Güncelleştirmeler güncelleştirmeleri oluşturmanıza, göndermenize ve gözden geçirmenize olanak tanır. Kişiler, ister düzenli olarak gerçekleşen yinelenen süreçler ister herhangi bir zamanda gerekebilecek anlık güncelleştirmeler olsun, ekibin başarıya uygun olduğundan emin olmak için çalışan güncelleştirmelerini, iadelerini ve raporlarını tek bir yerde kolayca görebilir.
+Güncelleştirmeler güncelleştirmeleri oluşturmanıza, göndermenize ve gözden geçirmenize olanak tanır. Kişiler çalışanların güncelleştirmelerini, iadelerini ve raporlarını tek bir yerde kolayca görebilir ve ister düzenli olarak gerçekleşen yinelenen işlemler ister herhangi bir zamanda gerekebilecek anlık güncelleştirmeler olsun, ekibin başarıya uygun olduğundan emin olabilir.
 
 Ekip üyelerinize güncelleştirmeler atayabilirsiniz. Ekip üyeleri, güncelleştirmeleri atanmadan da gönderebilir.
 

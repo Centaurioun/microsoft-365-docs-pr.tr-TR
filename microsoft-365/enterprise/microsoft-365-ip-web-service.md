@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 8/6/2019
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Ağ trafiğini daha iyi tanımlamanıza ve ayırt Office 365 yardımcı olmak için Office 365 IP Adresi ve URL web hizmetini kullanmayı öğrenin.
-ms.openlocfilehash: b13377c6230c869231b7cecda8375f663cbcd33b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cc7b060c2566ed437d286a0d0cf7c165b534556e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100643"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170409"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>OFFICE 365 IP Adresi ve URL web hizmeti
 
@@ -56,8 +57,8 @@ Ağ çevre cihazı satıcısı olarak bu web hizmetini kullanarak şunları yapa
 
 Daha fazla bilgi için bkz.:
 
-- [Office 365 Tech Community Forumu'ndaki duyuru blog gönderisi](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-Office-365-endpoint-categories-and-Office-365-IP/ba-p/177638)
-- [web hizmetlerinin kullanımıyla ilgili sorular için Office 365 Tech Community Forumu](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
+- [Office 365 Teknoloji Topluluğu Forumu'nda duyuru blog gönderisi](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-Office-365-endpoint-categories-and-Office-365-IP/ba-p/177638)
+- [web hizmetlerinin kullanımıyla ilgili sorular için Office 365 Teknoloji Topluluğu Forumu](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
 
 ## <a name="common-parameters"></a>Ortak parametreler
 
@@ -77,7 +78,7 @@ Yayımlanan her örneğin verilerine bir sürüm numarası atanır ve sürüm we
 Sürüm web yönteminin parametreleri şunlardır:
 
 - **AllVersions=\<true \| false\>** —Varsayılan olarak, döndürülen sürüm en son sürümdür. Web hizmeti ilk kez yayımlandıktan sonra yayımlanan tüm sürümleri istemek için bu isteğe bağlı parametreyi ekleyin.
-- **Format=\<JSON \| CSV \| RSS\>** —JSON ve CSV biçimlerine ek olarak, sürüm web yöntemi RSS'yi de destekler. bu isteğe bağlı parametreyi _AllVersions=true_ parametresiyle birlikte kullanarak Outlook veya diğer RSS okuyucularla kullanılabilecek bir RSS akışı isteyebilirsiniz.
+- **Format=\<JSON \| CSV \| RSS\>** —JSON ve CSV biçimlerine ek olarak, sürüm web yöntemi RSS'yi de destekler. Bu isteğe bağlı parametreyi _AllVersions=true_ parametresiyle birlikte kullanarak Outlook veya diğer RSS okuyucularıyla birlikte kullanılabilecek bir RSS akışı isteyebilirsiniz.
 - **Örnek=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** —Bu isteğe bağlı parametre sürümü döndürülecek örneği belirtir. Atlanırsa, tüm örnekler döndürülür. Geçerli örnekler şunlardır: Dünya çapında, Çin, USGovDoD, USGovGCCHigh.
 
 Sürüm web yöntemi hız sınırlı değildir ve hiçbir zaman 429 HTTP Yanıt Kodları döndürmez. Sürüm web yöntemine verilen yanıt, verilerin 1 saat önbelleğe alınmasını öneren bir önbellek denetimi üst bilgisi içerir. Sürüm web yönteminin sonucu tek bir kayıt veya bir kayıt dizisi olabilir. Her kaydın öğeleri şunlardır:
@@ -176,7 +177,7 @@ Uç noktalar web yöntemi, Office 365 hizmetini oluşturan IP adresi aralıklar�
 
 Uç nokta web yönteminin parametreleri şunlardır:
 
-- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** —Hizmet alanlarının virgülle ayrılmış listesi. Geçerli öğeler _Ortak_, _Exchange_, _SharePoint_ ve _Skype_' dır. _Ortak_ hizmet alanı öğeleri diğer tüm hizmet alanları için bir önkoşul olduğundan, web hizmeti bunları her zaman içerir. Bu parametreyi eklemezseniz, tüm hizmet alanları döndürülür.
+- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** —Hizmet alanlarının virgülle ayrılmış listesi. Geçerli öğeler _Ortak_, _Exchange_, _SharePoint_ ve _Skype'tır_. _Ortak_ hizmet alanı öğeleri diğer tüm hizmet alanları için bir önkoşul olduğundan, web hizmeti bunları her zaman içerir. Bu parametreyi eklemezseniz, tüm hizmet alanları döndürülür.
 - **TenantName=\<tenant_name\>** —Office 365 kiracı adınız. Web hizmeti, sağlanan adınızı alır ve kiracı adını içeren URL'lerin bölümlerine ekler. Kiracı adı sağlamazsanız, URL'lerin bu bölümleri joker karaktere (\* ) sahiptir.
 - **NoIPv6=\<true \| false\>** —Ağınızda IPv6 kullanmıyorsanız IPv6 adreslerini çıkıştan dışlamak için değeri _true_ olarak ayarlayın.
 - **Örnek=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** —Bu gerekli parametre, uç noktaların döndürüleceği örneği belirtir. Geçerli örnekler şunlardır: _Dünya çapında_, _Çin_, _USGovDoD_ ve _USGovGCCHigh_.
@@ -186,7 +187,7 @@ Uç noktalar web yöntemini aynı istemci IP adresinden çok fazla çağırırsa
 Endpoints web yönteminden elde edilen sonuç, her kaydın belirli bir uç nokta kümesini temsil ettiği bir kayıt dizisidir. Her kaydın öğeleri şunlardır:
 
 - id—Uç nokta kümesinin sabit kimlik numarası.
-- serviceArea—Bunun parçası olduğu hizmet alanı: _Ortak_, _Exchange_, _SharePoint_ veya _Skype_.
+- serviceArea—Bunun parçası olduğu hizmet alanı: _Common_, _Exchange_, _SharePoint_ veya _Skype_.
 - url'ler—uç nokta kümesinin URL'leri. DNS kayıtlarının JSON dizisi. Boşsa atlanır.
 - tcpPorts—Uç nokta kümesi için TCP bağlantı noktaları. Tüm bağlantı noktaları öğeleri, bir tire karakteri (-) ile ayrılmış bağlantı noktalarının veya bağlantı noktası aralıklarının virgülle ayrılmış bir listesi olarak biçimlendirilir. Bağlantı noktaları, belirli bir kategori için uç nokta kümesindeki tüm IP adreslerine ve tüm URL'lere uygulanır. Boşsa atlanır.
 - udpPorts—Bu uç nokta kümesindeki IP adresi aralıkları için UDP bağlantı noktaları. Boşsa atlanır.
@@ -591,7 +592,7 @@ else:
 
 ## <a name="web-service-interface-versioning"></a>Web Hizmeti arabirimi sürüm oluşturma
 
-Gelecekte bu web hizmeti yöntemleri için parametrelerde veya sonuçlarda güncelleştirme yapılması gerekebilir. Bu web hizmetlerinin genel kullanılabilirlik sürümü yayımlandıktan sonra, Microsoft web hizmetine malzeme güncelleştirmeleri için önceden bildirim sağlamak için makul çaba gösterecektir. Microsoft bir güncelleştirmenin web hizmetini kullanan istemcilerde değişiklik gerektirdiğine inandığında, Microsoft web hizmetinin önceki sürümünü (bir sürüm geri) yeni sürümün yayımlanmasından sonra en az 12 ay boyunca kullanılabilir durumda tutar. Bu süre boyunca yükseltme yapmayan müşteriler web hizmetine ve yöntemlerine erişemeyebilir. Web hizmeti arabirimi imzasına aşağıdaki değişiklikler yapılırsa müşteriler web hizmeti istemcilerinin hatasız çalışmaya devam ettiğinden emin olmalıdır:
+Gelecekte bu web hizmeti yöntemlerinin parametrelerine veya sonuçlarına Güncelleştirmeler gerekebilir. Bu web hizmetlerinin genel kullanılabilirlik sürümü yayımlandıktan sonra, Microsoft web hizmetine malzeme güncelleştirmeleri için önceden bildirim sağlamak için makul çaba gösterecektir. Microsoft bir güncelleştirmenin web hizmetini kullanan istemcilerde değişiklik gerektirdiğine inandığında, Microsoft web hizmetinin önceki sürümünü (bir sürüm geri) yeni sürümün yayımlanmasından sonra en az 12 ay boyunca kullanılabilir durumda tutar. Bu süre boyunca yükseltme yapmayan müşteriler web hizmetine ve yöntemlerine erişemeyebilir. Web hizmeti arabirimi imzasına aşağıdaki değişiklikler yapılırsa müşteriler web hizmeti istemcilerinin hatasız çalışmaya devam ettiğinden emin olmalıdır:
 
 - Eski istemciler tarafından sağlanması gerekmeyen ve eski bir istemcinin aldığı sonucu etkilemeyen mevcut bir web yöntemine yeni bir isteğe bağlı parametre ekleme.
 - Yanıt REST öğelerinden birine veya diğer sütunlardan birine yanıt CSV'sine yeni bir adlandırılmış öznitelik ekleme.
@@ -601,7 +602,7 @@ Gelecekte bu web hizmeti yöntemleri için parametrelerde veya sonuçlarda günc
 
 IP adreslerinde ve URL'lerde yapılan değişiklikler web hizmetinde yayımlandığında e-posta bildirimleri almak için birkaç farklı yöntem kullanabilirsiniz.
 
-- Power Automate çözümü kullanmak için bkz. [Office 365 IP Adresleri ve URL'lerinde yapılan değişiklikler için e-posta almak için Power Automate kullanma](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
+- Power Automate çözümü kullanmak için bkz. [Office 365 IP Adresleri ve URL'lerinde yapılan değişikliklere yönelik bir e-posta almak için Power Automate'i kullanma](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 - ARM şablonu kullanarak Azure Logic App dağıtmak için bkz. [Office 365 Güncelleştirme Bildirimi (v1.1)](https://aka.ms/ipurlws-updates-template).
 - PowerShell kullanarak kendi bildirim betiğinizi yazmak için bkz. [Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage).
 

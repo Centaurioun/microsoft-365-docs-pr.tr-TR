@@ -16,14 +16,14 @@ metadata:
   manager: dansimp
   ms.custom: asr
   ms.topic: faq
-  ms.collection: m365-security-compliance
+  ms.collection: m365-security
   ms.date: 09/13/2022
-  ms.openlocfilehash: be90f7724ad4e2a5d91532aecacef4d0a22ebdef
-  ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+  ms.openlocfilehash: 413863eee617bb9d741ca700b37b931e345253fd
+  ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 09/16/2022
-  ms.locfileid: "67741971"
+  ms.lasthandoff: 09/27/2022
+  ms.locfileid: "68065980"
 title: Saldırı yüzeyini azaltma hakkında sık sorulan sorular (SSS)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -40,11 +40,11 @@ sections:
   - question: >
       Saldırı yüzeyini azaltma (ASR) Windows'un bir parçası mı?
     answer: >
-      ASR başlangıçta, Windows 10, sürüm 1709'da Microsoft Defender Virüsten Koruma'nın önemli bir güncelleştirmesi olarak sunulan exploit guard özellikleri paketinin bir özelliğiydi. Microsoft Defender Virüsten Koruma, Windows'un yerel kötü amaçlı yazılımdan koruma bileşenidir. Ancak, tam ASR özellik kümesi yalnızca bir Windows kurumsal lisansıyla kullanılabilir. ASR kuralı dışlamalarının Microsoft Defender Virüsten Koruma dışlamalarından ayrı olarak yönetildiğini de unutmayın.
+      ASR başlangıçta Windows 10, sürüm 1709'da Microsoft Defender Virüsten Koruma için önemli bir güncelleştirme olarak sunulan exploit guard özellikleri paketinin bir özelliğiydi. Microsoft Defender Virüsten Koruma, Windows'un yerel kötü amaçlı yazılımdan koruma bileşenidir. Ancak, tam ASR özellik kümesi yalnızca bir Windows kurumsal lisansıyla kullanılabilir. Ayrıca ASR kuralı dışlamalarının Microsoft Defender Virüsten Koruma dışlamalarından ayrı olarak yönetildiğini unutmayın.
   - question: >
       ASR kurallarını çalıştırmak için kurumsal lisansa sahip olmak gerekiyor mu?
     answer: >
-      ASR kuralları ve özellikleri kümesinin tamamı yalnızca Windows 10 veya Windows 11 için kurumsal lisansınız varsa desteklenir. Sınırlı sayıda kural kurumsal lisans olmadan çalışabilir. Microsoft 365 İş'iniz varsa, birincil güvenlik çözümünüz olarak Microsoft Defender Virüsten Koruma'yı ayarlayın ve PowerShell aracılığıyla kuralları etkinleştirin. Kurumsal lisans olmadan ASR kullanımı resmi olarak desteklenmez ve ASR'nin tüm özelliklerini kullanamazsınız.
+      ASR kuralları ve özellikleri kümesinin tamamı yalnızca Windows 10 veya Windows 11 için kurumsal lisansınız varsa desteklenir. Sınırlı sayıda kural kurumsal lisans olmadan çalışabilir. Microsoft 365 İş'iniz varsa, birincil güvenlik çözümünüz olarak virüsten koruma Microsoft Defender ayarlayın ve PowerShell aracılığıyla kuralları etkinleştirin. Kurumsal lisans olmadan ASR kullanımı resmi olarak desteklenmez ve ASR'nin tüm özelliklerini kullanamazsınız.
 
 
       Windows lisanslama hakkında daha fazla bilgi edinmek için bkz[. lisanslama Windows 10](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) ve [Windows 10 için Toplu Lisanslama kılavuzunu](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf) edinin.

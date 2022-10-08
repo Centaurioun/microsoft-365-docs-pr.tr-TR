@@ -11,16 +11,18 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4140822e058987cd845b41711e9e325f442ccabb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 01833461638859ff1d4025851f0c8b0201e4eedb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67697155"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201891"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Uç Nokta için Microsoft Defender güvenlik temeline uyumluluğu artırma
 
@@ -44,7 +46,7 @@ Güvenlik temellerine uyumluluk dağıtmadan ve izlemeden önce:
 
 ## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Uç Nokta için Microsoft Defender ve Windows Intune güvenlik temellerini karşılaştırma
 
-Windows Intune güvenlik temeli, Tarayıcı ayarları, PowerShell ayarları ve Microsoft Defender Virüsten Koruma gibi bazı güvenlik özellikleri için ayarlar da dahil olmak üzere Windows çalıştıran cihazları güvenli bir şekilde yapılandırmak için gereken kapsamlı bir dizi önerilen ayar sağlar. Buna karşılık, Uç Nokta için Defender temeli uç nokta algılama ve yanıt (EDR) ayarlarının yanı sıra Windows Intune güvenlik temelinde bulunan ayarlar da dahil olmak üzere Uç Nokta için Defender yığınındaki tüm güvenlik denetimlerini iyileştirici ayarlar sağlar. Her temel hakkında daha fazla bilgi için bkz:
+Windows Intune güvenlik temeli, Windows çalıştıran cihazları güvenli bir şekilde yapılandırmak için tarayıcı ayarları, PowerShell ayarları ve Microsoft Defender Virüsten Koruma gibi bazı güvenlik özellikleri için ayarlar gibi kapsamlı bir dizi önerilen ayar sağlar. Buna karşılık, Uç Nokta için Defender temeli uç nokta algılama ve yanıt (EDR) ayarlarının yanı sıra Windows Intune güvenlik temelinde bulunan ayarlar da dahil olmak üzere Uç Nokta için Defender yığınındaki tüm güvenlik denetimlerini iyileştirici ayarlar sağlar. Her temel hakkında daha fazla bilgi için bkz:
 
 - [Intune için Windows güvenlik temeli ayarları](/intune/security-baseline-settings-windows)
 - [Intune için temel ayarları Uç Nokta için Microsoft Defender](/intune/security-baseline-settings-defender-atp)
@@ -81,7 +83,7 @@ Cihaz yapılandırma yönetimi yalnızca özel olarak Uç Nokta için Microsoft 
 1. Intune cihaz yönetimine gitmek için **Güvenlik temeli kartında Güvenlik temelini** **yapılandır'ı** seçin. Taban çizgisi uyumluluğuna benzer bir genel bakış görüntülenir.
 
    > [!TIP]
-   > Alternatif olarak, Microsoft Defender ATP temeli > **Tüm hizmetler > Intune > Cihaz güvenliği > Güvenlik temelleri'nden Microsoft Azure portal Uç Nokta için Defender güvenlik temeline** gidebilirsiniz.
+   > Alternatif olarak, Tüm hizmetler > Intune > Cihaz güvenliği > **Güvenlik temelleri > Microsoft Defender ATP temeli'nden Microsoft Azure portal** Uç Nokta için Defender güvenlik temeline gidebilirsiniz.
 
 2. Yeni bir profil oluşturun.
 

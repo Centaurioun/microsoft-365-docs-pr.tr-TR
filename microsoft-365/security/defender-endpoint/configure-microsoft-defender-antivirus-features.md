@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Virüsten Koruma özelliklerini yapılandırın
-description: Microsoft Defender Virüsten Koruma özelliklerini Intune, Microsoft Endpoint Configuration Manager, grup ilkesi ve PowerShell ile yapılandırabilirsiniz.
+description: Intune, Microsoft Endpoint Configuration Manager, grup ilkesi ve PowerShell ile Microsoft Defender Virüsten Koruma özelliklerini yapılandırabilirsiniz.
 keywords: Microsoft Defender Virüsten Koruma, kötü amaçlı yazılımdan koruma, güvenlik, defender, yapılandırma, yapılandırma, Config Manager, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, mobil cihaz yönetimi, GP, grup ilkesi, PowerShell
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -14,14 +14,16 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 43a72f376f23a1a20178ad8a2179cff18b1cd7fb
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 7fd4f302d0e24ea72fc2b63eea652f479e72201b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694975"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201847"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Microsoft Defender Virüsten Koruma özelliklerini yapılandırın
 
@@ -36,7 +38,7 @@ ms.locfileid: "67694975"
 **Platform**
 - Windows
 
-Microsoft Defender Virüsten Koruma'yı aşağıdakiler gibi çeşitli araçlarla yapılandırabilirsiniz:
+Microsoft Defender Virüsten Koruma'yı şu gibi çeşitli araçlarla yapılandırabilirsiniz:
 
 - Microsoft Endpoint Manager (Microsoft Intune ve Microsoft Endpoint Configuration Manager içerir)
 - Grup İlkesi
@@ -46,13 +48,13 @@ Microsoft Defender Virüsten Koruma'yı aşağıdakiler gibi çeşitli araçlarl
 
 Aşağıdaki geniş özellik kategorileri yapılandırılabilir:
 
-- Bulut tabanlı koruma. Bkz. [Bulut tabanlı koruma ve Microsoft Defender Virüsten Koruma](cloud-protection-microsoft-defender-antivirus.md)
+- Bulut tabanlı koruma. Bkz[. Bulut tabanlı koruma ve Microsoft Defender Virüsten Koruma](cloud-protection-microsoft-defender-antivirus.md)
 
 - Davranışsal, buluşsal ve makine öğrenmesi tabanlı koruma da dahil olmak üzere her zaman açık gerçek zamanlı koruma. Bkz [. Davranışsal, buluşsal ve gerçek zamanlı korumayı yapılandırma](configure-protection-features-microsoft-defender-antivirus.md).
 
 - Son kullanıcıların tek tek uç noktalarda istemciyle etkileşim kurma şekli. Aşağıdaki kaynaklara bakın:
-  - [Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya bu arabirimle etkileşim kurmasını engelleme](prevent-end-user-interaction-microsoft-defender-antivirus.md)
-  - [Kullanıcıların Microsoft Defender Virüsten Koruma ilke ayarlarını yerel olarak değiştirmesini engelleme veya izin verme](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+  - [Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya bunlarla etkileşim kurmasını engelleme](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+  - [Kullanıcıların Microsoft Defender Virüsten Koruma ilkesi ayarlarını yerel olarak değiştirmesini engelleme veya izin verme](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > [Yönetim ve yapılandırma araçları için Başvuru konularını](configuration-management-reference-microsoft-defender-antivirus.md) gözden geçirin.

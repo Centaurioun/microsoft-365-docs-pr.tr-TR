@@ -5,27 +5,28 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: mediumn
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
-description: Microsoft 365'daki olaylar veya öneriler hakkında bilgi için Microsoft 365 izlemeyi kullanın.
-ms.openlocfilehash: 47f54859d7dd0973814a0ad9229a902bddcb8587
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: Microsoft 365'teki olaylar veya öneriler hakkında bilgi için Microsoft 365 izlemesini kullanın.
+ms.openlocfilehash: 021f1f9d366e3b469b0732cd55048b023f09c15e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824848"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170387"
 ---
 # <a name="learn-about-microsoft-365-monitoring"></a>Microsoft 365 izleme hakkında bilgi edinin
 
-Kuruluşunuzun Microsoft 365 aboneliğinde çeşitli [Microsoft hizmetleri](https://go.microsoft.com/fwlink/p/?linkid=2024339) durumunu izlemek için Microsoft 365 yönetim merkezi panoları kullanabilirsiniz. Bu özellik başlangıçta Exchange Online ile başlatıldı ve gelecekte Microsoft Teams, Microsoft 365 Uygulamaları ve daha fazla hizmet gibi diğer Microsoft hizmetleri genişletildi. İzleme, şu kategorilerde toplanan olaylar ve öneriler hakkında bilgi sağlar:
+Kuruluşunuzun Microsoft 365 aboneliği için çeşitli Microsoft hizmetlerinin durumunu izlemek için [Microsoft 365 yönetim merkezi](https://go.microsoft.com/fwlink/p/?linkid=2024339) panoları kullanabilirsiniz. Bu özellik başlangıçta Exchange Online ile başlatıldı ve şimdi gelecekte Microsoft Teams, Microsoft 365 Uygulamaları ve daha fazla hizmet gibi diğer Microsoft hizmetlerine genişletildi. İzleme, şu kategorilerde toplanan olaylar ve öneriler hakkında bilgi sağlar:
 
 - **Altyapı**. Microsoft'un sahip olduğu Microsoft 365 altyapısında düzenli güncelleştirmeler sağlamak ve sorunu çözmek için sorun algılandı. Örneğin, Exchange veya diğer Microsoft 365 bulut altyapısıyla ilgili sorunlar nedeniyle kullanıcılar Exchange Online erişemiyor.
 
@@ -57,7 +58,7 @@ Bu önizleme, aşağıdaki gereksinimleri karşılayan müşteriler için etkinl
 
    Örneğin, kuruluşunuzda 3.000 Office 365 E3 lisansı ve uygun ürünlerden toplam 5.500 lisans için 2.500 Microsoft 365 E5 olabilir.
 
-- Kuruluşunuzun Microsoft Teams, OneDrive İş, SharePoint Online, Exchange Online ve Office uygulamaları içeren bir veya daha fazla temel Microsoft 365 hizmeti için en az 50 aylık etkin kullanıcısı olmalıdır.
+- Kuruluşunuzun Microsoft Teams, OneDrive İş, SharePoint Online, Exchange Online ve Office uygulamalarını içeren bir veya daha fazla temel Microsoft 365 hizmeti için en az 50 aylık etkin kullanıcısı olmalıdır.
 
 - Hizmet Durumu Panosu düzeyinde izinlere sahip herhangi bir rol Exchange Online İzleme'ye erişebilir. Daha fazla bilgi için bkz. [Microsoft 365 hizmet durumunu denetleme](view-service-health.md).
 
@@ -71,7 +72,7 @@ Hizmete özgü izleme, aşağıdaki Microsoft hizmetleri için de etkinleştiril
 
 - [Microsoft Teams](microsoft-365-teams-monitoring.md)
 
-## <a name="send-us-feedback"></a>Bize geri bildirim gönderin
+## <a name="send-us-feedback"></a>Görüşlerinizi bize gönderin
 
 Geri bildirim sağlamanın iki yolu vardır:
 
@@ -91,7 +92,7 @@ Ardından aşağıdaki gereksinimlerin ikisini de karşıladığınızdan emin o
 
 - Kuruluşunuzun şu ürünlerin bir veya bir birleşiminden en az 5.000 lisans sayısına sahip olması gerekir: Office 365 E3, Microsoft 365 E3, Office 365 E5 veya Microsoft 365 E5.
 
-- Kuruluşunuzun Microsoft Teams, OneDrive İş, SharePoint Online, Exchange Online ve Office uygulamaları içeren bir veya daha fazla temel Microsoft 365 hizmeti için en az 50 aylık etkin kullanıcısı olmalıdır.
+- Kuruluşunuzun Microsoft Teams, OneDrive İş, SharePoint Online, Exchange Online ve Office uygulamalarını içeren bir veya daha fazla temel Microsoft 365 hizmeti için en az 50 aylık etkin kullanıcısı olmalıdır.
 
 Kuruluşunuz için lisans sayısı 5.000 kullanıcının altına düşerse ve aylık etkin kullanıcılar çekirdek hizmetlerde 50 kullanıcının altına düşerse, Exchange Online izleme bu gereksinimler karşılanana kadar etkinleştirilmez.
 

@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,16 +26,16 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Çok faktörlü kimlik doğrulaması (MFA) hem güçlü olması gereken bir parola hem de ek bir doğrulama yöntemi kullanır.
-ms.openlocfilehash: cabb7d3efc6d99c69e7e125c9170ac7367fc3929
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 0b61fea661b0c0a3652d2b5b2c74b4450e83bd4b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044070"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201385"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>Microsoft 365 için çok faktörlü kimlik doğrulaması
 
-Parolalar, bir bilgisayarda veya çevrimiçi hizmette oturum açma kimliğini doğrulamanın en yaygın yöntemidir, ancak aynı zamanda en savunmasız olanlardır. Kişiler kolay parolalar seçebilir ve farklı bilgisayarlara ve hizmetlere birden çok oturum açma için aynı parolaları kullanabilir.
+Parolalar, bir bilgisayarda veya çevrimiçi hizmette oturum açma kimliğini doğrulamanın en yaygın yöntemidir, ancak aynı zamanda en savunmasız olanlardır. Kişiler kolay parolalar seçebilir ve farklı bilgisayar ve hizmetlerde birden çok oturum açma için aynı parolaları kullanabilir.
 
 Oturum açma işlemleri için ek bir güvenlik düzeyi sağlamak için, hem güçlü olması gereken parolayı hem de aşağıdakileri temel alan ek bir doğrulama yöntemini kullanan çok faktörlü kimlik doğrulamasını (MFA) kullanmanız gerekir:
 
@@ -43,9 +44,9 @@ Oturum açma işlemleri için ek bir güvenlik düzeyi sağlamak için, hem gü�
 
 Ek doğrulama yöntemi, kullanıcının parolası doğrulanana kadar kullanılmaz. MFA ile güçlü bir kullanıcı parolası tehlikeye girse bile, saldırganın oturum açma işlemini tamamlamak için akıllı telefonunuz veya parmak iziniz yoktur.
 
-## <a name="mfa-support-in-microsoft-365"></a>Microsoft 365'de MFA desteği
+## <a name="mfa-support-in-microsoft-365"></a>Microsoft 365'te MFA desteği
 
-Varsayılan olarak, hem Microsoft 365 hem de Office 365 aşağıdakileri kullanan kullanıcı hesapları için MFA'yı destekler:
+Varsayılan olarak, hem Microsoft 365 hem de Office 365 şunları kullanan kullanıcı hesapları için MFA'yı destekler:
 
 - Kullanıcının doğrulama kodu yazmasını gerektiren bir telefona gönderilen kısa mesaj.
 - Bir telefon görüşmesi.
@@ -57,23 +58,23 @@ Her iki durumda da MFA oturum açma işlemi ek doğrulama için "sizinle birlikt
 - Koşullu Erişim ilkeleriyle
 - Her kullanıcı hesabı için (önerilmez)
 
-Bu yollar Microsoft 365 planınıza bağlıdır.
+Bu yollar Microsoft 365 planınızı temel alır.
 
 |Plan|Öneri|Müşteri türü|
 |---|---|---|
 |Tüm Microsoft 365 planları|Tüm kullanıcı hesapları için MFA gerektiren güvenlik varsayılanlarını kullanın. <p> Kullanıcı başına MFA'yı tek tek kullanıcı hesaplarında da yapılandırabilirsiniz, ancak bu önerilmez.|Küçük işletme|
-|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> P1 lisanslarını Azure Active Directory (Azure AD) Premium|Grup üyeliğine, uygulamalara veya diğer ölçütlere göre kullanıcı hesapları için MFA gerektirmek için [güvenlik varsayılanlarını veya Koşullu Erişim ilkelerini](/microsoft-365/business-premium/m365bp-conditional-access) kullanın.|Küçük işletmeden kuruluşa|
+|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium P1 lisansları|Grup üyeliğine, uygulamalara veya diğer ölçütlere göre kullanıcı hesapları için MFA gerektirmek için [güvenlik varsayılanlarını veya Koşullu Erişim ilkelerini](/microsoft-365/business-premium/m365bp-conditional-access) kullanın.|Küçük işletmeden kuruluşa|
 |Microsoft 365 E5 <p> lisansları Azure AD Premium P2|Oturum açma risk ölçütlerine göre MFA gerektirmek için Azure AD Kimlik Koruması kullanın.|Enterprise|
 ||||
 
 ### <a name="security-defaults"></a>Güvenlik varsayılanları
 
-Güvenlik varsayılanları, 21 Ekim 2019'da oluşturulan Microsoft 365 ve Office 365 ücretli veya deneme abonelikleri için yeni bir özelliktir. Bu aboneliklerin güvenlik varsayılanları açıktır ve bunlar:
+Güvenlik varsayılanları, Microsoft 365 ve 21 Ekim 2019 Office 365 dan sonra oluşturulan ücretli veya deneme abonelikleri için yeni bir özelliktir. Bu aboneliklerin güvenlik varsayılanları açıktır ve bunlar:
 
 - Tüm kullanıcılarınızın Microsoft Authenticator uygulamasıyla MFA kullanmasını gerektirir.
 - Eski kimlik doğrulamasını engeller.
 
-Kullanıcıların, güvenlik varsayılanları etkinleştirildikten sonra ilk kez oturum açtıktan sonra başlayan akıllı telefonlarından Microsoft Authenticator uygulamasına MFA'ya kaydolmaları için 14 günü vardır. 14 gün geçtikten sonra, MFA kaydı tamamlanana kadar kullanıcı oturum açamaz.
+Kullanıcıların akıllı telefonlarından Microsoft Authenticator uygulamasına MFA'ya kaydolmaları için 14 günü vardır. Bu, güvenlik varsayılanları etkinleştirildikten sonra ilk kez oturum açtıktan sonra başlar. 14 gün geçtikten sonra, MFA kaydı tamamlanana kadar kullanıcı oturum açamaz.
 
 Güvenlik varsayılanları, tüm kuruluşların kullanıcı oturum açma için varsayılan olarak etkin olan temel bir güvenlik düzeyine sahip olmasını sağlar. Koşullu Erişim ilkeleriyle MFA'nın lehine güvenlik varsayılanlarını devre dışı bırakabilirsiniz.
 
@@ -89,7 +90,7 @@ Daha fazla bilgi için güvenlik [varsayılanlarına genel bakış konusuna](/az
 
 Koşullu Erişim ilkeleri, oturum açmaların değerlendirildiği ve izin verilen koşulları belirten bir dizi kuraldır. Örneğin, şunları belirten bir Koşullu Erişim ilkesi oluşturabilirsiniz:
 
-- Kullanıcı hesabı adı Exchange, kullanıcı, parola, güvenlik, SharePoint veya genel yönetici rollerine atanmış kullanıcılar için bir grubun üyesiyse, erişime izin vermeden önce MFA gerektirir.
+- Kullanıcı hesabı adı Exchange, kullanıcı, parola, güvenlik, SharePoint veya genel yönetici rollerine atanmış kullanıcılar için bir grubun üyesiyse, erişime izin vermeden önce MFA'yı gerektirir.
 
 Bu ilke, bu yönetici rollerinden atanan veya atanmayan tek tek kullanıcı hesaplarını MFA için yapılandırmaya çalışmak yerine grup üyeliğine göre MFA'yı zorunlu kılmasını sağlar.
 

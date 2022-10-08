@@ -12,18 +12,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-evalutatemtp
 - highpri
+- tier1
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 2920bd6c5d8c9426bf33a17e574fe2c08b82f468
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e939fc616c2ffc0120fcfa5fcba5366b46f4e7ac
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693003"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201693"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Uç Nokta için Microsoft Defender değerlendirme laboratuvarı
 
@@ -124,7 +125,7 @@ Aşağıdaki güvenlik bileşenleri test cihazlarında önceden yapılandırılm
 - [Ağ koruması](network-protection.md)
 - [İstenmeyebilecek uygulama algılama](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 - [Bulut tabanlı koruma](cloud-protection-microsoft-defender-antivirus.md)
-- [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
+- [SmartScreen'i Microsoft Defender](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
 > Microsoft Defender Virüsten Koruma açık (denetim modunda değil). Microsoft Defender Virüsten Koruma simülasyonunuzu çalıştırmanızı engelliyorsa, Windows Güvenliği aracılığıyla cihazda gerçek zamanlı korumayı kapatabilirsiniz. Daha fazla bilgi için bkz. [Her zaman açık korumayı yapılandırma](configure-real-time-protection-microsoft-defender-antivirus.md).
