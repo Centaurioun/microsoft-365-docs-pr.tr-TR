@@ -11,17 +11,19 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: a72b982ca4fce5f7f4cc377113af5538ce4b0d46
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 64f9db688a9d32d3704a64d199be7074ae860398
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67696275"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209964"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Cihaz başına güvenli yapılandırma değerlendirmelerini dışarı aktarma
 

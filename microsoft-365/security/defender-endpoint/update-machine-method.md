@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: feb35c91239540d8f1cf1e5e0c298bfc48463128
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 24a346074c32810b4c00a3c9386a4273ba5176c4
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67684243"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225492"
 ---
 # <a name="update-machine"></a>Makineyi güncelleştir 
 
@@ -63,6 +65,8 @@ Temsilci (iş veya okul hesabı)|Machine.ReadWrite|'Makine bilgilerini okuma ve 
 > Kullanıcı kimlik bilgilerini kullanarak belirteç alırken:
 > - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Uyarılar araştırması'. Daha fazla bilgi için bkz. [Rolleri oluşturma ve yönetme](user-roles.md).
 > - Kullanıcının, cihaz grubu ayarlarına bağlı olarak uyarıyla ilişkilendirilmiş cihaza erişimi olmalıdır. Daha fazla bilgi için bkz. [Cihaz gruplarını oluşturma ve yönetme](machine-groups.md).
+>
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
 
 ## <a name="http-request"></a>HTTP isteği
 

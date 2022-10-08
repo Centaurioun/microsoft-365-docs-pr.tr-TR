@@ -1,5 +1,5 @@
 ---
-title: İş aboneliğinizi iptal etme
+title: Microsoft iş aboneliğinizi iptal etme
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -23,14 +24,14 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 yönetim merkezinde Dynamics 365, Intune, Power Platform ve İş için Microsoft 365 deneme veya ücretli aboneliklerinizi nasıl iptal edebileceğinizi öğrenin.
 ms.date: 07/07/2022
-ms.openlocfilehash: b78054d4da625fdc78b86b26aa3c7ba9b8b186a6
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 7bce380b2814c9a4235e1e95d78a1caf242df66c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660915"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185831"
 ---
-# <a name="cancel-your-microsoft-subscription"></a>Microsoft aboneliğinizi iptal etme
+# <a name="cancel-your-microsoft-business-subscription"></a>Microsoft iş aboneliğinizi iptal etme
 
 Aboneliğinizi iptal etmek istiyorsanız, bunu yapmanın en kolay yolu [yinelenen faturalandırmayı kapatmaktır](renew-your-subscription.md). Yinelenen faturalandırmayı kapattığınızda, abonelik döneminin sonunda süresi dolana kadar aboneliğinizi kullanmaya devam edebilirsiniz. Hemen iptal etmek istiyorsanız, bunu yapmak için bu makaledeki bilgileri ve adımları kullanın.
 
@@ -43,7 +44,7 @@ Gelecekteki ücretleri durdurmak için ücretsiz denemenizi istediğiniz zaman i
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-- Bu makaledeki görevleri yerine getirmek için Genel yönetici veya Fatura yöneticisi olmalısınız. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+- You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - Aboneliği iptal etmeden önce kullanıcılarınızın [verilerini kaydettiğinden](#save-your-data) emin olun.
 - Aboneliğinizle kullanmak üzere kendi etki alanı adınızı eklediyseniz aboneliğinizi iptal edebilmek için önce [etki alanını kaldırmanız](../../admin/get-help-with-domains/remove-a-domain.md) gerekir.
 - Bir etki alanı aboneliğiniz varsa, söz konusu abonelikte başka ücretleri önlemek için [yinelenen faturalandırmayı kapatın](renew-your-subscription.md).
@@ -95,18 +96,18 @@ Aboneliğinizi iptal edemiyorsanız, yardım için [destekle iletişime geçin](
 
 2. İptal etmek istediğiniz aboneliği bulun. Üç noktayı (diğer eylemler) ve ardından **Aboneliği iptal et**'i seçin.
 
-3. **Aboneliği iptal et** bölmesinde iptal etme nedeninizi seçin. İsterseniz geri bildirim sağlayabilirsiniz.
+3. **Aboneliği iptal et** bölmesinde iptal etme nedeninizi seçin. İsteğe bağlı olarak bir geri bildirim gönderin.
 
 4. **Kaydet**'i seçin.
 
-Artık aboneliğiniz **Devre Dışı** durumda görünür ve silinene kadar sınırlı işlevsellikte çalışır. Ücretli bir İş için Microsoft 365 aboneliği iptal edildiğinde neler bekleyebileceğiniz hakkında daha fazla bilgi için bkz. [İş için Microsoft 365 aboneliğim sona erdiğinde verilerime ve erişimime ne olur?](what-if-my-subscription-expires.md)
+Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
 
 > [!IMPORTANT]
 > Aboneliği açıkça silerseniz **Süresi Doldu** ile **Devre Dışı** durumlarını atlar ve OneDrive da içinde olmak üzere SharePoint Online verileri ve içeriği hemen silinir.
 
 ## <a name="save-your-data"></a>Verilerinizi kaydetme
 
-İptal işlemi geçerlilik kazandığında kullanıcılarınız verilerine erişimi kaybeder. Aboneliği iptal etmeden önce kullanıcılarınızın OneDrive İş veya SharePoint Online dosyalarını başka bir konuma kaydetmesini sağlayın. Arkada bıraktığınız tüm müşteri verileri 30 gün sonra silinebilir ve iptal işlemini izleyen 180 gün içinde mutlaka silinir.
+When the cancellation becomes effective, your users lose access to their data. Before you cancel the subscription, have them save their OneDrive for Business or SharePoint Online files to another location. Any customer data that you leave behind might be deleted after 30 days, and is deleted no later than 180 days after cancellation.
 
 - Posta, kişiler, görevler ve takvim bilgilerini başka bir hesaba taşımak için bkz. [Posta, kişiler ve takvimi Outlook.pst dosyasına aktarma ve yedekleme](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91).
 - SharePoint Online ortamındaki (OneDrive İş veya ekip siteleri) belge kitaplığını veya liste içeriğini (kişiler gibi) dosya paylaşımlarına veya yerel bilgisayara kaydetmek için bkz. [SharePoint Online içeriğini el ile geçirme hakkında bilgiler](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
@@ -115,7 +116,7 @@ Artık aboneliğiniz **Devre Dışı** durumda görünür ve silinene kadar sın
 
 ### <a name="uninstall-office-optional"></a>Office’i kaldırma (isteğe bağlı)
 
-Aboneliğinizi iptal ettiyseniz ve kullanıcıları Microsoft 365 içeren [başka bir aboneliğe taşımadıysanız](move-users-different-subscription.md), Microsoft 365 sınırlı işlevsellik modunda çalışır. Bu durumda kullanıcılar belgeleri yalnızca okuyabilir ve yazdırabilir. Ayrıca Microsoft 365 uygulamalarında [Lisanssız Ürün bildirimleri](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) görüntülenir. Karışıklıkları önlemek için, kullanıcılarınızın makinelerinden [Office'i kaldırmalarını](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8) sağlayın.
+If you canceled your subscription, and didn't [move users to a different subscription](move-users-different-subscription.md) that includes Microsoft 365, Microsoft 365 runs in reduced functionality mode. When this happens, users can only read and print documents, and Microsoft 365 applications display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). To avoid any confusion, have your users [uninstall Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8) from their machines.
 
 ### <a name="close-your-account-optional"></a>Hesabınızı kapatma (isteğe bağlı)
 

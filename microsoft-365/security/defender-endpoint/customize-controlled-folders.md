@@ -13,14 +13,16 @@ ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 711696d8b5ca745d55dc8dc7cac9259e4fe22807
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 72f590aafb4500a871278e8ce2c438fb6ec6a385
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67742618"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200505"
 ---
 # <a name="customize-controlled-folder-access"></a>Denetimli klasör erişimini özelleştirin
 
@@ -77,7 +79,7 @@ Korumalı klasörleri eklemek ve kaldırmak için Windows Güvenliği uygulamas�
 
 3. **grup ilkesi Yönetim Düzenleyicinizde** **Bilgisayar yapılandırma** \> **İlkeleri** \> **Yönetim şablonları'na** gidin.
 
-4. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Windows Defender Exploit Guard** \> **Denetimli klasör erişimi** olarak genişletin. <br/>**NOT**: Windows'un eski sürümlerinde **Microsoft Defender Virüsten Koruma** yerine **Windows Defender Virüsten Koruma** görebilirsiniz.
+4. Ağacı **Windows bileşenlerine** \> **genişletin Microsoft Defender Virüsten Koruma** \> **Windows Defender Exploit Guard** \> **Denetimli klasör erişimi**. <br/>**NOT**: Windows'un eski sürümlerinde virüsten **koruma Microsoft Defender** yerine **Windows Defender Virüsten Koruma'yı** görebilirsiniz.
 
 5. **Yapılandırılmış korumalı klasörler'e** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. **Göster'i** seçin ve korumak istediğiniz her klasörü belirtin.
 
@@ -132,7 +134,7 @@ Bir uygulama eklediğinizde, uygulamanın konumunu belirtmeniz gerekir. Korumal�
 
 2. **Grup İlkesi Yönetimi Düzenleyicisi**'nde **Bilgisayar yapılandırması**'na gidin ve **Yönetim şablonları**'nı seçin.
 
-3. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** \> **Windows Defender Exploit Guard** \> **Denetimli klasör erişimi** olarak genişletin.
+3. Ağacı **Windows bileşenlerine** \> **genişletin Microsoft Defender Virüsten Koruma** \> **Windows Defender Exploit Guard** \> **Denetimli klasör erişimi**.
 
 4. **İzin verilen uygulamaları yapılandır** ayarına çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. **Göster'i** seçin ve her uygulamayı girin.
 

@@ -16,16 +16,18 @@ manager: dansimp
 ms.subservice: mde
 audience: ITPro
 ms.topic: how-to
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: ffe94273778a5920d8d4bfcd1dfe7ca310690909
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 9a3b0a5a49dfea74f0545ecf85a903b7d2f0b1f3
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687581"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232836"
 ---
-# <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'Endpoint Manager yapılandırmak ve yönetmek için Microsoft Endpoint Manager kullanma
+# <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'Microsoft Defender yapılandırmak ve yönetmek için Microsoft Endpoint Manager kullanma
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,9 +41,9 @@ ms.locfileid: "67687581"
 **Platform**
 - Windows
 
-Microsoft Defender Virüsten Koruma taramalarını yapılandırmak için Microsoft [Endpoint Manager](/mem/endpoint-manager-overview) kullanabilirsiniz. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) ve [Configuration Manager](/mem/configmgr/core/understand/introduction) artık Endpoint Manager bir parçasıdır.
+Microsoft Defender Virüsten Koruma taramalarını yapılandırmak için [Microsoft](/mem/endpoint-manager-overview) Endpoint Manager kullanabilirsiniz. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) ve [Configuration Manager](/mem/configmgr/core/understand/introduction) artık Endpoint Manager bir parçasıdır.
 
-## <a name="configure-microsoft-defender-antivirus-scans-in-endpoint-manager"></a>Endpoint Manager'de Microsoft Defender Virüsten Koruma taramalarını yapılandırma
+## <a name="configure-microsoft-defender-antivirus-scans-in-endpoint-manager"></a>Endpoint Manager'da Microsoft Defender Virüsten Koruma taramalarını yapılandırma
 
 1. Microsoft Endpoint Manager yönetim merkezine ()[https://endpoint.microsoft.com](https://endpoint.microsoft.com) gidin ve oturum açın.
 
@@ -78,4 +80,4 @@ Microsoft Defender Virüsten Koruma taramalarını yapılandırmak için Microso
 ## <a name="related-articles"></a>İlgili makaleler
 
 - [Yönetim ve yapılandırma araçları için başvuru makaleleri](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Windows 10'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10'de virüsten koruma Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

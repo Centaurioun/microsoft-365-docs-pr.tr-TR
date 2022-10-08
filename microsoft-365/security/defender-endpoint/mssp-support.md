@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 07853624cdece71f4a21372304b0de5e7bde963e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1529143acbf68e38a16d0fe7491ce98513a867cd
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694071"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225096"
 ---
 # <a name="managed-security-service-provider-partnership-opportunities"></a>Yönetilen güvenlik hizmeti sağlayıcısı iş ortaklığı fırsatları
 

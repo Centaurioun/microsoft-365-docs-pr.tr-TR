@@ -12,16 +12,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 7d89204e04d7ec8a2534118259a8a45a1782d05c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ca15e36c0de968a2afddb14a5c8c74cffe969953
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688977"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232506"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Sertifikaları temel alan göstergeler oluşturma
 
@@ -43,7 +45,7 @@ Sertifikalar için göstergeler oluşturabilirsiniz. Bazı yaygın kullanım ör
 
 Sertifikalar için göstergeler oluşturmadan önce aşağıdaki gereksinimleri anlamak önemlidir:
 
-- Kuruluşunuz Microsoft Defender Virüsten Koruma kullanıyorsa ve Bulut tabanlı koruma etkinleştirildiyse bu özellik kullanılabilir. Daha fazla bilgi için bkz. [Bulut tabanlı korumayı yönetme](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Kuruluşunuz virüsten koruma Microsoft Defender kullanıyorsa ve Bulut tabanlı koruma etkinleştirildiğinde bu özellik kullanılabilir. Daha fazla bilgi için bkz. [Bulut tabanlı korumayı yönetme](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 - Kötü amaçlı yazılımdan koruma istemcisi sürümü 4.18.1901.x veya üzeri olmalıdır.
 - Windows 10, sürüm 1703 veya üzeri, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 ve Windows Server 2022 üzerindeki makinelerde desteklenir.
     

@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 55bb0d81199755dc92899a477ce165388704ffce
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 7b492fe2b54da777c2aec3780ed02cfbf3aeb521
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799240"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233254"
 ---
 # <a name="create-and-manage-device-groups"></a>Cihaz grupları oluşturun ve yönetin
 
@@ -32,6 +34,9 @@ ms.locfileid: "67799240"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Uç Nokta için Microsoft Defender'ı deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> [!NOTE]
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
 
 Kurumsal bir senaryoda, güvenlik işlemi ekiplerine genellikle bir cihaz kümesi atanır. Bu cihazlar, etki alanları, bilgisayar adları veya belirlenen etiketler gibi bir dizi öznitelik temelinde birlikte gruplandırılır.
 

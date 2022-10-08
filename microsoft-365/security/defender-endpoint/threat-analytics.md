@@ -15,16 +15,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
 - m365initiative-defender-endpoint
+- tier1
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: c043203c18e61a0a1c85b6bc15ab1a8944bb1a5b
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: f5bf80e4bc58b089ebfadfadef5bceb64c557ddf
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576461"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225514"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Tehdit analizi aracılığıyla yeni ortaya çıkan tehditleri izleme ve yanıtlama
 
@@ -111,7 +112,7 @@ Ayrıntılı uzman yazma işlemini okumak için **Analist raporu** bölümüne g
 **Risk Azaltmalar** bölümünde, tehditlere karşı kurumsal dayanıklılığınızı artırmanıza yardımcı olabilecek belirli eyleme dönüştürülebilir önerilerin listesini gözden geçirin. İzlenen azaltmalar listesi şunları içerir:
 
 - **Güvenlik güncelleştirmeleri: Güvenlik** açıkları için güvenlik güncelleştirmelerinin veya düzeltme eklerinin dağıtımı
-- **Microsoft Defender Virüsten Koruma ayarları**
+- **virüsten koruma ayarlarını Microsoft Defender**
   - Güvenlik zekası sürümü
   - Bulut tabanlı koruma
   - İstenmeyebilecek uygulama (PUA) koruması

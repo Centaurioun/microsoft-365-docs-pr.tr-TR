@@ -6,23 +6,23 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 82f5b8ae244950759c57a5b3efc3206650019d8c
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8f60d1bd04b758e1ad01d392bb7b81f24bec882b
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688429"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232726"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Cihazları ekleyin ve Uç Nokta için Microsoft Defender işlevlerini yapılandırın
 
@@ -52,6 +52,8 @@ Uç Nokta için Defender izinleri yönetmek için iki yolu destekler:
 - **Temel izin yönetimi**: İzinleri tam erişim veya salt okunur olarak ayarlar. Azure Active Directory'de (Azure AD) genel yönetici veya güvenlik yöneticisi rollerine sahip kullanıcılar tam erişime sahiptir. Güvenlik okuyucusu rolü salt okunur erişime sahiptir ve makineleri/cihaz envanterini görüntüleme erişimi vermez.
 
 - **Rol tabanlı erişim denetimi (RBAC)**: Rolleri tanımlayarak, rollere Azure AD kullanıcı grupları atayarak ve kullanıcı gruplarına cihaz gruplarına erişim vererek ayrıntılı izinleri ayarlar. Daha fazla bilgi için. Bkz. [Rol tabanlı erişim denetimini kullanarak portal erişimini yönetme](rbac.md).
+    > [!NOTE]
+    > Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
 
 Yalnızca iş gerekçesi olan kullanıcıların Uç Nokta için Defender'a erişebildiğinden emin olmak için RBAC'yi kullanmanızı öneririz.
 
@@ -72,16 +74,16 @@ Aşağıdaki tabloda, eklemeniz gereken uç noktayı temel alan kullanılabilir 
 
 | Uç nokta     | Araç seçenekleri                       |
 |--------------|------------------------------------------|
-| **Windows İstemcisi**  |     [Mobil Cihaz Yönetimi / Microsoft Intune](configure-endpoints-mdm.md) <br> [Grup İlkesi](configure-endpoints-gp.md) <br> [Yerel betik (en fazla 10 cihaz)](configure-endpoints-script.md) <br>[VDI betikleri](configure-endpoints-vdi.md) <br> [Bulut için Microsoft Defender ile tümleştirme](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
-| **Windows Server:**  | [Microsoft Uç Noktası Yapılandırma Yöneticisi](configure-endpoints-sccm.md) <br>  [Grup İlkesi](configure-endpoints-gp.md) <br>  [VDI betikleri](configure-endpoints-vdi.md) <br> [Bulut için Microsoft Defender ile tümleştirme](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
+| **Windows İstemcisi**  |     [Mobil Cihaz Yönetimi / Microsoft Intune](configure-endpoints-mdm.md) <br> [Grup İlkesi](configure-endpoints-gp.md) <br> [Yerel betik (en fazla 10 cihaz)](configure-endpoints-script.md) <br>[VDI betikleri](configure-endpoints-vdi.md)  |
+| **Windows Server:**  | [Microsoft Uç Noktası Yapılandırma Yöneticisi](configure-endpoints-sccm.md) <br>  [Grup İlkesi](configure-endpoints-gp.md) <br>  [VDI betikleri](configure-endpoints-vdi.md) <br> [Windows sunucularını Uç Nokta için Microsoft Defender hizmetine ekleme](configure-server-endpoints.md)  |
 | **macOS**    | [Yerel betikler](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobil Cihaz Yönetimi](mac-install-with-other-mdm.md) |
-| **Linux Server** | [Yerel betik](linux-install-manually.md) <br> [Kukla](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Bulut için Microsoft Defender ile tümleştirme](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)     |
+| **Linux Server** | [Yerel betik](linux-install-manually.md) <br> [Kukla](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)   |
 | **iOS**      | [Microsoft Endpoint Manager](ios-install.md)           |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)            | 
 
 
 > [!NOTE]
-> Microsoft Endpoint Manager tarafından yönetilmeyen cihazlar için (Microsoft Intune veya Microsoft Endpoint Configuration Manager), Uç Nokta için Microsoft Defender için Güvenlik Yönetimi'ni kullanabilirsiniz  doğrudan Endpoint Manager'den Microsoft Defender için güvenlik yapılandırmaları almak için.
+> Microsoft Endpoint Manager (Microsoft Intune veya Microsoft Endpoint Configuration Manager) tarafından yönetilmeyen cihazlarda, güvenliği almak için Uç Nokta için Microsoft Defender için Güvenlik Yönetimi'ni kullanabilirsiniz doğrudan Endpoint Manager Microsoft Defender yapılandırmaları.
 
 Aşağıdaki tabloda, eklemeniz gereken uç noktayı temel alan kullanılabilir araçlar listelenir.
 
@@ -93,7 +95,7 @@ Cihazları ekledikten sonra hizmetin diğer özelliklerini yapılandırmanız ge
 | Yeteneği | Açıklama |
 |-|-|
 | [Microsoft Defender Güvenlik Açığı Yönetimi yapılandırma (MDVM)](tvm-prerequisites.md) | Defender Güvenlik Açığı Yönetimi, Uç Nokta için Microsoft Defender bir bileşenidir ve hem güvenlik yöneticilerine hem de güvenlik operasyonları ekiplerine aşağıdakiler gibi benzersiz bir değer sağlar: <br><br> - Uç nokta güvenlik açıklarıyla ilişkili gerçek zamanlı uç nokta algılama ve yanıt (EDR) içgörüleri. <br><br> - Olay araştırmaları sırasında çok değerli cihaz güvenlik açığı bağlamı. <br><br> - Microsoft Intune ve Microsoft System Center Configuration Manager aracılığıyla yerleşik düzeltme işlemleri.  |
-| [Yeni nesil korumayı (NGP) yapılandırma](configure-microsoft-defender-antivirus-features.md) | Microsoft Defender Virüsten Koruma, masaüstü bilgisayarlar, taşınabilir bilgisayarlar ve sunucular için yeni nesil koruma sağlayan yerleşik bir kötü amaçlı yazılımdan koruma çözümüdür. Microsoft Defender Virüsten Koruma şunları içerir:<br> <br>-Yeni ve yeni tehditlerin neredeyse anında algılanması ve engellenmesi için bulut tabanlı koruma. Bulut tabanlı koruma, makine öğrenmesi ve Akıllı Güvenlik Grafı ile birlikte Microsoft Defender Virüsten Koruma'yı destekleyen yeni nesil teknolojilerin bir parçasıdır.<br> <br> - Gelişmiş dosya ve işlem davranışı izleme ve diğer buluşsal yöntemler kullanılarak her zaman açık tarama ("gerçek zamanlı koruma" olarak da bilinir).<br><br> - Makine öğrenmesi, insan ve otomatik büyük veri analizi ve derinlemesine tehdit direnci araştırmalarına dayalı ayrılmış koruma güncelleştirmeleri. |
+| [Yeni nesil korumayı (NGP) yapılandırma](configure-microsoft-defender-antivirus-features.md) | Microsoft Defender Virüsten Koruma, masaüstleri, taşınabilir bilgisayarlar ve sunucular için yeni nesil koruma sağlayan yerleşik bir kötü amaçlı yazılımdan koruma çözümüdür. Microsoft Defender Virüsten Koruma şunları içerir:<br> <br>-Yeni ve yeni tehditlerin neredeyse anında algılanması ve engellenmesi için bulut tabanlı koruma. Bulut tabanlı koruma, makine öğrenmesi ve Akıllı Güvenlik Grafı ile birlikte Microsoft Defender Virüsten Koruma'yı destekleyen yeni nesil teknolojilerin bir parçasıdır.<br> <br> - Gelişmiş dosya ve işlem davranışı izleme ve diğer buluşsal yöntemler kullanılarak her zaman açık tarama ("gerçek zamanlı koruma" olarak da bilinir).<br><br> - Makine öğrenmesi, insan ve otomatik büyük veri analizi ve derinlemesine tehdit direnci araştırmalarına dayalı ayrılmış koruma güncelleştirmeleri. |
 | [Saldırı yüzeyini azaltmayı yapılandırma (ASR)](overview-attack-surface-reduction.md) | Uç Nokta için Microsoft Defender'daki saldırı yüzeyi azaltma özellikleri, kuruluştaki cihazların ve uygulamaların yeni ve yeni tehditlere karşı korunmasına yardımcı olur. |
 | [Otomatik Araştırma & Düzeltme (AIR) özelliklerini yapılandırma](configure-automated-investigations-remediation.md) | Uç Nokta için Microsoft Defender, tek tek araştırılması gereken uyarı hacmini önemli ölçüde azaltmak için Otomatik araştırma kullanır. Otomatik araştırma özelliği, uyarıları incelemek ve ihlalleri çözmek için anında düzeltme eylemi uygulamak için analistler tarafından kullanılan çeşitli inceleme algoritmalarından ve işlemlerden (playbook'lar gibi) yararlanır. Bu, uyarı hacmini önemli ölçüde azaltarak güvenlik operasyonları uzmanlarının daha karmaşık tehditlere ve diğer yüksek değerli girişimlere odaklanmasına olanak sağlar. |
 | [Microsoft Tehdit Uzmanları (MTE) özelliklerini yapılandırma](configure-microsoft-threat-experts.md) | Microsoft Tehdit Uzmanları, güvenlik operasyon merkezlerine (SOC) benzersiz ortamlarındaki kritik tehditlerin kaçırılmamasını sağlamaya yardımcı olmak için uzman düzeyinde izleme ve analiz sağlayan yönetilen bir avcılık hizmetidir.      |

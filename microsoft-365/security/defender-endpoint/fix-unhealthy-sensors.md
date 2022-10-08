@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.date: 11/23/2020
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d9df75e54807435351ff043da7f94c791e41d1a9
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 60be2727624dbe78a96d626d47c01401c5460b42
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704886"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209986"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de iyi durumda olmayan algılayıcıları düzeltme
 

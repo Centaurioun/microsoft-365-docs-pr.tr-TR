@@ -13,15 +13,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 0ffd8a986f3156fd0e406f0a87c3ae1d81c71dc3
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: 739e4464a7c7a85d3a3ea75130e4e0a0bade000d
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67521707"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224854"
 ---
 # <a name="troubleshoot-issues-for-microsoft-defender-for-endpoint-on-linux-rhel6"></a>Linux RHEL6'da Uç Nokta için Microsoft Defender sorunlarını giderme
 
@@ -35,7 +37,7 @@ ms.locfileid: "67521707"
 
 > Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Bu makale, Red Hat Linux 6 (RHEL 6) veya üzeri sürümlerde Linux için Microsoft Defender ile karşılaşabileceğiniz sorunları giderme konusunda rehberlik sağlar. 
+Bu makalede, Red Hat Linux 6 (RHEL 6) veya üzeri sürümlerde Linux için Microsoft Defender karşılaşabileceğiniz sorunları giderme konusunda rehberlik sağlanmaktadır. 
 
 Paket (mdatp_XXX.XX.XX.XX.x86_64.rpm) yüklendikten sonra, yüklemenin başarılı olduğunu doğrulamak için sağlanan eylemleri gerçekleştirin. 
 

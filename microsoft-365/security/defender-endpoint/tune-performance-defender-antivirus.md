@@ -12,16 +12,18 @@ author: jweston-1
 ms.author: v-jweston
 ms.date: 08/13/2022
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 6fbb5d6a3ef37b3dde4f453c4e1823e3030617ed
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 4d7dbcd7199d7318243a5c1733303d24b494c5c8
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67687669"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232594"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma için performans çözümleyicisi
 
@@ -71,7 +73,7 @@ Sistem olaylarını kaydetmeye başlamak için PowerShell'i yönetim modunda aç
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
 
-    where `-RecordTo` parametresi, izleme dosyasının kaydedildiği tam yol konumunu belirtir. Daha fazla cmdlet bilgisi için bkz. [Microsoft Defender Virüsten Koruma cmdlet'leri](/powershell/module/defender).
+    where `-RecordTo` parametresi, izleme dosyasının kaydedildiği tam yol konumunu belirtir. Daha fazla cmdlet bilgisi için bkz[. virüsten koruma cmdlet'leri Microsoft Defender](/powershell/module/defender).
 
 2. Performansı etkilediği düşünülen süreçler veya hizmetler varsa, ilgili görevleri gerçekleştirerek durumu yeniden oluşturun.
 
@@ -140,7 +142,7 @@ New-MpPerformanceRecording -RecordTo <String >
 
 #### <a name="description-new-mpperformancerecording"></a>Açıklama: New-MpPerformanceRecording
 
-Cmdlet, `New-MpPerformanceRecording` Microsoft Defender Virüsten Koruma taramalarının performans kaydını toplar. Bu performans kayıtları Microsoft-Antimalware-Engine ve NT çekirdek işlemi olaylarını içerir ve [Get-MpPerformanceReport](#get-mpperformancereport) cmdlet'i kullanılarak koleksiyondan sonra analiz edilebilir.
+cmdlet, `New-MpPerformanceRecording` Microsoft Defender Virüsten Koruma taramalarının performans kaydını toplar. Bu performans kayıtları Microsoft-Antimalware-Engine ve NT çekirdek işlemi olaylarını içerir ve [Get-MpPerformanceReport](#get-mpperformancereport) cmdlet'i kullanılarak koleksiyondan sonra analiz edilebilir.
 
 Bu `New-MpPerformanceRecording` cmdlet, Microsoft Defender Virüsten Koruma'nın performansında düşüşe neden olabilecek sorunlu dosyalar hakkında içgörü sağlar. Bu araç "OLDUĞU GIBI" sağlanır ve dışlamalarla ilgili öneriler sağlamak üzere tasarlanmamıştır. Dışlamalar uç noktalarınızdaki koruma düzeyini azaltabilir. Varsa dışlamalar dikkatle tanımlanmalıdır.
 
@@ -187,7 +189,7 @@ Yukarıdaki komut, -Seconds parametresi tarafından belirtilen saniye cinsinden 
 
 ##### <a name="-recordto"></a>-RecordTo
 
-Microsoft Defender Kötü Amaçlı Yazılımdan Koruma performans kaydının kaydedildiği konumu belirtir.
+Microsoft Defender Kötü amaçlı yazılımdan koruma performansı kaydının kaydedildiği konumu belirtir.
 
 ```yaml
 Type: String
@@ -223,7 +225,7 @@ Accept wildcard characters: False
 
 ### <a name="get-mpperformancereport"></a>Get-MpPerformanceReport
 
-Aşağıdaki bölümde Get-MpPerformanceReport PowerShell cmdlet'i açıklanmaktadır. Microsoft Defender Virüsten Koruma performans kaydını analiz eder ve raporlar.
+Aşağıdaki bölümde Get-MpPerformanceReport PowerShell cmdlet'i açıklanmaktadır. Microsoft Defender Virüsten Koruma performans kaydıyla ilgili analizler ve raporlar.
 
 #### <a name="syntax-get-mpperformancereport"></a>Söz dizimi: Get-MpPerformanceReport
 
@@ -279,7 +281,7 @@ Get-MpPerformanceReport    [-Path] <String>
 
 #### <a name="description-get-mpperformancereport"></a>Açıklama: Get-MpPerformanceReport
 
-Cmdlet, `Get-MpPerformanceReport` daha önce toplanan bir Microsoft Defender Virüsten Koruma performans kaydını ([New-MpPerformanceRecording](#new-mpperformancerecording)) analiz eder ve Microsoft Defender Virüsten Koruma taramaları üzerinde en yüksek etkiye neden olan dosya yollarını, dosya uzantılarını ve işlemleri bildirir.
+Cmdlet, `Get-MpPerformanceReport` daha önce toplanan Microsoft Defender Virüsten Koruma performans kaydını ([New-MpPerformanceRecording](#new-mpperformancerecording)) analiz eder ve Microsoft Defender Virüsten Koruma taramalarında en yüksek etkiye neden olan dosya yollarını, dosya uzantılarını ve işlemleri raporlar.
 
 Performans çözümleyicisi, Microsoft Defender Virüsten Koruma'nın performansında düşüşe neden olabilecek sorunlu dosyalar hakkında içgörü sağlar. Bu araç "OLDUĞU GIBI" sağlanır ve dışlamalarla ilgili öneriler sağlamak üzere tasarlanmamıştır. Dışlamalar uç noktalarınızdaki koruma düzeyini azaltabilir. Varsa dışlamalar dikkatle tanımlanmalıdır.
 
@@ -376,7 +378,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-##### <a name="-path"></a>-Yol
+##### <a name="-path"></a>-Yolu
 
 Bir veya daha fazla konumun yollarını belirtir.
 

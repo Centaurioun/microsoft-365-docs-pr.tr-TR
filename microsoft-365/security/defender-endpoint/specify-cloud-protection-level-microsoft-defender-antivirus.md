@@ -15,14 +15,16 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 0da317f8714e0057191d93067a6d3a0ae0aac953
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3da72ec820ca7693d6f62daff9d36fd945f81c7a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67681505"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224986"
 ---
 # <a name="specify-the-cloud-protection-level"></a>Bulut koruma düzeyini belirleyin
 

@@ -16,6 +16,8 @@ ms.collection:
 - M365-subscription-management
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -25,12 +27,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Şirketinizi cihazlara, e-postalara, verilere ve iletişimlere yönelik siber güvenlik tehditlerinden koruyabilmeniz için Microsoft 365 İş Ekstra alın.
-ms.openlocfilehash: 35afcc46d10f83b030db5999012a9052dd204435
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: c0d0f3c0b87392426238aefc4e55e8f92786b119
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67738060"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097566"
 ---
 # <a name="how-to-sign-up-for-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra için kaydolma
 

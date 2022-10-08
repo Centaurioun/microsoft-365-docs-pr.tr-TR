@@ -1,14 +1,15 @@
 ---
 title: 'proje etkinliğini Microsoft 365 yönetim merkezi '
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Project etkinlik raporunu almayı ve kuruluşunuzdaki Project etkinliğiyle ilgili içgörüler kazanmayı öğrenin.
-ms.openlocfilehash: 202f9e0655f2d96e6897f2803a43264741343381
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 4493b67cb11c784a6d84dc1cf0fdb260684400dc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66861964"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186161"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---project-activity"></a>Yönetim merkezinde Microsoft 365 Raporları - Proje etkinliği
 
@@ -41,7 +42,7 @@ Microsoft 365 Raporları panosu, kuruluşunuzdaki ürünler genelindeki etkinli�
 
 Ortamınızdaki Project etkinliğini ve kullanımını görmek için bu raporu kullanabilirsiniz. Bu raporda dört özet grafik görürsünüz:  <br/>![Microsoft 365 raporları - Proje etkinliği.](../../media/project-activity.png)
 
-- **Etkin kullanıcılar** - Size her gün zaman içindeki günlük etkin kullanıcıları gösterir. Şu anda bu yalnızca Web için Project ve Project Online masaüstü istemcisini içerir.
+- **Etkin kullanıcılar** - Size her gün zaman içindeki günlük etkin kullanıcıları gösterir. Şu anda bu yalnızca Web için Project ve Project Online masaüstü istemcisi içerir.
 - **Etkin kullanıcılar (istemciye göre)** - Zaman içinde her gün, istemciye göre ayrılmış günlük etkin kullanıcıları gösterir (Web için Project ve Project Online masaüstü istemcisi).
 - **Proje Etkinliği** - Project'in her istemci için zaman içindeki günlük oturum sayısını gösterir (Web için Project ve Project Online masaüstü istemcisi).
 - **Görev etkinliği** - Web için Project'te zaman içinde oluşturulan veya düzenlenen görevlerin günlük sayısını gösterir
@@ -67,11 +68,11 @@ Aşağıda, kullanıcı etkinliği tablosundaki her ölçümün tanımları yer 
 |Öğe|Açıklama|
 |:-----|:-----|
 |**Metrik**|**Tanım**|
-|Kullanıcı adı|Kullanıcının asıl adı.|
+|Kullanıcı Adı|Kullanıcının asıl adı.|
 |Görünen ad|Kullanıcının tam adı.|
 |Son etkinlik tarihi|Özet raporlardaki etkinlikler de dahil olmak üzere, bu satırdaki kullanıcının Project'te etkinliği olduğu en son tarih.|
-|Ziyaret edilen projeler (Masaüstü)|Sayfanın sağ üst kısmında seçilen zaman aralığı boyunca Project Online masaüstü istemcisinde kullanıcı tarafından açılan proje sayısı.|
+|Ziyaret edilen projeler (Masaüstü)|Sayfanın sağ üst kısmında seçilen zaman aralığı boyunca Project Online masaüstü istemcisi kullanıcı tarafından açılan proje sayısı.|
 |Ziyaret edilen projeler (Web)| Sayfanın sağ üst kısmında seçilen zaman aralığı boyunca Web için Project'te kullanıcı tarafından oluşturulan görev sayısı.|
 |Oluşturulan görevler (Web)|Sayfanın sağ üst kısmında seçilen zaman aralığı boyunca Web için Project'te kullanıcı tarafından oluşturulan görev sayısı.|
 |Düzenlenen görevler (Web)|Sayfanın sağ üst kısmında seçilen zaman aralığı boyunca Web için Project'te kullanıcı tarafından düzenlenen görev sayısı.|
-|Diğer|Bu değer, kullanıcının sayfanın sağ üst kısmında seçilen zaman aralığında Project Online masaüstü istemcisinde veya Web için Project'te (diğer sütunlar tarafından kapsanmayan) bir etkinlik gerçekleştirmiş olması durumunda geçerlidir. Kullanıcı aksi takdirde, bu değer false olur.|
+|Diğer|Bu değer, kullanıcının sayfanın sağ üst kısmında seçilen zaman aralığındaki Project Online masaüstü istemcisi veya Web için Project'te (diğer sütunlar tarafından kapsanmayan) bir etkinlik gerçekleştirmiş olması durumunda geçerlidir. Kullanıcı aksi takdirde, bu değer false olur.|

@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365_Setup
@@ -30,12 +31,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: Yeni bir onmicrosoft.com etki alanı oluşturmayı ve yeni geri dönüş etki alanınız yapmayı öğrenin.
-ms.openlocfilehash: 01e22eab6cddf4f19b63dce36056ac4a6127e500
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: b67e8b9f8495e29a218d2781c340e09459013f56
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661947"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186183"
 ---
 # <a name="add-and-replace-your-onmicrosoftcom-fallback-domain-in-microsoft-365"></a>Microsoft 365'te onmicrosoft.com geri dönüş etki alanınızı ekleme ve değiştirme
 

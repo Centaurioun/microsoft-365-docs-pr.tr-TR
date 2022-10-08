@@ -13,22 +13,23 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-migratetomdatp
 - highpri
+- tier1
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 04/01/2022
+ms.date: 09/22/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
-ms.openlocfilehash: 63e3e56a9ddcf7645a37b791676a086b8ef2d592
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 3fa3691d20688796b98c506947a0b8c77f569e7c
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797910"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225338"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Uç Nokta için Microsoft Defender Geçiş - 3. Aşama: Ekleme
 
@@ -65,15 +66,12 @@ ms.locfileid: "67797910"
 
 ### <a name="onboarding-methods"></a>Ekleme yöntemleri
 
-> [!IMPORTANT]
-> Bulut için Microsoft Defender kullanıyorsanız bkz. [Bulut için Microsoft Defender ile tümleştirme](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud).
-
 Dağıtım yöntemleri, işletim sistemine ve tercih edilen yöntemlere bağlı olarak değişir. Aşağıdaki tabloda Uç Nokta için Defender'a eklemeye yardımcı olacak kaynaklar listeleniyor:
 
 |İşletim sistemleri  |Yöntemler  |
 |---------|---------|
 |Windows 10 veya üzeri<br/><br/>Windows Server 2019 veya üzeri<br/><br/>Windows Server, sürüm 1803 veya üzeri<br/><br/>Windows Server 2012 R2 ve 2016<sup>[[1](#fn1)]<sup>  |   [Yerel betik (en fazla 10 cihaz)](configure-endpoints-script.md)<br><br/>   [Grup İlkesi](configure-endpoints-gp.md)<br/><br/>[Microsoft Uç Noktası Yapılandırma Yöneticisi](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Mobile Cihaz Yönetimi (Intune)](configure-endpoints-mdm.md)<br>    [VDI betikleri](configure-endpoints-vdi.md) <br><br> **NOT**: Yerel betik kavram kanıtı için uygundur ancak üretim dağıtımı için kullanılmamalıdır. Üretim dağıtımı için grup ilkesi, Microsoft Endpoint Configuration Manager veya Intune kullanmanızı öneririz. |
-|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)  veya [Bulut için Microsoft Defender](/azure/security-center/security-center-wdatp) <br><br> **NOT**: Microsoft Monitoring Agent artık Azure Log Analytics aracısıdır. Daha fazla bilgi için bkz [. Log Analytics aracısına genel bakış](/azure/azure-monitor/platform/log-analytics-agent).  |
+|Windows Server 2008 R2 SP1 | [Bulut için](/azure/security-center/security-center-wdatp) [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) veya Microsoft Defender <br><br> **NOT**: Microsoft Monitoring Agent artık Azure Log Analytics aracısıdır. Daha fazla bilgi için bkz [. Log Analytics aracısına genel bakış](/azure/azure-monitor/platform/log-analytics-agent).  |
 |Windows 8.1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **NOT**: Microsoft Monitoring Agent artık Azure Log Analytics aracısıdır. Daha fazla bilgi için bkz [. Log Analytics aracısına genel bakış](/azure/azure-monitor/platform/log-analytics-agent).  
 | macOS (bkz [. Sistem gereksinimleri](microsoft-defender-endpoint-mac.md) | [Yerel betik](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[Mobil Cihaz Yönetimi](mac-install-with-other-mdm.md)   |
 | Linux (bkz [. Sistem gereksinimleri](microsoft-defender-endpoint-linux.md#system-requirements)) |  [Yerel betik](linux-install-manually.md) <br><br/> [Kukla](linux-install-with-puppet.md) <br><br/> [Ansible](linux-install-with-ansible.md)|  
@@ -94,18 +92,18 @@ Eklenen cihazlarınızın Uç Nokta için Defender'a düzgün şekilde bağland�
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>Microsoft Defender Virüsten Koruma'nın uç noktalarınızda pasif modda olduğunu onaylayın
 
-Uç noktalarınızın Uç Nokta için Defender'a eklendiğine göre, sonraki adımınız Microsoft Defender Virüsten Koruma'nın pasif modda çalıştığından emin olmaktır. Aşağıdaki tabloda açıklandığı gibi çeşitli yöntemlerden birini kullanabilirsiniz:
+Uç noktalarınızın Uç Nokta için Defender'a eklendiğine göre, bir sonraki adımınız virüsten koruma Microsoft Defender pasif modda çalıştığından emin olmaktır. Aşağıdaki tabloda açıklandığı gibi çeşitli yöntemlerden birini kullanabilirsiniz:
 
 |Yöntem|Yapılması gerekenler|
 |---|---|
 |Komut|1. Bir Windows cihazında Komut İstemi'ni açın.<br/><br/>2. yazın `sc query windefend`ve Enter tuşuna basın.<br/><br/>3. Microsoft Defender Virüsten Koruma'nın pasif modda çalıştığını onaylamak için sonuçları gözden geçirin.|
 |PowerShell|1. Bir Windows cihazında Windows PowerShell yönetici olarak açın.<br/><br/>2. Aşağıdaki PowerShell cmdlet'ini çalıştırın: `Get-MpComputerStatus|select AMRunningMode`. <br/><br/>3. Sonuçları gözden geçirin. **Pasif modu** görmeniz gerekir.|
-|Windows Güvenliği uygulaması|1. Windows cihazında Windows Güvenliği uygulamasını açın.<br/><br/>2. **Virüs & tehdit koruması'ı** seçin.<br/><br/>3. **Beni kim koruyor?** altında **Sağlayıcıları yönet'i** seçin.<br/><br/>4. **Güvenlik sağlayıcıları** sayfasındaki **Virüsten Koruma'nın** altında **Microsoft Defender Virüsten Koruma'nın açık olup olmadığını** denetleyin.|
+|Windows Güvenliği uygulaması|1. Windows cihazında Windows Güvenliği uygulamasını açın.<br/><br/>2. **Virüs & tehdit koruması'ı** seçin.<br/><br/>3. **Beni kim koruyor?** altında **Sağlayıcıları yönet'i** seçin.<br/><br/>4. **Güvenlik sağlayıcıları** sayfasındaki **Virüsten Koruma'nın** altında **Virüsten Koruma'nın açık Microsoft Defender** bakın.|
 |Görev Yöneticisi|1. Bir Windows cihazında Görev Yöneticisi uygulamasını açın.<br/><br/>2. **Ayrıntılar** sekmesini seçin. Listede **MsMpEng.exe** arayın.|
 
 > [!NOTE]
-> Bazı Windows sürümlerinde *Microsoft Defender Virüsten Koruma* yerine *Windows Defender Virüsten Koruma* görebilirsiniz.
-> Pasif mod ve etkin mod hakkında daha fazla bilgi edinmek için bkz. [Microsoft Defender Virüsten Koruma durumları hakkında daha fazla ayrıntı](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
+> Windows'un bazı sürümlerinde *virüsten koruma* Microsoft Defender yerine *Windows Defender Virüsten Koruma* görebilirsiniz.
+> Pasif mod ve etkin mod hakkında daha fazla bilgi edinmek için bkz[. Microsoft Defender Virüsten Koruma durumları hakkında daha fazla ayrıntı](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
 
 ### <a name="set-microsoft-defender-antivirus-on-windows-server-to-passive-mode-manually"></a>Windows Server'da Microsoft Defender Virüsten Koruma'yı pasif moda el ile ayarlama
 
@@ -126,13 +124,13 @@ Microsoft Defender Virüsten Koruma'yı Windows Server, sürüm 1803 veya üzeri
 > - [Yerel grup ilkesi Nesnesi aracı](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
 > - [Configuration Manager'da bir paket](/mem/configmgr/apps/deploy-use/packages-and-programs)
 
-### <a name="start-microsoft-defender-antivirus-on-windows-server-2016"></a>Windows Server 2016'de Microsoft Defender Virüsten Koruma'ya başlama
+### <a name="start-microsoft-defender-antivirus-on-windows-server-2016"></a>Windows Server 2016'da Virüsten Koruma'Microsoft Defender başlatma
 
-Windows Server 2016 kullanıyorsanız Microsoft Defender Virüsten Koruma'yı el ile başlatmanız gerekebilir. Bu görevi, cihazdaki PowerShell cmdlet'ini `mpcmdrun.exe -wdenable` kullanarak gerçekleştirebilirsiniz.
+Windows Server 2016 kullanıyorsanız Virüsten Koruma'yı el ile Microsoft Defender başlatmanız gerekebilir. Bu görevi, cihazdaki PowerShell cmdlet'ini `mpcmdrun.exe -wdenable` kullanarak gerçekleştirebilirsiniz.
 
 ## <a name="get-updates-for-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma güncelleştirmelerini alma
 
-Microsoft Defender Virüsten Koruma'nın güncel tutulması, Microsoft Defender Virüsten Koruma pasif modda çalışıyor olsa bile cihazlarınızın yeni kötü amaçlı yazılımlara ve saldırı tekniklerine karşı korunmak için gereken en son teknolojiye ve özelliklere sahip olduğundan emin olmak açısından kritik öneme sahiptir. (Bkz [. Microsoft Defender Virüsten Koruma uyumluluğu](microsoft-defender-antivirus-compatibility.md).)
+Microsoft Defender Virüsten Koruma'yı güncel tutmak, Microsoft Defender Virüsten Koruma pasif modda çalışıyor olsa bile cihazlarınızın yeni kötü amaçlı yazılımlara ve saldırı tekniklerine karşı korunmak için gereken en son teknolojiye ve özelliklere sahip olduğundan emin olmak açısından kritik öneme sahiptir. (Bkz[. virüsten koruma uyumluluğu Microsoft Defender](microsoft-defender-antivirus-compatibility.md).)
 
 Microsoft Defender Virüsten Koruma'nın güncel tutulmasıyla ilgili iki tür güncelleştirme vardır:
 
@@ -140,7 +138,7 @@ Microsoft Defender Virüsten Koruma'nın güncel tutulmasıyla ilgili iki tür g
 
 - Ürün güncelleştirmeleri
 
-Güncelleştirmelerinizi almak için [Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama](manage-updates-baselines-microsoft-defender-antivirus.md) makalesindeki yönergeleri izleyin.
+Güncelleştirmelerinizi almak için [Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md) yönergeleri izleyin.
 
 ## <a name="uninstall-your-non-microsoft-solution"></a>Microsoft dışı çözümünüzü kaldırma
 
@@ -153,7 +151,7 @@ Bu noktada aşağıdakilere sahipseniz:
 Sonraki adımınız Microsoft dışı virüsten koruma, kötü amaçlı yazılımdan koruma ve uç nokta koruma çözümünüzü kaldırmaktır. Microsoft dışı çözümünüzü kaldırdığınızda, Microsoft Defender Virüsten Koruma pasif moddan etkin moda geçer. Çoğu durumda, bu otomatik olarak gerçekleşir. 
 
 > [!IMPORTANT]
-> Herhangi bir nedenle, Microsoft dışı virüsten koruma/kötü amaçlı yazılımdan koruma çözümünüzü kaldırdıktan sonra Microsoft Defender Virüsten Koruma etkin moda geçmezse bkz. [Microsoft Defender Virüsten Koruma pasif modda takılı kalmış gibi görünüyor](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode).
+> Herhangi bir nedenle, Microsoft dışı virüsten koruma/kötü amaçlı yazılımdan koruma çözümünüzü kaldırdıktan sonra virüsten koruma Microsoft Defender etkin moda geçmiyorsa bkz[. Microsoft Defender Virüsten Koruma pasif modda takılı kalmış gibi görünüyor](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode).
 
 Microsoft dışı çözümünüzü kaldırma konusunda yardım almak için teknik destek ekibine başvurun.
 

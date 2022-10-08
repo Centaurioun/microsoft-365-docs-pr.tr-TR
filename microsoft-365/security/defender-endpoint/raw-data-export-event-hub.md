@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 7e3466e5a7ba8a5a8c0a5e2041d2022ffd9ce3ce
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 396ebb62e426a1e1ab9207fcc493ebf3d5d0c760
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686801"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232924"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Gelişmiş Tehdit Avcılığı olaylarını Azure Event Hubs akışı yapmak için Uç Nokta için Microsoft Defender yapılandırma
 
@@ -82,6 +84,8 @@ ms.locfileid: "67686801"
 - Uç Nokta için Microsoft Defender olaylarının şeması hakkında daha fazla bilgi için bkz. [Gelişmiş Avcılık'a genel bakış](advanced-hunting-overview.md).
 
 - Gelişmiş Avcılık'ta **DeviceInfo** tablosunda, cihazın grubunu içeren **MachineGroup** adlı bir sütun bulunur. Burada her etkinlik bu sütunla da donatılacaktır. Daha fazla bilgi için bkz [. Cihaz Grupları](machine-groups.md) .
+    > [!NOTE]
+    > Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
 
 ## <a name="data-types-mapping"></a>Veri türleri eşlemesi
 

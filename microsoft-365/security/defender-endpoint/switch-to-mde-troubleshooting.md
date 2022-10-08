@@ -13,19 +13,21 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365solution-scenario
-- M365-security-compliance
+- m365-security
+- highpri
+- tier1
 ms.topic: conceptual
 ms.custom: migrationguides
 ms.date: 05/20/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 1a35027568613fcd3617dca2c279d8a0678aea2a
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 00731fcb9837a025cfc5f9387ea769d55f9b0290
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699872"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225316"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender geçiş yaparken karşılaşılan sorunları giderme
 
@@ -38,7 +40,7 @@ Bu makalede, Microsoft dışı uç nokta koruma çözümünden Uç Nokta için M
 
 ## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>Microsoft Defender Virüsten Koruma Windows Server'da kaldırılıyor
 
-Uç Nokta için Defender'a geçiş yaptığınızda, etkin modda Microsoft dışı virüsten koruma/kötü amaçlı yazılımdan koruma ile başlarsınız. Kurulum işleminin bir parçası olarak, Microsoft Defender Virüsten Koruma'yı pasif modda yapılandıracaksınız. Bazen, Microsoft dışı virüsten koruma/kötü amaçlı yazılımdan koruma çözümünüz Microsoft Defender Virüsten Koruma'nın Windows Server'da çalışmasını engelleyebilir. Aslında, Microsoft Defender Virüsten Koruma Windows Server'dan kaldırılmış gibi görünebilir.
+Uç Nokta için Defender'a geçiş yaptığınızda, etkin modda Microsoft dışı virüsten koruma/kötü amaçlı yazılımdan koruma ile başlarsınız. Kurulum işleminin bir parçası olarak, Microsoft Defender Virüsten Koruma'yı pasif modda yapılandıracaksınız. Bazen Microsoft dışı virüsten koruma/kötü amaçlı yazılımdan koruma çözümünüz Microsoft Defender Virüsten Koruma'nın Windows Server'da çalışmasını engelleyebilir. Aslında, Microsoft Defender Virüsten Koruma Windows Server'dan kaldırılmış gibi görünebilir.
 
 Bu sorunu çözmek için aşağıdaki adımları uygulayın:
 
@@ -61,7 +63,7 @@ Uç Nokta için Defender'a yönelik belirli dışlamalar, mevcut Microsoft dış
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-manually"></a>Microsoft Defender Virüsten Koruma'yı pasif moda el ile ayarlama
 
-Windows Server 2019, Windows Server, sürüm 1803 veya üzeri, Windows Server 2016 veya Windows Server 2012 R2'de Microsoft Defender Virüsten Koruma'yı pasif moda el ile ayarlamanız gerekir. Bu eylem, bir sunucuda birden çok virüsten koruma ürününün yüklü olmasından kaynaklanan sorunları önlemeye yardımcı olur. PowerShell, grup ilkesi veya bir kayıt defteri anahtarı kullanarak Microsoft Defender Virüsten Koruma'yı pasif moda ayarlayabilirsiniz.
+Windows Server 2019, Windows Server, sürüm 1803 veya üzeri, Windows Server 2016 veya Windows Server 2012 R2'de, Microsoft Defender Virüsten Koruma'yı pasif moda el ile ayarlamanız gerekir. Bu eylem, bir sunucuda birden çok virüsten koruma ürününün yüklü olmasından kaynaklanan sorunları önlemeye yardımcı olur. Microsoft Defender Virüsten Koruma'yı PowerShell, grup ilkesi veya kayıt defteri anahtarı kullanarak pasif moda ayarlayabilirsiniz.
 
 Aşağıdaki kayıt defteri anahtarını ayarlayarak Microsoft Defender Virüsten Koruma'yı pasif moda ayarlayabilirsiniz:
 
@@ -76,11 +78,11 @@ Değer: `1`
 > [!NOTE]
 > Pasif modun Windows Server 2016 ve Windows Server 2012 R2 çalıştıran uç noktalarda çalışması için, Bu uç noktaların [Windows sunucularını ekleme](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) yönergeleri kullanılarak eklenmesi gerekir.
 
-Daha fazla bilgi için bkz. [Windows'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-windows.md).
+Daha fazla bilgi için bkz. [Windows'da virüsten koruma Microsoft Defender](microsoft-defender-antivirus-windows.md).
 
-## <a name="microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode"></a>Microsoft Defender Virüsten Koruma pasif modda takılı kalmış gibi görünüyor
+## <a name="microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode"></a>Microsoft Defender Virüsten Koruma pasif modda takılmış gibi görünüyor
 
-Microsoft Defender Virüsten Koruma pasif modda takılı kalırsa, şu adımları izleyerek el ile etkin moda ayarlayın:
+Microsoft Defender Virüsten Koruma pasif modda takılırsa, şu adımları izleyerek el ile etkin moda ayarlayın:
 
 1. Windows cihazınızda, Kayıt Defteri Düzenleyicisi'ni yönetici olarak açın.
 
@@ -91,11 +93,11 @@ Microsoft Defender Virüsten Koruma pasif modda takılı kalırsa, şu adımlar�
 4. Cihazı yeniden başlatın.
 
 > [!IMPORTANT]
-> Bu yordamı takip ettikten sonra Microsoft Defender Virüsten Koruma'yı etkin moda ayarlama konusunda sorun yaşamaya devam ediyorsanız [desteğe başvurun](../../admin/get-help-support.md).
+> Bu yordamı takip ettikten sonra virüsten koruma Microsoft Defender etkin moda ayarlama konusunda sorun yaşamaya devam ediyorsanız [desteğe başvurun](../../admin/get-help-support.md).
 
-## <a name="i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016"></a>Windows Server 2016'de Microsoft Defender Virüsten Koruma'nın yeniden etkinleştirilmesinde sorun yaşıyorum
+## <a name="i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016"></a>Windows Server 2016'da Microsoft Defender Virüsten Koruma'nın yeniden etkinleştirilmesinde sorun yaşıyorum
 
-Windows Server 2016 üzerinde Microsoft dışı bir virüsten koruma/kötü amaçlı yazılımdan koruma çözümü kullanıyorsanız, mevcut çözümünüz Microsoft Defender Virüsten Koruma'nın devre dışı bırakılması veya kaldırılmasını gerektirmiş olabilir. Windows Server 2016'de Microsoft Defender Virüsten Koruma'yı yeniden etkinleştirmek için[ Kötü Amaçlı YazılımDan Koruma Command-Line Yardımcı Programı'nı](command-line-arguments-microsoft-defender-antivirus.md) kullanabilirsiniz.
+Windows Server 2016'da Microsoft dışı bir virüsten koruma/kötü amaçlı yazılımdan koruma çözümü kullanıyorsanız, mevcut çözümünüz virüsten koruma Microsoft Defender devre dışı bırakılması veya kaldırılmasını gerektirmiş olabilir. Microsoft Defender Virüsten Koruma'yı Windows Server 2016 yeniden etkinleştirmek için[ Kötü Amaçlı Yazılımdan Koruma Command-Line Yardımcı Programı'nı](command-line-arguments-microsoft-defender-antivirus.md) kullanabilirsiniz.
 
 1. Sunucuda yerel yönetici olarak Komut İstemi'ni açın.
 

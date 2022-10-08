@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 7b2253e356b4ed4fb905ec4637d3f976e6e38d21
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e1de2e186eea9fbe3b62e2e650f3419de43c6874
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686977"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232352"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Uç Nokta için Microsoft Defender ekleme sorunlarını giderme
 
@@ -91,7 +93,7 @@ Betik başarısız olursa ve olay bir hataysa, sorunu gidermenize yardımcı olm
 |`5`|Çıkarma verileri bulundu ancak silinemedi|Özellikle kayıt defterindeki izinleri denetleyin <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.|
 |`10`|Ekleme verileri kayıt defterine yazılamıyor|Özellikle kayıt defterindeki izinleri denetleyin <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`. <p> Betiğin yönetici olarak çalıştırıldığını doğrulayın.|
 |`15`|SENSE hizmeti başlatılamadı|Hizmet durumunu denetleyin (`sc query sense` komut). Ara durumda olmadığından emin olun (*'Pending_Stopped'*, *'Pending_Running'*) ve betiği yeniden çalıştırmayı deneyin (yönetici haklarıyla). <p> Cihaz Windows 10, sürüm 1607 çalıştırıyorsa ve komutunu `sc query sense` `START_PENDING`çalıştırıyorsa, cihazı yeniden başlatın. Cihazı yeniden başlatmak sorunu çözmezse KB4015217'ye yükseltin ve yeniden eklemeyi deneyin.|
-|`15`|SENSE hizmeti başlatılamadı|Hata iletisi şuysa: Sistem hatası 577 veya hata 1058 oluştu, Microsoft Defender Virüsten Koruma ELAM sürücüsünü etkinleştirmeniz gerekir. Yönergeler için microsoft [Defender Virüsten Koruma'nın bir ilke tarafından devre dışı bırakılmadığından emin olun](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) konusuna bakın.|
+|`15`|SENSE hizmeti başlatılamadı|Hata iletisi: Sistem hatası 577 veya hata 1058 oluştuysa, Microsoft Defender Virüsten Koruma ELAM sürücüsünü etkinleştirmeniz gerekir. Yönergeler için Microsoft Defender [Virüsten Koruma'nın bir ilke tarafından devre dışı bırakılmadığından emin olun](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) bölümüne bakın.|
 |`30`|Betik hizmetin çalışmaya başlamasını bekleyemedi|Hizmetin başlatılması daha fazla zaman alabilir veya başlatılmaya çalışılırken hatalarla karşılaşmış olabilir. SENSE ile ilgili olaylar ve hatalar hakkında daha fazla bilgi için bkz. [Olay görüntüleyicisini kullanarak olayları ve hataları gözden geçirme](event-error-codes.md).|
 |`35`|Betik gerekli ekleme durumu kayıt defteri değerini bulamadı|SENSE hizmeti ilk kez başlatıldığında kayıt defteri konumuna ekleme durumu yazar <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> Betik birkaç saniye sonra bulamıyor. El ile test edebilir ve orada olup olmadığını kontrol edebilirsiniz. SENSE ile ilgili olaylar ve hatalar hakkında daha fazla bilgi için bkz. [Olay görüntüleyicisini kullanarak olayları ve hataları gözden geçirme](event-error-codes.md).|
 |`40`|SENSE hizmeti ekleme durumu **1** olarak ayarlanmadı|SENSE hizmeti düzgün şekilde eklenmedi. SENSE ile ilgili olaylar ve hatalar hakkında daha fazla bilgi için bkz. [Olay görüntüleyicisini kullanarak olayları ve hataları gözden geçirme](event-error-codes.md).|
@@ -284,7 +286,7 @@ Doğrulama başarısız olursa ve ortamınız İnternet'e bağlanmak için ara s
 ### <a name="ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy"></a>Microsoft Defender Virüsten Koruma'nın bir ilke tarafından devre dışı bırakılmadığından emin olun
 
 > [!IMPORTANT]
-> Aşağıdakiler yalnızca Microsoft Defender Virüsten Koruma için Ağustos 2020 (sürüm 4.18.2007.8) güncelleştirmesini henüz **almamış** cihazlar için geçerlidir.
+> Aşağıdakiler yalnızca Microsoft Defender Virüsten Koruma için Ağustos 2020 (sürüm 4.18.2007.8) güncelleştirmesini **henüz** almamış cihazlar için geçerlidir.
 >
 > Güncelleştirme, Microsoft Defender Virüsten Koruma'nın sistem ilkesi aracılığıyla istemci cihazlarda kapatılmamasını sağlar.
 

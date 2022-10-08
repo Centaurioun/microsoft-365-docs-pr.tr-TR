@@ -14,19 +14,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-m365-defender
 - m365-initiative-defender-endpoint
+- tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a3bb9420773c61258a53a547ec9181c652a6e526
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 12e814a6013e67b7fdfd1de44d561262150c7401
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739850"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200527"
 ---
 # <a name="device-discovery-overview"></a>Cihaz keşfine genel bakış
 
@@ -105,7 +106,7 @@ Ot/IOT varlık envanterinizi bulmak, tanımlamak ve güvenliğini sağlamak içi
 
 - **Corelight**: Microsoft, Corelight ağ gereçlerinden veri almak için Corelight ile iş ortaklığı yaptı. Bu, diğer yönetilmeyen cihazlar veya dış ağlarla iletişim de dahil olmak üzere yönetilmeyen cihazların ağ etkinliklerine daha fazla görünürlük sağlayan Microsoft 365 Defender sağlar. Daha fazla bilgi için bkz [. Corelight veri tümleştirmesini etkinleştirme](corelight-integration.md).
 
-- **IoT için Microsoft Defender**: Bu tümleştirme, Uç Nokta için Microsoft Defender cihaz bulma özelliklerini IoT için Microsoft Defender'ın aracısız izleme özellikleriyle bir araya getirerek bir BT ağına bağlı kurumsal IoT cihazlarının (örneğin, İnternet Üzerinden Ses Protokolü (VoIP), yazıcıların ve akıllı TV'lerin güvenliğini sağlar. Daha fazla bilgi için bkz. [IoT için Microsoft Defender tümleştirmesini etkinleştirme](enable-microsoft-defender-for-iot-integration.md).
+- **IoT için Microsoft Defender**: Bu tümleştirme, Uç Nokta için Microsoft Defender cihaz bulma özelliklerini Microsoft Defender aracısız izleme özellikleriyle birleştirir  IoT için, bir BT ağına bağlı kurumsal IoT cihazlarının güvenliğini sağlamak için (örneğin, İnternet Üzerinden Ses Protokolü (VoIP), yazıcılar ve akıllı TV'ler). Daha fazla bilgi için bkz[. IoT tümleştirmesi için Microsoft Defender etkinleştirme](enable-microsoft-defender-for-iot-integration.md).
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>Bulunan cihazlarda güvenlik açığı değerlendirmesi
 

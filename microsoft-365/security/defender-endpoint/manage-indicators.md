@@ -12,16 +12,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 2cc23efadf5f8df7642ae0a64aebabda916ee6a2
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 248992f636434644ff79afba30b98d7198bdc119
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689929"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233012"
 ---
 # <a name="create-indicators"></a>Göstergeleri oluşturun
 
@@ -41,7 +43,7 @@ Risk (ICS) eşleştirmesinin göstergesi, her uç nokta koruma çözümünde ön
 
 Varlıkların algılanmasını, önlenmesini ve dışlanmasını tanımlayan göstergeler oluşturun. Gerçekleştirilecek eylemin yanı sıra eylemin ne zaman uygulanacağının süresini ve uygulanacağı cihaz grubunun kapsamını tanımlayabilirsiniz.
 
-Şu anda desteklenen kaynaklar Uç Nokta için Defender'ın bulut algılama altyapısı, otomatik araştırma ve düzeltme altyapısı ve uç nokta önleme altyapısıdır (Microsoft Defender Virüsten Koruma).
+Şu anda desteklenen kaynaklar Uç Nokta için Defender'ın bulut algılama altyapısı, otomatik araştırma ve düzeltme altyapısı ve uç nokta önleme altyapısıdır (virüsten koruma Microsoft Defender).
 
 ## <a name="cloud-detection-engine"></a>Bulut algılama altyapısı
 
@@ -49,7 +51,7 @@ Uç Nokta için Defender'ın bulut algılama altyapısı, toplanan verileri düz
 
 ## <a name="endpoint-prevention-engine"></a>Uç nokta önleme altyapısı
 
-Aynı gösterge listesi önleme aracısı tarafından kabul edilir. Başka bir deyişle, Microsoft Defender Virüsten Koruma yapılandırılmış birincil Virüsten Koruma ise, eşleşen göstergeler ayarlara göre değerlendirilir. Örneğin, eylem "Uyarı ve Engelle" ise, Microsoft Defender Virüsten Koruma dosya yürütmelerini engeller (engelleme ve düzeltme) ve buna karşılık gelen bir uyarı tetiklenir. Öte yandan, Eylem "İzin Ver" olarak ayarlanırsa, Microsoft Defender Virüsten Koruma dosyayı algılamaz veya çalıştırılmasını engellemez.
+Aynı gösterge listesi önleme aracısı tarafından kabul edilir. Yani, Microsoft Defender Virüsten Koruma, yapılandırılmış birincil Virüsten Koruma ise, eşleşen göstergeler ayarlara göre değerlendirilir. Örneğin, eylem "Uyarı ve Engelle" ise Microsoft Defender Virüsten Koruma dosya yürütmelerini engeller (engelleme ve düzeltme) ve buna karşılık gelen bir uyarı oluşturulur. Öte yandan, Eylem "İzin Ver" olarak ayarlanırsa, virüsten koruma Microsoft Defender dosyanın çalıştırılmasını algılamaz veya engellemez.
 
 ## <a name="automated-investigation-and-remediation-engine"></a>Otomatik araştırma ve düzeltme altyapısı
 
@@ -91,7 +93,7 @@ Aşağıdaki tabloda, gösterge türü (IoC) başına tam olarak hangi eylemleri
 IoC API şeması ve tehdit kimlikleri önceden tehdit avcılığı, IoC yanıt eylemlerinin yeniden adlandırılmasıyla uyumlu olacak şekilde güncelleştirildi. API düzeni değişiklikleri tüm IoC Türleri için geçerlidir.
 
 > [!Note]
-> Kiracı başına 15.000 gösterge sınırı vardır. Dosya ve sertifika göstergeleri [, Microsoft Defender Virüsten Koruma için tanımlanan dışlamaları](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) engellemez. Göstergeler, pasif moddayken Microsoft Defender Virüsten Koruma'da desteklenmez.
+> Kiracı başına 15.000 gösterge sınırı vardır. Dosya ve sertifika göstergeleri[, Microsoft Defender Virüsten Koruma için tanımlanan dışlamaları](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) engellemez. Göstergeler pasif moddayken Microsoft Defender Virüsten Koruma'da desteklenmez.
 >
 > Yeni göstergeleri (ICS) içeri aktarma biçimi, yeni güncelleştirilmiş eylemler ve uyarı ayarlarına göre değişti. İçeri aktarma panelinin en altında bulunan yeni CSV biçimini indirmenizi öneririz.
 

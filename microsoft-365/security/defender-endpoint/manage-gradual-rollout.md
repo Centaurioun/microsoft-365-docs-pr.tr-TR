@@ -14,17 +14,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 13361b7324afdc22324e0f114986a9baaea7da57
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 5557d4ad166b05cb38b83ec5f2bc6b84d81ee7d9
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739794"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233078"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Microsoft Defender güncelleştirmeleri için aşamalı dağıtım işlemini yönetme
 
@@ -49,7 +49,7 @@ Kritik koruma özellikleri sunmak ve saldırıları önlemek için istemci bile�
 Güncelleştirmeler, aşamalı bir sürüm işlemi kullanılarak aylık olarak yayımlanıyor. Bu işlem, ortaya çıkan etkiyi yakalamak ve daha büyük bir dağıtımdan önce hızlı bir şekilde ele almak için erken hata algılamayı etkinleştirmeye yardımcı olur.
 
 > [!NOTE]
-> Günlük güvenlik bilgileri güncelleştirmelerini denetleme hakkında daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma güncelleştirmelerini zamanlama](manage-protection-update-schedule-microsoft-defender-antivirus.md). Güncelleştirmeler, bulut tabanlı koruma uç nokta için mevcut olmasa bile yeni nesil korumanın yeni tehditlere karşı savunma sağlayabilmesini sağlar.
+> Günlük güvenlik bilgileri güncelleştirmelerini denetleme hakkında daha fazla bilgi için bkz[. Virüsten koruma güncelleştirmelerini zamanlama Microsoft Defender](manage-protection-update-schedule-microsoft-defender-antivirus.md). Güncelleştirmeler, bulut tabanlı koruma uç nokta için mevcut olmasa bile yeni nesil korumanın yeni tehditlere karşı savunma sağlayabilmesini sağlar.
 
 ## <a name="microsoft-gradual-rollout-model"></a>Microsoft aşamalı dağıtım modeli
 
@@ -70,13 +70,13 @@ Makineleriniz Windows Update Defender güncelleştirmelerini alıyorsa aşamalı
 
 Windows Server Update Services (WSUS) veya Microsoft Endpoint Configuration Manager (MECM) gibi güncelleştirmeleri alan makineler için, Uç Nokta için Microsoft Defender seçenekleri de dahil olmak üzere tüm Windows güncelleştirmeleri için daha fazla seçenek sağlanır.
 
-- Güncelleştirmelerin dağıtımını ve uygulamasını yönetmek için WSUS, MECM gibi bir çözümün nasıl kullanılacağı hakkında daha fazla bilgi için [Bkz. Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama - Windows güvenliği](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
+- Güncelleştirmelerin dağıtımını ve uygulamasını yönetmek için WSUS, MECM gibi bir çözümün nasıl kullanılacağı hakkında daha fazla bilgi için [bkz. Microsoft Defender Virüsten Koruma güncelleştirmelerini yönetme ve temelleri uygulama - Windows güvenliği](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
 
 ## <a name="update-channels-for-monthly-updates"></a>Aylık güncelleştirmeler için kanalları güncelleştirme
 
 Bir makinenin aylık altyapı ve platform güncelleştirmelerini aldığı tempoyu tanımlamak için bir makineyi güncelleştirme kanalına atayabilirsiniz.
 
-Güncelleştirmeleri yapılandırma hakkında daha fazla bilgi için bkz. [Microsoft Defender güncelleştirmeleri için özel bir aşamalı dağıtım işlemi oluşturma](configure-updates.md).
+Güncelleştirmeleri yapılandırma hakkında daha fazla bilgi için bkz. [Microsoft Defender güncelleştirmeler için özel bir aşamalı dağıtım işlemi oluşturma](configure-updates.md).
 
 Aşağıdaki güncelleştirme kanalları kullanılabilir:
 

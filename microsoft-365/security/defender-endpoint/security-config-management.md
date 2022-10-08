@@ -13,15 +13,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 6a4f74b0273f877d88e8e6700fa5aab7f6cc0d62
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 4d6c6200434ce4121be495c743b75c686fb54557
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67583682"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68225602"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Uç Nokta için Microsoft Defender yapılandırma ayarlarını farklı bir Microsoft Endpoint Manager cihazı ile yönetin
 
@@ -38,7 +40,7 @@ ms.locfileid: "67583682"
 > Uç nokta için Defender'i deneyimlemek ister misiniz? [Ücretsiz deneme için kaydolun.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 
-Uç Nokta için Microsoft Defender için Güvenlik Yönetimi, Bir Microsoft Endpoint Manager tarafından yönetilmeyen cihazların doğrudan Endpoint Manager Microsoft Defender güvenlik yapılandırmalarını almasına yönelik bir özelliktir.
+Uç Nokta için Microsoft Defender için Güvenlik Yönetimi, Microsoft Endpoint Manager tarafından yönetilmeyen cihazların Microsoft Defender için güvenlik yapılandırmalarını doğrudan Endpoint Manager alma özelliğidir.
 
 
 Önkoşullar, desteklenen platformlar ve daha fazlası dahil olmak üzere Güvenlik Yapılandırma Yönetimi hakkında daha fazla bilgi için bkz. [Microsoft Endpoint Manager ile cihazlarda Uç Nokta için Microsoft Defender yönetme](/mem/intune/protect/mde-security-integration).

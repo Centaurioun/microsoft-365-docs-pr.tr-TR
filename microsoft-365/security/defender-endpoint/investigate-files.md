@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.date: 04/24/2018
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 9d7d3bd2636ff877c36656cc5769cb655e48f53b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 04c8b9b2ac274d4d3f563241f13afd39a914d78e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688955"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232418"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Uç Nokta için Microsoft Defender uyarısıyla ilişkili bir dosyayı araştırma
 
@@ -69,7 +71,7 @@ Bu eylemler hakkında daha fazla bilgi için bkz. [Dosyada yanıt eylemi gerçek
 
 Dosya ayrıntıları, olay, kötü amaçlı yazılım algılama ve dosya yaygınlık kartları dosyayla ilgili çeşitli öznitelikleri görüntüler.
 
-Dosyanın MD5'i, Virüs Toplam algılama oranı, varsa Microsoft Defender Virüsten Koruma algılaması ve dosyanın yaygınlığı gibi ayrıntıları görürsünüz.
+Dosyanın MD5'i, Virüs Toplam algılama oranı ve varsa virüsten koruma algılama Microsoft Defender ve dosyanın yaygınlığı gibi ayrıntıları görürsünüz.
 
 Dosya yaygınlığı kartı, dosyanın kuruluştaki ve dünya çapındaki cihazlarda nerede görüldüğünü gösterir. Dosyanın görüldüğü ilk ve son cihazlara kolayca özetleyebilir ve araştırmaya cihaz zaman çizelgesinde devam edebilirsiniz. 
 

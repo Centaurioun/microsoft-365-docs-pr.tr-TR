@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 868c3e17ed818c2599cefd8124f1f081cfd7ae9e
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e2229e0f0c4e34b71c054f352e4e94fc029daa51
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699678"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232858"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Rol tabanlı erişim denetimi için roller oluşturma ve yönetme
 
@@ -58,6 +60,9 @@ Aşağıdaki adımlar, Microsoft 365 Defender'da rol oluşturma konusunda size y
 
 > [!IMPORTANT]
 > Rolleri oluşturduktan sonra, yeni oluşturduğunuz bir role atayarak bir cihaz grubu oluşturmanız ve cihaz grubuna erişim sağlamanız gerekir.
+
+> [!NOTE]
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
 
 ### <a name="permission-options"></a>İzin seçenekleri
 

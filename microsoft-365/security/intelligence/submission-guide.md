@@ -11,15 +11,17 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 778fd439c7c886be558eaf058ae941267bf0d52c
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 9032fccf08d64374ffc3c38d47b74db224becf45
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67736022"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232572"
 ---
 # <a name="submit-files-for-analysis"></a>Dosyaları analiz için gönderin
 
@@ -37,7 +39,7 @@ Oturum açtığınızda gönderimlerinizi izleyebilirsiniz.
 
 > [!NOTE]
 >
-> Uç Nokta için Microsoft Defender Plan 2 veya Office Plan 2 için Microsoft Defender'ınız olmasa bile WDSI gönderim özelliğini kullanabilirsiniz.
+> Uç Nokta için Microsoft Defender Plan 2 veya Office Plan 2 için Microsoft Defender'niz olmasa bile WDSI gönderim özelliğini kullanabilirsiniz.
 
 ### <a name="submit-a-suspected-email-attachment"></a>Şüpheli bir e-posta eki gönderme
 

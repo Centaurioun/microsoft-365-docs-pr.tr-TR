@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 036e3f00c20a100fe3a64c108cfee649c375f6c4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e85038909d9cd68a96d2eb91ebea8fb9dbf6801e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67688605"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68233210"
 ---
 # <a name="machineaction-resource-type"></a>MachineAction kaynak türü
 

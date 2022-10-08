@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Virüsten Koruma korumasını izleme ve raporlama
-description: Raporları kullanmak ve PowerShell ve WMI ile Microsoft Defender Virüsten Koruma'yı izlemek için Configuration Manager veya güvenlik bilgileri ve olay yönetimi (SIEM) araçlarını kullanın.
-keywords: siem, monitor, report, Microsoft Defender AV, Microsoft Defender Virüsten Koruma
+description: Raporları kullanmak ve Microsoft Defender Virüsten Koruma'yı PowerShell ve WMI ile izlemek için Configuration Manager veya güvenlik bilgileri ve olay yönetimi (SIEM) araçlarını kullanın.
+keywords: siem, monitor, report, Microsoft Defender AV, Microsoft Defender Antivirus
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,14 +14,16 @@ ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 13dee2aeda61acfae82a116a625112ce97727d88
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: e07c89d2f6f2fa59d79f5bad1274ebcdeaef2c9a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67691771"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232638"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Defender Virüsten Koruma’yı raporlayın
 
@@ -35,7 +37,7 @@ ms.locfileid: "67691771"
 
 Microsoft Defender Virüsten Koruma Windows 10, Windows 11, Windows Server 2019, Windows Server 2022 ve Windows Server 2016 yerleşik olarak bulunur. Microsoft Defender Virüsten Koruma, Uç Nokta için Microsoft Defender'da yeni nesil korumanızdır. Yeni nesil koruma, cihazlarınızı e-posta, uygulamalar, bulut ve web'de virüs, kötü amaçlı yazılım ve casus yazılım gibi yazılım tehditlerinden korumaya yardımcı olur.
 
-Microsoft Defender Virüsten Koruma ile koruma durumunu ve uyarılarını gözden geçirmek için çeşitli seçenekleriniz vardır. Microsoft [Defender Virüsten Koruma'yi izlemek](/configmgr/protect/deploy-use/monitor-endpoint-protection) veya [e-posta uyarıları oluşturmak](/configmgr/protect/deploy-use/endpoint-configure-alerts) için Microsoft Endpoint Manager kullanabilirsiniz. Ya da [Microsoft Intune](/intune/introduction-intune) kullanarak korumayı izleyebilirsiniz.
+Microsoft Defender Virüsten Koruma ile koruma durumunu ve uyarılarını gözden geçirmek için çeşitli seçenekleriniz vardır. Microsoft Defender [Virüsten Koruma'Endpoint Manager izlemek](/configmgr/protect/deploy-use/monitor-endpoint-protection) veya [e-posta uyarıları oluşturmak için Microsoft Endpoint Manager kullanabilirsiniz](/configmgr/protect/deploy-use/endpoint-configure-alerts). Ya da [Microsoft Intune](/intune/introduction-intune) kullanarak korumayı izleyebilirsiniz.
 
 Üçüncü taraf güvenlik bilgileriniz ve olay yönetimi (SIEM) sunucunuz varsa, [Windows Defender istemci olaylarını](/windows/win32/events/windows-events) da kullanabilirsiniz.
 
@@ -59,5 +61,5 @@ PowerShell, WMI veya Microsoft Azure ile durumu izlemek veya belirlemek için [b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Windows 10'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender Virüsten Koruma'yi dağıtma](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Windows 10'de virüsten koruma Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Virüsten Koruma Dağıtma](deploy-manage-report-microsoft-defender-antivirus.md)

@@ -11,22 +11,20 @@ ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+- m365-security
+- tier1
 search.appverid: MET150
-description: Windows cihazlarınızda Microsoft Defender Virüsten Koruma tarafından algılanan tehditleri gözden geçirmeyi ve yönetmeyi öğrenin.
-ms.openlocfilehash: 446a51c0d6bb1c595ae40674cffb1108f9f89a4b
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+description: Windows cihazlarınızda virüsten koruma Microsoft Defender tarafından algılanan tehditleri gözden geçirmeyi ve yönetmeyi öğrenin.
+ms.openlocfilehash: c9dab2a71d7ce8ce352ae1315be9ff0453215108
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67739928"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097675"
 ---
 # <a name="review-detected-threats"></a>Algılanan tehditleri gözden geçirme
 
-Kötü amaçlı bir dosya veya yazılım algılanır algılanmaz, Microsoft Defender dosyayı engeller ve çalışmasını engeller. Bulut tabanlı koruma açıkken, diğer cihazlarınızın ve kullanıcılarınızın da korunması için virüsten koruma ve kötü amaçlı yazılımdan koruma altyapısına yeni algılanan tehditler eklenir.
+Kötü amaçlı bir dosya veya yazılım algılanır algılanmaz Microsoft Defender bunu engeller ve çalışmasını engeller. Bulut tabanlı koruma açıkken, diğer cihazlarınızın ve kullanıcılarınızın da korunması için virüsten koruma ve kötü amaçlı yazılımdan koruma altyapısına yeni algılanan tehditler eklenir.
 
 Microsoft Defender Virüsten Koruma aşağıdaki tehdit türlerini algılar ve bu tehditlere karşı korur:
 

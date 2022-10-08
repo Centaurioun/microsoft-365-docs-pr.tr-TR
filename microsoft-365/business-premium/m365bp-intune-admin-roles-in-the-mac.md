@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 yönetim merkezi Intune yönetici rolleri hakkında
+title: Microsoft 365 yönetim merkezi Intune için Yönetici rolleri
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -11,17 +11,17 @@ ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.collection: ''
-ms.custom: ''
+ms.collection:
+- tier1
 description: Microsoft 365 yönetim merkezi, iş işlevlerine eşlenen ve belirli görevleri gerçekleştirme izinleri veren bazı Microsoft Intune rolleri yönetmenize olanak tanır.
-ms.openlocfilehash: 6d3390a6c17de417e22a851ad3f227ebccc952d4
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: b00547a4f89d5e1b64dfbfab4a5cb5aa6c9a0c0a
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67737796"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68097478"
 ---
-# <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi yönetici rollerini Intune
+# <a name="admin-roles-for-intune-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi Intune için Yönetici rolleri
 
 Microsoft 365 veya Office 365 aboneliğiniz, <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 yönetim merkezi</a> kullanarak kuruluşunuzdaki tüm kullanıcılara atayabileceğiniz bir dizi yönetici rolüyle birlikte gelir. Her bir yönetici rolü, işletme ile ilgili genel işlevlere yöneliktir ve kuruluşunuzdaki kişilere, yönetim merkezlerinde belirli görevler yapma izni verir. Bu roller, Intune yönetim merkezinde bulunan ve Intune özgü ek rolleri içeren tüm rollerin yalnızca bir alt kümesidir.
 
@@ -129,7 +129,7 @@ Bir iş ortağı şu rolleri atayabilir:
 
 - Yardım masası yöneticisiyle eşdeğer ayrıcalıklara sahip sınırlı yönetim.
 
-İş ortağının kullanıcılara bu rolleri atamadan önce, iş ortağını hesabınıza yönetici temsilcisi olarak eklemeniz gerekir. Bu süreç yetkili bir iş ortağı tarafından başlatılır. İş ortağı, kendisine yönetici temsilcisi olarak hareket etme izni vermek isteyip istemediğinizi sormak için size bir e-posta gönderir. Yönergeler için bkz. [İş ortağı ilişkilerini yetkilendirme veya kaldırma](../admin/misc/add-partner.md).
+Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../admin/misc/add-partner.md).
   
 ## <a name="related-content"></a>İlgili içerik
 

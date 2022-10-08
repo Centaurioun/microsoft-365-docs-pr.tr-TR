@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 için cihaz yönetimi yol haritası
-keywords: Microsoft 365, kurumsal Microsoft 365, Microsoft 365 belgeleri, mobil cihaz yönetimi Intune
+keywords: Microsoft 365, Kurumsal için Microsoft 365, Microsoft 365 belgeleri, mobil cihaz yönetimi, Intune
 author: kelleyvice-msft
 ms.author: kvice
 manager: scotv
@@ -8,19 +8,18 @@ ms.date: 08/10/2020
 ms.topic: conceptual
 f1.keywords:
 - NOCSH
-ms.prod: microsoft-365-enterprise
-ms.service: ''
-ms.technology: ''
+ms.service: microsoft-365-enterprise
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
+ms.collection: scotvorg
 description: Microsoft 365 için cihaz yönetimini ayarlama yol haritası.
-ms.openlocfilehash: eeed1a69fc1724f3feb75f4bc096cad3a3c25cf0
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2b4c67df00c3dc9675da9d24d55628abf3883173
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095322"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185637"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 için cihaz yönetimi yol haritası
 
@@ -41,7 +40,7 @@ Ayrıca kişisel cihazları ve kuruluşa ait cihazları nasıl yöneteceğini de
 
 ## <a name="basic-mobility-and-security"></a>Temel Hareketlilik ve Güvenlik
 
-Bu, Microsoft 365 yerleşik olarak bulunur ve iPhone' lar, iPad'ler, Android'ler ve Windows telefonlar gibi kullanıcılarınızın mobil cihazlarının güvenliğini sağlamanıza ve yönetmenize yardımcı olur. Cihaz güvenlik ilkeleri oluşturup yönetebilir, bir cihazı uzaktan silebilir ve ayrıntılı cihaz raporlarını görüntüleyebilirsiniz.
+Bu, Microsoft 365'e yerleşik olarak gelir ve kullanıcılarınızın iPhone, iPad, Android ve Windows telefonlar gibi mobil cihazlarının güvenliğini sağlamanıza ve yönetmenize yardımcı olur. Cihaz güvenlik ilkeleri oluşturup yönetebilir, bir cihazı uzaktan silebilir ve ayrıntılı cihaz raporlarını görüntüleyebilirsiniz.
 
 ## <a name="choose-between-the-two-options"></a>İki seçenek arasında seçim yapma
 

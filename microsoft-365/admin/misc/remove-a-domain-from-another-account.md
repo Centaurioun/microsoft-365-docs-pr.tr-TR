@@ -1,5 +1,5 @@
 ---
-title: Başka bir hesaptan etki alanı kaldırma
+title: Etki alanını başka bir hesaptan kaldırma
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,66 +22,66 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Kendi kendine kullanıcı oturum açma ve oturum açma ile oluşturulan, unmanaged Microsoft 365.
-ms.openlocfilehash: 0a7cf07a70e241c0b40f28159f31b0c86766bc1d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Microsoft 365'te self servis kullanıcı kaydı tarafından oluşturulan yönetilmeyen bir hesaba katılmayı öğrenin.
+ms.openlocfilehash: ff8f3df50736123488205aae96899943fec20237
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325677"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68209590"
 ---
-# <a name="perform-an-internal-admin-takeover"></a>Şirket içi yöneticiyi teslim alma gerçekleştirme
+# <a name="perform-an-internal-admin-takeover"></a>İç yönetici devralma işlemi gerçekleştirme
 
  Aradığınızı bulamazsanız, **[Etki Alanları SSS sayfasını inceleyin](../setup/domains-faq.yml)**.
 
-Yöneticiyseniz ve self servis kullanıcı kaydolan tarafından oluşturulan yönetnemeyen bir hesabın hesabını almaksanız, bunu şirket içi yöneticiyi teslim alma gerçekleştirerek gerçekleştirebilirsiniz.
+Yöneticiyseniz ve self servis kullanıcı kaydı tarafından oluşturulan yönetilmeyen bir hesabı devralmak istiyorsanız, bunu iç yönetici devralma işlemi gerçekleştirerek yapabilirsiniz.
 
 > [!NOTE]
-> Azure AD kullanan herhangi bir bulut hizmetine self servis kayıt, kullanıcıya yönelik olmayan veya "gölgeli" bir Azure AD dizinine ekler ve unmanaged bir hesap oluşturur. Yönetimi olmayan hesap, genel yönetici olmayan bir dizindir. Bir hesabın yönetilip yönetilil olmadığını belirlemek için bkz. [Kiracı Türünü Belirleme](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type). 
+> Azure AD kullanan herhangi bir bulut hizmeti için self servis kaydolma, kullanıcıyı yönetilmeyen veya "gölge" bir dizine Azure AD ve yönetilmeyen bir hesap oluşturur. Yönetilmeyen hesap, genel yönetici olmayan bir dizindir. Bir hesabın yönetilip yönetilmediğini belirlemek için bkz. [Kiracı Türünü Belirleme](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type). 
   
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Bazı durumlarda, başka biri bu etki alanı adıyla ilişkilendirilmiş bir e-posta adresini kullanarak e-postanıza zaten Microsoft 365 etki alanı ekleyesiniz. Ancak, etki alanını yönetilemeyen diğer hesaptan kaldırabilir ve bunu kuruluş tarafından yönetilen hesabınıza  eklersiniz.
+Bazen, başka biri bu etki alanı adıyla ilişkilendirilmiş bir e-posta adresi kullanarak Microsoft 365'e kaydolmuş olduğundan, kuruluş hesabınıza etki alanı ekleyemezsiniz. Ancak etki alanını diğer yönetilmeyen hesaptan kaldırabilir ve kuruluşunuz tarafından yönetilen hesabınıza ekleyebilirsiniz.
 
-Etki alanını diğer hesaptan kaldırmadan ve hesabınıza eklemeden önce yöneti olmayan hesaba katılmanız ve o hesabın yöneticisi olmanız gerekir. Ardından, etki alanını yönetilemeyen hesaptan kaldırır, hesabınızla yeniden oturum kaldırır ve etki alanını yönetilen hesabınıza eklersiniz.
+Etki alanını diğer hesaptan kaldırıp hesabınıza ekleyebilmeniz için önce yönetilmeyen hesaba katılmanız ve bu hesabın yöneticisi olmanız gerekir. Ardından, yönetilmeyen hesaptan etki alanını kaldırır, hesabınızda yeniden oturum açar ve etki alanını yönetilen hesabınıza eklersiniz.
 
-Bu makaledeki adımlar yalnızca diğer hesaba katılmayı (1. ve 2. Adım) ana hatlarıyla açıklar ve yöneticiyi alma sihirbazında verilen adımları takip eder ve yönetnemeyen hesapta yönetici olur (3. Adım).
+Bu makaledeki adımlarda yalnızca diğer hesaba nasıl katılacağınız (1. ve 2. Adımlar) ve yönetilmeyen hesapta yönetici olmak için yönetici devralma sihirbazındaki adımları izleme (3. Adım) özetlenmiştir.
 
-Yönetilen hesabın yöneticisi olduktan sonra, etki alanını yönetimiş hesaptan kaldırabilir ve hesabınıza ebilirsiniz. 
+Yönetilmeyen hesabın yöneticisi olduktan sonra, yönetilmeyen hesaptan etki alanını kaldırabilir ve hesabınıza ekleyebilirsiniz. 
 
 ## <a name="step-1-verify-your-email-address"></a>1. Adım: E-posta adresinizi doğrulama
 
 > [!NOTE]
-> If self servis is enabled in your account, users can subscribe to free services such as Power BI, on their own. Bu hizmetler özel olarak, self servis kullanıcı aboneliğinin yönetici olarak almak istediğiniz yöneti olmayan hesabı oluşturduğu durumlarda kullanım için hazırlar. 1. Adımda, yöneticiyi kaldırma sihirbazını başlatmak için Power BI'i kullanarak kaldırmak istediğiniz etki alanının kullanıcı hesabını oluşturabilir ve böylelikle yönetnemeyen etki alanı hesabının yöneticisi siz olursiniz.
+> Hesabınızda self servis etkinleştirildiyse, kullanıcılar Power BI gibi ücretsiz hizmetlere kendi başlarına abone olabilir. Bu hizmetler özellikle bir self servis kullanıcı aboneliğinin yönetici olarak devralmak istediğiniz yönetilmeyen hesabı oluşturduğu durumlarda kullanılır. 1. Adımda, yönetilmeyen etki alanı hesabının yöneticisi olabilmeniz için Power BI kullanarak yönetici devralma sihirbazını başlatarak kaldırmak istediğiniz etki alanı için bir kullanıcı hesabı oluşturursunuz.
 
-1. Ücretsiz deneme sürümüne Power BI için Power BI [sitesine](https://powerbi.com) gidin ve **Ücretsiz** >  denemeyi **başlat'ı** seçin (Diğerleriyle paylaş kutusunda Power BI Pro seçin. 
+1. Power BI'a kaydolmak için [Power BI sitesine](https://powerbi.com) gidin ve Ücretsiz  > **Başlangıç ücretsiz deneme sürümünü** **başlat'ı**(Power BI Pro paylaş kutusunda) seçin. 
 
-2. Kurum adının (örneğin) etki alanı adını kullanan bir kullanıcı hesabıyla kaydolabilirsiniz `powerbiadmin@contoso.com`. Hesabınız zaten kullanıyorsa geçerli parolanızı kullanarak oturum açın.
+2. Kuruluşunuzun etki alanı adını (gibi `powerbiadmin@contoso.com`) kullanan bir kullanıcı hesabıyla kaydolun. Hesabınız zaten kullanılıyorsa geçerli parolanızı kullanarak oturum açın.
 
-3. E-postanızı doğrulama **kodunu kontrol edin** ve e-posta adresinizi doğrulamak için kodu girin.
+3. **Doğrulama kodu** için e-postanızı denetleyin ve e-posta adresinizi doğrulamak için kodu girin.
 
 ## <a name="step-2-create-a-new-account-for-admin-access"></a>2. Adım: Yönetici erişimi için yeni bir hesap oluşturma
 
-1. Doğrulama kodunu girerken yeni bir hesap oluşturabilirsiniz bir sayfaya getirisiniz.
+1. Doğrulama kodunu girdiğinizde, yeni bir hesap oluşturabileceğiniz bir sayfaya getirilirsiniz.
 
-2. Kullanıcı adı ve parola alanlarını kullanmak istediğiniz hesap ile doldurun, ardından Başlat'ı **seçin**.
+2. Kullanıcı adı ve parola alanlarını kullanmak istediğiniz hesapla doldurun, ardından **Başlat'ı** seçin.
 
 ## <a name="step-3-verify-domain-ownership-and-become-the-admin"></a>3. Adım: Etki alanı sahipliğini doğrulama ve yönetici olma
 
-1. 2. Adımı tamamlandıktan sonra, sol gezinti bölmesindeki yönetim merkezi simgesini seçin (alternatif olarak, bir tarayıcıya gidin ve buraya yazın `https://admin.microsoft.com`).
+1. 2. Adımı tamamladıktan sonra sol gezinti bölmesindeki yönetim merkezi simgesini seçin (alternatif olarak, bir tarayıcıya gidin ve yazın `https://admin.microsoft.com`).
 
-    Yöneticiyi teslim alma sihirbazına yönlendirildiniz.
+    Yönetici devralma sihirbazına yönlendirilirsiniz.
 
-1. **Sonraki'yi** seçin ve etki alanı kayıt şirketine bir TXT kaydı ekleyerek, sahip olmak istediğiniz etki alanının sahibi olduğunu doğrulayın. 
+1. **İleri'yi** seçin ve etki alanı kayıt şirketinize bir TXT kaydı ekleyerek devralmak istediğiniz etki alanının sahibi olduğunuzu doğrulayın. 
 
-    Sihirbaz, hem eklemeniz için TXT kaydını hem de kayıt şirketinizin web sitesine bir bağlantı ve adım adım yönergelere ulaşacak bir bağlantı sağlar.
+    Sihirbaz size eklenecek TXT kaydının yanı sıra kayıt şirketinizin web sitesine bir bağlantı ve adım adım yönergelerin bağlantısını sağlar.
 
-1. Şimdi **yöneticisiniz sayfasında, Yönetim** merkezine **git'i seçin**.
+1. **Artık yöneticisiniz** sayfasında Yönetim **merkezine git'i** seçin.
 
-    Artık, etki alanını diğer hesaptan kaldırmak için gereken yönetici ayrıcalıklarına sahipsiniz. 
+    Artık etki alanını diğer hesaptan kaldırmak için gereken yönetici ayrıcalıklarına sahipsiniz. 
 ## <a name="related-content"></a>İlgili içerik
 
-YouTube: Power BI ve Video)\ için IT Yöneticilerini [Power BI Microsoft 365 3](https://www.youtube.com/watch?v=xt5EsrQBZZk) adım
-[Azure AD'de yöneticiyi devretme](/azure/active-directory/users-groups-roles/domains-admin-takeover) (makale)\
-[Kurumda self servis kaydolmayı kullanma](self-service-sign-up.md) (makale)\
-[Hizmet Power BI rolünü anlama](/power-bi/service-admin-role) (makale)
+YouTube: [Power BI ve Microsoft 365 için BT Yönetici Devralma işlemi yapmak için 3 adım](https://www.youtube.com/watch?v=xt5EsrQBZZk) (video)\
+[Azure AD'da devralma Yönetici](/azure/active-directory/users-groups-roles/domains-admin-takeover) (makale)\
+[Kuruluşunuzda self servis kaydolmayı kullanma](self-service-sign-up.md) (makale)\
+[Power BI hizmeti yönetici rolünü anlama](/power-bi/service-admin-role) (makale)

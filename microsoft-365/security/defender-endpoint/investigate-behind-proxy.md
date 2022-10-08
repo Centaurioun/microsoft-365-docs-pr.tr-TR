@@ -12,16 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 24e427685063b3de02ed160890ce2a76d166494f
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: cd733e56133b4aa16f167fac2b20be93bdac615e
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67690312"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232374"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Forward proxy’lerin arkasında oluşan bağlantı olaylarını araştırın
 
