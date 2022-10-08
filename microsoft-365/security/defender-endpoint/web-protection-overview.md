@@ -13,15 +13,17 @@ ms.localizationpriority: medium
 ms.date: 07/25/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: d2d689117c614c4fb2f786a303ea9070eac5fedc
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: e2353ce3ae89d4377584d1e9c7f37ed320a7833d
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67586214"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224040"
 ---
 # <a name="web-protection"></a>Web koruması
 
@@ -84,6 +86,8 @@ Web içeriği filtreleme şunları içerir:
 
 - Kullanıcıların, ister şirket içinde ister dışarıda gezinirken engellenen kategorilerdeki web sitelerine erişmeleri engellenir.
 - Çeşitli ilkeleri, [Uç Nokta için Microsoft Defender rol tabanlı erişim denetimi ayarlarında](/microsoft-365/security/defender-endpoint/rbac) tanımlanan cihaz gruplarını kullanarak çeşitli kullanıcı kümelerine kolayca dağıtabilirsiniz.
+    > [!NOTE]
+    > Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
 - Gerçek bloklar ve web kullanımı üzerinde görünürlük ile web raporlarına aynı merkezi konumdan erişebilirsiniz.
 
 Daha fazla bilgi için bkz [. Web içeriği filtreleme](web-content-filtering.md).

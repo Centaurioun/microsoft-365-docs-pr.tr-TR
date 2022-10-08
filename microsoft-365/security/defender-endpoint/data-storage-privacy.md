@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: d736a87b1596beff1c252c05d0b90526289ce230
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 07b3ebb00001570bdfbde705c6eca5a84a660172
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699070"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195379"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>veri depolama ve gizliliği Uç Nokta için Microsoft Defender
 
@@ -36,7 +38,7 @@ ms.locfileid: "67699070"
 Bu bölümde, Uç Nokta için Defender için gizlilik ve veri işlemeyle ilgili en sık sorulan sorulardan bazıları ele alınıyor.
 
 > [!NOTE]
-> Bu belgede, Uç Nokta için Defender ile ilgili veri depolama ve gizlilik ayrıntıları açıklanmaktadır. Uç Nokta için Defender ve Microsoft Defender Virüsten Koruma ve Windows gibi diğer ürün ve hizmetlerle ilgili daha fazla bilgi için bkz. [Microsoft Gizlilik Bildirimi](https://go.microsoft.com/fwlink/?linkid=827576). Daha fazla bilgi için bkz. [Windows gizlilik hakkında SSS](https://go.microsoft.com/fwlink/?linkid=827577) .
+> Bu belgede, Uç Nokta için Defender ile ilgili veri depolama ve gizlilik ayrıntıları açıklanmaktadır. Uç Nokta için Defender ile Microsoft Defender Virüsten Koruma ve Windows gibi diğer ürün ve hizmetlerle ilgili daha fazla bilgi için bkz. [Microsoft Gizlilik Bildirimi](https://go.microsoft.com/fwlink/?linkid=827576). Daha fazla bilgi için bkz. [Windows gizlilik hakkında SSS](https://go.microsoft.com/fwlink/?linkid=827577) .
 
 ## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Uç Nokta için Microsoft Defender hangi verileri toplar?
 

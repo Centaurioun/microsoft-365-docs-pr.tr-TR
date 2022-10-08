@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - SPO_Content
@@ -25,12 +26,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 aboneliğinize dosya depolama alanı ekleyin. Ek dosya depolama alanıyla SharePoint'te daha fazla içerik depolayabilirsiniz.
 ms.date: 05/24/2022
-ms.openlocfilehash: a8029f9b51c678b80e4a8fde77d02663da6e89af
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: aacd4506eb08e19bfb259385608ae2a38b7564b6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882506"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195181"
 ---
 # <a name="add-more-sharepoint-storage-to-your-subscription"></a>Aboneliğinize daha fazla SharePoint depolama alanı ekleme
 
@@ -91,7 +92,7 @@ Office 365 Ek Dosya Depolama Alanı aşağıdaki aboneliklere sağlanır:
 - Office 365 Kurumsal E2
 - Office 365 Kurumsal E3
 <!-- Office 365 Enterprise E4 -->
-- Office 365 Kurumsal E5
+- Office 365 Enterprise E5
 - Office 365 A3 (fakülte)
 - Office 365 A5 (fakülte)
 - SharePoint Plan 1 ile Web için Office

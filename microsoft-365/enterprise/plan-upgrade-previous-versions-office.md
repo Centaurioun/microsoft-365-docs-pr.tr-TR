@@ -9,19 +9,21 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 ms.custom:
 - seo-marvel-apr2020
 description: Bu makale, yükseltmelerini planlamalarına yardımcı olmak için Office 2007 veya Office 2010 kullanan kullanıcılara yönelik kaynaklar içerir.
-ms.openlocfilehash: c8c574f2001b0897f2656113e8c46fcd9e60e473
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 86a11a8cf9b7912cc3a5b4ce4d8f6c5ab794f78c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67673073"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185215"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 veya Office 2010 sunucularından ve istemcilerinden yükseltmenizi planlama
 

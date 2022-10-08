@@ -11,16 +11,17 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 ağını planlama, uygulama ve yönetme yol haritası.
-ms.openlocfilehash: f9c88e2f6e9181b39cfb35508b07e6b57da43b9d
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 868ec406522f9bd35e0087089d8fb8ce6b5c3e26
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67695854"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185281"
 ---
 # <a name="networking-roadmap-for-microsoft-365"></a>Microsoft 365 için ağ yol haritası
 

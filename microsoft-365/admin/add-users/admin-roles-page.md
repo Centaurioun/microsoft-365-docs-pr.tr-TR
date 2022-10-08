@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365'deki yönetici rolleri sayfası hakkında
+title: Microsoft 365'teki yönetici rolleri sayfası hakkında
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365W
 ms.custom:
@@ -21,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Destek biletlerini açan Hizmet yöneticisi gibi, iş işlevleriyle eşlenen ve yönetim merkezinde görevler için izinlere sahip olan yönetici rolleri hakkında bilgi edinin.
-ms.openlocfilehash: 58bbc4b15f3fd477b72c8dac3f0f624b1e152a2a
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: d7d2f9521d89c2ae8d0d3a53e2615ff80dc0b713
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466778"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185127"
 ---
-# <a name="get-started-with-the-microsoft-365-admin-roles-page"></a>Microsoft 365 yönetici rolleri sayfasıyla Kullanmaya başlayın
+# <a name="get-started-with-the-microsoft-365-admin-roles-page"></a>Microsoft 365 yönetici rolleri sayfasını kullanmaya başlama
 
 Roller sayfasında, kullanıcılara yönetim merkezlerindeki görevleri gerçekleştirme izni verebilirsiniz. Bu, kuruluşunuzun görevleri uygun kişilere yaymasına ve verilerinizin güvenliğinin korunmasına yardımcı olur.
 
@@ -79,11 +80,11 @@ Azure, Microsoft 365 ve Office 365 hizmetleri için destek istekleri oluşturmas
 
 ### <a name="sharepoint-admin"></a>SharePoint yöneticisi
 
-Microsoft 365 aboneliği satın aldığınızda otomatik olarak bir ekip sitesi oluşturulur ve genel yönetici birincil site koleksiyonu yöneticisi olarak ayarlanır. SharePoint yönetim merkezine erişmek istediğiniz kullanıcılara <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint yönetici</a> rolünü atayın. SharePoint yönetici rolüne sahip kullanıcılar site koleksiyonları oluşturup yönetebilir, site koleksiyonu yöneticileri atayabilir ve kullanıcı profillerini yönetebilir. SharePoint yönetici rolüne sahip kullanıcılar Microsoft 365 gruplarını yönetebilir ve Destek isteklerini Microsoft desteği aracılığıyla açabilir. [Daha fazla bilgi edinin](/sharepoint/sharepoint-admin-role)
+Microsoft 365 aboneliği satın aldığınızda otomatik olarak bir ekip sitesi oluşturulur ve genel yönetici birincil site koleksiyonu yöneticisi olarak ayarlanır. SharePoint yönetim merkezine erişmek istediğiniz kullanıcılara <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint yönetici</a> rolünü atayın. SharePoint yönetici rolüne sahip kullanıcılar site koleksiyonları oluşturup yönetebilir, site koleksiyonu yöneticileri atayabilir ve kullanıcı profillerini yönetebilir. SharePoint yönetici rolüne sahip kullanıcılar, Microsoft 365 gruplarını yönetebilir ve Destek isteklerini Microsoft desteği aracılığıyla açabilir. [Daha fazla bilgi edinin](/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Teams hizmet yöneticisi
 
-Teams & Skype yönetim merkezine erişmek ve yönetmek istediğiniz kullanıcılara Teams yönetici rolünü atayın. Teams yönetici rolüne sahip kullanıcılar Microsoft 365 gruplarını yönetebilir ve Destek isteklerini Microsoft desteği aracılığıyla açabilir. [Daha fazla bilgi edinin](/MicrosoftTeams/using-admin-roles)
+Teams & Skype yönetim merkezine erişmek ve yönetmek istediğiniz kullanıcılara Teams yönetici rolünü atayın. Teams yönetici rolüne sahip kullanıcılar, Microsoft 365 gruplarını yönetebilir ve Microsoft desteği aracılığıyla destek isteklerini açabilir. [Daha fazla bilgi edinin](/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>Kullanıcı yöneticisi
 

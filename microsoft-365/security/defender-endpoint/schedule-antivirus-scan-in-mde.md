@@ -11,16 +11,18 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: a450ae393b4054c8d983ab03fe574af00f17dd77
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ad13d3e403f3fad81bec275506017f2da4066737
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699904"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223930"
 ---
 # <a name="schedule-an-antivirus-scan-using-anacron-in-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender'da Anacron kullanarak virüsten koruma taraması zamanlama
 
@@ -28,14 +30,14 @@ ms.locfileid: "67699904"
 - [Uç Nokta için Microsoft Defender Planı 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-Linux için Microsoft Defender Virüsten Koruma taramasını çalıştırmak için bkz [. Desteklenen Komutlar](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
+Linux için Microsoft Defender Virüsten Koruma taramasını çalıştırmak için bkz. [Desteklenen Komutlar](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
 
 > [!NOTE]
 > Bu makale, Red Hat Enterprise Linux dağıtımları (RHEL) için Linux'ta Uç Nokta için Microsoft Defender destekler.
 
 ## <a name="system-requirements"></a>Sistem gereksinimleri
 
-Linux üzerinde Microsoft Defender Uç Noktası'nda Microsoft Defender Virüsten Koruma taraması zamanlamak için gereken aşağıdaki sistem gereksinimlerine bakın.
+Linux'ta Microsoft Defender Uç Noktası'nda Microsoft Defender Virüsten Koruma taraması zamanlamak için gereken aşağıdaki sistem gereksinimlerine bakın.
 
 - Linux sunucu dağıtımları ve sürümleri: Red Hat Enterprise Linux 7.2 veya üzeri.
 - Çekirdekteki **FANOTIFY** seçeneğinin etkinleştirilmesi gerekir.

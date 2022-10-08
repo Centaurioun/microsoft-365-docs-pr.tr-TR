@@ -7,19 +7,21 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
-description: Ülkeniz veya bölgeniz için de destek ile nasıl bağlantı kuracaklarını öğrenin.
+description: Ülkeniz veya bölgeniz için desteğe nasıl başvuracağınızı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7cd5697b737f872c4bfd315a3e4c7cc289e7de51
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: af265df3f28ad8fd938dfd5e28135c7c3bb41f0f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62998867"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197865"
 ---
-# <a name="contact-support-for-dominican-republic"></a>Dominik Cumhuriyeti için destek ile iletişime geçin
+# <a name="contact-support-for-dominican-republic"></a>Dominik Cumhuriyeti için desteğe başvurun
 
 [Başka bir ülke veya bölge bulun](../get-help-support.md).
 
@@ -28,7 +30,7 @@ ms.locfileid: "62998867"
 
 4. seçeneği belirleyin
 
-Kod 7007 girin
+7007 kodunu girin
 
 ## <a name="hours"></a>Saatler
 ### <a name="billing-support"></a>Faturalama Desteği:
@@ -37,7 +39,7 @@ Kod 7007 girin
 
 ### <a name="technical-support"></a>Teknik Destek:
 
-İspanyolca: Haftanın 7 günü, günde 24 saat
+İspanyolca: Günde 24 saat, haftada 7 gün
 
 Alternatif Telefon Numarası: 1 809 200 8794
 

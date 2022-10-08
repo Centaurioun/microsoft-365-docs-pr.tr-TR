@@ -14,14 +14,16 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 54a37cf54d40962b7ff1b7e98a450895568e2392
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: b46457a8215fc1eb5480558b6aa68fcf34029de6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67705018"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68174874"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma'da bulut korumasını açma
 
@@ -58,7 +60,7 @@ Uç noktalarınızın bulut koruma hizmetine bağlanamasını sağlamak için be
 
 3. Yapılandırmak istediğiniz **Cihaz kısıtlamaları** profil türünü seçin. Yeni bir **Cihaz kısıtlamaları** profil türü oluşturmanız gerekiyorsa bkz. [Microsoft Intune'de cihaz kısıtlama ayarlarını yapılandırma](/intune/device-restrictions-configure).
 
-4. **Özellikler** \> Yapılandırma ayarları: **Microsoft Defender Virüsten** **Koruma'nın düzenlenmesi'ni** \> seçin.
+4. **Özellikler** \> Yapılandırma ayarları: **Virüsten Koruma Microsoft Defender** **Düzenle'yi** \> seçin.
 
 5. **Bulut tabanlı koruma** anahtarında **Etkinleştir'i** seçin.
 
@@ -93,7 +95,7 @@ Microsoft Endpoint Configuration Manager yapılandırma hakkında daha fazla bil
 
 3. **Yönetim şablonları'nı** seçin.
 
-4. Ağacı **Windows bileşenlerine** >  genişletme **Microsoft Defender Virüsten Koruma > MAPS**
+4. Ağacı **Windows bileşenlerine** >  genişletin **Microsoft Defender Virüsten Koruma > MAPS**
 
     > [!NOTE]
     > MAPS ayarları, bulut tabanlı korumaya eşittir.

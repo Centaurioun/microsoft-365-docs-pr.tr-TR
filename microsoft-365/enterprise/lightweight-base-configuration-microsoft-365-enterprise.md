@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -19,12 +20,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Kuruluş için Microsoft 365'i test etmek üzere basit bir test ortamı oluşturmak için bu Test Laboratuvarı Kılavuzu'nu kullanın.
-ms.openlocfilehash: 2d48fa3b2435b16ef29fa212d30eb51cffbbfe64
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: e9f3e3194317c8e2a4aaeba0bb23fdc70d3ac45e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560823"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208776"
 ---
 # <a name="the-lightweight-base-configuration"></a>Basit temel yapılandırma
 

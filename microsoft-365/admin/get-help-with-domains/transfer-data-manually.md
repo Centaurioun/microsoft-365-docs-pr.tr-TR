@@ -1,5 +1,5 @@
 ---
-title: İki hesap arasında verileri el ile aktarma
+title: İki hesap arasında el ile veri aktarma
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: AdminSurgePortfolio
@@ -17,95 +18,95 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
-description: Planı veya şirket adını değiştirdiğini ya da Microsoft 365 birden çok aboneliği tek bir abonelikte birleştirmişken, iki farklı hesap arasında el ile veri aktarmayı öğrenin.
-ms.openlocfilehash: 7d6cb9e055fd27e8f9b0a26e7ff4bfffa97421ae
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Plan veya şirket adını değiştirdiğinizde veya birden çok aboneliği tek bir abonelikte birleştirdiğinizde iki Microsoft 365 hesabı arasında el ile veri aktarmayı öğrenin.
+ms.openlocfilehash: 742e15ed2b99d059898596d0dc99255117a0ca0f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316723"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197953"
 ---
-# <a name="transfer-data-manually-between-two-accounts"></a>İki hesap arasında verileri el ile aktarma
+# <a name="transfer-data-manually-between-two-accounts"></a>İki hesap arasında el ile veri aktarma
 
-Sleeve'lerinizi toplamaya ve takvimde zaman öbeklerini toplamaya hazırlanma: İki iş hesabı arasında veri Microsoft 365 elle, karmaşık ve zaman alıcı bir işlemdir. Bu otomatik veya desteklenen bir işlem değildir. Başlamaya hemen başlamış oluruz.
+Kollarınızı sıvamaya ve takviminizde belirli bir zaman dilimini engellemeye hazırlanın: İki Microsoft 365 hesabı arasında veri aktarmak el ile gerçekleştirilen, karmaşık ve zaman alan bir işlemdir. Bu otomatik veya desteklenen bir işlem değildir. Başlamanızı sağlayacağız.
   
 > [!CAUTION]
-> E-posta, e-posta, Skype Kurumsal web sitesi ve Microsoft 365 bir genel web sitesinin çalışmayyacağız. Kullanıcıların yeni kullanıcı adları ve parolaları olur ve kullanıcı adlarını ve parolaları Outlook.
+> Microsoft 365'te barındırılan e-posta, Skype Kurumsal ve genel bir web sitesinin çalışmadığı işlem sırasında çalışma zamanı olacaktır. Kullanıcılar yeni kullanıcı adları ve parolalar alır ve Outlook'u sıfırlamaları gerekir.
 
-**Bu konudaki yönergeleri kullanarak verileri yalnızca el ile aktarma (aşağıdakilerden biri geçerlidir):**
+**Aşağıdakilerden biri geçerliyse yalnızca bu konudaki yönergeleri kullanarak verileri el ile aktarın:**
   
-- Farklı bir hizmet ailesinde bir plana ihtiyacınız var.
+- Farklı bir hizmet ailesindeki bir plana geçiş yapmanız gerekir.
 
-- Şirket adınız değişti ve yeni bir abonelik oluşturduk ve farklı ilk etki alanı adları kullanmak istediğiniz için verilerinizi geçirmeye karar verdiniz.
+- Şirketinizin adı değişti ve farklı ilk etki alanı adları kullanmak istediğiniz için yeni bir abonelik oluşturmaya ve verilerinizi geçirmeye karar verdiniz.
 
-- Birden çok aboneliği yeni bir abonelikte birleştirmelisiniz.
+- Birden çok aboneliği tek bir yeni abonelikte birleştirmeniz gerekir.
 
 > [!IMPORTANT]
-> Abonelik planınızı değiştirmeniz gerekirse ve Plan değiştir sihirbazını kullanabilirsiniz ya da Plan değiştir sihirbazı çalışmasa bile aynı abonelik ailesinde yeni bir abonelik planına aktarmanız gerekirse, verilerinizi el ile aktarmanız gerekmez ve çalışma süresi de yoktur.[](../../commerce/subscriptions/switch-to-a-different-plan.md)
+> [Abonelik planınızı değiştirmeniz](../../commerce/subscriptions/switch-to-a-different-plan.md) gerekiyorsa ve Plan değiştir sihirbazını kullanabilirseniz veya Plan değiştir sihirbazı çalışmadığında bile aynı abonelik ailesindeki yeni bir abonelik planına aktarmanız gerekiyorsa, verilerinizi el ile aktarmanız gerekmez ve çalışma zamanı yoktur.
 
 |**Görevler**|**Adımlar**|
 |:-----|:-----|
-|Taşımak istediğiniz planı satın alın.  <br/> |Kaydol sırasında, ilk etki alanı adlarında kullanmak üzere şirket adını belirtirsiniz:  *yourcompany*  .onmicrosoft.com,  *yourcompany*  -public.sharepoint.com, and  *yourcompany*  .sharepoint.com. Var olan aboneliklerde  *, şirket adı*  olarak var olan adlardan farklı bir ad kullan gerekir.  <br/> > [!NOTE]> Aboneliği iptal etmenizden sonra, şirketinizi kullanan ilk etki alanı adlarının sistemlerimizin kullanımına dahil edilmesi normalde en  *az*  birkaç ay sürer. Eski Microsoft 365 aboneliğinizin tüm verilerini kaydetmeyi ve bu aboneliği iptal yapmayı planlasanız bile, eski şirket değeriniz yeni bir  abonelikte hemen kullanılamaz.           |
-|Eski Microsoft 365 aboneliğinden özel etki Microsoft 365 kaldırın.  <br/> | Kullanıcı [e-posta adreslerinden etki alanı](remove-a-domain.md) adını kaldırmak ve e-postanın DNS kayıtlarını ve özel etki alanı için Lync'i kaldırmak için, etki alanını kaldırmadan önce gerekli adımları izleyin. Genel web sitenizi aynı Microsoft 365 barındırıyorsanız, bu kaydın CNAME kaydını da kaldırmanız gerekir.  <br/> > [!IMPORTANT]> E-postayı bu özel etki alanına yönlendiren MX kaydını kaldırdikten sonra, etki alanını yeni hesabınıza ekleyene, yeni MX kaydını ayarlamaya ve kullanıcılarınızı ayarlamaya kadar e-posta çalışmayı durdurur. Lync için DNS kayıtlarını kaldırabilirsiniz, Lync çalışmayı durdurur. Ayrıca, genel web sitenize göre CNAME kaydını kaldırdikten sonra bu kayıt kullanılamaz.           [Etki alanını kaldırın](remove-a-domain.md) .  <br/> |
-|Yeni aboneliğiniz için özel etki alanlarınızı ayarlayın ve kullanıcılarınızı ayarlayın.  <br/> | Özel etki alanınız için gerekli DNS kayıtlarını oluşturma da içinde olmak üzere yeni aboneliğinizi ayarlayın.  <br/>  Kullanıcılarınızı, özel etki alanınız üzerinde e-posta adresleriyle oluşturun.  <br/> |
-|Eski aboneliğinize yeni aboneliğinize veri aktarabilirsiniz.  <br/> | Ayrı tarayıcı pencerelerde her iki hesapta da oturum açın:  <br/>  Tarayıcı simgesine sağ tıklayın ve iki özel tarayıcı penceresini açın. Her iki hesapta da oturum açma için iki pencere içinde farklı kimlik bilgileri kullanabilirsiniz.  <br/> [Abonelikler arasında yönetim ayarlarını aktarma](#email) <br/> [Ekip sitesi yapısını ve verilerini aktarma](#transfer-team-site-structure-and-data) <br/> [Bir genel web sitesini abonelikler arasında aktarma](#transfer-a-public-website-between-subscriptions) <br/> [Abonelikler arasında yönetim ayarlarını aktarma](#email) <br/> |
-|Daha fazla bilgi için Microsoft Destek'i arayarak, sahip olduğunuz plan aboneliğini Microsoft 365.  <br/> | Yeni aboneliğinizin çalıştığını ve tüm verilerin aktarıldı olduğunu doğrulayın.  <br/>  [Eski aboneliğinizi iptal](../../business-video/get-help-support.md) etmek için müşteri desteğine başvurun.  <br/> |
+|Taşımak istediğiniz planı satın alın.  <br/> |Kaydolduğunda, ilk etki alanı adlarında kullanılacak şirket adını belirtirsiniz:  *şirketiniz*  .onmicrosoft.com,  *şirketiniz*  -public.sharepoint.com ve  *şirketiniz*  .sharepoint.com. Mevcut abonelikler için  *kullandığınızdan*  farklı bir şirketinizin adını kullanmanız gerekir.  <br/> > [!NOTE]> Sistemimizde  *şirketinizin*  kullanıldığı ilk etki alanı adlarının serbest bırakılması genellikle aboneliği iptal ettikten sonra en az birkaç ay sürer. Eski Microsoft 365 aboneliğinizdeki tüm verilerinizi kaydetmeyi ve bu aboneliği iptal etme  *planınız*  olsa bile, eski şirketinizin değeri yeni bir abonelikte hemen kullanılamaz.           |
+|Eski Microsoft 365 aboneliğinizden özel etki alanınızı kaldırın.  <br/> | Kullanıcı e-posta adreslerinden etki alanı adını kaldırmak ve e-posta için DNS kayıtlarını ve özel etki alanı için Lync'i kaldırmak için bir etki alanını [kaldırmadan önce gerekli adımları](remove-a-domain.md) izleyin. Genel web sitenizi Microsoft 365'te barındırdıysanız, buna işaret eden CNAME kaydını da kaldırmanız gerekir.  <br/> > [!IMPORTANT]> E-postayı bu özel etki alanına yönlendiren MX kaydını kaldırdıktan sonra, etki alanını yeni hesabınıza ekleyene, yeni MX kaydını ayarlayana ve kullanıcılarınızı ayarlayana kadar e-posta çalışmayı durdurur. Lync için DNS kayıtlarını kaldırdığınızda Lync çalışmayı durdurur. Genel web sitenize işaret eden CNAME kaydını kaldırdıktan sonra bu kayıt kullanılamaz.           [etki alanını kaldırın](remove-a-domain.md) .  <br/> |
+|Yeni aboneliğiniz için özel etki alanınızı ayarlayın ve kullanıcılarınızı ayarlayın.  <br/> | Özel etki alanınız için gerekli DNS kayıtlarını oluşturmak da dahil olmak üzere yeni aboneliğinizi ayarlayın.  <br/>  Özel etki alanınızda e-posta adresleriyle kullanıcılarınızı oluşturun.  <br/> |
+|Eski aboneliğinizden yeni aboneliğinize veri aktarabilirsiniz.  <br/> | Ayrı tarayıcı pencerelerinde her iki hesapta da oturum açın:  <br/>  Tarayıcı simgenize sağ tıklayın ve iki özel tarayıcı penceresi açın. her iki hesapta da oturum açmak için iki penceredeki farklı kimlik bilgilerini kullanabilirsiniz.  <br/> [Abonelikler arasında yönetim ayarlarını aktarma](#email) <br/> [Ekip sitesi yapısını ve verilerini aktarma](#transfer-team-site-structure-and-data) <br/> [Abonelikler arasında genel web sitesi aktarma](#transfer-a-public-website-between-subscriptions) <br/> [Abonelikler arasında yönetim ayarlarını aktarma](#email) <br/> |
+|Microsoft 365 için Microsoft Desteği'ı arayarak işinize sonladığınız planın aboneliğini iptal edin.  <br/> | Yeni aboneliğinizin çalıştığını ve tüm verilerin aktarıldığını doğrulayın.  <br/>  Eski aboneliğinizi iptal etmek için [müşteri desteğine başvurun](../../business-video/get-help-support.md).  <br/> |
 
 ## <a name="transfer-administrative-settings-between-subscriptions"></a>Abonelikler arasında yönetim ayarlarını aktarma
 
-Her hesapta aşağıdaki sayfalara gidin ve yeni hesabı eski hesabın ayarlarına göre ayarlayın.
+Her hesapta aşağıdaki sayfalara gidin ve eski hesabın ayarlarına göre yeni hesabı ayarlayın.
   
-Microsoft 365'dan Microsoft 365 Orta Ölçekli İşletme veya Microsoft 365 Kurumsal'e veri aktarıyorsanız, yönetici sayfaları farklı yapılandırılmıştır. Video izleyin[: Microsoft 365 Kurumsal](../index.yml) ve yönetici ayarlarına bakmak için aşağıdaki yerlere gidin.
+Microsoft 365'ten Microsoft 365 Orta Ölçekli İşletme'ye veya Microsoft 365 Kurumsal veri aktarıyorsanız, yönetici sayfaları farklı yapılandırılmıştır. Video izleyin[: Microsoft 365 Kurumsal tanıtımı](../index.yml) ve yönetici ayarlarına bakmak için aşağıdaki yerlere gidin.
   
-Orta Microsoft 365 Kurumsal ve Microsoft 365 için:
-  
-|**Konum**|**Amaç**|
-|:-----|:-----|
-|**Yönetici** \>  \> Microsoft 365 **Hizmeti ayarları** <br/> |Posta, siteler, Lync, kullanıcı yazılımı, parolalar, topluluk, hak yönetimi ve mobil ayarları için her sekmeyi seçin.  <br/> |
-|**Yönetici** \> **Exchange** <br/> | Exchange Online ayarları  <br/> |
-|**Yönetici** \> **SharePoint** <br/> | SharePoint Online ayarları  <br/> |
-|**Yönetici** \> **Skype Kurumsal** <br/> |Ek Skype Kurumsal ayarları  <br/> |
-
-Küçük Microsoft 365 Küçük İşletme için
+Microsoft 365 Kurumsal ve Microsoft 365 Orta Ölçekli İşletmeler için:
   
 |**Konum**|**Amaç**|
 |:-----|:-----|
-|**Yönetici** \> **Kuruluş genelinde ayarları yönetme** <br/> |Yönetim ayarları  <br/> |
+| \> **Microsoft 365** \> **Hizmet ayarlarını** Yönetici <br/> |Posta, siteler, Lync, kullanıcı yazılımı, parolalar, topluluk, hak yönetimi ve mobil cihazlar için her sekmeyi seçin.  <br/> |
+|\> **Exchange'i Yönetici**  <br/> | Exchange Online ayarları  <br/> |
+|**SharePoint'i** \> Yönetici  <br/> | SharePoint Online ayarları  <br/> |
+| \> Yönetici **Skype Kurumsal** <br/> |Ek Skype Kurumsal ayarları  <br/> |
 
-## <a name="transfer-a-public-website-between-subscriptions"></a>Bir genel web sitesini abonelikler arasında aktarma
+Microsoft 365 Küçük İşletme için
+  
+|**Konum**|**Amaç**|
+|:-----|:-----|
+| \> **Yönetici Kuruluş genelinde ayarları yönetme** <br/> |Yönetim ayarları  <br/> |
 
-Web sitesinde barındırılan bir genel Microsoft 365 varsa, web sitesini kaydetmeniz ve yeni aboneliğinize yeniden oluşturmanız gerekir.
+## <a name="transfer-a-public-website-between-subscriptions"></a>Abonelikler arasında genel web sitesi aktarma
+
+Microsoft 365'te barındırılan bir genel web siteniz varsa, bunu kaydetmeniz ve yeni aboneliğinizde yeniden oluşturmanız gerekir.
   
 > [!NOTE]
-> Genel web siteniz bir DNS barındırma sağlayıcısında barındırıldısa, değişiklik yapmak gerekmez. Geçişiniz bu durumdan etkilenmez.
+> Genel web siteniz bir DNS barındırma sağlayıcısında barındırılıyorsa herhangi bir değişiklik yapılması gerekmez. Geçişinizden etkilenmez.
   
-SharePoint Online ortamındaki belge kitaplığını veya liste içeriğini dosya paylaşımlarına veya yerel bir bilgisayara kaydetmek için bkz. [SharePoint Online içeriği el ile geçiş](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
+SharePoint Online ortamındaki belge kitaplığını veya liste içeriğini dosya paylaşımlarına veya yerel bir bilgisayara kaydetmek için bkz. [SharePoint Online içeriğinin el ile geçişi](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
   
 > [!NOTE]
-> Genel site geçiş uygulaması, verileri farklı bir aboneliğe aktar aşağıdaki abonelikte aktar aşağıdakilere ek olarak devreder.
+> Genel site geçiş uygulaması farklı bir aboneliğe veri aktaramaz.
   
 ## <a name="transfer-team-site-structure-and-data"></a>Ekip sitesi yapısını ve verilerini aktarma
 
-Ekip sitesi verilerini kaydetmenin veya aktarmanın çeşitli yolları vardır:
+Ekip sitesi verilerini kaydetmenin veya aktarmanın birkaç yolu vardır:
   
 - Eski siteyi şablon olarak kaydedebilir ve şablonu yeni siteye aktarabilirsiniz.
 
-- Belgeleri aktarımı için, önce yeni sitede hiyerarşinizi el ile yeniden oluşturun. Ardından, aynı anda her SharePoint ekip sitelerini de açabilir, Windows Explorer ile her iki belge kitaplığını da açabilir ve belgeleri kopyalayıp yapıştırabilirsiniz. Bkz [. Video: Explorer ile Aç'ı kullanarak kitaplık dosyalarını kopyalama veya taşıma](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e).
+- Belgeleri aktarmak için öncelikle hiyerarşinizi yeni sitede el ile yeniden oluşturun. Ardından her iki SharePoint ekip sitesini de aynı anda açabilir, Windows Gezgini ile her iki belge kitaplığını da açabilir ve belgeleri kopyalayıp yapıştırabilirsiniz. Bkz [. Video: Explorer ile Aç'ı kullanarak kitaplık dosyalarını kopyalama veya taşıma](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e).
 
-- Liste verilerini aktarımı için, liste [şablonunu kaydedin](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393) ve kaydedilen şablonu kullanarak yeni sitede listeyi yeniden oluşturun.
+- Liste verilerini aktarmak için bir [liste şablonu](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393) kaydedin ve kaydedilen şablonu kullanarak listeyi yeni sitede yeniden oluşturun.
 
-- SharePoint Online ortamındaki (OneDrive İş veya ekip siteleri) belge kitaplığını veya liste içeriğini dosya paylaşımlarına veya yerel bir bilgisayara kaydetmek için bkz. SharePoint Online içeriğinin el ile geçiş [hakkında bilgiler](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
+- SharePoint Online ortamındaki (OneDrive İş veya ekip siteleri) belge kitaplığını veya liste içeriğini dosya paylaşımlarına veya yerel bir bilgisayara kaydetmek için bkz. [SharePoint Online içeriğinin el ile geçişi hakkında bilgiler](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
-## <a name="transfer-users-data-between-subscriptions"></a>Kullanıcıların verilerini abonelikler arasında aktarma
+## <a name="transfer-users-data-between-subscriptions"></a>Abonelikler arasında kullanıcıların verilerini aktarma
 
-### <a name="email"></a>E-posta:
+### <a name="email"></a>Email:
 
-Yeni aboneliğinizi [ayardikten sonra kullanıcılardan e-postalarını, kişilerini,](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc) görevlerini ve takvim bilgilerini taşımalarını iste. Eski e-postalarına, e-posta gibi ilk kullanıcı adını kullanarak sue@contoso.onmicrosoft.com.
+Yeni aboneliğinizi ayarladıktan sonra kullanıcılardan [e-postalarını, kişilerini, görevlerini ve takvim bilgilerini taşımalarını](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc) isteyin. Sue@contoso.onmicrosoft.com gibi ilk kullanıcı adlarını kullanarak eski e-postalarına ulaşabilirler.
   
-### <a name="onedrive-for-business-data"></a>OneDrive İş veri toplama:
+### <a name="onedrive-for-business-data"></a>OneDrive İş verileri:
 
-Kullanıcılardan Yeni OneDrive İş [kopyalamalarını/eşitlemelerini](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd) ve sonra yeni aboneliklerine yeniden eklemelerini iste.
+Kullanıcılardan [OneDrive İş içeriğini kendi bilgisayarlarına kopyalamalarını/eşitlemelerini](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd) isteyin ve ardından yeni aboneliklerine geri ekleyin.
 
 ### <a name="onenote"></a>OneNote 
 
-Kullanıcılardan Yeni [aboneliklerini yedeklemelerini OneNote](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) [Yedekten notları geri yüklemelerini](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) iste.
+Kullanıcılardan [OneNote'u yedeklemelerini](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) ve [notları yedekten yeni aboneliklerine geri yüklemelerini](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) isteyin.

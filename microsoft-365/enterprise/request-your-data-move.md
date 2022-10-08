@@ -15,12 +15,13 @@ f1.keywords:
 - NOCSH
 description: Mevcut Office 365 müşterileri, ülkelerinin Microsoft 365 hizmet verilerini yeni coğrafi bölgelerine taşımaları için son tarihten önce bir istek göndermelidir.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c4a3c2fb77fe3efb26f77ce7e905bba3c43724a0
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.collection: scotvorg
+ms.openlocfilehash: bffd6c99f4df0cc89ae064d49fcc9c97d9e4dd3c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67671115"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208710"
 ---
 # <a name="how-to-request-your-data-move"></a>Veri taşıma isteğinde bulunma
 

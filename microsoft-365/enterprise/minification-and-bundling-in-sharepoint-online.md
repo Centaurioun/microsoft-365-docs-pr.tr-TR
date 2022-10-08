@@ -9,6 +9,7 @@ ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: HTTP isteklerini ve SharePoint Online'da sayfaları yükleme süresini azaltmak için Web Essentials ile küçültme ve paketleme tekniklerini kullanmayı öğrenin.
-ms.openlocfilehash: 38149275f2f3987fe5c989b355fc1f5aa5368f69
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 8c27ce5da4fbfb6a69860f18a1ddfb423758e202
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67694513"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208732"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>SharePoint Online'da küçültme ve paketleme
 

@@ -5,11 +5,13 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -17,22 +19,22 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: Parolaları yönetmek için PowerShell kullanmayı öğrenin.
-ms.openlocfilehash: e980e9c4c2511ea1f84df870c790a61a047c3a90
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ce8a8520d43f4ea3254fb5fb2d0c5128fced54d0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091577"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185391"
 ---
 # <a name="manage-passwords-with-powershell"></a>PowerShell ile parolaları yönetme
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-Microsoft 365 parolaları yönetmek için Microsoft 365 yönetim merkezi alternatif olarak Microsoft 365 için PowerShell'i kullanabilirsiniz. 
+Microsoft 365'te parolaları yönetmek için Microsoft 365 yönetim merkezi alternatif olarak Microsoft 365 için PowerShell'i kullanabilirsiniz. 
 
 Bu makaledeki bir komut bloğu değişken değerleri belirtmenizi gerektirdiğinde bu adımları kullanın.
 
-1. Komut bloğunu panoya kopyalayın ve Not Defteri veya PowerShell Tümleşik Betik Ortamı'na (ISE) yapıştırın.
+1. Komut bloğunu panoya kopyalayın ve Not Defteri'ne veya PowerShell Tümleşik Betik Ortamı'na (ISE) yapıştırın.
 2. Değişken değerlerini doldurun ve "<" ve ">" karakterlerini kaldırın.
 3. Komutları PowerShell penceresinde veya PowerShell ISE'de çalıştırın.
 

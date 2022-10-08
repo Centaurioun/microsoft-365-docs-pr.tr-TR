@@ -13,15 +13,17 @@ ms.localizationpriority: medium
 ms.date: 08/22/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: f5df3cdfa8b7bb699126e9362de53a7cfa52b8fc
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 89bc4d056743c2f6f4628ff58feeb2ed4e97b16a
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67576241"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223842"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Kuruluşunuzu web tehditlerine karşı koruma
 

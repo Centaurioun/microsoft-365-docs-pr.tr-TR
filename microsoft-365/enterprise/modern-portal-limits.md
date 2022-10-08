@@ -9,6 +9,7 @@ ms.topic: interactive-tutorial
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Strat_O365_Enterprise
 - SPO_Content
 f1.keywords:
@@ -19,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: SharePoint Online'daki modern sitelere yönelik çağrıları SharePoint ve dış uç noktalara sınırlama gibi performans önerileri hakkında bilgi edinin.
-ms.openlocfilehash: 07a94786a5c3a7cc58a170b5f838962b08577e06
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 6155852acdb678d42b2e8f9db901d6a8893f7656
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67693377"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185347"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint Online modern portal sitesi sınırları
 

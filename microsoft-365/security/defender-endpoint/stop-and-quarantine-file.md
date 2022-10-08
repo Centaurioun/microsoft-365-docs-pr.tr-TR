@@ -11,17 +11,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: 4e301b2b73b2a30b40ca281e2e383cadedbe19ff
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f1d24fd86502fdf363a1efe30ec17accce1922ff
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67704028"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224150"
 ---
 # <a name="stop-and-quarantine-file-api"></a>Dosya API'lerini durdurma ve karantinaya al
 
@@ -52,7 +54,7 @@ Cihazda bir dosyanın yürütülmesini durdurun ve silin.
 >
 > - Üzerinde işlem yaptığınız cihaz Windows 10, sürüm 1703 veya sonraki bir sürümü çalıştırıyor veya Windows 11
 > - Dosya güvenilen üçüncü taraf yayımcılara ait değil veya Microsoft tarafından imzalanmaz
-> - Microsoft Defender Virüsten Koruma en azından Pasif modda çalışıyor olmalıdır. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma uyumluluğu](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - Microsoft Defender Virüsten Koruma en azından Pasif modda çalışıyor olmalıdır. Daha fazla bilgi için bkz[. virüsten koruma uyumluluğu Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 
 ## <a name="permissions"></a>İzinler
@@ -71,6 +73,8 @@ Temsilci (iş veya okul hesabı)|Machine.StopAndQuarantine|'Durdur ve karantinay
 >
 > - Kullanıcının en az şu rol iznine sahip olması gerekir: 'Etkin düzeltme eylemleri' (Daha fazla bilgi için bkz [. Rolleri oluşturma ve yönetme](user-roles.md) )
 > - Kullanıcının cihaz grubu ayarlarına göre cihaza erişimi olmalıdır (Daha fazla bilgi için bkz [. Cihaz grupları oluşturma ve yönetme](machine-groups.md) )
+>
+> Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
 
 ## <a name="http-request"></a>HTTP isteği
 

@@ -1,5 +1,5 @@
 ---
-title: Başka bir kullanıcıya posta kutusu izinleri verme - Yönetici Yardımı
+title: Başka bir kullanıcıya posta kutusu izinleri verme - yardım Yönetici
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -24,15 +25,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
-description: Microsoft 365 kullanıcıya başka bir kullanıcının posta kutusuna erişme hakkı verin. Bu, kullanıcının diğer kullanıcının posta kutusundan e-posta okumasına ve göndermesine olanak tanır.
-ms.openlocfilehash: 5b770b2967072ab6cc8b8abfec8176a7b6aac2c9
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+description: Microsoft 365 kullanıcısına başka bir kullanıcının posta kutusuna erişme hakkı verin. Bu, kullanıcının diğer kullanıcının posta kutusundan e-posta okumasına ve göndermesine olanak tanır.
+ms.openlocfilehash: 6370e147ad63b7400627ea222f98f94bdd2638c8
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042384"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203431"
 ---
-# <a name="give-mailbox-permissions-to-another-microsoft-365-user---admin-help"></a>Başka bir Microsoft 365 kullanıcıya posta kutusu izinleri verme - Yönetici yardımı
+# <a name="give-mailbox-permissions-to-another-microsoft-365-user---admin-help"></a>Başka bir Microsoft 365 kullanıcısına posta kutusu izinleri verme - yardım Yönetici
 
 Yönetici olarak, bir kullanıcıya başka bir kullanıcının posta kutusuna erişim hakkı sağlanması için şirket gereksinimleriniz olabilir. Örneğin, bir asistanın müdürünün posta kutusundan e-posta göndermesini ve okumasını sağlamak ya da kullanıcılarınızdan birine başka bir kullanıcı adına e-posta gönderme olanağı vermek isteyebilirsiniz. Bu konu başlığı altında bunu nasıl yapacağınız gösterilir.
   
@@ -43,11 +44,11 @@ Paylaşılan posta kutularını oluşturma ve yönetme hakkında bilgi arıyorsa
     
 ## <a name="looking-to-set-up-mailbox-permissions"></a>Posta kutusu izinlerini ayarlamak mı istiyorsunuz?
 
-Posta kutusu izinleri başka bir kullanıcının posta kutusuna okuma/yazma erişimi vermenizi sağlar. Aşağıdaki makaleler, bu özelliği ayarlamak ve kullanmak için ihtiyacınız olan yardımı sağlayabilir:
+Mailbox permissions allow you to give read/write access to a mailbox to another user. The articles below might give you the help you need to set up and use this feature:
   
  **İzinleri ayarlama:**
   
-İzinleri ayarlamanın ilk adımı, belirli bir posta kutusunda diğer kullanıcının hangi eylemleri gerçekleştirmesine izin vermek istediğinize karar vermektir. Kullanıcının posta kutusundaki e-postaları okumasına, başka bir kullanıcı adına e-posta göndermesine veya o posta kutusundan geliyormuş gibi görünen e-postalar göndermesine izin verebilirsiniz. Bu izin türlerinden her birini ayarlama konusunda bilgi için aşağıdaki makalelere bakın:
+The first step to setting up permissions is deciding which actions you want to allow the other user to take in the given mailbox. You can allow a user to read emails from the mailbox, send emails on behalf of another user, and send emails as if they were sent from that mailbox. Refer to the following articles on how to set up each type of permissions:
   
 - [Başka bir kullanıcının posta kutusundan e-posta okuma](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
@@ -116,7 +117,7 @@ Size erişim verildikten sonra, posta kutusuna erişmenizin birkaç farklı yolu
 
 
 > [!NOTE]
-> **okuma** ve **yönetme** izinleri <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">, Exchange yönetim merkezinde</a> verildiğinde **Tam Erişim** izni olarak adlandırılır. Bu izin, atanan kullanıcı posta kutusunun okunmasını ve iznin atandığı kullanıcı posta kutusunda e-postaları yönetmesini sağlar. Tam Erişim izni, **Farklı Gönder** veya **Adına gönder**  izinleri vermez.
+> **Okuma** ve **Yönetme** izinleri <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">, Exchange yönetim merkezinde</a> verildiğinde **Tam Erişim** izni olarak adlandırılır. Bu izin, atanan kullanıcı posta kutusunun okunmasını ve iznin atandığı kullanıcı posta kutusunda e-postaları yönetmesini sağlar. Tam Erişim izni, **Farklı Gönder** veya **Adına gönder**  izinleri vermez.
 
 ::: moniker-end
 
@@ -168,7 +169,7 @@ Size erişim verildikten sonra, posta kutusuna erişmenizin birkaç farklı yolu
 ::: moniker-end
 
 > [!NOTE]
-> Posta kutusunda *HiddenFromAddressListsEnabled* parametresi **True** olarak ayarlanmış Outlook Masaüstü istemcisinde Farklı **Gönder** ve **Adına Gönder** izinleri çalışmaz, çünkü posta kutusunun Genel Adres Listesi aracılığıyla Outlook görünür olmasını gerektirir.
+> Posta kutusunda *HiddenFromAddressListsEnabled* parametresi **True** olarak ayarlandığından, Farklı **Gönder** ve **Adına Gönder** izinleri Outlook Masaüstü istemcisinde çalışmaz, çünkü posta kutusunun Genel Adres Listesi aracılığıyla Outlook'ta görünür olmasını gerektirir.
 
 ## <a name="related-content"></a>İlgili içerik
   

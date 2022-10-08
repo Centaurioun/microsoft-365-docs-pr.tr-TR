@@ -7,9 +7,10 @@ author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
@@ -17,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Hesap devre dışı hatasını düzeltmek için lisanssız kullanıcılara lisans eklemeyi öğrenin.
-ms.openlocfilehash: ba5b34e6e086d574a6f1e879276d7405c1da8625
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 7ee619c48f419f0246c24d84d6bb5cb87e85913a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466690"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203101"
 ---
 # <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>Web üzerinde Outlook'de hesap devre dışı hatası alma
 

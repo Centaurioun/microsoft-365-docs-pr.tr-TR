@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -28,12 +29,12 @@ ms.custom:
 search.appverid: MET150
 description: Belirli kullanıcılara ürün lisansları atamak veya belirli bir ürüne kullanıcı lisansları atamak isteyip istemediğinize bağlı olarak lisans atayın.
 ms.date: 07/12/2022
-ms.openlocfilehash: ab210982783c9c6e5de6d5a7569960a47c05ef84
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 1e21f48ac52cfe75dd73ddc24d4d313de6ff48cc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660629"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68193883"
 ---
 # <a name="assign-microsoft-365-licenses-to-users"></a>Kullanıcılara Microsoft 365 lisansları atama
 

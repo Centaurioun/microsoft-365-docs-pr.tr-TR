@@ -5,36 +5,37 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: mediumn
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
-description: Olaylar Teams veya olaylar hakkında bilgi için denetim izleme Microsoft 365 Teams.
-ms.openlocfilehash: 646ecccea4f45fb51efe93073d452045448d1d5b
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
+description: Microsoft 365 Teams ile ilgili olaylar veya öneriler hakkında bilgi için Teams izlemeyi kullanın.
+ms.openlocfilehash: b77f84f21398b0186518c8749680c7b7e3932a98
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64520868"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68208754"
 ---
 # <a name="microsoft-365-teams-monitoring"></a>Microsoft 365 Teams izleme
 
-Microsoft Teams izleme, yakın gerçek zamanlı bilgilerle aşağıdaki kurumsal senaryoları destekler:
+Microsoft Teams izlemesi, neredeyse gerçek zamanlı bilgilerle aşağıdaki kuruluş senaryolarını destekler:
 
-![Denetim İzleme için kuruluş Teams senaryoları.](../media/microsoft-365-exchange-monitoring/TeamsMonitoring1.png)
+![Teams İzleme için kuruluş düzeyinde senaryolar.](../media/microsoft-365-exchange-monitoring/TeamsMonitoring1.png)
 
-- **Uygulama Başlatma'ya seçin**. Kullanıcıların Teams istemcisini açma sayısı. Veriler her 30 dakikada bir örnek alınır ve alınır.
+- **Uygulama Başlatma**. Kullanıcıların Teams istemcisini hatasız açma sayısı. Veriler her 30 dakikada bir örneklenip alınır.
 
-- **Sohbet edin**. Bir metinde gönderilen ve teslim edilen sohbet Teams. Veriler her 30 dakikada bir örnek alınır ve alınır.
+- **Sohbet edin**. Teams'de gönderilen ve teslim edilen sohbet iletilerinin sayısı. Veriler her 30 dakikada bir örneklenip alınır.
 
-- **Toplantıya Katıl'a.** Kullanıcıların hata olmadan toplantılara Teams sayısı. Veriler her 30 dakikada bir örnek alınır ve alınır.
+- **Toplantıya Katıl'a tıklayın**. Kullanıcıların Teams toplantılara hatasız katılma sayısı. Veriler her 30 dakikada bir örneklenip alınır.
 
-Yöneticiler, Microsoft tarafından bildirilen kullanım verileriyle ilgili sorunları birbiriyle bağlantılı yapmak ve kuruluşların üzerindeki gerçek etkiyi onaylamak için bu bilgileri kullanabilirler. Ayrıca, yöneticiler son iki hafta içinde yapılan kullanım verilerini görüntüp herhangi bir olası kullanımı tanımlayabilir.
+Yöneticiler, microsoft tarafından bildirilen sorunları kullanım verileriyle ilişkilendirmek için bu bilgileri kullanarak kuruluşlarında gerçek bir etki olduğunu onaylayabilir. Ayrıca yöneticiler, anomalileri belirlemek için son iki haftalık kullanım verilerine ait tüm kullanımları görüntüleyebilir.
 
-![İzleme Teams örneği.](../media/microsoft-365-exchange-monitoring/TeamsMonitoring2.png)
+![Teams İzleme örneği.](../media/microsoft-365-exchange-monitoring/TeamsMonitoring2.png)

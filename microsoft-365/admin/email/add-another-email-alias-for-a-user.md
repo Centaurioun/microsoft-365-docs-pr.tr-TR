@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -24,18 +25,18 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'İşletmeler için Microsoft 365 hesabınızla ilişkilendirilmiş, e-posta diğer adı olarak adlandırılan birden fazla e-posta adresine nasıl sahip olabileceğinizi öğrenin. '
-ms.openlocfilehash: 2951b5eef21748ace22bee50afb24f86123fa46a
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 01c2871c2918dc9be9f1eb29f44bbede19ea0afb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437469"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197997"
 ---
 # <a name="add-another-email-alias-for-a-microsoft-365-business-subscription-user"></a>Microsoft 365 iş aboneliği kullanıcısı için başka bir e-posta diğer adı ekleme
   
-Bu makale, iş abonelikleri olan Microsoft 365 yöneticilere yöneliktir. Ev kullanıcılarına yönelik değildir.
+Bu makale, iş abonelikleri olan Microsoft 365 yöneticilerine yöneliktir. Ev kullanıcılarına yönelik değildir.
   
-Microsoft 365 birincil e-posta adresi genellikle bir kullanıcının hesabı oluşturulduğunda atanmış olan e-posta adresidir. Kullanıcı başka birine e-posta gönderdiğinde, birincil e-posta adresi normalde e-posta uygulamalarının  *Kimden*  alanında gösterilen adrestir. Ayrıca, iş için Microsoft 365 hesaplarıyla ilişkilendirilmiş birden fazla e-posta adresi de olabilir. Bu ek adresler, diğer ad olarak adlandırılır. 
+Microsoft 365'teki birincil e-posta adresi genellikle bir kullanıcının hesabı oluşturulduğunda atanmış olan e-posta adresidir. Kullanıcı başka birine e-posta gönderdiğinde, birincil e-posta adresi normalde e-posta uygulamalarının  *Kimden*  alanında gösterilen adrestir. İş için Microsoft 365 hesaplarıyla ilişkilendirilmiş birden fazla e-posta adresi de olabilir. Bu ek adresler, diğer ad olarak adlandırılır. 
   
 Örneğin Jenna'nın e-posta adresi jenna@contosoco.com olduğunu, ancak bazı kişilerin ona bu adla başvurması nedeniyle jen@contosoco.com de e-posta almak istediğini varsayalım. Her iki e-posta adresinin de Jenna'nın gelen kutusuna gitmesi için onun için diğer adlar oluşturabilirsiniz.
   
@@ -45,7 +46,7 @@ Bir kullanıcı için 400 adede kadar diğer ad oluşturabilirsiniz. Bunun için
 > Birden çok kişinin info@NodPublishers.com veya sales@NodPublishers.com gibi tek bir e-posta adresine gönderilen e-postaları yönetmesini istiyorsanız, paylaşılan bir posta kutusu oluşturun. Daha fazla bilgi için bkz. [Paylaşılan posta kutusu oluşturma](create-a-shared-mailbox.md).
 
 > [!TIP]
-> Bu konuda verilen adımlarla ilgili yardıma ihtiyacınız varsa[bir Microsoft küçük işletme uzmanıyla çalışmayı](https://go.microsoft.com/fwlink/?linkid=2186871) göz önünde bulundurun. İşletme Yardımı ile, işletmenizi büyütürken işe alımdan gündelik kullanıma kadar her aşamada siz ve çalışanlarınız günün 24 saati küçük işletme uzmanlarına erişebilirsiniz.
+> Bu konuda verilen adımlarla ilgili yardıma ihtiyacınız varsa[bir Microsoft küçük işletme uzmanıyla çalışmayı](https://go.microsoft.com/fwlink/?linkid=2186871) göz önünde bulundurun. İşletme Yardımı ile, işletmenizi büyütürken katılımdan gündelik kullanıma kadar her aşamada siz ve çalışanlarınız günün 24 saati küçük işletme uzmanlarına erişebilirsiniz.
   
 ## <a name="add-email-aliases-to-a-user"></a>Bir kullanıcıya e-posta diğer adı ekleme
 
@@ -69,12 +70,12 @@ Kullanıcıya e-posta diğer adları eklemek için Genel Yönetici haklarına sa
    >  **Bu kullanıcı yerel Active Directory'nizle eşitlenir hata iletisini alırsanız. Bazı ayrıntılar yalnızca yerel Active Directory'niz aracılığıyla düzenlenebilir**; Bu, Active Directory'nin eşitlenmiş kullanıcılardaki öznitelikler için yetkili olduğu, şirket içi Active Directory öznitelikleri değiştirmeniz gerektiği anlamına gelir.
   
     > [!TIP]
-    > E-posta diğer adı, açılan listeden bir etki alanıyla bitmelidir. Listeye başka bir etki alanı adı eklemek için bkz. [Microsoft 365 etki alanı ekleme](../setup/add-domain.md). 
+    > E-posta diğer adı, açılan listeden bir etki alanıyla bitmelidir. Listeye başka bir etki alanı adı eklemek için bkz. [Microsoft 365'e etki alanı ekleme](../setup/add-domain.md). 
   
      
 5. İşiniz bittiğinde **Değişiklikleri kaydet'i** seçin.
     
-6. Yeni diğer adların Microsoft 365 boyunca doldurulmalarını 24 saat bekleyin.
+6. Yeni diğer adların Microsoft 365 genelinde doldurulmalarını 24 saat bekleyin.
     
     Artık kullanıcının birincil adresi ve diğer adı olacaktır. Örneğin, Eliza Hoffman'ın birincil adresi olan Eliza@NodPublishers.com ve diğer adı Sales@NodPublishers.com gönderilen tüm postalar Eliza'nın Gelen Kutusu'na gider.
     
@@ -92,7 +93,7 @@ Aboneliğinizi GoDaddy'den veya başka bir iş ortağından satın aldıysanız,
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>Proxy adresinden kolayca e-posta gönderme
 
-Temmuz 2021'de kullanıcıların Web üzerinde Outlook kullanırken diğer adlarından kolayca göndermelerini sağlayan yeni bir özellik kullanıma sunulacaktır. Özellik kiracı yöneticisinin cmdlet'ini `Set-OrganizationConfig -SendFromAliasEnabled $true` kullandığı bir kiracıya dağıtıldığında, kiracı içindeki kullanıcılar her girişin Outlook ayarlarındaki diğer adlara karşılık geldiği onay kutuları listesine erişebilir. Diğer ad seçildiğinde, Oluştur formundaki Kimden açılan listesinde görünür.
+Temmuz 2021'de kullanıcıların Web üzerinde Outlook kullanırken diğer adlarından kolayca göndermelerini sağlayan yeni bir özellik kullanıma sunulacaktır. Özellik kiracı yöneticisinin cmdlet'ini `Set-OrganizationConfig -SendFromAliasEnabled $true` kullandığı bir kiracıya dağıtıldığında, kiracı içindeki kullanıcılar, her girişin Outlook ayarlarında diğer adlara karşılık geldiği onay kutularının listesine erişebilir. Diğer ad seçildiğinde, Oluştur formundaki Kimden açılan listesinde görünür.
   
 ## <a name="related-content"></a>İlgili içerik
 
@@ -100,4 +101,4 @@ Temmuz 2021'de kullanıcıların Web üzerinde Outlook kullanırken diğer adlar
 
 [Kullanıcı adını ve e-posta adresini değiştirme](../add-users/change-a-user-name-and-email-address.md) (makale)
 
-[Microsoft 365'de e-posta iletmeyi yapılandırma](configure-email-forwarding.md) (makale)
+[Microsoft 365'te e-posta iletmeyi yapılandırma](configure-email-forwarding.md) (makale)

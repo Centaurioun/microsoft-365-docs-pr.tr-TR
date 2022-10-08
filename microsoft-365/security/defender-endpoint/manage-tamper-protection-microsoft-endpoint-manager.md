@@ -18,15 +18,15 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.subservice: mde
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 1e5ade558f8eca53c1d0b698bd182dea42c396d0
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: d939c942d77a1fd2b160aff91f4583f703ca6815
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67689733"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68223952"
 ---
 # <a name="manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager"></a>Microsoft Endpoint Manager kullanarak kuruluşunuz için kurcalama korumasını yönetme
 
@@ -61,7 +61,7 @@ Kuruluşunuz Microsoft Endpoint Manager (MEM) kullanıyorsa, Microsoft Endpoint 
 
 2. Aşağıdaki ayarı içeren bir profil oluşturun:
 
-    - **Microsoft Defender'ın devre dışı bırakılmasını önlemek için kurcalama korumasını etkinleştirme: Etkinleştir**
+    - **Microsoft Defender devre dışı bırakılmasını önlemek için kurcalama korumasını etkinleştirin: Etkinleştir**
 
 3. Profili bir veya daha fazla gruba atayın.
 

@@ -15,16 +15,17 @@ manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
 ms.collection:
-- M365-security-compliance
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
 search.appverid: met150
-ms.openlocfilehash: ec8a5c030e56e9faae5d94dc636bea4c9c2351a7
-ms.sourcegitcommit: 95ac076310ab9006ed92c69938f7ae771cd10826
+ms.openlocfilehash: b1eaf92219ba5641cd676e69558189a9cb377f51
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67850410"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68175006"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Saldırı yüzeyi azaltma kurallarını etkinleştirme
 
@@ -60,7 +61,7 @@ Windows'un aşağıdaki sürümlerinden ve sürümlerinden herhangi birini çal�
 
 Saldırı yüzeyi azaltma kurallarının özellik kümesinin tamamını kullanmak için şunları yapmanız gerekir:
 
-- Birincil AV olarak Microsoft Defender Virüsten Koruma (gerçek zamanlı koruma açık)
+- Microsoft Defender Virüsten Koruma birincil AV olarak (gerçek zamanlı koruma açık)
 - [Üzerinde Bulut Teslim Koruması](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) (bazı kurallar bunu gerektirir)
 - E5 veya E3 Lisansını Windows 10 Enterprise
 
@@ -108,9 +109,9 @@ ASR kuralları ortam değişkenlerini ve joker karakterleri destekler. Joker kar
 
 2. MEM tarafından yönetilen cihazlar için saldırı yüzeyi azaltma kuralları artık her cihaz için bir ilke üst kümesi oluşturmak üzere farklı ilkelerden ayarların birleştirilmesine yönelik davranışı destekliyor. Yalnızca çakışma olmayan ayarlar birleştirilirken, çakışan ayarlar kuralların üst kümesine eklenmez. Daha önce, iki ilkede tek bir ayar için çakışmalar varsa, her iki ilke de çakışıyor olarak işaretlenir ve her iki profilden hiçbir ayar dağıtılmazdı. Saldırı yüzeyi azaltma kuralı birleştirme davranışı aşağıdaki gibidir:
    - Aşağıdaki profillerden gelen saldırı yüzeyi azaltma kuralları, kuralların geçerli olduğu her cihaz için değerlendirilir:
-     - Cihazlar > Yapılandırma ilkesi > Endpoint protection profili **> Microsoft Defender Exploit Guard** > [Saldırı Yüzeyi Azaltma](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
+     - Cihazlar > Endpoint protection profili > Yapılandırma ilkesi, **Exploit Guard** > [Saldırı Yüzeyi Azaltma](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules) Microsoft Defender >.
      - Uç nokta güvenliği > **Saldırı yüzeyi azaltma ilkesi** > [Saldırı yüzeyi azaltma kuralları](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
-     - Uç nokta güvenliği > **Microsoft Defender ATP Temel**[Saldırı Yüzeyi Azaltma Kuralları > Güvenlik temelleri](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) > .
+     - Uç nokta güvenliği > ATP Temel [Saldırı Yüzeyi Azaltma Kuralları](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) > güvenlik **temelleri** >  Microsoft Defender.
    - Çakışması olmayan ayarlar, cihaz için bir ilke üst kümesine eklenir.
    - İki veya daha fazla ilke çakışan ayarlara sahip olduğunda, çakışan ayarlar birleştirilmiş ilkeye eklenmezken, çakışmayan ayarlar bir cihaz için geçerli olan üst küme ilkesine eklenir.
    - Yalnızca çakışan ayarlar için yapılandırmalar geri tutulur.

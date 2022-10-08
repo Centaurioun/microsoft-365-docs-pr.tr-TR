@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Microsoft için web.com'da etki alanınızı doğrulamayı ve e-posta, Skype Kurumsal Online ve diğer hizmetler için DNS kayıtlarını ayarlamayı öğrenin.
-ms.openlocfilehash: d247ee24c107318289dfbca0ee741d5a04725d25
-ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
+ms.openlocfilehash: 06b1374916bcf2105db09715b125d84992bac069
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563241"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198107"
 ---
 # <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>web.com'deki DNS kayıtlarınızı Microsoft 365'e bağlama
 
@@ -37,7 +38,7 @@ DNS barındırma sağlayıcınız web.com ise, etki alanınızı doğrulamak ve 
 Bu kayıtları web.com ekledikten sonra, etki alanınız Microsoft hizmetleriyle çalışacak şekilde ayarlanır.
 
 > [!NOTE]
-> Genellikle, DNS değişikliklerinin etkili olması yaklaşık 15 dakika sürer. Bununla birlikte, yaptığınız değişikliğin İnternet'in DNS sistemi genelinde güncelleştirilmesi bazen daha uzun sürebilir. DNS kayıtlarını ekledikten sonra posta akışı sorunlarıyla veya başka sorunlarla karşılaşırsanız, [Etki alanı adınızı veya DNS kayıtlarınızı değiştirdikten sonra sorunları giderme](../get-help-with-domains/find-and-fix-issues.md) konusuna bakın.
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="change-your-domains-nameserver-ns-records"></a>Etki alanınızın ad sunucusu (NS) kayıtlarını değiştirin
 
@@ -72,7 +73,7 @@ Etki alanı kayıt şirketinizin web sitesinde etki alanınızın ad sunucuları
 Etki alanınızı Microsoft ile kullanmadan önce, etki alanına sahip olduğunuzdan emin olmamız gerekir. Etki alanı kayıt şirketinizde hesabınızda oturum açıp DNS kaydını oluşturabilmek, Microsoft'a etki alanının sahibi olduğunuzu kanıtlar.
 
 > [!NOTE]
-> Bu kayıt yalnızca etki alanının sahibi olduğunuzu doğrulamak için kullanılır; başka hiçbir şeyi etkilemez. Dilerseniz bu kaydı daha sonra silebilirsiniz.
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
 1. Başlamak için [bu bağlantıyı](https://checkout.web.com/manage-it/index.jsp) kullanarak web.com'deki etki alanları sayfanıza gidin. Önce oturum açın.
 
@@ -121,7 +122,7 @@ Microsoft 365'te kaydı doğrulamak için:
 1. **Etki alanını doğrula** sayfasında **Doğrula'yı** seçin.
 
 > [!NOTE]
-> Genellikle, DNS değişikliklerinin etkili olması yaklaşık 15 dakika sürer. Bununla birlikte, yaptığınız değişikliğin İnternet'in DNS sistemi genelinde güncelleştirilmesi bazen daha uzun sürebilir. DNS kayıtlarını ekledikten sonra posta akışı sorunlarıyla veya başka sorunlarla karşılaşırsanız, [Etki alanı adınızı veya DNS kayıtlarınızı değiştirdikten sonra sorunları giderme](../get-help-with-domains/find-and-fix-issues.md) konusuna bakın.
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Etki alanınız için e-postanın Microsoft'a gelmesi için bir MX kaydı ekleyin
 
@@ -260,7 +261,7 @@ Bu seçeneği yalnızca kuruluşunuz Microsoft Teams'in yanı sıra sohbet, konf
 
     |Tür|Hizmet|Protokol|Ağırlık|Bağlantı noktası|Hedef|Öncelik|TTL|
     |---|---|---|---|---|---|---|---|
-    |SRV|_sip|TLS|100|443|sipdir.online.lync.com <br/> **Bu değer nokta (.) ile bitemez**|1|1 Saat|
+    |SRV|_Sıp|TLS|100|443|sipdir.online.lync.com <br/> **Bu değer nokta (.) ile bitemez**|1|1 Saat|
     |SRV|_sipfederationtls|TCP|100|5061|sipfed.online.lync.com <br/> **Bu değer nokta (.) ile bitemez**|1|1 Saat|
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-srv-add.png" alt-text="Tablodaki değerleri yazın veya kopyalayıp SRV kayıt penceresine yapıştırın.":::
@@ -310,7 +311,7 @@ Bu seçeneği yalnızca kuruluşunuz Microsoft Teams'in yanı sıra sohbet, konf
 1. Tablonun ikinci satırındaki değerleri kopyalayarak diğer CNAME kaydını ekleyin.
 
 > [!NOTE]
-> Genellikle, DNS değişikliklerinin etkili olması yaklaşık 15 dakika sürer. Bununla birlikte, yaptığınız değişikliğin İnternet'in DNS sistemi genelinde güncelleştirilmesi bazen daha uzun sürebilir. DNS kayıtlarını ekledikten sonra posta akışı sorunlarıyla veya başka sorunlarla karşılaşırsanız, [Etki alanı adınızı veya DNS kayıtlarınızı değiştirdikten sonra sorunları giderme](../get-help-with-domains/find-and-fix-issues.md) konusuna bakın.
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Gelişmiş seçenek: Microsoft 365 için Intune ve Mobil Cihaz Yönetimi
 
@@ -354,4 +355,4 @@ Bu hizmet, etki alanınıza bağlanan mobil cihazları güvenli ve uzaktan yöne
 1. Tablonun ikinci satırındaki değerleri kopyalayarak diğer CNAME kaydını ekleyin.
 
 > [!NOTE]
-> Genellikle, DNS değişikliklerinin etkili olması yaklaşık 15 dakika sürer. Bununla birlikte, yaptığınız değişikliğin İnternet'in DNS sistemi genelinde güncelleştirilmesi bazen daha uzun sürebilir. DNS kayıtlarını ekledikten sonra posta akışı sorunlarıyla veya başka sorunlarla karşılaşırsanız, [Etki alanı adınızı veya DNS kayıtlarınızı değiştirdikten sonra sorunları giderme](../get-help-with-domains/find-and-fix-issues.md) konusuna bakın.
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).

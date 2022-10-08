@@ -7,26 +7,28 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
-description: Ülkeniz veya bölgeniz için de destek ile nasıl bağlantı kuracaklarını öğrenin.
+description: Ülkeniz veya bölgeniz için desteğe nasıl başvuracağınızı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e016c10111144a11980900e6aeea7ef8a4b0a6f0
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: a92aefc65fd57b2c6335dca1db5d5f1cdebf96f1
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "62999072"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68196457"
 ---
-# <a name="contact-support-for-senegal"></a>Senegal için destek ile iletişime geçin
+# <a name="contact-support-for-senegal"></a>Senegal için desteğe başvurun
 
 [Başka bir ülke veya bölge bulun](../get-help-support.md).
 
 ## <a name="phone-number"></a>Telefon numarası
 800 103 072
 
-Aramadan sonra
+Çevirdikten sonra
 
 877 867 2337
 
@@ -39,6 +41,6 @@ Fransızca: Mon-Fri 08:00-16:00
 
 ### <a name="technical-support"></a>Teknik Destek:
 
-Fransızca: Mon-Fri 07:00-17:00
+Fransızca: Mon-Fri 07:00-20:00
 
 İngilizce: Haftanın 7 günü, günde 24 saat

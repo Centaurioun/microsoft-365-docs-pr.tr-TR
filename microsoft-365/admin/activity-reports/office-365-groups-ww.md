@@ -1,13 +1,14 @@
 ---
 title: Microsoft 365 yönetim merkezi grupları raporları
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Kuruluşunuzdaki grupların etkinliği hakkında içgörüler elde etmek ve kaç grubun oluşturulup kullanıldığını görmek için bir Microsoft 365 Grupları raporu alın.
-ms.openlocfilehash: dce585ddb496be67b1045baa4b7cea0dc3b7fc24
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: bd03e5a0c5219bbfc46a9834db0d83d454d7cf40
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662690"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68198129"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Yönetim merkezinde Microsoft 365 Raporları - Microsoft 365 grupları
 

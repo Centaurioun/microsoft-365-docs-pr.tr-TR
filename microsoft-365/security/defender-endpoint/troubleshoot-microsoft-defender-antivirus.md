@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender Virüsten Koruma olay kimlikleri ve hata kodları
-description: Microsoft Defender Virüsten Koruma olay kimliklerinin ve hatalarının nedenlerini ve çözümlerini arayın
+title: virüsten koruma olay kimliklerini ve hata kodlarını Microsoft Defender
+description: Microsoft Defender Virüsten Koruma olay kimlikleri ve hataları için nedenleri ve çözümleri arayın
 keywords: olay, hata kodu, siem, günlüğe kaydetme, sorun giderme, wef, windows olay iletme
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -14,14 +14,16 @@ ms.date: 08/04/2022
 ms.reviewer: ''
 manager: dansimp
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 search.appverid: met150
-ms.openlocfilehash: 14eef61a330c1317dd5eb9e98694fec18ad2ce41
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: bc2cdc24b3d2001ba04b38e52e19c1ef02071736
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686691"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68224084"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma ile ilgili sorunları gidermek için olay günlüklerini ve hata kodlarını inceleyin
 
@@ -40,18 +42,18 @@ Microsoft Defender Virüsten Koruma ile ilgili bir sorunla karşılaşırsanız,
 Tablo listesi:
 
 - [Microsoft Defender Virüsten Koruma olay kimlikleri](#windows-defender-av-ids) (bunlar Windows 10, Windows 11 ve Windows Server 2016 için geçerlidir)
-- [Microsoft Defender Virüsten Koruma istemcisi hata kodları](#error-codes)
+- [virüsten koruma istemcisi hata kodlarını Microsoft Defender](#error-codes)
 - [İç Microsoft Defender Virüsten Koruma istemcisi hata kodları (Geliştirme ve test sırasında Microsoft tarafından kullanılır)](#internal-error-codes)
 
 
 <a id="windows-defender-av-ids"></a>
-## <a name="microsoft-defender-antivirus-event-ids"></a>Microsoft Defender Virüsten Koruma olay kimlikleri
+## <a name="microsoft-defender-antivirus-event-ids"></a>virüsten koruma olayı kimliklerini Microsoft Defender
 
 Microsoft Defender Virüsten Koruma, Windows olay günlüğüne olay kimliklerini kaydeder.
 
 Olay günlüğünü doğrudan görüntüleyebilir veya üçüncü taraf güvenlik bilgileri ve olay yönetimi (SIEM) aracınız varsa, uç noktalarınızdaki belirli olayları ve hataları gözden geçirmek için [Microsoft Defender Virüsten Koruma istemci olay kimliklerini](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) de kullanabilirsiniz.
 
-Bu bölümdeki tabloda ana Microsoft Defender Virüsten Koruma olay kimlikleri listelenir ve mümkün olduğunda hatayı düzeltmek veya çözmek için önerilen çözümler sağlanır.
+Bu bölümdeki tabloda Virüsten Koruma olay kimlikleri Microsoft Defender ana listelenmiş ve mümkün olduğunda hatayı düzeltmek veya çözmek için önerilen çözümler sağlanmıştır.
 
 ## <a name="to-view-a-microsoft-defender-antivirus-event"></a>Microsoft Defender Virüsten Koruma olayını görüntülemek için
 
@@ -616,7 +618,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma karantinadan bir öğeyi sildi.<br/>Daha fazla bilgi için aşağıdakilere bakın:
+Microsoft Defender Virüsten Koruma bir öğeyi karantinadan sildi.<br/>Daha fazla bilgi için aşağıdakilere bakın:
 <dl>
 <dt>Adı: &lt; Tehdit adı&gt;</dt>
 <dt>kimliği: &lt;Tehdit Kimliği&gt;</dt>
@@ -658,7 +660,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma, bir öğeyi karantinadan silmeye çalışırken bir hatayla karşılaştı.
+Microsoft Defender Virüsten Koruma bir öğeyi karantinadan silmeye çalışırken bir hatayla karşılaştı.
 Daha fazla bilgi için aşağıdakilere bakın:
 <dl>
 <dt>Adı: &lt; Tehdit adı&gt;</dt>
@@ -703,7 +705,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma, kötü amaçlı yazılım geçmişini ve istenmeyebilecek diğer yazılımları kaldırdı.
+Microsoft Defender Virüsten Koruma, kötü amaçlı yazılım geçmişini ve diğer istenmeyebilecek yazılımları kaldırdı.
 <dl>
 <dt>Saat: Olayın gerçekleştiği zaman, örneğin geçmişin temizlenme zamanı. Bu parametre tehdit olaylarında kullanılmaz, böylece düzeltme süresi veya bulaşma süresiyle ilgili bir karışıklık olmaz. Bunlar için, bunları özellikle Eylem Zamanı veya Algılama Zamanı olarak adlandırıyoruz.</dt> 
 <dt>Kullanıcı: &lt; Etki alanı&gt;\&lt; Kullanıcı&gt;</dt>
@@ -893,7 +895,7 @@ UAC</dt>
 Kullanıcı eylemi:
 </td>
 <td >
-Eylem gerekmez. Microsoft Defender Virüsten Koruma bu tehditle ilgili rutin işlemleri askıya alabilir ve gerçekleştirebilir. Tehdidi el ile kaldırmak istiyorsanız, Microsoft Defender Virüsten Koruma arabiriminde <b>Bilgisayarı Temizle'ye</b> tıklayın.
+Eylem gerekmez. Microsoft Defender Virüsten Koruma bu tehdit üzerinde askıya alabilir ve düzenli işlem yapabilir. Tehdidi el ile kaldırmak istiyorsanız Virüsten Koruma arabirimi Microsoft Defender <b>Bilgisayarı Temizle'ye</b> tıklayın.
 </td>
 </tr>
 <tr>
@@ -976,7 +978,7 @@ UAC</dt>
 <dt>Hata Kodu: &lt;Hata kodu&gt; Tehdit durumuyla ilişkili sonuç kodu. Standart HRESULT değerleri.</dt> 
 <dt>Hata Açıklaması: &lt; Hata açıklaması&gt; Hatanın açıklaması. </dt> 
 <dt>İmza Sürümü: &lt; Tanım sürümü&gt;</dt>
-<dt>Altyapısı Sürümü: &lt;Antimalware Engine sürüm&gt;</dt> NOT: Microsoft Defender Virüsten Koruma, Microsoft Security Essentials, Kötü Amaçlı Yazılımları Temizleme Aracı veya System Center Endpoint Protection bir kötü amaçlı yazılım algılasa, kötü amaçlı yazılımın sahip olabileceği aşağıdaki sistem ayarlarını ve hizmetlerini geri yükler Değişti:<ul>
+<dt>Altyapısı Sürümü: &lt;Antimalware Engine sürüm&gt;</dt> NOT: Virüsten Koruma, Microsoft Security Essentials, Kötü Amaçlı Yazılımları Temizleme Aracı veya System Center Endpoint Protection Microsoft Defender  bir kötü amaçlı yazılım algılar, kötü amaçlı yazılımın değiştirmiş olabileceği aşağıdaki sistem ayarlarını ve hizmetlerini geri yükler:<ul>
 <li>Varsayılan Internet Explorer veya Microsoft Edge ayarı</li>
 <li>Kullanıcı Access Control ayarları</li>
 <li>Chrome ayarları</li>
@@ -1107,7 +1109,7 @@ UAC</dt>
 Kullanıcı eylemi:
 </td>
 <td >
-Hiçbir eylem gerekli değildir. Microsoft Defender Virüsten Koruma, kötü amaçlı yazılım düzeltmesi ile ilgili bir görevi tamamlayamadı. Bu kritik bir hata değildir.
+Hiçbir eylem gerekli değildir. Microsoft Defender Virüsten Koruma, kötü amaçlı yazılım düzeltmeyle ilgili bir görevi tamamlayamadı. Bu kritik bir hata değildir.
 </td>
 </tr>
 <tr>
@@ -1270,7 +1272,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma istemcisi çalışır durumdadır.
+Microsoft Defender Virüsten Koruma istemcisi çalışır durumda.
 <dl>
 <dt>Geçerli Platform Sürümü: &lt; Geçerli platform sürümü&gt;</dt>
 <dt>Tehdit Kaynağı Yolu: &lt;Yol&gt;</dt>
@@ -1322,7 +1324,7 @@ Denetimli Klasör Erişimi, güvenilmeyen bir işlemin disk kesimlerini değişt
 <dt>Güvenlik Kullanıcı Kimliği: &lt;Güvenlik UserID&gt;</dt>
 <dt>Ürün Adı: &lt;Ürün Adı&gt;, örneğin: Microsoft Defender Virüsten Koruma</dt>
 <dt>Ürün Sürümü: &lt;Ürün Sürümü&gt;</dt>
-<dt>Algılama Zamanı: &lt;Algılama Zamanı&gt;, CFA'nın güvenilmeyen bir işlemi engellediği zaman</dt>
+<dt>Algılama Zamanı: &lt;Algılama Zamanı&gt;, CFA'nın güvenilmeyen bir işlemi engellediği zaman </dt>
 <dt>Kullanıcı: &lt;Etki alanı&gt;\&lt; Kullanıcı&gt;</dt>
 <dt>Yolu: &lt;Cihaz adı&gt;, güvenilmeyen bir işlemin değişiklik için eriştiği cihazın veya diskin adı</dt>
 <dt>İşlem Adı: &lt;İşlem yolu&gt;, CFA'nın değişiklik için cihaza veya diske erişmesini engellediği işlem yolu adı</dt>
@@ -1362,7 +1364,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma istemcisi çalışır durumdadır.
+Microsoft Defender Virüsten Koruma istemcisi çalışır durumda.
 <dl>
 <dt>Platform Sürümü: &lt; Geçerli platform sürümü&gt;</dt>
 <dt>İmza Sürümü: &lt;Tanım sürümü&gt;</dt>
@@ -1578,7 +1580,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma altyapısı sürümü güncelleştirildi.
+Microsoft Defender Virüsten koruma altyapısı sürümü güncelleştirildi.
 <dl>
 <dt>Geçerli Altyapı Sürümü: &lt; Geçerli altyapı sürümü&gt;</dt>
 <dt>Önceki Altyapı Sürümü: &lt;Önceki altyapı sürümü&gt;</dt>
@@ -1666,7 +1668,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma imzaları yüklemeye çalışırken bir hatayla karşılaştı ve bilinen iyi bir imza kümesine geri dönmeye çalışacaktır.
+Microsoft Defender Virüsten Koruma imzaları yüklemeye çalışırken bir hatayla karşılaştı ve bilinen iyi bir imza kümesine geri dönmeye çalışacak.
 <dl>
 <dt>İmza denendi:</dt>
 <dt>Hata Kodu: &lt;Hata kodu&gt; Tehdit durumuyla ilişkili sonuç kodu. Standart HRESULT değerleri.</dt> 
@@ -1681,7 +1683,7 @@ Microsoft Defender Virüsten Koruma imzaları yüklemeye çalışırken bir hata
 Kullanıcı eylemi:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma istemcisi en son tanımlar dosyasını indirmeye ve yüklemeye çalıştı ve başarısız oldu. İstemci tanımları yüklemeye çalışırken bir hatayla karşılaştığında veya dosya bozuksa bu hata oluşabilir. Microsoft Defender Virüsten Koruma, bilinen iyi bir tanım kümesine geri dönmeye çalışır.
+Microsoft Defender Virüsten Koruma istemcisi en son tanımlar dosyasını indirmeye ve yüklemeye çalıştı ve başarısız oldu. İstemci tanımları yüklemeye çalışırken bir hatayla karşılaştığında veya dosya bozuksa bu hata oluşabilir. Microsoft Defender Virüsten Koruma bilinen iyi bir tanım kümesine geri dönmeye çalışır.
 Bu olayla ilgili sorunları gidermek için:
 <ol>
 <li>Bilgisayarı yeniden başlatın ve yeniden deneyin.</li>
@@ -1716,7 +1718,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Geçerli platform sürümü desteklenmediğinden Microsoft Defender Virüsten Koruma kötü amaçlı yazılımdan koruma altyapısı yükleyemedi. Microsoft Defender Virüsten Koruma bilinen son iyi altyapıya geri döner ve bir platform güncelleştirmesi denenecektir.
+Microsoft Defender Virüsten Koruma, geçerli platform sürümü desteklenmediğinden kötü amaçlı yazılımdan koruma altyapısı yükleyemedi. Microsoft Defender Virüsten Koruma bilinen son iyi altyapıya geri döner ve bir platform güncelleştirmesi denenecektir.
 <dl>
 <dt>Geçerli Platform Sürümü: &lt;Geçerli platform sürümü&gt;</dt>
 </dl>
@@ -1776,7 +1778,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma, kötü amaçlı yazılımdan koruma altyapısının gelecek sürümlerini desteklemek için yakında daha yeni bir platform sürümüne ihtiyaç duyar. Kullanılabilir en iyi koruma düzeyini korumak için en son Microsoft Defender Virüsten Koruma platformunu indirin.
+Microsoft Defender Virüsten Koruma yakında kötü amaçlı yazılımdan koruma altyapısının gelecek sürümlerini desteklemek için daha yeni bir platform sürümü gerektirecektir. Kullanılabilir en iyi koruma düzeyini korumak için en son Microsoft Defender Virüsten Koruma platformunu indirin.
 <dl>
 <dt>Geçerli Platform Sürümü: &lt;Geçerli platform sürümü&gt;</dt>
 </dl>
@@ -1805,7 +1807,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma, makinenizin korunmasına yardımcı olmak üzere ek imzaları almak için <i>Dinamik İmza Hizmeti'nden</i> yararlandı.
+Microsoft Defender Virüsten Koruma, makinenizin korunmasına yardımcı olmak üzere ek imzaları almak için <i>Dinamik İmza Hizmeti'yi</i> kullandı.
 <dl>
 <dt>Geçerli İmza Sürümü: &lt; Geçerli imza sürümü&gt;</dt>
 <dt>İmza Türü: &lt;İmza türü&gt;, örneğin: <ul>
@@ -1861,7 +1863,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma, eski imzaları atmak için <i>Dinamik İmza Hizmeti'nden</i> yararlandı.
+Microsoft Defender Virüsten Koruma, eski imzaları atmak için <i>Dinamik İmza Hizmeti'yi</i> kullandı.
 <dl>
 <dt>Geçerli İmza Sürümü: &lt; Geçerli imza sürümü&gt;</dt>
 <dt>İmza Türü: &lt;İmza türü&gt;, örneğin: <ul>
@@ -1926,7 +1928,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma <i>, Dinamik İmza Hizmeti'ni</i> kullanmaya çalışırken bir hatayla karşılaştı.
+Microsoft Defender Virüsten Koruma<i>, Dinamik İmza Hizmeti'ni</i> kullanmaya çalışırken bir hatayla karşılaştı.
 <dl>
 <dt>Geçerli İmza Sürümü: &lt; Geçerli imza sürümü&gt;</dt>
 <dt>İmza Türü: &lt;İmza türü&gt;, örneğin: <ul>
@@ -2052,7 +2054,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma temiz bir dosya indirilmeye çalışılırken bir hatayla karşılaştı.
+Microsoft Defender Virüsten Koruma temiz bir dosya indirmeye çalışırken bir hatayla karşılaştı.
 <dl>
 <dt>Dosyaadı: &lt; Dosyanın dosya adı&gt;.</dt> 
 <dt>Geçerli İmza Sürümü: &lt; Geçerli imza sürümü&gt;</dt>
@@ -2068,7 +2070,7 @@ Kullanıcı eylemi:
 </td>
 <td >
 İnternet bağlantı ayarlarınızı denetleyin.
-Microsoft Defender Virüsten Koruma istemcisi, en son tanımları belirli bir tehdide indirmek için Dinamik İmza Hizmeti'ni kullanırken bir hatayla karşılaştı. Bu hata büyük olasılıkla bir ağ bağlantısı sorunundan kaynaklanır.
+Microsoft Defender Virüsten Koruma istemcisi, en son tanımları belirli bir tehdide indirmek için Dinamik İmza Hizmeti kullanılırken bir hatayla karşılaştı. Bu hata büyük olasılıkla bir ağ bağlantısı sorunundan kaynaklanır.
 </td>
 </tr>
 <tr>
@@ -2094,7 +2096,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma, çevrimdışı virüsten korumayı bir sonraki yeniden başlatmada çalışacak şekilde indirip yapılandırdı.
+Microsoft Defender Virüsten Koruma, çevrimdışı virüsten koruma yazılımını bir sonraki yeniden başlatmada çalışacak şekilde indirip yapılandırdı.
 </td>
 </tr>
 <tr>
@@ -2120,7 +2122,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma, çevrimdışı virüsten koruma yazılımını indirmeye ve yapılandırmaya çalışırken bir hatayla karşılaştı.
+Microsoft Defender Virüsten Koruma, çevrimdışı virüsten korumayı indirmeye ve yapılandırmaya çalışırken bir hatayla karşılaştı.
 <dl>
 <dt>Hata Kodu: &lt; Tehdit durumuyla ilişkili hata kodu&gt; Sonuç kodu. Standart HRESULT değerleri.</dt> 
 <dt>Hata Açıklaması: &lt; Hata açıklaması&gt; Hatanın açıklaması. </dt>
@@ -2150,7 +2152,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-İşletim sisteminiz için desteğin süresi kısa süre sonra dolacaktır. Microsoft Defender Virüsten Koruma'nın destek dışı bir işletim sisteminde çalıştırılması, tehditlere karşı korunmak için yeterli bir çözüm değildir.
+İşletim sisteminiz için desteğin süresi kısa süre sonra dolacaktır. Destek dışı bir işletim sisteminde Microsoft Defender Virüsten Koruma'nın çalıştırılması, tehditlere karşı korunmak için yeterli bir çözüm değildir.
 </td>
 </tr>
 <tr>
@@ -2176,7 +2178,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-İşletim sisteminizin desteğinin süresi doldu. Microsoft Defender Virüsten Koruma'nın destek dışı bir işletim sisteminde çalıştırılması, tehditlere karşı korunmak için yeterli bir çözüm değildir.
+İşletim sisteminizin desteğinin süresi doldu. Destek dışı bir işletim sisteminde Microsoft Defender Virüsten Koruma'nın çalıştırılması, tehditlere karşı korunmak için yeterli bir çözüm değildir.
 </td>
 </tr>
 <tr>
@@ -2202,7 +2204,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-İşletim sisteminizin desteğinin süresi doldu. Microsoft Defender Virüsten Koruma artık işletim sisteminizde desteklenmiyor, çalışmayı durdurdu ve kötü amaçlı yazılım tehditlerine karşı koruma sağlamaz.
+İşletim sisteminizin desteğinin süresi doldu. Microsoft Defender Virüsten Koruma artık işletim sisteminizde desteklenmiyor, çalışmayı durdurdu ve kötü amaçlı yazılım tehditlerine karşı korunmuyor.
 </td>
 </tr>
 <tr>
@@ -2240,7 +2242,7 @@ Microsoft Defender Virüsten Koruma Real-Time Koruması özelliği bir hatayla k
 </dt>
 <dt>Hata Kodu: &lt; Tehdit durumuyla ilişkili hata kodu&gt; Sonuç kodu. Standart HRESULT değerleri.</dt> 
 <dt>Hata Açıklaması: &lt; Hata açıklaması&gt; Hatanın açıklaması. </dt> 
-<dt>Neden: Microsoft Defender Virüsten Koruma gerçek zamanlı korumasının bir özelliği yeniden başlatmasının nedeni.</dt>
+<dt>Neden: Virüsten koruma Microsoft Defender gerçek zamanlı korumanın bir özelliği yeniden başlatmasının nedeni.</dt>
 </dl>
 </td>
 </tr>
@@ -2250,7 +2252,7 @@ Kullanıcı eylemi:
 </td>
 <td >
 Sistemin bir süre korunmamış olması mümkün olduğundan sistemi yeniden başlatmanız ve tam tarama çalıştırmanız gerekir.
-Hizmetlerden biri başlatılamadığından Microsoft Defender Virüsten Koruma istemcisinin gerçek zamanlı koruma özelliği bir hatayla karşılaştı.
+Microsoft Defender Virüsten Koruma istemcisinin gerçek zamanlı koruma özelliği, hizmetlerden biri başlatılamadığından bir hatayla karşılaştı.
 Ardından 3007 olay kimliği geliyorsa, hata geçicidir ve kötü amaçlı yazılımdan koruma istemcisi hatadan kurtarılır.
 </td>
 </tr>
@@ -2277,7 +2279,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma Gerçek Zamanlı Koruması bir özelliği yeniden başlattı. Bu aracı devre dışıyken kaçırılmış olabilecek öğeleri algılamak için tam sistem taraması çalıştırmanız önerilir.
+Microsoft Defender Virüsten Koruma Gerçek Zamanlı Koruma bir özelliği yeniden başlattı. Bu aracı devre dışıyken kaçırılmış olabilecek öğeleri algılamak için tam sistem taraması çalıştırmanız önerilir.
 <dl>
 <dt>Özellik: &lt;Özellik&gt;, örneğin:
 <ul>
@@ -2287,7 +2289,7 @@ Microsoft Defender Virüsten Koruma Gerçek Zamanlı Koruması bir özelliği ye
 <li>Ağ İnceleme Sistemi</li>
 </ul>
 </dt>
-<dt>Neden: Microsoft Defender Virüsten Koruma gerçek zamanlı korumasının bir özelliği yeniden başlatmasının nedeni.</dt>
+<dt>Neden: Virüsten koruma Microsoft Defender gerçek zamanlı korumanın bir özelliği yeniden başlatmasının nedeni.</dt>
 </dl>
 </td>
 </tr>
@@ -2322,7 +2324,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Kötü amaçlı yazılımlar ve istenmeyebilecek diğer yazılımlar için Microsoft Defender Virüsten Koruma gerçek zamanlı koruma taraması etkinleştirildi.
+Microsoft Defender Virüsten Koruma kötü amaçlı yazılımlar ve diğer olası istenmeyen yazılımlar için gerçek zamanlı koruma taraması etkinleştirildi.
 </td>
 </tr>
 <tr>
@@ -2348,7 +2350,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Kötü amaçlı yazılımlar ve istenmeyebilecek diğer yazılımlar için Microsoft Defender Virüsten Koruma gerçek zamanlı koruma taraması devre dışı bırakıldı.
+Microsoft Defender Virüsten Koruma kötü amaçlı yazılım ve diğer olası istenmeyen yazılımlar için gerçek zamanlı koruma taraması devre dışı bırakıldı.
 </td>
 </tr>
 <tr>
@@ -2374,7 +2376,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma gerçek zamanlı koruma özelliği yapılandırması değişti.
+Microsoft Defender Virüsten koruma gerçek zamanlı koruma özelliği yapılandırması değişti.
 <dl>
 <dt>Özellik: &lt;Özellik&gt;, örneğin:
 <ul>
@@ -2411,7 +2413,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma yapılandırması değişti. Bu beklenmeyen bir olaysa, kötü amaçlı yazılımların sonucu olabileceğinden ayarları gözden geçirmeniz gerekir.
+Microsoft Defender Virüsten koruma yapılandırması değişti. Bu beklenmeyen bir olaysa, kötü amaçlı yazılımların sonucu olabileceğinden ayarları gözden geçirmeniz gerekir.
 <dl>
 <dt>Eski değer: &lt; Eski değer numarası&gt; Eski virüsten koruma yapılandırma değeri.</dt> 
 <dt>Yeni değer: &lt; Yeni değer numarası&gt; Yeni virüsten koruma yapılandırma değeri.</dt>
@@ -2503,7 +2505,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Kötü amaçlı yazılımlar ve istenmeyebilecek diğer yazılımlar için Microsoft Defender Virüsten Koruma taraması etkinleştirildi.
+Microsoft Defender Kötü amaçlı yazılımlar ve istenmeyebilecek diğer yazılımlar için virüsten koruma taraması etkinleştirildi.
 </td>
 </tr>
 <tr>
@@ -2529,7 +2531,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Kötü amaçlı yazılımlar ve istenmeyebilecek diğer yazılımlar için Microsoft Defender Virüsten Koruma taraması devre dışı bırakıldı.
+Microsoft Defender Kötü amaçlı yazılımlar ve istenmeyebilecek diğer yazılımlar için virüsten koruma taraması devre dışı bırakıldı.
 </td>
 </tr>
 <tr>
@@ -2555,7 +2557,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma virüs taraması etkinleştirildi.
+Microsoft Defender Virüsten koruma virüs taraması etkinleştirildi.
 </td>
 </tr>
 <tr>
@@ -2581,7 +2583,7 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma virüs taraması devre dışı bırakıldı.
+Microsoft Defender Virüsten koruma virüs taraması devre dışı bırakıldı.
 </td>
 </tr>
 <tr>
@@ -2600,7 +2602,7 @@ Sembolik ad:
 İleti:
 </td>
 <td >
-<b>Kurcalama koruması, Microsoft Defender Virüsten Koruma'da bir değişikliği engelledi. </b>
+<b>Kurcalama koruması Microsoft Defender Virüsten Koruma'da bir değişikliği engelledi.</b>
 </td>
 </tr>
 <tr>
@@ -2634,10 +2636,10 @@ Sembolik ad:
 Açıklama:
 </td>
 <td >
-Microsoft Defender Virüsten Koruma yetkisiz kullanım süresine girdi ve yakında sona erecek. Süre dolduktan sonra, bu program virüslere, casus yazılımlara ve istenmeyebilecek diğer yazılımlara karşı korumayı devre dışı bırakır.
+Microsoft Defender Virüsten Koruma yetkisiz kullanım süresi girdi ve yakında sona erecek. Süre dolduktan sonra, bu program virüslere, casus yazılımlara ve istenmeyebilecek diğer yazılımlara karşı korumayı devre dışı bırakır.
 <dl>
-<dt>Süre Sonu Nedeni: Microsoft Defender Virüsten Koruma'nın süresinin dolma nedeni.</dt> 
-<dt>Son Kullanma Tarihi: Microsoft Defender Virüsten Koruma'nın süresinin dolacağı tarih.</dt>
+<dt>Süre Sonu Nedeni: Virüsten Koruma Microsoft Defender süresinin dolmasının nedeni.</dt> 
+<dt>Son Kullanma Tarihi: Virüsten Koruma Microsoft Defender tarihi sona erecektir.</dt>
 </dl>
 </td>
 </tr>
@@ -2676,10 +2678,10 @@ Microsoft Defender Virüsten Koruma yetkisiz kullanım süresi doldu. Virüslere
 </table>
 
 <a id="error-codes"></a>
-## Microsoft Defender Virüsten Koruma istemcisi hata kodları Microsoft Defender Virüsten Koruma herhangi bir sorunla karşılaşırsa genellikle sorunu gidermenize yardımcı olacak bir hata kodu verir. Çoğu zaman hata, güncelleştirme yüklenirken bir sorun olduğu anlamına gelir. Bu bölümde, Microsoft Defender Virüsten Koruma istemcisi hataları hakkında aşağıdaki bilgiler sağlanır.
+##Microsoft Defender Virüsten Koruma istemcisi hata kodları Virüsten Koruma Microsoft Defender herhangi bir sorunla karşılaşırsa, genellikle sorunu gidermenize yardımcı olacak bir hata kodu verir. Çoğu zaman hata, güncelleştirme yüklenirken bir sorun olduğu anlamına gelir. Bu bölümde virüsten koruma istemci hataları hakkında Microsoft Defender aşağıdaki bilgiler sağlanır.
 - Hata kodu - Şu anda yapılması gerekenlerle ilgili hata - önerisinin olası nedeni
 
-Microsoft Defender Virüsten Koruma hata kodlarıyla ilgili sorunları gidermeye yardımcı olması için bu tablolardaki bilgileri kullanın.
+Virüsten Koruma hata kodları Microsoft Defender sorun gidermeye yardımcı olması için bu tablolardaki bilgileri kullanın.
 
 
 <table>
@@ -2849,7 +2851,7 @@ Tam sistem taraması çalıştırın.
 <td>
 Bu hata, çevrimdışı tarama gerektiğini gösterir.
 </td></tr><tr><td>Çözüm</td><td>
-Çevrimdışı Microsoft Defender Virüsten Koruma'ı çalıştırın. Bunun nasıl yapıldığını <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">çevrimdışı Microsoft Defender Virüsten Koruma makalesinde</a> okuyabilirsiniz.
+Virüsten koruma Microsoft Defender çevrimdışı çalıştırın. Bunun nasıl yapıldığını <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">çevrimdışı Microsoft Defender Virüsten Koruma makalesinde</a> okuyabilirsiniz.
 </td>
 </tr>
 <tr>
@@ -2865,7 +2867,7 @@ Microsoft Defender Virüsten Koruma'Windows 10 ve Windows 11 yalnızca kullanabi
 </tr>
 </table>
 
-<a id="internal-error-codes"></a> Microsoft Defender Virüsten Koruma'nın iç testi sırasında aşağıdaki hata kodları kullanılır.
+<a id="internal-error-codes"></a>aşağıdaki hata kodları, Microsoft Defender Virüsten Koruma'nın iç testi sırasında kullanılır.
 
 Bu hataları görürseniz [tanımları güncelleştirmeyi](manage-updates-baselines-microsoft-defender-antivirus.md) deneyebilir ve doğrudan uç noktada yeniden taramayı zorlayabilirsiniz.
 
@@ -3205,5 +3207,5 @@ Bu bir iç hatadır. Tarama tamamlanamadıktan sonra tetiklenmiş olabilir.
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Microsoft Defender Virüsten Koruma ile ilgili rapor](report-monitor-microsoft-defender-antivirus.md)
-- [Windows 10'da Microsoft Defender Virüsten Koruma](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Virüsten Koruma raporu](report-monitor-microsoft-defender-antivirus.md)
+- [Windows 10'de virüsten koruma Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)

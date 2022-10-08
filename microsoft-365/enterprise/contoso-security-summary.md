@@ -8,19 +8,20 @@ manager: scotv
 ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso'nun kuruluş için Microsoft 365'in güvenlik özelliklerini kullanma şekli.
-ms.openlocfilehash: 46611f5321c893466448b39a9990501d9b3fafc2
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 9bd6dce1b0f8aa7f6c2920ef5199232605f0688c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385473"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68194785"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation için kurumsal güvenlik için Microsoft 365 özeti
 
@@ -87,7 +88,7 @@ Contoso güvenlik yöneticileri ve BT departmanı, kurumsal dağıtım gereksini
 
 - Microsoft Defender Virüsten Koruma ile kötü amaçlı yazılımlara karşı koruma
 
-  Contoso, Windows 10 Enterprise çalıştıran bilgisayarlar ve cihazlar için kötü amaçlı yazılımdan koruma ve kötü amaçlı yazılımdan koruma yönetimi için [Microsoft Defender Virüsten Koruma'yı](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) kullanıyor.
+  Contoso, Windows 10 Enterprise çalıştıran bilgisayarlar ve cihazlar için kötü amaçlı yazılımdan koruma ve kötü amaçlı yazılımdan koruma yönetimi için Microsoft Defender [Virüsten Koruma](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) kullanıyor.
 
 - Office 365 için Microsoft Defender ile e-posta akışının ve posta kutusu denetim günlüğünün güvenliğini sağlama 
 
@@ -129,7 +130,7 @@ Contoso güvenlik yöneticileri ve BT departmanı, kurumsal dağıtım gereksini
 
 - Bulut için Microsoft Defender ile BT için merkezi güvenlik panosu
 
-  Contoso, güvenlik ve tehdit korumasının birleşik bir görünümünü sunmak, iş yükleri genelinde güvenlik ilkelerini yönetmek ve siber saldırılara yanıt vermek [için Bulut için Microsoft Defender'ı](https://azure.microsoft.com/services/security-center/) kullanır.
+  Contoso, güvenlik ve tehdit korumasının birleşik bir görünümünü sunmak, iş yükleri genelinde güvenlik ilkelerini yönetmek ve siber saldırılara yanıt vermek [için Bulut için Microsoft Defender](https://azure.microsoft.com/services/security-center/) kullanır.
 
 - Windows Defender Güvenlik Merkezi'ne sahip kullanıcılar için merkezi güvenlik panosu
 

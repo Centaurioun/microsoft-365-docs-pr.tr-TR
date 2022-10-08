@@ -6,11 +6,12 @@ manager: scotv
 ms.date: ''
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
@@ -19,12 +20,12 @@ ms.custom:
 f1.keywords:
 - NOCSH
 description: Posta kutusu kullanım hizmeti önerilerini kullanarak posta kutusu kotalarına ulaşan posta kutularını ayrı tutmada izleyin.
-ms.openlocfilehash: 58cbd5880b32b5297f0faae26a5a3369a2e6b66c
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 35bff697727a77abc27555898e48106bc7070142
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67019977"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185413"
 ---
 # <a name="service-advisories-for-mailbox-utilization-in-exchange-online-monitoring"></a>Exchange Online izlemede posta kutusu kullanımı için hizmet önerileri
 

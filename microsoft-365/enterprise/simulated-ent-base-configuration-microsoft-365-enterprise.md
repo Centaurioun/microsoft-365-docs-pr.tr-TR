@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -18,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Kuruluş için Microsoft 365'e yönelik bir sanal kurumsal test ortamı oluşturmak için bu Test Laboratuvarı Kılavuzu'nu kullanın.
-ms.openlocfilehash: 7f90046c75c2b95c288cdf2134734d1cc9898125
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: e59d037185009125f64bc457d7fc17be497b432d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672985"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185171"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Sanal kurumsal temel yapılandırma
 

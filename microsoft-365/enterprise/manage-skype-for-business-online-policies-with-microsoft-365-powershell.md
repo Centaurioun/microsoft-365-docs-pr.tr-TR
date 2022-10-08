@@ -6,33 +6,35 @@ manager: scotv
 ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Özet: Skype Kurumsal Çevrimiçi kullanıcı hesabı özelliklerinizi ilkelerle yönetmek için PowerShell kullanın.'
-ms.openlocfilehash: 71ced77947efda0f587fe7a20af85a73dea73f6c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1ea469ec5477ea90fc6e8086360db724eddf3863
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094360"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185369"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>PowerShell ile Skype Kurumsal Çevrimiçi ilkelerini yönetme
 
 *Bu makale hem Microsoft 365 Kurumsal hem de Office 365 Kurumsal için geçerlidir.*
 
-Skype Kurumsal Online kullanıcı hesabının birçok özelliğini yönetmek için, bunları Microsoft 365 için PowerShell ile ilkelerin özellikleri olarak belirtmeniz gerekir.
+Skype Kurumsal Online için kullanıcı hesabının birçok özelliğini yönetmek için, bunları Microsoft 365 için PowerShell ile ilkelerin özellikleri olarak belirtmeniz gerekir.
   
 ## <a name="before-you-begin"></a>Başlamadan önce
 
 Komutları çalıştıracak şekilde ayarlamak için bu yönergeleri kullanın (daha önce tamamlamış olduğunuz adımları atlayın):
 
   > [!Note]
-  > Skype Kurumsal Online Connector şu anda en son Teams PowerShell modülünün bir parçasıdır. PowerShell genel sürümünün en son Teams kullanıyorsanız, Skype Kurumsal Çevrimiçi Bağlayıcı'yı yüklemeniz gerekmez.
+  > Skype Kurumsal Online Connector şu anda en son Teams PowerShell modülünün bir parçasıdır. En son Teams PowerShell genel sürümünü kullanıyorsanız Skype Kurumsal Çevrimiçi Bağlayıcısı'nı yüklemeniz gerekmez.
 
 1. [Teams PowerShell modülünü](/microsoftteams/teams-powershell-install) yükleyin.
     
@@ -70,9 +72,9 @@ Bu örnekte, bu ilkedeki değerler, federasyon kullanıcılarıyla iletişim sö
   
 - **EnableFederationAccess** , kullanıcının federasyon etki alanlarından kişilerle iletişim kurup kuramayacağını gösterir.
     
-- **EnablePublicCloudAccess**, kullanıcının Windows Canlı kullanıcılarla iletişim kurup kuramayacağını gösterir.
+- **EnablePublicCloudAccess** , kullanıcının Windows Live kullanıcıları ile iletişim kurup kuramayacağını gösterir.
     
-Bu nedenle, kullanıcı hesaplarında federasyonla ilgili özellikleri doğrudan değiştirmezsiniz (örneğin, **Set-CsUser -EnableFederationAccess $True**). Bunun yerine, bir hesaba istenen özellik değerlerinin önceden yapılandırılmış olduğu bir dış erişim ilkesi atarsınız. Bir kullanıcının federasyon kullanıcılarıyla ve Windows Canlı kullanıcılarla iletişim kurabilmesini istiyorsak, bu kullanıcı hesabına bu tür iletişimlere izin veren bir ilke atanmalıdır.
+Bu nedenle, kullanıcı hesaplarında federasyonla ilgili özellikleri doğrudan değiştirmezsiniz (örneğin, **Set-CsUser -EnableFederationAccess $True**). Bunun yerine, bir hesaba istenen özellik değerlerinin önceden yapılandırılmış olduğu bir dış erişim ilkesi atarsınız. Bir kullanıcının federasyon kullanıcılarıyla ve Windows Live kullanıcılarıyla iletişim kurabilmesini istiyorsak, bu kullanıcı hesabına bu tür iletişimlere izin veren bir ilke atanmalıdır.
   
 Birinin kuruluş dışındaki kullanıcılarla iletişim kurup kuramadığını öğrenmek istiyorsanız şunları yapabilirsiniz:
   
@@ -98,7 +100,7 @@ PowerShell ile Skype Kurumsal Çevrimiçi ilkelerini yönetmek için aşağıdak
 
 
 > [!NOTE]
-> Skype Kurumsal Çevrimiçi arama planı, ad dışında her açıdan bir ilkedir. Office Communications Server ve Exchange ile geriye dönük uyumluluk sağlamak için "arama ilkesi" yerine "arama planı" adı seçildi. 
+> Skype Kurumsal Çevrimiçi arama planı, ad dışında her açıdan bir ilkedir. Office Communications Server ve Exchange ile geriye dönük uyumluluk sağlamak için "arama ilkesi" yerine "arama planı" adı seçilmiştir. 
   
 Örneğin, kullanımınıza sunulan tüm ses ilkelerine bakmak için şu komutu çalıştırın:
   
@@ -116,7 +118,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 ApplicableTo parametresi, döndürülen verileri belirtilen kullanıcıya atanabilecek ilkeler ile sınırlar (örneğin, Alex Darrow). Lisanslama ve kullanım konumu kısıtlamalarına bağlı olarak, kullanılabilir tüm ilkelerin bir alt kümesini temsil edebilir. 
   
-Bazı durumlarda, ilkelerin özellikleri Microsoft 365 ile kullanılmazken, diğerleri yalnızca Microsoft destek personeli tarafından yönetilebilir. 
+Bazı durumlarda ilkelerin özellikleri Microsoft 365 ile kullanılmazken, diğerleri yalnızca Microsoft destek personeli tarafından yönetilebilir. 
   
 Skype Kurumsal Online ile kullanıcıların bir tür ilke tarafından yönetilmesi gerekir. İlkeyle ilgili geçerli bir özellik boşsa bu, söz konusu kullanıcının bir genel ilke tarafından yönetildiği anlamına gelir. Bu, kullanıcıya özel olarak kullanıcı başına ilke atanmadığı sürece otomatik olarak uygulanan bir ilkedir. Kullanıcı hesabı için listelenen bir istemci ilkesi görmediğimiz için genel ilke tarafından yönetilir. Genel istemci ilkesini şu komutla belirleyebilirsiniz:
   
