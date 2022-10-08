@@ -11,22 +11,23 @@ ms.service: O365-seccomp
 ms.date: ''
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Hassas bilgi kaynağı tablo dosyanızı yenileyin.
+description: Hassas bilgi kaynağı tablo dosyanızı tek seferlik yenilemeyi veya otomatik yinelenen yenileme döngülerini ayarlamayı öğrenin.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 310663caae55bb9b5e0d07cb38ba9fa4b45e8a73
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ee802477f7d065bffd77439a4e814d3a8a7e815b
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621677"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68383882"
 ---
-# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Hassas bilgi kaynağı tablo dosyasıyla tam olarak eşleşen verilerinizi yenileyin 
+# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Hassas bilgi kaynağı tablo dosyasıyla tam olarak eşleşen verilerinizi yenileyin
 
-Hassas bilgi veritabanınızı her 24 saat içinde en fazla 5 kez yenileyebilirsiniz. Hassas bilgi kaynağı tablonuzu yeniden oluşturmanız ve karşıya yüklemeniz gerekir.
+Hassas bilgi veritabanınızı her 24 saat içinde en fazla 5 kez yenileyebilirsiniz. Hassas bilgi kaynağı tablonuzu yeniden oluşturmanız ve karşıya yüklemeniz gerekir. Yenileme, var olan hassas bilgi kaynağı tablosunun üzerine yenisiyle yazar.
 
 1. Hassas verileri Microsoft Excel gibi bir uygulamaya yeniden aktarın ve dosyayı .csv, .tsv biçiminde veya kanal (|) sınırlandırılmış biçimde kaydedin. Dosyayı daha önce karma ve karşıya yüklerken kullandığınız dosya adını ve konumunu koruyun. Hassas verilerinizi dışarı aktarma ve doğru biçime alma ayrıntıları [için bkz. Tam veri eşleşmesi için kaynak verileri dışarı aktarma, hassas bilgi türüyle eşleşmektedir](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) .
 
@@ -42,6 +43,8 @@ Hassas bilgi veritabanınızı her 24 saat içinde en fazla 5 kez yenileyebilirs
    |PowerShell|Bu makaledeki [ScheduledTasks](/powershell/module/scheduledtasks/) belgelerine ve [örnek PowerShell betiğine](#example-powershell-script-for-task-scheduler) bakın|
    |Görev Zamanlayıcı API'si|[Görev Zamanlayıcı](/windows/desktop/TaskSchd/using-the-task-scheduler) belgelerine bakın|
    |Windows kullanıcı arabirimi|Windows'ta **Başlat'a** tıklayın ve Görev Zamanlayıcı yazın. Ardından, sonuç listesinde **Görev Zamanlayıcı'ya** sağ tıklayın ve **Yönetici olarak çalıştır'ı** seçin.|
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="example-powershell-script-for-task-scheduler"></a>Görev Zamanlayıcı için örnek PowerShell betiği
 

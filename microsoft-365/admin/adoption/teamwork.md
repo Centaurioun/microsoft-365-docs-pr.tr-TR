@@ -2,14 +2,15 @@
 title: Microsoft Benimseme Puanı - Ekip çalışması
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ekip çalışmasının ayrıntıları - kişiler Benimseme Puanı'nı deneyimler.
-ms.openlocfilehash: 6ac4028a23fdcc1000e0dde77b8777b0ffebe727
-ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
+ms.openlocfilehash: 099f795e081dfaa300ba3906b56b3271da2e8020
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67437963"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178480"
 ---
 # <a name="teamwork--people-experiences"></a>Ekip çalışması – Kişiler deneyimleri
 

@@ -12,17 +12,22 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 20501814ccf87cfbbda6080b60515be374516cd2
-ms.sourcegitcommit: a6cbc057e757771cc0e7b53b184fab9fa53a658a
+- highpri
+- tier1
+ms.openlocfilehash: 5e0d29d96eeafe418d1773e20a73e33b402389fa
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67648625"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68503500"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection"></a>Insider risk yönetimi tarayıcısı sinyal algılama hakkında bilgi edinin ve yapılandırın
+
+>[!IMPORTANT]
+>Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
 Web tarayıcıları genellikle kullanıcılar tarafından bir kuruluştaki hem hassas hem de hassas olmayan dosyalara erişmek için kullanılır. Insider risk yönetimi, kuruluşunuzun [Microsoft Edge](https://www.microsoft.com/edge) ve [Google Chrome](https://www.google.com/chrome) tarayıcılarında görüntülenen yürütülebilir olmayan tüm dosyalar için tarayıcı sızdırma sinyallerini algılamasına ve üzerinde işlem yapmasına olanak tanır. Bu sinyallerle, analistler ve araştırmacılar bu tarayıcıları kullanırken kapsam içi ilke kullanıcıları tarafından aşağıdaki etkinliklerden herhangi biri gerçekleştirildiğinde hızla harekete geçebilir:
 
@@ -43,6 +48,8 @@ Aşağıdaki tabloda, her tarayıcı için algılanan etkinlikler ve uzantı des
 | Ağ paylaşımına aktarılan veya kopyalanan dosyalar | Uzantısı          | Uzantısı         |
 | USB cihazlarına kopyalanan dosyalar                    | Uzantısı          | Uzantısı         |
 | Riskli web sitelerine göz atma                        | Uzantısı          | Uzantısı         |
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="common-requirements"></a>Yaygın gereksinimler
 

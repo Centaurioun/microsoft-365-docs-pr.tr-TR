@@ -7,23 +7,24 @@ ms.author: kvice
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Contoso ağ altyapısını ve şirketin kurumsal bulut hizmetleri için Microsoft 365 için en iyi ağ performansı için SD-WAN teknolojisini nasıl kullandığını anlayın.
-ms.openlocfilehash: f8450b63bed68de414c0ea585b6f5e199c87ad90
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Contoso ağ altyapısını ve şirketin kurumsal bulut hizmetleri için Microsoft 365'e en iyi ağ performansı için SD-WAN teknolojisini nasıl kullandığını anlayın.
+ms.openlocfilehash: 6e2f4fbc4ed54b1cc7edf72510e143bb3460e407
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093953"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186777"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation için ağ oluşturma
 
-Contoso, bulut kapsayıcı bir altyapıyı benimsemek için bulut hizmetlerine yönelik ağ trafiğinin nasıl ilerlediği konusunda temel bir değişiklik yaptı. Ofis hiyerarşisinin bir sonraki düzeyi için ağ bağlantısına ve trafiğe odaklanan bir iç merkez-uç modeli yerine, kullanıcı konumlarını yerel İnternet çıkışına ve yerel bağlantıları İnternet'te en yakın Microsoft 365 ağ konumuna eşler.
+Contoso, bulut kapsayıcı bir altyapıyı benimsemek için bulut hizmetlerine yönelik ağ trafiğinin nasıl ilerlediği konusunda temel bir değişiklik yaptı. Ofis hiyerarşisinin bir sonraki düzeyi için ağ bağlantısına ve trafiğe odaklanan iç merkez-uç modeli yerine, kullanıcı konumlarını yerel İnternet çıkışına ve yerel bağlantıları internet üzerindeki en yakın Microsoft 365 ağ konumuna eşler.
 
 ## <a name="networking-infrastructure"></a>Ağ altyapısı
 
@@ -39,7 +40,7 @@ Contoso ofislerini dünya genelinde birbirine bağlayan ağ öğeleri şunlardı
 
 - İnternet iletişim durumu
 
-  Contosocom ortak etki alanı adının sahibi Contoso'dır\.. Ürünleri sipariş etmek için Contoso genel web sitesi, Paris kampüsündeki İnternet'e bağlı bir veri merkezinde bulunan bir sunucu kümesidir. Contoso, İnternet'te /24 genel IP adresi aralığı kullanır.
+  Contoso, contoso\.com ortak etki alanı adına sahip. Ürünleri sipariş etmek için Contoso genel web sitesi, Paris kampüsündeki İnternet'e bağlı bir veri merkezinde bulunan bir sunucu kümesidir. Contoso, İnternet'te /24 genel IP adresi aralığı kullanır.
 
 Şekil 1'de Contoso ağ altyapısı ve İnternet bağlantıları gösterilmektedir.
 
@@ -49,20 +50,20 @@ Contoso ofislerini dünya genelinde birbirine bağlayan ağ öğeleri şunlardı
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Microsoft'a en uygun ağ bağlantısı için SD-WAN kullanımı
 
-Contoso[, ağ bağlantısı ilkelerini Microsoft 365](microsoft-365-network-connectivity-principles.md) takip etti:
+Contoso, [Aşağıdakiler için Microsoft 365 ağ bağlantısı ilkelerini takip](microsoft-365-network-connectivity-principles.md) etti:
 
-- Ağ trafiğini Microsoft 365 belirleme ve ayırt etmek
-- Ağ bağlantılarını yerel olarak Egress
+- Microsoft 365 ağ trafiğini belirleme ve ayırt edin
+- Yerel olarak çıkış ağ bağlantıları
 - Ağ saç tokalarından kaçının
 - Yinelenen ağ güvenlik cihazlarını atlama
 
-Microsoft 365 için üç ağ trafiği kategorisi vardır: *İyileştir*, *İzin Ver* ve *Varsayılan*. İyileştirme ve trafiğe izin ver, uç noktalarda şifrelenen ve güvenliği sağlanan ve Microsoft 365 ağı hedefleyen güvenilir ağ trafiğidir.
+Microsoft 365 için üç ağ trafiği kategorisi vardır: *İyileştirme*, *İzin Ver* ve *Varsayılan*. İyileştirme ve trafiğe izin ver, uç noktalarda şifrelenen ve güvenliği sağlanan ve Microsoft 365 ağına yönelik güvenilir ağ trafiğidir.
 
 Contoso şunları yapmaya karar verdi:
 
 - Kategori trafiğini İyileştir ve İzin Ver için doğrudan internet çıkışını kullanın ve tüm Varsayılan kategori trafiğini Paris tabanlı merkezi internet bağlantısına iletin.
 
-- Bu ilkeleri izlemenin ve bulut tabanlı Microsoft 365 hizmetler için en iyi ağ performansını elde etmenin basit bir yolu olarak her ofiste SD-WAN cihazları dağıtın.
+- Bu ilkeleri izlemenin ve Microsoft 365 bulut tabanlı hizmetler için en iyi ağ performansını elde etmenin basit bir yolu olarak her ofiste SD-WAN cihazları dağıtın.
 
   SD-WAN cihazlarının yerel ofis ağı için bir LAN bağlantı noktası ve birden çok WAN bağlantı noktası vardır. Bir WAN bağlantı noktası MPLS ağına bağlanır. Başka bir yerel ISS bağlantı hattına bağlanır. SD-WAN cihazı, ISS bağlantısı üzerinden Kategori ağ trafiğini en iyi duruma getirme ve izin verme yollarını yönlendirir.
 
@@ -84,7 +85,7 @@ Uydu veya bölgesel merkez ofisleri için çalışanların ihtiyaç duyduğu kay
 
 ## <a name="network-analysis-and-preparation-for-microsoft-365-for-enterprise"></a>Kuruluş için Microsoft 365 için ağ analizi ve hazırlığı
 
-Contoso kullanıcıları kurumsal hizmetler için Microsoft 365 başarılı bir şekilde benimsenmesi, İnternet'e veya doğrudan Microsoft bulut hizmetlerine yüksek oranda kullanılabilir ve yüksek performanslı bağlantıya bağlıdır. Contoso, kurumsal bulut hizmetleri için Microsoft 365 için iyileştirilmiş bağlantı planlamak ve uygulamak için şu adımları gerçekleştirdi:
+Contoso kullanıcıları tarafından kurumsal hizmetler için Microsoft 365'in başarılı bir şekilde benimsenmesi, İnternet'e veya doğrudan Microsoft bulut hizmetlerine yüksek oranda kullanılabilir ve yüksek performanslı bağlantıya bağlıdır. Contoso, kurumsal bulut hizmetleri için Microsoft 365'e yönelik iyileştirilmiş bağlantıyı planlamak ve uygulamak için şu adımları gerçekleştirdi:
 
 1. Planlamaya yardımcı olacak bir şirket WAN ağ diyagramı oluşturma
 
@@ -92,11 +93,11 @@ Contoso kullanıcıları kurumsal hizmetler için Microsoft 365 başarılı bir 
 
 2. Kurumsal ağ bağlantısı için Microsoft 365 planı oluşturma
 
-   Contoso[, Microsoft 365 ağ bağlantı ilkelerini](microsoft-365-network-connectivity-principles.md) ve örnek başvuru ağ mimarilerini kullanarak SD-WAN'ı Microsoft 365 bağlantısı için tercih ettikleri topoloji olarak tanımladı.
+   Contoso, SD-WAN'ı [Microsoft 365 bağlantısı](microsoft-365-network-connectivity-principles.md) için tercih ettikleri topoloji olarak tanımlamak için Microsoft 365 ağ bağlantı ilkelerini ve örnek başvuru ağ mimarilerini kullandı.
 
 3. Her ofiste İnternet bağlantısı kullanımını ve MPLS-WAN bant genişliğini analiz edin ve gerektiğinde bant genişliğini artırın
 
-   Her ofisin geçerli kullanımı analiz edildi ve bulut tabanlı trafiğin tahmin edilen Microsoft 365 ortalama yüzde 20 kullanılmayan kapasiteyle çalışması için devreler artırıldı.
+   Her ofisin geçerli kullanımı analiz edildi ve devreleri artırılarak tahmin edilen Microsoft 365 bulut tabanlı trafiğin ortalama yüzde 20 kullanılmayan kapasiteyle çalışması sağlandı.
 
 4. Performansı Microsoft ağ hizmetlerine en iyi duruma getirme
 

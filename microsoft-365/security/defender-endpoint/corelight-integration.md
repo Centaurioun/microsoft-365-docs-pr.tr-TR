@@ -13,15 +13,17 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
-ms.openlocfilehash: 5e558b5488c0311d398b626321e2d1fa32d3f130
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 01b584710aafb6f1f9d88a9870294fcc26d61a24
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67678591"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68200549"
 ---
 # <a name="enable-corelight-data-integration"></a>Corelight veri tümleştirmesini etkinleştirin
 
@@ -44,8 +46,8 @@ Bu veri kaynağı etkinleştirildiğinde Corelight ağ gereçlerinden gelen tüm
 
 1. Corelight veri tümleştirmesini ayarlamak için kullanıcının aşağıdaki rollere sahip olması gerekir:
    - Azure Active Directory'de Kiracı Genel Yöneticisi
-   - IoT için Microsoft Defender tümleştirmesi için kullanılacak Azure aboneliğinin Güvenlik Yöneticisi
-2. Eklenen IoT için Defender planı. Daha fazla bilgi için bkz. [Uç Nokta için Microsoft Defender ile IoT için Microsoft Defender'ı ekleme](enable-microsoft-defender-for-iot-integration.md).
+   - IoT tümleştirmesi için Microsoft Defender kullanılacak Azure aboneliğinin Güvenlik Yöneticisi
+2. Eklenen IoT için Defender planı. Daha fazla bilgi için bkz. [Uç Nokta için Microsoft Defender ile IoT için Microsoft Defender ekleme](enable-microsoft-defender-for-iot-integration.md).
 
 ## <a name="enabling-the-corelight-integration"></a>Corelight tümleştirmesini etkinleştirme
 
@@ -84,7 +86,7 @@ Corelight tümleştirmesini etkinleştirmek için aşağıdaki adımları uygula
 
    :::image type="content" source="images/exporttodefender.png" alt-text="Kafka dışarı aktarma" lightbox="images/exporttodefender.png":::
 
-2. **Microsoft Defender'a Dışarı Aktarma'yı** etkinleştirin.
+2. **Microsoft Defender Dışarı Aktar'ı** etkinleştirin.
 3. Microsoft 356 Defender Kiracı Kimliğinizi girin.
 4. İsteğe bağlı olarak şunları yapabilirsiniz:
     - **Zeek Günlükleri'ni Dışla olarak** ayarlayın. Eklemeniz gereken en az günlük kümesi şunlardır: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp ve notice.
@@ -93,7 +95,7 @@ Corelight tümleştirmesini etkinleştirmek için aşağıdaki adımları uygula
 
 #### <a name="enable-the-integration-in-the-corelight-client"></a>corelight-client'da tümleştirmeyi etkinleştirme
 
-1. corelight-client'da aşağıdaki komutu kullanarak **Microsoft Defender'a Aktar'ı** etkinleştirin:
+1. corelight-client'da aşağıdaki komutu kullanarak **dışarı aktarmayı Microsoft Defender** etkinleştirin:
 
     ``` command
     corelight-client configuration update \
@@ -102,7 +104,7 @@ Corelight tümleştirmesini etkinleştirmek için aşağıdaki adımları uygula
 
 2. Kiracı kimliğinizi ayarlama
 
-3. İsteğe bağlı olarak, belirli günlükleri dışlamak veya bir Microsoft Defender günlük filtresi oluşturmak için aşağıdaki komutu kullanabilirsiniz. Eklemeniz gereken en az günlük kümesi şunlardır: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp ve notice.
+3. İsteğe bağlı olarak, belirli günlükleri dışlamak veya Microsoft Defender günlük filtresi oluşturmak için aşağıdaki komutu kullanabilirsiniz. Eklemeniz gereken en az günlük kümesi şunlardır: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp ve notice.
 
    ``` command
      corelight-client configuration update \

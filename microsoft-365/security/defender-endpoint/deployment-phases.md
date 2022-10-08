@@ -12,19 +12,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-endpointprotect
 - m365solution-overview
 - highpri
+- tier1
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 47373c0abfcc6e9ba1e055c40b3fff827ed951b7
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 1390369222c1abeb8b4ef1e0552f7a7039f90f46
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67683505"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205431"
 ---
 # <a name="microsoft-defender-for-endpoint-deployment-overview"></a>Uç Nokta için Microsoft Defender dağıtımına genel bakış
 

@@ -11,14 +11,16 @@ ms.date: 05/30/2022
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 f1.keywords: NOCSH
-ms.openlocfilehash: a3e0cc3c79829ad5a13a6da29858d6d7c60cf322
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: d6f8aa7542b10387700db29f4bdac902ba4dacd8
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67469810"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68088761"
 ---
 # <a name="responding-to-ransomware-attacks"></a>Fidye yazılımı saldırılarına yanıt verme
 

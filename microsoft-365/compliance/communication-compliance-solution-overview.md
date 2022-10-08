@@ -12,20 +12,27 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 5d8f7d2b8315021f1bd3e539a8b130f80a14c72d
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+- highpri
+ms.openlocfilehash: badccd4cce99de60221bdf4b3cdfa90d96ff3214
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67797216"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506598"
 ---
 # <a name="communication-compliance"></a>İletişim uyumluluğu
 
+>[!IMPORTANT]
+>Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamak için kullanılır.
+
 Hassas bilgilerin korunması, iş yerinde taciz olaylarının algılanması ve bu olaylarda eylemde bulunılması, iç politikalar ve standartlara uyumun önemli bir parçasıdır. Microsoft Purview İletişim Uyumluluğu, e-posta ve Microsoft Teams iletişimleri için hızlı bir şekilde algılamanıza, yakalamanıza ve düzeltme eylemleri gerçekleştirmenize yardımcı olarak bu riskleri en aza indirmenize yardımcı olur. Bunlar küfür, tehdit ve taciz içeren uygunsuz iletişimler ile kuruluşunuzun içinde ve dışında hassas bilgileri paylaşan iletişimleri içerir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="configure-communication-compliance"></a>İletişim uyumluluğunu yapılandırma
 

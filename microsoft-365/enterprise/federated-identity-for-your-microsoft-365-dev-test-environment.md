@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Özet: Microsoft 365 test ortamınız için federasyon kimlik doğrulamasını yapılandırın.'
-ms.openlocfilehash: 23a7cb84dc4b1f67a4fd5ebd017282542e15114a
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: 54fa9774ace656c5049f26ef4b7fd64186c0053d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67570259"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68171157"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Microsoft 365 test ortamınız için federasyon kimliği
 

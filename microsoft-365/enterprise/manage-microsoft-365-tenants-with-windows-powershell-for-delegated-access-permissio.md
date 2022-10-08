@@ -5,24 +5,25 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: Bu makalede, müşteri eğilimlerinizi yönetmek üzere Microsoft 365 için PowerShell'i kullanmayı öğrenin.
-ms.openlocfilehash: 11869157a5ed106d1aea0a4ce0e21716be1cc78f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Bu makalede, müşteri eğilimlerinizi yönetmek için Microsoft 365 için PowerShell'i kullanmayı öğrenin.
+ms.openlocfilehash: 90651f05dd7a5ad6d9864f82b8c9e58ed8420385
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096798"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68172587"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Temsilci Erişim İzinleri (DAP) iş ortakları için Windows PowerShell ile Microsoft 365 kiracılarını yönetme
 
@@ -30,10 +31,10 @@ ms.locfileid: "65096798"
 
 Windows PowerShell, Dağıtım ve Bulut Çözümü Sağlayıcısı (CSP) iş ortaklarının Microsoft 365 yönetim merkezi kullanılamayan müşteri kiracısı ayarlarını kolayca yönetmesine ve raporlamasına olanak tanır. İş ortağı yönetici hesabının müşteri kiracılarına bağlanması için Adına Yönet (AOBO) izinlerinin gerekli olduğunu unutmayın.
 
-Temsilci Erişim İzni (DAP) iş ortakları, Dağıtım ve Bulut Çözümü Sağlayıcıları (CSP) İş Ortaklarıdır. Bunlar genellikle diğer şirketlerin ağ veya telekom sağlayıcılarıdır. Microsoft 365 aboneliklerini müşterilerine sunulan hizmet tekliflerine paketlemektedir. bir Microsoft 365 aboneliği sattıklarında, müşteri kiracılarını yönetebilmeleri ve raporlamaları için otomatik olarak müşteri kiracılarına Adına Yönetme (AOBO) izinleri verilir.
+Temsilci Erişim İzni (DAP) iş ortakları, Dağıtım ve Bulut Çözümü Sağlayıcıları (CSP) İş Ortaklarıdır. Bunlar genellikle diğer şirketlerin ağ veya telekom sağlayıcılarıdır. Microsoft 365 aboneliklerini müşterilerine sunulan hizmet tekliflerine paketlemektedir. Bir Microsoft 365 aboneliği sattıklarında, müşteri kiracılarını yönetebilmeleri ve müşteri kiracıları hakkında rapor verebilmeleri için müşteri kiracıları için otomatik olarak Adına Yönetme (AOBO) izinleri verilir.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Başlamadan önce bilmeniz gerekenler
 
-Bu konudaki yordamlar[, PowerShell ile Microsoft 365 için Bağlan](connect-to-microsoft-365-powershell.md) bağlanmanızı gerektirir.
+Bu konudaki yordamlar, [PowerShell ile Microsoft 365'e bağlanmanızı](connect-to-microsoft-365-powershell.md) gerektirir.
 
 Ayrıca iş ortağı kiracı yöneticisi kimlik bilgilerinize de ihtiyacınız vardır.
 
@@ -76,7 +77,7 @@ Ek etki alanları kaydettiyseniz bu, customer **TenantId** ile ilişkili tüm et
 
 ### <a name="get-a-mapping-of-all-tenants-and-registered-domains"></a>Tüm kiracıların ve kayıtlı etki alanlarının eşlemesini alma
 
-önceki Microsoft 365 komutları için PowerShell, kiracı kimliklerini veya etki alanlarını nasıl alabileceğinizi ancak ikisini aynı anda almayabileceğinizi ve bunların tümü arasında net bir eşleme olmadığını gösterdi. Bu komut, tüm müşteri kiracı kimliklerinizin ve etki alanlarının listesini oluşturur.
+Önceki Microsoft 365 için PowerShell komutları, kiracı kimliklerini veya etki alanlarını nasıl alabileceğinizi ancak ikisini birden aynı anda almayabileceğinizi ve bunların hepsi arasında net bir eşleme olmadığını gösterdi. Bu komut, tüm müşteri kiracı kimliklerinizin ve etki alanlarının listesini oluşturur.
 
 ```powershell
 $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.TenantId; Get-MsolDomain -TenantId $Domains | fl @{Label="TenantId";Expression={$Domains}},name}
@@ -108,9 +109,9 @@ Microsoft 365 kullanıcılarının toplu oluşturma, yapılandırma ve lisanslam
 
 `UserPrincipalName,FirstName,LastName,DisplayName,Password,TenantId,UsageLocation,LicenseAssignment`
 
-Nerede:
+burada:
 
-- **UsageLocation**: Bunun değeri, kullanıcının iki harfli ISO ülke/bölge kodudur. Ülke/bölge [kodları,ISO Online Gözatma Platformu'nda](https://go.microsoft.com/fwlink/p/?LinkId=532703) aranabilir. Örneğin, Birleşik Devletler kodu ABD, Brezilya kodu ise BR şeklindedir.
+- **UsageLocation**: Bunun değeri, kullanıcının iki harfli ISO ülke/bölge kodudur. Ülke/bölge kodları[ISO Çevrimiçi Gözatma Platformu'nda](https://go.microsoft.com/fwlink/p/?LinkId=532703) aranabilir. Örneğin, Birleşik Devletler kodu ABD, Brezilya kodu ise BR şeklindedir.
 
 - **LicenseAssignment**: Bunun değeri şu biçimi kullanır: `syndication-account:<PROVISIONING_ID>`. Örneğin, müşteri kiracı kullanıcılarına lisansları O365_Business_Premium atıyorsanız **, LicenseAssignment** değeri şöyle görünür: **syndication-account:O365_Business_Premium**. dağıtım veya CSP iş ortağı olarak erişiminiz olan PROVISIONING_IDs Dağıtım İş Ortağı Portalı'nda bulabilirsiniz.
 

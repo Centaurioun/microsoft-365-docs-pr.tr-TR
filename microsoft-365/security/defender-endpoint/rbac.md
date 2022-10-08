@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: da8876804d220081b7e8b637b08fb70a8ce03416
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f55ca70c94fa73c26cefd067f2006f174ce4b15c
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67686713"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68232682"
 ---
 # <a name="manage-portal-access-using-role-based-access-control"></a>Rol tabanlı erişim denetimini kullanarak portal erişimini yönetme
 
@@ -40,11 +42,11 @@ Rol tabanlı erişim denetimini (RBAC) kullanarak, portala uygun erişim vermek 
 
 Büyük coğrafi olarak dağıtılmış güvenlik operasyonları ekipleri genellikle güvenlik portallarına erişim atamak ve erişim yetkisi vermek için katman tabanlı bir model benimser. Tipik katmanlar aşağıdaki üç düzeyi içerir:
 
-Katmanı|Açıklama|
-:---|:---|
-Katman 1|**Yerel güvenlik operasyonları ekibi / BT ekibi** <br> Bu ekip genellikle coğrafi konum içinde yer alan uyarıları önceliklendirmek ve araştırmakta ve etkin bir düzeltmenin gerekli olduğu durumlarda Katman 2'ye yükseltmektedir.|
-Katman 2|**Bölgesel güvenlik operasyonları ekibi** <br> Bu ekip, bölgelerinin tüm cihazlarını görebilir ve düzeltme eylemleri gerçekleştirebilir.|
-Katman 3|**Küresel güvenlik operasyonları ekibi** <br> Bu ekip güvenlik uzmanlarından oluşur ve portaldan tüm eylemleri görme ve gerçekleştirme yetkisine sahip.|
+|Katmanı |Açıklama  |
+|---------|---------|
+|Katman 1    | **Yerel güvenlik operasyonları ekibi / BT ekibi** <br> Bu ekip genellikle coğrafi konum içinde yer alan uyarıları önceliklendirmek ve araştırmakta ve etkin bir düzeltmenin gerekli olduğu durumlarda Katman 2'ye yükseltmektedir.        |
+|Katman 2    | **Bölgesel güvenlik operasyonları ekibi** <br> Bu ekip, bölgelerinin tüm cihazlarını görebilir ve düzeltme eylemleri gerçekleştirebilir.        |
+|Katman 3     |**Küresel güvenlik operasyonları ekibi** <br> Bu ekip güvenlik uzmanlarından oluşur ve portaldan tüm eylemleri görme ve gerçekleştirme yetkisine sahip.         |
 
 > [!NOTE]
 > Katman 0 varlıkları için güvenlik yöneticilerinin Uç Nokta için Microsoft Defender ve [Microsoft 365 Defender](/azure/active-directory/privileged-identity-management/pim-configure) daha ayrıntılı denetimi sağlamak için Privileged Identity Management bakın.  
@@ -55,6 +57,8 @@ Uç Nokta için Defender RBAC, tercih ettiğiniz katman veya rol tabanlı modeli
   - Özel roller oluşturun ve ayrıntı düzeyiyle erişebilecekleri Uç Nokta için Defender özelliklerini denetleyin.
 - **Belirli cihaz grubu veya gruplarıyla ilgili bilgileri kimlerin görebileceğini denetleme**
   - Adlar, etiketler, etki alanları ve diğerleri gibi belirli ölçütlere göre [cihaz grupları oluşturun](machine-groups.md), ardından belirli bir Azure Active Directory (Azure AD) kullanıcı grubunu kullanarak bunlara rol erişimi verin.
+    > [!NOTE]
+    > Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
 
 Rol tabanlı erişim uygulamak için yönetici rollerini tanımlamanız, ilgili izinleri atamanız ve rollere atanmış Azure AD kullanıcı grubu atamanız gerekir.
 

@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -17,12 +18,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse kullanan Yönetilen Hizmet Sağlayıcıları (MSP) için Microsoft Defender Virüsten Koruma ile tehditleri azaltma hakkında bilgi edinin.
-ms.openlocfilehash: 195e3eb162346c0ae07a661fcd444dfd02b76ce9
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: d8a772b3c49525149f88c5990479faee92f04be8
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596192"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68188823"
 ---
 # <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>Microsoft Defender Virüsten Koruma ile Microsoft 365 Lighthouse tehditleri azaltma
 
@@ -32,7 +33,7 @@ Microsoft 365 Lighthouse, iş ortaklarının tüm kiracılarınızda tehditleri 
 
 - Microsoft 365 Lighthouse yalnızca iş ortağı kiracısında dağıtılır; müşteri kiracılarında dağıtılmaz, ancak sizin ve müşteri kiracılarınızın [Microsoft 365 Lighthouse gereksinimlerinde listelenen gereksinimleri](m365-lighthouse-requirements.md) karşıladığından emin olun.
 
-- Kullanıcıların Microsoft Defender Virüsten Koruma (Windows'a dahil) çalıştırıyor olması gerekir. Lighthouse, Microsoft dışı virüsten koruma yazılımlarını desteklemez. Daha fazla bilgi için bkz. [Microsoft Defender Virüsten Koruma'yı açma](/mem/intune/user-help/turn-on-defender-windows).
+- Kullanıcıların Microsoft Defender Virüsten Koruma (Windows ile birlikte) çalıştırıyor olması gerekir. Lighthouse, Microsoft dışı virüsten koruma yazılımlarını desteklemez. Daha fazla bilgi için bkz[. virüsten koruma Microsoft Defender açma](/mem/intune/user-help/turn-on-defender-windows).
 
 - Oturum açmakta olduğunuz iş ortağı kiracısında Genel Yönetici olmanız gerekir.
 
@@ -133,5 +134,5 @@ Ayrıca, listedeki her cihaz adının yanındaki onay kutusunu seçip **Cihazı 
 [Microsoft 365 Lighthouse gereksinimleri](m365-lighthouse-requirements.md) (makale)\
 [Microsoft 365 Lighthouse'daki Tehdit yönetimi sayfasına genel bakış](m365-lighthouse-threat-management-page-overview.md) (makale)\
 [Microsoft Intune'de uyumluluk ilkesi oluşturma](/mem/intune/protect/create-compliance-policy) (makale)\
-[Microsoft Defender Virüsten Koruma'yi açın](/mem/intune/user-help/turn-on-defender-windows) (makale)\
+[Microsoft Defender Virüsten Koruma](/mem/intune/user-help/turn-on-defender-windows) 'yi açın (makale)\
 [Microsoft Güvenlik Zekası](https://www.microsoft.com/wdsi/threats) (web sayfası)

@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_o365
 ms.custom:
@@ -22,13 +23,13 @@ ms.custom:
 - adminvideo
 search.appverid: MET150
 description: İş için Microsoft 365 aboneliğiniz için daha fazla lisans satın almak veya lisans sayısını azaltmak için bu adımları kullanın.
-ms.date: 08/18/2022
-ms.openlocfilehash: 1641b16f7f04b163c31ae1e03de3d0f7631a5efe
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.date: 09/29/2022
+ms.openlocfilehash: d479308940983183fb6956aa3c5bc6129b6c1d3a
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388066"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68298067"
 ---
 # <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>Abonelik için Microsoft 365 lisanslarını satın alma veya kaldırma
 
@@ -82,7 +83,9 @@ Abonelikten lisansları kaldırdıysanız, yapılacak bir sonraki şey [kullanı
 5. **Kaydet**'i seçin.
 
 > [!NOTE]
-> Tüm lisanslar şu anda kullanıcılara atanmışsa aboneliğinizin lisans sayısını azaltamazsınız. Lisans sayısını azaltmak için önce [kullanıcılardan bir veya daha fazla lisansın atamasını kaldırın](../../admin/manage/remove-licenses-from-users.md), ardından abonelikten lisansları kaldırın.
+> 
+> - Tüm lisanslar şu anda kullanıcılara atanmışsa aboneliğinizin lisans sayısını azaltamazsınız. Lisans sayısını azaltmak için önce [kullanıcılardan bir veya daha fazla lisansın atamasını kaldırın](../../admin/manage/remove-licenses-from-users.md), ardından abonelikten lisansları kaldırın.
+> - Aboneliğinizi bir Microsoft Temsilcisi aracılığıyla satın aldıysanız, lisans sayınızı azaltma konusunda yardım almak için doğrudan bu temsilciyle iletişime geçin.
 
 ## <a name="add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key"></a>Microsoft 365 ürün anahtarı kullanarak ön ödemeli aboneliğe lisans ekleme
 

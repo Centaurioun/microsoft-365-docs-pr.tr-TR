@@ -14,16 +14,17 @@ ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 561f5e5b4025d058b10b9e55b95edaad15e9cad8
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 38d8710b121a445c24abfb9a67a9e0f60cf520ec
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67692387"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68379996"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux'ta Uç Nokta için Microsoft Defender tercihlerini ayarlayın
 
@@ -83,7 +84,7 @@ Virüsten koruma altyapısının zorlama tercihini belirtir. Zorlama düzeyini a
 
 #### <a name="enabledisable-behavior-monitoring"></a>Davranış izlemeyi etkinleştirme/devre dışı bırakma 
 
-Cihazda davranış izleme ve engelleme özelliğinin etkinleştirilip etkinleştirilmediğini belirler. Güvenlik korumasının verimliliğini artırmak için bu özelliği açık tutmanızı öneririz.
+Cihazda davranış izleme ve engelleme özelliğinin etkinleştirilip etkinleştirilmediğini belirler. 
 
 <br>
 
@@ -388,7 +389,6 @@ Aşağıdaki yapılandırma profili şunları yapacaktır:
 - Otomatik güvenlik bilgileri güncelleştirmelerini etkinleştirme
 - Bulut tabanlı korumayı etkinleştirme
 - Düzeyinde otomatik örnek göndermeyi `safe` etkinleştirme
-- Davranış izlemeyi etkinleştirme
 
 ### <a name="sample-profile"></a>Örnek profil
 

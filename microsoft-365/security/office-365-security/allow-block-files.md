@@ -12,16 +12,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Yöneticiler, Güvenlik portalındaki Kiracı İzin Ver/Engelle Listesi'nde dosyalara izin verme veya dosyaları engelleme hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 0b2af1b8cad13c2c0a74424263e5452d45b12183
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: d9413f4cdcb909af87cef1532eb74350b50aa910
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644367"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68090981"
 ---
 # <a name="allow-or-block-files-using-the-tenant-allowblock-list"></a>Kiracı İzin Ver/Engelle Listesini kullanarak dosyalara izin verme veya dosyaları engelleme
 

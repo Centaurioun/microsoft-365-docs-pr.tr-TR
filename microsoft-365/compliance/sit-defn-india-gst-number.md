@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Hindistan GST Numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 19d51294b8ff53b53bceba1a047976802359f09e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6fc840d994311a88ddbb5cc86a26a9b36969213a
+ms.sourcegitcommit: be2334dbcd4e1bf309349d981a68a30e06de0297
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948398"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68379688"
 ---
 # <a name="india-gst-number"></a>Hindistan GST Numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -45,20 +48,20 @@ ms.locfileid: "66948398"
 - isteğe bağlı bir boşluk veya tire
 - bir denetim basamalı
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_india_gst_number` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_india_gst_number` bir anahtar sözcük bulunur.
+- İşlev `Func_india_gst_number`, desenle eşleşen içeriği bulur.
+- `Keyword_india_gst_number` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_india_gst_number` , desenle eşleşen içeriği bulur.
+- İşlev `Func_india_gst_number`, desenle eşleşen içeriği bulur.
 
 ```xml
     <!-- India GST number  -->

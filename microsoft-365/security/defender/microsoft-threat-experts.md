@@ -17,16 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
-ms.openlocfilehash: 5d01c803f087ec04372300eff4be6a9edcd7002c
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+- m365-security
+- tier1
+ms.openlocfilehash: 502f6b359c86a1bbb2574c794afa4ae28b40ed4a
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67585520"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506488"
 ---
-# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 365'te Microsoft Tehdit Uzmanları genel bakış
+# <a name="microsoft-defender-experts-in-microsoft-365-overview"></a>Microsoft 365'te Microsoft Defender Uzmanlarına genel bakış
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -42,25 +42,25 @@ ms.locfileid: "67585520"
 
 Endpoint Attack Notifications (eski adıyla Microsoft Tehdit Uzmanları - Hedefli Saldırı Bildirimi), yönetilen bir tehdit avcılığı hizmetidir. Başvurduktan ve kabul edildikten sonra Microsoft tehdit uzmanlarından uç nokta saldırısı bildirimleri alırsınız, böylece ortamınıza yönelik kritik tehditleri kaçırmazsınız. Bu bildirimler kuruluşunuzun uç noktalarını, e-postalarını ve kimliklerini korumanıza yardımcı olur.
 
-Microsoft Tehdit Uzmanları – İsteğe Bağlı Uzmanlar, kuruluşunuzun karşılaştığı tehditler hakkında uzman tavsiyeleri almanızı sağlar. Kuruluşunuzun karşılaştığı tehditlerle ilgili yardım alabilirsiniz. Abonelik hizmeti olarak kullanılabilir.
+Microsoft Defender Uzmanları – İsteğe Bağlı Uzmanlar, kuruluşunuzun karşılaştığı tehditler hakkında uzman tavsiyeleri almanızı sağlar. Kuruluşunuzun karşılaştığı tehditlerle ilgili yardım alabilirsiniz. Abonelik hizmeti olarak kullanılabilir.
 
 ## <a name="apply-for-endpoint-attack-notifications"></a>Uç Nokta Saldırısı Bildirimleri için Uygula
 
 > [!IMPORTANT]
 > Başvurmadan önce, Uç Nokta Saldırısı Bildirimleri için uygunluk gereksinimlerini Microsoft Teknik Hizmet sağlayıcınız ve hesap ekibinizle tartıştığınızdan emin olun.
 
-Zaten Uç Nokta için Microsoft Defender ve Microsoft 365 Defender varsa, uç nokta saldırısı bildirimlerine Microsoft 365 Defender portalı üzerinden başvurabilirsiniz. **Uç Nokta Saldırısı Bildirimleri > Genel > Gelişmiş özellikler > Ayarlar > Uç Noktalar'a** gidin ve **Uygula'yı** seçin. Tam açıklama için bkz[. Microsoft Tehdit Uzmanları özelliklerini yapılandırma](./configure-microsoft-threat-experts.md).
+Zaten Uç Nokta için Microsoft Defender ve Microsoft 365 Defender varsa, uç nokta saldırısı bildirimlerine Microsoft 365 Defender portalı üzerinden başvurabilirsiniz. **Uç Nokta Saldırısı Bildirimleri > Genel > Gelişmiş özellikler > Ayarlar > Uç Noktalar'a** gidin ve **Uygula'yı** seçin. Tam açıklama için bkz[. Microsoft Defender Uzmanları özelliklerini yapılandırma](./configure-microsoft-threat-experts.md).
 
-Uygulamanız onaylandıktan sonra Tehdit Uzmanları ortamınıza yönelik bir tehdit algıladığı her durumda uç nokta saldırı bildirimleri almaya başlarsınız.
+Uygulamanız onaylandıktan sonra, Defender Uzmanları ortamınıza yönelik bir tehdit algıladığı her durumda uç nokta saldırı bildirimleri almaya başlarsınız.
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Microsoft Tehdit Uzmanları Abone Olma - İsteğe Bağlı Uzmanlar
+## <a name="subscribe-to-microsoft-defender-experts---experts-on-demand"></a>Microsoft Defender Uzmanlarına Abone Olma - İsteğe Bağlı Uzmanlar
 
 > [!NOTE]
 > İsteğe Bağlı Uzmanlar bir güvenlik olayı yanıt hizmeti değildir. Kuruluşunuzu etkileyen karmaşık tehditlerin daha iyi anlaşılmasını sağlamak için tasarlanmıştır. Acil güvenlik olayı yanıt sorunlarını çözmek için kendi güvenlik olayı yanıt ekibinizle etkileşime geçin. Kendi güvenlik olayı yanıt ekibiniz yoksa ve Microsoft'un yardımını istiyorsanız [Premier Services Hub'da](/services-hub/) bir destek isteği oluşturun.
 
-İsteğe Bağlı Uzmanlar'a abone olmak için Microsoft temsilcinizle iletişime geçin.  Tüm ayrıntılar için bkz[. Microsoft Tehdit Uzmanları özelliklerini yapılandırma](./configure-microsoft-threat-experts.md).
+İsteğe Bağlı Uzmanlar'a abone olmak için Microsoft temsilcinizle iletişime geçin.  Tüm ayrıntılar için bkz[. Microsoft Defender Uzmanları özelliklerini yapılandırma](./configure-microsoft-threat-experts.md).
 
-## <a name="receive-endpoint-attack-notification"></a>Uç nokta saldırısı bildirimi alma
+## <a name="receive-endpoint-attack-notification"></a>Uç Nokta Saldırısı Bildirimi Alma
 
 Endpoint Attack Notification özelliği, ağınıza yönelik en önemli tehditler için proaktif avcılık sağlar. Defender Uzmanlarımız insan saldırgan saldırılarını, uygulamalı klavye saldırılarını ve siber saldırı gibi gelişmiş saldırıları avlar. Bu bildirimler yeni bir uyarı olarak gösterilir. Yönetilen tehdit avcılığı hizmeti şunları içerir:
 
@@ -103,4 +103,4 @@ Microsoft Services Hub'a hızlı bir genel bakış için bu videoyu izleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Microsoft Tehdit Uzmanları özelliklerini yapılandırma](./configure-microsoft-threat-experts.md)
+- [Microsoft Defender Uzmanları özelliklerini yapılandırma](./configure-microsoft-threat-experts.md)

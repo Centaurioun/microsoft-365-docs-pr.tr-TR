@@ -17,18 +17,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
 - highpri
+- tier1
 ms.topic: conceptual
-ms.openlocfilehash: 5a446047168394fd8506f2aaed911ce3af284f10
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 19cb49095d3eb89410cfc3a03fbfaf56becf5bc5
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67467975"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68092698"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Uç Nokta için Microsoft Defender mimari gereksinimlerini ve temel kavramları gözden geçirin
 
@@ -44,7 +45,7 @@ Uç Nokta için Microsoft Defender etkinleştirmeden önce mimariyi anladığın
 
 Aşağıdaki diyagramda Uç Nokta için Microsoft Defender mimarisi ve tümleştirmeleri gösterilmektedir. 
 
-:::image type="content" source="../../media/defender/m365-defender-endpoint-architecture.png" alt-text="Office için Microsoft Defender'ı Defender değerlendirme ortamına ekleme adımları" lightbox="../../media/defender/m365-defender-endpoint-architecture.png":::
+:::image type="content" source="../../media/defender/m365-defender-endpoint-architecture.png" alt-text="Defender değerlendirme ortamına Office için Microsoft Defender ekleme adımları" lightbox="../../media/defender/m365-defender-endpoint-architecture.png":::
 
 Aşağıdaki tabloda çizim açıklanmaktadır.
 

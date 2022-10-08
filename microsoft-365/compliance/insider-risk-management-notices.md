@@ -11,20 +11,27 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 7af1152d1393aaaf9eeb242c78b280cf0e9d80e6
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 04117f0880266f934955c1285250e509667a8482
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639808"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68505213"
 ---
 # <a name="insider-risk-management-notice-templates"></a>Insider risk yönetimi bildirim şablonları
+
+>[!IMPORTANT]
+>Microsoft Purview İçeriden Risk Yönetimi IP hırsızlığı, veri sızıntısı ve güvenlik ihlalleri gibi olası kötü amaçlı veya yanlışlıkla insider risklerini belirlemek için çeşitli sinyalleri ilişkilendirmektedir. Insider risk yönetimi, müşterilerin güvenlik ve uyumluluğu yönetmek için ilkeler oluşturmasına olanak tanır. Tasarım gereği gizlilikle oluşturulan kullanıcılar varsayılan olarak takma ad kullanır ve kullanıcı düzeyinde gizlilik sağlamaya yardımcı olmak için rol tabanlı erişim denetimleri ve denetim günlükleri kullanılır.
 
 Insider risk yönetimi bildirim şablonları, ilke eşleşmesi ve onaylanan uyarı oluşturan etkinlikler için bir servis talebi oluşturulduğunda kullanıcılara otomatik olarak e-posta iletileri göndermenizi sağlar. Vaka oluşturan uyarıların çoğu için kullanıcı eylemleri, hatalı amaçlara sahip olmayan hataların veya yanlışlıkla yapılan etkinliklerin sonucu olur. Bildirimler, kullanıcılara daha dikkatli olmaları, daha yenileyici eğitimle ilgili bilgilere bağlantılar sağlamaları veya şirket ilkesi kaynaklarına yönelik basit anımsatıcılar görevi görür. Bildirimler, iç uyumluluk eğitim programınızın önemli bir parçası olabilir ve yinelenen risk etkinlikleri olan kullanıcılar için belgelenmiş bir denetim kaydı oluşturmanıza yardımcı olabilir.
 
 Kullanıcılara, servis talebi çözümleme sürecinin bir parçası olarak ilke eşleşmeleri için bir e-posta anımsatıcı bildirimi göndermek istiyorsanız bildirim şablonları oluşturun. Bildirimler yalnızca incelenmekte olan servis talebiyle ilişkili kullanıcı e-posta adresine gönderilebilir. İlke eşleşmesine uygulanacak bir bildirim şablonu seçerken, şablonda tanımlanan alan değerlerini kabul etmeyi veya gerektiğinde alanların üzerine yazmayı seçebilirsiniz
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="notice-templates-dashboard"></a>Şablon panosuna dikkat edin
 

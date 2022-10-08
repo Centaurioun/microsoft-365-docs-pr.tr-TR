@@ -1,5 +1,5 @@
 ---
-title: Azure İşlev Yöneticisi / API anahtarı varlık tanımı (önizleme)
+title: Azure İşlev Yöneticisi / API anahtarı varlık tanımı
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Azure İşlev Yöneticisi / API anahtarına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 78a4af95c6390cc16f6a60bd3874be660e3cfa5c
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: d16072cc3fdeeeb29b0a8bbf148efc91da611e9a
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476397"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506400"
 ---
-# <a name="azure-function-master--api-key-preview"></a>Azure İşlev Yöneticisi / API anahtarı (önizleme)  
+# <a name="azure-function-master--api-key"></a>Azure İşlev Yöneticisi / API anahtarı  
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Biçim
+Bu SIT, [Tüm kimlik bilgileri](sit-defn-all-creds.md) paketlenmiş SIT'e de dahildir.
+
+ ## <a name="format"></a>Biçim
 
 Harf, rakam ve özel karakterlerden oluşan 56 karakterden oluşan bir birleşim.
 
@@ -67,9 +69,15 @@ veya
 abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDEF0123456789%3D%3D
 
 
+## <a name="credential-example"></a>Kimlik bilgisi örneği 
+
+`https://account.azurewebsites.net/api/function?code=abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDEF0123456789%3D%3D`
+
 ## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
+
+Sağlama toplamları olan SID'ler, bilgilerin geçerli olup olmadığını denetlemek için benzersiz bir hesaplama kullanır. Bu, **Sağlama Toplamı** değeri **Evet** olduğunda hizmetin yalnızca hassas verileri temel alarak pozitif bir algılama gerçekleştirebileceği anlamına gelir. **Sağlama Toplamı** değeri Ek (ikincil) öğe **olmadığında**, hizmetin pozitif bir algılama yapması için de algılanması gerekir.
 
 ## <a name="definition"></a>Tanım
 

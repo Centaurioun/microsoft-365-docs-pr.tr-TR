@@ -20,18 +20,20 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Yüksek riskli kaynaklar için Azure Depolama hesabı paylaşılan erişim imzası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: a3413afd4bb397750f75646a7f1d4ba61e8888cc
-ms.sourcegitcommit: fa570d90b00ed1bb40e1ca27b11c66a84c4204e9
+ms.openlocfilehash: 6730032323e86b138e4b124ca73c3413af91c9db
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/05/2022
-ms.locfileid: "68476913"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504412"
 ---
 # <a name="azure-storage-account-shared-access-signature-for-high-risk-resources-preview"></a>Yüksek riskli kaynaklar için Azure Depolama hesabı paylaşılan erişim imzası (önizleme)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## <a name="format"></a>Biçim
+Bu SIT, [Tüm kimlik bilgileri](sit-defn-all-creds.md) paketlenmiş SIT'e de dahildir.
+
+ ## <a name="format"></a>Biçim
 
 Harf, rakam ve özel karakterlerden oluşan 44 karakterden oluşan bir birleşim.
 
@@ -66,9 +68,15 @@ veya
 
 `abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
 
+## <a name="credential-example"></a>Kimlik bilgisi örneği 
+
+`https://account.blob.core.windows.net/file.cspkg?...&sig=abcdefghijklmnopqrstuvwxyz0123456789%2F%2BABCDE%3D`
+
 ## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
+
+Sağlama toplamları olan SID'ler, bilgilerin geçerli olup olmadığını denetlemek için benzersiz bir hesaplama kullanır. Bu, **Sağlama Toplamı** değeri **Evet** olduğunda hizmetin yalnızca hassas verileri temel alarak pozitif bir algılama gerçekleştirebileceği anlamına gelir. **Sağlama Toplamı** değeri Ek (ikincil) öğe **olmadığında**, hizmetin pozitif bir algılama yapması için de algılanması gerekir.
 
 ## <a name="definition"></a>Tanım
 

@@ -13,14 +13,16 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 67b939195a044d912620fe433dadada6513d238b
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 4a6d0d1be1e26023b93164861a6d3533fda94220
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67743360"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68173841"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Denetimli klasör erişimini değerlendirin
 

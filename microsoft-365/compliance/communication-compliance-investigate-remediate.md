@@ -14,20 +14,23 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1dffcf448bf3273cc845aae269a29ab3653a5bea
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 9b5a681f8ea8478c0cf8a84e0d76d138b721a973
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728154"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506686"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>İletişim uyumluluğu uyarılarını araştırma ve çözümleme
+
+>[!IMPORTANT]
+>Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamak için kullanılır.
 
 [İletişim uyumluluk ilkelerinizi](/microsoft-365/compliance/communication-compliance-policies) yapılandırdıktan sonra, [Microsoft Purview uyumluluk portalı](https://compliance.microsoft.com) ilke koşullarınızla eşleşen ileti sorunları için uyarılar almaya başlarsınız. Uyarıları görüntülemek ve üzerinde işlem yapmak için kullanıcıların aşağıdaki izinlere sahip olması gerekir:
 
@@ -35,6 +38,8 @@ ms.locfileid: "67728154"
 - Uyarıyla ilişkili ilkede gözden geçiren olarak atanmalıdır
 
 Gerekli izinlere sahip olduktan sonra, uyarı sorunlarını araştırmak ve düzeltmek için buradaki iş akışı yönergelerini izleyin.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="investigate-alerts"></a>Uyarıları araştırın
 

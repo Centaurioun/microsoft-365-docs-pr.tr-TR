@@ -1,11 +1,11 @@
 ---
-title: Aynı anda birkaç kullanıcı ekleme - Microsoft 365 Yardımı
+title: Microsoft 365'e aynı anda birkaç kullanıcı ekleme - yardım Yönetici
 ms.author: kwekua
 author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -15,6 +15,8 @@ ms.custom:
 - O365M_AddUsersCSV
 - O365E_AddUsersCSV
 - admindeeplinkMAC
+ms.collection:
+- scotvorg
 search.appverid:
 - MET150
 - MOP150
@@ -24,32 +26,32 @@ search.appverid:
 - MBS150
 - GEA150
 - BCS160
-description: "Bir elektronik tablo veya CSV biçimli Microsoft 365 bir listeden işletmelere birden çok kullanıcı ekleme hakkında bilgi öğrenin. YouTube'da, videoya hesap ekleme hakkında bir video Microsoft 365. Bu işlem sonunda, hesabı olan her kullanıcının ayrı bir posta Microsoft 365 olur. "
-ms.openlocfilehash: d9152ba8dfef21faeaba6f981c23359eb114b653
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: "İş için Microsoft 365'e elektronik tablodaki veya CSV biçimlendirilmiş başka bir dosyadaki listeden birden çok kullanıcı eklemeyi öğrenin. YouTube'da Microsoft 365'e hesap eklemeyi açıklayan bir video izleyin. Bu işlemin sonunda, hesabı olan her kullanıcının bir Microsoft 365 posta kutusu olacaktır. "
+ms.openlocfilehash: c8453e5634245897a06867b422349c3350de03ae
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "62985693"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68201187"
 ---
-# <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Aynı anda birkaç kullanıcı ekleme - Microsoft 365 Yardımı
+# <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Microsoft 365'e aynı anda birkaç kullanıcı ekleme - yardım Yönetici
 
-Ekibinizin her bir kişisinde oturum açması ve e-posta ve posta gibi hizmetlere Microsoft 365 için bir kullanıcı hesabı Office. Çok fazla kişi varsa, Excel elektronik tablosundan veya CSV biçiminde kaydedilmiş başka bir dosyadan bu kişilerin hesaplarını bir kerede ekleyebilirsiniz. [CSV biçiminin ne olduğundan emin değil misiniz](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)?
+Ekibinizdeki her kişinin oturum açıp e-posta ve Office gibi Microsoft 365 hizmetlerine erişebilmesi için önce bir kullanıcı hesabına ihtiyacı vardır. Çok fazla kişi varsa, Excel elektronik tablosundan veya CSV biçiminde kaydedilmiş başka bir dosyadan bu kişilerin hesaplarını bir kerede ekleyebilirsiniz. [CSV biçiminin ne olduğundan emin değil misiniz](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)?
   
 > [!NOTE]
 > Yeni Microsoft 365 yönetim merkezini kullanmıyorsanız, Giriş sayfasının üst kısmında bulunan **Yeni yönetim merkezini deneyin** iki durumlu düğmesini seçerek yönetim merkezini açabilirsiniz.
 
-## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>E-postanıza birden çok kullanıcı Microsoft 365 yönetim merkezi
+## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi birden çok kullanıcı ekleme
 
-1. İş veya Microsoft 365 hesabınızla oturum açın.
+1. İş veya okul hesabınızla Microsoft 365'te oturum açın.
 
-2. Yönetim merkezinde Kullanıcılar Etkin **kullanıcılar'ı** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**seçin**</a>.
+2. Yönetim merkezinde **Kullanıcılar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Etkin kullanıcılar'ı**</a> seçin.
 
-3. Birden çok **kullanıcı ekle'yi seçin**.
+3. **Birden çok kullanıcı ekle'yi** seçin.
 
 4. **Birden çok kullanıcıyı içeri aktar** panelinde, dilerseniz örnek verilerin dolu veya boş olduğu örnek bir CSV dosyası indirebilirsiniz.
 
-    Elektronik tablonuzu, örnek **elektronik tablodaki sütun başlıklarından** tam olarak birinin (Kullanıcı Adı, Ad, vb.) içermesi gerekir. Şablonu kullanıyorsanız, Not Defteri gibi bir metin düzenleme aracında açın ve 1. satırdaki verileri olduğu gibi bırakıp yalnızca 2. ve altındaki satırlara veri girmeyi düşünebilirsiniz.
+    Elektronik tablonuzun örnekle **aynı sütun başlıklarını** (Kullanıcı Adı, Ad vb.) içermesi gerekir. Şablonu kullanıyorsanız, şablonu Not Defteri gibi bir metin düzenleme aracında açın ve 1. satırdaki tüm verileri tek başına bırakmayı ve yalnızca 2. ve altındaki satırlara veri girmeyi göz önünde bulundurun.
 
     Elektronik tablonuzda her kullanıcı için kullanıcı adı (bob@contoso.com gibi) ve görünen ad (Bob Kelly gibi) değerleri de bulunmalıdır.
 
@@ -73,45 +75,45 @@ Ekibinizin her bir kişisinde oturum açması ve e-posta ve posta gibi hizmetler
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- Artık bu kişilerin hesapları olduğu için BIR PC veya Mac bilgisayara Microsoft 365 [ya da Office 2016'da indirmeleri ve yüklemeleri veya yeniden yüklemeleri gerekir](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Ekibinizi her bir kişi en Microsoft 365 bilgisayara veya Mac'e yükleyebilir.
+- Artık bu kişilerin hesapları olduğuna göre, [PC veya Mac bilgisayara Microsoft 365 veya Office 2016'yı indirmeleri ve yüklemeleri veya yeniden yüklemeleri](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) gerekir. Ekibinizdeki her kişi Microsoft 365'i en fazla 5 bilgisayara veya Mac bilgisayara yükleyebilir.
 
-- Ayrıca her bir kişi iPhone Office, iPad ve Android telefon ve tabletler gibi en çok 5 tablet ve 5 telefondan mobil cihazda mobil cihazda e-posta ve mobil cihaz e-postası ve e-postayı da [kurabilirsiniz](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f). Bu sayede her yerden Office düzenleyebilirler.
+- Ayrıca her kişi iPhone, iPad ve Android telefonlar ve tabletler gibi en fazla 5 tablet ve 5 telefonda [bir mobil cihazda Office uygulamalarını ve e-postalarını ayarlayabilir](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) . Bu şekilde Office dosyalarını her yerden düzenleyebilirler.
 
-    Kurulum [adımlarının Microsoft 365](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) uç listesi için İşletmeler için kurulum adımları'nı ayarlama'ya bakın.
+    Kurulum adımlarının uçtan uca listesi için bkz. [İş için Microsoft 365'i ayarlama](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) .
 
-## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>Kullanıcı ekleme hakkında daha fazla bilgi Microsoft 365
+## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>Microsoft 365'e kullanıcı ekleme hakkında daha fazla bilgi
 
 ### <a name="not-sure-what-csv-format-is"></a>CSV biçiminin ne olduğu konusunda emin değil misiniz?
 
-CSV dosyası, virgülle ayrılmış değerler içeren bir dosyadır. Bu tür bir dosyayı her metin düzenleyicisiyle veya Excel gibi bir elektronik tablo programıyla oluşturabilir veya düzenleyebilirsiniz.
+A CSV file is a file with comma separated values. You can create or edit a file like this with any text editor or spreadsheet program, such as Excel.
   
-Başlangıç noktası olarak [bu örnek elektronik tabloyu](https://www.microsoft.com/download/details.aspx?id=45485) indirebilirsiniz. Sütun Microsoft 365 ilk satırda sütun başlıkları gerektirdiğini unutmayın, bu nedenle onları başka bir başlıkla değiştirin. 
+Başlangıç noktası olarak [bu örnek elektronik tabloyu](https://www.microsoft.com/download/details.aspx?id=45485) indirebilirsiniz. Microsoft 365'in ilk satırda sütun başlıkları gerektirdiğini unutmayın, bu nedenle bunları başka bir şeyle değiştirmeyin. 
   
 Dosyayı yeni adla kaydedin ve CSV biçimini belirtin.
   
-![Dosyanın CSV biçiminde Excel resmi.](../media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
+![Excel'de csv biçiminde dosya kaydetmenin resmi.](../media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
   
-Dosyayı kaydederken, büyük olasılıkla dosyayı CSV biçiminde kaydederseniz çalışma kitabınızdaki bazı özellikleri kaybedeceğinizi bildiren bir bilgi istemi alırsınız. Bu sorun değildir. Devam etmek için **Evet**'e tıklayın.
+When you save the file, you'll probably get a prompt that some features in your workbook will be lost if you save the file in CSV format. This is okay. Click **Yes** to continue.
   
-![Bir dosyadan alsanız bile, Excel gerçekten CSV biçiminde kaydetmek mi istediğinizi soran istemin resmi.](../media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
+![Excel'den alabileceğiniz ve dosyayı gerçekten CSV biçimi olarak kaydetmek isteyip istemediğinizi soran istemin resmi.](../media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
   
 ### <a name="tips-for-formatting-your-spreadsheet"></a>Elektronik tablonuzu biçimlendirme ipuçları
 
-- **Örnek elektronik tablodaki gibi örnek sütun başlıklarına ihtiyacım var mı?** Evet. Örnek elektronik tablonun ilk satırında sütun başlıkları vardır. Bu başlıklar gereklidir. Belgeye eklemek istediğiniz her kullanıcı Microsoft 365 başlığın altında bir satır oluşturun. Sütun başlıklarından herhangi birini ekler, değiştirir veya siler Microsoft 365, dosyadaki bilgilerden kullanıcıları oluşturamıyor olabilir.
+- **Örnek elektronik tablodaki gibi örnek sütun başlıklarına ihtiyacım var mı?** Evet. Örnek elektronik tablonun ilk satırında sütun başlıkları vardır. Bu başlıklar gereklidir. Microsoft 365'e eklemek istediğiniz her kullanıcı için başlığın altında bir satır oluşturun. Sütun başlıklarından herhangi birini ekler, değiştirir veya silerseniz, Microsoft 365 dosyadaki bilgilerden kullanıcı oluşturamayabilir.
 
-- **Her kullanıcı için gereken tüm bilgilere sahip değilsem ne yapmalıyım?** Kullanıcı adı ve görünen ad gereklidir ve bu bilgiler olmadan yeni bir kullanıcı ekleyemezsiniz. Faks gibi diğer bilgilerden bazılarına sahip değilseniz, alanın boş kalması gerektiğini belirtmek için bir boşluk ve virgül kullanabilirsiniz.
+- **What if I don't have all the information required for each user?** The user name and display name are required, and you cannot add a new user without this information. If you don't have some of the other information, such as the fax, you can use a space plus a comma to indicate that the field should remain blank.
 
-- **Elektronik tablo ne kadar küçük veya büyük olabilir?** Elektronik tabloda en az iki satır olması gerekir. One is for the column headings (the user data column label) and one for the user. You cannot have more than 251 rows. If you need to import more than 250 users, you can create more than one spreadsheet.
+- **Elektronik tablo ne kadar küçük veya büyük olabilir?** Elektronik tabloda en az iki satır olmalıdır. One is for the column headings (the user data column label) and one for the user. You cannot have more than 251 rows. If you need to import more than 250 users, you can create more than one spreadsheet.
 
-- **Hangi dilleri kullanabilirim?** Elektronik tablonuzu  girerken, kullanıcı verisi sütun etiketlerini istediğiniz dilde veya karakterde girebilirsiniz, ancak örnekte gösterildiği gibi, etiketlerin sıralamalarını değiştirmeyebilirsiniz. You can then make entries into the fields, using any language or characters, and save your file in a Unicode or UTF-8 format.
+- **Hangi dilleri kullanabilirim?** Elektronik tablonuzu oluştururken, kullanıcı verileri sütun etiketlerini herhangi bir dilde veya karakterde girebilirsiniz, ancak örnekte gösterildiği gibi etiketlerin sırasını değiştirmemelisiniz. You can then make entries into the fields, using any language or characters, and save your file in a Unicode or UTF-8 format.
 
-- **Farklı ülkelerden veya bölgelerden kullanıcılar ekliyorsam ne olacak?** Her bölge için ayrı bir elektronik tablo oluşturun. Kullandığınız dosyadaki tüm kullanıcılar için tek bir konum belirterek, her elektronik tabloyla Kullanıcıları toplu ekle sihirbazının adımlarını izlemeniz gerekir.
+- **What if I'm adding users from different countries or regions?** Create a separate spreadsheet for each area. You'll need to step through the Bulk add users wizard which each spreadsheet, giving a single location of all users included in the file that you're working with.
 
-- **Kullanabileceğim karakter sayısı için bir sınırlama var mı?** Aşağıdaki tablo, örnek elektronik tablodaki kullanıcı verisi sütun etiketlerini ve her biri için en fazla karakter uzunluğunu göstermektedir.
+- **Is there a limit to the number of characters I can use?** The following table shows the user data column labels and the maximum character length for each in the sample spreadsheet.
 
 |**Kullanıcı verisi sütun etiketi**|**En fazla karakter uzunluğu**|
 |:-----|:-----|
-|Kullanıcı Adı (Gerekli)  <br/> |@ işaretiyle birlikte 79, metin name@domain.\<extension\> Kullanıcının diğer adı 50 karakteri ve etki alanı adı da 48 karakteri geçemez.  <br/> |
+|Kullanıcı Adı (Gerekli)  <br/> |79 işareti (@), name@domain biçiminde..\<extension\>. Kullanıcının diğer adı 50 karakteri ve etki alanı adı 48 karakteri aşamaz.  <br/> |
 |Ad  <br/> |64  <br/> |
 |Soyadı  <br/> |64  <br/> |
 |Görünen Ad (gerekli)  <br/> |256  <br/> |
@@ -127,12 +129,12 @@ Dosyayı kaydederken, büyük olasılıkla dosyayı CSV biçiminde kaydederseniz
 |ZIP veya Posta Kodu  <br/> |40  <br/> |
 |Ülke veya Bölge  <br/> |128  <br/> |
 
-### <a name="still-having-problems-when-adding-users-to-microsoft-365"></a>Kullanıcı eklemeye devam etmek için sorun mu Microsoft 365?
+### <a name="still-having-problems-when-adding-users-to-microsoft-365"></a>Microsoft 365'e kullanıcı eklerken hala sorun mu yaşıyorsunuz?
 
-- **Elektronik tablonun doğru biçimlendirilip biçimlendirilmediğini iki kez denetleyin.** Örnek dosyadaki başlıklara uyduklarından emin olmak için sütun başlıklarını denetleyin. Karakter uzunluğu ile ilgili kurallara uyduğunuzdan ve her alanın bir virgülle ayrıldığından emin olun.
+- **Double-check that the spreadsheet is formatted correctly.** Check the column headings to make sure they match the headings in the sample file. Make sure you're following the rules for character lengths and that each field is separated by a comma.
 
-- **E-postada yeni kullanıcıları Microsoft 365, birkaç dakika bekleyin.** Değişikliklerin ülke genelindeki tüm hizmetlere gitmek biraz zaman Microsoft 365. 
+- **Microsoft 365'teki yeni kullanıcıları hemen görmüyorsanız birkaç dakika bekleyin.** Değişikliklerin Microsoft 365'teki tüm hizmetlere gitmesi biraz zaman alabilir. 
 
 ## <a name="related-articles"></a>İlgili makaleler
 
-[Kullanıcıları kişisel sitenize tek tek veya toplu Microsoft 365](/office365/admin/add-users/add-users)
+[Kullanıcıları Microsoft 365'e tek tek veya toplu olarak ekleme](/office365/admin/add-users/add-users)

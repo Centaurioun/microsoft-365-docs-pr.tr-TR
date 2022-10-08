@@ -10,7 +10,9 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: PowerShell ile Microsoft 365 kullanıcı hesaplarınızı farklı şekillerde görüntülemeyi, listelemeyi veya görüntülemeyi öğrenin.
-ms.openlocfilehash: bf3e8841272cfd744a41675a6b3bca1c81586116
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: aa76739d31ffcd4810effd83181d3e2b3799483e
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672787"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187701"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>PowerShell ile Microsoft 365 kullanıcı hesaplarını görüntüleme
 

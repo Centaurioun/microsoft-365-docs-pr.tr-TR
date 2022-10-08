@@ -14,23 +14,28 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2413cee978fa2fe66a2672e307e8cad12a7b803b
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 0fbe9108f6f0f33ecaad3d44354c6c85f66c9195
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787045"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506664"
 ---
 # <a name="use-communication-compliance-with-siem-solutions"></a>SIEM çözümleriyle iletişim uyumluluğunu kullanma
+
+>[!IMPORTANT]
+>Microsoft Purview İletişim Uyumluluğu, kuruluşların hassas veya gizli bilgiler, taciz veya tehdit dili ve yetişkin içeriğinin paylaşılması gibi mevzuat uyumluluğu ihlallerini (örneğin SEC veya FINRA) algılamasına yardımcı olacak araçlar sağlar. Tasarım gereği gizlilikle oluşturulan kullanıcı adları varsayılan olarak takma ad kullanılır, rol tabanlı erişim denetimleri yerleşiktir, araştırmacılar bir yönetici tarafından kabul edilir ve denetim günlükleri kullanıcı düzeyinde gizlilik sağlamak için kullanılır.
 
 [İletişim uyumluluğu](/microsoft-365/compliance/communication-compliance) , Microsoft Purview'da kuruluşunuzdaki uygunsuz iletileri algılamanıza, yakalamanıza ve üzerinde işlem yapmanıza yardımcı olarak iletişim risklerini en aza indirmeye yardımcı olan bir iç risk çözümüdür. [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) veya [Splunk](https://www.splunk.com/) gibi güvenlik bilgileri ve olay yönetimi (SIEM) çözümleri genellikle kuruluş içindeki tehditleri toplamak ve izlemek için kullanılır.
 
 Kuruluşların yaygın ihtiyaçlarından biri, iletişim uyumluluk uyarılarını ve bu SIEM çözümlerini tümleştirmektir. Bu tümleştirme sayesinde kuruluşlar, iletişim uyumluluk uyarılarını SIEM çözümlerinde görüntüleyebilir ve ardından iletişim uyumluluğu iş akışı ve kullanıcı deneyimi içindeki uyarıları düzeltebilir. Örneğin, bir çalışan başka bir çalışana rahatsız edici bir ileti gönderir ve bu ileti uygunsuz içerik için bir iletişim uyumluluk ilkesi tarafından algılanır. Bu olaylar, iletişim uyumluluk çözümü tarafından Microsoft 365 Denetiminde ("birleşik denetim günlüğü" olarak da bilinir) izlenir ve SIEM çözümüne aktarılır. Ardından, Microsoft 365 Denetimi'ne dahil edilen ve iletişim uyumluluk uyarılarıyla ilişkili olaylardan kuruluş için SIEM çözümünde bir uyarı tetiklenir. Araştırmacılara SIEM çözümlerinde uyarı bildirilir ve ardından iletişim uyumluluk çözümünde uyarıyı araştırır ve düzelterler.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>Microsoft 365 Denetimi'nde iletişim uyumluluğu uyarıları
 

@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom:
 - seo-marvel-apr2020
 description: Yöneticiler, Exchange Online Protection (EOP) içindeki iletilere uygulanan istenmeyen posta güvenilirlik düzeyi (SCL) hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 4f041fe92d6ba295a11dab7904316b238686a34f
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 52287e2e264cd8b6281bc7b0f85b315cc0047494
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67595949"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082581"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP'de istenmeyen posta güvenilirlik düzeyi (SCL)
 

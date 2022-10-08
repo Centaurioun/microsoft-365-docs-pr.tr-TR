@@ -8,17 +8,19 @@ manager: scotv
 ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management
+ms.collection:
+- scotvorg
+- M365-subscription-management
 ms.custom: it-pro
 description: Kullanım dışı Masaüstü Dağıtım Merkezi ile eşdeğer kaynaklara erişmeyi öğrenin.
-ms.openlocfilehash: e6ba3f86d4c1e02b29206d57ccab220f74ab7e3e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
-ms.translationtype: HT
+ms.openlocfilehash: 05bf1fa00576b2ed470cef428f51e0e57450ab9d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095344"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68185567"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Masaüstü Dağıtım Merkezi (kullanım dışı)
 

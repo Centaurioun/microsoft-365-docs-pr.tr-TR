@@ -6,21 +6,23 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
+ms.date: 07/19/2022
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
-ms.openlocfilehash: 80ec798842c29f42a70837b0a0e33042884c2e02
-ms.sourcegitcommit: 511d15831b97d02e5a0f5e11834ad52617abd0f6
+- m365-security
+- tier1
+ms.openlocfilehash: 684c099a6439ee46d3c3b7acc03021df06534e7b
+ms.sourcegitcommit: 4dfb5de8c61847b8ddd10410ad20d34860eed8f6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67600148"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68110742"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'deki öğreticiler ve simülasyonlar
 
@@ -33,8 +35,8 @@ Aşağıdaki tabloda, İş için Defender ile deneyebileceğiniz çeşitli senar
 
 | Senaryo  | Açıklama  |
 |---------|---------|
-| Yerel betik kullanarak cihazları ekleme     | İş için Defender'da, indirdiğiniz ve her cihazda çalıştırdığınız bir betik kullanarak Windows ve Mac cihazları ekleyebilirsiniz. Betik, bu güven yoksa Azure Active Directory (Azure AD) ile bir güven oluşturur; Intune'nuz varsa cihazı Microsoft Intune'a kaydeder ve cihazı İş için Defender'a ekler. Daha fazla bilgi edinmek için bkz. [Cihazları İş için Defender'a ekleme](mdb-onboard-devices.md).         |
-| Microsoft Endpoint Manager yönetim merkezini kullanarak cihazları ekleme     | İş için Defender'ı almadan önce Zaten Intune kullanıyorsanız, cihazları eklemek için Endpoint Manager yönetim merkezini kullanmaya devam edebilirsiniz. Windows, Mac, iOS ve Android cihazlarınızı Microsoft Intune ile eklemeyi deneyin. Daha fazla bilgi için bkz. [Microsoft Intune'da cihaz kaydı](/mem/intune/enrollment/device-enrollment).        |
+| Yerel betik kullanarak cihazları ekleme     | İş için Defender'da, indirdiğiniz ve her cihazda çalıştırdığınız bir betik kullanarak Windows ve Mac cihazları ekleyebilirsiniz. Betik, bu güven yoksa Azure Active Directory (Azure AD) ile bir güven oluşturur; Intune varsa cihazı Microsoft Intune kaydeder ve cihazı İş için Defender'a ekler. Daha fazla bilgi edinmek için bkz. [Cihazları İş için Defender'a ekleme](mdb-onboard-devices.md).         |
+| Microsoft Endpoint Manager yönetim merkezini kullanarak cihazları ekleme     | İş için Defender'ı almadan önce zaten Intune kullanıyorsanız cihazları eklemek için Endpoint Manager yönetim merkezini kullanmaya devam edebilirsiniz. Windows, Mac, iOS ve Android cihazlarınızı Microsoft Intune ile eklemeyi deneyin. Daha fazla bilgi için bkz. [Microsoft Intune'de cihaz kaydı](/mem/intune/enrollment/device-enrollment).        |
 | Güvenlik ilkelerini düzenleme     | İş için Defender'da güvenlik ilkelerinizi yönetiyorsanız, ilkelerinizi görüntülemek ve düzenlemek için **Cihaz yapılandırma** sayfasını kullanın. İş için Defender, şirketinizin cihazlarının eklendikleri anda güvenliğini sağlamak için önerilen ayarları kullanan varsayılan ilkelerle birlikte gelir. Varsayılan ilkeleri tutabilir, düzenleyebilir ve kendi ilkelerinizi iş gereksinimlerinize uyacak şekilde tanımlayabilirsiniz. Daha fazla bilgi için bkz. [İş için Defender'da ilkeleri görüntüleme veya düzenleme](mdb-view-edit-policies.md).        |
 | Simülasyon saldırısı çalıştırma   | İş için Defender'da çeşitli öğreticiler ve simülasyonlar mevcuttur. Bu öğreticiler ve simülasyonlar, İş için Defender'ın tehdit koruması özelliklerinin şirketiniz için nasıl çalışabileceğini gösterir. Ekibiniz için eğitim alıştırması olarak simülasyon saldırısı da kullanabilirsiniz. Öğreticileri denemek için bkz. [İş için Defender için önerilen öğreticiler](#recommended-tutorials-for-defender-for-business).         |
 | Microsoft 365 Lighthouse'da olayları görüntüleme     | Microsoft 365 Lighthouse kullanan bir [Microsoft Bulut Çözümü Sağlayıcısıysanız](/partner-center/enrolling-in-the-csp-program), Microsoft 365 Lighthouse portalınızda müşterilerinizin kiracıları genelinde olayları görüntüleyebilirsiniz. Daha fazla bilgi için bkz. [Microsoft 365 Lighthouse ve İş için Defender](mdb-lighthouse-integration.md).       |
@@ -53,7 +55,7 @@ Aşağıdaki tabloda, İş için Defender müşterileri için önerilen öğreti
 Her öğreticide senaryoyu, nasıl çalıştığını ve ne yapılacağını açıklayan bir izlenecek yol belgesi bulunur.
 
 > [!TIP]
-> İzlenecek belgelerde Pertahanan Microsoft untuk Titik Akhir başvurularını görürsünüz. Bu makalede listelenen öğreticiler Uç Nokta için Defender veya İş için Defender ile kullanılabilir.
+> İzlenecek belgelerde Uç Nokta için Microsoft Defender başvurularını görürsünüz. Bu makalede listelenen öğreticiler Uç Nokta için Defender veya İş için Defender ile kullanılabilir.
 
 ## <a name="how-to-access-the-tutorials"></a>Öğreticilere erişme
 

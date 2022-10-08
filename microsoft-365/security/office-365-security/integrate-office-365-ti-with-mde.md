@@ -2,7 +2,7 @@
 title: Uç Nokta için Microsoft Defender ile birlikte Office 365 için Microsoft Defender kullanma
 f1.keywords:
 - NOCSH
-keywords: integrate, Microsoft Defender, Uç Nokta için Microsoft Defender
+keywords: tümleştirme, Microsoft Defender Uç Nokta için Microsoft Defender
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Cihazlarınıza yönelik tehditler ve e-posta içeriği hakkında daha ayrıntılı bilgi edinmek için Office 365 için Microsoft Defender Uç Nokta için Microsoft Defender birlikte kullanın.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: be951f29924300bfa14c92df549c7959a995c7ef
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 3005f5165b967ca13fc2688971c82a5fab36b2ed
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598395"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066508"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender ile birlikte Office 365 için Microsoft Defender kullanma
 

@@ -14,16 +14,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
-ms.openlocfilehash: e815af864aa66173a7ce110948c4cd8e9e19be35
-ms.sourcegitcommit: d3ef9391f621e8f4ca70661184b3bb82c6cbda94
+ms.openlocfilehash: 205cce10d0f443724b6d99c83d4b2075e8031d4f
+ms.sourcegitcommit: 4e42bafee965446f44f7f57d1defed2b9b24fce8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67577904"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68227998"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Cihazda canlı yanıt komutlarını çalıştırma
 
@@ -58,6 +60,8 @@ Bir cihazda bir dizi canlı yanıt komutu çalıştırır
 5. Canlı yanıt komutları kuyruğa alınamaz ve aynı anda yalnızca bir tane yürütülebilir.
 
 6. Bu API çağrısını çalıştırmaya çalıştığınız makine, kendisine otomatik düzeltme düzeyi atanmamış bir RBAC cihaz grubundaysa, belirli bir Cihaz Grubu için en azından en düşük Düzeltme Düzeyini etkinleştirmeniz gerekir.
+    > [!NOTE]
+    > Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.  
 
 7. Tek bir API çağrısında birden çok canlı yanıt komutu çalıştırılabilir. Ancak canlı yanıt komutu başarısız olduğunda sonraki tüm eylemler yürütülmeyecektir.
 

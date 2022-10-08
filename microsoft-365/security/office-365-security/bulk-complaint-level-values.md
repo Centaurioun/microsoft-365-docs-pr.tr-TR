@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
-- M365-security-compliance
+- m365-security
 description: Yöneticiler, Exchange Online Protection (EOP) içinde kullanılan toplu şikayet düzeyi (BCL) değerleri hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 056531c0fe0173d6cbd417a5d51b8a40a339e671
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 1e7da11302109a17d9a80c466aa1ed338a0cc6ae
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67474918"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68066772"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>EOP'de toplu şikayet düzeyi (BCL)
 

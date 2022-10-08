@@ -11,20 +11,22 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 - m365solution-m365-identity
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 ms.custom: ''
 description: Kullanıcılarınızın çok faktörlü kimlik doğrulaması (MFA) ve diğer özelliklerle güvenli bir şekilde oturum açmasını zorunlu kılar.
-ms.openlocfilehash: c0b78128ec9f08cd099bebcfa61a3bc2f25452b9
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: 1fea63ceed92067bfde621abfc0b591469353c25
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67556512"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68178723"
 ---
 # <a name="step-3-protect-your-microsoft-365-user-accounts"></a>3. Adım: Microsoft 365 kullanıcı hesaplarınızı koruma
 

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Portekiz sürücü lisansı numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 618f2d96ef9dfa100670a2dc1aecd83ede898c6d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 235e33c55531e1f5bbc2de28a33ed6bb2b74390b
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989429"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472771"
 ---
 # <a name="portugal-drivers-license-number"></a>Portekiz ehliyet numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -50,13 +53,13 @@ Desen 2: Bir harf ve ardından özel karakterler içeren 6/8 basamak:
 - Boşluk
 - Bir basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_portugal_eu_driver's_license_number` , desenle eşleşen içeriği bulur.
 - veya `Keywords_portugal_eu_driver's_license_number` anahtar `Keywords_eu_driver's_license_number` sözcüğü bulunur.

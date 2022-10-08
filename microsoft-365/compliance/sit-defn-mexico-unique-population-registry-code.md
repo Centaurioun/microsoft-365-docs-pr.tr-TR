@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Meksika Benzersiz Nüfus Kayıt Defteri Kodu (CURP) hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 806f7e9b0d2dd797b17ad848d160c6f74c04e1e2
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 20afce26f7769e1a322c21109a8b934dbf14ca3d
+ms.sourcegitcommit: 6df492719fecc2b213d55465dc1cd60ab4627ed6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989537"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68384085"
 ---
 # <a name="mexico-unique-population-registry-code-curp"></a>Meksika Benzersiz Nüfus Kayıt Defteri Kodu (CURP)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -42,20 +45,20 @@ ms.locfileid: "66989537"
 - bir harf veya rakam
 - bir basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_mexico_population_registry_code` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_mexico_population_registry_code` bir anahtar sözcük bulunur.
+- İşlev `Func_mexico_population_registry_code`, desenle eşleşen içeriği bulur.
+- `Keyword_mexico_population_registry_code` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_mexico_population_registry_code` , desenle eşleşen içeriği bulur.
+- İşlev `Func_mexico_population_registry_code`, desenle eşleşen içeriği bulur.
 
 ```xml
     <!-- Mexico Unique Population Registry Code (CURP) -->

@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid:
 - MOE150
@@ -22,12 +23,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Bir kullanıcıya DLP ilkesiyle çakişen içerikle çalıştığını bildirmek için veri kaybı önleme (DLP) ilkesine ilke ipucu eklemeyi öğrenin.
-ms.openlocfilehash: 6a02cd488b3d7a0341c042c24f58329353b94bb7
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
+ms.openlocfilehash: b0e1d712631ed629a707cb503ac2939e5977112b
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285318"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68506708"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>DLP ilkeleri için e-posta bildirimleri gönderme ve ilke ipuçlarını gösterme
 
@@ -46,6 +47,8 @@ DLP ilkesi oluşturduğunuzda, kullanıcı bildirimlerini şu şekilde yapıland
   - OneDrive İş hesabındaki veya SharePoint Online sitesindeki belgeler için ilke ipucu, öğede görünen bir uyarı simgesiyle gösterilir. Daha fazla bilgi görüntülemek için bir öğeyi ve ardından **Bilgi** ![Bilgileri bölmesi simgesini seçebilirsiniz.](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) ayrıntılar bölmesini açmak için sayfanın sağ üst köşesinde.
 
   - DLP ilkesine dahil edilen bir OneDrive İş sitesinde veya SharePoint Online sitesinde depolanan Excel, PowerPoint ve Word belgeleri için, ilke ipucu İleti Çubuğu'nda ve Backstage görünümünde (**Dosya** menüsü \> **Bilgileri**) görüntülenir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>DLP ilkesine kullanıcı bildirimleri ekleme
 
@@ -96,7 +99,7 @@ DLP ilkesindeki her kural için şunları yapabilirsiniz:
 >
 > - Email bildirimleri gruplara veya dağıtım listelerine değil yalnızca tek tek alıcılara gönderilebilir.
 > - Yalnızca yeni içerik bir e-posta bildirimi tetikler. Mevcut içeriğin düzenlenmesi ilke ipuçlarını tetikler, ancak e-posta bildirimlerini tetiklemez.
-> - Dış gönderenler bildirim almaz. Bildirimler yalnızca iç kullanıcılara gider.
+> - Dış gönderenler, ilke yapılandırması hakkında istenmeyen bilgi kaybını önlemek için yalnızca tüm ayrıntıları içermeyen şablonlaştırılmış bir bildirim alır.
 
 ![bildirim seçeneklerini Email.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 

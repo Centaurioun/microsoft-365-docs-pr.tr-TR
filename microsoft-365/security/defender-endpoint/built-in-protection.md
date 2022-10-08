@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 09/21/2022
+ms.date: 10/07/2022
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.reviewer: joshbregman
 f1.keywords: NOCSH
-ms.openlocfilehash: 3a69a91b647bc5b94e11dd086314c05c67e5fd7f
-ms.sourcegitcommit: b9282493c371d59c2e583b9803825096499b5e2c
+ms.openlocfilehash: 662e53d4d0a590260936227776f9a17b733ee194
+ms.sourcegitcommit: 50da6f1f6ef2274c17ed9729e7ad84395b0a9be2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68151661"
+ms.lasthandoff: 10/08/2022
+ms.locfileid: "68504929"
 ---
 # <a name="built-in-protection-helps-guard-against-ransomware"></a>Yerleşik koruma fidye yazılımlarından korunmaya yardımcı olur
 
@@ -32,7 +32,7 @@ ms.locfileid: "68151661"
 > **Yerleşik korumanın size gelmesini beklemek zorunda değilsiniz**! Şu özellikleri yapılandırarak kuruluşunuzun cihazlarını koruyabilirsiniz:
 > - [Bulut korumasını etkinleştirme](why-cloud-protection-should-be-on-mdav.md)
 > - [Kurcalama korumasını açma](prevent-changes-to-security-settings-with-tamper-protection.md)
-> - [Temel saldırı yüzeyi azaltma kurallarını blok moduna ayarlama](attack-surface-reduction-rules-deployment.md)
+> - [Standart saldırı yüzeyi azaltma kurallarını blok moduna ayarlama](attack-surface-reduction-rules-deployment.md)
 > - [Blok modunda ağ korumasını etkinleştirme](enable-network-protection.md)
 
 ## <a name="what-is-built-in-protection-and-how-does-it-work"></a>Yerleşik koruma nedir ve nasıl çalışır?
