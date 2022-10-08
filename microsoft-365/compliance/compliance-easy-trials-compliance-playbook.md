@@ -1,31 +1,35 @@
 ---
-title: Microsoft Purview çözümleri deneme playbook'u
+title: Microsoft Purview çözümleri deneme kullanım kılavuzu
 f1.keywords:
 - NOCSH
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection:
+- purview-compliance
+- tier3
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Purview çözümleri deneme playbook'u.
+description: Microsoft Purview çözümleri deneme kullanım kılavuzu.
 ms.custom: trial-playbook
-ms.openlocfilehash: d6863ce077a8db40821ebe8646b9b98fe5a1c4ff
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: 8cbfe44551d1d6a38b5d84e05d00ef391127f388
+ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67823133"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499824"
 ---
-# <a name="trial-playbook-microsoft-purview-solutions"></a>Deneme playbook'u: Microsoft Purview çözümleri
+# <a name="trial-user-guide-microsoft-purview-solutions"></a>Deneme kullanım kılavuzu: Microsoft Purview çözümleri
 
-Microsoft Purview çözümleri deneme playbook'una hoş geldiniz. Bu playbook, Microsoft Purview ve güvenlik ürünlerinin sağlam ve kapsamlı özelliklerini keşfetmenize yardımcı olarak ücretsiz denemenizden en iyi şekilde yararlanabilirsiniz.
+Microsoft Purview çözümleri deneme kullanım kılavuzuna hoş geldiniz. Bu playbook, Microsoft Purview ve güvenlik ürünlerinin sağlam ve kapsamlı özelliklerini keşfetmenize yardımcı olarak ücretsiz denemenizden en iyi şekilde yararlanabilirsiniz.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="compliance-actions-with-microsoft-purview"></a>Microsoft Purview ile uyumluluk eylemleri
 
@@ -297,7 +301,7 @@ Insider risk yönetimini yapılandırmaya başlamak için [listeden bir öneri s
 
 Playbook'taki (yukarıda) önerilen adımların portalda gösterilen Önerilen eylemler'e de dahil edilebileceğini unutmayın.
 
-Kurulum önerileri, [Microsoft Purview İçeriden Risk Yönetimi Kurulum Kılavuzu](https://go.microsoft.com/fwlink/?linkid=2197153) aracılığıyla Microsoft belgeleri sayfasında da sağlanır.
+Kurulum önerileri Microsoft Learn'de [Microsoft Purview İçeriden Risk Yönetimi Kurulum Kılavuzu](https://go.microsoft.com/fwlink/?linkid=2197153) aracılığıyla da sağlanır.
 
 Insider Risk Management'ın işlevselliğinden tam olarak yararlanmak için, kuruluşunuz için bir güvenlik olayına yol açabilecek olası riskli eylemleri daha iyi tanımlamak ve Veri sızıntıları veya Veri hırsızlığı şablonlarından yararlanmak için ilkeler ayarlamanızı öneririz.  
 
@@ -422,7 +426,7 @@ Kuruluşunuzun riskleri değerlendirmesine ve verilerin toplanması ve kullanım
 
 [Uyumluluk Yöneticisi premium değerlendirme deneme sürümü hakkında daha fazla bilgi](compliance-easy-trials-compliance-manager-assessments.md).
 
-[Deneme playbook'u: Microsoft Purview Compliance Manager premium değerlendirmeleri](compliance-easy-trials-compliance-manager-assessment-playbook.md)
+[Deneme kullanım kılavuzu: Microsoft Purview Uyumluluk Yöneticisi premium değerlendirmeleri](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
 ### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Microsoft Priva Gizlilik Risk Yönetimi ve Microsoft Priva Konu Hakkı Talepleri
 
@@ -432,7 +436,7 @@ Veri depolama, veri aktarımları ve fazla paylaşım gibi gizlilik risklerini p
 
 [Microsoft Priva hakkında daha fazla bilgi edinin](/privacy/solutions/privacymanagement/privacy-management).
 
-[Deneme playbook'u: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
+[Deneme kullanım kılavuzu: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## <a name="additional-resources"></a>Ek kaynaklar
 

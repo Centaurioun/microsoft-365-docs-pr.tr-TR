@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex'da belge anlama hakkında bilgi edinin.
-ms.openlocfilehash: 7ee016f228a050cf36d048ccd37c3ad8615823ed
-ms.sourcegitcommit: 6d86713c3b1da2db338c78fa60bd7d93e24aa6f4
+ms.openlocfilehash: 345ca5aea2e575c7d893ff225e8d8ec06b9e847d
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67639580"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300288"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex'de belge anlamaya genel bakış
 
@@ -84,6 +84,7 @@ OCR işleme, aşağıdaki gereksinimleri karşılayan belgelerde en iyi sonucu s
 
 Belge anlama modelleri aşağıdaki dosya türlerini destekler:
 
+- Csv
 - Doktor
 - Docx
 - Eml

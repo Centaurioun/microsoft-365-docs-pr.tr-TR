@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Diğer tüm Microsoft 365 ve Azure Active Directory kuruluşlarıyla paylaşılan kanalları etkinleştirmeyi öğrenin.
-ms.openlocfilehash: fb4bacbd8a0e9d3134f9922b3c18713be54fc0e2
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 36184a9ab743ee1aac2cc76e5b61fc83752ee163
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728428"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985772"
 ---
 # <a name="enable-shared-channels-with-all-external-organizations"></a>Tüm dış kuruluşlarla paylaşılan kanalları etkinleştirme
 

@@ -6,7 +6,7 @@ author: brendacarter
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -15,12 +15,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 5e47cc11a72ba11f10c844f900dcf513afadaa2b
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: aefce57eb633f028768ee5a4a2ae8591e6dc9c13
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730187"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67983134"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>Üzerinden geçiş yapabileceğiniz güvenlik engelleri— Bir mimara bakış açısı
 

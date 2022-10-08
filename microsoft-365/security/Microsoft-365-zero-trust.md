@@ -16,14 +16,16 @@ search.appverid:
 ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
-- M365-security-compliance
+- m365-security
 - zerotrust-solution
-ms.openlocfilehash: 37b32968847e5948b1176c61b201ce2bce166bb3
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+- highpri
+- tier1
+ms.openlocfilehash: 7293085f5a16c05d5657246de481857fe6675d26
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811669"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492301"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 Sıfır Güven dağıtım planı
 
@@ -52,10 +54,8 @@ Bu çizim, Sıfır Güven katkıda bulunan birincil öğelerin bir gösterimini 
 Sıfır Güven hakkında daha fazla bilgi için bkz. Microsoft'un [_**Sıfır Güven Rehberlik Merkezi**_](/security/zero-trust).
 
 <!---
-For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.learn.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
+For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](/security/zero-trust/zero-trust-ramp-overview).
 -->
-
-
 
 ## <a name="deploying-zero-trust-for-microsoft-365"></a>Microsoft 365 için Sıfır Güven dağıtma
 

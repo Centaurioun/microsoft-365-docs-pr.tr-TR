@@ -1,5 +1,5 @@
 ---
-title: Office 365 için Microsoft Defender deneme playbook'u
+title: Office 365 için Microsoft Defender deneme kullanım kılavuzu
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,24 +7,23 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: high
-ROBOTS: NOINDEX, NOFOLLOW
 ms.service: microsoft-365-security
 search.appverid:
 - MOE150
 - MET150
-description: Office 365 için Microsoft Defender çözümleri deneme playbook'u.
+description: Office 365 için Microsoft Defender çözümleri deneme kullanım kılavuzu.
 ms.subservice: mdo
 ms.custom: trial-playbook
-ms.openlocfilehash: f80a49e6f5b0181f625b4d5a6067f1a1ce30cf12
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: 145ebc155b2ae10bfdd2b6cdb05e35746969ad2f
+ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67799218"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68495176"
 ---
-# <a name="trial-playbook-microsoft-defender-for-office-365"></a>Deneme playbook'u: Office 365 için Microsoft Defender
+# <a name="trial-user-guide-microsoft-defender-for-office-365"></a>Deneme kullanım kılavuzu: Office 365 için Microsoft Defender
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -32,21 +31,45 @@ ms.locfileid: "67799218"
 - [Office 365 için Microsoft Defender plan 1 ve plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Office 365 için Microsoft Defender deneme playbook'una hoş geldiniz! Bu playbook, Office 365 için Defender ile kuruluşunuzu nasıl koruyacağınızı öğreterek 90 günlük ücretsiz denemenizden en iyi şekilde yararlanabilirsiniz.
+Office 365 için Microsoft Defender deneme kullanım kılavuzuna hoş geldiniz! Bu kullanıcı kılavuzu, kuruluşunuzu e-posta iletileri, bağlantılar (URL' ler) ve işbirliği araçları tarafından ortaya konan kötü amaçlı tehditlere karşı nasıl koruyacağınızı öğreterek ücretsiz denemenizden en iyi şekilde yararlanın.
 
-Artık iki yoldan biriyle Office 365 için Defender deneme seçeneğiniz vardır:
+## <a name="what-is-defender-for-office-365"></a>Office 365 için Defender nedir?
 
-- **Engelleme modu (önerilen)**: Posta değiştirici (MX) kaydınız Microsoft 365'i işaret ederse, engelleme modundaki Office 365 için Defender özelliklerini değerlendirebilirsiniz. Office 365 için Defender, Standart [önceden ayarlanmış güvenlik ilkesi](preset-security-policies.md) ayarlarını otomatik olarak uygular.
+Office 365 için Defender, kuruluşların tehdit koruma ilkeleri, raporlar, tehdit araştırma ve yanıt özellikleri ile otomatik araştırma ve yanıt özellikleri gibi kapsamlı özellikler sunarak kuruluşlarının güvenliğini sağlamalarına yardımcı olur.
 
-  Değerlendirme süresi boyunca, istediğiniz zaman daha yüksek bir koruma şablonunu (Katı önceden belirlenmiş güvenlik ilkesi ayarlarımız) tercih edebilir veya ihtiyaçlarınıza uygun kendi bireysel koruma ilkelerinizi oluşturabilirsiniz.
+:::image type="content" source="../../media/microsoft-defender-for-office-365.png" alt-text="kavramsal diyagramı Office 365 için Microsoft Defender." lightbox="../../media/microsoft-defender-for-office-365.png":::
 
-- **Denetim modu**: MX kaydınız Microsoft 365 dışında bir yere (örneğin, üçüncü taraf e-posta ağ geçidi) işaret ederse, Office 365 için Defender denetim modunda değerlendirebilirsiniz. Office 365 için Defender, zararlı olduğunu belirlediğimiz iletilerde engelleme eylemi gerçekleştirmez.
+Gelişmiş tehditleri algılamaya ek olarak, aşağıdaki videoda Office 365 için Defender SecOps özelliklerinin ekibinizin tehditlere yanıt vermesine nasıl yardımcı olabileceği gösterilmektedir:
 
-  Bu tehditler günlüğe kaydedilir ve Algılanan tehdit türleri, tehditlerin hedeflediği kişiler ve çok daha fazlası hakkında ayrıntılı bilgi sağlayan [Tehdit koruma durumu raporu](view-email-security-reports.md#threat-protection-status-report) aracılığıyla gözden geçirilebilir. Bu ek "yakalamalar", standart Exchange Online Protection (EOP) özelliklerine veya diğer üçüncü taraf e-posta ağ geçitlerinin özelliklerine göre Office 365 için Defender ek koruma özelliklerini gösterir. Memnun olduğunuzda ve Office 365 için Defender kullanmaya hazır olduğunuzda [Office 365 için Defender geçirebilirsiniz](migrate-to-defender-for-office-365.md).
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMmIe]
 
-:::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="Office 365 için Microsoft Defender tüm bileşenlerinin grafik gösterimi." lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::
+### <a name="audit-mode-vs-blocking-mode-for-defender-for-office-365"></a>Denetim modu ile Office 365 için Defender için engelleme modu karşılaştırması
 
-Bu kılavuzdaki önerileri kullanarak Office 365 için Defender koruma ilkeleri tanımlamanıza, kuruluşunuza yönelik tehditleri analiz etmeye ve saldırılara yanıt vermenize nasıl yardımcı olabileceğini öğreneceksiniz.
+Office 365 için Defender deneyiminizin etkin mi yoksa pasif mi olmasını istiyorsunuz? Şunlar arasından seçim yapabileceğiniz iki mod vardır:
+
+- **Denetim modu**: Kimlik avı önleme (kimliğe bürünme koruması, Güvenli Ekler ve Güvenli Bağlantılar dahil) için özel *değerlendirme ilkeleri* oluşturulur. Bu değerlendirme ilkeleri yalnızca tehditleri *algılamak* için yapılandırılır. Office 365 için Defender, raporlama için zararlı iletileri algılar, ancak iletiler üzerinde işlem gerçekleştirilmiyor (örneğin, algılanan iletiler karantinaya alınmıyor). Bu değerlendirme ilkelerinin ayarları, bu makalenin devamında [denetim modunda ilkeler](try-microsoft-defender-for-office-365.md#policies-in-audit-mode) bölümünde açıklanmaktadır.
+
+  Denetim modu, konumundaki **Değerlendirme modu** sayfasında <https://security.microsoft.com/atpEvaluation>Office 365 için Defender tarafından algılanan tehditler için özelleştirilmiş raporlara erişim sağlar.
+
+- **Engelleme modu**: [Önceden ayarlanmış güvenlik ilkeleri](preset-security-policies.md) için Standart şablon açılır ve deneme sürümü için kullanılır ve deneme sürümüne dahil etmek için belirttiğiniz kullanıcılar Standart önceden ayarlanmış güvenlik ilkesine eklenir. Office 365 için Defender zararlı iletileri *algılar* ve *üzerinde işlem uygular* (örneğin, algılanan iletiler karantinaya alınır).
+
+  Varsayılan ve önerilen seçim, bu Office 365 için Defender ilkelerini kuruluştaki tüm kullanıcılara kapsamaktır. Ancak denemenizin kurulumu sırasında veya sonrasında, ilke atamasını Microsoft 365 Defender portalında veya Office 365 için Defender [denemeleriyle ilişkili İlke ayarları'nda](try-microsoft-defender-for-office-365.md#policy-settings-associated-with-defender-for-office-365-trials) belirli kullanıcılara, gruplara veya e-posta etki alanlarına değiştirebilirsiniz
+
+  Engelleme modu, Office 365 için Defender tarafından algılanan tehditler için özelleştirilmiş raporlar sağlamaz. Bunun yerine, bilgiler Office 365 için Defender Plan 2'nin normal raporlarında ve araştırma özelliklerinde kullanılabilir.
+
+E-postanın Microsoft 365 kuruluşunuza nasıl teslim edilmesi denetim modunda ve engelleme modunda önemli bir faktördür:
+
+- İnternet'ten gelen postalar doğrudan Microsoft 365'e akar, ancak geçerli aboneliğinizde yalnızca [Exchange Online Protection (EOP)](exchange-online-protection-overview.md) veya [Plan 1 Office 365 için Defender](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) vardır.
+
+  ![EOP ve/veya Office 365 için Defender Plan 1'e karşı koruma ile posta İnternet'ten Microsoft 365'e akar.](../../media/mdo-trial-mail-flow.png)
+
+  Bu ortamlarda **denetim modunu** veya **engelleme modunu** seçebilirsiniz.
+
+- Şu anda Microsoft 365 posta kutularınızın e-posta koruması için üçüncü taraf bir hizmet veya cihaz kullanıyorsunuz. İnternet'ten gelen postalar, Microsoft 365 kuruluşunuza teslim etmeden önce koruma hizmeti aracılığıyla akar. Microsoft 365 koruması mümkün olduğunca düşüktür (hiçbir zaman tamamen kapalı değildir; örneğin, kötü amaçlı yazılım koruması her zaman uygulanır).
+
+  ![Microsoft 365'e teslim etmeden önce İnternet'ten üçüncü taraf koruma hizmeti veya cihazı aracılığıyla posta akışları.](../../media/mdo-migration-before.png)
+
+  Bu ortamlarda yalnızca **denetim modunu** seçebilirsiniz. Posta akışınızı (MX kayıtları) değiştirmeniz gerekmez.
 
 Başlayalım!
 
@@ -135,7 +158,7 @@ Daha fazla bilgi edinmek için bu videoyu izleyin: [Office 365 için Microsoft D
 
 Tehditleri gözden geçirmek, önceliklendirmek ve yanıtlamak için Otomatik araştırma ve yanıt (AIR) kullanarak verimli bir şekilde yanıt verin.
 
-- Araştırma playbook'ları hakkında [daha fazla bilgi edinin](automated-investigation-response-office.md).
+- Araştırma kullanıcı kılavuzları hakkında [daha fazla bilgi edinin](automated-investigation-response-office.md).
 - [Araştırmanın ayrıntılarını ve sonuçlarını görüntüleyin](email-analysis-investigations.md) .
 - [Düzeltme eylemlerini onaylayarak](air-remediation-actions.md) tehditleri ortadan kaldırın.
 
@@ -235,6 +258,6 @@ Tehditleri tanımlamak ve şüpheli iletileri Office 365 için Defender Saldır�
 
 - **Etkileşimli kılavuz**: Office 365 için Defender aşina değil misiniz? Nasıl başlayabileceğinizi anlamak için [etkileşimli kılavuzu](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) gözden geçirin.
 - **Hızlı İz Kullanmaya Başlama Kılavuzu**: [Office 365 için Microsoft Defender](https://go.microsoft.com/fwlink/p/?linkid=2197415)
-- **Microsoft belgeleri**: Office 365 için Defender nasıl çalıştığı ve kuruluşunuz için bunu en iyi şekilde nasıl uygulayacakları hakkında ayrıntılı bilgi edinin. [Docs'u](defender-for-office-365.md) ziyaret edin.
+- **Office 365 için Microsoft Defender belgeleri**: Office 365 için Defender nasıl çalıştığı ve kuruluşunuz için bunu en iyi şekilde nasıl uygulayacakları hakkında ayrıntılı bilgi edinin. [Office 365 için Microsoft Defender belgelerini ziyaret edin](defender-for-office-365.md).
 - **Dahil olanlar**: Ürün katmanı tarafından listelenen Office 365 e-posta güvenlik özelliklerinin tam listesi için [Özellik Matrisi'ni](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability) görüntüleyin.
 - **Neden Office 365 için Defender**: [Office 365 için Defender Veri Sayfası](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy), müşterilerin Microsoft'u seçmesinin en önemli 10 nedenini gösterir.

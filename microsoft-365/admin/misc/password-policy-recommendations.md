@@ -7,9 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- ContentEngagementFY23
+- scotvorg
 - highpri
 - Adm_O365
 - Adm_NonTOC
@@ -24,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Kuruluşunuzu parola saldırılarına karşı daha güvenli hale getirin ve yaygın parolaları yasaklayın ve risk tabanlı çok faktörlü kimlik doğrulamasını etkinleştirin.
-ms.openlocfilehash: ab997d544a2789a4e2c6e28caa6a601a51a32bc7
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: b8315b24592bb25a2df4377a0f73c5787ff9577d
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670763"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492279"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Microsoft 365 parolaları için parola ilkesi önerileri
 
@@ -48,6 +50,8 @@ Microsoft 365 parolaları hakkında daha fazla bilgi için bkz:
 [Kullanıcıların kendi parolalarını sıfırlamasına izin verme](../add-users/let-users-reset-passwords.md) (makale)
 
 [Kullanıcının parolasını yeniden gönderme - yardım Yönetici](../add-users/resend-user-password.md) (makale)
+
+[Zorunlu parola değişikliklerini yeniden düşünme zamanı](https://go.microsoft.com/fwlink/p/?linkid=861018).
   
 ## <a name="understanding-password-recommendations"></a>Parola önerilerini anlama
 
@@ -93,7 +97,7 @@ Bunlar en sık kullanılan parola yönetimi uygulamalarından bazılardır, anca
   
 ### <a name="password-expiration-requirements-for-users"></a>Kullanıcılar için parola zamanı geçmesi gereksinimleri
 
-Parola süre sonu gereksinimleri, kullanıcıların birbiriyle yakından ilişkili sıralı sözcükler ve sayılardan oluşan öngörülebilir parolalar seçmesine neden olduğundan, parola süre sonu gereksinimleri faydadan daha fazla zarara neden olur. Bu gibi durumlarda yeni parola, önceki parolaya bakılarak tahmin edilebilir. Parola süre sonu gereksinimleri hiçbir kapsama avantajı sunmaz çünkü siber suçlular neredeyse her zaman kimlik bilgilerini tehlikeye girer girmez kullanırlar. Daha fazla bilgi [için Zorunlu parola değişikliklerini yeniden düşünme zamanı'na](https://go.microsoft.com/fwlink/p/?linkid=861018) göz atın.
+Parola süre sonu gereksinimleri, kullanıcıların birbiriyle yakından ilişkili sıralı sözcükler ve sayılardan oluşan öngörülebilir parolalar seçmesine neden olduğundan, parola süre sonu gereksinimleri faydadan daha fazla zarara neden olur. Bu gibi durumlarda yeni parola, önceki parolaya bakılarak tahmin edilebilir. Parola süre sonu gereksinimleri hiçbir kapsama avantajı sunmaz çünkü siber suçlular neredeyse her zaman kimlik bilgilerini tehlikeye girer girmez kullanırlar. 
   
 ### <a name="minimum-password-length-requirements"></a>En düşük parola uzunluğu gereksinimleri
 

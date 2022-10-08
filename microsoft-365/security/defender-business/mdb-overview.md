@@ -15,15 +15,16 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ms.custom: intro-overview
-ms.openlocfilehash: 51c480016244dca6aaaa0c65601376ba574478f1
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 007707ce6fe21a7fa7e9d7263ef1d9e23e0ecc74
+ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598076"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68501304"
 ---
 # <a name="what-is-microsoft-defender-for-business"></a>İş için Microsoft Defender nedir?
 
@@ -61,7 +62,7 @@ Bu makalede, bu özellikler ve özellikler hakkında daha fazla bilgi edinmek i�
    - [İş için Defender'ı nasıl edinmeyi öğrenin](get-defender-business.md).
 
 - **Tehdit koruması özelliklerinizi ayarlamayı öğrenin**. 
-   - [Deneme playbook'unu kullanın: İş için Defender](trial-playbook-defender-business.md).
+   - [Deneme kullanım kılavuzuna bakın: İş için Defender](trial-playbook-defender-business.md).
    - [Basitleştirilmiş yapılandırma işlemi hakkında bilgi edinin](mdb-simplified-configuration.md).
    - [bkz. İş için Defender'ı ayarlama ve yapılandırma](mdb-setup-configuration.md).
 

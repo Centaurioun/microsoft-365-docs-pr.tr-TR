@@ -6,7 +6,7 @@ author: samanro
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 2cbba71b19105b0587609ec835d72be889100ee0
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 6e3d1372bf7eb0d6b7db201cb72b44d4528fd709
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731650"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67983200"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>BT mimarları için Microsoft bulutu çizimleri
 

@@ -9,7 +9,7 @@ manager: dougeby
 audience: ITPro
 description: Bir cihazın ortamınıza erişmesi için en düşük gereksinimleri belirten cihaz uyumluluk ilkeleri oluşturmayı öğrenin.
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 68375d7992df0daee91bf1fb1be87e17529b34d9
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 89f5e55da3c53e89a8b9807788da848715e55384
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730912"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985575"
 ---
 # <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>Adım 3. Intune olan cihazlar için uyumluluk ilkelerini ayarlama
 

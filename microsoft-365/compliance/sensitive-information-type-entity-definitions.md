@@ -14,17 +14,18 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier2
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: DLP ilkelerinizde kullanmaya hazır birçok hassas bilgi türü vardır. Bu makale, tüm bu hassas bilgi türü varlık tanımlarının listesidir.
-ms.openlocfilehash: 9a40147bd92ac9904924664a018faac40a61a020
-ms.sourcegitcommit: cd044e28516c5e024700f89fb15b92c1ea5269b0
+ms.openlocfilehash: 2e59fb2090989709dfd2d51d839aaae46e84b7ec
+ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67361591"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68495067"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Hassas bilgi türü varlık tanımları
 
@@ -123,7 +124,6 @@ Bu makale, tüm hassas bilgi türü (SIT) varlık tanımlarının listesidir. He
 - [Şili kimlik kartı numarası](sit-defn-chile-identity-card-number.md)
 - [Çin mukim kimlik kartı (PRC) numarası](sit-defn-china-resident-identity-card-number.md)
 - [İstemci gizli anahtarı / API anahtarı (önizleme)](sit-defn-client-secret-api-key.md)
-- [URL'deki kimlik bilgileri](sit-defn-credentials-in-url.md)
 - [Kredi kartı numarası](sit-defn-credit-card-number.md)
 - [Hırvatistan ehliyet numarası](sit-defn-croatia-drivers-license-number.md)
 - [Hırvatistan kimlik kartı numarası](sit-defn-croatia-identity-card-number.md)
@@ -224,6 +224,7 @@ Bu makale, tüm hassas bilgi türü (SIT) varlık tanımlarının listesidir. He
 - [Japonya Numaram - Kurumsal](sit-defn-japan-my-number-corporate.md)
 - [Japonya Numaram - Kişisel](sit-defn-japan-my-number-personal.md)
 - [Japonya pasaport numarası](sit-defn-japan-passport-number.md)
+- [Japonya fiziksel adresleri](sit-defn-japan-physical-addresses.md)
 - [Japonya konut kartı numarası](sit-defn-japan-residence-card-number.md)
 - [Japonya mukim kayıt numarası](sit-defn-japan-resident-registration-number.md)
 - [Japonya sosyal sigorta numarası (SIN)](sit-defn-japan-social-insurance-number.md)

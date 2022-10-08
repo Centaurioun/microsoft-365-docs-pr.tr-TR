@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Microsoft 365 Grupları, Teams ve SharePoint arasındaki ayarlar etkileşimleri hakkında bilgi edinin
-ms.openlocfilehash: 4a4c92227927a5065b7c6a8afb355d5fe5b8025d
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 6d66b7e84d922108e83e8fa3e045272c82fd8f51
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731066"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986344"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Microsoft 365 Grupları, Teams ve SharePoint arasındaki etkileşimleri ayarlar
 

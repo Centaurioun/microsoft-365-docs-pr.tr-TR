@@ -1,16 +1,17 @@
 ---
-title: Fatura bildirimlerini ve fatura eklerini yönetme
+title: Faturalama bildirimlerini ve fatura eklerini yönetme
 f1.keywords:
 - CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: prkalid, guyb
+ms.reviewer: prkalid, vijayav
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -19,114 +20,114 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Fatura bildirimi e-postalarını ve fatura eklerini kimlerin aldığını yönetmeyi öğrenin.
+description: Faturalama bildirimi e-postalarını ve fatura eklerini kimlerin alacağını yönetmeyi öğrenin.
 ms.date: 03/17/2021
-ms.openlocfilehash: 11fecb1f5f33810c2bef2425fda845981c2c3193
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3affe1bea7f9ceebd777a9d54e4a7f7973fae6e9
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321579"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472727"
 ---
-# <a name="manage-billing-notifications-and-invoice-attachments"></a>Fatura bildirimlerini ve fatura eklerini yönetme
+# <a name="manage-billing-notifications-and-invoice-attachments"></a>Faturalama bildirimlerini ve fatura eklerini yönetme
 
-Fatura **bildirimleri sayfası,** organizasyonunız için faturalandırma bildirimi e-postalarını kimlerin aldığını yönetmenize olanak sağlar. Bu sayfada ayrıca, kuruluş [faturalarını e-posta eki olarak alma seçeneği de vardır](#receive-your-organizations-invoices-as-email-attachments).
+**Faturalama bildirimleri** sayfası, kuruluşunuz için faturalama bildirimi e-postalarını kimlerin alacağını yönetmenize olanak tanır. Sayfa ayrıca [kuruluşunuzun faturalarını e-posta eki olarak alma](#receive-your-organizations-invoices-as-email-attachments) seçeneği de sağlar.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Bu makalede açıklanan adımları yapmak için Genel yönetici olmalı. Faturalama yöneticileri, aşağıdaki bölümlerde da ifade edildiyseniz bu değişikliklerden bazıları yapabilirsiniz. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
+Bu makalede açıklanan adımları gerçekleştirmek için Genel yönetici olmanız gerekir. Faturalama yöneticileri, aşağıdaki bölümlerde belirtildiği gibi bu değişikliklerden bazılarını yapabilir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
 
-## <a name="change-the-language-you-receive-email-in"></a>E-postayı almak için dili değiştirme
+## <a name="change-the-language-you-receive-email-in"></a>E-posta aldığınız dili değiştirme
 
-Fatura bildirimi e-postaları, kurumuz tarafından tercih edilen dilde gönderilir. Tercih edilen dili değiştirmek için aşağıdaki adımları kullanın.
+Fatura bildirimi e-postaları kuruluşunuzun tercih ettiği dilde gönderilir. Tercih edilen dili değiştirmek için aşağıdaki adımları kullanın.
 
-1. Fatura Microsoft 365 yönetim merkezi, **FaturaBilling** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">bildirimleri sayfasına</a> gidin.
-2. Fatura bildirimi **ayarları bölümünde Bildirim** ayarlarını **düzenle'yi seçin**.
-3. Fatura bildirim **ayarları bölmesinde,** Tercih edilen **dil'in** altında kullanmak istediğiniz dili seçin ve ardından Kaydet'i **seçin**.
+1. Microsoft 365 yönetim merkezi **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faturalama bildirimleri</a> sayfasına gidin.
+2. **Faturalama bildirimi ayarları** bölümünde **Bildirim ayarlarını düzenle'yi** seçin.
+3. **Faturalama bildirimi ayarları** bölmesinde, **Tercih edilen dil'in** altında kullanmak istediğiniz dili seçin ve ardından **Kaydet'i** seçin.
 
-## <a name="change-who-receives-billing-notifications"></a>Fatura bildirimlerini kimin aldığını değiştirme
+## <a name="change-who-receives-billing-notifications"></a>Faturalama bildirimlerini kimlerin alacağını değiştirme
 
-Tüm Genel ve Faturalama yöneticilerinin birincil ve alternatif e-posta adreslerine, kurum ödeme bildirimleri gönderilir. Hangi kullanıcıların Genel veya Faturalama yöneticisi rolüne sahip olduğunu değiştirmek için aşağıdaki adımları kullanın.
+Kuruluşunuzun faturalama bildirimleri her Genel ve Faturalama yöneticisinin birincil ve alternatif e-posta adresine gönderilir. Genel veya Faturalama yöneticisi rolüne sahip olan kullanıcıları değiştirmek için aşağıdaki adımları kullanın.
 
-### <a name="assign-admin-roles-by-using-the-billing-notifications-page"></a>Fatura bildirimleri sayfasını kullanarak yönetici rolleri atama
+### <a name="assign-admin-roles-by-using-the-billing-notifications-page"></a>Faturalama bildirimleri sayfasını kullanarak yönetici rolleri atama
 
-1. Yönetim merkezinde **FaturaBilling bildirimleri** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">sayfasına</a> gidin.
-2. Fatura **bildirimlerini alan yöneticiler bölümünde** , açıklama metninde **Faturalama yöneticisi** veya **Genel yönetici** bağlantısını seçin.
-3. Sağ bölmede, Atanan yöneticiler **sekmesinde Ekle'yi** **seçin**.
-4. Yönetici **ekle bölmesinde** , kullanıcının görünen adını veya kullanıcı adını yazın ve ardından öneri listesinden bir kullanıcı seçin.
-5. Bitirene kadar birden çok kullanıcı ekleyin.
-6. **Kaydet**'i seçin. Kullanıcı atanan yöneticiler listesine eklenir.
+1. Yönetim merkezinde **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faturalama bildirimleri</a> sayfasına gidin.
+2. **Faturalama bildirimlerini alan yöneticiler** bölümünde, açıklama metninde **Faturalama yöneticisini** veya **Genel yönetici** bağlantısını seçin.
+3. Sağ bölmedeki **Atanan yöneticiler** sekmesinde **Ekle'yi** seçin.
+4. **Yönetici ekle** bölmesinde kullanıcının görünen adını veya kullanıcı adını yazın ve ardından öneri listesinden kullanıcıyı seçin.
+5. İşiniz bitene kadar birden çok kullanıcı ekleyin.
+6. **Kaydet**'i seçin. Kullanıcı, atanan yöneticiler listesine eklenir.
 
-### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>Fatura bildirimleri sayfasını kullanarak yönetici rollerini kaldırma
+### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>Faturalama bildirimleri sayfasını kullanarak yönetici rollerini kaldırma
 
-1. Yönetim merkezinde **FaturaBilling bildirimleri** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">sayfasına</a> gidin.
-2. Fatura **bildirimlerini alan yöneticiler bölümünde** , açıklama metninde **Faturalama yöneticisi** veya **Genel yönetici** bağlantısını seçin.
-3. Sağ bölmede, Atanan yöneticiler **sekmesinde** rolden kaldıracak kullanıcıları seçin ve sonra da Kaldır'ı **seçin**.
-4. Onay kutusunda Kaldır'ı **seçin**. Kullanıcı atanan yöneticiler listesinden kaldırılır.
+1. Yönetim merkezinde **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faturalama bildirimleri</a> sayfasına gidin.
+2. **Faturalama bildirimlerini alan yöneticiler** bölümünde, açıklama metninde **Faturalama yöneticisini** veya **Genel yönetici** bağlantısını seçin.
+3. Sağ bölmedeki **Atanan yöneticiler** sekmesinde, rolden kaldırılacak kullanıcıları seçin ve ardından **Kaldır'ı** seçin.
+4. Onay kutusunda **Kaldır'ı** seçin. Kullanıcı, atanan yöneticiler listesinden kaldırılır.
 
 ## <a name="change-the-email-addresses-for-admins"></a>Yöneticilerin e-posta adreslerini değiştirme
 
-Kuruluşta diğer yöneticilerin birincil ve alternatif e-posta adreslerini değiştirmek için aşağıdaki adımları kullanın.
+Kuruluşunuzdaki diğer yöneticilerin birincil ve alternatif e-posta adresini değiştirmek için aşağıdaki adımları kullanın.
 
 > [!NOTE]
-> Faturalama yöneticileri kendi birincil ve alternatif e-posta adreslerini değiştirebilir, ancak diğer yöneticiler için değiştiremezler.
+> Faturalama yöneticileri kendi birincil ve alternatif e-posta adreslerini değiştirebilir, ancak diğer yöneticiler için değiştiremez.
 
-1. Yönetim merkezinde **FaturaBilling bildirimleri** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">sayfasına</a> gidin.
-2. Fatura **bildirimleri alan yöneticiler bölümünde** bir ad seçin.
-3. Sağ bölmede, gerekirse birincil ve alternatif e-posta adresini ekleyin veya güncelleştirin, sonra da Kaydet'i **seçin**.
+1. Yönetim merkezinde **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faturalama bildirimleri</a> sayfasına gidin.
+2. **Faturalama bildirimlerini alan yöneticiler** bölümünde bir ad seçin.
+3. Sağ bölmede, birincil ve alternatif e-posta adresini gerektiği gibi ekleyin veya güncelleştirin, ardından **Kaydet'i** seçin.
 
-## <a name="change-your-organizations-contact-email"></a>Kuruluşun kişi e-posta adresini değiştirme
+## <a name="change-your-organizations-contact-email"></a>Kuruluşunuzun kişi e-postasını değiştirme
 
-Genel yöneticilerinize ve Faturalama yöneticilerinize ek olarak, fatura bildirimlerini de kurumnizin iletişim e-posta adresine göndeririz. E-posta adresini değiştirmek için aşağıdaki adımları kullanın.
+Genel ve Faturalama yöneticilerinize ek olarak, kuruluşunuzun iletişim e-posta adresine faturalama bildirimleri göndeririz. E-posta adresini değiştirmek için aşağıdaki adımları kullanın.
 
-1. Yönetim merkezinde **FaturaBilling bildirimleri** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">sayfasına</a> gidin.
-2. Fatura **bildirimlerini alan kuruluş ilgili kişisi'nin** altında kuruluş ilgili kişisi seçin.
-3. Sağ bölmede, kullanmak istediğiniz e-posta adresini yazın ve ardından Kaydet'i **seçin**.
+1. Yönetim merkezinde **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faturalama bildirimleri</a> sayfasına gidin.
+2. **Fatura bildirimlerini alan kuruluş kişisinin** altında kuruluş kişisini seçin.
+3. Sağ bölmede, kullanmak istediğiniz e-posta adresini yazın ve **Kaydet'i** seçin.
 
-## <a name="receive-your-organizations-invoices-as-email-attachments"></a>Kuruluş faturalarını e-posta eki olarak alma
+## <a name="receive-your-organizations-invoices-as-email-attachments"></a>Kuruluşunuzun faturalarını e-posta eki olarak alma
 
 > [!NOTE]
-> Faturalama yöneticileri de bu bölümdeki adımları uygulayın.
+> Faturalama yöneticileri bu bölümdeki adımları da gerçekleştirebilir.
 
-Yeni bir fatura hazır olduğunda, fatura bildirimi e-postanıza, kuruluş faturalarının bir kopyasını PDF dosyası olarak iliştirebilirsiniz. Faturaları ek olarak almak için aşağıdaki adımları kullanın.
+Yeni bir fatura hazır olduğunda fatura bildirim e-postalarına, kuruluşunuzun faturasının bir kopyasını PDF dosyası olarak iliştirebilirsiniz. Faturaları ek olarak almak için aşağıdaki adımları kullanın.
 
-1. Yönetim merkezinde **FaturaBilling bildirimleri** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">sayfasına</a> gidin.
-2. Fatura **bildirim ayarları'nın altında** Bildirim ayarlarını **düzenle'yi seçin**.
-3. Fatura bildirim **ayarları bölmesindeki** Fatura e-postanıza **PDF ekleyin'in** altında onay kutusunu işaretleyin ve ardından Kaydet'i **seçin**.
+1. Yönetim merkezinde **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faturalama bildirimleri</a> sayfasına gidin.
+2. **Faturalama bildirim ayarları'nın** altında **Bildirim ayarlarını düzenle'yi** seçin.
+3. **Faturalama bildirimi ayarları** bölmesindeki **Fatura e-postalarınıza PDF ekle'nin** altında onay kutusunu işaretleyin ve **Kaydet'i** seçin.
 
-Fatura ekini istediğiniz zaman almayı durdurmak için, yukarıdaki adımları izleyin ve 3. adımda Fatura e-postanıza **PDF** ekle onay kutusunu temizleyin.
+Fatura ekini almayı istediğiniz zaman durdurmak için yukarıdaki adımları izleyin ve 3. adımda **Fatura e-postalarınıza PDF ekle** onay kutusunu temizleyin.
 
-## <a name="what-if-i-have-a-billing-profile"></a>Fatura profilim varsa ne olacak?
+## <a name="what-if-i-have-a-billing-profile"></a>Faturalama profilim varsa ne olur?
 
-Fatura profiliniz varsa, bu makalede açıklanan adımlardan bazıları aboneliklerin bazıları için biraz farklı olabilir. Bu bölümde bu farklar açık almaktadır. [Fatura profilim olup olduğunu nasıl bilebilirsiniz?](manage-billing-profiles.md)
+Faturalama profiliniz varsa, bu makalede açıklanan adımlardan bazıları bazı abonelikleriniz için biraz farklı olabilir. Bu bölümde bu farklılıklar açıklanmaktadır. [Faturalama profilim olup olmadığını Nasıl yaparım? biliyor musunuz?](manage-billing-profiles.md)
 
-### <a name="who-receives-billing-notifications"></a>Who bildirimleri alır mısınız?
+### <a name="who-receives-billing-notifications"></a>Faturalama bildirimlerini kimler alır?
 
-Ödeme bildirimi e-postaları, aşağıdaki rollerden biri atanan kullanıcılar için birincil ve alternatif e-posta adreslerine gönderilir:
+Faturalama bildirimi e-postaları, aşağıdaki rollerden birine atanan kullanıcılar için birincil ve alternatif e-posta adreslerine gönderilir:
 
-- Ödeme profili sahibi
-- Ödeme profili katılımcısı
+- Faturalama profili sahibi
+- Faturalama profili katkıda bulunanı
 - Fatura yöneticisi
 
-Fatura profili rolleri ve bu rolleri yönetme hakkında daha fazla bilgi edinmek için bkz. [Azure'daki Microsoft Müşteri Sözleşmesi yönetim rollerini anlama](/azure/cost-management-billing/manage/understand-mca-roles).
+Faturalama profili rolleri ve bunların nasıl yönetileceğini öğrenmek için bkz. [Azure'da yönetim rollerini Microsoft Müşteri Sözleşmesi anlama](/azure/cost-management-billing/manage/understand-mca-roles).
 
-Kuruluşun fatura bildirimlerini kimlerin aldığını değiştirmek için aşağıdaki adımları kullanarak kullanıcılara atanan rolleri değiştirebilirsiniz.
+Kuruluşunuzun faturalama bildirimlerini kimlerin alacağını değiştirmek için aşağıdaki adımları kullanarak kullanıcılara atanan rolleri değiştirin.
 
-1. Yönetim merkezinde <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">BillingBills</a> **ve** >  payments & gidin.
-2. Fatura **profili sekmesinde** bir fatura profili seçin.
-3. Fatura profili **rolleri bölümünde**, Fatura profili sahibi, Fatura **profili katılımcısı** veya **Fatura yöneticisi için rol attay veya** **kaldır.**
+1. Yönetim merkezinde **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Faturaları & ödemeler</a> sayfasına gidin.
+2. **Faturalama profili** sekmesinde bir faturalama profili seçin.
+3. **Faturalama profili rolleri** bölümünde **Faturalama profili sahibi, Faturalama profili** **katkıda bulunanı** veya **Fatura yöneticisi** rollerini atayın veya kaldırın.
 
 ### <a name="receive-invoices-as-email-attachments"></a>Faturaları e-posta eki olarak alma
 
-Faturalarınızı fatura bildirimlerinize ek olarak almak için aşağıdaki adımları kullanarak belirli bir fatura profili için bu ayarı açın.
+Faturalarınızı fatura bildirimlerinize ek olarak almak için, belirli bir faturalama profilinde bu ayarı açmak için aşağıdaki adımları kullanın.
 
-1. Yönetim merkezinde <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">BillingBills</a> **ve** >  payments & gidin.
-2. Ödeme **profilleri sekmesini seçin** ve sonra da listeden bir fatura profili seçin.
-3. Fatura profili ayrıntıları sayfasındaki E-posta **ekleri için faturaları al altından** iki durumlu düğmeyi Açık olarak **seçin**.
+1. Yönetim merkezinde **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Faturaları & ödemeler</a> sayfasına gidin.
+2. **Faturalama profilleri** sekmesini ve ardından listeden bir faturalama profili seçin.
+3. Faturalama profili ayrıntıları sayfasındaki **E-posta eklerinde faturaları al'ın** altında iki durumlu düğmeyi **Açık** olarak değiştirin.
 
 ## <a name="related-content"></a>İlgili içerik
 
-[Faturanızı veya faturanızı görüntüleme](view-your-bill-or-invoice.md) (makale)\
-[Meksika'daki Microsoft 365 için fatura bilgileri](mexico-billing-info.md) (makale) \
-[İş için faturanızı veya faturanızı Microsoft 365 (](understand-your-invoice2.md)makale)\
-[Aynı anda kullanıcı ekleme ve lisans atama](../../admin/add-users/add-users.md) (makale)
+[Fatura ekstrenizi veya faturanızı görüntüleme](view-your-bill-or-invoice.md) (makale)\
+[Meksika'da işletmeler için Microsoft 365 faturalama bilgileri](mexico-billing-info.md) (makale) \
+[İş için Microsoft 365 faturanızı veya faturanızı anlama](understand-your-invoice2.md) (makale)\
+[Kullanıcıları ekleme ve lisansları aynı anda atama](../../admin/add-users/add-users.md) (makale)

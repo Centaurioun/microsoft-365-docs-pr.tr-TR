@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, HumOR, gasp saldırısı, fidye yazılımı saldırısı, şifreleme, kriptoviroloji, sıfır güven
 description: Microsoft 365 kaynaklarınızı fidye yazılımı saldırılarına karşı korumak için güvenlik temellerini kullanın.
-ms.openlocfilehash: 11a2c88773c8601c99975d14ca0e1288f5dd4721
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: db1733e326de45597b0b69638bb2033e7e8892be
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731386"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986036"
 ---
 # <a name="step-1-configure-security-baselines"></a>Adım 1. Güvenlik temel hatlarını yapılandırın
 

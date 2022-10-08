@@ -1,7 +1,7 @@
 ---
 title: Saldırı yüzeyi azaltma kuralları başvurusu
-description: Saldırı yüzeyi azaltma kurallarıyla ilgili ayrıntıları kural temelinde listeler.
-keywords: Saldırı yüzeyi azaltma kuralları, ASR, asr kuralları, kalçalar, konak izinsiz giriş önleme sistemi, koruma kuralları, kötüye kullanıma karşı koruma kuralları, antiexploit, exploit kuralları, bulaşma önleme kuralları, Uç Nokta için Microsoft Defender, ASR kurallarını yapılandırma, ASR kuralı açıklaması
+description: kural başına Uç Nokta için Microsoft Defender (MDE) saldırı yüzeyi azaltma (ASR) kurallarıyla ilgili ayrıntıları listeler.
+keywords: Microsoft Saldırı yüzeyi azaltma kuralları, Uç Nokta için Microsoft Defender ASR kuralları, ASR kuralları listesi, ASR, asr kuralları, kalçalar, konak yetkisiz erişim önleme sistemi, koruma kuralları, kötüye kullanıma karşı koruma kuralları, antiexploit, exploit kuralları, bulaşma önleme kuralları, Uç Nokta için Microsoft Defender, ASR kurallarını yapılandırma, ASR kuralı Açıklama
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,17 +15,18 @@ ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
 ms.topic: article
-ms.collection: M365-security-compliance
-ms.date: 08/10/2022
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: 778e21e2eefb4f0fd457e4c5c179d431225ce6c4
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: a89522b3631eebfe52865e461979fb2736710005
+ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811580"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68495132"
 ---
-# <a name="attack-surface-reduction-rules-reference"></a>Saldırı yüzeyi azaltma kuralları başvurusu
+# <a name="attack-surface-reduction-asr-rules-reference"></a>Saldırı yüzeyini azaltma (ASR) kuralları başvurusu
 
 **Şunlar için geçerlidir:**
 
@@ -38,16 +39,44 @@ ms.locfileid: "67811580"
 
 - Windows
 
-Bu makalede saldırı azaltma kuralları hakkında bilgi sağlanır:
+Bu makalede Uç Nokta için Microsoft Defender saldırı yüzeyini azaltma (ASR) kuralları hakkında bilgi sağlanır:
 
-- [Desteklenen işletim sistemi sürümleri](#supported-operating-systems)
-- [Desteklenen yapılandırma yönetim sistemleri](#supported-configuration-management-systems)
-- [Kural başına uyarı ve bildirim ayrıntıları](#per-rule-alert-and-notification-details)
+- [ASR kuralları desteklenen işletim sistemi sürümleri](#asr-rules-supported-operating-systems)
+- [ASR kuralları tarafından desteklenen yapılandırma yönetim sistemleri](#asr-rules-supported-configuration-management-systems)
+- [ASR kuralı uyarı ve bildirim ayrıntıları başına](#per-asr-rule-alert-and-notification-details)
 - [ASR kuralı-GUID matrisi](#asr-rule-to-guid-matrix)
 - [ASR kural modları](#asr-rule-modes)
 - [Kural başına açıklama sayısı](#per-rule-descriptions)
 
-## <a name="supported-operating-systems"></a>Desteklenen işletim sistemleri
+## <a name="attack-surface-reduction-rules-by-type"></a>Türe göre saldırı yüzeyi azaltma kuralları
+
+ASR kuralları iki türden biri olarak kategorize edilir:
+
+1. **Standart koruma kuralları**: Diğer ASR kurallarının etkisini ve yapılandırma gereksinimlerini değerlendirirken Microsoft'un her zaman etkinleştirmenizi önerdiği en düşük kural kümesidir. Bu kurallar genellikle son kullanıcı üzerinde en az farkedilebilir etkiye sahiptir.
+1. **Diğer kurallar**: [Saldırı yüzeyi azaltma (ASR) kuralları dağıtım kılavuzunda](attack-surface-reduction-rules-deployment.md) belgelendiği gibi belgelenmiş dağıtım adımlarını izlemenin bir ölçüsünü gerektiren kurallar [Plan > Test (denetim) > Etkinleştir (blok/uyarı modları)]]
+
+Standart koruma kurallarını etkinleştirmenin en kolay yöntemi için bkz. [Basitleştirilmiş standart koruma seçeneği](attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
+
+| ASR kural adı: | Standart koruma kuralı mı? | Başka bir kural mı? |
+|:---|:---|:---|
+| Güvenlik açığı bulunan imzalı sürücülerin kötüye kullanılması engellendi| Evet | |
+| Adobe Reader'ın alt işlemler oluşturmalarını engelleme | | Evet |
+| Tüm Office uygulamalarının alt işlemler oluşturmalarını engelleme | | Evet |
+| Windows yerel güvenlik yetkilisi alt sisteminden (lsass.exe) kimlik bilgilerinin çalınmalarını engelleme | Evet | |
+| E-posta istemcisinden ve web postasından yürütülebilir içeriği engelleme | | Evet |
+| Bir yaygınlık, yaş veya güvenilir liste ölçütüne uymadığı sürece yürütülebilir dosyaların çalışmasını engelleyin | | Evet |
+| Karartılmış olabilecek betiklerin yürütülmesini engelleme | | Evet |
+| JavaScript veya VBScript'in indirilen yürütülebilir içeriği başlatmasını engelleme | | Evet |
+| Office uygulamalarının yürütülebilir içerik oluşturmalarını engelleme | | Evet |
+| Office uygulamalarının diğer işlemlere kod eklemesini engelleme | | Evet |
+| Office iletişim uygulamasının alt işlemler oluşturmalarını engelleme | | Evet |
+| WMI olay aboneliği aracılığıyla kalıcılığı engelleme | Evet | |
+| PSExec ve WMI komutlarından kaynaklanan işlem oluşturma işlemlerini engelleme | | Evet |
+| USB'den çalıştırılan güvenilmeyen ve imzalanmamış işlemleri engelleme | | Evet |
+| Office makrolarından Win32 API çağrılarını engelleme | | Evet |
+| Fidye yazılımına karşı gelişmiş koruma kullanma | | Evet |
+
+## <a name="asr-rules-supported-operating-systems"></a>ASR kuralları tarafından desteklenen işletim sistemleri
 
 Aşağıdaki tabloda, şu anda genel kullanıma sunulan kurallar için desteklenen işletim sistemleri listelenmektedir. Kurallar bu tabloda alfabetik sırada listelenmiştir.
 
@@ -82,7 +111,7 @@ Aşağıdaki tabloda, şu anda genel kullanıma sunulan kurallar için desteklen
 
 (<a id="fn1">3</a>) Sürüm ve derleme numarası yalnızca Windows&nbsp;10 için geçerlidir.
 
-## <a name="supported-configuration-management-systems"></a>Desteklenen yapılandırma yönetim sistemleri
+## <a name="asr-rules-supported-configuration-management-systems"></a>ASR kuralları tarafından desteklenen yapılandırma yönetim sistemleri
 
 Bu tabloda başvurulan yapılandırma yönetim sistemi sürümleri hakkındaki bilgilerin bağlantıları bu tablonun altında listelenmiştir.
 
@@ -112,7 +141,7 @@ Bu tabloda başvurulan yapılandırma yönetim sistemi sürümleri hakkındaki b
 - [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM artık Microsoft Endpoint Configuration Manager._
 
-## <a name="per-rule-alert-and-notification-details"></a>Kural uyarı ve bildirim ayrıntıları başına
+## <a name="per-asr-rule-alert-and-notification-details"></a>ASR kuralı uyarı ve bildirim ayrıntıları başına
 
 Blok modundaki tüm kurallar için bildirim bildirimleri oluşturulur. Diğer modlardaki kurallar bildirim oluşturmaz
 
@@ -255,7 +284,7 @@ Bağımlılıklar: Microsoft Defender Virüsten Koruma
 
 Bu kural, Yerel Güvenlik Yetkilisi Alt Sistem Hizmeti'ni (LSASS) kilitleyerek kimlik bilgilerinin çalınmasını önlemeye yardımcı olur.
 
-LSASS, Windows bilgisayarında oturum açan kullanıcıların kimliğini doğrular. Windows'da Microsoft Defender Credential Guard normalde LSASS'den kimlik bilgilerini ayıklama girişimlerini engeller. Bazı kuruluşlar, özel akıllı kart sürücüleri veya Yerel Güvenlik Yetkilisi'ne (LSA) yüklenen diğer programlarla ilgili uyumluluk sorunları nedeniyle Credential Guard'ı tüm bilgisayarlarında etkinleştiremiyor. Bu gibi durumlarda saldırganlar, Cleartext parolalarını ve LSASS'den NTLM karmalarını kazımak için Mimikatz gibi araçları kullanabilir.
+LSASS, Windows bilgisayarında oturum açan kullanıcıların kimliğini doğrular. Windows'da Credential Guard Microsoft Defender normalde LSASS'den kimlik bilgilerini ayıklama girişimlerini engeller. Bazı kuruluşlar, özel akıllı kart sürücüleri veya Yerel Güvenlik Yetkilisi'ne (LSA) yüklenen diğer programlarla ilgili uyumluluk sorunları nedeniyle Credential Guard'ı tüm bilgisayarlarında etkinleştiremiyor. Bu gibi durumlarda saldırganlar, Cleartext parolalarını ve LSASS'den NTLM karmalarını kazımak için Mimikatz gibi araçları kullanabilir.
 
 > [!NOTE]
 > Bazı uygulamalarda kod, çalışan tüm işlemleri numaralandırır ve bunları kapsamlı izinlerle açmaya çalışır. Bu kural, uygulamanın işlem açma eylemini reddeder ve ayrıntıları güvenlik olay günlüğüne kaydeder. Bu kural çok fazla gürültü oluşturabilir. LSASS'yi numaralandıran ancak işlevsellikte gerçek bir etkisi olmayan bir uygulamanız varsa, bunu dışlama listesine eklemeniz gerekmez. Bu olay günlüğü girdisi tek başına kötü amaçlı bir tehdit anlamına gelmez.
@@ -548,3 +577,13 @@ Gelişmiş tehdit avcılığı eylem türü:
 - AsrRansomwareBlocked
 
 Bağımlılıklar: Microsoft Defender Virüsten Koruma, Bulut Koruması
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Saldırı yüzeyini azaltma (ASR) kuralları dağıtımına genel bakış](attack-surface-reduction-rules-deployment.md)
+- [Saldırı yüzeyini azaltma (ASR) kuralları dağıtım planı](attack-surface-reduction-rules-deployment-plan.md)
+- [Saldırı yüzeyini azaltma (ASR) kuralları testi](attack-surface-reduction-rules-deployment-test.md)
+- [Saldırı yüzeyini azaltma (ASR) kurallarını etkinleştirme](attack-surface-reduction-rules-deployment-implement.md)
+- [Saldırı yüzeyini azaltma (ASR) kurallarını kullanıma hazır hale getirme](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Saldırı yüzeyi azaltma \(ASR\) kuralları raporu](attack-surface-reduction-rules-report.md)
+- [Saldırı yüzeyi azaltma kuralları başvurusu](attack-surface-reduction-rules-reference.md)

@@ -2,30 +2,35 @@
 title: Microsoft Purview çözümleri deneme sürümü hakkında
 f1.keywords:
 - NOCSH
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection:
+- purview-compliance
+- highpri
+- tier1
 ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Purview çözümleri deneme sürümü ve nasıl kaydolacağınızı öğrenin.
-ms.openlocfilehash: 73a92591c360f71833b4a1dbf6d05f955c64d7dc
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+description: Microsoft Purview çözümleri ücretsiz deneme sürümüne nasıl katılacağınızı öğrenin. Kuruluşunuzun veri güvenliği ve uyumluluk gereksinimlerini yönetmesine yardımcı olmak için Purview çözümlerinin Denetim ve Information Protection gibi tüm premium özelliklerini E5 düzeyinde deneyin. Uygunluk ve hemen kaydolma hakkında ayrıntılı bilgi edinin.
+ms.openlocfilehash: 809c73d2773b1608e7d99a915bb89a4ce5e7d703
+ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67825730"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499802"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Microsoft Purview çözümleri deneme sürümü hakkında
 
 Microsoft Purview çözümleri, kuruluşunuzun dosya ve e-postalardaki uygunsuz izinlerden kaynaklanan iç tehditlere karşı korunmasına yardımcı olur ve kuruluşunuzun mevzuat ve şirket içi iş gereksinimlerine uymasına yardımcı olur.
 
 Microsoft Purview çözümleri deneme sürümü, Microsoft Purview çözümlerinin tüm özelliklerini denemenin en kolay yoludur ve kurulumu yalnızca birkaç dakika sürer. Deneme kurulumu tamamlandıktan sonra, Microsoft E5 lisans paketinin tüm özellikleri 90 güne kadar kullanabilirsiniz.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="terms-and-conditions"></a>Hüküm ve koşullar
 
@@ -65,7 +70,7 @@ Deneme sürümünüz 90 gün boyunca hemen geçerli olacaktır. Tüm Purview ç�
 
 Purview çözümlerini Microsoft Purview uyumluluk portalı gördüğünüz anda kullanmaya başlayabilirsiniz. Hiçbir şey otomatik olarak oluşturulmaz ve kullanıcılar etkilenmez. Her çözüme gittiğinizde, özellikleri kullanmaya başlamak için ek kurulum yapılandırmaları yapmanız için size yol gösterilebilir.
 
-Başlamanıza yardımcı olması için [deneme playbook'umuzu](compliance-easy-trials-compliance-playbook.md) kullanın.
+Başlamanıza yardımcı olması için [deneme kullanım kılavuzumuzu](compliance-easy-trials-compliance-playbook.md) kullanın.
 
 #### <a name="finding-support"></a>Destek bulma
 

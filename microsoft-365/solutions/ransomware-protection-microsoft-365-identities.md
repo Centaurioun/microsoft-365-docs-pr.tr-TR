@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, HumOR, gasp saldırısı, fidye yazılımı saldırısı, şifreleme, kriptoviroloji, sıfır güven
 description: Microsoft 365 kaynaklarınızı fidye yazılımı saldırılarına karşı korumak için güvenli oturum açma işlemlerini ve Koşullu Erişim'i kullanın.
-ms.openlocfilehash: 040c61447feffbdec4d03aac6d2b05aecc0f2175
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 33559370794de182addee0ea40ccadfe0cca0bf0
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727666"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985487"
 ---
 # <a name="step-3-protect-identities"></a>Adım 3. Kimlikleri koruyun
 

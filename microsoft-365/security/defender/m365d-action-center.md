@@ -17,19 +17,19 @@ ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: how-to
 ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 9a44ea87a38228c5ec012f0fe507bb3c9d6f66bb
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 884c0af44414e56109995bad4f9ee0bdd6e0f487
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67475492"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300376"
 ---
 # <a name="the-action-center"></a>İşlem merkezi
 
@@ -52,7 +52,6 @@ Birleşik İşlem merkezi ([https://security.microsoft.com/action-center](https:
 
 Örneğin: 
 
-- Daha önce Office 365 Güvenlik & Uyumluluk Merkezi' ni ()[https://protection.office.com](https://protection.office.com) kullanıyorsanız<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">, Microsoft 365 Defender portalında</a> birleşik İşlem merkezini deneyin.
 - Microsoft Defender Güvenlik Merkezi()[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) içinde İşlem merkezini kullanıyorsanız<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">, Microsoft 365 Defender portalında</a> birleşik İşlem merkezini deneyin.
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">zaten Microsoft 365 Defender portalını</a> kullanıyorsanız İşlem merkezinde ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) çeşitli geliştirmeler görürsünüz.
 
@@ -134,8 +133,8 @@ Onay bekleyen veya önceden gerçekleştirilen tüm eylemler İşlem merkezinde 
 
 |Düzeltme eylemi |Gerekli roller ve izinler |
 |--|----|
-|Uç Nokta için Microsoft Defender düzeltme (cihazlar) |Azure Active Directory'de (Azure AD) ([https://portal.azure.com](https://portal.azure.com)) veya Microsoft 365 yönetim merkezi ([https://admin.microsoft.com](https://admin.microsoft.com)) atanan **Güvenlik Yöneticisi** rolü<br/>--- veya ---<br/>Uç Nokta için Microsoft Defender'de atanan **etkin düzeltme eylemleri** rolü <br/> <br/> Daha fazla bilgi edinmek için aşağıdaki kaynaklara bakın: <br/>- [Yerleşik rolleri Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Rol tabanlı erişim denetimi için roller oluşturma ve yönetme (Uç Nokta için Microsoft Defender)](../defender-endpoint/user-roles.md)  |
-|Office 365 için Microsoft Defender düzeltme (Office içeriği ve e-posta)  |Azure AD ([https://portal.azure.com](https://portal.azure.com)) veya Microsoft 365 yönetim merkezi ([https://admin.microsoft.com](https://admin.microsoft.com)) olarak atanan **Güvenlik Yöneticisi** rolü<br/>--- ve --- <br/>Güvenlik & Uyumluluk Merkezi'nde [https://protection.office.com](https://protection.office.com) () atanan **Arama ve Temizleme** rolü <br/><br/>**ÖNEMLİ**: **Güvenlik Yöneticisi** rolü yalnızca Office 365 Güvenlik & Uyumluluk Merkezi'nde ([https://protection.office.com](https://protection.office.com) ) atanmışsa, İşlem merkezine veya Microsoft 365 Defender özelliklerine erişemezsiniz. **Azure AD veya Microsoft 365 yönetim merkezi'da Güvenlik Yöneticisi** rolü atanmış olmalıdır. <br/><br/>Daha fazla bilgi edinmek için aşağıdaki kaynaklara bakın: <br/>- [Yerleşik rolleri Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Güvenlik & Uyumluluk Merkezi'ndeki izinler](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Uç Nokta için Microsoft Defender düzeltme (cihazlar) |Azure Active Directory'de (Azure AD) ([https://portal.azure.com](https://portal.azure.com)) veya Microsoft 365 yönetim merkezi ([https://admin.microsoft.com](https://admin.microsoft.com)) atanan **Güvenlik Yöneticisi** rolü<br/>---Veya---<br/>Uç Nokta için Microsoft Defender'de atanan **etkin düzeltme eylemleri** rolü <br/> <br/> Daha fazla bilgi edinmek için aşağıdaki kaynaklara bakın: <br/>- [Yerleşik rolleri Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Rol tabanlı erişim denetimi için roller oluşturma ve yönetme (Uç Nokta için Microsoft Defender)](../defender-endpoint/user-roles.md)  |
+|Office 365 için Microsoft Defender düzeltme (Office içeriği ve e-posta)  |Azure AD ([https://portal.azure.com](https://portal.azure.com)) veya Microsoft 365 yönetim merkezi ([https://admin.microsoft.com](https://admin.microsoft.com)) olarak atanan **Güvenlik Yöneticisi** rolü<br/>---Ve--- <br/>Microsoft 365 Defender > Email & [işbirliği rollerinde](https://security.microsoft.com/emailandcollabpermissions) atanan **Arama ve Temizleme** rolü <br/><br/>**ÖNEMLİ**: **Güvenlik Yöneticisi** rolünüz yalnızca Microsoft 365 Defender > [Email & işbirliği rollerinde](https://security.microsoft.com/emailandcollabpermissions) atanmışsa İşlem merkezi veya Microsoft 365 Defender özelliklerine erişemezsiniz. Azure AD veya Microsoft 365 yönetim merkezi'da Güvenlik Yöneticisi rolü atanmış olmalıdır. <br/><br/>Daha fazla bilgi edinmek için aşağıdaki kaynaklara bakın: <br/>- [Yerleşik rolleri Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Güvenlik & Uyumluluk Merkezi'ndeki izinler](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > Azure AD'de Genel **Yönetici** rolü atanmış kullanıcılar, İşlem merkezindeki bekleyen eylemleri onaylayabilir veya reddedebilir. Ancak, en iyi uygulama olarak, kuruluşunuzun **Genel Yönetici** rolü atanmış kişi sayısını sınırlaması gerekir. İşlem merkezi izinleri için önceki tabloda listelenen **Güvenlik Yöneticisi**, **Etkin düzeltme eylemleri** **ve Arama ve Temizleme** rollerini kullanmanızı öneririz.

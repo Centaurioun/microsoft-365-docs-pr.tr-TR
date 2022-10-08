@@ -13,16 +13,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 4e8d05844f812ee91f135deaf339f62dd90493d6
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: f7c3bc6abbb4340ae04f94b2f1fb0e031e69fa9d
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67741817"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492235"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS ve Linux üzerinde istemci çözümleyicisini çalıştırma
 
@@ -36,7 +38,7 @@ ms.locfileid: "67741817"
 1. [XMDE İstemci Çözümleyicisi](https://aka.ms/XMDEClientAnalyzer) aracını araştırmanız gereken macOS veya Linux makinesine indirin.
 
    > [!NOTE]
-   > Yukarıdaki bağlantıdan indirilen geçerli 'XMDEClientAnalyzer.zip' SHA256 karması: 'bf102a79626c88fe58b5be3034640835f96f5423029292486716d72f515875966c'.
+   > Yukarıdaki bağlantıdan indirilen geçerli 'XMDEClientAnalyzer.zip' SHA256 karması: 'BF102A79626C88FE58B5BE3034640835F96F54230292486716D72F515875966C'
 
 2. Makinedeki XMDEClientAnalyzer.zip içeriğini ayıklayın.
 
@@ -71,7 +73,7 @@ ms.locfileid: "67741817"
 > - Ayrıca aracın şu anda Python sürüm 3 veya üzerinin yüklü olması gerekir.
 >
 > - Python 3 kullanamayan veya lxml bileşenini getiremeyen bir makinede çalışıyorsanız, çözümleyicinin gereksinimlerinin hiçbirini içermeyen ikili tabanlı bir sürümünü indirebilirsiniz: [XMDE İstemci Çözümleyicisi İkili](https://aka.ms/XMDEClientAnalyzerBinary). <br> İkili dosyanın şu anda imzasız olduğunu unutmayın. Paketin MacOS üzerinde çalıştırılmasına izin vermek için şu söz dizimini kullanmanız gerekir: "spctl --add /Path/To/Application.app".
-> - Yukarıdaki bağlantıdan indirilen geçerli 'XMDEClientAnalyzerBinary.zip' SHA256 karması: '7FE67373CDF493BF2748FD778BD106EE85A71C968D594BCC67C7374620506EF2'
+> - Yukarıdaki bağlantıdan indirilen geçerli 'XMDEClientAnalyzerBinary.zip' SHA256 karması: '6FEB44EF2D9FEB8C8093A016FAB2B5F3ED580931008066BF134E8B1E04CAB222'
 >
 > - Cihazınız bir ara sunucunun arkasındaysa, proxy sunucusunu mde_support_tool.sh betiğine ortam değişkeni olarak geçirebilirsiniz. Örneğin: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
@@ -81,7 +83,7 @@ ms.locfileid: "67741817"
 
 Ek söz dizimi yardımı:
 
-**-h** \# Yardım<br>
+**-H** \# Yardım<br>
 \# Yardım iletisini göster
 
 **Performans** \# Performans<br>
@@ -90,10 +92,10 @@ Ek söz dizimi yardımı:
 **-o** \# Çıkış<br>
 \# Sonuç dosyası için hedef yolu belirtme
 
-**-nz** \# No-Zip<br>
+**-Nz** \# No-Zip<br>
 \# Ayarlanırsa, sonuçta elde edilen arşiv dosyası yerine bir dizin oluşturulur
 
-**-f** \# Kuvvet<br>
+**-F** \# Kuvvet<br>
 \# Çıkış hedef yolda zaten varsa üzerine yaz
 
 ## <a name="result-package-contents-on-macos-and-linux"></a>macOS ve Linux'ta sonuç paketi içeriği

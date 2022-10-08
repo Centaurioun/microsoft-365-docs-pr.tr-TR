@@ -8,9 +8,11 @@ audience: Admin
 ms.topic: article
 f1.keywords:
 - MACBillingBillsPaymentsInvoices
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- ContentEngagementFY23
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +24,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft iş ürünleri için faturanızı veya faturanızı nasıl okuyacağınızı ve anlayacağınızı öğrenin.
 ms.date: 08/08/2022
-ms.openlocfilehash: 9647d5f606e1167120fd075733a3911088d50224
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 15b07a95e981244b1c4643b857ce348222341285
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664153"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492496"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Fatura ekstrenizi veya faturanızı anlama
 

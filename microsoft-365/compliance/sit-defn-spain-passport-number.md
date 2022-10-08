@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: İspanya pasaport numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: eb55fcc63448771eb0b27190df8e5555bc2f3e5a
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 25407b27926c9542a01298eb89a55c158ae1c245
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948479"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472661"
 ---
 # <a name="spain-passport-number"></a>İspanya pasaport numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -40,19 +43,19 @@ harflerin ve sayıların sekiz veya dokuz karakterlik bir birleşimi:
 - bir basamak veya harf (isteğe bağlı)
 - altı basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Geçerli değil
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_spain_eu_passport_number` , desenle eşleşen içeriği bulur.
 - veya `Keywords_spain_eu_passport_number` anahtar `Keywords_eu_passport_number` sözcüğü bulunur.
 - Normal ifade `Regex_spain_eu_passport_date` tarihi DD-AA-YYYY biçiminde bulur veya bir anahtar sözcük `Keywords_eu_passport_date` bulunur
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - Normal ifade `Regex_spain_eu_passport_number` , desenle eşleşen içeriği bulur.
 - veya `Keywords_spain_eu_passport_number` anahtar `Keywords_eu_passport_number` sözcüğü bulunur.

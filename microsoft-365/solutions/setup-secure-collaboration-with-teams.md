@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Verilerinizi duyarlılığına göre korumak için Teams'de güvenli dosya işbirliği ve paylaşımı ayarlamak için en iyi yöntemleri öğrenin.
-ms.openlocfilehash: 40346ded5af67c7aac11e0491bfc7bd296e13c3d
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: ab3d57f45aed00ab2b9500a7cdb80b3adda76483
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67811230"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985992"
 ---
 # <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>Microsoft Teams ile güvenli dosya paylaşımı ve işbirliği ayarlama
 

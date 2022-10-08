@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -18,12 +18,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Kuruluşunuz dışındaki kişilerle dosya paylaşırken bilgilerin yanlışlıkla açığa çıkmalarını nasıl sınırlayacağınızı öğrenin.
-ms.openlocfilehash: 8d9410f1eaffd926bed810b8193df70f0898301d
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 6053f0a9e01a485709fb61f0d12fdb33f123e693
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727226"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985443"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Kuruluşunuzun dışındaki kişilerle paylaşım yaparken dosyaların yanlışlıkla açığa çıkmalarını sınırlayın
 

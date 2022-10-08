@@ -7,7 +7,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, insan tarafından çalıştırılan fidye yazılımı, HumOR, gasp saldırısı, fidye yazılımı saldırısı, şifreleme, kriptoviroloji, sıfır güven
 description: MDA ve MAM sağlayıcısı olarak Windows Intune kullanın ve Microsoft 365 kaynaklarınızı fidye yazılımı saldırılarına karşı korumak için güvenlik özelliklerini Windows 10.
-ms.openlocfilehash: fa53e9b286c0419a3f270f3a8ea650644d6de84a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: e78fede93bfa08292128be57a3f0494c62f87782
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67728220"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985509"
 ---
 # <a name="step-4-protect-devices"></a>Adım 4. Cihazları koruyun
 
@@ -32,8 +32,8 @@ Cihazları (uç noktaları) fidye yazılımı saldırısının ilk erişim böl�
 - [Intune](/mem/intune/fundamentals/what-is-intune) cihazlarınız için mobil cihaz yönetimi (MDM) ve mobil uygulama yönetimi (MAM) sağlayıcısı olarak dağıtın ve kuruluşunuzun sahip olduğu cihazları kaydedin.
 - Kullanıcı hesabı kimlik bilgilerini doğrulamak ve cihaz sistem durumu ve uyumluluk gereksinimlerini zorunlu kılmak için [Ortak kimlik ve cihaz erişim ilkelerini](/microsoft-365/security/office-365-security/identity-access-policies) uygulayın.
 - Uç Nokta için Microsoft Defender ve Microsoft 365 Defender'de [Ağ Koruması'nı](/microsoft-365/security/defender-endpoint/network-protection) etkinleştirin.
-- Engellemek [veya](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) uyarmak için Microsoft Defender SmartScreen'te site [ve indirme denetimini, uygulama ve dosya denetimini](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) yapılandırın.
-- İndirilen dosya ve eklerde [Microsoft Defender Virüsten Koruma taramasını](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus) etkinleştirin.
+- Engellemek veya uyarmak için SmartScreen Microsoft Defender [site ve indirme denetimini](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) ve [uygulama ve dosya denetimini](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) yapılandırın.
+- İndirilen dosya ve eklerin [Microsoft Defender Virüsten Koruma taramasını](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus) etkinleştirin.
 - **uzak masaüstü güvenlik düzeyini** Uç Nokta için Microsoft Defender ve Microsoft 365 Defender **TLS** olarak ayarlayın.
 
 ## <a name="windows-11-or-10-devices"></a>Windows 11 veya 10 cihaz
@@ -41,7 +41,7 @@ Cihazları (uç noktaları) fidye yazılımı saldırısının ilk erişim böl�
 Bir saldırının yanal hareket parçasına karşı Windows 11 veya 10 cihazdan korunmaya yardımcı olmak için:
 
 - [Microsoft Defender Güvenlik Duvarı'nı açın](https://support.microsoft.com/windows/turn-microsoft-defender-firewall-on-or-off-ec0844f7-aebd-0583-67fe-601ecf5d774f).
-- [Microsoft Defender Virüsten Koruma tanımlarını güncelleştirin](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus).
+- [virüsten koruma tanımlarını Microsoft Defender güncelleştirin](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus).
 
 Saldırının etkisini azaltmak için:
 
@@ -56,7 +56,7 @@ Güvenlik savunmalarınızı atlatan bir saldırgana karşı korunmaya yardımc�
 
 Bir saldırının parçası olarak kod yürüten bir saldırgana karşı korunmaya yardımcı olmak için:
 
-- [Microsoft Defender Virüsten Koruma'nı](/mem/intune/user-help/turn-on-defender-windows) açın.
+- [Microsoft Defender Virüsten Koruma'Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows) açın.
 - [Office makrolarından Win32 API çağrılarını engelleyin](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules#block-win32-api-calls-from-office-macros).
 - [Bu işlemi](https://www.microsoft.com/microsoft-365/blog/2010/02/16/migrating-excel-4-macros-to-vba/) kullanarak Excel 4.0 makroları gerektiren tüm eski çalışma kitaplarını güncelleştirilmiş VBA makro biçimine geçirin.
 - [İmzalanmamış makroların kullanımını devre dışı bırakın](https://support.microsoft.com/topic/enable-or-disable-macros-in-office-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6). ortamınızda bilinmeyen makroların çalışmadığından emin olmak için iş gereksinimi olan tüm iç makroların imzalandığından ve [güvenilen konumlardan](/deployoffice/security/designate-trusted-locations-for-files-in-office) yararlanıldığından emin olun.

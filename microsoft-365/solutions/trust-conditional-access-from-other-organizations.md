@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Kuruluşunuz dışındaki kişilerin MFA ve uyumlu cihazlar gibi koşullu erişim denetimlerini geçirmesini nasıl zorunlu kacağınızı öğrenin.
-ms.openlocfilehash: 9e424ef6dde16137a334f391efa71b6b61860dfb
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 952005d10258aaebf2c2f3ed0b811db951a8f624
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731452"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986322"
 ---
 # <a name="require-conditional-access-for-people-outside-your-organization"></a>Kuruluşunuzun dışındaki kişiler için koşullu erişim gerektirme
 

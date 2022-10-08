@@ -14,22 +14,25 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: ABD fiziksel adresleri hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: a819fc23dc17971d4004fb7d437950798da448ed
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: c8c79679fdae5e9e5893cb62307310dc6a6d5161
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989385"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472508"
 ---
 # <a name="us-physical-addresses"></a>ABD fiziksel adresleri
 
-Bu unbundled adlandırılmış varlık, ABD'den gelen fiziksel adresle ilgili desenleri algılar. Ayrıca varlık SIT adlı [paketlenmiş Tüm Fiziksel Adresler'e](sit-defn-all-physical-addresses.md) de dahildir.
+Bu unbundled adlandırılmış varlık, ABD'den gelen fiziksel adresle ilgili desenleri algılar. Ayrıca bu varlık [Tüm Fiziksel Adresler](sit-defn-all-physical-addresses.md) paketlenmiş adlandırılmış varlık hassas bilgi türüne dahildir.
 
-## <a name="confidence-level"></a>Güvenilirlik düzeyi
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## <a name="confidence-level"></a>Olasılık düzeyi
 
 Orta

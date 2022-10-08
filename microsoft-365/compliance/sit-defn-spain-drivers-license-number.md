@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: İspanya ehliyet numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: fa78c9490b68e7a178572767f47da095b9b6086c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 69fb892d26af20aceae4bde01860c36b1fda05cc
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989456"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472683"
 ---
 # <a name="spain-drivers-license-number"></a>İspanya ehliyet numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -39,18 +42,18 @@ sekiz basamak ve ardından bir karakter:
 - sekiz basamak
 - bir basamak veya harf (büyük/küçük harfe duyarlı değil)
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
 - İşlev `Func_spain_eu_DL_and_NI_number_citizen` veya `Func_spain_eu_DL_and_NI_number_foreigner` desenle eşleşen içeriği bulur.
 - veya `Keywords_spain_eu_driver's_license_number` anahtar `Keywords_eu_driver's_license_number` sözcüğü bulunur.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
 - İşlev `Func_spain_eu_DL_and_NI_number_citizen` veya `Func_spain_eu_DL_and_NI_number_foreigner` desenle eşleşen içeriği bulur.
 

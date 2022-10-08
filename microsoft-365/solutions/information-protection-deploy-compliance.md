@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 09/29/2020
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: Kişisel veriler için koruma düzeyinizi geliştirmek için Uyumluluk Puanı ve Uyumluluk Yöneticisi'ni kullanmayı öğrenin.
-ms.openlocfilehash: 65a69ca40df3bcbaff8092c50d74d32868b419b4
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: f5cc20e77e480369a6f6e606ea9245a928368184
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730759"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986234"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>İyileştirme eylemlerini yönetmek için Uyumluluk Yöneticisi'ni kullanma
 

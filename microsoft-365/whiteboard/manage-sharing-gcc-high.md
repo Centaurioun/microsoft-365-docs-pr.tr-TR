@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: GCC High ortamlarında Microsoft Whiteboard için paylaşımı yönetmeyi öğrenin.
-ms.openlocfilehash: 2c87290fb7a6ebbcf9c27ac95e76c8b5ae5f0d88
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.openlocfilehash: 4da8d87e13cfbe46e340f0a69e8b25cdf9e6c54b
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598185"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300310"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-high-environments"></a>GCC High ortamlarında Microsoft Whiteboard için paylaşımı yönetme
 
@@ -32,9 +32,7 @@ Toplantı sırasında dış ve paylaşılan cihaz hesaplarının çoğu tarafın
 
 Bu durumda Whiteboard, yalnızca Teams toplantısı sırasında beyaz tahta üzerinde geçici görüntüleme ve işbirliği sağlar. Paylaşım bağlantısı oluşturulmaz ve Beyaz Tahta dosyaya erişim izni vermez.
 
-OneDrive İş için dış paylaşımı etkinleştirdiyseniz başka işlem yapmanız gerekmez.
-
-OneDrive İş için dış paylaşımı kısıtlarsanız, bu paylaşımı kısıtlayabilir ve yalnızca dış ve paylaşılan cihaz hesaplarının çalışması için yeni bir ayarı etkinleştirebilirsiniz. Bunu yapmak için şu adımları uygulayın:
+Bu davranışı etkinleştirmek için şu adımları izleyin:
 
 1. Whiteboard'un kuruluşunuz için etkinleştirildiğinden emin olun. Daha fazla bilgi için bkz. [Whiteboard erişimini yönetme](manage-whiteboard-access-gcc-high.md).
 

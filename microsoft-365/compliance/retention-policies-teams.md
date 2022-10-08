@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: Kuruluşunuz için Teams iletilerinin otomatik olarak tutulmasını veya silinmesini yönetebilmeniz için Microsoft Teams için geçerli olan Microsoft 365 bekletme ilkeleri hakkında bilgi edinin.
-ms.openlocfilehash: da8275ff3a5792df3cbc72aea7b8e483a0a5f4f3
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.openlocfilehash: 799556ea2f36f2c90c8182ae5cef0b5311cd9a75
+ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441828"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68495154"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams için bekletme hakkında bilgi edinin
 
@@ -41,12 +42,16 @@ Diğer iş yükleri için bkz:
 - [Yammer için bekletme hakkında bilgi edinin](retention-policies-yammer.md)
 - [Exchange için bekletme hakkında bilgi edinin](retention-policies-exchange.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="whats-included-for-retention-and-deletion"></a>Saklama ve silmeye dahil olanlar
 
 > [!NOTE]
 > Bekletme ilkeleri [paylaşılan kanalları destekler](/MicrosoftTeams/shared-channels). Paylaşılan kanallar, saklama ayarlarını üst kanaldan devralır.
+> 
+> Bekletme ilkeleri, [kendinizle sohbet](https://support.microsoft.com/office/start-a-chat-in-teams-0c71b32b-c050-4930-a887-5afbe742b3d8?storagetype=live#bkmk_chatwithself) özelliğiyle gönderilen iletileri de destekler.
 
-Teams sohbetleri iletileri, kanal iletileri ve özel kanal iletileri Teams için bekletme ilkeleri kullanılarak silinebilir ve iletilerdeki metinlere ek olarak, uyumluluk nedenleriyle aşağıdaki öğeler korunabilir: Ekli resimler, tablolar, köprü metni bağlantıları, diğer Teams iletilerine ve dosyalarına bağlantılar ve [kart içeriği](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Sohbet iletileri ve özel kanal iletileri konuşmadaki kişilerin tüm adlarını, kanal iletileri ise ekip adını ve ileti başlığını (varsa) içerir. 
+Teams sohbetleri iletileri, kanal iletileri ve özel kanal iletileri Teams için bekletme ilkeleri kullanılarak silinebilir ve iletilerdeki metinlere ek olarak, uyumluluk nedeniyle aşağıdaki öğeler korunabilir: Video klipleri, eklenmiş resimler, tablolar, köprü metni bağlantıları, diğer Teams iletilerine ve dosyalarına bağlantılar ve [kart içeriği](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Sohbet iletileri ve özel kanal iletileri konuşmadaki kişilerin tüm adlarını, kanal iletileri ise ekip adını ve ileti başlığını (varsa) içerir. 
 
 Kod parçacıkları, Teams mobil istemcisinden kaydedilen sesli notlar, küçük resimler, duyuru görüntüleri ve ifade biçimindeki diğer kişilerden gelen tepkiler, Teams için bekletme ilkelerini kullandığınızda korunmaz.
 

@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Paylaşılan posta kutularını ayarlarken hata alabilirsiniz. Paylaşılan posta kutularıyla ilgili sorun yaşıyorsanız bu çözümleri deneyin.
-ms.openlocfilehash: 08b5bbaa1ea952ee2b9bb6c626328fdb6b91d71c
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bc272dcd9ad74b4f9ab7e93915fd9fa9becd33aa
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008589"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68298220"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Paylaşılan posta kutularında sorunları çözme
 
@@ -38,7 +39,7 @@ Paylaşılan posta kutusu oluştururken veya kullanırken hata iletileri görür
 
 Hata iletisini görürseniz, **"smtp:<paylaşılan posta kutusu adı\>" proxy adresi veya "\<name>" LegacyExchangeDN'si tarafından zaten kullanılıyordur. Lütfen başka bir ara sunucu adresi seçin**; bu, paylaşılan posta kutusuna zaten kullanımda olan bir ad vermeye çalıştığınız anlamına gelir. Örneğin, paylaşılan posta kutularını info@domain1 ve info@domain2 olarak adlandırmak istediğinizi varsayalım. Bunu yapmanın iki yolu vardır:
 
-- PowerShell Exchange Online kullanın. Yönergeler için bu blog gönderisini izleyin: [Farklı Etki Alanlarında Aynı Diğer Adla Paylaşılan Posta Kutuları Oluşturma](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+- PowerShell Exchange Online kullanın. Yönergeler için bu blog gönderisini izleyin: [Farklı Etki Alanlarında Aynı Diğer Adla Paylaşılan Posta Kutuları Oluşturma](https://blog.quadrotech-it.com/blog/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365/)
 
 - İkinci paylaşılan posta kutusuna hatayla ilgili olarak başlangıçtan farklı bir ad verin. Ardından yönetim merkezinde paylaşılan posta kutusunu istediğiniz gibi yeniden adlandırın.
 

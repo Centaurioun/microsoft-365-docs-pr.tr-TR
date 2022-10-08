@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -24,12 +24,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Microsoft 365'te paylaşımı sınırlama veya devre dışı bırakma seçenekleri hakkında bilgi edinin.
-ms.openlocfilehash: c2d7233afadc49ea5f8e465783106b9d3f38a252
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: f9833e1c033644e117a4009720a627d783e4e946
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67731044"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985619"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Microsoft 365'te paylaşımı sınırlama
 

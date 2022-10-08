@@ -14,21 +14,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: BK ulusal sigorta numarası (NINO) hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 44b41cf2c19d001e142ff527b431990ebd3c80c6
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a975ec23f2677846503e87087470452e952a7df6
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989358"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472902"
 ---
 # <a name="uk-national-insurance-number-nino"></a>BK ulusal sigorta numarası (NINO)
 
 Bu hassas bilgi türü varlığı AB Ulusal Kimlik Numarası hassas bilgi türüne dahil edilir. Tek başına hassas bilgi türü varlığı olarak da kullanılabilir.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -54,20 +57,20 @@ VEYA
 - boşluk veya tire
 - 'A', 'B', 'C' veya 'D'
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_uk_nino` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_uk_nino` bir anahtar sözcük bulunur.
+- İşlev `Func_uk_nino`, desenle eşleşen içeriği bulur.
+- `Keyword_uk_nino` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_uk_nino` , desenle eşleşen içeriği bulur.
+- İşlev `Func_uk_nino`, desenle eşleşen içeriği bulur.
 
 ```xml
     <!-- U.K. NINO -->

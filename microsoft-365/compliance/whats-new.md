@@ -15,15 +15,15 @@ search.appverid:
 - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 description: Microsoft 365, uyumluluk merkezine yeni çözümler ekleme, mevcut özellikleri geri bildiriminize göre güncelleştirme veya yeni ve güncelleştirilmiş belgeleri kullanıma sunarken sürekli değişen uyumluluk ortamını takip etme konusunda size yardımcı olur. Bu ay neler yaptığımıza bakın.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 211b15f693e26a83bfb7e06174fb33260794bcfe
-ms.sourcegitcommit: 433f5b448a0149fcf462996bc5c9b45d17bd46c6
+ms.openlocfilehash: de72e70931facad03bb5f98d58aa1744a67206c0
+ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67818907"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68501326"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview risk ve uyumluluk çözümlerindeki yenilikler
 
@@ -40,6 +40,22 @@ microsoft 365, [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-c
 > - [Microsoft 365 Defender'daki yenilikler](../security/defender/whats-new.md)
 >
 > Ayrıca başlatılan, kullanıma sunulan, geliştirilen, iptal edilen veya daha önce yayımlanan Microsoft 365 özellikleri hakkında bilgi edinmek için Microsoft 365 [Yol Haritası'nı](https://www.microsoft.com/microsoft-365/roadmap) ziyaret edin.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## <a name="september-2022"></a>Eylül 2022
+
+### <a name="data-classification"></a>Veri Sınıflandırma
+
+- [Sınıflandırıcı doğruluğunu artırma (önizleme)](data-classification-increase-accuracy.md) - Bu makalede, sınıflandırıcı tarafından eşleştirilen öğelerin doğru pozitif (Eşleşme) veya hatalı pozitif (Eşleşme değil) olup olmadığını onaylama ve Eşleşme veya Eşleşme geri bildirimi sağlama işlemleri gösterilir. Bu geri bildirimi, doğruluğu artırmak için sınıflandırıcılarınızı ayarlamak için kullanabilirsiniz. Ayrıca, Microsoft'un sağladığı sınıflandırıcıların doğruluğunu artırmaya yardımcı olmak istiyorsanız, belgenin ve Eşleştir, Eşleşme değil geri bildiriminin redakte edilmiş sürümlerini Microsoft'a gönderebilirsiniz.
+
+### <a name="data-loss-prevention"></a>Veri kaybı önleme
+
+- [Veri kaybı önleme ilkesi karmaşık kural tasarımı (önizleme) tasarlama](dlp-policy-design.md#complex-rule-design-preview) - DLP kural oluşturucusu boole mantığını (AND, OR, NOT) ve iç içe grupları destekler. Bu yeni işlevsellikte size yol gösteren yeni video ve içerik eklendi.
+ 
+### <a name="trainable-classifiers"></a>Eğitilebilir sınıflandırıcılar
+
+- [Eğitilebilir sınıflandırıcı tanımları](classifier-tc-definitions.md)  - 20'den fazla yeni sınıflandırıcı eklendiğinden, tüm eğitilebilir sınıflandırıcıların tanımları bu yeni makaleye ayrılmıştır.
 
 ## <a name="august-2022"></a>Ağustos 2022
 
@@ -69,7 +85,7 @@ microsoft 365, [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-c
 
 ### <a name="microsoft-priva"></a>Microsoft Priva
 
-- [Microsoft Priva deneme playbook'u](/privacy/priva/priva-trial-playbook) - Son belge güncelleştirmeleriyle uyumlu hale getirmek için yenilenen ve basitleştirilmiş yönergeler
+- [Microsoft Priva deneme kullanım kılavuzu](/privacy/priva/priva-trial-playbook) - son belge güncelleştirmeleriyle uyumlu hale getirmek için yenilenen ve basitleştirilmiş yönergeler
 
 ### <a name="sensitive-information-types"></a>Hassas Bilgi Türleri
 
@@ -89,7 +105,7 @@ microsoft 365, [Microsoft Purview uyumluluk portalı](microsoft-365-compliance-c
 
 ### <a name="sensitivity-labels"></a>Duyarlılık etiketleri
 
-- Genel kullanıma sunuldu (GA) ve artık kabul etmeniz gerekmiyor: Mobil cihazlar (en düşük sürüme sahip iOS ve Android), [duyarlılık etiketleriyle şifrelenmiş dosyalar için birlikte yazmayı](sensitivity-labels-coauthoring.md) destekler.
+- Genel kullanıma sunuldu (GA) ve artık kabul etmeniz gerekmiyor: Mobil cihazlar (iOS ve Android, en düşük sürümlerle), [duyarlılık etiketleriyle şifrelenmiş dosyalar için birlikte yazmayı](sensitivity-labels-coauthoring.md) destekler.
 - Windows'da Word, Excel, PowerPoint için Geçerli Kanal 2208+ ile GA: [PDF desteği](sensitivity-labels-office-apps.md#pdf-support). Gerektiğinde PDF'ye yazdırmayı engellemek için Outlook desteği Beta Kanalı'na dağıtılıyor.
 - Windows için Current Channel 2208+ ve macOS için 16.63+ ile GA'ya dağıtım: Mevcut belgeler için varsayılan etiket.
 - Önizlemede: [Otomatik etiketleme ilkeleri](apply-sensitivity-label-automatically.md) için eğitilebilir sınıflandırıcılar.
@@ -351,7 +367,7 @@ Günümüzün merkezi olmayan, veri açısından zengin çalışma alanının zo
 
 - [Yammer için bekletme ilkeleri](create-retention-policies.md#retention-policy-for-yammer-locations) genel kullanıma sunuldu (GA).
 - Şu anda önizleme aşamasında olan paylaşılan kanallar için destek. Teams kanalı ileti konumu için bir bekletme ilkesi yapılandırdığınızda, paylaşılan kanallar bekletme ayarlarını üst ekiplerinden devralır.
-- [İçerik eğilimi için kiracı başına sınırlar](retention-limits.md#maximum-number-of-items-for-disposition).
+- [İçerik eğilimi için kiracı başına sınırlar](retention-limits.md#maximum-numbers-for-disposition).
 
 ### <a name="data-loss-prevention"></a>Veri Kaybı Önleme
 
@@ -360,11 +376,11 @@ Günümüzün merkezi olmayan, veri açısından zengin çalışma alanının zo
 - Sınırlı uygulama gruplarının genel önizlemesi için yeni [olan uç nokta veri kaybı önleme ayarlarını yapılandırın](dlp-configure-endpoint-settings.md).
 - [Veri kaybı önleme ilkesi başvurusu](dlp-policy-reference.md) - kısıtlı uygulama gruplarının genel önizlemesi için güncelleştirildi.
 - [Genel önizlemeye yönelik yeni Power BI için veri kaybı önlemeye başlayın](dlp-powerbi-get-started.md) .
-- 
+
 ### <a name="information-protection"></a>Bilgi koruması
 
 - [Çift bayt karakter kümesi sürüm notları desteği](mip-dbcs-relnotes.md) - macOS için rehberlik eklendi.
-- 
+
 ### <a name="insider-risk-management"></a>İçeriden risk yönetimi
 
 - [Insider risk yönetimini kullanmaya başlama](insider-risk-management-configure.md) - Önerilen eylemler kılavuzu için yeni görevler eklendi.

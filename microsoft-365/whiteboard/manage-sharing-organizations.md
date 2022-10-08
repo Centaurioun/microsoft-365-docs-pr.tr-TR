@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard için paylaşımı yönetmeyi öğrenin.
-ms.openlocfilehash: 2aba307ceae06639e67c8af35e2452edd648f451
-ms.sourcegitcommit: 173f696dc8f81259d852775572a6938ec39f6115
+ms.openlocfilehash: aeb6da3d6bd66c02468ff19efa072af4d7084389
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67644279"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492518"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Microsoft Whiteboard için paylaşımı yönetme
 
@@ -31,9 +31,7 @@ Teams toplantısı sırasında dış ve paylaşılan cihaz hesapları tarafında
 
 Bu durumda Whiteboard, yalnızca Teams toplantısı sırasında beyaz tahta üzerinde geçici görüntüleme ve işbirliği sağlar. Paylaşım bağlantısı oluşturulmaz ve Beyaz Tahta dosyaya erişim izni vermez.
 
-OneDrive İş için dış paylaşımı etkinleştirdiyseniz başka işlem yapmanız gerekmez.
-
-OneDrive İş için dış paylaşımı kısıtlarsanız, bu paylaşımı kısıtlayabilir ve yalnızca dış ve paylaşılan cihaz hesaplarının çalışması için yeni bir ayarı etkinleştirebilirsiniz. Bunu yapmak için şu adımları uygulayın:
+Bu davranışı etkinleştirmek için şu adımları izleyin:
 
 1. Whiteboard'un kuruluşunuz için etkinleştirildiğinden emin olun. Daha fazla bilgi için bkz. [Whiteboard erişimini yönetme](manage-whiteboard-access-organizations.md).
 
@@ -65,9 +63,7 @@ Bu değişikliklerin kiracınız genelinde uygulanması yaklaşık 60 dakika sü
 |Beyaz tahtayı Surface Hub'dan veya Microsoft Teams Odaları başlatma|Depolama: Azure (Whiteboard dosyaları gelecekte OneDrive İş taşınacaktır)<br><br>Sahip: Toplantı katılımcısı|Geçerli değil|Kiracı içi kullanıcılar: Başlatabilir, görüntüleyebilir ve işbirliği yapabilir<br><br>Dış kullanıcılar: Yalnızca toplantı sırasında görüntüleyebilir ve işbirliği yapabilir<br><br> Paylaşılan cihaz hesapları: Yalnızca toplantı sırasında görüntüleyebilir ve işbirliği yapabilir|
 
 > [!NOTE]
->Beyaz Tahta OneDrive'da depolanıyorsa ve zaten bir toplantıya bağlıysa, Surface Hub'da veya Microsoft Teams Odaları cihazda başlatılamaz. Başka bir cihazdaki kimliği doğrulanmış bir kullanıcının bunu yapması gerekir. Bu işlevi gelecek bir sürümde etkinleştirmeyi planlıyoruz.
-
-
+> Beyaz Tahta OneDrive'da depolanıyorsa ve zaten bir toplantıya bağlıysa, Surface Hub'da veya Microsoft Teams Odaları cihazda başlatılamaz. Başka bir cihazdaki kimliği doğrulanmış bir kullanıcının bunu yapması gerekir. Bu işlevi gelecek bir sürümde etkinleştirmeyi planlıyoruz.
 
 ## <a name="add-as-a-tab-in-teams-channels-and-chats"></a>Teams kanallarında ve sohbetlerinde sekme olarak ekleme
 
@@ -95,5 +91,7 @@ Beyaz tahtaları web, masaüstü veya mobil istemcilerden paylaştığınızda b
 [Whiteboard'a erişimi yönetme](manage-whiteboard-access-organizations.md)
 
 [Whiteboard için verileri yönetme](manage-data-organizations.md)
+
+[Cloud Apps Microsoft Defender için ağ gereksinimleri](/defender-cloud-apps/network-requirements)
 
 [Windows'da Whiteboard'ı dağıtma](deploy-on-windows-organizations.md)

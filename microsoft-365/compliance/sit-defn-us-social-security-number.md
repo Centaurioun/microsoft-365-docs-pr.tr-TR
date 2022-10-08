@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: ABD sosyal güvenlik numarası (SSN) hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 2644ff5be51d8316007d20ec3c8918ce0e2003c1
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 4efa2b71c062f03a93c568641e894281666d078c
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989357"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472244"
 ---
 # <a name="us-social-security-number-ssn"></a>ABD sosyal güvenlik numarası (SSN)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -44,26 +47,26 @@ dört işlev, SSN'leri dört farklı desende arar:
 - `Func_randomized_formatted_ssn` tire veya boşluklarla biçimlendirilmiş 2011 sonrası SSN'leri bulur (ddd-dd-dddd VEYA ddd dd dd)
 - `Func_randomized_unformatted_ssn` ardışık dokuz basamak (ddddd) olarak biçimlendirilmemiş 2011 sonrası SSN'leri bulur
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_ssn` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_ssn` bir anahtar sözcük bulunur.
+- İşlev `Func_ssn`, desenle eşleşen içeriği bulur.
+- `Keyword_ssn` içinden bir anahtar sözcük bulundu.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_unformatted_ssn` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_ssn` bir anahtar sözcük bulunur.
+- İşlev `Func_unformatted_ssn`, desenle eşleşen içeriği bulur.
+- `Keyword_ssn` içinden bir anahtar sözcük bulundu.
 
 DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının güvenilirliği düşüktür:
 
 - İşlev `Func_randomized_formatted_ssn` veya `Func_randomized_unformatted_ssn` desenle eşleşen içeriği bulur.
-- 'den `Keyword_ssn` bir anahtar sözcük bulunur.
+- `Keyword_ssn` içinden bir anahtar sözcük bulundu.
 
 ```xml
 <!-- U.S. Social Security Number (SSN) -->
@@ -101,5 +104,5 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 - SSN
 - SSN'ler
 - SSN #
-- SS #
+- Ss #
 - SSID

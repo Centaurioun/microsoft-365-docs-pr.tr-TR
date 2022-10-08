@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: İhtiyacınız olanı korumak ve istemediğinizleri silmek için etiketleri otomatik olarak uygulayabilmeniz için otomatik etiketleme bekletme ilkeleri oluşturun
-ms.openlocfilehash: 8653d60faaa2ae58088c8216b1286f7ff6a0a197
-ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.openlocfilehash: 441755ac0154e4c63225a66b38ca4fa4e13bb70b
+ms.sourcegitcommit: 7828a1e78c3e6bd8d10289f1ad6c8b6769da0966
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67434492"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68495241"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>İçeriği korumak veya silmek için otomatik olarak bekletme etiketi uygulama
 
@@ -59,6 +60,8 @@ Bu koşullara göre otomatik olarak bir bekletme etiketi uygulama işlemleri:
 >
 > Bu senaryolar için bkz. [Bekletme etiketlerini yayımlama ve uygulamalarda uygulama](create-apply-retention-labels.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## <a name="before-you-begin"></a>Başlamadan önce
 
 Kuruluşunuzun genel yöneticisi, bekletme etiketleri ve ilkelerini oluşturmak ve düzenlemek için tam izinlere sahiptir. Genel yönetici olarak oturum açmadıysanız, kullandığınız çözüme bağlı olarak [kayıt yönetimi](get-started-with-records-management.md#permissions) veya [veri yaşam döngüsü yönetimi](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels) için izin bilgilerine bakın.
@@ -90,7 +93,7 @@ Otomatik uygulama ilkesi oluşturduğunuzda, belirttiğiniz koşullara göre iç
 5. Seçtiğiniz kapsama bağlı olarak:
 
     - **Uyarlamalı**: **Uyarlamalı ilke kapsamlarını ve konumlarını seçin** sayfasında **Kapsam ekle'yi** seçin ve oluşturulmuş bir veya daha fazla uyarlamalı kapsam seçin. Ardından bir veya daha fazla konum seçin. Seçebileceğiniz konumlar eklenen [kapsam türlerine](retention-settings.md#configuration-information-for-adaptive-scopes) bağlıdır. Örneğin, yalnızca bir **Kullanıcı** kapsam türü eklediyseniz **, Exchange e-postasını** seçebilirsiniz ancak **SharePoint sitelerini** seçemezsiniz.
-
+    
     - **Statik**' i seçtiyseniz: **Konumları seçin** sayfasında konumlardan herhangi birini açın veya kapatın. Her konum için, [ilkeyi konumun tamamına uygulamak için](retention-settings.md#a-policy-that-applies-to-entire-locations) varsayılan olarak bırakabilir veya [ekleme ve dışlamaları belirtebilirsiniz](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
 
     Konum seçenekleri hakkında bilgi için bkz [. Konumlar](retention-settings.md#locations).
@@ -141,7 +144,7 @@ Ayrıca, taslakta yer alan veya hiç yayımlanmamış SharePoint öğeleri bu se
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Belirli türde hassas bilgilere sahip içeriğe etiketleri otomatik uygulama
 
 > [!IMPORTANT]
-> Hassas bilgileri tanımlayarak otomatik olarak uyguladığınız e-postalar için, microsoft 365 gruplarından gelen posta kutularını içeren tüm posta kutuları otomatik olarak eklenir.
+> Hassas bilgileri tanımlayarak otomatik olarak uyguladığınız e-postalar için, microsoft 365 gruplarından gelen posta kutularını içeren tüm posta kutuları otomatik olarak eklenir. Varsayılan olarak, bu yapılandırmaya sahip olduğunuzda uyarlamalı kapsamlar için **Exchange e-posta** konumu seçilmez. Konumu seçebiliyor olsanız bile, bekletme etiketleri Exchange öğelerine uygulanmaz.
 >
 > Grup posta kutuları genellikle **Microsoft 365 Grupları** konumu seçilerek dahil edilecek olsa da, bu ilke yapılandırması için grupların konumu yalnızca Bir Microsoft 365 grubuna bağlı SharePoint sitelerini içerir.
 
@@ -269,6 +272,9 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Eğitilebilir sınıflandırıcıları kullanarak içeriğe etiketleri otomatik uygulama
 
+> [!IMPORTANT]
+> Şu anda otomatik etiketleme için eğitilebilir sınıflandırıcılar [uyarlamalı kapsamlarla](retention.md#adaptive-or-static-policy-scopes-for-retention) kullanılamaz. Bunun yerine statik kapsam kullanın.
+
 Eğitilebilir sınıflandırıcı seçeneğini belirlediğinizde, önceden eğitilmiş veya özel eğitilebilir sınıflandırıcılardan birini veya daha fazlasını seçebilirsiniz:
 
 ![Eğitilebilir sınıflandırıcıyı seçin.](../media/retention-label-classifers.png)
@@ -289,7 +295,7 @@ Bekletme etiketlerini otomatik olarak uygulamak için eğitilebilir sınıfland�
 #### <a name="auto-apply-labels-to-cloud-attachments"></a>Bulut eklerine etiketleri otomatik uygulama
 
 > [!NOTE]
-> Bu seçenek önizleme aşamasında aşamalı olarak kullanıma sunulmuştur ve değiştirilebilir.
+> Bu seçenek önizleme aşamasındadır ve değiştirilebilir.
 
 Kiracınızda kullanıcıların iletişimleri üzerinden gönderilen tüm dosya kopyalarını yakalamanız ve saklamanız gerekiyorsa bu seçeneği kullanmanız gerekebilir. İletişim hizmetlerinin kendileri, Exchange ve Teams için bekletme ilkeleriyle birlikte bu seçeneği kullanırsınız.
 

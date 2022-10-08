@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 İş Ekstra deneme akış planı
+title: 'Deneme kullanım kılavuzu: Microsoft 365 İş Ekstra'
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -7,32 +7,34 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier1
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/03/2022
 ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 İş Ekstra denemenizden en iyi şekilde geçin. Temel üretkenlik ve güvenlik özelliklerinden bazılarını deneyin.
-ms.openlocfilehash: 183787716026a08fa725b8cea2d91398be50b3a5
-ms.sourcegitcommit: c29af68260ba8676083674b3c70209bff2c2e362
+ms.openlocfilehash: 9937fc7e841a823fd8ab6334dd434f5508564ab7
+ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67743208"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68501261"
 ---
-# <a name="trial-playbook-microsoft-365-business-premium"></a>Deneme playbook'u: Microsoft 365 İş Ekstra
+# <a name="trial-user-guide-microsoft-365-business-premium"></a>Deneme kullanım kılavuzu: Microsoft 365 İş Ekstra
 
-Microsoft Business Premium deneme playbook'una hoş geldiniz! Bu playbook, 30 günlük ücretsiz denemenizden en iyi şekilde yararlanabilirsiniz. Microsoft 365 İş Ekstra üretkenliği nasıl artırdığını ve gelişmiş güvenlik özellikleriyle kuruluşunuzun korunmasına nasıl yardımcı olduğunu ilk elden görebilirsiniz. Tehdit koruması özelliklerinizi ayarlamak, algılanan tehditleri analiz etmek ve siber saldırılara yanıt vermek için bu playbook'u kullanın.
+Microsoft Business Premium deneme kullanım kılavuzuna hoş geldiniz! Bu kılavuz, ücretsiz denemenizden en iyi şekilde yararlanabilirsiniz. Microsoft 365 İş Ekstra üretkenliği nasıl artırdığını ve gelişmiş güvenlik özellikleriyle kuruluşunuzun korunmasına nasıl yardımcı olduğunu ilk elden görebilirsiniz. Tehdit koruma özelliklerinizi ayarlamak, algılanan tehditleri analiz etmek ve siber saldırılara yanıt vermek için bu kılavuzu kullanın.
 
 ## <a name="set-up-the-microsoft-365-business-premium-trial"></a>Microsoft 365 İş Ekstra deneme sürümünü ayarlama
 
 [Deneme sürümü başlattığınızda veya Microsoft 365 İş Ekstra satın](get-microsoft-365-business-premium.md) aldığınızda, ilk adımınız her şeyi ayarlamaktır.
 
 > [!TIP]
-> Bu playbook'u tarayıcı sık kullanılanlarınıza kaydedin. Playbook'taki bağlantılar sizi bu konumdan uzaklaştırdığında, devam etmek için bu playbook'a dönmek daha kolay olacaktır.
+> Bu deneme kullanıcı kılavuzunu tarayıcı sık kullanılanlarınıza kaydedin. Deneme kullanım kılavuzundaki bağlantılar sizi bu konumdan uzaklaştırdığında, devam etmek için bu kılavuza dönmek daha kolay olacaktır.
 
 1. [Denemenizi ayarlayın](../business-premium/m365bp-setup.md)!
 

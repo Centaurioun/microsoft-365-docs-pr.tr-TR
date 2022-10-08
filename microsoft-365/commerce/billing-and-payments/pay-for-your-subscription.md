@@ -8,14 +8,16 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- ContentEngagementFY23
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: İş için Microsoft 365 aboneliğinizin ödemesini yapmak için kredi kartı, ATM kartı veya banka hesabı kullanın. Bazı durumlarda faturayla da ödeme yapabilirsiniz.
+description: İş için Microsoft 365 aboneliğinizin ödemesini yapmak için kredi kartı veya banka kartı veya banka hesabı kullanın.
 ms.custom:
 - commerce_billing
 - VSBFY23
@@ -24,13 +26,13 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 08/04/2022
-ms.openlocfilehash: 6e56a5386cbc78b1fbe241c2afef0fdb1f7d2847
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.date: 09/28/2022
+ms.openlocfilehash: 76223238cda024c5748e9228dd4940778f1d69aa
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660233"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492604"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Aboneliğiniz için ödeme yapma
 
@@ -46,18 +48,45 @@ Aboneliğinizi ödemek için kredi kartı, ATM kartı veya banka hesabı kullana
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-- Bu makalede açıklanan adımları gerçekleştirmek için Genel yönetici veya Faturalandırma yöneticisi olmanız gerekir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../../admin/add-users/about-admin-roles.md).
-- Ödeme sırasında seçtiğiniz ödeme yöntemi, gelecekteki tüm faturalama dönemleri için kullanacağımız ödeme yöntemidir. İstediğiniz zaman değiştirebilirsiniz.
+- You must be a Global or Billing admin to do the steps described in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- The payment method that you choose during checkout is the payment method that we use for all future billing periods. You can change it at any time.
 
 ## <a name="directives-from-the-reserve-bank-of-india"></a>Hindistan Merkez Bankası yönergeleri
 
-Şu anda, özellikle 5.000 INR'yi aşan bazı kredi kartı işlemleri, bir Hindistan Merkez Bankası yönergesi nedeniyle engellendi. Bu durum otomatik ödemeleri etkileyebilir, bu nedenle ödemelerinizi Microsoft 365 yönetim merkezinde el ile yapmanız gerekebilir. Bu yönerge kullanım ücretlerini etkilemez. 
+Şu anda, özellikle 5.000 INR'yi aşan bazı kredi kartı işlemleri, bir Hindistan Merkez Bankası yönergesi nedeniyle engellendi. Bu durum otomatik ödemeleri etkileyebilir, bu nedenle ödemelerinizi Microsoft 365 yönetim merkezinde el ile yapmanız gerekebilir. Bu yönerge kullanım ücretlerini etkilemez.
 
 [Yinelenen ödemeler için Hindistan Merkez Bankası yönergesi hakkında daha fazla bilgi edinin](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
 30 Eylül 2022 itibariyle Microsoft ve diğer çevrimiçi satıcılar artık kredi kartı bilgilerini depolamayacak. Microsoft, bu düzenlemeye uymak amacıyla tüm depolanan kart bilgilerini Microsoft 365 yönetim merkezinden kaldıracak. Hizmet kesintisini önlemek amacıyla tüm abonelikler ve faturalama profilleri için bir ödeme yöntemi eklemeniz ve doğrulamanız gerekir.
 
 [Kart depolama için Hindistan Merkez Bankası yönergesi hakkında bilgi edinin](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
+
+> [!IMPORTANT]
+> Kredi kartı bilgilerinin kaldırılması nedeniyle, ödeme yöntemleri listenizi görüntülediğinizde **Sona Erme Tarihi** ve **Durum** sütunları yalnızca "Bilinmiyor" ifadesini söyler.
+
+### <a name="upi-and-netbanking-payment-options"></a>UPI ve NetBanking ödeme seçenekleri
+
+Microsoft 365 yönetim merkezi, Hindistan'daki müşteriler için iki alternatif ödeme seçeneğini destekler:
+
+- UPI (Birleşik Ödemeler Arabirimi) ödemesi gerçek zamanlı bir ödeme yöntemidir.
+- NetBanking (İnternet Bankacılığı), müşterilere çevrimiçi bir platformda bankacılık hizmetlerine erişim sağlar.
+
+> [!IMPORTANT]
+> UPI ve NetBanking yalnızca bir kerelik işlemler için desteklenir.
+
+#### <a name="how-do-i-make-a-payment-with-upi-or-netbanking"></a>UPI veya NetBanking ile ödeme yapmak Nasıl yaparım??
+
+1. Geri dönen bir müşteriyseniz, ödeme yaparken **Ödeme yöntemi** açılan **listesinden UPI / NetBanking'i** ve ardından M **ake ödeme'yi** seçin. 4. adıma geçin.
+2. Yeni müşteriler için, ilk ödemenizi yaptığınızda **Ödeme yöntemi ekle'yi** seçin.
+3. **UPI / NetBanking'i** ve ardından **Ödeme yap'ı** seçin.
+4. Ödeme yönteminiz için UPI veya NetBanking'i seçtiğiniz ödeme ortağı BillDesk'e yönlendirilirsiniz.
+5. İşlemi tamamlamak için BillDesk'teki yönergeleri izleyin.
+
+Ödemeyi gönderdikten sonra, ödemenin yönetim merkezinde görünmesi için zaman tanıyın.
+
+#### <a name="how-am-i-refunded-if-i-made-a-payment-with-upi-or-netbanking"></a>UPI veya NetBanking ile ödeme yaptıysam nasıl iade edilirim?
+
+Para iadeleri normal bir ücret olarak kabul edilir ve banka hesabınıza iade edilir.
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Kredi kartı, ATM kartı veya banka hesabıyla ödeme
 
@@ -95,15 +124,15 @@ Aboneliğinizi faturayla ödüyorsanız, fatura ekstreniz görüntülenmeye haz�
 Gecikmiş bakiyesi olan ödeme yöntemini kendiniz eklediyseniz, ödeme yapmak için **Bakiyeyi ödeyin** seçeneğini kullanabilirsiniz. Gecikmiş bakiyeyi öderken kullandığınız ödeme yöntemi, reddedilen ödeme yönteminin kullanıldığı tüm abonelikler için yeni ödeme yöntemi olur.
 
 1. Yönetim merkezinde **Faturalama** > **Faturalar ve ödemeler** web sayfasına gidin ve <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Ödeme yöntemleri</a> sekmesini seçin.
-1. Hangi ödeme yönteminin reddedildiği bir uyarı iletisiyle gösterilir. **Bakiyeyi ödeyin** öğesini seçin.
-1. Sağ bölmede farklı bir ödeme yöntemi seçin veya **Yeni bir ödeme yöntemi ekle** seçeneğini belirtin.
-1. Ödeme yöntemi bilgilerini güncelleştirdikten sonra **Kaydet**'i seçin.
+2. A warning message says which payment method was declined. Select **Settle balance**.
+3. Sağ bölmede farklı bir ödeme yöntemi seçin veya **Yeni bir ödeme yöntemi ekle** seçeneğini belirtin.
+4. Ödeme yöntemi bilgilerini güncelleştirdikten sonra **Kaydet**'i seçin.
 
 Abonelik ödemesini yapmak için kullanılacak ödeme yöntemini eklemediğiniz durumlarda, ödeme yöntemini daha önce eklediğiniz yöntemle veya yeni bir yöntemle değiştirmeniz gerekir.
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>Çek veya EFT ile ödememi nereye göndermem gerekir?
 
-Ülkeniz veya bölgeniz için ödeme yönergeleri için [faturanızı kontrol edin](view-your-bill-or-invoice.md). Ne kadar borcunuz olduğundan emin değilseniz, <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Faturalar ve ödemeler</a> sayfasının **Faturalar** sekmesinde faturanızı ve fatura geçmişinizi çevrimiçi olarak kontrol edebilirsiniz.
+[Check your invoice](view-your-bill-or-invoice.md) for payment instructions for your country or region. If you're not sure how much you owe, you can check your bill and billing history online on the **Invoices** tab of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
 > [!NOTE]
 > - Çekle ödeme yöntemi yalnızca birkaç ülkede kullanılabilir.

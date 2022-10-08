@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purview Uyumluluk Yöneticisi premium değerlendirmeleri deneme playbook'u
+title: Microsoft Purview Uyumluluk Yöneticisi premium değerlendirmeleri deneme kullanım kılavuzu
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -8,28 +8,32 @@ manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection:
+- purview-compliance
+- tier3
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Purview Compliance Manager premium değerlendirmeleri deneme playbook'u.
+description: Microsoft Purview Uyumluluk Yöneticisi premium değerlendirme deneme kullanım kılavuzu.
 ms.custom: trial-playbook
-ms.openlocfilehash: 6f788bf3e69aa088e87b0d1e6dfc3e0356b7984e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1ac89c8a139c0decde42aa2a87733e02f9def957
+ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626391"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68500042"
 ---
-# <a name="trial-playbook-microsoft-purview-compliance-manager-premium-assessments"></a>Deneme playbook'u: Microsoft Purview Compliance Manager premium değerlendirmeleri
+# <a name="trial-user-guide-microsoft-purview-compliance-manager-premium-assessments"></a>Deneme kullanım kılavuzu: Microsoft Purview Uyumluluk Yöneticisi premium değerlendirmeleri
 
-Microsoft Purview Compliance Manager premium değerlendirme deneme sürümü playbook'una hoş geldiniz.
+Microsoft Purview Uyumluluk Yöneticisi premium değerlendirme denemesi kullanıcı kılavuzuna hoş geldiniz.
 
 Bu playbook, kapsamlı premium değerlendirme şablonlarının (eklenti) nasıl kullanılacağını öğreterek 90 günlük ücretsiz denemenizden en iyi şekilde yararlanmanıza yardımcı olur.
 
 Microsoft önerilerini kullanarak premium değerlendirme şablonlarının kuruluşunuzun riskleri değerlendirmesine ve küresel, bölgesel ve endüstriyel mevzuat gereksinimlerine verimli bir şekilde yanıt vermesine nasıl yardımcı olabileceğini hızlı bir şekilde göreceksiniz.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="step-1-get-to-know-compliance-manager"></a>1. Adım: Uyumluluk Yöneticisi'ne alışma
 
@@ -88,7 +92,7 @@ Premium değerlendirme denemesine başladıktan sonra panoda sizi güncelleştir
 
 ## <a name="additional-resources"></a>Ek kaynaklar
 
-**Microsoft Docs**: Uyumluluk Yöneticisi premium değerlendirmelerinin nasıl çalıştığı ve bunları kuruluşunuz için en iyi şekilde nasıl uygulayacakları hakkında ayrıntılı bilgi edinin. [Docs'u](compliance-manager-templates.md) ziyaret edin.
+**Microsoft Learn**: Uyumluluk Yöneticisi premium değerlendirmelerinin nasıl çalıştığı ve bunları kuruluşunuz için en iyi şekilde nasıl uygulayacağınızı öğrenmek için ayrıntılı bilgi edinin. [Docs'u](compliance-manager-templates.md) ziyaret edin.
 
 **Nasıl yapılır videoları**: Daha fazla bilgi edinmek için aşağıdaki videolara göz atın:
 

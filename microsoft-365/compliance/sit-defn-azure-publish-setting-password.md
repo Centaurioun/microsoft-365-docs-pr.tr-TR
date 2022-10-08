@@ -14,17 +14,18 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Azure yayımlama ayarı parolaya duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: 9cbca08dc1414241f494a415cf3aafea9e505a6e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: bb26108257a1105d5a3ce1a90bf30fc1b39fe252
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948431"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68298704"
 ---
 # <a name="azure-publish-setting-password"></a>Azure yayımlama ayarı parolası
 
@@ -38,13 +39,13 @@ Dize `userpwd=` ve ardından alfasayısal dize.
 - 60 küçük harf veya basamak birleşimi
 - tırnak işareti (")
 
-### <a name="checksum"></a>Sağlama toplamı
+### <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ### <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
 - Normal ifade `CEP_Regex_AzurePublishSettingPasswords` , desenle eşleşen içeriği bulur.
 - Normal ifade `CEP_CommonExampleKeywords` , desenle eşleşen içeriği bulmaz.

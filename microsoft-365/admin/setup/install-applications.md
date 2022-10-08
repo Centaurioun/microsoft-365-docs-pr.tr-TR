@@ -6,10 +6,12 @@ ms.author: efrene
 author: efrene
 manager: scotv
 audience: Admin
-ms.topic: landing-page
-ms.service: o365-administration
+ms.topic: article
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- ContentEngagementFY23
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -26,12 +28,12 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: Microsoft 365'i ayarladığınıza göre, Mac, PC veya mobil cihazlarınıza tek tek Office uygulamalarını yüklemeyi öğrenin.
-ms.openlocfilehash: b7580925962ff0f632c4597becfc33aeb4e94373
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 7b2e6a981ddaa0e2497fb722687d3ad0774c830c
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661113"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492213"
 ---
 # <a name="install-office-applications"></a>Office uygulamalarını yükleme
 

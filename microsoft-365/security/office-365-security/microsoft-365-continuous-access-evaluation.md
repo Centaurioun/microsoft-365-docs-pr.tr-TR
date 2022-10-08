@@ -14,18 +14,18 @@ ms.custom:
 - goldenconfig
 ms.collection:
 - M365-identity-device-management
-- M365-security-compliance
+- m365-security
 - m365solution-identitydevice
 - m365solution-scenario
 - highpri
 ms.subservice: mdo
 search.appverid: met150
-ms.openlocfilehash: 7e47cfc93c3514ed206cd7235dcbb1d31e64b89b
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+ms.openlocfilehash: 3de2fd16014c1347c70ad8500090d85e18a672a6
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67710795"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68297738"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>Microsoft 365 için sürekli erişim değerlendirmesi
 
@@ -82,11 +82,13 @@ Aşağıdaki Microsoft 365 hizmetleri şu anda Azure AD olayları dinleyerek sü
 |---|---|---|---|
 |**Kritik olaylar:**||||
 |Kullanıcı iptali|Destekleniyor|Destekleniyor|Destekleniyor|
-|Kullanıcı riski|Destekleniyor|Desteklenmiyor|Desteklenmiyor|
+|Kullanıcı riski|Destekleniyor|Desteklenmiyor|Destekleniyor|
 |**Koşullu Erişim ilkesi değerlendirmesi:**||||
-|IP adresi konum ilkesi|Destekleniyor|Destekleniyor\*|Destekleniyor|
+|IP adresi konum ilkesi|Destekleniyor|Desteklenen\*|Desteklenen\**|
 
 \* SharePoint Office web tarayıcısı erişimi, katı modu etkinleştirerek anında IP ilkesi zorlamayı destekler. Katı mod olmadan erişim belirteci ömrü bir saattir.
+
+\** Teams'deki aramalar, toplantılar ve sohbetler IP tabanlı Koşullu Erişim ilkelerine uymaz.
 
 Koşullu Erişim ilkesi ayarlama hakkında daha fazla bilgi için [bu makaleye](/azure/active-directory/conditional-access/overview) bakın.
 

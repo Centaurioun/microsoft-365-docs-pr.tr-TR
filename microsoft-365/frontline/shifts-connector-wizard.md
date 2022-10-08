@@ -13,31 +13,26 @@ ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 8c4aa1036af00eaaf7d776c267648141bf4db733
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 6a1062fe9e06e0b73f2c8eebd8f17b87684c0709
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824732"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300456"
 ---
 # <a name="use-the-shifts-connector-wizard-to-connect-shifts-to-blue-yonder-workforce-management"></a>Shifts bağlayıcısı sihirbazını kullanarak Shifts'i Mavi Yonder'a bağlama Workforce Management
 
 ## <a name="overview"></a>Genel bakış
 
-Microsoft 365 yönetim merkezi'deki Vardiyalar bağlayıcısı sihirbazı, Microsoft Teams'deki Vardiyalar uygulamasını iş gücü yönetimi (WFM) sisteminizle tümleştirmenize olanak tanır. Bağlantı kurduktan sonra, ön cephe çalışanlarınız vardiyalar içinden WFM sisteminizde zamanlamalarını sorunsuz bir şekilde görüntüleyebilir ve yönetebilir.
-
-Sihirbaz Shifts bağlayıcısını yapılandırarak WFM sisteminize bir bağlantı oluşturur ve seçtiğiniz eşitleme ayarlarını ve ekip eşlemelerini uygular. Eşitleme ayarları, WFM sisteminizle Vardiyalar arasında eşitlenen zamanlama bilgilerini belirler. Ekip eşlemeleri, Teams'deki WFM örnekleriniz ve ekipleriniz arasındaki eşitleme ilişkisini tanımlar. Mevcut ekiplere ve yeni ekiplere eşleyebilirsiniz.
-
-Her birinde farklı eşitleme ayarları olan birden çok bağlantı ayarlayabilirsiniz. Örneğin, kuruluşunuzun farklı zamanlama gereksinimlerine sahip birden çok konumu varsa, her konum için benzersiz eşitleme ayarlarıyla bir bağlantı oluşturun. WFM örneğin herhangi bir zamanda yalnızca bir ekiple eşlenebileceğini unutmayın. Bir WFM örneği zaten bir takımla eşlenmişse, başka bir ekiple eşlenemez.
-
-kayıt sistemi olarak WFM sisteminiz sayesinde ön cephe çalışanlarınız vardiyaları görebilir ve değiştirebilir, uygunluklarını yönetebilir ve cihazlarında Vardiyalar'da izin isteyebilir. Ön cephe yöneticileri zamanlamaları ayarlamak için WFM sisteminizi kullanmaya devam edebilir.
+[!INCLUDE [shifts-connector-wizard-intro](includes/shifts-connector-wizard-intro.md)]
 
 ## <a name="integrate-shifts-with-blue-yonder-workforce-management"></a>Vardiyaları Blue Yonder Workforce Management ile tümleştirme
 
-Sihirbaz şu anda [Blue Yonder için Microsoft Teams Vardiyaları bağlayıcısını desteklemektedir](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder). Bu bağlayıcı, zamanlamalarınızı yönetmek ve güncel tutmak için Vardiyaları Blue Yonder Workforce Management (Blue Yonder WFM) ile tümleştirmenizi sağlar. Bu makalede, bağlayıcı üzerinden Blue Yonder WFM bağlantısı kurmak için sihirbazı nasıl çalıştırabileceğiniz konusunda size yol gösteririz.
+[Blue Yonder için Microsoft Teams Vardiyaları bağlayıcısı](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder), zamanlamalarınızı yönetmek ve güncel tutmak için Vardiyaları Blue Yonder Workforce Management (Blue Yonder WFM) ile tümleştirmenize olanak tanır. Bu makalede, bağlayıcı üzerinden Blue Yonder WFM bağlantısı kurmak için sihirbazı nasıl çalıştırabileceğiniz konusunda size yol gösteririz.
 
 > [!NOTE]
 > Shift'leri Blue Yonder WFM ile tümleştirmek için PowerShell'i de kullanabilirsiniz. Daha fazla bilgi edinmek için bkz. [PowerShell kullanarak Shifts'i Blue Yonder'a bağlama Workforce Management](shifts-connector-blue-yonder-powershell-setup.md).
@@ -60,7 +55,7 @@ Sihirbazı çalıştırmak için Microsoft 365 genel yöneticisi olmanız gereki
 
 Zamanlamaları ekiplerden kaldırmak için PowerShell'i kullanın.
 
-1. İlk olarak, PowerShell modüllerini yüklemeniz ve ayarlamanız gerekir. [Ortamınızı ayarlamak](shifts-connector-powershell-manage.md#set-up-your-environment) için adımları izleyin.
+1. İlk olarak, PowerShell modüllerini yüklemeniz ve ayarlamanız gerekir. [Ortamınızı ayarlama adımlarını](shifts-connector-powershell-manage.md#set-up-your-environment) izleyin
 1. Aşağıdaki komutu çalıştırın:
 
     ```powershell
@@ -79,7 +74,7 @@ Daha fazla bilgi için bkz [. Remove-CsTeamsShiftsScheduleRecord](/powershell/mo
 1. **İş gücü yönetim sisteminizi bağlayın'ı** seçin. Burada Vardiyalar bağlayıcıları ve Vardiyaları WFM sisteminize bağladığınızda ön cephe çalışanı ve yönetici deneyimi hakkında daha fazla bilgi edinebilirsiniz.
     :::image type="content" source="media/shifts-connector-wizard-get-started.png" alt-text="Microsoft 365 yönetim merkezi Shifts bağlayıcı sihirbazının ayrıntılar sayfasının ekran görüntüsü." lightbox="media/shifts-connector-wizard-get-started.png":::
 1. Hazır olduğunuzda **Başlarken'i** seçin.
-1. Blue Yonder WFM bağlantısı oluşturmak için **İleri'yi** seçin.
+1. Bağlayıcınızı seçin sayfasında **Blue Yonder Workforce Management'ı** seçin ve ardından **İleri'yi** seçerek Mavi Yonder WFM bağlantısı oluşturun.
 
 ### <a name="enter-connection-details"></a>Bağlantı ayrıntılarını girin
 <a name="connection_details"> </a>
@@ -100,7 +95,8 @@ Eşitleme ayarları sayfasında, Blue Yonder WFM'dan Vardiyalar'a eşitlenecek b
 1. **Email bildirim alıcıları'nın** altında, bu bağlantı hakkında e-posta bildirimlerini kimlerin alacağını seçin. Tek tek kullanıcılar ve gruplar ekleyebilirsiniz. E-posta bildirimleri, bağlantı kurulum durumu ve bağlantı kurulduktan sonra oluşabilecek sorunlar veya hatalar hakkında bilgi içerir.
 1. Eşitleme ayarlarınızı seçin:
     1. **Zamanlama ve vardiyalar'ın** altında, Shifts kullanıcılarının görebileceği veya değiştirebileceği Mavi Yonder WFM verilerini seçin ve ardından eşitleme sıklığını ayarlayın.
-    2. **İstekler'in** altında, Shifts kullanıcılarının görebileceği ve oluşturabileceği istek türlerini seçin.
+    1. **Zaman kartı'nın** altında Shifts kullanıcılarının zaman girdileriyle yapabilecekleri eylemi seçin.
+    1. **İstekler'in** altında, Shifts kullanıcılarının görebileceği ve oluşturabileceği istek türlerini seçin.
 
     > [!IMPORTANT]
     > Açık vardiyaları, açık vardiya isteklerini, değiştirme isteklerini veya izin isteklerini devre dışı bırakmak için aşağıdaki seçeneklerden birini seçtiyseniz, Vardiyalar'da özelliği gizlemek için yapmanız gereken başka bir adım vardır.
@@ -130,25 +126,7 @@ Eşlemek istediğiniz örnekleri seçin.
 <a name="search_teams"> </a> Ardından her örneği Teams'deki bir ekiple eşleyin. Bir örneği mevcut bir ekiple eşleyebilir veya yeni bir ekip oluşturabilirsiniz.
 :::image type="content" source="media/shifts-connector-wizard-search-team.png" alt-text="Arama ekibi seçeneğini ve yeni bir ekip oluşturma seçeneğini gösteren bölmenin ekran görüntüsü." lightbox="media/shifts-connector-wizard-search-team.png":::
 
-##### <a name="to-map-an-instance-to-an-existing-team"></a>Bir örneği mevcut bir ekiple eşlemek için
-
-1. Örnek adını seçin.
-2. Bölmede ekibi arayın ve seçin. Bu bağlantıdaki bir örneğe zaten eşlenmiş olan ekiplerin aramada görünmediğini unutmayın.
-3. Saat dilimini ve en yakın şehri seçin.
-4. **Kaydet'i** ve ardından **İleri'yi** seçin.
-
-##### <a name="to-map-an-instance-to-a-new-team"></a>Örneği yeni bir ekiple eşlemek için
-
-1. Örnek adını seçin.
-2. Bölmede **Yeni ekip oluştur'u** seçin. Tarayıcınızda, Microsoft 365 yönetim merkezi yeni bir ekip oluşturabileceğiniz yeni bir sekmeye yönlendirilirsiniz.
-    1. Ekip için bir ad ve isteğe bağlı bir açıklama girin.
-    1. Bir veya daha fazla ekip sahibi ekleyin. Microsoft 365 sistem hesabını sahip olarak eklediğinizden emin olun.
-    1. Ekip üyeleri ekleyin.
-    1. Ekip e-posta adresi ekleyin ve bir gizlilik ayarı seçin.
-    1. Ayarlarınızı gözden geçirin ve ekip **ekle'yi** seçin. Ekibiniz oluşturulduğunda **Kapat'ı** seçin.
-3. Sihirbaza Geri dön, oluşturduğunuz yeni ekibi arayın ve seçin.
-4. Saat dilimini ve en yakın şehri seçin.
-5. **Kaydet'i** ve ardından **İleri'yi** seçin.
+[!INCLUDE [shifts-connector-manually-map-instances](includes/shifts-connector-manually-map-instances.md)]
 
 #### <a name="use-a-csv-file-to-map-instances-to-teams"></a>Örnekleri ekiplere eşlemek için CSV dosyası kullanma
 
@@ -219,13 +197,22 @@ Vardiyalarda açık vardiyaları, değiştirme isteklerini ve izin isteklerini g
 
 Vardiyalar'da açık vardiya isteklerini gizlemek için Vardiyalar'daki **Ayarlar'a** gidin ve **Vardiyaları aç** ayarını kapatın.
 
-## <a name="if-you-need-to-make-changes-to-a-connection"></a>Bir bağlantıda değişiklik yapmanız gerekiyorsa
+## <a name="manage-your-connection"></a>Bağlantınızı yönetme
 <a name="update_connection"> </a>
 
-Bağlantı kurulduktan sonra PowerShell'i kullanarak bu bağlantıda değişiklik yaparsınız. Örneğin, eşitleme ayarlarını, ekip eşlemelerini güncelleştirebilir ve bir bağlantı için eşitlemeyi devre dışı bırakabilirsiniz. Adım adım yönergeler için bkz. [PowerShell kullanarak Blue Yonder Workforce Management Vardiyalar bağlantınızı yönetme](shifts-connector-powershell-manage.md).
+Bağlantı kurulduktan sonra, Microsoft 365 yönetim merkezi veya PowerShell kullanarak bu bağlantıyı yönetebilir ve bu bağlantıda değişiklik yapabilirsiniz.
+
+### <a name="use-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi kullanma
+
+Bağlayıcı Yönetimi sayfasında, ayarladığınız her bağlantının yanı sıra sistem durumu ve eşitleme aralığı ayrıntıları gibi bilgiler listelenir. Bağlantılarınızdan herhangi birinde değişiklik yapmak için sihirbaza da erişebilirsiniz. Örneğin, eşitleme ayarlarını ve ekip eşlemelerini güncelleştirebilirsiniz.
+
+Daha fazla bilgi edinmek için bkz. [Microsoft 365 yönetim merkezi kullanarak Blue Yonder Workforce Management Vardiyalar bağlantınızı yönetme](shifts-connector-blue-yonder-admin-center-manage.md).
+
+### <a name="use-powershell"></a>PowerShell kullanma
+
+PowerShell'i kullanarak hata raporunu görüntüleyebilir, bağlantı ayarlarını değiştirebilir, eşitlemeyi devre dışı bırakabilir ve daha fazlasını yapabilirsiniz. Adım adım yönergeler için bkz. [PowerShell kullanarak Blue Yonder Workforce Management Vardiyalar bağlantınızı yönetme](shifts-connector-powershell-manage.md).
 
 ## <a name="related-articles"></a>İlgili makaleler
 
-- [Bağlayıcıları kaydırıyor](shifts-connectors.md)
-- [PowerShell kullanarak Blue Yonder ile Vardiyalar bağlantınızı yönetme Workforce Management](shifts-connector-powershell-manage.md)
+- [Vardiya bağlayıcıları](shifts-connectors.md)
 - [Teams'de Vardiyalar uygulamasını yönetme](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)

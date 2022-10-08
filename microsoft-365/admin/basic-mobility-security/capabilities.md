@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -19,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Temel Mobilite ve Güvenlik, microsoft 365 e-posta ve belgelerine erişimi denetleen ilkelerle mobil cihazların güvenliğini sağlamanıza ve yönetmenize yardımcı olur.
-ms.openlocfilehash: 540d4de54deff7236313fca3471e836c293a9665
-ms.sourcegitcommit: 2dedd0f594b817779e034afa6c4418def2382a22
+ms.openlocfilehash: e0a59651974c22428738e38ed42ece0beda2936f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2022
-ms.locfileid: "67796818"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166911"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Temel Hareketlilik ve Güvenlik Özellikleri
 

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Katar kimlik kartı numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 93b90aab72d5fd46039ad2d12a154072fba982af
-ms.sourcegitcommit: cd044e28516c5e024700f89fb15b92c1ea5269b0
+ms.openlocfilehash: 35b609753afd7f63674ef8b50f42257c78409e16
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67361543"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472815"
 ---
 # <a name="qatari-id-card-number"></a>Katar kimlik kartı numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 

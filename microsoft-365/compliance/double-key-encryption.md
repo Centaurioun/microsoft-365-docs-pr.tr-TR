@@ -11,14 +11,14 @@ audience: Admin
 ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 631df77a6f10c15dafcb78e58a715a029d32bb73
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 60769757cbfc4c6f31131fde070a393201bc6031
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627557"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472203"
 ---
 # <a name="double-key-encryption"></a>Çift Anahtarlı Şifreleme
 
@@ -33,6 +33,8 @@ ms.locfileid: "66627557"
 Çift Anahtarlı Şifreleme hem bulut hem de şirket içi dağıtımları destekler. Bu dağıtımlar, korumalı verileri depoladığınız her yerde şifrelenmiş verilerin donuk kalmasını sağlamaya yardımcı olur.
 
 Varsayılan, bulut tabanlı kiracı kök anahtarları hakkında daha fazla bilgi için bkz. [Azure Information Protection kiracı anahtarınızı planlama ve uygulama](/azure/information-protection/plan-implement-tenant-key).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="when-your-organization-should-adopt-dke"></a>Kuruluşunuzun DKE'ye ne zaman sahip olması gerekir?
 
@@ -64,15 +66,17 @@ Kuruluşunuz aşağıdaki gereksinimlerden herhangi birine sahipse, içeriğiniz
 
 DKE duyarlılık etiketleri, Office Masaüstü Uygulamaları'ndaki AIP Birleşik Etiketleme istemcisindeki duyarlılık düğmesi aracılığıyla son kullanıcıların kullanımına sunulur. Korumalı belgeleri korumak ve kullanmak istediğiniz her istemci bilgisayara bu önkoşulları yükleyin.
 
-Windows'da kurumsal sürüm 2009 veya üzeri (Word, PowerPoint ve Excel'in masaüstü sürümleri) **için Microsoft Office Apps**.
+Windows'da kurumsal sürüm 2009 veya üzeri (Word, Excel, PowerPoint ve Outlook'un masaüstü sürümleri) **için Microsoft Office Apps**.
 
-**Azure Information Protection Birleşik Etiketleme İstemcisi** sürüm 2.7.93.0 veya üzeri. Birleşik Etiketleme istemcisini [Microsoft indirme merkezinden](https://www.microsoft.com/download/details.aspx?id=53018) indirin ve yükleyin.
+**Azure Information Protection Birleşik Etiketleme İstemcisi** sürüm 2.14.93.0 veya üzeri. Birleşik Etiketleme istemcisini [Microsoft indirme merkezinden](https://www.microsoft.com/download/details.aspx?id=53018) indirin ve yükleyin.
 
 ## <a name="supported-environments-for-storing-and-viewing-dke-protected-content"></a>DKE korumalı içeriği depolamak ve görüntülemek için desteklenen ortamlar
 
-**Desteklenen uygulamalar**. Windows'da Word, Excel ve PowerPoint gibi istemcileri [Kurumlar için Microsoft 365 Uygulamaları](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product).
+**Desteklenen uygulamalar**. Windows'da Word, Excel, PowerPoint ve Outlook gibi istemcileri [Kurumlar için Microsoft 365 Uygulamaları](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product).
 
 **Çevrimiçi içerik desteği**. Çift Anahtar Şifrelemesi ile korunan belgeleri ve dosyaları hem Microsoft SharePoint'te hem de OneDrive İş çevrimiçi olarak depolayabilirsiniz. Bu konumlara yüklemeden önce DKE ile belgeleri ve dosyaları desteklenen uygulamalar tarafından etiketlemeniz ve korumanız gerekir. Şifrelenmiş içeriği e-postayla paylaşabilirsiniz, ancak şifrelenmiş belgeleri ve dosyaları çevrimiçi görüntüleyemezsiniz. Bunun yerine, yerel bilgisayarınızda desteklenen masaüstü uygulamalarını ve istemcilerini kullanarak korumalı içeriği görüntülemeniz gerekir.
+
+**Yalnızca Outlook şifrelemesi ve senaryoları iletmeme** Desteklenen senaryolar için DKE'nin yapılandırılması etiket yapılandırma deneyiminde bir uyarı oluşturur. Yalnızca şifreleme için ve iletmeyin, desteklenmeyen bu senaryoların etiket yapılandırma deneyiminde hiçbir uyarısı yoktur.
 
 ## <a name="overview-of-deploying-dke"></a>DKE dağıtımına genel bakış
 
@@ -179,7 +183,7 @@ uygulama ayarlarını appsettings.json dosyasında değiştirirsiniz. Bu dosya, 
 
 E-postanın mı yoksa rol yetkilendirmenin mi kullanılacağını seçin. DKE aynı anda bu kimlik doğrulama yöntemlerinden yalnızca birini destekler.
 
-- **E-posta yetkilendirmesi**. Kuruluşunuzun anahtarlara erişimi yalnızca e-posta adreslerine göre yetkilendirmesine izin verir.
+- **yetkilendirmeyi Email**. Kuruluşunuzun anahtarlara erişimi yalnızca e-posta adreslerine göre yetkilendirmesine izin verir.
 
 - **Rol yetkilendirme**. Kuruluşunuzun Active Directory gruplarına göre anahtarlara erişim yetkisi vermesine izin verir ve web hizmetinin LDAP'yi sorgulamasını gerektirir.
 

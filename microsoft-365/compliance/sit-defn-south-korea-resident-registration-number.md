@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Güney Kore yerleşik kayıt numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: 94de2ebb31e8bd7a0d9c175e318e166da691bbca
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d775cadefa4007b2770b42901530c8a78e7f0eb2
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948329"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472453"
 ---
 # <a name="south-korea-resident-registration-number"></a>Güney Kore mukim kayıt numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -43,22 +46,22 @@ Kısa çizgi içeren 13 basamak
 - önceki sayıların özdeş olduğu kişileri ayırt etmek için kullanılan bir basamak
 - onay basamalı.
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_south_korea_resident_number` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_south_korea_resident_number` bir anahtar sözcük bulunur.
-- Sağlama toplamı geçer.
+- İşlev `Func_south_korea_resident_number`, desenle eşleşen içeriği bulur.
+- `Keyword_south_korea_resident_number` içinden bir anahtar sözcük bulundu.
+- Sağlama toplamı başarılı.
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_south_korea_resident_number` , desenle eşleşen içeriği bulur.
-- Sağlama toplamı geçer.
+- İşlev `Func_south_korea_resident_number`, desenle eşleşen içeriği bulur.
+- Sağlama toplamı başarılı.
 
 ```xml
 <!-- South Korea Resident Registration Number -->

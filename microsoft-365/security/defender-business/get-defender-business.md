@@ -15,13 +15,14 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- m365-security-compliance
-ms.openlocfilehash: f12d264e97f966f450ea4bc74ed7b0a2967d5d4c
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+- m365-security
+- tier1
+ms.openlocfilehash: c03c92a213b5cf4fe14bbd98094ff3816ab1beab
+ms.sourcegitcommit: 9f5cf8cf8a2e25cfd07b23b7f6d7f9d138a9cd16
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598637"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68501456"
 ---
 # <a name="get-microsoft-defender-for-business"></a>İş için Microsoft Defender alma
 
@@ -45,7 +46,7 @@ Deneme sürümüne kaydolmuşsanız, kabul e-postanızı aldıktan sonra [deneme
 3. [Kullanıcı ekleme ve lisans atama](mdb-add-users.md) işlemine geçin.
 
 > [!TIP]
-> Bkz [. İş için Defender deneme playbook'u](trial-playbook-defender-business.md).
+> [İş için Defender deneme kullanım kılavuzuna](trial-playbook-defender-business.md) bakın.
 
 ## <a name="get-microsoft-365-business-premium"></a>Microsoft 365 İş Ekstra’yı edinin
 
@@ -106,7 +107,7 @@ Başlamaya hazır olduğunuzda iki ana portalla çalışırsınız: Microsoft 36
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Deneme playbook'una bakın: İş için Microsoft Defender](trial-playbook-defender-business.md).
+- [Deneme kullanım kılavuzuna bakın: İş için Microsoft Defender](trial-playbook-defender-business.md).
 - [İş için Microsoft Defender'da kurulum sihirbazını kullanın](mdb-use-wizard.md).
 - [bkz. İş için Defender'ın kurulum ve yapılandırma işlemi](mdb-setup-configuration.md).
 - [İş için Defender için nasıl yardım ve destek alabileceğinizi öğrenin](mdb-get-help.md) (yardıma ihtiyacınız olması durumunda).

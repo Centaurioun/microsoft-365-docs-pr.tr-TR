@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Konukların belirli bir gruba eklenmesini nasıl önleyeceğinizi öğrenin
-ms.openlocfilehash: c49dca69d1a5ba08032dce5fb8a12d923c835118
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: ccf1748e182ecc0f5e5c652b66bb1968212a1997
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727292"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986080"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Konukların belirli bir Microsoft 365 grubuna veya Microsoft Teams ekibine eklenmesini engelleme
 

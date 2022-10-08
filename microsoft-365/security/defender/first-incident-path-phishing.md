@@ -16,19 +16,20 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365solution-firstincident
 - highpri
+- tier1
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: da2c331dcbe3b76a6c546eaac62684f0709f6ebd
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: bb7476a4608d7d89fa522529914a0f075311b8cd
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67480898"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68297870"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>Kimlik avı e-posta saldırısı örneği
 
@@ -37,7 +38,7 @@ ms.locfileid: "67480898"
 **Şunlar için geçerlidir:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender, e-postayla gönderilen kötü amaçlı ekleri algılamaya yardımcı olabilir. [Office 365 Güvenlik ve Uyumluluk Merkezi](https://protection.office.com/) Microsoft 365 Defender ile tümleştirdiğinden, güvenlik analistleri e-posta ekleri gibi Office 365 gelen tehditleri görebilir.
+Microsoft 365 Defender, e-posta yoluyla gönderilen kötü amaçlı eklerin tespit edilmesine yardımcı olabilir ve güvenlik analistleri, e-posta ekleri gibi Office 365 gelen tehditler hakkında görünürlüğe sahip olabilir.
 
 Örneğin, bir analiste çok aşamalı bir olay atanmıştır.
  

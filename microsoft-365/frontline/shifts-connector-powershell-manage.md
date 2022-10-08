@@ -13,15 +13,16 @@ ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 1064401dee3a25a7d1749db6e4a36a110f21da0b
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 19161f8b797f73ec2e724e19bd0a1aefd127fb8f
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824735"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300420"
 ---
 # <a name="use-powershell-to-manage-your-shifts-connection-to-blue-yonder-workforce-management"></a>PowerShell kullanarak Blue Yonder ile Vardiyalar bağlantınızı yönetme Workforce Management
 
@@ -29,7 +30,7 @@ ms.locfileid: "66824735"
 
 [Mavi Yonder için Microsoft Teams Vardiyaları bağlayıcısı](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder), Microsoft Teams'deki Vardiyalar uygulamasını Blue Yonder Workforce Management (Mavi Yonder WFM) ile tümleştirmenize olanak tanır. Bir bağlantı kurduktan sonra ön cephe çalışanlarınız Vardiyalar'ın içinden Blue Yonder WFM zamanlamalarını sorunsuz bir şekilde görüntüleyebilir ve yönetebilir.
 
-Bağlantı kurmak için Microsoft 365 yönetim merkezi veya [PowerShell'deki](shifts-connector-blue-yonder-powershell-setup.md) [Vardiyalar bağlayıcı sihirbazını](shifts-connector-wizard.md) kullanabilirsiniz. Bağlantı kurulduktan sonra [, Shifts bağlayıcısı PowerShell cmdlet'lerini](#shifts-connector-cmdlets) kullanarak bunu yönetirsiniz.
+Bağlantı kurmak için Microsoft 365 yönetim merkezi veya [PowerShell'deki](shifts-connector-blue-yonder-powershell-setup.md) [Vardiyalar bağlayıcı sihirbazını](shifts-connector-wizard.md) kullanabilirsiniz. Bağlantı kurulduktan sonra [Shifts bağlayıcısı PowerShell cmdlet'lerini](#shifts-connector-cmdlets) kullanarak bu bağlantıyı yönetebilirsiniz.
 
 Bu makalede, aşağıdakileri yapmak için PowerShell'in nasıl kullanılacağı açıklanmaktadır:
 
@@ -40,8 +41,10 @@ Bu makalede, aşağıdakileri yapmak için PowerShell'in nasıl kullanılacağı
 - [Ekibin eşlemesini bir bağlantıdan kaldırma ve başka bir bağlantıyla eşleme](#unmap-a-team-from-one-connection-and-map-it-to-another-connection)
 - [Bağlantı için eşitlemeyi devre dışı bırakma](#disable-sync-for-a-connection)
 
+Bu makalede, sihirbazı veya PowerShell'i kullanarak Blue Yonder WFM ile zaten bir bağlantı ayarladığınız varsayılır.
+
 > [!NOTE]
-> Bu makalede, sihirbazı veya PowerShell'i kullanarak Blue Yonder WFM ile zaten bir bağlantı ayarladığınız varsayılır.
+> Ayrıca bağlantınızı Microsoft 365 yönetim merkezi yönetebilirsiniz. Örneğin, bağlantı ayarlarını değiştirmek için sistem durumunu denetleyebilir ve sihirbaza erişebilirsiniz. Daha fazla bilgi edinmek için bkz. [Microsoft 365 yönetim merkezi kullanarak Blue Yonder Workforce Management Vardiyalar bağlantınızı yönetme](shifts-connector-blue-yonder-admin-center-manage.md).
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -63,46 +66,23 @@ Bu makalede, aşağıdakileri yapmak için PowerShell'in nasıl kullanılacağı
     İstendiğinde yönetici kimlik bilgilerinizi kullanarak oturum açın. Artık bu makaledeki betikleri ve Shifts bağlayıcısı cmdlet'lerini çalıştıracak şekilde ayarlandınız.
 
 ## <a name="check-connection-setup-status"></a>Bağlantı kurulum durumunu denetleme
-
 <a name="setup_status"> </a>
 
-E-postada aldığınız işlem kimliğini kullanarak ayarladığınız bağlantının durumunu denetlemek için:
-
-1. [Ortamınızı ayarlayın](#set-up-your-environment) (henüz ayarlamadıysanız).
-1. Aşağıdaki komutu çalıştırın. Bu komut, bağlantı için ekip eşlemelerinin genel durumunu verir.
-
-    ``` powershell
-    Get-CsTeamsShiftsConnectionOperation -OperationId <YourOperationId>
-    ```
-
-Daha fazla bilgi için bkz. [Get-CsTeamsShiftsConnectionOperation](/powershell/module/teams/get-csteamsshiftsconnectionoperation).
+[!INCLUDE [shifts-connector-check-setup-status](includes/shifts-connector-check-setup-status.md)]
 
 ## <a name="view-an-error-report-for-a-connection"></a>Bağlantı için hata raporunu görüntüleme
-
 <a name="error_report"> </a>
 
-Bağlantının hata ayrıntılarını gösteren bir rapor çalıştırabilirsiniz. Raporda başarılı ve başarısız olan ekip ve kullanıcı eşlemeleri listelenir. Ayrıca, bağlantıyla ilişkili hesaplarla ilgili sorunlar hakkında da bilgi sağlar.
+[!INCLUDE [shifts-connector-view-error-report](includes/shifts-connector-view-error-report.md)]
 
-1. [Ortamınızı ayarlayın](#set-up-your-environment) (henüz ayarlamadıysanız).
-1. Bağlantı için hata raporlarının listesini alın.
-
-    ``` powershell
-    Get-CsTeamsShiftsConnectionErrorReport -ConnectorInstanceId <ConnectorInstanceId>
-    ```
-
-1. Belirli bir hata raporunu görüntülemek için aşağıdaki komutu çalıştırın:
-
-    ``` powershell
-    Get-CsTeamsShiftsConnectionErrorReport -ErrorReportId <ErrorReportId>
-    ```
-
-Daha fazla bilgi için bkz. [Get-CsTeamsShiftsConnectionErrorReport](/powershell/module/teams/get-csteamsshiftsconnectionerrorreport).
+> [!NOTE]
+> Hata iletilerinin tam listesi için bu [makalenin devamında yer alan Hata iletilerinin listesi](#list-of-error-messages) bölümüne bakın.
 
 ## <a name="resolve-connection-errors"></a>Bağlantı hatalarını çözme
 
 ### <a name="user-mapping-errors"></a>Kullanıcı eşleme hataları
 
-Blue Yonder WFM örneğindeki bir veya daha fazla kullanıcı Teams'de eşlenen ekibin üyesi değilse kullanıcı eşleme hataları oluşabilir. Bu sorunu çözmek için eşlenen takımdaki kullanıcıların Blue Yonder WFM örneğindeki kullanıcılarla eşleştiğinden emin olun.
+WFM örnekteki bir veya daha fazla kullanıcı Teams'de eşlenen ekibin üyesi değilse kullanıcı eşleme hataları oluşabilir. Bu sorunu çözmek için eşlenen takımdaki kullanıcıların WFM örneğindeki kullanıcılarla eşleştiğinden emin olun.
 
 Eşlenmemiş kullanıcıların ayrıntılarını görüntülemek için [ortamınızı ayarlayın](#set-up-your-environment) (henüz yapmadıysanız) ve ardından aşağıdaki betiği çalıştırın.
 
@@ -114,7 +94,7 @@ Start-Sleep 1
 #Ensure Teams module is of version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.1.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
     throw
 }
@@ -152,37 +132,24 @@ ForEach ($mapping in $mappings){
 
 ### <a name="account-authorization-errors"></a>Hesap yetkilendirme hataları
 
-Blue Yonder WFM hizmet hesabı veya Microsoft 365 sistem hesabı kimlik bilgileri yanlışsa veya gerekli izinlere sahip değilse hesap yetkilendirme hataları oluşabilir.
-
-Bağlantının Blue Yonder WFM hizmet hesabınızı veya Microsoft 365 sistem hesabı kimlik bilgilerini değiştirmek için [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) cmdlet'ini çalıştırabilir veya bu makalenin [Bağlantı ayarlarını değiştir](#change-connection-settings) bölümündeki PowerShell betiğini kullanabilirsiniz.
+[!INCLUDE [shifts-connector-account-authorization-errors](includes/shifts-connector-account-authorization-errors.md)]
 
 ## <a name="change-connection-settings"></a>Bağlantı ayarlarını değiştirme
 <a name="change_settings"> </a>
 
-Bağlantı ayarlarını değiştirmek için bu betiği kullanın. Değiştirebileceğiniz ayarlar arasında Blue Yonder WFM hizmet hesabınız ve parolanız, Microsoft 365 sistem hesabınız, ekip eşlemeleri ve eşitleme ayarları yer alır.
-
-Eşitleme ayarları, eşitleme sıklığını (dakika cinsinden) ve Blue Yonder WFM ile Vardiyalar arasında eşitlenen zamanlama verilerini içerir. Zamanlama verileri aşağıdaki parametrelerde tanımlanır. [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector) komutunu çalıştırarak görüntüleyebilirsiniz.
-
-- **enabledConnectorScenarios** parametresi, Blue Yonder WFM'dan Shifts'e eşitlenen verileri tanımlar. Seçenekler şunlardır: `Shift`, `SwapRequest`, `UserShiftPreferences``OpenShift`, , `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
-- **enabledWfiScenarios** parametresi, Shifts ile Blue Yonder WFM eşitlenen verileri tanımlar. Seçenekler : `SwapRequest`, `OpenShiftRequest`, `TimeOffRequest`, `UserShiftPreferences`.
-
-    > [!NOTE]
-    > Açık vardiyaları eşitlememeyi, vardiya isteklerini açmamayı, değiştirme isteklerini veya Vardiyalar ile Mavi Yonder WFM arasında izin isteklerini değiştirmemeyi seçerseniz, Vardiyalar'da özelliği gizlemek için yapmanız gereken başka bir adım vardır. Bu betiği çalıştırdıktan sonra, bu makalenin devamında [Açık vardiyaları devre dışı bırakma, vardiya isteklerini açma, değiştirme istekleri ve izin istekleri](#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests) bölümündeki adımları izlediğinize emin olun.
-
-> [!IMPORTANT]
-> Değiştirmek istemediğiniz ayarlar için, betik tarafından istendiğinde özgün ayarları yeniden girmeniz gerekir.
+[!INCLUDE [shifts-connector-change-connection-settings](includes/shifts-connector-change-connection-settings.md)]
 
 [Ortamınızı ayarlayın](#set-up-your-environment) (henüz yapmadıysanız) ve ardından aşağıdaki betiği çalıştırın.
 
 ```powershell
 #Update connector instance and mapping script
-Write-Host "Update connector instance and mapping"
+Write-Host "Update Connector instance and mapping"
 Start-Sleep 1
 
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.1.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
     throw
 }
@@ -199,7 +166,7 @@ $blueYonder = $connectors | where {$_.Id -match $BlueYonderId}
 
 #List connection instances available
 Write-Host "Listing connection instances available"
-$InstanceList = Get-CsTeamsShiftsConnectionInstance
+$InstanceList = Get-CsTeamsShiftsConnectionInstance | where {$_.ConnectorId -match $BlueYonderId}
 write $InstanceList
 
 #Prompt for the WFM username and password
@@ -208,7 +175,6 @@ $WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
 
 #Get the instance ID
-$BlueYonderId = "6A51B888-FF44-4FEA-82E1-839401E9CD74"
 $InstanceId = Read-Host -Prompt 'Input the instance ID that you want to update'
 $Instance = Get-CsTeamsShiftsConnectionInstance -ConnectorInstanceId $InstanceId
 $Etag = $Instance.etag
@@ -248,8 +214,33 @@ if ($decision -eq 1) {
     break
 }
 }
-$UpdatedInstance = Set-CsTeamsShiftsConnectionInstance -ConnectorId $BlueYonderId -ConnectorInstanceId $InstanceId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -DesignatedActorId $teamsUserId -EnabledConnectorScenario $updatedConnectorScenario -EnabledWfiScenario $updatedWfiScenario -Name $UpdatedInstanceName -SyncFrequencyInMin $syncFreq -IfMatch $Etag -ConnectorAdminEmail $AdminEmailList
-
+$UpdatedInstance = Set-CsTeamsShiftsConnectionInstance `
+    -ConnectorInstanceId $InstanceId `
+    -ConnectorId $BlueYonderId `
+    -ConnectorAdminEmail $AdminEmailList `
+    -DesignatedActorId $teamsUserId `
+    -EnabledConnectorScenario $updatedConnectorScenario `
+    -EnabledWfiScenario $updatedWfiScenario `
+    -Name $UpdatedInstanceName `
+    -SyncFrequencyInMin $syncFreq `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+    -Property @{
+        AdminApiUrl = $adminApiUrl
+        SiteManagerUrl = $siteManagerUrl
+        EssApiUrl = $essApiUrl
+        RetailWebApiUrl = $retailWebApiUrl
+        CookieAuthUrl = $cookieAuthUrl
+        FederatedAuthUrl = $federatedAuthUrl
+        LoginUserName = $WfmUserName
+        LoginPwd = $plainPwd
+    }) `
+    -IfMatch $Etag
+if ($UpdatedInstance.Id -ne $null) {
+    Write-Host "Success"
+}
+else {
+    throw "Update instance failed"
+}
 #Get a list of the mappings
 Write-Host "Listing mappings"
 $TeamMaps = Get-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId
@@ -273,65 +264,35 @@ Write-Host "Success"
 
 ## <a name="disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests"></a>Açık vardiyaları, açık vardiya isteklerini, değiştirme isteklerini ve izin isteklerini devre dışı bırakma
 
-> [!IMPORTANT]
-> Bu adımları yalnızca bu makalenin önceki bölümlerindeki [Bağlantı ayarlarını değiştir](#change-connection-settings) bölümündeki betiği kullanarak veya [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) cmdlet'ini kullanarak açık vardiyaları, açık vardiya isteklerini, değiştirme isteklerini veya izin isteklerini devre dışı bırakmayı seçtiyseniz izleyin. Bu adımın tamamlanması, Vardiyalar'daki özelliği gizler. Bu ikinci adım olmadan, kullanıcılar özelliği Vardiyalar'da görmeye devam eder ve kullanmaya çalışırlarsa "desteklenmeyen işlem" hata iletisini alır.
-
-Vardiyalarda açık vardiyaları, değiştirme isteklerini ve izin isteklerini gizlemek için Graph API [zamanlama kaynak türünü](/graph/api/resources/schedule) kullanarak bir Blue Yonder WFM örneğine ```false``` eşlediğiniz her takım için aşağıdaki parametreleri olarak ayarlayın:
-
-- Vardiyaları açma: ```openShiftsEnabled```
-- Değiştirme istekleri:  ```swapShiftsRequestsEnabled```
-- zaman aşımı istekleri: ```timeOffRequestsEnabled```
-
-Vardiyalar'da açık vardiya isteklerini gizlemek için Vardiyalar'daki **Ayarlar'a** gidin ve **Vardiyaları aç** ayarını kapatın.
+[!INCLUDE [shifts-connector-disable-shifts-requests](includes/shifts-connector-disable-shifts-requests.md)]
 
 ## <a name="unmap-a-team-from-one-connection-and-map-it-to-another-connection"></a>Ekibin eşlemesini bir bağlantıdan kaldırma ve başka bir bağlantıyla eşleme
 
-> [!NOTE]
-> Her iki bağlantı için de Microsoft 365 sistem hesabı aynı olmalıdır. Değilse, "Bu belirlenen aktör profilinin ekip sahipliği ayrıcalıkları yok" hata iletisini alırsınız.
-
-Bir ekibin eşlemesini bir bağlantıdan kaldırmak ve başka bir bağlantıyla eşlemek istiyorsanız:
-
-1. [Ortamınızı ayarlayın](#set-up-your-environment) (henüz ayarlamadıysanız).
-1. Bağlantı için tüm ekip eşlemelerinin listesini görüntüleyin.
-
-    ```powershell
-    Get-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId <ConnectorInstanceId>
-    ```
-
-1. Bağlantıdan bir ekip eşlemesini kaldırın.
-
-    ```powershell
-    Remove-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId <ConnectorInstanceId> -TeamId <TeamId>
-    ```
-
-1. Ekibi başka bir bağlantıyla eşleyin.
-
-    ```powershell
-    New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId <ConnectorInstanceId> -TeamId <TeamId> -WfmTeamId <SiteId> -TimeZone <TimeZone>
-    ```
-
-Daha fazla bilgi için bkz. [Get-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/get-csteamsshiftsconnectionteammap), [Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap) ve [New-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/new-csteamsshiftsconnectionteammap).
+[!INCLUDE [shifts-connector-unmap-a-team](includes/shifts-connector-unmap-a-team.md)]
 
 ## <a name="disable-sync-for-a-connection"></a>Bağlantı için eşitlemeyi devre dışı bırakma
 
-Bağlantı için eşitlemeyi devre dışı bırakmak için bu betiği kullanın. Bu betiğin bir bağlantıyı kaldırmaz veya silmez. Belirttiğiniz bağlantı için Vardiyalar ile Blue Yonder WFM arasında veri eşitlenmemesi için eşitlemeyi kapatır.
+Bağlantı için eşitlemeyi devre dışı bırakmak için bu betiği kullanın. Bu betiğin bir bağlantıyı kaldırmaz veya silmez. Eşitlemeyi kapatarak, belirttiğiniz bağlantı için Vardiyalar ile WFM sisteminiz arasında hiçbir veri eşitlenmemesi sağlanır.
 
 [Ortamınızı ayarlayın](#set-up-your-environment) (henüz yapmadıysanız) ve ardından aşağıdaki betiği çalıştırın.
 
 ```powershell
 #Disable sync script
 Write-Host "Disable sync"
+Start-Sleep 1
+
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.1.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
     throw
 }
 
 #List connection instances available
+$BlueYonderId = "6A51B888-FF44-4FEA-82E1-839401E9CD74"
 Write-Host "Listing connection instances"
-$InstanceList = Get-CsTeamsShiftsConnectionInstance
+$InstanceList = Get-CsTeamsShiftsConnectionInstance | where {$_.ConnectorId -match $BlueYonderId}
 write $InstanceList
 
 #Get an instance
@@ -361,7 +322,27 @@ $WfmUserName = Read-Host -Prompt 'Input your WFM user name'
 $WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
 
-$UpdatedInstance = Set-CsTeamsShiftsConnectionInstance -ConnectorId $BlueYonderId -ConnectorInstanceId $InstanceId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -DesignatedActorId $DesignatedActorId -EnabledConnectorScenario @() -EnabledWfiScenario @() -Name $UpdatedInstanceName -SyncFrequencyInMin 60 -IfMatch $Etag -ConnectorAdminEmail $ConnectorAdminEmail
+$UpdatedInstance = Set-CsTeamsShiftsConnectionInstance `
+    -ConnectorInstanceId $InstanceId `
+    -ConnectorId $BlueYonderId `
+    -ConnectorAdminEmail $ConnectorAdminEmail `
+    -DesignatedActorId $DesignatedActorId `
+    -EnabledConnectorScenario @() `
+    -EnabledWfiScenario @() `
+    -Name $UpdatedInstanceName `
+    -SyncFrequencyInMin 10 `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+        -Property @{
+            AdminApiUrl = $adminApiUrl
+            SiteManagerUrl = $siteManagerUrl
+            EssApiUrl = $essApiUrl
+            RetailWebApiUrl = $retailWebApiUrl
+            CookieAuthUrl = $cookieAuthUrl
+            FederatedAuthUrl = $federatedAuthUrl
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+        }) `
+    -IfMatch $Etag
 
 if ($UpdatedInstance.Id -ne $null) {
     Write-Host "Success"
@@ -370,6 +351,20 @@ else {
     throw "Update instance failed"
 }
 ```
+## <a name="list-of-error-messages"></a>Hata iletilerinin listesi
+
+Karşılaşabileceğiniz hata iletilerinin listesi ve bunları çözmenize yardımcı olacak bilgiler aşağıdadır.
+
+|Hata türü |Hata ayrıntıları |Çözüm |
+|---------|---------|---------|
+|İş gücü yönetim sistemi kimlik doğrulaması yapılamıyor.|Sağladığınız iş gücü yönetim sistemi hesabı kimlik bilgileri geçersiz veya bu hesabın gerekli izinleri yok.|Bağlantı ayarlarında WFM hizmet hesabı kimlik bilgilerinizi güncelleştirin. Bunu yapmak için aşağıdaki yöntemlerden birini kullanın.<ul><li>Microsoft 365 yönetim merkezi Bağlayıcı Yönetimi sayfasında veya bağlantı ayrıntıları sayfasında **Düzenle'yi** seçerek Shifts bağlayıcı sihirbazına gidin.</li><li>[Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) veya Update-CsTeamsShiftConnectionInstance cmdlet'ini kullanın.</li><li>[Bu PowerShell betiğini](#change-connection-settings) kullanın.</li></ul>|
+|Graph kimliği doğrulanamıyor. |Kimlik doğrulaması başarısız oldu. Belirlenen aktör için geçerli kimlik bilgileri girdiğinizden ve gerekli izinlere sahip olduğunuzdan emin olun.|Microsoft 365 sistem hesabınızın (belirlenen aktör olarak da bilinir) ekip sahibi olarak eklendiğinden emin olun.<br> Alternatif olarak, bağlantı ayarlarında Microsoft 365 sistem hesabı kimlik bilgilerinizi güncelleştirebilirsiniz.|
+|Bazı kullanıcılar doğru eşleme yapamadı|Bazı kullanıcılar için eşleme başarısız oldu: \<X\> başarılı, \<X\> başarısız AAD kullanıcıları ve \<X\> başarısız iş gücü yönetim sistemi kullanıcıları.|Eşlemenin başarısız olduğu kullanıcıları tanımlamak için [Get-CsTeamsShiftsConnectionSyncResult](/powershell/module/teams/get-csteamsshiftsconnectionsyncresult) cmdlet'ini veya [bu PowerShell betiğini](#user-mapping-errors) kullanın. Eşlenen takımdaki kullanıcıların WFM örneğindeki kullanıcılarla eşleştiğinden emin olun.|
+|Bu toplu işte bir ekip veya ekip eşlenemiyor. |Bu belirlenen aktör profilinin ekip sahipliği ayrıcalıkları yok. |Microsoft 365 sistem hesabınızın (belirlenen aktör olarak da bilinir) ekip sahibi olarak eklendiğinden emin olun.<br>Microsoft 365 sistem hesabınızı değiştirdiyseniz, bu hesabı ekip sahibi olarak ekleyin ve bağlantı ayarlarını bu hesabı kullanacak şekilde güncelleştirin.|
+|    |Bu ekip zaten mevcut bir bağlayıcı örneğine eşlenmiş durumda. |[Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap) cmdlet'ini kullanarak ekibin mevcut bağlantıdan eşlemesini kaldırın. Ya da ekibi yeniden eşlemek için yeni bir bağlantı oluşturun.|
+|    |Bu saat dilimi geçersiz. geçirilen saat dilimi tz veritabanı biçimini kullanmıyor.|Saat diliminin doğru olduğundan emin olun ve ardından ekibi yeniden eşleyin.|
+|    |Bu bağlayıcı örneğini bulamıyoruz.|Ekibi mevcut bir bağlantıyla eşleyin.|
+|    |Bu AAD ekibi bulunamadı.|Ekibin var olduğundan emin olun veya yeni bir ekip oluşturun.|
 
 ## <a name="shifts-connector-cmdlets"></a>Shifts bağlayıcı cmdlet'leri
 
@@ -393,8 +388,9 @@ Shifts bağlayıcısı cmdlet'leri ile ilgili yardım için [Teams PowerShell cm
 
 ## <a name="related-articles"></a>İlgili makaleler
 
-- [Bağlayıcıları kaydırıyor](shifts-connectors.md)
+- [Vardiya bağlayıcıları](shifts-connectors.md)
 - [Shifts bağlayıcısı sihirbazını kullanarak Shifts'i Mavi Yonder'a bağlama Workforce Management](shifts-connector-wizard.md)
 - [PowerShell kullanarak Vardiyaları Mavi Yonder'a bağlama Workforce Management](shifts-connector-blue-yonder-powershell-setup.md)
+- [Microsoft 365 yönetim merkezi kullanarak Blue Yonder ile Vardiyalar bağlantınızı yönetme Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md)
 - [Vardiyalar uygulamasını yönetme](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Teams PowerShell'e genel bakış](/microsoftteams/teams-powershell-overview)

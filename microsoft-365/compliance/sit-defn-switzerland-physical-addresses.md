@@ -14,22 +14,25 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: İsviçre fiziksel olarak hassas bilgi türü varlık tanımını ele alır.
-ms.openlocfilehash: 1b51a85e17259548273f4436d6978e21bb80bd7c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 5fc0048d7f7a7d4db71b0fce35ec5ccf50f0ebd5
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989447"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472354"
 ---
 # <a name="switzerland-physical-addresses"></a>İsviçre fiziksel adresleri
 
-Bu unbundled adlandırılmış varlık, İsviçre'den gelen fiziksel adresle ilgili desenleri algılar. Ayrıca varlık SIT adlı [paketlenmiş Tüm Fiziksel Adresler'e](sit-defn-all-physical-addresses.md) de dahildir.
+Bu unbundled adlandırılmış varlık, İsviçre'den gelen fiziksel adresle ilgili desenleri algılar. Ayrıca bu varlık [Tüm Fiziksel Adresler](sit-defn-all-physical-addresses.md) paketlenmiş adlandırılmış varlık hassas bilgi türüne dahildir.
 
-## <a name="confidence-level"></a>Güvenilirlik düzeyi
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## <a name="confidence-level"></a>Olasılık düzeyi
 
 Orta

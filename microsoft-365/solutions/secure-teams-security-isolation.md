@@ -5,7 +5,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
 - highpri
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Güvenlik için benzersiz duyarlılık etiketine sahip bir ekip oluşturmayı öğrenin.
-ms.openlocfilehash: f8e6ba02d21c380a21efe0f3551d3a1ad17c9e9a
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 06a784a64cb62bb6c8fa395c42072399bfa443e7
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67730825"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67985970"
 ---
 # <a name="configure-a-team-with-security-isolation-by-using-a-unique-sensitivity-label"></a>Benzersiz bir duyarlılık etiketi kullanarak ekibi güvenlik yalıtımıyla yapılandırma
 

@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: BK ulusal sağlık hizmeti numarasına duyarlı bilgi türü varlık tanımı.
-ms.openlocfilehash: d636be281b1652934fa7b4b83b3a4b5da7794a09
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: b16ac1cc66b53bff232967aedc8b9f5265908d0e
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948383"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472266"
 ---
 # <a name="uk-national-health-service-number"></a>BK ulusal sağlık hizmeti numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -42,20 +45,20 @@ Boşluklarla ayrılmış 10-17 basamak
 - boşluk
 - dört basamak
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Evet
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamıştır:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair yüksek düzeyde güvene sahiptir:
 
-- İşlev `Func_uk_nhs_number` , desenle eşleşen içeriği bulur.
-- Aşağıdakilerden biri doğrudur:
-    - 'den `Keyword_uk_nhs_number` bir anahtar sözcük bulunur.
-    - 'den `Keyword_uk_nhs_number1` bir anahtar sözcük bulunur.
-    - 'den `Keyword_uk_nhs_number_dob` bir anahtar sözcük bulunur.
-- Sağlama toplamı geçer.
+- İşlev `Func_uk_nhs_number`, desenle eşleşen içeriği bulur.
+- Aşağıdaki durumlardan biri doğrudur:
+    - `Keyword_uk_nhs_number` içinden bir anahtar sözcük bulundu.
+    - `Keyword_uk_nhs_number1` içinden bir anahtar sözcük bulundu.
+    - `Keyword_uk_nhs_number_dob` içinden bir anahtar sözcük bulundu.
+- Sağlama toplamı başarılı.
 
 ```xml
 <!-- U.K. NHS Number -->
@@ -89,8 +92,8 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgileri algılamı�
 
 ### <a name="keyword_uk_nhs_number_dob"></a>Keyword_uk_nhs_number_dob
 
-- GP
-- DOB
+- Gp
+- Dob
 - D.O.B
 - Doğum tarihi
 - Doğum Tarihi

@@ -4,7 +4,7 @@ f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 03/02/2022
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -14,23 +14,27 @@ search.appverid:
 - MET150
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 - SPO_Content
 recommendations: false
-description: DLP ilkesi bileşeni ve yapılandırma başvurusu
+description: DLP ilkesi bileşeni ve yapılandırma başvurusu. Bu makale, DLP ilkesinin ayrıntılı anatomisini sağlar.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 6368a534f40606d906efa2b8a9f6ca920fcd6ce1
-ms.sourcegitcommit: 078149c9645ce220911ccd6ce54f984a4c92ce53
+ms.openlocfilehash: d566d924240878e967a308b5940989c949ce76b4
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67812128"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492582"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Veri Kaybı Önleme ilkesi başvurusu
 
 Microsoft Purview Veri Kaybı Önleme (DLP) ilkelerinin yapılandırılması gereken birçok bileşen vardır. Etkili bir ilke oluşturmak için, her bileşenin amacını ve yapılandırmasının ilkenin davranışını nasıl değiştirdiğini anlamanız gerekir. Bu makale, DLP ilkesinin ayrıntılı anatomisini sağlar.
 
-## <a name="policy-templates"></a>İlke şablonları 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## <a name="policy-templates"></a>İlke şablonları
 
 DLP ilkesi şablonları dört kategoriye önceden sıralanır:
 
@@ -39,7 +43,7 @@ DLP ilkesi şablonları dört kategoriye önceden sıralanır:
 - **Gizlilik** bilgileri türlerini algılayıp koruyabilenler.
 - Diğer ilkelerden biri kuruluşunuzun ihtiyaçlarını karşılamıyorsa kendi ilkenizi oluşturmak için kullanabileceğiniz **özel** bir şablon.
 
-Bu tabloda, tüm ilke şablonları ve bunların kapsadıkları hassas bilgi türleri (SIT) listelenir. 
+Bu tabloda, tüm ilke şablonları ve bunların kapsadıkları hassas bilgi türleri (SIT) listelenir.
 
 güncelleştirme: 23.06.2021
 
@@ -77,8 +81,8 @@ güncelleştirme: 23.06.2021
 |Gizlilik| Fransa Kişisel Bilgiler (PII) Verileri|- [Fransa sosyal güvenlik numarası (INSEE)](sit-defn-france-social-security-number.md) </br> - [Fransa ehliyet numarası](sit-defn-france-drivers-license-number.md) </br> - [Fransa pasaport numarası](sit-defn-france-passport-number.md) </br> - [Fransa ulusal kimlik kartı (CNI)](sit-defn-france-national-id-card.md)|
 |Gizlilik| Genel Veri Koruma Yönetmeliği (GDPR) Geliştirildi|- [Avusturya Fiziksel Adresleri](sit-defn-austria-physical-addresses.md) </br> - [Belçika Fiziksel Adresleri](sit-defn-belgium-physical-addresses.md) </br> - [Bulgaristan Fiziksel Adresleri](sit-defn-bulgaria-physical-addresses.md) </br> - [Hırvatistan Fiziksel Adresleri](sit-defn-croatia-physical-addresses.md) </br> - [Kıbrıs Fiziksel Adresleri](sit-defn-cyprus-physical-addresses.md) </br> - [Çek Cumhuriyeti Fiziksel Adresleri](sit-defn-czech-republic-physical-addresses.md)</br> - [Danimarka Fiziksel Adresleri](sit-defn-denmark-physical-addresses.md)</br> - [Estonya Fiziksel Adresleri](sit-defn-estonia-physical-addresses.md)</br> - [Finlandiya Fiziksel Adresleri](sit-defn-finland-physical-addresses.md)</br> - [Fransa Fiziksel Adresleri](sit-defn-france-physical-addresses.md)</br> - [Almanya Fiziksel Adresleri](sit-defn-germany-physical-addresses.md)</br> - [Yunanistan Fiziksel Adresleri](sit-defn-greece-physical-addresses.md)</br> - [Macaristan Fiziksel Adresleri](sit-defn-hungary-physical-addresses.md)</br> - [İrlanda Fiziksel Adresleri](sit-defn-ireland-physical-addresses.md)</br> - [İtalya Fiziksel Adresleri](sit-defn-italy-physical-addresses.md)</br> - [Letonya Fiziksel Adresleri](sit-defn-latvia-physical-addresses.md)</br> - [Litvanya Fiziksel Adresleri](sit-defn-lithuania-physical-addresses.md)</br> - [Lüksemburg Fiziksel Adresleri](sit-defn-luxemburg-physical-addresses.md)</br> - [Malta Fiziksel Adresleri](sit-defn-malta-physical-addresses.md)</br> - [Hollanda Fiziksel Adresleri](sit-defn-netherlands-physical-addresses.md)</br> - [Polonya Fiziksel Adresleri](sit-defn-poland-physical-addresses.md)</br> - [Portekizce Fiziksel Adresler](sit-defn-portugal-physical-addresses.md)</br> - [Romanya Fiziksel Adresleri](sit-defn-romania-physical-addresses.md)</br> - [Slovakya Fiziksel Adresleri](sit-defn-slovakia-physical-addresses.md)</br> - [Slovenya Fiziksel Adresleri](sit-defn-slovenia-physical-addresses.md)</br> - [İspanya Fiziksel Adresleri](sit-defn-spain-physical-addresses.md)</br> - [İsveç Fiziksel Adresleri](sit-defn-sweden-physical-addresses.md)</br> - [Avusturya Sosyal Güvenlik Numarası](sit-defn-austria-social-security-number.md) </br> - [Fransa Sosyal Güvenlik Numarası (INSEE)](sit-defn-france-social-security-number.md)</br> - [Yunanistan Sosyal Güvenlik Numarası (AMKA)](sit-defn-greece-social-security-number.md)</br> - [Macar Sosyal Güvenlik Numarası (TAJ)](sit-defn-hungary-social-security-number.md)</br> - [İspanya Sosyal Güvenlik Numarası (SSN)](sit-defn-spain-social-security-number.md)</br> - [Avusturya Kimlik Kartı](sit-defn-austria-identity-card.md) </br> - [Kıbrıs Kimlik Kartı](sit-defn-cyprus-identity-card.md) </br> - [Almanya Kimlik Kartı Numarası](sit-defn-germany-identity-card-number.md)</br> - [Malta Kimlik Kartı Numarası](sit-defn-malta-identity-card-number.md)</br> - [Fransa Ulusal Kimlik Kartı (CNI)](sit-defn-france-national-id-card.md)</br> - [Yunanistan Ulusal Kimlik Kartı](sit-defn-greece-national-id-card.md)</br> - [Finlandiya Ulusal Kimliği](sit-defn-finland-national-id.md)</br> - [Polonya Ulusal Kimliği (PESEL)](sit-defn-poland-national-id.md)</br> - [İsveç Ulusal Kimliği](sit-defn-sweden-national-id.md)</br> - [Hırvatistan Kişisel Kimlik (OIB) Numarası](sit-defn-croatia-personal-identification-number.md) </br> - [Çek Kişisel Kimlik Numarası](sit-defn-czech-personal-identity-number.md)</br> - [Danimarka Kişisel Kimlik Numarası](sit-defn-denmark-personal-identification-number.md)</br> - [Estonya Kişisel Kimlik Kodu](sit-defn-estonia-personal-identification-code.md)</br> - [Macaristan Kişisel Kimlik Numarası](sit-defn-hungary-personal-identification-number.md)</br> - [Luxemburg Ulusal Kimlik Numarası gerçek kişiler](sit-defn-luxemburg-national-identification-number-natural-persons.md)</br> - [Luxemburg Ulusal Kimlik Numarası (Gerçek olmayan kişiler)](sit-defn-luxemburg-national-identification-number-non-natural-persons.md)</br> - [İtalya Mali Kodu](sit-defn-italy-fiscal-code.md)</br> - [Letonya Kişisel Kodu](sit-defn-latvia-personal-code.md)</br> - [Litvanya Kişisel Kodu](sit-defn-lithuania-personal-code.md)</br> - [Romanya Kişisel Sayısal Kodu (CNP)](sit-defn-romania-personal-numeric-code.md)</br> - [Hollanda VatandaşLık Hizmeti (BSN) Numarası](sit-defn-netherlands-citizens-service-number.md)</br> - [İrlanda Kişisel Kamu Hizmeti (PPS) Numarası](sit-defn-ireland-personal-public-service-number.md)</br> - [Bulgaristan Tekdüzen Sivil Numarası](sit-defn-bulgaria-uniform-civil-number.md) </br> - [Belçika Ulusal Numarası](sit-defn-belgium-national-number.md) </br> - [İspanya DNI](sit-defn-spain-dni.md)</br> - [Slovenya Benzersiz Ana Vatandaş Numarası](sit-defn-slovenia-unique-master-citizen-number.md)</br> - [Slovakya Kişisel Numarası](sit-defn-slovakia-personal-number.md)</br> - [Portekiz Vatandaş Kart Numarası](sit-defn-portugal-citizen-card-number.md)</br> - [Malta Vergi Kimlik Numarası](sit-defn-malta-tax-identification-number.md)</br> - [Avusturya Vergi Kimlik Numarası](sit-defn-austria-tax-identification-number.md) </br> - [Kıbrıs Vergi Kimlik Numarası](sit-defn-cyprus-tax-identification-number.md) </br> -[Fransa Vergi Kimlik Numarası (numéro SPI.)](sit-defn-france-tax-identification-number.md)</br> - [Almanya Vergi Kimlik Numarası](sit-defn-germany-tax-identification-number.md)</br> - [Yunan Vergi Kimlik Numarası](sit-defn-greece-tax-identification-number.md)</br> - [Macaristan Vergi Kimlik Numarası](sit-defn-hungary-tax-identification-number.md)</br> - [Hollanda Vergi Kimlik Numarası](sit-defn-netherlands-tax-identification-number.md)</br> - [Polonya Vergi Kimlik Numarası](sit-defn-poland-tax-identification-number.md)</br> - [Portekiz Vergi Kimlik Numarası](sit-defn-portugal-tax-identification-number.md)</br> - [Slovenya Vergi Kimlik Numarası](sit-defn-slovenia-tax-identification-number.md)</br> - [İspanya Vergi Kimlik Numarası](sit-defn-spain-tax-identification-number.md)</br> - [İsveç Vergi Kimlik Numarası](sit-defn-sweden-tax-identification-number.md)</br> - [Avusturya Sürücü Belgesi](sit-defn-austria-drivers-license-number.md) </br> - [Belçika Ehliyet Numarası](sit-defn-belgium-drivers-license-number.md) </br> - [Bulgaristan Ehliyet Numarası](sit-defn-bulgaria-drivers-license-number.md) </br> - [Hırvatistan Ehliyet Numarası](sit-defn-croatia-drivers-license-number.md) </br> - [Kıbrıs Ehliyet Numarası](sit-defn-cyprus-drivers-license-number.md) </br> - [Çek Ehliyet Numarası](sit-defn-czech-drivers-license-number.md) </br> - [Danimarka Ehliyet Numarası](sit-defn-denmark-drivers-license-number.md)</br> - [Estonya Sürücü Lisans Numarası](sit-defn-estonia-drivers-license-number.md)</br> - [Finlandiya Ehliyet Numarası](sit-defn-finland-drivers-license-number.md)</br> - [Fransa Ehliyet Numarası](sit-defn-france-drivers-license-number.md)</br> - [Alman Sürücü Belgesi Numarası](sit-defn-germany-drivers-license-number.md)</br> - [Yunanistan Ehliyet Numarası](sit-defn-greece-drivers-license-number.md) </br> - [Macaristan Ehliyet Numarası](sit-defn-hungary-drivers-license-number.md)</br> - [İrlanda Ehliyet Numarası](sit-defn-ireland-drivers-license-number.md)</br> - [İtalya Ehliyet Numarası](sit-defn-italy-drivers-license-number.md)</br> - [Letonya Ehliyet Numarası](sit-defn-latvia-drivers-license-number.md)</br> - [Litvanya Sürücü Belgesi Numarası](sit-defn-lithuania-drivers-license-number.md)</br> - [Luxemburg Ehliyet Numarası](sit-defn-luxemburg-drivers-license-number.md)</br> - [Malta Sürücü Belgesi Numarası](sit-defn-malta-drivers-license-number.md)</br> - [Hollanda Ehliyet Numarası](sit-defn-netherlands-drivers-license-number.md)</br> - [Polonya Sürücü Belgesi Numarası](sit-defn-poland-drivers-license-number.md)</br> - [Portekiz Sürücü Ehliyeti Numarası](sit-defn-portugal-drivers-license-number.md)</br> - [Romanya Ehliyet Numarası](sit-defn-romania-drivers-license-number.md)</br> - [Slovakya Sürücü Ehliyeti Numarası](sit-defn-slovakia-drivers-license-number.md)</br> - [Slovenya Ehliyet Numarası](sit-defn-slovenia-drivers-license-number.md)</br> - [İspanya Ehliyet Numarası](sit-defn-spain-drivers-license-number.md)</br> - [İsveç Ehliyet Numarası](sit-defn-sweden-drivers-license-number.md)</br> - [Avusturya Pasaport Numarası](sit-defn-austria-passport-number.md) </br> - [Belçika Pasaport Numarası](sit-defn-belgium-passport-number.md) </br> - [Bulgaristan Pasaport Numarası](sit-defn-bulgaria-passport-number.md) </br> - [Hırvatistan Pasaport Numarası](sit-defn-croatia-passport-number.md) </br> - [Kıbrıs Pasaport Numarası](sit-defn-cyprus-passport-number.md) </br> - [Çek Cumhuriyeti Pasaport Numarası](sit-defn-czech-passport-number.md) </br> - [Danimarka Pasaport Numarası](sit-defn-denmark-passport-number.md)</br> - [Estonya Pasaport Numarası](sit-defn-estonia-passport-number.md)</br> - [Finlandiya Pasaport Numarası](sit-defn-finland-passport-number.md)</br> - [Fransa Pasaport Numarası](sit-defn-france-passport-number.md)</br> - [Alman Pasaport Numarası](sit-defn-germany-passport-number.md)</br> - [Yunanistan Pasaport Numarası](sit-defn-greece-passport-number.md)</br> - [Macaristan Pasaport Numarası](sit-defn-hungary-passport-number.md)</br> - [İrlanda Pasaport Numarası](sit-defn-ireland-passport-number.md)</br> - [İtalya Pasaport Numarası](sit-defn-italy-passport-number.md)</br> - [Letonya Pasaport Numarası](sit-defn-latvia-passport-number.md)</br> - [Litvanya Pasaport Numarası](sit-defn-lithuania-passport-number.md)</br> - [Luxemburg Pasaport Numarası](sit-defn-luxemburg-passport-number.md)</br> - [Malta Pasaport Numarası](sit-defn-malta-passport-number.md)</br> - [Hollanda Pasaport Numarası](sit-defn-netherlands-passport-number.md)</br> - [Polonya Pasaportu](sit-defn-poland-passport-number.md)</br> - [Portekiz Pasaport Numarası](sit-defn-portugal-passport-number.md)</br> - [Romanya Pasaport Numarası](sit-defn-romania-passport-number.md)</br> - [Slovakya Pasaport Numarası](sit-defn-slovakia-passport-number.md)</br> - [Slovenya Pasaport Numarası](sit-defn-slovenia-passport-number.md)</br> - [İspanya Pasaport Numarası](sit-defn-spain-passport-number.md)</br> - [İsveç Pasaport Numarası](sit-defn-sweden-passport-number.md)</br> - [AB Banka Kartı Numarası](sit-defn-eu-debit-card-number.md)</br> - [Tüm Tam Adlar](sit-defn-all-full-names.md)|
 |Gizlilik| Genel Veri Koruma Yönetmeliği (GDPR)|- [AB banka kartı numarası](sit-defn-eu-debit-card-number.md) </br> - [AB ehliyet numarası](sit-defn-eu-drivers-license-number.md) </br> - [AB ulusal kimlik numarası](sit-defn-eu-national-identification-number.md)</br> - [AB pasaport numarası](sit-defn-eu-passport-number.md) </br> - [AB sosyal güvenlik numarası veya eşdeğer kimlik](sit-defn-eu-social-security-number-equivalent-identification.md)</br> - [AB Vergi kimlik numarası](sit-defn-eu-tax-identification-number.md)|
-|Gizlilik| Almanya Kişisel Bilgiler (PII) Verileri|- [Almanya ehliyet numarası](sit-defn-germany-drivers-license-number.md) </br> - [Almanya pasaport numarası](sit-defn-germany-passport-number.md)| 
-|Gizlilik| İsrail Kişisel Bilgiler (PII) Verileri|- [İsrail ulusal kimlik numarası](sit-defn-israel-national-identification-number.md)| 
+|Gizlilik| Almanya Kişisel Bilgiler (PII) Verileri|- [Almanya ehliyet numarası](sit-defn-germany-drivers-license-number.md) </br> - [Almanya pasaport numarası](sit-defn-germany-passport-number.md)|
+|Gizlilik| İsrail Kişisel Bilgiler (PII) Verileri|- [İsrail ulusal kimlik numarası](sit-defn-israel-national-identification-number.md)|
 |Gizlilik| İsrail'de Gizliliğin Korunması|- [İsrail ulusal kimlik numarası](sit-defn-israel-national-identification-number.md)</br> - [İsrail banka hesap numarası](sit-defn-israel-bank-account-number.md)|
 |Gizlilik| Japonya Kişisel Bilgiler (PII) Verileri geliştirildi|- [Japonya Sosyal Sigorta Numarası (SIN)](sit-defn-japan-social-insurance-number.md)</br> - [Japonya Numaram - Kişisel](sit-defn-japan-my-number-personal.md)</br> - [Japonya pasaport numarası](sit-defn-japan-passport-number.md)</br> - [Japonya ehliyet numarası](sit-defn-japan-drivers-license-number.md)</br> - [Tüm Tam Adlar](sit-defn-all-full-names.md)</br> - [Japonya Fiziksel Adresleri](sit-defn-all-physical-addresses.md)|
 |Gizlilik| Japonya Kişisel Bilgiler (PII) Verileri|- [Japonya'da ikamet eden kayıt numarası](sit-defn-japan-resident-registration-number.md) </br> - [Japonya Sosyal Sigorta Numarası (SIN)](sit-defn-japan-social-insurance-number.md)|
@@ -120,7 +124,7 @@ Belirli OneDrive hesaplarını veya gruplarını dahil etmeyi veya hariç tutmay
 
 ### <a name="location-support-for-how-content-can-be-defined"></a>İçeriğin nasıl tanımlanabileceği için konum desteği
 
-DLP ilkeleri hassas öğeleri hassas bilgi türüyle (SIT) veya duyarlılık etiketiyle veya bekletme etiketiyle eşleştirerek algılar. Her konum, hassas içerik tanımlamanın farklı yöntemlerini destekler. İlkedeki konumları birleştirdiğinizde içeriğin nasıl tanımlandığı, tek bir konumla tanımlanma biçiminden farklı olabilir. 
+DLP ilkeleri hassas öğeleri hassas bilgi türüyle (SIT) veya duyarlılık etiketiyle veya bekletme etiketiyle eşleştirerek algılar. Her konum, hassas içerik tanımlamanın farklı yöntemlerini destekler. İlkedeki konumları birleştirdiğinizde içeriğin nasıl tanımlandığı, tek bir konumla tanımlanma biçiminden farklı olabilir.
 
 > [!IMPORTANT]
 > İlke için birden çok konum seçtiğinizde, içerik tanımı kategorisi için "hayır" değeri "evet" değerinden önceliklidir. Örneğin, yalnızca SharePoint sitelerini seçtiğinizde, ilke hassas öğelerin bir veya daha fazla SIT ile, duyarlılık etiketiyle veya bekletme etiketiyle algılanmasını destekler. Ancak, SharePoint sitelerini ***ve*** Teams sohbet ve kanal iletileri konumlarını seçtiğinizde, ilke yalnızca SIT ile hassas öğelerin algılanması desteğine sahip olur.
@@ -169,11 +173,11 @@ Kurallar, DLP ilkelerinin iş mantığıdır. Şunlardan oluşur:
 #### <a name="hosted-service-workloads"></a>Barındırılan hizmet iş yükleri
 
 Exchange Online, SharePoint Online ve OneDrive İş gibi barındırılan hizmet iş yükleri için her kurala oluşturulduğu sırada bir öncelik atanır. Bu, ilk oluşturulan kuralın ilk önceliğe sahip olduğu, ikinci oluşturulan kuralın ikinci önceliğe sahip olduğu vb. anlamına gelir.
-  
+
 ![Öncelik sırasına göre kurallar](../media/dlp-rules-in-priority-order.png)
 
 İçerik kurallara göre değerlendirildiğinde, kurallar öncelik sırasına göre işlenir. İçerik birden çok kuralla eşleşiyorsa, *en* kısıtlayıcı eyleme sahip olan ilk kural değerlendirilir. Örneğin, içerik aşağıdaki kuralların tümüyle eşleşiyorsa, kural *3* en yüksek öncelikli ve en kısıtlayıcı kural olduğundan zorlanır:
-  
+
 - Kural 1: Yalnızca kullanıcılara bildirir
 - Kural 2: Kullanıcılara bildirir, erişimi kısıtlar ve kullanıcı geçersiz kılmalarına izin verir
 - *Kural 3: Kullanıcılara bildirir, erişimi kısıtlar ve kullanıcı geçersiz kılmalarına izin vermez*
@@ -182,14 +186,14 @@ Exchange Online, SharePoint Online ve OneDrive İş gibi barındırılan hizmet 
 Kurallar 1, 2 ve 4 değerlendirilir ancak uygulanmaz. Bu örnekte, tüm kuralların eşleşmeleri denetim günlüklerine kaydedilir ve yalnızca en kısıtlayıcı kural uygulansa bile DLP raporlarında gösterilir.
 
 Belirli bir koruma gereksinimini karşılamak için bir kural kullanabilir ve ardından belirli bir düzenlemeye uymak için gereken tüm kurallar gibi ortak koruma gereksinimlerini gruplandırmak için bir DLP ilkesi kullanabilirsiniz.
-  
+
 Örneğin, Sağlık Sigortası Taşınabilirlik ve Sorumluluk Yasası'na (HIPAA) tabi bilgilerin varlığını algılamanıza yardımcı olan bir DLP ilkeniz olabilir. Bu DLP ilkesi, kuruluşunuzun dışındaki kişilerle paylaşılan bu hassas bilgileri içeren herhangi bir belgeyi (koşullar) bulup belgeye erişimi engelleyip bir bildirim (eylemler) göndererek tüm SharePoint Online sitelerinde ve tüm OneDrive İş sitelerinde (nerede) HIPAA verilerinin (ne olduğu) korunmasına yardımcı olabilir. Bu gereksinimler tek tek kurallar olarak depolanır ve yönetimi ve raporlamayı basitleştirmek için bir DLP ilkesi olarak gruplandırılır.
-  
+
 ![Diyagram, DLP ilkesinin konumlar ve kurallar içerdiğini gösterir](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
 
 #### <a name="for-endpoints"></a>Uç noktalar için
 
-Uç noktalardaki kuralların önceliği, oluşturulduğu sıraya göre de atanır. Bu, ilk oluşturulan kuralın ilk önceliğe sahip olduğu, ikinci oluşturulan kuralın ikinci önceliğe sahip olduğu vb. anlamına gelir. 
+Uç noktalardaki kuralların önceliği, oluşturulduğu sıraya göre de atanır. Bu, ilk oluşturulan kuralın ilk önceliğe sahip olduğu, ikinci oluşturulan kuralın ikinci önceliğe sahip olduğu vb. anlamına gelir.
 
 Uç nokta üzerindeki bir dosya birden çok DLP ilkesiyle eşleştiğinde, [uç nokta etkinliklerinde](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) en kısıtlayıcı zorlamayla etkinleştirilen ilk kural, içeriğe uygulanan kuraldır. Örneğin, içerik aşağıdaki kuralların tümüyle eşleşiyorsa, en kısıtlayıcı olduğu için 2. kural diğer kurallardan önceliklidir.
 
@@ -211,7 +215,7 @@ Diğer tüm kurallar değerlendirilir ancak eylemleri uygulanmaz. Denetim günl�
 Koşullar kapsayıcıdır ve kuralın ne aramasını istediğinizi ve bu öğelerin kullanıldığı bağlamı tanımladığınız yerdir. Kurala &#8212;, *buna* benzeyen ve *bu şekilde kullanılan* bir öğe bulduğunuzda &#8212; bir eşleşme olduğunu ve ilkedeki eylemlerin geri kalanının bu öğe üzerinde gerçekleştirilmesi gerektiğini söyler. Farklı risk düzeylerine farklı eylemler atamak için koşulları kullanabilirsiniz. Örneğin, şirket içinde paylaşılan hassas içerik daha düşük riskli olabilir ve kuruluş dışındaki kişilerle paylaşılan hassas içerikten daha az eylem gerektirebilir.
 
 > [!NOTE]
-> Konak kuruluşun Active Directory veya Azure Active Directory kiracısında konuk olmayan hesapları olan kullanıcılar, kuruluşun içindeki kişiler olarak kabul edilir. 
+> Konak kuruluşun Active Directory veya Azure Active Directory kiracısında konuk olmayan hesapları olan kullanıcılar, kuruluşun içindeki kişiler olarak kabul edilir.
 
 #### <a name="content-contains"></a>İçerik içeriği
 
@@ -220,7 +224,7 @@ Koşullar kapsayıcıdır ve kuralın ne aramasını istediğinizi ve bu öğele
 - [hassas bilgi türleri](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [duyarlılık etiketleri](sensitivity-labels.md)
 - [bekletme etiketleri](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
-- [Eğitilebilir Sınıflandırıcılar](classifier-learn-about.md) (önizlemede) 
+- [Eğitilebilir Sınıflandırıcılar](classifier-learn-about.md) (önizlemede)
 
 ilkeyi uygulamayı seçtiğiniz [konumlara](#location-support-for-how-content-can-be-defined) bağlı olarak.
 
@@ -278,7 +282,7 @@ Kullanılabilir bağlam seçenekleri, seçtiğiniz konuma bağlı olarak değiş
 - İletinin önemi
 
 ##### <a name="conditions-sharepoint-supports"></a>SharePoint'in desteklediği koşullar
- 
+
 - İçerik içeriği
 - İçerik Microsoft 365'ten paylaşılır
 - Oluşturan belge
@@ -305,17 +309,17 @@ Kullanılabilir bağlam seçenekleri, seçtiğiniz konuma bağlı olarak değiş
 
 - İçerik içeriği
 - İçerik Microsoft 365'ten paylaşılır
-- Gönderen 
-- Gönderen etki alanı 
-- Alıcı etki alanı 
-- Alıcı 
+- Gönderen
+- Gönderen etki alanı
+- Alıcı etki alanı
+- Alıcı
 
 ##### <a name="conditions-devices-supports"></a>Cihazların desteklediği koşullar
 
 - İçerik içeriği
-- (önizleme) Belge veya ek parola korumalıdır (.pdf, Office dosyaları ve Symantec PGP şifrelenmiş dosyaları tam olarak desteklenir). Bu koşul, dijital haklarla yönetilen (DRM) şifrelenmiş veya izin korumalı dosyaları algılamaz. 
+- (önizleme) Belge veya ek parola korumalıdır (.pdf, Office dosyaları ve Symantec PGP şifrelenmiş dosyaları tam olarak desteklenir). Bu koşul, dijital haklarla yönetilen (DRM) şifrelenmiş veya izin korumalı dosyaları algılamaz.
 - (önizleme) İçerik etiketlenmez (.pdf, Office dosyaları tam olarak desteklenir). Bu koşul, duyarlılık etiketi uygulanmamış içeriği algılar. Yalnızca desteklenen dosya türlerinin algılandığından emin olmak için bu koşulu **Dosya uzantısı veya Dosya** **türü koşulları** ile kullanmanız gerekir.
-- (önizleme) Kullanıcı Edge'den hassas bir web sitesine erişmiş. Daha fazla bilgi için bkz[. Senaryo 6 Hassas hizmet etki alanlarındaki kullanıcı etkinliklerini izleme veya kısıtlama (önizleme).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) 
+- (önizleme) Kullanıcı Edge'den hassas bir web sitesine erişmiş. Daha fazla bilgi için bkz[. Senaryo 6 Hassas hizmet etki alanlarındaki kullanıcı etkinliklerini izleme veya kısıtlama (önizleme).](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains)
 - Dosya uzantısı
 - Dosya türü:
 - Bkz [. üzerinde izleyebileceğiniz ve eylem gerçekleştirebileceğiniz uç nokta etkinlikleri](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
@@ -340,15 +344,15 @@ Kullanılabilir bağlam seçenekleri, seçtiğiniz konuma bağlı olarak değiş
 Bazen, tek bir SIT ile tanımlanan ABD Sosyal Güvenlik Numarası içeren tüm içerikler gibi yalnızca bir şeyi tanımlamak için bir kurala ihtiyacınız vardır. Ancak tanımlamaya çalıştığınız öğe türlerinin daha karmaşık olduğu ve bu nedenle tanımlanmasının daha zor olduğu birçok senaryoda, koşulları tanımlamada daha fazla esneklik gerekir.
 
 Örneğin, ABD Sağlık Sigortası Yasası'na (HIPAA) tabi içeriği tanımlamak için şunları aramanız gerekir:
-  
+
 - ABD Sosyal Güvenlik Numarası veya Uyuşturucu Uygulama Kurumu (DEA) Numarası gibi belirli türde hassas bilgiler içeren içerik.
-    
+
     Ve
-    
+
 - Bir hastanın bakımıyla ilgili iletişim veya sağlanan tıbbi hizmetlerin açıklamaları gibi tanımlanması daha zor olan içerikler. Bu içeriğin tanımlanması için Uluslararası Hastalık Sınıflandırması (ICD-9-CM veya ICD-10-CM) gibi büyük anahtar sözcük listelerinden anahtar sözcüklerin eşleşmesi gerekir.
-    
+
 Bu tür verileri, koşulları gruplandırarak ve gruplar arasında mantıksal işleçler (AND, OR) kullanarak tanımlayabilirsiniz.
-    
+
 **ABD Sağlık Sigortası Yasası (HIPPA)** için koşullar şu şekilde gruplandırılır:
 
 ![HIPPA ilke koşulları](../media/dlp-rules-condition-groups-booleans.png)
@@ -357,7 +361,7 @@ Bu tür verileri, koşulları gruplandırarak ve gruplar arasında mantıksal i�
 
 ### <a name="exceptions"></a>Özel durum
 
-Kurallarda özel durumlar, bir öğeyi ilkenin dışında tutmak için kullanılan koşulları tanımlar. Mantıksal olarak, kapsayıcı koşullar ve bağlamdan sonra değerlendirilen özel koşullar. Kurala &#8212; böyle *görünen ve bir* *eşleşme gibi kullanılan* bir öğe bulduğunuzda ve ilkedeki eylemlerin geri kalan kısmının bu öğe üzerinde gerçekleştirilip gerçekleştirilmediğini söyler&#8212; 
+Kurallarda özel durumlar, bir öğeyi ilkenin dışında tutmak için kullanılan koşulları tanımlar. Mantıksal olarak, kapsayıcı koşullar ve bağlamdan sonra değerlendirilen özel koşullar. Kurala &#8212; böyle *görünen ve bir* *eşleşme gibi kullanılan* bir öğe bulduğunuzda ve ilkedeki eylemlerin geri kalan kısmının bu öğe üzerinde gerçekleştirilip gerçekleştirilmediğini söyler&#8212;
 
 Örneğin, HIPPA ilkesine uygun olarak, belçika sürücü lisans numarası içeren herhangi bir öğeyi dışlamak için aşağıdaki gibi kuralı değiştirebiliriz:
 
@@ -371,15 +375,15 @@ Tüm konumlar kapsayıcı koşulu desteklediği gibi:
 
 özel durum şöyle olacaktır:
 
-- **İçeriğin** 
+- **İçeriğin**
 
-### <a name="actions"></a>Eylem 
+### <a name="actions"></a>Eylem
 
 Kapsayıcı ***koşullar** _ ve özel _*_durum_*_ filtreleri aracılığıyla bunu yapan tüm öğelere, kuralda tanımlanan _*_tüm eylemler_*_ uygulanır. Eylemi desteklemek için gerekli seçenekleri yapılandırmanız gerekir. Örneğin, _ *Erişimi kısıtla veya Microsoft 365 konumlarındaki içeriği şifrele* eylemiyle Exchange'i* seçerseniz şu seçenekler arasından seçim yapmanız gerekir:
 
 - Kullanıcıların paylaşılan SharePoint, OneDrive ve Teams içeriğine erişmesini engelleme
-    - Herkesi engelleyin. Yalnızca içerik sahibi, son değiştirici ve site yöneticisinin erişimi devam eder
-    - Yalnızca kuruluşunuzun dışındaki kişileri engelleyin. Kuruluşunuz içindeki kullanıcıların erişimi devam eder.
+  - Herkesi engelleyin. Yalnızca içerik sahibi, son değiştirici ve site yöneticisinin erişimi devam eder
+  - Yalnızca kuruluşunuzun dışındaki kişileri engelleyin. Kuruluşunuz içindeki kullanıcıların erişimi devam eder.
 - E-posta iletilerini şifreleme (yalnızca Exchange'deki içerik için geçerlidir)
 
 Bir kuralda kullanılabilen eylemler, seçilen konumlara bağlıdır. İlkenin uygulanacağı tek bir konum seçerseniz, kullanılabilir eylemler aşağıda listelenmiştir.
@@ -441,14 +445,13 @@ Cihazların konumu birçok alt etkinlik (koşul) ve eylem sağlar. Daha fazla bi
 **Tüm uygulamalar için Dosya etkinlikleri** seçeneğiyle **, Dosya etkinliklerini kısıtlama** veya **Belirli etkinliklere kısıtlama uygula'yı** seçersiniz. Belirli etkinliklere kısıtlama uygulamayı seçtiğinizde, burada seçtiğiniz eylemler bir kullanıcı DLP korumalı bir öğeye eriştiğinde uygulanır. Bu kullanıcı etkinliklerinde DLP'ye `Audit only`, `Block with override`( `Block` eylemleri) söyleyebilirsiniz:
 
 - **Panoya kopyala**
-- **USB çıkarılabilir sürücüye kopyalama** 
+- **USB çıkarılabilir sürücüye kopyalama**
 - **Ağ paylaşımına kopyalama**
 - **Yazdırma**
 - **İzin verilmeyen bir Bluetooth uygulamasını kullanarak kopyalama veya taşıma**
 - **Uzak masaüstü hizmetleri**
 
-
-##### <a name="restricted-app-activities"></a>Kısıtlı uygulama etkinlikleri  
+##### <a name="restricted-app-activities"></a>Kısıtlı uygulama etkinlikleri
 
 Daha önce İzin verilmeyen uygulamalar olarak adlandırılan uygulama listesini, kısıtlama uygulamak istediğiniz Uç Nokta DLP ayarlarında tanımlarsınız. Kullanıcı, listedeki bir uygulamayı kullanarak DLP korumalı bir dosyaya erişmeye çalıştığında, , `Block with override`veya `Block` etkinliği yapabilirsiniz`Audit only`. **Kısıtlı uygulama etkinliklerinde** tanımlanan DLP eylemleri, uygulama kısıtlı uygulama grubunun üyesiyse geçersiz kılınabilir. Ardından kısıtlı uygulama grubunda tanımlanan eylemler uygulanır.
 
@@ -462,7 +465,7 @@ Sınırlı uygulama gruplarınızı Uç Nokta DLP ayarlarında tanımlar ve ilke
 
 *Kısıtlamaları uygula* seçeneklerinden birini belirlediğinizde ve kullanıcı kısıtlanmış uygulama grubunda yer alan bir uygulamayı kullanarak DLP korumalı bir dosyaya erişmeye çalıştığında, , `Block with override`veya `Block` etkinliğine göre yapabilirsiniz`Audit only`. Burada tanımladığınız DLP eylemleri **, Uygulamanın tüm uygulamaları için Kısıtlı uygulama etkinlikleri** ve **Dosya etkinlikleri** bölümünde tanımlanan eylemleri geçersiz kılar.
 
-Daha fazla bilgi için bkz [. Kısıtlı uygulamalar ve uygulama grupları](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) . 
+Daha fazla bilgi için bkz [. Kısıtlı uygulamalar ve uygulama grupları](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) .
 
 #### <a name="microsoft-defender-for-cloud-apps-actions"></a>eylemleri Microsoft Defender for Cloud Apps
 
@@ -496,7 +499,7 @@ eylemler kullanılabilir olacaktır.
 
 Ve
 
-- Exchange olmayan konumlar için tüm eylemler 
+- Exchange olmayan konumlar için tüm eylemler
 
 eylemler kullanılabilir olacaktır.
 
@@ -511,18 +514,16 @@ Cihazlar'ı ve Microsoft Defender for Cloud Apps seçerseniz şu eylemler kullan
 - Windows cihazlarında etkinlikleri denetleme veya kısıtlama
 - Üçüncü Taraf Uygulamalarını Kısıtlama
 
-Bir eylemin etkili olup olmayacağı, ilke modunu nasıl yapılandırdığınıza bağlıdır. **İlk** olarak test et seçeneğini belirleyerek ilke ipucunu göstererek veya göstermeden ilkeyi test modunda çalıştırmayı seçebilirsiniz. İlkeyi oluşturulduktan bir saat sonra hemen **aç seçeneğini** belirleyerek çalıştırmayı seçebilir veya yalnızca kaydetmeyi ve daha sonra geri dönmek için **Kapalı tut** seçeneğini belirleyebilirsiniz. 
-
+Bir eylemin etkili olup olmayacağı, ilke modunu nasıl yapılandırdığınıza bağlıdır. **İlk** olarak test et seçeneğini belirleyerek ilke ipucunu göstererek veya göstermeden ilkeyi test modunda çalıştırmayı seçebilirsiniz. İlkeyi oluşturulduktan bir saat sonra hemen **aç seçeneğini** belirleyerek çalıştırmayı seçebilir veya yalnızca kaydetmeyi ve daha sonra geri dönmek için **Kapalı tut** seçeneğini belirleyebilirsiniz.
 
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
 
-
 ### <a name="user-notifications-and-policy-tips"></a>Kullanıcı bildirimleri ve ilke ipuçları
 
-<!--This section introduces the business need for user notifications, what they are, their benefit, how to use them, how to customize them, and links out to 
+<!--This section introduces the business need for user notifications, what they are, their benefit, how to use them, how to customize them, and links out to
 
-- https://learn.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips?view=o365-worldwide
-- https://learn.microsoft.com/microsoft-365/compliance/dlp-policy-tips-reference?view=o365-worldwide
+- /microsoft-365/compliance/use-notifications-and-policy-tips
+- /microsoft-365/compliance/dlp-policy-tips-reference
 
 for where they are used/expected behavior-->
 
@@ -535,6 +536,7 @@ Kullanıcı, bir kuralın koşullarını ve özel durumlarını karşılayan bir
 ![İleti çubuğu, Excel 2016 ilke ipucunu gösterir](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
 > [!IMPORTANT]
+>
 > - Bildirim e-postaları korumasız gönderilir.
 > - Email bildirimleri yalnızca Microsoft 365 hizmetleri için desteklenir.
 
@@ -544,13 +546,13 @@ Kullanıcı, bir kuralın koşullarını ve özel durumlarını karşılayan bir
 |---------|---------|
 |Aygıtları     |- Desteklenmez         |
 |Exchange + Cihazlar     |- Exchange için desteklenir </br>- Cihazlar için desteklenmez  |
-|Exchange    |- Desteklenir        |
+|Exchange    |-Desteklenen        |
 |SharePoint + Cihazlar  |- SharePoint için desteklenir </br>- Cihazlar için desteklenmez         |
-|SharePoint    |- Desteklenir |
+|SharePoint    |-Desteklenen |
 |Exchange + SharePoint    |- Exchange için desteklenir </br>- SharePoint için desteklenir  |
 |Cihazlar + SharePoint + Exchange    |- Cihazlar için desteklenmez </br>- SharePoint için desteklenir </br> Exchange için desteklenir |
 |Teams    |- Desteklenmez |
-|OneDrive İş   |- Desteklenir         |
+|OneDrive İş   |-Desteklenen         |
 |OneDrive İş + Cihazlar     |- OneDrive İş için desteklenir </br>- Cihazlar için desteklenmez         |
 |Power-BI|- Desteklenmez|
 |Bulut Uygulamaları için Microsoft Defender|- Desteklenmez|
@@ -566,15 +568,11 @@ Kullanıcı bildirimleri ve ilke ipuçları yapılandırma seçenekleri, seçti�
 - Teams Sohbeti ve Kanalı
 - Bulut Uygulamaları için Defender
 
-
-
-
-
 Çeşitli Microsoft uygulamaları için kullanıcı bildirimlerini etkinleştirebilir/devre dışı bırakabilirsiniz, bkz. [Veri Kaybı Önleme ilkesi ipuçları başvurusu](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
 
 - İlke ipucuyla bildirimleri etkinleştirebilir/devre dışı bırakabilirsiniz.
-    - veya içeriğini gönderen, paylaşan veya son değiştiren kullanıcıya e-posta bildirimleri gönderme
-    - belirli kişilere bildirme
+  - veya içeriğini gönderen, paylaşan veya son değiştiren kullanıcıya e-posta bildirimleri gönderme
+  - belirli kişilere bildirme
 
 ve e-posta metnini, konusunu ve ilke ipucu metnini özelleştirin.
 
@@ -582,7 +580,7 @@ ve e-posta metnini, konusunu ve ilke ipucu metnini özelleştirin.
 
 Yalnızca cihazlar'ı seçtiyseniz Exchange, SharePoint, OneDrive, Teams Sohbet ve Kanal ile Cloud Apps için Defender'da kullanılabilen tüm seçeneklerin yanı sıra Windows 10 cihazda görünen bildirim başlığını ve içeriği özelleştirme seçeneğini de alırsınız.
 
-![Cihazlar için kullanılabilen kullanıcı bildirimi ve ilke ipucu yapılandırma seçenekleri](../media/dlp-user-notification-devices.png)  
+![Cihazlar için kullanılabilen kullanıcı bildirimi ve ilke ipucu yapılandırma seçenekleri](../media/dlp-user-notification-devices.png)
 
 Bu parametreleri kullanarak metnin başlığını ve gövdesini özelleştirebilirsiniz. Gövde metni şunları destekler:
 
@@ -594,7 +592,6 @@ Bu parametreleri kullanarak metnin başlığını ve gövdesini özelleştirebil
 |Eylem | %%AppliedActions%% | panodaki belge içeriğini başka bir uygulamaya yapıştırma |
 
 **%%AppliedActions%%** bu değerleri ileti gövdesiyle değiştirmektedir:
-
 
 |eylem ortak adı |%%AppliedActions%% parametresi için yerine değer girildi |
 |---------|---------|
@@ -610,36 +607,35 @@ Bu parametreleri kullanarak metnin başlığını ve gövdesini özelleştirebil
 
 Bu özelleştirilmiş metni kullanma
 
-*%%AppliedActions%% %%ProcessName%% aracılığıyla %%FileName%% dosya adı kuruluşunuz tarafından kullanılamaz. %%PolicyName%% ilkesini atlamak istiyorsanız 'İzin Ver' seçeneğine tıklayın* 
+*%%AppliedActions%% %%ProcessName%% aracılığıyla %%FileName%% dosya adı kuruluşunuz tarafından kullanılamaz. %%PolicyName%% ilkesini atlamak istiyorsanız 'İzin Ver' seçeneğine tıklayın*
 
 bu metni özelleştirilmiş bildirimde üretir:
 
 *panodan yapıştırma Dosya Adı: WINWORD.EXE aracılığıyla Contoso doc 1'e kuruluşunuz izin vermez. Contoso son derece gizli ilkesini atlamak istiyorsanız 'İzin Ver' düğmesine tıklayın*
- 
 
 > [!NOTE]
 > Şirket içi konumu için kullanıcı bildirimleri ve ilke ipuçları kullanılamıyor
-
-> [!NOTE]
+>
 > Yalnızca en yüksek önceliğe ve en kısıtlayıcı kurala ait ilke ipucu gösterilir. Örneğin, içeriğe erişimi engelleyen bir kuraldan gelen ilke ipucu, yalnızca bildirim gönderen bir kuraldan gelen ilke ipucu üzerinden gösterilir. Bu, kişilerin ilke ipuçlarının art arda görülmesini önler.
 
-Bildirim ve ipucu metnini özelleştirme de dahil olmak üzere kullanıcı bildirimi ve ilke ipucu yapılandırması ve kullanımı hakkında daha fazla bilgi edinmek için bkz. 
+Bildirim ve ipucu metnini özelleştirme de dahil olmak üzere kullanıcı bildirimi ve ilke ipucu yapılandırması ve kullanımı hakkında daha fazla bilgi edinmek için bkz.
+
 - [E-posta bildirimleri gönderin ve DLP ilkeleri için ilke ipuçlarını gösterin](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies).
-  
+
 <!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
-  
+
 In addition to sending an email notification, a user notification displays a policy tip:
-  
+
 - In Outlook and Outlook on the web.
-    
+
 - For the document on a SharePoint Online or OneDrive for Business site.
-    
+
 - In Excel, PowerPoint, and Word, when the document is stored on a site included in a DLP policy.
-    
+
 The email notification and policy tip explain why content conflicts with a DLP policy. If you choose, the email notification and policy tip can allow users to override a rule by reporting a false positive or providing a business justification. This can help you educate users about your DLP policies and enforce them without preventing people from doing their work. Information about overrides and false positives is also logged for reporting (see below about the DLP reports) and included in the incident reports (next section), so that the compliance officer can regularly review this information.
-  
+
 Here's what a policy tip looks like in a OneDrive for Business account.
-  
+
 ![Policy tip for a document in a OneDrive account](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
 
  To learn more about user notifications and policy tips in DLP policies, see [Use notifications and policy tips](use-notifications-and-policy-tips.md).
@@ -660,24 +656,23 @@ Bu tabloda, Kapsamı SharePoint Online ve OneDrive İş olan ilkeler için DLP e
 |- **İçerik Microsoft 365'ten paylaşılır** </br>- **kuruluşum dışındaki kişilerle** |  - **Microsoft 365 konumlarındaki içeriği kısıtlama veya içeriği şifreleme** seçili </br>- **Kullanıcıların e-posta almasını veya paylaşılan SharePoint, OneDrive ve Teams dosyalarına erişmesini engelle** seçili </br>- **Herkesin** seçilmesini engelle        | - **Kullanıcı bildirimleri** **Açık** olarak ayarlandı </br>- **İlke ipucu seçiliyken Office 365 hizmetindeki kullanıcılara bildirme** </br>- **İçeriği gönderen, paylaşan veya en son değiştiren kullanıcıyı bilgilendirin**         | - **Kural eşleşmesi açık olarak ayarlandığında yöneticilere uyarı gönderme**  </br>- **Bir etkinlik kuralla her eşleştiğinde uyarı gönder** seçili durumda </br>- **İlke eşleşmesi Açık olarak ayarlandığında sizi bilgilendirmek için e-posta olay raporlarını kullanın**         |Bir dosya bir dış kullanıcıyla paylaşıldığında ve bir dış kullanıcı bu dosyaya eriştiğinde bildirimler gönderilir.         |
 |- **İçerik Microsoft 365'ten paylaşılır** </br>- **kuruluşum dışındaki kişilerle**     |- **Microsoft 365 konumlarındaki içeriği kısıtlama veya içeriği şifreleme** seçili </br>- **Yalnızca "Bağlantıya sahip herkes" seçeneğiyle içeriğe erişim izni verilen kişileri engelle** seçeneği belirlenir.         |  - **Kullanıcı bildirimleri** **Açık** olarak ayarlandı </br>- **Office 365 hizmetindeki kullanıcılara bir ilke ipucu** seçildiğini bildirin.  </br>- **İçeriği gönderen, paylaşan veya en son değiştiren kullanıcıyı bilgilendirin**     |- **Kural eşleşmesi açık olarak ayarlandığında yöneticilere uyarı gönderme**    </br>- **Bir etkinlik kuralla her eşleştiğinde uyarı gönder** seçili durumda </br>- **İlke eşleşmesi Açık olarak ayarlandığında sizi bilgilendirmek için e-posta olay raporlarını kullanın**        |Bir dosya karşıya yüklenir yüklenmez bildirimler gönderilir         |
 
-
 ### <a name="user-overrides"></a>Kullanıcı geçersiz kılmaları
 
-**Kullanıcı geçersiz kılmalarının** amacı, kullanıcılara, çalışmalarına devam edebilmeleri için Exchange, SharePoint, OneDrive veya Teams'deki hassas öğeler üzerinde eylemleri engelleyen gerekçeyle, DLP ilkesini atlayacak bir yol sunmaktır. Kullanıcı geçersiz kılmaları yalnızca **Office 365 hizmetlerindeki kullanıcılara bir ilke ipucuyla bildir** seçeneği etkinleştirildiğinde etkinleştirilir, bu nedenle kullanıcı geçersiz kılmaları Bildirimler ve İlke ipuçlarıyla el ele gider. 
+**Kullanıcı geçersiz kılmalarının** amacı, kullanıcılara, çalışmalarına devam edebilmeleri için Exchange, SharePoint, OneDrive veya Teams'deki hassas öğeler üzerinde eylemleri engelleyen gerekçeyle, DLP ilkesini atlayacak bir yol sunmaktır. Kullanıcı geçersiz kılmaları yalnızca **Office 365 hizmetlerindeki kullanıcılara bir ilke ipucuyla bildir** seçeneği etkinleştirildiğinde etkinleştirilir, bu nedenle kullanıcı geçersiz kılmaları Bildirimler ve İlke ipuçlarıyla el ele gider.
 
 ![DLP ilkesi için kullanıcı geçersiz kılma seçenekleri](../media/dlp-user-overrides.png)
 
 > [!NOTE]
 > Şirket içi depolar konumu için kullanıcı geçersiz kılmaları kullanılamaz.
 
-Genellikle, kuruluşunuz bir ilkeyi ilk dağıttığında kullanıcı geçersiz kılmaları yararlıdır. Geçersiz kılma gerekçelerinden ve hatalı pozitif sonuçların belirlenmesinden elde ettiğiniz geri bildirim, ilkenin ayarlanmasına yardımcı olur. 
+Genellikle, kuruluşunuz bir ilkeyi ilk dağıttığında kullanıcı geçersiz kılmaları yararlıdır. Geçersiz kılma gerekçelerinden ve hatalı pozitif sonuçların belirlenmesinden elde ettiğiniz geri bildirim, ilkenin ayarlanmasına yardımcı olur.
 
-<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
+<!-- This section covers what they are and how to best use them in conjunction with Test/Turn it on right away and link out to where to find the business justification for the override (DLP reports?  /microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide)  /microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide#view-the-justification-submitted-by-a-user-for-an-override-->
 
 - En kısıtlayıcı kuraldaki ilke ipuçları kişilerin kuralı geçersiz kılmasına izin verirse, bu kuralın geçersiz kılınmış olması, içeriğin eşleştirilen diğer kuralları da geçersiz kılar.
- 
+
 <!--![User notifications and user overrides sections of DLP rule editor](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)-->
- 
+
 Kullanıcı geçersiz kılmaları hakkında daha fazla bilgi edinmek için bkz:
 
 - [Geçersiz kılma için kullanıcı tarafından gönderilen gerekçeyi görüntüleme](view-the-dlp-reports.md#view-the-justification-submitted-by-a-user-for-an-override)
@@ -686,9 +681,8 @@ Kullanıcı geçersiz kılmaları hakkında daha fazla bilgi edinmek için bkz:
 
 <!--DLP interacts with other M365 information protection services, like IR. Link this to a process outline for triaging/managing/resolving DLP incidents
 
-
-https://learn.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
-https://learn.microsoft.com/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
+/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
+/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
 
 Bir kural eşleştirildiğinde, uyumluluk yöneticinize (veya seçtiğiniz kişilere) olayın ayrıntılarını içeren bir olay raporu gönderebilirsiniz. Rapor, eşleşen öğe, kuralla eşleşen gerçek içerik ve içeriği son değiştiren kişinin adı hakkında bilgi içerir. E-posta iletileri için rapor, DLP ilkesiyle eşleşen özgün iletiyi ek olarak da içerir.
 

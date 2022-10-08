@@ -12,17 +12,19 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.openlocfilehash: ca156b12909b3bce27375f35a5fbfab16e6ca579
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: 3a2365dbc2e58d33b11c75faeca7e8f3fb39dfb8
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67701554"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492626"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Power BI kullanarak özel raporlar oluşturma
 
@@ -37,6 +39,9 @@ ms.locfileid: "67701554"
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+> [!NOTE]
+>**Başlamadan önce**: Önce [bir uygulama oluşturmanız](/microsoft-365/security/defender-endpoint/apis-intro) gerekir.
 
 Bu bölümde, Uç Nokta için Defender API'lerinin üzerinde bir Power BI raporu oluşturmayı öğreneceksiniz.
 
@@ -54,55 +59,58 @@ Bu bölümde, Uç Nokta için Defender API'lerinin üzerinde bir Power BI raporu
 
 4. Aşağıdakini kopyalayın ve düzenleyiciye yapıştırın:
 
-```
-    let
-        AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
-
-        HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
-
-        Response = Json.Document(Web.Contents(HuntingUrl, [Query=[key=AdvancedHuntingQuery]])),
-
-        TypeMap = #table(
-            { "Type", "PowerBiType" },
-            {
-                { "Double",   Double.Type },
-                { "Int64",    Int64.Type },
-                { "Int32",    Int32.Type },
-                { "Int16",    Int16.Type },
-                { "UInt64",   Number.Type },
-                { "UInt32",   Number.Type },
-                { "UInt16",   Number.Type },
-                { "Byte",     Byte.Type },
-                { "Single",   Single.Type },
-                { "Decimal",  Decimal.Type },
-                { "TimeSpan", Duration.Type },
-                { "DateTime", DateTimeZone.Type },
-                { "String",   Text.Type },
-                { "Boolean",  Logical.Type },
-                { "SByte",    Logical.Type },
-                { "Guid",     Text.Type }
-            }),
-
-        Schema = Table.FromRecords(Response[Schema]),
-        TypedSchema = Table.Join(Table.SelectColumns(Schema, {"Name", "Type"}), {"Type"}, TypeMap , {"Type"}),
-        Results = Response[Results],
-        Rows = Table.FromRecords(Results, Schema[Name]),
-        Table = Table.TransformColumnTypes(Rows, Table.ToList(TypedSchema, (c) => {c{0}, c{2}}))
-
-    in Table
-```
+   ```
+       let
+           AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
+   
+           HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
+   
+           Response = Json.Document(Web.Contents(HuntingUrl, [Query=[key=AdvancedHuntingQuery]])),
+   
+           TypeMap = #table(
+               { "Type", "PowerBiType" },
+               {
+                   { "Double",   Double.Type },
+                   { "Int64",    Int64.Type },
+                   { "Int32",    Int32.Type },
+                   { "Int16",    Int16.Type },
+                   { "UInt64",   Number.Type },
+                   { "UInt32",   Number.Type },
+                   { "UInt16",   Number.Type },
+                   { "Byte",     Byte.Type },
+                   { "Single",   Single.Type },
+                   { "Decimal",  Decimal.Type },
+                   { "TimeSpan", Duration.Type },
+                   { "DateTime", DateTimeZone.Type },
+                   { "String",   Text.Type },
+                   { "Boolean",  Logical.Type },
+                   { "SByte",    Logical.Type },
+                   { "Guid",     Text.Type }
+               }),
+   
+           Schema = Table.FromRecords(Response[Schema]),
+           TypedSchema = Table.Join(Table.SelectColumns(Schema, {"Name", "Type"}), {"Type"}, TypeMap , {"Type"}),
+           Results = Response[Results],
+           Rows = Table.FromRecords(Results, Schema[Name]),
+           Table = Table.TransformColumnTypes(Rows, Table.ToList(TypedSchema, (c) => {c{0}, c{2}}))
+   
+       in Table
+   ```
 
 5. **Bitti'yi** seçin.
 
 6. **Kimlik Bilgilerini Düzenle'yi** seçin.
+
    :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="Kimlik Bilgilerini Düzenle menü öğesi" lightbox="images/power-bi-edit-credentials.png":::
 
 7. **Kuruluş hesabı** \> **Oturum aç'ı** seçin.
+
    :::image type="content" source="images/power-bi-set-credentials-organizational.png" alt-text="Kuruluş hesabı menü öğesinde Oturum aç seçeneği" lightbox="images/power-bi-set-credentials-organizational.png":::
 
 8. Kimlik bilgilerinizi girin ve oturum açmak için bekleyin.
 
-9. **Bağlan'ı** seçin. </br>
+9. **Bağlan'ı** seçin.
+
    :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="Kuruluş hesabı menü öğesindeki oturum açma onayı iletisi" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
 
 Artık sorgunuzun sonuçları bir tablo olarak görünür ve üzerine görselleştirmeler oluşturmaya başlayabilirsiniz!
@@ -111,7 +119,7 @@ Artık sorgunuzun sonuçları bir tablo olarak görünür ve üzerine görselle�
 
 ## <a name="connect-power-bi-to-odata-apis"></a>Power BI'ı OData API'lerine bağlama
 
-Önceki örnekten tek farkı düzenleyicinin içindeki sorgudur. Yukarıdaki 1-3 arası adımları izleyin. 
+Önceki örnekten tek farkı düzenleyicinin içindeki sorgudur. Yukarıdaki 1-3 arası adımları izleyin.
 
 4. adımda, bu örnekteki kod yerine aşağıdaki kodu kopyalayın ve kuruluşunuzdan tüm **Makine Eylemleri'ni** çekmek için düzenleyiciye yapıştırın:
 
@@ -138,6 +146,6 @@ Uç Nokta için Microsoft Defender Power BI rapor örneklerini görüntüleyin. 
 
 ## <a name="related-topics"></a>İlgili konular
 
-- [Uç Nokta API'leri için Defender](apis-intro.md) 
-- [Gelişmiş Avcılık API'si](run-advanced-query-api.md) 
+- [Uç Nokta API'leri için Defender](apis-intro.md)
+- [Gelişmiş Avcılık API'si](run-advanced-query-api.md)
 - [OData Sorgularını Kullanma](exposed-apis-odata-samples.md)

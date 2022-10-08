@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: ABD ehliyet numarası hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: d25de827c913781c0426d8c6262bcb9f421ee73e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9659bfce35958409e54ffe7ff15e948e5b980d6f
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66989318"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472573"
 ---
 # <a name="us-drivers-license-number"></a>ABD ehliyet numarası
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -39,23 +42,23 @@ eyalete bağlıdır; örneğin, New York:
 - ddd ddd ddd gibi biçimlendirilmiş dokuz basamak eşleşir.
 - ddd gibi dokuz basamak eşleşmez.
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
 ## <a name="definition"></a>Tanım
 
-DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının orta düzeyde güvenilirliğine sahiptir:
+DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığına dair orta düzeyde güvene sahiptir:
 
-- İşlev `Func_new_york_drivers_license_number` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_[state_name]_drivers_license_name` bir anahtar sözcük bulunur.
-- 'den `Keyword_us_drivers_license` bir anahtar sözcük bulunur.
+- İşlev `Func_new_york_drivers_license_number`, desenle eşleşen içeriği bulur.
+- `Keyword_[state_name]_drivers_license_name` içinden bir anahtar sözcük bulundu.
+- `Keyword_us_drivers_license` içinden bir anahtar sözcük bulundu.
 
 DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandığının güvenilirliği düşüktür:
 
-- İşlev `Func_new_york_drivers_license_number` , desenle eşleşen içeriği bulur.
-- 'den `Keyword_[state_name]_drivers_license_name` bir anahtar sözcük bulunur.
-- 'den `Keyword_us_drivers_license_abbreviations` bir anahtar sözcük bulunur.
+- İşlev `Func_new_york_drivers_license_number`, desenle eşleşen içeriği bulur.
+- `Keyword_[state_name]_drivers_license_name` içinden bir anahtar sözcük bulundu.
+- `Keyword_us_drivers_license_abbreviations` içinden bir anahtar sözcük bulundu.
 - anahtar `Keyword_us_drivers_license` sözcüğü bulunamadı.
 
 ```xml
@@ -80,23 +83,23 @@ DLP ilkesi, 300 karaktere yakın olduğunda bu tür hassas bilgiler algılandı�
 
 ### <a name="keyword_us_drivers_license_abbreviations"></a>Keyword_us_drivers_license_abbreviations
 
-- DL
-- DLS
+- Dl
+- Dls
 - CDL
 - CDLS
 - Kimlik
 - Kimlik
-- DL #
-- DLS #
+- Dl #
+- Dls #
 - CDL #
 - CDLS #
-- KİMLİĞİ #
+- Kimliği #
 - Kimlik #
 - Kimlik numarası
 - Kimlik numaraları
-- LİSANSI
-- LİSANSI #
-- DLN
+- Lisansı
+- Lisansı #
+- Dln
 
 ### <a name="keyword_us_drivers_license"></a>Keyword_us_drivers_license
 

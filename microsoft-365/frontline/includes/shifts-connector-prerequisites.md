@@ -4,13 +4,13 @@ ms.author: v-lanachin
 ms.date: 03/31/2022
 ms.topic: include
 audience: admin
-ms.service: msteams
-ms.openlocfilehash: ab375a876eb62e5f41e5dd7cda3743d4010b95ff
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.service: microsoft-365-frontline
+ms.openlocfilehash: 89752e9d13f8647b1c99f6ad99c2baa096b74e02
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66824647"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300082"
 ---
 Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
@@ -35,6 +35,6 @@ Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
      - proxyHeader: X-MS-AuthToken
 
 - Teams'te en az bir ekip ayarlanır.
-- Microsoft 365 sistem hesabınızı eşlemek istediğiniz tüm takımlara ekip sahibi olarak eklediniz.</br> [Bu hesabı Microsoft 365'te oluşturun](/microsoft-365/admin/add-users/add-users) ve bir Microsoft 365 lisansı atayın. Ardından hesabı eşlemek istediğiniz tüm ekiplere ekip sahibi olarak ekleyin. Shifts bağlayıcısı, Blue Yonder WFM vardiya değişikliklerini eşitlerken bu hesabı kullanır.
+- Eşlemek istediğiniz tüm takımlara ekip sahibi olarak bir Microsoft 365 sistem hesabı eklediniz.</br> [Bu hesabı Microsoft 365'te oluşturun](/microsoft-365/admin/add-users/add-users) ve bir Microsoft 365 lisansı atayın. Ardından hesabı eşlemek istediğiniz tüm ekiplere ekip sahibi olarak ekleyin. Shifts bağlayıcısı, Blue Yonder WFM vardiya değişikliklerini eşitlerken bu hesabı kullanır.
 
     Bu amaçla özel olarak bir hesap oluşturmanızı ve kullanıcı hesabınızı kullanmamanızı öneririz.

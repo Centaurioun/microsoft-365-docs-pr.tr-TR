@@ -13,15 +13,16 @@ ms.localizationpriority: high
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 22b820bdbb372b5f07967836613a9d7348bd7b1c
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 64a5e8a8cede1481c42add9383239ae6b4ad4f06
+ms.sourcegitcommit: 99b174a8d431092b3cf7d650593248671297fd91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66862513"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68300081"
 ---
 # <a name="use-powershell-to-connect-shifts-to-blue-yonder-workforce-management"></a>PowerShell kullanarak Vardiyaları Mavi Yonder'a bağlama Workforce Management
 
@@ -37,7 +38,7 @@ Bağlantıyı kurmak için bir PowerShell betiği çalıştırırsınız. Betik 
 
 Her birinde farklı eşitleme ayarları olan birden çok bağlantı ayarlayabilirsiniz. Örneğin, kuruluşunuzun farklı zamanlama gereksinimlerine sahip birden çok konumu varsa, her konum için benzersiz eşitleme ayarlarıyla bir bağlantı oluşturun. Blue Yonder WFM örneğinin herhangi bir anda yalnızca bir ekiple eşlenebileceğini unutmayın. Bir örnek zaten bir takımla eşlenmişse, başka bir takımla eşlenemez.
 
-Kayıt sistemi olarak Blue Yonder WFM, ön cephe çalışanlarınız vardiyaları görebilir ve değiştirebilir, uygunluklarını yönetebilir ve cihazlarında Vardiyalar'da izin isteyebilir. Ön cephe yöneticileri, zamanlamaları ayarlamak için Blue Yonder WFM kullanmaya devam edebilir.
+Kayıt sistemi olarak Blue Yonder WFM, ön cephe çalışanlarınız kendi cihazlarında Vardiyalar'da zamanlamalarını ve kullanılabilirliklerini verimli bir şekilde yönetebilir. Ön cephe yöneticileri, zamanlamaları ayarlamak için Blue Yonder WFM kullanmaya devam edebilir.
 
 > [!NOTE]
 > [Ayrıca, Microsoft 365 yönetim merkezi'deki Vardiyalar bağlayıcı sihirbazını](shifts-connector-wizard.md) kullanarak Shift'leri Mavi Yonder WFM bağlayabilirsiniz.
@@ -104,9 +105,19 @@ Betik aşağıdaki eylemleri gerçekleştirir. Kurulum ve yapılandırma ayrınt
 
 Ekrandaki Başarılı iletisi bağlantınızın başarıyla ayarlandığını gösterir.
 
-## <a name="if-you-need-to-make-changes-to-a-connection"></a>Bir bağlantıda değişiklik yapmanız gerekiyorsa
+## <a name="manage-your-connection"></a>Bağlantınızı yönetme
 
-Ayarlandıktan sonra bir bağlantıda değişiklik yapmak için bkz. [PowerShell kullanarak Blue Yonder Workforce Management Vardiyalar bağlantınızı yönetme](shifts-connector-powershell-manage.md). Örneğin, eşitleme ayarlarını, ekip eşlemelerini güncelleştirebilir ve bir bağlantı için eşitlemeyi devre dışı bırakabilirsiniz.
+Bağlantı kurulduktan sonra, Microsoft 365 yönetim merkezi veya PowerShell kullanarak bu bağlantıyı yönetebilir ve bu bağlantıda değişiklik yapabilirsiniz.
+
+### <a name="use-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi kullanma
+
+Bağlayıcı Yönetimi sayfasında, ayarladığınız her bağlantının yanı sıra sistem durumu ve eşitleme aralığı ayrıntıları gibi bilgiler listelenir. Bağlantılarınızdan herhangi birinde değişiklik yapmak için sihirbaza da erişebilirsiniz. Örneğin, eşitleme ayarlarını ve ekip eşlemelerini güncelleştirebilirsiniz.
+
+Daha fazla bilgi edinmek için bkz. [Microsoft 365 yönetim merkezi kullanarak Blue Yonder Workforce Management Vardiyalar bağlantınızı yönetme](shifts-connector-blue-yonder-admin-center-manage.md).
+
+### <a name="use-powershell"></a>PowerShell kullanma
+
+PowerShell'i kullanarak hata raporunu görüntüleyebilir, bağlantı ayarlarını değiştirebilir, eşitlemeyi devre dışı bırakabilir ve daha fazlasını yapabilirsiniz. Adım adım yönergeler için bkz. [PowerShell kullanarak Blue Yonder Workforce Management Vardiyalar bağlantınızı yönetme](shifts-connector-powershell-manage.md).
 
 ## <a name="scripts"></a>Komut dosyaları
 
@@ -120,7 +131,7 @@ Start-Sleep 1
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.1.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
     throw
 }
@@ -138,7 +149,7 @@ $enabledConnectorScenario = $blueYonder.SupportedScenario
 $wfiSupportedScenario = $blueYonder.wfiSupportedScenario
 
 #Prompt for entering of WFM username and password
-$WfmUserName = Read-Host -Prompt 'Input your WFM super user name'
+$WfmUserName = Read-Host -Prompt 'Input your WFM user name'
 $WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
 
@@ -151,7 +162,20 @@ $essApiUrl = Read-Host -Prompt 'Input ess api url'
 $federatedAuthUrl = Read-Host -Prompt 'Input federated authorization url'
 $retailWebApiUrl = Read-Host -Prompt 'Input retail web api url'
 $siteManagerUrl = Read-Host -Prompt 'Input site manager url'
-$testResult = Test-CsTeamsShiftsConnectionValidate -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName
+$testResult = Test-CsTeamsShiftsConnectionValidate `
+    -Name $InstanceName `
+    -ConnectorId $BlueYonderId `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+        -Property @{
+            AdminApiUrl = $adminApiUrl
+            SiteManagerUrl = $siteManagerUrl
+            EssApiUrl = $essApiUrl
+            RetailWebApiUrl = $retailWebApiUrl
+            CookieAuthUrl = $cookieAuthUrl
+            FederatedAuthUrl = $federatedAuthUrl
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+        })
 if ($testResult.Code -ne $NULL) {
     write $testResult
     throw "Validation failed, conflict found"
@@ -160,7 +184,7 @@ Write-Host "Test complete, no conflicts found"
 
 #Create a connection instance (includes WFM site team ids)
 Write-Host "Creating a connection instance"
-$designatorName = Read-Host -Prompt "Enter your Microsoft 365's user name"
+$designatorName = Read-Host -Prompt "Input designated actor's user name"
 $domain = $designatorName.Split("@")[1]
 $designator = Get-MgUser -UserId $designatorName
 $teamsUserId = $designator.Id
@@ -179,7 +203,25 @@ if ($decision -eq 1) {
     break
 }
 }
-$InstanceResponse = New-CsTeamsShiftsConnectionInstance -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName -DesignatedActorId $teamsUserId -EnabledConnectorScenario $enabledConnectorScenario -EnabledWfiScenario $wfiSupportedScenario -SyncFrequencyInMin $syncFreq -ConnectorAdminEmail $AdminEmailList
+$InstanceResponse = New-CsTeamsShiftsConnectionInstance `
+    -ConnectorId $BlueYonderId `
+    -ConnectorAdminEmail $AdminEmailList `
+    -DesignatedActorId $teamsUserId `
+    -EnabledConnectorScenario $enabledConnectorScenario `
+    -EnabledWfiScenario $wfiSupportedScenario `
+    -Name $InstanceName `
+    -SyncFrequencyInMin $syncFreq `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+        -Property @{
+            AdminApiUrl = $adminApiUrl
+            SiteManagerUrl = $siteManagerUrl
+            EssApiUrl = $essApiUrl
+            RetailWebApiUrl = $retailWebApiUrl
+            CookieAuthUrl = $cookieAuthUrl
+            FederatedAuthUrl = $federatedAuthUrl
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+        })
 $InstanceId = $InstanceResponse.id
 $Etag = $InstanceResponse.etag
 if ($InstanceId -ne $null){
@@ -188,11 +230,11 @@ if ($InstanceId -ne $null){
     throw "Connector instance creation failed"
 }
 
-#Retrieve the list of WFM instances
+#Retrieve the list of instances
 Write-Host "Listing the WFM team sites"
 $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
 write $WfmTeamIds
-if ($WfmTeamIds -ne $NULL && $WfmTeamIds.Count -gt 0){
+if (($WfmTeamIds -ne $NULL) -and ($WfmTeamIds.Count -gt 0)){
     [System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
 }
 else {
@@ -241,7 +283,7 @@ $RequestBody = @{
 $teamUpdateUrl="https://graph.microsoft.com/v1.0/teams/"+$TeamsTeamId+"/schedule"
 $Schedule = Invoke-MgGraphRequest -Uri $teamUpdateUrl -Method PUT -Body $RequestBody
 
-#Create a mapping of the new team to the WFM instance
+#Create a mapping of the new team to the instance
 Write-Host "Create a mapping of the new team to the site"
 $TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
 $teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone $TimeZone -WfmTeamId $WfmTeamId
@@ -256,8 +298,6 @@ if ($decision -eq 1) {
     break
 }
 }
-
-#The Teams admin was set as an owner directly when creating a new team, removing it from owners
 Remove-TeamUser -GroupId $TeamsTeamId -User $currentUser -Role Owner
 Disconnect-MgGraph
 ```
@@ -272,7 +312,7 @@ Start-Sleep 1
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.1.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
 } catch {
     throw
 }
@@ -290,7 +330,7 @@ $enabledConnectorScenario = $blueYonder.SupportedScenario
 $wfiSupportedScenario = $blueYonder.wfiSupportedScenario
 
 #Prompt for entering of WFM username and password
-$WfmUserName = Read-Host -Prompt 'Input your WFM super user name'
+$WfmUserName = Read-Host -Prompt 'Input your WFM user name'
 $WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
 
@@ -303,20 +343,33 @@ $essApiUrl = Read-Host -Prompt 'Input ess api url'
 $federatedAuthUrl = Read-Host -Prompt 'Input federated authorization url'
 $retailWebApiUrl = Read-Host -Prompt 'Input retail web api url'
 $siteManagerUrl = Read-Host -Prompt 'Input site manager url'
-$testResult = Test-CsTeamsShiftsConnectionValidate -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName
+$testResult = Test-CsTeamsShiftsConnectionValidate `
+    -Name $InstanceName `
+    -ConnectorId $BlueYonderId `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+        -Property @{
+            AdminApiUrl = $adminApiUrl
+            SiteManagerUrl = $siteManagerUrl
+            EssApiUrl = $essApiUrl
+            RetailWebApiUrl = $retailWebApiUrl
+            CookieAuthUrl = $cookieAuthUrl
+            FederatedAuthUrl = $federatedAuthUrl
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+        })
 if ($testResult.Code -ne $NULL) {
     write $testResult
     throw "Validation failed, conflict found"
 }
 Write-Host "Test complete, no conflicts found"
 
-#Create a connection instance (includes WFM site team ids)
+#Create an instance (includes WFM site team ids)
 Write-Host "Creating a connection instance"
-$designatorName = Read-Host -Prompt "Enter your Microsoft 365 user name"
+$designatorName = Read-Host -Prompt "Input designated actor's user name"
 $domain = $designatorName.Split("@")[1]
 $designator = Get-MgUser -UserId $designatorName
 $teamsUserId = $designator.Id
-$syncFreq = Read-Host -Prompt "Input sync frequency in minutes. Value should be equal to or more than 10."
+$syncFreq = Read-Host -Prompt "Input sync frequency. Value should be equal to or more than 10."
 
 #Read admin email list
 [psobject[]]$AdminEmailList = @()
@@ -331,8 +384,26 @@ if ($decision -eq 1) {
     break
 }
 }
-$InstanceResponse = New-CsTeamsShiftsConnectionInstance -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName -DesignatedActorId $teamsUserId -EnabledConnectorScenario $enabledConnectorScenario -EnabledWfiScenario $wfiSupportedScenario -SyncFrequencyInMin $syncFreq -ConnectorAdminEmail AdminEmailList
 
+$InstanceResponse = New-CsTeamsShiftsConnectionInstance `
+    -ConnectorId $BlueYonderId `
+    -ConnectorAdminEmail $AdminEmailList `
+    -DesignatedActorId $teamsUserId `
+    -EnabledConnectorScenario $enabledConnectorScenario `
+    -EnabledWfiScenario $wfiSupportedScenario `
+    -Name $InstanceName `
+    -SyncFrequencyInMin $syncFreq `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+        -Property @{
+            AdminApiUrl = $adminApiUrl
+            SiteManagerUrl = $siteManagerUrl
+            EssApiUrl = $essApiUrl
+            RetailWebApiUrl = $retailWebApiUrl
+            CookieAuthUrl = $cookieAuthUrl
+            FederatedAuthUrl = $federatedAuthUrl
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+    })
 $InstanceId = $InstanceResponse.id
 $Etag = $InstanceResponse.etag
 if ($InstanceId -ne $null){
@@ -341,11 +412,11 @@ if ($InstanceId -ne $null){
     throw "Connector instance creation failed"
 }
 
-#Retrieve the list of WFM instances
+#Retrieve the list of instances
 Write-Host "Listing the WFM team sites"
 $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
 write $WfmTeamIds
-if ($WfmTeamIds -ne $NULL && $WfmTeamIds.Count -gt 0){
+if (($WfmTeamIds -ne $NULL) -and ($WfmTeamIds.Count -gt 0)){
     [System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
 }
 else {
@@ -372,12 +443,11 @@ $Delimiters = ",", ".", ":", ";", " ", "`t"
 $entityType = $entityTypeString -Split {$Delimiters -contains $_}
 $entityType = $entityType.Trim()
 $entityType = $entityType.Split('',[System.StringSplitOptions]::RemoveEmptyEntries)
-Remove-CsTeamsShiftsScheduleRecord -TeamId $TeamsTeamId -DateRangeStartDate $startTime -DateRangeEndDate $endTime -ClearSchedulingGroup:$True -EntityType $entityType -DesignatedActorId $$teamsUserId
+Remove-CsTeamsShiftsScheduleRecord -TeamId $TeamsTeamId -DateRangeStartDate $startTime -DateRangeEndDate $endTime -ClearSchedulingGroup:$True -EntityType $entityType -DesignatedActorId $teamsUserId
 
-#Create a mapping of the new team to the WFM instance
+#Create a mapping of the existing team to the instance
 Write-Host "Create a mapping of the existing team to the site"
-$TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
-$teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone $TimeZone -WfmTeamId $WfmTeamId
+$teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone "America/Los_Angeles" -WfmTeamId $WfmTeamId
 Write-Host "Success"
 
 
@@ -417,6 +487,7 @@ Betiklerde kullanılan cmdlet'ler de dahil olmak üzere Shifts bağlayıcı cmdl
 
 - [Vardiya bağlayıcıları](shifts-connectors.md)
 - [PowerShell kullanarak Blue Yonder ile Vardiyalar bağlantınızı yönetme Workforce Management](shifts-connector-powershell-manage.md)
+- [Microsoft 365 yönetim merkezi kullanarak Blue Yonder ile Vardiyalar bağlantınızı yönetme Workforce Management](shifts-connector-blue-yonder-admin-center-manage.md)
 - [Vardiyalar uygulamasını yönetme](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Teams PowerShell'e genel bakış](/microsoftteams/teams-powershell-overview)
 - [Teams PowerShell cmdlet başvurusu](/powershell/teams/intro)

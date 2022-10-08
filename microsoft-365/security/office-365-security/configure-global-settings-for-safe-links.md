@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Yöneticiler, Office 365 için Microsoft Defender'da Güvenli Bağlantılar için genel ayarları ('Aşağıdaki URL'leri engelle' listesi ve Office 365 uygulamaları için koruma) görüntülemeyi ve yapılandırmayı öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: ed217c73b626d2b6320c1f5b6d391545f5854015
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: 77b6af297f185871e15ae8366a515b83ee3c9a4a
+ms.sourcegitcommit: d0557f757cfa48330ed57e966033891d10f03688
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613131"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68492169"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Güvenli Bağlantılar için genel ayarları yapılandırma
 
@@ -35,6 +35,8 @@ ms.locfileid: "67613131"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
+> **Genel ayarlar** menüsü ve Güvenli Bağlantılar için **aşağıdaki URL'leri engelle** listesi kullanım dışı bırakılıyor. Bunun yerine [Kiracı İzin Ver/Engelle Listesindeki](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) URL'ler için blok girdilerini kullanın.
+>
 > Bu makale, [Office 365 için Microsoft Defender](defender-for-office-365.md) sahip iş müşterilerine yöneliktir. Outlook'ta Güvenli Bağlantılar hakkında bilgi arayan bir ev kullanıcısıysanız bkz. [Gelişmiş Outlook.com güvenliği](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Güvenli Bağlantılar[, Office 365 için Microsoft Defender'de](defender-for-office-365.md) gelen e-posta iletilerinin posta akışında URL taraması ve e-posta iletilerinde ve diğer konumlardaki URL'lerin ve bağlantıların tıklamayla doğrulanmasını sağlayan bir özelliktir. Daha fazla bilgi için bkz. [Office 365 için Microsoft Defender'de Güvenli Bağlantılar](safe-links.md).
@@ -129,7 +131,7 @@ Güvenli Bağlantılar için genel ayarları başarıyla yapılandırdığınız
 - PowerShell Exchange Online veya PowerShell Exchange Online Protection aşağıdaki komutu çalıştırın ve ayarları doğrulayın:
 
   ```powershell
-  Get-AtpPolicyForO365 | Format-List BlockUrls,EnableSafeLinksForO365Clients,AllowClickThrough,TrackClicks
+  Get-AtpPolicyForO365 | Format-List BlockUrls
   ```
 
   Ayrıntılı söz dizimi ve parametre bilgileri için bkz. [Get-AtpPolicyForO365](/powershell/module/exchange/get-atppolicyforo365).

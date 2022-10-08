@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection:
 - highpri
 - SPO_Content
@@ -21,12 +21,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Microsoft 365'te bulunan ve kuruluşunuzun dışındaki kişilerle paylaşımı etkileyebilecek konuk paylaşım ayarları hakkında bilgi edinin.
-ms.openlocfilehash: 6451a4ecdd3aec88e6fbd66300c82c0fce267de6
-ms.sourcegitcommit: 0af064e8b6778060f1bd365378d69b16fc9949b5
+ms.openlocfilehash: 93b4a023a703830aa62119d148bbfd199ce8e262
+ms.sourcegitcommit: fce27da5140691b013a6f7c0ea9c88b4ea4b7c10
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67727358"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67986168"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 konuk paylaşımı ayarları başvurusu
 

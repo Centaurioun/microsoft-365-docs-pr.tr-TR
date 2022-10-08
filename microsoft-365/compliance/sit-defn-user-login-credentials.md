@@ -14,19 +14,22 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: Kullanıcı oturum açma kimlik bilgileri hassas bilgi türü varlık tanımı.
-ms.openlocfilehash: d75fcb7069e8393b5b03ce08071057ff503a4bfb
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 36c18f64531256013d4866a7e52afdbd16f40e00
+ms.sourcegitcommit: 176bbd29c92e1c0812e8bcd1e1e4938a3e1d7331
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66948345"
+ms.lasthandoff: 10/05/2022
+ms.locfileid: "68472310"
 ---
 # <a name="user-login-credentials-preview"></a>Kullanıcı oturum açma kimlik bilgileri (önizleme)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## <a name="format"></a>Biçim
 
@@ -95,7 +98,7 @@ veya
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
-## <a name="checksum"></a>Sağlama toplamı
+## <a name="checksum"></a>Sağlama Toplamı
 
 Hayır
 
@@ -121,7 +124,7 @@ Desenler, gerçek kimlik bilgileriyle makul bir güvenle eşleşecek şekilde ta
 
 - Parola
 - Pw
-- DB_
+- Db_
 
 ### <a name="keyword_logincredentialsputty"></a>Keyword_LoginCredentialsPutty:
 

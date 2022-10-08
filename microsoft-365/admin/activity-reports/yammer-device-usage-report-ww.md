@@ -2,14 +2,15 @@
 title: Yammer cihaz kullanım raporlarını Microsoft 365 yönetim merkezi
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -20,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Kullanıcılarınızın Yammer'ı hangi cihazlarda kullandığı, cihaz türüne göre günlük kullanıcı sayısı ve kullanıcı başına ayrıntılar hakkında daha fazla bilgi edinmek için Yammer cihaz kullanım raporunu alın.
-ms.openlocfilehash: e2ca63fb67b08c96a6b4c5528092b14f55739540
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: fe68c6a5d0fa17e70c600b8a046473464608da45
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663074"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68166999"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Yönetim merkezinde Microsoft 365 Raporları - Yammer cihaz kullanım raporu
 
 Microsoft 365 Raporları panosu, kuruluşunuzdaki ürünler genelindeki etkinliğe genel bakışı gösterir. Bu pano sayesinde her bir üründeki etkinliklerle ilgili daha ayrıntılı bilgi edinmek için ürün düzeyinde raporları ayrıntılı olarak inceleyebilirsiniz. [Raporlara genel bakış konusuna](activity-reports.md) göz atın.
   
-Yammer cihaz kullanım raporları kullanıcılarınızın Yammer'ı hangi cihazlar üzerinde kullandığı hakkında bilgi verir. Cihaz türüne göre günlük kullanıcı sayısını ve cihaz türüne göre kullanıcı sayısını görüntüleyebilirsiniz. Bu bilgilerin ikisi de seçili bir zaman aralığında görüntülenebilir. Dilerseniz, kullanıcı başına ayrıntıları da görüntüleyebilirsiniz.
+The Yammer device usage reports give you information about which devices your users are using Yammer on. You can view the number of daily users by device type, and number of users by device type. You can view both over a selected time period. You can also view details per user.
  
 ## <a name="how-do-i-get-to-the-yammer-device-usage-report"></a>Yammer cihaz kullanım raporuna nasıl ulaşabilirim?
 

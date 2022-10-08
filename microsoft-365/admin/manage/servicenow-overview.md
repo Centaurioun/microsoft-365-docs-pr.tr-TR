@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -17,12 +18,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: ServiceNow için Kapsamlı Sertifikalı uygulama yükleme ve yapılandırma kılavuzu.
-ms.openlocfilehash: 898b6a8f15d67fbf3530f6db269f47d5031f3676
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 4ff41bba3f2b0302e6608781c34bc60973eebf37
+ms.sourcegitcommit: 3e1fc1919f64aff2e1ce83aa67bd415fe51604c1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67359241"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68499934"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>ServiceNow yapılandırmasına genel bakış ile Microsoft 365 desteği tümleştirmesi
 
@@ -38,15 +39,17 @@ ServiceNow örneğinizdeki Microsoft 365 destek tümleştirme uygulamasıyla eld
 
 - Hizmet Durumu Olayları: Kullanıcı etkisi, kapsam, geçerli durum ve bir sonraki beklenen güncelleştirme de dahil olmak üzere bilinen Microsoft hizmet durumu olayları hakkında bilgiler. Makine öğrenmesi kullanılarak ServiceNow olayları, kısa açıklama alanına göre Microsoft hizmet durumu olaylarıyla eşleştirilir.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-1.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-description-field-1.png" alt-text="Hizmet Durumu Olayları açıklama alanı.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow_service_health_incidents.png" lightbox="../../media/ServiceNow-guide/servicenow_service_health_incidents.png" alt-text="Hizmet Durumu Olayları açıklama alanı.":::
 
 - Önerilen çözümler: Makine öğrenmesi tarafından desteklenen Microsoft'tan kesin hedeflenmiş çözümler ve ilgili makaleler önermek için görev ve olayların açıklamaları kullanılır. Gerekirse diğer çözümleri bulmak için Arama'yı da kullanabilirsiniz.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" alt-text="Önerilen çözümler açıklama alanı.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow_recommended_articles.png" lightbox="../../media/ServiceNow-guide/servicenow_recommended_articles.png" alt-text="Önerilen çözümler açıklama alanı.":::
 
-- Microsoft hizmet isteği: Sorunları Microsoft destek aracılarına iletin ve durumunuz için durum güncelleştirmelerini alın.
+- Microsoft hizmet isteği: Sorunları Microsoft destek aracılarına iletin ve isteğiniz için durum güncelleştirmelerini alın. Güncelleştirilmiş bir iş akışıyla, microsoft 365 yönetici portalında bulunana benzer şekilde tercih ettiğiniz başlığı, açıklamayı ve iletişim bilgilerini ekleyerek bir hizmet isteği oluşturabilirsiniz.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-service-request.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-service-request.png" alt-text="Hizmet isteği formu.":::
+    :::image type="content" source="../../media/ServiceNow-guide/SNOW_escalation.png" lightbox="../../media/ServiceNow-guide/SNOW_escalation.png" alt-text="Önerilen çözüm açıklaması alanını gösteren ekran görüntüsü.":::
+
+    :::image type="content" source="../../media/ServiceNow-guide/SNOW_escalation2.png" lightbox="../../media/ServiceNow-guide/SNOW_escalation2.png" alt-text="Önerilen çözüm açıklaması alanını gösteren ekran görüntüsü.":::
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -82,12 +85,17 @@ Gerekli izinler:
 
 Microsoft 365 Destek Tümleştirme uygulaması yüklendikten sonra iki Uygulama Arası Kapsam erişimi oluşturulur. Bunlar başarıyla oluşturulmazsa el ile oluşturun.
 
-## <a name="setup-the-integration"></a>Tümleştirmeyi ayarlama
+## <a name="set-up-the-integration"></a>Tümleştirmeyi ayarlama
 
 Uygulamayı indirdikten sonra, kurulum işlemini tamamlamak için SNOW ortamınızdaki Microsoft 365 kurulum sihirbazına gidin.
-:::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="Kar kurulum sihirbazı":::
+
+:::image type="content" source="../../media/ServiceNow-guide/Agree.png" lightbox="../../media/ServiceNow-guide/Agree.png" alt-text="Önerilen çözüm açıklaması alanını gösteren ekran görüntüsü.":::
 
 Aşağıdaki sayfaları ziyaret ederek adımlar hakkında daha fazla bilgi edinebilirsiniz:
+- Microsoft 365 destek tümleştirme uygulamasını ayarlamadan başlamak isterseniz **, Herhangi bir kurulum olmadan devam et** seçeneğini belirleyebilirsiniz. Bu seçenek önerilen temel çözümleri sağlamaya devam edecektir.
+
+    :::image type="content" source="../../media/ServiceNow-guide/No_setup.png" lightbox="../../media/ServiceNow-guide/No_setup.png" alt-text="Önerilen çözümler açıklama alanı.":::
+    
 - ServiceNow ortamınız gelen web hizmeti çağrıları için Temel Kimlik Doğrulamasına (ServiceNow kullanıcı kimlik bilgileriyle erişim) izin veriyorsa, [ServiceNow Temel Kimlik Doğrulaması ile Microsoft 365 destek tümleştirmesini ayarlama](servicenow-basic-authentication.md) başlığı altında yer alan yönergeleri izleyin.
 - ServiceNow ortamınız gelen web hizmeti çağrıları için Temel Kimlik Doğrulamasına (ServiceNow kullanıcı kimlik bilgileriyle erişim) izin vermiyorsa, [Azure AD Kimlik Doğrulama Belirteci ile Microsoft 365 destek tümleştirmesini ayarlama](servicenow-aad-oauth-token.md) başlığı altında yer alan yönergeleri izleyin.
   - Bu yapılandırma, AAD Kimlik Doğrulama Belirtecinin düzgün çalışması için bir SSO kiracısı gerektirir.
