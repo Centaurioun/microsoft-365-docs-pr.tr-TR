@@ -11,17 +11,18 @@ ms.date: ''
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Microsoft 365'te güvenliği aşılmış bağlayıcıyı tanımayı ve yanıtlamayı öğrenin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 8552c0d6181e17c460e3fd6a4db0daa400e4f828
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+search.appverid: met150
+ms.openlocfilehash: 8ce206393c489ab162f8bdaf74e906beaf69e4ed
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67497005"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68079853"
 ---
 # <a name="respond-to-a-compromised-connector"></a>Risk altındaki bağlayıcıyı yanıtlama
 

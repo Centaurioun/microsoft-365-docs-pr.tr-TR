@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -28,12 +29,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Eski bir çalışanın oturum açmaması, kuruluş verilerinin güvenliğini sağlamaması ve diğer çalışanların e-posta ve OneDrive verilerine erişmesine izin vermemesi için Microsoft 365 erişimini engelleyin.
-ms.openlocfilehash: 163cb427ce66f9c1f583681895f18fc67d0745dc
-ms.sourcegitcommit: ecc04b5b8f84b34255a2d5e90b5ab596af0d16c7
+ms.openlocfilehash: 6d30438f156a888f43fbf51b13f797450bd4097c
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67496603"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205211"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Genel bakış: Eski bir çalışanı ve güvenli verileri kaldırma
 
@@ -75,9 +76,9 @@ Bu serideki adımları tamamlamak için bu Microsoft 365 özelliklerini ve özel
 |[1. Adım - Eski bir çalışanın oturum açmasını engelleme ve Microsoft 365 hizmetlerine erişimi engelleme](remove-former-employee-step-1.md)|Bu, eski çalışanınızın Microsoft 365'te oturum açmasını engeller ve kişinin Microsoft 365 hizmetlerine erişmesini engeller.|
 |[2. Adım - Eski çalışanın posta kutusunun içeriğini kaydetme](remove-former-employee-step-2.md)|Bu, çalışanın işini devralacak olan kişi veya dava varsa yararlıdır.|
 |[3. Adım - Eski bir çalışanın mobil cihazını silme ve engelleme](remove-former-employee-step-3.md)|Telefondan veya tabletten iş verilerinizi kaldırır.|
-|[4. Adım - Eski çalışanın e-postasını başka bir çalışana iletme veya paylaşılan posta kutusuna dönüştürme](remove-former-employee-step-4.md)|Bu işlem, eski çalışanınızın e-posta adresini etkin tutmanızı sağlar. Hala eski çalışanın adresine e-posta gönderen müşterileriniz veya iş ortaklarınız varsa, bu sayede işi devralan kişiye ulaşabilirler.|
+|[4. Adım - Eski çalışanın e-postasını başka bir çalışana iletme veya paylaşılan posta kutusuna dönüştürme](remove-former-employee-step-4.md)|This lets you keep the former employee's email address active. If you have customers or partners still sending email to the former employee's address, this gets them to the person taking over the work.|
 |[5. Adım - Başka bir çalışana OneDrive ve Outlook verilerine erişim verme](remove-former-employee-step-5.md)|Kullanıcının yalnızca lisansını iptal eder ancak hesabını silmezseniz kullanıcının OneDrive'da bulunan içeriğine, 30 gün geçtikten sonra bile erişebilirsiniz. <p> Hesabı silmeden önce, başka bir kullanıcıya OneDrive ve Outlook erişimi vermelisiniz. Bir çalışanın hesabını sildikten sonra, OneDrive ve Outlook'taki içerik **30** gün boyunca saklanır. Ancak bu 30 gün boyunca kullanıcının hesabını geri yükleyebilir ve içeriğine erişebilirsiniz. Kullanıcının hesabını geri yüklerseniz, OneDrive ve Outlook içeriği 30 gün sonra bile sizin için erişilebilir kalır.| 
-|[6. Adım - Eski bir çalışandan Microsoft 365 lisansını kaldırma ve silme](remove-former-employee-step-6.md)|Lisansı kaldırdığınızda, başka birine atayabilirsiniz. Öte yandan, lisansı silebilir ve bu şekilde başka birini işe alana kadar lisans için ödeme yapmazsınız.  <p> Lisansı kaldırdığınızda veya sildiğinizde, kullanıcının eski e-postası, kişileri ve takvimi **30 gün** boyunca korunur, sonrasında kalıcı olarak silinir. Lisansı kaldırır veya siler ancak hesabı silmezseniz, kullanıcının OneDrive'da bulunan içeriğine 30 gün geçtikten sonra bile erişebilirsiniz.  |
+|[6. Adım - Eski bir çalışandan Microsoft 365 lisansını kaldırma ve silme](remove-former-employee-step-6.md)|When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person. <p> When you remove or delete a license, the user's old email, contacts, and calendar are retained for **30 days**, then permanently deleted. If you remove or delete a license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days.|
 |[7. Adım - Eski çalışanın kullanıcı hesabını silme](remove-former-employee-step-7.md)|Bu işlem hesabı yönetim merkezinizden kaldırır. Ortamı temiz tutmanızı sağlar.|
 
 ## <a name="watch-delete-a-user"></a>İzleyin: Kullanıcıyı silme

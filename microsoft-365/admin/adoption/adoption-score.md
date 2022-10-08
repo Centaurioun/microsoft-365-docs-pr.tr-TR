@@ -2,15 +2,16 @@
 title: Microsoft Benimseme Puanı
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 monikerRange: o365-worldwide
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Benimseme Puanı'nın insanları ve teknoloji deneyimi ölçümlerini nasıl yansıtdığını ve benzer boyuttaki kuruluşlarla nasıl karşılaştırdığını öğrenin.
-ms.openlocfilehash: f082f16fbc657a887b9e56c5d04e8cce52068f50
-ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
+ms.openlocfilehash: 372d9d13b02b8d0087c40a1e97c870dbfc6cb97b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67437976"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205035"
 ---
 # <a name="microsoft-adoption-score"></a>Microsoft Benimseme Puanı 
 

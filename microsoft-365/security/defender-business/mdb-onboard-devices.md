@@ -15,15 +15,16 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365solution-mdb-setup
 - highpri
-ms.openlocfilehash: 49ce0164004582ccc61f8c509fd34e3eb4123489
-ms.sourcegitcommit: b1ed6470645455c2f1fcf467450debc622c40147
+- tier1
+ms.openlocfilehash: f72c0115b896fe9cfc80c7e04b21112f4ba7bbef
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67711356"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096885"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Cihazları İş için Microsoft Defender ekleme
 

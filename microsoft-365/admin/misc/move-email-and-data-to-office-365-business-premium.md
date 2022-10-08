@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +26,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: Verileri yeni iş kimliğinize taşımayı öğrenin.
-ms.openlocfilehash: 5edc7de9775693f1ff3ad80652a5375757ea987d
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 5670bea121c738d4cbc406f14c66ef23f037bd24
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67661420"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68204903"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>E-postayı ve verileri Microsoft 365 İş Standart taşıma
 
@@ -60,19 +61,19 @@ Kişisel verilerinizin bir bölümünü yeni iş kimliğinize taşımak istersen
 4. Dosyaları OneDrive dosyalarınızı kopyaladığınız sabit sürücünüzden kopyalamak için **Karşıya Yükle'yi** seçin. 
   
     > [!NOTE]
-    >  Tek tek dosyaları ve dosya gruplarını (belirli bir klasördeki dosyalar gibi) bir seferde karşıya yükleyebilirsiniz ancak bir klasörü OneDrive İş'e kopyalayamazsınız. Bunun yerine, OneDrive İş'te istediğiniz klasör yapısını oluşturmanız gerekir. >  Dosyaları 4. adımda oluşturduğunuz bir klasöre kopyalamak isterseniz, dosyaları yüklemeden önce bu klasörü açın. Aksi takdirde, dosyalar kök klasörüne yüklenir. Dosyalarınızı karşıya yükledikten sonra OneDrive İş'te klasörler arasında da taşıyabilirsiniz. 
+    >  You can upload individual files and groups of files (such as all files in a particular folder) at one time but you cannot copy a folder to OneDrive for Business. Instead, you'll need to create the folder structure you want on OneDrive for business. >  If you want to copy files to a folder that you created in step 4, open that folder before you upload the files. Otherwise, the files will be uploaded to the root folder. You can also move your files between folders in OneDrive for Business after you've uploaded them. 
   
 ## <a name="outlookemail"></a>[Outlook/E-posta](#tab/Outlook)
   
  **Outlook 2013 bilgilerini Outlook veri dosyasına aktarma**
-1. Outlook veri dosyanızı (.pst) oluşturabilmeniz için dışarı aktarmak istediğiniz Outlook bilgilerini içeren hesap, Outlook'un masaüstü sürümüne eklenmiş olmalıdır. Outlook 2013 veya üzeri sürümlere hesap ekleme hakkında bilgi için bkz. [Outlook'ta e-posta ayarlama (Windows için)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) veya [Mac için Outlook 2011'de e-posta ayarlama](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
+1. Before you can create your Outlook data file (.pst), the account that you want to export Outlook information from must already be added to the desktop version of Outlook. For information about how to add an account to Outlook 2013 or higher, see [Set up email in Outlook (for Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) or [Set up email in Outlook for Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
     
 2. Her kullanıcının [E-postayı, kişileri ve takvimi bir Outlook .pst dosyasına aktarma veya yedekleme](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)'deki adımları tamamlaması gerekir.
     
  **Outlook'ta yeni e-posta hesabınızı ayarlama**
 1. Her kullanıcının iş için Microsoft 365 aboneliğiyle birlikte gelen yeni e-posta hesabını ayarlaması gerekir. Bunu yapmak için yeni e-posta adreslerine ihtiyaçları vardır. Her kullanıcının e-posta hesabı, microsoft 365 İş'de oturum açmak için kullandıkları kullanıcı adıyla aynıdır. Bu adres deniz@contoso.onmicrosoft.com veya salih@contoso.com gibi olur.
     
-2. Her kullanıcıdan e-posta hesaplarını Outlook'a eklemelerini isteyin. Nasıl olduğunu öğrenmek için bkz. [Outlook'ta e-posta ayarlama (Windows için)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) veya [Mac için Outlook 2011'de e-posta ayarlama](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
+2. Ask each user to add their email account to Outlook. To learn how, see [Set up email in Outlook (for Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) or [Set up email in Outlook for Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
     
  **Outlook veri dosyasından bilgileri içeri aktarma**
 1. Bu, PST dosyasında depolanan e-postayı, takvimi, görevleri ve kişileri İş için Microsoft 365 e-posta hesabınızla birleştirir.

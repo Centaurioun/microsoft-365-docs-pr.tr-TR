@@ -1,5 +1,5 @@
 ---
-title: Boşnakça ve Herzegovnia için destek bilgileri
+title: Bosna ve Herzegovnia için destek bilgileri
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -7,28 +7,30 @@ ms.author: cmcatee
 manager: scotv
 audience: Admin
 ms.topic: reference
-ms.service: o365-administration
-ms.collection: Adm_Support
+ms.service: microsoft-365-business
+ms.collection:
+- scotvorg
+- Adm_Support
 ms.localizationpriority: medium
-description: Ülkeniz veya bölgeniz için de destek ile nasıl bağlantı kuracaklarını öğrenin.
+description: Ülkeniz veya bölgeniz için desteğe nasıl başvuracağınızı öğrenin.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 92ee143c0ee9782f0ba023a6bd2d04a0ba3c0bdb
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 62d4892df2b83e267b53fe96e7f5ef31f2d494c3
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "63012847"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189329"
 ---
-# <a name="contact-support-for-bosnia-and-herzegovnia"></a>Boşnakça ve Herzegovnia için destek ile iletişime geçin
+# <a name="contact-support-for-bosnia-and-herzegovnia"></a>Bosna ve Herzegovnia için desteğe başvurun
 
-[Başka bir ülke veya bölge bulun] ((.. /get-help-support.md).
+[Başka bir ülke veya bölge bulma] ((.. /get-help-support.md).
 
 ## <a name="phone-number"></a>Telefon numarası
 0800 20 230
 
-9. seçeneği belirleyin
+9 seçeneğini belirleyin
 
-Kod 7700 girin
+7700 kodunu girin
 
 ## <a name="hours"></a>Saatler
 ### <a name="billing-support"></a>Faturalama Desteği:

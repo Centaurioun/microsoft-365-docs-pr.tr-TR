@@ -6,9 +6,11 @@ manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom:
@@ -16,18 +18,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: Microsoft Azure'da Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulamanız için AD FS sunucularını oluşturmayı ve yapılandırmayı öğrenin.
-ms.openlocfilehash: ed0974c8286a5bbad083152d2e2f9aeb01f659df
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 898ff75b76f63b8cf254f3615f1a487a18b79246
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101259"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170519"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Yüksek kullanılabilirlik federasyon kimlik doğrulaması 3. Aşama: AD FS sunucularını yapılandırma
 
 Azure altyapı hizmetlerinde Microsoft 365 federasyon kimlik doğrulaması için yüksek kullanılabilirlik dağıtmanın bu aşamasında, bir iç yük dengeleyici ve iki AD FS sunucusu oluşturursunuz.
   
-[4. Aşama: Web uygulaması proxy'lerini yapılandırma](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) aşamasına geçmeden önce bu aşamayı tamamlamanız gerekir. Tüm aşamalar için bkz. [Azure'da Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulamasını dağıtma](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md).
+[4. Aşama: Web uygulaması proxy'lerini yapılandırma](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) aşamasına geçmeden önce bu aşamayı tamamlamanız gerekir. Tüm aşamalar için bkz. [Azure'da Microsoft 365 için yüksek kullanılabilirlik federasyon kimlik doğrulamasını dağıtma](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) .
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>Azure'da AD FS sunucusu sanal makinelerini oluşturma
 
@@ -48,7 +50,7 @@ Azure altyapı hizmetlerinde Microsoft 365 federasyon kimlik doğrulaması için
 [2. Aşama: 1. Aşamada R](high-availability-federated-authentication-phase-2-configure-domain-controllers.md), V, S, I ve A Tablolarını yapılandırma: [Azure'ı yapılandırma](high-availability-federated-authentication-phase-1-configure-azure.md) aşamasında M Tablosunu tanımlamış olduğunuzu hatırlayın.
   
 > [!NOTE]
-> Aşağıdaki komut kümeleri Azure PowerShell en son sürümünü kullanır. Bkz. [Azure PowerShell ile Kullanmaya başlayın](/powershell/azure/get-started-azureps). 
+> Aşağıdaki komut kümeleri Azure PowerShell en son sürümünü kullanır. Bkz[. Azure PowerShell kullanmaya başlama](/powershell/azure/get-started-azureps). 
   
 İlk olarak, iki AD FS sunucusu için bir Azure iç yük dengeleyici oluşturursunuz. Karakterleri kaldırarak değişkenlerin \< and > değerlerini belirtin. Tüm uygun değerleri sağladığınızda, elde edilen bloğu Azure PowerShell komut isteminde veya PowerShell ISE'de çalıştırın.
   
@@ -131,7 +133,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Bu sanal makineler bir intranet uygulamasına ait olduğundan, bunlara bir genel IP adresi veya DNS etki alanı adı etiketi atanıp İnternet'e sunulmaz. Ancak bu, bunlara Azure portal bağlanamayacağınız anlamına da gelir. sanal makinenin özelliklerini görüntülediğinizde **Bağlan** seçeneği kullanılamaz. Özel IP adresini veya intranet DNS adını kullanarak sanal makineye bağlanmak için Uzak Masaüstü Bağlantısı aksesuarını veya başka bir Uzak Masaüstü aracını kullanın.
+> Bu sanal makineler bir intranet uygulamasına ait olduğundan, bunlara bir genel IP adresi veya DNS etki alanı adı etiketi atanıp İnternet'e sunulmaz. Ancak bu, bunlara Azure portal bağlanamayacağınız anlamına da gelir. Sanal makinenin özelliklerini görüntülediğinizde **Bağlan** seçeneği kullanılamaz. Özel IP adresini veya intranet DNS adını kullanarak sanal makineye bağlanmak için Uzak Masaüstü Bağlantısı aksesuarını veya başka bir Uzak Masaüstü aracını kullanın.
   
 Her sanal makine için, seçtiğiniz uzak masaüstü istemcisini kullanın ve bir uzak masaüstü bağlantısı oluşturun. İntranet DNS'sini veya bilgisayar adını ve yerel yönetici hesabının kimlik bilgilerini kullanın.
   
@@ -148,7 +150,7 @@ Yer tutucu bilgisayar adlarıyla bu aşamanın başarıyla tamamlanmasından kay
   
 **3. Aşama: Azure'daki yüksek kullanılabilirlik federasyon kimlik doğrulama altyapınız için AD FS sunucuları ve iç yük dengeleyici**
 
-![AD FS sunucularıyla Azure'da federasyon kimlik doğrulama altyapısı Microsoft 365 yüksek kullanılabilirlik aşaması 3. aşama.](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![AD FS sunucularıyla Azure'da yüksek kullanılabilirlik Microsoft 365 federasyon kimlik doğrulama altyapısının 3. aşaması.](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>Sonraki adım
 

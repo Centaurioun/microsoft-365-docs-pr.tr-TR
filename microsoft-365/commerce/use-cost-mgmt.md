@@ -6,9 +6,10 @@ manager: scotv
 ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -18,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: kuruluşunuzun maliyetlerini görüntülemek, analiz etmek ve yönetmek için Microsoft 365 yönetim merkezi maliyet yönetimi özelliğini kullanmayı öğrenin.
 ms.date: 03/09/2022
-ms.openlocfilehash: e7c0d04aad860ad192222e82ec14e2041d1b5cdb
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 32c2e0f3739b5ffb370027efe85e3404c2a5b79a
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106897"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205937"
 ---
 # <a name="use-cost-management-in-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezi Maliyet yönetimini kullanma
 
@@ -31,7 +32,7 @@ Microsoft Müşteri Sözleşmesi (MCA) olan bir Genel yönetici veya Faturalama 
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Bu makalede açıklanan adımları gerçekleştirmek için Genel yönetici veya Faturalandırma yöneticisi olmanız gerekir. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../admin/add-users/about-admin-roles.md).
+Bu makalede açıklanan adımları yerine getirmek için Genel yönetici veya Fatura yöneticisi olmalısınız. Daha fazla bilgi için bkz. [Yönetici rolleri hakkında](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-is-cost-management"></a>Maliyet yönetimi nedir?
 

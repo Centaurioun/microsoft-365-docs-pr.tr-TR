@@ -8,23 +8,26 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: 07/07/2022
+ms.collection:
+- m365-security
+- tier2
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 280541647409916f45208b8ddfbb98c03f91383c
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 2432a7aea0f9c2d2431d1fc189fcd9393d689b27
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67476868"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205453"
 ---
 # <a name="trial-playbook-microsoft-defender-for-endpoint"></a>Deneme playbook'u: Uç Nokta için Microsoft Defender
 
 Uç Nokta için Microsoft Defender Plan 2 deneme playbook'una hoş geldiniz!
 
-Bu playbook, ücretsiz denemenizden en iyi şekilde yararlanabilirsiniz. Microsoft Defender ekibinin bu makaledeki önerilen adımları kullanarak Uç Nokta için Defender'ın gelişmiş tehditleri önlemenize, algılamanıza, araştırmanıza ve yanıtlamanıza nasıl yardımcı olabileceğini öğreneceksiniz.
+Bu playbook, ücretsiz denemenizden en iyi şekilde yararlanabilirsiniz. Microsoft Defender ekibinden bu makalede önerilen adımları kullanarak Uç Nokta için Defender'ın gelişmiş tehditleri önlemenize, algılamanıza, araştırmanıza ve yanıtlamanıza nasıl yardımcı olabileceğini öğreneceksiniz.
 
 ## <a name="what-is-defender-for-endpoint"></a>Uç Nokta için Defender nedir?
 
@@ -84,6 +87,9 @@ Uç Nokta için Defender izinleri yönetmek için iki yolu destekler:
 
 - Temel izin yönetimi: İzinleri tam erişim veya salt okunur olarak ayarlayın. Azure Active Directory'de Genel Yönetici veya Güvenlik Yöneticisi rollerine sahip kullanıcılar tam erişime sahiptir. Güvenlik okuyucusu rolü salt okunur erişime sahiptir ve makineleri/cihaz envanterini görüntüleme erişimi vermez.
 - Rol tabanlı erişim denetimi (RBAC): Rolleri tanımlayarak, rollere Azure AD kullanıcı grupları atayarak ve kullanıcı gruplarına cihaz gruplarına erişim vererek ayrıntılı izinleri ayarlayın. Daha fazla bilgi için bkz. [Rol tabanlı erişim denetimini kullanarak portal erişimini yönetme](rbac.md).
+
+    > [!NOTE]
+    > Cihaz grubu oluşturma, Uç Nokta Için Defender Plan 1 ve Plan 2'de desteklenir.
 
 ## <a name="step-3-visit-the-microsoft-365-defender-portal"></a>3. Adım: Microsoft 365 Defender portalını ziyaret edin
 

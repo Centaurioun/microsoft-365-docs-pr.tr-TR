@@ -14,15 +14,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
-ms.openlocfilehash: 97c565fb739fef16c475c24a84a446bbe0614f7e
-ms.sourcegitcommit: 228fa13973bf7c2d91504703fab757f552ae40dd
+ms.openlocfilehash: e248f10ecbcb6205e3d95d56e4530e0110482f44
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2022
-ms.locfileid: "67523288"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205365"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'ı Değerlendirme 
 

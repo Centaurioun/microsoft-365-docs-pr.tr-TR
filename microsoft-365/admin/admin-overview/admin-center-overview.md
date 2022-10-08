@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Ortak görevleri yönetmek için Microsoft 365 yönetim merkezi basitleştirilmiş görünümü veya daha karmaşık ayarlar ve görevler için pano görünümünü kullanın.
-ms.openlocfilehash: 993440c3d3fbd634b50f90305075ad626b6b4c4a
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 162f57a15a57db284eaec6729fe7d95721ea145f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67662299"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205189"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 yönetim merkezine genel bakış
 
@@ -105,7 +106,7 @@ Parolanızı sıfırlamak, hesap silmek veya diğer görevleri tamamlamak için 
 
 - **Büyük işletmeler**: Şirket içi yardım masanıza / teknik desteğinize başvurun.
 
-- **Küçük işletmeler**: İş sahibine / ikincil sahibe başvurun. Çoğunlukla işletmenin tüm bilgisayar bakım işlerini yapan BT danışmanlarına yönetici izinleri verilir.
+- **Small businesses**: Contact the business owner / co-owner. Often they give admin permissions to their IT consultant who does all the computer maintenance work for their business.
 
 İş yerinizde veya okulunuzda yardım için kiminle iletişim kurabileceğinizi bilmiyorsanız, size kullanıcı hesabınızı ve parolanızı veren kişiye sormayı deneyin.
 
@@ -128,7 +129,7 @@ Parolanızı sıfırlamak, hesap silmek veya diğer görevleri tamamlamak için 
 |**Kurulum**|Mevcut etki alanlarını yönetin, çok faktörlü kimlik doğrulamayı açın ve yönetin, yönetici erişimini yönetin, kullanıcı posta kutularını Office 365’e taşıyın, özellik güncelleştirmelerini yönetin ve kullanıcıların Office uygulamalarını yüklemelerine yardımcı olun.|
 |**Raporlar**|E-posta kullanımı, Office etkinleştirmeleri ve daha fazlası hakkında ayrıntılı raporlarla kuruluşunuzun Microsoft 365'i nasıl kullandığını bir bakışta görün. Yeni [etkinlik raporlarının](../activity-reports/activity-reports.md) nasıl kullanılacağını öğrenin.|
 |**Hizmet Durumu**|Sistem durumunu bir bakışta görüntüleyin. Ayrıca daha fazla ayrıntıya ve sistem durumu geçmişine de göz atabilirsiniz. Daha fazla bilgi için bkz. [Hizmet durumunu denetleme](../../enterprise/view-service-health.md) ve [Windows sürüm durumunu denetleme](/windows/deployment/update/check-release-health) . <p>Özelliklerde ve hizmetlerde yakında gerçekleşecek değişiklikleri izlemek için İleti merkezini kullanın. Değişiklik için plan oluşturmanıza ve bu değişikliğin kullanıcıları nasıl etkileyebileceğini anlamanıza yardımcı olacak bilgileri içeren duyuruları burada yayınlıyoruz. [İleti merkezi'nde](../manage/message-center.md) daha fazla ayrıntı alın.|
-|**Yönetim merkezleri**|Exchange, Skype Kurumsal, SharePoint, Yammer ve Azure AD için ayrı yönetim merkezleri açın. Her yönetim merkezi, söz konusu hizmet için sağlanan tüm ayarları içerir.  <p> Örneğin, Exchange yönetim merkezinde e-postayı, takvimleri, dağıtım gruplarını ve diğer öğeleri ayarlar ve yönetirsiniz. SharePoint yönetim merkezinde site koleksiyonlarını, site ayarlarını ve OneDrive İş’i oluşturur ve yönetirsiniz. Skype Kurumsal yönetim merkezinde anlık ileti bildirimlerini, arayarak bağlanılan konferansı ve çevrimiçi iletişim durumunu ayarlarsınız.  <p> [Exchange yönetim merkezi](/exchange/exchange-admin-center) ve [SharePoint Yönetim Merkezi](/sharepoint/sharepoint-online) hakkında daha fazla bilgi edinin. <p> **Not:** Kullanımınıza açık yönetim merkezleri planınıza ve bölgenize bağlıdır.|
+|**Yönetim merkezleri**|Exchange, Skype Kurumsal, SharePoint, Yammer ve Azure AD için ayrı yönetim merkezleri açın. Her yönetim merkezi, söz konusu hizmet için sağlanan tüm ayarları içerir.  <p> For example, in the Exchange admin center, set up and manage email, calendars, distribution groups, and more. In the SharePoint admin center, create and manage site collections, site settings, and OneDrive for Business. In the Skype for Business admin center, set up instant messaging notifications, dial-in conferencing, and online presence.  <p> [Exchange yönetim merkezi](/exchange/exchange-admin-center) ve [SharePoint Yönetim Merkezi](/sharepoint/sharepoint-online) hakkında daha fazla bilgi edinin. <p> **Not:** Kullanımınıza açık yönetim merkezleri planınıza ve bölgenize bağlıdır.|
 |
 
 ## <a name="common-tasks-in-the-admin-center"></a>Yönetim merkezindeki ortak görevler

@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -25,23 +26,23 @@ search.appverid:
 - MET150
 - MOE150
 description: Eski bir çalışanın tüm kullanıcı verilerini kaydedip erişdikten sonra, Microsoft 365 yönetim merkezi eski çalışanın hesabını silebilirsiniz.
-ms.openlocfilehash: 5a1929ef1a5ff26ee0e84993f0a7cabb5ebc4617
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: ad3d40aada0b73f82ffad702aebbbea3605b985d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636184"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205255"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>7. Adım - Eski çalışanın kullanıcı hesabını silme
 
 Eski çalışanın tüm kullanıcı verilerini kaydedip eriştikten sonra eski çalışanın hesabını silebilirsiniz.
 
 > [!IMPORTANT]
-> E-posta iletme özelliğini ayarladıysanız veya paylaşılan posta kutusuna dönüştürdüyseniz, hesabı silmeyin. Hem iletme özelliğinin hem de paylaşılan posta kutusunun dayanak noktası olarak bu hesaba ihtiyacı vardır.
+> Don't delete the account if you've set up email forwarding or converted it to a shared mailbox. Both need the account to anchor the forwarding or shared mailbox.
 
 1. Yönetici merkezinde, **Kullanıcılar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Etkin kullanıcılar</a> sayfasına gidin.
 2. Silmek istediğiniz çalışanın adını seçin.
-3. Kullanıcının adının altında **Kullanıcıyı sil'i** seçin. Bu kullanıcı için istediğiniz seçenekleri belirleyin ve ardından **Kullanıcıyı sil'i** seçin. Bu kullanıcının e-postasına ve OneDrive başka bir kullanıcıya zaten erişim verdiyseniz, bunu burada tekrar yapmanız gerekmez.
+3. Kullanıcının adının altında **Kullanıcıyı sil'i** seçin. Bu kullanıcı için istediğiniz seçenekleri belirleyin ve ardından **Kullanıcıyı sil'i** seçin. Bu kullanıcının e-postasına ve OneDrive'a zaten başka bir kullanıcıya erişim izni verdiyseniz, bunu burada tekrar yapmanız gerekmez.
 
 Bir kullanıcıyı sildiğinizde, hesabı yaklaşık 30 gün süreyle devre dışı bırakılır. Hesabı kalıcı olarak silinmeden önce geri yüklemek için o zamana kadar süreniz vardır.
 
@@ -53,7 +54,7 @@ Bu videoyu faydalı bulduysanız, [küçük işletmelere ve Microsoft 365’i il
 
 ## <a name="does-your-organization-use-active-directory"></a>Kuruluşunuzda Active Directory kullanılıyor mu?
 
-Kuruluşunuz kullanıcı hesaplarını yerel bir Active Directory ortamından Microsoft 365 eşitlerse, bu kullanıcı hesaplarını yerel Active Directory hizmetinizde silmeniz ve geri yüklemeniz gerekir. Bunları Office 365'te silemez veya geri yükleyemezsiniz.
+Kuruluşunuz kullanıcı hesaplarını yerel bir Active Directory ortamından Microsoft 365'e eşitlerse, bu kullanıcı hesaplarını yerel Active Directory hizmetinizde silmeniz ve geri yüklemeniz gerekir. Bunları Office 365'te silemez veya geri yükleyemezsiniz.
 
 Active Directory'de kullanıcı hesabını silmeyi ve geri yüklemeyi öğrenmek için bkz. [Kullanıcı Hesabını Silme](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
   
@@ -89,9 +90,9 @@ Yukarıdaki işlemler üç yerde yapılabilir:
 
 ### <a name="how-to-get-fastest-response-for-account-termination"></a>Hesap sonlandırma işlemi için hızlı yanıt alma
 
-**En Hızlı**: Exchange yönetim merkezini (PowerShell kullanarak) veya Azure Active Directory yönetim merkezini kullanın. Şirket içi ortamında, değişikliğin DirSync üzerinden eşitlenmesi birkaç saat sürebilir.
+**Fastest**: Use the Exchange admin center (use PowerShell) or Azure Active Directory admin center. In an on-premises environment, it can take several hours to sync the change through DirSync.
   
-**Şirket içinde Exchange Datacenter'da bulunan kullanıcılar için en hızlısı**: Azure Active Directory yönetim merkezini/Exchange yönetim merkezini kullanarak oturumu sonlandırın VE değişiklikleri şirket içi ortamda da yapın. Aksi takdirde DirSync, Azure Active Directory yönetim merkezindeki/Exchange yönetim merkezindeki değişikliğin üzerine yazar.
+**Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Azure Active Directory admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Azure Active Directory admin center/Exchange admin center will be overwritten by DirSync.
   
 ## <a name="related-content"></a>İlgili içerik
 

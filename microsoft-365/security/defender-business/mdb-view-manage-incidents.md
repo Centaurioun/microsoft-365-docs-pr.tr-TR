@@ -15,14 +15,15 @@ ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
-ms.openlocfilehash: 5146f36dd6d4f638b450a326d22405d8efc080b6
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+- tier1
+ms.openlocfilehash: 4fb399bebf27ffcffb9f388d2421804f50592056
+ms.sourcegitcommit: 0283c436f3ba61a708b52b57a1955f5ea74376a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67597988"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68096863"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>İş için Microsoft Defender'da olayları görüntüleme ve yönetme
 
@@ -52,7 +53,7 @@ Tehditler algılandığında ve uyarılar tetiklendiğinde olaylar oluşturulur.
 
 ## <a name="alert-severity"></a>Uyarı önem derecesi
 
-Microsoft Defender Virüsten Koruma algılanan bir tehdidin (kötü amaçlı yazılım) mutlak önem derecesine ve tek bir uç noktaya (virüs bulaşmışsa) olası riski temel alan bir uyarı önem derecesi atadığında. İş için Defender, algılanan davranışın önem derecesine, bir uç noktaya (cihaza) gerçek risk ve daha da önemlisi şirketiniz için olası risk temelinde bir uyarı önem derecesi atar. Aşağıdaki tabloda birkaç örnek verilmiştir:
+Microsoft Defender Virüsten Koruma, algılanan bir tehdidin (kötü amaçlı yazılım) mutlak önem derecesine ve tek bir uç noktaya (virüs bulaşmışsa) olası risklere bağlı olarak bir uyarı önem derecesi atar. İş için Defender, algılanan davranışın önem derecesine, bir uç noktaya (cihaza) gerçek risk ve daha da önemlisi şirketiniz için olası risk temelinde bir uyarı önem derecesi atar. Aşağıdaki tabloda birkaç örnek verilmiştir:
 
 | Senaryo | Uyarı önem derecesi ve nedeni |
 |:---|:---|

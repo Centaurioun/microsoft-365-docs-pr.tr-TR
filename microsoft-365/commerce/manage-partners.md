@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -20,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Kuruluşunuz veya okulunuz için ürün ve hizmet satın almak ve yönetmek için Microsoft sertifikalı çözüm sağlayıcılarıyla (iş ortakları) çalışmayı öğrenin.
 ms.date: 02/04/2022
-ms.openlocfilehash: 313cea4bef92da66bb5c95f3cf9ccd0f9a1d6f32
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 0d49ff1436ceb188af8dfaa96ce7b16e934d72d0
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490729"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68197249"
 ---
 # <a name="manage-microsoft-certified-solution-provider-partner-relationships"></a>Microsoft sertifikalı çözüm sağlayıcısı iş ortağı ilişkilerini yönetme
 

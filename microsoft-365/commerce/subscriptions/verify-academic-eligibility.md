@@ -9,9 +9,10 @@ manager: scotv
 ms.reviewer: pablom, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,29 +22,29 @@ ms.custom:
 search.appverid: MET150
 description: Okulunuzun Microsoft 365 Eğitim akademik fiyatlandırmaya uygunluğunu doğrulamayı öğrenin.
 ms.date: 07/21/2020
-ms.openlocfilehash: 9cbcd9790d521f1d94c2324b2e73d5ecedbaa12e
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 56bd38bb0a9dc37ee2a98264a9e5e2d8218e1531
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713811"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206113"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Microsoft 365 Eğitim abonelikler için akademik uygunluğu doğrulama
 
-Akademik bir kurumun parçasıysanız ücretsiz Microsoft 365 Eğitim deneme sürümüne kaydolabilirsiniz. Microsoft okulunuzun akademik uygunluk durumlarını doğruladıktan sonra Microsoft 365 ürünleri akademik fiyatlarla satın alabilirsiniz. Bu, öğretim üyeleri için Office 365 A1 ve öğrenciler için Office 365 A1 gibi ücretsiz olarak sunulan ürünleri içerir. Bunu akademik fiyatlarla ücretli aboneliğe dönüştürmek için ücretsiz denemenin sonuna kadar süreniz vardır.
+Akademik bir kurumun parçasıysanız ücretsiz Microsoft 365 Eğitim deneme sürümüne kaydolabilirsiniz. Microsoft okulunuzun akademik uygunluk durumlarını doğruladıktan sonra Microsoft 365 ürünlerini akademik fiyatlarla satın alabilirsiniz. Bu, öğretim üyeleri için Office 365 A1 ve öğrenciler için Office 365 A1 gibi ücretsiz olarak sunulan ürünleri içerir. Bunu akademik fiyatlarla ücretli aboneliğe dönüştürmek için ücretsiz denemenin sonuna kadar süreniz vardır.
 
 Bu makalede okulunuzun akademik uygunluk durumunu doğrulama, uygunluk durumunu denetleme ve okulunuz onaylandıktan sonra akademik fiyatlarla abonelik satın alma işlemleri açıklanır.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
-Zaten bir Microsoft 365 Eğitim deneme aboneliğiniz olmalıdır. Deneme aboneliğiniz yoksa [bu web sayfasını ziyaret edin](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) ve **ücretsiz Kullanmaya başlayın** seçin.
+Zaten bir Microsoft 365 Eğitim deneme aboneliğiniz olmalıdır. Deneme aboneliğiniz yoksa [bu web sayfasını ziyaret edin](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) ve **Ücretsiz kullanmaya başlayın'ı** seçin.
 
 ## <a name="verify-that-you-have-a-trial-subscription"></a>Deneme aboneliğiniz olduğunu doğrulayın
 
 Microsoft 365 Eğitim deneme aboneliğiniz olup olmadığından emin değilseniz, bu adımları kullanarak aboneliğinizi doğrulayabilirsiniz.
 
 1. Microsoft 365 yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ürünleriniz</a> sayfasına gidin.
-2. **Fakülte Denemesi için Office 365 A1** ve **Öğrenciler için Office 365 A1 Deneme** sürümünü arayın. Bu abonelikleri bulamazsanız [bu web sayfasını ziyaret edin](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) ve **ücretsiz olarak Kullanmaya başlayın** seçin.
+2. **Fakülte Denemesi için Office 365 A1** ve **Öğrenciler için Office 365 A1 Deneme** sürümünü arayın. Bu abonelikleri bulamazsanız [bu web sayfasını ziyaret edin](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) ve **Ücretsiz kullanmaya başlayın'ı** seçin.
 
 ## <a name="verify-your-schools-academic-eligibility"></a>Okulunuzun akademik uygunluk durumlarını doğrulama
 
@@ -65,7 +66,7 @@ Microsoft 365 Eğitim deneme sürümünüz olduktan sonra, okulunuzun akademik u
     **Faturalama** kartı, doğrulama işleminin durumunu gösterir. Kart aşağıdaki durumlardan birini gösterir: onaylandı, beklemede, reddedildi veya etki alanınızı ekleyin.
 
     > [!NOTE]
-    > Bu durumlardan birini görmüyorsanız bu, Microsoft 365 Eğitim deneme aboneliğinizin olmadığı anlamına gelir. Ücretsiz deneme sürümünü başlatmak için [bu web sayfasını ziyaret edin](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) ve **ücretsiz Kullanmaya başlayın** seçin.
+    > Bu durumlardan birini görmüyorsanız bu, Microsoft 365 Eğitim deneme aboneliğinizin olmadığı anlamına gelir. Ücretsiz deneme sürümünü başlatmak için [bu web sayfasını ziyaret edin](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) ve **Ücretsiz kullanmaya başlayın'ı** seçin.
 
 ## <a name="buy-subscriptions-at-academic-prices"></a>Akademik fiyatlarla abonelik satın alma
 
@@ -97,13 +98,13 @@ Okulunuzun akademik uygunluk kararı hakkında sorularınız varsa [desteğe ba�
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Okulunuza Microsoft 365 dağıtmayı öğrenmek için [Microsoft 365 Eğitim belgeleri ve kaynakları](/microsoft-365/education/deploy/) ziyaret edin. Ardından, [kullanıcıları ekleyebilir ve lisansları aynı anda atayabilirsiniz](../../admin/add-users/add-users.md). Gerekirse [, aboneliğiniz için daha fazla lisans da satın alabilirsiniz](../licenses/buy-licenses.md).
+Microsoft 365'i okulunuza dağıtmayı öğrenmek için [Microsoft 365 Eğitim belgeleri ve kaynakları](/microsoft-365/education/deploy/) ziyaret edin. Ardından, [kullanıcıları ekleyebilir ve lisansları aynı anda atayabilirsiniz](../../admin/add-users/add-users.md). Gerekirse [, aboneliğiniz için daha fazla lisans da satın alabilirsiniz](../licenses/buy-licenses.md).
 
 ## <a name="related-content"></a>İlgili içerik
 
 [BT Yöneticileri için Microsoft 365 Eğitim Belgeleri](/education/itadmins) (makale bağlantıları)\
 [Eğitim için Microsoft Teams](https://microsoft.com/education/products/teams/default.aspx) (ürün sayfası)\
-[İş için Microsoft 365 abonelikleri ve lisansları anlama](../licenses/subscriptions-and-licenses.md) (makale)\
+[İş için Microsoft 365'teki abonelikleri ve lisansları anlama](../licenses/subscriptions-and-licenses.md) (makale)\
 [Kullanıcılara lisans atama](../../admin/manage/assign-licenses-to-users.md) (makale)\
 [Abonelik lisanslarını satın alma veya kaldırma](../licenses/buy-licenses.md) (makale)\
 [Kullanıcıları farklı bir aboneliğe taşıma](move-users-different-subscription.md) (makale)

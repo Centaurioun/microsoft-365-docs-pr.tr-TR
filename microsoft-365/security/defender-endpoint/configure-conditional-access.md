@@ -11,16 +11,18 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 ms.topic: article
 ms.subservice: mde
 search.appverid: met150
-ms.openlocfilehash: 5cf63f594d8e1d4b165ea435547d95786a12a0f4
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: f22af8b0835ff0b93297484f695f51925e07ff55
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67703006"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205695"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Uç Nokta için Microsoft Defender'de Koşullu Erişimi Yapılandırma
 
@@ -75,8 +77,8 @@ Koşullu Erişimi etkinleştirmek için aşağıdaki adımları uygulayın:
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>2. Adım: Intune'de Uç Nokta için Defender tümleştirmesini açma
 
 1. [Azure portalda](https://portal.azure.com) oturum açın.
-2. **Cihaz uyumluluğu** \> **Microsoft Defender ATP'yi** seçin.
-3. **Connect Windows 10.0.15063+ cihazlarını Microsoft Defender Gelişmiş Tehdit Koruması** olarak **Açık** olarak ayarlayın.
+2. **CIHAZ uyumluluğu** \> **Microsoft Defender ATP'yi** seçin.
+3. **Gelişmiş Tehdit Koruması'Microsoft Defender Için Connect Windows 10.0.15063+ cihazları Açık** olarak ayarlayın.
 4. **Kaydet**'e tıklayın.
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>3. Adım: uyumluluk ilkesini Intune'de oluşturma

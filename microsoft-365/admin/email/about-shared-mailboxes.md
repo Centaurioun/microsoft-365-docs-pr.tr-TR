@@ -7,9 +7,10 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Paylaşılan posta kutuları, birden çok kişinin aynı posta kutusuna erişmesi gerektiğinde kullanılır. Paylaşılan posta kutusu oluşturmadan önce bilmeniz gerekenleri öğrenin.
-ms.openlocfilehash: 3db111179b0a85a0836ae429785233089d78bec1
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: d7d4bf06fa9e91bca7a3847a9db99aee0a6ca97f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408009"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68204969"
 ---
 # <a name="about-shared-mailboxes"></a>Paylaşılan posta kutuları hakkında
 

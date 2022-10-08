@@ -7,9 +7,10 @@ author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Google Workspace aboneliğini iptal etmeyi ancak etki alanınızı korumayı öğrenin.
-ms.openlocfilehash: 4269cb42f6b9702d47f4cf53e2e21be22524ebc9
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 1e712e889d0ecc50ec75dfa1ad2dd8a9d47ab258
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67660585"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68204573"
 ---
 # <a name="cancel-google-workspace-subscription"></a>Google Workspace aboneliğini iptal etme
 

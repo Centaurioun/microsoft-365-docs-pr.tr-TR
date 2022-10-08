@@ -7,7 +7,7 @@ author: LoreenLa
 manager: pamgreen
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d3adf0cf-d581-4452-a5b3-6e0d16a34daa
 ROBOTS: NOINDEX
 description: Rusya'daki Microsoft Cloud Solutions sağlayıcılarının listesini alın.
-ms.openlocfilehash: d17aacf9c1dcaeae515f763adc6946f8a7cf9ff6
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: fd76d837bcc5201fcb44e0345c358635018da524
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637328"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68204793"
 ---
 # <a name="microsoft-cloud-solution-provider-partners-in-russia"></a>Rusya'daki Microsoft Bulut Çözümü Sağlayıcısı İş Ortakları
 Burada, Rusya'daki Microsoft Bulut Çözümü Sağlayıcılarının listesi yer alır.

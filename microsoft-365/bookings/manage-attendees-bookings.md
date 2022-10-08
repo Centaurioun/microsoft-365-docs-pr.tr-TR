@@ -1,5 +1,5 @@
 ---
-title: Bookings'da grup katılımcılarını yönetme
+title: Bookings'de grup katılımcılarını yönetme
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -7,17 +7,19 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- scotvorg
 description: Microsoft Bookings'da iş adı, adres, telefon numarası, web sitesi URL'si, logo ve iş saatleri dahil olmak üzere Hakkımızda sayfanızı oluşturmak için bu yönergeleri izleyin.
-ms.openlocfilehash: ce37b8d641f347380a32c5113fb1b1c7c1314cae
-ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
+ms.openlocfilehash: 886a3f421f49524723920c2b9913f315377d53ed
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65182765"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170739"
 ---
-# <a name="manage-group-attendees-in-bookings"></a>Bookings'da grup katılımcılarını yönetme
+# <a name="manage-group-attendees-in-bookings"></a>Bookings'de grup katılımcılarını yönetme
 
-Bookings takvimin sahipleri ve personel üyeleri artık grup hizmetleri için katılımcıları yönetebilir ve güncelleştirebilir. Bookings'deki hizmet teklifleri hakkında daha fazla bilgi için bkz. [Bookings'de hizmet tekliflerinizi tanımlama](define-service-offerings.md).
+Bookings takviminin sahipleri ve personel üyeleri artık grup hizmetleri için katılımcıları yönetebilir ve güncelleştirebilir. Bookings'teki hizmet teklifleri hakkında daha fazla bilgi için bkz. [Bookings'te hizmet tekliflerinizi tanımlama](define-service-offerings.md).
 
 Bookings hizmetinde **Katılımcı sayısı üst sınırını** 1'den fazla olarak ayarladığınızdan emin olun.
 
@@ -26,7 +28,7 @@ Bookings hizmetinde **Katılımcı sayısı üst sınırını** 1'den fazla olar
 > [!NOTE]
 > Bu ayarları güncelleştirebilmeniz için önce Yönetici veya Ekip üyesi iznine sahip olmanız gerekir.
 
-1. Microsoft 365'da uygulama başlatıcıyı ve ardından **Bookings'ı** seçin.
+1. Microsoft 365'te uygulama başlatıcıyı ve ardından **Bookings'i** seçin.
 
 2. Takviminizi seçin, grup toplantısını seçin ve **Düzenle'yi** seçin.
 
@@ -40,6 +42,6 @@ Bookings hizmetinde **Katılımcı sayısı üst sınırını** 1'den fazla olar
 
 ## <a name="common-issues"></a>Yaygın sorunlar
 
-- Teams uygulamasından veya mobil uygulamadan grup rezervasyon hizmetinin düzenlenmesi, katılımcıları 1'e sıfırlar. Grup ayırma hizmetini düzenlemek için Bookings web uygulamasını kullanın.
+- Teams uygulamasından veya mobil uygulamadan grup rezervasyon hizmetinin düzenlenmesi katılımcıları 1'e sıfırlar. Grup ayırma hizmetini düzenlemek için Bookings web uygulamasını kullanın.
 
 - Grup rezervasyonları şu anda kaynak rezervasyonlarını desteklemiyor.

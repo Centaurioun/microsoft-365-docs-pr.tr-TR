@@ -7,9 +7,10 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - M365-identity-device-management
@@ -29,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Office'i bir iPhone'a veya Android telefona yüklediğinizde, Office uygulamalarındaki iş dosyalarınız İş için Microsoft 365 tarafından korunur.
-ms.openlocfilehash: 4121c417eb65bf4994d07b173f5cc4a5b976f81b
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 4bcb19af85c348541153e7079d5b3f273f5b1923
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663835"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68189615"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>İşletmeler için Microsoft 365 kullanıcıları için mobil cihazları ayarlama
 

@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: prlachhw, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 description: Yöneticiler, kuruluşlarındaki kullanıcılar tarafından yapılan self servis satın alma işlemlerini yönetmeyi öğrenebilir.
 ms.date: 05/24/2022
-ms.openlocfilehash: 50d782052839c099f3c64e45cc82a6f2ae5ba853
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: 9a77d246b6a131964e826629af2a52f21fb7732f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663524"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68206179"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Self servis satın almaları yönetme (Yönetici)
 
@@ -85,7 +86,7 @@ Kuruluşunuzdaki kullanıcılar için self servis satın almaları devre dışı
 - Belirli bir ürünü etkinleştirmek veya devre dışı bırakmak için geçerli ayarı görüntüleme veya değiştirme
 
 > [!IMPORTANT]
-> **AllowSelfServicePurchase** ilkesini kullandığınızda, hem self servis satın almaları hem de self servis denemelerini etkinleştirir veya devre dışı bırakır. Self servis satın alma için kullanılabilen ürünlerin listesi için bkz. [Self servis satın alma ürünlerinin listesini ve durumlarını görüntüleme](allowselfservicepurchase-powershell.md#view-a-list-of-self-service-purchase-products-and-their-status). Deneme aboneliklerinde yalnızca Project ve Visio kullanılabilir.
+> **AllowSelfServicePurchase** ilkesini kullandığınızda, hem self servis satın almaları hem de self servis denemelerini etkinleştirir veya devre dışı bırakır. Self servis satın alma için kullanılabilen ürünlerin listesi için bkz. [Self servis satın alma ürünlerinin listesini ve durumlarını görüntüleme](allowselfservicepurchase-powershell.md#view-a-list-of-self-service-purchase-products-and-their-status). Deneme abonelikleri için yalnızca Project ve Visio kullanılabilir.
 
 Daha fazla bilgi için bkz. [MSCommerce PowerShell modülü için AllowSelfServicePurchase kullanma](allowselfservicepurchase-powershell.md).
 

@@ -15,14 +15,16 @@ ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
 search.appverid: met150
-ms.openlocfilehash: bdf187bdfec2faa86c8cc99667a59e893cab8a1b
-ms.sourcegitcommit: 9b133379196da2b3a4bb311b07ff274f43780f68
+ms.openlocfilehash: ad5e68d0cc4f9e9f7c7ae76b8c07b3fbdf0f3613
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67699158"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68205651"
 ---
 # <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>Uç noktalarda görünen Microsoft Defender Virüsten Koruma bildirimlerini yapılandırma
 
@@ -35,7 +37,7 @@ ms.locfileid: "67699158"
 **Platform**
 - Windows
 
-Windows 10 ve Windows 11,kötü amaçlı yazılım algılama ve düzeltme hakkında uygulama bildirimleri daha sağlam, tutarlı ve kısadır. Taramalar tamamlandığında ve tehditler algılandığında uç noktalarda Microsoft Defender Virüsten Koruma bildirimleri görüntülenir. Bildirimler hem zamanlanmış hem de el ile tetiklenen taramaları izler. Bu bildirimler **Bildirim Merkezi'nde** de görünür ve taramaların ve tehdit algılamalarının bir özeti düzenli aralıklarla görüntülenir.
+Windows 10 ve Windows 11,kötü amaçlı yazılım algılama ve düzeltme hakkında uygulama bildirimleri daha sağlam, tutarlı ve kısadır. Microsoft Defender Taramalar tamamlandığında ve tehditler algılandığında uç noktalarda Virüsten Koruma bildirimleri görüntülenir. Bildirimler hem zamanlanmış hem de el ile tetiklenen taramaları izler. Bu bildirimler **Bildirim Merkezi'nde** de görünür ve taramaların ve tehdit algılamalarının bir özeti düzenli aralıklarla görüntülenir.
 
 Kuruluşunuzun güvenlik ekibinin bir parçasıysanız, sistemin yeniden başlatılmasını isteyen veya bir tehdidin algılanıp düzeltildiğini belirten bildirimler gibi bildirimlerin uç noktalarda nasıl görüneceğini yapılandırabilirsiniz.
 
@@ -56,7 +58,7 @@ Son tehdit algılama özetleri gibi ek bildirimlerin görüntülenmesini [Window
 
 4. **Yönetim şablonları'nı** seçin.
 
-5. Ağacı **Windows bileşenleri** \> **Microsoft Defender Virüsten Koruma** > **Raporlama** olarak genişletin.
+5. Ağacı **Virüsten Koruma** > **Raporlama** Microsoft Defender **Windows bileşenlerine** \> genişletin.
 
 6. **Gelişmiş bildirimleri kapat'a** çift tıklayın ve seçeneği **Etkin** olarak ayarlayın. Sonra **Tamam**’ı seçin. Bu, ek bildirimlerin görünmesini engeller.
 
@@ -84,7 +86,7 @@ grup ilkesi kullanarak:
 - Uç noktalardaki tüm bildirimleri gizleme
 - Uç noktalarda yeniden başlatma bildirimlerini gizleme
 
-Bildirimleri gizlemek, Microsoft Defender Virüsten Koruma arabiriminin tamamını gizleyememenize neden olan durumlarda yararlı olabilir. Daha fazla bilgi için bkz. [Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya bunlarla etkileşim kurmasını engelleme](prevent-end-user-interaction-microsoft-defender-antivirus.md) . Bildirimleri gizleme işlemi yalnızca ilkenin dağıtıldığı uç noktalarda gerçekleşir. Yapılması gereken eylemlerle ilgili bildirimler (yeniden başlatma gibi) [Microsoft Endpoint Manager Endpoint Protection izleme panosunda ve raporlarında](/configmgr/protect/deploy-use/monitor-endpoint-protection) görünmeye devam eder. 
+Bildirimleri gizlemek, Microsoft Defender Virüsten Koruma arabiriminin tamamını gizleyememenize neden olan durumlarda yararlı olabilir. Daha fazla bilgi için bkz. [Kullanıcıların Microsoft Defender Virüsten Koruma kullanıcı arabirimini görmesini veya etkileşim kurmasını engelleme](prevent-end-user-interaction-microsoft-defender-antivirus.md). Bildirimleri gizleme işlemi yalnızca ilkenin dağıtıldığı uç noktalarda gerçekleşir. Yapılması gereken eylemlerle ilgili bildirimler (yeniden başlatma gibi) [Microsoft Endpoint Manager Endpoint Protection izleme panosunda ve raporlarında](/configmgr/protect/deploy-use/monitor-endpoint-protection) görünmeye devam eder. 
 
 Uç nokta bildirimlerine özel kişi bilgileri eklemek için bkz. [Kuruluşunuz için Windows Güvenliği uygulamasını özelleştirme](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center).
 
