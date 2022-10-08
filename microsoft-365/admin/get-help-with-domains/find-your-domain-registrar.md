@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: InterNIC aramasını kullanarak etki alanı kayıt şirketinizi ve DNS barındırma sağlayıcınızı bulmayı öğrenin.
-ms.openlocfilehash: f48be0f1d1c28ce9a9d76ef278411245faa3d4da
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: fd5616fe949d2d1aa831cefdef655bb695ee140f
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664263"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187217"
 ---
 # <a name="find-your-domain-registrar"></a>Etki alanı kayıt şirketinizi bulma
 
@@ -64,8 +65,7 @@ ms.locfileid: "67664263"
 
 4. İki nokta işaretinden (:) sonra görünen ad sunucusu (NS) bilgilerini kopyalayıp sayfanın en üstündeki **Ara** kutusuna yapıştırın. **Ad sunucusu**’nu seçin ve **Gönder**'i tıklatın.
 
-5. 
-            **Whois Arama Sonuçları** sayfasında **Kayıt Şirketi** girişini bulun. Bu girişte, etki alanınızın ad sunucusunun sahibi olan DNS hizmeti sağlayıcısı listelenir.
+5. On the **Whois Search Results** page, locate the **Registrar** entry. This entry lists your DNS hosting provider, the DNS provider who owns the name server for your domain.
 
 ---
 

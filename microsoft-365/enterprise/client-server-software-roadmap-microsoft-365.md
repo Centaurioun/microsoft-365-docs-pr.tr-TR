@@ -10,15 +10,17 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management
+ms.collection:
+- scotvorg
+- M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 için istemci ve sunucu yazılımı ayarlamak için bu yol haritasını kullanın.
-ms.openlocfilehash: 2f255ca53dc19444aabf4c8e658ad0270a6aef84
-ms.sourcegitcommit: 62368e5a48e569c8e475b07d194d7d8ff7d167ab
+ms.openlocfilehash: f1ac213b60b06014de574a5fd509b6c369ec6fda
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67560427"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170651"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Microsoft 365 için istemci ve sunucu yazılımı yol haritası
 

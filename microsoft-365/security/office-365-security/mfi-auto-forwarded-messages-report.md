@@ -12,13 +12,14 @@ ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Yöneticiler, Güvenlik & Uyumluluk Merkezi'ndeki Posta akışı panosunda Otomatik iletilen iletiler raporu hakkında bilgi edinebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 86c3e7f530f31d6827bb5ce4396f3b9ed6229605
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.collection: m365-security
+search.appverid: met150
+ms.openlocfilehash: 5de545c15daea2e4107093997abce3a86a2d22d8
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67598769"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68084033"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'nde otomatik iletilen iletiler içgörüleri
 

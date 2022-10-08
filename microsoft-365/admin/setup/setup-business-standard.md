@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -29,12 +30,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 İş Standart satın aldığınızda, sahip olduğunuz bir etki alanını kullanma veya kayıt sırasında bir etki alanı satın alma seçeneğiniz vardır.
-ms.openlocfilehash: 93d97a75aea1bf1a59284ea3c6e4e52997ab1e90
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: 1d489e9b39baa2bfddf9f6084a6c047c8d04c957
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67663770"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203145"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Yeni veya var olan bir etki alanıyla Microsoft 365 İş Standart ayarlama
 

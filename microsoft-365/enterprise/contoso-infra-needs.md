@@ -7,19 +7,20 @@ ms.author: kvice
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso şirket içi BT altyapısının temel yapısını ve şirketin iş ihtiyaçlarının kuruluş için Microsoft 365 tarafından nasıl karşılandığını anlayın.
-ms.openlocfilehash: 793c867d47d76a03efad707d8447e04538c8ebb8
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 6dff78cd3cbc7a4c1e27a647f98b0573a4ea3947
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637505"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186776"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso BT altyapısı ve iş gereksinimleri
 
@@ -107,9 +108,9 @@ Contoso iş gereksinimleri beş ana kategoriye ayrılır:
 
 - İstemci bilgisayarlarda ve cihazlarda çalışan yazılımları yönetmek için DAHA düşük BT yükü
 
-  güncelleştirmelerin kuruluş genelinde Windows işletim sistemine ve Kurumlar için Microsoft 365 Uygulamaları yüklenmesini otomatikleştirin.
+  Windows işletim sistemine güncelleştirmelerin yüklenmesini otomatikleştirin ve kuruluş genelinde Kurumlar için Microsoft 365 Uygulamaları.
 
-## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>Contoso işletme gereksinimlerinin kuruluş için Microsoft 365 eşlenmesi
+## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>Contoso işletme gereksinimlerinin kuruluş için Microsoft 365'e eşlenmesi
 
 Contoso BT departmanı, dağıtım öncesinde özellikleri Microsoft 365 E5 için aşağıdaki iş gereksinimleri eşlemesini belirledi:
 
@@ -117,9 +118,9 @@ Contoso BT departmanı, dağıtım öncesinde özellikleri Microsoft 365 E5 içi
 | Kategori | İş gereksinimi | Kurumsal ürünler veya özellikler için Microsoft 365 |
 |:-------|:-----|:-----|
 | Verimli -lik |  |  |
-|  | İşbirliğini kolaylaştırma | Microsoft Teams, SharePoint OneDrive |
-|  | Uzak ve mobil çalışanlar için üretkenliği geliştirme | İş yüklerini ve bulut tabanlı verileri Microsoft 365 |
-|  | Yaratıcılığı ve yeniliği artırma | Windows Ink, Cortana PowerPoint |
+|  | İşbirliğini kolaylaştırma | Microsoft Teams, SharePoint, OneDrive |
+|  | Uzak ve mobil çalışanlar için üretkenliği geliştirme | Microsoft 365 iş yükleri ve bulut tabanlı veriler |
+|  | Yaratıcılığı ve yeniliği artırma | Windows Ink, İş Yerinde Cortana, PowerPoint |
 | Güvenlik |  |  |
 |  | Kimlik & erişim yönetimi | Azure AD Multi-Factor Authentication (MFA) ve Azure AD Privileged Identity Management (PIM) ile ayrılmış genel yönetici hesapları <br> Tüm kullanıcı hesapları için MFA <br> Koşullu Erişim <br> Güvenlik Okuyucusu <br> Windows Hello <br> Windows Credential Guard |
 |  | Tehdit koruması | Gelişmiş Tehdit Analizi <br> Windows Defender <br> Office 365 için Defender <br> Office 365 için Microsoft Defender <br> Microsoft 365 tehdit araştırması ve yanıtı <br> |
@@ -127,17 +128,17 @@ Contoso BT departmanı, dağıtım öncesinde özellikleri Microsoft 365 E5 içi
 |  | Güvenlik yönetimi | Bulut için Microsoft Defender  <br> Windows Defender Güvenlik Merkezi |
 | Uzaktan ve mobil erişim ve iş ortakları |  |  |
 |  | Uzak ve mobil çalışanlar için daha iyi güvenlik | Microsoft Intune |
-|  | Çalışanlar için uzaktan erişim altyapısını azaltma | İş yüklerini ve bulut tabanlı verileri Microsoft 365 |
+|  | Çalışanlar için uzaktan erişim altyapısını azaltma | Microsoft 365 iş yükleri ve bulut tabanlı veriler |
 |  | B2B işlemleri için bağlantıyı iyileştirme ve daha düşük ek yük | Federasyon kimlik doğrulaması ve bulut tabanlı kaynaklar |
 | Uyumluluk |  |  |
-|  | Bölgesel mevzuat gereksinimlerine uyma | Microsoft 365'deki GDPR özellikleri |
+|  | Bölgesel mevzuat gereksinimlerine uyma | Microsoft 365'teki GDPR özellikleri |
 | Yönetim |  |  |
 |  | İstemci güncelleştirmelerini yüklemek için DAHA düşük BT yükü | güncelleştirmeleri Windows 10 Enterprise <br> güncelleştirmeleri Kurumlar için Microsoft 365 Uygulamaları |
 ||||
 
 ## <a name="next-step"></a>Sonraki adım
 
-Contoso Corporation [şirket içi ağı](contoso-networking.md) ve bulut tabanlı kaynakları Microsoft 365 erişim ve gecikme süresi için nasıl iyileştirildiği hakkında bilgi edinin.
+Contoso Corporation [şirket içi ağı](contoso-networking.md) ve Microsoft 365 bulut tabanlı kaynaklara erişim ve gecikme süresi için nasıl iyileştirildiği hakkında bilgi edinin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

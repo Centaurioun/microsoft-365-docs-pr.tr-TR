@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 08/12/2019
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 f1.keywords:
@@ -22,20 +23,20 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Bu makalede, Microsoft 365 Kurumsal dağıtımınızı planlamak için denetim listeleri ve diğer kaynaklar sağlanır.
-ms.openlocfilehash: 9c9ae59e1a54935d62c014d435e34984f0c24415
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 36548b4f51c2916872c6f617391c5c0c4d97dcf4
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100995"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186711"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Microsoft 365 Kurumsal için planlama
 
-Kurumsal bir kuruluşu Microsoft 365 taşıdığınızda, BT dağıtımını ve kullanıcı benimsemesini kolaylaştıracak temel tasarım kararlarını önceden planlamak ve almak önemlidir. 
+Kurumsal bir kuruluşu Microsoft 365'e taşıdığınızda, BT dağıtımını ve kullanıcı benimsemesini kolaylaştıracak önemli tasarım kararlarını önceden planlamak ve almak önemlidir. 
 
 ## <a name="planning-with-microsoft-365-fasttrack"></a>Microsoft 365 FastTrack ile planlama
 
-[Microsoft 365 için FastTrack, Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) dağıtımınızı planlamak için Microsoft'tan yardım almak için en iyi yöntemdir. FastTrack en yaygın tasarım konuları konusunda size yardımcı olabilir ve bu arada soruları yanıtlayabilir. 
+[Microsoft 365 için FastTrack, Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) dağıtımınızı planlamak için Microsoft'tan yardım almak için en iyi yöntemdir. FastTrack, en yaygın tasarım konuları konusunda size yardımcı olabilir ve bu arada soruları yanıtlayabilir. 
 
 >[!Note]
 >Ayrıca bir [Microsoft iş ortağından](https://www.microsoft.com/solution-providers/home) da yardım alabilirsiniz.
@@ -43,7 +44,7 @@ Kurumsal bir kuruluşu Microsoft 365 taşıdığınızda, BT dağıtımını ve 
 
 ## <a name="do-it-yourself-planning-for-microsoft-365"></a>Microsoft 365 için kendiniz plan yapın
 
-Microsoft 365 kendiniz planlamak için, bu alanlara yönelik planlama ve tasarım kararlarını adım adım uygulayın:
+Microsoft 365'i kendi başınıza planlamak için şu alanlara yönelik planlama ve tasarım kararlarını adım adım izleyin:
 
 - Microsoft 365 kiracınız
 
@@ -61,4 +62,4 @@ Microsoft 365 kendiniz planlamak için, bu alanlara yönelik planlama ve tasarı
 
   Office 2007 ve Office 2010 istemci ve sunucu ürünleri için geçiş bilgilerini içerir. Daha fazla bilgi için [Yükseltmenizi planlama](plan-upgrade-previous-versions-office.md) bölümüne gidin.
 
-Ayrıca Microsoft 365 aboneliğinizde oturum açabilir ve [Microsoft 365 ve Office 365 hizmetleri için Kurulum kılavuzlarını](setup-guides-for-microsoft-365.md) kullanabilirsiniz.
+Ayrıca Microsoft 365 aboneliğinizde oturum açabilir ve [Microsoft 365 ve Office 365 hizmetleri için Kurulum kılavuzlarını kullanabilirsiniz](setup-guides-for-microsoft-365.md).

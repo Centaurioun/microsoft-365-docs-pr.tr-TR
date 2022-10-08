@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
-- M365-security-compliance
+- m365-security
 ms.custom: ''
 description: Yöneticiler, Exchange Online Protection (EOP) içinde istenmeyen posta önleme ilkelerini görüntülemeyi, oluşturmayı, değiştirmeyi ve silmeyi öğrenebilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 6c58afbaf6d8162c6c06e3ab69ec671ce4bf83e9
-ms.sourcegitcommit: 651610ca73bfd1d008d97311b59782790df664fb
+ms.openlocfilehash: a8c74764f2dc5be2aa78faf3e71eabbc925ed0fc
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "67613219"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187591"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP'de istenmeyen posta önleme ilkelerini yapılandırma
 
@@ -157,20 +157,20 @@ Microsoft 365 Defender portalında özel bir istenmeyen posta önleme ilkesi olu
 
      İstenmeyen posta filtreleme kararlarına yönelik kullanılabilir eylemler aşağıdaki tabloda açıklanmıştır.
 
-     - Onay işareti ( ![Onay işareti.](../../media/checkmark.png)) eylemin kullanılabilir olduğunu gösterir (tüm eylemler tüm kararlarda kullanılamaz).
+     - Onay işareti ( ✔ ) eylemin kullanılabilir olduğunu gösterir (tüm eylemler tüm kararlarda kullanılamaz).
      - Onay işaretinden sonraki yıldız işareti ( <sup>\*</sup> ) istenmeyen posta filtreleme kararı için varsayılan eylemi gösterir.
 
      |Eylem|Spam|Yüksek<br>Güven<br>istenmeyen posta|Kimlik Avı|Yüksek<br>Güven<br>Kimlik avı|Toplu|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**İletiyi Gereksiz Email klasörüne taşıma**: İleti posta kutusuna teslim edilir ve Gereksiz Email klasörüne taşınır.<sup> 1</sup>|![Onay işareti.](../../media/checkmark.png)<sup>\*</sup>|![Onay işareti.](../../media/checkmark.png)<sup>\*</sup>|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)<sup>\*</sup>|
-     |**X üst bilgisi ekle**: İleti üst bilgisine bir X üst bilgisi ekler ve iletiyi posta kutusuna teslim eder. <p> Bu X üst bilgisini ekle metin kutusuna daha sonra **X üst bilgisi** alan adını (değeri değil) girersiniz. <p> **İstenmeyen posta** ve **Yüksek güvenilirlikli istenmeyen posta** kararları için ileti Gereksiz Email klasörüne taşınır.<sup> 1,2</sup>|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)||![Onay işareti](../../media/checkmark.png)|
-     |**Metinle önceden eklenen konu satırı**: İletinin konu satırının başına metin ekler. İleti posta kutusuna teslim edilir ve Gereksiz e-posta klasörüne taşınır. <sup>1,2</sup> <p> Metni daha sonra **Konu ön eki satırına bu metin kutusuyla** girersiniz.|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)||![Onay işareti](../../media/checkmark.png)|
-     |**İletiyi e-posta adresine yeniden yönlendirme**: İletiyi hedeflenen alıcılar yerine diğer alıcılara gönderir. <p> Alıcıları daha sonra **Bu e-posta adresine yeniden yönlendir** kutusunda belirtirsiniz.|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|
-     |**İletiyi sil**: Tüm ekler dahil olmak üzere iletinin tamamını sessizce siler.|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)||![Onay işareti](../../media/checkmark.png)|
-     |**Karantina iletisi**: İletiyi hedeflenen alıcılar yerine karantinaya gönderir. <p> İletinin ne kadar süreyle karantinada tutulacağını **Daha sonra Karantina** kutusunda belirtirsiniz. <p> Görüntülenen [İlke](quarantine-policies.md) seçin kutusunda istenmeyen posta filtresi kararı için karantinaya alınan iletilere uygulanan karantina **ilkesini belirtirsiniz** . Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md). <sup>3</sup>|![Onay işareti.](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)|![Onay işareti](../../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../../media/checkmark.png)<sup>\*</sup>|![Onay işareti](../../media/checkmark.png)|
-     |**Eylem yok**|||||![Onay işareti](../../media/checkmark.png)|
+     |**İletiyi Gereksiz Email klasörüne taşıma**: İleti posta kutusuna teslim edilir ve Gereksiz Email klasörüne taşınır.<sup> 1</sup>|✔<sup>\*</sup>|✔<sup>\*</sup>|✔|✔|✔<sup>\*</sup>|
+     |**X üst bilgisi ekle**: İleti üst bilgisine bir X üst bilgisi ekler ve iletiyi posta kutusuna teslim eder. <p> Bu X üst bilgisini ekle metin kutusuna daha sonra **X üst bilgisi** alan adını (değeri değil) girersiniz. <p> **İstenmeyen posta** ve **Yüksek güvenilirlikli istenmeyen posta** kararları için ileti Gereksiz Email klasörüne taşınır.<sup> 1,2</sup>|✔|✔|✔||✔|
+     |**Metinle önceden eklenen konu satırı**: İletinin konu satırının başına metin ekler. İleti posta kutusuna teslim edilir ve Gereksiz e-posta klasörüne taşınır. <sup>1,2</sup> <p> Metni daha sonra **Konu ön eki satırına bu metin kutusuyla** girersiniz.|✔|✔|✔||✔|
+     |**İletiyi e-posta adresine yeniden yönlendirme**: İletiyi hedeflenen alıcılar yerine diğer alıcılara gönderir. <p> Alıcıları daha sonra **Bu e-posta adresine yeniden yönlendir** kutusunda belirtirsiniz.|✔|✔|✔|✔|✔|
+     |**İletiyi sil**: Tüm ekler dahil olmak üzere iletinin tamamını sessizce siler.|✔|✔|✔||✔|
+     |**Karantina iletisi**: İletiyi hedeflenen alıcılar yerine karantinaya gönderir. <p> İletinin ne kadar süreyle karantinada tutulacağını **Daha sonra Karantina** kutusunda belirtirsiniz. <p> Görüntülenen [İlke](quarantine-policies.md) seçin kutusunda istenmeyen posta filtresi kararı için karantinaya alınan iletilere uygulanan karantina **ilkesini belirtirsiniz** . Daha fazla bilgi için bkz [. Karantina ilkeleri](quarantine-policies.md). <sup>3</sup>|✔|✔|✔<sup>\*</sup>|✔<sup>\*</sup>|✔|
+     |**Eylem yok**|||||✔|
 
-     > <sup>1</sup> EOP artık gereksiz e-posta kuralını kullanmak yerine iletileri Gereksiz Email klasörüne yönlendirmek için kendi posta akışı teslim aracısını kullanıyor. **Set-MailboxJunkEmailConfiguration** cmdlet'indeki _Enabled_ parametresinin artık posta akışı üzerinde hiçbir etkisi yoktur. Daha fazla bilgi için bkz[. Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md).
+     > <sup>1</sup> EOP artık iletileri posta kutusundaki gereksiz e-posta kuralını kullanmak yerine Gereksiz Email klasörüne yönlendirmek için kendi posta akışı teslim aracısını kullanıyor. **Set-MailboxJunkEmailConfiguration** cmdlet'indeki _Enabled_ parametresinin artık posta akışı üzerinde hiçbir etkisi yoktur. Daha fazla bilgi için bkz[. Exchange Online posta kutularında gereksiz e-posta ayarlarını yapılandırma](configure-junk-email-settings-on-exo-mailboxes.md).
      >
      > EOP'nin şirket içi Exchange posta kutularını koruduğu karma ortamlarda, şirket içi Exchange'de posta akışı kurallarını (aktarım kuralları olarak da bilinir) yapılandırmanız gerekir. Bu posta akışı kuralları, posta kutusunda gereksiz e-posta kuralının iletiyi Gereksiz Email klasörüne taşıyabilmesi için EOP istenmeyen posta filtreleme kararını çevirir. Ayrıntılar için bkz. [Karma ortamlarda gereksiz Email klasörüne istenmeyen posta göndermek için EOP'yi yapılandırma](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
      >

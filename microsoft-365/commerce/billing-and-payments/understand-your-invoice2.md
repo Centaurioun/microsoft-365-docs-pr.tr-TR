@@ -8,9 +8,10 @@ manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - highpri
 - M365-subscription-management
 - Adm_O365
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: İş için Microsoft 365 faturanızda veya faturanızda ücretleri, faturalamayı ve ödeme bilgilerini yorumlamayı öğrenin.
 ms.date: 05/24/2022
-ms.openlocfilehash: 41dfca0b8b10d1c481ccb704c3fff5508eede6ef
-ms.sourcegitcommit: 37e137535c4f70702afe1a5eeaa899c75ee02cfd
+ms.openlocfilehash: b85f04d112562ed3d2e25d2b55130b61e4d55260
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67664735"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195929"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>İş için Microsoft 365 faturanızı veya faturanızı anlama
 
@@ -40,7 +41,7 @@ Faturanız veya faturanız, aboneliğiniz için ücretlerin özetini sağlar ve 
 
 ## <a name="watch-understand-your-bill-or-invoice"></a>İzleyin: Faturanızı veya faturanızı anlama
 
-[YouTube kanalımızda](https://go.microsoft.com/fwlink/?linkid=2197915) bu videoya ve diğer videolara göz atın.
+[YouTube kanalımızda](https://go.microsoft.com/fwlink/?linkid=2209539) bu videoya ve diğer videolara göz atın.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53wxS?autoplay=false]
 

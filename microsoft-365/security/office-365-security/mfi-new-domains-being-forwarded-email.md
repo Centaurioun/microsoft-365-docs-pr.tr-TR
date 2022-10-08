@@ -12,13 +12,14 @@ ms.assetid: ''
 description: Yöneticiler, Güvenlik & Uyumluluk Merkezi'ndeki Posta akışı panosunda yeni etki alanlarının iletilen e-posta içgörülerini kullanarak kullanıcılarının hiç iletilmemiş dış etki alanlarına ne zaman ileti ilettiğini araştırabilir.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 5cbd60714b929b97c571ca21fdb5f50fa0b18443
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+ms.collection: m365-security
+search.appverid: met150
+ms.openlocfilehash: 2ed2d5d258fc95271eeedabbb11f794ea63f77ce
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67599593"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68083989"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Güvenlik & Uyumluluk Merkezi'nde iletilen yeni etki alanları e-posta içgörüleri
 

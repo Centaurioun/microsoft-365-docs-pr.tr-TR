@@ -2,14 +2,15 @@
 title: Microsoft Benimseme Puanı - Microsoft 365 uygulamalarının sistem durumu
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: camillepack
+author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Microsoft 365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Uygulamaları sistem durumu - teknoloji deneyimleri Benimseme Puanı'nın ayrıntıları.
-ms.openlocfilehash: 0e87f157e0d1e587ede091befee1528417ada319
-ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
+ms.openlocfilehash: b87ace977b396a6d97854a400eeb3659c25edab6
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67437952"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187481"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 Uygulamaları sağlık – teknoloji deneyimleri
 

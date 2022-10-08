@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -19,16 +20,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Kayıtlı cihazlardan bilgileri kaldırmak için yerleşik Basic Mobility ve Security'yi kullanın.
-ms.openlocfilehash: 5ecdfc691d85b86d882cf05dd5328d41dcdfa767
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 314c9dcd4b68a3c809b1f59e60e061b9498e9834
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863064"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187393"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Basic Mobility ve Security'de mobil cihazı silme
 
-Yalnızca kuruluş bilgilerini kaldırmak veya bir mobil cihazdan tüm bilgileri silmek ve fabrika ayarlarına geri yüklemek üzere fabrika sıfırlaması gerçekleştirmek için Microsoft 365 için yerleşik Temel Mobilite ve Güvenlik'i kullanabilirsiniz.
+Microsoft 365 için yerleşik Temel Mobilite ve Güvenlik'i kullanarak yalnızca kurumsal bilgileri kaldırabilir veya bir mobil cihazdan tüm bilgileri silip fabrika ayarlarına geri yüklemek üzere fabrika sıfırlaması yapabilirsiniz.
 
 ## <a name="before-you-begin"></a>Başlamadan önce
 
@@ -80,9 +81,9 @@ Temizleme hemen mobil cihaza gönderilir ve cihaz Azure Active Directory'de uyum
 
 |İçerik etkisi|iOS|Android|
 |---|---|---|
-|Microsoft 365 uygulama verileri, cihaz Intune Uygulama Koruma ilkeleri tarafından korunuyorsa silinir. Uygulamalar kaldırılmaz. Mobil Uygulama Yönetimi (MAM) ilkeleriyle korunmayan cihazlar için Outlook ve OneDrive önbelleğe alınan verileri kaldırmaz.<br/>**Not** Intune Uygulama koruması ilkeleri uygulamak için Intune lisansına sahip olmanız gerekir.|Evet|Evet|
+|Cihaz Intune App Protection ilkeleriyle korunuyorsa Microsoft 365 uygulama verileri silinir. Uygulamalar kaldırılmaz. Mobil Uygulama Yönetimi (MAM) ilkeleriyle korunmayan cihazlar için Outlook ve OneDrive önbelleğe alınmış verileri kaldırmaz.<br/>**Not** Intune Uygulama koruması ilkeleri uygulamak için Intune lisansına sahip olmanız gerekir.|Evet|Evet|
 |Temel Mobilite ve Güvenlik tarafından cihazlara uygulanan ilke ayarları artık zorunlu değildir; kullanıcılar ayarları değiştirebilir.|Evet|Evet|
-|Basic Mobility ve Security tarafından oluşturulan e-posta profilleri kaldırılır ve cihazdaki önbelleğe alınmış e-posta silinir.|Evet|Yok|
+|Basic Mobility ve Security tarafından oluşturulan Email profilleri kaldırılır ve cihazdaki önbelleğe alınmış e-posta silinir.|Evet|Yok|
 
 > [!NOTE]
 > Şirket Portalı uygulaması iOS için App Store ve Android cihazlar için Play Store'da kullanılabilir.

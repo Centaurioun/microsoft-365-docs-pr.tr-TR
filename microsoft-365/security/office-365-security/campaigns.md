@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: ''
 description: Office 365 için Microsoft Defender'deki Kampanya Görünümleri hakkında bilgi edinin.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 7d705e77e7d288ea6cee594d02277d2c9bb54db1
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 61f5f6269d4d6fa01aa5866063d716a3cface0ab
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67473974"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68082822"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Office 365 için Microsoft Defender'da Saldırı Kampanyası Görünümleri
 

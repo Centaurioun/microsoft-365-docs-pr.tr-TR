@@ -16,14 +16,16 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: article
-ms.openlocfilehash: 64962d5a6bfb3a051e64cb2658a073d9100c2b6b
-ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.openlocfilehash: 828068caa9838b45a5e1f9ae329205440dc77de0
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67466931"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68083065"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -95,7 +97,7 @@ Gelişmiş tehdit avcılığı şemasındaki diğer tablolar hakkında bilgi iç
 | `SensitivitySubLabel` | `string` | E-postaya, dosyaya veya diğer içeriğe uygulanan alt etiket, bunu bilgi koruması için sınıflandırmak için; duyarlılık alt etiketleri duyarlılık etiketleri altında gruplandırılır ancak bağımsız olarak işlenir |
 | `IsAzureInfoProtectionApplied` | `boolean` | Dosyanın Azure Information Protection tarafından şifrelenip şifrelenmediğini gösterir |
 | `ReportId` | `long` | Yinelenen sayacı temel alan olay tanımlayıcısı. Benzersiz olayları tanımlamak için bu sütunun DeviceName ve Timestamp sütunlarıyla birlikte kullanılması gerekir. |
-| `AppGuardContainerId` | `string` | Application Guard tarafından tarayıcı etkinliğini yalıtmak için kullanılan sanallaştırılmış kapsayıcının tanımlayıcısı |
+| `AppGuardContainerId` | `string` | tarayıcı etkinliğini yalıtmak için Application Guard tarafından kullanılan sanallaştırılmış kapsayıcının tanımlayıcısı |
 | `AdditionalFields` | `string` | Varlık veya olay hakkında ek bilgi |
 >[!NOTE]
 > Dosya karması bilgileri her zaman kullanılabilir olduğunda gösterilir. Ancak SHA1, SHA256 veya MD5'in hesaplanamamasının birkaç olası nedeni vardır. Örneğin, dosya uzak depolama alanında, başka bir işlem tarafından kilitlenmiş, sıkıştırılmış veya sanal olarak işaretlenmiş olabilir. Bu senaryolarda, dosya karması bilgileri boş görünür.

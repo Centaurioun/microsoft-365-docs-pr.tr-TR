@@ -7,9 +7,10 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Microsoft için 1&1 IONOS'ta etki alanınızı doğrulamayı ve e-posta, Skype Kurumsal Online ve diğer hizmetler için DNS kayıtlarını ayarlamayı öğrenin.
-ms.openlocfilehash: b9d7474fe0c442670be961a5436558ea168626dc
-ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
+ms.openlocfilehash: a17ee719f51dcd736e83c65beb7ff9a2073816fb
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563439"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187415"
 ---
 # <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>IONOS'ta 1&1'e kadar DNS kayıtlarınızı Microsoft 365'e bağlama
 
@@ -82,7 +83,7 @@ IONOS'ta 1&1'e kadar bu kayıtları ekledikten sonra, etki alanınız Microsoft 
 Etki alanınızı Microsoft ile kullanmadan önce, etki alanına sahip olduğunuzdan emin olmamız gerekir. Etki alanı kayıt şirketinizde hesabınızda oturum açıp DNS kaydını oluşturabilmek, Microsoft'a etki alanının sahibi olduğunuzu kanıtlar.
 
 > [!NOTE]
-> Bu kayıt yalnızca etki alanının sahibi olduğunuzu doğrulamak için kullanılır; başka hiçbir şeyi etkilemez. Dilerseniz bu kaydı daha sonra silebilirsiniz.
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
 1. Başlamak için [bu bağlantıyı](https://my.1and1.com/) kullanarak IONOS by 1&1'deki etki alanları sayfanıza gidin. Oturum açmanız istenir.
 
@@ -129,7 +130,7 @@ Microsoft 365'te kaydı doğrulamak için:
 1. **Etki alanını doğrula** sayfasında **Doğrula'yı** seçin.
 
 > [!NOTE]
-> Genellikle, DNS değişikliklerinin etkili olması yaklaşık 15 dakika sürer. Bununla birlikte, yaptığınız değişikliğin İnternet'in DNS sistemi genelinde güncelleştirilmesi bazen daha uzun sürebilir. DNS kayıtlarını ekledikten sonra posta akışı sorunlarıyla veya başka sorunlarla karşılaşırsanız, [Etki alanı adınızı veya DNS kayıtlarınızı değiştirdikten sonra sorunları giderme](../get-help-with-domains/find-and-fix-issues.md) konusuna bakın.
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ### <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Etki alanınız için e-postanın Microsoft'a gelmesi için bir MX kaydı ekleyin
 
@@ -348,7 +349,7 @@ Bu seçeneği yalnızca kuruluşunuz Microsoft Teams'in yanı sıra sohbet, konf
 
     |Tür|Hizmet|Protokol|Ana bilgisayar adı|İşaret edilen|Öncelik|Ağırlık|Bağlantı noktası|TTL|
     |---|---|---|---|---|---|---|---|---|
-    |SRV|_sip|tls|(Bu alanı boş bırakın.)|sipdir.online.lync.com|100|1|443|1 saat|
+    |SRV|_Sıp|tls|(Bu alanı boş bırakın.)|sipdir.online.lync.com|100|1|443|1 saat|
     |SRV|_sipfederationtls|tcp|(Bu alanı boş bırakın.)|sipfed.online.lync.com|100|1|5061|1 saat|
 
 1. **Kaydet**'i seçin.

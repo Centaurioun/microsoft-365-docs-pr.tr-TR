@@ -10,16 +10,17 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: Kurgusal ama temsili bir küresel kuruluşun kuruluş için Microsoft 365'i nasıl benimsediği.
-ms.openlocfilehash: 7a8b6ef18ef7d78705447063534671c80c7a6c25
-ms.sourcegitcommit: e9323a90a1156c10b037abca3e16d7367ef92dd7
+ms.openlocfilehash: 89f3509e8fd5e229455ebf0379a7334f05c07360
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "67570105"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170607"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Contoso Corporation için Kuruluş için Microsoft 365
 

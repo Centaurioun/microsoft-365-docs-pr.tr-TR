@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Office Eklentilerini dağıtmak için Merkezi Dağıtım'ı kullanabilmeniz için kiracınızın ve kullanıcılarınızın gereksinimleri karşılayıp karşılamadığını belirleyin.
-ms.openlocfilehash: f6dd5972dedebfa21d5770a789ae9477c8263801
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: c818a8824bb2c0ee49d6cc9cd27aba0b1f235475
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037610"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187261"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Eklentilerin Merkezi Dağıtımının kuruluşunuz için çalışıp çalışmadığını belirleme
 
@@ -79,7 +80,7 @@ Merkezi Dağıtım şunları desteklemez:
 
 Microsoft Exchange, eklenti bildirimlerini kuruluşunuzun kiracısında depolar. Eklentileri dağıtan yönetici ve bu eklentileri alan kullanıcılar OAuth kimlik doğrulamasını destekleyen bir Exchange Online sürümünde olmalıdır.
 
-Kullanılan mevcut yapılandırmanın hangisi olduğunu öğrenmek için kuruluşunuzun Exchange yöneticisiyle görüşün. Kullanıcı başına OAuth bağlantısı, [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet komutu kullanılarak doğrulanabilir.
+Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet.
 
 ### <a name="admin-requirements"></a>Yönetici gereksinimleri
 
@@ -138,7 +139,7 @@ Merkezi Dağıtım özelliği şu anda Microsoft 365 grupları, dağıtım liste
 
 Merkezi Dağıtım tek tek kullanıcılara, gruplara ve kiracıdaki herkese atamaları destekler. Merkezi Dağıtım, üst düzey gruplardaki veya üst grupları olmayan gruplardaki kullanıcıları destekler, ancak iç içe gruplardaki veya üst grupları olan gruplardaki kullanıcıları desteklemez.
 
-Merve, Zeynep ve Satış Bölümü grubunun bir eklentiye atandığı aşağıdaki örneğe bakın. Batı Sahili Satış Bölümü iç içe bir grup olduğundan, Burak ve Ahmet hiçbir eklentiye atanmaz.
+Take a look at the following example where Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in.
 
 ![MicrosoftTeams-image](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
@@ -148,7 +149,7 @@ Bir grubun iç içe gruplar içerip içermediğini saptamanın en kolay yolu, Ou
 
 ![Outlook kişi kartının Üyeler sekmesi.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
-Grubun, herhangi bir grubun üyesi olup olmadığını öğrenmek için grubu çözerek ters sorgu da yapabilirsiniz. Aşağıdaki örnekte, Alt Grup 1'in Outlook kişi kartının **Üyelik** sekmesinde, Test Grubunun bir üyesi olduğunu görebilirsiniz.
+You can do the opposite query by resolving the group to see if it's a member of any group. In the example below, you can see under the **Membership** tab of the Outlook contact card that Sub Group 1 is a member of the Test Group.
 
 ![Outlook kişi kartının Üyelik sekmesi.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 

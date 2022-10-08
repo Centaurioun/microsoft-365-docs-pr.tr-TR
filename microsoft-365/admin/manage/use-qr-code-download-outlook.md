@@ -1,5 +1,5 @@
 ---
-title: QR kodunu kullanarak mobil uygulamalarda oturum Outlook kullanma
+title: Outlook mobil uygulamalarında oturum açmak için QR kodu kullanma
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -7,53 +7,54 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: QR kodunu mobil cihazlarda kimlik doğrulaması yapmak ve indirmek için Outlook öğrenin.
-ms.openlocfilehash: 736628fb97cf2a6f4f6c6d175384a30c41bf642d
-ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
+description: Outlook Mobile'da kimlik doğrulaması yapmak ve indirmek için QR kodu kullanmayı öğrenin.
+ms.openlocfilehash: 0816c88ca302e442999d84da094094c058c80025
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "63007651"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203211"
 ---
-# <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>QR kodunu kullanarak mobil uygulamalarda oturum Outlook kullanma
+# <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>Outlook mobil uygulamalarında oturum açmak için QR kodu kullanma
 
-Sistem Microsoft 365 olarak kullanıcılarınızı, kullanıcı adı ve parolalarını girmek zorunda kalmadan mobil cihazlarında Android veya iOS için Outlook'de oturum açmalarını sebilirsiniz. QR kodunu tarayarak, kullanıcılar güvenli bir şekilde kimlik doğrulaması ve mobil cihazlarda oturum Outlook kullanabilir.
+Microsoft 365 yöneticisi olarak, kullanıcılarınızın kullanıcı adlarını ve parolalarını girmek zorunda kalmadan mobil cihazlarında Android için Outlook veya iOS uygulamasında oturum açmalarını sağlayabilirsiniz. Kullanıcılar qr kodunu tarayarak güvenli bir şekilde kimlik doğrulaması yapabilir ve Outlook Mobile'da oturum açabilir.
 
-Masaüstü Web üzerinde Outlook diğer masaüstü Outlook uygulamalarında, kullanıcılar mobil cihazlarında Outlook kullanabileceği konusunda bilgien bildirimler görebilirler. Bu bildirimler, yönetici tarafından Exchange PowerShell kullanılarak yönetilebilir. Kullanıcılar uygulamayı mobil cihazlarında indirmek için kendilerine SMS mesajı göndermeyi seçerse, bilgisayarlarında bir QR kodu görünür. QR kodunu tarayarak telefon veya tabletlerinden Outlook oturum açabilecektir. Bu QR kodu, yalnızca bir kez 1 kez ed binen kısa, yaşanmış bir belirteçtir.
+Web üzerinde Outlook veya diğer masaüstü Outlook uygulamalarında kullanıcılar, mobil cihazlarında Outlook'u kullanabileceklerini bildiren bildirimler görebilir. Bu bildirimler Exchange PowerShell kullanılarak yönetici tarafından yönetilebilir. Kullanıcılar uygulamayı mobil cihazlarına indirmek için kendilerine sms kısa mesaj göndermeyi seçerse, bilgisayarlarında bir QR kodu görünür. Telefon veya tabletlerinde Outlook'ta oturum açmak için QR kodunu tarayabilecekler. Bu QR kodu, yalnızca bir kez kullanılabilen kısa ömürlü bir belirteçtir.
 
-Bildirim yalnızca aşağıdaki koşullar karşılandı ise oluşturulur:
+Bildirim yalnızca aşağıdaki koşullar karşılandığında oluşturulur:
 
-1. Kiracı için QR kodu deneyimi etkinleştirilir (bu deneyim varsayılan olarak etkindir).
+1. QR kodu deneyimi kiracı için etkindir (bu deneyim varsayılan olarak etkindir).
 
-2. Kullanıcı zaten iOS ve Android için Outlook'i kullanmamış olabilir.
+2. Kullanıcı iOS ve Android için Outlook'u henüz kullanmıyor.
 
-3. Kullanıcının okuma bölmesinde boş bir durumu vardır (ilk e-postayı otomatik açma seçeneği seçili değildir).
+3. Kullanıcının okuma bölmesinde boş bir durumu var (ilk e-postayı otomatik olarak açma seçeneğini belirlemez).
 
-4. Kullanıcı bildirimi reddetti.
+4. Kullanıcı bildirimi kapatmadı.
 
 > [!NOTE]
-> Bazı durumlarda, kullanıcılarının QR kodunu oluşturmak için bilgisayarlarında yeniden kimlik doğrulaması yapmaları gerekir.
+> Bazı durumlarda, kullanıcılarınızın QR kodunu oluşturmak için bilgisayarlarında yeniden kimlik doğrulaması yapması gerekir.
 
 ## <a name="use-exchange-powershell"></a>Exchange PowerShell kullanma
 
 Bu özellik varsayılan olarak açıktır. Bu özelliği devre dışı bırakmak için aşağıdaki adımları izleyin.
 
-1. [Bağlan PowerShell Exchange e geri tarak.](/powershell/exchange/connect-to-exchange-online-powershell)
-2. PowerShell'i kullanarak kullanıcılarınıza mobil uygulamalar hakkında bildirim Outlook devre dışı abilirsiniz. Bu, QR kodu oturum açma akışının  gösteriliyor olması da önler.
+1. [Exchange PowerShell'e bağlanın](/powershell/exchange/connect-to-exchange-online-powershell).
+2. PowerShell'i kullanarak, kullanıcılarınıza Outlook mobil uygulamaları hakkında bilgi veren bildirimleri devre dışı bırakabilirsiniz. Bu, QR kodu oturum açma akışının gösterilmesini de engeller.
 
 ```powershell
 Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ```
 
 > [!NOTE]
-> Exchange PowerShell komutu kullanırken, değişikliklerin yayılması 8 saat kadar sürebilir.
+> Exchange PowerShell komutunu kullanırken değişikliklerin yayılması 8 saat kadar sürebilir.
 
 ## <a name="related-content"></a>İlgili içerik
 

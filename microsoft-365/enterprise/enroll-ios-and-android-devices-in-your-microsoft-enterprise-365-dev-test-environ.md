@@ -1,5 +1,5 @@
 ---
-title: Kurumsal test ortamınız için iOS/iPadOS ve Android cihazlarını Microsoft 365 kaydetme
+title: Kurumsal test ortamınız için Microsoft 365'e iOS/iPadOS ve Android cihazları kaydetme
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -8,36 +8,38 @@ manager: scotv
 ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-identity-device-management
+ms.collection:
+- scotvorg
+- M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Cihazları Microsoft 365 test ortamınıza kaydetmek ve uzaktan yönetmek için bu Test Laboratuvarı Kılavuzu'nu kullanın.
-ms.openlocfilehash: 5cefabf6b995754f6febe117776ad2de97443df0
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d4516ac4901cbebed494571527ea5b018299223d
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092943"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68186733"
 ---
-# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Kurumsal test ortamınız için iOS ve Android cihazları Microsoft 365 kaydetme
+# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Kurumsal test ortamınız için Microsoft 365'e iOS ve Android cihazları kaydetme
 
 *Bu Test Laboratuvarı Kılavuzu yalnızca kurumsal test ortamları için Microsoft 365 için kullanılabilir.*
 
-Bu makalede, kurumsal test ortamı için Microsoft 365 iOS/iPadOS ve Android cihazlar için temel mobil cihaz yönetimi özelliklerini kaydetme ve test etme işlemleri açıklanmaktadır.
+Bu makalede, kurumsal test ortamı için Microsoft 365'inizde iOS/iPadOS ve Android cihazları için temel mobil cihaz yönetimi özelliklerini kaydetme ve test etme işlemleri açıklanmaktadır.
 
 iOS/iPadOS ve Android cihazlarını test ortamınıza kaydetmek üç aşamayı içerir:
-- [1. Aşama: Kurumsal test ortamı için Microsoft 365 oluşturma](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [1. Aşama: Kurumsal test ortamı için Microsoft 365'inizi oluşturma](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [2. Aşama: iOS/iPadOS ve Android cihazlarınızı kaydetme](#phase-2-enroll-your-ios-and-android-devices)
 - [3. Aşama: iOS/iPadOS ve Android cihazlarınızı uzaktan yönetme](#phase-3-manage-your-ios-and-android-devices-remotely)
 
 ![Microsoft bulutu için Test Laboratuvarı Kılavuzları.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Kurumsal Test Laboratuvarı Kılavuzu yığınındaki Microsoft 365 tüm makalelere yönelik görsel bir harita için [kurumsal Test Laboratuvarı Kılavuzu Yığını için Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf) bölümüne gidin.
+> Microsoft 365 kurumsal Test Laboratuvarı Kılavuzu yığınındaki tüm makalelere yönelik görsel bir harita için [, Kurumsal Test Laboratuvarı Kılavuz Yığını için Microsoft 365'e](../downloads/Microsoft365EnterpriseTLGStack.pdf) gidin.
 
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>1. Aşama: Kurumsal test ortamı için Microsoft 365 oluşturma
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>1. Aşama: Kurumsal test ortamı için Microsoft 365'inizi oluşturma
 
 iOS/iPadOS ve Android cihazları minimum gereksinimlerle basit bir şekilde kaydetmek istiyorsanız [Basit temel yapılandırma](lightweight-base-configuration-microsoft-365-enterprise.md) yönergelerini izleyin.
   
@@ -58,7 +60,7 @@ Intune'da iOS/iPadOS ve Android cihazlarınızı kaydetmenin birkaç yolu vardı
 Cihaz yönetimi için Intune kullanmaya hazırsanız ve bazı yönergeler istiyorsanız, aşağıdaki bilgiler yardımcı olabilir:
 
 - [Cihaz yönetimine genel bakış](/mem/intune/fundamentals/what-is-device-management)
-- [Öğretici: Microsoft Endpoint Manager'da izlenecek yol Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
+- [Öğretici: Microsoft Endpoint Manager'de izlenecek yol Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
 - [Dağıtım kılavuzu: Kurulum veya Microsoft Intune taşıma](/mem/intune/fundamentals/deployment-guide-intune-setup)
 
 ## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>3. Aşama: iOS ve Android cihazlarınızı uzaktan yönetme
@@ -76,8 +78,8 @@ Test ortamınızdaki ek [mobil cihaz yönetimi](m365-enterprise-test-lab-guides.
 
 ## <a name="see-also"></a>Ayrıca Bkz
 
-[Kurumsal Test Laboratuvarı Kılavuzları için Microsoft 365](m365-enterprise-test-lab-guides.md)
+[Kurumsal test laboratuvarı kılavuzları için Microsoft 365](m365-enterprise-test-lab-guides.md)
   
-[Kurumsal test ortamınız için Microsoft 365 cihaz uyumluluk ilkeleri](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[Kurumsal test ortamınız için Microsoft 365'e yönelik cihaz uyumluluk ilkeleri](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
 [Microsoft 365 Kurumsal’a genel bakış](microsoft-365-overview.md)

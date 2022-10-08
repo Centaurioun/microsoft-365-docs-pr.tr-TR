@@ -10,19 +10,20 @@ ms.topic: article
 ms.date: 05/05/2021
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 description: Tehditleri verimli bir şekilde araştırmak ve yanıtlamak için Gezgin veya Gerçek zamanlı algılamaları kullanın.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.openlocfilehash: 3c431b60abfe728cfb823ea45719d922ef0b1c93
-ms.sourcegitcommit: 2b89bcff547e00be3d38dc8d1e6cbcf8f41eba42
+search.appverid: met150
+ms.openlocfilehash: 8c1456fed9e264cbf61f8e156100f6eb204fc2b4
+ms.sourcegitcommit: 12af9e8e3a6eaa090fda9e98ccb831dff65863a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2022
-ms.locfileid: "67596797"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68083923"
 ---
 # <a name="explorer-and-real-time-detections"></a>Gezgin ve Gerçek zamanlı algılamalar
 

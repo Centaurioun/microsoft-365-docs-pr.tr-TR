@@ -8,146 +8,148 @@ manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management
+ms.collection:
+- scotvorg
+- M365-subscription-management
 ms.custom:
 - commerce_ssp
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Kullanıcılar, kendi self servis satın almalarını yönetmeyi öğrenebilir.
+description: Kullanıcılar self servis satın alma işlemlerini yönetmeyi öğrenebilir.
 ms.date: 03/17/2021
-ms.openlocfilehash: bf3404a900872090048b6b092d97f81fd5fd7c5a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 14cf52f10fad7c010f133e648dbda5383e8bc594
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316527"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68170676"
 ---
 # <a name="manage-self-service-purchases-users"></a>Self servis satın almaları yönetme (Kullanıcılar)
 
-Bir kullanıcı olarak, belirli ürünlere abonelikler satın alabilir ve bu abonelikler için ekibinize lisans atabilirsiniz. Kendi kendine yapılan satın almalar için ödeme yapmak sizin sorumluluğundadır. Aboneliklerinizi, genel merkezin Microsoft 365 yönetim <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com.</a>
+Kullanıcı olarak, belirli ürünlere abonelik satın alabilir ve bu abonelikler için lisansları ekibinizdeki kişilere atayabilirsiniz. Yaptığınız self servis satın alma işlemleri için ödeme yapmak sizin sorumluluğundadır. aboneliklerinizi Microsoft 365 yönetim merkezi <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a> yönetebilirsiniz.
 
-Yöneticinizin, satın alan tüm abonelikleri salt okunur olarak görüntülemesi gerekir. Satın aldığınız her abonelik için ürünü, satın alan adını, satın alınan abonelikleri, son kullanma tarihini, satın alma fiyatını ve atanmış kullanıcıları görebilirler.
+Yöneticinizin satın alacağınız abonelikler için salt okunur bir görünümü vardır. Satın aldığınız her abonelik için ürünü, satın alan adını, satın alınan abonelikleri, bitiş tarihini, satın alma fiyatını ve atanan kullanıcıları görebilirler.
 
 ## <a name="view-your-subscriptions"></a>Aboneliklerinizi görüntüleme
 
-Satın aldığınız, self servis satın alınan tüm aboneliklerin listesini görüntüebilirsiniz.
+Satın aldığınız tüm self servis satın alınan aboneliklerin listesini görüntüleyebilirsiniz.
 
 ::: moniker range="o365-worldwide"
 
-1. Yönetim merkezinde Ürünlerinizi Faturalandırma **sayfasına** > gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a>
+1. Yönetim merkezinde **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ürünleriniz</a> sayfasına gidin.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Yönetim merkezinde Ürünlerinizi Faturalandırma **sayfasına** \> gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a>
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ürünleriniz</a> sayfasına gidin.
 ::: moniker-end
-2. Ürünler **sekmesinde filtre** simgesini seçin ve ardından Self **servis'i seçin**.
+2. **Ürünler** sekmesinde filtre simgesini ve ardından **Self servis'i** seçin.
 
-## <a name="how-to-buy-more-or-reduce-licenses"></a>Lisansları daha fazla satın alma veya azaltma
+## <a name="how-to-buy-more-or-reduce-licenses"></a>Daha fazla lisans satın alma veya lisansları azaltma
 
 ::: moniker range="o365-worldwide"
 
-1. Yönetim merkezinde Ürünlerinizi Faturalandırma **sayfasına** > gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a>
+1. Yönetim merkezinde **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ürünleriniz</a> sayfasına gidin.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Yönetim merkezinde Ürünlerinizi Faturalandırma **sayfasına** \> gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a>
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ürünleriniz</a> sayfasına gidin.
 ::: moniker-end
-2. Ürünler **sekmesinde** , daha fazla satın almak veya lisansları azaltmak istediğiniz aboneliği seçin.
-3. Lisans **satın al veya Lisansları** **kaldır'ı seçin**.
-4. Sağ bölmede, Toplam **lisans kutusuna** bu abonelik için istediğiniz toplam lisans sayısını girin ve ardından Kaydet'i **seçin**. Örneğin, 100 lisansınız varsa ve 5 lisans daha eklemek için 105 girin.
+2. **Ürünler** sekmesinde, daha fazla satın almak istediğiniz aboneliği seçin veya lisansları azaltın.
+3. **Lisans satın al** veya **Lisansları kaldır'ı** seçin.
+4. Sağ bölmedeki **Toplam lisanslar** kutusuna bu abonelik için istediğiniz toplam lisans sayısını girin ve **Kaydet'i** seçin. Örneğin, 100 lisansınız varsa ve 5 lisans daha eklemek istiyorsanız 105 girin.
 
-## <a name="assign-or-unassign-licenses"></a>Lisansları atama veya atamalarını iptal et
+## <a name="assign-or-unassign-licenses"></a>Lisans atama veya atamasını kaldırma
 
-### <a name="to-assign-licenses"></a>Lisans atamak için
+### <a name="to-assign-licenses"></a>Lisansları atamak için
 
-:: m zaman aralığı="o365-worldwide"
+::: moniker range="o365-worldwide"
 
-1. Yönetim merkezinde Fatura Lisansları **sayfasına** \> gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lisansları</a> sayfasına gidin.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. Yönetim merkezinde Fatura Lisansları **sayfasına** \> gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"></a>
+ 1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Lisansları</a> sayfasına gidin.
 
 ::: moniker-end
 2. Lisans atamak istediğiniz aboneliği seçin.
-3. Lisans **ata'ya seçin**.
-4. Kullanıcılara **lisans ata bölmesinde** , bir ad yazmaya başlayın ve ardından sonuçlardan bu adı listeye ekleyin. Tek seferde en fazla 20 kullanıcı ekleyebilirsiniz.
+3. **Lisans ata'yı** seçin.
+4. **Kullanıcılara lisans ata** bölmesinde bir ad yazmaya başlayın ve ardından sonuçlar arasından seçerek listeye ekleyin. Tek seferde en fazla 20 kullanıcı ekleyebilirsiniz.
     > [!NOTE]
-    > Yalnızca kuruluşta yer alan kullanıcılara lisans at at at bulundurarak yeni bir lisans at at bulundurarak yeni bir lisans atamanız gerekir.
-5. **Ata'ya ve** ardından Kapat'a **seçin**.
+    > Lisansları yalnızca kuruluşunuzdaki kişilere atayabilirsiniz.
+5. **Ata'yı** ve ardından **Kapat'ı** seçin.
 
-### <a name="to-unassign-licenses"></a>Lisans atamalarını iptal etmek için
+### <a name="to-unassign-licenses"></a>Lisansların atamasını kaldırma
 
-:: m zaman aralığı="o365-worldwide"
+::: moniker range="o365-worldwide"
 
-1. Yönetim merkezinde Fatura Lisansları **sayfasına** \> gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lisansları</a> sayfasına gidin.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. Yönetim merkezinde Fatura Lisansları **sayfasına** \> gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"></a>
+ 1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Lisansları</a> sayfasına gidin.
 
 ::: moniker-end
-2. Lisans atamalarını iptal etmek istediğiniz ürünü seçin.
-3. Lisans atamalarını iptal etmek istediğiniz kullanıcıları seçin.
-4. Lisans **atamasını iptal et'i seçin**.
-5. Lisans **atamasını iptal et kutusunda** Atamayı **Seç'i seçin**.
+2. Lisans atamasını silmek istediğiniz ürünü seçin.
+3. Lisans atamalarını kaldırmak istediğiniz kullanıcıları seçin.
+4. **Lisansların atamasını kaldır'ı** seçin.
+5. **Lisansların Atamasını Kaldır** kutusunda Atamayı **Kaldır'ı** seçin.
 
 ## <a name="cancel-a-subscription"></a>Aboneliği iptal etme
 
 ::: moniker range="o365-worldwide"
 
-1. Yönetim merkezinde Ürünlerinizi Faturalandırma **sayfasına** > gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a>
+1. Yönetim merkezinde **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ürünleriniz</a> sayfasına gidin.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Yönetim merkezinde Ürünlerinizi Faturalandırma **sayfasına** \> gidin.<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a>
+1. Yönetim merkezinde **Faturalama** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ürünleriniz</a> sayfasına gidin.
 ::: moniker-end
-2. Ürünler **sekmesinde** , iptal etmek istediğiniz aboneliği bulun. Üç noktayı (diğer eylemler) ve ardından Aboneliği iptal **et'i seçin**.
-3. Aboneliği **iptal et** bölmesinde iptal etme nedenini seçin. İsteğe bağlı olarak, geri bildirimlerinizi bildirin.
+2. **Ürünler** sekmesinde, iptal etmek istediğiniz aboneliği bulun. Üç noktayı (diğer eylemler) ve ardından **Aboneliği iptal et**'i seçin.
+3. **Aboneliği iptal et** bölmesinde iptal etme nedeninizi seçin. İsteğe bağlı olarak, sahip olduğunuz tüm geri bildirimleri sağlayın.
 4. **Kaydet**'i seçin.
 
-## <a name="manage-your-payment-details"></a>Ödeme ayrıntılarınızı yönetin
+## <a name="manage-your-payment-details"></a>Ödeme ayrıntılarınızı yönetme
 
-1. Yönetim merkezinde BillingBills ve **payments** >  **& billing** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">profilleri sayfasına</a> gidin.
-2. Listeden bir ödeme profili seçin.
-3. Fatura profili ayrıntıları sayfasında, Ödeme **yöntemi'nin altında** aşağıdaki seçeneklerden birini belirleyin:
-    - Mevcut bir ödeme yöntemini güncelleştirmek için Düzenle'yi **seçin**.
-    - Yeni bir ödeme yöntemi eklemek için Değiştir'i **seçin**.
-4. Sağ bölmede kart ayrıntılarını girin, ardından Kaydet'i **seçin**.
+1. Yönetim merkezinde **Faturalama** > **Faturaları & ödemeler** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Faturalama profilleri</a> sayfasına gidin.
+2. Listeden bir faturalama profili seçin.
+3. Faturalama profili ayrıntıları sayfasındaki **Ödeme yöntemi'nin** altında aşağıdaki seçeneklerden birini belirleyin:
+    - Mevcut bir ödeme yöntemini güncelleştirmek istiyorsanız **Düzenle'yi** seçin.
+    - Yeni bir ödeme yöntemi eklemek istiyorsanız **Değiştir'i** seçin.
+4. Sağ bölmede kart ayrıntılarını girin ve **Kaydet'i** seçin.
 
 ### <a name="update-an-existing-payment-method"></a>Mevcut bir ödeme yöntemini güncelleştirme
 
-1. Yönetim merkezinde <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">BillingBills</a> **ve** >  payments & gidin.
-2. Ödeme **yöntemleri sekmesinde,** listeden mevcut bir ödeme yöntemini seçin.
-3. Sağ bölmede Düzenle'yi **seçin**. Güvenlik kodunu, son kullanma tarihini, kartın üzerinde adı ve adresi değiştirebilirsiniz.
-4. Gerekli değişiklikleri yapın ve ardından Kaydet'i **seçin**.
+1. Yönetim merkezinde **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Faturaları & ödemeler</a> sayfasına gidin.
+2. **Ödeme yöntemleri** sekmesinde, listeden mevcut bir ödeme yöntemini seçin.
+3. Sağ bölmede **Düzenle'yi** seçin. Güvenlik kodunu, son kullanma tarihini, kart üzerindeki adı ve adresi değiştirebilirsiniz.
+4. Gerekli değişiklikleri yapın ve **kaydet'i** seçin.
 
-### <a name="add-a-new-payment-method"></a>Yeni bir ödeme yöntemi ekleme
+### <a name="add-a-new-payment-method"></a>Yeni ödeme yöntemi ekleme
 
-1. Yönetim merkezinde <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">BillingBills</a> **ve** >  payments & gidin.
-2. Ödeme yöntemleri **sekmesinde Ödeme** yöntemi **ekle'yi seçin**.
-3. Ödeme yöntemi **ekle bölmesinde yeni** ödeme yöntemi bilgilerini girin ve Ekle'yi **seçin**.
+1. Yönetim merkezinde **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Faturaları & ödemeler</a> sayfasına gidin.
+2. **Ödeme yöntemleri** sekmesinde **Ödeme yöntemi ekle'yi** seçin.
+3. **Ödeme yöntemi ekle** bölmesinde, yeni ödeme yöntemine ilişkin bilgileri girin ve **Ekle'yi** seçin.
 
 ## <a name="view-your-invoices"></a>Faturalarınızı görüntüleme
 
-1. Yönetim merkezinde <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">BillingBills</a> **ve payments** >  & gidin.
-2. Faturalar  sekmesinde görüntülemek istediğiniz faturayı seçin. Fatura görünmüyorsa, Son **3 ay'lık tarihi** **6 ay olarak** veya Tarih **aralığı belirtin olarak değiştirebilirsiniz**.
+1. Yönetim merkezinde **Faturalama** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Faturaları & ödemeler</a> sayfasına gidin.
+2. **Faturalar** sekmesinde, görüntülemek istediğiniz faturayı seçin. Hiçbir fatura görünmüyorsa **, Son 3 ay** değerini **Son 6 ay** veya **Tarih aralığı belirtin** olarak değiştirin.
 
 ## <a name="need-help-contact-us"></a>Yardıma mı ihtiyacınız var? Bize ulaşın.
 
-Self servis satın almalar hakkında sık sorulan sorular için bkz. [Self servis satın almalar hakkında SSS](self-service-purchase-faq.yml).
+Self servis satın almalarla ilgili sık sorulan sorular için bkz. [Self servis satın almalar hakkında SSS](self-service-purchase-faq.yml).
 
-Self servis satın alma ile ilgili sorularınız varsa veya yardıma ihtiyacınız varsa destek [ile iletişime geçin](../../admin/get-help-support.md).
+Self servis satın alma işlemleriyle ilgili sorularınız veya yardıma ihtiyacınız varsa [desteğe başvurun](../../admin/get-help-support.md).

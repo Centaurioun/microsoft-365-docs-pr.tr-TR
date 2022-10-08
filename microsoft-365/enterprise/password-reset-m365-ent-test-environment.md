@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -18,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Özet: Microsoft 365 test ortamınız için parola sıfırlamayı yapılandırın ve test edin.'
-ms.openlocfilehash: 52563467820073bbf407ea074cbfd43287055424
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 2aa2a216216895e180f9dc8af37bd4285b17e8cd
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67670057"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195797"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 test ortamınız için parola sıfırlama
 

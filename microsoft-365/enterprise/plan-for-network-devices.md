@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Özet: Office 365 bağlanmak için kullanılan ağ kapasitesi, WAN hızlandırıcıları ve yük dengeleme cihazlarıyla ilgili dikkat edilmesi gereken noktaları açıklar.'
-ms.openlocfilehash: eddb7cd45e872b41fa25dbf0cd1786ccb40de1e2
-ms.sourcegitcommit: 437461fa1d38ff9bb95dd8a1c5f0b94e8111ada2
+ms.openlocfilehash: 385b4ccf862e47581b42e07c72ae6cc14ecb0975
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67672083"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68195643"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Office 365 hizmetlerine bağlanan ağ cihazlarını planlama
 

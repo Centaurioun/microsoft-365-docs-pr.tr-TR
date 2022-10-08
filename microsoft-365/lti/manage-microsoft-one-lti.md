@@ -6,18 +6,18 @@ manager: serdars
 ms.reviewer: amitman
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Görüntüleme, silme, düzenleme ve sorun giderme gibi önemli Microsoft LMS Ağ Geçidi yönetim görevlerini yürütmeyi öğrenin.
-ms.openlocfilehash: 77f89927a7beb7cd045c2325bd805efdf45996a0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: ccf05bb497546bae153f2132e27440713661845b
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944119"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68187569"
 ---
 # <a name="manage-microsoft-lms-gateway-for-any-lms"></a>Tüm LMS'ler için Microsoft LMS Ağ Geçidi'ni yönetme
 
@@ -114,7 +114,7 @@ Bazı yaygın oturum açma sorunları ve bunların nasıl çözüleceğini burad
     - Sorun devam ederse, sağ üst kısımdaki **Sorun bildir** bağlantısını seçerek sorunu bildirin.
 
 - **Diğer hatalar**
-  - Diğer tüm hatalar için şu hata iletisini görürsünüz: "Bir sorun oluştu. Daha sonra yeniden deneyin."
+  - Diğer tüm hatalar için şu hata iletisini görürsünüz: "Bir sorun oluştu. Daha sonra yeniden deneyin.
     - Bu bir iç işlem hatası olabilir.
     - Birkaç saat sonra yeniden oturum açmayı deneyin.
       - **Giriş sayfasına git** düğmesini seçin. Bu işlem giriş sayfasına geri döner.

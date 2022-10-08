@@ -7,9 +7,10 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Exchange Online'da bir veya birden çok dağıtım listesini Microsoft 365 Grupları yükseltmeyi ve aynı anda çeşitli dağıtım listelerini yükseltmek için PowerShell'i kullanmayı öğrenin.
-ms.openlocfilehash: e1ea8b16f36eee9cfde8eb968be0f1ed388913ab
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: ba0555011cba2dcc3bd8285d577c61ef3c7ddded
+ms.sourcegitcommit: 0b7070ec119e00e0dafe030bbfbef0ae5c9afa19
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085235"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68203233"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-exchange-online"></a>Dağıtım listelerini Exchange Online'de Microsoft 365 Grupları yükseltme
 
@@ -145,7 +146,7 @@ Tüm uygun dağıtım listelerini Microsoft 365 Grupları yükseltmek için aşa
 
 Yalnızca bulut tarafından yönetilen, basit, iç içe olmayan dağıtım listelerini yükseltebilirsiniz. Aşağıdaki tabloda **yükseltilemeyen** dağıtım listeleri listelenmiştir.
 
-|Mülk|Uygun?|
+|Özellik|Uygun?|
 |---|:---:|
 |Şirket içi yönetilen dağıtım listesi.|Hayır|
 |İç içe dağıtım listeleri. Dağıtım listesi alt gruplara sahiptir veya başka bir grubun üyesidir.|Hayır|
@@ -175,7 +176,7 @@ Get-EligibleDistributionGroupForMigration
 
 ### <a name="who-can-run-the-upgrade-scripts"></a>Yükseltme betiklerini kimler çalıştırabilir?
 
-Genel yönetici veya Exchange yönetici haklarına sahip kişiler.
+Genel yönetici veya Exchange yönetici haklarıyla Kişiler.
 
 ### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-an-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>Kişi kartı neden hala bir dağıtım listesi gösteriyor? Yükseltilmiş bir dağıtım listesinin otomatik öneri listemde gösterilmesini önlemek için ne yapmalıyım?
 
